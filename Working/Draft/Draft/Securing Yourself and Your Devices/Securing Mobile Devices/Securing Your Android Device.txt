@@ -1,0 +1,23 @@
+Securing Your Android Device
+
+Rooting Pros - Cons
+
+Unlocking your device 
+
+Firewall
+
+Xprivacy
+
+AppOps
+
+Backups
+
+Encryption/Device encryption
+
+Backup Encryption
+
+Analyzing the Attack Surface of your device
+
+Analyzing Android Applications
+
+Resources

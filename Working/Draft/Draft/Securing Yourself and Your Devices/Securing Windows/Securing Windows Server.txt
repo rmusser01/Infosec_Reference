@@ -1,0 +1,12 @@
+Hardening Windows Server
+
+
+
+Server Baseline hardening:
+	http://technet.microsoft.com/en-us/library/cc526440.aspx
+
+Server 2008 Hardening Checklist: 
+	https://wikis.utexas.edu/display/ISO/Windows+2008R2+Server+Hardening+Checklist
+
+Hardening Server 08 from Microsoft:
+	http://technet.microsoft.com/en-us/library/cc995076.aspx

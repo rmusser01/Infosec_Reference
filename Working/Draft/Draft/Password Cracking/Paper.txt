@@ -1,0 +1,4 @@
+Papers
+
+Title: Optimizing computation of Hash Algorithms as an attacker
+Link: https://hashcat.net/events/p13/js-ocohaaaa.pdf 

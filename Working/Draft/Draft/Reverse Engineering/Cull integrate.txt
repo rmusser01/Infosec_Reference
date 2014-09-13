@@ -1,0 +1,4 @@
+Hacking Dropcam series:
+	http://blog.includesecurity.com/2014/03/Reverse-Engineering-Dropcam-Communications.html
+	http://blog.includesecurity.com/2014/04/reverse-engineering-dropcam-rooting-the-device.html
+	http://blog.includesecurity.com/2014/08/Reverse-Engineering-Dropcam-Lua-Bytecode.html

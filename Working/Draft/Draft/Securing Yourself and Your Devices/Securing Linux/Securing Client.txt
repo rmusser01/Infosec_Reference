@@ -1,0 +1,19 @@
+Baseline config
+
+Analyze attack surface
+
+Services
+
+Users
+
+Firewall
+
+Artillery.py
+
+AV?
+
+Browser - Firefox
+		Request Policy
+		NoScript
+		Adblock
+		Tracking blocker

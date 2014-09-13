@@ -1,0 +1,18 @@
+
+
+
+Peeking into Your App without Actually Seeing It: UI State In
+ference and
+Novel Android Attacks
+http://www.cs.ucr.edu/~zhiyunq/pub/sec14_android_activity_inference.pdf
+Abstract
+
+The security of smartphone GUI frameworks remains
+an important yet under-scrutinized topic. In this pa-
+per, we report that on the Android system (and likely
+other OSes), a weaker form of GUI confidentiality can
+be breached in the form of UI state (not the pixels) by a
+background app without requiring any permissions. Our
+finding leads to a class of attacks which we name
+UI state
+inference attack.

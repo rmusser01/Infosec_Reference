@@ -1,0 +1,34 @@
+Securing Windows Desktop
+
+
+
+Create Baseline Config
+
+Use MBSA tool
+http://www.microsoft.com/en-us/download/details.aspx?id=7558
+
+Install/Configure EMET
+http://support.microsoft.com/kb/2458544
+
+Firewall
+	Setting up windows 7 Firewall advanced: http://blink.ucsd.edu/technology/security/firewall/windows7-a.html
+	Setting up windows 7 Firewall basic: http://blink.ucsd.edu/technology/security/firewall/windows7.html
+
+
+AV - Meh
+
+No Java/Adobe pdf unless specifically needed.
+
+Browser - Firefox
+		Adblock
+		Noscript
+		Request Policy
+		Tracking blocker
+		Self destructing cookies
+
+
+
+
+Analyzing attack surface
+
+

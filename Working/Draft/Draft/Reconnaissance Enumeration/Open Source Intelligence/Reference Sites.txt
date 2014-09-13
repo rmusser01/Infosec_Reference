@@ -1,0 +1,22 @@
+Reference Sites
+
+These are sites that contain information and links to various resources such as search engines or info repositories related to OSINT.
+
+PDF Creative Commons OSINT toolbag guide: 
+	
+	http://www.phibetaiota.net/wp-content/uploads/2013/07/2013-07-11-OSINT-2ool-Kit-On-The-Go-Bag-O-Tradecraft.pdf
+
+
+My suggested sites:
+
+https://sites.google.com/site/greynetwork2/home/osint-resources
+
+http://www.onstrat.com/osint/
+
+http://www.inteltechniques.com/links.html
+
+www.osintinsight.com/shared.php?user=Mediaquest&folderid=0
+
+http://toddington.com/resources/
+
+http://www.osint.org.uk/links.html

@@ -1,0 +1,15 @@
+What is Reverse Engineering? See the following link:
+http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering
+
+
+Starting from Scratch?
+Check out: http://www.reddit.com/r/ReverseEngineering/comments/smf4u/reverser_wanting_to_develop_mathematically/
+And : 
+
+Windows Anti-Debugging Reference
+	From: http://www.symantec.com/connect/articles/windows-anti-debug-reference
+This paper classifies and presents several anti-debugging techniques used on Windows NT-based operating systems. Anti-debugging techniques are ways for a program to detect if it runs under control of a debugger. They are used by commercial executable protectors, packers and malicious software, to prevent or slow-down the process of reverse-engineering. We'll suppose the program is analyzed under a ring3 debugger, such as OllyDbg on Windows platforms. The paper is aimed towards reverse-engineers and malware analysts. Note that we will talk purely about generic anti-debugging and anti-tracing techniques. Specific debugger detection, such as window or processes enumeration, registry scanning, etc. will not be addressed here.
+
+Cryptoshark
+	From: https://github.com/frida/cryptoshark
+Interactive code tracer for reverse-engineering proprietary software 

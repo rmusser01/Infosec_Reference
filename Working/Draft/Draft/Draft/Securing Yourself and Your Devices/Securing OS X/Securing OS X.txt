@@ -1,0 +1,18 @@
+Securing OS X
+
+http://www.securemac.com/
+
+
+
+Little Snitch
+
+
+Center for Interent Security(CIS) Guides to System Hardening:
+http://benchmarks.cisecurity.org/downloads/browse/index.cfm?category=benchmarks.os.unix.osx
+
+
+
+
+
+Apple Security Guides(only go up to 10.6):
+	http://www.apple.com/support/security/guides/

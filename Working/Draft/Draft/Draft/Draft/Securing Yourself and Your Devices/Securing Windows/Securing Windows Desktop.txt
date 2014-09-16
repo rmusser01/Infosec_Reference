@@ -65,24 +65,7 @@ HTTPS Everywhere - Forces sites when possible to use HTTPS encryption.
 Link: https://www.eff.org/https-everywhere
 
 
-Chrome
-Chrome is google’s web browser. It reports to google your browsing habits. Has a wonderful security model. 
-https://www.google.com/chrome/
-Chrome Plugins
-Fortunately, it also has an extensions system.
-NotScripts - Chrome’s version of NoScript.
-Link: https://chrome.google.com/webstore/detail/notscripts/odjhifogjcknibkahlpidmdajjpkkcfn?hl=en
-Adblock Plus - Blocks ads.
-Link: https://chrome.google.com/webstore/detail/adblockplus/cfhdojbkjhnklbpkdaibdccddilifddb?hl=en	
-HTTPS Everywhere - Forces sites when possible to use HTTPS encryption.
-Link: https://www.eff.org/https-everywhere
-
-
-
-
-
-
-Analyzing the Attack Surface
+Analyzing the Attack Surface(Only on Win7/Serv08 and below)
 	Release Announcement/Download:
 		http://blogs.msdn.com/b/sdl/archive/2012/08/02/attack-surface-analyzer-1-0-released.aspx
 

@@ -1,7 +1,0 @@
-Securing Your iPhone
-
-Analyzing Attack Surfaces
-
-Jailbreaking Pros - Cons
-
-Info Leakage

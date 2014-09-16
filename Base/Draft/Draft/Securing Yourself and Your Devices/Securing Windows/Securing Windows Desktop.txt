@@ -74,7 +74,8 @@ Analyzing the Attack Surface(Only on Win7/Serv08 and below)
 Attack Surface Analyzer is a Microsoft verification tool designed to catalog changes in system state, runtime parameters, and securable objects on the Windows operating system.  This analysis helps identify any increase in the attack surface that is caused by installing applications.  Developed by the Security Engineering group team, Attack Surface Analyzer is the first tool of its kind available for public use, and it runs on the Windows Vista, Windows 7, and Windows Server 2008 operating systems.
 
 
-
+Encryption
+Check the Encryption section of the overall guide for more information.
 
 
 

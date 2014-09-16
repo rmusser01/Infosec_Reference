@@ -1,0 +1,110 @@
+Securing A Linux Desktop
+
+This is currently a collection of pieces of advice relating to hardening Linux systems.
+
+
+Index:
+Quick Tips
+Baseline Config
+Web Browser
+Tools
+Guides
+
+
+6 Quick tips that apply to all Linux desktops:
+Disable every service that isn’t required
+Close every port except one’s required to be in use.
+Disable remote root login.
+Do not run anything as root unless you must.
+Change the default SSH port to a high non-standard port.
+Keep your software and system up to date through its respective maintainers’ repositories.
+	
+
+General
+Due to the large amount of variation in the Linux environment, a one-size fits all approach doesn’t really work. Because of this, I have listed some best practices and tools one can use to help in hardening their systems.
+
+
+
+Baseline config
+Creating a baseline Configuration
+	I suggest that you create a 
+
+
+Analyze attack surface
+
+Services
+
+Users
+
+Firewall
+
+
+Tools
+Artillery.py
+
+Bastille Linux
+http://bastille-linux.sourceforge.net/index.html
+Setting up Bastille Linux on your distro of choice: 
+http://bastille-linux.sourceforge.net/running_bastille_on.htm
+Summary(From their “What is…”
+The Bastille Hardening program "locks down" an operating system, proactively configuring the system for increased security and decreasing its susceptibility to compromise. Bastille can also assess a system's current state of hardening, granularly reporting on each of the security settings with which it works. 
+
+Bastille currently supports the Red Hat (Fedora Core, Enterprise, and Numbered/Classic), SUSE, Debian, Gentoo, and Mandrake distributions, along with HP-UX. It also supports Mac OS X. 
+Bastille's focuses on letting the system's user/administrator choose exactly how to harden the operating system. In its default hardening mode, it interactively asks the user questions, explains the topics of those questions, and builds a policy based on the user's answers. It then applies the policy to the system. In its assessment mode, it builds a report intended to teach the user about available security settings as well as inform the user as to which settings have been tightened.
+Lynis
+
+
+
+
+Web Browser
+Firefox
+If you really need to be told what Firefox is, I don’t even. Iceweasel is firefox for intents and purposes relating to plugins.
+https://www.mozilla.org/en-US/firefox/new/
+Firefox Plugins
+One of the beautiful things Firefox are the plugins, and the extra functionality added through them. The list below is my recommendations for securing your browser as well as controlling what information it sends out.
+Adblock - Blocks ads. Ads are a large vector of attack due to the lack of verification within the advertising industry.
+Link: https://addons.mozilla.org/en-US/firefox/addon/adblock-edge/
+Noscript - Allows for granular control of Javascript on pages.
+Link: https://addons.mozilla.org/en-US/firefox/addon/noscript/
+Request Policy - Control the HTTP requests made by your browser to 3rd party websites.
+Link: https://addons.mozilla.org/en-US/firefox/addon/requestpolicy/ 
+Self destructing cookies - Prevent tracking and abuse of session information.
+Link: https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/
+HTTPS Everywhere - Forces sites when possible to use HTTPS encryption.
+Link: https://www.eff.org/https-everywhere
+
+Guides
+Debian Hardening Guide:
+https://www.debian.org/doc/manuals/securing-debian-howto/ch-automatic-harden.en.html
+
+Red Hat Server Hardening Checklist:
+https://wikis.utexas.edu/display/ISO/Redhat+Linux+Hardening+Checklist
+
+List of Security Resources for Ubuntu:
+http://www.itsecurity.com/features/ubuntu-secure-install-resource/
+List of Security Guides for Ubuntu:
+https://help.ubuntu.com/community/Security
+
+Center for Internet Security(CIS) Centos 6 Hardening Guide:
+https://benchmarks.cisecurity.org/tools2/linux/CIS_Red_Hat_Enterprise_Linux_6_Benchmark_v1.3.0.pdf
+
+CIS Centos 7 Hardening Guide:
+https://benchmarks.cisecurity.org/tools2/linux/CIS_CentOS_Linux_7_Benchmark_v1.0.0.pdf
+
+CIS Red Hat Enterprise Linux 5 Hardening Guide:
+https://benchmarks.cisecurity.org/tools2/linux/CIS_Red_Hat_Enterprise_Linux_5_Benchmark_v2.1.0.pdf
+
+CIS Red Hat Enterprise Linux 6 Hardening Guide:
+https://benchmarks.cisecurity.org/tools2/linux/CIS_Red_Hat_Enterprise_Linux_6_Benchmark_v1.3.0.pdf
+
+CIS Red Hat Enterprise Linux 7 Hardening Guide:
+https://benchmarks.cisecurity.org/tools2/linux/CIS_Red_Hat_Enterprise_Linux_7_Benchmark_v1.0.0.pdf
+CIS Ubuntu 12.04 Server LTS Hardening Guide:
+https://benchmarks.cisecurity.org/tools2/ubuntu/CIS_Ubuntu_12.04_LTS_Server_Benchmark_v1.0.0.pdf
+CIS CentOS 6 Hardening Guide:
+https://benchmarks.cisecurity.org/tools2/CIS_CentOS_Linux_6_Benchmark_v1.0.0.pdf
+
+
+Encryption
+Check the Encryption section of the overall guide for more information.
+

@@ -21,3 +21,6 @@ Analyzing the Attack Surface of your device
 Analyzing Android Applications
 
 Resources
+
+Encryption
+Check the Encryption section of the overall guide for more information.

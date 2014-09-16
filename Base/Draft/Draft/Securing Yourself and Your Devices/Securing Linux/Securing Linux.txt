@@ -40,19 +40,33 @@ Firewall
 
 
 Tools
+
 Artillery.py
+https://github.com/trustedsec/artillery
+Artillery is a combination of a honeypot, monitoring tool, and alerting system. Eventually this will evolve into a hardening monitoring platform as well to detect insecure configurations from nix systems. It's relatively simple, run ./setup.py and hit yes, this will install Artillery in /var/artillery and edit your /etc/init.d/rc.local to start artillery on boot up.
+Why artillery?	
+It sets up multiple common ports that are attacked. If someone connects to these ports, it blacklists them forever (to remove blacklisted ip's, remove them from /var/artillery/banlist.txt)
+It monitors what folders you specify, by default it checks /var/www and /etc for modifications.
+It monitors the SSH logs and looks for brute force attempts.
+It will email you when attacks occur and let you know what the attack was.
 
 Bastille Linux
 http://bastille-linux.sourceforge.net/index.html
 Setting up Bastille Linux on your distro of choice: 
 http://bastille-linux.sourceforge.net/running_bastille_on.htm
-Summary(From their “What is…”
+Summary(From their “What is…”)
 The Bastille Hardening program "locks down" an operating system, proactively configuring the system for increased security and decreasing its susceptibility to compromise. Bastille can also assess a system's current state of hardening, granularly reporting on each of the security settings with which it works. 
 
 Bastille currently supports the Red Hat (Fedora Core, Enterprise, and Numbered/Classic), SUSE, Debian, Gentoo, and Mandrake distributions, along with HP-UX. It also supports Mac OS X. 
+
 Bastille's focuses on letting the system's user/administrator choose exactly how to harden the operating system. In its default hardening mode, it interactively asks the user questions, explains the topics of those questions, and builds a policy based on the user's answers. It then applies the policy to the system. In its assessment mode, it builds a report intended to teach the user about available security settings as well as inform the user as to which settings have been tightened.
 Lynis
+http://rootkit.nl/software/lynis/
+From the above: Lynis is an open source security auditing tool. Its main goal is to audit and harden Unix and Linux based systems. It scans the system by performing many security control checks.
 
+I would look at the documentation for more info on what it actually does.
+Lynis Documentation: 
+http://cisofy.com/documentation/lynis/
 
 
 
@@ -75,7 +89,7 @@ Link: https://www.eff.org/https-everywhere
 
 Guides
 Debian Hardening Guide:
-https://www.debian.org/doc/manuals/securing-debian-howto/ch-automatic-harden.en.html
+https://www.debian.org/doc/manuals/securing-debian-howto/
 
 Red Hat Server Hardening Checklist:
 https://wikis.utexas.edu/display/ISO/Redhat+Linux+Hardening+Checklist
@@ -99,10 +113,20 @@ https://benchmarks.cisecurity.org/tools2/linux/CIS_Red_Hat_Enterprise_Linux_6_Be
 
 CIS Red Hat Enterprise Linux 7 Hardening Guide:
 https://benchmarks.cisecurity.org/tools2/linux/CIS_Red_Hat_Enterprise_Linux_7_Benchmark_v1.0.0.pdf
+
 CIS Ubuntu 12.04 Server LTS Hardening Guide:
 https://benchmarks.cisecurity.org/tools2/ubuntu/CIS_Ubuntu_12.04_LTS_Server_Benchmark_v1.0.0.pdf
+
 CIS CentOS 6 Hardening Guide:
 https://benchmarks.cisecurity.org/tools2/CIS_CentOS_Linux_6_Benchmark_v1.0.0.pdf
+
+ArchLinux Wiki on hardening Arch:
+https://wiki.archlinux.org/index.php/Security
+
+Suse Linux Enterprise Server 11 SP3 Hardening Guide:
+https://www.suse.com/documentation/sles11/singlehtml/book_hardening/book_hardening.html
+
+
 
 
 Encryption

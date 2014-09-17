@@ -1,6 +1,0 @@
-Nmap command reference:
-
-Man Pages:
-http://nmap.org/book/man.html
-
-

@@ -31,13 +31,19 @@ Creating a baseline Configuration
 
 
 Analyze attack surface
+	Analyzing the attack surface of a Linux machine:
+
 
 Services
+	Checking running services:
+		
 
 Users
+	Checking current users on the system:
+
 
 Firewall
-
+	Configuring a firewall:
 
 Tools
 

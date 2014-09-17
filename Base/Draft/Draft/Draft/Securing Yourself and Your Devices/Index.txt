@@ -1,6 +1,12 @@
 How to Secure Yourself and Your Devices From Attackers
 
 
+Flesh/Fix win serv
+
+
+Flesh linux section
+
+
 
 
 Killing Rootkits:

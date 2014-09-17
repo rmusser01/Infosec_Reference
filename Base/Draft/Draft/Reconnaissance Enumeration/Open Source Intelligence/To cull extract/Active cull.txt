@@ -24,7 +24,7 @@ MyIPNeighbours ñ My IP Neighbors lets you find out if any other web sites (ìvirt
 Social Mention ñ Social Mention is a social media search engine that searches user-generated content such as blogs, comments, bookmarks, events, news, videos, and more
 Glass Door ñ Search jobs then look inside. Company salaries, reviews, interview questions, and more ñ all posted anonymously by employees and job seekers.
 NameCHK ñ Check to see if your desired username or vanity url is still available at dozens of popular Social Networking and Social Bookmarking websites.
-Scythe ñ The ability to test a range of email addresses (or account names) across a range of websites (e.g. social media, blogging platforms, etc‚Ä¶) to find where those ‚Äútargets‚Äù have active accounts.
+Scythe ñ The ability to test a range of email addresses (or account names) across a range of websites (e.g. social media, blogging platforms, etc‚Ä¶) to find where those ‚Äútargets‚Ä? have active accounts.
 Recon-NG ñ A nice Python Script that automates recon on LinkedIn, Jigsaw, Shodan and some search engine fu.
 Pushpin ñ Awesome little Python script that will identify every tweet, flicker pic and Youtube video within an area of a specific Geo address.
 Silobreaker ñ Enterprise Semantic Search Engine, allows virtualisation of data, analytics and exploration of key data.

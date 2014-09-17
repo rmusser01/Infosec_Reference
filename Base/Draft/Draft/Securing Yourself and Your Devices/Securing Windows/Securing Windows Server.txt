@@ -9,6 +9,10 @@ http://blogs.technet.com/b/mspfe/archive/2014/05/29/why-you-should-avoid-manual-
 
 In, fact, even if you don’t, you should still read it. It lists several common gotchas that plague people new to hardening. 
 
+Having read that, here is Microsoft’s Security Compliance Manager wiki:
+	http://technet.microsoft.com/en-in/solutionaccelerators/cc835245.aspx
+It supports Windows 7, Vista, Server 2008 and Server 2012.
+
 Keep in mind that any server hardening should be custom tailored to your operation and environment. You can’t simply take a one-size fits all approach.
 
 

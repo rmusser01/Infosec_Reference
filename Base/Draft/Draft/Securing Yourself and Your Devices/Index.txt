@@ -1,18 +1,12 @@
 How to Secure Yourself and Your Devices From Attackers
 
-Securing your Windows Desktop
-Good - better
-
-Securing your Windows Server
-Ok - work
-
-Securing your OS X Desktop
 
 
-Securing your Android Device
+
+Killing Rootkits:
+	http://blog.ioactive.com/2014/09/killing-rootkit.html
 
 
-Securing your iPhone
 
 
 Logs:

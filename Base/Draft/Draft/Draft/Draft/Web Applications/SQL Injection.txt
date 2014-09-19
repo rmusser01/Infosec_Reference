@@ -1,0 +1,15 @@
+SQL Injection
+
+
+
+
+
+
+
+
+
+Laduanum
+	Taken from: http://laudanum.sourceforge.net/
+“Laudanum is a collection of injectable files, designed to be used in a pentest when SQL injection flaws are found and are in multiple languages for different environments.They provide functionality such as shell, DNS query, LDAP retrieval and others.”
+
+

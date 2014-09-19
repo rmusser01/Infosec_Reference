@@ -25,6 +25,13 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 
+Developer stuff:
+
+http://project-imas.github.io/
+
+
+https://viaforensics.com/resources/reports/best-practices-ios-android-secure-mobile-development/
+
 
 
 

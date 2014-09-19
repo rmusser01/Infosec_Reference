@@ -1,6 +1,16 @@
 What is Reverse Engineering? See the following link:
 http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering
 
+Guides & Tutorials
+
+
+Wikis
+
+
+Reference Guides
+
+
+
 
 Starting from Scratch?
 Check out: http://www.reddit.com/r/ReverseEngineering/comments/smf4u/reverser_wanting_to_develop_mathematically/

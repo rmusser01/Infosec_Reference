@@ -1,0 +1,54 @@
+Attacking iOS
+
+
+
+
+
+Vulnerabilities/Exploits
+
+
+
+Techniques
+
+
+
+Training & Tutorials
+
+Learning iOS Application Security - 34 part series
+	http://damnvulnerableiosapp.com/#learn
+
+Damn Vulnerable iOS App
+	iOS app designed to be vulnerable in specific ways to teach security testing of iOS applications.
+	http://damnvulnerableiosapp.com/2013/12/get-started/
+
+OWASP iGOAT	
+	From: https://www.owasp.org/index.php/OWASP_iGoat_Project
+	“iGoat is a safe environment where iOS developers can learn about the major security pitfalls they face as well as how to avoid them. It is made up of a series of lessons that each teach a single (but vital) security lesson.”
+	https://www.owasp.org/index.php/OWASP_iGoat_Project
+	
+
+iOS Security Testing Methodologies
+
+
+
+
+General Research Papers
+
+
+
+
+Reverse Engineering
+
+
+
+IOS Reverse Engineering toolkit:
+	https://github.com/S3Jensen/iRET
+Summary:
+The iOS Reverse Engineering Toolkit is a toolkit designed to automate many of the common tasks associated with iOS penetration testing. It automates a many common tasks including: 
+binary analysis using otool
+keychain analysis using keychain_dumper
+reading database content using sqlite
+reading log and plist files
+binary decryption using dumpdecrypted
+dumping binary headers using class_dump_z
+creating, editing, installing theos tweaks

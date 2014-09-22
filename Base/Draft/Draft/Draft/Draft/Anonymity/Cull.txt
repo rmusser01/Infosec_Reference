@@ -1,9 +1,0 @@
-https://github.com/jlund/streisand
-
-
-
-Important read: https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/
-
-
-De-anonymizing facebook users through CSP
-	http://www.myseosolution.de/deanonymizing-facebook-users-by-csp-bruteforcing/#inhaltsverzeichnis

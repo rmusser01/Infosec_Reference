@@ -1,0 +1,116 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0
+{\fonttbl{\f0\fmodern\fcharset0\fprq2 Courier New;}}
+{\colortbl;\red0\green0\blue0;\red255\green255\blue255;}
+\paperw12240\paperh15840\margl1800\margr1800\margt1440\margb1440\fet2\ftnbj\aenddoc
+\pgnrestart\pgnstarts0
+\pard\plain \ltrch\loch \f0\fs24
+\par\pard\plain \fi720\ltrch\loch {\f0\fs24\b0\i0 Discovery & Probing}
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b0\i0     Discovery & Probing. Enumeration can serve two distinct purposes in an assessment: OS Fingerprinting Remote applications being served. OS fingerprinting or TCP/IP stack fingerprinting is the process of determining the operating system being utilised on a remote host. This is carried out by analyzing packets received from the host in question. There are two distinct ways to OS fingerprint, actively (i.e. nmap) or passively (i.e. scanrand). Passive OS fingerprinting determines the remote OS utilising the packets received only and does not require any packets to be sent. Active OS fingerprinting is very noisy and requires packets to be sent to the remote host and waits for a reply, (or lack thereof). Disparate OS's respond differently to certain types of packet, (the response is governed by an RFC and any proprietary responses the vendor (notably Microsoft) has enabled within the system) and so custom packets may be sent. Remote applications being served on a host can be determined by an open port on that host. By port scanning it is then possible to build up a picture of what applications are running and tailor the test accordingly.}
+\par\plain {\f0\fs24\b0\i0         }
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b0\i0 Default Port Lists}
+\par\plain {\f0\fs24\b0\i0             Windows}
+\par\plain {\f0\fs24\b0\i0             *nix}
+\par\plain {\f0\fs24\b0\i0         }
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b1\i0 Enumeration tools and techniques - }{\f0\fs24\b0\i0 The vast majority can be used generically, however, certain bespoke application require there own specific toolsets to be used. Default passwords are platform and vendor specific}
+\par\plain \f0\fs24\b1\i0
+\par\plain {\f0\fs24\b1\i0 \tab General Enumeration Tools}
+\par\plain {\f0\fs24\b1\i0 \tab \tab nmap}
+\par\plain {\f0\fs24\b0\i0                     }{\f0\fs24\b0\i1 nmap -n -A -PN -p- -T Agressive -iL nmap.targetlist -oX nmap.syn.results.xml}
+\par\plain {\f0\fs24\b0\i1      }
+\par\plain {\f0\fs24\b0\i1 \tab                nmap -sU -PN -v -O -p 1-30000 -T polite -iL nmap.targetlist > nmap.udp.results}
+\par\plain \f0\fs24\b0\i1
+\par\plain {\f0\fs24\b0\i1                     nmap -sV -PN -v -p 21,22,23,25,53,80,443,161 -iL nmap.targets > nmap.version.results}
+\par\plain \f0\fs24\b0\i1
+\par\plain {\f0\fs24\b0\i1                     nmap -A -sS -PN -n --script:all ip_address --reason}
+\par\plain \f0\fs24\b0\i1
+\par\plain {\f0\fs24\b0\i1                 grep "appears to be up" nmap_saved_filename | awk -F\\( '\{print $2\}' | awk -F\\) '\{print $1\}' > ip_list}
+\par\plain {\f0\fs24\b0\i0      }{\f0\fs24\b1\i0            }
+\par\plain {\f0\fs24\b1\i0 \tab \tab netcat}
+\par\plain {\f0\fs24\b0\i0                     }{\f0\fs24\b0\i1 nc -v -n IP_Address port}
+\par\plain {\f0\fs24\b0\i1                     nc -v -w 2 -z IP_Address port_range/port_number}
+\par\plain \f0\fs24\b1\i0
+\par\plain {\f0\fs24\b1\i0 \tab \tab amap}
+\par\plain {\f0\fs24\b0\i0                     amap -bqv 192.168.1.1 80}
+\par\plain {\f0\fs24\b0\i0                     amap [-A|-B|-P|-W] [-1buSRHUdqv] [[-m] -o <file>] [-D <file>] [-t/-T sec] [-c cons] [-C retries] [-p proto] [-i <file>] [target port [port] ...]}
+\par\plain {\f0\fs24\b0\i0                 }
+\par\plain {\f0\fs24\b1\i0 \tab \tab xprobe2}
+\par\plain {\f0\fs24\b0\i0              }{\f0\fs24\b0\i1        xprobe2 192.168.1.1}
+\par\plain {\f0\fs24\b1\i0 \tab \tab }
+\par\plain {\f0\fs24\b1\i0 \tab \tab sinfp}
+\par\plain {\f0\fs24\b0\i0              }{\f0\fs24\b0\i1        ./sinfp.pl -i -p}
+\par\plain {\f0\fs24\b0\i0                 }
+\par\plain {\f0\fs24\b1\i0 \tab \tab nbtscan}
+\par\plain {\f0\fs24\b0\i0                    }{\f0\fs24\b0\i1  nbtscan [-v] [-d] [-e] [-l] [-t timeout] [-b bandwidth] [-r] [-q] [-s separator] [-m retransmits] (-f filename) | (<scan_range>)}
+\par\plain {\f0\fs24\b0\i0                 }
+\par\plain {\f0\fs24\b1\i0 \tab \tab Hping}
+\par\plain {\f0\fs24\b0\i1 \tab \tab        hping ip_address}
+\par\plain \f0\fs24\b1\i0
+\par\plain {\f0\fs24\b1\i0 \tab \tab Scanrand}
+\par\plain {\f0\fs24\b0\i1 \tab \tab \tab scanrand ip_address:all}
+\par\plain \f0\fs24\b1\i0
+\par\plain {\f0\fs24\b1\i0 \tab \tab unicornscan}
+\par\plain {\f0\fs24\b0\i0 \tab \tab \tab unicornscan [options `b:B:d:De:EFhi:L:m:M:pP:q:r:R:s:St:T:w:W:vVZ:' ] IP_ADDRESS/ CIDR_NET_MASK: S-E}
+\par\plain {\f0\fs24\b0\i0                 }
+\par\plain {\f0\fs24\b1\i0 \tab \tab Netenum}
+\par\plain {\f0\fs24\b0\i0 \tab \tab \tab }{\f0\fs24\b0\i1 netenum network/netmask timeout}
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b1\i0 \tab \tab fping }
+\par\plain {\f0\fs24\b0\i1 \tab \tab \tab fping -a -d hostname/ (Network/Subnet_Mask)}
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b1\i0 Firewall Specific Tools}
+\par\plain \f0\fs24\b0\i0
+\par\plain {\f0\fs24\b0\i0                 }{\f0\fs24\b1\i1 firewalk}
+\par\plain {\f0\fs24\b0\i0                     }{\f0\fs24\b0\i1 firewalk -p [protocol] -d [destination_port] -s [source_port] [internal_IP] [gateway_IP]}
+\par\plain \f0\fs24\b0\i1
+\par\plain {\f0\fs24\b0\i0                 }{\f0\fs24\b1\i0 ftester}
+\par\plain {\f0\fs24\b0\i0                }{\f0\fs24\b0\i1 host 1 ./ftestd -i eth0 -v host 2 ./ftest -f ftest.conf -v -d 0.01 then ./freport ftest.log ftestd.log}
+\par\plain {\f0\fs24\b0\i0         }
+\par\plain {\f0\fs24\b0\i0 Active Hosts}
+\par\plain {\f0\fs24\b0\i0        Open TCP Ports}
+\par\plain {\f0\fs24\b0\i0        Closed TCP Ports}
+\par\plain {\f0\fs24\b0\i0        Open UDP Ports}
+\par\plain {\f0\fs24\b0\i0        Closed UDP Ports}
+\par\plain {\f0\fs24\b0\i0        Service Probing}
+\par\plain {\f0\fs24\b0\i0                 SMTP Mail Bouncing}
+\par\plain {\f0\fs24\b0\i0                 Banner Grabbing}
+\par\plain {\f0\fs24\b0\i0                     Other}
+\par\plain {\f0\fs24\b0\i0                     HTTP}
+\par\plain {\f0\fs24\b0\i0                         Commands}
+\par\plain {\f0\fs24\b0\i0                             JUNK / HTTP/1.0}
+\par\plain {\f0\fs24\b0\i0                             HEAD / HTTP/9.3}
+\par\plain {\f0\fs24\b0\i0                             OPTIONS / HTTP/1.0}
+\par\plain {\f0\fs24\b0\i0                             HEAD / HTTP/1.0}
+\par\plain {\f0\fs24\b0\i0                         Extensions}
+\par\plain {\f0\fs24\b0\i0                             WebDAV}
+\par\plain {\f0\fs24\b0\i0                             ASP.NET}
+\par\plain {\f0\fs24\b0\i0                             Frontpage}
+\par\plain {\f0\fs24\b0\i0                             OWA}
+\par\plain {\f0\fs24\b0\i0                             IIS ISAPI}
+\par\plain {\f0\fs24\b0\i0                             PHP}
+\par\plain {\f0\fs24\b0\i0                             OpenSSL}
+\par\plain {\f0\fs24\b0\i0                     HTTPS}
+\par\plain {\f0\fs24\b0\i0                         Use stunnel to encapsulate traffic.}
+\par\plain {\f0\fs24\b0\i0                     SMTP}
+\par\plain {\f0\fs24\b0\i0                     POP3}
+\par\plain {\f0\fs24\b0\i0                     FTP}
+\par\plain {\f0\fs24\b0\i0                         If banner altered, attempt anon logon and execute: 'quote help' and 'syst' commands.}
+\par\plain {\f0\fs24\b0\i0             ICMP Responses}
+\par\plain {\f0\fs24\b0\i0                 Type 3 (Port Unreachable)}
+\par\plain {\f0\fs24\b0\i0                 Type 8 (Echo Request)}
+\par\plain {\f0\fs24\b0\i0                 Type 13 (Timestamp Request)}
+\par\plain {\f0\fs24\b0\i0                 Type 15 (Information Request)}
+\par\plain {\f0\fs24\b0\i0                 Type 17 (Subnet Address Mask Request)}
+\par\plain {\f0\fs24\b0\i0                 Responses from broadcast address}
+\par\plain {\f0\fs24\b0\i0             Source Port Scans}
+\par\plain {\f0\fs24\b0\i0                 TCP/UDP 53 (DNS)}
+\par\plain {\f0\fs24\b0\i0                 TCP 20 (FTP Data)}
+\par\plain {\f0\fs24\b0\i0                 TCP 80 (HTTP)}
+\par\plain {\f0\fs24\b0\i0                 TCP/UDP 88 (Kerberos)}
+\par\plain {\f0\fs24\b0\i0             Firewall Assessment}
+\par\plain {\f0\fs24\b0\i0                 Firewalk}
+\par\plain {\f0\fs24\b0\i0                 TCP/UDP/ICMP responses}
+\par\plain {\f0\fs24\b0\i0             OS Fingerprint}
+\par\plain \f0\fs24\b0\i0}

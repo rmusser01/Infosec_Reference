@@ -1,4 +1,0 @@
-Securing Web Applications
-
-Center for Internet Security Apache Server 2.4 Hardening Guide:
-https://benchmarks.cisecurity.org/tools2/apache/CIS_Apache_HTTP_Server_2.4_Benchmark_v1.1.0.pdf

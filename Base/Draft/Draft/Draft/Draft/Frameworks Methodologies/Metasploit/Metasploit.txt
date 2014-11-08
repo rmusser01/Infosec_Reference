@@ -1,0 +1,9 @@
+Metasploit Framework
+
+
+
+
+
+
+Facts and Myths about AV Evasion with the Metasploit Framework
+http://schierlm.users.sourceforge.net/avevasion.html

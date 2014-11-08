@@ -1,0 +1,33 @@
+USB Based Attacks
+
+
+
+USB in a Nutshell
+Great explanation of the USB standard in depth
+http://www.beyondlogic.org/usbnutshell/usb1.shtml
+
+USB Device Drivers: A Stepping Stone into your Kernel
+https://www.youtube.com/watch?v=HQWFHskIY2Q
+Slides: www.jodeit.org/research/DeepSec2009_USB_Device_Drivers.pdf
+
+
+Lowering the USB Fuzzing Barrier by Transparent Two-Way Emulation
+https://www.usenix.org/system/files/conference/woot14/woot14-vantonder.pdf
+Abstract
+Increased focus on the Universal Serial Bus (USB) attack surface of devices has recently resulted in a number of new vulnerabilities. Much of this advance has been aided by the advent of hardware-based USB emulation techniques. However, existing tools and methods are far from ideal, requiring a significant investment of time, money, and effort. In this work, we present a USB testing framework that improves significantly over existing methods in providing a cost-effective and flexible way to read and modify USB communication. Amongst other benefits, the framework enables man-in-the-middle fuzz testing between a host and peripheral. We achieve this by performing two-way emulation using inexpensive bespoke USB testing hardware, thereby delivering capa-bilities of a USB analyzer at a tenth of the cost. Mutational fuzzing is applied during live communication between a host and peripheral, yielding new security-relevant bugs. Lastly, we comment on the potential of the framework to improve current exploitation techniques on the USB channel.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

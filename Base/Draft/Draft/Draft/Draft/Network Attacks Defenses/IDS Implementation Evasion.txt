@@ -1,0 +1,10 @@
+Intrusion Detection System Implementation and Evasion
+
+
+Setting up an IDS/IPS
+Snort
+Security onion
+Suricata
+Bro
+
+IDS/IPS evasion techniques

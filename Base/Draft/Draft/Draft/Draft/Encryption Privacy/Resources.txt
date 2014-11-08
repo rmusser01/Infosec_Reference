@@ -1,0 +1,17 @@
+
+
+Lecture on Attacking FDE http://www.irongeek.com/i.php?page=videos/bsidescleveland2014/attacking-and-defending-full-disk-encryption-tom-kopchak
+
+InsidePro Wiki:
+
+From http://wiki.insidepro.com/index.php/Main_Page
+
+Here you will find a lot of useful and unique information: 
+Detailed descriptions of various hashing algorithms and check sums. 
+Source codes of those algorithms in various programming languages. 
+Information on the application of certain algorithms. 
+Description of the applications that support such hashes. 	
+Various articles on the subject. 
+Useful advice on handling hashes. 
+Links to various online resources on the subject of recovering passwords from hashes. 
+And much more. 

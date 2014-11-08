@@ -1,0 +1,47 @@
+CTFs and Wargames
+
+Capture The Flag(CTF) events…
+
+Ringzer0 team CTF
+http://ringzer0team.com/
+Description: RingZer0 Team's online CTF offers you tons of challenges designed to test and improve your hacking skills thru hacking challenge. Register and get a flag for every challenges. 
+
+Archive of recent CTFs
+
+
+http://repo.shell-storm.org/CTF/
+
+Captf 
+Site: http://captf.com/
+Description from their homepage:
+This site is primarily the work of psifertex since he needed a dump site for a variety of CTF material and since many other public sites documenting the art and sport of Hacking Capture the Flag events have come and gone over the years.
+
+It has a pretty damn big list of CTFs going all the way back to 2004.
+
+
+Wargames
+
+pwn0 Wargame
+https://pwn0.com/
+From their site: 
+“pwn0 is a network where (almost) anything goes. Just sign up, connect to the VPN, and start hacking. #pwn0 on freenode “
+
+Microcorruption
+	https://microcorruption.com/login
+
+
+OverTheWire Wargames
+http://overthewire.org/wargames/
+OverTheWire provides several wargames publicly/freely available. All very good quality. Highly recommended.
+
+Smash the Stack Wargames
+http://smashthestack.org/
+Smash the stack hosts several public wargames of very good quality for free use. Highly recommended.
+
+
+
+
+
+CTF Writeups
+https://github.com/ctfs/write-ups
+

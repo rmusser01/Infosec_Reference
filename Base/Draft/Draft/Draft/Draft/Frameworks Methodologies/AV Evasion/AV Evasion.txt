@@ -1,0 +1,13 @@
+AV Evasion Techniques
+
+
+
+Following articles are from Phrack:
+Defeating Sniffers and Intrustion Detection Systems - Horizon, 12/25/1998
+Armouring the ELF: Binary Encryption on the UNIX Platform - grugq, scut, 12/28/2001
+Runtime Process Infection - anonymous, 07/28/2002
+Polymorphic Shellcode Engine Using Spectrum Analysis - theo detristan et al, 08/13/2003
+Next-generation Runtime Binary Encryption using On-demand Function Extraction - Zeljko Vrba, 08/01/2005
+Stealth Hooking: Another Way to Subvert the Windows Kernel - mxatone, ivanlef0u, 04/11/2008
+Mystifying the Debugger for Ultimate Stealthness - halfdead, 04/11/2008
+Binary Mangling with Radare - pancake, 06/11/2009

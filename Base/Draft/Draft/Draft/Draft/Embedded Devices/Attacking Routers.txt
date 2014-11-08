@@ -1,0 +1,31 @@
+Attacking Routers
+
+
+
+
+Router Post-Exploitation Framework
+https://github.com/mncoppola/rpef
+Abstracts and expedites the process of backdooring stock firmware images for consumer/SOHO routers.
+
+
+
+
+Add in router post exploitation framework
+
+
+Reversing D-Links WPS pin algorithm.
+http://www.devttys0.com/2014/10/reversing-d-links-wps-pin-algorithm/
+
+
+From 0-day to exploit – Buffer overflow in Belkin N750 (CVE-2014-1635)
+https://labs.integrity.pt/articles/from-0-day-to-exploit-buffer-overflow-in-belkin-n750-cve-2014-1635/
+
+
+
+
+
+
+
+
+
+

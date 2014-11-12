@@ -1,0 +1,40 @@
+Joomla
+
+
+
+
+Joomscan - hasn’t been updated since 2012, still nice.
+
+
+Application Level Logging
+Flat file logging - Jlog
+
+
+
+
+Files to look for:
+
+mysite/configuration.php - Config file
+
+
+
+
+User Enumeration:
+Noisy:
+Abuse Password reset feature, tells you valid user creds.
+Can be brute forced through scripting, but slow
+
+Less Noisy:
+Check posts authors
+Check user #s
+
+
+
+
+
+
+
+
+
+
+

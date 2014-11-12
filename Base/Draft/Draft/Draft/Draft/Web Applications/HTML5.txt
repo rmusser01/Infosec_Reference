@@ -1,0 +1,14 @@
+HTML 5
+
+
+
+
+
+SH5ARK
+From: http://sh5ark.professionallyevil.com/	
+The Securing HTML5 Assessment Resource Kit, or SH5ARK, is an open source project that provides a repository of HTML5 features, proof-of-concept attack code, and filtering rules. The purpose of this project is to provide a single repository that can be used to collect sample code of vulnerable HTML5 features, actual attack code, and filtering rules to help prevent attacks and abuse of these features. The intent of the project is to bring awareness to the opportunities that HTML5 is providing for attackers, to help identify these attacks, and provide measures for preventing them
+
+Presentation on SH5ARK
+https://www.youtube.com/watch?v=1ZZ-vIwmWx4
+
+GetSH5ARK here: http://sourceforge.net/projects/sh5ark/

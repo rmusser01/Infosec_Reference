@@ -1,0 +1,25 @@
+Goal
+
+Make it informal, list of techniques by grouping, refernces, better version of RTFM
+
+Remove urls from OSINT section for link references; take links and categorize into proper subsections.
+
+
+Write script to search links and display their category
+Similar to sploitsearch
+
+
+Add persistence Techniques
+
+Sections that Need Major Work/i.e. lack content
+
+Common CLI tools/cmds
+
+Computer hardware attacks
+
+Hardware/Radio Hacking
+
+Scripts
+
+Disclosure
+

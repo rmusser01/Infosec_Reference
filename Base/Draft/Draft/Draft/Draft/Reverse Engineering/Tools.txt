@@ -1,0 +1,22 @@
+Tools
+
+
+
+PEStudio
+PEStudio is a unique tool that performs the static investigation of 32-bit and 64-bit executable. 
+
+Malicious executable often attempts to hide its malicious behavior and to evade detection. In doing so, it generally presents anomalies and suspicious patterns. The goal of PEStudio is to detect these anomalies, provide indicators and score the executable being analyzed. Since the executable file being analyzed is never started, you can inspect any unknown or malicious executable with no risk. 
+http://www.winitor.com/
+
+dotPeek
+dotPeek is a .NET decompiler that has several handy features. I haven’t used it much, and don’t do much in .NET so I can’t say if its a good one, only that I’ve had success in using it.
+More info: http://www.jetbrains.com/decompiler/features/
+
+Microsoft Message Analyzer
+Microsoft Message Analyzer is a new tool for capturing, displaying, and analyzing protocol messaging traffic and other system messages. Message Analyzer also enables you to import, aggregate, and analyze data from log and trace files. It is the successor to Microsoft Network Monitor 3.4 and a key component in the Protocol Engineering Framework (PEF) that was created by Microsoft for the improvement of protocol design, development, documentation, testing, and support. With Message Analyzer, you can choose to capture data live or load archived message collections from multiple data sources simultaneously.
+http://www.microsoft.com/en-us/download/details.aspx?id=40308
+
+API Monitor
+API Monitor is a free software that lets you monitor and control API calls made by applications and services. Its a powerful tool for seeing how applications and services work or for tracking down problems that you have in your own applications.
+http://www.rohitab.com/apimonitor
+

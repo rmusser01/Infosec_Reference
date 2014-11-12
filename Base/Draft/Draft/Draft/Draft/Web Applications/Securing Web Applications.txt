@@ -1,0 +1,39 @@
+Securing Web Applications
+
+
+
+
+
+
+
+
+
+
+Center for Internet Security Apache Server 2.4 Hardening Guide:
+https://benchmarks.cisecurity.org/tools2/apache/CIS_Apache_HTTP_Server_2.4_Benchmark_v1.1.0.pdf
+
+
+Magical Code Injection Rainbow Framework
+The Magical Code Injection Rainbow! MCIR is a framework for building configurable vulnerability testbeds. MCIR is also a collection of configurable vulnerability testbeds. 
+From: https://github.com/SpiderLabs/MCIR
+Has testing lessons for xss/csrf/sql
+
+
+Source Code Analysis
+
+RIPS
+From: http://rips-scanner.sourceforge.net/
+RIPS is a tool written in PHP to find vulnerabilities in PHP applications using static code analysis. By tokenizing and parsing all source code files RIPS is able to transform PHP source code into a program model and to detect sensitive sinks (potentially vulnerable functions) that can be tainted by user input (influenced by a malicious user) during the program flow. Besides the structured output of found vulnerabilities RIPS also offers an integrated code audit framework for further manual analysis. 
+
+
+
+
+
+
+
+
+
+
+
+
+

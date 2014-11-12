@@ -1,0 +1,8 @@
+
+
+Guide to setting up/doing wifi attacks
+http://securitysynapse.blogspot.com/2013/12/wireless-pentesting-on-cheap-kali-tl.html
+this article, we proved the capabilities of an inexpensive wireless adapter and a flexible virtualized wireless attack image by breaking into a WEP protected test network.  For just $16 
+
+
+Piece to purchase: http://www.newegg.com/Product/Product.aspx?Item=N82E16833704045

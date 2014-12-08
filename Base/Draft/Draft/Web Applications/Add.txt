@@ -1,0 +1,34 @@
+Add content for:
+
+
+BlindElephant
+
+
+Sparty
+https://github.com/alias1/sparty
+Audit Frontpage/Sharepoint sites
+
+
+
+
+
+CMS-Explorer
+
+XSS attack examples/ideas
+
+Github dorks - finding vulns
+http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html
+
+
+http://www.html5rocks.com/en/tutorials/security/content-security-policy/
+
+Arachni Web Scanner
+http://www.arachni-scanner.com/
+
+
+Prompt.ml - XSS challenges
+
+
+
+Intro to content Security Policy
+www.html5rocks.com/en/tutorials/security/content-security-policy/

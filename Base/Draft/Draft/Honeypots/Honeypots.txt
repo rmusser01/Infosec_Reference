@@ -1,0 +1,11 @@
+Honeypots
+
+
+
+
+
+
+
+
+Honeypot Sstuff
+http://highaltitudehacks.com/2013/06/15/ghost-usb-honeypot-part-2-installing-and-running-the-honeypot/

@@ -1,0 +1,17 @@
+Pentesting Drop Boxes
+
+
+
+
+Minipwner
+
+
+Pineapple
+
+
+R00tabaga
+
+Raspi
+http://crushbeercrushcode.org/2013/03/developing-the-rogue-pi/
+http://www.instructables.com/id/MyLittlePwny-Make-a-self-powered-pentesting-box-/
+https://github.com/pwnieexpress/raspberry_pwn

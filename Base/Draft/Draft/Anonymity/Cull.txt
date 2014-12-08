@@ -1,0 +1,33 @@
+https://github.com/jlund/streisand
+
+
+
+Important read: https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/
+
+
+De-anonymizing facebook users through CSP
+	http://www.myseosolution.de/deanonymizing-facebook-users-by-csp-bruteforcing/#inhaltsverzeichnis
+
+
+Anonymous’s Guide to OpSec
+http://www.covert.io/research-papers/security/Anonymous%20Hacking%20Group%20--%20OpNewblood-Super-Secret-Security-Handbook.pdf
+
+
+
+
+https://github.com/chris-barry/darkweb-everywhere/releases
+
+http://norvig.com/mayzner.html
+
+
+
+
+
+
+
+
+
+
+
+
+

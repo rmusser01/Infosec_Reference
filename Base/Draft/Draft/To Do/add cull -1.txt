@@ -1,0 +1,579 @@
+
+
+
+
+
+
+
+
+QR Code intersting
+http://datagenetics.com/blog/november12013/index.html
+
+http://blog.qartis.com/decoding-small-qr-codes-by-hand/
+
+
+http://netdude.sourceforge.net/
+
+Cull the interesting papers
+http://www.covert.io/
+
+
+Rage Against the Droid: Hindering Dynamic analysis of android malware
+http://www.syssec-project.eu/m/page-media/3/petsas_rage_against_the_virtual_machine.pdf
+
+
+
+http://security.coverity.com/blog/2014/Nov/understanding-python-bytecode.html
+
+
+DIY Android Malware Analysis with OBAD
+http://securityintelligence.com/diy-android-malware-analysis-taking-apart-obad-part-1/
+
+
+equip: Python Bytecode Instrumentation
+https://github.com/neuroo/equip
+equip is a small library that helps with Python bytecode instrumentation. Its API is designed to be small and flexible to enable a wide range of possible instrumentations.
+
+
+
+PyKEK (Python Kerberos Exploitation Kit), a python library to manipulate KRB5-related data. (Still in development)
+https://github.com/bidord/pykek
+
+http://askubuntu.com/questions/95910/command-for-determining-my-public-ip
+
+
+https://sourceware.org/binutils/docs/binutils/readelf.html
+
+
+APK Studio - Android Reverse Engineering
+APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis.
+https://apkstudio.codeplex.com/
+
+
+
+http://carnal0wnage.attackresearch.com/2013/10/dumping-domains-worth-of-passwords-with.html
+http://obscuresecurity.blogspot.com/2014/05/dirty-powershell-webserver.html
+http://www.harmj0y.net/blog/powershell/dumping-a-domains-worth-of-passwords-with-mimikatz-pt-2/
+
+
+
+
+stupid_malware 
+https://github.com/andrew-morris/stupid_malware
+Python malware for pentesters that bypasses most antivirus (signature and heuristics) and IPS using sheer stupidity 
+
+Analyzing and Running binaries from Firmware Images - Part 1 
+http://w00tsec.blogspot.com.br/2013/09/analyzing-and-running-binaries-from.html
+Shellpaste
+Tiny snippet of code that pulls ASCII shellcode from pastebin and executes it. The purpose of this is to have a minimal amount of benign code so AV doesn't freak out, then it pulls down the evil stuff. People have been doing this kind of stuff for years so I take no credit for the concept. That being said, this code (or similar code) works surprisingly often during pentests when conventional malware fails. 
+https://github.com/andrew-morris/shellpaste
+
+
+binwally
+https://github.com/bmaia/binwally
+Binary and Directory tree comparison tool using the Fuzzy Hashing concept (ssdeep)
+http://w00tsec.blogspot.com/2013/12/binwally-directory-tree-diff-tool-using.html
+
+
+
+Beeswarm
+Beeswarm is a honeypot project which provides easy configuration, deployment and managment of honeypots. Beeswarm operates by deploying fake end-user systems (clients) and services (honeypots). Beeswarm uses these systems to provides IoC (Indication of Compromise) by observing the difference between expected and actual traffic. 
+
+https://github.com/honeynet/beeswarm
+http://www.beeswarm-ids.org/
+apkinspector 
+APKinspector is a powerful GUI tool for analysts to analyze the Android applications. 
+https://github.com/honeynet/apkinspector/
+
+
+SSDeep
+ssdeep is a program for computing context triggered piecewise hashes (CTPH). Also called fuzzy hashes, CTPH can match inputs that have homologies. Such inputs have sequences of identical bytes in the same order, although bytes in between these sequences may be different in both content and length. 
+http://ssdeep.sourceforge.net/
+
+
+binwally
+Binary and Directory tree comparison tool using the Fuzzy Hashing concept (ssdeep)
+https://github.com/bmaia/binwally
+
+
+
+Radamsa
+Radamsa is a test case generator for robustness testing, aka a fuzzer. It can be used to test how well a program can stand malformed and potentially malicious inputs. It operates based on given sample inputs and thus requires minimal effort to set up. The main selling points of radamsa are that it is easy to use, contains several old and new fuzzing algorithms, is easy to script from command line and has already been used to find a slew of bugs in programs that actually matter. 
+https://code.google.com/p/ouspg/wiki/Radamsa
+
+Bradamsa
+https://github.com/ikkisoft/bradamsa
+Burp Suite extension to generate Intruder payloads using Radamsa 
+
+The Eavesdropper’s Dillemma
+http://www.crypto.com/papers/internet-tap.pdf
+
+
+Multitun
+Efficiently and securely tunnel everything over a harmless looking WebSocket!
+https://github.com/covertcodes/multitun
+
+
+
+RAWR - Rapid Assessment of Web Resources	
+https://bitbucket.org/al14s/rawr/wiki/Home
+
+
+Byteweight: Learning to Recognize Functions in Binary Code
+https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-bao.pdf
+
+
+Website detailing various crypto laws around world
+http://www.cryptolaw.org/
+
+Linux Kernel Explanation/Walk through
+http://www.faqs.org/docs/Linux-HOWTO/KernelAnalysis-HOWTO.html
+
+
+Python RE tools list
+http://pythonarsenal.erpscan.com/
+
+How To Dissect Android Flappy Bird Malware
+http://securehoney.net/blog/how-to-dissect-android-flappy-bird-malware.html
+
+
+Intro to Anti-Fuzzing
+https://www.nccgroup.com/en/blog/2014/01/introduction-to-anti-fuzzing-a-defence-in-depth-aid/
+
+
+Obfuscation in Android malware, and how to fight back
+https://www.virusbtn.com/virusbulletin/archive/2014/07/vb201407-Android-obfuscation
+
+
+
+https://bluebox.com/wp-content/uploads/2013/05/AndroidREnDefenses201305.pdf
+
+Android/Beita.A malware analysis
+http://www.jamesejr.com/android-beita-malware-analysis/
+Android Sandbox V1 
+* Automated Malware Analysis 
+http://androidsandbox.net/
+
+
+Android Packers
+http://www.fortiguard.com/uploads/general/Area41Public.pdf
+
+
+http://dexter.dexlabs.org/accounts/login/?next=/dashboard
+Dexter is a static android application analysis tool. 
+
+Hflow2 Data Analysis System
+https://projects.honeynet.org/hflow
+
+
+ChipWhisperer
+http://www.newae.com/chipwhisperer
+ChipWhisperer is the first ever open-source solution that provides a complete toolchain for research and analysis of embedded hardware security. Side Channel Power Analysis, Clock Glitching, VCC Glitching, and more are all possible with this unique tool.
+
+Detekt
+https://github.com/botherder/detekt
+Detekt is a Python tool that relies on Yara, Volatility and Winpmem to scan the memory of a running Windows system (currently supporting Windows XP to Windows 8 both 32 and 64 bit and Windows 8.1 32bit). 
+Detekt tries to detect the presence of pre-defined patterns that have been identified through the course of our research to be unique identifiers that indicate the presence of a given malware running on the computer. Currently it is provided with patterns for: 
+DarkComet RAT
+XtremeRAT
+BlackShades RAT
+njRAT
+FinFisher FinSpy
+HackingTeam RCS
+ShadowTech RAT
+Gh0st RAT
+
+
+
+
+http://www.cuckoosandbox.org/
+
+
+http://dionaea.carnivore.it/
+dionaea intention is to trap malware exploiting vulnerabilities exposed by services offerd to a network, the ultimate goal is gaining a copy of the malware. 
+
+
+
+http://glastopf.org/
+Glastopf Project 
+updated by Lukas Rist on December 11. 2012
+Glastopf is a Honeypot which emulates thousands of vulnerabilities to gather data from attacks targeting web applications. The principle behind it is very simple: Reply the correct response to the attacker exploiting the web application. The project has been kicked off by Lukas Rist in 2009 and the results we are got during this time are very promising and are an incentive to put even more effort in the development of this unique tool. Read the tool description for further information.
+We are working together with different people, organizations and institutions to get the best from the collected data. Find out more about collaborating with the project. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hacking Team Writeup
+https://citizenlab.org/2014/06/backdoor-hacking-teams-tradecraft-android-implant/
+
+http://www.offensive-security.com/vulndev/disarming-and-bypassing-emet-5-1/
+
+CVE-2014-7911: Android <5.0 Privilege Escalation using ObjectInputStream 
+
+http://seclists.org/fulldisclosure/2014/Nov/51
+
+manifesto 
+PoC framework for APK obfuscation, used to demonstrate some of the obfuscation examples from http://maldr0id.blogspot.com. It supports plugins (located in processing directory) that can do different obfuscation techniques. Main gist is that you run manifesto on the APK file and it produces an obfuscated APK file.
+
+
+Inside the Windows Vista Kernel: Part 1
+http://technet.microsoft.com/en-us/magazine/2007.02.vistakernel.aspx
+
+
+
+
+
+
+http://www.android-x86.org/
+Android-x86 Project - Run Android on Your PC 
+This is a project to port Android open source project to x86 platform, formerly known as "patch hosting for android x86 support". The original plan is to host different patches for android x86 support from open source community. A few months after we created the project, we found out that we could do much more than just hosting patches. So we decide to create our code base to provide support on different x86 platforms, and set up a git server to host it.
+
+ARE
+Virtual Machine for Android Reverse Engineering
+https://redmine.honeynet.org/projects/are
+
+
+
+Reversing Android Apps Slides
+http://www.floyd.ch/download/Android_0sec.pdf
+
+Android apk-tool
+https://code.google.com/p/android-apktool/
+Dare is a project which aims at enabling Android application analysis. The Dare tool retargets Android applications in .dex or .apk format to traditional .class files. These .class files can then be processed by existing Java tools, including decompilers. Thus, Android applications can be analyzed using a vast range of techniques developed for traditional Java applications. 
+http://siis.cse.psu.edu/
+
+
+APKinspector is a powerful GUI tool for analysts to analyze the Android applications. 
+https://github.com/honeynet/apkinspector/
+
+
+Smali
+https://code.google.com/p/smali/
+smali/baksmali is an assembler/disassembler for the dex format used by dalvik, Android's Java VM implementation. The syntax is loosely based on Jasmin's/dedexer's syntax, and supports the full functionality of the dex format (annotations, debug info, line info, etc.) 
+
+
+
+Android ADB cheat sheet
+https://github.com/maldroid/adb_cheatsheet/blob/master/cheatsheet.pdf?raw=true
+
+
+
+Client Identification Mechanisms
+http://www.chromium.org/Home/chromium-security/client-identification-mechanisms
+
+http://c7zero.info/
+
+
+https://www.pinguin.lu/xmount
+
+http://www.bleepingcomputer.com/tutorials/windows-program-automatic-startup-locations/
+
+
+Windows Startup Application Database
+http://www.pacs-portal.co.uk/startup_content.php
+
+
+
+Logging for AD in sysadmin section
+Like proccesses created
+
+
+
+
+Breaking IPMI/BMC
+http://fish2.com/ipmi/how-to-break-stuff.html
+
+
+
+
+Writeups of router firmware vulns/exploits	
+
+
+
+
+
+
+
+https://archassault.org/
+The ArchAssault Project is an Arch Linux derivative for penetration testers, security professionals and all-around Linux enthusiasts. This means we import the vast majority of the official upstream Arch Linux packages, these packages are unmodified from their upstream source. While our Arch Linux base is primarily untouched, there are times were we have to fork a package to be able to better support our vast selection of tools. All of our packages strive to maintain the Arch Linux standards, methods and philosophies.
+
+
+imagejs is a small tool to hide javascript inside a valid image file. The image file is recognized as one by content checking software, e.g. the file command you might now from Linux or other Unix based operation systems.
+http://jklmnn.de/imagejs/
+https://github.com/jklmnn/imagejs
+
+
+
+
+
+
+
+PSHITT
+pshitt (for Passwords of SSH Intruders Transferred to Text) is a lightweight fake SSH server designed to collect authentication data sent by intruders. It basically collects username and password used by SSH bruteforce software and writes the extracted data to a file in JSON format.
+pshitt is written in Python and use paramiko to implement the SSH layer.
+
+
+
+Widespread Weak Keys in Network Devices
+https://factorable.net/
+
+Look into
+http://cybergibbons.com/uncategorized/an-intriguing-mix-of-micros/
+
+Lookat http://www.cl.cam.ac.uk/~sps32/PartII_030214.pdf
+
+Check under research section
+http://www.cl.cam.ac.uk/~sps32/
+
+
+http://moonbaseotago.com/onerng/theory.html
+
+
+Access control best pactices
+https://srlabs.de/acs/
+
+Go through
+https://santoku-linux.com/howtos
+
+Hacking windows through the WIndows API; delves into windows api, how it can break itself
+http://www.irongeek.com/i.php?page=videos/derbycon4/t122-getting-windows-to-play-with-itself-a-pen-testers-guide-to-windows-api-abuse-brady-bloxham
+
+
+Bluetooth IOCTL priv esc mac osx
+http://randomthoughts.greyhats.it/2014/10/osx-local-privilege-escalation.html	
+
+\Darknets intro vid - educational
+https://www.youtube.com/watch?v=tjJYC2LuJl0
+
+http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-macs-and-sdrs-robert-ghilduta
+
+Analyzing unknown malware blogpost series
+http://thegoldenmessenger.blogspot.com/
+
+
+Malware Analysis Tutorials: a Reverse Engineering Approach 
+http://fumalwareanalysis.blogspot.com/p/malware-analysis-tutorials-reverse.html
+
+
+http://digirati82.com/2013/06/03/using-splunk-to-watch-for-new-binaries/
+
+ProcDOT
+This tool processes Sysinternals Process Monitor (Procmon) logfiles and PCAP-logs (Windump, Tcpdump) to generate a graph via the GraphViz suite. This graph visualizes any relevant activities (customizable) and can be interactively analyzed.
+http://www.cert.at/downloads/software/procdot_en.html
+
+
+Secure Deletion of Data from Magnetic and Solid-State Memory
+http://static.usenix.org/publications/library/proceedings/sec96/full_papers/gutmann/index.html
+
+
+
+
+
+
+
+
+
+
+
+
+Door Control Systems: An Examination of Lines of Attack
+https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/
+
+DEFCON 20: Into the Droid: Gaining Access to Android User Data 
+https://www.youtube.com/watch?v=MxhIo95VccI&amp;list=PLCDA5DF85AD6B4ABD
+DEFCON 20: APK File Infection on an Android System 
+https://www.youtube.com/watch?v=HZI1hCdqKjQ&amp;list=PLCDA5DF85AD6B4ABD
+
+
+
+
+https://digital-forensics.sans.org/summit-archives/2010/2-newell-spiderlabs-sniper-forensics.pdf
+Pg10 and onward
+
+Mov is turing ocmplete
+http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf
+
+
+Hacking Your Way Up The Mobile Stack
+http://vimeo.com/51270090
+
+Pool Blade: A new approach for kernel pool exploitation
+https://zdresearch.com/pool-blade-a-new-approach-for-kernel-pool-exploitation/
+Rise of the dual architecture usermode rootkit 
+http://www.malwaretech.com/2013/06/rise-of-dual-architecture-usermode.html
+Google Bots Doing SQL Injection Attacks
+http://blog.sucuri.net/2013/11/google-bots-doing-sql-injection-attacks.html
+http://www.hackingprojects.net/2013/04/secrets-of-sim.html
+
+Osmocom SIMtrace
+Osmocom SIMtrace is a software and hardware system for passively tracing SIM-ME communication between the SIM card and the mobile phone. 
+http://bb.osmocom.org/trac/wiki/SIMtrace
+
+http://www.malwaretech.com/2013/08/powerloader-injection-something-truly.html
+
+Understanding Buffer Overflow Exploits
+http://proactivedefender.blogspot.com/2013/05/understanding-buffer-overflows.html
+
+PenQ
+http://www.qburst.com/products/PenQ
+PenQ is an open source, Linux-based penetration testing browser bundle we built over Mozilla Firefox. It comes pre-configured with security tools for spidering, advanced web searching, fingerprinting, anonymous browsing, web server scanning, fuzzing, report generating and more.
+The Evolution of Protected Processes Part 1: Pass-the-Hash Mitigations in Windows 8.1
+http://www.alex-ionescu.com/?p=97
+A (relatively easy to understand) primer on elliptic curve cryptography
+http://arstechnica.com/security/2013/10/a-relatively-easy-to-understand-primer-on-elliptic-curve-cryptography/
+
+
+
+http://shadow-file.blogspot.com/2013/10/complete-persistent-compromise-of.html
+
+https://www.youtube.com/watch?v=eI4ceLgO_CE
+Techniques for fast windows investigations, look at sniper forensics, skip around, 18min has resources you want to grab for snapshots
+
+Compare resources against what power-view can grab
+Compare against sysmon service for scaling, setting it as service with scripting
+
+http://simplemachines.it/doc/arm_inst.pdf
+Arm instrution set
+
+
+http://www.h725.co.vu/2013/11/d-link-whats-wrong-with-you.html
+
+Responder
+https://github.com/SpiderLabs/Responder/
+Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication. 
+
+
+
+http://www.codeproject.com/Articles/36907/How-to-develop-your-own-Boot-Loader
+
+WIndows 8 BOot
+http://technet.microsoft.com/en-US/windows/dn168167.aspx
+
+http://www.malwaretech.com/2013/09/win64vabushky-great-code-heist.html
+
+http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/
+
+https://github.com/seantmalone/HiveMind
+Distributed File Storage Using JavaScript Botnets 
+http://blog.ptsecurity.com/2012/12/windows-8-aslr-internals.html
+
+
+http://blog.cmpxchg8b.com/2013/05/introduction-to-windows-kernel-security.html
+
+
+http://eshunrd.blogspot.com/2011/09/linux-kernel-26362-econet-privilege.html
+
+Shellshock bug writeup by lcamtuf
+http://lcamtuf.blogspot.com/2014/10/bash-bug-how-we-finally-cracked.html
+
+
+
+https://github.com/Veil-Framework/Veil-PowerView
+
+
+Collection of Windows Autostart locations
+http://gladiator-antivirus.com/forum/index.php?showtopic=24610
+
+
+TextSecure Protocol
+https://github.com/WhisperSystems/TextSecure/wiki/ProtocolV2
+
+
+
+
+MAT: Metadata Anonymisation Toolkit 
+MAT is a toolbox composed of a GUI application, a CLI application and a library.
+https://mat.boum.org/
+
+
+
+
+
+
+Exif Jpeg header manipulation tool
+http://www.sentex.net/~mwandel/jhead/
+
+
+Reverse Engineering Qualcomm Baseband
+http://events.ccc.de/congress/2011/Fahrplan/attachments/2022_11-ccc-qcombbdbg.pdf
+
+
+Hachoir is a Python library that allows to view and edit a binary stream field by field
+https://bitbucket.org/haypo/hachoir/wiki/Home
+
+HAVEGE [ HArdware Volatile Entropy Gathering and Expansion ] 
+http://www.irisa.fr/caps/projects/hipsor/
+
+
+
+
+
+
+File Signature Table
+http://www.garykessler.net/library/file_sigs.html
+
+Linux Device Drivers book
+http://www.makelinux.net/ldd3/
+
+Portable Executable Injection For Beginners 
+http://www.malwaretech.com/2013/11/portable-executable-injection-for.html
+
+
+http://www.slideshare.net/joshjdrake/reversing-and-auditing-androids-proprietary-bits
+
+https://addons.mozilla.org/en-US/firefox/addon/ssleuth/
+
+
+Identifying users of browsers:
+http://www.chromium.org/Home/chromium-security/client-identification-mechanisms
+
+
+http://cowl.ws/
+COWL: A Confinement System for the Web
+robust JavaScript confinement system for modern web browsers. COWL introduces label-based mandatory access control to browsing contexts (pages, iframes, etc.) in a way that is fully backward-compatible with legacy web content. 
+http://www.scs.stanford.edu/~deian/pubs/stefan:2014:protecting.pdf
+
+http://www.petges.lu/home/
+
+http://nicoleibrahim.com/part-1-mtp-and-ptp-usb-device-research/
+
+http://www.amanhardikar.com/mindmaps/Practice.html
+
+http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/
+
+http://grehack.org/en/
+
+
+
+http://zerowine.sourceforge.net/
+
+
+
+
+
+
+
+http://www.crypto.com/papers/internet-tap.pdf
+This paper examines the problem of surreptitious Internet interception from the eavesdropper’s point of view.
+We introduce the notion of ‘fidelity” in digital eavesdropping. In particular, we formalize several kinds of “network
+noise” that might degrade fidelity, most notably “confusion,” and show that reliable network interception may not be
+as simple as previously thought or even always possible. Finally, we suggest requirements for “high fidelity” network
+interception, and show how systems that do not meet these requirements can be vulnerable to countermeasures,
+which in some cases can be performed entirely by a third party without the cooperation or even knowledge of the
+communicating parties.
+
+
+

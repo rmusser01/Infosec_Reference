@@ -1,0 +1,13 @@
+
+
+
+
+http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Analysis-What-Should-You-Choose.pdf
+
+
+
+
+http://www.wildcroftsecurity.com/echo-mirage
+Echo Mirage is a generic network proxy. It uses DLL injection and function hooking techniques to redirect network related function calls so that data transmitted and received by local applications can be observed and modified. 
+Windows encryption and OpenSSL functions are also hooked so that plain text of data being sent and received over an encrypted session is also available. 
+Traffic can be intercepted in real-time, or manipulated with regular expressions and a number of action directives

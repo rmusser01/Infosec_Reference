@@ -1,0 +1,19 @@
+Cheat Sheets
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://scadahacker.com/library/Documents/Cheat_Sheets/Hacking%20-%20Meterpreter%20Cheat%20%20Sheet.pdf
+
+http://aerokid240.blogspot.com/2009/11/msfpayload-goodness-cheatsheet.html
+
+http://averagesecurityguy.info/cheat-sheet/

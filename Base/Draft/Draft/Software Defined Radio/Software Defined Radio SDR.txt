@@ -1,0 +1,15 @@
+Software Defined Radio
+
+
+
+
+
+
+
+
+
+http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/14-hacking-the-wireless-world-with-software-defined-radio-2-0-balint-seeber
+
+
+So you want to get into SDR talk
+www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/01-so-ya-wanna-get-into-sdr-russell-handorf

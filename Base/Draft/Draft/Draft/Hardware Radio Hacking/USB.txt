@@ -1,0 +1,15 @@
+USB
+
+
+
+
+
+
+BadUSB
+Slides: https://srlabs.de/blog/wp-content/uploads/2014/11/SRLabs-BadUSB-Pacsec-v2.pdf
+Video: https://www.youtube.com/watch?v=nuruzFqMgIw
+Code: https://github.com/adamcaudill/Psychson
+
+
+Media Transfer Protocol and USB device Research
+http://nicoleibrahim.com/part-1-mtp-and-ptp-usb-device-research/

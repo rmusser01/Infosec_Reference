@@ -1,0 +1,6 @@
+Anti-Forensics
+
+
+Secure Deletion of Data from Magnetic and Solid-State Memory
+http://static.usenix.org/publications/library/proceedings/sec96/full_papers/gutmann/index.html
+

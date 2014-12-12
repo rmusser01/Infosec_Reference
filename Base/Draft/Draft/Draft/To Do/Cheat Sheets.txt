@@ -1,0 +1,40 @@
+http://www.amanhardikar.com/mindmaps.html
+
+
+Nasm x86 reference
+https://www.cs.uaf.edu/2006/fall/cs301/support/x86/
+
+Android ADB cheat sheet
+https://github.com/maldroid/adb_cheatsheet/blob/master/cheatsheet.pdf?raw=true
+
+Windows Startup Application Database
+http://www.pacs-portal.co.uk/startup_content.php
+
+Arm instruction set
+http://simplemachines.it/doc/arm_inst.pdf
+
+File Signature Table
+http://www.garykessler.net/library/file_sigs.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+http://www.amanhardikar.com/mindmaps/Practice.html

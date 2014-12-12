@@ -1,0 +1,42 @@
+Interesting Software
+
+
+
+ProcDOT
+This tool processes Sysinternals Process Monitor (Procmon) logfiles and PCAP-logs (Windump, Tcpdump) to generate a graph via the GraphViz suite. This graph visualizes any relevant activities (customizable) and can be interactively analyzed.
+http://www.cert.at/downloads/software/procdot_en.html
+
+
+
+
+Hachoir is a Python library that allows to view and edit a binary stream field by field
+https://bitbucket.org/haypo/hachoir/wiki/Home
+
+
+
+
+
+
+Distributed File Storage Using JavaScript Botnets
+https://github.com/seantmalone/HiveMind
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

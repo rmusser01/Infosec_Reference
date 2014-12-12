@@ -1,0 +1,28 @@
+Cellular Networks
+
+
+
+
+Cellular Networks in use North America:
+	In use in Europe:
+	In use in Asia:
+	In use in Africa:
+	In use in South America:
+
+
+Secrets of sim
+http://www.hackingprojects.net/2013/04/secrets-of-sim.html
+
+Osmocom SIMtrace
+Osmocom SIMtrace is a software and hardware system for passively tracing SIM-ME communication between the SIM card and the mobile phone. 
+http://bb.osmocom.org/trac/wiki/SIMtrace
+
+
+http://www.3gpp.org/DynaReport/31048.htm
+
+y
+
+
+Demystifying the Mobile Network by Chuck McAuley
+http://2014.video.sector.ca/video/110383258
+Must watch video. Very informative.

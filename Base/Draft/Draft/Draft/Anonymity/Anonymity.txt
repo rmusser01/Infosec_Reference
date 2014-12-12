@@ -1,0 +1,9 @@
+Anonymity
+
+
+
+This page is not high on my list of things to be done honestly.
+
+MAT: Metadata Anonymisation Toolkit 
+MAT is a toolbox composed of a GUI application, a CLI application and a library.
+https://mat.boum.org/

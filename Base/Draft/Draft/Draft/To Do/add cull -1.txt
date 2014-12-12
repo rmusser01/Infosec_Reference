@@ -1,0 +1,205 @@
+Hflow2 Data Analysis System
+https://projects.honeynet.org/hflow
+
+
+
+
+
+
+http://www.myopenrouter.com/article/10917/Port-Mirroring-Span-Port-Monitor-Port-with-iptables-on-NETGEAR-WGR614L/
+
+
+
+http://www.kahusecurity.com/2014/javascript-deobfuscation-tools-redux/
+
+https://www.f-secure.com/weblog/archives/00002774.html
+
+
+https://cryptoservices.github.io/fde/2014/12/08/code-execution-in-spite-of-bitlocker.html
+
+http://census-labs.com/news/2014/11/27/project-heapbleed/
+
+QR Code intersting
+http://datagenetics.com/blog/november12013/index.html
+
+http://blog.qartis.com/decoding-small-qr-codes-by-hand/
+
+
+http://netdude.sourceforge.net/
+
+Cull the interesting papers
+http://www.covert.io/
+
+
+
+
+http://security.coverity.com/blog/2014/Nov/understanding-python-bytecode.html
+
+
+
+http://askubuntu.com/questions/95910/command-for-determining-my-public-ip
+
+
+https://sourceware.org/binutils/docs/binutils/readelf.html
+
+
+
+http://carnal0wnage.attackresearch.com/2013/10/dumping-domains-worth-of-passwords-with.html
+http://obscuresecurity.blogspot.com/2014/05/dirty-powershell-webserver.html
+http://www.harmj0y.net/blog/powershell/dumping-a-domains-worth-of-passwords-with-mimikatz-pt-2/
+
+Python RE tools list
+http://pythonarsenal.erpscan.com/
+
+
+
+https://bluebox.com/wp-content/uploads/2013/05/AndroidREnDefenses201305.pdf
+
+
+http://www.offensive-security.com/vulndev/disarming-and-bypassing-emet-5-1/
+
+CVE-2014-7911: Android <5.0 Privilege Escalation using ObjectInputStream 
+
+http://seclists.org/fulldisclosure/2014/Nov/51 
+
+Inside the Windows Vista Kernel: Part 1
+http://technet.microsoft.com/en-us/magazine/2007.02.vistakernel.aspx
+
+
+http://www.android-x86.org/
+Android-x86 Project - Run Android on Your PC 
+This is a project to port Android open source project to x86 platform, formerly known as "patch hosting for android x86 support". The original plan is to host different patches for android x86 support from open source community. A few months after we created the project, we found out that we could do much more than just hosting patches. So we decide to create our code base to provide support on different x86 platforms, and set up a git server to host it.
+
+
+Dare is a project which aims at enabling Android application analysis. The Dare tool retargets Android applications in .dex or .apk format to traditional .class files. These .class files can then be processed by existing Java tools, including decompilers. Thus, Android applications can be analyzed using a vast range of techniques developed for traditional Java applications. 
+http://siis.cse.psu.edu/
+
+http://c7zero.info/
+
+
+https://www.pinguin.lu/xmount
+
+http://www.bleepingcomputer.com/tutorials/windows-program-automatic-startup-locations/
+
+
+
+
+Logging for AD in sysadmin section
+Like proccesses created
+
+
+
+Writeups of router firmware vulns/exploits	
+
+
+
+
+Widespread Weak Keys in Network Devices
+https://factorable.net/
+
+Look into
+http://cybergibbons.com/uncategorized/an-intriguing-mix-of-micros/
+
+Lookat http://www.cl.cam.ac.uk/~sps32/PartII_030214.pdf
+
+Check under research section
+http://www.cl.cam.ac.uk/~sps32/
+
+
+http://moonbaseotago.com/onerng/theory.html
+
+
+Access control best pactices
+https://srlabs.de/acs/
+
+Go through
+https://santoku-linux.com/howtos
+
+
+
+http://digirati82.com/2013/06/03/using-splunk-to-watch-for-new-binaries/
+
+
+
+https://digital-forensics.sans.org/summit-archives/2010/2-newell-spiderlabs-sniper-forensics.pdf
+Pg10 and onward
+
+Google Bots Doing SQL Injection Attacks
+http://blog.sucuri.net/2013/11/google-bots-doing-sql-injection-attacks.html
+
+
+
+
+
+http://www.malwaretech.com/2013/08/powerloader-injection-something-truly.html
+
+
+
+https://www.youtube.com/watch?v=eI4ceLgO_CE
+Techniques for fast windows investigations, look at sniper forensics, skip around, 18min has resources you want to grab for snapshots
+
+Compare resources against what power-view can grab
+Compare against sysmon service for scaling, setting it as service with scripting
+
+
+
+
+http://www.codeproject.com/Articles/36907/How-to-develop-your-own-Boot-Loader
+
+Windows 8 BOot
+http://technet.microsoft.com/en-US/windows/dn168167.aspx
+
+http://www.malwaretech.com/2013/09/win64vabushky-great-code-heist.html
+
+http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/
+
+
+
+
+
+ 
+http://blog.ptsecurity.com/2012/12/windows-8-aslr-internals.html
+
+
+http://blog.cmpxchg8b.com/2013/05/introduction-to-windows-kernel-security.html
+
+
+http://eshunrd.blogspot.com/2011/09/linux-kernel-26362-econet-privilege.html
+
+Shellshock bug writeup by lcamtuf
+http://lcamtuf.blogspot.com/2014/10/bash-bug-how-we-finally-cracked.html
+
+
+
+https://github.com/Veil-Framework/Veil-PowerView
+
+
+
+
+
+
+Collection of Windows Autostart locations
+http://gladiator-antivirus.com/forum/index.php?showtopic=24610
+
+https://addons.mozilla.org/en-US/firefox/addon/ssleuth/
+
+
+
+
+
+
+http://www.petges.lu/home/
+
+
+
+
+
+http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/
+
+http://grehack.org/en/
+
+
+
+
+
+

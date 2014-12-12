@@ -1,0 +1,82 @@
+
+File Signature Table
+http://www.garykessler.net/library/file_sigs.html
+
+
+
+
+
+
+
+
+
+Detekt
+https://github.com/botherder/detekt
+Detekt is a Python tool that relies on Yara, Volatility and Winpmem to scan the memory of a running Windows system (currently supporting Windows XP to Windows 8 both 32 and 64 bit and Windows 8.1 32bit). 
+Detekt tries to detect the presence of pre-defined patterns that have been identified through the course of our research to be unique identifiers that indicate the presence of a given malware running on the computer. Currently it is provided with patterns for: 
+DarkComet RAT
+XtremeRAT
+BlackShades RAT
+njRAT
+FinFisher FinSpy
+HackingTeam RCS
+ShadowTech RAT
+Gh0st RAT
+
+
+SSDeep
+ssdeep is a program for computing context triggered piecewise hashes (CTPH). Also called fuzzy hashes, CTPH can match inputs that have homologies. Such inputs have sequences of identical bytes in the same order, although bytes in between these sequences may be different in both content and length. 
+http://ssdeep.sourceforge.net/
+binwally
+https://github.com/bmaia/binwally
+Binary and Directory tree comparison tool using the Fuzzy Hashing concept (ssdeep)
+
+Unmasking Careto through Memory Analysis - Andrew Case
+http://2014.video.sector.ca/video/110388398
+
+http://blog.didierstevens.com/programs/pdf-tools/
+
+
+
+http://windowsir.blogspot.com/2013/07/howto-data-exfiltration.html
+
+https://sysforensics.org/2014/01/know-your-windows-processes.html
+
+
+Attrition Forensics
+http://2014.video.sector.ca/video/110334184
+
+
+
+Firefox private browsing forensics
+http://www.magnetforensics.com/forensic-implications-of-a-person-using-firefoxs-private-browsing/
+
+https://santoku-linux.com/howtos
+
+http://blog.didierstevens.com/programs/pdf-tools/
+
+
+
+http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
+http://blog.spiderlabs.com/2011/11/sniper-forensics-context-context-context.html
+http://blog.spiderlabs.com/2011/03/sniper-forensics-part-4.html
+https://digital-forensics.sans.org/summit-archives/2010/2-newell-spiderlabs-sniper-forensics.pdf
+http://blog.spiderlabs.com/2011/07/sniper-forensics-part-v-finding-evil-part-ii.html	http://blog.spiderlabs.com/2011/01/sniper-forensics-part-two-target-acquisition-in-part-one-of-the-sniper-forensics-post-we-discussed-the-history-of-forensic.html	
+Forensics wiki
+
+
+Add Enterprise Forensics section?
+Yelp/Github - OSX Collector - Mass style forensics/management
+
+
+
+Mem forenics cheat sheet
+http://forensicmethods.com/wp-content/uploads/2012/04/Memory-Forensics-Cheat-Sheet-v1.pdf
+
+
+
+
+
+PDF Forensics
+
+http://countuponsecurity.com/2014/09/22/malicious-documents-pdf-analysis-in-5-steps/

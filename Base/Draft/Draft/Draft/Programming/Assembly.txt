@@ -1,0 +1,18 @@
+Assembly
+
+
+
+
+Mov is turing ocmplete
+http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf
+
+Nasm x86 reference
+https://www.cs.uaf.edu/2006/fall/cs301/support/x86/
+
+
+
+Reading ASM
+http://cseweb.ucsd.edu/classes/sp11/cse141/pdf/02/S01_x86_64.key.pdf
+
+Intro to x86 calling conventions
+http://codearcana.com/posts/2013/05/21/a-brief-introduction-to-x86-calling-conventions.html

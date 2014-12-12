@@ -1,0 +1,33 @@
+Windows Forensics
+
+
+
+
+
+
+Techniques for fast windows investigations, look at sniper forensics, skip around, 18min has resources you want to grab for snapshots
+https://www.youtube.com/watch?v=eI4ceLgO_CE
+
+
+Collection of Windows Autostart locations
+http://gladiator-antivirus.com/forum/index.php?showtopic=24610
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

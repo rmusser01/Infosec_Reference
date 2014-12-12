@@ -1,0 +1,43 @@
+Interesting Software
+
+
+
+ProcDOT
+This tool processes Sysinternals Process Monitor (Procmon) logfiles and PCAP-logs (Windump, Tcpdump) to generate a graph via the GraphViz suite. This graph visualizes any relevant activities (customizable) and can be interactively analyzed.
+http://www.cert.at/downloads/software/procdot_en.html
+
+
+
+
+Hachoir is a Python library that allows to view and edit a binary stream field by field
+https://bitbucket.org/haypo/hachoir/wiki/Home
+
+
+
+
+
+
+Distributed File Storage Using JavaScript Botnets
+https://github.com/seantmalone/HiveMind
+
+
+Xmount
+What is xmount? xmount allows you to convert on-the-fly between multiple input and output harddisk image types. xmount creates a virtual file system using FUSE (Filesystem in Userspace) that contains a virtual representation of the input image. The virtual representation can be in raw DD, DMG, VHD, VirtualBox's virtual disk file format or in VmWare's VMDK file format. Input images can be raw DD, EWF (Expert Witness Compression Format) or AFF (Advanced Forensic Format) files. In addition, xmount also supports virtual write access to the output files that is redirected to a cache file. This makes it possible to boot acquired harddisk images using QEMU, KVM, VirtualBox, VmWare or alike.
+https://www.pinguin.lu/xmount
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

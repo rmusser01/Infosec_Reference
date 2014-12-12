@@ -1,18 +1,26 @@
 Interesting Things
 
 
+
+
+
+
+
+QR Code intersting
+http://datagenetics.com/blog/november12013/index.html
+
+http://blog.qartis.com/decoding-small-qr-codes-by-hand/
+
+
 Website detailing various crypto laws around world
 http://www.cryptolaw.org/
 
 Door Control Systems: An Examination of Lines of Attack
 https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/
 
-Linux Device Drivers book
-http://www.makelinux.net/ldd3/
 
 
-X Window System Explained
-https://magcius.github.io/xplain/article/index.html
+
 
 Setting up Suricata on a Microtik Router
 http://robert.penz.name/849/howto-setup-a-mikrotik-routeros-with-suricata-as-ids/

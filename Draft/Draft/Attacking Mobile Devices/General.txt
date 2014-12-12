@@ -1,5 +1,15 @@
 Attacking Mobile Devices
 
+Also check out the cellular section under “Wireless”.
+
+
+
+
+Hacking Your Way Up The Mobile Stack
+http://vimeo.com/51270090
+
+
+
 Setting up a test environment
 
 
@@ -18,3 +28,7 @@ Methodologies
 
 OWASP Mobile Security Project’s Mobile Security Testing methodology:
 	https://www.owasp.org/index.php/OWASP_Mobile_Security_Project#Mobile_Security_Testing
+
+
+
+

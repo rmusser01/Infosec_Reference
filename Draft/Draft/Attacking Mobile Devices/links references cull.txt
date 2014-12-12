@@ -1,19 +1,15 @@
 Cull these into information for the specific topic or put the links to their respective category
 
 
-Demystifying the mobile network - Chuck McAuley;
-http://2014.video.sector.ca/video/110383258
-
-
 
 OWASP mobile tools and testing methodology
 https://www.owasp.org/index.php/OWASP_Mobile_Security_Project#Mobile_Tools
 
 
 
+https://www.nowsecure.com/resources/secure-mobile-development/#viaforensics
 
 
-https://viaforensics.com/resources/reports/best-practices-ios-android-secure-mobile-development/
 
 
 

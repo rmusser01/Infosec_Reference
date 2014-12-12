@@ -1,0 +1,13 @@
+Linux References
+
+Linux Device Drivers book
+http://www.makelinux.net/ldd3/
+
+
+X Window System Explained
+https://magcius.github.io/xplain/article/index.html
+
+
+Linux Filesystem infographic
+http://i.imgur.com/EU6ga.jpg
+http://i.imgur.com/S5Ds2.jpg

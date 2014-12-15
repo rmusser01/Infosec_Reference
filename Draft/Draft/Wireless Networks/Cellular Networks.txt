@@ -10,8 +10,33 @@ Cellular Networks in use North America:
 	In use in South America:
 
 
+Blogs/Sites
+
 Secrets of sim
 http://www.hackingprojects.net/2013/04/secrets-of-sim.html
+
+4G LTE Architecture and Security Concerns
+http://www.secforce.com/blog/2014/03/4g-lte-architecture-and-security-concerns/
+
+
+
+
+
+
+
+
+
+Videos
+
+Demystifying the Mobile Network by Chuck McAuley
+http://2014.video.sector.ca/video/110383258
+Must watch video. Very informative.
+
+
+
+
+
+
 
 Osmocom SIMtrace
 Osmocom SIMtrace is a software and hardware system for passively tracing SIM-ME communication between the SIM card and the mobile phone. 
@@ -23,6 +48,11 @@ http://www.3gpp.org/DynaReport/31048.htm
 y
 
 
-Demystifying the Mobile Network by Chuck McAuley
-http://2014.video.sector.ca/video/110383258
-Must watch video. Very informative.
+
+Tools
+
+Android IMSI-Catcher Detector (AIMSICD)
+Android-based project to detect and avoid fake base stations (IMSI-Catchers) in GSM/UMTS Networks.
+https://github.com/SecUpwN/Android-IMSI-Catcher-Detector
+
+

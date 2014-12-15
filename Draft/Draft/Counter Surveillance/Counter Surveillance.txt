@@ -2,9 +2,39 @@ Counter Surveillance
 
 
 
+
+
+Blogs/Sites
+
+Detecting Surveillance - Spiderlabs blog
+http://blog.spiderlabs.com/2014/03/detecting-surveillance-state-surveillance-part-1-hardware-impants.html
+http://blog.spiderlabs.com/2014/03/detecting-a-surveillance-state-part-2-radio-frequency-exfiltration.html
+http://blog.spiderlabs.com/2014/04/detecting-a-surveillance-state-part-3-infected-firmware.html
+
+
+A Simple Guide to TSCM Sweeps
+http://www.international-intelligence.co.uk/tscm-sweep-guide.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+Videos
+
+
 Am I Being Spied On? Dr Phillip Polstra
 https://www.youtube.com/watch?v=Bc7WoDXhcjM
 	Talk on cheap/free counter measures
+
+
 
 
 
@@ -15,15 +45,33 @@ Abstract:
 This short talk will cover the standards, devices and implementation of a mandatory part of our western Internet infrastructure. The central question is whether an overarching interception functionality might actually put national Internet infrastructure at a higher risk of being attacked successfully. The question is approached in this talk from a purely technical point of view, looking at how LI functionality is implemented by a major vendor and what issues arise from that implementation. Routers and other devices may get hurt in the process.
 
 
+
+
+
+
+
+
+
+
+Papers
+
+
+
+
+
+
+
+
+
+
+
+
+
 Exploiting Lawful Intercept to Wiretap the Internet
 https://www.blackhat.com/presentations/bh-dc-10/Cross_Tom/BlackHat-DC-2010-Cross-Attacking-LawfulI-Intercept-wp.pdf
 Abstract:
 This paper will review Cisco's architecture for lawful intercept from asecurity perspective. We explain how a number of different weaknesses in its design coupled with publicly disclosed security vulnerabilities could enable a malicious person to access the interface and spy on communications without leaving a trace. We then provide a set of recommendations for the redesign of the interface as well as SNMP authentication in general to better mitigate the security risks. 
 
-
-
-A Simple Guide to TSCM Sweeps
-http://www.international-intelligence.co.uk/tscm-sweep-guide.html
 
 
 

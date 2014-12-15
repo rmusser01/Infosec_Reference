@@ -4,6 +4,10 @@ Disclosure
 
 
 
+Good comparison of various forms of disclosure
+http://blog.opensecurityresearch.com/2014/06/approaches-to-vulnerability-disclosure.html
+
+
 Clean writeup of Full-Disclosure release policy that is more similar to Coordinated Disclosure. Recommended read.
 http://www.ilias.de/docu/goto_docu_wiki_1357_RFPolicy.html
 

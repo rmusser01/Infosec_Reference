@@ -2,6 +2,15 @@ Assembly
 
 
 
+ 
+
+Guide to x86 Assembly
+http://www.cs.virginia.edu/~evans/cs216/guides/x86.html
+
+
+
+
+
 
 Mov is turing ocmplete
 http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf

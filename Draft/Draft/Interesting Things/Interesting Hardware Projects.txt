@@ -1,0 +1,13 @@
+Interesting Hardware Projects
+
+
+
+
+
+
+
+
+Digital Ding Dong Ditch
+Digital Ding Dong Ditch is a device to hack into and ring my best friend's wireless doorbell whenever I send a text message to the device. The best part of the device is that it causes my friend, without fail, to come outside, find no one, and go back in. 
+In this project, we'll learn not only how to create this device, but how to reverse engineer radio frequencies we know nothing about using RTL-SDR (a ~$14 software defined radio), as well as creating hardware and software using Arduino, the Adafruit FONA (GSM/SMS/2G board), an RF (radio frequency) transmitter to transmit custom signals, and even how to reverse engineer a proprietary radio signal we know nothing about!
+https://github.com/samyk/dingdong

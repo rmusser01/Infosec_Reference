@@ -16,6 +16,8 @@ http://simplemachines.it/doc/arm_inst.pdf
 File Signature Table
 http://www.garykessler.net/library/file_sigs.html
 
+Radare2 Cheat-Sheet
+https://github.com/pwntester/cheatsheets/blob/master/radare2.md
 
 
 

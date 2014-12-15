@@ -55,8 +55,8 @@ In this talk, we aim to briefly cover the background of sock puppets (and relate
 
 
 
-
-
+Adding your protocol to Masscan
+http://blog.erratasec.com/2014/11/adding-protocols-to-masscan.html
 
 
 

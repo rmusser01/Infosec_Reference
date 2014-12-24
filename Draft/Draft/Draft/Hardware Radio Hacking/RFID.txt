@@ -1,0 +1,15 @@
+RFID - Radio Frequency Identification
+
+
+
+
+
+
+
+ravenhid
+Hardware and software to run a RFID reader to harvest card information. This is the PCB design and Arduino code that will run a RFID reader, allowing you to gather and harvest cards. Typically, a larger reader, such as those in garages, will be more successful, allowing you to ready over a couple feet instead of inches. The board itself is designed to be modular and support multiple methods to output harvested cards once they are read: 
+Text file on a MicroSD card
+Print out to LCD
+Bluetooth Low Energy Arduino serial connection 
+Each of these options are supported in code, but can be ignored on the PCB. The PCB itself has been designed to use a pluggable module for each of these options, making it easy to ignore, install, or change out which ones you find useful. 
+https://github.com/emperorcow/ravenhid

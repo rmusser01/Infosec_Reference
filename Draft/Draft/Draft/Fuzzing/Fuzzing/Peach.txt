@@ -1,0 +1,18 @@
+Peach Fuzzer
+
+
+
+
+
+
+
+Creating Custom Peach Fuzzer Publishers
+http://blog.opensecurityresearch.com/2014/01/creating-custom-peach-fuzzer-publishers.html
+
+
+
+
+
+Creating Custom Peach Fuzzer Publishers
+Link: http://blog.opensecurityresearch.com/2014/01/creating-custom-peach-fuzzer-publishers.html
+Code: https://github.com/OpenSecurityResearch/CustomPeachPublisher

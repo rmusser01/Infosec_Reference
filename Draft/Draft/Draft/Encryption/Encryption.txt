@@ -1,0 +1,30 @@
+Encryption
+
+
+http://en.wikipedia.org/wiki/Encryption
+Add definition
+
+
+Zero-Knowledge Proofs - An Illustrated Primer
+http://blog.cryptographyengineering.com/2014/11/zero-knowledge-proofs-illustrated-primer.html?m=1
+
+
+https://bettercrypto.org/static/applied-crypto-hardening.pdf
+
+http://hive.ccs.neu.edu/
+
+How CryptoSystems are *Really* broken
+http://www.forth.gr/onassis/lectures/pdf/How_Cryptosystems_Are_Really_Broken.pdf
+
+
+
+http://www.jakoblell.com/blog/2013/12/22/practical-malleability-attack-against-cbc-encrypted-luks-partitions/
+
+
+instant ciphertext-only cryptnalysis of GSM encryptd com
+http://cryptome.org/gsm-crack-bbk.pdf
+
+
+
+
+

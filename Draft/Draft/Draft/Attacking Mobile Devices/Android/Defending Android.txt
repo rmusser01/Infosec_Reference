@@ -1,0 +1,55 @@
+Securing Your Android Device
+
+
+
+Good video on Android Security:
+https://www.youtube.com/watch?v=2aeV1JXYvuQ&index=23&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH
+Android (In)Security - Defcamp 2014
+
+
+
+http://opensecuritytraining.info/AndroidForensics.html
+This class serves as a foundation for mobile digital forensics, forensics of Android operating systems, and penetration testing of Android applications. 
+
+
+Hardening Guides
+
+
+Android Hardening Guide by the TOR developers, from:	
+	https://blog.torproject.org/blog/mission-impossible-hardening-android-security-and-privacy	
+“
+This blog post describes the installation and configuration of a prototype of a secure, full-featured, Android telecommunications device with full Tor support, individual application firewalling, true cell network baseband isolation, and optional ZRTP encrypted voice and video support. ZRTP does run over UDP which is not yet possible to send over Tor, but we are able to send SIP account login and call setup over Tor independently.
+The SIP client we recommend also supports dialing normal telephone numbers if you have a SIP gateway that provides trunking service.
+Aside from a handful of binary blobs to manage the device firmware and graphics acceleration, the entire system can be assembled (and recompiled) using only FOSS components. However, as an added bonus, we will describe how to handle the Google Play store as well, to mitigate the two infamous Google Play Backdoors.
+“
+
+Android 4.0+ Hardening Guide/Checklist by University of Texas:
+	https://wikis.utexas.edu/display/ISO/Google+Android+Hardening+Checklist
+
+
+Applications
+
+Firewall
+	Android Firewall(Requires Root)
+		https://play.google.com/store/apps/details?id=com.jtschohl.androidfirewall&hl=en
+Xprivacy
+	The Ultimate Android Privacy Manager(Requires Root)
+		https://github.com/M66B/XPrivacy
+		Google Play: https://play.google.com/store/apps/details?id=biz.bokhorst.xprivacy.installer&hl=en
+
+Backups
+	Titanium Backup
+		https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup
+Personal favorite for making backups. Backups are stored locally or automatically to various cloud services.
+	Helium Backup(Root Not Required)
+		https://play.google.com/store/apps/details?id=com.koushikdutta.backup&hl=en
+		Backs up data locally or to various cloud services. Local client available for backups directly to PC.
+
+Analyzing the Attack Surface of your device
+
+Resources
+
+
+
+Encryption
+Check the Encryption section of the overall guide for more information.

@@ -1,0 +1,72 @@
+
+Defcamp 2014 - Cyber Necromancy - Reverse engineering dead protocols
+https://www.youtube.com/watch?v=G0v2FO2Ru0w&index=6&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH
+
+Netzob
+Originaly, the development of Netzob has been initiated to support security auditors and evaluators in their activities of modeling and simulating undocumented protocols. The tool has then been extended to allow smart fuzzing of unknown protocol.
+http://www.netzob.org/
+http://netzob.readthedocs.org/en/latest/overview/index.html
+
+
+
+Xmount
+What is xmount? xmount allows you to convert on-the-fly between multiple input and output harddisk image types. xmount creates a virtual file system using FUSE (Filesystem in Userspace) that contains a virtual representation of the input image. The virtual representation can be in raw DD, DMG, VHD, VirtualBox's virtual disk file format or in VmWare's VMDK file format. Input images can be raw DD, EWF (Expert Witness Compression Format) or AFF (Advanced Forensic Format) files. In addition, xmount also supports virtual write access to the output files that is redirected to a cache file. This makes it possible to boot acquired harddisk images using QEMU, KVM, VirtualBox, VmWare or alike.
+https://www.pinguin.lu/xmount
+
+
+
+
+
+Equip: python bytecode instrumentation
+https://github.com/neuroo/equip
+equip is a small library that helps with Python bytecode instrumentation. Its API is designed to be small and flexible to enable a wide range of possible instrumentations.
+The instrumentation is designed around the injection of bytecode inside the bytecode of the program to be instrumented. However, the developer does not need to know anything about the Python bytecode since the injected code is Python source.
+
+
+
+
+Hacking Dropcam series:
+	http://blog.includesecurity.com/2014/03/Reverse-Engineering-Dropcam-Communications.html
+	http://blog.includesecurity.com/2014/04/reverse-engineering-dropcam-rooting-the-device.html
+	http://blog.includesecurity.com/2014/08/Reverse-Engineering-Dropcam-Lua-Bytecode.html
+
+
+Ida pomidor plugin
+Ida sploiter plugin
+
+https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
+
+Tour of Win32 Executable format
+http://msdn.microsoft.com/en-us/magazine/ms809762.aspx
+
+Reading ASM
+http://cseweb.ucsd.edu/classes/sp11/cse141/pdf/02/S01_x86_64.key.pdf
+
+Intro to x86 calling conventions
+http://codearcana.com/posts/2013/05/21/a-brief-introduction-to-x86-calling-conventions.html
+
+a
+Hardware reveng tool
+https://www.saleae.com/logic
+
+https://code.google.com/p/alpha3/
+ALPHA3 is a tool for transforming any x86 machine code into 100% alphanumeric code with similar functionality. It works by encoding the original code into alphanumeric data and combining this data with a decoder, which is a piece of x86 machine code written specifically to be 100% alphanumeric. When run, the decoder converts the data back to the original code, after which it is executed. e
+
+Dex executable
+
+
+
+
+For OSX
+cycript
+Cycript allows developers to explore and modify running applications on either iOS or Mac OS X using a hybrid of Objective-C++ and JavaScript syntax through an interactive console that features syntax highlighting and tab completion.
+Presentation on using cycript:
+	http://www.rsaconference.com/writable/presentations/file_upload/hta-r04a-hacking-ios-on-the-run-using-cycript.pdf
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+Metasploit Framework
+
+This website should eventually be your go-to reference for Metasploit: https://metasploit.github.io/
+It is the official “reference” page for the metasploit framework
+
+Facts and Myths about AV Evasion with the Metasploit Framework
+http://schierlm.users.sourceforge.net/avevasion.html
+
+
+MSF/Meterpreter cmd reference
+http://hacking-class.blogspot.com/2011/08/metasploit-cheat-sheet-metasploit.html

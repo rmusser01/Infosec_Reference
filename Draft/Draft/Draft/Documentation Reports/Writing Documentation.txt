@@ -1,0 +1,29 @@
+Writing Documentation
+
+For writing technical documentation.
+
+
+Start with the first two links, and go from there. They’re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
+
+
+
+A beginners guide to writing documentation
+http://docs.writethedocs.org/writing/beginners-guide-to-docs/
+
+Teach, Don’t Tell 
+http://stevelosh.com/blog/2013/09/teach-dont-tell/
+
+
+
+Other Materials:
+
+Three parter from jacobian.org:
+http://jacobian.org/writing/what-to-write/
+http://jacobian.org/writing/technical-style/
+http://jacobian.org/writing/editors/
+
+Writing Types of User Documentation
+https://en.wikiversity.org/wiki/Technical_writing_Types_of_User_Documentation
+
+The 7 Rules for Writing World Class Technical Documentation
+http://www.developer.com/tech/article.php/3848981/The-7-Rules-for-Writing-World-Class-Technical-Documentation.htm

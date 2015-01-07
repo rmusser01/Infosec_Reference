@@ -1,4 +1,4 @@
-
+Name: The “lame_hacker” Reference
 
 Have normal section/advanced section for re and exploit dev
 

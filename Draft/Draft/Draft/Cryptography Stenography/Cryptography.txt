@@ -5,6 +5,9 @@ http://www.cryptolaw.org/
 
 
 
+Primer on Zero-Knowledge Proofs
+http://blog.cryptographyengineering.com/2014/11/zero-knowledge-proofs-illustrated-primer.html?m=1
+
 Widespread Weak Keys in Network Devices
 https://factorable.net/
 
@@ -39,7 +42,16 @@ https://www.cs.ucsb.edu/~chris/research/doc/ccs13_cryptolint.pdf
 Books:
 	Cryptography Engineering
 	Applied Cryptography
+	
+Courses:
+	Coursera Cryptography
 
+
+
+	Matsano Crypto Challenges
+	Go through a series of increasingly difficult challenges while learning all about cryptography.
+	Expected knowledge level: You passed 9th grade math and you have 0 knowledge of crypto.
+		http://cryptopals.com/	
 
 
 

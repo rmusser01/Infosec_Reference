@@ -1,4 +1,0 @@
-Setting up a CTF
-
-https://github.com/ucsb-seclab/ictf-framework
-This is the framework that the UC Santa Barbara Seclab uses to host the iCTF, and that can be used to create your own CTFs at http://ictf.cs.ucsb.edu/framework. The framework creates several VMs: one for the organizers and one for every team. 

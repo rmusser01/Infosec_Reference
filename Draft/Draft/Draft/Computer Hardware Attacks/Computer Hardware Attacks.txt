@@ -55,3 +55,18 @@ Phison 2251-03 (2303) Custom Firmware & Existing Firmware Patches (BadUSB)
 
 
 
+###Defending Against Hardware Attacks
+
+
+
+
+###USB
+
+
+
+
+###SD Cards
+
+
+
+###RFID

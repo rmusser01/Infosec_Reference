@@ -8,6 +8,13 @@ http://www.netzob.org/
 http://netzob.readthedocs.org/en/latest/overview/index.html
 
 
+PortEX
+PortEx is a Java library for static malware analysis of Portable Executable files. Its focus is on PE malformation robustness, and anomaly detection. PortEx is written in Java and Scala, and targeted at Java applications.
+https://github.com/katjahahn/PortEx
+
+Reverse Engineering Intels Management Engine - on every intel chip core2duo and newer 
+http://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf
+
 
 Xmount
 What is xmount? xmount allows you to convert on-the-fly between multiple input and output harddisk image types. xmount creates a virtual file system using FUSE (Filesystem in Userspace) that contains a virtual representation of the input image. The virtual representation can be in raw DD, DMG, VHD, VirtualBox's virtual disk file format or in VmWare's VMDK file format. Input images can be raw DD, EWF (Expert Witness Compression Format) or AFF (Advanced Forensic Format) files. In addition, xmount also supports virtual write access to the output files that is redirected to a cache file. This makes it possible to boot acquired harddisk images using QEMU, KVM, VirtualBox, VmWare or alike.
@@ -53,6 +60,9 @@ https://code.google.com/p/alpha3/
 ALPHA3 is a tool for transforming any x86 machine code into 100% alphanumeric code with similar functionality. It works by encoding the original code into alphanumeric data and combining this data with a decoder, which is a piece of x86 machine code written specifically to be 100% alphanumeric. When run, the decoder converts the data back to the original code, after which it is executed. e
 
 Dex executable
+
+
+
 
 
 

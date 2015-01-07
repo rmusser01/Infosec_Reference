@@ -2,7 +2,7 @@ Hflow2 Data Analysis System
 https://projects.honeynet.org/hflow
 
 
-
+https://github.com/gtfy/MozillaRecovery
 
 USB teensy attack set OSX
 http://samy.pl/usbdriveby/
@@ -14,14 +14,24 @@ http://bitblaze.cs.berkeley.edu/
 
 
 
+
+Zed Attack Proxy (ZAP) Community Scripts
+A collection of ZAP scripts provided by the community - pull requests very welcome! 
+https://github.com/zaproxy/community-scripts
+
+
+
+
+http://cdn.media.ccc.de/congress/31C3/
+
+
+
 Archive of security conference videos
 http://wipkip.nikhef.nl/events/
 
 
 
-
-
-
+http://www.cs.uno.edu/~golden/gpu-malware-research.html
 
 
 

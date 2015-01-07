@@ -1,4 +1,15 @@
 Disclosure
+ 
+
+How to Disclose or Sell an Exploit - DEF CON 21 - James Denaro
+https://www.youtube.com/watch?v=N1Xj3f4felg
+
+
+How to Disclose an Exploit Without Getting in TroubleDEF CON 22 - Jim Denaro and Tod Beardsley
+https://www.youtube.com/watch?v=Y8Cpio6z9qA
+
+
+
 
 
 

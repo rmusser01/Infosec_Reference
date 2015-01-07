@@ -1,24 +1,23 @@
-Attacking Mobile Devices
-
-Also check out the cellular section under “Wireless”.
-
+##Attacking Mobile Devices
+###Also check out the cellular section under “Wireless”.
 
 
 
-Hacking Your Way Up The Mobile Stack
+
+####Hacking Your Way Up The Mobile Stack
 http://vimeo.com/51270090
 
 
 
-Setting up a test environment
+###Setting up a test environment
 
 
-OWASP Mobile Security Project - MobiSec 
-“The MobiSec Live Environment Mobile Testing open source project is a live environment for testing mobile environments, including devices, applications, and supporting infrastructure. The purpose is to provide attackers and defenders the ability to test their mobile environments to identify design weaknesses and vulnerabilities. MobiSec provides a single environment for testers to leverage the best of all available open source mobile testing tools, as well as the ability to install additional tools and platforms, that will aid the penetration tester through the testing process as the environment is structured and organized based on an industry-proven testing framework. Using a live environment provides penetration testers the ability to boot the MobiSec Live Environment on any Intel-based system from a DVD or USB flash drive, or run the test environment within a virtual machine.”
+####OWASP Mobile Security Project - MobiSec 
+- “The MobiSec Live Environment Mobile Testing open source project is a live environment for testing mobile environments, including devices, applications, and supporting infrastructure. The purpose is to provide attackers and defenders the ability to test their mobile environments to identify design weaknesses and vulnerabilities. MobiSec provides a single environment for testers to leverage the best of all available open source mobile testing tools, as well as the ability to install additional tools and platforms, that will aid the penetration tester through the testing process as the environment is structured and organized based on an industry-proven testing framework. Using a live environment provides penetration testers the ability to boot the MobiSec Live Environment on any Intel-based system from a DVD or USB flash drive, or run the test environment within a virtual machine.”
 Taken from: 
 http://mobisec.professionallyevil.com/
-Download Page:
-http://sourceforge.net/projects/mobisec/
+- Download Page:
+-  http://sourceforge.net/projects/mobisec/
 
 
 

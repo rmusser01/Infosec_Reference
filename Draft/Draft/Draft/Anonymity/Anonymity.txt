@@ -1,4 +1,4 @@
-Anonymity
+##Anonymity
 
 
 
@@ -11,7 +11,7 @@ http://papers.ssrn.com/sol3/papers.cfm?abstract_id=998565&
 
 
 
-Talks
+###Talks
 Because Jail is for WUFTPD - Legendary talk, a must watch.
 https://www.youtube.com/watch?v=9XaYdCdwiWU
 His blog: http://grugq.tumblr.com/
@@ -20,32 +20,30 @@ His blog: http://grugq.tumblr.com/
 
 
 
-Tools
+###Tools
 
 
 
-MAT: Metadata Anonymisation Toolkit 
-MAT is a toolbox composed of a GUI application, a CLI application and a library.
-https://mat.boum.org/
-
-
-
+[MAT: Metadata Anonymisation Toolkit](https://mat.boum.org/)
+* MAT is a toolbox composed of a GUI application, a CLI application and a library.
 
 
 
 
 
-Articles
 
 
-De-anonymizing facebook users through CSP
-	http://www.myseosolution.de/deanonymizing-facebook-users-by-csp-bruteforcing/#inhaltsverzeichnis
 
-Anonymous’s Guide to OpSec
-http://www.covert.io/research-papers/security/Anonymous%20Hacking%20Group%20--%20OpNewblood-Super-Secret-Security-Handbook.pdf
 
-Cat Videos and the Death of Clear Text
-https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/
+###Articles
+
+
+#####[De-anonymizing facebook users through CSP](http://www.myseosolution.de/deanonymizing-facebook-users-by-csp-bruteforcing/#inhaltsverzeichnis)
+
+#####[Anonymous’s Guide to OpSec](http://www.covert.io/research-papers/security/Anonymous%20Hacking%20Group%20--%20OpNewblood-Super-Secret-Security-Handbook.pdf)
+
+#####[Cat Videos and the Death of Clear Text](https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/)
+
 
 
 

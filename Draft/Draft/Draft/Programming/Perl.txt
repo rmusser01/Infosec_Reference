@@ -1,4 +1,0 @@
-
-
-Introduction to Perl:
-	http://www.perl.com/pub/2000/10/begperl1.html

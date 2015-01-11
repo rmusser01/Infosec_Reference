@@ -1,0 +1,56 @@
+Name: The “lame_hacker” Reference
+
+Goal
+
+Make it informal, list of techniques by grouping, references, better version of RTFM
+
+
+
+
+
+
+Have normal section/advanced section for re and exploit dev
+
+Use couchbase/Firebase for data management
+
+http://www.couchbase.com/nosql-databases/couchbase-mobile
+
+https://www.firebase.com/
+
+
+
+
+https://www.reddit.com/r/androiddev/comments/2nh4oc/store_data_on_local_database_when_offline_and/
+
+
+Use Bootstrap/Foundation for CSS/Visuals
+
+
+http://bootswatch.com/cyborg/
+
+
+
+
+
+
+
+
+
+
+Use bootstrap/foundation for css
+
+http://www.hongkiat.com/blog/web-content-with-markdown/
+
+
+Write script to search links and display their category
+Similar to sploitsearch
+
+
+
+
+Sections that Need Major Work/i.e. lack content
+All
+
+
+http://jsoup.org/
+

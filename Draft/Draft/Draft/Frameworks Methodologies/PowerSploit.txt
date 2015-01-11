@@ -1,5 +1,0 @@
-PowerSploit
-
-Github
-
-Windows exploitation framework composed of Powershell modules

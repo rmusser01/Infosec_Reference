@@ -1,0 +1,318 @@
+
+
+
+
+Exploit and fuzzing: https://github.com/demi6od/Smashing_The_Browser
+
+
+
+
+
+[Shadow](http://shadow.github.io/)
+* Summary: Shadow is a unique, open source discrete-event network simulator that runs real applications like Tor. Shadow combines the accuracy of emulation with the efficiency and control of simulation, achieving the best of both approaches 
+
+
+
+
+
+
+
+
+
+
+
+Hflow2 Data Analysis System
+https://projects.honeynet.org/hflow
+
+
+http://rewtdance.blogspot.com/2012/06/exploiting-windows-2008-group-policy.html
+
+
+[RootVG - Website Dedicated to AIX](http://www.rootvg.net/content/view/102/98/)
+	
+
+[Linux Documentation Project](http://www.tldp.org/)
+
+[Introduction to Linux - Machtelt Garrels](http://www.tldp.org/LDP/intro-linux/html/intro-linux.html)
+* Excellent doc covering every aspect of linux. Deserves at least 1 skim through.
+
+[Bash Guide for Beginners](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html)
+
+[Pybuild](https://www.trustedsec.com/files/pybuild.zip)
+* PyBuild is a tool for automating the pyinstaller method for compiling python code into an executable. This works on Windows, Linux, and OSX (pe and elf formats)(From trustedsec)
+
+[Egress Buster Reverse Shell](https://www.trustedsec.com/files/egress_buster_revshell.zip)
+* Egress Buster Reverse Shell – Brute force egress ports until one if found and execute a reverse shell(from trustedsec)
+
+
+[Generate MS Office Macro Malware Script](https://github.com/enigma0x3/Generate-Macro/blob/master/Generate-Macro.ps1)
+* Standalone Powershell script that will generate a malicious Microsoft Office document with a specified payload and persistence method
+
+
+
+[Privilege Escalation on OS X below 10.0](https://code.google.com/p/google-security-research/issues/detail?id=121)
+
+[Second section good resource for hardening windows](http://labs.bitdefender.com/2014/11/do-your-bit-to-limit-cryptowall/)
+
+
+
+
+
+[Paper on Manual unpacking of UPX packed executable using Ollydbg and Importrec](http://www.iosrjournals.org/iosr-jce/papers/Vol16-issue1/Version-1/L016117177.pdf)
+
+
+[Introduction to Cracking Hashes](http://n0where.net/introduction-break-that-hash/)
+* Good introduction source to hash cracking.
+
+—-———————————————————————————————————————OCL
+
+[OCL hashcat wiki](http://hashcat.net/wiki/)
+* Its the Wiki
+
+[OCL hashcat](http://n0where.net/introduction-break-that-hash/)
+* It’s OCL hashcat
+
+Hashcat attacks
+[Mask atttack](http://hashcat.net/wiki/doku.php?id=mask_attack)
+* Try all combinations from a given keyspace just like in Brute-Force attack, but more specific. 
+
+[Combinator attack](http://hashcat.net/wiki/doku.php?id=combinator_attack)
+* Each word of a dictionary is appended to each word in a dictionary. 
+
+[Dictionary attack](http://hashcat.net/wiki/doku.php?id=dictionary_attack)
+* The dictionary attack is a very simple attack mode. It is also known as a “Wordlist attack”. 
+
+[Fingerprint Attack](http://hashcat.net/wiki/doku.php?id=fingerprint_attack)
+* The Fingerprint attack is a combination of the results of the expander with a combination engine. It is an automatically generated attack on pattern that works fine on GPGPU. 
+
+[Hybrid attack](http://hashcat.net/wiki/doku.php?id=hybrid_attack)
+* Basically, the hybrid attack is just a Combinator attack. One side is simply a dictionary, the other is the result of a Brute-Force attack. In other words, the full Brute-Force keyspace is either appended or prepended to each of the words from the dictionary. That's why it's called “hybrid”. 
+
+[Mask attack](http://hashcat.net/wiki/doku.php?id=mask_attack)
+* Try all combinations from a given keyspace just like in Brute-Force attack, but more specific. 
+
+[Permutation attack[(http://hashcat.net/wiki/doku.php?id=permutation_attack)
+* Each word in a dictionary generates all permutations of itself. 
+
+[Rule Based attack](http://hashcat.net/wiki/doku.php?id=rule_based_attack)
+* The rule-based attack is one of the most complicated of all the attack modes. The reason for this is very simple. The rule-based attack is like a programming language designed for password candidate generation. It has functions to modify, cut or extend words and has conditional operators to skip some, etc. That makes it the most flexible, accurate and efficient attack. 
+
+[Table Lookup attack](http://hashcat.net/wiki/doku.php?id=table_lookup_attack)
+* With each word in our dictionary, it automatically generates masks as in a batch of Mask attack. 
+
+[Toggle-Case attack](http://hashcat.net/wiki/doku.php?id=toggle_case_attack)
+* For each word in a dictionary, all possible combinations of upper- and lower-case variants are generated. 
+
+———————————————————————————————————————
+
+[5min Guide to setting up a GPU cracker in the cloud on AWS + a script to automate it all](http://thehackerblog.com/amazon-ec2-gpu-hvm-spot-instance-cracking-setup-tutorial/)
+
+
+[Dumping hashes from Active Directory for cracking](http://blog.spiderlabs.com/2013/11/tutorial-for-ntds-goodness-vssadmin-wmis-ntdsdit-system-.html)
+
+[NTDSXtract - Active Directory Forensics Framework](http://www.ntdsxtract.com/)
+* Description from the page: This framework was developed by the author in order to provide the community
+with a solution to extract forensically important information from the main
+database of Microsoft Active Directory (NTDS.DIT).
+
+
+
+
+
+[Password Recovery Speeds](http://www.lockdown.co.uk/?pg=combi)
+* Password cracking time measurements
+
+Building a Better GPU based hash cracking methodology](https://blog.netspi.com/gpu-password-cracking-building-a-bette Penr-methodology/)
+* Bit basic advice but still great advice nonetheless
+
+
+
+
+[Crackstation’s Password Cracking Dictionary 1.5b words](https://crackstation.net/buy-crackstation-wordlist-password-cracking-dictionary.htm)
+* HIGHLY recommended
+
+
+[AIX For Pentesters](http://www.giac.org/paper/gpen/6684/aix-penetration-testers/125890)
+* Good paper on exploiting/pentesting AIX based machines. From the paper itself “ The paper proposes some basic methods to do comprehensive local security checks and how to exploit the vulnerabilities.”
+
+
+[x86 Assembly Guide/Reference - Wikibooks](https://en.wikibooks.org/wiki/X86_Assembly)
+* Introduction for those who don’t know ASM and a reference for those that do.
+
+
+[Bypassing SSL Cert Pinning in iOS](http://chargen.matasano.com/chargen/2015/1/6/bypassing-openssl-certificate-pinning-in-ios-apps.html)
+
+
+https://github.com/gtfy/MozillaRecovery
+
+USB teensy attack set OSX
+http://samy.pl/usbdriveby/
+
+BitBlaze
+The BitBlaze project aims to design and develop a powerful binary analysis platform and employ the platform in order to (1) analyze and develop novel COTS protection and diagnostic mechanisms and (2) analyze, understand, and develop defenses against malicious code. The BitBlaze project also strives to open new application areas of binary analysis, which provides sound and effective solutions to applications beyond software security and malicious code defense, such as protocol reverse engineering and fingerprint generation. 
+http://bitblaze.cs.berkeley.edu/
+
+
+https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks
+
+
+Zed Attack Proxy (ZAP) Community Scripts
+A collection of ZAP scripts provided by the community - pull requests very welcome! 
+https://github.com/zaproxy/community-scripts
+
+
+
+
+http://cdn.media.ccc.de/congress/31C3/
+
+
+
+Archive of security conference videos
+http://wipkip.nikhef.nl/events/
+
+
+
+http://www.cs.uno.edu/~golden/gpu-malware-research.html
+
+
+
+
+http://www.myopenrouter.com/article/10917/Port-Mirroring-Span-Port-Monitor-Port-with-iptables-on-NETGEAR-WGR614L/
+
+
+
+http://www.kahusecurity.com/2014/javascript-deobfuscation-tools-redux/
+
+https://www.f-secure.com/weblog/archives/00002774.html
+
+
+https://cryptoservices.github.io/fde/2014/12/08/code-execution-in-spite-of-bitlocker.html
+
+http://census-labs.com/news/2014/11/27/project-heapbleed/
+
+http://netdude.sourceforge.net/
+
+Cull the interesting papers
+http://www.covert.io/
+
+
+
+
+http://security.coverity.com/blog/2014/Nov/understanding-python-bytecode.html
+
+
+
+http://askubuntu.com/questions/95910/command-for-determining-my-public-ip
+
+
+https://sourceware.org/binutils/docs/binutils/readelf.html
+
+
+
+http://carnal0wnage.attackresearch.com/2013/10/dumping-domains-worth-of-passwords-with.html
+http://obscuresecurity.blogspot.com/2014/05/dirty-powershell-webserver.html
+http://www.harmj0y.net/blog/powershell/dumping-a-domains-worth-of-passwords-with-mimikatz-pt-2/
+
+Python RE tools list
+http://pythonarsenal.erpscan.com/
+
+
+
+https://bluebox.com/wp-content/uploads/2013/05/AndroidREnDefenses201305.pdf
+
+
+
+
+CVE-2014-7911: Android <5.0 Privilege Escalation using ObjectInputStream 
+
+http://seclists.org/fulldisclosure/2014/Nov/51 
+
+
+
+
+http://www.android-x86.org/
+Android-x86 Project - Run Android on Your PC 
+This is a project to port Android open source project to x86 platform, formerly known as "patch hosting for android x86 support". The original plan is to host different patches for android x86 support from open source community. A few months after we created the project, we found out that we could do much more than just hosting patches. So we decide to create our code base to provide support on different x86 platforms, and set up a git server to host it.
+
+
+Dare is a project which aims at enabling Android application analysis. The Dare tool retargets Android applications in .dex or .apk format to traditional .class files. These .class files can then be processed by existing Java tools, including decompilers. Thus, Android applications can be analyzed using a vast range of techniques developed for traditional Java applications. 
+http://siis.cse.psu.edu/
+
+http://c7zero.info/
+
+
+
+http://www.bleepingcomputer.com/tutorials/windows-program-automatic-startup-locations/
+
+
+
+
+Logging for AD in sysadmin section
+Like proccesses created
+
+
+
+
+
+http://www.malwaretech.com/2014/04/coding-malware-for-fun-and-not-for.html
+
+
+
+
+
+
+Look into
+http://cybergibbons.com/uncategorized/an-intriguing-mix-of-micros/
+
+Lookat http://www.cl.cam.ac.uk/~sps32/PartII_030214.pdf
+
+Check under research section
+http://www.cl.cam.ac.uk/~sps32/
+
+
+http://moonbaseotago.com/onerng/theory.html
+
+
+Access control best pactices
+https://srlabs.de/acs/
+
+Go through
+https://santoku-linux.com/howtos
+
+
+
+http://digirati82.com/2013/06/03/using-splunk-to-watch-for-new-binaries/
+
+
+
+
+http://www.malwaretech.com/2013/08/powerloader-injection-something-truly.html
+
+
+
+Compare resources against what power-view can grab
+Compare against sysmon service for scaling, setting it as service with scripting
+http://www.codeproject.com/Articles/36907/How-to-develop-your-own-Boot-Loader
+
+
+
+http://www.malwaretech.com/2013/09/win64vabushky-great-code-heist.html
+
+
+ 
+
+http://eshunrd.blogspot.com/2011/09/linux-kernel-26362-econet-privilege.html
+
+Shellshock bug writeup by lcamtuf
+http://lcamtuf.blogspot.com/2014/10/bash-bug-how-we-finally-cracked.html
+https://github.com/Veil-Framework/Veil-PowerView
+
+
+
+https://addons.mozilla.org/en-US/firefox/addon/ssleuth/
+
+http://www.petges.lu/home/
+
+http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/
+
+http://grehack.org/en/

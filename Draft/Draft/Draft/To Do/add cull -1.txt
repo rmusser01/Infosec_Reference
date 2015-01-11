@@ -2,6 +2,124 @@ Hflow2 Data Analysis System
 https://projects.honeynet.org/hflow
 
 
+
+
+
+[RootVG - Website Dedicated to AIX](http://www.rootvg.net/content/view/102/98/)
+	
+
+[Linux Documentation Project](http://www.tldp.org/)
+
+[Introduction to Linux - Machtelt Garrels](http://www.tldp.org/LDP/intro-linux/html/intro-linux.html)
+* Excellent doc covering every aspect of linux. Deserves at least 1 skim through.
+
+[Bash Guide for Beginners](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html)
+
+[Pybuild](https://www.trustedsec.com/files/pybuild.zip)
+* PyBuild is a tool for automating the pyinstaller method for compiling python code into an executable. This works on Windows, Linux, and OSX (pe and elf formats)(From trustedsec)
+
+[Egress Buster Reverse Shell](https://www.trustedsec.com/files/egress_buster_revshell.zip)
+* Egress Buster Reverse Shell – Brute force egress ports until one if found and execute a reverse shell(from trustedsec)
+
+
+[Generate MS Office Macro Malware Script](https://github.com/enigma0x3/Generate-Macro/blob/master/Generate-Macro.ps1)
+* Standalone Powershell script that will generate a malicious Microsoft Office document with a specified payload and persistence method
+
+
+
+[Privilege Escalation on OS X below 10.0](https://code.google.com/p/google-security-research/issues/detail?id=121)
+
+[Second section good resource for hardening windows](http://labs.bitdefender.com/2014/11/do-your-bit-to-limit-cryptowall/)
+
+
+
+
+
+[Paper on Manual unpacking of UPX packed executable using Ollydbg and Importrec](http://www.iosrjournals.org/iosr-jce/papers/Vol16-issue1/Version-1/L016117177.pdf)
+
+
+[Introduction to Cracking Hashes](http://n0where.net/introduction-break-that-hash/)
+* Good introduction source to hash cracking.
+
+—-———————————————————————————————————————OCL
+
+[OCL hashcat wiki](http://hashcat.net/wiki/)
+* Its the Wiki
+
+[OCL hashcat](http://n0where.net/introduction-break-that-hash/)
+* It’s OCL hashcat
+
+Hashcat attacks
+[Mask atttack](http://hashcat.net/wiki/doku.php?id=mask_attack)
+* Try all combinations from a given keyspace just like in Brute-Force attack, but more specific. 
+
+[Combinator attack](http://hashcat.net/wiki/doku.php?id=combinator_attack)
+* Each word of a dictionary is appended to each word in a dictionary. 
+
+[Dictionary attack](http://hashcat.net/wiki/doku.php?id=dictionary_attack)
+* The dictionary attack is a very simple attack mode. It is also known as a “Wordlist attack”. 
+
+[Fingerprint Attack](http://hashcat.net/wiki/doku.php?id=fingerprint_attack)
+* The Fingerprint attack is a combination of the results of the expander with a combination engine. It is an automatically generated attack on pattern that works fine on GPGPU. 
+
+[Hybrid attack](http://hashcat.net/wiki/doku.php?id=hybrid_attack)
+* Basically, the hybrid attack is just a Combinator attack. One side is simply a dictionary, the other is the result of a Brute-Force attack. In other words, the full Brute-Force keyspace is either appended or prepended to each of the words from the dictionary. That's why it's called “hybrid”. 
+
+[Mask attack](http://hashcat.net/wiki/doku.php?id=mask_attack)
+* Try all combinations from a given keyspace just like in Brute-Force attack, but more specific. 
+
+[Permutation attack[(http://hashcat.net/wiki/doku.php?id=permutation_attack)
+* Each word in a dictionary generates all permutations of itself. 
+
+[Rule Based attack](http://hashcat.net/wiki/doku.php?id=rule_based_attack)
+* The rule-based attack is one of the most complicated of all the attack modes. The reason for this is very simple. The rule-based attack is like a programming language designed for password candidate generation. It has functions to modify, cut or extend words and has conditional operators to skip some, etc. That makes it the most flexible, accurate and efficient attack. 
+
+[Table Lookup attack](http://hashcat.net/wiki/doku.php?id=table_lookup_attack)
+* With each word in our dictionary, it automatically generates masks as in a batch of Mask attack. 
+
+[Toggle-Case attack](http://hashcat.net/wiki/doku.php?id=toggle_case_attack)
+* For each word in a dictionary, all possible combinations of upper- and lower-case variants are generated. 
+
+———————————————————————————————————————
+
+[5min Guide to setting up a GPU cracker in the cloud on AWS + a script to automate it all](http://thehackerblog.com/amazon-ec2-gpu-hvm-spot-instance-cracking-setup-tutorial/)
+
+
+[Dumping hashes from Active Directory for cracking](http://blog.spiderlabs.com/2013/11/tutorial-for-ntds-goodness-vssadmin-wmis-ntdsdit-system-.html)
+
+[NTDSXtract - Active Directory Forensics Framework](http://www.ntdsxtract.com/)
+* Description from the page: This framework was developed by the author in order to provide the community
+with a solution to extract forensically important information from the main
+database of Microsoft Active Directory (NTDS.DIT).
+
+
+
+
+
+[Password Recovery Speeds](http://www.lockdown.co.uk/?pg=combi)
+* Password cracking time measurements
+
+Building a Better GPU based hash cracking methodology](https://blog.netspi.com/gpu-password-cracking-building-a-bette Penr-methodology/)
+* Bit basic advice but still great advice nonetheless
+
+
+
+
+[Crackstation’s Password Cracking Dictionary 1.5b words](https://crackstation.net/buy-crackstation-wordlist-password-cracking-dictionary.htm)
+* HIGHLY recommended
+
+
+[AIX For Pentesters](http://www.giac.org/paper/gpen/6684/aix-penetration-testers/125890)
+* Good paper on exploiting/pentesting AIX based machines. From the paper itself “ The paper proposes some basic methods to do comprehensive local security checks and how to exploit the vulnerabilities.”
+
+
+[x86 Assembly Guide/Reference - Wikibooks](https://en.wikibooks.org/wiki/X86_Assembly)
+* Introduction for those who don’t know ASM and a reference for those that do.
+
+
+[Bypassing SSL Cert Pinning in iOS](http://chargen.matasano.com/chargen/2015/1/6/bypassing-openssl-certificate-pinning-in-ios-apps.html)
+
+
 https://github.com/gtfy/MozillaRecovery
 
 USB teensy attack set OSX
@@ -12,7 +130,7 @@ The BitBlaze project aims to design and develop a powerful binary analysis platf
 http://bitblaze.cs.berkeley.edu/
 
 
-
+https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks
 
 
 Zed Attack Proxy (ZAP) Community Scripts

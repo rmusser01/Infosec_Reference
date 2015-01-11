@@ -7,7 +7,8 @@ Hardware Focused Reverse Engineering
 
 
 
-
+[Reverse Engineering Intels Management Engine](http://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf) 
+* On every intel chip core2duo and newer
 
 
 

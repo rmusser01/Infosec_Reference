@@ -8,7 +8,7 @@ A moderated community dedicated to all things reverse engineering.
 
 
 Da List:
-Original source of list: https://github.com/REMath/literature_review (Stormeh on reddit maintains it)
+Original source of list: https://github.com/REMath/literature_review (Stormeh on reddit maintains it, no affiliation, they’re just cool)
 If you find any interesting information not on here, please add to the git page. 
 Mechanization of Exploits 
 https://github.com/REMath/literature_review/blob/master/mechanization_of_exploits.org 

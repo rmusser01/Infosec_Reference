@@ -7,7 +7,7 @@ Flesh/Fix win serv
 Flesh linux section
 
 
-
+[Hardening Framework](https://telekomlabs.github.io/
 
 
 
@@ -18,8 +18,8 @@ Flesh linux section
 http://www.irongeek.com/i.php?page=videos/derbycon4/t536-introduction-to-system-hardening-eddie-david
 
 
-Killing Rootkits:
-	http://blog.ioactive.com/2014/09/killing-rootkit.html
+[Killing Rootkits](http://blog.ioactive.com/2014/09/killing-rootkit.html)
+
 
 
 

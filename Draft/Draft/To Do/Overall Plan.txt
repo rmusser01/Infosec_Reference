@@ -9,7 +9,6 @@ Make it informal, list of techniques by grouping, references, better version of 
 
 
 
-Have normal section/advanced section for re and exploit dev
 
 Use couchbase/Firebase for data management
 

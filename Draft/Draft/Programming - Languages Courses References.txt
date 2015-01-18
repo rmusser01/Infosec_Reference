@@ -17,6 +17,17 @@ Reference
 
 [Nasm x86 reference](https://www.cs.uaf.edu/2006/fall/cs301/support/x86/)
 
+[x86 Assembly Guide/Reference - Wikibooks](https://en.wikibooks.org/wiki/X86_Assembly)
+* Introduction for those who don’t know ASM and a reference for those that do.
+
+
+
+
+
+
+
+
+
 Videos
 
 [Introduction Video Series(6) to x86 Assembly](https://www.youtube.com/watch?v=qn1_dRjM6F0&list=PLPXsMt57rLthf58PFYE9gOAsuyvs7T5W9)

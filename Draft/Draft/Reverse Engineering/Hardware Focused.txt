@@ -12,10 +12,7 @@ Hardware Focused Reverse Engineering
 
 
 
+[ChipWhisperer](http://www.newae.com/chipwhisperer)
+* ChipWhisperer is the first ever open-source solution that provides a complete toolchain for research and analysis of embedded hardware security. Side Channel Power Analysis, Clock Glitching, VCC Glitching, and more are all possible with this unique tool.
 
 
-
-ChipWhisperer
-
-ChipWhisperer is the first ever open-source solution that provides a complete toolchain for research and analysis of embedded hardware security. Side Channel Power Analysis, Clock Glitching, VCC Glitching, and more are all possible with this unique tool.
-http://www.newae.com/chipwhisperer

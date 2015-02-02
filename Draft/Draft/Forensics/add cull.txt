@@ -11,6 +11,14 @@
 
 
 
+[Malware Management Framework - Sniper Forensics Toolkit](http://sniperforensicstoolkit.squarespace.com/malwaremanagementframework/)
+
+
+
+[Dshell](https://github.com/USArmyResearchLab/Dshell)
+* An extensible network forensic analysis framework. Enables rapid development of plugins to support the dissection of network packet captures. 
+
+
 
 
 [Mem forenics cheat sheet](http://forensicmethods.com/wp-content/uploads/2012/04/Memory-Forensics-Cheat-Sheet-v1.pdf)

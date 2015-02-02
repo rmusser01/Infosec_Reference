@@ -12,6 +12,12 @@ http://greatscottgadgets.com/infiltrate2013/
 http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html
 
 
+
+[Serial Peripheral Interface Bus](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
+[I2C - Inter-Integrated Circuit](https://en.wikipedia.org/wiki/I%C2%B2C)
+[Display Data Channel](https://en.wikipedia.org/wiki/Display_Data_Channel)
+
+
 General Hardware
 
 [Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)

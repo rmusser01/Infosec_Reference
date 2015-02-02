@@ -1,3 +1,8 @@
+Frameworks and Methodologies of all kinds!
+
+
+
+
 Metasploit Framework
 
 [What is Metasploit?](https://www.youtube.com/watch?v=TCPyoWHy4eA)

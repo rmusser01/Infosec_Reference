@@ -6,6 +6,15 @@
 [ctf-time](https://ctftime.org/)
 
 
+
+
+
+
+CULL
+
+[The Many Maxims of Maximally Effective CTFs](http://captf.com/maxims.html)
+
+
 ###CTF Event Write-ups
 
 #####[CTF Writeups](https://github.com/ctfs/write-ups)[Archive of recent CTFs](http://repo.shell-storm.org/CTF/)

@@ -62,6 +62,7 @@ Interesting Python programs/libraries
 [Hachoir](https://bitbucket.org/haypo/hachoir/wiki/Home)
 * Hachoir is a Python library that allows to view and edit a binary stream field by field
 
+[Python Library for interacting with Serial Ports](http://pyserial.sourceforge.net/)
 [Shellpaste](https://github.com/andrew-morris/shellpaste)
 * Tiny snippet of code that pulls ASCII shellcode from pastebin and executes it. The purpose of this is to have a minimal amount of benign code so AV doesn't freak out, then it pulls down the evil stuff. People have been doing this kind of stuff for years so I take no credit for the concept. That being said, this code (or similar code) works surprisingly often during pentests when conventional malware fails. 
 

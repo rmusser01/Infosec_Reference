@@ -1,6 +1,9 @@
 Cheat Sheets & Reference Pages
 
 
+Metasploit 4.2 documentation:
+https://community.rapid7.com/docs/DOC-1751
+
 
 [File Signature Table](http://www.garykessler.net/library/file_sigs.html)
 

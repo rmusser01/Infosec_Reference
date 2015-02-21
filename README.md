@@ -5,6 +5,7 @@ Information Security Reference That Doesn't Suck
 ####Goal:
 
 * Make it informal, list of techniques by grouping, references, better version of RTFM
+* End goal is for it to be a rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches within infosec, or as a reference/recall method for other things.
 
 
 ##Page Title

@@ -17,17 +17,79 @@ Information Security Reference That Doesn't Suck
 
 
 
-Listing things
+Android - Encryption
+Android - Analyzing Attack Surface
 
--1
+Appsec
 
--2
+Computer Hardware attacks - General
 
--3
+Con Videos - Add Defcon Archive; Shmoocon/Ruxcon/etc.
 
--4
+Counter Surveillance - Legit info
 
-Or 
+Crypto Currencies - In general
 
-* stuff
-* stuff2
+Crypto - General/form 
+
+
+Darknets - More than just reddit
+
+Data Visualization - More in general
+
+Disclosure - Some historical things
+
+Forensics - Integrate from cull list
+
+Fuzzing - Educational stuff; more writeups
+
+Google Hacking - Completely empty
+
+Honeypots - More
+
+Lockpicking - needs fucks
+
+Logging - More for all
+
+Malware - Structure, clean out cull
+
+Network Attacks and Defense - Structure, clean out cull, add more
+
+Recon - Structure/more/cull
+
+OSINT - Structure/clean out cull
+
+Passwords - Clean out cull/structure/more
+
+Phishing Under Client Side Attacks
+
+Persistence - Needs some lovin
+
+Programming - Some stuff
+
+Pwning Skiddies - meh/Needs more
+
+Reverse Engineering - Structure/clean out cull/more
+
+Rootkits - Needs more/Structure
+
+Securing & Hardening - Structure/simplify
+
+Social Engineering - Could do with a touch up
+
+SDR - needs work
+
+SysInternals - Always use more
+
+Tor - Needs mo
+
+Threat Modeling - Needs more
+
+UX/Design - Could do with a few more links
+
+Sysadmin - Always more
+
+WebApp - Structure/cleanup/clear out cull
+
+Wireless Networks - More info/structure
+

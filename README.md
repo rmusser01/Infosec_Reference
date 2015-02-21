@@ -75,6 +75,8 @@ Phishing Under Client Side Attacks
 
 [Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Persistence.md) - Needs some lovin
 
+[Privilege Escalation and Post-Exploitation](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Draft/PrivEsc%20Post-Exploitation) - Cleanup/Structure
+
 [Programming](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Programming%20-%20Languages%20Courses%20References.md) - Some stuff
 
 [Pwning Skiddies](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Pwning%20Skiddies.md) - meh/Needs more

@@ -1,326 +1,442 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
-<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Attacking Android</title><style type="text/css">
-p, li { white-space: pre-wrap; }
-</style></head><body style=" font-family:'Courier New'; font-size:12pt; font-weight:400; font-style:normal;">
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600; text-decoration: underline;">Attacking Android Devices</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">#CULL</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-size:11pt;">####[Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)</span></p>
-<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">[APKinpsector](</span>https://github.com/honeynet/apkinspector/)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">* APKinspector is a powerful GUI tool for analysts to analyze the Android applications. </p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[ Inside the Android Play Service's magic OAuth flow ](http://sbktech.blogspot.com/2014/01/inside-android-play-services-magic.html)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">* Owning google accounts on android devices</p>
-<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">[Manifesto](</span>https://github.com/maldroid/manifesto)</p>
-<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">* PoC framework for APK obfuscation, used to demonstrate some of the obfuscation examples from <a href="http://maldr0id.blogspot.com"><span style=" text-decoration: underline; color:#0000ff;">http://maldr0id.blogspot.com</span></a>. It supports plugins (located in processing directory) that can do different obfuscation techniques. Main gist is that you run manifesto on the APK file and it produces an obfuscated APK file.</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[Android Hooker](https://github.com/AndroidHooker/hooker)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">* Hooker is an opensource project for dynamic analyses of Android applications. This project provides various tools and applications that can be use to automaticaly intercept and modify any API calls made by a targeted application.</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-size:11pt;">[</span><span style=" font-weight:600;">Dexter](</span><span style=" font-size:11pt;">http://dexter.dexlabs.org/accounts/login/?next=/dashboard)</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">* Dexter is a static android application analysis tool. </p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[android-cluster-toolkit](https://github.com/jduck/android-cluster-toolkit)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">* The Android Cluster Toolkit helps organize and manipulate a collection of Android devices. It was designed to work with a collection of devices connected to the same host machine, either directly or via one or more tiers of powered USB hubs. The tools within can operate on single devices, a selected subset, or all connected devices at once.</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[canhazaxs](https://github.com/jduck/canhazaxs)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">* A tool for enumerating the access to entries in the file system of an Android device. </p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[android-cluster-toolkit](https://github.com/jduck/android-cluster-toolkit)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">* The Android Cluster Toolkit helps organize and manipulate a collection of Android devices. It was designed to work with a collection of devices connected to the same host machine, either directly or via one or more tiers of powered USB hubs. The tools within can operate on single devices, a selected subset, or all connected devices at once.</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-size:11pt;">[APK Studio - Android Reverse Engineering](</span>https://apkstudio.codeplex.com/)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">* APK Studio is an IDE for decompiling/editing &amp; then recompiling of android application binaries. Unlike initial release being Windows exclusive &amp; also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed &amp; pick a particular one on a per project basis.</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[privmap - android](https://github.com/jduck/privmap)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">* A tool for enumerating the effective privileges of processes on an Android device. </p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[List of Android Vulnerabilities](</span>http://androidvulnerabilities.org/all)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[List of Android Exploits](</span>https://github.com/droidsec/droidsec.github.io/wiki/Vuln-Exploit-List)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Books</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Android hackers handbook</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">[Rundown of Android Packers](http://www.fortiguard.com/uploads/general/Area41Public.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600; text-decoration: underline;">Security Analysis</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Santoku Linux</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Android Tamer</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">http://androidtamer.com/</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Android Tamer is a one stop tool required to perform any kind of operations on Android devices / applications / network</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">VM</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Android Device Testing Framework(DTF)</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">From: https://github.com/jakev/dtf/tree/v1.0.3</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">The Android Device Testing Framework (&quot;dtf&quot;) is a data collection and analysis framework to help individuals answer the question: &quot;Where are the vulnerabilities on this mobile device?&quot; Dtf provides a modular approach and built-in APIs that allows testers to quickly create scripts to interact with their Android devices. The default download of dtf comes with multiple modules that allow testers to obtain information from their Android device, process this information into databases, and then start searching for vulnerabilities (all without requiring root privileges). These modules help you focus on changes made to AOSP components such as applications, frameworks, system services, as well as lower-level components such as binaries, libraries, and device drivers. In addition, you'll be able to analyze new functionality implemented by the OEMs and other parties to find vulnerabilities.</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">drozer</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">From their site: </p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS.</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">https://github.com/mwrlabs/drozer</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-size:11pt; font-weight:600;">APK Studio - Android Reverse Engineering</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">APK Studio is an IDE for decompiling/editing &amp; then recompiling of android application binaries. Unlike initial release being Windows exclusive &amp; also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed &amp; pick a particular one on a per project basis.</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">https://apkstudio.codeplex.com/</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600; text-decoration: underline;">Application Analysis</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Androguard</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">From their site:</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Androguard is mainly a tool written in python to play with: </p>
-<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-number-prefix: '';"><li style="" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:54px;">Dex/Odex (<a href="https://sites.google.com/site/io/dalvik-vm-internals"><span style=" text-decoration: underline; color:#0000ff;">Dalvik</span></a> virtual machine) (.dex) (disassemble, decompilation), </li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:54px;">APK (Android <a href="https://play.google.com/"><span style=" text-decoration: underline; color:#0000ff;">application</span></a>) (.apk), </li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:54px;">Android's binary xml (.xml), </li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:54px;">Android Resources (.arsc). </li></ul>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Androguard is available for Linux/OSX/Windows (python powered).</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">https://code.google.com/p/androguard </p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Droidmap	</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">From their site:</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">DroidBox is developed to offer dynamic analysis of Android applications. The following information is shown in the results, generated when analysis is ended: </p>
-<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-number-prefix: '';"><li style="" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Hashes for the analyzed package </li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Incoming/outgoing network data </li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">File read and write operations </li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Started services and loaded classes through DexClassLoader </li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Information leaks via the network, file and SMS </li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Circumvented permissions </li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Cryptography operations performed using Android API </li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Listing broadcast receivers </li>
-<li style="" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Sent SMS and phone calls </li></ul>
-<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Additionally, two images are generated visualizing the behavior of the package. One showing the temporal order of the operations and the other one being a treemap that can be used to check similarity between analyzed packages. </p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">		https://code.google.com/p/droidbox/</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">	</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Links:</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Security enhancements in android through its versions</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">	www.androidtamer.com</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600; text-decoration: underline;">Attack Platforms</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">drozer</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">From their site: </p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS.</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">https://github.com/mwrlabs/drozer</p>
-<p style="-qt-paragraph-type:empty; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Notes:</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /><br />Defeating the bootloader<br />(HTC Devices)<br />-secuflag - security flag in radio firmware - modify radio<br /><br />-gold card - specially formatted MicroSD card that can bypass carrier id check when flashing roms<br /><br />-white card - special sim card used to bypass bootsec<br />     Emulate white card with hardware, combine with gold card to enter diagnostics and clear S-ON<br /><br /><br />White card not needd for cdma<br /><br />Once S-OFF, can RAM load a custom boot iamge<br /><br />Technique wipes most devices, but not all<br /><br />Try it yourself: XTC clip<br /><br /><br />Forensics boot image<br /><br />-Start early in the boot chain before the main system loads<br />-Provide ADB root shell over USB<br />-Do not mount anything, including cache to prevent any writes<br />-Devices with raw NAND flash and wear leveling implemented in software(YAFFS2) can be prevented from overwriting deleted data<br /><br />Build boot image<br /><br />upload adbd, busybox, nanddump to /sbin<br />default.prop (enable root shell, ro.secure=0)<br />init.rc (do not mount partitions, just start adb)<br /><br />Flash and RAM load<br /><br />Samsung<br />-Dump partitions using ODIN(maybe. probably not)<br />-Flash with ODIN or HEIMDALL<br />     heimdall flash --recovery recovery.bin<br />     heimdall flash --kernel zImage<br />HTC<br />-fastboot boot recovery.img (Ram loading)<br />-fastboot flash recovery recovery.img (flash partition)<br /><br />Motorola<br />-sbf_flash image name.sbf (make sure it only contains recovery)<br /><br />JTAG<br />-Flasher Box<br />     -ORT<br />     -RiffBox<br />     -Medusa Box<br />-Allows you to dump nandflash directly<br /><br /><br />Some devices have debug access via serial cables<br />-Use a Bus Pirate and MicroUSB breakout board<br />     -set bus pirate to 115200 bps, 8-N-1<br />     -Output type is normal, not open drain<br />     -Plug in device to MicroUSB and you will see it boot the Primitive Boot Loader followed by the Secondary Boot Loader<br />     -Hold down enter key on terminal while plugging in device to stop SBL from booting and get to the SBL prompt<br /><br />Crack Pin/Password<br />-Salt - stored in /data/data/com.android.providers.settings/databases/settings.db<br /><br />     -SELECT * FROM secure WHERE name = 'lockscreen.password_salt'<br /><br />-Pin/Password<br />     -/data/system/password.key<br />     -Salted SHA1 of password concatenated with salted MD5<br /><br />-Calculate the value of the salt in lowercase hex with no padding<br />$python -c 'print '%x' % salt_number_here'<br /><br />-Copy the last 32 bytes of password.key(MD5 hash in hex), add a colon and then add the salt<br /><br />-Crack with software such as oclHashcat<br /><br />Android Encryption:<br />Implemented differently by manufacturers<br /><br />-Encrypted Master key + salt stored in footer<br />-footer stored at end of partition or in a footer file on another partition or as a partition itself<br />-Image device and locate footer + encrypted user data partition<br /><br />-Parse footer<br />-Locate Salt/master key<br />-Run a password guess through PBKDF2 with salt, use resulting key and IV to decrypt master key to decrypt first sector of encrypted image, if password is correct, plaintext revealed<br /><br />-Cracking PINs takes seconds. Passwords are usually short or follow patterns due to being the same as the lock screen password<br /><br />Evil maid attack<br />-Load app onto system partition, wait for user to boot phone, get remote access to decrypted user data<br />-Rootkits - compile kernel module<br />-Evil usb charger<br /><br /><br />Desperate Techniques<br />-Hard reset - some devices prior to 3.0 don't wipe data properly<br />-Chip-off - de-solder NAND chips<br />-Screen Smudges<br /><br />More Techniques<br />-Custom update.zip - can you get one signed? stock needs sig<br />-Race condition on updates via SD cards<br />-Own a CA? MITM connetion, push app, update/exploit<br />-Entry via Google Play, if credentials cached on desktop<br />     -Screen Lock bypass - Doesn't work on 4.0 -&gt;<br /><br />Santoku Linux<br />-Free/open bootable linux distro<br />-project is collab with pros<br />-Mobile Forensics<br />-Mobile App Sec Testing<br />-Mobile Malware Analysis<br /><br /><br /><br /><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">##Securing Your Android Device</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">[Android (In)Security - Defcamp 2014](https://www.youtube.com/watch?v=2aeV1JXYvuQ&amp;index=23&amp;list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">* Good video on Android Security</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">[Android Forensics Class - Free](http://opensecuritytraining.info/AndroidForensics.html)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">* This class serves as a foundation for mobile digital forensics, forensics of Android operating systems, and penetration testing of Android applications. </p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">###Hardening Guides</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">[Android Hardening Guide by the TOR developers](https://blog.torproject.org/blog/mission-impossible-hardening-android-security-and-privacy	</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">)</p>
-<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-number-prefix: '';"><li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:54px;">This blog post describes the installation and configuration of a prototype of a secure, full-featured, Android telecommunications device with full Tor support, individual application firewalling, true cell network baseband isolation, and optional ZRTP encrypted voice and video support. ZRTP does run over UDP which is not yet possible to send over Tor, but we are able to send SIP account login and call setup over Tor independently.</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:54px;">The SIP client we recommend also supports dialing normal telephone numbers if you have a SIP gateway that provides trunking service.</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:54px;">Aside from a handful of binary blobs to manage the device firmware and graphics acceleration, the entire system can be assembled (and recompiled) using only FOSS components. However, as an added bonus, we will describe how to handle the Google Play store as well, to mitigate the two infamous Google Play Backdoors.</li></ul>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">[Android 4.0+ Hardening Guide/Checklist by University of Texas](https://wikis.utexas.edu/display/ISO/Google+Android+Hardening+Checklist)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">	</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600; text-decoration: underline;">###Applications</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Firewall</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">	* [Android Firewall(Requires Root)](https://play.google.com/store/apps/details?id=com.jtschohl.androidfirewall&amp;hl=en)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">		</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Xprivacy - </span>The Ultimate Android Privacy Manager(Requires Root</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">	* [Github](https://github.com/M66B/XPrivacy)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">	* [Google Play](https://play.google.com/store/apps/details?id=biz.bokhorst.xprivacy.installer&amp;hl=en)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Backups</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">	Titanium Backup</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">		https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup</p>
-<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-number-prefix: '';"><li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:126px;">Personal favorite for making backups. Backups are stored locally or automatically to various cloud services.</li></ul>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">	Helium Backup(Root Not Required)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">		https://play.google.com/store/apps/details?id=com.koushikdutta.backup&amp;hl=en</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">		Backs up data locally or to various cloud services. Local client available for backups directly to PC.</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Analyzing the Attack Surface of your device</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Resources</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Encryption</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Check the Encryption section of the overall guide for more information.</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;"><br /></p>
-<p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600; text-decoration: underline;">###Interesting Android Papers</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"><br /></p>
-<p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">[Peeking into Your App without Actually Seeing It: UI State Inference and Novel Android Attacks](http://www.cs.ucr.edu/~zhiyunq/pub/sec14_android_activity_inference.pdf)</p>
-<p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">* <span style=" font-weight:600;">Abstract: </span>The security of smartphone GUI frameworks remains an important yet under-scrutinized topic. In this paper, we report that on the Android system (and likely other OSes), a weaker form of GUI confidentiality can be breached in the form of UI state (not the pixels) by a background app without requiring any permissions. Our finding leads to a class of attacks which we name UI state inference attack.</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[List of important whitepapers](</span>https://github.com/droidsec/droidsec.github.io/wiki/Android-Whitepapers)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[Execute This! Analyzing Unsafe and Malicious Dynamic Code Loading in Android Applications](</span>https://anonymous-proxy servers.net/paper/android-remote-code-execution.pdf)</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">	</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-size:11pt; font-weight:600;">[Rage Against the Droid: Hindering Dynamic analysis of android malware](</span><span style=" font-size:11pt;">http://www.syssec-project.eu/m/page-media/3/petsas_rage_against_the_virtual_machine.pdf)</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[APKLancet: Tumor Payload Diagnosis and Purification for Android Applications](</span>http://loccs.sjtu.edu.cn/typecho/usr/uploads/2014/04/1396105336.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[DroidRay: A Security Evaluation System for CustomizedAndroid Firmwares](</span>http://www.cs.cuhk.hk/~cslui/PUBLICATION/ASIACCS2014DROIDRAY.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[VirtualSwindle: An Automated Attack Against In-App Billing on Android](</span>http://seclab.ccs.neu.edu/static/publications/asiaccs14virtualswindle.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[Evading Android Runtime Analysis via Sandbox Detection](</span>https://www.andrew.cmu.edu/user/nicolasc/publications/VC-ASIACCS14.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[Enter Sandbox: Android Sandbox Comparison](</span>http://www.mostconf.org/2014/papers/s3p1.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[Post-Mortem Memory Analysis of Cold-Booted Android Devices](</span>http://www.homac.de/publications/Post-Mortem-Memory-Analysis-of-Cold-Booted-Android-Devices.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[Upgrading Your Android, Elevating My Malware:</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Privilege Escalation Through Mobile OS Updating](</span>http://www.informatics.indiana.edu/xw7/papers/privilegescalationthroughandroidupdating.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">(Exploring Android KitKat Runtime](</span>http://www.haxpo.nl/wp-content/uploads/2014/02/D1T2-State-of-the-Art-Exploring-the-New-Android-KitKat-Runtime.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[Analyzing Inter-Application Communication in Android](</span>https://www.eecs.berkeley.edu/~daw/papers/intents-mobisys11.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[Automatically Exploiting Potential Component Leaks in Android Applications](</span>http://orbilu.uni.lu/bitstream/10993/16914/1/tr-pcLeaks.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[I know what leaked in your pocket: uncovering privacy leaks on Android Apps with Static Taint Analysis](</span>http://arxiv.org/pdf/1404.7431v1.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[Bifocals: Analyzing WebView Vulnerabilities in Android Applications](</span>http://www.eecs.berkeley.edu/~emc/papers/Chin-WISA-WebViews.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[Analyzing Android Browser Apps for file:// Vulnerabilities](</span>http://arxiv.org/pdf/1404.4553v3.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[FlowDroid: Precise Context, Flow, Field, Object-sensitive and Lifecycle-aware Taint Analysis for Android Apps](</span>http://sseblog.ec-spride.de/wp-content/uploads/2013/05/pldi14submissionFlowdroid.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[Detecting privacy leaks in Android Apps](</span>https://publications.uni.lu/bitstream/10993/16916/1/ESSoS-DS2014-Li.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[From Zygote to Morula:</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">Fortifying Weakened ASLR on Android](</span>http://www.cc.gatech.edu/~blee303/paper/morula.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[Apposcopy: Semantics-Based Detection of Android Malware through Static Analysis](</span>http://www.cs.utexas.edu/~yufeng/papers/fse14.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[MAdFraud: Investigating Ad Fraud in Android Applications](</span>http://www.cs.ucdavis.edu/~hchen/paper/mobisys2014.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[Why Eve and Mallory Love Android: An Analysis of Android SSL (In)Security](</span>http://www2.dcsec.uni-hannover.de/files/android/p50-fahl.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[AsDroid: Detecting Stealthy Behaviors in Android Applications by User Interface and Program Behavior Contradiction](</span>https://ece.uwaterloo.ca/~lintan/publications/asdroid-icse14.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[NativeGuard: Protecting Android Applications from Third-Party Native Libraries](</span>http://www.cse.lehigh.edu/~gtan/paper/nativeguard.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-size:11pt; font-weight:600;">[Into the Droid: Gaining Access to Android User Data - DEFCON](</span><span style=" font-size:11pt;">https://www.youtube.com/watch?v=MxhIo95VccI&amp;amp;list=PLCDA5DF85AD6B4ABD)</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-size:11pt; font-weight:600;">[Android Packers](</span><span style=" font-size:11pt;">http://www.fortiguard.com/uploads/general/Area41Public.pdf)</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px; font-size:11pt;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">[Xprivacy Android](</span>https://github.com/M66B/XPrivacy#description)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">[An Empirical Study of Cryptographic Misuse</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">in Android Applications](</span>https://www.cs.ucsb.edu/~chris/research/doc/ccs13_cryptolint.pdf)</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-size:11pt; font-weight:600;">Obfuscation in Android malware, and how to fight back</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-size:11pt;">https://www.virusbtn.com/virusbulletin/archive/2014/07/vb201407-Android-obfuscation</span></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600; text-decoration: underline;">###Educational Material</span><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">OWASP GoatDroid</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">From their site: </p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">“OWASP GoatDroid is a fully functional and self-contained training environment for educating developers and testers on Android security. GoatDroid requires minimal dependencies and is ideal for both Android beginners as well as more advanced users. </p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;"><span style=" font-weight:600;">The project currently includes two applications:</span> <span style=" font-weight:600;">FourGoats, a location-based social network, and Herd Financial, a mobile banking application.</span> <span style=" font-weight:600;">There are also several feature that greatly simplify usage within a training environment or for absolute beginners who want a good introduction to working with the Android platform.”</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">https://www.owasp.org/index.php/Projects/OWASP_GoatDroid_Project</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Insecure Bank v2</span></p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">Taken from: https://github.com/dineshshetty/Android-InsecureBankv2</p>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">This vulnerable Android application is named &quot;InsecureBankv2&quot; and is made for security enthusiasts and developers to learn the Android insecurities by testing this vulnerable application. Its back-end server component is written in python. The client component i.e. the Android InsecureBank.apk can be downloaded along with the source code. </p>
-<p style=" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">The list of vulnerabilities that are currently included in this release are: </p>
-<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-number-prefix: '';"><li style="" style=" margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Insecure Logging mechanism</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Vulnerable Activity Components</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Content providers injection</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Weak Broadcast Receiver permissions</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Android Pasteboard vulnerability</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Local Encryption issues</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Android keyboard cache issues</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Insecure Webview implementation</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Insecure SDCard storage</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Insecure HTTP connections</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Weak Authorization mechanism</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Parameter Manipulation</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Weak Cryptography implementation</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Hardcoded secrets</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Username Enumeration issue</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Developer Backdoors</li>
-<li style="" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Weak change password implementation</li>
-<li style="" style=" margin-top:0px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:18px;">Weak Local storage issues</li></ul>
-<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">https://github.com/dineshshetty/Android-InsecureBankv2</p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
-<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p></body></html>
+Attacking Android Devices
+
+
+
+
+#CULL
+
+####[Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
+[APKinpsector](https://github.com/honeynet/apkinspector/)
+* APKinspector is a powerful GUI tool for analysts to analyze the Android applications. 
+
+
+[ Inside the Android Play Service's magic OAuth flow ](http://sbktech.blogspot.com/2014/01/inside-android-play-services-magic.html)
+* Owning google accounts on android devices
+[Manifesto](https://github.com/maldroid/manifesto)
+* PoC framework for APK obfuscation, used to demonstrate some of the obfuscation examples from http://maldr0id.blogspot.com. It supports plugins (located in processing directory) that can do different obfuscation techniques. Main gist is that you run manifesto on the APK file and it produces an obfuscated APK file.
+
+[Android Hooker](https://github.com/AndroidHooker/hooker)
+* Hooker is an opensource project for dynamic analyses of Android applications. This project provides various tools and applications that can be use to automaticaly intercept and modify any API calls made by a targeted application.
+
+
+[Dexter](http://dexter.dexlabs.org/accounts/login/?next=/dashboard)
+* Dexter is a static android application analysis tool. 
+
+[android-cluster-toolkit](https://github.com/jduck/android-cluster-toolkit)
+* The Android Cluster Toolkit helps organize and manipulate a collection of Android devices. It was designed to work with a collection of devices connected to the same host machine, either directly or via one or more tiers of powered USB hubs. The tools within can operate on single devices, a selected subset, or all connected devices at once.
+
+[canhazaxs](https://github.com/jduck/canhazaxs)
+* A tool for enumerating the access to entries in the file system of an Android device. 
+
+[android-cluster-toolkit](https://github.com/jduck/android-cluster-toolkit)
+* The Android Cluster Toolkit helps organize and manipulate a collection of Android devices. It was designed to work with a collection of devices connected to the same host machine, either directly or via one or more tiers of powered USB hubs. The tools within can operate on single devices, a selected subset, or all connected devices at once.
+
+[APK Studio - Android Reverse Engineering](https://apkstudio.codeplex.com/)
+* APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis.
+
+[privmap - android](https://github.com/jduck/privmap)
+* A tool for enumerating the effective privileges of processes on an Android device. 
+
+
+
+
+
+
+[List of Android Vulnerabilities](http://androidvulnerabilities.org/all)
+
+
+[List of Android Exploits](https://github.com/droidsec/droidsec.github.io/wiki/Vuln-Exploit-List)
+
+
+
+Books
+Android hackers handbook
+
+
+
+
+
+
+
+
+[Rundown of Android Packers](http://www.fortiguard.com/uploads/general/Area41Public.pdf)
+
+
+
+
+
+
+Security Analysis
+
+Santoku Linux
+
+
+Android Tamer
+http://androidtamer.com/
+Android Tamer is a one stop tool required to perform any kind of operations on Android devices / applications / network
+VM
+
+Android Device Testing Framework(DTF)
+From: https://github.com/jakev/dtf/tree/v1.0.3
+
+The Android Device Testing Framework ("dtf") is a data collection and analysis framework to help individuals answer the question: "Where are the vulnerabilities on this mobile device?" Dtf provides a modular approach and built-in APIs that allows testers to quickly create scripts to interact with their Android devices. The default download of dtf comes with multiple modules that allow testers to obtain information from their Android device, process this information into databases, and then start searching for vulnerabilities (all without requiring root privileges). These modules help you focus on changes made to AOSP components such as applications, frameworks, system services, as well as lower-level components such as binaries, libraries, and device drivers. In addition, you'll be able to analyze new functionality implemented by the OEMs and other parties to find vulnerabilities.
+
+drozer
+From their site: 
+drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS.
+https://github.com/mwrlabs/drozer
+
+
+APK Studio - Android Reverse Engineering
+APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis.
+https://apkstudio.codeplex.com/
+
+Application Analysis
+
+Androguard
+From their site:
+Androguard is mainly a tool written in python to play with: 
+Dex/Odex (Dalvik virtual machine) (.dex) (disassemble, decompilation), 
+APK (Android application) (.apk), 
+Android's binary xml (.xml), 
+Android Resources (.arsc). 
+Androguard is available for Linux/OSX/Windows (python powered).
+https://code.google.com/p/androguard 
+
+Droidmap	
+From their site:
+DroidBox is developed to offer dynamic analysis of Android applications. The following information is shown in the results, generated when analysis is ended: 
+Hashes for the analyzed package 
+Incoming/outgoing network data 
+File read and write operations 
+Started services and loaded classes through DexClassLoader 
+Information leaks via the network, file and SMS 
+Circumvented permissions 
+Cryptography operations performed using Android API 
+Listing broadcast receivers 
+Sent SMS and phone calls 
+Additionally, two images are generated visualizing the behavior of the package. One showing the temporal order of the operations and the other one being a treemap that can be used to check similarity between analyzed packages. 
+		https://code.google.com/p/droidbox/
+	
+
+Links:
+Security enhancements in android through its versions
+	www.androidtamer.com
+
+
+Attack Platforms
+
+drozer
+From their site: 
+drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS.
+https://github.com/mwrlabs/drozer
+
+
+
+
+
+
+
+
+Notes:
+
+
+Defeating the bootloader
+(HTC Devices)
+-secuflag - security flag in radio firmware - modify radio
+
+-gold card - specially formatted MicroSD card that can bypass carrier id check when flashing roms
+
+-white card - special sim card used to bypass bootsec
+     Emulate white card with hardware, combine with gold card to enter diagnostics and clear S-ON
+
+
+White card not needd for cdma
+
+Once S-OFF, can RAM load a custom boot iamge
+
+Technique wipes most devices, but not all
+
+Try it yourself: XTC clip
+
+
+Forensics boot image
+
+-Start early in the boot chain before the main system loads
+-Provide ADB root shell over USB
+-Do not mount anything, including cache to prevent any writes
+-Devices with raw NAND flash and wear leveling implemented in software(YAFFS2) can be prevented from overwriting deleted data
+
+Build boot image
+
+upload adbd, busybox, nanddump to /sbin
+default.prop (enable root shell, ro.secure=0)
+init.rc (do not mount partitions, just start adb)
+
+Flash and RAM load
+
+Samsung
+-Dump partitions using ODIN(maybe. probably not)
+-Flash with ODIN or HEIMDALL
+     heimdall flash --recovery recovery.bin
+     heimdall flash --kernel zImage
+HTC
+-fastboot boot recovery.img (Ram loading)
+-fastboot flash recovery recovery.img (flash partition)
+
+Motorola
+-sbf_flash image name.sbf (make sure it only contains recovery)
+
+JTAG
+-Flasher Box
+     -ORT
+     -RiffBox
+     -Medusa Box
+-Allows you to dump nandflash directly
+
+
+Some devices have debug access via serial cables
+-Use a Bus Pirate and MicroUSB breakout board
+     -set bus pirate to 115200 bps, 8-N-1
+     -Output type is normal, not open drain
+     -Plug in device to MicroUSB and you will see it boot the Primitive Boot Loader followed by the Secondary Boot Loader
+     -Hold down enter key on terminal while plugging in device to stop SBL from booting and get to the SBL prompt
+
+Crack Pin/Password
+-Salt - stored in /data/data/com.android.providers.settings/databases/settings.db
+
+     -SELECT * FROM secure WHERE name = 'lockscreen.password_salt'
+
+-Pin/Password
+     -/data/system/password.key
+     -Salted SHA1 of password concatenated with salted MD5
+
+-Calculate the value of the salt in lowercase hex with no padding
+$python -c 'print '%x' % salt_number_here'
+
+-Copy the last 32 bytes of password.key(MD5 hash in hex), add a colon and then add the salt
+
+-Crack with software such as oclHashcat
+
+Android Encryption:
+Implemented differently by manufacturers
+
+-Encrypted Master key + salt stored in footer
+-footer stored at end of partition or in a footer file on another partition or as a partition itself
+-Image device and locate footer + encrypted user data partition
+
+-Parse footer
+-Locate Salt/master key
+-Run a password guess through PBKDF2 with salt, use resulting key and IV to decrypt master key to decrypt first sector of encrypted image, if password is correct, plaintext revealed
+
+-Cracking PINs takes seconds. Passwords are usually short or follow patterns due to being the same as the lock screen password
+
+Evil maid attack
+-Load app onto system partition, wait for user to boot phone, get remote access to decrypted user data
+-Rootkits - compile kernel module
+-Evil usb charger
+
+
+Desperate Techniques
+-Hard reset - some devices prior to 3.0 don't wipe data properly
+-Chip-off - de-solder NAND chips
+-Screen Smudges
+
+More Techniques
+-Custom update.zip - can you get one signed? stock needs sig
+-Race condition on updates via SD cards
+-Own a CA? MITM connetion, push app, update/exploit
+-Entry via Google Play, if credentials cached on desktop
+     -Screen Lock bypass - Doesn't work on 4.0 ->
+
+Santoku Linux
+-Free/open bootable linux distro
+-project is collab with pros
+-Mobile Forensics
+-Mobile App Sec Testing
+-Mobile Malware Analysis
+
+
+
+
+
+
+##Securing Your Android Device
+
+
+
+
+[Android (In)Security - Defcamp 2014](https://www.youtube.com/watch?v=2aeV1JXYvuQ&index=23&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
+* Good video on Android Security
+
+
+
+[Android Forensics Class - Free](http://opensecuritytraining.info/AndroidForensics.html)
+* This class serves as a foundation for mobile digital forensics, forensics of Android operating systems, and penetration testing of Android applications. 
+
+
+###Hardening Guides
+
+
+[Android Hardening Guide by the TOR developers](https://blog.torproject.org/blog/mission-impossible-hardening-android-security-and-privacy	
+)
+This blog post describes the installation and configuration of a prototype of a secure, full-featured, Android telecommunications device with full Tor support, individual application firewalling, true cell network baseband isolation, and optional ZRTP encrypted voice and video support. ZRTP does run over UDP which is not yet possible to send over Tor, but we are able to send SIP account login and call setup over Tor independently.
+The SIP client we recommend also supports dialing normal telephone numbers if you have a SIP gateway that provides trunking service.
+Aside from a handful of binary blobs to manage the device firmware and graphics acceleration, the entire system can be assembled (and recompiled) using only FOSS components. However, as an added bonus, we will describe how to handle the Google Play store as well, to mitigate the two infamous Google Play Backdoors.
+
+
+[Android 4.0+ Hardening Guide/Checklist by University of Texas](https://wikis.utexas.edu/display/ISO/Google+Android+Hardening+Checklist)
+	
+
+
+###Applications
+
+Firewall
+	* [Android Firewall(Requires Root)](https://play.google.com/store/apps/details?id=com.jtschohl.androidfirewall&hl=en)
+		
+Xprivacy - The Ultimate Android Privacy Manager(Requires Root
+
+	* [Github](https://github.com/M66B/XPrivacy)
+	* [Google Play](https://play.google.com/store/apps/details?id=biz.bokhorst.xprivacy.installer&hl=en)
+
+Backups
+	Titanium Backup
+		https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup
+Personal favorite for making backups. Backups are stored locally or automatically to various cloud services.
+	Helium Backup(Root Not Required)
+		https://play.google.com/store/apps/details?id=com.koushikdutta.backup&hl=en
+		Backs up data locally or to various cloud services. Local client available for backups directly to PC.
+
+Analyzing the Attack Surface of your device
+
+Resources
+
+
+
+Encryption
+Check the Encryption section of the overall guide for more information.
+
+
+
+
+
+
+
+
+
+
+###Interesting Android Papers
+
+[Peeking into Your App without Actually Seeing It: UI State Inference and Novel Android Attacks](http://www.cs.ucr.edu/~zhiyunq/pub/sec14_android_activity_inference.pdf)
+* Abstract: The security of smartphone GUI frameworks remains an important yet under-scrutinized topic. In this paper, we report that on the Android system (and likely other OSes), a weaker form of GUI confidentiality can be breached in the form of UI state (not the pixels) by a background app without requiring any permissions. Our finding leads to a class of attacks which we name UI state inference attack.
+
+[List of important whitepapers](https://github.com/droidsec/droidsec.github.io/wiki/Android-Whitepapers)
+
+[Execute This! Analyzing Unsafe and Malicious Dynamic Code Loading in Android Applications](https://anonymous-proxy servers.net/paper/android-remote-code-execution.pdf)
+	
+[Rage Against the Droid: Hindering Dynamic analysis of android malware](http://www.syssec-project.eu/m/page-media/3/petsas_rage_against_the_virtual_machine.pdf)
+
+[APKLancet: Tumor Payload Diagnosis and Purification for Android Applications](http://loccs.sjtu.edu.cn/typecho/usr/uploads/2014/04/1396105336.pdf)
+
+[DroidRay: A Security Evaluation System for CustomizedAndroid Firmwares](http://www.cs.cuhk.hk/~cslui/PUBLICATION/ASIACCS2014DROIDRAY.pdf)
+
+
+[VirtualSwindle: An Automated Attack Against In-App Billing on Android](http://seclab.ccs.neu.edu/static/publications/asiaccs14virtualswindle.pdf)
+
+
+[Evading Android Runtime Analysis via Sandbox Detection](https://www.andrew.cmu.edu/user/nicolasc/publications/VC-ASIACCS14.pdf)
+
+
+[Enter Sandbox: Android Sandbox Comparison](http://www.mostconf.org/2014/papers/s3p1.pdf)
+
+[Post-Mortem Memory Analysis of Cold-Booted Android Devices](http://www.homac.de/publications/Post-Mortem-Memory-Analysis-of-Cold-Booted-Android-Devices.pdf)
+
+[Upgrading Your Android, Elevating My Malware:
+Privilege Escalation Through Mobile OS Updating](http://www.informatics.indiana.edu/xw7/papers/privilegescalationthroughandroidupdating.pdf)
+
+
+(Exploring Android KitKat Runtime](http://www.haxpo.nl/wp-content/uploads/2014/02/D1T2-State-of-the-Art-Exploring-the-New-Android-KitKat-Runtime.pdf)
+
+[Analyzing Inter-Application Communication in Android](https://www.eecs.berkeley.edu/~daw/papers/intents-mobisys11.pdf)
+
+[Automatically Exploiting Potential Component Leaks in Android Applications](http://orbilu.uni.lu/bitstream/10993/16914/1/tr-pcLeaks.pdf)
+
+[I know what leaked in your pocket: uncovering privacy leaks on Android Apps with Static Taint Analysis](http://arxiv.org/pdf/1404.7431v1.pdf)
+
+[Bifocals: Analyzing WebView Vulnerabilities in Android Applications](http://www.eecs.berkeley.edu/~emc/papers/Chin-WISA-WebViews.pdf)
+
+[Analyzing Android Browser Apps for file:// Vulnerabilities](http://arxiv.org/pdf/1404.4553v3.pdf)
+
+
+[FlowDroid: Precise Context, Flow, Field, Object-sensitive and Lifecycle-aware Taint Analysis for Android Apps](http://sseblog.ec-spride.de/wp-content/uploads/2013/05/pldi14submissionFlowdroid.pdf)
+
+[Detecting privacy leaks in Android Apps](https://publications.uni.lu/bitstream/10993/16916/1/ESSoS-DS2014-Li.pdf)
+
+[From Zygote to Morula:
+Fortifying Weakened ASLR on Android](http://www.cc.gatech.edu/~blee303/paper/morula.pdf)
+
+[Apposcopy: Semantics-Based Detection of Android Malware through Static Analysis](http://www.cs.utexas.edu/~yufeng/papers/fse14.pdf)
+
+[MAdFraud: Investigating Ad Fraud in Android Applications](http://www.cs.ucdavis.edu/~hchen/paper/mobisys2014.pdf)
+
+[Why Eve and Mallory Love Android: An Analysis of Android SSL (In)Security](http://www2.dcsec.uni-hannover.de/files/android/p50-fahl.pdf)
+
+
+[AsDroid: Detecting Stealthy Behaviors in Android Applications by User Interface and Program Behavior Contradiction](https://ece.uwaterloo.ca/~lintan/publications/asdroid-icse14.pdf)
+
+[NativeGuard: Protecting Android Applications from Third-Party Native Libraries](http://www.cse.lehigh.edu/~gtan/paper/nativeguard.pdf)
+
+[Into the Droid: Gaining Access to Android User Data - DEFCON](https://www.youtube.com/watch?v=MxhIo95VccI&amp;list=PLCDA5DF85AD6B4ABD)
+
+[Android Packers](http://www.fortiguard.com/uploads/general/Area41Public.pdf)
+
+
+[Xprivacy Android](https://github.com/M66B/XPrivacy#description)
+
+
+[An Empirical Study of Cryptographic Misuse
+in Android Applications](https://www.cs.ucsb.edu/~chris/research/doc/ccs13_cryptolint.pdf)
+
+
+Obfuscation in Android malware, and how to fight back
+https://www.virusbtn.com/virusbulletin/archive/2014/07/vb201407-Android-obfuscation
+
+
+###Educational Material
+
+
+
+OWASP GoatDroid
+From their site: 
+“OWASP GoatDroid is a fully functional and self-contained training environment for educating developers and testers on Android security. GoatDroid requires minimal dependencies and is ideal for both Android beginners as well as more advanced users. 
+The project currently includes two applications: FourGoats, a location-based social network, and Herd Financial, a mobile banking application. There are also several feature that greatly simplify usage within a training environment or for absolute beginners who want a good introduction to working with the Android platform.”
+https://www.owasp.org/index.php/Projects/OWASP_GoatDroid_Project
+
+
+Insecure Bank v2
+Taken from: https://github.com/dineshshetty/Android-InsecureBankv2
+This vulnerable Android application is named "InsecureBankv2" and is made for security enthusiasts and developers to learn the Android insecurities by testing this vulnerable application. Its back-end server component is written in python. The client component i.e. the Android InsecureBank.apk can be downloaded along with the source code. 
+The list of vulnerabilities that are currently included in this release are: 
+Insecure Logging mechanism
+Vulnerable Activity Components
+Content providers injection
+Weak Broadcast Receiver permissions
+Android Pasteboard vulnerability
+Local Encryption issues
+Android keyboard cache issues
+Insecure Webview implementation
+Insecure SDCard storage
+Insecure HTTP connections
+Weak Authorization mechanism
+Parameter Manipulation
+Weak Cryptography implementation
+Hardcoded secrets
+Username Enumeration issue
+Developer Backdoors
+Weak change password implementation
+Weak Local storage issues
+https://github.com/dineshshetty/Android-InsecureBankv2
+
+
+
+

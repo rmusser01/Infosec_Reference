@@ -1,0 +1,12 @@
+Recon/Enum To DO
+
+Add sample/simple checklists/links to
+
+https://github.com/mubix/netview
+Netview is a enumeration tool. It uses (with the -d) the current domain or a specified domain (with the -d domain) to enumerate hosts
+
+  [RANCID - Really Awesome New Cisco confIg Differ](http://www.shrubbery.net/rancid/)
+* RANCID monitors a router's (or more generally a device's) configuration, including software and hardware (cards, serial numbers, etc) and uses CVS (Concurrent Version System) or Subversion to maintain history of changes.
+* RANCID does this by the very simple process summarized as: login to each device in the router table (router.db), run various commands to get the information that will be saved, cook the output; re-format, remove oscillating or incrementing data, email any differences (sample) from the previous collection to a mail list, and finally commit those changes to the revision control system
+
+

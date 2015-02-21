@@ -1,0 +1,10 @@
+Links to references not mentioned elsewhere:
+
+
+
+
+IANA Complete list of assigned ports:
+	http://www.vulnerabilityassessment.co.uk/port-numbers.txt
+
+A Curated list of assigned ports relevant to pen testing:
+	http://www.vulnerabilityassessment.co.uk/ports.htm

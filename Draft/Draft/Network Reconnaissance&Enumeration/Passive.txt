@@ -1,0 +1,5 @@
+##Passive
+
+
+[DNS May Be Hazardous to Your Health - Robert Stucke](https://www.youtube.com/watch?v=ZPbyDSvGasw)
+* Great talk on attacking DNS

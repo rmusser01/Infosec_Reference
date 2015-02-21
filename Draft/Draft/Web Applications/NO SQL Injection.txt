@@ -1,0 +1,43 @@
+NO/SQL Injection
+
+
+
+
+
+SQL Injection Cheat Sheet
+http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/
+
+SQL Injection Knowledge Base
+http://websec.ca/kb/sql_injection#MySQL_Testing_Injection
+
+
+Laduanum
+	Taken from: http://laudanum.sourceforge.net/
+“Laudanum is a collection of injectable files, designed to be used in a pentest when SQL injection flaws are found and are in multiple languages for different environments.They provide functionality such as shell, DNS query, LDAP retrieval and others.”
+
+
+Pen Testing MongoDB
+http://www.irongeek.com/i.php?page=videos/derbycon4/t408-making-mongo-cry-attacking-nosql-for-pen-testers-russell-butturini
+
+
+
+
+SQLi Lab lessons
+From: https://github.com/Audi-1/sqli-labs
+SQLI-LABS is a platform to learn SQLI Following labs are covered for GET and POST scenarios: 
+Error Based Injections (Union Select) 
+String
+Intiger
+Error Based Injections (Double Injection Based)
+BLIND Injections: 1.Boolian Based 2.Time Based
+Update Query Injection.
+Insert Query Injections.
+Header Injections. 1.Referer based. 2.UserAgent based. 3.Cookie based.
+Second Order Injections
+Bypassing WAF 
+Bypassing Blacklist filters Stripping comments Stripping OR & AND Stripping SPACES and COMMENTS Stripping UNION & SELECT
+Impidence mismatch
+Bypass addslashes()
+Bypassing mysql_real_escape_string. (under special conditions)
+Stacked SQL injections.
+Secondary channel extraction

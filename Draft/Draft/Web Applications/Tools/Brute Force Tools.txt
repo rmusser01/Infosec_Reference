@@ -1,0 +1,28 @@
+Brute Force Tools
+
+
+WFuzz
+Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for finding resources not linked (directories, servlets, scripts, etc), bruteforce GET and POST parameters for checking different kind of injections (SQL, XSS, LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc. 
+
+https://code.google.com/p/wfuzz/
+
+It's very flexible, here are some functionalities: 
+Multiple Injection points capability with multiple dictionaries 
+Recursion (When doing directory bruteforce) 
+Post, headers and authentication data brute forcing 
+Output to HTML 
+Colored output 
+Hide results by return code, word numbers, line numbers, regex. 
+Cookies fuzzing 
+Multi threading 
+Proxy support 
+SOCK support 
+Time delays between requests 
+Authentication support (NTLM, Basic) 
+All parameters bruteforcing (POST and GET) 
+Multiple encoders per payload 
+Payload combinations with iterators 
+Baseline request (to filter results against) 
+Brute force HTTP methods 
+Multiple proxy support (each request through a different proxy) 
+HEAD scan (faster for resource discovery) 

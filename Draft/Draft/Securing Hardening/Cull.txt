@@ -1,0 +1,52 @@
+How to Secure Yourself and Your Devices From Attackers
+
+
+
+
+
+
+
+
+[Exploit Mitigation Killchain](http://0xdabbad00.com/wp-content/uploads/2013/04/exploit_mitigation_kill_chain.pdf)
+
+
+
+
+
+
+
+Flesh/Fix win serv
+
+
+Flesh linux section
+
+
+[Hardening Framework](https://telekomlabs.github.io/
+
+[Exploit Mitigation Killchain](http://0xdabbad00.com/wp-content/uploads/2013/04/exploit_mitigation_kill_chain.pdf)
+
+
+
+
+
+http://www.irongeek.com/i.php?page=videos/derbycon4/t536-introduction-to-system-hardening-eddie-david
+
+
+[Killing Rootkits](http://blog.ioactive.com/2014/09/killing-rootkit.html)
+
+
+
+
+
+Logs:
+
+/var/log/message – Where whole system logs or current activity logs are available.
+/var/log/auth.log – Authentication logs.
+/var/log/kern.log – Kernel logs.
+/var/log/cron.log – Crond logs (cron job).
+/var/log/maillog – Mail server logs.
+/var/log/boot.log – System boot log.
+/var/log/mysqld.log – MySQL database server log file.
+/var/log/secure – Authentication log.
+/var/log/utmp or /var/log/wtmp : Login records file.
+/var/log/yum.log: Yum log files.

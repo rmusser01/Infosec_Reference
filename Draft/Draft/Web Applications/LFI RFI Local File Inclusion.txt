@@ -1,0 +1,30 @@
+
+
+
+
+
+
+LFI Local File Inclusion Techniques (paper)
+
+From: http://www.ush.it/2008/08/18/lfi2rce-local-file-inclusion-to-remote-code-execution-advanced-exploitation-proc-shortcuts/
+
+This paper exposes the ability from the attacker standpoint to use /proc in order to exploit LFI (Local File Inclusion) vulnerabilities. While using /proc for such aim is well known this one is a specific technique that was not been previously published as far as we know. A tool to automatically exploit LFI using the shown approach is released accordingly. 
+Update: a third (known) technique has been dissected here:
+ http://www_ush_it/2008/07/09/local-file-inclusion-lfi-of-session-files-to-root-escalation/ 
+
+
+Liffy (tool)
+From: https://github.com/rotlogix/liffy
+Liffy is a Local File Inclusion Exploitation tool. 
+Current features include: 
+data:// for code execution
+expect:// for code execution
+input:// for code execution
+filter:// for arbitrary file reads
+/proc/self/environ for code execution in CGI mode
+Apache access.log poisoning
+Linux auth.log SSH poisoning
+Direct payload delivery with no stager
+Support for absolute and relative paths 
+Support for cookies
+! I have had issues with access log poisoning on current versions of Apache. This not an issue with the payload delivery and or poisoning. This is more of an issue with the request after the poisoning to kick off your shell. This may require a browser refresh. !

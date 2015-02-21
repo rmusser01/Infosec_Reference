@@ -1,0 +1,36 @@
+Reverse Engineering Papers
+
+
+
+Byteweight: Learning to Recognize Functions in Binary Code
+https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-bao.pdf
+
+
+Reverse Engineering Qualcomm Baseband
+http://events.ccc.de/congress/2011/Fahrplan/attachments/2022_11-ccc-qcombbdbg.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

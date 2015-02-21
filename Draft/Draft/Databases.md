@@ -1,0 +1,36 @@
+##Databases
+
+
+
+
+
+
+[SQL Injection wiki](http://www.sqlinjectionwiki.com/)
+
+
+
+
+###NoSQL
+
+NoSQL
+
+
+http://blog.spiderlabs.com/2013/03/mongodb-security-weaknesses-in-a-typical-nosql-database.html
+
+
+Checklist for mongodb
+http://blog.mongodirector.com/10-tips-to-improve-your-mongodb-security/
+
+Cheat sheet
+NoSQL-injection Cheat Sheet
+? db.getName() – Get current DB name
+? db.members.count() – Get number of documents in the collection
+? db.members.validate({ full : true}) – Get ALL information about this
+collection
+? db.members.stats() – Get information about this collection
+? db.members.remove() – remove all documents from current collection
+? db.members.find().skip(0).limit(1) – Get documents from DB (Change only
+number in skip() function)
+? db.getMongo().getDBNames().toString() – Get the list of all DBs
+? db.members.find()[0][‘pass’] – Get “pass” value from current collection]
+Firstov Mikhail

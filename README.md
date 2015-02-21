@@ -21,7 +21,7 @@ Information Security Reference That Doesn't Suck
 Android - Encryption
 Android - Analyzing Attack Surface
 
-Appsec
+Appsec - More
 
 Computer Hardware attacks - General
 
@@ -40,7 +40,7 @@ Data Visualization - More in general
 
 Disclosure - Some historical things
 
-Forensics - Integrate from cull list
+Forensics - Integrate from cull list; More anti-forensics; more resources
 
 Fuzzing - Educational stuff; more writeups
 

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Nmap Cheat Sheet</title><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'Courier New'; font-size:12pt; font-weight:400; font-style:normal;">
+<p style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;"> CheatSheet: Nmap Cheat Sheet</span></p>
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
+<p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Basic Scanning Techniques</span></p>
+<ul style="margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-number-prefix: '';"><li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Scan a single target —&gt; nmap [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Scan multiple targets —&gt; nmap [target1,target2,etc]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Scan a list of targets —-&gt; nmap -iL [list.txt]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Scan a range of hosts —-&gt; nmap [range of IP addresses]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Scan an entire subnet —-&gt; nmap [IP address/cdir]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Scan random hosts —-&gt; nmap -iR [number]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Excluding targets from a scan —&gt; nmap [targets] –exclude [targets]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Excluding targets using a list —&gt; nmap [targets] –excludefile [list.txt]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Perform an aggressive scan —&gt; nmap -A [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Scan an IPv6 target —&gt; nmap -6 [target]</li>
+<p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
+<p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Discovery Options</span></p>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Perform a ping scan only —&gt; nmap -sP [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Don’t ping —&gt; nmap -PN [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">TCP SYN Ping —&gt; nmap -PS [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">TCP ACK ping —-&gt; nmap -PA [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">UDP ping —-&gt; nmap -PU [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">SCTP Init Ping —&gt; nmap -PY [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">ICMP echo ping —-&gt; nmap -PE [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">ICMP Timestamp ping —&gt; nmap -PP [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">ICMP address mask ping —&gt; nmap -PM [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">IP protocol ping —-&gt; nmap -PO [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">ARP ping —&gt; nmap -PR [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Traceroute —&gt; nmap –traceroute [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Force reverse DNS resolution —&gt; nmap -R [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Disable reverse DNS resolution —&gt; nmap -n [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Alternative DNS lookup —&gt; nmap –system-dns [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Manually specify DNS servers —&gt; nmap –dns-servers [servers] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Create a host list —-&gt; nmap -sL [targets]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Advanced Scanning Options</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">TCP SYN Scan —&gt; nmap -sS [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">TCP connect scan —-&gt; nmap -sT [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">UDP scan —-&gt; nmap -sU [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">TCP Null scan —-&gt; nmap -sN [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">TCP Fin scan —&gt; nmap -sF [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Xmas scan —-&gt; nmap -sX [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">TCP ACK scan —&gt; nmap -sA [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Custom TCP scan —-&gt; nmap –scanflags [flags] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">IP protocol scan —-&gt; nmap -sO [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Send Raw Ethernet packets —-&gt; nmap –send-eth [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Send IP packets —-&gt; nmap –send-ip [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Port Scanning Options</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Perform a fast scan —&gt; nmap -F [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Scan specific ports —-&gt; nmap -p [ports] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Scan ports by name —-&gt; nmap -p [port name] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Scan ports by protocol —-&gt; nmap -sU -sT -p U:[ports],T:[ports] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Scan all ports —-&gt; nmap -p “*” [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Scan top ports —–&gt; nmap –top-ports [number] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Perform a sequential port scan —-&gt; nmap -r [target]</li>
+<p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px; font-weight:600;"><br /></p>
+<p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Version Detection</span></p>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Operating system detection —-&gt; nmap -O [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Submit TCP/IP Fingerprints —-&gt; http://www.nmap.org/submit/</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Attempt to guess an unknown —-&gt; nmap -O –osscan-guess [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Service version detection —-&gt; nmap -sV [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Troubleshooting version scans —-&gt; nmap -sV –version-trace [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Perform a RPC scan —-&gt; nmap -sR [target]</li>
+<p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px; font-weight:600;"><br /></p>
+<p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Timing Options</span></p>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Timing Templates —-&gt; nmap -T [0-5] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Set the packet TTL —-&gt; nmap –ttl [time] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Minimum of parallel connections —-&gt; nmap –min-parallelism [number] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Maximum of parallel connection —-&gt; nmap –max-parallelism [number] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Minimum host group size —–&gt; nmap –min-hostgroup [number] [targets]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Maximum host group size —-&gt; nmap –max-hostgroup [number] [targets]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Maximum RTT timeout —–&gt; nmap –initial-rtt-timeout [time] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Initial RTT timeout —-&gt; nmap –max-rtt-timeout [TTL] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Maximum retries —-&gt; nmap –max-retries [number] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Host timeout —-&gt; nmap –host-timeout [time] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Minimum Scan delay —-&gt; nmap –scan-delay [time] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Maximum scan delay —-&gt; nmap –max-scan-delay [time] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Minimum packet rate —-&gt; nmap –min-rate [number] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Maximum packet rate —-&gt; nmap –max-rate [number] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Defeat reset rate limits —-&gt; nmap –defeat-rst-ratelimit [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Firewall Evasion Techniques</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Fragment packets —-&gt; nmap -f [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Specify a specific MTU —-&gt; nmap –mtu [MTU] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Use a decoy —-&gt; nmap -D RND: [number] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Idle zombie scan —&gt; nmap -sI [zombie] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Manually specify a source port —-&gt; nmap –source-port [port] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Append random data —-&gt; nmap –data-length [size] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Randomize target scan order —-&gt; nmap –randomize-hosts [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Spoof MAC Address —-&gt; nmap –spoof-mac [MAC|0|vendor] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Send bad checksums —-&gt; nmap –badsum [target]</li>
+<p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
+<p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Output Options</span></p>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Save output to a text file —-&gt; nmap -oN [scan.txt] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Save output to a xml file —&gt; nmap -oX [scan.xml] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Grepable output —-&gt; nmap -oG [scan.txt] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Output all supported file types —-&gt; nmap -oA [path/filename] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Periodically display statistics —-&gt; nmap –stats-every [time] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">133t output —-&gt; nmap -oS [scan.txt] [target]</li>
+<p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><br /></p>
+<p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Troubleshooting and debugging</span></p>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Help —&gt; nmap -h</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Display Nmap version —-&gt; nmap -V</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Verbose output —-&gt; nmap -v [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Debugging —-&gt; nmap -d [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Display port state reason —-&gt; nmap –reason [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Only display open ports —-&gt; nmap –open [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Trace packets —&gt; nmap –packet-trace [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Display host networking —&gt; nmap –iflist</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Specify a network interface —&gt; nmap -e [interface] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Nmap Scripting Engine</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Execute individual scripts —&gt; nmap –script [script.nse] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Execute multiple scripts —-&gt; nmap –script [expression] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Script categories —-&gt; all, auth, default, discovery, external, intrusive, malware, safe, vuln</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Execute scripts by category —-&gt; nmap –script [category] [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Execute multiple scripts categories —-&gt; nmap –script [category1,category2, etc]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Troubleshoot scripts —-&gt; nmap –script [script] –script-trace [target]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Update the script database —-&gt; nmap –script-updatedb</li>
+<p align="justify" style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px; font-weight:600;"><br /></p>
+<p align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;"><span style=" font-weight:600;">Ndiff</span></p>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Comparison using Ndiff —-&gt; ndiff [scan1.xml] [scan2.xml]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">Ndiff verbose mode —-&gt; ndiff -v [scan1.xml] [scan2.xml]</li>
+<li style="" align="justify" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:36px;">XML output mode —-&gt; ndiff –xml [scan1.xm] [scan2.xml]</li></ul></body></html>

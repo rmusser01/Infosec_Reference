@@ -1,3 +1,0 @@
-Bypassing WAFs
-
-http://www.nethemba.com/bypassing-waf.pdf

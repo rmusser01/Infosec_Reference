@@ -1,6 +1,0 @@
-Recon/Enum To DO
-
-Add sample/simple checklists/links to
-
-https://github.com/mubix/netview
-Netview is a enumeration tool. It uses (with the -d) the current domain or a specified domain (with the -d domain) to enumerate hosts

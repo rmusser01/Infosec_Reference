@@ -1,8 +1,0 @@
-Android Forensics
-
-
-
-
-
-http://opensecuritytraining.info/AndroidForensics.html
-This class serves as a foundation for mobile digital forensics, forensics of Android operating systems, and penetration testing of Android applications. 

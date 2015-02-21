@@ -12,12 +12,12 @@ http://papers.ssrn.com/sol3/papers.cfm?abstract_id=998565&
 
 
 ###Talks
-Because Jail is for WUFTPD - Legendary talk, a must watch.
-https://www.youtube.com/watch?v=9XaYdCdwiWU
-His blog: http://grugq.tumblr.com/
+[Because Jail is for WUFTPD](https://www.youtube.com/watch?v=9XaYdCdwiWU)
+ * Legendary talk, a must watch.
+* [His blog](http://grugq.tumblr.com/)
 
 
-
+(COMSEC: Beyond encryption](https://grugq.github.io/presentations/COMSEC%20beyond%20encryption.pdf)
 
 
 ###Tools

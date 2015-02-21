@@ -8,6 +8,10 @@ Information Security Reference That Doesn't Suck
 * End goal is for it to be a rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches within infosec, or as a reference/recall method for other things.
 
 
+#####This page
+* This page has links to *some* of the content on here. This is still very much a  WIP. More content is within the Draft folder. If you want to contribute, feel free.
+
+
 ##Page Title
 
 ###subject title

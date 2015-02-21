@@ -43,6 +43,8 @@ Information Security Reference That Doesn't Suck
 
 [Disclosure](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Disclosure.md) - Some historical things
 
+[Exploit Dev](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Draft/Exploit%20Development) - Structure/cleanup/clear out
+
 [Forensics](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Forensics.md) - Integrate from cull list; More anti-forensics; more resources
 
 [Fuzzing](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Fuzzing.md) - Educational stuff; more writeups
@@ -58,6 +60,8 @@ Information Security Reference That Doesn't Suck
 [Malware](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Malware.md) - Structure, clean out cull
 
 [Network Attacks and Defense](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Network%20Attacks%20%26%20Defenses.md) - Structure, clean out cull, add more
+
+[Network Recon](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Draft/Network%20Reconnaissance%26Enumeration) - More in general, more finesse
 
 [Network Security Monitoring](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Network%20Security%20Monitoring.md) - more in general
 

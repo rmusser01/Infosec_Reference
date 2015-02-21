@@ -47,7 +47,7 @@ Google Hacking - Completely empty
 
 Honeypots - More
 
-Lockpicking - needs fucks
+Lockpicking - needs more
 
 Logging - More for all
 

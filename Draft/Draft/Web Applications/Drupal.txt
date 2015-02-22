@@ -1,0 +1,54 @@
+Drupal
+
+
+
+
+Check changelog file, sometimes they add things in/shows current version
+
+
+
+
+
+Gain Admin Access Drupal - has to have drush installed
+“cd  [drupal dir]”
+“drush uli”
+Copy/Paste URL, change password, bam! Admin.
+
+
+Applogging
+Watchdog - built in logging
+Syslog - Linux sys logging
+
+
+
+User Enumeration:
+No brute force protection on Version 6
+Noisy:
+Abuse Password reset feature, tells you valid user creds.
+Version 7 has brute force protection
+Check Default 
+
+Less Noisy:
+Check posts authors
+
+
+Drupal 6 doesn’t use httponly flag
+
+
+Files to look for:
+mysite/sites/default/settings.php - Creds
+
+Check to see:
+Masquerade plugin present - allows you to change user to any user.
+Devel Plugin present - Shows db info on ever page; allows for php code execution
+
+
+Drupal Attack Scripts:
+https://github.com/gfoss/attacking-drupal
+Set of brute force scripts and Checklist
+
+Drupal Security Checklist
+https://github.com/gfoss/attacking-drupal/blob/master/presentation/drupal-security-checklist.pdf
+
+
+

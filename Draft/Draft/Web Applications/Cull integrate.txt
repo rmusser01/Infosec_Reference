@@ -1,0 +1,67 @@
+[Go Buster](https://github.com/OJ/gobuster)
+* Directory/file busting tool written in Go 
+* Recursive, CLI-based, no java runtime
+
+
+[Relative Path Overwrite Explanation/Writeup](http://www.thespanner.co.uk/2014/03/21/rpo/)
+* RPO (Relative Path Overwrite) is a technique to take advantage of relative URLs by overwriting their target file. To understand the technique we must first look into the differences between relative and absolute URLs. An absolute URL is basically the full URL for a destination address including the protocol and domain name whereas a relative URL doesn’t specify a domain or protocol and uses the existing destination to determine the protocol and domain.
+
+
+[lan-js](https://github.com/jvennix-r7/lan-js)
+* Probe LAN devices from a web browser.
+
+
+
+[MozillaRecovery](https://github.com/gtfy/MozillaRecovery)
+* Recovers the master password of key3.db files, i.e. Thunderbird, Firefox
+
+
+[Javascript De-Obfuscation Tools Redux](http://www.kahusecurity.com/2014/javascript-deobfuscation-tools-redux/)
+* Back in 2011, I took a look at several tools used to deobfuscate Javascript. This time around I will use several popular automated and semi-automated/manual tools to see how they would fare against today’s obfuscated scripts with the least amount of intervention.
+
+
+
+
+Intro to Content Security Policy
+http://www.html5rocks.com/en/tutorials/security/content-security-policy/
+
+Securing Web Application Technologies Checklist
+http://www.securingthehuman.org/developer/swat
+
+Client Identification Mechanisms
+http://www.chromium.org/Home/chromium-security/client-identification-mechanisms
+
+
+
+RAWR - Rapid Assessment of Web Resources	
+https://bitbucket.org/al14s/rawr/wiki/Home
+
+COWL: A Confinement System for the Web
+robust JavaScript confinement system for modern web browsers. COWL introduces label-based mandatory access control to browsing contexts (pages, iframes, etc.) in a way that is fully backward-compatible with legacy web content. 
+http://cowl.ws/
+http://www.scs.stanford.edu/~deian/pubs/stefan:2014:protecting.pdf
+
+
+
+List of modules in Co2: https://code.google.com/p/burp-co2/wiki/Co2Modules
+Help page: http://co2.professionallyevil.com/help.php
+A collection of enhancements for Portswigger's popuplar Burp Suite web penetration testing tool. 
+https://code.google.com/p/burp-co2/
+Co2 includes several useful enhancements bundled into a single Java-based Burp Extension. The extension has it's own configuration tab with multiple sub-tabs (for each Co2 module). Modules that interact with other Burp tools can be disabled from within the Co2 configuration tab, so there is no need to disable the entire extension when using just part of the functionality. 
+
+
+
+OWASP Mantra
+http://www.getmantra.com/hackery/
+“OWASP Mantra is a powerful set of tools to make the attacker's task easier”
+
+
+
+
+
+
+
+
+Bradamsa
+https://github.com/ikkisoft/bradamsa
+Burp Suite extension to generate Intruder payloads using Radamsa 

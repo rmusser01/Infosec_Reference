@@ -65,8 +65,6 @@ Information Security Reference That Doesn't Suck
 
 [Network Security Monitoring](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Network%20Security%20Monitoring.md) - more in general
 
-Recon - Structure/more/cull
-
 [OSINT](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Open%20Source%20Intelligence.md) - Structure/clean out cull
 
 [Passwords](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Password%20Bruting%20and%20Hashcracking.md) - Clean out cull/structure/more

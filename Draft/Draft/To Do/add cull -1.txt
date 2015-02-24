@@ -7,7 +7,38 @@ https://github.com/isislab/Project-Ideas/wiki/Application-Security
 
 
 
+[ropshell](http://ropshell.com/)
+* ropshell is a free online service for generating and searching for Return-Oriented-Programming (ROP) gadgets.
+
 [Thousands of MongoDB installations on the net unprotected](http://cispa.saarland/wp-content/uploads/2015/02/MongoDB_documentation.pdf)
+
+
+http://www.slideshare.net/mubix/windows-attacks-at-is-the-new-black-26665607
+
+Exploitation writeup
+https://barrebas.github.io/blog/2015/02/22/maximum-overkill-two-from-format-string-vulnerability-to-remote-code-execution/ 
+
+http://arxiv.org/abs/1502.03182
+ PowerSpy: Location Tracking using Mobile Device Power Analysis
+
+
+List of hacker sites/get together sites
+http://link-base.org/
+
+
+
+
+
+
+
+
+[You and Your Research - Haroon Meer](https://www.youtube.com/watch?v=JoVx_-bM8Tg)
+* What does it take to do quality research? What stops you from being a one-hit wonder? Is there an age limit to productive hackery? What are the key ingredients needed and how can you up your chances of doing great work? In a talk unabashedly stolen from far greater minds we hope to answer these questions and discuss their repercussions.
+
+
+[A talk about (info-sec) talks - Haroon Meer ](https://www.youtube.com/watch?v=BlVjdUkrSFY)
+* Last year there was an Information Security conference taking place for almost every day of the year. This translates to about 15 information security talks per day, every day. The question is, is this a bad thing? Even niche areas of the info-sec landscape have their own dedicated conference these days. Is this a good thing?
+
 
 
 

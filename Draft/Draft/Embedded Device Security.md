@@ -14,7 +14,7 @@ Embedded Device Security
 
 
 
-
+[Firmware Forensics: Diffs, Timelines, ELFs and Backdoors](http://w00tsec.blogspot.com/2015/02/firmware-forensics-diffs-timelines-elfs.html)
 
 
 

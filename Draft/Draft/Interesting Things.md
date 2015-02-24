@@ -7,7 +7,25 @@ Interesting Things
 
 
 
+
+
+
 CULL
+
+
+
+
+What is FreeIPA?
+FreeIPA is an integrated security information management solution combining Linux (Fedora), 389 Directory Server, MIT Kerberos, NTP, DNS, Dogtag (Certificate System). It consists of a web interface and command-line administration tools. 
+FreeIPA is an integrated Identity and Authentication solution for Linux/UNIX networked environments. A FreeIPA server provides centralized authentication, authorization and account information by storing data about user, groups, hosts and other objects necessary to manage the security aspects of a network of computers. 
+
+
+ZeroMQ
+http://zguide.zeromq.org/page:all
+
+
+
+
 
 [The Geometry of Innocent Flesh on the Bone: Return-into-libc without Function Calls (on the x86)](https://cseweb.ucsd.edu/~hovav/dist/geometry.pdf)
 * We present new techniques that allow a return-into-libc attack to be mounted on
@@ -54,10 +72,11 @@ http://www.regular-expressions.info/creditcard.html
 )$
 
 
-[List of low-level attacks/persistence techniques.  HIGHLY RECOMMENDED!](http://timeglider.com/timeline/5ca2daa6078caaf4)
+[Timeline/List of low-level attacks/persistence techniques.  HIGHLY RECOMMENDED!](http://timeglider.com/timeline/5ca2daa6078caaf4)
 
+[Timeline of Software/Timing Attestation papers](http://timeglider.com/timeline/be11d685a7c4374d)
 
-
+[Why your threat model is probably wrong - Cyberwar](http://blog.thinkst.com/p/cyberwar-why-your-threat-model-is.html)
 
 
 QR Code interesting

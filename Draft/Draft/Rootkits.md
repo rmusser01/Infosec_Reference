@@ -2,6 +2,13 @@ Rootkits
 
 
 
+
+
+[Shadow Walker - Raising the Bar for Rootkit detection - BH 2005](https://www.blackhat.com/presentations/bh-jp-05/bh-jp-05-sparks-butler.pdf)
+
+
+
+
 Suterusu:
 https://github.com/mncoppola/suterusu
 An LKM rootkit targeting Linux 2.6/3.x on x86(_64), and ARM 

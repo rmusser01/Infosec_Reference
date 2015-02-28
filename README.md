@@ -11,7 +11,7 @@ Information Security Reference That Doesn't Suck
 #####This page
 * This page has links to *some* of the content on here. This is still very much a  WIP. More content is within the Draft folder. If you want to contribute, feel free.
 
-[Attacking Android](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Attacking%20Android.md) - Android - Pretty good
+[Attacking Android](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Attacking%20Android.md) - Looking good
 
 [Appsec](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/AppSec.md) - More
 
@@ -54,7 +54,7 @@ Information Security Reference That Doesn't Suck
 
 [Network Security Monitoring](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Network%20Security%20Monitoring.md) - more in general
 
-[OSINT](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Open%20Source%20Intelligence.md) - Structure/clean out cull
+[OSINT](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Open%20Source%20Intelligence.md) - Looking better - Need to clear cull folder
 
 [Passwords](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Password%20Bruting%20and%20Hashcracking.md) - Clean out cull/structure/more
 

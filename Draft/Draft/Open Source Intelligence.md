@@ -5,7 +5,7 @@ Open Source Intelligence
 
 
 
-Cull
+###Cull
 
 
 [Exploring the Github Firehose](http://blog.scalyr.com/2013/10/exploring-the-github-firehose/)
@@ -35,12 +35,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 * A library that will connect to github and emit events from the Github Event API in near-real-time
 
 
-
-
-
-
-
-Articles/Writeups
+##Articles/Writeups
 
 
 [Some blog posts describing/bringing you up to speed on OSINT by krypt3ia](http://krypt3ia.wordpress.com/2012/01/11/the-subtle-art-of-osint/)
@@ -52,7 +47,7 @@ Articles/Writeups
 
 
 
-Videos
+##Videos
 
 [Cognitive Bias and Critical Thinking in Open Source Intelligence - Defcamp 2014](https://www.youtube.com/watch?v=pVAM21UERLU&index=24&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
 
@@ -61,7 +56,7 @@ Videos
 
 
 
-OSINT Tools
+##OSINT Tools
 
 Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&user=Mediaquest
 
@@ -73,13 +68,13 @@ Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&use
 * [Blog post](http://michenriksen.com/blog/gitrob-putting-the-open-source-in-osint/)
 * Gitrob is a command line tool that can help organizations and security professionals find such sensitive information. The tool will iterate over all public organization and member repositories and match filenames against a range of patterns for files that typically contain sensitive or dangerous information.
 	[SearchDiggity](http://www.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/#searchdiggity)
-* Description: SearchDiggity 3.1 is the primary attack tool of the Google Hacking Diggity Project. It is Bishop Fox’s MS Windows GUI application that serves as a front-end to the most recent versions of our Diggity tools: GoogleDiggity, BingDiggit, Bing LinkFromDomainDiggity, CodeSearchDiggity, DLPDiggity, FlashDiggity, MalwareDiggity, PortScanDiggity, SHODANDiggity, BingBinaryMalwareSearch, NotInMyBackYard Diggity
+* Description: SearchDiggity 3.1 is the primary attack tool of the Google Hacking Diggity Project. It is Bishop Foxâ€™s MS Windows GUI application that serves as a front-end to the most recent versions of our Diggity tools: GoogleDiggity, BingDiggit, Bing LinkFromDomainDiggity, CodeSearchDiggity, DLPDiggity, FlashDiggity, MalwareDiggity, PortScanDiggity, SHODANDiggity, BingBinaryMalwareSearch, NotInMyBackYard Diggity
  
 
 
 
 [Oryon C Portable](http://osintinsight.com/oryon.php)
-* Oryon C Portable is a web browser designed to assist researchers in conducting Open Source Intelligence investigations. Oryon comes with dozens of pre-installed tools and a select set of links cataloged by category – including those that can be found in the OI Shared Resources.
+* Oryon C Portable is a web browser designed to assist researchers in conducting Open Source Intelligence investigations. Oryon comes with dozens of pre-installed tools and a select set of links cataloged by category â€“ including those that can be found in the OI Shared Resources.
 
 
 [Maltego](https://www.paterva.com/web6/products/maltego.php)
@@ -99,7 +94,7 @@ Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&use
 
 
 
-Reference Sites
+##Reference Sites
 
 These are sites that contain information and links to various resources such as search engines or info repositories related to OSINT.
 
@@ -108,7 +103,7 @@ These are sites that contain information and links to various resources such as 
 	
 	
 
-My suggested sites:
+###My suggested sites:
 
 https://sites.google.com/site/greynetwork2/home/osint-resources
 

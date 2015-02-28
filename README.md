@@ -13,7 +13,11 @@ Information Security Reference That Doesn't Suck
 
 [Attacking Android](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Attacking%20Android.md) - Looking good
 
+[Attacking iOS](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Attacking%20iOS.md)
+
 [Appsec](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/AppSec.md) - More
+
+[Building a Pen Test Lab](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Building%20A%20Pentest%20Lab.md)
 
 [Computer Hardware attacks](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Computer%20Hardware%20Attacks.md) - General
 
@@ -25,12 +29,19 @@ Information Security Reference That Doesn't Suck
 
 [Crypto](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Cryptography%20%26%20Encryption.md) - General/form 
 
+[CTFs & Wargames](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/CTFs%20%26%20Wargames.md)
 
 [Darknets](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Darknets.md) - Need more than just reddit
 
 [Data Visualization](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Data%20Visualization.md) - More in general
 
+[Disinformation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Disinformation.md) - Needs more info, bare
+
 [Disclosure](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Disclosure.md) - Some historical things
+
+[Documentation & Reporting](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Documentation%20%26%20Reports.md)
+
+[Embedded Devie Security](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Embedded%20Device%20Security.md)
 
 [Exploit Dev](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Draft/Exploit%20Development) - Structure/cleanup/clear out
 
@@ -38,7 +49,12 @@ Information Security Reference That Doesn't Suck
 
 [Fuzzing](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Fuzzing.md) - Educational stuff; more writeups
 
+[Game Hacking]
+
 [Google Hacking](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Google%20Hacking.md) - Completely empty
+
+[Hardware Hacking](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Hardware%20Hacking%20Teensy-like%20stuff.md)
+
 
 [Honeypots](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Honeypots.md) - More
 
@@ -90,5 +106,5 @@ Sysadmin - Always more
 
 [WebApp](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Draft/Web%20Applications) - Structure/cleanup/clear out cull
 
-[Wireless Networks]( - More info/structure
+[Wireless Networks](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Hardware%20Hacking%20Teensy-like%20stuff.md)- More info/structure
 

@@ -11,7 +11,7 @@ Open Source Intelligence
 [Exploring the Github Firehose](http://blog.scalyr.com/2013/10/exploring-the-github-firehose/)
 
 
-[OSINT Through Sender Policy Framework (SPF) Records](https://community.rapid7.com/community/infosec/blog/2015/02/23/osint-through-sender-policy-framework-spf-records)
+
 
 http://www.getmantra.com/hackery/osint.html
 http://computercrimeinfo.com/cleaningid.html
@@ -43,7 +43,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [Exploring the Github Firehose](http://blog.scalyr.com/2013/10/exploring-the-github-firehose/)
 
-
+[OSINT Through Sender Policy Framework (SPF) Records](https://community.rapid7.com/community/infosec/blog/2015/02/23/osint-through-sender-policy-framework-spf-records)
 
 
 

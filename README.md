@@ -41,7 +41,7 @@ Information Security Reference That Doesn't Suck
 
 [Documentation & Reporting](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Documentation%20%26%20Reports.md)
 
-[Embedded Devie Security](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Embedded%20Device%20Security.md)
+[Embedded Devie Security](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Embedded%20Device%20Security.md) - Combine with Hardware Hacking
 
 [Exploit Dev](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Draft/Exploit%20Development) - Structure/cleanup/clear out
 
@@ -53,7 +53,7 @@ Information Security Reference That Doesn't Suck
 
 [Google Hacking](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Google%20Hacking.md) - Completely empty
 
-[Hardware Hacking](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Hardware%20Hacking%20Teensy-like%20stuff.md)
+[Hardware Hacking](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Hardware%20Hacking%20Teensy-like%20stuff.md) - Combine with Embedded Device
 
 
 [Honeypots](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Honeypots.md) - More

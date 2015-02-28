@@ -16,6 +16,8 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
 
 
+[How to Pull passwords from a memory dump](https://cyberarms.wordpress.com/2011/11/04/memory-forensics-how-to-pull-passwords-from-a-memory-dump/)
+
 [Dumping a Domains worth of passwords using mimikatz](http://carnal0wnage.attackresearch.com/2013/10/dumping-domains-worth-of-passwords-with.html)
 
 

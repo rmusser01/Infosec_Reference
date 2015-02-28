@@ -1,3 +1,9 @@
+Something to pimp: https://sysforensics.org/2015/02/manage-the-dfir-information.html
+
+appleexaminer.com
+
+
+
 Elaborate on packers
 
 http://waleedassar.blogspot.com/
@@ -7,10 +13,6 @@ https://github.com/isislab/Project-Ideas/wiki/Application-Security
 
 
 
-[ropshell](http://ropshell.com/)
-* ropshell is a free online service for generating and searching for Return-Oriented-Programming (ROP) gadgets.
-
-[Thousands of MongoDB installations on the net unprotected](http://cispa.saarland/wp-content/uploads/2015/02/MongoDB_documentation.pdf)
 
 
 http://www.slideshare.net/mubix/windows-attacks-at-is-the-new-black-26665607
@@ -18,26 +20,9 @@ http://www.slideshare.net/mubix/windows-attacks-at-is-the-new-black-26665607
 Exploitation writeup
 https://barrebas.github.io/blog/2015/02/22/maximum-overkill-two-from-format-string-vulnerability-to-remote-code-execution/ 
 
-http://arxiv.org/abs/1502.03182
- PowerSpy: Location Tracking using Mobile Device Power Analysis
+[List of hacker sites](http://link-base.org/)
 
 
-List of hacker sites/get together sites
-http://link-base.org/
-
-
-
-
-
-
-
-
-[You and Your Research - Haroon Meer](https://www.youtube.com/watch?v=JoVx_-bM8Tg)
-* What does it take to do quality research? What stops you from being a one-hit wonder? Is there an age limit to productive hackery? What are the key ingredients needed and how can you up your chances of doing great work? In a talk unabashedly stolen from far greater minds we hope to answer these questions and discuss their repercussions.
-
-
-[A talk about (info-sec) talks - Haroon Meer ](https://www.youtube.com/watch?v=BlVjdUkrSFY)
-* Last year there was an Information Security conference taking place for almost every day of the year. This translates to about 15 information security talks per day, every day. The question is, is this a bad thing? Even niche areas of the info-sec landscape have their own dedicated conference these days. Is this a good thing?
 
 
 
@@ -50,30 +35,13 @@ https://archive.org/details/HardwareStuffForSoftwarePeople
 
 http://opensecuritytraining.info/MalwareDynamicAnalysis_files/MalwareDynamicAnalysis02.pdf
 
-APK File Infection on an Android System - DEFCON 
-https://www.youtube.com/watch?v=HZI1hCdqKjQ&amp;list=PLCDA5DF85AD6B4ABD
-
-
-
-
-Unmasking Careto through Memory Analysis - Andrew Case
-http://2014.video.sector.ca/video/110388398
 
 
 http://www.slideshare.net/grecsl/malware-analysis-101-n00b-to-ninja-in-60-minutes-at-cactuscon-on-april-4-2014
 
 
 
-
 http://cs.gmu.edu/~astavrou/research/PyTrigger_ARES2013.pdf
-
-
-
-PortEX
-PortEx is a Java library for static malware analysis of Portable Executable files. Its focus is on PE malformation robustness, and anomaly detection. PortEx is written in Java and Scala, and targeted at Java applications.
-https://github.com/katjahahn/PortEx
-
-
 
 
 http://sniperforensicstoolkit.squarespace.com/malwaremanagementframework/
@@ -93,10 +61,6 @@ http://www.covert.io/
 
 
 http://www.harmj0y.net/blog/powershell/dumping-a-domains-worth-of-passwords-with-mimikatz-pt-2/
-
-
-[Android-x86 Project - Run Android on Your PC](http://www.android-x86.org/)
-* This is a project to port Android open source project to x86 platform, formerly known as "patch hosting for android x86 support". The original plan is to host different patches for android x86 support from open source community. A few months after we created the project, we found out that we could do much more than just hosting patches. So we decide to create our code base to provide support on different x86 platforms, and set up a git server to host it.
 
 Dare is a project which aims at enabling Android application analysis. The Dare tool retargets Android applications in .dex or .apk format to traditional .class files. These .class files can then be processed by existing Java tools, including decompilers. Thus, Android applications can be analyzed using a vast range of techiques developed for traditional Java applications. 
 
@@ -118,8 +82,7 @@ http://www.codeproject.com/Articles/36907/How-to-develop-your-own-Boot-Loader
 
 http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/
 
-Shellshock bug writeup by lcamtuf
-http://lcamtuf.blogspot.com/2014/10/bash-bug-how-we-finally-cracked.html
+
 https://github.com/Veil-Framework/Veil-PowerView
 
 

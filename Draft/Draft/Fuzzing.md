@@ -8,7 +8,8 @@ Fuzzing
 * Is what it says on the tin.
 
 
-
+[!exploitable Crash Analyzer](https://msecdbg.codeplex.com/)
+* !exploitable (pronounced “bang exploitable”) is a Windows debugging extension (Windbg) that provides automated crash analysis and security risk assessment. The tool first creates hashes to determine the uniqueness of a crash and then assigns an exploitability rating to the crash: Exploitable, Probably Exploitable, Probably Not Exploitable, or Unknown. There is more detailed information about the tool in the following .pptx file or at http://www.microsoft.com/security/msec. Additonally, see the blog post at http://blogs.technet.com/srd/archive/2009/04/08/the-history-of-the-exploitable-crash-analyzer.aspx, or watch the video at http://channel9.msdn.com/posts/PDCNews/Bang-Exploitable-Security-Analyzer/.
 
 
 

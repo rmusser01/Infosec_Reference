@@ -3,109 +3,79 @@ Attacking Android Devices
 
 
 
-#CULL
+####CULL
 
-####[Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
-[APKinpsector](https://github.com/honeynet/apkinspector/)
-* APKinspector is a powerful GUI tool for analysts to analyze the Android applications. 
+ [Android-x86 Project - Run Android on Your PC](http://www.android-x86.org/)
+* This is a project to port Android open source project to x86 platform, formerly known as "patch hosting for android x86 support". The original plan is to host different patches for android x86 support from open source community. A few months after we created the project, we found out that we could do much more than just hosting patches. So we decide to create our code base to provide support on different x86 platforms, and set up a git server to host it.
 
 
-[ Inside the Android Play Service's magic OAuth flow ](http://sbktech.blogspot.com/2014/01/inside-android-play-services-magic.html)
-* Owning google accounts on android devices
+
+[Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
+
+
+
+###[List of Android Vulnerabilities](http://androidvulnerabilities.org/all)
+
+
+###[List of Android Exploits](https://github.com/droidsec/droidsec.github.io/wiki/Vuln-Exploit-List)
+
+
+
+##Books
+
+* Android hackers handbook
+
+
+##Android Malware
+
+[Rundown of Android Packers](http://www.fortiguard.com/uploads/general/Area41Public.pdf)
+
+[APK File Infection on an Android System](https://www.youtube.com/watch?v=HZI1hCdqKjQ&amp;list=PLCDA5DF85AD6B4ABD)
+
 [Manifesto](https://github.com/maldroid/manifesto)
 * PoC framework for APK obfuscation, used to demonstrate some of the obfuscation examples from http://maldr0id.blogspot.com. It supports plugins (located in processing directory) that can do different obfuscation techniques. Main gist is that you run manifesto on the APK file and it produces an obfuscated APK file.
 
-[Android Hooker](https://github.com/AndroidHooker/hooker)
-* Hooker is an opensource project for dynamic analyses of Android applications. This project provides various tools and applications that can be use to automaticaly intercept and modify any API calls made by a targeted application.
 
 
-[Dexter](http://dexter.dexlabs.org/accounts/login/?next=/dashboard)
-* Dexter is a static android application analysis tool. 
 
-[android-cluster-toolkit](https://github.com/jduck/android-cluster-toolkit)
-* The Android Cluster Toolkit helps organize and manipulate a collection of Android devices. It was designed to work with a collection of devices connected to the same host machine, either directly or via one or more tiers of powered USB hubs. The tools within can operate on single devices, a selected subset, or all connected devices at once.
+###Security Analysis
 
-[canhazaxs](https://github.com/jduck/canhazaxs)
-* A tool for enumerating the access to entries in the file system of an Android device. 
+
+
+##Device Analysis
 
 [android-cluster-toolkit](https://github.com/jduck/android-cluster-toolkit)
 * The Android Cluster Toolkit helps organize and manipulate a collection of Android devices. It was designed to work with a collection of devices connected to the same host machine, either directly or via one or more tiers of powered USB hubs. The tools within can operate on single devices, a selected subset, or all connected devices at once.
 
-[APK Studio - Android Reverse Engineering](https://apkstudio.codeplex.com/)
-* APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis.
 
 [privmap - android](https://github.com/jduck/privmap)
 * A tool for enumerating the effective privileges of processes on an Android device. 
 
 
+[canhazaxs](https://github.com/jduck/canhazaxs)
+* A tool for enumerating the access to entries in the file system of an Android device. 
+
+
+[Android Device Testing Framework(DTF)](https://github.com/jakev/dtf/tree/v1.0.3)
+* The Android Device Testing Framework ("dtf") is a data collection and analysis framework to help individuals answer the question: "Where are the vulnerabilities on this mobile device?" Dtf provides a modular approach and built-in APIs that allows testers to quickly create scripts to interact with their Android devices. The default download of dtf comes with multiple modules that allow testers to obtain information from their Android device, process this information into databases, and then start searching for vulnerabilities (all without requiring root privileges). These modules help you focus on changes made to AOSP components such as applications, frameworks, system services, as well as lower-level components such as binaries, libraries, and device drivers. In addition, you'll be able to analyze new functionality implemented by the OEMs and other parties to find vulnerabilities.
+
+[drozer](https://github.com/mwrlabs/drozer)
+* drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS.
 
 
 
+##Application Analysis
 
-[List of Android Vulnerabilities](http://androidvulnerabilities.org/all)
+[APK Studio - Android Reverse Engineering](https://apkstudio.codeplex.com/)
+* APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis
 
+###Dynamic Analysis
+ 
+[APKinpsector](https://github.com/honeynet/apkinspector/)
+* APKinspector is a powerful GUI tool for analysts to analyze the Android applications.
 
-[List of Android Exploits](https://github.com/droidsec/droidsec.github.io/wiki/Vuln-Exploit-List)
-
-
-
-Books
-Android hackers handbook
-
-
-
-
-
-
-
-
-[Rundown of Android Packers](http://www.fortiguard.com/uploads/general/Area41Public.pdf)
-
-
-
-
-
-
-Security Analysis
-
-Santoku Linux
-
-
-Android Tamer
-http://androidtamer.com/
-Android Tamer is a one stop tool required to perform any kind of operations on Android devices / applications / network
-VM
-
-Android Device Testing Framework(DTF)
-From: https://github.com/jakev/dtf/tree/v1.0.3
-
-The Android Device Testing Framework ("dtf") is a data collection and analysis framework to help individuals answer the question: "Where are the vulnerabilities on this mobile device?" Dtf provides a modular approach and built-in APIs that allows testers to quickly create scripts to interact with their Android devices. The default download of dtf comes with multiple modules that allow testers to obtain information from their Android device, process this information into databases, and then start searching for vulnerabilities (all without requiring root privileges). These modules help you focus on changes made to AOSP components such as applications, frameworks, system services, as well as lower-level components such as binaries, libraries, and device drivers. In addition, you'll be able to analyze new functionality implemented by the OEMs and other parties to find vulnerabilities.
-
-drozer
-From their site: 
-drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS.
-https://github.com/mwrlabs/drozer
-
-
-APK Studio - Android Reverse Engineering
-APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis.
-https://apkstudio.codeplex.com/
-
-Application Analysis
-
-Androguard
-From their site:
-Androguard is mainly a tool written in python to play with: 
-Dex/Odex (Dalvik virtual machine) (.dex) (disassemble, decompilation), 
-APK (Android application) (.apk), 
-Android's binary xml (.xml), 
-Android Resources (.arsc). 
-Androguard is available for Linux/OSX/Windows (python powered).
-https://code.google.com/p/androguard 
-
-Droidmap	
-From their site:
-DroidBox is developed to offer dynamic analysis of Android applications. The following information is shown in the results, generated when analysis is ended: 
+Droidmap](https://code.google.com/p/droidbox/)
+* DroidBox is developed to offer dynamic analysis of Android applications. The following information is shown in the results, generated when analysis is ended: 
 Hashes for the analyzed package 
 Incoming/outgoing network data 
 File read and write operations 
@@ -116,163 +86,40 @@ Cryptography operations performed using Android API
 Listing broadcast receivers 
 Sent SMS and phone calls 
 Additionally, two images are generated visualizing the behavior of the package. One showing the temporal order of the operations and the other one being a treemap that can be used to check similarity between analyzed packages. 
-		https://code.google.com/p/droidbox/
-	
 
-Links:
-Security enhancements in android through its versions
-	www.androidtamer.com
+[Android Hooker](https://github.com/AndroidHooker/hooker)
+* Hooker is an opensource project for dynamic analyses of Android applications. This project provides various tools and applications that can be use to automaticaly intercept and modify any API calls made by a targeted application.
 
+[Android-SSL-TrustKiller](https://github.com/iSECPartners/Android-SSL-TrustKiller)
+* Blackbox tool to bypass SSL certificate pinning for most applications running on a device.
 
-Attack Platforms
-
-drozer
-From their site: 
-drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS.
-https://github.com/mwrlabs/drozer
+[JustTrustMe - Cert Pinning using Xposed](https://github.com/fuzion24/justtrustme)
+* An xposed module that disables SSL certificate checking. This is useful for auditing an appplication which does certificate pinning. You can read about the practice of cert pinning here(1). There also exists a nice framework built by @moxie to aid in pinning certs in your app: certificate pinning(2). 
+[1](https://viaforensics.com/resources/reports/best-practices-ios-android-secure-mobile-development/41-certificate-pinning/)
+[2](https://github.com/moxie0/AndroidPinning)
 
 
 
+###Static Analysis
+
+Androguard](https://code.google.com/p/androguard)
+^ Androguard is mainly a tool written in python to play with: 
+Dex/Odex (Dalvik virtual machine) (.dex) (disassemble, decompilation), 
+APK (Android application) (.apk), 
+Android's binary xml (.xml), 
+Android Resources (.arsc). 
+^ Androguard is available for Linux/OSX/Windows (python powered).
+[Dexter](http://dexter.dexlabs.org/accounts/login/?next=/dashboard)
+* Dexter is a static android application analysis tool.	
 
 
+##Attack Platforms
 
+[drozer](https://github.com/mwrlabs/drozer)
+* drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS.
 
-
-Notes:
-
-
-Defeating the bootloader
-(HTC Devices)
--secuflag - security flag in radio firmware - modify radio
-
--gold card - specially formatted MicroSD card that can bypass carrier id check when flashing roms
-
--white card - special sim card used to bypass bootsec
-     Emulate white card with hardware, combine with gold card to enter diagnostics and clear S-ON
-
-
-White card not needd for cdma
-
-Once S-OFF, can RAM load a custom boot iamge
-
-Technique wipes most devices, but not all
-
-Try it yourself: XTC clip
-
-
-Forensics boot image
-
--Start early in the boot chain before the main system loads
--Provide ADB root shell over USB
--Do not mount anything, including cache to prevent any writes
--Devices with raw NAND flash and wear leveling implemented in software(YAFFS2) can be prevented from overwriting deleted data
-
-Build boot image
-
-upload adbd, busybox, nanddump to /sbin
-default.prop (enable root shell, ro.secure=0)
-init.rc (do not mount partitions, just start adb)
-
-Flash and RAM load
-
-Samsung
--Dump partitions using ODIN(maybe. probably not)
--Flash with ODIN or HEIMDALL
-     heimdall flash --recovery recovery.bin
-     heimdall flash --kernel zImage
-HTC
--fastboot boot recovery.img (Ram loading)
--fastboot flash recovery recovery.img (flash partition)
-
-Motorola
--sbf_flash image name.sbf (make sure it only contains recovery)
-
-JTAG
--Flasher Box
-     -ORT
-     -RiffBox
-     -Medusa Box
--Allows you to dump nandflash directly
-
-
-Some devices have debug access via serial cables
--Use a Bus Pirate and MicroUSB breakout board
-     -set bus pirate to 115200 bps, 8-N-1
-     -Output type is normal, not open drain
-     -Plug in device to MicroUSB and you will see it boot the Primitive Boot Loader followed by the Secondary Boot Loader
-     -Hold down enter key on terminal while plugging in device to stop SBL from booting and get to the SBL prompt
-
-Crack Pin/Password
--Salt - stored in /data/data/com.android.providers.settings/databases/settings.db
-
-     -SELECT * FROM secure WHERE name = 'lockscreen.password_salt'
-
--Pin/Password
-     -/data/system/password.key
-     -Salted SHA1 of password concatenated with salted MD5
-
--Calculate the value of the salt in lowercase hex with no padding
-$python -c 'print '%x' % salt_number_here'
-
--Copy the last 32 bytes of password.key(MD5 hash in hex), add a colon and then add the salt
-
--Crack with software such as oclHashcat
-
-Android Encryption:
-Implemented differently by manufacturers
-
--Encrypted Master key + salt stored in footer
--footer stored at end of partition or in a footer file on another partition or as a partition itself
--Image device and locate footer + encrypted user data partition
-
--Parse footer
--Locate Salt/master key
--Run a password guess through PBKDF2 with salt, use resulting key and IV to decrypt master key to decrypt first sector of encrypted image, if password is correct, plaintext revealed
-
--Cracking PINs takes seconds. Passwords are usually short or follow patterns due to being the same as the lock screen password
-
-Evil maid attack
--Load app onto system partition, wait for user to boot phone, get remote access to decrypted user data
--Rootkits - compile kernel module
--Evil usb charger
-
-
-Desperate Techniques
--Hard reset - some devices prior to 3.0 don't wipe data properly
--Chip-off - de-solder NAND chips
--Screen Smudges
-
-More Techniques
--Custom update.zip - can you get one signed? stock needs sig
--Race condition on updates via SD cards
--Own a CA? MITM connetion, push app, update/exploit
--Entry via Google Play, if credentials cached on desktop
-     -Screen Lock bypass - Doesn't work on 4.0 ->
-
-Santoku Linux
--Free/open bootable linux distro
--project is collab with pros
--Mobile Forensics
--Mobile App Sec Testing
--Mobile Malware Analysis
-
-
-
-
-
-
-##Securing Your Android Device
-
-
-
-
-[Android (In)Security - Defcamp 2014](https://www.youtube.com/watch?v=2aeV1JXYvuQ&index=23&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
-* Good video on Android Security
-
-
-
-[Android Forensics Class - Free](http://opensecuritytraining.info/AndroidForensics.html)
-* This class serves as a foundation for mobile digital forensics, forensics of Android operating systems, and penetration testing of Android applications. 
+[Android Tamer](http://androidtamer.com/)
+* Android Tamer is a one stop tool required to perform any kind of operations on Android devices / applications / network VM
 
 
 ###Hardening Guides
@@ -289,7 +136,7 @@ Aside from a handful of binary blobs to manage the device firmware and graphics 
 	
 
 
-###Applications
+####Applications
 
 Firewall
 	* [Android Firewall(Requires Root)](https://play.google.com/store/apps/details?id=com.jtschohl.androidfirewall&hl=en)
@@ -299,30 +146,30 @@ Xprivacy - The Ultimate Android Privacy Manager(Requires Root
 	* [Github](https://github.com/M66B/XPrivacy)
 	* [Google Play](https://play.google.com/store/apps/details?id=biz.bokhorst.xprivacy.installer&hl=en)
 
-Backups
-	Titanium Backup
-		https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup
+####Backups
+[Titanium Backup](https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup)
 Personal favorite for making backups. Backups are stored locally or automatically to various cloud services.
-	Helium Backup(Root Not Required)
-		https://play.google.com/store/apps/details?id=com.koushikdutta.backup&hl=en
-		Backs up data locally or to various cloud services. Local client available for backups directly to PC.
+[Helium Backup(Root Not Required)](https://play.google.com/store/apps/details?id=com.koushikdutta.backup&hl=en)
+	* Backs up data locally or to various cloud services. Local client available for backups directly to PC.
 
-Analyzing the Attack Surface of your device
-
-Resources
-
-
-
-Encryption
+###Encryption
 Check the Encryption section of the overall guide for more information.
 
 
+##Write-ups and Links
 
+[ Inside the Android Play Service's magic OAuth flow ](http://sbktech.blogspot.com/2014/01/inside-android-play-services-magic.html)
+* Owning google accounts on android devices
 
+[Security enhancements in android through its versions](www.androidtamer.com)
 
+##Securing Your Android Device
 
+[Android (In)Security - Defcamp 2014](https://www.youtube.com/watch?v=2aeV1JXYvuQ&index=23&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
+* Good video on Android Security
 
-
+[Android Forensics Class - Free](http://opensecuritytraining.info/AndroidForensics.html)
+* This class serves as a foundation for mobile digital forensics, forensics of Android operating systems, and penetration testing of Android applications. 
 
 
 ###Interesting Android Papers
@@ -351,8 +198,7 @@ Check the Encryption section of the overall guide for more information.
 
 [Post-Mortem Memory Analysis of Cold-Booted Android Devices](http://www.homac.de/publications/Post-Mortem-Memory-Analysis-of-Cold-Booted-Android-Devices.pdf)
 
-[Upgrading Your Android, Elevating My Malware:
-Privilege Escalation Through Mobile OS Updating](http://www.informatics.indiana.edu/xw7/papers/privilegescalationthroughandroidupdating.pdf)
+[Upgrading Your Android, Elevating My Malware: Privilege Escalation Through Mobile OS Updating](http://www.informatics.indiana.edu/xw7/papers/privilegescalationthroughandroidupdating.pdf)
 
 
 (Exploring Android KitKat Runtime](http://www.haxpo.nl/wp-content/uploads/2014/02/D1T2-State-of-the-Art-Exploring-the-New-Android-KitKat-Runtime.pdf)
@@ -372,8 +218,7 @@ Privilege Escalation Through Mobile OS Updating](http://www.informatics.indiana.
 
 [Detecting privacy leaks in Android Apps](https://publications.uni.lu/bitstream/10993/16916/1/ESSoS-DS2014-Li.pdf)
 
-[From Zygote to Morula:
-Fortifying Weakened ASLR on Android](http://www.cc.gatech.edu/~blee303/paper/morula.pdf)
+[From Zygote to Morula: Fortifying Weakened ASLR on Android](http://www.cc.gatech.edu/~blee303/paper/morula.pdf)
 
 [Apposcopy: Semantics-Based Detection of Android Malware through Static Analysis](http://www.cs.utexas.edu/~yufeng/papers/fse14.pdf)
 
@@ -394,12 +239,14 @@ Fortifying Weakened ASLR on Android](http://www.cc.gatech.edu/~blee303/paper/mor
 [Xprivacy Android](https://github.com/M66B/XPrivacy#description)
 
 
-[An Empirical Study of Cryptographic Misuse
-in Android Applications](https://www.cs.ucsb.edu/~chris/research/doc/ccs13_cryptolint.pdf)
+[An Empirical Study of Cryptographic Misuse in Android Applications](https://www.cs.ucsb.edu/~chris/research/doc/ccs13_cryptolint.pdf)
+
+[PowerSpy: Location Tracking using Mobile Device Power Analysis]http://arxiv.org/abs/1502.03182)
+
+[Obfuscation in Android malware, and how to fight back](https://www.virusbtn.com/virusbulletin/archive/2014/07/vb201407-Android-obfuscation)
 
 
-Obfuscation in Android malware, and how to fight back
-https://www.virusbtn.com/virusbulletin/archive/2014/07/vb201407-Android-obfuscation
+
 
 
 ###Educational Material

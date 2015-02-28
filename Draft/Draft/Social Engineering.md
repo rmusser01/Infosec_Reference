@@ -5,7 +5,7 @@ Social Engineering
 
 
 
-
+ Influence: Science and Practice (5th Edition) Paperback – August 8, 2008 - Robert B. Cialdini
 
 [DiSC Overview](https://www.discprofile.com/what-is-disc/overview/)
 * DiSC is a personal assessment tool used to improve work productivity, teamwork and communication. DiSC is non-judgmental and helps people discuss their behavioral differences.

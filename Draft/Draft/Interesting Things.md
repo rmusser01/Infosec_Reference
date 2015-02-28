@@ -3,35 +3,22 @@ Interesting Things
 [Coming War on General Computation](https://www.youtube.com/watch?v=HUEvRyemKSg)
 
 
-
-
-
-
-
-
-
 CULL
 
+[Postcards from a Post-XSS World - Michael Zalewski](http://lcamtuf.coredump.cx/postxss/#dangling-markup-injection)
 
+[FreeIPA]()
+* FreeIPA is an integrated security information management solution combining Linux (Fedora), 389 Directory Server, MIT Kerberos, NTP, DNS, Dogtag (Certificate System). It consists of a web interface and command-line administration tools. FreeIPA is an integrated Identity and Authentication solution for Linux/UNIX networked environments. A FreeIPA server provides centralized authentication, authorization and account information by storing data about user, groups, hosts and other objects necessary to manage the security aspects of a network of computers. 
 
-
-What is FreeIPA?
-FreeIPA is an integrated security information management solution combining Linux (Fedora), 389 Directory Server, MIT Kerberos, NTP, DNS, Dogtag (Certificate System). It consists of a web interface and command-line administration tools. 
-FreeIPA is an integrated Identity and Authentication solution for Linux/UNIX networked environments. A FreeIPA server provides centralized authentication, authorization and account information by storing data about user, groups, hosts and other objects necessary to manage the security aspects of a network of computers. 
-
-
-ZeroMQ
-http://zguide.zeromq.org/page:all
-
-
-
-
+[ZeroMQ](http://zguide.zeromq.org/page:all)
 
 [The Geometry of Innocent Flesh on the Bone: Return-into-libc without Function Calls (on the x86)](https://cseweb.ucsd.edu/~hovav/dist/geometry.pdf)
 * We present new techniques that allow a return-into-libc attack to be mounted on
 x86 executables that calls no functions at all. Our attack combines a large number of short instruction sequences to build gadgets that allow arbitrary computation. We show how to discover such instruction sequences by means of static analysis. We make use, in an essential way, of the
 properties of the x86 instruction set.
 
+
+[Thousands of MongoDB installations on the net unprotected](http://cispa.saarland/wp-content/uploads/2015/02/MongoDB_documentation.pdf)
 
 
 http://www.securitywizardry.com/radar.htm
@@ -42,22 +29,38 @@ http://www.securitywizardry.com/radar.htm
 
 
 
+
+
+[You and Your Research - Haroon Meer](https://www.youtube.com/watch?v=JoVx_-bM8Tg)
+* What does it take to do quality research? What stops you from being a one-hit wonder? Is there an age limit to productive hackery? What are the key ingredients needed and how can you up your chances of doing great work? In a talk unabashedly stolen from far greater minds we hope to answer these questions and discuss their repercussions.
+
+
+[A talk about (info-sec) talks - Haroon Meer ](https://www.youtube.com/watch?v=BlVjdUkrSFY)
+* Last year there was an Information Security conference taking place for almost every day of the year. This translates to about 15 information security talks per day, every day. The question is, is this a bad thing? Even niche areas of the info-sec landscape have their own dedicated conference these days. Is this a good thing?
+
+
 [Paypals War on Terror - Chaos Communication Congress 31](http://ccc2.mirror.xt0.org/congress/2014/webm-hd/31c3-6377-en-de-Paypals_War_on_Terror_webm-hd.webm)
 
+
 [CompSci in the DPRK](http://us2.1und1.c3voc.de/congress/2014/webm-hd/31c3-6253-en-de-Computer_Science_in_the_DPRK_webm-hd.webm)
+
 
 [Linux Kernel Explanation/Walk through](http://www.faqs.org/docs/Linux-HOWTO/KernelAnalysis-HOWTO.html)
 
 [Underhanded C contest](http://underhanded-c.org/)
+
 [Website detailing various crypto laws around world](http://www.cryptolaw.org/)
 
 
 [Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
 
+
 [They clapped](http://www.econlib.org/library/Columns/y2007/Mungergouging.html)
 
 [Code Execution In Spite Of BitLocker](https://cryptoservices.github.io/fde/2014/12/08/code-execution-in-spite-of-bitlocker.html)
 
+
+[OSINT Through Sender Policy Framework Records](https://community.rapid7.com/community/infosec/blog/2015/02/23/osint-through-sender-policy-framework-spf-records)
 
 
 

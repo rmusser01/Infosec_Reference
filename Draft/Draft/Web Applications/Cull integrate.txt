@@ -3,6 +3,17 @@
 * Recursive, CLI-based, no java runtime
 
 
+
+
+[DOM Clobbering Attack](http://www.thespanner.co.uk/2013/05/16/dom-clobbering/)
+
+
+
+[Postcards from a Post-XSS World - Michael Zalewski](http://lcamtuf.coredump.cx/postxss/#dangling-markup-injection)
+
+
+
+
 [Relative Path Overwrite Explanation/Writeup](http://www.thespanner.co.uk/2014/03/21/rpo/)
 * RPO (Relative Path Overwrite) is a technique to take advantage of relative URLs by overwriting their target file. To understand the technique we must first look into the differences between relative and absolute URLs. An absolute URL is basically the full URL for a destination address including the protocol and domain name whereas a relative URL doesn’t specify a domain or protocol and uses the existing destination to determine the protocol and domain.
 

@@ -4,7 +4,7 @@ Cryptography
 [Website detailing various crypto laws around world](http://www.cryptolaw.org/)
 
 
-
+[Poor Man's Guide to Troubleshooting TLS Failures](http://blogs.technet.com/b/tspring/archive/2015/02/23/poor-man-s-guide-to-troubleshooting-tls-failures.aspx)
 
 
 [Encrypting Strings in Android: Let's make better mistakes](http://tozny.com/blog/encrypting-strings-in-android-lets-make-better-mistakes/)

@@ -1,0 +1,41 @@
+#Security 101
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Shodan Guide
+[Shodan Man page](http://www.shodanhq.com/help)
+[Shodan Filter Reference](http://www.shodanhq.com/help/filters)
+[Shodan FAQ](http://www.shodanhq.com/help/faq)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

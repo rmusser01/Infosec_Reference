@@ -11,18 +11,7 @@ Information Security Reference That Doesn't Suck
 #####This page
 * This page has links to *some* of the content on here. This is still very much a  WIP. More content is within the Draft folder. If you want to contribute, feel free.
 
-
-##Page Title
-
-###subject title
-
-#####Link Title
-
-[Subject]{Link) links are hidden
-
-[Attacking Android](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Attacking%20Android.md)
-* Android - Encryption
-* Android - Analyzing Attack Surface
+[Attacking Android](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Attacking%20Android.md) - Android - Pretty good
 
 [Appsec](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/AppSec.md) - More
 

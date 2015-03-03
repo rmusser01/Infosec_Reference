@@ -1,4 +1,4 @@
-Open Source Intelligence
+##Open Source Intelligence
 
 
 
@@ -11,7 +11,7 @@ Open Source Intelligence
 [Exploring the Github Firehose](http://blog.scalyr.com/2013/10/exploring-the-github-firehose/)
 
 
-
+[OSINT Through Sender Policy Framework (SPF) Records](https://community.rapid7.com/community/infosec/blog/2015/02/23/osint-through-sender-policy-framework-spf-records)
 
 http://www.getmantra.com/hackery/osint.html
 http://computercrimeinfo.com/cleaningid.html
@@ -35,7 +35,12 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 * A library that will connect to github and emit events from the Github Event API in near-real-time
 
 
-##Articles/Writeups
+
+
+
+
+
+###Articles/Writeups
 
 
 [Some blog posts describing/bringing you up to speed on OSINT by krypt3ia](http://krypt3ia.wordpress.com/2012/01/11/the-subtle-art-of-osint/)
@@ -43,11 +48,11 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [Exploring the Github Firehose](http://blog.scalyr.com/2013/10/exploring-the-github-firehose/)
 
-[OSINT Through Sender Policy Framework (SPF) Records](https://community.rapid7.com/community/infosec/blog/2015/02/23/osint-through-sender-policy-framework-spf-records)
 
 
 
-##Videos
+
+###Videos
 
 [Cognitive Bias and Critical Thinking in Open Source Intelligence - Defcamp 2014](https://www.youtube.com/watch?v=pVAM21UERLU&index=24&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
 
@@ -56,45 +61,35 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 
-##OSINT Tools
+###OSINT Tools
 
 Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&user=Mediaquest
 
 [TheHarvester](From: https://code.google.com/p/theharvester/)
 * Description: The objective of this program is to gather emails, subdomains, hosts, employee names, open ports and banners from different public sources like search engines, PGP key servers and SHODAN computer database. This tool is intended to help Penetration testers in the early stages of the penetration test in order to understand the customer footprint on the Internet. It is also useful for anyone that wants to know what an attacker can see about their organization. 
-
 	[MetaGooFil](https://code.google.com/p/metagoofil/)	
 * Description: Metagoofil is an information gathering tool designed for extracting metadata of public documents (pdf,doc,xls,ppt,docx,pptx,xlsx) belonging to a target company. The tool will perform a search in Google to identify and download the documents to local disk and then will extract the metadata with different libraries like Hachoir, PdfMiner and others. With the results it will generate a report with usernames, software versions and servers or machine names that will help Penetration testers in the information gathering phase. 
 [Gitrob](
-
-[Blog post](http://michenriksen.com/blog/gitrob-putting-the-open-source-in-osint/)
+* [Blog post](http://michenriksen.com/blog/gitrob-putting-the-open-source-in-osint/)
 * Gitrob is a command line tool that can help organizations and security professionals find such sensitive information. The tool will iterate over all public organization and member repositories and match filenames against a range of patterns for files that typically contain sensitive or dangerous information.
 	[SearchDiggity](http://www.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/#searchdiggity)
-* Description: SearchDiggity 3.1 is the primary attack tool of the Google Hacking Diggity Project. It is Bishop Foxâ€™s MS Windows GUI application that serves as a front-end to the most recent versions of our Diggity tools: GoogleDiggity, BingDiggit, Bing LinkFromDomainDiggity, CodeSearchDiggity, DLPDiggity, FlashDiggity, MalwareDiggity, PortScanDiggity, SHODANDiggity, BingBinaryMalwareSearch, NotInMyBackYard Diggity
+* Description: SearchDiggity 3.1 is the primary attack tool of the Google Hacking Diggity Project. It is Bishop Fox’s MS Windows GUI application that serves as a front-end to the most recent versions of our Diggity tools: GoogleDiggity, BingDiggit, Bing LinkFromDomainDiggity, CodeSearchDiggity, DLPDiggity, FlashDiggity, MalwareDiggity, PortScanDiggity, SHODANDiggity, BingBinaryMalwareSearch, NotInMyBackYard Diggity
  
 
 
 
 [Oryon C Portable](http://osintinsight.com/oryon.php)
-* Oryon C Portable is a web browser designed to assist researchers in conducting Open Source Intelligence investigations. Oryon comes with dozens of pre-installed tools and a select set of links cataloged by category â€“ including those that can be found in the OI Shared Resources.
+* Oryon C Portable is a web browser designed to assist researchers in conducting Open Source Intelligence investigations. Oryon comes with dozens of pre-installed tools and a select set of links cataloged by category – including those that can be found in the OI Shared Resources.
 
 
 [Maltego](https://www.paterva.com/web6/products/maltego.php)
 	* Description: What you use to tie everything together.
-
-
 [OpenRefine](https://github.com/OpenRefine/OpenRefine)	
 * Description: OpenRefine is a power tool that allows you to load data, understand it, clean it up, reconcile it to master database, and augment it with data coming from Freebase or other web sources. All with the comfort and privacy of your own computer.
-
-
 [Metashield Analyzer](https://metashieldanalyzer.elevenpaths.com/)
 * Description: Metadata documents can help a malicious user to obtain information that is beyond our control in an enterprise environment. Metashield Analyzer is an online service that allows easily check if your office documents contain metadata. 
-
-
 [Recon-ng](https://bitbucket.org/LaNMaSteR53/recon-ng)
 * Description: Recon-ng is a full-featured Web Reconnaissance framework written in Python. Complete with independent modules, database interaction, built in convenience functions, interactive help, and command completion, Recon-ng provides a powerful environment in which open source web-based reconnaissance can be conducted quickly and thoroughly.
-
-
 [Creepy.py](http://ilektrojohn.github.io/creepy/)
 * Description: Creepy is a geolocation OSINT tool. Gathers geolocation related information from online sources, and allows for presentation on map, search filtering based on exact location and/or date, export in csv format or kml for further analysis in Google Maps.
 
@@ -104,7 +99,7 @@ Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&use
 
 
 
-##Reference Sites
+###Reference Sites
 
 These are sites that contain information and links to various resources such as search engines or info repositories related to OSINT.
 
@@ -113,7 +108,7 @@ These are sites that contain information and links to various resources such as 
 	
 	
 
-###My suggested sites:
+####My suggested sites:
 
 https://sites.google.com/site/greynetwork2/home/osint-resources
 

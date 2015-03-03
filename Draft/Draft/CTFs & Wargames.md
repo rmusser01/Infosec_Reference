@@ -1,4 +1,4 @@
-#Online Courses and CTFs
+#CTFs & Wargames
 
 ###Capture The Flag(CTF) events
 
@@ -10,10 +10,13 @@
 
 
 
-CULL
+##CULL
 
 [The Many Maxims of Maximally Effective CTFs](http://captf.com/maxims.html)
 
+
+
+[Golden Flag CTF Awards](http://golden-flags.com/)
 
 ###CTF Event Write-ups
 

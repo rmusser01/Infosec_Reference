@@ -1,4 +1,4 @@
-Hardware & Teensy-like Hacking related things
+##Hardware & Teensy-like Hacking related things
 
 
 ###Educational
@@ -14,16 +14,18 @@ Hardware & Teensy-like Hacking related things
 [Display Data Channel](https://en.wikipedia.org/wiki/Display_Data_Channel)
 
 
-Cull
+###Cull
 
 
-
+[Disk Genie - SpritesMods](http://spritesmods.com/?art=diskgenie)
 
 
 http://greatscottgadgets.com/infiltrate2013/
 
 http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html
 
+[Project bdp](http://www.malcolmstagg.com/bdp-s390.html)
+* This is a project to modify the Sony Blu-ray BDP firmware. It started out with only the BDP-S390, but has branched out to include other players and a variety of goals, including removing Cinavia and obtaining Region-Free.
 
 
 
@@ -41,7 +43,7 @@ http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html
 
 
 
-General Hardware
+###General Hardware
 
 [Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
 
@@ -55,7 +57,7 @@ General Hardware
 
 
 
-PCI
+###PCI
 
 
 [Inception](https://github.com/carmaa/inception)
@@ -64,7 +66,7 @@ PCI
 
 
 
-Pentesting Drop Boxes & Teensy/Rubberducky style stuff
+###Pentesting Drop Boxes & Teensy/Rubberducky style stuff
 
 [USB teensy attack set OSX](http://samy.pl/usbdriveby/)
 
@@ -91,7 +93,7 @@ https://github.com/pwnieexpress/raspberry_pwn
 
 
 
-USB
+###USB
 
 BadUSB
 [Slides](https://srlabs.de/blog/wp-content/uploads/2014/11/SRLabs-BadUSB-Pacsec-v2.pdf)
@@ -101,7 +103,7 @@ BadUSB
 
 
 
-##Smartcards
+###Smartcards
 
 
 

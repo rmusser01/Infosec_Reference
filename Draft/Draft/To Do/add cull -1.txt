@@ -3,6 +3,8 @@ Something to pimp: https://sysforensics.org/2015/02/manage-the-dfir-information.
 appleexaminer.com
 
 
+https://the.bytecode.club/
+
 
 Elaborate on packers
 
@@ -12,23 +14,16 @@ https://github.com/isislab/Project-Ideas/wiki/Embedded-Device-Security
 https://github.com/isislab/Project-Ideas/wiki/Application-Security
 
 
+[More on Using Bash's Built-in /dev/tcp File (TCP/IP)](http://www.linuxjournal.com/content/more-using-bashs-built-devtcp-file-tcpip More on Using Bash's Built-in /dev/tcp File (TCP/IP))
 
 
+http://www.malcolmstagg.com/bdp-s390.html
 
 http://www.slideshare.net/mubix/windows-attacks-at-is-the-new-black-26665607
 
-Exploitation writeup
-https://barrebas.github.io/blog/2015/02/22/maximum-overkill-two-from-format-string-vulnerability-to-remote-code-execution/ 
+
 
 [List of hacker sites](http://link-base.org/)
-
-
-
-
-
-
-
-[Windows 8 Security and ARM](http://2012.ruxconbreakpoint.com/assets/Uploads/bpx/alex-breakpoint2012.pdf)
 
 https://archive.org/details/HardwareStuffForSoftwarePeople
 

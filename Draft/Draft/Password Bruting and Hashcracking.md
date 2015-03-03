@@ -1,4 +1,7 @@
-Cull
+##Password Bruting and Hashcracking
+
+
+###Cull
 http://blog.erratasec.com/2011/06/password-cracking-mining-and-gpus.html#.VG3xspPF_tw
 
 http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/

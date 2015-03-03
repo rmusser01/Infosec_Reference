@@ -1,4 +1,4 @@
-Disclosure
+##Disclosure
  
 
 [How to Disclose or Sell an Exploit - DEF CON 21 - James Denaro](https://www.youtube.com/watch?v=N1Xj3f4felg)
@@ -17,10 +17,10 @@ Disclosure
 
 
 
-Dealing with the press/journalists:
+###Dealing with the press/journalists:
 
 [Hacking the media for fame/profit talk](http://www.irongeek.com/i.php?page=videos/derbycon4/Hacking-The-Media-For-Fame-And-Profit-Jenn-Ellis-Steven-Reganh)
-Tools
+###Tools
 [Cryptoshot](https://github.com/DiabloHorn/cryptoshot) 
 * This application will make a screenshot of the desktop. If the desktop consists of multiple monitors
 it should still work fine. However it has only been tested with a dual monitor setup. 

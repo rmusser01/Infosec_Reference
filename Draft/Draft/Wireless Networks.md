@@ -1,7 +1,7 @@
-Wireless Networks
+##Wireless Networks
 
 
-CULL
+###CULL
 
 http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-macs-and-sdrs-robert-ghilduta
 
@@ -40,7 +40,7 @@ PyBT
 
 
 
-Fox Hunting & Wardriving
+###Fox Hunting & Wardriving
 
 [Practical Foxhunting 101](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/04-practical-foxhunting-101-simonj)
 
@@ -67,7 +67,7 @@ Piece to purchase: http://www.newegg.com/Product/Product.aspx?Item=N82E168337040
 
 
 
-802.11
+##802.11
 
 
 Karma
@@ -90,7 +90,7 @@ https://github.com/emperorcow/ravenhid
 
 
 
-Zigbee Wireless Networks
+##Zigbee Wireless Networks
 
 
 KillerBee Framework
@@ -105,7 +105,7 @@ KillerBee is a Python based framework and tool set for exploring and exploiting 
 
 
 
-Cellular Networks
+##Cellular Networks
 
 
 
@@ -117,14 +117,12 @@ Cellular Networks in use North America:
 	In use in South America:
 
 
-Blogs/Sites
+###Blogs/Sites
 
-Secrets of sim
-http://www.hackingprojects.net/2013/04/secrets-of-sim.html
+[Secrets of Sim](http://www.hackingprojects.net/2013/04/secrets-of-sim.html)
 
-4G LTE Architecture and Security Concerns
-http://www.secforce.com/blog/2014/03/4g-lte-architecture-and-security-concerns/
 
+[4G LTE Architecture and Security Concerns](http://www.secforce.com/blog/2014/03/4g-lte-architecture-and-security-concerns/)
 
 
 
@@ -133,11 +131,12 @@ http://www.secforce.com/blog/2014/03/4g-lte-architecture-and-security-concerns/
 
 
 
-Videos
 
-Demystifying the Mobile Network by Chuck McAuley
-http://2014.video.sector.ca/video/110383258
-Must watch video. Very informative.
+
+####Videos
+
+[Demystifying the Mobile Network by Chuck McAuley](http://2014.video.sector.ca/video/110383258)
+* Must watch video. Very informative.
 
 
 http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html
@@ -145,9 +144,9 @@ http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html
 
 
 
-Osmocom SIMtrace
-Osmocom SIMtrace is a software and hardware system for passively tracing SIM-ME communication between the SIM card and the mobile phone. 
-http://bb.osmocom.org/trac/wiki/SIMtrace
+[Osmocom SIMtrace](http://bb.osmocom.org/trac/wiki/SIMtrace)
+* Osmocom SIMtrace is a software and hardware system for passively tracing SIM-ME communication between the SIM card and the mobile phone. 
+
 
 
 http://www.3gpp.org/DynaReport/31048.htm
@@ -156,10 +155,9 @@ y
 
 
 
-Tools
+###Tools
+Android IMSI-Catcher Detector (AIMSICD)](https://github.com/SecUpwN/Android-IMSI-Catcher-Detector)
+* Android-based project to detect and avoid fake base stations (IMSI-Catchers) in GSM/UMTS Networks.
 
-Android IMSI-Catcher Detector (AIMSICD)
-Android-based project to detect and avoid fake base stations (IMSI-Catchers) in GSM/UMTS Networks.
-https://github.com/SecUpwN/Android-IMSI-Catcher-Detector
 
 

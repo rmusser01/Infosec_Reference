@@ -1,6 +1,9 @@
 Attacking Android Devices
 
 
+[Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
+
+[Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
 
 
 ####CULL
@@ -8,9 +11,15 @@ Attacking Android Devices
  [Android-x86 Project - Run Android on Your PC](http://www.android-x86.org/)
 * This is a project to port Android open source project to x86 platform, formerly known as "patch hosting for android x86 support". The original plan is to host different patches for android x86 support from open source community. A few months after we created the project, we found out that we could do much more than just hosting patches. So we decide to create our code base to provide support on different x86 platforms, and set up a git server to host it.
 
+[Root Tools](https://github.com/Stericson/RootTools)	
+* RootTools provides rooted developers a standardized set of tools for use in the development of rooted applications
 
 
-[Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
+[byte-code viewer](https://github.com/Konloch/bytecode-viewer)
+* Bytecode Viewer is an Advanced Lightweight Java Bytecode Viewer, GUI Java Decompiler, GUI Bytecode Editor, GUI Smali, GUI Baksmali, GUI APK Editor, GUI Dex Editor, GUI APK Decompiler, GUI DEX Decompiler, GUI Procyon Java Decompiler, GUI Krakatau, GUI CFR Java Decompiler, GUI FernFlower Java Decompiler, GUI DEX2Jar, GUI Jar2DEX, GUI Jar-Jar, Hex Viewer, Code Searcher, Debugger and more. It's written completely in Java, and it's open sourced. It's currently being maintained and developed by Konloch.
+
+[ddi - Dynamic Dalvik Instrumentation Toolkit](https://github.com/crmulliner/ddi)
+* Simple and easy to use toolkit for dynamic instrumentation of Dalvik code. Instrumentation is based on library injection and hooking method entry points (in-line hooking). The actual instrumentation code is written using the JNI interface. The DDI further supports loading additional dex classes into a process. This enables instrumentation code to be partially written in Java and thus simplifies interacting with the instrumented process and the Android framework.
 
 
 
@@ -69,12 +78,27 @@ Attacking Android Devices
 [APK Studio - Android Reverse Engineering](https://apkstudio.codeplex.com/)
 * APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis
 
+[Smali-CFGs](https://github.com/EugenioDelfa/Smali-CFGs)
+* Smali Control-Flow-Graphs
+
+[PID Cat](https://github.com/JakeWharton/pidcat)
+* An update to Jeff Sharkey's excellent logcat color script which only shows log entries for processes from a specific application package. During application development you often want to only display log messages coming from your app. Unfortunately, because the process ID changes every time you deploy to the phone it becomes a challenge to grep for the right thing. This script solves that problem by filtering by application package. Supply the target package as the sole argument to the python script and enjoy a more convenient development process.
+
+[AndBug - Scriptable Android Debugger](https://github.com/swdunlop/AndBug)
+* AndBug is a debugger targeting the Android platform's Dalvik virtual machine intended for reverse engineers and developers. It uses the same interfaces as Android's Eclipse debugging plugin, the Java Debug Wire Protocol (JDWP) and Dalvik Debug Monitor (DDM) to permit users to hook Dalvik methods, examine process state, and even perform changes.
+
+[android-lkms](https://github.com/strazzere/android-lkms)
+* Android Loadable Kernel Modules - mostly used for reversing and debugging on controlled systems/emulators.
+
+[Simplify - Simple Android Deobfuscator](https://github.com/CalebFenton/simplify)
+* Simplify uses a virtual machine to understand what an app does. Then, it applies optimizations to create code that behaves identically, but is easier for a human to understand. Specifically, it takes Smali files as input and outputs a Dex file with (hopefully) identical semantics but less complicated structure.
+
 ###Dynamic Analysis
  
 [APKinpsector](https://github.com/honeynet/apkinspector/)
 * APKinspector is a powerful GUI tool for analysts to analyze the Android applications.
 
-Droidmap](https://code.google.com/p/droidbox/)
+[Droidmap](https://code.google.com/p/droidbox/)
 * DroidBox is developed to offer dynamic analysis of Android applications. The following information is shown in the results, generated when analysis is ended: 
 Hashes for the analyzed package 
 Incoming/outgoing network data 
@@ -86,9 +110,8 @@ Cryptography operations performed using Android API
 Listing broadcast receivers 
 Sent SMS and phone calls 
 Additionally, two images are generated visualizing the behavior of the package. One showing the temporal order of the operations and the other one being a treemap that can be used to check similarity between analyzed packages. 
-
-[Android Hooker](https://github.com/AndroidHooker/hooker)
-* Hooker is an opensource project for dynamic analyses of Android applications. This project provides various tools and applications that can be use to automaticaly intercept and modify any API calls made by a targeted application.
+[Hooker](https://github.com/AndroidHooker/hooker)
+* Hooker is an opensource project for dynamic analyses of Android applications. This project provides various tools and applications that can be use to automaticaly intercept and modify any API calls made by a targeted application.  It leverages Android Substrate framework to intercept these calls and aggregate all their contextual information (parameters, returned values, ...). Collected information can either be stored in a distributed database (e.g. ElasticSearch) or in json files.  A set of python scripts is also provided to automatize the execution of an analysis to collect any API calls made by a set of applications.
 
 [Android-SSL-TrustKiller](https://github.com/iSECPartners/Android-SSL-TrustKiller)
 * Blackbox tool to bypass SSL certificate pinning for most applications running on a device.
@@ -111,6 +134,35 @@ Android Resources (.arsc).
 ^ Androguard is available for Linux/OSX/Windows (python powered).
 [Dexter](http://dexter.dexlabs.org/accounts/login/?next=/dashboard)
 * Dexter is a static android application analysis tool.	
+[Static Code Analysis of Major Android Web Browsers](http://opensecurity.in/research/security-analysis-of-android-browsers.html)
+
+[Androwarn](https://github.com/maaaaz/androwarn)
+* Androwarn is a tool whose main aim is to detect and warn the user about potential malicious behaviours developped by an Android application. The detection is performed with the static analysis of the application's Dalvik bytecode, represented as Smali. This analysis leads to the generation of a report, according to a technical detail level chosen from the user.
+
+[Thresher](http://pl.cs.colorado.edu/projects/thresher/)
+* Thresher is a static analysis tool that specializes in checking heap reachability properties. Its secret sauce is using a coarse up-front points-to analysis to focus a precise symbolic analysis on the alarms reported by the points-to analysis. 
+* [Thresher: Precise Refutations for Heap Reachability](http://www.cs.colorado.edu/~sabl4745/papers/pldi13-thresher.pdf)
+
+[lint - Static Analysis](https://developer.android.com/tools/help/lint.html)
+* The Android lint tool is a static code analysis tool that checks your Android project source files for potential bugs and optimization improvements for correctness, security, performance, usability, accessibility, and internationalization.
+
+[Flow Droid - Taint Analysis](http://sseblog.ec-spride.de/tools/flowdroid/)
+* FlowDroid is a context-, flow-, field-, object-sensitive and lifecycle-aware static taint analysis tool for Android applications. U
+* [Flow Droid Paper- FlowDroid: Precise Context, Flow, Field, Object-sensitive and Lifecycle-aware Taint Analysis for Android Apps](http://www.bodden.de/pubs/far+14flowdroid.pdf)
+* In this work we thus present F LOW D ROID , a novel and highly precise static taint analysis for Android applications. A precise model of Android’s lifecycle allows the analysis to properly handle callbacks invoked by the Android framework, while context, flow, field and object-sensitivity allows the analysis to reduce the number of false alarms. Novel on-demand algorithms help F LOW D ROID maintain high efficiency and precision at the same time
+
+
+###Online APK Analyzers
+
+[Mobile Sandbox](http://mobilesandbox.org/)
+* Provide an Android application file (apk-file) and the Mobile-Sandbox will analyze the file for any malicious behaviour.
+
+[CopperDroid](http://copperdroid.isg.rhul.ac.uk/copperdroid/)
+* Upload an .apk for static analysis
+
+[Andrototal[(http://andrototal.org/)
+* AndroTotal is a free service to scan suspicious APKs against multiple mobile antivirus apps.
+
 
 
 ##Attack Platforms

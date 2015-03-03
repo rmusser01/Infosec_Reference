@@ -1,6 +1,9 @@
-Embedded Device Security
+##Embedded Device Security
 
 
+
+
+[An analysis of the vulnerabilities introduced with Java Card 3 Connected Edition](http://www.ma.rhul.ac.uk/static/techrep/2013/MA-2013-04.pdf)
 
 
 [Methodologies for Hacking Embedded Security Appliances](https://media.blackhat.com/us-13/US-13-Bathurst-Methodologies-for-Hacking-Embdded-Security-Appliances-Slides.pdf)
@@ -18,7 +21,7 @@ Embedded Device Security
 
 
 
-Attacking Routers
+###Attacking Routers
 
 TR-069
 
@@ -34,7 +37,7 @@ TR-069
 
 
 
-Tutorials/Walkthroughs
+###Tutorials/Walkthroughs
 
 [Unpacking Firmware images from cable modems](http://w00tsec.blogspot.com.br/2013/11/unpacking-firmware-images-from-cable.html0
 
@@ -46,7 +49,7 @@ Tutorials/Walkthroughs
 
 
 
-Cable Modem Hacking
+###Cable Modem Hacking
 
 [Docsis hacking](https://www.defcon.org/images/defcon-16/dc16-presentations/defcon-16-self.pdf)
 [Hacking Docsis for fun and profit](https://www.defcon.org/images/defcon-18/dc-18-presentations/Blake-bitemytaco/DEFCON-18-Blake-bitemytaco-Hacking-DOCSIS.pdf)

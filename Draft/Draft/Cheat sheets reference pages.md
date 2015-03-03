@@ -53,14 +53,6 @@ Cheat Sheets & Reference Pages
 
 
 
-
-
-
-
-
-
-
-
 http://www.amanhardikar.com/mindmaps.html
 
 

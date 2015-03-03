@@ -1,4 +1,12 @@
-Fuzzing
+##Fuzzing
+
+
+
+
+
+
+
+
 
 [Quick explanation of fuzzing and various fuzzers](http://whoisjoe.info/?p=16)
 
@@ -15,7 +23,7 @@ Fuzzing
 
 
 
-Tools
+###Tools
 
 
 [American Fuzzy Lop AFL](http://lcamtuf.coredump.cx/afl/)
@@ -37,35 +45,37 @@ Tools
 
 
 
-Methodologies
+###Methodologies
 
 
 
 
 
-Writeups 
+###Writeups 
 [Faster Fuzzing with Python](https://labs.mwrinfosecurity.com/blog/2014/12/10/faster-fuzzing-with-python/)
 
 [Walkthrough of setting up CERT’s FOE fuzzer and fuzzing irfanview](http://www.singlehop.com/blog/lets-fuzz-irfanview/)
 
 
-Books/Papers
+###Books/Papers
 
 [*THE* Book on fuzzing](http://fuzzing.org/)
 
+###Tools
 
 
 
-Misc
+
+
+
+###Misc
 
 [Good slides on fuzzing](https://courses.cs.washington.edu/courses/cse484/14au/slides/Section8.pdf)
 
 [USB Fuzzing Basics from fuzzing to Bug Reporting](http://blog.quarkslab.com/usb-fuzzing-basics-from-fuzzing-to-bug-reporting.html)
 
 Peach Fuzzer
-Peach Documentation
-http://old.peachfuzzer.com/Introduction.html
-
+* [Peach Documentation](http://old.peachfuzzer.com/Introduction.html)
 [Creating Custom Peach Fuzzer Publishers](http://blog.opensecurityresearch.com/2014/01/creating-custom-peach-fuzzer-publishers.html)
 Creating Custom Peach Fuzzer Publishers
 Link: http://blog.opensecurityresearch.com/2014/01/creating-custom-peach-fuzzer-publishers.html

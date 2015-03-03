@@ -1,4 +1,11 @@
-iOS
+##Attacking & Defending iOS
+
+
+
+
+[Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
+
+
 
 CULL
 
@@ -7,8 +14,6 @@ CULL
 * A Cigital consultant – Grant Douglas, recently created a utility called MEMSCAN which enables users to dump the memory contents of a given iPhone app. Dumping the memory contents of a process proves to be a useful technique in identifying keys and credentials in memory. Using the utility, users are able to recover keys or secrets that are statically protected within the application but are less protected at runtime. Users can also use the utility to verify that keys and credentials are appropriately disposed of after use.
 
 
-####Hacking Your Way Up The Mobile Stack
-http://vimeo.com/51270090
 
 iPwn  Apps
 :

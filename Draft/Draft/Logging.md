@@ -1,4 +1,4 @@
-Logging
+##Logging
 
 [Spotting the Adversary with Windows Event Log Monitoring - NSA](https://www.nsa.gov/ia/_files/app/Spotting_the_Adversary_with_Windows_Event_Log_Monitoring.pdf)
 
@@ -14,8 +14,12 @@ Logging
 * bmon is a monitoring and debugging tool to capture networking related statistics and prepare them visually in a human friendly way. It features various output methods including an interactive curses user interface and a programmable text output for scripting.
 
 
-[Using Splunk to look for new binaries](http://digirati82.com/2013/06/03/using-splunk-to-watch-for-new-binaries/)
--Add bit for bro?
+[Making the Most of OSSEC](http://www.ossec.net/files/Making_the_Most_of_OSSEC.pdf)
+
+
+
+
+[ Strange Attractors and TCP/IP Sequence Number Analysis  - Michal Zalewski](http://lcamtuf.coredump.cx/oldtcp/tcpseq.html)
 
 
 plaso (Plaso Langar Að Safna Öllu) is a Python-based backend engine for the tool log2timeline. 

@@ -14,41 +14,16 @@ http://www.cl.cam.ac.uk/~sps32/
 Grab links for his papers
 
 
-[Implementation and Implications of a Stealth Hard-Drive Backdoor](https://www.ibr.cs.tu-bs.de/users/kurmus/papers/acsac13.pdf)
-* Modern workstations and servers implicitly trust hard disks to act as well-behaved block devices. This paper analyzes the catastrophic loss of security that occurs when hard disks are not trustworthy. First, we show that it is possible to compromise the rmware of a commercial o-the-shelf hard drive, by resorting only to public information and reverse en- gineering. Using such a compromised rmware, we present a stealth rootkit that replaces arbitrary blocks from the disk while they are written, providing a data replacement back- door . The measured performance overhead of the compro- mised disk drive is less than 1% compared with a normal, non-malicious disk drive. We then demonstrate that a re- mote attacker can even establish a communication channel with a compromised disk to inltrate commands and to ex- ltrate data. In our example, this channel is established over the Internet to an unmodied web server that relies on the compromised drive for its storage, passing through the original webserver, database server, database storage en- gine, lesystem driver, and block device driver. Additional experiments, performed in an emulated disk-drive environ- ment, could automatically extract sensitive data such as /etc/shadow (or a secret key le) in less than a minute. This paper claims that the diculty of implementing such an at- tack is not limited to the area of government cyber-warfare; rather, it is well within the reach of moderately funded crim- inals, botnet herders and academic researchers.
+[TAMPER (Tamper And Monitoring Protection Engineering Research)](http://www.cl.cam.ac.uk/research/security/tamper/)
+* In the TAMPER Lab, we study existing security products, document how they have been penetrated in the past, develop new attack techniques, and try to forecast how newly available technologies will make it easier to bypass hardware security mechanisms. We then develop and evaluate new countermeasures and assist industrial designers in staying ahead of the game, most of all by giving them an advanced understanding of which attack techniques are most dangerous. We are especially interested in protection systems for mass-market applications, and in forensic applications. 
 
+
+[Implementation and Implications of a Stealth Hard-Drive Backdoor](https://www.ibr.cs.tu-bs.de/users/kurmus/papers/acsac13.pdf) 
+* Modern workstations and servers implicitly trust hard disks to act as well-behaved block devices. This paper analyzes the catastrophic loss of security that occurs when hard disks are not trustworthy. First, we show that it is possible to compromise the firmware of a commercial o-the-shelf hard drive, by resorting only to public information and reverse engineering. Using such a compromised firmware, we present a stealth rootkit that replaces arbitrary blocks from the disk while they are written, providing a data replacement back- door . The measured performance overhead of the compromised disk drive is less than 1% compared with a normal, non-malicious disk drive. We then demonstrate that a re- mote attacker can even establish a communication channel with a compromised disk to infiltrate commands and to ex-filtrate data. In our example, this channel is established over the Internet to an unmodified web server that relies on the compromised drive for its storage, passing through the original webserver, database server, database storage engine, filesystem driver, and block device driver. Additional experiments, performed in an emulated disk-drive environment, could automatically extract sensitive data such as /etc/shadow (or a secret key le) in less than a minute. This paper claims that the diffculty of implementing such an at- tack is not limited to the area of government cyber-warfare; rather, it is well within the reach of moderately funded criminals, botnet herders and academic researchers.
 
 [Attackin the TPM part 2](https://www.youtube.com/watch?v=h-hohCfo4LA)
 
 [Attacking “secure” chips](https://www.youtube.com/watch?v=w7PT0nrK2BE)
-
-[Perimeter-Crossing Buses: a New Attack Surface for
-Embedded Systems](http://www.cs.dartmouth.edu/~sws/pubs/bgjss12.pdf)
-* Abstract: This paper maps out the bus-facing attack surface of a modern operating system, and demonstrates that e ective and ecient injection of trac into the buses is real and easily a ordable. Further, it presents a simple and inexpen-sive hardware tool for the job, outlining the architectural and computation-theoretic challenges to creating a defensive OS/driver architecture comparable to that which has been achieved for network stacks.
-
-
-
-[Breaking apple touchID cheaply](http://www.ccc.de/en/updates/2013/ccc-breaks-apple-touchid)
-
-
-[Keykeriki v2.0](http://www.remote-exploit.org/articles/keykeriki_v2_0__8211_2_4ghz/index.html)
-* Hardware to attack wireless keyboards and other such things
-
-
-[Stealthy Dopant-Level Hardware Trojans](Hardware level trojans http://sharps.org/wp-content/uploads/BECKER-CHES.pdf)
-* Abstract: In this paper we propose an extremely stealthy approach for implement-
-ing hardware Trojans below the gate level, and we evaluate their impact
-on the security of the target device. Instead of adding additional cir-
-cuitry to the target design, we insert our hardware Trojans by changing
-the dopant polarity of existing transistors. Since the modi ed circuit ap-
-pears legitimate on all wiring layers (including all metal and polysilicon),
-our family of Trojans is resistant to most detection techniques, includ-
-ing ne-grain optical inspection and checking against \golden chips".
-We demonstrate the e ectiveness of our approach by inserting Trojans
-into two designs | a digital post-processing derived from Intel's cryp-
-tographically secure RNG design used in the Ivy Bridge processors and
-a side-channel resistant SBox implementation | and by exploring their
-detectability and their e ects on security.
 
 
 
@@ -91,9 +66,18 @@ Phison 2251-03 (2303) Custom Firmware & Existing Firmware Patches (BadUSB)
 
 
 
-http://theinvisiblethings.blogspot.com/2011/09/anti-evil-maid.html?m=1
 
 
+###Computer Hardware Attack Writeups
 
+[Perimeter-Crossing Buses: a New Attack Surface for
+Embedded Systems](http://www.cs.dartmouth.edu/~sws/pubs/bgjss12.pdf)
+* Abstract: This paper maps out the bus-facing attack surface of a modern operating system, and demonstrates that e ective and ecient injection of trac into the buses is real and easily a ordable. Further, it presents a simple and inexpen-sive hardware tool for the job, outlining the architectural and computation-theoretic challenges to creating a defensive OS/driver architecture comparable to that which has been achieved for network stacks.
 
+[Breaking apple touchID cheaply](http://www.ccc.de/en/updates/2013/ccc-breaks-apple-touchid)
 
+[Keykeriki v2.0](http://www.remote-exploit.org/articles/keykeriki_v2_0__8211_2_4ghz/index.html)
+* Hardware to attack wireless keyboards and other such things
+
+[Stealthy Dopant-Level Hardware Trojans](Hardware level trojans http://sharps.org/wp-content/uploads/BECKER-CHES.pdf)
+* Abstract: In this paper we propose an extremely stealthy approach for implement- ing hardware Trojans below the gate level, and we evaluate their impact on the security of the target device. Instead of adding additional cir- cuitry to the target design, we insert our hardware Trojans by changing the dopant polarity of existing transistors. Since the modi ed circuit ap- pears legitimate on all wiring layers (including all metal and polysilicon), our family of Trojans is resistant to most detection techniques, includ- ing ne-grain optical inspection and checking against \golden chips". We demonstrate the e ectiveness of our approach by inserting Trojans into two designs | a digital post-processing derived from Intel's cryp- tographically secure RNG design used in the Ivy Bridge processors and a side-channel resistant SBox implementation | and by exploring their detectability and their e ects on security.

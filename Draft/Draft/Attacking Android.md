@@ -14,6 +14,34 @@ Attacking Android Devices
 [Root Tools](https://github.com/Stericson/RootTools)	
 * RootTools provides rooted developers a standardized set of tools for use in the development of rooted applications
 
+[Understanding the Android bytecode](https://mariokmk.github.io/programming/2015/03/06/learning-android-bytecode.html)
+* Writeup on reversing/understanding Android Bytecode
+
+[ClockLockingBeats](https://github.com/monk-dot/ClockLockingBeats)
+* Repo for the DARPA CFT / Clock Locking Beats project. Exploring Android kernel and processor interactions to hide running threads
+
+
+[android-cluster-toolkit](https://github.com/jduck/android-cluster-toolkit)
+* The Android Cluster Toolkit helps organize and manipulate a collection of Android devices. It was designed to work with a collection of devices connected to the same host machine, either directly or via one or more tiers of powered USB hubs. The tools within can operate on single devices, a selected subset, or all connected devices at once.
+
+[dedex](https://github.com/mariokmk/dedex)
+* Is a command line tool for disassembling Android DEX files.
+
+
+[DexMac](https://github.com/mariokmk/DexMac)
+* Is a native OSX application for disassembling Android DEX files.
+
+[dexdissasembler](https://github.com/mariokmk/dexdisassembler)
+* Is a GTK tool for disassembling Android DEX files.
+
+
+[dex.Net](https://github.com/mariokmk/dex.net)
+* A Mono/.NET library to parse Android DEX files. Its main purpose is to support utilities for disassembling and presenting the contents of DEX files.
+
+[apk2gold](https://github.com/lxdvs/apk2gold)
+* CLI tool for decompiling Android apps to Java. It does resources! It does Java! Its real easy! 
+
+
 
 [byte-code viewer](https://github.com/Konloch/bytecode-viewer)
 * Bytecode Viewer is an Advanced Lightweight Java Bytecode Viewer, GUI Java Decompiler, GUI Bytecode Editor, GUI Smali, GUI Baksmali, GUI APK Editor, GUI Dex Editor, GUI APK Decompiler, GUI DEX Decompiler, GUI Procyon Java Decompiler, GUI Krakatau, GUI CFR Java Decompiler, GUI FernFlower Java Decompiler, GUI DEX2Jar, GUI Jar2DEX, GUI Jar-Jar, Hex Viewer, Code Searcher, Debugger and more. It's written completely in Java, and it's open sourced. It's currently being maintained and developed by Konloch.

@@ -4,10 +4,10 @@
 
 
 
-
 http://www.cis.syr.edu/~wedu/seed/all_labs.html - Training
 
-
+[exrs - Binary Exploitation/Reverse Engineering Challenge training](https://github.com/wapiflapi/exrs)
+* Exercises for learning Reverse Engineering and Exploitation. All binaries for these challenges are ELF 64-bit LSB executable, x86-64.
 
 
 
@@ -26,6 +26,8 @@ http://www.cis.syr.edu/~wedu/seed/all_labs.html - Training
 
 [Android Forensics & Security Testing - OpenSecurityTraining.info](http://opensecuritytraining.info/AndroidForensics.html)
 
+[Pentester Lab](https://www.pentesterlab.com/)
+* PentesterLab provides vulnerable systems that can be used to test and understand vulnerabilities.
 
 
 

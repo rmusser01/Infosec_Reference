@@ -2,6 +2,57 @@ Something to pimp: https://sysforensics.org/2015/02/manage-the-dfir-information.
 
 appleexaminer.com
 
+[Information Security For Journalist book - Centre for Investigative Journalism](http://files.gendo.nl/Books/InfoSec_for_Journalists_V1.1.pdf)
+
+[Mobile: Cellular Exploitation on a Global Scale The Rise & Fall of the Control](https://www.youtube.com/watch?v=HD1ngJ85vWM)
+
+
+[Exploit: Hacking the Wireless World with Software Defined Radio BlackHat USA 2014](https://www.youtube.com/watch?v=XWbwFfxzw6w)
+
+[Reverse Engineering: SATCOM Terminals Hacking by Air, Sea, and Land - Black Hat USA 2014](https://www.youtube.com/watch?v=tRHDuT__GoM)
+
+[Embedded: Smart Nest Thermostat A Smart Spy in Your Home](https://www.youtube.com/watch?v=UFQ9AYMee_Q)
+
+[Embedded: A Survey of Remote Automotive Attack Surfaces  - Black Hat USA 2014](https://www.youtube.com/watch?v=mNhFGJVq2HE)
+
+[Bringing Software Defined Radio to the Penetration Testing Community](https://www.youtube.com/watch?v=hZJDdz6kVJ4)
+
+[USB Attacks Need Physical Access Right? Not Any More… by Andy Davis](https://www.youtube.com/watch?v=90MIjgh5ESU)
+
+[Exploiting Network Surveillance Cameras Like a Hollywood Hacker - Black Hat 2013](https://www.youtube.com/watch?v=B8DjTcANBx0)
+
+
+[Adventures in Xen Exploitation](https://www.nccgroup.com/en/blog/2015/02/adventures-in-xen-exploitation/)
+* "This post is about my experience trying to exploit the Xen SYSRET bug (CVE-2012-0217)."
+
+
+[15 Ways to bypass Powershell execution-policy settings](https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/)
+* Does what it says on the tin. Overall, its clear that execution-policy was not meant as a security method. Or if it was, someone was drinking a bit too much.
+
+
+[pagexec - GRSEC](https://pax.grsecurity.net/docs/pageexec.txt)
+
+
+[ Attack of the week: FREAK (or 'factoring the NSA for fun and profit')](http://blog.cryptographyengineering.com/2015/03/attack-of-week-freak-or-factoring-nsa.html)
+
+[The Backdoor Factory (BDF)](https://github.com/secretsquirrel/the-backdoor-factory)
+* For security professionals and researchers only.  The goal of BDF is to patch executable binaries with user desired shellcode and continue normal execution of the prepatched state. [Derbycon Presentation](https://www.youtube.com/watch?v=LjUN9MACaTs)
+
+[Trojan.Foxy writeup](http://www.cyberesi.com/2011/08/31/trojan-foxy/?ModPagespeed=noscrip
+* Today I will write about a sample that I will refer to as Trojan.Foxy. Trojan.Foxy requests and parses .JPG images that contain encoded instructions. The encoding algorithm used by this Trojan is loosely based off of the Vigenère cipher; however there is a deviation in how the cipher is applied.
+
+
+[Triaging Malware Incidents](http://journeyintoir.blogspot.com/2013/09/triaging-malware-incidents.html)
+* Good writeup/blogpost from Journey into Incidence Response
+
+[ HowTo: Determine Program Execution](http://windowsir.blogspot.com/2013/07/howto-determine-program-execution.html)
+
+[Shadow Daemon](https://shadowd.zecure.org/overview/introduction/)
+* Shadow Daemon is a collection of tools to detect, protocol and prevent attacks on web applications. Technically speaking, Shadow Daemon is a web application firewall that intercepts requests and filters out malicious parameters. It is a modular system that separates web application, analysis and interface to increase security, flexibility and expandability. Shadow Daemon is free software. It is released under the license GPLv2, so its source code can be examined, modified and distributed by everyone.
+
+
+
+
 
 https://the.bytecode.club/
 
@@ -28,6 +79,9 @@ http://www.slideshare.net/mubix/windows-attacks-at-is-the-new-black-26665607
 https://archive.org/details/HardwareStuffForSoftwarePeople
 
 
+[x86 Assembly Guide/Reference - Wikibooks](https://en.wikibooks.org/wiki/X86_Assembly)
+* Introduction for those who don’t know ASM and a reference for those that do.
+
 http://opensecuritytraining.info/MalwareDynamicAnalysis_files/MalwareDynamicAnalysis02.pdf
 
 
@@ -52,7 +106,14 @@ http://netdude.sourceforge.net/
 Cull the interesting papers
 http://www.covert.io/
 
+[Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
+* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
 
+
+
+
+[Extensible Metadata Platform](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform)
+* The Extensible Metadata Platform (XMP) is an ISO standard, originally created by Adobe Systems Inc., for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
 
 
 http://www.harmj0y.net/blog/powershell/dumping-a-domains-worth-of-passwords-with-mimikatz-pt-2/
@@ -85,6 +146,17 @@ https://github.com/Veil-Framework/Veil-PowerView
 https://addons.mozilla.org/en-US/firefox/addon/ssleuth/
 
 
+Try/Catch Exception in Powershell
+"""
 
+try {
+#stuff
+} catch {
+$ErrorMessage = $_.Exception.Message
+$ErrorSource = $_.Exception.Source
+$err = $ErrorSource + " reports: " + $ErrorMessage
+}
+
+"""
 
 [Access control best practices](https://srlabs.de/acs/)

@@ -1,5 +1,9 @@
 ##Counter Surveillance
 
+I am not a professional and may be a twelve year old child. Be wary.
+
+
+
 
 ###Blogs/Sites
 

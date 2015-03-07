@@ -7,11 +7,35 @@
 * NSA 70-page writeup on windows event log monitoring
 [Forensics on Amazon’s EC2](https://sysforensics.org/2014/10/forensics-in-the-amazon-cloud-ec2.html)
 
+
+
+[Did it Execute? - Mandiant](https://www.mandiant.com/blog/execute/)
+* You found a malicious executable! Now you’ve got a crucial question to answer: did the file execute? We’ll discuss a few sources of evidence you can use to answer this question. In this post, we will focus on static or “dead drive” forensics on Windows systems. We will cover four main sources of evidence: Windows Prefetch, Registry, Log Files, and File Information.
+
+[Handler Diaries - Another Hunting Post(DFIR)](http://blog.handlerdiaries.com/?p=775)
+* Good post on not only knowing the layout, but knowing expected behaviours.
+
 [DPAPIck](http://dpapick.com/)
 * This is a forensic tool to deal, in an offline way, with Microsoft Windows® protected data, using the DPAPI (Data Protection API).
 
+
+
+
+
+
+
+####Hacking Exposed - Automating DFIR Series
+[Automating DFIR - How to series on programming libtsk with python Part 1 - ](http://hackingexposedcomputerforensicsblog.blogspot.com/2015/02/automating-dfir-how-to-series-on.html)
+[Automating DFIR - How to series on programming libtsk with python Part 2](http://hackingexposedcomputerforensicsblog.blogspot.com/2015/02/automating-dfir-how-to-series-on_19.html)
+[Automating DFIR - How to series on programming libtsk with python Part 3](http://hackingexposedcomputerforensicsblog.blogspot.com/2015/02/automating-dfir-how-to-series-on_21.html)
+
+
+
 [Know your Windows Processes or Die Trying](https://sysforensics.org/2014/01/know-your-windows-processes.html)
 * Excellent quick reference on Windows proccesses with a focus on Win7. Good resource.
+
+[IOC Bucket](https://www.iocbucket.com/)
+* IOC sharing platform
 
 
 [Rapier](https://code.google.com/p/rapier/)
@@ -20,6 +44,15 @@
 
 [ENISA CERT Exercises and Training](http://www.enisa.europa.eu/activities/cert/support/exercise)
 * ENISA CERT Exercises and training material was introduced in 2008, in 2012 and 2013 it was complemented with new exercise scenarios containing essential material for success in the CERT community and in the field of information security. In this page you will find the ENISA CERT Exercise material, containing Handbook for teachers, Toolset for students and Virtual Image to support hands on training sessions. 
+
+
+[WinPrefetchView v1.25](http://www.nirsoft.net/utils/win_prefetch_view.html)
+* Each time that you run an application in your system, a Prefetch file which contains information about the files loaded by the application is created by Windows operating system. The information in the Prefetch file is used for optimizing the loading time of the application in the next time that you run it. 
+WinPrefetchView is a small utility that reads the Prefetch files stored in your system and display the information stored in them. By looking in these files, you can learn which files every application is using, and which files are loaded on Windows boot. 
+
+
+[PostgreSQL Pass The Hash protocol design weakness](https://hashcat.net/misc/postgres-pth/postgres-pth.pdf)
+
 
 
 

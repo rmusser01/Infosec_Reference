@@ -10,6 +10,9 @@
 CULL
 
 
+
+https://www.owasp.org/index.php/Mobile_Jailbreaking_Cheat_Sheet
+
 [MEMSCAN - Dump iPhone app RAM](http://www.cigital.com/justice-league-blog/2015/02/18/memscan-defined/)
 * A Cigital consultant – Grant Douglas, recently created a utility called MEMSCAN which enables users to dump the memory contents of a given iPhone app. Dumping the memory contents of a process proves to be a useful technique in identifying keys and credentials in memory. Using the utility, users are able to recover keys or secrets that are statically protected within the application but are less protected at runtime. Users can also use the utility to verify that keys and credentials are appropriately disposed of after use.
 
@@ -44,28 +47,16 @@ This course focuses on the iOS platform and application security and is ideal fo
 
 
 
-
-
-
-
-
-
-Attacking iOS
-
-
-
-
-
-Vulnerabilities/Exploits
+###Vulnerabilities/Exploits
 List of iOS Exploits:
 http://theiphonewiki.com/wiki/Category:Exploits
 
 
-Techniques
+###Techniques
 
 
 
-Training & Tutorials
+###Training & Tutorials
 
 Learning iOS Application Security - 34 part series
 	http://damnvulnerableiosapp.com/#learn
@@ -80,24 +71,22 @@ OWASP iGOAT
 	https://www.owasp.org/index.php/OWASP_iGoat_Project
 	
 
-iOS Security Testing Methodologies
+###iOS Security Testing Methodologies
 
 
 
 
-General Research Papers
+###General Research Papers
 
 
 
 
-Reverse Engineering
+###Reverse Engineering
 
 
 
-IOS Reverse Engineering toolkit:
-	https://github.com/S3Jensen/iRET
-Summary:
-The iOS Reverse Engineering Toolkit is a toolkit designed to automate many of the common tasks associated with iOS penetration testing. It automates a many common tasks including: 
+[IOS Reverse Engineering toolkit](https://github.com/S3Jensen/iRET)
+* The iOS Reverse Engineering Toolkit is a toolkit designed to automate many of the common tasks associated with iOS penetration testing. It automates a many common tasks including: 
 binary analysis using otool
 keychain analysis using keychain_dumper
 reading database content using sqlite
@@ -108,55 +97,27 @@ creating, editing, installing theos tweaks
 
 
 
+###Jailbreaking
 
-
-
-
-
-
-
-
-Attacking iOS Devices
-
-
-
-
-
-Analyzing Attack Surfaces
-
-
-
-Jailbreaking Pros - Cons
-
-
-
-Info Leakage
+####Jailbreaking Pros - Cons
 	
 Guide to hardening iOS with the goal of privacy:
 	http://cydia.radare.org/sec/
 
 
 
-Jailbreaking
 
-
-IPhoneDevWiki
-From: iphonedevwiki.net/index.php/Main_Page 
-	“Our goal is to share the sum of all human[1] knowledge about jailbroken iOS development. In other words, this is a collection of documentation written by developers to help each other write extensions (tweaks) for jailbroken iOS, and you're invited to learn from it and contribute to it too.” 
-http://iphonedevwiki.net/index.php/Main_Page
-
-
-The iPhone Wiki
-From: http://theiphonewiki.com/wiki/Main_Page
-The iPhone Wiki is an unofficial wiki dedicated to collecting, storing and providing information on the internals of Apple's amazing iDevices. We hope to pass this information on to the next generation of hackers so that they can go forth into their forebears' footsteps and break the ridiculous bonds Apple has put on their amazing mobile devices. 
+[IPhoneDevWiki](http://iphonedevwiki.net/index.php/Main_Page)
+* “Our goal is to share the sum of all human[1] knowledge about jailbroken iOS development. In other words, this is a collection of documentation written by developers to help each other write extensions (tweaks) for jailbroken iOS, and you're invited to learn from it and contribute to it too.” 
 
 
 
+[The iPhone Wiki](http://theiphonewiki.com/wiki/Main_Page)
+* The iPhone Wiki is an unofficial wiki dedicated to collecting, storing and providing information on the internals of Apple's amazing iDevices. We hope to pass this information on to the next generation of hackers so that they can go forth into their forebears' footsteps and break the ridiculous bonds Apple has put on their amazing mobile devices. 
 
-Maybe>?
-https://www.owasp.org/index.php/Mobile_Jailbreaking_Cheat_Sheet
 
-Defeating iOS cryptography
+
+###Defeating iOS cryptography
 
 
 

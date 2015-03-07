@@ -21,9 +21,16 @@ Start with the first two links, and go from there. They’re both great resources 
 ###Other Materials:
 
 Three parter from jacobian.org:
+
 [What to write](http://jacobian.org/writing/what-to-write/)
+
 [Technical Style](http://jacobian.org/writing/technical-style/)
+
 [Editors](http://jacobian.org/writing/editors/)
+
+
+
+
 
 [Writing Types of User Documentation](https://en.wikiversity.org/wiki/Technical_writing_Types_of_User_Documentation0
 
@@ -55,7 +62,7 @@ Three parter from jacobian.org:
 
 
 
-
+[Tips for Creating an Information Security Assessment Report Cheat Sheet](https://zeltser.com/security-assessment-report-cheat-sheet/)
 
 
 

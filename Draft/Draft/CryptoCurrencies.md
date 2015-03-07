@@ -3,6 +3,16 @@
 ######I don’t know.
 
 
+Bitcoin - What other alt coins?
+
+
+Bitcointalk
+
+/r/bitcoin
+
+
+
+
 
 
 

@@ -6,7 +6,7 @@ I define client-side attacks as any form of attack that requires deliberate acti
 
 
 
-Different forms of client side attacks:
+###Different forms of client side attacks:
 
 
 
@@ -31,7 +31,7 @@ Need to read Browser hackers handbook
 
 [White Lightning Attack Platform](https://github.com/TweekFawkes/White_Lightning/tree/master/var/www)
 
-[BeEF Browser Exploitation Framework](http://beefproject.com/)
+[BeEF Browser Exploitation Framework](http://beefproject.com/
 
 [Technical analysis of client identification mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms) 
 
@@ -45,15 +45,23 @@ Need to read Browser hackers handbook
 	[The definition from wikipedia](en.wikipedia.org/wiki/Phishing):
 * “Phishing is the attempt to acquire sensitive information such as usernames, passwords, and credit card details (and sometimes, indirectly, money) by masquerading as a trustworthy entity in an electronic communication.”
 
-Phishing Techniques:
+####Phishing Techniques:
 
 [Post exploitation trick - Phish users for creds on domains, from their own box](https://enigma0x3.wordpress.com/2015/01/21/phishing-for-credentials-if-you-want-it-just-ask/)
 
+[Real World Phishing Techniques - Honeynet Project](http://www.honeynet.org/book/export/html/89)
+
+[Tab Napping - Phishing](http://www.exploit-db.com/papers/13950/)
+
+[How do I phish? – Advanced Email Phishing Tactics - Pentest Geek](https://www.pentestgeek.com/2013/01/30/how-do-i-phish-advanced-email-phishing-tactics/)
 
 
-Phishing Frameworks:
+####Phishing Frameworks:
 
 [Phishing Frenzy](http://www.phishingfrenzy.com/)
 * Phishing Frenzy is an Open Source Ruby on Rails application that is leveraged by penetration testers to manage email phishing campaigns. The goal of the project is to streamline the phishing process while still providing clients the best realistic phishing campaign possible. This goal is obtainable through campaign management, template reuse, statistical generation, and other features the Frenzy has to offer.
+
+[sptoolkit](https://github.com/sptoolkit/sptoolkit)
+* Simple Phishing Toolkit is a super easy to install and use phishing framework built to help Information Security professionals find human vulnerabilities
 
 

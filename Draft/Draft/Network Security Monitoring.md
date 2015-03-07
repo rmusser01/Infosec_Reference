@@ -7,6 +7,12 @@
 [ELSA](https://github.com/mcholste/elsa)
 
 
+###Cull
+
+
+[ bro-intel-generator](https://github.com/exp0se/bro-intel-generator)
+* Script for generating Bro intel files from pdf or html reports
+
 
 
 ###ELK Stack (Elastic Search, Logstash, Kibana)

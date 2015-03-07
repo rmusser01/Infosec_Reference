@@ -6,10 +6,16 @@
 http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-macs-and-sdrs-robert-ghilduta
 
 
+
+[Gr0SMoSDR](http://sdr.osmocom.org/trac/wiki/GrOsmoSDR)
+
+[PyBOMBS](http://gnuradio.org/redmine/projects/pybombs/wiki)
+* PyBOMBS (Python Build Overlay Managed Bundle System) is the new GNU Radio install management system for resolving dependencies and pulling in out-of-tree projects.  One of the main purposes of PyBOMBS is to aggregate out-of-tree projects, which means that PyBOMBS needs to have new recipes for any new project. We have done a lot of the initial work to get known projects into the PyBOMBS system as is, but we will need project developers for new OOT projects or other projects not currently listed to help us out with this effort.
+
 Bluetooth NSA toolset talk/attacks vid
 http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/15-the-nsa-playset-bluetooth-smart-attack-tools-mike-ryan
 
-
+[Software Defined Radio with HackRF](https://greatscottgadgets.com/sdr/)
 
 [WPA/WPA2 Dictionaries](https://wifi0wn.wordpress.com/wepwpawpa2-cracking-dictionary/)
 

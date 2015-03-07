@@ -11,54 +11,52 @@ Information Security Reference That Doesn't Suck
 #####This page
 * This page has links to *some* of the content on here. This is still very much a  WIP. More content is within the Draft folder. If you want to contribute, feel free.
 
-[Attacking Android](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Attacking%20Android.md) - Looking good
+[Attacking/Defending Android](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Attacking%20Android.md) - Looking good
 
-[Attacking iOS](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Attacking%20iOS.md)
+[Attacking/Defending iOS](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Attacking%20iOS.md) - Needs a lot
 
 [Appsec](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/AppSec.md) - More
 
-[Building a Pen Test Lab](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Building%20A%20Pentest%20Lab.md)
+[Building a Pen Test Lab](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Building%20A%20Pentest%20Lab.md) - Eh
 
-[Computer Hardware attacks](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Computer%20Hardware%20Attacks.md) - General
+[Computer Hardware attacks](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Computer%20Hardware%20Attacks.md) - Could use more quality content
 
-[Con Videos](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Con%20Videos%20Stuff.md) - Add Defcon Archive; Shmoocon/Ruxcon/etc.
+[Con Videos](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Con%20Videos%20Stuff.md) - Add Shmoocon/Ruxcon/etc.
 
-[Counter Surveillance](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Counter%20Surveillance.md) - Need Legit info
+[Counter Surveillance](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Counter%20Surveillance.md) - Need more Legit info
 
-[Crypto Currencies](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/CryptoCurrencies.md - In general)
+[Crypto Currencies](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/CryptoCurrencies.md) - More in general
 
-[Crypto](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Cryptography%20%26%20Encryption.md) - General/form 
+[Crypto](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Cryptography%20%26%20Encryption.md) - General
 
-[CTFs & Wargames](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/CTFs%20%26%20Wargames.md)
+[CTFs & Wargames](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/CTFs%20%26%20Wargames.md) - Kinda ok
 
-[Darknets](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Darknets.md) - Need more than just reddit
+[Darknets](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Darknets.md) - Need more than just /r/darknets
 
-[Data Visualization](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Data%20Visualization.md) - More in general
+[Data Visualization](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Data%20Visualization.md) - More in general; aimed towards representation of security related matters; maybe binary viz
 
-[Disinformation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Disinformation.md) - Needs more info, bare
+[Disinformation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Disinformation.md) - Needs more info
 
-[Disclosure](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Disclosure.md) - Some historical things
+[Disclosure](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Disclosure.md) - Some historical things; Not really sure if I'll add anymore, I feel this is pretty much a "You are in camp A, camp B, or camp C, but not two or more".
 
-[Documentation & Reporting](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Documentation%20%26%20Reports.md)
+[Documentation & Reporting](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Documentation%20%26%20Reports.md) - Looking good but could always use more
 
 [Embedded Devie Security](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Embedded%20Device%20Security.md) - Combine with Hardware Hacking
 
-[Exploit Dev](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Draft/Exploit%20Development) - Structure/cleanup/clear out
+[Exploit Dev](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Draft/Exploit%20Development) - Clean out cull, add shortlinks
 
 [Forensics](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Forensics.md) - Integrate from cull list; More anti-forensics; more resources
 
 [Fuzzing](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Fuzzing.md) - Educational stuff; more writeups
 
-[Game Hacking]
-
-[Google Hacking](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Google%20Hacking.md) - Completely empty
+[Google Hacking](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Google%20Hacking.md) - Need wikipedia stuff, table of dorks
 
 [Hardware Hacking](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Hardware%20Hacking%20Teensy-like%20stuff.md) - Combine with Embedded Device
 
 
-[Honeypots](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Honeypots.md) - More
+[Honeypots](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Honeypots.md) - More, kinda bare
 
-[Lockpicking](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Lockpicking.md) - needs more
+[Lockpicking](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Lockpicking.md) - Looking good; needs more books and "official" references/resources
 
 [Logging](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Logging.md) - More for all
 
@@ -68,7 +66,7 @@ Information Security Reference That Doesn't Suck
 
 [Network Recon](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Draft/Network%20Reconnaissance%26Enumeration) - More in general, more finesse
 
-[Network Security Monitoring](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Network%20Security%20Monitoring.md) - more in general
+[Network Security Monitoring/Incident Response](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Network%20Security%20Monitoring.md) - more in general
 
 [OSINT](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Open%20Source%20Intelligence.md) - Looking better - Need to clear cull folder
 

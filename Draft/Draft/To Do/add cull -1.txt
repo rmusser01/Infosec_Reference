@@ -6,6 +6,36 @@ appleexaminer.com
 
 [Mobile: Cellular Exploitation on a Global Scale The Rise & Fall of the Control](https://www.youtube.com/watch?v=HD1ngJ85vWM)
 
+[Full details on CVE-2015-0096 and the failed MS10-046 Stuxnet fix](http://h30499.www3.hp.com/t5/HP-Security-Research-Blog/Full-details-on-CVE-2015-0096-and-the-failed-MS10-046-Stuxnet/ba-p/6718459#.VP9cTDTF-PU)
+
+[Self-Exfiltration: The Dangers of Browser-Enforced Information Flow Control](http://ericchen.me/self_exfiltration.pdf)
+* Abstract —Since the early days of Netscape, browser vendors and web security researchers have restricted out-going data based on its destination. The security argument accompanying these mechanisms is that they prevent sensitive user data from being sent to the attacker’s domain. However, in this paper, we show that regulating web information flow based on its destination server is an inherently flawed security practice. It is vulnerable to self-exfiltration attacks, where an adversary stashes stolen information in the database of a whitelisted site, then later independently connects to the whitelisted site to retrieve the information. We describe eight existing browser security mechanisms that are vulnerable to these “self-exfiltration” attacks. Furthermore, we discovered at least one exfiltration channel for each of the Alexa top 100 websites. None of the existing information flow control mechanisms we surveyed are sufficient to protect data from being leaked to the attacker. Our goal is to prevent browser vendors and researchers from falling into this trap by designing more systems that are vulnerable to self-exfiltration.
+
+
+
+
+
+[A Messy State of the Union: Taming the Composite State Machines of TLS](https://www.smacktls.com/smack.pdf)
+* Abstract —Implementations of the Transport Layer Security (TLS) protocol must handle a variety of protocol versions and extensions, authentication modes and key exchange methods, where each combination may prescribe a different message sequence between the client and the server. We address the problem of designing a robust composite state machine that can correctly multiplex between these different protocol modes. We systematically test popular open-source TLS implementations for state machine bugs and discover several critical security vulnerabilities that have lain hidden in these libraries for years (they are now in the process of being patched). We argue that these vulnerabilities stem from incorrect compositions of individually correct state machines. We present the first verified implementation of a composite TLS state machine in C that can be embedded into OpenSSL and accounts for all its supported ciphersuites. Our attacks expose the need for the formal verifica- tion of core components in cryptographic protocol libraries; our implementation demonstrates that such mechanized proofs are within reach, even for mainstream TLS implementations.
+
+
+[ Modeling Zero Day Malware Spread](https://lqdc.github.io/modeling-zero-day-malware-spread.html)
+
+[VirusTotal Mining](http://blog.9bplus.com/wp-content/uploads/2014/08/VirusTotal-Mining.pdf)
+
+[Making FinFisher Undetectable](https://lqdc.github.io/making-finfisher-undetectable.html)
+
+
+[xnippet](https://github.com/isislab/xnippet)
+* xnippet is a tool that lets you load code snippets or isolated functions (no matter the operating system they came from), pass parameters to it in several formats (signed decimal, string, unsigned hexadecimal...), hook other functions called by the snippet and analyze the result. The tool is written in a way that will let me improve it in a future, defining new calling conventions and output argument pointers.
+
+[Corporate Espionage: Gathering Actionable Intelligence Via Covert Operations - Brent White - Defcon22](https://www.youtube.com/watch?v=D2N6FclMMTg)
+
+[Mass Scanning the Internet: Tips, Tricks, Results - DEF CON 22 - Graham, Mcmillan, and Tentler](https://www.youtube.com/watch?v=nX9JXI4l3-E)
+
+[Just What The Doctor Ordered? - Scott Erven and Shawn Merdinger - DEF CON 22](https://www.youtube.com/watch?v=wTEMSBXtkAc)
+* This discussion will also highlight the fallout from security standards not being a requirement for medical device manufacturers, and our experience in identifying and reporting vulnerabilities. We will provide our insight into what needs to be done for healthcare organizations to respond to the new threat of cyber-attack against medical devices. We are working towards a future where cyber security issues in medical devices are a thing of the past. We will discuss the recent success and traction we have gained with healthcare organizations, federal agencies and device manufacturers in addressing these security issues. The train is now moving, so please join us to find out how you can get involved and make a difference by ensuring patient safety.
+
 
 [Exploit: Hacking the Wireless World with Software Defined Radio BlackHat USA 2014](https://www.youtube.com/watch?v=XWbwFfxzw6w)
 
@@ -52,6 +82,24 @@ appleexaminer.com
 
 
 
+[unindexed](https://github.com/mroth/unindexed/blob/master/README.md)
+* The site is constantly searching for itself in Google, over and over and over, 24 hours a day. The instant it finds itself in Google search results, the site will instantaneously and irrevocably securely delete itself. Visitors can contribute to the public content of the site, these contributions will also be destroyed when the site deletes itself.
+
+
+
+
+
+[The Sorcerer’s Apprentice Guide to Fault Attacks](https://eprint.iacr.org/2004/100.pdf)
+* The effect of faults on electronic systems has been stud- ied since the 1970s when it was noticed that radioactive particles caused errors in chips. This led to further research on the effect of charged particles on silicon, motivated by the aerospace industry who was becoming concerned about the effect of faults in airborn electronic systems. Since then various mechanisms for fault creation and propaga- tion have been discovered and researched. This paper cov- ers the various methods that can be used to induce faults in semiconductors and exploit such errors maliciously. Sev- eral examples of attacks stemming from the exploiting of faults are explained. Finally a series of countermeasures to thwart these attacks are described.
+
+
+[Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors](https://www.ece.cmu.edu/~safari/pubs/kim-isca14.pdf)
+* Abstract. Memory isolation is a key property of a reliable and secure computing system — an access to one memory ad- dress should not have unintended side e ects on data stored in other addresses. However, as DRAM process technology scales down to smaller dimensions, it becomes more di  cult to prevent DRAM cells from electrically interacting with each other. In this paper, we expose the vulnerability of commodity DRAM chips to disturbance errors. By reading from the same address in DRAM, we show that it is possible to corrupt data in nearby addresses. More specifically, activating the same row in DRAM corrupts data in nearby rows. We demonstrate this phenomenon on Intel and AMD systems using a malicious program that generates many DRAM accesses. We induce errors in most DRAM modules (110 out of 129) from three major DRAM manufacturers. From this we conclude that many deployed systems are likely to be at risk. We identify the root cause of disturbance errors as the repeated toggling of a DRAM row’s wordline, which stresses inter-cell coupling e ects that accelerate charge leakage from nearby rows. We provide an extensive characterization study of disturbance er- rors and their behavior using an FPGA-based testing plat- form. Among our key findings, we show that (i) it takes as few as 139K accesses to induce an error and (ii) up to one in every 1.7K cells is susceptible to errors. After examining var- ious potential ways of addressing the problem, we propose a low-overhead solution to prevent the errors.
+
+
+
+
+
 
 
 https://the.bytecode.club/
@@ -72,6 +120,29 @@ http://www.malcolmstagg.com/bdp-s390.html
 
 http://www.slideshare.net/mubix/windows-attacks-at-is-the-new-black-26665607
 
+[Blinding The Surveillance State - Christopher Soghoian - DEFCON22](https://www.youtube.com/watch?v=pM8e0Dbzopk)
+* We live in a surveillance state. Law enforcement and intelligence agencies have access to a huge amount of data about us, enabling them to learn intimate, private details about our lives. In part, the ease with which they can obtain such information reflects the fact that our laws have failed to keep up with advances in technology. However, privacy enhancing technologies can offer real protections even when the law does not. That intelligence agencies like the NSA are able to collect records about every telephone call made in the United States, or engage in the bulk surveillance of Internet communications is only possible because so much of our data is transmitted in the clear. The privacy enhancing technologies required to make bulk surveillance impossible and targeted surveillance more difficult already exist. We just need to start using them.
+
+[The NSA: Capabilities and Countermeasures - Bruce Schneier - ShmooCon 2014](https://www.youtube.com/watch?v=D5JA8Ytk9EI)
+* Edward Snowden has given us an unprecedented window into the NSA's surveillance activities. Drawing from both the Snowden documents and revelations from previous whistleblowers, I will describe the sorts of surveillance the NSA does and how it does it. The emphasis is on the technical capabilities of the NSA, not the politics of their actions. This includes how it conducts Internet surveillance on the backbone, but is primarily focused on their offensive capabilities: packet injection attacks from the Internet backbone, exploits against endpoint computers and implants to exfiltrate information, fingerprinting computers through cookies and other means, and so on. I will then talk about what sorts of countermeasures are likely to frustrate the NSA. Basically, these are techniques to raise the cost of wholesale surveillance in favor of targeted surveillance: encryption, target hardening, dispersal, and so on.
+
+
+[How to you Feel about your Mother? Psych and The SE - DEF CON 22 - Michele Fincher](https://www.youtube.com/watch?v=A0_NL1YBvK4)
+
+
+
+[Deconstructing the Circuit Board Sandwich DEF CON 22 - Joe Grand aka Kingpin](https://www.youtube.com/watch?v=O8FQZIPkgZM)
+
+
+[PHP-ShockPot](https://github.com/leonjza/PHP-ShockPot)
+* PHP-ShockPot is a small honeypot aimed at showing you the interesting attempts made trying to exploit your host using the now famous "Shellshock" (also known as bashbug) bug.
+
+
+
+[10 Tips to Secure Your Apache Web Server on UNIX / Linux](http://www.thegeekstuff.com/2011/03/apache-hardening/)
+
+[Logging ALL THE THINGS Without All The Cost With Open Source Big Data Tools - DEFCON22 - Zach Fasel](https://www.youtube.com/watch?v=2AAnVeIwXBo)
+* Many struggle in their job with the decision of what events to log in battle against costly increases to their licensing of a commercial SIEM or other logging solution. Leveraging the open source solutions used for "big-data" that have been proven by many can help build a scalable, reliable, and hackable event logging and security intelligence system to address security and (*cringe*) compliance requirements. We’ll walk through the various components and simple steps to building your own logging environment that can extensively grow (or keep sized just right) with just additional hardware cost and show numerous examples you can implement as soon as you get back to work (or home).
 
 
 [List of hacker sites](http://link-base.org/)
@@ -84,19 +155,34 @@ https://archive.org/details/HardwareStuffForSoftwarePeople
 
 http://opensecuritytraining.info/MalwareDynamicAnalysis_files/MalwareDynamicAnalysis02.pdf
 
-
+[FILE SIGNATURES TABLE](http://www.garykessler.net/library/file_sigs.html)
+* This table of file signatures (aka "magic numbers") is a continuing work-in-progress. I have found little information on this in a single place, with the exception of the table in Forensic Computing: A Practitioner's Guide by T. Sammes & B. Jenkinson (Springer, 2000); that was my inspiration to start this list in 2002. See also Wikipedia's List of file signatures. Comments, additions, and queries can be sent to Gary Kessler at gck@garykessler.net.
 
 http://www.slideshare.net/grecsl/malware-analysis-101-n00b-to-ninja-in-60-minutes-at-cactuscon-on-april-4-2014
 
-
+http://www.panelguides.com/index.php?option=com_jdownloads&Itemid=13
 
 http://cs.gmu.edu/~astavrou/research/PyTrigger_ARES2013.pdf
+
+
+
+
+
+
+
+
 
 
 http://sniperforensicstoolkit.squarespace.com/malwaremanagementframework/
 
 
 https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks
+
+
+
+
+
+
 
 
 http://www.myopenrouter.com/article/10917/Port-Mirroring-Span-Port-Monitor-Port-with-iptables-on-NETGEAR-WGR614L/
@@ -119,6 +205,11 @@ http://www.covert.io/
 http://www.harmj0y.net/blog/powershell/dumping-a-domains-worth-of-passwords-with-mimikatz-pt-2/
 
 Dare is a project which aims at enabling Android application analysis. The Dare tool retargets Android applications in .dex or .apk format to traditional .class files. These .class files can then be processed by existing Java tools, including decompilers. Thus, Android applications can be analyzed using a vast range of techiques developed for traditional Java applications. 
+
+
+
+
+
 
 http://siis.cse.psu.edu/
 http://c7zero.info/

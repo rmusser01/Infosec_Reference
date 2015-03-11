@@ -9,7 +9,7 @@
 [Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
 
 
-
+[What a C programmer should know about memory](http://marek.vavrusa.com/c/memory/2015/02/20/memory/)
 
 
 ###Assembly x86/x64/ARM

@@ -1,16 +1,27 @@
 ##Lockpicking
 
+
+
+http://www.keypicking.com/
+
+https://www.reddit.com/r/lockpicking
+
+
+[Safecracking for the computer scientist*](http://www.crypto.com/papers/safelocks.pdf)
+
+
+
 ###Introduction
 
 [Wikipedia on Lockpicking](https://en.wikipedia.org/wiki/Lock_picking)
 
 [Introduction to Lockpicking and Physical Security - DEFCON 13](https://www.youtube.com/watch?v=JupQ3BpKGYg)
 
+[A newbies guide to safes, both opening and using](https://www.reddit.com/r/WhatsInThisThing/comments/1gm6uk/a_newbies_guide_to_safes_both_opening_and_using/)
 
 ###General Information
 
 [Various types of locks](https://securitysnobs.com/Types-Of-Locks.html)
-
 
 
 ###Videos/Talks
@@ -43,4 +54,14 @@
 ###Guides
 
 [Newbies guide to picking safes](http://cybergibbons.com/lockpicking-2/a-newbies-guide-to-safes/)
+
+
+
+
+
+
+
+ [Distinguishing Lockpicks: Raking vs Lifting vs Jiggling and More - Deviant Ollam](https://www.youtube.com/watch?v=e07VRxJ01Fs)
+
+
 

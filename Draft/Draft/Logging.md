@@ -1,5 +1,12 @@
 ##Logging
 
+ELK Stack
+
+
+Logstash/Kibana Elastic Search
+
+
+
 [Spotting the Adversary with Windows Event Log Monitoring - NSA](https://www.nsa.gov/ia/_files/app/Spotting_the_Adversary_with_Windows_Event_Log_Monitoring.pdf)
 
 
@@ -10,6 +17,8 @@
 [Windows logging Cheat sheet - Sniper Forensics](https://sniperforensicstoolkit.squarespace.com/storage/logging/Windows%20Logging%20Cheat%20Sheet%20v1.1.pdf)
 
 
+[Logging ALL THE THINGS Without All The Cost With Open Source Big Data Tools](https://www.youtube.com/watch?v=2AAnVeIwXBo)
+
 [bmon](https://github.com/tgraf/bmon)
 * bmon is a monitoring and debugging tool to capture networking related statistics and prepare them visually in a human friendly way. It features various output methods including an interactive curses user interface and a programmable text output for scripting.
 
@@ -17,6 +26,9 @@
 [Making the Most of OSSEC](http://www.ossec.net/files/Making_the_Most_of_OSSEC.pdf)
 
 
+
+[Pip3line, the Swiss army knife of byte manipulation](https://nccgroup.github.io/pip3line/index.html)
+* Pip3line is a raw bytes manipulation utility, able to apply well known and less well known transformations from anywhere to anywhere (almost).
 
 
 [ Strange Attractors and TCP/IP Sequence Number Analysis  - Michal Zalewski](http://lcamtuf.coredump.cx/oldtcp/tcpseq.html)

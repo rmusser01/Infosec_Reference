@@ -15,6 +15,7 @@
 [The Many Maxims of Maximally Effective CTFs](http://captf.com/maxims.html)
 
 
+[CTF write-ups 2015](https://github.com/ctfs/write-ups-2015)
 
 [Golden Flag CTF Awards](http://golden-flags.com/)
 

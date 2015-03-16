@@ -10,6 +10,8 @@ http://www.cis.syr.edu/~wedu/seed/all_labs.html - Training
 * Exercises for learning Reverse Engineering and Exploitation. All binaries for these challenges are ELF 64-bit LSB executable, x86-64.
 
 
+[asm - 0xAX](https://github.com/0xAX/asm)
+* Learning assembly for linux-x64 
 
 
 [ENISA CERT Exercises and Training](http://www.enisa.europa.eu/activities/cert/support/exercise)
@@ -30,15 +32,16 @@ http://www.cis.syr.edu/~wedu/seed/all_labs.html - Training
 * PentesterLab provides vulnerable systems that can be used to test and understand vulnerabilities.
 
 
+[Open Security Training](www.opensecuritytraining.info)
+* Taken from their front page:
 
+>In the spirit of OpenCourseWare and the Khan Academy, OpenSecurityTraining.info is dedicated to sharing training material for computer security classes, on any topic, that are at least one day long.
 
+>All material is licensed with an open license like CreativeCommons, allowing anyone to use the material however they see fit, so long as they share modified works back to the community.
 
+>We highly encourage people who already know these topic areas to take the provided material and pursue paid and unpaid teaching opportunities.
 
-
-
-
-
-
+>Those who can, teach.
 
 
 

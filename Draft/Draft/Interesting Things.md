@@ -12,7 +12,35 @@ http://www.securitywizardry.com/radar.htm
 
 [They clapped](http://www.econlib.org/library/Columns/y2007/Mungergouging.html)
 
+
+
+TOC
+
+
+Cull
+Interesting Attacks
+Interesting Papers
+Interesting Projects
+Interesting Software
+Interesting Write-ups
+
+
+
 ###CULL
+
+
+[More on Using Bash's Built-in /dev/tcp File (TCP/IP)](http://www.linuxjournal.com/content/more-using-bashs-built-devtcp-file-tcpip More on Using Bash's Built-in /dev/tcp File (TCP/IP))
+
+[Foreign LINUX](https://github.com/wishstudio/flinux)
+* Foreign LINUX is a dynamic binary translator and a Linux system call interface emulator for the Windows platform. It is capable of running unmodified Linux binaries on Windows without any drivers or modifications to the system. This provides another way of running Linux applications under Windows in constrast to Cygwin and other tools
+
+[Just What The Doctor Ordered? - Scott Erven and Shawn Merdinger - DEF CON 22](https://www.youtube.com/watch?v=wTEMSBXtkAc)
+* This discussion will also highlight the fallout from security standards not being a requirement for medical device manufacturers, and our experience in identifying and reporting vulnerabilities. We will provide our insight into what needs to be done for healthcare organizations to respond to the new threat of cyber-attack against medical devices. We are working towards a future where cyber security issues in medical devices are a thing of the past. We will discuss the recent success and traction we have gained with healthcare organizations, federal agencies and device manufacturers in addressing these security issues. The train is now moving, so please join us to find out how you can get involved and make a difference by ensuring patient safety.
+
+
+[Wars Within](http://uninformed.org/?v=all&a=26&t=sumry)
+* In this paper I will uncover the information exchange of what may be classified as one of the highest money making schemes coordinated by 'organized crime'. I will elaborate on information gathered from a third party individual directly involved in all aspects of the scheme at play. I will provide a detailed explanation of this market's origin, followed by a brief description of some of the actions strategically performed by these individuals in order to ensure their success. Finally, I will elaborate on real world examples of how a single person can be labeled a spammer, malware author, cracker, and an entrepreneur gone thief. For the purposes of avoiding any legal matters, and unwanted media, I will refrain from mentioning the names of any individuals and corporations who are involved in the schemes described in this paper. 
+
 
 [Postcards from a Post-XSS World - Michael Zalewski](http://lcamtuf.coredump.cx/postxss/#dangling-markup-injection)
 * This page is a rough collection of notes on some of the fundamental alternatives to direct script injection that would be available to attackers following the universal deployment of CSP or other security mechanisms designed to prevent the execution of unauthorized scripts. I hope to demonstrate that in many cases, the capabilities offered by these alternative methods are highly compatible with the goals of contemporary XSS attacks. 

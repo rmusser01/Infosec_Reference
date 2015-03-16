@@ -3,18 +3,6 @@
 
 [The Gentleperson’s Guide to Forum Spies]cryptome.org/2012/07/gent-forum-spies.htm)
 
-
-
-
-
-
-
-
-
-
-
-
-
 [Attribution As A Weapon & Marketing Tool: Hubris In INFOSEC & NATSEC](https://krypt3ia.wordpress.com/2014/12/30/attribution-as-a-weapon-marketing-tool-hubris-in-infosec-natsec/)
 
 [Disinformation of Charlie Hebdo and The Fake BBC Website](http://thetrendythings.com/read/18256)
@@ -26,8 +14,6 @@
 
 
 [Governments and UFOs: A Historical Analysis of Disinformation and Deception - Richard Thieme](http://www.irongeek.com/i.php?page=videos/bsideslasvegas2013/1-2-7-governments-and-ufos-a-historical-analysis-of-disinformation-and-deception-richard-thieme)
-
-
 
 
 [Russia Convention on International Information Security](http://cryptome.org/2014/05/ru-international-infosec.htm)

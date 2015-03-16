@@ -1,6 +1,6 @@
 #CTFs & Wargames
 
-###Capture The Flag(CTF) events
+
 
 #####event lists goes here
 [ctf-time](https://ctftime.org/)
@@ -54,32 +54,11 @@ Description: RingZer0 Team's online CTF offers you tons of challenges designed t
 * This is the framework that the UC Santa Barbara Seclab uses to host the iCTF, and that can be used to create your own CTFs at http://ictf.cs.ucsb.edu/framework. The framework creates several VMs: one for the organizers and one for every team. 
 
 
-##Online Training Courses
-
-###General Online Courses
-
-Offensive Computer Security
-http://www.cs.fsu.edu/~redwood/OffensiveComputerSecurity/
-
-
-#####[Open Security Training](www.opensecuritytraining.info)
-* Taken from their front page:
-
->In the spirit of OpenCourseWare and the Khan Academy, OpenSecurityTraining.info is dedicated to sharing training material for computer security classes, on any topic, that are at least one day long.
-
->All material is licensed with an open license like CreativeCommons, allowing anyone to use the material however they see fit, so long as they share modified works back to the community.
-
->We highly encourage people who already know these topic areas to take the provided material and pursue paid and unpaid teaching opportunities.
-
->Those who can, teach.
-
-#####[XSS Challenge Wiki](https://github.com/cure53/xss-challenge-wiki/wiki)
-* [List without spoilers:](https://github.com/cure53/xss-challenge-wiki/wiki/Older-Challenges-and-Write-Ups)
 
 
 ###Vulnerable Virtual Machines
 
-#####[Vulnhub](Https://www.Vulnhub.com)
+[Vulnhub](Https://www.Vulnhub.com)
 
 
 
@@ -105,11 +84,10 @@ Wechall
 
 #####[Tasteless](http://chall.tasteless.se/)
 
-
 #####[Hack This](https://www.hackthis.co.uk/)
 
-
-
+#####[XSS Challenge Wiki](https://github.com/cure53/xss-challenge-wiki/wiki)
+* [List without spoilers:](https://github.com/cure53/xss-challenge-wiki/wiki/Older-Challenges-and-Write-Ups)
 
 
 
@@ -121,9 +99,6 @@ Wechall
 #####[List of themed Hacker challenges](http://counterhack.net/Counter_Hack/Challenges.html)
 
 #####[Sans Community Forensics Challenges](digital-forensics.sans.org/community/challenges)
-
-
-
 
 
 

@@ -3,10 +3,42 @@
 
 ###Cull
 
+
+Add Section for Ida plugins
+Ida pomidor plugin
+Ida sploiter plugin
+
+
+
+[Reverse](https://github.com/joelpx/reverse)
+* Reverse engineering for x86 binaries (elf-format). Generate a more readable code (pseudo-C) with colored syntax. Warning, the project is still in development, use it at your own risks. This tool try to disassemble one function (by default main). The address of the function, or its symbol, can be passed by argument.
+
+
+
+
+
+[xnippet](https://github.com/isislab/xnippet)
+* xnippet is a tool that lets you load code snippets or isolated functions (no matter the operating system they came from), pass parameters to it in several formats (signed decimal, string, unsigned hexadecimal...), hook other functions called by the snippet and analyze the result. The tool is written in a way that will let me improve it in a future, defining new calling conventions and output argument pointers.
+
+
+
+
+
+
+[SATCOM Terminals Hacking by Air, Sea, and Land - Black Hat USA 2014](https://www.youtube.com/watch?v=tRHDuT__GoM)
+
+
+
+https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
+
+[How to RE data files?](https://www.reddit.com/r/ReverseEngineering/comments/l8ac0/how_to_re_data_files/)
+* Good read over.
+
 [Introduction to Reverse Engineering Win32 Applications](http://uninformed.org/?v=all&a=7&t=sumry)
 * During the course of this paper the reader will be (re)introduced to many concepts and tools essential to understanding and controlling native Win32 applications through the eyes of Windows Debugger (WinDBG). Throughout, WinMine will be utilized as a vehicle to deliver and demonstrate the functionality provided by WinDBG and how this functionality can be harnessed to aid the reader in reverse engineering native Win32 applications. Topics covered include an introductory look at IA-32 assembly, register significance, memory protection, stack usage, various WinDBG commands, call stacks, endianness, and portions of the Windows API. Knowledge gleaned will be used to develop an application designed to reveal and/or remove bombs from the WinMine playing grid. 
 
-
+[Reverse Engineering Mac OS X](http://reverse.put.as/papers/)
+* Excellent source of papers from 2003-2013 all with a focus on reversing either iOS or OS X.
 
 
 [Inside Blizzard: Battle.net](http://uninformed.org/?v=all&a=8&t=sumry)
@@ -25,7 +57,7 @@
 [Improving Automated Analysis of Windows x64 Binaries](http://uninformed.org/?v=all&a=18&t=sumry)
 * As Windows x64 becomes a more prominent platform, it will become necessary to develop techniques that improve the binary analysis process. In particular, automated techniques that can be performed prior to doing code or data flow analysis can be useful in getting a better understanding for how a binary operates. To that point, this paper gives a brief explanation of some of the changes that have been made to support Windows x64 binaries. From there, a few basic techniques are illustrated that can be used to improve the process of identifying functions, annotating their stack frames, and describing their exception handler relationships. Source code to an example IDA plugin is also included that shows how these techniques can be implemented. 
 
-[An Objective Analysis of the Lockdown Protection System for Battle.net ](http://uninformed.org/?v=all&a=40&t=sumry)
+[An Objective Analysis of the Lockdown Protection System for Battle.net](http://uninformed.org/?v=all&a=40&t=sumry)
 * Near the end of 2006, Blizzard deployed the first major update to the version check and client software authentication system used to verify the authenticity of clients connecting to Battle.net using the binary game client protocol. This system had been in use since just after the release of the original Diablo game and the public launch of Battle.net. The new authentication module (Lockdown) introduced a variety of mechanisms designed to raise the bar with respect to spoofing a game client when logging on to Battle.net. In addition, the new authentication module also introduced run-time integrity checks of client binaries in memory. This is meant to provide simple detection of many client modifications (often labeled "hacks") that patch game code in-memory in order to modify game behavior. The Lockdown authentication module also introduced some anti-debugging techniques that are designed to make it more difficult to reverse engineer the module. In addition, several checks that are designed to make it difficult to simply load and run the Blizzard Lockdown module from the context of an unauthorized, non-Blizzard-game process. After all, if an attacker can simply load and run the Lockdown module in his or her own process, it becomes trivially easy to spoof the game client logon process, or to allow a modified game client to log on to Battle.net successfully. However, like any protection mechanism, the new Lockdown module is not without its flaws, some of which are discussed in detail in this paper. 
 
 [Real-time Steganography with RTP](http://uninformed.org/?v=all&a=36&t=sumry)
@@ -38,6 +70,149 @@
 * Automated unpackers such as Renovo, Saffron, and Pandora's Bochs attempt to dynamically unpack executables by detecting the execution of code from regions of virtual memory that have been written to. While this is an elegant method of detecting dynamic code execution, it is possible to evade these unpackers by dual-mapping physical pages to two distinct virtual address regions where one region is used as an editable mapping and the second region is used as an executable mapping. In this way, the editable mapping is written to during the unpacking process and the executable mapping is used to execute the unpacked code dynamically. This effectively evades automated unpackers which rely on detecting the execution of code from virtual addresses that have been written to. 
 
 
+[Android Reverse Engineering Defenses](https://bluebox.com/wp-content/uploads/2013/05/AndroidREnDefenses201305.pdf)
+
+
+
+###Tools
+
+
+###General Tools/Multiplatform
+
+
+
+
+
+###Linux Specific Tools
+
+
+
+
+###Windows Specific Tools
+
+
+
+
+
+
+[readelf](https://sourceware.org/binutils/docs/binutils/readelf.html)
+* Unix Tool
+
+
+
+[Rdis](https://github.com/endeav0r/rdis)
+* Rdis is a Binary Analysis Tool for Linux.
+
+
+[Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
+
+
+[Open Source Windows x86/x64 Debugger](http://x64dbg.com/)
+
+[PortEx](https://github.com/katjahahn/PortEx)
+* PortEx is a Java library for static malware analysis of Portable Executable files. Its focus is on PE malformation robustness, and anomaly detection. PortEx is written in Java and Scala, and targeted at Java applications.
+
+
+[binwally](https://github.com/bmaia/binwally)
+* Binary and Directory tree comparison tool using the Fuzzy Hashing concept (ssdeep)
+* [Using binwally - a directory tree diff tool](http://w00tsec.blogspot.com/2013/12/binwally-directory-tree-diff-tool-using.html)
+[BitBlaze](http://bitblaze.cs.berkeley.edu/)
+* The BitBlaze project aims to design and develop a powerful binary analysis platform and employ the platform in order to (1) analyze and develop novel COTS protection and diagnostic mechanisms and (2) analyze, understand, and develop defenses against malicious code. The BitBlaze project also strives to open new application areas of binary analysis, which provides sound and effective solutions to applications beyond software security and malicious code defense, such as protocol reverse engineering and fingerprint generation. 
+
+[SpyStudio](http://www.nektra.com/products/spystudio-api-monitor/)
+* SpyStudio shows and interprets calls, displaying the results in a structured way which is easy for any IT professional to understand. SpyStudio can show registry keys and files that an application uses, COM objects and Windows the application has created, and errors and exceptions.
+
+[API Monitor](http://www.rohitab.com/apimonitor)
+* API Monitor is a free software that lets you monitor and control API calls made by applications and services. Its a powerful tool for seeing how applications and services work or for tracking down problems that you have in your own applications.
+
+
+[Equip: python bytecode instrumentation](https://github.com/neuroo/equip)
+* equip is a small library that helps with Python bytecode instrumentation. Its API is designed to be small and flexible to enable a wide range of possible instrumentations. The instrumentation is designed around the injection of bytecode inside the bytecode of the program to be instrumented. However, the developer does not need to know anything about the Python bytecode since the injected code is Python source.
+
+
+[Firmware Modifcation kit](https://code.google.com/p/firmware-mod-kit/)
+* This kit is a collection of scripts and utilities to extract and rebuild linux based firmware images.
+
+
+[Binwalk](https://github.com/devttys0/binwalk)
+* Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
+
+
+PEStudio
+PEStudio is a unique tool that performs the static investigation of 32-bit and 64-bit executable. 
+
+
+
+Malicious executable often attempts to hide its malicious behavior and to evade detection. In doing so, it generally presents anomalies and suspicious patterns. The goal of PEStudio is to detect these anomalies, provide indicators and score the executable being analyzed. Since the executable file being analyzed is never started, you can inspect any unknown or malicious executable with no risk. 
+http://www.winitor.com/
+
+[DotPeek](http://www.jetbrains.com/decompiler/features/)
+* dotPeek is a .NET decompiler that has several handy features. I haven’t used it much, and don’t do much in .NET so I can’t say if its a good one, only that I’ve had success in using it.
+
+[Microsoft Message Analyzer])http://www.microsoft.com/en-us/download/details.aspx?id=40308)
+* Microsoft Message Analyzer is a new tool for capturing, displaying, and analyzing protocol messaging traffic and other system messages. Message Analyzer also enables you to import, aggregate, and analyze data from log and trace files. It is the successor to Microsoft Network Monitor 3.4 and a key component in the Protocol Engineering Framework (PEF) that was created by Microsoft for the improvement of protocol design, development, documentation, testing, and support. With Message Analyzer, you can choose to capture data live or load archived message collections from multiple data sources simultaneously.
+
+
+[API Monitor](http://www.rohitab.com/apimonitor)
+* API Monitor is a free software that lets you monitor and control API calls made by applications and services. Its a powerful tool for seeing how applications and services work or for tracking down problems that you have in your own applications.
+
+[Static binary analysis tool](https://github.com/bdcht/amoco)
+* Amoco is a python package dedicated to the (static) analysis of binaries.
+* Worth a check on the Github
+
+
+[Python RE tools list](http://pythonarsenal.erpscan.com/)
+
+
+
+[Frida](http://www.frida.re/docs/home/)
+* Inject JS into native apps
+
+
+
+[Procyon - Java Decompiler](https://bitbucket.org/mstrobel/procyon/wiki/Java%20Decompiler)
+
+[PortEx](https://github.com/katjahahn/PortEx)
+* PortEx is a Java library for static malware analysis of Portable Executable files. Its focus is on PE malformation robustness, and anomaly detection. PortEx is written in Java and Scala, and targeted at Java applications.
+
+[Xmount](https://www.pinguin.lu/xmount)
+* What is xmount? xmount allows you to convert on-the-fly between multiple input and output harddisk image types. xmount creates a virtual file system using FUSE (Filesystem in Userspace) that contains a virtual representation of the input image. The virtual representation can be in raw DD, DMG, VHD, VirtualBox's virtual disk file format or in VmWare's VMDK file format. Input images can be raw DD, EWF (Expert Witness Compression Format) or AFF (Advanced Forensic Format) files. In addition, xmount also supports virtual write access to the output files that is redirected to a cache file. This makes it possible to boot acquired harddisk images using QEMU, KVM, VirtualBox, VmWare or alike.
+
+
+
+
+[STOKE](https://github.com/eschkufz/stoke-release)
+* STOKE is a stochastic optimizer for the x86_64 instruction set. STOKE uses random search to explore the extremely high-dimensional space of all possible program transformations. Although any one random transformation is unlikely to produce a code sequence that is both correct and an improvement over the original, the repeated application of millions of transformations is sufficient to produce novel and non-obvious code sequences that have been shown to outperform the code produced by general-purpose and domain-specific compilers, and in some cases expert hand-written code.
+
+
+[Intro to x86 calling conventions](http://codearcana.com/posts/2013/05/21/a-brief-introduction-to-x86-calling-conventions.html)
+
+
+
+[Theorem prover, symbolic execution and practical reverse-engineering](https://doar-e.github.io/presentations/securityday2015/SecDay-Lille-2015-Axel-0vercl0k-Souchet.html#/)
+
+
+
+
+
+
+###File Formats
+
+[Tour of Win32 Executable format](http://msdn.microsoft.com/en-us/magazine/ms809762.aspx)
+
+
+
+
+
+
+###Anti-Reverse Engineering Techniques & Countermeasures
+
+[Anti-RE A collection of Anti-Reverse Engineering Techniques](http://pnx.tf/files/spring7_antire_plohmann_kannen.pdf)
+
+[simpliFiRE.AntiRE - An Executable Collection of Anti-Reversing Techniques](https://bitbucket.org/fkie_cd_dare/simplifire.antire)
+* AntiRE is a collection of such anti analysis approaches, gathered from various sources like Peter Ferrie's The "Ultimate" Anti-Debugging Reference and Ange Albertini's corkami. While these techniques by themselves are nothing new, we believe that the integration of these tests in a single, executable file provides a comprehensive overview on these, suitable for directly studying their behaviour in a harmless context without additional efforts. AntiRE includes different techniques to detect or circumvent debuggers, fool execution tracing, and disable memory dumping. Furthermore, it can detect the presence of different virtualization environments and gives examples of techniques used to twarth static analysis.
+
+	
 
 
 
@@ -45,23 +220,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+###Introduction
 
 
 
@@ -72,6 +231,29 @@ https://en.wikipedia.org/wiki/Reverse_engineering
 
 [Introduction to Reverse Engineering Software](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
 * This book is an attempt to provide an introduction to reverse engineering software under both Linux and Microsoft Windows©. Since reverse engineering is under legal fire, the authors figure the best response is to make the knowledge widespread. The idea is that since discussing specific reverse engineering feats is now illegal in many cases, we should then discuss general approaches, so that it is within every motivated user's ability to obtain information locked inside the black box. Furthermore, interoperability issues with closed-source proprietary systems are just plain annoying, and something needs to be done to educate more open source developers as to how to implement this functionality in their software. 
+
+
+[Medusa](https://github.com/wisk/medusa)
+* Medusa is a disassembler designed to be both modular and interactive. It runs on Windows and Linux, it should be the same on OSX. This project is organized as a library. To disassemble a file you have to use medusa_dummy or qMedusa. wxMedusa and pydusa are not available anymore.
+
+[x86 opcode structure and instruction overview](http://pnx.tf/files/x86_opcode_structure_and_instruction_overview.pdf)
+
+[ALPHA3[(https://code.google.com/p/alpha3/)
+* ALPHA3 is a tool for transforming any x86 machine code into 100% alphanumeric code with similar functionality. It works by encoding the original code into alphanumeric data and combining this data with a decoder, which is a piece of x86 machine code written specifically to be 100% alphanumeric. When run, the decoder converts the data back to the original code, after which it is executed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -103,13 +285,119 @@ http://www.codeproject.com/Articles/30815/An-Anti-Reverse-Engineering-Guide
 What is Reverse Engineering? See the following link:
 http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering
 
-Guides & Tutorials
 
 
-Wikis
 
 
-Reference Guides
+###Firmware Analysis
+
+[An Introduction to Firmware Analysis[30c3]](https://www.youtube.com/watch?v=kvfP7StmFxY)
+* This talk gives an introduction to firmware analysis: It starts with how to retrieve the binary, e.g. get a plain file from manufacturer, extract it from an executable or memory device, or even sniff it out of an update process or internal CPU memory, which can be really tricky. After that it introduces the necessary tools, gives tips on how to detect the processor architecture, and explains some more advanced analysis techniques, including how to figure out the offsets where the firmware is loaded to, and how to start the investigation.
+
+
+Reverse Engineering Router Firmware walk through
+* [Part 1](http://www.secforce.com/blog/2014/04/reverse-engineer-router-firmware-part-1/)
+* [Part 2](http://www.secforce.com/blog/2014/07/reverse-engineer-router-firmware-part-2/)
+
+###Guides & Tutorials
+
+
+
+###Protocol Analysis & Related
+
+* [Netzob](http://www.netzob.org/)
+* Originaly, the development of Netzob has been initiated to support security auditors and evaluators in their activities of modeling and simulating undocumented protocols. The tool has then been extended to allow smart fuzzing of unknown protocol. 
+[Netzob Documentation](http://netzob.readthedocs.org/en/latest/overview/index.html) 
+
+
+
+###Writeups
+
+[A Technical Analysis of CVE 2014-1776](http://blog.fortinet.com/post/a-technical-analysis-of-cve-2014-1776)
+
+
+
+[Somfy Smoove Origin RTS Protocol](https://pushstack.wordpress.com/somfy-rts-protocol/)
+* This document describes the Somfy RTS protocol as used by the “Somfy Smoove Origin RTS”. Most information in this document is based on passive observation of the data send by the Smoove Origin RTS remote, and thus can be inaccurate or incorrect!
+
+[ Reverse Engineering The eQSO Protocol](https://gist.github.com/anonymous/7a9d713e61ba990a3a17)
+* Today I reverse engineered the eQSO protocol. If you didn't know, eQSO is a small program that allows radio amateurs to talk to each other online. Sadly this program isn't as popular as it used to be (Well, neither is the radio).
+
+[You can ring my bell! Adventures in sub-GHz RF land…](http://adamsblog.aperturelabs.com/2013/03/you-can-ring-my-bell-adventures-in-sub.html)
+
+
+Reverse engineering walk htrouhg; guy rev eng alarm system from shelf to replay
+https://www.reddit.com/r/ReverseEngineering/comments/1hb7oy/a_series_about_basics_of_hardware_reverse/
+Part 1: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-system-part-1/
+Part 2: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-2/
+Part 3: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-3/
+Part 4: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-4/
+Part 5: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-5/
+Part 6: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-6/
+Part 7: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-7/
+Part 8: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-8/
+
+###Papers
+
+[Byteweight: Learning to Recognize Functions in Binary Code](https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-bao.pdf)
+
+[Reverse Engineering Qualcomm Baseband](http://events.ccc.de/congress/2011/Fahrplan/attachments/2022_11-ccc-qcombbdbg.pdf)
+
+[The Art of Unpacking - Paper](https://www.blackhat.com/presentations/bh-usa-07/Yason/Whitepaper/bh-usa-07-yason-WP.pdf)
+* Abstract: The main purpose of this paper is to present anti-reversing techniques employed by 
+executable packers/protectors and also discusses techniques and publicly available tools that 
+can be used to bypass or disable this protections. This information will allow researchers, 
+especially, malcode analysts to identify these techniques when utilized by packed malicious 
+code, and then be able decide the next move when these anti-reversing techniques impede 
+successful analysis. As a secondary purpose, the information presented can also be used by 
+researchers that are planning to add some level of protection in their software by slowing 
+down reversers from analyzing their protected code, but of course, nothing will stop a skilled, 
+informed, and determined reverser
+
+
+
+[Paper on Manual unpacking of UPX packed executable using Ollydbg and Importrec](http://www.iosrjournals.org/iosr-jce/papers/Vol16-issue1/Version-1/L016117177.pdf)
+
+
+
+
+
+
+
+###Wikis & Useful Sites
+[FCC ID Lookup](http://transition.fcc.gov/oet/ea/fccid/)
+* Lookup devices according to FCC ID
+
+
+
+
+
+###Reference Guides
+
+
+
+###Talks & Videos
+
+[Cyber Necromancy - Reverse engineering dead protocols - Defcamp 2014 ](https://www.youtube.com/watch?v=G0v2FO2Ru0w&index=6&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
+
+
+
+
+
+
+
+###Hardware Focused Reverse Engineering
+
+[Reverse Engineering Intels Management Engine](http://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf) 
+* On every intel chip core2duo and newer
+
+[ChipWhisperer](http://www.newae.com/chipwhisperer)
+* ChipWhisperer is the first ever open-source solution that provides a complete toolchain for research and analysis of embedded hardware security. Side Channel Power Analysis, Clock Glitching, VCC Glitching, and more are all possible with this unique tool.
+
+####Hacking the Dropcam series
+	[Part 1 - Dropcam Comms](http://blog.includesecurity.com/2014/03/Reverse-Engineering-Dropcam-Communications.html)
+	[Part 2 - Rooting the Dropcam](http://blog.includesecurity.com/2014/04/reverse-engineering-dropcam-rooting-the-device.html)
+	[Part 3 - Dropcam Lua Bytecode](http://blog.includesecurity.com/2014/08/Reverse-Engineering-Dropcam-Lua-Bytecode.html)
 
 
 

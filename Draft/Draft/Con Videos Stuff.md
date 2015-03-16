@@ -18,7 +18,6 @@
 [Archive of security conference videos](http://wipkip.nikhef.nl/events/)
 
 
-)
 
 
 

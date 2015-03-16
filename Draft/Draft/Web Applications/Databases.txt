@@ -5,7 +5,7 @@
 
 
 
-[SQL Injection wiki](http://www.sqlinjectionwiki.com/)
+
 
 
 
@@ -15,11 +15,11 @@
 NoSQL
 
 
-http://blog.spiderlabs.com/2013/03/mongodb-security-weaknesses-in-a-typical-nosql-database.html
 
 
-Checklist for mongodb
-http://blog.mongodirector.com/10-tips-to-improve-your-mongodb-security/
+[MongoDB: Typical Security Weaknesses in a NoSQL DB](http://blog.spiderlabs.com/2013/03/mongodb-security-weaknesses-in-a-typical-nosql-database.html)
+
+
 
 Cheat sheet
 NoSQL-injection Cheat Sheet

@@ -6,13 +6,21 @@
 
 [Shadow Walker - Raising the Bar for Rootkit detection - BH 2005](https://www.blackhat.com/presentations/bh-jp-05/bh-jp-05-sparks-butler.pdf)
 
+[MoRE Shadow Walker : TLB - splitting on Modern x86](https://www.blackhat.com/docs/us-14/materials/us-14-Torrey-MoRE-Shadow-Walker-The-Progression-Of-TLB-Splitting-On-x86-WP.pdf)
+* MoRE, or Measurement of Running Executables, was a DARPA Cyber Fast Track effort to study the feasibility of utilizi ng x86 translation look - aside buffer (TLB) splitting techniques for realizing periodic measurements of running and dynamically changing applications. It built upon PaX, which used TLB splitting to emulate the no - execute bit and Shadow Walker, a memory hidi ng rootkit ; both designed for earlier processor architectures. MoRE and MoRE Shadow Walker are a defensive TLB splitting system and a prototype memory hiding rootkit for the current Intel i - series processors respectively – demonstrating the evolution of th e x86 architecture and how its complexity allows software to effect the apparent hardware architecture.
+* [Video Presentation at BlackHat](https://www.youtube.com/watch?v=XU1uNGZ7HnY)
+
+[Masochist](https://github.com/squiffy/Masochist)
+* Masochist is a framework for creating XNU based rootkits. Very useful in OS X and iOS security research.
+
+
 [Suterusu](https://github.com/mncoppola/suterusu)
 [Android Rootkit](https://github.com/hiteshd/Android-Rootkit)
 An LKM rootkit targeting Linux 2.6/3.x on x86(_64), and ARM 
 [Komodia Rootkit Writeupn](https://gist.github.com/Wack0/f865ef369eb8c23ee028)
 * Komodia rootkit findings by @TheWack0lian
 
-
+[Killing Rootkits](http://blog.ioactive.com/2014/09/killing-rootkit.html)
 
 Defeating Sniffers and Intrustion Detection Systems - Horizon, 12/25/1998
 Armouring the ELF: Binary Encryption on the UNIX Platform - grugq, scut, 12/28/2001

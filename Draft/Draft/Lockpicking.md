@@ -31,7 +31,7 @@ https://www.reddit.com/r/lockpicking
 
 [Lockpicking how to video using a cut-away lock](http://www.youtube.com/watch?v=LSt0RxkA_f8)
 
-
+ [Distinguishing Lockpicks: Raking vs Lifting vs Jiggling and More - Deviant Ollam](https://www.youtube.com/watch?v=e07VRxJ01Fs)
 
 ###Books
 
@@ -56,12 +56,6 @@ https://www.reddit.com/r/lockpicking
 [Newbies guide to picking safes](http://cybergibbons.com/lockpicking-2/a-newbies-guide-to-safes/)
 
 
-
-
-
-
-
- [Distinguishing Lockpicks: Raking vs Lifting vs Jiggling and More - Deviant Ollam](https://www.youtube.com/watch?v=e07VRxJ01Fs)
 
 
 

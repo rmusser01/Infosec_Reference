@@ -10,7 +10,7 @@ Information Security Reference That Doesn't Suck
 
 #####This page
 * This page has links to *some* of the content on here. This is still very much a  WIP. More content is within the Draft folder. If you want to contribute, feel free.
-* 
+
 
 | Offense(mostly) | Defense(mostly | Other  |
 |:---------------|:------------------:|:------------|

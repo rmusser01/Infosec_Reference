@@ -11,7 +11,7 @@ Information Security Reference That Doesn't Suck
 #####This page
 * This page has links to *some* of the content on here. This is still very much a  WIP. More content is within the Draft folder. If you want to contribute, feel free.
 
-| Left Side                 |Middle                             | Right |
+| Attacking    |Defending         |Other  |
 | :-------------------------|:-----------------------------------:|:-------------------|
 | [Attacking/Defending Android](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Attacking%20Android.md) | [Attacking/Defending iOS](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Attacking%20iOS.md) - Needs a lot | [Appsec](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/AppSec.md) - More |
 | [Building a Pen Test Lab](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Building%20A%20Pentest%20Lab.md) | [Computer Hardware attacks](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Computer%20Hardware%20Attacks.md) - Could use more quality content| [Con Videos](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Con%20Videos%20Stuff.md) |

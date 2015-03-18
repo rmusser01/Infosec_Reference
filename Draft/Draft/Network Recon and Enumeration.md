@@ -13,7 +13,6 @@ Paste and format here
 http://www.exploit-db.com/papers/35425/
 
 
-Add sample/simple checklists/links to
 
 
 [DNS May Be Hazardous to Your Health - Robert Stucke](https://www.youtube.com/watch?v=ZPbyDSvGasw)

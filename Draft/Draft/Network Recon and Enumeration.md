@@ -3,7 +3,6 @@
 
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
-Paste and format here
 
 [A Curated list of assigned ports relevant to pen testing](http://www.vulnerabilityassessment.co.uk/ports.htm)
 

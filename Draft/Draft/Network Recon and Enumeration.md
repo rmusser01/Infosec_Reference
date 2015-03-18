@@ -3,6 +3,12 @@
 
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
+[PTES Internal Footprinting Guide](http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines#Internal_Footprinting)
+
+[PTES External Footprinting](http://www.pentest-standard.org/index.php/PTES_Technical_Guidelines#External_Footprinting)
+
+
+
 
 [A Curated list of assigned ports relevant to pen testing](http://www.vulnerabilityassessment.co.uk/ports.htm)
 

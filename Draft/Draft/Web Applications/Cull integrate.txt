@@ -22,7 +22,7 @@
 [lan-js](https://github.com/jvennix-r7/lan-js)
 * Probe LAN devices from a web browser.
 
-
+http
 
 [MozillaRecovery](https://github.com/gtfy/MozillaRecovery)
 * Recovers the master password of key3.db files, i.e. Thunderbird, Firefox

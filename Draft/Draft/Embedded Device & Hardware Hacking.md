@@ -25,11 +25,21 @@ Tutorials/Walk-Throughs
 ###Cull
 
 
+[A Primer on IoT Security Research](https://community.rapid7.com/community/infosec/blog/2015/03/10/iot-security-research-whats-it-take)
+
+[Reverse Engineering: Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
+
+[UART - Universal asynchronous receiver/transmitter](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter)
+
+
+[Security of Things: An Implementers’ Guide to Cyber-Security for Internet of Things Devices and Beyond - NCC Group](https://www.nccgroup.com/media/481272/2014-04-09_-_security_of_things_-_an_implementers_guide_to_cyber_security_for_internet_of_things_devices_and_beyond-2.pdf)
+
 [Disk Genie - SpritesMods](http://spritesmods.com/?art=diskgenie)
 
 [Common methods of H/W hacking](https://www.sparkfun.com/news/1314)
 
-
+[DRIVE IT YOURSELF: USB CAR](http://www.linuxvoice.com/drive-it-yourself-usb-car-6/)
+* Reversing USB and writing USB Drivers for an RC car.
 
 http://greatscottgadgets.com/infiltrate2013/
 

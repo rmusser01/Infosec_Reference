@@ -5,6 +5,12 @@ http://www.appliednsm.com/introducing-flowbat/
 Awesome flow tool, SiLK backend
 
 
+Exploiting Tomorrow's Internet Today: Penetration testing with IPv6](http://uninformed.org/?v=all&a=46&t=sumry)
+* This paper illustrates how IPv6-enabled systems with link-local and auto-configured addresses can be compromised using existing security tools. While most of the techniques described can apply to "real" IPv6 networks, the focus of this paper is to target IPv6-enabled systems on the local network. 
+
+
+
+
 
 [Zed Attack Proxy (ZAP) Community Scripts](https://github.com/zaproxy/community-scripts)
 * A collection of ZAP scripts provided by the community - pull requests very welcome! 

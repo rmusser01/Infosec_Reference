@@ -96,10 +96,17 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 [Pushing the Limits of Windows: Virtual Memory](http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx)
 
 ###Linux
+[Foreign LINUX](https://github.com/wishstudio/flinux)
+* Foreign LINUX is a dynamic binary translator and a Linux system call interface emulator for the Windows platform. It is capable of running unmodified Linux binaries on Windows without any drivers or modifications to the system. This provides another way of running Linux applications under Windows in constrast to Cygwin and other tools.
+
+
 [Linux Kernel Explanation/Walk through](http://www.faqs.org/docs/Linux-HOWTO/KernelAnalysis-HOWTO.html)
 
 
 Linux References
+
+[Linux Syscall Table](http://www.informatik.htw-dresden.de/~beck/ASM/syscall_list.html)
+* Complete listing of all Linux Syscalls
 
 
 [Memory Management: Paging](https://www.cs.rutgers.edu/~pxk/416/notes/09a-paging.html)

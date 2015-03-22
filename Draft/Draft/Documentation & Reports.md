@@ -1,6 +1,5 @@
 ##Documentation & Reporting
 
-
 For writing technical documentation.
 
 
@@ -8,6 +7,25 @@ Writing
 Reports
 Meta
 Video Documentation
+
+
+
+
+
+###Penetration Testing &/ Collaboration Tools
+
+[Kvasir](https://github.com/KvasirSecurity/Kvasir)
+* Kvasir is a vulnerability / penetration testing data management system designed to help mitigate the issues found when performing team-based assessments. Kvasir does this by homogenizing data sources into a pre-defined structure. Currently the following sources are supported:
+
+[Dradis](https://github.com/dradis/dradisframework#welcome-to-dradis)
+* Dradis is an open source collaboration framework, tailored to InfoSec teams.
+* It can integrate with a lot of existing tools you probably are using if you're reading this.
+
+[Faraday](https://github.com/infobyte/faraday)
+* Faraday introduces a new concept (IPE) Integrated Penetration-Test Environment a multiuser Penetration test IDE. Designed for distribution, indexation and analysis of the generated data during the process of a security audit.  The main purpose of Faraday is to re-use the available tools in the community to take advantage of them in a multiuser way.1
+
+[Lair](https://github.com/lair-framework/lair)
+* Lair is a reactive attack collaboration framework and web application built with meteor. 
 
 
 

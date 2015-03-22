@@ -1,5 +1,40 @@
 Something to pimp: https://sysforensics.org/2015/02/manage-the-dfir-information.html
 
+http://projectshellcode.com/?q=node/12
+
+
+
+[Adobe Sandbox: When the Broker is Broken - Peter Vreugdenhill](https://cansecwest.com/slides/2013/Adobe%20Sandbox.pdf)
+
+[All Your Boot Are Belong To Us - Intel Security](https://cansecwest.com/slides/2014/AllYourBoot_csw14-intel-final.pdf)
+
+
+
+shellcode tutorials http://projectshellcode.com/?q=node/12
+
+
+[QR Inception: Barcode-in-Barcode Attacks](https://www.sba-research.org/wp-content/uploads/publications/qrinception.pdf)
+* 2D barcodes offer many benefits compared to 1D barcodes, such as high information density and robustness. Before their introduction to the mobile phone ecosystem, they have been widely used in specic applications, such as logistics or ticketing. However, there are multiple competing standards with different benefits and drawbacks. Therefore, reader applications as well as dedicated devices have to support multiple standards. In this paper, we present novel attacks based on deliberately caused ambiguities when especially crafted barcodes conform to multiple standards. Implementation details de- cide which standard the decoder locks on. This way, two users scanning the same barcode with dierent phones or apps will receive different content. This potentially opens way for multiple problems related to security. We describe how embedding one barcode symbology into another can be used to perform phishing attacks as well as targeted exploits. In addition, we evaluate the extent to which popular 2D barcode reader applications on smartphones are susceptible to these barcode-in-barcode attacks. We furthermore discuss mitigation techniques against this type of attack.
+
+
+
+
+
+
+
+[Protecting Data on Smartphones and Tablets from Memory Attacks](http://research.microsoft.com/en-us/um/people/alecw/asplos-2015.pdf)
+* Smartphones and tablets are easily lost or stolen. This makes them susceptible to an inexpensive class of memory attacks, such as cold- boot attacks, using a bus monitor to observe the memory bus, and DMA attacks. This paper describes Sentry, a system that allows applications and OS components to store their code and data on the System-on-Chip (SoC) rather than in DRAM. We use ARM- specific mechanisms originally designed for embedded systems, but still present in today’s mobile devices, to protect applications and OS subsystems from memory attacks
+
+https://github.com/tombkeeper/DEP-and-ASLR-bypass-without-ROP-or-JIT
+
+
+
+
+[Taming Mr Hayes: Mitigating Signaling Based Attacks on Smartphones](https://www.mulliner.org/collin/academic/publications/mrhayes_mulliner_dsn2012.pdf)
+* Malicious injection of cellular signaling traffic from mobile phones is an emerging security issue. The respective attacks can be performed by hijacked smartphones and by malware resident on mobile phones. Until today there are no protection mechanisms in place to prevent signaling based attacks other than implementing expensive additions to the cellular core network. In this work we present a protection system that resides on the mobile phone. Our solution works by partitioning the phone software stack into the application operating system and the communication partition. The application system is a standard fully featured Android sys tem. On the other side, communication to the cellular network is mediated by a flexible monitoring and enforcement system running on the communication partition. We implemented and evaluated our protection system on a real smartphone. Our evaluation shows that it can mitigate all currently know n signaling based attacks and in addition can protect users fr om cellular Trojans
+
+
+https://github.com/fireeye/flare-ida
 
 http://seclists.org/fulldisclosure/2015/Mar/67	 
 
@@ -7,21 +42,26 @@ http://www.lexsi-leblog.com/cert-en/qemu-gdb-pe-imports.html
 
 https://www.gitbook.com/book/0xax/linux-insides/details
 
+https://labs.po
+rtcullis.co.uk/blog/ntfs-alternate-data-streams-for-pentesters-part-1/
 
 
 
+https://en.wikipedia.org/wiki/Homomorphic_encryption
+
+[Shellcode Debugging with OllyDbg](https://blackc0.de/2014/06/shellcode-debugging-ollydbg/)
 
 
+
+[Understanding !PTE - Non-PAE and X64](http://blogs.msdn.com/b/ntdebugging/archive/2010/06/22/part-3-understanding-pte-non-pae-and-x64.aspx?Redirected=true
+
+
+MS Assessment Deployment Toolkit - Measure boot times among other things
+
+seclists.org/fulldisclosure/2015/Mar/90
 
 [Context-keyed Payload Encoding](http://uninformed.org/?v=all&a=42&t=sumry)
 * A common goal of payload encoders is to evade a third-party detection mechanism which is actively observing attack traffic somewhere along the route from an attacker to their target, filtering on commonly used payload instructions. The use of a payload encoder may be easily detected and blocked as well as opening up the opportunity for the payload to be decoded for further analysis. Even so-called keyed encoders utilize easily observable, recoverable, or guessable key values in their encoding algorithm, thus making decoding on-the-fly trivial once the encoding algorithm is identified. It is feasible that an active observer may make use of the inherent functionality of the decoder stub to decode the payload of a suspected exploit in order to inspect the contents of that payload and make a control decision about the network traffic. This paper presents a new method of keying an encoder which is based entirely on contextual information that is predictable or known about the target by the attacker and constructible or recoverable by the decoder stub when executed at the target. An active observer of the attack traffic however should be unable to decode the payload due to lack of the contextual keying information. 
-
-[Analyzing local privilege escalations in win32k](http://uninformed.org/?v=all&a=45&t=sumry)
-* This paper analyzes three vulnerabilities that were found in win32k.sys that allow kernel-mode code execution. The win32k.sys driver is a major component of the GUI subsystem in the Windows operating system. These vulnerabilities have been reported by the author and patched in MS08-025. The first vulnerability is a kernel pool overflow with an old communication mechanism called the Dynamic Data Exchange (DDE) protocol. The second vulnerability involves improper use of the ProbeForWrite function within string management functions. The third vulnerability concerns how win32k handles system menu functions. Their discovery and exploitation are covered. 
-
-
-
-
 
 http://ytliu.info/blog/2014/05/31/blind-return-oriented-programming-brop-attack-yi/
 
@@ -34,20 +74,16 @@ https://github.com/mubix/post-exploitation/wiki/Linux-Post-Exploitation-Command-
 
 
 
-[Memalyze: Dynamic Analysis of Memory Access Behavior in Software](http://uninformed.org/?v=all&a=31&t=sumry)
-* This paper describes strategies for dynamically analyzing an application's memory access behavior. These strategies make it possible to detect when a read or write is about to occur at a given location in memory while an application is executing. An application's memory access behavior can provide additional insight into its behavior. For example, it may be able to provide an idea of how data propagates throughout the address space. Three individual strategies which can be used to intercept memory accesses are described in this paper. Each strategy makes use of a unique method of intercepting memory accesses. These methods include the use of Dynamic Binary Instrumentation (DBI), x86 hardware paging features, and x86 segmentation features. A detailed description of the design and implementation of these strategies for 32-bit versions of Windows is given. Potential uses for these analysis techniques are described in detail. 
 
 
 
-[Mnemonic Password Formulas](http://uninformed.org/?v=all&a=33&t=sumry)
-*  The current information technology landscape is cluttered with a large number of information systems that each have their own individual authentication schemes. Even with single sign-on and multi-system authentication methods, systems within disparate management domains are likely to be utilized by users of various levels of involvement within the landscape as a whole. Due to this complexity and the abundance of authentication requirements, many users are required to manage numerous credentials across various systems. This has given rise to many different insecurities relating to the selection and management of passwords. This paper details a subset of issues facing users and managers of authentication systems involving passwords, discusses current approaches to mitigating those issues, and finally introduces a new method for password management and recalls termed Mnemonic Password Formulas. 
 
 
-[Exploiting Tomorrow's Internet Today: Penetration testing with IPv6](http://uninformed.org/?v=all&a=46&t=sumry)
-* This paper illustrates how IPv6-enabled systems with link-local and auto-configured addresses can be compromised using existing security tools. While most of the techniques described can apply to "real" IPv6 networks, the focus of this paper is to target IPv6-enabled systems on the local network. 
 
-[futo](http://uninformed.org/?v=all&a=17&t=sumry)
-* Since the introduction of FU, the rootkit world has moved away from implementing system hooks to hide their presence. Because of this change in offense, a new defense had to be developed. The new algorithms used by rootkit detectors, such as BlackLight, attempt to find what the rootkit is hiding instead of simply detecting the presence of the rootkit's hooks. This paper will discuss an algorithm that is used by both Blacklight and IceSword to detect hidden processes. This paper will also document current weaknesses in the rootkit detection field and introduce a more complete stealth technique implemented as a prototype in FUTo. 
+
+[
+
+
 
 [A Catalog of Windows Local Kernel-mode Backdoors](http://uninformed.org/?v=all&a=35&t=sumry)
 * This paper presents a detailed catalog of techniques that can be used to create local kernel-mode backdoors on Windows. These techniques include function trampolines, descriptor table hooks, model-specific register hooks, page table modifications, as well as others that have not previously been described. The majority of these techniques have been publicly known far in advance of this paper. However, at the time of this writing, there appears to be no detailed single point of reference for many of them. The intention of this paper is to provide a solid understanding on the subject of local kernel-mode backdoors. This understanding is necessary in order to encourage the thoughtful discussion of potential countermeasures and perceived advancements. In the vein of countermeasures, some additional thoughts are given to the common misconception that PatchGuard, in its current design, can be used to prevent kernel-mode rootkits. 
@@ -70,14 +106,6 @@ https://github.com/mubix/post-exploitation/wiki/Linux-Post-Exploitation-Command-
 [Implementing a Custom X86 Encoder](http://uninformed.org/?v=all&a=25&t=sumry)
 * This paper describes the process of implementing a custom encoder for the x86 architecture. To help set the stage, the McAfee Subscription Manager ActiveX control vulnerability, which was discovered by eEye, will be used as an example of a vulnerability that requires the implementation of a custom encoder. In particular, this vulnerability does not permit the use of uppercase characters. To help make things more interesting, the encoder described in this paper will also avoid all characters above 0x7f. This will make the encoder both UTF-8 safe and tolower safe. 
 
-
-
-[Foreign LINUX](https://github.com/wishstudio/flinux)
-* Foreign LINUX is a dynamic binary translator and a Linux system call interface emulator for the Windows platform. It is capable of running unmodified Linux binaries on Windows without any drivers or modifications to the system. This provides another way of running Linux applications under Windows in constrast to Cygwin and other tools
-
-
-
-
 [Post-Exploitation on Windows using ActiveX Controls](http://uninformed.org/?v=all&a=3&t=sumry)
 
 
@@ -90,17 +118,6 @@ http://www.atmel.com/tools/rzusbstick.aspx
 http://store.atmel.com/PartDetail.aspx?q=p:10500060#tc:description
 
 http://www.grandideastudio.com/portfolio/jtagulator/
-
-
-[A Primer on IoT Security Research](https://community.rapid7.com/community/infosec/blog/2015/03/10/iot-security-research-whats-it-take)
-
-
-[Security of Things: An Implementers’ Guide to Cyber-Security for Internet of Things Devices and Beyond - NCC Group](https://www.nccgroup.com/media/481272/2014-04-09_-_security_of_things_-_an_implementers_guide_to_cyber_security_for_internet_of_things_devices_and_beyond-2.pdf)
-
-
-
-
-
 
 appleexaminer.com
 
@@ -116,60 +133,29 @@ appleexaminer.com
 * Abstract. Memory isolation is a key property of a reliable and secure computing system — an access to one memory ad- dress should not have unintended side e ects on data stored in other addresses. However, as DRAM process technology scales down to smaller dimensions, it becomes more di  cult to prevent DRAM cells from electrically interacting with each other. In this paper, we expose the vulnerability of commodity DRAM chips to disturbance errors. By reading from the same address in DRAM, we show that it is possible to corrupt data in nearby addresses. More specifically, activating the same row in DRAM corrupts data in nearby rows. We demonstrate this phenomenon on Intel and AMD systems using a malicious program that generates many DRAM accesses. We induce errors in most DRAM modules (110 out of 129) from three major DRAM manufacturers. From this we conclude that many deployed systems are likely to be at risk. We identify the root cause of disturbance errors as the repeated toggling of a DRAM row’s wordline, which stresses inter-cell coupling e ects that accelerate charge leakage from nearby rows. We provide an extensive characterization study of disturbance errors and their behavior using an FPGA-based testing plat- form. Among our key findings, we show that (i) it takes as few as 139K accesses to induce an error and (ii) up to one in every 1.7K cells is susceptible to errors. After examining var- ious potential ways of addressing the problem, we propose a low-overhead solution to prevent the errors.
 
 
-
-
-
-
-
 https://the.bytecode.club/
 
 
-Elaborate on packers
 
 http://waleedassar.blogspot.com/
 https://github.com/isislab/Project-Ideas/wiki/Program-Analysis
 https://github.com/isislab/Project-Ideas/wiki/Embedded-Device-Security
 https://github.com/isislab/Project-Ideas/wiki/Application-Security
 
-
-
-
-
 http://www.malcolmstagg.com/bdp-s390.html
 
 http://www.slideshare.net/mubix/windows-attacks-at-is-the-new-black-26665607
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[10 Tips to Secure Your Apache Web Server on UNIX / Linux](http://www.thegeekstuff.com/2011/03/apache-hardening/)
-
-
-
 
 [List of hacker sites](http://link-base.org/)
 
 https://archive.org/details/HardwareStuffForSoftwarePeople
 
 
-[x86 Assembly Guide/Reference - Wikibooks](https://en.wikibooks.org/wiki/X86_Assembly)
-* Introduction for those who don’t know ASM and a reference for those that do.
+
 
 http://opensecuritytraining.info/MalwareDynamicAnalysis_files/MalwareDynamicAnalysis02.pdf
 
-[FILE SIGNATURES TABLE](http://www.garykessler.net/library/file_sigs.html)
-* This table of file signatures (aka "magic numbers") is a continuing work-in-progress. I have found little information on this in a single place, with the exception of the table in Forensic Computing: A Practitioner's Guide by T. Sammes & B. Jenkinson (Springer, 2000); that was my inspiration to start this list in 2002. See also Wikipedia's List of file signatures. Comments, additions, and queries can be sent to Gary Kessler at gck@garykessler.net.
+
 
 http://www.slideshare.net/grecsl/malware-analysis-101-n00b-to-ninja-in-60-minutes-at-cactuscon-on-april-4-2014
 
@@ -177,26 +163,7 @@ http://www.panelguides.com/index.php?option=com_jdownloads&Itemid=13
 
 http://cs.gmu.edu/~astavrou/research/PyTrigger_ARES2013.pdf
 
-
-
-
-
-
-
-
-
-
 http://sniperforensicstoolkit.squarespace.com/malwaremanagementframework/
-
-
-https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks
-
-
-
-
-
-
-
 
 http://www.myopenrouter.com/article/10917/Port-Mirroring-Span-Port-Monitor-Port-with-iptables-on-NETGEAR-WGR614L/
 
@@ -205,21 +172,9 @@ http://netdude.sourceforge.net/
 Cull the interesting papers
 http://www.covert.io/
 
-[Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
-* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
-
-
-
-
-[Extensible Metadata Platform](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform)
-* The Extensible Metadata Platform (XMP) is an ISO standard, originally created by Adobe Systems Inc., for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
-
-
 http://www.harmj0y.net/blog/powershell/dumping-a-domains-worth-of-passwords-with-mimikatz-pt-2/
 
 Dare is a project which aims at enabling Android application analysis. The Dare tool retargets Android applications in .dex or .apk format to traditional .class files. These .class files can then be processed by existing Java tools, including decompilers. Thus, Android applications can be analyzed using a vast range of techiques developed for traditional Java applications. 
-
-
 
 
 
@@ -248,19 +203,3 @@ https://github.com/Veil-Framework/Veil-PowerView
 
 
 https://addons.mozilla.org/en-US/firefox/addon/ssleuth/
-
-
-Try/Catch Exception in Powershell
-"""
-
-try {
-#stuff
-} catch {
-$ErrorMessage = $_.Exception.Message
-$ErrorSource = $_.Exception.Source
-$err = $ErrorSource + " reports: " + $ErrorMessage
-}
-
-"""
-
-[Access control best practices](https://srlabs.de/acs/)

@@ -2,8 +2,26 @@
 
 idk
 
+https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet
+
+https://www.owasp.org/index.php/Application_Security_Architecture_Cheat_Sheet
 
 
+
+
+
+
+
+
+
+
+
+
+Secure Coding Practices
+
+SDLC
+
+Code Review
 
 
 

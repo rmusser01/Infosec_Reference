@@ -1,4 +1,4 @@
-##Interesting Things
+##Interesting Things & Useful Stuff
 
 [Coming War on General Computation](https://www.youtube.com/watch?v=HUEvRyemKSg)
 
@@ -18,16 +18,27 @@ TOC
 
 
 Cull
-Interesting Attacks
-Interesting Papers
-Interesting Projects
-Interesting Software
-Interesting Write-ups
+Interesting & Useful Attacks
+Interesting & Useful Papers
+Interesting & Useful Projects
+Interesting & Useful Software
+Interesting & Useful Write-ups
+
+
 
 
 
 ###CULL
 
+[Less is More, Exploring Code/Process-less Techniques and Other Weird Machine Methods to Hide Code (and How to Detect Them)](https://cansecwest.com/slides/2014/less%20is%20more3.pptx)
+
+[Smart TV Security - #1984 in 21 st century](https://cansecwest.com/slides/2013/SmartTV%20Security.pdf)
+* This talk is more about security bugs and rootkits than about firmware for TVs. This talk more covers rootkits than security bugs and exploitation thereof, as they’re not different to traditional techniques. This talk is about general security issues of all Smart TV vendors.
+
+[Exploiting the DRAM rowhammer bug to gain kernel privileges](http://googleprojectzero.blogspot.com/2015/03/exploiting-dram-rowhammer-bug-to-gain.html)
+* "Rowhammer” is a problem with some recent DRAM devices in which repeatedly accessing a row of memory can cause bit flips in adjacent rows. We tested a selection of laptops and found that a subset of them exhibited the problem. We built two working privilege escalation exploits that use this effect. One exploit uses rowhammer-induced bit flips to gain kernel privileges on x86-64 Linux when run as an unprivileged userland process. When run on a machine vulnerable to the rowhammer problem, the process was able to induce bit flips in page table entries (PTEs). It was able to use this to gain write access to its own page table, and hence gain read-write access to all of physical memory.
+
+[Program for testing for the DRAM "rowhammer" problem](https://github.com/google/rowhammer-test)
 
 [More on Using Bash's Built-in /dev/tcp File (TCP/IP)](http://www.linuxjournal.com/content/more-using-bashs-built-devtcp-file-tcpip More on Using Bash's Built-in /dev/tcp File (TCP/IP))
 
@@ -140,6 +151,9 @@ http://blog.qartis.com/decoding-small-qr-codes-by-hand/
 * This tool processes Sysinternals Process Monitor (Procmon) logfiles and PCAP-logs (Windump, Tcpdump) to generate a graph via the GraphViz suite. This graph visualizes any relevant activities (customizable) and can be interactively analyzed.
 
 
+[Foreign LINUX](https://github.com/wishstudio/flinux)
+* Foreign LINUX is a dynamic binary translator and a Linux system call interface emulator for the Windows platform. It is capable of running unmodified Linux binaries on Windows without any drivers or modifications to the system. This provides another way of running Linux applications under Windows in constrast to Cygwin and other tools.
+
 [Hachoir](https://bitbucket.org/haypo/hachoir/wiki/Home)
 * Hachoir is a Python library that allows to view and edit a binary stream field by field
 
@@ -151,6 +165,9 @@ http://blog.qartis.com/decoding-small-qr-codes-by-hand/
 [FreeIPA]()
 * FreeIPA is an integrated security information management solution combining Linux (Fedora), 389 Directory Server, MIT Kerberos, NTP, DNS, Dogtag (Certificate System). It consists of a web interface and command-line administration tools. FreeIPA is an integrated Identity and Authentication solution for Linux/UNIX networked environments. A FreeIPA server provides centralized authentication, authorization and account information by storing data about user, groups, hosts and other objects necessary to manage the security aspects of a network of computers. 
 
+
+[HashID](https://github.com/psypanda/hashID)
+* hashID is a tool written in Python 3 which supports the identification of over 220 unique hash types using regular expressions. It is able to identify a single hash, parse a file or read multiple files in a directory and identify the hashes within them. hashID is also capable of including the corresponding hashcat mode and/or JohnTheRipper format in its output. hashID works out of the box with Python 2 = 2.7.x or Python 3 = 3.3 on any platform.
 
 
 ###Interesting Hardware Projects

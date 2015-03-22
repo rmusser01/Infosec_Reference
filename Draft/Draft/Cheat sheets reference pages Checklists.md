@@ -1,9 +1,31 @@
 ##Cheat Sheets & Reference Pages
 
 
+TOC
+Cull
+General
+Android
+iOS
+Linux
+OS X
+Windows
+Exploitation
+Exploit Dev
+Forensics/IR
+Malware
+Reverse Engineering 
+
+
+
+
+
+
 http://www.amanhardikar.com/mindmaps.html
 http://www.amanhardikar.com/mindmaps/Practice.html
 
+
+
+https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks
 
 
 [Drupal Security Checklist](https://github.com/gfoss/attacking-drupal/blob/master/presentation/drupal-security-checklist.pdf)

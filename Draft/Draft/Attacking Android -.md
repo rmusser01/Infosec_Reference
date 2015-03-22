@@ -1,16 +1,31 @@
 Attacking Android Devices
 
 
+TOC
+Cull
+Intro
+
+
+
+
+
+
 [Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
 
 [Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
 
-
+[csploit](http://www.csploit.org/docs.html)
+* The most complete and advanced IT security professional toolkit on Android.(From their site)
+* [Github](https://github.com/cSploit/android/tree/master/cSploit)
 
 ###Cull
 [elsim - Elements Similarities](https://code.google.com/p/elsim/wiki/Similarity#Diffing_of_applications)
 * Similarities/Differences of applications (aka rip-off indicator)
 * This tool detects and reports: the identical methods; the similar methods; the deleted methods; the new methods; the skipped methods. 
+
+
+[PatchDroid: Scalable Third-Party Security Patches for Android Devices](http://www.mulliner.org/collin/academic/publications/patchdroid.pdf)
+* Android is currently the largest mobile platform with around 750 million devices worldwide. Unfortunately, more than 30% of all devices contain publicly known security vulnera- bilities and, in practice, cannot be updated through normal mechanisms since they are not longer supported by the man- ufacturer and mobile operator. This failure of traditional patch distribution systems has resulted in the creation of a large population of vulnerable mobile devices. In this paper, we present PatchDroid, a system to dis- tribute and apply third-party security patches for Android. Our system is designed for device-independent patch cre- ation, and uses in-memory patching techniques to address vulnerabilities in both native and managed code. We created a fully usable prototype of PatchDroid, including a number of patches for well-known vulnerabilities in Android devices. We evaluated our system on different devices from multiple manufacturers and show that we can effectively patch se- curity vulnerabilities on Android devices without impacting performance or usability. Therefore, PatchDroid represents a realistic path towards dramatically reducing the number of exploitable Android devices in the wild.
 
 ####Vulnerabilities
 [List of Android Vulnerabilities](http://androidvulnerabilities.org/all)

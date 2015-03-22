@@ -1,9 +1,4 @@
-How to Secure Yourself and Your Devices From Attackers
-
-
-
-
-
+[10 Tips to Secure Your Apache Web Server on UNIX / Linux](http://www.thegeekstuff.com/2011/03/apache-hardening/)
 
 
 
@@ -11,7 +6,7 @@ How to Secure Yourself and Your Devices From Attackers
 
 
 
-
+[Ways to Identify Malware on a System Ryan Irving](http://www.irongeek.com/i.php?page=videos/bsidestampa2015/201-ways-to-identify-malware-on-a-system-ryan-irving)
 
 
 
@@ -36,7 +31,7 @@ http://www.irongeek.com/i.php?page=videos/derbycon4/t536-introduction-to-system-
 
 
 
-
+[Program for testing for the DRAM "rowhammer" problem](https://github.com/google/rowhammer-test)
 
 Logs:
 

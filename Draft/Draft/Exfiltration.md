@@ -14,6 +14,8 @@
 
 
 
+[Exfil - Modular tool to test exfiltration techniques](https://github.com/averagesecurityguy/exfil)
+* Exfil is a tool designed to exfiltrate data using various techniques, which allows a security team to test whether its monitoring system can effectively catch the exfiltration. The idea for Exfil came from a Twitter conversation between @averagesecguy, @ChrisJohnRiley, and @Ben0xA and was sparked by the TrustWave POS malware whitepaper available at https://gsr.trustwave.com/topics/placeholder-topic/point-of-sale-malware/.
 
 
 

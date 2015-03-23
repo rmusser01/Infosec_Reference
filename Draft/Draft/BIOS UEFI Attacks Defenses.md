@@ -1,10 +1,9 @@
-##Computer Hardware Attacks
+##Low Level Attacks/Firmware/BIOS/UEFI
+
+http://www.legbacore.com/Research.html
 
 
-Tools
-Defending against
-SD
-RFID - move to wireless
+BIOS/UEFI Firmware
 Writeups
 
 
@@ -15,16 +14,89 @@ Writeups
 
 ###Cull
 
+
+http://forums.mydigitallife.info/forums/34-MDL-Projects-and-Applications
+
+
+http://forums.mydigitallife.info/forums/25-BIOS-Mods
+
+https://01.org/linux-uefi-validation/overview
+
+[Technical Overview of Windows UEFI Startup Process](http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/)
+
+
+
+###Firmware Analysis
+
+[An Introduction to Firmware Analysis[30c3]](https://www.youtube.com/watch?v=kvfP7StmFxY)
+* This talk gives an introduction to firmware analysis: It starts with how to retrieve the binary, e.g. get a plain file from manufacturer, extract it from an executable or memory device, or even sniff it out of an update process or internal CPU memory, which can be really tricky. After that it introduces the necessary tools, gives tips on how to detect the processor architecture, and explains some more advanced analysis techniques, including how to figure out the offsets where the firmware is loaded to, and how to start the investigation.
+
+
+Reverse Engineering Router Firmware walk through
+* [Part 1](http://www.secforce.com/blog/2014/04/reverse-engineer-router-firmware-part-1/)
+* [Part 2](http://www.secforce.com/blog/2014/07/reverse-engineer-router-firmware-part-2/)
+
+
+[Firmware Modifcation kit](https://code.google.com/p/firmware-mod-kit/)
+* This kit is a collection of scripts and utilities to extract and rebuild linux based firmware images.
+
+
+
+[Binwalk](https://github.com/devttys0/binwalk)
+Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
+
+[Analyzing and Running binaries from Firmware Images - Part 1](http://w00tsec.blogspot.com.br/2013/09/analyzing-and-running-binaries-from.html
+)
+[SIMET Box Firmware Analysis: Embedded Device Hacking & Forensics](http://w00tsec.blogspot.com.br/2013/08/simet-box-firmware-analysis-embedded.html)
+
+
+
+[hwlat_detector: A system hardware latency detector -Linux Kernel Module](http://ftp.dei.uc.pt/pub/linux/kernel/people/jcm/hwlat_detector/hwlat-detector-1.0.0.patch)
+* This patch introduces a new hardware latency detector module that can be used
+to detect high hardware-induced latencies within the system. It was originally
+written for use in the RT kernel, but has wider applications.
+
+
+
+
+
+
+http://forums.mydigitallife.info/forums/25-BIOS-Mods
+
+
+
+[System Management Mode Hack Using SMM for "Other Purposes](http://phrack.org/issues/65/7.html)
+* The research provided in this paper describes in details how to reverse engineer and modify System Management Interrupt (SMI) handlers in the BIOS system firmware and how to implement and detect SMM keystroke logger. This work also presents proof of concept code of SMM keystroke logger that uses I/O Trap based keystroke interception and a code for detection of such keystroke logger.
+
+
+
+[A Real SMM Rootkit: Reversing and Hooking BIOS SMI Handlers - Filip Wecherowski](http://phrack.org/issues/66/11.html#article)
+* The research provided in this paper describes in details how to reverse engineer and modify System Management Interrupt (SMI) handlers in the BIOS system firmware and how to implement and detect SMM keystroke logger. This work also presents proof of concept code of SMM keystroke logger that uses I/O Trap based keystroke interception and a code for detection of such keystroke logger.
+
+[Exploiting UEFI boot script table vulnerability](http://blog.cr4.sh/2015/02/exploiting-uefi-boot-script-table.html)
+
+[Attacking UEFI Boot Script](https://frab.cccv.de/system/attachments/2566/original/venamis_whitepaper.pdf)
+* Abstract—UEFI Boot Script is a data structure interpreted by UEFI firmware during S3 resume. We show that on many systems, an attacker with ring0 privileges can alter this data structure. As a result, by forcing S3 suspend/resume cycle, an attacker can run arbitrary code on a platform that is not yet fully locked. The consequences include ability to overwrite the flash storage and take control over SMM.
+
+
+[BIOS Chronomancy: Fixing the Core Root of Trust for Measurement - BlackHat 2013](https://www.youtube.com/watch?v=NbYZ4UCN9GY)
+
+
+[WindSLIC SLIC injectors](https://github.com/untermensch/WindSLIC)
+* includes UEFI, NTFS, bootmgr SLIC injectors and installers.
+
+
+[ UEFI Firmware Parser](https://github.com/theopolis/uefi-firmware-parser)
+* The UEFI firmware parser is a simple module and set of scripts for parsing, extracting, and recreating UEFI firmware volumes. This includes parsing modules for BIOS, OptionROM, Intel ME and other formats too. Please use the example scripts for parsing tutorials.
+
+
 Professor’s page:
 http://www.cl.cam.ac.uk/~sps32/
 
 Grab links for his papers
 
 
-[Exploiting UEFI boot script table vulnerability](http://blog.cr4.sh/2015/02/exploiting-uefi-boot-script-table.html)
 
-[Attacking UEFI Boot Script](https://frab.cccv.de/system/attachments/2566/original/venamis_whitepaper.pdf)
-* Abstract—UEFI Boot Script is a data structure interpreted by UEFI firmware during S3 resume. We show that on many systems, an attacker with ring0 privileges can alter this data structure. As a result, by forcing S3 suspend/resume cycle, an attacker can run arbitrary code on a platform that is not yet fully locked. The consequences include ability to overwrite the flash storage and take control over SMM.
 
 
 
@@ -71,11 +143,6 @@ Phison 2251-03 (2303) Custom Firmware & Existing Firmware Patches (BadUSB)
 ###SD Cards
 [The Exploration and Exploitation of an SD Memory Card](https://www.youtube.com/watch?v=Tj-zI8Tl218)
 * This talk demonstrates a method for reverse engineering and loading code into the microcontroller within a SD memory card.
-
-
-###RFID
-
-
 
 
 

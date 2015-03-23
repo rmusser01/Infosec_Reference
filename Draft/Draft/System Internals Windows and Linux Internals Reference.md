@@ -82,18 +82,24 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 [Application Compatibility in Windows](https://technet.microsoft.com/en-us/windows/jj863248)
 
 [Introduction to Windows Kernel Security](http://blog.cmpxchg8b.com/2013/05/introduction-to-windows-kernel-security.html)
-[Technical Overview of Windows UEFI Startup Process](http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/)
-[Windows 8 BOot](http://technet.microsoft.com/en-US/windows/dn168167.aspx)
-[Windows 8 ASLR Explained](http://blog.ptsecurity.com/2012/12/windows-8-aslr-internals.html)
-[Collection of Windows Autostart locations](http://gladiator-antivirus.com/forum/index.php?showtopic=24610]
-[Inside the Windows Vista Kernel: Part 1](http://technet.microsoft.com/en-us/magazine/2007.02.vistakernel.aspx)
 
+[Technical Overview of Windows UEFI Startup Process](http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/)
+
+[Windows 8 BOot](http://technet.microsoft.com/en-US/windows/dn168167.aspx)
+
+[Windows 8 ASLR Explained](http://blog.ptsecurity.com/2012/12/windows-8-aslr-internals.html)
+
+[Collection of Windows Autostart locations](http://gladiator-antivirus.com/forum/index.php?showtopic=24610]
+
+[Inside the Windows Vista Kernel: Part 1](http://technet.microsoft.com/en-us/magazine/2007.02.vistakernel.aspx)
 
 [How Control Flow Guard Drastically Caused Windows 8.1 Address Space and Behavior Changes](http://www.alex-ionescu.com/?p=246)
 
-
-
 [Pushing the Limits of Windows: Virtual Memory](http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx)
+
+
+
+
 
 ###Linux
 [Foreign LINUX](https://github.com/wishstudio/flinux)

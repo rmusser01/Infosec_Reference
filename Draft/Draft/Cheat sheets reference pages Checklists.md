@@ -38,6 +38,8 @@ https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks
 [How to Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)
 
 
+
+
 ###General Cheat Sheets
 
 [Metasploit 4.2 documentation](https://community.rapid7.com/docs/DOC-1751)
@@ -55,22 +57,44 @@ https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks
 [General Tricks](http://averagesecurityguy.info/cheat-sheet/)
 
 
+
+
+###x86/64/ARM
+
+[x86 opcode structure and instruction overview](http://pnx.tf/files/x86_opcode_structure_and_instruction_overview.pdf)
+
+[Intro to x86 calling conventions](http://codearcana.com/posts/2013/05/21/a-brief-introduction-to-x86-calling-conventions.html)
+
+[Reading ASM](http://cseweb.ucsd.edu/classes/sp11/cse141/pdf/02/S01_x86_64.key.pdf)
+
+
+
+
+
 ###Android Cheat Sheets
 [Android ADB cheat sheet](https://github.com/maldroid/adb_cheatsheet/blob/master/cheatsheet.pdf?raw=true)
+
+
+
 
 
 ###iOS Cheat Sheets
 
 
+
+
 ###Linux Cheat Sheets
+[Linux Syscall Table](http://www.informatik.htw-dresden.de/~beck/ASM/syscall_list.html)
+* Complete listing of all Linux Syscalls
+
+
 
 
 
 ###Windows Cheat Sheets
-
-
-
 [Windows Startup Application Database](http://www.pacs-portal.co.uk/startup_content.php)
+
+
 
 
 ###Exploitation Cheat Sheets
@@ -92,6 +116,10 @@ https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks
 [Nasm x86 reference](https://www.cs.uaf.edu/2006/fall/cs301/support/x86/)
 
 
+
+
+
+
 ###Forensics/IR Cheat Sheets
 
 [File Signature Table](http://www.garykessler.net/library/file_sigs.html)
@@ -105,6 +133,9 @@ https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks
 [Critical Log Review Checklist for Security Incidents](https://zeltser.com/security-incident-log-review-checklist/)
 
 [Network DDOS Incident Response Cheat Sheet](https://zeltser.com/ddos-incident-cheat-sheet/)
+
+
+
 
 
 ###Reverse Engineering Cheat Sheets

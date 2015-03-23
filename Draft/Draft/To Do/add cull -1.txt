@@ -4,6 +4,18 @@ http://projectshellcode.com/?q=node/12
 
 
 
+
+
+http://www.legbacore.com/Research.html
+
+
+
+
+[Hardware Backdooring is Practical -Jonathan Brossard - Defcon20](https://www.youtube.com/watch?v=umBruM-wFUw)
+
+
+
+
 [Adobe Sandbox: When the Broker is Broken - Peter Vreugdenhill](https://cansecwest.com/slides/2013/Adobe%20Sandbox.pdf)
 
 [All Your Boot Are Belong To Us - Intel Security](https://cansecwest.com/slides/2014/AllYourBoot_csw14-intel-final.pdf)
@@ -52,6 +64,20 @@ https://en.wikipedia.org/wiki/Homomorphic_encryption
 [Shellcode Debugging with OllyDbg](https://blackc0.de/2014/06/shellcode-debugging-ollydbg/)
 
 
+http://tinywall.pados.hu/features.php
+
+
+
+[Palinopsia - Is your VirtualBox reading your E-Mail? Reconstruction of FrameBuffers from VRAM](https://hsmr.cc/palinopsia/)
+
+
+
+
+[UEFITool](https://github.com/LongSoft/UEFITool)
+* UEFITool is a cross-platform C++/Qt program for parsing, extracting and modifying UEFI firmware images. It supports parsing of full BIOS images starting with the flash descriptor or any binary files containing UEFI volumes.
+
+[How Many Million BIOSes Would you Like to Infect?](http://conference.hitb.org/hitbsecconf2015ams/sessions/how-many-million-bioses-would-you-like-to-infect/)
+* This talk is going to be all about how the automation of BIOS vulnerability exploitation and leveraging of built-in capabilities can yield highly portable UEFI firmware malware. And how millions of systems will be vulnerable for years, because no one cares enough to patch the BIOS bugs we’ve found.  So you think you’re doing OPSEC right, right? You’re going to crazy lengths to protect yourself, reinstalling your main OS every month, or using a privacy-conscious live DVD like TAILS. Guess what? BIOS malware doesn’t care! BIOS malware doesn’t give a shit
 
 [Understanding !PTE - Non-PAE and X64](http://blogs.msdn.com/b/ntdebugging/archive/2010/06/22/part-3-understanding-pte-non-pae-and-x64.aspx?Redirected=true
 

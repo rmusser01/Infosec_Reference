@@ -24,7 +24,7 @@ Miscellaneous
 * The Zulu fuzzer 
 [Quick explanation of fuzzing and various fuzzers](http://whoisjoe.info/?p=16)
 
-
+http://nullcon.net/website/archives/ppt/goa-15/analyzing-chrome-crash-reports-at-scale-by-abhishek-arya.pdf
 
 [Fuzzing for MS15-010](http://blog.beyondtrust.com/fuzzing-for-ms15-010)
 * Is what it says on the tin.
@@ -60,6 +60,8 @@ Miscellaneous
 
 #####Papers
 
+
+[Smart COM Fuzzing - Auditing IE Sandbox Bypass in COM Objects• Xiaoning Li • Haifei Li](https://0b3dcaf9-a-62cb3a1a-s-sites.googlegroups.com/site/zerodayresearch/Smart_COM_Fuzzing_Auditing_IE_Sandbox_Bypass_in_COM_Objects_final.pdf?attachauth=ANoY7crUl9OP1JfFa6KaCXsjVLjsNXDgUp1SmrZZAgGiPdp7MvUVnfg-FsuFvt7lfV5s3-kcK3K2uT05XMt6zUU_cP5WWQKxmKedjlQjvTZWdLyVZVcUMUrxUr5i68jpISP84HE0hihXOz7GtyWQG4gOtf-PXmcxmBf9KjYpVob08uR-62u2swlo396pKC0mSRrymia5PAakBFV9_0TbXGEhNVc101GIRdZ33C-j8DI6bIEYVlR1vG9jUKkfIcleu-rtjnJyDXD9FFBJwqxZsVOAUb9mcPvc4SZ04uefDvQwCDEg-C4I8eA%3D&attredirects=0)
 
 [Applying Taint Analysis and Theorem Proving to Exploit Development - Sean Heelan - RECON2010](http://static1.squarespace.com/static/507c09ede4b0954f51d59c75/t/508eb764e4b047ba54db4999/1351530340153/applying_taint_analysis_and_theorem_proving_to_xdev.pdf)
 

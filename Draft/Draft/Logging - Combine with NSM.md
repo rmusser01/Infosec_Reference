@@ -49,3 +49,20 @@ However plaso has become a framework that supports:
 * writing one-off scripts to automate repetitive tasks in computer forensic analysis or equivalent.
 https://github.com/log2timeline/plaso
 [Parsing Text Logs with Message Analyzer - Microsoft](http://blogs.technet.com/b/messageanalyzer/archive/2015/02/23/parsing-text-logs-with-message-analyzer.aspx)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

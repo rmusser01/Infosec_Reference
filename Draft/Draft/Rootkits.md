@@ -1,6 +1,11 @@
 ##Rootkits
 
 
+[Windows Rootkits(excellent writeup/introduction to windows rootkits)](http://www.programdevelop.com/5408113/)
+* [Part 2](http://www.programdevelop.com/5409574/)
+* [Part 3](http://www.programdevelop.com/5408212/)
+
+
 
 TOC
 Cull
@@ -83,9 +88,6 @@ Thunderstrike is the name for the Apple EFI firmware security vulnerability that
 
 [Advanced Bootkit Techniques on Android](http://www.syscan360.org/slides/2014_EN_AdvancedBootkitTechniquesOnAndroid_ChenZhangqiShendi.pdf)
 
-[Windows Rootkits of 2005 -(from 2014)](http://www.programdevelop.com/5408113/)
-* [Part 2](http://www.programdevelop.com/5409574/)
-* [Part 3](http://www.programdevelop.com/5408212/)
 
 
 ###Videos

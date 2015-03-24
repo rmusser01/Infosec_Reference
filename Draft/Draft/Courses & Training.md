@@ -2,7 +2,7 @@
 
 
 
-
+http://opensecuritytraining.info/LifeOfBinaries.html
 
 [Win32 ASM tutorials - Iczelion](http://win32assembly.programminghorizon.com/tutorials.html)
 
@@ -20,11 +20,8 @@ http://www.cis.syr.edu/~wedu/seed/all_labs.html - Training
 [Open Security Training](www.opensecuritytraining.info)
 
 
-
-
-
-
-
+[Introductory Intel x86: Architecture, Assembly, Applications, & Alliteration](http://opensecuritytraining.info/IntroX86.html)
+* This class serves as a foundation for the follow on Intermediate level x86 class. It teaches the basic concepts and describes the hardware that assembly code deals with. It also goes over many of the most common assembly instructions. Although x86 has hundreds of special purpose instructions, students will be shown it is possible to read most programs by knowing only around 20-30 instructions and their variations.
 
 
 

@@ -25,6 +25,17 @@ Tutorials/Walk-Throughs
 ###Cull
 
 
+
+
+[Stupid PCIe Tricks featuring NSA Playset: PCIe](https://www.youtube.com/watch?v=Zwz61uVxiM0)
+
+[The NSA Playset - RF Retroreflectors - Defcon22](https://www.youtube.com/watch?v=5gb3C80_wXI)
+
+
+
+
+
+
 [A Primer on IoT Security Research](https://community.rapid7.com/community/infosec/blog/2015/03/10/iot-security-research-whats-it-take)
 
 [Reverse Engineering: Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)

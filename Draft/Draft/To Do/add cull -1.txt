@@ -10,6 +10,25 @@ http://www.legbacore.com/Research.html
 
 
 
+[The Live-Armor Guide Building Custom Live Images with Debian and Grsecurity](https://fatemachine.github.io/live-armor/)
+* This guide explains how to build custom live system images for security sandboxing using tools from the Debian Live Systems project and Grsecurity.  For concreteness we will focus on building a custom live image for sandboxing the Firefox web browser (also known as Iceweasel in the Debian world). However, the same tools and procedures will allow you to build any kind of Debian-based live image you want.
+
+
+
+[rdtsc x86 instruction to detect virtual machines](http://blog.badtrace.com/post/rdtsc-x86-instruction-to-detect-vms/)
+
+
+
+[Rooting SIM cards](https://www.youtube.com/watch?v=BR0yWjQYnhQ)
+
+[Combating the Insider Threat at the FBI: Real World Lessons Learned - BlackHat2013](https://www.youtube.com/watch?v=0stTS-G5FsE)
+
+
+
+
+
+[Enumerating DNSSEC NSEC and NSEC3 Records](https://www.altsci.com/concepts/page.php?s=dnssec&p=1)
+
 
 [Hardware Backdooring is Practical -Jonathan Brossard - Defcon20](https://www.youtube.com/watch?v=umBruM-wFUw)
 

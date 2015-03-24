@@ -15,6 +15,9 @@ Miscellaneous
 ###Cull
 
 
+
+http://nullcon.net/website/archives/ppt/goa-15/analyzing-chrome-crash-reports-at-scale-by-abhishek-arya.pdf
+
 [browserfuzz](https://bitbucket.org/blackaura/browserfuzz)
 * A very simple browser fuzzer based on tornado.
 

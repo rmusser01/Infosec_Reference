@@ -23,6 +23,7 @@ Intro
 * Similarities/Differences of applications (aka rip-off indicator)
 * This tool detects and reports: the identical methods; the similar methods; the deleted methods; the new methods; the skipped methods. 
 
+[ARE - Virtual Machine for Android Reverse Engineering](https://redmine.honeynet.org/projects/are)
 
 [APK Studio - Android Reverse Engineering](https://apkstudio.codeplex.com/)
 * APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis.
@@ -274,6 +275,13 @@ Check the Encryption section of the overall guide for more information.
 
 
 
+###Android Internals
+[Dalvik opcodes](http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html)
+
+[Dalvik Bytecode Format docs](http://source.android.com/devices/tech/dalvik/dex-format.html)
+
+
+
 
 
 ###Interesting Android Papers
@@ -356,12 +364,6 @@ Check the Encryption section of the overall guide for more information.
 ###Educational Material
 
 
-
-
-
-
-
-
 [OWASP GoatDroid](https://www.owasp.org/index.php/Projects/OWASP_GoatDroid_Project)
 * “OWASP GoatDroid is a fully functional and self-contained training environment for educating developers and testers on Android security. GoatDroid requires minimal dependencies and is ideal for both Android beginners as well as more advanced users. 
 The project currently includes two applications: FourGoats, a location-based social network, and Herd Financial, a mobile banking application. There are also several feature that greatly simplify usage within a training environment or for absolute beginners who want a good introduction to working with the Android platform.”
@@ -388,6 +390,25 @@ Developer Backdoors
 Weak change password implementation
 Weak Local storage issues
 https://github.com/dineshshetty/Android-InsecureBankv2
+
+
+
+###Reverse Engineering Android
+[Android apk-tool](https://code.google.com/p/android-apktool/)
+* It is a tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications; it makes possible to debug smali code step by step. Also it makes working with app easier because of project-like files structure and automation of some repetitive tasks like building apk, etc. 
+[Reversing and Auditing Android’s Proprietary bits](http://www.slideshare.net/joshjdrake/reversing-and-auditing-androids-proprietary-bits)
+
+[Smali](https://code.google.com/p/smali/)
+* smali/baksmali is an assembler/disassembler for the dex format used by dalvik, Android's Java VM implementation. The syntax is loosely based on Jasmin's/dedexer's syntax, and supports the full functionality of the dex format (annotations, debug info, line info, etc.) 
+
+[Dexter](http://dexter.dexlabs.org/accounts/login/?next=/dashboard)
+* Dexter is a static android application analysis tool.
+
+[APKinpsector](https://github.com/honeynet/apkinspector/)
+APKinspector is a powerful GUI tool for analysts to analyze the Android applications. 
+
+[Reversing Android Apps Slides](http://www.floyd.ch/download/Android_0sec.pdf)
+
 
 
 

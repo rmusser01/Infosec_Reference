@@ -30,6 +30,13 @@ Interesting & Useful Write-ups
 
 ###CULL
 
+http://www.mmoviper.com/
+
+
+
+
+http://threatshare.com/2013/05/if-a-prefix-drops-does-anyone-listen/
+
 [Less is More, Exploring Code/Process-less Techniques and Other Weird Machine Methods to Hide Code (and How to Detect Them)](https://cansecwest.com/slides/2014/less%20is%20more3.pptx)
 
 [Smart TV Security - #1984 in 21 st century](https://cansecwest.com/slides/2013/SmartTV%20Security.pdf)

@@ -1,6 +1,9 @@
 ##Low Level Attacks/Firmware/BIOS/UEFI
 
-http://www.legbacore.com/Research.html
+[Timeline of Low level software and hardware attack papers](http://timeglider.com/timeline/5ca2daa6078caaf4)
+
+
+
 
 
 BIOS/UEFI Firmware
@@ -9,11 +12,17 @@ Writeups
 
 
 
-[Timeline of Low level software and hardware attack papers](http://timeglider.com/timeline/5ca2daa6078caaf4)
-
-
 ###Cull
 
+
+
+http://www.legbacore.com/Research.html
+
+http://www.legbacore.com/Research.html
+
+http://www.stoned-vienna.com/11111
+
+https://www.blackhat.com/presentations/bh-usa-09/KLEISSNER/BHUSA09-Kleissner-StonedBootkit-SLIDES.pdf
 
 http://forums.mydigitallife.info/forums/34-MDL-Projects-and-Applications
 
@@ -23,6 +32,13 @@ http://forums.mydigitallife.info/forums/25-BIOS-Mods
 https://01.org/linux-uefi-validation/overview
 
 [Technical Overview of Windows UEFI Startup Process](http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/)
+
+
+
+[Hacking Measured Boot and UEFI - Defcon20](https://www.youtube.com/watch?v=oiqcog1sk2E)
+*  There's been a lot buzz about UEFI Secure Booting, and the ability of hardware and software manufacturers to lock out third-party loaders (and rootkits). Even the NSA has been advocating the adoption of measured boot and hardware-based integrity checks. But what does this trend mean to the open source and hacker communities? In this talk I'll demonstrate measured boot in action. I'll also be releasing my new Measured Boot Tool which allows you to view Trusted Platform Module (TPM) boot data and identify risks such as unsigned early-boot drivers. And, I'll demonstrate how measured boot is used for remote device authentication.  Finally, I'll discuss weaknesses in the system (hint: bootstrapping trust is still hard), what this technology means to the consumerization trend in IT, and what software and services gaps exist in this space for aspiring entrepreneurs.
+
+[BIOS Chronomancy: Fixing the Core Root of Trust for Measurement - BlackHat 2013](https://www.youtube.com/watch?v=NbYZ4UCN9GY)
 
 
 
@@ -57,7 +73,7 @@ to detect high hardware-induced latencies within the system. It was originally
 written for use in the RT kernel, but has wider applications.
 
 
-
+[Attacking Intel ® Trusted Execution Technology Rafal Wojtczuk and Joanna Rutkowska](https://www.blackhat.com/presentations/bh-dc-09/Wojtczuk_Rutkowska/BlackHat-DC-09-Rutkowska-Attacking-Intel-TXT-slides.pdf)
 
 
 

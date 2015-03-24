@@ -28,6 +28,13 @@ https://en.wikipedia.org/wiki/Honeypot_%28computing%29
 
 
 
+[elastichoney](https://github.com/jordan-wright/elastichoney)0
+* Elastichoney is a simple elasticsearch honeypot designed to catch attackers exploiting RCE vulnerabilities in elasticsearch.
+
+
+
+
+
 ###Honeypots/nets
 [Modern Honey Network(MHN)](https://threatstream.github.io/mhn/)
 * From the secure deployment to the aggregation of thousands of events MHN provides enteprise grade management of the most current open source honeypot software. MHN is completely free open source software which supports external and internal honeypot deployments at a large and distributed scale. MHN uses the HPFeeds standard and low-interaction honeypots to keep effectiveness and security at enterprise grade levels. MHN provides full REST API out of the box and we are making CEF and STIX support available now for direct SIEM integration through our Commercial platform Optic. 

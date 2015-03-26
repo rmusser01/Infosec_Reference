@@ -11,10 +11,16 @@ OS X
 Windows
 Exploitation
 Exploit Dev
+Metasploit
 Forensics/IR
 Malware
 Reverse Engineering 
+Web
+Databases
 
+
+
+[How to Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)
 
 
 
@@ -25,30 +31,9 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 
-https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks
-
-
-[Drupal Security Checklist](https://github.com/gfoss/attacking-drupal/blob/master/presentation/drupal-security-checklist.pdf)
-
-[Checklist for mongodb](http://blog.mongodirector.com/10-tips-to-improve-your-mongodb-security/
-)
-
-[Tips for Troubleshooting Human Communications](https://zeltser.com/human-communications-cheat-sheet/)
-
-[How to Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)
-
-
-
-
 ###General Cheat Sheets
 
-[Metasploit 4.2 documentation](https://community.rapid7.com/docs/DOC-1751)
-
-[MSF Payload Cheat Sheet](http://aerokid240.blogspot.com/2009/11/msfpayload-goodness-cheatsheet.html)
-
-[Metasploit Meterpreter Cheat Sheet](https://scadahacker.com/library/Documents/Cheat_Sheets/Hacking%20-%20Meterpreter%20Cheat%20%20Sheet.pdf)
-
-[O-Auth Security Cheat Sheet](http://www.oauthsecurity.com/)
+[Tips for Troubleshooting Human Communications](https://zeltser.com/human-communications-cheat-sheet/)
 
 [Nmap](https://highon.coffee/docs/nmap/)
 
@@ -116,8 +101,14 @@ https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks
 [Nasm x86 reference](https://www.cs.uaf.edu/2006/fall/cs301/support/x86/)
 
 
+### Metasploit Cheat Sheets
+[Metasploit 4.2 documentation](https://community.rapid7.com/docs/DOC-1751)
 
+[MSF Payload Cheat Sheet](http://aerokid240.blogspot.com/2009/11/msfpayload-goodness-cheatsheet.html)
 
+[Metasploit Meterpreter Cheat Sheet](https://scadahacker.com/library/Documents/Cheat_Sheets/Hacking%20-%20Meterpreter%20Cheat%20%20Sheet.pdf)
+
+[Tips & Tricks](https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks)
 
 
 ###Forensics/IR Cheat Sheets
@@ -157,3 +148,28 @@ https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks
 
 [Analyzing Malicious Documents Cheat Sheet](https://zeltser.com/analyzing-malicious-documents/)
 
+
+###Web Cheat Sheets
+
+[WebAppSec Testing Checklist](http://tuppad.com/blog/wp-content/uploads/2012/03/WebApp_Sec_Testing_Checklist.pdf)
+
+[Drupal Security Checklist](https://github.com/gfoss/attacking-drupal/blob/master/presentation/drupal-security-checklist.pdf)
+
+[O-Auth Security Cheat Sheet](http://www.oauthsecurity.com/)
+
+[OWASP Testing Checklist](https://www.owasp.org/index.php/Testing_Checklist)
+
+[Securing Web Application Technologies Checklist](http://www.securingthehuman.org/developer/swat)
+
+
+
+
+
+
+
+
+
+###Database Cheat Sheets
+
+[Checklist for mongodb](http://blog.mongodirector.com/10-tips-to-improve-your-mongodb-security/
+)

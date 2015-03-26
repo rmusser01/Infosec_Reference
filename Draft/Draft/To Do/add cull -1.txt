@@ -4,7 +4,7 @@ http://projectshellcode.com/?q=node/12
 
 
 
-
+[Enumerating DNSSEC NSEC and NSEC3 Records](https://www.altsci.com/concepts/page.php?s=dnssec&p=1)
 
 http://www.legbacore.com/Research.html
 
@@ -12,6 +12,21 @@ http://www.legbacore.com/Research.html
 
 [The Live-Armor Guide Building Custom Live Images with Debian and Grsecurity](https://fatemachine.github.io/live-armor/)
 * This guide explains how to build custom live system images for security sandboxing using tools from the Debian Live Systems project and Grsecurity.  For concreteness we will focus on building a custom live image for sandboxing the Firefox web browser (also known as Iceweasel in the Debian world). However, the same tools and procedures will allow you to build any kind of Debian-based live image you want.
+
+
+https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet
+
+https://www.owasp.org/index.php/Application_Security_Architecture_Cheat_Sheet
+
+
+
+[Bootkit Disk Forensics
+[Part 1](http://www.malwaretech.com/2015/02/bootkit-disk-forensics-part-1.html)
+[Part 2](http://www.malwaretech.com/2015/03/bootkit-disk-forensics-part-2.html)
+
+
+
+[Github dorks - finding vulns](http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html)
 
 
 
@@ -45,7 +60,7 @@ shellcode tutorials http://projectshellcode.com/?q=node/12
 
 
 [QR Inception: Barcode-in-Barcode Attacks](https://www.sba-research.org/wp-content/uploads/publications/qrinception.pdf)
-* 2D barcodes offer many benefits compared to 1D barcodes, such as high information density and robustness. Before their introduction to the mobile phone ecosystem, they have been widely used in specic applications, such as logistics or ticketing. However, there are multiple competing standards with different benefits and drawbacks. Therefore, reader applications as well as dedicated devices have to support multiple standards. In this paper, we present novel attacks based on deliberately caused ambiguities when especially crafted barcodes conform to multiple standards. Implementation details de- cide which standard the decoder locks on. This way, two users scanning the same barcode with dierent phones or apps will receive different content. This potentially opens way for multiple problems related to security. We describe how embedding one barcode symbology into another can be used to perform phishing attacks as well as targeted exploits. In addition, we evaluate the extent to which popular 2D barcode reader applications on smartphones are susceptible to these barcode-in-barcode attacks. We furthermore discuss mitigation techniques against this type of attack.
+* 2D barcodes offer many benefits compared to 1D barcodes, such as high information density and robustness. Before their introduction to the mobile phone ecosystem, they have been widely used in specific applications, such as logistics or ticketing. However, there are multiple competing standards with different benefits and drawbacks. Therefore, reader applications as well as dedicated devices have to support multiple standards. In this paper, we present novel attacks based on deliberately caused ambiguities when especially crafted barcodes conform to multiple standards. Implementation details decide which standard the decoder locks on. This way, two users scanning the same barcode with different phones or apps will receive different content. This potentially opens way for multiple problems related to security. We describe how embedding one barcode symbology into another can be used to perform phishing attacks as well as targeted exploits. In addition, we evaluate the extent to which popular 2D barcode reader applications on smartphones are susceptible to these barcode-in-barcode attacks. We furthermore discuss mitigation techniques against this type of attack.
 
 
 

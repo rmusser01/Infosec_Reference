@@ -55,6 +55,9 @@ Beeswarm](http://www.beeswarm-ids.org/)
 [dionea](http://dionaea.carnivore.it/)
 * dionaea intention is to trap malware exploiting vulnerabilities exposed by services offerd to a network, the ultimate goal is gaining a copy of the malware. 
 
+[Kippo](https://github.com/desaster/kippo)
+* Kippo is a medium interaction SSH honeypot designed to log brute force attacks and, most importantly, the entire shell interaction performed by the attacker.
+
 [Glastopf Project](http://glastopf.org/)
 * Glastopf is a Honeypot which emulates thousands of vulnerabilities to gather data from attacks targeting web applications. The principle behind it is very simple: Reply the correct response to the attacker exploiting the web application. The project has been kicked off by Lukas Rist in 2009 and the results we are got during this time are very promising and are an incentive to put even more effort in the development of this unique tool. Read the tool description for further information. We are working together with different people, organizations and institutions to get the best from the collected data. Find out more about collaborating with the project. 
 

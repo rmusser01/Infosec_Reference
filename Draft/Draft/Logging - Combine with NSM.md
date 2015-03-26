@@ -3,8 +3,28 @@
 ELK Stack
 
 
+
 Logstash/Kibana Elastic Search
 
+
+
+
+
+[Graphite - Scalable Realtime Graphing](http://graphite.wikidot.com/start)
+* [Quick Start Guide](http://graphite.wikidot.com/quickstart-guide)
+
+
+[Syslong-ng](https://github.com/balabit/syslog-ng)
+* syslog-ng is an enhanced log daemon, supporting a wide range of input and output methods: syslog, unstructured text, message queues, databases (SQL and NoSQL alike) and more.
+
+
+
+
+[logstash anonymize](http://logstash.net/docs/1.4.2/filters/anonymize)
+* Anonymize fields using by replacing values with a consistent hash.
+
+[StatsD](https://github.com/etsy/statsd/)
+* A network daemon that runs on the Node.js platform and listens for statistics, like counters and timers, sent over UDP or TCP and sends aggregates to one or more pluggable backend services (e.g., Graphite).
 
 
 [Spotting the Adversary with Windows Event Log Monitoring - NSA](https://www.nsa.gov/ia/_files/app/Spotting_the_Adversary_with_Windows_Event_Log_Monitoring.pdf)

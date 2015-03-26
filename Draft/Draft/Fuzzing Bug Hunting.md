@@ -16,6 +16,10 @@ Miscellaneous
 
 
 
+[afl-dyninst ; AFL Fuzzing blackbox binaries](https://github.com/vrtadmin/moflow/tree/master/afl-dyninst)
+* American Fuzzy Lop + Dyninst == AFL Fuzzing blackbox binaries  The tool has two parts. The instrumentation tool and the instrumentation  library. Instrumentation library has an initialization callback and basic  block callback functions which are designed to emulate what AFL is doing with afl-gcc/afl-g++/afl-as.  Instrumentation tool (afl-dyninst) instruments the supplied binary by inserting callbacks for each basic block and an initialization  callback either at _init or at specified entry point.
+
+
 http://nullcon.net/website/archives/ppt/goa-15/analyzing-chrome-crash-reports-at-scale-by-abhishek-arya.pdf
 
 [browserfuzz](https://bitbucket.org/blackaura/browserfuzz)

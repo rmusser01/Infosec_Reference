@@ -16,13 +16,17 @@
 [Extensible Metadata Platform](https://en.wikipedia.org/wiki/Extensible_Metadata_Platform)
 * The Extensible Metadata Platform (XMP) is an ISO standard, originally created by Adobe Systems Inc., for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
 
-
+[Firmware Forensics: Diffs, Timelines, ELFs and Backdoors](http://w00tsec.blogspot.com/2015/02/firmware-forensics-diffs-timelines-elfs.html)
 
 [Real-time Steganography with RTP](http://uninformed.org/?v=all&a=36&t=sumry)
 * Real-time Transfer Protocol (RTP) is used by nearly all Voice-over-IP systems to provide the audio channel for calls. As such, it provides ample opportunity for the creation of a covert communication channel due to its very nature. While use of steganographic techniques with various audio cover-medium has been extensively researched, most applications of such have been limited to audio cover-medium of a static nature such as WAV or MP3 file audio data. This paper details a common technique for the use of steganography with audio data cover-medium, outlines the problem issues that arise when attempting to use such techniques to establish a full-duplex communications channel within audio data transmitted via an unreliable streaming protocol, and documents solutions to these problems. An implementation of the ideas discussed entitled SteganRTP is included in the reference materials. 
 
 
 
+[Windows Memory Analysis Checklist](http://www.dumpanalysis.org/windows-memory-analysis-checklist)
+
+[MozillaRecovery](https://github.com/gtfy/MozillaRecovery)
+* Recovers the master password of key3.db files, i.e. Thunderbird, Firefox
 
 [Exfil Framework](https://github.com/reservoirlabs/bro-scripts/tree/master/exfil-detection-framework)
 * The Exfil Framework is a suite of Bro scripts that detect file uploads in TCP connections. The Exfil Framework can detect file uploads in most TCP sessions including sessions that have encrypted payloads (SCP,SFTP,HTTPS). 

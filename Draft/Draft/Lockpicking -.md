@@ -2,12 +2,13 @@
 
 
 
+
+
+
+###Cull
 http://www.keypicking.com/
 
-https://www.reddit.com/r/lockpicking
 
-
-[Safecracking for the computer scientist*](http://www.crypto.com/papers/safelocks.pdf)
 
 
 
@@ -19,9 +20,27 @@ https://www.reddit.com/r/lockpicking
 
 [A newbies guide to safes, both opening and using](https://www.reddit.com/r/WhatsInThisThing/comments/1gm6uk/a_newbies_guide_to_safes_both_opening_and_using/)
 
+
+
+
 ###General Information
 
 [Various types of locks](https://securitysnobs.com/Types-Of-Locks.html)
+
+
+
+###Guides/Techniques
+
+[Newbies guide to picking safes](http://cybergibbons.com/lockpicking-2/a-newbies-guide-to-safes/)
+
+[Attack the Key, Own the Lock - Defcon18](https://www.youtube.com/watch?v=_-PqzkoQQ7s)
+
+[Key Impressioning by Jos Weyers - Defcon 19](https://www.youtube.com/watch?v=s8aQSxXoLFk)
+
+[Safecracking for the computer scientist*](http://www.crypto.com/papers/safelocks.pdf)
+
+
+
 
 
 ###Videos/Talks
@@ -33,6 +52,12 @@ https://www.reddit.com/r/lockpicking
 
  [Distinguishing Lockpicks: Raking vs Lifting vs Jiggling and More - Deviant Ollam](https://www.youtube.com/watch?v=e07VRxJ01Fs)
 
+
+
+
+
+
+
 ###Books
 
 [Locksport Primer](http://pdf.textfiles.com/security/lsiguide.pdf)
@@ -40,6 +65,7 @@ https://www.reddit.com/r/lockpicking
 [Academic book on Locks](https://www.goodreads.com/book/show/525753.Locks_Safes_and_Security)
 
 [MIT Guide to Lockpicking](http://www.capricorn.org/~akira/home/lockpick/)
+
 
 
 ###Sites/Organizations
@@ -50,10 +76,10 @@ https://www.reddit.com/r/lockpicking
 [lockpicking101](http://www.lockpicking101.com/)
 * A community dedicated to the fun and ethical hobby of lock picking.
 
+[/r/lockpicking - Reddit Lockpicking Community](https://www.reddit.com/r/lockpicking)
 
-###Guides
 
-[Newbies guide to picking safes](http://cybergibbons.com/lockpicking-2/a-newbies-guide-to-safes/)
+
 
 
 

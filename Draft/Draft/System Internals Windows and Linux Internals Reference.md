@@ -97,7 +97,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 [Pushing the Limits of Windows: Virtual Memory](http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx)
 
-
+[PE File Format Graphs](http://blog.dkbza.org/2012/08/pe-file-format-graphs.html?view=mosaic)
 
 
 

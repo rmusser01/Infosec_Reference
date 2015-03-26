@@ -4,19 +4,34 @@ Attacking Android Devices
 TOC
 Cull
 Intro
-
-
-
-
+Android Internals
+Vulnerabilities
+Exploits
+Device Analysis
+Application Analysis
+	* Dynamic Analysis
+	* Static Analysis
+	* Online APK Analyzers
+Attack Platforms
+Android Malware
+Reverse Engineering Android
+Interesting Papers
+Write-ups
+Books
+Other
 
 
 [Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
 
-[Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
+
 
 [csploit](http://www.csploit.org/docs.html)
 * The most complete and advanced IT security professional toolkit on Android.(From their site)
 * [Github](https://github.com/cSploit/android/tree/master/cSploit)
+
+
+
+
 
 ###Cull
 [elsim - Elements Similarities](https://code.google.com/p/elsim/wiki/Similarity#Diffing_of_applications)
@@ -24,6 +39,13 @@ Intro
 * This tool detects and reports: the identical methods; the similar methods; the deleted methods; the new methods; the skipped methods. 
 
 [ARE - Virtual Machine for Android Reverse Engineering](https://redmine.honeynet.org/projects/are)
+
+
+
+[Android Bytecode Obfuscation - Patrick Schulz 2012](http://dexlabs.org/blog/bytecode-obfuscation)
+
+
+
 
 [APK Studio - Android Reverse Engineering](https://apkstudio.codeplex.com/)
 * APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis.
@@ -34,48 +56,20 @@ Intro
 [PatchDroid: Scalable Third-Party Security Patches for Android Devices](http://www.mulliner.org/collin/academic/publications/patchdroid.pdf)
 * Android is currently the largest mobile platform with around 750 million devices worldwide. Unfortunately, more than 30% of all devices contain publicly known security vulnera- bilities and, in practice, cannot be updated through normal mechanisms since they are not longer supported by the man- ufacturer and mobile operator. This failure of traditional patch distribution systems has resulted in the creation of a large population of vulnerable mobile devices. In this paper, we present PatchDroid, a system to dis- tribute and apply third-party security patches for Android. Our system is designed for device-independent patch cre- ation, and uses in-memory patching techniques to address vulnerabilities in both native and managed code. We created a fully usable prototype of PatchDroid, including a number of patches for well-known vulnerabilities in Android devices. We evaluated our system on different devices from multiple manufacturers and show that we can effectively patch se- curity vulnerabilities on Android devices without impacting performance or usability. Therefore, PatchDroid represents a realistic path towards dramatically reducing the number of exploitable Android devices in the wild.
 
+
+
+###Android Internals
+[Dalvik opcodes](http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html)
+
+[Dalvik Bytecode Format docs](http://source.android.com/devices/tech/dalvik/dex-format.html)
+
+
 ####Vulnerabilities
 [List of Android Vulnerabilities](http://androidvulnerabilities.org/all)
 
 
 ####Exploits
 [List of Android Exploits](https://github.com/droidsec/droidsec.github.io/wiki/Vuln-Exploit-List)
-
-
-
-###Books
-
-* Android hackers handbook
-
-
-###Write-ups and Links
-
-[ Inside the Android Play Service's magic OAuth flow ](http://sbktech.blogspot.com/2014/01/inside-android-play-services-magic.html)
-* Owning google accounts on android devices
-
-[Security enhancements in android through its versions](www.androidtamer.com)
-
- [Understanding the Android bytecode](https://mariokmk.github.io/programming/2015/03/06/learning-android-bytecode.html)
-* Writeup on reversing/understanding Android Bytecode
-
-[ClockLockingBeats](https://github.com/monk-dot/ClockLockingBeats)
-* Repo for the DARPA CFT / Clock Locking Beats project. Exploring Android kernel and processor interactions to hide running threads
-
-
-###Android Malware
-
-[Rundown of Android Packers](http://www.fortiguard.com/uploads/general/Area41Public.pdf)
-
-[APK File Infection on an Android System](https://www.youtube.com/watch?v=HZI1hCdqKjQ&amp;list=PLCDA5DF85AD6B4ABD)
-
-[Manifesto](https://github.com/maldroid/manifesto)
-* PoC framework for APK obfuscation, used to demonstrate some of the obfuscation examples from http://maldr0id.blogspot.com. It supports plugins (located in processing directory) that can do different obfuscation techniques. Main gist is that you run manifesto on the APK file and it produces an obfuscated APK file.
-[Android Hacker Protection Level 0 - DEF CON 22 - Tim Strazzere and Jon Sawyer](https://www.youtube.com/watch?v=vLU92bNeIdI)
-* Obfuscator here, packer there - the Android ecosystem is becoming a bit cramped with different protectors for developers to choose. With such limited resources online about attacking these protectors, what is a new reverse engineer to do? Have no fear, after drinking all the cheap wine two Android hackers have attacked all the protectors currently available for everyones enjoyment! Whether you've never reversed Android before or are a hardened veteran there will be something for you, along with all the glorious PoC tools and plugins for your little heart could ever desire.
-
-
-###Security Analysis
-
 
 
 ###Device Analysis
@@ -275,12 +269,32 @@ Check the Encryption section of the overall guide for more information.
 
 
 
-###Android Internals
-[Dalvik opcodes](http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html)
+###Android Malware
 
-[Dalvik Bytecode Format docs](http://source.android.com/devices/tech/dalvik/dex-format.html)
+[Rundown of Android Packers](http://www.fortiguard.com/uploads/general/Area41Public.pdf)
+
+[APK File Infection on an Android System](https://www.youtube.com/watch?v=HZI1hCdqKjQ&amp;list=PLCDA5DF85AD6B4ABD)
+
+[Manifesto](https://github.com/maldroid/manifesto)
+* PoC framework for APK obfuscation, used to demonstrate some of the obfuscation examples from http://maldr0id.blogspot.com. It supports plugins (located in processing directory) that can do different obfuscation techniques. Main gist is that you run manifesto on the APK file and it produces an obfuscated APK file.
+[Android Hacker Protection Level 0 - DEF CON 22 - Tim Strazzere and Jon Sawyer](https://www.youtube.com/watch?v=vLU92bNeIdI)
+* Obfuscator here, packer there - the Android ecosystem is becoming a bit cramped with different protectors for developers to choose. With such limited resources online about attacking these protectors, what is a new reverse engineer to do? Have no fear, after drinking all the cheap wine two Android hackers have attacked all the protectors currently available for everyones enjoyment! Whether you've never reversed Android before or are a hardened veteran there will be something for you, along with all the glorious PoC tools and plugins for your little heart could ever desire.
 
 
+###Reverse Engineering Android
+[Android apk-tool](https://code.google.com/p/android-apktool/)
+* It is a tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications; it makes possible to debug smali code step by step. Also it makes working with app easier because of project-like files structure and automation of some repetitive tasks like building apk, etc. 
+[Reversing and Auditing Android’s Proprietary bits](http://www.slideshare.net/joshjdrake/reversing-and-auditing-androids-proprietary-bits)
+
+[Smali](https://code.google.com/p/smali/)
+* smali/baksmali is an assembler/disassembler for the dex format used by dalvik, Android's Java VM implementation. The syntax is loosely based on Jasmin's/dedexer's syntax, and supports the full functionality of the dex format (annotations, debug info, line info, etc.) 
+
+[Dexter](http://dexter.dexlabs.org/accounts/login/?next=/dashboard)
+* Dexter is a static android application analysis tool
+[APKinpsector](https://github.com/honeynet/apkinspector/)
+APKinspector is a powerful GUI tool for analysts to analyze the Android applications. 
+
+[Reversing Android Apps Slides](http://www.floyd.ch/download/Android_0sec.pdf)
 
 
 
@@ -370,46 +384,29 @@ The project currently includes two applications: FourGoats, a location-based soc
 
 [Insecure Bank v2](https://github.com/dineshshetty/Android-InsecureBankv2)
 * This vulnerable Android application is named "InsecureBankv2" and is made for security enthusiasts and developers to learn the Android insecurities by testing this vulnerable application. Its back-end server component is written in python. The client component i.e. the Android InsecureBank.apk can be downloaded along with the source code. 
-The list of vulnerabilities that are currently included in this release are: 
-Insecure Logging mechanism
-Vulnerable Activity Components
-Content providers injection
-Weak Broadcast Receiver permissions
-Android Pasteboard vulnerability
-Local Encryption issues
-Android keyboard cache issues
-Insecure Webview implementation
-Insecure SDCard storage
-Insecure HTTP connections
-Weak Authorization mechanism
-Parameter Manipulation
-Weak Cryptography implementation
-Hardcoded secrets
-Username Enumeration issue
-Developer Backdoors
-Weak change password implementation
-Weak Local storage issues
-https://github.com/dineshshetty/Android-InsecureBankv2
 
 
 
-###Reverse Engineering Android
-[Android apk-tool](https://code.google.com/p/android-apktool/)
-* It is a tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications; it makes possible to debug smali code step by step. Also it makes working with app easier because of project-like files structure and automation of some repetitive tasks like building apk, etc. 
-[Reversing and Auditing Android’s Proprietary bits](http://www.slideshare.net/joshjdrake/reversing-and-auditing-androids-proprietary-bits)
 
-[Smali](https://code.google.com/p/smali/)
-* smali/baksmali is an assembler/disassembler for the dex format used by dalvik, Android's Java VM implementation. The syntax is loosely based on Jasmin's/dedexer's syntax, and supports the full functionality of the dex format (annotations, debug info, line info, etc.) 
+###Write-ups
 
-[Dexter](http://dexter.dexlabs.org/accounts/login/?next=/dashboard)
-* Dexter is a static android application analysis tool.
+[ Inside the Android Play Service's magic OAuth flow ](http://sbktech.blogspot.com/2014/01/inside-android-play-services-magic.html)
+* Owning google accounts on android devices
 
-[APKinpsector](https://github.com/honeynet/apkinspector/)
-APKinspector is a powerful GUI tool for analysts to analyze the Android applications. 
+[Security enhancements in android through its versions](www.androidtamer.com)
 
-[Reversing Android Apps Slides](http://www.floyd.ch/download/Android_0sec.pdf)
+ [Understanding the Android bytecode](https://mariokmk.github.io/programming/2015/03/06/learning-android-bytecode.html)
+* Writeup on reversing/understanding Android Bytecode
+
+[ClockLockingBeats](https://github.com/monk-dot/ClockLockingBeats)
+* Repo for the DARPA CFT / Clock Locking Beats project. Exploring Android kernel and processor interactions to hide running threads
 
 
+
+###Books
+
+* Android Hackers Handbook
+* Android System Security Internals
 
 
 ###Other

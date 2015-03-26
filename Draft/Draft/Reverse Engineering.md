@@ -43,13 +43,20 @@ Wikis & Useful Sites
 [SATCOM Terminals Hacking by Air, Sea, and Land - Black Hat USA 2014](https://www.youtube.com/watch?v=tRHDuT__GoM)
 
 
+[Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 
-
+[PE File Format Graphs](http://blog.dkbza.org/2012/08/pe-file-format-graphs.html?view=mosaic)
 
 https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
 
 
+[Bindead - static binary binary analysis tool](https://bitbucket.org/mihaila/bindead/wiki/Home)
+* Bindead is an analyzer for executable machine code. It features a disassembler that translates machine code bits into an assembler like language (RREIL) that in turn is then analyzed by the static analysis component using abstract interpretation. 
 
+[Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
+
+[BitBlaze](http://bitblaze.cs.berkeley.edu/)
+* The BitBlaze project aims to design and develop a powerful binary analysis platform and employ the platform in order to (1) analyze and develop novel COTS protection and diagnostic mechanisms and (2) analyze, understand, and develop defenses against malicious code. The BitBlaze project also strives to open new application areas of binary analysis, which provides sound and effective solutions to applications beyond software security and malicious code defense, such as protocol reverse engineering and fingerprint generation. 
  
 
 
@@ -72,6 +79,9 @@ https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
 [Frida](http://www.frida.re/docs/home/)
 * Inject JS into native apps
 
+[Rdis](https://github.com/endeav0r/rdis)
+* Rdis is a Binary Analysis Tool for Linux.
+
 [Python RE tools list](http://pythonarsenal.erpscan.com/)
 
 [Static binary analysis tool](https://github.com/bdcht/amoco)
@@ -84,6 +94,8 @@ Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extr
 
 [Cryptoshark](https://github.com/frida/cryptoshark)
 * Interactive code tracer for reverse-engineering proprietary software 
+
+
 
 
 ####Frameworks
@@ -110,6 +122,21 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 [OllyDbg](http://www.ollydbg.de/)
 * OllyDbg is a 32-bit assembler level analysing debugger for Microsoft® Windows®. Emphasis on binary code analysis makes it particularly useful in cases where source is unavailable.
 
+[WinDbg](
+*
+*[Excellent Resource Site](http://www.windbg.org/)
+*[Crash Dump Analysis Poster](http://www.dumpanalysis.org/CDAPoster.html)
+
+* [Getting Started with WinDbg (User-Mode)](https://msdn.microsoft.com/en-us/library/windows/hardware/dn745911%28v=vs.85%29.aspx)
+* [Getting Started with WinDbg (Kernel-Mode)](https://msdn.microsoft.com/en-us/library/windows/hardware/dn745912%28v=vs.85%29.aspx)
+
+[WinAppDbg](http://winappdbg.sourceforge.net/)
+* The WinAppDbg python module allows developers to quickly code instrumentation scripts in Python under a Windows environment.  It uses ctypes to wrap many Win32 API calls related to debugging, and provides a powerful abstraction layer to manipulate threads, libraries and processes, attach your script as a debugger, trace execution, hook API calls, handle events in your debugee and set breakpoints of different kinds (code, hardware and memory). Additionally it has no native code at all, making it easier to maintain or modify than other debuggers on Windows.  The intended audience are QA engineers and software security auditors wishing to test or fuzz Windows applications with quickly coded Python scripts. Several ready to use tools are shipped and can be used for this purposes.  Current features also include disassembling x86/x64 native code, debugging multiple processes simultaneously and produce a detailed log of application crashes, useful for fuzzing and automated testing.
+
+
+
+
+
 [Open Source Windows x86/x64 Debugger](http://x64dbg.com/)
 
 [xnippet](https://github.com/isislab/xnippet)
@@ -132,6 +159,9 @@ programming environment.
 	* IDA Pomidor is a fun and simple plugin for the Hex-Ray's IDA Pro disassembler that will help you retain concentration and productivity during long reversing sessions. 
 
 
+[Hopper](http://www.hopperapp.com/)
+* Hopper is a reverse engineering tool for OS X and Linux, that lets you disassemble, decompile and debug your 32/64bits Intel Mac, Linux, Windows and iOS executables!
+* quote from a friend on irc: "IF u RLY like guis this is also a cheap option"
 
 
 [Reverse](https://github.com/joelpx/reverse)

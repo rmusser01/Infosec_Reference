@@ -1,38 +1,34 @@
 ##CTFs & Wargames
+
+TOC
+General
+Wargames
+Vulnerable VMs
+Challenge Sites
+One-off Challenges & Puzzles
+
+
+
+
+###General
 [ctf-time](https://ctftime.org/)
 
 [Suggestions on Running a CTF](https://github.com/pwning/docs/blob/master/suggestions-for-running-a-ctf.markdown)
 * This document describes some of the design decisions and technical details involved in running a CTF competition. It attempts to summarize some opinions held by the CTF community and list some specific pitfalls to avoid when designing problems.
 
-
-
-TOC
-Cull
-Challenge Sites
-One-off Challenges & Puzzles
-Wargames
-Vulnerable VMs
-
-
-
-###CULL
-
-[The Many Maxims of Maximally Effective CTFs](http://captf.com/maxims.html)
-
+[CTF Writeups](https://github.com/ctfs/write-ups)
 
 [CTF write-ups 2015](https://github.com/ctfs/write-ups-2015)
 
+[Archive of recent CTFs](http://repo.shell-storm.org/CTF/)
+
+[The Many Maxims of Maximally Effective CTFs](http://captf.com/maxims.html)
+
+[Pwning (sometimes) with style Dragons’ notes on CTFs](http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf)
+
 [Golden Flag CTF Awards](http://golden-flags.com/)
 
-CTF Event Write-ups
 
-[CTF Writeups](https://github.com/ctfs/write-ups)[Archive of recent CTFs](http://repo.shell-storm.org/CTF/)
-
-[CTF Writeups](https://github.com/ctfs/write-ups)[Captf](http://captf.com/)
-
-*  This site is primarily the work of psifertex since he needed a dump site for a variety of CTF material and since many other public sites documenting the art and sport of Hacking Capture the Flag events have come and gone over the years.
-
-[CTF Writeups](https://github.com/ctfs/write-ups)
 
 
 ###Wargames
@@ -66,6 +62,9 @@ Making/Hosting your own CTF
 
 [Vulnhub](Https://www.Vulnhub.com)
 
+[The Hacker Games](http://www.scriptjunkie.us/2012/04/the-hacker-games/)
+* VM Setup to practice VM breakouts/defense. Hack the VM before it hacks you!
+* [VM Download](http://www.scriptjunkie.us/files/TheHackerGames.zip)
 
 
 

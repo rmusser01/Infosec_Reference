@@ -31,11 +31,9 @@ Information Security Reference That Doesn't Suck
 | [Privilege Escalation and Post-Exploitation](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Draft/PrivEsc%20Post-Exploitation) | | [Sandboxes](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Sandboxes.md) |
 | [Reverse Engineering](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Draft/Reverse%20Engineering.md) | | [SysAdmin Stuff](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Sysadmin%20Stuff.md) |
 | [REMATH Reversse Engineering](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Reverse%20Engineering%20-%20REMath%20Literature.md) | | [System Internals(not sysinternals Tools)](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/System%20Internals%20Windows%20and%20Linux%20Internals%20Reference.md) | 
-| [Rootkits](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Rootkits.md) | [UX Design](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/UX%20Design%20-%20Because%20we%20all%20know%20how%20sexy%20pgp%20is.md)  |
-| [Social Engineering](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Social%20Engineering.md) | | |
-| [Web](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Web%20%26%20Browsers.md) | | |
+| [Rootkits](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Rootkits.md) | | [UX Design](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/UX%20Design%20-%20Because%20we%20all%20know%20how%20sexy%20pgp%20is.md) |
+| [Social Engineering](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Social%20Engineering.md) | | [Steal Everything, Kill Everyone, Profit.](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Steal%20Everything%20Kill%20Everyone%20Profit.md) |
 | [Wireless Networks & RF](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Wireless%20Networks%20%26%20RF.md) | | |
-| [Steal Everything, Kill Everyone, Profit.](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Steal%20Everything%20Kill%20Everyone%20Profit.md) | |
 | [Web Applications & Browsers](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Web%20%26%20Browsers.md) | |
 [Wireless Networks and RF Devices](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Wireless%20Networks%20%26%20RF.md) | |
 

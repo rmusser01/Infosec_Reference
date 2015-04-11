@@ -16,6 +16,7 @@ Write-ups
 
 ###Cull
 
+
 http://www.cuckoosandbox.org/
 
 https://www.shadowserver.org/wiki/pmwiki.php/Information/Honeypots
@@ -28,10 +29,14 @@ https://en.wikipedia.org/wiki/Honeypot_%28computing%29
 
 
 
-[elastichoney](https://github.com/jordan-wright/elastichoney)0
-* Elastichoney is a simple elasticsearch honeypot designed to catch attackers exploiting RCE vulnerabilities in elasticsearch.
 
+Types:
 
+Zero
+Low
+Medium
+High
+HoneyData - Strings, shares/drives, etc.
 
 
 
@@ -75,6 +80,41 @@ Beeswarm](http://www.beeswarm-ids.org/)
 
 [Thug - Python low-interaction honeyclient](https://buffer.github.io/thug/)
 * Thug is a Python low-interaction honeyclient aimed at mimicing the behavior of a web browser in order to detect and emulate malicious contents. 
+
+[elastichoney](https://github.com/jordan-wright/elastichoney)0
+* Elastichoney is a simple elasticsearch honeypot designed to catch attackers exploiting RCE vulnerabilities in elasticsearch.
+
+[romanHunter](http://sourceforge.net/projects/romanhunter/)
+* romanHunter (router man Hunter) is a wireless honeypot or closer to a sinkhole that will bait a cracker, capture the MAC address, reset the WIFI password (effectively destroying their connection) and wait for the next authorized connection.  The password changes happen on a round robin basis from entries in the password file (pw_list.txt).
+
+[Wordpot](https://github.com/gbrindisi/wordpot)
+* Wordpot is a Wordpress honeypot which detects probes for plugins, themes, timthumb and other common files used to fingerprint a wordpress installation.
+
+[Honeyagent](https://bitbucket.org/fkie_cd_dare/honeyagent)
+* HoneyAgent is a Java agent library that creates a Sandbox for Java applications and applets. Therefore, it uses the JVMTI as well as the JNI to intercept class loading and function calls. During runtime HoneyAgent traces function calls from the analysed application. It is displayed which class calles which function with which parameters. Reflected function calls are translated to the original function names for simpler reading.
+
+[HoneyBadger](https://bitbucket.org/LaNMaSteR53/honeybadger)
+* A framework for targeted geolocation.
+
+[Amun Honeypot](https://github.com/zeroq/amun)
+* [Amun Honeypot Paper](https://ub-madoc.bib.uni-mannheim.de/2595/1/amunhoneypot2.pdf)
+
+[phpmyadmin_honeypot](https://github.com/gfoss/phpmyadmin_honeypot)
+* Probably one of the smallest and simplest web honeypots out there...
+
+[Web Labyrinth](https://github.com/mayhemiclabs/weblabyrinth)
+* A simple tool that creates a maze of bogus web pages to  confuse web scanners. It's main goal is to delay and occupy malicious  scanners that scan websites in order for incident handlers to detected  and respond to them before damage is done.
+
+[Web Bug Server](http://sourceforge.net/p/adhd/wiki/Web%20Bug%20Server/)
+* Easily embed a web bug inside word processing documents. These bugs are hidden to the casual observer by using things like linked style sheets and 1 pixel images.
+
+[Truman](http://www.secureworks.com/cyber-threat-intelligence/tools/truman/)
+* Truman can be used to build a "sandnet", a tool for analyzing malware in an environment that is isolated, yet provides a virtual Internet for the malware to interact with. It runs on native hardware, therefore it is not stymied by malware which can detect VMWare and other VMs. The major stumbling block to not using VMs is the difficulty involved with repeatedly imaging machines for re-use. Truman automates this process, leaving the researcher with only minimal work to do in order to get an initial analysis of a piece of malware. Truman consists of a Linux boot image (originally based on Chas Tomlin's Windows Image Using Linux) and a collection of scripts. Also provided is pmodump, a Perl-based tool to reconstruct the virtual memory space of a process from a PhysicalMemory dump. With this tool it is possible to circumvent most packers to perform strings analysis on the dumped malware.
+
+
+###Presentations
+[Honeypots for Active Defense - A Practical Guide to Deploying Honeynets Within the Enterprise - Greg Foss](http://www.irongeek.com/i.php?page=videos/centralohioinfosec2015/tech201-honeypots-for-active-defense-a-practical-guide-to-deploying-honeynets-within-the-enterprise-greg-foss)
+* InfoSec analysts are all somewhat familiar with honeypots. When they are given the proper attention, care and feeding, they produce invaluable information. This intelligence has been primarily used by security researchers and organizations with advanced defensive capabilities to study their adversaries and learn from their actions. But what about the rest of us? Honeypots are a lot of work to configure, maintain, and monitor -- how can an organization that is not focused on research gain valuable intelligence using honeypots and actively defend their network using the data obtained? The answer is honeypots for active defense. There are currently many open source security tool distributions that come pre-loaded with honeypots among other useful tools, however the honeypot software is often not deployed in an effective manner. This session will discuss techniques to deploy honeypots in ways that will not overburden the security team with massive logs to sift through and focuses on correlating active threat data observed in the honeypot with the production environment. When deploying honeypots effectively, this can give security analysts one additional mechanism to tip them off to nefarious activity within their network.
 
 
 

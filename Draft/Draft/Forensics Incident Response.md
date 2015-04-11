@@ -17,10 +17,13 @@ OS Forensics
 
 
 
+Better security - Mean time to detect/Mean time to respond
 
 
+###CULL
 
-
+[Triaging Malware Incidents](http://journeyintoir.blogspot.com/2013/09/triaging-malware-incidents.html)
+* Good writeup/blogpost from Journey into Incidence Response
 
 applexaminer.com
 

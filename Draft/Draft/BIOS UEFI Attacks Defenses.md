@@ -135,7 +135,7 @@ Grab links for his papers
 
 
 
-
+[Hardware Backdooring is Practical -Jonathan Brossard - Defcon20](https://www.youtube.com/watch?v=umBruM-wFUw)
 
 
 [Attackin the TPM part 2](https://www.youtube.com/watch?v=h-hohCfo4LA)

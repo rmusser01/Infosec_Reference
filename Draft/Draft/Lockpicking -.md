@@ -52,7 +52,8 @@ http://www.keypicking.com/
 
  [Distinguishing Lockpicks: Raking vs Lifting vs Jiggling and More - Deviant Ollam](https://www.youtube.com/watch?v=e07VRxJ01Fs)
 
-
+[Electronic Safe Fail](http://www.irongeek.com/i.php?page=videos/centralohioinfosec2015/tech204-electronic-safe-fail-jeff-popio)
+* Commonly safes are used in IT to secure backup tapes, certificate roots, and other sensitive material. This talk will demonstrate that many of the safes used to secure these sensitive materials are ineffective. Today there are many varieties of electronic safes that utilize a VERY weak mechanism to physically lock the safe. In many cases there are ways to open the safe in less than a minute that leaves no evidence behind. (Sometimes only a few seconds) This talk will cover my experience discovering the flaw and dealing with a safe vendor to issue a fix, then discovering the inadequacies of the fix itself and vendor's continuing ignorance of the problem with most electronic locks. Fixing these problems can be relatively easy. There will be general instruction on how to fix the problems and what needs to be done by the vendors to make safes well... safer."
 
 
 

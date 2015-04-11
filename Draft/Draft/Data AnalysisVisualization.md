@@ -13,14 +13,25 @@ ToC
 
 
 
+http://plaso.kiddaland.net/
+[plaso](https://github.com/log2timeline/plaso)
+* plaso (Plaso Langar Að Safna Öllu) is a Python-based backend engine for the tool log2timeline. 
+
+
+[Graphite - Scalable Realtime Graphing](http://graphite.wikidot.com/start) 
+* [Quick Start Guide](http://graphite.wikidot.com/quickstart-guide)
+
+[StatsD](https://github.com/etsy/statsd/)
+* A network daemon that runs on the Node.js platform and listens for statistics, like counters and timers, sent over UDP or TCP and sends aggregates to one or more pluggable backend services (e.g., Graphite).
+
+[Kismet Log Viewer - KLV](http://mindflip.org/klv/)
+* The Kismet Log Viewer (KLV) takes Kismet .xml log files and produces a nicely formatted html interface to browse the logs with. KLV has the ability to utilize available GPS information to create links for external maps via the net, and provides the ability for those with Snort to generate a page of Snort output for each specific bssid that has data available. KLV also comes with my Kismet Log Combiner script to help users consolidate multiple .xml and .dump log files.
 
 
 
 
-
-
-
-
+[kippo-graph](https://github.com/ikoniaris/kippo-graph)
+* Visualize statistics from a Kippo SSH honeypot 
 
 
 

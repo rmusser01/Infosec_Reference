@@ -22,6 +22,15 @@ Cull
 http://www.deepdotweb.co/
 
 
+
+ Tor black-market-related arrests](http://www.gwern.net/Black-market%20arrests#evolution)
+* I compile a table and discussion of all known arrests and prosecutions related to Tor-Bitcoin black-markets such as Silk Road 1, along with discussion of how they came to be arrested.
+
+
+
+
+
+
 ###General
 [Touring the Darkside of the Internet. An Introduction to Tor - Defcon22](https://www.youtube.com/watch?v=To5yarfAg_E)
 

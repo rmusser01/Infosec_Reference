@@ -22,6 +22,13 @@ Reverse Engineering Classes/Training
 * ENISA CERT Exercises and training material was introduced in 2008, in 2012 and 2013 it was complemented with new exercise scenarios containing essential material for success in the CERT community and in the field of information security. In this page you will find the ENISA CERT Exercise material, containing Handbook for teachers, Toolset for students and Virtual Image to support hands on training sessions. 
 
 
+
+[Modern Binary Exploitation - CSCI 4968 - Spring '15](http://security.cs.rpi.edu/courses/binexp-spring2015/)
+* The course will start off by covering basic x86 reverse engineering, vulnerability analysis, and classical forms of Linux based userland binary exploitation. It will then transitionin to protections found on modern systems(Canaries, DEP, ASLR, RELRO, FortifySource, etc) and the techniques used to defeat them.Time permitting, the course will also cover other subjects in exploitation including kernel land and Windows based exploitation.
+
+
+
+
 DVWA
 
 Hackingdojo
@@ -29,8 +36,11 @@ Hackingdojo
 BVWA
 
 
+[mammon_'s tales to his grandson - Reverse Engineering](https://mammon.github.io/tales/)
 
 
+
+[Software Modeling  and Verification - Static Analysis](http://www-i2.informatik.rwth-aachen.de/i2/spa12/)
 
 
 ###General Sources/Repository of Classes

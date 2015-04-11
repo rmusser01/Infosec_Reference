@@ -20,10 +20,11 @@
 
 
 
+[NightWatch](http://www.kforcegov.com/Solutions/IAO/NightWatch/About.aspx)
+* NightWatch is an executive commentary and analysis of events that pose or advance threats to US national security interests. It is deliberately edgy in the interest of clarity and brevity. As a product for executives, the distribution and all feedback comments are anonymous. 
 
 
-
-
+[Janes](http://www.janes.com/)
 
 
 

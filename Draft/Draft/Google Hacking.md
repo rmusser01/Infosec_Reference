@@ -23,3 +23,8 @@ https://en.wikipedia.org/wiki/Google_hacking
 
 
 [Google Hacking for Penetration Testers](https://www.blackhat.com/presentations/bh-europe-05/BH_EU_05-Long.pdf)
+
+
+
+
+[Github dorks - finding vulns](http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html)

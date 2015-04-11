@@ -17,7 +17,12 @@ Python
 
 ###Cull
 
+[Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
+[Ruby - Tutorials Point](http://www.tutorialspoint.com/ruby/)
+[Ruby in 20 Minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
 
+[Construct2](https://github.com/construct/construct)
+* Construct is a powerful declarative parser (and builder) for binary data.  Instead of writing imperative code to parse a piece of data, you declaratively define a data structure that describes your data. As this data structure is not code, you can use it in one direction to parse data into Pythonic objects, and in the other direction, convert ("build") objects into binary data.
 
 [Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
 
@@ -113,22 +118,15 @@ http://opensecuritytraining.info/IntroX86.html
 
 
 
-###Python
-[Hachoir](https://bitbucket.org/haypo/hachoir/wiki/Home)
-* Hachoir is a Python library that allows to view and edit a binary stream field by field
+###Go
+[Go Programming Language](https://golang.org/)
 
-[Python Library for interacting with Serial Ports](http://pyserial.sourceforge.net/)
 
-[Understanding Python Bytecode](http://security.coverity.com/blog/2014/Nov/understanding-python-bytecode.html)
-
-[Obfuscating python](https://reverseengineering.stackexchange.com/questions/1943/what-are-the-techniques-and-tools-to-obfuscate-python-programs)
-
-[Equip: python bytecode instrumentation](https://github.com/neuroo/equip)
-* equip is a small library that helps with Python bytecode instrumentation. Its API is designed to be small and flexible to enable a wide range of possible instrumentations. The instrumentation is designed around the injection of bytecode inside the bytecode of the program to be instrumented. However, the developer does not need to know anything about the Python bytecode since the injected code is Python source.
 
 
 
 ###Perl
+[Perl Programming Language[(https://www.perl.org/)
 
 [Introduction to Perl](http://www.perl.com/pub/2000/10/begperl1.html)
 
@@ -149,6 +147,28 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 }
 
 """
+
+
+
+
+###Python
+[Hachoir](https://bitbucket.org/haypo/hachoir/wiki/Home)
+* Hachoir is a Python library that allows to view and edit a binary stream field by field
+
+[Python Library for interacting with Serial Ports](http://pyserial.sourceforge.net/)
+
+[Understanding Python Bytecode](http://security.coverity.com/blog/2014/Nov/understanding-python-bytecode.html)
+
+[Obfuscating python](https://reverseengineering.stackexchange.com/questions/1943/what-are-the-techniques-and-tools-to-obfuscate-python-programs)
+
+[Equip: python bytecode instrumentation](https://github.com/neuroo/equip)
+* equip is a small library that helps with Python bytecode instrumentation. Its API is designed to be small and flexible to enable a wide range of possible instrumentations. The instrumentation is designed around the injection of bytecode inside the bytecode of the program to be instrumented. However, the developer does not need to know anything about the Python bytecode since the injected code is Python source.
+
+
+ [Python For Beginners]( Python For Beginners)
+* Welcome! Are you completely new to programming? If not then we presume you will be looking for information about why and how to get started with Python. Fortunately an experienced programmer in any programming language (whatever it may be) can pick up Python very quickly. It's also easy for beginners to use and learn, so jump in!
+
+
 
 
 

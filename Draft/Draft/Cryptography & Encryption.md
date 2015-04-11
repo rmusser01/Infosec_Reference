@@ -16,6 +16,13 @@ Writeups
 
 [Crypto: 48 Dirty Little Secrets Cryptographers Don’t Want You To Know - BlackHat2014](https://www.youtube.com/watch?v=mXdFHNJ6srY)
 
+[XOR Bitwise Operations Explained - Khan Academy](https://www.khanacademy.org/computing/computer-science/cryptography/ciphers/a/xor-bitwise-operation)
+
+[HiVE — Hidden Volume Encryption](http://hive.ccs.neu.edu/#four)
+
+[Toward Robust Hidden Volumes Using Write-Only Oblivious RAM](https://eprint.iacr.org/2014/344.pdf) 
+* With sensitive data being increasingly stored on mobile devices and laptops, hard disk encryption is more important than ever. In partic- ular, being able to plausibly deny that a hard disk contains certain information is a very useful and interesting research goal. However, it has been known for some time that existing “hidden volume” so- lutions, like TrueCrypt, fail in the face of an adversary who is able to observe the contents of a disk on multiple, separate occasions. In this work, we explore more robust constructions for hidden vol- umes and present HIVE, which is resistant to more powerful ad- versaries with multiple-snapshot capabilities. In pursuit of this, we propose the first security definitions for hidden volumes, and prove HIVE secure under these definitions. At the core of HIVE, we de- sign a new write-only Oblivious RAM. We show that, when only hiding writes, it is possible to achieve ORAM with optimal O (1) communication complexity and only poly-logarithmic user mem- ory.  This is a significant improvement over existing work and an independently interesting result.  We go on to show that our write- only ORAM is specially equipped to provide hidden volume func- tionality with low overhead and significantly increased security. Fi- nally, we implement HIVE as a Linux kernel block device to show both its practicality and usefulness on existing platforms.
+
 
 [HashID](https://github.com/psypanda/hashID)
 * hashID is a tool written in Python 3 which supports the identification of over 220 unique hash types using regular expressions. It is able to identify a single hash, parse a file or read multiple files in a directory and identify the hashes within them. hashID is also capable of including the corresponding hashcat mode and/or JohnTheRipper format in its output. hashID works out of the box with Python 2 = 2.7.x or Python 3 = 3.3 on any platform.

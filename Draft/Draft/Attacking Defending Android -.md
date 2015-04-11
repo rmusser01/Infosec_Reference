@@ -34,24 +34,29 @@ Other
 
 
 ###Cull
+
+http://nelenkov.blogspot.com
+
 [elsim - Elements Similarities](https://code.google.com/p/elsim/wiki/Similarity#Diffing_of_applications)
 * Similarities/Differences of applications (aka rip-off indicator)
 * This tool detects and reports: the identical methods; the similar methods; the deleted methods; the new methods; the skipped methods. 
 
+
+[Android apps in sheep's clothing](http://www.modzero.ch/modlog/archives/2015/04/01/android_apps_in_sheeps_clothing/index.html)
+* We identified a security weakness in Android's approach of handling UI elements, circumventing parts of Android's sandboxing approach. While this attack is simple from a technical point of view, the impact of exploiting such a vulnerability is significant. It affects Android based devices as well as Blackberry mobile devices running the Android runtime environment.
+
+
+
+[Instrumenting Android Applications with Frida](http://blog.mdsec.co.uk/2015/04/instrumenting-android-applications-with.html)
+
+
+[Dissecting the Android Bouncer](https://www.duosecurity.com/blog/duo-tech-talks-dissecting-the-android-bouncer)
+* 
 [ARE - Virtual Machine for Android Reverse Engineering](https://redmine.honeynet.org/projects/are)
-
-
 
 [Android Bytecode Obfuscation - Patrick Schulz 2012](http://dexlabs.org/blog/bytecode-obfuscation)
 
 
-
-
-[APK Studio - Android Reverse Engineering](https://apkstudio.codeplex.com/)
-* APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis.
-
-
-[Android Reverse Engineering Defenses](https://bluebox.com/wp-content/uploads/2013/05/AndroidREnDefenses201305.pdf)
 
 [PatchDroid: Scalable Third-Party Security Patches for Android Devices](http://www.mulliner.org/collin/academic/publications/patchdroid.pdf)
 * Android is currently the largest mobile platform with around 750 million devices worldwide. Unfortunately, more than 30% of all devices contain publicly known security vulnera- bilities and, in practice, cannot be updated through normal mechanisms since they are not longer supported by the man- ufacturer and mobile operator. This failure of traditional patch distribution systems has resulted in the creation of a large population of vulnerable mobile devices. In this paper, we present PatchDroid, a system to dis- tribute and apply third-party security patches for Android. Our system is designed for device-independent patch cre- ation, and uses in-memory patching techniques to address vulnerabilities in both native and managed code. We created a fully usable prototype of PatchDroid, including a number of patches for well-known vulnerabilities in Android devices. We evaluated our system on different devices from multiple manufacturers and show that we can effectively patch se- curity vulnerabilities on Android devices without impacting performance or usability. Therefore, PatchDroid represents a realistic path towards dramatically reducing the number of exploitable Android devices in the wild.
@@ -62,6 +67,15 @@ Other
 [Dalvik opcodes](http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html)
 
 [Dalvik Bytecode Format docs](http://source.android.com/devices/tech/dalvik/dex-format.html)
+
+[The Android boot process from power on](http://www.androidenea.com/2009/06/android-boot-process-from-power-on.html)
+* Since mobile platforms and embedded systems has some differences compared to Desktop systems in how they initially start up and boot this post will discuss the initial boot stages of an Android phone in some detail.
+
+
+
+###Securing Android
+
+[Android Reverse Engineering Defenses](https://bluebox.com/wp-content/uploads/2013/05/AndroidREnDefenses201305.pdf)
 
 
 ####Vulnerabilities
@@ -119,7 +133,7 @@ Other
 [APKinpsector](https://github.com/honeynet/apkinspector/)
 * APKinspector is a powerful GUI tool for analysts to analyze the Android applications.
 
-[Droidmap](https://code.google.com/p/droidbox/)
+[DroidBox](https://code.google.com/p/droidbox/)
 * DroidBox is developed to offer dynamic analysis of Android applications. The following information is shown in the results, generated when analysis is ended: 
 Hashes for the analyzed package 
 Incoming/outgoing network data 
@@ -149,6 +163,9 @@ Additionally, two images are generated visualizing the behavior of the package. 
 
 
 ###Static Analysis
+
+[Disect Android APKs like a Pro - Static code analysis](http://blog.dornea.nu/2014/07/07/disect-android-apks-like-a-pro-static-code-analysis/)
+
 
 Androguard](https://code.google.com/p/androguard)
 ^ Androguard is mainly a tool written in python to play with: 
@@ -282,8 +299,12 @@ Check the Encryption section of the overall guide for more information.
 
 
 ###Reverse Engineering Android
+
+[APK Studio - Android Reverse Engineering](https://apkstudio.codeplex.com/)
+* APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis.
 [Android apk-tool](https://code.google.com/p/android-apktool/)
 * It is a tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications; it makes possible to debug smali code step by step. Also it makes working with app easier because of project-like files structure and automation of some repetitive tasks like building apk, etc. 
+
 [Reversing and Auditing Android’s Proprietary bits](http://www.slideshare.net/joshjdrake/reversing-and-auditing-androids-proprietary-bits)
 
 [Smali](https://code.google.com/p/smali/)

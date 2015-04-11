@@ -26,8 +26,10 @@ Jailbreaking
 
 ###CULL
 
+[iOS 678 Security - A Study in Fail](https://www.syscan.org/index.php/download/get/bec31d45168aa331fc01f84451e11186/SyScan15%20Stefan%20Esser%20-%20iOS%20678%20Security%20-%20A%20Study%20in%20Fail.pdf)
 
 
+[Jailbreak Stories - Cyril Cattiaux(pod2g) - WWJC 2014](https://www.youtube.com/watch?v=OBFLTb-AY38)
 
 
 

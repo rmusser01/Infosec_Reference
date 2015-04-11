@@ -72,6 +72,9 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
+[Understanding glibc malloc](https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/)
+
+
 
 
 
@@ -102,8 +105,16 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 ###Linux
+[Linux Documentation Project](http://www.tldp.org/)
+* The Linux Documentation Project is working towards developing free, high quality documentation for the Linux operating system. The overall goal of the LDP is to collaborate in all of the issues of Linux documentation.
+
+[linux-insides](https://www.gitbook.com/book/0xax/linux-insides/details)
+* A series of posts about the linux kernel and its insides.  The goal is simple - to share my modest knowledge about the internals of the linux kernel and help people who are interested in the linux kernel, and other low-level subject matter.
+
+
 [Foreign LINUX](https://github.com/wishstudio/flinux)
 * Foreign LINUX is a dynamic binary translator and a Linux system call interface emulator for the Windows platform. It is capable of running unmodified Linux binaries on Windows without any drivers or modifications to the system. This provides another way of running Linux applications under Windows in constrast to Cygwin and other tools.
+
 
 
 [Linux Kernel Explanation/Walk through](http://www.faqs.org/docs/Linux-HOWTO/KernelAnalysis-HOWTO.html)

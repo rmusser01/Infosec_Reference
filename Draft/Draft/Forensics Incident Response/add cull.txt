@@ -7,6 +7,12 @@
 * NSA 70-page writeup on windows event log monitoring
 [Forensics on Amazon’s EC2](https://sysforensics.org/2014/10/forensics-in-the-amazon-cloud-ec2.html)
 
+
+[Analysis of a Romanian Botnet](http://www.politoinc.com/2015/04/analysis-of-a-romanian-botnet/)
+* Going from first sighting in logs to tracing attackers to their C2 IRC room
+
+
+
 [How to Pull passwords from a memory dump](https://cyberarms.wordpress.com/2011/11/04/memory-forensics-how-to-pull-passwords-from-a-memory-dump/)
 
 [Investigating PowerShell Attacks - Ryan Kazanciyan and Matt Hastings - DEFCON22](https://www.youtube.com/watch?v=qF06PFcezLs)
@@ -21,6 +27,14 @@
 [Real-time Steganography with RTP](http://uninformed.org/?v=all&a=36&t=sumry)
 * Real-time Transfer Protocol (RTP) is used by nearly all Voice-over-IP systems to provide the audio channel for calls. As such, it provides ample opportunity for the creation of a covert communication channel due to its very nature. While use of steganographic techniques with various audio cover-medium has been extensively researched, most applications of such have been limited to audio cover-medium of a static nature such as WAV or MP3 file audio data. This paper details a common technique for the use of steganography with audio data cover-medium, outlines the problem issues that arise when attempting to use such techniques to establish a full-duplex communications channel within audio data transmitted via an unreliable streaming protocol, and documents solutions to these problems. An implementation of the ideas discussed entitled SteganRTP is included in the reference materials. 
 
+
+[Bootkit Disk Forensics
+[Part 1](http://www.malwaretech.com/2015/02/bootkit-disk-forensics-part-1.html)
+[Part 2](http://www.malwaretech.com/2015/03/bootkit-disk-forensics-part-2.html)
+
+
+[Kansa -A Powershell incident response framework ](https://github.com/davehull/Kansa)
+* A modular incident response framework in Powershell. Note there's a bug that's currently cropping up in PowerShell version 2 systems, but version 3 and later should be fine
 
 
 [Windows Memory Analysis Checklist](http://www.dumpanalysis.org/windows-memory-analysis-checklist)

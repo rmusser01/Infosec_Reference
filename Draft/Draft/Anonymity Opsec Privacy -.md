@@ -24,6 +24,9 @@ Tools
 
 
 
+[Can you track me now?  - Defcon20](https://www.youtube.com/watch?v=DxIF66Tcino)
+
+
 ###Articles
 [De-anonymizing facebook users through CSP](http://www.myseosolution.de/deanonymizing-facebook-users-by-csp-bruteforcing/#inhaltsverzeichnis)
 

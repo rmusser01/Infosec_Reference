@@ -43,6 +43,29 @@ Wikis & Useful Sites
 [SATCOM Terminals Hacking by Air, Sea, and Land - Black Hat USA 2014](https://www.youtube.com/watch?v=tRHDuT__GoM)
 
 
+
+
+Reversing iOS/OS X http://newosxbook.com/forum/viewforum.php?f=8
+
+[Construct2](https://github.com/construct/construct)
+* Construct is a powerful declarative parser (and builder) for binary data.  Instead of writing imperative code to parse a piece of data, you declaratively define a data structure that describes your data. As this data structure is not code, you can use it in one direction to parse data into Pythonic objects, and in the other direction, convert ("build") objects into binary data.
+
+[binglide](https://github.com/wapiflapi/binglide)
+* binglide is a visual reverse engineering tool. It is designed to offer a quick overview of the different data types that are present in a file.
+
+
+[BARF-Project](https://github.com/programa-stic/barf-project)
+* BARF : A multiplatform open source Binary Analysis and Reverse engineering Framework 
+* Presentation: Barfing Gadgets - Ekoparty 2014](https://github.com/programa-stic/barf-project/raw/master/documentation/presentations/barfing-gadgets.ekoparty2014.es.pdf)
+
+
+ 
+[Deviare2](https://github.com/nektra/deviare2)
+* Deviare is a professional hooking engine for instrumenting arbitrary Win32 functions, COM objects, and functions which symbols are located in program databases (PDBs). It can intercept unmanaged code in 32-bit and 64-bit applications. It is implemented as a COM component, so it can be integrated with all the programming languages which support COM, such as C/C++, VB, C#, Delphi, and Python.
+
+
+
+
 [Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 
 [PE File Format Graphs](http://blog.dkbza.org/2012/08/pe-file-format-graphs.html?view=mosaic)
@@ -157,6 +180,11 @@ programming environment.
 	* IDA Sploiter is a plugin for Hex-Ray's IDA Pro disassembler designed to enhance IDA's capabilities as an exploit development and vulnerability research tool. Some of the plugin's features include a powerful ROP gadgets search engine, semantic gadget analysis and filtering, interactive ROP chain builder, stack pivot analysis, writable function pointer search, cyclic memory pattern generation and offset analysis, detection of bad characters and memory holes, and many others.
 	* [Ida Pomidor](https://thesprawl.org/projects/ida-pomidor/)
 	* IDA Pomidor is a fun and simple plugin for the Hex-Ray's IDA Pro disassembler that will help you retain concentration and productivity during long reversing sessions. 
+
+[FLARE-Ida](https://github.com/fireeye/flare-ida)
+* This repository contains a collection of IDA Pro scripts and plugins used by the FireEye Labs Advanced Reverse Engineering (FLARE) team.
+
+
 
 
 [Hopper](http://www.hopperapp.com/)

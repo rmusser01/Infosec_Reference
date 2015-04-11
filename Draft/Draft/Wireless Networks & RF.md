@@ -20,8 +20,15 @@ Cellular Networks
 
 ###CULL
 
+
+
+
+
 http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-macs-and-sdrs-robert-ghilduta
 
+
+[WebSDR](http://websdr.org/)
+* A WebSDR is a Software-Defined Radio receiver connected to the internet, allowing many listeners to listen and tune it simultaneously. SDR technology makes it possible that all listeners tune independently, and thus listen to different signals; this is in contrast to the many classical receivers that are already available via the internet. 
 
 
 [Hacking the Wireless World with Software Defined Radio 2.0](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/14-hacking-the-wireless-world-with-software-defined-radio-2-0-balint-seeber)
@@ -37,11 +44,36 @@ http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-m
 
 
 
+[From baseband to  bitstream and back  again: What security researchers really  want to do with SDR - Andy Davis - nccgroup](https://cansecwest.com/slides/2015/From_Baseband_to_bitstream_Andy_Davis.pdf)
+
+[RF Testing Methodology - NCCGroup](https://nccgroup.github.io/RFTM/)
+* The RFTM is an Open Source, collaborative testing methodology. It is specifically written in a straightforward way, avoiding mathematics where possible and focussed on providing the information that security researchers and consultants need to know in order to effectively test systems that employ RF technologies.
+* [Signals and Modulation](https://nccgroup.github.io/RFTM/basics.html)
+* [Information Sources](https://nccgroup.github.io/RFTM/information_sources.html)
+* [Receiving Signals](https://nccgroup.github.io/RFTM/receiving_signals.html)
+* [Developing an FSK receiver step-by-step](https://nccgroup.github.io/RFTM/fsk_receiver.html)
+* [Transmitting Data](https://nccgroup.github.io/RFTM/transmitting_data.html)
+* [ Developing an FSK transmitter step-by-step](https://nccgroup.github.io/RFTM/fsk_transmitter.html)
+* [Signals Identification](https://nccgroup.github.io/RFTM/signals_identification.html)
+
+
+
+
+[US Marine Antenna Handbook](http://www.zerobeat.net/r3403c.pdf?1)
+
+
+###RF RetroReflectors
+
+[[TROOPERS15] Michael Ossmann - RF Retroflectors, Emission Security and SDR](https://www.youtube.com/watch?v=9DABAS-PCFM)
+
+
+
+
 ##Cellular Networks
 
 [NSA Playset - GSM Sniffing - Pierce&Loki - Defcon22](https://www.youtube.com/watch?v=tnn_qJGh1gc)
 
-
+[Mobile: Cellular Exploitation on a Global Scale The Rise & Fall of the Control](https://www.youtube.com/watch?v=HD1ngJ85vWM)
 
 
 Cellular Networks in use North America:
@@ -217,6 +249,19 @@ y
 ###Tools
 Android IMSI-Catcher Detector (AIMSICD)](https://github.com/SecUpwN/Android-IMSI-Catcher-Detector)
 * Android-based project to detect and avoid fake base stations (IMSI-Catchers) in GSM/UMTS Networks.
+
+
+###Papers
+[Taming Mr Hayes: Mitigating Signaling Based Attacks on Smartphones](https://www.mulliner.org/collin/academic/publications/mrhayes_mulliner_dsn2012.pdf)
+* Malicious injection of cellular signaling traffic from mobile phones is an emerging security issue. The respective attacks can be performed by hijacked smartphones and by malware resident on mobile phones. Until today there are no protection mechanisms in place to prevent signaling based attacks other than implementing expensive additions to the cellular core network. In this work we present a protection system that resides on the mobile phone. Our solution works by partitioning the phone software stack into the application operating system and the communication partition. The application system is a standard fully featured Android sys tem. On the other side, communication to the cellular network is mediated by a flexible monitoring and enforcement system running on the communication partition. We implemented and evaluated our protection system on a real smartphone. Our evaluation shows that it can mitigate all currently know n signaling based attacks and in addition can protect users fr om cellular Trojans.
+
+
+
+
+
+
+
+
 
 
 

@@ -37,7 +37,7 @@ Android Apps
 
 [Write-ups](#Write)
 
-[Educational Materialsl[#Education)
+[Educational Materials][#Education)
 
 [Books](#Books)
 

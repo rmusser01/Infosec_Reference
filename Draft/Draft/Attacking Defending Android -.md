@@ -6,25 +6,41 @@
 ####TOC
 Cull
 [Intro](#Intro)
+
 [Android Internals](#AInternals)
+
 [Securing Android](#SecAnd)
+
 Android Apps
 
 [Vulnerabilities](#Vulns)
+
 [Exploits](#Exploits)
+
 [Device Analysis](#DAnalysis)
+
 [Application Analysis](#AppAnalysis)
+
 	* Dynamic Analysis
 	* Static Analysis
 	* Online APK Analyzers
+
 [Online APK Analyzers](#OnlineAPK)
+
 [Attack Platforms](#APlatforms)
+
 [Android Malware](#Malware)
+
 [Reverse Engineering Android](#RE)
+
 [Interesting Papers](#Papers)
+
 [Write-ups](#Write)
+
 [Educational Materialsl[#Education)
+
 [Books](#Books)
+
 [Other](#Other)
 
 
@@ -248,7 +264,7 @@ Android Resources (.arsc).
 [Flow Droid - Taint Analysis](http://sseblog.ec-spride.de/tools/flowdroid/)
 * FlowDroid is a context-, flow-, field-, object-sensitive and lifecycle-aware static taint analysis tool for Android applications. U
 * [Flow Droid Paper- FlowDroid: Precise Context, Flow, Field, Object-sensitive and Lifecycle-aware Taint Analysis for Android Apps](http://www.bodden.de/pubs/far+14flowdroid.pdf)
-* In this work we thus present F LOW D ROID , a novel and highly precise static taint analysis for Android applications. A precise model of Android’s lifecycle allows the analysis to properly handle callbacks invoked by the Android framework, while context, flow, field and object-sensitivity allows the analysis to reduce the number of false alarms. Novel on-demand algorithms help F LOW D ROID maintain high efficiency and precision at the same time
+* In this work we thus present F LOW D ROID , a novel and highly precise static taint analysis for Android applications. A precise model of AndroidÂ’s lifecycle allows the analysis to properly handle callbacks invoked by the Android framework, while context, flow, field and object-sensitivity allows the analysis to reduce the number of false alarms. Novel on-demand algorithms help F LOW D ROID maintain high efficiency and precision at the same time
 
 [dedex](https://github.com/mariokmk/dedex)
 * Is a command line tool for disassembling Android DEX files.
@@ -319,7 +335,7 @@ Android Resources (.arsc).
 [Android apk-tool](https://code.google.com/p/android-apktool/)
 * It is a tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications; it makes possible to debug smali code step by step. Also it makes working with app easier because of project-like files structure and automation of some repetitive tasks like building apk, etc. 
 
-[Reversing and Auditing Android’s Proprietary bits](http://www.slideshare.net/joshjdrake/reversing-and-auditing-androids-proprietary-bits)
+[Reversing and Auditing AndroidÂ’s Proprietary bits](http://www.slideshare.net/joshjdrake/reversing-and-auditing-androids-proprietary-bits)
 
 [Smali](https://code.google.com/p/smali/)
 * smali/baksmali is an assembler/disassembler for the dex format used by dalvik, Android's Java VM implementation. The syntax is loosely based on Jasmin's/dedexer's syntax, and supports the full functionality of the dex format (annotations, debug info, line info, etc.) 
@@ -414,8 +430,8 @@ APKinspector is a powerful GUI tool for analysts to analyze the Android applicat
 
 
 [OWASP GoatDroid](https://www.owasp.org/index.php/Projects/OWASP_GoatDroid_Project)
-* “OWASP GoatDroid is a fully functional and self-contained training environment for educating developers and testers on Android security. GoatDroid requires minimal dependencies and is ideal for both Android beginners as well as more advanced users. 
-The project currently includes two applications: FourGoats, a location-based social network, and Herd Financial, a mobile banking application. There are also several feature that greatly simplify usage within a training environment or for absolute beginners who want a good introduction to working with the Android platform.”
+* Â“OWASP GoatDroid is a fully functional and self-contained training environment for educating developers and testers on Android security. GoatDroid requires minimal dependencies and is ideal for both Android beginners as well as more advanced users. 
+The project currently includes two applications: FourGoats, a location-based social network, and Herd Financial, a mobile banking application. There are also several feature that greatly simplify usage within a training environment or for absolute beginners who want a good introduction to working with the Android platform.Â”
 
 [Insecure Bank v2](https://github.com/dineshshetty/Android-InsecureBankv2)
 * This vulnerable Android application is named "InsecureBankv2" and is made for security enthusiasts and developers to learn the Android insecurities by testing this vulnerable application. Its back-end server component is written in python. The client component i.e. the Android InsecureBank.apk can be downloaded along with the source code. 

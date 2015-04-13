@@ -1,24 +1,31 @@
-Attacking Android Devices
+##Attacking Android Devices
 
 
-TOC
+
+
+####TOC
 Cull
-Intro
-Android Internals
-Vulnerabilities
-Exploits
-Device Analysis
-Application Analysis
+[Intro](#Intro)
+[Android Internals](#AInternals)
+[Securing Android](#SecAnd)
+Android Apps
+
+[Vulnerabilities](#Vulns)
+[Exploits](#Exploits)
+[Device Analysis](#DAnalysis)
+[Application Analysis](#AppAnalysis)
 	* Dynamic Analysis
 	* Static Analysis
 	* Online APK Analyzers
-Attack Platforms
-Android Malware
-Reverse Engineering Android
-Interesting Papers
-Write-ups
-Books
-Other
+[Online APK Analyzers](#OnlineAPK)
+[Attack Platforms](#APlatforms)
+[Android Malware](#Malware)
+[Reverse Engineering Android](#RE)
+[Interesting Papers](#Papers)
+[Write-ups](#Write)
+[Educational Materialsl[#Education)
+[Books](#Books)
+[Other](#Other)
 
 
 [Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
@@ -30,7 +37,7 @@ Other
 * [Github](https://github.com/cSploit/android/tree/master/cSploit)
 
 
-
+[Droidsec - Pretty much should be your first stop](http://www.droidsec.org/wiki/)
 
 
 ###Cull
@@ -42,10 +49,21 @@ http://nelenkov.blogspot.com
 * This tool detects and reports: the identical methods; the similar methods; the deleted methods; the new methods; the skipped methods. 
 
 
+[hbootdbg](https://github.com/sogeti-esec-lab/hbootdbg/)
+* Debugger for HTC phones bootloader (HBOOT). 
+
+[Heimdall](https://github.com/Benjamin-Dobell/Heimdall)
+* Heimdall is a cross-platform open-source tool suite used to flash firmware (aka ROMs) onto Samsung Galaxy S devices.
+
 [Android apps in sheep's clothing](http://www.modzero.ch/modlog/archives/2015/04/01/android_apps_in_sheeps_clothing/index.html)
 * We identified a security weakness in Android's approach of handling UI elements, circumventing parts of Android's sandboxing approach. While this attack is simple from a technical point of view, the impact of exploiting such a vulnerability is significant. It affects Android based devices as well as Blackberry mobile devices running the Android runtime environment.
 
 
+[android-gdb](https://github.com/darchons/android-gdb)
+* GDB fork targetting Android/Fennec development
+
+[android-vm](https://github.com/dweinstein/android-vm)
+* Automated provisioning and configuration of an Ubuntu VM containing the Android development environment, including Android ADT Bundle with SDK, Eclipse & the Android NDK using the Vagrant DevOps tool with Chef and shell-scripts.
 
 [Instrumenting Android Applications with Frida](http://blog.mdsec.co.uk/2015/04/instrumenting-android-applications-with.html)
 
@@ -63,7 +81,7 @@ http://nelenkov.blogspot.com
 
 
 
-###Android Internals
+###<a name="AInternals">Android Internals</a>
 [Dalvik opcodes](http://pallergabor.uw.hu/androidblog/dalvik_opcodes.html)
 
 [Dalvik Bytecode Format docs](http://source.android.com/devices/tech/dalvik/dex-format.html)
@@ -73,20 +91,59 @@ http://nelenkov.blogspot.com
 
 
 
-###Securing Android
+
+
+
+###<a name="SecAnd">Securing Android</a>
+
+[Android (In)Security - Defcamp 2014](https://www.youtube.com/watch?v=2aeV1JXYvuQ&index=23&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
+* Good video on Android Security
+
+[Android Forensics Class - Free](http://opensecuritytraining.info/AndroidForensics.html)
+* This class serves as a foundation for mobile digital forensics, forensics of Android operating systems, and penetration testing of Android applications.
+
+
+[Android Hardening Guide by the TOR developers](https://blog.torproject.org/blog/mission-impossible-hardening-android-security-and-privacy)
+This blog post describes the installation and configuration of a prototype of a secure, full-featured, Android telecommunications device with full Tor support, individual application firewalling, true cell network baseband isolation, and optional ZRTP encrypted voice and video support. ZRTP does run over UDP which is not yet possible to send over Tor, but we are able to send SIP account login and call setup over Tor independently.
+The SIP client we recommend also supports dialing normal telephone numbers if you have a SIP gateway that provides trunking service.
+Aside from a handful of binary blobs to manage the device firmware and graphics acceleration, the entire system can be assembled (and recompiled) using only FOSS components. However, as an added bonus, we will describe how to handle the Google Play store as well, to mitigate the two infamous Google Play Backdoors.
+
+
+[Android 4.0+ Hardening Guide/Checklist by University of Texas](https://wikis.utexas.edu/display/ISO/Google+Android+Hardening+Checklist)
+	
+
+
+####Applications
+
+Firewall
+	* [Android Firewall(Requires Root)](https://play.google.com/store/apps/details?id=com.jtschohl.androidfirewall&hl=en)
+		
+Xprivacy - The Ultimate Android Privacy Manager(Requires Root
+
+	* [Github](https://github.com/M66B/XPrivacy)
+	* [Google Play](https://play.google.com/store/apps/details?id=biz.bokhorst.xprivacy.installer&hl=en)
+
+####Backups
+[Titanium Backup](https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup)
+Personal favorite for making backups. Backups are stored locally or automatically to various cloud services.
+[Helium Backup(Root Not Required)](https://play.google.com/store/apps/details?id=com.koushikdutta.backup&hl=en)
+	* Backs up data locally or to various cloud services. Local client available for backups directly to PC.
+
+###Encryption
+Check the Encryption section of the overall guide for more information.
 
 [Android Reverse Engineering Defenses](https://bluebox.com/wp-content/uploads/2013/05/AndroidREnDefenses201305.pdf)
 
 
-####Vulnerabilities
+####<a name="Vulns">Vulnerabilities</a>
 [List of Android Vulnerabilities](http://androidvulnerabilities.org/all)
 
 
-####Exploits
+####<a name="Exploits">Exploits</a>
 [List of Android Exploits](https://github.com/droidsec/droidsec.github.io/wiki/Vuln-Exploit-List)
 
 
-###Device Analysis
+###<a name="DAnalysis">Device Analysis</a>
 
 [android-cluster-toolkit](https://github.com/jduck/android-cluster-toolkit)
 * The Android Cluster Toolkit helps organize and manipulate a collection of Android devices. It was designed to work with a collection of devices connected to the same host machine, either directly or via one or more tiers of powered USB hubs. The tools within can operate on single devices, a selected subset, or all connected devices at once.
@@ -108,7 +165,7 @@ http://nelenkov.blogspot.com
 
 
 
-##Application Analysis
+###<a name="AppAnalysis">Application Analysis</a>
 
 [APK Studio - Android Reverse Engineering](https://apkstudio.codeplex.com/)
 * APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis
@@ -128,7 +185,7 @@ http://nelenkov.blogspot.com
 [Simplify - Simple Android Deobfuscator](https://github.com/CalebFenton/simplify)
 * Simplify uses a virtual machine to understand what an app does. Then, it applies optimizations to create code that behaves identically, but is easier for a human to understand. Specifically, it takes Smali files as input and outputs a Dex file with (hopefully) identical semantics but less complicated structure.
 
-###Dynamic Analysis
+###<a name="Dynamic">Dynamic Analysis</a>
  
 [APKinpsector](https://github.com/honeynet/apkinspector/)
 * APKinspector is a powerful GUI tool for analysts to analyze the Android applications.
@@ -162,7 +219,7 @@ Additionally, two images are generated visualizing the behavior of the package. 
 
 
 
-###Static Analysis
+###<a name="Static">Static Analysis</a>
 
 [Disect Android APKs like a Pro - Static code analysis](http://blog.dornea.nu/2014/07/07/disect-android-apks-like-a-pro-static-code-analysis/)
 
@@ -220,7 +277,7 @@ Android Resources (.arsc).
 
 
 
-###Online APK Analyzers
+###<a name="OnlineAPK">Online APK Analyzers</a>
 
 [Mobile Sandbox](http://mobilesandbox.org/)
 * Provide an Android application file (apk-file) and the Mobile-Sandbox will analyze the file for any malicious behaviour.
@@ -233,7 +290,7 @@ Android Resources (.arsc).
 
 
 
-###Attack Platforms
+###<a name="APlatforms">Attack Platforms</a>
 
 [drozer](https://github.com/mwrlabs/drozer)
 * drozer allows you to search for security vulnerabilities in apps and devices by assuming the role of an app and interacting with the Dalvik VM, other apps' IPC endpoints and the underlying OS.
@@ -243,50 +300,7 @@ Android Resources (.arsc).
 
 
 
-
-###Securing Your Android Device
-
-[Android (In)Security - Defcamp 2014](https://www.youtube.com/watch?v=2aeV1JXYvuQ&index=23&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
-* Good video on Android Security
-
-[Android Forensics Class - Free](http://opensecuritytraining.info/AndroidForensics.html)
-* This class serves as a foundation for mobile digital forensics, forensics of Android operating systems, and penetration testing of Android applications.
-
-
-[Android Hardening Guide by the TOR developers](https://blog.torproject.org/blog/mission-impossible-hardening-android-security-and-privacy)
-This blog post describes the installation and configuration of a prototype of a secure, full-featured, Android telecommunications device with full Tor support, individual application firewalling, true cell network baseband isolation, and optional ZRTP encrypted voice and video support. ZRTP does run over UDP which is not yet possible to send over Tor, but we are able to send SIP account login and call setup over Tor independently.
-The SIP client we recommend also supports dialing normal telephone numbers if you have a SIP gateway that provides trunking service.
-Aside from a handful of binary blobs to manage the device firmware and graphics acceleration, the entire system can be assembled (and recompiled) using only FOSS components. However, as an added bonus, we will describe how to handle the Google Play store as well, to mitigate the two infamous Google Play Backdoors.
-
-
-[Android 4.0+ Hardening Guide/Checklist by University of Texas](https://wikis.utexas.edu/display/ISO/Google+Android+Hardening+Checklist)
-	
-
-
-####Applications
-
-Firewall
-	* [Android Firewall(Requires Root)](https://play.google.com/store/apps/details?id=com.jtschohl.androidfirewall&hl=en)
-		
-Xprivacy - The Ultimate Android Privacy Manager(Requires Root
-
-	* [Github](https://github.com/M66B/XPrivacy)
-	* [Google Play](https://play.google.com/store/apps/details?id=biz.bokhorst.xprivacy.installer&hl=en)
-
-####Backups
-[Titanium Backup](https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup)
-Personal favorite for making backups. Backups are stored locally or automatically to various cloud services.
-[Helium Backup(Root Not Required)](https://play.google.com/store/apps/details?id=com.koushikdutta.backup&hl=en)
-	* Backs up data locally or to various cloud services. Local client available for backups directly to PC.
-
-###Encryption
-Check the Encryption section of the overall guide for more information.
-
-
-
-
-
-###Android Malware
+###<a name="Malware">Android Malware</a>
 
 [Rundown of Android Packers](http://www.fortiguard.com/uploads/general/Area41Public.pdf)
 
@@ -298,7 +312,7 @@ Check the Encryption section of the overall guide for more information.
 * Obfuscator here, packer there - the Android ecosystem is becoming a bit cramped with different protectors for developers to choose. With such limited resources online about attacking these protectors, what is a new reverse engineer to do? Have no fear, after drinking all the cheap wine two Android hackers have attacked all the protectors currently available for everyones enjoyment! Whether you've never reversed Android before or are a hardened veteran there will be something for you, along with all the glorious PoC tools and plugins for your little heart could ever desire.
 
 
-###Reverse Engineering Android
+###<a name="RE">Reverse Engineering Android</a>
 
 [APK Studio - Android Reverse Engineering](https://apkstudio.codeplex.com/)
 * APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis.
@@ -319,7 +333,7 @@ APKinspector is a powerful GUI tool for analysts to analyze the Android applicat
 
 
 
-###Interesting Android Papers
+###<a name="Papers">Interesting Android Papers</a>
 
 [Peeking into Your App without Actually Seeing It: UI State Inference and Novel Android Attacks](http://www.cs.ucr.edu/~zhiyunq/pub/sec14_android_activity_inference.pdf)
 * Abstract: The security of smartphone GUI frameworks remains an important yet under-scrutinized topic. In this paper, we report that on the Android system (and likely other OSes), a weaker form of GUI confidentiality can be breached in the form of UI state (not the pixels) by a background app without requiring any permissions. Our finding leads to a class of attacks which we name UI state inference attack.
@@ -396,7 +410,7 @@ APKinspector is a powerful GUI tool for analysts to analyze the Android applicat
 
 
 
-###Educational Material
+###<a name="Education">Educational Material</a>
 
 
 [OWASP GoatDroid](https://www.owasp.org/index.php/Projects/OWASP_GoatDroid_Project)
@@ -409,7 +423,7 @@ The project currently includes two applications: FourGoats, a location-based soc
 
 
 
-###Write-ups
+###<a name="Write">Write-ups</a>
 
 [ Inside the Android Play Service's magic OAuth flow ](http://sbktech.blogspot.com/2014/01/inside-android-play-services-magic.html)
 * Owning google accounts on android devices
@@ -424,13 +438,13 @@ The project currently includes two applications: FourGoats, a location-based soc
 
 
 
-###Books
+###<a name="Books">Books</a>
 
 * Android Hackers Handbook
 * Android System Security Internals
 
 
-###Other
+###<a name="Other">Other</a>
 
  [Android-x86 Project - Run Android on Your PC](http://www.android-x86.org/)
 * This is a project to port Android open source project to x86 platform, formerly known as "patch hosting for android x86 support". The original plan is to host different patches for android x86 support from open source community. A few months after we created the project, we found out that we could do much more than just hosting patches. So we decide to create our code base to provide support on different x86 platforms, and set up a git server to host it.

@@ -14,6 +14,10 @@ Writeups
 
 ###Cull
 
+[CHIPSEC module that exploits UEFI boot script table vulnerability](https://github.com/Cr4sh/UEFI_boot_script_expl)
+
+[Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)
+
 [Understanding AMT, UEFI BIOS and Secure boot relationships](https://communities.intel.com/community/itpeernetwork/vproexpert/blog/2013/08/11/understanding-amt-uefi-bios-and-secure-boot-relationships)
 
 

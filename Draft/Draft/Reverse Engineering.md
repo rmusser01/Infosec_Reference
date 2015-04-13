@@ -135,18 +135,28 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 [BitBlaze](http://bitblaze.cs.berkeley.edu/)
 * The BitBlaze project aims to design and develop a powerful binary analysis platform and employ the platform in order to (1) analyze and develop novel COTS protection and diagnostic mechanisms and (2) analyze, understand, and develop defenses against malicious code. The BitBlaze project also strives to open new application areas of binary analysis, which provides sound and effective solutions to applications beyond software security and malicious code defense, such as protocol reverse engineering and fingerprint generation. 
 
-
 [Platform for Architecture-Neutral Dynamic Analysis](https://github.com/moyix/panda)
-
 
 
 ####Debuggers
 
 [OllyDbg](http://www.ollydbg.de/)
 * OllyDbg is a 32-bit assembler level analysing debugger for Microsoft® Windows®. Emphasis on binary code analysis makes it particularly useful in cases where source is unavailable.
+* [OllyDbg Tricks for Exploit Development](http://resources.infosecinstitute.com/in-depth-seh-exploit-writing-tutorial-using-ollydbg/)
 
-[WinDbg](
-*
+[GDB - GNU Debugger](https://www.gnu.org/software/gdb/)
+* GDB, the GNU Project debugger, allows you to see what is going on `inside' another program while it executes -- or what another program was doing at the moment it crashed. 
+
+[PEDA](https://github.com/longld/peda)
+* PEDA - Python Exploit Development Assistance for GDB 
+
+[GEF - GDB Enhanced Features](https://github.com/hugsy/gef)
+* GEF is aimed to be used mostly by exploiters and reverse-engineers. It provides additional features to GDB using the Python API to assist during the process of dynamic analysis or exploit development.
+* Why not PEDA?
+* Yes!! Why not?! PEDA is a fantastic tool to do the same, but is only to be used for x86-32 or x86-64. On the other hand, GEF supports all the architecture supported by GDB (x86, ARM, MIPS, PowerPC, SPARC, and so on).
+* [Docs](https://gef.readthedocs.org/en/latest/)
+
+[WinDbg](https://msdn.microsoft.com/en-us/library/windows/hardware/ff551063%28v=vs.85%29.aspx)
 *[Excellent Resource Site](http://www.windbg.org/)
 *[Crash Dump Analysis Poster](http://www.dumpanalysis.org/CDAPoster.html)
 
@@ -155,10 +165,6 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 
 [WinAppDbg](http://winappdbg.sourceforge.net/)
 * The WinAppDbg python module allows developers to quickly code instrumentation scripts in Python under a Windows environment.  It uses ctypes to wrap many Win32 API calls related to debugging, and provides a powerful abstraction layer to manipulate threads, libraries and processes, attach your script as a debugger, trace execution, hook API calls, handle events in your debugee and set breakpoints of different kinds (code, hardware and memory). Additionally it has no native code at all, making it easier to maintain or modify than other debuggers on Windows.  The intended audience are QA engineers and software security auditors wishing to test or fuzz Windows applications with quickly coded Python scripts. Several ready to use tools are shipped and can be used for this purposes.  Current features also include disassembling x86/x64 native code, debugging multiple processes simultaneously and produce a detailed log of application crashes, useful for fuzzing and automated testing.
-
-
-
-
 
 [Open Source Windows x86/x64 Debugger](http://x64dbg.com/)
 

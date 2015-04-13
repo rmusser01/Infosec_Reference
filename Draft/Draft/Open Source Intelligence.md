@@ -8,7 +8,8 @@
 ###Cull
 
 
-
+[bell?ngcat](https://www.bellingcat.com/) 
+*  By and for citizen investigative journalists 
 
 
 [Corporate Espionage: Gathering Actionable Intelligence Via Covert Operations - Brent White - Defcon22](https://www.youtube.com/watch?v=D2N6FclMMTg)

@@ -16,9 +16,27 @@ Hping
 Nikto
 
 
+[Fundamentals That Time Forgot - Jup1t3r  - BSides SLC](https://www.youtube.com/watch?v=PQvUWImljOw)
+
+
 ###Cull
 [TCPDump Primer](http://danielmiessler.com/study/tcpdump/)
 
+
+
+[psexec](https://github.com/pentestgeek/smbexec)
+* A rapid psexec style attack with samba tools
+* [Blogpost that inspired it](http://carnal0wnage.attackresearch.com/2012/01/psexec-fail-upload-and-exec-instead.html)
+
+
+[Sparty - MS Sharepoint and Frontpage Auditing Tool](http://sparty.secniche.org/)
+*  Sparty is an open source tool written in python to audit web applications using sharepoint and frontpage architecture. The motivation behind this tool is to provide an easy and robust way to scrutinize the security configurations of sharepoint and frontpage based web applications. Due to the complex nature of these web administration software, it is required to have a simple and efficient tool that gathers information, check access permissions, dump critical information from default files and perform automated exploitation if security risks are identified. A number of automated scanners fall short of this and Sparty is a solution to that. 
+
+[spscan](https://github.com/toddsiegel/spscan)
+* SharePoint scanner and fingerprinter based on WPScan 
+
+[w3af](https://github.com/andresriancho/w3af)
+* w3af: web application attack and audit framework, the open source web vulnerability scanner.
 
 
 Arp spoofing
@@ -98,6 +116,8 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [Burp Proxy](http://portswigger.net/burp/proxy.html)
 * Burp Proxy is an intercepting proxy server for security testing of web applications. It operates as a man-in-the-middle between your browser and the target application
 
+[Phreebird](http://dankaminsky.com/phreebird/) 
+* Phreebird is a DNSSEC proxy that operates in front of an existing DNS server (such as BIND, Unbound, PowerDNS, Microsoft DNS, or QIP) and supplements its records with DNSSEC responses. Features of Phreebird include automatic key generation, realtime record signing, support for arbitrary responses, zero configuration, NSEC3 “White Lies”, caching and rate limiting to deter DoS attacks, and experimental support for both Coarse Time over DNS and HTTP Virtual Channels. The suite also contains a large amount of sample code, including support for federated identity over OpenSSH. Finally, “Phreeload” enhances existing OpenSSL applications with DNSSEC support.
 
 
 ###Presentations/Videos

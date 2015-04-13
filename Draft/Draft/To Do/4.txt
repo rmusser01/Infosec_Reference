@@ -1,6 +1,21 @@
 4
 
 
+[Link Title](#anchor-name)
+
+<a name="anchor-name"></a>
+
+Take me to [pookie](#pookie)
+ 
+should be the correct markdown syntax to jump to the anchor point named pookie. 
+To insert an anchor point of that name use HTML: 
+<a name="pookie"></a>
+
+
+
+
+
+
 
 From:
 http://it-ovid.blogspot.com/2012/02/enumeration-and-reconnaissance.html

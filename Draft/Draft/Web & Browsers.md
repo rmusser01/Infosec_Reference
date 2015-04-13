@@ -14,49 +14,38 @@ WebShells
 
 11
 
-###General
-
-[Postcards from a Post-XSS World - Michael Zalewski](http://lcamtuf.coredump.cx/postxss/#dangling-markup-injection)
-* This page is a rough collection of notes on some of the fundamental alternatives to direct script injection that would be available to attackers following the universal deployment of CSP or other security mechanisms designed to prevent the execution of unauthorized scripts. I hope to demonstrate that in many cases, the capabilities offered by these alternative methods are highly compatible with the goals of contemporary XSS attacks. 
-
-[Javascript De-Obfuscation Tools Redux](http://www.kahusecurity.com/2014/javascript-deobfuscation-tools-redux/)
-* Back in 2011, I took a look at several tools used to deobfuscate Javascript. This time around I will use several popular automated and semi-automated/manual tools to see how they would fare against today’s obfuscated scripts with the least amount of intervention.
-
-
-
-[Unphp.net php decoder](http://www.unphp.net/decode/)
-
-[Various forms of encoding/decoding web app](http://yehg.net/encoding/)
-
 
 ###Cull
-
-
-
-[Oracle SQL Injection Guides & Whitepapers](https://haiderm.com/oracle-sql-injection-guides-and-whitepapers/)
 
 
 http://www.grymoire.com/Security/Hardware.html
 
 prompt.ml
 
-[Client Identification Mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms)
-
 Clickjacking attacks
-
-
-[Hacking with Pictures - Syscan2015](http://www.slideshare.net/saumilshah/hacking-with-pictures-syscan-2015)
-
-
 
 https://xss-game.appspot.com/
 
 XSS game http://escape.alf.nu/
 
 
+###De/Encoders
+[Unphp.net php decoder](http://www.unphp.net/decode/)
+
+[Various forms of encoding/decoding web app](http://yehg.net/encoding/)
+
+[Javascript De-Obfuscation Tools Redux](http://www.kahusecurity.com/2014/javascript-deobfuscation-tools-redux/)
+* Back in 2011, I took a look at several tools used to deobfuscate Javascript. This time around I will use several popular automated and semi-automated/manual tools to see how they would fare against today’s obfuscated scripts with the least amount of intervention.	
+
+
+
+
+
 
 ###Educational
 [Intro to content Security Policy](www.html5rocks.com/en/tutorials/security/content-security-policy/)
+
+[Client Identification Mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms)
 
 
 
@@ -173,8 +162,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 ###Non-Attack Writeups
 [Security and Open Redirects  Impact of 301-ing people in 2013](https://makensi.es/rvl/openredirs/#/)
 
-[DOM Clobbering Attack](http://www.thespanner.co.uk/2013/05/16/dom-clobbering/)
-
+[Postcards from a Post-XSS World - Michael Zalewski](http://lcamtuf.coredump.cx/postxss/#dangling-markup-injection)
+* This page is a rough collection of notes on some of the fundamental alternatives to direct script injection that would be available to attackers following the universal deployment of CSP or other security mechanisms designed to prevent the execution of unauthorized scripts. I hope to demonstrate that in many cases, the capabilities offered by these alternative methods are highly compatible with the goals of contemporary XSS attacks.
 
 
 ###Securing Web Applications/Checklists
@@ -208,6 +197,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 ###Web Application Attacks & Write-ups
+
+[Hacking with Pictures - Syscan2015](http://www.slideshare.net/saumilshah/hacking-with-pictures-syscan-2015)
 
 [Relative Path Overwrite Explanation/Writeup](http://www.thespanner.co.uk/2014/03/21/rpo/)
 * RPO (Relative Path Overwrite) is a technique to take advantage of relative URLs by overwriting their target file. To understand the technique we must first look into the differences between relative and absolute URLs. An absolute URL is basically the full URL for a destination address including the protocol and domain name whereas a relative URL doesn’t specify a domain or protocol and uses the existing destination to determine the protocol and domain.
@@ -259,7 +250,7 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [MongoDB: Typical Security Weaknesses in a NoSQL DB](http://blog.spiderlabs.com/2013/03/mongodb-security-weaknesses-in-a-typical-nosql-database.html)
 
-
+[Oracle SQL Injection Guides & Whitepapers](https://haiderm.com/oracle-sql-injection-guides-and-whitepapers/)
 
 
 SQLi Lab lessons
@@ -292,11 +283,15 @@ Attacking Browsers
 
 [Technical analysis of client identification mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms) 
 
+[DOM Clobbering Attack](http://www.thespanner.co.uk/2013/05/16/dom-clobbering/)
 
+[The Birth of a Complete IE11 Exploit Under the New Exploit Mitigations](https://www.syscan.org/index.php/download/get/aef11ba81927bf9aa02530bab85e303a/SyScan15%20Yuki%20Chen%20-%20The%20Birth%20of%20a%20Complete%20IE11%20Exploit%20Under%20the%20New%20Exploit%20Mitigations.pdf)
+
+[Smashing The Browser: From Vulnerability Discovery To Exploit](https://github.com/demi6od/Smashing_The_Browser)
+* Goes from introducing a fuzzer to producing an IE11 0day
 
 
 ###HTML 5
-
 
 [SH5ARK](http://sh5ark.professionallyevil.com)
 * The Securing HTML5 Assessment Resource Kit, or SH5ARK, is an open source project that provides a repository of HTML5 features, proof-of-concept attack code, and filtering rules. The purpose of this project is to provide a single repository that can be used to collect sample code of vulnerable HTML5 features, actual attack code, and filtering rules to help prevent attacks and abuse of these features. The intent of the project is to bring awareness to the opportunities that HTML5 is providing for attackers, to help identify these attacks, and provide measures for preventing them

@@ -1,6 +1,18 @@
 Something to pimp: https://sysforensics.org/2015/02/manage-the-dfir-information.html
 
-http://projectshellcode.com/?q=node/12
+http://pr+ojectshellcode.com/?q=node/12
+
+
+[List of Linux/i386 system calls](http://asm.sourceforge.net/syscall.html)
+
+[Intel x86 Assembler Instruction Set Opcode Table](http://sparksandflames.com/files/x86InstructionChart.html)
+
+[sandpile.org](http://www.sandpile.org/) 
+* The world's leading source for technical x86 processor information.
+* Good source of reference docs/images for x86 ASM
+
+
+[BoutiqueKit: Playing WarGames with Expensive Rootkits and Malware- Defcon 21](https://www.youtube.com/watch?v=gKUleWyfut0)
 
 
 [Kernel booting process](https://github.com/0xAX/linux-insides/tree/master/Booting)
@@ -9,6 +21,9 @@ http://projectshellcode.com/?q=node/12
 [Pip3line, the Swiss army knife of byte manipulation](https://nccgroup.github.io/pip3line/index.html) 
 * Pip3line is a raw bytes manipulation utility, able to apply well known and less well known transformations from anywhere to anywhere (almost).
 
+
+
+[Client Side attacks using Powershell](http://www.labofapenetrationtester.com/2014/11/powershell-for-client-side-attacks.html)
 
 
 [I Hunt Sysadmins 2.0](http://www.slideshare.net/harmj0y/i-hunt-sys-admins-20)

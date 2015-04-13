@@ -22,7 +22,7 @@ Databases
 
 [How to Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)
 
-
+[Windows Privilege Escalation Cheat Sheet/Tricks](http://it-ovid.blogspot.fr/2012/02/windows-privilege-escalation.html)
 
 [SiLK Toolsuite Quick Reference Guide](https://tools.netsa.cert.org/silk/silk-quickref.pdf)
 

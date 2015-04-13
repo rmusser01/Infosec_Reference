@@ -1,5 +1,16 @@
 ##Interesting Things & Useful Stuff
 
+TOC
+Interesting & Useful Attacks
+Interesting & Useful Papers
+Interesting & Useful Projects
+Interesting & Useful Software
+Interesting & Useful Write-ups
+
+
+
+###General
+
 [Coming War on General Computation](https://www.youtube.com/watch?v=HUEvRyemKSg)
 
 [Timeline/List of low-level attacks/persistence techniques.  HIGHLY RECOMMENDED!](http://timeglider.com/timeline/5ca2daa6078caaf4)
@@ -14,21 +25,17 @@ http://www.securitywizardry.com/radar.htm
 
 
 
-TOC
 
-
-Cull
-Interesting & Useful Attacks
-Interesting & Useful Papers
-Interesting & Useful Projects
-Interesting & Useful Software
-Interesting & Useful Write-ups
 
 
 
 
 
 ###CULL
+
+[stupid_malware](https://github.com/andrew-morris/stupid_malware)
+* Python malware for pentesters that bypasses most antivirus (signature and heuristics) and IPS using sheer stupidity
+[China’s Great Cannon](https://citizenlab.org/2015/04/chinas-great-cannon/) * This post describes our analysis of China’s “Great Cannon,” our term for an attack tool that we identify as separate from, but co-located with, the Great Firewall of China. The first known usage of the Great Cannon is in the recent large-scale novel DDoS attack on both GitHub and servers used by GreatFire.org.
 
 [ZeroMQ](http://zguide.zeromq.org/page:all)
 [Underhanded C contest](http://underhanded-c.org/)

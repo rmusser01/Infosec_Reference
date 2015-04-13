@@ -28,6 +28,8 @@ https://en.wikipedia.org/wiki/Honeypot_%28computing%29
 [Static Low-interaction Honeypots](http://www.frameloss.org/2014/07/12/static-low-interaction-honeypots/)
 
 
+(Setting Honeytraps with Modsecurity - Adding fake hidden form fields](http://blog.spiderlabs.com/2014/06/setting-honeytraps-with-modsecurity-adding-fake-hidden-form-fields.html0
+
 
 
 Types:

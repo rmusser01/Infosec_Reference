@@ -16,46 +16,30 @@ Python
 
 
 ###Cull
-
-[Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
-[Ruby - Tutorials Point](http://www.tutorialspoint.com/ruby/)
-[Ruby in 20 Minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
-
-[Construct2](https://github.com/construct/construct)
-* Construct is a powerful declarative parser (and builder) for binary data.  Instead of writing imperative code to parse a piece of data, you declaratively define a data structure that describes your data. As this data structure is not code, you can use it in one direction to parse data into Pythonic objects, and in the other direction, convert ("build") objects into binary data.
-
-[Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
-
-
-
-
-[Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
-
-
-[What a C programmer should know about memory](http://marek.vavrusa.com/c/memory/2015/02/20/memory/)
-
-
-[x86 Assembly Guide/Reference - Wikibooks](https://en.wikibooks.org/wiki/X86_Assembly)
-* Introduction for those who don’t know ASM and a reference for those that do.
-
-
-
-
-
-[Slides - Weird - Machine Motivated Practical Page Table Shellcode & Finding Out What's Running on Your System](https://www.defcon.org/images/defcon-22/dc-22-presentations/Macaulay/DEFCON-22-Shane-Macaulay-Weird-Machine-Motivated-Practical-Page-Table-Shellcode-UPDATED.pdf) 
+ 
 
 
 
 ###General
 
+[Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
 
+[What a C programmer should know about memory](http://marek.vavrusa.com/c/memory/2015/02/20/memory/)
+
+
+###Source Code Analysis
+
+
+[RIPS]http://rips-scanner.sourceforge.net/)
+* RIPS is a tool written in PHP to find vulnerabilities in PHP applications using static code analysis. By tokenizing and parsing all source code files RIPS is able to transform PHP source code into a program model and to detect sensitive sinks (potentially vulnerable functions) that can be tainted by user input (influenced by a malicious user) during the program flow. Besides the structured output of found vulnerabilities RIPS also offers an integrated code audit framework for further manual analysis.
 
 
 
 ###Assembly x86/x64/ARM
 
-####Tutorials
-
+####Learning
+[x86 Assembly Guide/Reference - Wikibooks](https://en.wikibooks.org/wiki/X86_Assembly)
+* Introduction for those who don’t know ASM and a reference for those that do.
 
 [Guide to x86 Assembly](http://www.cs.virginia.edu/~evans/cs216/guides/x86.html)
 
@@ -64,11 +48,6 @@ Python
 [Reading ASM](http://cseweb.ucsd.edu/classes/sp11/cse141/pdf/02/S01_x86_64.key.pdf)
 
 [Machine-Level Representation of Programs](https://2013.picoctf.com//docs/asmhandout.pdf)
-
-
-
-####Courses
-
 
 http://opensecuritytraining.info/IntroX86.html
 
@@ -79,19 +58,13 @@ http://opensecuritytraining.info/IntroX86.html
 [x86 Assembly Guide/Reference - Wikibooks](https://en.wikibooks.org/wiki/X86_Assembly)
 * Introduction for those who don’t know ASM and a reference for those that do.
 
-
 [x86 Disassembly/Calling Conventions](https://en.wikibooks.org/wiki/X86_Disassembly/Calling_Conventions)
 [x86 Disassembly/Calling Convention Examples](https://en.wikibooks.org/wiki/X86_Disassembly/Calling_Convention_Examples)
 
 [Walkthrough: Creating and Using a Dynamic Link Library (C++)](https://msdn.microsoft.com/en-us/library/ms235636.aspx)
 
 
-
-###Source Code Analysis
-
-
-[RIPS]http://rips-scanner.sourceforge.net/)
-* RIPS is a tool written in PHP to find vulnerabilities in PHP applications using static code analysis. By tokenizing and parsing all source code files RIPS is able to transform PHP source code into a program model and to detect sensitive sinks (potentially vulnerable functions) that can be tainted by user input (influenced by a malicious user) during the program flow. Besides the structured output of found vulnerabilities RIPS also offers an integrated code audit framework for further manual analysis. 
+ 
 
 
 
@@ -100,9 +73,7 @@ http://opensecuritytraining.info/IntroX86.html
 [Introduction Video Series(6) to x86 Assembly](https://www.youtube.com/watch?v=qn1_dRjM6F0&list=PLPXsMt57rLthf58PFYE9gOAsuyvs7T5W9)
 
 
-###Papers
 
-[Mov is turing complete](http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)
 
 
 ###C
@@ -134,6 +105,9 @@ http://opensecuritytraining.info/IntroX86.html
 
 ###Powershell
 
+[Dirty Powershell Webserver](http://obscuresecurity.blogspot.com/2014/05/dirty-powershell-webserver.html)
+
+[Useful Powershell scripts](https://github.com/clymb3r/PowerShell)
 
 Try/Catch Exception in Powershell
 """
@@ -150,23 +124,41 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 
 
-
 ###Python
-[Hachoir](https://bitbucket.org/haypo/hachoir/wiki/Home)
-* Hachoir is a Python library that allows to view and edit a binary stream field by field
 
-[Python Library for interacting with Serial Ports](http://pyserial.sourceforge.net/)
+[Obfuscating python](https://reverseengineering.stackexchange.com/questions/1943/what-are-the-techniques-and-tools-to-obfuscate-python-programs)
 
 [Understanding Python Bytecode](http://security.coverity.com/blog/2014/Nov/understanding-python-bytecode.html)
 
-[Obfuscating python](https://reverseengineering.stackexchange.com/questions/1943/what-are-the-techniques-and-tools-to-obfuscate-python-programs)
+####Learn
+[Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
+
+
+
+[Python For Beginners]( Python For Beginners
+* Welcome! Are you completely new to programming? If not then we presume you will be looking for information about why and how to get started with Python. Fortunately an experienced programmer in any programming language (whatever it may be) can pick up Python very quickly. It's also easy for beginners to use and learn, so jump in!
+
+####Reference
+
+
+
+####Libraries
+
+[Python Library for interacting with Serial Ports](http://pyserial.sourceforge.net/)
+
+[Hachoir](https://bitbucket.org/haypo/hachoir/wiki/Home)
+* Hachoir is a Python library that allows to view and edit a binary stream field by field
 
 [Equip: python bytecode instrumentation](https://github.com/neuroo/equip)
 * equip is a small library that helps with Python bytecode instrumentation. Its API is designed to be small and flexible to enable a wide range of possible instrumentations. The instrumentation is designed around the injection of bytecode inside the bytecode of the program to be instrumented. However, the developer does not need to know anything about the Python bytecode since the injected code is Python source.
 
+[Construct2](https://github.com/construct/construct)
+* Construct is a powerful declarative parser (and builder) for binary data.  Instead of writing imperative code to parse a piece of data, you declaratively define a data structure that describes your data. As this data structure is not code, you can use it in one direction to parse data into Pythonic objects, and in the other direction, convert ("build") objects into binary data.
 
- [Python For Beginners]( Python For Beginners)
-* Welcome! Are you completely new to programming? If not then we presume you will be looking for information about why and how to get started with Python. Fortunately an experienced programmer in any programming language (whatever it may be) can pick up Python very quickly. It's also easy for beginners to use and learn, so jump in!
+
+###Ruby
+[Ruby - Tutorials Point](http://www.tutorialspoint.com/ruby/)
+[Ruby in 20 Minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
 
 
 
@@ -176,3 +168,11 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 [Shellpaste](https://github.com/andrew-morris/shellpaste)
 * Tiny snippet of code that pulls ASCII shellcode from pastebin and executes it. The purpose of this is to have a minimal amount of benign code so AV doesn't freak out, then it pulls down the evil stuff. People have been doing this kind of stuff for years so I take no credit for the concept. That being said, this code (or similar code) works surprisingly often during pentests when conventional malware fails. 
+
+
+
+
+###Papers
+
+[Mov is turing complete](http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)
+

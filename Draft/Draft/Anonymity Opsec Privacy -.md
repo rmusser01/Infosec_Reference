@@ -3,18 +3,16 @@
 
 I am not a you and may very well be a 12yr old child. Be forewarned.
 
-
-
 [Whoer](http://whoer.net/extended)
 * Site that lists content based on your metadata/sent info: IP, browser header, scripts check. 
 * Url is whoer.net/extended.
 
 TOC
 Cull
-Articles
-Papers
-Talks/Videos
-Tools
+[Articles](#Articles)
+[Papers](#Papers)
+[Talks/Videos](#Talks)
+[Tools](#Tools)
 
 
 
@@ -27,7 +25,7 @@ Tools
 [Can you track me now?  - Defcon20](https://www.youtube.com/watch?v=DxIF66Tcino)
 
 
-###Articles
+###<a name="Articles">Articles</a>
 [De-anonymizing facebook users through CSP](http://www.myseosolution.de/deanonymizing-facebook-users-by-csp-bruteforcing/#inhaltsverzeichnis)
 
 [Anonymous’s Guide to OpSec](http://www.covert.io/research-papers/security/Anonymous%20Hacking%20Group%20--%20OpNewblood-Super-Secret-Security-Handbook.pdf)
@@ -35,7 +33,7 @@ Tools
 [Cat Videos and the Death of Clear Text](https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/)
 
 
-###Papers
+###<a name="Papers">Papers</a>
 [Protocol Misidentification Made Easy with Format-Transforming Encryption](https://eprint.iacr.org/2012/494.pdf)
 * Deep packet inspection (DPI) technologies provide much- needed visibility and control of network trac using port- independent protocol identication, where a network ow is labeled with its application-layer protocol based on packet contents. In this paper, we provide the rst comprehensive evaluation of a large set of DPI systems from the point of view of protocol misidentication attacks, in which adver- saries on the network attempt to force the DPI to mislabel connections. Our approach uses a new cryptographic prim- itive called format-transforming encryption (FTE), which extends conventional symmetric encryption with the ability to transform the ciphertext into a format of our choosing. We design an FTE-based record layer that can encrypt arbi- trary application-layer trac, and we experimentally show that this forces misidentication for all of the evaluated DPI systems. This set includes a proprietary, enterprise-class DPI system used by large corporations and nation-states. We also show that using FTE as a proxy system incurs no latency overhead and as little as 16% bandwidth overhead compared to standard SSH tunnels. Finally, we integrate our FTE proxy into the Tor anonymity network and demon- strate that it evades real-world censorship by the Great Fire- wall of China.
 
@@ -48,7 +46,7 @@ Tools
 
 
 
-###Talks & Videos
+###<a name="Talks">Talks & Videos</a>
 [Because Jail is for WUFTPD](https://www.youtube.com/watch?v=9XaYdCdwiWU)
  * Legendary talk, a must watch.
 * [His blog](http://grugq.tumblr.com/)
@@ -88,7 +86,7 @@ Tools
 
 
 
-###Tools
+###<a name="Tools">Tools</a>
 
 
 

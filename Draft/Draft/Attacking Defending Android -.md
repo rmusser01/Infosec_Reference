@@ -354,7 +354,7 @@ APKinspector is a powerful GUI tool for analysts to analyze the Android applicat
 [Peeking into Your App without Actually Seeing It: UI State Inference and Novel Android Attacks](http://www.cs.ucr.edu/~zhiyunq/pub/sec14_android_activity_inference.pdf)
 * Abstract: The security of smartphone GUI frameworks remains an important yet under-scrutinized topic. In this paper, we report that on the Android system (and likely other OSes), a weaker form of GUI confidentiality can be breached in the form of UI state (not the pixels) by a background app without requiring any permissions. Our finding leads to a class of attacks which we name UI state inference attack.
 
-[List of important whitepapers](https://github.com/droidsec/droidsec.github.io/wiki/Android-Whitepapers)
+[List of important whitepapers](http://www.droidsec.org/wiki/#whitepapers)
 
 [Execute This! Analyzing Unsafe and Malicious Dynamic Code Loading in Android Applications](https://anonymous-proxy servers.net/paper/android-remote-code-execution.pdf)
 	

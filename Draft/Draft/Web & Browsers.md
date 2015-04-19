@@ -5,17 +5,63 @@
 
 TOC
 
-General
-Cull
-CMSs
+Cul
 
-Web Application Attacks & Write-ups
-WebShells
+[Attacking Browsers](#atkb)
+[XSS](#xss)
+[NO/SQL](#sql)
+[L/RFI](#lrfi)
 
-11
+* [General](#general)
+* [Different Types of Web based attacks](#difatk)
+..* [Abuse of Functionality[#
+..* [Data Structure Attacks](#
+..* [Embedded Malicious Code](#
+..* [Exploitation of Authentication](#
+..* [Injection Based Attacks
+..* [Path Traversal Attacks
+..* [Probabilistic Attacks
+..* [Protocol Manipulation
+..* [Resource Depletion](#
+..* [Resource Manipulation 
+..* [Sniffing Based](#
+..* [Spoofing Based](#
+* [CMSs](#cms)
+* [Client Web Proxies](#webproxy)
+* [Javascript Encoders/Decoders](#encode)
+* [General Encoding/Decoding Tools](#generalencode)
+* [Write-ups](#writeups)
+* [General Tools](#generalt}
+* [WebShells](#shells)
+* [Brute Force Tools](#brute}
+* [Web Application Firewalls](#waf)
+..* [Bypassing Web Application Firewalls](#bwaf)
+* [Attack Writeups](#writeups)
+* [Securing Web Based Applications/Servers](#secure)
+* [Non-Attack Writeups](#nonwriteup)
+* [HTML5](#html5)
+* [Miscellaneous]F(#misc)
+* [Securing Web Applications/Security Checklists](#checklists)
+
+
+
+
 
 
 ###Cull
+
+[SSLsplit - transparent and scalable SSL/TLS interception](https://www.roe.ch/SSLsplit)
+* SSLsplit is a tool for man-in-the-middle attacks against SSL/TLS encrypted network connections. Connections are transparently intercepted through a network address translation engine and redirected to SSLsplit. SSLsplit terminates SSL/TLS and initiates a new SSL/TLS connection to the original destination address, while logging all data transmitted. SSLsplit is intended to be useful for network forensics and penetration testing.  SSLsplit supports plain TCP, plain SSL, HTTP and HTTPS connections over both IPv4 and IPv6.
+
+[Exploiting ShellShock getting a reverse shell](http://www.fantaghost.com/exploiting-shellshock-getting-reverse-shell)
+
+[Highly Effective Joomla Backdoor with Small Profile](http://blog.sucuri.net/2014/02/highly-effective-joomla-backdoor-with-small-profile.html)
+
+[commix](https://github.com/stasinopoulos/commix)
+* Automated All-in-One OS Command Injection and Exploitation Tool
+
+[WhatWeb](https://github.com/urbanadventurer/WhatWeb)
+* WhatWeb identifies websites. Its goal is to answer the question, "What is that Website?". WhatWeb recognises web technologies including content management systems (CMS), blogging platforms, statistic/analytics packages, JavaScript libraries, web servers, and embedded devices. WhatWeb has over 1500 plugins, each to recognise something different. WhatWeb also identifies version numbers, email addresses, account IDs, web framework modules, SQL errors, and more.
 
 
 http://www.grymoire.com/Security/Hardware.html
@@ -26,10 +72,41 @@ Clickjacking attacks
 
 https://xss-game.appspot.com/
 
+
 XSS game http://escape.alf.nu/
 
 
-###De/Encoders
+###<a name="general">General</a>
+
+
+
+###<a name="difatk">Different Types of Web Based Attacks</a>
+As seen on: https://www.owasp.org/index.php/Category:Attack
+
+
+####<a name="Abuse of Functionality[#
+####<a name="Data Structure Attacks](#
+####<a name="Embedded Malicious Code](#
+####<a name="Exploitation of Authentication](#
+####<a name="Injection Based Attacks
+####<a name="Path Traversal Attacks
+####<a name="Probabilistic Attacks
+####<a name="Protocol Manipulation
+####<a name="Resource Depletion](#
+####<a name="Resource Manipulation 
+####<a name="Sniffing Based](#
+####<a name="Spoofing Based](#
+
+
+
+
+
+
+
+
+
+###<a name="encode">De/Encoders</a>
+
 [Unphp.net php decoder](http://www.unphp.net/decode/)
 
 [Various forms of encoding/decoding web app](http://yehg.net/encoding/)
@@ -42,19 +119,20 @@ XSS game http://escape.alf.nu/
 
 
 
-###Educational
+###<a name="edu">Educational</a>
+
 [Intro to content Security Policy](www.html5rocks.com/en/tutorials/security/content-security-policy/)
 
 [Client Identification Mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms)
 
 
 
-###General Tools
+###<a name="generalt">General Tools</a>
 
 [ParrotNG](https://github.com/ikkisoft/ParrotNG/releases)
 * ParrotNG is a Java-based tool for automatically identifying vulnerable SWF files, built on top of swfdump. One JAR, two flavors: command line tool and Burp Pro Passive Scanner Plugin.
 
-[HTTPie - curl for humans](https://github.com/jakubroztocil/httpie)
+[HTTPie - curl for humans](https://gith*ub.com/jakubroztocil/httpie)
 * HTTPie (pronounced aych-tee-tee-pie) is a command line HTTP client. Its goal is to make CLI interaction with web services as human-friendly as possible. It provides a simple http command that allows for sending arbitrary HTTP requests using a simple and natural syntax, and displays colorized output. HTTPie can be used for testing, debugging, and generally interacting with HTTP servers.
 
 [leaps - shared text editing in Golang](https://github.com/denji/leaps)
@@ -72,7 +150,7 @@ XSS game http://escape.alf.nu/
 
 
 
-###Brute Force/Fuzzing
+###<a name="brute">Brute Force/Fuzzing</a>
 
 [Dirbuster](https://www.owasp.org/index.php/Category:OWASP_DirBuster_Project)
 * DirBuster is a multi threaded java application designed to brute force directories and files names on web/application servers. Often is the case now of what looks like a web server in a state of default installation is actually not, and has pages and applications hidden within. DirBuster attempts to find these.
@@ -84,7 +162,7 @@ XSS game http://escape.alf.nu/
 [WFuzz](https://code.google.com/p/wfuzz/
 Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for finding resources not linked (directories, servlets, scripts, etc), bruteforce GET and POST parameters for checking different kind of injections (SQL, XSS, LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc
 
-###CMS's
+###<a name="cms">CMS's</a>
 [Drupal Security Checklist](https://github.com/gfoss/attacking-drupal/blob/master/presentation/drupal-security-checklist.pdf)
 
 [Drupal Attack Scripts](https://github.com/gfoss/attacking-drupal)
@@ -122,7 +200,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 * Arachni is an Open Source, feature-full, modular, high-performance Ruby framework aimed towards helping penetration testers and administrators evaluate the security of web applications.  It is smart, it trains itself by monitoring and learning from the web application's behavior during the scan process and is able to perform meta-analysis using a number of factors in order to correctly assess the trustworthiness of results and intelligently identify (or avoid) false-positives. 
 
 
-###Web Proxies
+###<a name="webproxy">Web Proxies</a>
+
 [Burpsuite](http://portswigger.net/burp/)
 * Burp Suite is an integrated platform for performing security testing of web applications. Its various tools work seamlessly together to support the entire testing process, from initial mapping and analysis of an application's attack surface, through to finding and exploiting security vulnerabilities. 
 
@@ -135,9 +214,17 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [Paros - Web Proxy](http://sourceforge.net/projects/paros/)
 * A Java based HTTP/HTTPS proxy for assessing web application vulnerability. It supports editing/viewing HTTP messages on-the-fly. Other featuers include spiders, client certificate, proxy-chaining, intelligent scanning for XSS and SQL injections etc.
 
+[Mallory: Transparent TCP and UDP Proxy](https://intrepidusgroup.com/insight/mallory/)
+* Mallory is a transparent TCP and UDP proxy. It can be used to get at those hard to intercept network streams, assess those tricky mobile web applications, or maybe just pull a prank on your friend.
+
+[TCP Catcher](http://www.tcpcatcher.org/)
+* TcpCatcher is a free TCP, SOCKS, HTTP and HTTPS proxy monitor server software. 
 
 
-###Web Shells
+
+
+###<a name="shells">Web Shells</a>
+
 [Weevely](https://github.com/epinna/weevely3)
 * Weevely is a command line web shell dinamically extended over the network at runtime used for remote administration and pen testing. It provides a weaponized telnet-like console through a PHP script running on the target, even in restricted environments.  The low footprint agent and over 30 modules shape an extensible framework to administrate, conduct a pen-test, post-exploit, and audit remote web accesses in order to escalate privileges and pivot deeper in the internal networks.
 * [Getting Started](https://github.com/epinna/weevely3/wiki#getting-started)
@@ -154,28 +241,30 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
  
 
 
+###<a name="generalencode">General Encoders/Decoders</a>
 
 
 
 
+###<a name="nonwriteup">Non-Attack Writeups</a>
 
-###Non-Attack Writeups
 [Security and Open Redirects  Impact of 301-ing people in 2013](https://makensi.es/rvl/openredirs/#/)
 
 [Postcards from a Post-XSS World - Michael Zalewski](http://lcamtuf.coredump.cx/postxss/#dangling-markup-injection)
 * This page is a rough collection of notes on some of the fundamental alternatives to direct script injection that would be available to attackers following the universal deployment of CSP or other security mechanisms designed to prevent the execution of unauthorized scripts. I hope to demonstrate that in many cases, the capabilities offered by these alternative methods are highly compatible with the goals of contemporary XSS attacks.
 
 
-###Securing Web Applications/Checklists
+###<a name="checklist">Securing Web Applications/Checklists</a>
 
 
 [Center for Internet Security Apache Server 2.4 Hardening Guide](https://benchmarks.cisecurity.org/tools2/apache/CIS_Apache_HTTP_Server_2.4_Benchmark_v1.1.0.pdf)
 
-[Securing Web Application Technologies Checklist](http://www.securingthehuman.org/developer/swat)
+[Securing Web Application Technologies Checklist](http://www.securingthehuman.org/developer/swat
 
 [OWASP Testing Checklist](https://www.owasp.org/index.php/Testing_Checklist)
 
 [WebAppSec Testing Checklist](http://tuppad.com/blog/wp-content/uploads/2012/03/WebApp_Sec_Testing_Checklist.pdf)
+
 
 [OWASP Web Application Security Testing Cheat Sheet](https://www.owasp.org/index.php/Web_Application_Security_Testing_Cheat_Sheet)
 
@@ -183,7 +272,7 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 * The Magical Code Injection Rainbow! MCIR is a framework for building configurable vulnerability testbeds. MCIR is also a collection of configurable vulnerability testbeds. Has testing lessons for xss/csrf/sql
 
 
-###Web Application Firewalls
+###<a name="waf">Web Application Firewalls</a>
 
 
 [ModSecurity](https://github.com/SpiderLabs/ModSecurity)
@@ -192,11 +281,18 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [Shadow Daemon](https://shadowd.zecure.org/overview/introduction/)
 * Shadow Daemon is a collection of tools to detect, protocol and prevent attacks on web applications. Technically speaking, Shadow Daemon is a web application firewall that intercepts requests and filters out malicious parameters. It is a modular system that separates web application, analysis and interface to increase security, flexibility and expandability. Shadow Daemon is free software. It is released under the license GPLv2, so its source code can be examined, modified and distributed by everyone.
 
+
+
+<a name="bwaf">Bypassing Web Application Firewalls</a>
 [Bypassing WAFs](http://www.nethemba.com/bypassing-waf.pdf)
 
 
 
-###Web Application Attacks & Write-ups
+
+
+
+
+###<a name="writeups">Web Application Attack Write-ups</a>
 
 [Hacking with Pictures - Syscan2015](http://www.slideshare.net/saumilshah/hacking-with-pictures-syscan-2015)
 
@@ -207,21 +303,19 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [ColdFusion Security Resources](https://www.owasp.org/index.php/ColdFusion_Security_Resources)
 
+
 [ColdFusion for Penetration Testers](http://www.slideshare.net/chrisgates/coldfusion-for-penetration-testers)
 
+###<a name="lrfi">LFI & RFI</a>
 
-
-
-###LFI & RFI
-
-[LFI Local File Inclusion Techniques (paper)](http://www.ush.it/2008/08/18/lfi2rce-local-file-inclusion-to-remote-code-execution-advanced-exploitation-proc-shortcuts/) 
+[LFI Local File Inclusion Techniques (paper)](http://www.ush.it/2008/08/18/lfi2rce-local-file-inclusion-to-remote-code-execution-advanced-exploitation-proc-shortcuts/)
 * This paper exposes the ability from the attacker standpoint to use /proc in order to exploit LFI (Local File Inclusion) vulnerabilities. While using /proc for such aim is well known this one is a specific technique that was not been previously published as far as we know. A tool to automatically exploit LFI using the shown approach is released accordingly. 
 * [Update: a third (known) technique has been dissected here](http://www_ush_it/2008/07/09/local-file-inclusion-lfi-of-session-files-to-root-escalation/ ) 
 
 [Liffy](https://github.com/rotlogix/liffy)
 * Liffy is a Local File Inclusion Exploitation tool. 
 
-###XSS
+###<a name="xss">XSS</a>
 [Writing an XSS Worm](http://blog.gdssecurity.com/labs/2013/5/8/writing-an-xss-worm.html)
 
 [3 Types of XSS](https://www.owasp.org/index.php/Types_of_Cross-Site_Scripting)
@@ -236,6 +330,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 ##(NO)SQL Injection
 [SQL Injection Cheat Sheet](http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/)
+
+[PostgreSQL Pass The Hash protocol design weakness](https://hashcat.net/misc/postgres-pth/postgres-pth.pdf)
 
 [SQL Injection wiki](http://www.sqlinjectionwiki.com/)
 
@@ -274,9 +370,7 @@ Stacked SQL injections.
 Secondary channel extraction
 
 
-
-
-Attacking Browsers
+###<a name="atkb"Attacking Browsers</a>
 [White Lightning Attack Platform](https://github.com/TweekFawkes/White_Lightning/tree/master/var/www)
 
 [BeEF Browser Exploitation Framework](http://beefproject.com/
@@ -291,7 +385,7 @@ Attacking Browsers
 * Goes from introducing a fuzzer to producing an IE11 0day
 
 
-###HTML 5
+###<a name="html5">HTML 5</a>
 
 [SH5ARK](http://sh5ark.professionallyevil.com)
 * The Securing HTML5 Assessment Resource Kit, or SH5ARK, is an open source project that provides a repository of HTML5 features, proof-of-concept attack code, and filtering rules. The purpose of this project is to provide a single repository that can be used to collect sample code of vulnerable HTML5 features, actual attack code, and filtering rules to help prevent attacks and abuse of these features. The intent of the project is to bring awareness to the opportunities that HTML5 is providing for attackers, to help identify these attacks, and provide measures for preventing them
@@ -301,7 +395,7 @@ Attacking Browsers
 * [GetSH5ARK here](http://sourceforge.net/projects/sh5ark/)
 
 
-###Papers
+###<a name="papers">Papers
 
 [The Spy in the Sandbox – Practical Cache Attacks in Javascript](http://iss.oy.ne.ro/SpyInTheSandbox.pdf)
 * We present the first micro-architectural side-channel at- tack which runs entirely in the browser. In contrast to other works in this genre, this attack does not require the attacker to install any software on the victim’s machine – to facilitate the attack, the victim needs only to browse to an untrusted webpage with attacker-controlled con- tent. This makes the attack model highly scalable and ex- tremely relevant and practical to today’s web, especially since most desktop browsers currently accessing the In- ternet are vulnerable to this attack. Our attack, which is an extension of the last-level cache attacks of Yarom et al. [23], allows a remote adversary recover information belonging to other processes, other users and even other virtual machines running on the same physical host as the victim web browser. We describe the fundamentals behind our attack, evaluate its performance using a high bandwidth covert channel and finally use it to construct a system-wide mouse/network activity logger. Defending against this attack is possible, but the required counter- measures can exact an impractical cost on other benign uses of the web browser and of the computer.
@@ -318,22 +412,16 @@ Attacking Browsers
 [SSL/TLS Interception Proxies and Transitive Trust](http://media.blackhat.com/bh-eu-12/Jarmoc/bh-eu-12-Jarmoc-SSL_TLS_Interception-WP.pdf)
 * Secure Sockets Layer (SSL) [ 1 ] and its successor Transport Layer Security (TLS) [ 2 ] have become key components of the modern Internet . The privacy, integrity, and authenticity [ 3 ] [ 4 ] provided by these protocols are critical to allowing sensitive communications to occur . Without these systems, e - commerce, online banking , and business - to - business exchange of information would likely be far less frequent. Threat actors have also recognized the benefits of transport security, and they are increasingly turning to SSL to hide their activities . Advanced Persistent Threat ( APT ) attackers [ 5 ] , botnets [ 6 ] , and eve n commodity web attacks can leverage SSL encryption to evade detection. To counter these tactics, organizations are increasingly deploying security controls that intercept end - to - end encrypted channels. Web proxies, data loss prevention ( DLP ) systems, spec ialized threat detection solutions, and network intrusion prevention systems ( N IPS ) offer functionality to intercept, inspect , and filter encrypted traffic. Similar functionality is present in lawful intercept systems and solutions enabling the broad surve illance of encrypted communications by governments. Broadly classified as “SSL/TLS interception proxies ,” these solutions act as a “ man in the middle , ” violating the end - to - end security promises of SSL. This type of interception comes at a cost . Intercepti ng SSL - encrypted connections sacrifices a degree of privacy and integrity for the benefit of content inspection, often at the risk of authenticity and endpoint validation . Implementers and designers of SSL interception proxies should consider these risks and understand how their systems operate in unusual circumstances
 
-
 [Scriptless Attacks – Stealing the Pie Without Touching the Sill](http://www.syssec.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf)
 * Due to their high practical impact, Cross-Site Scripting (X SS) attacks have attracted a lot of attention from the security community members. In the same way, a plethora of more or less effective defense techniques have been proposed, ad- dressing the causes and effects of XSS vulnerabilities. As a result, an adversary often can no longer inject or even execute arbitrary scripting code in several real-life scen arios. In this paper, we examine the attack surface that remains after XSS and similar scripting attacks are supposedly mit- igated by preventing an attacker from executing JavaScript code. We address the question of whether an attacker really needs JavaScript or similar functionality to perform attac ks aiming for information theft. The surprising result is that an attacker can also abuse Cascading Style Sheets (CSS) in combination with other Web techniques like plain HTML, inactive SVG images or font files. Through several case studies, we introduce the so called scriptless attacks and demonstrate that an adversary might not need to execute code to preserve his ability to extract sensitive informati on from well protected websites. More precisely, we show that an attacker can use seemingly benign features to build side channel attacks that measure and exfiltrate almost arbitrar y data displayed on a given website. We conclude this paper with a discussion of potential mit- igation techniques against this class of attacks. In additi on, we have implemented a browser patch that enables a website to make a vital determination as to being loaded in a de- tached view or pop-up window. This approach proves useful for prevention of certain types of attacks we here discuss.
 
 
-
-
-
-
-###Miscellaneous
-
+###<a name="misc">Miscellaneous</a>
 [unindexed](https://github.com/mroth/unindexed/blob/master/README.md)
 * The site is constantly searching for itself in Google, over and over and over, 24 hours a day. The instant it finds itself in Google search results, the site will instantaneously and irrevocably securely delete itself. Visitors can contribute to the public content of the site, these contributions will also be destroyed when the site deletes itself.
 
 [COWL: A Confinement System for the Web](http://cowl.ws/)
 * Robust JavaScript confinement system for modern web browsers. COWL introduces label-based mandatory access control to browsing contexts (pages, iframes, etc.) in a way that is fully backward-compatible with legacy web content. 
-[Paper](http://www.scs.stanford.edu/~deian/pubs/stefan:2014:protecting.pdf)
+* [Paper](http://www.scs.stanford.edu/~deian/pubs/stefan:2014:protecting.pdf)
 
 

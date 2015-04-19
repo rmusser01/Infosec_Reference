@@ -33,10 +33,20 @@ http://www.securitywizardry.com/radar.htm
 
 ###CULL
 
+[Anti-Virus Software Gone Wrong](http://uninformed.org/?v=all&a=21&t=sumry)
+* Anti-virus software is becoming more and more prevalent on end-user computers today. Many major computer vendors (such as Dell) bundle anti-virus software and other personal security suites in the default configuration of newly-sold computer systems. As a result, it is becoming increasingly important that anti-virus software be well-designed, secure by default, and interoperable with third-party applications. Software that is installed and running by default constitutes a prime target for attack and, as such, it is especially important that said software be designed with security and interoperability in mind. In particular, this article provides examples of issues found in well-known anti-virus products. These issues range from not properly validating input from an untrusted source (especially within the context of a kernel driver) to failing to conform to API contracts when hooking or implementing an intermediary between applications and the underlying APIs upon which they rely. For popular software, or software that is installed by default, errors of this sort can become a serious problem to both system stability and security. Beyond that, it can impact the ability of independent software vendors to deploy functioning software on end-user systems. 
+
+[Foreign LINUX](https://github.com/wishstudio/flinux)
+* Foreign LINUX is a dynamic binary translator and a Linux system call interface emulator for the Windows platform. It is capable of running unmodified Linux binaries on Windows without any drivers or modifications to the system. This provides another way of running Linux applications under Windows in constrast to Cygwin and other tools.
+
+
+[Take Charge of Your Infosec Career! - Glen Roberts - BSidesSLC2015](https://www.youtube.com/watch?v=QqlnB2FeODo)
+* You spent $5,000, a plane trip, a hotel and a full workweek on your last infosec course but when was the last time you invested even just a few hours of your time exclusively to developing your infosec career in a truly meaningful way? This talk will challenge the way you view your career and give you actionable steps for taking charge of it so you can optimize the rewards and fulfillment you receive from your work. Glen will leverage the stories and best practices from dozens of information security professionals to help inspire your infosec career journey. This presentation will be engaging and speak to the soul in a way that instills ownership of your own career and generates a passion for finding and carving out your own authentic career path.
+
 [stupid_malware](https://github.com/andrew-morris/stupid_malware)
 * Python malware for pentesters that bypasses most antivirus (signature and heuristics) and IPS using sheer stupidity
 [China’s Great Cannon](https://citizenlab.org/2015/04/chinas-great-cannon/) * This post describes our analysis of China’s “Great Cannon,” our term for an attack tool that we identify as separate from, but co-located with, the Great Firewall of China. The first known usage of the Great Cannon is in the recent large-scale novel DDoS attack on both GitHub and servers used by GreatFire.org.
-
+[How to Hack All the Transport Networks of a Country - Defcon20](https://www.youtube.com/watch?v=D6KEhdHFc9I)
 [ZeroMQ](http://zguide.zeromq.org/page:all)
 [Underhanded C contest](http://underhanded-c.org/)
 Regex for credit cards

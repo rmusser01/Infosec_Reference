@@ -3,32 +3,49 @@
 
 
 Cull
-Presentations/Videos
-Tools
-IDS/IPS
-IDS/IPS Monitoring
-Logging
-	Linux
-	Windows
-PCaps/Static Data
-Papers
-Tricks & Tips
+* [Presentations/Videos](#videos)
+* [Tools](#tools)
+* [IDS/IPS](#ips)
+* [IDS/IPS Monitoring](#monitor)
+* [Logging](#log)
+	* [Linux](#linux)
+	* [Windows](#win)
+* [PCaps/Static Data](#pcap)
+* [Papers](#papers)
+* [Tricks & Tips](#tricks)
 
 
 
 ###Cull
 
+[Malcom - Malware Communication Analyzer](https://github.com/tomchop/malcom)
+* Malcom is a tool designed to analyze a system's network communication using graphical representations of network traffic, and cross-reference them with known malware sources. This comes handy when analyzing how certain malware species try to communicate with the outside world.
+
+[DNSChef](https://thesprawl.org/projects/dnschef/)
+* DNSChef is a highly configurable DNS proxy for Penetration Testers and Malware Analysts. A DNS proxy (aka "Fake DNS") is a tool used for application network traffic analysis among other uses. For example, a DNS proxy can be used to fake requests for "badguy.com" to point to a local machine for termination or interception instead of a real host somewhere on the Internet.
+
+[Passive DNS](https://github.com/gamelinux/passivedns) 
+* A tool to collect DNS records passively to aid Incident handling, Network Security Monitoring (NSM) and general digital forensics.  * PassiveDNS sniffs traffic from an interface or reads a pcap-file and outputs the DNS-server answers to a log file. PassiveDNS can cache/aggregate duplicate DNS answers in-memory, limiting the amount of data in the logfile without losing the essense in the DNS answer.
+
+
+[CapLoader](http://www.netresec.com/?page=CapLoader) 
+*  CapLoader is a Windows tool designed to handle large amounts of captured network traffic. CapLoader performs indexing of PCAP/PcapNG files and visualizes their contents as a list of TCP and UDP flows. Users can select the flows of interest and quickly filter out those packets from the loaded PCAP files. Sending the selected flows/packets to a packet analyzer tool like Wireshark or NetworkMiner is then just a mouse click away. 
 
 http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Analysis-What-Should-You-Choose.pdf
 
+[Captipper](http://www.omriher.com/2015/01/captipper-malicious-http-traffic.html)
+* CapTipper is a python tool to analyze, explore and revive HTTP malicious traffic. 
+CapTipper sets up a web server that acts exactly as the server in the PCAP file, 
+and contains internal tools, with a powerful interactive console, for analysis and inspection of the hosts, objects and conversations found. 
 
-
+[Exfil Framework](https://github.com/reservoirlabs/bro-scripts/tree/master/exfil-detection-framework)
+* The Exfil Framework is a suite of Bro scripts that detect file uploads in TCP connections. The Exfil Framework can detect file uploads in most TCP sessions including sessions that have encrypted payloads (SCP,SFTP,HTTPS). 
 
 http://www.appliednsm.com/introducing-flowbat/
 Awesome flow tool, SiLK backend
 
 
-###Presentations/Videos
+###<a name="videos">Presentations/Videos</a>
 [Logging ALL THE THINGS Without All The Cost With Open Source Big Data Tools - DEFCON22 - Zach Fasel](https://www.youtube.com/watch?v=2AAnVeIwXBo)
 * Many struggle in their job with the decision of what events to log in battle against costly increases to their licensing of a commercial SIEM or other logging solution. Leveraging the open source solutions used for "big-data" that have been proven by many can help build a scalable, reliable, and hackable event logging and security intelligence system to address security and (*cringe*) compliance requirements. We’ll walk through the various components and simple steps to building your own logging environment that can extensively grow (or keep sized just right) with just additional hardware cost and show numerous examples you can implement as soon as you get back to work (or home).
 
@@ -37,7 +54,7 @@ Awesome flow tool, SiLK backend
 
 
 
-###Tools
+###<a name="tools">Tools</a>
 [Security Onion](http://blog.securityonion.net/p/securityonion.html)
 * Security Onion is a Linux distro for intrusion detection, network security monitoring, and log management. It's based on Ubuntu and contains Snort, Suricata, Bro, OSSEC, Sguil, Squert, Snorby, ELSA, Xplico, NetworkMiner, and many other security tools. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
 
@@ -45,7 +62,7 @@ Awesome flow tool, SiLK backend
 * Pip3line is a raw bytes manipulation utility, able to apply well known and less well known transformations from anywhere to anywhere (almost).
 
 
-###IDS/IPS
+###<a name="ips">IDS/IPS</a>
 
 
 Snort](https://www.snort.org/)
@@ -98,7 +115,7 @@ losing the essense in the DNS answer.
 * bmon is a monitoring and debugging tool to capture networking related statistics and prepare them visually in a human friendly way. It features various output methods including an interactive curses user interface and a programmable text output for scripting.
 
 
-###IDS/IPS Monitoring Tools
+###<a name="monitor">IDS/IPS Monitoring Tools</a>
 
 [Snorby](https://www.snorby.org/)
 [Snorby - Github](https://github.com/snorby/snorby)
@@ -116,7 +133,7 @@ losing the essense in the DNS answer.
 
 
 
-###Logging - General
+###<a name="log">Logging - General</a>
 
 [Introduction and Demo to the Elasticsearch, Logstash and Kibana](https://www.youtube.com/watch?v=GrdzX9BNfkg)
 
@@ -136,14 +153,14 @@ losing the essense in the DNS answer.
 
 
 
-###Logging - Linux
+###<a name="linux">Logging - Linux</a>
 
 [Syslong-ng](https://github.com/balabit/syslog-ng) 
 * syslog-ng is an enhanced log daemon, supporting a wide range of input and output methods: syslog, unstructured text, message queues, databases (SQL and NoSQL alike) and more.
 
 
 
-###Logging - Windows
+###<a name="win">Logging - Windows</a>
 
 [Parsing Text Logs with Message Analyzer - Microsoft](http://blogs.technet.com/b/messageanalyzer/archive/2015/02/23/parsing-text-logs-with-message-analyzer.aspx)
 
@@ -153,7 +170,7 @@ losing the essense in the DNS answer.
 
 
 
-###Pcaps/Static Analysis(I.e. you have a pcap file or you're not trying to do live analysis/Aren't trying to use one of the above tools)
+###<a name="pcap">Pcaps/Static Analysis(I.e. you have a pcap file or you're not trying to do live analysis/Aren't trying to use one of the above tools)</a>
 
 [Silk - 
 * The SiLK analysis suite is a collection of command-line tools for processing SiLK Flow records created by the SiLK packing system. These tools read binary files containing SiLK Flow records and partition, sort, and count these records. The most important analysis tool is rwfilter, an application for querying the central data repository for SiLK Flow records that satisfy a set of filtering options. The tools are intended to be combined in various ways to perform an analysis task. A typical analysis uses UNIX pipes and intermediate data files to share data between invocations of the tools. 
@@ -168,7 +185,7 @@ losing the essense in the DNS answer.
 * NetworkMiner is a Network Forensic Analysis Tool (NFAT) for Windows (but also works in Linux / Mac OS X / FreeBSD). NetworkMiner can be used as a passive network sniffer/packet capturing tool in order to detect operating systems, sessions, hostnames, open ports etc. without putting any traffic on the network. NetworkMiner can also parse PCAP files for off-line analysis and to regenerate/reassemble transmitted files and certificates from PCAP files.
 
 
-###Papers
+###<a name="papers">Papers</a>
 
 [Network Profiling Using Flow](https://resources.sei.cmu.edu/asset_files/technicalreport/2012_005_001_28167.pdf)
 * This report provides a step-by-step guide for profiling—discovering public-facing assets on a  network—using network flow (netflow) data. Netflow data can be used for forensic purposes, for  finding malicious activity, and for determining appropriate prioritization settings. The goal of this  report is to create a profile to see a potential  attacker’s view of an external network.   Readers will learn how to choose a data set, find the top assets and services with the most traffic  on the network, and profile several services. A cas e study provides an example of the profiling  process. The underlying concepts of using netflow data are presented so that readers can apply the  approach to other cases. A reader using this repor t to profile a network can expect to end with a  list of public-facing assets and the ports on which  each is communicating and may also learn other  pertinent information, such as external IP addresses, to which the asset is connecting. This report  also provides ideas for using, maintaining, and reporting on findings. The appendices include an  example profile and scripts for running the commands in the report. The scripts are a summary  only and cannot replace reading and understanding this report.
@@ -177,7 +194,7 @@ losing the essense in the DNS answer.
 
 [Using SiLK for Network  Traffic Analysis](https://tools.netsa.cert.org/silk/analysis-handbook.pdf)
 
-###Tricks & Tips
+###<a name="tricks">Tricks & Tips</a>
 [Using rwuniq for Top-10 Lists](https://tools.netsa.cert.org/confluence/display/tt/Using+rwuniq+for+Top-10+Lists)
 
 

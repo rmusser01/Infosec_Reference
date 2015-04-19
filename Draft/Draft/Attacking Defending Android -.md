@@ -89,7 +89,8 @@ http://nelenkov.blogspot.com
 [ARE - Virtual Machine for Android Reverse Engineering](https://redmine.honeynet.org/projects/are)
 
 [Android Bytecode Obfuscation - Patrick Schulz 2012](http://dexlabs.org/blog/bytecode-obfuscation)
-
+[Android Pattern Lock Cracker](https://github.com/sch3m4/androidpatternlock) 
+*  A little Python tool to crack the Pattern Lock on Android devices
 
 
 [PatchDroid: Scalable Third-Party Security Patches for Android Devices](http://www.mulliner.org/collin/academic/publications/patchdroid.pdf)

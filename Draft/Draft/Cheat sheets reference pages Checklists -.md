@@ -2,23 +2,30 @@
 
 
 TOC
-Cull
-General
-Android
-iOS
-Linux
-OS X
-Windows
-Exploitation
-Exploit Dev
-Metasploit
-Forensics/IR
-Malware
-Reverse Engineering 
-Web
-Databases
+* Cull
+* [General](#General)
+* [ASM(x86/64/ARM)](#ASM)
+* [Android](#Android)
+* [iOS](#ios)
+* [Linux](#Linux
+* [OS X](#OSX)
+* [Windows](#Windows)
+* [Exploitation](#Exploitation)
+* [Exploit Dev](#Exploit)
+* [Metasploit](#Metasploit)
+* [Forensics/IR](#For)
+* [Malware](#Malware)
+* [Reverse Engineering](#RE) 
+* [Web](#Web)
+* [Databases](#DB)
 
 
+
+
+
+CULL
+
+[Radare2 Cheat sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
 
 [How to Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)
 
@@ -31,7 +38,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 
-###General Cheat Sheets
+###<a name="General">General Cheat Sheets</a>
 
 [Tips for Troubleshooting Human Communications](https://zeltser.com/human-communications-cheat-sheet/)
 
@@ -44,7 +51,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 
-###x86/64/ARM
+###<a name="ASM">x86/64/ARM</a>
 
 [x86 opcode structure and instruction overview](http://pnx.tf/files/x86_opcode_structure_and_instruction_overview.pdf)
 
@@ -56,19 +63,19 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 
-###Android Cheat Sheets
+###<a name="Android">Android Cheat Sheets</a>
 [Android ADB cheat sheet](https://github.com/maldroid/adb_cheatsheet/blob/master/cheatsheet.pdf?raw=true)
 
 
 
 
 
-###iOS Cheat Sheets
+###<a name="ios">iOS Cheat Sheets</a>
 
 
 
 
-###Linux Cheat Sheets
+###<a name="Linux">Linux Cheat Sheets</a>
 [Linux Syscall Table](http://www.informatik.htw-dresden.de/~beck/ASM/syscall_list.html)
 * Complete listing of all Linux Syscalls
 
@@ -76,13 +83,13 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 
-###Windows Cheat Sheets
+###<a name="Windows">Windows Cheat Sheets</a>
 [Windows Startup Application Database](http://www.pacs-portal.co.uk/startup_content.php)
 
 
 
 
-###Exploitation Cheat Sheets
+###<a name="Exploitation">Exploitation Cheat Sheets</a>
 
 [Linux - Breaking out of shells](https://highon.coffee/docs/linux-commands/#breaking-out-of-limited-shells)
 
@@ -94,14 +101,14 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 
-###Exploit Dev Cheat Sheets
+###<a name="Exploitation">Exploit Dev Cheat Sheets</a>
 
 [x86 opcode structure and instruction overview](http://pnx.tf/files/x86_opcode_structure_and_instruction_overview.pdf)
 
 [Nasm x86 reference](https://www.cs.uaf.edu/2006/fall/cs301/support/x86/)
 
 
-### Metasploit Cheat Sheets
+### <a name="Metasploit">Metasploit Cheat Sheets</a>
 [Metasploit 4.2 documentation](https://community.rapid7.com/docs/DOC-1751)
 
 [MSF Payload Cheat Sheet](http://aerokid240.blogspot.com/2009/11/msfpayload-goodness-cheatsheet.html)
@@ -111,7 +118,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 [Tips & Tricks](https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks)
 
 
-###Forensics/IR Cheat Sheets
+###<a name="For">Forensics/IR Cheat Sheets</a>
 
 [File Signature Table](http://www.garykessler.net/library/file_sigs.html)
 
@@ -127,9 +134,14 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 
+###<a name="Malware">Malware Cheat Sheet</a>
+
+[Reverse Engineering Malware Cheat Sheet](https://zeltser.com/reverse-malware-cheat-sheet/)
+
+[Analyzing Malicious Documents Cheat Sheet](https://zeltser.com/analyzing-malicious-documents/)
 
 
-###Reverse Engineering Cheat Sheets
+###<a name="RE">Reverse Engineering Cheat Sheets</a>
 
 [Radare2 Cheat-Sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md
 
@@ -142,14 +154,9 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 
-###Malware Cheat Sheet
-
-[Reverse Engineering Malware Cheat Sheet](https://zeltser.com/reverse-malware-cheat-sheet/)
-
-[Analyzing Malicious Documents Cheat Sheet](https://zeltser.com/analyzing-malicious-documents/)
 
 
-###Web Cheat Sheets
+###<a name="Web">Web Cheat Sheets</a>
 
 [WebAppSec Testing Checklist](http://tuppad.com/blog/wp-content/uploads/2012/03/WebApp_Sec_Testing_Checklist.pdf)
 
@@ -169,7 +176,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 
-###Database Cheat Sheets
+###<a name="DB">Database Cheat Sheets</a>
 
 [Checklist for mongodb](http://blog.mongodirector.com/10-tips-to-improve-your-mongodb-security/
 )

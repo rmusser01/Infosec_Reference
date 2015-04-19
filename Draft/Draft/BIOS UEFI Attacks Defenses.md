@@ -14,6 +14,8 @@ Writeups
 
 ###Cull
 
+[Intel ME (Manageability engine) Huffman algorithm](http://io.smashthestack.org/me/)
+
 [CHIPSEC module that exploits UEFI boot script table vulnerability](https://github.com/Cr4sh/UEFI_boot_script_expl)
 
 [Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)

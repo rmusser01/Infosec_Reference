@@ -1,24 +1,30 @@
 ##Rootkits
 
 
-[Windows Rootkits(excellent writeup/introduction to windows rootkits)](http://www.programdevelop.com/5408113/)
+Windows Rootkits(excellent writeup/introduction to windows rootkits)
+* [Part 1](http://www.programdevelop.com/5408113/)
 * [Part 2](http://www.programdevelop.com/5409574/)
 * [Part 3](http://www.programdevelop.com/5408212/)
 
 
-
 TOC
+
 Cull
-Developing
-Identifying/Defending
-Writeups
-Papers
+
+* [Developing](#dev)
+* [Identifying/Defending](#id)
+* [Writeups](#writeups)
+* [Talks & Videos](#talks)
+* [Papers](#papers)
 
 
 ###Cull
 
 [Killing Rootkits](http://blog.ioactive.com/2014/09/killing-rootkit.html)
 
+https://github.com/rrbranco/Troopers2015	
+
+[BoutiqueKit: Playing WarGames with Expensive Rootkits and Malware- Defcon 21](https://www.youtube.com/watch?v=gKUleWyfut0)
 
 [How Many Million BIOSes Would you Like to Infect?](http://conference.hitb.org/hitbsecconf2015ams/sessions/how-many-million-bioses-would-you-like-to-infect/)
 * This talk is going to be all about how the automation of BIOS vulnerability exploitation and leveraging of built-in capabilities can yield highly portable UEFI firmware malware. And how millions of systems will be vulnerable for years, because no one cares enough to patch the BIOS bugs we’ve found.  So you think you’re doing OPSEC right, right? You’re going to crazy lengths to protect yourself, reinstalling your main OS every month, or using a privacy-conscious live DVD like TAILS. Guess what? BIOS malware doesn’t care! BIOS malware doesn’t give a shit
@@ -73,31 +79,23 @@ Thunderstrike is the name for the Apple EFI firmware security vulnerability that
 
 
 
-###Developing
+###<a name="dev">Developing</a>
 [Android Rootkit](https://github.com/hiteshd/Android-Rootkit)
 [Masochist](https://github.com/squiffy/Masochist)
 * Masochist is a framework for creating XNU based rootkits. Very useful in OS X and iOS security research.
 
 [Using Kernel Rootkits to conceal infected MBR](https://github.com/MalwareTech/FakeMBR/)
 [Hypervisor](https://github.com/ainfosec/more)
-
-
-
-
-
 [Suterusu](https://github.com/mncoppola/suterusu)
 
-###Identifiying/Defending
 
 
 
-
-
-
+###<a name="id">Identifiying/Defending</a>
 
 [Killing Rootkits](http://blog.ioactive.com/2014/09/killing-rootkit.html)
 
-###Writeups
+###<a name="writeups">Writeups</a>
 [Shadow Walker - Raising the Bar for Rootkit detection - BH 2005](https://www.blackhat.com/presentations/bh-jp-05/bh-jp-05-sparks-butler.pdf)
 
 [Rise of the dual architecture usermode rootkit](http://www.malwaretech.com/2013/06/rise-of-dual-architecture-usermode.html)
@@ -120,7 +118,7 @@ Thunderstrike is the name for the Apple EFI firmware security vulnerability that
 
 
 
-###Videos
+###<a name="talks">Videos</a>
 [Persistent, Stealthy, Remote-controlled Dedicated Hardware Malware [30c3]](https://www.youtube.com/watch?v=Ck8bIjAUJgE)
 
 [Intel Management Engine Secrets by Igor Skochinsky](https://www.youtube.com/watch?v=Y2_-VXz9E-w)
@@ -136,6 +134,6 @@ Thunderstrike is the name for the Apple EFI firmware security vulnerability that
 
 
 
-###Papers
+###<a name="papers">Papers</a>
 [futo](http://uninformed.org/?v=all&a=17&t=sumry)
 * Since the introduction of FU, the rootkit world has moved away from implementing system hooks to hide their presence. Because of this change in offense, a new defense had to be developed. The new algorithms used by rootkit detectors, such as BlackLight, attempt to find what the rootkit is hiding instead of simply detecting the presence of the rootkit's hooks. This paper will discuss an algorithm that is used by both Blacklight and IceSword to detect hidden processes. This paper will also document current weaknesses in the rootkit detection field and introduce a more complete stealth technique implemented as a prototype in FUTo. 

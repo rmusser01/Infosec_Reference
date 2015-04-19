@@ -2,15 +2,11 @@
 
 I am not a professional and may be a twelve year old child. Be wary.
 
-
-
-
-ToC
-Cull
-Guides/Write-ups
-Papers
-Videos
-
+####ToC
+* Cull
+* [Guides/Write-ups](#guides)
+* [Videos/Presentations](#videos)
+* [Papers](#papers)
 
 
 
@@ -23,7 +19,7 @@ Videos
 
 
 
-###Guides/Write-ups
+###<a name="guides">Guides/Write-ups</a>
 
 
 Detecting Surveillance - Spiderlabs blog
@@ -35,7 +31,7 @@ Detecting Surveillance - Spiderlabs blog
 
 
 
-###Videos
+###<a name="videos">Videos</a>
 
 [Dr. Philip Polstra - Am I Being Spied On?](https://www.youtube.com/watch?v=Bc7WoDXhcjM)
 * Talk on cheap/free counter measures
@@ -50,7 +46,7 @@ Detecting Surveillance - Spiderlabs blog
 
 
 
-###Papers
+###<a name="papers">Papers</a>
 
 [Exploiting Lawful Intercept to Wiretap the Internet](https://www.blackhat.com/presentations/bh-dc-10/Cross_Tom/BlackHat-DC-2010-Cross-Attacking-LawfulI-Intercept-wp.pdf)
 * This paper will review Cisco's architecture for lawful intercept from asecurity perspective. We explain how a number of different weaknesses in its design coupled with publicly disclosed security vulnerabilities could enable a malicious person to access the interface and spy on communications without leaving a trace. We then provide a set of recommendations for the redesign of the interface as well as SNMP authentication in general to better mitigate the security risks. 

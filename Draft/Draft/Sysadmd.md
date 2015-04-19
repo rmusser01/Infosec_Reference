@@ -1,3 +1,18 @@
+Puppet
+
+Chef
+
+
+Salt
+
+
+
+
+
+
+
+
+
 
 [Mitigating Pass-the-Hash Attacks and other credential Theft-version2](http://download.microsoft.com/download/7/7/A/77ABC5BD-8320-41AF-863C-6ECFB10CB4B9/Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf)
 * Official MS paper.

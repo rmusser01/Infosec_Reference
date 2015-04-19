@@ -46,6 +46,10 @@ BVWA
 
 
 ###General Sources/Repository of Classes
+
+[Hackr.io](http://hackr.io/)
+* Share and discover the best programming tutorials and courses online.
+
 [Open Security Training](www.opensecuritytraining.info)
 
 Udemy

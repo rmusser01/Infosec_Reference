@@ -2,25 +2,26 @@
 
 https://en.wikipedia.org/wiki/Embedded_system
 
+#####ToC
 
-ToC
 Cull
-Attacking Routers
-Cable Modem Hacking
-Educational
-Flash Memory
-Internet of Things
-General Tools(S/W & H/W)
-General Hardware Hacking
-Miscellaneous
-PCI
-PenTest Dropboxes
-Teensy/Rubberducky Style Attack Tools
-SD Cards
-Tutorials/Walkthroughs/Write-ups
-USB
-SmartCards
-Papers
+* [General](#general)
+* [Attacking Routers](#routers)
+* [Cable Modem Hacking](#modem)
+* [Educational](#education)
+* [Flash Memory](#flash)
+* [Internet of Things](#iot)
+* [General Tools(S/W & H/W)](#gentools)
+* [General Hardware Hacking](#generalhw)
+* [Miscellaneous](#misc)
+* [PCI](#PCI)
+* [PenTest Dropboxes](#dropbox)
+* [Teensy/Rubberducky Style Attack Tools](#teensy)
+* [SD Cards](#sdcard)
+* [Tutorials/Walkthroughs/Write-ups](#writeups)
+* [USB](#usb)
+* [SmartCards](#smartcard)
+* [Papers](#papers
 
 
 
@@ -43,7 +44,7 @@ Chameleon Mini
 * [Milking the Digital Cash Cow [29c3] Video Presentation](https://www.youtube.com/watch?v=Y1o2ST03O8I)
 * [ChameleonMini Hardware](https://github.com/emsec/ChameleonMini/wiki)
 
-
+[Implementing an USB Host Driver Fuzzer - Daniel Mende - Troopers14](https://www.youtube.com/watch?v=h777lF6xjs4)
 
 [Introduction to Trusted Execution  Environments - Steven J. Murdoch](https://www.cl.cam.ac.uk/~sjm217/talks/rhul14tee.pdf)
 [U-Boot -- the Universal Boot Loader](http://www.denx.de/wiki/U-Boot)
@@ -57,12 +58,6 @@ Chameleon Mini
 * Software Fault Isolation (SFI) is an effective approach to sandboxing binary code of questionable provenance, an interesting use case for native plugins in a Web browser. We present software fault isolation schemes for ARM and x86-64 that provide control-flow and memory integrity with average performance overhead of under 5% on ARM and 7% on x86-64. We believe these are the best known SFI implementations for these architectures, with significantly lower overhead than previous systems for similar architectures. Our experience suggests that these SFI implementations benefit from instruction-level parallelism, and have particularly small impact for work- loads that are data memory-bound, both properties that tend to reduce the impact of our SFI systems for future CPU implementations.
 
 
-
-
-
-
-
-
 http://greatscottgadgets.com/infiltrate2013/
 
 http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html
@@ -73,7 +68,7 @@ http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html
 
 
 
-###Attacking Routers
+###<a name="routers">Attacking Routers</a>
 
 TR-069
 
@@ -94,7 +89,7 @@ TR-069
 
 
 
-###Cable Modem Hacking
+###<a name="modem">Cable Modem Hacking</a>
 
 [Docsis hacking](https://www.defcon.org/images/defcon-16/dc16-presentations/defcon-16-self.pdf)
 [Hacking Docsis for fun and profit](https://www.defcon.org/images/defcon-18/dc-18-presentations/Blake-bitemytaco/DEFCON-18-Blake-bitemytaco-Hacking-DOCSIS.pdf)
@@ -105,7 +100,7 @@ TR-069
 
 
 
-###Educational
+###<a name="education">Educational</a>
 [Hardware Hacking for Software People](http://dontstuffbeansupyournose.com/2011/08/25/hardware-hacking-for-software-people/)
 
 [Glitching for n00bs - A journey to coax out chips' inner seccrets](http://media.ccc.de/browse/congress/2014/31c3_-_6499_-_en_-_saal_2_-_201412271715_-_glitching_for_n00bs_-_exide.html#video)
@@ -129,12 +124,12 @@ TR-069
 
 
 
-###Flash Memory
+###<a name="flash">Flash Memory</a>
 [Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 
 
 
-###Internet of Things
+###<a name="iot">Internet of Things</a>
 [Smart Nest Thermostat A Smart Spy in Your Home](https://www.youtube.com/watch?v=UFQ9AYMee_Q)
 
 [A Primer on IoT Security Research](https://community.rapid7.com/community/infosec/blog/2015/03/10/iot-security-research-whats-it-take)
@@ -146,7 +141,7 @@ TR-069
 
 
 
-###General Tools(Software & Hardware)
+###<a name="gentools">General Tools(Software & Hardware)</a>
 
 [FCC ID Lookup](http://transition.fcc.gov/oet/ea/fccid/)
 * Lookup devices according to FCC ID
@@ -159,7 +154,7 @@ TR-069
 * JTAGulator is an open source hardware tool that assists in identifying OCD connections from test points, vias, or component pads on a target device.
 
 
-###General Hardware Hacking
+###<a name="generalhw">General Hardware Hacking</a>
 
 [Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
 
@@ -179,7 +174,7 @@ TR-069
 * Security through obscurity is unfortunately much more common than people think: many interfaces are built on the premise that since they are a "closed system" they can ignore standard security practices. This paper will demonstrate how parking meter smart cards implement their protocol and will point out some weaknesses in their design that open the doors to the system. It will also present schematics and code that you can use to perform these basic techniques for auditing almost any type of blackblox secure memory card. 
 
 
-###Miscellaneous
+###<a name="misc">Miscellaneous</a>
 
 [Project bdp](http://www.malcolmstagg.com/bdp-s390.html)
 * This is a project to modify the Sony Blu-ray BDP firmware. It started out with only the BDP-S390, but has branched out to include other players and a variety of goals, including removing Cinavia and obtaining Region-Free.
@@ -190,7 +185,7 @@ TR-069
 
 
 
-###PCI
+##1#<a name="pci">PCI</a>
 
 
 [Inception](https://github.com/carmaa/inception)
@@ -199,7 +194,7 @@ TR-069
 
 
 
-###Pentesting Drop Boxes
+###<a name="dropbox">Pentesting Drop Boxes</a>
 Minipwner
 
 
@@ -214,7 +209,7 @@ http://www.instructables.com/id/MyLittlePwny-Make-a-self-powered-pentesting-box-
 https://github.com/pwnieexpress/raspberry_pwn
 
 
-###Teensy/Rubbery Ducky Style Attacks/Etc
+###<a name="teensy">Teensy/Rubbery Ducky Style Attacks/Etc</a>
 
 
 [USB teensy attack set OSX](http://samy.pl/usbdriveby/)
@@ -228,13 +223,13 @@ https://github.com/pwnieexpress/raspberry_pwn
 
 
 
-###SD Cards
+###<a name="sdcard">SD Cards</a>
 [The Exploration and Exploitation of an SD Memory Card](https://www.youtube.com/watch?v=Tj-zI8Tl218)
 * This talk demonstrates a method for reverse engineering and loading code into the microcontroller within a SD memory card.
 
 
 
-###Tutorials/Walkthroughs/Write-ups
+###<a name="writeups">Tutorials/Walkthroughs/Write-ups</a>
 
 [Methodologies for Hacking Embedded Security Appliances](https://media.blackhat.com/us-13/US-13-Bathurst-Methodologies-for-Hacking-Embdded-Security-Appliances-Slides.pdf)
 
@@ -249,7 +244,7 @@ https://github.com/pwnieexpress/raspberry_pwn
 
 
 
-###USB
+###<a name="usb">USB</a>
 [USB in a Nutshell](http://www.beyondlogic.org/usbnutshell/usb1.shtml)
 * Great explanation of the USB standard in depth
 
@@ -290,7 +285,7 @@ BadUSB
 
 
 
-###Smartcards
+###<a name="smartcard"Smartcards</a>
 
 [An analysis of the vulnerabilities introduced with Java Card 3 Connected Edition](http://www.ma.rhul.ac.uk/static/techrep/2013/MA-2013-04.pdf)
 
@@ -298,7 +293,7 @@ BadUSB
 
 
 
-###Papers
+###<a name="papers">Papers</a>
 
 [Stealthy Dopant-Level Hardware Trojans](Hardware level trojans http://sharps.org/wp-content/uploads/BECKER-CHES.pdf)
 * Abstract: In this paper we propose an extremely stealthy approach for implement- ing hardware Trojans below the gate level, and we evaluate their impact on the security of the target device. Instead of adding additional cir- cuitry to the target design, we insert our hardware Trojans by changing the dopant polarity of existing transistors. Since the modi ed circuit ap- pears legitimate on all wiring layers (including all metal and polysilicon), our family of Trojans is resistant to most detection techniques, includ- ing ne-grain optical inspection and checking against \golden chips". We demonstrate the e ectiveness of our approach by inserting Trojans into two designs | a digital post-processing derived from Intel's cryp- tographically secure RNG design used in the Ivy Bridge processors and a side-channel resistant SBox implementation | and by exploring their detectability and their e ects on security.

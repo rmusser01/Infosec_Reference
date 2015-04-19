@@ -25,6 +25,9 @@
 [PenQ](http://www.qburst.com/products/PenQ)
 * PenQ is an open source, Linux-based penetration testing browser bundle we built over Mozilla Firefox. It comes pre-configured with security tools for spidering, advanced web searching, fingerprinting, anonymous browsing, web server scanning, fuzzing, report generating and more.
 
+[Active Defense Harbinger Distribution (ADHD)](sourceforge.net/projects/adhd/)
+* The Active Defense Harbinger Distribution (ADHD) is a Linux distro based on Ubuntu LTS. It comes with many tools aimed at active defense preinstalled and configured. The purpose of this distribution is to aid defenders by giving them tools to "strike back" at the bad guys.  ADHD has tools whose functions range from interfering with the attackers' reconnaissance to compromising the attackers' systems. Innocent bystanders will never notice anything out of the ordinary as the active defense mechanisms are triggered by malicious activity such as network scanning or connecting to restricted services.
+* [Blogpost going over it/setting it up - HolisticInfosec](http://holisticinfosec.blogspot.com/2013/10/c3cm-part-3-adhd-active-defense.html)
 
 
 

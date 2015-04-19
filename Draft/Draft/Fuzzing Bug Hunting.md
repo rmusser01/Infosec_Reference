@@ -2,12 +2,13 @@
 
 TOC
 
-Methodologies
-Write-ups
-Tools
-Papers
-Books
-Miscellaneous
+* [Techniques](#tech)
+[Methodologies](#method)
+[Write-ups](#writeup)
+[Tools](#tools)
+[Papers](#papers)
+[Books](#books)
+[Miscellaneous](#misc)
 
 
 [Quick explanation of fuzzing and various fuzzers](http://whoisjoe.info/?p=16)
@@ -15,9 +16,10 @@ Miscellaneous
 
 ###Cull
 
+[Mining for Bugs with Graph Database Queries [31c3]](https://www.youtube.com/watch?v=291hpUE5-3g)
+* [Starting out with Joern](http://tsyrklevich.net/2015/03/28/starting-out-with-joern/)
 
-
-
+[Implementing an USB Host Driver Fuzzer - Daniel Mende - Troopers14](https://www.youtube.com/watch?v=h777lF6xjs4)
 
 http://nullcon.net/website/archives/ppt/goa-15/analyzing-chrome-crash-reports-at-scale-by-abhishek-arya.pdf
 
@@ -29,7 +31,9 @@ http://nullcon.net/website/archives/ppt/goa-15/analyzing-chrome-crash-reports-at
 
 
 
-###Techniques
+###<a name="tech">Techniques</a>
+
+
 
 ####Taint Analysis
 
@@ -37,16 +41,16 @@ http://nullcon.net/website/archives/ppt/goa-15/analyzing-chrome-crash-reports-at
 
 
 
-#####Writeups
+###<a name="writeup">Writeups</a>
 
 [Taint analysis and pattern matching with Pin - Jonathan Salwan](http://shell-storm.org/blog/Taint-analysis-and-pattern-matching-with-Pin/)
 
+[Faster Fuzzing with Python](https://labs.mwrinfosecurity.com/blog/2014/12/10/faster-fuzzing-with-python/)
+
+[Walkthrough of setting up CERT’s FOE fuzzer and fuzzing irfanview](http://www.singlehop.com/blog/lets-fuzz-irfanview/)
 
 
-w
-
-#####Papers
-
+###<a name="papers">Papers</a>
 
 [Smart COM Fuzzing - Auditing IE Sandbox Bypass in COM Objects• Xiaoning Li • Haifei Li](https://0b3dcaf9-a-62cb3a1a-s-sites.googlegroups.com/site/zerodayresearch/Smart_COM_Fuzzing_Auditing_IE_Sandbox_Bypass_in_COM_Objects_final.pdf?attachauth=ANoY7crUl9OP1JfFa6KaCXsjVLjsNXDgUp1SmrZZAgGiPdp7MvUVnfg-FsuFvt7lfV5s3-kcK3K2uT05XMt6zUU_cP5WWQKxmKedjlQjvTZWdLyVZVcUMUrxUr5i68jpISP84HE0hihXOz7GtyWQG4gOtf-PXmcxmBf9KjYpVob08uR-62u2swlo396pKC0mSRrymia5PAakBFV9_0TbXGEhNVc101GIRdZ33C-j8DI6bIEYVlR1vG9jUKkfIcleu-rtjnJyDXD9FFBJwqxZsVOAUb9mcPvc4SZ04uefDvQwCDEg-C4I8eA%3D&attredirects=0)
 
@@ -58,35 +62,19 @@ w
 [A Critical Review of Dynamic Taint Analysis and Forward Symbolic Execution](https://asankhaya.github.io/pdf/ACriticalReviewofDynamicTaintAnalysisandForwardSymbolicExecution.pdf)
 * In this note , we describe a critical review of the paper titled “All you wanted to know about dynamics taint analysis and forward symbolic execution (but may have been afraid to ask)” [1] . We analyze the paper using Paul Elder critical thinking framework [2] . We sta rt with a summary of the paper and motivation behind the research work described in [1]. Then we evaluate the study with respect to the universal intellectual standards of [2]. We find that the paper provides a good survey of the existing techniques and algorithms used for security analysis. It explains them using the theoretical framework of operational runtime semantics. However in some places t he paper can do a better job in highlighting what new insights or heuristics can be gained from a runtime seman tics formulation. The paper fails to convince the reader how such an intricate understanding of operational semantics of a new generic language SimpIL helps in advancing the state of the art in dynamic taint analysis and forward symbolic execution. We also found that the Paul Elder critical thinking framework is a useful technique to reason about and analyze research papers.
 
-
+[Effective Bug Discovery](http://uninformed.org/?v=all&a=27&t=sumry)
+* Sophisticated methods are currently being developed and implemented for mitigating the risk of exploitable bugs. The process of researching and discovering vulnerabilities in modern code will require changes to accommodate the shift in vulnerability mitigations. Code coverage analysis implemented in conjunction with fuzz testing reveals faults within a binary file that would have otherwise remained undiscovered by either method alone. This paper suggests a research method for more effective runtime binary analysis using the aforementioned strategy. This study presents empirical evidence that despite the fact that bug detection will become increasingly difficult in the future, analysis techniques have an opportunity to evolve intelligently. 
 
 [TAJ: Effective Taint Analysis of Web Applications - Java Webapps](http://manu.sridharan.net/files/pldi153-tripp.pdf)
 * Taint analysis, a form of information-flow analysis, establishes whether values from untrusted methods and parameters may flow into security-sensitive operations. Taint analysis can detect many common vulnerabilities in Web applications, and so has attracted much attention from both the research community and industry. However, most static taint-analysis tools do not address criti- cal requirements for an industrial-strength tool. Specifically, an industrial-strength tool must scale to large industrial Web applica- tions, model essential Web-application code artifacts, and generate consumable reports for a wide range of attack vectors. We have designed and implemented a static Taint Analysis for Java (TAJ) that meets the requirements of industry-level applica- tions. TAJ can analyze applications of virtually any size, as it em- ploys a set of techniques designed to produce useful answers given limited time and space. TAJ addresses a wide variety of attack vec- tors, with techniques to handle reflective calls, flow through con- tainers, nested taint, and issues in generating useful reports. This paper provides a description of the algorithms comprising TAJ, evaluates TAJ against production-level benchmarks, and compares it with alternative solutions.
 
-
-
-
-###Writeups 
-[Faster Fuzzing with Python](https://labs.mwrinfosecurity.com/blog/2014/12/10/faster-fuzzing-with-python/)
-
-[Walkthrough of setting up CERT’s FOE fuzzer and fuzzing irfanview](http://www.singlehop.com/blog/lets-fuzz-irfanview/)
-
-
-
-###Papers
-
-[Effective Bug Discovery](http://uninformed.org/?v=all&a=27&t=sumry)
-* Sophisticated methods are currently being developed and implemented for mitigating the risk of exploitable bugs. The process of researching and discovering vulnerabilities in modern code will require changes to accommodate the shift in vulnerability mitigations. Code coverage analysis implemented in conjunction with fuzz testing reveals faults within a binary file that would have otherwise remained undiscovered by either method alone. This paper suggests a research method for more effective runtime binary analysis using the aforementioned strategy. This study presents empirical evidence that despite the fact that bug detection will become increasingly difficult in the future, analysis techniques have an opportunity to evolve intelligently. 
-
-
-
-###Books
+###<a name="books">Books</a>
 
 [*THE* Book on fuzzing](http://fuzzing.org/)
 
 
 
-###Tools
+###<a name="tools">Tools</a>
 
 
 [American Fuzzy Lop AFL](http://lcamtuf.coredump.cx/afl/)
@@ -128,7 +116,7 @@ Fuzzing with Peach tutorial
 
 
 
-###Misc
+###<a name="misc">Misc</a>
 
 [Good slides on fuzzing](https://courses.cs.washington.edu/courses/cse484/14au/slides/Section8.pdf)
 

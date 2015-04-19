@@ -3,39 +3,57 @@
 
 
 TOC
+
 Cull
-ASM
-C/C++
-Go
-Java
-.Net
-Perl
-Powershell
-Python
-
-
+* [General](#general)
+* [Source Code Analysis](#sca)
+* [ASM](#asm)
+* [C/C++](#c)
+* [Go](#go)
+* [Java](#java)
+* [.Net](#net)
+* [Perl](#perl)
+* [Powershell](#power)
+* [Python](#python)
+* [Ruby](#ruby)
+* [Papers](#papers)
 
 ###Cull
- 
+ [java-aes-crypto (Android class)](https://github.com/tozny/java-aes-crypto)
+* A simple Android class for encrypting & decrypting strings, aiming to avoid the classic mistakes that most such classes suffer from.
+
+[smalisca](https://github.com/dorneanu/smalisca)
+* Static Code Analysis for Smali files 
 
 
 
-###General
+
+
+
+
+
+
+
+
+
+
+
+###<a name="general">General</a>
 
 [Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
 
 [What a C programmer should know about memory](http://marek.vavrusa.com/c/memory/2015/02/20/memory/)
 
 
-###Source Code Analysis
+
+###<a name="sca">Source Code Analysis</a>
 
 
 [RIPS]http://rips-scanner.sourceforge.net/)
 * RIPS is a tool written in PHP to find vulnerabilities in PHP applications using static code analysis. By tokenizing and parsing all source code files RIPS is able to transform PHP source code into a program model and to detect sensitive sinks (potentially vulnerable functions) that can be tainted by user input (influenced by a malicious user) during the program flow. Besides the structured output of found vulnerabilities RIPS also offers an integrated code audit framework for further manual analysis.
 
 
-
-###Assembly x86/x64/ARM
+###<a name="asm">Assembly x86/x64/ARM</a>
 
 ####Learning
 [x86 Assembly Guide/Reference - Wikibooks](https://en.wikibooks.org/wiki/X86_Assembly)
@@ -61,9 +79,13 @@ http://opensecuritytraining.info/IntroX86.html
 [x86 Disassembly/Calling Conventions](https://en.wikibooks.org/wiki/X86_Disassembly/Calling_Conventions)
 [x86 Disassembly/Calling Convention Examples](https://en.wikibooks.org/wiki/X86_Disassembly/Calling_Convention_Examples)
 
+[sandpile.org](http://www.sandpile.org/) 
+* The world's leading source for technical x86 processor information.
+* Good source of reference docs/images for x86 ASM
+
 [Walkthrough: Creating and Using a Dynamic Link Library (C++)](https://msdn.microsoft.com/en-us/library/ms235636.aspx)
 
-
+[Intel x86 Assembler Instruction Set Opcode Table](http://sparksandflames.com/files/x86InstructionChart.html)
  
 
 
@@ -76,7 +98,7 @@ http://opensecuritytraining.info/IntroX86.html
 
 
 
-###C
+###<a name="c">C/C++</a>
 
 [Stanford C 101](http://cslibrary.stanford.edu/101/EssentialC.pdf)
 * Stanford CS Education Library: A 45 page summary of the C language. Explains all the common features and techniques for the C language. The coverage is pretty quick, so it is most appropriate for someone with some programming background who needs to see how C works. Topics include variables, int types, floating point types, promotion, truncation, operators, control structures (if, while, for), functions, value parameters, reference parameters, structs, pointers, arrays, the pre-processor, and the standard C library functions. (revised 4/2003) 
@@ -89,21 +111,21 @@ http://opensecuritytraining.info/IntroX86.html
 
 
 
-###Go
+###<a name="go">Go</a>
 [Go Programming Language](https://golang.org/)
 
 
 
 
 
-###Perl
+###<a name="perl"Perl</a>
 [Perl Programming Language[(https://www.perl.org/)
 
 [Introduction to Perl](http://www.perl.com/pub/2000/10/begperl1.html)
 
 
 
-###Powershell
+###<a name="power">Powershell</a>
 
 [Dirty Powershell Webserver](http://obscuresecurity.blogspot.com/2014/05/dirty-powershell-webserver.html)
 
@@ -124,7 +146,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 
 
-###Python
+###<a name="python">Python</a>
 
 [Obfuscating python](https://reverseengineering.stackexchange.com/questions/1943/what-are-the-techniques-and-tools-to-obfuscate-python-programs)
 
@@ -156,7 +178,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 * Construct is a powerful declarative parser (and builder) for binary data.  Instead of writing imperative code to parse a piece of data, you declaratively define a data structure that describes your data. As this data structure is not code, you can use it in one direction to parse data into Pythonic objects, and in the other direction, convert ("build") objects into binary data.
 
 
-###Ruby
+###<a name="ruby">Ruby</a>
 [Ruby - Tutorials Point](http://www.tutorialspoint.com/ruby/)
 [Ruby in 20 Minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
 
@@ -172,7 +194,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 
 
-###Papers
+###<a name="papers">Papers</a>
 
 [Mov is turing complete](http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)
 

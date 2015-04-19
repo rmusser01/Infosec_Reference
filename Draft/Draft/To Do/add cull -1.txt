@@ -1,53 +1,37 @@
-Something to pimp: https://sysforensics.org/2015/02/manage-the-dfir-information.html
-
-http://pr+ojectshellcode.com/?q=node/12
+Something to pimp: https://sysforensics.org/2015/02/manage-the-dfir-information.html)0
 
 
-[List of Linux/i386 system calls](http://asm.sourceforge.net/syscall.html)
-
-[Intel x86 Assembler Instruction Set Opcode Table](http://sparksandflames.com/files/x86InstructionChart.html)
-
-[sandpile.org](http://www.sandpile.org/) 
-* The world's leading source for technical x86 processor information.
-* Good source of reference docs/images for x86 ASM
+SYSINTERNALS down needs TOC/links
 
 
-[BoutiqueKit: Playing WarGames with Expensive Rootkits and Malware- Defcon 21](https://www.youtube.com/watch?v=gKUleWyfut0)
+ http://pr+ojectshellcode.com/?q=node/12
+
+http://fileformats.archiveteam.org/wiki/Encyclopedia_of_Graphics_File_Formats
 
 
-[Kernel booting process](https://github.com/0xAX/linux-insides/tree/master/Booting)
-* This chapter describes linux kernel booting process. You will see here a couple of posts which describes full cycle of the kernel loading:
-
-[Pip3line, the Swiss army knife of byte manipulation](https://nccgroup.github.io/pip3line/index.html) 
-* Pip3line is a raw bytes manipulation utility, able to apply well known and less well known transformations from anywhere to anywhere (almost).
+[](https://github.com/rrbranco/Troopers2015)
 
 
 
-[Client Side attacks using Powershell](http://www.labofapenetrationtester.com/2014/11/powershell-for-client-side-attacks.html)
 
 
-[I Hunt Sysadmins 2.0](http://www.slideshare.net/harmj0y/i-hunt-sys-admins-20)
-* It covers various ways to hunt for users in Windows domains, including using PowerView. 
+[Bug Hunting for the Man on the Street]()
+* Finding and discovering bugs has to be one of the most special times in a security researchers life (until you realise that crash you've been searching for and finally found is not actually exploitable). But the process of searching, discovery, understanding and of course some very much needed trial and error, many would say are rewarding and fulfilling themselves (I would of course, prefer to have my exploit cherry on the top)! So this talk will detail some of the aspects required to hunt down and find these coveted security vulnerabilities and bugs and some approaches that have proven to be invaluable (and some not so much). Of course bug hunting principle need to produce bugs so as the cherry there will be a virtual box exploit and Barracuda networks 0 day exploit discussed and demon##Simulations
 
 
-[Intel ME (Manageability engine) Huffman algorithm](http://io.smashthestack.org/me/)
+[Introduction to Hacking in Car Systems - Craig Smith - Troopers15](https://www.youtube.com/watch?v=WHDkf6kpE58)
 
+[Advanced PDF Tricks - Ange Albertini, Kurt Pfeifle - [TROOPERS15]](https://www.youtube.com/watch?v=k9g9jZdjRcE)
+
+
+Getting Started with WindDbg Series - OpenSecurity Research
+[Getting Started with WinDbg part 1](http://blog.opensecurityresearch.com/2013/12/getting-started-with-windbg-part-1.html)
 
 
 [discover - Kali Scripts](https://github.com/leebaird/discover)
 * For use with Kali Linux - custom bash scripts used to automate various portions of a pentest. 
 
-[CapLoader](http://www.netresec.com/?page=CapLoader) 
-*  CapLoader is a Windows tool designed to handle large amounts of captured network traffic. CapLoader performs indexing of PCAP/PcapNG files and visualizes their contents as a list of TCP and UDP flows. Users can select the flows of interest and quickly filter out those packets from the loaded PCAP files. Sending the selected flows/packets to a packet analyzer tool like Wireshark or NetworkMiner is then just a mouse click away. 
 
-
-
-[Abusing Active Directory in Post-Exploitation - Carlos Perez - Derbycon 2014](http://www.irongeek.com/i.php?page=videos/derbycon4/t105-abusing-active-directory-in-post-exploitation-carlos-perez)
-* Windows APIs are often a blackbox with poor documentation, taking input and spewing output with little visibility on what actually happens in the background. By reverse engineering (and abusing) some of these seemingly benign APIs, we can effectively manipulate Windows into performing stealthy custom attacks using previously unknown persistent and injection techniques. In this talk, we’ll get Windows to play with itself nonstop while revealing 0day persistence, previously unknown DLL injection techniques, and Windows API tips and tricks. To top it all off, a custom HTTP beaconing backdoor will be released leveraging the newly released persistence and injection techniques. So much Windows abuse, so little time.
-
-
-
-[ Bitsquatting: DNS Hijacking without exploitation](http://dinaburg.org/bitsquatting.html)
 
 [digbit](https://github.com/mnmnc/digbit/blob/master/README.md)
 * Automatic domain generation for BitSquatting
@@ -67,48 +51,21 @@ IPv6: Basic Attacks and Defences - Christopher Werny[TROOPERS15]
 [[TROOPERS15] Merike Kaeo - Deploying IPv6 Securely - Avoiding Mistakes Others Have Made](https://www.youtube.com/watch?v=rQg4y78xHf8)
 
 
-[smbexec](https://github.com/pentestgeek/smbexec)
-* A rapid psexec style attack with samba tools. Original Concept and Script by Brav0Hax & PureHate. Ported to ruby and modified by Smilingraccoon and Zeknox                   ; Codename - Machiavellian
 
-
-[Enumerating DNSSEC NSEC and NSEC3 Records](https://www.altsci.com/concepts/page.php?s=dnssec&p=1)
 
 http://www.legbacore.com/Research.html
-
-
-[smalisca](https://github.com/dorneanu/smalisca)
-* Static Code Analysis for Smali files 
-
-
-[Radare2 Cheat sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
-
 
 **
 Decode Shellcode from cli: cat shellcode | rasm2 -d -
 **
 
 
-
-[IRMA - Incident Response & Malware Analysis](http://irma.quarkslab.com/index.html)
-* IRMA intends to be an open-source platform designed to help identifying and analyzing malicious files.  However, today's defense is not only about learning about a file, but it is also getting a fine overview of the incident you dealt with: where / when a malicious file has been seen, who submitted a hash, where a hash has been noticed, which anti-virus detects it, ...  An important value with IRMA comes from you keep control over where goes / who gets your data. Once you install IRMA on your network, your data stays on your network.  Each submitted files is analyzed in various ways. For now, we focus our efforts on multiple anti-virus engines, but we are working on other "probes" (feel free to submit your own).
-
-
-[Highly Effective Joomla Backdoor with Small Profile](http://blog.sucuri.net/2014/02/highly-effective-joomla-backdoor-with-small-profile.html)
-
-[pixiewps](https://github.com/wiire/pixiewps)
-* Pixiewps is a tool written in C used to bruteforce offline the WPS pin exploiting the low or non-existing entropy of some APs (pixie dust attack). It is meant for educational purposes only. All credits for the research go to Dominique Bongard.
-
 cachecrew.com/fixing-an-infected-php-web-server/
-
-[commix](https://github.com/stasinopoulos/commix)
-* Automated All-in-One OS Command Injection and Exploitation Tool 
-
 
 
 https://www.reddit.com/r/lowlevel/comments/30toah/advices_for_a_bootloader/
 
-[sptoolkit-rebirth](https://github.com/simplephishingtoolkit/sptoolkit-rebirth)
-* sptoolkit hasn't been actively developed for two years. As it stands, it's a brilliant peice of software, and the original developers are pretty damn awesome for creating it. But we'd like to go further, and bring sptoolkit up to date. We've tried contacting the developers, but to no avail. We're taking matters into our own hands now.
+
 
 https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet
 
@@ -121,24 +78,9 @@ General Section?
 [The foundation is rotting and the basement is flooding: A deeper look at the implicit trust relationships in your organization](https://www.youtube.com/watch?v=nL64uj9Xm24)
 ********
 
-
-[ Evaluating the APT Armor - Matthias Luft, Felix Wilhelm](https://www.youtube.com/watch?v=3vh2s9Pui0E)
-
-
-
-
+[Evaluating the APT Armor - Matthias Luft, Felix Wilhelm](https://www.youtube.com/watch?v=3vh2s9Pui0E)
 
 [Combating the Insider Threat at the FBI: Real World Lessons Learned - BlackHat2013](https://www.youtube.com/watch?v=0stTS-G5FsE)
-
-
-[Adobe Sandbox: When the Broker is Broken - Peter Vreugdenhill](https://cansecwest.com/slides/2013/Adobe%20Sandbox.pdf)
-
-
-
-
-
-[shellcode tutorials]http://projectshellcode.com/?q=node/12
-
 
 
 
@@ -149,18 +91,7 @@ http://seclists.org/fulldisclosure/2015/Mar/67
 
 http://www.lexsi-leblog.com/cert-en/qemu-gdb-pe-imports.html
 
-
-
-https://labs.portcullis.co.uk/blog/ntfs-alternate-data-streams-for-pentesters-part-1/
-
-
-
 https://en.wikipedia.org/wiki/Homomorphic_encryption
-
-[CTF Scripts and PyInstaller (.py > .exe) [CTF Scripts and PyInstaller (.py > .exe) ](http://www.primalsecurity.net/ctf-scripts-and-pyinstaller-py-exe/)
-
-
-
 
 
 
@@ -172,40 +103,12 @@ MS Assessment Deployment Toolkit - Measure boot times among other things
 
 seclists.org/fulldisclosure/2015/Mar/90
 
-[Context-keyed Payload Encoding](http://uninformed.org/?v=all&a=42&t=sumry)
-* A common goal of payload encoders is to evade a third-party detection mechanism which is actively observing attack traffic somewhere along the route from an attacker to their target, filtering on commonly used payload instructions. The use of a payload encoder may be easily detected and blocked as well as opening up the opportunity for the payload to be decoded for further analysis. Even so-called keyed encoders utilize easily observable, recoverable, or guessable key values in their encoding algorithm, thus making decoding on-the-fly trivial once the encoding algorithm is identified. It is feasible that an active observer may make use of the inherent functionality of the decoder stub to decode the payload of a suspected exploit in order to inspect the contents of that payload and make a control decision about the network traffic. This paper presents a new method of keying an encoder which is based entirely on contextual information that is predictable or known about the target by the attacker and constructible or recoverable by the decoder stub when executed at the target. An active observer of the attack traffic however should be unable to decode the payload due to lack of the contextual keying information. 
+ 
 
 http://ytliu.info/blog/2014/05/31/blind-return-oriented-programming-brop-attack-yi/
 
 
-
-[Exploiting ShellShock getting a reverse shell](http://www.fantaghost.com/exploiting-shellshock-getting-reverse-shell)
-
-[Wireless Password Cracking With Cloud Clusters](http://www.commonexploits.com/wireless-password-cracking-with-cloud-clusters/)
-
-
-
-
-[Active Defense Harbinger Distribution (ADHD)](sourceforge.net/projects/adhd/)
-* The Active Defense Harbinger Distribution (ADHD) is a Linux distro based on Ubuntu LTS. It comes with many tools aimed at active defense preinstalled and configured. The purpose of this distribution is to aid defenders by giving them tools to "strike back" at the bad guys.  ADHD has tools whose functions range from interfering with the attackers' reconnaissance to compromising the attackers' systems. Innocent bystanders will never notice anything out of the ordinary as the active defense mechanisms are triggered by malicious activity such as network scanning or connecting to restricted services.
-* [Blogpost going over it/setting it up - HolisticInfosec](http://holisticinfosec.blogspot.com/2013/10/c3cm-part-3-adhd-active-defense.html)
-
-
-
-[SSLsplit - transparent and scalable SSL/TLS interception](https://www.roe.ch/SSLsplit)
-* SSLsplit is a tool for man-in-the-middle attacks against SSL/TLS encrypted network connections. Connections are transparently intercepted through a network address translation engine and redirected to SSLsplit. SSLsplit terminates SSL/TLS and initiates a new SSL/TLS connection to the original destination address, while logging all data transmitted. SSLsplit is intended to be useful for network forensics and penetration testing.  SSLsplit supports plain TCP, plain SSL, HTTP and HTTPS connections over both IPv4 and IPv6.
-
-
-[TCP Catcher](http://www.tcpcatcher.org/)
-* TcpCatcher is a free TCP, SOCKS, HTTP and HTTPS proxy monitor server software. 
-
-
-
-
-
-
-[DNSChef](https://thesprawl.org/projects/dnschef/)
-* DNSChef is a highly configurable DNS proxy for Penetration Testers and Malware Analysts. A DNS proxy (aka "Fake DNS") is a tool used for application network traffic analysis among other uses. For example, a DNS proxy can be used to fake requests for "badguy.com" to point to a local machine for termination or interception instead of a real host somewhere on the Internet. 
+ 
 
  
 
@@ -213,8 +116,7 @@ http://ytliu.info/blog/2014/05/31/blind-return-oriented-programming-brop-attack-
 * Generalizing information is a common method of reducing the quantity of data that must be considered during analysis. This fact has been plainly illustrated in relation to static data flow analysis where previous research has described algorithms that can be used to generalize data flow information. These generalizations have helped support more optimal data flow analysis in certain situations. In the same vein, this paper describes a process that can be employed to generalize and persist data flow information along multiple generalization tiers. Each generalization tier is meant to describe the data flow behaviors of a conceptual software element such as an instruction, a basic block, a procedure, a data type, and so on. This process makes use of algorithms described in previous literature to support the generalization of data flow information. To illustrate the usefulness of the generalization process, this paper also presents an algorithm that can be used to determine reachability at each generalization tier. The algorithm determines reachability starting from the least specific generalization tier and uses the set of reachable paths found to progressively qualify data flow information for each successive generalization tier. This helps to constrain the amount of data flow information that must be considered to a minimal subset. 
 
 
-[Anti-Virus Software Gone Wrong](http://uninformed.org/?v=all&a=21&t=sumry)
-* Anti-virus software is becoming more and more prevalent on end-user computers today. Many major computer vendors (such as Dell) bundle anti-virus software and other personal security suites in the default configuration of newly-sold computer systems. As a result, it is becoming increasingly important that anti-virus software be well-designed, secure by default, and interoperable with third-party applications. Software that is installed and running by default constitutes a prime target for attack and, as such, it is especially important that said software be designed with security and interoperability in mind. In particular, this article provides examples of issues found in well-known anti-virus products. These issues range from not properly validating input from an untrusted source (especially within the context of a kernel driver) to failing to conform to API contracts when hooking or implementing an intermediary between applications and the underlying APIs upon which they rely. For popular software, or software that is installed by default, errors of this sort can become a serious problem to both system stability and security. Beyond that, it can impact the ability of independent software vendors to deploy functioning software on end-user systems. 
+
 
 
 
@@ -228,17 +130,6 @@ http://store.atmel.com/PartDetail.aspx?q=p:10500060#tc:description
 
 
 [Evading IDS/IPS by Exploiting IPv6 Features - Antonios Atlasis, Rafael Schaefer](https://www.youtube.com/watch?v=avMeYIaU8DA&list=PL1eoQr97VfJni4_O1c3kBCCWwxu-6-lqy)
-
-
-[Malcom - Malware Communication Analyzer](https://github.com/tomchop/malcom)
-* Malcom is a tool designed to analyze a system's network communication using graphical representations of network traffic, and cross-reference them with known malware sources. This comes handy when analyzing how certain malware species try to communicate with the outside world.
-
-
-
-
-
-
-
 
 appleexaminer.com
 
@@ -264,8 +155,6 @@ http://www.slideshare.net/mubix/windows-attacks-at-is-the-new-black-26665607
 
 https://github.com/iagox86/dnscat2/tree/v0.01
 
-
-[Flash in 2015 - FireEye](https://www.fireeye.com/blog/threat-research/2015/03/flash_in_2015.html)
 
 http://opensecuritytraining.info/MalwareDynamicAnalysis_files/MalwareDynamicAnalysis02.pdf
 
@@ -310,10 +199,5 @@ Compare against sysmon service for scaling, setting it as service with scripting
 http://www.codeproject.com/Articles/36907/How-to-develop-your-own-Boot-Loader
 
 http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/
-
-
-https://github.com/Veil-Framework/Veil-PowerView
-
-
 
 https://addons.mozilla.org/en-US/firefox/addon/ssleuth/

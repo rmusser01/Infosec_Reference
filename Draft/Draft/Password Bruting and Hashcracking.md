@@ -1,23 +1,21 @@
 ##Password Bruting and Hashcracking
 
-
-
-
-{List of hash types/examples](https://docs.google.com/file/d/0B0TzWBRmg5pWWUtxRTFMbFRRZzA/edit)
-
-
+Sort
 
 
 TOC
-Cull
-Making Better Passwords
-General Cracking Tools
-App Specific Tools
-Write-ups/Guides
-Papers
-Miscellaneous
-Wordlists
 
+Cull
+*[General](#general)
+* [Making Better Passwords](#better)
+* [Cracking Passwords/Hashes](#crack)
+* [General Cracking Tools](#generalt)
+* [App Specific Tools](#appt)
+* [Write-ups/Guides](#writeup)
+* [Miscellaneous](#misc)
+* [Wordlists](#worldist)
+* [Wordlist Generation](#
+* [Papers](#papers)
 
 
 ###Cull
@@ -35,7 +33,14 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
 
 
-###Making Better Passwords
+###<a name="general">General</a>
+[Hashtag](http://www.smeegesec.com/2013/11/hashtag-password-hash-identification.html)
+* Password hash identification tool written in python
+
+[List of hash types/examples](https://docs.google.com/file/d/0B0TzWBRmg5pWWUtxRTFMbFRRZzA/edit)
+
+
+###<a name="better">Making Better Passwords</a>
 
 
 [Mnemonic Password Formulas](http://uninformed.org/?v=all&a=33&t=sumry)
@@ -45,7 +50,7 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
 
 
-###Cracking Passwords/Hashes
+###<a name="crack">Cracking Passwords/Hashes</a>
 
 
 [Introduction to Cracking Hashes](http://n0where.net/introduction-break-that-hash/)
@@ -55,7 +60,7 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
 
 
-####App Specific Tools(as in single application focus)
+###<a name="appt">App Specific Tools(as in single application focus)</a>
 
 [crackxls2003 0.4](https://github.com/GavinSmith0123/crackxls2003)
 * This program may be used to break the encryption on Microsoft Excel and Microsoft Word file which have been encrypted using the RC4 method, which uses a 40-bit-long key. This was the default encryption method in Word and Excel 97/2000/2002/2003. This program will not work on files encrypted using Word or Excel 2007 or later, or for versions 95 or earlier. It will not work if a file was encrypted with a non-default method. Additionally, documents created with the Windows system locale set to France may use a different encryption method.
@@ -105,7 +110,7 @@ Hashcat attacks
 * For each word in a dictionary, all possible combinations of upper- and lower-case variants are generated. 
 
 
-###Writeups
+###<a name="writeup">Writeups</a>
 
 [How to crack password hashes efficiently](http://www.dafthack.com/blog/howtocrackpasswordhashesefficiently)
 * Excellent writeup/methodology explanation
@@ -120,7 +125,7 @@ Hashcat attacks
 
 
 
-###Tools
+###<a name="generalt">Tools</a>
 
 [Patator](https://github.com/lanjelot/patator)
 * Patator was written out of frustration from using Hydra, Medusa, Ncrack, Metasploit modules and Nmap NSE scripts for password guessing attacks. I opted for a different approach in order to not create yet another brute-forcing tool and avoid repeating the same shortcomings. Patator is a multi-threaded tool written in Python, that strives to be more reliable and flexible than his fellow predecessors.
@@ -128,14 +133,9 @@ Hashcat attacks
 [Firefox password cracker](https://github.com/pradeep1288/ffpasscracker)
 
 
-####Hash Identification
-
-[Hashtag](http://www.smeegesec.com/2013/11/hashtag-password-hash-identification.html)
-* Password hash identification tool written in python
 
 
-
-####Wordlist Generation
+###<a name="wordlistgen">Wordlist Generation</a>
 
 [GitDigger](https://github.com/wick2o/gitdigger)
 * gitDigger: Creating realworld wordlists from github hosted data.
@@ -151,7 +151,7 @@ Hashcat attacks
 [Creating Wordlists with Crunch](http://adaywithtape.blogspot.com/2011/05/creating-wordlists-with-crunch-v30.html)
 
 
-###Wordlists
+###<a name="wordlists">Wordlists</a>
 [Crackstation’s Password Cracking Dictionary 1.5b words](https://crackstation.net/buy-crackstation-wordlist-password-cracking-dictionary.htm)
 * HIGHLY recommended
 
@@ -166,7 +166,7 @@ Hashcat attacks
 
 
 
-###Papers
+###<a name="papers">Papers</a>
 
 [Optimizing computation of Hash Algorithms as an attacker](https://hashcat.net/events/p13/js-ocohaaaa.pdf)
 

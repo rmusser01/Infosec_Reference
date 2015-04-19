@@ -18,22 +18,22 @@ TOC
 Intro
 Cull
 
-Frameworks
-Debuggers
-Decompilers
-Comparison Tools
-Tools
-	* Linux Specific Tools
-	* Windows Specific Tools
-	* Programming Libraries
-Anti-Reverse Engineering & Countermeasure
-Guides & Tutorials
-Hardware Reverse Engineering
-Protocol Analysis
-Write-ups
-Talks & Videos
-Papers
-Wikis & Useful Sites
+* [Frameworks](#frameworks)
+* [Debuggers](#dbg)
+* [Decompilers](#decom)
+* [Comparison Tools](#ct)
+* [Tools](#tools)
+	..* [Linux Specific Tools](#lt)
+	..* [Windows Specific Tools](#wt)
+	..* [Programming Libraries](#pl)
+* [Anti-Reverse Engineering & Countermeasure](#ar)
+* [Guides & Tutorials](#guides)
+* [Hardware Reverse Engineering](#hre)
+* [Protocol Analysis](#pa)
+* [Write-ups](#writeups)
+* [Talks & Videos](#talks)
+* [Papers](#papers)
+* [Wikis & Useful Sites](#wikis)
 
 
 
@@ -42,8 +42,11 @@ Wikis & Useful Sites
 ###Cull
 [SATCOM Terminals Hacking by Air, Sea, and Land - Black Hat USA 2014](https://www.youtube.com/watch?v=tRHDuT__GoM)
 
+[Pip3line, the Swiss army knife of byte manipulation](https://nccgroup.github.io/pip3line/index.html) 
+* Pip3line is a raw bytes manipulation utility, able to apply well known and less well known transformations from anywhere to anywhere (almost).
 
-
+[Instruments - OS X system analysis](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html)
+* Instruments is a performance-analysis and testing tool for dynamically tracing and profiling OS X and iOS code. It is a flexible and powerful tool that lets you track a process, collect data, and examine the collected data. In this way, Instruments helps you understand the behavior of both user apps and the operating system.
 
 Reversing iOS/OS X http://newosxbook.com/forum/viewforum.php?f=8
 
@@ -85,7 +88,7 @@ https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
 
 
 
-###General Research/Stuff
+###<a name="general">General Research/Stuff</a>
 [TAMPER (Tamper And Monitoring Protection Engineering Research)](http://www.cl.cam.ac.uk/research/security/tamper/)
 * In the TAMPER Lab, we study existing security products, document how they have been penetrated in the past, develop new attack techniques, and try to forecast how newly available technologies will make it easier to bypass hardware security mechanisms. We then develop and evaluate new countermeasures and assist industrial designers in staying ahead of the game, most of all by giving them an advanced understanding of which attack techniques are most dangerous. We are especially interested in protection systems for mass-market applications, and in forensic applications. 
 
@@ -98,7 +101,7 @@ https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
 
 
 
-###Tools
+###<a name="tools">Tools</a>
 [Frida](http://www.frida.re/docs/home/)
 * Inject JS into native apps
 
@@ -121,7 +124,7 @@ Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extr
 
 
 
-####Frameworks
+####<a name="frameworks"Frameworks</a>
 
 
 Radare2 - unix-like reverse engineering framework and commandline tools ](http://www.radare.org/y/?p=features)
@@ -138,7 +141,7 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 [Platform for Architecture-Neutral Dynamic Analysis](https://github.com/moyix/panda)
 
 
-####Debuggers
+####<a name="dbg">Debuggers</a>
 
 [OllyDbg](http://www.ollydbg.de/)
 * OllyDbg is a 32-bit assembler level analysing debugger for Microsoft® Windows®. Emphasis on binary code analysis makes it particularly useful in cases where source is unavailable.
@@ -172,7 +175,7 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 * xnippet is a tool that lets you load code snippets or isolated functions (no matter the operating system they came from), pass parameters to it in several formats (signed decimal, string, unsigned hexadecimal...), hook other functions called by the snippet and analyze the result. The tool is written in a way that will let me improve it in a future, defining new calling conventions and output argument pointers.
 
 
-####Decompilers & Disassemblers
+####<a name="decom">Decompilers & Disassemblers</a>
 
 [Procyon - Java Decompiler](https://bitbucket.org/mstrobel/procyon/wiki/Java%20Decompiler)
 
@@ -203,13 +206,13 @@ programming environment.
 
 
 
-####Comparison Tools
+####<a name="ct">Comparison Tools</a>s
 [binwally](https://github.com/bmaia/binwally)
 * Binary and Directory tree comparison tool using the Fuzzy Hashing concept (ssdeep)
 * [Using binwally - a directory tree diff tool](http://w00tsec.blogspot.com/2013/12/binwally-directory-tree-diff-tool-using.html)
 
 
-####Linux Specific Tools
+####<a name="lt">Linux Specific Tools</a>
 [readelf](https://sourceware.org/binutils/docs/binutils/readelf.html)
 * Unix Tool
 
@@ -222,7 +225,7 @@ programming environment.
 
 
 
-####Windows Specific Tools
+####<a name="wt">Windows Specific Tools</a>
 [PEview](http://wjradburn.com/software/)
 * PEview provides a quick and easy way to view the structure and content of 32-bit Portable Executable (PE) and Component Object File Format (COFF) files. This PE/COFF file viewer displays header, section, directory, import table, export table, and resource information within EXE, DLL, OBJ, LIB, DBG, and other file types.
 
@@ -243,9 +246,10 @@ programming environment.
 * Microsoft Message Analyzer is a new tool for capturing, displaying, and analyzing protocol messaging traffic and other system messages. Message Analyzer also enables you to import, aggregate, and analyze data from log and trace files. It is the successor to Microsoft Network Monitor 3.4 and a key component in the Protocol Engineering Framework (PEF) that was created by Microsoft for the improvement of protocol design, development, documentation, testing, and support. With Message Analyzer, you can choose to capture data live or load archived message collections from multiple data sources simultaneously.
 
 
-####Programming Libraries
 
 
+
+####<a name="pl">Programming Libraries</a>
 
 [PortEx](https://github.com/katjahahn/PortEx)
 * PortEx is a Java library for static malware analysis of Portable Executable files. Its focus is on PE malformation robustness, and anomaly detection. PortEx is written in Java and Scala, and targeted at Java applications.
@@ -262,7 +266,7 @@ programming environment.
 
 
 
-###Anti-Reverse Engineering Techniques & Countermeasures
+###<a name="are">Anti-Reverse Engineering Techniques & Countermeasures</a>
 
 [Anti-RE A collection of Anti-Reverse Engineering Techniques](http://pnx.tf/files/spring7_antire_plohmann_kannen.pdf)
 
@@ -278,16 +282,11 @@ programming environment.
 [OpenRCE Anti Reverse Engineering Techniques Database](http://www.openrce.org/reference_library/anti_reversing)
 
 [Windows Anti-Debugging Reference](http://www.symantec.com/connect/articles/windows-anti-debug-reference)
-* This paper classifies and presents several anti-debugging techniques used on Windows NT-based operating systems. Anti-debugging techniques are ways for a program to detect if it runs under control of a debugger. They are used by commercial executable protectors, packers and malicious software, to prevent or slow-down the process of reverse-engineering. We'll suppose the program is analyzed under a ring3 debugger, such as OllyDbg on Windows platforms. The paper is aimed towards reverse-engineers and malware analysts. Note that we will talk purely about generic anti-debugging and anti-tracing techniques. Specific debugger detection, such as window or processes enumeration, registry scanning, etc. will not be addressed here.
+* This paper classifies and presents several anti-debugging techniques used on Windows NT-based operating systems. Anti-debugging techniques are ways for a program to detect if it runs under control of a debugger. They are used by commercial executable protectors, packers and malicious software, to prevent or slow-down the process of reverse-engineering. We'll suppose the program is analyzed under a ring3 debugger, such as OllyDbg on Windows platforms. The paper is aimed towards reverse-engineers and malware analysts. Note that we will talk purely about generic anti-debugging and anti-tracing techniques. Specific debugger detection, such as window or processes enumeration, registry scanning, etc. will not be addressed here
+
 [Android Reverse Engineering Defenses](https://bluebox.com/wp-content/uploads/2013/05/AndroidREnDefenses201305.pdf)
 
-
-
-
-
-
-
-###Guides & Tutorials
+###<a name="guide">Guides & Tutorials</a>
 [How to RE data files?](https://www.reddit.com/r/ReverseEngineering/comments/l8ac0/how_to_re_data_files/)
 * Good read over.
 
@@ -296,7 +295,7 @@ programming environment.
 
 
 
-###Hardware Reverse Engineering
+###<a name="hre">Hardware Reverse Engineering</a>
 [Apple Lightning Reverse Engineered](http://ramtin-amin.fr/#tristar)
 
 [Reverse Engineering Intels Management Engine](http://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf) 
@@ -314,13 +313,13 @@ Hacking the Dropcam series
 
 [Reverse Engineering: Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 
-###Protocol Analysis & Related
+###<a name="pa">Protocol Analysis & Related</a>
 [Netzob](http://www.netzob.org/)
 * Originaly, the development of Netzob has been initiated to support security auditors and evaluators in their activities of modeling and simulating undocumented protocols. The tool has then been extended to allow smart fuzzing of unknown protocol. 
 * [Netzob Documentation](http://netzob.readthedocs.org/en/latest/overview/index.html)
  
 
-###Writeups
+###<a name="writeups">Writeups</a>
 
 [A Technical Analysis of CVE 2014-1776](http://blog.fortinet.com/post/a-technical-analysis-of-cve-2014-1776)
 
@@ -347,14 +346,14 @@ Part 6: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-bur
 Part 7: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-7/
 Part 8: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-8/
 
-###Talks & Videos
+###<a name="talks">Talks & Videos</a>
 
 [Cyber Necromancy - Reverse engineering dead protocols - Defcamp 2014 ](https://www.youtube.com/watch?v=G0v2FO2Ru0w&index=6&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
 
 [Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
 * "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
 
-###Papers
+###<a name="papers">Papers</a>
 
 [Byteweight: Learning to Recognize Functions in Binary Code](https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-bao.pdf)
 
@@ -394,7 +393,7 @@ informed, and determined reverser
 
 
 
-###Wikis & Useful Sites
+###<a name="wikis">Wikis & Useful Sites</a>
 [FCC ID Lookup](http://transition.fcc.gov/oet/ea/fccid/)
 * Lookup devices according to FCC ID
 
@@ -404,3 +403,4 @@ informed, and determined reverser
 
 
 
+*

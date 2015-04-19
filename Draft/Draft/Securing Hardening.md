@@ -1,54 +1,42 @@
 ##Securing & Hardening
 
 TOC
+
 cull
-General 
-Hardware Specific
-Low Level Software Focused
-Android Specific
-Linux Specific
-OS X Specific
-iOS Specific
-Windows Specific
+
+* [General](#general)
+* [Hardware Specific](#hwsp)
+* [Low Level Software Focused](#llsf)
+* [Android Specific](#as)
+* [Linux Specific](#ls)
+* [OS X Specific](#oss)
+* [iOS Specific](#ioss)
+* [Windows Specific](#ws)
 
 
 
 ###Cull
 
+[How to Efficiently Protect AD from Credential Theft & Compromise - Friedwart Kuhn - Troopers15](https://www.youtube.com/watch?v=I4mb0UciqlY)
+
+[Defending the Enterprise Against Network Infrastructure Attacks  - Paul Coggin - Troopers15](https://www.youtube.com/watch?v=K0X3RDf5XK8)
+
+
+[How to prevent eavesdropping on office VoIP calls - Dmitry Dessiatnikov - BSides SLC 2015](https://www.youtube.com/watch?v=gjDeseWATnM)
+
+###<a name="general">General</a>
 
 
 
 
 
 
+###<a name="hwsp">Hardware Specific/focused</a>
 
 
 
 
-
-
-###General 
-
-
-
-
-
-
-
-
-
-
-
-###Hardware Specific/focused
-
-
-
-
-
-
-
-
-###Low Level Software Focused(EFI/BIOS/Firmware etc…)
+###<a name="llsf">Low Level Software Focused(EFI/BIOS/Firmware etc…)</a>
 
 [CHIPSEC](https://github.com/chipsec/chipsec)
 * CHIPSEC is a framework for security assessment of hardware and firmware components on the platform, enabling security research, testing, and forensics. Intel originally created it to help internal teams find and fix vulnerabilities in platform hardware and firmware. We have released it as open source so that the external community can benefit from increased confidence in platform security.
@@ -57,29 +45,29 @@ Windows Specific
 
 
 
-###Android Specific Hardening & Securing
+###<a name="as">Android Specific Hardening & Securing</a>
 
 
 
 
-###Linux Specific Hardening & Securing
+###<a name="ls">Linux Specific Hardening & Securing</a>
 
 
 
 
 
 
-###OS X Specific Hardening & Securing
+###<a name="osxs">OS X Specific Hardening & Securing</a>
 
 
 
 
-###iOS Specific Hardening & Securing
+###<a name="ioss">iOS Specific Hardening & Securing</a>
 
 
 
 
-###Windows Specific Hardening & Securing
+###<a name="ws">Windows Specific Hardening & Securing</>
 
 
 

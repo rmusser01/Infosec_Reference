@@ -2,17 +2,18 @@
 
 For writing technical documentation.
 
-
-Writing
-Reports
-Meta
-Video Documentation
-
-
-
+#####TOC
+* [Collaboration Tools](#collab)
+* [Writing](#writing)
+* [Reports](#reports)
+* [Meta](#meta)
+* [Video Documentation](#video)
 
 
-###Penetration Testing &/ Collaboration Tools
+
+
+
+###<a name="collab">Penetration Testing &/ Collaboration Tools</a>
 
 [Kvasir](https://github.com/KvasirSecurity/Kvasir)
 * Kvasir is a vulnerability / penetration testing data management system designed to help mitigate the issues found when performing team-based assessments. Kvasir does this by homogenizing data sources into a pre-defined structure. Currently the following sources are supported:
@@ -30,7 +31,7 @@ Video Documentation
 
 
 
-##Writing
+###<a name="writing">Writing</a>
 
 Start with the first two links, and go from there. They’re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
 
@@ -52,7 +53,7 @@ Three parter from jacobian.org:
 [The 7 Rules for Writing World Class Technical Documentation](http://www.developer.com/tech/article.php/3848981/The-7-Rules-for-Writing-World-Class-Technical-Documentation.htm)
 
 
-###Writing Reports
+###<a name="reports">Writing Reports</a>
 
 
 
@@ -74,7 +75,7 @@ Three parter from jacobian.org:
 [Tips for Creating an Information Security Assessment Report Cheat Sheet](https://zeltser.com/security-assessment-report-cheat-sheet/)
 [SANS InfoSec Policy Templates](https://www.sans.org/security-resources/policies/)
 
-###Meta
+###<a name="meta">Meta</a>
 [What is Markdown?](http://daringfireball.net/projects/markdown/syntax)
 
 [Using markdown](https://guides.github.com/features/mastering-markdown/)
@@ -88,7 +89,7 @@ Three parter from jacobian.org:
 
 
 
-###Video Recording
+###<a name="video">Video Recording</a>
 
 [Open Broadcaster Software OBS](https://obsproject.com/)
 * Open Broadcaster Software is free and open source software for video recording and live streaming.

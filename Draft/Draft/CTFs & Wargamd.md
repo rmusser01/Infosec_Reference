@@ -1,16 +1,19 @@
 ##CTFs & Wargames
 
-TOC
-General
-Wargames
-Vulnerable VMs
-Challenge Sites
-One-off Challenges & Puzzles
+#####TOC
+[General](#general(
+[Wargames](#wargames)
+[Vulnerable VMs](#vulnvm)
+[Challenge Sites](#challenge)
+[One-off Challenges & Puzzles](#puzzle)
 
 
 
+Cull
+[CTF Scripts and PyInstaller (.py > .exe) [CTF Scripts and PyInstaller (.py > .exe) ](http://www.primalsecurity.net/ctf-scripts-and-pyinstaller-py-exe/)
 
-###General
+
+###<a name="general">General</a>
 [ctf-time](https://ctftime.org/)
 
 [Suggestions on Running a CTF](https://github.com/pwning/docs/blob/master/suggestions-for-running-a-ctf.markdown)
@@ -31,7 +34,7 @@ One-off Challenges & Puzzles
 
 
 
-###Wargames
+###<a name="wargames">Wargames</a>
 
 [Ringzer0 team CTF](http://ringzer0team.com/)
 Description: RingZer0 Team's online CTF offers you tons of challenges designed to test and improve your hacking skills thru hacking challenge. Register and get a flag for every challenges. 
@@ -58,7 +61,7 @@ Making/Hosting your own CTF
 
 
 
-###Vulnerable Virtual Machines
+###<a name="vulnvm">Vulnerable Virtual Machines</a>
 
 [Vulnhub](Https://www.Vulnhub.com)
 
@@ -69,7 +72,7 @@ Making/Hosting your own CTF
 
 
 
-###Challenge Sites
+###<a name="challenge">Challenge Sites</a>
 
 Wechall
 * An amazing site. Tracks, lists, scores, various challenge sites. If you’re looking for a challenge or two, and not a wargame, this is the site you want to hit up first.
@@ -96,7 +99,7 @@ Wechall
 
 
 
-###One-off Challenges and Puzzles
+###<a name="puzzle">One-off Challenges and Puzzles</a>
 
 
 [Forensics Contest](http://forensicscontest.com/)

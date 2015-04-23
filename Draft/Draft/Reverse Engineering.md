@@ -1,20 +1,7 @@
 
 
 ##Reverse Engineering
-
-Reverse Engineering - Wikipedia
-https://en.wikipedia.org/wiki/Reverse_engineering
-
-[High Level view of what Reverse Engineering is](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
-[What is Reverse Engineering?](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
-
-[Introduction to Reverse Engineering Software](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
-* This book is an attempt to provide an introduction to reverse engineering software under both Linux and Microsoft Windows©. Since reverse engineering is under legal fire, the authors figure the best response is to make the knowledge widespread. The idea is that since discussing specific reverse engineering feats is now illegal in many cases, we should then discuss general approaches, so that it is within every motivated user's ability to obtain information locked inside the black box. Furthermore, interoperability issues with closed-source proprietary systems are just plain annoying, and something needs to be done to educate more open source developers as to how to implement this functionality in their software. 
-
-[Starting from Scratch?](http://www.reddit.com/r/ReverseEngineering/comments/smf4u/reverser_wanting_to_develop_mathematically/)
-
-
-TOC
+TableOfContents
 Intro
 Cull
 
@@ -35,8 +22,16 @@ Cull
 * [Papers](#papers)
 * [Wikis & Useful Sites](#wikis)
 
+Reverse Engineering - Wikipedia
+https://en.wikipedia.org/wiki/Reverse_engineering
 
+[High Level view of what Reverse Engineering is](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
+[What is Reverse Engineering?](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
 
+[Introduction to Reverse Engineering Software](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
+* This book is an attempt to provide an introduction to reverse engineering software under both Linux and Microsoft WindowsÂ©. Since reverse engineering is under legal fire, the authors figure the best response is to make the knowledge widespread. The idea is that since discussing specific reverse engineering feats is now illegal in many cases, we should then discuss general approaches, so that it is within every motivated user's ability to obtain information locked inside the black box. Furthermore, interoperability issues with closed-source proprietary systems are just plain annoying, and something needs to be done to educate more open source developers as to how to implement this functionality in their software. 
+
+[Starting from Scratch?](http://www.reddit.com/r/ReverseEngineering/comments/smf4u/reverser_wanting_to_develop_mathematically/)
 
 
 ###Cull
@@ -144,7 +139,7 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 ####<a name="dbg">Debuggers</a>
 
 [OllyDbg](http://www.ollydbg.de/)
-* OllyDbg is a 32-bit assembler level analysing debugger for Microsoft® Windows®. Emphasis on binary code analysis makes it particularly useful in cases where source is unavailable.
+* OllyDbg is a 32-bit assembler level analysing debugger for MicrosoftÂ® WindowsÂ®. Emphasis on binary code analysis makes it particularly useful in cases where source is unavailable.
 * [OllyDbg Tricks for Exploit Development](http://resources.infosecinstitute.com/in-depth-seh-exploit-writing-tutorial-using-ollydbg/)
 
 [GDB - GNU Debugger](https://www.gnu.org/software/gdb/)
@@ -237,7 +232,7 @@ programming environment.
 * pestudio is a tool that performs the static analysis of 32-bit and 64-bit Windows executable files.  Malicious executable attempts to hide its malicious intents and to evade detection. In doing so, it generally presents anomalies and suspicious patterns. The goal of pestudio is to detect these anomalies, provide indicators and score the executable being analyzed. Since the executable file being analyzed is never started, you can inspect any unknown or malicious executable with no risk. 
 
 [DotPeek](http://www.jetbrains.com/decompiler/features/)
-* dotPeek is a .NET decompiler that has several handy features. I haven’t used it much, and don’t do much in .NET so I can’t say if its a good one, only that I’ve had success in using it.
+* dotPeek is a .NET decompiler that has several handy features. I havenÂ’t used it much, and donÂ’t do much in .NET so I canÂ’t say if its a good one, only that IÂ’ve had success in using it.
 
 [API Monitor](http://www.rohitab.com/apimonitor)
 * API Monitor is a free software that lets you monitor and control API calls made by applications and services. Its a powerful tool for seeing how applications and services work or for tracking down problems that you have in your own applications.
@@ -327,12 +322,12 @@ Hacking the Dropcam series
 * During the course of this paper the reader will be (re)introduced to many concepts and tools essential to understanding and controlling native Win32 applications through the eyes of Windows Debugger (WinDBG). Throughout, WinMine will be utilized as a vehicle to deliver and demonstrate the functionality provided by WinDBG and how this functionality can be harnessed to aid the reader in reverse engineering native Win32 applications. Topics covered include an introductory look at IA-32 assembly, register significance, memory protection, stack usage, various WinDBG commands, call stacks, endianness, and portions of the Windows API. Knowledge gleaned will be used to develop an application designed to reveal and/or remove bombs from the WinMine playing grid. 
 
 [Somfy Smoove Origin RTS Protocol](https://pushstack.wordpress.com/somfy-rts-protocol/)
-* This document describes the Somfy RTS protocol as used by the “Somfy Smoove Origin RTS”. Most information in this document is based on passive observation of the data send by the Smoove Origin RTS remote, and thus can be inaccurate or incorrect!
+* This document describes the Somfy RTS protocol as used by the Â“Somfy Smoove Origin RTSÂ”. Most information in this document is based on passive observation of the data send by the Smoove Origin RTS remote, and thus can be inaccurate or incorrect!
 
 [ Reverse Engineering The eQSO Protocol](https://gist.github.com/anonymous/7a9d713e61ba990a3a17)
 * Today I reverse engineered the eQSO protocol. If you didn't know, eQSO is a small program that allows radio amateurs to talk to each other online. Sadly this program isn't as popular as it used to be (Well, neither is the radio).
 
-[You can ring my bell! Adventures in sub-GHz RF land…](http://adamsblog.aperturelabs.com/2013/03/you-can-ring-my-bell-adventures-in-sub.html)
+[You can ring my bell! Adventures in sub-GHz RF landÂ…](http://adamsblog.aperturelabs.com/2013/03/you-can-ring-my-bell-adventures-in-sub.html)
 
 
 Reverse engineering walk htrouhg; guy rev eng alarm system from shelf to replay
@@ -351,7 +346,7 @@ Part 8: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-bur
 [Cyber Necromancy - Reverse engineering dead protocols - Defcamp 2014 ](https://www.youtube.com/watch?v=G0v2FO2Ru0w&index=6&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
 
 [Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
-* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
+* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, itÂ’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. WhatÂ’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
 
 ###<a name="papers">Papers</a>
 

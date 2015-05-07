@@ -24,6 +24,23 @@ Cull
 
 ###CULL
 
+[Guide to Basics of Wireless Networking](http://documentation.netgear.com/reference/fra/wireless/TOC.html)
+
+[Wi-Fi Protected Access 2 (WPA2) Overview](https://technet.microsoft.com/library/bb878054)
+
+[Establishing Wireless  Robust Security Networks:   A Guide to IEEE 802.11i - NIST](http://csrc.nist.gov/publications/nistpubs/800-97/SP800-97.pdf)
+
+
+[Brute forcing W i - Fi Protected Setup - Stefan Viehböck](https://sviehb.files.wordpress.com/2011/12/viehboeck_wps.pdf)
+* The original paper on WPS cracking.
+
+[IEEE 802.11 Tutorial](http://wow.eecs.berkeley.edu/ergen/docs/ieee.pdf)
+This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard. It describes IEEE 802.11 MAC Layer in detail and it briefly mentions IEEE 802.11a, IEEE 802.11b physical layer standard and IEEE 802.11e MAC layer standard
+
+[Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
+
+
+
 http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-macs-and-sdrs-robert-ghilduta
 
 
@@ -44,6 +61,8 @@ Scapy
 Bluez.org
 
 PyBT
+
+
 
 
 ###<a name="general">General</a>
@@ -72,6 +91,14 @@ PyBT
 
 
 ###<a name="cn">Cellular Networks</a>
+
+[gr-gsm](https://github.com/ptrkrysik/gr-gsm)
+* Gnuradio blocks and tools for receiving GSM transmissions
+
+[GSM MAP](http://gsmmap.org/#!/about) 
+* The GSM Security Map compares the protection capabilities of mobile networks.  Networks are rated in their protection capabilities relative to a reference network that implements all protection measures that have been seen “in the wild”. The reference is regularly updated to reflect new protection ideas becoming commercially available. Networks, therefore, have to improve continuously to maintain their score, just as hackers are continuously improving their capabilities.
+
+[Mobile self-defense - Karsten Nohl](https://www.youtube.com/watch?v=GeCkO0fWWqc)
 
 [Osmocom SIMtrace](http://bb.osmocom.org/trac/wiki/SIMtrace)
 * Osmocom SIMtrace is a software and hardware system for passively tracing SIM-ME communication between the SIM card and the mobile phone. 

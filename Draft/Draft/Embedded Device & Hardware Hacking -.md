@@ -64,11 +64,13 @@ http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html
 
 
 
-
+[Analyzing and Running binaries from Firmware Images - Part 1](http://w00tsec.blogspot.com.br/2013/09/analyzing-and-running-binaries-from.html)
 
 
 
 ###<a name="routers">Attacking Routers</a>
+
+[More on HNAP - What is it, How to Use it, How to Find it](https://isc.sans.edu/diary/More+on+HNAP+-+What+is+it%2C+How+to+Use+it%2C+How+to+Find+it/17648)
 
 TR-069
 

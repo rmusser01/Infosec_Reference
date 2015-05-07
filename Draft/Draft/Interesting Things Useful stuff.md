@@ -33,6 +33,13 @@ http://www.securitywizardry.com/radar.htm
 
 ###CULL
 
+
+
+
+[Creating A Kewl And Simple Cheating Platform On Android - DeepSec2014](http://www.securitytube.net/video/12547?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+SecurityTube+%28SecurityTube.Net%29)
+* 
+
+
 [Anti-Virus Software Gone Wrong](http://uninformed.org/?v=all&a=21&t=sumry)
 * Anti-virus software is becoming more and more prevalent on end-user computers today. Many major computer vendors (such as Dell) bundle anti-virus software and other personal security suites in the default configuration of newly-sold computer systems. As a result, it is becoming increasingly important that anti-virus software be well-designed, secure by default, and interoperable with third-party applications. Software that is installed and running by default constitutes a prime target for attack and, as such, it is especially important that said software be designed with security and interoperability in mind. In particular, this article provides examples of issues found in well-known anti-virus products. These issues range from not properly validating input from an untrusted source (especially within the context of a kernel driver) to failing to conform to API contracts when hooking or implementing an intermediary between applications and the underlying APIs upon which they rely. For popular software, or software that is installed by default, errors of this sort can become a serious problem to both system stability and security. Beyond that, it can impact the ability of independent software vendors to deploy functioning software on end-user systems. 
 
@@ -63,6 +70,8 @@ QR Code interesting
 http://datagenetics.com/blog/november12013/index.html
 
 ###Interesting Videos
+
+[Kim Jong-il and Me: How to Build a Cyber Army to Defeat the U.S. - Charlie MIller](https://www.youtube.com/watch?v=4up0yTGlpaU)
 
 [Just What The Doctor Ordered? - Scott Erven and Shawn Merdinger - DEF CON 22](https://www.youtube.com/watch?v=wTEMSBXtkAc)
 * This discussion will also highlight the fallout from security standards not being a requirement for medical device manufacturers, and our experience in identifying and reporting vulnerabilities. We will provide our insight into what needs to be done for healthcare organizations to respond to the new threat of cyber-attack against medical devices. We are working towards a future where cyber security issues in medical devices are a thing of the past. We will discuss the recent success and traction we have gained with healthcare organizations, federal agencies and device manufacturers in addressing these security issues. The train is now moving, so please join us to find out how you can get involved and make a difference by ensuring patient safety.

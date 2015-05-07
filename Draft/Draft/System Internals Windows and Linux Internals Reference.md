@@ -207,6 +207,9 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 [linux-insides](https://www.gitbook.com/book/0xax/linux-insides/details)
 * A series of posts about the linux kernel. The goal is simple - to share my modest knowledge about the internals of the linux kernel and help people who are interested in the linux kernel, and other low-level subject matter.
 
+[linux-internals](https://github.com/0xAX/linux-insides)
+* A series of posts about the linux kernel and its insides.  The goal is simple - to share my modest knowledge about the internals of the linux kernel and help people who are interested in the linux kernel, and other low-level subject matter.
+
 [Introduction to Linux - Machtelt Garrels](http://www.tldp.org/LDP/intro-linux/html/intro-linux.html)
 * Excellent doc covering every aspect of linux. Deserves at least 1 skim through.
 

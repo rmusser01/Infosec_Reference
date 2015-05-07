@@ -14,6 +14,8 @@ Writeups
 
 ###Cull
 
+[20 Ways Past Secure Boot - Job de Haas - Troopers14](https://www.youtube.com/watch?v=74SzIe9qiM8
+
 [Intel ME (Manageability engine) Huffman algorithm](http://io.smashthestack.org/me/)
 
 [CHIPSEC module that exploits UEFI boot script table vulnerability](https://github.com/Cr4sh/UEFI_boot_script_expl)

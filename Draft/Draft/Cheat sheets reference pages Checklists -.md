@@ -25,6 +25,10 @@ TOC
 
 CULL
 
+
+
+[Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
+
 [Radare2 Cheat sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
 
 [How to Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)

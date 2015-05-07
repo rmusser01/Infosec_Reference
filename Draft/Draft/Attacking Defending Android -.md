@@ -6,41 +6,25 @@
 ####TOC
 Cull
 [Intro](#Intro)
-
 [Android Internals](#AInternals)
-
 [Securing Android](#SecAnd)
-
 Android Apps
 
 [Vulnerabilities](#Vulns)
-
 [Exploits](#Exploits)
-
 [Device Analysis](#DAnalysis)
-
 [Application Analysis](#AppAnalysis)
-
 	* Dynamic Analysis
 	* Static Analysis
 	* Online APK Analyzers
-
 [Online APK Analyzers](#OnlineAPK)
-
 [Attack Platforms](#APlatforms)
-
 [Android Malware](#Malware)
-
 [Reverse Engineering Android](#RE)
-
 [Interesting Papers](#Papers)
-
 [Write-ups](#Write)
-
-[Educational Materials][#Education)
-
+[Educational Materialsl[#Education)
 [Books](#Books)
-
 [Other](#Other)
 
 
@@ -58,11 +42,21 @@ Android Apps
 
 ###Cull
 
+[AndBug - A Scriptable Android Debugger](https://github.com/swdunlop/AndBug)
+* AndBug is a debugger targeting the Android platform's Dalvik virtual machine intended for reverse engineers and developers. It uses the same interfaces as Android's Eclipse debugging plugin, the Java Debug Wire Protocol (JDWP) and Dalvik Debug Monitor (DDM) to permit users to hook Dalvik methods, examine process state, and even perform changes.
+
+[AndroChef](http://androiddecompiler.com/)
+* AndroChef Java Decompiler is Windows XP, Windows 2003, Windows Vista, Windows 7, Windows 8, 8.1 decompiler for Java that reconstructs the original source code from the compiled binary CLASS files. AndroChef Java Decompiler is able to decompile the most complex Java 6 applets and binaries, producing accurate source code.  AndroChef successfully decompiles obfuscated Java 6 and Java 7 .class and .jar files. Support Java language features like generics, enums and annotations. According to some studies, AndroChef Java Decompiler is able to decompile 98.04% of Java applications generated with traditional Java compilers- a very high recovery rate. It is simple but powerful tool that allows you to decompile Java and Dalvik bytecode (DEX, APK) into readable Java source. Easy to use.
+
+
 http://nelenkov.blogspot.com
 
 [elsim - Elements Similarities](https://code.google.com/p/elsim/wiki/Similarity#Diffing_of_applications)
 * Similarities/Differences of applications (aka rip-off indicator)
 * This tool detects and reports: the identical methods; the similar methods; the deleted methods; the new methods; the skipped methods. 
+
+[playdrone](https://github.com/nviennot/playdrone)
+* Google Play Crawler
 
 
 [hbootdbg](https://github.com/sogeti-esec-lab/hbootdbg/)
@@ -265,7 +259,7 @@ Android Resources (.arsc).
 [Flow Droid - Taint Analysis](http://sseblog.ec-spride.de/tools/flowdroid/)
 * FlowDroid is a context-, flow-, field-, object-sensitive and lifecycle-aware static taint analysis tool for Android applications. U
 * [Flow Droid Paper- FlowDroid: Precise Context, Flow, Field, Object-sensitive and Lifecycle-aware Taint Analysis for Android Apps](http://www.bodden.de/pubs/far+14flowdroid.pdf)
-* In this work we thus present F LOW D ROID , a novel and highly precise static taint analysis for Android applications. A precise model of AndroidÂ’s lifecycle allows the analysis to properly handle callbacks invoked by the Android framework, while context, flow, field and object-sensitivity allows the analysis to reduce the number of false alarms. Novel on-demand algorithms help F LOW D ROID maintain high efficiency and precision at the same time
+* In this work we thus present F LOW D ROID , a novel and highly precise static taint analysis for Android applications. A precise model of Android’s lifecycle allows the analysis to properly handle callbacks invoked by the Android framework, while context, flow, field and object-sensitivity allows the analysis to reduce the number of false alarms. Novel on-demand algorithms help F LOW D ROID maintain high efficiency and precision at the same time
 
 [dedex](https://github.com/mariokmk/dedex)
 * Is a command line tool for disassembling Android DEX files.
@@ -336,7 +330,7 @@ Android Resources (.arsc).
 [Android apk-tool](https://code.google.com/p/android-apktool/)
 * It is a tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications; it makes possible to debug smali code step by step. Also it makes working with app easier because of project-like files structure and automation of some repetitive tasks like building apk, etc. 
 
-[Reversing and Auditing AndroidÂ’s Proprietary bits](http://www.slideshare.net/joshjdrake/reversing-and-auditing-androids-proprietary-bits)
+[Reversing and Auditing Android’s Proprietary bits](http://www.slideshare.net/joshjdrake/reversing-and-auditing-androids-proprietary-bits)
 
 [Smali](https://code.google.com/p/smali/)
 * smali/baksmali is an assembler/disassembler for the dex format used by dalvik, Android's Java VM implementation. The syntax is loosely based on Jasmin's/dedexer's syntax, and supports the full functionality of the dex format (annotations, debug info, line info, etc.) 
@@ -355,7 +349,7 @@ APKinspector is a powerful GUI tool for analysts to analyze the Android applicat
 [Peeking into Your App without Actually Seeing It: UI State Inference and Novel Android Attacks](http://www.cs.ucr.edu/~zhiyunq/pub/sec14_android_activity_inference.pdf)
 * Abstract: The security of smartphone GUI frameworks remains an important yet under-scrutinized topic. In this paper, we report that on the Android system (and likely other OSes), a weaker form of GUI confidentiality can be breached in the form of UI state (not the pixels) by a background app without requiring any permissions. Our finding leads to a class of attacks which we name UI state inference attack.
 
-[List of important whitepapers](http://www.droidsec.org/wiki/#whitepapers)
+[List of important whitepapers](https://github.com/droidsec/droidsec.github.io/wiki/Android-Whitepapers)
 
 [Execute This! Analyzing Unsafe and Malicious Dynamic Code Loading in Android Applications](https://anonymous-proxy servers.net/paper/android-remote-code-execution.pdf)
 	
@@ -431,8 +425,8 @@ APKinspector is a powerful GUI tool for analysts to analyze the Android applicat
 
 
 [OWASP GoatDroid](https://www.owasp.org/index.php/Projects/OWASP_GoatDroid_Project)
-* Â“OWASP GoatDroid is a fully functional and self-contained training environment for educating developers and testers on Android security. GoatDroid requires minimal dependencies and is ideal for both Android beginners as well as more advanced users. 
-The project currently includes two applications: FourGoats, a location-based social network, and Herd Financial, a mobile banking application. There are also several feature that greatly simplify usage within a training environment or for absolute beginners who want a good introduction to working with the Android platform.Â”
+* “OWASP GoatDroid is a fully functional and self-contained training environment for educating developers and testers on Android security. GoatDroid requires minimal dependencies and is ideal for both Android beginners as well as more advanced users. 
+The project currently includes two applications: FourGoats, a location-based social network, and Herd Financial, a mobile banking application. There are also several feature that greatly simplify usage within a training environment or for absolute beginners who want a good introduction to working with the Android platform.”
 
 [Insecure Bank v2](https://github.com/dineshshetty/Android-InsecureBankv2)
 * This vulnerable Android application is named "InsecureBankv2" and is made for security enthusiasts and developers to learn the Android insecurities by testing this vulnerable application. Its back-end server component is written in python. The client component i.e. the Android InsecureBank.apk can be downloaded along with the source code. 

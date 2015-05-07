@@ -27,10 +27,16 @@ Cull
 
 
 
+[PHPMD - PHP Mess Detector](http://phpmd.org/about.html)  * What PHPMD does is: It takes a given PHP source code base and look for several potential problems within that source. These problems can be things like: Possible bugs; Suboptimal code; Overcomplicated expressions; Unused parameters, methods, properties.
+
+[PMD](http://pmd.sourceforge.net/)
+* PMD is a source code analyzer. It finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth. It supports Java, JavaScript, PLSQL, Apache Velocity, XML, XSL. 
+Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code in Java, C, C++, C#, PHP, Ruby, Fortran, JavaScript, PLSQL, Apache Velocity, Ruby, Scala, Objective C, Matlab, Python, Go. 
 
 
+[Learn_X_in_Y_Minutes](http://learnxinyminutes.com/)
 
-
+[Hyperpolyglot](http://hyperpolyglot.org/)
 
 
 

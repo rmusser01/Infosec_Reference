@@ -24,6 +24,7 @@ CULL
 
 
 
+
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 
 
@@ -65,6 +66,13 @@ Influence Without Authority
 
 ###<a name="talks">Presentations</a>:
 
+[Social Engineering Like In Movies -- Reality of awareness and manipulation - Dale Pearson- #days](https://www.youtube.com/watch?v=XUIWi5p0oFI)
+
+[Manipulating Human Minds: The Psychological Side of Social Engineering - Christina Camilleri - CrikeyCon](https://www.youtube.com/watch?v=8enkIWl79_4)
+
+[Psychological Tricks of the Social Engineer - William Tarkington - GrrCON2012](https://www.youtube.com/watch?v=bk-TK4MPs8s&index=10&list=PL_At9BlHdC-_764ciDVexbJL0hwsCzqLK)
+* While several Social Engineering talks and books focus on the techniques no one clearly explains why they work. Learn why the techniques are used and what impact they have on behavior. Discover aspects of human social interaction that can be leveraged to accomplish discrete and specific goals. Gain a firm understanding of the limitations of humans objective reasoning. Finally understand the social rules that are used to navigate within the social engineering construct.
+
 [Social Engineering: The Good, the Bad, and the Ugly -- Stephanie Carruthers ](https://www.youtube.com/watch?v=9wCrUOYQlCI&index=31&list=PL_At9BlHdC-_764ciDVexbJL0hwsCzqLK)
 
 [Deceiving the heavens to cross the sea Jayson E Street](https://www.youtube.com/watch?v=EzGwO5L9oq4&feature=player_embedded)
@@ -103,7 +111,8 @@ Influence Without Authority
 
 [Social Engineering, or "hacking people" - DefCamp 2014](https://www.youtube.com/watch?v=JAOTRgWdPTU&index=49&list=PL_At9BlHdC-_764ciDVexbJL0hwsCzqLK)
 
-
+[The Future of Social Engineering - Sharon Conheady - DeepSec2010](https://www.youtube.com/watch?v=aVIq9mdVHlc&index=11&list=PL_At9BlHdC-_764ciDVexbJL0hwsCzqLK)
+* Social engineering is hitting the headlines more than ever. As computer security becomes more sophisticated, hackers are combining their technical expertise with social engineering to gain access to IT infrastructures and critical information. In any security programme people are the weakest link. It can often be easier and quicker to target the end user than using technical hacking techniques. When you combine both social engineering and traditional hacking techniques, you have an extremely dangerous attack. So what's next on the social engineering agenda? What are the emerging trends and what social engineering techniques might we expect to see in the future? In this talk, I will give an overview of the types of social engineering attacks people have used throughout the ages, from tricks used by the classic conmen of the past to the phishing attacks that are at an all time high, and the proliferation of social networking and how useful this is to social engineers. I will describe some of the new social engineering techniques and trends that are emerging and discuss war stories from my experience of social engineering, describing techniques I have used to gain access to sensitive information
 
 [Disguise - Appearance Hacking](http://www.irongeek.com/i.php?page=videos/derbycon2/valerie-thomas-appearance-hacking-101-the-art-of-everyday-camouflage)
 * [Transcript](http://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are/transcript)

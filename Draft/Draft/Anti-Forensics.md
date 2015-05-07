@@ -6,6 +6,9 @@
 
 
 
+[CleanAfterMe](http://www.nirsoft.net/utils/clean_after_me.html)
+* CleanAfterMe allows you to easily clean files and Registry entries that are automatically created by the Windows operating system during your regular computer work. 
+With CleanAfterMe, you can clean the cookies/history/cache/passwords of Internet Explorer, the 'Recent' folder, the Registry entries that record the last opened files, the temporary folder of Windows, the event logs, the Recycle Bin, and more. 
 
 
 [Hiding Data in Hard-Drive's Service Areas](http://recover.co.il/SA-cover/SA-cover.pdf)

@@ -11,6 +11,9 @@
 
 Cull
 Stunnel
+
+
+
 iodine
 
 
@@ -32,6 +35,13 @@ Draft emails
 
 
 ###<a name="tools">Tools</a>
+
+[iodine](https://github.com/yarrick/iodine)
+* This is a piece of software that lets you tunnel IPv4 data through a DNS server. This can be usable in different situations where internet access is firewalled, but DNS queries are allowed.
+
+[dnscat2](https://github.com/iagox86/dnscat2)
+* Welcome to dnscat2, a DNS tunnel that WON'T make you sick and kill you!  This tool is designed to create a command-and-control (C&C) channel over the DNS protocol, which is an effective tunnel out of almost every network.
+
 [fraud-bridge](https://github.com/stealth/fraud-bridge) 
 * fraud-bridge allows to tunnel TCP connections through ICMP, ICMPv6, DNS via UDP or DNS via UDP6. Project, not stable
 

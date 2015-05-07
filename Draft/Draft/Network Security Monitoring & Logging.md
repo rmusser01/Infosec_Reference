@@ -16,7 +16,13 @@ Cull
 
 
 
-###Cull
+###Cull - Create incident Response section
+
+[Many ways of malware persistence (that you were always afraid to ask) ](http://jumpespjump.blogspot.com/2015/05/many-ways-of-malware-persistence-that.html)
+
+
+——
+
 
 [Malcom - Malware Communication Analyzer](https://github.com/tomchop/malcom)
 * Malcom is a tool designed to analyze a system's network communication using graphical representations of network traffic, and cross-reference them with known malware sources. This comes handy when analyzing how certain malware species try to communicate with the outside world.

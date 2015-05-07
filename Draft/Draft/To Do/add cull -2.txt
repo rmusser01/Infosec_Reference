@@ -1,5 +1,55 @@
 Something to pimp: https://sysforensics.org/2015/02/manage-the-dfir-information.html)0
 
+[Psychology of Security - Stefan Schumacher - Trooper14](https://www.youtube.com/watch?v=vZKAi4RAIvA)
+* In this talk I will introduce the Institute’s research programme about the Psychology of Security. We are going to research the psychological basics of IT security, including: How do people experience IT security? How are they motivated? How do they learn? Why do people tend to make the same mistakes again and again (Buffer Overflow, anyone?)? What can we do to prevent security incidents? Which curricula should be taught about IT security?
+
+Good source for internals section: http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx
+
+
+[Easy Ways To Bypass Anti-Virus Systems - Attila Marosi -Trooper14](https://www.youtube.com/watch?v=Sl1Sru3OwJ4)
+
+Defeating Sniffers and Intrustion Detection Systems - Horizon, 12/25/1998
+Armouring the ELF: Binary Encryption on the UNIX Platform - grugq, scut, 12/28/2001
+Runtime Process Infection - anonymous, 07/28/2002
+Polymorphic Shellcode Engine Using Spectrum Analysis - theo detristan et al, 08/13/2003
+Next-generation Runtime Binary Encryption using On-demand Function Extraction - Zeljko Vrba, 08/01/2005
+Stealth Hooking: Another Way to Subvert the Windows Kernel - mxatone, ivanlef0u, 04/11/2008
+Mystifying the Debugger for Ultimate Stealthness - halfdead, 04/11/2008
+Binary Mangling with Radare - pancake, 06/11/2009
+
+
+ 
+
+
+
+[Using ARM Inline Assembly and Naked Functions to fool Disassemblers](http://www.evilsocket.net/2015/05/02/using-inline-assembly-and-naked-functions-to-fool-disassemblers/#sthash.Gt6f7f7y.4pLres53.sfju)
+
+
+
+[PowerShell-AD-Recon](https://github.com/PyroTek3/PowerShell-AD-Recon)
+* AD PowerShell Recon Scripts
+
+[Hacking FinSpy - a Case Study - Atilla Marosi - Troopers15](https://www.youtube.com/watch?v=Mb4mfBi06K4)
+
+[Multiplexed Wired Attack Surfaces - Michael Ossmann & Kos - Toorcon15](https://www.youtube.com/watch?v=4QB79921Nlw)
+* Manufacturers of mobile devices often multiplex several wired interfaces onto a single connector. Some of these interfaces, probably intended for test and development, are still enabled when the devices ship. We'll show you how you can get a shell on a popular mobile phone via its USB port without using a USB connection and we will release an open source tool for exploring multiplexed wired interfaces.
+
+[Advanced PDF Tricks - Ange Albertini, Kurt Pfeifle - Troopers1](https://www.youtube.com/watch?v=k9g9jZdjRcE)
+* This session is NOT about analyzing exploits but about learning to manipulate PDF contents. Among others:hide/reveal information; remove/add watermark;  just suck less about the format. It's an extended session (2 hours) to leave the audience time to try by themselves actively. The slides' PDF is entirely hand-written to explain clearly each fact, so the presentation slides themselves will be the study materials.
+
+[Compromise-as-a-Service: Our PleAZURE.](https://www.troopers.de/events/troopers14/49_compromise-as-a-service_our_pleazure/)
+* This could be a comprehensive introduction about the ubiquity of virtualization, the essential role of the hypervisor, and how the security posture of the overall environment depends on it. However, we decided otherwise, as this is what everybody is interested in: We will describe the Hyper-V architecture in detail, provide a taxonomy of hypervisor exploits, and demonstrate how we found MS13-092 which had the potential to compromise the whole Azure environment. Live demo included!
+
+
+[The Three Billion Dollar App - Vladimir Wolstencroft -Troopers14](https://www.youtube.com/watch?v=5Duc-uUFzoU)
+* Talk about reverse engineering SnapChat and Wickr Messaging apps.
+
+[ SS7: Locate. Track. Manipulate. [31c3] by Tobias Engel (SnoopSnitch)](https://www.youtube.com/watch?v=lQ0I5tl0YLY)
+
+[SnoopSnitch](https://opensource.srlabs.de/projects/snoopsnitch)
+* SnoopSnitch is an Android app that collects and analyzes mobile radio data to make you aware of your mobile network security and to warn you about threats like fake base stations (IMSI catchers), user tracking and over-the-air updates. With SnoopSnitch you can use the data collected in the GSM Security Map at gsmmap.org and contribute your own data to GSM Map. This application currently only works on Android phones with a Qualcomm chipset and a stock Android ROM (or a suitable custom ROM with Qualcomm DIAG driver). It requires root priviliges to capture mobile network data.
+
+
 
 SYSINTERNALS down needs TOC/links
 
@@ -11,9 +61,10 @@ http://fileformats.archiveteam.org/wiki/Encyclopedia_of_Graphics_File_Formats
 
 [](https://github.com/rrbranco/Troopers2015)
 
+[Mobile self-defense - Karsten Nohl](https://www.youtube.com/watch?v=GeCkO0fWWqc)
 
 
-
+http://fileformats.archiveteam.org/wiki/PNG
 
 [Bug Hunting for the Man on the Street]()
 * Finding and discovering bugs has to be one of the most special times in a security researchers life (until you realise that crash you've been searching for and finally found is not actually exploitable). But the process of searching, discovery, understanding and of course some very much needed trial and error, many would say are rewarding and fulfilling themselves (I would of course, prefer to have my exploit cherry on the top)! So this talk will detail some of the aspects required to hunt down and find these coveted security vulnerabilities and bugs and some approaches that have proven to be invaluable (and some not so much). Of course bug hunting principle need to produce bugs so as the cherry there will be a virtual box exploit and Barracuda networks 0 day exploit discussed and demon##Simulations

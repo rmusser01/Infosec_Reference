@@ -35,6 +35,12 @@ http://www.exploit-db.com/papers/35425/
 
 ###Cull
 
+[DNS Dumpster](DNSdumpster.com is a FREE domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process.)
+
+[More on HNAP - What is it, How to Use it, How to Find it](https://isc.sans.edu/diary/More+on+HNAP+-+What+is+it%2C+How+to+Use+it%2C+How+to+Find+it/17648)
+
+[ms15-034.nse Script](https://github.com/pr4jwal/quick-scripts/blob/master/ms15-034.nse)
+
 [TCP Catcher](http://www.tcpcatcher.org/)
 * TcpCatcher is a free TCP, SOCKS, HTTP and HTTPS proxy monitor server software. 
 

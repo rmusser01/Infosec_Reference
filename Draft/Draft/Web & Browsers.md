@@ -53,6 +53,9 @@ Cul
 [SSLsplit - transparent and scalable SSL/TLS interception](https://www.roe.ch/SSLsplit)
 * SSLsplit is a tool for man-in-the-middle attacks against SSL/TLS encrypted network connections. Connections are transparently intercepted through a network address translation engine and redirected to SSLsplit. SSLsplit terminates SSL/TLS and initiates a new SSL/TLS connection to the original destination address, while logging all data transmitted. SSLsplit is intended to be useful for network forensics and penetration testing.  SSLsplit supports plain TCP, plain SSL, HTTP and HTTPS connections over both IPv4 and IPv6.
 
+[HardenFlash](https://github.com/HaifeiLi/HardenFlash)
+* Patching Flash binary to stop Flash exploits and zero-days
+
 [Exploiting ShellShock getting a reverse shell](http://www.fantaghost.com/exploiting-shellshock-getting-reverse-shell)
 
 [Highly Effective Joomla Backdoor with Small Profile](http://blog.sucuri.net/2014/02/highly-effective-joomla-backdoor-with-small-profile.html)

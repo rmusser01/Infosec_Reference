@@ -1,6 +1,9 @@
 ##Securing & Hardening
 
+For now should just look in the Folder.
+
 TOC
+
 
 cull
 
@@ -21,8 +24,28 @@ cull
 
 [Defending the Enterprise Against Network Infrastructure Attacks  - Paul Coggin - Troopers15](https://www.youtube.com/watch?v=K0X3RDf5XK8)
 
+[Kerberos Golden Ticket: Mitigating pass the ticket on Active Directory](http://cert.europa.eu/static/WhitePapers/CERT-EU-SWP_14_07_PassTheGolden_Ticket_v1_1.pdf)
 
 [How to prevent eavesdropping on office VoIP calls - Dmitry Dessiatnikov - BSides SLC 2015](https://www.youtube.com/watch?v=gjDeseWATnM)
+
+[Detecting Forged Kerberos Ticket (Golden Ticket & Silver Ticket) Use in Active Directory](http://adsecurity.org/?p=1515)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ###<a name="general">General</a>
 

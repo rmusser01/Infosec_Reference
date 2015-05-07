@@ -1,12 +1,25 @@
 
 
 ##Reverse Engineering
-TableOfContents
+
+Reverse Engineering - Wikipedia
+https://en.wikipedia.org/wiki/Reverse_engineering
+
+[High Level view of what Reverse Engineering is](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
+[What is Reverse Engineering?](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
+
+[Introduction to Reverse Engineering Software](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
+* This book is an attempt to provide an introduction to reverse engineering software under both Linux and Microsoft Windows©. Since reverse engineering is under legal fire, the authors figure the best response is to make the knowledge widespread. The idea is that since discussing specific reverse engineering feats is now illegal in many cases, we should then discuss general approaches, so that it is within every motivated user's ability to obtain information locked inside the black box. Furthermore, interoperability issues with closed-source proprietary systems are just plain annoying, and something needs to be done to educate more open source developers as to how to implement this functionality in their software. 
+
+[Starting from Scratch?](http://www.reddit.com/r/ReverseEngineering/comments/smf4u/reverser_wanting_to_develop_mathematically/)
+
+
+TOC
 Intro
 Cull
 
 * [Frameworks](#frameworks)
-* [Debuggers](#dbg)
+* [Debuggers & Related Techniques](#dbg)
 * [Decompilers](#decom)
 * [Comparison Tools](#ct)
 * [Tools](#tools)
@@ -22,63 +35,13 @@ Cull
 * [Papers](#papers)
 * [Wikis & Useful Sites](#wikis)
 
-Reverse Engineering - Wikipedia
-https://en.wikipedia.org/wiki/Reverse_engineering
 
-[High Level view of what Reverse Engineering is](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
-[What is Reverse Engineering?](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
 
-[Introduction to Reverse Engineering Software](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
-* This book is an attempt to provide an introduction to reverse engineering software under both Linux and Microsoft WindowsÂ©. Since reverse engineering is under legal fire, the authors figure the best response is to make the knowledge widespread. The idea is that since discussing specific reverse engineering feats is now illegal in many cases, we should then discuss general approaches, so that it is within every motivated user's ability to obtain information locked inside the black box. Furthermore, interoperability issues with closed-source proprietary systems are just plain annoying, and something needs to be done to educate more open source developers as to how to implement this functionality in their software. 
-
-[Starting from Scratch?](http://www.reddit.com/r/ReverseEngineering/comments/smf4u/reverser_wanting_to_develop_mathematically/)
 
 
 ###Cull
-[SATCOM Terminals Hacking by Air, Sea, and Land - Black Hat USA 2014](https://www.youtube.com/watch?v=tRHDuT__GoM)
-
-[Pip3line, the Swiss army knife of byte manipulation](https://nccgroup.github.io/pip3line/index.html) 
-* Pip3line is a raw bytes manipulation utility, able to apply well known and less well known transformations from anywhere to anywhere (almost).
-
-[Instruments - OS X system analysis](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html)
-* Instruments is a performance-analysis and testing tool for dynamically tracing and profiling OS X and iOS code. It is a flexible and powerful tool that lets you track a process, collect data, and examine the collected data. In this way, Instruments helps you understand the behavior of both user apps and the operating system.
-
-Reversing iOS/OS X http://newosxbook.com/forum/viewforum.php?f=8
-
-[Construct2](https://github.com/construct/construct)
-* Construct is a powerful declarative parser (and builder) for binary data.  Instead of writing imperative code to parse a piece of data, you declaratively define a data structure that describes your data. As this data structure is not code, you can use it in one direction to parse data into Pythonic objects, and in the other direction, convert ("build") objects into binary data.
-
-[binglide](https://github.com/wapiflapi/binglide)
-* binglide is a visual reverse engineering tool. It is designed to offer a quick overview of the different data types that are present in a file.
-
-
-[BARF-Project](https://github.com/programa-stic/barf-project)
-* BARF : A multiplatform open source Binary Analysis and Reverse engineering Framework 
-* Presentation: Barfing Gadgets - Ekoparty 2014](https://github.com/programa-stic/barf-project/raw/master/documentation/presentations/barfing-gadgets.ekoparty2014.es.pdf)
-
-
- 
-[Deviare2](https://github.com/nektra/deviare2)
-* Deviare is a professional hooking engine for instrumenting arbitrary Win32 functions, COM objects, and functions which symbols are located in program databases (PDBs). It can intercept unmanaged code in 32-bit and 64-bit applications. It is implemented as a COM component, so it can be integrated with all the programming languages which support COM, such as C/C++, VB, C#, Delphi, and Python.
-
-
-
-
-[Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
-
-[PE File Format Graphs](http://blog.dkbza.org/2012/08/pe-file-format-graphs.html?view=mosaic)
 
 https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
-
-
-[Bindead - static binary binary analysis tool](https://bitbucket.org/mihaila/bindead/wiki/Home)
-* Bindead is an analyzer for executable machine code. It features a disassembler that translates machine code bits into an assembler like language (RREIL) that in turn is then analyzed by the static analysis component using abstract interpretation. 
-
-[Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
-
-[BitBlaze](http://bitblaze.cs.berkeley.edu/)
-* The BitBlaze project aims to design and develop a powerful binary analysis platform and employ the platform in order to (1) analyze and develop novel COTS protection and diagnostic mechanisms and (2) analyze, understand, and develop defenses against malicious code. The BitBlaze project also strives to open new application areas of binary analysis, which provides sound and effective solutions to applications beyond software security and malicious code defense, such as protocol reverse engineering and fingerprint generation. 
- 
 
 
 
@@ -92,23 +55,32 @@ https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
 [Theorem prover, symbolic execution and practical reverse-engineering](https://doar-e.github.io/presentations/securityday2015/SecDay-Lille-2015-Axel-0vercl0k-Souchet.html#/)
 
 
-
+ [PE File Format Graphs](http://blog.dkbza.org/2012/08/pe-file-format-graphs.html?view=mosaic)
 
 
 
 ###<a name="tools">Tools</a>
+Will sort to static/dynamic/OS specific
+
 [Frida](http://www.frida.re/docs/home/)
 * Inject JS into native apps
+
+[Dependency Walker](http://www.dependencywalker.com/)
+*  Dependency Walker is a free utility that scans any 32-bit or 64-bit Windows module (exe, dll, ocx, sys, etc.) and builds a hierarchical tree diagram of all dependent modules. For each module found, it lists all the functions that are exported by that module, and which of those functions are actually being called by other modules. Another view displays the minimum set of required files, along with detailed information about each file including a full path to the file, base address, version numbers, machine type, debug information, and more.
 
 [Rdis](https://github.com/endeav0r/rdis)
 * Rdis is a Binary Analysis Tool for Linux.
 
 [Python RE tools list](http://pythonarsenal.erpscan.com/)
 
+[Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
+
+[Bindead - static binary binary analysis tool](https://bitbucket.org/mihaila/bindead/wiki/Home)
+* Bindead is an analyzer for executable machine code. It features a disassembler that translates machine code bits into an assembler like language (RREIL) that in turn is then analyzed by the static analysis component using abstract interpretation. 
+
 [Static binary analysis tool](https://github.com/bdcht/amoco)
 * Amoco is a python package dedicated to the (static) analysis of binaries.
 * Worth a check on the Github
-
 
 [Binwalk](https://github.com/devttys0/binwalk)
 Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
@@ -116,7 +88,33 @@ Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extr
 [Cryptoshark](https://github.com/frida/cryptoshark)
 * Interactive code tracer for reverse-engineering proprietary software 
 
+[Pip3line, the Swiss army knife of byte manipulation](https://nccgroup.github.io/pip3line/index.html) 
+* Pip3line is a raw bytes manipulation utility, able to apply well known and less well known transformations from anywhere to anywhere (almost).
 
+[Instruments - OS X system analysis](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html)
+* Instruments is a performance-analysis and testing tool for dynamically tracing and profiling OS X and iOS code. It is a flexible and powerful tool that lets you track a process, collect data, and examine the collected data. In this way, Instruments helps you understand the behavior of both user apps and the operating system.
+
+Reversing iOS/OS X http://newosxbook.com/forum/viewforum.php?f=8
+
+[Construct2](https://github.com/construct/construct)
+* Construct is a powerful declarative parser (and builder) for binary data.  Instead of writing imperative code to parse a piece of data, you declaratively define a data structure that describes your data. As this data structure is not code, you can use it in one direction to parse data into Pythonic objects, and in the other direction, convert ("build") objects into binary data.
+
+[Deviare2](https://github.com/nektra/deviare2)
+* Deviare is a professional hooking engine for instrumenting arbitrary Win32 functions, COM objects, and functions which symbols are located in program databases (PDBs). It can intercept unmanaged code in 32-bit and 64-bit applications. It is implemented as a COM component, so it can be integrated with all the programming languages which support COM, such as C/C++, VB, C#, Delphi, and Python.
+
+
+
+####Binary Visualization Tools
+[binglide](https://github.com/wapiflapi/binglide)
+* binglide is a visual reverse engineering tool. It is designed to offer a quick overview of the different data types that are present in a file. This tool does not know about any particular file format, everything is done using the same analysis working on the data. This means it works even if headers are missing or corrupted or if the file format is unknown.
+
+
+
+[binvis.io](http://binvis.io/#/)
+* visual analysis of binary files
+
+[cantor.dust](https://sites.google.com/site/xxcantorxdustxx/home)
+* a powerful, dynamic, interactive binary visualization tool
 
 
 ####<a name="frameworks"Frameworks</a>
@@ -135,11 +133,22 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 
 [Platform for Architecture-Neutral Dynamic Analysis](https://github.com/moyix/panda)
 
+[BitBlaze](http://bitblaze.cs.berkeley.edu/)
+* The BitBlaze project aims to design and develop a powerful binary analysis platform and employ the platform in order to (1) analyze and develop novel COTS protection and diagnostic mechanisms and (2) analyze, understand, and develop defenses against malicious code. The BitBlaze project also strives to open new application areas of binary analysis, which provides sound and effective solutions to applications beyond software security and malicious code defense, such as protocol reverse engineering and fingerprint generation. 
+
+[BARF-Project](https://github.com/programa-stic/barf-project)
+* BARF : A multiplatform open source Binary Analysis and Reverse engineering Framework 
+* Presentation: Barfing Gadgets - Ekoparty 2014](https://github.com/programa-stic/barf-project/raw/master/documentation/presentations/barfing-gadgets.ekoparty2014.es.pdf)
+
+
+
+
+
 
 ####<a name="dbg">Debuggers</a>
 
 [OllyDbg](http://www.ollydbg.de/)
-* OllyDbg is a 32-bit assembler level analysing debugger for MicrosoftÂ® WindowsÂ®. Emphasis on binary code analysis makes it particularly useful in cases where source is unavailable.
+* OllyDbg is a 32-bit assembler level analysing debugger for Microsoft® Windows®. Emphasis on binary code analysis makes it particularly useful in cases where source is unavailable.
 * [OllyDbg Tricks for Exploit Development](http://resources.infosecinstitute.com/in-depth-seh-exploit-writing-tutorial-using-ollydbg/)
 
 [GDB - GNU Debugger](https://www.gnu.org/software/gdb/)
@@ -169,6 +178,9 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 [xnippet](https://github.com/isislab/xnippet)
 * xnippet is a tool that lets you load code snippets or isolated functions (no matter the operating system they came from), pass parameters to it in several formats (signed decimal, string, unsigned hexadecimal...), hook other functions called by the snippet and analyze the result. The tool is written in a way that will let me improve it in a future, defining new calling conventions and output argument pointers.
 
+[HyperDbg](https://github.com/rmusser01/hyperdbg/)
+* HyperDbg is a kernel debugger that leverages hardware-assisted virtualization. More precisely, HyperDbg is based on a minimalistic hypervisor that is installed while the system runs. Compared to traditional kernel debuggers (e.g., WinDbg, SoftIce, Rasta R0 Debugger) HyperDbg is completely transparent to the kernel and can be used to debug kernel code without the need of serial (or USB) cables. For example, HyperDbg allows to single step the execution of the kernel, even when the kernel is executing exception and interrupt handlers. Compared to traditional virtual machine based debuggers (e.g., the VMware builtin debugger), HyperDbg does not require the kernel to be run as a guest of a virtual machine, although it is as powerful. 
+* [Paper](http://roberto.greyhats.it/pubs/ase10.pdf)
 
 ####<a name="decom">Decompilers & Disassemblers</a>
 
@@ -188,26 +200,24 @@ programming environment.
 [FLARE-Ida](https://github.com/fireeye/flare-ida)
 * This repository contains a collection of IDA Pro scripts and plugins used by the FireEye Labs Advanced Reverse Engineering (FLARE) team.
 
-
-
-
 [Hopper](http://www.hopperapp.com/)
 * Hopper is a reverse engineering tool for OS X and Linux, that lets you disassemble, decompile and debug your 32/64bits Intel Mac, Linux, Windows and iOS executables!
-* quote from a friend on irc: "IF u RLY like guis this is also a cheap option"
-
 
 [Reverse](https://github.com/joelpx/reverse)
 * Reverse engineering for x86 binaries (elf-format). Generate a more readable code (pseudo-C) with colored syntax. Warning, the project is still in development, use it at your own risks. This tool will try to disassemble one function (by default main). The address of the function, or its symbol, can be passed by argument.
 
 
-
 ####<a name="ct">Comparison Tools</a>s
+
 [binwally](https://github.com/bmaia/binwally)
 * Binary and Directory tree comparison tool using the Fuzzy Hashing concept (ssdeep)
 * [Using binwally - a directory tree diff tool](http://w00tsec.blogspot.com/2013/12/binwally-directory-tree-diff-tool-using.html)
 
 
+
+
 ####<a name="lt">Linux Specific Tools</a>
+
 [readelf](https://sourceware.org/binutils/docs/binutils/readelf.html)
 * Unix Tool
 
@@ -217,10 +227,8 @@ programming environment.
 [Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
 
 
-
-
-
 ####<a name="wt">Windows Specific Tools</a>
+
 [PEview](http://wjradburn.com/software/)
 * PEview provides a quick and easy way to view the structure and content of 32-bit Portable Executable (PE) and Component Object File Format (COFF) files. This PE/COFF file viewer displays header, section, directory, import table, export table, and resource information within EXE, DLL, OBJ, LIB, DBG, and other file types.
 
@@ -232,7 +240,7 @@ programming environment.
 * pestudio is a tool that performs the static analysis of 32-bit and 64-bit Windows executable files.  Malicious executable attempts to hide its malicious intents and to evade detection. In doing so, it generally presents anomalies and suspicious patterns. The goal of pestudio is to detect these anomalies, provide indicators and score the executable being analyzed. Since the executable file being analyzed is never started, you can inspect any unknown or malicious executable with no risk. 
 
 [DotPeek](http://www.jetbrains.com/decompiler/features/)
-* dotPeek is a .NET decompiler that has several handy features. I havenÂ’t used it much, and donÂ’t do much in .NET so I canÂ’t say if its a good one, only that IÂ’ve had success in using it.
+* dotPeek is a .NET decompiler that has several handy features. I haven’t used it much, and don’t do much in .NET so I can’t say if its a good one, only that I’ve had success in using it.
 
 [API Monitor](http://www.rohitab.com/apimonitor)
 * API Monitor is a free software that lets you monitor and control API calls made by applications and services. Its a powerful tool for seeing how applications and services work or for tracking down problems that you have in your own applications.
@@ -315,19 +323,17 @@ Hacking the Dropcam series
  
 
 ###<a name="writeups">Writeups</a>
-
-[A Technical Analysis of CVE 2014-1776](http://blog.fortinet.com/post/a-technical-analysis-of-cve-2014-1776)
-
+[Reverse engineering radio weather station](http://blog.atx.name/reverse-engineering-radio-weather-station/)
 [Introduction to Reverse Engineering Win32 Applications](http://uninformed.org/?v=all&a=7&t=sumry)
 * During the course of this paper the reader will be (re)introduced to many concepts and tools essential to understanding and controlling native Win32 applications through the eyes of Windows Debugger (WinDBG). Throughout, WinMine will be utilized as a vehicle to deliver and demonstrate the functionality provided by WinDBG and how this functionality can be harnessed to aid the reader in reverse engineering native Win32 applications. Topics covered include an introductory look at IA-32 assembly, register significance, memory protection, stack usage, various WinDBG commands, call stacks, endianness, and portions of the Windows API. Knowledge gleaned will be used to develop an application designed to reveal and/or remove bombs from the WinMine playing grid. 
 
 [Somfy Smoove Origin RTS Protocol](https://pushstack.wordpress.com/somfy-rts-protocol/)
-* This document describes the Somfy RTS protocol as used by the Â“Somfy Smoove Origin RTSÂ”. Most information in this document is based on passive observation of the data send by the Smoove Origin RTS remote, and thus can be inaccurate or incorrect!
+* This document describes the Somfy RTS protocol as used by the “Somfy Smoove Origin RTS”. Most information in this document is based on passive observation of the data send by the Smoove Origin RTS remote, and thus can be inaccurate or incorrect!
 
 [ Reverse Engineering The eQSO Protocol](https://gist.github.com/anonymous/7a9d713e61ba990a3a17)
 * Today I reverse engineered the eQSO protocol. If you didn't know, eQSO is a small program that allows radio amateurs to talk to each other online. Sadly this program isn't as popular as it used to be (Well, neither is the radio).
 
-[You can ring my bell! Adventures in sub-GHz RF landÂ…](http://adamsblog.aperturelabs.com/2013/03/you-can-ring-my-bell-adventures-in-sub.html)
+[You can ring my bell! Adventures in sub-GHz RF land…](http://adamsblog.aperturelabs.com/2013/03/you-can-ring-my-bell-adventures-in-sub.html)
 
 
 Reverse engineering walk htrouhg; guy rev eng alarm system from shelf to replay
@@ -346,7 +352,11 @@ Part 8: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-bur
 [Cyber Necromancy - Reverse engineering dead protocols - Defcamp 2014 ](https://www.youtube.com/watch?v=G0v2FO2Ru0w&index=6&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
 
 [Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
-* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, itÂ’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. WhatÂ’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
+* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
+
+[Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
+
+[SATCOM Terminals Hacking by Air, Sea, and Land - Black Hat USA 2014](https://www.youtube.com/watch?v=tRHDuT__GoM)
 
 ###<a name="papers">Papers</a>
 

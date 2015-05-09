@@ -1,12 +1,12 @@
-Steal Everything; Kill Everyone; Profit!
-j/k please don’t :3
+###Steal Everything; Kill Everyone; Profit!
+#####j/k please donâ€™t :3
 
-
+1
 [Too Many Cooks; Exploiting the Internet of Tr-069](http://mis.fortunecook.ie/) 
 
 [Ever wanted to scan the internet in a few hours?](http://blog.erratasec.com/2013/10/faq-from-where-can-i-scan-internet.html)
 
-[The Eavesdropper’s Dillemma](http://www.crypto.com/papers/internet-tap.pdf)
+[The Eavesdropperâ€™s Dillemma](http://www.crypto.com/papers/internet-tap.pdf)
 
 Coding Malware for fun and no profit
  * [Git Page](https://github.com/MalwareTech/TinyXPB)
@@ -39,7 +39,7 @@ Coding Malware for fun and no profit
 
 
 [Weapons of Mass Distraction](http://conference.hitb.org/hitbsecconf2014kul/materials/D2T1%20-%20Haroon%20Meer%20Azhar%20Desai%20and%20Marco%20Slaviero%20-%20Weapons%20of%20Mass%20Distraction.pdf)
- * In this talk, we aim to briefly cover the background of sock puppets (and related attacks) before moving on to real world demonstrations & “attacks“. Rigging polls, abusing Twitter, causing Reddit riots & targeting popular news organisations are some of the (many) attacks covered. In all these cases we discuss what we tried, what worked, what didn’t and what the implications are of the attacks. Where possible we will cover defences and solutions.
+ * In this talk, we aim to briefly cover the background of sock puppets (and related attacks) before moving on to real world demonstrations & â€œattacksâ€œ. Rigging polls, abusing Twitter, causing Reddit riots & targeting popular news organisations are some of the (many) attacks covered. In all these cases we discuss what we tried, what worked, what didnâ€™t and what the implications are of the attacks. Where possible we will cover defences and solutions.
 
 
 

@@ -33,11 +33,11 @@ For writing technical documentation.
 
 ###<a name="writing">Writing</a>
 
-Start with the first two links, and go from there. They’re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
+Start with the first two links, and go from there. Theyâ€™re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
 
 
 [A beginners guide to writing documentation](http://docs.writethedocs.org/writing/beginners-guide-to-docs/)
-[Teach, Don’t Tell](http://stevelosh.com/blog/2013/09/teach-dont-tell/)
+[Teach, Donâ€™t Tell](http://stevelosh.com/blog/2013/09/teach-dont-tell/)
 
 Other Materials:
 
@@ -64,7 +64,7 @@ Three parter from jacobian.org:
 
 [Writing a Penetration Testing Report by SANS](https://www.sans.org/reading-room/whitepapers/bestprac/writing-penetration-testing-report-33343)
 
-[Excellent blog post breaking down the various parts, a must read](http://wwwwebsecuritywatch.com/the-penetration-testing-report/)
+[Excellent blog post breaking down the various parts, a must read](http://www.websecuritywatch.com/the-penetration-testing-report/)
 
 [Report Template from vulnerabilityassessment.co.uk](http://www.vulnerabilityassessment.co.uk/report%20template.html)
 

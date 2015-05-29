@@ -1,6 +1,5 @@
 ###Steal Everything; Kill Everyone; Profit!
-#####j/k please don’t.   
-:3
+#####j/k please don’t.   :3
 
 
 [Too Many Cooks; Exploiting the Internet of Tr-069](http://mis.fortunecook.ie/) 

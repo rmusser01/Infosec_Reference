@@ -16,7 +16,7 @@ Writeups
 
 [Exploiting UEFI boot script table vulnerability](http://blog.cr4.sh/2015/02/exploiting-uefi-boot-script-table.html)
 
-[20 Ways Past Secure Boot - Job de Haas - Troopers14](https://www.youtube.com/watch?v=74SzIe9qiM8
+[20 Ways Past Secure Boot - Job de Haas - Troopers14](https://www.youtube.com/watch?v=74SzIe9qiM8)
 
 [Intel ME (Manageability engine) Huffman algorithm](http://io.smashthestack.org/me/)
 

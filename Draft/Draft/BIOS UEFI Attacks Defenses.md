@@ -14,6 +14,8 @@ Writeups
 
 ###Cull
 
+[Exploiting UEFI boot script table vulnerability](http://blog.cr4.sh/2015/02/exploiting-uefi-boot-script-table.html)
+
 [20 Ways Past Secure Boot - Job de Haas - Troopers14](https://www.youtube.com/watch?v=74SzIe9qiM8
 
 [Intel ME (Manageability engine) Huffman algorithm](http://io.smashthestack.org/me/)
@@ -26,7 +28,7 @@ Writeups
 
 
 [Debug Agent Based UEFI Debugging](https://software.intel.com/en-us/articles/xdb-agent-based-uefi-debug)
-* The IntelÆ System Debugger now supports non-JTAG based debug of UEFI BIOS, this requires the use of a target-side debug agent and a USB or serial connection to the debug agent.  This article takes you through the steps necessary and the the debug methodology used bey the IntelÆ System Debugger to use this method to supplement the pure JTAG based UEFI debug method it also supports
+* The Intel¬Æ System Debugger now supports non-JTAG based debug of UEFI BIOS, this requires the use of a target-side debug agent and a USB or serial connection to the debug agent.  This article takes you through the steps necessary and the the debug methodology used bey the Intel¬Æ System Debugger to use this method to supplement the pure JTAG based UEFI debug method it also supports
 
 [Official UEFI Site - Specs](http://www.uefi.org/specsandtesttools)
 
@@ -38,8 +40,8 @@ Writeups
 [Extensible Firmware Interface (EFI) and Unified EFI (UEFI)](http://www.intel.com/content/www/us/en/architecture-and-technology/unified-extensible-firmware-interface/efi-homepage-general-technology.html)
 
 
-[Windows UEFI startup ñ A technical overview](http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/)
-* Through this analysis paper weíll give a look at Windows 8 (and 8.1) UEFI startup mechanisms and weíll try to understand their relationship with the underlying hardware platform.
+[Windows UEFI startup ‚Äì A technical overview](http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/)
+* Through this analysis paper we‚Äôll give a look at Windows 8 (and 8.1) UEFI startup mechanisms and we‚Äôll try to understand their relationship with the underlying hardware platform.
 
 
 http://www.legbacore.com/Research.html
@@ -99,7 +101,7 @@ to detect high hardware-induced latencies within the system. It was originally
 written for use in the RT kernel, but has wider applications.
 
 
-[Attacking Intel Æ Trusted Execution Technology Rafal Wojtczuk and Joanna Rutkowska](https://www.blackhat.com/presentations/bh-dc-09/Wojtczuk_Rutkowska/BlackHat-DC-09-Rutkowska-Attacking-Intel-TXT-slides.pdf)
+[Attacking Intel ¬Æ Trusted Execution Technology Rafal Wojtczuk and Joanna Rutkowska](https://www.blackhat.com/presentations/bh-dc-09/Wojtczuk_Rutkowska/BlackHat-DC-09-Rutkowska-Attacking-Intel-TXT-slides.pdf)
 
 
 
@@ -118,7 +120,7 @@ http://forums.mydigitallife.info/forums/25-BIOS-Mods
 [Exploiting UEFI boot script table vulnerability](http://blog.cr4.sh/2015/02/exploiting-uefi-boot-script-table.html)
 
 [Attacking UEFI Boot Script](https://frab.cccv.de/system/attachments/2566/original/venamis_whitepaper.pdf)
-* AbstractóUEFI Boot Script is a data structure interpreted by UEFI firmware during S3 resume. We show that on many systems, an attacker with ring0 privileges can alter this data structure. As a result, by forcing S3 suspend/resume cycle, an attacker can run arbitrary code on a platform that is not yet fully locked. The consequences include ability to overwrite the flash storage and take control over SMM.
+* Abstract‚ÄîUEFI Boot Script is a data structure interpreted by UEFI firmware during S3 resume. We show that on many systems, an attacker with ring0 privileges can alter this data structure. As a result, by forcing S3 suspend/resume cycle, an attacker can run arbitrary code on a platform that is not yet fully locked. The consequences include ability to overwrite the flash storage and take control over SMM.
 
 
 [BIOS Chronomancy: Fixing the Core Root of Trust for Measurement - BlackHat 2013](https://www.youtube.com/watch?v=NbYZ4UCN9GY)
@@ -132,7 +134,7 @@ http://forums.mydigitallife.info/forums/25-BIOS-Mods
 * The UEFI firmware parser is a simple module and set of scripts for parsing, extracting, and recreating UEFI firmware volumes. This includes parsing modules for BIOS, OptionROM, Intel ME and other formats too. Please use the example scripts for parsing tutorials.
 
 
-Professorís page:
+Professor‚Äôs page:
 http://www.cl.cam.ac.uk/~sps32/
 
 Grab links for his papers
@@ -148,7 +150,7 @@ Grab links for his papers
 
 [Attackin the TPM part 2](https://www.youtube.com/watch?v=h-hohCfo4LA)
 
-[Attacking ìsecureî chips](https://www.youtube.com/watch?v=w7PT0nrK2BE)
+[Attacking ‚Äúsecure‚Äù chips](https://www.youtube.com/watch?v=w7PT0nrK2BE)
 
 
 

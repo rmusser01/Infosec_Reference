@@ -1,7 +1,7 @@
 ###Steal Everything; Kill Everyone; Profit!
-#####j/k please don’t :3
+#####j/k please don’t.    :3
 
-1
+
 [Too Many Cooks; Exploiting the Internet of Tr-069](http://mis.fortunecook.ie/) 
 
 [Ever wanted to scan the internet in a few hours?](http://blog.erratasec.com/2013/10/faq-from-where-can-i-scan-internet.html)

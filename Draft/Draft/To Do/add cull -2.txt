@@ -1,12 +1,388 @@
-Something to pimp: https://sysforensics.org/2015/02/manage-the-dfir-information.html)0
+Something to pimp: https://sysforensics.org/2015/02/manage-the-should be the correct markdown syntax to jump to the anchor point named pookie. 
+To insert an anchor point of that name use HTML: 
+<a name="pookie"></a>
 
-[Psychology of Security - Stefan Schumacher - Trooper14](https://www.youtube.com/watch?v=vZKAi4RAIvA)
-* In this talk I will introduce the Institute’s research programme about the Psychology of Security. We are going to research the psychological basics of IT security, including: How do people experience IT security? How are they motivated? How do they learn? Why do people tend to make the same mistakes again and again (Buffer Overflow, anyone?)? What can we do to prevent security incidents? Which curricula should be taught about IT security?
+| **honggfuzz** - A general-purpose, easy-to-use fuzzer with interesting analysis options. Supports feedback-driven fuzzing based on code coverage | https://github.com/google/honggfuzz
+
+| **Muts Bypassing AV in Vista/Pissing all over your AV** presentation, listed here as it was a bitch finding a live copy | https://web.archive.org/web/20130514172102/http://www.shmoocon.org/2008/videos/Backtrack%20Demo.mp4
+
+blogs.technet.com/b/markrussinovich/archive/2005/08/17/unkillable-processes.aspx
+https://github.com/google/honggfuzz
+
+http://faydoc.tripod.com/cpu/index_a.htm
+[HORNET: High-speed Onion Routing at the Network Layer](http://arxiv.org/pdf/1507.05724v1.pdf)
+
+http://fabiensanglard.net/reverse_engineering_strike_commander/index.php
+
+
+| **Phones and Privacy for Consumers** - Matt Hoy (mattrix) and David Khudaverdyan (deltaflyer) | http://www.irongeek.com/i.php?page=videos/grrcon2015/submerssion-therapy05-phones-and-privacy-for-consumers-matt-hoy-mattrix-and-david-khudaverdyan-deltaflyer
+
+| **Security of RFID Protocols – A Case Study** | 
+In the context of Dolev-Yao style analysis of security proto cols, we investigate the security claims of a pro- posed strong-security RFID authentication protocol. We ex hibit a flaw which has gone unnoticed in RFID protocol literature and present the resulting attacks on au thentication, untraceability, and desynchroniza- tion resistance.  We analyze and discuss the authors’ proofs of security.  References to other vulnerable protocols are given.
+
+| **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
+
+[Google Chrome Forensics-SANS](https://digital-forensics.sans.org/blog/2010/01/21/google-chrome-forensics#)
+
+[Chromebook Forensics](www.dataforensics.org/google-chromebook-forensics/)
+
+| **ClearImage Free Online Barcode Reader / Decoder** | http://online-barcode-reader.inliteresearch.com/
+
+| **A Sysadmin's Unixersal Translator (ROSETTA STONE)** | http://bhami.com/rosetta.html
+
+| **Sqoop** - OSINT search engine of public documents(handy) | http://sqoop.com/
+
+
+| **What’s contained in a boarding pass barcode?** | https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode
+
+| **Simplifying the Business Bar Coded Boarding Pass Implementation Guide** | http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf
+
+http://blog.sematext.com/2015/10/05/recipe-apache-logs-rsyslog-parsing-elasticsearch/
+
+
+[OSX Lion User Interface Preservation Analysis](https://digital-forensics.sans.org/blog/2011/10/03/osx-lion-user-interface-preservation-analysis#)
+[
+OS X Forensics Generals](https://davidkoepi.wordpress.com/category/os-x-forensics-10-8/)
+
+[The Secret Life of SIM Cards - Defcon21](https://www.youtube.com/watch?v=31D94QOo2gY)
+
+[Kam1n0-Plugin-IDA-Pro](https://github.com/McGill-DMaS/Kam1n0-Plugin-IDA-Pro)
+* Kam1n0 is a scalable system that supports assembly code clone search. It allows a user to first index a (large) collection of binaries, and then search for the code clones of a given target function or binary file.  Kam1n0 tries to solve the efficient subgraph search problem (i.e. graph isomorphism problem) for assembly functions. Given a target function (the middle one in the figure below) it can identity the cloned subgraphs among other functions in the repository (the ones on the left and the right as shown below). Kam1n0 supports rich comment format and has an IDA Pro plug-in to use its indexing and searching capabilities via IDA Pro. 
+
+
+[The big GSM write-up – how to capture, analyze and crack GSM?](http://domonkos.tomcsanyi.net/?p=418)
+
+[Attacking the XNU Kernel For Fun And Profit – Part 1](http://blog.qwertyoruiop.com/?p=38)
+* This blog post is part of a series of posts in which I will discuss several techniques to own XNU, the kernel used by Apple’s OS X and iOS. My focus will be on heap-based attacks, such as heap overflows, double frees, use-after-frees and zone confusion.
+
+[KillerBee](https://github.com/riverloopsec/killerbee)
+* Framework and Tools for Attacking ZigBee and IEEE 802.15.4 networks.
+
+[Debug Methodology Under UEFI](http://www.uefi.org/sites/default/files/resources/UEFI_Plugfest_2011Q4_P8_PHX.pdf)
+
+[A list of IDA Plugins](https://github.com/onethawt/idaplugins-list)
+
+[Pandora's Cash Box - The Ghost under your POS - RECON2015](https://recon.cx/2015/slides/recon2015-17-nitay-artenstein-shift-reduce-Pandora-s-Cash-Box-The-Ghost-Under-Your-POS.pdf)
+
+[Reverse Engineering Windows AFD.sys](https://recon.cx/2015/slides/recon2015-20-steven-vittitoe-Reverse-Engineering-Windows-AFD-sys.pdf)
+
+[On Comparing Threat Intelligence Feeds](http://blogs.gartner.com/anton-chuvakin/2014/01/07/on-comparing-threat-intelligence-feeds/)
+
+[Developing a Open Source Threat Intelligence Program—Edward McCabe](http://www.irongeek.com/i.php?page=videos/circlecitycon2014/105-developing-a-open-source-threat-intelligence-program-edward-mccabe)
+* What if you could get out in front of common threats such as botnets, scanners and malware? Good news, you can. Learn about one geeks struggle with life on the Internet of (bad) things when it comes to being online, identifying “odd” things, and developing an Open Source Threat Intelligence Program from Open Source Tools and Public Sources.
+
+[No Budget Threat Intelligence - Tracking Malware Campaigns on the Cheap - ShmooCon15](https://www.youtube.com/watch?v=DKfWukYffsE&app=desktop)
+* "In this talk, I'll be discussing my experience developing intelligence-gathering capabilities to track several different independent groups of threat actors on a very limited budget (read: virtually no budget whatsoever). I'll discuss discovering the groups using open source intelligence gathering and honeypots, monitoring attacks, collecting and analyzing malware artifacts to figure out what their capabilities are, and reverse engineering their malware to dehttp://faydoc.tripod.com/cpu/index_a.htmvelop the capability to track their targets in real time. Finally, I'll chat about defensive strategies and provide recommendations for enterprise security analysts and other security researchers. I'll also be releasing a suite of tools I created to help threat researchers perform tracking and attribution.
+
+[Malware Information Sharing Platform](https://github.com/MISP/MISP)
+* MISP - Malware Information Sharing Platform & Threat Sharing 
+
+[Collaborative Research Into Threats](https://crits.github.io/)
+* CRITs is an open source malware and threat repository that leverages other open source software to create a unified tool for analysts and security experts engaged in threat defense. It has been in development since 2010 with one goal in mind: give the security community a flexible and open platform for analyzing and collaborating on threat data. In making CRITs free and open source, we can provide organizations around the world with the capability to quickly adapt to an ever-changing threat landscape. CRITs can be installed locally for a private isolated instance or shared among other trusted organizations as a collaborative defense mechanism.
+
+[Collective Intelligence Framework](http://csirtgadgets.org/collective-intelligence-framework/)
+* "Our Flagship Project, is a cyber threat intelligence management system. CIF allows you to combine known malicious threat information from many sources and use that information for identification (incident response), detection (IDS) and mitigation (null route). The most common types of threat intelligence warehoused in CIF are IP addresses, domains and urls that are observed to be related to malicious activity."
+
+[ShinySDR](https://github.com/kpreid/shinysdr)
+* This is the software component of a software-defined radio receiver. When combined with hardware devices such as the USRP, RTL-SDR, or HackRF, it can be used to listen to a wide variety of radio transmissions, and can be extended via plugins to support even more modes.
+
+[Bootkit Threats:  In  Depth Reverse Engineering & Defense- Eugene Rodionov&Aleksandr Matrosov](https://www.eset.com/fileadmin/Images/US/Docs/Business/presentations/conference_papers/REcon2012.pdf)
+
+[Debugging Windows kernel under VMWare using IDA's GDB debugger](https://cyberview.files.wordpress.com/2010/09/gdb_vmware_winkernel.pdf)
+
+[Intel® System Studio – UEFI BIOS Debugging](https://software.intel.com/en-us/articles/intel-system-studio-2014-uefi-bios-debugging)
+
+[Debug SPI BIOS after Power Up Sequence](https://software.intel.com/en-us/articles/debug-spi-bios-after-power-up-sequence)
+
+[Empire - Powershell Post-Exploitation Agent](http://www.powershellempire.com/)
+* Empire is a pure PowerShell post-exploitation agent built on cryptologically-secure communications and a flexible architecture. Empire implements the ability to run PowerShell agents without needing powershell.exe, rapidly deployable post-exploitation modules ranging from key loggers to Mimikatz, and adaptable communications to evade network detection, all wrapped up in a usability-focused framework.
+
+
+[JSDetox](http://relentless-coding.org/projects/jsdetox/info)
+* JSDetox is a tool to support the manual analysis of malicious Javascript code. 
+
+[Attacks on UEFI Security - Rafal Wojtczuk&Corey Kallenberg(https://bromiumlabs.files.wordpress.com/2015/01/attacksonuefi_slides.pdf)
+
+[Attacking and Defending BIOS in 2015](http://www.intelsecurity.com/advanced-threat-research/content/AttackingAndDefendingBIOS-RECon2015.pdf)
+
+[Wepawet](https://wepawet.iseclab.org/)
+* Wepawet is a free service, for non-commercial organizations, to detect and analyze web-based threats. It currently handles Flash, JavaScript, and PDF files
+
+[Pupy](https://github.com/n1nj4sec/pupy)
+* Pupy is a remote administration tool with an embeded Python interpreter, allowing its modules to load python packages from memory and transparently access remote python objects. The payload is a reflective DLL and leaves no trace on disk 
+
+[Attacks on UEFI security, inspired by Darth Venamis's misery and Speed Racer](https://media.ccc.de/browse/congress/2014/31c3_-_6129_-_en_-_saal_2_-_201412282030_-_attacks_on_uefi_security_inspired_by_darth_venamis_s_misery_and_speed_racer_-_rafal_wojtczuk_-_corey_kallenberg.html#video)
+* On modern Intel based computers there exists two powerful and protected code regions: the UEFI firmware and System Management Mode (SMM). UEFI is the replacement for conventional BIOS and has the responsibility of initializing the platform. SMM is a powerful mode of execution on Intel CPUs that is even more privileged than a hypervisor. Because of their powerful positions, SMM and UEFI are protected by a variety of hardware mechanisms. In this talk, Rafal Wojtczuk and Corey Kallenberg team up to disclose several prevalent vulnerabilities that result in SMM runtime breakin as well as arbitrary reflash of the UEFI firmware. 
+
+
+
+
+[JSFuck](http://www.jsfuck.com/)
+* JSFuck is an esoteric and educational programming style based on the atomic parts of JavaScript. It uses only six different characters to write and execute code.
+
+
+[Scapy-Radio](https://bitbucket.org/cybertools/scapy-radio/src
+* This tool is a modified version of scapy that aims at providing an quick and efficient pentest tool with RF capabilities.
+A modified version of scapy that can leverage GNU Radio to handle a SDR card
+GNU Radio flow graphs (GRC files) we have build that allows full duplex communication
+GNU Radio blocks we have written to handle several protocols
+
+[SecBee](https://github.com/Cognosec/SecBee) 
+* SecBee is a ZigBee security testing tool developed by Cognosec. The goal is to enable developers and security testers to test ZigBee implementations for security issues.
+
+https://programmers.stackexchange.com/questions/7652/identifying-programming-languages-by-a-piece-of-code
+http://blogs.technet.com/b/markrussinovich/archive/2005/08/17/unkillable-processes.aspx
+
+
+[Dynamic IDA Enrichment (aka. DIE)](https://github.com/ynvb/DIE
+* DIE is an IDA python plugin designed to enrich IDA`s static analysis with dynamic data. This is done using the IDA Debugger API, by placing breakpoints in key locations and saving the current system context once those breakpoints are hit.
+
+
+[Demon](https://github.com/x0r1/Demon)
+* GPU keylogger PoC by Team Jellyfish
+[Blackbox Reversing an Electric Skateboard Wireless Protocol ](https://blog.lacklustre.net/posts/Blackbox_Reversing_an_Electric_Skateboard_Wireless_Protocol/)
+[Elasticsearch: The Definitive Guide The Definitive Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html)
+[ARM Documentation](http://infocenter.arm.com/help/index.jsp?noscript=1)
+
+[CSCI 4974 / 6974 Hardware Reverse Engineering](http://security.cs.rpi.edu/courses/hwre-spring2014/)
+
+[Blackbox Reversing an Electric Skateboard Wireless Protocol ](https://blog.lacklustre.net/posts/Blackbox_Reversing_an_Electric_Skateboard_Wireless_Protocol/)
+
+https://github.com/iv-wrt/iv-wrt
+
+http://www.securitysift.com/pecloak-py-an-experiment-in-av-evasion/
+https://github.com/danielmiessler/SecLists
+http://sector876.blogspot.com/2013/03/backdooring-pe-files-part-1.html
+http://sector876.blogspot.com/2013/03/backdooring-pe-files-part-2.html
+
+[Consul](https://github.com/hashicorp/consul)
+* Consul is a tool for service discovery and configuration. Consul is distributed, highly available, and extremely scalable.
+
+[Monit](https://mmonit.com/monit/)
+*   Monit is a small Open Source utility for managing and monitoring Unix systems. Monit conducts automatic maintenance and repair and can execute meaningful causal actions in error situations.
+
+
+[jsgifkeylogger](https://github.com/wopot/jsgifkeylogger)
+* a javascript keylogger included in a gif file This is a PoC
+
+
+[Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers]
+
+
+From:
+http://it-ovid.blogspot.com/2012/02/enumeration-and-reconnaissance.html
+Network Enumeration and Scanning Cheat sheet
+
+
+Network Scanning and Mapping
+
+------------------------------------------------------------------------
+Network Service Discovery
+Nmap
+nmap -sSV -vv -PN --send-ip -A -O -oG <address-range>_`date +%Y-%m-%d_%H:%M` <address-range>nmap -A -vv -PN --send-ip -oG <address-range>_`date +%Y-%m-%d_%H:%M` <address-range>
+
+Unicorn Scan
+
+us -H -msf -Iv <address> -p 1-65535
+us -H -mU -Iv <address> -p 1-65535
+
+Layer 2 - Arp - netdiscover
+netdiscover -i <interface> -r <address-range>
+
+------------------------------------------------------------------------
+TCPDump Sniffing
+
+tcpdump -s0 -xxXX -vv -i eth0 'host <address> and (dst port <num> or <num> )' | tee <address>_<service>_`date +%Y-%m-%d_%H:%M`.txt
+or save the pcap file with additional flag (filename shortcut):
+
+-w <address>_<service>_`date +%Y-%m-%d_%H:%M`.pcap
+
+
+Locate VLAN Tagstcpdump -vv -i <interface> -s &ltsnap-length> -c <num-packet-count> 'ether[20:2] == 0x2000'
+
+------------------------------------------------------------------------ 
+Specific Service Queries
+
+
+DNS TCP:53/UDP:53
+DNS  TCP and UDP 53 - DNS walking and Zone transfers
+dig <domain> @<dns-server> AXFR | tee dns_<domain>_axfr._`date +%Y-%m-%d_%H:%M`.txt
+
+
+DNS  TCP and UDP 53 - DNS cache poisoning check
+dig +short @<dns-server> porttest.dns-oarc.net txt
+porttest.y.x.w.v.u.t.s.r.q.p.o.n.m.l.k.j.i.h.g.f.e.d.c.b.a.pt.dns-oarc.net.
+"<dns-server> is GREAT: 26 queries in 4.4 seconds from 26 ports with std dev 22336"
+
+------------------------------------------------------------------------
+HTTP Web applications TCP 80,8000
+nikto -h -p -C all -Display D -output nikto_<target-server><port>_`date +%Y-%m-%d_%H:%M`.txt -Format txt
+
+
+DirBuster
+ cd /pentest/web/dirbuster && java -jar DirBuster-0.12.jar
+
+WFuzz
+wfuzz.py -c -z file,<wordlist> --hc 404 -o <html|magictree> http://<site-url>/FUZZ
+e.g.
+./wfuzz.py -c -z file,/pentest/passwords/wordlists/combined --hc 404 -o html http://<site-url>/FUZZ 2> /dev/null
+
+HTTP commands for webserver enumeration 
+nc <target-address> <port>
+HEAD / HTTP/1.0
+or
+OPTIONS / HTTP/1.0
+or
+TRACE / HTTP/1.0
+
+
+
+WebDAV
+
+IIS 6.0
+
+
+
+HTTPS/SSL  TCP 443
+openssl s_client -connect <target-server>443 -state -debug
+HEAD / HTTP/1.0
+
+CONNECTED(00000003)
+SSL_connect:before/connect initialization
+... ... ... cut ... ... ... 
+SSL_connect:SSLv3 write client key exchange A
+... ... ... cut ... ... ... 
+ HTTP/1.1 302 Found
+Date: Mon 02 Apr 2012 06:53:49 GMT
+Server IBM_HTTP_Server/6.0.2.33 Apache/2.0.47 (Unix)
+... ... ... cut ... ... ...
+
+------------------------------------------------------------------------
+SNMP commands UDP 161
+
+SNMPWalk
+snmpwalk -c public -v[1|2c] <target-server> | tee <address>_snmp_`date +%Y-%m-%d_%H:%M`.txt
+
+SNMPv2-MIB::sysDescr.0 = STRING: hp AlphaServer ES80 7/1000, VMS V7, MultiNet(R) for OpenVMS V4.4, Copyright (c) 2001 Process Software
+SNMPv2-MIB::sysObjectID.0 = OID: SNMPv2-SMI::enterprises.58.1.1.1.2.1
+DISMAN-EVENT-MIB::sysUpTimeInstance = Timeticks: (24030770) 2 days, 18:45:07.70
+SNMPv2-MIB::sysContact.0 = STRING: System contact unknown at this time
+SNMPv2-MIB::sysName.0 = STRING: 
+SNMPv2-MIB::sysLocation.0 = STRING: System location unknown at this time
+SNMPv2-MIB::sysServices.0 = INTEGER: 72
+... ... ...
+
+
+SNMPEnum
+/snmpenum.pl public linux.txt 
+    UPTIME... ... ...
+    HOSTNAME... ... ...
+    RUNNING SOFTWARE PATHS
+... ... ...
+    RUNNING PROCESSES... ... ...
+    MOUNTPOINTS... ... ...
+    SYSTEM INFO
+... ... ...
+    LISTENING UDP PORTS
+... ... ...    LISTENING TCP PORTS
+
+OneSixtyOne
+./onesixtyone -c <dictionary-file> -i <hosts-file> -o <address-range>_snmp_`date`.log -w
+./onesixtyone <target-address>
+Scanning 1 hosts, 2 communities [public] hp AlphaServer ES80 7/1000, VMS V7, MultiNet(R) for OpenVMS V4.4, Copyright (c) 2001 Process Software
+
+
+SNMPCheck
+./snmpcheck-1.8.pl -c <community-name> -v <version 1,2> -t <address-range>
+snmpcheck.pl v1.8 - SNMP enumerator
+Copyright (c) 2005-2011 by Matteo Cantoni (www.nothink.org)
+ [*] Try to connect to 
+ [*] Connected to 
+ [*] Starting enumeration at 2011-07-25 10:32:58
+ [*] System information
+ -----------------------------------------------------------------------------------------------
+ Hostname               :
+ Description            : hp AlphaServer ES80 7/1000, VMS V7, MultiNet(R) for OpenVMS V4.4, Copyright (c) 2001 Process Software
+ Uptime system          : 0.00 seconds
+ Uptime SNMP daemon     : 2 days, 18:17:07.01
+ [*] Network information
+... ... ...
+ [*] Network interfaces
+... ... ...
+ [*] Routing information
+... ... ...
+ [*] Listening TCP ports and connections
+... ... ...
+
+
+------------------------------------------------------------------------
+Samba/CIFS/NETBIOS TCP 135,139,445
+nbtscan -v -s : -r <address-range> | tee <address-range>_nbtscan_`date +%Y-%m-%d_%H:%M`.txt
+
+
+SMBClient - Discover and mount shares
+
+smbclient -L \\\<target-address>\\ -U <Username>
+smbclient -U <Username> -W <Workgroup> \\\\<target-address>\\\<sharename>
+
+------------------------------------------------------------------------
+RPC, PortMapper and NFS TCP/UDP:111
+rpcinfo -p >target-address> | tee <address>_rpcinfo_`date +%Y-%m-%d_%H:%M`.txt
+
+
+
+showmount -e <ip-address>
+
+
+mount <ip-address>:<exported_path> <local_path>
+
+
+Tunnelling and Pivoting
+------------------------------------------------------------------------
+SSH Tunnelling and pivoting 
+
+
+ssh -v -f -N -L <localIP>:<local-port>:<dest-ip>:<dest-port> <user>@&ltpivot-host> -i <authentication-key-file>
+Verbosity (-v),  Background (-f), No command execution (-N), Local port forwarding (-L)
+
+Forward localhost port 25 to the localhost of 192.168.1.6 using ssh DSA key   
+
+ssh -v -f -N -L 127.0.0.1:25:127.0.0.1:25 user@192.168.1.6 -i /dsa/1024/f1fb2162a02f0f7c40c210e6167f05ca-16858
+
+Proxy Chains 
+Dual-honed proxies or for proxying some port-scans
+Edit the configuration file:
+/etc/proxychains.conf
+Under the ProxyList section:
+
+[ProxyList]
+http <proxy-server-ip> <port>
+Execute with:
+proxychains &ltsocket-aware command>
+e.g
+proxychains nmap -sT -vv --send-ip -pT:21,22,25,80,443,445,3389 <target-address> 
+Posted 22nd February 2012 by Tim Arneaud dfir-information.html)0
+
+
 
 Good source for internals section: http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx
 
 
-[Easy Ways To Bypass Anti-Virus Systems - Attila Marosi -Trooper14](https://www.youtube.com/watch?v=Sl1Sru3OwJ4)
+
+
+
+
+[Stunneller](https://github.com/ultramancool/Stunneler)
+* Android app for easy stunnel usage 
+
+
+http://www.securitytracker.com/id/1032048
+
+https://reverse.put.as/2015/05/29/the-empire-strikes-back-apple-how-your-mac-firmware-security-is-completely-broken/
+
+https://trmm.net/SPI
+
+
 
 Defeating Sniffers and Intrustion Detection Systems - Horizon, 12/25/1998
 Armouring the ELF: Binary Encryption on the UNIX Platform - grugq, scut, 12/28/2001
@@ -18,42 +394,6 @@ Mystifying the Debugger for Ultimate Stealthness - halfdead, 04/11/2008
 Binary Mangling with Radare - pancake, 06/11/2009
 
 
- 
-
-
-
-[Using ARM Inline Assembly and Naked Functions to fool Disassemblers](http://www.evilsocket.net/2015/05/02/using-inline-assembly-and-naked-functions-to-fool-disassemblers/#sthash.Gt6f7f7y.4pLres53.sfju)
-
-
-
-[PowerShell-AD-Recon](https://github.com/PyroTek3/PowerShell-AD-Recon)
-* AD PowerShell Recon Scripts
-
-[Hacking FinSpy - a Case Study - Atilla Marosi - Troopers15](https://www.youtube.com/watch?v=Mb4mfBi06K4)
-
-[Multiplexed Wired Attack Surfaces - Michael Ossmann & Kos - Toorcon15](https://www.youtube.com/watch?v=4QB79921Nlw)
-* Manufacturers of mobile devices often multiplex several wired interfaces onto a single connector. Some of these interfaces, probably intended for test and development, are still enabled when the devices ship. We'll show you how you can get a shell on a popular mobile phone via its USB port without using a USB connection and we will release an open source tool for exploring multiplexed wired interfaces.
-
-[Advanced PDF Tricks - Ange Albertini, Kurt Pfeifle - Troopers1](https://www.youtube.com/watch?v=k9g9jZdjRcE)
-* This session is NOT about analyzing exploits but about learning to manipulate PDF contents. Among others:hide/reveal information; remove/add watermark;  just suck less about the format. It's an extended session (2 hours) to leave the audience time to try by themselves actively. The slides' PDF is entirely hand-written to explain clearly each fact, so the presentation slides themselves will be the study materials.
-
-[Compromise-as-a-Service: Our PleAZURE.](https://www.troopers.de/events/troopers14/49_compromise-as-a-service_our_pleazure/)
-* This could be a comprehensive introduction about the ubiquity of virtualization, the essential role of the hypervisor, and how the security posture of the overall environment depends on it. However, we decided otherwise, as this is what everybody is interested in: We will describe the Hyper-V architecture in detail, provide a taxonomy of hypervisor exploits, and demonstrate how we found MS13-092 which had the potential to compromise the whole Azure environment. Live demo included!
-
-
-[The Three Billion Dollar App - Vladimir Wolstencroft -Troopers14](https://www.youtube.com/watch?v=5Duc-uUFzoU)
-* Talk about reverse engineering SnapChat and Wickr Messaging apps.
-
-[ SS7: Locate. Track. Manipulate. [31c3] by Tobias Engel (SnoopSnitch)](https://www.youtube.com/watch?v=lQ0I5tl0YLY)
-
-[SnoopSnitch](https://opensource.srlabs.de/projects/snoopsnitch)
-* SnoopSnitch is an Android app that collects and analyzes mobile radio data to make you aware of your mobile network security and to warn you about threats like fake base stations (IMSI catchers), user tracking and over-the-air updates. With SnoopSnitch you can use the data collected in the GSM Security Map at gsmmap.org and contribute your own data to GSM Map. This application currently only works on Android phones with a Qualcomm chipset and a stock Android ROM (or a suitable custom ROM with Qualcomm DIAG driver). It requires root priviliges to capture mobile network data.
-
-
-
-SYSINTERNALS down needs TOC/links
-
-
  http://pr+ojectshellcode.com/?q=node/12
 
 http://fileformats.archiveteam.org/wiki/Encyclopedia_of_Graphics_File_Formats
@@ -61,13 +401,31 @@ http://fileformats.archiveteam.org/wiki/Encyclopedia_of_Graphics_File_Formats
 
 [](https://github.com/rrbranco/Troopers2015)
 
-[Mobile self-defense - Karsten Nohl](https://www.youtube.com/watch?v=GeCkO0fWWqc)
+[virusbattle-ida-plugin](https://github.com/moghimi/virusbattle-ida-plugin)
+* The plugin is an integration of Virus Battle API to the well known IDA Disassembler.  Virusbattle is a web service that analyses malware and other binaries with a variety of advanced static and dynamic analyses. For more information check out the
+
+
+
+[pwndbg - Making debugging suck less](https://github.com/zachriggle/pwndbg)
+* A PEDA replacement. In the spirit of our good friend windbg, pwndbg is pronounced pwnd-bag.
+* Uses capstone as backend.
+[binjitsu](https://github.com/binjitsu/binjitsu/)
+* binjitsu is a CTF framework and exploit development library. Written in Python, it is designed for rapid prototyping and development, and intended to make exploit writing as simple as possible.
+
+
+
+
+
+
+
+
+
 
 
 http://fileformats.archiveteam.org/wiki/PNG
 
 [Bug Hunting for the Man on the Street]()
-* Finding and discovering bugs has to be one of the most special times in a security researchers life (until you realise that crash you've been searching for and finally found is not actually exploitable). But the process of searching, discovery, understanding and of course some very much needed trial and error, many would say are rewarding and fulfilling themselves (I would of course, prefer to have my exploit cherry on the top)! So this talk will detail some of the aspects required to hunt down and find these coveted security vulnerabilities and bugs and some approaches that have proven to be invaluable (and some not so much). Of course bug hunting principle need to produce bugs so as the cherry there will be a virtual box exploit and Barracuda networks 0 day exploit discussed and demon##Simulations
+* Finding and discovering bugs has to be one of the most special times in a security researchers life (until you realise that crash you've been searching for and finally found is not actually exploitable). But the process of searching, discovery, understanding and of course some very much needed trial and error, many would say are rewarding and fulfilling themselves (I would of course, prefer to have my exploit cherry on the top)! So this talk will detail some of the aspects required to hunt down and find these coveted security vulnerabilities and bugs and some approaches that have proven to be invaluable (and some not so much). Of course bug hunting principle need to produce bugs so as the cherry there will be a virtual box exploit and Barracuda networks 0 day exploit discussed and demon
 
 
 [Introduction to Hacking in Car Systems - Craig Smith - Troopers15](https://www.youtube.com/watch?v=WHDkf6kpE58)
@@ -83,11 +441,6 @@ Getting Started with WindDbg Series - OpenSecurity Research
 * For use with Kali Linux - custom bash scripts used to automate various portions of a pentest. 
 
 
-
-[digbit](https://github.com/mnmnc/digbit/blob/master/README.md)
-* Automatic domain generation for BitSquatting
-
-
 *********
 IPv6
 
@@ -97,11 +450,6 @@ IPv6: Basic Attacks and Defences - Christopher Werny[TROOPERS15]
 
 
 [[TROOPERS15] Andreas Lindh - Defender Economics](https://www.youtube.com/watch?v=mAP38Xy52X0)
-
-
-[[TROOPERS15] Merike Kaeo - Deploying IPv6 Securely - Avoiding Mistakes Others Have Made](https://www.youtube.com/watch?v=rQg4y78xHf8)
-
-
 
 
 http://www.legbacore.com/Research.html
@@ -123,19 +471,24 @@ https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet
 https://www.owasp.org/index.php/Application_Security_Architecture_Cheat_Sheet
 
 
+[GRAUDIT](https://github.com/wireghoul/graudit/) 
+* Graudit is a simple script and signature sets that allows you to find potential  security flaws in source code using the GNU utility grep. It's comparable to  other static analysis applications like RATS, SWAAT and flaw-finder while  keeping the technical requirements to a minimum and being very flexible.
+
+[Davoset](https://github.com/MustLive/DAVOSET) 
+* DAVOSET - it is console (command line) tool for conducting DDoS attacks on the sites via Abuse of Functionality and XML External Entities vulnerabilities at other sites.
+
 *********
 General Section?
 ********
 [The foundation is rotting and the basement is flooding: A deeper look at the implicit trust relationships in your organization](https://www.youtube.com/watch?v=nL64uj9Xm24)
 ********
 
-[Evaluating the APT Armor - Matthias Luft, Felix Wilhelm](https://www.youtube.com/watch?v=3vh2s9Pui0E)
-
-[Combating the Insider Threat at the FBI: Real World Lessons Learned - BlackHat2013](https://www.youtube.com/watch?v=0stTS-G5FsE)
 
 
 
-https://github.com/tombkeeper/DEP-and-ASLR-bypass-without-ROP-or-JIT
+https://mobilesecuritywiki.com/
+
+
 
 http://seclists.org/fulldisclosure/2015/Mar/67	 
 
@@ -144,10 +497,10 @@ http://www.lexsi-leblog.com/cert-en/qemu-gdb-pe-imports.html
 
 https://en.wikipedia.org/wiki/Homomorphic_encryption
 
+[Detecting DLL Hijacking on Windows](http://digital-forensics.sans.org/blog/2015/03/25/detecting-dll-hijacking-on-windows/)
 
 
 
-[Understanding !PTE - Non-PAE and X64](http://blogs.msdn.com/b/ntdebugging/archive/2010/06/22/part-3-understanding-pte-non-pae-and-x64.aspx?Redirected=true
 
 
 MS Assessment Deployment Toolkit - Measure boot times among other things
@@ -159,7 +512,9 @@ seclists.org/fulldisclosure/2015/Mar/90
 http://ytliu.info/blog/2014/05/31/blind-return-oriented-programming-brop-attack-yi/
 
 
- 
+[pynessus](https://github.com/rmusser01/pynessus)
+* Python Parser for Nessus Output
+* [Examples](http://www.hackwhackandsmack.com/?p=422)
 
  
 
@@ -167,9 +522,10 @@ http://ytliu.info/blog/2014/05/31/blind-return-oriented-programming-brop-attack-
 * Generalizing information is a common method of reducing the quantity of data that must be considered during analysis. This fact has been plainly illustrated in relation to static data flow analysis where previous research has described algorithms that can be used to generalize data flow information. These generalizations have helped support more optimal data flow analysis in certain situations. In the same vein, this paper describes a process that can be employed to generalize and persist data flow information along multiple generalization tiers. Each generalization tier is meant to describe the data flow behaviors of a conceptual software element such as an instruction, a basic block, a procedure, a data type, and so on. This process makes use of algorithms described in previous literature to support the generalization of data flow information. To illustrate the usefulness of the generalization process, this paper also presents an algorithm that can be used to determine reachability at each generalization tier. The algorithm determines reachability starting from the least specific generalization tier and uses the set of reachable paths found to progressively qualify data flow information for each successive generalization tier. This helps to constrain the amount of data flow information that must be considered to a minimal subset. 
 
 
+[A Brief Examination of Hacking Team’s Crypter: core-packer.](http://ethanheilman.tumblr.com/post/128708937890/a-brief-examination-of-hacking-teams-crypter)
 
-
-
+[twittor - twitter based backdoor](https://github.com/PaulSec/twittor)
+* A stealthy Python based backdoor that uses Twitter (Direct Messages) as a command and control server This project has been inspired by Gcat which does the same but using a Gmail account.
 
 https://www.segger.com/jlink-debug-probes.html
 
@@ -209,7 +565,7 @@ https://github.com/iagox86/dnscat2/tree/v0.01
 
 http://opensecuritytraining.info/MalwareDynamicAnalysis_files/MalwareDynamicAnalysis02.pdf
 
-
+[Advice From A Researcher: Hunting XXE For Fun and Profit](https://blog.bugcrowd.com/advice-from-a-researcher-xxe/)
 
 http://www.slideshare.net/grecsl/malware-analysis-101-n00b-to-ninja-in-60-minutes-at-cactuscon-on-april-4-2014
 

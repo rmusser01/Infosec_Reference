@@ -2,6 +2,9 @@ Something to pimp: https://sysforensics.org/2015/02/manage-the-should be the cor
 To insert an anchor point of that name use HTML: 
 <a name="pookie"></a>
 
+| **NSA USB Playset - ShmooCon201** | 5https://www.youtube.com/watch?v=eTDBFpLYcGA
+
+
 | **honggfuzz** - A general-purpose, easy-to-use fuzzer with interesting analysis options. Supports feedback-driven fuzzing based on code coverage | https://github.com/google/honggfuzz
 
 | **Muts Bypassing AV in Vista/Pissing all over your AV** presentation, listed here as it was a bitch finding a live copy | https://web.archive.org/web/20130514172102/http://www.shmoocon.org/2008/videos/Backtrack%20Demo.mp4

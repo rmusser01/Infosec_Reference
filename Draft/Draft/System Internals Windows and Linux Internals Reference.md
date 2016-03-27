@@ -14,12 +14,30 @@ CULL
 CULL
 
 
+TechNet Library: About Processes and Threads
+https://msdn.microsoft.com/en-us/library/windows/desktop/ms681917%28v=vs.85%29.aspx
+
+
+WinHTTP
+https://msdn.microsoft.com/en-us/library/windows/desktop/aa382925%28v=vs.85%29.aspx
+
+ WinINet
+https://msdn.microsoft.com/en-us/library/windows/desktop/aa383630%28v=vs.85%29.aspx
+
+WinINet vs WinHTTP
+https://msdn.microsoft.com/en-us/library/windows/desktop/hh227298%28v=vs.85%29.aspx
+
+http://linux-audit.com/elf-binaries-on-linux-understanding-and-analysis/?utm_content=buffere95dc&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+
 [Collection of Windows Autostart locations](http://gladiator-antivirus.com/forum/index.php?showtopic=24610)
 
 [pagexec - GRSEC](https://pax.grsecurity.net/docs/pageexec.txt)
 
 
 
+
+Windows - Named Pipes
+https://msdn.microsoft.com/en-us/library/windows/desktop/aa365590%28v=vs.85%29.aspx
 
 
 [Instruments - OS X system analysis](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html)

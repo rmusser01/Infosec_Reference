@@ -42,8 +42,21 @@ Cull
 
 ### Cull/Sort
 
+
+fdroidcl
+https://github.com/mvdan/fdroidcl#advantages-over-the-android-clientx
+F-Droid desktop client.
+
 [AndBug - A Scriptable Android Debugger](https://github.com/swdunlop/AndBug)
 * AndBug is a debugger targeting the Android platform's Dalvik virtual machine intended for reverse engineers and developers. It uses the same interfaces as Android's Eclipse debugging plugin, the Java Debug Wire Protocol (JDWP) and Dalvik Debug Monitor (DDM) to permit users to hook Dalvik methods, examine process state, and even perform changes.
+
+
+AndroBugs Framework
+https://github.com/AndroBugs/AndroBugs_Framework
+AndroBugs Framework is an Android vulnerability analysis system that helps developers or hackers find potential security vulnerabilities in Android applications
+
+
+https://blog.gdssecurity.com/labs/2015/2/18/when-efbfbd-and-friends-come-knocking-observations-of-byte-a.html
 
 [AndroChef](http://androiddecompiler.com/)
 * AndroChef Java Decompiler is Windows XP, Windows 2003, Windows Vista, Windows 7, Windows 8, 8.1 decompiler for Java that reconstructs the original source code from the compiled binary CLASS files. AndroChef Java Decompiler is able to decompile the most complex Java 6 applets and binaries, producing accurate source code.  AndroChef successfully decompiles obfuscated Java 6 and Java 7 .class and .jar files. Support Java language features like generics, enums and annotations. According to some studies, AndroChef Java Decompiler is able to decompile 98.04% of Java applications generated with traditional Java compilers- a very high recovery rate. It is simple but powerful tool that allows you to decompile Java and Dalvik bytecode (DEX, APK) into readable Java source. Easy to use.

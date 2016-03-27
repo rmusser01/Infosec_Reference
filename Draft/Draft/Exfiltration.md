@@ -16,7 +16,7 @@ Stunnel
 [[Virus] Self-modifying code-short overview for beginners](http://phimonlinemoinhat.blogspot.com/2010/12/virus-self-modifying-code-short.html)
 
 
-
+https://github.com/sensepost/det
 
 
 iodine

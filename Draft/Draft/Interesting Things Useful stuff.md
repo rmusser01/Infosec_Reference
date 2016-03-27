@@ -35,6 +35,10 @@ http://www.securitywizardry.com/radar.htm
 
 
 ###CULL
+https://github.com/vrtadmin/moflow
+
+https://medium.com/@networksecurity/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0#.r3x0vnfir
+
 
 [No one expect command execution!](http://0x90909090.blogspot.fr/2015/07/no-one-expect-command-execution.html)
 

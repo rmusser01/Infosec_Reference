@@ -7,6 +7,8 @@
 
 
 
+https://web.archive.org/web/20150921054800id_/http://fair.org/home/down-the-memory-hole-nyt-erases-cias-efforts-to-overthrow-syrias-government/
+
 
 
 https://meduza.io/en/feature/2015/02/02/a-man-who-s-seen-society-s-black-underbelly

@@ -44,8 +44,9 @@ Coding Malware for fun and no profit
 [Spidernet](https://github.com/wandering-nomad/Spidernet)
  * Proof of Concept of SSH Botnet C&C Using Python 
 
-
-
+Pupy
+https://github.com/n1nj4sec/pupy
+ Pupy is an opensource, multi-platform Remote Administration Tool with an embedded Python interpreter. Pupy can load python packages from memory and transparently access remote python objects. Pupy can communicate using different transports and have a bunch of cool features & modules. On Windows, Pupy is a reflective DLL and leaves no traces on disk.
 
 
 

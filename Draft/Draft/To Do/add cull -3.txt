@@ -1,9 +1,297 @@
-Something to pimp: https://sysforensics.org/2015/02/manage-the-should be the correct markdown syntax to jump to the anchor point named pookie. 
-To insert an anchor point of that name use HTML: 
-<a name="pookie"></a>
 
-| **NSA USB Playset - ShmooCon201** | 5https://www.youtube.com/watch?v=eTDBFpLYcGA
 
+
+Maltrail
+https://github.com/stamparm/maltrail#architecture
+Maltrail is a malicious traffic detection system, utilizing publicly available (black)lists containing malicious and/or generally suspicious trails, along with static trails compiled from various AV reports and custom user defined lists, where trail can be anything from domain name (e.g. zvpprsensinaix.com for Banjori malware), URL (e.g. http://109.162.38.120/harsh02.exe for known malicious executable), IP address (e.g. 185.130.5.231 for known attacker) or HTTP User-Agent header value (e.g. sqlmap for automatic SQL injection and database takeover tool). Also, it uses (optional) advanced heuristic mechanisms that can help in discovery of unknown threats (e.g. new malware).
+
+
+
+
+Antimalware Scan Interface Reference
+- prevents certain kinds of powershell attacks
+https://msdn.microsoft.com/en-us/library/windows/desktop/dn889588
+
+
+
+
+Meterpreter Payload Stage 1 with Obsfuscation and Evasion
+https://github.com/lockfale/meterpreterjank
+
+
+
+Urge Everyone to watch:
+Hamming - You and your research
+
+https://www.youtube.com/watch?v=a1zDuOPkMSw
+
+
+
+https://www.sysmocom.de/news/sysmocom-publicly-releases-osmocom-user-manuals/
+
+
+https://websec.wordpress.com/2010/02/22/exploiting-php-file-inclusion-overview/
+
+
+
+https://github.com/Vector35/binaryninja-python/blob/master/readme.md
+
+https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
+
+
+http://www.wxhexeditor.org/home.php
+
+http://www.hackerfactor.com/blog/index.php?/archives/703-Invasion-of-Privacy.html
+
+https://www.fishnetsecurity.com/6labs/blog/post-exploitation-using-netntlm-downgrade-attacks
+
+http://wiki.osdev.org/Stack_Smashing_Protector
+
+Computer SCience from the Bottom Up | http://www.bottomupcs.com/
+
+http://mig.mozilla.org/
+
+https://github.com/google/sanitizers
+
+
+
+Defending against mimikatz
+https://jimshaver.net/2016/02/14/defending-against-mimikatz/
+
+Unofficial Guide to Mimikatz
+https://adsecurity.org/?page_id=1821
+
+SANS CHEAT SHEET- Windows Artifact Analysis
+https://uk.sans.org/posters/windows_artifact_analysis.pdf
+
+https://www.dsinternals.com/en/
+
+
+https://github.com/elceef/dnstwist
+
+https://github.com/strazzere/anti-emulator/blob/master/slides/Dex%20Education%20201%20-%20Anti-Emulation.pdf
+
+https://github.com/drduh/OS-X-Security-and-Privacy-Guide
+
+https://warroom.securestate.com/bmp-x86-polyglot/ 		
+
+
+
+ Pwning People Personally
+http://www.irongeek.com/i.php?page=videos/derbycon5/break-me08-pwning-people-personally-josh-schwartz
+
+https://github.com/httphacker/gethead/blob/gh-pages/gethead.py
+
+USBPcap
+
+https://github.com/bnagy/cgasm
+cgasm is a standalone, offline terminal-based tool with no dependencies that gives me x86 assembly documentation. It is pronounced "SeekAzzem".
+
+
+Fuzzing Object s d’ART Digging Into the New Android L Runtime Internals
+http://census-labs.com/media/Fuzzing_Objects_d_ART_hitbsecconf2015ams_WP.pdf
+
+
+http://www.scribd.com/doc/47334072/How-to-Steal-a-Nuclear-Warhead-Without-Voiding-Your-XBox-Warranty-paper
+
+https://github.com/strazzere/IDAnt-wanna
+
+
+ Sandboxed Execution Environment 
+http://pythonhosted.org/python-see
+Documentation: http://pythonhosted.org/python-see
+Sandboxed Execution Environment (SEE) is a framework for building test automation in secured Environments.  The Sandboxes, provided via libvirt, are customizable allowing high degree of flexibility. Different type of Hypervisors (Qemu, VirtualBox, LXC) can be employed to run the Test Environments.
+
+
+MS Network Level Authentication
+https://technet.microsoft.com/en-us/magazine/hh750380.aspx
+
+https://github.com/codewatchorg/SideStep
+
+https://xorl.wordpress.com/2010/10/14/linux-glibc-stack-canary-values/
+
+A Crash Course on the Depths of Win32™ Structured Exception Handling
+https://www.microsoft.com/msj/0197/exception/exception.aspx
+
+MFFA - Media Fuzzing Framework for Android
+https://github.com/fuzzing/MFFA
+
+SPartan
+https://github.com/sensepost/SPartan
+SPartan is a Frontpage and Sharepoint fingerprinting and attack tool
+
+
+https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/
+
+https://github.com/stamparm/maltrail
+
+http://x86asm.net/articles/uefi-programming-first-steps/
+
+
+File Format Fuzzing in Android
+https://deepsec.net/docs/Slides/2015/File_Format_Fuzzing_in_Android_-Alexandru_Blanda.pdf
+
+
+Win32 Assembly Components - Last Stage of Delirium Research Group
+http://www.bandwidthco.com/whitepapers/programming/asm/Win32%20Assembly%20Components.pdf
+
+Reliable Windows Heap Exploits
+http://xcon.xfocus.org/XCon2004/archives/14_Reliable%20Windows%20Heap%20Exploits_BY_SHOK.pdf
+
+Compiler Security Checks In Depth - MSDN Library
+https://msdn.microsoft.com/library/aa290051.aspx
+
+
+
+PEB Structure 32/64 pdf
+http://blog.rewolf.pl/blog/wp-content/uploads/2013/03/PEB_Evolution.pdf
+
+Blogpost explaining above 
+http://blog.rewolf.pl/blog/?p=573
+
+
+LSA Authentication
+https://msdn.microsoft.com/en-us/library/windows/desktop/aa378326%28v=vs.85%29.aspx
+LSA Authentication describes the parts of the Local Security Authority (LSA) that applications can use to authenticate and log users on to the local system. It also describes how to create and call authentication packages and security packages.
+
+sandbox-attacksurface-analysis-tools
+https://github.com/google/sandbox-attacksurface-analysis-tools
+http://googleprojectzero.blogspot.com.mt/2015/11/windows-sandbox-attack-surface-analysis.html
+
+
+https://archive.org/details/No_Easy_Breach#
+No Easy Breach: Challenges and Lessons Learned from an Epic Investigation 
+
+(SEH Bypass)	Defeating the Stack Based Buffer Overflow Prevention Mechanism of Microsoft Windows 2003 Server.
+https://www.blackhat.com/presentations/bh-asia-03/bh-asia-03-litchfield.pdf
+
+fREedom - capstone based disassembler for extracting to binnavi 
+fREedom is a primitive attempt to provide an IDA Pro independent means of extracting disassembly information from executables for use with binnavi (https://github.com/google/binnavi).
+
+
+
+http://illmatics.com/Remote%20Car%20Hacking.pdf
+
+Counterfeit Object-oriented Programming
+http://syssec.rub.de/media/emma/veroeffentlichungen/2015/03/28/COOP-Oakland15.pdf
+
+http://toshellandback.com/2015/11/24/ms-priv-esc/
+
+
+Windows - Application Shims
+https://technet.microsoft.com/en-us/library/dd837644%28v=ws.10%29.aspx
+
+
+https://github.com/securestate/king-phisher
+
+
+https://github.com/SecurityInnovation/AuthMatrix
+
+
+https://fosdem.org/2016/schedule/event/radar/
+
+
+https://getgophish.com/documentation/
+
+http://sdb.tools/talks.html
+
+Shimming for Post Exploitation(blog)
+http://www.sdb.tools/
+
+http://www.programminghorizon.com/win32assembly/
+
+ Dragon: A Windows, non-binding, passive download / exec backdoor 
+http://www.shellntel.com/blog/2015/6/11/dragon-a-windows-non-binding-passive-downloadexec-backdoor
+
+
+http://x86asm.net/articles/introduction-to-uefi/
+
+
+toolbag
+https://github.com/aaronportnoy/toolbag
+ The IDA Toolbag is a plugin providing supplemental functionality to Hex-Rays IDA Pro disassembler. 
+
+http://googleprojectzero.blogspot.com/2015/06/owning-internet-printing-case-study-in.html?m=1
+
+Reverse Engineering UEFI Firmware
+https://jbeekman.nl/blog/2015/03/reverse-engineering-uefi-firmware/
+
+
+Reverse Engineering UEFI Firmware
+https://jbeekman.nl/blog/2015/03/reverse-engineering-uefi-firmware/
+
+
+ A Guide to Malware Binary Reconstruction 
+https://github.com/0xAX/linux-insides/blob/master/Misc/contribute.md
+
+
+Linux kernel development
+https://github.com/0xAX/linux-insides/blob/master/Misc/contribute.md
+
+
+HTTP Evasion
+http://noxxi.de/research/http-evader-explained-8-borderline-robustness.html
+
+PwnAdventureZ
+https://github.com/Vector35/PwnAdventureZ
+NES zombie survival game made to be hacked 
+
+
+http://www.harmonysecurity.com/files/HS-P005_ReflectiveDllInjection.pdf
+
+
+Understanding JIT Spray
+http://blog.cdleary.com/2011/08/understanding-jit-spray/
+
+http://noxxi.de/research/http-evader-explained-6-whitespace.html
+
+
+https://github.com/AndroBugs/AndroBugs_Framework
+* AndroBugs Framework is an Android vulnerability analysis system that helps developers or hackers find potential security vulnerabilities in Android applications. No splendid GUI interface, but the most efficient (less than 2 minutes per scan in average) and more accurate.
+
+
+https://github.com/SekoiaLab/Fastir_Collector
+http://www.sekoia.fr/blog/wp-content/uploads/2015/10/FastIR-Collector-on-advanced-threats_v1.4.pdf
+
+
+| ** NSA's Legal Authorities ** | http://electrospaces.blogspot.com/2015/09/nsas-legal-authorities.html
+| **USB Fuzzing Basics: From fuzzing to bug reporting** | http://blog.quarkslab.com/usb-fuzzing-basics-from-fuzzing-to-bug-reporting.html
+
+http://meyerweb.com/eric/comment/chech.html
+| ** Forensic Imager Tools: You don't have the Evidence - Shmoocon 2014** | https://www.youtube.com/watch?v=zYYCv21I-1I
+
+| ** Destroying Evidence Before Its Evidence** | https://www.youtube.com/watch?v=lqBVAcxpwio&spfreload=1
+
+| **And That's How I Lost My Other Eye...Explorations in Data Destruction** | https://www.youtube.com/watch?v=-bpX8YvNg6Y
+
+
+| **Kaspersky Hooking Engine Analysis** | https://quequero.org/2014/10/kaspersky-hooking-engine-analysis/
+
+| **PowerUp - Windows Privilege Escalation through Powershell** | https://n0where.net/windows-local-privilege-escalation-powerup/
+
+| ** Dangerous Clipboard: Analysis of the MS15-072 Patch ** | http://blog.talosintel.com/2015/10/dangerous-clipboard.html?m=1
+
+| **RAP: RIP ROP (GRSEC/PaX team)** | https://pax.grsecurity.net/docs/PaXTeam-H2HC15-RAP-RIP-ROP.pdf
+| **Security 
+www.cs.wm.edu/~hnw/paper/tdsc12b.pdf
+
+| **Graudit** - Graudit is a simple script and signature sets that allows you to find potential security flaws in source code using the GNU utility grep. It's comparable to other static analysis applications like RATS, SWAAT and flaw-finder while keeping the technical requirements to a minimum and being very flexible. | http://www.justanotherhacker.com/projects/graudit.html
+
+| **WMI-IDS** - WMI-IDS is a proof-of-concept agent-less host intrusion detection system designed to showcase the unique ability of WMI to respond to and react to operating system events in real-time. | https://github.com/fireeye/flare-wmi/tree/master/WMI-IDS
+
+| **Simple websockets based webshell** | http://ibreak.software/2015/02/18/simple-websockets-based-webshell/
+
+| **Black hat talk on Windows Privilege Escalation** | http://www.slideshare.net/riyazwalikar/windows-privilege-escalation
+
+**Unicorn-Engine** - Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework. | http://www.unicorn-engine.org/
+
+http://www.pentest.guru/index.php/2015/10/19/ditch-psexec-spraywmi-is-here/
+
+| ** sandbox-attacksurface-analysis-tools** | https://github.com/google/sandbox-attacksurface-analysis-tools | This is a small suite of tools to test various properties of sandboxes on Windows. Many of the checking tools take a -p flag which is used to specify the PID of a sandboxed process. The tool will impersonate the token of that process and determine what access is allowed from that location. Also it's recommended to run these tools as an administrator or local system to ensure the system can be appropriately enumerated.
+
+| **NSA USB Playset - ShmooCon201** | https://www.youtube.com/watch?v=eTDBFpLYcGA
+
+| **Python in a hacker's toolbox (PyConPl'15)** | http://gynvael.coldwind.pl/?lang=en&id=572
 
 | **honggfuzz** - A general-purpose, easy-to-use fuzzer with interesting analysis options. Supports feedback-driven fuzzing based on code coverage | https://github.com/google/honggfuzz
 
@@ -21,7 +309,7 @@ http://fabiensanglard.net/reverse_engineering_strike_commander/index.php
 | **Phones and Privacy for Consumers** - Matt Hoy (mattrix) and David Khudaverdyan (deltaflyer) | http://www.irongeek.com/i.php?page=videos/grrcon2015/submerssion-therapy05-phones-and-privacy-for-consumers-matt-hoy-mattrix-and-david-khudaverdyan-deltaflyer
 
 | **Security of RFID Protocols – A Case Study** | 
-In the context of Dolev-Yao style analysis of security proto cols, we investigate the security claims of a pro- posed strong-security RFID authentication protocol. We ex hibit a flaw which has gone unnoticed in RFID protocol literature and present the resulting attacks on au thentication, untraceability, and desynchroniza- tion resistance.  We analyze and discuss the authors’ proofs of security.  References to other vulnerable protocols are given.
+In the context of Dolev-Yao style analysis of security proto cols, we investigate the security claims of a pro- posed strong-security RFID authentication protocol. We ex hibit a flaw which has gone unnoticed in RFID protocol literature and present the resulting attacks on au thentication, untraceability, and desynchroniza- tion resistance. We analyze and discuss the authors’ proofs of security. References to other vulnerable protocols are given.
 
 | **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
 
@@ -50,7 +338,7 @@ OS X Forensics Generals](https://davidkoepi.wordpress.com/category/os-x-forensic
 [The Secret Life of SIM Cards - Defcon21](https://www.youtube.com/watch?v=31D94QOo2gY)
 
 [Kam1n0-Plugin-IDA-Pro](https://github.com/McGill-DMaS/Kam1n0-Plugin-IDA-Pro)
-* Kam1n0 is a scalable system that supports assembly code clone search. It allows a user to first index a (large) collection of binaries, and then search for the code clones of a given target function or binary file.  Kam1n0 tries to solve the efficient subgraph search problem (i.e. graph isomorphism problem) for assembly functions. Given a target function (the middle one in the figure below) it can identity the cloned subgraphs among other functions in the repository (the ones on the left and the right as shown below). Kam1n0 supports rich comment format and has an IDA Pro plug-in to use its indexing and searching capabilities via IDA Pro. 
+* Kam1n0 is a scalable system that supports assembly code clone search. It allows a user to first index a (large) collection of binaries, and then search for the code clones of a given target function or binary file. Kam1n0 tries to solve the efficient subgraph search problem (i.e. graph isomorphism problem) for assembly functions. Given a target function (the middle one in the figure below) it can identity the cloned subgraphs among other functions in the repository (the ones on the left and the right as shown below). Kam1n0 supports rich comment format and has an IDA Pro plug-in to use its indexing and searching capabilities via IDA Pro. 
 
 
 [The big GSM write-up – how to capture, analyze and crack GSM?](http://domonkos.tomcsanyi.net/?p=418)
@@ -89,7 +377,7 @@ OS X Forensics Generals](https://davidkoepi.wordpress.com/category/os-x-forensic
 [ShinySDR](https://github.com/kpreid/shinysdr)
 * This is the software component of a software-defined radio receiver. When combined with hardware devices such as the USRP, RTL-SDR, or HackRF, it can be used to listen to a wide variety of radio transmissions, and can be extended via plugins to support even more modes.
 
-[Bootkit Threats:  In  Depth Reverse Engineering & Defense- Eugene Rodionov&Aleksandr Matrosov](https://www.eset.com/fileadmin/Images/US/Docs/Business/presentations/conference_papers/REcon2012.pdf)
+[Bootkit Threats: In Depth Reverse Engineering & Defense- Eugene Rodionov&Aleksandr Matrosov](https://www.eset.com/fileadmin/Images/US/Docs/Business/presentations/conference_papers/REcon2012.pdf)
 
 [Debugging Windows kernel under VMWare using IDA's GDB debugger](https://cyberview.files.wordpress.com/2010/09/gdb_vmware_winkernel.pdf)
 
@@ -162,7 +450,7 @@ http://sector876.blogspot.com/2013/03/backdooring-pe-files-part-2.html
 * Consul is a tool for service discovery and configuration. Consul is distributed, highly available, and extremely scalable.
 
 [Monit](https://mmonit.com/monit/)
-*   Monit is a small Open Source utility for managing and monitoring Unix systems. Monit conducts automatic maintenance and repair and can execute meaningful causal actions in error situations.
+* Monit is a small Open Source utility for managing and monitoring Unix systems. Monit conducts automatic maintenance and repair and can execute meaningful causal actions in error situations.
 
 
 [jsgifkeylogger](https://github.com/wopot/jsgifkeylogger)
@@ -405,7 +693,7 @@ http://fileformats.archiveteam.org/wiki/Encyclopedia_of_Graphics_File_Formats
 [](https://github.com/rrbranco/Troopers2015)
 
 [virusbattle-ida-plugin](https://github.com/moghimi/virusbattle-ida-plugin)
-* The plugin is an integration of Virus Battle API to the well known IDA Disassembler.  Virusbattle is a web service that analyses malware and other binaries with a variety of advanced static and dynamic analyses. For more information check out the
+* The plugin is an integration of Virus Battle API to the well known IDA Disassembler. Virusbattle is a web service that analyses malware and other binaries with a variety of advanced static and dynamic analyses. For more information check out the
 
 
 
@@ -475,7 +763,7 @@ https://www.owasp.org/index.php/Application_Security_Architecture_Cheat_Sheet
 
 
 [GRAUDIT](https://github.com/wireghoul/graudit/) 
-* Graudit is a simple script and signature sets that allows you to find potential  security flaws in source code using the GNU utility grep. It's comparable to  other static analysis applications like RATS, SWAAT and flaw-finder while  keeping the technical requirements to a minimum and being very flexible.
+* Graudit is a simple script and signature sets that allows you to find potential security flaws in source code using the GNU utility grep. It's comparable to other static analysis applications like RATS, SWAAT and flaw-finder while keeping the technical requirements to a minimum and being very flexible.
 
 [Davoset](https://github.com/MustLive/DAVOSET) 
 * DAVOSET - it is console (command line) tool for conducting DDoS attacks on the sites via Abuse of Functionality and XML External Entities vulnerabilities at other sites.

@@ -2,6 +2,11 @@
 
 
 
+sandbox-attacksurface-analysis-tools
+https://github.com/google/sandbox-attacksurface-analysis-tools
+http://googleprojectzero.blogspot.com.mt/2015/11/windows-sandbox-attack-surface-analysis.html
+
+
 
 [Adobe Sandbox: When the Broker is Broken - Peter Vreugdenhill](https://cansecwest.com/slides/2013/Adobe%20Sandbox.pdf)
 
@@ -10,6 +15,12 @@
 
 
 
+ Sandboxed Execution Environment 
+http://pythonhosted.org/python-see
+Documentation: http://pythonhosted.org/python-see
+Sandboxed Execution Environment (SEE) is a framework for building test automation in secured Environments.  The Sandboxes, provided via libvirt, are customizable allowing high degree of flexibility. Different type of Hypervisors (Qemu, VirtualBox, LXC) can be employed to run the Test Environments.
+
+| ** sandbox-attacksurface-analysis-tools** | https://github.com/google/sandbox-attacksurface-analysis-tools | This is a small suite of tools to test various properties of sandboxes on Windows. Many of the checking tools take a -p flag which is used to specify the PID of a sandboxed process. The tool will impersonate the token of that process and determine what access is allowed from that location. Also it's recommended to run these tools as an administrator or local system to ensure the system can be appropriately enumerated.
 
 
 [Adapting Software Fault Isolation to Contemporary CPU Architectures](https://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35649.pdf)

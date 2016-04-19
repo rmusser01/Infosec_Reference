@@ -18,6 +18,18 @@
 ###Cull
 
 
+
+http://noiseprotocol.org/noise.html
+
+https://conversations.im/xeps/multi-end.html
+
+
+
+https://coniks.cs.princeton.edu/
+
+
+http://webee.technion.ac.il/~hugo/sigma.html
+
 [cr.yp.to blog](http://blog.cr.yp.to/index.html)
 
 http://www.tau.ac.il/~tromer/acoustic/

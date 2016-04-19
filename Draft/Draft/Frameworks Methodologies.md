@@ -22,7 +22,8 @@ This website should eventually be your go-to reference for Metasploit: https://m
 
 
 
-
+[Empire - Powershell Post-Exploitation Agent](http://www.powershellempire.com/)
+* Empire is a pure PowerShell post-exploitation agent built on cryptologically-secure communications and a flexible architecture. Empire implements the ability to run PowerShell agents without needing powershell.exe, rapidly deployable post-exploitation modules ranging from key loggers to Mimikatz, and adaptable communications to evade network detection, all wrapped up in a usability-focused framework.
 
 
 

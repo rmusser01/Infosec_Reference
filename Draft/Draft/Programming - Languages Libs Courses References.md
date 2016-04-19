@@ -22,10 +22,39 @@ Cull
  [java-aes-crypto (Android class)](https://github.com/tozny/java-aes-crypto)
 * A simple Android class for encrypting & decrypting strings, aiming to avoid the classic mistakes that most such classes suffer from.
 
+
+Getting Started with WindDbg Series - OpenSecurity Research
+[Getting Started with WinDbg part 1](http://blog.opensecurityresearch.com/2013/12/getting-started-with-windbg-part-1.html)
+
 [smalisca](https://github.com/dorneanu/smalisca)
 * Static Code Analysis for Smali files 
 
+https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Record_and_Replay_Debugging_Firefox
 
+http://www.harmonysecurity.com/files/HS-P005_ReflectiveDllInjection.pdf
+
+| **Graudit** - Graudit is a simple script and signature sets that allows you to find potential security flaws in source code using the GNU utility grep. It's comparable to other static analysis applications like RATS, SWAAT and flaw-finder while keeping the technical requirements to a minimum and being very flexible. | http://www.justanotherhacker.com/projects/graudit.html
+
+
+An Introduction to Debugging the Windows Kernel with WinDbg
+http://www.contextis.com/resources/blog/introduction-debugging-windows-kernel-windbg/
+
+| **Python in a hacker's toolbox (PyConPl'15)** | http://gynvael.coldwind.pl/?lang=en&id=572
+
+
+https://github.com/bnagy/cgasm
+cgasm is a standalone, offline terminal-based tool with no dependencies that gives me x86 assembly documentation. It is pronounced "SeekAzzem".
+[Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers]
+
+
+
+
+
+
+Impacket https://github.com/CoreSecurity/impacket
+Impacket is a collection of Python classes for working with network protocols. Impacket is focused on providing low-level programmatic access to the packets and for some protocols (for instance NMB, SMB1-3 and MS-DCERPC) the protocol implementation itself. Packets can be constructed from scratch, as well as parsed from raw data, and the object oriented API makes it simple to work with deep hierarchies of protocols. The library provides a set of tools as examples of what can be done within the context of this library.
+rr is a lightweight tool for recording and replaying execution of applications (trees of processes and threads). More information about the project, including instructions on how to install, run, and build rr, is at http://rr-project.org.
+https://github.com/mozilla/rr
 
 [PHPMD - PHP Mess Detector](http://phpmd.org/about.html)  * What PHPMD does is: It takes a given PHP source code base and look for several potential problems within that source. These problems can be things like: Possible bugs; Suboptimal code; Overcomplicated expressions; Unused parameters, methods, properties.
 

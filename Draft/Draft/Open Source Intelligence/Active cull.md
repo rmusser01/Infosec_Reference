@@ -1,4 +1,9 @@
 
+
+
+
+
+
 Spokeo – People search engine and free white pages finds phone, address, email, and photos. Find people by name, email, address, and phone for free.
 theHarvester - This tool is intended to help Penetration testers in the early stages of the penetration test in order to understand the customer footprint on the Internet. It is also useful for anyone that wants to know what an attacker can see about their organization.
 Foca – FOCA 3.2 Free is a fingerprinrint and information gathering tool for pentesters. It searchs for servers, domains, URLS and public documents and print out discoverd information in a network tree. It also searches for data leaks such as metadata, directory listing, unsecure HTTP methods, .listing or .DS_Store files, actived cache in DNS Serves, etc…

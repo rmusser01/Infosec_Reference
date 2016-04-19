@@ -43,6 +43,36 @@ Cull
 ### Cull/Sort
 
 
+
+
+
+[Stunneller](https://github.com/ultramancool/Stunneler)
+* Android app for easy stunnel usage 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://github.com/AndroBugs/AndroBugs_Framework
+* AndroBugs Framework is an Android vulnerability analysis system that helps developers or hackers find potential security vulnerabilities in Android applications. No splendid GUI interface, but the most efficient (less than 2 minutes per scan in average) and more accurate.
+
 fdroidcl
 https://github.com/mvdan/fdroidcl#advantages-over-the-android-clientx
 F-Droid desktop client.

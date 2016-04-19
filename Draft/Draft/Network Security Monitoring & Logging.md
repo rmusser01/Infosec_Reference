@@ -18,6 +18,16 @@ Cull
 
 ###Cull - Create incident Response section
 
+[Elasticsearch: The Definitive Guide The Definitive Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html)
+
+
+
+
+
+
+
+| **WMI-IDS** - WMI-IDS is a proof-of-concept agent-less host intrusion detection system designed to showcase the unique ability of WMI to respond to and react to operating system events in real-time. | https://github.com/fireeye/flare-wmi/tree/master/WMI-IDS
+
 [Many ways of malware persistence (that you were always afraid to ask) ](http://jumpespjump.blogspot.com/2015/05/many-ways-of-malware-persistence-that.html)
 
 

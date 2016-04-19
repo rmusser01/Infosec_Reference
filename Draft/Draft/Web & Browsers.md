@@ -52,6 +52,30 @@ Cul
 
 ###Cull
 
+[JSFuck](http://www.jsfuck.com/)
+* JSFuck is an esoteric and educational programming style based on the atomic parts of JavaScript. It uses only six different characters to write and execute code.
+https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
+
+https://github.com/LifeForm-Labs/all_your_browsers_belong_to_us
+
+
+https://websec.wordpress.com/2010/02/22/exploiting-php-file-inclusion-overview/
+
+[jsgifkeylogger](https://github.com/wopot/jsgifkeylogger)
+* a javascript keylogger included in a gif file This is a PoC
+
+[JSDetox](http://relentless-coding.org/projects/jsdetox/info)
+* JSDetox is a tool to support the manual analysis of malicious Javascript code. 
+
+AuthMatrix - https://github.com/SecurityInnovation/AuthMatrix
+AuthMatrix is a Burp Suite extension that provides a simple way to test authorization in web applications and web services. 
+
+
+| **Simple websockets based webshell** | http://ibreak.software/2015/02/18/simple-websockets-based-webshell/
+
+HTTP Evasion
+http://noxxi.de/research/http-evader-explained-8-borderline-robustness.html
+
 [Jawfish](https://gingeleski.github.io/jawfish/)
 *Jawfish is a tool designed to break into web applications. Based on Forced Evolution, it is self-modifying - finding exploits and updating its internal database accordingly.
 

@@ -26,6 +26,28 @@ Cull
 
 
 
+| **Security of RFID Protocols – A Case Study** | 
+In the context of Dolev-Yao style analysis of security proto cols, we investigate the security claims of a pro- posed strong-security RFID authentication protocol. We ex hibit a flaw which has gone unnoticed in RFID protocol literature and present the resulting attacks on au thentication, untraceability, and desynchroniza- tion resistance. We analyze and discuss the authors’ proofs of security. References to other vulnerable protocols are given.
+
+[Scapy-Radio](https://bitbucket.org/cybertools/scapy-radio/src
+* This tool is a modified version of scapy that aims at providing an quick and efficient pentest tool with RF capabilities.
+A modified version of scapy that can leverage GNU Radio to handle a SDR card
+GNU Radio flow graphs (GRC files) we have build that allows full duplex communication
+GNU Radio blocks we have written to handle several protocols
+[The big GSM write-up – how to capture, analyze and crack GSM?](http://domonkos.tomcsanyi.net/?p=418)
+
+[KillerBee](https://github.com/riverloopsec/killerbee)
+* Framework and Tools for Attacking ZigBee and IEEE 802.15.4 networks.
+[ShinySDR](https://github.com/kpreid/shinysdr)
+* This is the software component of a software-defined radio receiver. When combined with hardware devices such as the USRP, RTL-SDR, or HackRF, it can be used to listen to a wide variety of radio transmissions, and can be extended via plugins to support even more modes.
+[SecBee](https://github.com/Cognosec/SecBee) 
+* SecBee is a ZigBee security testing tool developed by Cognosec. The goal is to enable developers and security testers to test ZigBee implementations for security issues.
+
+[The Secret Life of SIM Cards - Defcon21](https://www.youtube.com/watch?v=31D94QOo2gY)
+
+
+How To Build Your Own Rogue GSM BTS For Fun And Profit
+https://www.evilsocket.net/2016/03/31/how-to-build-your-own-rogue-gsm-bts-for-fun-and-profit/
 
 [Uni-SDR Link](https://github.com/ms-dev-1/uni-sdr-link/releases)
 * The initial release of Uni-SDR Link. This applications sole purpose is to allow Universal Trunker (aka Unitrunker) to control the tuning frequency of individual VFO's in SDR Console v2. This is achieved by translating Unitrunker Receiver Control commands into a format accepted by SDR Console. Communication occurs over virtual com / serial ports.

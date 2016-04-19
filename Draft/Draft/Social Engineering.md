@@ -17,6 +17,9 @@ CULL
 ###Cull
 
 
+ Pwning People Personally
+http://www.irongeek.com/i.php?page=videos/derbycon5/break-me08-pwning-people-personally-josh-schwartz
+
 
  | **I Will Kill You** - Chris Rock(Defcon23)| https://www.youtube.com/watch?v=9FdHq3WfJgs
 

@@ -15,7 +15,41 @@ TOC
 [Quick explanation of fuzzing and various fuzzers](http://whoisjoe.info/?p=16)
 
 ###Cull
+
+
+[Advice From A Researcher: Hunting XXE For Fun and Profit](https://blog.bugcrowd.com/advice-from-a-researcher-xxe/)
+File Format Fuzzing in Android
+https://deepsec.net/docs/Slides/2015/File_Format_Fuzzing_in_Android_-Alexandru_Blanda.pdf
+
+| **honggfuzz** - A general-purpose, easy-to-use fuzzer with interesting analysis options. Supports feedback-driven fuzzing based on code coverage | https://github.com/google/honggfuzz
+| **USB Fuzzing Basics: From fuzzing to bug reporting** | http://blog.quarkslab.com/usb-fuzzing-basics-from-fuzzing-to-bug-reporting.html
+
+
+
+
+
+
+
+
+
+Fuzzing Object s d’ART Digging Into the New Android L Runtime Internals
+http://census-labs.com/media/Fuzzing_Objects_d_ART_hitbsecconf2015ams_WP.pdf
+
+MFFA - Media Fuzzing Framework for Android
+https://github.com/fuzzing/MFFA
+
+
+How to fuzz a server with American Fuzzy Lop
+https://www.fastly.com/blog/how-fuzz-server-american-fuzzy-lop
+
+
+
 http://nullcon.net/website/archives/ppt/goa-15/analyzing-chrome-crash-reports-at-scale-by-abhishek-arya.pdf
+
+
+
+libFuzzer – library for in-process evolutionary fuzzing of other libraries.
+http://llvm.org/docs/LibFuzzer.html
 
 [Unusual bugs - 23C3](https://www.youtube.com/watch?v=qj79Qdmw0Pk) * In this presentation I'll present a series of unusual security bugs. Things that I've ran into at some point and went "There's gotta be some security consequence here". None of these are really a secret, and most of them are even documented somewhere. But apparently most people don't seem to know about them.  What you'll see in this presentation is a list of bugs and then some explanation of how these could be exploited somehow. Some of the things I'll be talking about are (recursive) stack overflow, NULL pointer dereferences, regular expressions and more. 
 

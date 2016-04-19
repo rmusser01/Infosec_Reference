@@ -23,6 +23,42 @@ Better security - Mean time to detect/Mean time to respond
 
 
 ###CULL
+https://github.com/SekoiaLab/Fastir_Collector
+http://www.sekoia.fr/blog/wp-content/uploads/2015/10/FastIR-Collector-on-advanced-threats_v1.4.pdf
+
+[OS X Forensics Generals](https://davidkoepi.wordpress.com/category/os-x-forensics-10-8/)
+
+
+
+
+[OSX Lion User Interface Preservation Analysis](https://digital-forensics.sans.org/blog/2011/10/03/osx-lion-user-interface-preservation-analysis#)
+
+[Chromebook Forensics](www.dataforensics.org/google-chromebook-forensics/)
+
+[Google Chrome Forensics-SANS](https://digital-forensics.sans.org/blog/2010/01/21/google-chrome-forensics#)
+
+
+| ** Destroying Evidence Before Its Evidence** | https://www.youtube.com/watch?v=lqBVAcxpwio&spfreload=1
+
+
+
+
+| ** Forensic Imager Tools: You don't have the Evidence - Shmoocon 2014** | https://www.youtube.com/watch?v=zYYCv21I-1I
+
+
+
+
+
+
+| **And That's How I Lost My Other Eye...Explorations in Data Destruction** | https://www.youtube.com/watch?v=-bpX8YvNg6Y
+
+
+
+https://archive.org/details/No_Easy_Breach#
+No Easy Breach: Challenges and Lessons Learned from an Epic Investigation 
+
+SANS CHEAT SHEET- Windows Artifact Analysis
+https://uk.sans.org/posters/windows_artifact_analysis.pdf
 
 https://forensiccontrol.com/resources/free-software/
 

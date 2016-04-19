@@ -11,4 +11,33 @@
 
 [seasponge - Mozilla Project](https://github.com/mozilla/seasponge)
 * Accessible and client-side threat modeling tool
-* [GIFs demonstrating usage](https://github.com/mozilla/seasponge/wiki/usage)
+* [GIFs demonstrating usage](https://github.com/mozilla/seasponge/wiki/usage)[On Comparing Threat Intelligence Feeds](http://blogs.gartner.com/anton-chuvakin/2014/01/07/on-comparing-threat-intelligence-feeds/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

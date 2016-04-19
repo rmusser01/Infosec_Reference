@@ -1,4 +1,4 @@
-##System Internals of Windows; OS X; Linux
+##System Internals of Windows; OS X; Linux; ARM
 
 TOC
 
@@ -13,6 +13,41 @@ CULL
 
 CULL
 
+
+https://www.bnxnet.com/wp-content/uploads/2015/01/WinAPIs_for_hackers.pdf
+
+
+https://xorl.wordpress.com/2010/10/14/linux-glibc-stack-canary-values/
+
+https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/
+
+
+
+Windows - Application Shims
+https://technet.microsoft.com/en-us/library/dd837644%28v=ws.10%29.aspx
+[ARM Documentation](http://infocenter.arm.com/help/index.jsp?noscript=1)
+
+A Crash Course on the Depths of Win32™ Structured Exception Handling
+https://www.microsoft.com/msj/0197/exception/exception.aspx
+
+
+Compiler Security Checks In Depth - MSDN Library
+https://msdn.microsoft.com/library/aa290051.aspx
+
+LSA Authentication
+https://msdn.microsoft.com/en-us/library/windows/desktop/aa378326%28v=vs.85%29.aspx
+LSA Authentication describes the parts of the Local Security Authority (LSA) that applications can use to authenticate and log users on to the local system. It also describes how to create and call authentication packages and security packages.
+
+Preventing the Exploitation of Structured Exception Handler (SEH) Overwrites with SEHOP
+https://blogs.technet.microsoft.com/srd/2009/02/02/preventing-the-exploitation-of-structured-exception-handler-seh-overwrites-with-sehop/
+
+
+Peering Inside the PE: A Tour of the Win32 Portable Executable File Format
+https://msdn.microsoft.com/en-us/library/ms809762.aspx?utm_content=buffer4588c&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
+
+
+PEB Structure 32/64 pdf
+http://blog.rewolf.pl/blog/wp-content/uploads/2013/03/PEB_Evolution.pdf
 
 TechNet Library: About Processes and Threads
 https://msdn.microsoft.com/en-us/library/windows/desktop/ms681917%28v=vs.85%29.aspx

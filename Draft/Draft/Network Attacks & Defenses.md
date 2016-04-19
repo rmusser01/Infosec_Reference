@@ -35,6 +35,43 @@ http://www.exploit-db.com/papers/35425/
 
 ###Cull
 
+
+
+
+
+
+
+
+
+[discover - Kali Scripts](https://github.com/leebaird/discover)
+* For use with Kali Linux - custom bash scripts used to automate various portions of a pentest.
+
+
+
+[Consul](https://github.com/hashicorp/consul)
+* Consul is a tool for service discovery and configuration. Consul is distributed, highly available, and extremely scalable.
+
+
+
+[pynessus](https://github.com/rmusser01/pynessus)
+* Python Parser for Nessus Output
+* [Examples](http://www.hackwhackandsmack.com/?p=422)
+
+[Evading IDS/IPS by Exploiting IPv6 Features - Antonios Atlasis, Rafael Schaefer](https://www.youtube.com/watch?v=avMeYIaU8DA&list=PL1eoQr97VfJni4_O1c3kBCCWwxu-6-lqy)
+
+
+
+ Dragon: A Windows, non-binding, passive download / exec backdoor 
+http://www.shellntel.com/blog/2015/6/11/dragon-a-windows-non-binding-passive-downloadexec-backdoor
+
+
+SPartan
+https://github.com/sensepost/SPartan
+SPartan is a Frontpage and Sharepoint fingerprinting and attack tool
+
+MS Network Level Authentication
+https://technet.microsoft.com/en-us/magazine/hh750380.aspx
+
 [DNS Dumpster](DNSdumpster.com is a free domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process.)
 
 [More on HNAP - What is it, How to Use it,How to Find it](https://isc.sans.edu/diary/More+on+HNAP+-+What+is+it%2C+How+to+Use+it%2C+How+to+Find+it/17648)

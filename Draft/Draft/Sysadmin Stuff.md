@@ -7,11 +7,12 @@ Salt
 
 
 
+https://www.dsinternals.com/en/
+[Monit](https://mmonit.com/monit/)
+* Monit is a small Open Source utility for managing and monitoring Unix systems. Monit conducts automatic maintenance and repair and can execute meaningful causal actions in error situations.
 
 
-
-
-
+| **A Sysadmin's Unixersal Translator (ROSETTA STONE)** | http://bhami.com/rosetta.html
 
 
 [Mitigating Pass-the-Hash Attacks and other credential Theft-version2](http://download.microsoft.com/download/7/7/A/77ABC5BD-8320-41AF-863C-6ECFB10CB4B9/Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf)

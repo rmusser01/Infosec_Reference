@@ -92,11 +92,9 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 ###<a name="Linux">Linux Cheat Sheets</a>
-[32bit Linux Syscall Table](http://www.informatik.htw-dresden.de/~beck/ASM/syscall_list.html)
-* Complete listing of all x86 Linux Syscalls
+[Linux Syscall Table](http://www.informatik.htw-dresden.de/~beck/ASM/syscall_list.html)
+* Complete listing of all Linux Syscalls
 
-[64bit Linux Syscall Table](http://blog.rchapman.org/post/36801038863/linux-system-call-table-for-x86-64)
-* Complete listing of all x86-64 Linux Syscalls including calling conventions
 
 
 
@@ -112,7 +110,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 [Linux - Breaking out of shells](https://highon.coffee/docs/linux-commands/#breaking-out-of-limited-shells)
 
 [AIX For Pentesters](http://www.giac.org/paper/gpen/6684/aix-penetration-testers/125890)
-* Good paper on exploiting/pentesting AIX based machines. From the paper itself ‚Äú The paper proposes some basic methods to do comprehensive local security checks and how to exploit the vulnerabilities.‚Äù
+* Good paper on exploiting/pentesting AIX based machines. From the paper itself ì The paper proposes some basic methods to do comprehensive local security checks and how to exploit the vulnerabilities.î
 
 [RootVG - Website Dedicated to AIX](http://www.rootvg.net/content/view/102/98/)
 

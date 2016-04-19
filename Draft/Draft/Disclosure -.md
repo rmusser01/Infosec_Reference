@@ -1,6 +1,10 @@
 ##Disclosure
  
 
+
+Responsible Disclosure is Wrong
+https://adamcaudill.com/2015/11/19/responsible-disclosure-is-wrong/
+
 [Portcullis Computer Security Co-ordinated Disclosure Toolkit](https://github.com/portcullislabs/co-ordinated-disclosure-toolkit)
 
 [How to Disclose or Sell an Exploit - DEF CON 21 - James Denaro](https://www.youtube.com/watch?v=N1Xj3f4felg)

@@ -35,7 +35,42 @@ http://www.securitywizardry.com/radar.htm
 
 
 ###CULL
+[[TROOPERS15] Andreas Lindh - Defender Economics](https://www.youtube.com/watch?v=mAP38Xy52X0)
+
+ How do emulators work and how are they written? [closed]
+https://stackoverflow.com/questions/448673/how-do-emulators-work-and-how-are-they-written
+
+http://googleprojectzero.blogspot.com/2015/06/owning-internet-printing-case-study-in.html?m=1
+
+[HORNET: High-speed Onion Routing at the Network Layer](http://arxiv.org/pdf/1507.05724v1.pdf)
+
+
+
+
+[Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers]
+
+
+[Demon](https://github.com/x0r1/Demon)
+* GPU keylogger PoC by Team Jellyfish
+
+| **Simplifying the Business Bar Coded Boarding Pass Implementation Guide** | http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf
+| **What’s contained in a boarding pass barcode?** | https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode
+
+
+| **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
+| **NSA USB Playset - ShmooCon201** | https://www.youtube.com/watch?v=eTDBFpLYcGA
+
+
+**Unicorn-Engine** - Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework. | http://www.unicorn-engine.org/
+| ** NSA's Legal Authorities ** | http://electrospaces.blogspot.com/2015/09/nsas-legal-authorities.html
+
 https://github.com/vrtadmin/moflow
+
+Compiler Security Checks In Depth - MSDN Library
+https://msdn.microsoft.com/library/aa290051.aspx
+
+Counterfeit Object-oriented Programming
+http://syssec.rub.de/media/emma/veroeffentlichungen/2015/03/28/COOP-Oakland15.pdf
 
 https://medium.com/@networksecurity/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0#.r3x0vnfir
 

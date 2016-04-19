@@ -17,6 +17,23 @@ Cull
 
 Add shadowsocks
 
+| OS X Security and Privacy Guide | https://github.com/drduh/OS-X-Security-and-Privacy-Guide |
+
+
+
+http://www.hackerfactor.com/blog/index.php?/archives/703-Invasion-of-Privacy.html
+
+
+
+| **Phones and Privacy for Consumers** - Matt Hoy (mattrix) and David Khudaverdyan (deltaflyer) | http://www.irongeek.com/i.php?page=videos/grrcon2015/submerssion-therapy05-phones-and-privacy-for-consumers-matt-hoy-mattrix-and-david-khudaverdyan-deltaflyer
+
+[HORNET: High-speed Onion Routing at the Network Layer](http://arxiv.org/pdf/1507.05724v1.pdf)
+
+
+
+
+
+
 
 ### <a name="Articles">Articles</a>
 | Title | Link

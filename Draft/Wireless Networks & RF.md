@@ -22,17 +22,22 @@ Cull
 
 
 
-###CULL
+#### Sort
 
 http://umtrx.org/
 
+[RZUSBstick](http://www.atmel.com/tools/rzusbstick.aspx)
+* The starter kit accelerates development, debugging, and demonstration for a wide range of low power wireless applications including IEEE 802.15.4, 6LoWPAN, and ZigBee networks.  The kit includes one USB stick with a 2.4GHz transceiver and a USB connector. The included AT86RF230 transceiver's high sensitivity supports the longest range for wireless products. The AT90USB1287 incorporates fast USB On-the-Go.
+
 http://dl.aircrack-ng.org/wiki-files/doc/technique_papers/Meiners,_Sor_-_WPA_Migration_Mode_WEP_is_back_to_haunt_you_-_slides.pdf 
 
-
+[rtlamr](https://github.com/bemasher/rtlamr)
+* An rtl-sdr receiver for Itron ERT compatible smart meters operating in the 900MHz ISM band. 
 
 
 [HOPE Number Nine (2012): Practical Insecurity in Encrypted Radio](https://www.youtube.com/watch?v=7or-_gT8TWU&app=desktop)
 
+[sysmocom publicly releases Osmocom user manuals](https://www.sysmocom.de/news/sysmocom-publicly-releases-osmocom-user-manuals/)
 
 [Building a portable GSM BTS using the Nuand bladeRF, Raspberry Pi and YateBTS (The Definitive and Step by Step Guide) ](https://blog.strcpy.info/2016/04/21/building-a-portable-gsm-bts-using-bladerf-raspberry-and-yatebts-the-definitive-guide/)
 
@@ -44,8 +49,8 @@ https://media.blackhat.com/us-13/us-13-Nohl-Rooting-SIM-cards-Slides.pdf
 [Universal Radio Hacker](https://github.com/jopohl/urh)
 
 
-| **Security of RFID Protocols – A Case Study** | 
-In the context of Dolev-Yao style analysis of security proto cols, we investigate the security claims of a pro- posed strong-security RFID authentication protocol. We ex hibit a flaw which has gone unnoticed in RFID protocol literature and present the resulting attacks on au thentication, untraceability, and desynchroniza- tion resistance. We analyze and discuss the authors’ proofs of security. References to other vulnerable protocols are given.
+| **Security of RFID Protocols Â– A Case Study** | 
+In the context of Dolev-Yao style analysis of security proto cols, we investigate the security claims of a pro- posed strong-security RFID authentication protocol. We ex hibit a flaw which has gone unnoticed in RFID protocol literature and present the resulting attacks on au thentication, untraceability, and desynchroniza- tion resistance. We analyze and discuss the authorsÂ’ proofs of security. References to other vulnerable protocols are given.
 
 
 https://www.evilsocket.net/2016/03/31/how-to-build-your-own-rogue-gsm-bts-for-fun-and-profit/ 
@@ -65,7 +70,7 @@ http://www.irongeek.com/i.php?page=videos/derbycon5/stable18-stealthy-and-persis
 A modified version of scapy that can leverage GNU Radio to handle a SDR card
 GNU Radio flow graphs (GRC files) we have build that allows full duplex communication
 GNU Radio blocks we have written to handle several protocols
-[The big GSM write-up – how to capture, analyze and crack GSM?](http://domonkos.tomcsanyi.net/?p=418)
+[The big GSM write-up Â– how to capture, analyze and crack GSM?](http://domonkos.tomcsanyi.net/?p=418)
 
 [KillerBee](https://github.com/riverloopsec/killerbee)
 * Framework and Tools for Attacking ZigBee and IEEE 802.15.4 networks.
@@ -99,7 +104,7 @@ https://www.evilsocket.net/2016/03/31/how-to-build-your-own-rogue-gsm-bts-for-fu
 * SnoopSnitch is an Android app that collects and analyzes mobile radio data to make you aware of your mobile network security and to warn you about threats like fake base stations (IMSI catchers), user tracking and over-the-air updates. With SnoopSnitch you can use the data collected in the GSM Security Map at gsmmap.org and contribute your own data to GSM Map. This application currently only works on Android phones with a Qualcomm chipset and a stock Android ROM (or a suitable custom ROM with Qualcomm DIAG driver). It requires root priviliges to capture mobile network data.
 
 
-[Brute forcing Wi-Fi Protected Setup - Stefan Viehböck](https://sviehb.files.wordpress.com/2011/12/viehboeck_wps.pdf)
+[Brute forcing Wi-Fi Protected Setup - Stefan ViehbÃ¶ck](https://sviehb.files.wordpress.com/2011/12/viehboeck_wps.pdf)
 * The original paper on WPS cracking.
 
 [IEEE 802.11 Tutorial](http://wow.eecs.berkeley.edu/ergen/docs/ieee.pdf)
@@ -113,12 +118,12 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 [Sniffing GSM with HackRF](https://web.archive.org/web/20130825000211/http://binaryrf.com/viewtopic.php?t=6&f=9)
 
-[ CampZer0 // Domonkos Tomcsányi: GSM - have we overslept the last wake-up call?](https://www.youtube.com/watch?v=3cnnQFP3VqE)
+[ CampZer0 // Domonkos TomcsÃ¡nyi: GSM - have we overslept the last wake-up call?](https://www.youtube.com/watch?v=3cnnQFP3VqE)
 
 [Intercepting GSM Traffic](https://www.blackhat.com/presentations/bh-dc-08/Steve-DHulton/Presentation/bh-dc-08-steve-dhulton.pdf)
 
 [GSM: SRSLY?](https://events.ccc.de/congress/2009/Fahrplan/events/3654.en.html)
-* The worlds most popular radio system has over 3 billion handsets in 212 countries and not even strong encryption. Perhaps due to cold-war era laws, GSM's security hasn't received the scrutiny it deserves given its popularity. This bothered us enough to take a look; the results were surprising. From the total lack of network to handset authentication, to the "Of course I'll give you my IMSI" message, to the iPhone that really wanted to talk to us. It all came as a surprise – stunning to see what $1500 of USRP can do. Add a weak cipher trivially breakable after a few months of distributed table generation and you get the most widely deployed privacy threat on the planet. Cloning, spoofing, man-in-the-middle, decrypting, sniffing, crashing, DoS'ing, or just plain having fun. If you can work a BitTorrent client and a standard GNU build process then you can do it all, too. Prepare to change the way you look at your cell phone, forever
+* The worlds most popular radio system has over 3 billion handsets in 212 countries and not even strong encryption. Perhaps due to cold-war era laws, GSM's security hasn't received the scrutiny it deserves given its popularity. This bothered us enough to take a look; the results were surprising. From the total lack of network to handset authentication, to the "Of course I'll give you my IMSI" message, to the iPhone that really wanted to talk to us. It all came as a surprise Â– stunning to see what $1500 of USRP can do. Add a weak cipher trivially breakable after a few months of distributed table generation and you get the most widely deployed privacy threat on the planet. Cloning, spoofing, man-in-the-middle, decrypting, sniffing, crashing, DoS'ing, or just plain having fun. If you can work a BitTorrent client and a standard GNU build process then you can do it all, too. Prepare to change the way you look at your cell phone, forever
 
 [Wideband GSM Sniffing [27C3]](https://www.youtube.com/watch?v=ZrbatnnRxFc)
 * GSM is still the most widely used security technology in the world with a user base of 5 billion and a quickly growing number of critical applications. 26C3's rainbow table attack on GSM's A5/1 encryption convinced many users that GSM calls should be considered unprotected. The network operators, however, have not woken up to the threat yet. Perhaps the new capabilities to be unleashed this year -- like wide-band sniffing and real-time signal processing -- will wake them up. Now that GSM A5/1 encryption can be cracked in seconds, the complexity of wireless phone snooping moved to signal processing. Since GSM hops over a multitude of channels, a large chunk of radio spectrum needs to be analyzed, for example with USRPs, and decoded before storage or decoding. We demonstrate how this high bandwidth task can be achieved with cheap programmable phones.
@@ -183,7 +188,7 @@ PyBT
 * Gnuradio blocks and tools for receiving GSM transmissions
 
 [GSM MAP](http://gsmmap.org/#!/about) 
-* The GSM Security Map compares the protection capabilities of mobile networks. Networks are rated in their protection capabilities relative to a reference network that implements all protection measures that have been seen “in the wild”. The reference is regularly updated to reflect new protection ideas becoming commercially available. Networks, therefore, have to improve continuously to maintain their score, just as hackers are continuously improving their capabilities.
+* The GSM Security Map compares the protection capabilities of mobile networks. Networks are rated in their protection capabilities relative to a reference network that implements all protection measures that have been seen Â“in the wildÂ”. The reference is regularly updated to reflect new protection ideas becoming commercially available. Networks, therefore, have to improve continuously to maintain their score, just as hackers are continuously improving their capabilities.
 
 [Mobile self-defense - Karsten Nohl](https://www.youtube.com/watch?v=GeCkO0fWWqc)
 
@@ -357,6 +362,5 @@ In this article, we proved the capabilities of an inexpensive wireless adapter a
 ###<a name="misc">Miscellaneous</a>
 
 [US Marine Antenna Handbook](http://www.zerobeat.net/r3403c.pdf?1)
-
 
 

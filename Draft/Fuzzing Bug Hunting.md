@@ -16,12 +16,21 @@ TOC
 
 
 
+####sort
+[honggfuzz])(https://github.com/google/honggfuzz)
+*  Security oriented fuzzer with powerful analysis options. Supports evolutionary, feedback-driven fuzzing based on code coverage (sw and hw) http://google.github.io/honggfuzz/
+
+[Google - AddressSanitizer, ThreadSanitizer, MemorySanitizer, LeaksSanitizer](https://github.com/google/sanitizers)
+* This project is the home for Sanitizers: AddressSanitizer, MemorySanitizer, ThreadSanitizer, LeakSanitizer. The actual code resides in the LLVM repository. Here we keep extended documentation, bugs and some helper code. 
+
+#### end sort
+
+
 ###General Writeups
 [Fuzzing for MS15-010](http://blog.beyondtrust.com/fuzzing-for-ms15-010)
 * Is what it says on the tin.
 
 [Advice From A Researcher: Hunting XXE For Fun and Profit](https://blog.bugcrowd.com/advice-from-a-researcher-xxe/)
-
 
 [Quick explanation of fuzzing and various fuzzers](http://whoisjoe.info/?p=16)
 

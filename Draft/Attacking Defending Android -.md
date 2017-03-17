@@ -38,6 +38,8 @@ Cull
 
 ### Cull/Sort
 
+[Dex Education 201 - Anti-Emulation.pdf](https://github.com/strazzere/anti-emulator/blob/master/slides/Dex%20Education%20201%20-%20Anti-Emulation.pdf)
+
 https://github.com/ucsb-seclab/baredroid
 
 [Stunneller](https://github.com/ultramancool/Stunneler)
@@ -292,6 +294,10 @@ Check the Encryption section of the overall guide for more information.
 [Android apps in sheep's clothing](http://www.modzero.ch/modlog/archives/2015/04/01/android_apps_in_sheeps_clothing/index.html)
 * We identified a security weakness in Android's approach of handling UI elements, circumventing parts of Android's sandboxing approach. While this attack is simple from a technical point of view, the impact of exploiting such a vulnerability is significant. It affects Android based devices as well as Blackberry mobile devices running the Android runtime environment.
 
+
+
+
+
 ### **<a name="Write">Write-ups</a>**
  | Title     | Link |
 | -------- | ------------------------ |
@@ -300,6 +306,7 @@ Check the Encryption section of the overall guide for more information.
 | **Understanding the Android bytecode** - Writeup on reversing/understanding Android Bytecode| https://mariokmk.github.io/programming/2015/03/06/learning-android-bytecode.html
 | **ClockLockingBeats** - Repo for the DARPA CFT / Clock Locking Beats project. Exploring Android kernel and processor interactions to hide running threads |https://github.com/monk-dot/ClockLockingBeats
 
+[Hacking Android phone. How deep the rabbit hole goes.](https://hackernoon.com/hacking-android-phone-how-deep-the-rabbit-hole-goes-18b62ad65727#.txib8od0m)
 
 [Android Bytecode Obfuscation - Patrick Schulz 2012](http://dexlabs.org/blog/bytecode-obfuscation)
 [Android Pattern Lock Cracker](https://github.com/sch3m4/androidpatternlock) 

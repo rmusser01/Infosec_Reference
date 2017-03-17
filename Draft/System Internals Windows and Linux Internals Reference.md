@@ -17,9 +17,7 @@ To Do:
 *	Clear Cull List
 *	Split sections into reference material and writeup material(quick vs long reference)
 
-CULL
-
-
+#### Sort
 http://linux-audit.com/elf-binaries-on-linux-understanding-and-analysis/?utm_content=buffere95dc&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 
 
@@ -29,6 +27,7 @@ http://duartes.org/gustavo/blog/category/internals/
 
 https://www.bnxnet.com/wp-content/uploads/2015/01/WinAPIs_for_hackers.pdf
 
+[Stack Smashing Protector](http://wiki.osdev.org/Stack_Smashing_Protector)
 
 https://xorl.wordpress.com/2010/10/14/linux-glibc-stack-canary-values/
 
@@ -51,11 +50,10 @@ https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-
 
 [Hyper-V internals](https://hvinternals.blogspot.fr/2015/10/hyper-v-internals.html)
 
-
-
-
 http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx
 
+
+#### End Sort
 
 
 ###<a name="general">General Internals</a>

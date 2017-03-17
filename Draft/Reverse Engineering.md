@@ -46,6 +46,12 @@ To be sorted
 
 http://stunnix.com/prod/cxxo/
 
+[IDAnt-wanna](https://github.com/strazzere/IDAnt-wanna)
+* ELF header abuse
+
+[REhints MEX - WinDBG addons](https://github.com/REhints/WinDbg/tree/master/MEX)
+
+
 [EasyHook] https://easyhook.github.io/
 EasyHook makes it possible to extend (via hooking) unmanaged code APIs with pure managed functions, from within a fully managed environment on 32- or 64-bit Windows XP SP2, Windows Vista x64, Windows Server 2008 x64, Windows 7, Windows 8.1, and Windows 10.
 
@@ -57,6 +63,10 @@ EasyHook makes it possible to extend (via hooking) unmanaged code APIs with pure
 [python-oletools](https://github.com/decalage2/oletools)
 * python-oletools is a package of python tools to analyze Microsoft OLE2 files (also called Structured Storage, Compound File Binary Format or Compound Document File Format), such as Microsoft Office documents or Outlook messages, mainly for malware analysis, forensics and debugging. It is based on the olefile parser. See http://www.decalage.info/python/oletools for more info.
 
+[asar](https://github.com/electron/asar)
+*  Simple extensive tar-like archive format with indexing
+
+https://speakerdeck.com/patrickwardle/defcon-2016-i-got-99-problems-but-little-snitch-aint-one
 
 
 [The Empire Strikes Back Apple – how your Mac firmware security is completely broken](https://reverse.put.as/2015/05/29/the-empire-strikes-back-apple-how-your-mac-firmware-security-is-completely-broken/)
@@ -94,11 +104,12 @@ http://blog.techorganic.com/2016/03/08/radare-2-in-0x1e-minutes/
  mammon_'s tales to his grandson - https://mammon.github.io/tales/
 
 
+[Make Confide great again? No, we cannot](http://blog.quarkslab.com/make-confide-great-again-no-we-cannot.html)
+* RE'ing an electron based "secure communications" app
 
 
-
-Voltron https://github.com/snare/voltron
-Voltron is an extensible debugger UI toolkit written in Python. It aims to improve the user experience of various debuggers (LLDB, GDB, VDB and WinDbg) by enabling the attachment of utility views that can retrieve and display data from the debugger host. By running these views in other TTYs, you can build a customised debugger user interface to suit your needs.
+[Voltro](https://github.com/snare/voltron)
+* Voltron is an extensible debugger UI toolkit written in Python. It aims to improve the user experience of various debuggers (LLDB, GDB, VDB and WinDbg) by enabling the attachment of utility views that can retrieve and display data from the debugger host. By running these views in other TTYs, you can build a customised debugger user interface to suit your needs.
 [CSCI 4974 / 6974 Hardware Reverse Engineering](http://security.cs.rpi.edu/courses/hwre-spring2014/)
 
 https://github.com/BinaryAnalysisPlatform/bap-ida-python
@@ -128,8 +139,8 @@ http://fileformats.archiveteam.org/wiki/PNG
 
 
 
-fREedom - capstone based disassembler for extracting to binnavi 
-fREedom is a primitive attempt to provide an IDA Pro independent means of extracting disassembly information from executables for use with binnavi (https://github.com/google/binnavi).
+[fREedom](capstone based disassembler for extracting to binnavi )
+* fREedom is a primitive attempt to provide an IDA Pro independent means of extracting disassembly information from executables for use with binnavi (https://github.com/google/binnavi).
 
 [Reverse Engineering Windows AFD.sys](https://recon.cx/2015/slides/recon2015-20-steven-vittitoe-Reverse-Engineering-Windows-AFD-sys.pdf)
 [Kam1n0-Plugin-IDA-Pro](https://github.com/McGill-DMaS/Kam1n0-Plugin-IDA-Pro)
@@ -168,6 +179,9 @@ https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
 
 
  [PE File Format Graphs](http://blog.dkbza.org/2012/08/pe-file-format-graphs.html?view=mosaic)
+
+[Encyclopedia of Graphics File Formats](http://fileformats.archiveteam.org/wiki/Encyclopedia_of_Graphics_File_Formats)
+
 
 
 

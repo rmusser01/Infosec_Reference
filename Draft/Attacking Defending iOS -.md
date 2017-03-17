@@ -30,8 +30,7 @@
 
 
 
-[iOSRE](https://github.com/kpwn/iOSRE)
-* The aim of this project is to provide useful and updated tools and knowledge on iOS reverse engineering and exploitation. This is an ongoing effort, and still in a very new stage.
+
 
 
 ### <a name="harden">List of Hardening Guides for iOS</a>
@@ -57,6 +56,10 @@
 
 
 ### <a name="train">Training & Tutorials</a>
+
+[iOSRE](https://github.com/kpwn/iOSRE)
+* The aim of this project is to provide useful and updated tools and knowledge on iOS reverse engineering and exploitation. This is an ongoing effort, and still in a very new stage.
+
 
 | Title     | Link |
 | -------- | ------------------------ |

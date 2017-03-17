@@ -22,10 +22,13 @@ Cull
  [java-aes-crypto (Android class)](https://github.com/tozny/java-aes-crypto)
 * A simple Android class for encrypting & decrypting strings, aiming to avoid the classic mistakes that most such classes suffer from.
 
+[Secure Coding Cheat Sheet - OWASP](https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet)
+
+
 http://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul 
 
 
- [Reverse debugging for Python](https://morepypy.blogspot.com/2016/07/reverse-debugging-for-python.html?m=1)
+[Reverse debugging for Python](https://morepypy.blogspot.com/2016/07/reverse-debugging-for-python.html?m=1)
 
 Getting Started with WindDbg Series - OpenSecurity Research
 [Getting Started with WinDbg part 1](http://blog.opensecurityresearch.com/2013/12/getting-started-with-windbg-part-1.html)

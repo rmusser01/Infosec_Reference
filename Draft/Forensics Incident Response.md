@@ -26,6 +26,9 @@ Better security - Mean time to detect/Mean time to respond
 https://github.com/SekoiaLab/Fastir_Collector
 http://www.sekoia.fr/blog/wp-content/uploads/2015/10/FastIR-Collector-on-advanced-threats_v1.4.pdf
 
+[Fixing an Infected PHP/WordPress Web Server](https://cachecrew.com/fixing-infected-php-web-server/)
+* Writeup of hunting an infection
+
 [OS X Forensics Generals](https://davidkoepi.wordpress.com/category/os-x-forensics-10-8/)
 
 [usbkill](https://github.com/stemid/usbkill)
@@ -39,10 +42,8 @@ http://dfir-blog.com/2016/03/13/how-to-parse-windows-eventlog/
 
 https://sroberts.github.io/2016/01/11/introduction-to-dfir-the-beginning/ 
 
-
-
-
-
+[MIG: Mozilla InvestiGator](https://http://mig.mozilla.org/)
+* Mozilla's real-time digital forensics and investigation platform.
 
 [OSX Lion User Interface Preservation Analysis](https://digital-forensics.sans.org/blog/2011/10/03/osx-lion-user-interface-preservation-analysis#)
 

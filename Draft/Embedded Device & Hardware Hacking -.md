@@ -8,13 +8,14 @@ Cull
 * [General](#general)
 * [Attacking Routers](#routers)
 * [Cable Modem Hacking](#modem)
-* [Educational](#education)
+* [Educational/Information on things you wouldn't find in a Dictionary](#education)
 * [Flash Memory](#flash)
 * [Internet of Things](#iot)
 * [General Tools(S/W & H/W)](#gentools)
 * [General Hardware Hacking](#generalhw)
 * [Miscellaneous](#misc)
 * [PCI](#PCI)
+* [USB](#USB)
 * [PenTest Dropboxes](#dropbox)
 * [Teensy/Rubberducky Style Attack Tools](#teensy)
 * [SD Cards](#sdcard)
@@ -27,81 +28,47 @@ Cull
 
 
 
+
+
+
+#### To Sort
+
+http://www.sp3ctr3.me/hardware-security-resources/ 
+
+http://greatscottgadgets.com/infiltrate2013/
+#### end sort
+
+
+
+
+
 ###General
+
+
+
+[Reversing and Exploiting Embedded Devices: The Software Stack (Part 1)](https://p16.praetorian.com/blog/reversing-and-exploiting-embedded-devices-part-1-the-software-stack)
+
+[Hardware Security and Trust/ECE 4451/5451: Introduction to Hardware Security and Trust](www.engr.uconn.edu/~tehrani/teaching/hst/)
 
 [NSA Playset](http://www.nsaplayset.org/)
 * In the coming months and beyond, we will release a series of dead simple, easy to use tools to enable the next generation of security researchers.  We, the security community have learned a lot in the past couple decades, yet the general public is still ill equipped to deal with real threats that face them every day, and ill informed as to what is possible. Inspired by the NSA ANT catalog, we hope the NSA Playset will make cutting edge security tools more accessible, easier to understand, and harder to forget.  Now you can play along with the NSA!
 
-
-| **NSA USB Playset - ShmooCon201** | https://www.youtube.com/watch?v=eTDBFpLYcGA
-
-###Cull
-
-http://www.sp3ctr3.me/hardware-security-resources/ 
-
-https://www.praetorian.com/blog/reversing-and-exploiting-embedded-devices-part-1-the-software-stack 
-
-
-
-
-
-[Hardware Security and Trust/ECE 4451/5451: Introduction to Hardware Security and Trust](www.engr.uconn.edu/~tehrani/teaching/hst/)
-
-
-
-https://github.com/ufrisk/pcileech
-
-
-https://www.praetorian.com/blog/reversing-and-exploiting-embedded-devices-part-1-the-software-stack
-
-[USBProxy](https://github.com/dominicgs/USBProxy)
-* A USB man in the middle device using USB On-The-Go, libUSB and gadgetFS 
-
-[Hacking the PS Vita](http://yifan.lu/2015/06/21/hacking-the-ps-vita/)
-
 [Chip & PIN is Definitely Broken - Defcon 19](https://www.youtube.com/watch?v=JABJlvrZWbY)
 
-Chameleon Mini 
-* [Chameleon: A Versatile Emulator for Contactless Smartcards - Paper](https://www.ei.rub.de/media/crypto/veroeffentlichungen/2011/11/16/chameleon.pdf)
-* [Milking the Digital Cash Cow [29c3] Video Presentation](https://www.youtube.com/watch?v=Y1o2ST03O8I)
-* [ChameleonMini Hardware](https://github.com/emsec/ChameleonMini/wiki)
-
-[Implementing an USB Host Driver Fuzzer - Daniel Mende - Troopers14](https://www.youtube.com/watch?v=h777lF6xjs4)
-
-[Introduction to Trusted Execution  Environments - Steven J. Murdoch](https://www.cl.cam.ac.uk/~sjm217/talks/rhul14tee.pdf)
-[U-Boot -- the Universal Boot Loader](http://www.denx.de/wiki/U-Boot)
-* Very popular on embedded devices open source bootloader for linux
-* [Manual/Documentation](http://www.denx.de/wiki/DULG/Manual)
-
-[Anti-Evil Maid](http://theinvisiblethings.blogspot.com/2011/09/anti-evil-maid.html?m=1)
-
-
-[Adapting Software Fault Isolation to Contemporary CPU Architectures](https://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35649.pdf)
-* Software Fault Isolation (SFI) is an effective approach to sandboxing binary code of questionable provenance, an interesting use case for native plugins in a Web browser. We present software fault isolation schemes for ARM and x86-64 that provide control-flow and memory integrity with average performance overhead of under 5% on ARM and 7% on x86-64. We believe these are the best known SFI implementations for these architectures, with significantly lower overhead than previous systems for similar architectures. Our experience suggests that these SFI implementations benefit from instruction-level parallelism, and have particularly small impact for work- loads that are data memory-bound, both properties that tend to reduce the impact of our SFI systems for future CPU implementations.
+| **NSA USB Playset - ShmooCon201** | https://www.youtube.com/watch?v=eTDBFpLYcGA
 
 [Multiplexed Wired Attack Surfaces - Michael Ossmann & Kos - Toorcon15](https://www.youtube.com/watch?v=4QB79921Nlw)
 * Manufacturers of mobile devices often multiplex several wired interfaces onto a single connector. Some of these interfaces, probably intended for test and development, are still enabled when the devices ship. We'll show you how you can get a shell on a popular mobile phone via its USB port without using a USB connection and we will release an open source tool for exploring multiplexed wired interfaces.
 
-
-http://greatscottgadgets.com/infiltrate2013/
-
-http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html
+[Anti-Evil Maid](http://theinvisiblethings.blogspot.com/2011/09/anti-evil-maid.html?m=1)
 
 
-
-[Analyzing and Running binaries from Firmware Images - Part 1](http://w00tsec.blogspot.com.br/2013/09/analyzing-and-running-binaries-from.html)
 
 
 
 ###<a name="routers">Attacking Routers</a>
 
 [More on HNAP - What is it, How to Use it, How to Find it](https://isc.sans.edu/diary/More+on+HNAP+-+What+is+it%2C+How+to+Use+it%2C+How+to+Find+it/17648)
-
-TR-069
-
-
-[I Hunt TR-069 Admins - Pwning ISPs Like a Boss - Defcon 22](https://media.defcon.org/DEF%20CON%2022/DEF%20CON%2022%20video%20and%20slides/DEF%20CON%2022%20Hacking%20Conference%20Presentation%20By%20Shahar%20Tal%20-%20I%20Hunt%20TR%20-%20069%20Admins%20-%20Pwning%20ISPs%20Like%20a%20Boss%20-%20Video%20and%20Slides.m4v)
-* [Related to TR-069](http://blog.3slabs.com/2012/12/a-brief-survey-of-cwmp-security.html)
 
 [Router Post-Exploitation Framework](https://github.com/mncoppola/rpef
 * Abstracts and expedites the process of backdooring stock firmware images for consumer/SOHO routers.
@@ -115,6 +82,25 @@ TR-069
 [Hacking the D-Link DIR-890L](http://www.devttys0.com/2015/04/hacking-the-d-link-dir-890l/)
 
 
+#####TR-069
+[I Hunt TR-069 Admins - Pwning ISPs Like a Boss - Defcon 22](https://media.defcon.org/DEF%20CON%2022/DEF%20CON%2022%20video%20and%20slides/DEF%20CON%2022%20Hacking%20Conference%20Presentation%20By%20Shahar%20Tal%20-%20I%20Hunt%20TR%20-%20069%20Admins%20-%20Pwning%20ISPs%20Like%20a%20Boss%20-%20Video%20and%20Slides.m4v)
+* [Related to TR-069](http://blog.3slabs.com/2012/12/a-brief-survey-of-cwmp-security.html)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ###<a name="modem">Cable Modem Hacking</a>
 
@@ -123,6 +109,15 @@ TR-069
 
 [Keykeriki v2.0](http://www.remote-exploit.org/articles/keykeriki_v2_0__8211_2_4ghz/index.html)
 * Hardware to attack wireless keyboards and other such things
+
+
+
+
+
+
+
+
+
 
 
 
@@ -147,12 +142,24 @@ TR-069
 
 [Common methods of H/W hacking](https://www.sparkfun.com/news/1314)
 
+[Modbus Protocol Overview](https://www.lammertbies.nl/comm/info/modbus.html)
+
+
+
+
+
 
 
 
 
 ###<a name="flash">Flash Memory</a>
 [Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
+
+
+
+
+
+
 
 
 
@@ -209,15 +216,37 @@ TR-069
 
 [Learn how to send an SMS text message in Python by pushing a button on your Arduino!](http://juliahgrace.com/intro-hardware-hacking-arduino.html)
 
+[U-Boot -- the Universal Boot Loader](http://www.denx.de/wiki/U-Boot)
+* Very popular on embedded devices open source bootloader for linux
+* [Manual/Documentation](http://www.denx.de/wiki/DULG/Manual)
 
 
 
-##1#<a name="pci">PCI</a>
+
+
+
+###<a name="pci">PCI</a>
 
 
 [Inception](https://github.com/carmaa/inception)
 * Inception is a physical memory manipulation and hacking tool exploiting PCI-based DMA. The tool can attack over FireWire, Thunderbolt, ExpressCard, PC Card and any other PCI/PCIe interfaces. Inception aims to provide a relatively quick, stable and easy way of performing intrusive and non-intrusive memory hacks against live computers using DMA.
 [Stupid PCIe Tricks featuring NSA Playset: PCIe](https://www.youtube.com/watch?v=Zwz61uVxiM0)
+
+[PCILeech](https://github.com/ufrisk/pcileech)
+* The PCILeech use the USB3380 chip in order to read from and write to the memory of a target system. This is achieved by using DMA over PCI Express. No drivers are needed on the target system. The USB3380 is only able to read 4GB of memory natively, but is able to read all memory if a kernel module (KMD) is first inserted into the target system kernel. Reading 8GB of memory from the target system take around one (1) minute. The PCILeech hardware is connected with USB3 to a controlling computer running the PCILeech program. PCILeech is also capable of inserting a wide range of kernel modules into the targeted kernels - allowing for pulling and pushing files, remove the logon password requirement, loading unsigned drivers, executing code and spawn system shells. The software is written in visual studio and runs on Windows 7/Windows 10. Supported target systems are currently the x64 versions of: Linux, FreeBSD, macOS and Windows.
+
+
+
+
+###<a name="USB">USB</a>
+
+[USBProxy](https://github.com/dominicgs/USBProxy)
+* A USB man in the middle device using USB On-The-Go, libUSB and gadgetFS 
+
+[Implementing an USB Host Driver Fuzzer - Daniel Mende - Troopers14](https://www.youtube.com/watch?v=h777lF6xjs4)
+
+
+
 
 
 
@@ -269,6 +298,17 @@ https://github.com/pwnieexpress/raspberry_pwn
 [DRIVE IT YOURSELF: USB CAR](http://www.linuxvoice.com/drive-it-yourself-usb-car-6/)
 * Reversing USB and writing USB Drivers for an RC car.
 
+[Debug Probes - J-Link and J-Trace](https://www.segger.com/jlink-debug-probes.html)
+
+[Analyzing and Running binaries from Firmware Images - Part 1](http://w00tsec.blogspot.com.br/2013/09/analyzing-and-running-binaries-from.html)
+
+
+
+
+
+
+
+
 
 
 ###<a name="usb">USB</a>
@@ -318,6 +358,14 @@ BadUSB
 
 [Introduction to Smart Card Security](http://resources.infosecinstitute.com/introduction-smartcard-security/)
 
+Chameleon Mini 
+* [Chameleon: A Versatile Emulator for Contactless Smartcards - Paper](https://www.ei.rub.de/media/crypto/veroeffentlichungen/2011/11/16/chameleon.pdf)
+* [Milking the Digital Cash Cow [29c3] Video Presentation](https://www.youtube.com/watch?v=Y1o2ST03O8I)
+* [ChameleonMini Hardware](https://github.com/emsec/ChameleonMini/wiki)
+
+[Hacking a USB Modem & SIM](http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html)
+
+
 
 
 ###<a name="papers">Papers</a>
@@ -335,9 +383,10 @@ Embedded Systems](http://www.cs.dartmouth.edu/~sws/pubs/bgjss12.pdf)
 [Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors](https://www.ece.cmu.edu/~safari/pubs/kim-isca14.pdf)
 * Abstract. Memory isolation is a key property of a reliable and secure computing system — an access to one memory ad- dress should not have unintended side e ects on data stored in other addresses. However, as DRAM process technology scales down to smaller dimensions, it becomes more di  cult to prevent DRAM cells from electrically interacting with each other. In this paper, we expose the vulnerability of commodity DRAM chips to disturbance errors. By reading from the same address in DRAM, we show that it is possible to corrupt data in nearby addresses. More specifically, activating the same row in DRAM corrupts data in nearby rows. We demonstrate this phenomenon on Intel and AMD systems using a malicious program that generates many DRAM accesses. We induce errors in most DRAM modules (110 out of 129) from three major DRAM manufacturers. From this we conclude that many deployed systems are likely to be at risk. We identify the root cause of disturbance errors as the repeated toggling of a DRAM row’s wordline, which stresses inter-cell coupling e ects that accelerate charge leakage from nearby rows. We provide an extensive characterization study of disturbance errors and their behavior using an FPGA-based testing plat- form. Among our key findings, we show that (i) it takes as few as 139K accesses to induce an error and (ii) up to one in every 1.7K cells is susceptible to errors. After examining var- ious potential ways of addressing the problem, we propose a low-overhead solution to prevent the errors.
 
+[Adapting Software Fault Isolation to Contemporary CPU Architectures](https://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35649.pdf)
+* Software Fault Isolation (SFI) is an effective approach to sandboxing binary code of questionable provenance, an interesting use case for native plugins in a Web browser. We present software fault isolation schemes for ARM and x86-64 that provide control-flow and memory integrity with average performance overhead of under 5% on ARM and 7% on x86-64. We believe these are the best known SFI implementations for these architectures, with significantly lower overhead than previous systems for similar architectures. Our experience suggests that these SFI implementations benefit from instruction-level parallelism, and have particularly small impact for work- loads that are data memory-bound, both properties that tend to reduce the impact of our SFI systems for future CPU implementations.
 
-
-
+[Introduction to Trusted Execution  Environments - Steven J. Murdoch](https://www.cl.cam.ac.uk/~sjm217/talks/rhul14tee.pdf)
 
 
 

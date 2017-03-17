@@ -20,7 +20,14 @@ TOC
 
 #####To be sorted
 
+[Simple domain fronting PoC with GAE C2 server](https://www.securityartwork.es/2017/01/31/simple-domain-fronting-poc-with-gae-c2-server/)
+* In this entry we continue with domain fronting; on this occasion we will explore how to implement a simple PoC of a command and control and exfiltration server on Google App Engine (GAE), and we will see how to do the domain fronting from Windows, with a VBS or PowerShell script, to hide interactions with the C2 server.
+
 [More on HNAP - What is it, How to Use it,How to Find it](https://isc.sans.edu/diary/More+on+HNAP+-+What+is+it%2C+How+to+Use+it%2C+How+to+Find+it/17648)
+
+[Modbus interface tutorial](https://www.lammertbies.nl/comm/info/modbus.html)
+
+[Post Exploitation Using netNTLM Downgrade attacks - Fishnet/Archive.org](https://web.archive.org/web/20131023064257/http://www.fishnetsecurity.com/6labs/blog/post-exploitation-using-netntlm-downgrade-attacks)
 
 [iv-wrt](https://github.com/iv-wrt/iv-wrt)
 * An Intentionally Vulnerable Router Firmware Distribution[
@@ -59,6 +66,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [Ditch PsExec, SprayWMI is here ;)](http://www.pentest.guru/index.php/2015/10/19/ditch-psexec-spraywmi-is-here/)
 
+[Windows Attacks AT is the new black](https://www.slideshare.net/mubix/windows-attacks-at-is-the-new-black-26665607)
 
 [WMIOps](https://github.com/ChrisTruncer/WMIOps)
 * WMIOps is a powershell script that uses WMI to perform a variety of actions on hosts, local or remote, within a Windows environment. It's designed primarily for use on penetration tests or red team engagements.
@@ -90,8 +98,11 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [ms15-034.nse Script](https://github.com/pr4jwal/quick-scripts/blob/master/ms15-034.nse)
 
+[Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation)
+* Invoke-Obfuscation is a PowerShell v2.0+ compatible PowerShell command and script obfuscator.
+* [Presentation](https://www.youtube.com/watch?v=P1lkflnWb0I)
 
-
+[How to Bypass Anti-Virus to Run Mimikatz](http://www.blackhillsinfosec.com/?p=5555)
 
 
 

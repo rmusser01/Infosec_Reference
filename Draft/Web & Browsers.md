@@ -49,7 +49,7 @@ Java Serialization papers/stuff
 
 
 
-####Cull
+#### Sort
 https://github.com/qll/attacking-browser-extensions 
 
 http://console-cowboys.blogspot.com/2011/05/web-hacking-video-series-1-automating.html 
@@ -76,6 +76,13 @@ XSS game http://escape.alf.nu/
 
 [Server-side browsing  considered harmful](http://www.agarri.fr/docs/AppSecEU15-Server_side_browsing_considered_harmful.pdf)
 
+[File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
+
+
+[gethead](https://github.com/httphacker/gethead)
+* HTTP Header Analysis Vulnerability Tool 
+
+#### End Sort
 
 
 

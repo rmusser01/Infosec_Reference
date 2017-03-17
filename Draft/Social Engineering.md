@@ -29,6 +29,13 @@ http://www.irongeek.com/i.php?page=videos/derbycon5/break-me08-pwning-people-per
 
 [PG01 Dropping hell0days Business Interaction for Security Professionals Or Anyone Else Elliot Johnso ](https://www.youtube.com/watch?v=COyN3NwY1v0)
 
+
+[king-phisher](https://github.com/securestate/king-phisher)
+*  Phishing Campaign Toolkit
+
+[gophish documentation](https://getgophish.com/documentation/)
+
+
 [Area41 2016: Dominique-Cédric Brack: Professional Social Engineering](https://youtu.be/NcpmhsSVzuM)
 
 

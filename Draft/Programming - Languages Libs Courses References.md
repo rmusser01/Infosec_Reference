@@ -24,14 +24,15 @@ Cull
 
 [Secure Coding Cheat Sheet - OWASP](https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet)
 
+[Loop Patterns](https://users.cs.duke.edu/~ola/patterns/plopd/loops.html#loop-and-a-half)
 
 http://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul 
 
 
 [Reverse debugging for Python](https://morepypy.blogspot.com/2016/07/reverse-debugging-for-python.html?m=1)
 
-Getting Started with WindDbg Series - OpenSecurity Research
-[Getting Started with WinDbg part 1](http://blog.opensecurityresearch.com/2013/12/getting-started-with-windbg-part-1.html)
+#####Getting Started with WindDbg Series - OpenSecurity Research
+* [Getting Started with WinDbg part 1](http://blog.opensecurityresearch.com/2013/12/getting-started-with-windbg-part-1.html)
 
 [smalisca](https://github.com/dorneanu/smalisca)
 * Static Code Analysis for Smali files 
@@ -43,14 +44,14 @@ http://www.harmonysecurity.com/files/HS-P005_ReflectiveDllInjection.pdf
 | **Graudit** - Graudit is a simple script and signature sets that allows you to find potential security flaws in source code using the GNU utility grep. It's comparable to other static analysis applications like RATS, SWAAT and flaw-finder while keeping the technical requirements to a minimum and being very flexible. | http://www.justanotherhacker.com/projects/graudit.html
 
 
-An Introduction to Debugging the Windows Kernel with WinDbg
-http://www.contextis.com/resources/blog/introduction-debugging-windows-kernel-windbg/
+[An Introduction to Debugging the Windows Kernel with WinDbg](http://www.contextis.com/resources/blog/introduction-debugging-windows-kernel-windbg/)
 
 | **Python in a hacker's toolbox (PyConPl'15)** | http://gynvael.coldwind.pl/?lang=en&id=572
 
 
-https://github.com/bnagy/cgasm
-cgasm is a standalone, offline terminal-based tool with no dependencies that gives me x86 assembly documentation. It is pronounced "SeekAzzem".
+[cgasm](https://github.com/bnagy/cgasm)
+* cgasm is a standalone, offline terminal-based tool with no dependencies that gives me x86 assembly documentation. It is pronounced "SeekAzzem".
+
 [Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers]
 
 

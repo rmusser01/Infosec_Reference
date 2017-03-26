@@ -34,6 +34,10 @@ TOC
 
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
+
+[Break Fast Serial](https://github.com/GoSecure/break-fast-serial)
+* A proof of concept that demonstrates asynchronous scanning for Java deserialization bugs
+
 #####sort end
 
 

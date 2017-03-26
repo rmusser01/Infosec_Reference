@@ -4,14 +4,18 @@
 TOC
 Cull
 
-* [General(#general
+* [General](#general
 * [General Software Tools](#generalswt)
+* [Tutorials and Guides](#tut)
+* [Non Tutorial Writeups](#non-tut)
 * [Dongles/HW Tools](#dongles)
 * [Cellular Networks](#cn)
 * [Software Defined Radio(#sdr)
 * [802.11](#80211)
+* [RFID](#rfid)
 * [Zigbee](#zigbee)
 * [Bluetooth](#bt)
+* [Z-Wave](#zwave)
 * [RetroReflectors](#retroreflectors)
 * [Foxhunting & WarDriving](#fxh}
 * [General Blogs/Sites](#gbs)
@@ -25,139 +29,20 @@ Cull
 #### Sort
 
 http://umtrx.org/
-
-[RZUSBstick](http://www.atmel.com/tools/rzusbstick.aspx)
-* The starter kit accelerates development, debugging, and demonstration for a wide range of low power wireless applications including IEEE 802.15.4, 6LoWPAN, and ZigBee networks.  The kit includes one USB stick with a 2.4GHz transceiver and a USB connector. The included AT86RF230 transceiver's high sensitivity supports the longest range for wireless products. The AT90USB1287 incorporates fast USB On-the-Go.
-
-http://dl.aircrack-ng.org/wiki-files/doc/technique_papers/Meiners,_Sor_-_WPA_Migration_Mode_WEP_is_back_to_haunt_you_-_slides.pdf 
-
-[rtlamr](https://github.com/bemasher/rtlamr)
-* An rtl-sdr receiver for Itron ERT compatible smart meters operating in the 900MHz ISM band. 
-
-
-[HOPE Number Nine (2012): Practical Insecurity in Encrypted Radio](https://www.youtube.com/watch?v=7or-_gT8TWU&app=desktop)
-
-[sysmocom publicly releases Osmocom user manuals](https://www.sysmocom.de/news/sysmocom-publicly-releases-osmocom-user-manuals/)
-
-[Building a portable GSM BTS using the Nuand bladeRF, Raspberry Pi and YateBTS (The Definitive and Step by Step Guide) ](https://blog.strcpy.info/2016/04/21/building-a-portable-gsm-bts-using-bladerf-raspberry-and-yatebts-the-definitive-guide/)
-
-[DEF CON 23 - JoshInGeneral - Meeting People Over WiFi ](https://www.youtube.com/watch?v=9SIMe0yMy78)
-* In this talk we will talk about some of the things that can identify you in an environment and how people can track you. We will look at bluetooth scanning apps that you can use every day to track people inconspicuously from your phone, while walking, metroing, or as a passenger in a car driving.
-
-https://media.blackhat.com/us-13/us-13-Nohl-Rooting-SIM-cards-Slides.pdf 
-
-[Universal Radio Hacker](https://github.com/jopohl/urh)
-
-
-| **Security of RFID Protocols  A Case Study** | 
-In the context of Dolev-Yao style analysis of security proto cols, we investigate the security claims of a pro- posed strong-security RFID authentication protocol. We ex hibit a flaw which has gone unnoticed in RFID protocol literature and present the resulting attacks on au thentication, untraceability, and desynchroniza- tion resistance. We analyze and discuss the authors proofs of security. References to other vulnerable protocols are given.
-
-
-https://www.evilsocket.net/2016/03/31/how-to-build-your-own-rogue-gsm-bts-for-fun-and-profit/ 
-
-
-https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2016/may/gsmgprs-traffic-interception-for-penetration-testing-engagements/ 
-
-
-http://www.irongeek.com/i.php?page=videos/derbycon5/stable18-stealthy-and-persistent-back-door-for-z-wave-gateways-jonathan-fuller-ben-ramsey 
-
-
-[ HOPE Number Nine (2012): Practical Insecurity in Encrypted Radio](https://www.youtube.com/watch?v=7or-_gT8TWU&app=desktop)
-* APCO Project 25 ("P25") is a suite of wireless communications protocols used in the United States and elsewhere for public safety two-way (voice) radio systems. The protocols include security options in which voice and data traffic can be cryptographically protected from eavesdropping. This talk analyzes the security of P25 systems against passive and active adversaries. The panel found a number of protocol, implementation, and user interface weaknesses that routinely leak information to a passive eavesdropper or that permit highly efficient and difficult to detect active attacks. They found new "selective subframe jamming" attacks against P25, in which an active attacker with very modest resources can prevent specific kinds of traffic (such as encrypted messages) from being received, while emitting only a small fraction of the aggregate power of the legitimate transmitter. And, more significantly, they found that even passive attacks represent a serious immediate threat. In an over-the-air analysis conducted over a two year period in several U.S. metropolitan areas, they found that a significant fraction of the "encrypted" P25 tactical radio traffic sent by federal law enforcement surveillance operatives is actually sent in the clear - in spite of their users' belief that they are encrypted - and often reveals such sensitive data as the names of informants in criminal investigations.
-
-[Scapy-Radio](https://bitbucket.org/cybertools/scapy-radio/src
-* This tool is a modified version of scapy that aims at providing an quick and efficient pentest tool with RF capabilities.
-A modified version of scapy that can leverage GNU Radio to handle a SDR card
-GNU Radio flow graphs (GRC files) we have build that allows full duplex communication
-GNU Radio blocks we have written to handle several protocols
-[The big GSM write-up  how to capture, analyze and crack GSM?](http://domonkos.tomcsanyi.net/?p=418)
-
-[KillerBee](https://github.com/riverloopsec/killerbee)
-* Framework and Tools for Attacking ZigBee and IEEE 802.15.4 networks.
-[ShinySDR](https://github.com/kpreid/shinysdr)
-* This is the software component of a software-defined radio receiver. When combined with hardware devices such as the USRP, RTL-SDR, or HackRF, it can be used to listen to a wide variety of radio transmissions, and can be extended via plugins to support even more modes.
-[SecBee](https://github.com/Cognosec/SecBee) 
-* SecBee is a ZigBee security testing tool developed by Cognosec. The goal is to enable developers and security testers to test ZigBee implementations for security issues.
-
-[The Secret Life of SIM Cards - Defcon21](https://www.youtube.com/watch?v=31D94QOo2gY)
-
-
-How To Build Your Own Rogue GSM BTS For Fun And Profit
-https://www.evilsocket.net/2016/03/31/how-to-build-your-own-rogue-gsm-bts-for-fun-and-profit/
-
-[Uni-SDR Link](https://github.com/ms-dev-1/uni-sdr-link/releases)
-* The initial release of Uni-SDR Link. This applications sole purpose is to allow Universal Trunker (aka Unitrunker) to control the tuning frequency of individual VFO's in SDR Console v2. This is achieved by translating Unitrunker Receiver Control commands into a format accepted by SDR Console. Communication occurs over virtual com / serial ports.
-
-
-[StackOverflow post on intercepting GSM traffic](https://reverseengineering.stackexchange.com/questions/2962/intercepting-gsm-communications-with-an-usrp-and-gnu-radio)
-
-[Guide to Basics of Wireless Networking](http://documentation.netgear.com/reference/fra/wireless/TOC.html)
-
-[Wi-Fi Protected Access 2 (WPA2) Overview](https://technet.microsoft.com/library/bb878054)
-
-[Establishing Wireless Robust Security Networks: A Guide to IEEE 802.11i - NIST](http://csrc.nist.gov/publications/nistpubs/800-97/SP800-97.pdf)
-
-
-[SS7: Locate. Track. Manipulate.[31c3] by Tobias Engel (SnoopSnitch)](https://www.youtube.com/watch?v=lQ0I5tl0YLY)
-
-[SnoopSnitch](https://opensource.srlabs.de/projects/snoopsnitch)
-* SnoopSnitch is an Android app that collects and analyzes mobile radio data to make you aware of your mobile network security and to warn you about threats like fake base stations (IMSI catchers), user tracking and over-the-air updates. With SnoopSnitch you can use the data collected in the GSM Security Map at gsmmap.org and contribute your own data to GSM Map. This application currently only works on Android phones with a Qualcomm chipset and a stock Android ROM (or a suitable custom ROM with Qualcomm DIAG driver). It requires root priviliges to capture mobile network data.
-
-
-[Brute forcing Wi-Fi Protected Setup - Stefan Viehböck](https://sviehb.files.wordpress.com/2011/12/viehboeck_wps.pdf)
-* The original paper on WPS cracking.
-
-[IEEE 802.11 Tutorial](http://wow.eecs.berkeley.edu/ergen/docs/ieee.pdf)
-This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard. It describes IEEE 802.11 MAC Layer in detail and it briefly mentions IEEE 802.11a, IEEE 802.11b physical layer standard and IEEE 802.11e MAC layer standard
-
-[Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
-
-
-[RTL-SDR Tutorial: Analyzing GSM with Airprobe and Wireshark](http://www.rtl-sdr.com/rtl-sdr-tutorial-analyzing-gsm-with-airprobe-and-wireshark/)
-* The RTL-SDR software defined radio can be used to analyze cellular phone GSM signals, using Linux based tools Airprobe and Wireshark. This tutorial shows how I set up these tools for use with the RTL-SDR.
-
-[Sniffing GSM with HackRF](https://web.archive.org/web/20130825000211/http://binaryrf.com/viewtopic.php?t=6&f=9)
-
-[ CampZer0 // Domonkos Tomcsányi: GSM - have we overslept the last wake-up call?](https://www.youtube.com/watch?v=3cnnQFP3VqE)
-
-[Intercepting GSM Traffic](https://www.blackhat.com/presentations/bh-dc-08/Steve-DHulton/Presentation/bh-dc-08-steve-dhulton.pdf)
-
-[GSM: SRSLY?](https://events.ccc.de/congress/2009/Fahrplan/events/3654.en.html)
-* The worlds most popular radio system has over 3 billion handsets in 212 countries and not even strong encryption. Perhaps due to cold-war era laws, GSM's security hasn't received the scrutiny it deserves given its popularity. This bothered us enough to take a look; the results were surprising. From the total lack of network to handset authentication, to the "Of course I'll give you my IMSI" message, to the iPhone that really wanted to talk to us. It all came as a surprise  stunning to see what $1500 of USRP can do. Add a weak cipher trivially breakable after a few months of distributed table generation and you get the most widely deployed privacy threat on the planet. Cloning, spoofing, man-in-the-middle, decrypting, sniffing, crashing, DoS'ing, or just plain having fun. If you can work a BitTorrent client and a standard GNU build process then you can do it all, too. Prepare to change the way you look at your cell phone, forever
-
-[Wideband GSM Sniffing [27C3]](https://www.youtube.com/watch?v=ZrbatnnRxFc)
-* GSM is still the most widely used security technology in the world with a user base of 5 billion and a quickly growing number of critical applications. 26C3's rainbow table attack on GSM's A5/1 encryption convinced many users that GSM calls should be considered unprotected. The network operators, however, have not woken up to the threat yet. Perhaps the new capabilities to be unleashed this year -- like wide-band sniffing and real-time signal processing -- will wake them up. Now that GSM A5/1 encryption can be cracked in seconds, the complexity of wireless phone snooping moved to signal processing. Since GSM hops over a multitude of channels, a large chunk of radio spectrum needs to be analyzed, for example with USRPs, and decoded before storage or decoding. We demonstrate how this high bandwidth task can be achieved with cheap programmable phones.
-
-
-[29C3 GSM: Cell phone network review](https://www.youtube.com/watch?v=9wwco24EsHs
-* Did you notice 262 42 in your mobile phone network search list at the last CCC events? Did you and your friends buy SIM cards at the PoC and help test the network by calling each other, or by calling through the bridge to the DECT network services? Did you ever wonder about the details of this open source test network, set up by a team of volunteers in the middle of the city? We would like to tell you all the details of the cell phone network we operate at 29C3, and show you some fancy graphs based on the network activity! We will describe the process of setting up the test network we operate at 29C3, what legal and technical challenges we have faced, and we will describe the actual installation at the CCH. We will also compare this with the 262 42 test networks that were operated using the same open source software but otherwise very different installations at CCC Camp 2011 and 28C3. We will go on to show various statistics that we collect from the network while it has been running.
-
-
-http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-macs-and-sdrs-robert-ghilduta
-
-
-http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html
-
-
-
-http://www.3gpp.org/DynaReport/31048.htm
-
+Aircrack https://www.aircrack-ng.org/doku.php?id=links
 Ubertooth
-
-
-Github.com/mikeryan/crackle
-
 Scapy
-
-
-Bluez.org
-
-PyBT
-
 
 
 
 ###<a name="general">General</a>
+
+[Guide to Basics of Wireless Networking](http://documentation.netgear.com/reference/fra/wireless/TOC.html)
+
+
+[IEEE 802.11 Tutorial](http://wow.eecs.berkeley.edu/ergen/docs/ieee.pdf)
+This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard. It describes IEEE 802.11 MAC Layer in detail and it briefly mentions IEEE 802.11a, IEEE 802.11b physical layer standard and IEEE 802.11e MAC layer standard
+
 
 [RF Testing Methodology - NCCGroup](https://nccgroup.github.io/RFTM/)
 * The RFTM is an Open Source, collaborative testing methodology. It is specifically written in a straightforward way, avoiding mathematics where possible and focussed on providing the information that security researchers and consultants need to know in order to effectively test systems that employ RF technologies.
@@ -170,6 +55,36 @@ PyBT
 * [Signals Identification](https://nccgroup.github.io/RFTM/signals_identification.html)
 
 
+[sysmocom publicly releases Osmocom user manuals](https://www.sysmocom.de/news/sysmocom-publicly-releases-osmocom-user-manuals/)
+
+[ PHYs, MACs, and SDRs - Robert Ghilduta ](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-macs-and-sdrs-robert-ghilduta)
+* The talk will touch on a variety of topics and projects that have been under development including YateBTS, PHYs, MACs, and GNURadio modules. The talk will deal with GSM/LTE/WiFi protocol stacks.
+
+
+
+
+
+
+
+
+###<a name="tut">Tutorials and Guides</a>
+
+[Building a portable GSM BTS using the Nuand bladeRF, Raspberry Pi and YateBTS (The Definitive and Step by Step Guide) ](https://blog.strcpy.info/2016/04/21/building-a-portable-gsm-bts-using-bladerf-raspberry-and-yatebts-the-definitive-guide/)
+
+[Sniffing GSM with HackRF](https://web.archive.org/web/20130825000211/http://binaryrf.com/viewtopic.php?t=6&f=9)
+
+[RTL-SDR Tutorial: Analyzing GSM with Airprobe and Wireshark](http://www.rtl-sdr.com/rtl-sdr-tutorial-analyzing-gsm-with-airprobe-and-wireshark/)
+* The RTL-SDR software defined radio can be used to analyze cellular phone GSM signals, using Linux based tools Airprobe and Wireshark. This tutorial shows how I set up these tools for use with the RTL-SDR.
+
+[How To Build Your Own Rogue GSM BTS For Fun And Profit](https://www.evilsocket.net/2016/03/31/how-to-build-your-own-rogue-gsm-bts-for-fun-and-profit/)
+
+[GSM/GPRS Traffic Interception for Penetration Testing Engagements](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2016/may/gsmgprs-traffic-interception-for-penetration-testing-engagements/)
+
+
+
+
+###<a name="non-tut">Non-Tutorial Writeups</a>
+[4G Security: Hacking USB Modem and SIM Card via SMS](http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html)
 
 
 
@@ -182,7 +97,19 @@ PyBT
 
 
 
+
+
+
+
+
+
+
+
 ###<a name="cn">Cellular Networks</a>
+
+[The big GSM write-up  how to capture, analyze and crack GSM?](http://domonkos.tomcsanyi.net/?p=418)
+
+[StackOverflow post on intercepting GSM traffic](https://reverseengineering.stackexchange.com/questions/2962/intercepting-gsm-communications-with-an-usrp-and-gnu-radio)
 
 [gr-gsm](https://github.com/ptrkrysik/gr-gsm)
 * Gnuradio blocks and tools for receiving GSM transmissions
@@ -206,11 +133,16 @@ PyBT
 
 [4G LTE Architecture and Security Concerns](http://www.secforce.com/blog/2014/03/4g-lte-architecture-and-security-concerns/)
 
-Cellular Networks in use North America:
-	In use in Europe:
-	In use in Asia:
-	In use in Africa:
-	In use in South America:
+[Security mechanisms for the (U)SIM application toolkit; Test specification](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=1801#)
+
+[SnoopSnitch](https://opensource.srlabs.de/projects/snoopsnitch)
+* SnoopSnitch is an Android app that collects and analyzes mobile radio data to make you aware of your mobile network security and to warn you about threats like fake base stations (IMSI catchers), user tracking and over-the-air updates. With SnoopSnitch you can use the data collected in the GSM Security Map at gsmmap.org and contribute your own data to GSM Map. This application currently only works on Android phones with a Qualcomm chipset and a stock Android ROM (or a suitable custom ROM with Qualcomm DIAG driver). It requires root priviliges to capture mobile network data.
+
+[Rooting Sim Cards](https://media.blackhat.com/us-13/us-13-Nohl-Rooting-SIM-cards-Slides.pdf)
+
+
+
+
 
 
 
@@ -240,6 +172,16 @@ Cellular Networks in use North America:
 * [Documentation](http://gqrx.dk/category/doc)
 * [Practical Tips & Tricks](http://gqrx.dk/doc/practical-tricks-and-tips)
 
+[ PHYs, MACs, and SDRs - Robert Ghilduta ](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-macs-and-sdrs-robert-ghilduta
+* The talk will touch on a variety of topics and projects that have been under development including YateBTS, PHYs, MACs, and GNURadio modules. The talk will deal with GSM/LTE/WiFi protocol stacks.
+
+
+
+
+
+
+
+
 
 
 ###<a name="generalswt">General Software Tools</a>
@@ -250,12 +192,49 @@ Android IMSI-Catcher Detector (AIMSICD)](https://github.com/SecUpwN/Android-IMSI
 [Infernal-Twin](https://github.com/entropy1337/infernal-twin)
 * This is the tool created to automate Evil Twin attack and capturing public and guest credentials of Access Point
 
+[rtlamr](https://github.com/bemasher/rtlamr)
+* An rtl-sdr receiver for Itron ERT compatible smart meters operating in the 900MHz ISM band. 
+
+[ShinySDR](https://github.com/kpreid/shinysdr)
+* This is the software component of a software-defined radio receiver. When combined with hardware devices such as the USRP, RTL-SDR, or HackRF, it can be used to listen to a wide variety of radio transmissions, and can be extended via plugins to support even more modes.
+
+[Scapy-Radio](https://bitbucket.org/cybertools/scapy-radio/src
+* This tool is a modified version of scapy that aims at providing an quick and efficient pentest tool with RF capabilities.
+A modified version of scapy that can leverage GNU Radio to handle a SDR card
+GNU Radio flow graphs (GRC files) we have build that allows full duplex communication
+GNU Radio blocks we have written to handle several protocols
+
+[Universal Radio Hacker](https://github.com/jopohl/urh)
+
+[SecBee](https://github.com/Cognosec/SecBee) 
+* SecBee is a ZigBee security testing tool developed by Cognosec. The goal is to enable developers and security testers to test ZigBee implementations for security issues.
+
+[Uni-SDR Link](https://github.com/ms-dev-1/uni-sdr-link/releases)
+* The initial release of Uni-SDR Link. This applications sole purpose is to allow Universal Trunker (aka Unitrunker) to control the tuning frequency of individual VFO's in SDR Console v2. This is achieved by translating Unitrunker Receiver Control commands into a format accepted by SDR Console. Communication occurs over virtual com / serial ports.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ###Dongles
 
 
 [FunCube dongle](http://www.funcubedongle.com)
 
+[RZUSBstick](http://www.atmel.com/tools/rzusbstick.aspx)
+* The starter kit accelerates development, debugging, and demonstration for a wide range of low power wireless applications including IEEE 802.15.4, 6LoWPAN, and ZigBee networks.  The kit includes one USB stick with a 2.4GHz transceiver and a USB connector. The included AT86RF230 transceiver's high sensitivity supports the longest range for wireless products. The AT90USB1287 incorporates fast USB On-the-Go.
 
 [Gr0SMoSDR](http://sdr.osmocom.org/trac/wiki/GrOsmoSDR)
 
@@ -263,6 +242,11 @@ Android IMSI-Catcher Detector (AIMSICD)](https://github.com/SecUpwN/Android-IMSI
 * PyBOMBS (Python Build Overlay Managed Bundle System) is the new GNU Radio install management system for resolving dependencies and pulling in out-of-tree projects. One of the main purposes of PyBOMBS is to aggregate out-of-tree projects, which means that PyBOMBS needs to have new recipes for any new project. We have done a lot of the initial work to get known projects into the PyBOMBS system as is, but we will need project developers for new OOT projects or other projects not currently listed to help us out with this effort.	
 
  
+
+
+
+
+
 
 ###<a name="fxh">Fox Hunting & Wardriving</a>
 [Practical Foxhunting 101](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/04-practical-foxhunting-101-simonj)
@@ -273,7 +257,17 @@ Android IMSI-Catcher Detector (AIMSICD)](https://github.com/SecUpwN/Android-IMSI
 
 
 ##<a name="80211">802.11</a>
+
+
+[IEEE 802.11 Tutorial](http://wow.eecs.berkeley.edu/ergen/docs/ieee.pdf)
+This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard. It describes IEEE 802.11 MAC Layer in detail and it briefly mentions IEEE 802.11a, IEEE 802.11b physical layer standard and IEEE 802.11e MAC layer standard
+
+[Wi-Fi Protected Access 2 (WPA2) Overview](https://technet.microsoft.com/library/bb878054)
+
+[Establishing Wireless Robust Security Networks: A Guide to IEEE 802.11i - NIST](http://csrc.nist.gov/publications/nistpubs/800-97/SP800-97.pdf)
+
 [Karma](http://www.theta44.org/karma/)
+
 [Wireless Password Cracking With Cloud Clusters](http://www.commonexploits.com/wireless-password-cracking-with-cloud-clusters/)
 
 [Exploiting 802.11 Wireless Driver Vulnerabilities on Windows](http://uninformed.org/?v=all&a=29&t=sumry)
@@ -281,6 +275,9 @@ Android IMSI-Catcher Detector (AIMSICD)](https://github.com/SecUpwN/Android-IMSI
 
 [Fingerprinting 802.11 Implementations via Statistical Analysis of the Duration Field](http://uninformed.org/?v=all&a=23&t=sumry)
 * The research presented in this paper provides the reader with a set of algorithms and techniques that enable the user to remotely determine what chipset and device driver an 802.11 device is using. The technique outlined is entirely passive, and given the amount of features that are being considered for inclusion into the 802.11 standard, seems quite likely that it will increase in precision as the standard marches forward. The implications of this are far ranging. On one hand, the techniques can be used to implement innovative new features in Wireless Intrusion Detection Systems (WIDS). On the other, they can be used to target link layer device driver attacks with much higher precision. 
+
+[WPA Migration Mode:  WEP is back to haunt you...(slides)](http://dl.aircrack-ng.org/wiki-files/doc/technique_papers/Meiners,_Sor_-_WPA_Migration_Mode_WEP_is_back_to_haunt_you_-_slides.pdf)
+* Migration mode, from Cisco, allows both WEP and WPA clients on the same AP. Besides the fact that the WEP key can be cracked easily, they also bypass the additional security settings offered by Cisco. 
 
 [Wireless Pentesting on the Cheap](http://securitysynapse.blogspot.com/2013/12/wireless-pentesting-on-cheap-kali-tl.html)
 In this article, we proved the capabilities of an inexpensive wireless adapter and a flexible virtualized wireless attack image by breaking into a WEP protected test network.  For just $16 
@@ -295,7 +292,8 @@ In this article, we proved the capabilities of an inexpensive wireless adapter a
 
 ###<a name="rfid">RFID - Radio Frequency Identification</a>
 
-
+| **Security of RFID Protocols  A Case Study** | 
+In the context of Dolev-Yao style analysis of security proto cols, we investigate the security claims of a pro- posed strong-security RFID authentication protocol. We ex hibit a flaw which has gone unnoticed in RFID protocol literature and present the resulting attacks on au thentication, untraceability, and desynchroniza- tion resistance. We analyze and discuss the authors proofs of security. References to other vulnerable protocols are given.
 
 [ravenhid](https://github.com/emperorcow/ravenhid)
 * Hardware and software to run a RFID reader to harvest card information. This is the PCB design and Arduino code that will run a RFID reader, allowing you to gather and harvest cards. Typically, a larger reader, such as those in garages, will be more successful, allowing you to ready over a couple feet instead of inches. The board itself is designed to be modular and support multiple methods to output harvested cards once they are read:
@@ -309,6 +307,8 @@ In this article, we proved the capabilities of an inexpensive wireless adapter a
 
 ###<a name="zigbee">Zigbee Wireless Networks</a>
 
+[KillerBee](https://github.com/riverloopsec/killerbee)
+* Framework and Tools for Attacking ZigBee and IEEE 802.15.4 networks.
 
 [KillerBee Framework](https://code.google.com/p/killerbee/)
 * KillerBee is a Python based framework and tool set for exploring and exploiting the security of ZigBee and IEEE 802.15.4 networks. Using KillerBee tools and a compatible IEEE 802.15.4 radio interface, you can eavesdrop on ZigBee networks, replay traffic, attack cryptosystems and much more. Using the KillerBee framework, you can build your own tools, implement ZigBee fuzzing, emulate and attack end-devices, routers and coordinators and much more. 
@@ -318,13 +318,21 @@ In this article, we proved the capabilities of an inexpensive wireless adapter a
 
 
 
+###<a name="zwave">Z-Wave</a>
+[Stealthy and Persistent Back Door for Z-Wave Gateways](http://www.irongeek.com/i.php?page=videos/derbycon5/stable18-stealthy-and-persistent-back-door-for-z-wave-gateways-jonathan-fuller-ben-ramsey)
+* Z-Wave is a proprietary wireless protocol that is gaining market share in home automation and security systems. However, very little work has been done to investigate the security implications of these sub-GHz devices. In this talk we review recent work on hacking Z-Wave networks, and introduce a new attack that creates a persistent back door. This attack maintains a stealthy, parallel, and persistent control channel with all Z-Wave devices in the home. We will demonstrate the attack against a commercial Z-Wave security system.
+
+
+
 ###<a name="bt">BlueTooth</a>
 
 [Bluetooth NSA Toolset Talk/Attacks video](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/15-the-nsa-playset-bluetooth-smart-attack-tools-mike-ryan)
 
+[crackle](https://github.com/mikeryan/crackle)
+* cracks BLE Encryption (AKA Bluetooth Smart).  crackle exploits a flaw in the BLE pairing process that allows an attacker to guess or very quickly brute force the TK (Temporary Key). With the TK and other data collected from the pairing process, the STK (Short Term Key) and later the LTK (Long Term Key) can be collected.
 
-
-
+[PyBT](https://github.com/mikeryan/PyBT)
+* PyBT is a crappy half implementation of a Bluetooth stack in Python. At the moment it only supports Bluetooth Smart (BLE).
 
 
 
@@ -347,6 +355,33 @@ In this article, we proved the capabilities of an inexpensive wireless adapter a
 [Demystifying the Mobile Network by Chuck McAuley](http://2014.video.sector.ca/video/110383258)
 * Must watch video. Very informative.
 
+[HOPE Number Nine (2012): Practical Insecurity in Encrypted Radio](https://www.youtube.com/watch?v=7or-_gT8TWU&app=desktop)
+
+[ HOPE Number Nine (2012): Practical Insecurity in Encrypted Radio](https://www.youtube.com/watch?v=7or-_gT8TWU&app=desktop)
+* APCO Project 25 ("P25") is a suite of wireless communications protocols used in the United States and elsewhere for public safety two-way (voice) radio systems. The protocols include security options in which voice and data traffic can be cryptographically protected from eavesdropping. This talk analyzes the security of P25 systems against passive and active adversaries. The panel found a number of protocol, implementation, and user interface weaknesses that routinely leak information to a passive eavesdropper or that permit highly efficient and difficult to detect active attacks. They found new "selective subframe jamming" attacks against P25, in which an active attacker with very modest resources can prevent specific kinds of traffic (such as encrypted messages) from being received, while emitting only a small fraction of the aggregate power of the legitimate transmitter. And, more significantly, they found that even passive attacks represent a serious immediate threat. In an over-the-air analysis conducted over a two year period in several U.S. metropolitan areas, they found that a significant fraction of the "encrypted" P25 tactical radio traffic sent by federal law enforcement surveillance operatives is actually sent in the clear - in spite of their users' belief that they are encrypted - and often reveals such sensitive data as the names of informants in criminal investigations.
+
+[ CampZer0 // Domonkos Tomcsányi: GSM - have we overslept the last wake-up call?](https://www.youtube.com/watch?v=3cnnQFP3VqE)
+
+[Intercepting GSM Traffic](https://www.blackhat.com/presentations/bh-dc-08/Steve-DHulton/Presentation/bh-dc-08-steve-dhulton.pdf)
+
+[GSM: SRSLY?](https://events.ccc.de/congress/2009/Fahrplan/events/3654.en.html)
+* The worlds most popular radio system has over 3 billion handsets in 212 countries and not even strong encryption. Perhaps due to cold-war era laws, GSM's security hasn't received the scrutiny it deserves given its popularity. This bothered us enough to take a look; the results were surprising. From the total lack of network to handset authentication, to the "Of course I'll give you my IMSI" message, to the iPhone that really wanted to talk to us. It all came as a surprise  stunning to see what $1500 of USRP can do. Add a weak cipher trivially breakable after a few months of distributed table generation and you get the most widely deployed privacy threat on the planet. Cloning, spoofing, man-in-the-middle, decrypting, sniffing, crashing, DoS'ing, or just plain having fun. If you can work a BitTorrent client and a standard GNU build process then you can do it all, too. Prepare to change the way you look at your cell phone, forever
+
+[Wideband GSM Sniffing [27C3]](https://www.youtube.com/watch?v=ZrbatnnRxFc)
+* GSM is still the most widely used security technology in the world with a user base of 5 billion and a quickly growing number of critical applications. 26C3's rainbow table attack on GSM's A5/1 encryption convinced many users that GSM calls should be considered unprotected. The network operators, however, have not woken up to the threat yet. Perhaps the new capabilities to be unleashed this year -- like wide-band sniffing and real-time signal processing -- will wake them up. Now that GSM A5/1 encryption can be cracked in seconds, the complexity of wireless phone snooping moved to signal processing. Since GSM hops over a multitude of channels, a large chunk of radio spectrum needs to be analyzed, for example with USRPs, and decoded before storage or decoding. We demonstrate how this high bandwidth task can be achieved with cheap programmable phones.
+
+
+[29C3 GSM: Cell phone network review](https://www.youtube.com/watch?v=9wwco24EsHs)
+* Did you notice 262 42 in your mobile phone network search list at the last CCC events? Did you and your friends buy SIM cards at the PoC and help test the network by calling each other, or by calling through the bridge to the DECT network services? Did you ever wonder about the details of this open source test network, set up by a team of volunteers in the middle of the city? We would like to tell you all the details of the cell phone network we operate at 29C3, and show you some fancy graphs based on the network activity! We will describe the process of setting up the test network we operate at 29C3, what legal and technical challenges we have faced, and we will describe the actual installation at the CCH. We will also compare this with the 262 42 test networks that were operated using the same open source software but otherwise very different installations at CCC Camp 2011 and 28C3. We will go on to show various statistics that we collect from the network while it has been running.
+
+[The Secret Life of SIM Cards - Defcon21](https://www.youtube.com/watch?v=31D94QOo2gY)
+
+[DEF CON 23 - JoshInGeneral - Meeting People Over WiFi ](https://www.youtube.com/watch?v=9SIMe0yMy78)
+* In this talk we will talk about some of the things that can identify you in an environment and how people can track you. We will look at bluetooth scanning apps that you can use every day to track people inconspicuously from your phone, while walking, metroing, or as a passenger in a car driving.
+
+[SS7: Locate. Track. Manipulate.[31c3] by Tobias Engel (SnoopSnitch)](https://www.youtube.com/watch?v=lQ0I5tl0YLY)
+
+
 
 
 
@@ -354,7 +389,8 @@ In this article, we proved the capabilities of an inexpensive wireless adapter a
 [Taming Mr Hayes: Mitigating Signaling Based Attacks on Smartphones](https://www.mulliner.org/collin/academic/publications/mrhayes_mulliner_dsn2012.pdf)
 * Malicious injection of cellular signaling traffic from mobile phones is an emerging security issue. The respective attacks can be performed by hijacked smartphones and by malware resident on mobile phones. Until today there are no protection mechanisms in place to prevent signaling based attacks other than implementing expensive additions to the cellular core network. In this work we present a protection system that resides on the mobile phone. Our solution works by partitioning the phone software stack into the application operating system and the communication partition. The application system is a standard fully featured Android sys tem. On the other side, communication to the cellular network is mediated by a flexible monitoring and enforcement system running on the communication partition. We implemented and evaluated our protection system on a real smartphone. Our evaluation shows that it can mitigate all currently know n signaling based attacks and in addition can protect users fr om cellular Trojans.
 
-
+[Brute forcing Wi-Fi Protected Setup - Stefan Viehböck](https://sviehb.files.wordpress.com/2011/12/viehboeck_wps.pdf)
+* The original paper on WPS cracking.
 
 
 
@@ -364,3 +400,12 @@ In this article, we proved the capabilities of an inexpensive wireless adapter a
 [US Marine Antenna Handbook](http://www.zerobeat.net/r3403c.pdf?1)
 
 
+[Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
+
+
+#####Cellular Networks in Use: 
+* In use in North America:
+* In use in Europe:
+* In use in Asia:
+* In use in Africa:
+* In use in South America:

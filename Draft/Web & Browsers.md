@@ -119,7 +119,16 @@ As seen on: https://www.owasp.org/index.php/Category:Attack
 #####<a name="Exploitation of Authentication](#
 
 
+
+
 #####<a name="Injection Based Attacks(#injection)
+
+
+
+##### Java Serialization Attacks
+
+[Break Fast Serial](https://github.com/GoSecure/break-fast-serial)
+* A proof of concept that demonstrates asynchronous scanning for Java deserialization bugs
 
 [SerialKiller: Bypass Gadget Collection](https://github.com/pwntester/SerialKillerBypassGadgetCollection)
 * Collection of Bypass Gadgets that can be used in JVM Deserialization Gadget chains to bypass "Look-Ahead ObjectInputStreams" desfensive deserialization.

@@ -1,6 +1,6 @@
-##Steal Everything; Kill Everyone; Profit!
+## Steal Everything; Kill Everyone; Profit!
 
-####j/k please don’t :3
+#### j/k please don’t :3
 
 
 

@@ -1,15 +1,15 @@
 ##Interesting Things & Useful Stuff
 
 TOC
-* Interesting & Useful Attacks
-* Interesting & Useful Papers
-* Interesting & Useful Projects
-* Interesting & Useful Software
-* Interesting & Useful Write-ups
+* [Interesting & Useful Attacks](#attacks)
+* [Interesting & Useful Papers](#papers)
+* [Interesting & Useful Projects](#projects)
+* [Interesting & Useful Software](#software))
+* [Interesting & Useful Write-ups](#writeup)
 
 
 
-###General
+### General
 
 [Hamming - You and your research](https://www.youtube.com/watch?v=a1zDuOPkMSw)
 
@@ -205,7 +205,7 @@ http://www.regular-expressions.info/creditcard.html
 QR Code interesting
 http://datagenetics.com/blog/november12013/index.html
 
-###Interesting Videos
+### Interesting Videos
 
 [Kim Jong-il and Me: How to Build a Cyber Army to Defeat the U.S. - Charlie MIller](https://www.youtube.com/watch?v=4up0yTGlpaU)
 
@@ -240,7 +240,7 @@ http://datagenetics.com/blog/november12013/index.html
 
 
 
-###Interesting Attacks
+### Interesting Attacks
 [VM as injection payload ](http://infiltratecon.com/downloads/python_deflowered.pdf)
 [Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)
 
@@ -254,7 +254,7 @@ http://datagenetics.com/blog/november12013/index.html
 
 
 
-###Interesting Software
+### Interesting Software
 
 
 [Foreign LINUX](https://github.com/wishstudio/flinux)
@@ -283,14 +283,14 @@ http://datagenetics.com/blog/november12013/index.html
 * hashID is a tool written in Python 3 which supports the identification of over 220 unique hash types using regular expressions. It is able to identify a single hash, parse a file or read multiple files in a directory and identify the hashes within them. hashID is also capable of including the corresponding hashcat mode and/or JohnTheRipper format in its output. hashID works out of the box with Python 2 = 2.7.x or Python 3 = 3.3 on any platform.
 
 
-###Interesting Hardware Projects
+### Interesting Hardware Projects
 
 
 [Digital Ding Dong Ditch](https://github.com/samyk/dingdong)
 * Digital Ding Dong Ditch is a device to hack into and ring my best friend's wireless doorbell whenever I send a text message to the device. The best part of the device is that it causes my friend, without fail, to come outside, find no one, and go back in. In this project, we'll learn not only how to create this device, but how to reverse engineer radio frequencies we know nothing about using RTL-SDR (a ~$14 software defined radio), as well as creating hardware and software using Arduino, the Adafruit FONA (GSM/SMS/2G board), an RF (radio frequency) transmitter to transmit custom signals, and even how to reverse engineer a proprietary radio signal we know nothing about!
 
 
-###Interesting Writeups
+### Interesting Writeups
 
 [Hacking the Source Engine](http://vallentinsource.com/hacking-source-engine)
 
@@ -318,7 +318,7 @@ http://datagenetics.com/blog/november12013/index.html
 
 [More on Using Bash's Built-in /dev/tcp File (TCP/IP)](http://www.linuxjournal.com/content/more-using-bashs-built-devtcp-file-tcpip More on Using Bash's Built-in /dev/tcp File (TCP/IP))
 
-###Interesting Papers
+### Interesting Papers
 
 
 [Wars Within](http://uninformed.org/?v=all&a=26&t=sumry)

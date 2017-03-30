@@ -1,4 +1,4 @@
-##Fuzzing
+## Fuzzing
 
 TOC
 
@@ -16,7 +16,7 @@ TOC
 
 
 
-####sort
+#### sort
 [honggfuzz])(https://github.com/google/honggfuzz)
 *  Security oriented fuzzer with powerful analysis options. Supports evolutionary, feedback-driven fuzzing based on code coverage (sw and hw) http://google.github.io/honggfuzz/
 
@@ -26,7 +26,7 @@ TOC
 #### end sort
 
 
-###General Writeups
+### General Writeups
 [Fuzzing for MS15-010](http://blog.beyondtrust.com/fuzzing-for-ms15-010)
 * Is what it says on the tin.
 
@@ -36,17 +36,17 @@ TOC
 
 
 
-###<a name="tech">Techniques</a>
+### <a name="tech">Techniques</a>
 
 
 
-####Taint Analysis
+#### Taint Analysis
 
 [Taint analysis and pattern matching with Pin - Jonathan Salwan](http://shell-storm.org/blog/Taint-analysis-and-pattern-matching-with-Pin/)
 
 
 
-###<a name="writeup">Writeups</a>
+### <a name="writeup">Writeups</a>
 
 [From Fuzzing to 0day.](http://blog.techorganic.com/2014/05/14/from-fuzzing-to-0-day/)
 
@@ -60,7 +60,7 @@ TOC
 
 
 
-###<a name="papers">Papers</a>
+### <a name="papers">Papers</a>
 
 [Smart COM Fuzzing - Auditing IE Sandbox Bypass in COM Objects• Xiaoning Li • Haifei Li](https://0b3dcaf9-a-62cb3a1a-s-sites.googlegroups.com/site/zerodayresearch/Smart_COM_Fuzzing_Auditing_IE_Sandbox_Bypass_in_COM_Objects_final.pdf?attachauth=ANoY7crUl9OP1JfFa6KaCXsjVLjsNXDgUp1SmrZZAgGiPdp7MvUVnfg-FsuFvt7lfV5s3-kcK3K2uT05XMt6zUU_cP5WWQKxmKedjlQjvTZWdLyVZVcUMUrxUr5i68jpISP84HE0hihXOz7GtyWQG4gOtf-PXmcxmBf9KjYpVob08uR-62u2swlo396pKC0mSRrymia5PAakBFV9_0TbXGEhNVc101GIRdZ33C-j8DI6bIEYVlR1vG9jUKkfIcleu-rtjnJyDXD9FFBJwqxZsVOAUb9mcPvc4SZ04uefDvQwCDEg-C4I8eA%3D&attredirects=0)
 
@@ -81,7 +81,7 @@ TOC
 
 
 
-###<a name="presen">Presentations/Videos</a>
+### <a name="presen">Presentations/Videos</a>
 
 [The Best of Bug Finding - Duo Tech Talk (Charlie Miller)](https://www.youtube.com/watch?v=1M1EOzulQsw)
 * I look at how security vulnerabilities are found (or missed) and some of my favorite bugs and exploits I’ve come across in my career. 
@@ -111,7 +111,7 @@ TOC
 
 
 
-###<a name="books">Books</a>
+### <a name="books">Books</a>
 
 [*THE* Book on fuzzing](http://fuzzing.org/)
 
@@ -120,9 +120,9 @@ TOC
 
 
 
-###<a name="tools">Tools</a>
+### <a name="tools">Tools</a>
 
-####Windows Specific
+#### Windows Specific
 [WinAFL] (https://github.com/ivanfratric/winafl)
 * A fork of AFL for fuzzing Windows binaries 
 
@@ -131,7 +131,7 @@ TOC
 
 
 
-####Linux Specific
+#### Linux Specific
 [American Fuzzy Lop AFL](http://lcamtuf.coredump.cx/afl/)
 * American fuzzy lop is a security-oriented fuzzer that employs a novel type of compile-time instrumentation and genetic algorithms to automatically discover clean, interesting test cases that trigger new internal states in the targeted binary. This substantially improves the functional coverage for the fuzzed code. The compact synthesized corpora produced by the tool are also useful for seeding other, more labor- or resource-intensive testing regimes down the road. 
 * It was made by lcamtuf. What more do you need?
@@ -141,12 +141,12 @@ TOC
 
 
 
-####Android Specific
+#### Android Specific
 [MFFA - Media Fuzzing Framework for Android](https://github.com/fuzzing/MFFA)
 
 
 
-####Non OS Specific
+#### Non OS Specific
 | **honggfuzz** - A general-purpose, easy-to-use fuzzer with interesting analysis options. Supports feedback-driven fuzzing based on code coverage | https://github.com/google/honggfuzz
 
 [Grinder - Fuzzer](https://github.com/stephenfewer/grinder)
@@ -175,7 +175,7 @@ TOC
 
 
 
-####Peach Fuzzer
+#### Peach Fuzzer
 * [Peach Documentation](http://old.peachfuzzer.com/Introduction.html)
 * [Creating Custom Peach Fuzzer Publishers](http://blog.opensecurityresearch.com/2014/01/creating-custom-peach-fuzzer-publishers.html)
 * [Creating Custom Peach Fuzzer Publishers](http://blog.opensecurityresearch.com/2014/01/creating-custom-peach-fuzzer-publishers.html)
@@ -190,7 +190,7 @@ Fuzzing with Peach tutorial
 
 
 
-###<a name="misc">Misc</a>
+### <a name="misc">Misc</a>
 
 [Good slides on fuzzing](https://courses.cs.washington.edu/courses/cse484/14au/slides/Section8.pdf)
 

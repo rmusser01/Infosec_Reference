@@ -51,7 +51,7 @@ Scapy
 
 
 
-###<a name="general">General</a>
+### <a name="general">General</a>
 
 [Guide to Basics of Wireless Networking](http://documentation.netgear.com/reference/fra/wireless/TOC.html)
 
@@ -83,7 +83,7 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 
 
-###<a name="tut">Tutorials and Guides</a>
+### <a name="tut">Tutorials and Guides</a>
 
 [Building a portable GSM BTS using the Nuand bladeRF, Raspberry Pi and YateBTS (The Definitive and Step by Step Guide) ](https://blog.strcpy.info/2016/04/21/building-a-portable-gsm-bts-using-bladerf-raspberry-and-yatebts-the-definitive-guide/)
 
@@ -105,7 +105,7 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 
 
-###<a name="retroreflectors">RF RetroReflectors</a>
+### <a name="retroreflectors">RF RetroReflectors</a>
 
 [[TROOPERS15] Michael Ossmann - RF Retroflectors, Emission Security and SDR](https://www.youtube.com/watch?v=9DABAS-PCFM)
 
@@ -121,7 +121,7 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 
 
-###<a name="cn">Cellular Networks</a>
+### <a name="cn">Cellular Networks</a>
 
 [The big GSM write-up  how to capture, analyze and crack GSM?](http://domonkos.tomcsanyi.net/?p=418)
 
@@ -165,7 +165,7 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 
 
-###<a name="sdr">Software Defined Radio</a>
+### <a name="sdr">Software Defined Radio</a>
 
 [GNU Radio](http://gnuradio.org/redmine/projects/gnuradio/wiki)
 * GNU Radio is a free & open-source software development toolkit that provides signal processing blocks to implement software radios. It can be used with readily-available low-cost external RF hardware to create software-defined radios, or without hardware in a simulation-like environment. It is widely used in hobbyist, academic and commercial environments to support both wireless communications research and real-world radio systems.
@@ -200,7 +200,7 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 
 
-###<a name="generalswt">General Software Tools</a>
+### <a name="generalswt">General Software Tools</a>
 
 Android IMSI-Catcher Detector (AIMSICD)](https://github.com/SecUpwN/Android-IMSI-Catcher-Detector)
 * Android-based project to detect and avoid fake base stations (IMSI-Catchers) in GSM/UMTS Networks.
@@ -244,7 +244,7 @@ GNU Radio blocks we have written to handle several protocols
 
 
 
-###Dongles
+### Dongles
 
 
 [FunCube dongle](http://www.funcubedongle.com)
@@ -264,7 +264,7 @@ GNU Radio blocks we have written to handle several protocols
 
 
 
-###<a name="fxh">Fox Hunting & Wardriving</a>
+### <a name="fxh">Fox Hunting & Wardriving</a>
 [Practical Foxhunting 101](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/04-practical-foxhunting-101-simonj)
 [iSniff](https://github.com/hubert3/iSniff-GPS) 
 * iSniff GPS passively sniffs for SSID probes, ARPs and MDNS (Bonjour) packets broadcast by nearby iPhones, iPads and other wireless devices. The aim is to collect data which can be used to identify each device and determine previous geographical locations, based solely on information each device discloses about previously joined WiFi networks.
@@ -272,7 +272,7 @@ GNU Radio blocks we have written to handle several protocols
 
 
 
-##<a name="80211">802.11</a>
+## <a name="80211">802.11</a>
 
 
 [IEEE 802.11 Tutorial](http://wow.eecs.berkeley.edu/ergen/docs/ieee.pdf)
@@ -306,7 +306,7 @@ In this article, we proved the capabilities of an inexpensive wireless adapter a
 
 
 
-###<a name="rfid">RFID - Radio Frequency Identification</a>
+### <a name="rfid">RFID - Radio Frequency Identification</a>
 
 | **Security of RFID Protocols  A Case Study** | 
 In the context of Dolev-Yao style analysis of security proto cols, we investigate the security claims of a pro- posed strong-security RFID authentication protocol. We ex hibit a flaw which has gone unnoticed in RFID protocol literature and present the resulting attacks on au thentication, untraceability, and desynchroniza- tion resistance. We analyze and discuss the authors proofs of security. References to other vulnerable protocols are given.
@@ -321,7 +321,7 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 
 
-###<a name="zigbee">Zigbee Wireless Networks</a>
+### <a name="zigbee">Zigbee Wireless Networks</a>
 
 [KillerBee](https://github.com/riverloopsec/killerbee)
 * Framework and Tools for Attacking ZigBee and IEEE 802.15.4 networks.
@@ -334,13 +334,13 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 
 
-###<a name="zwave">Z-Wave</a>
+### <a name="zwave">Z-Wave</a>
 [Stealthy and Persistent Back Door for Z-Wave Gateways](http://www.irongeek.com/i.php?page=videos/derbycon5/stable18-stealthy-and-persistent-back-door-for-z-wave-gateways-jonathan-fuller-ben-ramsey)
 * Z-Wave is a proprietary wireless protocol that is gaining market share in home automation and security systems. However, very little work has been done to investigate the security implications of these sub-GHz devices. In this talk we review recent work on hacking Z-Wave networks, and introduce a new attack that creates a persistent back door. This attack maintains a stealthy, parallel, and persistent control channel with all Z-Wave devices in the home. We will demonstrate the attack against a commercial Z-Wave security system.
 
 
 
-###<a name="bt">BlueTooth</a>
+### <a name="bt">BlueTooth</a>
 
 [Bluetooth NSA Toolset Talk/Attacks video](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/15-the-nsa-playset-bluetooth-smart-attack-tools-mike-ryan)
 
@@ -353,7 +353,7 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 
 
-###<a name="gbs">Blogs/Sites</a>
+### <a name="gbs">Blogs/Sites</a>
 
 
 
@@ -366,7 +366,7 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 
 
-###<a name="talks">Talks/Presentations & Videos</a>
+### <a name="talks">Talks/Presentations & Videos</a>
 
 [Demystifying the Mobile Network by Chuck McAuley](http://2014.video.sector.ca/video/110383258)
 * Must watch video. Very informative.
@@ -401,7 +401,7 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 
 
-###<a name="papers">Papers</a>
+### <a name="papers">Papers</a>
 [Taming Mr Hayes: Mitigating Signaling Based Attacks on Smartphones](https://www.mulliner.org/collin/academic/publications/mrhayes_mulliner_dsn2012.pdf)
 * Malicious injection of cellular signaling traffic from mobile phones is an emerging security issue. The respective attacks can be performed by hijacked smartphones and by malware resident on mobile phones. Until today there are no protection mechanisms in place to prevent signaling based attacks other than implementing expensive additions to the cellular core network. In this work we present a protection system that resides on the mobile phone. Our solution works by partitioning the phone software stack into the application operating system and the communication partition. The application system is a standard fully featured Android sys tem. On the other side, communication to the cellular network is mediated by a flexible monitoring and enforcement system running on the communication partition. We implemented and evaluated our protection system on a real smartphone. Our evaluation shows that it can mitigate all currently know n signaling based attacks and in addition can protect users fr om cellular Trojans.
 
@@ -411,7 +411,7 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 
 
-###<a name="misc">Miscellaneous</a>
+### <a name="misc">Miscellaneous</a>
 
 [US Marine Antenna Handbook](http://www.zerobeat.net/r3403c.pdf?1)
 
@@ -419,7 +419,7 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 [Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
 
 
-#####Cellular Networks in Use: 
+##### Cellular Networks in Use: 
 * In use in North America:
 * In use in Europe:
 * In use in Asia:

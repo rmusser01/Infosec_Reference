@@ -9,7 +9,7 @@ https://en.wikipedia.org/wiki/Reverse_engineering
 [What is Reverse Engineering?](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
 
 [Introduction to Reverse Engineering Software](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
-* This book is an attempt to provide an introduction to reverse engineering software under both Linux and Microsoft Windows©. Since reverse engineering is under legal fire, the authors figure the best response is to make the knowledge widespread. The idea is that since discussing specific reverse engineering feats is now illegal in many cases, we should then discuss general approaches, so that it is within every motivated user's ability to obtain information locked inside the black box. Furthermore, interoperability issues with closed-source proprietary systems are just plain annoying, and something needs to be done to educate more open source developers as to how to implement this functionality in their software. 
+* This book is an attempt to provide an introduction to reverse engineering software under both Linux and Microsoft Windows¬©. Since reverse engineering is under legal fire, the authors figure the best response is to make the knowledge widespread. The idea is that since discussing specific reverse engineering feats is now illegal in many cases, we should then discuss general approaches, so that it is within every motivated user's ability to obtain information locked inside the black box. Furthermore, interoperability issues with closed-source proprietary systems are just plain annoying, and something needs to be done to educate more open source developers as to how to implement this functionality in their software. 
 
 [Starting from Scratch?](http://www.reddit.com/r/ReverseEngineering/comments/smf4u/reverser_wanting_to_develop_mathematically/)
 
@@ -39,7 +39,12 @@ To be sorted
 
 
 
-###To be sorted
+### To be sorted
+
+[PolyHook - x86/x64 Hooking Library](https://github.com/stevemk14ebr/PolyHook)
+* Provides abstract C++ 11 interface for various hooking methods
+* [Technical Writeup](https://www.codeproject.com/articles/1100579/polyhook-the-cplusplus-x-x-hooking-library)
+
 
 [angr](http://angr.io/)
 * angr is a python framework for analyzing binaries. It focuses on both static and dynamic symbolic ("concolic") analysis, making it applicable to a variety of tasks.
@@ -50,6 +55,16 @@ http://stunnix.com/prod/cxxo/
 * ELF header abuse
 
 [REhints MEX - WinDBG addons](https://github.com/REhints/WinDbg/tree/master/MEX)
+
+[SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/)
+* SyntaxHighlighter is a fully functional self-contained code syntax highlighter developed in JavaScript. To get an idea of what SyntaxHighlighter is capable of, have a look at the demo page.
+
+[linguist](https://github.com/github/linguist)
+*  Language Savant. If your repository's language is being reported incorrectly, send us a pull request!
+
+[Ohcount - Ohloh's source code line counter.](https://github.com/blackducksoftware/ohcount)
+
+[Detecting programming language from a snippet](https://stackoverflow.com/questions/475033/detecting-programming-language-from-a-snippet)
 
 
 [EasyHook] https://easyhook.github.io/
@@ -69,7 +84,7 @@ EasyHook makes it possible to extend (via hooking) unmanaged code APIs with pure
 https://speakerdeck.com/patrickwardle/defcon-2016-i-got-99-problems-but-little-snitch-aint-one
 
 
-[The Empire Strikes Back Apple ñ how your Mac firmware security is completely broken](https://reverse.put.as/2015/05/29/the-empire-strikes-back-apple-how-your-mac-firmware-security-is-completely-broken/)
+[The Empire Strikes Back Apple ‚Äì how your Mac firmware security is completely broken](https://reverse.put.as/2015/05/29/the-empire-strikes-back-apple-how-your-mac-firmware-security-is-completely-broken/)
 
 
 [A Practical-Time Attack on the A5/3 Cryptosystem Used in Third Generation GSM Telephony](https://eprint.iacr.org/2010/013)
@@ -134,7 +149,7 @@ http://fileformats.archiveteam.org/wiki/PNG
 
 
 
-[A Brief Examination of Hacking Teamís Crypter: core-packer.](http://ethanheilman.tumblr.com/post/128708937890/a-brief-examination-of-hacking-teams-crypter)
+[A Brief Examination of Hacking Team‚Äôs Crypter: core-packer.](http://ethanheilman.tumblr.com/post/128708937890/a-brief-examination-of-hacking-teams-crypter)
 [Blackbox Reversing an Electric Skateboard Wireless Protocol ](https://blog.lacklustre.net/posts/Blackbox_Reversing_an_Electric_Skateboard_Wireless_Protocol/)
 
 
@@ -147,7 +162,7 @@ http://fileformats.archiveteam.org/wiki/PNG
 * Kam1n0 is a scalable system that supports assembly code clone search. It allows a user to first index a (large) collection of binaries, and then search for the code clones of a given target function or binary file. Kam1n0 tries to solve the efficient subgraph search problem (i.e. graph isomorphism problem) for assembly functions. Given a target function (the middle one in the figure below) it can identity the cloned subgraphs among other functions in the repository (the ones on the left and the right as shown below). Kam1n0 supports rich comment format and has an IDA Pro plug-in to use its indexing and searching capabilities via IDA Pro. 
 
 
-[Reversing Prince Harmingís Kiss of Death]( https://reverse.put.as/2015/07/01/reversing-prince-harmings-kiss-of-death/)
+[Reversing Prince Harming‚Äôs Kiss of Death]( https://reverse.put.as/2015/07/01/reversing-prince-harmings-kiss-of-death/)
 | **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
 **Unicorn-Engine** - Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework. | http://www.unicorn-engine.org/
 
@@ -169,7 +184,7 @@ https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
 * This session is NOT about analyzing exploits but about learning to manipulate PDF contents. Among others:hide/reveal information; remove/add watermark;  just suck less about the format. It's an extended session (2 hours) to leave the audience time to try by themselves actively. The slides' PDF is entirely hand-written to explain clearly each fact, so the presentation slides themselves will be the study materials.
 
 
-###<a name="general">General Research/Stuff</a>
+### <a name="general">General Research/Stuff</a>
 [TAMPER (Tamper And Monitoring Protection Engineering Research)](http://www.cl.cam.ac.uk/research/security/tamper/)
 * In the TAMPER Lab, we study existing security products, document how they have been penetrated in the past, develop new attack techniques, and try to forecast how newly available technologies will make it easier to bypass hardware security mechanisms. We then develop and evaluate new countermeasures and assist industrial designers in staying ahead of the game, most of all by giving them an advanced understanding of which attack techniques are most dangerous. We are especially interested in protection systems for mass-market applications, and in forensic applications. 
 
@@ -185,7 +200,7 @@ https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
 
 
 
-###<a name="tools">Tools</a>
+### <a name="tools">Tools</a>
 Will sort to static/dynamic/OS specific
 
 [Frida](http://www.frida.re/docs/home/)
@@ -230,7 +245,7 @@ Reversing iOS/OS X http://newosxbook.com/forum/viewforum.php?f=8
 
 
 
-####Binary Visualization Tools
+#### Binary Visualization Tools
 [binglide](https://github.com/wapiflapi/binglide)
 * binglide is a visual reverse engineering tool. It is designed to offer a quick overview of the different data types that are present in a file. This tool does not know about any particular file format, everything is done using the same analysis working on the data. This means it works even if headers are missing or corrupted or if the file format is unknown.
 
@@ -243,7 +258,7 @@ Reversing iOS/OS X http://newosxbook.com/forum/viewforum.php?f=8
 * a powerful, dynamic, interactive binary visualization tool
 
 
-####<a name="frameworks"Frameworks</a>
+#### <a name="frameworks"Frameworks</a>
 
 
 Radare2 - unix-like reverse engineering framework and commandline tools ](http://www.radare.org/y/?p=features)
@@ -271,10 +286,10 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 
 
 
-####<a name="dbg">Debuggers</a>
+#### <a name="dbg">Debuggers</a>
 
 [OllyDbg](http://www.ollydbg.de/)
-* OllyDbg is a 32-bit assembler level analysing debugger for MicrosoftÆ WindowsÆ. Emphasis on binary code analysis makes it particularly useful in cases where source is unavailable.
+* OllyDbg is a 32-bit assembler level analysing debugger for Microsoft¬Æ Windows¬Æ. Emphasis on binary code analysis makes it particularly useful in cases where source is unavailable.
 * [OllyDbg Tricks for Exploit Development](http://resources.infosecinstitute.com/in-depth-seh-exploit-writing-tutorial-using-ollydbg/)
 
 [GDB - GNU Debugger](https://www.gnu.org/software/gdb/)
@@ -308,7 +323,7 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 * HyperDbg is a kernel debugger that leverages hardware-assisted virtualization. More precisely, HyperDbg is based on a minimalistic hypervisor that is installed while the system runs. Compared to traditional kernel debuggers (e.g., WinDbg, SoftIce, Rasta R0 Debugger) HyperDbg is completely transparent to the kernel and can be used to debug kernel code without the need of serial (or USB) cables. For example, HyperDbg allows to single step the execution of the kernel, even when the kernel is executing exception and interrupt handlers. Compared to traditional virtual machine based debuggers (e.g., the VMware builtin debugger), HyperDbg does not require the kernel to be run as a guest of a virtual machine, although it is as powerful. 
 * [Paper](http://roberto.greyhats.it/pubs/ase10.pdf)
 
-####<a name="decom">Decompilers & Disassemblers</a>
+#### <a name="decom">Decompilers & Disassemblers</a>
 
 [Procyon - Java Decompiler](https://bitbucket.org/mstrobel/procyon/wiki/Java%20Decompiler)
 
@@ -333,7 +348,7 @@ programming environment.
 * Reverse engineering for x86 binaries (elf-format). Generate a more readable code (pseudo-C) with colored syntax. Warning, the project is still in development, use it at your own risks. This tool will try to disassemble one function (by default main). The address of the function, or its symbol, can be passed by argument.
 
 
-####<a name="ct">Comparison Tools</a>s
+#### <a name="ct">Comparison Tools</a>s
 
 [binwally](https://github.com/bmaia/binwally)
 * Binary and Directory tree comparison tool using the Fuzzy Hashing concept (ssdeep)
@@ -342,7 +357,7 @@ programming environment.
 
 
 
-####<a name="lt">Linux Specific Tools</a>
+#### <a name="lt">Linux Specific Tools</a>
 
 [readelf](https://sourceware.org/binutils/docs/binutils/readelf.html)
 * Unix Tool
@@ -353,7 +368,7 @@ programming environment.
 [Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
 
 
-####<a name="wt">Windows Specific Tools</a>
+#### <a name="wt">Windows Specific Tools</a>
 
 [PEview](http://wjradburn.com/software/)
 * PEview provides a quick and easy way to view the structure and content of 32-bit Portable Executable (PE) and Component Object File Format (COFF) files. This PE/COFF file viewer displays header, section, directory, import table, export table, and resource information within EXE, DLL, OBJ, LIB, DBG, and other file types.
@@ -366,7 +381,7 @@ programming environment.
 * pestudio is a tool that performs the static analysis of 32-bit and 64-bit Windows executable files.  Malicious executable attempts to hide its malicious intents and to evade detection. In doing so, it generally presents anomalies and suspicious patterns. The goal of pestudio is to detect these anomalies, provide indicators and score the executable being analyzed. Since the executable file being analyzed is never started, you can inspect any unknown or malicious executable with no risk. 
 
 [DotPeek](http://www.jetbrains.com/decompiler/features/)
-* dotPeek is a .NET decompiler that has several handy features. I havenít used it much, and donít do much in .NET so I canít say if its a good one, only that Iíve had success in using it.
+* dotPeek is a .NET decompiler that has several handy features. I haven‚Äôt used it much, and don‚Äôt do much in .NET so I can‚Äôt say if its a good one, only that I‚Äôve had success in using it.
 
 [API Monitor](http://www.rohitab.com/apimonitor)
 * API Monitor is a free software that lets you monitor and control API calls made by applications and services. Its a powerful tool for seeing how applications and services work or for tracking down problems that you have in your own applications.
@@ -378,7 +393,7 @@ programming environment.
 
 
 
-####<a name="pl">Programming Libraries</a>
+#### <a name="pl">Programming Libraries</a>
 
 
 [openreil](https://github.com/Cr4sh/openreil)
@@ -400,7 +415,7 @@ programming environment.
 
 
 
-###<a name="are">Anti-Reverse Engineering Techniques & Countermeasures</a>
+### <a name="are">Anti-Reverse Engineering Techniques & Countermeasures</a>
 
 [Anti-RE A collection of Anti-Reverse Engineering Techniques](http://pnx.tf/files/spring7_antire_plohmann_kannen.pdf)
 
@@ -429,7 +444,7 @@ programming environment.
 
 
 
-###<a name="hre">Hardware Reverse Engineering</a>
+### <a name="hre">Hardware Reverse Engineering</a>
 [Apple Lightning Reverse Engineered](http://ramtin-amin.fr/#tristar)
 
 [Reverse Engineering Intels Management Engine](http://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf) 
@@ -447,24 +462,24 @@ Hacking the Dropcam series
 
 [Reverse Engineering: Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 
-###<a name="pa">Protocol Analysis & Related</a>
+### <a name="pa">Protocol Analysis & Related</a>
 [Netzob](http://www.netzob.org/)
 * Originaly, the development of Netzob has been initiated to support security auditors and evaluators in their activities of modeling and simulating undocumented protocols. The tool has then been extended to allow smart fuzzing of unknown protocol. 
 * [Netzob Documentation](http://netzob.readthedocs.org/en/latest/overview/index.html)
  
 
-###<a name="writeups">Writeups</a>
+### <a name="writeups">Writeups</a>
 [Reverse engineering radio weather station](http://blog.atx.name/reverse-engineering-radio-weather-station/)
 [Introduction to Reverse Engineering Win32 Applications](http://uninformed.org/?v=all&a=7&t=sumry)
 * During the course of this paper the reader will be (re)introduced to many concepts and tools essential to understanding and controlling native Win32 applications through the eyes of Windows Debugger (WinDBG). Throughout, WinMine will be utilized as a vehicle to deliver and demonstrate the functionality provided by WinDBG and how this functionality can be harnessed to aid the reader in reverse engineering native Win32 applications. Topics covered include an introductory look at IA-32 assembly, register significance, memory protection, stack usage, various WinDBG commands, call stacks, endianness, and portions of the Windows API. Knowledge gleaned will be used to develop an application designed to reveal and/or remove bombs from the WinMine playing grid. 
 
 [Somfy Smoove Origin RTS Protocol](https://pushstack.wordpress.com/somfy-rts-protocol/)
-* This document describes the Somfy RTS protocol as used by the ìSomfy Smoove Origin RTSî. Most information in this document is based on passive observation of the data send by the Smoove Origin RTS remote, and thus can be inaccurate or incorrect!
+* This document describes the Somfy RTS protocol as used by the ‚ÄúSomfy Smoove Origin RTS‚Äù. Most information in this document is based on passive observation of the data send by the Smoove Origin RTS remote, and thus can be inaccurate or incorrect!
 
 [ Reverse Engineering The eQSO Protocol](https://gist.github.com/anonymous/7a9d713e61ba990a3a17)
 * Today I reverse engineered the eQSO protocol. If you didn't know, eQSO is a small program that allows radio amateurs to talk to each other online. Sadly this program isn't as popular as it used to be (Well, neither is the radio).
 
-[You can ring my bell! Adventures in sub-GHz RF landÖ](http://adamsblog.aperturelabs.com/2013/03/you-can-ring-my-bell-adventures-in-sub.html)
+[You can ring my bell! Adventures in sub-GHz RF land‚Ä¶](http://adamsblog.aperturelabs.com/2013/03/you-can-ring-my-bell-adventures-in-sub.html)
 
 
 Reverse engineering walk htrouhg; guy rev eng alarm system from shelf to replay
@@ -486,13 +501,13 @@ Part 8: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-bur
 [Cyber Necromancy - Reverse engineering dead protocols - Defcamp 2014 ](https://www.youtube.com/watch?v=G0v2FO2Ru0w&index=6&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
 
 [Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
-* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, itís something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. Whatís new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
+* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it‚Äôs something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What‚Äôs new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
 
 [Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 
 [SATCOM Terminals Hacking by Air, Sea, and Land - Black Hat USA 2014](https://www.youtube.com/watch?v=tRHDuT__GoM)
 
-###<a name="papers">Papers</a>
+### <a name="papers">Papers</a>
 
 [Byteweight: Learning to Recognize Functions in Binary Code](https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-bao.pdf)
 
@@ -532,7 +547,7 @@ informed, and determined reverser
 
 
 
-###<a name="wikis">Wikis & Useful Sites</a>
+### <a name="wikis">Wikis & Useful Sites</a>
 [FCC ID Lookup](http://transition.fcc.gov/oet/ea/fccid/)
 * Lookup devices according to FCC ID
 

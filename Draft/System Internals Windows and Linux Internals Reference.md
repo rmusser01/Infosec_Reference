@@ -66,7 +66,7 @@ http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx
 #### End Sort
 
 
-###<a name="general">General Internals</a>
+### <a name="general">General Internals</a>
 [C Function Call Conventions and the Stack](https://archive.is/o2nD5)
 
 [The Anatomy of an Executable](https://github.com/mewrev/dissection)
@@ -77,9 +77,9 @@ http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx
 
 
 
-###<a name="winref">Windows Reference</a>
+### <a name="winref">Windows Reference</a>
 
-###<a name="Winternals">Windows Internals</a>
+### <a name="Winternals">Windows Internals</a>
 
 [theForger's Win32 API Programming Tutorial](http://www.winprog.org/tutorial/)
 
@@ -161,16 +161,16 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
-####<a name="kerberos">Kerberos Related</a>
+#### <a name="kerberos">Kerberos Related</a>
 [Kerberos Delegation, SPNs and More...](https://www.coresecurity.com/blog/kerberos-delegation-spns-and-more)
 
 
 
 
 
-###<a name="linux">Linux General</a>
+### <a name="linux">Linux General</a>
 
-###<a name="linux">Linux Internals</a>
+### <a name="linux">Linux Internals</a>
 [linux-insides](https://www.gitbook.com/book/0xax/linux-insides/details)
 * A series of posts about the linux kernel. The goal is simple - to share my modest knowledge about the internals of the linux kernel and help people who are interested in the linux kernel, and other low-level subject matter.
 
@@ -284,7 +284,7 @@ Linux Filesystem infographic
 
 
 
-###<a name="ARM">ARM References</a>
+### <a name="ARM">ARM References</a>
 
 
 
@@ -299,7 +299,7 @@ Linux Filesystem infographic
 
 
 
-###<a name="osx">OS X Internals</a>
+### <a name="osx">OS X Internals</a>
 
 [Instruments - OS X system analysis](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html)
 * Instruments is a performance-analysis and testing tool for dynamically tracing and profiling OS X and iOS code. It is a flexible and powerful tool that lets you track a process, collect data, and examine the collected data. In this way, Instruments helps you understand the behavior of both user apps and the operating system.

@@ -22,7 +22,7 @@
 Better security - Mean time to detect/Mean time to respond
 
 
-###CULL
+### CULL
 https://github.com/SekoiaLab/Fastir_Collector
 http://www.sekoia.fr/blog/wp-content/uploads/2015/10/FastIR-Collector-on-advanced-threats_v1.4.pdf
 
@@ -195,7 +195,7 @@ Volatility Framework
 
 
 
-###<a name="talks">Presentations & Talks</a>
+### <a name="talks">Presentations & Talks</a>
 [Ways to Identify Malware on a System Ryan Irving](http://www.irongeek.com/i.php?page=videos/bsidestampa2015/201-ways-to-identify-malware-on-a-system-ryan-irving)
 
 
@@ -204,7 +204,7 @@ Volatility Framework
 
 
 
-###<a name="anti">Anti-Forensics</a>
+### <a name="anti">Anti-Forensics</a>
 
 
 Secure Deletion of Data from Magnetic and Solid-State Memory
@@ -214,9 +214,9 @@ http://static.usenix.org/publications/library/proceedings/sec96/full_papers/gutm
 
 
 
-###<a name="mobile">Mobile Device Forensics</a>
+### <a name="mobile">Mobile Device Forensics</a>
 
-####<a name="android">Android Forensics</a>
+#### <a name="android">Android Forensics</a>
 [Android Forensics class - OpenSecurity Training](http://opensecuritytraining.info/AndroidForensics.html)
 * This class serves as a foundation for mobile digital forensics, forensics of Android operating systems, and penetration testing of Android applications. 
 
@@ -240,7 +240,7 @@ http://www.iosresearch.org/
 
 
 
-###<a name="pdf">PDF Forensics</a>
+### <a name="pdf">PDF Forensics</a>
 
 http://countuponsecurity.com/2014/09/22/malicious-documents-pdf-analysis-in-5-steps/
 
@@ -248,7 +248,7 @@ http://countuponsecurity.com/2014/09/22/malicious-documents-pdf-analysis-in-5-st
 
 
 
-###<a name="photo">Photo Forensics</a>
+###< a name="photo">Photo Forensics</a>
 
 
 
@@ -258,7 +258,7 @@ http://countuponsecurity.com/2014/09/22/malicious-documents-pdf-analysis-in-5-st
 * Exif Jpeg header manipulation tool
 
 
-###<a name="tools">Tools:</a>
+### <a name="tools">Tools:</a>
 
 Ghiro 
 
@@ -270,13 +270,13 @@ Ghiro
 
 
 
-###<a name="linux">Linux Forensics</a>
+### <a name="linux">Linux Forensics</a>
 
 
 
-###<a name="windows">Windows Forensics</a>
+### <a name="windows">Windows Forensics</a>
 
-####Windows Forensics Tools
+#### Windows Forensics Tools
 
 
 
@@ -335,7 +335,7 @@ What are the changes done on an AD between two points in time ?
 
 
 
-Cull
+#### Cull
 
 [File Signature Table](http://www.garykessler.net/library/file_sigs.html)
 
@@ -379,7 +379,7 @@ Cull
 * PEview provides a quick and easy way to view the structure and content of 32-bit Portable Executable (PE) and Component Object File Format (COFF) files. This PE/COFF file viewer displays header, section, directory, import table, export table, and resource information within EXE, DLL, OBJ, LIB, DBG, and other file types.
 
 
-####Hacking Exposed - Automating DFIR Series
+#### Hacking Exposed - Automating DFIR Series
 [Automating DFIR - How to series on programming libtsk with python Part 1 - ](http://hackingexposedcomputerforensicsblog.blogspot.com/2015/02/automating-dfir-how-to-series-on.html)
 [Automating DFIR - How to series on programming libtsk with python Part 2](http://hackingexposedcomputerforensicsblog.blogspot.com/2015/02/automating-dfir-how-to-series-on_19.html)
 [Automating DFIR - How to series on programming libtsk with python Part 3](http://hackingexposedcomputerforensicsblog.blogspot.com/2015/02/automating-dfir-how-to-series-on_21.html)

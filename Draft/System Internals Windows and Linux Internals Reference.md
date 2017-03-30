@@ -5,6 +5,7 @@ CULL
 
 * [General Internals](#general)
 * [Windows Internals](#winternals)
+* [Kerberos / Related](#kerberos)
 * [Linux Internals](#linux)
 * [Windows Reference](#windowsref)
 * [Linux Reference](#linuxref)
@@ -17,9 +18,15 @@ To Do:
 *	Clear Cull List
 *	Split sections into reference material and writeup material(quick vs long reference)
 
+
+
 #### Sort
 http://linux-audit.com/elf-binaries-on-linux-understanding-and-analysis/?utm_content=buffere95dc&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer
 
+[Windows - Application Shims](https://technet.microsoft.com/en-us/library/dd837644%28v=ws.10%29.aspx)
+
+[Antimalware Scan Interface Reference](https://msdn.microsoft.com/en-us/library/windows/desktop/dn889588]
+* prevents certain kinds of powershell attacks
 
 http://duartes.org/gustavo/blog/post/memory-translation-and-segmentation/ 
 
@@ -35,9 +42,12 @@ https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/
 
 https://hshrzd.wordpress.com/2016/03/19/introduction-to-ads-alternate-data-streams/ 
 
+[Windows Filtering Platform: Persistent state under the hood](http://blog.quarkslab.com/windows-filtering-platform-persistent-state-under-the-hood.html)
 
 https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-and-10/ 
 
+
+[Article Explaining what the KRBTGT account in AD is](http://windowsitpro.com/security/q-what-krbtgt-account-used-active-directory-ad-environment)
 
 [Intel SGX Explained](https://eprint.iacr.org/2016/086.pdf)
 * This paper analyzes Intel SGX, based on the 3 pa- pers [ 14 , 78 , 137 ] that introduced it, on the Intel Software Developer’s Manual [ 100 ] (which supersedes the SGX manuals [ 94 , 98 ]), on an ISCA 2015 tutorial [ 102 ], and on two patents [ 108 , 136 ]. We use the papers, reference manuals, and tutorial as primary data sources, and only draw on the patents to fill in missing information. This  paper’s  contributions  are  a  summary  of  the Intel-specific architectural and micro-architectural details needed to understand SGX, a detailed and structured pre- sentation of the publicly available information on SGX, a series of intelligent guesses about some important but undocumented aspects of SGX, and an analysis of SGX’s security properties.
@@ -150,6 +160,9 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 [License to Kill: Malware Hunting with the Sysinternals Tools](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/ATC-B308)
 
 
+
+####<a name="kerberos">Kerberos Related</a>
+[Kerberos Delegation, SPNs and More...](https://www.coresecurity.com/blog/kerberos-delegation-spns-and-more)
 
 
 

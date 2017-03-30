@@ -7,7 +7,7 @@ TOC
 
 *Cull
 
-*[Attacking Windows Networks](#attackw)
+* [Attacking Windows Networks](#attackw)
 * [Tools](#tools)
 * [Writeups](#writeup)
 * [Presentations/Talks](#talks)
@@ -15,36 +15,29 @@ TOC
 * [IPv6 info](#ipv6)
 * [IDS/IPS Evasion](#evasion)
 * [UPNP](#upnp)
+* [Other(stuff that doesn't fit elswewher)](#other)
 
 
-
-#####To be sorted
+##### To be sorted
 
 [Simple domain fronting PoC with GAE C2 server](https://www.securityartwork.es/2017/01/31/simple-domain-fronting-poc-with-gae-c2-server/)
 * In this entry we continue with domain fronting; on this occasion we will explore how to implement a simple PoC of a command and control and exfiltration server on Google App Engine (GAE), and we will see how to do the domain fronting from Windows, with a VBS or PowerShell script, to hide interactions with the C2 server.
-
-[More on HNAP - What is it, How to Use it,How to Find it](https://isc.sans.edu/diary/More+on+HNAP+-+What+is+it%2C+How+to+Use+it%2C+How+to+Find+it/17648)
-
-[Modbus interface tutorial](https://www.lammertbies.nl/comm/info/modbus.html)
-
-[Post Exploitation Using netNTLM Downgrade attacks - Fishnet/Archive.org](https://web.archive.org/web/20131023064257/http://www.fishnetsecurity.com/6labs/blog/post-exploitation-using-netntlm-downgrade-attacks)
 
 [iv-wrt](https://github.com/iv-wrt/iv-wrt)
 * An Intentionally Vulnerable Router Firmware Distribution[
 
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
+##### sort end
 
-[Break Fast Serial](https://github.com/GoSecure/break-fast-serial)
-* A proof of concept that demonstrates asynchronous scanning for Java deserialization bugs
-
-#####sort end
 
 
 
 
 
 ### General
+
+[A Red Teamer's guide to pivoting](https://artkond.com/2017/03/23/pivoting-guide/#corporate-http-proxy-as-a-way-out)
 
 [NMAP - Port-Scanning: A Practical Approach Modified for better](https://www.exploit-db.com/papers/35425/)
 
@@ -129,7 +122,9 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 [CiscoRouter - tool](https://github.com/ajohnston9/ciscorouter)
 * CiscoRouter is a tool for scanning Cisco-based routers over SSH. Rules can be created using accompanying CiscoRule application (see this repo) and stored in the "rules" directory.
 
-[UPnP Pentest Toolkit](https://github.com/nccgroup/UPnP-Pentest-Toolkit)
+
+[PowerShell-AD-Recon](https://github.com/PyroTek3/PowerShell-AD-Recon)
+* AD PowerShell Recon Scripts
 
 [NbtScan](http://www.unixwiz.net/tools/nbtscan.html)
 * This is a command-line tool that scans for open NETBIOS nameservers on a local or remote TCP/IP network, and this is a first step in finding of open shares. It is based on the functionality of the standard Windows tool nbtstat, but it operates on a range of addresses instead of just one. I wrote this tool because the existing tools either didn't do what I wanted or ran only on the Windows platforms: mine runs on just about everything. 
@@ -334,7 +329,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 [Bitsquatting: DNS Hijacking without exploitation](http://dinaburg.org/bitsquatting.html)
 
-
+[Hunting Bugs in AIX : Pentesting writeup](https://rhinosecuritylabs.com/2016/11/03/unix-nostalgia-hunting-zeroday-vulnerabilities-ibm-aix/)
 
 
 
@@ -410,14 +405,24 @@ TCPDump
 
 
 ###<a name="upnp">UPNP</a>
-Ufuzz - https://github.com/phikshun/ufuzz
-UFuzz, or Universal Plug and Fuzz, is an automatic UPnP fuzzing tool. It will enumerate all UPnP endpoints on the network, find the available services and fuzz them. It also has the capability to fuzz HTTP using Burp proxy logs.
 
-miranda-upnp - https://github.com/0x90/miranda-upnp
+[Ufuzz](https://github.com/phikshun/ufuzz)
+* UFuzz, or Universal Plug and Fuzz, is an automatic UPnP fuzzing tool. It will enumerate all UPnP endpoints on the network, find the available services and fuzz them. It also has the capability to fuzz HTTP using Burp proxy logs.
+
+[miranda-upnp](https://github.com/0x90/miranda-upnp)
+
+[UPnP Pentest Toolkit](https://github.com/nccgroup/UPnP-Pentest-Toolkit)
 
 
 
 
+###<a name="other">Other</a>
 
+[exitmap](https://github.com/NullHypothesis/exitmap)
+* A fast and modular scanner for Tor exit relays. http://www.cs.kau.se/philwint/spoiled_onions/ 
+
+[More on HNAP - What is it, How to Use it,How to Find it](https://isc.sans.edu/diary/More+on+HNAP+-+What+is+it%2C+How+to+Use+it%2C+How+to+Find+it/17648)
+
+[Modbus interface tutorial](https://www.lammertbies.nl/comm/info/modbus.html)
 
 

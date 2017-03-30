@@ -33,6 +33,17 @@ Aircrack https://www.aircrack-ng.org/doku.php?id=links
 Ubertooth
 Scapy
 
+[Using Software Defined radio to attack Smart home systems](https://www.sans.org/reading-room/whitepapers/threats/software-defined-radio-attack-smart-home-systems-35922)
+
+[Software Defined Radio for Infosec People 101](http://garrettgee.com/appearances/software-defined-radio-for-infosec-people-101/)
+
+[Sniffing GSM with RTL-SDR](https://www.youtube.com/watch?v=7OW0YOa6CYs)
+
+[Introduction to SDR and the Wireless Village(Defcon)](https://www.youtube.com/watch?v=F9kKo190_oE)
+
+[Capturing and Cracking GSM traffic using a rtl-sdr](https://www.youtube.com/watch?v=TOl4Q4lyJTI)
+
+[Decoding the LoRa IoT Protocol with an RTL-SDR](http://www.rtl-sdr.com/decoding-the-iot-lora-protocol-with-an-rtl-sdr/)
 
 
 ###<a name="general">General</a>

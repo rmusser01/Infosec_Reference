@@ -38,6 +38,10 @@ http://www.securitywizardry.com/radar.htm
 
 #### To Sort
 
+[The foundation is rotting and the basement is flooding: A deeper look at the implicit trust relationships in your organization](https://www.youtube.com/watch?v=nL64uj9Xm24)
+
+[Alexsey’s TTPs](https://medium.com/@chrismcnab/alexseys-ttps-1204d9050551#.y2krgov7t)
+* Short writeup on large breaches(Short: Shit ain't secure.)
 
 [Internet Timeline](https://www.zakon.org/robert/internet/timeline/)
 

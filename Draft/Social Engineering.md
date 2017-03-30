@@ -15,20 +15,9 @@ CULL
 
 
 
-###Cull
-
-
- Pwning People Personally
-http://www.irongeek.com/i.php?page=videos/derbycon5/break-me08-pwning-people-personally-josh-schwartz
-
+#### sort
 
  | **I Will Kill You** - Chris Rock(Defcon23)| https://www.youtube.com/watch?v=9FdHq3WfJgs
-
-
-[BSidesSF 2016 - The Art of the Jedi Mind Trick (Jeff Man) ](https://www.youtube.com/watch?v=3L5_Kaps5t4)
-
-[PG01 Dropping hell0days Business Interaction for Security Professionals Or Anyone Else Elliot Johnso ](https://www.youtube.com/watch?v=COyN3NwY1v0)
-
 
 [king-phisher](https://github.com/securestate/king-phisher)
 *  Phishing Campaign Toolkit
@@ -36,22 +25,8 @@ http://www.irongeek.com/i.php?page=videos/derbycon5/break-me08-pwning-people-per
 [gophish documentation](https://getgophish.com/documentation/)
 
 
-[Area41 2016: Dominique-Cédric Brack: Professional Social Engineering](https://youtu.be/NcpmhsSVzuM)
-
-
-
-| **Pwning People Personally** - Josh Schwartz | https://www.youtube.com/watch?v=T2Ha-ZLZTz0
-
-[The Social Engineering Framework](http://www.social-engineer.org/framework/general-discussion/)
-* The Social Engineering Framework is a searchable information resource for people wishing to learn more about the psychological, physical and historical aspects of social engineering. 
-
-[DiSC Overview](https://www.discprofile.com/what-is-disc/overview/)
-* DiSC is a personal assessment tool used to improve work productivity, teamwork and communication. DiSC is non-judgmental and helps people discuss their behavioral differences.
-
-
-
-
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
+#### end sort
 
 
 ###<a name="articles">Articles
@@ -60,6 +35,13 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 [Source Recruitment](http://guerrillamerica.com/2013/12/source-recruitment/)
 [List of the 48 Laws of Power](http://cgt411.tech.purdue.edu/covey/48_laws_of_power.htm)
 [Influence: Book notes](http://www.2uo.de/influence/)
+
+[DiSC Overview](https://www.discprofile.com/what-is-disc/overview/)
+* DiSC is a personal assessment tool used to improve work productivity, teamwork and communication. DiSC is non-judgmental and helps people discuss their behavioral differences.
+
+[The Social Engineering Framework](http://www.social-engineer.org/framework/general-discussion/)
+* The Social Engineering Framework is a searchable information resource for people wishing to learn more about the psychological, physical and historical aspects of social engineering. 
+
 
 ###<a name="books">Books</a>
 
@@ -108,6 +90,9 @@ Influence Without Authority
 [Steal Everything, Kill Everyone, Cause Total Financial Ruin!](https://www.youtube.com/watch?v=JsVtHqICeKE)
 * This is not a presentation where I talk about how I would get in or the things I might be able to do. This is a talk where I am already in and I show you pictures from actual engagements that I have been on. They say one picture is worth a thousand words I show you how one picture cost a company a million dollars and maybe even a few lives. In a community where we focus so much on the offensive I also make sure with every attack I highlight. I spend time discussing what would have stopped me. We need to know the problems but we need more talks providing solutions and that is what I hope people will get from this. I show the dangers of Social engineering and how even an employee with no SE experience can be an eBay James Bond which can cause total financial ruin to a company. These Security threats are real. So are these stories! 
 
+
+[PG01 Dropping hell0days Business Interaction for Security Professionals Or Anyone Else Elliot Johnso ](https://www.youtube.com/watch?v=COyN3NwY1v0)
+
 [Social Engineering: The Gentleman Thief  - Apollo Robins - Defcon21](https://www.youtube.com/watch?v=1kkOKvPrdZ4)
 
 [Go With the Flow Strategies for Successful Social Engineering - Chris Silvers](https://www.youtube.com/watch?v=Lfm1mBrcuhY&feature=player_embedded)
@@ -121,6 +106,10 @@ Influence Without Authority
 
 [Beyond Social Engineering: Tools for Reinventing Yourself - Defcon14](https://www.youtube.com/watch?v=S-FPJ6lpRYU)
 * Managing multiple modular identities is not a trivial task. But that's what the technologies and politics of Now demand. These tools will enable you to create personas at a deep level, then link them into a seamless life. 	
+
+| **Pwning People Personally** - Josh Schwartz | https://www.youtube.com/watch?v=T2Ha-ZLZTz0
+
+[Area41 2016: Dominique-Cédric Brack: Professional Social Engineering](https://youtu.be/NcpmhsSVzuM)
 
 [Social Engineering: When the Phone is More Dangerous than Malware](https://www.youtube.com/watch?v=fui9AVpp1wo)
 * Is social engineering (SE) the most dangerous security threat to your business? The Social-Engineer team will analyze current trends in social engineering through the official (and unofficial) results from the DefCon 21 Social Engineering Capture the Flag event. They will reveal how these attacks work, the latest social engineering research and how to use this information to protect organizations.
@@ -141,6 +130,13 @@ Influence Without Authority
 
 [The Future of Social Engineering - Sharon Conheady - DeepSec2010](https://www.youtube.com/watch?v=aVIq9mdVHlc&index=11&list=PL_At9BlHdC-_764ciDVexbJL0hwsCzqLK)
 * Social engineering is hitting the headlines more than ever. As computer security becomes more sophisticated, hackers are combining their technical expertise with social engineering to gain access to IT infrastructures and critical information. In any security programme people are the weakest link. It can often be easier and quicker to target the end user than using technical hacking techniques. When you combine both social engineering and traditional hacking techniques, you have an extremely dangerous attack. So what's next on the social engineering agenda? What are the emerging trends and what social engineering techniques might we expect to see in the future? In this talk, I will give an overview of the types of social engineering attacks people have used throughout the ages, from tricks used by the classic conmen of the past to the phishing attacks that are at an all time high, and the proliferation of social networking and how useful this is to social engineers. I will describe some of the new social engineering techniques and trends that are emerging and discuss war stories from my experience of social engineering, describing techniques I have used to gain access to sensitive information
+
+[BSidesSF 2016 - The Art of the Jedi Mind Trick (Jeff Man) ](https://www.youtube.com/watch?v=3L5_Kaps5t4)
+
+[Pwning People Personally](http://www.irongeek.com/i.php?page=videos/derbycon5/break-me08-pwning-people-personally-josh-schwartz)
+
+
+
 
 [Disguise - Appearance Hacking](http://www.irongeek.com/i.php?page=videos/derbycon2/valerie-thomas-appearance-hacking-101-the-art-of-everyday-camouflage)
 * [Transcript](http://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are/transcript)

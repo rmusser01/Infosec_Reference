@@ -6,7 +6,7 @@ Information Security Reference That Doesn't Suck
 
 * Make it informal, list of techniques by grouping, references, better version of RTFM
 * End goal is for it to be a rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches within infosec, or as a reference/recall method for other things.
-
+* Something similar to the [MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page)
 
 ##### This page
 * This page has links to *some* of the content on here. This is still very much a  WIP. More content is within the Draft folder. If you want to contribute, feel free.

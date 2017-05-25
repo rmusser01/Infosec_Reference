@@ -44,6 +44,10 @@ https://hshrzd.wordpress.com/2016/03/19/introduction-to-ads-alternate-data-strea
 
 [Windows Filtering Platform: Persistent state under the hood](http://blog.quarkslab.com/windows-filtering-platform-persistent-state-under-the-hood.html)
 
+[What registry entries are needed to register a COM object.](https://blogs.msdn.microsoft.com/larryosterman/2006/01/11/what-registry-entries-are-needed-to-register-a-com-object/)
+
+[Minimal COM object registration](https://blogs.msdn.microsoft.com/larryosterman/2006/01/05/minimal-com-object-registration/)
+
 https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-and-10/ 
 
 
@@ -80,6 +84,13 @@ http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx
 ### <a name="winref">Windows Reference</a>
 
 ### <a name="Winternals">Windows Internals</a>
+
+[What is a DLL?](https://support.microsoft.com/en-us/help/815065/what-is-a-dll)
+* This article describes what a dynamic link library (DLL) is and the various issues that may occur when you use DLLs.  Then, this article describes some advanced issues that you should consider when you develop your own DLLs. In describing what a DLL is, this article describes dynamic linking methods, DLL dependencies, DLL entry points, exporting DLL functions, and DLL troubleshooting tools.
+
+[Run-Time Dynamic Linking](https://msdn.microsoft.com/en-us/library/ms685090.aspx)
+
+[Thread Local Storage](https://msdn.microsoft.com/en-us/library/ms686749.aspx)
 
 [theForger's Win32 API Programming Tutorial](http://www.winprog.org/tutorial/)
 

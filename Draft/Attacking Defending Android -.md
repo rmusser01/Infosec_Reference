@@ -50,6 +50,8 @@ https://blog.gdssecurity.com/labs/2015/2/18/when-efbfbd-and-friends-come-knockin
 
 http://nelenkov.blogspot.com
 
+[Add Security Exception to APK](https://github.com/levyitay/AddSecurityExceptionAndroid)
+
 
 
 ### **<a name="AInternals">Android Internals</a>**

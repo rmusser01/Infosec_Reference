@@ -1,9 +1,9 @@
-##Documentation & Reporting
+## Documentation & Reporting
 
-####For writing technical documentation.
+#### For writing technical documentation.
 
 
-#####TOC
+##### TOC
 * [Writing](#writing)
 * [Reports](#reports)
 * [Collaboration Tools](#collab)
@@ -12,12 +12,14 @@
 
 
 
-###<a name="writing">Writing</a>
+### <a name="writing">Writing</a>
 
 Start with the first two links, and go from there. They’re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
 
 [A beginners guide to writing documentation](http://docs.writethedocs.org/writing/beginners-guide-to-docs/)
 [Teach, Don’t Tell](http://stevelosh.com/blog/2013/09/teach-dont-tell/)
+
+[How to Write Papers So People Can Read Them - Derek Dreyer](https://www.youtube.com/watch?v=L_6xoMjFr70)
 
 Other Materials:
 
@@ -29,11 +31,13 @@ Three parter from jacobian.org:
 
 [Writing Types of User Documentation](https://en.wikiversity.org/wiki/Technical_writing_Types_of_User_Documentation0
 
+[How to write a great research paper - Simon Peyton Jones](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/)
+
 
 [The 7 Rules for Writing World Class Technical Documentation](http://www.developer.com/tech/article.php/3848981/The-7-Rules-for-Writing-World-Class-Technical-Documentation.htm)
 
 
-###<a name="reports">Writing Reports</a>
+### <a name="reports">Writing Reports</a>
 
 [Public penetration testing reports](https://github.com/juliocesarfort/public-pentesting-reports)
 * Curated list of public penetration test reports released by several consulting firms and academic security groups
@@ -45,6 +49,10 @@ Three parter from jacobian.org:
 [Writing a Penetration Testing Report by SANS](https://www.sans.org/reading-room/whitepapers/bestprac/writing-penetration-testing-report-33343)
 
 [Excellent blog post breaking down the various parts, a must read](http://wwwwebsecuritywatch.com/the-penetration-testing-report/)
+
+[Teach Technical Writing in Two Hours per Week](http://www.cs.tufts.edu/~nr/pubs/two-abstract.html)
+[Learn Technical Writing in Two Hours per Week - Norman Ramsey](http://www.cs.tufts.edu/~nr/pubs/learn-two.pdf)
+
 
 [Report Template from vulnerabilityassessment.co.uk](http://www.vulnerabilityassessment.co.uk/report%20template.html)
 
@@ -61,7 +69,7 @@ Three parter from jacobian.org:
 
 
 
-###<a name="meta">Meta</a>
+### <a name="meta">Meta</a>
 [What is Markdown?](http://daringfireball.net/projects/markdown/syntax)
 
 [Using markdown](https://guides.github.com/features/mastering-markdown/)
@@ -74,7 +82,7 @@ Three parter from jacobian.org:
 
 
 
-###<a name="collab">Penetration Testing &/ Collaboration Tools</a>
+### <a name="collab">Penetration Testing &/ Collaboration Tools</a>
 
 [Kvasir](https://github.com/KvasirSecurity/Kvasir)
 * Kvasir is a vulnerability / penetration testing data management system designed to help mitigate the issues found when performing team-based assessments. Kvasir does this by homogenizing data sources into a pre-defined structure. Currently the following sources are supported:
@@ -96,11 +104,13 @@ Three parter from jacobian.org:
 
 
 
-###<a name="video">Video Recording</a>
+### <a name="video">Video Recording</a>
 
 [Open Broadcaster Software OBS](https://obsproject.com/)
 * Open Broadcaster Software is free and open source software for video recording and live streaming.
 * Cross Platform, Windows/OsX/Linux
 
+### <a name="reading">Reading Papers</a>
+[How I read a research paper](https://muratbuffalo.blogspot.com/2013/07/how-i-read-research-paper.html?m=1)
 
 

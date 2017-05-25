@@ -1,4 +1,4 @@
-##Rootkits
+## Rootkits
 
 
 Windows Rootkits(excellent writeup/introduction to windows rootkits)
@@ -7,10 +7,9 @@ Windows Rootkits(excellent writeup/introduction to windows rootkits)
 * [Part 3](http://www.programdevelop.com/5408212/)
 
 
-TOC
+### TOC
 
-Cull
-
+* Cull
 * [Developing](#dev)
 * [Identifying/Defending](#id)
 * [Writeups](#writeups)
@@ -19,7 +18,7 @@ Cull
 * [Papers](#papers)
 
 
-###Cull
+### Cull
 
 
 [Analyzing the Jynx rootkit and the LD-Preload technique](http://volatility-labs.blogspot.com/2012/09/movp-24-analyzing-jynx-rootkit-and.html)
@@ -39,6 +38,8 @@ https://github.com/rrbranco/Troopers2015
 [Jellyfish - GPU rootkit PoC by Team Jellyfish ](https://github.com/x0r1/jellyfish)
 * Jellyfish is a Linux based userland gpu rootkit proof of concept project utilizing the LD_PRELOAD technique from Jynx (CPU), as well as the OpenCL API developed by Khronos group (GPU). Code currently supports AMD and NVIDIA graphics cards. However, the AMDAPPSDK does support Intel as well. 
 
+
+[Crafting Mac OS Rootkits](https://www.zdziarski.com/blog/wp-content/uploads/2017/02/Crafting-macOS-Root-Kits.pdf)
 
 [Pitfalls of virtual machine introspection on modern hardware](https://www.acsac.org/2014/workshops/mmf/Tamas%20Lengyel-Pitfalls%20of%20virtual%20machine%20introspection%20on%20modern%20hardware.pdf)
 [A Real SMM Rootkit: Reversing and Hooking BIOS SMI Handlers - Filip Wecherowski](http://phrack.org/issues/66/11.html#article)
@@ -65,7 +66,7 @@ Thunderstrike is the name for the Apple EFI firmware security vulnerability that
 
 
 
-###<a name="dev">Developing</a>
+### <a name="dev">Developing</a>
 [Android Rootkit](https://github.com/hiteshd/Android-Rootkit)
 [Masochist](https://github.com/squiffy/Masochist)
 * Masochist is a framework for creating XNU based rootkits. Very useful in OS X and iOS security research.
@@ -77,7 +78,7 @@ Thunderstrike is the name for the Apple EFI firmware security vulnerability that
 
 
 
-###<a name="id">Identifiying/Defending</a>
+### <a name="id">Identifiying/Defending</a>
 
 [Killing Rootkits](http://blog.ioactive.com/2014/09/killing-rootkit.html)
 
@@ -102,7 +103,7 @@ Thunderstrike is the name for the Apple EFI firmware security vulnerability that
 
 [Advanced Bootkit Techniques on Android](http://www.syscan360.org/slides/2014_EN_AdvancedBootkitTechniquesOnAndroid_ChenZhangqiShendi.pdf)
 
-###<a name="tools">Tools</a>
+### <a name="tools">Tools</a>
 
 [UEFITool](https://github.com/LongSoft/UEFITool)
 * UEFITool is a cross-platform C++/Qt program for parsing, extracting and modifying UEFI firmware images. It supports parsing of full BIOS images starting with the flash descriptor or any binary files containing UEFI volumes.
@@ -132,7 +133,7 @@ Thunderstrike is the name for the Apple EFI firmware security vulnerability that
 
 
 
-###<a name="papers">Papers</a>
+### <a name="papers">Papers</a>
 [A Catalog of Windows Local Kernel-mode Backdoors](http://uninformed.org/?v=all&a=35&t=sumry)
 * This paper presents a detailed catalog of techniques that can be used to create local kernel-mode backdoors on Windows. These techniques include function trampolines, descriptor table hooks, model-specific register hooks, page table modifications, as well as others that have not previously been described. The majority of these techniques have been publicly known far in advance of this paper. However, at the time of this writing, there appears to be no detailed single point of reference for many of them. The intention of this paper is to provide a solid understanding on the subject of local kernel-mode backdoors. This understanding is necessary in order to encourage the thoughtful discussion of potential countermeasures and perceived advancements. In the vein of countermeasures, some additional thoughts are given to the common misconception that PatchGuard, in its current design, can be used to prevent kernel-mode rootkits.
 

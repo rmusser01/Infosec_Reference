@@ -45,7 +45,7 @@ Scapy
 
 [Decoding the LoRa IoT Protocol with an RTL-SDR](http://www.rtl-sdr.com/decoding-the-iot-lora-protocol-with-an-rtl-sdr/)
 
-
+[Using Software Defined Radio for IoT Analysis](https://www.irongeek.com/i.php?page=videos/bsidesnova2017/102-using-software-defined-radio-for-iot-analysis-samantha-palazzolo)
 
 
 

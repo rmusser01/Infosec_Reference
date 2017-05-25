@@ -20,7 +20,7 @@ http://www.keypicking.com/
 
 [A newbies guide to safes, both opening and using](https://www.reddit.com/r/WhatsInThisThing/comments/1gm6uk/a_newbies_guide_to_safes_both_opening_and_using/)
 
-
+[ Jos Weyers – Lock Impressioning](https://www.youtube.com/watch?v=JcNc1BVaCE0)
 
 
 ###General Information

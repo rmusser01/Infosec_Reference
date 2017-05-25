@@ -9,30 +9,8 @@
 [Developing a Open Source Threat Intelligence Program—Edward McCabe](http://www.irongeek.com/i.php?page=videos/circlecitycon2014/105-developing-a-open-source-threat-intelligence-program-edward-mccabe)
 * What if you could get out in front of common threats such as botnets, scanners and malware? Good news, you can. Learn about one geeks struggle with life on the Internet of (bad) things when it comes to being online, identifying “odd” things, and developing an Open Source Threat Intelligence Program from Open Source Tools and Public Sources.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[NameCheck](https://www.namecheck.com)
+* Search usernames across multiple services/domain registries
 
 
 https://github.com/gojhonny/InSpy

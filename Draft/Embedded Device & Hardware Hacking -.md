@@ -2,7 +2,7 @@
 
 https://en.wikipedia.org/wiki/Embedded_system
 
-#####ToC
+##### ToC
 
 Cull
 * [General](#general)
@@ -36,13 +36,19 @@ Cull
 http://www.sp3ctr3.me/hardware-security-resources/ 
 
 http://greatscottgadgets.com/infiltrate2013/
+
+
+[Reversing and Exploiting Embedded Devices: The Software Stack (Part 1)](https://p16.praetorian.com/blog/reversing-and-exploiting-embedded-devices-part-1-the-software-stack)
+
+[Metasploit Hardware Brdige](https://community.rapid7.com/community/transpo-security/blog/2017/02/02/exiting-the-matrix)
+* [Hardware Bridge API](http://opengarages.org/hwbridge/)
 #### end sort
 
 
 
 
 
-###General
+### General
 
 
 
@@ -66,7 +72,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-###<a name="routers">Attacking Routers</a>
+### <a name="routers">Attacking Routers</a>
 
 [More on HNAP - What is it, How to Use it, How to Find it](https://isc.sans.edu/diary/More+on+HNAP+-+What+is+it%2C+How+to+Use+it%2C+How+to+Find+it/17648)
 
@@ -102,7 +108,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-###<a name="modem">Cable Modem Hacking</a>
+### <a name="modem">Cable Modem Hacking</a>
 
 [Docsis hacking](https://www.defcon.org/images/defcon-16/dc16-presentations/defcon-16-self.pdf)
 [Hacking Docsis for fun and profit](https://www.defcon.org/images/defcon-18/dc-18-presentations/Blake-bitemytaco/DEFCON-18-Blake-bitemytaco-Hacking-DOCSIS.pdf)
@@ -122,7 +128,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-###<a name="education">Educational</a>
+### <a name="education">Educational</a>
 [Hardware Hacking for Software People](http://dontstuffbeansupyournose.com/2011/08/25/hardware-hacking-for-software-people/)
 
 [Glitching for n00bs - A journey to coax out chips' inner seccrets](http://media.ccc.de/browse/congress/2014/31c3_-_6499_-_en_-_saal_2_-_201412271715_-_glitching_for_n00bs_-_exide.html#video)
@@ -152,7 +158,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-###<a name="flash">Flash Memory</a>
+### <a name="flash">Flash Memory</a>
 [Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 
 
@@ -163,7 +169,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-###<a name="iot">Internet of Things</a>
+### <a name="iot">Internet of Things</a>
 [Smart Nest Thermostat A Smart Spy in Your Home](https://www.youtube.com/watch?v=UFQ9AYMee_Q)
 
 [A Primer on IoT Security Research](https://community.rapid7.com/community/infosec/blog/2015/03/10/iot-security-research-whats-it-take)
@@ -175,7 +181,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-###<a name="gentools">General Tools(Software & Hardware)</a>
+### <a name="gentools">General Tools(Software & Hardware)</a>
 
 [FCC ID Lookup](http://transition.fcc.gov/oet/ea/fccid/)
 * Lookup devices according to FCC ID
@@ -188,7 +194,7 @@ http://greatscottgadgets.com/infiltrate2013/
 * JTAGulator is an open source hardware tool that assists in identifying OCD connections from test points, vias, or component pads on a target device.
 
 
-###<a name="generalhw">General Hardware Hacking</a>
+### <a name="generalhw">General Hardware Hacking</a>
 
 [Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
 
@@ -208,7 +214,7 @@ http://greatscottgadgets.com/infiltrate2013/
 * Security through obscurity is unfortunately much more common than people think: many interfaces are built on the premise that since they are a "closed system" they can ignore standard security practices. This paper will demonstrate how parking meter smart cards implement their protocol and will point out some weaknesses in their design that open the doors to the system. It will also present schematics and code that you can use to perform these basic techniques for auditing almost any type of blackblox secure memory card. 
 
 
-###<a name="misc">Miscellaneous</a>
+### <a name="misc">Miscellaneous</a>
 
 [Project bdp](http://www.malcolmstagg.com/bdp-s390.html)
 * This is a project to modify the Sony Blu-ray BDP firmware. It started out with only the BDP-S390, but has branched out to include other players and a variety of goals, including removing Cinavia and obtaining Region-Free.
@@ -225,7 +231,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-###<a name="pci">PCI</a>
+### <a name="pci">PCI</a>
 
 
 [Inception](https://github.com/carmaa/inception)
@@ -238,7 +244,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-###<a name="USB">USB</a>
+### <a name="USB">USB</a>
 
 [USBProxy](https://github.com/dominicgs/USBProxy)
 * A USB man in the middle device using USB On-The-Go, libUSB and gadgetFS 
@@ -250,7 +256,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-###<a name="dropbox">Pentesting Drop Boxes</a>
+### <a name="dropbox">Pentesting Drop Boxes</a>
 Minipwner
 
 
@@ -265,7 +271,7 @@ http://www.instructables.com/id/MyLittlePwny-Make-a-self-powered-pentesting-box-
 https://github.com/pwnieexpress/raspberry_pwn
 
 
-###<a name="teensy">Teensy/Rubbery Ducky Style Attacks/Etc</a>
+### <a name="teensy">Teensy/Rubbery Ducky Style Attacks/Etc</a>
 
 
 [USB teensy attack set OSX](http://samy.pl/usbdriveby/)
@@ -279,13 +285,13 @@ https://github.com/pwnieexpress/raspberry_pwn
 
 
 
-###<a name="sdcard">SD Cards</a>
+### <a name="sdcard">SD Cards</a>
 [The Exploration and Exploitation of an SD Memory Card](https://www.youtube.com/watch?v=Tj-zI8Tl218)
 * This talk demonstrates a method for reverse engineering and loading code into the microcontroller within a SD memory card.
 
 
 
-###<a name="writeups">Tutorials/Walkthroughs/Write-ups</a>
+### <a name="writeups">Tutorials/Walkthroughs/Write-ups</a>
 
 [Methodologies for Hacking Embedded Security Appliances](https://media.blackhat.com/us-13/US-13-Bathurst-Methodologies-for-Hacking-Embdded-Security-Appliances-Slides.pdf)
 
@@ -311,7 +317,7 @@ https://github.com/pwnieexpress/raspberry_pwn
 
 
 
-###<a name="usb">USB</a>
+### <a name="usb">USB</a>
 [USB in a Nutshell](http://www.beyondlogic.org/usbnutshell/usb1.shtml)
 * Great explanation of the USB standard in depth
 
@@ -326,11 +332,11 @@ https://github.com/pwnieexpress/raspberry_pwn
 * USB is used in almost every computing device produced in recent years. In addition to well-known usages like keyboard, mouse, and mass storage, a much wider range of capabilities exist such as Device Firmware Update, USB On-The-Go, debug over USB, and more. What actually happens on the wire? Is there interesting data we can observe or inject into these operations that we can take advantage of? In this talk, we will present an overview of USB and its corresponding attack surface. We will demonstrate different tools and methods that can be used to monitor and abuse USB for malicious purposes.
 
 
-BadUSB
-[Slides](https://srlabs.de/blog/wp-content/uploads/2014/11/SRLabs-BadUSB-Pacsec-v2.pdf)
-[Video](https://www.youtube.com/watch?v=nuruzFqMgIw)
-[Code - Psychson](https://github.com/adamcaudill/Psychson) 
-[Media Transfer Protocol and USB device Research](http://nicoleibrahim.com/part-1-mtp-and-ptp-usb-device-research/)
+##### BadUSB
+* [Slides](https://srlabs.de/blog/wp-content/uploads/2014/11/SRLabs-BadUSB-Pacsec-v2.pdf)
+* [Video](https://www.youtube.com/watch?v=nuruzFqMgIw)
+* [Code - Psychson](https://github.com/adamcaudill/Psychson) 
+* [Media Transfer Protocol and USB device Research](http://nicoleibrahim.com/part-1-mtp-and-ptp-usb-device-research/)
 
 
 [USB Device Class Specifications - Official Site](http://www.usb.org/developers/docs/devclass_docs/)
@@ -344,15 +350,15 @@ BadUSB
 * This project's goal is to turn PS2303-based USB flash drive into a cheap USB 3.0 development platform (i.e. fast USB 3.0 to FPGA bridge).
 
 
-###SIM Cards
+### SIM Cards
 [Rooting SIM cards](https://www.youtube.com/watch?v=BR0yWjQYnhQ)
 
+[The Secret Life of SIM Cards - Karl Koscher/Eric Butler](https://www.youtube.com/watch?v=_-nxemBCcmU)
 
 
 
 
-
-###<a name="smartcard"Smartcards</a>
+### <a name="smartcard"Smartcards</a>
 
 [An analysis of the vulnerabilities introduced with Java Card 3 Connected Edition](http://www.ma.rhul.ac.uk/static/techrep/2013/MA-2013-04.pdf)
 

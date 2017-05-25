@@ -31,8 +31,6 @@
 
 
 
-
-
 ### <a name="harden">List of Hardening Guides for iOS</a>
 
 | Title     | Link |
@@ -97,6 +95,7 @@
 | **IODIDE - The IOS Debugger and Integrated Disassembler Environment** | https://github.com/nccgroup/IODIDE
 | **Clutch** - Fast iOS executable dumper | https://github.com/KJCracks/Clutch
 | **MEMSCAN - Dump iPhone app RAM** - A Cigital consultant – Grant Douglas, recently created a utility called MEMSCAN which enables users to dump the memory contents of a given iPhone app. Dumping the memory contents of a process proves to be a useful technique in identifying keys and credentials in memory. Using the utility, users are able to recover keys or secrets that are statically protected within the application but are less protected at runtime. Users can also use the utility to verify that keys and credentials are appropriately disposed of after use. | http://www.cigital.com/justice-league-blog/2015/02/18/memscan-defined/
+| **MEMSCAN - A memory scanning tool which uses mach_vm* to either dump memory or look for a specific sequence of bytes. | https://github.com/hexploitable/MEMSCAN
 | **IOS Reverse Engineering toolkit** | https://github.com/S3Jensen/iRET
 
 

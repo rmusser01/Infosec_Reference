@@ -38,6 +38,14 @@ http://www.securitywizardry.com/radar.htm
 
 #### To Sort
 
+[Make It Count   Progressing through Pentesting - Bálint Varga-Perke -Silent Signal](https://silentsignal.hu/docs/Make_It_Count_-_Progressing_through_Pentesting_Balint_Varga-Perke_Silent_Signal.pdf)
+
+[The Art of Explanation: Behavioral Models of InfoSec - Kelly Shortridge](https://www.youtube.com/embed/UdZDlt2dlqM?)
+
+
+[scanless](https://github.com/vesche/scanless)
+* Command-line utility for using websites that can perform port scans on your behalf. Useful for early stages of a penetration test or if you'd like to run a port scan on a host and have it not come from your IP address.
+
 [The foundation is rotting and the basement is flooding: A deeper look at the implicit trust relationships in your organization](https://www.youtube.com/watch?v=nL64uj9Xm24)
 
 [Alexsey’s TTPs](https://medium.com/@chrismcnab/alexseys-ttps-1204d9050551#.y2krgov7t)

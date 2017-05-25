@@ -435,7 +435,7 @@ programming environment.
 
 [Android Reverse Engineering Defenses](https://bluebox.com/wp-content/uploads/2013/05/AndroidREnDefenses201305.pdf)
 
-###<a name="guide">Guides & Tutorials</a>
+### <a name="guide">Guides & Tutorials</a>
 [How to RE data files?](https://www.reddit.com/r/ReverseEngineering/comments/l8ac0/how_to_re_data_files/)
 * Good read over.
 
@@ -493,7 +493,7 @@ Part 6: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-bur
 Part 7: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-7/
 Part 8: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-8/
 
-###<a name="talks">Talks & Videos</a>
+### <a name="talks">Talks & Videos</a>
 [The Three Billion Dollar App - Vladimir Wolstencroft -Troopers14](https://www.youtube.com/watch?v=5Duc-uUFzoU)
 * Talk about reverse engineering SnapChat and Wickr Messaging apps.
 

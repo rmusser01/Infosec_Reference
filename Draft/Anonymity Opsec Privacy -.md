@@ -1,12 +1,13 @@
+## Anonymity, Opsec & Privacy
 
+### TOC
 
-TOC
-Cull
-| Articles | #Articles
-| How-Tos | #howtos
-| Papers | #Papers
-| Talks/Videos | #Talks
-| Tools | #Tools
+* Cull
+* Articles #Articles
+* How-Tos  #howtos
+* Papers  #Papers
+* Talks/Videos  #Talks
+* Tools  #Tools
 
 
 

@@ -51,18 +51,17 @@ Java Serialization papers/stuff
 
 
 #### Sort
-https://github.com/qll/attacking-browser-extensions 
+
+[Abusing Google App Scripting Through Social Engineering](http://www.redblue.team/2017/02/abusing-google-app-scripting-through.html)
+
+
+[Cross Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
+	
+[Attacking Browser Extensions](https://github.com/qll/attacking-browser-extensions)
 
 http://console-cowboys.blogspot.com/2011/05/web-hacking-video-series-1-automating.html 
 
-https://github.com/urbanadventurer/WhatWeb
-
-https://github.com/LifeForm-Labs/all_your_browsers_belong_to_us
-
-[HTTP Evasion](http://noxxi.de/research/http-evader-explained-8-borderline-robustness.html)
-
-[HardenFlash](https://github.com/HaifeiLi/HardenFlash)
-* Patching Flash binary to stop Flash exploits and zero-days
+[](https://github.com/LifeForm-Labs/all_your_browsers_belong_to_us)
 
 http://www.grymoire.com/Security/Hardware.html
 
@@ -73,17 +72,25 @@ Clickjacking attacks
 https://xss-game.appspot.com/
 
 
-XSS game http://escape.alf.nu/
+[XSS game http://escape.alf.nu/
 
 [Server-side browsing  considered harmful](http://www.agarri.fr/docs/AppSecEU15-Server_side_browsing_considered_harmful.pdf)
 
 [File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
 
 
-[gethead](https://github.com/httphacker/gethead)
-* HTTP Header Analysis Vulnerability Tool 
 
 #### End Sort
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -96,9 +103,15 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
 [How to Obscure Any URL](http://www.pc-help.org/obscure.htm)
 
+[HTTP Evasion](http://noxxi.de/research/http-evader-explained-8-borderline-robustness.html)
+
+
+
 
 ####<a name="difatk">Different Types of Web Based Attacks</a>
 As seen on: https://www.owasp.org/index.php/Category:Attack
+
+
 
 
 #####<a name="Abuse of Functionality[#
@@ -161,11 +174,20 @@ As seen on: https://www.owasp.org/index.php/Category:Attack
 
 
 
+
+
+
 ### <a name="javascript">JavaScript</a>
 [JSDetox](http://relentless-coding.org/projects/jsdetox/info)
 * JSDetox is a tool to support the manual analysis of malicious Javascript code. 
 
 [Dom Flow - Untangling The DOM For More Easy-Juicy Bugs  - BH USA 2015](https://www.youtube.com/watch?v=kedmtrIEW1k&list=PLH15HpR5qRsXF78lrpWP2JKpPJs_AFnD7&index=111)
+
+
+
+
+
+
 
 
 
@@ -221,9 +243,13 @@ As seen on: https://www.owasp.org/index.php/Category:Attack
 [OWASP Mantra](http://www.getmantra.com/hackery/)
 * “OWASP Mantra is a powerful set of tools to make the attacker's task easier”
 
+[WhatWeb](https://github.com/urbanadventurer/WhatWeb)
 
+[Xenotix](https://github.com/ajinabraham/OWASP-Xenotix-XSS-Exploit-Framework)
+*  OWASP Xenotix XSS Exploit Framework is an advanced Cross Site Scripting (XSS) vulnerability detection and exploitation framework.
 
-
+[gethead](https://github.com/httphacker/gethead)
+* HTTP Header Analysis Vulnerability Tool 
 
 
 
@@ -276,7 +302,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [BlindElephant Web Application Fingerprinter](http://blindelephant.sourceforge.net/)
 * The BlindElephant Web Application Fingerprinter attempts to discover the version of a (known) web application by comparing static files at known locations against precomputed hashes for versions of those files in all all available releases. The technique is fast, low-bandwidth, non-invasive, generic, and highly automatable. 
 
-
+[Big List of Naughty Strings](https://github.com/minimaxir/big-list-of-naughty-strings)
+* The Big List of Naughty Strings is an evolving list of strings which have a high probability of causing issues when used as user-input data. This is intended for use in helping both automated and manual QA testing; useful for whenever your QA engineer walks into a bar.
 
 
 
@@ -469,7 +496,20 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [Cross Frame Scripting](https://www.owasp.org/index.php/Cross_Frame_Scripting)
 
-[Cross Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29
+[Shuriken](https://github.com/shogunlab/shuriken)
+* Cross-Site Scripting (XSS) command line tool for testing lists of XSS payloads on web apps.
+
+
+[XSS Filter Bypass List](https://gist.github.com/rvrsh3ll/09a8b933291f9f98e8ec)
+
+[HTML Purifier XSS Attacks Smoketest](http://htmlpurifier.org/live/smoketests/xssAttacks.php)
+
+[XSS Test String Dump](https://github.com/zsitro/XSS-test-dump/blob/master/xss.txt)
+
+[Firing-Range](https://github.com/google/firing-range)
+* Firing Range is a test bed for web application security scanners, providing synthetic, wide coverage for an array of vulnerabilities.
+
+
 
 
 
@@ -608,7 +648,8 @@ Secondary channel extraction
 * Robust JavaScript confinement system for modern web browsers. COWL introduces label-based mandatory access control to browsing contexts (pages, iframes, etc.) in a way that is fully backward-compatible with legacy web content. 
 * [Paper](http://www.scs.stanford.edu/~deian/pubs/stefan:2014:protecting.pdf)
 
-
+[HardenFlash](https://github.com/HaifeiLi/HardenFlash)
+* Patching Flash binary to stop Flash exploits and zero-days
 
 
 

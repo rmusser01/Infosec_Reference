@@ -37,11 +37,6 @@ http://www.sp3ctr3.me/hardware-security-resources/
 
 http://greatscottgadgets.com/infiltrate2013/
 
-
-[Reversing and Exploiting Embedded Devices: The Software Stack (Part 1)](https://p16.praetorian.com/blog/reversing-and-exploiting-embedded-devices-part-1-the-software-stack)
-
-[Metasploit Hardware Brdige](https://community.rapid7.com/community/transpo-security/blog/2017/02/02/exiting-the-matrix)
-* [Hardware Bridge API](http://opengarages.org/hwbridge/)
 #### end sort
 
 
@@ -49,8 +44,6 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 ### General
-
-
 
 [Reversing and Exploiting Embedded Devices: The Software Stack (Part 1)](https://p16.praetorian.com/blog/reversing-and-exploiting-embedded-devices-part-1-the-software-stack)
 
@@ -67,6 +60,9 @@ http://greatscottgadgets.com/infiltrate2013/
 * Manufacturers of mobile devices often multiplex several wired interfaces onto a single connector. Some of these interfaces, probably intended for test and development, are still enabled when the devices ship. We'll show you how you can get a shell on a popular mobile phone via its USB port without using a USB connection and we will release an open source tool for exploring multiplexed wired interfaces.
 
 [Anti-Evil Maid](http://theinvisiblethings.blogspot.com/2011/09/anti-evil-maid.html?m=1)
+
+[Metasploit Hardware Brdige](https://community.rapid7.com/community/transpo-security/blog/2017/02/02/exiting-the-matrix)
+* [Hardware Bridge API](http://opengarages.org/hwbridge/)
 
 
 
@@ -101,13 +97,6 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
-
-
-
-
-
-
 ### <a name="modem">Cable Modem Hacking</a>
 
 [Docsis hacking](https://www.defcon.org/images/defcon-16/dc16-presentations/defcon-16-self.pdf)
@@ -115,8 +104,6 @@ http://greatscottgadgets.com/infiltrate2013/
 
 [Keykeriki v2.0](http://www.remote-exploit.org/articles/keykeriki_v2_0__8211_2_4ghz/index.html)
 * Hardware to attack wireless keyboards and other such things
-
-
 
 
 
@@ -251,7 +238,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 [Implementing an USB Host Driver Fuzzer - Daniel Mende - Troopers14](https://www.youtube.com/watch?v=h777lF6xjs4)
 
-
+[WHID Injector: an USB-Rubberducky/BadUSB on Steroids](https://whid-injector.blogspot.lt/2017/04/whid-injector-how-to-bring-hid-attacks.html)
 
 
 

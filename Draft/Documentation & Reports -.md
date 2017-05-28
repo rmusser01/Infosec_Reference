@@ -33,8 +33,12 @@ Three parter from jacobian.org:
 
 [How to write a great research paper - Simon Peyton Jones](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/)
 
-
 [The 7 Rules for Writing World Class Technical Documentation](http://www.developer.com/tech/article.php/3848981/The-7-Rules-for-Writing-World-Class-Technical-Documentation.htm)
+
+[Teach Technical Writing in Two Hours per Week](http://www.cs.tufts.edu/~nr/pubs/two-abstract.html)
+
+[Learn Technical Writing in Two Hours per Week - Norman Ramsey](http://www.cs.tufts.edu/~nr/pubs/learn-two.pdf)
+
 
 
 ### <a name="reports">Writing Reports</a>

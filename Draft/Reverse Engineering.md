@@ -41,13 +41,8 @@ To be sorted
 
 ### To be sorted
 
-[PolyHook - x86/x64 Hooking Library](https://github.com/stevemk14ebr/PolyHook)
-* Provides abstract C++ 11 interface for various hooking methods
-* [Technical Writeup](https://www.codeproject.com/articles/1100579/polyhook-the-cplusplus-x-x-hooking-library)
 
 
-[angr](http://angr.io/)
-* angr is a python framework for analyzing binaries. It focuses on both static and dynamic symbolic ("concolic") analysis, making it applicable to a variety of tasks.
 
 http://stunnix.com/prod/cxxo/
 
@@ -55,6 +50,51 @@ http://stunnix.com/prod/cxxo/
 * ELF header abuse
 
 [REhints MEX - WinDBG addons](https://github.com/REhints/WinDbg/tree/master/MEX)
+
+[asar](https://github.com/electron/asar)
+*  Simple extensive tar-like archive format with indexing
+
+https://speakerdeck.com/patrickwardle/defcon-2016-i-got-99-problems-but-little-snitch-aint-one
+
+https://www.hex-rays.com/products/ida/tech/flirt/in_depth.shtml 
+
+
+http://blog.techorganic.com/2016/03/08/radare-2-in-0x1e-minutes/ 
+
+ mammon_'s tales to his grandson - https://mammon.github.io/tales/
+
+
+[Make Confide great again? No, we cannot](http://blog.quarkslab.com/make-confide-great-again-no-we-cannot.html)
+* RE'ing an electron based "secure communications" app
+
+[NRS](https://github.com/isra17/nrs)
+* NRS is a set of Python librairies used to unpack and analysis NSIS installer's data. It also feature an IDA plugin used to disassembly the NSIS Script of an installer
+
+
+http://fileformats.archiveteam.org/wiki/PNG
+
+[Bug Hunting for the Man on the Street]()
+* Finding and discovering bugs has to be one of the most special times in a security researchers life (until you realise that crash you've been searching for and finally found is not actually exploitable). But the process of searching, discovery, understanding and of course some very much needed trial and error, many would say are rewarding and fulfilling themselves (I would of course, prefer to have my exploit cherry on the top)! So this talk will detail some of the aspects required to hunt down and find these coveted security vulnerabilities and bugs and some approaches that have proven to be invaluable (and some not so much). Of course bug hunting principle need to produce bugs so as the cherry there will be a virtual box exploit and Barracuda networks 0 day exploit discussed and demon
+
+
+| **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
+**Unicorn-Engine** - Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework. | http://www.unicorn-engine.org/
+
+[Reversing Prince Harming’s Kiss of Death]( https://reverse.put.as/2015/07/01/reversing-prince-harmings-kiss-of-death/)
+### End sort
+
+
+
+
+
+### General
+
+[Introduction to Reverse Engineering Software - Dartmouth](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
+
+[CSCI 4974 / 6974 Hardware Reverse Engineering](http://security.cs.rpi.edu/courses/hwre-spring2014/)
+
+
+### Things that are interesting/don't fit elsewhere
 
 [SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/)
 * SyntaxHighlighter is a fully functional self-contained code syntax highlighter developed in JavaScript. To get an idea of what SyntaxHighlighter is capable of, have a look at the demo page.
@@ -67,121 +107,6 @@ http://stunnix.com/prod/cxxo/
 [Detecting programming language from a snippet](https://stackoverflow.com/questions/475033/detecting-programming-language-from-a-snippet)
 
 
-[EasyHook] https://easyhook.github.io/
-EasyHook makes it possible to extend (via hooking) unmanaged code APIs with pure managed functions, from within a fully managed environment on 32- or 64-bit Windows XP SP2, Windows Vista x64, Windows Server 2008 x64, Windows 7, Windows 8.1, and Windows 10.
-
-[How to Grow a TREE from CBASS - Interactive Binary Analysis for  Security Professionals](https://media.blackhat.com/us-13/US-13-Li-How-to-Grow-a-TREE-Slides.pdf)
-
-
-[Introduction to Reverse Engineering Software - Dartmouth](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
-
-[python-oletools](https://github.com/decalage2/oletools)
-* python-oletools is a package of python tools to analyze Microsoft OLE2 files (also called Structured Storage, Compound File Binary Format or Compound Document File Format), such as Microsoft Office documents or Outlook messages, mainly for malware analysis, forensics and debugging. It is based on the olefile parser. See http://www.decalage.info/python/oletools for more info.
-
-[asar](https://github.com/electron/asar)
-*  Simple extensive tar-like archive format with indexing
-
-https://speakerdeck.com/patrickwardle/defcon-2016-i-got-99-problems-but-little-snitch-aint-one
-
-
-[The Empire Strikes Back Apple – how your Mac firmware security is completely broken](https://reverse.put.as/2015/05/29/the-empire-strikes-back-apple-how-your-mac-firmware-security-is-completely-broken/)
-
-
-[A Practical-Time Attack on the A5/3 Cryptosystem Used in Third Generation GSM Telephony](https://eprint.iacr.org/2010/013)
-* Abstract: The privacy of most GSM phone conversations is currently protected by the 20+ years old A5/1 and A5/2 stream ciphers, which were repeatedly shown to be cryptographically weak. They will soon be replaced in third generation networks by a new A5/3 block cipher called KASUMI, which is a modified version of the MISTY cryptosystem. In this paper we describe a new type of attack called a sandwich attack, and use it to construct a simple distinguisher for 7 of the 8 rounds of KASUMI with an amazingly high probability of $2^{ -14}$. By using this distinguisher and analyzing the single remaining round, we can derive the complete 128 bit key of the full KASUMI by using only 4 related keys, $2^{26}$ data, $2^{30}$ bytes of memory, and $2^{32}$ time. These complexities are so small that we have actually simulated the attack in less than two hours on a single PC, and experimentally verified its correctness and complexity. Interestingly, neither our technique nor any other published attack can break MISTY in less than the $2^{128}$ complexity of exhaustive search, which indicates that the changes made by the GSM Association in moving from MISTY to KASUMI resulted in a much weaker cryptosystem. 
-
-[NRS](https://github.com/isra17/nrs)
-* NRS is a set of Python librairies used to unpack and analysis NSIS installer's data. It also feature an IDA plugin used to disassembly the NSIS Script of an installer.
-
-[Fibratus](https://github.com/rabbitstack/fibratus)
-* Fibratus is a tool which is able to capture the most of the Windows kernel activity - process/thread creation and termination, file system I/O, registry, network activity, DLL loading/unloading and much more. Fibratus has a very simple CLI which encapsulates the machinery to start the kernel event stream collector, set kernel event filters or run the lightweight Python modules called filaments. You can use filaments to extend Fibratus with your own arsenal of tools.
-
-
-
-https://www.hex-rays.com/products/ida/tech/flirt/in_depth.shtml 
-
-
-[BugNet: Continuously Recording Program Execution for Deterministic Replay Debugging](https://cseweb.ucsd.edu/~calder/papers/ISCA-05-BugNet.pdf) 
-
-[Back to the Future: Omniscient Debugging](https://pleiad.cl/papers/2009/pothierTanter-software2009.pdf) 
-
-
-[A REVIEW OF REVERSE DEBUGGING - Jakob Engblom (2012?)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.338.3420&rep=rep1&type=pdf)
-
-http://blog.techorganic.com/2016/03/08/radare-2-in-0x1e-minutes/ 
-
-
-[virusbattle-ida-plugin](https://github.com/moghimi/virusbattle-ida-plugin)
-* The plugin is an integration of Virus Battle API to the well known IDA Disassembler. Virusbattle is a web service that analyses malware and other binaries with a variety of advanced static and dynamic analyses. For more information check out the
-
-
-
- mammon_'s tales to his grandson - https://mammon.github.io/tales/
-
-
-[Make Confide great again? No, we cannot](http://blog.quarkslab.com/make-confide-great-again-no-we-cannot.html)
-* RE'ing an electron based "secure communications" app
-
-
-[Voltro](https://github.com/snare/voltron)
-* Voltron is an extensible debugger UI toolkit written in Python. It aims to improve the user experience of various debuggers (LLDB, GDB, VDB and WinDbg) by enabling the attachment of utility views that can retrieve and display data from the debugger host. By running these views in other TTYs, you can build a customised debugger user interface to suit your needs.
-[CSCI 4974 / 6974 Hardware Reverse Engineering](http://security.cs.rpi.edu/courses/hwre-spring2014/)
-
-https://github.com/BinaryAnalysisPlatform/bap-ida-python
-This package provides the necessary IDAPython scripts required for interoperatibility between BAP and IDA Pro. It also provides many useful feature additions to IDA, by leveraging power from BAP.
-
-
-http://fileformats.archiveteam.org/wiki/PNG
-
-[Bug Hunting for the Man on the Street]()
-* Finding and discovering bugs has to be one of the most special times in a security researchers life (until you realise that crash you've been searching for and finally found is not actually exploitable). But the process of searching, discovery, understanding and of course some very much needed trial and error, many would say are rewarding and fulfilling themselves (I would of course, prefer to have my exploit cherry on the top)! So this talk will detail some of the aspects required to hunt down and find these coveted security vulnerabilities and bugs and some approaches that have proven to be invaluable (and some not so much). Of course bug hunting principle need to produce bugs so as the cherry there will be a virtual box exploit and Barracuda networks 0 day exploit discussed and demon
-
-[A list of IDA Plugins](https://github.com/onethawt/idaplugins-list)
-
-[Dynamic IDA Enrichment (aka. DIE)](https://github.com/ynvb/DIE
-* DIE is an IDA python plugin designed to enrich IDA`s static analysis with dynamic data. This is done using the IDA Debugger API, by placing breakpoints in key locations and saving the current system context once those breakpoints are hit.
-
-
-
-
-[Blackbox Reversing an Electric Skateboard Wireless Protocol ](https://blog.lacklustre.net/posts/Blackbox_Reversing_an_Electric_Skateboard_Wireless_Protocol/)
-
-
-
-
-[A Brief Examination of Hacking Team’s Crypter: core-packer.](http://ethanheilman.tumblr.com/post/128708937890/a-brief-examination-of-hacking-teams-crypter)
-[Blackbox Reversing an Electric Skateboard Wireless Protocol ](https://blog.lacklustre.net/posts/Blackbox_Reversing_an_Electric_Skateboard_Wireless_Protocol/)
-
-
-
-[fREedom](capstone based disassembler for extracting to binnavi )
-* fREedom is a primitive attempt to provide an IDA Pro independent means of extracting disassembly information from executables for use with binnavi (https://github.com/google/binnavi).
-
-[Reverse Engineering Windows AFD.sys](https://recon.cx/2015/slides/recon2015-20-steven-vittitoe-Reverse-Engineering-Windows-AFD-sys.pdf)
-[Kam1n0-Plugin-IDA-Pro](https://github.com/McGill-DMaS/Kam1n0-Plugin-IDA-Pro)
-* Kam1n0 is a scalable system that supports assembly code clone search. It allows a user to first index a (large) collection of binaries, and then search for the code clones of a given target function or binary file. Kam1n0 tries to solve the efficient subgraph search problem (i.e. graph isomorphism problem) for assembly functions. Given a target function (the middle one in the figure below) it can identity the cloned subgraphs among other functions in the repository (the ones on the left and the right as shown below). Kam1n0 supports rich comment format and has an IDA Pro plug-in to use its indexing and searching capabilities via IDA Pro. 
-
-
-[Reversing Prince Harming’s Kiss of Death]( https://reverse.put.as/2015/07/01/reversing-prince-harmings-kiss-of-death/)
-| **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
-**Unicorn-Engine** - Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework. | http://www.unicorn-engine.org/
-
-[TiGa's Video Tutorial Series on IDA Pro](http://woodmann.com/TiGa/idaseries.html)
-
-[IDA PLUG-IN WRITING IN C/C++](http://www.binarypool.com/idapluginwriting/idapw.pdf)
-
-toolbag
-https://github.com/aaronportnoy/toolbag
- The IDA Toolbag is a plugin providing supplemental functionality to Hex-Rays IDA Pro disassembler. 
-
-[HexRaysCodeXplorer])(https://github.com/REhints/HexRaysCodeXplorer)
-* Hex-Rays Decompiler plugin for better code navigation in RE process of C++ applications or code reconstruction of modern malware as Stuxnet, Flame, Equation
-
-
-https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
-
-[Advanced PDF Tricks - Ange Albertini, Kurt Pfeifle - Troopers1](https://www.youtube.com/watch?v=k9g9jZdjRcE)
-* This session is NOT about analyzing exploits but about learning to manipulate PDF contents. Among others:hide/reveal information; remove/add watermark;  just suck less about the format. It's an extended session (2 hours) to leave the audience time to try by themselves actively. The slides' PDF is entirely hand-written to explain clearly each fact, so the presentation slides themselves will be the study materials.
 
 
 ### <a name="general">General Research/Stuff</a>
@@ -196,6 +121,10 @@ https://github.com/droidsec/droidsec.github.io/wiki/Android-Crackmes
  [PE File Format Graphs](http://blog.dkbza.org/2012/08/pe-file-format-graphs.html?view=mosaic)
 
 [Encyclopedia of Graphics File Formats](http://fileformats.archiveteam.org/wiki/Encyclopedia_of_Graphics_File_Formats)
+
+
+
+
 
 
 
@@ -243,13 +172,34 @@ Reversing iOS/OS X http://newosxbook.com/forum/viewforum.php?f=8
 [Deviare2](https://github.com/nektra/deviare2)
 * Deviare is a professional hooking engine for instrumenting arbitrary Win32 functions, COM objects, and functions which symbols are located in program databases (PDBs). It can intercept unmanaged code in 32-bit and 64-bit applications. It is implemented as a COM component, so it can be integrated with all the programming languages which support COM, such as C/C++, VB, C#, Delphi, and Python.
 
+[PolyHook - x86/x64 Hooking Library](https://github.com/stevemk14ebr/PolyHook)
+* Provides abstract C++ 11 interface for various hooking methods
+* [Technical Writeup](https://www.codeproject.com/articles/1100579/polyhook-the-cplusplus-x-x-hooking-library)
+
+[EasyHook](https://easyhook.github.io/)
+* EasyHook makes it possible to extend (via hooking) unmanaged code APIs with pure managed functions, from within a fully managed environment on 32- or 64-bit Windows XP SP2, Windows Vista x64, Windows Server 2008 x64, Windows 7, Windows 8.1, and Windows 10.
+
+[python-oletools](https://github.com/decalage2/oletools)
+* python-oletools is a package of python tools to analyze Microsoft OLE2 files (also called Structured Storage, Compound File Binary Format or Compound Document File Format), such as Microsoft Office documents or Outlook messages, mainly for malware analysis, forensics and debugging. It is based on the olefile parser. See http://www.decalage.info/python/oletools for more info.
+
+[Fibratus](https://github.com/rabbitstack/fibratus)
+* Fibratus is a tool which is able to capture the most of the Windows kernel activity - process/thread creation and termination, file system I/O, registry, network activity, DLL loading/unloading and much more. Fibratus has a very simple CLI which encapsulates the machinery to start the kernel event stream collector, set kernel event filters or run the lightweight Python modules called filaments. You can use filaments to extend Fibratus with your own arsenal of tools.
+
+
+
+
+
+
+
+
+
+
+
 
 
 #### Binary Visualization Tools
 [binglide](https://github.com/wapiflapi/binglide)
 * binglide is a visual reverse engineering tool. It is designed to offer a quick overview of the different data types that are present in a file. This tool does not know about any particular file format, everything is done using the same analysis working on the data. This means it works even if headers are missing or corrupted or if the file format is unknown.
-
-
 
 [binvis.io](http://binvis.io/#/)
 * visual analysis of binary files
@@ -258,8 +208,16 @@ Reversing iOS/OS X http://newosxbook.com/forum/viewforum.php?f=8
 * a powerful, dynamic, interactive binary visualization tool
 
 
+
+
+
+
+
+
 #### <a name="frameworks"Frameworks</a>
 
+[angr](http://angr.io/)
+* angr is a python framework for analyzing binaries. It focuses on both static and dynamic symbolic ("concolic") analysis, making it applicable to a variety of tasks.
 
 Radare2 - unix-like reverse engineering framework and commandline tools ](http://www.radare.org/y/?p=features)
 * Informally goal is to be best RE software framework
@@ -323,6 +281,31 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 * HyperDbg is a kernel debugger that leverages hardware-assisted virtualization. More precisely, HyperDbg is based on a minimalistic hypervisor that is installed while the system runs. Compared to traditional kernel debuggers (e.g., WinDbg, SoftIce, Rasta R0 Debugger) HyperDbg is completely transparent to the kernel and can be used to debug kernel code without the need of serial (or USB) cables. For example, HyperDbg allows to single step the execution of the kernel, even when the kernel is executing exception and interrupt handlers. Compared to traditional virtual machine based debuggers (e.g., the VMware builtin debugger), HyperDbg does not require the kernel to be run as a guest of a virtual machine, although it is as powerful. 
 * [Paper](http://roberto.greyhats.it/pubs/ase10.pdf)
 
+[Voltro](https://github.com/snare/voltron)
+* Voltron is an extensible debugger UI toolkit written in Python. It aims to improve the user experience of various debuggers (LLDB, GDB, VDB and WinDbg) by enabling the attachment of utility views that can retrieve and display data from the debugger host. By running these views in other TTYs, you can build a customised debugger user interface to suit your needs.
+
+
+
+
+
+##### Debugging Writeups/Papers
+
+[BugNet: Continuously Recording Program Execution for Deterministic Replay Debugging](https://cseweb.ucsd.edu/~calder/papers/ISCA-05-BugNet.pdf)
+
+[Back to the Future: Omniscient Debugging](https://pleiad.cl/papers/2009/pothierTanter-software2009.pdf) 
+
+[A REVIEW OF REVERSE DEBUGGING - Jakob Engblom (2012?)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.338.3420&rep=rep1&type=pdf)
+
+
+
+
+
+
+
+
+
+
+
 #### <a name="decom">Decompilers & Disassemblers</a>
 
 [Procyon - Java Decompiler](https://bitbucket.org/mstrobel/procyon/wiki/Java%20Decompiler)
@@ -338,8 +321,8 @@ programming environment.
 	* [Ida Pomidor](https://thesprawl.org/projects/ida-pomidor/)
 	* IDA Pomidor is a fun and simple plugin for the Hex-Ray's IDA Pro disassembler that will help you retain concentration and productivity during long reversing sessions. 
 
-[FLARE-Ida](https://github.com/fireeye/flare-ida)
-* This repository contains a collection of IDA Pro scripts and plugins used by the FireEye Labs Advanced Reverse Engineering (FLARE) team.
+[fREedom](capstone based disassembler for extracting to binnavi )
+* fREedom is a primitive attempt to provide an IDA Pro independent means of extracting disassembly information from executables for use with binnavi (https://github.com/google/binnavi).
 
 [Hopper](http://www.hopperapp.com/)
 * Hopper is a reverse engineering tool for OS X and Linux, that lets you disassemble, decompile and debug your 32/64bits Intel Mac, Linux, Windows and iOS executables!
@@ -348,11 +331,64 @@ programming environment.
 * Reverse engineering for x86 binaries (elf-format). Generate a more readable code (pseudo-C) with colored syntax. Warning, the project is still in development, use it at your own risks. This tool will try to disassemble one function (by default main). The address of the function, or its symbol, can be passed by argument.
 
 
+
+
+##### IDA specific Stuff
+
+[BAP-IDA](https://github.com/BinaryAnalysisPlatform/bap-ida-python)
+* This package provides the necessary IDAPython scripts required for interoperatibility between BAP and IDA Pro. It also provides many useful feature additions to IDA, by leveraging power from BAP.
+
+[Kam1n0-Plugin-IDA-Pro](https://github.com/McGill-DMaS/Kam1n0-Plugin-IDA-Pro)
+* Kam1n0 is a scalable system that supports assembly code clone search. It allows a user to first index a (large) collection of binaries, and then search for the code clones of a given target function or binary file. Kam1n0 tries to solve the efficient subgraph search problem (i.e. graph isomorphism problem) for assembly functions. Given a target function (the middle one in the figure below) it can identity the cloned subgraphs among other functions in the repository (the ones on the left and the right as shown below). Kam1n0 supports rich comment format and has an IDA Pro plug-in to use its indexing and searching capabilities via IDA Pro. 
+
+[FLARE-Ida](https://github.com/fireeye/flare-ida)
+* This repository contains a collection of IDA Pro scripts and plugins used by the FireEye Labs Advanced Reverse Engineering (FLARE) team.
+
+[TiGa's Video Tutorial Series on IDA Pro](http://woodmann.com/TiGa/idaseries.html)
+
+[IDA PLUG-IN WRITING IN C/C++](http://www.binarypool.com/idapluginwriting/idapw.pdf)
+
+[toolbag](https://github.com/aaronportnoy/toolbag)
+ * The IDA Toolbag is a plugin providing supplemental functionality to Hex-Rays IDA Pro disassembler. 
+
+[A list of IDA Plugins](https://github.com/onethawt/idaplugins-list)
+
+[Dynamic IDA Enrichment (aka. DIE)](https://github.com/ynvb/DIE)
+* DIE is an IDA python plugin designed to enrich IDA`s static analysis with dynamic data. This is done using the IDA Debugger API, by placing breakpoints in key locations and saving the current system context once those breakpoints are hit.
+
+[virusbattle-ida-plugin](https://github.com/moghimi/virusbattle-ida-plugin)
+* The plugin is an integration of Virus Battle API to the well known IDA Disassembler. Virusbattle is a web service that analyses malware and other binaries with a variety of advanced static and dynamic analyses.
+
+[HexRaysCodeXplorer](https://github.com/REhints/HexRaysCodeXplorer)
+* Hex-Rays Decompiler plugin for better code navigation in RE process of C++ applications or code reconstruction of modern malware as Stuxnet, Flame, Equation
+
+
+
+
+
+
+
+
+
+
+
+
+
 #### <a name="ct">Comparison Tools</a>s
 
 [binwally](https://github.com/bmaia/binwally)
 * Binary and Directory tree comparison tool using the Fuzzy Hashing concept (ssdeep)
 * [Using binwally - a directory tree diff tool](http://w00tsec.blogspot.com/2013/12/binwally-directory-tree-diff-tool-using.html)
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -366,6 +402,14 @@ programming environment.
 * Rdis is a Binary Analysis Tool for Linux.
 
 [Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
+
+
+
+
+
+
+
+
 
 
 #### <a name="wt">Windows Specific Tools</a>
@@ -415,6 +459,13 @@ programming environment.
 
 
 
+
+
+
+
+
+
+
 ### <a name="are">Anti-Reverse Engineering Techniques & Countermeasures</a>
 
 [Anti-RE A collection of Anti-Reverse Engineering Techniques](http://pnx.tf/files/spring7_antire_plohmann_kannen.pdf)
@@ -435,12 +486,30 @@ programming environment.
 
 [Android Reverse Engineering Defenses](https://bluebox.com/wp-content/uploads/2013/05/AndroidREnDefenses201305.pdf)
 
+
+
+
+
+
+
 ### <a name="guide">Guides & Tutorials</a>
 [How to RE data files?](https://www.reddit.com/r/ReverseEngineering/comments/l8ac0/how_to_re_data_files/)
 * Good read over.
 
 [Reversing Monkey](http://cheeky4n6monkey.blogspot.com/2015/02/reversing-monkey.html?m=1)
 * When trying to recover/carve deleted data, some reverse engineering of the file format may be required. Without knowing how the data is stored, we cannot recover the data of interest - be it timestamps, messages, images, video or another type of data. This quick blog post is intended to give some basic tips that have been observed during monkey's latest travels into reverse engineering of file formats. It was done partly as a memory aid/thinking exercise but hopefully other monkeys will find it useful. This post assumes there's no obfuscation/encryption applied to the file and it does not cover reverse engineering malware exes (which is another kettle of bananas).  - Great post/write-up
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -462,11 +531,24 @@ Hacking the Dropcam series
 
 [Reverse Engineering: Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 
+
+
+
+
+
+
+
+
+
 ### <a name="pa">Protocol Analysis & Related</a>
 [Netzob](http://www.netzob.org/)
 * Originaly, the development of Netzob has been initiated to support security auditors and evaluators in their activities of modeling and simulating undocumented protocols. The tool has then been extended to allow smart fuzzing of unknown protocol. 
 * [Netzob Documentation](http://netzob.readthedocs.org/en/latest/overview/index.html)
  
+
+
+
+
 
 ### <a name="writeups">Writeups</a>
 [Reverse engineering radio weather station](http://blog.atx.name/reverse-engineering-radio-weather-station/)
@@ -481,6 +563,8 @@ Hacking the Dropcam series
 
 [You can ring my bell! Adventures in sub-GHz RF land…](http://adamsblog.aperturelabs.com/2013/03/you-can-ring-my-bell-adventures-in-sub.html)
 
+[Reverse Engineering Windows AFD.sys](https://recon.cx/2015/slides/recon2015-20-steven-vittitoe-Reverse-Engineering-Windows-AFD-sys.pdf)
+
 
 Reverse engineering walk htrouhg; guy rev eng alarm system from shelf to replay
 https://www.reddit.com/r/ReverseEngineering/comments/1hb7oy/a_series_about_basics_of_hardware_reverse/
@@ -493,10 +577,21 @@ Part 6: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-bur
 Part 7: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-7/
 Part 8: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-8/
 
+[Blackbox Reversing an Electric Skateboard Wireless Protocol ](https://blog.lacklustre.net/posts/Blackbox_Reversing_an_Electric_Skateboard_Wireless_Protocol/)
+
+[The Empire Strikes Back Apple – how your Mac firmware security is completely broken](https://reverse.put.as/2015/05/29/the-empire-strikes-back-apple-how-your-mac-firmware-security-is-completely-broken/)
+
+[A Brief Examination of Hacking Team’s Crypter: core-packer.](http://ethanheilman.tumblr.com/post/128708937890/a-brief-examination-of-hacking-teams-crypter)
+
+[Blackbox Reversing an Electric Skateboard Wireless Protocol ](https://blog.lacklustre.net/posts/Blackbox_Reversing_an_Electric_Skateboard_Wireless_Protocol/)
+
+
+
+
+
 ### <a name="talks">Talks & Videos</a>
 [The Three Billion Dollar App - Vladimir Wolstencroft -Troopers14](https://www.youtube.com/watch?v=5Duc-uUFzoU)
 * Talk about reverse engineering SnapChat and Wickr Messaging apps.
-
 
 [Cyber Necromancy - Reverse engineering dead protocols - Defcamp 2014 ](https://www.youtube.com/watch?v=G0v2FO2Ru0w&index=6&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
 
@@ -506,6 +601,13 @@ Part 8: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-bur
 [Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 
 [SATCOM Terminals Hacking by Air, Sea, and Land - Black Hat USA 2014](https://www.youtube.com/watch?v=tRHDuT__GoM)
+
+[Advanced PDF Tricks - Ange Albertini, Kurt Pfeifle - Troopers1](https://www.youtube.com/watch?v=k9g9jZdjRcE)
+* This session is NOT about analyzing exploits but about learning to manipulate PDF contents. Among others:hide/reveal information; remove/add watermark;  just suck less about the format. It's an extended session (2 hours) to leave the audience time to try by themselves actively. The slides' PDF is entirely hand-written to explain clearly each fact, so the presentation slides themselves will be the study materials.
+
+
+
+
 
 ### <a name="papers">Papers</a>
 
@@ -541,6 +643,10 @@ informed, and determined reverser
 [Reverse Engineering Mac OS X](http://reverse.put.as/papers/)
 * Excellent source of papers from 2003-2013 all with a focus on reversing either iOS or OS X.
 
+[A Practical-Time Attack on the A5/3 Cryptosystem Used in Third Generation GSM Telephony](https://eprint.iacr.org/2010/013)
+* Abstract: The privacy of most GSM phone conversations is currently protected by the 20+ years old A5/1 and A5/2 stream ciphers, which were repeatedly shown to be cryptographically weak. They will soon be replaced in third generation networks by a new A5/3 block cipher called KASUMI, which is a modified version of the MISTY cryptosystem. In this paper we describe a new type of attack called a sandwich attack, and use it to construct a simple distinguisher for 7 of the 8 rounds of KASUMI with an amazingly high probability of $2^{ -14}$. By using this distinguisher and analyzing the single remaining round, we can derive the complete 128 bit key of the full KASUMI by using only 4 related keys, $2^{26}$ data, $2^{30}$ bytes of memory, and $2^{32}$ time. These complexities are so small that we have actually simulated the attack in less than two hours on a single PC, and experimentally verified its correctness and complexity. Interestingly, neither our technique nor any other published attack can break MISTY in less than the $2^{128}$ complexity of exhaustive search, which indicates that the changes made by the GSM Association in moving from MISTY to KASUMI resulted in a much weaker cryptosystem.
+
+[How to Grow a TREE from CBASS - Interactive Binary Analysis for  Security Professionals](https://media.blackhat.com/us-13/US-13-Li-How-to-Grow-a-TREE-Slides.pdf)
 
 
 

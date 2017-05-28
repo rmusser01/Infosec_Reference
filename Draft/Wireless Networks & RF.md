@@ -10,7 +10,7 @@ Cull
 * [Non Tutorial Writeups](#non-tut)
 * [Dongles/HW Tools](#dongles)
 * [Cellular Networks](#cn)
-* [Software Defined Radio(#sdr)
+* [Software Defined Radio](#sdr)
 * [802.11](#80211)
 * [RFID](#rfid)
 * [Zigbee](#zigbee)
@@ -32,23 +32,6 @@ http://umtrx.org/
 Aircrack https://www.aircrack-ng.org/doku.php?id=links
 Ubertooth
 Scapy
-
-[Using Software Defined radio to attack Smart home systems](https://www.sans.org/reading-room/whitepapers/threats/software-defined-radio-attack-smart-home-systems-35922)
-
-[Software Defined Radio for Infosec People 101](http://garrettgee.com/appearances/software-defined-radio-for-infosec-people-101/)
-
-[Sniffing GSM with RTL-SDR](https://www.youtube.com/watch?v=7OW0YOa6CYs)
-
-[Introduction to SDR and the Wireless Village(Defcon)](https://www.youtube.com/watch?v=F9kKo190_oE)
-
-[Capturing and Cracking GSM traffic using a rtl-sdr](https://www.youtube.com/watch?v=TOl4Q4lyJTI)
-
-[Decoding the LoRa IoT Protocol with an RTL-SDR](http://www.rtl-sdr.com/decoding-the-iot-lora-protocol-with-an-rtl-sdr/)
-
-[Using Software Defined Radio for IoT Analysis](https://www.irongeek.com/i.php?page=videos/bsidesnova2017/102-using-software-defined-radio-for-iot-analysis-samantha-palazzolo)
-
-
-
 
 
 ### <a name="general">General</a>
@@ -76,7 +59,7 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 [ PHYs, MACs, and SDRs - Robert Ghilduta ](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-macs-and-sdrs-robert-ghilduta)
 * The talk will touch on a variety of topics and projects that have been under development including YateBTS, PHYs, MACs, and GNURadio modules. The talk will deal with GSM/LTE/WiFi protocol stacks.
 
-
+[Using Software Defined radio to attack Smart home systems](https://www.sans.org/reading-room/whitepapers/threats/software-defined-radio-attack-smart-home-systems-35922)
 
 
 
@@ -156,8 +139,9 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 [Rooting Sim Cards](https://media.blackhat.com/us-13/us-13-Nohl-Rooting-SIM-cards-Slides.pdf)
 
+[Sniffing GSM with RTL-SDR](https://www.youtube.com/watch?v=7OW0YOa6CYs)
 
-
+[Capturing and Cracking GSM traffic using a rtl-sdr](https://www.youtube.com/watch?v=TOl4Q4lyJTI)
 
 
 
@@ -166,6 +150,8 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 
 ### <a name="sdr">Software Defined Radio</a>
+
+[Software Defined Radio for Infosec People 101](http://garrettgee.com/appearances/software-defined-radio-for-infosec-people-101/)
 
 [GNU Radio](http://gnuradio.org/redmine/projects/gnuradio/wiki)
 * GNU Radio is a free & open-source software development toolkit that provides signal processing blocks to implement software radios. It can be used with readily-available low-cost external RF hardware to create software-defined radios, or without hardware in a simulation-like environment. It is widely used in hobbyist, academic and commercial environments to support both wireless communications research and real-world radio systems.
@@ -191,10 +177,11 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 [ PHYs, MACs, and SDRs - Robert Ghilduta ](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-macs-and-sdrs-robert-ghilduta
 * The talk will touch on a variety of topics and projects that have been under development including YateBTS, PHYs, MACs, and GNURadio modules. The talk will deal with GSM/LTE/WiFi protocol stacks.
 
+[Introduction to SDR and the Wireless Village(Defcon)](https://www.youtube.com/watch?v=F9kKo190_oE)
 
+[Decoding the LoRa IoT Protocol with an RTL-SDR](http://www.rtl-sdr.com/decoding-the-iot-lora-protocol-with-an-rtl-sdr/)
 
-
-
+[Using Software Defined Radio for IoT Analysis](https://www.irongeek.com/i.php?page=videos/bsidesnova2017/102-using-software-defined-radio-for-iot-analysis-samantha-palazzolo)
 
 
 
@@ -331,6 +318,17 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 [SecBee](https://github.com/Cognosec/SecBee)
 * SecBee is a ZigBee security testing tool developed by Cognosec. The goal is to enable developers and security testers to test ZigBee implementations for security issues.
+
+[Frony Fronius - Exploring Zigbee signals from Solar City](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t102-frony-fronius-exploring-zigbee-signals-from-solar-city-jose-fernandez)
+* Solar equipment is becoming more readily used in homes and businesses due to cost savings, eco-friendly conservationism and current tax incentives. Companies like SolarCity use Power Inverters/Meters from 3rd parties in order to provide it's services while making the solution affordable for customers. This research will focus on understanding the communication between the Inverter, Internet Gateway and web portal used to view electrical consumption of subscriber.
+
+
+
+
+
+
+
+
 
 
 

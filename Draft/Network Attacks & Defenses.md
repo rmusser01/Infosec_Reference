@@ -53,11 +53,21 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [Simple Network Management Pwnd](http://www.irongeek.com/i.php?page=videos/derbycon4/t221-simple-network-management-pwnd-deral-heiland-and-matthew-kienow)
 
+[which-cloud](https://github.com/bcoe/which-cloud)
+* Given an ip address, return which cloud provider it belongs to (AWS, GCE, etc)  
+
+[SSH for Fun and Profit](https://karla.io/2016/04/30/ssh-for-fun-and-profit.html)
 
 
 
 
-###<a name="attackw">Attacking Windows Networks</a>
+
+
+
+
+
+
+### <a name="attackw">Attacking Windows Networks</a>
 
 [ *Puff* *Puff* PSExec - Lateral Movement: An Overview](https://www.toshellandback.com/2017/02/11/psexec/)
 
@@ -106,7 +116,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 
-###<a name="tools">Tools</a>
+### <a name="tools">Tools</a>
 
 [digbit](https://github.com/mnmnc/digbit/blob/master/README.md)
 * Automatic domain generation for BitSquatting
@@ -187,16 +197,17 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [DNS Dumpster](DNSdumpster.com is a free domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process.)
 
+[OnionScan](https://github.com/s-rah/onionscan)
+* [What OnionScan Scans for](https://github.com/s-rah/onionscan/blob/master/doc/what-is-scanned-for.md)
+
+[scanless](https://github.com/vesche/scanless)
+* Command-line utility for using websites that can perform port scans on your behalf. Useful for early stages of a penetration test or if you'd like to run a port scan on a host and have it not come from your IP address.
 
 
 
 
 
-
-
-
-
-###MitM Tools
+### MitM Tools
 [Ettercap](https://ettercap.github.io/ettercap/)
 Ettercap is a comprehensive suite for man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.
 
@@ -212,7 +223,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 
-###Scanners
+### Scanners
 
 [SQLMap](https://github.com/sqlmapproject/sqlmap)
 * sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester and a broad range of switches lasting from database fingerprinting, over data fetching from the database, to accessing the underlying file system and executing commands on the operating system via out-of-band connections.
@@ -269,7 +280,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 
-####Proxies
+#### Proxies
 
 [Mallory](https://bitbucket.org/IntrepidusGroup/mallory)
 *  Mallory is an extensible TCP/UDP man in the middle proxy that is designed  to be run as a gateway. Unlike other tools of its kind, Mallory supports  modifying non-standard protocols on the fly.
@@ -297,7 +308,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 
-###<a name="talks">Presentations/Talks/Videos</a>
+### <a name="talks">Presentations/Talks/Videos</a>
 
 [Mass Scanning the Internet: Tips, Tricks, Results - DEF CON 22 - Graham, Mcmillan, and Tentler](https://www.youtube.com/watch?v=nX9JXI4l3-E)
 
@@ -315,7 +326,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 
-###<a name="writeup">Writeups & Tutorials</a>
+### <a name="writeup">Writeups & Tutorials</a>
 
 [Enumerating DNSSEC NSEC and NSEC3 Records](https://www.altsci.com/concepts/page.php?s=dnssec&p=1
 
@@ -335,7 +346,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 
-###<a name="ipv6">IPv6 Related</a>
+### <a name="ipv6">IPv6 Related</a>
 
 IPv6: Basic Attacks and Defences - Christopher Werny[TROOPERS15]
  * [Part 1](https://www.youtube.com/watch?v=Y8kjQEGHbAU)
@@ -358,7 +369,7 @@ IPv6: Basic Attacks and Defences - Christopher Werny[TROOPERS15]
 
 
 
-###<a name="evasion">IDS/IPS Evasion</a>
+### <a name="evasion">IDS/IPS Evasion</a>
 
 
 [Intrusion detection evasion:  How Attackers get past the burglar alarm](http://www.sans.org/reading-room/whitepapers/detection/intrusion-detection-evasion-attackers-burglar-alarm-1284)
@@ -387,7 +398,7 @@ IPv6: Basic Attacks and Defences - Christopher Werny[TROOPERS15]
 
 
 
-###D/DOS
+### D/DOS
 
 
 
@@ -404,7 +415,7 @@ TCPDump
 [Command Examples](http://www.thegeekstuff.com/2010/08/tcpdump-command-examples/)
 
 
-###<a name="upnp">UPNP</a>
+### <a name="upnp">UPNP</a>
 
 [Ufuzz](https://github.com/phikshun/ufuzz)
 * UFuzz, or Universal Plug and Fuzz, is an automatic UPnP fuzzing tool. It will enumerate all UPnP endpoints on the network, find the available services and fuzz them. It also has the capability to fuzz HTTP using Burp proxy logs.
@@ -416,7 +427,7 @@ TCPDump
 
 
 
-###<a name="other">Other</a>
+### <a name="other">Other</a>
 
 [exitmap](https://github.com/NullHypothesis/exitmap)
 * A fast and modular scanner for Tor exit relays. http://www.cs.kau.se/philwint/spoiled_onions/ 

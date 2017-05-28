@@ -28,9 +28,24 @@ http://www.securitywizardry.com/radar.htm
 
 [They clapped](http://www.econlib.org/library/Columns/y2007/Mungergouging.html)
 
-
-
 [IPew Attack Map](http://ocularwarfare.com/ipew/)
+
+[When the Cops Come A-Knocking: Handling Technical Assistance Demands from Law Enforcement](https://www.youtube.com/watch?v=PX2RjJAfTYg)
+
+[[TROOPERS15] Andreas Lindh - Defender Economics](https://www.youtube.com/watch?v=mAP38Xy52X0)
+
+[Alexsey’s TTPs](https://medium.com/@chrismcnab/alexseys-ttps-1204d9050551#.y2krgov7t)
+* Short writeup on large breaches(Short: Shit ain't secure.)
+
+[The Distribution of Users’ Computer Skills: Worse Than You Think](https://www.nngroup.com/articles/computer-skill-levels/)
+
+
+
+
+
+
+
+
 
 
 
@@ -38,168 +53,52 @@ http://www.securitywizardry.com/radar.htm
 
 #### To Sort
 
-[Make It Count   Progressing through Pentesting - Bálint Varga-Perke -Silent Signal](https://silentsignal.hu/docs/Make_It_Count_-_Progressing_through_Pentesting_Balint_Varga-Perke_Silent_Signal.pdf)
-
-[The Art of Explanation: Behavioral Models of InfoSec - Kelly Shortridge](https://www.youtube.com/embed/UdZDlt2dlqM?)
 
 
-[scanless](https://github.com/vesche/scanless)
-* Command-line utility for using websites that can perform port scans on your behalf. Useful for early stages of a penetration test or if you'd like to run a port scan on a host and have it not come from your IP address.
+[Fools of Golden Gate](https://blog.silentsignal.eu/2017/05/08/fools-of-golden-gate/)
+* How major vulnerabilities/large amounts of publicly vulnerable systems can exist without public recognition for long periods of time. (i.e. CVEs(10.0) exist, but no mapping in nessus/metasploit/etc)
 
-[The foundation is rotting and the basement is flooding: A deeper look at the implicit trust relationships in your organization](https://www.youtube.com/watch?v=nL64uj9Xm24)
+https://www.youtube.com/watch?v=h92vmwg9Tyc
 
-[Alexsey’s TTPs](https://medium.com/@chrismcnab/alexseys-ttps-1204d9050551#.y2krgov7t)
-* Short writeup on large breaches(Short: Shit ain't secure.)
-
-[Internet Timeline](https://www.zakon.org/robert/internet/timeline/)
-
-[wxHex Editor](http://www.wxhexeditor.org/home.php)
-* wxHexEditor is another Free Hex Editor, build because there is no good hex editor for Linux system, specially for big files.
 
 https://github.com/sasq64/chipmachine
-
-[which-cloud](https://github.com/bcoe/which-cloud)
-* Given an ip address, return which cloud provider it belongs to (AWS, GCE, etc)  
-
-[Real-life experiences in avionics security assessment (A. Barisani)](https://www.youtube.com/watch?v=xtSmPgXw34I&feature=youtu.be&app=desktop)
-
-[A Hacker's Guide to Risk](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-Bruce-Potter-Hackers-Guide-to-Risk.pdf)
-
-
-[If it fits - it sniffs: Adventures in WarShipping](http://www.irongeek.com/i.php?page=videos/derbycon4/t104-if-it-fits-it-sniffs-adventures-in-warshipping-larry-pesce)
-
-[How to re-image a live linux system from chroot/ssh](https://unix.stackexchange.com/questions/226872/how-to-shrink-root-filesystem-without-booting-a-livecd/227318#227318)
-
-
-[Takover.sh - A script to completely take over a running Linux system remotely, allowing you to log into an in-memory rescue environment, unmount the original root filesystem, and do anything you want, all without rebooting. Replace one distro with another without touching a physical console.](https://github.com/marcan/takeover.sh)
 
 [List of hacker sites](http://link-base.org/)
 
 | **ClearImage Free Online Barcode Reader / Decoder** | http://online-barcode-reader.inliteresearch.com/
 
-
-
 http://dronesurvivalguide.org
-
-[DRAMA: Exploiting DRAM Addressing for Cross-CPU Attacks](https://arxiv.org/abs/1511.08756)
-
-rex https://github.com/shellphish/rex
-Shellphish's automated exploitation engine, originally created for the Cyber Grand Challenge. 
 	
-Patcherex
-Shellphish's automated patching engine, originally created for the Cyber Grand Challenge. 
 
 
-algo https://github.com/trailofbits/algo
- 1-click IPSEC VPN in the Cloud 
+[Foreign LINUX](https://github.com/wishstudio/flinux)
+*Foreign LINUX is a dynamic binary translator and a Linux system call interface emulator for the Windows platform. It is capable of running unmodified Linux binaries on Windows without any drivers or modifications to the system. This provides another way of running Linux applications under Windows in constrast to Cygwin and other tools. It now runs a large bunch of console applications and some GUI applications.
 
-Foreign LINUX - https://github.com/wishstudio/flinux
-Foreign LINUX is a dynamic binary translator and a Linux system call interface emulator for the Windows platform. It is capable of running unmodified Linux binaries on Windows without any drivers or modifications to the system. This provides another way of running Linux applications under Windows in constrast to Cygwin and other tools. It now runs a large bunch of console applications and some GUI applications.
-
-http://ionescu007.github.io/SimpleVisor/ 
-
-https://hackaday.io/page/1569-3d-printer-sunhokey-prusa-i3-2015 
-
-https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-3alarmlampscooter-DIY-Nukeproofing.pdf 
-
-https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-and-10/ 
-
-https://github.com/NullHypothesis/exitmap
-
-https://karla.io/2016/04/30/ssh-for-fun-and-profit.html
-
-
-Shakespeare in the Bush 	An American anthropologist set out to study the Tiv of West Africa and was taught the true meaning of Hamlet.
-http://www.naturalhistorymag.com/picks-from-the-past/12476/shakespeare-in-the-bush
+[Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
 
 What happens when…
 An attempt to answer the age old interview question "What happens when you type google.com into your browser and press enter?" 
 https://github.com/alex/what-happens-when
 
-
-https://mumble.org.uk/blog/2016/04/30/malory-isnt-the-only-imposter-in-infosec/
-
-
-[[TROOPERS15] Andreas Lindh - Defender Economics](https://www.youtube.com/watch?v=mAP38Xy52X0)
-
- How do emulators work and how are they written? [closed]
-https://stackoverflow.com/questions/448673/how-do-emulators-work-and-how-are-they-written
-
-http://googleprojectzero.blogspot.com/2015/06/owning-internet-printing-case-study-in.html?m=1
-
-[HORNET: High-speed Onion Routing at the Network Layer](http://arxiv.org/pdf/1507.05724v1.pdf)
-
-
 http://spth.virii.lu/articles.htm
-
-
-[Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers]
-
-https://lwn.net/Articles/684462/
-
 
 https://github.com/kienankb/LuxBase
 
-[Demon](https://github.com/x0r1/Demon)
-* GPU keylogger PoC by Team Jellyfish
-
 | **Simplifying the Business Bar Coded Boarding Pass Implementation Guide** | http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf
 | **What’s contained in a boarding pass barcode?** | https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode
-
-
 | **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
 | **NSA USB Playset - ShmooCon201** | https://www.youtube.com/watch?v=eTDBFpLYcGA
 
 
 **Unicorn-Engine** - Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework. | http://www.unicorn-engine.org/
-| ** NSA's Legal Authorities ** | http://electrospaces.blogspot.com/2015/09/nsas-legal-authorities.html
 
-https://github.com/vrtadmin/moflow
+[Compiler Security Checks In Depth - MSDN Library](https://msdn.microsoft.com/library/aa290051.aspx)
 
-Compiler Security Checks In Depth - MSDN Library
-https://msdn.microsoft.com/library/aa290051.aspx
+[Counterfeit Object-oriented Programming](http://syssec.rub.de/media/emma/veroeffentlichungen/2015/03/28/COOP-Oakland15.pdf)
 
-Counterfeit Object-oriented Programming
-http://syssec.rub.de/media/emma/veroeffentlichungen/2015/03/28/COOP-Oakland15.pdf
-
-https://medium.com/@networksecurity/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0#.r3x0vnfir
+[#OLEOutlook - bypass almost every Corporate security control with a point’n’click GUI](https://doublepulsar.com/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0)
 
 
-[No one expect command execution!](http://0x90909090.blogspot.fr/2015/07/no-one-expect-command-execution.html)
-
-[Exploiting Android Users for Fun and Profit](http://www.codeword.xyz/2015/08/09/exploiting-android-users-for-fun-and-profit/)
-
-
-[Generic bypass of next-gen intrusion / threat / breach detection systems](https://blog.mrg-effitas.com/generic-bypass-of-next-gen-intrusion-threat-breach-detection-systems/)
-* The focus of this blog post is to bypass network monitoring tools, e.g. good-old IDS or next-generation threat detection systems in a generic way. The focus is on the exploit delivery.
-
-[Combating the Insider Threat at the FBI: Real World Lessons Learned - BlackHat2013](https://www.youtube.com/watch?v=0stTS-G5FsE)
-
-
-[Disrupting an Adware-serving Skype Botnet](http://phishme.com/disrupting-an-adware-serving-skype-botnet/)
-* Not crazy technical or anything, moreso an interesting tale that shows one person with a little bit of skill can disrupt malvertising campaigns with a little legwork.
-
-
-[Creating A Kewl And Simple Cheating Platform On Android - DeepSec2014](http://www.securitytube.net/video/12547?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+SecurityTube+%28SecurityTube.Net%29)
-* 
-[Hacking the PS Vita](http://yifan.lu/2015/06/21/hacking-the-ps-vita/)
-
-[Anti-Virus Software Gone Wrong](http://uninformed.org/?v=all&a=21&t=sumry)
-* Anti-virus software is becoming more and more prevalent on end-user computers today. Many major computer vendors (such as Dell) bundle anti-virus software and other personal security suites in the default configuration of newly-sold computer systems. As a result, it is becoming increasingly important that anti-virus software be well-designed, secure by default, and interoperable with third-party applications. Software that is installed and running by default constitutes a prime target for attack and, as such, it is especially important that said software be designed with security and interoperability in mind. In particular, this article provides examples of issues found in well-known anti-virus products. These issues range from not properly validating input from an untrusted source (especially within the context of a kernel driver) to failing to conform to API contracts when hooking or implementing an intermediary between applications and the underlying APIs upon which they rely. For popular software, or software that is installed by default, errors of this sort can become a serious problem to both system stability and security. Beyond that, it can impact the ability of independent software vendors to deploy functioning software on end-user systems. 
-
-[Foreign LINUX](https://github.com/wishstudio/flinux)
-* Foreign LINUX is a dynamic binary translator and a Linux system call interface emulator for the Windows platform. It is capable of running unmodified Linux binaries on Windows without any drivers or modifications to the system. This provides another way of running Linux applications under Windows in constrast to Cygwin and other tools.
-
-
-[Take Charge of Your Infosec Career! - Glen Roberts - BSidesSLC2015](https://www.youtube.com/watch?v=QqlnB2FeODo)
-* You spent $5,000, a plane trip, a hotel and a full workweek on your last infosec course but when was the last time you invested even just a few hours of your time exclusively to developing your infosec career in a truly meaningful way? This talk will challenge the way you view your career and give you actionable steps for taking charge of it so you can optimize the rewards and fulfillment you receive from your work. Glen will leverage the stories and best practices from dozens of information security professionals to help inspire your infosec career journey. This presentation will be engaging and speak to the soul in a way that instills ownership of your own career and generates a passion for finding and carving out your own authentic career path.
-
-[stupid_malware](https://github.com/andrew-morris/stupid_malware)
-* Python malware for pentesters that bypasses most antivirus (signature and heuristics) and IPS using sheer stupidity
-[China’s Great Cannon](https://citizenlab.org/2015/04/chinas-great-cannon/) * This post describes our analysis of China’s “Great Cannon,” our term for an attack tool that we identify as separate from, but co-located with, the Great Firewall of China. The first known usage of the Great Cannon is in the recent large-scale novel DDoS attack on both GitHub and servers used by GreatFire.org.
-[How to Hack All the Transport Networks of a Country - Defcon20](https://www.youtube.com/watch?v=D6KEhdHFc9I)
-[ZeroMQ](http://zguide.zeromq.org/page:all)
-[Underhanded C contest](http://underhanded-c.org/)
 Regex for credit cards
 http://www.regular-expressions.info/creditcard.html
 ^(?:4[0-9]{12}(?:[0-9]{3})?          # Visa
@@ -213,7 +112,56 @@ http://www.regular-expressions.info/creditcard.html
 QR Code interesting
 http://datagenetics.com/blog/november12013/index.html
 
-### Interesting Videos
+
+#### End Sort
+
+
+
+
+
+
+
+
+### General Interesting Things(that aren't necessarily infosec)
+
+[Internet Timeline](https://www.zakon.org/robert/internet/timeline/)
+
+[Shakespeare in the Bush An American anthropologist set out to study the Tiv of West Africa and was taught the true meaning of Hamlet.](http://www.naturalhistorymag.com/picks-from-the-past/12476/shakespeare-in-the-bush)
+
+| ** NSA's Legal Authorities ** | http://electrospaces.blogspot.com/2015/09/nsas-legal-authorities.html
+
+[Underhanded C contest](http://underhanded-c.org/)
+
+[DIY Nukeproofing: A New Dig at “Data-Mining”](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-3alarmlampscooter-DIY-Nukeproofing.pdf)
+
+
+
+
+
+
+### Pentesting Talks/Stuff
+
+[Penetration Testing considered Harmful Today](http://blog.thinkst.com/p/penetration-testing-considered-harmful.html)
+
+[Make It Count   Progressing through Pentesting - Bálint Varga-Perke -Silent Signal](https://silentsignal.hu/docs/Make_It_Count_-_Progressing_through_Pentesting_Balint_Varga-Perke_Silent_Signal.pdf)
+
+
+[stupid_malware](https://github.com/andrew-morris/stupid_malware)
+* Python malware for pentesters that bypasses most antivirus (signature and heuristics) and IPS using sheer stupidity
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Interesting Talks/Videos
 
 [Kim Jong-il and Me: How to Build a Cyber Army to Defeat the U.S. - Charlie MIller](https://www.youtube.com/watch?v=4up0yTGlpaU)
 
@@ -242,6 +190,26 @@ http://datagenetics.com/blog/november12013/index.html
 
 [ Playstation Portable Cracking [24c3]](https://www.youtube.com/watch?v=TgzxyO2QO1M)
 
+[Volatile Memory: Behavioral Game Theory in Defensive Security](https://www.slideshare.net/kshortridge/volatile-memory-behavioral-game-theory-in-defensive-security)
+
+[Disrupting an Adware-serving Skype Botnet](http://phishme.com/disrupting-an-adware-serving-skype-botnet/)
+* Not crazy technical or anything, moreso an interesting tale that shows one person with a little bit of skill can disrupt malvertising campaigns with a little legwork.
+
+[Combating the Insider Threat at the FBI: Real World Lessons Learned - BlackHat2013](https://www.youtube.com/watch?v=0stTS-G5FsE)
+
+[Take Charge of Your Infosec Career! - Glen Roberts - BSidesSLC2015](https://www.youtube.com/watch?v=QqlnB2FeODo)
+* You spent $5,000, a plane trip, a hotel and a full workweek on your last infosec course but when was the last time you invested even just a few hours of your time exclusively to developing your infosec career in a truly meaningful way? This talk will challenge the way you view your career and give you actionable steps for taking charge of it so you can optimize the rewards and fulfillment you receive from your work. Glen will leverage the stories and best practices from dozens of information security professionals to help inspire your infosec career journey. This presentation will be engaging and speak to the soul in a way that instills ownership of your own career and generates a passion for finding and carving out your own authentic career path.
+
+[The Art of Explanation: Behavioral Models of InfoSec - Kelly Shortridge](https://www.youtube.com/embed/UdZDlt2dlqM?)
+
+[How to Hack All the Transport Networks of a Country - Defcon20](https://www.youtube.com/watch?v=D6KEhdHFc9I)
+
+[Real-life experiences in avionics security assessment (A. Barisani)](https://www.youtube.com/watch?v=xtSmPgXw34I&feature=youtu.be&app=desktop)
+
+
+
+
+
 
 
 
@@ -258,6 +226,23 @@ http://datagenetics.com/blog/november12013/index.html
 * "Rowhammer” is a problem with some recent DRAM devices in which repeatedly accessing a row of memory can cause bit flips in adjacent rows. We tested a selection of laptops and found that a subset of them exhibited the problem. We built two working privilege escalation exploits that use this effect. One exploit uses rowhammer-induced bit flips to gain kernel privileges on x86-64 Linux when run as an unprivileged userland process. When run on a machine vulnerable to the rowhammer problem, the process was able to induce bit flips in page table entries (PTEs). It was able to use this to gain write access to its own page table, and hence gain read-write access to all of physical memory.
 
 [Program for testing for the DRAM "rowhammer" problem](https://github.com/google/rowhammer-test)
+
+[DRAMA: Exploiting DRAM Addressing for Cross-CPU Attacks](https://arxiv.org/abs/1511.08756)
+
+[If it fits - it sniffs: Adventures in WarShipping](http://www.irongeek.com/i.php?page=videos/derbycon4/t104-if-it-fits-it-sniffs-adventures-in-warshipping-larry-pesce)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -290,12 +275,60 @@ http://datagenetics.com/blog/november12013/index.html
 [HashID](https://github.com/psypanda/hashID)
 * hashID is a tool written in Python 3 which supports the identification of over 220 unique hash types using regular expressions. It is able to identify a single hash, parse a file or read multiple files in a directory and identify the hashes within them. hashID is also capable of including the corresponding hashcat mode and/or JohnTheRipper format in its output. hashID works out of the box with Python 2 = 2.7.x or Python 3 = 3.3 on any platform.
 
+[Foreign LINUX](https://github.com/wishstudio/flinux)
+* Foreign LINUX is a dynamic binary translator and a Linux system call interface emulator for the Windows platform. It is capable of running unmodified Linux binaries on Windows without any drivers or modifications to the system. This provides another way of running Linux applications under Windows in constrast to Cygwin and other tools.
+
+[wxHex Editor](http://www.wxhexeditor.org/home.php)
+* wxHexEditor is another Free Hex Editor, build because there is no good hex editor for Linux system, specially for big files.
+
+[Demon](https://github.com/x0r1/Demon)
+* GPU keylogger PoC by Team Jellyfish
+
+[scanless](https://github.com/vesche/scanless)
+* Command-line utility for using websites that can perform port scans on your behalf. Useful for early stages of a penetration test or if you'd like to run a port scan on a host and have it not come from your IP address.
+
+[exitmap](https://github.com/NullHypothesis/exitmap)
+* A fast and modular scanner for Tor exit relays. 
+
+[ZeroMQ](http://zguide.zeromq.org/page:all)
+
+[SMTP Strict Transport Security](https://lwn.net/Articles/684462/)
+
+[Simplevisor](https://ionescu007.github.io/SimpleVisor/)
+* SimpleVisor is a simple, portable, Intel VT-x hypervisor with two specific goals: using the least amount of assembly code (10 lines), and having the smallest amount of VMX-related code to support dynamic hyperjacking and unhyperjacking (that is, virtualizing the host state from within the host). It runs on both Windows and UEFI.
+
+[algo](https://github.com/trailofbits/algo)
+* 1-click IPSEC VPN in the Cloud 
+
+
+
+
+
+
 
 ### Interesting Hardware Projects
 
 
 [Digital Ding Dong Ditch](https://github.com/samyk/dingdong)
 * Digital Ding Dong Ditch is a device to hack into and ring my best friend's wireless doorbell whenever I send a text message to the device. The best part of the device is that it causes my friend, without fail, to come outside, find no one, and go back in. In this project, we'll learn not only how to create this device, but how to reverse engineer radio frequencies we know nothing about using RTL-SDR (a ~$14 software defined radio), as well as creating hardware and software using Arduino, the Adafruit FONA (GSM/SMS/2G board), an RF (radio frequency) transmitter to transmit custom signals, and even how to reverse engineer a proprietary radio signal we know nothing about!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Interesting Writeups
@@ -325,6 +358,19 @@ http://datagenetics.com/blog/november12013/index.html
 [If a prefix DROPs, does anyone listen?](http://threatshare.com/2013/05/if-a-prefix-drops-does-anyone-listen/)
 
 [More on Using Bash's Built-in /dev/tcp File (TCP/IP)](http://www.linuxjournal.com/content/more-using-bashs-built-devtcp-file-tcpip More on Using Bash's Built-in /dev/tcp File (TCP/IP))
+
+[China’s Great Cannon](https://citizenlab.org/2015/04/chinas-great-cannon/) * This post describes our analysis of China’s “Great Cannon,” our term for an attack tool that we identify as separate from, but co-located with, the Great Firewall of China. The first known usage of the Great Cannon is in the recent large-scale novel DDoS attack on both GitHub and servers used by GreatFire.org.
+
+[Exploiting Android Users for Fun and Profit](http://www.codeword.xyz/2015/08/09/exploiting-android-users-for-fun-and-profit/)
+
+
+
+
+
+
+
+
+
 
 ### Interesting Papers
 
@@ -382,6 +428,10 @@ http://datagenetics.com/blog/november12013/index.html
 * 2D barcodes offer many benefits compared to 1D barcodes, such as high information density and robustness. Before their introduction to the mobile phone ecosystem, they have been widely used in specific applications, such as logistics or ticketing. However, there are multiple competing standards with different benefits and drawbacks. Therefore, reader applications as well as dedicated devices have to support multiple standards. In this paper, we present novel attacks based on deliberately caused ambiguities when especially crafted barcodes conform to multiple standards. Implementation details decide which standard the decoder locks on. This way, two users scanning the same barcode with different phones or apps will receive different content. This potentially opens way for multiple problems related to security. We describe how embedding one barcode symbology into another can be used to perform phishing attacks as well as targeted exploits. In addition, we evaluate the extent to which popular 2D barcode reader applications on smartphones are susceptible to these barcode-in-barcode attacks. We furthermore discuss mitigation techniques against this type of attack.
 
 
-###sites
+### sites
 
 http://www.mmoviper.com/
+
+
+[moflow](https://github.com/vrtadmin/moflow)
+* Release Branches for MoFlow

@@ -3,6 +3,7 @@
 TOC
 Cull
 | Articles | #Articles
+| How-Tos | #howtos
 | Papers | #Papers
 | Talks/Videos | #Talks
 | Tools | #Tools
@@ -17,9 +18,16 @@ Cull
 | Title | Link
 | -------- | --------- |
 
-https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections
+
+
+
+
 
 https://github.com/NullHypothesis/exitmap/issues/37
+
+
+
+
 
 
 
@@ -29,6 +37,10 @@ https://github.com/NullHypothesis/exitmap/issues/37
 [Defeating and Detecting Browser Spoofing - Browserprint](https://browserprint.info/blog/defeatingSpoofing)
 
 [Invasion of Privacy - HackerFactor](http://www.hackerfactor.com/blog/index.php?/archives/703-Invasion-of-Privacy.html)
+
+[Trawling Tor Hidden Service – Mapping the DHT](https://donncha.is/2013/05/trawling-tor-hidden-services/)
+
+
 
 
 
@@ -40,6 +52,13 @@ https://github.com/NullHypothesis/exitmap/issues/37
 | Cat Videos and the Death of Clear Text | https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/
 
 [How to Spot a Spook](https://cryptome.org/dirty-work/spot-spook.htm)
+
+
+
+### <a name="how-tos"How-Tos</a>
+
+[How to stop Firefox from making automatic connections](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections)
+
 
 
 ### <a name="Papers">Papers</a>

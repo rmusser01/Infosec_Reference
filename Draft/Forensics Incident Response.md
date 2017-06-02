@@ -31,11 +31,11 @@ Forensics wiki
 Yelp/Github - OSX Collector - Mass style forensics/management
 
 
-https://sysforensics.org/2014/01/know-your-windows-processes.html
-https://santoku-linux.com/howtos
+[Know your Windows' Processes](https://sysforensics.org/2014/01/know-your-windows-processes.html)
+
+[Santoku Linux How-Tos'](https://santoku-linux.com/howtos)
 
 hackingexposedcomputerforensicsblog.blogspot.com/2015/02/automating-dfir-how-to-series-on_21.html)
-
 
 #### End Cull
 
@@ -122,7 +122,8 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 [PEview](http://wjradburn.com/software/)
 * PEview provides a quick and easy way to view the structure and content of 32-bit Portable Executable (PE) and Component Object File Format (COFF) files. This PE/COFF file viewer displays header, section, directory, import table, export table, and resource information within EXE, DLL, OBJ, LIB, DBG, and other file types.
 
-
+[firepwd.py](https://github.com/lclevy/firepwd)
+* firepwd.py, an open source tool to decrypt Mozilla protected passwords
 
 
 

@@ -1,10 +1,7 @@
 ## Attacking & Defending iOS
 
-[Link Title](#anchor-name)
 
-<a name="anchor-name"></a>
 
-[Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
 
 
 
@@ -19,7 +16,7 @@
 [Jailbreaking](#jail)
 
 
-### <a name="cull">Cull</a>
+#### <a name="cull">Cull</a>
 
 | Title     | Link |
 | -------- | ------------------------ |
@@ -27,6 +24,17 @@
 | **Jailbreak Stories - Cyril Cattiaux(pod2g) - WWJC 2014** | https://www.youtube.com/watch?v=OBFLTb-AY38
 | **Mobile self-defense - Karsten Nohl** | https://www.youtube.com/watch?v=GeCkO0fWWqc
 | **Pentesting iOS Applications - Pentester Academy - Paid Course** - This course focuses on the iOS platform and application security and is ideal for pentesters, researchers and the casual iOS enthusiast who would like to dive deep and understand how to analyze and systematically audit applications on this platform using a variety of bleeding edge tools and techniques. | http://www.pentesteracademy.com/course?id=2
+
+
+#### End Cull
+
+### General
+
+[Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
+
+[iOS Application Security Review Methodology](http://research.aurainfosec.io/ios-application-security-review-methodology/#snapshot)
+* aurainfosec
+
 
 
 
@@ -58,6 +66,8 @@
 [iOSRE](https://github.com/kpwn/iOSRE)
 * The aim of this project is to provide useful and updated tools and knowledge on iOS reverse engineering and exploitation. This is an ongoing effort, and still in a very new stage.
 
+[OWASP iOS crackme tutorial: Solved with Frida](https://www.nowsecure.com/blog/2017/04/27/owasp-ios-crackme-tutorial-frida/)
+
 
 | Title     | Link |
 | -------- | ------------------------ |
@@ -67,6 +77,13 @@
 | **Damn Vulnerable iOS App - Getting Started** | http://damnvulnerableiosapp.com/2013/12/get-started/
 | **OWASP iGOAT** - “iGoat is a safe environment where iOS developers can learn about the major security pitfalls they face as well as how to avoid them. It is made up of a series of lessons that each teach a single (but vital) security lesson.” | https://www.owasp.org/index.php/OWASP_iGoat_Project
 	
+
+
+
+
+
+
+
 
 ### <a name="test">iOS Security Testing Methodologies/Tools</a>
 
@@ -83,9 +100,21 @@
 
 
 
+
+
+
+
 ### <a name="papers">General Research Papers</a>
 | Title     | Link |
 | -------- | ------------------------ |
+
+
+
+
+
+
+
+
 
 
 
@@ -99,6 +128,15 @@
 | **IOS Reverse Engineering toolkit** | https://github.com/S3Jensen/iRET
 
 
+
+
+
+
+
+
+
+
+
 ### <a name="jail">Jailbreaking</a>
 | Title     | Link |
 | -------- | ------------------------ |
@@ -107,7 +145,20 @@
 | The iPhone Wiki** - The iPhone Wiki is an unofficial wiki dedicated to collecting, storing and providing information on the internals of Apple's amazing iDevices. We hope to pass this information on to the next generation of hackers so that they can go forth into their forebears' footsteps and break the ridiculous bonds Apple has put on their amazing mobile devices. | http://theiphonewiki.com/wiki/Main_Page 
 | **OWASP Jailbreaking Cheat Sheet** | https://www.owasp.org/index.php/Mobile_Jailbreaking_Cheat_Sheet
 
+
+
+
+
+
+
 ### <a name="dev">iOS Development</a>
 | Title     | Link |
 | -------- | ------------------------ |
 | **imas** - Defense for your iOS app - for developers | https://project-imas.github.io/
+
+
+
+### Tools
+
+[Idb](https://github.com/dmayer/idb)
+* idb is a tool to simplify some common tasks for iOS pentesting and research

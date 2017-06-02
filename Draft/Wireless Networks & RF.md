@@ -34,6 +34,10 @@ Ubertooth
 Scapy
 
 
+
+##### End Cull
+
+
 ### <a name="general">General</a>
 
 [Guide to Basics of Wireless Networking](http://documentation.netgear.com/reference/fra/wireless/TOC.html)
@@ -82,9 +86,10 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 
 
-###<a name="non-tut">Non-Tutorial Writeups</a>
+### <a name="non-tut">Non-Tutorial Writeups</a>
 [4G Security: Hacking USB Modem and SIM Card via SMS](http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html)
 
+[The Vodafone Access Gateway / UMTS Femto cell / Vodafone Sure Signal](https://wiki.thc.org/vodafone)
 
 
 
@@ -305,6 +310,12 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 *	 Bluetooth Low Energy Arduino serial connection 
 * Each of these options are supported in code, but can be ignored on the PCB. The PCB itself has been designed to use a pluggable module for each of these options, making it easy to ignore, install, or change out which ones you find useful.
 
+[RFIDiggity - Pentester Guide to Hacking HF/NFC and UHF RFID - Defcon23](https://www.youtube.com/watch?v=7o38hyQWw6g)
+
+
+
+
+
 
 
 
@@ -322,7 +333,7 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 [Frony Fronius - Exploring Zigbee signals from Solar City](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t102-frony-fronius-exploring-zigbee-signals-from-solar-city-jose-fernandez)
 * Solar equipment is becoming more readily used in homes and businesses due to cost savings, eco-friendly conservationism and current tax incentives. Companies like SolarCity use Power Inverters/Meters from 3rd parties in order to provide it's services while making the solution affordable for customers. This research will focus on understanding the communication between the Inverter, Internet Gateway and web portal used to view electrical consumption of subscriber.
 
-
+[ZigBee Exploited: The good, the bad and the ugly - Tobias Zillner](http://www.sicherheitsforschung-magdeburg.de/uploads/journal/MJS_045_Zillner_ZigBee.pdf)
 
 
 
@@ -394,6 +405,17 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 * In this talk we will talk about some of the things that can identify you in an environment and how people can track you. We will look at bluetooth scanning apps that you can use every day to track people inconspicuously from your phone, while walking, metroing, or as a passenger in a car driving.
 
 [SS7: Locate. Track. Manipulate.[31c3] by Tobias Engel (SnoopSnitch)](https://www.youtube.com/watch?v=lQ0I5tl0YLY)
+
+[Wireless Leakage - Robin Wood](https://digi.ninja/files/Tech_for_Troops-Wi-Fi_Leakage.pdf)
+
+
+
+
+
+
+
+
+
 
 
 

@@ -17,26 +17,33 @@ TOC
 
 
 #### sort
-[honggfuzz])(https://github.com/google/honggfuzz)
-*  Security oriented fuzzer with powerful analysis options. Supports evolutionary, feedback-driven fuzzing based on code coverage (sw and hw) http://google.github.io/honggfuzz/
 
-
-[Fools of Golden Gate](https://blog.silentsignal.eu/2017/05/08/fools-of-golden-gate/)
-* How major vulnerabilities/large amounts of publicly vulnerable systems can exist without public recognition for long periods of time. (i.e. CVEs(10.0) exist, but no mapping in nessus/metasploit/etc)
 #### end sort
 
 
 
+### General
 
-
-
-### General Writeups
-[Fuzzing for MS15-010](http://blog.beyondtrust.com/fuzzing-for-ms15-010)
-* Is what it says on the tin.
-
-[Advice From A Researcher: Hunting XXE For Fun and Profit](https://blog.bugcrowd.com/advice-from-a-researcher-xxe/)
+[Fuzzing basics...how to break software - grid - Scott M](http://www.irongeek.com/i.php?page=videos/derbycon6/411-fuzzing-basicshow-to-break-software-grid-aka-scott-m)
+* Ever wanted to break software? You know you want to...it's fun! In this talk, I will share some tools & techniques I've used to improve software by breaking it.
 
 [Quick explanation of fuzzing and various fuzzers](http://whoisjoe.info/?p=16)
+
+[Basic fuzzing framework](https://www.cert.org/vulnerability-analysis/tools/bff-download.cfm)
+
+
+
+### Blogposts
+
+[Fools of Golden Gate](https://blog.silentsignal.eu/2017/05/08/fools-of-golden-gate/)
+* How major vulnerabilities/large amounts of publicly vulnerable systems can exist without public recognition for long periods of time. (i.e. CVEs(10.0) exist, but no mapping in nessus/metasploit/etc)
+
+
+
+
+
+
+
 
 
 
@@ -50,6 +57,13 @@ TOC
 
 
 
+
+
+
+
+
+
+
 ### <a name="writeup">Writeups</a>
 
 [From Fuzzing to 0day.](http://blog.techorganic.com/2014/05/14/from-fuzzing-to-0-day/)
@@ -60,6 +74,17 @@ TOC
 [Walkthrough of setting up CERT’s FOE fuzzer and fuzzing irfanview](http://www.singlehop.com/blog/lets-fuzz-irfanview/)
 
 [How to fuzz a server with American Fuzzy Lop](https://www.fastly.com/blog/how-fuzz-server-american-fuzzy-lop)
+
+[Fuzzing for MS15-010](http://blog.beyondtrust.com/fuzzing-for-ms15-010)
+* Is what it says on the tin.
+
+[Advice From A Researcher: Hunting XXE For Fun and Profit](https://blog.bugcrowd.com/advice-from-a-researcher-xxe/)
+
+[Running Windows 64-bit in QEMU Emulation Mode](https://www.invincealabs.com/blog/2016/07/running-windows-64bit-qemu/)
+
+[There's a lot of vulnerable OS X applications out there](https://vulnsec.com/2016/osx-apps-vulnerabilities/)
+
+[Binary SMS - The old backdoor to your new thing](https://www.contextis.com/resources/blog/binary-sms-old-backdoor-your-new-thing/)
 
 
 
@@ -81,6 +106,15 @@ TOC
 
 [TAJ: Effective Taint Analysis of Web Applications - Java Webapps](http://manu.sridharan.net/files/pldi153-tripp.pdf)
 * Taint analysis, a form of information-flow analysis, establishes whether values from untrusted methods and parameters may flow into security-sensitive operations. Taint analysis can detect many common vulnerabilities in Web applications, and so has attracted much attention from both the research community and industry. However, most static taint-analysis tools do not address criti- cal requirements for an industrial-strength tool. Specifically, an industrial-strength tool must scale to large industrial Web applica- tions, model essential Web-application code artifacts, and generate consumable reports for a wide range of attack vectors. We have designed and implemented a static Taint Analysis for Java (TAJ) that meets the requirements of industry-level applica- tions. TAJ can analyze applications of virtually any size, as it em- ploys a set of techniques designed to produce useful answers given limited time and space. TAJ addresses a wide variety of attack vec- tors, with techniques to handle reflective calls, flow through con- tainers, nested taint, and issues in generating useful reports. This paper provides a description of the algorithms comprising TAJ, evaluates TAJ against production-level benchmarks, and compares it with alternative solutions.
+
+[Fuzzing the Phone in your Phone](https://www.blackhat.com/presentations/bh-usa-09/MILLER/BHUSA09-Miller-FuzzingPhone-PAPER.pdf)
+
+
+
+
+
+
+
 
 
 
@@ -126,6 +160,50 @@ TOC
 
 ### <a name="tools">Tools</a>
 
+#### Non OS Specific
+
+[honggfuzz](https://github.com/google/honggfuzz)
+*  Security oriented fuzzer with powerful analysis options. Supports evolutionary, feedback-driven fuzzing based on code coverage (sw and hw) http://google.github.io/honggfuzz/
+
+[Grinder - Fuzzer](https://github.com/stephenfewer/grinder)
+* Grinder is a system to automate the fuzzing of web browsers and the management of a large number of crashes. Grinder Nodes provide an automated way to fuzz a browser, and generate useful crash information (such as call stacks with symbol information as well as logging information which can be used to generate reproducible test cases at a later stage). A Grinder Server provides a central location to collate crashes and, through a web interface, allows multiple users to login and manage all the crashes being generated by all of the Grinder Nodes.
+
+| **USB Fuzzing Basics: From fuzzing to bug reporting** | http://blog.quarkslab.com/usb-fuzzing-basics-from-fuzzing-to-bug-reporting.html
+
+[libFuzzer]((http://llvm.org/docs/LibFuzzer.html
+* library for in-process evolutionary fuzzing of other libraries.
+
+
+[crashwalk](https://github.com/bnagy/crashwalk)
+* Bucket and triage on-disk crashes. OSX and Linux.(automated triaging of AFL-based crashes)
+
+[CERT’s Failure Observation Engine (FOE)](https://www.cert.org/vulnerability-analysis/tools/foe.cfm)
+* The CERT Failure Observation Engine (FOE) is a software testing tool that finds defects in applications that run on the Windows platform. FOE performs mutational fuzzing on software that consumes file input. (Mutational fuzzing is the act of taking well-formed input data and corrupting it in various ways looking for cases that cause crashes.) The FOE automatically collects test cases that cause software to crash in unique ways, as well as debugging information associated with the crashes. The goal of FOE is to minimize the effort required for software vendors and security researchers to efficiently discover and analyze security vulnerabilities found via fuzzing.
+
+[Zulu Fuzzer](https://github.com/nccgroup/Zulu)
+* The Zulu fuzzer
+[Radamsa](https://code.google.com/p/ouspg/wiki/Radamsa)
+* Radamsa is a test case generator for robustness testing, aka a fuzzer. It can be used to test how well a program can stand malformed and potentially malicious inputs. It operates based on given sample inputs and thus requires minimal effort to set up. The main selling points of radamsa are that it is easy to use, contains several old and new fuzzing algorithms, is easy to script from command line and has already been used to find a slew of bugs in programs that actually matter. 
+[browserfuzz](https://bitbucket.org/blackaura/browserfuzz)
+* A very simple browser fuzzer based on tornado.
+
+[sandbox-attacksurface-analysis-tools](https://github.com/google/sandbox-attacksurface-analysis-tools)
+* This is a small suite of tools to test various properties of sandboxes on Windows. Many of the checking tools take a -p flag which is used to specify the PID of a sandboxed process. The tool will impersonate the token of that process and determine what access is allowed from that location. Also it's recommended to run these tools as an administrator or local system to ensure the system can be appropriately enumerated.
+
+[Kitty][https://github.com/cisco-sas/kitty]
+* Fuzzing framework written in python(Not a fuzzer)
+
+
+
+
+
+
+
+
+
+
+
+
 #### Windows Specific
 [WinAFL] (https://github.com/ivanfratric/winafl)
 * A fork of AFL for fuzzing Windows binaries 
@@ -154,32 +232,6 @@ TOC
 #### Android Specific
 [MFFA - Media Fuzzing Framework for Android](https://github.com/fuzzing/MFFA)
 
-
-
-#### Non OS Specific
-| **honggfuzz** - A general-purpose, easy-to-use fuzzer with interesting analysis options. Supports feedback-driven fuzzing based on code coverage | https://github.com/google/honggfuzz
-
-[Grinder - Fuzzer](https://github.com/stephenfewer/grinder)
-* Grinder is a system to automate the fuzzing of web browsers and the management of a large number of crashes. Grinder Nodes provide an automated way to fuzz a browser, and generate useful crash information (such as call stacks with symbol information as well as logging information which can be used to generate reproducible test cases at a later stage). A Grinder Server provides a central location to collate crashes and, through a web interface, allows multiple users to login and manage all the crashes being generated by all of the Grinder Nodes.
-
-| **USB Fuzzing Basics: From fuzzing to bug reporting** | http://blog.quarkslab.com/usb-fuzzing-basics-from-fuzzing-to-bug-reporting.html
-
-[libFuzzer]((http://llvm.org/docs/LibFuzzer.html
-* library for in-process evolutionary fuzzing of other libraries.
-
-
-[crashwalk](https://github.com/bnagy/crashwalk)
-* Bucket and triage on-disk crashes. OSX and Linux.(automated triaging of AFL-based crashes)
-
-[CERT’s Failure Observation Engine (FOE)](https://www.cert.org/vulnerability-analysis/tools/foe.cfm)
-* The CERT Failure Observation Engine (FOE) is a software testing tool that finds defects in applications that run on the Windows platform. FOE performs mutational fuzzing on software that consumes file input. (Mutational fuzzing is the act of taking well-formed input data and corrupting it in various ways looking for cases that cause crashes.) The FOE automatically collects test cases that cause software to crash in unique ways, as well as debugging information associated with the crashes. The goal of FOE is to minimize the effort required for software vendors and security researchers to efficiently discover and analyze security vulnerabilities found via fuzzing.
-
-[Zulu Fuzzer](https://github.com/nccgroup/Zulu)
-* The Zulu fuzzer
-[Radamsa](https://code.google.com/p/ouspg/wiki/Radamsa)
-* Radamsa is a test case generator for robustness testing, aka a fuzzer. It can be used to test how well a program can stand malformed and potentially malicious inputs. It operates based on given sample inputs and thus requires minimal effort to set up. The main selling points of radamsa are that it is easy to use, contains several old and new fuzzing algorithms, is easy to script from command line and has already been used to find a slew of bugs in programs that actually matter. 
-[browserfuzz](https://bitbucket.org/blackaura/browserfuzz)
-* A very simple browser fuzzer based on tornado.
 
 
 

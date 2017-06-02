@@ -12,6 +12,16 @@
 
 
 
+### General/Disclosure
+
+[NCSAM: Coordinated Vulnerability Disclosure Advice for Researchers](https://community.rapid7.com/community/infosec/blog/2016/10/28/ncsam-coordinated-vulnerability-disclosure-advice-for-researchers)
+
+
+
+
+
+
+
 ### <a name="writing">Writing</a>
 
 Start with the first two links, and go from there. They’re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
@@ -38,6 +48,11 @@ Three parter from jacobian.org:
 [Teach Technical Writing in Two Hours per Week](http://www.cs.tufts.edu/~nr/pubs/two-abstract.html)
 
 [Learn Technical Writing in Two Hours per Week - Norman Ramsey](http://www.cs.tufts.edu/~nr/pubs/learn-two.pdf)
+
+[Politics and the English Language - George Orwell](http://www.npr.org/blogs/ombudsman/Politics_and_the_English_Language-1.pdf)
+
+
+
 
 
 

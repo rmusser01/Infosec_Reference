@@ -12,6 +12,9 @@
 
 [A Hacker's Guide to Risk](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-Bruce-Potter-Hackers-Guide-to-Risk.pdf)
 
+[Global Adversarial Capability Modeling](https://www.youtube.com/watch?v=56T3JN09SrY#t=41)
+
+
 
 ### Threat Modeling Methodologies
 
@@ -23,6 +26,7 @@
 ### Writeups/Articles
 
 [Why your threat model is probably wrong - Cyberwar](http://blog.thinkst.com/p/cyberwar-why-your-threat-model-is.html)
+
 
 
 ### Tools

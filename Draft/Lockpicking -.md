@@ -20,7 +20,6 @@ http://www.keypicking.com/
 
 [A newbies guide to safes, both opening and using](https://www.reddit.com/r/WhatsInThisThing/comments/1gm6uk/a_newbies_guide_to_safes_both_opening_and_using/)
 
-[ Jos Weyers – Lock Impressioning](https://www.youtube.com/watch?v=JcNc1BVaCE0)
 
 
 ###General Information
@@ -39,7 +38,9 @@ http://www.keypicking.com/
 
 [Safecracking for the computer scientist*](http://www.crypto.com/papers/safelocks.pdf)
 
+[Jos Weyers – Lock Impressioning](https://www.youtube.com/watch?v=JcNc1BVaCE0)
 
+[CIA Lock Picking [Field Operative Training Manual]](https://archive.org/details/pdfy-eGBVTYko5TUI5P_B)
 
 
 

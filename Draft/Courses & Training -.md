@@ -26,10 +26,21 @@ Hackingdojo
 
 BVWA
 
+#### End Cull
 
-[Introduction to Reverse Engineering Software - Dartmouth](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
 
-[CSCI 4974 / 6974 Hardware Reverse Engineering](http://security.cs.rpi.edu/courses/hwre-spring2014/)
+
+## Heads Up
+These classes are all focused on computer/information security. If you're looking for online courses to learn material other than the mentioned, check out "coursera.com", Standford's online classes or MIT's online courses.
+
+[Coursera](https://www.coursera.org/)
+
+[MIT OpenCourseware](https://ocw.mit.edu/courses/)
+
+[Standford](http://online.stanford.edu/courses)
+
+[Udemy](https://www.udemy.com/courses/)
+
 
 
 ### General Sources/Repository of Classes
@@ -39,11 +50,7 @@ BVWA
 
 [Open Security Training](www.opensecuritytraining.info)
 
-Udemy
 
-Coursera
-
-Stanfordx
 
 
 
@@ -58,7 +65,10 @@ Stanfordx
 
 [Teach Yourself Computer Science](https://teachyourselfcs.com/)
 
+[Technical Development Guide - Google](https://www.google.com/about/careers/students/guide-to-technical-development.html)
 
+[OSS University - Computer Science](https://github.com/open-source-society/computer-science)
+* Path to a free self-taught education in Computer Science!
 
 
 
@@ -133,7 +143,9 @@ Stanfordx
 *	How an OS loads a binary into memory and links it on the fly before executing it.   
 *Along the way we discuss the relevance of security at different stages of a binary’s life, from the tricks that can be played by a malicious compiler, to how viruses really work, to the way which malware “packers” duplicate OS process execution functionality, to the benefit of a security-enhanced OS loader which implements address space layout randomization (ASLR).
 
+[Introduction to Reverse Engineering Software - Dartmouth](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
 
+[CSCI 4974 / 6974 Hardware Reverse Engineering](http://security.cs.rpi.edu/courses/hwre-spring2014/)
 
 
 
@@ -153,6 +165,13 @@ Stanfordx
 
 [armpwn](https://github.com/saelo/armpwn)
 * Repository to train/learn memory corruption exploitation on the ARM platform. This is the material of a workshop I prepared for my CTF Team.
+
+[BinTut](https://github.com/NoviceLive/bintut)
+* Dynamic or live demonstration of classical exploitation techniques of typical memory corruption vulnerabilities, from debugging to payload generation and exploitation, for educational purposes
+
+
+
+
 
 
 ### UEFI/BIOS Training

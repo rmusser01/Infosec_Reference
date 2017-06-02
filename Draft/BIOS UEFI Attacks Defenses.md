@@ -23,6 +23,8 @@ http://forums.mydigitallife.info/forums/34-MDL-Projects-and-Applications
 
 http://forums.mydigitallife.info/forums/25-BIOS-Mods
 
+#### End Cull
+
 
 ## <a name="general">General</a>
 | Title | Link |
@@ -158,6 +160,15 @@ Reverse Engineering Router Firmware walk through
 [ida-uefiutils](https://github.com/snare/ida-efiutils/)
 * Some scripts for IDA Pro to assist with reverse engineering EFI binaries 
 
+[VisualUEFI](https://github.com/ionescu007/VisualUefi)
+* A project for allowing EDK-II Development with Visual Studio
+
+[UDKToolbox](https://github.com/smwikipedia/UDKToolbox)
+* An toolbox to help adopt Visual Studio for UEFI development.
+
+
+
+
 
 ## Papers & Writeups
 | Title | Link |
@@ -169,6 +180,7 @@ Reverse Engineering Router Firmware walk through
 [SMM Rootkits:A New Breed of OS Independent Malware](http://www.eecs.ucf.edu/~czou/research/SMM-Rootkits-Securecom08.pdf)
 * The emergence of hardware virtualization technology has led to the development of OS independent malware such as the Virtual Machine based rootkits (VMBRs). In this paper, we draw attention to a different but related threat that exists on many commodity systems in operation today: The System Management Mode based rootkit (SMBR). System Management Mode (SMM) is a relatively obscure mode on Intel processors used for low-level hardware control. It has its own private memory space and execution environment which is generally invisible to code running outside (e.g., the Operating System). Furthermore, SMM code is completely non-preemptible, lacks any concept of privilege level, and is immune to memory protection mechanisms. These features make it a potentially attractive home for stealthy rootkits. In this paper, we present our development of a proof of concept SMM rootkit. In it, we explore the potential of System Management Mode for malicious use by implementing a chipset level keylogger and a network backdoor capable of directly interacting with the network card to send logged keystrokes to a remote machine via UDP. The rootkit hides its memory footprint and requires no changes to the existing Operating System. It is compared and contrasted with VMBRs. Finally, techniques to defend against these threats are explored. By taking an offensive perspective we hope to help security researchers better understand the depth and scope of the problems posed by an emerging class of OS independent malware. 
 
+[How to develop your own Boot Loader](https://www.codeproject.com/Articles/36907/How-to-develop-your-own-Boot-Loader)
 
 
 ### Other

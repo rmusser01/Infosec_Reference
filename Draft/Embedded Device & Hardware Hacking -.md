@@ -6,13 +6,13 @@ https://en.wikipedia.org/wiki/Embedded_system
 
 Cull
 * [General](#general)
+* [General Hardware Hacking](#generalhw)
 * [Attacking Routers](#routers)
 * [Cable Modem Hacking](#modem)
 * [Educational/Information on things you wouldn't find in a Dictionary](#education)
 * [Flash Memory](#flash)
 * [Internet of Things](#iot)
 * [General Tools(S/W & H/W)](#gentools)
-* [General Hardware Hacking](#generalhw)
 * [Miscellaneous](#misc)
 * [PCI](#PCI)
 * [USB](#USB)
@@ -33,7 +33,7 @@ Cull
 
 #### To Sort
 
-http://www.sp3ctr3.me/hardware-security-resources/ 
+http://www.sp3ctr3.me/hardware-security-resources/
 
 http://greatscottgadgets.com/infiltrate2013/
 
@@ -64,6 +64,36 @@ http://greatscottgadgets.com/infiltrate2013/
 [Metasploit Hardware Brdige](https://community.rapid7.com/community/transpo-security/blog/2017/02/02/exiting-the-matrix)
 * [Hardware Bridge API](http://opengarages.org/hwbridge/)
 
+
+
+
+
+
+
+
+### <a name="generalhw">General Hardware Hacking</a>
+
+[Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
+
+[ChipWhisperer](http://www.newae.com/chipwhisperer)
+* ChipWhisperer is the first ever open-source solution that provides a complete toolchain for research and analysis of embedded hardware security. Side Channel Power Analysis, Clock Glitching, VCC Glitching, and more are all possible with this unique tool.
+
+[Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)
+
+[Deconstructing the Circuit Board Sandwich DEF CON 22 - Joe Grand aka Kingpin](https://www.youtube.com/watch?v=O8FQZIPkgZM)
+
+[The Sorcerer’s Apprentice Guide to Fault Attacks](https://eprint.iacr.org/2004/100.pdf)
+* The effect of faults on electronic systems has been studied since the 1970s when it was noticed that radioactive particles caused errors in chips. This led to further research on the effect of charged particles on silicon, motivated by the aerospace industry who was becoming concerned about the effect of faults in airborne electronic systems. Since then various mechanisms for fault creation and propagation have been discovered and researched. This paper covers the various methods that can be used to induce faults in semiconductors and exploit such errors maliciously. Several examples of attacks stemming from the exploiting of faults are explained. Finally a series of countermeasures to thwart these attacks are described.
+
+[A Survey of Remote Automotive Attack Surfaces  - Black Hat USA 2014](https://www.youtube.com/watch?v=mNhFGJVq2HE)
+
+[Smart Parking Meters](http://uninformed.org/?v=all&a=6&t=sumry)
+* Security through obscurity is unfortunately much more common than people think: many interfaces are built on the premise that since they are a "closed system" they can ignore standard security practices. This paper will demonstrate how parking meter smart cards implement their protocol and will point out some weaknesses in their design that open the doors to the system. It will also present schematics and code that you can use to perform these basic techniques for auditing almost any type of blackblox secure memory card. 
+
+[SATELLITE TV RECEIVERS: FROM REMOTE CONTROL TO ROOT SHELL - Sofiane Talmat](https://vimeo.com/album/3682874/video/148910624)
+
+[Hardware Hacking the Easyware Way](http://www.irongeek.com/i.php?page=videos/derbycon6/417-hardware-hacking-the-easyware-way-brian-fehrman)
+* Interested in hardware hacking but not quite sure where to start? Does the thought of soldering thrill you (or scare you)? Come check out this talk to see just how easy it is to jump into this exciting field of research! Many people and companies use similar models of hardware. Unlike software, these devices rarely receive security updates. Sometimes, used devices are sold without clearing the configurations and important data is left behind. After this talk, you will know how to find hidden interfaces on these devices, start searching for vulnerabilities and sensitive information, and have irresistible urges to go home and tear apart all your old networking equipment. Did we mention...live demo?
 
 
 
@@ -116,6 +146,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 ### <a name="education">Educational</a>
+
 [Hardware Hacking for Software People](http://dontstuffbeansupyournose.com/2011/08/25/hardware-hacking-for-software-people/)
 
 [Glitching for n00bs - A journey to coax out chips' inner seccrets](http://media.ccc.de/browse/congress/2014/31c3_-_6499_-_en_-_saal_2_-_201412271715_-_glitching_for_n00bs_-_exide.html#video)
@@ -145,10 +176,11 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
+
 ### <a name="flash">Flash Memory</a>
 [Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 
-
+[Vulnerabilities in MLC NAND Flash Memory Programming: Experimental Analysis, Exploits, and Mitigation Techniques](https://pdfs.semanticscholar.org/b9bc/a3c9f531002854af48de121cdcc8e0520c7f.pdf)
 
 
 
@@ -181,24 +213,13 @@ http://greatscottgadgets.com/infiltrate2013/
 * JTAGulator is an open source hardware tool that assists in identifying OCD connections from test points, vias, or component pads on a target device.
 
 
-### <a name="generalhw">General Hardware Hacking</a>
 
-[Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
 
-[ChipWhisperer](http://www.newae.com/chipwhisperer)
-* ChipWhisperer is the first ever open-source solution that provides a complete toolchain for research and analysis of embedded hardware security. Side Channel Power Analysis, Clock Glitching, VCC Glitching, and more are all possible with this unique tool.
 
-[Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)
 
-[Deconstructing the Circuit Board Sandwich DEF CON 22 - Joe Grand aka Kingpin](https://www.youtube.com/watch?v=O8FQZIPkgZM)
 
-[The Sorcerer’s Apprentice Guide to Fault Attacks](https://eprint.iacr.org/2004/100.pdf)
-* The effect of faults on electronic systems has been studied since the 1970s when it was noticed that radioactive particles caused errors in chips. This led to further research on the effect of charged particles on silicon, motivated by the aerospace industry who was becoming concerned about the effect of faults in airborne electronic systems. Since then various mechanisms for fault creation and propagation have been discovered and researched. This paper covers the various methods that can be used to induce faults in semiconductors and exploit such errors maliciously. Several examples of attacks stemming from the exploiting of faults are explained. Finally a series of countermeasures to thwart these attacks are described.
 
-[A Survey of Remote Automotive Attack Surfaces  - Black Hat USA 2014](https://www.youtube.com/watch?v=mNhFGJVq2HE)
 
-[Smart Parking Meters](http://uninformed.org/?v=all&a=6&t=sumry)
-* Security through obscurity is unfortunately much more common than people think: many interfaces are built on the premise that since they are a "closed system" they can ignore standard security practices. This paper will demonstrate how parking meter smart cards implement their protocol and will point out some weaknesses in their design that open the doors to the system. It will also present schematics and code that you can use to perform these basic techniques for auditing almost any type of blackblox secure memory card. 
 
 
 ### <a name="misc">Miscellaneous</a>
@@ -212,6 +233,7 @@ http://greatscottgadgets.com/infiltrate2013/
 [U-Boot -- the Universal Boot Loader](http://www.denx.de/wiki/U-Boot)
 * Very popular on embedded devices open source bootloader for linux
 * [Manual/Documentation](http://www.denx.de/wiki/DULG/Manual)
+
 
 
 
@@ -239,6 +261,8 @@ http://greatscottgadgets.com/infiltrate2013/
 [Implementing an USB Host Driver Fuzzer - Daniel Mende - Troopers14](https://www.youtube.com/watch?v=h777lF6xjs4)
 
 [WHID Injector: an USB-Rubberducky/BadUSB on Steroids](https://whid-injector.blogspot.lt/2017/04/whid-injector-how-to-bring-hid-attacks.html)
+
+[Introduction to USB and Fuzzing - Matt DuHarte - Defcon23](https://www.youtube.com/watch?v=KWOTXypBt4E)
 
 
 
@@ -295,8 +319,9 @@ https://github.com/pwnieexpress/raspberry_pwn
 
 [Analyzing and Running binaries from Firmware Images - Part 1](http://w00tsec.blogspot.com.br/2013/09/analyzing-and-running-binaries-from.html)
 
+[Jailbreaks and Pirate Tractors: Reverse Engineering Do’s and Don’ts](https://www.youtube.com/watch?v=8_mMTVsOM6Y)
 
-
+[Lost your "secure" HDD PIN? We can help!](https://syscall.eu/pdf/2016-Lenoir_Rigo-HDD_PIN-paper.pdf)
 
 
 
@@ -357,6 +382,17 @@ Chameleon Mini
 * [ChameleonMini Hardware](https://github.com/emsec/ChameleonMini/wiki)
 
 [Hacking a USB Modem & SIM](http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html)
+
+[How can I do that? Intro to hardware hacking with an RFID badge reader - Kevin Bong](http://www.irongeek.com/i.php?page=videos/derbycon3/3303-how-can-i-do-that-intro-to-hardware-hacking-with-an-rfid-badge-reader-kevin-bong)
+
+
+
+
+
+
+
+
+
 
 
 

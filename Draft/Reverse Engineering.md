@@ -1,17 +1,7 @@
 
 
-##Reverse Engineering
+## Reverse Engineering
 
-Reverse Engineering - Wikipedia
-https://en.wikipedia.org/wiki/Reverse_engineering
-
-[High Level view of what Reverse Engineering is](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
-[What is Reverse Engineering?](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
-
-[Introduction to Reverse Engineering Software](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
-* This book is an attempt to provide an introduction to reverse engineering software under both Linux and Microsoft Windows©. Since reverse engineering is under legal fire, the authors figure the best response is to make the knowledge widespread. The idea is that since discussing specific reverse engineering feats is now illegal in many cases, we should then discuss general approaches, so that it is within every motivated user's ability to obtain information locked inside the black box. Furthermore, interoperability issues with closed-source proprietary systems are just plain annoying, and something needs to be done to educate more open source developers as to how to implement this functionality in their software. 
-
-[Starting from Scratch?](http://www.reddit.com/r/ReverseEngineering/comments/smf4u/reverser_wanting_to_develop_mathematically/)
 
 
 TOC
@@ -64,11 +54,7 @@ http://blog.techorganic.com/2016/03/08/radare-2-in-0x1e-minutes/
  mammon_'s tales to his grandson - https://mammon.github.io/tales/
 
 
-[Make Confide great again? No, we cannot](http://blog.quarkslab.com/make-confide-great-again-no-we-cannot.html)
-* RE'ing an electron based "secure communications" app
 
-[NRS](https://github.com/isra17/nrs)
-* NRS is a set of Python librairies used to unpack and analysis NSIS installer's data. It also feature an IDA plugin used to disassembly the NSIS Script of an installer
 
 
 http://fileformats.archiveteam.org/wiki/PNG
@@ -81,6 +67,20 @@ http://fileformats.archiveteam.org/wiki/PNG
 **Unicorn-Engine** - Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework. | http://www.unicorn-engine.org/
 
 [Reversing Prince Harming’s Kiss of Death]( https://reverse.put.as/2015/07/01/reversing-prince-harmings-kiss-of-death/)
+
+
+[#Fldbg](https://github.com/offensive-security/fldbg)
+* #Fldbg, a Pykd script to debug FlashPlayer
+
+[Microsoft Patch Analysis for Exploitation](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t111-microsoft-patch-analysis-for-exploitation-stephen-sims)
+* Since the early 2000's Microsoft has distributed patches on the second Tuesday of each month. Bad guys, good guys, and many in-between compare the newly released patches to the unpatched version of the files to identify the security fixes. Many organizations take weeks to patch and the faster someone can reverse engineer the patches and get a working exploit written, the more valuable it is as an attack vector. Analysis also allows a researcher to identify common ways that Microsoft fixes bugs which can be used to find 0-days. Microsoft has recently moved to mandatory cumulative patches which introduces complexity in extracting patches for analysis. Join me in this presentation while I demonstrate the analysis of various patches and exploits, as well as the best-known method for modern patch extraction.
+
+https://objective-see.com/
+
+[Bytecode Club - RE Forum](https://the.bytecode.club/)
+
+[Binary Hooking Problems](http://www.ragestorm.net/blogs/?p=348)
+
 ### End sort
 
 
@@ -92,6 +92,22 @@ http://fileformats.archiveteam.org/wiki/PNG
 [Introduction to Reverse Engineering Software - Dartmouth](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
 
 [CSCI 4974 / 6974 Hardware Reverse Engineering](http://security.cs.rpi.edu/courses/hwre-spring2014/)
+
+[Reverse Engineering - Wikipedia](https://en.wikipedia.org/wiki/Reverse_engineering)
+
+[High Level view of what Reverse Engineering is](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
+
+[What is Reverse Engineering?](http://www.program-transformation.org/Transform/DecompilationAndReverseEngineering)
+
+[Introduction to Reverse Engineering Software](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
+* This book is an attempt to provide an introduction to reverse engineering software under both Linux and Microsoft Windows©. Since reverse engineering is under legal fire, the authors figure the best response is to make the knowledge widespread. The idea is that since discussing specific reverse engineering feats is now illegal in many cases, we should then discuss general approaches, so that it is within every motivated user's ability to obtain information locked inside the black box. Furthermore, interoperability issues with closed-source proprietary systems are just plain annoying, and something needs to be done to educate more open source developers as to how to implement this functionality in their software. 
+
+[Starting from Scratch?](http://www.reddit.com/r/ReverseEngineering/comments/smf4u/reverser_wanting_to_develop_mathematically/)
+
+
+
+
+
 
 
 ### Things that are interesting/don't fit elsewhere
@@ -362,7 +378,8 @@ programming environment.
 [HexRaysCodeXplorer](https://github.com/REhints/HexRaysCodeXplorer)
 * Hex-Rays Decompiler plugin for better code navigation in RE process of C++ applications or code reconstruction of modern malware as Stuxnet, Flame, Equation
 
-
+[NRS](https://github.com/isra17/nrs)
+* NRS is a set of Python librairies used to unpack and analysis NSIS installer's data. It also feature an IDA plugin used to disassembly the NSIS Script of an installer
 
 
 
@@ -585,6 +602,13 @@ Part 8: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-bur
 
 [Blackbox Reversing an Electric Skateboard Wireless Protocol ](https://blog.lacklustre.net/posts/Blackbox_Reversing_an_Electric_Skateboard_Wireless_Protocol/)
 
+[Getting access to your own Fitbit data](https://www.cs.ru.nl/bachelorscripties/2016/Maarten_Schellevis___4142616___Getting_access_to_your_own_Fitbit_data.pdf)
+* his study investigates the possibility of getting direct access to one’s own data, as recorded by a Fitbit Charge HR activity tracker, without going through the Fitbit servers. We captured the firmware image of the Fitbit Charge HR during a firmware update. By analyzing this firmware image we were able to reverse-engineer the cryptographic primitives used by the Fitbit Charge HR activity tracker and recover the authentication  protocol. We obtained the cryptographic key that is used in the authentication protocol from the Fitbit Android application. We located a backdoor in version 18.102 of the firmware by comparing it with the latest version of the firmware (18.122). In the latest version of the firmware the backdoor was removed. This backdoor was used to extract the device specific encryption key from the memory of the tracker. While we have not implemented this last step in practice, the device specific encryption key can be used by a Fitbit Charge HR user to obtain his/her fitness data directly from the device.
+
+[Make Confide great again? No, we cannot](http://blog.quarkslab.com/make-confide-great-again-no-we-cannot.html)
+* RE'ing an electron based "secure communications" app
+
+
 
 
 
@@ -604,6 +628,20 @@ Part 8: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-bur
 
 [Advanced PDF Tricks - Ange Albertini, Kurt Pfeifle - Troopers1](https://www.youtube.com/watch?v=k9g9jZdjRcE)
 * This session is NOT about analyzing exploits but about learning to manipulate PDF contents. Among others:hide/reveal information; remove/add watermark;  just suck less about the format. It's an extended session (2 hours) to leave the audience time to try by themselves actively. The slides' PDF is entirely hand-written to explain clearly each fact, so the presentation slides themselves will be the study materials.
+
+[The Best Campfire Tales that Reverse Engineers Tell - Travis Goodspeed with Sergey Bratus](https://www.youtube.com/watch?v=l39OVRDvN9w)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

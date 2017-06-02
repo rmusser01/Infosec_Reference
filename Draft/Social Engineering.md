@@ -24,12 +24,14 @@ CULL
 
 [gophish documentation](https://getgophish.com/documentation/)
 
+[For The Win Tools Techniques to Maximize Effectiveness of Your Social Engineering Attacks - Joe Gray](https://www.youtube.com/watch?v=Jh9Kl4JAdEA)
+
 
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 #### end sort
 
 
-###<a name="articles">Articles
+### <a name="articles">Articles
 
 [Source Handling](http://guerrillamerica.com/2014/01/source-handling-part-one/)
 [Source Recruitment](http://guerrillamerica.com/2013/12/source-recruitment/)
@@ -43,36 +45,36 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 * The Social Engineering Framework is a searchable information resource for people wishing to learn more about the psychological, physical and historical aspects of social engineering. 
 
 
-###<a name="books">Books</a>
+### <a name="books">Books</a>
 
 Paul Ekmans research
 
-[Toastmaster's guide to body language](http://westsidetoastmasters.com/resources/book_of_body_language/toc.html)
-Miss Manners Guide to Excellent Manners
-[Influence: Science and Practice](https://en.wikipedia.org/wiki/Influence:_Science_and_Practice)
-Art of Deception
-Social Engineering: Art of Human Hacking
-Anything by Paul Eckman and his research
-What Every Body is saying
-Art of the Steal
-Craft of Intelligence
-How to Win Friends and Influence People
-Thank You For Arguing, Revised and Updated Edition: What Aristotle, Lincoln, And Homer Simpson Can Teach Us About the Art of Persuasion
-[The Amy Vanderbilt Complete Book of Etiquette](https://www.archive.org/stream/amyvanderbiltsco00vandrich/amyvanderbiltsco00vandrich_djvu.txt)
-Propaganda by Edward Bernays
-Art of War by Sun Tzu
-Language Intelligence: Lessons on persuasion from Jesus, Shakespeare, Lincoln, and Lady Gaga
-The Prince by Machiavelli
-The Definitive Book of Body Language - Barbara pease
-48 Laws of Power
-Thinking Fast and Slow
-Unmasking the Social Engineer: The Human Element of Security
-Emotions Revealed, Second Edition: Recognizing Faces and Feelings to Improve Communication and Emotional Life
-Influence Without Authority
+* [Toastmaster's guide to body language](http://westsidetoastmasters.com/resources/book_of_body_language/toc.html)
+* Miss Manners Guide to Excellent Manners
+* [Influence: Science and Practice](https://en.wikipedia.org/wiki/Influence:_Science_and_Practice)
+* Art of Deception
+* Social Engineering: Art of Human Hacking
+* Anything by Paul Eckman and his research
+* What Every Body is saying
+* Art of the Steal
+* Craft of Intelligence
+* How to Win Friends and Influence People
+* Thank You For Arguing, Revised and Updated Edition: What Aristotle, Lincoln, And Homer Simpson Can Teach Us About the Art of Persuasion
+* [The Amy Vanderbilt Complete Book of Etiquette](https://www.archive.org/stream/amyvanderbiltsco00vandrich/amyvanderbiltsco00vandrich_djvu.txt)
+* Propaganda by Edward Bernays
+* Art of War by Sun Tzu
+* Language Intelligence: Lessons on persuasion from Jesus, Shakespeare, Lincoln, and Lady Gaga
+* The Prince by Machiavelli
+* The Definitive Book of Body Language - Barbara pease
+* 48 Laws of Power
+* Thinking Fast and Slow
+* Unmasking the Social Engineer: The Human Element of Security
+* Emotions Revealed, Second Edition: Recognizing Faces and Feelings to Improve Communication and Emotional Life
+* Influence Without Authority
 
 
 
-###<a name="talks">Presentations</a>:
+### <a name="talks">Presentations</a>:
 
 [Social Engineering Like In Movies -- Reality of awareness and manipulation - Dale Pearson- #days](https://www.youtube.com/watch?v=XUIWi5p0oFI)
 
@@ -109,7 +111,7 @@ Influence Without Authority
 
 | **Pwning People Personally** - Josh Schwartz | https://www.youtube.com/watch?v=T2Ha-ZLZTz0
 
-[Area41 2016: Dominique-Cédric Brack: Professional Social Engineering](https://youtu.be/NcpmhsSVzuM)
+[Area41 2016: Dominique-CÃ©dric Brack: Professional Social Engineering](https://youtu.be/NcpmhsSVzuM)
 
 [Social Engineering: When the Phone is More Dangerous than Malware](https://www.youtube.com/watch?v=fui9AVpp1wo)
 * Is social engineering (SE) the most dangerous security threat to your business? The Social-Engineer team will analyze current trends in social engineering through the official (and unofficial) results from the DefCon 21 Social Engineering Capture the Flag event. They will reveal how these attacks work, the latest social engineering research and how to use this information to protect organizations.
@@ -140,37 +142,36 @@ Influence Without Authority
 
 [Disguise - Appearance Hacking](http://www.irongeek.com/i.php?page=videos/derbycon2/valerie-thomas-appearance-hacking-101-the-art-of-everyday-camouflage)
 * [Transcript](http://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are/transcript)
-My notes from it: 
-
-Why use makeup?
-     Blend into crowd
-     Pose as employee/vendor
-     Regain access if caught
-     Create distraction for teammates
-Whom to disguise as?
-     Technician
-     Sales Executive
-Goodwill
-     Employee
-     Interview Candidate
-Easy to see goings on
-     Pedestrian
-     Sidewalk Sleeper
-Transform into another person:
-     Can take minutes/hours
-     Examine each physical attribute
-Some modified easier than others
-     Entire appearance makes the difference. One part is off, whole cover can be blown
-If using hardhat, make sure to beat the shit out of it. Add stickers. 
-
+* My notes from it: 
+* Why use makeup?
+  *    Blend into crowd
+    *  Pose as employee/vendor
+    *  Regain access if caught
+* Create distraction for teammates
+* Whom to disguise as?
+  *    Technician
+    *  Sales Executive
+* Goodwill
+ *     Employee
+  *    Interview Candidate
+* Easy to see goings on
+ *     Pedestrian
+  *    Sidewalk Sleeper
+* Transform into another person:
+ *     Can take minutes/hours
+   *   Examine each physical attribute
+* Some modified easier than others
+  *    Entire appearance makes the difference. One part is off, whole cover can be blown
+* If using hardhat, make sure to beat the shit out of it. Add stickers. 
 
 
 
 
-###<a name="papers">Research Papers</a>
+
+### <a name="papers">Research Papers</a>
 
 [Construal-Level Theory of Psychological Distance](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/)
-* Abstract: People are capable of thinking about the future, the past, remote locations, another person’s perspective, and counterfactual alternatives. Without denying the uniqueness of each process, it is proposed that they constitute different forms of traversing psychological distance. Psychological distance is egocentric: Its reference point is the self in the here and now, and the different ways in which an object might be removed from that point—in time, in space, in social distance, and in hypotheticality—constitute different distance dimensions. Transcending the self in the here and now entails mental construal, and the farther removed an object is from direct experience, the higher (more abstract) the level of construal of that object. Supporting this analysis, research shows (a) that the various distances are cognitively related to each other, (b) that they similarly influence and are influenced by level of mental construal, and (c) that they similarly affect prediction, preference, and action.
+* Abstract: People are capable of thinking about the future, the past, remote locations, another personâ€™s perspective, and counterfactual alternatives. Without denying the uniqueness of each process, it is proposed that they constitute different forms of traversing psychological distance. Psychological distance is egocentric: Its reference point is the self in the here and now, and the different ways in which an object might be removed from that pointâ€”in time, in space, in social distance, and in hypotheticalityâ€”constitute different distance dimensions. Transcending the self in the here and now entails mental construal, and the farther removed an object is from direct experience, the higher (more abstract) the level of construal of that object. Supporting this analysis, research shows (a) that the various distances are cognitively related to each other, (b) that they similarly influence and are influenced by level of mental construal, and (c) that they similarly affect prediction, preference, and action.
 
 
 

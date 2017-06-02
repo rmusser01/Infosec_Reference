@@ -1,4 +1,4 @@
-##Password Bruting and Hashcracking
+## Password Bruting and Hashcracking
 
 Sort
 
@@ -13,19 +13,31 @@ Cull
 * [App Specific Tools](#appt)
 * [Write-ups/Guides](#writeup)
 * [Miscellaneous](#misc)
-* [Wordlists](#worldist)
+* [Wordlists](#wordlist)
 * [Wordlist Generation](#
 * [Papers](#papers)
 
 
-###Cull
+### Cull
+
 http://blog.erratasec.com/2011/06/password-cracking-mining-and-gpus.html#.VG3xspPF_tw
 
 http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
-[Dumping a Domains worth of passwords using mimikatz](http://carnal0wnage.attackresearch.com/2013/10/dumping-domains-worth-of-passwords-with.html)
+* Wordlists sorted by popularity originally created for password generation and testing
 
-[Dump Windows password hashes efficiently - Part 1](bernardodamele.blogspot.com/2011/12/dump-windows-password-hashes.html)
+### End cull
+
+
+
+
+
+
+### <a name="general">General</a>
+[Hashtag](http://www.smeegesec.com/2013/11/hashtag-password-hash-identification.html)
+* Password hash identification tool written in python
+
+[List of hash types/examples](https://docs.google.com/file/d/0B0TzWBRmg5pWWUtxRTFMbFRRZzA/edit)
 
 [Password Recovery Speeds](http://www.lockdown.co.uk/?pg=combi)
 * Password cracking time measurements
@@ -33,14 +45,10 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
 
 
-###<a name="general">General</a>
-[Hashtag](http://www.smeegesec.com/2013/11/hashtag-password-hash-identification.html)
-* Password hash identification tool written in python
-
-[List of hash types/examples](https://docs.google.com/file/d/0B0TzWBRmg5pWWUtxRTFMbFRRZzA/edit)
 
 
-###<a name="better">Making Better Passwords</a>
+
+### <a name="better">Making Better Passwords</a>
 
 
 [Mnemonic Password Formulas](http://uninformed.org/?v=all&a=33&t=sumry)
@@ -50,7 +58,7 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
 
 
-###<a name="crack">Cracking Passwords/Hashes</a>
+### <a name="crack">Cracking Passwords/Hashes</a>
 
 
 [Introduction to Cracking Hashes](http://n0where.net/introduction-break-that-hash/)
@@ -60,7 +68,7 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
 
 
-###<a name="appt">App Specific Tools(as in single application focus)</a>
+### <a name="appt">App Specific Tools(as in single application focus)</a>
 
 [crackxls2003 0.4](https://github.com/GavinSmith0123/crackxls2003)
 * This program may be used to break the encryption on Microsoft Excel and Microsoft Word file which have been encrypted using the RC4 method, which uses a 40-bit-long key. This was the default encryption method in Word and Excel 97/2000/2002/2003. This program will not work on files encrypted using Word or Excel 2007 or later, or for versions 95 or earlier. It will not work if a file was encrypted with a non-default method. Additionally, documents created with the Windows system locale set to France may use a different encryption method.
@@ -70,7 +78,8 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
 
 
-####OCL/Hashcat
+
+#### OCL/Hashcat
 
 [OCL hashcat wiki](http://hashcat.net/wiki/)
 * Its the Wiki
@@ -109,8 +118,15 @@ Hashcat attacks
 [Toggle-Case attack](http://hashcat.net/wiki/doku.php?id=toggle_case_attack)
 * For each word in a dictionary, all possible combinations of upper- and lower-case variants are generated. 
 
+[OCLHashcat Hash Examples + hash code](https://hashcat.net/wiki/doku.php?id=example_hashes)
 
-###<a name="writeup">Writeups</a>
+
+
+
+
+
+
+### <a name="writeup">Writeups</a>
 
 [How to crack password hashes efficiently](http://www.dafthack.com/blog/howtocrackpasswordhashesefficiently)
 * Excellent writeup/methodology explanation
@@ -120,12 +136,14 @@ Hashcat attacks
 
 [5min Guide to setting up a GPU cracker in the cloud on AWS + a script to automate it all](http://thehackerblog.com/amazon-ec2-gpu-hvm-spot-instance-cracking-setup-tutorial/)
 
+[Dumping a Domains worth of passwords using mimikatz](http://carnal0wnage.attackresearch.com/2013/10/dumping-domains-worth-of-passwords-with.html)
+
+[Dump Windows password hashes efficiently - Part 1](bernardodamele.blogspot.com/2011/12/dump-windows-password-hashes.html)
 
 
 
 
-
-###<a name="generalt">Tools</a>
+### <a name="generalt">Tools</a>
 
 [Patator](https://github.com/lanjelot/patator)
 * Patator was written out of frustration from using Hydra, Medusa, Ncrack, Metasploit modules and Nmap NSE scripts for password guessing attacks. I opted for a different approach in order to not create yet another brute-forcing tool and avoid repeating the same shortcomings. Patator is a multi-threaded tool written in Python, that strives to be more reliable and flexible than his fellow predecessors.
@@ -135,7 +153,9 @@ Hashcat attacks
 
 
 
-###<a name="wordlistgen">Wordlist Generation</a>
+
+
+### <a name="wordlistgen">Wordlist Generation</a>
 
 [GitDigger](https://github.com/wick2o/gitdigger)
 * gitDigger: Creating realworld wordlists from github hosted data.
@@ -151,7 +171,7 @@ Hashcat attacks
 [Creating Wordlists with Crunch](http://adaywithtape.blogspot.com/2011/05/creating-wordlists-with-crunch-v30.html)
 
 
-###<a name="wordlists">Wordlists</a>
+### <a name="wordlists">Wordlists</a>
 [Crackstation’s Password Cracking Dictionary 1.5b words](https://crackstation.net/buy-crackstation-wordlist-password-cracking-dictionary.htm)
 * HIGHLY recommended
 
@@ -166,7 +186,8 @@ Hashcat attacks
 
 
 
-###<a name="papers">Papers</a>
+
+### <a name="papers">Papers</a>
 
 [Optimizing computation of Hash Algorithms as an attacker](https://hashcat.net/events/p13/js-ocohaaaa.pdf)
 

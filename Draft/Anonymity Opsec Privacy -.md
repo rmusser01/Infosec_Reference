@@ -93,7 +93,7 @@ https://github.com/NullHypothesis/exitmap/issues/37
 
 
 
-### **<a name="Talks">Talks & Videos</a>**
+### **<a name="Talks">Talks & Videos(& Presentatios)</a>**
 
 | Title | Link
 | -------- | --------- |
@@ -114,7 +114,7 @@ https://github.com/NullHypothesis/exitmap/issues/37
 
 [ Retail Surveillance / Retail Countersurveillance 50 most unwanted retail surveillance technologies / 50 most wanted countersurveillance technologies](https://media.ccc.de/v/33c3-8238-retail_surveillance_retail_countersurveillance#video&t=1993)
 
-
+[OPSEC Concerns in Using Crypto](https://www.slideshare.net/JohnCABambenek/defcon-crypto-village-opsec-concerns-in-using-crypto)
 
 ### **<a name="Tools">Tools</a>**
 

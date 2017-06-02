@@ -8,6 +8,11 @@ TOC
 * [Interesting & Useful Write-ups](#writeup)
 
 
+## Attribution
+
+[Cyber Attack Attribution Report](http://whohackedus.com/)
+
+
 
 ### General
 
@@ -39,11 +44,15 @@ http://www.securitywizardry.com/radar.htm
 
 [The Distribution of Users’ Computer Skills: Worse Than You Think](https://www.nngroup.com/articles/computer-skill-levels/)
 
+[Infosec Podcasts](http://www.getmon.com/)
+
+[What happens when…](https://github.com/alex/what-happens-when)
+* An attempt to answer the age old interview question "What happens when you type google.com into your browser and press enter?" 
 
 
+#### Tamper Evidence
 
-
-
+[How to Steal a Nuclear Warhead Without Voiding Your XBox Warranty (paper)](https://www.scribd.com/document/47334072/How-to-Steal-a-Nuclear-Warhead-Without-Voiding-Your-XBox-Warranty-paper)
 
 
 
@@ -55,20 +64,15 @@ http://www.securitywizardry.com/radar.htm
 
 
 
-[Fools of Golden Gate](https://blog.silentsignal.eu/2017/05/08/fools-of-golden-gate/)
-* How major vulnerabilities/large amounts of publicly vulnerable systems can exist without public recognition for long periods of time. (i.e. CVEs(10.0) exist, but no mapping in nessus/metasploit/etc)
 
 https://www.youtube.com/watch?v=h92vmwg9Tyc
 
-
-https://github.com/sasq64/chipmachine
+[chipmachine](https://github.com/sasq64/chipmachine)
 
 [List of hacker sites](http://link-base.org/)
 
 | **ClearImage Free Online Barcode Reader / Decoder** | http://online-barcode-reader.inliteresearch.com/
 
-http://dronesurvivalguide.org
-	
 
 
 [Foreign LINUX](https://github.com/wishstudio/flinux)
@@ -76,13 +80,9 @@ http://dronesurvivalguide.org
 
 [Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
 
-What happens when…
-An attempt to answer the age old interview question "What happens when you type google.com into your browser and press enter?" 
-https://github.com/alex/what-happens-when
-
 http://spth.virii.lu/articles.htm
 
-https://github.com/kienankb/LuxBase
+[LuxBase](https://github.com/kienankb/LuxBase)
 
 | **Simplifying the Business Bar Coded Boarding Pass Implementation Guide** | http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf
 | **What’s contained in a boarding pass barcode?** | https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode
@@ -90,28 +90,24 @@ https://github.com/kienankb/LuxBase
 | **NSA USB Playset - ShmooCon201** | https://www.youtube.com/watch?v=eTDBFpLYcGA
 
 
-**Unicorn-Engine** - Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework. | http://www.unicorn-engine.org/
-
-[Compiler Security Checks In Depth - MSDN Library](https://msdn.microsoft.com/library/aa290051.aspx)
-
-[Counterfeit Object-oriented Programming](http://syssec.rub.de/media/emma/veroeffentlichungen/2015/03/28/COOP-Oakland15.pdf)
+[Unicorn-Engine](http://www.unicorn-engine.org/)
+* Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework.
 
 [#OLEOutlook - bypass almost every Corporate security control with a point’n’click GUI](https://doublepulsar.com/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0)
 
 
-Regex for credit cards
-http://www.regular-expressions.info/creditcard.html
-^(?:4[0-9]{12}(?:[0-9]{3})?          # Visa
- |  5[1-5][0-9]{14}                  # MasterCard
- |  3[47][0-9]{13}                   # American Express
- |  3(?:0[0-5]|[68][0-9])[0-9]{11}   # Diners Club
- |  6(?:011|5[0-9]{2})[0-9]{12}      # Discover
- |  (?:2131|1800|35\d{3})\d{11}      # JCB
-)$
+##### Regex for credit cards
+* [Link](http://www.regular-expressions.info/creditcard.html)
+* ^(?:4[0-9]{12}(?:[0-9]{3})?          # Visa
+* |  5[1-5][0-9]{14}                  # MasterCard
+* |  3[47][0-9]{13}                   # American Express
+* |  3(?:0[0-5]|[68][0-9])[0-9]{11}   # Diners Club
+* |  6(?:011|5[0-9]{2})[0-9]{12}      # Discover
+* |  (?:2131|1800|35\d{3})\d{11}      # JCB
+*)$
 
-QR Code interesting
-http://datagenetics.com/blog/november12013/index.html
 
+[QR Code interesting](http://datagenetics.com/blog/november12013/index.html)
 
 #### End Sort
 
@@ -124,6 +120,9 @@ http://datagenetics.com/blog/november12013/index.html
 
 ### General Interesting Things(that aren't necessarily infosec)
 
+[Con Video Rig Enhancements - IronGeek & SkyDog](https://www.youtube.com/watch?v=BVCFAqLxdtY)
+
+
 [Internet Timeline](https://www.zakon.org/robert/internet/timeline/)
 
 [Shakespeare in the Bush An American anthropologist set out to study the Tiv of West Africa and was taught the true meaning of Hamlet.](http://www.naturalhistorymag.com/picks-from-the-past/12476/shakespeare-in-the-bush)
@@ -133,6 +132,17 @@ http://datagenetics.com/blog/november12013/index.html
 [Underhanded C contest](http://underhanded-c.org/)
 
 [DIY Nukeproofing: A New Dig at “Data-Mining”](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-3alarmlampscooter-DIY-Nukeproofing.pdf)
+
+[How They Did It: An Analysis of Emission Defeat Devices in Modern Automobiles](https://www.ieee-security.org/TC/SP2017/papers/101.pdf)
+
+[Drone Survival Guide](http://dronesurvivalguide.org)
+
+
+
+
+
+
+
 
 
 
@@ -149,9 +159,12 @@ http://datagenetics.com/blog/november12013/index.html
 [stupid_malware](https://github.com/andrew-morris/stupid_malware)
 * Python malware for pentesters that bypasses most antivirus (signature and heuristics) and IPS using sheer stupidity
 
+[Fools of Golden Gate](https://blog.silentsignal.eu/2017/05/08/fools-of-golden-gate/)
+* How major vulnerabilities/large amounts of publicly vulnerable systems can exist without public recognition for long periods of time. (i.e. CVEs(10.0) exist, but no mapping in nessus/metasploit/etc)
 
-
-
+[Looping Surveillance Cameras through Live Editing - Van Albert and Banks - Defcon23](https://www.youtube.com/watch?v=RoOqznZUClI)
+* This project consists of the hardware and software necessary to hijack wired network communications. The hardware allows an attacker to splice into live network cabling without ever breaking the physical connection. This allows the traffic on the line to be passively tapped and examined. Once the attacker has gained enough knowledge about the data being sent, the device switches to an active tap topology, where data in both directions can be modified on the fly. Through our custom implementation of the network stack, we can accurately mimic the two devices across almost all OSI layers.
+* We have developed several applications for this technology. Most notable is the editing of live video streams to produce a “camera loop,” that is, hijacking the feed from an Ethernet surveillance camera so that the same footage repeats over and over again. More advanced video transformations can be applied if necessary. This attack can be executed and activated with practically no interruption in service, and when deactivated, is completely transparent.
 
 
 

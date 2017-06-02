@@ -16,41 +16,30 @@ Cull
 
 ###Cull
 
-[Hflow2](https://projects.honeynet.org/hflow) 
-* Data Analysis System
-
-[Tango Honeypot Intelligence](https://github.com/aplura/Tango) 
-* Honeypot Intelligence with Splunk
-
-
-[Security Onions and Honey Potz - Ethan Dodge - BSidesSLC2015](https://www.youtube.com/watch?v=1Jbm1zwiGTM)
-
 http://www.cuckoosandbox.org/
-
-https://www.shadowserver.org/wiki/pmwiki.php/Information/Honeypots
 
 http://highaltitudehacks.com/2013/06/15/ghost-usb-honeypot-part-2-installing-and-running-the-honeypot/
 
-https://en.wikipedia.org/wiki/Honeypot_%28computing%29
 
-[Static Low-interaction Honeypots](http://www.frameloss.org/2014/07/12/static-low-interaction-honeypots/)
-
-
-(Setting Honeytraps with Modsecurity - Adding fake hidden form fields](http://blog.spiderlabs.com/2014/06/setting-honeytraps-with-modsecurity-adding-fake-hidden-form-fields.html0
+#### End Cull
 
 
+### General
+[Honeypots - ShadowServer](https://www.shadowserver.org/wiki/pmwiki.php/Information/Honeypots)
 
-Types:
+[Honeypot Computing - Wikipedia](https://en.wikipedia.org/wiki/Honeypot_%28computing%29)
 
-Zero
-Low
-Medium
-High
-HoneyData - Strings, shares/drives, etc.
+##### Types:
+
+*Zero
+* Low
+* Medium
+* High
+* HoneyData - Strings, shares/drives, etc.
 
 
 
-###<a name="honey">Honeypots/nets</a>
+### <a name="honey">Honeypots/nets</a>
 [Modern Honey Network(MHN)](https://threatstream.github.io/mhn/)
 * From the secure deployment to the aggregation of thousands of events MHN provides enteprise grade management of the most current open source honeypot software. MHN is completely free open source software which supports external and internal honeypot deployments at a large and distributed scale. MHN uses the HPFeeds standard and low-interaction honeypots to keep effectiveness and security at enterprise grade levels. MHN provides full REST API out of the box and we are making CEF and STIX support available now for direct SIEM integration through our Commercial platform Optic. 
 
@@ -121,14 +110,68 @@ Beeswarm](http://www.beeswarm-ids.org/)
 [Truman](http://www.secureworks.com/cyber-threat-intelligence/tools/truman/)
 * Truman can be used to build a "sandnet", a tool for analyzing malware in an environment that is isolated, yet provides a virtual Internet for the malware to interact with. It runs on native hardware, therefore it is not stymied by malware which can detect VMWare and other VMs. The major stumbling block to not using VMs is the difficulty involved with repeatedly imaging machines for re-use. Truman automates this process, leaving the researcher with only minimal work to do in order to get an initial analysis of a piece of malware. Truman consists of a Linux boot image (originally based on Chas Tomlin's Windows Image Using Linux) and a collection of scripts. Also provided is pmodump, a Perl-based tool to reconstruct the virtual memory space of a process from a PhysicalMemory dump. With this tool it is possible to circumvent most packers to perform strings analysis on the dumped malware.
 
+[Static Low-interaction Honeypots](http://www.frameloss.org/2014/07/12/static-low-interaction-honeypots/)
 
-###Presentations
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Tools
+
+[DCEPT](https://github.com/secureworks/dcept)
+* A tool for deploying and detecting use of Active Directory honeytokens 
+
+[Hflow2](https://projects.honeynet.org/hflow) 
+* Data Analysis System
+
+[Tango Honeypot Intelligence](https://github.com/aplura/Tango) 
+* Honeypot Intelligence with Splunk
+
+
+
+
+
+
+
+
+
+
+
+
+### Presentations
 [Honeypots for Active Defense - A Practical Guide to Deploying Honeynets Within the Enterprise - Greg Foss](http://www.irongeek.com/i.php?page=videos/centralohioinfosec2015/tech201-honeypots-for-active-defense-a-practical-guide-to-deploying-honeynets-within-the-enterprise-greg-foss)
 * InfoSec analysts are all somewhat familiar with honeypots. When they are given the proper attention, care and feeding, they produce invaluable information. This intelligence has been primarily used by security researchers and organizations with advanced defensive capabilities to study their adversaries and learn from their actions. But what about the rest of us? Honeypots are a lot of work to configure, maintain, and monitor -- how can an organization that is not focused on research gain valuable intelligence using honeypots and actively defend their network using the data obtained? The answer is honeypots for active defense. There are currently many open source security tool distributions that come pre-loaded with honeypots among other useful tools, however the honeypot software is often not deployed in an effective manner. This session will discuss techniques to deploy honeypots in ways that will not overburden the security team with massive logs to sift through and focuses on correlating active threat data observed in the honeypot with the production environment. When deploying honeypots effectively, this can give security analysts one additional mechanism to tip them off to nefarious activity within their network.
 
+[Global Honeypot Trends - Elliot Brink](https://www.youtube.com/watch?v=rjd-r4WA0PU)
+* Many of my computer systems are constantly compromised, attacked, hacked, 24/7. How do I know this? I've been allowing it. This presentation will cover over one year of research running several vulnerable systems (or honeypots) in multiple countries including the USA, mainland China, Russia and others. We'll be taking a look at: a brief introduction to honeypots, common attacker trends (both sophisticated and script kiddie), brief malware analysis and the statistical analysis of attackers based on GeoIP. Are there differences in attacks based on where a computer system is located? Let's investigate this together! Beginners to the topic of honeypots fear not, the basics will be covered.
+
+[Security Onions and Honey Potz - Ethan Dodge - BSidesSLC2015](https://www.youtube.com/watch?v=1Jbm1zwiGTM)
 
 
-###<a name="writeup">Writeups</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+### <a name="writeup">Writeups</a>
 
 
 [ Deploying Dionaea on a Raspberry Pi using MHN](https://github.com/threatstream/mhn/wiki/Deploying-Dionaea-on-a-Raspberry-Pi)
@@ -148,3 +191,19 @@ Beeswarm](http://www.beeswarm-ids.org/)
 * Abstract. A Honeypot is a software based security device, deployed to attract hackers by displaying services and open ports which are potentially vulnerable. While the attackers are diverted, t heir activities can then be monitored and an a- lysed to identify current a ttack methods and trends. A low - interaction Honeypot called Dion aea was chosen for this project because it can simulate services while preventing an attacker from gaining full control. Results were collected over the six week period of the experiment. The logged information of the o b- served attacks was analysed and compared with current vulnerabilities, the loc a- tions where the attacks were originating from and the time of day at the orig i- nating site. A profile of individual attackers can then be built to ga in an insight into the current attack trends in order to improve network defences.
 
 [POSTER: Dragging Attackers to Honeypots for Effective Analysis of Cyber Threats](http://www.aims-conference.org/2014/POSTER-Dragging_Attackers_to_Honeypots_for_Effective_Analysis_of_Cyber_Threats.pdf)
+
+[Setting Honeytraps with Modsecurity - Adding fake hidden form fields](http://blog.spiderlabs.com/2014/06/setting-honeytraps-with-modsecurity-adding-fake-hidden-form-fields.html)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -18,17 +18,37 @@ TOC
 * [Other(stuff that doesn't fit elswewher)](#other)
 
 
+
+
+
 ##### To be sorted
 
-[Simple domain fronting PoC with GAE C2 server](https://www.securityartwork.es/2017/01/31/simple-domain-fronting-poc-with-gae-c2-server/)
-* In this entry we continue with domain fronting; on this occasion we will explore how to implement a simple PoC of a command and control and exfiltration server on Google App Engine (GAE), and we will see how to do the domain fronting from Windows, with a VBS or PowerShell script, to hide interactions with the C2 server.
 
-[iv-wrt](https://github.com/iv-wrt/iv-wrt)
-* An Intentionally Vulnerable Router Firmware Distribution[
 
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
+
+
+[sshuttle](https://github.com/apenwarr/sshuttle)
+* Transparent proxy server that works as a poor man's VPN. Forwards over ssh. Doesn't require admin. Works with Linux and MacOS. Supports DNS tunneling.
+
+
+[Use DHCP to detect UEFI or Legacy BIOS system and PXE boot to SCCM](http://www.itfaq.dk/2016/07/27/use-dhcp-to-detect-uefi-or-legacy-bios-system-and-pxe-boot-to-sccm/)
+
+
+
+
 ##### sort end
+
+
+###### To Do
+* Sort Scanners into sections
+* Active Directory Section?
+
+
+
+
+
 
 
 
@@ -111,6 +131,9 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [How to Bypass Anti-Virus to Run Mimikatz](http://www.blackhillsinfosec.com/?p=5555)
 
+[Attacking ADFS Endpoints with PowerShell](http://www.irongeek.com/i.php?page=videos/derbycon6/118-attacking-adfs-endpoints-with-powershell-karl-fosaaen)
+
+[Introducing PowerShell into your Arsenal with PS>Attack - Jared Haight](http://www.irongeek.com/i.php?page=videos/derbycon6/119-introducing-powershell-into-your-arsenal-with-psattack-jared-haight)
 
 
 
@@ -203,6 +226,11 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 [scanless](https://github.com/vesche/scanless)
 * Command-line utility for using websites that can perform port scans on your behalf. Useful for early stages of a penetration test or if you'd like to run a port scan on a host and have it not come from your IP address.
 
+[dvcs-ripper](https://github.com/kost/dvcs-ripper)
+* Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, ... It can rip repositories even 
+when directory browsing is turned off.
+
+
 
 
 
@@ -272,7 +300,8 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [webDisco](https://github.com/joeybelans/webDisco)
 * Web discovery tool to capture screenshots from a list of hosts & vhosts.  Requests are made via IP address and vhosts to determine differences. Additionallty checks for common administrative interfaces and web server  misconfigurations. 
 
-
+[ssh-audit](https://github.com/arthepsy/ssh-audit)
+* SSH server auditing (banner, key exchange, encryption, mac, compression, compatibility, security, etc)
 
 
 
@@ -328,12 +357,11 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 ### <a name="writeup">Writeups & Tutorials</a>
 
-[Enumerating DNSSEC NSEC and NSEC3 Records](https://www.altsci.com/concepts/page.php?s=dnssec&p=1
+[Enumerating DNSSEC NSEC and NSEC3 Records](https://www.altsci.com/concepts/page.php?s=dnssec&p=1)
 
 [DNS database espionage](http://dnscurve.org/espionage2.html)
 
 [Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
-
 * "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
 
 [Enumerating DNSSEC NSEC and NSEC3 Records](https://www.altsci.com/concepts/page.php?s=dnssec&p=1)
@@ -341,6 +369,13 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [Bitsquatting: DNS Hijacking without exploitation](http://dinaburg.org/bitsquatting.html)
 
 [Hunting Bugs in AIX : Pentesting writeup](https://rhinosecuritylabs.com/2016/11/03/unix-nostalgia-hunting-zeroday-vulnerabilities-ibm-aix/)
+
+[From Zero to ZeroDay Journey: Router Hacking (WRT54GL Linksys Case)](http://www.defensecode.com/whitepapers/From_Zero_To_ZeroDay_Network_Devices_Exploitation.txt)
+
+[Simple domain fronting PoC with GAE C2 server](https://www.securityartwork.es/2017/01/31/simple-domain-fronting-poc-with-gae-c2-server/)
+* In this entry we continue with domain fronting; on this occasion we will explore how to implement a simple PoC of a command and control and exfiltration server on Google App Engine (GAE), and we will see how to do the domain fronting from Windows, with a VBS or PowerShell script, to hide interactions with the C2 server.
+
+
 
 
 

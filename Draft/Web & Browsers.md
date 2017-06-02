@@ -5,6 +5,7 @@
 
 
 * [General](#general)
+* [Talks & Presentations](#talks)
 * [Attacking Browsers](#atkb)
 * [XSS](#xss)
 * [NO/SQL](#sql)
@@ -29,16 +30,16 @@
 * [Javascript Encoders/Decoders](#encode)
 * [General Encoding/Decoding Tools](#generalencode)
 * [Write-ups](#writeups)
-* [General Tools](#generalt}
+* [General Tools](#generalt)
 * [WebShells](#shells)
-* [Brute Force Tools](#brute}
+* [Brute Force Tools](#brute)
 * [Web Application Firewalls](#waf)
 ..* [Bypassing Web Application Firewalls](#bwaf)
 * [Attack Writeups](#writeups)
 * [Securing Web Based Applications/Servers](#secure)
 * [Non-Attack Writeups](#nonwriteup)
 * [HTML5](#html5)
-* [Miscellaneous]F(#misc)
+* [Miscellaneous](#misc)
 * [Securing Web Applications/Security Checklists](#checklists)
 * [Burp Plugins/Stuff](#burp)
 
@@ -54,14 +55,11 @@ Java Serialization papers/stuff
 
 [Abusing Google App Scripting Through Social Engineering](http://www.redblue.team/2017/02/abusing-google-app-scripting-through.html)
 
-
 [Cross Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
-	
-[Attacking Browser Extensions](https://github.com/qll/attacking-browser-extensions)
 
+	
 http://console-cowboys.blogspot.com/2011/05/web-hacking-video-series-1-automating.html 
 
-[](https://github.com/LifeForm-Labs/all_your_browsers_belong_to_us)
 
 http://www.grymoire.com/Security/Hardware.html
 
@@ -69,16 +67,9 @@ prompt.ml
 
 Clickjacking attacks
 
-https://xss-game.appspot.com/
-
-
-[XSS game http://escape.alf.nu/
-
 [Server-side browsing  considered harmful](http://www.agarri.fr/docs/AppSecEU15-Server_side_browsing_considered_harmful.pdf)
 
 [File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
-
-
 
 #### End Sort
 
@@ -95,7 +86,7 @@ https://xss-game.appspot.com/
 
 
 
-###<a name="general">General</a>
+### <a name="general">General</a>
 
 [JSFuck](http://www.jsfuck.com/)
 * JSFuck is an esoteric and educational programming style based on the atomic parts of JavaScript. It uses only six different characters to write and execute code.
@@ -107,98 +98,13 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
 
 
-
-####<a name="difatk">Different Types of Web Based Attacks</a>
-As seen on: https://www.owasp.org/index.php/Category:Attack
+### Talks &  Presentations
 
 
+[Attacking Modern SaaS Companies](https://github.com/cxxr/talks/blob/master/2017/nolacon/Attacking%20Modern%20SaaS%20Companies%20%E2%80%93%20NolaCon.pdf)
+* [Presentation](https://www.youtube.com/watch?v=J0otoKRh1Vk&app=desktop)
 
-
-#####<a name="Abuse of Functionality[#
-[jsgifkeylogger](https://github.com/wopot/jsgifkeylogger)
-* a javascript keylogger included in a gif file This is a PoC
-
-
-
-
-
-#####<a name="Data Structure Attacks](#
-
-
-
-#####<a name="emc">Embedded Malicious Code</a>
-
-
-
-#####<a name="eoa">Exploitation of Authentication</a>
-
-
-
-
-##### <a name="ija">Injection Based Attacks</a>
-
-
-
-##### <a name="jsa">Java Serialization Attacks</a>
-
-[Break Fast Serial](https://github.com/GoSecure/break-fast-serial)
-* A proof of concept that demonstrates asynchronous scanning for Java deserialization bugs
-
-[SerialKiller: Bypass Gadget Collection](https://github.com/pwntester/SerialKillerBypassGadgetCollection)
-* Collection of Bypass Gadgets that can be used in JVM Deserialization Gadget chains to bypass "Look-Ahead ObjectInputStreams" desfensive deserialization.
-
-[ysoserial](https://github.com/frohoff/ysoserial)
-
-
-[The perils of Java deserialization](https://community.hpe.com/t5/Security-Research/The-perils-of-Java-deserialization/ba-p/6838995)
-
-[Java-Deserialization-Cheat-Sheet](https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet)
-* A cheat sheet for pentesters about Java Native Binary Deserialization vulnerabilities
-
-[Exploiting ShellShock getting a reverse shell](http://www.fantaghost.com/exploiting-shellshock-getting-reverse-shell)
-
-[commix](https://github.com/stasinopoulos/commix)
-* Automated All-in-One OS Command Injection and Exploitation Tool
-
-
-
-##### <a name="pta">Path Traversal Attacks</a>
-[Exploiting PHP File Inclusion – Overview](https://websec.wordpress.com/2010/02/22/exploiting-php-file-inclusion-overview/)
-
-#####<a name="Probabilistic Attacks
-#####<a name="Protocol Manipulation
-#####<a name="Resource Depletion](#
-####<a name="Resource Manipulation 
-#####<a name="Sniffing Based](#
-#####<a name="Spoofing Based](#
-
-
-
-
-
-
-### <a name="javascript">JavaScript</a>
-[JSDetox](http://relentless-coding.org/projects/jsdetox/info)
-* JSDetox is a tool to support the manual analysis of malicious Javascript code. 
-
-[Dom Flow - Untangling The DOM For More Easy-Juicy Bugs  - BH USA 2015](https://www.youtube.com/watch?v=kedmtrIEW1k&list=PLH15HpR5qRsXF78lrpWP2JKpPJs_AFnD7&index=111)
-
-
-
-
-
-
-
-
-
-#### <a name="encode">De/Encoders</a>
-
-[Unphp.net php decoder](http://www.unphp.net/decode/)
-
-[Various forms of encoding/decoding web app](http://yehg.net/encoding/)
-
-[Javascript De-Obfuscation Tools Redux](http://www.kahusecurity.com/2014/javascript-deobfuscation-tools-redux/)
-* Back in 2011, I took a look at several tools used to deobfuscate Javascript. This time around I will use several popular automated and semi-automated/manual tools to see how they would fare against today’s obfuscated scripts with the least amount of intervention.	
+[The AppSec Starter Kit Timothy De Block](https://www.youtube.com/watch?v=KMz8lWNAUmg)
 
 
 
@@ -210,12 +116,6 @@ As seen on: https://www.owasp.org/index.php/Category:Attack
 [Intro to content Security Policy](www.html5rocks.com/en/tutorials/security/content-security-policy/)
 
 [Client Identification Mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms)
-
-
-
-
-
-
 
 
 
@@ -251,11 +151,156 @@ As seen on: https://www.owasp.org/index.php/Category:Attack
 [gethead](https://github.com/httphacker/gethead)
 * HTTP Header Analysis Vulnerability Tool 
 
+[SSleuth](https://github.com/sibiantony/ssleuth)
+* A firefox add-on to rate the quality of HTTPS connections
+
+[dvcs-ripper](https://github.com/kost/dvcs-ripper)
+* Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, ... It can rip repositories even when directory browsing is turned off.
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+#### <a name="difatk">Different Types of Web Based Attacks</a>
+As seen on: https://www.owasp.org/index.php/Category:Attack
+
+
+
+
+#####<a name="Abuse of Functionality[#
+[jsgifkeylogger](https://github.com/wopot/jsgifkeylogger)
+* a javascript keylogger included in a gif file This is a PoC
+
+
+
+
+
+##### <a name="Data Structure Attacks](#
+
+[EXPLOITING XXE IN FILE UPLOAD FUNCTIONALITY](https://www.blackhat.com/docs/us-15/materials/us-15-Vandevanter-Exploiting-XXE-Vulnerabilities-In-File-Parsing-Functionality.pdf)
+
+
+
+
+##### <a name="emc">Embedded Malicious Code</a>
+
+
+
+##### <a name="eoa">Exploitation of Authentication</a>
+
+
+
+
+##### <a name="ija">Injection Based Attacks</a>
+
+[Exploiting ShellShock getting a reverse shell](http://www.fantaghost.com/exploiting-shellshock-getting-reverse-shell)
+
+[commix](https://github.com/stasinopoulos/commix)
+* Automated All-in-One OS Command Injection and Exploitation Tool
+
+JNDI Attack Class
+[A Journey from JNDI-LDAP Manipulation to RCE](https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf)
+
+[SHELLING](https://github.com/ewilded/shelling)
+* A comprehensive OS command injection payload generator
+
+[Exploiting Python Code Injection in Web Applications](https://sethsec.blogspot.com/2016/11/exploiting-python-code-injection-in-web.html)
+
+
+
+
+
+
+
+
+
+##### <a name="jsa">Java/Serialization Attacks</a>
+
+[Java-Deserialization-Cheat-Sheet](https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet)
+
+[Break Fast Serial](https://github.com/GoSecure/break-fast-serial)
+* A proof of concept that demonstrates asynchronous scanning for Java deserialization bugs
+
+[SerialKiller: Bypass Gadget Collection](https://github.com/pwntester/SerialKillerBypassGadgetCollection)
+* Collection of Bypass Gadgets that can be used in JVM Deserialization Gadget chains to bypass "Look-Ahead ObjectInputStreams" desfensive deserialization.
+
+[ysoserial](https://github.com/frohoff/ysoserial)
+
+
+[The perils of Java deserialization](https://community.hpe.com/t5/Security-Research/The-perils-of-Java-deserialization/ba-p/6838995)
+
+[Java-Deserialization-Cheat-Sheet](https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet)
+* A cheat sheet for pentesters about Java Native Binary Deserialization vulnerabilities
+
+[Java Unmarshaller Security - Turning your data into code execution](https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true)
+* This paper presents an analysis, including exploitation details, of various Java open-source marshalling libraries that allow(ed) for unmarshalling of arbitrary, attacker supplied, types and shows that no matter how this process is performed and what implicit constraints are in place it is prone to similar exploitation techniques.
+* tool from the above paper: [marshalsec](https://github.com/mbechler/marshalsec/)
+
+[Reliable discovery and Exploitation of Java Deserialization vulns](https://techblog.mediaservice.net/2017/05/reliable-discovery-and-exploitation-of-java-deserialization-vulnerabilities/)
+
+[Pwning Your Java Messaging With De- serialization Vulnerabilities](https://www.blackhat.com/docs/us-16/materials/us-16-Kaiser-Pwning-Your-Java-Messaging-With-Deserialization-Vulnerabilities-wp.pdf)
+
+[Java Deserialization Security FAQ](https://christian-schneider.net/JavaDeserializationSecurityFAQ.html)
+
+[The Perils of Java Deserialization](http://community.hpe.com/hpeb/attachments/hpeb/off-by-on-software-security-blog/722/1/HPE-SR%20whitepaper%20java%20deserialization%20RSA2016.pdf)
+
+[Detecting deserialization bugs with DNS exfiltration](http://gosecure.net/2017/03/22/detecting-deserialization-bugs-with-dns-exfiltration/)
+
+[JMET](https://github.com/matthiaskaiser/jmet)
+* JMET was released at Blackhat USA 2016 and is an outcome of Code White's research effort presented in the talk "Pwning Your Java Messaging With Deserialization Vulnerabilities". The goal of JMET is to make the exploitation of the Java Message Service (JMS) easy. In the talk more than 12 JMS client implementations where shown, vulnerable to deserialization attacks. The specific deserialization vulnerabilities were found in ObjectMessage implementations (classes implementing javax.jms.ObjectMessage).
+
+[Serianalyzer](https://github.com/mbechler/serianalyzer)
+* A static byte code analyzer for Java deserialization gadget research
+
+
+
+
+
+
+
+
+
+##### <a name="pta">Path Traversal Attacks</a>
+[Exploiting PHP File Inclusion – Overview](https://websec.wordpress.com/2010/02/22/exploiting-php-file-inclusion-overview/)
+
+
+
+
+
+
+### <a name="javascript">JavaScript</a>
+[JSDetox](http://relentless-coding.org/projects/jsdetox/info)
+* JSDetox is a tool to support the manual analysis of malicious Javascript code. 
+
+[Dom Flow - Untangling The DOM For More Easy-Juicy Bugs  - BH USA 2015](https://www.youtube.com/watch?v=kedmtrIEW1k&list=PLH15HpR5qRsXF78lrpWP2JKpPJs_AFnD7&index=111)
+
+
+
+
+
+
+
+
+
+#### <a name="encode">De/Encoders</a>
+
+[Unphp.net php decoder](http://www.unphp.net/decode/)
+
+[Various forms of encoding/decoding web app](http://yehg.net/encoding/)
+
+[Javascript De-Obfuscation Tools Redux](http://www.kahusecurity.com/2014/javascript-deobfuscation-tools-redux/)
+* Back in 2011, I took a look at several tools used to deobfuscate Javascript. This time around I will use several popular automated and semi-automated/manual tools to see how they would fare against today’s obfuscated scripts with the least amount of intervention.	
 
 
 
@@ -509,9 +554,9 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [Firing-Range](https://github.com/google/firing-range)
 * Firing Range is a test bed for web application security scanners, providing synthetic, wide coverage for an array of vulnerabilities.
 
+[XSS-Game.appspot](https://xss-game.appspot.com/)
 
-
-
+[XSS game - escape.alf.nu](http://escape.alf.nu/)
 
 
 
@@ -539,28 +584,15 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [Oracle SQL Injection Guides & Whitepapers](https://haiderm.com/oracle-sql-injection-guides-and-whitepapers/)
 
+[Nosql-Exploitation-Framework](https://github.com/torque59/Nosql-Exploitation-Framework)
+* A FrameWork For NoSQL Scanning and Exploitation Framework
 
-SQLi Lab lessons
-From: https://github.com/Audi-1/sqli-labs
-SQLI-LABS is a platform to learn SQLI Following labs are covered for GET and POST scenarios: 
-Error Based Injections (Union Select) 
-String
-Integer
-Error Based Injections (Double Injection Based)
-BLIND Injections: 1.Boolian Based 2.Time Based
-Update Query Injection.
-Insert Query Injections.
-Header Injections. 1.Referer based. 2.UserAgent based. 3.Cookie based.
-Second Order Injections
-Bypassing WAF 
-Bypassing Blacklist filters Stripping comments Stripping OR & AND Stripping SPACES and COMMENTS Stripping UNION & SELECT
-Impidence mismatch
-Bypass addslashes()
-Bypassing mysql_real_escape_string. (under special conditions)
-Stacked SQL injections.
-Secondary channel extraction
+[jSQL Injection](https://github.com/ron190/jsql-injection)
+* jSQL Injection is a Java application for automatic SQL database injection.
 
 
+[SQLi Lab lessons](https://github.com/Audi-1/sqli-labs)
+* SQLI-LABS is a platform to learn SQLI
 
 
 
@@ -585,6 +617,7 @@ Secondary channel extraction
 [Smashing The Browser: From Vulnerability Discovery To Exploit](https://github.com/demi6od/Smashing_The_Browser)
 * Goes from introducing a fuzzer to producing an IE11 0day
 
+[Attacking Browser Extensions](https://github.com/qll/attacking-browser-extensions)
 
 
 
@@ -638,6 +671,31 @@ Secondary channel extraction
 
 [Scriptless Attacks – Stealing the Pie Without Touching the Sill](http://www.syssec.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf)
 * Due to their high practical impact, Cross-Site Scripting (X SS) attacks have attracted a lot of attention from the security community members. In the same way, a plethora of more or less effective defense techniques have been proposed, ad- dressing the causes and effects of XSS vulnerabilities. As a result, an adversary often can no longer inject or even execute arbitrary scripting code in several real-life scen arios. In this paper, we examine the attack surface that remains after XSS and similar scripting attacks are supposedly mit- igated by preventing an attacker from executing JavaScript code. We address the question of whether an attacker really needs JavaScript or similar functionality to perform attac ks aiming for information theft. The surprising result is that an attacker can also abuse Cascading Style Sheets (CSS) in combination with other Web techniques like plain HTML, inactive SVG images or font files. Through several case studies, we introduce the so called scriptless attacks and demonstrate that an adversary might not need to execute code to preserve his ability to extract sensitive informati on from well protected websites. More precisely, we show that an attacker can use seemingly benign features to build side channel attacks that measure and exfiltrate almost arbitrar y data displayed on a given website. We conclude this paper with a discussion of potential mit- igation techniques against this class of attacks. In additi on, we have implemented a browser patch that enables a website to make a vital determination as to being loaded in a de- tached view or pop-up window. This approach proves useful for prevention of certain types of attacks we here discuss.
+
+[A Placement Vulnerability Study in Multi-Tenant Public Clouds](https://www.usenix.org/node/191017)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### <a name="misc">Miscellaneous</a>

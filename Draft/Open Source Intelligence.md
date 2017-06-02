@@ -4,7 +4,7 @@
 ### TOC
 * Cull
 * Articles/Writeups
-* Videos
+* Presentations & Talks
 * Tools
 * Reference Sites
 * Miscellaneous
@@ -13,19 +13,17 @@
 
 #### Cull 
 
-https://github.com/DisK0nn3cT/linkedin-gatherer 
+[LinkedIn Gatherer](https://github.com/DisK0nn3cT/linkedin-gatherer )
 
-| **Sqoop** - OSINT search engine of public documents(handy) | http://sqoop.com/
 
-| **Pwning People Personally** - Josh Schwartz | https://www.youtube.com/watch?v=T2Ha-ZLZTz0
 
-http://www.getmantra.com/hackery/osint.html
+[OSINT Mantra](http://www.getmantra.com/hackery/osint.html)
+
 http://computercrimeinfo.com/cleaningid.html
 
+[OSINT - onstrat](http://www.onstrat.com/osint/)
 
-http://www.onstrat.com/osint/
-
-https://sites.google.com/site/greynetwork2/home/osint-resources
+[OSINT Resources - greynetwork2](https://sites.google.com/site/greynetwork2/home/osint-resources)
 
 
 http://toddington.com/resources/
@@ -33,11 +31,47 @@ http://toddington.com/resources/
 www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 
-http://en.wikipedia.org/wiki/Open-source_intelligence
 
-http://www.pentest-standard.org/index.php/Intelligence_Gathering
+
+
+
 
 #### End cull
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### General
+
+[Open Source Intelligence](http://en.wikipedia.org/wiki/Open-source_intelligence)
+
+[Intelligence Gathering - PTES](http://www.pentest-standard.org/index.php/Intelligence_Gathering)
+
+[Awesome-OSINT](https://github.com/jivoi/awesome-osint)
+
+[OSINT Framework](http://osintframework.com/)
+
+[Email Reconnaissance and Phishing Template Generation Made Simple](https://cybersyndicates.com/2016/05/email-reconnaissance-phishing-template-generation-made-simple/)
+
+
+
+
+
+
+
+
+
 
 
 
@@ -71,7 +105,9 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 
-### Videos
+### Presentations & Talks
+
+[Pwning People Personally - Josh Schwartz](https://www.youtube.com/watch?v=T2Ha-ZLZTz0)
 
 [Cognitive Bias and Critical Thinking in Open Source Intelligence - Defcamp 2014](https://www.youtube.com/watch?v=pVAM21UERLU&index=24&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
 
@@ -159,17 +195,31 @@ Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&use
 [InSpy](https://github.com/gojhonny/InSpy)
 * A LinkedIn enumeration tool
 
+[dnstwist](https://github.com/elceef/dnstwist)
+* Domain name permutation engine for detecting typo squatting, phishing and corporate espionage
+
+[Gitem](https://github.com/mschwager/gitem)
+* Gitem is a tool for performing Github organizational reconnaissance.
+
+[DataSploit](https://github.com/DataSploit/datasploit)
+A tool to perform various OSINT techniques, aggregate all the raw data, and give data in multiple formats.
+
+
+
+
+
 
 
 
 
 ### Reference Sites
 
-These are sites that contain information and links to various resources such as search engines or info repositories related to OSINT.
+* These are sites that contain information and links to various resources such as search engines or info repositories related to OSINT.
 
-[PDF Creative Commons OSINT toolbag guide](http://www.phibetaiota.net/wp-content/uploads/2013/07/2013-07-11-OSINT-2ool-Kit-On-The-Go-Bag-O-Tradecraft.pdf
-)
-	
+[PDF Creative Commons OSINT toolbag guide](http://www.phibetaiota.net/wp-content/uploads/2013/07/2013-07-11-OSINT-2ool-Kit-On-The-Go-Bag-O-Tradecraft.pdf)
+
+[Sqoop](http://sqoop.com/)
+* OSINT search engine of public documents(handy)
 	
 
 
@@ -183,9 +233,9 @@ https://sites.google.com/site/greynetwork2/home/osint-resources
 
 http://www.onstrat.com/osint/
 
-http://www.inteltechniques.com/links.html
+[Intel Techniques - Links](http://www.inteltechniques.com/links.html)
 
-www.osintinsight.com/shared.php?user=Mediaquest&folderid=0
+[OSINTInsight](www.osintinsight.com/shared.php?user=Mediaquest&folderid=0)
 
 http://toddington.com/resources/
 

@@ -4,11 +4,20 @@ Information Security Reference That Doesn't Suck
 
 #### Goal:
 
-* Make it informal, list of techniques by grouping, references, better version of RTFM
+* List of techinques, tools and tactics to learn from.
+* Act similar to "Yellow Pages" book in the sense of you know something exists, but what was it called....
 * End goal is for it to be a rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches within infosec, or as a reference/recall method for other things.
-* Something similar to the [MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page)
+* Something similar to the [MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page) (eventually)
+* Always accepting more links/stuff. Feel free to contribue or suggest something not covered.
+
+#### Why Do I Care?
+* Because you're a real human being
+* Don't have to constantly google for tools/reminder. 
+* Easily browsable list of tools, techniques, papers, and research in all sorts of areas.
+
 
 ##### This page
+* For latest content updates, check here: [LINK - Things added since last update](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/things-added.md)
 * This page has links to *some* of the content on here. This is still very much a  WIP. More content is within the Draft folder. If you want to contribute, feel free.
 
 

@@ -32,7 +32,11 @@ To be sorted
 ### To be sorted
 
 
+[Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
+* Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
 
+[bingrep](https://github.com/m4b/bingrep)
+* Greps through binaries from various OSs and architectures, and colors them. 
 
 http://stunnix.com/prod/cxxo/
 

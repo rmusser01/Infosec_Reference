@@ -35,7 +35,8 @@
 [iOS Application Security Review Methodology](http://research.aurainfosec.io/ios-application-security-review-methodology/#snapshot)
 * aurainfosec
 
-
+[Secure iOS application development](https://github.com/felixgr/secure-ios-app-dev)
+* This guide is a collection of the most common vulnerabilities found in iOS applications. The focus is on vulnerabilities in the applications’ code and only marginally covers general iOS system security, Darwin security, C/ObjC/C++ memory safety, or high-level application security. Nevertheless, hopefully the guide can serve as training material to iOS app developers that want to make sure that they ship a more secure app. Also, iOS security reviewers can use it as a reference during assessments.
 
 
 
@@ -97,7 +98,8 @@
 | **idb - iOS Blackbox Pentesting - Daniel A Meyer** | http://matasano.com/research/Introducing_idb_-_Simplified_Blackbox_iOS_App_Pentesting.pdf
 | **idb github page** | https://github.com/dmayer/idb
 
-
+[needle](https://github.com/mwrlabs/needle)
+* Needle is an open source, modular framework to streamline the process of conducting security assessments of iOS apps.
 
 
 
@@ -108,7 +110,7 @@
 | Title     | Link |
 | -------- | ------------------------ |
 
-
+[Write-up for alloc8: untethered bootrom exploit for iPhone 3GS](https://github.com/axi0mX/alloc8)
 
 
 
@@ -145,6 +147,8 @@
 | The iPhone Wiki** - The iPhone Wiki is an unofficial wiki dedicated to collecting, storing and providing information on the internals of Apple's amazing iDevices. We hope to pass this information on to the next generation of hackers so that they can go forth into their forebears' footsteps and break the ridiculous bonds Apple has put on their amazing mobile devices. | http://theiphonewiki.com/wiki/Main_Page 
 | **OWASP Jailbreaking Cheat Sheet** | https://www.owasp.org/index.php/Mobile_Jailbreaking_Cheat_Sheet
 
+[ipwndfu](https://github.com/axi0mX/ipwndfu)
+* open-source jailbreaking tool for older iOS devices
 
 
 

@@ -38,6 +38,9 @@ https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/
 https://hshrzd.wordpress.com/2016/03/19/introduction-to-ads-alternate-data-streams/ 
 
 
+[x86 Disassembly/Windows Executable Files - WikiBooks](https://en.wikibooks.org/wiki/X86_Disassembly/Windows_Executable_Files)
+
+
 https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-and-10/ 
 
 [Stack Smashing Protector](http://wiki.osdev.org/Stack_Smashing_Protector)
@@ -225,8 +228,13 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
+### Active Directory
+
+[Active Directory Architecture](https://technet.microsoft.com/en-us/library/bb727030.aspx)
 
 
+[Active Directory Control Paths](https://github.com/ANSSI-FR/AD-control-paths)
+*  Active Directory Control Paths auditing and graphing tools 
 
 
 #### <a name="kerberos">Kerberos Related</a>

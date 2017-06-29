@@ -17,18 +17,21 @@ CULL
 
 #### sort
 
- | **I Will Kill You** - Chris Rock(Defcon23)| https://www.youtube.com/watch?v=9FdHq3WfJgs
-
-[king-phisher](https://github.com/securestate/king-phisher)
-*  Phishing Campaign Toolkit
-
-[gophish documentation](https://getgophish.com/documentation/)
-
-[For The Win Tools Techniques to Maximize Effectiveness of Your Social Engineering Attacks - Joe Gray](https://www.youtube.com/watch?v=Jh9Kl4JAdEA)
+ | **I Will Kill You** - Chris Rock(Defcon23)| https://www.youtube.com/watch?v=9FdHq3WfJg
 
 
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 #### end sort
+
+
+
+
+
+
+
+
+
+
 
 
 ### <a name="articles">Articles
@@ -43,6 +46,8 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 
 [The Social Engineering Framework](http://www.social-engineer.org/framework/general-discussion/)
 * The Social Engineering Framework is a searchable information resource for people wishing to learn more about the psychological, physical and historical aspects of social engineering. 
+
+[Phishing Family Tree Now: A Social Engineering Odyssey](https://www.blackhillsinfosec.com/?p=5629)
 
 
 ### <a name="books">Books</a>
@@ -92,6 +97,7 @@ Paul Ekmans research
 [Steal Everything, Kill Everyone, Cause Total Financial Ruin!](https://www.youtube.com/watch?v=JsVtHqICeKE)
 * This is not a presentation where I talk about how I would get in or the things I might be able to do. This is a talk where I am already in and I show you pictures from actual engagements that I have been on. They say one picture is worth a thousand words I show you how one picture cost a company a million dollars and maybe even a few lives. In a community where we focus so much on the offensive I also make sure with every attack I highlight. I spend time discussing what would have stopped me. We need to know the problems but we need more talks providing solutions and that is what I hope people will get from this. I show the dangers of Social engineering and how even an employee with no SE experience can be an eBay James Bond which can cause total financial ruin to a company. These Security threats are real. So are these stories! 
 
+[For The Win Tools Techniques to Maximize Effectiveness of Your Social Engineering Attacks - Joe Gray](https://www.youtube.com/watch?v=Jh9Kl4JAdEA)
 
 [PG01 Dropping hell0days Business Interaction for Security Professionals Or Anyone Else Elliot Johnso ](https://www.youtube.com/watch?v=COyN3NwY1v0)
 
@@ -137,6 +143,12 @@ Paul Ekmans research
 
 [Pwning People Personally](http://www.irongeek.com/i.php?page=videos/derbycon5/break-me08-pwning-people-personally-josh-schwartz)
 
+[Security Guards LOL Brent White Tim Roberts - Nolacon2017](https://www.youtube.com/watch?v=yIQ-7ZSwrYw)
+
+
+
+
+
 
 
 
@@ -175,3 +187,12 @@ Paul Ekmans research
 
 
 
+### Tools
+
+[CatMyFish](https://github.com/Mr-Un1k0d3r/CatMyFish)
+* Search for categorized domain that can be used during red teaming engagement. Perfect to setup whitelisted domain for your Cobalt Strike beacon C&C.  It relies on expireddomains.net to obtain a list of expired domains. The domain availability is validated using checkdomain.com
+
+[king-phisher](https://github.com/securestate/king-phisher)
+*  Phishing Campaign Toolkit
+
+[gophish documentation](https://getgophish.com/documentation/)

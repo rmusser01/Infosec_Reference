@@ -8,6 +8,38 @@ TOC
 * [Interesting & Useful Write-ups](#writeup)
 
 
+
+
+
+
+
+
+
+
+
+
+
+#### To Sort
+
+
+
+
+https://www.youtube.com/watch?v=h92vmwg9Tyc
+
+| **ClearImage Free Online Barcode Reader / Decoder** | http://online-barcode-reader.inliteresearch.com/
+
+http://spth.virii.lu/articles.htm
+
+[LuxBase](https://github.com/kienankb/LuxBase)
+
+| **Simplifying the Business Bar Coded Boarding Pass Implementation Guide** | http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf
+| **What’s contained in a boarding pass barcode?** | https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode
+| **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
+| **NSA USB Playset - ShmooCon201** | https://www.youtube.com/watch?v=eTDBFpLYcGA
+
+
+
+
 ## Attribution
 
 [Cyber Attack Attribution Report](http://whohackedus.com/)
@@ -24,6 +56,7 @@ TOC
 [Coming War on General Computation](https://www.youtube.com/watch?v=HUEvRyemKSg)
 
 [Timeline/List of low-level attacks/persistence techniques.  HIGHLY RECOMMENDED!](http://timeglider.com/timeline/5ca2daa6078caaf4)
+
 
 [Timeline of Software/Timing Attestation papers](http://timeglider.com/timeline/be11d685a7c4374d)
 
@@ -49,6 +82,17 @@ http://www.securitywizardry.com/radar.htm
 [What happens when…](https://github.com/alex/what-happens-when)
 * An attempt to answer the age old interview question "What happens when you type google.com into your browser and press enter?" 
 
+[Encyclopedia of things considered harmful](http://harmful.cat-v.org/)
+
+
+[Manuals Library](https://www.manualslib.com/)
+
+[THE BASIC LAWS OF HUMAN STUPIDITY - Carlo M. Cipolia](http://harmful.cat-v.org/people/basic-laws-of-human-stupidity/)
+
+[The S stands for Simple](http://harmful.cat-v.org/software/xml/soap/simple)
+* Satire(Only it's not) of a conversation about SOAP
+
+
 
 #### Tamper Evidence
 
@@ -59,41 +103,6 @@ http://www.securitywizardry.com/radar.htm
 
 
 
-
-#### To Sort
-
-
-
-
-https://www.youtube.com/watch?v=h92vmwg9Tyc
-
-[chipmachine](https://github.com/sasq64/chipmachine)
-
-[List of hacker sites](http://link-base.org/)
-
-| **ClearImage Free Online Barcode Reader / Decoder** | http://online-barcode-reader.inliteresearch.com/
-
-
-
-[Foreign LINUX](https://github.com/wishstudio/flinux)
-*Foreign LINUX is a dynamic binary translator and a Linux system call interface emulator for the Windows platform. It is capable of running unmodified Linux binaries on Windows without any drivers or modifications to the system. This provides another way of running Linux applications under Windows in constrast to Cygwin and other tools. It now runs a large bunch of console applications and some GUI applications.
-
-[Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
-
-http://spth.virii.lu/articles.htm
-
-[LuxBase](https://github.com/kienankb/LuxBase)
-
-| **Simplifying the Business Bar Coded Boarding Pass Implementation Guide** | http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf
-| **What’s contained in a boarding pass barcode?** | https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode
-| **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
-| **NSA USB Playset - ShmooCon201** | https://www.youtube.com/watch?v=eTDBFpLYcGA
-
-
-[Unicorn-Engine](http://www.unicorn-engine.org/)
-* Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework.
-
-[#OLEOutlook - bypass almost every Corporate security control with a point’n’click GUI](https://doublepulsar.com/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0)
 
 
 ##### Regex for credit cards
@@ -166,7 +175,7 @@ http://spth.virii.lu/articles.htm
 * This project consists of the hardware and software necessary to hijack wired network communications. The hardware allows an attacker to splice into live network cabling without ever breaking the physical connection. This allows the traffic on the line to be passively tapped and examined. Once the attacker has gained enough knowledge about the data being sent, the device switches to an active tap topology, where data in both directions can be modified on the fly. Through our custom implementation of the network stack, we can accurately mimic the two devices across almost all OSI layers.
 * We have developed several applications for this technology. Most notable is the editing of live video streams to produce a “camera loop,” that is, hijacking the feed from an Ethernet surveillance camera so that the same footage repeats over and over again. More advanced video transformations can be applied if necessary. This attack can be executed and activated with practically no interruption in service, and when deactivated, is completely transparent.
 
-
+[#OLEOutlook - bypass almost every Corporate security control with a point’n’click GUI](https://doublepulsar.com/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0)
 
 
 
@@ -313,6 +322,9 @@ http://spth.virii.lu/articles.htm
 [algo](https://github.com/trailofbits/algo)
 * 1-click IPSEC VPN in the Cloud 
 
+[Unicorn-Engine](http://www.unicorn-engine.org/)
+* Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework.
+
 
 
 
@@ -335,7 +347,13 @@ http://spth.virii.lu/articles.htm
 
 
 
+### Interesting Programming
 
+[Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
+
+Underhanded Crypto
+
+Underhanded C
 
 
 
@@ -445,6 +463,9 @@ http://spth.virii.lu/articles.htm
 
 http://www.mmoviper.com/
 
+[chipmachine](https://github.com/sasq64/chipmachine)
 
 [moflow](https://github.com/vrtadmin/moflow)
 * Release Branches for MoFlow
+
+[List of hacker sites](http://link-base.org/)

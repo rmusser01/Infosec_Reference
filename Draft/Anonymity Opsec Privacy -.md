@@ -14,16 +14,12 @@
 
 | OS X Security and Privacy Guide | https://github.com/drduh/OS-X-Security-and-Privacy-Guide |
 
+[Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
+* Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
 
 ### Cull
 | Title | Link
 | -------- | --------- |
-
-
-
-
-
-
 https://github.com/NullHypothesis/exitmap/issues/37
 
 
@@ -53,6 +49,14 @@ https://github.com/NullHypothesis/exitmap/issues/37
 | Cat Videos and the Death of Clear Text | https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/
 
 [How to Spot a Spook](https://cryptome.org/dirty-work/spot-spook.htm)
+
+[China travel laptop setup](https://mricon.com/i/travel-laptop-setup.html?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&iid=88d246896d384d5292f51df954a2c8ba&uid=150127534&nid=244+272699400)
+
+[Operational Security and the Real World - The Grugq](https://medium.com/@thegrugq/operational-security-and-the-real-world-3c07e7eeb2e8)
+
+[Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
+
+
 
 
 
@@ -129,3 +133,18 @@ https://github.com/NullHypothesis/exitmap/issues/37
 * Exitmap is a fast and modular Python-based scanner for Tor exit relays. Exitmap modules implement tasks that are run over (a subset of) all exit relays. If you have a background in functional programming, think of exitmap as a map() interface for Tor exit relays. Modules can perform any TCP-based networking task; fetching a web page, uploading a file, connecting to an SSH server, or joining an IRC channel.
 
 [OnionCat - an Anonymous VPN adapter](https://www.onioncat.org/about-onioncat/)
+
+[howmanypeoplearearound](https://github.com/schollz/howmanypeoplearearound)
+*  Count the number of people around you 👨‍👨‍👦 by monitoring wifi signals 📡
+
+
+
+
+
+
+
+
+
+
+
+

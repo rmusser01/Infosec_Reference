@@ -69,8 +69,6 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
-
 ### <a name="generalhw">General Hardware Hacking</a>
 
 [Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
@@ -94,6 +92,14 @@ http://greatscottgadgets.com/infiltrate2013/
 
 [Hardware Hacking the Easyware Way](http://www.irongeek.com/i.php?page=videos/derbycon6/417-hardware-hacking-the-easyware-way-brian-fehrman)
 * Interested in hardware hacking but not quite sure where to start? Does the thought of soldering thrill you (or scare you)? Come check out this talk to see just how easy it is to jump into this exciting field of research! Many people and companies use similar models of hardware. Unlike software, these devices rarely receive security updates. Sometimes, used devices are sold without clearing the configurations and important data is left behind. After this talk, you will know how to find hidden interfaces on these devices, start searching for vulnerabilities and sensitive information, and have irresistible urges to go home and tear apart all your old networking equipment. Did we mention...live demo?
+
+
+[ThunderGate](http://thundergate.io/)
+* ThunderGate is a collection of tools for the manipulation of Tigon3 Gigabit Ethernet controllers, with special emphasis on the Broadcom NetLink 57762, such as is found in Apple Thunderbolt Gigabit Ethernet adapters.
+
+
+
+
 
 
 
@@ -168,7 +174,11 @@ http://greatscottgadgets.com/infiltrate2013/
 
 [Modbus Protocol Overview](https://www.lammertbies.nl/comm/info/modbus.html)
 
+[ISO/IEC 7816](https://en.wikipedia.org/wiki/ISO/IEC_7816)
 
+[ISO/IEC 15693](https://en.wikipedia.org/wiki/ISO/IEC_15693)
+
+[ISO/IEC 14443](https://en.wikipedia.org/wiki/ISO/IEC_14443)
 
 
 

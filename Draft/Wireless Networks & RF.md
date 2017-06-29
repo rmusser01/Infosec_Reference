@@ -33,6 +33,8 @@ Aircrack https://www.aircrack-ng.org/doku.php?id=links
 Ubertooth
 Scapy
 
+[gr-lora](https://github.com/BastilleResearch/gr-lora)
+* This is an open-source implementation of the LoRa CSS PHY, based on the blind signal analysis conducted by @matt-knight. The original research that guided this implementation may be found at https://github.com/matt-knight/research
 
 
 ##### End Cull
@@ -83,6 +85,10 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 [GSM/GPRS Traffic Interception for Penetration Testing Engagements](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2016/may/gsmgprs-traffic-interception-for-penetration-testing-engagements/)
 
+[Intro to SDR and RF Signal Analysis](https://www.elttam.com.au/blog/intro-sdr-and-rf-analysis/)
+
+[Cyberspectrum SDR Meetups](https://www.youtube.com/watch?v=MFBkX4CNb08&list=PLPmwwVknVIiXGzKhtimTMjhcyppeRRsnE&index=3)
+
 
 
 
@@ -90,6 +96,10 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 [4G Security: Hacking USB Modem and SIM Card via SMS](http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html)
 
 [The Vodafone Access Gateway / UMTS Femto cell / Vodafone Sure Signal](https://wiki.thc.org/vodafone)
+
+[Ghosts from the Past: Authentication bypass and OEM backdoors in WiMAX routers](http://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html)
+
+
 
 
 
@@ -295,6 +305,12 @@ In this article, we proved the capabilities of an inexpensive wireless adapter a
 [pixiewps](https://github.com/wiire/pixiewps)
 * Pixiewps is a tool written in C used to bruteforce offline the WPS pin exploiting the low or non-existing entropy of some APs (pixie dust attack). It is meant for educational purposes only. All credits for the research go to Dominique Bongard.
 
+[eaphammer](https://github.com/s0lst1c3/eaphammer)
+* EAPHammer is a toolkit for performing targeted evil twin attacks against WPA2-Enterprise networks. It is designed to be used in full scope wireless assessments and red team engagements. As such, focus is placed on providing an easy-to-use interface that can be leveraged to execute powerful wireless attacks with minimal manual configuration. To illustrate how fast this tool is, here's an example of how to setup and execute a credential stealing evil twin attack against a WPA2-TTLS network in just two commands:
+
+
+
+
 
 
 
@@ -312,6 +328,7 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 [RFIDiggity - Pentester Guide to Hacking HF/NFC and UHF RFID - Defcon23](https://www.youtube.com/watch?v=7o38hyQWw6g)
 
+[NFC Frequently Asked Questions](https://www.securetechalliance.org/publications-nfc-frequently-asked-questions/)
 
 
 

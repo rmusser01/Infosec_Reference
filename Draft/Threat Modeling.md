@@ -35,6 +35,8 @@
 * Accessible and client-side threat modeling tool
 * [GIFs demonstrating usage](https://github.com/mozilla/seasponge/wiki/usage)[On Comparing Threat Intelligence Feeds](http://blogs.gartner.com/anton-chuvakin/2014/01/07/on-comparing-threat-intelligence-feeds/)
 
+[ThreadFix](https://github.com/denimgroup/threadfix)
+* ThreadFix is a software vulnerability aggregation and management system that helps organizations aggregate vulnerability data, generate virtual patches, and interact with software defect tracking systems.
 
 
 

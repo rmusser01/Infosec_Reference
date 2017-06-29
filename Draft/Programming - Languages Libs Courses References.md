@@ -23,28 +23,10 @@ Cull
 ###Cull
 http://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul 
 
-[Counterfeit Object-oriented Programming](http://syssec.rub.de/media/emma/veroeffentlichungen/2015/03/28/COOP-Oakland15.pdf)
 
-#####G etting Started with WindDbg Series - OpenSecurity Research
-* [Getting Started with WinDbg part 1](http://blog.opensecurityresearch.com/2013/12/getting-started-with-windbg-part-1.html)
-
-http://www.harmonysecurity.com/files/HS-P005_ReflectiveDllInjection.pdf
-
-[An Introduction to Debugging the Windows Kernel with WinDbg](http://www.contextis.com/resources/blog/introduction-debugging-windows-kernel-windbg/)
-
-[Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
-
+[Reflective DLL Injection](http://www.harmonysecurity.com/files/HS-P005_ReflectiveDllInjection.pdf)
 
 http://en.cppreference.com/w/c	
-
-[rr]()
-* rr is a lightweight tool for recording and replaying execution of applications (trees of processes and threads). More information about the project, including instructions on how to install, run, and build rr, is at http://rr-project.org.
-https://github.com/mozilla/rr
-
-[Record and Replay Debugging with Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Record_and_Replay_Debugging_Firefox)
-
-
-
 #### End Cull
 
 
@@ -55,6 +37,8 @@ https://github.com/mozilla/rr
 [Porting Windows Dynamic Link Libraries to Linux](https://github.com/taviso/loadlibrary)
 
 ###<a name="general">General</a>
+
+
 
 [Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
 
@@ -71,8 +55,24 @@ https://github.com/mozilla/rr
 
 [Hyperpolyglot](http://hyperpolyglot.org/)
 
+[App Ideas - Stuff to build out ot improve your programming skills](https://github.com/tastejs/awesome-app-ideas)
 
 
+
+### Articles
+
+[Counterfeit Object-oriented Programming](http://syssec.rub.de/media/emma/veroeffentlichungen/2015/03/28/COOP-Oakland15.pdf)
+
+[Getting Started with WinDbg part 1](http://blog.opensecurityresearch.com/2013/12/getting-started-with-windbg-part-1.html)
+
+[An Introduction to Debugging the Windows Kernel with WinDbg](http://www.contextis.com/resources/blog/introduction-debugging-windows-kernel-windbg/)
+
+[Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
+
+[Record and Replay Debugging with Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Record_and_Replay_Debugging_Firefox)
+
+[rr](https://github.com/mozilla/rr)
+* rr is a lightweight tool for recording and replaying execution of applications (trees of processes and threads). More information about the project, including instructions on how to install, run, and build rr, is at http://rr-project.org.
 
 
 ###<a name="sca">Source Code Analysis</a>
@@ -90,6 +90,8 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 [Graudit](http://www.justanotherhacker.com/projects/graudit.html)
 * Graudit is a simple script and signature sets that allows you to find potential security flaws in source code using the GNU utility grep. It's comparable to other static analysis applications like RATS, SWAAT and flaw-finder while keeping the technical requirements to a minimum and being very flexible.
 
+[PumaScan](https://github.com/pumasecurity/puma-scan)
+* provides real time, continuous source code analysis
 
 
 
@@ -300,3 +302,13 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 [Mov is turing complete](http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)
 
+### Talks & Presentations
+[Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy)
+*  Rich Hickey emphasizes simplicity’s virtues over easiness’, showing that while many choose easiness they may end up with complexity, and the better way is to choose easiness along the simplicity path.
+
+
+
+
+#### Other
+
+[A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)

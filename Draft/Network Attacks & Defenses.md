@@ -22,22 +22,16 @@ TOC
 
 
 ##### To be sorted
-
-
-
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
+[a](https://github.com/fmtn/a)
+* ActiveMQ CLI testing and message management
 
+[PiTap](https://github.com/williamknows/PiTap)
+* Automatic bridge creation and packet capture (plug-and-capture) on a battery-powered Raspberry Pi with multiple network interfaces.
+* [Blogpost]()
 
-[sshuttle](https://github.com/apenwarr/sshuttle)
-* Transparent proxy server that works as a poor man's VPN. Forwards over ssh. Doesn't require admin. Works with Linux and MacOS. Supports DNS tunneling.
-
-
-[Use DHCP to detect UEFI or Legacy BIOS system and PXE boot to SCCM](http://www.itfaq.dk/2016/07/27/use-dhcp-to-detect-uefi-or-legacy-bios-system-and-pxe-boot-to-sccm/)
-
-
-
-
+[RFC 2827 -  Network Ingress Filtering: Defeating Denial of Service Attacks which employ IP Source Address Spoofing](https://tools.ietf.org/html/rfc2827)
 ##### sort end
 
 
@@ -230,6 +224,9 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 * Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, ... It can rip repositories even 
 when directory browsing is turned off.
 
+[sshuttle](https://github.com/apenwarr/sshuttle)
+* Transparent proxy server that works as a poor man's VPN. Forwards over ssh. Doesn't require admin. Works with Linux and MacOS. Supports DNS tunneling.
+
 
 
 
@@ -245,7 +242,8 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [SSLsplit - transparent and scalable SSL/TLS interception](https://www.roe.ch/SSLsplit)
 * SSLsplit is a tool for man-in-the-middle attacks against SSL/TLS encrypted network connections. Connections are transparently intercepted through a network address translation engine and redirected to SSLsplit. SSLsplit terminates SSL/TLS and initiates a new SSL/TLS connection to the original destination address, while logging all data transmitted. SSLsplit is intended to be useful for network forensics and penetration testing.  SSLsplit supports plain TCP, plain SSL, HTTP and HTTPS connections over both IPv4 and IPv6.
 
-
+[Seth](https://github.com/SySS-Research/Seth)
+* Seth is a tool written in Python and Bash to MitM RDP connections. It attempts to downgrade the connection and extract clear text credentials.
 
 
 
@@ -262,6 +260,8 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [WPScan](https://github.com/wpscanteam/wpscan)
 * WPScan is a black box WordPress vulnerability scanner.
 
+[dns-discovery](https://github.com/mafintosh/dns-discovery)
+* Discovery peers in a distributed system using regular dns and multicast dns.
 
 [Enumerator](https://pypi.python.org/pypi/enumerator/0.1.4)
 * enumerator is a tool built to assist in automating the often tedious task of enumerating a target or list of targets during a penetration test.
@@ -302,6 +302,18 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 [ssh-audit](https://github.com/arthepsy/ssh-audit)
 * SSH server auditing (banner, key exchange, encryption, mac, compression, compatibility, security, etc)
+
+[Knockpy](https://github.com/guelfoweb/knock)
+* Knockpy is a python tool designed to enumerate subdomains on a target domain through a wordlist. It is designed to scan for DNS zone transfer and to try to bypass the wildcard DNS record automatically if it is enabled.
+
+[sub6](https://github.com/YasserGersy/sub6)
+* subdomain take over detector and crawler
+
+[CloudFail](https://github.com/m0rtem/CloudFail)
+* CloudFail is a tactical reconnaissance tool which aims to gather enough information about a target protected by CloudFlare in the hopes of discovering the location of the server. 
+
+[AQUATONE](https://github.com/michenriksen/aquatone)
+* AQUATONE is a set of tools for performing reconnaissance on domain names. It can discover subdomains on a given domain by using open sources as well as the more common subdomain dictionary brute force approach. After subdomain discovery, AQUATONE can then scan the hosts for common web ports and HTTP headers, HTML bodies and screenshots can be gathered and consolidated into a report for easy analysis of the attack surface.
 
 
 
@@ -351,6 +363,11 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [ C3CM: Defeating the Command - Control - and Communications of Digital Assailants](http://www.irongeek.com/i.php?page=videos/derbycon4/t206-c3cm-defeating-the-command-control-and-communications-of-digital-assailants-russ-mcree)
 * C3CM: the acronym for command- control- and communi - cations countermeasures. Ripe for use in the information security realm, C3CM takes us past C2 analysis and to the next level. Initially, C3CM was most often intended to wreck the command and control of enemy air defense networks, a very specific military mission. We’ll apply that mindset in the context of combating bots and other evil. Our version of C3CM therefore is to identify, interrupt, and counter the command, control, and communications capabilities of our digital assailants. The three phases of C3CM will utilize: Nfsight with Nfdump, Nfsen, and fprobe to conduct our identification phase, Bro with Logstash and Kibana for the interruption phase, and ADHD for the counter phase. Converge these on one useful platform and you too might have a chance deter those who would do you harm. We’ll discuss each of these three phases (identify, interrupt, and counter) with tooling and tactics, complete with demonstrations and methodology attendees can put to use in their environments. Based on the three part ISSA Journal Toolsmith series: http://holisticinfosec. blogspot.com/search?q=c3cm&max-results=20&by-date=true
 
+[DNS Dark Matter Discovery Theres Evil In Those Queries - Jim Nitterauer](https://www.youtube.com/watch?v=-A2Wqagz73Y)
+
+[Passive IPS Reconnaissance and Enumeration - false positive (ab)use - Arron Finnon](https://vimeo.com/108775823)
+* Network Intrusion Prevention Systems or NIPS have been plagued by "False Positive" issues almost since their first deployment. A "False Positive" could simply be described as incorrectly or mistakenly detecting a threat that is not real. A large amount of research has gone into using "False Positive" as an attack vector either to attack the very validity of an IPS system or to conduct forms of Denial of Service attacks. However the very reaction to a "False Positive" in the first place may very well reveal more detailed information about defences than you might well think.
+
 
 
 
@@ -375,8 +392,9 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [Simple domain fronting PoC with GAE C2 server](https://www.securityartwork.es/2017/01/31/simple-domain-fronting-poc-with-gae-c2-server/)
 * In this entry we continue with domain fronting; on this occasion we will explore how to implement a simple PoC of a command and control and exfiltration server on Google App Engine (GAE), and we will see how to do the domain fronting from Windows, with a VBS or PowerShell script, to hide interactions with the C2 server.
 
+[State of IP Spoofing](https://spoofer.caida.org/summary.php)
 
-
+[Use DHCP to detect UEFI or Legacy BIOS system and PXE boot to SCCM](http://www.itfaq.dk/2016/07/27/use-dhcp-to-detect-uefi-or-legacy-bios-system-and-pxe-boot-to-sccm/)
 
 
 

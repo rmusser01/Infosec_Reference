@@ -6,6 +6,7 @@ TOC
 * [Techniques](#tech)
 * [Methodologies](#method)
 * [Write-ups](#writeup)
+* [Training](#training)
 * [Tools](#tools)
 * [Papers](#papers)
 * [Presentations](#presen)
@@ -18,11 +19,20 @@ TOC
 
 #### sort
 
+https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 #### end sort
+##### To Do
+* Add Descriptions/generals to types of fuzzing
 
 
 
 ### General
+
+[Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
+* Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
+
+
+[15 minute guide to fuzzing](https://www.mwrinfosecurity.com/our-thinking/15-minute-guide-to-fuzzing/)
 
 [Fuzzing basics...how to break software - grid - Scott M](http://www.irongeek.com/i.php?page=videos/derbycon6/411-fuzzing-basicshow-to-break-software-grid-aka-scott-m)
 * Ever wanted to break software? You know you want to...it's fun! In this talk, I will share some tools & techniques I've used to improve software by breaking it.
@@ -30,6 +40,15 @@ TOC
 [Quick explanation of fuzzing and various fuzzers](http://whoisjoe.info/?p=16)
 
 [Basic fuzzing framework](https://www.cert.org/vulnerability-analysis/tools/bff-download.cfm)
+
+[Fuzzing 101 (Part 1)]()
+
+[Fuzzing 101 (Part 2)](https://vimeo.com/5237484)
+
+[Fuzzing workflows; a fuzz job from start to finish](https://foxglovesecurity.com/2016/03/15/fuzzing-workflows-a-fuzz-job-from-start-to-finish/)
+
+[Youtube Playlist of Fuzzing Videos](https://www.youtube.com/playlist?list=PLtPrYlwXDImiO_hzK7npBi4eKQQBgygLD)
+
 
 
 
@@ -141,6 +160,7 @@ TOC
 
 [Fuzzing Object s d’ART Digging Into the New Android L Runtime Internals](http://census-labs.com/media/Fuzzing_Objects_d_ART_hitbsecconf2015ams_WP.pdf)
 
+[Browser bug hunting - Memoirs of a last man standing, Atte Kettunen](https://vimeo.com/109380793)
 
 [Unusual bugs - 23C3](https://www.youtube.com/watch?v=qj79Qdmw0Pk) * In this presentation I'll present a series of unusual security bugs. Things that I've ran into at some point and went "There's gotta be some security consequence here". None of these are really a secret, and most of them are even documented somewhere. But apparently most people don't seem to know about them.  What you'll see in this presentation is a list of bugs and then some explanation of how these could be exploited somehow. Some of the things I'll be talking about are (recursive) stack overflow, NULL pointer dereferences, regular expressions and more. 
 
@@ -155,7 +175,11 @@ TOC
 
 
 
+### Training
+[Modern fuzzing of C/C++ Projects - Slides](https://docs.google.com/presentation/d/1pbbXRL7HaNSjyCHWgGkbpNotJuiC4O7L_PDZoGqDf5Q/edit#slide=id.p4)
 
+[libfuzzer-workshop](https://github.com/Dor1s/libfuzzer-workshop)
+* Materials of "Modern fuzzing of C/C++ Projects" workshop.
 
 
 ### <a name="tools">Tools</a>
@@ -193,13 +217,35 @@ TOC
 [Kitty][https://github.com/cisco-sas/kitty]
 * Fuzzing framework written in python(Not a fuzzer)
 
+[IDA Pro](https://www.hex-rays.com/products/ida/index.shtml) - The best disassembler
 
+[binnavi](https://github.com/google/binnavi) - Binary analysis IDE, annotates control flow graphs and call graphs of disassembled code.
 
+[Capstone](https://github.com/aquynh/capstone) - Capstone is a lightweight multi-platform, multi-architecture disassembly framework.
 
+[KernelFuzzer](https://github.com/mwrlabs/KernelFuzzer)
+* Cross Platform Kernel Fuzzer Framework.
 
+[honggfuzz](http://google.github.io/honggfuzz/)
+* A general-purpose, easy-to-use fuzzer with interesting analysis options.
 
+[Hodor Fuzzer](https://github.com/nccgroup/hodor)
+* Yet Another general purpose fuzzer.
 
+[libFuzzer](http://libfuzzer.info)
+* In-process, coverage-guided, evolutionary fuzzing engine for targets written in C/C++.
 
+[Fuzzapi](https://github.com/lalithr95/fuzzapi)
+* Fuzzapi is rails application which uses API_Fuzzer and provide UI solution for gem.
+
+[ansvif](https://oxagast.github.io/ansvif/)
+* An advanced cross platform fuzzing framework designed to find vulnerabilities in C/C++ code.
+
+[Nightmare](https://github.com/joxeankoret/nightmare)
+* A distributed fuzzing testing suite with web administration, supports fuzzing using network protocols.
+
+[rage_fuzzer](https://github.com/deanjerkovich/rage_fuzzer)
+* A dumb protocol-unaware packet fuzzer/replayer.
 
 
 
@@ -228,6 +274,14 @@ TOC
 [Google - AddressSanitizer, ThreadSanitizer, MemorySanitizer, LeaksSanitizer](https://github.com/google/sanitizers)
 * This project is the home for Sanitizers: AddressSanitizer, MemorySanitizer, ThreadSanitizer, LeakSanitizer. The actual code resides in the LLVM repository. Here we keep extended documentation, bugs and some helper code.
 
+[syzkaller](https://github.com/google/syzkaller)
+* Distributed, unsupervised, coverage-guided Linux syscall fuzzer.
+
+
+
+
+
+
 
 #### Android Specific
 [MFFA - Media Fuzzing Framework for Android](https://github.com/fuzzing/MFFA)
@@ -249,6 +303,12 @@ Fuzzing with Peach tutorial
 
 * [Fuzzing Vulnserver with Peach 3](http://rockfishsec.blogspot.com/2014/01/fuzzing-vulnserver-with-peach-3.html)
 
+
+### Taint Analysis
+
+[PANDA ( Platform for Architecture-Neutral Dynamic Analysis )](https://github.com/moyix/panda)
+
+[QIRA (QEMU Interactive Runtime Analyser)](http://qira.me/)
 
 
 

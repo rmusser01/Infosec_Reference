@@ -37,18 +37,11 @@ Cull
 
 ### Cull/Sort
 
-[Dex Education 201 - Anti-Emulation.pdf](https://github.com/strazzere/anti-emulator/blob/master/slides/Dex%20Education%20201%20-%20Anti-Emulation.pdf)
+[Appie – Android Pentesting Portable Integrated Environment](https://manifestsecurity.com/appie/)
 
-https://github.com/ucsb-seclab/baredroid
 
-[Stunneller](https://github.com/ultramancool/Stunneler)
-* Android app for easy stunnel usage 
 
 https://blog.gdssecurity.com/labs/2015/2/18/when-efbfbd-and-friends-come-knocking-observations-of-byte-a.html
-
-[Mobile self-defense - Karsten Nohl](https://www.youtube.com/watch?v=GeCkO0fWWqc)
-
-[Appie – Android Pentesting Portable Integrated Environment](https://manifestsecurity.com/appie/)
 
 http://nelenkov.blogspot.com
 
@@ -75,8 +68,8 @@ http://nelenkov.blogspot.com
 | **Android Forensics Class** - Free - This class serves as a foundation for mobile digital forensics, forensics of Android operating systems, and penetration testing of Android applications.| http://opensecuritytraining.info/AndroidForensics.html)
 | **Android Hardening Guide by the TOR developers** - This blog post describes the installation and configuration of a prototype of a secure, full-featured, Android telecommunications device with full Tor support, individual application firewalling, true cell network baseband isolation, and optional ZRTP encrypted voice and video support. ZRTP does run over UDP which is not yet possible to send over Tor, but we are able to send SIP account login and call setup over Tor independently. The SIP client we recommend also supports dialing normal telephone numbers if you have a SIP gateway that provides trunking service. Aside from a handful of binary blobs to manage the device firmware and graphics acceleration, the entire system can be assembled (and recompiled) using only FOSS components. However, as an added bonus, we will describe how to handle the Google Play store as well, to mitigate the two infamous Google Play Backdoors.| https://blog.torproject.org/blog/mission-impossible-hardening-android-security-and-privacy)
 | **Android 4.0+ Hardening Guide/Checklist by University of Texas** | https://wikis.utexas.edu/display/ISO/Google+Android+Hardening+Checklist)
-	
 
+[Mobile self-defense - Karsten Nohl](https://www.youtube.com/watch?v=GeCkO0fWWqc)
 
 #### Applications
 | Title     | Link |
@@ -93,6 +86,9 @@ Xprivacy - The Ultimate Android Privacy Manager(Requires Root
 Personal favorite for making backups. Backups are stored locally or automatically to various cloud services.
 [Helium Backup(Root Not Required)](https://play.google.com/store/apps/details?id=com.koushikdutta.backup&hl=en)
 	* Backs up data locally or to various cloud services. Local client available for backups directly to PC.
+
+	[Stunneller](https://github.com/ultramancool/Stunneler)
+* Android app for easy stunnel usage
 
 ### Encryption
 Check the Encryption section of the overall guide for more information.
@@ -215,6 +211,10 @@ Check the Encryption section of the overall guide for more information.
 | **Manifesto** - PoC framework for APK obfuscation, used to demonstrate some of the obfuscation examples from http://maldr0id.blogspot.com. It supports plugins (located in processing directory) that can do different obfuscation techniques. Main gist is that you run manifesto on the APK file and it produces an obfuscated APK file. |https://github.com/maldroid/manifesto
 | **Android Hacker Protection Level 0** - DEF CON 22 - Tim Strazzere and Jon Sawyer - Obfuscator here, packer there - the Android ecosystem is becoming a bit cramped with different protectors for developers to choose. With such limited resources online about attacking these protectors, what is a new reverse engineer to do? Have no fear, after drinking all the cheap wine two Android hackers have attacked all the protectors currently available for everyones enjoyment! Whether you've never reversed Android before or are a hardened veteran there will be something for you, along with all the glorious PoC tools and plugins for your little heart could ever desire. | https://www.youtube.com/watch?v=vLU92bNeIdI
 
+[kwetza](https://github.com/sensepost/kwetza)
+* Python script to inject existing Android applications with a Meterpreter payload.
+
+
 
 ### **<a name="RE">Reverse Engineering Android</a>**
 | Title     | Link |
@@ -243,6 +243,15 @@ Check the Encryption section of the overall guide for more information.
 
 [Hacking Android apps with FRIDA I](https://www.codemetrix.net/hacking-android-apps-with-frida-1/)
 
+[Want to break some Android apps? - Android Crackmes- Carnal0wnage](http://carnal0wnage.attackresearch.com/2013/08/want-to-break-some-android-apps.html)
+
+[Dex Education 201 - Anti-Emulation.pdf](https://github.com/strazzere/anti-emulator/blob/master/slides/Dex%20Education%20201%20-%20Anti-Emulation.pdf)
+
+[List of Android Crackmes](https://forum.tuts4you.com/topic/33057-android-hackmes/)
+
+[baredroid](https://github.com/ucsb-seclab/baredroid)
+* BareDroid allows for bare-metal analysis on Android devices.
+* [Paper](https://www.cs.ucsb.edu/%7Evigna/publications/2015_ACSAC_Baredroid.pdf)
 
 
 

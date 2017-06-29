@@ -12,29 +12,15 @@
 
 
 #### Cull 
-
-[LinkedIn Gatherer](https://github.com/DisK0nn3cT/linkedin-gatherer )
-
-
-
-[OSINT Mantra](http://www.getmantra.com/hackery/osint.html)
-
 http://computercrimeinfo.com/cleaningid.html
 
 [OSINT - onstrat](http://www.onstrat.com/osint/)
 
-[OSINT Resources - greynetwork2](https://sites.google.com/site/greynetwork2/home/osint-resources)
-
+[Fantastic OSINT and where to find it - blindseeker/malware focused](http://archive.is/sYzcP#selection-62.0-62.1)
 
 http://toddington.com/resources/
 
 www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
-
-
-
-
-
-
 
 #### End cull
 
@@ -65,7 +51,7 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 [Email Reconnaissance and Phishing Template Generation Made Simple](https://cybersyndicates.com/2016/05/email-reconnaissance-phishing-template-generation-made-simple/)
 
 
-
+[OSINT Resources - greynetwork2](https://sites.google.com/site/greynetwork2/home/osint-resources)
 
 
 
@@ -204,6 +190,12 @@ Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&use
 [DataSploit](https://github.com/DataSploit/datasploit)
 A tool to perform various OSINT techniques, aggregate all the raw data, and give data in multiple formats.
 
+[LinkedIn Gatherer](https://github.com/DisK0nn3cT/linkedin-gatherer )
+
+[PowerMeta](https://github.com/dafthack/PowerMeta)
+* PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches. It then allows for the download of those files from the target domain. After retrieving the files, the metadata associated with them can be analyzed by PowerMeta. Some interesting things commonly found in metadata are usernames, domains, software titles, and computer names.
+
+[OSINT Mantra](http://www.getmantra.com/hackery/osint.html)
 
 
 

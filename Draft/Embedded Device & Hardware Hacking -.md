@@ -37,6 +37,17 @@ http://www.sp3ctr3.me/hardware-security-resources/
 
 http://greatscottgadgets.com/infiltrate2013/
 
+
+
+
+
+
+
+
+
+[Hacking Printers Wiki](http://hacking-printers.net/wiki/index.php/Main_Page)
+
+
 #### end sort
 
 
@@ -47,7 +58,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 [Reversing and Exploiting Embedded Devices: The Software Stack (Part 1)](https://p16.praetorian.com/blog/reversing-and-exploiting-embedded-devices-part-1-the-software-stack)
 
-[Hardware Security and Trust/ECE 4451/5451: Introduction to Hardware Security and Trust](www.engr.uconn.edu/~tehrani/teaching/hst/)
+[Hardware Security and Trust/ECE 4451/5451: Introduction to Hardware Security and Trust](https://www.engr.uconn.edu/~tehrani/teaching/hst/)
 
 [NSA Playset](http://www.nsaplayset.org/)
 * In the coming months and beyond, we will release a series of dead simple, easy to use tools to enable the next generation of security researchers.  We, the security community have learned a lot in the past couple decades, yet the general public is still ill equipped to deal with real threats that face them every day, and ill informed as to what is possible. Inspired by the NSA ANT catalog, we hope the NSA Playset will make cutting edge security tools more accessible, easier to understand, and harder to forget.  Now you can play along with the NSA!
@@ -274,6 +285,14 @@ http://greatscottgadgets.com/infiltrate2013/
 
 [Introduction to USB and Fuzzing - Matt DuHarte - Defcon23](https://www.youtube.com/watch?v=KWOTXypBt4E)
 
+[Attacks via physical access to USB (DMA…?)](https://security.stackexchange.com/questions/118854/attacks-via-physical-access-to-usb-dma)
+
+[Can a connected USB device read all data from the USB bus?](https://security.stackexchange.com/questions/37927/can-a-connected-usb-device-read-all-data-from-the-usb-bus?rq=1)
+
+
+
+
+
 
 
 
@@ -395,7 +414,11 @@ Chameleon Mini
 
 [How can I do that? Intro to hardware hacking with an RFID badge reader - Kevin Bong](http://www.irongeek.com/i.php?page=videos/derbycon3/3303-how-can-i-do-that-intro-to-hardware-hacking-with-an-rfid-badge-reader-kevin-bong)
 
+[ISO/IEC 7816](https://en.wikipedia.org/wiki/ISO/IEC_7816)
 
+[ISO/IEC 15693](https://en.wikipedia.org/wiki/ISO/IEC_15693)
+
+[ISO/IEC 14443](https://en.wikipedia.org/wiki/ISO/IEC_14443)
 
 
 

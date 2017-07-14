@@ -16,7 +16,7 @@
 
 [NCSAM: Coordinated Vulnerability Disclosure Advice for Researchers](https://community.rapid7.com/community/infosec/blog/2016/10/28/ncsam-coordinated-vulnerability-disclosure-advice-for-researchers)
 
-
+[Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
 
 
 

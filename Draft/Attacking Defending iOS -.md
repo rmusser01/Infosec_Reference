@@ -26,6 +26,8 @@
 | **Pentesting iOS Applications - Pentester Academy - Paid Course** - This course focuses on the iOS platform and application security and is ideal for pentesters, researchers and the casual iOS enthusiast who would like to dive deep and understand how to analyze and systematically audit applications on this platform using a variety of bleeding edge tools and techniques. | http://www.pentesteracademy.com/course?id=2
 
 
+
+
 #### End Cull
 
 ### General
@@ -37,6 +39,9 @@
 
 [Secure iOS application development](https://github.com/felixgr/secure-ios-app-dev)
 * This guide is a collection of the most common vulnerabilities found in iOS applications. The focus is on vulnerabilities in the applications’ code and only marginally covers general iOS system security, Darwin security, C/ObjC/C++ memory safety, or high-level application security. Nevertheless, hopefully the guide can serve as training material to iOS app developers that want to make sure that they ship a more secure app. Also, iOS security reviewers can use it as a reference during assessments.
+
+[needle](https://github.com/mwrlabs/needle)
+* Needle is an open source, modular framework to streamline the process of conducting security assessments of iOS apps.
 
 
 
@@ -166,3 +171,8 @@
 
 [Idb](https://github.com/dmayer/idb)
 * idb is a tool to simplify some common tasks for iOS pentesting and research
+
+
+### Writeups
+
+[Write-up for alloc8: untethered bootrom exploit for iPhone 3GS](https://github.com/axi0mX/alloc8)

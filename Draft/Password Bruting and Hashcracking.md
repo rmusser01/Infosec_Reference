@@ -28,7 +28,6 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 * Wordlists sorted by popularity originally created for password generation and testing
 
 
-
 ### End cull
 
 
@@ -71,6 +70,11 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
 [Introduction to Cracking Hashes](http://n0where.net/introduction-break-that-hash/)
 * Good introduction source to hash cracking.
+
+[Cracking Corporate Passwords Exploiting Password Policy Weaknesses - Minga Rick Redm - Derbycon3](https://www.youtube.com/watch?v=qR-qRUbeKAo)
+
+[HashView](https://github.com/hashview/hashview)
+* Hashview is a tool for security professionals to help organize and automate the repetitious tasks related to password cracking. Hashview is a web application that manages hashcat (https://hashcat.net) commands. Hashview strives to bring constiency in your hashcat tasks while delivering analytics with pretty pictures ready for ctrl+c, ctrl+v into your reports.
 
 
 
@@ -146,7 +150,7 @@ Hashcat attacks
 
 [Dumping a Domains worth of passwords using mimikatz](http://carnal0wnage.attackresearch.com/2013/10/dumping-domains-worth-of-passwords-with.html)
 
-[Dump Windows password hashes efficiently - Part 1](bernardodamele.blogspot.com/2011/12/dump-windows-password-hashes.html)
+[Dump Windows password hashes efficiently - Part 1](http://www.bernardodamele.blogspot.com/2011/12/dump-windows-password-hashes.html)
 
 
 
@@ -197,7 +201,8 @@ Hashcat attacks
 [Probable-Wordlists](https://github.com/berzerk0/Probable-Wordlists)
 * Wordlists sorted by probability originally created for password generation and testing
 
-
+[BEWGor](https://github.com/berzerk0/BEWGor)
+* Bull's Eye Wordlist Generator
 
 
 ### Talks & Presentations

@@ -57,10 +57,6 @@ http://blog.techorganic.com/2016/03/08/radare-2-in-0x1e-minutes/
 
  mammon_'s tales to his grandson - https://mammon.github.io/tales/
 
-
-
-
-
 http://fileformats.archiveteam.org/wiki/PNG
 
 [Bug Hunting for the Man on the Street]()
@@ -84,6 +80,20 @@ https://objective-see.com/
 [Bytecode Club - RE Forum](https://the.bytecode.club/)
 
 [Binary Hooking Problems](http://www.ragestorm.net/blogs/?p=348)
+
+[Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
+* Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
+
+[bingrep](https://github.com/m4b/bingrep)
+* Greps through binaries from various OSs and architectures, and colors them. 
+
+[radare2 cheat sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
+
+[Blackbone](https://github.com/DarthTon/Blackbone)
+* Windows memory hacking library
+
+[Binacle](https://github.com/ANSSI-FR/Binacle)
+* Indexation "full-bin" of binary files
 
 ### End sort
 

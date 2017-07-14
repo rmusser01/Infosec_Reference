@@ -4,6 +4,7 @@ Information Security Reference That Doesn't Suck
 
 #### Goal:
 
+* Migrate to daux.io
 * List of techinques, tools and tactics to learn from.
 * Act similar to "Yellow Pages" book in the sense of you know something exists, but what was it called....
 * End goal is for it to be a rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches within infosec, or as a reference/recall method for other things.

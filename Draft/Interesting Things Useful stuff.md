@@ -40,6 +40,36 @@ http://spth.virii.lu/articles.htm
 
 
 
+
+[QR Code interesting](http://datagenetics.com/blog/november12013/index.html)
+
+[Manuals Library](https://www.manualslib.com/)
+
+[NIST National Vulnerability Database](https://nvd.nist.gov/ncp/repository)
+
+[IA Guidance - NSA](https://www.iad.gov/iad/library/ia-guidance/index.cfm)
+
+[Paste-Scraper](https://github.com/KernelEquinox/Paste-Scraper)
+
+[Wayback scraper](https://github.com/abrenaut/waybackscraper)
+
+[LeakedSource.ru](https://leakedsource.ru/)
+
+[Red Team Infrastructure Wiki](https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki)
+* Wiki to collect Red Team infrastructure hardening resources
+* Accompanying Presentation: [Doomsday Preppers: Fortifying Your Red Team Infrastructure](https://speakerdeck.com/rvrsh3ll/doomsday-preppers-fortifying-your-red-team-infrastructure)
+
+[How to Build a 404 page not found C2](https://www.blackhillsinfosec.com/?p=5134)
+
+[404 File not found C2 PoC](https://github.com/theG3ist/404)
+
+[Hiding Malicious Traffic Under the HTTP 404 Error](https://blog.fortinet.com/2015/04/09/hiding-malicious-traffic-under-the-http-404-error)
+
+#### End Sort
+
+
+
+
 ## Attribution
 
 [Cyber Attack Attribution Report](http://whohackedus.com/)
@@ -115,10 +145,6 @@ http://www.securitywizardry.com/radar.htm
 * |  (?:2131|1800|35\d{3})\d{11}      # JCB
 *)$
 
-
-[QR Code interesting](http://datagenetics.com/blog/november12013/index.html)
-
-#### End Sort
 
 
 
@@ -228,7 +254,8 @@ http://www.securitywizardry.com/radar.htm
 
 [Real-life experiences in avionics security assessment (A. Barisani)](https://www.youtube.com/watch?v=xtSmPgXw34I&feature=youtu.be&app=desktop)
 
-
+[Software Supply Chains and the Illusion of Control - Derek Weeks](http://www.irongeek.com/i.php?page=videos/bsidesnova2017/107-software-supply-chains-and-the-illusion-of-control-derek-weeks)
+* In this presentation I am sharing the results of a three-year, industry-wide study on open source development and security practices across 3,000 organizations and 25,000. I will detail how these organizations are employing a vast community of open source component suppliers, warehouses, and development tools that take the form of software supply chains. Modern software development practices are now consuming BILLIONS of open source and third-party components. The tooling with package managers and build tools such as Maven, Gradle, npm, NuGet, RubyGems and others has promoted the usage of components to a convenient standard practice. As a result, 90% of a typical application is now composed of open source components. The good news: use of the components is improving developer productivity and accelerating time to market. However, using these components brings ownership and responsibility with it and this fact is largely overlooked. The unspoken truth: not all parts are created equal. For example, 1 in 16 components in use include known security vulnerabilities. Ugh. This session aims to enlighten development professionals by sharing results from the State of the Software Supply Chain reports from 2015 through 2017. The reports blend of public and proprietary data with expert research and analysis. Attendees in this session will learn: - What our analysis of 25,000 applications reveals about the quality and security of software built with open source components - How organizations like Mayo Clinic, Exxon, Capital One, the U.S. FDA and Intuit are utilizing the principles of software supply chain automation to improve application security - Why avoiding open source components over 3 years old might be a really good idea - How to balance the need for speed with quality and security -- early in the development lifecycle We will also discuss how you can best approach the effort for development teams to identify, track and replace components with known vulnerabilities, while getting more products and new features to market quickly. Attend this session and gain insight as to how your organization’s application development practices compare to others. I'll share the industry benchmarks to take back and discuss with your development, security, and open source governance teams.
 
 
 
@@ -325,6 +352,14 @@ http://www.securitywizardry.com/radar.htm
 [Unicorn-Engine](http://www.unicorn-engine.org/)
 * Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework.
 
+[cyberfree](https://github.com/arnaudsoullie/cyberfree)
+* Cyber-free browsing extension for Chrome
+
+[SniffJoke](https://github.com/vecna/sniffjoke)
+* SniffJoke is an application for Linux that handle transparently your TCP connection, delaying, modifyng and inject fake packets inside your transmission, make them almost impossible to be correctly readed by a passive wiretapping technology (IDS or sniffer)
+
+
+
 
 
 
@@ -394,6 +429,20 @@ Underhanded C
 
 [Exploiting Android Users for Fun and Profit](http://www.codeword.xyz/2015/08/09/exploiting-android-users-for-fun-and-profit/)
 
+[The S stands for Simple](http://harmful.cat-v.org/software/xml/soap/simple)
+* Satire(Only it's not) of a conversation about SOAP
+
+[Encyclopedia of things considered harmful](http://harmful.cat-v.org/)
+
+[THE BASIC LAWS OF HUMAN STUPIDITY - Carlo M. Cipolia](http://harmful.cat-v.org/people/basic-laws-of-human-stupidity/)
+
+[Docker: Not Even a Linker](http://adamierymenko.com/docker-not-even-a-linker/)
+
+
+
+
+
+
 
 
 
@@ -457,6 +506,12 @@ Underhanded C
 
 [QR Inception: Barcode-in-Barcode Attacks](https://www.sba-research.org/wp-content/uploads/publications/qrinception.pdf)
 * 2D barcodes offer many benefits compared to 1D barcodes, such as high information density and robustness. Before their introduction to the mobile phone ecosystem, they have been widely used in specific applications, such as logistics or ticketing. However, there are multiple competing standards with different benefits and drawbacks. Therefore, reader applications as well as dedicated devices have to support multiple standards. In this paper, we present novel attacks based on deliberately caused ambiguities when especially crafted barcodes conform to multiple standards. Implementation details decide which standard the decoder locks on. This way, two users scanning the same barcode with different phones or apps will receive different content. This potentially opens way for multiple problems related to security. We describe how embedding one barcode symbology into another can be used to perform phishing attacks as well as targeted exploits. In addition, we evaluate the extent to which popular 2D barcode reader applications on smartphones are susceptible to these barcode-in-barcode attacks. We furthermore discuss mitigation techniques against this type of attack.
+
+[Introduction to Resource Oriented Computing - Whitepaper](http://resources.1060research.com/docs/IntroductionToResourceOrientedComputing-1.pdf)
+
+
+
+
 
 
 ### sites

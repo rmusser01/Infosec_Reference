@@ -17,12 +17,12 @@
 [Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
 * Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
 
-### Cull
+#### Cull
 | Title | Link
 | -------- | --------- |
 https://github.com/NullHypothesis/exitmap/issues/37
 
-
+#### end cull
 
 
 
@@ -36,6 +36,12 @@ https://github.com/NullHypothesis/exitmap/issues/37
 [Invasion of Privacy - HackerFactor](http://www.hackerfactor.com/blog/index.php?/archives/703-Invasion-of-Privacy.html)
 
 [Trawling Tor Hidden Service – Mapping the DHT](https://donncha.is/2013/05/trawling-tor-hidden-services/)
+
+[China travel laptop setup](https://mricon.com/i/travel-laptop-setup.html?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&iid=88d246896d384d5292f51df954a2c8ba&uid=150127534&nid=244+272699400)
+
+[Operational Security and the Real World - The Grugq](https://medium.com/@thegrugq/operational-security-and-the-real-world-3c07e7eeb2e8)
+
+[CIA Vault7 Development Tradecraft DOs and DON'Ts](https://wikileaks.org/ciav7p1/cms/page_14587109.html)
 
 
 
@@ -55,6 +61,13 @@ https://github.com/NullHypothesis/exitmap/issues/37
 [Operational Security and the Real World - The Grugq](https://medium.com/@thegrugq/operational-security-and-the-real-world-3c07e7eeb2e8)
 
 [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
+
+[Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
+* Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
+
+
+
+
 
 
 
@@ -119,6 +132,13 @@ https://github.com/NullHypothesis/exitmap/issues/37
 [ Retail Surveillance / Retail Countersurveillance 50 most unwanted retail surveillance technologies / 50 most wanted countersurveillance technologies](https://media.ccc.de/v/33c3-8238-retail_surveillance_retail_countersurveillance#video&t=1993)
 
 [OPSEC Concerns in Using Crypto](https://www.slideshare.net/JohnCABambenek/defcon-crypto-village-opsec-concerns-in-using-crypto)
+
+[De-Anonymizing Alt.Anonymous. Messages - Defcon21 - Tom Ritter](https://www.youtube.com/watch?v=_Tj6c2Ikq_E)
+
+
+
+
+
 
 ### **<a name="Tools">Tools</a>**
 

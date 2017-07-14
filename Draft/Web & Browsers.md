@@ -11,19 +11,20 @@
 * [NO/SQL](#sql)
 * [L/RFI](#lrfi)
 * [Different Types of Web based attacks](#difatk)
-..* [Abuse of Functionality](#)
-..* [Data Structure Attacks](#)
-..* [Embedded Malicious Code](#emc)
-..* [Exploitation of Authentication](#eoa)
-..* [Injection Based Attacks](#ija)
-..* [Java Deserialization Attacks](#jsa)
-..* [Path Traversal Attacks](#pta)
-..* [Probabilistic Attacks](#pa)
-..* [Protocol Manipulation](#pm)
-..* [Resource Depletion](#rd)
-..* [Resource Manipulation](#rm)
-..* [Sniffing Based](#sb)
-..* [Spoofing Based](#spb)
+	* Template Injection
+	* [Abuse of Functionality](#)
+	* [Data Structure Attacks](#)
+	* [Embedded Malicious Code](#emc)
+	* [Exploitation of Authentication](#eoa)
+	* [Injection Based Attacks](#ija)
+	* [Java Deserialization Attacks](#jsa)
+	* [Path Traversal Attacks](#pta)
+	* [Probabilistic Attacks](#pa)
+	* [Protocol Manipulation](#pm)
+	* [Resource Depletion](#rd)
+	* [Resource Manipulation](#rm)
+	* [Sniffing Based](#sb)
+	* [Spoofing Based](#spb)
 * [CMSs](#cms)
 * [Client Web Proxies](#webproxy)
 * [Javascript](#javascript)
@@ -34,11 +35,14 @@
 * [WebShells](#shells)
 * [Brute Force Tools](#brute)
 * [Web Application Firewalls](#waf)
-..* [Bypassing Web Application Firewalls](#bwaf)
+* [Bypassing Web Application Firewalls](#bwaf)
 * [Attack Writeups](#writeups)
 * [Securing Web Based Applications/Servers](#secure)
 * [Non-Attack Writeups](#nonwriteup)
 * [HTML5](#html5)
+* Rest
+* API Testing
+* Web Sockets
 * [Miscellaneous](#misc)
 * [Securing Web Applications/Security Checklists](#checklists)
 * [Burp Plugins/Stuff](#burp)
@@ -48,12 +52,12 @@
 
 #### To-add
 Java Serialization papers/stuff
-
+DVWA/similar to educational section
 
 
 #### Sort
 
-[Abusing Google App Scripting Through Social Engineering](http://www.redblue.team/2017/02/abusing-google-app-scripting-through.html)
+
 
 [Cross Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
 
@@ -65,15 +69,6 @@ prompt.ml
 
 Clickjacking attacks
 
-[Server-side browsing  considered harmful](http://www.agarri.fr/docs/AppSecEU15-Server_side_browsing_considered_harmful.pdf)
-
-[File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
-
-
-[timing_attack](https://github.com/ffleming/timing_attack)
-* Perform timing attacks against web applications
-
-[Wordpress Security Guide - WPBeginner](http://www.wpbeginner.com/wordpress-security/)
 #### End Sort
 
 
@@ -101,6 +96,17 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
 [Learn REST: A Tutorial](http://rest.elkstein.org/)
 
+[Attack Surface Analysis Cheat Sheet](https://www.owasp.org/index.php/Attack_Surface_Analysis_Cheat_Sheet)
+
+[Wordpress Security Guide - WPBeginner](http://www.wpbeginner.com/wordpress-security/)
+
+[AWS Security Primer](https://cloudonaut.io/aws-security-primer/#fn:2)
+
+
+
+
+
+
 
 
 ### Talks &  Presentations
@@ -111,16 +117,31 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
 [The AppSec Starter Kit Timothy De Block](https://www.youtube.com/watch?v=KMz8lWNAUmg)
 
-
+[Server-side browsing  considered harmful](http://www.agarri.fr/docs/AppSecEU15-Server_side_browsing_considered_harmful.pdf)
 
 
 
 
 ### <a name="edu">Educational</a>
 
-[Intro to content Security Policy](www.html5rocks.com/en/tutorials/security/content-security-policy/)
+[Intro to content Security Policy](http://www.html5rocks.com/en/tutorials/security/content-security-policy/)
 
 [Client Identification Mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms)
+
+[The Tale of a Fameless but Widespread Web Vulnerability Class - Veit Hailperin](https://www.youtube.com/watch?v=5qA0CtS6cZ4)
+* Two keys components account for finding vulnerabilities of a certain class: awareness of the vulnerability and ease of finding the vulnerability. Cross-Site Script Inclusion (XSSI) vulnerabilities are not mentioned in the de facto standard for public attention - the OWASP Top 10. Additionally there is no public tool available to facilitate finding XSSI. The impact reaches from leaking personal information stored, circumvention of token-based protection to complete compromise of accounts. XSSI vulnerabilities are fairly wide spread and the lack of detection increases the risk of each XSSI. In this talk we are going to demonstrate how to find XSSI, exploit XSSI and also how to protect against XSSI.
+
+
+
+[Hackazon](https://github.com/rapid7/hackazon)
+* Hackazon is a free, vulnerable test site that is an online storefront built with the same technologies used in today’s rich client and mobile applications. Hackazon has an AJAX interface, strict workflows and RESTful API’s used by a companion mobile app providing uniquely-effective training and testing ground for IT security professionals. And, it’s full of your favorite vulnerabilities like SQL Injection, cross-site scripting and so on.
+
+[DOM - Standard](https://dom.spec.whatwg.org/)
+
+[HTML 5 Standards](http://w3c.github.io/html/)
+
+[Web IDL Standards](https://heycam.github.io/webidl/)
+
 
 
 
@@ -165,8 +186,14 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 [htshells](https://github.com/wireghoul/htshells)
 * Self contained web shells and other attacks via .htaccess files.
 
+[AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)
+* Security Tool to Look For Interesting Files in S3 Buckets
 
+[timing_attack](https://github.com/ffleming/timing_attack)
+* Perform timing attacks against web applications
 
+[Kraken - Web Interface Survey Tool](https://github.com/Sw4mpf0x/Kraken)
+* [Blogpost](https://pentestarmoury.com/2017/01/31/kraken-web-interface-survey-tool/)
 
 
 
@@ -535,10 +562,14 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [ColdFusion for Penetration Testers](http://www.slideshare.net/chrisgates/coldfusion-for-penetration-testers)
 
+[Abusing Google App Scripting Through Social Engineering](http://www.redblue.team/2017/02/abusing-google-app-scripting-through.html)
 
+[File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
 
+[PHP Generic Gadget Chains: Exploiting unserialize in unknown environments](https://www.ambionics.io/blog/php-generic-gadget-chains)
 
-
+[PHPGGC: PHP Generic Gadget Chains](https://github.com/ambionics/phpggc)
+* PHPGGC is a library of unserialize() payloads along with a tool to generate them, from command line or programmatically. When encountering an unserialize on a website you don't have the code of, or simply when trying to build an exploit, this tool allows you to generate the payload without having to go through the tedious steps of finding gadgets and combining them. Currently, the tool supports: Doctrine, Guzzle, Laravel, Monolog, Slim, SwiftMailer.
 
 
 
@@ -552,6 +583,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [Liffy](https://github.com/rotlogix/liffy)
 * Liffy is a Local File Inclusion Exploitation tool. 
 
+[psychoPATH - LFI](https://github.com/ewilded/psychoPATH/blob/master/README.md)
+* This tool is a highly configurable payload generator detecting LFI & web root file uploads. Involves advanced path traversal evasive techniques, dynamic web root list generation, output encoding, site map-searching payload generator, LFI mode, nix & windows support plus single byte generator.
 
 
 
@@ -584,6 +617,13 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [XSS game - escape.alf.nu](http://escape.alf.nu/)
 
+[Self XSS we’re not so different you and I - Mathias Karlsson](https://www.youtube.com/watch?v=l3yThCIF7e4)
+
+[xsscrapy](https://github.com/byt3bl33d3r/xsscrapy)
+
+[XSSer](https://xsser.03c8.net/)
+
+[XSS Sniper](https://sourceforge.net/projects/xssniper/)
 
 
 
@@ -598,6 +638,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [SQL Injection wiki](http://www.sqlinjectionwiki.com/)
 
 [SQL Injection Knowledge Base](http://websec.ca/kb/sql_injection#MySQL_Testing_Injection)
+
+[sqlmap](https://github.com/sqlmapproject/sqlmap)
 
 [Pen Testing MongoDB](http://www.irongeek.com/i.php?page=videos/derbycon4/t408-making-mongo-cry-attacking-nosql-for-pen-testers-russell-butturini)
 
@@ -620,10 +662,15 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [SQLi Lab lessons](https://github.com/Audi-1/sqli-labs)
 * SQLI-LABS is a platform to learn SQLI
 
+[Performing sqlmap POST request injection](https://hackertarget.com/sqlmap-post-request-injection/)
 
 
 
 
+### Template Injection
+
+[tplmap](https://github.com/epinna/tplmap)
+* Code and Server-Side Template Injection Detection and Exploitation Tool
 
 
 
@@ -719,7 +766,59 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 
+### REST & Web Services
 
+[REST Security Cheat Sheet](REST Security Cheat Sheet)
+
+[REST Assessment Cheat Sheet](https://www.owasp.org/index.php/REST_Assessment_Cheat_Sheet)
+
+[RESTful Services, The Web Security Blind Spot](https://www.youtube.com/watch?feature=player_embedded&v=pWq4qGLAZHI#!)
+* [Blogpost](https://xiom.com/2016/10/31/restful-services-web-security-blind-spot/)
+* [Presentation Slides -pdf](https://xiomcom.files.wordpress.com/2016/10/security-testing-for-rest-applications-v6-april-2013.pdf)
+
+[Cracking and Fixing REST APIs](http://www.sempf.net/post/Cracking-and-Fixing-REST-APIs)
+
+[Cracking and fixing REST services](http://www.irongeek.com/i.php?page=videos/converge2015/track109-cracking-and-fixing-rest-services-bill-sempf)
+
+[Representational State Transfer - Wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer)
+
+[Web Services Security Testing Cheat Sheet Introduction - OWASP](https://www.owasp.org/index.php/Web_Service_Security_Testing_Cheat_Sheet)
+
+[Damn Vulnerable Web Services dvws](https://github.com/snoopysecurity/dvws)
+* Damn Vulnerable Web Services is an insecure web application with multiple vulnerable web service components that can be used to learn real world web service vulnerabilities.
+
+[Service-Oriented-Architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture)
+
+[Microservices](https://en.wikipedia.org/wiki/Microservices)
+
+
+
+
+### API Stuff
+
+[burp-rest-api](https://github.com/vmware/burp-rest-api)
+* A REST/JSON API to the Burp Suite security tool.  Upon successfully building the project, an executable JAR file is created with the Burp Suite Professional JAR bundled in it. When the JAR is launched, it provides a REST/JSON endpoint to access the Scanner, Spider, Proxy and other features of the Burp Suite Professional security tool.
+
+[RESTful API Best Practices and Common Pitfalls](https://medium.com/@schneidenbach/restful-api-best-practices-and-common-pitfalls-7a83ba3763b5)
+
+[OWASP API Security Project](https://www.owasp.org/index.php/OWASP_API_Security_Project)
+
+[WebSocket API Standards](https://www.w3.org/TR/2011/WD-websockets-20110929/)
+
+[Fuzzapi](https://github.com/lalithr95/Fuzzapi/)
+* Fuzzapi is rails application which uses API_Fuzzer and provide UI solution for gem.
+
+[White House Web API Standards](https://github.com/WhiteHouse/api-standards)
+* This document provides guidelines and examples for White House Web APIs, encouraging consistency, maintainability, and best practices across applications. White House APIs aim to balance a truly RESTful API interface with a positive developer experience (DX).
+
+[Automating API Penetration Testing using fuzzapi - AppSecUSA 2016](https://www.youtube.com/watch?v=43G_nSTdxLk)
+
+
+### Web Sockets
+
+[The WebSocket Protocol Standard - IETF](https://tools.ietf.org/html/rfc6455)
+
+[WebSocket Protocol - RFC Draft 17](https://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-17)
 
 
 

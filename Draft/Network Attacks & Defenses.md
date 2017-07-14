@@ -24,14 +24,16 @@ TOC
 ##### To be sorted
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
-[a](https://github.com/fmtn/a)
-* ActiveMQ CLI testing and message management
 
 [PiTap](https://github.com/williamknows/PiTap)
 * Automatic bridge creation and packet capture (plug-and-capture) on a battery-powered Raspberry Pi with multiple network interfaces.
 * [Blogpost]()
 
 [RFC 2827 -  Network Ingress Filtering: Defeating Denial of Service Attacks which employ IP Source Address Spoofing](https://tools.ietf.org/html/rfc2827)
+
+[gateway-finder](https://github.com/pentestmonkey/gateway-finder)
+* Gateway-finder is a scapy script that will help you determine which of the systems on the local LAN has IP forwarding enabled and which can reach the Internet.
+
 ##### sort end
 
 
@@ -72,7 +74,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [SSH for Fun and Profit](https://karla.io/2016/04/30/ssh-for-fun-and-profit.html)
 
-
+[STP MiTM Attack and L2 Mitigation Techniques on the Cisco Catalyst 6500 ](http://www.ndm.net/ips/pdf/cisco/Catalyst-6500/white_paper_c11_605972.pdf)
 
 
 
@@ -245,6 +247,12 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [Seth](https://github.com/SySS-Research/Seth)
 * Seth is a tool written in Python and Bash to MitM RDP connections. It attempts to downgrade the connection and extract clear text credentials.
 
+[WSUXploit](https://github.com/pimps/wsuxploit)
+* This is a MiTM weaponized exploit script to inject 'fake' updates into non-SSL WSUS traffic. It is based on the WSUSpect Proxy application that was introduced to public on the Black Hat USA 2015 presentation, 'WSUSpect – Compromising the Windows Enterprise via Windows Update'
+
+
+
+
 
 
 
@@ -315,6 +323,38 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [AQUATONE](https://github.com/michenriksen/aquatone)
 * AQUATONE is a set of tools for performing reconnaissance on domain names. It can discover subdomains on a given domain by using open sources as well as the more common subdomain dictionary brute force approach. After subdomain discovery, AQUATONE can then scan the hosts for common web ports and HTTP headers, HTML bodies and screenshots can be gathered and consolidated into a report for easy analysis of the attack surface.
 
+[Sublist3r](https://github.com/aboul3la/Sublist3r)
+* Fast subdomains enumeration tool for penetration testers
+
+[Altdns](https://github.com/infosec-au/altdns)
+* Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging) as well as takes in a list of subdomains that you know of.
+
+[PowerUpSQL: A PowerShell Toolkit for Attacking SQL Server](https://github.com/NetSPI/PowerUpSQL)
+* The PowerUpSQL module includes functions that support SQL Server discovery, auditing for common weak configurations, and privilege escalation on scale. It is intended to be used during internal penetration tests and red team engagements. However, PowerUpSQL also includes many functions that could be used by administrators to quickly inventory the SQL Servers in their ADS domain.
+* [Documentation](https TLS/SSL Vulnerabilities ://github.com/NetSPI/PowerUpSQL/wiki)
+* [Overview of PowerUpSQL](https://github.com/NetSPI/PowerUpSQL/wiki/Overview-of-PowerUpSQL)
+
+[sipvicious](https://github.com/EnableSecurity/sipvicious)
+
+
+
+[t50 - the fastest packet injector.](https://github.com/fredericopissarra/t50)
+* T50 was designed to perform “Stress Testing”  on a variety of infra-structure
+network devices (Version 2.45), using widely implemented protocols, and after
+some requests it was was re-designed to extend the tests (as of Version 5.3),
+covering some regular protocols (ICMP,  TCP  and  UDP),  some infra-structure
+specific protocols (GRE,  IPSec  and  RSVP), and some routing protocols (RIP,
+EIGRP and OSPF).
+
+[a](https://github.com/fmtn/a)
+* ActiveMQ CLI testing and message management
+
+
+
+
+
+
+
 
 
 
@@ -368,6 +408,17 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [Passive IPS Reconnaissance and Enumeration - false positive (ab)use - Arron Finnon](https://vimeo.com/108775823)
 * Network Intrusion Prevention Systems or NIPS have been plagued by "False Positive" issues almost since their first deployment. A "False Positive" could simply be described as incorrectly or mistakenly detecting a threat that is not real. A large amount of research has gone into using "False Positive" as an attack vector either to attack the very validity of an IPS system or to conduct forms of Denial of Service attacks. However the very reaction to a "False Positive" in the first place may very well reveal more detailed information about defences than you might well think.
 
+[Attacking Nextgen Firewalls](https://www.youtube.com/watch?v=ZoCf9yWC32g)
+
+[DNS hijacking using cloud providers - Frans Rosén](https://www.youtube.com/watch?v=HhJv8CU-RIk)
+
+
+
+
+
+
+
+
 
 
 
@@ -417,7 +468,8 @@ IPv6: Basic Attacks and Defences - Christopher Werny[TROOPERS15]
 
 [[TROOPERS15] Merike Kaeo - Deploying IPv6 Securely - Avoiding Mistakes Others Have Made](https://www.youtube.com/watch?v=rQg4y78xHf8)
 
-
+[IPv6 Local Neighbor Discovery Using Router Advertisement](https://www.rapid7.com/db/modules/auxiliary/scanner/discovery/ipv6_neighbor_router_advertisement)
+* Send a spoofed router advertisement with high priority to force hosts to start the IPv6 address auto-config. Monitor for IPv6 host advertisements, and try to guess the link-local address by concatinating the prefix, and the host portion of the IPv6 address. Use NDP host solicitation to determine if the IP address is valid'
 
 
 
@@ -446,6 +498,7 @@ IPv6: Basic Attacks and Defences - Christopher Werny[TROOPERS15]
 * This is part six in a series which will explain the evasions done by HTTP Evader. This part is about misusing white-space to bypass the firewall.
 
 [Evading IDS/IPS by Exploiting IPv6 Features - Antonios Atlasis, Rafael Schaefer](https://www.youtube.com/watch?v=avMeYIaU8DA&list=PL1eoQr97VfJni4_O1c3kBCCWwxu-6-lqy)
+
 
 
 
@@ -488,5 +541,8 @@ TCPDump
 [More on HNAP - What is it, How to Use it,How to Find it](https://isc.sans.edu/diary/More+on+HNAP+-+What+is+it%2C+How+to+Use+it%2C+How+to+Find+it/17648)
 
 [Modbus interface tutorial](https://www.lammertbies.nl/comm/info/modbus.html)
+
+[TLS/SSL Vulnerabilities](https://www.gracefulsecurity.com/tls-ssl-vulnerabilities/)
+
 
 

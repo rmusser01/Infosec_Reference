@@ -48,7 +48,7 @@ These classes are all focused on computer/information security. If you're lookin
 [Hackr.io](http://hackr.io/)
 * Share and discover the best programming tutorials and courses online.
 
-[Open Security Training](www.opensecuritytraining.info)
+[Open Security Training](https://www.opensecuritytraining.info)
 
 
 

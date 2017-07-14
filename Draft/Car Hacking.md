@@ -15,7 +15,6 @@
 http://dn5.ljuska.org/cyber-attacks-on-vehicles-2.html 
 
 
-
 ### End cull
 
 
@@ -40,7 +39,7 @@ http://dn5.ljuska.org/cyber-attacks-on-vehicles-2.html
 
 [Tesla Model S JSON API (unofficial RE post)](http://docs.timdorr.apiary.io/#reference/vehicles)
 
-
+[Tesla Model S JSON API (unofficial RE post)](http://docs.timdorr.apiary.io/#reference/vehicles)
 
 
 
@@ -75,6 +74,14 @@ http://dn5.ljuska.org/cyber-attacks-on-vehicles-2.html
 
 [CBM - The Bicho](https://github.com/UnaPibaGeek/CBM)
 * For the first time, a hardware backdoor tool is presented having several advanced features, such as: remote control via SMS commands, automated launch of attack payloads at a GPS location or when a specific car status is reached; and a configuration interface that allows users to create attack payloads in an easy manner. Have you ever imagined the possibility of your car being automatically attacked based on its GPS coordinates, its current speed or any other set of parameters? Now it's possible :-)
+
+
+#### Hardware Tools
+
+[CBM - The Bicho](https://github.com/UnaPibaGeek/CBM)
+* For the first time, a hardware backdoor tool is presented having several advanced features, such as: remote control via SMS commands, automated launch of attack payloads at a GPS location or when a specific car status is reached; and a configuration interface that allows users to create attack payloads in an easy manner. Have you ever imagined the possibility of your car being automatically attacked based on its GPS coordinates, its current speed or any other set of parameters? Now it's possible :-)
+
+
 
 
 

@@ -23,29 +23,17 @@
 
 [pagexec - GRSEC](https://pax.grsecurity.net/docs/pageexec.txt)
 
-http://duartes.org/gustavo/blog/post/memory-translation-and-segmentation/ 
+[Memory Translation and Segmentation](http://duartes.org/gustavo/blog/post/memory-translation-and-segmentation/)
 
-http://duartes.org/gustavo/blog/category/internals/
-
-https://www.bnxnet.com/wp-content/uploads/2015/01/WinAPIs_for_hackers.pdf
-
-
+[duartes.org - internals](http://duartes.org/gustavo/blog/category/internals/)
 
 https://xorl.wordpress.com/2010/10/14/linux-glibc-stack-canary-values/
 
-https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/
-
-https://hshrzd.wordpress.com/2016/03/19/introduction-to-ads-alternate-data-streams/ 
-
-
-[x86 Disassembly/Windows Executable Files - WikiBooks](https://en.wikibooks.org/wiki/X86_Disassembly/Windows_Executable_Files)
-
+[Understanding glibc Malloc](https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/)
 
 https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-and-10/ 
 
 [Stack Smashing Protector](http://wiki.osdev.org/Stack_Smashing_Protector)
-
-[Minimal COM object registration](https://blogs.msdn.microsoft.com/larryosterman/2006/01/05/minimal-com-object-registration/)
 
 
 #### End Sort
@@ -74,8 +62,19 @@ https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-
 
 [theForger's Win32 API Programming Tutorial](http://www.winprog.org/tutorial/)
 
+[x86 Disassembly/Windows Executable Files - WikiBooks](https://en.wikibooks.org/wiki/X86_Disassembly/Windows_Executable_Files)
+
+[WinAPIs for Hackers](https://www.bnxnet.com/wp-content/uploads/2015/01/WinAPIs_for_hackers.pdf)
+
 
 #### Documentation
+
+[AppInit_DLLs in Windows 7 and Windows Server 2008 R2](https://msdn.microsoft.com/en-us/library/windows/desktop/dd744762(v=vs.85).aspx)
+
+[Antimalware Scan Interface Reference](https://msdn.microsoft.com/en-us/library/windows/desktop/dn889588(v=vs.85).aspx)
+
+[Minimal COM object registration](https://blogs.msdn.microsoft.com/larryosterman/2006/01/05/minimal-com-object-registration/)
+
 
 
 ##### Networking
@@ -191,7 +190,7 @@ https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-
 
 [MS "reg" commandreference](http://www.computerhope.com/reg.htm)
 
-
+[Introduction to ADS: Alternate Data Streams](https://hshrzd.wordpress.com/2016/03/19/introduction-to-ads-alternate-data-streams/)
 
 
 

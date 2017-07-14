@@ -20,6 +20,7 @@ TOC
 #### sort
 
 https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
+
 #### end sort
 ##### To Do
 * Add Descriptions/generals to types of fuzzing
@@ -154,7 +155,7 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 [Mining for Bugs with Graph Database Queries [31c3]](https://www.youtube.com/watch?v=291hpUE5-3g)
 * [Starting out with Joern](http://tsyrklevich.net/2015/03/28/starting-out-with-joern/)
-[Fuzz Smarter, Not Harder (An Afl-Fuzz Primer) BSides-SF 2016](www.securitytube.net/video/15372)
+[Fuzz Smarter, Not Harder (An Afl-Fuzz Primer) BSides-SF 2016](http://www.securitytube.net/video/15372)
 
 [File Format Fuzzing in Android](https://deepsec.net/docs/Slides/2015/File_Format_Fuzzing_in_Android_-Alexandru_Blanda.pdf)
 
@@ -165,6 +166,13 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 [Unusual bugs - 23C3](https://www.youtube.com/watch?v=qj79Qdmw0Pk) * In this presentation I'll present a series of unusual security bugs. Things that I've ran into at some point and went "There's gotta be some security consequence here". None of these are really a secret, and most of them are even documented somewhere. But apparently most people don't seem to know about them.  What you'll see in this presentation is a list of bugs and then some explanation of how these could be exploited somehow. Some of the things I'll be talking about are (recursive) stack overflow, NULL pointer dereferences, regular expressions and more. 
 
 [ClusterFuzz](http://nullcon.net/website/archives/ppt/goa-15/analyzing-chrome-crash-reports-at-scale-by-abhishek-arya.pdf)
+
+[Introduction to USB and Fuzzing DEFCON23 Matt DuHarte](https://www.youtube.com/watch?v=KWOTXypBt4E)
+
+[Browser Bug Hunting and Mobile](http://slides.com/revskills/fzbrowsers#/)
+
+[Upping Your Bug Hunting Skills Using Symbolic Virtual Machines by Anto  - x33fcon](https://www.youtube.com/watch?v=IPSZxGaLlyk)
+
 
 
 
@@ -247,7 +255,12 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 [rage_fuzzer](https://github.com/deanjerkovich/rage_fuzzer)
 * A dumb protocol-unaware packet fuzzer/replayer.
 
+[Introduction to USB and Fuzzing DEFCON23 Matt DuHarte](https://www.youtube.com/watch?v=KWOTXypBt4E)
 
+[libfuzzer-gv](https://github.com/guidovranken/libfuzzer-gv)
+* enhanced fork of libFuzzer
+
+[libFuzzer-gv: new techniques for dramatically faster fuzzing](https://guidovranken.wordpress.com/2017/07/08/libfuzzer-gv-new-techniques-for-dramatically-faster-fuzzing/)
 
 
 #### Windows Specific

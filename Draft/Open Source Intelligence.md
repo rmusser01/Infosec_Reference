@@ -22,6 +22,17 @@ http://toddington.com/resources/
 
 www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
+
+[PowerMeta](https://github.com/dafthack/PowerMeta)
+* PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches. It then allows for the download of those files from the target domain. After retrieving the files, the metadata associated with them can be analyzed by PowerMeta. Some interesting things commonly found in metadata are usernames, domains, software titles, and computer names.
+
+[Fantastic OSINT and where to find it - blindseeker/malware focused](http://archive.is/sYzcP#selection-62.0-62.1)
+
+[Corporate Espionage without the Hassle of Committing Felonies](https://www.slideshare.net/JohnCABambenek/corporate-espionage-without-the-hassle-of-committing-felonies)
+
+[How to Use Python to Spy on Your Friends: Web APIs, Recon ng, & OSINT](https://www.youtube.com/watch?v=BOjz7NfsLpA)
+
+
 #### End cull
 
 
@@ -227,7 +238,7 @@ http://www.onstrat.com/osint/
 
 [Intel Techniques - Links](http://www.inteltechniques.com/links.html)
 
-[OSINTInsight](www.osintinsight.com/shared.php?user=Mediaquest&folderid=0)
+[OSINTInsight](http://www.osintinsight.com/shared.php?user=Mediaquest&folderid=0)
 
 http://toddington.com/resources/
 

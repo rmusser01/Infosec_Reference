@@ -8,6 +8,16 @@
 * Papers
 
 
+
+
+
+
+
+
+
+
+
+
 ### Talks & Presenetations
 
 [A Hacker's Guide to Risk](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-Bruce-Potter-Hackers-Guide-to-Risk.pdf)
@@ -22,10 +32,13 @@
 
 
 
-
 ### Writeups/Articles
 
 [Why your threat model is probably wrong - Cyberwar](http://blog.thinkst.com/p/cyberwar-why-your-threat-model-is.html)
+
+[7 Steps to Threat Modeling](https://www.slideshare.net/chinwhei/7-steps-to-threat-modeling)
+
+
 
 
 
@@ -37,6 +50,11 @@
 
 [ThreadFix](https://github.com/denimgroup/threadfix)
 * ThreadFix is a software vulnerability aggregation and management system that helps organizations aggregate vulnerability data, generate virtual patches, and interact with software defect tracking systems.
+
+[ThreadFix](https://github.com/denimgroup/threadfix)
+* ThreadFix is a software vulnerability aggregation and management system that helps organizations aggregate vulnerability data, generate virtual patches, and interact with software defect tracking systems.
+
+
 
 
 

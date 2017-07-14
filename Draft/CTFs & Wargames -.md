@@ -18,6 +18,13 @@ Cull
 [Greenhorn](https://github.com/trailofbits/greenhorn)
 * Greenhorn is a Windows Pwnable released during CSAW Quals 2014. It's meant to be an introduction to modern Windows binary exploitation.
 
+hackthebox
+
+pentestit
+
+pentestlab
+
+root-me
 
 
 
@@ -115,7 +122,7 @@ Wechall
 
 [List of themed Hacker challenges](http://counterhack.net/Counter_Hack/Challenges.html)
 
-[Sans Community Forensics Challenges](digital-forensics.sans.org/community/challenges)
+[Sans Community Forensics Challenges](https://www.digital-forensics.sans.org/community/challenges)
 
 
 

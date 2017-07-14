@@ -12,6 +12,7 @@ Cull
 	* [Linux](#linux)
 	* [Windows](#win)
 * [PCaps/Static Data](#pcap)
+* Making Sense of the Data
 * [Papers](#papers)
 * [Tricks & Tips](#tricks)
 
@@ -21,43 +22,14 @@ Cull
 * Create incident Response section
 
 #### Cull
-
-[SweetSecurity](https://github.com/TravisFSmith/SweetSecurity)
-* Scripts to setup and install Bro IDS, Elastic Search, Logstash, Kibana, and Critical Stack on a Raspberry Pi 3 device.
-
-
 [laikaboss](https://github.com/lmco/laikaboss)
-
-[](http://www.irongeek.com/i.php?page=videos/houseccon2015/t302-the-fox-is-in-the-henhouse-detecting-a-breach-before-the-damage-is-done-josh-sokol)
-
-[411](https://github.com/kiwiz/411)
-* Configure Searches to periodically run against a variety of data sources. You can define a custom pipeline of Filters to manipulate any generated Alerts and forward them to multiple Targets.
 
 | **WMI-IDS** - WMI-IDS is a proof-of-concept agent-less host intrusion detection system designed to showcase the unique ability of WMI to respond to and react to operating system events in real-time. | https://github.com/fireeye/flare-wmi/tree/master/WMI-IDS
 
 http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Analysis-What-Should-You-Choose.pdf
 
-[](http://www.appliednsm.com/introducing-flowbat/)
-* Awesome flow tool, SiLK backend
-
-[Stenographer](https://github.com/google/stenographer)
-* Stenographer is a full-packet-capture utility for buffering packets to disk for intrusion detection and incident response purposes. It provides a high-performance implementation of NIC-to-disk packet writing, handles deleting those files as disk fills up, and provides methods for reading back specific sets of packets quickly and easily.
-
-[ROCK NSM](http://rocknsm.io/)
-
 [Response Operation Collections Kit Reference Build](https://github.com/rocknsm/rock)
 
-
-[PCAPDB](https://github.com/dirtbags/pcapdb)
-* PcapDB is a distributed, search-optimized open source packet capture system. It was designed to replace expensive, commercial appliances with off-the-shelf hardware and a free, easy to manage software system. Captured packets are reorganized during capture by flow (an indefinite length sequence of packets with the same src/dst ips/ports and transport proto), indexed by flow, and searched (again) by flow. The indexes for the captured packets are relatively tiny (typically less than 1% the size of the captured data).
-
-[Aktaion: Open Source Tool For "Micro Behavior Based" Exploit Detection and Automated GPO Policy Generation](https://github.com/jzadeh/Aktaion)
-* Aktaion is a lightweight JVM based project for detecting exploits (and more generally attack behaviors). The project is meant to be a learning/teaching tool on how to blend multiple security signals and behaviors into an expressive framework for intrusion detection. The cool thing about the project is it provides an expressive mechanism to add high level IOCs (micro beahviors) such as timing behavior of a certain malware family.
-
-[Passive IPS Reconnaissance and Enumeration - false positive (ab)use - Arron Finnon](https://vimeo.com/108775823)
-* Network Intrusion Prevention Systems or NIPS have been plagued by "False Positive" issues almost since their first deployment. A "False Positive" could simply be described as incorrectly or mistakenly detecting a threat that is not real. A large amount of research has gone into using "False Positive" as an attack vector either to attack the very validity of an IPS system or to conduct forms of Denial of Service attacks. However the very reaction to a "False Positive" in the first place may very well reveal more detailed information about defences than you might well think.
-
-[Public:Windows Event Log Zero 2 Hero Slides](https://docs.google.com/presentation/d/1dkrldTTlN3La-OjWtkWJBb4hVk6vfsSMBFBERs6R8zA/edit#slide=id.g21acf94f3f_2_27)
 
 
 #### End Cull
@@ -73,6 +45,18 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 * Many struggle in their job with the decision of what events to log in battle against costly increases to their licensing of a commercial SIEM or other logging solution. Leveraging the open source solutions used for "big-data" that have been proven by many can help build a scalable, reliable, and hackable event logging and security intelligence system to address security and (*cringe*) compliance requirements. We’ll walk through the various components and simple steps to building your own logging environment that can extensively grow (or keep sized just right) with just additional hardware cost and show numerous examples you can implement as soon as you get back to work (or home).
 
 [Current State of Virtualizing Network Monitoring](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t202-current-state-of-virtualizing-network-monitoring-daniel-lohin-ed-sealing)
+
+[The fox is in the Henhouse - Detecting a breach before the damage is done](http://www.irongeek.com/i.php?page=videos/houseccon2015/t302-the-fox-is-in-the-henhouse-detecting-a-breach-before-the-damage-is-done-josh-sokol)
+
+[Passive IPS Reconnaissance and Enumeration - false positive (ab)use - Arron Finnon](https://vimeo.com/108775823)
+* Network Intrusion Prevention Systems or NIPS have been plagued by "False Positive" issues almost since their first deployment. A "False Positive" could simply be described as incorrectly or mistakenly detecting a threat that is not real. A large amount of research has gone into using "False Positive" as an attack vector either to attack the very validity of an IPS system or to conduct forms of Denial of Service attacks. However the very reaction to a "False Positive" in the first place may very well reveal more detailed information about defences than you might well think.
+
+[Public:Windows Event Log Zero 2 Hero Slides](https://docs.google.com/presentation/d/1dkrldTTlN3La-OjWtkWJBb4hVk6vfsSMBFBERs6R8zA/edit#slide=id.g21acf94f3f_2_27)
+
+
+
+
+
 
 
 
@@ -147,7 +131,7 @@ and contains internal tools, with a powerful interactive console, for analysis a
 
 
 
-#### [Suricata](suricata?)
+#### [Suricata](https://suricata-ids.org/)
 * Suricata is a high performance Network IDS, IPS and Network Security Monitoring engine. Open Source and owned by a community run non-profit foundation, the Open Information Security Foundation (OISF).
 * [Suricata Documentation](https://redmine.openinfosecfoundation.org/projects/suricata/wiki)
 * [Suricata Quick Start Guide](https://redmine.openinfosecfoundation.org/projects/suricata/wiki/Quick_Start_Guide)
@@ -156,7 +140,7 @@ and contains internal tools, with a powerful interactive console, for analysis a
 
 #### [Argus](http://qosient.com/argus/#)
 * Argus is an open source layer 2+ auditing tool (including IP audit) written by Carter Bullard which has been under development for over 10 years.
-* [Argus on NSM Wiki](nsmwiki.org/index.php?title=Argus)
+* [Argus on NSM Wiki](https://www.nsmwiki.org/index.php?title=Argus)
 * [Argus FAQ](http://qosient.com/argus/faq.shtml)
 * [Argus How-To](http://qosient.com/argus/howto.shtml)
 * [Argus Manual](http://qosient.com/argus/manuals.shtml)
@@ -208,10 +192,18 @@ losing the essense in the DNS answer.
 * [Slide Deck on Squert](https://ea01c580-a-62cb3a1a-s-sites.googlegroups.com/site/interrupt0x13h/squert-canheit2014.pdf?attachauth=ANoY7crNJbed8EeVy3r879eb2Uze_ky7eiO-jvwXp2J7ik_hOyk0kK6uhX3_oT3u4Kuzw7AiuTAQhYGze5jdlQ-w8lagM1--XESGAf0ebLBZU6bGYd7mIC9ax1H49jvQHGb8kojEal8bayL0evZpOFqsr135DpazJ6F5HkVACpHyCqh3Gzafuxxog_Ybp7k4IgqltqH0pZddcIcjI0LwhHaj3Al085C3tbw2YMck1JQSeeBYvF9hL-0%3D&attredirects=0)
 * [Install/setup/etc - Github](https://github.com/int13h/squert)
 
+[ROCK NSM](http://rocknsm.io/)
 
+[Response Operation Collections Kit Reference Build](https://github.com/rocknsm/rock)
 
+[flowbat](http://www.appliednsm.com/introducing-flowbat/)
+* Awesome flow tool, SiLK backend
 
+[Stenographer](https://github.com/google/stenographer)
+* Stenographer is a full-packet-capture utility for buffering packets to disk for intrusion detection and incident response purposes. It provides a high-performance implementation of NIC-to-disk packet writing, handles deleting those files as disk fills up, and provides methods for reading back specific sets of packets quickly and easily.
 
+[Aktaion: Open Source Tool For "Micro Behavior Based" Exploit Detection and Automated GPO Policy Generation](https://github.com/jzadeh/Aktaion)
+* Aktaion is a lightweight JVM based project for detecting exploits (and more generally attack behaviors). The project is meant to be a learning/teaching tool on how to blend multiple security signals and behaviors into an expressive framework for intrusion detection. The cool thing about the project is it provides an expressive mechanism to add high level IOCs (micro beahviors) such as timing behavior of a certain malware family.
 
 
 
@@ -235,6 +227,24 @@ losing the essense in the DNS answer.
 * [Introduction to Kibana](http://www.elasticsearch.org/guide/en/kibana/current/introduction.html)
 * [Kibana Documentation/Guides](http://www.elasticsearch.org/guide/en/kibana/current/)
 * [Installing Kibana](http://www.elasticsearch.org/overview/kibana/installation/)
+
+
+
+
+
+
+### Making Sense of the Data
+[411](https://github.com/kiwiz/411)
+* Configure Searches to periodically run against a variety of data sources. You can define a custom pipeline of Filters to manipulate any generated Alerts and forward them to multiple Targets.
+
+[PCAPDB](https://github.com/dirtbags/pcapdb)
+* PcapDB is a distributed, search-optimized open source packet capture system. It was designed to replace expensive, commercial appliances with off-the-shelf hardware and a free, easy to manage software system. Captured packets are reorganized during capture by flow (an indefinite length sequence of packets with the same src/dst ips/ports and transport proto), indexed by flow, and searched (again) by flow. The indexes for the captured packets are relatively tiny (typically less than 1% the size of the captured data).
+
+[RITA - Finding Bad Things on Your Network Using Free and Open Source Tools](https://www.youtube.com/watch?v=mpCBOQSjbOA)
+
+[You Pass Butter: Next Level Security Monitoring Through Proactivity](http://www.irongeek.com/i.php?page=videos/nolacon2016/110-you-pass-butter-next-level-security-monitoring-through-proactivity-cry0-s0ups)
+
+
 
 
 
@@ -277,10 +287,10 @@ losing the essense in the DNS answer.
 
 ### <a name="pcap">Pcaps/Static Analysis(I.e. you have a pcap file or you're not trying to do live analysis/Aren't trying to use one of the above tools)</a>
 
-[Silk - 
+[Silk -]()
 * The SiLK analysis suite is a collection of command-line tools for processing SiLK Flow records created by the SiLK packing system. These tools read binary files containing SiLK Flow records and partition, sort, and count these records. The most important analysis tool is rwfilter, an application for querying the central data repository for SiLK Flow records that satisfy a set of filtering options. The tools are intended to be combined in various ways to perform an analysis task. A typical analysis uses UNIX pipes and intermediate data files to share data between invocations of the tools. 
 * [Administering/Installing SiLK](https://tools.netsa.cert.org/confluence/display/tt/Administration)
-* [SiLK Tool Tips](https://tools.netsa.cert.org/confluence/display/tt/Tooltips
+* [SiLK Tool Tips](https://tools.netsa.cert.org/confluence/display/tt/Tooltips)
 * [SiLK Reference Guide](https://tools.netsa.cert.org/silk/silk-reference-guide.html)
 * [SiLK Toolsuite Quick Reference Guide](https://tools.netsa.cert.org/silk/silk-quickref.pdf)
 
@@ -321,3 +331,7 @@ losing the essense in the DNS answer.
 
 
 
+### Other
+
+[SweetSecurity](https://github.com/TravisFSmith/SweetSecurity)
+* Scripts to setup and install Bro IDS, Elastic Search, Logstash, Kibana, and Critical Stack on a Raspberry Pi 3 device.

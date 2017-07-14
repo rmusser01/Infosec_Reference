@@ -35,8 +35,6 @@ Scapy
 
 [gr-lora](https://github.com/BastilleResearch/gr-lora)
 * This is an open-source implementation of the LoRa CSS PHY, based on the blind signal analysis conducted by @matt-knight. The original research that guided this implementation may be found at https://github.com/matt-knight/research
-
-
 ##### End Cull
 
 
@@ -171,7 +169,7 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 [GNU Radio](http://gnuradio.org/redmine/projects/gnuradio/wiki)
 * GNU Radio is a free & open-source software development toolkit that provides signal processing blocks to implement software radios. It can be used with readily-available low-cost external RF hardware to create software-defined radios, or without hardware in a simulation-like environment. It is widely used in hobbyist, academic and commercial environments to support both wireless communications research and real-world radio systems.
 
-[So you want to get into SDR talk](www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/01-so-ya-wanna-get-into-sdr-russell-handorf)
+[So you want to get into SDR talk](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/01-so-ya-wanna-get-into-sdr-russell-handorf)
 
 [Software Defined Radio with HackRF](https://greatscottgadgets.com/sdr/[WebSDR](http://websdr.org/)
 * A WebSDR is a Software-Defined Radio receiver connected to the internet, allowing many listeners to listen and tune it simultaneously. SDR technology makes it possible that all listeners tune independently, and thus listen to different signals; this is in contrast to the many classical receivers that are already available via the internet. 
@@ -259,7 +257,7 @@ GNU Radio blocks we have written to handle several protocols
 [PyBOMBS](http://gnuradio.org/redmine/projects/pybombs/wiki)
 * PyBOMBS (Python Build Overlay Managed Bundle System) is the new GNU Radio install management system for resolving dependencies and pulling in out-of-tree projects. One of the main purposes of PyBOMBS is to aggregate out-of-tree projects, which means that PyBOMBS needs to have new recipes for any new project. We have done a lot of the initial work to get known projects into the PyBOMBS system as is, but we will need project developers for new OOT projects or other projects not currently listed to help us out with this effort.	
 
- 
+[UAV Transponders & Tracker Kits - UST](http://www.unmannedsystemstechnology.com/company/sagetech-corporation/) 
 
 
 
@@ -308,7 +306,7 @@ In this article, we proved the capabilities of an inexpensive wireless adapter a
 [eaphammer](https://github.com/s0lst1c3/eaphammer)
 * EAPHammer is a toolkit for performing targeted evil twin attacks against WPA2-Enterprise networks. It is designed to be used in full scope wireless assessments and red team engagements. As such, focus is placed on providing an easy-to-use interface that can be leveraged to execute powerful wireless attacks with minimal manual configuration. To illustrate how fast this tool is, here's an example of how to setup and execute a credential stealing evil twin attack against a WPA2-TTLS network in just two commands:
 
-
+[Emulation and Exploration of BCM WiFi Frame Parsing using LuaQEMU](https://comsecuris.com/blog/posts/luaqemu_bcm_wifi/)
 
 
 
@@ -444,6 +442,10 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 [Brute forcing Wi-Fi Protected Setup - Stefan Viehböck](https://sviehb.files.wordpress.com/2011/12/viehboeck_wps.pdf)
 * The original paper on WPS cracking.
+
+[LTE Security - How good is it?](http://csrc.nist.gov/news_events/cif_2015/research/day2_research_200-250.pdf)
+
+
 
 
 

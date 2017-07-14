@@ -21,11 +21,7 @@ Cull
 * [Papers](#papers)
 
 ###Cull
-http://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul 
-
-
-[Reflective DLL Injection](http://www.harmonysecurity.com/files/HS-P005_ReflectiveDllInjection.pdf)
-
+http://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul
 http://en.cppreference.com/w/c	
 #### End Cull
 
@@ -57,6 +53,10 @@ http://en.cppreference.com/w/c
 
 [App Ideas - Stuff to build out ot improve your programming skills](https://github.com/tastejs/awesome-app-ideas)
 
+[Secure iOS application development](https://github.com/felixgr/secure-ios-app-dev)
+* This guide is a collection of the most common vulnerabilities found in iOS applications. The focus is on vulnerabilities in the applications’ code and only marginally covers general iOS system security, Darwin security, C/ObjC/C++ memory safety, or high-level application security. Nevertheless, hopefully the guide can serve as training material to iOS app developers that want to make sure that they ship a more secure app. Also, iOS security reviewers can use it as a reference during assessments.
+
+
 
 
 ### Articles
@@ -72,7 +72,7 @@ http://en.cppreference.com/w/c
 [Record and Replay Debugging with Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Record_and_Replay_Debugging_Firefox)
 
 [rr](https://github.com/mozilla/rr)
-* rr is a lightweight tool for recording and replaying execution of applications (trees of processes and threads). More information about the project, including instructions on how to install, run, and build rr, is at http://rr-project.org.
+* rr is a lightweight tool for recording and replaying execution of applications (trees of processes and threads). More information about the project, including instructions on how to install, run, and build rr, is at http://rr-project.org.w
 
 
 ###<a name="sca">Source Code Analysis</a>
@@ -115,6 +115,7 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 [cgasm](https://github.com/bnagy/cgasm)
 * cgasm is a standalone, offline terminal-based tool with no dependencies that gives me x86 assembly documentation. It is pronounced "SeekAzzem".
 
+[x86 Assembly Crash Course](https://www.youtube.com/watch?v=75gBFiFtAb8)
 
 #### Reference
 
@@ -134,11 +135,19 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 
 [Intel x86 Assembler Instruction Set Opcode Table](http://sparksandflames.com/files/x86InstructionChart.html)
 
-### Videos
+#### Videos
 
 [Introduction Video Series(6) to x86 Assembly](https://www.youtube.com/watch?v=qn1_dRjM6F0&list=PLPXsMt57rLthf58PFYE9gOAsuyvs7T5W9)
 
 [Intro to x86 - Derbycon5](http://www.irongeek.com/i.php?page=videos/derbycon5/stable34-intro-to-x86-stephanie-preston)
+
+### Other
+
+[aslrepl](https://github.com/enferex/asrepl)
+* asrepl is an assembly based REPL. The REPL processes each line of user input, the output can be witnessed by issuing the command 'regs' and looking at the register state.
+
+
+
 
 
 ### Android
@@ -197,6 +206,7 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 [Serianalyzer](https://github.com/mbechler/serianalyzer)
 * A static byte code analyzer for Java deserialization gadget research
 
+[Protect Your Java Code - Through Obfuscators and Beyond](https://www.excelsior-usa.com/articles/java-obfuscators.html)
 
 
 
@@ -228,6 +238,10 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 }
 
 """
+
+### PHP
+
+[PHP: a fractal of bad design](https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/)
 
 
 
@@ -312,3 +326,8 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 #### Other
 
 [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
+
+[Mostly Adequate Guide](https://drboolean.gitbooks.io/mostly-adequate-guide/)
+* This is a book on the functional paradigm in general. We'll use the world's most popular functional programming language: JavaScript. Some may feel this is a poor choice as it's against the grain of the current culture which, at the moment, feels predominately imperative.
+
+[Reflective DLL Injection](http://www.harmonysecurity.com/files/HS-P005_ReflectiveDllInjection.pdf)

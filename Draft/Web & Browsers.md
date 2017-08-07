@@ -39,7 +39,9 @@
 * [Attack Writeups](#writeups)
 * [Securing Web Based Applications/Servers](#secure)
 * [Non-Attack Writeups](#nonwriteup)
+# [CSRF](#csrf)
 * [HTML5](#html5)
+* [JSON Web Tokens](#jwt)
 * Rest
 * API Testing
 * Web Sockets
@@ -57,10 +59,6 @@ DVWA/similar to educational section
 
 #### Sort
 
-
-
-[Cross Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
-
 http://console-cowboys.blogspot.com/2011/05/web-hacking-video-series-1-automating.html 
 
 http://www.grymoire.com/Security/Hardware.html
@@ -68,48 +66,7 @@ http://www.grymoire.com/Security/Hardware.html
 prompt.ml
 
 Clickjacking attacks
-
-
-[PowerWebShot](https://github.com/dafthack/PowerWebShot)
-* A PowerShell tool for taking screenshots of multiple web servers quickly.
-
-[BurpSmartBuster](https://github.com/pathetiq/BurpSmartBuster)
-* A Burp Suite content discovery plugin that add the smart into the Buster!
-
-[Java Deserialization Exploits](https://github.com/CoalfireLabs/java_deserialization_exploits)
-* A collection of Java Deserialization Exploits
-
-[Critical vulnerabilities in JSON Web Token libraries - 2015](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/)
-
-[100 OWASP Top 10 Hacking Web Applications with Burp Suite Chad Furman](https://www.youtube.com/watch?v=2p6twRRXK_o)
-
-[json token decode](http://jwt.calebb.net/)
-
-[JWT Inspector - FF plugin](https://www.jwtinspector.io/)
-* JWT Inspector is a browser extension that lets you decode and inspect JSON Web Tokens in requests, cookies, and local storage. Also debug any JWT directly from the console or in the built-in UI. 
-
-[Attacking JWT authentication](https://www.sjoerdlangkemper.nl/2016/09/28/attacking-jwt-authentication/)
-
-[WAFPASS](https://github.com/wafpassproject/wafpass)
-* Analysing parameters with all payloads' bypass methods, aiming at benchmarking security solutions like WAF.
-
-[collaborator-everywhere](https://github.com/PortSwigger/collaborator-everywhere)
-* A Burp Suite Pro extension which augments your proxy traffic by injecting non-invasive headers designed to reveal backend systems by causing pingbacks to Burp Collaborator
-
-[hackability](https://github.com/PortSwigger/hackability)
-* Rendering Engine Hackability Probe performs a variety of tests to discover what the unknown rendering engine supports. To use it simply extract it to your web server and visit the url in the rendering engine you want to test. The more successful probes you get the more likely the target engine is vulnerable to attack.
-
-[Exploiting misuse of Python's "pickle"](https://blog.nelhage.com/2011/03/exploiting-pickle/)
-
-[Typosquatting programming language package managers](http://incolumitas.com/2016/06/08/typosquatting-package-managers/)
-
-[The Website Obesity Crisis](http://idlewords.com/talks/website_obesity.htm)
-
-[HUNT Burp Suite Extension](https://github.com/bugcrowdlabs/HUNT)
-* HUNT Logo  HUNT is a Burp Suite extension to: 1. Identify common parameters vulnerable to certain vulnerability classes. 2. Organize testing methodologies inside of Burp Suite.
-
-[Caja](https://developers.google.com/caja/)
-*  The Caja Compiler is a tool for making third party HTML, CSS and JavaScript safe to embed in your website. It enables rich interaction between the embedding page and the embedded applications. Caja uses an object-capability security model to allow for a wide range of flexible security policies, so that your website can effectively control what embedded third party code can do with user data. 
+ 
 
 
 #### End Sort
@@ -154,6 +111,7 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
 ### Talks &  Presentations
 
+[The Website Obesity Crisis](http://idlewords.com/talks/website_obesity.htm)
 
 [Attacking Modern SaaS Companies](https://github.com/cxxr/talks/blob/master/2017/nolacon/Attacking%20Modern%20SaaS%20Companies%20%E2%80%93%20NolaCon.pdf)
 * [Presentation](https://www.youtube.com/watch?v=J0otoKRh1Vk&app=desktop)
@@ -238,11 +196,14 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 [Kraken - Web Interface Survey Tool](https://github.com/Sw4mpf0x/Kraken)
 * [Blogpost](https://pentestarmoury.com/2017/01/31/kraken-web-interface-survey-tool/)
 
+[PowerWebShot](https://github.com/dafthack/PowerWebShot)
+* A PowerShell tool for taking screenshots of multiple web servers quickly.
 
+[hackability](https://github.com/PortSwigger/hackability)
+* Rendering Engine Hackability Probe performs a variety of tests to discover what the unknown rendering engine supports. To use it simply extract it to your web server and visit the url in the rendering engine you want to test. The more successful probes you get the more likely the target engine is vulnerable to attack.
 
-
-
-
+[Caja](https://developers.google.com/caja/)
+*  The Caja Compiler is a tool for making third party HTML, CSS and JavaScript safe to embed in your website. It enables rich interaction between the embedding page and the embedded applications. Caja uses an object-capability security model to allow for a wide range of flexible security policies, so that your website can effectively control what embedded third party code can do with user data.
 
 
 
@@ -296,7 +257,8 @@ JNDI Attack Class
 
 
 
-
+### Cross Site Request Forgery (CSRF)
+[Cross Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
 
 
 
@@ -339,6 +301,8 @@ JNDI Attack Class
 [Serianalyzer](https://github.com/mbechler/serianalyzer)
 * A static byte code analyzer for Java deserialization gadget research
 
+[Java Deserialization Exploits](https://github.com/CoalfireLabs/java_deserialization_exploits)
+* A collection of Java Deserialization Exploits
 
 
 
@@ -586,7 +550,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 <a name="bwaf">Bypassing Web Application Firewalls</a>
 [Bypassing WAFs](http://www.nethemba.com/bypassing-waf.pdf)
 
-
+[WAFPASS](https://github.com/wafpassproject/wafpass)
+* Analysing parameters with all payloads' bypass methods, aiming at benchmarking security solutions like WAF.
 
 
 
@@ -613,6 +578,12 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [PHPGGC: PHP Generic Gadget Chains](https://github.com/ambionics/phpggc)
 * PHPGGC is a library of unserialize() payloads along with a tool to generate them, from command line or programmatically. When encountering an unserialize on a website you don't have the code of, or simply when trying to build an exploit, this tool allows you to generate the payload without having to go through the tedious steps of finding gadgets and combining them. Currently, the tool supports: Doctrine, Guzzle, Laravel, Monolog, Slim, SwiftMailer.
+
+[Typosquatting programming language package managers](http://incolumitas.com/2016/06/08/typosquatting-package-managers/)
+
+[Exploiting misuse of Python's "pickle"](https://blog.nelhage.com/2011/03/exploiting-pickle/)
+
+
 
 
 
@@ -745,7 +716,6 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 
-
 ### <a name="html5">HTML 5</a>
 
 [SH5ARK](http://sh5ark.professionallyevil.com)
@@ -757,7 +727,16 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 
+### JSON Web Tokens
 
+[json token decode](http://jwt.calebb.net/)
+
+[JWT Inspector - FF plugin](https://www.jwtinspector.io/)
+* JWT Inspector is a browser extension that lets you decode and inspect JSON Web Tokens in requests, cookies, and local storage. Also debug any JWT directly from the console or in the built-in UI. 
+
+[Attacking JWT authentication](https://www.sjoerdlangkemper.nl/2016/09/28/attacking-jwt-authentication/)
+
+[Critical vulnerabilities in JSON Web Token libraries - 2015](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/)
 
 
 
@@ -891,6 +870,9 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 ### <a name="burp">Burp Stuff/Plugins</a>
+
+[100 OWASP Top 10 Hacking Web Applications with Burp Suite Chad Furman](https://www.youtube.com/watch?v=2p6twRRXK_o)
+
 [AuthMatrix](https://github.com/SecurityInnovation/AuthMatrix)
 * AuthMatrix is a Burp Suite extension that provides a simple way to test authorization in web applications and web services. 
 
@@ -901,3 +883,13 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [BurpSmartBuster](https://github.com/pathetiq/BurpSmartBuster)
 * A Burp Suite content discovery plugin that add the smart into the Buster!
+
+[HUNT Burp Suite Extension](https://github.com/bugcrowdlabs/HUNT)
+* HUNT Logo  HUNT is a Burp Suite extension to: 1. Identify common parameters vulnerable to certain vulnerability classes. 2. Organize testing methodologies inside of Burp Suite.
+
+[BurpSmartBuster](https://github.com/pathetiq/BurpSmartBuster)
+* A Burp Suite content discovery plugin that add the smart into the Buster!
+
+[collaborator-everywhere](https://github.com/PortSwigger/collaborator-everywhere)
+* A Burp Suite Pro extension which augments your proxy traffic by injecting non-invasive headers designed to reveal backend systems by causing pingbacks to Burp Collaborator
+

@@ -31,27 +31,17 @@ To be sorted
 
 ### To be sorted
 
-[gdbgui](https://github.com/cs01/gdbgui)
-* A modern, browser-based frontend to gdb (gnu debugger). Add breakpoints, view stack traces, and more in C, C++, Go, and Rust. Simply run gdbgui from the terminal and a new tab will open in your browser.
 
-[Reverse Engineering a 433MHz Motorised Blind RF Protocol](https://nickwhyte.com/post/2017/reversing-433mhz-raex-motorised-rf-blinds/)
+
+
 
 [PPEE(puppy)](https://www.mzrst.com/#top)
 * Professional PE file Explorer for reversers, malware researchers and those who want to statically inspect PE files in more details. Free and fast.
-
-
-[Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
-* Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
 
 [bingrep](https://github.com/m4b/bingrep)
 * Greps through binaries from various OSs and architectures, and colors them. 
 
 http://stunnix.com/prod/cxxo/
-
-[IDAnt-wanna](https://github.com/strazzere/IDAnt-wanna)
-* ELF header abuse
-
-[REhints MEX - WinDBG addons](https://github.com/REhints/WinDbg/tree/master/MEX)
 
 [asar](https://github.com/electron/asar)
 *  Simple extensive tar-like archive format with indexing
@@ -71,31 +61,19 @@ http://fileformats.archiveteam.org/wiki/PNG
 * Finding and discovering bugs has to be one of the most special times in a security researchers life (until you realise that crash you've been searching for and finally found is not actually exploitable). But the process of searching, discovery, understanding and of course some very much needed trial and error, many would say are rewarding and fulfilling themselves (I would of course, prefer to have my exploit cherry on the top)! So this talk will detail some of the aspects required to hunt down and find these coveted security vulnerabilities and bugs and some approaches that have proven to be invaluable (and some not so much). Of course bug hunting principle need to produce bugs so as the cherry there will be a virtual box exploit and Barracuda networks 0 day exploit discussed and demon
 
 
-| **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
-**Unicorn-Engine** - Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework. | http://www.unicorn-engine.org/
+[Universal Extractor](http://www.legroom.net/software/uniextract)
+* Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc
+
+[Unicorn-Engine](http://www.unicorn-engine.org/)
+* Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework.
 
 [Reversing Prince Harming’s Kiss of Death]( https://reverse.put.as/2015/07/01/reversing-prince-harmings-kiss-of-death/)
-
-
-[#Fldbg](https://github.com/offensive-security/fldbg)
-* #Fldbg, a Pykd script to debug FlashPlayer
-
-[Microsoft Patch Analysis for Exploitation](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t111-microsoft-patch-analysis-for-exploitation-stephen-sims)
-* Since the early 2000's Microsoft has distributed patches on the second Tuesday of each month. Bad guys, good guys, and many in-between compare the newly released patches to the unpatched version of the files to identify the security fixes. Many organizations take weeks to patch and the faster someone can reverse engineer the patches and get a working exploit written, the more valuable it is as an attack vector. Analysis also allows a researcher to identify common ways that Microsoft fixes bugs which can be used to find 0-days. Microsoft has recently moved to mandatory cumulative patches which introduces complexity in extracting patches for analysis. Join me in this presentation while I demonstrate the analysis of various patches and exploits, as well as the best-known method for modern patch extraction.
 
 https://objective-see.com/
 
 [Bytecode Club - RE Forum](https://the.bytecode.club/)
 
-[Binary Hooking Problems](http://www.ragestorm.net/blogs/?p=348)
 
-[Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
-* Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
-
-[bingrep](https://github.com/m4b/bingrep)
-* Greps through binaries from various OSs and architectures, and colors them. 
-
-[radare2 cheat sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
 
 [Blackbone](https://github.com/DarthTon/Blackbone)
 * Windows memory hacking library
@@ -110,6 +88,10 @@ https://objective-see.com/
 
 
 ### General
+
+
+
+[radare2 cheat sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
 
 [Introduction to Reverse Engineering Software - Dartmouth](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
 
@@ -126,7 +108,8 @@ https://objective-see.com/
 
 [Starting from Scratch?](http://www.reddit.com/r/ReverseEngineering/comments/smf4u/reverser_wanting_to_develop_mathematically/)
 
-
+[Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
+* Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
 
 
 
@@ -294,6 +277,9 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 [PEDA](https://github.com/longld/peda)
 * PEDA - Python Exploit Development Assistance for GDB 
 
+[gdbgui](https://github.com/cs01/gdbgui)
+* A modern, browser-based frontend to gdb (gnu debugger). Add breakpoints, view stack traces, and more in C, C++, Go, and Rust. Simply run gdbgui from the terminal and a new tab will open in your browser.
+
 [GEF - GDB Enhanced Features](https://github.com/hugsy/gef)
 * GEF is aimed to be used mostly by exploiters and reverse-engineers. It provides additional features to GDB using the Python API to assist during the process of dynamic analysis or exploit development.
 * Why not PEDA?
@@ -310,6 +296,8 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 [WinAppDbg](http://winappdbg.sourceforge.net/)
 * The WinAppDbg python module allows developers to quickly code instrumentation scripts in Python under a Windows environment.  It uses ctypes to wrap many Win32 API calls related to debugging, and provides a powerful abstraction layer to manipulate threads, libraries and processes, attach your script as a debugger, trace execution, hook API calls, handle events in your debugee and set breakpoints of different kinds (code, hardware and memory). Additionally it has no native code at all, making it easier to maintain or modify than other debuggers on Windows.  The intended audience are QA engineers and software security auditors wishing to test or fuzz Windows applications with quickly coded Python scripts. Several ready to use tools are shipped and can be used for this purposes.  Current features also include disassembling x86/x64 native code, debugging multiple processes simultaneously and produce a detailed log of application crashes, useful for fuzzing and automated testing.
 
+[REhints MEX - WinDBG addons](https://github.com/REhints/WinDbg/tree/master/MEX)
+
 [Open Source Windows x86/x64 Debugger](http://x64dbg.com/)
 
 [xnippet](https://github.com/isislab/xnippet)
@@ -322,7 +310,8 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 [Voltro](https://github.com/snare/voltron)
 * Voltron is an extensible debugger UI toolkit written in Python. It aims to improve the user experience of various debuggers (LLDB, GDB, VDB and WinDbg) by enabling the attachment of utility views that can retrieve and display data from the debugger host. By running these views in other TTYs, you can build a customised debugger user interface to suit your needs.
 
-
+[#Fldbg](https://github.com/offensive-security/fldbg)
+* #Fldbg, a Pykd script to debug FlashPlayer
 
 
 
@@ -334,7 +323,7 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 
 [A REVIEW OF REVERSE DEBUGGING - Jakob Engblom (2012?)](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.338.3420&rep=rep1&type=pdf)
 
-
+[Binary Hooking Problems](http://www.ragestorm.net/blogs/?p=348)
 
 
 
@@ -538,7 +527,8 @@ programming environment.
 [Reversing Monkey](http://cheeky4n6monkey.blogspot.com/2015/02/reversing-monkey.html?m=1)
 * When trying to recover/carve deleted data, some reverse engineering of the file format may be required. Without knowing how the data is stored, we cannot recover the data of interest - be it timestamps, messages, images, video or another type of data. This quick blog post is intended to give some basic tips that have been observed during monkey's latest travels into reverse engineering of file formats. It was done partly as a memory aid/thinking exercise but hopefully other monkeys will find it useful. This post assumes there's no obfuscation/encryption applied to the file and it does not cover reverse engineering malware exes (which is another kettle of bananas).  - Great post/write-up
 
-
+[Microsoft Patch Analysis for Exploitation](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t111-microsoft-patch-analysis-for-exploitation-stephen-sims)
+* Since the early 2000's Microsoft has distributed patches on the second Tuesday of each month. Bad guys, good guys, and many in-between compare the newly released patches to the unpatched version of the files to identify the security fixes. Many organizations take weeks to patch and the faster someone can reverse engineer the patches and get a working exploit written, the more valuable it is as an attack vector. Analysis also allows a researcher to identify common ways that Microsoft fixes bugs which can be used to find 0-days. Microsoft has recently moved to mandatory cumulative patches which introduces complexity in extracting patches for analysis. Join me in this presentation while I demonstrate the analysis of various patches and exploits, as well as the best-known method for modern patch extraction.
 
 
 
@@ -605,18 +595,25 @@ Hacking the Dropcam series
 [Reverse Engineering Windows AFD.sys](https://recon.cx/2015/slides/recon2015-20-steven-vittitoe-Reverse-Engineering-Windows-AFD-sys.pdf)
 
 
-Reverse engineering walk htrouhg; guy rev eng alarm system from shelf to replay
-https://www.reddit.com/r/ReverseEngineering/comments/1hb7oy/a_series_about_basics_of_hardware_reverse/
-Part 1: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-system-part-1/
-Part 2: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-2/
-Part 3: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-3/
-Part 4: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-4/
-Part 5: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-5/
-Part 6: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-6/
-Part 7: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-7/
-Part 8: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-8/
+[Reverse engineering walk thrrouhg; guy rev eng alarm system from shelf to replay]()
+https://www.reddit.com/r/ReverseEngineering/comments/1hb7oy/a_series_about_basics_of_hardware_reverse/)
+* [Part 1:](http://cybergibbons.com/uncategorized/)reverse-engineering-a-wireless-burglar-alarm-system-part-1/
 
-[Blackbox Reversing an Electric Skateboard Wireless Protocol ](https://blog.lacklustre.net/posts/Blackbox_Reversing_an_Electric_Skateboard_Wireless_Protocol/)
+* [Part 2:](http://cybergibbons.com/uncategorized/)reverse-engineering-a-wireless-burglar-alarm-part-2/)
+
+* [Part 3:](http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-3/)
+
+* [Part 4:](http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-4/)
+
+* [Part 5:](http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-5/)
+
+* [Part 6:](http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-6/)
+
+* [Part 7:](http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-7/)
+
+* [Part 8:](http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-burglar-alarm-part-8/)
+
+* [Blackbox Reversing an Electric Skateboard Wireless Protocol ](https://blog.lacklustre.net/posts/Blackbox_Reversing_an_Electric_Skateboard_Wireless_Protocol/)
 
 [The Empire Strikes Back Apple – how your Mac firmware security is completely broken](https://reverse.put.as/2015/05/29/the-empire-strikes-back-apple-how-your-mac-firmware-security-is-completely-broken/)
 
@@ -630,9 +627,10 @@ Part 8: http://cybergibbons.com/uncategorized/reverse-engineering-a-wireless-bur
 [Make Confide great again? No, we cannot](http://blog.quarkslab.com/make-confide-great-again-no-we-cannot.html)
 * RE'ing an electron based "secure communications" app
 
+[Reverse Engineering a 433MHz Motorised Blind RF Protocol](https://nickwhyte.com/post/2017/reversing-433mhz-raex-motorised-rf-blinds/)
 
-
-
+[IDAnt-wanna](https://github.com/strazzere/IDAnt-wanna)
+* ELF header abuse
 
 
 ### <a name="talks">Talks & Videos</a>

@@ -259,7 +259,7 @@ GNU Radio blocks we have written to handle several protocols
 
 [Gr0SMoSDR](http://sdr.osmocom.org/trac/wiki/GrOsmoSDR)
 
-[PyBOMBS](http://gnuradio.org/redmine/projects/pybombs/wiki)
+[PyBOMBS](https://github.com/gnuradio/pybombs)
 * PyBOMBS (Python Build Overlay Managed Bundle System) is the new GNU Radio install management system for resolving dependencies and pulling in out-of-tree projects. One of the main purposes of PyBOMBS is to aggregate out-of-tree projects, which means that PyBOMBS needs to have new recipes for any new project. We have done a lot of the initial work to get known projects into the PyBOMBS system as is, but we will need project developers for new OOT projects or other projects not currently listed to help us out with this effort.	
 
 [UAV Transponders & Tracker Kits - UST](http://www.unmannedsystemstechnology.com/company/sagetech-corporation/) 

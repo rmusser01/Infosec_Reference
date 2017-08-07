@@ -4,95 +4,16 @@
 
 
 
+[Code Injection Techniques -2013](http://resources.infosecinstitute.com/code-injection-techniques/)
 
-[PenTesting-Scripts - killswitch-GUI](https://github.com/killswitch-GUI/PenTesting-Scripts)
-
-
-
-
-
-[Hunting in Memory](https://www.endgame.com/blog/technical-blog/hunting-memory)
-https://niccs.us-cert.gov/workforce-development/cyber-security-workforce-framework
 
 [Jackson Thuraisamy & Jason Tran - Hacking POS PoS Systems](https://www.youtube.com/watch?v=-n7oJqmTUCo) 
-
-
-
-
-[Revoke -­‐ Obfuscation: PowerShell Obfuscation Detection Using Science](https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf)
-
-[Revoke-Obfuscation](https://github.com/danielbohannon/Revoke-Obfuscation)
-* Revoke-Obfuscation is a PowerShell v3.0+ compatible PowerShell obfuscation detection framework.
-
-[nps_payload](https://github.com/trustedsec/nps_payload)
-* This script will generate payloads for basic intrusion detection avoidance. It utilizes publicly demonstrated techniques from several different sources. 
 
 
 https://improsec.com/blog//windows-kernel-shellcode-on-windows-10-part-1
 https://improsec.com/blog//windows-kernel-shellcode-on-windows-10-part-2
 https://improsec.com/blog//windows-kernel-shellcode-on-windows-10-part-3
 https://improsec.com/blog//windows-kernel-shellcode-on-windows-10-part-4-there-is-no-code
-
-
-[Bypassing UAC using App Paths](https://enigma0x3.net/2017/03/14/bypassing-uac-using-app-paths/)
-
-
-[Invoke-DCOM.ps1](https://github.com/rvrsh3ll/Misc-Powershell-Scripts/blob/master/Invoke-DCOM.ps1)
-
-[katz.xml](https://gist.github.com/subTee/c98f7d005683e616560bda3286b6a0d8)
-* Downloads Mimikatz From GitHub, Executes Inside of MsBuild.exe
-
-
-
-
-
-
-[Software Assurance Maturity Model - OWASP](http://www.opensamm.org/downloads/SAMM-1.0-en_US.pdf)
-
-
-[How to Build Your Own Penetration Testing Drop Box - BHIS](https://www.blackhillsinfosec.com/?p=5156&)
-
-
-[Attacking EvilCorp: Anatomy of a Corporate Hack](http://www.irongeek.com/i.php?page=videos/derbycon6/111-attacking-evilcorp-anatomy-of-a-corporate-hack-sean-metcalf-will-schroeder)
-
-[Red Teaming Tips - Vincent Yiu](https://threatintel.eu/2017/06/03/red-teaming-tips-by-vincent-yiu/)
-
-[Finding Diamonds in the Rough- Parsing for Pentesters](https://bluescreenofjeff.com/2016-07-26-finding-diamonds-in-the-rough-parsing-for-pentesters/)
-
-[Red Team Tips as posted by @vysecurity on Twitter](https://github.com/vysec/RedTips)
-
-[FindFrontableDomains](https://github.com/rvrsh3ll/FindFrontableDomains)
-* Search for potential frontable domains
-
-[Domain Hunter](https://github.com/minisllc/domainhunter)
-* Checks expired domains, bluecoat categorization, and Archive.org history to determine good candidates for phishing and C2 domain names
-
-[Laurent Desaulniers - Stupid RedTeamer Tricks](https://www.youtube.com/watch?v=2g_8oHM0nwA&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=11)
-
-
-[Dimitry Snezhkov - Abusing Webhooks for Command and Control](https://www.youtube.com/watch?v=1d3QCA2cR8o&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=12)
-
-[Chameleon](https://github.com/mdsecactivebreach/Chameleon)
-* A tool for evading Proxy categorisation
-
-[Jackson Thuraisamy & Jason Tran - Hacking POS PoS Systems](https://www.youtube.com/watch?v=-n7oJqmTUCo&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=13#t=213.471604)
-
-
-[Software Assurance Maturity Model](http://www.opensamm.org/)
-* The Software Assurance Maturity Model (SAMM) is an open framework to help organizations formulate and implement a strategy for software security that is tailored to the specific risks facing the organization. - OWASP Project
-
-[DigiDucky - How to setup a Digispark like a rubber ducky](http://www.redteamr.com/2016/08/digiducky/)
-
-[Common Ground Part 1: Red Team History & Overview](https://www.sixdub.net/?p=705)
-
-
-[Ruler Pivoting Through Exchange - Etienne Stalmans - TR17](https://www.youtube.com/watch?v=tuc8cwOAAcA)
-
-[Domain Hunter](https://github.com/minisllc/domainhunter)
-
-[Windows Access Control Demystified](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=E1A09F166B29C17D2CD38C70A02576E4?doi=10.1.1.88.1930&rep=rep1&type=pdf)
-
-
 
 
 http://www.exploit-monday.com/2012/05/accessing-native-windows-api-in.html
@@ -107,13 +28,10 @@ https://www.class-central.com/
 
 [PENQUIN’S MOONLIT MAZE](https://ridt.co/d/jags-moore-raiu-rid.pdf)
 
-["Humans, right?" Soft Skills in Security - Ariel Robinson](http://www.irongeek.com/i.php?page=videos/bsidesnova2017/200-humans-right-soft-skills-in-security-ariel-robinson)
-* Let's face it: humans ruin everything. They are almost always the weak link in the information security chain, between their susceptibility to social engineering, rejection of security threats, and sheer laziness. You can make the best security tool in the business, but if a human doesn't use it right, well, you might as well leave your passwords on a sticky note on your-- wait a minute. Yes, humans suck at information security. But we don't make it easy. Infosec is incredibly inaccessible to your average user. Just ask me: I am one. We can't change humans (or get rid of them, no matter how much we might want to), but we can change information security. We can leverage insights from non-technical disciplines such as cognitive science, human-centered design, strategic communications, and psychology. Or we can keep hitting our heads against our desktops. As a professional communicator and bridge builder, help me help you. To make security work, we have to make it easy. For humans.
+
 
 [gibbersense](https://github.com/smxlabs/gibbersense)
 * Extract Sense out of Gibberish stuff
-
-
 
 
 [Mobile Application Penetration Testing Cheat Sheet](https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet)
@@ -124,54 +42,13 @@ https://www.class-central.com/
 
 ## Android
 
-[How to avoid certificate pinning in the latest versions of Android](https://www.welivesecurity.com/2016/09/08/avoid-certificate-pinning-latest-versions-androidESET%20Blog:%20We%20Live%20Security)
-
-[Protect Your Java Code — Through Obfuscators And Beyond](https://www.excelsior-usa.com/articles/java-obfuscators.html)
-
-[Android_Kernel_CVE_POC](https://github.com/ScottyBauer/Android_Kernel_CVE_POCs)
-
-[plzdonthack.me](https://plzdonthack.me/)
-* personal site of scotty bauer
-
-
 
 ## Anonymity/OPSEC
-
-[Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
-* Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
-
-
-[China travel laptop setup](https://mricon.com/i/travel-laptop-setup.html?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&iid=88d246896d384d5292f51df954a2c8ba&uid=150127534&nid=244+272699400)
-
-[howmanypeoplearearound](https://github.com/schollz/howmanypeoplearearound)
-*  Count the number of people around you 👨‍👨‍👦 by monitoring wifi signals 📡
-
-[Operational Security and the Real World - The Grugq](https://medium.com/@thegrugq/operational-security-and-the-real-world-3c07e7eeb2e8)
-
-[CIA Vault7 Development Tradecraft DOs and DON'Ts](https://wikileaks.org/ciav7p1/cms/page_14587109.html)
-
-[De-Anonymizing Alt.Anonymous. Messages - Defcon21 - Tom Ritter](https://www.youtube.com/watch?v=_Tj6c2Ikq_E)
-
-[Dutch-Russian cyber crime case reveals how police tap the internet - ElectroSpaces](http://electrospaces.blogspot.de/2017/06/dutch-russian-cyber-crime-case-reveals.html?m=1)
-
-[Deanonymizing Windows users and capturing Microsoft and VPN accounts](https://medium.com/@ValdikSS/deanonymizing-windows-users-and-capturing-microsoft-and-vpn-accounts-f7e53fe73834)
-
-
-
 
 
 ## Basic Security
 
-
-
-
-
-
 ## BIOS/UEFI
-
-
-
-
 
 ## Building a Lab 
 
@@ -198,23 +75,6 @@ https://www.class-central.com/
 
 ## Car Hacking
 
-[CBM - The Bicho](https://github.com/UnaPibaGeek/CBM)
-* For the first time, a hardware backdoor tool is presented having several advanced features, such as: remote control via SMS commands, automated launch of attack payloads at a GPS location or when a specific car status is reached; and a configuration interface that allows users to create attack payloads in an easy manner. Have you ever imagined the possibility of your car being automatically attacked based on its GPS coordinates, its current speed or any other set of parameters? Now it's possible :-)
-
-[Hacking Cars with Python -Eric Evenchick PyCon 2017](https://www.youtube.com/watch?v=3bZNhMcv4Y8&app=desktop)
-* Modern cars are networks of computers, and a high end vehicle could have nearly 100 different computers inside. These devices control everything from the engine to the airbags. By understanding how these systems work, we can interface with vehicles to read data, perform diagnostics, and even modify operation.  In this talk, we'll discuss pyvit, the Python Vehicle Interface Toolkit. This library, combined with some open source hardware, allows developers to talk to automotive controllers from Python.  We will begin with an introduction to automotive networks, to provide a basis for understanding the tools. Next, we will look at the tools and show the basics of using them. Finally, we'll discuss real world applications of these tools, and how they're being used in the automotive world today.
-
-[Adventures in Automotive Networks and Control Units](https://www.youtube.com/watch?v=MEYCU62yeYk&app=desktop)
-* Charlie Miller & Chris Valasek
-
-[The OpenXC Platform](http://openxcplatform.com/)
-* OpenXC™ is a combination of open source hardware and software that lets you extend your vehicle with custom applications and pluggable modules.	
-
-[Tesla Model S JSON API (unofficial RE post)](http://docs.timdorr.apiary.io/#reference/vehicles)
-
-
-
-
 
 ## Courses
 
@@ -229,22 +89,6 @@ https://www.class-central.com/
 
 
 ## Crypto
-
-[A Graduate Course in Applied Cryptography - Dan Boneh and Victor Shoup](http://toc.cryptobook.us/)
-* Version 0.3 - posted Dec. 9, 2016
-
-[Lifetimes of cryptographic hash functions](http://valerieaurora.org/hash.html)
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -269,8 +113,9 @@ https://www.class-central.com/
 
 [My first CVE-2016-1000329 in BlogPHP](https://www.stevencampbell.info/2016/12/my-first-cve-2016-1000329-in-blogphp/)
 
-## Documentation/Technical writing
 
+
+## Documentation/Technical writing
 
 [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
 
@@ -327,7 +172,7 @@ https://www.class-central.com/
 
 [EnglishmansDentist Exploit Analysis](https://blogs.technet.microsoft.com/srd/2017/07/20/englishmansdentist-exploit-analysis/)
 
-
+[Broadpwn: Remotely Compromising Android and iOS via a Bug in Broadcom’s Wi-Fi Chipsets](https://blog.exodusintel.com/2017/07/26/broadpwn/)
 
 
 
@@ -389,16 +234,7 @@ http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce
 
 
 ## iOS
-[needle](https://github.com/mwrlabs/needle)
-* Needle is an open source, modular framework to streamline the process of conducting security assessments of iOS apps.
 
-[Secure iOS application development](https://github.com/felixgr/secure-ios-app-dev)
-* This guide is a collection of the most common vulnerabilities found in iOS applications. The focus is on vulnerabilities in the applications’ code and only marginally covers general iOS system security, Darwin security, C/ObjC/C++ memory safety, or high-level application security. Nevertheless, hopefully the guide can serve as training material to iOS app developers that want to make sure that they ship a more secure app. Also, iOS security reviewers can use it as a reference during assessments.
-
-[ipwndfu](https://github.com/axi0mX/ipwndfu)
-* open-source jailbreaking tool for older iOS devices
-
-[Write-up for alloc8: untethered bootrom exploit for iPhone 3GS](https://github.com/axi0mX/alloc8)
 
 
 
@@ -514,11 +350,7 @@ https://archive.is/Nol3S
 [GetInjectedThreads.ps1](https://gist.github.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2)
 * Looks for threads that were created as a result of code injection.
 
-[Taking Hunting to the Next Level Hunting in Memory - Jared Atkinson 2017](https://www.youtube.com/watch?v=3RUMShnJq_I)
-
 [Sysmon - The Best Free Windows Monitoring Tool You Aren't Using](http://909research.com/sysmon-the-best-free-windows-monitoring-tool-you-arent-using/)
-
-[Windows Log Hunting with PowerShell](http://909research.com/windows-log-hunting-with-powershell/)
 
 [check_ioc](https://github.com/oneoffdallas/check_ioc)
 * Check_ioc is a script to check for various, selectable indicators of compromise on Windows systems via PowerShell and Event Logs. It was primarily written to be run on a schedule from a monitoring engine such as Nagios, however, it may also be run from a command-line (for incident response).
@@ -543,9 +375,8 @@ https://archive.is/Nol3S
 
 
 
-
-
 ## OSINT
+
 [XRAY](https://github.com/evilsocket/xray)
 * XRay is a tool for recon, mapping and OSINT gathering from public networks.
 
@@ -580,22 +411,6 @@ https://archive.is/Nol3S
 
 
 ##	OS X
-
-
-
-
-## Privilege Escalation/Post Exploitatoin
-
-[Pen Testing Active Directory Series](https://blog.varonis.com/binge-read-pen-testing-active-directory-series/)
-
-[Offensive Active Directory with Powershell](https://www.youtube.com/watch?v=cXWtu-qalSs)
-
-[Hacking SQL Server on Scale with PowerShell - Secure360 2017](https://www.slideshare.net/nullbind/2017-secure360-hacking-sql-server-on-scale-with-powershell)
-
-[EvilAbigail](https://github.com/GDSSecurity/EvilAbigail/blob/master/README.md)
-* Initrd encrypted root fs attack
-
-
 
 ## Password Cracking
 
@@ -668,6 +483,34 @@ x
 [quarkspwdump](https://github.com/quarkslab/quarkspwdump)
 * Dump various types of Windows credentials without injecting in any process.
 
+[Bypassing UAC using App Paths](https://enigma0x3.net/2017/03/14/bypassing-uac-using-app-paths/)
+
+[Invoke-DCOM.ps1](https://github.com/rvrsh3ll/Misc-Powershell-Scripts/blob/master/Invoke-DCOM.ps1)
+
+[katz.xml](https://gist.github.com/subTee/c98f7d005683e616560bda3286b6a0d8)
+* Downloads Mimikatz From GitHub, Executes Inside of MsBuild.exe
+
+[nps_payload](https://github.com/trustedsec/nps_payload)
+* This script will generate payloads for basic intrusion detection avoidance. It utilizes publicly demonstrated techniques from several different sources. 
+
+
+[Ruler Pivoting Through Exchange - Etienne Stalmans - TR17](https://www.youtube.com/watch?v=tuc8cwOAAcA)
+
+
+[Pen Testing Active Directory Series](https://blog.varonis.com/binge-read-pen-testing-active-directory-series/)
+
+[Offensive Active Directory with Powershell](https://www.youtube.com/watch?v=cXWtu-qalSs)
+
+[Hacking SQL Server on Scale with PowerShell - Secure360 2017](https://www.slideshare.net/nullbind/2017-secure360-hacking-sql-server-on-scale-with-powershell)
+
+[EvilAbigail](https://github.com/GDSSecurity/EvilAbigail/blob/master/README.md)
+* Initrd encrypted root fs attack
+
+
+
+
+
+
 
 
 
@@ -702,6 +545,11 @@ x
 
 
 ## Policy and Compliance
+
+[Software Assurance Maturity Model - OWASP](http://www.opensamm.org/downloads/SAMM-1.0-en_US.pdf)
+
+[Software Assurance Maturity Model](http://www.opensamm.org/)
+* The Software Assurance Maturity Model (SAMM) is an open framework to help organizations formulate and implement a strategy for software security that is tailored to the specific risks facing the organization. - OWASP Project
 
 
 
@@ -747,6 +595,9 @@ x
 
 [Mandatory Integrity Control](https://msdn.microsoft.com/en-gb/library/windows/desktop/bb648648(v=vs.85).aspx)
 
+[Windows Access Control Demystified](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=E1A09F166B29C17D2CD38C70A02576E4?doi=10.1.1.88.1930&rep=rep1&type=pdf)
+
+
 
 
 
@@ -758,7 +609,8 @@ x
 
 [EXE-less Malicious Outlook Rules - BHIS](https://www.blackhillsinfosec.com/?p=5544)
 
-
+["Humans, right?" Soft Skills in Security - Ariel Robinson](http://www.irongeek.com/i.php?page=videos/bsidesnova2017/200-humans-right-soft-skills-in-security-ariel-robinson)
+* Let's face it: humans ruin everything. They are almost always the weak link in the information security chain, between their susceptibility to social engineering, rejection of security threats, and sheer laziness. You can make the best security tool in the business, but if a human doesn't use it right, well, you might as well leave your passwords on a sticky note on your-- wait a minute. Yes, humans suck at information security. But we don't make it easy. Infosec is incredibly inaccessible to your average user. Just ask me: I am one. We can't change humans (or get rid of them, no matter how much we might want to), but we can change information security. We can leverage insights from non-technical disciplines such as cognitive science, human-centered design, strategic communications, and psychology. Or we can keep hitting our heads against our desktops. As a professional communicator and bridge builder, help me help you. To make security work, we have to make it easy. For humans.
 
 
 
@@ -768,6 +620,23 @@ x
 
 [Adam Shostack - Pentesting: Lessons from Star Wars](https://www.youtube.com/watch?v=BfWWryF8M7E&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=13)
 * Everyone knows you ought to threat model, but in practical reality it turns out to be tricky. If past efforts to threat model haven’t panned out, perhaps part of the problem is confusion over what works, and how the various approaches conflict or align. This talk captures lessons from years of work helping people throughout the software industry threat model more effectively. It’s designed to help security pros, especially pen testers, all of whom will leave with both threat modeling lessons from Star Wars and a proven foundation, enabling them to threat model effectively on offense or defense.
+
+
+
+## Threat Hunting
+
+[Revoke -­‐ Obfuscation: PowerShell Obfuscation Detection Using Science](https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf)
+
+[Revoke-Obfuscation](https://github.com/danielbohannon/Revoke-Obfuscation)
+* Revoke-Obfuscation is a PowerShell v3.0+ compatible PowerShell obfuscation detection framework.
+
+[Hunting in Memory](https://www.endgame.com/blog/technical-blog/hunting-memory)
+https://niccs.us-cert.gov/workforce-development/cyber-security-workforce-framework
+
+[Taking Hunting to the Next Level Hunting in Memory - Jared Atkinson 2017](https://www.youtube.com/watch?v=3RUMShnJq_I)
+
+[Windows Log Hunting with PowerShell](http://909research.com/windows-log-hunting-with-powershell/)
+
 
 
 ## Training
@@ -814,6 +683,9 @@ x
 
 [HUNT Burp Suite Extension](https://github.com/bugcrowdlabs/HUNT)
 * HUNT Logo  HUNT is a Burp Suite extension to: 1. Identify common parameters vulnerable to certain vulnerability classes. 2. Organize testing methodologies inside of Burp Suite.
+
+[Caja](https://developers.google.com/caja/)
+*  The Caja Compiler is a tool for making third party HTML, CSS and JavaScript safe to embed in your website. It enables rich interaction between the embedding page and the embedded applications. Caja uses an object-capability security model to allow for a wide range of flexible security policies, so that your website can effectively control what embedded third party code can do with user data. 
 
 
 

@@ -28,7 +28,7 @@ These are links to basic technically  links or things I feel might help someone 
 ### Metasploit
 | Title | Link
 | -------- | --------- |
-|  Introduction To Metasploit – The Basics |  http://www.elithecomputerguy.com/2013/02/08/introduction-to-metasploit-the-basics/  |
+|  Introduction To Metasploit â€“ The Basics |  http://www.elithecomputerguy.com/2013/02/08/introduction-to-metasploit-the-basics/  |
 
 
 
@@ -38,3 +38,18 @@ These are links to basic technically  links or things I feel might help someone 
 |  Shodan Man page  |  http://www.shodanhq.com/help  |
 |  Shodan Filter Reference  |  http://www.shodanhq.com/help/filters  |
 |  Shodan FAQ  |  http://www.shodanhq.com/help/faq  |
+
+
+### I'll sort later
+
+
+[304 Hold my Red Bull Undergraduate Red Teaming Jonathan Gaines](https://www.youtube.com/watch?v=9vgpqRzuvLk)
+
+[100 OWASP Top 10 Hacking Web Applications with Burp Suite Chad Furman](https://www.youtube.com/watch?v=2p6twRRXK_o)
+
+[213 How not to Infosec Dan Tentler](https://www.youtube.com/watch?v=S5O47gemMNQ)
+
+
+[So You Want To Be A H6x0r Getting Started in Cybersecurity Doug White and Russ Beauchemin ](https://www.youtube.com/watch?v=rRJKghTTics)
+
+[How to become a pentester - Corelan](https://www.corelan.be/index.php/2015/10/13/how-to-become-a-pentester/)

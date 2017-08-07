@@ -37,7 +37,21 @@ http://www.sp3ctr3.me/hardware-security-resources/
 
 http://greatscottgadgets.com/infiltrate2013/
 
+[ThunderGate](http://thundergate.io/)
+* ThunderGate is a collection of tools for the manipulation of Tigon3 Gigabit Ethernet controllers, with special emphasis on the Broadcom NetLink 57762, such as is found in Apple Thunderbolt Gigabit Ethernet adapters.
 
+[ISO/IEC 7816](https://en.wikipedia.org/wiki/ISO/IEC_7816)
+[ISO/IEC 15693](https://en.wikipedia.org/wiki/ISO/IEC_15693)
+[ISO/IEC 14443](https://en.wikipedia.org/wiki/ISO/IEC_14443)
+
+[Attacks via physical access to USB (DMA…?)](https://security.stackexchange.com/questions/118854/attacks-via-physical-access-to-usb-dma)
+
+[Can a connected USB device read all data from the USB bus?](https://security.stackexchange.com/questions/37927/can-a-connected-usb-device-read-all-data-from-the-usb-bus?rq=1)
+
+[Hacking Printers Wiki](http://hacking-printers.net/wiki/index.php/Main_Page)
+
+[Ian Douglas - Creating an Internet of Private Things](https://www.youtube.com/watch?v=4W8SkujOXi4&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=8)
+* The next big market push is to have the cool IoT device that’s connected to the internet. As we’ve seen from the Mirai and Switcher hacks, it’s important to embed the appropriate safeguards so that devices are not open to attack. When selecting device components there are things that should be checked for, and when you’re doing the coding and workflows, there are other things that need to be taken in to account. Although security and privacy are close cousins, they’re also different. This talk will be centered around some best security and privacy practices as well as some common errors that should be avoided.
 
 
 

@@ -48,19 +48,20 @@ http://www.pentaho.com/
 
 Applied Security Visualization: http://www.secviz.org/content/applied-security-visualization
 
+
 #### End Cull
 
 ### Tools
 
 [d3js(Data Driven Documents)](http://d3js.org/)
-* D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3ís emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation. 
+* D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG, and CSS. D3‚Äôs emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation. 
 
 [Data Science Toolkit](https://github.com/petewarden/dstk)
 * A collection of the best open data sets and open-source tools for data science, wrapped in an easy-to-use REST/JSON API with command line, Python and Javascript interfaces. Available as a self-contained VM or EC2 AMI that you can deploy yourself.
 * [Documentation](http://www.datasciencetoolkit.org/developerdocs)
 
 [*ORA](http://www.casos.cs.cmu.edu/projects/ora/)
-* ORA is a dynamic meta-network assessment and analysis tool developed by CASOS at Carnegie Mellon.  It contains hundreds of social network, dynamic network metrics, trail metrics, procedures for grouping nodes, identifying local patterns, comparing and contrasting networks, groups, and individuals from a dynamic meta-network perspective. *ORA has been used to examine how networks change through space and time,  contains procedures for moving back and forth between trail data (e.g. who was where when) and network data (who is connected to whom,  who is connected to where Ö),  and has a variety of geo-spatial network metrics, and change detection techniques.  *ORA can handle multi-mode, multi-plex, multi-level networks.  It can identify key players, groups and vulnerabilities, model network changes over time, and perform COA analysis.  It has been tested with large networks (106 nodes per 5 entity classes).Distance based, algorithmic, and statistical procedures for comparing and contrasting networks are part of this toolkit.  Based on network theory, social psychology, operations research, and management theory a series of measures of ìcriticalityî have been developed at CMU.  Just as critical path algorithms can be used to locate those tasks that are critical from a project management perspective, the *ORA algorithms can find those people, types of skills or knowledge and tasks that are critical from a performance and information security perspective. 
+* ORA is a dynamic meta-network assessment and analysis tool developed by CASOS at Carnegie Mellon.  It contains hundreds of social network, dynamic network metrics, trail metrics, procedures for grouping nodes, identifying local patterns, comparing and contrasting networks, groups, and individuals from a dynamic meta-network perspective. *ORA has been used to examine how networks change through space and time,  contains procedures for moving back and forth between trail data (e.g. who was where when) and network data (who is connected to whom,  who is connected to where ‚Ä¶),  and has a variety of geo-spatial network metrics, and change detection techniques.  *ORA can handle multi-mode, multi-plex, multi-level networks.  It can identify key players, groups and vulnerabilities, model network changes over time, and perform COA analysis.  It has been tested with large networks (106 nodes per 5 entity classes).Distance based, algorithmic, and statistical procedures for comparing and contrasting networks are part of this toolkit.  Based on network theory, social psychology, operations research, and management theory a series of measures of ‚Äúcriticality‚Äù have been developed at CMU.  Just as critical path algorithms can be used to locate those tasks that are critical from a project management perspective, the *ORA algorithms can find those people, types of skills or knowledge and tasks that are critical from a performance and information security perspective. 
 
 [pewpew](https://github.com/hrbrmstr/pewpew)
 * In all seriousness, IPew provides a simple framework - based on Datamaps - for displaying cartographic attack data in a (mostly) responsive way and shows how to use dynamic data via javascript event timers and data queues (in case you're here to learn vs have fun - or both!). You can customize the display through a myriad of query string options, including sounds.
@@ -89,14 +90,18 @@ Applied Security Visualization: http://www.secviz.org/content/applied-security-v
 * The Kismet Log Viewer (KLV) takes Kismet .xml log files and produces a nicely formatted html interface to browse the logs with. KLV has the ability to utilize available GPS information to create links for external maps via the net, and provides the ability for those with Snort to generate a page of Snort output for each specific bssid that has data available. KLV also comes with my Kismet Log Combiner script to help users consolidate multiple .xml and .dump log files.
 
 [plaso](https://github.com/log2timeline/plaso)
-* plaso (Plaso Langar A Safna ÷llu) is a Python-based backend engine for the tool log2timeline. 
+* plaso (Plaso Langar A√∞ Safna √ñllu) is a Python-based backend engine for the tool log2timeline. 
 
 [huginn](https://github.com/huginn/huginn)
 * Create agents that monitor and act on your behalf. Your agents are standing by!
 * Huginn is a system for building agents that perform automated tasks for you online. They can read the web, watch for events, and take actions on your behalf. Huginn's Agents create and consume events, propagating them along a directed graph. Think of it as a hackable version of IFTTT or Zapier on your own server. You always know who has your data. You do.
 
 
+[Norikra](http://norikra.github.io/)
+* Norikra is a open source server software provides "Stream Processing" with SQL, written in JRuby, runs on JVM, licensed under GPLv2.
 
+[Fluentd](https://www.fluentd.org/architecture)
+* Fluentd is an open source data collector, which lets you unify the data collection and consumption for a better use and understanding of data.
 
 
 

@@ -35,6 +35,27 @@ Scapy
 
 [gr-lora](https://github.com/BastilleResearch/gr-lora)
 * This is an open-source implementation of the LoRa CSS PHY, based on the blind signal analysis conducted by @matt-knight. The original research that guided this implementation may be found at https://github.com/matt-knight/research
+
+
+[LTE Security - How good is it?](http://csrc.nist.gov/news_events/cif_2015/research/day2_research_200-250.pdf)
+
+[UAV Transponders & Tracker Kits - UST](http://www.unmannedsystemstechnology.com/company/sagetech-corporation/)
+
+[Emulation and Exploration of BCM WiFi Frame Parsing using LuaQEMU](https://comsecuris.com/blog/posts/luaqemu_bcm_wifi/)
+
+[Fluxion](https://github.com/wi-fi-analyzer/fluxion)
+* Fluxion is a remake of linset by vk496 with (hopefully) less bugs and more functionality. It's compatible with the latest release of Kali (rolling). The attack is mostly manual, but experimental versions will automatically handle most functionality from the stable releases.
+
+
+
+[ESP8266 deauther](https://github.com/spacehuhn/esp8266_deauther)
+* Deauthentication attack and other exploits using an ESP8266!
+
+
+
+
+
+
 ##### End Cull
 
 

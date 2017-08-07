@@ -15,6 +15,7 @@ TOC
 
 ###Cull
 
+
 #### End cull
 
 
@@ -48,6 +49,11 @@ TOC
 [sptoolkit-rebirth](https://github.com/simplephishingtoolkit/sptoolkit-rebirth)
 * sptoolkit hasn't been actively developed for two years. As it stands, it's a brilliant peice of software, and the original developers are pretty damn awesome for creating it. But we'd like to go further, and bring sptoolkit up to date. We've tried contacting the developers, but to no avail. We're taking matters into our own hands now.
 
+[KingPhisher](https://github.com/securestate/king-phisher)
+* King Phisher is a tool for testing and promoting user awareness by simulating real world phishing attacks. It features an easy to use, yet very flexible architecture allowing full control over both emails and server content. King Phisher can be used to run campaigns ranging from simple awareness training to more complicated scenarios in which user aware content is served for harvesting credentials.
+
+
+
 
 ### Tools
 
@@ -58,7 +64,8 @@ TOC
 * Tools for harvesting email addresses for phishing attacks
 * [Email Address Harvesting for Phishing](http://www.shortbus.ninja/email-address-harvesting-for-phishing-attacks/)
 
-
+[SimplyTemplate](https://github.com/killswitch-GUI/SimplyTemplate)
+* Phishing Template Generation Made Easy. The goal of this project was to hopefully speed up Phishing Template Gen as well as an easy way to ensure accuracy of your templates. Currently my standard Method of delivering emails is the Spear Phish in Cobalt strike so you will see proper settings for that by default.
 
 
 

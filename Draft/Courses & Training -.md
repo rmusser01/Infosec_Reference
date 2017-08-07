@@ -58,7 +58,7 @@ These classes are all focused on computer/information security. If you're lookin
 
 [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn)
 * Free Coursera Course
-* About this course: This course gives you easy access to the invaluable learning techniques used by experts in art, music, literature, math, science, sports, and many other disciplines. Weíll learn about the how the brain uses two very different learning modes and how it encapsulates (ìchunksî) information. Weíll also cover illusions of learning, memory techniques, dealing with procrastination, and best practices shown by research to be most effective in helping you master tough subjects. 
+* About this course: This course gives you easy access to the invaluable learning techniques used by experts in art, music, literature, math, science, sports, and many other disciplines. We‚Äôll learn about the how the brain uses two very different learning modes and how it encapsulates (‚Äúchunks‚Äù) information. We‚Äôll also cover illusions of learning, memory techniques, dealing with procrastination, and best practices shown by research to be most effective in helping you master tough subjects. 
 
 
 
@@ -91,9 +91,17 @@ These classes are all focused on computer/information security. If you're lookin
 
 
 
-### Incident Response/Forensics Training
+### Incident Response/Forensics/NSM Training
 
 [Android Forensics & Security Testing - OpenSecurityTraining.info](http://opensecuritytraining.info/AndroidForensics.html)
+
+[CS 259D Data Mining for Cyber Security Autumn 2014](http://web.stanford.edu/class/cs259d/)
+
+
+
+
+
+
 
 
 
@@ -107,6 +115,8 @@ These classes are all focused on computer/information security. If you're lookin
 [FSU Offensive Security 2013](http://www.cs.fsu.edu/~redwood/OffensiveSecurity/)
 * Florida State University Offensive Security 2013 Class materials
 
+[HackSplaining](https://www.hacksplaining.com/faq)
+* Security training aimed towards developers. Free.
 
 
 
@@ -146,7 +156,7 @@ These classes are all focused on computer/information security. If you're lookin
 *	Linking object files together to create a well-formed binary.  
 *	Detailed descriptions of the high level similarities and low level differences between the Windows PE and Linux ELF binary formats. (NOTE: we didn't get to this in the class where the video was recorded, but the materials are in the slides)
 *	How an OS loads a binary into memory and links it on the fly before executing it.   
-*Along the way we discuss the relevance of security at different stages of a binaryís life, from the tricks that can be played by a malicious compiler, to how viruses really work, to the way which malware ìpackersî duplicate OS process execution functionality, to the benefit of a security-enhanced OS loader which implements address space layout randomization (ASLR).
+*Along the way we discuss the relevance of security at different stages of a binary‚Äôs life, from the tricks that can be played by a malicious compiler, to how viruses really work, to the way which malware ‚Äúpackers‚Äù duplicate OS process execution functionality, to the benefit of a security-enhanced OS loader which implements address space layout randomization (ASLR).
 
 [Introduction to Reverse Engineering Software - Dartmouth](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
 
@@ -190,6 +200,9 @@ These classes are all focused on computer/information security. If you're lookin
 [Google Gruyere -  Web Application Exploits and Defenses ](http://google-gruyere.appspot.com/)
 
 
+### Data Science
+
+[CS 259D Data Mining for Cyber Security Autumn 2014](http://web.stanford.edu/class/cs259d/)
 
 
 
@@ -205,7 +218,7 @@ These classes are all focused on computer/information security. If you're lookin
 
 [Teaching Evil - Chris Niemira](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t200-teaching-evil-chris-niemira)
 
-[The Distribution of Usersí Computer Skills: Worse Than You Think](https://www.nngroup.com/articles/computer-skill-levels/)
+[The Distribution of Users‚Äô Computer Skills: Worse Than You Think](https://www.nngroup.com/articles/computer-skill-levels/)
 
 
 

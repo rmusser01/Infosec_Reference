@@ -36,6 +36,17 @@ https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-
 [Stack Smashing Protector](http://wiki.osdev.org/Stack_Smashing_Protector)
 
 
+
+[windows-operating-system-archaeology](https://github.com/subTee/windows-operating-system-archaeology)
+* subTee stuff
+
+[Processes, Threads, and Jobs in the Windows Operating System](https://www.microsoftpressstore.com/articles/article.aspx?p=2233328&seqNum=2)
+
+[Mandatory Integrity Control](https://msdn.microsoft.com/en-gb/library/windows/desktop/bb648648(v=vs.85).aspx)
+
+[Windows Access Control Demystified](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=E1A09F166B29C17D2CD38C70A02576E4?doi=10.1.1.88.1930&rep=rep1&type=pdf)
+
+
 #### End Sort
 
 
@@ -65,6 +76,12 @@ https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-
 [x86 Disassembly/Windows Executable Files - WikiBooks](https://en.wikibooks.org/wiki/X86_Disassembly/Windows_Executable_Files)
 
 [WinAPIs for Hackers](https://www.bnxnet.com/wp-content/uploads/2015/01/WinAPIs_for_hackers.pdf)
+
+[About Atom Tables](https://msdn.microsoft.com/en-us/library/windows/desktop/ms649053(v=vs.85).aspx)
+
+[GlobalGetAtomName function](https://msdn.microsoft.com/en-us/library/windows/desktop/ms649063(v=vs.85).aspx)
+
+
 
 
 #### Documentation
@@ -191,6 +208,9 @@ https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-
 [MS "reg" commandreference](http://www.computerhope.com/reg.htm)
 
 [Introduction to ADS: Alternate Data Streams](https://hshrzd.wordpress.com/2016/03/19/introduction-to-ads-alternate-data-streams/)
+
+[Detecting stealthier cross-process injection techniques with Windows Defender ATP: Process hollowing and atom bombing](https://blogs.technet.microsoft.com/mmpc/2017/07/12/detecting-stealthier-cross-process-injection-techniques-with-windows-defender-atp-process-hollowing-and-atom-bombing/)
+
 
 
 

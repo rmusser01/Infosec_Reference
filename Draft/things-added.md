@@ -5,6 +5,50 @@
 
 
 
+[PenTesting-Scripts - killswitch-GUI](https://github.com/killswitch-GUI/PenTesting-Scripts)
+
+
+
+
+
+[Hunting in Memory](https://www.endgame.com/blog/technical-blog/hunting-memory)
+https://niccs.us-cert.gov/workforce-development/cyber-security-workforce-framework
+
+[Jackson Thuraisamy & Jason Tran - Hacking POS PoS Systems](https://www.youtube.com/watch?v=-n7oJqmTUCo) 
+
+
+
+
+[Revoke -­‐ Obfuscation: PowerShell Obfuscation Detection Using Science](https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf)
+
+[Revoke-Obfuscation](https://github.com/danielbohannon/Revoke-Obfuscation)
+* Revoke-Obfuscation is a PowerShell v3.0+ compatible PowerShell obfuscation detection framework.
+
+[nps_payload](https://github.com/trustedsec/nps_payload)
+* This script will generate payloads for basic intrusion detection avoidance. It utilizes publicly demonstrated techniques from several different sources. 
+
+
+https://improsec.com/blog//windows-kernel-shellcode-on-windows-10-part-1
+https://improsec.com/blog//windows-kernel-shellcode-on-windows-10-part-2
+https://improsec.com/blog//windows-kernel-shellcode-on-windows-10-part-3
+https://improsec.com/blog//windows-kernel-shellcode-on-windows-10-part-4-there-is-no-code
+
+
+[Bypassing UAC using App Paths](https://enigma0x3.net/2017/03/14/bypassing-uac-using-app-paths/)
+
+
+[Invoke-DCOM.ps1](https://github.com/rvrsh3ll/Misc-Powershell-Scripts/blob/master/Invoke-DCOM.ps1)
+
+[katz.xml](https://gist.github.com/subTee/c98f7d005683e616560bda3286b6a0d8)
+* Downloads Mimikatz From GitHub, Executes Inside of MsBuild.exe
+
+
+
+
+
+
+[Software Assurance Maturity Model - OWASP](http://www.opensamm.org/downloads/SAMM-1.0-en_US.pdf)
+
 
 [How to Build Your Own Penetration Testing Drop Box - BHIS](https://www.blackhillsinfosec.com/?p=5156&)
 
@@ -14,6 +58,40 @@
 [Red Teaming Tips - Vincent Yiu](https://threatintel.eu/2017/06/03/red-teaming-tips-by-vincent-yiu/)
 
 [Finding Diamonds in the Rough- Parsing for Pentesters](https://bluescreenofjeff.com/2016-07-26-finding-diamonds-in-the-rough-parsing-for-pentesters/)
+
+[Red Team Tips as posted by @vysecurity on Twitter](https://github.com/vysec/RedTips)
+
+[FindFrontableDomains](https://github.com/rvrsh3ll/FindFrontableDomains)
+* Search for potential frontable domains
+
+[Domain Hunter](https://github.com/minisllc/domainhunter)
+* Checks expired domains, bluecoat categorization, and Archive.org history to determine good candidates for phishing and C2 domain names
+
+[Laurent Desaulniers - Stupid RedTeamer Tricks](https://www.youtube.com/watch?v=2g_8oHM0nwA&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=11)
+
+
+[Dimitry Snezhkov - Abusing Webhooks for Command and Control](https://www.youtube.com/watch?v=1d3QCA2cR8o&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=12)
+
+[Chameleon](https://github.com/mdsecactivebreach/Chameleon)
+* A tool for evading Proxy categorisation
+
+[Jackson Thuraisamy & Jason Tran - Hacking POS PoS Systems](https://www.youtube.com/watch?v=-n7oJqmTUCo&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=13#t=213.471604)
+
+
+[Software Assurance Maturity Model](http://www.opensamm.org/)
+* The Software Assurance Maturity Model (SAMM) is an open framework to help organizations formulate and implement a strategy for software security that is tailored to the specific risks facing the organization. - OWASP Project
+
+[DigiDucky - How to setup a Digispark like a rubber ducky](http://www.redteamr.com/2016/08/digiducky/)
+
+[Common Ground Part 1: Red Team History & Overview](https://www.sixdub.net/?p=705)
+
+
+[Ruler Pivoting Through Exchange - Etienne Stalmans - TR17](https://www.youtube.com/watch?v=tuc8cwOAAcA)
+
+[Domain Hunter](https://github.com/minisllc/domainhunter)
+
+[Windows Access Control Demystified](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=E1A09F166B29C17D2CD38C70A02576E4?doi=10.1.1.88.1930&rep=rep1&type=pdf)
+
 
 
 
@@ -27,28 +105,18 @@ https://www.toshellandback.com/
 https://www.class-central.com/
 
 
-
-[Rocking the Pocket Book: Hacking Chemical Plant for Competition and Extortion - Marina Krotofil - Jason Larsen](https://www.youtube.com/watch?v=AL8L76n0Q9w)
-* The appeal of hacking a physical process is dreaming about physical damage attacks lighting up the sky in a shower of goodness. Let’s face it, after such elite hacking action nobody is going to let one present it even at a conference like DEF CON. As a poor substitute, this presentation will get as close as using a simulated plant for Vinyl Acetate production for demonstrating a complete attack, from start to end, directed at persistent economic damage to a production site while avoiding attribution of production loss to a cyber-event. Such an attack scenario could be useful to a manufacturer aiming at putting competitors out of business or as a strong argument in an extortion attack. Exploiting physical process is an exotic and hard to develop skill which have so far kept a high barrier to entry. Therefore real-world control system exploitation has remained in the hands of a few. To help the community mastering new skills we have developed „Damn Vulnerable Chemical Process“ – first open source framework for cyber-physical experimentation based on two realistic models of chemical plants. Come to the session and take your first master class on complex physical hacking.
-
-
 [PENQUIN’S MOONLIT MAZE](https://ridt.co/d/jags-moore-raiu-rid.pdf)
-
-
-
-[Invoke-IR](http://www.invoke-ir.com/)
-
-
 
 ["Humans, right?" Soft Skills in Security - Ariel Robinson](http://www.irongeek.com/i.php?page=videos/bsidesnova2017/200-humans-right-soft-skills-in-security-ariel-robinson)
 * Let's face it: humans ruin everything. They are almost always the weak link in the information security chain, between their susceptibility to social engineering, rejection of security threats, and sheer laziness. You can make the best security tool in the business, but if a human doesn't use it right, well, you might as well leave your passwords on a sticky note on your-- wait a minute. Yes, humans suck at information security. But we don't make it easy. Infosec is incredibly inaccessible to your average user. Just ask me: I am one. We can't change humans (or get rid of them, no matter how much we might want to), but we can change information security. We can leverage insights from non-technical disciplines such as cognitive science, human-centered design, strategic communications, and psychology. Or we can keep hitting our heads against our desktops. As a professional communicator and bridge builder, help me help you. To make security work, we have to make it easy. For humans.
 
-
-
-[Probable-Wordlists](https://github.com/berzerk0/Probable-Wordlists)
-
 [gibbersense](https://github.com/smxlabs/gibbersense)
 * Extract Sense out of Gibberish stuff
+
+
+
+
+[Mobile Application Penetration Testing Cheat Sheet](https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet)
 
 
 
@@ -84,6 +152,11 @@ https://www.class-central.com/
 
 [De-Anonymizing Alt.Anonymous. Messages - Defcon21 - Tom Ritter](https://www.youtube.com/watch?v=_Tj6c2Ikq_E)
 
+[Dutch-Russian cyber crime case reveals how police tap the internet - ElectroSpaces](http://electrospaces.blogspot.de/2017/06/dutch-russian-cyber-crime-case-reveals.html?m=1)
+
+[Deanonymizing Windows users and capturing Microsoft and VPN accounts](https://medium.com/@ValdikSS/deanonymizing-windows-users-and-capturing-microsoft-and-vpn-accounts-f7e53fe73834)
+
+
 
 
 
@@ -102,12 +175,25 @@ https://www.class-central.com/
 
 ## Building a Lab 
 
-[Install AD DS using Powerhsell](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-#BKMK_PS)
+[Setting Up a Pentest/Hacking Lab with Hyper-V](http://cyberthreathunt.com/2017/04/01/setting-up-a-pentest-lab-with-hyper-v/)
 
-[Home Lab with pfSense & VMware Workstation - sysadmin perspective](http://itpro.outsidesys.com/2015/02/19/home-lab-with-pfsense-workstation/)
-* I wanted to build a virtual lab environment at home that would emulate an office environment.  My requirements were to have separate network segments for Clients & Servers, and two DMZ networks.  I also wanted my home network, which is external to the virtual lab environment, to emulate the Internet, even though it really isn’t. The following is how I created multiple “named” LAN segments within VMware Workstation, and routed between them using a VM running pfSense, which is an open source firewall.
+[Windows Server 2016: Build a Windows Domain Lab at Home for Free](https://social.technet.microsoft.com/wiki/contents/articles/36438.windows-server-2016-build-a-windows-domain-lab-at-home-for-free.aspx#Download)
+* Microsoft Technet tutorial
 
-[Internet Explorer Windows XP and Vista Virtual Machines](https://github.com/mikescott/ie-virtual-machines/blob/master/README.md)
+[Pentest Home Lab - 0x2 - Building Your AD Lab on Premises-SethSec](https://sethsec.blogspot.com/2017/06/pentest-home-lab-0x2-building-your-ad.html)
+
+[Building A Lab on AWS - 0x1 SethSec](https://sethsec.blogspot.com/2017/05/pentest-home-lab-0x1-building-your-ad.html)
+
+[Building an Effective Active Directory Lab Environment for Testing](https://adsecurity.org/?p=2653)
+
+[Hack Yourself: Building a Test Lab - David Boyd](https://www.youtube.com/watch?v=rgdX-hn0xXU)
+
+[Hack-Yourself: Building a pentesting lab for fun & profit](https://www.slideshare.net/DavidBoydCISSP/hack-yourself-building-a-pentesting-lab-for-fun-and-profit)
+
+[Setting up a Windows Lab Environment](http://thehackerplaybook.com/Windows_Domain.htm)
+
+[Pentest Environment Deployer](https://github.com/Sliim/pentest-env)
+* This repo provides an easy way to deploy a clean and customized pentesting environment with Kali linux using vagrant and virtualbox.
 
 
 ## Car Hacking
@@ -138,7 +224,8 @@ https://www.class-central.com/
 
 [CS 259D Data Mining for Cyber Security Autumn 2014](http://web.stanford.edu/class/cs259d/)
 
-
+[HackSplaining](https://www.hacksplaining.com/faq)
+* Security training aimed towards developers. Free.
 
 
 ## Crypto
@@ -146,19 +233,49 @@ https://www.class-central.com/
 [A Graduate Course in Applied Cryptography - Dan Boneh and Victor Shoup](http://toc.cryptobook.us/)
 * Version 0.3 - posted Dec. 9, 2016
 
+[Lifetimes of cryptographic hash functions](http://valerieaurora.org/hash.html)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Data Analysis
+[Norikra](http://norikra.github.io/)
+* Norikra is a open source server software provides "Stream Processing" with SQL, written in JRuby, runs on JVM, licensed under GPLv2.
+
+[Fluentd](https://www.fluentd.org/architecture)
+* Fluentd is an open source data collector, which lets you unify the data collection and consumption for a better use and understanding of data.
 
 
 
+## Design
 
+[UI Fundamentals for Programmers by Ryan Singer](https://vimeo.com/6702766)
+
+
+
+## Disclosure
+
+[Request a CVE ID](http://cve.mitre.org/cve/request_id.html#cna_coverage)
+
+[My first CVE-2016-1000329 in BlogPHP](https://www.stevencampbell.info/2016/12/my-first-cve-2016-1000329-in-blogphp/)
 
 ## Documentation/Technical writing
 
 
 [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
 
-
+[vim-wordy](https://github.com/reedes/vim-wordy/blob/master/README.markdown)
+* wordy is not a grammar checker. Nor is it a guide to proper word usage. Rather, wordy is a lightweight tool to assist you in identifying those words and phrases known for their history of misuse, abuse, and overuse, at least according to usage experts.
 
 
 
@@ -178,6 +295,8 @@ https://www.class-central.com/
 
 [Hacking Printers Wiki](http://hacking-printers.net/wiki/index.php/Main_Page)
 
+[Ian Douglas - Creating an Internet of Private Things](https://www.youtube.com/watch?v=4W8SkujOXi4&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=8)
+* The next big market push is to have the cool IoT device that’s connected to the internet. As we’ve seen from the Mirai and Switcher hacks, it’s important to embed the appropriate safeguards so that devices are not open to attack. When selecting device components there are things that should be checked for, and when you’re doing the coding and workflows, there are other things that need to be taken in to account. Although security and privacy are close cousins, they’re also different. This talk will be centered around some best security and privacy practices as well as some common errors that should be avoided.
 
 
 
@@ -186,62 +305,27 @@ https://www.class-central.com/
 
 
 ## Exploit Dev
+* Add use-after-free section
 
-[Proposed Windows 10 EAF/EMET "Bypass" for Reflective DLL Injection](https://zerosum0x0.blogspot.com/2017/06/proposed-eafemet-bypass-for-reflective.html?m=1)
+[ShellcodeStdio](https://github.com/jackullrich/ShellcodeStdio)
+* An extensible framework for easily writing debuggable, compiler optimized, position independent, x86 shellcode for windows platforms.
 
-[A Window into Ring0 - Paper](https://labs.mwrinfosecurity.com/publications/a-window-into-ring0/)
-* With the rise of sandboxes and locked down user accounts attackers are increasingly resorting to attacking kernel mode code to gain full access to compromised systems. The talk provided an overview of the Windows kernel mode attack surface and how to interact with it. It then went on to cover the tools available for finding bugs in Windows kernel mode code and drivers as well as highlighting some of the lower hanging fruit, common mistakes and the steps being taken (or lack of steps being taken) to mitigate the risks posed. The talk also covered common exploitation techniques to gather information about the state of kernel mode memory and to gain code execution as SYSTEM. Finally the talk walked through exploiting CVE-2016-7255 on modern 64 bit versions of Windows.
+[gdbgui](https://github.com/cs01/gdbgui)
+* A modern, browser-based frontend to gdb (gnu debugger). Add breakpoints, view stack traces, and more in C, C++, Go, and Rust. Simply run gdbgui from the terminal and a new tab will open in your browser.
 
-[CVE-2016-7255 - Git repo](https://github.com/mwrlabs/CVE-2016-7255)
+[I-know-where-your-page-lives](https://github.com/IOActive/I-know-where-your-page-lives)
+* I Know Where Your Page Lives: Derandomizing the latest Windows 10 Kernel - ZeroNights 2016
 
-[Exploit-Challenges - A collection of vulnerable ARM binaries for practicing exploit development](https://github.com/Billy-Ellis/Exploit-Challenges)
-* Here are a collection of vulnerable ARM binaries designed for beginner vulnerability researchers & exploit developers to play around with and test their skills!
+[Crashing phones with Wi-Fi: Exploiting nitayart's Broadpwn bug (CVE-2017-9417)](http://boosterok.com/blog/broadpwn2/)
 
-[Windows-driver-samples](https://github.com/Microsoft/Windows-driver-samples	)
-* This repo contains driver samples prepared for use with Microsoft Visual Studio and the Windows Driver Kit (WDK). It contains both Universal Windows Driver and desktop-only driver samples.
+[Sigreturn Oriented Programming is a real Threat](https://subs.emis.de/LNI/Proceedings/Proceedings259/2077.pdf)
+* Abstract: This paper shows that Sigreturn Oriented Programming (SROP), which consists of using calls to sigreturn to execute arbitrary code, is a pow erful method for the de velopment of exploits. This is demonstrated by developing two different kinds of SROP based exploits, one asterisk exploit which was already portrayed in the paper presenting SROP, and one novel exploit for a recently disclosed bug inthe DNS address resolution of the default GNUC library. Taking advantage of the fact, that these exploits have very few dependencies on the program being exploited, a library is implemented to automate wide parts of SROP exploit creation. This highlights the potential of SROP in respect to reusable and portable exploit code which strongly supports the conclusion of the original paper: SROP is areal threat!
 
-[DriverBuddy](https://github.com/nccgroup/DriverBuddy)
-* DriverBuddy is an IDA Python script to assist with the reverse engineering of Windows kernel drivers.
-* [Blog post](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2016/november/driverbuddy-tool-release/)
+[Playing with signals : An overview on Sigreturn Oriented Programming](https://thisissecurity.net/2015/01/03/playing-with-signals-an-overview-on-sigreturn-oriented-programming/)
 
+[SROP | Signals, you say?](https://0x00sec.org/t/srop-signals-you-say/2890)
 
-[win_driver_plugin](https://github.com/mwrlabs/win_driver_plugin)
-* A tool to help when dealing with Windows IOCTL codes or reversing Windows drivers.
-
-[Securi-Tay 2017 - A Window into Ring0](https://www.youtube.com/watch?v=DLND8bKv27w)
-* With the rise of sandboxes and locked down user accounts attackers are increasingly resorting to attacking kernel mode code to gain full access to compromised systems. This talk aims to provide an overview of the Windows kernel mode attack surface and how to interact with it. This talk will demonstrate the tools available for finding bugs in Windows kernel mode code and drivers together with highlighting some of the lower hanging fruit, common mistakes and the steps being taken (or lack of steps being taken) to mitigate the risks posed. The talk will then cover common exploitation techniques to gather information about the state of kernel mode memory and to gain code execution as SYSTEM using examples from publicly known exploits.
-
-[Toward mitigating arbitrary native code execution in Windows 10](https://github.com/Microsoft/MSRC-Security-Research/blob/master/presentations/2017_05_SysScan360_Seattle/SyScan360_Miller_Towards_Mitigating_Arbitrary_Native_Code_Execution.pdf)
-
-[MSRC-Security-Research Github](https://github.com/Microsoft/MSRC-Security-Research/tree/master/presentations)
-
-[A cursory analysis of @nitayart's Broadpwn bug (CVE-2017-9417)](http://boosterok.com/blog/broadpwn/)
-
-[Emulation and Exploration of BCM WiFi Frame Parsing using LuaQEMU](https://comsecuris.com/blog/posts/luaqemu_bcm_wifi/)
-
-[Emulation and Exploration of BCM WiFi Frame Parsing using LuaQEMU](https://comsecuris.com/blog/posts/luaqemu_bcm_wifi/)
-
-[The Weak Bug - Exploiting a Heap Overflow in VMware](http://acez.re/the-weak-bug-exploiting-a-heap-overflow-in-vmware/)
-
-[A Study of Overflow Vulnerabilities on GPUs](https://www.aimlab.org/haochen/papers/npc16-overflow.pdf)
-
-[Playing with canaries](https://www.elttam.com.au/blog/playing-with-canaries/)
-
-[Windows Exploit Protection History/Overview - Compass Security](https://exploit.courses/files/bfh2017/day6/0x60_WindowsExploiting.pdf)
-
-[Resolving the Base Pointer of the Linux Program Interpreter with Shellcode](https://web-beta.archive.org/web/20160720084253/http://howto.hackallthethings.com:80/2015/03/resolving-base-pointer-of-linux-program.html)
-
-[Bypassing Device Guard with .NET Assembly Compilation Methods](http://www.exploit-monday.com/2017/07/bypassing-device-guard-with-dotnet-methods.html)
-
-[Microsoft Patch Analysis for Exploitation Stephen Sims](https://www.youtube.com/watch?v=LHNcBVQF1tM)
-
-[MS17-010](https://github.com/worawit/MS17-010)
-
-
-
-
-
-
+[EnglishmansDentist Exploit Analysis](https://blogs.technet.microsoft.com/srd/2017/07/20/englishmansdentist-exploit-analysis/)
 
 
 
@@ -255,29 +339,42 @@ https://www.class-central.com/
 [PowerForensics - PowerShell Digital Forensics](https://github.com/Invoke-IR/PowerForensics)
 * The purpose of PowerForensics is to provide an all inclusive framework for hard drive forensic analysis. PowerForensics currently supports NTFS and FAT file systems, and work has begun on Extended File System and HFS+ support.
 
+[IRM (Incident Response Methodologies)](https://github.com/certsocietegenerale/IRM)
+* CERT Societe Generale provides easy to use operational incident best practices. These cheat sheets are dedicated to incident handling and cover multiple fields in which a CERT team can be involved. One IRM exists for each security incident we're used to dealing with.
+
+[Get-InjectedThread.ps1](https://gist.github.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2)
+* Code from "Taking Hunting to the Next Level: Hunting in Memory" presentation at SANS Threat Hunting Summit 2017 by Jared Atkinson and Joe Desimone
+
+
+
+
 
 
 
 
 ## Fuzzing
-https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
-[Upping Your Bug Hunting Skills Using Symbolic Virtual Machines by Anto  - x33fcon](https://www.youtube.com/watch?v=IPSZxGaLlyk)
+[The Bug Hunters Methodology](https://github.com/jhaddix/tbhm)
+* Welcome! This repo is a conglomeration of tips, tricks, tools, and data analysis to use while doing web application security assessments, and more specifically towards bug hunting in bug bounties.
 
-[libFuzzer-gv: new techniques for dramatically faster fuzzing](https://guidovranken.wordpress.com/2017/07/08/libfuzzer-gv-new-techniques-for-dramatically-faster-fuzzing/)
 
-[libfuzzer-gv](https://github.com/guidovranken/libfuzzer-gv)
-* enhanced fork of libFuzzer
 
-[Browser Bug Hunting and Mobile](http://slides.com/revskills/fzbrowsers#/)
+## Game Hacking
 
-[Introduction to USB and Fuzzing DEFCON23 Matt DuHarte](https://www.youtube.com/watch?v=KWOTXypBt4E)
+[Remote Code Execution In Source Games](https://oneupsecurity.com/research/remote-code-execution-in-source-games?t=r)
+
+http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce
+
+
+
+
 
 
 ## Honeypots
+[honeyLambda](https://github.com/0x4D31/honeyLambda)
+* a simple, serverless application designed to create and monitor URL {honey}tokens, on top of AWS Lambda and Amazon API Gateway
 
-
-
+[Masarah Paquet-Clouston & Olivier Bilodeau - Attacking Linux Moose Unraveled an Ego Market](https://www.youtube.com/watch?v=8c8C5cHbRU0&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=2)
 
 
 
@@ -286,6 +383,8 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 [dyode](https://github.com/arnaudsoullie/dyode)
 * A low-cost data diode, aimed at Industrial Control Systems
 
+[Rocking the Pocket Book: Hacking Chemical Plant for Competition and Extortion - Marina Krotofil - Jason Larsen](https://www.youtube.com/watch?v=AL8L76n0Q9w)
+* The appeal of hacking a physical process is dreaming about physical damage attacks lighting up the sky in a shower of goodness. Let’s face it, after such elite hacking action nobody is going to let one present it even at a conference like DEF CON. As a poor substitute, this presentation will get as close as using a simulated plant for Vinyl Acetate production for demonstrating a complete attack, from start to end, directed at persistent economic damage to a production site while avoiding attribution of production loss to a cyber-event. Such an attack scenario could be useful to a manufacturer aiming at putting competitors out of business or as a strong argument in an extortion attack. Exploiting physical process is an exotic and hard to develop skill which have so far kept a high barrier to entry. Therefore real-world control system exploitation has remained in the hands of a few. To help the community mastering new skills we have developed „Damn Vulnerable Chemical Process“ – first open source framework for cyber-physical experimentation based on two realistic models of chemical plants. Come to the session and take your first master class on complex physical hacking.
 
 
 
@@ -312,44 +411,40 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 ## Interesting Things
 
-[Manuals Library](https://www.manualslib.com/)
+[VBScript Injection via GNOME Thumbnailer - On Linux](http://news.dieweltistgarnichtso.net/posts/gnome-thumbnailer-msi-fail.html)
 
-[SweetSecurity](https://github.com/TravisFSmith/SweetSecurity)
-* Scripts to setup and install Bro IDS, Elastic Search, Logstash, Kibana, and Critical Stack on a Raspberry Pi 3 device.
+[wikiteam](https://github.com/WikiTeam/wikiteam)
+* Tools for downloading and preserving wikis 
 
-[The S stands for Simple](http://harmful.cat-v.org/software/xml/soap/simple)
-* Satire(Only it's not) of a conversation about SOAP
+[List of disposable email domains](https://github.com/martenson/disposable-email-domains)
 
-[Encyclopedia of things considered harmful](http://harmful.cat-v.org/)
+[Locking Your Registry Keys for Fun and, Well, Just Fun I Guess](https://tyranidslair.blogspot.co.uk/2017/07/locking-your-registry-keys-for-fun-and.html)
 
-[THE BASIC LAWS OF HUMAN STUPIDITY - Carlo M. Cipolia](http://harmful.cat-v.org/people/basic-laws-of-human-stupidity/)
+[303 Hacks Lies Nation States Mario DiNatale](https://www.youtube.com/watch?v=nyh_ORq1Qwk)
 
-[NIST National Vulnerability Database](https://nvd.nist.gov/ncp/repository)
+[Richard Thieme - The Impact of Dark Knowledge and Secrets on Security and Intelligence Professionals](https://www.youtube.com/watch?v=0MzcPBAj88A&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
+* Dismissing or laughing off concerns about what it does to a person to know critical secrets does not lessen the impact on life, work, and relationships of building a different map of reality than “normal people” use. One has to calibrate narratives to what another believes. One has to live defensively, warily. This causes at the least cognitive dissonance which some manage by denial. But refusing to feel the pain does not make it go away. It just intensifies the consequences when they erupt.
+Philip K. Dick said, reality is that which, when you no longer believe in it, does not go away. When cognitive dissonance evolves into symptoms of traumatic stress, one ignores those symptoms at one’s peril. But the very constraints of one’s work often make it impossible to speak aloud about those symptoms, because that might threaten one’s clearances, work, and career. And whistle blower protection is often non-existent.
 
-[IA Guidance - NSA](https://www.iad.gov/iad/library/ia-guidance/index.cfm)
+[recap](https://github.com/rackerlabs/recap)
+* recap is a reporting script that generates reports of various information about the server.
 
-[Docker: Not Even a Linker](http://adamierymenko.com/docker-not-even-a-linker/)
+[Paul Rascagneres - Modern Reconnaissance Phase by APT – Protection Layer](https://www.youtube.com/watch?v=4JVrK7bRKb0&index=10&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
 
-[Paste-Scraper](https://github.com/KernelEquinox/Paste-Scraper)
+[BE YOUR OWN VPN PROVIDER WITH OPENBSD (v2)](https://networkfilter.blogspot.com/2017/04/be-your-own-vpn-provider-with-openbsd-v2.html)
 
-[Wayback scraper](https://github.com/abrenaut/waybackscraper)
+[New cache architecture on Intel I9 and Skylake server: An initial assessment](https://cyber.wtf/2017/07/18/new-cache-architecture-on-intel-i9-and-skylake-server-an-initial-assessment/)
 
-[LeakedSource.ru](https://leakedsource.ru/)
+[301 The Road to Hiring is Paved in Good Intentions Tim OBrien](https://www.youtube.com/watch?v=sdkf8SIj1rU)
 
-[Red Team Infrastructure Wiki](https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki)
-* Wiki to collect Red Team infrastructure hardening resources
-* Accompanying Presentation: [Doomsday Preppers: Fortifying Your Red Team Infrastructure](https://speakerdeck.com/rvrsh3ll/doomsday-preppers-fortifying-your-red-team-infrastructure)
-
-[cyberfree](https://github.com/arnaudsoullie/cyberfree)
-* Cyber-free browsing extension for Chrome
-
-[Software Supply Chains and the Illusion of Control - Derek Weeks](http://www.irongeek.com/i.php?page=videos/bsidesnova2017/107-software-supply-chains-and-the-illusion-of-control-derek-weeks)
-* In this presentation I am sharing the results of a three-year, industry-wide study on open source development and security practices across 3,000 organizations and 25,000. I will detail how these organizations are employing a vast community of open source component suppliers, warehouses, and development tools that take the form of software supply chains. Modern software development practices are now consuming BILLIONS of open source and third-party components. The tooling with package managers and build tools such as Maven, Gradle, npm, NuGet, RubyGems and others has promoted the usage of components to a convenient standard practice. As a result, 90% of a typical application is now composed of open source components. The good news: use of the components is improving developer productivity and accelerating time to market. However, using these components brings ownership and responsibility with it and this fact is largely overlooked. The unspoken truth: not all parts are created equal. For example, 1 in 16 components in use include known security vulnerabilities. Ugh. This session aims to enlighten development professionals by sharing results from the State of the Software Supply Chain reports from 2015 through 2017. The reports blend of public and proprietary data with expert research and analysis. Attendees in this session will learn: - What our analysis of 25,000 applications reveals about the quality and security of software built with open source components - How organizations like Mayo Clinic, Exxon, Capital One, the U.S. FDA and Intuit are utilizing the principles of software supply chain automation to improve application security - Why avoiding open source components over 3 years old might be a really good idea - How to balance the need for speed with quality and security -- early in the development lifecycle We will also discuss how you can best approach the effort for development teams to identify, track and replace components with known vulnerabilities, while getting more products and new features to market quickly. Attend this session and gain insight as to how your organization’s application development practices compare to others. I'll share the industry benchmarks to take back and discuss with your development, security, and open source governance teams.
+[Ermahgerd: Lawrs - Robert Heverly - Anycon17](http://www.irongeek.com/i.php?page=videos/anycon2017/305-ermahgerd-lawrs-prof-robert-heverly)
+* When do you ? and other coders, hackers, developers, and tinkerers ? think or worry about the law? If your answer is, ?Not very often,? then this talk is for you. We all need to think about the law. And it?s not just privacy, or computer fraud, or even anti-circumvention law, that we should think about. We need to think about law as a whole and how it can help us do or stop us from doing what we want to do. This talk will start with a broad overview of the ways in which we implicate law when we do what we do, and then will focus on what that means for us and the broader implications that can arise from our various activities. Do you think the law would stop you from doing what you want to do or punish you for doing it? It might, but it also might not. If you think it does, do you think you should be able to do what you want to do? If you do, then we need to hack the law, and to do that we?ll need to talk to the legal coders, those writers of our cultural software. This talk will tackle not only law and working with code, but also why it matters for us to be aware of the law and engaged in improving it.
 
 
 
 ## Lockpicking
 
+[Lock Picking Course - LockLab](https://lock-lab.com/locklab-university/lock-picking-course-2/)
 
 
 
@@ -361,9 +456,8 @@ https://archive.is/Nol3S
 
 [Hiding in Plain Sight: Advances in malware covert communication channels - BH2015 Pierre-Marc Bureau, Christian Dietrich](https://www.blackhat.com/docs/eu-15/materials/eu-15-Bureau-Hiding-In-Plain-Sight-Advances-In-Malware-Covert-Communication-Channels-wp.pdf)
 
-
-
-
+[rVMI - A New Paradigm For Full System Analysis](https://github.com/fireeye/rvmi)
+* rVMI is a debugger on steroids. It leverages Virtual Machine Introspection (VMI) and memory forensics to provide full system analysis. This means that an analyst can inspect userspace processes, kernel drivers, and preboot environments in a single tool.  It was specifially designed for interactive dynamic malware analysis. rVMI isolates itself from the malware by placing its interactive debugging environment out of the virtual machine (VM) onto the hypervisor-level. Through the use of VMI the analyst still has full control of the VM, which allows her to pause the VM at any point in time and to use typical debugging features such as breakpoints and watchpoints. In addtion, rVMI provides access to the entire Rekall feature set, which enables an analyst to inspect the kernel and its data structures with ease.
 
 
 
@@ -376,78 +470,75 @@ https://archive.is/Nol3S
 
 ## Network Scanning and Attacks
 
-[PowerUpSQL: A PowerShell Toolkit for Attacking SQL Server](https://github.com/NetSPI/PowerUpSQL)
-* The PowerUpSQL module includes functions that support SQL Server discovery, auditing for common weak configurations, and privilege escalation on scale. It is intended to be used during internal penetration tests and red team engagements. However, PowerUpSQL also includes many functions that could be used by administrators to quickly inventory the SQL Servers in their ADS domain.
-* [Documentation](https TLS/SSL Vulnerabilities ://github.com/NetSPI/PowerUpSQL/wiki)
-* [Overview of PowerUpSQL](https://github.com/NetSPI/PowerUpSQL/wiki/Overview-of-PowerUpSQL)
+[bluebox-ng](https://github.com/jesusprubio/bluebox-ng)
+* Pentesting framework using Node.js powers, focused in VoIP.
 
-[ TLS/SSL Vulnerabilities ](https://www.gracefulsecurity.com/tls-ssl-vulnerabilities/)
+[dns-parallel-prober](https://github.com/lorenzog/dns-parallel-prober)
+* This script is a proof of concept for a parallelised domain name prober. It creates a queue of threads and tasks each one to probe a sub-domain of the given root domain. At every iteration step each dead thread is removed and the queue is replenished as necessary.
 
-[WSUXploit])(https://github.com/pimps/wsuxploit)
-* This is a MiTM weaponized exploit script to inject 'fake' updates into non-SSL WSUS traffic. It is based on the WSUSpect Proxy application that was introduced to public on the Black Hat USA 2015 presentation, 'WSUSpect – Compromising the Windows Enterprise via Windows Update'
+[enumall](https://github.com/Dhayalan96/enumall)
+* Script to enumerate subdomains, leveraging recon-ng. Uses google scraping, bing scraping, baidu scraping, yahoo scarping, netcraft, and bruteforces to find subdomains. Plus resolves to IP.
 
-[IPv6 Local Neighbor Discovery Using Router Advertisement](https://www.rapid7.com/db/modules/auxiliary/scanner/discovery/ipv6_neighbor_router_advertisement)
-* Send a spoofed router advertisement with high priority to force hosts to start the IPv6 address auto-config. Monitor for IPv6 host advertisements, and try to guess the link-local address by concatinating the prefix, and the host portion of the IPv6 address. Use NDP host solicitation to determine if the IP address is valid'
-
-[sipvicious](https://github.com/EnableSecurity/sipvicious)
-
-[STP MiTM Attack and L2 Mitigation Techniques on the Cisco Catalyst 6500 ](http://www.ndm.net/ips/pdf/cisco/Catalyst-6500/white_paper_c11_605972.pdf)
-
-[t50 - the fastest packet injector.](https://github.com/fredericopissarra/t50)
-* T50 was designed to perform “Stress Testing”  on a variety of infra-structure
-network devices (Version 2.45), using widely implemented protocols, and after
-some requests it was was re-designed to extend the tests (as of Version 5.3),
-covering some regular protocols (ICMP,  TCP  and  UDP),  some infra-structure
-specific protocols (GRE,  IPSec  and  RSVP), and some routing protocols (RIP,
-EIGRP and OSPF).
-
-[DNS hijacking using cloud providers - Frans Rosén](https://www.youtube.com/watch?v=HhJv8CU-RIk)
-
-[Sublist3r](https://github.com/aboul3la/Sublist3r)
-* Fast subdomains enumeration tool for penetration testers
-
-[Altdns](https://github.com/infosec-au/altdns)
-* Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging) as well as takes in a list of subdomains that you know of.
-
-[Attacking Nextgen Firewalls](https://www.youtube.com/watch?v=ZoCf9yWC32g)
+[SIMPLYEMAIL](https://github.com/killswitch-GUI/SimplyEmail)
+* What is the simple email recon tool? This tool was based off the work of theHarvester and kind of a port of the functionality. This was just an expansion of what was used to build theHarvester and will incorporate his work but allow users to easily build Modules for the Framework. Which I felt was desperately needed after building my first module for theHarvester.
 
 
 
 
 
 
-## Network Monitoring
 
-[Stenographer](https://github.com/google/stenographer)
-* Stenographer is a full-packet-capture utility for buffering packets to disk for intrusion detection and incident response purposes. It provides a high-performance implementation of NIC-to-disk packet writing, handles deleting those files as disk fills up, and provides methods for reading back specific sets of packets quickly and easily.
 
-[ROCK NSM](http://rocknsm.io/)
 
-[Response Operation Collections Kit Reference Build](https://github.com/rocknsm/rock)
 
-[PCAPDB](https://github.com/dirtbags/pcapdb)
-* PcapDB is a distributed, search-optimized open source packet capture system. It was designed to replace expensive, commercial appliances with off-the-shelf hardware and a free, easy to manage software system. Captured packets are reorganized during capture by flow (an indefinite length sequence of packets with the same src/dst ips/ports and transport proto), indexed by flow, and searched (again) by flow. The indexes for the captured packets are relatively tiny (typically less than 1% the size of the captured data).
 
-[Aktaion: Open Source Tool For "Micro Behavior Based" Exploit Detection and Automated GPO Policy Generation](https://github.com/jzadeh/Aktaion)
-* Aktaion is a lightweight JVM based project for detecting exploits (and more generally attack behaviors). The project is meant to be a learning/teaching tool on how to blend multiple security signals and behaviors into an expressive framework for intrusion detection. The cool thing about the project is it provides an expressive mechanism to add high level IOCs (micro beahviors) such as timing behavior of a certain malware family.
 
-[Passive IPS Reconnaissance and Enumeration - false positive (ab)use - Arron Finnon](https://vimeo.com/108775823)
-* Network Intrusion Prevention Systems or NIPS have been plagued by "False Positive" issues almost since their first deployment. A "False Positive" could simply be described as incorrectly or mistakenly detecting a threat that is not real. A large amount of research has gone into using "False Positive" as an attack vector either to attack the very validity of an IPS system or to conduct forms of Denial of Service attacks. However the very reaction to a "False Positive" in the first place may very well reveal more detailed information about defences than you might well think.
+## Network | Monitoring & Logging
 
-[Public:Windows Event Log Zero 2 Hero Slides](https://docs.google.com/presentation/d/1dkrldTTlN3La-OjWtkWJBb4hVk6vfsSMBFBERs6R8zA/edit#slide=id.g21acf94f3f_2_27)
+[Uncovering Indicators of Compromise (IoC) Using   PowerShell, Event Logs, and  a Traditional Monitoring Tool](https://www.sans.org/reading-room/whitepapers/critical/uncovering-indicators-compromise-ioc-powershell-event-logs-traditional-monitoring-tool-36352)
 
-[SniffJoke](https://github.com/vecna/sniffjoke)
-* SniffJoke is an application for Linux that handle transparently your TCP connection, delaying, modifyng and inject fake packets inside your transmission, make them almost impossible to be correctly readed by a passive wiretapping technology (IDS or sniffer)
+[Advanced Security Audit Policy Settings](https://technet.microsoft.com/en-us/library/dn319056(v=ws.11).aspx)
 
-[RITA - Finding Bad Things on Your Network Using Free and Open Source Tools](https://www.youtube.com/watch?v=mpCBOQSjbOA)
+[Sysinternals Sysmon unleashed](https://blogs.technet.microsoft.com/motiba/2016/10/18/sysinternals-sysmon-unleashed/)
 
-[ You Pass Butter: Next Level Security Monitoring Through Proactivity](http://www.irongeek.com/i.php?page=videos/nolacon2016/110-you-pass-butter-next-level-security-monitoring-through-proactivity-cry0-s0ups)
+[Advanced Security Audit Policy Settings(Windows)](https://technet.microsoft.com/en-us/library/dn319056(v=ws.11).aspx)
 
-[Uproot](https://github.com/Invoke-IR/Uproot)
-* Uproot is a Host Based Intrusion Detection System (HIDS) that leverages Permanent Windows Management Instrumentation (WMI) Event Susbcriptions to detect malicious activity on a network. For more details on WMI Event Subscriptions please see the WMIEventing Module
+[SysInternals: SysMon Unleashed](https://blogs.technet.microsoft.com/motiba/2016/10/18/sysinternals-sysmon-unleashed/)
 
-[WMIEvent](https://github.com/Invoke-IR/WMIEvent)
-* A PowerShell module to abstract the complexities of Permanent WMI Event Subscriptions
+[Windows Event Collector(For centralizing windows domain logging with no local agent, windows actually has built-in logging freely available)](https://msdn.microsoft.com/en-us/library/bb427443(v=vs.85).aspx)
+
+[Windows event Collector - Setting up source initiated Subscriptions](https://msdn.microsoft.com/en-us/library/bb870973(v=vs.85).aspx)
+
+[Use Windows Event Forwarding to help with intrusion detection](https://docs.microsoft.com/en-us/windows/threat-protection/use-windows-event-forwarding-to-assist-in-instrusion-detection)
+
+[GetInjectedThreads.ps1](https://gist.github.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2)
+* Looks for threads that were created as a result of code injection.
+
+[Taking Hunting to the Next Level Hunting in Memory - Jared Atkinson 2017](https://www.youtube.com/watch?v=3RUMShnJq_I)
+
+[Sysmon - The Best Free Windows Monitoring Tool You Aren't Using](http://909research.com/sysmon-the-best-free-windows-monitoring-tool-you-arent-using/)
+
+[Windows Log Hunting with PowerShell](http://909research.com/windows-log-hunting-with-powershell/)
+
+[check_ioc](https://github.com/oneoffdallas/check_ioc)
+* Check_ioc is a script to check for various, selectable indicators of compromise on Windows systems via PowerShell and Event Logs. It was primarily written to be run on a schedule from a monitoring engine such as Nagios, however, it may also be run from a command-line (for incident response).
+
+[Greater Visibility Through PowerShell Logging](https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html)
+
+[block-parser](https://github.com/matthewdunwoody/block-parser)
+* Parser for Windows PowerShell script block logs
+
+[Revoke -­ Obfuscation: PowerShell Obfuscation Detection Using Science](https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf)
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -455,15 +546,31 @@ EIGRP and OSPF).
 
 
 ## OSINT
+[XRAY](https://github.com/evilsocket/xray)
+* XRay is a tool for recon, mapping and OSINT gathering from public networks.
 
 [PowerMeta](https://github.com/dafthack/PowerMeta)
 * PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches. It then allows for the download of those files from the target domain. After retrieving the files, the metadata associated with them can be analyzed by PowerMeta. Some interesting things commonly found in metadata are usernames, domains, software titles, and computer names.
 
-[Fantastic OSINT and where to find it - blindseeker/malware focused](http://archive.is/sYzcP#selection-62.0-62.1)
+[tweets_analyzer](https://github.com/x0rz/tweets_analyzer)
+* Tweets metadata scraper & activity analyzer
 
-[Corporate Espionage without the Hassle of Committing Felonies](https://www.slideshare.net/JohnCABambenek/corporate-espionage-without-the-hassle-of-committing-felonies)
+[GitPrey](https://github.com/repoog/GitPrey)
+* GitPrey is a tool for searching sensitive information or data according to company name or key word something.The design mind is from searching sensitive data leakling in Github:
 
-[How to Use Python to Spy on Your Friends: Web APIs, Recon ng, & OSINT](https://www.youtube.com/watch?v=BOjz7NfsLpA)
+[linkedin](https://github.com/eracle/linkedin)
+* Linkedin Scraper using Selenium Web Driver, Firefox 45, Ubuntu and Scrapy
+
+[repo-supervisor](https://github.com/auth0/repo-supervisor)
+
+[git-all-secrets](https://github.com/anshumanbh/git-all-secrets)
+* A tool to capture all the git secrets by leveraging multiple open source git searching tools
+
+[Truffle Hog](https://github.com/dxa4481/truffleHog)
+* Searches through git repositories for high entropy strings, digging deep into commit history and branches. This is effective at finding secrets accidentally committed that contain high entropy.
+
+[SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail)
+* Email recon made fast and easy, with a framework to build on
 
 
 
@@ -485,103 +592,81 @@ EIGRP and OSPF).
 
 [Hacking SQL Server on Scale with PowerShell - Secure360 2017](https://www.slideshare.net/nullbind/2017-secure360-hacking-sql-server-on-scale-with-powershell)
 
-
-
+[EvilAbigail](https://github.com/GDSSecurity/EvilAbigail/blob/master/README.md)
+* Initrd encrypted root fs attack
 
 
 
 ## Password Cracking
 
-[HashView](https://github.com/hashview/hashview)
-* Hashview is a tool for security professionals to help organize and automate the repetitious tasks related to password cracking. Hashview is a web application that manages hashcat (https://hashcat.net) commands. Hashview strives to bring constiency in your hashcat tasks while delivering analytics with pretty pictures ready for ctrl+c, ctrl+v into your reports.
+[Cracklord](https://github.com/jmmcatee/cracklord)
+* CrackLord is a system designed to provide a scalable, pluggable, and distributed system for both password cracking as well as any other jobs needing lots of computing resources. Better said, CrackLord is a way to load balance the resources, such as CPU, GPU, Network, etc. from multiple hardware systems into a single queueing service across two primary services: the Resource and Queue. It won't make these tasks faster, but it will make it easier to manage them.
 
-[BEWGor](https://github.com/berzerk0/BEWGor)
-* Bull's Eye Wordlist Generator
-
-[Probable-Wordlists](https://github.com/berzerk0/Probable-Wordlists)
-* Wordlists sorted by probability originally created for password generation and testing
-
-[Cracking Corporate Passwords Exploiting Password Policy Weaknesses - Minga Rick Redm - Derbycon3](https://www.youtube.com/watch?v=qR-qRUbeKAo)
+[Dagon](https://github.com/Ekultek/Dagon)
+* Named after the prince of Hell, Dagon (day-gone) is an advanced hash cracking and manipulation system, capable of bruteforcing multiple hash types, creating bruteforce dictionaries, automatic hashing algorithm verification, random salt generation from Unicode to ASCII, and much more.
 
 
+x
 
 
 ## Phishing/SE
 
-[CatMyFish](https://github.com/Mr-Un1k0d3r/CatMyFish)
-* Search for categorized domain that can be used during red teaming engagement. Perfect to setup whitelisted domain for your Cobalt Strike beacon C&C.  It relies on expireddomains.net to obtain a list of expired domains. The domain availability is validated using checkdomain.com
+[KingPhisher](https://github.com/securestate/king-phisher)
+* King Phisher is a tool for testing and promoting user awareness by simulating real world phishing attacks. It features an easy to use, yet very flexible architecture allowing full control over both emails and server content. King Phisher can be used to run campaigns ranging from simple awareness training to more complicated scenarios in which user aware content is served for harvesting credentials.
+
+[SimplyTemplate](https://github.com/killswitch-GUI/SimplyTemplate)
+* Phishing Template Generation Made Easy. The goal of this project was to hopefully speed up Phishing Template Gen as well as an easy way to ensure accuracy of your templates. Currently my standard Method of delivering emails is the Spear Phish in Cobalt strike so you will see proper settings for that by default.
 
 
+
+## Policy
+[A Survey of Insider Attack Detection Research - 2008](http://web.stanford.edu/class/cs259d/readings/Insider_survey.pdf)
+
+[The “Big Picture” of Insider IT Sabotage Across U.S. Critical Infrastructures](http://web.stanford.edu/class/cs259d/readings/Infrastructure.pdf)
 
 
 
 ## Post Exploitation/Privilege Escalation
 
-[The “SYSTEM” challenge](https://decoder.cloud/2017/02/21/the-system-challenge/)
-* Writeup of achieving system from limited user privs.
+[Invoke-ProcessScan](https://github.com/vysec/Invoke-ProcessScan)
+* Gives context to a system. Uses EQGRP shadow broker leaked list to give some descriptions to processes.
 
-[How to use msfvenom](https://github.com/rapid7/metasploit-framework/wiki/How-to-use-msfvenom)
+[ElevateKit](https://github.com/rsmudge/ElevateKit)
+* The Elevate Kit demonstrates how to use third-party privilege escalation attacks with Cobalt Strike's Beacon payload.
 
-[Mimikatz Logs and Netcat](http://blackpentesters.blogspot.com/2013/12/mimikatz-logs-and-netcat.html?m=1)
+[WMIcmd](https://github.com/nccgroup/WMIcmd)
+* A command shell wrapper using only WMI for Microsoft Windows
 
-[Invoke-CradleCrafter: Moar PowerShell obFUsk8tion by Daniel Bohannon](https://www.youtube.com/watch?feature=youtu.be&v=Nn9yJjFGXU0&app=desktop)
+[mimipenguin](https://github.com/huntergregal/mimipenguin)
+* A tool to dump the login password from the current linux user
 
-[Invoke-CradleCrafter v1.1](https://github.com/danielbohannon/Invoke-CradleCrafter)
+[BrowserGatherer](https://github.com/sekirkity/BrowserGather)
+* Fileless Extraction of Sensitive Browser Information with PowerShell
 
-[Customising Meterpreter Loader DLL part. 2](https://astr0baby.wordpress.com/2014/02/13/customising-meterpreter-loader-dll-part-2/)
+[wePWNise](https://github.com/mwrlabs/wePWNise)
+* WePWNise generates architecture independent VBA code to be used in Office documents or templates and automates bypassing application control and exploit mitigation software
 
-[Dr0p1t-Framework](https://github.com/D4Vinci/Dr0p1t-Framework)
-* Have you ever heard about trojan droppers ? In short dropper is type of trojans that downloads other malwares and Dr0p1t gives you the chance to create a stealthy dropper that bypass most AVs and have a lot of tricks ( Trust me :D ) ;)
+[rattler](https://github.com/sensepost/rattler)
+* Rattler is a tool that automates the identification of DLL's which can be used for DLL preloading attacks.
 
-[Winpayloads](https://github.com/nccgroup/Winpayloads)
-* Undetectable Windows Payload Generation with extras Running on Python2.7
+[Brosec](https://github.com/gabemarshall/Brosec)
+* Brosec is a terminal based reference utility designed to help us infosec bros and broettes with useful (yet sometimes complex) payloads and commands that are often used during work as infosec practitioners. An example of one of Brosec's most popular use cases is the ability to generate on the fly reverse shells (python, perl, powershell, etc) that get copied to the clipboard.
 
-[The Travelling Pentester: Diaries of the Shortest Path to Compromise](https://www.slideshare.net/harmj0y/the-travelling-pentester-diaries-of-the-shortest-path-to-compromise)
+[Application Whitelist Bypass Techniques](https://github.com/subTee/ApplicationWhitelistBypassTechniques)
+* A Catalog of Application Whitelisting Bypass Techniques - SubTee
 
-[Sherlock](https://github.com/rasta-mouse/Sherlock/blob/master/README.md)
-* PowerShell script to quickly find missing software patches for local privilege escalation vulnerabilities.
+[injectAllTheThings](https://github.com/fdiskyou/injectAllTheThings)
+* Single Visual Studio project implementing multiple DLL injection techniques (actually 7 different techniques) that work both for 32 and 64 bits. Each technique has its own source code file to make it easy way to read and understand.
 
-[gateway-finder](https://github.com/pentestmonkey/gateway-finder)
-* Gateway-finder is a scapy script that will help you determine which of the systems on the local LAN has IP forwarding enabled and which can reach the Internet.
+[Find AD users with empty password using PowerShell](https://4sysops.com/archives/find-ad-users-with-empty-password-passwd_notreqd-flag-using-powershell/)
 
-[Payload Generation with CACTUSTORCH](https://www.mdsec.co.uk/2017/07/payload-generation-with-cactustorch/)
+[PSReflect](https://github.com/mattifestation/PSReflect)
+* Easily define in-memory enums, structs, and Win32 functions in PowerShell
 
-[PowerLine](https://github.com/fullmetalcache/powerline)
-* [Presentation](https://www.youtube.com/watch?v=HiAtkLa8FOc)
+[Pulling Back the Curtains on EncodedCommand PowerShell Attacks](https://researchcenter.paloaltonetworks.com/2017/03/unit42-pulling-back-the-curtains-on-encodedcommand-powershell-attacks/)
 
-[How to Build a 404 page not found C2](https://www.blackhillsinfosec.com/?p=5134)
-
-[404 File not found C2 PoC](https://github.com/theG3ist/404)
-
-[Hiding Malicious Traffic Under the HTTP 404 Error](https://blog.fortinet.com/2015/04/09/hiding-malicious-traffic-under-the-http-404-error)
-
-[Windows Privilege Escalation Methods for Pentesters](https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/)
-
-[LaZagne](https://github.com/AlessandroZ/LaZagne/blob/master/README.md)
-* The LaZagne project is an open source application used to retrieve lots of passwords stored on a local computer. Each software stores its passwords using different techniques (plaintext, APIs, custom algorithms, databases, etc.). This tool has been developed for the purpose of finding these passwords for the most commonly-used software.
-
-[WSUSpect Proxy](https://github.com/ctxis/wsuspect-proxy/)
-* This is a proof of concept script to inject 'fake' updates into non-SSL WSUS traffic. It is based on our Black Hat USA 2015 presentation, 'WSUSpect – Compromising the Windows Enterprise via Windows Update'
-* [Whitepaper](http://www.contextis.com/documents/161/CTX_WSUSpect_White_Paper.pdf)
-
-[Introducing PS Attack, a portable PowerShell attack toolkit - Jared Haight](https://www.youtube.com/watch?v=lFCtPdUPdHw)
-
-[PowerShell Secrets and Tactics Ben0xA ](https://www.youtube.com/watch?v=mPPv6_adTyg)
-
-[Beyond the MCSE: Red Teaming Active Directory](https://www.youtube.com/watch?v=tEfwmReo1Hk)
-
-[Red vs Blue: Modern Active Directory Attacks & Defense - Defcon23](https://www.youtube.com/watch?v=rknpKIxT7NM)
-
-[Red Vs. Blue: Modern Active Directory Attacks, Detection, And Protection - BHUSA15](https://www.youtube.com/watch?v=b6GUXerE9Ac)
-
-[Abusing Active Directory in Post Exploitation - Carlos Perez - Derbycon 4](https://www.youtube.com/watch?v=sTU-70dD-Ok)
-
-
-
-
-
-
-
+[quarkspwdump](https://github.com/quarkslab/quarkspwdump)
+* Dump various types of Windows credentials without injecting in any process.
 
 
 
@@ -600,9 +685,19 @@ EIGRP and OSPF).
 [aslrepl](https://github.com/enferex/asrepl)
 * asrepl is an assembly based REPL. The REPL processes each line of user input, the output can be witnessed by issuing the command 'regs' and looking at the register state.
 
+[Perl & Linguistics](http://world.std.com/~swmcd/steven/perl/linguistics.html)
 
+[What makes lisp macros so special - StackOverflow](https://stackoverflow.com/questions/267862/what-makes-lisp-macros-so-special)
 
+[Big picture software testing unit testing, Lean Startup, and everything in between PyCon 2017](https://www.youtube.com/watch?v=Vaq_e7qUA-4&feature=youtu.be&t=63s)
 
+[RailsConf 2015 - Nothing is Something](https://www.youtube.com/watch?v=OMPfEXIlTVE)
+
+[Boundaries - By Gary Bernhardt from SCNA 2012](https://www.destroyallsoftware.com/talks/boundaries)
+* This talk is about using simple values (as opposed to complex objects) not just for holding data, but also as the boundaries between components and subsystems. It moves through many topics: functional programming; mutability's relationship to OO; isolated unit testing with and without test doubles; and concurrency, to name some bar. The "Functional Core, Imperative Shell" screencast mentioned at the end is available as part of season 4 of the DAS catalog. 
+
+[Big picture software testing unit testing, Lean Startup, and everything in between PyCon 2017](https://www.youtube.com/watch?v=Vaq_e7qUA-4&feature=youtu.be&t=63s)
+* There are many ways you can test your software: unit testing, manual testing, end-to-end testing, and so forth. Take a step back and you'll discover even more form of testing, many of them very different in their goals: A/B testing, say, where you see which of two versions of your website results in more signups or ad clicks. How do these forms of testing differ, how do they relate to each other? How do you choose which kind of testing to pursue, given limited time and resources? How do you deal with strongly held yet opposite views arguing either that a particular kind of testing is essential or that it's a waste time? This talk will provide you with a model, a way to organize all forms of testing and understand what exactly they provide, and why. Once you understand the model you will be able to choose the right form of testing for *your* situation and goals.
 
 
 
@@ -612,24 +707,13 @@ EIGRP and OSPF).
 
 ## RE
 
+[gdbgui](https://github.com/cs01/gdbgui)
+* A modern, browser-based frontend to gdb (gnu debugger). Add breakpoints, view stack traces, and more in C, C++, Go, and Rust. Simply run gdbgui from the terminal and a new tab will open in your browser.
 
-[Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
-* Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
+[Reverse Engineering a 433MHz Motorised Blind RF Protocol](https://nickwhyte.com/post/2017/reversing-433mhz-raex-motorised-rf-blinds/)
 
-[bingrep](https://github.com/m4b/bingrep)
-* Greps through binaries from various OSs and architectures, and colors them. 
-
-[radare2 cheat sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
-
-[Blackbone](https://github.com/DarthTon/Blackbone)
-* Windows memory hacking library
-
-[Binacle](https://github.com/ANSSI-FR/Binacle)
-* Indexation "full-bin" of binary files
-
-
-
-
+[PPEE(puppy)](https://www.mzrst.com/#top)
+* Professional PE file Explorer for reversers, malware researchers and those who want to statically inspect PE files in more details. Free and fast.
 
 
 
@@ -647,6 +731,8 @@ EIGRP and OSPF).
 [ICS Security Assessment Methodology, Tools & Tips](https://www.youtube.com/watch?v=0WoA9SYLDoM)
 * Dale Peterson of Digital Bond describes how to perform an ICS / SCADA cyber security assessment in this S4xJapan video.  He goes into a lot of detail on the tools and how to use them in the fragile and insecure by design environment that is an ICS.  There are also useful tips on when to bother applying security patches (this will likely surprise you), the importance of identifying the impact of a vulnerability, and an efficient risk reduction approach.
 
+[GRASSMARLIN](https://github.com/iadgov/GRASSMARLIN)
+
 
 
 
@@ -654,9 +740,14 @@ EIGRP and OSPF).
 
 ## System Internals
 
-[AppInit_DLLs in Windows 7 and Windows Server 2008 R2](https://msdn.microsoft.com/en-us/library/windows/desktop/dd744762(v=vs.85).aspx)
+[windows-operating-system-archaeology](https://github.com/subTee/windows-operating-system-archaeology)
+* subTee stuff
 
-[Antimalware Scan Interface Reference](https://msdn.microsoft.com/en-us/library/windows/desktop/dn889588(v=vs.85).aspx)
+[Processes, Threads, and Jobs in the Windows Operating System](https://www.microsoftpressstore.com/articles/article.aspx?p=2233328&seqNum=2)
+
+[Mandatory Integrity Control](https://msdn.microsoft.com/en-gb/library/windows/desktop/bb648648(v=vs.85).aspx)
+
+
 
 
 ## Social Engineering
@@ -668,14 +759,15 @@ EIGRP and OSPF).
 [EXE-less Malicious Outlook Rules - BHIS](https://www.blackhillsinfosec.com/?p=5544)
 
 
+
+
+
 ## Threat Modeling & Analysis
 
-[ThreadFix](https://github.com/denimgroup/threadfix)
-* ThreadFix is a software vulnerability aggregation and management system that helps organizations aggregate vulnerability data, generate virtual patches, and interact with software defect tracking systems.
+[ThreatHuntingStuff](https://github.com/MatthewDemaske/ThreatHuntingStuff)
 
-[2 7 Steps to Threat Modeling](https://www.slideshare.net/chinwhei/7-steps-to-threat-modeling)
-
-
+[Adam Shostack - Pentesting: Lessons from Star Wars](https://www.youtube.com/watch?v=BfWWryF8M7E&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=13)
+* Everyone knows you ought to threat model, but in practical reality it turns out to be tricky. If past efforts to threat model haven’t panned out, perhaps part of the problem is confusion over what works, and how the various approaches conflict or align. This talk captures lessons from years of work helping people throughout the software industry threat model more effectively. It’s designed to help security pros, especially pen testers, all of whom will leave with both threat modeling lessons from Star Wars and a proven foundation, enabling them to threat model effectively on offense or defense.
 
 
 ## Training
@@ -685,104 +777,43 @@ EIGRP and OSPF).
 
 ## Web: 
 
-[Kraken - Web Interface Survey Tool](https://github.com/Sw4mpf0x/Kraken)
-* [Blogpost](https://pentestarmoury.com/2017/01/31/kraken-web-interface-survey-tool/)
+[PowerWebShot](https://github.com/dafthack/PowerWebShot)
+* A PowerShell tool for taking screenshots of multiple web servers quickly.
 
-[WebSocket API Standards](https://www.w3.org/TR/2011/WD-websockets-20110929/)
+[BurpSmartBuster](https://github.com/pathetiq/BurpSmartBuster)
+* A Burp Suite content discovery plugin that add the smart into the Buster!
 
-[DOM - Standard](https://dom.spec.whatwg.org/)
+[Java Deserialization Exploits](https://github.com/CoalfireLabs/java_deserialization_exploits)
+* A collection of Java Deserialization Exploits
 
-[HTML 5 Standards](http://w3c.github.io/html/)
+[Critical vulnerabilities in JSON Web Token libraries - 2015](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/)
 
-[Web IDL Standards](https://heycam.github.io/webidl/)
+[100 OWASP Top 10 Hacking Web Applications with Burp Suite Chad Furman](https://www.youtube.com/watch?v=2p6twRRXK_o)
 
-[The WebSocket Protocol Standard - IETF](https://tools.ietf.org/html/rfc6455)
+[json token decode](http://jwt.calebb.net/)
 
-[WebSocket Protocol - RFC Draft 17](https://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-17)
+[JWT Inspector - FF plugin](https://www.jwtinspector.io/)
+* JWT Inspector is a browser extension that lets you decode and inspect JSON Web Tokens in requests, cookies, and local storage. Also debug any JWT directly from the console or in the built-in UI. 
 
-[timing_attack](https://github.com/ffleming/timing_attack)
-* Perform timing attacks against web applications
+[Attacking JWT authentication](https://www.sjoerdlangkemper.nl/2016/09/28/attacking-jwt-authentication/)
 
-[Wordpress Security Guide - WPBeginner](http://www.wpbeginner.com/wordpress-security/)
+[WAFPASS](https://github.com/wafpassproject/wafpass)
+* Analysing parameters with all payloads' bypass methods, aiming at benchmarking security solutions like WAF.
 
-[Web Services Security Testing Cheat Sheet Introduction - OWASP](https://www.owasp.org/index.php/Web_Service_Security_Testing_Cheat_Sheet)
+[collaborator-everywhere](https://github.com/PortSwigger/collaborator-everywhere)
+* A Burp Suite Pro extension which augments your proxy traffic by injecting non-invasive headers designed to reveal backend systems by causing pingbacks to Burp Collaborator
 
-[OWASP API Security Project](https://www.owasp.org/index.php/OWASP_API_Security_Project)
+[hackability](https://github.com/PortSwigger/hackability)
+* Rendering Engine Hackability Probe performs a variety of tests to discover what the unknown rendering engine supports. To use it simply extract it to your web server and visit the url in the rendering engine you want to test. The more successful probes you get the more likely the target engine is vulnerable to attack.
 
-[REST Security Cheat Sheet](REST Security Cheat Sheet)
+[Exploiting misuse of Python's "pickle"](https://blog.nelhage.com/2011/03/exploiting-pickle/)
 
-[REST Assessment Cheat Sheet](https://www.owasp.org/index.php/REST_Assessment_Cheat_Sheet)
+[Typosquatting programming language package managers](http://incolumitas.com/2016/06/08/typosquatting-package-managers/)
 
-[Attack Surface Analysis Cheat Sheet](https://www.owasp.org/index.php/Attack_Surface_Analysis_Cheat_Sheet)
+[The Website Obesity Crisis](http://idlewords.com/talks/website_obesity.htm)
 
-
-[RESTful Services, The Web Security Blind Spot](https://www.youtube.com/watch?feature=player_embedded&v=pWq4qGLAZHI#!)
-* [Blogpost](https://xiom.com/2016/10/31/restful-services-web-security-blind-spot/)
-* [Presentation Slides -pdf](https://xiomcom.files.wordpress.com/2016/10/security-testing-for-rest-applications-v6-april-2013.pdf)
-
-[Cracking and Fixing REST APIs](http://www.sempf.net/post/Cracking-and-Fixing-REST-APIs)
-
-[Cracking and fixing REST services](http://www.irongeek.com/i.php?page=videos/converge2015/track109-cracking-and-fixing-rest-services-bill-sempf)
-
-[Hackazon](https://github.com/rapid7/hackazon)
-* Hackazon is a free, vulnerable test site that is an online storefront built with the same technologies used in today’s rich client and mobile applications. Hackazon has an AJAX interface, strict workflows and RESTful API’s used by a companion mobile app providing uniquely-effective training and testing ground for IT security professionals. And, it’s full of your favorite vulnerabilities like SQL Injection, cross-site scripting and so on.
-
-[burp-rest-api](https://github.com/vmware/burp-rest-api)
-* A REST/JSON API to the Burp Suite security tool.  Upon successfully building the project, an executable JAR file is created with the Burp Suite Professional JAR bundled in it. When the JAR is launched, it provides a REST/JSON endpoint to access the Scanner, Spider, Proxy and other features of the Burp Suite Professional security tool.
-
-[RESTful API Best Practices and Common Pitfalls](https://medium.com/@schneidenbach/restful-api-best-practices-and-common-pitfalls-7a83ba3763b5)
-
-[Automating API Penetration Testing using fuzzapi - AppSecUSA 2016](https://www.youtube.com/watch?v=43G_nSTdxLk)
-
-[Fuzzapi](https://github.com/lalithr95/Fuzzapi/)
-* Fuzzapi is rails application which uses API_Fuzzer and provide UI solution for gem.
-
-[White House Web API Standards](https://github.com/WhiteHouse/api-standards)
-* This document provides guidelines and examples for White House Web APIs, encouraging consistency, maintainability, and best practices across applications. White House APIs aim to balance a truly RESTful API interface with a positive developer experience (DX).
-
-[Damn Vulnerable Web Services dvws](https://github.com/snoopysecurity/dvws)
-* Damn Vulnerable Web Services is an insecure web application with multiple vulnerable web service components that can be used to learn real world web service vulnerabilities.
-
-[Performing sqlmap POST request injection](https://hackertarget.com/sqlmap-post-request-injection/)
-
-[xsscrapy](https://github.com/byt3bl33d3r/xsscrapy)
-
-[XSSer](https://xsser.03c8.net/)
-
-[XSS Sniper](https://sourceforge.net/projects/xssniper/)
-
-[AWS Security Primer](https://cloudonaut.io/aws-security-primer/#fn:2)
-
-[PHP Generic Gadget Chains: Exploiting unserialize in unknown environments](https://www.ambionics.io/blog/php-generic-gadget-chains)
-
-[PHPGGC: PHP Generic Gadget Chains](https://github.com/ambionics/phpggc)
-* PHPGGC is a library of unserialize() payloads along with a tool to generate them, from command line or programmatically. When encountering an unserialize on a website you don't have the code of, or simply when trying to build an exploit, this tool allows you to generate the payload without having to go through the tedious steps of finding gadgets and combining them. Currently, the tool supports: Doctrine, Guzzle, Laravel, Monolog, Slim, SwiftMailer.
-
-[psychoPATH - LFI](https://github.com/ewilded/psychoPATH/blob/master/README.md)
-* This tool is a highly configurable payload generator detecting LFI & web root file uploads. Involves advanced path traversal evasive techniques, dynamic web root list generation, output encoding, site map-searching payload generator, LFI mode, nix & windows support plus single byte generator.
-
-[Service-Oriented-Architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture)
-
-[Microservices](https://en.wikipedia.org/wiki/Microservices)
-
-[Representational State Transfer - Wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer)
-
-[AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)
-* Security Tool to Look For Interesting Files in S3 Buckets
-
-[tplmap](https://github.com/epinna/tplmap)
-* Code and Server-Side Template Injection Detection and Exploitation Tool
-
-[Self XSS we’re not so different you and I - Mathias Karlsson](https://www.youtube.com/watch?v=l3yThCIF7e4)
-
-[The Tale of a Fameless but Widespread Web Vulnerability Class - Veit Hailperin](https://www.youtube.com/watch?v=5qA0CtS6cZ4)
-* Two keys components account for finding vulnerabilities of a certain class: awareness of the vulnerability and ease of finding the vulnerability. Cross-Site Script Inclusion (XSSI) vulnerabilities are not mentioned in the de facto standard for public attention - the OWASP Top 10. Additionally there is no public tool available to facilitate finding XSSI. The impact reaches from leaking personal information stored, circumvention of token-based protection to complete compromise of accounts. XSSI vulnerabilities are fairly wide spread and the lack of detection increases the risk of each XSSI. In this talk we are going to demonstrate how to find XSSI, exploit XSSI and also how to protect against XSSI.
-
-
-
-
-
-
+[HUNT Burp Suite Extension](https://github.com/bugcrowdlabs/HUNT)
+* HUNT Logo  HUNT is a Burp Suite extension to: 1. Identify common parameters vulnerable to certain vulnerability classes. 2. Organize testing methodologies inside of Burp Suite.
 
 
 
@@ -793,3 +824,12 @@ EIGRP and OSPF).
 [UAV Transponders & Tracker Kits - UST](http://www.unmannedsystemstechnology.com/company/sagetech-corporation/)
 
 [Emulation and Exploration of BCM WiFi Frame Parsing using LuaQEMU](https://comsecuris.com/blog/posts/luaqemu_bcm_wifi/)
+
+[Fluxion](https://github.com/wi-fi-analyzer/fluxion)
+* Fluxion is a remake of linset by vk496 with (hopefully) less bugs and more functionality. It's compatible with the latest release of Kali (rolling). The attack is mostly manual, but experimental versions will automatically handle most functionality from the stable releases.
+
+
+
+[ESP8266 deauther](https://github.com/spacehuhn/esp8266_deauther)
+* Deauthentication attack and other exploits using an ESP8266!
+

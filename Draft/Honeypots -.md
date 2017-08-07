@@ -21,6 +21,11 @@ http://www.cuckoosandbox.org/
 http://highaltitudehacks.com/2013/06/15/ghost-usb-honeypot-part-2-installing-and-running-the-honeypot/
 
 
+[honeyLambda](https://github.com/0x4D31/honeyLambda)
+* a simple, serverless application designed to create and monitor URL {honey}tokens, on top of AWS Lambda and Amazon API Gateway
+
+[Masarah Paquet-Clouston & Olivier Bilodeau - Attacking Linux Moose Unraveled an Ego Market](https://www.youtube.com/watch?v=8c8C5cHbRU0&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=2)
+
 #### End Cull
 
 

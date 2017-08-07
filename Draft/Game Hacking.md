@@ -12,12 +12,24 @@
 
 
 
+
+
+
+
+#### Sort
+
+http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce
+
+#### End Sort
+
 #### Writeups
 
 
 [How do emulators work and how are they written?](https://stackoverflow.com/questions/448673/how-do-emulators-work-and-how-are-they-written)
 
 [Reverse Engineering Strike Commander](http://fabiensanglard.net/reverse_engineering_strike_commander/index.php)
+
+[Remote Code Execution In Source Games](https://oneupsecurity.com/research/remote-code-execution-in-source-games?t=r)
 
 
 

@@ -15,12 +15,14 @@
 http://dn5.ljuska.org/cyber-attacks-on-vehicles-2.html 
 
 
+
+
 ### End cull
 
 
 ## General
 
-[Awesome Vehicle Security List(github awesome lists)](https://github.com/jaredthecoder/awesome-vehicle-security)
+Seriously check this first ---> [Awesome Vehicle Security List(github awesome lists)](https://github.com/jaredthecoder/awesome-vehicle-security)
 
 [Introduction to Hacking in Car Systems - Craig Smith - Troopers15](https://www.youtube.com/watch?v=WHDkf6kpE58)
 

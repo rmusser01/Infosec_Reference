@@ -21,6 +21,16 @@ CULL
 
 
 
+
+[How to bypass Web-Proxy Filtering](https://www.blackhillsinfosec.com/?p=5831)
+
+[Malicious Outlook Rules](https://silentbreaksecurity.com/malicious-outlook-rules/)
+
+[EXE-less Malicious Outlook Rules - BHIS](https://www.blackhillsinfosec.com/?p=5544)
+
+["Humans, right?" Soft Skills in Security - Ariel Robinson](http://www.irongeek.com/i.php?page=videos/bsidesnova2017/200-humans-right-soft-skills-in-security-ariel-robinson)
+* Let's face it: humans ruin everything. They are almost always the weak link in the information security chain, between their susceptibility to social engineering, rejection of security threats, and sheer laziness. You can make the best security tool in the business, but if a human doesn't use it right, well, you might as well leave your passwords on a sticky note on your-- wait a minute. Yes, humans suck at information security. But we don't make it easy. Infosec is incredibly inaccessible to your average user. Just ask me: I am one. We can't change humans (or get rid of them, no matter how much we might want to), but we can change information security. We can leverage insights from non-technical disciplines such as cognitive science, human-centered design, strategic communications, and psychology. Or we can keep hitting our heads against our desktops. As a professional communicator and bridge builder, help me help you. To make security work, we have to make it easy. For humans.
+
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 #### end sort
 

@@ -31,8 +31,8 @@ Defense:
 
 [Linux workstation security checklist](https://github.com/lfit/itpol/blob/master/linux-workstation-security.md)
 
-
-
+[Uproot](https://github.com/Invoke-IR/Uproot)
+* Uproot is a Host Based Intrusion Detection System (HIDS) that leverages Permanent Windows Management Instrumentation (WMI) Event Susbcriptions to detect malicious activity on a network. For more details on WMI Event Subscriptions please see the WMIEventing Module
 
 
 [What would a real hacker do to your Active Directory](https://www.youtube.com/watch?v=DH3v8bO-NCs)
@@ -47,3 +47,39 @@ Use Invoke-HoneyCreds to distribute fake cred throughout environment as "legit" 
 
 
 [Public:Windows Event Log Zero 2 Hero Slides](https://docs.google.com/presentation/d/1dkrldTTlN3La-OjWtkWJBb4hVk6vfsSMBFBERs6R8zA/edit#slide=id.g21acf94f3f_2_27)
+
+
+
+[Blocking Remote Use of Local Accounts](https://blogs.technet.microsoft.com/secguide/2014/09/02/blocking-remote-use-of-local-accounts/)
+
+
+http://www.leeholmes.com/blog/2016/10/22/more-detecting-obfuscated-powershell/
+
+
+
+
+[Securi-Tay 2017 - Advanced Attack Detection](https://www.youtube.com/watch?v=ihElrBBJQo8)
+* 
+
+
+[Securing Windows Workstations: Developing a Secure Baseline](https://adsecurity.org/?p=3299)
+
+
+[Assimilator](https://github.com/videlanicolas/assimilator)
+* Automatic firewall rule orchestator.
+
+[Uproot](https://github.com/Invoke-IR/Uproot)
+* Uproot is a Host Based Intrusion Detection System (HIDS) that leverages Permanent Windows Management Instrumentation (WMI) Event Susbcriptions to detect malicious activity on a network. For more details on WMI Event Subscriptions please see the WMIEventing Module
+
+[WMIEvent](https://github.com/Invoke-IR/WMIEvent)
+* A PowerShell module to abstract the complexities of Permanent WMI Event Subscriptions
+
+
+[LUNAR](https://github.com/lateralblast/lunar)
+* A UNIX security auditing tool based on several security frameworks
+
+
+
+
+
+

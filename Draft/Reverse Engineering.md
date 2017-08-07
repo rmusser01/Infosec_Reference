@@ -31,6 +31,14 @@ To be sorted
 
 ### To be sorted
 
+[gdbgui](https://github.com/cs01/gdbgui)
+* A modern, browser-based frontend to gdb (gnu debugger). Add breakpoints, view stack traces, and more in C, C++, Go, and Rust. Simply run gdbgui from the terminal and a new tab will open in your browser.
+
+[Reverse Engineering a 433MHz Motorised Blind RF Protocol](https://nickwhyte.com/post/2017/reversing-433mhz-raex-motorised-rf-blinds/)
+
+[PPEE(puppy)](https://www.mzrst.com/#top)
+* Professional PE file Explorer for reversers, malware researchers and those who want to statically inspect PE files in more details. Free and fast.
+
 
 [Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
 * Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.

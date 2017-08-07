@@ -20,6 +20,11 @@ https://adamcaudill.com/2015/11/19/responsible-disclosure-is-wrong/
 * Recommended reading.
 
 
+[Request a CVE ID](http://cve.mitre.org/cve/request_id.html#cna_coverage)
+
+[My first CVE-2016-1000329 in BlogPHP](https://www.stevencampbell.info/2016/12/my-first-cve-2016-1000329-in-blogphp/)
+
+
 ###Dealing with the press/journalists:
 
 [Hacking the media for fame/profit talk](http://www.irongeek.com/i.php?page=videos/derbycon4/Hacking-The-Media-For-Fame-And-Profit-Jenn-Ellis-Steven-Reganh)

@@ -31,11 +31,10 @@ Forensics wiki
 Yelp/Github - OSX Collector - Mass style forensics/management
 
 
-[Know your Windows' Processes](https://sysforensics.org/2014/01/know-your-windows-processes.html)
-
-[Santoku Linux How-Tos'](https://santoku-linux.com/howtos)
-
 hackingexposedcomputerforensicsblog.blogspot.com/2015/02/automating-dfir-how-to-series-on_21.html)
+
+
+[THE CIDER PRESS:EXTRACTING FORENSIC ARTIFACTS FROM APPLE CONTINUITY](https://www.sans.org/summit-archives/file/summit-archive-1498146226.pdf)
 
 #### End Cull
 
@@ -66,6 +65,9 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 
 ### General
+
+[IRM (Incident Response Methodologies)](https://github.com/certsocietegenerale/IRM)
+* CERT Societe Generale provides easy to use operational incident best practices. These cheat sheets are dedicated to incident handling and cover multiple fields in which a CERT team can be involved. One IRM exists for each security incident we're used to dealing with.
 
 [Introduction to DFIR](https://sroberts.github.io/2016/01/11/introduction-to-dfir-the-beginning/)
 
@@ -334,10 +336,7 @@ Ghiro
 
 ### <a name="linux">Linux Forensics</a>
 
-
-
-
-
+[Santoku Linux How-Tos'](https://santoku-linux.com/howtos)
 
 
 ### <a name="windows">Windows Forensics</a>
@@ -345,6 +344,9 @@ Ghiro
 [SANS CHEAT SHEET- Windows Artifact Analysis](https://uk.sans.org/posters/windows_artifact_analysis.pdf)
 
 [How to parse Windows Eventlog](http://dfir-blog.com/2016/03/13/how-to-parse-windows-eventlog/)
+
+[Know your Windows' Processes](https://sysforensics.org/2014/01/know-your-windows-processes.html)
+
 
 
 
@@ -358,6 +360,8 @@ database of Microsoft Active Directory (NTDS.DIT).
 [Did it Execute? - Mandiant](https://www.mandiant.com/blog/execute/)
 * You found a malicious executable! Now you’ve got a crucial question to answer: did the file execute? We’ll discuss a few sources of evidence you can use to answer this question. In this post, we will focus on static or “dead drive” forensics on Windows systems. We will cover four main sources of evidence: Windows Prefetch, Registry, Log Files, and File Information.
 
+[Get-InjectedThread.ps1](https://gist.github.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2)
+* Code from "Taking Hunting to the Next Level: Hunting in Memory" presentation at SANS Threat Hunting Summit 2017 by Jared Atkinson and Joe Desimone
 
 [HowTo: Determine Program Execution](http://windowsir.blogspot.com/2013/07/howto-determine-program-execution.html)
 
@@ -405,7 +409,8 @@ What are the changes done on an AD between two points in time ?
 [Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
 * "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
 
-
+[PowerForensics - PowerShell Digital Forensics](https://github.com/Invoke-IR/PowerForensics)
+* The purpose of PowerForensics is to provide an all inclusive framework for hard drive forensic analysis. PowerForensics currently supports NTFS and FAT file systems, and work has begun on Extended File System and HFS+ support.
 
 
 ### <a name="osx">OS X Forensics Tools</a>

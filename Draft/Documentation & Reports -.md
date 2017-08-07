@@ -22,6 +22,7 @@
 
 
 
+
 ### <a name="writing">Writing</a>
 
 Start with the first two links, and go from there. They’re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
@@ -98,6 +99,9 @@ Three parter from jacobian.org:
 [Markdown basics](https://help.github.com/articles/markdown-basics/)
 
 [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+[vim-wordy](https://github.com/reedes/vim-wordy/blob/master/README.markdown)
+* wordy is not a grammar checker. Nor is it a guide to proper word usage. Rather, wordy is a lightweight tool to assist you in identifying those words and phrases known for their history of misuse, abuse, and overuse, at least according to usage experts.
 
 
 

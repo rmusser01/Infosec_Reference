@@ -16,34 +16,12 @@ http://computercrimeinfo.com/cleaningid.html
 
 [OSINT - onstrat](http://www.onstrat.com/osint/)
 
-[Fantastic OSINT and where to find it - blindseeker/malware focused](http://archive.is/sYzcP#selection-62.0-62.1)
-
 http://toddington.com/resources/
 
 www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 
-[PowerMeta](https://github.com/dafthack/PowerMeta)
-* PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches. It then allows for the download of those files from the target domain. After retrieving the files, the metadata associated with them can be analyzed by PowerMeta. Some interesting things commonly found in metadata are usernames, domains, software titles, and computer names.
-
-[Fantastic OSINT and where to find it - blindseeker/malware focused](http://archive.is/sYzcP#selection-62.0-62.1)
-
-[Corporate Espionage without the Hassle of Committing Felonies](https://www.slideshare.net/JohnCABambenek/corporate-espionage-without-the-hassle-of-committing-felonies)
-
-[How to Use Python to Spy on Your Friends: Web APIs, Recon ng, & OSINT](https://www.youtube.com/watch?v=BOjz7NfsLpA)
-
-
 #### End cull
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -61,16 +39,11 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 [Email Reconnaissance and Phishing Template Generation Made Simple](https://cybersyndicates.com/2016/05/email-reconnaissance-phishing-template-generation-made-simple/)
 
-
 [OSINT Resources - greynetwork2](https://sites.google.com/site/greynetwork2/home/osint-resources)
 
+[Fantastic OSINT and where to find it - blindseeker/malware focused](http://archive.is/sYzcP#selection-62.0-62.1)
 
-
-
-
-
-
-
+[Corporate Espionage without the Hassle of Committing Felonies](https://www.slideshare.net/JohnCABambenek/corporate-espionage-without-the-hassle-of-committing-felonies)
 
 
 
@@ -85,15 +58,6 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 [Exploring the Github Firehose](http://blog.scalyr.com/2013/10/exploring-the-github-firehose/)
 
 [OSINT Through Sender Policy Framework (SPF) Records](https://community.rapid7.com/community/infosec/blog/2015/02/23/osint-through-sender-policy-framework-spf-records)
-
-
-
-
-
-
-
-
-
 
 
 
@@ -118,7 +82,7 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 [You're Leaking Trade Secrets - Defcon22 Michael Schrenk](https://www.youtube.com/watch?v=JTd5TL6_zgY)
 * Networks don't need to be hacked for information to be compromised. This is particularly true for organizations that are trying to keep trade secrets. While we hear a lot about personal privacy, little is said in regard to organizational privacy. Organizations, in fact, leak information at a much greater rate than individuals, and usually do so with little fanfare. There are greater consequences for organizations when information is leaked because the secrets often fall into the hands of competitors. This talk uses a variety of real world examples to show how trade secrets are leaked online, and how organizational privacy is compromised by seemingly innocent use of The Internet.
 
-
+[How to Use Python to Spy on Your Friends: Web APIs, Recon ng, & OSINT](https://www.youtube.com/watch?v=BOjz7NfsLpA)
 
 
 
@@ -208,8 +172,34 @@ A tool to perform various OSINT techniques, aggregate all the raw data, and give
 
 [OSINT Mantra](http://www.getmantra.com/hackery/osint.html)
 
+[XRAY](https://github.com/evilsocket/xray)
+* XRay is a tool for recon, mapping and OSINT gathering from public networks.
 
+[PowerMeta](https://github.com/dafthack/PowerMeta)
+* PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches. It then allows for the download of those files from the target domain. After retrieving the files, the metadata associated with them can be analyzed by PowerMeta. Some interesting things commonly found in metadata are usernames, domains, software titles, and computer names.
 
+[tweets_analyzer](https://github.com/x0rz/tweets_analyzer)
+* Tweets metadata scraper & activity analyzer
+
+[Truffle Hog](https://github.com/dxa4481/truffleHog)
+* Searches through git repositories for high entropy strings, digging deep into commit history and branches. This is effective at finding secrets accidentally committed that contain high entropy.
+
+[SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail)
+* Email recon made fast and easy, with a framework to build on
+
+[GitPrey](https://github.com/repoog/GitPrey)
+* GitPrey is a tool for searching sensitive information or data according to company name or key word something.The design mind is from searching sensitive data leakling in Github:
+
+[linkedin](https://github.com/eracle/linkedin)
+* Linkedin Scraper using Selenium Web Driver, Firefox 45, Ubuntu and Scrapy
+
+[repo-supervisor](https://github.com/auth0/repo-supervisor)
+
+[git-all-secrets](https://github.com/anshumanbh/git-all-secrets)
+* A tool to capture all the git secrets by leveraging multiple open source git searching tools
+
+[PowerMeta](https://github.com/dafthack/PowerMeta)
+* PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches. It then allows for the download of those files from the target domain. After retrieving the files, the metadata associated with them can be analyzed by PowerMeta. Some interesting things commonly found in metadata are usernames, domains, software titles, and computer names.
 
 
 

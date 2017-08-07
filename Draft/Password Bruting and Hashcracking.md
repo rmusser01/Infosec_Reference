@@ -27,7 +27,6 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
 * Wordlists sorted by popularity originally created for password generation and testing
 
-
 ### End cull
 
 
@@ -162,6 +161,11 @@ Hashcat attacks
 
 [Firefox password cracker](https://github.com/pradeep1288/ffpasscracker)
 
+[Cracklord](https://github.com/jmmcatee/cracklord)
+* CrackLord is a system designed to provide a scalable, pluggable, and distributed system for both password cracking as well as any other jobs needing lots of computing resources. Better said, CrackLord is a way to load balance the resources, such as CPU, GPU, Network, etc. from multiple hardware systems into a single queueing service across two primary services: the Resource and Queue. It won't make these tasks faster, but it will make it easier to manage them.
+
+[Dagon](https://github.com/Ekultek/Dagon)
+* Named after the prince of Hell, Dagon (day-gone) is an advanced hash cracking and manipulation system, capable of bruteforcing multiple hash types, creating bruteforce dictionaries, automatic hashing algorithm verification, random salt generation from Unicode to ASCII, and much more.
 
 
 

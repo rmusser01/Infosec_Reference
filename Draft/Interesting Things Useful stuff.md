@@ -40,6 +40,27 @@ http://spth.virii.lu/articles.htm
 
 
 
+[303 Hacks Lies Nation States Mario DiNatale](https://www.youtube.com/watch?v=nyh_ORq1Qwk)
+
+[Richard Thieme - The Impact of Dark Knowledge and Secrets on Security and Intelligence Professionals](https://www.youtube.com/watch?v=0MzcPBAj88A&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
+* Dismissing or laughing off concerns about what it does to a person to know critical secrets does not lessen the impact on life, work, and relationships of building a different map of reality than “normal people” use. One has to calibrate narratives to what another believes. One has to live defensively, warily. This causes at the least cognitive dissonance which some manage by denial. But refusing to feel the pain does not make it go away. It just intensifies the consequences when they erupt.
+Philip K. Dick said, reality is that which, when you no longer believe in it, does not go away. When cognitive dissonance evolves into symptoms of traumatic stress, one ignores those symptoms at one’s peril. But the very constraints of one’s work often make it impossible to speak aloud about those symptoms, because that might threaten one’s clearances, work, and career. And whistle blower protection is often non-existent.
+
+[recap](https://github.com/rackerlabs/recap)
+* recap is a reporting script that generates reports of various information about the server.
+
+[Paul Rascagneres - Modern Reconnaissance Phase by APT – Protection Layer](https://www.youtube.com/watch?v=4JVrK7bRKb0&index=10&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
+
+[BE YOUR OWN VPN PROVIDER WITH OPENBSD (v2)](https://networkfilter.blogspot.com/2017/04/be-your-own-vpn-provider-with-openbsd-v2.html)
+
+[New cache architecture on Intel I9 and Skylake server: An initial assessment](https://cyber.wtf/2017/07/18/new-cache-architecture-on-intel-i9-and-skylake-server-an-initial-assessment/)
+
+[301 The Road to Hiring is Paved in Good Intentions Tim OBrien](https://www.youtube.com/watch?v=sdkf8SIj1rU)
+
+[Ermahgerd: Lawrs - Robert Heverly - Anycon17](http://www.irongeek.com/i.php?page=videos/anycon2017/305-ermahgerd-lawrs-prof-robert-heverly)
+* When do you ? and other coders, hackers, developers, and tinkerers ? think or worry about the law? If your answer is, ?Not very often,? then this talk is for you. We all need to think about the law. And it?s not just privacy, or computer fraud, or even anti-circumvention law, that we should think about. We need to think about law as a whole and how it can help us do or stop us from doing what we want to do. This talk will start with a broad overview of the ways in which we implicate law when we do what we do, and then will focus on what that means for us and the broader implications that can arise from our various activities. Do you think the law would stop you from doing what you want to do or punish you for doing it? It might, but it also might not. If you think it does, do you think you should be able to do what you want to do? If you do, then we need to hack the law, and to do that we?ll need to talk to the legal coders, those writers of our cultural software. This talk will tackle not only law and working with code, but also why it matters for us to be aware of the law and engaged in improving it.
+
+
 
 [QR Code interesting](http://datagenetics.com/blog/november12013/index.html)
 
@@ -49,28 +70,24 @@ http://spth.virii.lu/articles.htm
 
 [IA Guidance - NSA](https://www.iad.gov/iad/library/ia-guidance/index.cfm)
 
-[Paste-Scraper](https://github.com/KernelEquinox/Paste-Scraper)
 
-[Wayback scraper](https://github.com/abrenaut/waybackscraper)
 
 [LeakedSource.ru](https://leakedsource.ru/)
 
-[Red Team Infrastructure Wiki](https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki)
-* Wiki to collect Red Team infrastructure hardening resources
-* Accompanying Presentation: [Doomsday Preppers: Fortifying Your Red Team Infrastructure](https://speakerdeck.com/rvrsh3ll/doomsday-preppers-fortifying-your-red-team-infrastructure)
 
-[How to Build a 404 page not found C2](https://www.blackhillsinfosec.com/?p=5134)
 
-[404 File not found C2 PoC](https://github.com/theG3ist/404)
 
-[Hiding Malicious Traffic Under the HTTP 404 Error](https://blog.fortinet.com/2015/04/09/hiding-malicious-traffic-under-the-http-404-error)
 
 #### End Sort
 
 
 
 
-## Attribution
+
+
+
+
+### Attribution
 
 [Cyber Attack Attribution Report](http://whohackedus.com/)
 
@@ -122,6 +139,11 @@ http://www.securitywizardry.com/radar.htm
 [The S stands for Simple](http://harmful.cat-v.org/software/xml/soap/simple)
 * Satire(Only it's not) of a conversation about SOAP
 
+[List of disposable email domains](https://github.com/martenson/disposable-email-domains)
+
+
+
+
 
 
 #### Tamper Evidence
@@ -172,36 +194,6 @@ http://www.securitywizardry.com/radar.htm
 
 [Drone Survival Guide](http://dronesurvivalguide.org)
 
-
-
-
-
-
-
-
-
-
-
-
-
-### Pentesting Talks/Stuff
-
-[Penetration Testing considered Harmful Today](http://blog.thinkst.com/p/penetration-testing-considered-harmful.html)
-
-[Make It Count   Progressing through Pentesting - Bálint Varga-Perke -Silent Signal](https://silentsignal.hu/docs/Make_It_Count_-_Progressing_through_Pentesting_Balint_Varga-Perke_Silent_Signal.pdf)
-
-
-[stupid_malware](https://github.com/andrew-morris/stupid_malware)
-* Python malware for pentesters that bypasses most antivirus (signature and heuristics) and IPS using sheer stupidity
-
-[Fools of Golden Gate](https://blog.silentsignal.eu/2017/05/08/fools-of-golden-gate/)
-* How major vulnerabilities/large amounts of publicly vulnerable systems can exist without public recognition for long periods of time. (i.e. CVEs(10.0) exist, but no mapping in nessus/metasploit/etc)
-
-[Looping Surveillance Cameras through Live Editing - Van Albert and Banks - Defcon23](https://www.youtube.com/watch?v=RoOqznZUClI)
-* This project consists of the hardware and software necessary to hijack wired network communications. The hardware allows an attacker to splice into live network cabling without ever breaking the physical connection. This allows the traffic on the line to be passively tapped and examined. Once the attacker has gained enough knowledge about the data being sent, the device switches to an active tap topology, where data in both directions can be modified on the fly. Through our custom implementation of the network stack, we can accurately mimic the two devices across almost all OSI layers.
-* We have developed several applications for this technology. Most notable is the editing of live video streams to produce a “camera loop,” that is, hijacking the feed from an Ethernet surveillance camera so that the same footage repeats over and over again. More advanced video transformations can be applied if necessary. This attack can be executed and activated with practically no interruption in service, and when deactivated, is completely transparent.
-
-[#OLEOutlook - bypass almost every Corporate security control with a point’n’click GUI](https://doublepulsar.com/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0)
 
 
 
@@ -358,9 +350,12 @@ http://www.securitywizardry.com/radar.htm
 [SniffJoke](https://github.com/vecna/sniffjoke)
 * SniffJoke is an application for Linux that handle transparently your TCP connection, delaying, modifyng and inject fake packets inside your transmission, make them almost impossible to be correctly readed by a passive wiretapping technology (IDS or sniffer)
 
+[wikiteam](https://github.com/WikiTeam/wikiteam)
+* Tools for downloading and preserving wikis 
 
+[Paste-Scraper](https://github.com/KernelEquinox/Paste-Scraper)
 
-
+[Wayback scraper](https://github.com/abrenaut/waybackscraper)
 
 
 
@@ -438,9 +433,9 @@ Underhanded C
 
 [Docker: Not Even a Linker](http://adamierymenko.com/docker-not-even-a-linker/)
 
+[VBScript Injection via GNOME Thumbnailer - On Linux](http://news.dieweltistgarnichtso.net/posts/gnome-thumbnailer-msi-fail.html)
 
-
-
+[Locking Your Registry Keys for Fun and, Well, Just Fun I Guess](https://tyranidslair.blogspot.co.uk/2017/07/locking-your-registry-keys-for-fun-and.html)
 
 
 
@@ -511,6 +506,8 @@ Underhanded C
 
 
 
+
+### Interesting Articles
 
 
 

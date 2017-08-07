@@ -18,8 +18,6 @@
 * Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
 
 #### Cull
-| Title | Link
-| -------- | --------- |
 https://github.com/NullHypothesis/exitmap/issues/37
 
 #### end cull
@@ -43,7 +41,9 @@ https://github.com/NullHypothesis/exitmap/issues/37
 
 [CIA Vault7 Development Tradecraft DOs and DON'Ts](https://wikileaks.org/ciav7p1/cms/page_14587109.html)
 
+[Dutch-Russian cyber crime case reveals how police tap the internet - ElectroSpaces](http://electrospaces.blogspot.de/2017/06/dutch-russian-cyber-crime-case-reveals.html?m=1)
 
+[Deanonymizing Windows users and capturing Microsoft and VPN accounts](https://medium.com/@ValdikSS/deanonymizing-windows-users-and-capturing-microsoft-and-vpn-accounts-f7e53fe73834)
 
 
 

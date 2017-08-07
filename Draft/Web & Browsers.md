@@ -69,6 +69,49 @@ prompt.ml
 
 Clickjacking attacks
 
+
+[PowerWebShot](https://github.com/dafthack/PowerWebShot)
+* A PowerShell tool for taking screenshots of multiple web servers quickly.
+
+[BurpSmartBuster](https://github.com/pathetiq/BurpSmartBuster)
+* A Burp Suite content discovery plugin that add the smart into the Buster!
+
+[Java Deserialization Exploits](https://github.com/CoalfireLabs/java_deserialization_exploits)
+* A collection of Java Deserialization Exploits
+
+[Critical vulnerabilities in JSON Web Token libraries - 2015](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/)
+
+[100 OWASP Top 10 Hacking Web Applications with Burp Suite Chad Furman](https://www.youtube.com/watch?v=2p6twRRXK_o)
+
+[json token decode](http://jwt.calebb.net/)
+
+[JWT Inspector - FF plugin](https://www.jwtinspector.io/)
+* JWT Inspector is a browser extension that lets you decode and inspect JSON Web Tokens in requests, cookies, and local storage. Also debug any JWT directly from the console or in the built-in UI. 
+
+[Attacking JWT authentication](https://www.sjoerdlangkemper.nl/2016/09/28/attacking-jwt-authentication/)
+
+[WAFPASS](https://github.com/wafpassproject/wafpass)
+* Analysing parameters with all payloads' bypass methods, aiming at benchmarking security solutions like WAF.
+
+[collaborator-everywhere](https://github.com/PortSwigger/collaborator-everywhere)
+* A Burp Suite Pro extension which augments your proxy traffic by injecting non-invasive headers designed to reveal backend systems by causing pingbacks to Burp Collaborator
+
+[hackability](https://github.com/PortSwigger/hackability)
+* Rendering Engine Hackability Probe performs a variety of tests to discover what the unknown rendering engine supports. To use it simply extract it to your web server and visit the url in the rendering engine you want to test. The more successful probes you get the more likely the target engine is vulnerable to attack.
+
+[Exploiting misuse of Python's "pickle"](https://blog.nelhage.com/2011/03/exploiting-pickle/)
+
+[Typosquatting programming language package managers](http://incolumitas.com/2016/06/08/typosquatting-package-managers/)
+
+[The Website Obesity Crisis](http://idlewords.com/talks/website_obesity.htm)
+
+[HUNT Burp Suite Extension](https://github.com/bugcrowdlabs/HUNT)
+* HUNT Logo  HUNT is a Burp Suite extension to: 1. Identify common parameters vulnerable to certain vulnerability classes. 2. Organize testing methodologies inside of Burp Suite.
+
+[Caja](https://developers.google.com/caja/)
+*  The Caja Compiler is a tool for making third party HTML, CSS and JavaScript safe to embed in your website. It enables rich interaction between the embedding page and the embedded applications. Caja uses an object-capability security model to allow for a wide range of flexible security policies, so that your website can effectively control what embedded third party code can do with user data. 
+
+
 #### End Sort
 
 

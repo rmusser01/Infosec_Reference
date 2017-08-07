@@ -31,8 +31,12 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [RFC 2827 -  Network Ingress Filtering: Defeating Denial of Service Attacks which employ IP Source Address Spoofing](https://tools.ietf.org/html/rfc2827)
 
-[gateway-finder](https://github.com/pentestmonkey/gateway-finder)
-* Gateway-finder is a scapy script that will help you determine which of the systems on the local LAN has IP forwarding enabled and which can reach the Internet.
+
+[bluebox-ng](https://github.com/jesusprubio/bluebox-ng)
+* Pentesting framework using Node.js powers, focused in VoIP.
+
+[SIMPLYEMAIL](https://github.com/killswitch-GUI/SimplyEmail)
+* What is the simple email recon tool? This tool was based off the work of theHarvester and kind of a port of the functionality. This was just an expansion of what was used to build theHarvester and will incorporate his work but allow users to easily build Modules for the Framework. Which I felt was desperately needed after building my first module for theHarvester.
 
 ##### sort end
 
@@ -234,6 +238,7 @@ when directory browsing is turned off.
 
 
 
+
 ### MitM Tools
 [Ettercap](https://ettercap.github.io/ettercap/)
 Ettercap is a comprehensive suite for man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.
@@ -349,9 +354,14 @@ EIGRP and OSPF).
 [a](https://github.com/fmtn/a)
 * ActiveMQ CLI testing and message management
 
+[dns-parallel-prober](https://github.com/lorenzog/dns-parallel-prober)
+* This script is a proof of concept for a parallelised domain name prober. It creates a queue of threads and tasks each one to probe a sub-domain of the given root domain. At every iteration step each dead thread is removed and the queue is replenished as necessary.
 
+[gateway-finder](https://github.com/pentestmonkey/gateway-finder)
+* Gateway-finder is a scapy script that will help you determine which of the systems on the local LAN has IP forwarding enabled and which can reach the Internet.
 
-
+[enumall](https://github.com/Dhayalan96/enumall)
+* Script to enumerate subdomains, leveraging recon-ng. Uses google scraping, bing scraping, baidu scraping, yahoo scarping, netcraft, and bruteforces to find subdomains. Plus resolves to IP.
 
 
 

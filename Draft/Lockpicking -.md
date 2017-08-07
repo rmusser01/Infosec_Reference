@@ -12,6 +12,7 @@ http://www.keypicking.com/
 
 
 
+
 ###Introduction
 
 [Wikipedia on Lockpicking](https://en.wikipedia.org/wiki/Lock_picking)
@@ -42,6 +43,7 @@ http://www.keypicking.com/
 
 [CIA Lock Picking [Field Operative Training Manual]](https://archive.org/details/pdfy-eGBVTYko5TUI5P_B)
 
+[Lock Picking Course - LockLab](https://lock-lab.com/locklab-university/lock-picking-course-2/)
 
 
 ###Videos/Talks

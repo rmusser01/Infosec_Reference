@@ -25,9 +25,6 @@
 | **Mobile self-defense - Karsten Nohl** | https://www.youtube.com/watch?v=GeCkO0fWWqc
 | **Pentesting iOS Applications - Pentester Academy - Paid Course** - This course focuses on the iOS platform and application security and is ideal for pentesters, researchers and the casual iOS enthusiast who would like to dive deep and understand how to analyze and systematically audit applications on this platform using a variety of bleeding edge tools and techniques. | http://www.pentesteracademy.com/course?id=2
 
-
-
-
 #### End Cull
 
 ### General

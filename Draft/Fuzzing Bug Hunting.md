@@ -51,8 +51,6 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 [Youtube Playlist of Fuzzing Videos](https://www.youtube.com/playlist?list=PLtPrYlwXDImiO_hzK7npBi4eKQQBgygLD)
 
 
-
-
 ### Blogposts
 
 [Fools of Golden Gate](https://blog.silentsignal.eu/2017/05/08/fools-of-golden-gate/)
@@ -173,6 +171,8 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 [Upping Your Bug Hunting Skills Using Symbolic Virtual Machines by Anto  - x33fcon](https://www.youtube.com/watch?v=IPSZxGaLlyk)
 
+[Practical File Format Fuzzing](http://www.irongeek.com/i.php?page=videos/derbycon3/3301-practical-file-format-fuzzing-jared-allar)
+* File format fuzzing has been very fruitful at discovering exploitable vulnerabilities. Adversaries take advantage of these vulnerabilities to conduct spear-phishing attacks. This talk will cover the basics of file format fuzzing and show you how to use CERT’s fuzzing frameworks to discovery vulnerabilities in file parsers.
 
 
 

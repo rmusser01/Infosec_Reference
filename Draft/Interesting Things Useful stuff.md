@@ -40,27 +40,11 @@ http://spth.virii.lu/articles.htm
 
 
 
-[303 Hacks Lies Nation States Mario DiNatale](https://www.youtube.com/watch?v=nyh_ORq1Qwk)
 
-[Richard Thieme - The Impact of Dark Knowledge and Secrets on Security and Intelligence Professionals](https://www.youtube.com/watch?v=0MzcPBAj88A&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
-* Dismissing or laughing off concerns about what it does to a person to know critical secrets does not lessen the impact on life, work, and relationships of building a different map of reality than “normal people” use. One has to calibrate narratives to what another believes. One has to live defensively, warily. This causes at the least cognitive dissonance which some manage by denial. But refusing to feel the pain does not make it go away. It just intensifies the consequences when they erupt.
-Philip K. Dick said, reality is that which, when you no longer believe in it, does not go away. When cognitive dissonance evolves into symptoms of traumatic stress, one ignores those symptoms at one’s peril. But the very constraints of one’s work often make it impossible to speak aloud about those symptoms, because that might threaten one’s clearances, work, and career. And whistle blower protection is often non-existent.
+
 
 [recap](https://github.com/rackerlabs/recap)
 * recap is a reporting script that generates reports of various information about the server.
-
-[Paul Rascagneres - Modern Reconnaissance Phase by APT – Protection Layer](https://www.youtube.com/watch?v=4JVrK7bRKb0&index=10&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
-
-[BE YOUR OWN VPN PROVIDER WITH OPENBSD (v2)](https://networkfilter.blogspot.com/2017/04/be-your-own-vpn-provider-with-openbsd-v2.html)
-
-[New cache architecture on Intel I9 and Skylake server: An initial assessment](https://cyber.wtf/2017/07/18/new-cache-architecture-on-intel-i9-and-skylake-server-an-initial-assessment/)
-
-[301 The Road to Hiring is Paved in Good Intentions Tim OBrien](https://www.youtube.com/watch?v=sdkf8SIj1rU)
-
-[Ermahgerd: Lawrs - Robert Heverly - Anycon17](http://www.irongeek.com/i.php?page=videos/anycon2017/305-ermahgerd-lawrs-prof-robert-heverly)
-* When do you ? and other coders, hackers, developers, and tinkerers ? think or worry about the law? If your answer is, ?Not very often,? then this talk is for you. We all need to think about the law. And it?s not just privacy, or computer fraud, or even anti-circumvention law, that we should think about. We need to think about law as a whole and how it can help us do or stop us from doing what we want to do. This talk will start with a broad overview of the ways in which we implicate law when we do what we do, and then will focus on what that means for us and the broader implications that can arise from our various activities. Do you think the law would stop you from doing what you want to do or punish you for doing it? It might, but it also might not. If you think it does, do you think you should be able to do what you want to do? If you do, then we need to hack the law, and to do that we?ll need to talk to the legal coders, those writers of our cultural software. This talk will tackle not only law and working with code, but also why it matters for us to be aware of the law and engaged in improving it.
-
-
 
 [QR Code interesting](http://datagenetics.com/blog/november12013/index.html)
 
@@ -70,13 +54,7 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 
 [IA Guidance - NSA](https://www.iad.gov/iad/library/ia-guidance/index.cfm)
 
-
-
 [LeakedSource.ru](https://leakedsource.ru/)
-
-
-
-
 
 #### End Sort
 
@@ -249,6 +227,22 @@ http://www.securitywizardry.com/radar.htm
 [Software Supply Chains and the Illusion of Control - Derek Weeks](http://www.irongeek.com/i.php?page=videos/bsidesnova2017/107-software-supply-chains-and-the-illusion-of-control-derek-weeks)
 * In this presentation I am sharing the results of a three-year, industry-wide study on open source development and security practices across 3,000 organizations and 25,000. I will detail how these organizations are employing a vast community of open source component suppliers, warehouses, and development tools that take the form of software supply chains. Modern software development practices are now consuming BILLIONS of open source and third-party components. The tooling with package managers and build tools such as Maven, Gradle, npm, NuGet, RubyGems and others has promoted the usage of components to a convenient standard practice. As a result, 90% of a typical application is now composed of open source components. The good news: use of the components is improving developer productivity and accelerating time to market. However, using these components brings ownership and responsibility with it and this fact is largely overlooked. The unspoken truth: not all parts are created equal. For example, 1 in 16 components in use include known security vulnerabilities. Ugh. This session aims to enlighten development professionals by sharing results from the State of the Software Supply Chain reports from 2015 through 2017. The reports blend of public and proprietary data with expert research and analysis. Attendees in this session will learn: - What our analysis of 25,000 applications reveals about the quality and security of software built with open source components - How organizations like Mayo Clinic, Exxon, Capital One, the U.S. FDA and Intuit are utilizing the principles of software supply chain automation to improve application security - Why avoiding open source components over 3 years old might be a really good idea - How to balance the need for speed with quality and security -- early in the development lifecycle We will also discuss how you can best approach the effort for development teams to identify, track and replace components with known vulnerabilities, while getting more products and new features to market quickly. Attend this session and gain insight as to how your organization’s application development practices compare to others. I'll share the industry benchmarks to take back and discuss with your development, security, and open source governance teams.
 
+[303 Hacks Lies Nation States Mario DiNatale](https://www.youtube.com/watch?v=nyh_ORq1Qwk)
+
+[Paul Rascagneres - Modern Reconnaissance Phase by APT – Protection Layer](https://www.youtube.com/watch?v=4JVrK7bRKb0&index=10&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
+
+[BE YOUR OWN VPN PROVIDER WITH OPENBSD (v2)](https://networkfilter.blogspot.com/2017/04/be-your-own-vpn-provider-with-openbsd-v2.html)
+
+[New cache architecture on Intel I9 and Skylake server: An initial assessment](https://cyber.wtf/2017/07/18/new-cache-architecture-on-intel-i9-and-skylake-server-an-initial-assessment/)
+
+[301 The Road to Hiring is Paved in Good Intentions Tim OBrien](https://www.youtube.com/watch?v=sdkf8SIj1rU)
+
+[Ermahgerd: Lawrs - Robert Heverly - Anycon17](http://www.irongeek.com/i.php?page=videos/anycon2017/305-ermahgerd-lawrs-prof-robert-heverly)
+* When do you ? and other coders, hackers, developers, and tinkerers ? think or worry about the law? If your answer is, ?Not very often,? then this talk is for you. We all need to think about the law. And it?s not just privacy, or computer fraud, or even anti-circumvention law, that we should think about. We need to think about law as a whole and how it can help us do or stop us from doing what we want to do. This talk will start with a broad overview of the ways in which we implicate law when we do what we do, and then will focus on what that means for us and the broader implications that can arise from our various activities. Do you think the law would stop you from doing what you want to do or punish you for doing it? It might, but it also might not. If you think it does, do you think you should be able to do what you want to do? If you do, then we need to hack the law, and to do that we?ll need to talk to the legal coders, those writers of our cultural software. This talk will tackle not only law and working with code, but also why it matters for us to be aware of the law and engaged in improving it.
+
+[Richard Thieme - The Impact of Dark Knowledge and Secrets on Security and Intelligence Professionals](https://www.youtube.com/watch?v=0MzcPBAj88A&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
+* Dismissing or laughing off concerns about what it does to a person to know critical secrets does not lessen the impact on life, work, and relationships of building a different map of reality than “normal people” use. One has to calibrate narratives to what another believes. One has to live defensively, warily. This causes at the least cognitive dissonance which some manage by denial. But refusing to feel the pain does not make it go away. It just intensifies the consequences when they erupt.
+Philip K. Dick said, reality is that which, when you no longer believe in it, does not go away. When cognitive dissonance evolves into symptoms of traumatic stress, one ignores those symptoms at one’s peril. But the very constraints of one’s work often make it impossible to speak aloud about those symptoms, because that might threaten one’s clearances, work, and career. And whistle blower protection is often non-existent.
 
 
 

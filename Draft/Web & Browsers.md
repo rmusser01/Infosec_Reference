@@ -11,7 +11,7 @@
 * [NO/SQL](#sql)
 * [L/RFI](#lrfi)
 * [Different Types of Web based attacks](#difatk)
-	* Template Injection
+	* [Template Injection](#ssti)
 	* [Abuse of Functionality](#)
 	* [Data Structure Attacks](#)
 	* [Embedded Malicious Code](#emc)
@@ -66,9 +66,6 @@ http://www.grymoire.com/Security/Hardware.html
 prompt.ml
 
 Clickjacking attacks
- 
-
-
 #### End Sort
 
 
@@ -118,7 +115,13 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
 [The AppSec Starter Kit Timothy De Block](https://www.youtube.com/watch?v=KMz8lWNAUmg)
 
-[Server-side browsing  considered harmful](http://www.agarri.fr/docs/AppSecEU15-Server_side_browsing_considered_harmful.pdf)
+[Server-side browsing considered harmful](http://www.agarri.fr/docs/AppSecEU15-Server_side_browsing_considered_harmful.pdf)
+
+[Backslash Powered Scanning: Hunting Unknown Vulnerability Classes](http://blog.portswigger.net/2016/11/backslash-powered-scanning-hunting.html)
+*  Existing web scanners search for server-side injection vulnerabilities by throwing a canned list of technology-specific payloads at a target and looking for signatures - almost like an anti-virus. In this document, I'll share the conception and development of an alternative approach, capable of finding and confirming both known and unknown classes of injection vulnerabilities. Evolved from classic manual techniques, this approach reaps many of the benefits of manual testing including casual WAF evasion, a tiny network footprint, and flexibility in the face of input filtering.
+
+[NodeJS: Remote Code Execution as a Service - Peabnuts123 – Kiwicon 2016](https://www.youtube.com/watch?v=Qvtfagwlfwg)
+* [SLIDES](http://archivedchaos.com/post/153372061089/kiwicon-2016-slides-upload)
 
 
 
@@ -214,8 +217,15 @@ As seen on: https://www.owasp.org/index.php/Category:Attack
 
 
 
+#### <a name="ssti">Server Side Template Injection</a>
 
-#####<a name="Abuse of Functionality[#
+[Server Side Template Injection](http://blog.portswigger.net/2015/08/server-side-template-injection.html)
+
+
+
+
+
+##### <a name="Abuse of Functionality[#
 [jsgifkeylogger](https://github.com/wopot/jsgifkeylogger)
 * a javascript keylogger included in a gif file This is a PoC
 
@@ -583,6 +593,10 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [Exploiting misuse of Python's "pickle"](https://blog.nelhage.com/2011/03/exploiting-pickle/)
 
+[Hacking Jenkins Servers With No Password](https://www.pentestgeek.com/penetration-testing/hacking-jenkins-servers-with-no-password)
+
+[ebay.com: RCE using CCS](http://secalert.net/#ebay-rce-ccs)
+
 
 
 
@@ -893,3 +907,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [collaborator-everywhere](https://github.com/PortSwigger/collaborator-everywhere)
 * A Burp Suite Pro extension which augments your proxy traffic by injecting non-invasive headers designed to reveal backend systems by causing pingbacks to Burp Collaborator
 
+[backslash-powered-scanner](https://github.com/PortSwigger/backslash-powered-scanner)
+* This extension complements Burp's active scanner by using a novel approach capable of finding and confirming both known and unknown classes of server-side injection vulnerabilities. Evolved from classic manual techniques, this approach reaps many of the benefits of manual testing including casual WAF evasion, a tiny network footprint, and flexibility in the face of input filtering.
+
+[distribute-damage](https://github.com/PortSwigger/distribute-damage)
+* Designed to make Burp evenly distribute load across multiple scanner targets, this extension introduces a per-host throttle, and a context menu to trigger scans from. It may also come in useful for avoiding detection.

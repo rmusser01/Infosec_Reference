@@ -20,6 +20,8 @@ Cull
 
 ##### To Do
 * Create incident Response section
+* Break out Threat hunting stuff
+* Break out Logging stuff into "logging" for system specific logging
 
 #### Cull
 [laikaboss](https://github.com/lmco/laikaboss)
@@ -29,6 +31,12 @@ Cull
 http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Analysis-What-Should-You-Choose.pdf
 
 [Response Operation Collections Kit Reference Build](https://github.com/rocknsm/rock)
+
+[Stenographer](https://github.com/google/stenographer/blob/master/README.md)
+* Stenographer is a full-packet-capture utility for buffering packets to disk for intrusion detection and incident response purposes. It provides a high-performance implementation of NIC-to-disk packet writing, handles deleting those files as disk fills up, and provides methods for reading back specific sets of packets quickly and easily.
+
+[Netdude](http://netdude.sourceforge.net/)
+* The Network Dump data Displayer and Editor is a framework for inspection, analysis and manipulation of tcpdump trace files. It addresses the need for a toolset that allows easy inspection, modification, and creation of pcap/tcpdump trace files. Netdude builds on any popular UNIX-like OS, such as Linux, the BSDs, or OSX.
 
 
 

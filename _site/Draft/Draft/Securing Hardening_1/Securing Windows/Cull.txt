@@ -1,9 +1,0 @@
-https://sysforensics.org/2014/01/know-your-windows-processes.html
-
-
-
-[Mitigating Pass-the-Hash Attacks and other credential Theft-version2](http://download.microsoft.com/download/7/7/A/77ABC5BD-8320-41AF-863C-6ECFB10CB4B9/Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf)
-* Official MS paper.
-
-
-[Preventing the Exploitation of Structured Exception Handler (SEH) Overwrites with SEHOP](http://blogs.technet.com/b/srd/archive/2009/02/02/preventing-the-exploitation-of-seh-overwrites-with-sehop.aspx)

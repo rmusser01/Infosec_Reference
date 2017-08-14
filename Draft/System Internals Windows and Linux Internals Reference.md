@@ -15,36 +15,12 @@
 
 
 ##### To Do:
+* Fix ToC so its accurate
 *	Split sections into reference material and writeup material(quick vs long reference)
 * Further categorize sections (network vs memory vs exploit mitigations vs feature)
 
 
 #### Sort
-
-[pagexec - GRSEC](https://pax.grsecurity.net/docs/pageexec.txt)
-
-[Memory Translation and Segmentation](http://duartes.org/gustavo/blog/post/memory-translation-and-segmentation/)
-
-[duartes.org - internals](http://duartes.org/gustavo/blog/category/internals/)
-
-https://xorl.wordpress.com/2010/10/14/linux-glibc-stack-canary-values/
-
-[Understanding glibc Malloc](https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/)
-
-https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-and-10/ 
-
-[Stack Smashing Protector](http://wiki.osdev.org/Stack_Smashing_Protector)
-
-
-
-[windows-operating-system-archaeology](https://github.com/subTee/windows-operating-system-archaeology)
-* subTee stuff
-
-[Processes, Threads, and Jobs in the Windows Operating System](https://www.microsoftpressstore.com/articles/article.aspx?p=2233328&seqNum=2)
-
-[Mandatory Integrity Control](https://msdn.microsoft.com/en-gb/library/windows/desktop/bb648648(v=vs.85).aspx)
-
-[Windows Access Control Demystified](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=E1A09F166B29C17D2CD38C70A02576E4?doi=10.1.1.88.1930&rep=rep1&type=pdf)
 
 
 #### End Sort
@@ -62,7 +38,7 @@ https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-
 
 [Event log explanations for various systems(not just windows)](http://eventopedia.cloudapp.net/Events/?/Operating+System)
 
-
+[duartes.org - internals](http://duartes.org/gustavo/blog/category/internals/)
 
 
 
@@ -81,7 +57,24 @@ https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-
 
 [GlobalGetAtomName function](https://msdn.microsoft.com/en-us/library/windows/desktop/ms649063(v=vs.85).aspx)
 
+[windows-operating-system-archaeology](https://github.com/subTee/windows-operating-system-archaeology)
+* subTee stuff
 
+[BATTLE OF SKM AND IUM - How Windows 10 rewrites OS Architecture - Alex Ionescu](http://www.alex-ionescu.com/blackhat2015.pdf)
+
+
+
+#### Access Control
+
+[Mandatory Integrity Control](https://msdn.microsoft.com/en-gb/library/windows/desktop/bb648648(v=vs.85).aspx)
+
+[Windows Access Control Demystified](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=E1A09F166B29C17D2CD38C70A02576E4?doi=10.1.1.88.1930&rep=rep1&type=pdf)
+
+
+##### App Containers
+[Demystifying AppContainers in Windows 8 (Part I)](https://blog.nextxpert.com/2013/01/31/demystifying-appcontainers-in-windows-8-part-i/)
+
+[AppContainer Isolation](https://msdn.microsoft.com/en-us/library/windows/desktop/mt595898(v=vs.85).aspx)
 
 
 #### Documentation
@@ -92,37 +85,8 @@ https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-
 
 [Minimal COM object registration](https://blogs.msdn.microsoft.com/larryosterman/2006/01/05/minimal-com-object-registration/)
 
+[Windows Data Protection](https://msdn.microsoft.com/en-us/library/ms995355.aspx)
 
-
-##### Networking
-
-[WinHTTP](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382925%28v=vs.85%29.aspx)
-
-[WinINet](https://msdn.microsoft.com/en-us/library/windows/desktop/aa383630%28v=vs.85%29.aspx)
-
-[WinINet vs WinHTTP](https://msdn.microsoft.com/en-us/library/windows/desktop/hh227298%28v=vs.85%29.aspx)
-
-
-
-##### System Features
-
-[Windows - Application Shims](https://technet.microsoft.com/en-us/library/dd837644%28v=ws.10%29.aspx)
-
-[Application Compatibility in Windows](https://technet.microsoft.com/en-us/windows/jj863248)
-
-[Windows - Application Shims](https://technet.microsoft.com/en-us/library/dd837644%28v=ws.10%29.aspx)
-
-[LSA Authentication](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378326%28v=vs.85%29.aspx)
-* LSA Authentication describes the parts of the Local Security Authority (LSA) that applications can use to authenticate and log users on to the local system. It also describes how to create and call authentication packages and security packages.
-
-[Windows - Named Pipes](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365590%28v=vs.85%29.aspx)
-
-
-
-
-##### Memory
-
-[Pushing the Limits of Windows: Virtual Memory](http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx)
 
 
 ##### Exploit Mitigations
@@ -137,9 +101,22 @@ https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-
 
 
 
-##### Registry
 
-[What registry entries are needed to register a COM object.](https://blogs.msdn.microsoft.com/larryosterman/2006/01/11/what-registry-entries-are-needed-to-register-a-com-object/)
+##### Memory
+
+[Pushing the Limits of Windows: Virtual Memory](http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx)
+
+[Memory Translation and Segmentation](http://duartes.org/gustavo/blog/post/memory-translation-and-segmentation/)
+
+
+
+##### Networking
+
+[WinHTTP](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382925%28v=vs.85%29.aspx)
+
+[WinINet](https://msdn.microsoft.com/en-us/library/windows/desktop/aa383630%28v=vs.85%29.aspx)
+
+[WinINet vs WinHTTP](https://msdn.microsoft.com/en-us/library/windows/desktop/hh227298%28v=vs.85%29.aspx)
 
 
 
@@ -162,6 +139,36 @@ https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-
 [Thread Local Storage](https://msdn.microsoft.com/en-us/library/ms686749.aspx)
 
 [Windows 8 BOot](http://technet.microsoft.com/en-US/windows/dn168167.aspx)
+
+[PEB32 and PEB64 in one definition](http://blog.rewolf.pl/blog/?p=294)
+
+[Evolution of Process Environment Block (PEB)](http://blog.rewolf.pl/blog/?p=573)
+
+[VirtualAlloc function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366887(v=vs.85).aspx)
+
+[Processes, Threads, and Jobs in the Windows Operating System](https://www.microsoftpressstore.com/articles/article.aspx?p=2233328&seqNum=2)
+
+
+##### Registry
+
+[What registry entries are needed to register a COM object.](https://blogs.msdn.microsoft.com/larryosterman/2006/01/11/what-registry-entries-are-needed-to-register-a-com-object/)
+
+
+
+
+##### System Features
+
+[Windows - Application Shims](https://technet.microsoft.com/en-us/library/dd837644%28v=ws.10%29.aspx)
+
+[Application Compatibility in Windows](https://technet.microsoft.com/en-us/windows/jj863248)
+
+[Windows - Application Shims](https://technet.microsoft.com/en-us/library/dd837644%28v=ws.10%29.aspx)
+
+[LSA Authentication](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378326%28v=vs.85%29.aspx)
+* LSA Authentication describes the parts of the Local Security Authority (LSA) that applications can use to authenticate and log users on to the local system. It also describes how to create and call authentication packages and security packages.
+
+[Windows - Named Pipes](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365590%28v=vs.85%29.aspx)
+
 
 
 
@@ -211,6 +218,14 @@ https://tribalchicken.com.au/technical/recovering-bitlocker-keys-on-windows-8-1-
 
 [Detecting stealthier cross-process injection techniques with Windows Defender ATP: Process hollowing and atom bombing](https://blogs.technet.microsoft.com/mmpc/2017/07/12/detecting-stealthier-cross-process-injection-techniques-with-windows-defender-atp-process-hollowing-and-atom-bombing/)
 
+[Unkillable Processes](https://blogs.technet.microsoft.com/markrussinovich/2005/08/17/unkillable-processes/)
+
+[Usermode Sandboxing](http://www.malwaretech.com/2014/10/usermode-sandboxing.html)
+
+[Advanced Desktop Application Sandboxing via AppContainer](https://www.malwaretech.com/2015/09/advanced-desktop-application-sandboxing.html)
+
+
+
 
 
 
@@ -251,15 +266,21 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 [Active Directory Architecture](https://technet.microsoft.com/en-us/library/bb727030.aspx)
 
+[AD Local Domain groups, Global groups and Universal groups.](https://ss64.com/nt/syntax-groups.html)
 
 [Active Directory Control Paths](https://github.com/ANSSI-FR/AD-control-paths)
 *  Active Directory Control Paths auditing and graphing tools 
+
+
+
 
 
 #### <a name="kerberos">Kerberos Related</a>
 [Kerberos Delegation, SPNs and More...](https://www.coresecurity.com/blog/kerberos-delegation-spns-and-more)
 
 [Article Explaining what the KRBTGT account in AD is](http://windowsitpro.com/security/q-what-krbtgt-account-used-active-directory-ad-environment)
+
+
 
 
 
@@ -273,7 +294,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 [Bash Guide for Beginners](http://www.tldp.org/LDP/Bash-Beginners-Guide/html/Bash-Beginners-Guide.html)
 
-
+[pagexec - GRSEC](https://pax.grsecurity.net/docs/pageexec.txt)
 
 
 
@@ -284,6 +305,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 [Introduction to Linux - Machtelt Garrels](http://www.tldp.org/LDP/intro-linux/html/intro-linux.html)
 * Excellent doc covering every aspect of linux. Deserves at least 1 skim through.
+
 
 
 
@@ -341,9 +363,11 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 [Understanding !PTE - Non-PAE and X64](http://blogs.msdn.com/b/ntdebugging/archive/2010/06/22/part-3-understanding-pte-non-pae-and-x64.aspx?Redirected=true)
 
+[Linux GLibC Stack Canary Values](https://xorl.wordpress.com/2010/10/14/linux-glibc-stack-canary-values/)
 
+[Stack Smashing Protector](http://wiki.osdev.org/Stack_Smashing_Protector)
 
-
+[Memory Translation and Segmentation](http://duartes.org/gustavo/blog/post/memory-translation-and-segmentation/)
 
 
 

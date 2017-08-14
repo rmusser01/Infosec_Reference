@@ -18,20 +18,8 @@ CULL
 #### sort
 
  | **I Will Kill You** - Chris Rock(Defcon23)| https://www.youtube.com/watch?v=9FdHq3WfJg
-
-
-
-
-[How to bypass Web-Proxy Filtering](https://www.blackhillsinfosec.com/?p=5831)
-
-[Malicious Outlook Rules](https://silentbreaksecurity.com/malicious-outlook-rules/)
-
-[EXE-less Malicious Outlook Rules - BHIS](https://www.blackhillsinfosec.com/?p=5544)
-
-["Humans, right?" Soft Skills in Security - Ariel Robinson](http://www.irongeek.com/i.php?page=videos/bsidesnova2017/200-humans-right-soft-skills-in-security-ariel-robinson)
-* Let's face it: humans ruin everything. They are almost always the weak link in the information security chain, between their susceptibility to social engineering, rejection of security threats, and sheer laziness. You can make the best security tool in the business, but if a human doesn't use it right, well, you might as well leave your passwords on a sticky note on your-- wait a minute. Yes, humans suck at information security. But we don't make it easy. Infosec is incredibly inaccessible to your average user. Just ask me: I am one. We can't change humans (or get rid of them, no matter how much we might want to), but we can change information security. We can leverage insights from non-technical disciplines such as cognitive science, human-centered design, strategic communications, and psychology. Or we can keep hitting our heads against our desktops. As a professional communicator and bridge builder, help me help you. To make security work, we have to make it easy. For humans.
-
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
+
 #### end sort
 
 
@@ -156,7 +144,19 @@ Paul Ekmans research
 
 [Security Guards LOL Brent White Tim Roberts - Nolacon2017](https://www.youtube.com/watch?v=yIQ-7ZSwrYw)
 
+[Jedi Mind Tricks: People Skills for Security Pros - Alex DiPerma - 2017 ANYCON](http://www.irongeek.com/i.php?page=videos/anycon2017/104-jedi-mind-tricks-people-skills-for-security-pros-alex-diperna)
+* People skills for security professionals but WAY MORE FUN!
 
+[PG12 Classic Misdirection Social Engineering to Counter Surveillance Peter Clemenko III](https://www.youtube.com/watch?v=AysOwnSUmgg)
+
+[Patching the Human Vulns  - Leonard Isham](http://www.irongeek.com/i.php?page=videos/derbycon4/t300-patching-the-human-vulns-leonard-isham)
+* You are a hacker, you learn, you play, and you break. The very nature of a hacker is to question what is given to us and to play with the rules. However, most of us do not apply this methodology in all parts of our lives. Many take what is given to us about mood and health as fact and what are the results...overweight, depression, anxiety, and self esteem issues. In this presentation, we will show 2 hackers and their journey on how they addressed the issues mentioned above. Len and Moey followed two separate paths to losing over a combined 150 lbs, gaining confidence, and changing their outlook. The talk will not only cover the touchy feely portion of how to deal with weight, mood,and self esteem but will also be supported by the science behind diets, supplements and perspective. The talk will provide what worked for two hackers. YMMV. 
+
+[Cheat Codez: Level UP Your SE Game - Eric Smith (@InfoSecMafia)](http://www.irongeek.com/i.php?page=videos/derbycon3/1206-cheat-codez-level-up-your-se-game-eric-smith)
+* Everyone knows what phishing is. Everyone realizes Java applets lead to massive storms of shells. Everyone accepts tailgating is the easiest way into your building. Everyone knows smoking (areas) are bad for you AND your business. Admit it, you paid for that EXACT assessment last year. I could write your report for you without even doing the job. So what’s the problem you ask? That’s EXACTLY the problem, I say. So how do we fix these issues that plague our industry and misalign business expectations? This talk will discuss the value of Social Engineering exercises when conducted with realistic goals yielding actionable results. Of course, that means putting in REAL work throughout the engagement, not “point, click, report, rinse and repeat”. We’ll discuss tips, techniques and secrets that the PROS don’t always blog about. *PRO TIP* – This won’t be a talk on how to use a particular framework or release of a tool (there are plenty of those already). So bring your work boots, it’s time to get dirty and UP your game.
+
+["Humans, right?" Soft Skills in Security - Ariel Robinson](http://www.irongeek.com/i.php?page=videos/bsidesnova2017/200-humans-right-soft-skills-in-security-ariel-robinson)
+* Let's face it: humans ruin everything. They are almost always the weak link in the information security chain, between their susceptibility to social engineering, rejection of security threats, and sheer laziness. You can make the best security tool in the business, but if a human doesn't use it right, well, you might as well leave your passwords on a sticky note on your-- wait a minute. Yes, humans suck at information security. But we don't make it easy. Infosec is incredibly inaccessible to your average user. Just ask me: I am one. We can't change humans (or get rid of them, no matter how much we might want to), but we can change information security. We can leverage insights from non-technical disciplines such as cognitive science, human-centered design, strategic communications, and psychology. Or we can keep hitting our heads against our desktops. As a professional communicator and bridge builder, help me help you. To make security work, we have to make it easy. For humans.
 
 
 

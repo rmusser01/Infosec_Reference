@@ -45,6 +45,12 @@ https://github.com/NullHypothesis/exitmap/issues/37
 
 [Deanonymizing Windows users and capturing Microsoft and VPN accounts](https://medium.com/@ValdikSS/deanonymizing-windows-users-and-capturing-microsoft-and-vpn-accounts-f7e53fe73834)
 
+[The Paranoid's Bible: An anti-dox effort.](https://paranoidsbible.tumblr.com/)
+
+
+
+
+
 
 
 ### <a name="Articles">Articles</a>
@@ -135,6 +141,7 @@ https://github.com/NullHypothesis/exitmap/issues/37
 
 [De-Anonymizing Alt.Anonymous. Messages - Defcon21 - Tom Ritter](https://www.youtube.com/watch?v=_Tj6c2Ikq_E)
 
+[PISSED: Privacy In a Surveillance State Evading Detection - Joe Cicero - CYPHERCON11 ](https://www.youtube.com/watch?v=keA3WcKwZwA)
 
 
 

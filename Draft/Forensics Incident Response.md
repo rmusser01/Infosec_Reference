@@ -20,21 +20,17 @@
 
 
 
-* Better security - Mean time to detect/Mean time to respond
+* Better security -> Mean time to detect/Mean time to respond
 
 
 #### CULL
+* Roll anti into this.
 
 https://forensiccontrol.com/resources/free-software/
 
 Forensics wiki
 Yelp/Github - OSX Collector - Mass style forensics/management
-
-
 hackingexposedcomputerforensicsblog.blogspot.com/2015/02/automating-dfir-how-to-series-on_21.html)
-
-
-[THE CIDER PRESS:EXTRACTING FORENSIC ARTIFACTS FROM APPLE CONTINUITY](https://www.sans.org/summit-archives/file/summit-archive-1498146226.pdf)
 
 #### End Cull
 
@@ -268,8 +264,12 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 [usbkill](https://github.com/stemid/usbkill)
 * A tool that shuts down your computer if USB devices change, for example if you unplug or plug-in a device. 
 
+[An Anti-Forensics Primer - Jason Andress](http://www.irongeek.com/i.php?page=videos/derbycon3/s216-an-anti-forensics-primer-jason-andress)
+* This talk will cover the basics of anti-forensics, the tools and techniques that can be used to make life harder for computer forensic examiners. We will cover some of the basic methods that are used (disk wiping, time stomping, encryption, etc…) and talk about which of these methods might actually work and which are easily surmounted with common forensic tools.
 
+[OpenPuff Steganography](http://embeddedsw.net/OpenPuff_Steganography_Home.html)
 
+[Forensics Impossible: Self-Destructing Thumb Drives - Brandon Wilson](https://www.youtube.com/watch?v=NRMqwc5YEu4)
 
 
 

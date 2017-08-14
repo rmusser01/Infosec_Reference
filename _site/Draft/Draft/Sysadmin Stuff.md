@@ -1,6 +1,0 @@
-Puppet
-
-Chef
-
-
-Salt

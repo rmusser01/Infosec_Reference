@@ -32,7 +32,16 @@ To be sorted
 ### To be sorted
 
 
+[Hyper-V debugging for beginners](http://hvinternals.blogspot.com/2015/10/hyper-v-debugging-for-beginners.html?m=1)
 
+[Software Hooking methods reveiw(2016)]((https://www.blackhat.com/docs/us-16/materials/us-16-Yavo-Captain-Hook-Pirating-AVs-To-Bypass-Exploit-Mitigations-wp.pdf)
+
+[Deviare v2.0](http://whiteboard.nektra.com/deviare-v-2-0)
+* The Deviare API has been developed to intercept any API calls, letting you get control of the flow of execution of any application.
+
+[Reverse History Part Two – Research](http://jakob.engbloms.se/archives/1554)
+
+[SpyStudio Tutorials](http://whiteboard.nektra.com/spystudio-2-0-quickstart)
 
 
 [PPEE(puppy)](https://www.mzrst.com/#top)

@@ -20,8 +20,6 @@
 
 https://conversations.im/xeps/multi-end.html
 
-http://resources.infosecinstitute.com/cbc-byte-flipping-attack-101-approach/ 
-
 ### End Cull
 
 
@@ -39,6 +37,10 @@ http://resources.infosecinstitute.com/cbc-byte-flipping-attack-101-approach/
 [Differential Cryptanalysis for Dummies - Jon King](https://www.youtube.com/watch?v=xav-GUO_o4s&feature=youtu.be)
 
 [Snake Oil Crypto Competition](https://snakeoil.cr.yp.to/)
+
+[Lifetimes of cryptographic hash functions](http://valerieaurora.org/hash.html)
+
+[Top 10 Developer Crypto Mistakes](https://littlemaninmyhead.wordpress.com/2017/04/22/top-10-developer-crypto-mistakes/amp/)
 
 
 
@@ -67,7 +69,7 @@ http://resources.infosecinstitute.com/cbc-byte-flipping-attack-101-approach/
 
 [How to Implement Crypto Poorly - Sean Cassidy](https://github.com/cxxr/talks/blob/master/2016/grrcon/How%20to%20Implement%20Crypto%20Poorly.pdf)
 
-
+[CBC Byte Flipping Attack—101 Approach](http://resources.infosecinstitute.com/cbc-byte-flipping-attack-101-approach/)
 
 
 
@@ -202,7 +204,10 @@ http://resources.infosecinstitute.com/cbc-byte-flipping-attack-101-approach/
 	Applied Cryptography
 
 
+### Crypto Libraries/Protocols
 
+[OMEMO Multi-End Message and Object Encryption](https://conversations.im/omemo/)
+* OMEMO is an XMPP Extension Protocol (XEP) for secure multi-client end-to-end encryption. It is an open standard based on a Double Ratchet and PEP which can be freely used and implemented by anyone. The protocol has been audited by a third party.
 
 
 

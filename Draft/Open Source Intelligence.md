@@ -21,6 +21,8 @@ http://toddington.com/resources/
 www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 
+
+
 #### End cull
 
 
@@ -84,7 +86,10 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 [How to Use Python to Spy on Your Friends: Web APIs, Recon ng, & OSINT](https://www.youtube.com/watch?v=BOjz7NfsLpA)
 
+[ZOMG Its OSINT Heaven Tazz Tazz](https://www.youtube.com/watch?v=cLmEJLy7dv8)
 
+[Practical OSINT - Shane MacDougall](https://www.youtube.com/watch?v=cLmEJLy7dv8)
+*  There’s more to life to OSINT than google scraping and social media harvesting. Learn some practical methods to automate information gathering, explore some of the most useful tools, and learn how to recognize valuable data when you see it. Not only will we explore various tools, attendees will get access to unpublished transforms they can use/modify for their own use.
 
 
 
@@ -99,110 +104,143 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&user=Mediaquest
 
-[TheHarvester](From: https://code.google.com/p/theharvester/)
-* Description: The objective of this program is to gather emails, subdomains, hosts, employee names, open ports and banners from different public sources like search engines, PGP key servers and SHODAN computer database. This tool is intended to help Penetration testers in the early stages of the penetration test in order to understand the customer footprint on the Internet. It is also useful for anyone that wants to know what an attacker can see about their organization. 
-
-[MetaGooFil](https://code.google.com/p/metagoofil/)	
-* Description: Metagoofil is an information gathering tool designed for extracting metadata of public documents (pdf,doc,xls,ppt,docx,pptx,xlsx) belonging to a target company. The tool will perform a search in Google to identify and download the documents to local disk and then will extract the metadata with different libraries like Hachoir, PdfMiner and others. With the results it will generate a report with usernames, software versions and servers or machine names that will help Penetration testers in the information gathering phase. 
-[Gitrob](
-* [Blog post](http://michenriksen.com/blog/gitrob-putting-the-open-source-in-osint/)
-* Gitrob is a command line tool that can help organizations and security professionals find such sensitive information. The tool will iterate over all public organization and member repositories and match filenames against a range of patterns for files that typically contain sensitive or dangerous information.
-
-[SearchDiggity](http://www.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/#searchdiggity)
-* Description: SearchDiggity 3.1 is the primary attack tool of the Google Hacking Diggity Project. It is Bishop Fox’s MS Windows GUI application that serves as a front-end to the most recent versions of our Diggity tools: GoogleDiggity, BingDiggit, Bing LinkFromDomainDiggity, CodeSearchDiggity, DLPDiggity, FlashDiggity, MalwareDiggity, PortScanDiggity, SHODANDiggity, BingBinaryMalwareSearch, NotInMyBackYard Diggity
- 
-[Oryon C Portable](http://osintinsight.com/oryon.php)
-* Oryon C Portable is a web browser designed to assist researchers in conducting Open Source Intelligence investigations. Oryon comes with dozens of pre-installed tools and a select set of links cataloged by category – including those that can be found in the OI Shared Resources.
-
-
 [Maltego](https://www.paterva.com/web6/products/maltego.php)
 	* Description: What you use to tie everything together.
 
-[OpenRefine](https://github.com/OpenRefine/OpenRefine)	
-* Description: OpenRefine is a power tool that allows you to load data, understand it, clean it up, reconcile it to master database, and augment it with data coming from Freebase or other web sources. All with the comfort and privacy of your own computer.
-
-[Metashield Analyzer](https://metashieldanalyzer.elevenpaths.com/)
-* Description: Metadata documents can help a malicious user to obtain information that is beyond our control in an enterprise environment. Metashield Analyzer is an online service that allows easily check if your office documents contain metadata. 
+[PowerMeta](https://github.com/dafthack/PowerMeta)
+* PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches. It then allows for the download of those files from the target domain. After retrieving the files, the metadata associated with them can be analyzed by PowerMeta. Some interesting things commonly found in metadata are usernames, domains, software titles, and computer names.
 
 [Recon-ng](https://bitbucket.org/LaNMaSteR53/recon-ng)
 * Description: Recon-ng is a full-featured Web Reconnaissance framework written in Python. Complete with independent modules, database interaction, built in convenience functions, interactive help, and command completion, Recon-ng provides a powerful environment in which open source web-based reconnaissance can be conducted quickly and thoroughly.
 
-[Creepy.py](http://ilektrojohn.github.io/creepy/)
-* Description: Creepy is a geolocation OSINT tool. Gathers geolocation related information from online sources, and allows for presentation on map, search filtering based on exact location and/or date, export in csv format or kml for further analysis in Google Maps.
+[DataSploit](https://github.com/DataSploit/datasploit)
+A tool to perform various OSINT techniques, aggregate all the raw data, and give data in multiple formats.
 
-[OSINT OPSEC Tool](https://github.com/hyprwired/osint-opsec-tool)
-* Description: The OSINT OPSEC Tool monitors multiple 21st Century OSINT sources real-time for keywords, then analyses the results, generates alerts, and maps trends of the data, finding all sorts of info people probably don't want others to see... 
-
-[NameCheck](https://www.namecheck.com)
-* Search usernames across multiple services/domain registries
-
-[typofinder](https://github.com/nccgroup/typofinder)
-* Typofinder for domain typo discovery
-
-[Just-Metadata](https://github.com/ChrisTruncer/Just-Metadata)
-* Just-Metadata is a tool that can be used to gather intelligence information passively about a large number of IP addresses, and attempt to extrapolate relationships that might not otherwise be seen. Just-Metadata has "gather" modules which are used to gather metadata about IPs loaded into the framework across multiple resources on the internet. Just-Metadata also has "analysis" modules. These are used to analyze the data loaded Just-Metadata and perform various operations that can identify potential relationships between the loaded systems.
+[OSINT Mantra](http://www.getmantra.com/hackery/osint.html)
 
 [blacksheepwall](https://github.com/tomsteele/blacksheepwall)
 * blacksheepwall is a hostname reconnaissance tool
 
-[Gitrob](https://github.com/michenriksen/gitrob)
-* Reconnaissance tool for GitHub organizations 
-* [Blog Post](http://michenriksen.com/blog/gitrob-putting-the-open-source-in-osint/)
+[Oryon C Portable](http://osintinsight.com/oryon.php)
+* Oryon C Portable is a web browser designed to assist researchers in conducting Open Source Intelligence investigations. Oryon comes with dozens of pre-installed tools and a select set of links cataloged by category – including those that can be found in the OI Shared Resources.
+
+[Creepy.py](http://ilektrojohn.github.io/creepy/)
+* Description: Creepy is a geolocation OSINT tool. Gathers geolocation related information from online sources, and allows for presentation on map, search filtering based on exact location and/or date, export in csv format or kml for further analysis in Google Maps.
+
+[OpenRefine](https://github.com/OpenRefine/OpenRefine)	
+* Description: OpenRefine is a power tool that allows you to load data, understand it, clean it up, reconcile it to master database, and augment it with data coming from Freebase or other web sources. All with the comfort and privacy of your own computer.
+
+[Tinfoleak](http://vicenteaguileradiaz.com/tools/)
+* tinfoleak is a simple Python script that allow to obtain:
+..* basic information about a Twitter user (name, picture, location, followers, etc.)
+..* devices and operating systems used by the Twitter user
+..* applications and social networks used by the Twitter user
+..* place and geolocation coordinates to generate a tracking map of locations visited
+..* show user tweets in Google Earth!
+..* download all pics from a Twitter user
+..* hashtags used by the Twitter user and when are used (date and time)
+..* user mentions by the the Twitter user and when are occurred (date and time)
+..* topics used by the Twitter user
+
+
+
+
+##### DNS Stuff
+
+[typofinder](https://github.com/nccgroup/typofinder)
+* Typofinder for domain typo discovery
+
+[dnstwist](https://github.com/elceef/dnstwist)
+* Domain name permutation engine for detecting typo squatting, phishing and corporate espionage
+
+
+
+
+#### General Meta Data
+
+
+[Just-Metadata](https://github.com/ChrisTruncer/Just-Metadata)
+* Just-Metadata is a tool that can be used to gather intelligence information passively about a large number of IP addresses, and attempt to extrapolate relationships that might not otherwise be seen. Just-Metadata has "gather" modules which are used to gather metadata about IPs loaded into the framework across multiple resources on the internet. Just-Metadata also has "analysis" modules. These are used to analyze the data loaded Just-Metadata and perform various operations that can identify potential relationships between the loaded systems.
+
+[MetaGooFil](https://code.google.com/p/metagoofil/)	
+* Description: Metagoofil is an information gathering tool designed for extracting metadata of public documents (pdf,doc,xls,ppt,docx,pptx,xlsx) belonging to a target company. The tool will perform a search in Google to identify and download the documents to local disk and then will extract the metadata with different libraries like Hachoir, PdfMiner and others. With the results it will generate a report with usernames, software versions and servers or machine names that will help Penetration testers in the information gathering phase.
+
+[Metashield Analyzer](https://metashieldanalyzer.elevenpaths.com/)
+* Description: Metadata documents can help a malicious user to obtain information that is beyond our control in an enterprise environment. Metashield Analyzer is an online service that allows easily check if your office documents contain metadata.
+
+
+
+
+
+
+##### Google Hacking
+
+[SearchDiggity](http://www.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/#searchdiggity)
+* Description: SearchDiggity 3.1 is the primary attack tool of the Google Hacking Diggity Project. It is Bishop Fox’s MS Windows GUI application that serves as a front-end to the most recent versions of our Diggity tools: GoogleDiggity, BingDiggit, Bing LinkFromDomainDiggity, CodeSearchDiggity, DLPDiggity, FlashDiggity, MalwareDiggity, PortScanDiggity, SHODANDiggity, BingBinaryMalwareSearch, NotInMyBackYard Diggity
+
+
+##### Site Scrapers
+
+[linkedin](https://github.com/eracle/linkedin)
+* Linkedin Scraper using Selenium Web Driver, Firefox 45, Ubuntu and Scrapy
+
+[tweets_analyzer](https://github.com/x0rz/tweets_analyzer)
+* Tweets metadata scraper & activity analyzer
+
+[LinkedIn Gatherer](https://github.com/DisK0nn3cT/linkedin-gatherer)
+
+[InSpy](https://github.com/gojhonny/InSpy)
+* A LinkedIn enumeration tool
+
+
+##### Email Gathering
+
+[SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail)
+* Email recon made fast and easy, with a framework to build on
+
+
+
+##### General Data Scrapers
+
+[XRAY](https://github.com/evilsocket/xray)
+* XRay is a tool for recon, mapping and OSINT gathering from public networks.
+
+[NameCheck](https://www.namecheck.com)
+* Search usernames across multiple services/domain registries
+
+[TheHarvester](From: https://code.google.com/p/theharvester/)
+* Description: The objective of this program is to gather emails, subdomains, hosts, employee names, open ports and banners from different public sources like search engines, PGP key servers and SHODAN computer database. This tool is intended to help Penetration testers in the early stages of the penetration test in order to understand the customer footprint on the Internet. It is also useful for anyone that wants to know what an attacker can see about their organization. 
+
+[OSINT OPSEC Tool](https://github.com/hyprwired/osint-opsec-tool)
+* Description: The OSINT OPSEC Tool monitors multiple 21st Century OSINT sources real-time for keywords, then analyses the results, generates alerts, and maps trends of the data, finding all sorts of info people probably don't want others to see... 
+
+
+
+
+
+#### CVS/Git/Similar Focused
+
+[repo-supervisor](https://github.com/auth0/repo-supervisor)
+
+[GitPrey](https://github.com/repoog/GitPrey)
+* GitPrey is a tool for searching sensitive information or data according to company name or key word something.The design mind is from searching sensitive data leakling in Github:
+
+[git-all-secrets](https://github.com/anshumanbh/git-all-secrets)
+* A tool to capture all the git secrets by leveraging multiple open source git searching tools
 
 [github-firehose](https://www.npmjs.com/package/github-firehose)
 * A library that will connect to github and emit events from the Github Event API in near-real-time
 * [Exploring the Github Firehose](http://blog.scalyr.com/2013/10/exploring-the-github-firehose/)
 
-[InSpy](https://github.com/gojhonny/InSpy)
-* A LinkedIn enumeration tool
-
-[dnstwist](https://github.com/elceef/dnstwist)
-* Domain name permutation engine for detecting typo squatting, phishing and corporate espionage
-
 [Gitem](https://github.com/mschwager/gitem)
 * Gitem is a tool for performing Github organizational reconnaissance.
-
-[DataSploit](https://github.com/DataSploit/datasploit)
-A tool to perform various OSINT techniques, aggregate all the raw data, and give data in multiple formats.
-
-[LinkedIn Gatherer](https://github.com/DisK0nn3cT/linkedin-gatherer )
-
-[PowerMeta](https://github.com/dafthack/PowerMeta)
-* PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches. It then allows for the download of those files from the target domain. After retrieving the files, the metadata associated with them can be analyzed by PowerMeta. Some interesting things commonly found in metadata are usernames, domains, software titles, and computer names.
-
-[OSINT Mantra](http://www.getmantra.com/hackery/osint.html)
-
-[XRAY](https://github.com/evilsocket/xray)
-* XRay is a tool for recon, mapping and OSINT gathering from public networks.
-
-[PowerMeta](https://github.com/dafthack/PowerMeta)
-* PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches. It then allows for the download of those files from the target domain. After retrieving the files, the metadata associated with them can be analyzed by PowerMeta. Some interesting things commonly found in metadata are usernames, domains, software titles, and computer names.
-
-[tweets_analyzer](https://github.com/x0rz/tweets_analyzer)
-* Tweets metadata scraper & activity analyzer
 
 [Truffle Hog](https://github.com/dxa4481/truffleHog)
 * Searches through git repositories for high entropy strings, digging deep into commit history and branches. This is effective at finding secrets accidentally committed that contain high entropy.
 
-[SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail)
-* Email recon made fast and easy, with a framework to build on
-
-[GitPrey](https://github.com/repoog/GitPrey)
-* GitPrey is a tool for searching sensitive information or data according to company name or key word something.The design mind is from searching sensitive data leakling in Github:
-
-[linkedin](https://github.com/eracle/linkedin)
-* Linkedin Scraper using Selenium Web Driver, Firefox 45, Ubuntu and Scrapy
-
-[repo-supervisor](https://github.com/auth0/repo-supervisor)
-
-[git-all-secrets](https://github.com/anshumanbh/git-all-secrets)
-* A tool to capture all the git secrets by leveraging multiple open source git searching tools
-
-[PowerMeta](https://github.com/dafthack/PowerMeta)
-* PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches. It then allows for the download of those files from the target domain. After retrieving the files, the metadata associated with them can be analyzed by PowerMeta. Some interesting things commonly found in metadata are usernames, domains, software titles, and computer names.
-
-
-
+[dvcs-ripper](https://github.com/kost/dvcs-ripper)
+* Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, ... It can rip repositories even 
+when directory browsing is turned off.
 
 
 ### Reference Sites

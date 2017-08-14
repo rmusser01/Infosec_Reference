@@ -20,6 +20,7 @@
 
 http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce
 
+
 #### End Sort
 
 #### Writeups
@@ -31,7 +32,7 @@ http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce
 
 [Remote Code Execution In Source Games](https://oneupsecurity.com/research/remote-code-execution-in-source-games?t=r)
 
-
+[Gotta catch-em-all worldwide - Pokemon GO GPS spoofing](https://insinuator.net/2016/07/gotta-catch-em-all-worldwide-or-how-to-spoof-gps-to-cheat-at-pokemon-go/)
 
 ### Console Hacking
 

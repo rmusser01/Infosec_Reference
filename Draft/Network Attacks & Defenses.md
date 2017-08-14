@@ -24,25 +24,17 @@ TOC
 ##### To be sorted
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
-
-[PiTap](https://github.com/williamknows/PiTap)
-* Automatic bridge creation and packet capture (plug-and-capture) on a battery-powered Raspberry Pi with multiple network interfaces.
-* [Blogpost]()
-
-[RFC 2827 -  Network Ingress Filtering: Defeating Denial of Service Attacks which employ IP Source Address Spoofing](https://tools.ietf.org/html/rfc2827)
-
-
 [bluebox-ng](https://github.com/jesusprubio/bluebox-ng)
 * Pentesting framework using Node.js powers, focused in VoIP.
 
-[SIMPLYEMAIL](https://github.com/killswitch-GUI/SimplyEmail)
-* What is the simple email recon tool? This tool was based off the work of theHarvester and kind of a port of the functionality. This was just an expansion of what was used to build theHarvester and will incorporate his work but allow users to easily build Modules for the Framework. Which I felt was desperately needed after building my first module for theHarvester.
+
+[Scanning Effectively Through a SOCKS Pivot with Nmap and Proxychains](https://cybersyndicates.com/2015/12/nmap-and-proxychains-scanning-through-a-socks-piviot/)
+* [Script](https://github.com/killswitch-GUI/PenTesting-Scripts/blob/master/Proxychains-Nmap.py)
 
 ##### sort end
 
 
 ###### To Do
-* Sort Scanners into sections
 * Active Directory Section?
 
 
@@ -80,7 +72,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [STP MiTM Attack and L2 Mitigation Techniques on the Cisco Catalyst 6500 ](http://www.ndm.net/ips/pdf/cisco/Catalyst-6500/white_paper_c11_605972.pdf)
 
-
+[RFC 2827 -  Network Ingress Filtering: Defeating Denial of Service Attacks which employ IP Source Address Spoofing](https://tools.ietf.org/html/rfc2827)
 
 
 
@@ -89,16 +81,18 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 ### <a name="attackw">Attacking Windows Networks</a>
 
-[ *Puff* *Puff* PSExec - Lateral Movement: An Overview](https://www.toshellandback.com/2017/02/11/psexec/)
+[Introducing PowerShell into your Arsenal with PS>Attack - Jared Haight](http://www.irongeek.com/i.php?page=videos/derbycon6/119-introducing-powershell-into-your-arsenal-with-psattack-jared-haight)
+
+
+
+#### Movement
+
+[*Puff* *Puff* PSExec - Lateral Movement: An Overview](https://www.toshellandback.com/2017/02/11/psexec/)
 
 [Ditch PsExec, SprayWMI is here ;)](http://www.pentest.guru/index.php/2015/10/19/ditch-psexec-spraywmi-is-here/)
 
-[Windows Attacks AT is the new black](https://www.slideshare.net/mubix/windows-attacks-at-is-the-new-black-26665607)
-
 [WMIOps](https://github.com/ChrisTruncer/WMIOps)
 * WMIOps is a powershell script that uses WMI to perform a variety of actions on hosts, local or remote, within a Windows environment. It's designed primarily for use on penetration tests or red team engagements.
-
-[Dumping a Domain’s Worth of Passwords With Mimikatz pt. 2](http://www.harmj0y.net/blog/powershell/dumping-a-domains-worth-of-passwords-with-mimikatz-pt-2/)
 
 [spraywmi](https://github.com/trustedsec/spraywmi)
 * SprayWMI is a method for mass spraying Unicorn PowerShell injection to CIDR notations.
@@ -107,33 +101,51 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 * A rapid psexec style attack with samba tools
 * [Blogpost that inspired it](http://carnal0wnage.attackresearch.com/2012/01/psexec-fail-upload-and-exec-instead.html)
 
+[sshuttle](https://github.com/apenwarr/sshuttle)
+* Transparent proxy server that works as a poor man's VPN. Forwards over ssh. Doesn't require admin. Works with Linux and MacOS. Supports DNS tunneling.
+
+
+#### Active Directory
+
+[Dumping a Domain’s Worth of Passwords With Mimikatz pt. 2](http://www.harmj0y.net/blog/powershell/dumping-a-domains-worth-of-passwords-with-mimikatz-pt-2/)
+
+[Windows Attacks AT is the new black](https://www.slideshare.net/mubix/windows-attacks-at-is-the-new-black-26665607)
+
+[Attacking ADFS Endpoints with PowerShell](http://www.irongeek.com/i.php?page=videos/derbycon6/118-attacking-adfs-endpoints-with-powershell-karl-fosaaen)
+
+[PowerShell-AD-Recon](https://github.com/PyroTek3/PowerShell-AD-Recon)
+* AD PowerShell Recon Scripts
+
+[Netview](https://github.com/mubix/netview)
+* Netview is a enumeration tool. It uses (with the -d) the current domain or a specified domain (with the -d domain) to enumerate hosts
+
+[LLMNR and NBT-NS Poisoning Using Responder](https://www.4armed.com/blog/llmnr-nbtns-poisoning-using-responder/)
+
+
+
+
+
+
+
+#### Sharepoint
 [Sparty - MS Sharepoint and Frontpage Auditing Tool](http://sparty.secniche.org/)
 *  Sparty is an open source tool written in python to audit web applications using sharepoint and frontpage architecture. The motivation behind this tool is to provide an easy and robust way to scrutinize the security configurations of sharepoint and frontpage based web applications. Due to the complex nature of these web administration software, it is required to have a simple and efficient tool that gathers information, check access permissions, dump critical information from default files and perform automated exploitation if security risks are identified. A number of automated scanners fall short of this and Sparty is a solution to that.
 
-[Responder](https://github.com/SpiderLabs/Responder/)
-* Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication.
-
-[SPScan]http://sourceforge.net/projects/spscan/)
+[SPScan](http://sourceforge.net/projects/spscan/)
 * SPScan is a tool written in Ruby that enumerates a SharePoint installation gathering information about the version and installed plugins.
 
 [SPartan](https://github.com/sensepost/SPartan)
 * SPartan is a Frontpage and Sharepoint fingerprinting and attack tool
 
+#### Network based
+
+[Responder](https://github.com/SpiderLabs/Responder/)
+* Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication.
+
 [MS Network Level Authentication](https://technet.microsoft.com/en-us/magazine/hh750380.aspx)
 
-[Dragon: A Windows, non-binding, passive download / exec backdoor](http://www.shellntel.com/blog/2015/6/11/dragon-a-windows-non-binding-passive-downloadexec-backdoor)
-
-[ms15-034.nse Script](https://github.com/pr4jwal/quick-scripts/blob/master/ms15-034.nse)
-
-[Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation)
-* Invoke-Obfuscation is a PowerShell v2.0+ compatible PowerShell command and script obfuscator.
-* [Presentation](https://www.youtube.com/watch?v=P1lkflnWb0I)
-
-[How to Bypass Anti-Virus to Run Mimikatz](http://www.blackhillsinfosec.com/?p=5555)
-
-[Attacking ADFS Endpoints with PowerShell](http://www.irongeek.com/i.php?page=videos/derbycon6/118-attacking-adfs-endpoints-with-powershell-karl-fosaaen)
-
-[Introducing PowerShell into your Arsenal with PS>Attack - Jared Haight](http://www.irongeek.com/i.php?page=videos/derbycon6/119-introducing-powershell-into-your-arsenal-with-psattack-jared-haight)
+[Enum4Linux](https://labs.portcullis.co.uk/tools/enum4linux/)
+* Enum4linux is a tool for enumerating information from Windows and Samba systems. It attempts to offer similar functionality to enum.exe formerly available from www.bindview.com. It is written in Perl and is basically a wrapper around the Samba tools smbclient, rpclient, net and nmblookup. The tool usage can be found below followed by examples, previous versions of the tool can be found at the bottom of the page.
 
 
 
@@ -141,41 +153,26 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 ### <a name="tools">Tools</a>
 
+
+
 [digbit](https://github.com/mnmnc/digbit/blob/master/README.md)
 * Automatic domain generation for BitSquatting
 
-[discover - Kali Scripts](https://github.com/leebaird/discover)
-* For use with Kali Linux - custom bash scripts used to automate various portions of a pentest.
-
-[w3af](https://github.com/andresriancho/w3af)
-* w3af: web application attack and audit framework, the open source web vulnerability scanner.
-
 [Yersinia](http://www.yersinia.net/)
 * Yersinia is a network tool designed to take advantage of some weakeness in different network protocols. It pretends to be a solid framework for analyzing and testing the deployed networks and systems. 
-[CiscoRouter - tool](https://github.com/ajohnston9/ciscorouter)
-* CiscoRouter is a tool for scanning Cisco-based routers over SSH. Rules can be created using accompanying CiscoRule application (see this repo) and stored in the "rules" directory.
-
-
-[PowerShell-AD-Recon](https://github.com/PyroTek3/PowerShell-AD-Recon)
-* AD PowerShell Recon Scripts
-
-[NbtScan](http://www.unixwiz.net/tools/nbtscan.html)
-* This is a command-line tool that scans for open NETBIOS nameservers on a local or remote TCP/IP network, and this is a first step in finding of open shares. It is based on the functionality of the standard Windows tool nbtstat, but it operates on a range of addresses instead of just one. I wrote this tool because the existing tools either didn't do what I wanted or ran only on the Windows platforms: mine runs on just about everything. 
 
 [netcat](http://nc110.sourceforge.net/)
 * Network Swiss army knife. Ncat’s predecessor. Does everything and the kitchen sink.
 
 [Ncat](http://nmap.org/)
-* Ncat is a feature-packed networking utility which reads and writes data across networks from the command line. Ncat was written for the Nmap Project as a much-improved reimplementation of the venerable Netcat. It uses both TCP and UDP for communication and is designed to be a reliable back-end tool to instantly provide network connectivity to other applications and users. Ncat will not only work with IPv4 and IPv6 but provides the user with a virtually limitless number of potential uses. 
+* Ncat is a feature-packed networking utility which reads and writes data across networks from the command line. Ncat was written for the Nmap Project as a much-improved reimplementation of the venerable Netcat. It uses both TCP and UDP for communication and is designed to be a reliable back-end tool to instantly provide network connectivity to other applications and users. Ncat will not only work with IPv4 and IPv6 but provides the user with a virtually limitless number of potential uses.
 
-[DNSEnum](https://github.com/fwaeytens/dnsenum)
-* Multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks.
 
-[Enum4Linux](https://labs.portcullis.co.uk/tools/enum4linux/)
-* Enum4linux is a tool for enumerating information from Windows and Samba systems. It attempts to offer similar functionality to enum.exe formerly available from www.bindview.com. It is written in Perl and is basically a wrapper around the Samba tools smbclient, rpclient, net and nmblookup. The tool usage can be found below followed by examples, previous versions of the tool can be found at the bottom of the page.
+[RANCID - Really Awesome New Cisco confIg Differ](http://www.shrubbery.net/rancid/)
+* RANCID monitors a router's (or more generally a device's) configuration, including software and hardware (cards, serial numbers, etc) and uses CVS (Concurrent Version System) or Subversion to maintain history of changes.
+* RANCID does this by the very simple process summarized as: login to each device in the router table (router.db), run various commands to get the information that will be saved, cook the output; re-format, remove oscillating or incrementing data, email any differences (sample) from the previous collection to a mail list, and finally commit those changes to the revision control system
 
-[TXTDNS](http://www.txdns.net/)
-* TXDNS is a Win32 aggressive multithreaded DNS digger. Capable of placing, on the wire, thousands of DNS queries per minute. TXDNS main goal is to expose a domain namespace trough a number of techniques: Typos: Mised, doouble and transposde keystrokes; TLD/ccSLD rotation; Dictionary attack; Full Brute-force attack using alpha, numeric or alphanumeric charsets; Reverse grinding.
+#### LDAP
 
 [JXplorer](http://jxplorer.org/)
 * JXplorer is a cross platform LDAP browser and editor. It is a standards compliant general purpose LDAP client that can be used to search, read and edit any standard LDAP directory, or any directory service with an LDAP or DSML interface. It is highly flexible and can be extended and customised in a number of ways. JXplorer is written in java, and the source code and Ant build system are available via svn or as a packaged build for users who want to experiment or further develop the program. 	
@@ -183,55 +180,9 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 [LDAPMfINER](http://ldapminer.sourceforge.net/)
 * This is a tool I wrote to collect information from different LDAP Server implementation. This was written in C with the Netscape C 
 
-
-[Firewalk](http://packetfactory.openwall.net/projects/firewalk/)
-* Firewalk is an active reconnaissance network security tool that attempts to determine what layer 4 protocols a  given IP forwarding device will pass. Firewalk  works  by sending out TCP or UDP packets with a TTL one greater than the targeted gateway.  If the gateway allows the traffic, it will forward the packets to the next hop where they will expire and elicit an ICMP_TIME_EXCEEDED  message.  If the gateway hostdoes not allow the traffic, it will likely drop the packets on  the floor and we will see no response. To get  the  correct  IP  TTL that will result in expired packets one beyond the gateway we need  to  ramp  up  hop-counts.   We  do  this  in the same manner that traceroute works.  Once we have the gateway hopcount (at  that point the scan is said to be `bound`) we can begin our scan.
-
 [Softera LDAP Browser](http://www.ldapbrowser.com/info_softerra-ldap-browser.htm)
-* LDAP Browser that supports most LDAP implementations. Non-free software, 30-day free trial 
+* LDAP Browser that supports most LDAP implementations. Non-free software, 30-day free trial
 
-[Tinfoleak](http://vicenteaguileradiaz.com/tools/)
-* tinfoleak is a simple Python script that allow to obtain:
-..* basic information about a Twitter user (name, picture, location, followers, etc.)
-..* devices and operating systems used by the Twitter user
-..* applications and social networks used by the Twitter user
-..* place and geolocation coordinates to generate a tracking map of locations visited
-..* show user tweets in Google Earth!
-..* download all pics from a Twitter user
-..* hashtags used by the Twitter user and when are used (date and time)
-..* user mentions by the the Twitter user and when are occurred (date and time)
-..* topics used by the Twitter user
-
-[net-creds](https://github.com/DanMcInerney/net-creds)
-* Thoroughly sniff passwords and hashes from an interface or pcap file. Concatenates fragmented packets and does not rely on ports for service identification
-* It sniffs: URLs visited; POST loads sent; HTTP form logins/passwords; HTTP basic auth logins/passwords; HTTP searches; FTP logins/passwords; IRC logins/passwords; POP logins/passwords; IMAP logins/passwords; Telnet logins/passwords; SMTP logins/passwords; SNMP community string; NTLMv1/v2 all supported protocols like HTTP, SMB, LDAP, etc; Kerberos.
-
-[RANCID - Really Awesome New Cisco confIg Differ](http://www.shrubbery.net/rancid/)
-* RANCID monitors a router's (or more generally a device's) configuration, including software and hardware (cards, serial numbers, etc) and uses CVS (Concurrent Version System) or Subversion to maintain history of changes.
-* RANCID does this by the very simple process summarized as: login to each device in the router table (router.db), run various commands to get the information that will be saved, cook the output; re-format, remove oscillating or incrementing data, email any differences (sample) from the previous collection to a mail list, and finally commit those changes to the revision control system
-
-[Stenographer](https://github.com/google/stenographer/blob/master/README.md)
-* Stenographer is a full-packet-capture utility for buffering packets to disk for intrusion detection and incident response purposes. It provides a high-performance implementation of NIC-to-disk packet writing, handles deleting those files as disk fills up, and provides methods for reading back specific sets of packets quickly and easily.
-
-[Netview](https://github.com/mubix/netview)
-* Netview is a enumeration tool. It uses (with the -d) the current domain or a specified domain (with the -d domain) to enumerate hosts
-
-[DNS Recon](https://github.com/darkoperator/dnsrecon)
-
-[DNS Dumpster](DNSdumpster.com is a free domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process.)
-
-[OnionScan](https://github.com/s-rah/onionscan)
-* [What OnionScan Scans for](https://github.com/s-rah/onionscan/blob/master/doc/what-is-scanned-for.md)
-
-[scanless](https://github.com/vesche/scanless)
-* Command-line utility for using websites that can perform port scans on your behalf. Useful for early stages of a penetration test or if you'd like to run a port scan on a host and have it not come from your IP address.
-
-[dvcs-ripper](https://github.com/kost/dvcs-ripper)
-* Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, ... It can rip repositories even 
-when directory browsing is turned off.
-
-[sshuttle](https://github.com/apenwarr/sshuttle)
-* Transparent proxy server that works as a poor man's VPN. Forwards over ssh. Doesn't require admin. Works with Linux and MacOS. Supports DNS tunneling.
 
 
 
@@ -255,7 +206,9 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [WSUXploit](https://github.com/pimps/wsuxploit)
 * This is a MiTM weaponized exploit script to inject 'fake' updates into non-SSL WSUS traffic. It is based on the WSUSpect Proxy application that was introduced to public on the Black Hat USA 2015 presentation, 'WSUSpect – Compromising the Windows Enterprise via Windows Update'
 
-
+[net-creds](https://github.com/DanMcInerney/net-creds)
+* Thoroughly sniff passwords and hashes from an interface or pcap file. Concatenates fragmented packets and does not rely on ports for service identification
+* It sniffs: URLs visited; POST loads sent; HTTP form logins/passwords; HTTP basic auth logins/passwords; HTTP searches; FTP logins/passwords; IRC logins/passwords; POP logins/passwords; IMAP logins/passwords; Telnet logins/passwords; SMTP logins/passwords; SNMP community string; NTLMv1/v2 all supported protocols like HTTP, SMB, LDAP, etc; Kerberos.
 
 
 
@@ -264,31 +217,69 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 ### Scanners
 
-[SQLMap](https://github.com/sqlmapproject/sqlmap)
-* sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester and a broad range of switches lasting from database fingerprinting, over data fetching from the database, to accessing the underlying file system and executing commands on the operating system via out-of-band connections.
+[scanless](https://github.com/vesche/scanless)
+* Command-line utility for using websites that can perform port scans on your behalf. Useful for early stages of a penetration test or if you'd like to run a port scan on a host and have it not come from your IP address.
+
+[ms15-034.nse Script](https://github.com/pr4jwal/quick-scripts/blob/master/ms15-034.nse)
+
+#### DNS:
 
 [DNSRecon](https://github.com/darkoperator/dnsrecon)
 * [Quick Reference Guide](http://pentestlab.wordpress.com/2012/11/13/dns-reconnaissance-dnsrecon/)
 
-[WPScan](https://github.com/wpscanteam/wpscan)
-* WPScan is a black box WordPress vulnerability scanner.
-
 [dns-discovery](https://github.com/mafintosh/dns-discovery)
 * Discovery peers in a distributed system using regular dns and multicast dns.
 
-[Enumerator](https://pypi.python.org/pypi/enumerator/0.1.4)
-* enumerator is a tool built to assist in automating the often tedious task of enumerating a target or list of targets during a penetration test.
+[Knockpy](https://github.com/guelfoweb/knock)
+* Knockpy is a python tool designed to enumerate subdomains on a target domain through a wordlist. It is designed to scan for DNS zone transfer and to try to bypass the wildcard DNS record automatically if it is enabled.
 
-[Unicornscan](http://www.unicornscan.org/)
-* Unicornscan is a new information gathering and correlation engine built for and by members of the security research and testing communities. It was designed to provide an engine that is Scalable, Accurate, Flexible, and Efficient. It is released for the community to use under the terms of the GPL license. 
+[sub6](https://github.com/YasserGersy/sub6)
+* subdomain take over detector and crawler
 
-[hostmap](https://github.com/jekil/hostmap)
-* hostmap is a free, automatic, hostnames and virtual hosts discovery tool written in Ruby by Alessandro Tanasi
+[enumall](https://github.com/Dhayalan96/enumall)
+* Script to enumerate subdomains, leveraging recon-ng. Uses google scraping, bing scraping, baidu scraping, yahoo scarping, netcraft, and bruteforces to find subdomains. Plus resolves to IP.
+
+[dns-parallel-prober](https://github.com/lorenzog/dns-parallel-prober)
+* This script is a proof of concept for a parallelised domain name prober. It creates a queue of threads and tasks each one to probe a sub-domain of the given root domain. At every iteration step each dead thread is removed and the queue is replenished as necessary.
+
+[Altdns](https://github.com/infosec-au/altdns)
+* Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging) as well as takes in a list of subdomains that you know of.
+
+[AQUATONE](https://github.com/michenriksen/aquatone)
+* AQUATONE is a set of tools for performing reconnaissance on domain names. It can discover subdomains on a given domain by using open sources as well as the more common subdomain dictionary brute force approach. After subdomain discovery, AQUATONE can then scan the hosts for common web ports and HTTP headers, HTML bodies and screenshots can be gathered and consolidated into a report for easy analysis of the attack surface.
+
+[Sublist3r](https://github.com/aboul3la/Sublist3r)
+* Fast subdomains enumeration tool for penetration testers
+
+[DNS Recon](https://github.com/darkoperator/dnsrecon)
+
+[DNS Dumpster](DNSdumpster.com is a free domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process.)
+
+[TXTDNS](http://www.txdns.net/)
+* TXDNS is a Win32 aggressive multithreaded DNS digger. Capable of placing, on the wire, thousands of DNS queries per minute. TXDNS main goal is to expose a domain namespace trough a number of techniques: Typos: Mised, doouble and transposde keystrokes; TLD/ccSLD rotation; Dictionary attack; Full Brute-force attack using alpha, numeric or alphanumeric charsets; Reverse grinding.
+
+[DNSEnum](https://github.com/fwaeytens/dnsenum)
+* Multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks.
+
+
+#### Email
+
+[SIMPLYEMAIL](https://github.com/killswitch-GUI/SimplyEmail)
+* What is the simple email recon tool? This tool was based off the work of theHarvester and kind of a port of the functionality. This was just an expansion of what was used to build theHarvester and will incorporate his work but allow users to easily build Modules for the Framework. Which I felt was desperately needed after building my first module for theHarvester.
+
+
+#### Network Host/Service:
 
 [Nmap](http://nmap.org/)
 * Nmap ("Network Mapper") is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics. It was designed to rapidly scan large networks, but works fine against single hosts. Nmap runs on all major computer operating systems, and official binary packages are available for Linux, Windows, and Mac OS X. In addition to the classic command-line Nmap executable, the Nmap suite includes an advanced GUI and results viewer (Zenmap), a flexible data transfer, redirection, and debugging tool (Ncat), a utility for comparing scan results (Ndiff), and a packet generation and response analysis tool (Nping). 
 
-[Angry IP Scanner](http://angryip.org/
+[Enumerator](https://pypi.python.org/pypi/enumerator/0.1.4)
+* enumerator is a tool built to assist in automating the often tedious task of enumerating a target or list of targets during a penetration test.
+
+[hostmap](https://github.com/jekil/hostmap)
+* hostmap is a free, automatic, hostnames and virtual hosts discovery tool written in Ruby by Alessandro Tanasi
+
+[Angry IP Scanner](http://angryip.org/)
 * Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner designed to be fast and simple to use. It scans IP addresses and ports as well as has many other features. 
 
 [UnicornScan](http://www.unicornscan.org/)
@@ -298,51 +289,78 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [hping](http://www.hping.org/)
 * hping is a command-line oriented TCP/IP packet assembler/analyzer. The interface is inspired to the ping(8) unix command, but hping isn't only able to send ICMP echo requests. It supports TCP, UDP, ICMP and RAW-IP protocols, has a traceroute mode, the ability to send files between a covered channel, and many other features. 
 
-[Onesixtyone](http://www.phreedom.org/software/onesixtyone/)
-* onesixtyone is an SNMP scanner which utilizes a sweep technique to achieve very high performance. It can scan an entire class B network in under 13 minutes. It can be used to discover devices responding to well-known community names or to mount a dictionary attack against one or more SNMP devices.
-
-[WhatWeb](https://github.com/urbanadventurer/WhatWeb)
-* WhatWeb identifies websites. Its goal is to answer the question, "What is that Website?". WhatWeb recognises web technologies including content management systems (CMS), blogging platforms, statistic/analytics packages, JavaScript libraries, web servers, and embedded devices. WhatWeb has over 1500 plugins, each to recognise something different. WhatWeb also identifies version numbers, email addresses, account IDs, web framework modules, SQL errors, and more.
+[Unicornscan](http://www.unicornscan.org/)
+* Unicornscan is a new information gathering and correlation engine built for and by members of the security research and testing communities. It was designed to provide an engine that is Scalable, Accurate, Flexible, and Efficient. It is released for the community to use under the terms of the GPL license. 
 
 [Consul](https://github.com/hashicorp/consul)
 * Consul is a tool for service discovery and configuration. Consul is distributed, highly available, and extremely scalable.
 
-[SNMPWALK](http://net-snmp.sourceforge.net/docs/man/snmpwalk.html)
-*  snmpwalk - retrieve a subtree of management values using SNMP GETNEXT requests
+[CloudFail](https://github.com/m0rtem/CloudFail)
+* CloudFail is a tactical reconnaissance tool which aims to gather enough information about a target protected by CloudFlare in the hopes of discovering the location of the server.
 
-[webDisco](https://github.com/joeybelans/webDisco)
-* Web discovery tool to capture screenshots from a list of hosts & vhosts.  Requests are made via IP address and vhosts to determine differences. Additionallty checks for common administrative interfaces and web server  misconfigurations. 
+[discover - Kali Scripts](https://github.com/leebaird/discover)
+* For use with Kali Linux - custom bash scripts used to automate various portions of a pentest.
+
+[Firewalk](http://packetfactory.openwall.net/projects/firewalk/)
+* Firewalk is an active reconnaissance network security tool that attempts to determine what layer 4 protocols a  given IP forwarding device will pass. Firewalk  works  by sending out TCP or UDP packets with a TTL one greater than the targeted gateway.  If the gateway allows the traffic, it will forward the packets to the next hop where they will expire and elicit an ICMP_TIME_EXCEEDED  message.  If the gateway hostdoes not allow the traffic, it will likely drop the packets on  the floor and we will see no response. To get  the  correct  IP  TTL that will result in expired packets one beyond the gateway we need  to  ramp  up  hop-counts.   We  do  this  in the same manner that traceroute works.  Once we have the gateway hopcount (at  that point the scan is said to be `bound`) we can begin our scan.
+
+[CiscoRouter - tool](https://github.com/ajohnston9/ciscorouter)
+* CiscoRouter is a tool for scanning Cisco-based routers over SSH. Rules can be created using accompanying CiscoRule application (see this repo) and stored in the "rules" directory.
+
+
+
+#### SSH: 
 
 [ssh-audit](https://github.com/arthepsy/ssh-audit)
 * SSH server auditing (banner, key exchange, encryption, mac, compression, compatibility, security, etc)
 
-[Knockpy](https://github.com/guelfoweb/knock)
-* Knockpy is a python tool designed to enumerate subdomains on a target domain through a wordlist. It is designed to scan for DNS zone transfer and to try to bypass the wildcard DNS record automatically if it is enabled.
 
-[sub6](https://github.com/YasserGersy/sub6)
-* subdomain take over detector and crawler
 
-[CloudFail](https://github.com/m0rtem/CloudFail)
-* CloudFail is a tactical reconnaissance tool which aims to gather enough information about a target protected by CloudFlare in the hopes of discovering the location of the server. 
 
-[AQUATONE](https://github.com/michenriksen/aquatone)
-* AQUATONE is a set of tools for performing reconnaissance on domain names. It can discover subdomains on a given domain by using open sources as well as the more common subdomain dictionary brute force approach. After subdomain discovery, AQUATONE can then scan the hosts for common web ports and HTTP headers, HTML bodies and screenshots can be gathered and consolidated into a report for easy analysis of the attack surface.
+#### SQL:
 
-[Sublist3r](https://github.com/aboul3la/Sublist3r)
-* Fast subdomains enumeration tool for penetration testers
-
-[Altdns](https://github.com/infosec-au/altdns)
-* Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging) as well as takes in a list of subdomains that you know of.
+[SQLMap](https://github.com/sqlmapproject/sqlmap)
+* sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester and a broad range of switches lasting from database fingerprinting, over data fetching from the database, to accessing the underlying file system and executing commands on the operating system via out-of-band connections.
 
 [PowerUpSQL: A PowerShell Toolkit for Attacking SQL Server](https://github.com/NetSPI/PowerUpSQL)
 * The PowerUpSQL module includes functions that support SQL Server discovery, auditing for common weak configurations, and privilege escalation on scale. It is intended to be used during internal penetration tests and red team engagements. However, PowerUpSQL also includes many functions that could be used by administrators to quickly inventory the SQL Servers in their ADS domain.
 * [Documentation](https TLS/SSL Vulnerabilities ://github.com/NetSPI/PowerUpSQL/wiki)
 * [Overview of PowerUpSQL](https://github.com/NetSPI/PowerUpSQL/wiki/Overview-of-PowerUpSQL)
 
+
+
+
+
+
+
+#### Netbios
+
+[NbtScan](http://www.unixwiz.net/tools/nbtscan.html)
+* This is a command-line tool that scans for open NETBIOS nameservers on a local or remote TCP/IP network, and this is a first step in finding of open shares. It is based on the functionality of the standard Windows tool nbtstat, but it operates on a range of addresses instead of just one. I wrote this tool because the existing tools either didn't do what I wanted or ran only on the Windows platforms: mine runs on just about everything.
+
+
+
+#### SMTP:
+
+
+#### SNMP:
+
+[Onesixtyone](http://www.phreedom.org/software/onesixtyone/)
+* onesixtyone is an SNMP scanner which utilizes a sweep technique to achieve very high performance. It can scan an entire class B network in under 13 minutes. It can be used to discover devices responding to well-known community names or to mount a dictionary attack against one or more SNMP devices.
+
+[SNMPWALK](http://net-snmp.sourceforge.net/docs/man/snmpwalk.html)
+*  snmpwalk - retrieve a subtree of management values using SNMP GETNEXT requests
+
+
+
+#### SIP:
+
 [sipvicious](https://github.com/EnableSecurity/sipvicious)
 
 
 
+
+#### MISC:
 [t50 - the fastest packet injector.](https://github.com/fredericopissarra/t50)
 * T50 was designed to perform “Stress Testing”  on a variety of infra-structure
 network devices (Version 2.45), using widely implemented protocols, and after
@@ -351,19 +369,33 @@ covering some regular protocols (ICMP,  TCP  and  UDP),  some infra-structure
 specific protocols (GRE,  IPSec  and  RSVP), and some routing protocols (RIP,
 EIGRP and OSPF).
 
-[a](https://github.com/fmtn/a)
-* ActiveMQ CLI testing and message management
-
-[dns-parallel-prober](https://github.com/lorenzog/dns-parallel-prober)
-* This script is a proof of concept for a parallelised domain name prober. It creates a queue of threads and tasks each one to probe a sub-domain of the given root domain. At every iteration step each dead thread is removed and the queue is replenished as necessary.
-
 [gateway-finder](https://github.com/pentestmonkey/gateway-finder)
 * Gateway-finder is a scapy script that will help you determine which of the systems on the local LAN has IP forwarding enabled and which can reach the Internet.
 
-[enumall](https://github.com/Dhayalan96/enumall)
-* Script to enumerate subdomains, leveraging recon-ng. Uses google scraping, bing scraping, baidu scraping, yahoo scarping, netcraft, and bruteforces to find subdomains. Plus resolves to IP.
+[a](https://github.com/fmtn/a)
+* ActiveMQ CLI testing and message management
+
+[OnionScan](https://github.com/s-rah/onionscan)
+* [What OnionScan Scans for](https://github.com/s-rah/onionscan/blob/master/doc/what-is-scanned-for.md)
 
 
+
+
+
+
+#### Web:
+
+[WPScan](https://github.com/wpscanteam/wpscan)
+* WPScan is a black box WordPress vulnerability scanner.
+
+[WhatWeb](https://github.com/urbanadventurer/WhatWeb)
+* WhatWeb identifies websites. Its goal is to answer the question, "What is that Website?". WhatWeb recognises web technologies including content management systems (CMS), blogging platforms, statistic/analytics packages, JavaScript libraries, web servers, and embedded devices. WhatWeb has over 1500 plugins, each to recognise something different. WhatWeb also identifies version numbers, email addresses, account IDs, web framework modules, SQL errors, and more.
+
+[webDisco](https://github.com/joeybelans/webDisco)
+* Web discovery tool to capture screenshots from a list of hosts & vhosts.  Requests are made via IP address and vhosts to determine differences. Additionallty checks for common administrative interfaces and web server  misconfigurations.
+
+[w3af](https://github.com/andresriancho/w3af)
+* w3af: web application attack and audit framework, the open source web vulnerability scanner.
 
 
 
@@ -422,7 +454,8 @@ EIGRP and OSPF).
 
 [DNS hijacking using cloud providers - Frans Rosén](https://www.youtube.com/watch?v=HhJv8CU-RIk)
 
-
+[VLAN hopping, ARP Poisoning and Man-In-The-Middle Attacks in Virtualized Environments - Ronny L. Bull - ANYCON 2017](http://www.irongeek.com/i.php?page=videos/anycon2017/110-vlan-hopping-arp-poisoning-and-man-in-the-middle-attacks-in-virtualized-environments-dr-ronny-l-bull)
+* Cloud service providers and data centers offer their customers the ability to deploy virtual machines within multi-tenant environments. These virtual machines are typically connected to the physical network via a virtualized network configuration. This could be as simple as a bridged interface to each virtual machine or as complicated as a virtual switch providing more robust networking features such as VLANs, QoS, and monitoring. In this talk I will demonstrate the effects of VLAN hopping, ARP poisoning and Man-in-the-Middle attacks across every major hypervisor platform, including results of attacks originating from the physically connected network as well as within the virtual networks themselves. Each attack category that is discussed will be accompanied by a detailed proof of concept demonstration of the attack.
 
 
 

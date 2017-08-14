@@ -33,24 +33,19 @@ Aircrack https://www.aircrack-ng.org/doku.php?id=links
 Ubertooth
 Scapy
 
-[gr-lora](https://github.com/BastilleResearch/gr-lora)
-* This is an open-source implementation of the LoRa CSS PHY, based on the blind signal analysis conducted by @matt-knight. The original research that guided this implementation may be found at https://github.com/matt-knight/research
 
-[UAV Transponders & Tracker Kits - UST](http://www.unmannedsystemstechnology.com/company/sagetech-corporation/)
 
-[Fluxion](https://github.com/wi-fi-analyzer/fluxion)
-* Fluxion is a remake of linset by vk496 with (hopefully) less bugs and more functionality. It's compatible with the latest release of Kali (rolling). The attack is mostly manual, but experimental versions will automatically handle most functionality from the stable releases.
+[Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
 ##### End Cull
+
 
 
 ### <a name="general">General</a>
 
 [Guide to Basics of Wireless Networking](http://documentation.netgear.com/reference/fra/wireless/TOC.html)
 
-
 [IEEE 802.11 Tutorial](http://wow.eecs.berkeley.edu/ergen/docs/ieee.pdf)
 This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard. It describes IEEE 802.11 MAC Layer in detail and it briefly mentions IEEE 802.11a, IEEE 802.11b physical layer standard and IEEE 802.11e MAC layer standard
-
 
 [RF Testing Methodology - NCCGroup](https://nccgroup.github.io/RFTM/)
 * The RFTM is an Open Source, collaborative testing methodology. It is specifically written in a straightforward way, avoiding mathematics where possible and focussed on providing the information that security researchers and consultants need to know in order to effectively test systems that employ RF technologies.
@@ -62,7 +57,6 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 * [ Developing an FSK transmitter step-by-step](https://nccgroup.github.io/RFTM/fsk_transmitter.html)
 * [Signals Identification](https://nccgroup.github.io/RFTM/signals_identification.html)
 
-
 [sysmocom publicly releases Osmocom user manuals](https://www.sysmocom.de/news/sysmocom-publicly-releases-osmocom-user-manuals/)
 
 [ PHYs, MACs, and SDRs - Robert Ghilduta ](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-macs-and-sdrs-robert-ghilduta)
@@ -70,6 +64,7 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 [Using Software Defined radio to attack Smart home systems](https://www.sans.org/reading-room/whitepapers/threats/software-defined-radio-attack-smart-home-systems-35922)
 
+[SO YOU WANT TO HACK RADIOS - A PRIMER ON WIRELESS REVERSE ENGINEERING](http://conference.hitb.org/hitbsecconf2017ams/materials/D1T4%20-%20Marc%20Newlin%20and%20Matt%20Knight%20-%20So%20You%20Want%20to%20Hack%20Radios.pdf)
 
 
 
@@ -233,9 +228,11 @@ GNU Radio blocks we have written to handle several protocols
 [Uni-SDR Link](https://github.com/ms-dev-1/uni-sdr-link/releases)
 * The initial release of Uni-SDR Link. This applications sole purpose is to allow Universal Trunker (aka Unitrunker) to control the tuning frequency of individual VFO's in SDR Console v2. This is achieved by translating Unitrunker Receiver Control commands into a format accepted by SDR Console. Communication occurs over virtual com / serial ports.
 
+[Fluxion](https://github.com/wi-fi-analyzer/fluxion)
+* Fluxion is a remake of linset by vk496 with (hopefully) less bugs and more functionality. It's compatible with the latest release of Kali (rolling). The attack is mostly manual, but experimental versions will automatically handle most functionality from the stable releases.
 
-
-
+[gr-lora](https://github.com/BastilleResearch/gr-lora)
+* This is an open-source implementation of the LoRa CSS PHY, based on the blind signal analysis conducted by @matt-knight. The original research that guided this implementation may be found at https://github.com/matt-knight/research
 
 
 
@@ -317,6 +314,12 @@ In this article, we proved the capabilities of an inexpensive wireless adapter a
 * Deauthentication attack and other exploits using an ESP8266!
 
 [Emulation and Exploration of BCM WiFi Frame Parsing using LuaQEMU](https://comsecuris.com/blog/posts/luaqemu_bcm_wifi/)
+
+[Predicting, Decrypting, and Abusing WPA2/802.11 Group Keys Mathy Vanhoef and Frank Piessens,  Katholieke Universiteit Leuven](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_vanhoef.pdf)
+
+
+
+
 
 
 
@@ -433,11 +436,11 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 [Wireless Leakage - Robin Wood](https://digi.ninja/files/Tech_for_Troops-Wi-Fi_Leakage.pdf)
 
+[The Wireless World of the Internet of Things -  JP Dunning ".ronin"](http://www.irongeek.com/i.php?page=videos/derbycon4/t214-the-wireless-world-of-the-internet-of-things-jp-dunning-ronin)
+* The Internet of Things brings all the hardware are home together. Most of these devices are controlled through wireless command and control network. But what kind of wireless? And what are the security is in place? This talk with cover the wireless tech used by the Internet of Things and some of the risks to your home or corporate security.
 
-
-
-
-
+[If it fits - it sniffs: Adventures in WarShipping - Larry Pesce](http://www.irongeek.com/i.php?page=videos/derbycon4/t104-if-it-fits-it-sniffs-adventures-in-warshipping-larry-pesce)
+*  There are plenty of ways to leverage known wireless attacks against our chosen victims. We've discovered a new WiFi discovery methodology that can give us insight into attack paths, internal distribution methods, internal policies and procedures as well as an opportunity to launch wireless attacks deep inside a facility without even stepping inside; no physical penetration test needed. How do we make that happen? Box it, tape it and slap an address on it: WARSHIPPING. Thanks FedEx, UPS and USPS for doing the heavy lifting for us. We've even got a new tool to do some of the heavy lifting for location lookups too!
 
 
 
@@ -464,6 +467,7 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 [US Marine Antenna Handbook](http://www.zerobeat.net/r3403c.pdf?1)
 
+[UAV Transponders & Tracker Kits - UST](http://www.unmannedsystemstechnology.com/company/sagetech-corporation/)
 
 [Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
 

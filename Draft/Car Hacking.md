@@ -55,9 +55,9 @@ Seriously check this first ---> [Awesome Vehicle Security List(github awesome li
 [Adventures in Automotive Networks and Control Units](https://www.youtube.com/watch?v=MEYCU62yeYk&app=desktop)
 * Charlie Miller & Chris Valasek
 
+[Broadcasting your attack: Security testing DAB radio in cars - Andy Davis](http://2015.ruxcon.org.au/assets/2015/slides/Broadcasting-your-attack-Security-testing-DAB-radio-in-cars.pdf)
 
-
-
+[A Survey of Remote Automotive Attack Surfaces  - Black Hat USA 2014](https://www.youtube.com/watch?v=mNhFGJVq2HE)
 
 
 

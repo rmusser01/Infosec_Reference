@@ -221,7 +221,7 @@ As seen on: https://www.owasp.org/index.php/Category:Attack
 
 [Server Side Template Injection](http://blog.portswigger.net/2015/08/server-side-template-injection.html)
 
-
+[Server-Side Template Injection: RCE for the modern webapp](https://portswigger.net/knowledgebase/papers/ServerSideTemplateInjection.pdf)
 
 
 

@@ -20,7 +20,7 @@ Cull
 * [Ruby](#ruby)
 * [Papers](#papers)
 
-###Cull
+### Cull
 http://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul
 http://en.cppreference.com/w/c	
 
@@ -38,7 +38,7 @@ http://en.cppreference.com/w/c
 
 
 
-###<a name="general">General</a>
+### <a name="general">General</a>
 
 [Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
 
@@ -292,7 +292,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 [Python For Beginners]()
 * Welcome! Are you completely new to programming? If not then we presume you will be looking for information about why and how to get started with Python. Fortunately an experienced programmer in any programming language (whatever it may be) can pick up Python very quickly. It's also easy for beginners to use and learn, so jump in!
 
-####Reference
+#### Reference
 
 
 
@@ -328,7 +328,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 
 
-###Useful Libraries/programs
+### Useful Libraries/programs
 
 [Shellpaste](https://github.com/andrew-morris/shellpaste)
 * Tiny snippet of code that pulls ASCII shellcode from pastebin and executes it. The purpose of this is to have a minimal amount of benign code so AV doesn't freak out, then it pulls down the evil stuff. People have been doing this kind of stuff for years so I take no credit for the concept. That being said, this code (or similar code) works surprisingly often during pentests when conventional malware fails. 
@@ -342,7 +342,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 
 
-###<a name="papers">Papers</a>
+### <a name="papers">Papers</a>
 
 [Mov is turing complete](http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)
 

@@ -1,8 +1,7 @@
-##Cheat Sheets & Reference Pages
+## Cheat Sheets & Reference Pages
 
 
-TOC
-* Cull
+#### TOC
 * [General](#General)
 * [ASM(x86/64/ARM)](#ASM)
 * [Android](#Android)
@@ -23,38 +22,24 @@ TOC
 
 
 
-CULL
-[Penetration Testing Tools Cheat Sheet](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
-
-| **tmux Cheat Sheet** | http://tmuxcheatsheet.com/
-
-[IdaRef](https://github.com/nologic/idaref)
-* IDA Pro Full Instruction Reference Plugin - It's like auto-comments but useful.
-
-
-
-[Assembler Language Instructions](http://www.laynetworks.com/assembly%20tutorials3.htm)
-
-
-[SSRF Bible Cheatsheet](https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit)
-
-
-[Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
-
-[Radare2 Cheat sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
-
-[How to Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)
-
-[Windows Privilege Escalation Cheat Sheet/Tricks](http://it-ovid.blogspot.fr/2012/02/windows-privilege-escalation.html)
-
+#### CULL
 [SiLK Toolsuite Quick Reference Guide](https://tools.netsa.cert.org/silk/silk-quickref.pdf)
 
 http://www.amanhardikar.com/mindmaps.html
 http://www.amanhardikar.com/mindmaps/Practice.html
+#### end cull
 
 
 
-###<a name="General">General Cheat Sheets</a>
+
+## General
+[How to Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)
+
+
+
+
+
+### <a name="General">General Cheat Sheets</a>
 
 [Tips for Troubleshooting Human Communications](https://zeltser.com/human-communications-cheat-sheet/)
 
@@ -64,10 +49,15 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 [General Tricks](http://averagesecurityguy.info/cheat-sheet/)
 
+[Penetration Testing Tools Cheat Sheet](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
+
+[tmux Cheat Sheet](http://tmuxcheatsheet.com/)
 
 
 
-###<a name="ASM">x86/64/ARM</a>
+
+
+### <a name="ASM">x86/64/ARM</a>
 
 [x86 opcode structure and instruction overview](http://pnx.tf/files/x86_opcode_structure_and_instruction_overview.pdf)
 
@@ -75,23 +65,23 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 [Reading ASM](http://cseweb.ucsd.edu/classes/sp11/cse141/pdf/02/S01_x86_64.key.pdf)
 
+[Assembler Language Instructions](http://www.laynetworks.com/assembly%20tutorials3.htm)
 
 
 
-
-###<a name="Android">Android Cheat Sheets</a>
+### <a name="Android">Android Cheat Sheets</a>
 [Android ADB cheat sheet](https://github.com/maldroid/adb_cheatsheet/blob/master/cheatsheet.pdf?raw=true)
 
 
 
 
 
-###<a name="ios">iOS Cheat Sheets</a>
+### <a name="ios">iOS Cheat Sheets</a>
 
 
 
 
-###<a name="Linux">Linux Cheat Sheets</a>
+### <a name="Linux">Linux Cheat Sheets</a>
 [Linux Syscall Table](http://www.informatik.htw-dresden.de/~beck/ASM/syscall_list.html)
 * Complete listing of all Linux Syscalls
 
@@ -99,13 +89,13 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 
-###<a name="Windows">Windows Cheat Sheets</a>
+### <a name="Windows">Windows Cheat Sheets</a>
 [Windows Startup Application Database](http://www.pacs-portal.co.uk/startup_content.php)
 
 
 
 
-###<a name="Exploitation">Exploitation Cheat Sheets</a>
+### <a name="Exploitation">Exploitation Cheat Sheets</a>
 
 [Linux - Breaking out of shells](https://highon.coffee/docs/linux-commands/#breaking-out-of-limited-shells)
 
@@ -114,14 +104,19 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 [RootVG - Website Dedicated to AIX](http://www.rootvg.net/content/view/102/98/)
 
+[Windows Privilege Escalation Cheat Sheet/Tricks](http://it-ovid.blogspot.fr/2012/02/windows-privilege-escalation.html)
 
 
 
-###<a name="Exploitation">Exploit Dev Cheat Sheets</a>
+
+
+### <a name="Exploitation">Exploit Dev Cheat Sheets</a>
 
 [x86 opcode structure and instruction overview](http://pnx.tf/files/x86_opcode_structure_and_instruction_overview.pdf)
 
 [Nasm x86 reference](https://www.cs.uaf.edu/2006/fall/cs301/support/x86/)
+
+
 
 
 ### <a name="Metasploit">Metasploit Cheat Sheets</a>
@@ -134,7 +129,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 [Tips & Tricks](https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks)
 
 
-###<a name="For">Forensics/IR Cheat Sheets</a>
+### <a name="For">Forensics/IR Cheat Sheets</a>
 
 [File Signature Table](http://www.garykessler.net/library/file_sigs.html)
 
@@ -150,16 +145,16 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 
 
-###<a name="Malware">Malware Cheat Sheet</a>
+### <a name="Malware">Malware Cheat Sheet</a>
 
 [Reverse Engineering Malware Cheat Sheet](https://zeltser.com/reverse-malware-cheat-sheet/)
 
 [Analyzing Malicious Documents Cheat Sheet](https://zeltser.com/analyzing-malicious-documents/)
 
 
-###<a name="RE">Reverse Engineering Cheat Sheets</a>
+### <a name="RE">Reverse Engineering Cheat Sheets</a>
 
-[Radare2 Cheat-Sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md
+[Radare2 Cheat-Sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
 
 [WinDbg Cheat Sheet/mindmap](http://tylerhalfpop.com/2014/08/16/windbg-cheatsheet/)
 
@@ -167,12 +162,12 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 [Arm instruction set](http://simplemachines.it/doc/arm_inst.pdf)
 
+[IdaRef](https://github.com/nologic/idaref)
+* IDA Pro Full Instruction Reference Plugin - It's like auto-comments but useful.
 
 
 
-
-
-###<a name="Web">Web Cheat Sheets</a>
+### <a name="Web">Web Cheat Sheets</a>
 
 [WebAppSec Testing Checklist](http://tuppad.com/blog/wp-content/uploads/2012/03/WebApp_Sec_Testing_Checklist.pdf)
 
@@ -184,15 +179,16 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 [Securing Web Application Technologies Checklist](http://www.securingthehuman.org/developer/swat)
 
+[SSRF Bible Cheatsheet](https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit)
 
 
 
+### Wireless Cheat Sheet
+
+[Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
 
 
 
+### <a name="DB">Database Cheat Sheets</a>
 
-
-###<a name="DB">Database Cheat Sheets</a>
-
-[Checklist for mongodb](http://blog.mongodirector.com/10-tips-to-improve-your-mongodb-security/
-)
+[Checklist for mongodb](http://blog.mongodirector.com/10-tips-to-improve-your-mongodb-security/)

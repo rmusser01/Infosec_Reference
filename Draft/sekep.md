@@ -80,24 +80,24 @@ If I were a malicious *INSERT HERE* user
 
 Drones:
 	
-Mount a rasppi running kali linux with automated wifi attacks on a medium-duty drone. Fly it to the 40th floor of your favorite bank's hq. Hover for 3-5 minutes while the automated attack does its thing. Depart & hide.
-Conduct a drone "suicide mission" by mounting an EMP device as the payload. Land on top of a "mobile command" van and fire away. Pulse should destroy the drone's electronics, along with anything in the van, thus blinding C&C.
-Conduct another suicide mission by flying a payload into a cell tower. Fuck it.., fly a heavy-duty payload with a rasppi, hackrf, and some solid coding, and plant it in front of a cell tower. Commence radio hijinks.
-Use smaller drones with red/green construction paper mounted on toothpicks. Fly & hover in front of stoplights to confuse traffic.
-Fly lighted minidrones over traffic at night. Hubsan X4 over a freeway anyone?
-Use a drone as a distraction. Fly it over a prison while the real action happens under the south wall.
-If not a distraction, then as a probe. Send a sacrifice from afar into a secure perimeter to observe the reaction.
-Create electrical shorts by flying with an attached wire hangar (or other light metal thread) into power lines.
-Use a sunroof-deployed minidrone to follow someone in traffic from 2-3 blocks back.
-Harass Diane Fenstein.
-Use a heavy-duty, autonomous drone to deposit small amounts of radioactive material on rooftops of tall buildings in a major city.
-Fly it slowly just above your head while walking down a busy city street. Staring up at a device will be unusual and awkward. Or maybe you get laid,
-Attach a fucking handgun and perform remote strong-arm robberies
+* Mount a rasppi running kali linux with automated wifi attacks on a medium-duty drone. Fly it to the 40th floor of your favorite bank's hq. Hover for 3-5 minutes while the automated attack does its thing. Depart & hide.
+* Conduct a drone "suicide mission" by mounting an EMP device as the payload. Land on top of a "mobile command" van and fire away. Pulse should destroy the drone's electronics, along with anything in the van, thus blinding C&C.
+* Conduct another suicide mission by flying a payload into a cell tower. Fuck it.., fly a heavy-duty payload with a rasppi, hackrf, and some solid coding, and plant it in front of a cell tower. Commence radio hijinks.
+* Use smaller drones with red/green construction paper mounted on toothpicks. Fly & hover in front of stoplights to confuse traffic.
+* Fly lighted minidrones over traffic at night. Hubsan X4 over a freeway anyone?
+* Use a drone as a distraction. Fly it over a prison while the real action happens under the south wall.
+* If not a distraction, then as a probe. Send a sacrifice from afar into a secure perimeter to observe the reaction.
+* Create electrical shorts by flying with an attached wire hangar (or other light metal thread) into power lines.
+* Use a sunroof-deployed minidrone to follow someone in traffic from 2-3 blocks back.
+* Harass Diane Fenstein.
+* Use a heavy-duty, autonomous drone to deposit small amounts of radioactive material on rooftops of tall buildings in a major city.
+* Fly it slowly just above your head while walking down a busy city street. Staring up at a device will be unusual and awkward. Or maybe you get laid,
+* Attach a fucking handgun and perform remote strong-arm robberies
 
-Flying drones over competitors (e.g. Data Centers)
-Flying drones into crowds with grenades, anthrax, etc - no human martyr required
-Flying drones over prisons to drop drugs, shivs, phones and checking guard rotation timings, vehicle placements and info
-Drones used for personal tracking, checking home windows for premptive robberies (see if anyone's on holiday)
-Drones stealing small items (e.g. with claw attached, jewelry)
-Assassinations of course, small guns or needles
-Drones used by media to spy on celebrities in locations the paparazzi cannot get to (beaches, private pools, private parties)
+* Flying drones over competitors (e.g. Data Centers)
+* Flying drones into crowds with grenades, anthrax, etc - no human martyr required
+* Flying drones over prisons to drop drugs, shivs, phones and checking guard rotation timings, vehicle placements and info
+* Drones used for personal tracking, checking home windows for premptive robberies (see if anyone's on holiday)
+* Drones stealing small items (e.g. with claw attached, jewelry)
+* Assassinations of course, small guns or needles
+* Drones used by media to spy on celebrities in locations the paparazzi cannot get to (beaches, private pools, private parties)

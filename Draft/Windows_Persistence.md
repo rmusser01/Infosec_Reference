@@ -160,7 +160,7 @@ Unfilled:
 
 
 
-## modify Existing Service
+## Modify Existing Service
 -------------------------------
 [Modify Existing Service - ATT&CK](https://attack.mitre.org/wiki/Technique/T1031)
 * Windows service configuration information, including the file path to the service's executable, is stored in the Registry. Service configurations can be modified using utilities such as sc.exe and Reg.  Adversaries can modify an existing service to persist malware on a system by using system utilities or by using custom tools to interact with the Windows API. Use of existing services is a type of Masquerading that may make detection analysis more challenging. Modifying existing services may interrupt their functionality or may enable services that are disabled or otherwise not commonly used. 
@@ -336,6 +336,15 @@ Search order hijacking occurs when an adversary abuses the order in which Window
 -------------------------------
 [Web Shell - ATT&CK](https://attack.mitre.org/wiki/Technique/T1100)
 * A Web shell is a Web script that is placed on an openly accessible Web server to allow an adversary to use the Web server as a gateway into a network. A Web shell may provide a set of functions to execute or a command-line interface on the system that hosts the Web server. 
+
+[public-shell](https://github.com/BDLeet/public-shell)
+* Some Public Shell
+
+[php-webshells](https://github.com/JohnTroony/php-webshells)
+* Common php webshells. Do not host the file(s) on your server!
+
+[PHP-Backdoors](https://github.com/bartblaze/PHP-backdoors)
+* A collection of PHP backdoors. For educational or testing purposes only.
 
 
 

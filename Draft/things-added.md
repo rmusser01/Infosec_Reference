@@ -1,3 +1,5 @@
+* Up txt sizes, put -------- under sections?
+
 
 https://github.com/onethawt/reverseengineering-reading-list
 
@@ -17,7 +19,28 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 
 
+[meek](https://github.com/Yawning/meek)
+* meek is a blocking-resistant pluggable transport for Tor. It encodes a data stream as a sequence of HTTPS requests and responses. Requests are reflected through a hard-to-block third-party web server in order to avoid talking directly to a Tor bridge. HTTPS encryption hides fingerprintable byte patterns in Tor traffic.sek
 
+[Introducing G-Scout](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2017/august/introducing-g-scout/)
+* G-Scout is a tool to help assess the security of Google Cloud Platform (GCP) environment configurations. By leveraging the Google Cloud API, G-Scout automatically gathers a variety of configuration data and analyzes this data to determine security risks. It produces HTML output.
+* [Google Cloud Platform Security Tool](https://github.com/nccgroup/G-Scout)
+
+
+[The Neural Basis of Decision-Making During Sensemaking: Implications for Human-System Interaction](https://www.researchgate.net/publication/278679336_The_Neural_Basis_of_Decision-Making_During_Sensemaking_Implications_for_Human-System_Interaction)
+
+
+[NeoPI](https://github.com/Neohapsis/NeoPI)
+* What is NeoPI? NeoPI is a Python script that uses a variety of statistical methods to detect obfuscated and encrypted content within text/script files. The intended purpose of NeoPI is to aid in the detection of hidden web shell code. The development focus of NeoPI was creating a tool that could be used in conjunction with other established detection methods such as Linux Malware Detect or traditional signature/keyword based searches.
+
+[Shell Detector](https://github.com/emposha/Shell-Detector)
+* Shell Detector – is a application that helps you find and identify php/cgi(perl)/asp/aspx shells. Shell Detector has a “web shells” signature database that helps to identify “web shell” up to 99%.
+
+[Loki - Simple IOC Scanner](https://github.com/Neo23x0/Loki)
+* Scanner for Simple Indicators of Compromise
+
+[Case Study: How Backdoors Bypass Security Solutions with Advanced Camouflage Techniques](https://www.incapsula.com/blog/backdoor-malware-analysis-obfuscation-techniques.html)
+* Look at PHP obfuscation methods for webshells
 
 
 [What Happens Next Will Amaze You](http://idlewords.com/talks/what_happens_next_will_amaze_you.htm#six_fixes)
@@ -30,13 +53,26 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 * A report to synthesize findings from the Defcon 25 Voting Machine Hacking Village
 
 
-?## politics
+[LNKUp](https://github.com/Plazmaz/LNKUp)
+* Generates malicious LNK file payloads for data exfiltration
+
+[Research on CMSTP.exe](https://msitpros.com/?p=3960)
+* Methods to bypass UAC and load a DLL over webdav 
+
+
+## politics
 
 [Guccifer 2.0: Game Over - Six Months In](http://g-2.space/sixmonths/)
 
 
 
 [Flipping Bits and Opening Doors: Reverse Engineering the Linear Wireless Security DX Protocol](https://duo.com/blog/flipping-bits-and-opening-doors-reverse-engineering-the-linear-wireless-security-dx-protocol)
+
+
+
+
+
+
 
 
 
@@ -79,6 +115,8 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 ## CTF
 
+[CTF write-ups 2017](https://github.com/ctfs/write-ups-2017)
+
 ## Crypto
 
 
@@ -106,7 +144,10 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 [Introduction to Glitch Attacks](https://wiki.newae.com/Tutorial_A2_Introduction_to_Glitch_Attacks_(including_Glitch_Explorer))
 * This advanced tutorial will demonstrate clock glitch attacks using the ChipWhisperer system. This will introduce you to many required features of the ChipWhisperer system when it comes to glitching. This will be built on in later tutorials to generate voltage glitching attacks, or when you wish to attack other targets. 
 
+[Hacking Voting Machines at DEF CON 25](https://blog.horner.tj/post/hacking-voting-machines-def-con-25)
 
+[dc25-votingvillage-report](https://github.com/josephlhall/dc25-votingvillage-report/blob/master/notes-from-folks-redact.md)
+* 
 
 ## Exploit Dev
 
@@ -122,7 +163,7 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 [Modern Windows Exploit Development](http://expdev-kiuhnm.rhcloud.com/download-the-book/)
 
-
+[radare2 as an alternative to gdb-peda](https://monosource.github.io/2016/10/radare2-peda)
 
 
 
@@ -138,7 +179,7 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 ## Game Hacking
 
-
+[3dbrew](htps://www.3dbrew.org)
 
 
 
@@ -163,6 +204,16 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 [Webrecorder](https://webrecorder.io/)
 * Create high-fidelity, interactive web archives of any web site you browse
 
+[pdf-bot](https://github.com/esbenp/pdf-bot)
+* 🤖 A Node queue API for generating PDFs using headless Chrome. Comes with a CLI, S3 storage and webhooks for notifying subscribers about generated PDFs
+
+[Six Stages of debugging](http://plasmasturm.org/log/6debug/)
+* That can’t happen.
+* That doesn’t happen on my machine.
+* That shouldn’t happen.
+* Why does that happen?
+* Oh, I see.
+* How did that ever work?
 
 
 
@@ -176,6 +227,12 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 [BasicHook](https://github.com/MalwareTech/BasicHook)
 * x86 Inline hooking engine (using trampolines)
+
+[List of autorun keys / malware persistence Windows registry entries](https://www.peerlyst.com/posts/list-of-autorun-keys-malware-persistence-windows-registry-entries-benjamin-infosec)
+
+
+
+
 
 
 ## Mainframes
@@ -202,7 +259,19 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 
 
+
+## Physical Security
+
+[Home Insecurity: No Alarms, False Alarms, and SIGINT](https://media.defcon.org/DEF%20CON%2022/DEF%20CON%2022%20presentations/Logan%20Lamb/DEFCON-22-Logan-Lamb-HOME-INSECURITY-NO-ALARMS-FALSE-ALARMS-AND-SIGINT-WP.pdf)
+
+
+
+
+
 ## Policy
+
+
+
 
 
 
@@ -215,27 +284,67 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 [KeeFarce](https://github.com/denandz/KeeFarce)
 * Extracts passwords from a KeePass 2.x database, directly from memory.
 
+[KeeThief](https://github.com/HarmJ0y/KeeThief)
+* Methods for attacking KeePass 2.X databases, including extracting of encryption key material from memory.
+
+[Getting Started with VBA in Office](https://msdn.microsoft.com/en-us/vba/office-shared-vba/articles/getting-started-with-vba-in-office)
+
+[Hiding Files by Exploiting Spaces in Windows Paths](http://blakhal0.blogspot.com/2012/08/hiding-files-by-exploiting-spaces-in.html)
+
+[Windows Registry Persistence, Part 2: The Run Keys and Search-Order](https://blog.cylance.com/windows-registry-persistence-part-2-the-run-keys-and-search-order)
+
+[Windows Registry Attacks: Knowledge Is the Best Defense](https://www.redcanary.com/blog/windows-registry-attacks-threat-detection/)
+
+[List of autorun keys / malware persistence Windows registry entries](https://www.peerlyst.com/posts/list-of-autorun-keys-malware-persistence-windows-registry-entries-benjamin-infosec)
+
+
 
 ## Programming:
 
 [WinREPL](https://github.com/zerosum0x0/WinREPL)
 * x86 and x64 assembly "read-eval-print loop" shell for Windows
 
-
 [awesome-php](https://github.com/ziadoz/awesome-php)
 * A curated list of amazingly awesome PHP libraries, resources and shiny things.
+
+
+[canisrufus](https://github.com/maldevel/canisrufus)
+* A stealthy Python based Windows backdoor that uses Github as a command and control server
+
+
+[How to C in 2016](https://matt.sh/howto-c)
+* [A critique of "How to C in 2016" by Matt](https://github.com/Keith-S-Thompson/how-to-c-response)
+
+
+
+
 
 ## Policy and Compliance
 
 
+
+
 ## RE
 
+[Microsoft.Diagnostics.Runtime.dll(CLR MD)](https://github.com/Microsoft/clrmd)
+* Microsoft.Diagnostics.Runtime.dll (nicknamed "CLR MD") is a process and crash dump introspection library. This allows you to write tools and debugger plugins which can do thing similar to SOS and PSSCOR.
 
+[Getting Started with CLR MD](https://github.com/Microsoft/clrmd/blob/master/Documentation/GettingStarted.md)
 
+[Reverse Engineering IoT Devices](https://iayanpahwa.github.io/Reverse-Engineering-IoT-Devices/)
 
+[radare2 as an alternative to gdb-peda](https://monosource.github.io/2016/10/radare2-peda)
 
+[jefferson](https://github.com/sviehb/jefferson)
+* JFFS2 filesystem extraction tool
 
+[Reverse Engineering Firmware Primer](https://wiki.securityweekly.com/Reverse_Engineering_Firmware_Primer)
 
+[Hacking Linksys E4200v2 firmware](https://blog.bramp.net/post/2012/01/24/hacking-linksys-e4200v2-firmware/)
+
+[Defeating ioli with radare2](https://dustri.org/b/defeating-ioli-with-radare2.html)
+
+[Gynvael’s Mission 11 (en): Python bytecode reverse-engineering](https://chriswarrick.com/blog/2017/08/03/gynvaels-mission-11-en-python-bytecode-reverse-engineering/)
 
 
 ## Red Team/Pentesting
@@ -244,6 +353,11 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 [Project Loki - Phrack 7-49](http://phrack.org/issues/49/6.html)
 * This whitepaper is intended as a complete description of the covert channel that exists in networks that allow ping traffic (hereon referred to in the more general sense of ICMP_ECHO traffic --see below) to pass.
+
+
+## Rootkits
+[RootKits-List-Download](https://github.com/d30sa1/RootKits-List-Download)
+* This is the list of all rootkits found so far on github and othersites.
 
 
 
@@ -265,7 +379,11 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 [Exploring Windows virtual memory management](http://www.triplefault.io/2017/08/exploring-windows-virtual-memory.html)
 
+[RtlEncryptMemory function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa387693(v=vs.85).aspx)
 
+[RtlDecryptMemory function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa387692(v=vs.85).aspx)
+
+[The Component Object Model](https://msdn.microsoft.com/library/ms694363.aspx)
 
 
 
@@ -298,6 +416,24 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 [mustache-security](https://code.google.com/archive/p/mustache-security/)
 * A wiki dedicated to JavaScript MVC security pitfalls
+
+[WS-Attacker](https://github.com/RUB-NDS/WS-Attacker)
+* WS-Attacker is a modular framework for web services penetration testing. It is developed by the Chair of Network and Data Security, Ruhr University Bochum (http://nds.rub.de/ ) and the Hackmanit GmbH (http://hackmanit.de/).
+
+[WS-Attacks.org](http://www.ws-attacks.org/Welcome_to_WS-Attacks)
+* WS-Attacks.org is not a new web service standard by the OASIS Group or W3C; instead it presents the flaws of today's web service standards and implementations in regard to web service security! WS-Attacks.org aims at delivering the most comprehensive enumeration of all known web service attacks. 
+
+[Transport Layer Security (TLS) Extensions](https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml)
+
+[faker.js](https://github.com/Marak/faker.js)
+* generate massive amounts of fake data in Node.js and the browser
+
+
+
+
+
+
+
 
 
 ## Wireless Stuff

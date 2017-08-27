@@ -11,6 +11,8 @@ Unfilled:
 
 ## Accessibility Features
 -------------------------------
+[Accessibility Features - ATT&CK](https://attack.mitre.org/wiki/Technique/T1015)
+
 * Replace the windows accessibilty applications with desired binary to be ran instead. Sticky-Keys backdoor. 
 * Debugger trick -
 
@@ -21,8 +23,10 @@ Unfilled:
 [Privilege Escalation via "Sticky" Keys](http://carnal0wnage.attackresearch.com/2012/04/privilege-escalation-via-sticky-keys.html)
 
 
+
 ## AppInit DLLs
 -------------------------------
+[AppInit DLLs - ATT&CK](https://attack.mitre.org/wiki/Technique/T1103)
 
 [Working with the AppInit_DLLs registry value](https://support.microsoft.com/en-us/help/197571/working-with-the-appinit-dlls-registry-value)
 * (All the DLLs that are specified in this value are loaded by each Microsoft Windows-based application that is running in the current log on session.)
@@ -33,8 +37,10 @@ Unfilled:
 [AppInit DLLs and Secure Boot](https://msdn.microsoft.com/en-us/library/dn280412)
 
 
+
 ## Application Shimming
 -------------------------------
+[Application Shimming - ATT&CK](https://attack.mitre.org/wiki/Technique/T1138)
 
 [Understanding Shims](https://technet.microsoft.com/en-us/library/dd837644(v=ws.10).aspx)
 

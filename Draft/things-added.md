@@ -18,6 +18,87 @@ https://www.redcanary.com/threat-hunting/
 https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 
+[Cracking Active Directory Passwords or “How to Cook AD Crack"](https://www.sans.org/reading-room/whitepapers/testing/cracking-active-directory-passwords-how-cook-ad-crack-37940)
+
+
+
+[MQTT](http://mqtt.org/)
+* MQTT is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. 
+
+[symbolhound](http://symbolhound.com/)
+* SymbolHound is a search engine that doesn't ignore special characters. This means you can easily search for symbols like &, %, and π. We hope SymbolHound will help programmers find information about their chosen languages and frameworks more easily.
+
+[cmdchallenge](https://github.com/jarv/cmdchallenge)
+* This repo holds the challenges for cmdchallenge.com
+* command-line challenges - can add your own/modify existing challenges
+	
+[NIST Cybersecurity Practice Guide, Securing Wireless Infusion Pumps in Healthcare Delivery Organizations](https://nccoe.nist.gov/projects/use-cases/medical-devices)
+* [SP 1800-8a: Executive Summary](https://nccoe.nist.gov/publication/draft/1800-8/VolA/)
+* [SP 1800-8b: Approach, Architecture, and Security Characteristics ](https://nccoe.nist.gov/publication/draft/1800-8/VolB/)
+* [SP 1800-8c: How-To Guides](https://nccoe.nist.gov/publication/draft/1800-8/VolC/)
+
+
+[Windows Commands Abused by Attackers](http://blog.jpcert.or.jp/2016/01/windows-commands-abused-by-attackers.html)
+
+[ Hyper-V backdoor for UEFI](https://gist.github.com/Cr4sh/55a54e7f3c113316efd2d66457df68dd)
+
+[RFC 5246 - The Transport Layer Security (TLS) Protocol Version 1.2](https://tools.ietf.org/html/rfc5246)
+
+[Bypassing VirtualBox Process Hardening on Windows](https://googleprojectzero.blogspot.com/2017/08/bypassing-virtualbox-process-hardening.html)
+* This blog post will describe the implementation of Oracle’s VirtualBox protected process and detail three different, but now fixed, ways of bypassing the protection and injecting arbitrary code into the process. The techniques I’ll present can equally be applied to similar implementations of “protected” processes in other applications.
+
+
+[Windows: DCOM DCE/RPC Local NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=325&redir=1)
+
+
+[Bypass Cylance Memory Exploitation Defense & Script Cntrl](https://www.xorrior.com/You-Have-The-Right-to-Remain-Cylance/)
+
+
+[WinHeap-Explorer](https://github.com/WinHeapExplorer/WinHeap-Explorer)
+* The efficient and transparent proof-of-concept tool for heap-based bugs detection in x86 machine code for Windows applications.
+
+
+[Cassandra coefficient and ICS cyber – is this why the system is broken](http://www.controlglobal.com/blogs/unfettered/cassandra-coefficient-and-ics-cyber-is-this-why-the-system-is-broken/)
+
+[Abusing Token Privileges For LPE - drone/breenmachine](https://github.com/hatRiot/token-priv/blob/master/abusing_token_eop_1.0.txt)
+
+
+[SQL Injection Cheat Sheet - NetSparker](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/)
+
+
+* Applocker bypass
+[Backdoor-Minimalist.sct](https://gist.github.com/subTee/24c7d8e1ff0f5602092f58cbb3f7d302)
+
+
+[Firmware Exploitation with JEB: Part 1](https://www.pnfsoftware.com/blog/firmware-exploitation-with-jeb-part-1/)
+
+[shadow :: De Mysteriis Dom jemalloc](https://github.com/CENSUS/shadow)
+* shadow is a jemalloc heap exploitation framework. It has been designed to be agnostic of the target application that uses jemalloc as its heap allocator (be it Android's libc, Firefox, FreeBSD's libc, standalone jemalloc, or whatever else). The current version (2.0) has been tested extensively with the following targets: Android 6 and 7 libc (ARM32 and ARM64); Firefox (x86 and x86-64) on Windows and Linux;
+
+[Overview of Android's jemalloc structures using shadow](https://github.com/CENSUS/shadow/blob/master/docs/android_heap.md)
+* In this document we explore Android's jemalloc structures using shadow. A simplified view of the heap is presented here. The intention of this document is to get you started with jemalloc structures and shadow's commands.
+
+[VBoxHardenedLoader](https://github.com/hfiref0x/VBoxHardenedLoader)
+* VirtualBox VM detection mitigation loader
+
+[Bypassing VirtualBox Process Hardening on Windows](https://googleprojectzero.blogspot.com/2017/08/bypassing-virtualbox-process-hardening.html)
+
+
+
+[Adapting Burp Extensions for Tailored Pentesting](http://blog.portswigger.net/2017/08/adapting-burp-extensions-for-tailored.html)
+
+[HUNT](https://github.com/bugcrowd/HUNT)
+* HUNT is a Burp Suite extension to: 1. Identify common parameters vulnerable to certain vulnerability classes; 2. Organize testing methodologies inside of Burp Suite;
+
+
+[Udp2raw-tunnel](https://github.com/wangyu-/udp2raw-tunnel)
+* A Tunnel which tunnels UDP via FakeTCP/UDP/ICMP Traffic by using Raw Socket, helps you Bypass UDP FireWalls(or Unstable UDP Environment). Its Encrypted, Anti-Replay and Multiplexed. It also acts as a Connection Stabilizer.)
+
+
+[The Art of Becoming TrustedInstaller](https://tyranidslair.blogspot.co.uk/2017/08/the-art-of-becoming-trustedinstaller.html)
+* there's many ways of getting the TI token other than these 3 techniques. For example as Vincent Yiu pointed out on Twitter if you've got easy access to a system token, say using Metasploit's getsystem command you can impersonate system and then open the TI token, it's just IMO less easy :-). If you get a system token with SeTcbPrivilege you can also call LogonUserExExW or LsaLogonUser where you can specify an set of additional groups to apply to a service token. Finally if you get a system token with SeCreateTokenPrivilege (say from LSASS.exe if it's not running PPL) you can craft an arbitrary token using the NtCreateToken system call.
+
+
 
 [meek](https://github.com/Yawning/meek)
 * meek is a blocking-resistant pluggable transport for Tor. It encodes a data stream as a sequence of HTTPS requests and responses. Requests are reflected through a hard-to-block third-party web server in order to avoid talking directly to a Tor bridge. HTTPS encryption hides fingerprintable byte patterns in Tor traffic.sek
@@ -42,11 +123,9 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 [Case Study: How Backdoors Bypass Security Solutions with Advanced Camouflage Techniques](https://www.incapsula.com/blog/backdoor-malware-analysis-obfuscation-techniques.html)
 * Look at PHP obfuscation methods for webshells
 
-
 [What Happens Next Will Amaze You](http://idlewords.com/talks/what_happens_next_will_amaze_you.htm#six_fixes)
 
 [Advice for writing a Bootloader? - reddit](https://www.reddit.com/r/lowlevel/comments/30toah/advices_for_a_bootloader/)
-
 
 
 [dc25-votingvillage-report](https://github.com/josephlhall/dc25-votingvillage-report)
@@ -92,6 +171,10 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 [DonkeyGuard](https://github.com/CollegeDev/DonkeyGuard/)
 * DonkeyGuard allows you a fine-grained tuning of access to your private data. It currently supports 41 restrictions which can be applied for every application. Specifically, it is a Privacy service provider which implements a set of modifications to the Android Framework to allow you to interact with applications which are trying to access your private data. 
 
+[The Android boot process](https://thecyberfibre.com/android-boot-process/)
+
+[Intercepting HTTPS traffic of Android Nougat Applications](https://serializethoughts.com/2016/09/10/905/)
+* TL;DR To intercept network traffic for Android 7.0 targeted applications, introduce a res/xml/network_security_config.xml file.
 
 
 ## Basic Security Info
@@ -110,19 +193,33 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 [Broadcasting your attack: Security testing DAB radio in cars - Andy Davis](http://2015.ruxcon.org.au/assets/2015/slides/Broadcasting-your-attack-Security-testing-DAB-radio-in-cars.pdf)
 
+[A Vulnerability in Modern Automotive Standards and How We Exploited It](https://documents.trendmicro.com/assets/A-Vulnerability-in-Modern-Automotive-Standards-and-How-We-Exploited-It.pdf?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=3ab5ff00ce354628bb8cbd7a58983486&uid=150127534&nid=244+276893704)
+
+[Car hacking: getting from A to B with Eve (SHA2017)](https://www.youtube.com/watch?v=l9760bzUN3E)
+* Car security is, not surprisingly, a hot topic; after all they are fast and heavy computer controlled machinery that nowadays come with all kinds of internet connectivity. So we decided to have a look at it. In our presentation, we’ll first cover some theory behind the IT-part of car architecture. We’ll discuss attack vectors and their likelihood of success, and then discuss the various vulnerabilities we found. Finally, we will combine these vulnerabilities into a remote attack. Depending on the disclosure process with the vendor, which is pending, we might be able to demonstrate the attack.
 
 ## Courses
+
+
+
 
 ## CTF
 
 [CTF write-ups 2017](https://github.com/ctfs/write-ups-2017)
 
+
+
 ## Crypto
+[Demystifying the Signal Protocol for End-to-End Encryption (E2EE)](https://medium.com/@justinomora/demystifying-the-signal-protocol-for-end-to-end-encryption-e2ee-ad6a567e6cb4)
+
+[A Formal Security Analysis of the Signal Messaging Protocol - Oct2016](https://eprint.iacr.org/2016/1013.pdf)
+
+[SHA2017 Conference Videos](https://www.youtube.com/channel/UCHmPMdU0O9P_W6I1hNyvBIQ/videos)
 
 
 ## Crypto Currencies
-
-
+[Blockchain Graveyard](https://magoo.github.io/Blockchain-Graveyard/)
+* These cryptocurrency institutions have suffered intrusions resulting in stolen financials, or shutdown of the product. Nearly all closed down afterward. 
 
 ## Data Analysis
 
@@ -208,14 +305,15 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 * 🤖 A Node queue API for generating PDFs using headless Chrome. Comes with a CLI, S3 storage and webhooks for notifying subscribers about generated PDFs
 
 [Six Stages of debugging](http://plasmasturm.org/log/6debug/)
-* That can’t happen.
-* That doesn’t happen on my machine.
-* That shouldn’t happen.
-* Why does that happen?
-* Oh, I see.
-* How did that ever work?
+* 1. That can’t happen.
+* 2. That doesn’t happen on my machine.
+* 3. That shouldn’t happen.
+* 4. Why does that happen?
+* 5. Oh, I see.
+* 6. How did that ever work?
 
-
+[Game of Drones - Brown,Latimer - Defcon25](https://www.youtube.com/watch?v=iG7hUE2BZZo)
+* We’ve taken a MythBusters-style approach to testing the effectiveness of a variety of drone defense solutions, pitting them against our DangerDrone. Videos demonstrating the results should be almost as fun for you to watch as they were for us to produce. Expect to witness epic aerial battles against an assortment of drone defense types
 
 
 
@@ -240,6 +338,7 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 ## Network Scanning and Attacks
 
+[Swaks - Swiss Army Knife for SMTP](http://www.jetmore.org/john/code/swaks/)
 
 
 ## Network | Monitoring & Logging
@@ -257,7 +356,7 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 ## Phishing/SE
 
-
+[Top 10 Email Subjects for Company Phishing Attacks](http://www.pandasecurity.com/mediacenter/security/top-10-email-subjects-phishing-attacks/)
 
 
 ## Physical Security
@@ -297,6 +396,17 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 [List of autorun keys / malware persistence Windows registry entries](https://www.peerlyst.com/posts/list-of-autorun-keys-malware-persistence-windows-registry-entries-benjamin-infosec)
 
+[Generate-Macro](https://github.com/enigma0x3/Generate-Macro)
+* This Powershell script will generate a malicious Microsoft Office document with a specified payload and persistence method.
+
+[Babadook](https://github.com/jseidl/Babadook)
+* Connection-less Powershell Persistent and Resilient Backdoor
+
+[Harness](https://github.com/Rich5/Harness)
+* Harness is remote access payload with the ability to provide a remote interactive PowerShell interface from a Windows system to virtually any TCP socket. The primary goal of the Harness Project is to provide a remote interface with the same capabilities and overall feel of the native PowerShell executable bundled with the Windows OS.
+
+[Introduction to Logical Privilege Escalation on Windows - James Forshaw](https://conference.hitb.org/hitbsecconf2017ams/materials/D2T3%20-%20James%20Forshaw%20-%20Introduction%20to%20Logical%20Privilege%20Escalation%20on%20Windows.pdf)
+* [Windows Logical EoP Workbook](https://docs.google.com/document/d/1qujIzDmFrcFCBeIgMjWDZTLNMCAHChAnKDkHdWYEomM/edit)
 
 
 ## Programming:
@@ -315,7 +425,13 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 [How to C in 2016](https://matt.sh/howto-c)
 * [A critique of "How to C in 2016" by Matt](https://github.com/Keith-S-Thompson/how-to-c-response)
 
-
+[Six Stages of debugging](http://plasmasturm.org/log/6debug/)
+* 1. That can’t happen.
+* 2. That doesn’t happen on my machine.
+* 3. That shouldn’t happen.
+* 4. Why does that happen?
+* 5. Oh, I see.
+* 6. How did that ever work?
 
 
 
@@ -347,12 +463,18 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 [Gynvael’s Mission 11 (en): Python bytecode reverse-engineering](https://chriswarrick.com/blog/2017/08/03/gynvaels-mission-11-en-python-bytecode-reverse-engineering/)
 
 
+
+
+
 ## Red Team/Pentesting
 
 [88MPH Digital tricks to bypass Physical security - ZaCon4 - Andrew MacPherson](https://vimeo.com/52865794)
 
 [Project Loki - Phrack 7-49](http://phrack.org/issues/49/6.html)
 * This whitepaper is intended as a complete description of the covert channel that exists in networks that allow ping traffic (hereon referred to in the more general sense of ICMP_ECHO traffic --see below) to pass.
+
+[Command & Control: Understanding, Denying and Detecting - 2014](https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf)
+* Joseph Gardiner, Marco Cova, Shishir Nagaraja
 
 
 ## Rootkits
@@ -428,7 +550,7 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 [faker.js](https://github.com/Marak/faker.js)
 * generate massive amounts of fake data in Node.js and the browser
 
-
+[DOM Living Standard](https://dom.spec.whatwg.org/)
 
 
 
@@ -439,8 +561,9 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 ## Wireless Stuff
 
 
-
-
+[GPS-SDR-SIM](https://github.com/osqzss/gps-sdr-sim)
+* 
+Software-Defined GPS Signal Simulator; GPS-SDR-SIM generates GPS baseband signal data streams, which can be converted to RF using software-defined radio (SDR) platforms, such as bladeRF, HackRF, and USRP.
 
 
 

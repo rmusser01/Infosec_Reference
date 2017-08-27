@@ -20,6 +20,9 @@
 
 [Account Hunting for Invoke-TokenManipulation](https://www.trustedsec.com/2015/01/account-hunting-invoke-tokenmanipulation/)
 
+[Abusing Token Privileges For LPE - drone/breenmachine](https://github.com/hatRiot/token-priv/blob/master/abusing_token_eop_1.0.txt)
+
+
 
 ## Accessibility Features
 -------------------------------

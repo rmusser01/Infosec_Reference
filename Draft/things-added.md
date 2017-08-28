@@ -144,6 +144,8 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 [SHA2017 Conference Videos](https://www.youtube.com/channel/UCHmPMdU0O9P_W6I1hNyvBIQ/videos)
 
+[dislocker](https://github.com/Aorimn/dislocker)
+* FUSE driver to read/write Windows' BitLocker-ed volumes under Linux / Mac OSX
 
 
 

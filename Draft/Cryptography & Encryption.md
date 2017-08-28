@@ -199,6 +199,8 @@ https://conversations.im/xeps/multi-end.html
 [HashID](https://github.com/psypanda/hashID)
 * hashID is a tool written in Python 3 which supports the identification of over 220 unique hash types using regular expressions. It is able to identify a single hash, parse a file or read multiple files in a directory and identify the hashes within them. hashID is also capable of including the corresponding hashcat mode and/or JohnTheRipper format in its output. hashID works out of the box with Python 2 = 2.7.x or Python 3 = 3.3 on any platform.
 
+[dislocker](https://github.com/Aorimn/dislocker)
+* FUSE driver to read/write Windows' BitLocker-ed volumes under Linux / Mac OSX
 
 [HiVE — Hidden Volume Encryption](http://hive.ccs.neu.edu/#four)
 

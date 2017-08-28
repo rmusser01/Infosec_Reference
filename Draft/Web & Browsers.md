@@ -67,14 +67,6 @@ prompt.ml
 
 Clickjacking attacks
 
-
-[Transport Layer Security (TLS) Extensions](https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml)
-
-
-
-[DOM Living Standard](https://dom.spec.whatwg.org/)
-
-
 #### End Sort
 
 
@@ -144,8 +136,6 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 [The Tale of a Fameless but Widespread Web Vulnerability Class - Veit Hailperin](https://www.youtube.com/watch?v=5qA0CtS6cZ4)
 * Two keys components account for finding vulnerabilities of a certain class: awareness of the vulnerability and ease of finding the vulnerability. Cross-Site Script Inclusion (XSSI) vulnerabilities are not mentioned in the de facto standard for public attention - the OWASP Top 10. Additionally there is no public tool available to facilitate finding XSSI. The impact reaches from leaking personal information stored, circumvention of token-based protection to complete compromise of accounts. XSSI vulnerabilities are fairly wide spread and the lack of detection increases the risk of each XSSI. In this talk we are going to demonstrate how to find XSSI, exploit XSSI and also how to protect against XSSI.
 
-
-
 [Hackazon](https://github.com/rapid7/hackazon)
 * Hackazon is a free, vulnerable test site that is an online storefront built with the same technologies used in today’s rich client and mobile applications. Hackazon has an AJAX interface, strict workflows and RESTful API’s used by a companion mobile app providing uniquely-effective training and testing ground for IT security professionals. And, it’s full of your favorite vulnerabilities like SQL Injection, cross-site scripting and so on.
 
@@ -155,7 +145,9 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
 [Web IDL Standards](https://heycam.github.io/webidl/)
 
+[Transport Layer Security (TLS) Extensions](https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml)
 
+[DOM Living Standard](https://dom.spec.whatwg.org/)
 
 
 
@@ -198,9 +190,6 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
 [dvcs-ripper](https://github.com/kost/dvcs-ripper)
 * Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, ... It can rip repositories even when directory browsing is turned off.
-
-[htshells](https://github.com/wireghoul/htshells)
-* Self contained web shells and other attacks via .htaccess files.
 
 [AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)
 * Security Tool to Look For Interesting Files in S3 Buckets
@@ -526,7 +515,10 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [Loki - Simple IOC Scanner](https://github.com/Neo23x0/Loki)
 * Scanner for Simple Indicators of Compromise
 
- 
+[htshells](https://github.com/wireghoul/htshells)
+* Self contained web shells and other attacks via .htaccess files.
+
+
 
 
 ### <a name="generalencode">General Encoders/Decoders</a>

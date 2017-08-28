@@ -1,4 +1,4 @@
-# Windows Privlege Escalatio
+# Windows Privlege Escalation
 
 ## Access Token Manipulation
 -------------------------------

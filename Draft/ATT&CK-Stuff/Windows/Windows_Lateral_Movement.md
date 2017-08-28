@@ -22,7 +22,18 @@ Windows Lateral Movement
 -------------------------------
 [Logon Scripts - ATT&CK](https://attack.mitre.org/wiki/Technique/T1037)
 
+[Setting up a Logon Script through Active Directory Users and Computers in Windows Server 2008](https://www.petri.com/setting-up-logon-script-through-active-directory-users-computers-windows-server-2008)
 
+[Assign User Logon Scripts - technet](https://technet.microsoft.com/en-us/library/cc770908(v=ws.11).aspx)
+
+[Use Startup, Shutdown, Logon, and Logoff Scripts - technet](https://technet.microsoft.com/en-us/library/cc753404(v=ws.11).aspx)
+
+[Logon Scripts - With VBScript](http://www.computerperformance.co.uk/Logon/logon_scripts.htm)
+* In this section I will give you examples of how to build the VBScript to use in your logon script. 
+
+[Windows 7 Home: how to configure a logon script - superuser](https://superuser.com/questions/258641/windows-7-home-how-to-configure-a-logon-script)
+
+[How do I find out where login scripts live? - stackoverflow](https://stackoverflow.com/questions/663459/how-do-i-find-out-where-login-scripts-live)
 
 
 
@@ -35,6 +46,19 @@ Windows Lateral Movement
 * Pass the hash (PtH) is a method of authenticating as a user without having access to the user's cleartext password. This method bypasses standard authentication steps that require a cleartext password, moving directly into the portion of the authentication that uses the password hash. In this technique, valid password hashes for the account being used are captured using a Credential Access technique. Captured hashes are used with PtH to authenticate as that user. Once authenticated, PtH may be used to perform actions on local or remote systems. Windows 7 and higher with KB2871997 require valid domain user credentials or RID 500 administrator hashes.
 
 [Pass the hash attacks: Tools and Mitigation - 2010 SANS paper](https://www.sans.org/reading-room/whitepapers/testing/pass-the-hash-attacks-tools-mitigation-33283)
+
+[Pass the hash - Wikipedia](https://en.wikipedia.org/wiki/Pass_the_hash)
+
+[Performing Pass-the-Hash Attacks with Mimikatz](https://blog.stealthbits.com/passing-the-hash-with-mimikatz)
+
+[Pass-the-Hash Is Dead: Long Live LocalAccountTokenFilterPolicy](https://www.harmj0y.net/blog/redteaming/pass-the-hash-is-dead-long-live-localaccounttokenfilterpolicy/)
+
+[Still Passing the Hash 15 Years Later](https://passing-the-hash.blogspot.com/)
+* Providing all the extra info that didn't make it into the BlackHat 2012 USA Presentation "Still Passing the Hash 15 Years Later? Using the Keys to the Kingdom to Access All Your Data" by Alva Lease 'Skip' Duckwall IV and Christopher Campbell.
+
+
+
+
 
 
 
@@ -51,6 +75,17 @@ Windows Lateral Movement
 
 [Kerberos Golden Ticket Protection Mitigating Pass-the-Ticket on Active Directory - CERT-EU](https://cert.europa.eu/static/WhitePapers/UPDATED%20-%20CERT-EU_Security_Whitepaper_2014-007_Kerberos_Golden_Ticket_Protection_v1_4.pdf)
 
+[From Pass-the-Hash to Pass-the-Ticket with No Pain](http://resources.infosecinstitute.com/pass-hash-pass-ticket-no-pain/)
+
+[mimikatz - Golden Ticket](http://rycon.hu/papers/goldenticket.html)
+
+[THE GOLDEN TICKET ATTACK- A LOOK UNDER THE HOOD](http://cybersecology.com/wp-content/uploads/2016/05/Golden_Ticket-v1.13-Final.pdf)
+
+[How Attackers Use Kerberos Silver Tickets to Exploit Systems](https://adsecurity.org/?p=2011)
+
+[The path to the Golden Ticket](https://countuponsecurity.com/tag/pass-the-ticket/)
+
+[How To Pass the Ticket Through SSH Tunnels](https://bluescreenofjeff.com/2017-05-23-how-to-pass-the-ticket-through-ssh-tunnels/)
 
 
 
@@ -60,8 +95,23 @@ Windows Lateral Movement
 -------------------------------
 [Remote Desktop Protocol - ATT&CK](https://attack.mitre.org/wiki/Technique/T1076)
 
-
 [RDP hijacking — how to hijack RDS and RemoteApp sessions transparently to move through an organisation](https://medium.com/@networksecurity/rdp-hijacking-how-to-hijack-rds-and-remoteapp-sessions-transparently-to-move-through-an-da2a1e73a5f6)
+
+[RDP Man-in-The-Middle attack ](https://theevilbit.blogspot.com/2014/04/rdp-man-in-middle-attack.html)
+
+[ATTACKING RDP How to Eavesdrop on Poorly Secured RDP Connections - Adrian Vollmer 2017](https://www.exploit-db.com/docs/41621.pdf)
+
+[RDPY](https://github.com/citronneur/rdpy)
+* RDPY is a pure Python implementation of the Microsoft RDP (Remote Desktop Protocol) protocol (client and server side). RDPY is built over the event driven network engine Twisted. RDPY support standard RDP security layer, RDP over SSL and NLA authentication (through ntlmv2 authentication protocol).
+
+[SSL “Man-In-The-Middle” attacks on RDP](https://web.archive.org/web/20161007044945/https://labs.portcullis.co.uk/blog/ssl-man-in-the-middle-attacks-on-rdp/)
+
+[rdps2rdp](https://github.com/DiabloHorn/rdps2rdp)
+* Decrypt MITM SSL RDP and save to pcap
+
+
+
+
 
 
 
@@ -111,10 +161,9 @@ Windows Lateral Movement
 [Taint Shared Content - ATT&CK](https://attack.mitre.org/wiki/Technique/T1080)
 * Content stored on network drives or in other shared locations may be tainted by adding malicious programs, scripts, or exploit code to otherwise valid files. Once a user opens the shared tainted content, the malicious portion can be executed to run the adversary's code on a remote system. Adversaries may use tainted shared content to move laterally. 
 
+[The Backdoor Factory](https://github.com/secretsquirrel/the-backdoor-factory)
 
-
-
-
+[Introduction to Manual Backdooring](https://www.exploit-db.com/docs/42061.pdf)
 
 
 
@@ -122,7 +171,8 @@ Windows Lateral Movement
 -------------------------------
 [Third-party Software - ATT&CK](https://attack.mitre.org/wiki/Technique/T1072)
 
-
+[Evilgrade](https://github.com/infobyte/evilgrade)
+* Evilgrade is a modular framework that allows the user to take advantage of poor upgrade implementations by injecting fake updates. It comes with pre-made binaries (agents), a working default configuration for fast pentests, and has it's own WebServer and DNSServer modules. Easy to set up new settings, and has an autoconfiguration when new binary agents are set.
 
 
 
@@ -148,8 +198,18 @@ Windows Lateral Movement
 
 [Windows Remote Management - msdn](https://msdn.microsoft.com/en-us/library/aa384426)
 
+[Installation and Configuration for Windows Remote Management - msdn](https://msdn.microsoft.com/en-us/library/aa384372(v=vs.85).aspx)
 
+[winrm - go](https://github.com/masterzen/winrm)
+* Command-line tool and library for Windows remote command execution in Go
 
+[pywinrm](https://github.com/diyan/pywinrm)
+* Python library for Windows Remote Management (WinRM)
 
+[Using Credentials to Own Windows Boxes - Part 3 (WMI and WinRM)](https://blog.ropnop.com/using-credentials-to-own-windows-boxes-part-3-wmi-and-winrm/)
 
+[Exploiting Trusted Hosts in WinRM ](https://blog.netspi.com/exploiting-trusted-hosts-in-winrm/)
 
+[PowerShell PSRemoting Pwnage](https://pentestn00b.wordpress.com/2016/08/22/powershell-psremoting-pwnage/)
+
+[ PowerShell Remoting for Penetration Testers ](https://lockboxx.blogspot.com/2015/07/powershell-remoting-for-penetration.html)

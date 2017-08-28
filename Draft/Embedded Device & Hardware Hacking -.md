@@ -75,6 +75,18 @@ http://greatscottgadgets.com/infiltrate2013/
 
 [Can a connected USB device read all data from the USB bus?](https://security.stackexchange.com/questions/37927/can-a-connected-usb-device-read-all-data-from-the-usb-bus?rq=1)
 
+[Introduction to Glitch Attacks](https://wiki.newae.com/Tutorial_A2_Introduction_to_Glitch_Attacks_(including_Glitch_Explorer))
+* This advanced tutorial will demonstrate clock glitch attacks using the ChipWhisperer system. This will introduce you to many required features of the ChipWhisperer system when it comes to glitching. This will be built on in later tutorials to generate voltage glitching attacks, or when you wish to attack other targets. 
+
+
+[Hacking Voting Machines at DEF CON 25](https://blog.horner.tj/post/hacking-voting-machines-def-con-25)
+
+[dc25-votingvillage-report](https://github.com/josephlhall/dc25-votingvillage-report/blob/master/notes-from-folks-redact.md)
+
+[dc25-votingvillage-report](https://github.com/josephlhall/dc25-votingvillage-report)
+* A report to synthesize findings from the Defcon 25 Voting Machine Hacking Village
+
+
 
 
 ### General Talks/Presentations

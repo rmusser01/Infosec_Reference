@@ -17,13 +17,13 @@ TOC
 
 
 #### Cull
-http://www.stoned-vienna.com/11111
+http://www.stoned-vienna.com/
 
-http://forums.mydigitallife.info/forums/34-MDL-Projects-and-Applications
+[ Hyper-V backdoor for UEFI](https://gist.github.com/Cr4sh/55a54e7f3c113316efd2d66457df68dd)
 
-http://forums.mydigitallife.info/forums/25-BIOS-Mods
-
+[Advice for writing a Bootloader? - reddit](https://www.reddit.com/r/lowlevel/comments/30toah/advices_for_a_bootloader/)
 #### End Cull
+
 
 
 ## <a name="general">General</a>
@@ -33,7 +33,7 @@ http://forums.mydigitallife.info/forums/25-BIOS-Mods
 | **UEFI - OSDev Wiki** | http://wiki.osdev.org/UEFI
 | **Technical Overview of Windows UEFI Startup Process** | http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/
 | **Understanding AMT, UEFI BIOS and Secure boot relationships** | https://communities.intel.com/community/itpeernetwork/vproexpert/blog/2013/08/11/understanding-amt-uefi-bios-and-secure-boot-relationships
-| **Windows UEFI startup ñ A technical overview]** - Through this analysis paper weíll give a look at Windows 8 (and 8.1) UEFI startup mechanisms and weíll try to understand their relationship with the underlying hardware platform.| http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/
+| **Windows UEFI startup ‚Äì A technical overview]** - Through this analysis paper we‚Äôll give a look at Windows 8 (and 8.1) UEFI startup mechanisms and we‚Äôll try to understand their relationship with the underlying hardware platform.| http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/
 | **Extensible Firmware Interface (EFI) and Unified EFI (UEFI)** | http://www.intel.com/content/www/us/en/architecture-and-technology/unified-extensible-firmware-interface/efi-homepage-general-technology.html
 | **Intel ME (Manageability engine) Huffman algorithm]** | http://io.smashthestack.org/me/
 
@@ -59,13 +59,13 @@ http://forums.mydigitallife.info/forums/25-BIOS-Mods
 | **BIOS Chronomancy: Fixing the Core Root of Trust for Measurement - BlackHat 2013** | https://www.youtube.com/watch?v=NbYZ4UCN9GY
 | **Hacking Measured Boot and UEFI - Defcon20** - There's been a lot buzz about UEFI Secure Booting, and the ability of hardware and software manufacturers to lock out third-party loaders (and rootkits). Even the NSA has been advocating the adoption of measured boot and hardware-based integrity checks. But what does this trend mean to the open source and hacker communities? In this talk I'll demonstrate measured boot in action. I'll also be releasing my new Measured Boot Tool which allows you to view Trusted Platform Module (TPM) boot data and identify risks such as unsigned early-boot drivers. And, I'll demonstrate how measured boot is used for remote device authentication. Finally, I'll discuss weaknesses in the system (hint: bootstrapping trust is still hard), what this technology means to the consumerization trend in IT, and what software and services gaps exist in this space for aspiring entrepreneurs.| https://www.youtube.com/watch?v=oiqcog1sk2E
 | **Hardware Backdooring is Practical -Jonathan Brossard** | https://www.youtube.com/watch?v=umBruM-wFUw
-| **Attacking ìsecureî chips** | https://www.youtube.com/watch?v=w7PT0nrK2BE
+| **Attacking ‚Äúsecure‚Äù chips** | https://www.youtube.com/watch?v=w7PT0nrK2BE
 | **Attackin the TPM part 2https://www.youtube.com/watch?v=h-hohCfo4LA
 | **Breaking apple touchID cheaply** | http://www.ccc.de/en/updates/2013/ccc-breaks-apple-touchid)
 
 [Attacks on UEFI Security - Rafal Wojtczuk&Corey Kallenberg(https://bromiumlabs.files.wordpress.com/2015/01/attacksonuefi_slides.pdf)
 
-[The Empire Strikes Back Apple ñ how your Mac firmware security is completely broken](https://reverse.put.as/2015/05/29/the-empire-strikes-back-apple-how-your-mac-firmware-security-is-completely-broken/)
+[The Empire Strikes Back Apple ‚Äì how your Mac firmware security is completely broken](https://reverse.put.as/2015/05/29/the-empire-strikes-back-apple-how-your-mac-firmware-security-is-completely-broken/)
 * Writeup on compromise of UEFI on apple hardware.
 
 [Bootkit Threats: In Depth Reverse Engineering & Defense- Eugene Rodionov&Aleksandr Matrosov](https://www.eset.com/fileadmin/Images/US/Docs/Business/presentations/conference_papers/REcon2012.pdf)
@@ -103,7 +103,7 @@ Reverse Engineering Router Firmware walk through
 
 [Reverse Engineering UEFI Firmware](https://jbeekman.nl/blog/2015/03/reverse-engineering-uefi-firmware/)
 
-[IntelÆ System Studio ñ UEFI BIOS Debugging](https://software.intel.com/en-us/articles/intel-system-studio-2014-uefi-bios-debugging)
+[Intel¬Æ System Studio ‚Äì UEFI BIOS Debugging](https://software.intel.com/en-us/articles/intel-system-studio-2014-uefi-bios-debugging)
 
 [Debug SPI BIOS after Power Up Sequence](https://software.intel.com/en-us/articles/debug-spi-bios-after-power-up-sequence)
 
@@ -130,8 +130,8 @@ Reverse Engineering Router Firmware walk through
 | **System Management Mode Hack Using SMM for "Other Purposes** - The research provided in this paper describes in details how to reverse engineer and modify System Management Interrupt (SMI) handlers in the BIOS system firmware and how to implement and detect SMM keystroke logger. This work also presents proof of concept code of SMM keystroke logger that uses I/O Trap based keystroke interception and a code for detection of such keystroke logger. | http://phrack.org/issues/65/7.html)
 | **A Real SMM Rootkit: Reversing and Hooking BIOS SMI Handlers - Filip Wecherowski** - The research provided in this paper describes in details how to reverse engineer and modify System Management Interrupt (SMI) handlers in the BIOS system firmware and how to implement and detect SMM keystroke logger. This work also presents proof of concept code of SMM keystroke logger that uses I/O Trap based keystroke interception and a code for detection of such keystroke logger. | http://phrack.org/issues/66/11.html#article
 | **Exploiting UEFI boot script table vulnerability** | http://blog.cr4.sh/2015/02/exploiting-uefi-boot-script-table.html
-| **Attacking Intel Æ Trusted Execution Technology Rafal Wojtczuk and Joanna Rutkowska** | https://www.blackhat.com/presentations/bh-dc-09/Wojtczuk_Rutkowska/BlackHat-DC-09-Rutkowska-Attacking-Intel-TXT-slides.pdf
-| **Attacking UEFI Boot Script** - AbstractóUEFI Boot Script is a data structure interpreted by UEFI firmware during S3 resume. We show that on many systems, an attacker with ring0 privileges can alter this data structure. As a result, by forcing S3 suspend/resume cycle, an attacker can run arbitrary code on a platform that is not yet fully locked. The consequences include ability to overwrite the flash storage and take control over SMM.| https://frab.cccv.de/system/attachments/2566/original/venamis_whitepaper.pdf
+| **Attacking Intel ¬Æ Trusted Execution Technology Rafal Wojtczuk and Joanna Rutkowska** | https://www.blackhat.com/presentations/bh-dc-09/Wojtczuk_Rutkowska/BlackHat-DC-09-Rutkowska-Attacking-Intel-TXT-slides.pdf
+| **Attacking UEFI Boot Script** - Abstract‚ÄîUEFI Boot Script is a data structure interpreted by UEFI firmware during S3 resume. We show that on many systems, an attacker with ring0 privileges can alter this data structure. As a result, by forcing S3 suspend/resume cycle, an attacker can run arbitrary code on a platform that is not yet fully locked. The consequences include ability to overwrite the flash storage and take control over SMM.| https://frab.cccv.de/system/attachments/2566/original/venamis_whitepaper.pdf
 | **Breaking IPMI/BMC** | http://fish2.com/ipmi/how-to-break-stuff.html
 | **20 Ways Past Secure Boot - Job de Haas - Troopers14** | https://www.youtube.com/watch?v=74SzIe9qiM8
 
@@ -155,7 +155,7 @@ Reverse Engineering Router Firmware walk through
 | **WindSLIC SLIC injectors** - includes UEFI, NTFS, bootmgr SLIC injectors and installers. | https://github.com/untermensch/WindSLIC
 | **UEFI Firmware Parser** - The UEFI firmware parser is a simple module and set of scripts for parsing, extracting, and recreating UEFI firmware volumes. This includes parsing modules for BIOS, OptionROM, Intel ME and other formats too. Please use the example scripts for parsing tutorials. | https://github.com/theopolis/uefi-firmware-parser
 | **Firmware Modifcation kit** - This kit is a collection of scripts and utilities to extract and rebuild linux based firmware images.| https://code.google.com/p/firmware-mod-kit/
-| **Debug Agent Based UEFI Debugging** - The IntelÆ System Debugger now supports non-JTAG based debug of UEFI BIOS, this requires the use of a target-side debug agent and a USB or serial connection to the debug agent. This article takes you through the steps necessary and the the debug methodology used bey the IntelÆ System Debugger to use this method to supplement the pure JTAG based UEFI debug method it also supports | https://software.intel.com/en-us/articles/xdb-agent-based-uefi-debug
+| **Debug Agent Based UEFI Debugging** - The Intel¬Æ System Debugger now supports non-JTAG based debug of UEFI BIOS, this requires the use of a target-side debug agent and a USB or serial connection to the debug agent. This article takes you through the steps necessary and the the debug methodology used bey the Intel¬Æ System Debugger to use this method to supplement the pure JTAG based UEFI debug method it also supports | https://software.intel.com/en-us/articles/xdb-agent-based-uefi-debug
 
 [ida-uefiutils](https://github.com/snare/ida-efiutils/)
 * Some scripts for IDA Pro to assist with reverse engineering EFI binaries 
@@ -185,3 +185,9 @@ Reverse Engineering Router Firmware walk through
 
 ### Other
 [Notes on Intel Microcode Updates](http://hireme.geek.nz/Intel_x86_NSA_Microcode_Updates.pdf)
+
+[BIOS Mods - mydigitallife](https://forums.mydigitallife.net/forums/bios-mods.25/)
+
+[MDL Projects and Applications](https://forums.mydigitallife.net/forums/mdl-projects-and-applications.34/)
+
+[Advice for writing a Bootloader? - reddit](https://www.reddit.com/r/lowlevel/comments/30toah/advices_for_a_bootloader/)

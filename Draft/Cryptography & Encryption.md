@@ -19,7 +19,6 @@
 
 
 https://conversations.im/xeps/multi-end.html
-
 ### End Cull
 
 
@@ -71,6 +70,12 @@ https://conversations.im/xeps/multi-end.html
 
 [CBC Byte Flipping Attack—101 Approach](http://resources.infosecinstitute.com/cbc-byte-flipping-attack-101-approach/)
 
+[Demystifying the Signal Protocol for End-to-End Encryption (E2EE)](https://medium.com/@justinomora/demystifying-the-signal-protocol-for-end-to-end-encryption-e2ee-ad6a567e6cb4)
+
+[A Formal Security Analysis of the Signal Messaging Protocol - Oct2016](https://eprint.iacr.org/2016/1013.pdf)
+
+
+
 
 
 ### <a name="blogs">Blogposts/Misc(doesnt explicitly fit in other sections)</a>
@@ -95,7 +100,7 @@ https://conversations.im/xeps/multi-end.html
 ### <a name="presentation">Presentations/Talks</a>
 [Crypto: 48 Dirty Little Secrets Cryptographers Don’t Want You To Know - BlackHat2014](https://www.youtube.com/watch?v=mXdFHNJ6srY)
 
-
+[SHA2017 Conference Videos](https://www.youtube.com/channel/UCHmPMdU0O9P_W6I1hNyvBIQ/videos)
 
 
 

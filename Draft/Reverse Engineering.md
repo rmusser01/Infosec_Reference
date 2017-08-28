@@ -90,6 +90,30 @@ https://objective-see.com/
 [Binacle](https://github.com/ANSSI-FR/Binacle)
 * Indexation "full-bin" of binary files
 
+
+[Microsoft.Diagnostics.Runtime.dll(CLR MD)](https://github.com/Microsoft/clrmd)
+* Microsoft.Diagnostics.Runtime.dll (nicknamed "CLR MD") is a process and crash dump introspection library. This allows you to write tools and debugger plugins which can do thing similar to SOS and PSSCOR.
+
+[Getting Started with CLR MD](https://github.com/Microsoft/clrmd/blob/master/Documentation/GettingStarted.md)
+
+[Reverse Engineering IoT Devices](https://iayanpahwa.github.io/Reverse-Engineering-IoT-Devices/)
+
+[radare2 as an alternative to gdb-peda](https://monosource.github.io/2016/10/radare2-peda)
+
+[jefferson](https://github.com/sviehb/jefferson)
+* JFFS2 filesystem extraction tool
+
+[Reverse Engineering Firmware Primer](https://wiki.securityweekly.com/Reverse_Engineering_Firmware_Primer)
+
+[Hacking Linksys E4200v2 firmware](https://blog.bramp.net/post/2012/01/24/hacking-linksys-e4200v2-firmware/)
+
+[Defeating ioli with radare2](https://dustri.org/b/defeating-ioli-with-radare2.html)
+
+[Gynvael’s Mission 11 (en): Python bytecode reverse-engineering](https://chriswarrick.com/blog/2017/08/03/gynvaels-mission-11-en-python-bytecode-reverse-engineering/)
+
+
+
+
 ### End sort
 
 

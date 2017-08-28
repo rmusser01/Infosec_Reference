@@ -73,7 +73,6 @@ Three parter from jacobian.org:
 [Teach Technical Writing in Two Hours per Week](http://www.cs.tufts.edu/~nr/pubs/two-abstract.html)
 [Learn Technical Writing in Two Hours per Week - Norman Ramsey](http://www.cs.tufts.edu/~nr/pubs/learn-two.pdf)
 
-
 [Report Template from vulnerabilityassessment.co.uk](http://www.vulnerabilityassessment.co.uk/report%20template.html)
 
 [Penetration Testing Execution Standard section on Reporting](http://www.pentest-standard.org/index.php/Reporting)
@@ -83,9 +82,11 @@ Three parter from jacobian.org:
 [Tips for Creating an Information Security Assessment Report Cheat Sheet](https://zeltser.com/security-assessment-report-cheat-sheet/)
 [SANS InfoSec Policy Templates](https://www.sans.org/security-resources/policies/)
 
-| **HowTo: Write pentest reports the easy way** | http://blog.dornea.nu/2014/05/20/howto-write-pentest-reports-the-easy-way/
+[HowTo: Write pentest reports the easy way](http://blog.dornea.nu/2014/05/20/howto-write-pentest-reports-the-easy-way/)
 
 [The 7 Rules for Writing World Class Technical Documentation](http://www.developer.com/tech/article.php/3848981/The-7-Rules-for-Writing-World-Class-Technical-Documentation.htm)
+
+[Learning the Ropes 101: Stay Beautiful, Stay Verbose](https://blog.zsec.uk/stay-beautiful-stay-verbose/)
 
 
 

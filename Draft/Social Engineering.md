@@ -196,6 +196,11 @@ Paul Ekmans research
 [Construal-Level Theory of Psychological Distance](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/)
 * Abstract: People are capable of thinking about the future, the past, remote locations, another person’s perspective, and counterfactual alternatives. Without denying the uniqueness of each process, it is proposed that they constitute different forms of traversing psychological distance. Psychological distance is egocentric: Its reference point is the self in the here and now, and the different ways in which an object might be removed from that point—in time, in space, in social distance, and in hypotheticality—constitute different distance dimensions. Transcending the self in the here and now entails mental construal, and the farther removed an object is from direct experience, the higher (more abstract) the level of construal of that object. Supporting this analysis, research shows (a) that the various distances are cognitively related to each other, (b) that they similarly influence and are influenced by level of mental construal, and (c) that they similarly affect prediction, preference, and action.
 
+[The Neural Basis of Decision-Making During Sensemaking: Implications for Human-System Interaction](https://www.researchgate.net/publication/278679336_The_Neural_Basis_of_Decision-Making_During_Sensemaking_Implications_for_Human-System_Interaction)
+
+
+
+
 
 
 ### Tools

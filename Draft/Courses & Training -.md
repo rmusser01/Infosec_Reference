@@ -50,8 +50,8 @@ These classes are all focused on computer/information security. If you're lookin
 
 [Open Security Training](https://www.opensecuritytraining.info)
 
-
-
+[Class Central](https://www.class-central.com/)
+* Search engine for MooCs
 
 
 ### General Classes
@@ -59,8 +59,6 @@ These classes are all focused on computer/information security. If you're lookin
 [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn)
 * Free Coursera Course
 * About this course: This course gives you easy access to the invaluable learning techniques used by experts in art, music, literature, math, science, sports, and many other disciplines. We’ll learn about the how the brain uses two very different learning modes and how it encapsulates (“chunks”) information. We’ll also cover illusions of learning, memory techniques, dealing with procrastination, and best practices shown by research to be most effective in helping you master tough subjects. 
-
-
 
 [ENISA CERT Exercises and Training](http://www.enisa.europa.eu/activities/cert/support/exercise)
 * ENISA CERT Exercises and training material was introduced in 2008, in 2012 and 2013 it was complemented with new exercise scenarios containing essential material for success in the CERT community and in the field of information security. In this page you will find the ENISA CERT Exercise material, containing Handbook for teachers, Toolset for students and Virtual Image to support hands on training sessions.

@@ -30,7 +30,9 @@ Sandboxed Execution Environment (SEE) is a framework for building test automatio
 
 
 
+[Usermode Sandboxing](http://www.malwaretech.com/2014/10/usermode-sandboxing.html)
 
+[Advanced Desktop Application Sandboxing via AppContainer](https://www.malwaretech.com/2015/09/advanced-desktop-application-sandboxing.html)
 
 
 

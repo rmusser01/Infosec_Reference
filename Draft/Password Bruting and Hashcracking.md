@@ -26,7 +26,6 @@ http://blog.erratasec.com/2011/06/password-cracking-mining-and-gpus.html#.VG3xsp
 http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
 * Wordlists sorted by popularity originally created for password generation and testing
-
 ### End cull
 
 
@@ -75,6 +74,7 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 [HashView](https://github.com/hashview/hashview)
 * Hashview is a tool for security professionals to help organize and automate the repetitious tasks related to password cracking. Hashview is a web application that manages hashcat (https://hashcat.net) commands. Hashview strives to bring constiency in your hashcat tasks while delivering analytics with pretty pictures ready for ctrl+c, ctrl+v into your reports.
 
+[Cracking Active Directory Passwords or “How to Cook AD Crack"](https://www.sans.org/reading-room/whitepapers/testing/cracking-active-directory-passwords-how-cook-ad-crack-37940)
 
 
 

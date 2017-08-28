@@ -15,6 +15,13 @@ Stunnel
 
 [[Virus] Self-modifying code-short overview for beginners](http://phimonlinemoinhat.blogspot.com/2010/12/virus-self-modifying-code-short.html)
 
+[PlugBot-C2C](https://github.com/redteamsecurity/PlugBot-C2C)
+* This is the Command & Control component of the PlugBot project
+
+[Data Exfiltration (Tunneling) Attacks against Corporate Network](https://pentest.blog/data-exfiltration-tunneling-attacks-against-corporate-network/)
+
+[canisrufus](https://github.com/maldevel/canisrufus)
+* A stealthy Python based Windows backdoor that uses Github as a command and control server
 
 https://github.com/sensepost/det
 

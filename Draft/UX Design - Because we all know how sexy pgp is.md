@@ -10,6 +10,7 @@ Required Reading: [The Design of Everyday Things](http://www.jnd.org/books/desig
 
 http://www.usability.gov/what-and-why/user-interface-design.html
 
+[The unexpected dangers of preg_replace()](https://bitquark.co.uk/blog/2013/07/23/the_unexpected_dangers_of_preg_replace)
 
 
 https://dribbble.com/

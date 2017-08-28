@@ -11,6 +11,8 @@ An Information Security Reference That Doesn't Suck
 * Something similar to the [MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page) (eventually; As in, "I want to do priv esc on OS X, what methods are there?" or, "I'm studying UAFs, is there any good info I can look at without diving deep?" Focused on performing attacks and how they're done vs how attacks are done with a focus on defense - D3f3ns3 Framework?)
 * Always accepting more links/stuff. Feel free to contribue or suggest something.
 
+* Little extra something: ALL LINKS LISTED ARE VALID. They will route to their target page or to Internet Archives most recent archive of that page. All links are validated when I pull from github and host on my site using Daux. 
+
 #### Why Do *I* Care?
 * No idea. I do this as a resource for myself and offer it publicly as a way of giving back to the general community.
 

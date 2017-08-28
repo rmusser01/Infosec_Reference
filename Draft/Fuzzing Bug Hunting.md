@@ -174,6 +174,8 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 [Practical File Format Fuzzing](http://www.irongeek.com/i.php?page=videos/derbycon3/3301-practical-file-format-fuzzing-jared-allar)
 * File format fuzzing has been very fruitful at discovering exploitable vulnerabilities. Adversaries take advantage of these vulnerabilities to conduct spear-phishing attacks. This talk will cover the basics of file format fuzzing and show you how to use CERT’s fuzzing frameworks to discovery vulnerabilities in file parsers.
 
+[Improving security with Fuzzing and Sanitizers](https://media.ccc.de/v/SHA2017-148-improving_security_with_fuzzing_and_sanitizers)
+* A bug in Gstreamer could be used to own a Linux Desktop system. TCPDump released a security update fixing 42 CVEs. We have far too many security critical bugs in the free and open source software stack. But we have powerful tools to find them - we just have to use them.
 
 
 

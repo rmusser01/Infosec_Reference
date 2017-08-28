@@ -25,6 +25,9 @@
 | **Mobile self-defense - Karsten Nohl** | https://www.youtube.com/watch?v=GeCkO0fWWqc
 | **Pentesting iOS Applications - Pentester Academy - Paid Course** - This course focuses on the iOS platform and application security and is ideal for pentesters, researchers and the casual iOS enthusiast who would like to dive deep and understand how to analyze and systematically audit applications on this platform using a variety of bleeding edge tools and techniques. | http://www.pentesteracademy.com/course?id=2
 
+[Mobile Application Penetration Testing Cheat Sheet](https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet)
+
+* Redo formatting
 #### End Cull
 
 ### General
@@ -35,7 +38,7 @@
 * aurainfosec
 
 [Secure iOS application development](https://github.com/felixgr/secure-ios-app-dev)
-* This guide is a collection of the most common vulnerabilities found in iOS applications. The focus is on vulnerabilities in the applicationsí code and only marginally covers general iOS system security, Darwin security, C/ObjC/C++ memory safety, or high-level application security. Nevertheless, hopefully the guide can serve as training material to iOS app developers that want to make sure that they ship a more secure app. Also, iOS security reviewers can use it as a reference during assessments.
+* This guide is a collection of the most common vulnerabilities found in iOS applications. The focus is on vulnerabilities in the applications‚Äô code and only marginally covers general iOS system security, Darwin security, C/ObjC/C++ memory safety, or high-level application security. Nevertheless, hopefully the guide can serve as training material to iOS app developers that want to make sure that they ship a more secure app. Also, iOS security reviewers can use it as a reference during assessments.
 
 [needle](https://github.com/mwrlabs/needle)
 * Needle is an open source, modular framework to streamline the process of conducting security assessments of iOS apps.
@@ -47,8 +50,8 @@
 | Title     | Link |
 | -------- | ------------------------ |
 | **Excellent forum post detailing general security practices** | https://forum.raymond.cc/threads/hardening-apple-ios-iphone-ipad-ipod.37451/
-| **Appleís white paper on their security mechanisms built into iOS** | https://images.apple.com/ipad/business/docs/iOS_Security_Feb14.pdf)
-|  **University of Texasís Checklist/Guide to securing iOS** | https://wikis.utexas.edu/display/ISO/Apple+iOS+Hardening+Checklist
+| **Apple‚Äôs white paper on their security mechanisms built into iOS** | https://images.apple.com/ipad/business/docs/iOS_Security_Feb14.pdf)
+|  **University of Texas‚Äôs Checklist/Guide to securing iOS** | https://wikis.utexas.edu/display/ISO/Apple+iOS+Hardening+Checklist
 | **Center for Internet Security Guide to securing iOS 7** | https://benchmarks.cisecurity.org/tools2/iphone/CIS_Apple_iOS_7_Benchmark_v1.1.0.pdf
 | **Australian Signals Intel Guide to securing iOS 7** | http://www.asd.gov.au/publications/iOS7_Hardening_Guide.pdf
 | **Excellent forum post detailing general security practices** | https://forum.raymond.cc/threads/hardening-apple-ios-iphone-ipad-ipod.37451/
@@ -78,7 +81,7 @@
 | **Learning iOS Application Security - 34 part series - damnvulnerableiosapp** | http://damnvulnerableiosapp.com/#learn
 | **iOS app designed to be vulnerable in specific ways to teach security testing of iOS applications.
 | **Damn Vulnerable iOS App - Getting Started** | http://damnvulnerableiosapp.com/2013/12/get-started/
-| **OWASP iGOAT** - ìiGoat is a safe environment where iOS developers can learn about the major security pitfalls they face as well as how to avoid them. It is made up of a series of lessons that each teach a single (but vital) security lesson.î | https://www.owasp.org/index.php/OWASP_iGoat_Project
+| **OWASP iGOAT** - ‚ÄúiGoat is a safe environment where iOS developers can learn about the major security pitfalls they face as well as how to avoid them. It is made up of a series of lessons that each teach a single (but vital) security lesson.‚Äù | https://www.owasp.org/index.php/OWASP_iGoat_Project
 	
 
 
@@ -127,7 +130,7 @@
 | -------- | ------------------------ |
 | **IODIDE - The IOS Debugger and Integrated Disassembler Environment** | https://github.com/nccgroup/IODIDE
 | **Clutch** - Fast iOS executable dumper | https://github.com/KJCracks/Clutch
-| **MEMSCAN - Dump iPhone app RAM** - A Cigital consultant ñ Grant Douglas, recently created a utility called MEMSCAN which enables users to dump the memory contents of a given iPhone app. Dumping the memory contents of a process proves to be a useful technique in identifying keys and credentials in memory. Using the utility, users are able to recover keys or secrets that are statically protected within the application but are less protected at runtime. Users can also use the utility to verify that keys and credentials are appropriately disposed of after use. | http://www.cigital.com/justice-league-blog/2015/02/18/memscan-defined/
+| **MEMSCAN - Dump iPhone app RAM** - A Cigital consultant ‚Äì Grant Douglas, recently created a utility called MEMSCAN which enables users to dump the memory contents of a given iPhone app. Dumping the memory contents of a process proves to be a useful technique in identifying keys and credentials in memory. Using the utility, users are able to recover keys or secrets that are statically protected within the application but are less protected at runtime. Users can also use the utility to verify that keys and credentials are appropriately disposed of after use. | http://www.cigital.com/justice-league-blog/2015/02/18/memscan-defined/
 | **MEMSCAN - A memory scanning tool which uses mach_vm* to either dump memory or look for a specific sequence of bytes. | https://github.com/hexploitable/MEMSCAN
 | **IOS Reverse Engineering toolkit** | https://github.com/S3Jensen/iRET
 
@@ -145,7 +148,7 @@
 | Title     | Link |
 | -------- | ------------------------ |
 | **Guide to hardening iOS with the goal of privacy** | http://cydia.radare.org/sec/
-| **IPhoneDevWiki** - ìOur goal is to share the sum of all human[1] knowledge about jailbroken iOS development. In other words, this is a collection of documentation written by developers to help each other write extensions (tweaks) for jailbroken iOS, and you're invited to learn from it and contribute to it too.î| http://iphonedevwiki.net/index.php/Main_Page 
+| **IPhoneDevWiki** - ‚ÄúOur goal is to share the sum of all human[1] knowledge about jailbroken iOS development. In other words, this is a collection of documentation written by developers to help each other write extensions (tweaks) for jailbroken iOS, and you're invited to learn from it and contribute to it too.‚Äù| http://iphonedevwiki.net/index.php/Main_Page 
 | The iPhone Wiki** - The iPhone Wiki is an unofficial wiki dedicated to collecting, storing and providing information on the internals of Apple's amazing iDevices. We hope to pass this information on to the next generation of hackers so that they can go forth into their forebears' footsteps and break the ridiculous bonds Apple has put on their amazing mobile devices. | http://theiphonewiki.com/wiki/Main_Page 
 | **OWASP Jailbreaking Cheat Sheet** | https://www.owasp.org/index.php/Mobile_Jailbreaking_Cheat_Sheet
 

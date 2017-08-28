@@ -3,27 +3,32 @@
 ### TOC
 
 * Cull
-* Articles #Articles
-* How-Tos  #howtos
-* Papers  #Papers
-* Talks/Videos  #Talks
-* Tools  #Tools
+* [Articles](#Articles)
+* [How-Tos](#howtos)
+* [Papers](#Papers)
+* [Talks/Videos](#Talks)
+* [Tools](#Tools)
 
 
 
 
-| OS X Security and Privacy Guide | https://github.com/drduh/OS-X-Security-and-Privacy-Guide |
 
-[Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
-* Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
+
+
 
 #### Cull
-https://github.com/NullHypothesis/exitmap/issues/37
+
 
 #### end cull
 
 
 
+### General
+
+[OS X Security and Privacy Guide](https://github.com/drduh/OS-X-Security-and-Privacy-Guide)
+
+[Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
+* Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
 
 
 ### Blogposts
@@ -71,7 +76,7 @@ https://github.com/NullHypothesis/exitmap/issues/37
 [Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
 * Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
 
-
+[Detect Tor Exit doing sniffing by passively detecting unique DNS query (via HTML & PCAP parsing/viewing)](https://github.com/NullHypothesis/exitmap/issues/37)
 
 
 
@@ -143,6 +148,13 @@ https://github.com/NullHypothesis/exitmap/issues/37
 
 [PISSED: Privacy In a Surveillance State Evading Detection - Joe Cicero - CYPHERCON11 ](https://www.youtube.com/watch?v=keA3WcKwZwA)
 
+[What Happens Next Will Amaze You](http://idlewords.com/talks/what_happens_next_will_amaze_you.htm#six_fixes)
+
+
+
+
+
+
 
 
 
@@ -164,11 +176,17 @@ https://github.com/NullHypothesis/exitmap/issues/37
 [howmanypeoplearearound](https://github.com/schollz/howmanypeoplearearound)
 *  Count the number of people around you 👨‍👨‍👦 by monitoring wifi signals 📡
 
+[Decentraleyes](https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/)
+* Protects you against tracking through "free", centralized, content delivery. It prevents a lot of requests from reaching networks like Google Hosted Libraries, and serves local files to keep sites from breaking. Complements regular content blockers.
 
+[Decentraleyes - Github](https://github.com/Synzvato/decentraleyes)
+* A web browser extension that emulates Content Delivery Networks to improve your online privacy. It intercepts traffic, finds supported resources locally, and injects them into the environment. All of this happens automatically, so no prior configuration is required.
 
+[Destroy-Windows-10-Spying](https://github.com/Nummer/Destroy-Windows-10-Spying)
+* Destroy Windows Spying tool
 
-
-
+[meek](https://github.com/Yawning/meek)
+* meek is a blocking-resistant pluggable transport for Tor. It encodes a data stream as a sequence of HTTPS requests and responses. Requests are reflected through a hard-to-block third-party web server in order to avoid talking directly to a Tor bridge. HTTPS encryption hides fingerprintable byte patterns in Tor traffic.sek
 
 
 

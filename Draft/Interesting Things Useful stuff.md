@@ -20,9 +20,23 @@ TOC
 
 
 #### To Sort
+* sort and break into policy/high level/ vs interesting things
 
 
 
+[U.S. Department of Health and Human Services Office for Civil Rights Breach Portal: Notice to the Secretary of HHS Breach of Unsecured Protected Health Information](https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf)
+
+[Webrecorder](https://webrecorder.io/)
+* Create high-fidelity, interactive web archives of any web site you browse
+
+[pdf-bot](https://github.com/esbenp/pdf-bot)
+* ü§ñ A Node queue API for generating PDFs using headless Chrome. Comes with a CLI, S3 storage and webhooks for notifying subscribers about generated PDFs
+
+
+[symbolhound](http://symbolhound.com/)
+* SymbolHound is a search engine that doesn't ignore special characters. This means you can easily search for symbols like &, %, and œÄ. We hope SymbolHound will help programmers find information about their chosen languages and frameworks more easily.
+
+[Windows Commands Abused by Attackers](http://blog.jpcert.or.jp/2016/01/windows-commands-abused-by-attackers.html)
 
 https://www.youtube.com/watch?v=h92vmwg9Tyc
 
@@ -33,18 +47,34 @@ http://spth.virii.lu/articles.htm
 [LuxBase](https://github.com/kienankb/LuxBase)
 
 | **Simplifying the Business Bar Coded Boarding Pass Implementation Guide** | http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf
-| **Whatís contained in a boarding pass barcode?** | https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode
+| **What‚Äôs contained in a boarding pass barcode?** | https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode
 | **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
 | **NSA USB Playset - ShmooCon201** | https://www.youtube.com/watch?v=eTDBFpLYcGA
 
+[Your Project from Idea to Reality](http://www.slideshare.net/maltman23/your-project-from-idea-to-reality)
+
+[Beyond Information Warfare: You aint seen nothing yet - Winn Scwartau](http://www.irongeek.com/i.php?page=videos/derbycon3/2206-beyond-information-warfare-you-ain-t-seen-nothing-yet-winn-schwartau)
+
+[Bootstrapping A Security Research Project Andrew Hay](https://www.youtube.com/watch?v=gNU2J-IcK4E)
+* It has become increasingly common to see a headline in the mainstream media talking about the latest car, television, or other IoT device being hacked (hopefully by a researcher). In each report, blog, or presentation, we learn about the alarming lack of security and privacy associated with the device's hardware, communications mechanisms, software/app, and hosting infrastructure in addition to how easy it might be for an attacker to take advantage of one, or multiple, threat vectors. The truth is, anyone can perform this kind of research if given the right guidance. To many security professionals, however, the act of researching something isn,t the problem...it's what to research, how to start, and when to stop. Academics think nothing of researching something until they feel it's "done" (or their funding/tenure runs out). Security professionals, however, often do not have that luxury. This session will discuss how to research, well, ANYTHING. Proven methods for starting, continuing, ending, leading, and collaborating on reproducible research will be discussed - taking into account real-world constraints such as time, money, and a personal life. We will also discuss how to generate data, design your experiments, analyze your results, and present (and in some cases defend) your research to the public.
+
+[Killing you softly Josh Bressers](http://www.irongeek.com/i.php?page=videos/circlecitycon2016/302-killing-you-softly-josh-bressers)
+* The entire security industry has a serious skill problem. We,re technically able, but we have no soft skills. We can,t talk to normal people at all. We can barely even talk to each other, and it's killing our industry. Every successful industry relies on the transfer of skills from the experienced to the inexperienced. Security lacks this today. If I asked you how you learned what you know about security, what would your answer be? In most cases you learned everything you know on your own. There was minimal learning from someone else. This has left us with an industry full of magicians, but even worse it puts us in a place where there is no way to transfer skill and knowledge from one generation to the next. Magicians don,t scale. If we think about this in the context of how we engage non security people it's even worse! Most non security people have no idea what security is, what security does, or even why security is important. It's easy to laugh at the horrible security problems almost everything has today, but in reality we,re laughing at ourselves. Historically we,ve blamed everything else for this problem when in reality it's 100% our fault. One of the our great weaknesses is failing to get the regular people to understand security and why it's important. This isn,t a surprise if you think about how the industry communicates. We can barely talk to each other, how can we possibly talk to someone who doesn,t know anything about security? Normal people are confused and scared, they want to do the right thing but they have no idea what that is. The future leaders in security are going to have to be able to teach and talk to their security peers, but more importantly they will have to engage everyone else. Security is being paid attention to like never before, and yet we have nothing to say to anyone. What has changed in the last few years? If we don,t do our jobs, someone else will do them for us, and we,re not going to like the results. Security isn,t a technical problem, technical problems are easy, security is a communication problem. Communications problems are difficult. Let's figure out how we can fix that.
+
+[Medical Device Law: Compliance Issues, Best Practices and Trends - American Bar Association](https://www.americanbar.org/content/dam/aba/events/cle/2015/10/ce1510mdm/ce1510mdm_interactive.authcheckdam.pdf)
+
+[Virtualization Based Security - Part 2: kernel communications](http://blog.amossys.fr/virtualization-based-security-part2.html)
+
+[NSARCHIVE - The Cyber Vault](http://nsarchive.gwu.edu/cybervault/)
+* An online resource documenting cyber activities of the U.S. and foreign governments as well as international organizations.
 
 
 
 
 
+[‚ÄúConsidered Harmful‚Äù Essays Considered Harmful](http://meyerweb.com/eric/comment/chech.html)
 
-[recap](https://github.com/rackerlabs/recap)
-* recap is a reporting script that generates reports of various information about the server.
+[Detecting Automation of Twitter Accounts:Are You a Human, Bot, or Cyborg](http://www.cs.wm.edu/~hnw/paper/tdsc12b.pdf)
 
 [QR Code interesting](http://datagenetics.com/blog/november12013/index.html)
 
@@ -97,14 +127,14 @@ http://www.securitywizardry.com/radar.htm
 
 [[TROOPERS15] Andreas Lindh - Defender Economics](https://www.youtube.com/watch?v=mAP38Xy52X0)
 
-[Alexseyís TTPs](https://medium.com/@chrismcnab/alexseys-ttps-1204d9050551#.y2krgov7t)
+[Alexsey‚Äôs TTPs](https://medium.com/@chrismcnab/alexseys-ttps-1204d9050551#.y2krgov7t)
 * Short writeup on large breaches(Short: Shit ain't secure.)
 
-[The Distribution of Usersí Computer Skills: Worse Than You Think](https://www.nngroup.com/articles/computer-skill-levels/)
+[The Distribution of Users‚Äô Computer Skills: Worse Than You Think](https://www.nngroup.com/articles/computer-skill-levels/)
 
 [Infosec Podcasts](http://www.getmon.com/)
 
-[What happens whenÖ](https://github.com/alex/what-happens-when)
+[What happens when‚Ä¶](https://github.com/alex/what-happens-when)
 * An attempt to answer the age old interview question "What happens when you type google.com into your browser and press enter?" 
 
 [Encyclopedia of things considered harmful](http://harmful.cat-v.org/)
@@ -166,7 +196,7 @@ http://www.securitywizardry.com/radar.htm
 
 [Underhanded C contest](http://underhanded-c.org/)
 
-[DIY Nukeproofing: A New Dig at ìData-Miningî](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-3alarmlampscooter-DIY-Nukeproofing.pdf)
+[DIY Nukeproofing: A New Dig at ‚ÄúData-Mining‚Äù](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-3alarmlampscooter-DIY-Nukeproofing.pdf)
 
 [How They Did It: An Analysis of Emission Defeat Devices in Modern Automobiles](https://www.ieee-security.org/TC/SP2017/papers/101.pdf)
 
@@ -189,7 +219,7 @@ http://www.securitywizardry.com/radar.htm
 [Evaluating the APT Armor - Matthias Luft, Felix Wilhelm](https://www.youtube.com/watch?v=3vh2s9Pui0E)
 
 [Psychology of Security - Stefan Schumacher - Trooper14](https://www.youtube.com/watch?v=vZKAi4RAIvA)
-* In this talk I will introduce the Instituteís research programme about the Psychology of Security. We are going to research the psychological basics of IT security, including: How do people experience IT security? How are they motivated? How do they learn? Why do people tend to make the same mistakes again and again (Buffer Overflow, anyone?)? What can we do to prevent security incidents? Which curricula should be taught about IT security?
+* In this talk I will introduce the Institute‚Äôs research programme about the Psychology of Security. We are going to research the psychological basics of IT security, including: How do people experience IT security? How are they motivated? How do they learn? Why do people tend to make the same mistakes again and again (Buffer Overflow, anyone?)? What can we do to prevent security incidents? Which curricula should be taught about IT security?
 
 [You're Leaking Trade Secrets - Defcon22 Michael Schrenk](https://www.youtube.com/watch?v=JTd5TL6_zgY)
 * Networks don't need to be hacked for information to be compromised. This is particularly true for organizations that are trying to keep trade secrets. While we hear a lot about personal privacy, little is said in regard to organizational privacy. Organizations, in fact, leak information at a much greater rate than individuals, and usually do so with little fanfare. There are greater consequences for organizations when information is leaked because the secrets often fall into the hands of competitors. This talk uses a variety of real world examples to show how trade secrets are leaked online, and how organizational privacy is compromised by seemingly innocent use of The Internet.
@@ -225,11 +255,11 @@ http://www.securitywizardry.com/radar.htm
 [Real-life experiences in avionics security assessment (A. Barisani)](https://www.youtube.com/watch?v=xtSmPgXw34I&feature=youtu.be&app=desktop)
 
 [Software Supply Chains and the Illusion of Control - Derek Weeks](http://www.irongeek.com/i.php?page=videos/bsidesnova2017/107-software-supply-chains-and-the-illusion-of-control-derek-weeks)
-* In this presentation I am sharing the results of a three-year, industry-wide study on open source development and security practices across 3,000 organizations and 25,000. I will detail how these organizations are employing a vast community of open source component suppliers, warehouses, and development tools that take the form of software supply chains. Modern software development practices are now consuming BILLIONS of open source and third-party components. The tooling with package managers and build tools such as Maven, Gradle, npm, NuGet, RubyGems and others has promoted the usage of components to a convenient standard practice. As a result, 90% of a typical application is now composed of open source components. The good news: use of the components is improving developer productivity and accelerating time to market. However, using these components brings ownership and responsibility with it and this fact is largely overlooked. The unspoken truth: not all parts are created equal. For example, 1 in 16 components in use include known security vulnerabilities. Ugh. This session aims to enlighten development professionals by sharing results from the State of the Software Supply Chain reports from 2015 through 2017. The reports blend of public and proprietary data with expert research and analysis. Attendees in this session will learn: - What our analysis of 25,000 applications reveals about the quality and security of software built with open source components - How organizations like Mayo Clinic, Exxon, Capital One, the U.S. FDA and Intuit are utilizing the principles of software supply chain automation to improve application security - Why avoiding open source components over 3 years old might be a really good idea - How to balance the need for speed with quality and security -- early in the development lifecycle We will also discuss how you can best approach the effort for development teams to identify, track and replace components with known vulnerabilities, while getting more products and new features to market quickly. Attend this session and gain insight as to how your organizationís application development practices compare to others. I'll share the industry benchmarks to take back and discuss with your development, security, and open source governance teams.
+* In this presentation I am sharing the results of a three-year, industry-wide study on open source development and security practices across 3,000 organizations and 25,000. I will detail how these organizations are employing a vast community of open source component suppliers, warehouses, and development tools that take the form of software supply chains. Modern software development practices are now consuming BILLIONS of open source and third-party components. The tooling with package managers and build tools such as Maven, Gradle, npm, NuGet, RubyGems and others has promoted the usage of components to a convenient standard practice. As a result, 90% of a typical application is now composed of open source components. The good news: use of the components is improving developer productivity and accelerating time to market. However, using these components brings ownership and responsibility with it and this fact is largely overlooked. The unspoken truth: not all parts are created equal. For example, 1 in 16 components in use include known security vulnerabilities. Ugh. This session aims to enlighten development professionals by sharing results from the State of the Software Supply Chain reports from 2015 through 2017. The reports blend of public and proprietary data with expert research and analysis. Attendees in this session will learn: - What our analysis of 25,000 applications reveals about the quality and security of software built with open source components - How organizations like Mayo Clinic, Exxon, Capital One, the U.S. FDA and Intuit are utilizing the principles of software supply chain automation to improve application security - Why avoiding open source components over 3 years old might be a really good idea - How to balance the need for speed with quality and security -- early in the development lifecycle We will also discuss how you can best approach the effort for development teams to identify, track and replace components with known vulnerabilities, while getting more products and new features to market quickly. Attend this session and gain insight as to how your organization‚Äôs application development practices compare to others. I'll share the industry benchmarks to take back and discuss with your development, security, and open source governance teams.
 
 [303 Hacks Lies Nation States Mario DiNatale](https://www.youtube.com/watch?v=nyh_ORq1Qwk)
 
-[Paul Rascagneres - Modern Reconnaissance Phase by APT ñ Protection Layer](https://www.youtube.com/watch?v=4JVrK7bRKb0&index=10&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
+[Paul Rascagneres - Modern Reconnaissance Phase by APT ‚Äì Protection Layer](https://www.youtube.com/watch?v=4JVrK7bRKb0&index=10&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
 
 [BE YOUR OWN VPN PROVIDER WITH OPENBSD (v2)](https://networkfilter.blogspot.com/2017/04/be-your-own-vpn-provider-with-openbsd-v2.html)
 
@@ -241,8 +271,16 @@ http://www.securitywizardry.com/radar.htm
 * When do you ? and other coders, hackers, developers, and tinkerers ? think or worry about the law? If your answer is, ?Not very often,? then this talk is for you. We all need to think about the law. And it?s not just privacy, or computer fraud, or even anti-circumvention law, that we should think about. We need to think about law as a whole and how it can help us do or stop us from doing what we want to do. This talk will start with a broad overview of the ways in which we implicate law when we do what we do, and then will focus on what that means for us and the broader implications that can arise from our various activities. Do you think the law would stop you from doing what you want to do or punish you for doing it? It might, but it also might not. If you think it does, do you think you should be able to do what you want to do? If you do, then we need to hack the law, and to do that we?ll need to talk to the legal coders, those writers of our cultural software. This talk will tackle not only law and working with code, but also why it matters for us to be aware of the law and engaged in improving it.
 
 [Richard Thieme - The Impact of Dark Knowledge and Secrets on Security and Intelligence Professionals](https://www.youtube.com/watch?v=0MzcPBAj88A&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
-* Dismissing or laughing off concerns about what it does to a person to know critical secrets does not lessen the impact on life, work, and relationships of building a different map of reality than ìnormal peopleî use. One has to calibrate narratives to what another believes. One has to live defensively, warily. This causes at the least cognitive dissonance which some manage by denial. But refusing to feel the pain does not make it go away. It just intensifies the consequences when they erupt.
-Philip K. Dick said, reality is that which, when you no longer believe in it, does not go away. When cognitive dissonance evolves into symptoms of traumatic stress, one ignores those symptoms at oneís peril. But the very constraints of oneís work often make it impossible to speak aloud about those symptoms, because that might threaten oneís clearances, work, and career. And whistle blower protection is often non-existent.
+* Dismissing or laughing off concerns about what it does to a person to know critical secrets does not lessen the impact on life, work, and relationships of building a different map of reality than ‚Äúnormal people‚Äù use. One has to calibrate narratives to what another believes. One has to live defensively, warily. This causes at the least cognitive dissonance which some manage by denial. But refusing to feel the pain does not make it go away. It just intensifies the consequences when they erupt.
+Philip K. Dick said, reality is that which, when you no longer believe in it, does not go away. When cognitive dissonance evolves into symptoms of traumatic stress, one ignores those symptoms at one‚Äôs peril. But the very constraints of one‚Äôs work often make it impossible to speak aloud about those symptoms, because that might threaten one‚Äôs clearances, work, and career. And whistle blower protection is often non-existent.
+
+[Game of Drones - Brown,Latimer - Defcon25](https://www.youtube.com/watch?v=iG7hUE2BZZo)
+* We‚Äôve taken a MythBusters-style approach to testing the effectiveness of a variety of drone defense solutions, pitting them against our DangerDrone. Videos demonstrating the results should be almost as fun for you to watch as they were for us to produce. Expect to witness epic aerial battles against an assortment of drone defense types
+
+[Hacks, Lies, & Nation States - Mario DiNatale - ANYCON 2017](http://www.irongeek.com/i.php?page=videos/anycon2017/303-hacks-lies-nation-states-mario-dinatale)
+* A hilarious and non-technical skewering of the current state of Cybersecurity, the Cybersecurity
+
+
 
 
 
@@ -258,7 +296,7 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 [Palinopsia - Is your VirtualBox reading your E-Mail? Reconstruction of FrameBuffers from VRAM](https://hsmr.cc/palinopsia/)
 
 [Exploiting the DRAM rowhammer bug to gain kernel privileges](http://googleprojectzero.blogspot.com/2015/03/exploiting-dram-rowhammer-bug-to-gain.html)
-* "Rowhammerî is a problem with some recent DRAM devices in which repeatedly accessing a row of memory can cause bit flips in adjacent rows. We tested a selection of laptops and found that a subset of them exhibited the problem. We built two working privilege escalation exploits that use this effect. One exploit uses rowhammer-induced bit flips to gain kernel privileges on x86-64 Linux when run as an unprivileged userland process. When run on a machine vulnerable to the rowhammer problem, the process was able to induce bit flips in page table entries (PTEs). It was able to use this to gain write access to its own page table, and hence gain read-write access to all of physical memory.
+* "Rowhammer‚Äù is a problem with some recent DRAM devices in which repeatedly accessing a row of memory can cause bit flips in adjacent rows. We tested a selection of laptops and found that a subset of them exhibited the problem. We built two working privilege escalation exploits that use this effect. One exploit uses rowhammer-induced bit flips to gain kernel privileges on x86-64 Linux when run as an unprivileged userland process. When run on a machine vulnerable to the rowhammer problem, the process was able to induce bit flips in page table entries (PTEs). It was able to use this to gain write access to its own page table, and hence gain read-write access to all of physical memory.
 
 [Program for testing for the DRAM "rowhammer" problem](https://github.com/google/rowhammer-test)
 
@@ -266,7 +304,7 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 
 [If it fits - it sniffs: Adventures in WarShipping](http://www.irongeek.com/i.php?page=videos/derbycon4/t104-if-it-fits-it-sniffs-adventures-in-warshipping-larry-pesce)
 
-
+[A Look In the Mirror: Attacks on Package Managers](https://isis.poly.edu/~jcappos/papers/cappos_mirror_ccs_08.pdf)
 
 
 
@@ -351,6 +389,21 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 
 [Wayback scraper](https://github.com/abrenaut/waybackscraper)
 
+[WizTree](http://www.majorgeeks.com/files/details/wiztree.html)
+* WizTree is a disk space analyzer that will quickly scan your entire hard drive and shows you which files and folders are using the most disk space. WizTree obtains information by directly scanning the MFT file, so it can only work with local (directly attached) drives formatted with the NTFS file system. It won't work with network drives, substituted drives or non-NTFS formatted drives. We may add support for other drive types in the future if there's enough demand.
+
+[CyberChef - GCHQ](https://github.com/gchq/CyberChef)
+* CyberChef is a simple, intuitive web app for carrying out all manner of "cyber" operations within a web browser. These operations include simple encoding like XOR or Base64, more complex encryption like AES, DES and Blowfish, creating binary and hexdumps, compression and decompression of data, calculating hashes and checksums, IPv6 and X.509 parsing, changing character encodings, and much more.
+
+[gibbersense](https://github.com/smxlabs/gibbersense)
+* Extract Sense out of Gibberish stuff
+
+[Netdude](http://netdude.sourceforge.net/)
+* The Network Dump data Displayer and Editor is a framework for inspection, analysis and manipulation of tcpdump trace files. It addresses the need for a toolset that allows easy inspection, modification, and creation of pcap/tcpdump trace files. Netdude builds on any popular UNIX-like OS, such as Linux, the BSDs, or OSX.
+
+[recap](https://github.com/rackerlabs/recap)
+* recap is a reporting script that generates reports of various information about the server.
+
 
 
 
@@ -403,7 +456,7 @@ Underhanded C
 [OSINT Through Sender Policy Framework Records](https://community.rapid7.com/community/infosec/blog/2015/02/23/osint-through-sender-policy-framework-spf-records)
 
 [Smart TV Security - #1984 in 21 st century](https://cansecwest.com/slides/2013/SmartTV%20Security.pdf)
-* This talk is more about security bugs and rootkits than about firmware for TVs. This talk more covers rootkits than security bugs and exploitation thereof, as theyíre not different to traditional techniques. This talk is about general security issues of all Smart TV vendors.
+* This talk is more about security bugs and rootkits than about firmware for TVs. This talk more covers rootkits than security bugs and exploitation thereof, as they‚Äôre not different to traditional techniques. This talk is about general security issues of all Smart TV vendors.
 
 [Postcards from a Post-XSS World - Michael Zalewski](http://lcamtuf.coredump.cx/postxss/#dangling-markup-injection)
 * This page is a rough collection of notes on some of the fundamental alternatives to direct script injection that would be available to attackers following the universal deployment of CSP or other security mechanisms designed to prevent the execution of unauthorized scripts. I hope to demonstrate that in many cases, the capabilities offered by these alternative methods are highly compatible with the goals of contemporary XSS attacks. 
@@ -414,7 +467,7 @@ Underhanded C
 
 [More on Using Bash's Built-in /dev/tcp File (TCP/IP)](http://www.linuxjournal.com/content/more-using-bashs-built-devtcp-file-tcpip More on Using Bash's Built-in /dev/tcp File (TCP/IP))
 
-[Chinaís Great Cannon](https://citizenlab.org/2015/04/chinas-great-cannon/) * This post describes our analysis of Chinaís ìGreat Cannon,î our term for an attack tool that we identify as separate from, but co-located with, the Great Firewall of China. The first known usage of the Great Cannon is in the recent large-scale novel DDoS attack on both GitHub and servers used by GreatFire.org.
+[China‚Äôs Great Cannon](https://citizenlab.org/2015/04/chinas-great-cannon/) * This post describes our analysis of China‚Äôs ‚ÄúGreat Cannon,‚Äù our term for an attack tool that we identify as separate from, but co-located with, the Great Firewall of China. The first known usage of the Great Cannon is in the recent large-scale novel DDoS attack on both GitHub and servers used by GreatFire.org.
 
 [Exploiting Android Users for Fun and Profit](http://www.codeword.xyz/2015/08/09/exploiting-android-users-for-fun-and-profit/)
 
@@ -431,7 +484,7 @@ Underhanded C
 
 [Locking Your Registry Keys for Fun and, Well, Just Fun I Guess](https://tyranidslair.blogspot.co.uk/2017/07/locking-your-registry-keys-for-fun-and.html)
 
-
+[How to Steal a Nuclear Warhead Without Voiding Your XBox Warranty (paper)](https://www.scribd.com/document/47334072/How-to-Steal-a-Nuclear-Warhead-Without-Voiding-Your-XBox-Warranty-paper)
 
 
 
@@ -447,7 +500,7 @@ Underhanded C
 [Wars Within](http://uninformed.org/?v=all&a=26&t=sumry)
 * In this paper I will uncover the information exchange of what may be classified as one of the highest money making schemes coordinated by 'organized crime'. I will elaborate on information gathered from a third party individual directly involved in all aspects of the scheme at play. I will provide a detailed explanation of this market's origin, followed by a brief description of some of the actions strategically performed by these individuals in order to ensure their success. Finally, I will elaborate on real world examples of how a single person can be labeled a spammer, malware author, cracker, and an entrepreneur gone thief. For the purposes of avoiding any legal matters, and unwanted media, I will refrain from mentioning the names of any individuals and corporations who are involved in the schemes described in this paper. 
 
-[The Eavesdropperís Dillemma](http://www.crypto.com/papers/internet-tap.pdf)
+[The Eavesdropper‚Äôs Dillemma](http://www.crypto.com/papers/internet-tap.pdf)
 
 [Mov is turing ocmplete](http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)
 
@@ -455,7 +508,7 @@ Underhanded C
 
 [Thousands of MongoDB installations on the net unprotected](http://cispa.saarland/wp-content/uploads/2015/02/MongoDB_documentation.pdf)
 
-[Why Qubes doesnít work on Windows.](http://www.invisiblethingslab.com/resources/2014/A%20crack%20on%20the%20glass.pdf)
+[Why Qubes doesn‚Äôt work on Windows.](http://www.invisiblethingslab.com/resources/2014/A%20crack%20on%20the%20glass.pdf)
 
 [Towards Optimization-Safe Systems: Analyzing the Impact of Undefined Behavior](http://pdos.csail.mit.edu/~xi/papers/stack-sosp13.pdf)
 * This paper studies an emerging class of software bugs called optimization-unstable code: code that is unexpectedly discarded by compiler optimizations due to undefined behavior in the program. Unstable code is present in many systems, including the Linux kernel and the Postgres database. The consequences of unstable code range from incorrect functionality to missing security checks. To reason about unstable code, this paper proposes a novel model, which views unstable code in terms of optimizations that leverage undefined behavior. Using this model, we introduce a new static checker called Stack that precisely identifies unstable code. Applying Stack to widely used systems has uncovered 160 new bugs that have been confirmed and fixed by developers
@@ -481,10 +534,10 @@ Underhanded C
 [Ceremony Design and Analysis](http://eprint.iacr.org/2007/399.pdf)
 * Abstract: The concept of Ceremony is introduced as an extension of the concept of network protocol, with human nodes alongside computer nodes and with communication links that include UI, human-to-human communication and transfers of physical objects that carry data. What is out-of-band to a protocol is in-band to a ceremony, and therefore subject to design and analysis using variants of the same mature techniques used for the design and analysis of protocols. Ceremonies include all protocols, as well as all applications with a user interface, all workflow and all provisioning scenarios. A secure ceremony is secure against both normal attacks and social engineering. However, some secure protocols imply ceremonies that cannot be made secure. 
 
-[Itís all about the timing. . . Blackhat talk](https://www.blackhat.com/presentations/bh-usa-07/Meer_and_Slaviero/Whitepaper/bh-usa-07-meer_and_slaviero-WP.pdf)
+[It‚Äôs all about the timing. . . Blackhat talk](https://www.blackhat.com/presentations/bh-usa-07/Meer_and_Slaviero/Whitepaper/bh-usa-07-meer_and_slaviero-WP.pdf)
 * Description: This paper is broken up into several distinct parts, all related loosely to timing and its role in information se- curity today. While timing has long been recognized as an important component in the crypt-analysts arse- nal, it has not featured very prominently in the domain of Application Security Testing. This paper aims at highlighting some of the areas in which timing can be used with great effect, where traditional avenues fail. In this paper, a brief overview of previous timing attacks is provided, the use of timing as a covert channel is examined and the effectiveness of careful timing during traditional web application and SQL injection attacks is demonstrated. The use of Cross Site Timing in bypass- ing the Same Origin policy is explored as we believe the technique has interesting possibilities for turning innocent browsers into bot-nets aimed at, for instance, brute-force attacks against third party web-sites
 
-[Seven Monthsí Worth of Mistakes: A Longitudinal Study of Typosquatting Abuse](https://lirias.kuleuven.be/bitstream/123456789/471369/3/typos-final.pdf)
+[Seven Months‚Äô Worth of Mistakes: A Longitudinal Study of Typosquatting Abuse](https://lirias.kuleuven.be/bitstream/123456789/471369/3/typos-final.pdf)
 * Abstract: Typosquatting is the act of purposefully registering a domain name that is a mistype of a popular domain name. It is a concept that has been known and studied for over 15 years, yet still thoroughly practiced up until this day. While previous typosquatting studies have always taken a snapshot of the typosquatting landscape or base their longitudinal results only on domain registration data, we present the first content- based , longitudinal study of typosquatting. We collected data about the typosquatting domains of the 500 most popular sites of the Internet every day, for a period of seven months, and we use this data to establish whether previously discovered typosquatting trends still hold today, and to provide new results and insights in the typosquatting landscape. In particular we reveal that, even though 95% of the popular domains we investigated are actively targeted by typosquatters, only few trademark owners protect themselves against this practice by proactively registering their own typosquatting domains. We take advantage of the longitudinal aspect of our study to show, among other results, that typosquatting domains change hands from typosquatters to legitimate owners and vice versa, and that typosquatters vary their monetization strategy by hosting different types of pages over time. Our study also reveals that a large fraction of typosquatting domains can be traced back to a small group of typosquatting page hosters and that certain top-level domains are much more prone to typosquatting than others
 
 [RSA Key Extraction via Low-Bandwidth Acoustic Cryptanalysis](http://www.tau.ac.il/~tromer/acoustic/)

@@ -29,23 +29,35 @@ Cull
 
 
 
-[Droidsec - Pretty much should be your first stop](http://www.droidsec.org/wiki/)
-
-[Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
-| **csploit** - "The most complete and advanced IT security professional toolkit on Android."(*From their site*) | http://www.csploit.org/docs.html -- [Github Link](https://github.com/cSploit/android/tree/master/cSploit)
-
 
 ### Cull/Sort
-
-[Appie ñ Android Pentesting Portable Integrated Environment](https://manifestsecurity.com/appie/)
-
-
+* Redo formatting
 
 https://blog.gdssecurity.com/labs/2015/2/18/when-efbfbd-and-friends-come-knocking-observations-of-byte-a.html
 
 http://nelenkov.blogspot.com
 
 [Add Security Exception to APK](https://github.com/levyitay/AddSecurityExceptionAndroid)
+
+[DonkeyGuard](https://github.com/CollegeDev/DonkeyGuard/)
+* DonkeyGuard allows you a fine-grained tuning of access to your private data. It currently supports 41 restrictions which can be applied for every application. Specifically, it is a Privacy service provider which implements a set of modifications to the Android Framework to allow you to interact with applications which are trying to access your private data. 
+
+[The Android boot process](https://thecyberfibre.com/android-boot-process/)
+
+[Intercepting HTTPS traffic of Android Nougat Applications](https://serializethoughts.com/2016/09/10/905/)
+* TL;DR To intercept network traffic for Android 7.0 targeted applications, introduce a res/xml/network_security_config.xml file.
+
+### End cull
+ 
+
+### General
+
+[Droidsec - Pretty much should be your first stop](http://www.droidsec.org/wiki/)
+
+[Hacking Your Way Up The Mobile Stack](http://vimeo.com/51270090)
+| **csploit** - "The most complete and advanced IT security professional toolkit on Android."(*From their site*) | http://www.csploit.org/docs.html -- [Github Link](https://github.com/cSploit/android/tree/master/cSploit)
+
+[Mobile Application Penetration Testing Cheat Sheet](https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet)
 
 
 
@@ -110,6 +122,11 @@ Check the Encryption section of the overall guide for more information.
 | -------- | ------------------------ |
 | **List of Android Exploits** | https://github.com/droidsec/droidsec.github.io/wiki/Vuln-Exploit-List)
 
+[Android_Kernel_CVE_POC](https://github.com/ScottyBauer/Android_Kernel_CVE_POCs)
+
+[plzdonthack.me](https://plzdonthack.me/)
+* personal site of scotty bauer
+
 
 ### **<a name="DAnalysis">Device Analysis</a>**
 | Title     | Link |
@@ -157,6 +174,8 @@ Check the Encryption section of the overall guide for more information.
 [android-gdb](https://github.com/darchons/android-gdb)
 * GDB fork targetting Android/Fennec development
 
+[How to avoid certificate pinning in the latest versions of Android](https://www.welivesecurity.com/2016/09/08/avoid-certificate-pinning-latest-versions-androidESET%20Blog:%20We%20Live%20Security)
+
 
 
 ### **<a name="Static">Static Analysis</a>**
@@ -171,7 +190,7 @@ Check the Encryption section of the overall guide for more information.
 | **[PAPER]Thresher: Precise Refutations for Heap Reachability** |http://www.cs.colorado.edu/~sabl4745/papers/pldi13-thresher.pdf
 | **lint - Static Analysis** - The Android lint tool is a static code analysis tool that checks your Android project source files for potential bugs and optimization improvements for correctness, security, performance, usability, accessibility, and internationalization.|https://developer.android.com/tools/help/lint.html
 | **Flow Droid - Taint Analysis** - FlowDroid is a context-, flow-, field-, object-sensitive and lifecycle-aware static taint analysis tool for Android applications. |http://sseblog.ec-spride.de/tools/flowdroid/
-| **[PAPER]FlowDroid: Precise Context, Flow, Field, Object-sensitive and Lifecycle-aware Taint Analysis for Android Apps** - In this work we thus present F LOW D ROID , a novel and highly precise static taint analysis for Android applications. A precise model of Androidís lifecycle allows the analysis to properly handle callbacks invoked by the Android framework, while context, flow, field and object-sensitivity allows the analysis to reduce the number of false alarms. Novel on-demand algorithms help F LOW D ROID maintain high efficiency and precision at the same time| http://www.bodden.de/pubs/far+14flowdroid.pdf
+| **[PAPER]FlowDroid: Precise Context, Flow, Field, Object-sensitive and Lifecycle-aware Taint Analysis for Android Apps** - In this work we thus present F LOW D ROID , a novel and highly precise static taint analysis for Android applications. A precise model of Android‚Äôs lifecycle allows the analysis to properly handle callbacks invoked by the Android framework, while context, flow, field and object-sensitivity allows the analysis to reduce the number of false alarms. Novel on-demand algorithms help F LOW D ROID maintain high efficiency and precision at the same time| http://www.bodden.de/pubs/far+14flowdroid.pdf
 | **dedex** - Is a command line tool for disassembling Android DEX files.|https://github.com/mariokmk/dedex
 | **DexMac** - Is a native OSX application for disassembling Android DEX files. | https://github.com/mariokmk/DexMac
 | **dexdissasembler** - Is a GTK tool for disassembling Android DEX files. }https://github.com/mariokmk/dexdisassemble
@@ -221,7 +240,7 @@ Check the Encryption section of the overall guide for more information.
 | -------- | ------------------------ |
 | **APK Studio - Android Reverse Engineering** - APK Studio is an IDE for decompiling/editing & then recompiling of android application binaries. Unlike initial release being Windows exclusive & also didn't support frameworks, this one is completely re-written using QT for cross-platform support. You can now have multiple frameworks installed & pick a particular one on a per project basis. |https://apkstudio.codeplex.com/
 | **Android apk-tool** - It is a tool for reverse engineering 3rd party, closed, binary Android apps. It can decode resources to nearly original form and rebuild them after making some modifications; it makes possible to debug smali code step by step. Also it makes working with app easier because of project-like files structure and automation of some repetitive tasks like building apk, etc.  | https://code.google.com/p/android-apktool/
-| **Reversing and Auditing Androidís Proprietary bits** |http://www.slideshare.net/joshjdrake/reversing-and-auditing-androids-proprietary-bits
+| **Reversing and Auditing Android‚Äôs Proprietary bits** |http://www.slideshare.net/joshjdrake/reversing-and-auditing-androids-proprietary-bits
 | **Smali** - smali/baksmali is an assembler/disassembler for the dex format used by dalvik, Android's Java VM implementation. The syntax is loosely based on Jasmin's/dedexer's syntax, and supports the full functionality of the dex format (annotations, debug info, line info, etc.)  |https://code.google.com/p/smali/
 | APKinpsector** - APKinspector is a powerful GUI tool for analysts to analyze the Android applications.| https://github.com/honeynet/apkinspector/
 | **Dexter** - Dexter is a static android application analysis tool |http://dexter.dexlabs.org/accounts/login/?next=/dashboard
@@ -301,7 +320,7 @@ Check the Encryption section of the overall guide for more information.
 ### **<a name="Education">Educational Material</a>**
 | Title     | Link |
 | -------- | ------------------------ |
-| **OWASP GoatDroid** - ìOWASP GoatDroid is a fully functional and self-contained training environment for educating developers and testers on Android security. GoatDroid requires minimal dependencies and is ideal for both Android beginners as well as more advanced users. The project currently includes two applications: FourGoats, a location-based social network, and Herd Financial, a mobile banking application. There are also several feature that greatly simplify usage within a training environment or for absolute beginners who want a good introduction to working with the Android platform.î |https://www.owasp.org/index.php/Projects/OWASP_GoatDroid_Project
+| **OWASP GoatDroid** - ‚ÄúOWASP GoatDroid is a fully functional and self-contained training environment for educating developers and testers on Android security. GoatDroid requires minimal dependencies and is ideal for both Android beginners as well as more advanced users. The project currently includes two applications: FourGoats, a location-based social network, and Herd Financial, a mobile banking application. There are also several feature that greatly simplify usage within a training environment or for absolute beginners who want a good introduction to working with the Android platform.‚Äù |https://www.owasp.org/index.php/Projects/OWASP_GoatDroid_Project
 | **Insecure Bank v2** - This vulnerable Android application is named "InsecureBankv2" and is made for security enthusiasts and developers to learn the Android insecurities by testing this vulnerable application. Its back-end server component is written in python. The client component i.e. the Android InsecureBank.apk can be downloaded along with the source code.  |https://github.com/dineshshetty/Android-InsecureBankv2
 
 
@@ -344,8 +363,10 @@ Check the Encryption section of the overall guide for more information.
 | **Root Tools** - RootTools provides rooted developers a standardized set of tools for use in the development of rooted applications | https://github.com/Stericson/RootTools
 
 
+[Protect Your Java Code ‚Äî Through Obfuscators And Beyond](https://www.excelsior-usa.com/articles/java-obfuscators.html)
 [fdroidcl](https://github.com/mvdan/fdroidcl#advantages-over-the-android-clientx)
 * F-Droid desktop client.
+
 
 [Heimdall](https://github.com/Benjamin-Dobell/Heimdall)
 * Heimdall is a cross-platform open-source tool suite used to flash firmware (aka ROMs) onto Samsung Galaxy S devices.

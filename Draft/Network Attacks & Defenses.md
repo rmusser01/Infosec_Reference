@@ -31,6 +31,11 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 [Scanning Effectively Through a SOCKS Pivot with Nmap and Proxychains](https://cybersyndicates.com/2015/12/nmap-and-proxychains-scanning-through-a-socks-piviot/)
 * [Script](https://github.com/killswitch-GUI/PenTesting-Scripts/blob/master/Proxychains-Nmap.py)
 
+[RFC 5246 - The Transport Layer Security (TLS) Protocol Version 1.2](https://tools.ietf.org/html/rfc5246)
+
+[Udp2raw-tunnel](https://github.com/wangyu-/udp2raw-tunnel)
+* A Tunnel which tunnels UDP via FakeTCP/UDP/ICMP Traffic by using Raw Socket, helps you Bypass UDP FireWalls(or Unstable UDP Environment). Its Encrypted, Anti-Replay and Multiplexed. It also acts as a Connection Stabilizer.)
+
 ##### sort end
 
 
@@ -266,6 +271,9 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 [SIMPLYEMAIL](https://github.com/killswitch-GUI/SimplyEmail)
 * What is the simple email recon tool? This tool was based off the work of theHarvester and kind of a port of the functionality. This was just an expansion of what was used to build theHarvester and will incorporate his work but allow users to easily build Modules for the Framework. Which I felt was desperately needed after building my first module for theHarvester.
+
+[Swaks - Swiss Army Knife for SMTP](http://www.jetmore.org/john/code/swaks/)
+
 
 
 #### Network Host/Service:

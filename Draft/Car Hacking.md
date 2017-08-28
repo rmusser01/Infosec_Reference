@@ -12,11 +12,6 @@
 
 #### Cull
 
-http://dn5.ljuska.org/cyber-attacks-on-vehicles-2.html 
-
-
-
-
 ### End cull
 
 
@@ -43,7 +38,9 @@ Seriously check this first ---> [Awesome Vehicle Security List(github awesome li
 
 [Tesla Model S JSON API (unofficial RE post)](http://docs.timdorr.apiary.io/#reference/vehicles)
 
+[Cyber-attacks on vehicles P-I!](http://dn5.ljuska.org/napadi-na-auto-sistem-1.html)
 
+[Cyber-attacks on vehicles P-II!](http://dn5.ljuska.org/cyber-attacks-on-vehicles-2.html)
 
 
 
@@ -58,6 +55,14 @@ Seriously check this first ---> [Awesome Vehicle Security List(github awesome li
 [Broadcasting your attack: Security testing DAB radio in cars - Andy Davis](http://2015.ruxcon.org.au/assets/2015/slides/Broadcasting-your-attack-Security-testing-DAB-radio-in-cars.pdf)
 
 [A Survey of Remote Automotive Attack Surfaces  - Black Hat USA 2014](https://www.youtube.com/watch?v=mNhFGJVq2HE)
+
+[Broadcasting your attack: Security testing DAB radio in cars - Andy Davis](http://2015.ruxcon.org.au/assets/2015/slides/Broadcasting-your-attack-Security-testing-DAB-radio-in-cars.pdf)
+
+[A Vulnerability in Modern Automotive Standards and How We Exploited It](https://documents.trendmicro.com/assets/A-Vulnerability-in-Modern-Automotive-Standards-and-How-We-Exploited-It.pdf)
+
+[Car hacking: getting from A to B with Eve (SHA2017)](https://www.youtube.com/watch?v=l9760bzUN3E)
+* Car security is, not surprisingly, a hot topic; after all they are fast and heavy computer controlled machinery that nowadays come with all kinds of internet connectivity. So we decided to have a look at it. In our presentation, we’ll first cover some theory behind the IT-part of car architecture. We’ll discuss attack vectors and their likelihood of success, and then discuss the various vulnerabilities we found. Finally, we will combine these vulnerabilities into a remote attack. Depending on the disclosure process with the vendor, which is pending, we might be able to demonstrate the attack.
+
 
 
 

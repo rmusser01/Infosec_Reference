@@ -196,6 +196,18 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 [Using Software Defined Radio for IoT Analysis](https://www.irongeek.com/i.php?page=videos/bsidesnova2017/102-using-software-defined-radio-for-iot-analysis-samantha-palazzolo)
 
+[GPS-SDR-SIM](https://github.com/osqzss/gps-sdr-sim)
+* Software-Defined GPS Signal Simulator; GPS-SDR-SIM
+
+
+
+
+
+
+
+
+
+
 
 
 

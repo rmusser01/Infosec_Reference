@@ -62,6 +62,11 @@
 
 [BATTLE OF SKM AND IUM - How Windows 10 rewrites OS Architecture - Alex Ionescu](http://www.alex-ionescu.com/blackhat2015.pdf)
 
+[RtlEncryptMemory function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa387693(v=vs.85).aspx)
+
+[RtlDecryptMemory function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa387692(v=vs.85).aspx)
+
+
 
 
 #### Access Control
@@ -87,6 +92,8 @@
 
 [Windows Data Protection](https://msdn.microsoft.com/en-us/library/ms995355.aspx)
 
+[The Component Object Model](https://msdn.microsoft.com/library/ms694363.aspx)
+
 
 
 ##### Exploit Mitigations
@@ -107,6 +114,8 @@
 [Pushing the Limits of Windows: Virtual Memory](http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx)
 
 [Memory Translation and Segmentation](http://duartes.org/gustavo/blog/post/memory-translation-and-segmentation/)
+
+[Exploring Windows virtual memory management](http://www.triplefault.io/2017/08/exploring-windows-virtual-memory.html)
 
 
 

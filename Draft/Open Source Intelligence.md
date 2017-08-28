@@ -23,6 +23,11 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 
 
+* Add list of Sources:
+* UCC - Uniform Commercial Code; DOC - Current Industrial Patents; DMV - Vehicle Ownership applications; Patents - Patent DBs; Operating Licenses/Permits; Trade Journals;
+
+* SWOT - Strengths, Weaknesses, Opportunities, Threats
+
 #### End cull
 
 
@@ -141,6 +146,11 @@ A tool to perform various OSINT techniques, aggregate all the raw data, and give
 ..* hashtags used by the Twitter user and when are used (date and time)
 ..* user mentions by the the Twitter user and when are occurred (date and time)
 ..* topics used by the Twitter user
+
+[GoogD0rker](https://github.com/ZephrFish/GoogD0rker)
+* GoogD0rker is a tool for firing off google dorks against a target domain, it is purely for OSINT against a specific target domain. Designed for OSX originally however googD0rker txt now works on all nix platforms.
+
+
 
 
 

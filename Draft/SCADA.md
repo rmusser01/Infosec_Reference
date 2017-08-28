@@ -17,7 +17,7 @@
 
 ### General
 
-
+[Cassandra coefficient and ICS cyber – is this why the system is broken](http://www.controlglobal.com/blogs/unfettered/cassandra-coefficient-and-ics-cyber-is-this-why-the-system-is-broken/)
 
 
 ### Articles/Blogposts

@@ -32,9 +32,10 @@ TOC
 
 [Tab Napping - Phishing](http://www.exploit-db.com/papers/13950/)
 
+[Top 10 Email Subjects for Company Phishing Attacks](http://www.pandasecurity.com/mediacenter/security/top-10-email-subjects-phishing-attacks/)
 
 
-* Search for categorized domain that can be used during red teaming engagement. Perfect to setup whitelisted domain for your Cobalt Strike beacon C&C.  It relies on expireddomains.net to obtain a list of expired domains. The domain availability is validated using checkdomain.com
+
 
 
 

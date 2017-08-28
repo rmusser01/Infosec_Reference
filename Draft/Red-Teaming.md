@@ -59,6 +59,11 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 [Adam Compton - Hillbilly Storytime - Pentest Fails](https://www.youtube.com/watch?v=GSbKeTPv2TU)
 * Whether or not you are just starting in InfoSec, it is always important to remember that mistakes happen, even to the best and most seasoned of analysts. The key is to learn from your mistakes and keep going. So, if you have a few minutes and want to talk a load off for a bit, come and join in as a hillbilly spins a yarn about a group unfortunate pentesters and their misadventures. All stories and events are true (but the names have been be changed to prevent embarrassment).
 
+[88MPH Digital tricks to bypass Physical security - ZaCon4 - Andrew MacPherson](https://vimeo.com/52865794)
+
+
+
+
 
 
 
@@ -99,6 +104,13 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 [Blocking-resistant communication through domain fronting](https://www.bamsoftware.com/papers/fronting/)
 
 [Abusing Windows Management Instrumentation (WMI) to Build a Persistent, Asyncronous, and Fileless Backdoor](https://www.blackhat.com/docs/us-15/materials/us-15-Graeber-Abusing-Windows-Management-Instrumentation-WMI-To-Build-A-Persistent%20Asynchronous-And-Fileless-Backdoor-wp.pdf)
+
+[Command & Control: Understanding, Denying and Detecting - 2014](https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf)
+* Joseph Gardiner, Marco Cova, Shishir Nagaraja
+
+[Project Loki - Phrack 7-49](http://phrack.org/issues/49/6.html)
+* This whitepaper is intended as a complete description of the covert channel that exists in networks that allow ping traffic (hereon referred to in the more general sense of ICMP_ECHO traffic --see below) to pass.
+
 
 
 

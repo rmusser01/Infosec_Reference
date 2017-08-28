@@ -66,6 +66,15 @@ http://www.grymoire.com/Security/Hardware.html
 prompt.ml
 
 Clickjacking attacks
+
+
+[Transport Layer Security (TLS) Extensions](https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml)
+
+
+
+[DOM Living Standard](https://dom.spec.whatwg.org/)
+
+
 #### End Sort
 
 
@@ -155,6 +164,9 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
 ### <a name="generalt">General Tools</a>
 
+[PowerWebShot](https://github.com/dafthack/PowerWebShot)
+* A PowerShell tool for taking screenshots of multiple web servers quickly.
+
 [ParrotNG](https://github.com/ikkisoft/ParrotNG/releases)
 * ParrotNG is a Java-based tool for automatically identifying vulnerable SWF files, built on top of swfdump. One JAR, two flavors: command line tool and Burp Pro Passive Scanner Plugin.
 
@@ -208,6 +220,18 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 [Caja](https://developers.google.com/caja/)
 *  The Caja Compiler is a tool for making third party HTML, CSS and JavaScript safe to embed in your website. It enables rich interaction between the embedding page and the embedded applications. Caja uses an object-capability security model to allow for a wide range of flexible security policies, so that your website can effectively control what embedded third party code can do with user data.
 
+[SAML Raider](https://github.com/SAMLRaider/SAMLRaider)
+* SAML Raider is a Burp Suite extension for testing SAML infrastructures. It contains two core functionalities: Manipulating SAML Messages and manage X.509 certificates.
+
+[Race The Web (RTW)](https://github.com/insp3ctre/race-the-web)
+* Tests for race conditions in web applications by sending out a user-specified number of requests to a target URL (or URLs) simultaneously, and then compares the responses from the server for uniqueness. Includes a number of configuration options.
+
+[faker.js](https://github.com/Marak/faker.js)
+* generate massive amounts of fake data in Node.js and the browser
+
+
+
+
 
 
 
@@ -222,6 +246,12 @@ As seen on: https://www.owasp.org/index.php/Category:Attack
 [Server Side Template Injection](http://blog.portswigger.net/2015/08/server-side-template-injection.html)
 
 [Server-Side Template Injection: RCE for the modern webapp](https://portswigger.net/knowledgebase/papers/ServerSideTemplateInjection.pdf)
+
+[Server-Side Template Injection](http://blog.portswigger.net/2015/08/server-side-template-injection.html)
+* This paper defines a methodology for detecting and exploiting template injection, and shows it being applied to craft RCE zerodays for two widely deployed enterprise web applications. Generic exploits are demonstrated for five of the most popular template engines, including escapes from sandboxes whose entire purpose is to handle user-supplied templates in a safe way.
+
+[Exploring SSTI in Flask/Jinja2](https://nvisium.com/blog/2016/03/09/exploring-ssti-in-flask-jinja2/)
+
 
 
 
@@ -482,11 +512,19 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [b374k shell 3.2](https://github.com/b374k/b374k)
 * This PHP Shell is a useful tool for system or web administrator to do remote management without using cpanel, connecting using ssh, ftp etc. All actions take place within a web browser
 
-| **Simple websockets based webshell** | http://ibreak.software/2015/02/18/simple-websockets-based-webshell/
+[Simple websockets based webshell](http://ibreak.software/2015/02/18/simple-websockets-based-webshell/)
 
+[Case Study: How Backdoors Bypass Security Solutions with Advanced Camouflage Techniques](https://www.incapsula.com/blog/backdoor-malware-analysis-obfuscation-techniques.html)
+* Look at PHP obfuscation methods for webshells
 
+[NeoPI](https://github.com/Neohapsis/NeoPI)
+* What is NeoPI? NeoPI is a Python script that uses a variety of statistical methods to detect obfuscated and encrypted content within text/script files. The intended purpose of NeoPI is to aid in the detection of hidden web shell code. The development focus of NeoPI was creating a tool that could be used in conjunction with other established detection methods such as Linux Malware Detect or traditional signature/keyword based searches.
 
+[Shell Detector](https://github.com/emposha/Shell-Detector)
+* Shell Detector – is a application that helps you find and identify php/cgi(perl)/asp/aspx shells. Shell Detector has a “web shells” signature database that helps to identify “web shell” up to 99%.
 
+[Loki - Simple IOC Scanner](https://github.com/Neo23x0/Loki)
+* Scanner for Simple Indicators of Compromise
 
  
 
@@ -597,6 +635,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [ebay.com: RCE using CCS](http://secalert.net/#ebay-rce-ccs)
 
+[Pwning PHP mail() function For Fun And RCE | New Exploitation Techniques And Vectors](https://exploitbox.io/paper/Pwning-PHP-Mail-Function-For-Fun-And-RCE.html)
+
 
 
 
@@ -614,7 +654,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [psychoPATH - LFI](https://github.com/ewilded/psychoPATH/blob/master/README.md)
 * This tool is a highly configurable payload generator detecting LFI & web root file uploads. Involves advanced path traversal evasive techniques, dynamic web root list generation, output encoding, site map-searching payload generator, LFI mode, nix & windows support plus single byte generator.
 
-
+[Turning LFI into RFI](https://l.avala.mp/?p=241)
+* When configured in a specific way the web application would load the JAR file and search within the file for a class. Interestingly enough, in Java classes you can define a static block that is executed upon the class being processed
 
 
 
@@ -686,11 +727,14 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [jSQL Injection](https://github.com/ron190/jsql-injection)
 * jSQL Injection is a Java application for automatic SQL database injection.
 
-
 [SQLi Lab lessons](https://github.com/Audi-1/sqli-labs)
 * SQLI-LABS is a platform to learn SQLI
 
 [Performing sqlmap POST request injection](https://hackertarget.com/sqlmap-post-request-injection/)
+
+[SQL Injection Cheat Sheet - NetSparker](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/)
+
+
 
 
 
@@ -783,9 +827,10 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [A Placement Vulnerability Study in Multi-Tenant Public Clouds](https://www.usenix.org/node/191017)
 
+[LFI2RCE (Local File Inclusion to Remote Code Execution) advanced exploitation: /proc shortcuts](http://www.ush.it/2008/08/18/lfi2rce-local-file-inclusion-to-remote-code-execution-advanced-exploitation-proc-shortcuts/)
+* This paper exposes the ability from the attacker standpoint to use /proc in order to exploit LFI (Local File Inclusion) vulnerabilities.
 
-
-
+[Cracking the Lens: Targeting HTTP's Hidden Attack Surface](https://portswigger.net/knowledgebase/papers/CrackingTheLens-whitepaper.pdf)
 
 
 
@@ -826,6 +871,13 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [Service-Oriented-Architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture)
 
 [Microservices](https://en.wikipedia.org/wiki/Microservices)
+
+[WS-Attacker](https://github.com/RUB-NDS/WS-Attacker)
+* WS-Attacker is a modular framework for web services penetration testing. It is developed by the Chair of Network and Data Security, Ruhr University Bochum (http://nds.rub.de/ ) and the Hackmanit GmbH (http://hackmanit.de/).
+
+[WS-Attacks.org](http://www.ws-attacks.org/Welcome_to_WS-Attacks)
+* WS-Attacks.org is not a new web service standard by the OASIS Group or W3C; instead it presents the flaws of today's web service standards and implementations in regard to web service security! WS-Attacks.org aims at delivering the most comprehensive enumeration of all known web service attacks.
+
 
 
 
@@ -912,3 +964,11 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [distribute-damage](https://github.com/PortSwigger/distribute-damage)
 * Designed to make Burp evenly distribute load across multiple scanner targets, this extension introduces a per-host throttle, and a context menu to trigger scans from. It may also come in useful for avoiding detection.
+
+[Autorize](https://github.com/Quitten/Autorize)
+* Autorize is an automatic authorization enforcement detection extension for Burp Suite. It was written in Python by Barak Tawily, an application security expert, and Federico Dotta, a security expert at Mediaservice.net. Autorize was designed to help security testers by performing automatic authorization tests. With the last release now Autorize also perform automatic authentication tests.
+
+[Adapting Burp Extensions for Tailored Pentesting](http://blog.portswigger.net/2017/08/adapting-burp-extensions-for-tailored.html)
+
+[HUNT](https://github.com/bugcrowd/HUNT)
+* HUNT is a Burp Suite extension to: 1. Identify common parameters vulnerable to certain vulnerability classes; 2. Organize testing methodologies inside of Burp Suite;

@@ -1,8 +1,5 @@
 # Windows Exfiltration
-
-
-
-
+-------------------------------
 
 
 
@@ -12,7 +9,8 @@
 [Automated Exfiltration - ATT&CK](https://attack.mitre.org/wiki/Technique/T1020)
 * Data, such as sensitive documents, may be exfiltrated through the use of automated processing or Scripting after being gathered during Collection. When automated exfiltration is used, other exfiltration techniques likely apply as well to transfer the information out of the network, such as Exfiltration Over Command and Control Channel and Exfiltration Over Alternative Protocol. 
 
-
+[LNKUp](https://github.com/Plazmaz/LNKUp)
+* This tool will allow you to generate LNK payloads. Upon rendering or being run, they will exfiltrate data.
 
 
 

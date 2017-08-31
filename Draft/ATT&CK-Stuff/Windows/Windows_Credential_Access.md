@@ -133,7 +133,8 @@ To Fill
 [grepwin](https://sourceforge.net/projects/grepwin/)
 * grepWin is a simple search and replace tool which can use regular expressions to do its job. This allows to do much more powerful searches and replaces.
 
-
+[LaZagne](https://github.com/AlessandroZ/LaZagne/blob/master/README.md)
+* The LaZagne project is an open source application used to retrieve lots of passwords stored on a local computer. Each software stores its passwords using different techniques (plaintext, APIs, custom algorithms, databases, etc.). This tool has been developed for the purpose of finding these passwords for the most commonly-used software.
 
 
 

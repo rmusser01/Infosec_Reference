@@ -29,16 +29,20 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 [Abusing Kerberos](https://www.blackhat.com/docs/us-14/materials/us-14-Duckwall-Abusing-Microsoft-Kerberos-Sorry-You-Guys-Don%27t-Get-It-wp.pdf)
 
+[Binary SMS - The old backdoor to your new thing](https://www.contextis.com/resources/blog/binary-sms-old-backdoor-your-new-thing/)
+
+[Pwning pwners like a n00b](https://www.youtube.com/watch?v=E8O8bB3I3i0)
+
+[Writing Bad @$$ Malware for OS X - Patrick Wardle](https://www.blackhat.com/docs/us-15/materials/us-15-Wardle-Writing-Bad-A-Malware-For-OS-X.pdf)
+
+[Pwning pwners like a n00b](https://www.youtube.com/watch?v=E8O8bB3I3i0)
 
 
-## politics
-------------
-[Guccifer 2.0: Game Over - Six Months In](http://g-2.space/sixmonths/)
 
-
-
-
-
+[Hack Microsoft Using Microsoft Signed Binaries - Pierre-Alexandre Braeken](https://www.youtube.com/watch?v=V9AJ9M8_-RE&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=15)
+* Imagine being attacked by legitimate software tools that cannot be detected by usual defender tools.
+How bad could it be to be attacked by malicious threat actors only sending bytes to be read and bytes to be written in order to achieve advanced attacks?
+The most dangerous threat is the one you can’t see. At a time when it is not obvious to detect memory attacks using API like VirtualAlloc, what would be worse than having to detect something like “f 0xffffe001`0c79ebe8+0x8 L4 0xe8 0xcb 0x04 0x10”? We will be able to demonstrate that we can achieve every kind of attacks you can imagine using only PowerShell and a Microsoft Signed Debugger. We can retrieve passwords from the userland memory, execute shellcode by dynamically parsing loaded PE or attack the kernel achieving advanced persistence inside any system.
 
 
 
@@ -91,6 +95,7 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 ## Car Hacking
 ------------
 
+[An Introduction to the CAN Bus: How to Programmatically Control a Car: Hacking the Voyage Ford Fusion to Change A/C Temperature](https://news.voyage.auto/an-introduction-to-the-can-bus-how-to-programmatically-control-a-car-f1b18be4f377)
 
 
 
@@ -116,7 +121,7 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 ## Crypto
 ------------
 
-
+[Quick'n easy gpg cheatsheet](http://irtfweb.ifa.hawaii.edu/%7Elockhart/gpg/)
 
 
 
@@ -170,7 +175,9 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 ## Exploit Dev
 ------------
 
-
+* [Introduction to Windows shellcode development – Part 1](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/)
+* [Introduction to Windows shellcode development – Part 2](https://securitycafe.ro/2015/12/14/introduction-to-windows-shellcode-development-part-2/)
+* [Introduction to Windows shellcode development – Part 3](https://securitycafe.ro/2016/02/15/introduction-to-windows-shellcode-development-part-3/)
 
 
 
@@ -238,7 +245,8 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 ## Malware
 ------------
 
-
+[The Economics of Exploit Kits & E-Crime](http://www.irongeek.com/i.php?page=videos/bsidescolumbus2016/offense03-the-economics-of-exploit-kits-e-crime-adam-hogan)
+* I will discuss how the market for exploit kits has been changing, in techniques, marketing and prices. I argue that the competitiveness between exploit kits shows a maturing market, but will leverage economic theory to demonstrate the limits to which that market will continue to mature. This should allow us to understand how exploit kits affect (and are affected by) the rest of the greater market for hacker services, from malware (as an input) to nation-state level attacks (e.g. trickle down from Hacking Team). I hope to provide a better understanding of how exploit kits work and how their sold as well as how this market can teach us about the rational choice to engage in criminal activity and how we might dissuade them.
 
 
 
@@ -246,12 +254,28 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 ## Mainframes
 ------------
 
+[Privilege escalation on z/OSINT - ayoul3 github](https://github.com/ayoul3/Privesc)
+* Some scripts to quickly escalate on z/OS given certain misconfigurations.
+
+[REX_Scripts](https://github.com/ayoul3/Rexx_scripts)
+* A collection of interesting REXX scripts to ease the life a mainframe pentester
+
+[Mainframes - Mopeds and Mischief; A PenTesters Year in Review](http://www.irongeek.com/i.php?page=videos/derbycon4/t203-mainframes-mopeds-and-mischief-a-pentesters-year-in-review-tyler-wrightson)
+
 
 
 
 
 ## Network Scanning and Attacks
 ------------
+
+[NSEInfo](https://github.com/christophetd/nmap-nse-info/blob/master/README.md)
+* NSEInfo is a tool to interactively search through nmap's NSE scripts.
+
+
+
+
+
 
 
 
@@ -266,7 +290,8 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 ## OSINT
 ------------
 
-
+[AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)
+* AWSBucketDump is a tool to quickly enumerate AWS S3 buckets to look for loot. It's similar to a subdomain bruteforcer but is made specifically for S3 buckets and also has some extra features that allow you to grep for delicious files as well as download interesting files if you're not afraid to quickly fill up your hard drive.
 
 
 
@@ -287,6 +312,12 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 ## Phishing/SE
 ------------
+
+[Outlook and Exchange for the Bad Guys Nick Landers](https://www.youtube.com/watch?v=cVhc9VOK5MY)
+
+[Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel  - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
+
+
 
 
 
@@ -312,13 +343,51 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 
 
+## Politics
+------------
+[Guccifer 2.0: Game Over - Six Months In](http://g-2.space/sixmonths/)
+
+
+
+
+
 ## Post Exploitation/Privilege Escalation
 ------------
 [CredCrack](https://github.com/gojhonny/CredCrack)
 * CredCrack is a fast and stealthy credential harvester. It exfiltrates credentials recusively in memory and in the clear. Upon completion, CredCrack will parse and output the credentials while identifying any domain administrators obtained. CredCrack also comes with the ability to list and enumerate share access and yes, it is threaded! CredCrack has been tested and runs with the tools found natively in Kali Linux. CredCrack solely relies on having PowerSploit's "Invoke-Mimikatz.ps1" under the /var/www directory.
 
+[Sandboxes from a pen tester’s view - Rahul Kashyap](http://www.irongeek.com/i.php?page=videos/derbycon3/4303-sandboxes-from-a-pen-tester-s-view-rahul-kashyap)
+* Description: In this talk we’ll do an architectural decomposition of application sandboxing technology from a security perspective. We look at various popular sandboxes such as Google Chrome, Adobe ReaderX, Sandboxie amongst others and discuss the limitations of each technology and it’s implementation. Further, we discuss in depth with live exploits how to break out of each category of sandbox by leveraging various kernel and user mode exploits – something that future malware could leverage. Some of these exploit vectors have not been discussed widely and awareness is important.
 
 [Windows Security Center: Fooling WMI Consumers](https://www.opswat.com/blog/windows-security-center-fooling-wmi-consumers)
+
+[Script Task](https://docs.microsoft.com/en-us/sql/integration-services/control-flow/script-task)
+* Persistence Via MSSQL
+
+[“Fileless” UAC Bypass Using eventvwr.exe and Registry Hijacking](https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/)
+
+[Userland Persistence with Scheduled Tasks and COM Handler Hijacking](https://enigma0x3.net/2016/05/25/userland-persistence-with-scheduled-tasks-and-com-handler-hijacking/)
+
+[Shackles, Shims, and Shivs - Understanding Bypass Techniques](http://www.irongeek.com/i.php?page=videos/derbycon6/535-shackles-shims-and-shivs-understanding-bypass-techniques-mirovengi)
+
+[How to determine Linux guest VM virtualization technology](https://www.cyberciti.biz/faq/linux-determine-virtualization-technology-command/)
+
+[Introducing PowerShell into your Arsenal with PS>Attack - Jared Haight](http://www.irongeek.com/i.php?page=videos/derbycon6/119-introducing-powershell-into-your-arsenal-with-psattack-jared-haight)
+
+[Attacking ADFS Endpoints with PowerShell](http://www.irongeek.com/i.php?page=videos/derbycon6/118-attacking-adfs-endpoints-with-powershell-karl-fosaaen)
+
+[pywerview](https://github.com/the-useless-one/pywerview)
+* A (partial) Python rewriting of PowerSploit's PowerView
+
+[LaZagne](https://github.com/AlessandroZ/LaZagne/blob/master/README.md)
+* The LaZagne project is an open source application used to retrieve lots of passwords stored on a local computer. Each software stores its passwords using different techniques (plaintext, APIs, custom algorithms, databases, etc.). This tool has been developed for the purpose of finding these passwords for the most commonly-used software.
+
+[Capturing Windows 7 Credentials at Logon Using Custom Credential Provider](https://blog.leetsys.com/2012/01/02/capturing-windows-7-credentials-at-logon-using-custom-credential-provider/)
+* The quick lowdown: I wrote a DLL capable of logging the credentials entered at logon for Windows Vista, 7 and future versions which you can download at http://www.leetsys.com/programs/credentialprovider/cp.zip. The credentials are logged to a file located at c:\cplog.txt.  Simply copy the dll to the system32 directory and run the included register.reg script to create the necessary registry settings.
+
+
+
+
 
 
 
@@ -327,8 +396,10 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 
 ## Programming:
+------------
 [Trollius and asyncio](https://trollius.readthedocs.io/asyncio.html)
 
+[The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
 
 
 
@@ -350,6 +421,15 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 [Reverse Engineering of Proprietary Protocols, Tools and Techniques - Rob Savoye - FOSDEM 2009 ](https://www.youtube.com/watch?v=t3s-mG5yUjY)
 * This talk is about reverse engineering a proprietary network protocol, and then creating my own implementation. The talk will cover the tools used to take binary data apart, capture the data, and techniques I use for decoding unknown formats. The protocol covered is the RTMP protocol used by Adobe flash, and this new implementation is part of the Gnash project.
+
+[Jailbreaks and Pirate Tractors: Reverse Engineering Do’s and Don’ts](https://www.youtube.com/watch?v=8_mMTVsOM6Y)
+
+[Multiple vulnerabilities found in the Dlink DWR-932B (backdoor, backdoor accounts, weak WPS, RCE ...)](https://pierrekim.github.io/blog/2016-09-28-dlink-dwr-932b-lte-routers-vulnerabilities.html)
+
+
+
+
+
 
 
 
@@ -376,6 +456,17 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 * a sniffer and a packet generator; FTP and Telnet; Metasploit and oslq; a webserver and a browser; 
 * About 20 new vulnerabilities in common SCADA systems including Simatic WinCC will be revealed.
 
+[Introduction to Attacking ICS/SCADA Systems for Penetration Testers -GDS Sec](http://blog.gdssecurity.com/labs/2017/5/17/introduction-to-attacking-icsscada-systems-for-penetration-t.html)
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -388,7 +479,7 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 ## System Internals
 ------------
-
+[Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11).aspx?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&iid=22f4306f9238443891cea105281cfd3f&uid=150127534&nid=244+289476616)
 
 
 
@@ -396,6 +487,8 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 ## Threat Modeling & Analysis
 ------------
 
+
+[Global Adversarial Capability Modeling](https://www.youtube.com/watch?v=56T3JN09SrY#t=41)
 
 
 
@@ -414,12 +507,14 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 ## Web: 
 ------------
+[WeasyPrint](http://weasyprint.org/)
+* WeasyPrint is a visual rendering engine for HTML and CSS that can export to PDF. It aims to support web standards for printing. WeasyPrint is free software made available under a BSD license.
 
+[Pen test and hack microsoft sql server (mssql)](http://travisaltman.com/pen-test-and-hack-microsoft-sql-server-mssql/)
 
+[Exploiting Python Code Injection in Web Applications](https://sethsec.blogspot.com/2016/11/exploiting-python-code-injection-in-web.html)
 
-
-
-
+[SQLi Lab lessons](https://github.com/Audi-1/sqli-labs)
 
 
 
@@ -434,4 +529,4 @@ https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop
 
 * https://github.com/isislab/Project-Ideas/wiki
 
-* https://github.com/enddo/awesome-windows-exploitation/blob/master/README.md
+* https://github.com/enddo/awesome-windows-exploitation/blob/master/README.mdd

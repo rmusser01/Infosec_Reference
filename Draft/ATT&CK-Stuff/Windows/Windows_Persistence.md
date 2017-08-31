@@ -173,6 +173,9 @@ Unfilled:
 
 [Install a Persistant Backdoor in Windows Using Netcat ](https://null-byte.wonderhowto.com/how-to/install-persistant-backdoor-windows-using-netcat-0162348/)
 
+[Script Task](https://docs.microsoft.com/en-us/sql/integration-services/control-flow/script-task)
+* Persistence Via MSSQL
+
 
 
 ## Netsh Helper DLL

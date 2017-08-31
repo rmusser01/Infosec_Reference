@@ -11,6 +11,7 @@
 
 ### Cull
 Stunnel
+
 [Learn how to hide your trojans, backdoors, etc from anti virus.](https://www.hellboundhackers.org/articles/read-article.php?article_id=842)
 
 [[Virus] Self-modifying code-short overview for beginners](http://phimonlinemoinhat.blogspot.com/2010/12/virus-self-modifying-code-short.html)
@@ -18,28 +19,19 @@ Stunnel
 [PlugBot-C2C](https://github.com/redteamsecurity/PlugBot-C2C)
 * This is the Command & Control component of the PlugBot project
 
-[Data Exfiltration (Tunneling) Attacks against Corporate Network](https://pentest.blog/data-exfiltration-tunneling-attacks-against-corporate-network/)
-
-[canisrufus](https://github.com/maldevel/canisrufus)
-* A stealthy Python based Windows backdoor that uses Github as a command and control server
-
-https://github.com/sensepost/det
-
-
-iodine
-
-
-http://windowsir.blogspot.com/2013/07/howto-data-exfiltration.html
 
 ### <a name="general">General</a>
 
+[HowTo: Data Exfiltration - windowsir.blogspot](https://windowsir.blogspot.com/2013/07/howto-data-exfiltration.html)
 
-
+[Data Exfiltration (Tunneling) Attacks against Corporate Network](https://pentest.blog/data-exfiltration-tunneling-attacks-against-corporate-network/)
 
 ### <a name="methods">Methodologies</a>
 
 
-
+Twitter
+Git
+VC software
 Gmail/other email services Draft emails
 Draft emails
 
@@ -65,6 +57,13 @@ Draft emails
 
 [Multitun](https://github.com/covertcodes/multitun) 
 * Efficiently and securely tunnel everything over a harmless looking WebSocket!
+
+[Data Exfiltration Toolkit(DET)](https://github.com/sensepost/det)
+* DET (is provided AS IS), is a proof of concept to perform Data Exfiltration using either single or multiple channel(s) at the same time. This is a Proof of Concept aimed at identifying possible DLP failures. This should never be used to exfiltrate sensitive/live data (say on an assessment) The idea was to create a generic toolkit to plug any kind of protocol/service to test implmented Network Monitoring and Data Leakage Prevention (DLP) solutions configuration, against different data exfiltration techniques.
+
+[canisrufus](https://github.com/maldevel/canisrufus)
+* A stealthy Python based Windows backdoor that uses Github as a command and control server
+
 
 
 ### Papers

@@ -16,3 +16,5 @@ Examples of % ?
 Tutorials involving % 
 
 Writeups on %  
+
+Emoji Reference: [Emoji cheat shee](https://www.webpagefx.com/tools/emoji-cheat-sheet/)

@@ -35,7 +35,13 @@ http://en.cppreference.com/w/c
 #### End Cull
 
 
+
+
+
+-----------
 ### <a name="general">General</a>
+The content here is just stuff I've come across or think would be useful to someone in infosec. It is not to be taken as anything beyond a suggestion about stuff.
+
 
 [Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
 
@@ -97,7 +103,7 @@ http://en.cppreference.com/w/c
 
 
 
-
+-----------
 ### <a name="sca">Source Code Analysis</a>
 
 
@@ -119,8 +125,15 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 
 
 
-
+---------
 ### <a name="asm">Assembly x86/x64/ARM</a>
+
+[x86 Assembly - Wikipedia](https://en.wikipedia.org/wiki/X86)
+
+[x86-64 Assembly - Wikipedia](https://en.wikipedia.org/wiki/X86-64)
+
+[Mov is turing complete](http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)
+
 #### Learning
 [x86 Assembly Guide/Reference - Wikibooks](https://en.wikibooks.org/wiki/X86_Assembly)
 * Introduction for those who don’t know ASM and a reference for those that do.
@@ -140,12 +153,11 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 
 [x86 Assembly Crash Course](https://www.youtube.com/watch?v=75gBFiFtAb8)
 
-[WinREPL](https://github.com/zerosum0x0/WinREPL)
-* x86 and x64 assembly "read-eval-print loop" shell for Windows
+[Learning assembly for linux-x64](https://github.com/0xAX/asm)
 
-[aslrepl](https://github.com/enferex/asrepl)
-* asrepl is an assembly based REPL. The REPL processes each line of user input, the output can be witnessed by issuing the command 'regs' and looking at the register state.
+[Introduction to writing x86 assembly code in Visual Studio](http://lallouslab.net/2014/07/03/introduction-to-writing-x86-assembly-code-in-visual-studio/)
 
+[Introduction to writing x64 assembly in Visual Studio](http://lallouslab.net/2016/01/11/introduction-to-writing-x64-assembly-in-visual-studio/)
 
 #### Reference
 
@@ -165,22 +177,45 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 
 [Intel x86 Assembler Instruction Set Opcode Table](http://sparksandflames.com/files/x86InstructionChart.html)
 
+
+
 #### Videos
 
 [Introduction Video Series(6) to x86 Assembly](https://www.youtube.com/watch?v=qn1_dRjM6F0&list=PLPXsMt57rLthf58PFYE9gOAsuyvs7T5W9)
 
 [Intro to x86 - Derbycon5](http://www.irongeek.com/i.php?page=videos/derbycon5/stable34-intro-to-x86-stephanie-preston)
 
-### Other
+
+
+#### Tools
+
+[WinREPL](https://github.com/zerosum0x0/WinREPL)
+* x86 and x64 assembly "read-eval-print loop" shell for Windows
 
 [aslrepl](https://github.com/enferex/asrepl)
 * asrepl is an assembly based REPL. The REPL processes each line of user input, the output can be witnessed by issuing the command 'regs' and looking at the register state.
 
+#### Other
 
 
 
 
-### Android
+----------
+### Android (Kotlin/Android Java)
+
+[Kotlin - Wikipedia](https://en.wikipedia.org/wiki/Kotlin_(programming_language))
+
+[Java - Wikipedia](https://en.wikipedia.org/wiki/Java_(programming_language))
+
+[Android Secure Coding Standard](https://www.securecoding.cert.org/confluence/display/android/Android+Secure+Coding+Standard)
+
+#### Learn
+
+
+#### Reference
+
+
+#### Tools
 
 [java-aes-crypto (Android class)](https://github.com/tozny/java-aes-crypto)
 * A simple Android class for encrypting & decrypting strings, aiming to avoid the classic mistakes that most such classes suffer from.
@@ -191,12 +226,42 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 
 
 
+
+
+----------
 ### Bash 
+
+
+[Bash - GNU](https://www.gnu.org/software/bash/)
+
+[Bash (Unix shell) - Wikipedia](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
+
+
+
+#### Learn
+
+[BASH Programming - Introduction HOW-TO - tldp](http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO.html)
 
 [Community Bash Style Guide](https://github.com/azet/community_bash_style_guide)
 
+[The Bash Guide - A quality-driven guide through the shell's many features.](guide.bash.academy)
 
 
+#### Reference
+
+[Bash Reference Manual](https://tiswww.case.edu/php/chet/bash/bashref.html)
+
+[An A-Z Index of the Bash command line for Linux. - ss64](https://ss64.com/bash/)
+
+[bash(1) - Linux man page](https://linux.die.net/man/1/bash)
+
+
+#### Tools
+
+
+
+
+#### Scripts
 
 
  
@@ -205,38 +270,86 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 
 
 
+https://en.wikipedia.org/wiki/Java_(programming_language)
 
 
-
-
+----------
 ### <a name="c">C/C++</a>
+
+[C (programming language) - Wikipedia](https://en.wikipedia.org/wiki/C_(programming_language))
+
+[C++ - Wikipedia](https://en.wikipedia.org/wiki/C%2B%2B)
+
+[C++ Homepage](https://isocpp.org/)
+
+[SEI CERT C Coding Standard](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
+
+[SEI CERT C++ Coding Standard](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=637)
+
+#### Learn
 
 [Stanford C 101](http://cslibrary.stanford.edu/101/EssentialC.pdf)
 * Stanford CS Education Library: A 45 page summary of the C language. Explains all the common features and techniques for the C language. The coverage is pretty quick, so it is most appropriate for someone with some programming background who needs to see how C works. Topics include variables, int types, floating point types, promotion, truncation, operators, control structures (if, while, for), functions, value parameters, reference parameters, structs, pointers, arrays, the pre-processor, and the standard C library functions. (revised 4/2003) 
-[Homepage](http://cslibrary.stanford.edu/101/)
-
+* [Homepage](http://cslibrary.stanford.edu/101/)
 
 [Stanford C Pointers and Memory](http://cslibrary.stanford.edu/102/PointersAndMemory.pdf)
 * Stanford CS Education Library: a 31 page introduction to programming with pointers and memory in C, C++ and other languages. Explains how pointers and memory work and how to use them -- from the basic concepts through all the major programming techniques. Can be used as an introduction to pointers for someone with basic programming experience or as a quick review. Many advanced programming and debugging problems only make sense with a solid understanding of pointers and memory -- this document tries to provide that understanding. 
 * [Homepage](http://cslibrary.stanford.edu/102/)
-
-[C Function Call Conventions and the Stack](https://archive.is/o2nD5)
-
-[What a C programmer should know about memory](http://marek.vavrusa.com/c/memory/2015/02/20/memory/)
 
 [How to C in 2016](https://matt.sh/howto-c)
 * [A critique of "How to C in 2016" by Matt](https://github.com/Keith-S-Thompson/how-to-c-response)
 
 
 
+#### Reference
 
 
+[C++ TutorialsPoint](https://www.tutorialspoint.com/cplusplus/)
+
+[C Function Call Conventions and the Stack](https://archive.is/o2nD5)
+
+[What a C programmer should know about memory](http://marek.vavrusa.com/c/memory/2015/02/20/memory/)
+
+[Cplusplus.com](http://www.cplusplus.com/)
+
+#### Tools
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------
 ### <a name="go">Go</a>
 [Go Programming Language](https://golang.org/)
 
 
 
+----------
 ### Java
+
+
+[SEI CERT Oracle Coding Standard for Java](https://www.securecoding.cert.org/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java)
+
+[Java - Wikipedia](https://en.wikipedia.org/wiki/Java_(programming_language))
+
+#### Learn
+
+
+
+#### Reference
+
+
+#### Tools
 
 [Serianalyzer](https://github.com/mbechler/serianalyzer)
 * A static byte code analyzer for Java deserialization gadget research
@@ -245,31 +358,118 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 
 
 
+
+
+----------
 ### Lisp
+
+[Lisp - Wikipedia](https://en.wikipedia.org/wiki/Lisp_(programming_language))
+
+[Common Lisp](https://common-lisp.net/)
 
 [What makes lisp macros so special - StackOverflow](https://stackoverflow.com/questions/267862/what-makes-lisp-macros-so-special)
 
-### <a name="perl"Perl</a>
-[Perl Programming Language[(https://www.perl.org/)
+#### Learn
 
-[Introduction to Perl](http://www.perl.com/pub/2000/10/begperl1.html)
+[Lisp - TutorialsPoint](https://www.tutorialspoint.com/lisp/)
+
+#### Reference
+
+
+
+#### Tools
+
+#### Other
+
+[Lisp - Paul Graham](http://www.paulgraham.com/lisp.html)
+
+
+
+
+
+
+-----------
+### <a name="perl"Perl</a>
+
+[Perl Programming Language](https://www.perl.org/)
+
+[Perl - Wikipedia](https://en.wikipedia.org/wiki/Perl)
+
+[SEI CERT Perl Coding Standard](https://www.securecoding.cert.org/confluence/display/perl/SEI+CERT+Perl+Coding+Standard)
 
 [Perl & Linguistics](http://world.std.com/~swmcd/steven/perl/linguistics.html)
 
 
+
+#### Learn
+
+[Introduction to Perl](http://www.perl.com/pub/2000/10/begperl1.html)
+
+#### Reference
+
+[Perl Docs](https://perldoc.perl.org/)
+
+#### Tools
+
+
+
+
+
+
+
+
+
+----------
 ### Lua
+
+[Lua](https://www.lua.org/)
+* Official Homepage
+
+[Lua - Getting Started](https://www.lua.org/start.html)
+
+[Learn X in Y minutes, Where X=Lua](https://learnxinyminutes.com/docs/lua/)
 
 [Lua code: security overview and practical approaches to static analysis](http://spw17.langsec.org/papers/costin-lua-static-analysis.pdf)
 * Abstract — Lua is an interpreted, cross-platform, embeddable, performant and low-footprint language. Lua’s popularity is on the rise in the last couple of years. Simple design and efficient usage of resources combined with its performance make it attractive or production web applications even to big organizations such as Wikipedia, CloudFlare and GitHub. In addition to this, Lua is one of the preferred choices for programming embedded and IoT devices. This context allows to assume a large and growing Lua codebase yet to be assessed. This growing Lua codebase could be potentially driving production servers and extremely large number of devices, some perhaps with mission-critical function for example in automotive or home-automation domains. However, there is a substantial and obvious lack of static analysis tools and vulnerable code corpora for Lua as compared to other increasingly popular languages, such as PHP, Python and JavaScript. Even the state-of-the-art commercial tools that support dozens of languages and technologies actually do not support Lua static code analysis. In this paper we present the first public Static Analysis for SecurityTesting (SAST) tool for Lua code that is currently focused on web vulnerabilities. We show its potential with good and promising preliminary results that we obtained on simple and intentionally vulnerable Lua code samples that we synthesized for our experiments. We also present and release our synthesized corpus of intentionally vulnerable Lua code, as well as the testing setups used in our experiments in form of virtual and completely reproducible environments. We hope our work can spark additional and renewed interest in this apparently overlooked area of language security and static analysis, as well as motivate community’s contribution to these open-source projects. The tool, the samples and the testing VM setups will be released and updated at http://lua.re and http://lua.rocks
 
 
+#### Tools
+[REPL.lua](https://github.com/hoelzro/lua-repl)
+* a reusable Lua REPL written in Lua, and an alternative to /usr/bin/lua
+
+
+
+----------
 ### <a name="power">Powershell</a>
+
+
+
+#### Learn
+
+[Learn Windows PowerShell in a Month of Lunches, Third Edition - Book](https://www.manning.com/books/learn-windows-powershell-in-a-month-of-lunches-third-edition)
+
+[learning-powershell/ - github repo](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell)
+
+[Getting Started with Microsoft PowerShell - MS Virtual Academy](https://mva.microsoft.com/en-us/training-courses/getting-started-with-microsoft-powershell-8276?l=r54IrOWy_2304984382)
+
+[Weekend Scripter: The Best Ways to Learn PowerShell - technet](https://blogs.technet.microsoft.com/heyscriptingguy/2015/01/04/weekend-scripter-the-best-ways-to-learn-powershell/)
+
+[Powershell Tutorial Online](http://powershelltutorial.net/)
 
 [Dirty Powershell Webserver](http://obscuresecurity.blogspot.com/2014/05/dirty-powershell-webserver.html)
 
 [Useful Powershell scripts](https://github.com/clymb3r/PowerShell)
 
-'''Try/Catch Exception in Powershell
+
+#### Reference
+
+#### Tools
+[Pester](https://github.com/pester/Pester)
+* Pester provides a framework for running unit tests to execute and validate PowerShell commands from within PowerShell. Pester consists of a simple set of functions that expose a testing domain-specific language (DSL) for isolating, running, evaluating and reporting the results of PowerShell commands.
+
+#### Other
+'''
+Try/Catch Exception in Powershell
 
 try {
 #stuff
@@ -281,33 +481,27 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 '''
 
-[Pester](https://github.com/pester/Pester)
-* Pester provides a framework for running unit tests to execute and validate PowerShell commands from within PowerShell. Pester consists of a simple set of functions that expose a testing domain-specific language (DSL) for isolating, running, evaluating and reporting the results of PowerShell commands.
 
-
-
+----------
 ### PHP
+
+[PHP Documentation](https://secure.php.net/docs.php)
 
 [PHP: a fractal of bad design](https://eev.ee/blog/2012/04/09/php-a-fractal-of-bad-design/)
 
 [awesome-php](https://github.com/ziadoz/awesome-php)
 * A curated list of amazingly awesome PHP libraries, resources and shiny things.
 
+[awesome-php - github awesome-lists](https://github.com/ziadoz/awesome-php)
 
 
 
-
-
+----------
 ### <a name="python">Python</a>
 
-[Obfuscating python](https://reverseengineering.stackexchange.com/questions/1943/what-are-the-techniques-and-tools-to-obfuscate-python-programs)
+[Python 3.6.2 documentation](https://docs.python.org/3/)
 
-[Understanding Python Bytecode](http://security.coverity.com/blog/2014/Nov/understanding-python-bytecode.html)
-
-[Reverse debugging for Python](https://morepypy.blogspot.com/2016/07/reverse-debugging-for-python.html?m=1)
-
-[Python in a hacker's toolbox (PyConPl'15)](http://gynvael.coldwind.pl/?lang=en&id=572)
-
+[Python 2.7 documentation](https://docs.python.org/2.7/)
 
 
 
@@ -317,6 +511,14 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 [Python For Beginners]()
 * Welcome! Are you completely new to programming? If not then we presume you will be looking for information about why and how to get started with Python. Fortunately an experienced programmer in any programming language (whatever it may be) can pick up Python very quickly. It's also easy for beginners to use and learn, so jump in!
+
+[Obfuscating python](https://reverseengineering.stackexchange.com/questions/1943/what-are-the-techniques-and-tools-to-obfuscate-python-programs)
+
+[Understanding Python Bytecode](http://security.coverity.com/blog/2014/Nov/understanding-python-bytecode.html)
+
+[Reverse debugging for Python](https://morepypy.blogspot.com/2016/07/reverse-debugging-for-python.html?m=1)
+
+[Python in a hacker's toolbox (PyConPl'15)](http://gynvael.coldwind.pl/?lang=en&id=572)
 
 
 #### Reference
@@ -342,8 +544,15 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 [Trollius and asyncio](https://trollius.readthedocs.io/asyncio.html)
 
 
-
+----------
 ### <a name="ruby">Ruby</a>
+[Ruby Homepage](https://www.ruby-lang.org/en/)
+
+[Official Ruby Docs](https://ruby-doc.org/)
+
+[Ruby Gems](https://rubygems.org/)
+
+#### Learn
 [Ruby - Tutorials Point](http://www.tutorialspoint.com/ruby/)
 
 [Ruby in 20 Minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
@@ -352,39 +561,53 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 * Ruby to EXE - Turn ruby scripts into portable executable apps
 
 
-
-
-
-### Useful Libraries/programs
+### Useful Libraries/programs/Frameworks
 
 [Shellpaste](https://github.com/andrew-morris/shellpaste)
 * Tiny snippet of code that pulls ASCII shellcode from pastebin and executes it. The purpose of this is to have a minimal amount of benign code so AV doesn't freak out, then it pulls down the evil stuff. People have been doing this kind of stuff for years so I take no credit for the concept. That being said, this code (or similar code) works surprisingly often during pentests when conventional malware fails. 
 
+[Ruby on Rails](http://rubyonrails.org/)
 
 
+
+
+
+
+
+----------
 ### UEFI Programming
 
-[UEFI Programming - First Steps](http://x86asm.net/articles/uefi-programming-first-steps/) 
+[Unified Extensible Firmware Interface Forum](http://www.uefi.org/)
+
+[Unified Extensible Firmware Interface](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)
 
 
 
+#### Learn
 
-### <a name="papers">Papers</a>
+[Programming for EFI: Creating a "Hello, World" Program](http://www.rodsbooks.com/efi-programming/hello.html)
 
-[Mov is turing complete](http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)
+[UEFI Programming - First Steps](http://x86asm.net/articles/uefi-programming-first-steps/)
+
+[Getting started with UEFI application development](https://lihashgnis.blogspot.com/2016/08/getting-started-with-uefi-application.html)
+
+[Getting started with UEFI Development](https://lihashgnis.blogspot.com/2016/08/getting-started-with-uefi-application.html)
+
+
+#### Reference
+
+[UEFI - OSDev](http://wiki.osdev.org/UEFI)
 
 
 
-
-
-### Talks & Presentations
+#### Talks & Presentations
 [Simple Made Easy](https://www.infoq.com/presentations/Simple-Made-Easy)
 *  Rich Hickey emphasizes simplicity’s virtues over easiness’, showing that while many choose easiness they may end up with complexity, and the better way is to choose easiness along the simplicity path.
 
 
 
 
-#### Other
+### Other
 
 [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 

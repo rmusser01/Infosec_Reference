@@ -21,6 +21,9 @@ TOC
 
 https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
+[Fuzzing for MS15-010](http://blog.beyondtrust.com/fuzzing-for-ms15-010)
+* This past Patch Tuesday Microsoft released MS15-010: Vulnerabilities in Windows Kernel-Mode Driver Could Allow Remote Code Execution.  This patch addressed multiple privately reported vulnerabilities in win32k.sys and one publicly disclosed vulnerability in cng.sys. This post goes through identifying the patched vulnerability.
+
 #### end sort
 ##### To Do
 * Add Descriptions/generals to types of fuzzing

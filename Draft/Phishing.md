@@ -16,6 +16,8 @@ TOC
 ###Cull
 
 
+[Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
+
 #### End cull
 
 
@@ -70,6 +72,7 @@ TOC
 
 
 
+
 ### Microsoft Outlook Stuff
 
 [How to bypass Web-Proxy Filtering](https://www.blackhillsinfosec.com/?p=5831)
@@ -78,6 +81,7 @@ TOC
 
 [EXE-less Malicious Outlook Rules - BHIS](https://www.blackhillsinfosec.com/?p=5544)
 
+[Outlook and Exchange for the Bad Guys Nick Landers](https://www.youtube.com/watch?v=cVhc9VOK5MY)
 
 
 

@@ -1,6 +1,6 @@
-##Interesting Things & Useful Stuff
+# Interesting Things & Useful Stuff
 
-TOC
+### TOC
 * [Interesting & Useful Attacks](#attacks)
 * [Interesting & Useful Papers](#papers)
 * [Interesting & Useful Projects](#projects)
@@ -23,68 +23,29 @@ TOC
 * sort and break into policy/high level/ vs interesting things
 
 
+| **Simplifying the Business Bar Coded Boarding Pass Implementation Guide** | http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf
+| **What’s contained in a boarding pass barcode?** | https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode
+| **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
 
-[U.S. Department of Health and Human Services Office for Civil Rights Breach Portal: Notice to the Secretary of HHS Breach of Unsecured Protected Health Information](https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf)
 
-[Webrecorder](https://webrecorder.io/)
-* Create high-fidelity, interactive web archives of any web site you browse
+https://www.youtube.com/watch?v=h92vmwg9Tyc
 
-[pdf-bot](https://github.com/esbenp/pdf-bot)
-* 🤖 A Node queue API for generating PDFs using headless Chrome. Comes with a CLI, S3 storage and webhooks for notifying subscribers about generated PDFs
+http://spth.virii.lu/articles.htm
 
+
+[Your Project from Idea to Reality](http://www.slideshare.net/maltman23/your-project-from-idea-to-reality)
+
+[Virtualization Based Security - Part 2: kernel communications](http://blog.amossys.fr/virtualization-based-security-part2.html)
+
+[Binary SMS - The old backdoor to your new thing](https://www.contextis.com/resources/blog/binary-sms-old-backdoor-your-new-thing/)
 
 [symbolhound](http://symbolhound.com/)
 * SymbolHound is a search engine that doesn't ignore special characters. This means you can easily search for symbols like &, %, and π. We hope SymbolHound will help programmers find information about their chosen languages and frameworks more easily.
 
-[Windows Commands Abused by Attackers](http://blog.jpcert.or.jp/2016/01/windows-commands-abused-by-attackers.html)
-
-https://www.youtube.com/watch?v=h92vmwg9Tyc
-
-| **ClearImage Free Online Barcode Reader / Decoder** | http://online-barcode-reader.inliteresearch.com/
-
-http://spth.virii.lu/articles.htm
-
-[LuxBase](https://github.com/kienankb/LuxBase)
-
-| **Simplifying the Business Bar Coded Boarding Pass Implementation Guide** | http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf
-| **What’s contained in a boarding pass barcode?** | https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode
-| **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
-| **NSA USB Playset - ShmooCon201** | https://www.youtube.com/watch?v=eTDBFpLYcGA
-
-[Your Project from Idea to Reality](http://www.slideshare.net/maltman23/your-project-from-idea-to-reality)
-
-[Beyond Information Warfare: You aint seen nothing yet - Winn Scwartau](http://www.irongeek.com/i.php?page=videos/derbycon3/2206-beyond-information-warfare-you-ain-t-seen-nothing-yet-winn-schwartau)
-
-[Bootstrapping A Security Research Project Andrew Hay](https://www.youtube.com/watch?v=gNU2J-IcK4E)
-* It has become increasingly common to see a headline in the mainstream media talking about the latest car, television, or other IoT device being hacked (hopefully by a researcher). In each report, blog, or presentation, we learn about the alarming lack of security and privacy associated with the device's hardware, communications mechanisms, software/app, and hosting infrastructure in addition to how easy it might be for an attacker to take advantage of one, or multiple, threat vectors. The truth is, anyone can perform this kind of research if given the right guidance. To many security professionals, however, the act of researching something isn,t the problem...it's what to research, how to start, and when to stop. Academics think nothing of researching something until they feel it's "done" (or their funding/tenure runs out). Security professionals, however, often do not have that luxury. This session will discuss how to research, well, ANYTHING. Proven methods for starting, continuing, ending, leading, and collaborating on reproducible research will be discussed - taking into account real-world constraints such as time, money, and a personal life. We will also discuss how to generate data, design your experiments, analyze your results, and present (and in some cases defend) your research to the public.
-
-[Killing you softly Josh Bressers](http://www.irongeek.com/i.php?page=videos/circlecitycon2016/302-killing-you-softly-josh-bressers)
-* The entire security industry has a serious skill problem. We,re technically able, but we have no soft skills. We can,t talk to normal people at all. We can barely even talk to each other, and it's killing our industry. Every successful industry relies on the transfer of skills from the experienced to the inexperienced. Security lacks this today. If I asked you how you learned what you know about security, what would your answer be? In most cases you learned everything you know on your own. There was minimal learning from someone else. This has left us with an industry full of magicians, but even worse it puts us in a place where there is no way to transfer skill and knowledge from one generation to the next. Magicians don,t scale. If we think about this in the context of how we engage non security people it's even worse! Most non security people have no idea what security is, what security does, or even why security is important. It's easy to laugh at the horrible security problems almost everything has today, but in reality we,re laughing at ourselves. Historically we,ve blamed everything else for this problem when in reality it's 100% our fault. One of the our great weaknesses is failing to get the regular people to understand security and why it's important. This isn,t a surprise if you think about how the industry communicates. We can barely talk to each other, how can we possibly talk to someone who doesn,t know anything about security? Normal people are confused and scared, they want to do the right thing but they have no idea what that is. The future leaders in security are going to have to be able to teach and talk to their security peers, but more importantly they will have to engage everyone else. Security is being paid attention to like never before, and yet we have nothing to say to anyone. What has changed in the last few years? If we don,t do our jobs, someone else will do them for us, and we,re not going to like the results. Security isn,t a technical problem, technical problems are easy, security is a communication problem. Communications problems are difficult. Let's figure out how we can fix that.
-
-[Medical Device Law: Compliance Issues, Best Practices and Trends - American Bar Association](https://www.americanbar.org/content/dam/aba/events/cle/2015/10/ce1510mdm/ce1510mdm_interactive.authcheckdam.pdf)
-
-[Virtualization Based Security - Part 2: kernel communications](http://blog.amossys.fr/virtualization-based-security-part2.html)
-
-[NSARCHIVE - The Cyber Vault](http://nsarchive.gwu.edu/cybervault/)
-* An online resource documenting cyber activities of the U.S. and foreign governments as well as international organizations.
-
-
-
-
-
-[“Considered Harmful” Essays Considered Harmful](http://meyerweb.com/eric/comment/chech.html)
-
-[Detecting Automation of Twitter Accounts:Are You a Human, Bot, or Cyborg](http://www.cs.wm.edu/~hnw/paper/tdsc12b.pdf)
-
 [QR Code interesting](http://datagenetics.com/blog/november12013/index.html)
 
-[Manuals Library](https://www.manualslib.com/)
+[ClearImage Free Online Barcode Reader / Decoder](http://online-barcode-reader.inliteresearch.com/)
 
-[NIST National Vulnerability Database](https://nvd.nist.gov/ncp/repository)
-
-[IA Guidance - NSA](https://www.iad.gov/iad/library/ia-guidance/index.cfm)
-
-[LeakedSource.ru](https://leakedsource.ru/)
 
 #### End Sort
 
@@ -99,14 +60,30 @@ http://spth.virii.lu/articles.htm
 
 [Cyber Attack Attribution Report](http://whohackedus.com/)
 
+[NSARCHIVE - The Cyber Vault](http://nsarchive.gwu.edu/cybervault/)
+* An online resource documenting cyber activities of the U.S. and foreign governments as well as international organizations.
+
+
+
+### News/Reports
+
+[U.S. Department of Health and Human Services Office for Civil Rights Breach Portal: Notice to the Secretary of HHS Breach of Unsecured Protected Health Information](https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf)
+
+[Medical Device Law: Compliance Issues, Best Practices and Trends - American Bar Association](https://www.americanbar.org/content/dam/aba/events/cle/2015/10/ce1510mdm/ce1510mdm_interactive.authcheckdam.pdf)
+
+[LeakedSource.ru](https://leakedsource.ru/)
+
+
+
+
+
 
 
 ### General
 
 [Hamming - You and your research](https://www.youtube.com/watch?v=a1zDuOPkMSw)
 
-| **ugtrain** - Universal Elite Game Trainer for CLI(linux game trainer) | https://github.com/ugtrain/ugtrain
-
+[Windows Commands Abused by Attackers](http://blog.jpcert.or.jp/2016/01/windows-commands-abused-by-attackers.html)
 
 [Coming War on General Computation](https://www.youtube.com/watch?v=HUEvRyemKSg)
 
@@ -115,7 +92,7 @@ http://spth.virii.lu/articles.htm
 
 [Timeline of Software/Timing Attestation papers](http://timeglider.com/timeline/be11d685a7c4374d)
 
-http://www.securitywizardry.com/radar.htm
+[radar - securitywizardy](http://www.securitywizardry.com/radar.htm)
 
 [Website detailing various crypto laws around world](http://www.cryptolaw.org/)
 
@@ -139,16 +116,18 @@ http://www.securitywizardry.com/radar.htm
 
 [Encyclopedia of things considered harmful](http://harmful.cat-v.org/)
 
-
-[Manuals Library](https://www.manualslib.com/)
+[“Considered Harmful” Essays Considered Harmful](http://meyerweb.com/eric/comment/chech.html)
 
 [THE BASIC LAWS OF HUMAN STUPIDITY - Carlo M. Cipolia](http://harmful.cat-v.org/people/basic-laws-of-human-stupidity/)
 
 [The S stands for Simple](http://harmful.cat-v.org/software/xml/soap/simple)
 * Satire(Only it's not) of a conversation about SOAP
 
-[List of disposable email domains](https://github.com/martenson/disposable-email-domains)
+[Manuals Library](https://www.manualslib.com/)
 
+[NIST National Vulnerability Database](https://nvd.nist.gov/ncp/repository)
+
+[IA Guidance - NSA](https://www.iad.gov/iad/library/ia-guidance/index.cfm)
 
 
 
@@ -187,6 +166,7 @@ http://www.securitywizardry.com/radar.htm
 
 [Con Video Rig Enhancements - IronGeek & SkyDog](https://www.youtube.com/watch?v=BVCFAqLxdtY)
 
+[List of disposable email domains](https://github.com/martenson/disposable-email-domains)
 
 [Internet Timeline](https://www.zakon.org/robert/internet/timeline/)
 
@@ -279,6 +259,23 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 
 [Hacks, Lies, & Nation States - Mario DiNatale - ANYCON 2017](http://www.irongeek.com/i.php?page=videos/anycon2017/303-hacks-lies-nation-states-mario-dinatale)
 * A hilarious and non-technical skewering of the current state of Cybersecurity, the Cybersecurity
+
+[Beyond Information Warfare: You aint seen nothing yet - Winn Scwartau](http://www.irongeek.com/i.php?page=videos/derbycon3/2206-beyond-information-warfare-you-ain-t-seen-nothing-yet-winn-schwartau)
+
+[Bootstrapping A Security Research Project Andrew Hay](https://www.youtube.com/watch?v=gNU2J-IcK4E)
+* It has become increasingly common to see a headline in the mainstream media talking about the latest car, television, or other IoT device being hacked (hopefully by a researcher). In each report, blog, or presentation, we learn about the alarming lack of security and privacy associated with the device's hardware, communications mechanisms, software/app, and hosting infrastructure in addition to how easy it might be for an attacker to take advantage of one, or multiple, threat vectors. The truth is, anyone can perform this kind of research if given the right guidance. To many security professionals, however, the act of researching something isn,t the problem...it's what to research, how to start, and when to stop. Academics think nothing of researching something until they feel it's "done" (or their funding/tenure runs out). Security professionals, however, often do not have that luxury. This session will discuss how to research, well, ANYTHING. Proven methods for starting, continuing, ending, leading, and collaborating on reproducible research will be discussed - taking into account real-world constraints such as time, money, and a personal life. We will also discuss how to generate data, design your experiments, analyze your results, and present (and in some cases defend) your research to the public.
+
+[Killing you softly Josh Bressers](http://www.irongeek.com/i.php?page=videos/circlecitycon2016/302-killing-you-softly-josh-bressers)
+* The entire security industry has a serious skill problem. We,re technically able, but we have no soft skills. We can,t talk to normal people at all. We can barely even talk to each other, and it's killing our industry. Every successful industry relies on the transfer of skills from the experienced to the inexperienced. Security lacks this today. If I asked you how you learned what you know about security, what would your answer be? In most cases you learned everything you know on your own. There was minimal learning from someone else. This has left us with an industry full of magicians, but even worse it puts us in a place where there is no way to transfer skill and knowledge from one generation to the next. Magicians don,t scale. If we think about this in the context of how we engage non security people it's even worse! Most non security people have no idea what security is, what security does, or even why security is important. It's easy to laugh at the horrible security problems almost everything has today, but in reality we,re laughing at ourselves. Historically we,ve blamed everything else for this problem when in reality it's 100% our fault. One of the our great weaknesses is failing to get the regular people to understand security and why it's important. This isn,t a surprise if you think about how the industry communicates. We can barely talk to each other, how can we possibly talk to someone who doesn,t know anything about security? Normal people are confused and scared, they want to do the right thing but they have no idea what that is. The future leaders in security are going to have to be able to teach and talk to their security peers, but more importantly they will have to engage everyone else. Security is being paid attention to like never before, and yet we have nothing to say to anyone. What has changed in the last few years? If we don,t do our jobs, someone else will do them for us, and we,re not going to like the results. Security isn,t a technical problem, technical problems are easy, security is a communication problem. Communications problems are difficult. Let's figure out how we can fix that.
+
+
+[Bridging the Air Gap: Cross Domain Solutions - Patrick Orzechowski](https://www.irongeek.com/i.php?page=videos/bsideslasvegas2014/pg08-bridging-the-air-gap-cross-domain-solutions-patrick-orzechowski)
+* For years the government has been using CDS to bridge networks with different classification levels. This talk will focus on what CDS systems are, how they’re built, and what kind of configurations are common in the wild. Furthermore, we’ll look at testing techniques to evaluate the security of these systems and potential ways to exploit holes in configuration and design. We’ll also look at the ways the commercial world might benefit from a data and type-driven firewall as well as some of the downfalls and negative aspects of implementing a cross-domain system. 
+
+[NSA USB Playset - ShmooCon201](https://www.youtube.com/watch?v=eTDBFpLYcGA)
+
+[Pwning pwners like a n00b](https://www.youtube.com/watch?v=E8O8bB3I3i0)
+* Cybercrime, blackhat hackers and some Ukrainians. If that doesn’t catch your attention, then stop reading. Follow the story of how stupid mistakes, OPSEC fails, and someone with a little too much time on his hands was able to completely dismantle a spamming and webshell enterprise using really simple skills and techniques you could pick up in a week. Did we mention that d0x were had as well? This talk will be an in-depth examination at the investigation and exploitation process involved. 
 
 
 
@@ -403,6 +400,20 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 
 [recap](https://github.com/rackerlabs/recap)
 * recap is a reporting script that generates reports of various information about the server.
+
+[Webrecorder](https://webrecorder.io/)
+* Create high-fidelity, interactive web archives of any web site you browse
+
+[LuxBase](https://github.com/kienankb/LuxBase)
+
+[pdf-bot](https://github.com/esbenp/pdf-bot)
+* 🤖 A Node queue API for generating PDFs using headless Chrome. Comes with a CLI, S3 storage and webhooks for notifying subscribers about generated PDFs
+
+
+
+
+
+
 
 
 
@@ -550,6 +561,16 @@ Underhanded C
 * 2D barcodes offer many benefits compared to 1D barcodes, such as high information density and robustness. Before their introduction to the mobile phone ecosystem, they have been widely used in specific applications, such as logistics or ticketing. However, there are multiple competing standards with different benefits and drawbacks. Therefore, reader applications as well as dedicated devices have to support multiple standards. In this paper, we present novel attacks based on deliberately caused ambiguities when especially crafted barcodes conform to multiple standards. Implementation details decide which standard the decoder locks on. This way, two users scanning the same barcode with different phones or apps will receive different content. This potentially opens way for multiple problems related to security. We describe how embedding one barcode symbology into another can be used to perform phishing attacks as well as targeted exploits. In addition, we evaluate the extent to which popular 2D barcode reader applications on smartphones are susceptible to these barcode-in-barcode attacks. We furthermore discuss mitigation techniques against this type of attack.
 
 [Introduction to Resource Oriented Computing - Whitepaper](http://resources.1060research.com/docs/IntroductionToResourceOrientedComputing-1.pdf)
+
+[Detecting Automation of Twitter Accounts:Are You a Human, Bot, or Cyborg](http://www.cs.wm.edu/~hnw/paper/tdsc12b.pdf)
+
+
+
+
+
+
+
+
 
 
 

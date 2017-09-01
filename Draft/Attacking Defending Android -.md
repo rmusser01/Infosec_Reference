@@ -3,7 +3,7 @@
 
 
 
-#### TOC
+### TOC
 Cull
 * [Intro](#Intro)
 * [Android Internals](#AInternals)
@@ -30,10 +30,13 @@ Cull
 
 
 
-### Cull/Sort
+#### Cull/Sort
 * Redo formatting
 
 https://blog.gdssecurity.com/labs/2015/2/18/when-efbfbd-and-friends-come-knocking-observations-of-byte-a.html
+
+[Intercepting HTTPS traffic of Android Nougat Applications](https://serializethoughts.com/2016/09/10/905/)
+* TL;DR To intercept network traffic for Android 7.0 targeted applications, introduce a res/xml/network_security_config.xml file.
 
 http://nelenkov.blogspot.com
 
@@ -44,10 +47,12 @@ http://nelenkov.blogspot.com
 
 [The Android boot process](https://thecyberfibre.com/android-boot-process/)
 
-[Intercepting HTTPS traffic of Android Nougat Applications](https://serializethoughts.com/2016/09/10/905/)
-* TL;DR To intercept network traffic for Android 7.0 targeted applications, introduce a res/xml/network_security_config.xml file.
 
-### End cull
+
+[Miroslav Stampar - Android: Practical Introduction into the (In)Security](https://www.youtube.com/watch?v=q1_rvrY4VHI)
+* This presentation covers the user’s deadly sins of Android (In)Security, together with implied system security problems. Each topic could potentially introduce unrecoverable damage from security perspective. Both local and remote attacks are covered, along with accompanying practical demo of most interesting ones. 
+
+#### End cull
  
 
 ### General
@@ -93,6 +98,7 @@ Xprivacy - The Ultimate Android Privacy Manager(Requires Root
 
 	* [Github](https://github.com/M66B/XPrivacy)
 	* [Google Play](https://play.google.com/store/apps/details?id=biz.bokhorst.xprivacy.installer&hl=en)
+
 #### Backups
 [Titanium Backup](https://play.google.com/store/apps/details?id=com.keramidas.TitaniumBackup)
 Personal favorite for making backups. Backups are stored locally or automatically to various cloud services.

@@ -19,9 +19,11 @@ TOC
 #### Cull
 http://www.stoned-vienna.com/
 
-[ Hyper-V backdoor for UEFI](https://gist.github.com/Cr4sh/55a54e7f3c113316efd2d66457df68dd)
 
-[Advice for writing a Bootloader? - reddit](https://www.reddit.com/r/lowlevel/comments/30toah/advices_for_a_bootloader/)
+
+
+
+
 #### End Cull
 
 
@@ -166,7 +168,7 @@ Reverse Engineering Router Firmware walk through
 [UDKToolbox](https://github.com/smwikipedia/UDKToolbox)
 * An toolbox to help adopt Visual Studio for UEFI development.
 
-
+[Hyper-V backdoor for UEFI](https://gist.github.com/Cr4sh/55a54e7f3c113316efd2d66457df68dd)
 
 
 
@@ -182,6 +184,11 @@ Reverse Engineering Router Firmware walk through
 
 [How to develop your own Boot Loader](https://www.codeproject.com/Articles/36907/How-to-develop-your-own-Boot-Loader)
 
+[Disabling Intel ME 11 via undocumented mode - ptsecurity](http://blog.ptsecurity.com/2017/08/disabling-intel-me.html)
+
+
+
+
 
 ### Other
 [Notes on Intel Microcode Updates](http://hireme.geek.nz/Intel_x86_NSA_Microcode_Updates.pdf)
@@ -191,3 +198,5 @@ Reverse Engineering Router Firmware walk through
 [MDL Projects and Applications](https://forums.mydigitallife.net/forums/mdl-projects-and-applications.34/)
 
 [Advice for writing a Bootloader? - reddit](https://www.reddit.com/r/lowlevel/comments/30toah/advices_for_a_bootloader/)
+
+

@@ -1,10 +1,8 @@
-## Wireless Networks
+# Wireless Networks
 
 
-TOC
-Cull
-
-* [General](#general
+#### TOC
+* [General](#general)
 * [General Software Tools](#generalswt)
 * [Tutorials and Guides](#tut)
 * [Non Tutorial Writeups](#non-tut)
@@ -29,11 +27,6 @@ Cull
 #### Sort
 
 http://umtrx.org/
-Aircrack https://www.aircrack-ng.org/doku.php?id=links
-Ubertooth
-Scapy
-
-
 
 [Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
 ##### End Cull
@@ -246,6 +239,7 @@ GNU Radio blocks we have written to handle several protocols
 [gr-lora](https://github.com/BastilleResearch/gr-lora)
 * This is an open-source implementation of the LoRa CSS PHY, based on the blind signal analysis conducted by @matt-knight. The original research that guided this implementation may be found at https://github.com/matt-knight/research
 
+[Scapy](http://www.secdev.org/projects/scapy/)
 
 
 
@@ -286,7 +280,7 @@ GNU Radio blocks we have written to handle several protocols
 
 
 
-## <a name="80211">802.11</a>
+## <a name="80211">802.11 - WiFi</a>
 
 
 [IEEE 802.11 Tutorial](http://wow.eecs.berkeley.edu/ergen/docs/ieee.pdf)
@@ -329,10 +323,13 @@ In this article, we proved the capabilities of an inexpensive wireless adapter a
 
 [Predicting, Decrypting, and Abusing WPA2/802.11 Group Keys Mathy Vanhoef and Frank Piessens,  Katholieke Universiteit Leuven](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_vanhoef.pdf)
 
+[probemon](https://github.com/nikharris0/probemon)
+* A simple command line tool for monitoring and logging 802.11 probe frames
 
+[Wifi Tracking: Collecting the (probe) Breadcrumbs - David Switzer](https://www.youtube.com/watch?v=HzQHWUM8cNo)
+* Wifi probes have provided giggles via Karma and Wifi Pineapples for years, but is there more fun to be had? Like going from sitting next to someone on a bus, to knowing where they live and hang out? Why try to MITM someone’s wireless device in an enterprise environment where they may notice — when getting them at their favorite burger joint is much easier. In this talk we will review ways of collecting and analyzing probes. We’ll use the resulting data to figure out where people live, their daily habits, and discuss uses (some nice, some not so nice) for this information. We’ll also dicuss how to make yourself a little less easy to track using these methods. Stingrays are price prohibitive, but for just tracking people’s movements.. this is cheap and easy.
 
-
-
+[Aircrack](https://www.aircrack-ng.org/doku.php?id=links)
 
 
 
@@ -398,6 +395,11 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 [PyBT](https://github.com/mikeryan/PyBT)
 * PyBT is a crappy half implementation of a Bluetooth stack in Python. At the moment it only supports Bluetooth Smart (BLE).
+
+[Bluetooth Penetration Testing Framework - 2011](http://bluetooth-pentest.narod.ru/)
+
+[Hacking Bluetooth connections - hackingandsecurity](https://hackingandsecurity.blogspot.com/2017/08/hacking-bluetooth-connections.html?view=timeslide)
+
 
 
 

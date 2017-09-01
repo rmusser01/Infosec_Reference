@@ -19,6 +19,13 @@
 #### Cull
 
 
+
+[Wifi Tracking: Collecting the (probe) Breadcrumbs - David Switzer](https://www.youtube.com/watch?v=HzQHWUM8cNo)
+* Wifi probes have provided giggles via Karma and Wifi Pineapples for years, but is there more fun to be had? Like going from sitting next to someone on a bus, to knowing where they live and hang out? Why try to MITM someone’s wireless device in an enterprise environment where they may notice — when getting them at their favorite burger joint is much easier. In this talk we will review ways of collecting and analyzing probes. We’ll use the resulting data to figure out where people live, their daily habits, and discuss uses (some nice, some not so nice) for this information. We’ll also dicuss how to make yourself a little less easy to track using these methods. Stingrays are price prohibitive, but for just tracking people’s movements.. this is cheap and easy.
+
+[How Tor Users Got Caught - Defcon 22](https://www.youtube.com/watch?v=7G1LjQSYM5Q)
+* [Part 2](https://www.youtube.com/watch?v=TQ2bk9kMneI)
+* [Article -  How Tor Users Got Caught by Government Agencies](http://se.azinstall.net/2015/11/how-tor-users-got-caught.html)
 #### end cull
 
 
@@ -161,12 +168,17 @@
 
 ### **<a name="Tools">Tools</a>**
 
+[FakeNameGenerator](http://www.fakenamegenerator.com/)
 
-| Title | Link
-| -------- | --------- |
-| **MAT: Metadata Anonymisation Toolkit** - MAT is a toolbox composed of a GUI application, a CLI application and a library. | https://mat.boum.org/
-| **fteproxy** - fteproxy is fast, free, open source, and cross platform. It has been shown to circumvent network monitoring software such as bro, YAF, nProbe, l7-filter, and appid, as well as closed-source commercial DPI systems| https://fteproxy.org/about
-| **Streisand** - Streisand sets up a new server running L2TP/IPsec, OpenSSH, OpenVPN, Shadowsocks, sslh, Stunnel, and a Tor bridge. It also generates custom configuration instructions for all of these services. At the end of the run you are given an HTML file with instructions that can be shared with friends, family members, and fellow activists.| https://github.com/jlund/streisand 
+
+[MAT: Metadata Anonymisation Toolkit](https://mat.boum.org/) 
+* MAT is a toolbox composed of a GUI application, a CLI application and a library.
+
+[fteproxy](https://fteproxy.org/about)
+* fteproxy is fast, free, open source, and cross platform. It has been shown to circumvent network monitoring software such as bro, YAF, nProbe, l7-filter, and appid, as well as closed-source commercial DPI systems
+
+[Streisand](https://github.com/jlund/streisand)
+* Streisand sets up a new server running L2TP/IPsec, OpenSSH, OpenVPN, Shadowsocks, sslh, Stunnel, and a Tor bridge. It also generates custom configuration instructions for all of these services. At the end of the run you are given an HTML file with instructions that can be shared with friends, family members, and fellow activists.
 
 [exitmap](https://github.com/NullHypothesis/exitmap)
 * Exitmap is a fast and modular Python-based scanner for Tor exit relays. Exitmap modules implement tasks that are run over (a subset of) all exit relays. If you have a background in functional programming, think of exitmap as a map() interface for Tor exit relays. Modules can perform any TCP-based networking task; fetching a web page, uploading a file, connecting to an SSH server, or joining an IRC channel.
@@ -187,7 +199,6 @@
 
 [meek](https://github.com/Yawning/meek)
 * meek is a blocking-resistant pluggable transport for Tor. It encodes a data stream as a sequence of HTTPS requests and responses. Requests are reflected through a hard-to-block third-party web server in order to avoid talking directly to a Tor bridge. HTTPS encryption hides fingerprintable byte patterns in Tor traffic.sek
-
 
 
 

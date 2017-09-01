@@ -1,11 +1,6 @@
 # Windows_Discovery.md
 
 
-* To Do:
-* Remote system Discovery
-
-
-
 ## Account Discovery
 -------------------------------
 [Account Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1087)
@@ -49,9 +44,11 @@
 -------------------------------
 [File and Directory Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1083)
 
+[Microsoft DOS tree command](https://www.computerhope.com/treehlp.htm)
+* Is present on MS DOS -> 10.
 
-
-
+[dir - technet](https://technet.microsoft.com/en-us/library/cc755121(v=ws.11).aspx)
+* Displays a list of a directory's files and subdirectories. If used without parameters, dir displays the disk's volume label and serial number, followed by a list of directories and files on the disk (including their names and the date and time each was last modified). For files, dir displays the name extension and the size in bytes. Dir also displays the total number of files and directories listed, their cumulative size, and the free space (in bytes) remaining on the disk.
 
 
 ## Network Service Scanning
@@ -379,13 +376,20 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 [Remote System Discovery](https://attack.mitre.org/wiki/Technique/T1018)
 * Adversaries will likely attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system. Functionality could exist within remote access tools to enable this, but utilities available on the operating system could also be used. 
 
+Check .hosts file for mappings ; C:\Windows\System32\Drivers\etc\hosts
+
+[arp](https://technet.microsoft.com/en-us/library/cc940107.aspx)
+
+[Port scan subnets with PSnmap for PowerShell](http://www.powershelladmin.com/wiki/Port_scan_subnets_with_PSnmap_for_PowerShell)
+
+[PowerView](https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon)
+* PowerView is a PowerShell tool to gain network situational awareness on Windows domains. It contains a set of pure-PowerShell replacements for various windows "net *" commands, which utilize PowerShell AD hooks and underlying Win32 API functions to perform useful Windows domain functionality.
+
+[Invoke-HostEnum.ps1](https://github.com/minisllc/red-team-scripts/blob/master/Invoke-HostEnum.ps1)
+* Performs local host and/or domain enumeration for situational awareness
 
 
-
-
-
-
-
+[Network Situational Awareness with Empire](http://www.powershellempire.com/?page_id=289)
 
 
 

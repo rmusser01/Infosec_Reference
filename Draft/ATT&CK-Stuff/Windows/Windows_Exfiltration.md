@@ -2,8 +2,6 @@
 -------------------------------
 
 
-
-
 ## Automated Exfiltration
 -------------------------------
 [Automated Exfiltration - ATT&CK](https://attack.mitre.org/wiki/Technique/T1020)

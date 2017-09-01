@@ -76,6 +76,7 @@
 |1200|tcp|Codesys||
 |1234|udp|udpxy||
 |1202|tcp|linknat||
+|1433|tcp|MS-SQL||
 |1434|udp|MS-SQL monitor||
 |1604||Citrix, malware||
 |1723|tcp|pptp|thc-pptp-bruter -v -u `username` -n 4 `target` < pass.txt|

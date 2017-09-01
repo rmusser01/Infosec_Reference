@@ -16,3 +16,8 @@
 [A Survey of Insider Attack Detection Research - 2008](http://web.stanford.edu/class/cs259d/readings/Insider_survey.pdf)
 
 [The “Big Picture” of Insider IT Sabotage Across U.S. Critical Infrastructures](http://web.stanford.edu/class/cs259d/readings/Infrastructure.pdf)
+
+[NIST Cybersecurity Practice Guide, Securing Wireless Infusion Pumps in Healthcare Delivery Organizations](https://nccoe.nist.gov/projects/use-cases/medical-devices)
+* [SP 1800-8a: Executive Summary](https://nccoe.nist.gov/publication/draft/1800-8/VolA/)
+* [SP 1800-8b: Approach, Architecture, and Security Characteristics ](https://nccoe.nist.gov/publication/draft/1800-8/VolB/)
+* [SP 1800-8c: How-To Guides](https://nccoe.nist.gov/publication/draft/1800-8/VolC/)

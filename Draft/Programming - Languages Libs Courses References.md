@@ -31,20 +31,8 @@ http://en.cppreference.com/w/c
 * 4. Why does that happen?
 * 5. Oh, I see.
 * 6. How did that ever work?
+
 #### End Cull
-
-
-[Six Stages of debugging](http://plasmasturm.org/log/6debug/)
-* 1. That can’t happen.
-* 2. That doesn’t happen on my machine.
-* 3. That shouldn’t happen.
-* 4. Why does that happen?
-* 5. Oh, I see.
-* 6. How did that ever work?
-
-
-
-
 
 
 ### <a name="general">General</a>
@@ -269,6 +257,10 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 [Perl & Linguistics](http://world.std.com/~swmcd/steven/perl/linguistics.html)
 
 
+### Lua
+
+[Lua code: security overview and practical approaches to static analysis](http://spw17.langsec.org/papers/costin-lua-static-analysis.pdf)
+* Abstract — Lua is an interpreted, cross-platform, embeddable, performant and low-footprint language. Lua’s popularity is on the rise in the last couple of years. Simple design and efficient usage of resources combined with its performance make it attractive or production web applications even to big organizations such as Wikipedia, CloudFlare and GitHub. In addition to this, Lua is one of the preferred choices for programming embedded and IoT devices. This context allows to assume a large and growing Lua codebase yet to be assessed. This growing Lua codebase could be potentially driving production servers and extremely large number of devices, some perhaps with mission-critical function for example in automotive or home-automation domains. However, there is a substantial and obvious lack of static analysis tools and vulnerable code corpora for Lua as compared to other increasingly popular languages, such as PHP, Python and JavaScript. Even the state-of-the-art commercial tools that support dozens of languages and technologies actually do not support Lua static code analysis. In this paper we present the first public Static Analysis for SecurityTesting (SAST) tool for Lua code that is currently focused on web vulnerabilities. We show its potential with good and promising preliminary results that we obtained on simple and intentionally vulnerable Lua code samples that we synthesized for our experiments. We also present and release our synthesized corpus of intentionally vulnerable Lua code, as well as the testing setups used in our experiments in form of virtual and completely reproducible environments. We hope our work can spark additional and renewed interest in this apparently overlooked area of language security and static analysis, as well as motivate community’s contribution to these open-source projects. The tool, the samples and the testing VM setups will be released and updated at http://lua.re and http://lua.rocks
 
 
 ### <a name="power">Powershell</a>
@@ -317,14 +309,18 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 [Python in a hacker's toolbox (PyConPl'15)](http://gynvael.coldwind.pl/?lang=en&id=572)
 
 
+
+
+
 #### Learn
 [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
 
 [Python For Beginners]()
 * Welcome! Are you completely new to programming? If not then we presume you will be looking for information about why and how to get started with Python. Fortunately an experienced programmer in any programming language (whatever it may be) can pick up Python very quickly. It's also easy for beginners to use and learn, so jump in!
 
-#### Reference
 
+#### Reference
+[The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
 
 
 #### Libraries
@@ -343,7 +339,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 [Impacket](https://github.com/CoreSecurity/impacket)
 * Impacket is a collection of Python classes for working with network protocols. Impacket is focused on providing low-level programmatic access to the packets and for some protocols (for instance NMB, SMB1-3 and MS-DCERPC) the protocol implementation itself. Packets can be constructed from scratch, as well as parsed from raw data, and the object oriented API makes it simple to work with deep hierarchies of protocols. The library provides a set of tools as examples of what can be done within the context of this library.
 
-
+[Trollius and asyncio](https://trollius.readthedocs.io/asyncio.html)
 
 
 

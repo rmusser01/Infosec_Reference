@@ -71,7 +71,8 @@ http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce
 [Pince](https://github.com/korcankaraokcu/PINCE)
 * PINCE is a gdb front-end/reverse engineering tool focused on games, but it can be used for any reverse-engineering related stuff. PINCE is an abbreviation for "PINCE is not Cheat Engine". PINCE's GUI is heavily "inspired(;D)" by Cheat Engine. 
 
-
+[ugtrain](https://github.com/ugtrain/ugtrain)
+* Universal Elite Game Trainer for CLI(linux game trainer)
 
 
 

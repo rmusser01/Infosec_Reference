@@ -2,12 +2,6 @@
 
 
 
-
-
-
-
-
-
 ## Application Shimming
 -------------------------------
 [Application Shimming - ATT&CK](https://attack.mitre.org/wiki/Technique/T1138)

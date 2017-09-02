@@ -25,6 +25,9 @@ http://blog.erratasec.com/2011/06/password-cracking-mining-and-gpus.html#.VG3xsp
 
 http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
+[Gladius](https://github.com/praetorian-inc/gladius)
+	* Automated Responder/secretsdump.py cracking. Gladius provides an automated method for cracking credentials from various sources during an engagement. We currently crack hashes from Responder, secretsdump.py, and smart_hashdump.
+
 * Wordlists sorted by popularity originally created for password generation and testing
 ### End cull
 

@@ -405,7 +405,8 @@
 
 [How to find 56 potential vulnerabilities in FreeBSD code in one evening](https://www.viva64.com/en/b/0496/)
 
-
+[Static analysis tools for PHP](https://github.com/exakat/php-static-analysis-tools)
+* A reviewed list of useful PHP static analysis tools
 
 
 

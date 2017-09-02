@@ -14,6 +14,10 @@
 
 [P4wnP1](https://github.com/mame82/P4wnP1)
 * P4wnP1 is a highly customizable USB attack platform, based on a low cost Raspberry Pi Zero or Raspberry Pi Zero W.
+
+[Implanting a Dropcam](https://www.defcon.org/images/defcon-22/dc-22-presentations/Moore-Wardle/DEFCON-22-Colby-Moore-Patrick-Wardle-Synack-DropCam-Updated.pdf)
+
+[Software Distribution Malware Infection Vector](https://dl.packetstormsecurity.net/papers/general/Software.Distribution.Malware.Infection.Vector.pdf)
 #### End sort
 
 
@@ -163,9 +167,21 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 
 [404 File not found C2 PoC](https://github.com/theG3ist/404)
 
+[JSBN](https://github.com/Plazmaz/JSBN)
+	* JSBN is a bot client which interprets commands through Twitter, requiring no hosting of servers or infected hosts from the command issuer. It is written purely in javascript as a Proof-of-Concept for javascript's botnet potentials.
 
+[Spidernet](https://github.com/wandering-nomad/Spidernet)
+	* Proof of Concept of SSH Botnet C&C Using Python 
 
+[Pupy](https://github.com/n1nj4sec/pupy)
+	* Pupy is an opensource, multi-platform Remote Administration Tool with an embedded Python interpreter. Pupy can load python packages from memory and transparently access remote python objects. Pupy can communicate using different transports and have a bunch of cool features & modules. On Windows, Pupy is a reflective DLL and leaves no traces on disk.
 
+[OPSEC Considerations for Beacon Commands - CobaltStrike](https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/)
+
+[twittor - twitter based backdoor](https://github.com/PaulSec/twittor)
+	* A stealthy Python based backdoor that uses Twitter (Direct Messages) as a command and control server This project has been inspired by Gcat which does the same but using a Gmail account.
+
+[Command and Control Using Active Directory](http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/)
 
 
 ### Domain Fronting

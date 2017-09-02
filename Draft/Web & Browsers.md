@@ -232,11 +232,6 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 [Caja](https://developers.google.com/caja/)
 *  The Caja Compiler is a tool for making third party HTML, CSS and JavaScript safe to embed in your website. It enables rich interaction between the embedding page and the embedded applications. Caja uses an object-capability security model to allow for a wide range of flexible security policies, so that your website can effectively control what embedded third party code can do with user data.
 
-
-
-
-
-
 [faker.js](https://github.com/Marak/faker.js)
 * generate massive amounts of fake data in Node.js and the browser
 
@@ -251,7 +246,7 @@ As seen on: https://www.owasp.org/index.php/Category:Attack
 
 
 
-
+-------------------
 ##### <a name="Abuse of Functionality[#
 [jsgifkeylogger](https://github.com/wopot/jsgifkeylogger)
 * a javascript keylogger included in a gif file This is a PoC
@@ -259,7 +254,7 @@ As seen on: https://www.owasp.org/index.php/Category:Attack
 
 
 
-
+-------------------
 ### <a name="brute">Brute Force/Fuzzing</a>
 [Dirbuster](https://www.owasp.org/index.php/Category:OWASP_DirBuster_Project)
 * DirBuster is a multi threaded java application designed to brute force directories and files names on web/application servers. Often is the case now of what looks like a web server in a state of default installation is actually not, and has pages and applications hidden within. DirBuster attempts to find these.
@@ -275,7 +270,7 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 
 
-
+-------------------
 #### Cross Site Request Forgery (CSRF)
 [Cross Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
 
@@ -283,7 +278,7 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 
 
-
+-------------------
 #### <a name="encode">De/Encoders</a>
 
 [Unphp.net php decoder](http://www.unphp.net/decode/)
@@ -297,46 +292,53 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 
 
-
-##### <a name="Data Structure Attacks](#
+-------------------
+#### <a name="dsa">Data Structure Attacks</a>
 
 [EXPLOITING XXE IN FILE UPLOAD FUNCTIONALITY](https://www.blackhat.com/docs/us-15/materials/us-15-Vandevanter-Exploiting-XXE-Vulnerabilities-In-File-Parsing-Functionality.pdf)
 
 
 
-
-##### <a name="emc">Embedded Malicious Code</a>
-
-
-
-##### <a name="eoa">Exploitation of Authentication</a>
+-------------------
+#### <a name="emc">Embedded Malicious Code</a>
 
 
+-------------------
+#### <a name="eoa">Exploitation of Authentication</a>
 
 
-##### <a name="ija">Injection Based Attacks</a>
+
+-------------------
+#### <a name="ija">Injection Based Attacks</a>
 
 [Exploiting ShellShock getting a reverse shell](http://www.fantaghost.com/exploiting-shellshock-getting-reverse-shell)
+
+[Exploiting Python Code Injection in Web Applications](https://sethsec.blogspot.com/2016/11/exploiting-python-code-injection-in-web.html)
+
+#### OS Command Injection
 
 [commix](https://github.com/stasinopoulos/commix)
 * Automated All-in-One OS Command Injection and Exploitation Tool
 
-JNDI Attack Class
-[A Journey from JNDI-LDAP Manipulation to RCE](https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf)
-
 [SHELLING](https://github.com/ewilded/shelling)
 * A comprehensive OS command injection payload generator
 
-[Exploiting Python Code Injection in Web Applications](https://sethsec.blogspot.com/2016/11/exploiting-python-code-injection-in-web.html)
 
 
 
 
 
 
+-------------------
+#### JNDI Attack Class
+[A Journey from JNDI-LDAP Manipulation to RCE](https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf)
 
 
-##### <a name="jsa">Java/Serialization Attacks</a>
+
+
+
+-------------------
+### <a name="jsa">Java/Serialization Attacks</a>
 
 [Java-Deserialization-Cheat-Sheet](https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet)
 
@@ -383,7 +385,7 @@ JNDI Attack Class
 
 
 
-
+-------------------
 ### JSON Web Tokens
 
 [json token decode](http://jwt.calebb.net/)
@@ -397,6 +399,12 @@ JNDI Attack Class
 
 
 
+
+
+
+
+
+-------------------
 ### <a name="lrfi">LFI & RFI</a>
 
 [LFI Local File Inclusion Techniques (paper)](http://www.ush.it/2008/08/18/lfi2rce-local-file-inclusion-to-remote-code-execution-advanced-exploitation-proc-shortcuts/)
@@ -417,7 +425,7 @@ JNDI Attack Class
 
 
 
-
+-------------------
 ### (NO)SQL Injection
 [SQL Injection Cheat Sheet](http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/)
 
@@ -459,7 +467,7 @@ JNDI Attack Class
 
 
 
-
+-------------------
 ### <a name="pta">Path Traversal Attacks</a>
 [Exploiting PHP File Inclusion – Overview](https://websec.wordpress.com/2010/02/22/exploiting-php-file-inclusion-overview/)
 
@@ -469,7 +477,7 @@ JNDI Attack Class
 
 
 
-
+-------------------
 ### <a name="ssti">Server Side Template Injection</a>
 
 [Server Side Template Injection](http://blog.portswigger.net/2015/08/server-side-template-injection.html)
@@ -486,6 +494,9 @@ JNDI Attack Class
 
 
 
+
+
+-------------------
 ### Timing Attacks
 
 [Race The Web (RTW)](https://github.com/insp3ctre/race-the-web)
@@ -502,7 +513,7 @@ JNDI Attack Class
 
 
 
-
+-------------------
 ### <a name="shells">Web Shells</a>
 
 [Weevely](https://github.com/epinna/weevely3)
@@ -536,7 +547,7 @@ JNDI Attack Class
 
 
 
-
+-------------------
 ### <a name="xss">XSS</a>
 [Writing an XSS Worm](http://blog.gdssecurity.com/labs/2013/5/8/writing-an-xss-worm.html)
 
@@ -579,8 +590,6 @@ JNDI Attack Class
 
 
 --------------------
-
-
 ### API Stuff
 
 [burp-rest-api](https://github.com/vmware/burp-rest-api)
@@ -601,6 +610,8 @@ JNDI Attack Class
 [Automating API Penetration Testing using fuzzapi - AppSecUSA 2016](https://www.youtube.com/watch?v=43G_nSTdxLk)
 
 
+
+-------------------
 ### <a name="atkb"Attacking Browsers</a>
 [White Lightning Attack Platform](https://github.com/TweekFawkes/White_Lightning/tree/master/var/www)
 

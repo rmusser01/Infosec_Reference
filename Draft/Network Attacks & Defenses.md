@@ -78,7 +78,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [TCPDump Command Examples](http://www.thegeekstuff.com/2010/08/tcpdump-command-examples/)
 
-
+[The Eavesdropper’s Dillemma](http://www.crypto.com/papers/internet-tap.pdf)
 
 
 

@@ -129,6 +129,8 @@ http://spth.virii.lu/articles.htm
 
 [IA Guidance - NSA](https://www.iad.gov/iad/library/ia-guidance/index.cfm)
 
+[Weapons of Mass Distraction](http://conference.hitb.org/hitbsecconf2014kul/materials/D2T1%20-%20Haroon%20Meer%20Azhar%20Desai%20and%20Marco%20Slaviero%20-%20Weapons%20of%20Mass%20Distraction.pdf)
+	* In this talk, we aim to briefly cover the background of sock puppets (and related attacks) before moving on to real world demonstrations & “attacks“. Rigging polls, abusing Twitter, causing Reddit riots & targeting popular news organisations are some of the (many) attacks covered. In all these cases we discuss what we tried, what worked, what didn’t and what the implications are of the attacks. Where possible we will cover defences and solutions.
 
 
 
@@ -190,6 +192,11 @@ http://spth.virii.lu/articles.htm
 
 
 ### Interesting Talks/Videos
+
+[I Will Kill You - Chris Rock](https://www.youtube.com/watch?feature=youtu.be&v=9FdHq3WfJgs&t=77&app=desktop)
+	* Have you ever wanted to kill someone? Do you want to get rid of your partner, your boss or your arch nemesis? Perhaps you want to enjoy your life insurance payout whilst you’re still alive. Do you have rich elderly parents that just won’t die quick enough? Or do you want a “Do Over” new identity.  Then, this presentation is for you! I’ll provide you with the insight and techniques on how to “kill” someone and obtain a real death certificate and shutdown their lives. It focuses on the lack of security controls that allow any of us to virtually kill off anyone or any number of people. Forget the Dexter way of killing someone, I’ll show you how to avoid the messy clean up and focusing in on the digital aspects. You could be dead right now and not even know it.
+
+[Achilles Heel of the American Banking System](http://www.irongeek.com/i.php?page=videos/derbycon4/the-achilles-heel-of-the-banking-system)
 
 [Kim Jong-il and Me: How to Build a Cyber Army to Defeat the U.S. - Charlie MIller](https://www.youtube.com/watch?v=4up0yTGlpaU)
 

@@ -115,8 +115,6 @@ http://greatscottgadgets.com/infiltrate2013/
 * In this talk I describe my journey into reverse engineering parts of MikroTik system to gain access to hardware features and the shell behind the RouterOS that has no “ls”.
 
 
-
-
 ### General Tools
 
 [ThunderGate](http://thundergate.io/)

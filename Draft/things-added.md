@@ -19,7 +19,7 @@
 
 [Unrestricted File Upload Testing](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
 
-
+[Attacking *multifunction* printers and getting creds from them](http://www.irongeek.com/i.php?page=videos/bsidescleveland2014/plunder-pillage-and-print-the-art-of-leverage-multifunction-printers-during-penetration-testing-deral-heiland)
 
 
 
@@ -145,10 +145,10 @@
 ------------
 
 
+[Bridging the Air Gap Data Exfiltration from Air Gap Networks - DS15](https://www.youtube.com/watch?v=bThJEX4l_Ks)
 
 
-
-
+[In Plain Sight: The Perfect Exfiltration Technique - Itzik Kotler and Amit Klein - HITB16](https://www.youtube.com/watch?v=T6PscV43C0w)
 
 
 
@@ -252,7 +252,24 @@
 ## Network Scanning and Attacks
 ------------
 
+[reGeorg](https://github.com/sensepost/reGeorg)
+	* The successor to reDuh, pwn a bastion webserver and create SOCKS proxies through the DMZ. Pivot and pwn.
 
+[Adding your protocol to Masscan](http://blog.erratasec.com/2014/11/adding-protocols-to-masscan.html)
+
+[Davoset](https://github.com/MustLive/DAVOSET) 
+* DAVOSET - it is console (command line) tool for conducting DDoS attacks on the sites via Abuse of Functionality and XML External Entities vulnerabilities at other sites.
+
+[Too Many Cooks; Exploiting the Internet of Tr-069](http://mis.fortunecook.ie/) 
+
+[Ever wanted to scan the internet in a few hours?](http://blog.erratasec.com/2013/10/faq-from-where-can-i-scan-internet.html)
+
+[device-pharmer](https://github.com/DanMcInerney/device-pharmer)
+* Opens 1K+ IPs or Shodan search results and attempts to login 
+
+
+
+[Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)
 
 
 
@@ -306,6 +323,19 @@
 
 ## Physical Security
 ------------
+
+[Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
+
+
+
+
+
+
+
+
+
+
+|||||||||||||||||||||||||
 
 [Physical Security - Everything That's Wrong With Your Typical Door - Deviant Ollam - SANS Webcast](https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop)
 
@@ -362,7 +392,7 @@
 
 ## Post Exploitation/Privilege Escalation
 ------------
-[
+[VirtualBox Detection Via WQL Queries](http://waleedassar.blogspot.com/)
 
 
 
@@ -446,6 +476,22 @@
 
 ## SCADA
 ------------
+
+
+[Different Type of SCADA](http://scadastrangelove.blogspot.com/2014/10/different-type-of-scada.html)
+
+
+
+
+
+
+
+
+
+
+
+||||||||||||||||
+
 [SCADA Strangelove or: How I Learned to Start Worrying and Love Nuclear Plants](https://www.youtube.com/watch?v=o2r7jbwTv6w)
 * Modern civilization unconditionally depends on information systems. It is paradoxical but true that ICS/SCADA systems are the most insecure systems in the world. From network to application, SCADA is full of configuration issues and vulnerabilities. During our report, we will demonstrate how to obtain full access to a plant via:
 * a sniffer and a packet generator; FTP and Telnet; Metasploit and oslq; a webserver and a browser; 
@@ -505,6 +551,21 @@
 ## Web: 
 ------------
 [Unrestricted File Upload Security Testing - Aptive](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
+
+[JSShell](https://github.com/Den1al/JSShell/)
+	* An interactive multi-user web based JS shell written in Python with Flask (for server side) and of course Javascript and HTML (client side). It was initially created to debug remote esoteric browsers during tests and research. I'm aware of other purposes this tool might serve, use it at your own responsibility and risk.
+
+[STUN IP Address requests for WebRTC](https://github.com/diafygi/webrtc-ips)
+
+[Use google bots to perform SQL injections on websites](http://blog.sucuri.net/2013/11/google-bots-doing-sql-injection-attacks.html)
+
+[JSRat-Py](https://github.com/Hood3dRob1n/JSRat-Py) 
+	* implementation of JSRat.ps1 in Python so you can now run the attack server from any OS instead of being limited to a Windows OS with Powershell enabled
+
+
+
+
+
 
 
 

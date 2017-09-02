@@ -21,6 +21,7 @@ Defense:
 [BEAMGUN](https://github.com/JLospinoso/beamgun)
 * A rogue-USB-device defeat program for Windows. 
 
+[Defending against mimikatz](https://jimshaver.net/2016/02/14/defending-against-mimikatz/)
 
 
 [Powershell Security at Enterprise Customers](https://blogs.msdn.microsoft.com/daviddasneves/2017/05/25/powershell-security-at-enterprise-customers/)
@@ -55,6 +56,8 @@ Use Invoke-HoneyCreds to distribute fake cred throughout environment as "legit" 
 
 http://www.leeholmes.com/blog/2016/10/22/more-detecting-obfuscated-powershell/
 
+
+The Hitchhiker's Guide to SQL Injection prevention - https://phpdelusions.net/sql_injection
 
 
 

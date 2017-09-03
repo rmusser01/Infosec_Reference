@@ -64,6 +64,8 @@ The Hitchhiker's Guide to SQL Injection prevention - https://phpdelusions.net/sq
 [Securi-Tay 2017 - Advanced Attack Detection](https://www.youtube.com/watch?v=ihElrBBJQo8)
 * 
 
+[Common misconfigurations that lead to a breach - Justin Tharpe](https://www.youtube.com/watch?v=fI3mycr5cPg)
+
 
 [Securing Windows Workstations: Developing a Secure Baseline](https://adsecurity.org/?p=3299)
 
@@ -82,7 +84,18 @@ The Hitchhiker's Guide to SQL Injection prevention - https://phpdelusions.net/sq
 * A UNIX security auditing tool based on several security frameworks
 
 
+[OverSight](https://objective-see.com/products/oversight.html)
+* OverSight monitors a mac's mic and webcam, alerting the user when the internal mic is activated, or whenever a process accesses the webcam. 
 
 
+[Detecting Forged Kerberos Ticket (Golden Ticket & Silver Ticket) Use in Active Directory](http://adsecurity.org/?p=1515)
 
 
+[How to Efficiently Protect AD from Credential Theft & Compromise - Friedwart Kuhn - Troopers15](https://www.youtube.com/watch?v=I4mb0UciqlY)
+
+[Defending the Enterprise Against Network Infrastructure Attacks  - Paul Coggin - Troopers15](https://www.youtube.com/watch?v=K0X3RDf5XK8)
+
+[Kerberos Golden Ticket: Mitigating pass the ticket on Active Directory](http://cert.europa.eu/static/WhitePapers/CERT-EU-SWP_14_07_PassTheGolden_Ticket_v1_1.pdf)
+
+[TaskExplorer](https://objective-see.com/products/taskexplorer.html)
+* Explore all the tasks (processes) running on your Mac with TaskExplorer. 

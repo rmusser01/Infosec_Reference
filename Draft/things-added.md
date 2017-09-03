@@ -408,6 +408,9 @@
 [Static analysis tools for PHP](https://github.com/exakat/php-static-analysis-tools)
 * A reviewed list of useful PHP static analysis tools
 
+[x86 Call/Return Protocol](http://pages.cs.wisc.edu/~remzi/Classes/354/Fall2012/Handouts/Handout-CallReturn.pdf)
+
+
 
 
 

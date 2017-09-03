@@ -20,9 +20,6 @@ http://toddington.com/resources/
 
 www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
-
-
-
 * Add list of Sources:
 * UCC - Uniform Commercial Code; DOC - Current Industrial Patents; DMV - Vehicle Ownership applications; Patents - Patent DBs; Operating Licenses/Permits; Trade Journals;
 
@@ -185,8 +182,21 @@ A tool to perform various OSINT techniques, aggregate all the raw data, and give
 
 ##### Google Hacking
 
-[SearchDiggity](http://www.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/#searchdiggity)
-* Description: SearchDiggity 3.1 is the primary attack tool of the Google Hacking Diggity Project. It is Bishop Fox’s MS Windows GUI application that serves as a front-end to the most recent versions of our Diggity tools: GoogleDiggity, BingDiggit, Bing LinkFromDomainDiggity, CodeSearchDiggity, DLPDiggity, FlashDiggity, MalwareDiggity, PortScanDiggity, SHODANDiggity, BingBinaryMalwareSearch, NotInMyBackYard Diggity
+[Google Hacking for Penetration Testers](https://www.blackhat.com/presentations/bh-europe-05/BH_EU_05-Long.pdf)
+
+[ExpoitDB archive of the google hacking database](http://www.exploit-db.com/google-dorks/)
+
+[Google Hacking Database](http://www.hackersforcharity.org/ghdb/)
+* We call them 'googledorks': Inept or foolish people as revealed by Google. Whatever you call these fools, you've found the center of the Google Hacking Universe! 
+
+[Google Hacking - Search Diggity tool](http://www.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/)
+* SearchDiggity 3.1 is the primary attack tool of the Google Hacking Diggity Project. It is Bishop Fox’s MS Windows GUI application that serves as a front-end to the most recent versions of our Diggity tools: GoogleDiggity, BingDiggity, Bing LinkFromDomainDiggity, CodeSearchDiggity, DLPDiggity, FlashDiggity, MalwareDiggity, PortScanDiggity, SHODANDiggity, BingBinaryMalwareSearch, and NotInMyBackYard Diggity.
+
+
+
+
+
+
 
 
 ##### Site Scrapers
@@ -201,6 +211,8 @@ A tool to perform various OSINT techniques, aggregate all the raw data, and give
 
 [InSpy](https://github.com/gojhonny/InSpy)
 * A LinkedIn enumeration tool
+
+[Github dorks - finding vulns](http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html)
 
 
 ##### Email Gathering

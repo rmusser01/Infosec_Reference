@@ -8,7 +8,7 @@ An Information Security Reference That Doesn't Suck
 * List of techinques, tools and tactics to learn from/reference.
 	* Something like a "Yellow Pages" in the sense of you know something exists, but what was it called....
 * End goal: Rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches OR as a reference/recall method for stuff.
-* Something similar to the [MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page) (eventually; As in, "I want to do priv esc on OS X, what methods are there?" or, "I'm studying UAFs, is there any good info I can look at without diving deep?" Focused on performing attacks and how they're done vs how attacks are done with a focus on defense - D3f3ns3 Framework?)
+* Something oppposite to the [MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page) (eventually; As in, "I want to do priv esc on OS X/windows/linux, what methods are there?" or, "I need to do X under Y situation". Focus is on attacks and how they're done vs how attacks are done with a focus on defense.
 	* Always accepting more links/stuff. Feel free to contribue or suggest something.
 
 * Little extra something: ALL LINKS LISTED ARE VALID. They will route to their target page or to Internet Archives most recent archive of that page. All links are validated when I pull from github and host on my site using Daux. 
@@ -31,7 +31,7 @@ An Information Security Reference That Doesn't Suck
 ### Index - Table of Contents
 ------------------------------
 
-#### ATT&CK Stuff
+#### ATT&CK(Def3nse?) Stuff
 Windows
 * [Windows Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Collection.md)
 * [Windows Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Command_and_Control.md)

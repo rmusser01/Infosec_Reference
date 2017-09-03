@@ -58,11 +58,6 @@ http://www.grouppolicy.biz/2011/06/best-practices-group-policy-for-wsus/
 [Windows Firewall Hook Enumeration](https://www.nccgroup.com/en/blog/2015/01/windows-firewall-hook-enumeration/)
 * We’re going to look in detail at Microsoft Windows Firewall Hook drivers from Windows 2000, XP and 2003. This functionality was leveraged by the Derusbi family of malicious code to implement port-knocking like functionality. We’re going to discuss the problem we faced, the required reverse engineering to understand how these hooks could be identified and finally how the enumeration tool was developed.
 
-
-
-
-
-
 [Windows ISV Software Security Defenses](https://msdn.microsoft.com/en-us/library/bb430720.aspx)
 
 [Harden windows IP Stack](https://www.reddit.com/r/netsec/comments/2sg80a/how_to_harden_windowsiis_ssltls_configuration/)
@@ -152,3 +147,20 @@ The Hitchhiker's Guide to SQL Injection prevention - https://phpdelusions.net/sq
 
 [TaskExplorer](https://objective-see.com/products/taskexplorer.html)
 * Explore all the tasks (processes) running on your Mac with TaskExplorer. 
+
+
+
+
+
+
+
+
+
+
+
+
+### Active Directory
+
+
+
+

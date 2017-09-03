@@ -6,10 +6,10 @@ An Information Security Reference That Doesn't Suck
 #### Goal:
 * Be an awesome Information Security Reference
 * List of techinques, tools and tactics to learn from/reference.
-* Something like a "Yellow Pages" in the sense of you know something exists, but what was it called....
+	* Something like a "Yellow Pages" in the sense of you know something exists, but what was it called....
 * End goal: Rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches OR as a reference/recall method for stuff.
 * Something similar to the [MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page) (eventually; As in, "I want to do priv esc on OS X, what methods are there?" or, "I'm studying UAFs, is there any good info I can look at without diving deep?" Focused on performing attacks and how they're done vs how attacks are done with a focus on defense - D3f3ns3 Framework?)
-* Always accepting more links/stuff. Feel free to contribue or suggest something.
+	* Always accepting more links/stuff. Feel free to contribue or suggest something.
 
 * Little extra something: ALL LINKS LISTED ARE VALID. They will route to their target page or to Internet Archives most recent archive of that page. All links are validated when I pull from github and host on my site using Daux. 
 
@@ -22,22 +22,14 @@ An Information Security Reference That Doesn't Suck
 
 
 ##### This page
-* Nicer UI [rmusser.net/docs](https://rmusser.net/docs)
-* For latest content updates, check here: [Things added since last update](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/things-added.md)
-...* This will have all links added to the other pages sorted according to topic, making it easier to see new stuff.
-
-
 * This page is terrible. It should not be used to navigate for info unless you like self harm. Use [https://rmusser.net/docs](https://rmusser.net/docs]) instead.
-
+* For latest content updates, check here: [Things added since last update](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/things-added.md)
+	* This will have all links added to the other pages sorted according to topic, making it easier to see new stuff.
 * More content is within the Draft folder. The below is broken(probably).
 
 
 ### Index - Table of Contents
 ------------------------------
-
-* [Attacking / Defending Android]()
-
-* [Attacking / Defending iOS]()
 
 * [Anonymity/OpSec/Privacy]()
 
@@ -57,7 +49,7 @@ An Information Security Reference That Doesn't Suck
 
 * [Counter Surveillance]()
 
-* [Courses]()
+* [Courses & Training]()
 
 * [Cryptography & Encryption]()
 
@@ -83,15 +75,11 @@ An Information Security Reference That Doesn't Suck
 
 * [Fuzzing]()
 
-* [Google Hacking]()
-
 * [Home Security]()
 
 * [Honeypots]()
 
 * [Interesting Things & Useful Information]()
-
-* [Lockpicking]()
 
 * [Malware]()
 
@@ -102,6 +90,7 @@ An Information Security Reference That Doesn't Suck
 * [Passwords]()
 
 * [Programming Stuff]()
+
 * [Privilege Escalation and Post-Exploitation]()
 
 * [Red Teaming]()
@@ -112,13 +101,7 @@ An Information Security Reference That Doesn't Suck
 
 * [Rootkits]()
 
-* [Sandboxes]()
-
-* [S.E.K.E.P.]()
-
 * [Social Engineering]()
-
-* [SysAdmin Stuff]()
 
 * [System Internals (Linux/Windows) - NOT THE TOOLSET]()
 

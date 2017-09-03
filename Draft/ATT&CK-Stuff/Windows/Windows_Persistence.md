@@ -1,16 +1,8 @@
-Unfilled:
-	External Remote Services
-	Hypervisor
-	System Firmware
-	Valid Accounts
-	Web Shells
-
-
-
 # Windows Persistence
 
-## Accessibility Features
 -------------------------------
+### Accessibility Features
+
 [Accessibility Features - ATT&CK](https://attack.mitre.org/wiki/Technique/T1015)
 
 * Replace the windows accessibilty applications with desired binary to be ran instead. Sticky-Keys backdoor. 
@@ -23,9 +15,9 @@ Unfilled:
 [Privilege Escalation via "Sticky" Keys](http://carnal0wnage.attackresearch.com/2012/04/privilege-escalation-via-sticky-keys.html)
 
 
-
-## AppInit DLLs
 -------------------------------
+### AppInit DLLs
+
 [AppInit DLLs - ATT&CK](https://attack.mitre.org/wiki/Technique/T1103)
 
 [Working with the AppInit_DLLs registry value](https://support.microsoft.com/en-us/help/197571/working-with-the-appinit-dlls-registry-value)
@@ -37,9 +29,9 @@ Unfilled:
 [AppInit DLLs and Secure Boot](https://msdn.microsoft.com/en-us/library/dn280412)
 
 
-
-## Application Shimming
 -------------------------------
+### Application Shimming
+
 [Application Shimming - ATT&CK](https://attack.mitre.org/wiki/Technique/T1138)
 
 [Understanding Shims](https://technet.microsoft.com/en-us/library/dd837644(v=ws.10).aspx)
@@ -59,9 +51,15 @@ Unfilled:
 [Windows 0wn3d By Default - Mark Baggett - Derbycon 2013](http://www.irongeek.com/i.php?page=videos/derbycon3/4206-windows-0wn3d-by-default-mark-baggett)
 * Description: “In this talk we will discuss API Hooking, Process Execution Redirection, Hiding Registry keys and hiding directories on the hard drive. We must be talking about rootkits, right? Well yes, but not in the way you think. The Windows family of operating systems has all of these capabilities built right in! Using nothing but tools and techniques distributed and documented by Microsoft we can implement all of these rootkit functions. During this exciting talk I will present new attacks against Windows operating system that provide rootkit like functionality with built-in OS tools. In session, we’ll demonstrate how to leverage the Microsoft Application Compatibility Toolkit to help hide an attacker’s presence on your system. The Application Compatibility Toolkit allows you to create application shims that intercept and redirect calls from applications to the operating system. This native rootkit like capability is intended to make the Windows operating system compatible with very old or poorly written applications. Do DEP, ASLR, UAC, and Windows Resource Protection, File system ACLS and other modern OS security measures get it your way? No problem. Turn them off! Do you want to hide files and registry keys and from the user? The Application Compatibility toolkit allows you to create a virtual world for any application and hide resources from view. If someone inspects the registry with regedit they will see exactly what the attacker wants them to see and not what the OS sees when it launches programs. Did they patch your target so your exploit doesn’t work? Guess what, making applications backwards compatible is what this tool is intended to do. Make your favorite applications “old exploit compatible” insuring you can re-exploit the target with this awesome untapped resource. Everything you need to subvert windows applications is built right into the windows kernel. Come learn how to use the application compatibility toolkit to tap this great resource.”
 
+[Shackles, Shims, and Shivs - Understanding Bypass Techniques](http://www.irongeek.com/i.php?page=videos/derbycon6/535-shackles-shims-and-shivs-understanding-bypass-techniques-mirovengi)
 
-## Authentication Package
+
+
+
+
 -------------------------------
+### Authentication Package
+
 [Authentication Package - ATT&CK](https://attack.mitre.org/wiki/Technique/T1131)
 * Adversaries can use the autostart mechanism provided by LSA Authentication Packages for persistence by placing a reference to a binary in the Windows Registry location HKLM\SYSTEM\CurrentControlSet\Control\Lsa\ with the key value of "Authentication Packages"=<target binary>. The binary will then be executed by the system when the authentication packages are loaded. (from https://attack.mitre.org/wiki/Technique/T1131#scite-b8a6357c4704477b91b769fd0bcd0fc8)
 
@@ -69,17 +67,17 @@ Unfilled:
 * Authentication packages are contained in dynamic-link libraries. The Local Security Authority (LSA) loads authentication packages by using configuration information stored in the registry. Loaded at OS start.
 
 
-
-## Bootkit
 -------------------------------
+### Bootkit
+
 [Bootkit - ATT&CK](https://attack.mitre.org/wiki/Technique/T1067)
 * A bootkit is a malware variant that modifies the boot sectors of a hard drive, including the Master Boot Record (MBR) and Volume Boot Record (VBR).
-
 * Not going to list much here. If you're doing this, you don't need this.
 
 
-## Change Default File Association
 -------------------------------
+### Change Default File Association
+
 [Change Default File Association - ATT&CK](https://attack.mitre.org/wiki/Technique/T1042)
 * When a file is opened, the default program used to open the file (also called the file association or handler) is checked. File association selections are stored in the Windows Registry and can be edited by users, administrators, or programs that have Registry access.
 
@@ -88,40 +86,50 @@ Unfilled:
 * Win 7,8,10: Open Control Panel > Control Panel Home > Default Programs > Set Associations
 
 
-## Component Firmware
+
 -------------------------------
+### Component Firmware
+
 [Component Firmware - ATT&CK](https://attack.mitre.org/wiki/Technique/T1109)
 
 
-
-## Component Object Model Hijacking
 -------------------------------
+## Component Object Model Hijacking
+
 [Component Object Model Hijacking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1122)
 
 [The Component Object Model](https://msdn.microsoft.com/library/ms694363.aspx)
 
 [COM Object hijacking: the discreet way of persistence](https://www.gdatasoftware.com/blog/2014/10/23941-com-object-hijacking-the-discreet-way-of-persistence)
 
+[Userland Persistence with Scheduled Tasks and COM Handler Hijacking](https://enigma0x3.net/2016/05/25/userland-persistence-with-scheduled-tasks-and-com-handler-hijacking/)
 
 
-## DLL Search Order Hijacking
+
+
 -------------------------------
+### DLL Search Order Hijacking
+
 [DLL Search Order Hijacking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1038)
 
 [Dynamic-Link Library Search Order](https://msdn.microsoft.com/en-US/library/ms682586)
 
 
-
-## External Remote Services
 -------------------------------
+### External Remote Services
+
 [External Remote Services - ATT&CK](https://attack.mitre.org/wiki/Technique/T1133)
 
 * VPN/RDP/Citrix Hijacking
 
 
 
-## File System Permissions Weakness
+
+
+
 -------------------------------
+### File System Permissions Weakness
+
 [File System Permissions Weakness - ATT&CK](https://attack.mitre.org/wiki/Technique/T1044)
 * Processes may automatically execute specific binaries as part of their functionality or to perform other actions. If the permissions on the file system directory containing a target binary, or permissions on the binary itself, are improperly set, then the target binary may be overwritten with another binary using user-level permissions and executed by the original process. If the original process and thread are running under a higher permissions level, then the replaced binary will also execute under higher-level permissions, which could include SYSTEM. 
 
@@ -129,8 +137,11 @@ Unfilled:
 
 
 
-## Hidden Files and Directories
+
+
 -------------------------------
+## Hidden Files and Directories
+
 [Hidden Files and Directories - ATT&CK](https://attack.mitre.org/wiki/Technique/T1158)
 * Users can mark specific files as hidden by using the attrib.exe binary. Simply do attrib +h filename to mark a file or folder as hidden. Similarly, the “+s” marks a file as a system file and the “+r” flag marks the file as read only. Like most windows binaries, the attrib.exe binary provides the ability to apply these changes recursively “/S”. 
 
@@ -138,16 +149,23 @@ Unfilled:
 
 
 
-## Hypervisor
+
+
 -------------------------------
+### Hypervisor
+
 [Hypervisor - ATT&CK](https://attack.mitre.org/wiki/Technique/T1062)
 
 [An Introduction to Hardware-Assisted Virtual Machine (HVM) - pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.90.8832&rep=rep1&type=pdf)
 
 
 
-## Local Port Monitor
+
+
+
 -------------------------------
+### Local Port Monitor
+
 [Local Port Monitor - ATT&CK](https://attack.mitre.org/wiki/Technique/T1013)
 * A port monitor can be set through the AddMonitor API call to set a DLL to be loaded at startup. This DLL can be located in C:\Windows\System32 and will be loaded by the print spooler service, spoolsv.exe, on boot. Alternatively, an arbitrary DLL can be loaded if permissions allow writing a fully-qualified pathname for that DLL to HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors. The spoolsv.exe process also runs under SYSTEM level permissions. 
 
@@ -155,8 +173,10 @@ Unfilled:
 
 
 
-## Logon Scripts
+
 -------------------------------
+## Logon Scripts
+
 [Logon Scripts - ATT&CK](https://attack.mitre.org/wiki/Technique/T1037)
 * Windows allows logon scripts to be run whenever a specific user or group of users log into a system.
 
@@ -166,8 +186,11 @@ Unfilled:
 
 
 
-## Modify Existing Service
+
+
 -------------------------------
+### Modify Existing Service
+
 [Modify Existing Service - ATT&CK](https://attack.mitre.org/wiki/Technique/T1031)
 * Windows service configuration information, including the file path to the service's executable, is stored in the Registry. Service configurations can be modified using utilities such as sc.exe and Reg.  Adversaries can modify an existing service to persist malware on a system by using system utilities or by using custom tools to interact with the Windows API. Use of existing services is a type of Masquerading that may make detection analysis more challenging. Modifying existing services may interrupt their functionality or may enable services that are disabled or otherwise not commonly used. 
 
@@ -178,8 +201,10 @@ Unfilled:
 
 
 
-## Netsh Helper DLL
+
 -------------------------------
+### Netsh Helper DLL
+
 [Netsh Helper DLL - ATT&CK](https://attack.mitre.org/wiki/Technique/T1128)
 * Netsh.exe (also referred to as Netshell) is a command-line scripting utility used to interact with the network configuration of a system. It contains functionality to add helper DLLs for extending functionality of the utility. The paths to registered netsh.exe helper DLLs are entered into the Windows Registry at HKLM\SOFTWARE\Microsoft\Netsh. Adversaries can use netsh.exe with helper DLLs to proxy execution of arbitrary code in a persistent manner when netsh.exe is executed automatically with another Persistence technique or if other persistent software is present on the system that executes netsh.exe as part of its normal functionality. Examples include some VPN software that invoke netsh.exe.
 
@@ -189,8 +214,11 @@ Unfilled:
 
 
 
-## New Service
+
+
 -------------------------------
+### New Service
+
 [New Service - ATT&CK](https://attack.mitre.org/wiki/Technique/T1050)
 * When operating systems boot up, they can start programs or applications called services that perform background system functions. A service's configuration information, including the file path to the service's executable, is stored in the Windows Registry. Adversaries may install a new service that can be configured to execute at startup by using utilities to interact with services or by directly modifying the Registry. The service name may be disguised by using a name from a related operating system or benign software with Masquerading. Services may be created with administrator privileges but are executed under SYSTEM privileges, so an adversary may also use a service to escalate privileges from administrator to SYSTEM. Adversaries may also directly start services through Service Execution. 
 
@@ -198,8 +226,13 @@ Unfilled:
 
 
 
-## Office Application Startup
+
+
+
+
 -------------------------------
+### Office Application Startup
+
 [Office Application Startup - ATT&CK](https://attack.mitre.org/wiki/Technique/T1137)
 * Microsoft Office is a fairly common application suite on Windows-based operating systems within an enterprise network. There are multiple mechanisms that can be used with Office for persistence when an Office-based application is started. 
 
@@ -217,9 +250,9 @@ Unfilled:
 * Add-ins provide optional commands and features for Microsoft Excel. By default, add-ins are not immediately available in Excel, so you must first install and (in some cases) activate these add-ins so that you can use them.
 
 
-
-## Path Interception
 -------------------------------
+### Path Interception
+
 [Path Interception - ATT&CK](https://attack.mitre.org/wiki/Technique/T1034)
 * Path interception occurs when an executable is placed in a specific path so that it is executed by an application instead of the intended target.
 * There are multiple distinct weaknesses or misconfigurations that adversaries may take advantage of when performing path interception: unquoted paths, path environment variable misconfigurations, and search order hijacking. The first vulnerability deals with full program paths, while the second and third occur when program paths are not specified. These techniques can be used for persistence if executables are called on a regular basis, as well as privilege escalation if intercepted executables are started by a higher privileged process. 
@@ -244,6 +277,9 @@ Unfilled:
 
 [The $env:PATH Less Traveled: Subverting Trust with 3rd-Party Applications - obscuresec](http://obscuresecurity.blogspot.com/2014/02/the-envpath-less-traveled-subverting.html)
 
+
+
+
 #### Search Order Hijacking
 
 Search order hijacking occurs when an adversary abuses the order in which Windows searches for programs that are not given a path. The search order differs depending on the method that is used to execute the program. However, it is common for Windows to search in the directory of the initiating program before searching through the Windows system directory. An adversary who finds a program vulnerable to search order hijacking (i.e., a program that does not specify the path to an executable) may take advantage of this vulnerability by creating a program named after the improperly specified program and placing it within the initiating program's directory.
@@ -258,15 +294,15 @@ Search order hijacking occurs when an adversary abuses the order in which Window
 [Environment Property](https://msdn.microsoft.com/en-us/library/fd7hxfdd.aspx)
 
 
-
-## Redundant Access
 -------------------------------
+### Redundant Access
+
 * Don't just use one backdoor. Use multiple avenues of exfil. Plan ahead and exepct observation/discovery. Prepare backup solutions ready to go in case SHTF.
 
 
-
-## Registry Run Key/ Start Folder
 -------------------------------
+### Registry Run Key/ Start Folder
+
 [Registry Run Keys / Start Folder - ATT&CK](https://attack.mitre.org/wiki/Technique/T1060)
 * Adding an entry to the "run keys" in the Registry or startup folder will cause the program referenced to be executed when a user logs in. The program will be executed under the context of the user and will have the account's associated permissions level. 
 
@@ -277,9 +313,9 @@ Search order hijacking occurs when an adversary abuses the order in which Window
 * Here are the links to all the ‘Beyond good ol’ Run key’ posts so far. 
 
 
-
-## Scheduled Tasks
 -------------------------------
+### Scheduled Tasks
+
 [Scheduled Tasks - ATT&CK](https://attack.mitre.org/wiki/Technique/T1053)
 * Utilities such as at and schtasks, along with the Windows Task Scheduler, can be used to schedule programs or scripts to be executed at a date and time. The account used to create the task must be in the Administrators group on the local system. A task can also be scheduled on a remote system, provided the proper authentication is met to use RPC and file and printer sharing is turned on.
 
@@ -296,9 +332,9 @@ Search order hijacking occurs when an adversary abuses the order in which Window
 
 
 
-
-## Security Support Provider
 -------------------------------
+### Security Support Provider
+
 [Security Support Provider - ATT&CK](https://attack.mitre.org/wiki/Technique/T1101)
 * Windows Security Support Provider (SSP) DLLs are loaded into the Local Security Authority (LSA) process at system start. Once loaded into the LSA, SSP DLLs have access to encrypted and plaintext passwords that are stored in Windows, such as any logged-on user's Domain password or smart card PINs. The SSP configuration is stored in two Registry keys: HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Security Packages and HKLM\SYSTEM\CurrentControlSet\Control\Lsa\OSConfig\Security Packages. An adversary may modify these Registry keys to add new SSPs, which will be loaded the next time the system boots, or when the AddSecurityPackage Windows API function is called. 
 
@@ -309,9 +345,9 @@ Search order hijacking occurs when an adversary abuses the order in which Window
 [The Security Support Provider Interface - MSDN](https://msdn.microsoft.com/en-us/library/bb742535.aspx)
 
 
-
-## Service Registry Permissions Weakness
 -------------------------------
+### Service Registry Permissions Weakness
+
 [Service Registry Permissions Weakness - ATT&CK](https://attack.mitre.org/wiki/Technique/T1058)
 * Windows stores local service configuration information in the Registry under HKLM\SYSTEM\CurrentControlSet\Services. The information stored under a service's Registry keys can be manipulated to modify a service's execution parameters through tools such as the service controller, sc.exe, PowerShell, or Reg. Access to Registry keys is controlled through Access Control Lists and permissions.
 * If the permissions for users and groups are not properly set and allow access to the Registry keys for a service, then adversaries can change the service binPath/ImagePath to point to a different executable under their control. When the service starts or is restarted, then the adversary-controlled program will execute, allowing the adversary to gain persistence and/or privilege escalation to the account context the service is set to execute under (local/domain account, SYSTEM, LocalService, or NetworkService). 
@@ -319,30 +355,54 @@ Search order hijacking occurs when an adversary abuses the order in which Window
 [Registry Key Security and Access Rights - MSDN](https://msdn.microsoft.com/library/windows/desktop/ms724878.aspx)
 
 
-## Shortcut Modification
+
+
 -------------------------------
+### Shortcut Modification
+
 [Shortcut Modification - ATT&CK](https://attack.mitre.org/wiki/Technique/T1023)
 * Shortcuts or symbolic links are ways of referencing other files or programs that will be opened or executed when the shortcut is clicked or executed by a system startup process. Adversaries could use shortcuts to execute their tools for persistence. They may create a new shortcut as a means of indirection that may use Masquerading to look like a legitimate program. Adversaries could also edit the target path or entirely replace an existing shortcut so their tools will be executed instead of the intended legitimate program. 
 
 [How to create shortcuts for apps, files, folders and web pages in Windows](http://www.digitalcitizen.life/how-create-shortcuts)
 
 
+[tricky.lnk](https://github.com/xillwillx/tricky.lnk)
+Creates a .lnk file with unicode chars that reverse the file extension and adds a .txt to the end to make it appear as a textfile. Payload is a powershell webdl and execute
 
-## System Firmware
+[pylnker](https://github.com/HarmJ0y/pylnker)
+* This is a Python port of lnk-parse-1.0, a tool to parse Windows .lnk files.
+
+[python_lnk_maker](https://github.com/carnal0wnage/python_lnk_maker)
+* Make Windows LNK file with python (pylnk)
+
+[LNKUp](https://github.com/Plazmaz/LNKUp)
+* This tool will allow you to generate LNK payloads. Upon rendering or being run, they will exfiltrate data.
+
+[liblnk](https://github.com/libyal/liblnk)
+* Library and tools to access the Windows Shortcut File (LNK) format
+
+[lnk-parse](https://github.com/lcorbasson/lnk-parse)
+* MS Windows LNK file parser
+
+
 -------------------------------
+### System Firmware
+
 [System Firmware - ATT&CK](https://attack.mitre.org/wiki/Technique/T1019)
 * The BIOS (Basic Input/Output System) and The Unified Extensible Firmware Interface (UEFI) or Extensible Firmware Interface (EFI) are examples of system firmware that operate as the software interface between the operating system and hardware of a computer.
 * System firmware like BIOS and (U)EFI underly the functionality of a computer and may be modified by an adversary to perform or assist in malicious activity. Capabilities exist to overwrite the system firmware, which may give sophisticated adversaries a means to install malicious firmware updates as a means of persistence on a system that may be difficult to detect. 
 
 
-## Valid Accounts
+
 -------------------------------
+### Valid Accounts
+
 [Valid Accounts - ATT&CK](https://attack.mitre.org/wiki/Technique/T1078)
 
 
-
-## Web Shell
 -------------------------------
+### Web Shell
+
 [Web Shell - ATT&CK](https://attack.mitre.org/wiki/Technique/T1100)
 * A Web shell is a Web script that is placed on an openly accessible Web server to allow an adversary to use the Web server as a gateway into a network. A Web shell may provide a set of functions to execute or a command-line interface on the system that hosts the Web server. 
 
@@ -382,9 +442,9 @@ Search order hijacking occurs when an adversary abuses the order in which Window
 [Use PowerShell to Create a Permanent WMI Event to Launch a VBScript](https://gallery.technet.microsoft.com/scriptcenter/List-all-WMI-Permanent-73e04ab4)
 
 
-
-## Winlogon Helper DLL
 -------------------------------
+## Winlogon Helper DLL
+
 [Winlogon Helper DLL - ATT&CK](https://attack.mitre.org/wiki/Technique/T1004)
 * Winlogon is a part of some Windows versions that performs actions at logon. In Windows systems prior to Windows Vista, a Registry key can be modified that causes Winlogon to load a DLL on startup. Adversaries may take advantage of this feature to load adversarial code at startup for persistence. 
 * Winlogon is a part of Windows that performs logon actions. In Windows systems prior to Windows Vista, a registry key can be modified that causes Winlogon to load a DLL on startup. Adversaries may take advantage of this feature to load adversarial code at startup.

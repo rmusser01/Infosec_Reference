@@ -1,8 +1,8 @@
 # Windows_Discovery.md
 
-
-## Account Discovery
 -------------------------------
+### Account Discovery
+
 [Account Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1087)
 * Adversaries may attempt to get a listing of local system or domain accounts. 
 * Example commands that can acquire this information are net user, net group <groupname>, and net localgroup <groupname> using the Net utility or through use of dsquery. If adversaries attempt to identify the primary user, currently logged in user, or set of users that commonly uses a system, System Owner/User Discovery may apply. 
@@ -21,9 +21,9 @@
 
 
 
-
-## Application Window Discovery
 -------------------------------
+### Application Window Discovery
+
 [Application Window Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1010)
 * Adversaries may attempt to get a listing of open application windows. Window listings could convey information about how the system is used or give context to information collected by a keylogger. 
 
@@ -39,9 +39,9 @@
 
 
 
-
-## File and Directory Discovery
 -------------------------------
+### File and Directory Discovery
+
 [File and Directory Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1083)
 
 [Microsoft DOS tree command](https://www.computerhope.com/treehlp.htm)
@@ -51,14 +51,19 @@
 * Displays a list of a directory's files and subdirectories. If used without parameters, dir displays the disk's volume label and serial number, followed by a list of directories and files on the disk (including their names and the date and time each was last modified). For files, dir displays the name extension and the size in bytes. Dir also displays the total number of files and directories listed, their cumulative size, and the free space (in bytes) remaining on the disk.
 
 
-## Network Service Scanning
+
+
 -------------------------------
+### Network Service Scanning
+
 [Network Service Scanning - ATT&CK](https://attack.mitre.org/wiki/Technique/T1046)
 
 [scanless](https://github.com/vesche/scanless)
 * Command-line utility for using websites that can perform port scans on your behalf. Useful for early stages of a penetration test or if you'd like to run a port scan on a host and have it not come from your IP address.
 
 [ms15-034.nse Script](https://github.com/pr4jwal/quick-scripts/blob/master/ms15-034.nse)
+
+
 
 #### DNS:
 
@@ -243,9 +248,9 @@ EIGRP and OSPF).
 
 
 
-
-## Network Share Discovery
 -------------------------------
+## Network Share Discovery
+
 [Network Share Discovery - ATT&CK](Network Share Discovery)
 
 
@@ -284,9 +289,9 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 
 
 
-
-## Peripheral Device Discovery
 -------------------------------
+## Peripheral Device Discovery
+
 [Peripheral Device Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1120)
 * Adversaries may attempt to gather information about attached peripheral devices and components connected to a computer system. The information may be used to enhance their awareness of the system and network environment or may be used for further actions. 
 
@@ -303,9 +308,9 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 
 
 
-
-## Permission Groups Discovery
 -------------------------------
+## Permission Groups Discovery
+
 [Permission Groups Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1069)
 * Adversaries may attempt to find local system or domain-level groups and permissions settings. 
 * Examples of commands that can list groups are net group /domain and net localgroup using the Net utility. 
@@ -324,9 +329,9 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 
 
 
-
-## Process Discovery
 -------------------------------
+## Process Discovery
+
 [Process Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1057)
 
 [Get-Process - msdn](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-process?view=powershell-5.1)
@@ -345,9 +350,9 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 
 
 
-
-## Query Registry
 -------------------------------
+## Query Registry
+
 [Query Registry - ATT&CK](https://attack.mitre.org/wiki/Technique/T1012)
 * Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software. The Registry contains a significant amount of information about the operating system, configuration, software, and security.1 Some of the information may help adversaries to further their operation within a network. 
 
@@ -370,9 +375,9 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 
 
 
-
-## Remote System Discovery
 -------------------------------
+## Remote System Discovery
+
 [Remote System Discovery](https://attack.mitre.org/wiki/Technique/T1018)
 * Adversaries will likely attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system. Functionality could exist within remote access tools to enable this, but utilities available on the operating system could also be used. 
 
@@ -388,15 +393,17 @@ Check .hosts file for mappings ; C:\Windows\System32\Drivers\etc\hosts
 [Invoke-HostEnum.ps1](https://github.com/minisllc/red-team-scripts/blob/master/Invoke-HostEnum.ps1)
 * Performs local host and/or domain enumeration for situational awareness
 
-
 [Network Situational Awareness with Empire](http://www.powershellempire.com/?page_id=289)
 
 
-
+-------------------------------
 ## Security Software Discovery
--------------------------------https://blogs.technet.microsoft.com/heyscriptingguy/2011/11/13/use-powershell-to-quickly-find-installed-software/
+
+
 [Security Software Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1063)
 * Adversaries may attempt to get a listing of security software, configurations, defensive tools, and sensors that are installed on the system. This may include things such as local firewall rules, anti-virus, and virtualization. These checks may be built into early-stage remote access tools. 
+
+[Use Powershell to quickly find installed Software](https://blogs.technet.microsoft.com/heyscriptingguy/2011/11/13/use-powershell-to-quickly-find-installed-software/)
 
 [Netsh AdvFirewall Firewall Commands - technet](https://technet.microsoft.com/en-us/library/dd734783(v=ws.10).aspx)
 * netsh advfirewall monitor show firewall rule name=all dir=in
@@ -418,9 +425,9 @@ Check .hosts file for mappings ; C:\Windows\System32\Drivers\etc\hosts
 
 
 
-
-## System Information Discovery
 -------------------------------
+## System Information Discovery
+
 [System Information Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1082)
 * An adversary may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture. 
 
@@ -445,9 +452,9 @@ Check .hosts file for mappings ; C:\Windows\System32\Drivers\etc\hosts
 
 
 
-
-## System Network Configuration Discovery
 -------------------------------
+## System Network Configuration Discovery
+
 [System Network Configuration Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1016)
 * Adversaries will likely look for details about the network configuration and settings of systems they access or through information discovery of remote systems. Several operating system administration utilities exist that can be used to gather this information. Examples include Arp, ipconfig/ifconfig, nbtstat, and route. 
 
@@ -477,9 +484,9 @@ Check .hosts file for mappings ; C:\Windows\System32\Drivers\etc\hosts
 
 
 
-
-## System Network Connections Discovery
 -------------------------------
+## System Network Connections Discovery
+
 [System Network Connections Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1049)
 * Adversaries may attempt to get a listing of network connections to or from the compromised system they are currently accessing or from remote systems by querying for information over the network. 
 
@@ -494,9 +501,9 @@ Check .hosts file for mappings ; C:\Windows\System32\Drivers\etc\hosts
 
 
 
-
-## System Owner/User Discovery
 -------------------------------
+## System Owner/User Discovery
+
 [System Owner/User Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1033)
 * Adversaries may attempt to identify the primary user, currently logged in user, set of users that commonly uses a system, or whether a user is actively using the system. They may do this, for example, by retrieving account usernames or by using Credential Dumping. The information may be collected in a number of different ways using other Discovery techniques, because user and username details are prevalent throughout a system and include running process ownership, file/directory ownership, session information, and system logs. 
 
@@ -508,9 +515,8 @@ Check .hosts file for mappings ; C:\Windows\System32\Drivers\etc\hosts
 
 
 
-
-## System Service Discovery
 -------------------------------
+## System Service Discovery
 [System Service Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1007)
 * Adversaries may try to get information about registered services. Commands that may obtain information about services using operating system utilities are "sc," "tasklist /svc" using Tasklist, and "net start" using Net, but adversaries may also use other tools as well. 
 
@@ -526,9 +532,8 @@ Check .hosts file for mappings ; C:\Windows\System32\Drivers\etc\hosts
 
 
 
-
-## System Time Discovery
 -------------------------------
+## System Time Discovery
 [System Time Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1124)
 * The system time is set and stored by the Windows Time Service within a domain to maintain time synchronization between systems and services in an enterprise network. An adversary may gather the system time and/or time zone from a local or remote system. This information may be gathered in a number of ways, such as with Net on Windows by performing net time \\hostname to gather the system time on a remote system. The victim's time zone may also be inferred from the current system time or gathered by using w32tm /tz. The information could be useful for performing other techniques, such as executing a file with a Scheduled Task, or to discover locality information based on time zone to assist in victim targeting. 
 

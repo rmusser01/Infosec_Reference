@@ -67,7 +67,7 @@
 | Anonymous’s Guide to OpSec | http://www.covert.io/research-papers/security/Anonymous%20Hacking%20Group%20--%20OpNewblood-Super-Secret-Security-Handbook.pdf
 | Cat Videos and the Death of Clear Text | https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/
 
-[How to Spot a Spook](https://cryptome.org/dirty-work/spot-spook.htm)
+[How to Spot a SpoCTok](https://cryptome.org/dirty-work/spot-spook.htm)
 
 [China travel laptop setup](https://mricon.com/i/travel-laptop-setup.html?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&iid=88d246896d384d5292f51df954a2c8ba&uid=150127534&nid=244+272699400)
 

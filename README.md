@@ -44,6 +44,10 @@ Windows
 * [Windows Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Persistence.md)
 * [Windows Privilege Escalation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Privilege_Escalation.md)
 
+Linux
+
+OS X
+
 #### Normal Categories
 
 * [Anonymity/OpSec/Privacy](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/AnonOpsecPrivacy.md)
@@ -147,15 +151,3 @@ Windows
 * [Insurance Data Security Model Law](http://www.naic.org/documents/committees_ex_cybersecurity_tf_exposure_mod_draft_clean.pdf) | 
 * [NIST Cyber Security Framework 02/12/2014](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf) | 
 * [PCI-DSS V3.2](https://pcicompliance.stanford.edu/sites/default/files/pci_dss_v3-2.pdf)| 
-
-
-
-
-
-
-
-
-
-
-
-

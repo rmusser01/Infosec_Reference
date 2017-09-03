@@ -25,7 +25,7 @@ An Information Security Reference That Doesn't Suck
 * This page is terrible. It should not be used to navigate for info unless you like self harm. Use [https://rmusser.net/docs](https://rmusser.net/docs]) instead.
 * For latest content updates, check here: [Things added since last update](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/things-added.md)
 	* This will have all links added to the other pages sorted according to topic, making it easier to see new stuff.
-* More content is within the Draft folder. The below is broken(probably).
+* All links on this page should work. Last tested 9/3
 
 
 ### Index - Table of Contents

@@ -25,15 +25,18 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 * SWOT - Strengths, Weaknesses, Opportunities, Threats
 
+
+[GlobalFileSearch](https://ftplike.com)
+* An FTP Search Engine that may come in handy.
 #### End cull
 
 
 
 
-
+--------------------
 ### General
 
-[Open Source Intelligence](http://en.wikipedia.org/wiki/Open-source_intelligence)
+[Open Source Intelligence - Wikipedia](http://en.wikipedia.org/wiki/Open-source_intelligence)
 
 [Intelligence Gathering - PTES](http://www.pentest-standard.org/index.php/Intelligence_Gathering)
 
@@ -41,23 +44,52 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 [OSINT Framework](http://osintframework.com/)
 
-[Email Reconnaissance and Phishing Template Generation Made Simple](https://cybersyndicates.com/2016/05/email-reconnaissance-phishing-template-generation-made-simple/)
-
 [OSINT Resources - greynetwork2](https://sites.google.com/site/greynetwork2/home/osint-resources)
 
 [Fantastic OSINT and where to find it - blindseeker/malware focused](http://archive.is/sYzcP#selection-62.0-62.1)
 
 [Corporate Espionage without the Hassle of Committing Felonies](https://www.slideshare.net/JohnCABambenek/corporate-espionage-without-the-hassle-of-committing-felonies)
 
+[Google Trends](https://trends.google.com/trends/)
+* See what are the popular related topics people are searching for. This will help widen your search scope.
+
+[Google Alerts](https://www.google.com/alerts)
+* Google Alerts are email updates of the latest relevant Google results (web, news, etc.) based on your queries.
+
+[PasteLert](https://www.andrewmohawk.com/pasteLert/)
+* PasteLert is a simple system to search pastebin.com and set up alerts (like google alerts) for pastebin.com entries. This means you will automatically recieve email whenever your term(s) is/are found in new pastebin entries!
+
+
+#### Miscellaneous Sites/Resources
+
+[toddington - resources](https://www.toddington.com/resources/)
+
+[onstrat - osint](http://www.onstrat.com/osint/)
+
+[Intel Techniques - Links](http://www.inteltechniques.com/links.html)
+
+[OSINTInsight](http://www.osintinsight.com/shared.php?user=Mediaquest&folderid=0)
+
+[Janes](http://www.janes.com/)
+
+[bell?ngcat](https://www.bellingcat.com/) 
+* By and for citizen investigative journalists
+
+[NightWatch](http://www.kforcegov.com/Solutions/IAO/NightWatch/About.aspx)
+* NightWatch is an executive commentary and analysis of events that pose or advance threats to US national security interests. It is deliberately edgy in the interest of clarity and brevity. As a product for executives, the distribution and all feedback comments are anonymous. 
+
+[JustSecurity](https://www.justsecurity.org/)
+* Just Security is an online forum for the rigorous analysis of U.S. national security law and policy. We aim to promote principled and pragmatic solutions to national security problems that decision-makers face. Our Board of Editors includes individuals with significant government experience, civil society attorneys, academics, and other leading voices. Just Security is based at the Center for Human Rights and Global Justice at New York University School of Law.
 
 
 
+--------------------
 ### Articles/Writeups
 
 
 [Some blog posts describing/bringing you up to speed on OSINT by krypt3ia](http://krypt3ia.wordpress.com/2012/01/11/the-subtle-art-of-osint/)
 
-[ Glass Reflections in Pictures + OSINT = More Accurate Location](http://blog.ioactive.com/2014/05/glass-reflections-in-pictures-osint.html)
+[Glass Reflections in Pictures + OSINT = More Accurate Location](http://blog.ioactive.com/2014/05/glass-reflections-in-pictures-osint.html)
 
 [Exploring the Github Firehose](http://blog.scalyr.com/2013/10/exploring-the-github-firehose/)
 
@@ -101,13 +133,13 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 
 
-
-### OSINT Tools
+-------------
+### OSINT Tools/Resources
 
 Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&user=Mediaquest
 
 [Maltego](https://www.paterva.com/web6/products/maltego.php)
-	* Description: What you use to tie everything together.
+* Description: What you use to tie everything together.
 
 [PowerMeta](https://github.com/dafthack/PowerMeta)
 * PowerMeta searches for publicly available files hosted on various websites for a particular domain by using specially crafted Google, and Bing searches. It then allows for the download of those files from the target domain. After retrieving the files, the metadata associated with them can be analyzed by PowerMeta. Some interesting things commonly found in metadata are usernames, domains, software titles, and computer names.
@@ -116,7 +148,7 @@ Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&use
 * Description: Recon-ng is a full-featured Web Reconnaissance framework written in Python. Complete with independent modules, database interaction, built in convenience functions, interactive help, and command completion, Recon-ng provides a powerful environment in which open source web-based reconnaissance can be conducted quickly and thoroughly.
 
 [DataSploit](https://github.com/DataSploit/datasploit)
-A tool to perform various OSINT techniques, aggregate all the raw data, and give data in multiple formats.
+* A tool to perform various OSINT techniques, aggregate all the raw data, and give data in multiple formats.
 
 [OSINT Mantra](http://www.getmantra.com/hackery/osint.html)
 
@@ -147,99 +179,44 @@ A tool to perform various OSINT techniques, aggregate all the raw data, and give
 [GoogD0rker](https://github.com/ZephrFish/GoogD0rker)
 * GoogD0rker is a tool for firing off google dorks against a target domain, it is purely for OSINT against a specific target domain. Designed for OSX originally however googD0rker txt now works on all nix platforms.
 
+[TouchGraph SEO Browser](http://www.touchgraph.com/seo)
+* Use this free Java application to explore the connections between related websites.
 
 
 
 
 
-##### DNS Stuff
+------------------
+#### Company/People Searching
 
-[typofinder](https://github.com/nccgroup/typofinder)
-* Typofinder for domain typo discovery
+[data.com](https://www.data.com/)
 
-[dnstwist](https://github.com/elceef/dnstwist)
-* Domain name permutation engine for detecting typo squatting, phishing and corporate espionage
+[LittleSis](https://littlesis.org/)
+* LittleSis is a free database of who-knows-who at the heights of business and government.
 
+[Jigsaw](http://jigsawbusinessgroup.com/what-we-do/people/)
+* Jigsaw is a prospecting tool used by sales professionals, marketers and recruiters to get fresh and accurate sales leads and business contact information.
 
+[Spokeo](https://www.spokeo.com/)
+* Spokeo is a people search engine that organizes white pages listings, public records and social network information into simple profiles to help you safely find and learn about people.\
 
+[Hoovers](http://www.hoovers.com/)
+* Search over 85 million companies within 900 industry segments; Hoover's Reports Easy-to-read reports on key competitors, financials, and executives
 
-#### General Meta Data
+[Market Visual](http://www.marketvisual.com/)
+* Search Professionals by Name, Company or Title
 
+[Glass Door](https://www.glassdoor.com/)
+* Search jobs then look inside. Company salaries, reviews, interview questions, and more all posted anonymously by employees and job seekers.
 
-[Just-Metadata](https://github.com/ChrisTruncer/Just-Metadata)
-* Just-Metadata is a tool that can be used to gather intelligence information passively about a large number of IP addresses, and attempt to extrapolate relationships that might not otherwise be seen. Just-Metadata has "gather" modules which are used to gather metadata about IPs loaded into the framework across multiple resources on the internet. Just-Metadata also has "analysis" modules. These are used to analyze the data loaded Just-Metadata and perform various operations that can identify potential relationships between the loaded systems.
+[192](http://www.192.com/)
+* Find people, businesses and places in the UK with 192.com. Directory enquiries, a people finder, business listings and detailed maps with aerial photos.
 
-[MetaGooFil](https://code.google.com/p/metagoofil/)	
-* Description: Metagoofil is an information gathering tool designed for extracting metadata of public documents (pdf,doc,xls,ppt,docx,pptx,xlsx) belonging to a target company. The tool will perform a search in Google to identify and download the documents to local disk and then will extract the metadata with different libraries like Hachoir, PdfMiner and others. With the results it will generate a report with usernames, software versions and servers or machine names that will help Penetration testers in the information gathering phase.
-
-[Metashield Analyzer](https://metashieldanalyzer.elevenpaths.com/)
-* Description: Metadata documents can help a malicious user to obtain information that is beyond our control in an enterprise environment. Metashield Analyzer is an online service that allows easily check if your office documents contain metadata.
-
-
-
-
-
-
-##### Google Hacking
-
-[Google Hacking for Penetration Testers](https://www.blackhat.com/presentations/bh-europe-05/BH_EU_05-Long.pdf)
-
-[ExpoitDB archive of the google hacking database](http://www.exploit-db.com/google-dorks/)
-
-[Google Hacking Database](http://www.hackersforcharity.org/ghdb/)
-* We call them 'googledorks': Inept or foolish people as revealed by Google. Whatever you call these fools, you've found the center of the Google Hacking Universe! 
-
-[Google Hacking - Search Diggity tool](http://www.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/)
-* SearchDiggity 3.1 is the primary attack tool of the Google Hacking Diggity Project. It is Bishop Fox’s MS Windows GUI application that serves as a front-end to the most recent versions of our Diggity tools: GoogleDiggity, BingDiggity, Bing LinkFromDomainDiggity, CodeSearchDiggity, DLPDiggity, FlashDiggity, MalwareDiggity, PortScanDiggity, SHODANDiggity, BingBinaryMalwareSearch, and NotInMyBackYard Diggity.
+[corporationwiki](https://www.corporationwiki.com/)
 
 
 
-
-
-
-
-
-##### Site Scrapers
-
-[linkedin](https://github.com/eracle/linkedin)
-* Linkedin Scraper using Selenium Web Driver, Firefox 45, Ubuntu and Scrapy
-
-[tweets_analyzer](https://github.com/x0rz/tweets_analyzer)
-* Tweets metadata scraper & activity analyzer
-
-[LinkedIn Gatherer](https://github.com/DisK0nn3cT/linkedin-gatherer)
-
-[InSpy](https://github.com/gojhonny/InSpy)
-* A LinkedIn enumeration tool
-
-[Github dorks - finding vulns](http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html)
-
-
-##### Email Gathering
-
-[SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail)
-* Email recon made fast and easy, with a framework to build on
-
-
-
-##### General Data Scrapers
-
-[XRAY](https://github.com/evilsocket/xray)
-* XRay is a tool for recon, mapping and OSINT gathering from public networks.
-
-[NameCheck](https://www.namecheck.com)
-* Search usernames across multiple services/domain registries
-
-[TheHarvester](From: https://code.google.com/p/theharvester/)
-* Description: The objective of this program is to gather emails, subdomains, hosts, employee names, open ports and banners from different public sources like search engines, PGP key servers and SHODAN computer database. This tool is intended to help Penetration testers in the early stages of the penetration test in order to understand the customer footprint on the Internet. It is also useful for anyone that wants to know what an attacker can see about their organization. 
-
-[OSINT OPSEC Tool](https://github.com/hyprwired/osint-opsec-tool)
-* Description: The OSINT OPSEC Tool monitors multiple 21st Century OSINT sources real-time for keywords, then analyses the results, generates alerts, and maps trends of the data, finding all sorts of info people probably don't want others to see... 
-
-
-
-
-
+-------------
 #### CVS/Git/Similar Focused
 
 [repo-supervisor](https://github.com/auth0/repo-supervisor)
@@ -265,39 +242,184 @@ A tool to perform various OSINT techniques, aggregate all the raw data, and give
 when directory browsing is turned off.
 
 
-### Reference Sites
 
-* These are sites that contain information and links to various resources such as search engines or info repositories related to OSINT.
 
-[PDF Creative Commons OSINT toolbag guide](http://www.phibetaiota.net/wp-content/uploads/2013/07/2013-07-11-OSINT-2ool-Kit-On-The-Go-Bag-O-Tradecraft.pdf)
+
+----------------
+###### DNS Stuff
+
+[typofinder](https://github.com/nccgroup/typofinder)
+* Typofinder for domain typo discovery
+
+[dnstwist](https://github.com/elceef/dnstwist)
+* Domain name permutation engine for detecting typo squatting, phishing and corporate espionage
+
+
+
+
+
+
+
+-------------
+#### Email Gathering
+
+[SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail)
+* Email recon made fast and easy, with a framework to build on
+
+[Email Reconnaissance and Phishing Template Generation Made Simple](https://cybersyndicates.com/2016/05/email-reconnaissance-phishing-template-generation-made-simple/)
+
+[theHarvester](https://github.com/laramies/theHarvester)
+* theHarvester is a tool for gathering e-mail accounts, subdomain names, virtual hosts, open ports/ banners, and employee names from different public sources (search engines, pgp key servers).
+
+[discover.sh](https://github.com/leebaird/discover)
+* For use with Kali Linux. Custom bash scripts used to automate various pentesting tasks.
+
+
+
+
+
+-------------
+#### Fancy Search Engines
+
+[Entity Cube](http://entitycube.research.microsoft.com/) 
+* EntityCube is a research prototype for exploring object-level search technologies, which automatically summarizes the Web for entities (such as people, locations and organizations) with a modest web presence.
+
+[Silobreaker](http://www.silobreaker.com/)
+* Enterprise Semantic Search Engine, allows virtualisation of data, analytics and exploration of key data.
+
+[iSeek](http://www.iseek.com/#/web)
+* Another handy search engine that break results down into easy to manage categories.
+
+[Carrot2](http://search.carrot2.org/stable/search)
+*  Carrot2 organizes your search results into topics. With an instant overview of what's available, you will quickly find what you're looking for. 
 
 [Sqoop](http://sqoop.com/)
 * OSINT search engine of public documents(handy)
+
+
+
+-------------
+#### General Meta Data
+
+
+[Just-Metadata](https://github.com/ChrisTruncer/Just-Metadata)
+* Just-Metadata is a tool that can be used to gather intelligence information passively about a large number of IP addresses, and attempt to extrapolate relationships that might not otherwise be seen. Just-Metadata has "gather" modules which are used to gather metadata about IPs loaded into the framework across multiple resources on the internet. Just-Metadata also has "analysis" modules. These are used to analyze the data loaded Just-Metadata and perform various operations that can identify potential relationships between the loaded systems.
+
+[MetaGooFil](https://code.google.com/p/metagoofil/)	
+* Description: Metagoofil is an information gathering tool designed for extracting metadata of public documents (pdf,doc,xls,ppt,docx,pptx,xlsx) belonging to a target company. The tool will perform a search in Google to identify and download the documents to local disk and then will extract the metadata with different libraries like Hachoir, PdfMiner and others. With the results it will generate a report with usernames, software versions and servers or machine names that will help Penetration testers in the information gathering phase.
+
+[Metashield Analyzer](https://metashieldanalyzer.elevenpaths.com/)
+* Description: Metadata documents can help a malicious user to obtain information that is beyond our control in an enterprise environment. Metashield Analyzer is an online service that allows easily check if your office documents contain metadata.
+
+
+
+
+
+
+
+-------------
+#### General Data Scrapers
+
+[XRAY](https://github.com/evilsocket/xray)
+* XRay is a tool for recon, mapping and OSINT gathering from public networks.
+
+[NameCheck](https://www.namecheck.com)
+* Search usernames across multiple services/domain registries
+
+[TheHarvester](From: https://code.google.com/p/theharvester/)
+* Description: The objective of this program is to gather emails, subdomains, hosts, employee names, open ports and banners from different public sources like search engines, PGP key servers and SHODAN computer database. This tool is intended to help Penetration testers in the early stages of the penetration test in order to understand the customer footprint on the Internet. It is also useful for anyone that wants to know what an attacker can see about their organization. 
+
+[OSINT OPSEC Tool](https://github.com/hyprwired/osint-opsec-tool)
+* Description: The OSINT OPSEC Tool monitors multiple 21st Century OSINT sources real-time for keywords, then analyses the results, generates alerts, and maps trends of the data, finding all sorts of info people probably don't want others to see... 
+
+
+-------------
+#### Google Hacking
+
+[Google Hacking for Penetration Testers](https://www.blackhat.com/presentations/bh-europe-05/BH_EU_05-Long.pdf)
+
+[ExpoitDB archive of the google hacking database](http://www.exploit-db.com/google-dorks/)
+
+[Google Hacking Database](http://www.hackersforcharity.org/ghdb/)
+* We call them 'googledorks': Inept or foolish people as revealed by Google. Whatever you call these fools, you've found the center of the Google Hacking Universe! 
+
+[Google Hacking - Search Diggity tool](http://www.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/)
+* SearchDiggity 3.1 is the primary attack tool of the Google Hacking Diggity Project. It is Bishop Fox’s MS Windows GUI application that serves as a front-end to the most recent versions of our Diggity tools: GoogleDiggity, BingDiggity, Bing LinkFromDomainDiggity, CodeSearchDiggity, DLPDiggity, FlashDiggity, MalwareDiggity, PortScanDiggity, SHODANDiggity, BingBinaryMalwareSearch, and NotInMyBackYard Diggity.
+
+
+
+
+
+
+-----------
+### Network Information Search Engines
+
+[Whoisology](https://whoisology.com/)
+* Whoisology is a domain name ownership archive with literally billions of searchable and cross referenced domain name whois records. 
+
+
+
+
+
+[PDF Creative Commons OSINT toolbag guide](http://www.phibetaiota.net/wp-content/uploads/2013/07/2013-07-11-OSINT-2ool-Kit-On-The-Go-Bag-O-Tradecraft.pdf)
+
+
+
+
+
+
+
+
+
+##### Site Specific
+
+[linkedin](https://github.com/eracle/linkedin)
+* Linkedin Scraper using Selenium Web Driver, Firefox 45, Ubuntu and Scrapy
+
+[tweets_analyzer](https://github.com/x0rz/tweets_analyzer)
+* Tweets metadata scraper & activity analyzer
+
+[LinkedIn Gatherer](https://github.com/DisK0nn3cT/linkedin-gatherer)
+
+[InSpy](https://github.com/gojhonny/InSpy)
+* A LinkedIn enumeration tool
+
+[Github dorks - finding vulns](http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html)
+
+[socilab](http://socilab.com/#home)
+* This site allows users to visualize and analyze their LinkedIn network using methods derived from social-scientific research. Full sample output is shown here. The site is free and open-source. Have fun!
+
+[Tweet Archivist](https://www.tweetarchivist.com/)
+
+[OneMillionTweetMap](http://onemilliontweetmap.com/)
+* This page maps the last geolocalized tweets delivered by the twitter stream API. ... YES - IN REAL-TIME - and we keep "only" the last one million tweets.
+
+
+
+
+---------------
+### Social Media Search/Enumeration
+
+[NameCHK](https://namechk.com/)
+* Check to see if your desired username or vanity url is still available at dozens of popular Social Networking and Social Bookmarking websites.
+
+[Whos Talkin](http://www.whostalkin.com/)
+* social media search tool that allows users to search for conversations surrounding the topics that they care about most.
+
+[CheckUsernames](http://checkusernames.com/)
+* Check the use of your brand or username on 160 Social Networks
+
+[Scythe](https://github.com/ChrisJohnRiley/Scythe)
+* The ability to test a range of email addresses across a range of sites (e.g. social media, blogging platforms, etc...) to find where those targets have active accounts. This can be useful in a social engineering test where you have email accounts for a company and want to list where these users have used their work email for 3rd party web based services.
+* The ability to quickly create a custom testcase module and use it to enumerate for a list of active accounts. Using either a list of know usernames, email addresses, or a dictionary of common account names.
+
+[Social Mention](http://www.socialmention.com/)
+* Social Mention is a social media search engine that searches user-generated content such as blogs, comments, bookmarks, events, news, videos, and more
+
+
 	
 
 
 
 
 
-
-#### My suggested sites:
-
-https://sites.google.com/site/greynetwork2/home/osint-resources
-
-http://www.onstrat.com/osint/
-
-[Intel Techniques - Links](http://www.inteltechniques.com/links.html)
-
-[OSINTInsight](http://www.osintinsight.com/shared.php?user=Mediaquest&folderid=0)
-
-http://toddington.com/resources/
-
-http://www.osint.org.uk/links.html
-
-[Janes](http://www.janes.com/)
-
-[bell?ngcat](https://www.bellingcat.com/) 
-*  By and for citizen investigative journalists
-
-[NightWatch](http://www.kforcegov.com/Solutions/IAO/NightWatch/About.aspx)
-* NightWatch is an executive commentary and analysis of events that pose or advance threats to US national security interests. It is deliberately edgy in the interest of clarity and brevity. As a product for executives, the distribution and all feedback comments are anonymous. 

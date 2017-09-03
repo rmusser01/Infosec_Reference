@@ -41,6 +41,8 @@
 * This talk is an introduction to Physical Penetration Testing. I briefly cover the Penetration Testing Methodology from a Physical Security perspective, but the talk is mostly oriented around the analysis and exploitation phases. Various attacks will be covered, from lock picking and bypass to safe cracking. No prior experience with lock picking or physical security is required, I will start with the basics and work up to advanced topics.
 
 
+[Defcon 19: DIY Non-Destructive-Entry](https://www.youtube.com/watch?v=ChbyaXBKNY8)
+
 
 
 ### Tools
@@ -52,8 +54,11 @@
 -----------------------
 ### Tamper Evident Related
 
+[What does tamper-evident mean?](https://www.healthcarepackaging.com/article/package-design/structural/what-does-tamper-evident-mean)
+
 [Introduction to Tamper Evident Devices -DEFCON 19 ](https://www.youtube.com/watch?v=SIQml3MBJoE&spfreload=10)
 
+[Tamper-evident technology - Wikipedia](https://en.wikipedia.org/wiki/Tamper-evident_technology)
 
 
 

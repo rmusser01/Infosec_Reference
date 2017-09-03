@@ -255,9 +255,9 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 
 ### <a name="anti">Anti-Forensics</a>
+[Destroying Evidence Before Its Evidence](https://www.youtube.com/watch?v=lqBVAcxpwio&spfreload=1)
 
-| ** Destroying Evidence Before Its Evidence** | https://www.youtube.com/watch?v=lqBVAcxpwio&spfreload=1
-| **And That's How I Lost My Other Eye...Explorations in Data Destruction** | https://www.youtube.com/watch?v=-bpX8YvNg6Y
+[And That's How I Lost My Other Eye...Explorations in Data Destruction](https://www.youtube.com/watch?v=-bpX8YvNg6Y)
 
 [Secure Deletion of Data from Magnetic and Solid-State Memory](http://static.usenix.org/publications/library/proceedings/sec96/full_papers/gutmann/index.html)
 
@@ -270,6 +270,23 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 [OpenPuff Steganography](http://embeddedsw.net/OpenPuff_Steganography_Home.html)
 
 [Forensics Impossible: Self-Destructing Thumb Drives - Brandon Wilson](https://www.youtube.com/watch?v=NRMqwc5YEu4)
+
+[CleanAfterMe](www.nirsoft.net/utils/clean_after_me.html )
+* CleanAfterMe allows you to easily clean files and Registry entries that are automatically created by the Windows operating system during your regular computer work. With CleanAfterMe, you can clean the cookies/history/cache/passwords of Internet Explorer, the 'Recent' folder, the Registry entries that record the last opened files, the temporary folder of Windows, the event logs, the Recycle Bin, and more.| http://
+[Hiding Data in Hard-Drive's Service Areas](http://recover.co.il/SA-cover/SA-cover.pdf)
+* In this paper we will demonstrate how spinning hard-drives’ serv ice areas 1 can be used to hide data from the operating-system (or any software using the standard OS’s API or the standard ATA commands to access the hard- drive)
+
+[Anti-Forensics and Anti-Anti-Forensics Attacks - Michael Perkins](https://www.youtube.com/watch?v=J4x8Hz6_hq0)
+* Everyone's heard the claim: Security through obscurity is no security at all. Challenging this claim is the entire field of steganography itself - the art of hiding things in plain sight. Most people know you can hide a text file inside a photograph, or embed a photograph inside an MP3. But how does this work under the hood? What's new in the stego field?  This talk will explore how various techniques employed by older steganographic tools work and will discuss a new technique developed by the speaker which embodies both data hiding and data enciphering properties by encoding data inside NTFS volumes. A new tool will be released during this talk that will allow attendees to both encode and decode data with this new scheme.
+* Slides: [Slides(link)](http://www.slideshare.net/the_netlocksmith/defcon-20-antiforensics-and-antiantiforensics)
+
+[Beyond The CPU:Defeating Hardware Based RAM Acquisition](https://www.blackhat.com/presentations/bh-dc-07/Rutkowska/Presentation/bh-dc-07-Rutkowska-up.pdf)
+
+[Hardware Backdooring is Practical** -Jonathan Brossard](https://www.youtube.com/watch?v=umBruM-wFUw)
+
+[Hiding the breadcrumbs: Forensics and anti-forensics on SAP systems - Juan Perez-Etchegoyen](http://www.irongeek.com/i.php?page=videos/derbycon4/t508-hiding-the-breadcrumbs-forensics-and-anti-forensics-on-sap-systems-juan-perez-etchegoyen)
+* The largest organizations in the world rely on SAP platforms to run their critical processes and keep their business crown jewels: financial information, customer data, intellectual property, credit cards, human resources salaries, sensitive materials, suppliers and more. Everything is there and attackers know it. For several years at Onapsis we have been researching on how cyber-criminals might be able to break into ERP systems in order to help organizations better protect themselves. This has enabled us to gain a unique expertise on which are the most critical attack vectors and what kind of traces they leave (and don’t) over the victim’s SAP platforms. SAP systems need to be ready for Forensic Analysis, so the big question is: Are your systems prepared to retain the attackers breadcrumbs in the event of an attack? Join us and learn how to do a forensic analysis of an SAP system, looking for traces of a security breach We will also show novel techniques being used by attackers to avoid being detected during post attack forensic investigations. Vulnerabilities related to anti-forensic techniques will be presented together with their mitigation. **NEW** New attacks never presented before will be shown. JAVA, ABAP and BO systems will be covered.
+
 
 
 

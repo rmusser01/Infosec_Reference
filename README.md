@@ -32,18 +32,17 @@ An Information Security Reference That Doesn't Suck
 ------------------------------
 
 #### ATT&CK Stuff
-
 Windows
-	* [Windows Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Collection.md)
-	* [Windows Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Command_and_Control.md)
-	* [Windows Credential Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Credential_Access.md)
-	* [Windows Defense Evasion](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Defense_Evasion.md)
-	* [Windows Discovery](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Discovery.md)
-	* [Windows Exection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Execution.md)
-	* [Windows Exfiltration](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Exfiltration.md)
-	* [Windows Lateral Movement](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Lateral_Movement.md)
-	* [Windows Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Persistence.md)
-	* [Windows Privilege Escalation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Privilege_Escalation.md)
+* [Windows Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Collection.md)
+* [Windows Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Command_and_Control.md)
+* [Windows Credential Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Credential_Access.md)
+* [Windows Defense Evasion](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Defense_Evasion.md)
+* [Windows Discovery](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Discovery.md)
+* [Windows Exection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Execution.md)
+* [Windows Exfiltration](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Exfiltration.md)
+* [Windows Lateral Movement](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Lateral_Movement.md)
+* [Windows Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Persistence.md)
+* [Windows Privilege Escalation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Privilege_Escalation.md)
 
 #### Normal Categories
 

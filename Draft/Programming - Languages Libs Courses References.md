@@ -244,7 +244,7 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 
 [Community Bash Style Guide](https://github.com/azet/community_bash_style_guide)
 
-[The Bash Guide - A quality-driven guide through the shell's many features.](guide.bash.academy)
+[The Bash Guide - A quality-driven guide through the shell's many features.](https://guide.bash.academy)
 
 
 #### Reference

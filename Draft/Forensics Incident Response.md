@@ -271,8 +271,9 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 [Forensics Impossible: Self-Destructing Thumb Drives - Brandon Wilson](https://www.youtube.com/watch?v=NRMqwc5YEu4)
 
-[CleanAfterMe](www.nirsoft.net/utils/clean_after_me.html )
+[CleanAfterMe](https://www.nirsoft.net/utils/clean_after_me.html )
 * CleanAfterMe allows you to easily clean files and Registry entries that are automatically created by the Windows operating system during your regular computer work. With CleanAfterMe, you can clean the cookies/history/cache/passwords of Internet Explorer, the 'Recent' folder, the Registry entries that record the last opened files, the temporary folder of Windows, the event logs, the Recycle Bin, and more.| http://
+
 [Hiding Data in Hard-Drive's Service Areas](http://recover.co.il/SA-cover/SA-cover.pdf)
 * In this paper we will demonstrate how spinning hard-drives’ serv ice areas 1 can be used to hide data from the operating-system (or any software using the standard OS’s API or the standard ATA commands to access the hard- drive)
 

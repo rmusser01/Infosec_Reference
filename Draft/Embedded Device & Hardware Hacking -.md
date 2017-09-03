@@ -63,7 +63,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
+---------------------------
 ### General Writeups/Articles
 
 [Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
@@ -89,7 +89,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
+---------------------------
 ### General Talks/Presentations
 
 [Jackson Thuraisamy & Jason Tran - Hacking POS PoS Systems](https://www.youtube.com/watch?v=-n7oJqmTUCo) 
@@ -114,7 +114,7 @@ http://greatscottgadgets.com/infiltrate2013/
 [Rooting the MikroTik routers (SHA2017)](https://www.youtube.com/watch?v=KZWGD9fWIcM)
 * In this talk I describe my journey into reverse engineering parts of MikroTik system to gain access to hardware features and the shell behind the RouterOS that has no “ls”.
 
-
+---------------------------
 ### General Tools
 
 [ThunderGate](http://thundergate.io/)
@@ -129,7 +129,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
+---------------------------
 ### <a name="routers">Attacking Routers</a>
 
 [More on HNAP - What is it, How to Use it, How to Find it](https://isc.sans.edu/diary/More+on+HNAP+-+What+is+it%2C+How+to+Use+it%2C+How+to+Find+it/17648)
@@ -163,7 +163,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
+---------------------------
 ### <a name="modem">Cable Modem Hacking</a>
 
 [Docsis hacking](https://www.defcon.org/images/defcon-16/dc16-presentations/defcon-16-self.pdf)
@@ -181,7 +181,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
+---------------------------
 ### <a name="education">Educational</a>
 
 [Hardware Hacking for Software People](http://dontstuffbeansupyournose.com/2011/08/25/hardware-hacking-for-software-people/)
@@ -217,7 +217,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
+---------------------------
 ### <a name="flash">Flash Memory</a>
 [Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 
@@ -228,7 +228,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
+---------------------------
 ### <a name="iot">Internet of Things</a>
 [Smart Nest Thermostat A Smart Spy in Your Home](https://www.youtube.com/watch?v=UFQ9AYMee_Q)
 
@@ -240,7 +240,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
+---------------------------
 ### <a name="gentools">General Tools(Software & Hardware)</a>
 
 [FCC ID Lookup](http://transition.fcc.gov/oet/ea/fccid/)
@@ -262,7 +262,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
+---------------------------
 ### <a name="misc">Miscellaneous</a>
 
 [Project bdp](http://www.malcolmstagg.com/bdp-s390.html)
@@ -280,7 +280,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
+---------------------------
 ### <a name="pci">PCI</a>
 
 
@@ -293,7 +293,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
+---------------------------
 ### <a name="USB">USB</a>
 
 [USBProxy](https://github.com/dominicgs/USBProxy)
@@ -315,7 +315,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-
+---------------------------
 ### <a name="dropbox">Pentesting Drop Boxes</a>
 Minipwner
 
@@ -331,6 +331,14 @@ http://www.instructables.com/id/MyLittlePwny-Make-a-self-powered-pentesting-box-
 https://github.com/pwnieexpress/raspberry_pwn
 
 
+
+
+
+
+
+
+
+---------------------------
 ### <a name="teensy">Teensy/Rubbery Ducky Style Attacks/Etc</a>
 
 
@@ -344,13 +352,13 @@ https://github.com/pwnieexpress/raspberry_pwn
 
 
 
-
+---------------------------
 ### <a name="sdcard">SD Cards</a>
 [The Exploration and Exploitation of an SD Memory Card](https://www.youtube.com/watch?v=Tj-zI8Tl218)
 * This talk demonstrates a method for reverse engineering and loading code into the microcontroller within a SD memory card.
 
 
-
+---------------------------
 ### <a name="writeups">Tutorials/Walkthroughs/Write-ups</a>
 
 [Methodologies for Hacking Embedded Security Appliances](https://media.blackhat.com/us-13/US-13-Bathurst-Methodologies-for-Hacking-Embdded-Security-Appliances-Slides.pdf)
@@ -377,7 +385,7 @@ https://github.com/pwnieexpress/raspberry_pwn
 
 
 
-
+---------------------------
 ### <a name="usb">USB</a>
 [USB in a Nutshell](http://www.beyondlogic.org/usbnutshell/usb1.shtml)
 * Great explanation of the USB standard in depth
@@ -411,6 +419,8 @@ https://github.com/pwnieexpress/raspberry_pwn
 * This project's goal is to turn PS2303-based USB flash drive into a cheap USB 3.0 development platform (i.e. fast USB 3.0 to FPGA bridge).
 
 
+
+---------------------------
 ### SIM Cards
 [Rooting SIM cards](https://www.youtube.com/watch?v=BR0yWjQYnhQ)
 
@@ -418,7 +428,7 @@ https://github.com/pwnieexpress/raspberry_pwn
 
 
 
-
+---------------------------
 ### <a name="smartcard"Smartcards</a>
 
 [An analysis of the vulnerabilities introduced with Java Card 3 Connected Edition](http://www.ma.rhul.ac.uk/static/techrep/2013/MA-2013-04.pdf)
@@ -447,21 +457,21 @@ Chameleon Mini
 
 
 
-
-###<a name="papers">General Papers</a>
+---------------------------
+### <a name="papers">General Papers</a>
 
 [Stealthy Dopant-Level Hardware Trojans](Hardware level trojans http://sharps.org/wp-content/uploads/BECKER-CHES.pdf)
 * Abstract: In this paper we propose an extremely stealthy approach for implement- ing hardware Trojans below the gate level, and we evaluate their impact on the security of the target device. Instead of adding additional cir- cuitry to the target design, we insert our hardware Trojans by changing the dopant polarity of existing transistors. Since the modi ed circuit ap- pears legitimate on all wiring layers (including all metal and polysilicon), our family of Trojans is resistant to most detection techniques, includ- ing ne-grain optical inspection and checking against \golden chips". We demonstrate the e ectiveness of our approach by inserting Trojans into two designs | a digital post-processing derived from Intel's cryp- tographically secure RNG design used in the Ivy Bridge processors and a side-channel resistant SBox implementation | and by exploring their detectability and their e ects on security.
 
 [Perimeter-Crossing Buses: a New Attack Surface for
 Embedded Systems](http://www.cs.dartmouth.edu/~sws/pubs/bgjss12.pdf)
-* Abstract: This paper maps out the bus-facing attack surface of a modern operating system, and demonstrates that e ective and ecient injection of trac into the buses is real and easily a ordable. Further, it presents a simple and inexpen-sive hardware tool for the job, outlining the architectural and computation-theoretic challenges to creating a defensive OS/driver architecture comparable to that which has been achieved for network stacks.
+* Abstract: This paper maps out the bus-facing attack surface of a modern operating system, and demonstrates that effective and effcient injection of traffc into the buses is real and easily a ordable. Further, it presents a simple and inexpen-sive hardware tool for the job, outlining the architectural and computation-theoretic challenges to creating a defensive OS/driver architecture comparable to that which has been achieved for network stacks.
 
 [Implementation and Implications of a Stealth Hard-Drive Backdoor](https://www.ibr.cs.tu-bs.de/users/kurmus/papers/acsac13.pdf) 
-* Modern workstations and servers implicitly trust hard disks to act as well-behaved block devices. This paper analyzes the catastrophic loss of security that occurs when hard disks are not trustworthy. First, we show that it is possible to compromise the firmware of a commercial o-the-shelf hard drive, by resorting only to public information and reverse engineering. Using such a compromised firmware, we present a stealth rootkit that replaces arbitrary blocks from the disk while they are written, providing a data replacement back- door . The measured performance overhead of the compromised disk drive is less than 1% compared with a normal, non-malicious disk drive. We then demonstrate that a re- mote attacker can even establish a communication channel with a compromised disk to infiltrate commands and to ex-filtrate data. In our example, this channel is established over the Internet to an unmodified web server that relies on the compromised drive for its storage, passing through the original webserver, database server, database storage engine, filesystem driver, and block device driver. Additional experiments, performed in an emulated disk-drive environment, could automatically extract sensitive data such as /etc/shadow (or a secret key le) in less than a minute. This paper claims that the diffculty of implementing such an at- tack is not limited to the area of government cyber-warfare; rather, it is well within the reach of moderately funded criminals, botnet herders and academic researchers.
+* Modern workstations and servers implicitly trust hard disks to act as well-behaved block devices. This paper analyzes the catastrophic loss of security that occurs when hard disks are not trustworthy. First, we show that it is possible to compromise the firmware of a commercial ovt-the-shelf hard drive, by resorting only to public information and reverse engineering. Using such a compromised firmware, we present a stealth rootkit that replaces arbitrary blocks from the disk while they are written, providing a data replacement back- door . The measured performance overhead of the compromised disk drive is less than 1% compared with a normal, non-malicious disk drive. We then demonstrate that a re- mote attacker can even establish a communication channel with a compromised disk to infiltrate commands and to ex-filtrate data. In our example, this channel is established over the Internet to an unmodified web server that relies on the compromised drive for its storage, passing through the original webserver, database server, database storage engine, filesystem driver, and block device driver. Additional experiments, performed in an emulated disk-drive environment, could automatically extract sensitive data such as /etc/shadow (or a secret key le) in less than a minute. This paper claims that the diffculty of implementing such an at- tack is not limited to the area of government cyber-warfare; rather, it is well within the reach of moderately funded criminals, botnet herders and academic researchers.
 
 [Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors](https://www.ece.cmu.edu/~safari/pubs/kim-isca14.pdf)
-* Abstract. Memory isolation is a key property of a reliable and secure computing system — an access to one memory ad- dress should not have unintended side e ects on data stored in other addresses. However, as DRAM process technology scales down to smaller dimensions, it becomes more di  cult to prevent DRAM cells from electrically interacting with each other. In this paper, we expose the vulnerability of commodity DRAM chips to disturbance errors. By reading from the same address in DRAM, we show that it is possible to corrupt data in nearby addresses. More specifically, activating the same row in DRAM corrupts data in nearby rows. We demonstrate this phenomenon on Intel and AMD systems using a malicious program that generates many DRAM accesses. We induce errors in most DRAM modules (110 out of 129) from three major DRAM manufacturers. From this we conclude that many deployed systems are likely to be at risk. We identify the root cause of disturbance errors as the repeated toggling of a DRAM row’s wordline, which stresses inter-cell coupling e ects that accelerate charge leakage from nearby rows. We provide an extensive characterization study of disturbance errors and their behavior using an FPGA-based testing plat- form. Among our key findings, we show that (i) it takes as few as 139K accesses to induce an error and (ii) up to one in every 1.7K cells is susceptible to errors. After examining var- ious potential ways of addressing the problem, we propose a low-overhead solution to prevent the errors.
+* Abstract. Memory isolation is a key property of a reliable and secure computing system — an access to one memory ad- dress should not have unintended side e ects on data stored in other addresses. However, as DRAM process technology scales down to smaller dimensions, it becomes more diffcult to prevent DRAM cells from electrically interacting with each other. In this paper, we expose the vulnerability of commodity DRAM chips to disturbance errors. By reading from the same address in DRAM, we show that it is possible to corrupt data in nearby addresses. More specifically, activating the same row in DRAM corrupts data in nearby rows. We demonstrate this phenomenon on Intel and AMD systems using a malicious program that generates many DRAM accesses. We induce errors in most DRAM modules (110 out of 129) from three major DRAM manufacturers. From this we conclude that many deployed systems are likely to be at risk. We identify the root cause of disturbance errors as the repeated toggling of a DRAM row’s wordline, which stresses inter-cell coupling e ects that accelerate charge leakage from nearby rows. We provide an extensive characterization study of disturbance errors and their behavior using an FPGA-based testing plat- form. Among our key findings, we show that (i) it takes as few as 139K accesses to induce an error and (ii) up to one in every 1.7K cells is susceptible to errors. After examining var- ious potential ways of addressing the problem, we propose a low-overhead solution to prevent the errors.
 
 [Adapting Software Fault Isolation to Contemporary CPU Architectures](https://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35649.pdf)
 * Software Fault Isolation (SFI) is an effective approach to sandboxing binary code of questionable provenance, an interesting use case for native plugins in a Web browser. We present software fault isolation schemes for ARM and x86-64 that provide control-flow and memory integrity with average performance overhead of under 5% on ARM and 7% on x86-64. We believe these are the best known SFI implementations for these architectures, with significantly lower overhead than previous systems for similar architectures. Our experience suggests that these SFI implementations benefit from instruction-level parallelism, and have particularly small impact for work- loads that are data memory-bound, both properties that tend to reduce the impact of our SFI systems for future CPU implementations.

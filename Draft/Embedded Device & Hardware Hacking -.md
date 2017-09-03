@@ -41,6 +41,7 @@ http://greatscottgadgets.com/infiltrate2013/
 [SPI](https://trmm.net/SPI_flash)
 
 
+
 #### end sort
 
 
@@ -482,11 +483,10 @@ Embedded Systems](http://www.cs.dartmouth.edu/~sws/pubs/bgjss12.pdf)
 * The effect of faults on electronic systems has been studied since the 1970s when it was noticed that radioactive particles caused errors in chips. This led to further research on the effect of charged particles on silicon, motivated by the aerospace industry who was becoming concerned about the effect of faults in airborne electronic systems. Since then various mechanisms for fault creation and propagation have been discovered and researched. This paper covers the various methods that can be used to induce faults in semiconductors and exploit such errors maliciously. Several examples of attacks stemming from the exploiting of faults are explained. Finally a series of countermeasures to thwart these attacks are described.
 
 
+--------------
+### Drone Hacking
 
-
-
-
-
+[Knocking my neighbors kids cruddy drone offline - DefCon 23 Robinson and Mitchell](https://www.youtube.com/watch?v=5CzURm7OpAA)
 
 
 

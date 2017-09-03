@@ -6,8 +6,8 @@
 * [Interesting & Useful Projects](#projects)
 * [Interesting & Useful Software](#software))
 * [Interesting & Useful Write-ups](#writeup)
-
-
+* Screen Scraping
+* Various Purpose Based OS's
 
 
 
@@ -46,6 +46,11 @@ http://spth.virii.lu/articles.htm
 
 [ClearImage Free Online Barcode Reader / Decoder](http://online-barcode-reader.inliteresearch.com/)
 
+
+[A Sysadmin's Unixersal Translator (ROSETTA STONE)](http://bhami.com/rosetta.html)
+
+[Delta Copy](http://www.aboutmyip.com/AboutMyXApp/DeltaCopy.jsp)
+* In technical terms, DeltaCopy is a "Windows Friendly" wrapper around the Rsync program, currently maintained by Wayne Davison. "rsync" is primarily designed for Unix/Linux/BSD systems. Although ports are available for Windows, they typically require downloading Cygwin libraries and manual configuration. 
 
 #### End Sort
 
@@ -596,3 +601,73 @@ http://www.mmoviper.com/
 * Release Branches for MoFlow
 
 [List of hacker sites](http://link-base.org/)
+
+
+
+---------------
+### Screen Scraping
+
+[I Don’t Need No Stinking API: Web Scraping For Fun and Profit](https://blog.hartleybrody.com/web-scraping/)
+
+[PHP Tutorial 2: Advanced Data Scraping Using cURL And XPATH](http://www.matthewwatts.net/tutorials/php-tutorial-2-advanced-data-scraping-using-curl-and-xpath/)
+
+
+#### Tools
+
+[Scrapy](http://scrapy.org/)
+* An open source and collaborative framework for extracting the data you need from websites. In a fast, simple, yet extensible way. 
+
+[iMacros for Firefox](https://addons.mozilla.org/en-US/firefox/addon/imacros-for-firefox/)
+* Automate Firefox. Record and replay repetitious work. If you love the Firefox web browser, but are tired of repetitive tasks like visiting the same sites every days, filling out forms, and remembering passwords, then iMacros for Firefox is the solution you’ve been dreaming of! ***Whatever you do with Firefox, iMacros can automate it.***
+
+[Scraper - Chrome plugin](https://chrome.google.com/webstore/detail/scraper/mbigbapnjcgaffohmbkdlecaccepngjd)
+* Scraper is a simple data mining extension for Google Chrome™ that is useful for online research when you need to quickly analyze data in spreadsheet form.  To use it: highlight a part of the webpage you'd like to scrape, right-click and choose "Scrape similar...". Anything that's similar to what you highlighted will be rendered in a table ready for export, compatible with Google Docs™.  This is a work-in-progress (i.e. there are bugs), and is currently intended for intermediate to advanced users who are comfortable with XPath, though jQuery is also supported to an extent.
+
+[IRobot](http://irobotsoft.com/)
+* IRobot@IRobotSoft is an intelligent Web automation software. It features a small core that powers everything you need for handling Web data. You can easily teach and create your own robots to automate your daily activities. The robots will click links, submit forms, connect to databases, and run custom code to analyse data.
+
+[OutWit Hub - Shareware](http://www.outwit.com/products/hub/)
+* OutWit Hub breaks down Web pages into their different constituents. Navigating from page to page automatically, it extracts information elements and organizes them into usable collections.
+
+
+
+-------------
+### Simulators/ions
+
+[Shadow](http://shadow.github.io/)
+* Summary: Shadow is a unique, open source discrete-event network simulator that runs real applications like Tor. Shadow combines the accuracy of emulation with the efficiency and control of simulation, achieving the best of both approaches 
+
+[Hflow2](https://projects.honeynet.org/hflow)
+* Data Analysis System
+
+[VirtualPlant](http://wroot.org/projects/virtuaplant/)
+* VirtuaPlant is a Industrial Control Systems simulator which adds a “similar to real-world control logic” to the basic “read/write tags” feature of most PLC simulators. Paired with a game library and 2d physics engine, VirtuaPlant is able to present a GUI simulating the “world view” behind the control system allowing the user to have a vision of the would-be actions behind the control systems.strated as the fruits of the bug hunting labour.
+
+
+
+---------------------------------
+### Various Purpose Based OS's
+
+[Parrot Security](https://www.parrotsec.org/)
+
+[Qubes](https://www.qubes-os.org/wiki/)
+* Qubes is an open-source operating system designed to provide strong security for desktop computing using Security by Compartmentalization approach. Qubes is based on Xen, the X Window System, and Linux, and can run most Linux applications and utilize most of the Linux drivers. Qubes Release 1 was released in September 2012 and Release 2 in September 2014. Qubes also supports Windows-based AppVMs beginning with Release 2 (currently in “Beta”). Qubes Release 3 is coming soon and will introduce Hypervisor Abstraction Layer (HAL), allowing easy porting to alternative virtualization systems.
+
+[Liberte](http://dee.su/liberte)
+* Liberté Linux is a secure, reliable, lightweight and easy to use Gentoo-based LiveUSB/SD/CD Linux distribution with the primary purpose of enabling anyone to communicate safely and covertly in hostile environments. Whether you are a privacy advocate, a dissident, or a sleeper agent, you are equally likely to find Liberté Linux useful as a mission-critical communication aid. 
+
+[Archassault](https://archassault.org/)
+* The ArchAssault Project is an Arch Linux derivative for penetration testers, security professionals and all-around Linux enthusiasts. This means we import the vast majority of the official upstream Arch Linux packages, these packages are unmodified from their upstream source. While our Arch Linux base is primarily untouched, there are times were we have to fork a package to be able to better support our vast selection of tools. All of our packages strive to maintain the Arch Linux standards, methods and philosophies.
+
+[Kali linux](https://www.kali.org/)
+* You do pentesting with it.
+
+[Tails](https://tails.boum.org/)
+* Tails is a live operating system, that you can start on almost any computer from a DVD, USB stick, or SD card. It aims at preserving your privacy and anonymity, and helps you to: use the Internet anonymously and circumvent censorship; all connections to the Internet are forced to go through the Tor network; leave no trace on the computer you are using unless you ask it explicitly; use state-of-the-art cryptographic tools to encrypt your files, emails and instant messaging.
+
+[PenQ](http://www.qburst.com/products/PenQ)
+* PenQ is an open source, Linux-based penetration testing browser bundle we built over Mozilla Firefox. It comes pre-configured with security tools for spidering, advanced web searching, fingerprinting, anonymous browsing, web server scanning, fuzzing, report generating and more.
+
+[Active Defense Harbinger Distribution (ADHD)](https://www.sourceforge.net/projects/adhd/)
+* The Active Defense Harbinger Distribution (ADHD) is a Linux distro based on Ubuntu LTS. It comes with many tools aimed at active defense preinstalled and configured. The purpose of this distribution is to aid defenders by giving them tools to "strike back" at the bad guys.  ADHD has tools whose functions range from interfering with the attackers' reconnaissance to compromising the attackers' systems. Innocent bystanders will never notice anything out of the ordinary as the active defense mechanisms are triggered by malicious activity such as network scanning or connecting to restricted services.
+* [Blogpost going over it/setting it up - HolisticInfosec](http://holisticinfosec.blogspot.com/2013/10/c3cm-part-3-adhd-active-defense.html)

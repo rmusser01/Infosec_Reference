@@ -1,0 +1,12 @@
+{
+    "title": "InfoSec Reference"
+}
+{
+    "tagline": "A Reference that doesn't suck"
+}
+{
+    "ignore": {
+        "files": ["4.md"],
+        "folders": ["99_Not_Ready"]
+    }
+}

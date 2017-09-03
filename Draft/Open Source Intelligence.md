@@ -214,6 +214,8 @@ Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&use
 
 [corporationwiki](https://www.corporationwiki.com/)
 
+[orbis](https://orbisdirectory.bvdinfo.com/version-2017821/OrbisDirectory/Companies)
+* Company information across the globe
 
 
 -------------

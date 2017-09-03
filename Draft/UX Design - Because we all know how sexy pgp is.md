@@ -1,17 +1,12 @@
-## UX/UI Design - Because we all know how sexy PGP looks / How easy to use it is.
+# UX/UI Design - Because we all know how sexy PGP looks / How easy to use it is.
 
-Required Reading: [The Design of Everyday Things](http://www.jnd.org/books/design-of-everyday-things-revised.html)
-* This book is extraordinary not only in the fact that its a crash course on UI/UX design but also for the fact that almost anyone can read it and understand the principles it talks about.
+
 
 
 
 
 #### Sort
-
-http://www.usability.gov/what-and-why/user-interface-design.html
-
 [The unexpected dangers of preg_replace()](https://bitquark.co.uk/blog/2013/07/23/the_unexpected_dangers_of_preg_replace)
-
 
 https://dribbble.com/
 
@@ -23,6 +18,8 @@ https://www.uplabs.com/
 
 ### General
 
+Required Reading: [The Design of Everyday Things](http://www.jnd.org/books/design-of-everyday-things-revised.html)
+* This book is extraordinary not only in the fact that its a crash course on UI/UX design but also for the fact that almost anyone can read it and understand the principles it talks about.
 
 [User Interface - Wikipedia](https://en.wikipedia.org/wiki/User_interface)
 
@@ -32,8 +29,13 @@ https://www.uplabs.com/
 
 [Principals of User Interface Design](https://en.wikipedia.org/wiki/Principles_of_user_interface_design)
 
+[User Interface Design Basics - usability.gov](https://www.usability.gov/what-and-why/user-interface-design.html)
+
 
 ### Books
+* The Design of Everyday Things
+* Emotional Design
+* Don't Make me think
 
 
 

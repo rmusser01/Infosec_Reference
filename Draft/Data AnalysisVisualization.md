@@ -1,4 +1,4 @@
-## Data Visualization
+# Data Visualization
 
 
 
@@ -14,7 +14,7 @@
 
 
 
-#### To Do
+### To Do
 * Split into Data visualization/Working with data
 
 

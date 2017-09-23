@@ -8,7 +8,7 @@ An Information Security Reference That Doesn't Suck
 * List of techinques, tools and tactics to learn from/reference.
 	* Something like a "Yellow Pages" in the sense of you know something exists, but what was it called....
 * End goal: Rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches OR as a reference/recall method for stuff.
-* Something oppposite to the [MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page) (eventually; As in, "I want to do priv esc on OS X/windows/linux, what methods are there?" or, "I need to do X under Y situation". Focus is on attacks and how (to)/(they) break through defenses, vs focusing on defending against attacks.
+* Something oppposite to the [MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page) (eventually; As in, "I want to do priv esc on OS X/windows/linux, what methods are there?" or, "I need to do X under Y situation". Focus is on attacks and how they're done vs how attacks are done with a focus on defense.
 	* Always accepting more links/stuff. Feel free to contribue or suggest something.
 
 * Little extra something: ALL LINKS LISTED ARE VALID. They will route to their target page or to Internet Archives most recent archive of that page. All links are validated when I pull from github and host on my site using Daux. 
@@ -22,7 +22,7 @@ An Information Security Reference That Doesn't Suck
 
 
 ##### This page
-* Use [https://rmusser.net/docs](https://rmusser.net/docs]) for a somewhat easier look(supports mobile).
+* This page is terrible. It should not be used to navigate for info unless you like self harm. Use [https://rmusser.net/docs](https://rmusser.net/docs]) instead.
 * For latest content updates, check here: [Things added since last update](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/things-added.md)
 	* This will have all links added to the other pages sorted according to topic, making it easier to see new stuff.
 * All links on this page should work. Last tested 9/3

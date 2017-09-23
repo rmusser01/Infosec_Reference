@@ -23,38 +23,41 @@ http://www.stoned-vienna.com/
 #### End Sort
 
 
------------------
-### <a name="general">General</a>
 
-[Timeline of Low level software and hardware attack papers](http://timeglider.com/timeline/5ca2daa6078caaf4)
+----------------
+### What is This Stuff?
 
 [Official UEFI Site - Specs](http://www.uefi.org/specsandtesttools)
 
 [UEFI - OSDev Wiki](http://wiki.osdev.org/UEFI)
 
-[Technical Overview of Windows UEFI Startup Process](http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/)
+[Extensible Firmware Interface (EFI) and Unified EFI (UEFI)](http://www.intel.com/content/www/us/en/architecture-and-technology/unified-extensible-firmware-interface/efi-homepage-general-technology.html)
 
 [Understanding AMT, UEFI BIOS and Secure boot relationships](https://communities.intel.com/community/itpeernetwork/vproexpert/blog/2013/08/11/understanding-amt-uefi-bios-and-secure-boot-relationships)
+
+[Introduction to UEFI](http://x86asm.net/articles/introduction-to-uefi/)
+
+[What is Intel Mangement Engine?](http://me.bios.io/ME:About)
+
+
+
+-----------------
+### <a name="general">General</a>
+
+[Timeline of Low level software and hardware attack papers](http://timeglider.com/timeline/5ca2daa6078caaf4)
+
+[Technical Overview of Windows UEFI Startup Process](http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/)
 
 [Windows UEFI startup – A technical overview](http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/)
 * Through this analysis paper we’ll give a look at Windows 8 (and 8.1) UEFI startup mechanisms and we’ll try to understand their relationship with the underlying hardware platform.
 
-[Extensible Firmware Interface (EFI) and Unified EFI (UEFI)](http://www.intel.com/content/www/us/en/architecture-and-technology/unified-extensible-firmware-interface/efi-homepage-general-technology.html)
-
 [Intel ME (Manageability engine) Huffman algorithm](http://io.smashthestack.org/me/)
-
-[Introduction to UEFI](http://x86asm.net/articles/introduction-to-uefi/)
-
-[UEFI Programming - First Steps](http://x86asm.net/articles/uefi-programming-first-steps/)
-
-[Dr Sergei Skorobogatov - Researcher in hardware based attacks, good stuff](https://www.cl.cam.ac.uk/~sps32/)
-
-[UEFI Programming - First Steps](http://x86asm.net/articles/uefi-programming-first-steps/)
 
 [LEGBACORE Research/Publicatoins](http://www.legbacore.com/Research.html)
 
-[What is Intel Mangement Engine?](http://me.bios.io/ME:About)
+[Dr Sergei Skorobogatov - Researcher in hardware based attacks, good stuff](https://www.cl.cam.ac.uk/~sps32/)
 
+[Disabling Intel ME 11 via undocumented mode - ptsecurity](http://blog.ptsecurity.com/2017/08/disabling-intel-me.html)
 
 
 
@@ -121,6 +124,26 @@ Reverse Engineering Router Firmware walk through
 
 [me-tools](https://github.com/skochinsky/me-tools)
 * Tools for working with Intel ME
+
+
+
+
+
+
+
+
+
+----------------------
+### Programming
+
+
+[UEFI Programming - First Steps](http://x86asm.net/articles/uefi-programming-first-steps/)
+
+[UEFI Programming - First Steps](http://x86asm.net/articles/uefi-programming-first-steps/)
+
+
+
+
 
 
 

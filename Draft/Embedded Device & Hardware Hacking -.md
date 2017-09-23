@@ -16,6 +16,7 @@ https://en.wikipedia.org/wiki/Embedded_system
 * [General Tools(S/W & H/W)](#gentools)
 * [Miscellaneous](#misc)
 * [PCI](#PCI)
+* [Printers](#printers)
 * [USB](#USB)
 * [PenTest Dropboxes](#dropbox)
 * [Teensy/Rubberducky Style Attack Tools](#teensy)
@@ -40,6 +41,12 @@ http://greatscottgadgets.com/infiltrate2013/
 
 [SPI](https://trmm.net/SPI_flash)
 
+[umap](https://github.com/nccgroup/umap) 
+* The USB host security assessment tool
+
+
+
+
 
 
 #### end sort
@@ -59,9 +66,6 @@ http://greatscottgadgets.com/infiltrate2013/
 [Anti-Evil Maid](http://theinvisiblethings.blogspot.com/2011/09/anti-evil-maid.html?m=1)
 
 [Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)
-
-[Hacking Printers Wiki](http://hacking-printers.net/wiki/index.php/Main_Page)
-
 
 
 ---------------------------
@@ -126,6 +130,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 [ChipWhisperer](http://www.newae.com/chipwhisperer)
 * ChipWhisperer is the first ever open-source solution that provides a complete toolchain for research and analysis of embedded hardware security. Side Channel Power Analysis, Clock Glitching, VCC Glitching, and more are all possible with this unique tool.
+
 
 
 
@@ -293,6 +298,17 @@ http://greatscottgadgets.com/infiltrate2013/
 * The PCILeech use the USB3380 chip in order to read from and write to the memory of a target system. This is achieved by using DMA over PCI Express. No drivers are needed on the target system. The USB3380 is only able to read 4GB of memory natively, but is able to read all memory if a kernel module (KMD) is first inserted into the target system kernel. Reading 8GB of memory from the target system take around one (1) minute. The PCILeech hardware is connected with USB3 to a controlling computer running the PCILeech program. PCILeech is also capable of inserting a wide range of kernel modules into the targeted kernels - allowing for pulling and pushing files, remove the logon password requirement, loading unsigned drivers, executing code and spawn system shells. The software is written in visual studio and runs on Windows 7/Windows 10. Supported target systems are currently the x64 versions of: Linux, FreeBSD, macOS and Windows.
 
 
+
+----------------------
+### Printers
+
+
+[Hacking Printers Wiki](http://hacking-printers.net/wiki/index.php/Main_Page)
+
+[Attacking *multifunction* printers and getting creds from them](http://www.irongeek.com/i.php?page=videos/bsidescleveland2014/plunder-pillage-and-print-the-art-of-leverage-multifunction-printers-during-penetration-testing-deral-heiland)
+
+[PRET](https://github.com/RUB-NDS/PRET)
+* PRET is a new tool for printer security testing developed in the scope of a Master's Thesis at Ruhr University Bochum. It connects to a device via network or USB and exploits the features of a given printer language. Currently PostScript, PJL and PCL are supported which are spoken by most laser printers. This allows cool stuff like capturing or manipulating print jobs, accessing the printer's file system and memory or even causing physical damage to the device. All attacks are documented in detail in the Hacking Printers Wiki.
 
 ---------------------------
 ### <a name="USB">USB</a>

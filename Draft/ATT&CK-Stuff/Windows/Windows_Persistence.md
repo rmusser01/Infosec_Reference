@@ -1,5 +1,8 @@
 # Windows Persistence
 
+### Sort
+[Hide files using SSDT hooking](http://blog.sevagas.com/?Hide-files-using-SSDT-hooking)
+
 -------------------------------
 ### Accessibility Features
 
@@ -104,7 +107,8 @@
 
 [Userland Persistence with Scheduled Tasks and COM Handler Hijacking](https://enigma0x3.net/2016/05/25/userland-persistence-with-scheduled-tasks-and-com-handler-hijacking/)
 
-
+[Windows Operating System Archaeology](https://www.slideshare.net/enigma0x3/windows-operating-system-archaeology)
+* Given at BSides Nashville 2017. The modern Windows Operating System carries with it an incredible amount of legacy code. The Component Object Model (COM) has left a lasting impact on Windows. This technology is far from dead as it continues to be the foundation for many aspects of the Windows Operating System. You can find hundreds of COM Classes defined by CLSID (COM Class Identifiers). Do you know what they do? This talk seeks to expose tactics long forgotten by the modern defender. We seek to bring to light artifacts in the Windows OS that can be used for persistence. We will present novel tactics for persistence using only the registry and COM objects.
 
 
 -------------------------------

@@ -1,59 +1,56 @@
 
 
-##Web, Web Applications & Browsers
+# Web, Web Applications & Browsers
 
-
-
-* [General](#general)
-* [Securing Web Based Applications/Servers](#secure)
-* [Securing Web Applications/Security Checklists](#checklists)
-* [Talks & Presentations](#talks)
-* [General Tools](#generalt)
-* [Different Types of Web based attacks](#difatk)
-	* [Template Injection](#ssti)
-	* [Abuse of Functionality](#)
-	* [CSRF](#csrf)
-	* [Data Structure Attacks](#)
-	* [Embedded Malicious Code](#emc)
-	* [Exploitation of Authentication](#eoa)
-	* [Injection Based Attacks](#ija)
-	* [Java Deserialization Attacks](#jsa)
-	* [L/RFI](#lrfi)
-	* [Path Traversal Attacks](#pta)
-	* [Probabilistic Attacks](#pa)
-	* [Protocol Manipulation](#pm)
-	* [Resource Depletion](#rd)
-	* [Resource Manipulation](#rm)
-	* [Sniffing Based](#sb)
-	* [Spoofing Based](#spb)
-	* [NO/SQL](#sql)
-	* [XSS](#xss)
-* [Attacking Browsers](#atkb)
-* [API Testing](#api-test)
-* [Brute Force Tools](#brute)
-* [CMSs](#cms)
-* [Client Web Proxies](#webproxy)
-* [HTML5](#html5)
-* [Javascript](#javascript)
-* [Javascript Encoders/Decoders](#encode)
-* [JSON Web Tokens](#jwt)
-* [General Encoding/Decoding Tools](#generalencode)
-* [Rest & Web Services](#rest)
-* [WebShells](#shells)
-* [Write-ups](#writeups)
-* [Attack Writeups](#writeups)
-* [Non-Attack Writeups](#nonwriteup)
-* [Web Application Firewalls](#waf)
-* [Bypassing Web Application Firewalls](#bwaf)
-* [Web Sockets](#websockets)
-* [Miscellaneous](#misc)
-* [Burp Plugins/Stuff](#burp)
+Web TOC
+* General
+* Securing Web Applications Checklists
+* Talks & Presentations
+* General Tools
+* Different Typs of Web Based Attacks
+	* Abuse of Functionality
+	* Brute Force Fuzzing
+	* Cross-Site-Request Forgery 
+	* De/Encoders 
+	* Data Structure Attacks
+	* Embedded Malicious Code
+	* Exploitation of Authentication 
+	* Injection Based Attacks
+		* OS Command Injection 
+		* (NO)SQL Injection
+	* JNDI
+	* Java Serialization Attacks 
+	* JSON Web Tokens 
+	* LFI & RFI
+	* Path Traversal Attacks
+	* Server Side Request Forgery 
+	* Server Side Include
+	* Server Side Template Injection
+	* Timing Attacks
+	* Web Shells
+	* XSS
+* API Stuff 
+* Attacking Browsers
+* CMS Specific Tools
+* HTML5
+* Javascript
+* REST & Web Services
+* Scraping
+* Site/WebApp Scanners
+* Web Sockets
+* Web Proxies
+* Web Application Firewalls(WAFs)
+	* Bypassing WAFs
+* Web Application Attack Writeups
+* Non-Attack Writeups
+* Papers
+* Miscellaneous
+* Burp Stuff/Plugins
 
 
 
 
 #### To-add
-Java Serialization papers/stuff
 OWASP BWA project; DVWA/similar to educational section
 
 Proper RFCS and stuff for various things
@@ -61,35 +58,38 @@ Proper RFCS and stuff for various things
 [Big List of Naughty Strings](https://github.com/minimaxir/big-list-of-naughty-strings)
 * The Big List of Naughty Strings is an evolving list of strings which have a high probability of causing issues when used as user-input data. This is intended for use in helping both automated and manual QA testing; useful for whenever your QA engineer walks into a bar.
 
+
+
 #### Sort
 
 http://console-cowboys.blogspot.com/2011/05/web-hacking-video-series-1-automating.html 
 
 http://www.grymoire.com/Security/Hardware.html
 
-prompt.ml
-
 Clickjacking attacks
 
-[WeasyPrint](http://weasyprint.org/)
-* WeasyPrint is a visual rendering engine for HTML and CSS that can export to PDF. It aims to support web standards for printing. WeasyPrint is free software made available under a BSD license.
+[OWASP Juice Shop](https://github.com/bkimminich/juice-shop)
+* OWASP Juice Shop is an intentionally insecure web application written entirely in Javascript which encompasses the entire range of OWASP Top Ten and other severe security flaws.
 
-[Pen test and hack microsoft sql server (mssql)](http://travisaltman.com/pen-test-and-hack-microsoft-sql-server-mssql/)
+[OWASP Vulnerable Web Applications Directory Project/Pages/Offline](https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project/Pages/Offline)
 
-[SQLi Lab lessons](https://github.com/Audi-1/sqli-labs)
+[Php Codz Hacking](https://github.com/80vul/phpcodz)
+* Writeups of specific PHP vulns
+
+[sonar.js](https://thehackerblog.com/sonar-a-framework-for-scanning-and-exploiting-internal-hosts-with-a-webpage/)
+* A Framework for Scanning and Exploiting Internal Hosts With a Webpage
+
+[Penetration Testing AWS Storage: Kicking the S3 Bucket](https://rhinosecuritylabs.com/penetration-testing/penetration-testing-aws-storage/)
 
 [Introducing G-Scout](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2017/august/introducing-g-scout/)
 * G-Scout is a tool to help assess the security of Google Cloud Platform (GCP) environment configurations. By leveraging the Google Cloud API, G-Scout automatically gathers a variety of configuration data and analyzes this data to determine security risks. It produces HTML output.
 * [Google Cloud Platform Security Tool](https://github.com/nccgroup/G-Scout)
 
+[G-Jacking AppEngine-based applications - HITB2014](https://conference.hitb.org/hitbsecconf2014ams/materials/D2T1-G-Jacking-AppEngine-based-Applications.pdf)
 
-
+* Add AWS Section
+* Google Cloud section
 #### End Sort
-
-
-
-
-
 
 
 
@@ -127,7 +127,7 @@ Clickjacking attacks
 * JSFuck is an esoteric and educational programming style based on the atomic parts of JavaScript. It uses only six different characters to write and execute code.
 https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
-
+[Object MetaInformation](https://www.w3.org/Protocols/HTTP/Object_Headers.html#public)
 
 
 
@@ -179,7 +179,7 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 [NodeJS: Remote Code Execution as a Service - Peabnuts123 – Kiwicon 2016](https://www.youtube.com/watch?v=Qvtfagwlfwg)
 * [SLIDES](http://archivedchaos.com/post/153372061089/kiwicon-2016-slides-upload)
 
-
+[DOM Based Angular Sandbox Escapes by Gareth Heyes - BSides Manchester2017](https://www.youtube.com/watch?v=jlSI5aVTEIg&index=16&list=PLcgqQkap1lNrOBNCXqpPqpPAqckxv0XhP)
 
 
 
@@ -190,9 +190,6 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
 [PowerWebShot](https://github.com/dafthack/PowerWebShot)
 * A PowerShell tool for taking screenshots of multiple web servers quickly.
-
-[ParrotNG](https://github.com/ikkisoft/ParrotNG/releases)
-* ParrotNG is a Java-based tool for automatically identifying vulnerable SWF files, built on top of swfdump. One JAR, two flavors: command line tool and Burp Pro Passive Scanner Plugin.
 
 [HTTPie - curl for humans](https://gith*ub.com/jakubroztocil/httpie)
 * HTTPie (pronounced aych-tee-tee-pie) is a command line HTTP client. Its goal is to make CLI interaction with web services as human-friendly as possible. It provides a simple http command that allows for sending arbitrary HTTP requests using a simple and natural syntax, and displays colorized output. HTTPie can be used for testing, debugging, and generally interacting with HTTP servers.
@@ -266,6 +263,8 @@ As seen on: https://www.owasp.org/index.php/Category:Attack
 [WFuzz](https://code.google.com/p/wfuzz/)
 Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for finding resources not linked (directories, servlets, scripts, etc), bruteforce GET and POST parameters for checking different kind of injections (SQL, XSS, LDAP,etc), bruteforce Forms parameters (User/Password), Fuzzing,etc
 
+[dirsearch](https://github.com/maurosoria/dirsearch)
+* dirsearch is a simple command line tool designed to brute force directories and files in websites.
 
 
 
@@ -420,6 +419,7 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 [Turning LFI into RFI](https://l.avala.mp/?p=241)
 * When configured in a specific way the web application would load the JAR file and search within the file for a class. Interestingly enough, in Java classes you can define a static block that is executed upon the class being processed
 
+[Unrestricted File Upload Testing](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
 
 
 
@@ -427,40 +427,69 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 -------------------
 ### (NO)SQL Injection
-[SQL Injection Cheat Sheet](http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/)
 
-[PostgreSQL Pass The Hash protocol design weakness](https://hashcat.net/misc/postgres-pth/postgres-pth.pdf)
+[SQLi Lab lessons](https://github.com/Audi-1/sqli-labs)
+* SQLI-LABS is a platform to learn SQLI
 
 [SQL Injection wiki](http://www.sqlinjectionwiki.com/)
 
 [SQL Injection Knowledge Base](http://websec.ca/kb/sql_injection#MySQL_Testing_Injection)
 
+[Use google bots to perform SQL injections on websites](http://blog.sucuri.net/2013/11/google-bots-doing-sql-injection-attacks.html)
+
+[Performing sqlmap POST request injection](https://hackertarget.com/sqlmap-post-request-injection/)
+
+#### Cheat Sheets
+[SQL Injection Cheat Sheet](http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/)
+
+[SQL Injection Cheat Sheet - NetSparker](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/)
+
+
+
+
+#### Tools
 [sqlmap](https://github.com/sqlmapproject/sqlmap)
 
-[Pen Testing MongoDB](http://www.irongeek.com/i.php?page=videos/derbycon4/t408-making-mongo-cry-attacking-nosql-for-pen-testers-russell-butturini)
+[jSQL Injection](https://github.com/ron190/jsql-injection)
+* jSQL Injection is a Java application for automatic SQL database injection.
 
 [Laduanum](http://laudanum.sourceforge.net/)
 * “Laudanum is a collection of injectable files, designed to be used in a pentest when SQL injection flaws are found and are in multiple languages for different environments.They provide functionality such as shell, DNS query, LDAP retrieval and others.”
+
+
+
+
+
+
+#### DB2
+
+[DB2 SQL injection cheat sheet](https://securityetalii.es/2012/05/20/db2-sql-injection-cheat-sheet/)
+
+#### MS-SQL
+
+[Pen test and hack microsoft sql server (mssql)](http://travisaltman.com/pen-test-and-hack-microsoft-sql-server-mssql/)
+
+
+#### MySQL
+
+#### NoSQL
+
+[Nosql-Exploitation-Framework](https://github.com/torque59/Nosql-Exploitation-Framework)
+* A FrameWork For NoSQL Scanning and Exploitation Framework
 
 [Making Mongo Cry Attacking NoSQL for Pen Testers Russell Butturini](https://www.youtube.com/watch?v=NgsesuLpyOg)
 
 [MongoDB: Typical Security Weaknesses in a NoSQL DB](http://blog.spiderlabs.com/2013/03/mongodb-security-weaknesses-in-a-typical-nosql-database.html)
 
+
+
+#### PostgreSQL
+
+[PostgreSQL Pass The Hash protocol design weakness](https://hashcat.net/misc/postgres-pth/postgres-pth.pdf)
+
+
+#### Oracle SQL
 [Oracle SQL Injection Guides & Whitepapers](https://haiderm.com/oracle-sql-injection-guides-and-whitepapers/)
-
-[Nosql-Exploitation-Framework](https://github.com/torque59/Nosql-Exploitation-Framework)
-* A FrameWork For NoSQL Scanning and Exploitation Framework
-
-[jSQL Injection](https://github.com/ron190/jsql-injection)
-* jSQL Injection is a Java application for automatic SQL database injection.
-
-[SQLi Lab lessons](https://github.com/Audi-1/sqli-labs)
-* SQLI-LABS is a platform to learn SQLI
-
-[Performing sqlmap POST request injection](https://hackertarget.com/sqlmap-post-request-injection/)
-
-[SQL Injection Cheat Sheet - NetSparker](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/)
-
 
 
 
@@ -470,6 +499,15 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 -------------------
 ### <a name="pta">Path Traversal Attacks</a>
 [Exploiting PHP File Inclusion – Overview](https://websec.wordpress.com/2010/02/22/exploiting-php-file-inclusion-overview/)
+
+
+
+
+-------------
+### Server Side Request Forgery (SSRF)
+
+[SSRF bible. Cheatsheet](https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit#heading=h.t4tsk5ixehdd)
+
 
 
 
@@ -492,6 +530,27 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 [tplmap](https://github.com/epinna/tplmap)
 * Code and Server-Side Template Injection Detection and Exploitation Tool
 
+
+
+
+----------------
+### SWF
+
+[The old is new, again. CVE-2011-2461 is back!](https://www.slideshare.net/ikkisoft/the-old-is-new-again-cve20112461-is-back)
+* As a part of an ongoing investigation on Adobe Flash SOP bypass techniques, we identified a vulnerability affecting old releases of the Adobe Flex SDK compiler. Further investigation traced the issue back to a well known vulnerability (CVE20112461), already patched by Adobe. Old vulnerability, let's move on? Not this time. CVE20112461 is a very interesting bug. As long as the SWF file was compiled with a vulnerable Flex SDK, attackers can still use this vulnerability against the latest web browsers and Flash plugin. Even with the most recent updates, vulnerable Flex applications hosted on your domain can be exploited. In this presentation, we will disclose the details of this vulnerability (Adobe has never released all technicalities) and we will discuss how we conducted a large scale analysis on popular websites, resulting in the identification of numerous Alexa Top 50 sites vulnerable to this bug. Finally, we will also release a custom tool and a Burp plugin capable of detecting vulnerable SWF applications. 
+
+[ParrotNG](https://github.com/ikkisoft/ParrotNG/releases)
+* ParrotNG is a Java-based tool for automatically identifying vulnerable SWF files, built on top of swfdump. One JAR, two flavors: command line tool and Burp Pro Passive Scanner Plugin.
+
+Advanced Flash Vulnerabilities in Youtube Writeups Series
+* [Advanced Flash Vulnerabilities in Youtube – Part 1](https://opnsec.com/2017/08/advanced-flash-vulnerabilities-in-youtube-part-1/)
+* [Advanced Flash Vulnerabilities in Youtube – Part 2](https://opnsec.com/2017/08/advanced-flash-vulnerabilities-in-youtube-part-2/)
+* [Advanced Flash Vulnerabilities in Youtube – Part 3](https://opnsec.com/2017/08/advanced-flash-vulnerabilities-in-youtube-part-3/)
+
+[deblaze](http://blog.dornea.nu/2015/06/22/decode-adobe-flex-amf-protocol/)
+* Performs method enumeration and interrogation against flash remoting end points.
+
+[Decode Adobe Flex AMF protocol](http://blog.dornea.nu/2015/06/22/decode-adobe-flex-amf-protocol/)
 
 
 
@@ -540,7 +599,8 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 [htshells](https://github.com/wireghoul/htshells)
 * Self contained web shells and other attacks via .htaccess files.
 
-
+[JSShell](https://github.com/Den1al/JSShell/)
+* An interactive multi-user web based JS shell written in Python with Flask (for server side) and of course Javascript and HTML (client side). It was initially created to debug remote esoteric browsers during tests and research. I'm aware of other purposes this tool might serve, use it at your own responsibility and risk.
 
 
 
@@ -549,42 +609,54 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 -------------------
 ### <a name="xss">XSS</a>
-[Writing an XSS Worm](http://blog.gdssecurity.com/labs/2013/5/8/writing-an-xss-worm.html)
+
+[Cross Frame Scripting](https://www.owasp.org/index.php/Cross_Frame_Scripting)
 
 [3 Types of XSS](https://www.owasp.org/index.php/Types_of_Cross-Site_Scripting)
 	* Dom-based
 	* Reflected
 	* Persistent
 
-[Cross Frame Scripting](https://www.owasp.org/index.php/Cross_Frame_Scripting)
-
-[Shuriken](https://github.com/shogunlab/shuriken)
-* Cross-Site Scripting (XSS) command line tool for testing lists of XSS payloads on web apps.
-
+#### General
+[XSS Test String Dump](https://github.com/zsitro/XSS-test-dump/blob/master/xss.txt)
 
 [XSS Filter Bypass List](https://gist.github.com/rvrsh3ll/09a8b933291f9f98e8ec)
 
 [HTML Purifier XSS Attacks Smoketest](http://htmlpurifier.org/live/smoketests/xssAttacks.php)
 
-[XSS Test String Dump](https://github.com/zsitro/XSS-test-dump/blob/master/xss.txt)
+[Writing an XSS Worm](http://blog.gdssecurity.com/labs/2013/5/8/writing-an-xss-worm.html)
+
+
+#### Training
+[XSS-Game.appspot](https://xss-game.appspot.com/)
+
+[Self XSS: we’re not so different you and I - Mathias Karlsson](https://www.youtube.com/watch?v=l3yThCIF7e4)
+
+[XSSer](https://xsser.03c8.net/)
 
 [Firing-Range](https://github.com/google/firing-range)
 * Firing Range is a test bed for web application security scanners, providing synthetic, wide coverage for an array of vulnerabilities.
 
-[XSS-Game.appspot](https://xss-game.appspot.com/)
+[prompt.ml - XSS Injection Game](http://prompt.ml/about)
 
-[XSS game - escape.alf.nu](http://escape.alf.nu/)
+[alert1 to win - XSS Injection Game](https://alf.nu/)
 
-[Self XSS we’re not so different you and I - Mathias Karlsson](https://www.youtube.com/watch?v=l3yThCIF7e4)
 
+
+#### Tools
 [xsscrapy](https://github.com/byt3bl33d3r/xsscrapy)
-
-[XSSer](https://xsser.03c8.net/)
 
 [XSS Sniper](https://sourceforge.net/projects/xssniper/)
 
 [Xenotix](https://github.com/ajinabraham/OWASP-Xenotix-XSS-Exploit-Framework)
 *  OWASP Xenotix XSS Exploit Framework is an advanced Cross Site Scripting (XSS) vulnerability detection and exploitation framework.
+
+[xssValidator](https://github.com/nVisium/xssValidator)
+* This is a burp intruder extender that is designed for automation and validation of XSS vulnerabilities. 
+
+[Shuriken](https://github.com/shogunlab/shuriken)
+* Cross-Site Scripting (XSS) command line tool for testing lists of XSS payloads on web apps.
+
 
 
 
@@ -717,6 +789,13 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 
+-----------------
+### Scraping
+[WeasyPrint](http://weasyprint.org/)
+* WeasyPrint is a visual rendering engine for HTML and CSS that can export to PDF. It aims to support web standards for printing. WeasyPrint is free software made available under a BSD license.
+
+[Scrapy](https://scrapy.org/)
+* An open source and collaborative framework for extracting the data you need from websites. 
 
 
 ----------------
@@ -750,7 +829,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [BlindElephant Web Application Fingerprinter](http://blindelephant.sourceforge.net/)
 * The BlindElephant Web Application Fingerprinter attempts to discover the version of a (known) web application by comparing static files at known locations against precomputed hashes for versions of those files in all all available releases. The technique is fast, low-bandwidth, non-invasive, generic, and highly automatable. 
 
-
+[ParrotNG](https://github.com/ikkisoft/ParrotNG)
+* ParrotNG is a tool capable of identifying Adobe Flex applications (SWF) vulnerable to CVE-2011-2461
 
 
 
@@ -791,6 +871,13 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [wssip](https://github.com/nccgroup/wssip)
 * Application for capturing, modifying and sending custom WebSocket data from client to server and vice versa.
+
+
+--------------
+### WebRTC
+
+[STUN IP Address requests for WebRTC](https://github.com/diafygi/webrtc-ips)
+
 
 
 
@@ -860,6 +947,14 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [Exploiting Python Code Injection in Web Applications](https://sethsec.blogspot.com/2016/11/exploiting-python-code-injection-in-web.html)
 
+[Unrestricted File Upload Security Testing - Aptive](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
+
+[Reverse shell on a Node.js application](https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/)
+
+[Reverse shell on a Node.js application](https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/)
+
+
+
 
 
 
@@ -913,7 +1008,7 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [Cracking the Lens: Targeting HTTP's Hidden Attack Surface](https://portswigger.net/knowledgebase/papers/CrackingTheLens-whitepaper.pdf)
 
-
+[Browser Security White Paper - Cure53](https://browser-security.x41-dsec.de/X41-Browser-Security-White-Paper.pdf)
 
 
 
@@ -984,3 +1079,10 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [SAML Raider](https://github.com/SAMLRaider/SAMLRaider)
 * SAML Raider is a Burp Suite extension for testing SAML infrastructures. It contains two core functionalities: Manipulating SAML Messages and manage X.509 certificates.
+
+[Automating Web Apps Input fuzzing via Burp Macros](http://blog.securelayer7.net/automating-web-apps-input-fuzzing-via-burp-macros/)
+
+[ParrotNG - burp plugin](https://portswigger.net/bappstore/bapps/details/f99325340a404c67a8de2ce593824e0e)
+
+[PwnBack](https://github.com/k4ch0w/PwnBack)
+* Burp Extender plugin that generates a sitemap of a website using Wayback Machine

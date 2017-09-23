@@ -144,7 +144,7 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 
 
-### <a name="presen">Presentations/Videos</a>
+### <a name="presen">Talks/Videos</a>
 
 [The Best of Bug Finding - Duo Tech Talk (Charlie Miller)](https://www.youtube.com/watch?v=1M1EOzulQsw)
 * I look at how security vulnerabilities are found (or missed) and some of my favorite bugs and exploits I’ve come across in my career. 
@@ -184,6 +184,7 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 [Improving security with Fuzzing and Sanitizers](https://media.ccc.de/v/SHA2017-148-improving_security_with_fuzzing_and_sanitizers)
 * A bug in Gstreamer could be used to own a Linux Desktop system. TCPDump released a security update fixing 42 CVEs. We have far too many security critical bugs in the free and open source software stack. But we have powerful tools to find them - we just have to use them.
 
+[Introduction to Custom Protocol Fuzzing](https://www.youtube.com/watch?v=ieatSJ7ViBw)
 
 
 ### <a name="books">Books</a>

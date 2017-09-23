@@ -61,11 +61,11 @@
 
 
 ### <a name="Articles">Articles</a>
-| Title | Link
-| -------- | --------- |
-| De-anonymizing facebook users through CSP | http://www.myseosolution.de/deanonymizing-facebook-users-by-csp-bruteforcing/#inhaltsverzeichnis
-| Anonymous’s Guide to OpSec | http://www.covert.io/research-papers/security/Anonymous%20Hacking%20Group%20--%20OpNewblood-Super-Secret-Security-Handbook.pdf
-| Cat Videos and the Death of Clear Text | https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/
+[De-anonymizing facebook users through CSP](http://www.myseosolution.de/deanonymizing-facebook-users-by-csp-bruteforcing/#inhaltsverzeichnis)
+
+[Anonymous’s Guide to OpSec](http://www.covert.io/research-papers/security/Anonymous%20Hacking%20Group%20--%20OpNewblood-Super-Secret-Security-Handbook.pdf)
+
+[Cat Videos and the Death of Clear Text](https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/)
 
 [How to Spot a SpoCTok](https://cryptome.org/dirty-work/spot-spook.htm)
 
@@ -160,8 +160,7 @@
 * [Part 2](https://www.youtube.com/watch?v=TQ2bk9kMneI)
 * [Article -  How Tor Users Got Caught by Government Agencies](http://se.azinstall.net/2015/11/how-tor-users-got-caught.html)
 
-
-
+[You Are Being Tracked: How License Plate Readers Are Being Used to Record Americans' Movements - ACLU](https://www.aclu.org/other/you-are-being-tracked-how-license-plate-readers-are-being-used-record-americans-movements?redirect=technology-and-liberty/you-are-being-tracked-how-license-plate-readers-are-being-used-record)
 
 
 

@@ -42,6 +42,7 @@
 |175|tcp|IBM Network Job Entry||
 |179|tcp|BGP||
 |195|tcp|TA14-353a||
+|264||Checkpoint Firewall||
 |311|tcp|OS X Server Manager||
 |389|tcp|ldap|ldap://`target`/dc=com|
 |443|tcp|https|openssl s_client -host www.yahoo.com -port 443<BR>sslscan www.yahoo.com<BR>tlssled www.yahoo.com 443<BR>nmap --script sslv2 www.yahoo.com<BR>nmap --script ssl-cert www.yahoo.com<BR>nmap --script ssl-date www.yahoo.com<BR>nmap --script ssl-enum-ciphers www.yahoo.com<BR>nmap --script ssl-google-cert-catalog www.yahoo.com<BR>msf > use auxiliary/pro/web_ssl_scan<BR>msf > use auxiliary/scanner/ssl/openssl_heartbleed<BR>msf > use auxiliary/server/openssl_heartbeat_client_memory|
@@ -66,6 +67,7 @@
 |789|tcp|Redlion Crimson3||
 |873|tcp|rsync|rsync -a user@host::tools/<BR>nmap -p 873 --script rsync-brute --script-args 'rsync-brute.module=www' `target`<BR>nmap -p 873 --script rsync-list-modules `target`<BR>msf >use auxiliary/scanner/rsync/modules_list|
 |902|tcp|VMware authentication||
+|953||BIND Contorl Port||
 |992|tcp|Telnet(secure)||
 |993|tcp|IMAPs||
 |995|tcp|POP3s||
@@ -104,6 +106,7 @@
 |2455||CoDeSys||
 |2480||OrientDB||
 |2628||Dictionary||
+|2967||Symantec System Center Alert Management System||
 |3000||ntop||
 |3128|tcp|squid||
 |3299|tcp|sap|msf > use auxiliary/scanner/sap/sap_router_portscanner|
@@ -163,21 +166,26 @@
 |8101|tcp|apache karaf||
 |8180|tcp|apache tomcat|msf > use exploit/multi/http/tomcat_mgr_deploy|
 |8443|tcp|https||
+|8443||Symantec SEP Manager||
 |8554|tcp|rtsp||
 |8649|tcp|ganglia||
 |9009|tcp|Julia||
+|9043|tcp|WebSpeher||
+|9090||Symantec SEP Manager||
 |9151|tcp|Tor Control||
 |9160||Apache Cassandra||
 |9200|tcp|elasticsearch|msf >use exploit/multi/elasticsearch/search_groovy_script|
 |9418|tcp|git||
 |10000|tcp|virtualmin/webmin||
 |11211|tcp|memcache|msf > use auxiliary/gather/memcached_extractor<br>$ nc x.x.x.x 11211<BR>stats\r\n|
+|12174|tcp|Symantec System Center Alert Management System||
 |13579||Media Player classic web interface||
 |17185||VxWorks WDBRPC||
 |18083|tcp|vbox server||
 |27017|tcp|mongodb|msf >use auxiliary/scanner/mongodb/mongodb_login<BR>$ mongo host:port/database<BR>MongoDB shell version: 2.6.12<BR>> help|
 |28017|tcp|mongodb||
 |37777||Dahua DVR||
+|38292||Symantec System Center Alert Management System||
 |44818||EtherNet/IP||
 |49153||WeMo Link||
 |50000|tcp|sap||

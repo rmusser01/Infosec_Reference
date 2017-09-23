@@ -1,13 +1,8 @@
 
 
-## Reverse Engineering
+# Reverse Engineering
 
-
-
-TOC
-Intro
-To be sorted
-
+ToC
 * [Frameworks](#frameworks)
 * [Debuggers & Related Techniques](#dbg)
 * [Decompilers](#decom)
@@ -31,47 +26,31 @@ To be sorted
 
 ### To be sorted
 
-
-[Hyper-V debugging for beginners](http://hvinternals.blogspot.com/2015/10/hyper-v-debugging-for-beginners.html?m=1)
-
 [Software Hooking methods reveiw(2016)]((https://www.blackhat.com/docs/us-16/materials/us-16-Yavo-Captain-Hook-Pirating-AVs-To-Bypass-Exploit-Mitigations-wp.pdf)
 
 [Deviare v2.0](http://whiteboard.nektra.com/deviare-v-2-0)
 * The Deviare API has been developed to intercept any API calls, letting you get control of the flow of execution of any application.
-
-[Reverse History Part Two – Research](http://jakob.engbloms.se/archives/1554)
-
-[SpyStudio Tutorials](http://whiteboard.nektra.com/spystudio-2-0-quickstart)
-
-
-[PPEE(puppy)](https://www.mzrst.com/#top)
-* Professional PE file Explorer for reversers, malware researchers and those who want to statically inspect PE files in more details. Free and fast.
-
-[bingrep](https://github.com/m4b/bingrep)
-* Greps through binaries from various OSs and architectures, and colors them. 
-
-http://stunnix.com/prod/cxxo/
-
-[asar](https://github.com/electron/asar)
-*  Simple extensive tar-like archive format with indexing
 
 https://speakerdeck.com/patrickwardle/defcon-2016-i-got-99-problems-but-little-snitch-aint-one
 
 https://www.hex-rays.com/products/ida/tech/flirt/in_depth.shtml 
 
 
-http://blog.techorganic.com/2016/03/08/radare-2-in-0x1e-minutes/ 
+[Reflexil](https://github.com/sailro/Reflexil)
+* Reflexil is an assembly editor and runs as a plug-in for Red Gate's Reflector, ILSpy and Telerik's JustDecompile. Reflexil is using Mono.Cecil, written by Jb Evain and is able to manipulate IL code and save the modified assemblies to disk. Reflexil also supports C#/VB.NET code injection.
 
- mammon_'s tales to his grandson - https://mammon.github.io/tales/
+[Python RE tools list](http://pythonarsenal.erpscan.com/)
 
-http://fileformats.archiveteam.org/wiki/PNG
+[Cryptoshark](https://github.com/frida/cryptoshark)
+* Interactive code tracer for reverse-engineering proprietary software 
+
+[PolyHook - x86/x64 Hooking Library](https://github.com/stevemk14ebr/PolyHook)
+* Provides abstract C++ 11 interface for various hooking methods
+* [Technical Writeup](https://www.codeproject.com/articles/1100579/polyhook-the-cplusplus-x-x-hooking-library)
+
+[mammon_'s tales to his grandson](https://mammon.github.io/tales/)
 
 [Bug Hunting for the Man on the Street]()
-* Finding and discovering bugs has to be one of the most special times in a security researchers life (until you realise that crash you've been searching for and finally found is not actually exploitable). But the process of searching, discovery, understanding and of course some very much needed trial and error, many would say are rewarding and fulfilling themselves (I would of course, prefer to have my exploit cherry on the top)! So this talk will detail some of the aspects required to hunt down and find these coveted security vulnerabilities and bugs and some approaches that have proven to be invaluable (and some not so much). Of course bug hunting principle need to produce bugs so as the cherry there will be a virtual box exploit and Barracuda networks 0 day exploit discussed and demon
-
-
-[Universal Extractor](http://www.legroom.net/software/uniextract)
-* Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc
 
 [Unicorn-Engine](http://www.unicorn-engine.org/)
 * Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework.
@@ -82,44 +61,18 @@ https://objective-see.com/
 
 [Bytecode Club - RE Forum](https://the.bytecode.club/)
 
-
+[Reverse Engineering of Proprietary Protocols, Tools and Techniques - Rob Savoye - FOSDEM 2009 ](https://www.youtube.com/watch?v=t3s-mG5yUjY)
+* This talk is about reverse engineering a proprietary network protocol, and then creating my own implementation. The talk will cover the tools used to take binary data apart, capture the data, and techniques I use for decoding unknown formats. The protocol covered is the RTMP protocol used by Adobe flash, and this new implementation is part of the Gnash project.
 
 [Blackbone](https://github.com/DarthTon/Blackbone)
 * Windows memory hacking library
 
-[Binacle](https://github.com/ANSSI-FR/Binacle)
-* Indexation "full-bin" of binary files
-
+[PNG File Format](http://fileformats.archiveteam.org/wiki/PNG)
 
 [Microsoft.Diagnostics.Runtime.dll(CLR MD)](https://github.com/Microsoft/clrmd)
 * Microsoft.Diagnostics.Runtime.dll (nicknamed "CLR MD") is a process and crash dump introspection library. This allows you to write tools and debugger plugins which can do thing similar to SOS and PSSCOR.
 
 [Getting Started with CLR MD](https://github.com/Microsoft/clrmd/blob/master/Documentation/GettingStarted.md)
-
-[Reverse Engineering IoT Devices](https://iayanpahwa.github.io/Reverse-Engineering-IoT-Devices/)
-
-[radare2 as an alternative to gdb-peda](https://monosource.github.io/2016/10/radare2-peda)
-
-[jefferson](https://github.com/sviehb/jefferson)
-* JFFS2 filesystem extraction tool
-
-[Reverse Engineering Firmware Primer](https://wiki.securityweekly.com/Reverse_Engineering_Firmware_Primer)
-
-[Hacking Linksys E4200v2 firmware](https://blog.bramp.net/post/2012/01/24/hacking-linksys-e4200v2-firmware/)
-
-[Defeating ioli with radare2](https://dustri.org/b/defeating-ioli-with-radare2.html)
-
-[Gynvael’s Mission 11 (en): Python bytecode reverse-engineering](https://chriswarrick.com/blog/2017/08/03/gynvaels-mission-11-en-python-bytecode-reverse-engineering/)
-
-[Flipping Bits and Opening Doors: Reverse Engineering the Linear Wireless Security DX Protocol](https://duo.com/blog/flipping-bits-and-opening-doors-reverse-engineering-the-linear-wireless-security-dx-protocol)
-
-[Reverse Engineering of Proprietary Protocols, Tools and Techniques - Rob Savoye - FOSDEM 2009 ](https://www.youtube.com/watch?v=t3s-mG5yUjY)
-* This talk is about reverse engineering a proprietary network protocol, and then creating my own implementation. The talk will cover the tools used to take binary data apart, capture the data, and techniques I use for decoding unknown formats. The protocol covered is the RTMP protocol used by Adobe flash, and this new implementation is part of the Gnash project.
-
-[Jailbreaks and Pirate Tractors: Reverse Engineering Do’s and Don’ts](https://www.youtube.com/watch?v=8_mMTVsOM6Y)
-
-[Multiple vulnerabilities found in the Dlink DWR-932B (backdoor, backdoor accounts, weak WPS, RCE ...)](https://pierrekim.github.io/blog/2016-09-28-dlink-dwr-932b-lte-routers-vulnerabilities.html)
-
 
 ### End sort
 
@@ -127,11 +80,23 @@ https://objective-see.com/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------
 ### General
-
-
-
-[radare2 cheat sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
 
 [Introduction to Reverse Engineering Software - Dartmouth](http://althing.cs.dartmouth.edu/local/www.acm.uiuc.edu/sigmil/RevEng/)
 
@@ -151,17 +116,21 @@ https://objective-see.com/
 [Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
 * Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
 
+[Reverse History Part Two – Research](http://jakob.engbloms.se/archives/1554)
 
 
 
 
+
+
+--------------
 ### Things that are interesting/don't fit elsewhere
 
 [SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/)
 * SyntaxHighlighter is a fully functional self-contained code syntax highlighter developed in JavaScript. To get an idea of what SyntaxHighlighter is capable of, have a look at the demo page.
 
 [linguist](https://github.com/github/linguist)
-*  Language Savant. If your repository's language is being reported incorrectly, send us a pull request!
+* Language Savant. If your repository's language is being reported incorrectly, send us a pull request!
 
 [Ohcount - Ohloh's source code line counter.](https://github.com/blackducksoftware/ohcount)
 
@@ -169,7 +138,7 @@ https://objective-see.com/
 
 
 
-
+--------------
 ### <a name="general">General Research/Stuff</a>
 [TAMPER (Tamper And Monitoring Protection Engineering Research)](http://www.cl.cam.ac.uk/research/security/tamper/)
 * In the TAMPER Lab, we study existing security products, document how they have been penetrated in the past, develop new attack techniques, and try to forecast how newly available technologies will make it easier to bypass hardware security mechanisms. We then develop and evaluate new countermeasures and assist industrial designers in staying ahead of the game, most of all by giving them an advanced understanding of which attack techniques are most dangerous. We are especially interested in protection systems for mass-market applications, and in forensic applications. 
@@ -179,7 +148,7 @@ https://objective-see.com/
 [Theorem prover, symbolic execution and practical reverse-engineering](https://doar-e.github.io/presentations/securityday2015/SecDay-Lille-2015-Axel-0vercl0k-Souchet.html#/)
 
 
- [PE File Format Graphs](http://blog.dkbza.org/2012/08/pe-file-format-graphs.html?view=mosaic)
+[PE File Format Graphs](http://blog.dkbza.org/2012/08/pe-file-format-graphs.html?view=mosaic)
 
 [Encyclopedia of Graphics File Formats](http://fileformats.archiveteam.org/wiki/Encyclopedia_of_Graphics_File_Formats)
 
@@ -189,22 +158,84 @@ https://objective-see.com/
 
 
 
-
+--------------
 ### <a name="tools">Tools</a>
-Will sort to static/dynamic/OS specific
+
+#### General
+
+[bingrep](https://github.com/m4b/bingrep)
+* Greps through binaries from various OSs and architectures, and colors them. 
+
+[Binwalk](https://github.com/devttys0/binwalk)
+Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
+
+[Pip3line, the Swiss army knife of byte manipulation](https://nccgroup.github.io/pip3line/index.html) 
+* Pip3line is a raw bytes manipulation utility, able to apply well known and less well known transformations from anywhere to anywhere (almost).
 
 [Frida](http://www.frida.re/docs/home/)
 * Inject JS into native apps
 
-[Dependency Walker](http://www.dependencywalker.com/)
-*  Dependency Walker is a free utility that scans any 32-bit or 64-bit Windows module (exe, dll, ocx, sys, etc.) and builds a hierarchical tree diagram of all dependent modules. For each module found, it lists all the functions that are exported by that module, and which of those functions are actually being called by other modules. Another view displays the minimum set of required files, along with detailed information about each file including a full path to the file, base address, version numbers, machine type, debug information, and more.
+[Binacle](https://github.com/ANSSI-FR/Binacle)
+* Indexation "full-bin" of binary files
+
+[Construct2](https://github.com/construct/construct)
+* Construct is a powerful declarative parser (and builder) for binary data. Instead of writing imperative code to parse a piece of data, you declaratively define a data structure that describes your data. As this data structure is not code, you can use it in one direction to parse data into Pythonic objects, and in the other direction, convert ("build") objects into binary data.
+
+
+
+#### De/Obfuscators/Unpackers
+
+[de4dot](https://github.com/0xd4d/de4dot)
+* de4dot is an open source (GPLv3) .NET deobfuscator and unpacker written in C#. It will try its best to restore a packed and obfuscated assembly to almost the original assembly. Most of the obfuscation can be completely restored (eg. string encryption), but symbol renaming is impossible to restore since the original names aren't (usually) part of the obfuscated assembly.
+
+[Universal Extractor](http://www.legroom.net/software/uniextract)
+* Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc
+
+[Stunnix C/C++ Obfuscator](http://stunnix.com/prod/cxxo/)
+
+[asar](https://github.com/electron/asar)
+* Simple extensive tar-like archive format with indexing
+
+
+
+#### ELF/Related Tools
 
 [Rdis](https://github.com/endeav0r/rdis)
 * Rdis is a Binary Analysis Tool for Linux.
 
-[Python RE tools list](http://pythonarsenal.erpscan.com/)
+[readelf](https://sourceware.org/binutils/docs/binutils/readelf.html)
+* Unix Tool
 
-[Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
+
+
+
+
+
+#### PE32/Related Tools
+
+[Dependency Walker](http://www.dependencywalker.com/)
+* Dependency Walker is a free utility that scans any 32-bit or 64-bit Windows module (exe, dll, ocx, sys, etc.) and builds a hierarchical tree diagram of all dependent modules. For each module found, it lists all the functions that are exported by that module, and which of those functions are actually being called by other modules. Another view displays the minimum set of required files, along with detailed information about each file including a full path to the file, base address, version numbers, machine type, debug information, and more.
+
+[PPEE(puppy)](https://www.mzrst.com/#top)
+* Professional PE file Explorer for reversers, malware researchers and those who want to statically inspect PE files in more details. Free and fast.
+
+[PEStudio](http://www.winitor.com/)
+* pestudio is a tool that performs the static analysis of 32-bit and 64-bit Windows executable files.  Malicious executable attempts to hide its malicious intents and to evade detection. In doing so, it generally presents anomalies and suspicious patterns. The goal of pestudio is to detect these anomalies, provide indicators and score the executable being analyzed. Since the executable file being analyzed is never started, you can inspect any unknown or malicious executable with no risk. 
+
+[PEview](http://wjradburn.com/software/)
+* PEview provides a quick and easy way to view the structure and content of 32-bit Portable Executable (PE) and Component Object File Format (COFF) files. This PE/COFF file viewer displays header, section, directory, import table, export table, and resource information within EXE, DLL, OBJ, LIB, DBG, and other file types.
+
+
+
+#### OLE
+
+[python-oletools](https://github.com/decalage2/oletools)
+* python-oletools is a package of python tools to analyze Microsoft OLE2 files (also called Structured Storage, Compound File Binary Format or Compound Document File Format), such as Microsoft Office documents or Outlook messages, mainly for malware analysis, forensics and debugging. It is based on the olefile parser. See http://www.decalage.info/python/oletools for more info.
+
+
+
+
+#### Static Analysis Tools
 
 [Bindead - static binary binary analysis tool](https://bitbucket.org/mihaila/bindead/wiki/Home)
 * Bindead is an analyzer for executable machine code. It features a disassembler that translates machine code bits into an assembler like language (RREIL) that in turn is then analyzed by the static analysis component using abstract interpretation. 
@@ -213,47 +244,48 @@ Will sort to static/dynamic/OS specific
 * Amoco is a python package dedicated to the (static) analysis of binaries.
 * Worth a check on the Github
 
-[Binwalk](https://github.com/devttys0/binwalk)
-Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
+[Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
 
-[Cryptoshark](https://github.com/frida/cryptoshark)
-* Interactive code tracer for reverse-engineering proprietary software 
 
-[Pip3line, the Swiss army knife of byte manipulation](https://nccgroup.github.io/pip3line/index.html) 
-* Pip3line is a raw bytes manipulation utility, able to apply well known and less well known transformations from anywhere to anywhere (almost).
+
+
+#### OS X
 
 [Instruments - OS X system analysis](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html)
 * Instruments is a performance-analysis and testing tool for dynamically tracing and profiling OS X and iOS code. It is a flexible and powerful tool that lets you track a process, collect data, and examine the collected data. In this way, Instruments helps you understand the behavior of both user apps and the operating system.
 
-Reversing iOS/OS X http://newosxbook.com/forum/viewforum.php?f=8
+[Reversing iOS/OS X](http://newosxbook.com/forum/viewforum.php?f=8)
 
-[Construct2](https://github.com/construct/construct)
-* Construct is a powerful declarative parser (and builder) for binary data.  Instead of writing imperative code to parse a piece of data, you declaratively define a data structure that describes your data. As this data structure is not code, you can use it in one direction to parse data into Pythonic objects, and in the other direction, convert ("build") objects into binary data.
 
-[Deviare2](https://github.com/nektra/deviare2)
-* Deviare is a professional hooking engine for instrumenting arbitrary Win32 functions, COM objects, and functions which symbols are located in program databases (PDBs). It can intercept unmanaged code in 32-bit and 64-bit applications. It is implemented as a COM component, so it can be integrated with all the programming languages which support COM, such as C/C++, VB, C#, Delphi, and Python.
 
-[PolyHook - x86/x64 Hooking Library](https://github.com/stevemk14ebr/PolyHook)
-* Provides abstract C++ 11 interface for various hooking methods
-* [Technical Writeup](https://www.codeproject.com/articles/1100579/polyhook-the-cplusplus-x-x-hooking-library)
+
+#### Linux
+
+[Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
+
+[Rdis](https://github.com/endeav0r/rdis)
+* Rdis is a Binary Analysis Tool for Linux.
+
+
+
+
+#### Windows
 
 [EasyHook](https://easyhook.github.io/)
 * EasyHook makes it possible to extend (via hooking) unmanaged code APIs with pure managed functions, from within a fully managed environment on 32- or 64-bit Windows XP SP2, Windows Vista x64, Windows Server 2008 x64, Windows 7, Windows 8.1, and Windows 10.
 
-[python-oletools](https://github.com/decalage2/oletools)
-* python-oletools is a package of python tools to analyze Microsoft OLE2 files (also called Structured Storage, Compound File Binary Format or Compound Document File Format), such as Microsoft Office documents or Outlook messages, mainly for malware analysis, forensics and debugging. It is based on the olefile parser. See http://www.decalage.info/python/oletools for more info.
+[Microsoft Message Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=40308)
+* Microsoft Message Analyzer is a new tool for capturing, displaying, and analyzing protocol messaging traffic and other system messages. Message Analyzer also enables you to import, aggregate, and analyze data from log and trace files. It is the successor to Microsoft Network Monitor 3.4 and a key component in the Protocol Engineering Framework (PEF) that was created by Microsoft for the improvement of protocol design, development, documentation, testing, and support. With Message Analyzer, you can choose to capture data live or load archived message collections from multiple data sources simultaneously.
+
+[API Monitor](http://www.rohitab.com/apimonitor)
+* API Monitor is a free software that lets you monitor and control API calls made by applications and services. Its a powerful tool for seeing how applications and services work or for tracking down problems that you have in your own applications.
+
+[SpyStudio](http://www.nektra.com/products/spystudio-api-monitor/)
+* SpyStudio shows and interprets calls, displaying the results in a structured way which is easy for any IT professional to understand. SpyStudio can show registry keys and files that an application uses, COM objects and Windows the application has created, and errors and exceptions.
+* [SpyStudio Tutorials](http://whiteboard.nektra.com/spystudio-2-0-quickstart)
 
 [Fibratus](https://github.com/rabbitstack/fibratus)
 * Fibratus is a tool which is able to capture the most of the Windows kernel activity - process/thread creation and termination, file system I/O, registry, network activity, DLL loading/unloading and much more. Fibratus has a very simple CLI which encapsulates the machinery to start the kernel event stream collector, set kernel event filters or run the lightweight Python modules called filaments. You can use filaments to extend Fibratus with your own arsenal of tools.
-
-
-
-
-
-
-
-
-
 
 
 
@@ -274,7 +306,7 @@ Reversing iOS/OS X http://newosxbook.com/forum/viewforum.php?f=8
 
 
 
-
+--------------
 #### <a name="frameworks"Frameworks</a>
 
 [angr](http://angr.io/)
@@ -285,8 +317,11 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 * [Github](https://github.com/radare/radare2)
 * [Radare2 Book(free)](https://maijin.github.io/radare2book/index.html)
 * [Radare2 Documentation](http://www.radare.org/y/?p=documentation)
-* [ Reverse engineering embedded software using Radare2 - Talk/Tutorial](https://www.youtube.com/watch?v=R3sGlzXfEkU)
+* [Reverse engineering embedded software using Radare2 - Talk/Tutorial](https://www.youtube.com/watch?v=R3sGlzXfEkU)
 * [Notes and Demos for above video](https://github.com/pastcompute/lca2015-radare2-tutorial)
+* [radare2 cheat sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
+* [radare2 as an alternative to gdb-peda](https://monosource.github.io/2016/10/radare2-peda)
+* [Radare2 in 0x1E minutes](https://blog.techorganic.com/2016/03/08/radare-2-in-0x1e-minutes/)
 
 [BitBlaze](http://bitblaze.cs.berkeley.edu/)
 * The BitBlaze project aims to design and develop a powerful binary analysis platform and employ the platform in order to (1) analyze and develop novel COTS protection and diagnostic mechanisms and (2) analyze, understand, and develop defenses against malicious code. The BitBlaze project also strives to open new application areas of binary analysis, which provides sound and effective solutions to applications beyond software security and malicious code defense, such as protocol reverse engineering and fingerprint generation. 
@@ -304,7 +339,7 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 
 
 
-
+--------------
 #### <a name="dbg">Debuggers</a>
 
 [OllyDbg](http://www.ollydbg.de/)
@@ -350,8 +385,6 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 [Voltro](https://github.com/snare/voltron)
 * Voltron is an extensible debugger UI toolkit written in Python. It aims to improve the user experience of various debuggers (LLDB, GDB, VDB and WinDbg) by enabling the attachment of utility views that can retrieve and display data from the debugger host. By running these views in other TTYs, you can build a customised debugger user interface to suit your needs.
 
-[#Fldbg](https://github.com/offensive-security/fldbg)
-* #Fldbg, a Pykd script to debug FlashPlayer
 
 
 
@@ -365,6 +398,7 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 
 [Binary Hooking Problems](http://www.ragestorm.net/blogs/?p=348)
 
+[Hyper-V debugging for beginners](http://hvinternals.blogspot.com/2015/10/hyper-v-debugging-for-beginners.html?m=1)
 
 
 
@@ -372,7 +406,7 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 
 
 
-
+--------------
 #### <a name="decom">Decompilers & Disassemblers</a>
 
 [Procyon - Java Decompiler](https://bitbucket.org/mstrobel/procyon/wiki/Java%20Decompiler)
@@ -397,6 +431,8 @@ programming environment.
 [Reverse](https://github.com/joelpx/reverse)
 * Reverse engineering for x86 binaries (elf-format). Generate a more readable code (pseudo-C) with colored syntax. Warning, the project is still in development, use it at your own risks. This tool will try to disassemble one function (by default main). The address of the function, or its symbol, can be passed by argument.
 
+[DotPeek](http://www.jetbrains.com/decompiler/features/)
+* dotPeek is a .NET decompiler that has several handy features.
 
 
 
@@ -432,6 +468,23 @@ programming environment.
 [NRS](https://github.com/isra17/nrs)
 * NRS is a set of Python librairies used to unpack and analysis NSIS installer's data. It also feature an IDA plugin used to disassembly the NSIS Script of an installer
 
+[vtbl-ida-pro-plugin](https://github.com/nektra/vtbl-ida-pro-plugin)
+* Identifying Virtual Table Functions using VTBL IDA Pro Plugin + Deviare Hooking Engine
+* [How to Identify Virtual Table Functions with IDA Pro and the VTBL Plugin](https://www.youtube.com/watch?v=XHW9Akb4KLI&app=desktop)
+
+[Reversing C++ programs with IDA pro and Hex-rays](https://blog.0xbadc0de.be/archives/67)
+
+[funcap - IDA Pro script to add some useful runtime info to static analysis.](https://github.com/deresz/funcap)
+* This script records function calls (and returns) across an executable using IDA debugger API, along with all the arguments passed. It dumps the info to a text file, and also inserts it into IDA's inline comments. This way, static analysis that usually follows the behavioral runtime analysis when analyzing malware, can be directly fed with runtime info such as decrypted strings returned in function's arguments. In author's opinion this allows to understand the program's logic way faster than starting the "zero-knowledge" reversing. Quick understanding of a malware sample code was precisely the motivation to write this script and the author has been using it succesfully at his $DAYJOB. It is best to see the examples with screenshots to see how it works (see below). It must be noted that the script has been designed with many misconceptions, errors and bad design decisions (see issues and funcap.py code) as I was learning when coding but it has one advantage - it kind of works :) Current architectures supported are x86, amd64 and arm.
+
+[Ponce](https://github.com/illera88/Ponce)
+* Ponce (pronounced [ 'poN θe ] pon-they ) is an IDA Pro plugin that provides users the ability to perform taint analysis and symbolic execution over binaries in an easy and intuitive fashion. With Ponce you are one click away from getting all the power from cutting edge symbolic execution. Entirely written in C/C++.
+
+[IDASkins](https://github.com/zyantific/IDASkins)
+* Advanced skinning plugin for IDA Pro
+
+[idaConsonance](https://github.com/eugeii/ida-consonance)
+* Consonance, a dark color theme for IDA.
 
 
 
@@ -440,8 +493,7 @@ programming environment.
 
 
 
-
-
+--------------
 #### <a name="ct">Comparison Tools</a>s
 
 [binwally](https://github.com/bmaia/binwally)
@@ -460,51 +512,7 @@ programming environment.
 
 
 
-
-#### <a name="lt">Linux Specific Tools</a>
-
-[readelf](https://sourceware.org/binutils/docs/binutils/readelf.html)
-* Unix Tool
-
-[Rdis](https://github.com/endeav0r/rdis)
-* Rdis is a Binary Analysis Tool for Linux.
-
-[Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
-
-
-
-
-
-
-
-
-
-
-#### <a name="wt">Windows Specific Tools</a>
-
-[PEview](http://wjradburn.com/software/)
-* PEview provides a quick and easy way to view the structure and content of 32-bit Portable Executable (PE) and Component Object File Format (COFF) files. This PE/COFF file viewer displays header, section, directory, import table, export table, and resource information within EXE, DLL, OBJ, LIB, DBG, and other file types.
-
-
-[SpyStudio](http://www.nektra.com/products/spystudio-api-monitor/)
-* SpyStudio shows and interprets calls, displaying the results in a structured way which is easy for any IT professional to understand. SpyStudio can show registry keys and files that an application uses, COM objects and Windows the application has created, and errors and exceptions.
-
-[PEStudio](http://www.winitor.com/)
-* pestudio is a tool that performs the static analysis of 32-bit and 64-bit Windows executable files.  Malicious executable attempts to hide its malicious intents and to evade detection. In doing so, it generally presents anomalies and suspicious patterns. The goal of pestudio is to detect these anomalies, provide indicators and score the executable being analyzed. Since the executable file being analyzed is never started, you can inspect any unknown or malicious executable with no risk. 
-
-[DotPeek](http://www.jetbrains.com/decompiler/features/)
-* dotPeek is a .NET decompiler that has several handy features. I haven’t used it much, and don’t do much in .NET so I can’t say if its a good one, only that I’ve had success in using it.
-
-[API Monitor](http://www.rohitab.com/apimonitor)
-* API Monitor is a free software that lets you monitor and control API calls made by applications and services. Its a powerful tool for seeing how applications and services work or for tracking down problems that you have in your own applications.
-
-[Microsoft Message Analyzer])http://www.microsoft.com/en-us/download/details.aspx?id=40308)
-* Microsoft Message Analyzer is a new tool for capturing, displaying, and analyzing protocol messaging traffic and other system messages. Message Analyzer also enables you to import, aggregate, and analyze data from log and trace files. It is the successor to Microsoft Network Monitor 3.4 and a key component in the Protocol Engineering Framework (PEF) that was created by Microsoft for the improvement of protocol design, development, documentation, testing, and support. With Message Analyzer, you can choose to capture data live or load archived message collections from multiple data sources simultaneously.
-
-
-
-
-
+--------------
 #### <a name="pl">Programming Libraries</a>
 
 
@@ -526,6 +534,28 @@ programming environment.
 
 
 
+
+
+### Python Bytecode
+[Gynvael’s Mission 11 (en): Python bytecode reverse-engineering](https://chriswarrick.com/blog/2017/08/03/gynvaels-mission-11-en-python-bytecode-reverse-engineering/)
+
+[Deobfuscating Python Bytecode](https://www.fireeye.com/blog/threat-research/2016/05/deobfuscating_python.html)
+
+[python-uncompyle6](https://github.com/rocky/python-uncompyle6)
+* A Python cross-version decompiler
+
+[Decompyle++](https://github.com/zrax/pycdc)
+* C++ python bytecode disassembler and decompiler
+
+[Python Decompiler](https://github.com/alex/python-decompiler)
+* This project aims to create a comprehensive decompiler for CPython bytecode (likely works with PyPy as well, and any other Python implementation that uses CPython's bytecode)
+
+
+[PyInstaller Extractor](https://sourceforge.net/p/pyinstallerextractor/tickets/5/)
+* Extract contents of a Windows executable file created by pyinstaller 
+
+[Easy Python Decompiler](https://sourceforge.net/projects/easypythondecompiler/)
+* Python 1.0 - 3.4 bytecode decompiler 
 
 
 
@@ -554,7 +584,7 @@ programming environment.
 
 [Android Reverse Engineering Defenses](https://bluebox.com/wp-content/uploads/2013/05/AndroidREnDefenses201305.pdf)
 
-
+[Fun combining anti-debugging and anti-disassembly tricks](http://blog.sevagas.com/?Fun-combining-anti-debugging-and)
 
 
 
@@ -635,8 +665,7 @@ Hacking the Dropcam series
 [Reverse Engineering Windows AFD.sys](https://recon.cx/2015/slides/recon2015-20-steven-vittitoe-Reverse-Engineering-Windows-AFD-sys.pdf)
 
 
-[Reverse engineering walk thrrouhg; guy rev eng alarm system from shelf to replay]()
-https://www.reddit.com/r/ReverseEngineering/comments/1hb7oy/a_series_about_basics_of_hardware_reverse/)
+[Reverse engineering walk thrrouhg; guy rev eng alarm system from shelf to replay](https://www.reddit.com/r/ReverseEngineering/comments/1hb7oy/a_series_about_basics_of_hardware_reverse/)
 * [Part 1:](http://cybergibbons.com/uncategorized/)reverse-engineering-a-wireless-burglar-alarm-system-part-1/
 
 * [Part 2:](http://cybergibbons.com/uncategorized/)reverse-engineering-a-wireless-burglar-alarm-part-2/)
@@ -672,6 +701,27 @@ https://www.reddit.com/r/ReverseEngineering/comments/1hb7oy/a_series_about_basic
 [IDAnt-wanna](https://github.com/strazzere/IDAnt-wanna)
 * ELF header abuse
 
+[Reversing GO binaries like a pro](https://rednaga.io/2016/09/21/reversing_go_binaries_like_a_pro/)
+
+[Detecting debuggers by abusing a bad assumption within Windows](http://www.triplefault.io/2017/08/detecting-debuggers-by-abusing-bad.html)
+
+[Multiple vulnerabilities found in the Dlink DWR-932B (backdoor, backdoor accounts, weak WPS, RCE ...)](https://pierrekim.github.io/blog/2016-09-28-dlink-dwr-932b-lte-routers-vulnerabilities.html)
+
+[Defeating ioli with radare2](https://dustri.org/b/defeating-ioli-with-radare2.html)
+
+[Reverse Engineering IoT Devices](https://iayanpahwa.github.io/Reverse-Engineering-IoT-Devices/)
+
+[Flipping Bits and Opening Doors: Reverse Engineering the Linear Wireless Security DX Protocol](https://duo.com/blog/flipping-bits-and-opening-doors-reverse-engineering-the-linear-wireless-security-dx-protocol)
+
+[Hacking Linksys E4200v2 firmware](https://blog.bramp.net/post/2012/01/24/hacking-linksys-e4200v2-firmware/)
+
+
+
+
+
+
+
+
 
 ### <a name="talks">Talks & Videos</a>
 [The Three Billion Dollar App - Vladimir Wolstencroft -Troopers14](https://www.youtube.com/watch?v=5Duc-uUFzoU)
@@ -691,9 +741,12 @@ https://www.reddit.com/r/ReverseEngineering/comments/1hb7oy/a_series_about_basic
 
 [The Best Campfire Tales that Reverse Engineers Tell - Travis Goodspeed with Sergey Bratus](https://www.youtube.com/watch?v=l39OVRDvN9w)
 
+[Jailbreaks and Pirate Tractors: Reverse Engineering Do’s and Don’ts](https://www.youtube.com/watch?v=8_mMTVsOM6Y)
 
+[Reverse Engineering of Proprietary Protocols, Tools and Techniques - Rob Savoye - FOSDEM 2009 ](https://www.youtube.com/watch?v=t3s-mG5yUjY)
+* This talk is about reverse engineering a proprietary network protocol, and then creating my own implementation. The talk will cover the tools used to take binary data apart, capture the data, and techniques I use for decoding unknown formats. The protocol covered is the RTMP protocol used by Adobe flash, and this new implementation is part of the Gnash project.
 
-
+[Introduction to Reversing and Pwning - David Weinman - BsidesLV ProvingGrounds17](https://www.youtube.com/watch?v=4rjWlOvbz7U&app=desktop)
 
 
 
@@ -761,4 +814,17 @@ informed, and determined reverser
 
 
 
-*
+
+### Flash Player
+
+[#Fldbg](https://github.com/offensive-security/fldbg)
+* #Fldbg, a Pykd script to debug FlashPlayer
+
+[SWFRETools](https://github.com/sporst/SWFREtools)
+* The SWFRETools are a collection of tools built for vulnerability analysis of the Adobe Flash player and for malware analysis of malicious SWF files. The tools are partly written in Java and partly in Python and are licensed under the GPL 2.0 license.
+
+
+### Training
+[Windows for Reverse Engineers](http://www.cse.tkk.fi/fi/opinnot/T-110.6220/2014_Reverse_Engineering_Malware_AND_Mobile_Platform_Security_AND_Software_Security/luennot-files/T1106220.pdf)
+
+[Reverse Engineering Firmware Primer](https://wiki.securityweekly.com/Reverse_Engineering_Firmware_Primer)

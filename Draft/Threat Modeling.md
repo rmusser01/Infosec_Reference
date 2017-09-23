@@ -11,6 +11,7 @@
 
 
 
+[Global Adversarial Capability Modeling](https://www.youtube.com/watch?v=56T3JN09SrY#t=41)
 
 
 [ThreatHuntingStuff](https://github.com/MatthewDemaske/ThreatHuntingStuff)

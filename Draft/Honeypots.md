@@ -20,6 +20,7 @@ http://www.cuckoosandbox.org/
 
 http://highaltitudehacks.com/2013/06/15/ghost-usb-honeypot-part-2-installing-and-running-the-honeypot/
 
+[Honeypot Farming: Setup Modern Honey Network](https://medium.com/@theroxyd/honeypot-farming-setup-mhn-f07d241fcac6)
 
 [honeyLambda](https://github.com/0x4D31/honeyLambda)
 * a simple, serverless application designed to create and monitor URL {honey}tokens, on top of AWS Lambda and Amazon API Gateway

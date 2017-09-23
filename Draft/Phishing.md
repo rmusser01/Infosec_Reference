@@ -17,7 +17,13 @@ TOC
 
 
 [Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
+[Outlook and Exchange for the Bad Guys Nick Landers](https://www.youtube.com/watch?v=cVhc9VOK5MY)
 
+[Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
+
+[Microsoft Support and Recovery Assistant for Office 365](https://testconnectivity.microsoft.com/)
+
+[Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)
 #### End cull
 
 

@@ -17,7 +17,7 @@ CULL
 
 #### sort
 
- | **I Will Kill You** - Chris Rock(Defcon23)| https://www.youtube.com/watch?v=9FdHq3WfJg
+
 http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 
 #### end sort
@@ -50,9 +50,7 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 
 
 ### <a name="books">Books</a>
-
-Paul Ekmans research
-
+Books
 * [Toastmaster's guide to body language](http://westsidetoastmasters.com/resources/book_of_body_language/toc.html)
 * Miss Manners Guide to Excellent Manners
 * [Influence: Science and Practice](https://en.wikipedia.org/wiki/Influence:_Science_and_Practice)
@@ -114,7 +112,7 @@ Paul Ekmans research
 [Beyond Social Engineering: Tools for Reinventing Yourself - Defcon14](https://www.youtube.com/watch?v=S-FPJ6lpRYU)
 * Managing multiple modular identities is not a trivial task. But that's what the technologies and politics of Now demand. These tools will enable you to create personas at a deep level, then link them into a seamless life. 	
 
-| **Pwning People Personally** - Josh Schwartz | https://www.youtube.com/watch?v=T2Ha-ZLZTz0
+[Pwning People Personally - Josh Schwartz](https://www.youtube.com/watch?v=T2Ha-ZLZTz0)
 
 [Area41 2016: Dominique-Cédric Brack: Professional Social Engineering](https://youtu.be/NcpmhsSVzuM)
 
@@ -158,6 +156,7 @@ Paul Ekmans research
 ["Humans, right?" Soft Skills in Security - Ariel Robinson](http://www.irongeek.com/i.php?page=videos/bsidesnova2017/200-humans-right-soft-skills-in-security-ariel-robinson)
 * Let's face it: humans ruin everything. They are almost always the weak link in the information security chain, between their susceptibility to social engineering, rejection of security threats, and sheer laziness. You can make the best security tool in the business, but if a human doesn't use it right, well, you might as well leave your passwords on a sticky note on your-- wait a minute. Yes, humans suck at information security. But we don't make it easy. Infosec is incredibly inaccessible to your average user. Just ask me: I am one. We can't change humans (or get rid of them, no matter how much we might want to), but we can change information security. We can leverage insights from non-technical disciplines such as cognitive science, human-centered design, strategic communications, and psychology. Or we can keep hitting our heads against our desktops. As a professional communicator and bridge builder, help me help you. To make security work, we have to make it easy. For humans.
 
+[**I Will Kill You** - Chris Rock(Defcon23)](https://www.youtube.com/watch?v=9FdHq3WfJg)
 
 
 

@@ -29,6 +29,8 @@
 http://www.scriptjunkie.us/2013/06/fixing-pass-the-hash-and-other-problems/
 
 
+[Analyzing Malicious Documents Cheat Sheet](https://zeltser.com/analyzing-malicious-documents/)
+
 https://www.dsinternals.com/en/
 
 [Monit](https://mmonit.com/monit/)
@@ -108,6 +110,12 @@ http://www.leeholmes.com/blog/2016/10/22/more-detecting-obfuscated-powershell/
 The Hitchhiker's Guide to SQL Injection prevention - https://phpdelusions.net/sql_injection
 
 
+[Amazon S3 Bucket Public Access Considerations](https://aws.amazon.com/articles/5050)
+
+[Filenames and Pathnames in Shell: How to do it Correctly](https://www.dwheeler.com/essays/filenames-in-shell.html)
+
+[Threats and Countermeasures Guide: Security Settings in Windows Server 2008 R2 and Windows 7 - technet](https://technet.microsoft.com/en-us/library/hh125921.aspx)
+
 
 [Securi-Tay 2017 - Advanced Attack Detection](https://www.youtube.com/watch?v=ihElrBBJQo8)
 * 
@@ -117,6 +125,7 @@ The Hitchhiker's Guide to SQL Injection prevention - https://phpdelusions.net/sq
 
 [Securing Windows Workstations: Developing a Secure Baseline](https://adsecurity.org/?p=3299)
 
+[PowerShell Security at Enterprise Customers - msdn](https://blogs.msdn.microsoft.com/daviddasneves/2017/05/25/powershell-security-at-enterprise-customers/)
 
 [Assimilator](https://github.com/videlanicolas/assimilator)
 * Automatic firewall rule orchestator.
@@ -149,14 +158,19 @@ The Hitchhiker's Guide to SQL Injection prevention - https://phpdelusions.net/sq
 * Explore all the tasks (processes) running on your Mac with TaskExplorer. 
 
 
+[Password Policy - technet](https://technet.microsoft.com/en-us/library/hh994572.aspx)
 
+[Account lockout threshold - technet](https://technet.microsoft.com/en-us/library/hh994574.aspx)
 
+[Guide to Application Whitelisting - NIST Special Publication 800 - 167](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-167.pdf)
 
+[Script Rules in AppLocker - technet](https://technet.microsoft.com/en-us/library/ee460958.aspx)
 
+[DLL Rules in AppLocker](https://technet.microsoft.com/en-us/library/ee460947.aspx)
 
-
-
-
+[Microsoft Security Advisory 2871997](https://technet.microsoft.com/library/security/2871997)
+* [Microsoft Security Advisory: Update to improve credentials protection and management: May 13, 2014](https://support.microsoft.com/en-us/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-a)
+[Windows Defender Device Guard deployment guide - docs ms](https://docs.microsoft.com/en-us/windows/device-security/device-guard/device-guard-deployment-guide)
 
 
 ### Active Directory
@@ -164,3 +178,13 @@ The Hitchhiker's Guide to SQL Injection prevention - https://phpdelusions.net/sq
 
 
 
+
+
+
+
+### OS X
+[netman](https://github.com/iadgov/netman)
+* A userland network manager with monitoring and limiting capabilities for macOS.
+
+[netfil](https://github.com/iadgov/netfil)
+* A kernel network manager with monitoring and limiting capabilities for macOS.

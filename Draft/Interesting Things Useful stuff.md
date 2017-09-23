@@ -52,6 +52,11 @@ http://spth.virii.lu/articles.htm
 [Delta Copy](http://www.aboutmyip.com/AboutMyXApp/DeltaCopy.jsp)
 * In technical terms, DeltaCopy is a "Windows Friendly" wrapper around the Rsync program, currently maintained by Wayne Davison. "rsync" is primarily designed for Unix/Linux/BSD systems. Although ports are available for Windows, they typically require downloading Cygwin libraries and manual configuration. 
 
+[what3words](https://what3words.com/about/)
+* what3words provides a precise and incredibly simple way to talk about location. We have divided the world into a grid of 3m x 3m squares and assigned each one a unique 3 word address.
+
+[Windows Firewall Control - Managing Windows Firewall is now easier than ever](https://www.binisoft.org/wfc.php)
+
 #### End Sort
 
 
@@ -189,7 +194,8 @@ http://spth.virii.lu/articles.htm
 
 [Drone Survival Guide](http://dronesurvivalguide.org)
 
-
+[Digital Show & Tell - xiph.org](https://xiph.org/video/vid2.shtml)
+* Continuing the "firehose" tradition of maximum information density, Xiph.Org's second video on digital media explores multiple facets of digital audio signals and how they really behave in the real world.
 
 
 
@@ -289,6 +295,10 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 [Pwning pwners like a n00b](https://www.youtube.com/watch?v=E8O8bB3I3i0)
 * Cybercrime, blackhat hackers and some Ukrainians. If that doesn’t catch your attention, then stop reading. Follow the story of how stupid mistakes, OPSEC fails, and someone with a little too much time on his hands was able to completely dismantle a spamming and webshell enterprise using really simple skills and techniques you could pick up in a week. Did we mention that d0x were had as well? This talk will be an in-depth examination at the investigation and exploitation process involved. 
 
+[Money Makes Money: How To Buy An ATM And What You Can Do With It by Leigh Ann Galloway - BSides Manchester2017](https://www.youtube.com/watch?v=0HbLQAGS6no&index=8&list=PLcgqQkap1lNrOBNCXqpPqpPAqckxv0XhP)
+
+[(In)Outsider Trading – Hacking stocks using public information and (influence) - Robert Len - BSides CapeTown16](https://www.youtube.com/watch?v=sfHeguTEkuE)
+*  This talk will take a look at how inadvertently leaked technical information from businesses, can be used to successfully trade stocks. This results in making huge profits. We look at different methods of influencing the stock market, such as DDOS attacks (at critical time periods) and simple techniques such as Phish-baiting CEO’s to acquire sensitive, relevant information that can be applied in the real world to make massive gains in profit. We will also take a look at historic trends. How previous hacks, breaches and DDOS attacks have affected stock prices and investor confidence over time. Specific reference will be made towards listed South African companies (Or a particular listed SA company) and a POC will hopefully be completed by the presentation date. 
 
 
 

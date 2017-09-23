@@ -34,6 +34,27 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [MQTT](http://mqtt.org/)
 * MQTT is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. 
+
+[Enteletaor](https://github.com/cr0hn/enteletaor)
+* Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.
+
+
+[Nmap (XML) Parser documentation](https://nmap-parser.readthedocs.io/en/latest/)
+
+
+[OpenSSH User Enumeration Time-Based Attack](http://seclists.org/fulldisclosure/2013/Jul/88)
+
+[Collection of Symantec Endpoint Protection Vulnerabilities + some exploits](http://codewhitesec.blogspot.nl/2015/07/symantec-endpoint-protection.html)
+ 
+[reGeorg](https://github.com/sensepost/reGeorg)
+* The successor to reDuh, pwn a bastion webserver and create SOCKS proxies through the DMZ. Pivot and pwn.
+
+[NfSpy](https://github.com/bonsaiviking/NfSpy)
+* NfSpy is a Python library for automating the falsification of NFS credentials when mounting an NFS share.
+
+
+
+
 ##### sort end
 
 
@@ -42,7 +63,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 * Pivoting Section
 * Add RFCs
 * Add sslscan/similar
-
+* IPMI section
 
 
 
@@ -58,8 +79,6 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 [NSEInfo](https://github.com/christophetd/nmap-nse-info/blob/master/README.md)
 * NSEInfo is a tool to interactively search through nmap's NSE scripts.
-
-[A Curated list of assigned ports relevant to pen testing](http://www.vulnerabilityassessment.co.uk/ports.htm)
 
 [pynessus](https://github.com/rmusser01/pynessus)
 * Python Parser for Nessus Output
@@ -297,13 +316,27 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 [DNSEnum](https://github.com/fwaeytens/dnsenum)
 * Multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks.
 
+[DNS Reference Information - technet](https://technet.microsoft.com/en-us/library/dd197499(v=ws.10).aspx)
+
+[DNS Records: an Introduction](https://www.linode.com/docs/networking/dns/dns-records-an-introduction)
+
+[DNS Cache Snooping or Snooping the Cache for Fun and Profit - Luis Grangeia](http://cs.unc.edu/~fabian/course_papers/cache_snooping.pdf)
+
+[nsec3map](https://github.com/anonion0/nsec3map)
+* a tool to enumerate the resource records of a DNS zone using its DNSSEC NSEC or NSEC3 chain
+
+
+
+
+
 
 
 ------------
 ### D/DOS
 
 
-
+[Davoset](https://github.com/MustLive/DAVOSET) 
+* DAVOSET - it is console (command line) tool for conducting DDoS attacks on the sites via Abuse of Functionality and XML External Entities vulnerabilities at other sites.
 
 
 
@@ -376,7 +409,8 @@ Veil Tutorials:
 
 
 
-
+### IPMI
+[Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)
 
 
 
@@ -402,7 +436,7 @@ IPv6: Basic Attacks and Defences - Christopher Werny[TROOPERS15]
 [IPv6 Local Neighbor Discovery Using Router Advertisement](https://www.rapid7.com/db/modules/auxiliary/scanner/discovery/ipv6_neighbor_router_advertisement)
 * Send a spoofed router advertisement with high priority to force hosts to start the IPv6 address auto-config. Monitor for IPv6 host advertisements, and try to guess the link-local address by concatinating the prefix, and the host portion of the IPv6 address. Use NDP host solicitation to determine if the IP address is valid'
 
-
+[IPv6 - Playing with IPv6 for fun and profit](https://github.com/zbetcheckin/IPv6)
 
 
 
@@ -493,6 +527,9 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [CloudFail](https://github.com/m0rtem/CloudFail)
 * CloudFail is a tactical reconnaissance tool which aims to gather enough information about a target protected by CloudFlare in the hopes of discovering the location of the server.
 
+[HatCloud](https://github.com/HatBashBR/HatCloud)
+* HatCloud build in Ruby. It makes bypass in CloudFlare for discover real IP. This can be useful if you need test your server and website. Testing your protection against Ddos (Denial of Service) or Dos. CloudFlare is services and distributed domain name server services, sitting between the visitor and the Cloudflare user's hosting provider, acting as a reverse proxy for websites. Your network protects, speeds up and improves availability for a website or the mobile application with a DNS change.
+
 [discover - Kali Scripts](https://github.com/leebaird/discover)
 * For use with Kali Linux - custom bash scripts used to automate various portions of a pentest.
 
@@ -510,9 +547,12 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [OnionScan](https://github.com/s-rah/onionscan)
 * [What OnionScan Scans for](https://github.com/s-rah/onionscan/blob/master/doc/what-is-scanned-for.md)
 
+[Ever wanted to scan the internet in a few hours?](http://blog.erratasec.com/2013/10/faq-from-where-can-i-scan-internet.html)
 
+[device-pharmer](https://github.com/DanMcInerney/device-pharmer)
+* Opens 1K+ IPs or Shodan search results and attempts to login 
 
-
+[Adding your protocol to Masscan](http://blog.erratasec.com/2014/11/adding-protocols-to-masscan.html)
 
 
 
@@ -620,7 +660,8 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 [Simple Network Management Pwnd](http://www.irongeek.com/i.php?page=videos/derbycon4/t221-simple-network-management-pwnd-deral-heiland-and-matthew-kienow)
 
-
+[Cisc0wn - Cisco SNMP Script](https://github.com/nccgroup/cisco-SNMP-enumeration)
+* Automated Cisco SNMP Enumeration, Brute Force, Configuration Download and Password Cracking
 
 
 ------------
@@ -630,6 +671,23 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 [bluebox-ng](https://github.com/jesusprubio/bluebox-ng)
 * Pentesting framework using Node.js powers, focused in VoIP.
+
+
+
+
+
+
+--------------
+#### SSL/TLS
+
+
+[testssl.sh](https://github.com/drwetter/testssl.sh)
+* testssl.sh is a free command line tool which checks a server's service on any port for the support of TLS/SSL ciphers, protocols as well as some cryptographic flaws.
+
+[SSL & TLS Penetration Testing [Definitive Guide]](https://www.aptive.co.uk/blog/tls-ssl-security-testing/)
+
+[ SSL/TLS and PKI History ](https://www.feistyduck.com/ssl-tls-and-pki-history/)
+*  A comprehensive history of the most important events that shaped the SSL/TLS and PKI ecosystem. Based on Bulletproof SSL and TLS, by Ivan Ristić.
 
 
 
@@ -738,6 +796,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 [Use DHCP to detect UEFI or Legacy BIOS system and PXE boot to SCCM](http://www.itfaq.dk/2016/07/27/use-dhcp-to-detect-uefi-or-legacy-bios-system-and-pxe-boot-to-sccm/)
 
+[Too Many Cooks; Exploiting the Internet of Tr-069](http://mis.fortunecook.ie/) 
 
 
 

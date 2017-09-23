@@ -22,40 +22,19 @@
 
 #### Sort
 
-Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11).aspx?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&iid=22f4306f9238443891cea105281cfd3f&uid=150127534&nid=244+289476616)
-
-[Windows Interactive Logon Architecture - technet](https://technet.microsoft.com/en-us/library/ff404303(v=ws.10))
-
-[Credential Providers in Windows 10 - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/mt158211(v=vs.85).aspx)
-
-[Registering Network Providers and Credential Managers - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379389(v=vs.85).aspx)
+[Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11).aspx?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&iid=22f4306f9238443891cea105281cfd3f&uid=150127534&nid=244+289476616)
 
 [Authentication Registry Keys - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374737(v=vs.85).aspx)
 * When it installs a network provider, your application should create the registry keys and values described in this topic. These keys and values provide information to the MPR about the network providers installed on the system. The MPR checks these keys when it starts and loads the network provider DLLs that it finds.
 
-[ICredentialProvider interface - msdn](https://msdn.microsoft.com/en-us/library/bb776042(v=vs.85).aspx)
-* Exposes methods used in the setup and manipulation of a credential provider. All credential providers must implement this interface.
-
-[Custom Credential Provider for Password Reset - blogs.technet](https://blogs.technet.microsoft.com/aho/2009/11/14/custom-credential-provider-for-password-reset/)
-
 [](http://archive.msdn.microsoft.com/ShellRevealed/Release/ProjectReleases.aspx?ReleaseId=2871)
 
-[V2 Credential Provider Sample - code.msdn](https://code.msdn.microsoft.com/windowsapps/V2-Credential-Provider-7549a730)
-* Demonstrates how to build a v2 credential provider that makes use of the new capabilities introduced to credential provider framework in Windows 8 and Windows 8.1.
-
-[Starting to build your own Credential Provider](https://blogs.msmvps.com/alunj/2011/02/21/starting-to-build-your-own-credential-provider/)
-* If you’re starting to work on a Credential Provider (CredProv or CP, for short) for Windows Vista, Windows Server 2008, Windows Server 2008 R2 or Windows 7, there are a few steps I would strongly recommend you take, because it will make life easier for you.
-
 [BCDEdit /dbgsettings - msdn](https://msdn.microsoft.com/en-us/library/windows/hardware/ff542187(v=vs.85).aspx)
-
-[Winlogon and Credential Providers](https://msdn.microsoft.com/en-us/library/windows/desktop/bb648647(v=vs.85).aspx)
-* Winlogon is the Windows module that performs interactive logon for a logon session. Winlogon behavior can be customized by implementing and registering a Credential Provider.
-
 
 #### End Sort
 
 
-
+---------------------
 ## <a name="general">General Internals</a>
 [C Function Call Conventions and the Stack](https://archive.is/o2nD5)
 
@@ -69,9 +48,11 @@ Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11)
 
 [duartes.org - internals](http://duartes.org/gustavo/blog/category/internals/)
 
+[The little book about OS development](https://littleosbook.github.io/)
 
+[How to Make a Computer Operating System in C++](https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System)
 
-
+---------------------
 ## <a name="winref">Windows Reference</a>
 
 ### <a name="Winternals">Windows Internals</a>
@@ -97,20 +78,47 @@ Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11)
 
 
 
-
+---------------------
 #### Access Control
 
 [Mandatory Integrity Control](https://msdn.microsoft.com/en-gb/library/windows/desktop/bb648648(v=vs.85).aspx)
 
 [Windows Access Control Demystified](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=E1A09F166B29C17D2CD38C70A02576E4?doi=10.1.1.88.1930&rep=rep1&type=pdf)
 
-
+---------------------
 ##### App Containers
 [Demystifying AppContainers in Windows 8 (Part I)](https://blog.nextxpert.com/2013/01/31/demystifying-appcontainers-in-windows-8-part-i/)
 
 [AppContainer Isolation](https://msdn.microsoft.com/en-us/library/windows/desktop/mt595898(v=vs.85).aspx)
 
 
+
+#### Credential Provider
+
+[Credential Providers in Windows 10 - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/mt158211(v=vs.85).aspx)
+
+[ICredentialProvider interface - msdn](https://msdn.microsoft.com/en-us/library/bb776042(v=vs.85).aspx)
+* Exposes methods used in the setup and manipulation of a credential provider. All credential providers must implement this interface.
+
+
+[Windows Interactive Logon Architecture - technet](https://technet.microsoft.com/en-us/library/ff404303(v=ws.10))
+
+[Winlogon and Credential Providers](https://msdn.microsoft.com/en-us/library/windows/desktop/bb648647(v=vs.85).aspx)
+* Winlogon is the Windows module that performs interactive logon for a logon session. Winlogon behavior can be customized by implementing and registering a Credential Provider.
+
+[Registering Network Providers and Credential Managers - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379389(v=vs.85).aspx)
+
+[V2 Credential Provider Sample - code.msdn](https://code.msdn.microsoft.com/windowsapps/V2-Credential-Provider-7549a730)
+* Demonstrates how to build a v2 credential provider that makes use of the new capabilities introduced to credential provider framework in Windows 8 and Windows 8.1.
+
+[Custom Credential Provider for Password Reset - blogs.technet](https://blogs.technet.microsoft.com/aho/2009/11/14/custom-credential-provider-for-password-reset/)
+
+[Starting to build your own Credential Provider](https://blogs.msmvps.com/alunj/2011/02/21/starting-to-build-your-own-credential-provider/)
+* If you’re starting to work on a Credential Provider (CredProv or CP, for short) for Windows Vista, Windows Server 2008, Windows Server 2008 R2 or Windows 7, there are a few steps I would strongly recommend you take, because it will make life easier for you.
+
+
+
+---------------------
 #### Documentation
 
 [AppInit_DLLs in Windows 7 and Windows Server 2008 R2](https://msdn.microsoft.com/en-us/library/windows/desktop/dd744762(v=vs.85).aspx)
@@ -125,6 +133,9 @@ Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11)
 
 
 
+
+
+---------------------
 ##### Exploit Mitigations
 [Compiler Security Checks In Depth - MSDN Library](https://msdn.microsoft.com/library/aa290051.aspx)
 
@@ -138,6 +149,8 @@ Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11)
 
 
 
+
+---------------------
 ##### Memory
 
 [Pushing the Limits of Windows: Virtual Memory](http://blogs.technet.com/b/markrussinovich/archive/2008/11/17/3155406.aspx)
@@ -148,6 +161,8 @@ Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11)
 
 
 
+
+---------------------
 ##### Networking
 
 [WinHTTP](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382925%28v=vs.85%29.aspx)
@@ -158,6 +173,9 @@ Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11)
 
 
 
+
+
+---------------------
 ##### PE32/Processes/Threads/etc
 [About Processes and Threads](https://msdn.microsoft.com/en-us/library/windows/desktop/ms681917%28v=vs.85%29.aspx)
 
@@ -187,13 +205,42 @@ Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11)
 [Processes, Threads, and Jobs in the Windows Operating System](https://www.microsoftpressstore.com/articles/article.aspx?p=2233328&seqNum=2)
 
 
+
+
+---------------------
 ##### Registry
 
 [What registry entries are needed to register a COM object.](https://blogs.msdn.microsoft.com/larryosterman/2006/01/11/what-registry-entries-are-needed-to-register-a-com-object/)
 
 
+--------------
+### Symbol Files
+[Process Security and Access Rights - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/ms684880%28v=vs.85%29.aspx)
+
+[OpenProcessToken function - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379295%28v=vs.85%29.aspx)
+
+[Symbols and Symbol Files - docs ms](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/symbols-and-symbol-files)
+
+[Symbol Files - docs ms](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363368(v=vs.85).aspx)
+
+[microsoft-pdb](https://github.com/Microsoft/microsoft-pdb)
+* This repo contains information from Microsoft about the PDB (Program Database) Symbol File format.
+
+[Public and Private Symbols - docs ms](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/public-and-private-symbols)
+
+[How to Inspect the Content of a Program Database (PDB) File](https://www.codeproject.com/Articles/37456/How-To-Inspect-the-Content-of-a-Program-Database-P)
+
+[microsoft-pdb](https://github.com/Microsoft/microsoft-pdb)
+* This repo contains information from Microsoft about the PDB (Program Database) Symbol File format.
+
+[Symbol Files](https://msdn.microsoft.com/en-us/library/windows/desktop/aa363368(v=vs.85).aspx)
+* Normally, debugging information is stored in a symbol file separate from the executable. The implementation of this debugging information has changed over the years, and the following documentation will provide guidance regarding these various implementations .
 
 
+
+
+
+---------------------
 ##### System Features
 
 [Windows - Application Shims](https://technet.microsoft.com/en-us/library/dd837644%28v=ws.10%29.aspx)
@@ -211,7 +258,7 @@ Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11)
 
 
 
-
+---------------------
 #### Writeups
 
 [Preventing the Exploitation of Structured Exception Handler (SEH) Overwrites with SEHOP](https://blogs.technet.microsoft.com/srd/2009/02/02/preventing-the-exploitation-of-structured-exception-handler-seh-overwrites-with-sehop/)
@@ -267,7 +314,7 @@ Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11)
 
 
 
-
+---------------------
 #### Presentations & Talks
 
 [Windows 8 Security and ARM](http://2012.ruxconbreakpoint.com/assets/Uploads/bpx/alex-breakpoint2012.pdf)
@@ -299,7 +346,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
-
+---------------------
 ### Active Directory
 
 [Active Directory Architecture](https://technet.microsoft.com/en-us/library/bb727030.aspx)
@@ -312,7 +359,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
-
+---------------------
 #### <a name="kerberos">Kerberos Related</a>
 [Kerberos Delegation, SPNs and More...](https://www.coresecurity.com/blog/kerberos-delegation-spns-and-more)
 
@@ -321,7 +368,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
-
+---------------------
 ### <a name="linux">Linux General</a>
 
 [Introduction to Linux - Machtelt Garrels](http://www.tldp.org/LDP/intro-linux/html/intro-linux.html)
@@ -335,7 +382,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 [pagexec - GRSEC](https://pax.grsecurity.net/docs/pageexec.txt)
 
 
-
+---------------------
 ### <a name="linux">Linux Internals</a>
 
 [linux-insides](https://www.gitbook.com/book/0xax/linux-insides/details)
@@ -344,9 +391,11 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 [Introduction to Linux - Machtelt Garrels](http://www.tldp.org/LDP/intro-linux/html/intro-linux.html)
 * Excellent doc covering every aspect of linux. Deserves at least 1 skim through.
 
+[Linux Kernel Security Subsystem Wiki](https://kernsec.org/wiki/index.php/Main_Page)
+* This is the Linux kernel security subsystem wiki, a resource for developers and users. 
 
 
-
+---------------------
 #### Compilers/Exploit Mitigations
 
 [Linkers and Loaders - Book](http://www.iecc.com/linker/)
@@ -358,13 +407,13 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
-
-#### Driversf
+---------------------
+#### Drivers
 
 [Linux Device Drivers book](http://www.makelinux.net/ldd3/)
 
 
-
+---------------------
 #### FileSystems
 
 * Linux Filesystem infographic
@@ -372,7 +421,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 * [Part 2](http://i.imgur.com/S5Ds2.jpg)
 
 
-
+---------------------
 #### Kernel
 
 [Linux Kernel Explanation/Walk through](http://www.faqs.org/docs/Linux-HOWTO/KernelAnalysis-HOWTO.html)
@@ -389,7 +438,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
-
+---------------------
 #### Memory
 
 [Understanding glibc malloc](https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/)
@@ -409,6 +458,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
+---------------------
 #### Process Structure/Syscalls
 
 [FlexSC: Flexible System Call Scheduling with Exception-Less System Calls](https://www.cs.cmu.edu/~chensm/Big_Data_reading_group/papers/flexsc-osdi10.pdf)
@@ -420,7 +470,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
-
+---------------------
 #### ELF
 
 [The 101 of ELF Binaries on Linux: Understanding and Analysis](https://linux-audit.com/elf-binaries-on-linux-understanding-and-analysis/)
@@ -431,7 +481,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
-
+---------------------
 #### X 
 
 [X Window System Explained](https://magcius.github.io/xplain/article/index.html)
@@ -457,7 +507,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
-
+---------------------
 ### <a name="ARM">ARM References</a>
 
 
@@ -465,14 +515,12 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 [A Detailed Analysis of Contemporary ARM and x86 Architectures](http://research.cs.wisc.edu/vertical/papers/2013/isa-power-struggles-tr.pdf)
 * RISC vs. CISC wars raged in the 1980s when chip area andprocessor design complexity were the primary constraints anddesktops and servers exclusively dominated the computing land-scape. Today, energy and power are the primary design con-straints and the computing landscape is significantly different:growth in tablets and smartphones running ARM (a RISC ISA)is surpassing that of desktops and laptops running x86 (a CISCISA). Further, the traditionally low-power ARM ISA is enter-ing the high-performance server market, while the traditionallyhigh-performance x86 ISA is entering the mobile low-power de-vice market. Thus, the question of whether ISA plays an intrinsicrole in performance or energy efficiency is becoming important,and we seek to answer this question through a detailed mea-surement based study on real hardware running real applica-tions. We analyze measurements on the ARM Cortex-A8 andCortex-A9 and Intel Atom and Sandybridge i7 microprocessorsover workloads spanning mobile, desktop, and server comput-ing. Our methodical investigation demonstrates the role of ISAin modern microprocessors’ performance and energy efficiency.We find that ARM and x86 processors are simply engineeringdesign points optimized for different levels of performance, andthere is nothing fundamentally more energy efficient in one ISAclass or the other. The ISA being RISC or CISC seems irrelevant.
 
-
-
 [ARM Documentation](http://infocenter.arm.com/help/index.jsp?noscript=1)
 
 
 
 
-
+---------------------
 ### <a name="osx">OS X Internals</a>
 
 [Instruments - OS X system analysis](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html)
@@ -483,7 +531,7 @@ WinPrefetchView is a small utility that reads the Prefetch files stored in your 
 
 
 
-
+---------------------
 ### Other 
 [Intel SGX Explained](https://eprint.iacr.org/2016/086.pdf)
 * This paper analyzes Intel SGX, based on the 3 pa- pers [ 14 , 78 , 137 ] that introduced it, on the Intel Software Developer’s Manual [ 100 ] (which supersedes the SGX manuals [ 94 , 98 ]), on an ISCA 2015 tutorial [ 102 ], and on two patents [ 108 , 136 ]. We use the papers, reference manuals, and tutorial as primary data sources, and only draw on the patents to fill in missing information. This  paper’s  contributions  are  a  summary  of  the Intel-specific architectural and micro-architectural details needed to understand SGX, a detailed and structured pre- sentation of the publicly available information on SGX, a series of intelligent guesses about some important but undocumented aspects of SGX, and an analysis of SGX’s security properties.

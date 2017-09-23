@@ -32,6 +32,16 @@ http://en.cppreference.com/w/c
 * 5. Oh, I see.
 * 6. How did that ever work?
 
+[x86 Call/Return Protocol](http://pages.cs.wisc.edu/~remzi/Classes/354/Fall2012/Handouts/Handout-CallReturn.pdf)
+
+[Diving deep into Python – the not-so-obvious language parts](http://sebastianraschka.com/Articles/2014_deep_python.html)
+
+
+
+[PEP: 551 Title: Security transparency in the Python runtime Version](https://github.com/python/peps/blob/cd795ec53c939e5b40808bb9d7a80c428c85dd52/pep-0551.rst)
+
+[Build an API under 30 lines of code with Python and Flask](https://impythonist.wordpress.com/2015/07/12/build-an-api-under-30-lines-of-code-with-python-and-flask/
+
 #### End Cull
 
 
@@ -121,6 +131,10 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 
 [PumaScan](https://github.com/pumasecurity/puma-scan)
 * provides real time, continuous source code analysis
+
+[How to find 56 potential vulnerabilities in FreeBSD code in one evening](https://www.viva64.com/en/b/0496/)
+
+
 
 
 
@@ -299,6 +313,9 @@ https://en.wikipedia.org/wiki/Java_(programming_language)
 [How to C in 2016](https://matt.sh/howto-c)
 * [A critique of "How to C in 2016" by Matt](https://github.com/Keith-S-Thompson/how-to-c-response)
 
+[C Right-Left Rule](http://ieng9.ucsd.edu/~cs30x/rt_lt.rule.html)
+
+
 
 
 #### Reference
@@ -311,6 +328,10 @@ https://en.wikipedia.org/wiki/Java_(programming_language)
 [What a C programmer should know about memory](http://marek.vavrusa.com/c/memory/2015/02/20/memory/)
 
 [Cplusplus.com](http://www.cplusplus.com/)
+
+
+
+
 
 #### Tools
 
@@ -439,6 +460,25 @@ https://en.wikipedia.org/wiki/Java_(programming_language)
 
 
 
+
+
+
+
+
+----------
+### .NET
+
+[.NET serialiception](https://blog.scrt.ch/2016/05/12/net-serialiception/)
+
+[.Net The Managed Heap and Garbage Collection in the CLR](https://www.microsoftpressstore.com/articles/article.aspx?p=2224054)
+
+
+
+
+
+
+
+
 ----------
 ### <a name="power">Powershell</a>
 
@@ -494,6 +534,8 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 [awesome-php - github awesome-lists](https://github.com/ziadoz/awesome-php)
 
+[Static analysis tools for PHP](https://github.com/exakat/php-static-analysis-tools)
+* A reviewed list of useful PHP static analysis tools
 
 
 ----------
@@ -502,6 +544,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 [Python 3.6.2 documentation](https://docs.python.org/3/)
 
 [Python 2.7 documentation](https://docs.python.org/2.7/)
+
 
 
 

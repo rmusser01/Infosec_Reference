@@ -19,19 +19,19 @@
 
 
 https://conversations.im/xeps/multi-end.html
-
-
 ### End Cull
 
 
 
 ### <a name="general">General Information</a>
 
+
+
 [Quick'n easy gpg cheatsheet](http://irtfweb.ifa.hawaii.edu/%7Elockhart/gpg/)
 
 [Website detailing various crypto laws around world](http://www.cryptolaw.org/)
 
-[Primer on Zero-Knowledge Proofs](http://blog.cryptographyengineering.com/2014/11/zero-knowledge-proofs-illustrated-primer.html?m=1)
+[Snake Oil Crypto Competition](https://snakeoil.cr.yp.to/)
 
 [XOR Bitwise Operations Explained - Khan Academy](https://www.khanacademy.org/computing/computer-science/cryptography/ciphers/a/xor-bitwise-operation)
 
@@ -39,11 +39,13 @@ https://conversations.im/xeps/multi-end.html
 
 [Differential Cryptanalysis for Dummies - Jon King](https://www.youtube.com/watch?v=xav-GUO_o4s&feature=youtu.be)
 
-[Snake Oil Crypto Competition](https://snakeoil.cr.yp.to/)
-
 [Lifetimes of cryptographic hash functions](http://valerieaurora.org/hash.html)
 
 [Top 10 Developer Crypto Mistakes](https://littlemaninmyhead.wordpress.com/2017/04/22/top-10-developer-crypto-mistakes/amp/)
+
+[SSL/TLS and PKI History ](https://www.feistyduck.com/ssl-tls-and-pki-history/)
+*  A comprehensive history of the most important events that shaped the SSL/TLS and PKI ecosystem. Based on Bulletproof SSL and TLS, by Ivan Ristić.
+
 
 
 
@@ -57,7 +59,9 @@ https://conversations.im/xeps/multi-end.html
 [A Graduate Course in Applied Cryptography - Dan Boneh and Victor Shoup](http://toc.cryptobook.us/)
 * Version 0.3 - posted Dec. 9, 2016
 
+[Primer on Zero-Knowledge Proofs](http://blog.cryptographyengineering.com/2014/11/zero-knowledge-proofs-illustrated-primer.html?m=1)
 
+[Hyper-encryption - Wikipedia](https://en.wikipedia.org/wiki/Hyper-encryption)
 
 
 
@@ -78,6 +82,9 @@ https://conversations.im/xeps/multi-end.html
 
 [A Formal Security Analysis of the Signal Messaging Protocol - Oct2016](https://eprint.iacr.org/2016/1013.pdf)
 
+[Automated Padding Oracle Attacks with PadBuster](https://blog.gdssecurity.com/labs/2010/9/14/automated-padding-oracle-attacks-with-padbuster.html)
+
+[PadBuster v0.3 and the .NET Padding Oracle Attack](https://blog.gdssecurity.com/labs/2010/10/4/padbuster-v03-and-the-net-padding-oracle-attack.html)
 
 
 
@@ -181,6 +188,18 @@ https://conversations.im/xeps/multi-end.html
 * Real-time Transfer Protocol (RTP) is used by nearly all Voice-over-IP systems to provide the audio channel for calls. As such, it provides ample opportunity for the creation of a covert communication channel due to its very nature. While use of steganographic techniques with various audio cover-medium has been extensively researched, most applications of such have been limited to audio cover-medium of a static nature such as WAV or MP3 file audio data. This paper details a common technique for the use of steganography with audio data cover-medium, outlines the problem issues that arise when attempting to use such techniques to establish a full-duplex communications channel within audio data transmitted via an unreliable streaming protocol, and documents solutions to these problems. An implementation of the ideas discussed entitled SteganRTP is included in the reference materials. 
 
 
+### Talks
+
+[Hunting For Vulnerabilities In Signal - Markus Vervier - HITB 2017 AMS](https://www.youtube.com/watch?v=2n9HmllVftA)
+* Signal is the most trusted secure messaging and secure voice application, recommended by Edward Snowden and the Grugq. And indeed Signal uses strong cryptography, relies on a solid system architecture, and you’ve never heard of any vulnerability in its code base. That’s what this talk is about: hunting for vulnerabilities in Signal. We will present vulnerabilities found in the Signal Android client, in the underlying Java libsignal library, and in example usage of the C libsignal library. Our demos will show how these can be used to crash Signal remotely, to bypass the MAC authentication for certain attached files, and to trigger memory corruption bugs. Combined with vulnerabilities in the Android system it is even possible to remotely brick certain Android devices. We will demonstrate how to initiate a permanent boot loop via a single Signal message. We will also describe the general architecture of Signal, its attack surface, the tools you can use to analyze it, and the general threat model for secure mobile communication apps.
+
+
+
+
+
+
+
+
 
 ### <a name="tools">Tools</a>
 
@@ -209,11 +228,21 @@ https://conversations.im/xeps/multi-end.html
 
 [HiVE — Hidden Volume Encryption](http://hive.ccs.neu.edu/#four)
 
+sheep-wolf](https://github.com/silentsignal/sheep-wolf/)
+* Some security tools still stick to MD5 when identifying malware samples years after practical collisions were shown against the algorithm. This can be exploited by first showing these tools a harmless sample (Sheep) and then a malicious one (Wolf) that have the same MD5 hash. Please use this code to test if the security products in your reach use MD5 internally to fingerprint binaries and share your results by issuing a pull request updating the contents of results/!
+
+[pypadbuster](https://github.com/escbar/pypadbuster)
+* A Python version of PadBuster.pl by Gotham Digital Security (GDSSecurity on Github)
+
+[padex](https://github.com/szdavid92/padex)
+* The goal of this challenge is to find a flag contained in an encrypted message. A decryption oracle and the encrypted message is provided. The student should write an application that cracks the cyphertext by abusing the oracle which is vulnerable to the padding attack.
+
 
 
 ### <a name="">Books</a>:
-	Cryptography Engineering
-	Applied Cryptography
+Books:
+* Cryptography Engineering
+* Applied Cryptography
 
 
 ### Crypto Libraries/Protocols

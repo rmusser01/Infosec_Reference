@@ -138,4 +138,7 @@ Wechall
 
 
 
+### Tools handy for CTFs
 
+[pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html)
+* pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing the image data); it can optionally dump almost all of the chunk-level information in the image in human-readable form. For example, it can be used to print the basic statistics about an image (dimensions, bit depth, etc.); to list the color and transparency info in its palette (assuming it has one); or to extract the embedded text annotations. This is a command-line program with batch capabilities.

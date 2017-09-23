@@ -23,11 +23,7 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 * Add list of Sources:
 * UCC - Uniform Commercial Code; DOC - Current Industrial Patents; DMV - Vehicle Ownership applications; Patents - Patent DBs; Operating Licenses/Permits; Trade Journals;
 
-* SWOT - Strengths, Weaknesses, Opportunities, Threats
 
-
-[GlobalFileSearch](https://ftplike.com)
-* An FTP Search Engine that may come in handy.
 #### End cull
 
 
@@ -35,7 +31,8 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 --------------------
 ### General
-
+General
+* SWOT - Strengths, Weaknesses, Opportunities, Threats
 [Open Source Intelligence - Wikipedia](http://en.wikipedia.org/wiki/Open-source_intelligence)
 
 [Intelligence Gathering - PTES](http://www.pentest-standard.org/index.php/Intelligence_Gathering)
@@ -58,6 +55,8 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 [PasteLert](https://www.andrewmohawk.com/pasteLert/)
 * PasteLert is a simple system to search pastebin.com and set up alerts (like google alerts) for pastebin.com entries. This means you will automatically recieve email whenever your term(s) is/are found in new pastebin entries!
+
+[NATO Open Source Intelligence Handbook](http://www.oss.net/dynamaster/file_archive/030201/ca5fb66734f540fbb4f8f6ef759b258c/NATO%20OSINT%20Handbook%20v1.2%20%2d%20Jan%202002.pdf)
 
 
 #### Miscellaneous Sites/Resources
@@ -182,7 +181,8 @@ Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&use
 [TouchGraph SEO Browser](http://www.touchgraph.com/seo)
 * Use this free Java application to explore the connections between related websites.
 
-
+[GlobalFileSearch](https://ftplike.com)
+* An FTP Search Engine that may come in handy.
 
 
 
@@ -396,6 +396,8 @@ when directory browsing is turned off.
 [OneMillionTweetMap](http://onemilliontweetmap.com/)
 * This page maps the last geolocalized tweets delivered by the twitter stream API. ... YES - IN REAL-TIME - and we keep "only" the last one million tweets.
 
+[AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)
+* AWSBucketDump is a tool to quickly enumerate AWS S3 buckets to look for loot. It's similar to a subdomain bruteforcer but is made specifically for S3 buckets and also has some extra features that allow you to grep for delicious files as well as download interesting files if you're not afraid to quickly fill up your hard drive.
 
 
 

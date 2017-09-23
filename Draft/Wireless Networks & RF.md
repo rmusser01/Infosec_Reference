@@ -207,7 +207,7 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 ### <a name="generalswt">General Software Tools</a>
 
-Android IMSI-Catcher Detector (AIMSICD)](https://github.com/SecUpwN/Android-IMSI-Catcher-Detector)
+[Android IMSI-Catcher Detector (AIMSICD)](https://github.com/SecUpwN/Android-IMSI-Catcher-Detector)
 * Android-based project to detect and avoid fake base stations (IMSI-Catchers) in GSM/UMTS Networks.
 
 [Infernal-Twin](https://github.com/entropy1337/infernal-twin)
@@ -219,16 +219,11 @@ Android IMSI-Catcher Detector (AIMSICD)](https://github.com/SecUpwN/Android-IMSI
 [ShinySDR](https://github.com/kpreid/shinysdr)
 * This is the software component of a software-defined radio receiver. When combined with hardware devices such as the USRP, RTL-SDR, or HackRF, it can be used to listen to a wide variety of radio transmissions, and can be extended via plugins to support even more modes.
 
-[Scapy-Radio](https://bitbucket.org/cybertools/scapy-radio/src
-* This tool is a modified version of scapy that aims at providing an quick and efficient pentest tool with RF capabilities.
-A modified version of scapy that can leverage GNU Radio to handle a SDR card
-GNU Radio flow graphs (GRC files) we have build that allows full duplex communication
-GNU Radio blocks we have written to handle several protocols
+[Scapy-Radio](https://bitbucket.org/cybertools/scapy-radio/src)
+* This tool is a modified version of scapy that aims at providing an quick and efficient pentest tool with RF capabilities. A modified version of scapy that can leverage GNU Radio to handle a SDR card. 
 
 [Universal Radio Hacker](https://github.com/jopohl/urh)
 
-[SecBee](https://github.com/Cognosec/SecBee) 
-* SecBee is a ZigBee security testing tool developed by Cognosec. The goal is to enable developers and security testers to test ZigBee implementations for security issues.
 
 [Uni-SDR Link](https://github.com/ms-dev-1/uni-sdr-link/releases)
 * The initial release of Uni-SDR Link. This applications sole purpose is to allow Universal Trunker (aka Unitrunker) to control the tuning frequency of individual VFO's in SDR Console v2. This is achieved by translating Unitrunker Receiver Control commands into a format accepted by SDR Console. Communication occurs over virtual com / serial ports.
@@ -239,9 +234,7 @@ GNU Radio blocks we have written to handle several protocols
 [gr-lora](https://github.com/BastilleResearch/gr-lora)
 * This is an open-source implementation of the LoRa CSS PHY, based on the blind signal analysis conducted by @matt-knight. The original research that guided this implementation may be found at https://github.com/matt-knight/research
 
-[Scapy](http://www.secdev.org/projects/scapy/)
-
-
+[An Auditing Tool for Wi-Fi or Wired Ethernet Connections - Matthew Sullivan](https://www.cookiecadger.com/wp-content/uploads/Cookie%20Cadger.pdf)
 
 
 
@@ -383,6 +376,11 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 ### <a name="zwave">Z-Wave</a>
 [Stealthy and Persistent Back Door for Z-Wave Gateways](http://www.irongeek.com/i.php?page=videos/derbycon5/stable18-stealthy-and-persistent-back-door-for-z-wave-gateways-jonathan-fuller-ben-ramsey)
 * Z-Wave is a proprietary wireless protocol that is gaining market share in home automation and security systems. However, very little work has been done to investigate the security implications of these sub-GHz devices. In this talk we review recent work on hacking Z-Wave networks, and introduce a new attack that creates a persistent back door. This attack maintains a stealthy, parallel, and persistent control channel with all Z-Wave devices in the home. We will demonstrate the attack against a commercial Z-Wave security system.
+
+[Honey, I'm Home!! Hacking Z-Wave Home Automation Systems - video](https://www.youtube.com/watch?v=KYaEQhvodc8)
+* [Slides - PDF](https://cybergibbons.com/wp-content/uploads/2014/11/honeyimhome-131001042426-phpapp01.pdf)
+
+
 
 
 

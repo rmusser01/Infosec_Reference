@@ -11,6 +11,8 @@
 
 ##### Cull
 
+
+
 ##### End cull
 
 ### <a name="general">General</a>
@@ -59,7 +61,11 @@
 [Inter VM Data Exfiltration: The Art of Cache Timing Covert Channel on x86 Multi-Core - Etienne Martineau](https://www.youtube.com/watch?v=SGqUGHh3UZM)
 * On x86 multi-core covert channels between co-located Virtual Machine (VM) are real and practical thanks to the architecture that has many imperfections in the way shared resources are isolated. This talk will demonstrate how a non-privileged application from one VM can ex-filtrate data or even establish a reverse shell into a co-located VM using a cache timing covert channel that is totally hidden from the standard access control mechanisms while being able to offer surprisingly high bps at a low error rate. In this talk you’ll learn about the various concepts, techniques and challenges involve in the design of a cache timing covert channel on x86 multi-core such as: X86 shared resources and fundamental concept behind cache line encoding / decoding. Getting around the hardware pre-fetching logic ( without disabling it from the BIOS! ) Abusing the X86 ‘clflush’ instruction. Bi-directional handshake for free! Data persistency and noise. What can be done? Guest to host page table de-obfuscation. The easy way, the VM’s vendors defense and another way to get around it. Phase Lock Loop and high precision inter-VM synchronization. All about timers. At the end of this talk we will go over a working VM to VM reverse shell example as well as some surprising bandwidth measurement results. We will also cover the detection aspect and the potential countermeasure to defeat such a communication channel.
 
+[Bridging the Air Gap Data Exfiltration from Air Gap Networks - DS15](https://www.youtube.com/watch?v=bThJEX4l_Ks)
 
+[Covert Timing Channels Based on HTTP Cache Headers](https://www.youtube.com/watch?v=DOAG3mtz7H4)
+
+[In Plain Sight: The Perfect Exfiltration Technique - Itzik Kotler and Amit Klein - HITB16](https://www.youtube.com/watch?v=T6PscV43C0w)
 
 
 
@@ -97,6 +103,21 @@
 
 [Stunnel](https://www.stunnel.org/index.html)
 * [Stunnel TLS Proxy](https://www.stunnel.org/static/stunnel.html)
+
+[dnsftp](https://github.com/breenmachine/dnsftp)
+* Client/Server scripts to transfer files over DNS. Client scripts are small and only use native tools on the host OS.
+
+[tcpovericmp](https://github.com/Maksadbek/tcpovericmp)
+* TCP implementation over ICMP protocol to bypass firewalls
+
+[icmptunnel](https://github.com/DhavalKapil/icmptunnel)
+* Transparently tunnel your IP traffic through ICMP echo and reply packets.
+
+[Outgoing port tester - http://letmeoutofyour.net/](http://letmeoutofyour.net/)
+
+[Outgoing port tester - portquiz.net](http://portquiz.net/)
+*  This server listens on all TCP ports, allowing you to test any outbound TCP port.
+
 
 
 ### Papers

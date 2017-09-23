@@ -32,6 +32,18 @@ Forensics wiki
 Yelp/Github - OSX Collector - Mass style forensics/management
 hackingexposedcomputerforensicsblog.blogspot.com/2015/02/automating-dfir-how-to-series-on_21.html)
 
+[dotNET_WinDBG](https://github.com/Cisco-Talos/dotNET_WinDBG)
+* This python script is designed to automate .NET analysis with WinDBG. It can be used to analyse a PowerShell script or to unpack a binary packed using a .NET packer.
+
+[Unravelling .NET with the Help of WinDBG - TALOS](http://blog.talosintelligence.com/2017/07/unravelling-net-with-help-of-windbg.html)
+* This article describes:
+  * How to analyse PowerShell scripts by inserting a breakpoint in the .NET API.
+  * How to easily create a script to automatically unpack .NET samples following analysis of the packer logic.
+
+[Jeffrey's Image Metadata Viewer](http://exif.regex.info/exif.cgi)
+
+[Happy DPAPI!](http://blog.digital-forensics.it/2015/01/happy-dpapi.html)
+
 #### End Cull
 
 

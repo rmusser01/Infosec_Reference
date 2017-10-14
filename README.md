@@ -22,7 +22,7 @@ An Information Security Reference That Doesn't Suck
 
 
 ##### This page
-* This page is terrible. It should not be used to navigate for info unless you like self harm. Use [https://rmusser.net/docs](https://rmusser.net/docs]) instead.
+* This page is terrible on mobile. It should not be used to navigate for info unless you like self harm. On mobile, use [https://rmusser.net/docs](https://rmusser.net/docs]).
 * For latest content updates, check here: [Things added since last update](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/things-added.md)
 	* This will have all links added to the other pages sorted according to topic, making it easier to see new stuff.
 * All links on this page should work. Last tested 9/3
@@ -44,9 +44,22 @@ Windows
 * [Windows Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Persistence.md)
 * [Windows Privilege Escalation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Privilege_Escalation.md)
 
-Linux
 
-OS X
+Linux
+* [Linux Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Collection.md)
+* [Linux Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Command_and_Control.md)
+* [Linux Credential Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Credential_Access.md)
+* [Linux Defense Evasion](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Defense_Evasion.md)
+* [Linux Discovery](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Discovery.md)
+* [Linux Exection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Execution.md)
+* [Linux Exfiltration](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Exfiltration.md)
+* [Linux Lateral Movement](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Lateral_Movement.md)
+* [Linux Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Persistence.md)
+* [Linux Privilege Escalation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Privilege_Escalation.md)
+
+Mac/OS X
+
+
 
 #### Normal Categories
 
@@ -66,7 +79,7 @@ OS X
 
 * [Conferences/Recordings](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Conferences.md)
 
-* [Counter Surveillance](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Conferences.md)
+* [Counter Surveillance](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Counter_Surveillance.md)
 
 * [Courses & Training](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Courses_Training.md)
 

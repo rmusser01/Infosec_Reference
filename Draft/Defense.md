@@ -6,7 +6,26 @@
 
 #### In Progress
 
+https://www.malwarearchaeology.com/logging/
+
+https://github.com/iadgov/Secure-Host-Baseline
+
+
+https://criticalinformatics.com/how-i-learned-to-trust-my-shell-microsoft-powershell/?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=7832f4ea811a4bc7b33409dacf81eb7f&uid=150127534&nid=244+281088008
+
+
+
+https://www.blackhillsinfosec.com/build-super-secure-active-directory-infrastructure/
+
+
+https://www.blackhillsinfosec.com/the-creddefense-toolkit/
+
 [Simple WMI Trace Viewer in PowerShell](https://chentiangemalc.wordpress.com/2017/03/24/simple-wmi-trace-viewer-in-powershell/)
+
+
+[ESA-Process-Maturity](https://github.com/Brockway/ESA-Process-Maturity)
+* Tools to measure the maturity of Enterprise Security Architecture processes
+* https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project
 
 [Active Directory: Real Defense for Domain Admins](https://www.irongeek.com/i.php?page=videos/derbycon4/t213-active-directory-real-defense-for-domain-admins-jason-lang)
 * Did your AD recently get owned on a pentest? It’s always fun to see an unknown entry show up in your Domain Admins group (#fail). Come learn how to truly protect your organization’s IT crown jewels from some of the most popular AD attacks. If you’re stuck trying to figure out what to do with null sessions, pass the hash techniques, or protecting your Domain Admins, then you will want to be here.
@@ -19,8 +38,7 @@
 * Just Enough Administration (JEA) is a PowerShell security technology that provides a role based access control platform for anything that can be managed with PowerShell. It enables authorized users to run specific commands in an elevated context on a remote machine, complete with full PowerShell transcription and logging. JEA is included in PowerShell version 5 and higher on Windows 10 and Windows Server 2016, and older OSes with the Windows Management Framework updates.
 
 
-[Detecting DLL Hijacking
- on Windows](http://digital-forensics.sans.org/blog/2015/03/25/detecting-dll-hijacking-on-windows/)
+[Detecting DLL Hijackingon Windows](http://digital-forensics.sans.org/blog/2015/03/25/detecting-dll-hijacking-on-windows/)
 
 [Second section good resource for hardening windows](http://labs.bitdefender.com/2014/11/do-your-bit-to-limit-cryptowall/)
 
@@ -47,6 +65,10 @@ https://media.blackhat.com/us-13/US-13-Duckwall-Pass-the-Hash-Slides.pdf
 
 http://www.grouppolicy.biz/2011/06/best-practices-group-policy-for-wsus/
 
+
+
+[Decryptonite](https://github.com/DecryptoniteTeam/Decryptonite)
+* Decryptonite is a tool that uses heuristics and behavioural analysis to monitor for and stop ransomware.
 
 [BEAMGUN](https://github.com/JLospinoso/beamgun)
 * A rogue-USB-device defeat program for Windows. 
@@ -178,7 +200,11 @@ The Hitchhiker's Guide to SQL Injection prevention - https://phpdelusions.net/sq
 
 
 
+### Baselining
 
+[Measure Boot Performance with the Windows Assessment and Deployment Toolkit](https://blogs.technet.microsoft.com/mspfe/2012/09/19/measure-boot-performance-with-the-windows-assessment-and-deployment-toolkit/)
+
+[Evaluate Fast Startup Using the Assessment Toolkit](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/optimizing-performance-and-responsiveness-exercise-1)
 
 
 

@@ -44,6 +44,25 @@
 [LaZagne](https://github.com/AlessandroZ/LaZagne/blob/master/README.md)
 * The LaZagne project is an open source application used to retrieve lots of passwords stored on a local computer. Each software stores its passwords using different techniques (plaintext, APIs, custom algorithms, databases, etc.). This tool has been developed for the purpose of finding these passwords for the most commonly-used software.
 
+[BrowserGatherer](https://github.com/sekirkity/BrowserGather)
+* Fileless Extraction of Sensitive Browser Information with PowerShell
+
+[SessionGopher](https://github.com/fireeye/SessionGopher)
+* SessionGopher is a PowerShell tool that uses WMI to extract saved session information for remote access tools such as WinSCP, PuTTY, SuperPuTTY, FileZilla, and Microsoft Remote Desktop. It can be run remotely or locally.
+
+[CC_Checker](https://github.com/NetSPI/PS_CC_Checker)
+* CC_Checker cracks credit card hashes with PowerShell.
+
+[SearchForCC](https://github.com/eelsivart/SearchForCC)
+* A collection of open source/common tools/scripts to perform a system memory dump and/or process memory dump on Windows-based PoS systems and search for unencrypted credit card track data.
+
+[KeeFarce](https://github.com/denandz/KeeFarce)
+* Extracts passwords from a KeePass 2.x database, directly from memory.
+
+[KeeThief](https://github.com/HarmJ0y/KeeThief)
+* Methods for attacking KeePass 2.X databases, including extracting of encryption key material from memory.
+
+
 
 ## Data from Network Shared Drive
 -------------------------------

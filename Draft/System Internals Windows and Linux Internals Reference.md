@@ -31,6 +31,11 @@
 
 [BCDEdit /dbgsettings - msdn](https://msdn.microsoft.com/en-us/library/windows/hardware/ff542187(v=vs.85).aspx)
 
+[windows-syscall-table](https://github.com/tinysec/windows-syscall-table)
+* windows syscall table from xp ~ 10 rs2
+
+[Debugging Functions - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/ms679303.aspx)
+
 #### End Sort
 
 

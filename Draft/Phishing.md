@@ -16,31 +16,36 @@ TOC
 ###Cull
 
 
-[Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
-[Outlook and Exchange for the Bad Guys Nick Landers](https://www.youtube.com/watch?v=cVhc9VOK5MY)
 
-[Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
 
-[Microsoft Support and Recovery Assistant for Office 365](https://testconnectivity.microsoft.com/)
 
-[Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)
 #### End cull
 
 
 
 
-[The definition from wikipedia](http://www.en.wikipedia.org/wiki/Phishing):
-* “Phishing is the attempt to acquire sensitive information such as usernames, passwords, and credit card details (and sometimes, indirectly, money) by masquerading as a trustworthy entity in an electronic communication.”
+
+
+
+
+
+
+
 
 
 
 ###<a name="general>General</a>
+[Phishing - wikipedia](http://www.en.wikipedia.org/wiki/Phishing):
+* “Phishing is the attempt to acquire sensitive information such as usernames, passwords, and credit card details (and sometimes, indirectly, money) by masquerading as a trustworthy entity in an electronic communication.”
 
 [Post exploitation trick - Phish users for creds on domains, from their own box](https://enigma0x3.wordpress.com/2015/01/21/phishing-for-credentials-if-you-want-it-just-ask/)
 
 [Tab Napping - Phishing](http://www.exploit-db.com/papers/13950/)
 
 [Top 10 Email Subjects for Company Phishing Attacks](http://www.pandasecurity.com/mediacenter/security/top-10-email-subjects-phishing-attacks/)
+
+
+
 
 
 
@@ -64,6 +69,14 @@ TOC
 
 
 
+
+
+
+
+
+
+
+
 ### Tools
 
 [CatMyFish](https://github.com/Mr-Un1k0d3r/CatMyFish)
@@ -76,10 +89,15 @@ TOC
 [SimplyTemplate](https://github.com/killswitch-GUI/SimplyTemplate)
 * Phishing Template Generation Made Easy. The goal of this project was to hopefully speed up Phishing Template Gen as well as an easy way to ensure accuracy of your templates. Currently my standard Method of delivering emails is the Spear Phish in Cobalt strike so you will see proper settings for that by default.
 
+[MailRaider](https://github.com/xorrior/EmailRaider)
+* MailRaider is a tool that can be used to browse/search a user's Outlook folders as well as send phishing emails internally using their Outlook client.
 
 
 
-### Microsoft Outlook Stuff
+
+
+
+### Microsoft Outlook/Exchange Stuff
 
 [How to bypass Web-Proxy Filtering](https://www.blackhillsinfosec.com/?p=5831)
 
@@ -88,6 +106,17 @@ TOC
 [EXE-less Malicious Outlook Rules - BHIS](https://www.blackhillsinfosec.com/?p=5544)
 
 [Outlook and Exchange for the Bad Guys Nick Landers](https://www.youtube.com/watch?v=cVhc9VOK5MY)
+
+[Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
+
+[Outlook and Exchange for the Bad Guys Nick Landers](https://www.youtube.com/watch?v=cVhc9VOK5MY)
+
+[Microsoft Support and Recovery Assistant for Office 365](https://testconnectivity.microsoft.com/)
+
+[Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)
+
+
+
 
 
 
@@ -99,8 +128,16 @@ TOC
 
 
 
+
+
+
+
+
+
+
 ### Talks/Presentations
 
 [Three Years of Phishing - What We've Learned - Mike Morabito](http://www.irongeek.com/i.php?page=videos/centralohioinfosec2015/tech105-three-years-of-phishing-what-weve-learned-mike-morabito)
 * Cardinal Health has been aggressively testing and training users to recognize and avoid phishing emails. This presentation covers 3 years of lessons learned from over 18,000 employees tested, 150,000 individual phishes sent, 5 complaints, thousands of positive comments, and a dozen happy executives. Learn from actual phishing templates what works well, doesn,t work at all, and why? See efficient templates for education and reporting results.
 
+[Ichthyology: Phishing as a Science - BH USA 2017](https://www.youtube.com/watch?v=Z20XNp-luNA&app=desktop)

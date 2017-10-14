@@ -1,17 +1,6 @@
 # Defense Evasion
 
 
-To Do:
-	Add AV Avoidance, bypassing App whitelisting to Binary padding section
-	Component Firmware
-	De/Obfuscation
-	Install Root Certificates
-	Obfuscated Files or Information
-	Software Packing
-
-
-
-
 ## Access Token Manipulation
 -------------------------------
 [Access Token Manipulation - ATT&CK](https://attack.mitre.org/wiki/Technique/T1134)

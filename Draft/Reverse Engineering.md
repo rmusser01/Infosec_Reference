@@ -74,6 +74,35 @@ https://objective-see.com/
 
 [Getting Started with CLR MD](https://github.com/Microsoft/clrmd/blob/master/Documentation/GettingStarted.md)
 
+
+[reductio [ad absurdum]](https://github.com/xoreaxeaxeax/reductio)
+* an exploration of code homeomorphism: all programs can be reduced to the same instruction stream.
+
+[REpsych - Psychological Warfare in Reverse Engineering](https://github.com/xoreaxeaxeax/REpsych/blob/master/README.md)
+* The REpsych toolset is a proof-of-concept illustrating the generation of images through a program's control flow graph (CFG).
+
+[The “Ultimate”Anti-Debugging Reference - Peter Ferrie 2011/4](http://pferrie.host22.com/papers/antidebug.pdf)
+
+[IDAPython Embedded Toolkit](https://github.com/maddiestone/IDAPythonEmbeddedToolkit)
+* IDAPython is a way to script different actions in the IDA Pro disassembler with Python. This repository of scripts automates many different processes necessary when analyzing the firmware running on microcontroller and microprocessor CPUs. The scripts are written to be easily modified to run on a variety of architectures. Read the instructions in the header of each script to determine what ought to be modified for each architecture.
+
+[HexRaysCodeXplorer](https://github.com/REhints/HexRaysCodeXplorer)
+* The Hex-Rays Decompiler plugin for better code navigation in RE process. CodeXplorer automates code REconstruction of C++ applications or modern malware like Stuxnet, Flame, Equation, Animal Farm ... :octocat:
+
+[PulseDBG](https://github.com/honorarybot/PulseDBG)
+* Hypervisor-based debugger
+
+[Screwdriving. Locating and exploiting smart adult toys](https://www.pentestpartners.com/security-blog/screwdriving-locating-and-exploiting-smart-adult-toys/)
+
+[pegasus - Windbg extension DLL for emulation](https://github.com/0a777h/pegasus)
+* Windbg emulation plugin 
+
+[Lighthouse - Code Coverage Explorer for IDA Pro](https://github.com/gaasedelen/lighthouse)
+* Lighthouse is a code coverage plugin for IDA Pro. The plugin leverages IDA as a platform to map, explore, and visualize externally collected code coverage data when symbols or source may not be available for a given binary.
+
+
+
+
 ### End sort
 
 

@@ -18,6 +18,9 @@
 [Homesite](https://trmm.net/EFI)
 
 [Talk at CCC31](https://www.youtube.com/watch?v=5BrdX7VdOr0)
+
+
+
 ##### End Sort
 
 
@@ -161,6 +164,12 @@ Windows Rootkits(excellent writeup/introduction to windows rootkits)
 [Security Evaluation of Intel's Active Management Technology](http://people.kth.se/~maguire/DEGREE-PROJECT-REPORTS/100402-Vassilios_Ververis-with-cover.pdf)
 
 
+### Tools
+
+[DragonKing Rootkit](https://github.com/mgrube/DragonKing)
+* This is an open source rootkit created for a class taught on Rootkit Design. This rootkit hides by hooking the system call table and using an agent to do interactive manipulation in userland.
+
+[GPU rootkit PoC by Team Jellyfish](https://github.com/x0r1/jellyfish)
 
 
 

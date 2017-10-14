@@ -12,13 +12,14 @@
 * [Stenography](#steno)
 * [Tools](#tools)
 * [Books](#books)
-
+* [Miscellaneous](#misc)
 
 
 ### Cull
 
 
 https://conversations.im/xeps/multi-end.html
+
 ### End Cull
 
 
@@ -237,6 +238,13 @@ sheep-wolf](https://github.com/silentsignal/sheep-wolf/)
 [padex](https://github.com/szdavid92/padex)
 * The goal of this challenge is to find a flag contained in an encrypted message. A decryption oracle and the encrypted message is provided. The student should write an application that cracks the cyphertext by abusing the oracle which is vulnerable to the padding attack.
 
+[Project HashClash](https://marc-stevens.nl/p/hashclash/)
+* Project HashClash is a Framework for MD5 & SHA-1 Differential Path Construction and Chosen-Prefix Collisions for MD5. It's goal is to further understanding and study of the weaknesses of MD5 and SHA-1. 
+
+[CPC-MD5](https://github.com/dingelish/cpc-md5)
+* This project is forked from Marc Steven's Hashclash project hashclash and follows GPL.
+
+
 
 
 ### <a name="">Books</a>:
@@ -255,7 +263,13 @@ Books:
 
 
 
+### Miscellaneous
 
+[SSH Bad Keys](https://github.com/rapid7/ssh-badkeys)
+* This is a collection of static SSH keys (host and authentication) that have made their way into software and hardware products. This was inspired by the Little Black Box project, but focused primarily on SSH (as opposed to TLS) keys.
+
+[House of Keys](https://github.com/sec-consult/houseofkeys)
+* Certificates including the matching private key and various private keys found in the firmware of embedded systems. Most certificates are used as HTTPS server certificates. Some private keys are used as SSH host keys. Other uses of these cryptographic keys were not analyzed yet. The names of products that contained the certificates/keys are included as well.
 
 
 

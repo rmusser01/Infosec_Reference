@@ -9,6 +9,8 @@
 
 
 ### General
+[The Red Book: A Roadmap for Systems Security Research](http://www.red-book.eu/m/documents/syssec_red_book.pdf)
+
 
 [The foundation is rotting and the basement is flooding: A deeper look at the implicit trust relationships in your organization](https://www.youtube.com/watch?v=nL64uj9Xm24)
 

@@ -24,6 +24,7 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 * UCC - Uniform Commercial Code; DOC - Current Industrial Patents; DMV - Vehicle Ownership applications; Patents - Patent DBs; Operating Licenses/Permits; Trade Journals;
 
 
+
 #### End cull
 
 
@@ -243,7 +244,8 @@ Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&use
 * Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, ... It can rip repositories even 
 when directory browsing is turned off.
 
-
+[Truffle Hog](https://github.com/dxa4481/truffleHog)
+* Searches through git repositories for high entropy strings, digging deep into commit history
 
 
 

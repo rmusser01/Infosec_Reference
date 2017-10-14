@@ -34,13 +34,16 @@ http://en.cppreference.com/w/c
 
 [x86 Call/Return Protocol](http://pages.cs.wisc.edu/~remzi/Classes/354/Fall2012/Handouts/Handout-CallReturn.pdf)
 
-[Diving deep into Python – the not-so-obvious language parts](http://sebastianraschka.com/Articles/2014_deep_python.html)
+
+
+[plog](https://github.com/SergiusTheBest/plog)
+* Portable, simple and extensible C++ logging library
+
+[SafeSQL](https://github.com/stripe/safesql)
+* SafeSQL is a static analysis tool for Go that protects against SQL injections.
 
 
 
-[PEP: 551 Title: Security transparency in the Python runtime Version](https://github.com/python/peps/blob/cd795ec53c939e5b40808bb9d7a80c428c85dd52/pep-0551.rst)
-
-[Build an API under 30 lines of code with Python and Flask](https://impythonist.wordpress.com/2015/07/12/build-an-api-under-30-lines-of-code-with-python-and-flask/
 
 #### End Cull
 
@@ -134,7 +137,8 @@ Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code
 
 [How to find 56 potential vulnerabilities in FreeBSD code in one evening](https://www.viva64.com/en/b/0496/)
 
-
+[Phan](https://github.com/phan/phan)
+* Phan is a static analyzer for PHP. Phan prefers to avoid false-positives and attempts to prove incorrectness rather than correctness.
 
 
 
@@ -353,6 +357,10 @@ https://en.wikipedia.org/wiki/Java_(programming_language)
 ### <a name="go">Go</a>
 [Go Programming Language](https://golang.org/)
 
+[GAS - Go AST Scanner](https://github.com/GoASTScanner/gas)
+* Inspects source code for security problems by scanning the Go AST.
+
+
 
 
 ----------
@@ -406,6 +414,12 @@ https://en.wikipedia.org/wiki/Java_(programming_language)
 
 
 
+--------------
+### <a name="net".NET</a>
+
+
+[Book of the Runtime (BOTR) for the .NET Runtime](https://github.com/dotnet/coreclr/tree/master/Documentation/botr)
+* This contains a collection of articles about the non-trivial internals of the .NET Runtime. Its intended audience are people actually modifying the code or simply wishing to have a deep understanding of the runtime.
 
 
 
@@ -537,6 +551,8 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 [Static analysis tools for PHP](https://github.com/exakat/php-static-analysis-tools)
 * A reviewed list of useful PHP static analysis tools
 
+[Reference — What does this symbol mean in PHP?](https://stackoverflow.com/questions/3737139/reference-what-does-this-symbol-mean-in-php)
+
 
 ----------
 ### <a name="python">Python</a>
@@ -562,6 +578,12 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 [Reverse debugging for Python](https://morepypy.blogspot.com/2016/07/reverse-debugging-for-python.html?m=1)
 
 [Python in a hacker's toolbox (PyConPl'15)](http://gynvael.coldwind.pl/?lang=en&id=572)
+
+[Diving deep into Python – the not-so-obvious language parts](http://sebastianraschka.com/Articles/2014_deep_python.html)
+
+[PEP: 551 Title: Security transparency in the Python runtime Version](https://github.com/python/peps/blob/cd795ec53c939e5b40808bb9d7a80c428c85dd52/pep-0551.rst)
+
+[Build an API under 30 lines of code with Python and Flask](https://impythonist.wordpress.com/2015/07/12/build-an-api-under-30-lines-of-code-with-python-and-flask/)
 
 
 #### Reference

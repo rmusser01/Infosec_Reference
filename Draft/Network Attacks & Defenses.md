@@ -38,22 +38,10 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 [Enteletaor](https://github.com/cr0hn/enteletaor)
 * Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.
 
-
-[Nmap (XML) Parser documentation](https://nmap-parser.readthedocs.io/en/latest/)
-
-
-[OpenSSH User Enumeration Time-Based Attack](http://seclists.org/fulldisclosure/2013/Jul/88)
-
 [Collection of Symantec Endpoint Protection Vulnerabilities + some exploits](http://codewhitesec.blogspot.nl/2015/07/symantec-endpoint-protection.html)
- 
-[reGeorg](https://github.com/sensepost/reGeorg)
-* The successor to reDuh, pwn a bastion webserver and create SOCKS proxies through the DMZ. Pivot and pwn.
 
-[NfSpy](https://github.com/bonsaiviking/NfSpy)
-* NfSpy is a Python library for automating the falsification of NFS credentials when mounting an NFS share.
-
-
-
+[BlackNurse attack PoC](https://github.com/jedisct1/blacknurse)
+* A simple PoC for the Blacknurse attack. "Blacknurse is a low bandwidth ICMP attack that is capable of doing denial of service to well known firewalls".
 
 ##### sort end
 
@@ -501,6 +489,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 [Nmap](http://nmap.org/)
 * Nmap ("Network Mapper") is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics. It was designed to rapidly scan large networks, but works fine against single hosts. Nmap runs on all major computer operating systems, and official binary packages are available for Linux, Windows, and Mac OS X. In addition to the classic command-line Nmap executable, the Nmap suite includes an advanced GUI and results viewer (Zenmap), a flexible data transfer, redirection, and debugging tool (Ncat), a utility for comparing scan results (Ndiff), and a packet generation and response analysis tool (Nping). 
+* [Nmap (XML) Parser documentation](https://nmap-parser.readthedocs.io/en/latest/)
 
 [Scanning Effectively Through a SOCKS Pivot with Nmap and Proxychains](https://cybersyndicates.com/2015/12/nmap-and-proxychains-scanning-through-a-socks-piviot/)
 * [Script](https://github.com/killswitch-GUI/PenTesting-Scripts/blob/master/Proxychains-Nmap.py)
@@ -556,6 +545,13 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 
+------------
+### NFS
+
+[NfSpy](https://github.com/bonsaiviking/NfSpy)
+* NfSpy is a Python library for automating the falsification of NFS credentials when mounting an NFS share.
+
+
 
 ------------
 ### Pivoting
@@ -565,7 +561,8 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [Udp2raw-tunnel](https://github.com/wangyu-/udp2raw-tunnel)
 * A Tunnel which tunnels UDP via FakeTCP/UDP/ICMP Traffic by using Raw Socket, helps you Bypass UDP FireWalls(or Unstable UDP Environment). Its Encrypted, Anti-Replay and Multiplexed. It also acts as a Connection Stabilizer.)
 
-
+[reGeorg](https://github.com/sensepost/reGeorg)
+* The successor to reDuh, pwn a bastion webserver and create SOCKS proxies through the DMZ. Pivot and pwn.
 
 
 
@@ -615,6 +612,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 [ssh-audit](https://github.com/arthepsy/ssh-audit)
 * SSH server auditing (banner, key exchange, encryption, mac, compression, compatibility, security, etc)
 
+[OpenSSH User Enumeration Time-Based Attack](http://seclists.org/fulldisclosure/2013/Jul/88)
 
 
 
@@ -752,6 +750,14 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 [UPnP Pentest Toolkit](https://github.com/nccgroup/UPnP-Pentest-Toolkit)
 
+
+
+
+-------------
+### Software Defined Networking (SDN)
+
+[DELTA: SDN SECURITY EVALUATION FRAMEWORK](https://github.com/OpenNetworkingFoundation/DELTA)
+* DELTA is a penetration testing framework that regenerates known attack scenarios for diverse test cases. This framework also provides the capability of discovering unknown security problems in SDN by employing a fuzzing technique.
 
 
 

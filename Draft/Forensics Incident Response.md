@@ -29,8 +29,11 @@
 https://forensiccontrol.com/resources/free-software/
 
 Forensics wiki
-Yelp/Github - OSX Collector - Mass style forensics/management
-hackingexposedcomputerforensicsblog.blogspot.com/2015/02/automating-dfir-how-to-series-on_21.html)
+
+[osxcollector](https://github.com/Yelp/osxcollector)
+* OSXCollector is a forensic evidence collection & analysis toolkit for OSX.
+
+[Automating DFIR - How to series on programming libtsk with python Part 3](http://www.hecfblog.com/2015/02/automating-dfir-how-to-series-on_21.html)
 
 [dotNET_WinDBG](https://github.com/Cisco-Talos/dotNET_WinDBG)
 * This python script is designed to automate .NET analysis with WinDBG. It can be used to analyse a PowerShell script or to unpack a binary packed using a .NET packer.
@@ -99,6 +102,10 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 ### Writeups
 [Handler Diaries - Another Hunting Post(DFIR)](http://blog.handlerdiaries.com/?p=775)
 * Good post on not only knowing the layout, but knowing expected behaviours.
+
+
+
+
 
 #### Hacking Exposed - Automating DFIR Series
 
@@ -244,6 +251,7 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 [ENISA CERT Exercises and Training](http://www.enisa.europa.eu/activities/cert/support/exercise)
 * ENISA CERT Exercises and training material was introduced in 2008, in 2012 and 2013 it was complemented with new exercise scenarios containing essential material for success in the CERT community and in the field of information security. In this page you will find the ENISA CERT Exercise material, containing Handbook for teachers, Toolset for students and Virtual Image to support hands on training sessions. 
 
+[Packet Capture Examples from "Practical Packet Analysis"](http://www.chrissanders.org/captures/)
 
 
 

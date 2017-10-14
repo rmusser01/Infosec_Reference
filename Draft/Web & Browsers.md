@@ -50,45 +50,18 @@ Web TOC
 
 
 
-#### To-add
-OWASP BWA project; DVWA/similar to educational section
-
-Proper RFCS and stuff for various things
-
-[Big List of Naughty Strings](https://github.com/minimaxir/big-list-of-naughty-strings)
-* The Big List of Naughty Strings is an evolving list of strings which have a high probability of causing issues when used as user-input data. This is intended for use in helping both automated and manual QA testing; useful for whenever your QA engineer walks into a bar.
-
-
-
 #### Sort
-
 http://console-cowboys.blogspot.com/2011/05/web-hacking-video-series-1-automating.html 
 
-http://www.grymoire.com/Security/Hardware.html
-
 Clickjacking attacks
-
-[OWASP Juice Shop](https://github.com/bkimminich/juice-shop)
-* OWASP Juice Shop is an intentionally insecure web application written entirely in Javascript which encompasses the entire range of OWASP Top Ten and other severe security flaws.
-
-[OWASP Vulnerable Web Applications Directory Project/Pages/Offline](https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project/Pages/Offline)
-
-[Php Codz Hacking](https://github.com/80vul/phpcodz)
-* Writeups of specific PHP vulns
 
 [sonar.js](https://thehackerblog.com/sonar-a-framework-for-scanning-and-exploiting-internal-hosts-with-a-webpage/)
 * A Framework for Scanning and Exploiting Internal Hosts With a Webpage
 
-[Penetration Testing AWS Storage: Kicking the S3 Bucket](https://rhinosecuritylabs.com/penetration-testing/penetration-testing-aws-storage/)
+[Discover DevTools](https://www.codeschool.com/courses/discover-devtools)
+* Learn how Chrome DevTools can sharpen your dev process and discover the tools that can optimize your workflow and make life easier.
 
-[Introducing G-Scout](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2017/august/introducing-g-scout/)
-* G-Scout is a tool to help assess the security of Google Cloud Platform (GCP) environment configurations. By leveraging the Google Cloud API, G-Scout automatically gathers a variety of configuration data and analyzes this data to determine security risks. It produces HTML output.
-* [Google Cloud Platform Security Tool](https://github.com/nccgroup/G-Scout)
-
-[G-Jacking AppEngine-based applications - HITB2014](https://conference.hitb.org/hitbsecconf2014ams/materials/D2T1-G-Jacking-AppEngine-based-Applications.pdf)
-
-* Add AWS Section
-* Google Cloud section
+[Exploiting CVE-2017-8759: SOAP WSDL Parser Code Injection](https://www.mdsec.co.uk/2017/09/exploiting-cve-2017-8759-soap-wsdl-parser-code-injection/)
 #### End Sort
 
 
@@ -129,11 +102,25 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
 [Object MetaInformation](https://www.w3.org/Protocols/HTTP/Object_Headers.html#public)
 
-
-
 [How to Obscure Any URL](http://www.pc-help.org/obscure.htm)
 
 [HTTP Evasion](http://noxxi.de/research/http-evader-explained-8-borderline-robustness.html)
+
+[Big List of Naughty Strings](https://github.com/minimaxir/big-list-of-naughty-strings)
+* The Big List of Naughty Strings is an evolving list of strings which have a high probability of causing issues when used as user-input data. This is intended for use in helping both automated and manual QA testing; useful for whenever your QA engineer walks into a bar.
+
+
+------------------
+### Purposely Vulnerable Web Applications/Testing Grounds
+[OWASP Vulnerable Web Applications Directory Project/Pages/Offline](https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project/Pages/Offline)
+
+[OWASP Juice Shop](https://github.com/bkimminich/juice-shop)
+* OWASP Juice Shop is an intentionally insecure web application written entirely in Javascript which encompasses the entire range of OWASP Top Ten and other severe security flaws.
+
+[Pwning OWASP Juice Shop](https://leanpub.com/juice-shop)
+
+
+
 
 
 
@@ -159,6 +146,15 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 [AWS Security Primer](https://cloudonaut.io/aws-security-primer/#fn:2)
 
 [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist/blob/master/README.md)
+
+
+
+
+
+
+
+
+
 
 
 ----------------
@@ -681,6 +677,14 @@ Advanced Flash Vulnerabilities in Youtube Writeups Series
 
 [Automating API Penetration Testing using fuzzapi - AppSecUSA 2016](https://www.youtube.com/watch?v=43G_nSTdxLk)
 
+[Postman - chrome plugin](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
+
+[restclient - Firefox addon](https://addons.mozilla.org/de/firefox/addon/restclient/)
+
+
+
+
+
 
 
 -------------------
@@ -752,6 +756,35 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 
+--------------
+### PHP
+
+[Is PHP unserialize() exploitable without any 'interesting' methods? - StackOverflow](https://security.stackexchange.com/questions/77549/is-php-unserialize-exploitable-without-any-interesting-methods)
+
+[Remote code execution via PHP [Unserialize] - notsosecure](https://www.notsosecure.com/remote-code-execution-via-php-unserialize/)
+
+[PHP Magic Tricks: Type Juggling](https://www.owasp.org/images/6/6b/PHPMagicTricks-TypeJuggling.pdf)
+
+[Browser Security Whitepaper - Cure53](https://cure53.de/browser-security-whitepaper.pdf/)
+
+[OWASP Proactive Controls 3.0](https://docs.google.com/document/d/1bQKisfXQ2XRwkcUaTvVTR7bpzVgbwIhDA1O6hUbywiY/mobilebasic)
+
+[PHP Autoload Invalid Classname Injection](https://hakre.wordpress.com/2013/02/10/php-autoload-invalid-classname-injection/)
+
+[Writing Exploits For Exotic Bug Classes: PHP Type Juggling](https://turbochaos.blogspot.com.au/2013/08/exploiting-exotic-bugs-php-type-juggling.html)
+
+[PHP’s “Magic Hash” Vulnerability (Or Beware Of Type Juggling)](https://web.archive.org/web/20150530075600/http://blog.astrumfutura.com/2015/05/phps-magic-hash-vulnerability-or-beware-of-type-juggling)
+
+[Writing Exploits For Exotic Bug Classes: unserialize()](https://www.alertlogic.com/blog/writing-exploits-for-exotic-bug-classes-unserialize()/)
+
+[Php Codz Hacking](https://github.com/80vul/phpcodz)
+* Writeups of specific PHP vulns
+
+
+
+
+
+
 ----------------
 ### REST & Web Services
 
@@ -785,6 +818,18 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 * WS-Attacks.org is not a new web service standard by the OASIS Group or W3C; instead it presents the flaws of today's web service standards and implementations in regard to web service security! WS-Attacks.org aims at delivering the most comprehensive enumeration of all known web service attacks.
 
 [Learn REST: A Tutorial](http://rest.elkstein.org/)
+
+
+--------------------------------
+### Ruby/Ruby on Rails
+[Executing commands in ruby](http://blog.bigbinary.com/2012/10/18/backtick-system-exec-in-ruby.html)
+
+[Attacking Ruby on Rails Applications](http://phrack.org/issues/69/12.html#article)
+
+[Going AUTH the Rails on a Crazy Train: A Dive into Rails Authentication and Authorization](https://www.blackhat.com/docs/eu-15/materials/eu-15-Jarmoc-Going-AUTH-The-Rails-On-A-Crazy-Train-wp.pdf)
+
+
+
 
 
 
@@ -832,7 +877,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [ParrotNG](https://github.com/ikkisoft/ParrotNG)
 * ParrotNG is a tool capable of identifying Adobe Flex applications (SWF) vulnerable to CVE-2011-2461
 
-
+[OpenDoor](https://github.com/stanislav-web/OpenDoor)
+* OpenDoor OWASP is console multifunctional web sites scanner. This application find all possible ways to login, index of/ directories, web shells, restricted access points, subdomains, hidden data and large backups. The scanning is performed by the built-in dictionary and external dictionaries as well. Anonymity and speed are provided by means of using proxy servers.
 
 
 
@@ -1086,3 +1132,31 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [PwnBack](https://github.com/k4ch0w/PwnBack)
 * Burp Extender plugin that generates a sitemap of a website using Wayback Machine
+
+
+
+--------------------
+### AWS
+
+[Gone in 60 Milliseconds - Intrusion and Exfiltration in Server-less Architectures](https://media.ccc.de/v/33c3-7865-gone_in_60_milliseconds)
+* More and more businesses are moving away from monolithic servers and turning to event-driven microservices powered by cloud function providers like AWS Lambda. So, how do we hack in to a server that only exists for 60 milliseconds? This talk will show novel attack vectors using cloud event sources, exploitabilities in common server-less patterns and frameworks, abuse of undocumented features in AWS Lambda for persistent malware injection, identifying valuable targets for pilfering, and, of course, how to exfiltrate juicy data out of a secure Virtual Private Cloud. 
+
+[Bucketlist](https://github.com/michenriksen/bucketlist)
+* Bucketlist is a quick project I threw together to find and crawl Amazon S3 buckets and put all the data into a PostgreSQL database for querying.
+
+[Penetration Testing AWS Storage: Kicking the S3 Bucket](https://rhinosecuritylabs.com/penetration-testing/penetration-testing-aws-storage/)
+
+
+
+
+------------------
+### Google Compute Cloud/AppEngine
+
+
+[Introducing G-Scout](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2017/august/introducing-g-scout/)
+* G-Scout is a tool to help assess the security of Google Cloud Platform (GCP) environment configurations. By leveraging the Google Cloud API, G-Scout automatically gathers a variety of configuration data and analyzes this data to determine security risks. It produces HTML output.
+* [Google Cloud Platform Security Tool](https://github.com/nccgroup/G-Scout)
+
+[G-Jacking AppEngine-based applications - HITB2014](https://conference.hitb.org/hitbsecconf2014ams/materials/D2T1-G-Jacking-AppEngine-based-Applications.pdf)
+
+

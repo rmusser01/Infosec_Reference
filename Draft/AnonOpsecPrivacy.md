@@ -3,12 +3,14 @@
 ### TOC
 
 * Cull
+* [General](#general)
+* [Blogposts](#blog)
 * [Articles](#Articles)
 * [How-Tos](#howtos)
 * [Papers](#Papers)
 * [Talks/Videos](#Talks)
 * [Tools](#Tools)
-
+* [Miscellaneous](#misc)
 
 
 
@@ -17,6 +19,8 @@
 
 
 #### Cull
+
+
 
 
 
@@ -92,6 +96,14 @@
 
 
 
+
+
+
+
+
+
+
+
 ### <a name="Papers">Papers</a>
 [Protocol Misidentification Made Easy with Format-Transforming Encryption](https://eprint.iacr.org/2012/494.pdf)
 * Deep packet inspection DPI technologies provide much- needed visibility and control of network traffic using port- independent protocol identification, where a network ow is labeled with its application-layer protocol based on packet contents. In this paper, we provide the most comprehensive evaluation of a large set of DPI systems from the point of view of protocol misidentification attacks, in which adver- saries on the network attempt to force the DPI to mislabel connections. Our approach uses a new cryptographic primitive called format-transforming encryption FTE, which extends conventional symmetric encryption with the ability to transform the ciphertext into a format of our choosing. We design an FTE-based record layer that can encrypt arbi- trary application-layer traffic, and we experimentally show that this forces misidentification for all of the evaluated DPI systems. This set includes a proprietary, enterprise-class DPI system used by large corporations and nation-states. We also show that using FTE as a proxy system incurs no latency overhead and as little as 16% bandwidth overhead compared to standard SSH tunnels. Finally, we integrate our FTE proxy into the Tor anonymity network and demonstrate that it evades real-world censorship by the Great Firewall of China. 
@@ -113,6 +125,52 @@
 [Deep-Spying: Spying using Smartwatch and Deep Learning - Tony Beltramelli](https://arxiv.org/pdf/1512.05616v1.pdf)
 
 [HORNET: High-speed Onion Routing at the Network Layer](http://arxiv.org/pdf/1507.05724v1.pdf)
+
+
+[Decoy Routing: Toward Unblockable Internet Communication](https://www.usenix.org/legacy/events/foci11/tech/final_files/Karlin.pdf)
+* We present decoy routing, a mechanism capable of cir- cumventing common network filtering strategies. Unlike other circumvention techniques, decoy routing does not require a client to connect to a specific IP address (which is easily blocked) in order to provide circumvention. We show that if it is possible for a client to connect to any unblocked host/service, then decoy routing could be used to connect them to a blocked destination without coop- eration from the host. This is accomplished by placing the circumvention service in the network itself – where a single device could proxy traffic between a significant fraction of hosts – instead of at the edge.
+
+[obfs4 (The obfourscator)](https://gitweb.torproject.org/pluggable-transports/obfs4.git/tree/doc/obfs4-spec.txt)
+* This is a protocol obfuscation layer for TCP protocols. Its purpose is to keep a third party from telling what protocol is in use based on message contents. Unlike obfs3, obfs4 attempts to provide authentication and data integrity, though it is still designed primarily around providing a layer of obfuscation for an existing authenticated protocol like SSH or TLS.
+
+[obfs3 (The Threebfuscator)](https://gitweb.torproject.org/pluggable-transports/obfsproxy.git/tree/doc/obfs3/obfs3-protocol-spec.txt)
+* This is a protocol obfuscation layer for TCP protocols. Its purpose is to keep a third party from telling what protocol is in use based on message contents. Like obfs2, it does not provide authentication or data integrity. It does not hide data lengths. It is more suitable for providing a layer of obfuscation for an existing authenticated protocol, like SSH or TLS. 
+
+[StegoTorus: A Camouflage Proxy for the Tor Anonymity System](https://research.owlfolio.org/pubs/2012-stegotorus.pdf)
+* Internet censorship by governments is an increasingly common practice worldwide. Internet users and censors are locked in an arms race: as users find ways to evade censorship schemes, the censors develop countermeasures for the evasion tactics. One of the most popular and effective circumvention tools, Tor, must regularly adjust its network traffic signature to remain usable. We present StegoTorus, a tool that comprehensively disguises Tor from protocol analysis. To foil analysis of packet contents, Tor’s traffic is steganographed to resemble an innocuous cover protocol, such as HTTP. To foil analysis at the transport level, the Tor circuit is distributed over many shorter-lived connections with per-packet characteristics that mimic cover-protocol traffic. Our evaluation demonstrates that StegoTorus improves the resilience of Tor to fingerprinting attacks and delivers usable performance.
+
+[SkypeMorph: Protocol Obfuscation for Tor Bridges](https://www.cypherpunks.ca/~iang/pubs/skypemorph-ccs.pdf)
+* The Tor network is designed to provide users with low- latency anonymous communications. Tor clients build circuits with publicly listed relays to anonymously reach their destinations. However, since the relays are publicly listed, they can be easily blocked by censoring adversaries. Consequently, the Tor project envisioned the possibility of unlisted entry points to the Tor network, commonly known as bridges. We address the issue of preventing censors from detecting the bridges by observing the communications between them and nodes in their network. We propose a model in which the client obfuscates its messages to the bridge in a widely used protocol over the Inter- net. We investigate using Skype video calls as our target protocol and our goal is to make it difficult for the censor- ing adversary to distinguish between the obfuscated bridge connections and actual Skype calls using statistical compar- isons. We have implemented our model as a proof-of-concept pluggable transport for Tor, which is available under an open-source licence. Using this implementation we observed the obfuscated bridge communications and compared it with those of Skype calls and presented the results.
+
+[Protocol Misidentification Made Easy with Format-Transforming Encryption](https://kpdyer.com/publications/ccs2013-fte.pdf)
+* Deep packet inspection (DPI) technologies provide much needed visibility and control of network traffic using port- independent protocol identification, where a network flow is labeled with its application-layer protocol based on packet contents. In this paper, we provide the first comprehensive evaluation of a large set of DPI systems from the point of view of protocol misidentification attacks, in which adver- saries on the network attempt to force the DPI to mislabel connections. Our approach uses a new cryptographic prim- itive called format-transforming encryption (FTE), which extends conventional symmetric encryption with the ability to transform the ciphertext into a format of our choosing. We design an FTE-based record layer that can encrypt arbitrary application-layer traffic, and we experimentally show that this forces misidentification for all of the evaluated DPI systems. This set includes a proprietary, enterprise-class DPI system used by large corporations and nation-states. We also show that using FTE as a proxy system incurs no latency overhead and as little as 16% bandwidth overhead compared to standard SSH tunnels. Finally, we integrate our FTE proxy into the Tor anonymity network and demon- strate that it evades real-world censorship by the Great Fire- wall of China
+
+[Cirripede: Circumvention Infrastructure using Router Redirection with Plausible Deniability](http://hatswitch.org/~nikita/papers/cirripede-ccs11.pdf)
+* Many users face surveillance of their Internet communications and a significant fraction suffer from outright blocking of certain destinations. Anonymous communication systems allow users to conceal the destinations they communicate with, but do not hide the fact that the users are using them. The mere use of such systems may invite suspicion, or access to them may be blocked. We therefore propose Cirripede, a system that can be used for unobservable communication with Internet destinations. Cirripede is designed to be deployed by ISPs; it intercepts connections from clients to innocent-looking desti- nations and redirects them to the true destination requested by the client. The communication is encoded in a way that is indistinguishable from normal communications to anyone without the master secret key, while public-key cryptogra- phy is used to eliminate the need for any secret information that must be shared with Cirripede users. Cirripede is designed to work scalably with routers that handle large volumes of traffic while imposing minimal over- head on ISPs and not disrupting existing traffic. This allows Cirripede proxies to be strategically deployed at central lo- cations, making access to Cirripede very difficult to block. We built a proof-of-concept implementation of Cirripede and performed a testbed evaluation of its performance proper- ties
+
+[TapDance: End-to-Middle Anticensorship without Flow Blocking](https://jhalderm.com/pub/papers/tapdance-sec14.pdf)
+* In response to increasingly sophisticated state-sponsored Internet censorship, recent work has proposed a new ap- proach to censorship resistance: end-to-middle proxying. This concept, developed in systems such as Telex, Decoy Routing, and Cirripede, moves anticensorship technology into the core of the network, at large ISPs outside the censoring country. In this paper, we focus on two technical obstacles to the deployment of certain end-to-middle schemes: the need to selectively block flows and the need to observe both directions of a connection. We propose a new construction, TapDance, that removes these require- ments. TapDance employs a novel TCP-level technique that allows the anticensorship station at an ISP to function as a passive network tap, without an inline blocking com- ponent. We also apply a novel steganographic encoding to embed control messages in TLS ciphertext, allowing us to operate on HTTPS connections even under asymmetric routing. We implement and evaluate a TapDance proto- type that demonstrates how the system could function with minimal impact on an ISP’s network operations.
+
+[Chipping Away at Censorship Firewalls with User-Generated Content](https://www.usenix.org/legacy/event/sec10/tech/full_papers/Burnett.pdf)
+* Oppressive regimes and even democratic governments restrict Internet access. Existing anti-censorship systems often require users to connect through proxies, but these systems are relatively easy for a censor to discover and block. This paper offers a possible next step in the cen- sorship arms race: rather than relying on a single system or set of proxies to circumvent censorship firewalls, we explore whether the vast deployment of sites that host user-generated content can breach these firewalls. To explore this possibility, we have developed Collage, which allows users to exchange messages through hidden chan- nels in sites that host user-generated content. Collage has two components: a message vector layer for embedding content in cover traffic; and a rendezvous mechanism to allow parties to publish and retrieve messages in the cover traffic. Collage uses user-generated content (e.g. , photo-sharing sites) as “drop sites” for hidden messages. To send a message, a user embeds it into cover traffic and posts the content on some site, where receivers retrieve this content using a sequence of tasks. Collage makes it difficult for a censor to monitor or block these messages by exploiting the sheer number of sites where users can exchange messages and the variety of ways that a mes- sage can be hidden. Our evaluation of Collage shows that the performance overhead is acceptable for sending small messages (e.g. , Web articles, email). We show how Collage can be used to build two applications: a direct messaging application, and a Web content delivery sys- tem
+
+[Unblocking the Internet: Social networks foil censors](http://kscope.news.cs.nyu.edu/pub/TR-2008-918.pdf)
+* Many countries and administrative domains exploit control over their communication infrastructure to censor online content. This paper presents the design, im plementation and evaluation of Kaleidoscope , a peer-to-peer system of relays that enables users within a censored domain to access blocked content. The main challenge facing Kaleidoscope is to resist the cens or’s efforts to block the circumvention system itself. Kaleidoscope achieves blocking-resilienc e using restricted service discovery that allows each user to discover a small set of unblocked relays while only exposing a small fraction of relays to the censor. To restrict service discovery, Kaleidoscope leverages a trust network where links reflects real-world social relationships among users and uses a limited advertisement protocol based on random routes to disseminate relay addresses along the trust netwo rk; the number of nodes reached by a relay advertisement should ideally be inversely proportional to the maximum fraction of infiltration and is independent of the network size. To increase service availa bility in large networks with few exit relay nodes, Kaleidoscope forwards the actual data traffic across multiple relay hops without risking exposure of exit relays. Using detailed analysis and simulations, we show that Kalei doscope provides > 90% service availability even under substantial infiltration (close to 0.5% of edges) and when only 30% of the relay nodes are online. We have implemented and deployed our system on a small scale serving over 100,000 requests to 40 censored users (relatively small user base to realize Kaleidoscope’s anti-blocking guarantees) spread across different countries and administrative domains over a 6-month period
+
+[A Technical Description of Psiphon](https://psiphon.ca/en/blog/psiphon-a-technical-description)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -203,4 +261,8 @@
 
 
 
+### Misc
 
+[.NET Github: .NET core should not SPY on users by default #3093](https://github.com/dotnet/cli/issues/3093)
+
+[.NET Github: Revisit Telemetry configuration #6086 ](https://github.com/dotnet/cli/issues/6086)

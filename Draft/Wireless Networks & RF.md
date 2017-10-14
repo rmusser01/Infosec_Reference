@@ -26,9 +26,29 @@
 
 #### Sort
 
+[Introduction to Wireless Security Testing](http://www.grymoire.com/Security/Hardware.html)
+
 http://umtrx.org/
 
 [Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
+[SniffAir An Open Source Framework for Wireless Security Assessments Matthew Eidelberg - DerbyCon7](https://www.youtube.com/watch?v=QxVkr-3RK94&app=desktop)
+* [SniffAir](https://github.com/Tylous/SniffAir)
+
+[CC1101-FSK](https://github.com/trishmapow/CC1101-FSK)
+* Jam and replay attack on vehicle keyless entry systems.
+
+[RTL-SDR and GNU Radio with Realtek RTL2832U [Elonics E4000/Raphael Micro R820T] software defined radio receivers.](http://superkuh.com/rtlsdr.html)
+
+[nrsc5](https://github.com/theori-io/nrsc5)
+* NRSC-5 receiver for rtl-sdr
+
+[gr-nrsc5](https://github.com/argilo/gr-nrsc5)
+* A GNU Radio implementation of HD Radio (NRSC-5)
+
+
+
+
+
 ##### End Cull
 
 
@@ -398,7 +418,7 @@ In the context of Dolev-Yao style analysis of security proto cols, we investigat
 
 [Hacking Bluetooth connections - hackingandsecurity](https://hackingandsecurity.blogspot.com/2017/08/hacking-bluetooth-connections.html?view=timeslide)
 
-
+[blueborne](https://www.armis.com/blueborne/)
 
 
 

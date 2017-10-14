@@ -18,11 +18,17 @@
 
 #### Sort
 
-http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce
+
+
+#### End Sort
+
+### General
+
 
 [PwnAdventureZ](https://github.com/Vector35/PwnAdventureZ)
 * NES zombie survival game made to be hacked 
-#### End Sort
+
+
 
 #### Writeups
 
@@ -46,6 +52,14 @@ http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce
 
 [Creating A Kewl And Simple Cheating Platform On Android - DeepSec2014](http://www.securitytube.net/video/12547?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+SecurityTube+%28SecurityTube.Net%29)
 
+[DEFCON 17: Fragging Game Servers - Bruce Potter](https://www.youtube.com/watch?v=SooVvF9qO_k&app=desktop)
+
+
+
+
+
+
+
 
 ##### Nintendo 3DS
 [Keyshuffling Attack for Persistent Early Code Execution in the Nintendo 3DS Secure Bootchain](https://github.com/Plailect/keyshuffling)
@@ -53,9 +67,11 @@ http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce
 
 [ARM9Loader Technical Details - GBAtemp](https://gbatemp.net/threads/arm9loader-technical-details-and-discussion.408537/)
 
+[Throwback: K9Lhax by Bruteforce](http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce)
 
- Nintendo Wii 
+### Nintendo Wii 
 
+[wiihacks forum](http://www.wiihacks.com/)
 
 #### PS Vita
 
@@ -75,13 +91,16 @@ http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce
 [ugtrain](https://github.com/ugtrain/ugtrain)
 * Universal Elite Game Trainer for CLI(linux game trainer)
 
+[CSGOSimple](https://github.com/MarkHC/CSGOSimple)
+* A simple base for internal Counter-Strike: Global Offensive cheats.
 
+[NoEye](https://github.com/Schnocker/NoEye)
+* An usermode BE Rootkit Bypass
 
+[PubgPrivXcode85](https://github.com/TonyZesto/PubgPrivXcode85)
+* Simple chams wallhack for Player Unknowns Battlegrounds using a D3D11DrawIndexed hook
 
-
-
-
- 
+[PortAIO-Loader](https://github.com/PirateEmpire/PortAIO-Loader) 
 
 
 

@@ -118,6 +118,17 @@
 [Outgoing port tester - portquiz.net](http://portquiz.net/)
 *  This server listens on all TCP ports, allowing you to test any outbound TCP port.
 
+[CloakifyFactory](https://github.com/TryCatchHCF/Cloakify)
+* CloakifyFactory & the Cloakify Toolset - Data Exfiltration & Infiltration In Plain Sight; Evade DLP/MLS Devices; Social Engineering of Analysts; Defeat Data Whitelisting Controls; Evade AV Detection. Text-based steganography usings lists. Convert any file type (e.g. executables, Office, Zip, images) into a list of everyday strings. Very simple tools, powerful concept, limited only by your imagination.
+
+
+
+
+
+
+
+
+
 
 
 ### Papers

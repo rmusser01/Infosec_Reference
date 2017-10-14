@@ -1,9 +1,6 @@
 # Windows Credential Access
 
 
-To Fill
-	Cred dumping
-	Brute force/Cracking hashes
 
 
 ## Account Manipulation
@@ -121,6 +118,11 @@ To Fill
 * RedSnarf is a pen-testing / red-teaming tool by Ed Williams for retrieving hashes and credentials from Windows workstations, servers and domain controllers using OpSec Safe Techniques.
 
 [creddump7](https://github.com/Neohapsis/creddump7)
+
+[Capturing Windows 7 Credentials at Logon Using Custom Credential Provider](https://blog.leetsys.com/2012/01/02/capturing-windows-7-credentials-at-logon-using-custom-credential-provider/)
+* The quick lowdown: I wrote a DLL capable of logging the credentials entered at logon for Windows Vista, 7 and future versions which you can download at http://www.leetsys.com/programs/credentialprovider/cp.zip. The credentials are logged to a file located at c:\cplog.txt.  Simply copy the dll to the system32 directory and run the included register.reg script to create the necessary registry settings.
+
+[Auto-Dumping Domain Credentials using SPNs, PowerShell Remoting, and Mimikatz - NETSPI](https://blog.netspi.com/auto-dumping-domain-credentials-using-spns-powershell-remoting-and-mimikatz/)
 
 
 

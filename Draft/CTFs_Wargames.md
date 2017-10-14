@@ -1,19 +1,19 @@
 ## CTFs & Wargames
 
 ##### TOC
-[General](#general(
-[Wargames](#wargames)
-[Vulnerable VMs](#vulnvm)
-[Challenge Sites](#challenge)
-[One-off Challenges & Puzzles](#puzzle)
-
+* [General](#general)
+* [Wargames](#wargames)
+* [Vulnerable VMs](#vulnvm)
+* [Challenge Sites](#challenge)
+* [One-off Challenges & Puzzles](#puzzle)
+* [Hosting CTFs/Making your own](#make)
 
 
 #### Cull
-[CTF Scripts and PyInstaller (.py > .exe) [CTF Scripts and PyInstaller (.py > .exe) ](http://www.primalsecurity.net/ctf-scripts-and-pyinstaller-py-exe/)
+[CTF Scripts and PyInstaller (.py > .exe) ](http://www.primalsecurity.net/ctf-scripts-and-pyinstaller-py-exe/)
 
-[AppJailLauncher](https://github.com/trailofbits/AppJailLauncher)
-* CTF Challenge Framework for Windows 8 and above 
+
+
 
 [Greenhorn](https://github.com/trailofbits/greenhorn)
 * Greenhorn is a Windows Pwnable released during CSAW Quals 2014. It's meant to be an introduction to modern Windows binary exploitation.
@@ -113,8 +113,6 @@ Wechall
 [Canyouhackit](http://canyouhack.it/)
 * Can You Hack It is a Hacking Challenge site designed to not only allow you to test and improve your skills in a wide variety of categories but to socialise both on the forums and on our IRC channel with other security enthusiasts. 
 
-
-
 [Tasteless](http://chall.tasteless.se/)
 
 [Hack This](https://www.hackthis.co.uk/)
@@ -142,3 +140,21 @@ Wechall
 
 [pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html)
 * pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing the image data); it can optionally dump almost all of the chunk-level information in the image in human-readable form. For example, it can be used to print the basic statistics about an image (dimensions, bit depth, etc.); to list the color and transparency info in its palette (assuming it has one); or to extract the embedded text annotations. This is a command-line program with batch capabilities.
+
+
+
+
+### Making Your Own CTF
+
+[AppJailLauncher](https://github.com/trailofbits/AppJailLauncher)
+* CTF Challenge Framework for Windows 8 and above 
+
+[NightShade](https://github.com/UnrealAkama/NightShade)
+* NightShade is a simple security capture the flag framework that is designed to make running your own contest as easy as possible.
+
+[Mellivora](https://github.com/Nakiami/mellivora)
+* Mellivora is a CTF engine written in PHP
+
+
+[SecGen](https://github.com/SecGen/SecGen)
+* SecGen creates vulnerable virtual machines so students can learn security penetration testing techniques.

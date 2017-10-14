@@ -46,6 +46,14 @@ http://spth.virii.lu/articles.htm
 
 [ClearImage Free Online Barcode Reader / Decoder](http://online-barcode-reader.inliteresearch.com/)
 
+[grokbit](https://grokbit.com/)
+* Code search engine
+
+[Creative and unusual things that can be done with the Windows API.](https://github.com/LazoCoder/Windows-Hacks)
+
+
+[Youre stealing it wrong 30 years of inter pirate battles - Jason Scott - Defcon 18](https://www.youtube.com/watch?v=a5AceLYWE1Q&app=desktop)
+
 
 [A Sysadmin's Unixersal Translator (ROSETTA STONE)](http://bhami.com/rosetta.html)
 

@@ -50,8 +50,6 @@ https://www.hex-rays.com/products/ida/tech/flirt/in_depth.shtml
 
 [mammon_'s tales to his grandson](https://mammon.github.io/tales/)
 
-[Bug Hunting for the Man on the Street]()
-
 [Unicorn-Engine](http://www.unicorn-engine.org/)
 * Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework.
 
@@ -61,33 +59,18 @@ https://objective-see.com/
 
 [Bytecode Club - RE Forum](https://the.bytecode.club/)
 
-[Reverse Engineering of Proprietary Protocols, Tools and Techniques - Rob Savoye - FOSDEM 2009 ](https://www.youtube.com/watch?v=t3s-mG5yUjY)
-* This talk is about reverse engineering a proprietary network protocol, and then creating my own implementation. The talk will cover the tools used to take binary data apart, capture the data, and techniques I use for decoding unknown formats. The protocol covered is the RTMP protocol used by Adobe flash, and this new implementation is part of the Gnash project.
-
 [Blackbone](https://github.com/DarthTon/Blackbone)
 * Windows memory hacking library
 
 [PNG File Format](http://fileformats.archiveteam.org/wiki/PNG)
+
 
 [Microsoft.Diagnostics.Runtime.dll(CLR MD)](https://github.com/Microsoft/clrmd)
 * Microsoft.Diagnostics.Runtime.dll (nicknamed "CLR MD") is a process and crash dump introspection library. This allows you to write tools and debugger plugins which can do thing similar to SOS and PSSCOR.
 
 [Getting Started with CLR MD](https://github.com/Microsoft/clrmd/blob/master/Documentation/GettingStarted.md)
 
-
-[reductio [ad absurdum]](https://github.com/xoreaxeaxeax/reductio)
-* an exploration of code homeomorphism: all programs can be reduced to the same instruction stream.
-
-[REpsych - Psychological Warfare in Reverse Engineering](https://github.com/xoreaxeaxeax/REpsych/blob/master/README.md)
-* The REpsych toolset is a proof-of-concept illustrating the generation of images through a program's control flow graph (CFG).
-
 [The “Ultimate”Anti-Debugging Reference - Peter Ferrie 2011/4](http://pferrie.host22.com/papers/antidebug.pdf)
-
-[IDAPython Embedded Toolkit](https://github.com/maddiestone/IDAPythonEmbeddedToolkit)
-* IDAPython is a way to script different actions in the IDA Pro disassembler with Python. This repository of scripts automates many different processes necessary when analyzing the firmware running on microcontroller and microprocessor CPUs. The scripts are written to be easily modified to run on a variety of architectures. Read the instructions in the header of each script to determine what ought to be modified for each architecture.
-
-[HexRaysCodeXplorer](https://github.com/REhints/HexRaysCodeXplorer)
-* The Hex-Rays Decompiler plugin for better code navigation in RE process. CodeXplorer automates code REconstruction of C++ applications or modern malware like Stuxnet, Flame, Equation, Animal Farm ... :octocat:
 
 [PulseDBG](https://github.com/honorarybot/PulseDBG)
 * Hypervisor-based debugger
@@ -96,13 +79,6 @@ https://objective-see.com/
 
 [pegasus - Windbg extension DLL for emulation](https://github.com/0a777h/pegasus)
 * Windbg emulation plugin 
-
-[Lighthouse - Code Coverage Explorer for IDA Pro](https://github.com/gaasedelen/lighthouse)
-* Lighthouse is a code coverage plugin for IDA Pro. The plugin leverages IDA as a platform to map, explore, and visualize externally collected code coverage data when symbols or source may not be available for a given binary.
-
-
-
-
 ### End sort
 
 
@@ -164,6 +140,7 @@ https://objective-see.com/
 [Ohcount - Ohloh's source code line counter.](https://github.com/blackducksoftware/ohcount)
 
 [Detecting programming language from a snippet](https://stackoverflow.com/questions/475033/detecting-programming-language-from-a-snippet)
+
 
 
 
@@ -445,11 +422,7 @@ Radare2 - unix-like reverse engineering framework and commandline tools ](http:/
 disassembler coupled to a local and remote debugger and augmented by a complete plugin
 programming environment.
 * [Overview & Tutorials](https://www.hex-rays.com/products/ida/debugger/index.shtml)
-* Ida Plugins
-	* [Ida Sploiter](https://thesprawl.org/projects/ida-sploiter/)
-	* IDA Sploiter is a plugin for Hex-Ray's IDA Pro disassembler designed to enhance IDA's capabilities as an exploit development and vulnerability research tool. Some of the plugin's features include a powerful ROP gadgets search engine, semantic gadget analysis and filtering, interactive ROP chain builder, stack pivot analysis, writable function pointer search, cyclic memory pattern generation and offset analysis, detection of bad characters and memory holes, and many others.
-	* [Ida Pomidor](https://thesprawl.org/projects/ida-pomidor/)
-	* IDA Pomidor is a fun and simple plugin for the Hex-Ray's IDA Pro disassembler that will help you retain concentration and productivity during long reversing sessions. 
+
 
 [fREedom](capstone based disassembler for extracting to binnavi )
 * fREedom is a primitive attempt to provide an IDA Pro independent means of extracting disassembly information from executables for use with binnavi (https://github.com/google/binnavi).
@@ -515,8 +488,17 @@ programming environment.
 [idaConsonance](https://github.com/eugeii/ida-consonance)
 * Consonance, a dark color theme for IDA.
 
+[Ida Sploiter](https://thesprawl.org/projects/ida-sploiter/)
+* IDA Sploiter is a plugin for Hex-Ray's IDA Pro disassembler designed to enhance IDA's capabilities as an exploit development and vulnerability research tool. Some of the plugin's features include a powerful ROP gadgets search engine, semantic gadget analysis and filtering, interactive ROP chain builder, stack pivot analysis, writable function pointer search, cyclic memory pattern generation and offset analysis, detection of bad characters and memory holes, and many others.
 
+[Ida Pomidor](https://thesprawl.org/projects/ida-pomidor/)
+* IDA Pomidor is a fun and simple plugin for the Hex-Ray's IDA Pro disassembler that will help you retain concentration and productivity during long reversing sessions. 
 
+[Lighthouse - Code Coverage Explorer for IDA Pro](https://github.com/gaasedelen/lighthouse)
+* Lighthouse is a code coverage plugin for IDA Pro. The plugin leverages IDA as a platform to map, explore, and visualize externally collected code coverage data when symbols or source may not be available for a given binary.
+
+[IDAPython Embedded Toolkit](https://github.com/maddiestone/IDAPythonEmbeddedToolkit)
+* IDAPython is a way to script different actions in the IDA Pro disassembler with Python. This repository of scripts automates many different processes necessary when analyzing the firmware running on microcontroller and microprocessor CPUs. The scripts are written to be easily modified to run on a variety of architectures. Read the instructions in the header of each script to determine what ought to be modified for each architecture.
 
 
 
@@ -592,7 +574,7 @@ programming environment.
 
 
 
-
+----------------------------------------------
 ### <a name="are">Anti-Reverse Engineering Techniques & Countermeasures</a>
 
 [Anti-RE A collection of Anti-Reverse Engineering Techniques](http://pnx.tf/files/spring7_antire_plohmann_kannen.pdf)
@@ -615,10 +597,16 @@ programming environment.
 
 [Fun combining anti-debugging and anti-disassembly tricks](http://blog.sevagas.com/?Fun-combining-anti-debugging-and)
 
+[reductio [ad absurdum]](https://github.com/xoreaxeaxeax/reductio)
+* an exploration of code homeomorphism: all programs can be reduced to the same instruction stream.
+
+[REpsych - Psychological Warfare in Reverse Engineering](https://github.com/xoreaxeaxeax/REpsych/blob/master/README.md)
+* The REpsych toolset is a proof-of-concept illustrating the generation of images through a program's control flow graph (CFG).
 
 
 
 
+---------------------
 ### <a name="guide">Guides & Tutorials</a>
 [How to RE data files?](https://www.reddit.com/r/ReverseEngineering/comments/l8ac0/how_to_re_data_files/)
 * Good read over.
@@ -777,7 +765,8 @@ Hacking the Dropcam series
 
 [Introduction to Reversing and Pwning - David Weinman - BsidesLV ProvingGrounds17](https://www.youtube.com/watch?v=4rjWlOvbz7U&app=desktop)
 
-
+[Reverse Engineering of Proprietary Protocols, Tools and Techniques - Rob Savoye - FOSDEM 2009 ](https://www.youtube.com/watch?v=t3s-mG5yUjY)
+* This talk is about reverse engineering a proprietary network protocol, and then creating my own implementation. The talk will cover the tools used to take binary data apart, capture the data, and techniques I use for decoding unknown formats. The protocol covered is the RTMP protocol used by Adobe flash, and this new implementation is part of the Gnash project.
 
 
 

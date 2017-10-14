@@ -46,16 +46,16 @@ Windows
 
 
 Linux
-* [Linux Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Collection.md)
-* [Linux Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Command_and_Control.md)
-* [Linux Credential Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Credential_Access.md)
-* [Linux Defense Evasion](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Defense_Evasion.md)
-* [Linux Discovery](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Discovery.md)
-* [Linux Exection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Execution.md)
-* [Linux Exfiltration](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Exfiltration.md)
-* [Linux Lateral Movement](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Lateral_Movement.md)
-* [Linux Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Persistence.md)
-* [Linux Privilege Escalation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux_Privilege_Escalation.md)
+* [Linux Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Collection.md)
+* [Linux Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Command%20and%20Control.md)
+* [Linux Credential Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Credential%20Access.md)
+* [Linux Defense Evasion](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Defense%20Evasion.md)
+* [Linux Discovery](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Discovery.md)
+* [Linux Exection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Execution.md)
+* [Linux Exfiltration](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Exfiltration.md)
+* [Linux Lateral Movement](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Lateral%20Movement.md)
+* [Linux Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Persistence.md)
+* [Linux Privilege Escalation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Privilege%20Escalation.md)
 
 Mac/OS X
 

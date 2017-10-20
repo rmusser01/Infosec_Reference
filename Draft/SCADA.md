@@ -5,10 +5,13 @@
 
 ### ToC
 
-* Articles/Blogposts
-* Talks/Presentations
-* Tools
-
+* [General](#general)
+* [Articles/Blogposts](#articles)
+* [Talks/Presentations](#talks)
+* [Tools](#tools)
+* [Simulators](#sim)
+* [Testing Tools](#test)
+* [Honeypots](#honey)
 
 #### Sort
 [PLC Training Org](http://plc-training.org/plc-network-to-hmi-scada.html)
@@ -17,7 +20,7 @@
 #### End Sort
 
 
-### General
+### <a name="general"></a>General
 
 [Introduction to Attacking ICS/SCADA Systems for Penetration Testers -GDS Sec](http://blog.gdssecurity.com/labs/2017/5/17/introduction-to-attacking-icsscada-systems-for-penetration-t.html)
 
@@ -34,13 +37,16 @@
 
 
 
-### Articles/Blogposts
+
+
+-------------------
+### <a name="articles"></a>Articles/Blogposts
 
 
 
 
-
-### Talks/Presentations
+------------------------
+### <a name="talks"></a>Talks/Presentations
 
 [SCADA Strangelove or: How I Learned to Start Worrying and Love Nuclear Plants](https://www.youtube.com/watch?v=o2r7jbwTv6w)
 * Modern civilization unconditionally depends on information systems. It is paradoxical but true that ICS/SCADA systems are the most insecure systems in the world. From network to application, SCADA is full of configuration issues and vulnerabilities. During our report, we will demonstrate how to obtain full access to a plant via:
@@ -88,8 +94,8 @@
 
 
 
-
-### Tools
+--------------------
+### <a name="tools"></a>Tools
 [python-opcua](https://github.com/FreeOpcUa/python-opcua/blob/master/README.md)
 * OPC UA binary protocol implementation is quasi complete and has been tested against many different OPC UA stacks. API offers both a low level interface to send and receive all UA defined structures and high level classes allowing to write a server or a client in a few lines. It is easy to mix high level objects and low level UA calls in one application.
 
@@ -105,14 +111,25 @@
 * Moki is a modification of Kali to encorporate various ICS/SCADA Tools scattered around the internet, to create a customized Kali Linux geared towards ICS/SCADA pentesting professionals.
 
 
-#### Simulation Software
+
+
+
+-------------------
+#### <a name="sim"></a>Simulation Software
 
 [MiniCPS](https://github.com/scy-phy/minicps)
 * MiniCPS is a framework for Cyber-Physical Systems real-time simulation. It includes support for physical process and control devices simulation, and network emulation. It is build on top of mininet.
 
 [Simulated Physics And Embedded Virtualization Integration (SPAEVI) - Overview](http://www.spaevi.org/p/the-simulated-physics-and-embedded.html)
 
-#### Testing Tools
+
+
+
+
+
+
+----------------------
+#### <a name="test"></a>Testing Tools
 
 
 [smod - MODBUS Penetration Testing Framework](https://github.com/enddo/smod)
@@ -124,7 +141,12 @@
 [Redpoint](https://github.com/digitalbond/Redpoint)
 * Digital Bond's ICS Enumeration Tools
 
-#### Honeypots
+
+
+
+
+
+#### <a name="honey"></a>Honeypots
 
 [T-Pot](https://dtag-dev-sec.github.io/mediator/feature/2016/03/11/t-pot-16.03.html)
 * T-Pot 16.03 - Enhanced Multi-Honeypot Platform

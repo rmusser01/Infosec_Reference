@@ -3,11 +3,23 @@
 
 ### TOC
 * Cull
-* Articles/Writeups
-* Presentations & Talks
-* Tools
-* Reference Sites
-* Miscellaneous
+* [General](#general)
+* [Articles/Writeups](#writeups)
+* [Presentations & Talks](#talks)
+* [Tools](#tools))
+* [CVS/Git/Similar](#cvs)
+* [DNS Stuff/related](#dns)
+* [Email Gathering](#email)
+* [Fancy Search Engines](#search)
+* [General Meta Data](#meta)
+* [General Data Scrapers](#scrape)
+* [Google Hacking](#gh)
+* [Site Specific Tools](#site)
+* [Social Media Search/Enumeration](#social)
+* [Company/People Searching](#ppl)
+* [Reference Sites](#reference)
+* [Miscellaneous](#misc)
+
 
 
 
@@ -31,7 +43,7 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 
 --------------------
-### General
+### <a name="general"></a>General
 General
 * SWOT - Strengths, Weaknesses, Opportunities, Threats
 [Open Source Intelligence - Wikipedia](http://en.wikipedia.org/wiki/Open-source_intelligence)
@@ -84,7 +96,7 @@ General
 
 
 --------------------
-### Articles/Writeups
+### <a name="writeups"></a>Articles/Writeups
 
 
 [Some blog posts describing/bringing you up to speed on OSINT by krypt3ia](http://krypt3ia.wordpress.com/2012/01/11/the-subtle-art-of-osint/)
@@ -102,7 +114,7 @@ General
 
 
 
-### Presentations & Talks
+### <a name="talks"></a>Presentations & Talks
 
 [Pwning People Personally - Josh Schwartz](https://www.youtube.com/watch?v=T2Ha-ZLZTz0)
 
@@ -134,7 +146,7 @@ General
 
 
 -------------
-### OSINT Tools/Resources
+### <a name="tools"></a>OSINT Tools/Resources
 
 Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&user=Mediaquest
 
@@ -188,7 +200,7 @@ Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&use
 
 
 ------------------
-#### Company/People Searching
+#### <a name="ppl"></a>Company/People Searching
 
 [data.com](https://www.data.com/)
 
@@ -220,7 +232,7 @@ Reference Site: http://osintinsight.com/shared.php?expand=169,175&folderid=0&use
 
 
 -------------
-#### CVS/Git/Similar Focused
+#### <a name="cvs"></a>CVS/Git/Similar Focused
 
 [repo-supervisor](https://github.com/auth0/repo-supervisor)
 
@@ -250,7 +262,7 @@ when directory browsing is turned off.
 
 
 ----------------
-###### DNS Stuff
+###### <a name="dns"></a>DNS Stuff
 
 [typofinder](https://github.com/nccgroup/typofinder)
 * Typofinder for domain typo discovery
@@ -265,7 +277,7 @@ when directory browsing is turned off.
 
 
 -------------
-#### Email Gathering
+#### <a name="email"></a>Email Gathering
 
 [SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail)
 * Email recon made fast and easy, with a framework to build on
@@ -283,7 +295,7 @@ when directory browsing is turned off.
 
 
 -------------
-#### Fancy Search Engines
+#### <a name="search"></a>Fancy Search Engines
 
 [Entity Cube](http://entitycube.research.microsoft.com/) 
 * EntityCube is a research prototype for exploring object-level search technologies, which automatically summarizes the Web for entities (such as people, locations and organizations) with a modest web presence.
@@ -303,7 +315,7 @@ when directory browsing is turned off.
 
 
 -------------
-#### General Meta Data
+#### <a name="meta"></a>General Meta Data
 
 
 [Just-Metadata](https://github.com/ChrisTruncer/Just-Metadata)
@@ -322,7 +334,7 @@ when directory browsing is turned off.
 
 
 -------------
-#### General Data Scrapers
+#### <a name="scrape"></a> General Data Scrapers
 
 [XRAY](https://github.com/evilsocket/xray)
 * XRay is a tool for recon, mapping and OSINT gathering from public networks.
@@ -338,7 +350,7 @@ when directory browsing is turned off.
 
 
 -------------
-#### Google Hacking
+#### <a name="gh"></a>Google Hacking
 
 [Google Hacking for Penetration Testers](https://www.blackhat.com/presentations/bh-europe-05/BH_EU_05-Long.pdf)
 
@@ -356,7 +368,7 @@ when directory browsing is turned off.
 
 
 -----------
-### Network Information Search Engines
+### <a name="nin"></a>Network Information Search Engines
 
 [Whoisology](https://whoisology.com/)
 * Whoisology is a domain name ownership archive with literally billions of searchable and cross referenced domain name whois records. 
@@ -375,7 +387,7 @@ when directory browsing is turned off.
 
 
 
-##### Site Specific
+##### <a name="site"></a>Site Specific
 
 [linkedin](https://github.com/eracle/linkedin)
 * Linkedin Scraper using Selenium Web Driver, Firefox 45, Ubuntu and Scrapy
@@ -404,7 +416,7 @@ when directory browsing is turned off.
 
 
 ---------------
-### Social Media Search/Enumeration
+### <a name="social"></a>Social Media Search/Enumeration
 
 [NameCHK](https://namechk.com/)
 * Check to see if your desired username or vanity url is still available at dozens of popular Social Networking and Social Bookmarking websites.

@@ -3,11 +3,17 @@
 
 
 #### ToC
-* Sort
-* Talks/Videos
-* Articles/Blogposts
-* Papers
-* Tools
+* [General](#general](#general)
+* [Talks/Videos](#talks)
+* [Articles/Blogposts](#articles)
+* [Papers](#papers)
+* [Tools](#tools)
+* [HW](#hw)
+* [SW](#sw)
+* [Command and Control](#cnc)
+* [Domain Fronting](#front)
+* [Egress](#egress)
+* [Domain Reputation Checking](#check)
 
 ### Sort
 
@@ -32,7 +38,7 @@
 
 
 --------------
-### General
+### <a name="general"></a>General
 
 [Common Ground Part 1: Red Team History & Overview](https://www.sixdub.net/?p=705)
 
@@ -47,7 +53,7 @@
 
 
 --------------
-### Talks/Videos
+### <a name="talks"></a>Talks/Videos
 
 [Stupid RedTeamer Tricks - Laurent Desaulniers](https://www.youtube.com/watch?v=2g_8oHM0nwA&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=11)
 
@@ -91,7 +97,7 @@
 
 
 --------------
-### Slides
+### <a name="slides"></a>Slides
 
 [Make It Count: Progressing through Pentesting - Bálint Varga-Perke -Silent Signal](https://silentsignal.hu/docs/Make_It_Count_-_Progressing_through_Pentesting_Balint_Varga-Perke_Silent_Signal.pdf)
 
@@ -99,8 +105,13 @@
 
 [Implanting a Dropcam](https://www.defcon.org/images/defcon-22/dc-22-presentations/Moore-Wardle/DEFCON-22-Colby-Moore-Patrick-Wardle-Synack-DropCam-Updated.pdf)
 
+
+
+
+
+
 --------------
-### Articles / Blogposts
+### <a name="articles"></a>Articles / Blogposts
 
 [Fools of Golden Gate](https://blog.silentsignal.eu/2017/05/08/fools-of-golden-gate/)
 * How major vulnerabilities/large amounts of publicly vulnerable systems can exist without public recognition for long periods of time. (i.e. CVEs(10.0) exist, but no mapping in nessus/metasploit/etc)
@@ -122,7 +133,7 @@
 
 
 --------------
-### Papers
+### <a name="papers"></a>Papers
 [Blocking-resistant communication through domain fronting](https://www.bamsoftware.com/papers/fronting/)
 
 [Abusing Windows Management Instrumentation (WMI) to Build a Persistent, Asyncronous, and Fileless Backdoor](https://www.blackhat.com/docs/us-15/materials/us-15-Graeber-Abusing-Windows-Management-Instrumentation-WMI-To-Build-A-Persistent%20Asynchronous-And-Fileless-Backdoor-wp.pdf)
@@ -138,7 +149,7 @@
 
 
 --------------
-### Tools
+### <a name="tools"></a>Tools
 
 [PenTesting-Scripts - killswitch-GUI](https://github.com/killswitch-GUI/PenTesting-Scripts)
 
@@ -157,7 +168,7 @@
 
 
 --------------
-##### HW
+##### <a name="hw"></a>HW
 [DigiDucky - How to setup a Digispark like a rubber ducky](http://www.redteamr.com/2016/08/digiducky/)
 
 [How to Build Your Own Penetration Testing Drop Box - BHIS](https://www.blackhillsinfosec.com/?p=5156&)
@@ -171,7 +182,7 @@
 
 
 --------------
-###### SW
+###### <a name="sw"></a>SW
 
 [Domain Hunter](https://github.com/minisllc/domainhunter)
 * Checks expired domains, bluecoat categorization, and Archive.org history to determine good candidates for phishing and C2 domain names
@@ -182,7 +193,7 @@
 
 
 --------------
-### Command & Control
+### <a name="cnc"></a>Command & Control
 [Expand Your Horizon Red Team – Modern SaaS C2](https://cybersyndicates.com/2017/04/expand-your-horizon-red-team/)
 
 [Expand Your Horizon Red Team – Modern SaaS C2 - Python WSGI C2](https://cybersyndicates.com/2017/04/expand-your-horizon-red-team/)
@@ -210,7 +221,10 @@
 [Command and Control Using Active Directory](http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/)
 
 
-### Domain Fronting
+
+
+-----------
+### <a name="front"></a>Domain Fronting
 
 [FindFrontableDomains](https://github.com/rvrsh3ll/FindFrontableDomains)
 * Search for potential frontable domains
@@ -228,7 +242,7 @@
 
 
 --------------
-### Egress
+### <a name="egress"></a>Egress
 
 #### Talks
 
@@ -269,7 +283,7 @@
 
 
 --------------
-### Persistence
+### <a name="persistence"></a>Persistence
 
 [Staying Persistent in Software Defined Networks](https://www.blackhat.com/docs/us-15/materials/us-15-Pickett-Staying-Persistent-In-Software-Defined-Networks-wp.pdf)
 
@@ -292,7 +306,7 @@
 
 
 --------------
-### Domain Reputation Check
+### <a name="check"></a>Domain Reputation Check
 Domain Reputation Sites
 * [Alien Vault](http://www.alienvault.com)
 * [Isithacked?](http://www.isithacked.com)

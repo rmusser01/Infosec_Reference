@@ -6,12 +6,14 @@
 
 ### TOC
 
-* Cull
-* Developing
-* Identifying/Defending Against
-* Talks/Videos
-* Tools
-* Writeups
+* [Cull](#cull)
+* [Developing](#dev)
+* [Identifying/Defending Against](#id)
+* [Talks/Videos](#talks)
+* [Writeups](#writeups)
+* [Papers](#papers)
+* [Tools](#tools)
+
 
 ### Sort
 
@@ -164,7 +166,7 @@ Windows Rootkits(excellent writeup/introduction to windows rootkits)
 [Security Evaluation of Intel's Active Management Technology](http://people.kth.se/~maguire/DEGREE-PROJECT-REPORTS/100402-Vassilios_Ververis-with-cover.pdf)
 
 
-### Tools
+### <a name="tools"></a>Tools
 
 [DragonKing Rootkit](https://github.com/mgrube/DragonKing)
 * This is an open source rootkit created for a class taught on Rootkit Design. This rootkit hides by hooking the system call table and using an agent to do interactive manipulation in userland.

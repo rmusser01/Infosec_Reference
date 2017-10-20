@@ -3,49 +3,54 @@
 # Web, Web Applications & Browsers
 
 Web TOC
-* General
-* Securing Web Applications Checklists
-* Talks & Presentations
-* General Tools
-* Different Typs of Web Based Attacks
-	* Abuse of Functionality
-	* Brute Force Fuzzing
-	* Cross-Site-Request Forgery 
-	* De/Encoders 
-	* Data Structure Attacks
-	* Embedded Malicious Code
-	* Exploitation of Authentication 
-	* Injection Based Attacks
+* General](#general)
+* [Purposely Vulnerable Web Apps](#pvuln)
+* [Securing Web Applications Checklists](#checklist)
+* [Talks & Presentations](#talks)
+* [General Tools](#generalt)
+* [Different Typs of Web Based Attacks](#difatk)
+	* [Abuse of Functionality](#abuse)
+	* [Brute Force Fuzzing](#brute)
+	* [Cross-Site-Request Forgery](#csrf)
+	* [De/Encoders](#encode)
+	* [Data Structure Attacks](#dsa)
+	* [Embedded Malicious Code](#emc)
+	* [Exploitation of Authentication](#eoa) 
+	* [Injection Based Attacks](#ija)
 		* OS Command Injection 
 		* (NO)SQL Injection
-	* JNDI
-	* Java Serialization Attacks 
-	* JSON Web Tokens 
-	* LFI & RFI
-	* Path Traversal Attacks
-	* Server Side Request Forgery 
-	* Server Side Include
-	* Server Side Template Injection
-	* Timing Attacks
-	* Web Shells
-	* XSS
-* API Stuff 
-* Attacking Browsers
-* CMS Specific Tools
-* HTML5
-* Javascript
-* REST & Web Services
-* Scraping
-* Site/WebApp Scanners
-* Web Sockets
-* Web Proxies
-* Web Application Firewalls(WAFs)
-	* Bypassing WAFs
-* Web Application Attack Writeups
-* Non-Attack Writeups
-* Papers
-* Miscellaneous
-* Burp Stuff/Plugins
+	* [JNDI](#jndi)
+	* [Java Serialization Attacks](#jsa) 
+	* [JSON Web Tokens](#jwt)
+	* [LFI & RFI](#lrfi)
+	* [Path Traversal Attacks](#pta)
+	* [Server Side Request Forgery](#ssrf)
+	* [Server Side Include](#ssi)
+	* [Server Side Template Injection](#ssti)
+	* [Timing Attacks](#timing)
+	* [Web Shells](#shells)
+	* [XSS](#xss)
+* [API Stuff](#api)
+* [Attacking Browsers](#atkb)
+* [CMS Specific Tools](#cms)
+* [HTML5](#html5)
+* [Javascript](#javascript)
+* [REST & Web Services](#rest)
+* [PHP](#php)
+* [Ruby](#ruby)
+* [Scraping](#scraping)
+* [Site/WebApp Scanners](#scanners)
+* [Web Sockets](#websocket)
+* [Web Proxies](#webproxy)
+* [Web Application Firewalls(WAFs)](#waf)
+	* [Bypassing WAFs](#bwaf)
+* [Web Application Attack Writeups](#writeups)
+* [Non-Attack Writeups](#nonwriteup)
+* [Papers](#papers)
+* [Miscellaneous](#misc)
+* [Burp Stuff/Plugins](#burp)
+* [AWS stuff](#aws)
+* [Google Compute Cloud/AppEngine](#gcc)
 
 
 
@@ -110,8 +115,11 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 * The Big List of Naughty Strings is an evolving list of strings which have a high probability of causing issues when used as user-input data. This is intended for use in helping both automated and manual QA testing; useful for whenever your QA engineer walks into a bar.
 
 
+
+
+
 ------------------
-### Purposely Vulnerable Web Applications/Testing Grounds
+### <a name="pvuln"></a>Purposely Vulnerable Web Applications/Testing Grounds
 [OWASP Vulnerable Web Applications Directory Project/Pages/Offline](https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project/Pages/Offline)
 
 [OWASP Juice Shop](https://github.com/bkimminich/juice-shop)
@@ -158,7 +166,7 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 
 
 ----------------
-### Talks &  Presentations
+### <a name="talks"></a>Talks &  Presentations
 
 [The Website Obesity Crisis](http://idlewords.com/talks/website_obesity.htm)
 
@@ -240,7 +248,7 @@ As seen on: https://www.owasp.org/index.php/Category:Attack
 
 
 -------------------
-##### <a name="Abuse of Functionality[#
+##### <a name="abuse"></a>Abuse of Functionality
 [jsgifkeylogger](https://github.com/wopot/jsgifkeylogger)
 * a javascript keylogger included in a gif file This is a PoC
 
@@ -266,7 +274,7 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 
 -------------------
-#### Cross Site Request Forgery (CSRF)
+#### <a name="csrf"></a>Cross Site Request Forgery (CSRF)
 [Cross Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
 
 
@@ -310,6 +318,8 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 [Exploiting Python Code Injection in Web Applications](https://sethsec.blogspot.com/2016/11/exploiting-python-code-injection-in-web.html)
 
+
+
 #### OS Command Injection
 
 [commix](https://github.com/stasinopoulos/commix)
@@ -325,7 +335,7 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 
 -------------------
-#### JNDI Attack Class
+#### <a name="jndi"></a>JNDI Attack Class
 [A Journey from JNDI-LDAP Manipulation to RCE](https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf)
 
 
@@ -381,7 +391,7 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 
 -------------------
-### JSON Web Tokens
+### <a name="jwt"></a>JSON Web Tokens
 
 [json token decode](http://jwt.calebb.net/)
 
@@ -422,7 +432,7 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 
 -------------------
-### (NO)SQL Injection
+### <a name="sql"></a>(NO)SQL Injection
 
 [SQLi Lab lessons](https://github.com/Audi-1/sqli-labs)
 * SQLI-LABS is a platform to learn SQLI
@@ -500,16 +510,21 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 
 -------------
-### Server Side Request Forgery (SSRF)
+### <a name="ssrf"></a>Server Side Request Forgery (SSRF)
 
 [SSRF bible. Cheatsheet](https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit#heading=h.t4tsk5ixehdd)
 
+[What is Server Side Request Forgery (SSRF)?](https://www.acunetix.com/blog/articles/server-side-request-forgery-vulnerability/)
 
 
 
+--------------------
+### <a name="ssi"></a>Server Side Include
+[Server Side Includes - Wikipedia](https://en.wikipedia.org/wiki/Server_Side_Includes)
 
+[Server-Side Includes (SSI) Injection - OWASP](https://www.owasp.org/index.php/Server-Side_Includes_(SSI)_Injection)
 
-
+[Testing for SSI Injection (OTG-INPVAL-009) - OWASP](https://www.owasp.org/index.php/Testing_for_SSI_Injection_(OTG-INPVAL-009))
 
 -------------------
 ### <a name="ssti">Server Side Template Injection</a>
@@ -530,7 +545,7 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 
 ----------------
-### SWF
+### <a name="swf"></a>SWF
 
 [The old is new, again. CVE-2011-2461 is back!](https://www.slideshare.net/ikkisoft/the-old-is-new-again-cve20112461-is-back)
 * As a part of an ongoing investigation on Adobe Flash SOP bypass techniques, we identified a vulnerability affecting old releases of the Adobe Flex SDK compiler. Further investigation traced the issue back to a well known vulnerability (CVE20112461), already patched by Adobe. Old vulnerability, let's move on? Not this time. CVE20112461 is a very interesting bug. As long as the SWF file was compiled with a vulnerable Flex SDK, attackers can still use this vulnerability against the latest web browsers and Flash plugin. Even with the most recent updates, vulnerable Flex applications hosted on your domain can be exploited. In this presentation, we will disclose the details of this vulnerability (Adobe has never released all technicalities) and we will discuss how we conducted a large scale analysis on popular websites, resulting in the identification of numerous Alexa Top 50 sites vulnerable to this bug. Finally, we will also release a custom tool and a Burp plugin capable of detecting vulnerable SWF applications. 
@@ -552,7 +567,7 @@ Advanced Flash Vulnerabilities in Youtube Writeups Series
 
 
 -------------------
-### Timing Attacks
+### <a name="timing"></a>Timing Attacks
 
 [Race The Web (RTW)](https://github.com/insp3ctre/race-the-web)
 * Tests for race conditions in web applications by sending out a user-specified number of requests to a target URL (or URLs) simultaneously, and then compares the responses from the server for uniqueness. Includes a number of configuration options.
@@ -658,7 +673,7 @@ Advanced Flash Vulnerabilities in Youtube Writeups Series
 
 
 --------------------
-### API Stuff
+### <a name="api"></a>API Stuff
 
 [burp-rest-api](https://github.com/vmware/burp-rest-api)
 * A REST/JSON API to the Burp Suite security tool.  Upon successfully building the project, an executable JAR file is created with the Burp Suite Professional JAR bundled in it. When the JAR is launched, it provides a REST/JSON endpoint to access the Scanner, Spider, Proxy and other features of the Burp Suite Professional security tool.
@@ -757,7 +772,7 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 --------------
-### PHP
+### <a name="php"></a>PHP
 
 [Is PHP unserialize() exploitable without any 'interesting' methods? - StackOverflow](https://security.stackexchange.com/questions/77549/is-php-unserialize-exploitable-without-any-interesting-methods)
 
@@ -786,7 +801,7 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 ----------------
-### REST & Web Services
+### <a name="rest"></a>REST & Web Services
 
 [REST Security Cheat Sheet](REST Security Cheat Sheet)
 
@@ -821,7 +836,7 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 --------------------------------
-### Ruby/Ruby on Rails
+### <a name="ruby"></a>Ruby/Ruby on Rails
 [Executing commands in ruby](http://blog.bigbinary.com/2012/10/18/backtick-system-exec-in-ruby.html)
 
 [Attacking Ruby on Rails Applications](http://phrack.org/issues/69/12.html#article)
@@ -835,7 +850,7 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 -----------------
-### Scraping
+### <a name="scraping"></a>Scraping
 [WeasyPrint](http://weasyprint.org/)
 * WeasyPrint is a visual rendering engine for HTML and CSS that can export to PDF. It aims to support web standards for printing. WeasyPrint is free software made available under a BSD license.
 
@@ -843,8 +858,13 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 * An open source and collaborative framework for extracting the data you need from websites. 
 
 
+
+
+
+
+
 ----------------
-### Site/Webapp Scanners
+### <a name="scanners"></a>Site/Webapp Scanners
 
 [nikto]()
 
@@ -883,7 +903,7 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 ----------------
-### Web Sockets
+### <a name="websocket"></a>Web Sockets
 
 [The WebSocket Protocol Standard - IETF](https://tools.ietf.org/html/rfc6455)
 
@@ -1136,7 +1156,7 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 --------------------
-### AWS
+### <a name="aws"></a>AWS
 
 [Gone in 60 Milliseconds - Intrusion and Exfiltration in Server-less Architectures](https://media.ccc.de/v/33c3-7865-gone_in_60_milliseconds)
 * More and more businesses are moving away from monolithic servers and turning to event-driven microservices powered by cloud function providers like AWS Lambda. So, how do we hack in to a server that only exists for 60 milliseconds? This talk will show novel attack vectors using cloud event sources, exploitabilities in common server-less patterns and frameworks, abuse of undocumented features in AWS Lambda for persistent malware injection, identifying valuable targets for pilfering, and, of course, how to exfiltrate juicy data out of a secure Virtual Private Cloud. 
@@ -1150,7 +1170,7 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 ------------------
-### Google Compute Cloud/AppEngine
+### <a name="gcc"></a>Google Compute Cloud/AppEngine
 
 
 [Introducing G-Scout](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2017/august/introducing-g-scout/)

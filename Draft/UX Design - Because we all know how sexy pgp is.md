@@ -2,6 +2,12 @@
 
 
 
+#### ToC
+* [General](#general)
+* [Books](#books)
+* [Talks/Presentations](#talks)
+* [Websites/Organizations](#web)
+
 
 
 
@@ -16,7 +22,7 @@ https://www.uplabs.com/
 #### End Sort
 
 
-### General
+### <a name="general"></a>General
 
 Required Reading: [The Design of Everyday Things](http://www.jnd.org/books/design-of-everyday-things-revised.html)
 * This book is extraordinary not only in the fact that its a crash course on UI/UX design but also for the fact that almost anyone can read it and understand the principles it talks about.
@@ -32,25 +38,25 @@ Required Reading: [The Design of Everyday Things](http://www.jnd.org/books/desig
 [User Interface Design Basics - usability.gov](https://www.usability.gov/what-and-why/user-interface-design.html)
 
 
-### Books
+### <a name="books"></a>Books
 * The Design of Everyday Things
 * Emotional Design
 * Don't Make me think
 
 
 
-### Talks & Presentations
+### <a name="talks"></a>Talks & Presentations
 
 [UI Fundamentals for Programmers by Ryan Singer](https://vimeo.com/6702766)
 
 
 
-### Articles/Writeups
+### <a name="article"></a>Articles/Writeups
 
 
 
 
-### Websites/Organizations
+### <a name="web"></a>Websites/Organizations
 
 [Dark Patterns: fighting user deception worldwide](http://darkpatterns.org/)
 * A Dark Pattern is a user interface that has been carefully crafted to trick users into doing things, such as buying insurance with their purchase or signing up for recurring bills.

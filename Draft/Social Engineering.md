@@ -1,16 +1,14 @@
 
 
-##Social Engineering
+## Social Engineering
 
-TOC
+##### TOC
 
-CULL
 * [Articles](#articles)
-
 * [Books](#books)
 * [Presentations](#talks)
 * [Papers](#papers)
-
+* [Tools](#tools)
 
 
 
@@ -31,8 +29,7 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 
 
 
-
-
+------------------------
 ### <a name="articles">Articles
 
 [Source Handling](http://guerrillamerica.com/2014/01/source-handling-part-one/)
@@ -49,6 +46,9 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 [Phishing Family Tree Now: A Social Engineering Odyssey](https://www.blackhillsinfosec.com/?p=5629)
 
 
+
+
+----------------------
 ### <a name="books">Books</a>
 Books
 * [Toastmaster's guide to body language](http://westsidetoastmasters.com/resources/book_of_body_language/toc.html)
@@ -75,7 +75,7 @@ Books
 * Influence Without Authority
 
 
-
+--------------------
 ### <a name="talks">Presentations</a>:
 
 [Social Engineering Like In Movies -- Reality of awareness and manipulation - Dale Pearson- #days](https://www.youtube.com/watch?v=XUIWi5p0oFI)
@@ -158,10 +158,6 @@ Books
 
 [**I Will Kill You** - Chris Rock(Defcon23)](https://www.youtube.com/watch?v=9FdHq3WfJg)
 
-
-
-
-
 [Disguise - Appearance Hacking](http://www.irongeek.com/i.php?page=videos/derbycon2/valerie-thomas-appearance-hacking-101-the-art-of-everyday-camouflage)
 * [Transcript](http://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are/transcript)
 * My notes from it: 
@@ -189,7 +185,7 @@ Books
 
 
 
-
+-----------------------------
 ### <a name="papers">Research Papers</a>
 
 [Construal-Level Theory of Psychological Distance](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/)
@@ -201,8 +197,8 @@ Books
 
 
 
-
-### Tools
+--------------------------------
+### <a name="tools"></a>Tools
 
 [CatMyFish](https://github.com/Mr-Un1k0d3r/CatMyFish)
 * Search for categorized domain that can be used during red teaming engagement. Perfect to setup whitelisted domain for your Cobalt Strike beacon C&C.  It relies on expireddomains.net to obtain a list of expired domains. The domain availability is validated using checkdomain.com

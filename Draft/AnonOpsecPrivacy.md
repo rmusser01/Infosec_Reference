@@ -8,7 +8,7 @@
 * [Articles](#Articles)
 * [How-Tos](#howtos)
 * [Papers](#Papers)
-* [Talks/Videos](#Talks)
+* [Talks/Videos](#talks)
 * [Tools](#Tools)
 * [Miscellaneous](#misc)
 
@@ -29,7 +29,7 @@
 
 
 
-### General
+### <a name="general"></a>General
 
 [OS X Security and Privacy Guide](https://github.com/drduh/OS-X-Security-and-Privacy-Guide)
 
@@ -37,7 +37,7 @@
 * Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
 
 
-### Blogposts
+### <a name="blog"></a>Blogposts
 [De-Anonymizing Alt.Anonymous.Messages](https://ritter.vg/blog-deanonymizing_amm.html)
 
 [Defeating and Detecting Browser Spoofing - Browserprint](https://browserprint.info/blog/defeatingSpoofing)
@@ -90,7 +90,7 @@
 
 
 
-### <a name="how-tos"How-Tos</a>
+### <a name="howtos"How-Tos</a>
 
 [How to stop Firefox from making automatic connections](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections)
 
@@ -224,7 +224,7 @@
 
 
 
-### **<a name="Tools">Tools</a>**
+### <a name="Tools">Tools</a>
 
 [FakeNameGenerator](http://www.fakenamegenerator.com/)
 
@@ -261,7 +261,7 @@
 
 
 
-### Misc
+### <a name="misc"></a>Misc
 
 [.NET Github: .NET core should not SPY on users by default #3093](https://github.com/dotnet/cli/issues/3093)
 

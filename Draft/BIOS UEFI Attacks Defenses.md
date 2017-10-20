@@ -6,13 +6,13 @@
 
 
 TOC
-* General
-* Exploitation
-* Firmware Analysis
-* Talks & Presentations
-* Tools
-* Papers & Writeups
-* Other
+* [General](#general)
+* [Exploitation](#exploit)
+* [Firmware Analysis](#firmware)
+* [Talks & Presentations](#talks)
+* [Tools](#tools)
+* [Papers & Writeups](#papers)
+* [Other](#other)
 
 
 
@@ -63,7 +63,7 @@ http://www.stoned-vienna.com/
 
 
 -----------------
-## Exploitation
+## <a name="exploit"></a>Exploitation
 
 [CHIPSEC module that exploits UEFI boot script table vulnerability](https://github.com/Cr4sh/UEFI_boot_script_expl)
 
@@ -96,7 +96,7 @@ http://www.stoned-vienna.com/
 
 
 ------------------------
-### Firmware Analysis
+### <a name="firmware"></a>Firmware Analysis
 
 [An Introduction to Firmware Analysis[30c3]** - This talk gives an introduction to firmware analysis: It starts with how to retrieve the binary, e.g. get a plain file from manufacturer, extract it from an executable or memory device, or even sniff it out of an update process or internal CPU memory, which can be really tricky. After that it introduces the necessary tools, gives tips on how to detect the processor architecture, and explains some more advanced analysis techniques, including how to figure out the offsets where the firmware is loaded to, and how to start the investigation. | https://www.youtube.com/watch?v=kvfP7StmFxY
 
@@ -134,10 +134,8 @@ Reverse Engineering Router Firmware walk through
 
 
 ----------------------
-### Programming
+### <a name="programming"></a>Programming
 
-
-[UEFI Programming - First Steps](http://x86asm.net/articles/uefi-programming-first-steps/)
 
 [UEFI Programming - First Steps](http://x86asm.net/articles/uefi-programming-first-steps/)
 
@@ -148,8 +146,7 @@ Reverse Engineering Router Firmware walk through
 
 
 -----------------
-### Talks & Presentations
-| Title | Link |
+### <a name="talks"></a>Talks & Presentations
 [BIOS Chronomancy: Fixing the Core Root of Trust for Measurement - BlackHat 2013](https://www.youtube.com/watch?v=NbYZ4UCN9GY)
 
 [Hacking Measured Boot and UEFI - Defcon20](https://www.youtube.com/watch?v=oiqcog1sk2E)
@@ -189,7 +186,7 @@ Reverse Engineering Router Firmware walk through
 
 
 --------------------
-### Tools
+### <a name="tools"></a>Tools
 
 [WindSLIC SLIC injectors](https://github.com/untermensch/WindSLIC)
 * includes UEFI, NTFS, bootmgr SLIC injectors and installers.
@@ -221,7 +218,7 @@ Reverse Engineering Router Firmware walk through
 
 
 -----------------------
-### Papers & Writeups
+### <a name="papers"></a>Papers & Writeups
 [Security Evaluation of Intel's Active Management Technology](http://people.kth.se/~maguire/DEGREE-PROJECT-REPORTS/100402-Vassilios_Ververis-with-cover.pdf)
 
 [Easily create UEFI applications using Visual Studio 2013](http://pete.akeo.ie/2015/01/easily-create-uefi-applications-using.html)
@@ -237,7 +234,7 @@ Reverse Engineering Router Firmware walk through
 
 
 -------------
-### Other
+### <a name="other"></a>Other
 [Notes on Intel Microcode Updates](http://hireme.geek.nz/Intel_x86_NSA_Microcode_Updates.pdf)
 
 [BIOS Mods - mydigitallife](https://forums.mydigitallife.net/forums/bios-mods.25/)

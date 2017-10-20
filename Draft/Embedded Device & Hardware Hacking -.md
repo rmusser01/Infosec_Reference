@@ -54,7 +54,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
-### General
+### <a name="general"></a>General
 
 [Reversing and Exploiting Embedded Devices: The Software Stack (Part 1)](https://p16.praetorian.com/blog/reversing-and-exploiting-embedded-devices-part-1-the-software-stack)
 
@@ -69,7 +69,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 ---------------------------
-### General Writeups/Articles
+### <a name="generalwriteups"></a>General Writeups/Articles
 
 [Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
 
@@ -95,7 +95,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 ---------------------------
-### General Talks/Presentations
+### <a name="generaltalks"></a>General Talks/Presentations
 
 [Jackson Thuraisamy & Jason Tran - Hacking POS PoS Systems](https://www.youtube.com/watch?v=-n7oJqmTUCo) 
 
@@ -119,8 +119,16 @@ http://greatscottgadgets.com/infiltrate2013/
 [Rooting the MikroTik routers (SHA2017)](https://www.youtube.com/watch?v=KZWGD9fWIcM)
 * In this talk I describe my journey into reverse engineering parts of MikroTik system to gain access to hardware features and the shell behind the RouterOS that has no “ls”.
 
+
+
+
+
+
+
+
+
 ---------------------------
-### General Tools
+### <a name="generaltools"></a>General Tools
 
 [ThunderGate](http://thundergate.io/)
 * ThunderGate is a collection of tools for the manipulation of Tigon3 Gigabit Ethernet controllers, with special emphasis on the Broadcom NetLink 57762, such as is found in Apple Thunderbolt Gigabit Ethernet adapters.

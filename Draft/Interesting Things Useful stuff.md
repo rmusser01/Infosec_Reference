@@ -1,13 +1,20 @@
 # Interesting Things & Useful Stuff
 
 ### TOC
+* [Attribution](#attribution)
+* [News/Reports](#news)
+* [General](#general)
+* [Tamper Evidence](#tamper)
+* [General Interesting things that aren't neccessarily infosec related](#notinfo)
+* [Interesting Talks & Videos](#talks)
 * [Interesting & Useful Attacks](#attacks)
 * [Interesting & Useful Papers](#papers)
-* [Interesting & Useful Projects](#projects)
+* [Interesting & Useful Hardware Projects](#hwprojects)
 * [Interesting & Useful Software](#software))
 * [Interesting & Useful Write-ups](#writeup)
-* Screen Scraping
-* Various Purpose Based OS's
+* [Simulators](#sim)
+* [Screen Scraping](#scrape)
+* [Various Purpose Based OS's](#purpose)
 
 
 
@@ -74,7 +81,7 @@ http://spth.virii.lu/articles.htm
 
 
 
-### Attribution
+### <a name="attribution"></a>Attribution
 
 [Cyber Attack Attribution Report](http://whohackedus.com/)
 
@@ -83,7 +90,7 @@ http://spth.virii.lu/articles.htm
 
 
 
-### News/Reports
+### <a name="news"></a>News/Reports
 
 [U.S. Department of Health and Human Services Office for Civil Rights Breach Portal: Notice to the Secretary of HHS Breach of Unsecured Protected Health Information](https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf)
 
@@ -97,7 +104,7 @@ http://spth.virii.lu/articles.htm
 
 
 
-### General
+### <a name="general"></a>General
 
 [Hamming - You and your research](https://www.youtube.com/watch?v=a1zDuOPkMSw)
 
@@ -148,12 +155,12 @@ http://spth.virii.lu/articles.htm
 [IA Guidance - NSA](https://www.iad.gov/iad/library/ia-guidance/index.cfm)
 
 [Weapons of Mass Distraction](http://conference.hitb.org/hitbsecconf2014kul/materials/D2T1%20-%20Haroon%20Meer%20Azhar%20Desai%20and%20Marco%20Slaviero%20-%20Weapons%20of%20Mass%20Distraction.pdf)
-	* In this talk, we aim to briefly cover the background of sock puppets (and related attacks) before moving on to real world demonstrations & “attacks“. Rigging polls, abusing Twitter, causing Reddit riots & targeting popular news organisations are some of the (many) attacks covered. In all these cases we discuss what we tried, what worked, what didn’t and what the implications are of the attacks. Where possible we will cover defences and solutions.
+* In this talk, we aim to briefly cover the background of sock puppets (and related attacks) before moving on to real world demonstrations & “attacks“. Rigging polls, abusing Twitter, causing Reddit riots & targeting popular news organisations are some of the (many) attacks covered. In all these cases we discuss what we tried, what worked, what didn’t and what the implications are of the attacks. Where possible we will cover defences and solutions.
 
 
 
 
-#### Tamper Evidence
+#### <a name="tamper"></a>Tamper Evidence
 
 [How to Steal a Nuclear Warhead Without Voiding Your XBox Warranty (paper)](https://www.scribd.com/document/47334072/How-to-Steal-a-Nuclear-Warhead-Without-Voiding-Your-XBox-Warranty-paper)
 
@@ -182,7 +189,7 @@ http://spth.virii.lu/articles.htm
 
 
 
-### General Interesting Things(that aren't necessarily infosec)
+### <a name="notinfo"></a>General Interesting Things(that aren't necessarily infosec)
 
 [Con Video Rig Enhancements - IronGeek & SkyDog](https://www.youtube.com/watch?v=BVCFAqLxdtY)
 
@@ -210,7 +217,7 @@ http://spth.virii.lu/articles.htm
 
 
 
-### Interesting Talks/Videos
+### <a name="talks"></a>Interesting Talks/Videos
 
 [I Will Kill You - Chris Rock](https://www.youtube.com/watch?feature=youtu.be&v=9FdHq3WfJgs&t=77&app=desktop)
 	* Have you ever wanted to kill someone? Do you want to get rid of your partner, your boss or your arch nemesis? Perhaps you want to enjoy your life insurance payout whilst you’re still alive. Do you have rich elderly parents that just won’t die quick enough? Or do you want a “Do Over” new identity.  Then, this presentation is for you! I’ll provide you with the insight and techniques on how to “kill” someone and obtain a real death certificate and shutdown their lives. It focuses on the lack of security controls that allow any of us to virtually kill off anyone or any number of people. Forget the Dexter way of killing someone, I’ll show you how to avoid the messy clean up and focusing in on the digital aspects. You could be dead right now and not even know it.
@@ -316,7 +323,7 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 
 
 
-### Interesting Attacks
+### <a name="attack"></a>Interesting Attacks
 [VM as injection payload ](http://infiltratecon.com/downloads/python_deflowered.pdf)
 [Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)
 
@@ -347,7 +354,7 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 
 
 
-### Interesting Software
+### <a name="software"></a>Interesting Software
 
 
 [Foreign LINUX](https://github.com/wishstudio/flinux)
@@ -449,7 +456,7 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 
 
 
-### Interesting Hardware Projects
+### <a name="hwprojects"></a>Interesting Hardware Projects
 
 
 [Digital Ding Dong Ditch](https://github.com/samyk/dingdong)
@@ -465,7 +472,7 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 
 
 
-### Interesting Programming
+### <a name="prog"></a>Interesting Programming
 
 [Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
 
@@ -480,7 +487,7 @@ Underhanded C
 
 
 
-### Interesting Writeups
+### <a name="writeups"></a>Interesting Writeups
 
 [Hacking the Source Engine](http://vallentinsource.com/hacking-source-engine)
 
@@ -535,7 +542,7 @@ Underhanded C
 
 
 
-### Interesting Papers
+### <a name="papers"></a>Interesting Papers
 
 
 [Wars Within](http://uninformed.org/?v=all&a=26&t=sumry)
@@ -609,7 +616,7 @@ Underhanded C
 
 
 
-### sites
+### <a name="sites"></a>sites
 
 http://www.mmoviper.com/
 
@@ -623,7 +630,7 @@ http://www.mmoviper.com/
 
 
 ---------------
-### Screen Scraping
+### <a name="scrape"></a>Screen Scraping
 
 [I Don’t Need No Stinking API: Web Scraping For Fun and Profit](https://blog.hartleybrody.com/web-scraping/)
 
@@ -650,7 +657,7 @@ http://www.mmoviper.com/
 
 
 -------------
-### Simulators/ions
+### <a name="simulation"></a>Simulators/ions
 
 [Shadow](http://shadow.github.io/)
 * Summary: Shadow is a unique, open source discrete-event network simulator that runs real applications like Tor. Shadow combines the accuracy of emulation with the efficiency and control of simulation, achieving the best of both approaches 
@@ -664,7 +671,7 @@ http://www.mmoviper.com/
 
 
 ---------------------------------
-### Various Purpose Based OS's
+### <a name="purpose"></a>Various Purpose Based OS's
 
 [Parrot Security](https://www.parrotsec.org/)
 

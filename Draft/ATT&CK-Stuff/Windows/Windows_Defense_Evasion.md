@@ -151,6 +151,10 @@
 * Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting Registry keys so that tools do not start at run time, or other methods to interfere with security scanning or event reporting. 
 
 
+[Invoke-Phant0m](https://github.com/hlldz/Invoke-Phant0m)
+* This script walks thread stacks of Event Log Service process (spesific svchost.exe) and identify Event Log Threads to kill Event Log Service Threads. So the system will not be able to collect logs and at the same time the Event Log Service will appear to be running.
+
+
 
 ## Exploitatin of Vulnerability
 -------------------------------
@@ -162,6 +166,10 @@
 -------------------------------
 [File Deletion - ATT&CK](https://attack.mitre.org/wiki/Technique/T1107)
 * Malware, tools, or other non-native files dropped or created on a system by an adversary may leave traces behind as to what was done within a network and how. Adversaries may remove these files over the course of an intrusion to keep their footprint low or remove them at the end as part of the post-intrusion cleanup process. 
+
+
+[Phant0m: Killing Windows Event Log Phant0m: Killing Windows Event Log](https://artofpwn.com/phant0m-killing-windows-event-log.html)
+
 
 
 
@@ -198,6 +206,9 @@
 * If a malicious tool is detected and quarantined or otherwise curtailed, an adversary may be able to determine why the malicious tool was detected (the indicator), modify the tool by removing the indicator, and use the updated version that is no longer detected by the target's defensive systems or subsequent targets that may use similar systems. A good example of this is when malware is detected with a file signature and quarantined by anti-virus software. An adversary who can determine that the malware was quarantined because of its file signature may use Software Packing or otherwise modify the file so it has a different signature, and then re-use the malware. 
 
 
+
+
+
 ## Indicator Removal on Host
 -------------------------------
 [Indicator Removal on Host - ATT&CK](https://attack.mitre.org/wiki/Technique/T1070)
@@ -214,6 +225,12 @@
 [Root certificate - Wikipedia](https://en.wikipedia.org/wiki/Root_certificate)
 
 [HTTP Public Key Pinning](https://en.wikipedia.org/wiki/HTTP_Public_Key_Pinning)
+
+[Manage Trusted Root Certificates - msdn](https://technet.microsoft.com/en-us/library/cc754841(v=ws.11).aspx)
+
+[Installing a root certificate - msdn](https://msdn.microsoft.com/en-us/library/cc750534.aspx)
+
+
 
 
 
@@ -366,6 +383,13 @@
 -------------------------------
 [Software Packing - ATT&CK](https://attack.mitre.org/wiki/Technique/T1045)
 * Software packing is a method of compressing or encrypting an executable. Packing an executable changes the file signature in an attempt to avoid signature-based detection. Most decompression techniques decompress the executable code in memory. 
+
+[Executable compression - Wikipedia](https://en.wikipedia.org/wiki/Executable_compression)
+
+[Basic Packers: Easy As Pie ](https://www.google.com/search?q=exe+packers&ie=utf-8&oe=utf-8)
+
+[UPX](https://upx.github.io/)
+
 
 
 

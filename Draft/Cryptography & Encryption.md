@@ -247,23 +247,22 @@ sheep-wolf](https://github.com/silentsignal/sheep-wolf/)
 
 
 
-### <a name="">Books</a>:
-Books:
+### <a name="books">Books</a>:
 * Cryptography Engineering
 * Applied Cryptography
 
 
-### Crypto Libraries/Protocols
+### <a name="libraries"></a>Crypto Libraries/Protocols
 
 [OMEMO Multi-End Message and Object Encryption](https://conversations.im/omemo/)
 * OMEMO is an XMPP Extension Protocol (XEP) for secure multi-client end-to-end encryption. It is an open standard based on a Double Ratchet and PEP which can be freely used and implemented by anyone. The protocol has been audited by a third party.
 
+[The Legion of the Bouncy Castle](https://www.bouncycastle.org/)
 
 
 
 
-
-### Miscellaneous
+### <a name="misc"></a>Miscellaneous
 
 [SSH Bad Keys](https://github.com/rapid7/ssh-badkeys)
 * This is a collection of static SSH keys (host and authentication) that have made their way into software and hardware products. This was inspired by the Little Black Box project, but focused primarily on SSH (as opposed to TLS) keys.

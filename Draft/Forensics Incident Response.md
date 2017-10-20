@@ -75,7 +75,7 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 
 
-### General
+### <a name="general"></a>General
 
 [IRM (Incident Response Methodologies)](https://github.com/certsocietegenerale/IRM)
 * CERT Societe Generale provides easy to use operational incident best practices. These cheat sheets are dedicated to incident handling and cover multiple fields in which a CERT team can be involved. One IRM exists for each security incident we're used to dealing with.
@@ -99,7 +99,7 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 
 
-### Writeups
+### <a name="writeups"></a>Writeups
 [Handler Diaries - Another Hunting Post(DFIR)](http://blog.handlerdiaries.com/?p=775)
 * Good post on not only knowing the layout, but knowing expected behaviours.
 
@@ -121,7 +121,7 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 
 
-### Tools
+### <a name="tools"></a>Tools
 [MIG: Mozilla InvestiGator](https://http://mig.mozilla.org/)
 * Mozilla's real-time digital forensics and investigation platform.
 
@@ -149,22 +149,21 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 
 
-### Firmware 
+### <a name="firmware"></a>Firmware 
 [Firmware Forensics: Diffs, Timelines, ELFs and Backdoors](http://w00tsec.blogspot.com/2015/02/firmware-forensics-diffs-timelines-elfs.html)
 
-[Firmware Forensics: Diffs, Timelines, ELFs and Backdoors](http://w00tsec.blogspot.com/2015/02/firmware-forensics-diffs-timelines-elfs.html)
 
 
 
 
 
 
-### Bitlocker
+### <a name="bitlocker"></a>Bitlocker
 [NVbit : Accessing Bitlocker volumes from linux](http://www.nvlabs.in/index.php?/archives/1-NVbit-Accessing-Bitlocker-volumes-from-linux.html)
 
 
 
-### IR
+### <a name="ir"></a>IR
 
 [Rapier](https://code.google.com/p/rapier/)
 * RAPIER is a security tool built to facilitate first response procedures for incident handling. It is designed to acquire commonly requested information and samples during an information security event, incident, or investigation. RAPIER automates the entire process of data collection and delivers the results directly to the hands of a skilled security analyst 
@@ -192,7 +191,7 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 
 
-### IOC
+### <a name="ioc"></a>IOC
 [IOC Bucket](https://www.iocbucket.com/)
 * IOC sharing platform
 
@@ -200,7 +199,7 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 
 
-### Browser Forensics
+### <a name="browser"></a>Browser Forensics
 [Firefox private browsing forensics](http://www.magnetforensics.com/forensic-implications-of-a-person-using-firefoxs-private-browsing/)
 
 [MozillaRecovery](https://github.com/gtfy/MozillaRecovery)
@@ -217,7 +216,7 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 
 
-### Memory Forensics
+### <a name="memory"></a>Memory Forensics
 [Detekt](https://github.com/botherder/detekt)
 * Detekt is a Python tool that relies on Yara, Volatility and Winpmem to scan the memory of a running Windows system (currently supporting Windows XP to Windows 8 both 32 and 64 bit and Windows 8.1 32bit). Detekt tries to detect the presence of pre-defined patterns that have been identified through the course of our research to be unique identifiers that indicate the presence of a given malware running on the computer. 
 
@@ -247,7 +246,7 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 
 
-### Training material
+### <a name="training"></a>Training material
 [ENISA CERT Exercises and Training](http://www.enisa.europa.eu/activities/cert/support/exercise)
 * ENISA CERT Exercises and training material was introduced in 2008, in 2012 and 2013 it was complemented with new exercise scenarios containing essential material for success in the CERT community and in the field of information security. In this page you will find the ENISA CERT Exercise material, containing Handbook for teachers, Toolset for students and Virtual Image to support hands on training sessions. 
 

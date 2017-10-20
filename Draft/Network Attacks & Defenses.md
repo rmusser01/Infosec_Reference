@@ -1,32 +1,39 @@
 # Network Attacks & Defenses
 
 ### ToC
-* General
-	* Lateral Movement
-	* Active Directory
-	* Sharepoint
-* General tools
-* DNS
-* D/DOS
-* Email
-* IDS/IPS Evasion
-* IPv6 Related
-* LDAP
-* Netbios
-* Network Host/Service Discovery
-* Pivoting
-* Proxies
-* SSH
-* SQL
-* SNMP
-* SIP/VOIP
-* STP
-* MISC
-* Talks/
-* UPNP
-* Web
-* Writeups
-* Other
+* [General](#general)
+* [Attacking Windows Networks](#attackw)
+	* [Lateral Movement](#lateral)
+	* [Active Directory](#AD)
+	* [Sharepoint](#sharepoint)
+* [General tools](#generaltools)
+* [DNS](#dns)
+* [D/DOS](#ddos)
+* [Email](#email)
+* [Frameworks](#frameworks)
+* [IDS/IPS Evasion](#evasion)
+* [IPMI](#ipmi)
+* [IPv6 Related](#ipv6)
+* [LDAP](#ldap)
+* [Man-in-the-Middle Tools](#mitm)
+* [Netbios](#netbios)
+* [Network Host/Service Discovery](#host)
+* [NFS](#nfs)
+* [Pivoting](#pivot)
+* [Proxies](#proxy)
+* [Software Defined Networking(SDN)](#sdn)
+* [SSH](#ssh)
+* [SQL](#sql)
+* [SNMP](#snmp)
+* [SIP/VOIP](#sip)
+* [SSL/TLS](#ssl)
+* [STP](#stp)
+* [MISC](#misc)
+* [Talks/Videos](#videos)
+* [UPNP](#upnp)
+* [Web](#web)
+* [Writeups](#writeups)
+* [Other](#other)
 
 --------
 ##### To be sorted
@@ -59,7 +66,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 ------------
-### General
+### <a name="general"></a>General
 
 [Fundamentals That Time Forgot - Jup1t3r  - BSides SLC](https://www.youtube.com/watch?v=PQvUWImljOw)
 
@@ -103,7 +110,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 ------------
-#### Lateral Movement
+#### <a name="lateral"></a>Lateral Movement
 
 [*Puff* *Puff* PSExec - Lateral Movement: An Overview](https://www.toshellandback.com/2017/02/11/psexec/)
 
@@ -186,7 +193,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 ------------
-#### Active Directory
+#### <a name="AD"></a>Active Directory
 
 [Dumping a Domain-s Worth of Passwords With Mimikatz pt. 2](http://www.harmj0y.net/blog/powershell/dumping-a-domains-worth-of-passwords-with-mimikatz-pt-2/)
 
@@ -214,7 +221,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 ------------
-#### Sharepoint
+#### <a name="sharepoint"></a>Sharepoint
 [Sparty - MS Sharepoint and Frontpage Auditing Tool](http://sparty.secniche.org/)
 *  Sparty is an open source tool written in python to audit web applications using sharepoint and frontpage architecture. The motivation behind this tool is to provide an easy and robust way to scrutinize the security configurations of sharepoint and frontpage based web applications. Due to the complex nature of these web administration software, it is required to have a simple and efficient tool that gathers information, check access permissions, dump critical information from default files and perform automated exploitation if security risks are identified. A number of automated scanners fall short of this and Sparty is a solution to that.
 
@@ -265,7 +272,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 ------------
-#### DNS:
+#### <a name="dns"></a>DNS:
 
 [DNSRecon](https://github.com/darkoperator/dnsrecon)
 * [Quick Reference Guide](http://pentestlab.wordpress.com/2012/11/13/dns-reconnaissance-dnsrecon/)
@@ -320,7 +327,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 ------------
-### D/DOS
+### <a name="ddos"></a>D/DOS
 
 
 [Davoset](https://github.com/MustLive/DAVOSET) 
@@ -331,7 +338,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 ------------
-#### Email
+#### <a name="email"></a>Email
 
 [SIMPLYEMAIL](https://github.com/killswitch-GUI/SimplyEmail)
 * What is the simple email recon tool? This tool was based off the work of theHarvester and kind of a port of the functionality. This was just an expansion of what was used to build theHarvester and will incorporate his work but allow users to easily build Modules for the Framework. Which I felt was desperately needed after building my first module for theHarvester.
@@ -339,7 +346,11 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 [Swaks - Swiss Army Knife for SMTP](http://www.jetmore.org/john/code/swaks/)
 
 
-###Frameworks
+
+
+
+
+### <a name="frameworks"></a>Frameworks
 [BackDoor Factory](https://github.com/secretsquirrel/the-backdoor-factory)
 * The goal of BDF is to patch executable binaries with user desired shellcode and continue normal execution of the prepatched state.
 * [Wiki](https://github.com/secretsquirrel/the-backdoor-factory/wiki)
@@ -397,7 +408,7 @@ Veil Tutorials:
 
 
 
-### IPMI
+### <a name="ipmi"></a>IPMI
 [Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)
 
 
@@ -430,7 +441,7 @@ IPv6: Basic Attacks and Defences - Christopher Werny[TROOPERS15]
 
 
 ------------
-#### LDAP
+#### <a name="ldap"></a>LDAP
 
 [JXplorer](http://jxplorer.org/)
 * JXplorer is a cross platform LDAP browser and editor. It is a standards compliant general purpose LDAP client that can be used to search, read and edit any standard LDAP directory, or any directory service with an LDAP or DSML interface. It is highly flexible and can be extended and customised in a number of ways. JXplorer is written in java, and the source code and Ant build system are available via svn or as a packaged build for users who want to experiment or further develop the program. 	
@@ -443,7 +454,7 @@ IPv6: Basic Attacks and Defences - Christopher Werny[TROOPERS15]
 
 
 
-### MitM Tools
+### <a name="mitm"></a>MitM Tools
 [Ettercap](https://ettercap.github.io/ettercap/)
 Ettercap is a comprehensive suite for man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.
 
@@ -470,7 +481,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-#### Netbios
+#### <a name="netbios"></a>Netbios
 
 [NbtScan](http://www.unixwiz.net/tools/nbtscan.html)
 * This is a command-line tool that scans for open NETBIOS nameservers on a local or remote TCP/IP network, and this is a first step in finding of open shares. It is based on the functionality of the standard Windows tool nbtstat, but it operates on a range of addresses instead of just one. I wrote this tool because the existing tools either didn't do what I wanted or ran only on the Windows platforms: mine runs on just about everything.
@@ -485,7 +496,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-#### Network Host Discovery/Service Discovery:
+#### <a name="host"></a>Network Host Discovery/Service Discovery:
 
 [Nmap](http://nmap.org/)
 * Nmap ("Network Mapper") is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics. It was designed to rapidly scan large networks, but works fine against single hosts. Nmap runs on all major computer operating systems, and official binary packages are available for Linux, Windows, and Mac OS X. In addition to the classic command-line Nmap executable, the Nmap suite includes an advanced GUI and results viewer (Zenmap), a flexible data transfer, redirection, and debugging tool (Ncat), a utility for comparing scan results (Ndiff), and a packet generation and response analysis tool (Nping). 
@@ -546,7 +557,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-### NFS
+### <a name="nfs"></a>NFS
 
 [NfSpy](https://github.com/bonsaiviking/NfSpy)
 * NfSpy is a Python library for automating the falsification of NFS credentials when mounting an NFS share.
@@ -554,7 +565,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-### Pivoting
+### <a name="pivot"></a>Pivoting
 
 [A Red Teamer's guide to pivoting](https://artkond.com/2017/03/23/pivoting-guide/#corporate-http-proxy-as-a-way-out)
 
@@ -572,7 +583,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-#### Proxies
+#### <a name="proxy"></a>Proxies
 
 [Mallory](https://bitbucket.org/IntrepidusGroup/mallory)
 *  Mallory is an extensible TCP/UDP man in the middle proxy that is designed  to be run as a gateway. Unlike other tools of its kind, Mallory supports  modifying non-standard protocols on the fly.
@@ -605,7 +616,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-#### SSH: 
+#### <a name="ssh"></a>SSH: 
 
 [SSH for Fun and Profit](https://karla.io/2016/04/30/ssh-for-fun-and-profit.html)
 
@@ -620,7 +631,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-#### SQL:
+#### <a name="sql"></a>SQL:
 
 [SQLMap](https://github.com/sqlmapproject/sqlmap)
 * sqlmap is an open source penetration testing tool that automates the process of detecting and exploiting SQL injection flaws and taking over of database servers. It comes with a powerful detection engine, many niche features for the ultimate penetration tester and a broad range of switches lasting from database fingerprinting, over data fetching from the database, to accessing the underlying file system and executing commands on the operating system via out-of-band connections.
@@ -640,7 +651,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-#### SMTP:
+#### <a name="smtp"></a>SMTP:
 
 
 
@@ -648,7 +659,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-#### SNMP:
+#### <a name="snmp"></a>SNMP:
 
 [Onesixtyone](http://www.phreedom.org/software/onesixtyone/)
 * onesixtyone is an SNMP scanner which utilizes a sweep technique to achieve very high performance. It can scan an entire class B network in under 13 minutes. It can be used to discover devices responding to well-known community names or to mount a dictionary attack against one or more SNMP devices.
@@ -663,7 +674,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-#### SIP/VOIP:
+#### <a name="SIP"></a>SIP/VOIP:
 
 [sipvicious](https://github.com/EnableSecurity/sipvicious)
 
@@ -676,7 +687,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 --------------
-#### SSL/TLS
+#### <a name="ssl"></a>SSL/TLS
 
 
 [testssl.sh](https://github.com/drwetter/testssl.sh)
@@ -695,7 +706,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-#### STP: 
+#### <a name="stp"></a>STP: 
 
 [STP MiTM Attack and L2 Mitigation Techniques on the Cisco Catalyst 6500 ](http://www.ndm.net/ips/pdf/cisco/Catalyst-6500/white_paper_c11_605972.pdf)
 
@@ -754,7 +765,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 -------------
-### Software Defined Networking (SDN)
+### <a name="sdn"></a>Software Defined Networking (SDN)
 
 [DELTA: SDN SECURITY EVALUATION FRAMEWORK](https://github.com/OpenNetworkingFoundation/DELTA)
 * DELTA is a penetration testing framework that regenerates known attack scenarios for diverse test cases. This framework also provides the capability of discovering unknown security problems in SDN by employing a fuzzing technique.
@@ -762,7 +773,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-#### Web:
+#### <a name="web"></a>Web:
 
 [WPScan](https://github.com/wpscanteam/wpscan)
 * WPScan is a black box WordPress vulnerability scanner.
@@ -821,7 +832,7 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 
 
 ------------
-#### MISC:
+#### <a name="misc"></a>MISC:
 [t50 - the fastest packet injector.](https://github.com/fredericopissarra/t50)
 * T50 was designed to perform -Stress Testing-  on a variety of infra-structure
 network devices (Version 2.45), using widely implemented protocols, and after

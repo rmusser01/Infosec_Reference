@@ -1,17 +1,21 @@
 # Physical Security
 
 ### ToC
-* General
-	* Articles/Blogposts
-	* Videos/Talks
-	* Tools
-	* Papers
-* Tamper Evident Related
-* Lockpicking
-	* Guides/Techniques
-	* Videos/Talks
-	* Books
-	* Sites/Organizations
+* [General](#general)
+	* [Articles/Blogposts](#articles)
+	* [Videos/Talks](#videos)
+	* [Tools](#tools)
+	* [Papers](#papers)
+* [Tamper Evident Related](#tamper)
+* [Lockpicking](#lockpicking)
+	* [Guides/Techniques](#guides)
+	* [Videos/Talks](#talks)
+	* [Books](#books)
+	* [Sites/Organizations](#sites)
+* [Alarm Systems](#alarm)
+* [Doors](#doors)
+
+
 
 #### Sort
 
@@ -24,17 +28,24 @@
 
 
 -----------------------
-### General
+### <a name="general"></a>General
 
 
 
 -----------------------
-### Articles/Blogposts
+### <a name="articles"></a>Articles/Blogposts
 
 [Physical Security - Centre for the Protection of National Infrastructure - UK](https://www.cpni.gov.uk/physical-security)
 
+
+
+
+
+
+
+
 -----------------------
-### Videos/Talks
+### <a name="videos"></a>Videos/Talks
 
 [Physical Penetration Testing You Keep a Knockin But You Cant Come In Phil Grime](https://www.youtube.com/watch?v=_0gz_iWoMT0)
 
@@ -49,14 +60,14 @@
 
 
 
-### Tools
+### <a name="tools"></a>Tools
 
 
-### Papers
+### <a name="papers"></a>Papers
 
 
 -----------------------
-### Tamper Evident Related
+### <a name="tamper"></a>Tamper Evident Related
 
 [What does tamper-evident mean?](https://www.healthcarepackaging.com/article/package-design/structural/what-does-tamper-evident-mean)
 
@@ -64,6 +75,7 @@
 
 [Tamper-evident technology - Wikipedia](https://en.wikipedia.org/wiki/Tamper-evident_technology)
 
+[Tamper resistance and  hardware security](https://www.cl.cam.ac.uk/~sps32/PartII_030214.pdf)
 
 
 
@@ -73,7 +85,7 @@
 
 
 -----------------------
-## Lock Picking
+## <a name="lockpicking"></a>Lock Picking
 
 
 ### General Information
@@ -85,7 +97,7 @@
 
 
 -----------------------
-### Guides/Techniques
+### <a name="guides"></a>Guides/Techniques
 
 [Newbies guide to picking safes](http://cybergibbons.com/lockpicking-2/a-newbies-guide-to-safes/)
 
@@ -106,7 +118,7 @@
 
 
 -----------------------
-### Videos/Talks
+### <a name="talks"></a>Videos/Talks
 
 
 [Safe to Armed in Seconds - Deviant Ollam - DEF CON 19](https://www.youtube.com/watch?v=3SVMT_zNlgA)
@@ -115,40 +127,6 @@
 
 [I'll Let Myself In Tactics of Physical Pentesters - Deviant Ollam -B-sides Orlando 2017](https://www.youtube.com/watch?v=Rctzi66kCX4)
 
-
-
-#### Alarm Systems
-
-[Ways your alarm system can fail - abak Javadi Keith Howell](https://www.youtube.com/watch?v=g4-B7d3ZQUA)
-
-[Alarmed About Your Alarm System Yet - Keith Howell, Babak Javadi](https://www.youtube.com/watch?v=5rnkhqEj_Po)
-
-[Hacking Wireless Home Security Systems by Eric Escobar - BSides Manchester2017](https://www.youtube.com/watch?v=kERUpg5YMis&index=12&list=PLcgqQkap1lNrOBNCXqpPqpPAqckxv0XhP)
-
-[Home Insecurity: No Alarms, False Alarms, and SIGINT](https://media.defcon.org/DEF%20CON%2022/DEF%20CON%2022%20presentations/Logan%20Lamb/DEFCON-22-Logan-Lamb-HOME-INSECURITY-NO-ALARMS-FALSE-ALARMS-AND-SIGINT-WP.pdf)
-
-[Let's get physical: Breaking home security systems & bypassing controls - Black Hat USA 2013](https://www.youtube.com/watch?v=O4ya3z-PCQs)
-
-
-
-
-#### Doors
-
-[What Does The Perfect Door Or Padlock Look Like? - Deviant Ollam - BruCON 0x08](https://www.youtube.com/watch?v=4skSBwBBI-s)
-
-[The Search for the Perfect Door - Deviant Ollam - Shakacon](https://www.youtube.com/watch?v=4YYvBLAF4T8)
-* You have spent lots of money on a high-grade, pick-resistant, ANSI-rated lock for your door. Your vendor has assured you how it will resist attack and how difficult it would be for someone to copy your key. Maybe they’re right. But… the bulk of attacks that both penetration testers and also criminals attempt against doors have little or nothing to do with the lock itself! This talk will be a hard-hitting exploration (full of photo and video examples) of the ways in which your door — the most fundamental part of your physical security — can possibly be thwarted by someone attempting illicit entry. The scary problems will be immediately followed by simple solutions that are instantly implementable and usually very within-budget. You, too, can have a near-perfect door… if you’re willing to learn and understand the problems that all doors tend to have. 
-
-[Physical Security - Everything That's Wrong With Your Typical Door - Deviant Ollam - SANS Webcast](https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop)
-
-[Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
-
-
-
-
-
-
-#### Lockpicking
 [Introduction to Lockpicking and Physical Security - DEFCON 13](https://www.youtube.com/watch?v=JupQ3BpKGYg)
 
 [Lockpicking by Deviant Ollam](http://deviating.net/lockpicking/videos.html)
@@ -180,11 +158,46 @@
 
 
 
+#### <a name="alarm"></a>Alarm Systems
+
+[Ways your alarm system can fail - abak Javadi Keith Howell](https://www.youtube.com/watch?v=g4-B7d3ZQUA)
+
+[Alarmed About Your Alarm System Yet - Keith Howell, Babak Javadi](https://www.youtube.com/watch?v=5rnkhqEj_Po)
+
+[Hacking Wireless Home Security Systems by Eric Escobar - BSides Manchester2017](https://www.youtube.com/watch?v=kERUpg5YMis&index=12&list=PLcgqQkap1lNrOBNCXqpPqpPAqckxv0XhP)
+
+[Home Insecurity: No Alarms, False Alarms, and SIGINT](https://media.defcon.org/DEF%20CON%2022/DEF%20CON%2022%20presentations/Logan%20Lamb/DEFCON-22-Logan-Lamb-HOME-INSECURITY-NO-ALARMS-FALSE-ALARMS-AND-SIGINT-WP.pdf)
+
+[Let's get physical: Breaking home security systems & bypassing controls - Black Hat USA 2013](https://www.youtube.com/watch?v=O4ya3z-PCQs)
+
+
+
+
+#### <a name="doors"></a>Doors
+
+[What Does The Perfect Door Or Padlock Look Like? - Deviant Ollam - BruCON 0x08](https://www.youtube.com/watch?v=4skSBwBBI-s)
+
+[The Search for the Perfect Door - Deviant Ollam - Shakacon](https://www.youtube.com/watch?v=4YYvBLAF4T8)
+* You have spent lots of money on a high-grade, pick-resistant, ANSI-rated lock for your door. Your vendor has assured you how it will resist attack and how difficult it would be for someone to copy your key. Maybe they’re right. But… the bulk of attacks that both penetration testers and also criminals attempt against doors have little or nothing to do with the lock itself! This talk will be a hard-hitting exploration (full of photo and video examples) of the ways in which your door — the most fundamental part of your physical security — can possibly be thwarted by someone attempting illicit entry. The scary problems will be immediately followed by simple solutions that are instantly implementable and usually very within-budget. You, too, can have a near-perfect door… if you’re willing to learn and understand the problems that all doors tend to have. 
+
+[Physical Security - Everything That's Wrong With Your Typical Door - Deviant Ollam - SANS Webcast](https://www.youtube.com/watch?v=raBMFqZRB0s&t=&feature=youtu.be&app=desktop)
+
+[Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
+
+
+
+
+
+
+
+
+
+
 
 
 
 -----------------------
-### Books
+### <a name="books"></a>Books
 
 [Locksport Primer](http://pdf.textfiles.com/security/lsiguide.pdf)
 
@@ -203,7 +216,7 @@
 
 
 -----------------------
-### Sites/Organizations
+### <a name="sites"></a>Sites/Organizations
 
 [The Open Organization of Lockpickers](http://toool.us/)
 * The mission of the Open Organisation Of Lockpickers is to advance the general public knowledge about locks and lockpicking. By examining locks, safes, and other such hardware and by publicly discussing our findings we hope to strip away the mystery with which so many of these products are imbued.  The more that people know about lock technology, the better they are capable of understanding how and where certain weaknesses are present. This makes them well-equipped to participate in sportpicking endeavors and also helps them simply be better consumers in the marketplace, making decisions based on sound fact and research.
@@ -217,6 +230,3 @@
 
 
 
-### Tamper Resistance
-
-[Tamper resistance and  hardware security](https://www.cl.cam.ac.uk/~sps32/PartII_030214.pdf)

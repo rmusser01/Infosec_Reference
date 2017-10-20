@@ -1,14 +1,16 @@
-##Honeypots
+## Honeypots
 
 
 
 
 
-TOC
+### TOC
 
-Cull
+* Cull
+* [General](#general)
 * [Honeypots/nets](#honey)
-* [Presentations](#presentation)
+* [Presentations](#talks)
+* [Tools](#tools)
 * [Write-ups](#writeup)
 * [Papers](#papers)
 
@@ -30,7 +32,7 @@ http://highaltitudehacks.com/2013/06/15/ghost-usb-honeypot-part-2-installing-and
 #### End Cull
 
 
-### General
+### <a name="general"></a>General
 [Honeypots - ShadowServer](https://www.shadowserver.org/wiki/pmwiki.php/Information/Honeypots)
 
 [Honeypot Computing - Wikipedia](https://en.wikipedia.org/wiki/Honeypot_%28computing%29)
@@ -132,7 +134,7 @@ Beeswarm](http://www.beeswarm-ids.org/)
 
 
 
-### Tools
+### <a name="tools"></a>Tools
 
 [DCEPT](https://github.com/secureworks/dcept)
 * A tool for deploying and detecting use of Active Directory honeytokens 
@@ -154,7 +156,7 @@ Beeswarm](http://www.beeswarm-ids.org/)
 
 
 
-### Presentations
+### <a name="talks"></a>Presentations
 [Honeypots for Active Defense - A Practical Guide to Deploying Honeynets Within the Enterprise - Greg Foss](http://www.irongeek.com/i.php?page=videos/centralohioinfosec2015/tech201-honeypots-for-active-defense-a-practical-guide-to-deploying-honeynets-within-the-enterprise-greg-foss)
 * InfoSec analysts are all somewhat familiar with honeypots. When they are given the proper attention, care and feeding, they produce invaluable information. This intelligence has been primarily used by security researchers and organizations with advanced defensive capabilities to study their adversaries and learn from their actions. But what about the rest of us? Honeypots are a lot of work to configure, maintain, and monitor -- how can an organization that is not focused on research gain valuable intelligence using honeypots and actively defend their network using the data obtained? The answer is honeypots for active defense. There are currently many open source security tool distributions that come pre-loaded with honeypots among other useful tools, however the honeypot software is often not deployed in an effective manner. This session will discuss techniques to deploy honeypots in ways that will not overburden the security team with massive logs to sift through and focuses on correlating active threat data observed in the honeypot with the production environment. When deploying honeypots effectively, this can give security analysts one additional mechanism to tip them off to nefarious activity within their network.
 

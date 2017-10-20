@@ -2,9 +2,9 @@
 
 TOC
 
-* [Videos/Presentations](#presentation)
+* [General](#general)
+* [Videos/Presentations](#videos)
 * [Techniques](#tech)
-* [Methodologies](#method)
 * [Write-ups](#writeup)
 * [Training](#training)
 * [Tools](#tools)
@@ -34,7 +34,7 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 
 
-### General
+### <a name="general"></a>General
 
 [Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
 * Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
@@ -144,7 +144,7 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 
 
-### <a name="presen">Talks/Videos</a>
+### <a name="videos">Talks/Videos</a>
 
 [The Best of Bug Finding - Duo Tech Talk (Charlie Miller)](https://www.youtube.com/watch?v=1M1EOzulQsw)
 * I look at how security vulnerabilities are found (or missed) and some of my favorite bugs and exploits I’ve come across in my career. 
@@ -193,7 +193,7 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 
 
-### Training
+### <a name="training"></a>Training
 [Modern fuzzing of C/C++ Projects - Slides](https://docs.google.com/presentation/d/1pbbXRL7HaNSjyCHWgGkbpNotJuiC4O7L_PDZoGqDf5Q/edit#slide=id.p4)
 
 [libfuzzer-workshop](https://github.com/Dor1s/libfuzzer-workshop)

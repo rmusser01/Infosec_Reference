@@ -24,7 +24,9 @@
 
 
 #### CULL
-* Roll anti into this.
+
+
+[Commercial Spyware - Detecting the Undetectable](https://www.blackhat.com/docs/us-15/materials/us-15-Dalman-Commercial-Spyware-Detecting-The-Undetectable-wp.pdf)
 
 https://forensiccontrol.com/resources/free-software/
 
@@ -306,6 +308,8 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 [Hiding the breadcrumbs: Forensics and anti-forensics on SAP systems - Juan Perez-Etchegoyen](http://www.irongeek.com/i.php?page=videos/derbycon4/t508-hiding-the-breadcrumbs-forensics-and-anti-forensics-on-sap-systems-juan-perez-etchegoyen)
 * The largest organizations in the world rely on SAP platforms to run their critical processes and keep their business crown jewels: financial information, customer data, intellectual property, credit cards, human resources salaries, sensitive materials, suppliers and more. Everything is there and attackers know it. For several years at Onapsis we have been researching on how cyber-criminals might be able to break into ERP systems in order to help organizations better protect themselves. This has enabled us to gain a unique expertise on which are the most critical attack vectors and what kind of traces they leave (and don’t) over the victim’s SAP platforms. SAP systems need to be ready for Forensic Analysis, so the big question is: Are your systems prepared to retain the attackers breadcrumbs in the event of an attack? Join us and learn how to do a forensic analysis of an SAP system, looking for traces of a security breach We will also show novel techniques being used by attackers to avoid being detected during post attack forensic investigations. Vulnerabilities related to anti-forensic techniques will be presented together with their mitigation. **NEW** New attacks never presented before will be shown. JAVA, ABAP and BO systems will be covered.
+
+[int0x80 (of Dual Core) -- Anti-Forensics for the Louise - Derbycon](https://www.youtube.com/watch?v=-HK1JHR7LIM	)
 
 
 

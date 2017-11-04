@@ -23,8 +23,6 @@
 
 
 
-
-
 #### end cull
 
 
@@ -35,6 +33,20 @@
 
 [Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
 * Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
+
+[Mobile Phone Data lookup](https://medium.com/@philipn/want-to-see-something-crazy-open-this-link-on-your-phone-with-wifi-turned-off-9e0adb00d024)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### <a name="blog"></a>Blogposts
@@ -58,6 +70,10 @@
 
 [The Paranoid's Bible: An anti-dox effort.](https://paranoidsbible.tumblr.com/)
 
+[Debian-Privacy-Server-Guide](https://github.com/drduh/Debian-Privacy-Server-Guide)
+* This is a step-by-step guide to configuring and managing a domain, remote server and hosted services, such as VPN, a private and obfuscated Tor bridge, and encrypted chat, using the Debian GNU/Linux operating system and other free software.
+
+[Reminder: Oh, Won't You Please Shut Up? - USA](https://www.popehat.com/2011/12/01/reminder-oh-wont-you-please-shut-up/)
 
 
 
@@ -84,7 +100,7 @@
 
 [Detect Tor Exit doing sniffing by passively detecting unique DNS query (via HTML & PCAP parsing/viewing)](https://github.com/NullHypothesis/exitmap/issues/37)
 
-
+[Managing Pseudonyms with Compartmentalization: Identity Management of Personas](https://www.alienvault.com/blogs/security-essentials/managing-pseudonyms-with-compartmentalization-identity-management-of-personas)
 
 
 
@@ -175,7 +191,7 @@
 
 
 
-### <a name="Talks">Talks & Videos(& Presentatios)</a>
+### <a name="Talks">Talks & Videos(& Presentations)</a>
 
 [Cookieless Monster: Exploring the Ecosystem of Web-based Device Fingerprinting](http://securitee.org/files/cookieless_sp2013.pdf)
 
@@ -219,6 +235,21 @@
 * [Article -  How Tor Users Got Caught by Government Agencies](http://se.azinstall.net/2015/11/how-tor-users-got-caught.html)
 
 [You Are Being Tracked: How License Plate Readers Are Being Used to Record Americans' Movements - ACLU](https://www.aclu.org/other/you-are-being-tracked-how-license-plate-readers-are-being-used-record-americans-movements?redirect=technology-and-liberty/you-are-being-tracked-how-license-plate-readers-are-being-used-record)
+
+[David Goulet - Deep Dive Into Tor Onion Services](https://www.youtube.com/watch?v=AkoyCLAXVsc)
+
+[Winning and Quitting the Privacy Game What it REALLY takes to have True Privacy in the 21st Century - Derbycon 7](https://www.youtube.com/watch?v=bxQSu06yuZc)
+
+
+
+
+
+
+
+
+
+
+
 
 
 

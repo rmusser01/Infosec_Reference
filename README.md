@@ -22,10 +22,11 @@ An Information Security Reference That Doesn't Suck
 
 
 ##### This page
-* This page is terrible on mobile. It should not be used to navigate for info unless you like self harm. On mobile, use [https://rmusser.net/docs](https://rmusser.net/docs]).
+* This page is terrible on mobile. Use [https://rmusser.net/docs](https://rmusser.net/docs]) for better mobile formatting.
 * For latest content updates, check here: [Things added since last update](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/things-added.md)
 	* This will have all links added to the other pages sorted according to topic, making it easier to see new stuff.
-* All links on this page should work. Last tested 9/3
+* All links on this page should work. Last tested 11/3
+* Contributions are welcomed, format is pretty simple/easy to pick up, add anything not already in it that fits.
 
 
 ### Index - Table of Contents

@@ -36,6 +36,12 @@
 
 [Debugging Functions - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/ms679303.aspx)
 
+[Authenticode - MSDN](https://msdn.microsoft.com/en-us/library/ms537359(v=vs.85).aspx)
+* Microsoft Authenticode, which is based on industry standards, allows developers to include information about themselves and their code with their programs through the use of digital signatures. 
+
+[Security Configuration Wizard](https://technet.microsoft.com/en-us/library/cc754997(v=ws.11).aspx)
+* The Security Configuration Wizard (SCW) guides you through the process of creating, editing, applying, or rolling back a security policy. A security policy that you create with SCW is an .xml file that, when applied, configures services, network security, specific registry values, and audit policy. SCW is a role-based tool: you can use it to create a policy that enables services, firewall rules, and settings that are required for a selected server to perform specific roles, such as a file server, a print server, or a domain controller.
+
 #### End Sort
 
 

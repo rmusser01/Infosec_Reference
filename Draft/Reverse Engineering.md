@@ -50,10 +50,9 @@ https://www.hex-rays.com/products/ida/tech/flirt/in_depth.shtml
 
 [mammon_'s tales to his grandson](https://mammon.github.io/tales/)
 
-[Unicorn-Engine](http://www.unicorn-engine.org/)
-* Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework.
-
 [Reversing Prince Harming’s Kiss of Death]( https://reverse.put.as/2015/07/01/reversing-prince-harmings-kiss-of-death/)
+
+[Hacking travel routers  like it’s 1999](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-Mikhail-Sosonkin-Hacking-Travel-Routers-Like-1999.pdf)
 
 https://objective-see.com/
 
@@ -63,7 +62,6 @@ https://objective-see.com/
 * Windows memory hacking library
 
 [PNG File Format](http://fileformats.archiveteam.org/wiki/PNG)
-
 
 [Microsoft.Diagnostics.Runtime.dll(CLR MD)](https://github.com/Microsoft/clrmd)
 * Microsoft.Diagnostics.Runtime.dll (nicknamed "CLR MD") is a process and crash dump introspection library. This allows you to write tools and debugger plugins which can do thing similar to SOS and PSSCOR.
@@ -79,6 +77,9 @@ https://objective-see.com/
 
 [pegasus - Windbg extension DLL for emulation](https://github.com/0a777h/pegasus)
 * Windbg emulation plugin 
+
+[Unicorn-Engine](http://www.unicorn-engine.org/)
+* Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework.
 ### End sort
 
 

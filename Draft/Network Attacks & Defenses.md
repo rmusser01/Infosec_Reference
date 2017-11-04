@@ -50,6 +50,10 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 [BlackNurse attack PoC](https://github.com/jedisct1/blacknurse)
 * A simple PoC for the Blacknurse attack. "Blacknurse is a low bandwidth ICMP attack that is capable of doing denial of service to well known firewalls".
 
+
+* Attacking firewalls
+[Fire Away Sinking the Next Gen Firewall Russell Butturini - Derbycon6](https://www.youtube.com/watch?v=Qpty_f0Eu7Y)
+
 ##### sort end
 
 
@@ -408,6 +412,8 @@ Veil Tutorials:
 
 
 
+
+------------
 ### <a name="ipmi"></a>IPMI
 [Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)
 
@@ -474,7 +480,11 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 * Thoroughly sniff passwords and hashes from an interface or pcap file. Concatenates fragmented packets and does not rely on ports for service identification
 * It sniffs: URLs visited; POST loads sent; HTTP form logins/passwords; HTTP basic auth logins/passwords; HTTP searches; FTP logins/passwords; IRC logins/passwords; POP logins/passwords; IMAP logins/passwords; Telnet logins/passwords; SMTP logins/passwords; SNMP community string; NTLMv1/v2 all supported protocols like HTTP, SMB, LDAP, etc; Kerberos.
 
+[NTLMssp-Extract](https://github.com/sinnaj-r/NTLMssp-Extract)
+* A small Python-Script to extract NetNTLMv2 Hashes from NTMLssp-HTTP-Authentications, which were captured in a pcap.
 
+[ntlmRelayToEWS](https://github.com/Arno0x/NtlmRelayToEWS)
+* ntlmRelayToEWS is a tool for performing ntlm relay attacks on Exchange Web Services (EWS). It spawns an SMBListener on port 445 and an HTTPListener on port 80, waiting for incoming connection from the victim. Once the victim connects to one of the listeners, an NTLM negociation occurs and is relayed to the target EWS server.
 
 
 
@@ -553,6 +563,12 @@ dsniff is a collection of tools for network auditing and penetration testing. ds
 * Opens 1K+ IPs or Shodan search results and attempts to login 
 
 [Adding your protocol to Masscan](http://blog.erratasec.com/2014/11/adding-protocols-to-masscan.html)
+
+[changeme - A default credential scanner.](https://github.com/ztgrace/changeme)
+* changeme picks up where commercial scanners leave off. It focuses on detecting default and backdoor credentials and not necessarily common credentials. It's default mode is to scan HTTP default credentials, but has support for other credentials. changeme is designed to be simple to add new credentials without having to write any code or modules. changeme keeps credential data separate from code. All credentials are stored in yaml files so they can be both easily read by humans and processed by changeme. Credential files can be created by using the ./changeme.py --mkcred tool and answering a few questions. changeme supports the http/https, mssql, mysql, postgres, ssh, ssh w/key, snmp, mongodb and ftp protocols. Use ./changeme.py --dump to output all of the currently available credentials.
+
+
+
 
 
 

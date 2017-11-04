@@ -21,13 +21,6 @@ TOC
 
 https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
-[Fuzzing for MS15-010](http://blog.beyondtrust.com/fuzzing-for-ms15-010)
-* This past Patch Tuesday Microsoft released MS15-010: Vulnerabilities in Windows Kernel-Mode Driver Could Allow Remote Code Execution.  This patch addressed multiple privately reported vulnerabilities in win32k.sys and one publicly disclosed vulnerability in cng.sys. This post goes through identifying the patched vulnerability.
-
-[0-day streams: pdfcrack](https://www.youtube.com/watch?v=8VLNPIIgKbQ&app=desktop)
-
-
-
 #### end sort
 ##### To Do
 * Add Descriptions/generals to types of fuzzing
@@ -81,7 +74,13 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 [Taint analysis and pattern matching with Pin - Jonathan Salwan](http://shell-storm.org/blog/Taint-analysis-and-pattern-matching-with-Pin/)
 
 
+#### Manual Source Code Analysis
 
+[GitHub for Bug Bounty Hunters](https://gist.github.com/EdOverflow/922549f610b258f459b219a32f92d10b)
+
+[Secure Code Review - OpenSecurityTraining.info](http://opensecuritytraining.info/SecureCodeReview.html)
+
+[High-Level Approaches for Finding Vulnerabilities](http://jackson.thuraisamy.me/finding-vulnerabilities.html)
 
 
 
@@ -110,6 +109,13 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 [There's a lot of vulnerable OS X applications out there](https://vulnsec.com/2016/osx-apps-vulnerabilities/)
 
 [Binary SMS - The old backdoor to your new thing](https://www.contextis.com/resources/blog/binary-sms-old-backdoor-your-new-thing/)
+
+[Hacking Virtual Appliances - DerbyconV](https://www.irongeek.com/i.php?page=videos/derbycon5/fix-me08-hacking-virtual-appliances-jeremy-brown)
+* Virtual Appliances have become very prevalent these days as virtualization is ubiquitous and hypervisors commonplace. More and more of the major vendors are providing literally virtual clones for many of their once physical-only products. Like IoT and the CAN bus, it's early in the game and vendors are late as usual. One thing that it catching these vendors off guard is the huge additional attack surface, ripe with vulnerabilities, added in the process. Also, many vendors see software appliances as an opportunity for the customer to easily evaluate the product before buying the physical one, making these editions more accessible and debuggable by utilizing features of the platform on which it runs. During this talk, I will provide real case studies for various vulnerabilities created by mistakes that many of the major players made when shipping their appliances. You'll learn how to find these bugs yourself and how the vendors went about fixing them, if at all. By the end of this talk, you should have a firm grasp of how one goes about getting remotes on these appliances.
+
+[Fuzzing for MS15-010](http://blog.beyondtrust.com/fuzzing-for-ms15-010)
+* This past Patch Tuesday Microsoft released MS15-010: Vulnerabilities in Windows Kernel-Mode Driver Could Allow Remote Code Execution.  This patch addressed multiple privately reported vulnerabilities in win32k.sys and one publicly disclosed vulnerability in cng.sys. This post goes through identifying the patched vulnerability.
+
 
 
 
@@ -145,10 +151,16 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 
 ### <a name="videos">Talks/Videos</a>
+#### Bug Hunting
+[Browser Bug Hunting and Mobile](http://slides.com/revskills/fzbrowsers#/)
+
+[Upping Your Bug Hunting Skills Using Symbolic Virtual Machines by Anto  - x33fcon](https://www.youtube.com/watch?v=IPSZxGaLlyk)
 
 [The Best of Bug Finding - Duo Tech Talk (Charlie Miller)](https://www.youtube.com/watch?v=1M1EOzulQsw)
 * I look at how security vulnerabilities are found (or missed) and some of my favorite bugs and exploits I’ve come across in my career. 
 
+
+#### Fuzzing
 [Implementing an USB Host Driver Fuzzer - Daniel Mende - Troopers14](https://www.youtube.com/watch?v=h777lF6xjs4)
 
 [The Power Of Pair: One Template That Reveals 100+ Uaf Ie Vulnerabilities - BlackhatEU14](http://www.securitytube.net/video/12924?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+SecurityTube+%28SecurityTube.Net%29)
@@ -160,6 +172,7 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 [Mining for Bugs with Graph Database Queries [31c3]](https://www.youtube.com/watch?v=291hpUE5-3g)
 * [Starting out with Joern](http://tsyrklevich.net/2015/03/28/starting-out-with-joern/)
+
 [Fuzz Smarter, Not Harder (An Afl-Fuzz Primer) BSides-SF 2016](http://www.securitytube.net/video/15372)
 
 [File Format Fuzzing in Android](https://deepsec.net/docs/Slides/2015/File_Format_Fuzzing_in_Android_-Alexandru_Blanda.pdf)
@@ -174,10 +187,6 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 [Introduction to USB and Fuzzing DEFCON23 Matt DuHarte](https://www.youtube.com/watch?v=KWOTXypBt4E)
 
-[Browser Bug Hunting and Mobile](http://slides.com/revskills/fzbrowsers#/)
-
-[Upping Your Bug Hunting Skills Using Symbolic Virtual Machines by Anto  - x33fcon](https://www.youtube.com/watch?v=IPSZxGaLlyk)
-
 [Practical File Format Fuzzing](http://www.irongeek.com/i.php?page=videos/derbycon3/3301-practical-file-format-fuzzing-jared-allar)
 * File format fuzzing has been very fruitful at discovering exploitable vulnerabilities. Adversaries take advantage of these vulnerabilities to conduct spear-phishing attacks. This talk will cover the basics of file format fuzzing and show you how to use CERT’s fuzzing frameworks to discovery vulnerabilities in file parsers.
 
@@ -186,10 +195,16 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 [Introduction to Custom Protocol Fuzzing](https://www.youtube.com/watch?v=ieatSJ7ViBw)
 
+[0-day streams: pdfcrack](https://www.youtube.com/watch?v=8VLNPIIgKbQ&app=desktop)
+
+
+
 
 ### <a name="books">Books</a>
 
 [*THE* Book on fuzzing](http://fuzzing.org/)
+
+
 
 
 
@@ -198,6 +213,12 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 [libfuzzer-workshop](https://github.com/Dor1s/libfuzzer-workshop)
 * Materials of "Modern fuzzing of C/C++ Projects" workshop.
+
+
+
+
+
+
 
 
 ### <a name="tools">Tools</a>

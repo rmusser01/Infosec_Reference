@@ -48,6 +48,8 @@
 ------------------------
 ### <a name="talks"></a>Talks/Presentations
 
+#### Attacking
+
 [SCADA Strangelove or: How I Learned to Start Worrying and Love Nuclear Plants](https://www.youtube.com/watch?v=o2r7jbwTv6w)
 * Modern civilization unconditionally depends on information systems. It is paradoxical but true that ICS/SCADA systems are the most insecure systems in the world. From network to application, SCADA is full of configuration issues and vulnerabilities. During our report, we will demonstrate how to obtain full access to a plant via:
 * a sniffer and a packet generator; FTP and Telnet; Metasploit and oslq; a webserver and a browser; 
@@ -69,6 +71,19 @@
 
 [Hacking Mainframes; Vulnerabilities in applications exposed over TN3270 - Dominic White](http://www.irongeek.com/i.php?page=videos/derbycon4/t217-hacking-mainframes-vulnerabilities-in-applications-exposed-over-tn3270-dominic-white)
 * IBM System Z Mainframes are in regular use in Fortune 500 companies. Far from being legacy these systems are running an actively maintained operating system (z/OS). Applications on these often occupy roles critical to the business processes they underpin, with much of the later technology built around them, rather than replacing them. However, these systems are often bypassed by security testing due to worried of availability or assumptions about legacy. This talk will introduce you to assessing mainframe applications, which turn out to be quite similar to web applications. For this purpose we built a tool, Big Iron Recon & Pwnage (BIRP), to assist with performing such assessments. Importantly, our research uncovered a family of mainframe application vulnerabilities introduced by the TN3270 protocol. We found numerous applications, but not all, vulnerable to these flaws. Applications running within the two most popular transaction managers (CICS and IMS) as well as one of IBM’s own applications. The tool released assists with the exploitation of these flaws.
+
+[Rocking the pocket book: Hacking chemical plants for competition and extortion](https://www.youtube.com/watch?v=lsY3bkMI-90)
+
+[Adventures in Attacking Wind Farm Control Networks - Jason Stagg](https://www.blackhat.com/docs/us-17/wednesday/us-17-Staggs-Adventures-In-Attacking-Wind-Farm-Control-Networks.pdf)
+
+
+
+
+
+
+
+#### Learning
+
 
 [Serial Communication RS232 & RS485](https://www.youtube.com/watch?v=2DQdEHvnqvI)
 
@@ -94,8 +109,14 @@
 
 
 
+
+
+
+
+
 --------------------
 ### <a name="tools"></a>Tools
+
 [python-opcua](https://github.com/FreeOpcUa/python-opcua/blob/master/README.md)
 * OPC UA binary protocol implementation is quasi complete and has been tested against many different OPC UA stacks. API offers both a low level interface to send and receive all UA defined structures and high level classes allowing to write a server or a client in a few lines. It is easy to mix high level objects and low level UA calls in one application.
 

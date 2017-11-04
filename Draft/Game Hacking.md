@@ -20,8 +20,6 @@
 
 #### Sort
 
-
-
 #### End Sort
 
 ### <a name="general"></a>General
@@ -47,7 +45,14 @@
 
 
 ### <a name="console"></a>Console Hacking
-##### Nintendo 3DS
+
+#### Nintendo Gameboy
+
+[Reverse engineering a Gameboy ROM with radare2](https://www.megabeets.net/reverse-engineering-a-gameboy-rom-with-radare2/)
+
+
+
+#### Nintendo 3DS
 [Keyshuffling Attack for Persistent Early Code Execution in the Nintendo 3DS Secure Bootchain](https://github.com/Plailect/keyshuffling)
 * We demonstrate an attack on the secure bootchain of the Nintendo 3DS in order to gain early code execution. The attack utilizes the block shuffling vulnerability of the ECB cipher mode to rearrange keys in the Nintendo 3DS's encrypted keystore. Because the shuffled keys will deterministically decrypt the encrypted firmware binary to incorrect plaintext data and execute it, and because the device's memory contents are kept between hard reboots, it is possible to reliably reach a branching instruction to a payload in memory. This payload, due to its execution by a privileged processor and its early execution, is able to extract the hash of hardware secrets necessary to decrypt the device's encrypted keystore and set up a persistant exploit of the system.
 
@@ -55,9 +60,13 @@
 
 [Throwback: K9Lhax by Bruteforce](http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce)
 
-### Nintendo Wii 
+#### Nintendo Wii 
 
 [wiihacks forum](http://www.wiihacks.com/)
+
+[WiiHacks](https://www.reddit.com/r/WiiHacks/)
+
+
 
 #### PS Vita
 
@@ -76,9 +85,11 @@
 [DEFCON 17: Fragging Game Servers - Bruce Potter](https://www.youtube.com/watch?v=SooVvF9qO_k&app=desktop)
 
 
+### PC Games
 
+[TruePlay - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/mt808781(v=vs.85).aspx)
 
-
+[Valve Anti-Cheat Untrusted Bans (VAC) CSGO](http://dev.cra0kalo.com/?p=521)
 
 
 

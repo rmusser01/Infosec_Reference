@@ -30,9 +30,12 @@
 * sort and break into policy/high level/ vs interesting things
 
 
-| **Simplifying the Business Bar Coded Boarding Pass Implementation Guide** | http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf
-| **What’s contained in a boarding pass barcode?** | https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode
-| **Universal Extractor** - Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc | http://www.legroom.net/software/uniextract
+[Simplifying the Business Bar Coded Boarding Pass Implementation Guide](http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf)
+
+[What’s contained in a boarding pass barcode?](https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode)
+
+[Universal Extractor](http://www.legroom.net/software/uniextract)
+* Universal Extractor is a program designed to decompress and extract files from any type of archive or installer, such as ZIP or RAR files, self-extracting EXE files, application installers, etc 
 
 
 https://www.youtube.com/watch?v=h92vmwg9Tyc
@@ -71,6 +74,18 @@ http://spth.virii.lu/articles.htm
 * what3words provides a precise and incredibly simple way to talk about location. We have divided the world into a grid of 3m x 3m squares and assigned each one a unique 3 word address.
 
 [Windows Firewall Control - Managing Windows Firewall is now easier than ever](https://www.binisoft.org/wfc.php)
+[The Aviation Herald](https://avherald.com/)
+
+[NTSB Aviation Accident Database & Synopses](https://www.ntsb.gov/_layouts/ntsb.aviation/index.aspx)
+
+[autojump - a faster way to navigate your filesystem](https://github.com/wting/autojump)
+* autojump is a faster way to navigate your filesystem. It works by maintaining a database of the directories you use the most from the command line.
+
+[OSX for Hackers (Mavericks/Yosemite)](https://gist.github.com/matthewmueller/e22d9840f9ea2fee4716)
+
+
+[What Colour are your bits?](http://ansuz.sooke.bc.ca/entry/23)
+
 
 #### End Sort
 
@@ -315,6 +330,7 @@ Philip K. Dick said, reality is that which, when you no longer believe in it, do
 [(In)Outsider Trading – Hacking stocks using public information and (influence) - Robert Len - BSides CapeTown16](https://www.youtube.com/watch?v=sfHeguTEkuE)
 *  This talk will take a look at how inadvertently leaked technical information from businesses, can be used to successfully trade stocks. This results in making huge profits. We look at different methods of influencing the stock market, such as DDOS attacks (at critical time periods) and simple techniques such as Phish-baiting CEO’s to acquire sensitive, relevant information that can be applied in the real world to make massive gains in profit. We will also take a look at historic trends. How previous hacks, breaches and DDOS attacks have affected stock prices and investor confidence over time. Specific reference will be made towards listed South African companies (Or a particular listed SA company) and a POC will hopefully be completed by the presentation date. 
 
+[Human Trafficking in the Digital Age](https://www.irongeek.com/i.php?page=videos/derbycon4/t516-human-trafficking-in-the-digital-age-chris-jenks)
 
 
 

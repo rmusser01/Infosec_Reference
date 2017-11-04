@@ -22,6 +22,9 @@
 
 [Hacking things by touching them - armadillo](https://www.armadillophone.com/blog/2017/08/27/hacking-things-by-touching-them)
 
+[zoneminder](https://www.zoneminder.com/)
+* A full-featured, open source, state-of-the-art video surveillance software system.
+
 
 #### End Sort
 

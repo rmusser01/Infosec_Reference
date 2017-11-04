@@ -44,8 +44,7 @@ http://greatscottgadgets.com/infiltrate2013/
 [umap](https://github.com/nccgroup/umap) 
 * The USB host security assessment tool
 
-
-
+[Pwn2Win 2017 - Shift Register](http://blog.dragonsector.pl/2017/10/pwn2win-2017-shift-register.html)
 
 
 
@@ -91,6 +90,10 @@ http://greatscottgadgets.com/infiltrate2013/
 [dc25-votingvillage-report](https://github.com/josephlhall/dc25-votingvillage-report)
 * A report to synthesize findings from the Defcon 25 Voting Machine Hacking Village
 
+[Secure Tokin’ & Doobiekeys: How to roll your own counterfeit hardware security devices - @securelyfitz, @r00tkillah](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-r00killah-and-securelyfitz-Secure-Tokin-and-Doobiekeys.pdf)
+
+
+
 
 
 
@@ -119,7 +122,7 @@ http://greatscottgadgets.com/infiltrate2013/
 [Rooting the MikroTik routers (SHA2017)](https://www.youtube.com/watch?v=KZWGD9fWIcM)
 * In this talk I describe my journey into reverse engineering parts of MikroTik system to gain access to hardware features and the shell behind the RouterOS that has no “ls”.
 
-
+[When IoT Attacks: Hacking A Linux-Powered Rifle ](https://www.blackhat.com/docs/us-15/materials/us-15-Sandvik-When-IoT-Attacks-Hacking-A-Linux-Powered-Rifle.pdf)
 
 
 

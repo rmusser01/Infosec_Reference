@@ -79,6 +79,9 @@ http://arstechnica.com/security/2013/03/how-i-became-a-password-cracker/
 
 [Cracking Active Directory Passwords or “How to Cook AD Crack"](https://www.sans.org/reading-room/whitepapers/testing/cracking-active-directory-passwords-how-cook-ad-crack-37940)
 
+[Cracking Corporate Passwords – Exploiting Password Policy Weaknesses - Minga / Rick Redman Derbycon 2013](https://www.irongeek.com/i.php?page=videos/derbycon3/1301-cracking-corporate-passwords-exploiting-password-policy-weaknesses-minga-rick-redman)
+
+
 
 
 

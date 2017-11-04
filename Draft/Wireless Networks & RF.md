@@ -31,23 +31,15 @@
 http://umtrx.org/
 
 [Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
+
 [SniffAir An Open Source Framework for Wireless Security Assessments Matthew Eidelberg - DerbyCon7](https://www.youtube.com/watch?v=QxVkr-3RK94&app=desktop)
 * [SniffAir](https://github.com/Tylous/SniffAir)
 
 [CC1101-FSK](https://github.com/trishmapow/CC1101-FSK)
 * Jam and replay attack on vehicle keyless entry systems.
 
-[RTL-SDR and GNU Radio with Realtek RTL2832U [Elonics E4000/Raphael Micro R820T] software defined radio receivers.](http://superkuh.com/rtlsdr.html)
-
-[nrsc5](https://github.com/theori-io/nrsc5)
-* NRSC-5 receiver for rtl-sdr
-
 [gr-nrsc5](https://github.com/argilo/gr-nrsc5)
 * A GNU Radio implementation of HD Radio (NRSC-5)
-
-
-
-
 
 ##### End Cull
 
@@ -132,24 +124,9 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 ### <a name="cn">Cellular Networks</a>
 
-[The big GSM write-up  how to capture, analyze and crack GSM?](http://domonkos.tomcsanyi.net/?p=418)
-
-[StackOverflow post on intercepting GSM traffic](https://reverseengineering.stackexchange.com/questions/2962/intercepting-gsm-communications-with-an-usrp-and-gnu-radio)
-
-[gr-gsm](https://github.com/ptrkrysik/gr-gsm)
-* Gnuradio blocks and tools for receiving GSM transmissions
-
-[GSM MAP](http://gsmmap.org/#!/about) 
-* The GSM Security Map compares the protection capabilities of mobile networks. Networks are rated in their protection capabilities relative to a reference network that implements all protection measures that have been seen in the wild. The reference is regularly updated to reflect new protection ideas becoming commercially available. Networks, therefore, have to improve continuously to maintain their score, just as hackers are continuously improving their capabilities.
+#### Learning
 
 [Mobile self-defense - Karsten Nohl](https://www.youtube.com/watch?v=GeCkO0fWWqc)
-
-[Osmocom SIMtrace](http://bb.osmocom.org/trac/wiki/SIMtrace)
-* Osmocom SIMtrace is a software and hardware system for passively tracing SIM-ME communication between the SIM card and the mobile phone. 
-
-[NSA Playset - GSM Sniffing - Pierce&Loki - Defcon22](https://www.youtube.com/watch?v=tnn_qJGh1gc)
-
-[Mobile: Cellular Exploitation on a Global Scale The Rise & Fall of the Control](https://www.youtube.com/watch?v=HD1ngJ85vWM)
 
 [SS7: Locate. Track. Manipulate. You have a tracking device in your pocket](http://media.ccc.de/browse/congress/2014/31c3_-_6249_-_en_-_saal_1_-_201412271715_-_ss7_locate_track_manipulate_-_tobias_engel.html#video&t=424) 
 * Companies are now selling the ability to track your phone number whereever you go. With a precision of up to 50 meters, detailed movement profiles can be compiled by somebody from the other side of the world without you ever knowing about it. But that is just the tip of the iceberg.
@@ -160,16 +137,46 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 [Security mechanisms for the (U)SIM application toolkit; Test specification](https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=1801#)
 
+
+#### Attacking
+[The big GSM write-up  how to capture, analyze and crack GSM?](http://domonkos.tomcsanyi.net/?p=418)
+
+[StackOverflow post on intercepting GSM traffic](https://reverseengineering.stackexchange.com/questions/2962/intercepting-gsm-communications-with-an-usrp-and-gnu-radio)
+
 [SnoopSnitch](https://opensource.srlabs.de/projects/snoopsnitch)
 * SnoopSnitch is an Android app that collects and analyzes mobile radio data to make you aware of your mobile network security and to warn you about threats like fake base stations (IMSI catchers), user tracking and over-the-air updates. With SnoopSnitch you can use the data collected in the GSM Security Map at gsmmap.org and contribute your own data to GSM Map. This application currently only works on Android phones with a Qualcomm chipset and a stock Android ROM (or a suitable custom ROM with Qualcomm DIAG driver). It requires root priviliges to capture mobile network data.
 
 [Rooting Sim Cards](https://media.blackhat.com/us-13/us-13-Nohl-Rooting-SIM-cards-Slides.pdf)
 
+[LTE Security - How good is it?](http://csrc.nist.gov/news_events/cif_2015/research/day2_research_200-250.pdf)
+
+[Small Tweaks do Not Help: Differential Power Analysis of MILENAGE Implementations in 3G/4G USIM Cards](https://www.blackhat.com/docs/us-15/materials/us-15-Yu-Cloning-3G-4G-SIM-Cards-With-A-PC-And-An-Oscilloscope-Lessons-Learned-In-Physical-Security-wp.pdf)
+
+#### Talks
+
+[NSA Playset - GSM Sniffing - Pierce&Loki - Defcon22](https://www.youtube.com/watch?v=tnn_qJGh1gc)
+
+[Mobile: Cellular Exploitation on a Global Scale The Rise & Fall of the Control](https://www.youtube.com/watch?v=HD1ngJ85vWM)
+
 [Sniffing GSM with RTL-SDR](https://www.youtube.com/watch?v=7OW0YOa6CYs)
 
 [Capturing and Cracking GSM traffic using a rtl-sdr](https://www.youtube.com/watch?v=TOl4Q4lyJTI)
 
-[LTE Security - How good is it?](http://csrc.nist.gov/news_events/cif_2015/research/day2_research_200-250.pdf)
+
+#### Tools
+[gr-gsm](https://github.com/ptrkrysik/gr-gsm)
+* Gnuradio blocks and tools for receiving GSM transmissions
+
+[GSM MAP](http://gsmmap.org/#!/about) 
+* The GSM Security Map compares the protection capabilities of mobile networks. Networks are rated in their protection capabilities relative to a reference network that implements all protection measures that have been seen in the wild. The reference is regularly updated to reflect new protection ideas becoming commercially available. Networks, therefore, have to improve continuously to maintain their score, just as hackers are continuously improving their capabilities.
+
+[Osmocom SIMtrace](http://bb.osmocom.org/trac/wiki/SIMtrace)
+* Osmocom SIMtrace is a software and hardware system for passively tracing SIM-ME communication between the SIM card and the mobile phone. 
+
+
+
+
+
 
 
 
@@ -205,7 +212,7 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 [Introduction to SDR and the Wireless Village(Defcon)](https://www.youtube.com/watch?v=F9kKo190_oE)
 
-[Decoding the LoRa IoT Protocol with an RTL-SDR](http://www.rtl-sdr.com/decoding-the-iot-lora-protocol-with-an-rtl-sdr/)
+
 
 [Using Software Defined Radio for IoT Analysis](https://www.irongeek.com/i.php?page=videos/bsidesnova2017/102-using-software-defined-radio-for-iot-analysis-samantha-palazzolo)
 
@@ -214,9 +221,14 @@ This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard.
 
 
 
+### RTL-SDR Specific
 
+[RTL-SDR and GNU Radio with Realtek RTL2832U [Elonics E4000/Raphael Micro R820T] software defined radio receivers.](http://superkuh.com/rtlsdr.html)
 
+[nrsc5](https://github.com/theori-io/nrsc5)
+* NRSC-5 receiver for rtl-sdr
 
+[Decoding the LoRa IoT Protocol with an RTL-SDR](http://www.rtl-sdr.com/decoding-the-iot-lora-protocol-with-an-rtl-sdr/)
 
 
 

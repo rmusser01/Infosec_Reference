@@ -15,10 +15,6 @@ TOC
 
 ### Cull
 
-
-
-
-
 #### End cull
 
 
@@ -33,7 +29,7 @@ TOC
 
 
 
-
+------------------
 ###<a name="general>General</a>
 [Phishing - wikipedia](http://www.en.wikipedia.org/wiki/Phishing):
 * “Phishing is the attempt to acquire sensitive information such as usernames, passwords, and credit card details (and sometimes, indirectly, money) by masquerading as a trustworthy entity in an electronic communication.”
@@ -76,7 +72,7 @@ TOC
 
 
 
-
+------------------
 ### Tools
 
 [CatMyFish](https://github.com/Mr-Un1k0d3r/CatMyFish)
@@ -96,7 +92,7 @@ TOC
 
 
 
-
+------------------
 ### Microsoft Outlook/Exchange Stuff
 
 [How to bypass Web-Proxy Filtering](https://www.blackhillsinfosec.com/?p=5831)
@@ -107,19 +103,34 @@ TOC
 
 [Outlook and Exchange for the Bad Guys Nick Landers](https://www.youtube.com/watch?v=cVhc9VOK5MY)
 
-[Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
-
 [Outlook and Exchange for the Bad Guys Nick Landers](https://www.youtube.com/watch?v=cVhc9VOK5MY)
 
 [Microsoft Support and Recovery Assistant for Office 365](https://testconnectivity.microsoft.com/)
 
 [Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)
 
+[morphHTA - Morphing Cobalt Strike's evil.HTA](https://github.com/vysec/morphHTA)
+
+[Outlook and Exchange for the Bad Guys Nick Landers - Derbycon6](https://www.youtube.com/watch?v=cVhc9VOK5MY)
+
+[Malicious Outlook Rules - Nick Landers](https://silentbreaksecurity.com/malicious-outlook-rules/)
+
+
+------------------
+### MS Office
+
+[Exploiting Office native functionality: Word DDE edition](https://www.securityforrealpeople.com/2017/10/exploiting-office-native-functionality.html)
+
+[Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
 
 
 
 
 
+
+
+
+------------------
 ### Writeups
 
 [How do I phish? – Advanced Email Phishing Tactics - Pentest Geek](https://www.pentestgeek.com/2013/01/30/how-do-i-phish-advanced-email-phishing-tactics/)
@@ -134,10 +145,13 @@ TOC
 
 
 
-
+------------------
 ### Talks/Presentations
 
 [Three Years of Phishing - What We've Learned - Mike Morabito](http://www.irongeek.com/i.php?page=videos/centralohioinfosec2015/tech105-three-years-of-phishing-what-weve-learned-mike-morabito)
 * Cardinal Health has been aggressively testing and training users to recognize and avoid phishing emails. This presentation covers 3 years of lessons learned from over 18,000 employees tested, 150,000 individual phishes sent, 5 complaints, thousands of positive comments, and a dozen happy executives. Learn from actual phishing templates what works well, doesn,t work at all, and why? See efficient templates for education and reporting results.
 
 [Ichthyology: Phishing as a Science - BH USA 2017](https://www.youtube.com/watch?v=Z20XNp-luNA&app=desktop)
+
+[Modern Evasion Techniques Jason Lang - Derbycon7](https://www.irongeek.com/i.php?page=videos/derbycon7/t110-modern-evasion-techniques-jason-lang)
+* As pentesters, we are often in need of working around security controls. In this talk, we will reveal ways that we bypass in-line network defenses, spam filters (in line and cloud based), as well as current endpoint solutions. Some techniques are old, some are new, but all work in helping to get a foothold established. Defenders: might want to come to this one.

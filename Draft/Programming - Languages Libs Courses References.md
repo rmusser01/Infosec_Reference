@@ -33,15 +33,14 @@ http://en.cppreference.com/w/c
 * 6. How did that ever work?
 
 [x86 Call/Return Protocol](http://pages.cs.wisc.edu/~remzi/Classes/354/Fall2012/Handouts/Handout-CallReturn.pdf)
+[Diving deep into Python – the not-so-obvious language parts](http://sebastianraschka.com/Articles/2014_deep_python.html)
 
+[Alamofire](https://github.com/Alamofire/Alamofire)
+* Alamofire is an HTTP networking library written in Swift.
 
 
 [plog](https://github.com/SergiusTheBest/plog)
 * Portable, simple and extensible C++ logging library
-
-[SafeSQL](https://github.com/stripe/safesql)
-* SafeSQL is a static analysis tool for Go that protects against SQL injections.
-
 
 
 
@@ -635,7 +634,11 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 
 
+----------
+### SQL
 
+[SafeSQL](https://github.com/stripe/safesql)
+* SafeSQL is a static analysis tool for Go that protects against SQL injections.
 
 
 

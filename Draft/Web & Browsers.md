@@ -11,6 +11,7 @@ Web TOC
 * [Different Typs of Web Based Attacks](#difatk)
 	* [Abuse of Functionality](#abuse)
 	* [Brute Force Fuzzing](#brute)
+	* [Attacking Continous Integration Systems](#ci)
 	* [Cross-Site-Request Forgery](#csrf)
 	* [De/Encoders](#encode)
 	* [Data Structure Attacks](#dsa)
@@ -63,10 +64,10 @@ Clickjacking attacks
 [sonar.js](https://thehackerblog.com/sonar-a-framework-for-scanning-and-exploiting-internal-hosts-with-a-webpage/)
 * A Framework for Scanning and Exploiting Internal Hosts With a Webpage
 
-[Discover DevTools](https://www.codeschool.com/courses/discover-devtools)
-* Learn how Chrome DevTools can sharpen your dev process and discover the tools that can optimize your workflow and make life easier.
+[ABUSING CERTIFICATE TRANSPARENCY OR HOW TO HACK WEB APPLICATIONS BEFORE INSTALLATION - Hanno Bock](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-Hanno-Boeck-Abusing-Certificate-Transparency-Logs.pdf)
 
-[Exploiting CVE-2017-8759: SOAP WSDL Parser Code Injection](https://www.mdsec.co.uk/2017/09/exploiting-cve-2017-8759-soap-wsdl-parser-code-injection/)
+
+
 #### End Sort
 
 
@@ -114,6 +115,8 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 [Big List of Naughty Strings](https://github.com/minimaxir/big-list-of-naughty-strings)
 * The Big List of Naughty Strings is an evolving list of strings which have a high probability of causing issues when used as user-input data. This is intended for use in helping both automated and manual QA testing; useful for whenever your QA engineer walks into a bar.
 
+[Discover DevTools](https://www.codeschool.com/courses/discover-devtools)
+* Learn how Chrome DevTools can sharpen your dev process and discover the tools that can optimize your workflow and make life easier.
 
 
 
@@ -184,6 +187,15 @@ https://blog.netspi.com/sql-server-persistence-part-1-startup-stored-procedures/
 * [SLIDES](http://archivedchaos.com/post/153372061089/kiwicon-2016-slides-upload)
 
 [DOM Based Angular Sandbox Escapes by Gareth Heyes - BSides Manchester2017](https://www.youtube.com/watch?v=jlSI5aVTEIg&index=16&list=PLcgqQkap1lNrOBNCXqpPqpPAqckxv0XhP)
+
+[Popular Approaches to Preventing Code Injection Attacks are Dangerously Wrong - AppSecUSA 2017](https://www.youtube.com/watch?v=GjK0bB4K2zA&app=desktop)
+
+[Web Application testing approach and cheating to win Jim McMurry Lee Neely Chelle Clements - Derbycon7](https://www.youtube.com/watch?v=Z8ZAv_EN-9M) 
+
+[Abusing Webhooks for Command and Control - Dimitry Snezhkov - BSides LV 2017](https://www.youtube.com/watch?v=TmLoTrJuung)
+* [octohook](https://github.com/dsnezhkov/octohook)
+
+
 
 
 
@@ -273,6 +285,21 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 
 
+
+### Attacking Continous Integration Systems
+[cider - Continuous Integration and Deployment Exploiter](https://github.com/spaceB0x/cider)
+* CIDER is a framework written in node js that aims to harness the functions necessary for exploiting Continuous Integration (CI) systems and their related infrastructure and build chain (eg. Travis-CI, Drone, Circle-CI). Most of the exploits in CIDER exploit CI build systems through open GitHub repositories via malicious Pull Requests. It is built modularly to encourage contributions, so more exploits, attack surfaces, and build chain services will be integrated in the future.
+
+[Rotten Apple](https://github.com/claudijd/rotten_apple)
+* A tool for testing continuous integration (CI) or continuous delivery (CD) system security
+
+[Exploiting Continuous Integration (CI) and Automated Build Systems - spaceb0x](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-spaceB0x-Exploiting-Continuous-Integration.pdf)
+
+
+
+
+
+
 -------------------
 #### <a name="csrf"></a>Cross Site Request Forgery (CSRF)
 [Cross Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
@@ -299,6 +326,14 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 #### <a name="dsa">Data Structure Attacks</a>
 
 [EXPLOITING XXE IN FILE UPLOAD FUNCTIONALITY](https://www.blackhat.com/docs/us-15/materials/us-15-Vandevanter-Exploiting-XXE-Vulnerabilities-In-File-Parsing-Functionality.pdf)
+
+[Hunting in the Dark - Blind XXE](https://blog.zsec.uk/blind-xxe-learning/)
+
+[Security Implications of DTD Attacks Against a Wide Range of XML Parsers](https://www.nds.rub.de/media/nds/arbeiten/2015/11/04/spaeth-dtd_attacks.pdf)
+
+[Comma Separated Vulnerabilities](https://www.contextis.com/blog/comma-separated-vulnerabilities)
+
+
 
 
 
@@ -487,6 +522,7 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 [MongoDB: Typical Security Weaknesses in a NoSQL DB](http://blog.spiderlabs.com/2013/03/mongodb-security-weaknesses-in-a-typical-nosql-database.html)
 
+[MongoDB Pentesting for Absolute Beginners](https://github.com/nixawk/pentest-wiki/blob/master/2.Vulnerability-Assessment/Database-Assessment/mongodb/MongoDB%20Pentesting%20for%20Absolute%20Beginners.pdf)
 
 
 #### PostgreSQL
@@ -516,6 +552,7 @@ Wfuzz is a tool designed for bruteforcing Web Applications, it can be used for f
 
 [What is Server Side Request Forgery (SSRF)?](https://www.acunetix.com/blog/articles/server-side-request-forgery-vulnerability/)
 
+[SSRF (Server Side Request Forgery) testing resources](https://github.com/cujanovic/SSRF-Testing/)
 
 
 --------------------
@@ -575,7 +612,12 @@ Advanced Flash Vulnerabilities in Youtube Writeups Series
 [timing_attack](https://github.com/ffleming/timing_attack)
 * Perform timing attacks against web applications
 
+[Race conditions on the web ](https://www.josipfranjkovic.com/blog/race-conditions-on-web)
 
+[Practical Race Condition Vulnerabilities in Web Applications](https://defuse.ca/race-conditions-in-web-applications.htm)
+
+[Race condition exploit](https://github.com/andresriancho/race-condition-exploit)
+* Tool to help with the exploitation of web application race conditions
 
 
 
@@ -668,6 +710,10 @@ Advanced Flash Vulnerabilities in Youtube Writeups Series
 [Shuriken](https://github.com/shogunlab/shuriken)
 * Cross-Site Scripting (XSS) command line tool for testing lists of XSS payloads on web apps.
 
+#### Writeups
+
+
+
 
 
 
@@ -749,6 +795,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 
+
+
 ----------------
 ### <a name="html5">HTML 5</a>
 
@@ -774,26 +822,53 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 --------------
 ### <a name="php"></a>PHP
 
-[Is PHP unserialize() exploitable without any 'interesting' methods? - StackOverflow](https://security.stackexchange.com/questions/77549/is-php-unserialize-exploitable-without-any-interesting-methods)
-
-[Remote code execution via PHP [Unserialize] - notsosecure](https://www.notsosecure.com/remote-code-execution-via-php-unserialize/)
-
-[PHP Magic Tricks: Type Juggling](https://www.owasp.org/images/6/6b/PHPMagicTricks-TypeJuggling.pdf)
-
 [Browser Security Whitepaper - Cure53](https://cure53.de/browser-security-whitepaper.pdf/)
 
 [OWASP Proactive Controls 3.0](https://docs.google.com/document/d/1bQKisfXQ2XRwkcUaTvVTR7bpzVgbwIhDA1O6hUbywiY/mobilebasic)
 
+[Php Codz Hacking](https://github.com/80vul/phpcodz)
+* Writeups of specific PHP vulns
+
+
+#### Code Reuse
+
+[The ReflectionClass class](https://secure.php.net/ReflectionClass)
+
+[Autoloading Classes](http://www.php.net/language.oop5.autoload)
+
 [PHP Autoload Invalid Classname Injection](https://hakre.wordpress.com/2013/02/10/php-autoload-invalid-classname-injection/)
 
-[Writing Exploits For Exotic Bug Classes: PHP Type Juggling](https://turbochaos.blogspot.com.au/2013/08/exploiting-exotic-bugs-php-type-juggling.html)
+[Code Reuse Attacks in PHP: Automated POP Chain Generation](https://www.syssec.rub.de/media/emma/veroeffentlichungen/2014/09/10/POPChainGeneration-CCS14.pdf)
+* In  this  paper, we study code reuse attacks in the con- text of PHP-based web applications. We analyze how PHP object injection (POI) vulnerabilities  can  be exploited via property-oriented programming (POP) and perform a systematic analysis of available gadgets in common PHP applications. Furthermore, we introduce an automated approach to statically detect  POI  vulnerabilities  in  object-oriented PHP code. Our approach is also capable of generating POP chains in an automated way. We implemented a prototype of the proposed approach and evaluated it with 10 well-known applications. Overall, we detected 30 new POI vulnerabilities and 28 new gadget chains
 
-[PHP’s “Magic Hash” Vulnerability (Or Beware Of Type Juggling)](https://web.archive.org/web/20150530075600/http://blog.astrumfutura.com/2015/05/phps-magic-hash-vulnerability-or-beware-of-type-juggling)
+[Utilizing Code Reuse/ROP in PHP Application Exploits - BH 2010](https://www.owasp.org/images/9/9e/Utilizing-Code-Reuse-Or-Return-Oriented-Programming-In-PHP-Application-Exploits.pdf)
+
+[POP-Exploit](https://github.com/enddo/POP-Exploit)
+* Research into Property Oriented Programming about php applications.
+
+
+#### De/Serialization
+
+[serialize - php](http://us3.php.net/serialize)
+
+[unserialize - php](https://secure.php.net/unserialize)
+
+[PHP Object Injection](https://www.owasp.org/index.php/PHP_Object_Injection)
 
 [Writing Exploits For Exotic Bug Classes: unserialize()](https://www.alertlogic.com/blog/writing-exploits-for-exotic-bug-classes-unserialize()/)
 
-[Php Codz Hacking](https://github.com/80vul/phpcodz)
-* Writeups of specific PHP vulns
+[Is PHP unserialize() exploitable without any 'interesting' methods? - StackOverflow](https://security.stackexchange.com/questions/77549/is-php-unserialize-exploitable-without-any-interesting-methods)
+
+[Remote code execution via PHP [Unserialize] - notsosecure](https://www.notsosecure.com/remote-code-execution-via-php-unserialize/)
+
+
+#### Type Juggling
+[Writing Exploits For Exotic Bug Classes: PHP Type Juggling](https://turbochaos.blogspot.com.au/2013/08/exploiting-exotic-bugs-php-type-juggling.html)
+
+[PHP Magic Tricks: Type Juggling](https://www.owasp.org/images/6/6b/PHPMagicTricks-TypeJuggling.pdf)
+
+[PHP’s “Magic Hash” Vulnerability (Or Beware Of Type Juggling)](https://web.archive.org/web/20150530075600/http://blog.astrumfutura.com/2015/05/phps-magic-hash-vulnerability-or-beware-of-type-juggling)
+
 
 
 
@@ -801,11 +876,10 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 
 ----------------
-### <a name="rest"></a>REST & Web Services
+### <a name="rest"></a>REST & Web Services(WSDL)
 
-[REST Security Cheat Sheet](REST Security Cheat Sheet)
 
-[REST Assessment Cheat Sheet](https://www.owasp.org/index.php/REST_Assessment_Cheat_Sheet)
+#### Learning/Reference
 
 [RESTful Services, The Web Security Blind Spot](https://www.youtube.com/watch?feature=player_embedded&v=pWq4qGLAZHI#!)
 * [Blogpost](https://xiom.com/2016/10/31/restful-services-web-security-blind-spot/)
@@ -819,12 +893,22 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [Web Services Security Testing Cheat Sheet Introduction - OWASP](https://www.owasp.org/index.php/Web_Service_Security_Testing_Cheat_Sheet)
 
-[Damn Vulnerable Web Services dvws](https://github.com/snoopysecurity/dvws)
-* Damn Vulnerable Web Services is an insecure web application with multiple vulnerable web service components that can be used to learn real world web service vulnerabilities.
-
 [Service-Oriented-Architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture)
 
 [Microservices](https://en.wikipedia.org/wiki/Microservices)
+
+[Learn REST: A Tutorial](http://rest.elkstein.org/)
+
+
+
+#### Attacking
+
+[REST Security Cheat Sheet](REST Security Cheat Sheet)
+
+[REST Assessment Cheat Sheet](https://www.owasp.org/index.php/REST_Assessment_Cheat_Sheet)
+
+[Damn Vulnerable Web Services dvws](https://github.com/snoopysecurity/dvws)
+* Damn Vulnerable Web Services is an insecure web application with multiple vulnerable web service components that can be used to learn real world web service vulnerabilities.
 
 [WS-Attacker](https://github.com/RUB-NDS/WS-Attacker)
 * WS-Attacker is a modular framework for web services penetration testing. It is developed by the Chair of Network and Data Security, Ruhr University Bochum (http://nds.rub.de/ ) and the Hackmanit GmbH (http://hackmanit.de/).
@@ -832,7 +916,8 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [WS-Attacks.org](http://www.ws-attacks.org/Welcome_to_WS-Attacks)
 * WS-Attacks.org is not a new web service standard by the OASIS Group or W3C; instead it presents the flaws of today's web service standards and implementations in regard to web service security! WS-Attacks.org aims at delivering the most comprehensive enumeration of all known web service attacks.
 
-[Learn REST: A Tutorial](http://rest.elkstein.org/)
+[Exploiting CVE-2017-8759: SOAP WSDL Parser Code Injection](https://www.mdsec.co.uk/2017/09/exploiting-cve-2017-8759-soap-wsdl-parser-code-injection/)
+
 
 
 --------------------------------
@@ -843,7 +928,9 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 
 [Going AUTH the Rails on a Crazy Train: A Dive into Rails Authentication and Authorization](https://www.blackhat.com/docs/eu-15/materials/eu-15-Jarmoc-Going-AUTH-The-Rails-On-A-Crazy-Train-wp.pdf)
 
+[Property Oriented Programming - Applied to Ruby](https://slides.com/benmurphy/property-oriented-programming/fullscreen#/)
 
+[Pentesting Django and Rails](https://es.slideshare.net/levigross/pentesting-django-and-rails)
 
 
 
@@ -867,6 +954,9 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 ### <a name="scanners"></a>Site/Webapp Scanners
 
 [nikto]()
+
+[Spaghetti - Web Application Security Scanner](https://github.com/m4ll0k/Spaghetti)
+* Spaghetti is an Open Source web application scanner, it is designed to find various default and insecure files, configurations, and misconfigurations. Spaghetti is built on python2.7 and can run on any platform which has a Python environment.
 
 [skipfish](https://code.google.com/p/skipfish/)
 * Skipfish is an active web application security reconnaissance tool. It prepares an interactive sitemap for the targeted site by carrying out a recursive crawl and dictionary-based probes. The resulting map is then annotated with the output from a number of active (but hopefully non-disruptive) security checks. The final report generated by the tool is meant to serve as a foundation for professional web application security assessments. 
@@ -1107,15 +1197,25 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 ----------------
 ### <a name="burp">Burp Stuff/Plugins</a>
 
-[100 OWASP Top 10 Hacking Web Applications with Burp Suite Chad Furman](https://www.youtube.com/watch?v=2p6twRRXK_o)
+
 
 [AuthMatrix](https://github.com/SecurityInnovation/AuthMatrix)
 * AuthMatrix is a Burp Suite extension that provides a simple way to test authorization in web applications and web services. 
 
+#### Tutorials/Tips/Stuff
+
+[100 OWASP Top 10 Hacking Web Applications with Burp Suite Chad Furman](https://www.youtube.com/watch?v=2p6twRRXK_o)
 
 [Burp Pro : Real-life tips and tricks](https://hackinparis.com/talk-nicolazs-gregoire)
 
 [Behind enemy lines: Bug hunting with Burp Infiltrator](http://blog.portswigger.net/2017/06/behind-enemy-lines-bug-hunting-with.html)
+
+[Automating Web Apps Input fuzzing via Burp Macros](http://blog.securelayer7.net/automating-web-apps-input-fuzzing-via-burp-macros/)
+
+
+#### Plugins
+
+[Adapting Burp Extensions for Tailored Pentesting](http://blog.portswigger.net/2017/08/adapting-burp-extensions-for-tailored.html)
 
 [BurpSmartBuster](https://github.com/pathetiq/BurpSmartBuster)
 * A Burp Suite content discovery plugin that add the smart into the Buster!
@@ -1138,15 +1238,11 @@ Joomla! is probably the most widely-used CMS out there due to its flexibility, u
 [Autorize](https://github.com/Quitten/Autorize)
 * Autorize is an automatic authorization enforcement detection extension for Burp Suite. It was written in Python by Barak Tawily, an application security expert, and Federico Dotta, a security expert at Mediaservice.net. Autorize was designed to help security testers by performing automatic authorization tests. With the last release now Autorize also perform automatic authentication tests.
 
-[Adapting Burp Extensions for Tailored Pentesting](http://blog.portswigger.net/2017/08/adapting-burp-extensions-for-tailored.html)
-
 [HUNT](https://github.com/bugcrowd/HUNT)
 * HUNT is a Burp Suite extension to: 1. Identify common parameters vulnerable to certain vulnerability classes; 2. Organize testing methodologies inside of Burp Suite;
 
 [SAML Raider](https://github.com/SAMLRaider/SAMLRaider)
 * SAML Raider is a Burp Suite extension for testing SAML infrastructures. It contains two core functionalities: Manipulating SAML Messages and manage X.509 certificates.
-
-[Automating Web Apps Input fuzzing via Burp Macros](http://blog.securelayer7.net/automating-web-apps-input-fuzzing-via-burp-macros/)
 
 [ParrotNG - burp plugin](https://portswigger.net/bappstore/bapps/details/f99325340a404c67a8de2ce593824e0e)
 

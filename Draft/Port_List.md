@@ -47,7 +47,7 @@
 |264||Checkpoint Firewall||
 |311|tcp|OS X Server Manager||
 |389|tcp|ldap|ldap://*IP*/dc=com|
-|443|tcp|https|openssl s_client -host www.yahoo.com -port 443<BR>sslscan www.yahoo.com<BR>tlssled www.yahoo.com 443<BR>nmap --script sslv2 www.yahoo.com<BR>nmap --script ssl-cert www.yahoo.com<BR>nmap --script ssl-date www.yahoo.com<BR>nmap --script ssl-enum-ciphers www.yahoo.com<BR>nmap --script ssl-google-cert-catalog www.yahoo.com<BR>msf > use auxiliary/pro/web_ssl_scan<BR>msf > use auxiliary/scanner/ssl/openssl_heartbleed<BR>msf > use auxiliary/server/openssl_heartbeat_client_memory|
+|443|tcp|https|openssl s_client -host *ADDR* -port 443<BR>sslscan *ADDR*<BR>tlssled *ADDR* 443<BR>nmap --script sslv2 *ADDR*<BR>nmap --script ssl-cert *ADDR*<BR>nmap --script ssl-date *ADDR*<BR>nmap --script ssl-enum-ciphers *ADDR*<BR>nmap --script ssl-google-cert-catalog *ADDR*<BR>msf > use auxiliary/pro/web_ssl_scan<BR>msf > use auxiliary/scanner/ssl/openssl_heartbleed<BR>msf > use auxiliary/server/openssl_heartbeat_client_memory|
 |445|tcp|Microsoft-DS Active Directory, Windows shares<BR>Microsoft-DS SMB file sharing|smbclient -U root -L *IP*<BR>smbclient -U root //*IP*/tmp<BR>rpcclient -U "" *IP*<BR>msf > auxiliary/admin/smb/samba_symlink_traversal|
 |465|tcp|smtps||
 |500|udp|ike||

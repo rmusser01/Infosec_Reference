@@ -18,14 +18,17 @@ ToC
 
 -----
 ### <a name="bitcoin"></a> Bitcoin
+* [Bitcoin Paper](https://bitcoin.org/bitcoin.pdf)
+	* [Bitcoin Paper Annotated - Genius](https://genius.com/2683753)
+	* [Bitcoin Paper Annotated - Fermats Library](https://fermatslibrary.com/s/bitcoin)
 * [Bitcointalk](https://bitcointalk.org/)
 * [/r/bitcoin](https://reddit.com/r/bitcoin)
 
 -----
 ### <a name="eth"></a>Ethereum
+* [Ethereum 'White Paper'](https://github.com/ethereum/wiki/wiki/White-Paper)
+* [Cracking the Ethereum White Paper](https://medium.com/@FolusoOgunlana/cracking-the-ethereum-white-paper-e0e60c44126)
 * [The Ether Thief](https://www.bloomberg.com/features/2017-the-ether-thief/)
-
-
 
 -----
 ### <a name="talks"></a>Talks/Presentations

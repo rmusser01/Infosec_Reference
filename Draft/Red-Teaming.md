@@ -18,11 +18,9 @@
 ### Sort
 To Do
 * Sort articles better
-
-* [LinkedInt: A LinkedIn scraper for reconnaissance during adversary simulation](https://github.com/mdsecactivebreach/LinkedInt)
 * [PenTesting-Scripts - killswitch-GUI](https://github.com/killswitch-GUI/PenTesting-Scripts)
 * [Software Distribution Malware Infection Vector](https://dl.packetstormsecurity.net/papers/general/Software.Distribution.Malware.Infection.Vector.pdf)
-
+* [File Server Triage on Red Team Engagements](http://www.harmj0y.net/blog/redteaming/file-server-triage-on-red-team-engagements/)
 #### End sort
 
 
@@ -48,14 +46,15 @@ Articles
 	* [Raphael’s Magic Quadrant - Mudge](https://blog.cobaltstrike.com/2015/08/03/raphaels-magic-quadrant/)
 	* [RAT - Repurposing Adversarial Tradecraft - killswitch_GUI](https://speakerdeck.com/killswitch_gui/rat-repurposing-adversarial-tradecraft)
 	* [Penetration Testing considered Harmful Today](http://blog.thinkst.com/p/penetration-testing-considered-harmful.html)
-* Domain Fronting
-	* [Red Team Insights on HTTPS Domain Fronting Google Hosts Using Cobalt Strike](https://www.cyberark.com/threat-research-blog/red-team-insights-https-domain-fronting-google-hosts-using-cobalt-strike/)
+	* [Planning a Red Team exercise](https://github.com/magoo/redteam-plan)
 * Educational(Specific Tactics/Techniques/Misc)
 	* [#OLEOutlook - bypass almost every Corporate security control with a point’n’click GUI](https://doublepulsar.com/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0)
 	* [Offensive Encrypted Data Storage](http://www.harmj0y.net/blog/redteaming/offensive-encrypted-data-storage/)
 	* [Offensive Encrypted Data Storage (DPAPI edition)](https://posts.specterops.io/offensive-encrypted-data-storage-dpapi-edition-adda90e212ab)
 	* [Goodbye OODA Loop](http://armedforcesjournal.com/goodbye-ooda-loop/)
+	* [Planning a Red Team exercise](https://github.com/magoo/redteam-plan)
 * Red Team Experiences
+	* [Passing the Torch: Old School Red Teaming, New School Tactics?](https://www.slideshare.net/harmj0y/derbycon-passing-the-torch)
 	* [Red Teaming Tips - Vincent Yiu](https://threatintel.eu/2017/06/03/red-teaming-tips-by-vincent-yiu/)
 	* [Red Team Tips as posted by @vysecurity on Twitter](https://github.com/vysec/RedTips)
 	* [Red Teams - Facebook Experiences Writeup - Ryan McGeehan](https://medium.com/starting-up-security/red-teams-6faa8d95f602)
@@ -63,6 +62,9 @@ Articles
 	* [Red Teaming: Using Cutting-Edge Threat Simulation to Harden the Microsoft Enterprise Cloud](https://azure.microsoft.com/en-us/blog/red-teaming-using-cutting-edge-threat-simulation-to-harden-the-microsoft-enterprise-cloud/)
 	* [10 Red Teaming Lessons Learned over 20 Years](https://redteamjournal.com/2015/10/10-red-teaming-lessons-learned-over-20-years/)
 	* [Red team versus blue team: How to run an effective simulation - CSOonline](https://www.csoonline.com/article/2122440/disaster-recovery/emergency-preparedness-red-team-versus-blue-team-how-to-run-an-effective-simulation.html)
+	* [Red Teaming for Pacific Rim CCDC 2017](https://bluescreenofjeff.com/2017-05-02-red-teaming-for-pacific-rim-ccdc-2017/)
+	* [How I Prepared to Red Team at PRCCDC 2015](https://bluescreenofjeff.com/2015-04-15-how-i-prepared-to-red-team-at-prccdc-2015/)
+	* [Red Teaming for Pacific Rim CCDC 2016](https://bluescreenofjeff.com/2016-05-24-pacific-rim-ccdc_2016/)
 * Papers
 	* [Red teaming - A Short Introduction (1.0) June 2009 - Mark Mateski](https://redteamjournal.com/papers/A%20Short%20Introduction%20to%20Red%20Teaming%20(1dot0).pdf)
 	* [Red Teaming Guide - UK Ministry of Defense](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/142533/20130301_red_teaming_ed2.pdf)
@@ -146,6 +148,8 @@ Cobalt Strike
 	* [Cobalt Strike over external C2 – beacon home in the most obscure ways](https://outflank.nl/blog/2017/09/17/blogpost-cobalt-strike-over-external-c2-beacon-home-in-the-most-obscure-ways/)
 	* [OPSEC Considerations for Beacon Commands - CobaltStrike](https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/)
 	* [Valid SSL Certificates with SSL Beacon - cs](https://www.cobaltstrike.com/help-malleable-c2#validssl)
+	* [Randomized Malleable C2 Profiles Made Easy](https://bluescreenofjeff.com/2017-08-30-randomized-malleable-c2-profiles-made-easy/)
+	* [OPSEC Considerations for beacon commands](https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/)
 * Documentation
 	* [Malleable C2 Documenation - cs](https://www.cobaltstrike.com/help-malleable-c2)
 * Other
@@ -174,6 +178,8 @@ Command & Control (CnC)
 	* [WSC2](https://github.com/Arno0x/WSC2)
 		* WSC2 is a PoC of using the WebSockets and a browser process to serve as a C2 communication channel between an agent, running on the target system, and a controller acting as the actuel C2 server.
 * PoCs
+	* [RemoteRecon](https://github.com/xorrior/RemoteRecon)
+		* RemoteRecon provides the ability to execute post-exploitation capabilities against a remote host, without having to expose your complete toolkit/agent. Often times as operator's we need to compromise a host, just so we can keylog or screenshot (or some other miniscule task) against a person/host of interest. Why should you have to push over beacon, empire, innuendo, meterpreter, or a custom RAT to the target? This increases the footprint that you have in the target environment, exposes functionality in your agent, and most likely your C2 infrastructure. An alternative would be to deploy a secondary agent to targets of interest and collect intelligence. Then store this data for retrieval at your discretion. If these compromised endpoints are discovered by IR teams, you lose those endpoints and the information you've collected, but nothing more.
 	* [Expand Your Horizon Red Team – Modern SaaS C2](https://cybersyndicates.com/2017/04/expand-your-horizon-red-team/)
 	* [JSBN](https://github.com/Plazmaz/JSBN)
 		* JSBN is a bot client which interprets commands through Twitter, requiring no hosting of servers or infected hosts from the command issuer. It is written purely in javascript as a Proof-of-Concept for javascript's botnet potentials.
@@ -190,7 +196,17 @@ Command & Control (CnC)
 		* This is the Command & Control component of the PlugBot project
 	* [How to Build a 404 page not found C2](https://www.blackhillsinfosec.com/?p=5134)
 	* [404 File not found C2 PoC](https://github.com/theG3ist/404)
-
+	* [Command and Control Using Active Directory](http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/)
+	* [C2 with twitter](https://pentestlab.blog/2017/09/26/command-and-control-twitter/)
+	* [C2 with DNS](https://pentestlab.blog/2017/09/06/command-and-control-dns/)
+	* [ICMP C2](https://pentestlab.blog/2017/07/28/command-and-control-icmp/)
+	* [C2 with Dropbox](https://pentestlab.blog/2017/08/29/command-and-control-dropbox/)
+	* [C2 with https](https://pentestlab.blog/2017/10/04/command-and-control-https/)
+	* [C2 with webdav](https://pentestlab.blog/2017/09/12/command-and-control-webdav/)
+	* [C2 with gmail](https://pentestlab.blog/2017/08/03/command-and-control-gmail/)
+	* [“Tasking” Office 365 for Cobalt Strike C2](https://labs.mwrinfosecurity.com/blog/tasking-office-365-for-cobalt-strike-c2/)
+	* [Simple domain fronting PoC with GAE C2 server](https://www.securityartwork.es/2017/01/31/simple-domain-fronting-poc-with-gae-c2-server/)
+	* [Using WebDAV features as a covert channel](https://arno0x0x.wordpress.com/2017/09/07/using-webdav-features-as-a-covert-channel/)
 
 
 
@@ -206,6 +222,10 @@ Command & Control (CnC)
 	* [Domain Fronting - Infosec Institute](http://resources.infosecinstitute.com/domain-fronting/)
 	* [Simple domain fronting PoC with GAE C2 server](https://www.securityartwork.es/2017/01/31/simple-domain-fronting-poc-with-gae-c2-server/)
 		* In this entry we continue with domain fronting; on this occasion we will explore how to implement a simple PoC of a command and control and exfiltration server on Google App Engine (GAE), and we will see how to do the domain fronting from Windows, with a VBS or PowerShell script, to hide interactions with the C2 server.
+	* [TOR Fronting – Utilising Hidden Services for Privacy](https://www.mdsec.co.uk/2017/02/tor-fronting-utilising-hidden-services-for-privacy/)
+	* [Finding Domain frontable Azure domains - thoth / Fionnbharr (@a_profligate)](https://theobsidiantower.com/2017/07/24/d0a7cfceedc42bdf3a36f2926bd52863ef28befc.html)
+	* [Red Team Insights on HTTPS Domain Fronting Google Hosts Using Cobalt Strike](https://www.cyberark.com/threat-research-blog/red-team-insights-https-domain-fronting-google-hosts-using-cobalt-strike/)
+	* [Domain Fronting Via Cloudfront Alternate Domains](https://www.mdsec.co.uk/2017/02/domain-fronting-via-cloudfront-alternate-domains/)
 * Domain Tools
 	* [Domain Hunter](https://github.com/minisllc/domainhunter)
 		* Checks expired domains, bluecoat categorization, and Archive.org history to determine good candidates for phishing and C2 domain names
@@ -215,6 +235,7 @@ Command & Control (CnC)
 		* A tool for evading Proxy categorisation
 	* [CatMyFish](https://github.com/Mr-Un1k0d3r/CatMyFish)
 		* Search for categorized domain that can be used during red teaming engagement. Perfect to setup whitelisted domain for your Cobalt Strike beacon C&C.  It relies on expireddomains.net to obtain a list of expired domains. The domain availability is validated using checkdomain.com
+	* [Finding Frontable Domain](https://github.com/rvrsh3ll/FindFrontableDomains)
 * Domain Reputation Sites
 	* [Alien Vault](http://www.alienvault.com)
 	* [Isithacked?](http://www.isithacked.com)
@@ -227,6 +248,17 @@ Command & Control (CnC)
 	* [VirusTotal](https://www.virustotal.com/)
 	* [WOT](http://www.mywot.com/en/scorecard)
 	* [Zeltser BL](http://zeltser.com)
+* Redirectors
+	* [Apache2Mod Rewrite Setup](https://github.com/n0pe-sled/Apache2-Mod-Rewrite-Setup)
+	* [Redirecting Cobalt Strike DNS Beacons](http://www.rvrsh3ll.net/blog/offensive/redirecting-cobalt-strike-dns-beacons/)
+	* [High-reputation Redirectors and Domain Fronting](https://blog.cobaltstrike.com/2017/02/06/high-reputation-redirectors-and-domain-fronting/)
+	* [Cobalt Strike HTTP C2 Redirectors with Apache mod_rewrite - Jeff Dimmock](https://bluescreenofjeff.com/2016-06-28-cobalt-strike-http-c2-redirectors-with-apache-mod_rewrite/)
+
+
+
+
+
+
 
 
 ### <a name="egress"></a>Egress/Exfiltration
@@ -245,6 +277,7 @@ Egress & Exfiltration
 	* [Egressing Bluecoat with CobaltStike & Let's Encrypt](https://cybersyndicates.com/2016/12/egressing-bluecoat-with-cobaltstike-letsencrypt/)
 	* [Project Loki - Phrack 7-49](http://phrack.org/issues/49/6.html)
 		* This whitepaper is intended as a complete description of the covert channel that exists in networks that allow ping traffic (hereon referred to in the more general sense of ICMP_ECHO traffic --see below) to pass.
+	* [Escape and Evasion Egressing Restricted Networks - Tom Steele and Chris Patten](https://www.optiv.com/blog/escape-and-evasion-egressing-restricted-networks)
 * Talks
 	* [DIY Spy Covert Channels With Scapy And Python - Jen Allen - ANYCON 2017](http://www.irongeek.com/i.php?page=videos/anycon2017/diy-spy-covert-channels-with-scapy-and-python-jen-allen)
 	* [Goodbye Data, Hello Exfiltration - Itzik Kotler](https://www.youtube.com/watch?v=GwaIvm2HJKc)
@@ -263,11 +296,28 @@ Egress & Exfiltration
 --------------
 ### Empire
 Empire
-* [Using PowerShell Empire with a Trusted Certificate](https://www.blackhillsinfosec.com/using-powershell-empire-with-a-trusted-certificate/)
-* [How to Make Empire Communication profiles - bluescreenofjeff](https://github.com/bluscreenofjeff/bluscreenofjeff.github.io/blob/master/_posts/2017-03-01-how-to-make-communication-profiles-for-empire.md)
-* [Empire – Modifying Server C2 Indicators](http://threatexpress.com/2017/05/empire-modifying-server-c2-indicators/)
-* [Hunting Red Team Empire C2 Infrastructure](http://www.chokepoint.net/2017/04/hunting-red-team-empire-c2.html)
-* [Athena: The CIA’s RAT vs Empire](https://bneg.io/2017/05/22/athena-the-cias-rat-vs-empire/)
+* Articles
+	* [Hunting Red Team Empire C2 Infrastructure](http://www.chokepoint.net/2017/04/hunting-red-team-empire-c2.html)
+	* [Athena: The CIA’s RAT vs Empire](https://bneg.io/2017/05/22/athena-the-cias-rat-vs-empire/)
+* Customizing
+	* [Using PowerShell Empire with a Trusted Certificate](https://www.blackhillsinfosec.com/using-powershell-empire-with-a-trusted-certificate/)
+	* [How to Make Empire Communication profiles - bluescreenofjeff](https://github.com/bluscreenofjeff/bluscreenofjeff.github.io/blob/master/_posts/2017-03-01-how-to-make-communication-profiles-for-empire.md)
+	* [Empire – Modifying Server C2 Indicators](http://threatexpress.com/2017/05/empire-modifying-server-c2-indicators/)
+	* [Empire Domain Fronting](https://www.xorrior.com/Empire-Domain-Fronting/)
+	* [Empire without powershell](https://bneg.io/2017/07/26/empire-without-powershell-exe/)
+
+
+
+
+
+--------------
+##### <a name="hw"></a>HW
+* [DigiDucky - How to setup a Digispark like a rubber ducky](http://www.redteamr.com/2016/08/digiducky/)
+* [Bash Bunny](https://hakshop.com/products/bash-bunny)
+* [How to Build Your Own Penetration Testing Drop Box - BHIS](https://www.blackhillsinfosec.com/?p=5156&)
+* [P4wnP1](https://github.com/mame82/P4wnP1)
+	* P4wnP1 is a highly customizable USB attack platform, based on a low cost Raspberry Pi Zero or Raspberry Pi Zero W.
+	* [Contents of a Physical Pentester Backpack](https://www.tunnelsup.com/contents-of-a-physical-pen-testers-backpack/)
 
 
 
@@ -289,18 +339,17 @@ Empire
 
 
 
-
-
-
-
 --------------
-##### <a name="hw"></a>HW
-[DigiDucky - How to setup a Digispark like a rubber ducky](http://www.redteamr.com/2016/08/digiducky/)
-
-[How to Build Your Own Penetration Testing Drop Box - BHIS](https://www.blackhillsinfosec.com/?p=5156&)
-
-[P4wnP1](https://github.com/mame82/P4wnP1)
-* P4wnP1 is a highly customizable USB attack platform, based on a low cost Raspberry Pi Zero or Raspberry Pi Zero W.
+### Infrastructure
+Infrastructure
+* General	
+	* [How to Build a C2 Infrastructure with Digital Ocean – Part 1](https://www.blackhillsinfosec.com/build-c2-infrastructure-digital-ocean-part-1/)
+	* [Infrastructure for Ongoing Red Team Operations](https://blog.cobaltstrike.com/2014/09/09/infrastructure-for-ongoing-red-team-operations/)
+	* [Automated Red Team Infrastructure Deployment with Terraform - Part 1](https://rastamouse.me/2017/08/automated-red-team-infrastructure-deployment-with-terraform---part-1/)
+	* [6 RED TEAM INFRASTRUCTURE TIPS](https://cybersyndicates.com/2016/11/top-red-team-tips/)
+	* [Migrating Your infrastructure](https://blog.cobaltstrike.com/2015/10/21/migrating-your-infrastructure/)
+* Logging
+	* [Attack Infrastructure Log Aggregation and Monitoring](https://posts.specterops.io/attack-infrastructure-log-aggregation-and-monitoring-345e4173044e)
 
 
 
@@ -334,10 +383,10 @@ Persistence Methods
 --------------
 ### Tactics
 Tactics
-
 * Ideas
 	* [unindexed](https://github.com/mroth/unindexed/blob/master/README.md)
 		* The site is constantly searching for itself in Google, over and over and over, 24 hours a day. The instant it finds itself in Google search results, the site will instantaneously and irrevocably securely delete itself. Visitors can contribute to the public content of the site, these contributions will also be destroyed when the site deletes itself.
+	* [Hiding your process from sysinternals](https://riscybusiness.wordpress.com/2017/10/07/hiding-your-process-from-sysinternals/)
 * Keying Payloads
 	* [Keying Payloads for Scripting Languages](https://adapt-and-attack.com/2017/11/15/keying-payloads-for-scripting-languages/)
 	* [GoGreen](https://github.com/leoloobeek/GoGreen/blob/master/README.md)

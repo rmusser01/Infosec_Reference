@@ -6,14 +6,47 @@
 
 #### In Progress
 
+https://github.com/KurtDeGreeff/awesome-windows-domain-hardening
+
+https://github.com/k4m4/kickthemout
+
+https://github.com/iadgov/Secure-Host-Baseline
+
+[git-secrets](https://github.com/awslabs/git-secrets)
+* Prevents you from committing passwords and other sensitive information to a git repository.
+
+[keynuker](https://github.com/tleyden/keynuker)
+* KeyNuker scans public activity across all Github users in your Github organization(s) and proactively deletes any AWS keys that are accidentally leaked. It gets the list of AWS keys to scan by directly connecting to the AWS API.
+
+https://github.com/gfoss/PSRecon
+
+[Securing Windows with Group Policy Josh Rickard - Derbycon7](https://www.youtube.com/watch?v=Upeaa2rgozk&index=66&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
+* 
+https://github.com/silverhack/voyeur
+
+https://github.com/intrigueio/intrigue-core
+
+https://github.com/nbs-system/naxsi
+
+https://github.com/ernw/hardening
+
+https://www.youtube.com/watch?v=7XnkDsOZM3Y&index=16&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3
+
 https://www.malwarearchaeology.com/logging/
 
 https://github.com/iadgov/Secure-Host-Baseline
 
+https://technet.microsoft.com/library/security/4053440
+
 
 https://criticalinformatics.com/how-i-learned-to-trust-my-shell-microsoft-powershell/?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=7832f4ea811a4bc7b33409dacf81eb7f&uid=150127534&nid=244+281088008
 
+https://github.com/palantir/osquery-configuration/blob/master/README.md
 
+
+https://github.com/refractionpoint/limacharlie
+
+https://cert.europa.eu/static/WhitePapers/CERT-EU-SWP_14_07_PassTheGolden_Ticket_v1_1.pdf
 
 https://www.blackhillsinfosec.com/build-super-secure-active-directory-infrastructure/
 

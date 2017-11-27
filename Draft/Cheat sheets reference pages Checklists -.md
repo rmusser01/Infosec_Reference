@@ -24,7 +24,7 @@
 
 #### CULL
 [SiLK Toolsuite Quick Reference Guide](https://tools.netsa.cert.org/silk/silk-quickref.pdf)
-
+* [MS "reg" commandreference](http://www.computerhope.com/reg.htm)
 http://www.amanhardikar.com/mindmaps.html
 http://www.amanhardikar.com/mindmaps/Practice.html
 #### end cull

@@ -28,8 +28,23 @@ http://computercrimeinfo.com/cleaningid.html
 
 [OSINT - onstrat](http://www.onstrat.com/osint/)
 
-http://toddington.com/resources/
+* [SIMPLYEMAIL](https://github.com/killswitch-GUI/SimplyEmail)
+	* What is the simple email recon tool? This tool was based off the work of theHarvester and kind of a port of the functionality. This was just an expansion of what was used to build theHarvester and will incorporate his work but allow users to easily build Modules for the Framework. Which I felt was desperately needed after building my first module for theHarvester.
 
+
+[tweets_analyzer](https://github.com/x0rz/tweets_analyzer)
+* Tweets metadata scraper & activity analyzer
+
+[dauntless](https://github.com/cmeister2/dauntless)
+* Tools for analysing the forward DNS data set published at https://scans.io/study/sonar.fdns_v2
+
+[SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail)
+* What is the simple email recon tool? This tool was based off the work of theHarvester and kind of a port of the functionality. This was just an expansion of what was used to build theHarvester and will incorporate his work but allow users to easily build Modules for the Framework. Which I felt was desperately needed after building my first module for theHarvester.
+
+
+
+http://toddington.com/resources/
+[OSINT Through Sender Policy Framework Records](https://community.rapid7.com/community/infosec/blog/2015/02/23/osint-through-sender-policy-framework-spf-records)
 www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 * Add list of Sources:

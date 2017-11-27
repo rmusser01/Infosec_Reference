@@ -30,6 +30,15 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 
 [Response Operation Collections Kit Reference Build](https://github.com/rocknsm/rock)
 
+
+[Infection Monkey](https://github.com/guardicore/monkey)
+* The Infection Monkey is an open source security tool for testing a data center's resiliency to perimeter breaches and internal server infection. The Monkey uses various methods to self propagate across a data center and reports success to a centralized Command and Control(C&C) server.
+
+[Hunting Red Team Empire C2 Infrastructure](http://www.chokepoint.net/2017/04/hunting-red-team-empire-c2.html)
+
+[Get-InjectedThread.ps1](https://gist.github.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2)
+* Looks for threads that were created as a result of code injection.
+
 #### End Cull
 
 

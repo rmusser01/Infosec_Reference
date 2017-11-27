@@ -18,7 +18,10 @@
 
 
 #### Sort
+[Home Alone with localhost - Automating Home Defense - Chris Littlebury Defcon22](https://www.youtube.com/watch?v=9Tbft190x3Q)
 
+[Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
+[Physical Home Security Options - DiabloHorn](https://diablohorn.wordpress.com/2014/07/13/physical-home-security-options/#more-984)
 
 [Hacking things by touching them - armadillo](https://www.armadillophone.com/blog/2017/08/27/hacking-things-by-touching-them)
 
@@ -80,7 +83,7 @@
 
 [Tamper resistance and  hardware security](https://www.cl.cam.ac.uk/~sps32/PartII_030214.pdf)
 
-
+[How to Steal a Nuclear Warhead Without Voiding Your XBox Warranty (paper)](https://www.scribd.com/document/47334072/How-to-Steal-a-Nuclear-Warhead-Without-Voiding-Your-XBox-Warranty-paper)
 
 
 

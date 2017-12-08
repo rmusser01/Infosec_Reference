@@ -1,4 +1,41 @@
+https://github.com/D4Vinci/Cr3dOv3r
+https://pentestlab.blog/2017/11/08/hijack-digital-signatures-powershell-script/
 
+[AccessChk](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
+
+[Identifying Empire HTTP Listeners](https://www.tenable.com/blog/identifying-empire-http-listeners)
+
+https://www.google.com/search?q=how+to+debrief&ie=utf-8&oe=utf-8
+
+Hardening
+* https://www.usenix.org/conference/lisa13/os-x-hardening-securing-large-global-mac-fleet
+* https://github.com/ernw/hardening/blob/master/operating_system/osx/10.11/ERNW_Hardening_OS_X_EL_Captain.md
+
+* [Exploiting CVE-2017-0199: HTA Handler Vulnerability](https://www.mdsec.co.uk/2017/04/exploiting-cve-2017-0199-hta-handler-vulnerability/)
+* [CVE-2017-0199 Toolkit](https://github.com/bhdresh/CVE-2017-0199)
+
+* [CVE-2017-8759-Exploit-sample](https://github.com/vysec/CVE-2017-8759-Exploit-sample)
+* [The Absurdly Underestimated Dangers of CSV Injection](http://georgemauer.net/2017/10/07/csv-injection.html)
+* [Wepwnise](https://labs.mwrinfosecurity.com/tools/wepwnise/)
+
+* [Week of Evading Microsoft ATA - Announcement and Day 1 to Day 5](http://www.labofapenetrationtester.com/2017*8/week-of-evading-microsoft-ata-day1.html)
+* [WSH Injection: A Case Study](https://posts.specterops.io/wsh-injection-a-case-study-fd35f79d29dd)
+* [Using SQL Server for attacking a Forest Trust](http://www.labofapenetrationtester.com/2017/03/using-sql-server-for-attacking-forest-trust.html)
+
+* [Reverse engineering HID iClass Master keys](https://blog.kchung.co/reverse-engineering-hid-iclass-master-keys/)
+
+
+[EggShell](https://github.com/neoneggplant/EggShell)
+* EggShell is an iOS and macOS post exploitation surveillance pentest tool written in Python. This tool creates 1 line multi stage payloads that give you a command line session with extra functionality. EggShell gives you the power and convenience of uploading/downloading files, taking pictures, location tracking, shell command execution, persistence, escalating privileges, password retrieval, and much more. Server communication features end to end encryption with 128 bit AES and the ability to handle multiple clients. This is a proof of concept pentest tool, intended for use on machines you own.
+* [EggShell Blogpost](http://lucasjackson.me/dWkKX/index.php/eggshell)
+
+
+
+* [Kernel Extension Overview - developer.apple](https://developer.apple.com/library/content/documentation/Darwin/Conceptual/KernelProgramming/Extend/Extend.html)
+
+
+
+[Exploiting appliances presentation v1.1](https://www.slideshare.net/NCC_Group/exploiting-appliances-presentation-v11vidsremoved)
 
 
 -------------

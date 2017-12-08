@@ -212,15 +212,15 @@ Timelines
 --------
 ##### Regex for credit cards
 * [Link](http://www.regular-expressions.info/creditcard.html)
-* ^(?:4[0-9]{12}(?:[0-9]{3})?          # Visa
-* |  5[1-5][0-9]{14}                  # MasterCard
-* |  3[47][0-9]{13}                   # American Express
-* |  3(?:0[0-5]|[68][0-9])[0-9]{11}   # Diners Club
-* |  6(?:011|5[0-9]{2})[0-9]{12}      # Discover
-* |  (?:2131|1800|35\d{3})\d{11}      # JCB
-*)$
-
-
+```
+ ^(?:4[0-9]{12}(?:[0-9]{3})?          # Visa
+ |  5[1-5][0-9]{14}                  # MasterCard
+ |  3[47][0-9]{13}                   # American Express
+ |  3(?:0[0-5]|[68][0-9])[0-9]{11}   # Diners Club
+ |  6(?:011|5[0-9]{2})[0-9]{12}      # Discover
+ |  (?:2131|1800|35\d{3})\d{11}      # JCB
+)$
+```
 
 
 -------------

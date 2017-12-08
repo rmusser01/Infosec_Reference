@@ -1,6 +1,6 @@
 ## List of random Emoji
 
-List of random Emoji I found. 
+List of random Emoji I found. Check out System Internals 'Emoji' section for more info on emojis.
 
 ```
 Emoji:

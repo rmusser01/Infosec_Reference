@@ -219,7 +219,7 @@ Debuggers
 	* [Voltron](https://github.com/snare/voltron)
 		* Voltron is an extensible debugger UI toolkit written in Python. It aims to improve the user experience of various debuggers (LLDB, GDB, VDB and WinDbg) by enabling the attachment of utility views that can retrieve and display data from the debugger host. By running these views in other TTYs, you can build a customised debugger user interface to suit your needs.
 	* [GDB - GNU Debugger](https://www.gnu.org/software/gdb/)
-		* GDB, the GNU Project debugger, allows you to see what is going on `inside' another program while it executes -- or what another program was doing at the moment it crashed. 
+		* GDB, the GNU Project debugger, allows you to see what is going on 'inside' another program while it executes -- or what another program was doing at the moment it crashed. 
 	* GDB Addons
 		* [PEDA](https://github.com/longld/peda)
 			* PEDA - Python Exploit Development Assistance for GDB 		
@@ -302,7 +302,7 @@ Decompilers & Disassemblers
 			* [toolbag](https://github.com/aaronportnoy/toolbag)
 				* The IDA Toolbag is a plugin providing supplemental functionality to Hex-Rays IDA Pro disassembler. 
 			* [Dynamic IDA Enrichment (aka. DIE)](https://github.com/ynvb/DIE)
-				* DIE is an IDA python plugin designed to enrich IDA`s static analysis with dynamic data. This is done using the IDA Debugger API, by placing breakpoints in key locations and saving the current system context once those breakpoints are hit.
+				* DIE is an IDA python plugin designed to enrich IDA's static analysis with dynamic data. This is done using the IDA Debugger API, by placing breakpoints in key locations and saving the current system context once those breakpoints are hit.
 			* [HexRaysCodeXplorer](https://github.com/REhints/HexRaysCodeXplorer)
 				* Hex-Rays Decompiler plugin for better code navigation in RE process of C++ applications or code reconstruction of modern malware as Stuxnet, Flame, Equation	
 			* [Ida Pomidor](https://thesprawl.org/projects/ida-pomidor/)

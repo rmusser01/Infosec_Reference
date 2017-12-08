@@ -28,7 +28,7 @@ I am not a professional and may be a twelve year old child. Be wary.
 
 -----
 ### <a name="videos">Videos</a>
-* [F*ck These Guys: Practical Countersurveillance Lisa Lorenzin - BsidesSF15](http://www.irongeek.com/i.php?page=videos/bsidessf2015/201-fck-these-guys-practical-countersurveillance-lisa-lorenzin)
+* [Fuck These Guys: Practical Countersurveillance Lisa Lorenzin - BsidesSF15](http://www.irongeek.com/i.php?page=videos/bsidessf2015/201-fck-these-guys-practical-countersurveillance-lisa-lorenzin)
 	* We've all seen the steady stream of revelations about the NSA's unconstitutional, illegal mass surveillance. Seems like there's a new transgression revealed every week! I'm getting outrage fatigue. So I decided to fight back... by looking for practical, realistic, everyday actions I can take to protect my privacy and civil liberties on the Internet, and sharing them with my friends. Join me in using encryption and privacy technology to resist eavesdropping and tracking, and to start to opt out of the bulk data collection that the NSA has unilaterally decided to secretly impose upon the world. Let's take back the Internet, one encrypted bit at a time.
 * [Dr. Philip Polstra - Am I Being Spied On?](https://www.youtube.com/watch?v=Bc7WoDXhcjM)
 	* Talk on cheap/free counter measures

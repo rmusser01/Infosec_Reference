@@ -102,24 +102,17 @@
 
 ------------
 ### <a name="tools"></a>Tools
-
-[Pince](https://github.com/korcankaraokcu/PINCE)
-* PINCE is a gdb front-end/reverse engineering tool focused on games, but it can be used for any reverse-engineering related stuff. PINCE is an abbreviation for "PINCE is not Cheat Engine". PINCE's GUI is heavily "inspired(;D)" by Cheat Engine. 
-
-[ugtrain](https://github.com/ugtrain/ugtrain)
-* Universal Elite Game Trainer for CLI(linux game trainer)
-
-[CSGOSimple](https://github.com/MarkHC/CSGOSimple)
-* A simple base for internal Counter-Strike: Global Offensive cheats.
-
-[NoEye](https://github.com/Schnocker/NoEye)
-* An usermode BE Rootkit Bypass
-
-[PubgPrivXcode85](https://github.com/TonyZesto/PubgPrivXcode85)
-* Simple chams wallhack for Player Unknowns Battlegrounds using a D3D11DrawIndexed hook
-
-[PortAIO-Loader](https://github.com/PirateEmpire/PortAIO-Loader) 
-
+* [Pince](https://github.com/korcankaraokcu/PINCE)
+	* PINCE is a gdb front-end/reverse engineering tool focused on games, but it can be used for any reverse-engineering related stuff. PINCE is an abbreviation for "PINCE is not Cheat Engine". PINCE's GUI is heavily "inspired(;D)" by Cheat Engine. 
+* [ugtrain](https://github.com/ugtrain/ugtrain)
+	* Universal Elite Game Trainer for CLI(linux game trainer)
+* [CSGOSimple](https://github.com/MarkHC/CSGOSimple)
+	* A simple base for internal Counter-Strike: Global Offensive cheats.
+* [NoEye](https://github.com/Schnocker/NoEye)
+	* An usermode BE Rootkit Bypass
+* [PubgPrivXcode85](https://github.com/TonyZesto/PubgPrivXcode85)
+	* Simple chams wallhack for Player Unknowns Battlegrounds using a D3D11DrawIndexed hook
+* [PortAIO-Loader](https://github.com/PirateEmpire/PortAIO-Loader) 
 
 
 

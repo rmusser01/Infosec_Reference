@@ -19,14 +19,15 @@
 
 
 
-#### Cull 
+#### Sort 
 DVWA
 
 Hackingdojo
 
 BVWA
 
-#### End Cull
+
+#### End Sort
 
 
 -----
@@ -112,6 +113,11 @@ These classes are all focused on computer/information security. If you're lookin
 
 
 -----
+### <a name="re"></a>Regular Expressions
+* [RegEx Crossword](https://regexcrossword.com/)
+	* Learn RegEx through crosswords
+
+-----
 ### <a name="re"></a>Reverse Engineering
 * [Binary Auditing Training - Thorsten Schneider](http://www.binary-auditing.com/)
 	* The training package includes all necessary files to run a complete lecture for Binary Auditing and Reverse Code Engineering at university. All files are well sorted by topics and with increasing difficulty. You need Windows XP, Windows Vista or Windows 7 to use this training package. The training package does NOT include runnable viruses! 
@@ -151,6 +157,11 @@ These classes are all focused on computer/information security. If you're lookin
 	* Dynamic or live demonstration of classical exploitation techniques of typical memory corruption vulnerabilities, from debugging to payload generation and exploitation, for educational purposes
 
 
+
+
+-----
+### <a name="uefi"></a>Machine Learning
+* [IntroductionToMachineLearningForSecurityPros](https://github.com/CylanceSPEAR/IntroductionToMachineLearningForSecurityPros)
 
 
 

@@ -21,9 +21,7 @@ TOC
 #### Sort
 http://www.stoned-vienna.com/
 
-
-
- 
+* [Intel Q3’17 ME 11.x, SPS 4.0, and TXE 3.0 Security Review Cumulative Update](https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00086&languageid=en-fr)
 
 #### End Sort
 
@@ -138,7 +136,7 @@ Reverse Engineering Router Firmware walk through
 * [Using Intel TXT to Attack BIOSes](https://vimeo.com/117156508)
 * [Detecting BadBIOS, Evil Maids, Bootkits and Other Firmware Malware - Paul English and Lee Fisher](https://archive.org/details/seagl-2017)
 	* For attackers, platform firmware is the new Software. Most systems include hundreds of firmwares - UEFI or BIOS, PCIe expansion ROMs, USB controller drivers, storage controller host and disk/SSD drivers. Firmware-level hosted malware, bare-metal or virtualized, is nearly invisible to normal security detection tools, has full control of your system, and can often continue running even when the system is "powered off". Security Firms (eg, "Hacking Team" sell UEFI 0days to the highest bidder), and government agencies include firmware-level malware (eg, Wikileak'ed Vault7 CIA EFI malware). Defenders need to catch-up, and learn to defend their systems against firmware-level malware. In this presentation, we'll cover the NIST SP (147,147b,155,193) secure firmware guidance, for citizens, rather than vendors/enterprises. We'll discuss the problem of firmware-level malware, and cover some open source tools (FlashROM, CHIPSEC, etc.) to help detect malware on your system. We'll be discussing a new open source tool we've just released to help make it easier for you to do this check. You'll also get a nice paper tri-fold copy of our CHIPSEC Quick Reference for Sysadmins [note: we're all sysadmins for our own personal systems(!)], and some scary looking BadBIOS stickers for your laptop.
-
+* [Detecting BadBIOS, Evil Maids, Bootkits, and Other Firmware Malware](https://ia600805.us.archive.org/7/items/seagl-2017/seagl-2017.pdf)
 
 
 --------------------

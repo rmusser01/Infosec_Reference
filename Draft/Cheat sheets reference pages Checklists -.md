@@ -22,12 +22,26 @@
 
 
 
-#### CULL
+#### Sort
+
 [SiLK Toolsuite Quick Reference Guide](https://tools.netsa.cert.org/silk/silk-quickref.pdf)
 * [MS "reg" commandreference](http://www.computerhope.com/reg.htm)
 http://www.amanhardikar.com/mindmaps.html
 http://www.amanhardikar.com/mindmaps/Practice.html
-#### end cull
+
+* `[OWASP XSS (Cross Site Scripting) Prevention Cheat Sheet](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet)`
+* [OWASP Input Validation Cheat Sheet](https://www.owasp.org/index.php/Input_Validation_Cheat_Sheet)
+* [OWASP Authentication Cheat Sheet](https://www.owasp.org/index.php/Authentication_Cheat_Sheet)
+* [OWASP Forgot Password Cheat Sheet](https://www.owasp.org/index.php/Forgot_Password_Cheat_Sheet)
+* [OWASP Choosing and Using Security Questions Cheat Sheet](https://www.owasp.org/index.php/Choosing_and_Using_Security_Questions_Cheat_Sheet)
+* [OWASP Session Management Cheat Sheet](https://www.owasp.org/index.php/Session_Management_Cheat_Sheet)
+* [OWASP Transport Layer Protection Cheat Sheet](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
+* [OWASP Pinning Cheat Sheet](https://www.owasp.org/index.php/Pinning_Cheat_Sheet)
+* [OWASP Cryptographic Storage Cheat Sheet](https://www.owasp.org/index.php/Cryptographic_Storage_Cheat_Sheet)
+* [OWASP IOS Application Security Testing Cheat Sheet](https://www.owasp.org/index.php/IOS_Application_Security_Testing_Cheat_Sheet#Insecure_data_storage)
+
+
+#### end sort
 
 
 ----------
@@ -98,7 +112,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 **Exploit Dev Cheat Sheets**
 * [x86 opcode structure and instruction overview](http://pnx.tf/files/x86_opcode_structure_and_instruction_overview.pdf)
 * [Nasm x86 reference](https://www.cs.uaf.edu/2006/fall/cs301/support/x86/)
-
+* [ARM Exploitation Cheat Sheet](https://azeria-labs.com/assembly-basics-cheatsheet/)
 
 ----------
 ### <a name="Metasploit">Metasploit Cheat Sheets</a>

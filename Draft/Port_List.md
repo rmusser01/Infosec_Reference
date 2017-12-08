@@ -32,7 +32,7 @@
 |88|tcp|Kerberos|use auxiliary/admin/kerberos/ms14_068_kerberos_checksum|
 |102|tcp|Siemens S7||
 |110|tcp|pop3||
-|111|tcp|RPC|rpcinfo -p 192.168.1.111<BR>msf >use auxiliary/scanner/nfs/nfsmount|
+|111|tcp|RPC|rpcinfo -p 192.168.1.111<BR>msf >use auxiliary/scanner/nfs/nfsmount<BR> Nfspy|
 |119|tcp|NNTP||
 |123|tcp|NTP||
 |123|udp|ntp|ntpdc -n -c monlist *IP*<BR>nmap -sU -p 123 -Pn -n --script ntp-info *IP*<BR>nmap -sU -p 123 -Pn -n --script ntp-monlist *IP*<BR>msf > use auxiliary/scanner/ntp/ntp_readvar|
@@ -95,7 +95,7 @@
 |1911||Niagara Fox||
 |1962||PCworx||
 |2000||iKettle,MikroTik bandwidth test||
-|2049|tcp|nfs|showmount --all *IP*<BR>showmount --exports *IP* <BR>mount -t nfs *IP*:/ /mnt/nfs/|
+|2049|tcp|nfs|showmount --all *IP*<BR>showmount --exports *IP* <BR>mount -t nfs *IP*:/ /mnt/nfs/<BR>Nfspy|
 |2082|tcp|cpanel||
 |2083|tcp|cpanel||
 |2086||WHM||

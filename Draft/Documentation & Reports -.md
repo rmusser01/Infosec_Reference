@@ -20,6 +20,8 @@
 
 
 
+
+
 -----
 ### <a name="writing">Writing</a>
 
@@ -39,7 +41,7 @@ Other Materials:
 * [Teach Technical Writing in Two Hours per Week](http://www.cs.tufts.edu/~nr/pubs/two-abstract.html)
 * [Learn Technical Writing in Two Hours per Week - Norman Ramsey](http://www.cs.tufts.edu/~nr/pubs/learn-two.pdf)
 * [Politics and the English Language - George Orwell](http://www.npr.org/blogs/ombudsman/Politics_and_the_English_Language-1.pdf)
-
+* [Tips for Writing Better Infosec Job Descriptions](https://www.darkreading.com/cloud/tips-for-writing-better-infosec-job-descriptions/d/d-id/1330534?piddl_msgid=330184#msg_330184)
 
 
 
@@ -62,6 +64,7 @@ Other Materials:
 * [Learning the Ropes 101: Stay Beautiful, Stay Verbose](https://blog.zsec.uk/stay-beautiful-stay-verbose/)
 * [Teach Technical Writing in Two Hours per Week](http://www.cs.tufts.edu/~nr/pubs/two-abstract.html)
 * [Learn Technical Writing in Two Hours per Week - Norman Ramsey](http://www.cs.tufts.edu/~nr/pubs/learn-two.pdf)
+* [SANS - Writing a Penetration Testing Report(2010)](https://www.sans.org/reading-room/whitepapers/bestprac/writing-penetration-testing-report-33343)
 
 
 -----

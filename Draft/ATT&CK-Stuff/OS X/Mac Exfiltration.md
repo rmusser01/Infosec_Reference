@@ -1,15 +1,9 @@
-## Mac Exfiltration
+ ## Mac Exfiltration
 
 ------------------------------- 
 ## Automated Exfiltration
 [Automated Exfiltration - ATT&CK](https://attack.mitre.org/wiki/Technique/T1020)
 * Data, such as sensitive documents, may be exfiltrated through the use of automated processing or Scripting after being gathered during Collection. 
-
-
-
-
-
-
 
 
 
@@ -19,26 +13,10 @@
 * An adversary may compress data (e.g., sensitive documents) that is collected prior to exfiltration in order to make it portable and minimize the amount of data sent over the network. The compression is done separately from the exfiltration channel and is performed using a custom program or algorithm, or a more common compression library or utility such as 7zip, RAR, ZIP, or zlib. 
 
 
-
-
-
-
-
-
-
-
-
 ------------------------------- 
 ## Data Encrypted
 [Data Encrypted - ATT&CK](https://attack.mitre.org/wiki/Technique/T1022)
 * Data is encrypted before being exfiltrated in order to hide the information that is being exfiltrated from detection or to make the exfiltration less conspicuous upon inspection by a defender. The encryption is performed by a utility, programming library, or custom algorithm on the data itself and is considered separate from any encryption performed by the command and control or file transfer protocol. Common file archive formats that can encrypt files are RAR and zip. 
-
-
-
-
-
-
-
 
 
 
@@ -51,13 +29,6 @@
 
 
 
-
-
-
-
-
-
-
 ------------------------------- 
 ## Exfiltration Over Alternative Protocol
 [Exfiltration Over Alternative Protocol - ATT&CK](https://attack.mitre.org/wiki/Technique/T1048)
@@ -65,25 +36,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 ---------------------------------
 ## Exfiltration Over Command and Control Channel
 [Exfiltration Over Command and Control Channel - ATT&CK](https://attack.mitre.org/wiki/Technique/T1048)
-
-
-
-
-
-
 
 
 
@@ -95,37 +50,14 @@
 
 
 
-
-
-
-
-
-
-
-
 ------------------------------- 
 ## Exfiltration Over Physical Medium
 [Exfiltration Over Physical Medium - ATT&CK](https://attack.mitre.org/wiki/Technique/T1052)
 Data exfiltration may be performed only at certain times of day or at certain intervals. This could be done to blend traffic patterns with normal activity or availability. 
 
 
-
-
-
-
-
-
-
-
-
-
-
 ------------------------------- 
 ## Scheduled Transfer 
 [Scheduled Transfer - ATT&CK](https://attack.mitre.org/wiki/Technique/T1029)
 * Data exfiltration may be performed only at certain times of day or at certain intervals. This could be done to blend traffic patterns with normal activity or availability. 	
-
-
-
-
 

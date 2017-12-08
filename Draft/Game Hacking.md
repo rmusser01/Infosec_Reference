@@ -21,6 +21,8 @@
 #### Sort
 [OwnedCore](http://www.ownedcore.com/forums/)
 
+
+
 #### End Sort
 
 
@@ -130,4 +132,10 @@
 
 
 
+
+--------------
+### Game Programming Papers
+
+* [The TRIBES Engine Networking Model or How to Make the Internet Rock for Multi­player Games](http://www.pingz.com/wordpress/wp-content/uploads/2009/11/tribes_networking_model.pdf)
+	* This paper discusses the networking model developed to support a "real­time" multi­player gaming environment.  This model is being developed for TRIBES II, and was first implemented in Starsiege TRIBES, a multi­player online team game published in December '98. The three major features of this model are: support for multiple data delivery requirements, partial object state updates and a packet delivery notification protocol.
 

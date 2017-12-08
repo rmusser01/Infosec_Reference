@@ -21,6 +21,7 @@
 #### Cull
 [Technical analysis of client identification mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms) 
 [Client Identification Mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms)
+
 #### end cull
 
 
@@ -30,15 +31,6 @@
 * [Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
 	* Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
 * [Mobile Phone Data lookup](https://medium.com/@philipn/want-to-see-something-crazy-open-this-link-on-your-phone-with-wifi-turned-off-9e0adb00d024)
-
-
-
-
-
-
-
-
-
 
 
 
@@ -59,6 +51,10 @@ Blogposts
 * [Debian-Privacy-Server-Guide](https://github.com/drduh/Debian-Privacy-Server-Guide)
 	* This is a step-by-step guide to configuring and managing a domain, remote server and hosted services, such as VPN, a private and obfuscated Tor bridge, and encrypted chat, using the Debian GNU/Linux operating system and other free software.
 * [Reminder: Oh, Won't You Please Shut Up? - USA](https://www.popehat.com/2011/12/01/reminder-oh-wont-you-please-shut-up/)
+* [Campaign Information Security In Theory and Practice](https://medium.com/@thegrugq/campaign-information-security-ff6ac49966e1)
+* [Underground Tradecraft Rules of Clandestine Operation](https://grugq.tumblr.com/post/60463307186/rules-of-clandestine-operation)
+* [I know places we can hide Opsec tips from Taylor Swift](https://medium.com/@flamsmark/i-know-places-we-can-hide-3a84b1f79963)
+* [This Time, Facebook Is Sharing Its Employees’ Data: Some of the biggest companies turn over their workers’ most personal information to the troubled credit reporting agency Equifax](https://www.fastcompany.com/40485634/equifax-salary-data-and-the-work-number-database)
 
 
 
@@ -175,8 +171,10 @@ Blogposts
 * [You Are Being Tracked: How License Plate Readers Are Being Used to Record Americans' Movements - ACLU](https://www.aclu.org/other/you-are-being-tracked-how-license-plate-readers-are-being-used-record-americans-movements?redirect=technology-and-liberty/you-are-being-tracked-how-license-plate-readers-are-being-used-record)
 * [Deep Dive Into Tor Onion Services - David Goulet](https://www.youtube.com/watch?v=AkoyCLAXVsc)
 * [Winning and Quitting the Privacy Game What it REALLY takes to have True Privacy in the 21st Century - Derbycon 7](https://www.youtube.com/watch?v=bxQSu06yuZc)
-
-
+* [An Underground education](https://www.slideshare.net/grugq/underground-education-21151795)
+* [OPSEC In the Age of The Egotistical Giraffe](https://conference.hitb.org/hitbsecconf2014kul/materials/D1T1%20-%20The%20Grugq%20-%20OPSEC%20in%20the%20Age%20of%20Egotistical%20Giraffe.pdf)
+* [COMSEC Beyond Encryption](https://grugq.github.io/presentations/COMSEC%20beyond%20encryption.pdf)
+* [Click and Dragger: Denial and Deception on Android mobile](https://www.slideshare.net/grugq/mobile-opsec/34-WHAT_ARETHEY_GOOD_FOR_Threat)
 
 
 

@@ -20,7 +20,7 @@
 
 
 
-#### CULL
+#### Sort
 https://forensiccontrol.com/resources/free-software/
 Forensics wiki
 * [dotNET_WinDBG](https://github.com/Cisco-Talos/dotNET_WinDBG)
@@ -30,7 +30,25 @@ Forensics wiki
 * This article describes:
   * How to analyse PowerShell scripts by inserting a breakpoint in the .NET API.
   * How to easily create a script to automatically unpack .NET samples following analysis of the packer logic.
-#### End Cull
+
+
+[Pac4Mac](https://github.com/sud0man/pac4mac)
+* Pac4Mac (Plug And Check for Mac OS X) is a portable Forensics framework (to launch from USB storage) allowing extraction and analysis session informations in highlighting the real risks in term of information leak (history, passwords, technical secrets, business secrets, ...). Pac4Mac can be used to check security of your Mac OS X system or to help you during forensics investigation.
+
+* [ViperMonkey](https://github.com/decalage2/ViperMonkey)
+	* ViperMonkey is a VBA Emulation engine written in Python, designed to analyze and deobfuscate malicious VBA Macros contained in Microsoft Office files (Word, Excel, PowerPoint, Publisher, etc).
+
+[LogonTracer](https://github.com/JPCERTCC/LogonTracer)
+* Investigate malicious Windows logon by visualizing and analyzing Windows event log
+
+[How to Perform a Physical Acquisition in Android Forensics?](https://infosecaddicts.com/perform-physical-acquisition-android-forensics/)
+
+* [Knock Knock](https://github.com/synack/knockknock)
+	* KnockKnock displays persistent items (scripts, commands, binaries, etc.), that are set to execute automatically on OS X
+
+
+
+#### End Sort
 
 
 

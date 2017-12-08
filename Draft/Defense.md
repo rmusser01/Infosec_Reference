@@ -6,6 +6,14 @@
 
 #### In Progress
 
+
+https://adsecurity.org/?p=3782
+
+
+[Userline](https://github.com/THIBER-ORG/userline)
+* This tool automates the process of creating logon relations from MS Windows Security Events by showing a graphical relation among users domains, source and destination logons as well as session duration.
+
+
 https://github.com/KurtDeGreeff/awesome-windows-domain-hardening
 
 https://github.com/k4m4/kickthemout

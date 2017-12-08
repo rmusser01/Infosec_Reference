@@ -1,4 +1,4 @@
-## Mac Persistence
+ ## Mac Persistence
 
 ------------------------------- 
 ## .bash_profile and .bashrc
@@ -27,39 +27,10 @@
 
 
 
-
-
-
-
-
-
-
 ------------------------------- 
 ## Dylib Hijacking
 [Dylib Hijacking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1157)
 * macOS and OS X use a common method to look for required dynamic libraries (dylib) to load into a program based on search paths. Adversaries can take advantage of ambiguous paths to plant dylibs to gain privilege escalation or persistence.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -81,29 +52,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 ------------------------------- 
 ## LC_LOAD_DYLIB Addition
 [LC_LOAD_DYLIB Addition - ATT&CK](https://attack.mitre.org/wiki/Technique/T1161)
 * Mach-O binaries have a series of headers that are used to perform certain operations when a binary is loaded. The LC_LOAD_DYLIB header in a Mach-O binary tells macOS and OS X which dynamic libraries (dylibs) to load during execution time. These can be added ad-hoc to the compiled binary as long adjustments are made to the rest of the fields and dependencies. There are tools available to perform these changes. Any changes will invalidate digital signatures on binaries because the binary is being modified. Adversaries can remediate this issue by simply removing the LC_CODE_SIGNATURE command from the binary so that the signature isn’t checked at load time.
-
-
-
-
-
-
-
-
-
 
 
 
@@ -114,17 +66,6 @@
 [Launch Agent - ATT&CK](https://attack.mitre.org/wiki/Technique/T1159)
 * Per Apple’s developer documentation, when a user logs in, a per-user launchd process is started which loads the parameters for each launch-on-demand user agent from the property list (plist) files found in /System/Library/LaunchAgents, /Library/LaunchAgents, and $HOME/Library/LaunchAgents. These launch agents have property list files which point to the executables that will be launched.
 * Adversaries may install a new launch agent that can be configured to execute at login by using launchd or launchctl to load a plist into the appropriate directories. The agent name may be disguised by using a name from a related operating system or benign software. Launch Agents are created with user level privileges and are executed with the privileges of the user when they log in78. They can be set up to execute when a specific user logs in (in the specific user’s directory structure) or when any user logs in (which requires administrator privileges). 
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -144,15 +85,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 ------------------------------- 
 ## Launchctl
 [Launchctl - ATT&CK](https://attack.mitre.org/wiki/Technique/T1152)
@@ -163,26 +95,10 @@
 
 
 
-
-
-
-
-
-
-
-
 ------------------------------- 
 ## Login Item
 [Login Item - ATT&CK](https://attack.mitre.org/wiki/Technique/T1162)
 * MacOS provides the option to list specific applications to run when a user logs in. These applications run under the logged in user's context, and will be started every time the user logs in. Login items installed using the Service Management Framework are not visible in the System Preferences and can only be removed by the application that created them1. Users have direct control over login items installed using a shared file list which are also visible in System Preferences. These login items are stored in the user's ~/Library/Preferences/ directory in a plist file called com.apple.loginitems.plist. Some of these applications can open visible dialogs to the user, but they don’t all have to since there is an option to ‘Hide’ the window. If an adversary can register their own login item or modified an existing one, then they can use it to execute their code for a persistence mechanism each time the user logs in. 
-
-
-
-
-
-
-
-
 
 
 
@@ -211,18 +127,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ------------------------------- 
 ## Rc.common
 [Rc.common - ATT&CK](https://attack.mitre.org/wiki/Technique/T1163)
@@ -231,24 +135,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ------------------------------- 
 ## Re-opened Applications
 [Re-opened Applications - ATT&CK](https://attack.mitre.org/wiki/Technique/T1164)
-* Starting in Mac OS X 10.7 (Lion), users can specify certain applications to be re-opened when a user reboots their machine. While this is usually done via a Graphical User Interface (GUI) on an app-by-app basis, there are property list files (plist) that contain this information as well located at ~/Library/Preferences/com.apple.loginwindow.plist and ~/Library/Preferences/ByHost/com.apple.loginwindow.*.plist. 
+* Starting in Mac OS X 10.7 (Lion), users can specify certain applications to be re-opened when a user reboots their machine. While this is usually done via a Graphical User Interface (GUI) on an app-by-app basis, there are property list files (plist) that contain this information as well located at ~/Library/Preferences/com.apple.loginwindow.plist and ~/Library/Preferences/ByHost/com.apple.loginwindow. `*.plist. `
 
 
 
@@ -260,45 +150,10 @@
 [Redundant Access - ATT&CK](https://attack.mitre.org/wiki/Technique/T1108)
 * Adversaries may use more than one remote access tool with varying command and control protocols as a hedge against detection. If one type of tool is detected and blocked or removed as a response but the organization did not gain a full understanding of the adversary's tools and access, then the adversary will be able to retain access to the network. Adversaries may also attempt to gain access to Valid Accounts to use External Remote Services such as external VPNs as a way to maintain access despite interruptions to remote access tools deployed within a target network.
 
-
-
-
-
-
-
-
-
-
-
 ------------------------------- 
 ## Startup Items
 [Startup Items - ATT&CK](https://attack.mitre.org/wiki/Technique/T1165)
 * Per Apple’s documentation, startup items execute during the final phase of the boot process and contain shell scripts or other executable files along with configuration information used by the system to determine the execution order for all startup items. This is technically a deprecated version (superseded by Launch Daemons), and thus the appropriate folder, /Library/StartupItems isn’t guaranteed to exist on the system by default, but does appear to exist by default on macOS Sierra. A startup item is a directory whose executable and configuration property list (plist), StartupParameters.plist, reside in the top-level directory. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -310,41 +165,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ------------------------------- 
 ## Valid Acccounts
 [Valid Acccounts - ATT&CK](https://attack.mitre.org/wiki/Technique/T1078)
 * Adversaries may steal the credentials of a specific user or service account using Credential Access techniques. Compromised credentials may be used to bypass access controls placed on various resources on hosts and within the network and may even be used for persistent access to remote systems. Compromised credentials may also grant an adversary increased privilege to specific systems or access to restricted areas of the network. Adversaries may choose not to use malware or tools in conjunction with the legitimate access those credentials provide to make it harder to detect their presence.
 * Adversaries may also create accounts, sometimes using pre-defined account names and passwords, as a means for persistence through backup access in case other means are unsuccessful.
 * The overlap of credentials and permissions across a network of systems is of concern because the adversary may be able to pivot across accounts and systems to reach a high level of access (i.e., domain or enterprise administrator) to bypass access controls set within the enterprise.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

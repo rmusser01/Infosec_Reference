@@ -13,9 +13,37 @@ TOC
 
 
 
+
 ### Cull
 
-[Client Identification Mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms)
+[iOS Privacy: steal.password - Easily get the user's Apple ID password, just by asking](https://krausefx.com/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
+* [Phishing between the app whitelists](https://medium.com/@vivami/phishing-between-the-app-whitelists-1b7dcdab4279)
+* [Client Identification Mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms)
+
+Macros
+* [Generate Macro - Tool](https://github.com/enigma0x3/Generate-Macro)
+* [Luckystrike: An Evil Office Document Generator](https://www.shellntel.com/blog/2016/9/13/luckystrike-a-database-backed-evil-macro-generator)
+* [How To: Empire’s Cross Platform Office Macro](https://www.blackhillsinfosec.com/empires-cross-platform-office-macro/)
+* [Excel macros with PowerShell](https://4sysops.com/archives/excel-macros-with-powershell/)
+* [Multi-Platform Macro Phishing Payloads](https://medium.com/@malcomvetter/multi-platform-macro-phishing-payloads-3b688e8eff68)
+
+Office
+* [PowerPoint and Custom Actions](https://phishme.com/powerpoint-and-custom-actions/)
+* [Macro-less Code Exec in MSWord](https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/)
+* [Macroless DOC malware that avoids detection with Yara rule](https://furoner.wordpress.com/2017/10/17/macroless-malware-that-avoids-detection-with-yara-rule/amp/)
+* [Phishing with PowerPoint](https://www.blackhillsinfosec.com/phishing-with-powerpoint/)
+
+
+Outlook
+* [Outlook Home Page – Another Ruler Vector](https://sensepost.com/blog/2017/outlook-home-page-another-ruler-vector/)
+* [Outlook Forms and Shells](https://sensepost.com/blog/2017/outlook-forms-and-shells/)
+
+
+* [Mercure](https://github.com/synhack/mercure/)
+	* Mercure is a tool for security managers who want to teach their colleagues about phishing.
+
+
+
 #### End cull
 
 
@@ -36,6 +64,7 @@ TOC
 		* “Phishing is the attempt to acquire sensitive information such as usernames, passwords, and credit card details (and sometimes, indirectly, money) by masquerading as a trustworthy entity in an electronic communication.”
 	* [Post exploitation trick - Phish users for creds on domains, from their own box](https://enigma0x3.wordpress.com/2015/01/21/phishing-for-credentials-if-you-want-it-just-ask/)
 * Articles/Blogposts
+	* [Best Time to send email](https://coschedule.com/blog/best-time-to-send-email/)
 	* [Top 10 Email Subjects for Company Phishing Attacks](http://www.pandasecurity.com/mediacenter/security/top-10-email-subjects-phishing-attacks/)
 	* [Some Tips for Legitimate Senders to Avoid False Positives - Apache SpamAssassin](https://wiki.apache.org/spamassassin/AvoidingFpsForSenders)
 	* [Email Delivery – What Pen Testers Should Know - cs](https://blog.cobaltstrike.com/2013/10/03/email-delivery-what-pen-testers-should-know/)
@@ -156,6 +185,9 @@ TOC
 	* A PowerShell based utility for the creation of malicious Office macro documents.
 * [VBad](https://github.com/Pepitoh/VBad)
 	* VBad is fully customizable VBA Obfuscation Tool combined with an MS Office document generator. It aims to help Red & Blue team for attack or defense.
+
+
+
 ------------------
 ### Talks/Presentations
 * [Three Years of Phishing - What We've Learned - Mike Morabito](http://www.irongeek.com/i.php?page=videos/centralohioinfosec2015/tech105-three-years-of-phishing-what-weve-learned-mike-morabito)

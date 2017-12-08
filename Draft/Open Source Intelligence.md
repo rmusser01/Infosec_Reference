@@ -23,15 +23,24 @@
 
 
 
-#### Cull 
+#### Sort
+
 http://computercrimeinfo.com/cleaningid.html
-[OSINT - onstrat](http://www.onstrat.com/osint/)
-[PDF Creative Commons OSINT toolbag guide](http://www.phibetaiota.net/wp-content/uploads/2013/07/2013-07-11-OSINT-2ool-Kit-On-The-Go-Bag-O-Tradecraft.pdf)
+
+* [OSINT - onstrat](http://www.onstrat.com/osint/)
+* [PDF Creative Commons OSINT toolbag guide](http://www.phibetaiota.net/wp-content/uploads/2013/07/2013-07-11-OSINT-2ool-Kit-On-The-Go-Bag-O-Tradecraft.pdf)
+
 http://toddington.com/resources/
+
 www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
+
 * Add list of Sources:
 * UCC - Uniform Commercial Code; DOC - Current Industrial Patents; DMV - Vehicle Ownership applications; Patents - Patent DBs; Operating Licenses/Permits; Trade Journals;
-#### End cull
+
+* [RSOE EDIS - Emergency and Disaster Information Service](http://hisz.rsoe.hu/alertmap/index2.php)
+
+
+#### End Sort
 
 
 

@@ -362,6 +362,7 @@ Kerberos
 * [Basic LDAP Concepts - ldap.com](https://www.ldap.com/basic-ldap-concepts)
 * [Lightweight Directory Access Protocol (LDAP): Technical Specification Road Map](https://tools.ietf.org/html/rfc4510)
 * [Lightweight Directory Access Protocol (LDAP): The Protocol](https://tools.ietf.org/html/rfc4511)
+* [Understanding the LDAP](https://n0where.net/understanding-the-ldap/)
 * Attacking
 	* [Public Facing LDAP Enumeration](https://www.lanmaster53.com/2013/05/24/public-facing-ldap-enumeration/)
 	* [Dangers of LDAP NULL Base and Bind](https://securitysynapse.blogspot.com/2013/09/dangers-of-ldap-null-base-and-bind.html)

@@ -176,8 +176,9 @@ News
 * [Medical Device Law: Compliance Issues, Best Practices and Trends - American Bar Association](https://www.americanbar.org/content/dam/aba/events/cle/2015/10/ce1510mdm/ce1510mdm_interactive.authcheckdam.pdf)
 * [LeakedSource.ru](https://leakedsource.ru/)
 
-
-
+Programs
+* [No More Secrets](https://github.com/bartobri/no-more-secrets/blob/master/README.md)
+	* This project provides a command line tool called nms that recreates the famous data decryption effect seen on screen in the 1992 hacker movie Sneakers. For reference, you can see this effect at 0:35 in this movie clip.
 
 Political
 * [Drone Survival Guide](http://dronesurvivalguide.org)
@@ -203,7 +204,6 @@ Timelines
 * [Timeline/List of low-level attacks/persistence techniques.  HIGHLY RECOMMENDED!](http://timeglider.com/timeline/5ca2daa6078caaf4)
 * [Timeline of Software/Timing Attestation papers](http://timeglider.com/timeline/be11d685a7c4374d)
 * [Internet Timeline](https://www.zakon.org/robert/internet/timeline/)
-
 
 
 

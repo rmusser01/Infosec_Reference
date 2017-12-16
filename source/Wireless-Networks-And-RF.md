@@ -79,15 +79,15 @@
 
 * [FM and Bluetooth and Wifi Oh My Aaron Lafferty - Derbycon7](https://www.youtube.com/watch?v=_yAvPo4pVGA&index=5&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
 
-* Articles
+#### Articles
 
 * [sysmocom publicly releases Osmocom user manuals](https://www.sysmocom.de/news/sysmocom-publicly-releases-osmocom-user-manuals/)
 
-* Documentation
+#### Documentation
 
 * [Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
 
-* Educational
+#### Educational
 
 * [Guide to Basics of Wireless Networking](http://documentation.netgear.com/reference/fra/wireless/TOC.html)
 * [US Marine Antenna Handbook](http://www.zerobeat.net/r3403c.pdf)
@@ -100,7 +100,7 @@
 
   * [Intro to SDR and RF Signal Analysis](https://www.elttam.com.au/blog/intro-sdr-and-rf-analysis/)
 
-* Testing
+#### Testing
 
 * [Introduction to Wireless Security Testing](http://www.grymoire.com/Security/Hardware.html)
 * [RF Testing Methodology - NCCGroup](https://nccgroup.github.io/RFTM/)
@@ -119,7 +119,7 @@
 * [ Developing an FSK transmitter step-by-step](https://nccgroup.github.io/RFTM/fsk_transmitter.html)
 * [Signals Identification](https://nccgroup.github.io/RFTM/signals_identification.html)
 
-* General Videos
+#### General Videos
 
 * [The Wireless World of the Internet of Things - JP Dunning ".ronin"](http://www.irongeek.com/i.php?page=videos/derbycon4/t214-the-wireless-world-of-the-internet-of-things-jp-dunning-ronin)
 
@@ -129,9 +129,9 @@
     with cover the wireless tech used by the Internet of Things and some of the
     risks to your home or corporate security.
 
-- APCO Project 25 (P25)
+#### APCO Project 25 (P25)
 
-- [HOPE Number Nine (2012): Practical Insecurity in Encrypted Radio](https://www.youtube.com/watch?v=7or-_gT8TWU&app=desktop)
+* [HOPE Number Nine (2012): Practical Insecurity in Encrypted Radio](https://www.youtube.com/watch?v=7or-_gT8TWU&app=desktop)
 
   * APCO Project 25 ("P25") is a suite of wireless communications protocols used
     in the United States and elsewhere for public safety two-way (voice) radio
@@ -176,8 +176,7 @@
 
 * [PyBT](https://github.com/mikeryan/PyBT)
 
-  * PyBT is a crappy half implementation of a Bluetooth stack in Python. At the
-    moment it only supports Bluetooth Smart (BLE).
+  * PyBT is a crappy half implementation of a Bluetooth stack in Python. At the moment it only supports Bluetooth Smart (BLE).
 
 * Writeups
 
@@ -215,7 +214,7 @@
 * [Adventures in Femtoland: 350 Yuan for Invaluable Fun](https://www.slideshare.net/arbitrarycode/adventures-in-femtoland-350-yuan-for-invaluable-fun)
 * [Small Tweaks do Not Help: Differential Power Analysis of MILENAGE Implementations in 3G/4G USIM Cards](https://www.blackhat.com/docs/us-15/materials/us-15-Yu-Cloning-3G-4G-SIM-Cards-With-A-PC-And-An-Oscilloscope-Lessons-Learned-In-Physical-Security-wp.pdf)
 
-### HTMLApplications
+### HTML Applications
 
 * Testing
 

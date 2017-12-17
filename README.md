@@ -36,16 +36,33 @@
 * Install `yarn`
 * Run the `yarn` to install the dependencies for `prettier`
 
-## Build Commands
+## Website Build Commands
 
 To render the Markdown and reStructuredText into HTML, run the terminal command `make html` from the `sphinx/` folder. 
 This will render and output the website to the `build/html/` folder.
 
 To lint your Markdown run `yarn run pretty`. At the moment, this only lints single files. You can lint entire directories using a command like this `find ./src/**/*.js | xargs prettier --write --print-width 80 --single-quote --trailing-comma es5`. More information can be [found here](https://til.hashrocket.com/posts/498b012fbd-run-prettier-on-all-javascript-files-in-a-dir).
 
-## Settings
+## Website Settings
 
 To edit the settings, change the `source/conf.py` file.
+
+## Mobile Development
+
+The Android version of this application is build using `react-native`. To get started, run the following commands:
+
+1. `npm install -g create-react-native-app`
+2. `cd MobileApplication`
+3. `npm start`
+4. Scan the QR code in the `Expo` app
+5. Start developing!
+
+A more detailed set of instructions for setting up can be found on the [React-Native website](https://facebook.github.io/react-native/docs/getting-started.html).
+
+To be able to view the application on your phone while you're developing, you must use the Expo client.
+
+* Android client can be found here [here](https://play.google.com/store/apps/details?id=host.exp.exponent).
+* iOS client can be found [here](https://itunes.apple.com/us/app/expo-client/id982107779?mt=8).
 
 ## Structure 
 

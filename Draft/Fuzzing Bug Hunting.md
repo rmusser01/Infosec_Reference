@@ -20,6 +20,9 @@ TOC
 #### sort
 * [Introduction to USB and Fuzzing DEFCON23 Matt DuHarte](https://www.youtube.com/watch?v=KWOTXypBt4E)
 
+* [ohrwurm](http://mazzoo.de/blog/2006/08/25#ohrwurm)
+	* ohrwurm is a small and simple RTP fuzzer, I tested it on a small number of SIP phones, none of them did withstand.
+	
 https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 #### end sort

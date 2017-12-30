@@ -19,7 +19,7 @@
 
 
 #### Sort
-[OwnedCore](http://www.ownedcore.com/forums/)
+* [OwnedCore](http://www.ownedcore.com/forums/)
 
 
 
@@ -43,6 +43,9 @@
 * [Creating a Packet Logger for Dragomon Hunter](https://0xbaadf00dsec.blogspot.com/2016/01/reverse-engineering-online-games.html)
 * [Hack the Vote CTF "The Wall" Solution](https://zerosum0x0.blogspot.com/2016/11/hack-vote-wall-solution.html)
 * [How to hack an MMO - Raph Koster - 2008](https://www.raphkoster.com/2008/04/17/how-to-hack-an-mmo/)
+* [Unravelling Konami's Arcade DRM](http://mon.im/2017/12/konami-arcade-drm.html)
+
+
 
 ### <a name="console"></a>Console Hacking
 

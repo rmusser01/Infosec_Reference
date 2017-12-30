@@ -39,6 +39,14 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 * [RSOE EDIS - Emergency and Disaster Information Service](http://hisz.rsoe.hu/alertmap/index2.php)
 
+[Hunting Pastebin with PasteHunter](https://techanarchy.net/2017/09/hunting-pastebin-with-pastehunter/)
+
+[Pattern](https://github.com/clips/pattern/blob/master/README.md)
+	* Pattern is a web mining module for Python. It has tools for: Data Mining: web services (Google,; Twitter, Wikipedia), web crawler, HTML DOM parser; Natural Language Processing: part-of-speech taggers, n-gram search, sentiment analysis, WordNet; Machine Learning: vector space model, clustering, classification (KNN, SVM, Perceptron); Network Analysis: graph centrality and visualization.
+
+* [Cr3dOv3r](https://github.com/D4Vinci/Cr3dOv3r)
+	* Cr3dOv3r simply you give it an email then it does two simple jobs (but useful): Search for public leaks for the email and if it any, it returns with all available details about the leak (Using hacked-emails site API). Now you give it this email's old or leaked password then it checks this credentials against 16 websites (ex: facebook, twitter, google...) then it tells you if login successful in any website!
+
 
 #### End Sort
 

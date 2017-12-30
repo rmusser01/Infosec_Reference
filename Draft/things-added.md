@@ -1,23 +1,14 @@
-
-
-
-PrivEsc/PostEx
-
-RE
-
-Red teaming
-
-
-[List of Data Breaches - privacyrights.org](https://www.privacyrights.org/data-breaches)
+https://gist.github.com/mullnerz/9fff80593d6b442d5c1b
 
 [attacking encrypted systems with qemu and volatility](https://diablohorn.com/2017/12/12/attacking-encrypted-systems-with-qemu-and-volatility/) 
 
 [Android-Vulnerabilities-Overview](https://github.com/CHEF-KOCH/Android-Vulnerabilities-Overview)
 	* Android Vulnerabilities Overview (AVO) is a databse of known security vulnerabilities in Android.
 
-[evil.plumbing](https://evil.plumbing/Current-version-June.pdf)
+* [evil.plumbing](https://evil.plumbing/Current-version-June.pdf)
 
 
+* [BE YOUR OWN VPN PROVIDER WITH OPENBSD (v2)](https://networkfilter.blogspot.com/2017/04/be-your-own-vpn-provider-with-openbsd-v2.html)
 
 -------------
 ### ATT&CK

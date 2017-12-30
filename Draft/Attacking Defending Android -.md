@@ -47,6 +47,7 @@ http://nelenkov.blogspot.com
 
 [The Android boot process](https://thecyberfibre.com/android-boot-process/)
 
+* [Untethered initroot (USENIX WOOT '17)](https://alephsecurity.com/2017/08/30/untethered-initroot/)
 
 
 [Miroslav Stampar - Android: Practical Introduction into the (In)Security](https://www.youtube.com/watch?v=q1_rvrY4VHI)

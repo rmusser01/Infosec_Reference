@@ -81,6 +81,10 @@ Web TOC
 
 * [Unrestricted File Upload Security Testing - Aptive](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
 
+Add websockets
+* [WSSiP: A WebSocket Manipulation Proxy])(https://github.com/nccgroup/wssip)
+	* Short for "WebSocket/Socket.io Proxy", this tool, written in Node.js, provides a user interface to capture, intercept, send custom messages and view all WebSocket and Socket.IO communications between the client and server.
+	
 #### End Sort
 
 

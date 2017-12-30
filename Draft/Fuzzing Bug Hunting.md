@@ -89,7 +89,7 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 	* Virtual Appliances have become very prevalent these days as virtualization is ubiquitous and hypervisors commonplace. More and more of the major vendors are providing literally virtual clones for many of their once physical-only products. Like IoT and the CAN bus, it's early in the game and vendors are late as usual. One thing that it catching these vendors off guard is the huge additional attack surface, ripe with vulnerabilities, added in the process. Also, many vendors see software appliances as an opportunity for the customer to easily evaluate the product before buying the physical one, making these editions more accessible and debuggable by utilizing features of the platform on which it runs. During this talk, I will provide real case studies for various vulnerabilities created by mistakes that many of the major players made when shipping their appliances. You'll learn how to find these bugs yourself and how the vendors went about fixing them, if at all. By the end of this talk, you should have a firm grasp of how one goes about getting remotes on these appliances.
 * [Fuzzing for MS15-010](http://blog.beyondtrust.com/fuzzing-for-ms15-010)
 	* This past Patch Tuesday Microsoft released MS15-010: Vulnerabilities in Windows Kernel-Mode Driver Could Allow Remote Code Execution.  This patch addressed multiple privately reported vulnerabilities in win32k.sys and one publicly disclosed vulnerability in cng.sys. This post goes through identifying the patched vulnerability.
-
+* [Fuzzing proprietary protocols with Scapy, radamsa and a handful of PCAPs](https://blog.blazeinfosec.com/fuzzing-proprietary-protocols-with-scapy-radamsa-and-a-handful-of-pcaps/)
 
 
 

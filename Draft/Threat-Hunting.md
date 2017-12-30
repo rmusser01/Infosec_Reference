@@ -1,5 +1,7 @@
 # Threat Hunting
 
+
+Gonna roll into logging/network forensics
 ### ToC
 
 
@@ -7,7 +9,7 @@
 
 #### Sort
 
-
+https://github.com/MatthewDemaske/ThreatHuntingStuff
 #### End Sort
 
 

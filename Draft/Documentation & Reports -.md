@@ -106,3 +106,11 @@ Other Materials:
 * [How I read a research paper](https://muratbuffalo.blogspot.com/2013/07/how-i-read-research-paper.html?m=1)
 
 
+------
+### De/Briefing
+* General
+	* [kap](https://github.com/wulkano/kap)
+		* An open-source screen recorder built with web technology
+	* [Debriefing: A Simple Tool to Help Your Team Tackle Tough Problems](https://hbr.org/2015/07/debriefing-a-simple-tool-to-help-your-team-tackle-tough-problems)
+	* [Sample Debriefing Statement - Albion College](https://www.albion.edu/academics/student-research/institutional-review-board/submitting-a-proposal/sample-debriefing-statement)
+	* [A Project Post Mortem Template](http://brolik.com/blog/project-post-mortem-template/)

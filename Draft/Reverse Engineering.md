@@ -27,34 +27,13 @@ ToC
 ### To be sorted
 * To Add
 	* A proper ToC
-* [Bytecode Club - RE Forum](https://the.bytecode.club/)
-* [Blackbone](https://github.com/DarthTon/Blackbone)
-	* Windows memory hacking library
+
+* [Tracing arbitrary Methods and Function calls on Android and iOS](https://techblog.mediaservice.net/2017/09/tracing-arbitrary-methods-and-function-calls-on-android-and-ios/)
+	* [code](https://github.com/0xdea/frida-scripts)
 * [Cryptoshark](https://github.com/frida/cryptoshark)
 	* Interactive code tracer for reverse-engineering proprietary software 
-Lldb edb
+* [Windows Anti-Debug techniques - OpenProcess filtering](https://blog.xpnsec.com/anti-debug-openprocess/)
 
-
-[uncompyle6](https://github.com/rocky/python-uncompyle6/blob/master/README.rst)
-* A native Python cross-version Decompiler and Fragment Decompiler. The successor to decompyle, uncompyle, and uncompyle2.
-* [JavaSnoop](https://www.aspectsecurity.com/tools/javasnoop)
-	* A tool that lets you intercept methods, alter data and otherwise test the security of Java applications on your computer.
-	* [Blackhat - 2010 JavaSnoop: How to hack anything written in Java](https://www.youtube.com/watch?v=ipuSmbxBxKw)
-	* [JavaSnoop – Debugging Java applications](https://www.securityartwork.es/2013/02/20/javasnoop-debugging-java-applications/)
-
-[dnSpy](https://github.com/0xd4d/dnSpy)
-* dnSpy is a debugger and .NET assembly editor. You can use it to edit and debug assemblies even if you don't have any source code available.
-
-[ILSpy](https://github.com/icsharpcode/ILSpy)
-* ILSpy is the open-source .NET assembly browser and decompiler.
-
-[ida-batch_decompile](https://github.com/tintinweb/ida-batch_decompile)
-* IDA Batch Decompile is a plugin for Hex-Ray's IDA Pro that adds the ability to batch decompile multiple files and their imports with additional annotations (xref, stack var size) to the pseudocode .c file
-
-[Custom ClassLoaders: The Black Art of Java](http://blog.cyberborean.org/2007/07/04/custom-classloaders-the-black-art-of-java)
-
-[Tracing arbitrary Methods and Function calls on Android and iOS](https://techblog.mediaservice.net/2017/09/tracing-arbitrary-methods-and-function-calls-on-android-and-ios/)
-	* [code](https://github.com/0xdea/frida-scripts)
 
 
 #### End sort
@@ -228,6 +207,10 @@ Debuggers
 		* [GEF - GDB Enhanced Features](https://github.com/hugsy/gef)
 			* GEF is aimed to be used mostly by exploiters and reverse-engineers. It provides additional features to GDB using the Python API to assist during the process of dynamic analysis or exploit development. Why not PEDA? Yes!! Why not?! PEDA is a fantastic tool to do the same, but is only to be used for x86-32 or x86-64. On the other hand, GEF supports all the architecture supported by GDB (x86, ARM, MIPS, PowerPC, SPARC, and so on).
 			* [Docs](https://gef.readthedocs.org/en/latest/)
+	* [edb](https://github.com/eteran/edb-debugger)
+		* edb is a cross platform x86/x86-64 debugger. It was inspired by Ollydbg, but aims to function on x86 and x86-64 as well as multiple OS's. Linux is the only officially supported platform at the moment, but FreeBSD, OpenBSD, OSX and Windows ports are underway with varying degrees of functionality.
+	* [LLDB](https://lldb.llvm.org/)
+		* LLDB is a next generation, high-performance debugger. It is built as a set of reusable components which highly leverage existing libraries in the larger LLVM Project, such as the Clang expression parser and LLVM disassembler. LLDB is the default debugger in Xcode on Mac OS X and supports debugging C, Objective-C and C++ on the desktop and iOS devices and simulator.
 * Linux
 	* [PulseDBG](https://github.com/honorarybot/PulseDBG)
 		* Hypervisor-based debugger
@@ -266,8 +249,6 @@ Debuggers
 #### <a name="decom">Decompilers & Disassemblers</a>
 Decompilers & Disassemblers
 * Decompilers & Disassemblers
-	* Java
-		* [Procyon - Java Decompiler](https://bitbucket.org/mstrobel/procyon/wiki/Java%20Decompiler)
 	* General
 		* [IDA](https://www.hex-rays.com/products/ida/)
 			* IDA Pro combines an interactive, programmable, multi-processor disassembler coupled to a local and remote debugger and augmented by a complete plugin programming environment.
@@ -280,9 +261,19 @@ Decompilers & Disassemblers
 			* Reverse engineering for x86 binaries (elf-format). Generate a more readable code (pseudo-C) with colored syntax. Warning, the project is still in development, use it at your own risks. This tool will try to disassemble one function (by default main). The address of the function, or its symbol, can be passed by argument.
 		* [Medusa](https://github.com/wisk/medusa)
 			* Medusa is a disassembler designed to be both modular and interactive. It runs on Windows and Linux, it should be the same on OSX. This project is organized as a library. To disassemble a file you have to use medusa_dummy or qMedusa. wxMedusa and pydusa are not available anymore.
+	* Java
+		* [Procyon - Java Decompiler](https://bitbucket.org/mstrobel/procyon/wiki/Java%20Decompiler)
+		* [JavaSnoop](https://www.aspectsecurity.com/tools/javasnoop)
+			* A tool that lets you intercept methods, alter data and otherwise test the security of Java applications on your computer.
+		* [Blackhat - 2010 JavaSnoop: How to hack anything written in Java](https://www.youtube.com/watch?v=ipuSmbxBxKw)
+		* [JavaSnoop – Debugging Java applications](https://www.securityartwork.es/2013/02/20/javasnoop-debugging-java-applications/)
 	* .NET
 		* [DotPeek](http://www.jetbrains.com/decompiler/features/)
 			* dotPeek is a .NET decompiler that has several handy features.
+		* [dnSpy](https://github.com/0xd4d/dnSpy)
+			* dnSpy is a debugger and .NET assembly editor. You can use it to edit and debug assemblies even if you don't have any source code available.
+		* [ILSpy](https://github.com/icsharpcode/ILSpy)
+			* ILSpy is the open-source .NET assembly browser and decompiler.
 	* IDA specific Stuff
 		* IDA Extensions
 			* [BAP-IDA](https://github.com/BinaryAnalysisPlatform/bap-ida-python)
@@ -323,6 +314,8 @@ Decompilers & Disassemblers
 				* Identifying Virtual Table Functions using VTBL IDA Pro Plugin + Deviare Hooking Engine
 			* [virusbattle-ida-plugin](https://github.com/moghimi/virusbattle-ida-plugin)
 				* The plugin is an integration of Virus Battle API to the well known IDA Disassembler. Virusbattle is a web service that analyses malware and other binaries with a variety of advanced static and dynamic analyses.
+			* [ida-batch_decompile](https://github.com/tintinweb/ida-batch_decompile)
+				* IDA Batch Decompile is a plugin for Hex-Ray's IDA Pro that adds the ability to batch decompile multiple files and their imports with additional annotations (xref, stack var size) to the pseudocode .c file
 		* IDA Tutorials/Help
 			* [TiGa's Video Tutorial Series on IDA Pro](http://woodmann.com/TiGa/idaseries.html)
 			* [IDA PLUG-IN WRITING IN C/C++](http://www.binarypool.com/idapluginwriting/idapw.pdf)
@@ -399,7 +392,7 @@ Programming Language Specific Stuff/Useful/Related Libraries
 		* [Deobfuscating Python Bytecode](https://www.fireeye.com/blog/threat-research/2016/05/deobfuscating_python.html)
 	* Decompiler
 		* [python-uncompyle6](https://github.com/rocky/python-uncompyle6)
-			* A Python cross-version decompiler
+			* A native Python cross-version Decompiler and Fragment Decompiler. The successor to decompyle, uncompyle, and uncompyle2.
 		* [Decompyle++](https://github.com/zrax/pycdc)
 			* C++ python bytecode disassembler and decompiler
 		* [Python Decompiler](https://github.com/alex/python-decompiler)
@@ -430,6 +423,7 @@ Anti-Reverse Engineering Techniques & Countermeasures
 	* [Windows Anti-Debugging Reference](http://www.symantec.com/connect/articles/windows-anti-debug-reference)
 		* This paper classifies and presents several anti-debugging techniques used on Windows NT-based operating systems. Anti-debugging techniques are ways for a program to detect if it runs under control of a debugger. They are used by commercial executable protectors, packers and malicious software, to prevent or slow-down the process of reverse-engineering. We'll suppose the program is analyzed under a ring3 debugger, such as OllyDbg on Windows platforms. The paper is aimed towards reverse-engineers and malware analysts. Note that we will talk purely about generic anti-debugging and anti-tracing techniques. Specific debugger detection, such as window or processes enumeration, registry scanning, etc. will not be addressed here		
 	* [Detecting debuggers by abusing a bad assumption within Windows](http://www.triplefault.io/2017/08/detecting-debuggers-by-abusing-bad.html)
+	* [Dangers of the Decompiler - A Sampling of Anti-Decompilation Techniques](https://blog.ret2.io/2017/11/16/dangers-of-the-decompiler/)
 * Tools
 	* [ALPHA3](https://code.google.com/p/alpha3/)
 		* ALPHA3 is a tool for transforming any x86 machine code into 100% alphanumeric code with similar functionality. It works by encoding the original code into alphanumeric data and combining this data with a decoder, which is a piece of x86 machine code written specifically to be 100% alphanumeric. When run, the decoder converts the data back to the original code, after which it is executed.
@@ -439,7 +433,8 @@ Anti-Reverse Engineering Techniques & Countermeasures
 		* The REpsych toolset is a proof-of-concept illustrating the generation of images through a program's control flow graph (CFG).
 	* [IDAnt-wanna](https://github.com/strazzere/IDAnt-wanna)
 		* ELF header abuse
-
+	* [makin](https://github.com/secrary/makin)
+		* makin - reveal anti-debugging tricks
 
 
 
@@ -498,6 +493,8 @@ Writeups(Papers/Videos)
 		* Talk about reverse engineering SnapChat and Wickr Messaging apps.
 	* [A Practical-Time Attack on the A5/3 Cryptosystem Used in Third Generation GSM Telephony](https://eprint.iacr.org/2010/013)
 		* Abstract: The privacy of most GSM phone conversations is currently protected by the 20+ years old A5/1 and A5/2 stream ciphers, which were repeatedly shown to be cryptographically weak. They will soon be replaced in third generation networks by a new A5/3 block cipher called KASUMI, which is a modified version of the MISTY cryptosystem. In this paper we describe a new type of attack called a sandwich attack, and use it to construct a simple distinguisher for 7 of the 8 rounds of KASUMI with an amazingly high probability of $2^{ -14}$. By using this distinguisher and analyzing the single remaining round, we can derive the complete 128 bit key of the full KASUMI by using only 4 related keys, $2^{26}$ data, $2^{30}$ bytes of memory, and $2^{32}$ time. These complexities are so small that we have actually simulated the attack in less than two hours on a single PC, and experimentally verified its correctness and complexity. Interestingly, neither our technique nor any other published attack can break MISTY in less than the $2^{128}$ complexity of exhaustive search, which indicates that the changes made by the GSM Association in moving from MISTY to KASUMI resulted in a much weaker cryptosystem.
+	* [Reverse engineering HID iClass Master keys](https://blog.kchung.co/reverse-engineering-hid-iclass-master-keys/)
+	* [Reversing EVM bytecode with radare2](https://blog.positive.com/reversing-evm-bytecode-with-radare2-ab77247e5e53)
 * OS X
 	* [Reverse Engineering Mac OS X](http://reverse.put.as/papers/)
 		* Excellent source of papers from 2003-2013 all with a focus on reversing either iOS or OS X.

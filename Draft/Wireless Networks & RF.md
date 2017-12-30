@@ -54,6 +54,9 @@ Cellular Networks in Use:
 * [Exploring NFC Attack Surface](https://media.blackhat.com/bh-us-12/Briefings/C_Miller/BH_US_12_Miller_NFC_attack_surface_WP.pdf)
 
 
+
+[Practical attacks against GSM networks (Part 1/3): Impersonation](https://blog.blazeinfosec.com/practical-attacks-against-gsm-networks-part-1/)
+
 * [Snifflab: An environment for testing mobile devices](https://openeffect.ca/snifflab-an-environment-for-testing-mobile-devices/)
 	* Specifically, we have created a WiFi hotspot that is continually collecting all the packets sent over it. All connected clients’ HTTPS communications are subjected to a “Man-in-the-middle” attack, whereby they can later be decrypted for analysis.
 

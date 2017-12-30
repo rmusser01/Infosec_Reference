@@ -252,6 +252,7 @@ Java
 	* [SEI CERT Oracle Coding Standard for Java](https://www.securecoding.cert.org/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java)
 	* [Protect Your Java Code - Through Obfuscators and Beyond](https://www.excelsior-usa.com/articles/java-obfuscators.html)
 * Reference
+	* [Custom Classloaders - The black art of java](http://blog.cyberborean.org/2007/07/04/custom-classloaders-the-black-art-of-java)
 * Tools
 	* [Serianalyzer](https://github.com/mbechler/serianalyzer)
 		* A static byte code analyzer for Java deserialization gadget research

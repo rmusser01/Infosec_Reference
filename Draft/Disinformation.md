@@ -1,15 +1,9 @@
 ## Disinformation
 
 
-##### Cull
-https://web.archive.org/web/20150921054800id_/http://fair.org/home/down-the-memory-hole-nyt-erases-cias-efforts-to-overthrow-syrias-government/
-
-https://meduza.io/en/feature/2015/02/02/a-man-who-s-seen-society-s-black-underbelly
-###### End cull
-
 -----
-### <a name="talks">
-General
+### <a name="talks">General
+**General**
 * [25 Rules of Disinformation](http://vigilantcitizen.com/latestnews/the-25-rules-of-disinformation/)
 * [8 Traits of the Disinformationalist](https://calloutjoe.wordpress.com/psyop/eight-traits-of-the-disinformationalist/)
 * [Governments and UFOs: A Historical Analysis of Disinformation and Deception - Richard Thieme](http://www.irongeek.com/i.php?page=videos/bsideslasvegas2013/1-2-7-governments-and-ufos-a-historical-analysis-of-disinformation-and-deception-richard-thieme)
@@ -22,4 +16,6 @@ General
 * [A Digital World Full of Ghost Armies](http://www.cigtr.info/2015/02/a-digital-world-full-of-ghost-armies.html)
 	* Not very related to infosec per say, but the general idea/takeaway is very applicable.
 * [Russia Convention on International Information Security](http://cryptome.org/2014/05/ru-international-infosec.htm)
-
+* [IRA Code Words Spell Real Threat](articles.latimes.com/1997-04-19/news/mn-50393_1_code-words)
+* [‘A man who’s seen society's black underbelly’ Meduza meets ‘Anonymous International’](https://meduza.io/en/feature/2015/02/02/a-man-who-s-seen-society-s-black-underbelly)
+* [Down the Memory Hole: NYT Erases CIA’s Efforts to Overthrow Syria’s Government](https://web.archive.org/web/20150921054800id_/http://fair.org/home/down-the-memory-hole-nyt-erases-cias-efforts-to-overthrow-syrias-government/)

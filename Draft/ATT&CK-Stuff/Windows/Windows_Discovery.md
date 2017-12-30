@@ -66,7 +66,7 @@ DNS
 * [dns-parallel-prober](https://github.com/lorenzog/dns-parallel-prober)
 	* This script is a proof of concept for a parallelised domain name prober. It creates a queue of threads and tasks each one to probe a sub-domain of the given root domain. At every iteration step each dead thread is removed and the queue is replenished as necessary.
 * [DNS Recon](https://github.com/darkoperator/dnsrecon)
-* [DNS Dumpster](www.dnsdumpster.com)
+* [DNS Dumpster](https://www.dnsdumpster.com)
 	* DNSdumpster.com is a free domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process.
 * [enumall](https://github.com/Dhayalan96/enumall)
 	* Script to enumerate subdomains, leveraging recon-ng. Uses google scraping, bing scraping, baidu scraping, yahoo scarping, netcraft, and bruteforces to find subdomains. Plus resolves to IP.

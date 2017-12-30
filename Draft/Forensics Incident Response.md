@@ -1,7 +1,7 @@
-##Forensics & Incident Response
+## Forensics & Incident Response
 
 
-#####TOC
+##### Table of Contents
 * General
 * Tools
 * [Presentations/Talks](#talks)
@@ -21,31 +21,14 @@
 
 
 #### Sort
+* Sort sections alphabetically
+* Update ToC
+
+
 https://forensiccontrol.com/resources/free-software/
-Forensics wiki
-* [dotNET_WinDBG](https://github.com/Cisco-Talos/dotNET_WinDBG)
-	* This python script is designed to automate .NET analysis with WinDBG. It can be used to analyse a PowerShell script or to unpack a binary packed using a .NET packer.
 
-[Unravelling .NET with the Help of WinDBG - TALOS](http://blog.talosintelligence.com/2017/07/unravelling-net-with-help-of-windbg.html)
-* This article describes:
-  * How to analyse PowerShell scripts by inserting a breakpoint in the .NET API.
-  * How to easily create a script to automatically unpack .NET samples following analysis of the packer logic.
-
-
-[Pac4Mac](https://github.com/sud0man/pac4mac)
-* Pac4Mac (Plug And Check for Mac OS X) is a portable Forensics framework (to launch from USB storage) allowing extraction and analysis session informations in highlighting the real risks in term of information leak (history, passwords, technical secrets, business secrets, ...). Pac4Mac can be used to check security of your Mac OS X system or to help you during forensics investigation.
-
-* [ViperMonkey](https://github.com/decalage2/ViperMonkey)
-	* ViperMonkey is a VBA Emulation engine written in Python, designed to analyze and deobfuscate malicious VBA Macros contained in Microsoft Office files (Word, Excel, PowerPoint, Publisher, etc).
-
-[LogonTracer](https://github.com/JPCERTCC/LogonTracer)
-* Investigate malicious Windows logon by visualizing and analyzing Windows event log
-
-[How to Perform a Physical Acquisition in Android Forensics?](https://infosecaddicts.com/perform-physical-acquisition-android-forensics/)
-
-* [Knock Knock](https://github.com/synack/knockknock)
-	* KnockKnock displays persistent items (scripts, commands, binaries, etc.), that are set to execute automatically on OS X
-
+* [LogonTracer](https://github.com/JPCERTCC/LogonTracer)
+	* Investigate malicious Windows logon by visualizing and analyzing Windows event log
 
 
 #### End Sort
@@ -186,6 +169,10 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 	* Recovers the master password of key3.db files, i.e. Thunderbird, Firefox
 
 
+--------------
+### Chrome Book Forensics
+* [Chromebook Forensics](http://www.dataforensics.org/google-chromebook-forensics/)
+
 
 --------------
 ### <a name="memory"></a>Memory Forensics
@@ -267,6 +254,9 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 	* This class serves as a foundation for mobile digital forensics, forensics of Android operating systems, and penetration testing of Android applications. 
 * [Androick](https://github.com/Flo354/Androick)
 	* Androick is a python tool to help in forensics analysis on android. Put the package name, some options and the program will download automatically apk, datas, files permissions, manifest, databases and logs. It is easy to use and avoid all repetitive tasks!
+* [How to Perform a Physical Acquisition in Android Forensics?](https://infosecaddicts.com/perform-physical-acquisition-android-forensics/)
+
+
 
 --------------
 ####<a name="ios">iOS Forensics</a>
@@ -281,18 +271,41 @@ http://www.iosresearch.org/
 * [The art of iOS and iCloud forensics](https://blog.elcomsoft.com/2017/11/the-art-of-ios-and-icloud-forensics/)
 
 
+
+
+------------
+### .NET Forensics
+* [dotNET_WinDBG](https://github.com/Cisco-Talos/dotNET_WinDBG)
+	* This python script is designed to automate .NET analysis with WinDBG. It can be used to analyse a PowerShell script or to unpack a binary packed using a .NET packer.
+* [Unravelling .NET with the Help of WinDBG - TALOS](http://blog.talosintelligence.com/2017/07/unravelling-net-with-help-of-windbg.html)
+	* This article describes: How to analyse PowerShell scripts by inserting a breakpoint in the .NET API; How to easily create a script to automatically unpack .NET samples following analysis of the packer logic.
+
+
+
+
+
 --------------
 ### <a name="pdf">PDF Forensics</a>
 
 http://countuponsecurity.com/2014/09/22/malicious-documents-pdf-analysis-in-5-steps/
 * [Didier Stevens Blog](https://blog.didierstevens.com/)
 * [PDF Forensics](http://countuponsecurity.com/2014/09/22/malicious-documents-pdf-analysis-in-5-steps/)
+* [Analyzing Malicious Documents Cheat Sheet](https://zeltser.com/analyzing-malicious-documents/)
+
 
 
 --------------
 ###< a name="photo">Photo Forensics</a>
 * [jhead](http://www.sentex.net/~mwandel/jhead/)
 	* Exif Jpeg header manipulation tool
+
+
+--------------------
+### VBA Analysis
+* [ViperMonkey](https://github.com/decalage2/ViperMonkey)
+	* ViperMonkey is a VBA Emulation engine written in Python, designed to analyze and deobfuscate malicious VBA Macros contained in Microsoft Office files (Word, Excel, PowerPoint, Publisher, etc).
+
+
 
 --------------
 ### <a name="tools">Tools:</a>
@@ -370,6 +383,10 @@ database of Microsoft Active Directory (NTDS.DIT).
 	* OS X Auditor is a free Mac OS X computer forensics tool.
 * [OS X Forensics Generals](https://davidkoepi.wordpress.com/category/os-x-forensics-10-8/)
 * [OSX Lion User Interface Preservation Analysis](https://digital-forensics.sans.org/blog/2011/10/03/osx-lion-user-interface-preservation-analysis#)
+* [Knock Knock](https://github.com/synack/knockknock)
+	* KnockKnock displays persistent items (scripts, commands, binaries, etc.), that are set to execute automatically on OS X
+* [Pac4Mac](https://github.com/sud0man/pac4mac)
+	* Pac4Mac (Plug And Check for Mac OS X) is a portable Forensics framework (to launch from USB storage) allowing extraction and analysis session informations in highlighting the real risks in term of information leak (history, passwords, technical secrets, business secrets, ...). Pac4Mac can be used to check security of your Mac OS X system or to help you during forensics investigation.
 
 
 
@@ -379,9 +396,7 @@ database of Microsoft Active Directory (NTDS.DIT).
 * [Part 2](http://www.malwaretech.com/2015/03/bootkit-disk-forensics-part-2.html)
 
 
---------------
-### Chrome Book Forensics
-* [Chromebook Forensics](http://www.dataforensics.org/google-chromebook-forensics/)
+
 
 
 

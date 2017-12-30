@@ -38,11 +38,26 @@
 --------
 ##### To be sorted
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
-* [CVE-2017-7494](https://github.com/joxeankoret/CVE-2017-7494)
-	* Remote root exploit for the SAMBA CVE-2017-7494 vulnerability
+
 * [10 Places to Stick Your UNC Path - NetSPI](https://blog.netspi.com/10-places-to-stick-your-unc-path/)
+
 * [HackerOne H1-212 Capture the Flag Solution - Corben Douglas](http://www.sxcurity.pro/H1-212%20CTF%20Solution.pdf)
+
+* [comcast](https://github.com/tylertreat/comcast)
+	* Simulating shitty network connections so you can build better systems.
+
+* [kickthemout](https://github.com/k4m4/kickthemout)
+	* A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all devices and ARP spoofs them off your local area network.
+
 ##### sort end
+
+
+
+
+
+
+
+
 
 ------------
 ### <a name="general"></a>General
@@ -118,7 +133,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* [MS Network Level Authentication](https://technet.microsoft.com/en-us/magazine/hh750380.aspx)
 * Recon
 	* [PowerView](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1)
-		* PowerView is a PowerShell tool to gain network situational awareness on Windows domains. It contains a set of pure-PowerShell replacements for various windows "net *" commands, which utilize PowerShell AD hooks and underlying Win32 API functions to perform useful Windows domain functionality.
+		* PowerView is a PowerShell tool to gain network situational awareness on Windows domains. It contains a set of pure-PowerShell replacements for various windows `net *` commands, which utilize PowerShell AD hooks and underlying Win32 API functions to perform useful Windows domain functionality.
 	* [PowerShell-AD-Recon](https://github.com/PyroTek3/PowerShell-AD-Recon)
 		* AD PowerShell Recon Scripts
 	* [Netview](https://github.com/mubix/netview)
@@ -227,7 +242,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* [sub6](https://github.com/YasserGersy/sub6)
 		* subdomain take over detector and crawler
 * Service
-	* [DNS Dumpster](DNSdumpster.com)
+	* [DNS Dumpster](https://www.DNSdumpster.com)
 		* free domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process
 * Tools
 	* [DNSRecon](https://github.com/darkoperator/dnsrecon)
@@ -243,7 +258,8 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* [DNS Recon](https://github.com/darkoperator/dnsrecon)
 	* [DNSEnum](https://github.com/fwaeytens/dnsenum)
 		* Multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks.
-
+	* [Bluto](https://github.com/darryllane/Bluto)
+		* DNS Recon | Brute Forcer | DNS Zone Transfer | DNS Wild Card Checks | DNS Wild Card Brute Forcer | Email Enumeration | Staff Enumeration | Compromised Account Enumeration | MetaData Harvesting
 
 
 
@@ -253,7 +269,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 * [Denial-of-service attack - Wikipedia](https://en.wikipedia.org/wiki/Denial-of-service_attack)
 * [Davoset](https://github.com/MustLive/DAVOSET) 
 	* DAVOSET - it is console (command line) tool for conducting DDoS attacks on the sites via Abuse of Functionality and XML External Entities vulnerabilities at other sites.
-
+* [Novel session initiation protocol-based distributed denial-of-service attacks and effective defense strategies](http://www.sciencedirect.com/science/article/pii/S0167404816300980)
 
 
 -------------
@@ -348,7 +364,9 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 * [IPv6 Local Neighbor Discovery Using Router Advertisement](https://www.rapid7.com/db/modules/auxiliary/scanner/discovery/ipv6_neighbor_router_advertisement)
 	* Send a spoofed router advertisement with high priority to force hosts to start the IPv6 address auto-config. Monitor for IPv6 host advertisements, and try to guess the link-local address by concatinating the prefix, and the host portion of the IPv6 address. Use NDP host solicitation to determine if the IP address is valid'
 * [IPv6 - Playing with IPv6 for fun and profit](https://github.com/zbetcheckin/IPv6)
-
+* [Sudden Six](https://github.com/Neohapsis/suddensix)
+	* An automation script for conducting the SLAAC attack outlined in [Alec Water's blog post](https://wirewatcher.wordpress.com/2011/04/04/the-slaac-attack-using-ipv6-as-a-weapon-against-ipv4/). This attack can be used to build an IPv6 overlay network on an IPv4 infrastructure to perform man-in-the-middle attacks.
+	* [MITM All The IPv6 Things - DEFCON 21 - Scott Behrens and Brent Bandelgar](https://www.youtube.com/watch?v=9fJGVVuG8Pc)
 
 
 ------------
@@ -373,15 +391,29 @@ Kerberos
 		* This is a tool I wrote to collect information from different LDAP Server implementation. This was written in C with the Netscape C 
 	* [Softera LDAP Browser](http://www.ldapbrowser.com/info_softerra-ldap-browser.htm)
 		* LDAP Browser that supports most LDAP implementations. Non-free software, 30-day free trial
-
+	* [ad-ldap-enum](https://github.com/CroweCybersecurity/ad-ldap-enum)
+		* An LDAP based Active Directory user and group enumeration tool
 
 ### <a name="mitm"></a>MitM Tools
-* [Dsniff](http://www.monkey.org/~dugsong/dsniff/)
-	* dsniff is a collection of tools for network auditing and penetration testing. dsniff, filesnarf, mailsnarf, msgsnarf, urlsnarf, and webspy passively monitor a network for interesting data (passwords, e-mail, files, etc.). arpspoof, dnsspoof, and macof facilitate the interception of network traffic normally unavailable to an attacker (e.g, due to layer-2 switching). sshmitm and webmitm implement active monkey-in-the-middle attacks against redirected SSH and HTTPS sessions by exploiting weak bindings in ad-hoc PKI. 
-* [Ettercap](https://ettercap.github.io/ettercap/)
-	* Ettercap is a comprehensive suite for man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.
-* [net-creds](https://github.com/DanMcInerney/net-creds)
-	* Thoroughly sniff passwords and hashes from an interface or pcap file. Concatenates fragmented packets and does not rely on ports for service identification. It sniffs: URLs visited; POST loads sent; HTTP form logins/passwords; HTTP basic auth logins/passwords; HTTP searches; FTP logins/passwords; IRC logins/passwords; POP logins/passwords; IMAP logins/passwords; Telnet logins/passwords; SMTP logins/passwords; SNMP community string; NTLMv1/v2 all supported protocols like HTTP, SMB, LDAP, etc; Kerberos.
+* General/Suites of tools
+	* [Dsniff](http://www.monkey.org/~dugsong/dsniff/)
+		* dsniff is a collection of tools for network auditing and penetration testing. dsniff, filesnarf, mailsnarf, msgsnarf, urlsnarf, and webspy passively monitor a network for interesting data (passwords, e-mail, files, etc.). arpspoof, dnsspoof, and macof facilitate the interception of network traffic normally unavailable to an attacker (e.g, due to layer-2 switching). sshmitm and webmitm implement active monkey-in-the-middle attacks against redirected SSH and HTTPS sessions by exploiting weak bindings in ad-hoc PKI. 
+	* [Ettercap](https://ettercap.github.io/ettercap/)
+		* Ettercap is a comprehensive suite for man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.
+* DNS
+	* [FakeDNS](https://github.com/Crypt0s/FakeDns)
+		* A regular-expression based python MITM DNS server with support for DNS Rebinding attacks
+	* [CopyCat](https://github.com/compewter/CopyCat)
+		* CopyCat is a Node.js based universal MITM web server. Used with DNS spoofing or another redirect attack, this server will act as a MITM for web traffic between the victim and a real server.
+* Dumping from an interface	
+	* [net-creds](https://github.com/DanMcInerney/net-creds)
+		* Thoroughly sniff passwords and hashes from an interface or pcap file. Concatenates fragmented packets and does not rely on ports for service identification. It sniffs: URLs visited; POST loads sent; HTTP form logins/passwords; HTTP basic auth logins/passwords; HTTP searches; FTP logins/passwords; IRC logins/passwords; POP logins/passwords; IMAP logins/passwords; Telnet logins/passwords; SMTP logins/passwords; SNMP community string; NTLMv1/v2 all supported protocols like HTTP, SMB, LDAP, etc; Kerberos.
+* HTTP
+	* [node-http-mitm-proxy](https://github.com/joeferner/node-http-mitm-proxy)
+	* HTTP Man In The Middle (MITM) Proxy written in node.js. Supports capturing and modifying the request and response data.
+* IPv6
+	* [suddensix](https://github.com/Neohapsis/suddensix)
+		* IPV6 MITM attack tool
 * RDP
 	* [Seth](https://github.com/SySS-Research/Seth)
 		* Seth is a tool written in Python and Bash to MitM RDP connections. It attempts to downgrade the connection and extract clear text credentials.
@@ -390,16 +422,42 @@ Kerberos
 		* A small Python-Script to extract NetNTLMv2 Hashes from NTMLssp-HTTP-Authentications, which were captured in a pcap.
 	* [ntlmRelayToEWS](https://github.com/Arno0x/NtlmRelayToEWS)
 		* ntlmRelayToEWS is a tool for performing ntlm relay attacks on Exchange Web Services (EWS). It spawns an SMBListener on port 445 and an HTTPListener on port 80, waiting for incoming connection from the victim. Once the victim connects to one of the listeners, an NTLM negociation occurs and is relayed to the target EWS server.
+	* [CVE-2017-7494](https://github.com/joxeankoret/CVE-2017-7494)
+		* Remote root exploit for the SAMBA CVE-2017-7494 vulnerability
+* Postgres
+	* [postgres-mitm](https://github.com/thusoy/postgres-mitm)
+		* Test whether your Postgres connections are vulnerable to MitM attacks.
+* SSH
+	* [ssh-mitm](https://github.com/jtesta/ssh-mitm)
+		* This penetration testing tool allows an auditor to intercept SSH connections. A patch applied to the OpenSSH v7.5p1 source code causes it to act as a proxy between the victim and their intended SSH server; all plaintext passwords and sessions are logged to disk.
 * SSL/TLS
 	* [SSLsplit - transparent and scalable SSL/TLS interception](https://www.roe.ch/SSLsplit)
 		* SSLsplit is a tool for man-in-the-middle attacks against SSL/TLS encrypted network connections. Connections are transparently intercepted through a network address translation engine and redirected to SSLsplit. SSLsplit terminates SSL/TLS and initiates a new SSL/TLS connection to the original destination address, while logging all data transmitted. SSLsplit is intended to be useful for network forensics and penetration testing.  SSLsplit supports plain TCP, plain SSL, HTTP and HTTPS connections over both IPv4 and IPv6.
 	* [SSLStrip](http://www.thoughtcrime.org/software/sslstrip/)
 		* This tool provides a demonstration of the HTTPS stripping attacks that I presented at Black Hat DC 2009. It will transparently hijack HTTP traffic on a network, watch for HTTPS links and redirects, then map those links into either look-alike HTTP links or homograph-similar HTTPS links. It also supports modes for supplying a favicon which looks like a lock icon, selective logging, and session denial.
+	* [tiny-mitm-proxy](https://github.com/floyd-fuh/tiny-mitm-proxy)
+		* Probably one of the smallest SSL MITM proxies you can make
 * WSUS(Windows Server Updater Serice)
 	* [WSUXploit](https://github.com/pimps/wsuxploit)
 		* This is a MiTM weaponized exploit script to inject 'fake' updates into non-SSL WSUS traffic. It is based on the WSUSpect Proxy application that was introduced to public on the Black Hat USA 2015 presentation, 'WSUSpect - Compromising the Windows Enterprise via Windows Update'
 
 
+
+* [warcproxy](https://github.com/internetarchive/warcprox)
+	* WARC writing MITM HTTP/S proxy
+
+
+
+
+
+
+
+
+
+
+
+[hyperfox](https://github.com/malfunkt/hyperfox)
+* HTTP/HTTPs MITM proxy and traffic recorder with on-the-fly TLS cert generation. 
 
 
 
@@ -587,7 +645,12 @@ RabbitMQ/ZeroMQ
 * [sipvicious](https://github.com/EnableSecurity/sipvicious)
 * [bluebox-ng](https://github.com/jesusprubio/bluebox-ng)
 	* Pentesting framework using Node.js powers, focused in VoIP.
-
+* [SIP Proxy](https://sourceforge.net/projects/sipproxy/)
+	* With SIP Proxy you will have the opportunity to eavesdrop and manipulate SIP traffic. Furthermore, predefined security test cases can be executed to find weak spots in VoIP devices. Security analysts can add and execute custom test cases.
+* [Sip Vicious](https://github.com/EnableSecurity/sipvicious)
+	* SIPVicious suite is a set of tools that can be used to audit SIP based VoIP systems. 
+* [Mr.SIP](https://github.com/meliht/mr.sip)
+	* Mr.SIP is a tool developed to audit and simulate SIP-based attacks. Originally it was developed to be used in academic work to help developing novel SIP-based DDoS attacks and defense approaches and then as an idea to convert it to a fully functional SIP-based penetration testing tool, it has been redeveloped into the current version.
 
 
 

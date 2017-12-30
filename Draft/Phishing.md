@@ -14,37 +14,9 @@ TOC
 
 
 
-### Cull
+### Sort
 
-[iOS Privacy: steal.password - Easily get the user's Apple ID password, just by asking](https://krausefx.com/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
-* [Phishing between the app whitelists](https://medium.com/@vivami/phishing-between-the-app-whitelists-1b7dcdab4279)
-* [Client Identification Mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms)
-
-Macros
-* [Generate Macro - Tool](https://github.com/enigma0x3/Generate-Macro)
-* [Luckystrike: An Evil Office Document Generator](https://www.shellntel.com/blog/2016/9/13/luckystrike-a-database-backed-evil-macro-generator)
-* [How To: Empire’s Cross Platform Office Macro](https://www.blackhillsinfosec.com/empires-cross-platform-office-macro/)
-* [Excel macros with PowerShell](https://4sysops.com/archives/excel-macros-with-powershell/)
-* [Multi-Platform Macro Phishing Payloads](https://medium.com/@malcomvetter/multi-platform-macro-phishing-payloads-3b688e8eff68)
-
-Office
-* [PowerPoint and Custom Actions](https://phishme.com/powerpoint-and-custom-actions/)
-* [Macro-less Code Exec in MSWord](https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/)
-* [Macroless DOC malware that avoids detection with Yara rule](https://furoner.wordpress.com/2017/10/17/macroless-malware-that-avoids-detection-with-yara-rule/amp/)
-* [Phishing with PowerPoint](https://www.blackhillsinfosec.com/phishing-with-powerpoint/)
-
-
-Outlook
-* [Outlook Home Page – Another Ruler Vector](https://sensepost.com/blog/2017/outlook-home-page-another-ruler-vector/)
-* [Outlook Forms and Shells](https://sensepost.com/blog/2017/outlook-forms-and-shells/)
-
-
-* [Mercure](https://github.com/synhack/mercure/)
-	* Mercure is a tool for security managers who want to teach their colleagues about phishing.
-
-
-
-#### End cull
+#### End sort
 
 
 
@@ -62,7 +34,9 @@ Outlook
 * General
 	* [Phishing - wikipedia](http://www.en.wikipedia.org/wiki/Phishing):
 		* “Phishing is the attempt to acquire sensitive information such as usernames, passwords, and credit card details (and sometimes, indirectly, money) by masquerading as a trustworthy entity in an electronic communication.”
+	* [Phishing with Maldocs](https://www.n00py.io/2017/04/phishing-with-maldocs/)
 	* [Post exploitation trick - Phish users for creds on domains, from their own box](https://enigma0x3.wordpress.com/2015/01/21/phishing-for-credentials-if-you-want-it-just-ask/)
+	* [iOS Privacy: steal.password - Easily get the user's Apple ID password, just by asking](https://krausefx.com/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
 * Articles/Blogposts
 	* [Best Time to send email](https://coschedule.com/blog/best-time-to-send-email/)
 	* [Top 10 Email Subjects for Company Phishing Attacks](http://www.pandasecurity.com/mediacenter/security/top-10-email-subjects-phishing-attacks/)
@@ -78,7 +52,7 @@ Outlook
 * Writeups
 	* [How do I phish? – Advanced Email Phishing Tactics - Pentest Geek](https://www.pentestgeek.com/2013/01/30/how-do-i-phish-advanced-email-phishing-tactics/)
 	* [Real World Phishing Techniques - Honeynet Project](http://www.honeynet.org/book/export/html/89)
-
+	* [Phishing with Maldocs - n00py](https://www.n00py.io/2017/04/phishing-with-maldocs/)
 
 
 
@@ -113,6 +87,13 @@ Outlook
 * [TackleBox](https://github.com/trailofbits/tacklebox)
 * [king-phisher](https://github.com/securestate/king-phisher)
 	*  Phishing Campaign Toolkit
+* [Mercure](https://github.com/synhack/mercure/)
+	* Mercure is a tool for security managers who want to teach their colleagues about phishing.
+* [Cartero](https://github.com/Section9Labs/Cartero)
+	* Cartero is a modular project divided into commands that perform independent tasks (i.e. Mailer, Cloner, Listener, AdminConsole, etc...). In addition each sub-command has repeatable configuration options to configure and automate your work.
+* [FiercePhish](https://github.com/Raikia/FiercePhish)
+	* FiercePhish is a full-fledged phishing framework to manage all phishing engagements. It allows you to track separate phishing campaigns, schedule sending of emails, and much more
+
 
 
 ------------------
@@ -129,11 +110,6 @@ Outlook
 	* [PhishBait](https://github.com/hack1thu7ch/PhishBait)
 		* Tools for harvesting email addresses for phishing attacks
 	* [Email Address Harvesting for Phishing](http://www.shortbus.ninja/email-address-harvesting-for-phishing-attacks/)
-* Frameworks
-	* [Cartero](https://github.com/Section9Labs/Cartero)
-		* Cartero is a modular project divided into commands that perform independent tasks (i.e. Mailer, Cloner, Listener, AdminConsole, etc...). In addition each sub-command has repeatable configuration options to configure and automate your work.
-	* [FiercePhish](https://github.com/Raikia/FiercePhish)
-		* FiercePhish is a full-fledged phishing framework to manage all phishing engagements. It allows you to track separate phishing campaigns, schedule sending of emails, and much more
 * Payloads
 	* [Demiguise](https://github.com/nccgroup/demiguise)
 		* The aim of this project is to generate .html files that contain an encrypted HTA file. The idea is that when your target visits the page, the key is fetched and the HTA is decrypted dynamically within the browser and pushed directly to the user.
@@ -145,13 +121,20 @@ Outlook
 * Templates
 	* [SimplyTemplate](https://github.com/killswitch-GUI/SimplyTemplate)
 		* Phishing Template Generation Made Easy. The goal of this project was to hopefully speed up Phishing Template Gen as well as an easy way to ensure accuracy of your templates. Currently my standard Method of delivering emails is the Spear Phish in Cobalt strike so you will see proper settings for that by defaul
+* [MacroCreator](https://github.com/Arno0x/PowerShellScripts/tree/master/MacroCreator)
+	* Invoke-MacroCreator is a powershell Cmdlet that allows for the creation of an MS-Word document embedding a VBA macro with various payload delivery and execution capabilities.
+
+
 
 
 ------------------
 ### Microsoft Outlook/Exchange Stuff
-* [Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)
-* [Outlook and Exchange for the Bad Guys Nick Landers - Derbycon6](https://www.youtube.com/watch?v=cVhc9VOK5MY)
-* [Microsoft Support and Recovery Assistant for Office 365](https://testconnectivity.microsoft.com/)
+* General
+	* [Outlook Home Page – Another Ruler Vector](https://sensepost.com/blog/2017/outlook-home-page-another-ruler-vector/)
+	* [Outlook Forms and Shells](https://sensepost.com/blog/2017/outlook-forms-and-shells/)
+	* [Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)
+	* [Outlook and Exchange for the Bad Guys Nick Landers - Derbycon6](https://www.youtube.com/watch?v=cVhc9VOK5MY)
+	* [Microsoft Support and Recovery Assistant for Office 365](https://testconnectivity.microsoft.com/)
 * Bypass
 	* [How to bypass Web-Proxy Filtering](https://www.blackhillsinfosec.com/?p=5831)
 * Outlook Rules
@@ -166,25 +149,53 @@ Outlook
 
 ------------------
 ### MS Office
-* [Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
+* General
+	* [Phishing against Protected View](https://enigma0x3.net/2017/07/13/phishing-against-protected-view/)
+	* [PowerPoint and Custom Actions](https://phishme.com/powerpoint-and-custom-actions/)
+	* [Macro-less Code Exec in MSWord](https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/)
+	* [Macroless DOC malware that avoids detection with Yara rule](https://furoner.wordpress.com/2017/10/17/macroless-malware-that-avoids-detection-with-yara-rule/amp/)
+	* [Phishing with PowerPoint](https://www.blackhillsinfosec.com/phishing-with-powerpoint/)
+	* [Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
+	* [CVE-2017-8759-Exploit-sample](https://github.com/vysec/CVE-2017-8759-Exploit-sample)
+		* Flow of the exploit: Word macro runs in the Doc1.doc file. The macro downloads a badly formatted txt file over wsdl, which triggers the WSDL parser log. Then the parsing log results in running mshta.exe which in turn runs a powershell commands that runs mspaint.exe
 * DDE
 	* * [Exploiting Office native functionality: Word DDE edition](https://www.securityforrealpeople.com/2017/10/exploiting-office-native-functionality.html)
+* HTA
+	* [HTML Application - Wikipedia](https://en.wikipedia.org/wiki/HTML_Application)
+	* [Learn About Scripting for HTML Applications (HTAs)](https://technet.microsoft.com/en-us/scriptcenter/dd742317.aspx)
+	* [Malicious HTAs - trustedsec](https://www.trustedsec.com/2015/07/malicious-htas/)
+	* [Exploiting CVE-2017-0199: HTA Handler Vulnerability](https://www.mdsec.co.uk/2017/04/exploiting-cve-2017-0199-hta-handler-vulnerability/)
+	* [CVE-2017-0199 Toolkit](https://github.com/bhdresh/CVE-2017-0199)
+* InfoPath
+	* [THE {PHISHING} {PATH} TO {INFO} WE MISSED](http://blog.obscuritylabs.com/the-phishing-path-to-info-we-missed/)
+		* TL;DR: InfoPath is a fantastic way to run custom C# code, and we missed it as an attack vector sadly. At the moment it has been deprecated, but don't fret it's still everywhere!
+	* [Resources for learning InfoPath - support.office.com](https://support.office.com/en-ie/article/Resources-for-learning-InfoPath-40227252-43A7-4E7A-97C6-29EC4B7E7B93)
+	* [InfoPhish](https://github.com/InfoPhish/InfoPhish)
 * Macros
 	* [Malicious Macro Generator](https://github.com/Mr-Un1k0d3r/MaliciousMacroGenerator)
 		* Simple utility design to generate obfuscated macro that also include a AV / Sandboxes escape mechanism.
 	* [macphish](https://github.com/cldrn/macphish)
 		* Office for Mac Macro Payload Generator 
-	* [SimplyTemplate](https://github.com/killswitch-GUI/SimplyTemplate)
-		* Phishing Template Generation Made Easy. The goal of this project was to hopefully speed up Phishing Template Gen as well as an easy way to ensure accuracy of your templates. Currently my standard Method of delivering emails is the Spear Phish in Cobalt strike so you will see proper settings for that by default.
+	* [Generate Macro - Tool](https://github.com/enigma0x3/Generate-Macro)
+	* [Luckystrike: An Evil Office Document Generator](https://www.shellntel.com/blog/2016/9/13/luckystrike-a-database-backed-evil-macro-generator)
+	* [How To: Empire’s Cross Platform Office Macro](https://www.blackhillsinfosec.com/empires-cross-platform-office-macro/)
+	* [Excel macros with PowerShell](https://4sysops.com/archives/excel-macros-with-powershell/)
+	* [Multi-Platform Macro Phishing Payloads](https://medium.com/@malcomvetter/multi-platform-macro-phishing-payloads-3b688e8eff68)
 	* [RobustPentestMacro](https://github.com/mgeeky/RobustPentestMacro)
 		* This is a rich-featured Visual Basic macro code for use during Penetration Testing assignments, implementing various advanced post-exploitation techniques.
 	* [Generate MS Office Macro Malware Script](https://github.com/enigma0x3/Generate-Macro/blob/master/Generate-Macro.ps1)
 		* Standalone Powershell script that will generate a malicious Microsoft Office document with a specified payload and persistence method
-* [InfoPhish](https://github.com/InfoPhish/InfoPhish)
-* [luckystrike](https://github.com/Shellntel/luckystrike)
-	* A PowerShell based utility for the creation of malicious Office macro documents.
-* [VBad](https://github.com/Pepitoh/VBad)
-	* VBad is fully customizable VBA Obfuscation Tool combined with an MS Office document generator. It aims to help Red & Blue team for attack or defense.
+	* [VBad](https://github.com/Pepitoh/VBad)
+		* VBad is fully customizable VBA Obfuscation Tool combined with an MS Office document generator. It aims to help Red & Blue team for attack or defense.
+	* [Wepwnise](https://labs.mwrinfosecurity.com/tools/wepwnise/)
+		* WePWNise is a proof-of-concept python script that generates architecture independent VBA code to be used in Office documents or templates. It aims in introducing a certain level of automation and intelligence to dynamically deliver its payload, circumventing defences such as application control and anti-exploitation mitigations that may exist on a target system.
+	* [CVE-2017-8759-Exploit-sample](https://github.com/vysec/CVE-2017-8759-Exploit-sample)
+		* Flow of the exploit: Word macro runs in the Doc1.doc file. The macro downloads a badly formatted txt file over wsdl, which triggers the WSDL parser log. Then the parsing log results in running mshta.exe which in turn runs a powershell commands that runs mspaint.exe
+* OLE
+	* [Object Linking and Embedding - Wikipedia](https://en.wikipedia.org/wiki/Object_Linking_and_Embedding)
+	* [OLE - msdn.ms](https://msdn.microsoft.com/en-us/library/df267wkc.aspx)
+	* [Phishing with Empire](https://enigma0x3.net/2016/03/15/phishing-with-empire/)
+
 
 
 

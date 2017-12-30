@@ -10,10 +10,10 @@
 * [A talk about (info-sec) talks - Haroon Meer ](https://www.youtube.com/watch?v=BlVjdUkrSFY)
 	* Last year there was an Information Security conference taking place for almost every day of the year. This translates to about 15 information security talks per day, every day. The question is, is this a bad thing? Even niche areas of the info-sec landscape have their own dedicated conference these days. Is this a good thing?
 * [List of Conferences](https://infosec-conferences.com/)
-
+* [InfoCon - Archive of Con papers/slides](https://infocon.org/)
 
 -----
-### Archives of Talks
+### Archives of Recorded Talks
 * [IronGeek - Chances are he has it archived here](https://www.irongeek.com/)
 * [31st Chaos Communication Congress Archive](http://cdn.media.ccc.de/congress/31C3/)
 * [Shmoocon 2015 Videos](https://archive.org/details/shmoocon-2015-videos-playlist)
@@ -27,14 +27,9 @@
 
 -----
 ### Conferences/Events
-
-
------
-### Slides/PDFs
-* [CanSecWest Vancouver 2015 Slides](https://cansecwest.com/csw15archive.html)
-* [SyScan2015 Slides](https://www.syscan.org/index.php/download)
-
-
+* [List of Conferences](https://infosec-conferences.com/)
+* [InfoCon - Archive of Con papers/slides](https://infocon.org/)
+* [CFP Time](https://cfptime.org/)
 
 
 

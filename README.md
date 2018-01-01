@@ -45,7 +45,8 @@ An Information Security Reference That Doesn't Suck
 * [Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Persistence.md)
 * [Privilege Escalation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Privilege_Escalation.md)
 
-#### Categories
+
+#### Infosec_Reference
 * [Anonymity/OpSec/Privacy](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/AnonOpsecPrivacy.md)
 * [Basic Security Information](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Basic%20Security%20Information.md)
 * [BIOS/UEFI/Firmware Attacks/Defense](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/BIOS%20UEFI%20Attacks%20Defenses.md)

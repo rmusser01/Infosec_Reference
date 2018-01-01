@@ -12,10 +12,6 @@ An Information Security Reference That Doesn't Suck
 * Something oppposite to the [MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page) (eventually; As in, "I want to do priv esc on OS X/windows/linux, what methods are there?" or, "I need to do X under Y situation". Focus is on attacks and how they're done vs how attacks are done with a focus on defense.
 	* Always accepting more links/stuff. Feel free to contribue or suggest something.
 
-#### Why Do *I* Care?
-* No idea. I do this as a resource for myself(to teach others from) and offer it publicly as a way of giving back to the general community.
-* To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel help build someone's skillset or increase understanding of attacks/methods/defenses.
-
 #### Why Do *You* Care?
 * Don't have to constantly google for tools/reminder. 
 * Easily browsable list of tools, techniques, papers, and research in all sorts of areas.
@@ -23,11 +19,11 @@ An Information Security Reference That Doesn't Suck
 
 
 ##### This page
-* This page is terrible on mobile. Use [https://rmusser.net/docs](https://rmusser.net/docs]) for better mobile formatting.
+* This page isn't the best ~~terrible~~ on mobile. Use [https://rmusser.net/docs](https://rmusser.net/docs]) for better mobile formatting.
 	* At some point I will sort the sections into a grid alphabetically.
 * For latest content updates, check here: [Things added since last update](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/things-added.md)
 	* This will have all links added to the other pages sorted according to topic, making it easier to see new stuff.
-* All links on this page should work. Last tested 11/26
+* All links on this page should work. Last tested 12/31
 * Contributions are welcome, format is pretty simple/easy to pick up, add anything not already in it that fits.
 
 
@@ -36,41 +32,16 @@ An Information Security Reference That Doesn't Suck
 
 #### ATT&CK(Def3nse?) Stuff
 Windows
-* [Windows Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Collection.md)
-* [Windows Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Command_and_Control.md)
-* [Windows Credential Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Credential_Access.md)
-* [Windows Defense Evasion](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Defense_Evasion.md)
-* [Windows Discovery](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Discovery.md)
-* [Windows Execution](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Execution.md)
-* [Windows Exfiltration](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Exfiltration.md)
-* [Windows Lateral Movement](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Lateral_Movement.md)
-* [Windows Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Persistence.md)
-* [Windows Privilege Escalation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Windows/Windows_Privilege_Escalation.md)
-
-
-Linux
-* [Linux Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Collection.md)
-* [Linux Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Command%20and%20Control.md)
-* [Linux Credential Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Credential%20Access.md)
-* [Linux Defense Evasion](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Defense%20Evasion.md)
-* [Linux Discovery](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Discovery.md)
-* [Linux Execution](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Execution.md)
-* [Linux Exfiltration](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Exfiltration.md)
-* [Linux Lateral Movement](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Lateral%20Movement.md)
-* [Linux Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Persistence.md)
-* [Linux Privilege Escalation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Linux/Linux%20Privilege%20Escalation.md)
-
-Mac/OS X
-* [OS X Collection]
-* [OS X Command and Control]
-* [OS X Credential Access]
-* [OS X Defense Evasion]
-* [OS X Discovery]
-* [OS X Execution]
-* [OS X Exfiltration]
-* [OS X Lateral Movement]
-* [OS X Persistence]
-* [OS X Privilege Escalation]
+* [Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Collection.md)
+* [Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Command_and_Control.md)
+* [Credential Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Credential_Access.md)
+* [Defense Evasion](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/WDefense_Evasion.md)
+* [Discovery](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Discovery.md)
+* [Execution](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Execution.md)
+* [Exfiltration](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Exfiltration.md)
+* [Lateral Movement](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Lateral_Movement.md)
+* [Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Persistence.md)
+* [Privilege Escalation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Privilege_Escalation.md)
 
 #### Categories
 * [Anonymity/OpSec/Privacy](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/AnonOpsecPrivacy.md)

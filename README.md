@@ -9,9 +9,6 @@ An Information Security Reference That Doesn't Suck
 	* Something like a "Yellow Pages" in the sense of you know something exists, but what was it called....
 * End goal: Rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches OR as a reference/recall method for stuff.
 	* 'if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.'
-* Partially something oppposite to the [MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page) (eventually; As in, "I want to do priv esc on OS X/windows/linux, what methods are there?" or, "I need to do X under Y situation". Focus is on attacks and how they're done vs how attacks are done with a focus on defense.
-	* This is just a collection of things that map to those items to demonstrate how they work.
-		* If you're looking for how to test and prevent such things check here for the easy route: [Atomic Red Team - Small and highly portable detection tests mapped to the Mitre ATT&CK Framework.](https://github.com/redcanaryco/atomic-red-team) ; Good Stuff.
 * Always accepting more links/stuff. Feel free to make a pull request or complaint.
 
 #### Why Do *You* Care?
@@ -33,6 +30,10 @@ An Information Security Reference That Doesn't Suck
 ------------------------------
 
 #### ATT&CK(Def3nse?) Stuff
+* Something oppposite to the [MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page) (eventually; As in, "I want to do priv esc on OS X/windows/linux, what methods are there?" or, "I need to do X under Y situation". Focus is on attacks and how they're done vs how attacks are done with a focus on defense.
+	* This is just a collection of things that map to those items to demonstrate how they work.
+		* If you're looking for how to test and prevent such things, check here:
+			* [Atomic Red Team - Small and highly portable detection tests mapped to the Mitre ATT&CK Framework.](https://github.com/redcanaryco/atomic-red-team) ; Good Stuff.
 * [Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Collection.md)
 * [Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Command_and_Control.md)
 * [Credential Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Credential_Access.md)

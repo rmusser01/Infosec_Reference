@@ -3,8 +3,7 @@
 
 
 
-### TOC
-Cull
+### Table of Contents
 * [Intro](#Intro)
 * [Android Internals](#AInternals)
 * [Securing Android](#SecAnd)

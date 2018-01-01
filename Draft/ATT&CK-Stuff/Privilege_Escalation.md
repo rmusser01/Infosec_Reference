@@ -1,4 +1,4 @@
-# Windows Privlege Escalation
+# Privlege Escalation
 
 [MITRE ATT&CK - Privilege Escalation](https://attack.mitre.org/wiki/Privilege_Escalation)
 

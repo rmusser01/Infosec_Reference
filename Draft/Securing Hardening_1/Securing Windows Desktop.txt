@@ -19,9 +19,11 @@ Create a baseline configuration.
 I advise that you create a security baseline once you have applied the latest patches and updates. This allows you to have a point of reference to work from. From this, you can start planning on what specific techniques you will use to harden your system.
 
 Microsoft Baseline Security Analyzer Tool
-http://technet.microsoft.com/en-us/security/cc184924.aspx
+
+
 MBSA FAQs
-http://technet.microsoft.com/en-us/security/cc184922
+
+
 
 Install the Exploit Mitigation Enhancement Toolkit.
 It is recommended you install the Exploit Mitigation Enhancement Toolkit provided at no cost by Microsoft. It is a piece of software that reduces the effectiveness of exploits used by malware through various mitigation techniques. More information can be found here: 
@@ -43,26 +45,7 @@ For a guide on configuring Windows firewall, check out Microsoft’s guide:
 http://technet.microsoft.com/en-us/library/jj721516.aspx
 Also, Windows Firewall configuration through Powershell http://technet.microsoft.com/en-us/library/hh831755.aspx
 
-Anti-Virus
-AV. I will go on record, as saying that I do recommend some form of Anti-Virus. As for which one in particular, I will not say. I will however provide a link to comparisons of various AV:
-http://www.av-test.org/en/home/
 
-Web Browser
-Firefox
-If you really need to be told what Firefox is, I don’t even.
-https://www.mozilla.org/en-US/firefox/new/
-Firefox Plugins
-One of the beautiful things Firefox are the plugins, and the extra functionality added through them. The list below is my recommendations for securing your browser as well as controlling what information it sends out.
-Adblock - Blocks ads. Ads are a large vector of attack due to the lack of verification within the advertising industry.
-Link: https://addons.mozilla.org/en-US/firefox/addon/adblock-edge/
-Noscript - Allows for granular control of Javascript on pages.
-Link: https://addons.mozilla.org/en-US/firefox/addon/noscript/
-Request Policy - Control the HTTP requests made by your browser to 3rd party websites.
-Link: https://addons.mozilla.org/en-US/firefox/addon/requestpolicy/ 
-Self destructing cookies - Prevent tracking and abuse of session information.
-Link: https://addons.mozilla.org/en-US/firefox/addon/self-destructing-cookies/
-HTTPS Everywhere - Forces sites when possible to use HTTPS encryption.
-Link: https://www.eff.org/https-everywhere
 
 
 Analyzing the Attack Surface(Only on Win7/Serv08 and below)

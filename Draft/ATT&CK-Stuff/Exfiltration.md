@@ -1,6 +1,6 @@
 # Exfiltration
 -------------------------------
-See --> [Exfiltration](../../Exfiltration.md)
+See --> [Exfiltration](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Exfiltration.md)
 
 
 

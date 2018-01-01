@@ -1,13 +1,11 @@
 Help/Reference
 
 
-basic framework outline:
+Basic Idea:
 
 What is % ?
 
-How does it relate to InfoSec?
-
-Where can I learn more?
+Where can I learn more about % ?
 
 References for % ?
 

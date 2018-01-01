@@ -2,6 +2,8 @@
 
 List of random Emoji I found. Check out System Internals 'Emoji' section for more info on emojis.
 
+* [List of Github Emoji](https://gist.github.com/rxaviers/7360908)
+
 ```
 Emoji:
 

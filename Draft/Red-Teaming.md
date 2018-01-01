@@ -243,7 +243,21 @@ Command & Control (CnC)
 		* Merlin is a cross-platform post-exploitation HTTP/2 Command & Control  server and agent written in golang.
 	* [emptynest](https://github.com/empty-nest/emptynest)
 		* Emptynest is a plugin based C2 server framework. The goal of this project is not to replace robust tools such as Empire, Metasploit, or Cobalt Strike. Instead, the goal is to create a supporting framework for quickly creating small, purpose built handlers for custom agents. No agent is provided. Users of Emptynest should create their own agents that implement minimal functionality and can be used to evade detection and establish a more robust channel. An example of an agent might support Unhooking, DLL Unloading, and code execution. Due to the simple nature of this project, it is recommended that agents be kept private.
-
+	* [CheckPlease](https://github.com/Arvanaghi/CheckPlease)
+		* Implant-Security modules written in PowerShell, Python, Go, Ruby, C, C#, Perl, and Rust. 
+	* [ThunderShell](https://github.com/Mr-Un1k0d3r/ThunderShell)
+		* ThunderShell is a Powershell based RAT that rely on HTTP request to communicate. All the network traffic is encrypted using a second layer of RC4 to avoid SSL interception and defeat network hooks.
+	* [dnscat2-powershell](https://github.com/lukebaggett/dnscat2-powershell)
+		* A Powershell client for dnscat2, an encrypted DNS command and control tool
+	* [WMImplant](https://github.com/ChrisTruncer/WMImplant)
+		* WMImplant is a PowerShell based tool that leverages WMI to both perform actions against targeted machines, but also as the C2 channel for issuing commands and receiving results. WMImplant will likely require local administrator permissions on the targeted machine.
+	* [DNS-Persist](https://github.com/0x09AL/DNS-Persist)
+		* DNS-Persist is a post-exploitation agent which uses DNS for command and control. The server-side code is in Python and the agent is coded in C++.
+	* [BrainDamage](https://github.com/mehulj94/BrainDamage)
+		* A fully featured backdoor that uses Telegram as a C&C server
+	* [EggShell](https://github.com/neoneggplant/EggShell)
+		* EggShell is an iOS and macOS post exploitation surveillance pentest tool written in Python. This tool creates 1 line multi stage payloads that give you a command line session with extra functionality. EggShell gives you the power and convenience of uploading/downloading files, taking pictures, location tracking, shell command execution, persistence, escalating privileges, password retrieval, and much more. Server communication features end to end encryption with 128 bit AES and the ability to handle multiple clients. This is a proof of concept pentest tool, intended for use on machines you own.
+		* [EggShell Blogpost](http://lucasjackson.me/dWkKX/index.php/eggshell)
 
 ### <a name="front"></a>Domains
 * Domain Fronting
@@ -354,23 +368,6 @@ Empire
 	* P4wnP1 is a highly customizable USB attack platform, based on a low cost Raspberry Pi Zero or Raspberry Pi Zero W.
 	* [Contents of a Physical Pentester Backpack](https://www.tunnelsup.com/contents-of-a-physical-pen-testers-backpack/)
 
-
-
---------------
-### Implants
-* [CheckPlease](https://github.com/Arvanaghi/CheckPlease)
-	* Implant-Security modules written in PowerShell, Python, Go, Ruby, C, C#, Perl, and Rust. 
-* [ThunderShell](https://github.com/Mr-Un1k0d3r/ThunderShell)
-	* ThunderShell is a Powershell based RAT that rely on HTTP request to communicate. All the network traffic is encrypted using a second layer of RC4 to avoid SSL interception and defeat network hooks.
-* [dnscat2-powershell](https://github.com/lukebaggett/dnscat2-powershell)
-	* A Powershell client for dnscat2, an encrypted DNS command and control tool
-* [WMImplant](https://github.com/ChrisTruncer/WMImplant)
-	* WMImplant is a PowerShell based tool that leverages WMI to both perform actions against targeted machines, but also as the C2 channel for issuing commands and receiving results. WMImplant will likely require local administrator permissions on the targeted machine.
-* [DNS-Persist](https://github.com/0x09AL/DNS-Persist)
-	* DNS-Persist is a post-exploitation agent which uses DNS for command and control. The server-side code is in Python and the agent is coded in C++.
-* [BrainDamage](https://github.com/mehulj94/BrainDamage)
-	* A fully featured backdoor that uses Telegram as a C&C server
-* [Inside a low budget
 
 
 
@@ -506,9 +503,22 @@ Tactics
 	* [Why You Should (But Don't) Care About Mainframe Security - Northsec2015 - Phillip Young](https://www.youtube.com/watch?v=YLxvrklh2tM)
 	* [Hack the Legacy: IBM I aka AS400 Revealed - Bart Kulach - Defcon23](https://www.youtube.com/watch?v=JsqUZ3xGdLc)
 	* [From root to SPECIAL - Pwning IBM Mainframes - Defcon22 - Philip Young](https://www.youtube.com/watch?v=MZDIblU9pBw)
+	* [Mainframed: The Secrets Inside that Black Box [Shmoocon 2013] - Philip Young](https://www.youtube.com/watch?v=KIavTQeQqSw)
+	* [Mainframed - The Forgotten Fortress - Philip Young - BSidesLV2012](https://www.youtube.com/watch?v=tjYlXW2Dldc)
+	* [we hacked the gibson now what - Philip Young - BSidesLV2014](https://www.youtube.com/watch?v=n_sXG0Ff2oM)
 * **Tools**
 	* [Privilege escalation on z/OS](https://github.com/ayoul3/Privesc)
 		* Privilege escalation tools on Mainframe
+	* [Nmap Mainframe Scripts](https://github.com/zedsec390/NMAP)
+		* NMAP scripts for TN3270 interaction as well as NJE. Most notably TSO User Enumeration and Brute Force. CICS transaction ID enumeration and NJE node name brute forcing.
+	* [shells-payloads - Source code for SystemZ Shells / Payloads](https://github.com/zedsec390/shells-payloads)
+	* [TN3270 Python Library](https://github.com/zedsec390/tn3270lib)
+		* This library is a pure python implemnation of a TN3270e emulator. To test this library you can issue the command python tn3270lib.py <hostname> <port>.
+	* [REXX-tools](https://github.com/zedsec390/REXX-tools)
+		* Various tools in REXX
+	* [NJElib](https://github.com/zedsec390/NJElib)
+		* z/OS (mainframe) Network Job Entry (NJE) python library and example scripts.
+
 * **Writeups**
 
 

@@ -2,6 +2,9 @@ Ncat
 
 Ncat is a piece of software created by the same person who made Nmap, Fyodor, as an upgrade to netcat.
 
+http://alexcreek.com/ncat-cheatsheet.html
+
+https://bitrot.sh/cheatsheet/19-12-2017-ncat/
 
 
 

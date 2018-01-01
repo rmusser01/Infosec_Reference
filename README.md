@@ -69,7 +69,7 @@
 * [Physical Security](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Phyiscal%20Security.md)
 * [Privilege Escalation and Post-Exploitation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Privilege%20Escalation%20%26%20Post-Exploitation.md)
 * [Programming Stuff](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Programming%20-%20Languages%20Libs%20Courses%20References.md)
-* [Rants & Writeups]()
+* [Rants & Writeups](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Rants%26Writeups)
 * [Red Teaming](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Red-Teaming.md)
 * [Reverse Engineering](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Reverse%20Engineering.md)
 * [REMATH Reverse Engineering](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Reverse%20Engineering%20-%20REMath%20Literature.md)

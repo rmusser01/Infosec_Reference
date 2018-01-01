@@ -1,11 +1,30 @@
-# Windows_Discovery.md
+# Discovery.md
 
--------------------------------
+
+[MITRE ATT&CK - Discovery](https://attack.mitre.org/wiki/Discovery)
+* Discovery consists of techniques that allow the adversary to gain knowledge about the system and internal network. When adversaries gain access to a new system, they must orient themselves to what they now have control of and what benefits operating from that system give to their current objective or overall goals during the intrusion. The operating system provides many native tools that aid in this post-compromise information-gathering phase. 
+
+
+
+
+
+
 ### Account Discovery
-Account Discovery
+-------------------------------
+* [Account Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1087)
+	* Adversaries may attempt to get a listing of local system or domain accounts. 
+
+#### Linux
+* On Linux, local users can be enumerated through the use of the `/etc/passwd` file which is world readable. In mac, this same file is only used in single-user mode in addition to the `/etc/master.passwd` file. 
+
+#### OS X
+* On Mac, groups can be enumerated through the `groups` and `id` commands. In mac specifically, `dscl . list /Groups` and `dscacheutil -q group` can also be used to enumerate groups and users. 
+* `dscl . list /Users`
+
+#### Windows
 * [Account Discovery - ATT&CK](https://attack.mitre.org/wikipediai/Technique/T1087)
 	* Adversaries may attempt to get a listing of local system or domain accounts. 
-	* Example commands that can acquire this information are net user, net group <groupname>, and net localgroup <groupname> using the Net utility or through use of dsquery. If adversaries attempt to identify the primary user, currently logged in user, or set of users that commonly uses a system, System Owner/User Discovery may apply. 
+	* Example commands that can acquire this information are `net user`, `net group <groupname>`, and `net localgroup <groupname>` using the Net utility or through use of `dsquery`. If adversaries attempt to identify the primary user, currently logged in user, or set of users that commonly uses a system, System Owner/User Discovery may apply. 
 * [Net.exe reference](http://windowsitpro.com/windows/netexe-reference)
 * [Dsquery - technet](https://technet.microsoft.com/en-us/library/cc732952.aspx)
 * [“I Hunt Sys Admins” - Harmjoy](http://www.harmj0y.net/blog/penetesting/i-hunt-sysadmins/)
@@ -17,11 +36,19 @@ Account Discovery
 
 
 
--------------------------------
+
 ### Application Window Discovery
-Application Window Discovery
+-------------------------------
 * [Application Window Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1010)
-	* Adversaries may attempt to get a listing of open application windows. Window listings could convey information about how the system is used or give context to information collected by a keylogger. 
+	* Adversaries may attempt to get a listing of open application windows. Window listings could convey information about how the system is used or give context to information collected by a keylogger. In Mac, this can be done natively with a small AppleScript script.
+
+#### OS X
+* [Listing all windows of all applications - StackOverflow](https://stackoverflow.com/questions/14551419/listing-all-windows-of-all-applications)
+
+#### Linux
+* [How to get the list of open windows from xserver](https://stackoverflow.com/questions/252906/how-to-get-the-list-of-open-windows-from-xserver)
+
+#### Windows
 * [Get Active Window on User Desktop - technet](https://gallery.technet.microsoft.com/scriptcenter/Get-Active-Window-on-User-352fa957)
 	* This script will tell you the application that user is currently using. This also called active window. This script replies on unmanaged dll, user32.dll, to get this information. It has a function called GetForegroundWindow() which returns the Windowhandle of the active process. 
 * [Get-Window](https://www.vexasoft.com/pages/get-window)
@@ -31,10 +58,29 @@ Application Window Discovery
 
 
 
--------------------------------
+
 ### File and Directory Discovery
-File and Directory Discovery
+-------------------------------
 * [File and Directory Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1083)
+	* Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. 
+
+#### Linux
+* MITRE
+	* In Mac and Linux, this kind of discovery is accomplished with the `ls`, `find`, and `locate` commands.
+* [find - ss64](https://ss64.com/bash/find.html)
+* [Find Files in Linux, Using the Command Line - linode](https://www.linode.com/docs/tools-reference/tools/find-files-in-linux-using-the-command-line/)
+* [25 simple examples of Linux find command - binarytides](http://www.binarytides.com/linux-find-command-examples/)
+* [The locate Command - linfo](http://www.linfo.org/locate.html)
+
+#### OS X
+* MITRE
+	* In Mac and Linux, this kind of discovery is accomplished with the `ls`, `find`, and `locate` commands.
+* [find - SS64](https://ss64.com/osx/find.html)
+* [mdfind - manpagez](https://www.manpagez.com/man/1/mdfind/)
+
+#### Windows
+* MITRE
+	* Example utilities used to obtain this information are `dir` and `tree`. JPCERT Custom tools may also be used to gather file and directory information and interact with the Windows API. 
 * [Microsoft DOS tree command](https://www.computerhope.com/treehlp.htm)
 	* Is present on MS DOS -> 10.
 * [dir - technet](https://technet.microsoft.com/en-us/library/cc755121(v=ws.11).aspx)
@@ -43,10 +89,13 @@ File and Directory Discovery
 
 
 
--------------------------------
+
 ### Network Service Scanning
-Network Service Scanning
+-------------------------------
 * [Network Service Scanning - ATT&CK](https://attack.mitre.org/wiki/Technique/T1046)
+	* Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation. Methods to acquire this information include port scans and vulnerability scans using tools that are brought onto a system.
+
+#### Windows
 * [scanless](https://github.com/vesche/scanless)
 	* Command-line utility for using websites that can perform port scans on your behalf. Useful for early stages of a penetration test or if you'd like to run a port scan on a host and have it not come from your IP address.
 * [ms15-034.nse Script](https://github.com/pr4jwal/quick-scripts/blob/master/ms15-034.nse)
@@ -135,11 +184,6 @@ SQL
 	* [Overview of PowerUpSQL](https://github.com/NetSPI/PowerUpSQL/wiki/Overview-of-PowerUpSQL)
 
 
-
-
-
-
-
 #### Netbios:
 Netbios
 * [NbtScan](http://www.unixwiz.net/tools/nbtscan.html)
@@ -216,10 +260,24 @@ Web
 
 
 
--------------------------------
+
 ## Network Share Discovery
-Network Share Discovery
+-------------------------------
 * [Network Share Discovery - ATT&CK](Network Share Discovery)
+	* Networks often contain shared network drives and folders that enable users to access file directories on various systems across a network. 
+
+#### Linux
+
+#### OS X
+* MITRE
+	*  On Mac, locally mounted shares can be viewed with the `df -aH` command.
+* [How to list network shared items in terminal - SuperUser](https://superuser.com/questions/376914/how-to-list-network-shared-items-in-terminal)
+
+#### Windows
+* MITRE
+	* File sharing over a Windows network occurs over the SMB protocol.Wikipedia Shared ResourceTechNet Shared Folder 
+	* Net can be used to query a remote system for available shared drives using the net view \\remotesystem command. It can also be used to query shared drives on the local system using `net share`.
+	* Adversaries may look for folders and drives shared on remote systems as a means of identifying sources of information to gather as a precursor for Collection and to identify potential systems of interest for Lateral Movement.  
 * [Get-SmbShare](https://technet.microsoft.com/en-us/library/jj635704(v=wps.630).aspx)
 	* Retrieves the Server Message Block (SMB) shares on the computer.
 * [NetResView](http://www.nirsoft.net/utils/netresview.html)
@@ -241,7 +299,7 @@ Assuming communication is working as intended, you can also query for the shares
 
 One can also list shared printers with a little trickeration in the {} side of things:
 get-WmiObject -list | where {$_.name -match “Printer”}
-'''
+''' 
 
 
 
@@ -249,12 +307,16 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 
 
 
-
--------------------------------
 ## Peripheral Device Discovery
-Peripheral Device Discovery
+-------------------------------
 * [Peripheral Device Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1120)
-	* Adversaries may attempt to gather information about attached peripheral devices and components connected to a computer system. The information may be used to enhance their awareness of the system and network environment or may be used for further actions. 
+	* Adversaries may attempt to gather information about attached peripheral devices and components connected to a computer system. The information may be used to enhance their awareness of the system and network environment or may be used for further actions.
+
+#### Linux
+
+#### OS X
+
+#### Windows
 * [USBView](https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/usbview)
 	* USBView (Universal Serial Bus Viewer, Usbview.exe) is a Windows graphical user interface application that enables you to browse all USB controllers and connected USB devices on your computer. USBView works on all versions of Windows.
 * [How to Analyze USB Device History in Windows](https://www.magnetforensics.com/computer-forensics/how-to-analyze-usb-device-history-in-windows/)
@@ -266,12 +328,32 @@ Peripheral Device Discovery
 
 
 
--------------------------------
 ## Permission Groups Discovery
-Permissions Group Discovery
-* [Permission Groups Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1069)
+-------------------------------
+* [Permissions Groups Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1069)
 	* Adversaries may attempt to find local system or domain-level groups and permissions settings. 
-	* Examples of commands that can list groups are net group /domain and net localgroup using the Net utility. 
+
+#### Linux
+* MITRE
+	* On Linux, local groups can be enumerated with the `groups` command and domain groups via the `ldapsearch` command.
+* [Linux / Unix: groups Command Examples](https://www.cyberciti.biz/faq/unix-linux-groups-command-examples-syntax-usage/)
+* [Linux Users and Groups](https://www.linode.com/docs/tools-reference/linux-users-and-groups/)
+* [Managing Group Access](http://www.yolinux.com/TUTORIALS/LinuxTutorialManagingGroups.html)
+* [Using ldapsearch](https://www.centos.org/docs/5/html/CDS/ag/8.0/Finding_Directory_Entries-Using_ldapsearch.html)
+* [LDAP Command-Line Tools](https://docs.oracle.com/cd/B10501_01/network.920/a96579/comtools.htm)
+* [Querying an LDAP server from the command line with ldap-utils: ldapsearch, ldapadd, ldapmodify](http://www.vinidox.com/ldap/querying-an-ldap-server-from-the-command-line-with-ldap-utils-ldapsearch-ldapadd-ldapmodify/)
+
+
+#### OS X
+* MITRE
+	* On Mac, this same thing can be accomplished with the `dscacheutil -q group` for the domain, or `dscl . -list /Groups` for local groups. 
+* `dscl . list /Users`
+* `dscl . list /Groups`
+
+
+#### Windows
+* MITRE
+	* Examples of commands that can list groups are `net group /domain` and `net localgroup` using the Net utility.
 * [Local Users and Groups overview - technet](https://technet.microsoft.com/en-us/library/cc770756(v=ws.11).aspx)
 * [Managing Permissions - technet](https://technet.microsoft.com/en-us/library/cc770962(v=ws.11).aspx)
 * [Windows: View “all” permissions of a specific user or group](https://superuser.com/questions/613160/windows-view-all-permissions-of-a-specific-user-or-group)
@@ -282,10 +364,29 @@ Permissions Group Discovery
 
 
 
--------------------------------
+
 ## Process Discovery
-Process Discovery
+-------------------------------
 * [Process Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1057)
+	* Adversaries may attempt to get information about running processes on a system. Information obtained could be used to gain an understanding of common software running on systems within the network. 
+
+
+#### Linux
+* MITRE
+	*  In Mac and Linux, this is accomplished with the `ps` command.
+* [ps manpage](https://linux.die.net/man/1/ps)
+* [How To Use ps, kill, and nice to Manage Processes in Linux](https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux)
+* [30 Useful ‘ps Command’ Examples for Linux Process Monitoring](https://www.tecmint.com/ps-command-examples-for-linux-process-monitoring/)
+
+#### OS X
+* MITRE
+	*  In Mac and Linux, this is accomplished with the `ps` command.
+* [ps - SS64](https://ss64.com/osx/ps.html)
+* [top - SS64](https://ss64.com/osx/top.html)
+
+#### Windows
+* MITRE
+	* An example command that would obtain details on processes is `"tasklist"` using the Tasklist utility. 	
 * [TASKLIST - SS64](https://ss64.com/nt/tasklist.html)
 	* TaskList displays all running applications and services with their Process ID (PID) This can be run on either a local or a remote computer.
 * [Use WMIC to list processes](https://quux.wiki.zoho.com/WMIC-Snippets.html#Processes)
@@ -301,11 +402,12 @@ Process Discovery
 
 
 
--------------------------------
 ## Query Registry
-Query Registry
+-------------------------------
 * [Query Registry - ATT&CK](https://attack.mitre.org/wiki/Technique/T1012)
-	* Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software. The Registry contains a significant amount of information about the operating system, configuration, software, and security.1 Some of the information may help adversaries to further their operation within a network. 
+	* Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software. The Registry contains a significant amount of information about the operating system, configuration, software, and security.Wikipedia Windows Registry Some of the information may help adversaries to further their operation within a network. 
+
+#### Windows
 * [Windows Registry - Wikipedia](https://en.wikipedia.org/wiki/Windows_Registry)
 * [Reg - technet](https://technet.microsoft.com/en-us/library/cc732643.aspx)
 * [Reg query](https://technet.microsoft.com/en-us/library/cc742028(v=ws.11).aspx)
@@ -319,16 +421,30 @@ Query Registry
 
 
 
--------------------------------
+
 ## Remote System Discovery
-Remote System Discovery
+-------------------------------
 * [Remote System Discovery](https://attack.mitre.org/wiki/Technique/T1018)
 	* Adversaries will likely attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system. Functionality could exist within remote access tools to enable this, but utilities available on the operating system could also be used. 
+
+#### Linux
+* MITRE
+	*  Utilities such as `"ping"` and others can be used to gather information about remote systems.
+* `ping`, `arp`, etc.
+
+#### OS X
+* Specific to Mac, the bonjour protocol to discover additional Mac-based systems within the same broadcast domain. Utilities such as `"ping"` and others can be used to gather information about remote systems. 
+
+#### Windows
+* MITRE
+ * Examples of tools and commands that acquire this information include `"ping"` or `"net view"` using Net. 
+
+#### Windows
 * Check .hosts file for mappings ; C:\Windows\System32\Drivers\etc\hosts
 * [arp](https://technet.microsoft.com/en-us/library/cc940107.aspx)
 * [Port scan subnets with PSnmap for PowerShell](http://www.powershelladmin.com/wiki/Port_scan_subnets_with_PSnmap_for_PowerShell)
 * [PowerView](https://github.com/PowerShellMafia/PowerSploit/tree/master/Recon)
-	* PowerView is a PowerShell tool to gain network situational awareness on Windows domains. It contains a set of pure-PowerShell replacements for various windows "net *" commands, which utilize PowerShell AD hooks and underlying Win32 API functions to perform useful Windows domain functionality.
+	* PowerView is a PowerShell tool to gain network situational awareness on Windows domains. It contains a set of pure-PowerShell replacements for various windows ".net * "" commands, which utilize PowerShell AD hooks and underlying Win32 API functions to perform useful Windows domain functionality.
 * [Invoke-HostEnum.ps1](https://github.com/minisllc/red-team-scripts/blob/master/Invoke-HostEnum.ps1)
 	* Performs local host and/or domain enumeration for situational awareness
 * [Network Situational Awareness with Empire](http://www.powershellempire.com/?page_id=289)
@@ -337,11 +453,19 @@ Remote System Discovery
 
 
 
--------------------------------
+
 ## Security Software Discovery
-Security Software Discovery
+-------------------------------
 * [Security Software Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1063)
 	* Adversaries may attempt to get a listing of security software, configurations, defensive tools, and sensors that are installed on the system. This may include things such as local firewall rules, anti-virus, and virtualization. These checks may be built into early-stage remote access tools. 
+
+#### OS X
+* MITRE
+	* It's becoming more common to see macOS malware perform checks for LittleSnitch and KnockKnock software.
+
+#### Windows
+* MITRE
+	* Example commands that can be used to obtain security software information are netsh, `reg query` with Reg, `dir` with cmd, and Tasklist, but other indicators of discovery behavior may be more specific to the type of software or security system the adversary is looking for. 
 * [Use Powershell to quickly find installed Software](https://blogs.technet.microsoft.com/heyscriptingguy/2011/11/13/use-powershell-to-quickly-find-installed-software/)
 * [Netsh AdvFirewall Firewall Commands - technet](https://technet.microsoft.com/en-us/library/dd734783(v=ws.10).aspx)
 	* netsh advfirewall monitor show firewall rule name=all dir=in
@@ -358,11 +482,23 @@ Security Software Discovery
 
 
 
--------------------------------
+
 ## System Information Discovery
-System Information Discovery
+-------------------------------
 * [System Information Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1082)
 	* An adversary may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture. 
+
+#### Linux
+
+#### OS X
+* MITRE
+	*  On Mac, the systemsetup command gives a detailed breakdown of the system, but it requires administrative privileges. Additionally, the `system_profiler` gives a very detailed breakdown of configurations, firewall rules, mounted volumes, hardware, and many other things without needing elevated permissions.
+* [Get OS X System Info from the Command Line](http://teczd.com/2015/09/23/osx-get-system-info-from-command-line/)
+* [Using System Profiler in Terminal](http://macstuff.beachdogs.org/blog/?p=21)
+
+#### Windows
+* MITRE
+	* Example commands and utilities that obtain this information include `ver`, `Systeminfo`, and `dir` within cmd for identifying information based on present files and directories. 
 * [Systeminfo - technet](https://technet.microsoft.com/en-us/library/bb491007.aspx)
 	* Displays detailed configuration information about a computer and its operating system, including operating system configuration, security information, product ID, and hardware properties, such as RAM, disk space, and network cards.
 * [GetSystemInfo function - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/ms724381(v=vs.85).aspx)
@@ -380,11 +516,18 @@ System Information Discovery
 
 
 
--------------------------------
+
 ## System Network Configuration Discovery
-System Network Configuration Discovery
+-------------------------------
 * [System Network Configuration Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1016)
 	* Adversaries will likely look for details about the network configuration and settings of systems they access or through information discovery of remote systems. Several operating system administration utilities exist that can be used to gather this information. Examples include Arp, ipconfig/ifconfig, nbtstat, and route. 
+
+#### Linux
+
+#### OS X
+* [systemsetup - SS64](https://ss64.com/osx/systemsetup.html)
+
+#### Windows
 * [Netstat - technet](https://technet.microsoft.com/en-us/library/bb490947.aspx)
 	* Displays active TCP connections, ports on which the computer is listening, Ethernet statistics, the IP routing table, IPv4 statistics (for the IP, ICMP, TCP, and UDP protocols), and IPv6 statistics (for the IPv6, ICMPv6, TCP over IPv6, and UDP over IPv6 protocols). Used without parameters, netstat displays active TCP connections.
 * [Listing Windows Firewall Rules Using Microsoft PowerShell](http://carlwebster.com/listing-windows-firewall-rules-using-microsoft-powershell/)
@@ -405,11 +548,22 @@ System Network Configuration Discovery
 
 
 
--------------------------------
+
 ## System Network Connections Discovery
-System Network Connections Discovery
+-------------------------------
 * [System Network Connections Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1049)
 	* Adversaries may attempt to get a listing of network connections to or from the compromised system they are currently accessing or from remote systems by querying for information over the network. 
+
+#### Linux
+* MITRE
+	* In Mac and Linux, `netstat` and `lsof` can be used to list current connections. `who -a` and `w` can be used to show which users are currently logged in, similar to "net session".
+#### OS X
+* `lsof -i`
+* [How to find the currently connected network service from the command line? - StackOverflow](https://apple.stackexchange.com/questions/191879/how-to-find-the-currently-connected-network-service-from-the-command-line)
+
+#### Windows
+* MITRE
+	* Utilities and commands that acquire this information include netstat, "net use," and "net session" with Net. 
 * [Netstat - technet](https://technet.microsoft.com/en-us/library/bb490947.aspx)
 	* Displays active TCP connections, ports on which the computer is listening, Ethernet statistics, the IP routing table, IPv4 statistics (for the IP, ICMP, TCP, and UDP protocols), and IPv6 statistics (for the IPv6, ICMPv6, TCP over IPv6, and UDP over IPv6 protocols). Used without parameters, netstat displays active TCP connections.
 * [netstat - Wikipedia](https://en.wikipedia.org/wiki/Netstat)
@@ -420,10 +574,22 @@ System Network Connections Discovery
 
 
 
--------------------------------
+
 ## System Owner/User Discovery
-Systems Owner/User Discovery 
+-------------------------------
 * [System Owner/User Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1033)
+	* Adversaries may attempt to identify the primary user, currently logged in user, set of users that commonly uses a system, or whether a user is actively using the system. They may do this, for example, by retrieving account usernames or by using Credential Dumping. The information may be collected in a number of different ways using other Discovery techniques, because user and username details are prevalent throughout a system and include running process ownership, file/directory ownership, session information, and system logs. 
+
+##### Linux
+* MITRE
+	* On Linux, the currently logged in user can be identified with w and who.
+
+#### OS X
+* MITRE
+	* On Mac, the currently logged in user can be identified with ***users***,***w***, and ****who****. 
+
+##### Windows
+* MITRE
 	* Adversaries may attempt to identify the primary user, currently logged in user, set of users that commonly uses a system, or whether a user is actively using the system. They may do this, for example, by retrieving account usernames or by using Credential Dumping. The information may be collected in a number of different ways using other Discovery techniques, because user and username details are prevalent throughout a system and include running process ownership, file/directory ownership, session information, and system logs. 
 * [List All User Accounts on a Windows System via Command Line](https://superuser.com/questions/608931/list-all-user-accounts-on-a-windows-system-via-command-line)
 * [WINDOWS ENUMERATION: USERINFO AND USERDUMP - old](http://www.carnal0wnage.com/papers/userinfouserdump.pdf)
@@ -431,11 +597,18 @@ Systems Owner/User Discovery
 
 
 
--------------------------------
+
 ## System Service Discovery
-System Service Discovery
+-------------------------------
 * [System Service Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1007)
 	* Adversaries may try to get information about registered services. Commands that may obtain information about services using operating system utilities are "sc," "tasklist /svc" using Tasklist, and "net start" using Net, but adversaries may also use other tools as well. 
+
+#### Linux
+* [Red Hat / CentOS: Check / List Running Services](https://www.cyberciti.biz/faq/check-running-services-in-rhel-redhat-fedora-centoslinux/)
+* Ubuntu/Debian-based - `services --status-all`
+
+#### OS X
+#### Windows
 * [Net Commands On Windows Operating Systems - support ms](https://support.microsoft.com/en-us/help/556003)
 * [NET.exe - ss64](https://ss64.com/nt/net-service.html)
 * [SC - technet](https://technet.microsoft.com/en-us/library/bb490995.aspx)
@@ -445,11 +618,17 @@ System Service Discovery
 
 
 
--------------------------------
 ## System Time Discovery
-System Time Discovery
+------------------------------
 * [System Time Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1124)
-	* The system time is set and stored by the Windows Time Service within a domain to maintain time synchronization between systems and services in an enterprise network. An adversary may gather the system time and/or time zone from a local or remote system. This information may be gathered in a number of ways, such as with Net on Windows by performing net time \\hostname to gather the system time on a remote system. The victim's time zone may also be inferred from the current system time or gathered by using w32tm /tz. The information could be useful for performing other techniques, such as executing a file with a Scheduled Task, or to discover locality information based on time zone to assist in victim targeting. 
+	* The system time is set and stored by the Windows Time Service within a domain to maintain time synchronization between systems and services in an enterprise network.MSDN System TimeTechnet Windows Time Service An adversary may gather the system time and/or time zone from a local or remote system. This information may be gathered in a number of ways, such as with Net on Windows by performing `net time \\hostname` to gather the system time on a remote system. The victim's time zone may also be inferred from the current system time or gathered by using `w32tm /tz`. Time Service The information could be useful for performing other techniques, such as executing a file with a Scheduled TaskRSA EU12 They're Inside, or to discover locality information based on time zone to assist in victim targeting.
+
+#### Linux
+* `date` command
+
+#### OS X
+
+#### Windows
 * [W32tm - technet](https://technet.microsoft.com/en-us/library/bb491016.aspx)
 	* A tool used to diagnose problems occurring with Windows Time
 * [W32tm](https://technet.microsoft.com/en-us/library/ff799054(v=ws.11).aspx)

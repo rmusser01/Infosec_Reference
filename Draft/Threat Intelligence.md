@@ -1,4 +1,4 @@
-#Threat Intelligence(or lack therof…)
+# Threat Intelligence(or lack therof…)
 
 [No Budget Threat Intelligence - Tracking Malware Campaigns on the Cheap - ShmooCon15](https://www.youtube.com/watch?v=DKfWukYffsE&app=desktop)
 * "In this talk, I'll be discussing my experience developing intelligence-gathering capabilities to track several different independent groups of threat actors on a very limited budget (read: virtually no budget whatsoever). I'll discuss discovering the groups using open source intelligence gathering and honeypots, monitoring attacks, collecting and analyzing malware artifacts to figure out what their capabilities are, and reverse engineering their malware to dehttp://faydoc.tripod.com/cpu/index_a.htmvelop the capability to track their targets in real time. Finally, I'll chat about defensive strategies and provide recommendations for enterprise security analysts and other security researchers. I'll also be releasing a suite of tools I created to help threat researchers perform tracking and attribution.

@@ -1,6 +1,6 @@
-##Embedded Device Security
+## Embedded Device Security
 
-https://en.wikipedia.org/wiki/Embedded_system
+
 
 ##### ToC
 * [General](#general)
@@ -43,6 +43,8 @@ http://greatscottgadgets.com/infiltrate2013/
 
 [SPI](https://trmm.net/SPI_flash)
 
+https://en.wikipedia.org/wiki/Embedded_system
+
 [umap](https://github.com/nccgroup/umap) 
 * The USB host security assessment tool
 
@@ -69,6 +71,7 @@ Hacking the Dropcam series
 [Reverse Engineering: Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 * [Outsmarting smartcards](http://gerhard.dekoninggans.nl/documents/publications/dekoninggans.phd.thesis.pdf)
 * [MagSpoof - credit card/magstripe spoofer](https://github.com/samyk/magspoof)
+
 #### end sort
 
 

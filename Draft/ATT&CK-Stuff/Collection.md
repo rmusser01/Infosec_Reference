@@ -1,13 +1,18 @@
-# Windows Collection
+# Collection
 
 
 
-
+* [MITRE ATT&CK - Collection](https://attack.mitre.org/wiki/Collection)
+	* Collection consists of techniques used to identify and gather information, such as sensitive files, from a target network prior to exfiltration. This category also covers locations on a system or network where the adversary may look for information to exfiltrate. 
 
 
 
 ## Audio Capture
 -------------------------------
+* [Audio Capture - ATT&CK](https://attack.mitre.org/wiki/Technique/T1123)
+	* An adversary can leverage a computer's peripheral devices (e.g., microphones and webcams) or applications (e.g., voice and video call services) to capture audio recordings for the purpose of listening into sensitive conversations to gather information. 
+	* Malware or scripts may be used to interact with the devices through an available API provided by the operating system or an application to capture audio. Audio files may be written to disk and exfiltrated later. 
+
 #### Windows
 * [Audio Capture - ATT&CK](https://attack.mitre.org/wiki/Technique/T1123)
 	* An adversary can leverage a computer's peripheral devices (e.g., microphones and webcams) or applications (e.g., voice and video call services) to capture audio recordings for the purpose of listening into sensitive conversations to gather information. 
@@ -20,9 +25,18 @@
 
 ## Automated Collection
 -------------------------------
-#### Windows
 * [Automated Collection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1119)
-	* Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of Scripting to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. This functionality could also be built into remote access tools. 
+	* Once established within a system or network, an adversary may use automated techniques for collecting internal data. Methods for performing this technique could include use of Scripting to search for and copy information fitting set criteria such as file type, location, or name at specific time intervals. This functionality could also be built into remote access tools. This technique may incorporate use of other techniques such as File and Directory Discovery and Remote File Copy to identify and move files.
+
+#### Linux
+* [LaZagne](https://github.com/AlessandroZ/LaZagne/blob/master/README.md)
+	* The LaZagne project is an open source application used to retrieve lots of passwords stored on a local computer. Each software stores its passwords using different techniques (plaintext, APIs, custom algorithms, databases, etc.). This tool has been developed for the purpose of finding these passwords for the most commonly-used software.
+
+#### Mac
+* [Lazagne](https://github.com/AlessandroZ/LaZagne)
+	* The LaZagne project is an open source application used to retrieve lots of passwords stored on a local computer. Each software stores its passwords using different techniques (plaintext, APIs, custom algorithms, databases, etc.). This tool has been developed for the purpose of finding these passwords for the most commonly-used software.
+
+#### Windows
 * [LaZagne](https://github.com/AlessandroZ/LaZagne/blob/master/README.md)
 	* The LaZagne project is an open source application used to retrieve lots of passwords stored on a local computer. Each software stores its passwords using different techniques (plaintext, APIs, custom algorithms, databases, etc.). This tool has been developed for the purpose of finding these passwords for the most commonly-used software.
 * [BrowserGatherer](https://github.com/sekirkity/BrowserGather)
@@ -34,24 +48,15 @@
 * [KeeThief](https://github.com/HarmJ0y/KeeThief)
 	* Methods for attacking KeePass 2.X databases, including extracting of encryption key material from memory.
 
-#### Linux
-* [LaZagne](https://github.com/AlessandroZ/LaZagne/blob/master/README.md)
-	* The LaZagne project is an open source application used to retrieve lots of passwords stored on a local computer. Each software stores its passwords using different techniques (plaintext, APIs, custom algorithms, databases, etc.). This tool has been developed for the purpose of finding these passwords for the most commonly-used software.
-
-#### Mac
-* [Lazagne](https://github.com/AlessandroZ/LaZagne)
-	* The LaZagne project is an open source application used to retrieve lots of passwords stored on a local computer. Each software stores its passwords using different techniques (plaintext, APIs, custom algorithms, databases, etc.). This tool has been developed for the purpose of finding these passwords for the most commonly-used software.
-
-
-
 
 
 
 ## Clipboard Data
 -------------------------------
-#### Windows
 * [Clipboard Data - ATT&CK](https://attack.mitre.org/wiki/Technique/T1115)
 	* Adversaries may collect data stored in the Windows clipboard from users copying information within or between applications. 
+
+#### Windows
 * [About the Clipboard - msdn](https://msdn.microsoft.com/en-us/library/ms649012)
 * [Collection - Empire](http://www.powershellempire.com/?page_id=283)
 * [clipboard.rb - metasploit](https://github.com/rapid7/metasploit-framework/blob/master/lib/rex/post/meterpreter/ui/console/command_dispatcher/extapi/clipboard.rb)
@@ -69,9 +74,8 @@
 
 ## Data Staged 
 -------------------------------
-Windows
 * [Data Staged - ATT&CK](https://attack.mitre.org/wiki/Technique/T1074)
-	* Collected data is staged in a central location or directory prior to Exfiltration. Data may be kept in separate files or combined into one file through techniques such as Data Compressed or Data Encrypted. 
+	* Collected data is staged in a central location or directory prior to Exfiltration. Data may be kept in separate files or combined into one file through techniques such as Data Compressed or Data Encrypted. Interactive command shells may be used, and common functionality within cmd and bash may be used to copy data into a staging location.
 
 
 
@@ -79,8 +83,10 @@ Windows
 
 ## Data from Local System
 -------------------------------
-#### Windows
 * [Data from Local System - ATT&CK](https://attack.mitre.org/wiki/Technique/T1005)
+	* Sensitive data can be collected from local system sources, such as the file system or databases of information residing on the system prior to Exfiltration. Adversaries will often search the file system on computers they have compromised to find files of interest. They may do this using a Command-Line Interface, such as cmd, which has functionality to interact with the file system to gather information. Some adversaries may also use Automated Collection on the local system.
+
+#### Windows
 * [SearchForCC](https://github.com/eelsivart/SearchForCC)
 	* A collection of open source/common tools/scripts to perform a system memory dump and/or process memory dump on Windows-based PoS systems and search for unencrypted credit card track data.
 
@@ -110,9 +116,11 @@ Windows
 
 ## Data from Network Shared Drive
 -------------------------------
-#### Windows
 * [Data from Network Shared Drive - ATT&CK](https://attack.mitre.org/wiki/Technique/T1039)
-	* Sensitive data can be collected from remote systems via shared network drives (host shared directory, network file server, etc.) that are accessible from the current system prior to Exfiltration. 
+	* Sensitive data can be collected from remote systems via shared network drives (host shared directory, network file server, etc.) that are accessible from the current system prior to Exfiltration. Adversaries may search network shares on computers they have compromised to find files of interest. Interactive command shells may be in use, and common functionality within cmd may be used to gather information.
+
+#### Windows
+
 
 
 
@@ -120,8 +128,10 @@ Windows
 
 ## Data from Removable Media
 -------------------------------
-#### Windows
 * [Data from Removable Media - ATT&CK](https://attack.mitre.org/wiki/Technique/T1025)
+	* Sensitive data can be collected from any removable media (optical disk drive, USB memory, etc.) connected to the compromised system prior to Exfiltration. Adversaries may search connected removable media on computers they have compromised to find files of interest. Interactive command shells may be in use, and common functionality within cmd may be used to gather information. Some adversaries may also use Automated Collection on removable media.
+
+#### Windows
 
 
 
@@ -130,9 +140,13 @@ Windows
 
 ## Email Collection
 -------------------------------
-#### Windows
 * [Email Collection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1114)
-	* Adversaries may target user email to collect sensitive information from a target.  Files containing email data can be acquired from a user's system, such as Outlook storage or cache files .pst and .ost.
+	* Adversaries may target user email to collect sensitive information from a target. 
+	* Files containing email data can be acquired from a user's system, such as Outlook storage or cache files .pst and .ost. 
+	* Adversaries may leverage a user's credentials and interact directly with the Exchange server to acquire information from within a network. 
+	* Some adversaries may acquire user credentials and access externally facing webmail applications, such as Outlook Web Access.
+
+#### Windows
 * [Pillaging .pst Files](https://warroom.securestate.com/pillaging-pst-files/)
 * [Pillage Exchange](https://warroom.securestate.com/pillage-exchange/)
 
@@ -142,9 +156,13 @@ Windows
 
 ## Input Capture
 -------------------------------
-#### Windows
 * [Input Capture - ATT&CK](https://attack.mitre.org/wiki/Technique/T1056)
-	* Adversaries can use methods of capturing user input for obtaining credentials for Valid Accounts and information Collection that include keylogging and user input field interception.
+	* Adversaries can use methods of capturing user input for obtaining credentials for Valid Accounts and information Collection that include keylogging and user input field interception. 
+	* Keylogging is the most prevalent type of input capture, with many different ways of intercepting keystrokes,Adventures of a Keystroke but other methods exist to target information for specific purposes, such as performing a UAC prompt or wrapping the Windows default credential provider.Wrightson 2012 
+	* Keylogging is likely to be used to acquire credentials for new access opportunities when Credential Dumping efforts are not effective, and may require an adversary to remain passive on a system for a period of time before an opportunity arises. 
+	*  Adversaries may also install code on externally facing portals, such as a VPN login page, to capture and transmit credentials of users who attempt to log into the service. This variation on input capture may be conducted post-compromise using legitimate administrative access as a backup measure to maintain network access through External Remote Services and Valid Accounts or as part of the initial compromise by exploitation of the externally facing web service.Volexity Virtual Private Keylogging
+
+#### Windows
 * [Windows Interactive Logon Architecture - technet](https://technet.microsoft.com/en-us/library/ff404303(v=ws.10))
 * [The Adventures of a KeyStroke: An in-depth look into Keyloggers on Windows](http://opensecuritytraining.info/Keylogging_files/The%20Adventures%20of%20a%20Keystroke.pdf)
 * [Capturing Windows 7 Credentials at Logon Using Custom Credential Provider](https://blog.leetsys.com/2012/01/02/capturing-windows-7-credentials-at-logon-using-custom-credential-provider/)
@@ -165,20 +183,24 @@ Windows
 
 ## Screen Capture
 -------------------------------
-#### Windows
 * [Screen Capture - ATT&CK](https://attack.mitre.org/wiki/Technique/T1113)
 	* Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation. Screen capturing functionality may be included as a feature of a remote access tool used in post-compromise operations. 
+
+
+#### Windows
 * [Using Problem Steps Recorder (PSR) Remotely with Metasploit](https://cyberarms.wordpress.com/2016/02/13/using-problem-steps-recorder-psr-remotely-with-metasploit/)
 * [Collection - Empire](http://www.powershellempire.com/?page_id=283)
 * [Capturing Screenshots with PowerShell and .NET](https://www.pdq.com/blog/capturing-screenshots-with-powershell-and-net/)
 
 #### Linux
-* On Linux, there is the native command xwd.
+* MITRE
+	* On Linux, there is the native command `xwd`.
 * [xwd - Wikipedia](https://en.wikipedia.org/wiki/Xwd)
 * [xwd - dump an image of an X window - manpage](https://www.x.org/releases/X11R7.5/doc/man/man1/xwd.1.html)
 
-
 #### Mac
+* MITRE
+	* On OSX, the native `command screencapture` is used to capture screenshots. 
 * [OSX Backdoor – Camera Control](http://patrickmosca.com/osx-backdoor-camera-control/)
 
 
@@ -186,9 +208,10 @@ Windows
 
 ## Video Capture
 -------------------------------
-#### Windows
 * [Video Capture - ATT&CK](https://attack.mitre.org/wiki/Technique/T1125)
-	* An adversary can leverage a computer's peripheral devices (e.g., integrated cameras or webcams) or applications (e.g., video call services) to capture video recordings for the purpose of gathering information. Images may also be captured from devices or applications, potentially in specified intervals, in lieu of video files. 
+	* An adversary can leverage a computer's peripheral devices (e.g., integrated cameras or webcams) or applications (e.g., video call services) to capture video recordings for the purpose of gathering information. Images may also be captured from devices or applications, potentially in specified intervals, in lieu of video files. Malware or scripts may be used to interact with the devices through an available API provided by the operating system or an application to capture video or images. Video or image files may be written to disk and exfiltrated later. This technique differs from Screen Capture due to use of specific devices or applications for video recording rather than capturing the victim's screen.
+	
+#### Windows
 * [Meterpreter basic commands](https://www.offensive-security.com/metasploit-unleashed/meterpreter-basics/)
 	* Note the webcam commands
 * [Collection - Empire](http://www.powershellempire.com/?page_id=283)

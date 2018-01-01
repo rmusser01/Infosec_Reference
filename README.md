@@ -33,7 +33,6 @@ An Information Security Reference That Doesn't Suck
 ------------------------------
 
 #### ATT&CK(Def3nse?) Stuff
-Windows
 * [Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Collection.md)
 * [Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Command_and_Control.md)
 * [Credential Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Credential_Access.md)

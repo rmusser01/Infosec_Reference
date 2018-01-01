@@ -506,6 +506,7 @@ Tactics
 	* [Mainframed: The Secrets Inside that Black Box [Shmoocon 2013] - Philip Young](https://www.youtube.com/watch?v=KIavTQeQqSw)
 	* [Mainframed - The Forgotten Fortress - Philip Young - BSidesLV2012](https://www.youtube.com/watch?v=tjYlXW2Dldc)
 	* [we hacked the gibson now what - Philip Young - BSidesLV2014](https://www.youtube.com/watch?v=n_sXG0Ff2oM)
+	* [Mainframes - Mopeds and Mischief; A PenTesters Year in Review](http://www.irongeek.com/i.php?page=videos/derbycon4/t203-mainframes-mopeds-and-mischief-a-pentesters-year-in-review-tyler-wrightson)
 * **Tools**
 	* [Privilege escalation on z/OS](https://github.com/ayoul3/Privesc)
 		* Privilege escalation tools on Mainframe
@@ -518,8 +519,13 @@ Tactics
 		* Various tools in REXX
 	* [NJElib](https://github.com/zedsec390/NJElib)
 		* z/OS (mainframe) Network Job Entry (NJE) python library and example scripts.
-
+	* [Privilege escalation on z/OSINT - ayoul3 github](https://github.com/ayoul3/Privesc)
+		* Some scripts to quickly escalate on z/OS given certain misconfigurations.
+	* [REX_Scripts](https://github.com/ayoul3/Rexx_scripts)
+		* A collection of interesting REXX scripts to ease the life a mainframe pentester
 * **Writeups**
+
+
 
 
 

@@ -1,8 +1,9 @@
-##Network Security Monitoring
+# Logging/Network Security Monitoring
 
 
 
-Cull
+## Table of Contents
+
 * [Presentations/Videos](#videos)
 * [Writeups](#writeups)
 * [Tools](#tools)
@@ -48,17 +49,13 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 
 
 ### <a name="videos">Presentations/Videos</a>
-[Logging ALL THE THINGS Without All The Cost With Open Source Big Data Tools - DEFCON22 - Zach Fasel](https://www.youtube.com/watch?v=2AAnVeIwXBo)
-* Many struggle in their job with the decision of what events to log in battle against costly increases to their licensing of a commercial SIEM or other logging solution. Leveraging the open source solutions used for "big-data" that have been proven by many can help build a scalable, reliable, and hackable event logging and security intelligence system to address security and (*cringe*) compliance requirements. We’ll walk through the various components and simple steps to building your own logging environment that can extensively grow (or keep sized just right) with just additional hardware cost and show numerous examples you can implement as soon as you get back to work (or home).
-
-[Current State of Virtualizing Network Monitoring](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t202-current-state-of-virtualizing-network-monitoring-daniel-lohin-ed-sealing)
-
-[The fox is in the Henhouse - Detecting a breach before the damage is done](http://www.irongeek.com/i.php?page=videos/houseccon2015/t302-the-fox-is-in-the-henhouse-detecting-a-breach-before-the-damage-is-done-josh-sokol)
-
-[Passive IPS Reconnaissance and Enumeration - false positive (ab)use - Arron Finnon](https://vimeo.com/108775823)
-* Network Intrusion Prevention Systems or NIPS have been plagued by "False Positive" issues almost since their first deployment. A "False Positive" could simply be described as incorrectly or mistakenly detecting a threat that is not real. A large amount of research has gone into using "False Positive" as an attack vector either to attack the very validity of an IPS system or to conduct forms of Denial of Service attacks. However the very reaction to a "False Positive" in the first place may very well reveal more detailed information about defences than you might well think.
-
-[Public:Windows Event Log Zero 2 Hero Slides](https://docs.google.com/presentation/d/1dkrldTTlN3La-OjWtkWJBb4hVk6vfsSMBFBERs6R8zA/edit#slide=id.g21acf94f3f_2_27)
+* [Logging ALL THE THINGS Without All The Cost With Open Source Big Data Tools - DEFCON22 - Zach Fasel](https://www.youtube.com/watch?v=2AAnVeIwXBo)
+	* Many struggle in their job with the decision of what events to log in battle against costly increases to their licensing of a commercial SIEM or other logging solution. Leveraging the open source solutions used for "big-data" that have been proven by many can help build a scalable, reliable, and hackable event logging and security intelligence system to address security and (*cringe*) compliance requirements. We’ll walk through the various components and simple steps to building your own logging environment that can extensively grow (or keep sized just right) with just additional hardware cost and show numerous examples you can implement as soon as you get back to work (or home).
+* [[Current State of Virtualizing Network Monitoring](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t202-current-state-of-virtualizing-network-monitoring-daniel-lohin-ed-sealing)
+* [[The fox is in the Henhouse - Detecting a breach before the damage is done](http://www.irongeek.com/i.php?page=videos/houseccon2015/t302-the-fox-is-in-the-henhouse-detecting-a-breach-before-the-damage-is-done-josh-sokol)
+* [[Passive IPS Reconnaissance and Enumeration - false positive (ab)use - Arron Finnon](https://vimeo.com/108775823)
+	* Network Intrusion Prevention Systems or NIPS have been plagued by "False Positive" issues almost since their first deployment. A "False Positive" could simply be described as incorrectly or mistakenly detecting a threat that is not real. A large amount of research has gone into using "False Positive" as an attack vector either to attack the very validity of an IPS system or to conduct forms of Denial of Service attacks. However the very reaction to a "False Positive" in the first place may very well reveal more detailed information about defences than you might well think.
+* [[Public:Windows Event Log Zero 2 Hero Slides](https://docs.google.com/presentation/d/1dkrldTTlN3La-OjWtkWJBb4hVk6vfsSMBFBERs6R8zA/edit#slide=id.g21acf94f3f_2_27)
 
 
 
@@ -68,15 +65,11 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 
 
 ### <a name="writeups"></a>Writeups
-
-[Many ways of malware persistence (that you were always afraid to ask) ](http://jumpespjump.blogspot.com/2015/05/many-ways-of-malware-persistence-that.html)
-
-[Shellcode Analysis Pipeline](https://7h3ram.github.io/2014/3/18/shellcode-pipeline/)
-* I recently required an automated way of analyzing shellcode and verifying if it is detected by Libemu, Snort, Suricata, Bro, etc. Shellcode had to come from public sources like Shell-Storm, Exploit-DB and Metasploit. I needed an automated way of sourcing shellcode from these projects and pass it on to the analysis engines in a pipeline-like mechanism. This posts documents the method I used to complete this task and the overall progress of the project.
-
-[Building a Home Network Configured to Collect Artifacts for Supporting Network Forensic Incident Response](https://www.sans.org/reading-room/whitepapers/forensics/building-home-network-configured-collect-artifacts-supporting-network-forensic-incident-response-37302)
-
-[Automating large-scale memory forensics](https://medium.com/@henrikjohansen/automating-large-scale-memory-forensics-fdc302dc3383)
+* [[Many ways of malware persistence (that you were always afraid to ask) ](http://jumpespjump.blogspot.com/2015/05/many-ways-of-malware-persistence-that.html)
+* [[Shellcode Analysis Pipeline](https://7h3ram.github.io/2014/3/18/shellcode-pipeline/)
+	* I recently required an automated way of analyzing shellcode and verifying if it is detected by Libemu, Snort, Suricata, Bro, etc. Shellcode had to come from public sources like Shell-Storm, Exploit-DB and Metasploit. I needed an automated way of sourcing shellcode from these projects and pass it on to the analysis engines in a pipeline-like mechanism. This posts documents the method I used to complete this task and the overall progress of the project.
+* [[Building a Home Network Configured to Collect Artifacts for Supporting Network Forensic Incident Response](https://www.sans.org/reading-room/whitepapers/forensics/building-home-network-configured-collect-artifacts-supporting-network-forensic-incident-response-37302)
+* [[Automating large-scale memory forensics](https://medium.com/@henrikjohansen/automating-large-scale-memory-forensics-fdc302dc3383)
 
 
 
@@ -84,39 +77,27 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 
 
 ### <a name="tools">Tools</a>
-[Security Onion](http://blog.securityonion.net/p/securityonion.html)
-* Security Onion is a Linux distro for intrusion detection, network security monitoring, and log management. It's based on Ubuntu and contains Snort, Suricata, Bro, OSSEC, Sguil, Squert, Snorby, ELSA, Xplico, NetworkMiner, and many other security tools. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
-
-[Pip3line, the Swiss army knife of byte manipulation](https://nccgroup.github.io/pip3line/index.html) 
-* Pip3line is a raw bytes manipulation utility, able to apply well known and less well known transformations from anywhere to anywhere (almost).
-
-[RITA - Real Intelligence Threat Analytics](https://github.com/ocmdev/rita)
-* RITA is an open source network traffic analysis framework.
-
-[Malcom - Malware Communication Analyzer](https://github.com/tomchop/malcom)
-* Malcom is a tool designed to analyze a system's network communication using graphical representations of network traffic, and cross-reference them with known malware sources. This comes handy when analyzing how certain malware species try to communicate with the outside world.
-
-[Captipper](http://www.omriher.com/2015/01/captipper-malicious-http-traffic.html)
-* CapTipper is a python tool to analyze, explore and revive HTTP malicious traffic. 
-CapTipper sets up a web server that acts exactly as the server in the PCAP file, 
-and contains internal tools, with a powerful interactive console, for analysis and inspection of the hosts, objects and conversations found.  
-
-[CapLoader](http://www.netresec.com/?page=CapLoader) 
-*  CapLoader is a Windows tool designed to handle large amounts of captured network traffic. CapLoader performs indexing of PCAP/PcapNG files and visualizes their contents as a list of TCP and UDP flows. Users can select the flows of interest and quickly filter out those packets from the loaded PCAP files. Sending the selected flows/packets to a packet analyzer tool like Wireshark or NetworkMiner is then just a mouse click away. 
-
-[dnstwist](https://github.com/elceef/dnstwist)
-* Domain name permutation engine for detecting typo squatting, phishing and corporate espionage
-
-[PowerShellMethodAuditor](https://github.com/zacbrown/PowerShellMethodAuditor)
-
-[WMI-IDS](https://github.com/fireeye/flare-wmi/tree/master/WMI-IDS)
-* WMI-IDS is a proof-of-concept agent-less host intrusion detection system designed to showcase the unique ability of WMI to respond to and react to operating system events in real-time.
-
-[Stenographer](https://github.com/google/stenographer/blob/master/README.md)
-* Stenographer is a full-packet-capture utility for buffering packets to disk for intrusion detection and incident response purposes. It provides a high-performance implementation of NIC-to-disk packet writing, handles deleting those files as disk fills up, and provides methods for reading back specific sets of packets quickly and easily.
-
-[Netdude](http://netdude.sourceforge.net/)
-* The Network Dump data Displayer and Editor is a framework for inspection, analysis and manipulation of tcpdump trace files. It addresses the need for a toolset that allows easy inspection, modification, and creation of pcap/tcpdump trace files. Netdude builds on any popular UNIX-like OS, such as Linux, the BSDs, or OSX.
+* [[Security Onion](http://blog.securityonion.net/p/securityonion.html)
+	* Security Onion is a Linux distro for intrusion detection, network security monitoring, and log management. It's based on Ubuntu and contains Snort, Suricata, Bro, OSSEC, Sguil, Squert, Snorby, ELSA, Xplico, NetworkMiner, and many other security tools. The easy-to-use Setup wizard allows you to build an army of distributed sensors for your enterprise in minutes!
+* [[Pip3line, the Swiss army knife of byte manipulation](https://nccgroup.github.io/pip3line/index.html) 
+	* Pip3line is a raw bytes manipulation utility, able to apply well known and less well known transformations from anywhere to anywhere (almost).
+* [[RITA - Real Intelligence Threat Analytics](https://github.com/ocmdev/rita)
+	* RITA is an open source network traffic analysis framework.
+* [[Malcom - Malware Communication Analyzer](https://github.com/tomchop/malcom)
+	* Malcom is a tool designed to analyze a system's network communication using graphical representations of network traffic, and cross-reference them with known malware sources. This comes handy when analyzing how certain malware species try to communicate with the outside world.
+* [[Captipper](http://www.omriher.com/2015/01/captipper-malicious-http-traffic.html)
+	* CapTipper is a python tool to analyze, explore and revive HTTP malicious traffic. CapTipper sets up a web server that acts exactly as the server in the PCAP file, and contains internal tools, with a powerful interactive console, for analysis and inspection of the hosts, objects and conversations found.  
+* [[CapLoader](http://www.netresec.com/?page=CapLoader) 
+	* CapLoader is a Windows tool designed to handle large amounts of captured network traffic. CapLoader performs indexing of PCAP/PcapNG files and visualizes their contents as a list of TCP and UDP flows. Users can select the flows of interest and quickly filter out those packets from the loaded PCAP files. Sending the selected flows/packets to a packet analyzer tool like Wireshark or NetworkMiner is then just a mouse click away. 
+* [[dnstwist](https://github.com/elceef/dnstwist)
+	* Domain name permutation engine for detecting typo squatting, phishing and corporate espionage
+* [[PowerShellMethodAuditor](https://github.com/zacbrown/PowerShellMethodAuditor)
+* [[WMI-IDS](https://github.com/fireeye/flare-wmi/tree/master/WMI-IDS)
+	* WMI-IDS is a proof-of-concept agent-less host intrusion detection system designed to showcase the unique ability of WMI to respond to and react to operating system events in real-time.
+* [[Stenographer](https://github.com/google/stenographer/blob/master/README.md)
+	* Stenographer is a full-packet-capture utility for buffering packets to disk for intrusion detection and incident response purposes. It provides a high-performance implementation of NIC-to-disk packet writing, handles deleting those files as disk fills up, and provides methods for reading back specific sets of packets quickly and easily.
+* [[Netdude](http://netdude.sourceforge.net/)
+	* The Network Dump data Displayer and Editor is a framework for inspection, analysis and manipulation of tcpdump trace files. It addresses the need for a toolset that allows easy inspection, modification, and creation of pcap/tcpdump trace files. Netdude builds on any popular UNIX-like OS, such as Linux, the BSDs, or OSX.
 
 
 
@@ -145,15 +126,12 @@ and contains internal tools, with a powerful interactive console, for analysis a
 * [Bro QuickStart](https://www.bro.org/sphinx/quickstart/index.html)
 * [Writing Bro Scripts](https://www.bro.org/sphinx/scripting/index.html)
 * [Bro Script References](https://www.bro.org/sphinx/script-reference/index.html)
-
-[ bro-intel-generator](https://github.com/exp0se/bro-intel-generator)
-* Script for generating Bro intel files from pdf or html reports
-
-[bro-domain-generation](https://github.com/denji/bro-domain-generation)
-* Detect domain generation algorithms (DGA) with Bro. The module will regularly generate domains by any implemented algorithms and watch for those domains in DNS queries. This script only works with Bro 2.1+.
-
-[Exfil Framework](https://github.com/reservoirlabs/bro-scripts/tree/master/exfil-detection-framework)
-* The Exfil Framework is a suite of Bro scripts that detect file uploads in TCP connections. The Exfil Framework can detect file uploads in most TCP sessions including sessions that have encrypted payloads (SCP,SFTP,HTTPS).
+* [[ bro-intel-generator](https://github.com/exp0se/bro-intel-generator)
+	* Script for generating Bro intel files from pdf or html reports
+* [[bro-domain-generation](https://github.com/denji/bro-domain-generation)
+	* Detect domain generation algorithms (DGA) with Bro. The module will regularly generate domains by any implemented algorithms and watch for those domains in DNS queries. This script only works with Bro 2.1+.
+* [[Exfil Framework](https://github.com/reservoirlabs/bro-scripts/tree/master/exfil-detection-framework)
+	* The Exfil Framework is a suite of Bro scripts that detect file uploads in TCP connections. The Exfil Framework can detect file uploads in most TCP sessions including sessions that have encrypted payloads (SCP,SFTP,HTTPS).
 
 
 
@@ -171,8 +149,8 @@ and contains internal tools, with a powerful interactive console, for analysis a
 * [Argus How-To](http://qosient.com/argus/howto.shtml)
 * [Argus Manual](http://qosient.com/argus/manuals.shtml)
 
-[bmon - bandwidth monitor and rate estimator](https://github.com/tgraf/bmon)
-* bmon is a monitoring and debugging tool to capture networking related statistics and prepare them visually in a human friendly way. It features various output methods including an interactive curses user interface and a programmable text output for scripting.
+* [bmon - bandwidth monitor and rate estimator](https://github.com/tgraf/bmon)
+	* bmon is a monitoring and debugging tool to capture networking related statistics and prepare them visually in a human friendly way. It features various output methods including an interactive curses user interface and a programmable text output for scripting.
 
 
 
@@ -180,20 +158,13 @@ and contains internal tools, with a powerful interactive console, for analysis a
 
 
 ### DNS
-
-[DNSChef](https://thesprawl.org/projects/dnschef/)
-* DNSChef is a highly configurable DNS proxy for Penetration Testers and Malware Analysts. A DNS proxy (aka "Fake DNS") is a tool used for application network traffic analysis among other uses. For example, a DNS proxy can be used to fake requests for "badguy.com" to point to a local machine for termination or interception instead of a real host somewhere on the Internet.
-
-[Passive DNS](https://github.com/gamelinux/passivedns) 
-* A tool to collect DNS records passively to aid Incident handling, Network Security Monitoring (NSM) and general digital forensics.  * PassiveDNS sniffs traffic from an interface or reads a pcap-file and outputs the DNS-server answers to a log file. PassiveDNS can cache/aggregate duplicate DNS answers in-memory, limiting the amount of data in the logfile without losing the essense in the DNS answer.
-
-[Passive DNS](https://github.com/gamelinux/passivedns)
-* A tool to collect DNS records passively to aid Incident handling, Network
-Security Monitoring (NSM) and general digital forensics.
-* PassiveDNS sniffs traffic from an interface or reads a pcap-file and outputs
-the DNS-server answers to a log file. PassiveDNS can cache/aggregate duplicate
-DNS answers in-memory, limiting the amount of data in the logfile without
-losing the essense in the DNS answer.
+* [DNSChef](https://thesprawl.org/projects/dnschef/)
+	* DNSChef is a highly configurable DNS proxy for Penetration Testers and Malware Analysts. A DNS proxy (aka "Fake DNS") is a tool used for application network traffic analysis among other uses. For example, a DNS proxy can be used to fake requests for "badguy.com" to point to a local machine for termination or interception instead of a real host somewhere on the Internet.
+* [Passive DNS](https://github.com/gamelinux/passivedns) 
+	* A tool to collect DNS records passively to aid Incident handling, Network Security Monitoring (NSM) and general digital forensics.  * PassiveDNS sniffs traffic from an interface or reads a pcap-file and outputs the DNS-server answers to a log file. PassiveDNS can cache/aggregate duplicate DNS answers in-memory, limiting the amount of data in the logfile without losing the essense in the DNS answer.
+* [Passive DNS](https://github.com/gamelinux/passivedns)
+	* A tool to collect DNS records passively to aid Incident handling, Network Security Monitoring (NSM) and general digital forensics.
+	* PassiveDNS sniffs traffic from an interface or reads a pcap-file and outputs the DNS-server answers to a log file. PassiveDNS can cache/aggregate duplicate DNS answers in-memory, limiting the amount of data in the logfile without losing the essense in the DNS answer.
 
 
 
@@ -203,33 +174,24 @@ losing the essense in the DNS answer.
 
 
 ### <a name="monitor">IDS/IPS Monitoring Tools</a>
-
-[Snorby](https://www.snorby.org/)
-[Snorby - Github](https://github.com/snorby/snorby)
-* Snorby is a ruby on rails web application for network security monitoring that interfaces with current popular intrusion detection systems (Snort, Suricata and Sagan). The basic fundamental concepts behind Snorby are simplicity, organization and power. The project goal is to create a free, open source and highly competitive application for network monitoring for both private and enterprise use.
-
-
-[Squil](https://bammv.github.io/sguil/index.html)
-* Sguil (pronounced sgweel) is built by network security analysts for network security analysts. Sguil's main component is an intuitive GUI that provides access to realtime events, session data, and raw packet captures. Sguil facilitates the practice of Network Security Monitoring and event driven analysis. The Sguil client is written in tcl/tk and can be run on any operating system that supports tcl/tk (including Linux, *BSD, Solaris, MacOS, and Win32). 
-* [Squil FAQ](http://nsmwiki.org/Sguil_FAQ)
-
-[Squert](
-* Squert is a web application that is used to query and view event data stored in a Sguil database (typically IDS alert data). Squert is a visual tool that attempts to provide additional context to events through the use of metadata, time series representations and weighted and logically grouped result sets. The hope is that these views will prompt questions that otherwise may not have been asked. 
-* [Slide Deck on Squert](https://ea01c580-a-62cb3a1a-s-sites.googlegroups.com/site/interrupt0x13h/squert-canheit2014.pdf?attachauth=ANoY7crNJbed8EeVy3r879eb2Uze_ky7eiO-jvwXp2J7ik_hOyk0kK6uhX3_oT3u4Kuzw7AiuTAQhYGze5jdlQ-w8lagM1--XESGAf0ebLBZU6bGYd7mIC9ax1H49jvQHGb8kojEal8bayL0evZpOFqsr135DpazJ6F5HkVACpHyCqh3Gzafuxxog_Ybp7k4IgqltqH0pZddcIcjI0LwhHaj3Al085C3tbw2YMck1JQSeeBYvF9hL-0%3D&attredirects=0)
+* [Snorby](https://www.snorby.org/)
+* [Snorby - Github](https://github.com/snorby/snorby)
+	* Snorby is a ruby on rails web application for network security monitoring that interfaces with current popular intrusion detection systems (Snort, Suricata and Sagan). The basic fundamental concepts behind Snorby are simplicity, organization and power. The project goal is to create a free, open source and highly competitive application for network monitoring for both private and enterprise use.
+* [Squil](https://bammv.github.io/sguil/index.html)
+	* Sguil (pronounced sgweel) is built by network security analysts for network security analysts. Sguil's main component is an intuitive GUI that provides access to realtime events, session data, and raw packet captures. Sguil facilitates the practice of Network Security Monitoring and event driven analysis. The Sguil client is written in tcl/tk and can be run on any operating system that supports tcl/tk (including Linux, * BSD, Solaris, MacOS, and Win32). 
+	* [Squil FAQ](http://nsmwiki.org/Sguil_FAQ)
+* [Squert](
+	* Squert is a web application that is used to query and view event data stored in a Sguil database (typically IDS alert data). Squert is a visual tool that attempts to provide additional context to events through the use of metadata, time series representations and weighted and logically grouped result sets. The hope is that these views will prompt questions that otherwise may not have been asked. 
+	* [Slide Deck on Squert](https://ea01c580-a-62cb3a1a-s-sites.googlegroups.com/site/interrupt0x13h/squert-canheit2014.pdf?attachauth=ANoY7crNJbed8EeVy3r879eb2Uze_ky7eiO-jvwXp2J7ik_hOyk0kK6uhX3_oT3u4Kuzw7AiuTAQhYGze5jdlQ-w8lagM1--XESGAf0ebLBZU6bGYd7mIC9ax1H49jvQHGb8kojEal8bayL0evZpOFqsr135DpazJ6F5HkVACpHyCqh3Gzafuxxog_Ybp7k4IgqltqH0pZddcIcjI0LwhHaj3Al085C3tbw2YMck1JQSeeBYvF9hL-0%3D&attredirects=0)
 * [Install/setup/etc - Github](https://github.com/int13h/squert)
-
-[ROCK NSM](http://rocknsm.io/)
-
-[Response Operation Collections Kit Reference Build](https://github.com/rocknsm/rock)
-
-[flowbat](http://www.appliednsm.com/introducing-flowbat/)
-* Awesome flow tool, SiLK backend
-
-[Stenographer](https://github.com/google/stenographer)
-* Stenographer is a full-packet-capture utility for buffering packets to disk for intrusion detection and incident response purposes. It provides a high-performance implementation of NIC-to-disk packet writing, handles deleting those files as disk fills up, and provides methods for reading back specific sets of packets quickly and easily.
-
-[Aktaion: Open Source Tool For "Micro Behavior Based" Exploit Detection and Automated GPO Policy Generation](https://github.com/jzadeh/Aktaion)
-* Aktaion is a lightweight JVM based project for detecting exploits (and more generally attack behaviors). The project is meant to be a learning/teaching tool on how to blend multiple security signals and behaviors into an expressive framework for intrusion detection. The cool thing about the project is it provides an expressive mechanism to add high level IOCs (micro beahviors) such as timing behavior of a certain malware family.
+* [ROCK NSM](http://rocknsm.io/)
+* [Response Operation Collections Kit Reference Build](https://github.com/rocknsm/rock)
+* [flowbat](http://www.appliednsm.com/introducing-flowbat/)
+	* Awesome flow tool, SiLK backend
+* [Stenographer](https://github.com/google/stenographer)
+	* Stenographer is a full-packet-capture utility for buffering packets to disk for intrusion detection and incident response purposes. It provides a high-performance implementation of NIC-to-disk packet writing, handles deleting those files as disk fills up, and provides methods for reading back specific sets of packets quickly and easily.
+* [Aktaion: Open Source Tool For "Micro Behavior Based" Exploit Detection and Automated GPO Policy Generation](https://github.com/jzadeh/Aktaion)
+	* Aktaion is a lightweight JVM based project for detecting exploits (and more generally attack behaviors). The project is meant to be a learning/teaching tool on how to blend multiple security signals and behaviors into an expressive framework for intrusion detection. The cool thing about the project is it provides an expressive mechanism to add high level IOCs (micro beahviors) such as timing behavior of a certain malware family.
 
 
 

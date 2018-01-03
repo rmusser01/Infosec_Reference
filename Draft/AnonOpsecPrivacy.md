@@ -12,9 +12,6 @@
 * [Tools](#Tools)
 * [Miscellaneous](#misc)
 * [Counter Surveillance](#counter)
-	* [General/Articles](#genc)
-	* [Talks/Videos](#csvids)
-	* [Papers](#cspapers)
 
 
 
@@ -225,7 +222,7 @@
 
 
 
-## Counter Surveillance
+## <a name="counter"></a>Counter Surveillance
 * Writeups
 	* Detecting Surveillance - Spiderlabs blog
 		* [1 Hardware Implants](http://blog.spiderlabs.com/2014/03/detecting-surveillance-state-surveillance-part-1-hardware-impants.html)

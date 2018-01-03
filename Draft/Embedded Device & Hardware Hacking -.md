@@ -1,8 +1,8 @@
-## Embedded Device Security
+# Embedded Device Security
 
 
 
-##### ToC
+## Table of Contents
 * [General](#general)
 * [General Hardware Hacking](#generalhw)
 * [General Hardware Articles/Writeups](#generalwriteups)

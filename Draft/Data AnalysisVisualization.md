@@ -2,12 +2,10 @@
 
 
 
-### ToC
+## Table of Contents
 * To be sorted
-* General
-* Writeups
 * Tools
-* Miscellaneous
+* Writeups
 
 
 
@@ -95,18 +93,9 @@ Applied Security Visualization: http://www.secviz.org/content/applied-security-v
 	* Norikra is a open source server software provides "Stream Processing" with SQL, written in JRuby, runs on JVM, licensed under GPLv2.
 * [Fluentd](https://www.fluentd.org/architecture)
 	* Fluentd is an open source data collector, which lets you unify the data collection and consumption for a better use and understanding of data.
-
-Modeling Network Data
-* [Flowsynth](https://github.com/secureworks/Flowsynth)
-	* Flowsynth is a tool for rapidly modelling network traffic. Flowsynth can be used to generate text-based hexdumps of packets as well as native libpcap format packet captures.
-
-
-
-
------
-### Blogposts
-
-
+* Modeling Network Data
+	* [Flowsynth](https://github.com/secureworks/Flowsynth)
+		* Flowsynth is a tool for rapidly modelling network traffic. Flowsynth can be used to generate text-based hexdumps of packets as well as native libpcap format packet captures.
 
 
 

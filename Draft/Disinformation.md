@@ -1,9 +1,9 @@
-## Disinformation
+# Disinformation
 
 
 -----
 ### <a name="talks">General
-**General**
+* **General**
 * [25 Rules of Disinformation](http://vigilantcitizen.com/latestnews/the-25-rules-of-disinformation/)
 * [8 Traits of the Disinformationalist](https://calloutjoe.wordpress.com/psyop/eight-traits-of-the-disinformationalist/)
 * [Governments and UFOs: A Historical Analysis of Disinformation and Deception - Richard Thieme](http://www.irongeek.com/i.php?page=videos/bsideslasvegas2013/1-2-7-governments-and-ufos-a-historical-analysis-of-disinformation-and-deception-richard-thieme)

@@ -1,11 +1,7 @@
-## Password Bruting and Hashcracking
+# Password Bruting and Hashcracking
 
-Sort
+## Table of Contents
 
-
-TOC
-
-Cull
 * [General](#general)
 * [Making Better Passwords](#better)
 * [Cracking Passwords/Hashes](#crack)
@@ -20,10 +16,11 @@ Cull
 
 
 
-### Sort
+#### Sort
 * [statistically-likely-usernames](https://github.com/insidetrust/statistically-likely-usernames)
 	* This resource contains wordlists for creating statistically likely usernames for use in username-enumeration, simulated password-attacks and other security testing tasks.
-### End cull
+
+#### End cull
 
 
 

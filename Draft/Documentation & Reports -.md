@@ -1,30 +1,23 @@
-## Documentation & Reporting
+# Documentation & Reporting
 
-#### For writing technical documentation.
+## Table of Contents
 
-
-##### TOC
 * [Writing](#writing)
 * [Reports](#reports)
 * [Collaboration Tools](#collab)
 * [Meta](#meta)
 * [Video Documentation](#video)
-
-
------
-### General/Disclosure
-* [NCSAM: Coordinated Vulnerability Disclosure Advice for Researchers](https://community.rapid7.com/community/infosec/blog/2016/10/28/ncsam-coordinated-vulnerability-disclosure-advice-for-researchers)
-* [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
+* [Disclosure](#disclosure)
 
 
 
 
-
-
+-----------------
+### Start
+* [How I read a research paper](https://muratbuffalo.blogspot.com/2013/07/how-i-read-research-paper.html?m=1
 
 -----
 ### <a name="writing">Writing</a>
-
 Start with the first two links, and go from there. They’re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
 * [A beginners guide to writing documentation](http://docs.writethedocs.org/writing/beginners-guide-to-docs/)
 * [Teach, Don’t Tell](http://stevelosh.com/blog/2013/09/teach-dont-tell/)
@@ -96,15 +89,13 @@ Other Materials:
 
 
 -----
-### <a name="video">Video Recording</a>
+### <a name="video">Video Recording/Recording</a>
 * [Open Broadcaster Software OBS](https://obsproject.com/)
 	* Open Broadcaster Software is free and open source software for video recording and live streaming.
 	* Cross Platform, Windows/OsX/Linux
-
------
-### <a name="reading">Reading Papers</a>
-* [How I read a research paper](https://muratbuffalo.blogspot.com/2013/07/how-i-read-research-paper.html?m=1)
-
+* [Cryptoshot](https://github.com/DiabloHorn/cryptoshot) 
+	* This application will make a screenshot of the desktop. If the desktop consists of multiple monitors, it should still work fine. However it has only been tested with a dual monitor setup. The windows project has the added functionality of sending the screenshot to a server of your choosing.
+* [Record terminal sessions and have the ability to replay it](http://linux.byexamples.com/archives/279/record-the-terminal-session-and-replay-later/)
 
 ------
 ### De/Briefing
@@ -114,3 +105,20 @@ Other Materials:
 	* [Debriefing: A Simple Tool to Help Your Team Tackle Tough Problems](https://hbr.org/2015/07/debriefing-a-simple-tool-to-help-your-team-tackle-tough-problems)
 	* [Sample Debriefing Statement - Albion College](https://www.albion.edu/academics/student-research/institutional-review-board/submitting-a-proposal/sample-debriefing-statement)
 	* [A Project Post Mortem Template](http://brolik.com/blog/project-post-mortem-template/)
+
+
+----
+### <a name="disclosure"></a>Disclosure
+* [NCSAM: Coordinated Vulnerability Disclosure Advice for Researchers](https://community.rapid7.com/community/infosec/blog/2016/10/28/ncsam-coordinated-vulnerability-disclosure-advice-for-researchers)
+* [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
+* [Responsible Disclosure is Wrong](https://adamcaudill.com/2015/11/19/responsible-disclosure-is-wrong/)
+* [Portcullis Computer Security Co-ordinated Disclosure Toolkit](https://github.com/portcullislabs/co-ordinated-disclosure-toolkit)
+* [How to Disclose or Sell an Exploit - DEF CON 21 - James Denaro](https://www.youtube.com/watch?v=N1Xj3f4felg)
+* [How to Disclose an Exploit Without Getting in Trouble DEF CON 22 - Jim Denaro and Tod Beardsley](https://www.youtube.com/watch?v=Y8Cpio6z9qA)
+* [Good comparison of various forms of disclosure](http://blog.opensecurityresearch.com/2014/06/approaches-to-vulnerability-disclosure.html)
+* [Clean writeup of Full-Disclosure release policy that is more similar to Coordinated Disclosure.](http://www.ilias.de/docu/goto_docu_wiki_1357_RFPolicy.html)
+* **CVE**
+* [Request a CVE ID](http://cve.mitre.org/cve/request_id.html#cna_coverage)
+* [My first CVE-2016-1000329 in BlogPHP](https://www.stevencampbell.info/2016/12/my-first-cve-2016-1000329-in-blogphp/)
+* **Dealing with the press/journalists:**
+	* [Hacking the media for fame/profit talk](http://www.irongeek.com/i.php?page=videos/derbycon4/Hacking-The-Media-For-Fame-And-Profit-Jenn-Ellis-Steven-Reganh)

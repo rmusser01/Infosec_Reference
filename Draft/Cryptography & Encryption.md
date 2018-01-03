@@ -1,6 +1,6 @@
-## Cryptography
+# Cryptography
 
-##### TOC
+## Table of Contents
 
 * [General Information](#general)
 * [Learning/Courses](#learn)

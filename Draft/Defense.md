@@ -1,11 +1,26 @@
+# Defense
 
+## In Progress
 
-# Defense:
-
-
-
-#### In Progress
-
+## Table of Contents
+* [Amazon S3](#s3)
+* [Application Whitelisting](#whitelist)
+* [AppSec](#appsec)
+* [Attack Surface Analysis/Reduction](#asa)
+* [Auditing Account Passwords/Privileges](#aapp)
+* [Auditing Processes](#ap)
+* [Baselining](#baseline)
+* [Hardening](#harden)
+* [Leaks](#leak)
+* [Linux/Unix](#linux)
+* [Malicious USB](#malusb)
+* [Network](#network)
+* [OS X](#osx)
+* [Ransomware](#ransom)
+* [Web](#web)
+* [WAF(#waf)
+* [Windows](#windows)
+* [Powershell](#powershell)
 
 ### Sort
 * [limacharlie](https://github.com/refractionpoint/limacharlie)
@@ -29,6 +44,13 @@
 
 [Secure SMB Connections](http://techgenix.com/secure-smb-connections/)
 * [Microsoft Security Advisory: Update to improve credentials protection and management: May 13, 2014](https://support.microsoft.com/en-us/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-a)
+* [Application Whitelisting Using Microsoft AppLocker](https://www.iad.gov/iad/library/ia-guidance/tech-briefs/application-whitelisting-using-microsoft-applocker.cfm)
+* [SANS Institute Security Consensus Operational Readiness Evaluation](https://www.sans.org/media/score/checklists/LinuxCheatsheet_2.pdf)
+* [Windows Commands Abused by Attackers](http://blog.jpcert.or.jp/2016/01/windows-commands-abused-by-attackers.html)
+* [Mitigate threats by using Windows 10 security features](https://docs.microsoft.com/en-us/windows/threat-protection/overview-of-threat-mitigations-in-windows-10)
+* [Pass the Hash Guidance](https://github.com/iadgov/Pass-the-Hash-Guidance)
+	*  Configuration guidance for implementing Pass-the-Hash mitigations. iadgov
+
 
 ### End Sort
 
@@ -36,11 +58,11 @@
 
 
 
-### Amazon S3
+### <a name="s3"></a>Amazon S3
 * [Amazon S3 Bucket Public Access Considerations](https://aws.amazon.com/articles/5050)
 
 
-### Application Whitelisting
+### <a name="whitelist"></a>Application Whitelisting
 * [Guide to Application Whitelisting - NIST Special Publication 800 - 167](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-167.pdf)
 * [Script Rules in AppLocker - technet](https://technet.microsoft.com/en-us/library/ee460958.aspx)
 * [DLL Rules in AppLocker](https://technet.microsoft.com/en-us/library/ee460947.aspx)
@@ -49,7 +71,7 @@
 
 
 
-### Appsec
+### <a name="appsec"></a>Appsec
 * [OWASP Application Security Verification Standard](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
 * [What I learned from doing 1000 code reviews](https://hackernoon.com/what-i-learned-from-doing-1000-code-reviews-fe28d4d11c71)
 
@@ -57,7 +79,7 @@
 
 
 
-### Attack Surface Analysis/Reduction
+### <a name="asa"></a>Attack Surface Analysis/Reduction
 * General
 	* [Intrigue-core](https://github.com/intrigueio/intrigue-core)
 		* Intrigue-core is a framework for automated attack surface discovery. 
@@ -66,7 +88,7 @@
 
 
 
-### Auditing Account Passwords/Privileges
+### <a name="aapp"></a>Auditing Account Passwords/Privileges
 * [Account lockout threshold - technet](https://technet.microsoft.com/en-us/library/hh994574.aspx)
 * [Password Policy - technet](https://technet.microsoft.com/en-us/library/hh994572.aspx)
 * [AccessChk](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
@@ -75,7 +97,7 @@
 
 
 
-### Auditing Processes
+### <a name="ap"></a>Auditing Processes
 * [Know your Windows Processes or Die Trying - sysforensics](https://sysforensics.org/2014/01/know-your-windows-processes/)
 * [TaskExplorer](https://objective-see.com/products/taskexplorer.html)
 	* Explore all the tasks (processes) running on your Mac with TaskExplorer. 
@@ -85,7 +107,7 @@
 
 
 
-### Baselining
+### <a name="baseline"></a>Baselining
 
 * [Measure Boot Performance with the Windows Assessment and Deployment Toolkit](https://blogs.technet.microsoft.com/mspfe/2012/09/19/measure-boot-performance-with-the-windows-assessment-and-deployment-toolkit/)
 * [Securing Windows Workstations: Developing a Secure Baseline](https://adsecurity.org/?p=3299)
@@ -94,7 +116,7 @@
 * [The Malware Management Framework](https://www.malwarearchaeology.com/mmf/)
 
 
-### Hardening
+### <a name="hardening"></a>Hardening
 * [ERNW Repository of Hardening Guides](https://github.com/ernw/hardening)
 * [OWASP Secure Configuration Guide](https://www.owasp.org/index.php/Secure_Configuration_Guide)
 * [PHP Secure Configuration Checker](https://github.com/sektioneins/pcc)
@@ -109,7 +131,11 @@
 
 
 
-### Leaks
+----------------------
+### <a name="journalist"></a>Journalist
+* [Information Security For Journalist book - Centre for Investigative Journalism](http://files.gendo.nl/Books/InfoSec_for_Journalists_V1.1.pdf)
+
+### <a name="leaks"></a>Leaks
 * General
 	* [AIL framework - Analysis Information Leak framework](https://github.com/CIRCL/AIL-framework)
 		* AIL is a modular framework to analyse potential information leaks from unstructured data sources like pastes from Pastebin or similar services or unstructured data streams. AIL framework is flexible and can be extended to support other functionalities to mine sensitive information.
@@ -119,28 +145,28 @@
 		* KeyNuker scans public activity across all Github users in your Github organization(s) and proactively deletes any AWS keys that are accidentally leaked. It gets the list of AWS keys to scan by directly connecting to the AWS API.
 
 
-### Linux/Unix
+### <a name="linux"></a>Linux/Unix
 
 * [LUNAR](https://github.com/lateralblast/lunar)
 	* A UNIX security auditing tool based on several security frameworks
 * [Filenames and Pathnames in Shell: How to do it Correctly](https://www.dwheeler.com/essays/filenames-in-shell.html)
 * [Monit](https://mmonit.com/monit/)
 	* Monit is a small Open Source utility for managing and monitoring Unix systems. Monit conducts automatic maintenance and repair and can execute meaningful causal actions in error situations.
+* [Red Hat Enterprise Linux 6 Security Guide](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/pdf/Security_Guide/Red_Hat_Enterprise_Linux-6-Security_Guide-en-US.pdf)
 
 
 
-
-### Malicious USBs
+### <a name="malusb"></a>Malicious USBs
 * [BEAMGUN](https://github.com/JLospinoso/beamgun)
 	* A rogue-USB-device defeat program for Windows.
 
-### Network
+### <a name="network"></a>Network
 * [Defending the Enterprise Against Network Infrastructure Attacks  - Paul Coggin - Troopers15](https://www.youtube.com/watch?v=K0X3RDf5XK8)
 
 
 
 
-### OS X
+### <a name="osx"></a>OS X
 
 * [netman](https://github.com/iadgov/netman)
 	* A userland network manager with monitoring and limiting capabilities for macOS.
@@ -150,15 +176,14 @@
 	* OverSight monitors a mac's mic and webcam, alerting the user when the internal mic is activated, or whenever a process accesses the webcam.
 
 
-### Ransomware
+### <a name="ransomware"></a>Ransomware
 * [Decryptonite](https://github.com/DecryptoniteTeam/Decryptonite)
 	* Decryptonite is a tool that uses heuristics and behavioural analysis to monitor for and stop ransomware.
 
-### Web
+### <a name="web"></a>Web
 * [The Hitchhiker's Guide to SQL Injection prevention](https://phpdelusions.net/sql_injection)
 
-#### WAF
-
+### <a name="waf"></a>WAF
 * NAXSI
 	* [naxsi](https://github.com/nbs-system/naxsi)
 		* NAXSI is an open-source, high performance, low rules maintenance WAF for NGINX
@@ -167,7 +192,7 @@
 	* [ModSecurity](https://www.modsecurity.org/)
 	* [ModSecurity Reference Manual](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual)
 
-### Windows
+### <a name="windows"></a>Windows
 * General
 	* [Windows Firewall Hook Enumeration](https://www.nccgroup.com/en/blog/2015/01/windows-firewall-hook-enumeration/)
 		* We’re going to look in detail at Microsoft Windows Firewall Hook drivers from Windows 2000, XP and 2003. This functionality was leveraged by the Derusbi family of malicious code to implement port-knocking like functionality. We’re going to discuss the problem we faced, the required reverse engineering to understand how these hooks could be identified and finally how the enumeration tool was developed.
@@ -260,7 +285,7 @@
 
 
 
-#### PowerShell
+#### <a name="powershell"></a>PowerShell
 * General
 	* [Powershell Security at Enterprise Customers - blogs.msdn](https://blogs.msdn.microsoft.com/daviddasneves/2017/05/25/powershell-security-at-enterprise-customers/)
 	* [More Detecting Obfuscated PowerShell](http://www.leeholmes.com/blog/2016/10/22/more-detecting-obfuscated-powershell/)

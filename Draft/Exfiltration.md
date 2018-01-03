@@ -1,7 +1,7 @@
 # Exfiltration
 
 
-### TOC
+## Table of Contents
 
 * [General](#general)
 * [Methodologies](#methods)

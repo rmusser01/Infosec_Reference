@@ -1,8 +1,7 @@
-## Open Source Intelligence
+# Open Source Intelligence
 
 
-### TOC
-* Cull
+## Table of Contents
 * [General](#general)
 * [Articles/Writeups](#writeups)
 * [Presentations & Talks](#talks)
@@ -55,12 +54,12 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 --------------------
 ### <a name="general"></a>General
-General
-* SWOT - Strengths, Weaknesses, Opportunities, Threats
+* **General**
+	* SWOT - Strengths, Weaknesses, Opportunities, Threats
 * 101
 	* [Open Source Intelligence - Wikipedia](http://en.wikipedia.org/wiki/Open-source_intelligence)
 * Alerting
-* [Google Trends](https://trends.google.com/trends/)
+	* [Google Trends](https://trends.google.com/trends/)
 		* See what are the popular related topics people are searching for. This will help widen your search scope.
 	* [Google Alerts](https://www.google.com/alerts)
 		* Google Alerts are email updates of the latest relevant Google results (web, news, etc.) based on your queries.
@@ -119,27 +118,26 @@ General
 
 -------------
 ### <a name="tools"></a>OSINT Tools/Resources
-**Tools**
-* [blacksheepwall](https://github.com/tomsteele/blacksheepwall)
-	* blacksheepwall is a hostname reconnaissance tool
-* [Creepy.py](http://ilektrojohn.github.io/creepy/)
-	* Description: Creepy is a geolocation OSINT tool. Gathers geolocation related information from online sources, and allows for presentation on map, search filtering based on exact location and/or date, export in csv format or kml for further analysis in Google Maps.
-* [Maltego](https://www.paterva.com/web6/products/maltego.php)
-	* Description: What you use to tie everything together.
-* [OpenRefine](https://github.com/OpenRefine/OpenRefine)	
-	* Description: OpenRefine is a power tool that allows you to load data, understand it, clean it up, reconcile it to master database, and augment it with data coming from Freebase or other web sources. All with the comfort and privacy of your own computer.
-* [Oryon C Portable](http://osintinsight.com/oryon.php)
-	* Oryon C Portable is a web browser designed to assist researchers in conducting Open Source Intelligence investigations. Oryon comes with dozens of pre-installed tools and a select set of links cataloged by category – including those that can be found in the OI Shared Resources.
-* [OSINT Mantra](http://www.getmantra.com/hackery/osint.html)
-* [Recon-ng](https://bitbucket.org/LaNMaSteR53/recon-ng)
-	* Description: Recon-ng is a full-featured Web Reconnaissance framework written in Python. Complete with independent modules, database interaction, built in convenience functions, interactive help, and command completion, Recon-ng provides a powerful environment in which open source web-based reconnaissance can be conducted quickly and thoroughly.
-* [TouchGraph SEO Browser](http://www.touchgraph.com/seo)
-	* Use this free Java application to explore the connections between related websites.
+* **Tools**
+	* [blacksheepwall](https://github.com/tomsteele/blacksheepwall)
+		* blacksheepwall is a hostname reconnaissance tool
+	* [Creepy.py](http://ilektrojohn.github.io/creepy/)
+		* Description: Creepy is a geolocation OSINT tool. Gathers geolocation related information from online sources, and allows for presentation on map, search filtering based on exact location and/or date, export in csv format or kml for further analysis in Google Maps.
+	* [Maltego](https://www.paterva.com/web6/products/maltego.php)
+		* Description: What you use to tie everything together.
+	* [OpenRefine](https://github.com/OpenRefine/OpenRefine)	
+		* Description: OpenRefine is a power tool that allows you to load data, understand it, clean it up, reconcile it to master database, and augment it with data coming from Freebase or other web sources. All with the comfort and privacy of your own computer.
+	* [Oryon C Portable](http://osintinsight.com/oryon.php)
+		* Oryon C Portable is a web browser designed to assist researchers in conducting Open Source Intelligence investigations. Oryon comes with dozens of pre-installed tools and a select set of links cataloged by category – including those that can be found in the OI Shared Resources.
+	* [OSINT Mantra](http://www.getmantra.com/hackery/osint.html)
+	* [Recon-ng](https://bitbucket.org/LaNMaSteR53/recon-ng)
+		* Description: Recon-ng is a full-featured Web Reconnaissance framework written in Python. Complete with independent modules, database interaction, built in convenience functions, interactive help, and command completion, Recon-ng provides a powerful environment in which open source web-based reconnaissance can be conducted quickly and thoroughly.
+	* [TouchGraph SEO Browser](http://www.touchgraph.com/seo)
+		* Use this free Java application to explore the connections between related websites.
 
 
 ------------------
 #### <a name="ppl"></a>Company/People Searching
-Company/People Searching
 * [data.com](https://www.data.com/)
 * [LittleSis](https://littlesis.org/)
 	* LittleSis is a free database of who-knows-who at the heights of business and government.
@@ -162,7 +160,6 @@ Company/People Searching
 
 -------------
 #### <a name="cvs"></a>CVS/Git/Similar Focused
-CVS/Git/Similar Focused
 * [repo-supervisor](https://github.com/auth0/repo-supervisor)
 * [GitPrey](https://github.com/repoog/GitPrey)
 	* GitPrey is a tool for searching sensitive information or data according to company name or key word something.The design mind is from searching sensitive data leakling in Github:
@@ -185,7 +182,6 @@ when directory browsing is turned off.
 
 ----------------
 ###### <a name="dns"></a>DNS Stuff
-DNS Stuff
 * [dauntless](https://github.com/cmeister2/dauntless)
 	* Tools for analysing the forward DNS data set published at https://scans.io/study/sonar.fdns_v2
 * [dnstwist](https://github.com/elceef/dnstwist)
@@ -198,7 +194,7 @@ DNS Stuff
 
 -------------
 #### <a name="email"></a>Email Gathering/Reconnaissance
-Email Gathering/Reconnaissance
+* **Articles/Writeups**
 	* [OSINT Through Sender Policy Framework Records](https://community.rapid7.com/community/infosec/blog/2015/02/23/osint-through-sender-policy-framework-spf-records)
 * Tools
 	* [SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail)
@@ -215,24 +211,22 @@ Email Gathering/Reconnaissance
 
 -------------
 #### <a name="search"></a>Fancy Search Engines
-Fancy Search Engines
-	* [Entity Cube](http://entitycube.research.microsoft.com/) 
-		* EntityCube is a research prototype for exploring object-level search technologies, which automatically summarizes the Web for entities (such as people, locations and organizations) with a modest web presence.
-	* [Silobreaker](http://www.silobreaker.com/)
-		* Enterprise Semantic Search Engine, allows virtualisation of data, analytics and exploration of key data.
-	* [iSeek](http://www.iseek.com/#/web)
-		* Another handy search engine that break results down into easy to manage categories.
-	* [Carrot2](http://search.carrot2.org/stable/search)
-		*  Carrot2 organizes your search results into topics. With an instant overview of what's available, you will quickly find what you're looking for. 
-	* [Sqoop](http://sqoop.com/)
-		* OSINT search engine of public documents(handy)
-	* [GlobalFileSearch](https://ftplike.com)
+* [Entity Cube](http://entitycube.research.microsoft.com/) 
+	* EntityCube is a research prototype for exploring object-level search technologies, which automatically summarizes the Web for entities (such as people, locations and organizations) with a modest web presence.
+* [Silobreaker](http://www.silobreaker.com/)
+	* Enterprise Semantic Search Engine, allows virtualisation of data, analytics and exploration of key data.
+* [iSeek](http://www.iseek.com/#/web)
+	* Another handy search engine that break results down into easy to manage categories.
+* [Carrot2](http://search.carrot2.org/stable/search)
+	*  Carrot2 organizes your search results into topics. With an instant overview of what's available, you will quickly find what you're looking for. 
+* [Sqoop](http://sqoop.com/)
+	* OSINT search engine of public documents(handy)
+* [GlobalFileSearch](https://ftplike.com)
 		* An FTP Search Engine that may come in handy.
 
 
 -------------
 #### <a name="meta"></a>General Meta Data
-General Meta-Data
 * [Just-Metadata](https://github.com/ChrisTruncer/Just-Metadata)
 	* Just-Metadata is a tool that can be used to gather intelligence information passively about a large number of IP addresses, and attempt to extrapolate relationships that might not otherwise be seen. Just-Metadata has "gather" modules which are used to gather metadata about IPs loaded into the framework across multiple resources on the internet. Just-Metadata also has "analysis" modules. These are used to analyze the data loaded Just-Metadata and perform various operations that can identify potential relationships between the loaded systems.
 * [MetaGooFil](https://code.google.com/p/metagoofil/)	
@@ -249,7 +243,6 @@ General Meta-Data
 
 -------------
 #### <a name="scrape"></a> General Data Scrapers
-General Data Scrapers
 * [XRAY](https://github.com/evilsocket/xray)
 	* XRay is a tool for recon, mapping and OSINT gathering from public networks.
 * [NameCheck](https://www.namecheck.com)
@@ -262,7 +255,6 @@ General Data Scrapers
 
 -------------
 #### <a name="gh"></a>Google Hacking
-Google Hacking
 * [Google Hacking for Penetration Testers](https://www.blackhat.com/presentations/bh-europe-05/BH_EU_05-Long.pdf)
 * [ExpoitDB archive of the google hacking database](http://www.exploit-db.com/google-dorks/)
 * [Google Hacking Database](http://www.hackersforcharity.org/ghdb/)
@@ -278,7 +270,6 @@ Google Hacking
 
 -----------
 ### <a name="nin"></a>Network Information Search Engines
-Network Information Search Engines
 * [Whoisology](https://whoisology.com/)
 	* Whoisology is a domain name ownership archive with literally billions of searchable and cross referenced domain name whois records. 
 
@@ -288,7 +279,6 @@ Network Information Search Engines
 
 ------------------------
 ##### <a name="site"></a>Site Specific
-Site Specific Tools
 * AWS
 	* [AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)
 		* AWSBucketDump is a tool to quickly enumerate AWS S3 buckets to look for loot. It's similar to a subdomain bruteforcer but is made specifically for S3 buckets and also has some extra features that allow you to grep for delicious files as well as download interesting files if you're not afraid to quickly fill up your hard drive.
@@ -326,7 +316,6 @@ Site Specific Tools
 
 ---------------
 ### <a name="social"></a>Social Media Search/Enumeration
-Social Media Search/Enumeration
 * [CheckUsernames](http://checkusernames.com/)
 	* Check the use of your brand or username on 160 Social Networks
 * [NameCHK](https://namechk.com/)

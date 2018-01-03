@@ -1,12 +1,7 @@
-## Honeypots
+# Honeypots
 
+## Table of Contents
 
-
-
-
-### TOC
-
-* Cull
 * [General](#general)
 * [Honeypots/nets](#honey)
 * [Presentations](#talks)

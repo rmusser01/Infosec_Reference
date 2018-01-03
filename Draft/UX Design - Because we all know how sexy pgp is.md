@@ -43,10 +43,8 @@ Required Reading: [The Design of Everyday Things](http://www.jnd.org/books/desig
 	* [UI Fundamentals for Programmers by Ryan Singer](https://vimeo.com/6702766)
 * Articles
 	* [The Complete Moral Bankruptcy of Manipulating Human Psychology To Turn Users Into Addicts](https://hackernoon.com/the-complete-moral-bankruptcy-of-manipulating-human-psychology-to-turn-users-into-addicts-d09b98281ef)
-
 * Websites/Organizations
-[Dark Patterns: fighting user deception worldwide](http://darkpatterns.org/)
-	* A Dark Pattern is a user interface that has been carefully crafted to trick users into doing things, such as buying insurance with their purchase or signing up for recurring bills.
-[Nielsen Norman Group](http://www.nngroup.com)
-	* Evidence-Based User Experience Research, Training, and Consulting
-	* check articles and guidelines, ignore other sections
+	* [Dark Patterns: fighting user deception worldwide](http://darkpatterns.org/)
+		* A Dark Pattern is a user interface that has been carefully crafted to trick users into doing things, such as buying insurance with their purchase or signing up for recurring bills.
+	* [Nielsen Norman Group](http://www.nngroup.com)
+		* Evidence-Based User Experience Research, Training, and Consulting; check articles and guidelines, ignore other sections

@@ -1,9 +1,9 @@
-## Classes & Training
+# Classes & Training
 
 
 
 
-### ToC
+## Table of Contents
 
 * Cull
 * General Security Classes](#general)
@@ -26,6 +26,7 @@ Hackingdojo
 
 BVWA
 
+Juiceshop
 
 #### End Sort
 

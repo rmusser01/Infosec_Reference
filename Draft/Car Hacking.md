@@ -1,6 +1,6 @@
 # Car Hacking
 
-## ToC
+## Table of Contents
 
 * [General](#general)
 * [Writeups](#writeup)

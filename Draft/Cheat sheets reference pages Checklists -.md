@@ -1,7 +1,7 @@
-## Cheat Sheets & Reference Pages
+# Cheat Sheets & Reference Pages
 
 
-#### TOC
+## Table of Contents
 * [General](#General)
 * [ASM(x86/64/ARM)](#ASM)
 * [Android](#Android)
@@ -46,7 +46,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 ----------
 ### <a name="General">General Cheat Sheets</a>
-**General Cheat Sheets**
+* **General Cheat Sheets**
 * [How to Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)
 * [Tips for Troubleshooting Human Communications](https://zeltser.com/human-communications-cheat-sheet/)
 * [Nmap](https://highon.coffee/docs/nmap/)
@@ -59,7 +59,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 ----------
 ### <a name="ASM">x86/64/ARM</a>
-**ASM Cheat Sheets**
+* **ASM Cheat Sheets**
 * [x86 opcode structure and instruction overview](http://pnx.tf/files/x86_opcode_structure_and_instruction_overview.pdf)
 * [Intro to x86 calling conventions](http://codearcana.com/posts/2013/05/21/a-brief-introduction-to-x86-calling-conventions.html)
 * [Reading ASM](http://cseweb.ucsd.edu/classes/sp11/cse141/pdf/02/S01_x86_64.key.pdf)
@@ -68,7 +68,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 ----------
 ### <a name="Android">Android Cheat Sheets</a>
-**Android Cheat Sheets**
+* **Android Cheat Sheets**
 * [Android ADB cheat sheet](https://github.com/maldroid/adb_cheatsheet/blob/master/cheatsheet.pdf?raw=true)
 
 
@@ -81,7 +81,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 ----------
 ### <a name="Linux">Linux Cheat Sheets</a>
-**Linux Cheat Sheets**
+* **Linux Cheat Sheets**
 * [Linux Syscall Table](http://www.informatik.htw-dresden.de/~beck/ASM/syscall_list.html)
 	* Complete listing of all Linux Syscalls
 
@@ -90,14 +90,14 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 ----------
 ### <a name="Windows">Windows Cheat Sheets</a>
-**Windows Cheat Sheets**
+* **Windows Cheat Sheets**
 * [Windows Startup Application Database](http://www.pacs-portal.co.uk/startup_content.php)
 
 
 
 ----------
 ### <a name="Exploitation">Exploitation Cheat Sheets</a>
-**Exploitation Cheat Sheets**
+* **Exploitation Cheat Sheets**
 * [AIX For Pentesters](http://www.giac.org/paper/gpen/6684/aix-penetration-testers/125890)
 	* Good paper on exploiting/pentesting AIX based machines. From the paper itself “ The paper proposes some basic methods to do comprehensive local security checks and how to exploit the vulnerabilities.”
 * [Linux - Breaking out of shells](https://highon.coffee/docs/linux-commands/#breaking-out-of-limited-shells)
@@ -109,14 +109,14 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 ----------
 ### <a name="Exploitation">Exploit Dev Cheat Sheets</a>
-**Exploit Dev Cheat Sheets**
+* **Exploit Dev Cheat Sheets**
 * [x86 opcode structure and instruction overview](http://pnx.tf/files/x86_opcode_structure_and_instruction_overview.pdf)
 * [Nasm x86 reference](https://www.cs.uaf.edu/2006/fall/cs301/support/x86/)
 * [ARM Exploitation Cheat Sheet](https://azeria-labs.com/assembly-basics-cheatsheet/)
 
 ----------
 ### <a name="Metasploit">Metasploit Cheat Sheets</a>
-**Metasploit Cheat Sheets**
+* **Metasploit Cheat Sheets**
 * [Metasploit 4.2 documentation](https://community.rapid7.com/docs/DOC-1751)
 * [MSF Payload Cheat Sheet](http://aerokid240.blogspot.com/2009/11/msfpayload-goodness-cheatsheet.html)
 * [Metasploit Meterpreter Cheat Sheet](https://scadahacker.com/library/Documents/Cheat_Sheets/Hacking%20-%20Meterpreter%20Cheat%20%20Sheet.pdf)
@@ -127,7 +127,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 ----------
 ### <a name="For">Forensics/IR Cheat Sheets</a>
-**Forensics/IR Cheat Sheets**
+* **Forensics/IR Cheat Sheets**
 * [File Signature Table](http://www.garykessler.net/library/file_sigs.html)
 * [Mem forenics cheat sheet](http://forensicmethods.com/wp-content/uploads/2012/04/Memory-Forensics-Cheat-Sheet-v1.pdf)
 * [Security Incident Survey Cheat Sheet](https://zeltser.com/security-incident-survey-cheat-sheet/)
@@ -138,7 +138,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 ----------
 ### <a name="Malware">Malware Cheat Sheet</a>
-**Malware Cheat Sheets**
+* **Malware Cheat Sheets**
 * [Reverse Engineering Malware Cheat Sheet](https://zeltser.com/reverse-malware-cheat-sheet/)
 * [Analyzing Malicious Documents Cheat Sheet](https://zeltser.com/analyzing-malicious-documents/)
 
@@ -146,7 +146,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 ----------
 ### <a name="RE">Reverse Engineering Cheat Sheets</a>
-**RE Cheat Sheets**
+* **RE Cheat Sheets**
 * [Radare2 Cheat-Sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
 * [WinDbg Cheat Sheet/mindmap](http://tylerhalfpop.com/2014/08/16/windbg-cheatsheet/)
 * [Pdf of all WinDbg commands](http://windbg.info/download/doc/pdf/WinDbg_cmds.pdf)
@@ -157,7 +157,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 ----------
 ### <a name="Web">Web Cheat Sheets</a>
-**Web Cheat Sheets**
+* **Web Cheat Sheets**
 * [Drupal Security Checklist](https://github.com/gfoss/attacking-drupal/blob/master/presentation/drupal-security-checklist.pdf)
 * [O-Auth Security Cheat Sheet](http://www.oauthsecurity.com/)
 * [OWASP Testing Checklist](https://www.owasp.org/index.php/Testing_Checklist)
@@ -167,11 +167,11 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 ----------
 ### Wireless Cheat Sheet
-**Wireless Cheat Sheets**
+* **Wireless Cheat Sheets**
 * [Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
 
 
 ----------
 ### <a name="DB">Database Cheat Sheets</a>
-**DB Cheat Sheets**
+* **DB Cheat Sheets**
 * [Checklist for mongodb](http://blog.mongodirector.com/10-tips-to-improve-your-mongodb-security/)

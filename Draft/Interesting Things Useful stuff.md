@@ -1,6 +1,6 @@
 # Interesting Things & Useful Stuff
 
-### TOC
+## Table of Contents
 * [Attribution](#attribution)
 * [News/Reports](#news)
 * [General](#general)
@@ -28,6 +28,9 @@
 
 #### To Sort
 * sort and break into policy/high level/ vs interesting things
+
+
+* [Programming Sucks](http://www.stilldrinking.org/programming-sucks)
 
 http://spth.virii.lu/articles.htm
 

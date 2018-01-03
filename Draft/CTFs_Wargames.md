@@ -1,6 +1,6 @@
-## CTFs & Wargames
+# CTFs & Wargames
 
-##### TOC
+## Table of Contents
 * [General](#general)
 * [Wargames](#wargames)
 * [Vulnerable VMs](#vulnvm)

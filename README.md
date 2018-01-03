@@ -22,7 +22,7 @@
 * To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel help build someone's skillset or increase understanding of attacks/methods/defenses.
 
 ##### This page
-* This page isn't the best ~~terrible~~ on mobile. Use [https://rmusser.net/docs](https://rmusser.net/docs]) for better mobile formatting.
+* This page isn't the best ~~terrible~~ on mobile. Use [https://rmusser.net/docs](https://rmusser.net/docs) for better mobile formatting.
 	* At some point I will sort the sections into a grid alphabetically.
 * For latest content updates, check here: [Things added since last update](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/things-added.md)
 	* This will have all links added to the other pages sorted according to topic, making it easier to see new stuff.
@@ -65,7 +65,7 @@
 * [Network Security Monitoring & Logging](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Network%20Security%20Monitoring%20%26%20Logging.md)
 * [Open Source Intelligence Gathering - OSINT](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Open%20Source%20Intelligence.md)
 * [Passwords](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Password%20Bruting%20and%20Hashcracking.md)
-* [:fish: Phishing :fish:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Phishing.md)
+* [:fish: Phishing :fish:](https://github.com/rmusser01/Infosec_Reference/blob/master/<DATA></DATA>raft/Phishing.md)
 * [Physical Security](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Phyiscal%20Security.md)
 * [Privilege Escalation and Post-Exploitation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Privilege%20Escalation%20%26%20Post-Exploitation.md)
 * [Programming Stuff](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Programming%20-%20Languages%20Libs%20Courses%20References.md)
@@ -75,7 +75,7 @@
 * [REMATH Reverse Engineering](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Reverse%20Engineering%20-%20REMath%20Literature.md)
 * [Rootkits](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Rootkits.md)
 * [Social Engineering](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Social%20Engineering.md)
-* [System Internals (Linux/Windows) - NOT THE TOOLSET](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/System%20Internals%20Windows%20and%20Linux%20Internals%20Reference.md)
+* [:nut_and_bolt: System Internals (Linux/Windows) - NOT THE TOOLSET :nut_and_bolt:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/System%20Internals%20Windows%20and%20Linux%20Internals%20Reference.md)
 * [Threat Modeling](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Threat%20Modeling.md)
 * [Threat Hunting](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Threat-Hunting.md)
 * [UI/UX Design](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/UX%20Design%20-%20Because%20we%20all%20know%20how%20sexy%20pgp%20is.md)

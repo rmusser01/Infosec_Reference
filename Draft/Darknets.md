@@ -1,14 +1,8 @@
-## Darknets
+# Darknets
 
-##### ToC
+## Table of Contents
 
 * [General](#general)
-* [Darknets](#darknets)
-* [Discussions](#discussion)
-* [Ordering](#ordering)
-* [Markets/Sites/Wikis](#markets)
-* [Tools](#tools)
-
 
 ### <a name="general">General</a>
 General
@@ -41,7 +35,7 @@ Darknets
 * Freenet
 * I2P
 * Tor
-
+* Gnunet
 
 
 

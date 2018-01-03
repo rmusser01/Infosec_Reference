@@ -1,10 +1,6 @@
-f###Programming Language Courses and References
+# Programming Language Courses and References
 
-
-
-TOC
-
-Cull
+## Table of Contents
 * [General](#general)
 * [Source Code Analysis](#sca)
 * [ASM](#asm)
@@ -122,13 +118,12 @@ Source Code Analysis
 
 ---------
 ### <a name="asm">Assembly x86/x64/ARM</a>
-x86/x64/ARM Assembly
+* **101**
 	* [x86 Assembly - Wikipedia](https://en.wikipedia.org/wiki/X86)
 	* [x86-64 Assembly - Wikipedia](https://en.wikipedia.org/wiki/X86-64)
+* **General/Articles/Writeups**
 	* [Mov is turing complete](http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf)
 * Learning
-	* [x86 Assembly Guide/Reference - Wikibooks](https://en.wikibooks.org/wiki/X86_Assembly)
-		* Introduction for those who don’t know ASM and a reference for those that do.
 	* [Guide to x86 Assembly](http://www.cs.virginia.edu/~evans/cs216/guides/x86.html)
 	* [Intro to x86 calling conventions](http://codearcana.com/posts/2013/05/21/a-brief-introduction-to-x86-calling-conventions.html)
 	* [Reading ASM](http://cseweb.ucsd.edu/classes/sp11/cse141/pdf/02/S01_x86_64.key.pdf)
@@ -164,7 +159,6 @@ x86/x64/ARM Assembly
 
 ----------
 ### Android (Kotlin/Android Java)
-Android Java
 * [Kotlin - Wikipedia](https://en.wikipedia.org/wiki/Kotlin_(programming_language))
 * [Java - Wikipedia](https://en.wikipedia.org/wiki/Java_(programming_language))
 * Learn
@@ -183,7 +177,6 @@ Android Java
 
 ----------
 ### Bash 
-Bash
 * [Bash - GNU](https://www.gnu.org/software/bash/)
 * [Bash (Unix shell) - Wikipedia](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
 *  Learn
@@ -201,7 +194,6 @@ Bash
 
 ----------
 ### <a name="c">C/C++</a>
-C/C++
 * [C (programming language) - Wikipedia](https://en.wikipedia.org/wiki/C_(programming_language))
 * [C++ - Wikipedia](https://en.wikipedia.org/wiki/C%2B%2B)
 * [C++ Homepage](https://isocpp.org/)
@@ -236,7 +228,6 @@ C/C++
 
 ----------
 ### <a name="go">Go</a>
-Go
 * [Go Programming Language](https://golang.org/)
 * [GAS - Go AST Scanner](https://github.com/GoASTScanner/gas)
 	* Inspects source code for security problems by scanning the Go AST.
@@ -246,7 +237,6 @@ Go
 
 ----------
 ### Java
-Java
 * [Java - Wikipedia](https://en.wikipedia.org/wiki/Java_(programming_language))
 * Learn
 	* [SEI CERT Oracle Coding Standard for Java](https://www.securecoding.cert.org/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java)
@@ -261,7 +251,6 @@ Java
 
 ----------
 ### Lisp
-Lisp
 * [Lisp - Wikipedia](https://en.wikipedia.org/wiki/Lisp_(programming_language))
 * [Common Lisp](https://common-lisp.net/)
 * [What makes lisp macros so special - StackOverflow](https://stackoverflow.com/questions/267862/what-makes-lisp-macros-so-special)
@@ -273,14 +262,25 @@ Lisp
 	[Lisp - Paul Graham](http://www.paulgraham.com/lisp.html)
 
 
+----------
+### Lua
+* [Lua](https://www.lua.org/)
+	* Official Homepage
+* [Lua - Getting Started](https://www.lua.org/start.html)
+* Learn
+	* [Learn X in Y minutes, Where X=Lua](https://learnxinyminutes.com/docs/lua/)
+	* [Lua code: security overview and practical approaches to static analysis](http://spw17.langsec.org/papers/costin-lua-static-analysis.pdf)
+		* Abstract — Lua is an interpreted, cross-platform, embeddable, performant and low-footprint language. Lua’s popularity is on the rise in the last couple of years. Simple design and efficient usage of resources combined with its performance make it attractive or production web applications even to big organizations such as Wikipedia, CloudFlare and GitHub. In addition to this, Lua is one of the preferred choices for programming embedded and IoT devices. This context allows to assume a large and growing Lua codebase yet to be assessed. This growing Lua codebase could be potentially driving production servers and extremely large number of devices, some perhaps with mission-critical function for example in automotive or home-automation domains. However, there is a substantial and obvious lack of static analysis tools and vulnerable code corpora for Lua as compared to other increasingly popular languages, such as PHP, Python and JavaScript. Even the state-of-the-art commercial tools that support dozens of languages and technologies actually do not support Lua static code analysis. In this paper we present the first public Static Analysis for SecurityTesting (SAST) tool for Lua code that is currently focused on web vulnerabilities. We show its potential with good and promising preliminary results that we obtained on simple and intentionally vulnerable Lua code samples that we synthesized for our experiments. We also present and release our synthesized corpus of intentionally vulnerable Lua code, as well as the testing setups used in our experiments in form of virtual and completely reproducible environments. We hope our work can spark additional and renewed interest in this apparently overlooked area of language security and static analysis, as well as motivate community’s contribution to these open-source projects. The tool, the samples and the testing VM setups will be released and updated at http://lua.re and http://lua.rocks
+* Tools
+	* [REPL.lua](https://github.com/hoelzro/lua-repl)
+		* a reusable Lua REPL written in Lua, and an alternative to /usr/bin/lua
 
 --------------
 ### <a name="net".NET</a>
-
-
-[Book of the Runtime (BOTR) for the .NET Runtime](https://github.com/dotnet/coreclr/tree/master/Documentation/botr)
-* This contains a collection of articles about the non-trivial internals of the .NET Runtime. Its intended audience are people actually modifying the code or simply wishing to have a deep understanding of the runtime.
-
+* [Book of the Runtime (BOTR) for the .NET Runtime](https://github.com/dotnet/coreclr/tree/master/Documentation/botr)
+	* This contains a collection of articles about the non-trivial internals of the .NET Runtime. Its intended audience are people actually modifying the code or simply wishing to have a deep understanding of the runtime.
+* [.NET serialiception](https://blog.scrt.ch/2016/05/12/net-serialiception/)
+* [.Net The Managed Heap and Garbage Collection in the CLR](https://www.microsoftpressstore.com/articles/article.aspx?p=2224054)
 
 
 -----------
@@ -298,68 +298,23 @@ Perl
 
 
 
-
-
-
-
-
-
-----------
-### Lua
-Lua
-* [Lua](https://www.lua.org/)
-	* Official Homepage
-* [Lua - Getting Started](https://www.lua.org/start.html)
-* Learn
-	* [Learn X in Y minutes, Where X=Lua](https://learnxinyminutes.com/docs/lua/)
-	* [Lua code: security overview and practical approaches to static analysis](http://spw17.langsec.org/papers/costin-lua-static-analysis.pdf)
-		* Abstract — Lua is an interpreted, cross-platform, embeddable, performant and low-footprint language. Lua’s popularity is on the rise in the last couple of years. Simple design and efficient usage of resources combined with its performance make it attractive or production web applications even to big organizations such as Wikipedia, CloudFlare and GitHub. In addition to this, Lua is one of the preferred choices for programming embedded and IoT devices. This context allows to assume a large and growing Lua codebase yet to be assessed. This growing Lua codebase could be potentially driving production servers and extremely large number of devices, some perhaps with mission-critical function for example in automotive or home-automation domains. However, there is a substantial and obvious lack of static analysis tools and vulnerable code corpora for Lua as compared to other increasingly popular languages, such as PHP, Python and JavaScript. Even the state-of-the-art commercial tools that support dozens of languages and technologies actually do not support Lua static code analysis. In this paper we present the first public Static Analysis for SecurityTesting (SAST) tool for Lua code that is currently focused on web vulnerabilities. We show its potential with good and promising preliminary results that we obtained on simple and intentionally vulnerable Lua code samples that we synthesized for our experiments. We also present and release our synthesized corpus of intentionally vulnerable Lua code, as well as the testing setups used in our experiments in form of virtual and completely reproducible environments. We hope our work can spark additional and renewed interest in this apparently overlooked area of language security and static analysis, as well as motivate community’s contribution to these open-source projects. The tool, the samples and the testing VM setups will be released and updated at http://lua.re and http://lua.rocks
-* Tools
-	* [REPL.lua](https://github.com/hoelzro/lua-repl)
-		* a reusable Lua REPL written in Lua, and an alternative to /usr/bin/lua
-
-
-----------
-### .NET
-
-[.NET serialiception](https://blog.scrt.ch/2016/05/12/net-serialiception/)
-
-[.Net The Managed Heap and Garbage Collection in the CLR](https://www.microsoftpressstore.com/articles/article.aspx?p=2224054)
-
-
-
-
-
-
-
-
 ----------
 ### <a name="power">Powershell</a>
-
-
-
-#### Learn
-
-[Learn Windows PowerShell in a Month of Lunches, Third Edition - Book](https://www.manning.com/books/learn-windows-powershell-in-a-month-of-lunches-third-edition)
-
-[learning-powershell/ - github repo](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell)
-
-[Getting Started with Microsoft PowerShell - MS Virtual Academy](https://mva.microsoft.com/en-us/training-courses/getting-started-with-microsoft-powershell-8276?l=r54IrOWy_2304984382)
-
-[Weekend Scripter: The Best Ways to Learn PowerShell - technet](https://blogs.technet.microsoft.com/heyscriptingguy/2015/01/04/weekend-scripter-the-best-ways-to-learn-powershell/)
-
-[Powershell Tutorial Online](http://powershelltutorial.net/)
-
-[Dirty Powershell Webserver](http://obscuresecurity.blogspot.com/2014/05/dirty-powershell-webserver.html)
-
-[Useful Powershell scripts](https://github.com/clymb3r/PowerShell)
+* **Learn**
+* [Learn Windows PowerShell in a Month of Lunches, Third Edition - Book](https://www.manning.com/books/learn-windows-powershell-in-a-month-of-lunches-third-edition)
+* [learning-powershell/ - github repo](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell)
+* [Getting Started with Microsoft PowerShell - MS Virtual Academy](https://mva.microsoft.com/en-us/training-courses/getting-started-with-microsoft-powershell-8276?l=r54IrOWy_2304984382)
+* [Weekend Scripter: The Best Ways to Learn PowerShell - technet](https://blogs.technet.microsoft.com/heyscriptingguy/2015/01/04/weekend-scripter-the-best-ways-to-learn-powershell/)
+* [Powershell Tutorial Online](http://powershelltutorial.net/)
+* [Dirty Powershell Webserver](http://obscuresecurity.blogspot.com/2014/05/dirty-powershell-webserver.html)
+* [Useful Powershell scripts](https://github.com/clymb3r/PowerShell)
 
 
 #### Reference
 
 #### Tools
-[Pester](https://github.com/pester/Pester)
-* Pester provides a framework for running unit tests to execute and validate PowerShell commands from within PowerShell. Pester consists of a simple set of functions that expose a testing domain-specific language (DSL) for isolating, running, evaluating and reporting the results of PowerShell commands.
+* [Pester](https://github.com/pester/Pester)
+	* Pester provides a framework for running unit tests to execute and validate PowerShell commands from within PowerShell. Pester consists of a simple set of functions that expose a testing domain-specific language (DSL) for isolating, running, evaluating and reporting the results of PowerShell commands.
 
 #### Other
 '''
@@ -378,7 +333,6 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 ----------
 ### PHP
-PHP
 * [awesome-php](https://github.com/ziadoz/awesome-php)
 	* A curated list of amazingly awesome PHP libraries, resources and shiny things.
 * Documentation
@@ -402,10 +356,8 @@ PHP
 
 ----------
 ### <a name="python">Python</a>
-Python
-[Python 3.6.2 documentation](https://docs.python.org/3/)
-
-[Python 2.7 documentation](https://docs.python.org/2.7/)
+* [Python 3.6.2 documentation](https://docs.python.org/3/)
+* [Python 2.7 documentation](https://docs.python.org/2.7/)
 * Learn
 	* [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
 	* [Python For Beginners]()
@@ -439,44 +391,35 @@ Python
 
 ----------
 ### <a name="ruby">Ruby</a>
-[Ruby Homepage](https://www.ruby-lang.org/en/)
-
-[Official Ruby Docs](https://ruby-doc.org/)
-
-[Ruby Gems](https://rubygems.org/)
+* [Ruby Homepage](https://www.ruby-lang.org/en/)
+* [Official Ruby Docs](https://ruby-doc.org/)
+* [Ruby Gems](https://rubygems.org/)
 
 #### Learn
-[Ruby - Tutorials Point](http://www.tutorialspoint.com/ruby/)
-
-[Ruby in 20 Minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
-
-[rb2exe](https://github.com/loureirorg/rb2exe)
-* Ruby to EXE - Turn ruby scripts into portable executable apps
+* [Ruby - Tutorials Point](http://www.tutorialspoint.com/ruby/)
+* [Ruby in 20 Minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
+* [rb2exe](https://github.com/loureirorg/rb2exe)
+	* Ruby to EXE - Turn ruby scripts into portable executable apps
 
 
 ### Useful Libraries/programs/Frameworks
-
-[Shellpaste](https://github.com/andrew-morris/shellpaste)
-* Tiny snippet of code that pulls ASCII shellcode from pastebin and executes it. The purpose of this is to have a minimal amount of benign code so AV doesn't freak out, then it pulls down the evil stuff. People have been doing this kind of stuff for years so I take no credit for the concept. That being said, this code (or similar code) works surprisingly often during pentests when conventional malware fails. 
-
-[Ruby on Rails](http://rubyonrails.org/)
+* [Shellpaste](https://github.com/andrew-morris/shellpaste)
+	* Tiny snippet of code that pulls ASCII shellcode from pastebin and executes it. The purpose of this is to have a minimal amount of benign code so AV doesn't freak out, then it pulls down the evil stuff. People have been doing this kind of stuff for years so I take no credit for the concept. That being said, this code (or similar code) works surprisingly often during pentests when conventional malware fails. 
+* [Ruby on Rails](http://rubyonrails.org/)
 
 
 
 ----------
 ### SQL
-* 
-[SafeSQL](https://github.com/stripe/safesql)
-* SafeSQL is a static analysis tool for Go that protects against SQL injections.
+* [SafeSQL](https://github.com/stripe/safesql)
+	* SafeSQL is a static analysis tool for Go that protects against SQL injections.
 
 
 
 ----------
 ### UEFI Programming
-
-[Unified Extensible Firmware Interface Forum](http://www.uefi.org/)
-
-[Unified Extensible Firmware Interface](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)
+* [Unified Extensible Firmware Interface Forum](http://www.uefi.org/)
+* [Unified Extensible Firmware Interface](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)
 
 
 

@@ -1,8 +1,5 @@
-
-
-## Social Engineering
-
-##### TOC
+# Social Engineering
+## Table of Contents
 
 * [Articles](#articles)
 * [Books](#books)
@@ -23,7 +20,6 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 
 ------------------------
 ### <a name="articles">Articles
-Articles
 * [Source Handling](http://guerrillamerica.com/2014/01/source-handling-part-one/)
 * [Source Recruitment](http://guerrillamerica.com/2013/12/source-recruitment/)
 * [List of the 48 Laws of Power](http://cgt411.tech.purdue.edu/covey/48_laws_of_power.htm)
@@ -39,7 +35,6 @@ Articles
 
 ----------------------
 ### <a name="books">Books</a>
-Books
 * [Toastmaster's guide to body language](http://westsidetoastmasters.com/resources/book_of_body_language/toc.html)
 * Miss Manners Guide to Excellent Manners
 * [Influence: Science and Practice](https://en.wikipedia.org/wiki/Influence:_Science_and_Practice)
@@ -66,7 +61,6 @@ Books
 
 --------------------
 ### <a name="talks">Presentations</a>:
-Talks & Presentations
 * [Total Fail: and Bad Mistakes, I've Made a Few- Jayson Street -DEF CON 24 SE Village](https://www.youtube.com/watch?v=l1OFH_H8PjQ)
 * [Social Engineering Like In Movies -- Reality of awareness and manipulation - Dale Pearson- #days](https://www.youtube.com/watch?v=XUIWi5p0oFI)
 * [Manipulating Human Minds: The Psychological Side of Social Engineering - Christina Camilleri - CrikeyCon](https://www.youtube.com/watch?v=8enkIWl79_4)
@@ -115,10 +109,11 @@ Talks & Presentations
 * [**I Will Kill You** - Chris Rock(Defcon23)](https://www.youtube.com/watch?v=9FdHq3WfJg)
 * [Total Fail: and Bad Mistakes, I've Made a Few- Jayson Street -DEF CON 24 SE Village](https://www.youtube.com/watch?v=l1OFH_H8PjQ)
 
-Disguize - Appearance Hacking
-[Disguise - Appearance Hacking](http://www.irongeek.com/i.php?page=videos/derbycon2/valerie-thomas-appearance-hacking-101-the-art-of-everyday-camouflage)
+
+* [Disguise - Appearance Hacking](http://www.irongeek.com/i.php?page=videos/derbycon2/valerie-thomas-appearance-hacking-101-the-art-of-everyday-camouflage)
 * [Transcript](http://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are/transcript)
 * My notes from it: 
+```
 * Why use makeup?
   *    Blend into crowd
     *  Pose as employee/vendor
@@ -139,13 +134,12 @@ Disguize - Appearance Hacking
 * Some modified easier than others
   *    Entire appearance makes the difference. One part is off, whole cover can be blown
 * If using hardhat, make sure to beat the shit out of it. Add stickers. 
-
+```
 
 
 
 -----------------------------
 ### <a name="papers">Research Papers</a>
-Papers
 * [Construal-Level Theory of Psychological Distance](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/)
 	* Abstract: People are capable of thinking about the future, the past, remote locations, another person’s perspective, and counterfactual alternatives. Without denying the uniqueness of each process, it is proposed that they constitute different forms of traversing psychological distance. Psychological distance is egocentric: Its reference point is the self in the here and now, and the different ways in which an object might be removed from that point—in time, in space, in social distance, and in hypotheticality—constitute different distance dimensions. Transcending the self in the here and now entails mental construal, and the farther removed an object is from direct experience, the higher (more abstract) the level of construal of that object. Supporting this analysis, research shows (a) that the various distances are cognitively related to each other, (b) that they similarly influence and are influenced by level of mental construal, and (c) that they similarly affect prediction, preference, and action.
 * [The Neural Basis of Decision-Making During Sensemaking: Implications for Human-System Interaction](https://www.researchgate.net/publication/278679336_The_Neural_Basis_of_Decision-Making_During_Sensemaking_Implications_for_Human-System_Interaction)
@@ -153,6 +147,4 @@ Papers
 
 --------------------------------
 ### <a name="tools"></a>Tools
-
-
 * [Step7 Open Source Ethernet Communication Suite](http://snap7.sourceforge.net/)

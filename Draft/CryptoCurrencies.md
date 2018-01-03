@@ -9,6 +9,10 @@ ToC
 * [Talks & Presentations](#talks)
 
 
+#### Sort/Add
+* Monero
+* Zcash
+
 -----
 ### <a name="general"></a> General 
 * [cryptocurrency](https://github.com/kilimchoi/cryptocurrency)

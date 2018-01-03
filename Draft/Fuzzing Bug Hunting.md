@@ -1,6 +1,8 @@
-## Fuzzing
+# Fuzzing (and bug hunting)
 
-TOC
+
+
+## Table of Contents
 
 * [General](#general)
 * [Videos/Presentations](#videos)
@@ -163,15 +165,9 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 
 ------------
 ### <a name="training"></a>Training
-[Modern fuzzing of C/C++ Projects - Slides](https://docs.google.com/presentation/d/1pbbXRL7HaNSjyCHWgGkbpNotJuiC4O7L_PDZoGqDf5Q/edit#slide=id.p4)
-
-[libfuzzer-workshop](https://github.com/Dor1s/libfuzzer-workshop)
-* Materials of "Modern fuzzing of C/C++ Projects" workshop.
-
-
-
-
-
+* [Modern fuzzing of C/C++ Projects - Slides](https://docs.google.com/presentation/d/1pbbXRL7HaNSjyCHWgGkbpNotJuiC4O7L_PDZoGqDf5Q/edit#slide=id.p4)
+* [libfuzzer-workshop](https://github.com/Dor1s/libfuzzer-workshop)
+	* Materials of "Modern fuzzing of C/C++ Projects" workshop.
 
 
 ------------

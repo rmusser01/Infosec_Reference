@@ -1,3 +1,6 @@
+
+https://siguza.github.io/IOHIDeous/
+
 https://gist.github.com/mullnerz/9fff80593d6b442d5c1b
 
 [attacking encrypted systems with qemu and volatility](https://diablohorn.com/2017/12/12/attacking-encrypted-systems-with-qemu-and-volatility/) 
@@ -31,12 +34,6 @@ https://gist.github.com/mullnerz/9fff80593d6b442d5c1b
 
 ------------
 ## Anonymity/OpSec/Privacy
-
-* [A STUDY OF COMINT PERSONNEL SECURITY STANDARDS AND PRACTICES](https://www.cia.gov/library/readingroom/document/cia-rdp82s00527r000100060014-6)
-* [Privacy Online Test And Resource Compendium](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List/blob/master/README.md)
-
-* [haven](https://guardianproject.github.io/haven/)
-	* Android application that leverages on-device sensors to provide monitoring and protection of physical spaces. 
 
 
 

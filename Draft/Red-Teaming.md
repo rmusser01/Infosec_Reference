@@ -482,6 +482,7 @@ Tactics
 	* [Introduction to z/OS and IBM mainframes world and security](https://www.whitewinterwolf.com/posts/2017/10/01/introduction-to-zos-and-ibm-mainframes-world-and-security/)
 	* [mainframed767 - tumblr(Soldier of Fortran)](https://mainframed767.tumblr.com/post/43170687339/shmoocon-presentation-links?is_related_post=1)
 	* [Everything you wanted to know about mainframe security, pen testing and vulnerability scanning .. But were  too afraid to ask!](http://www.newera.com/INFO/SEC_12_17_2015.pdf)
+	* [Introduction to the New Mainframe z/OS Basics](https://www.redbooks.ibm.com/redbooks/pdfs/sg246366.pdf)
 	* [2017 - A New Look at Mainframe Hacking and Penetration Testing v2.2](https://www.slideshare.net/rmfeio/2017-a-new-look-at-mainframe-hacking-and-penetration-testing-v22)
 		* Sequel to above link
 	* [Re: PenTest for Mainframe - Seclists](http://seclists.org/basics/2012/Aug/26)
@@ -508,6 +509,8 @@ Tactics
 	* [we hacked the gibson now what - Philip Young - BSidesLV2014](https://www.youtube.com/watch?v=n_sXG0Ff2oM)
 	* [Mainframes - Mopeds and Mischief; A PenTesters Year in Review](http://www.irongeek.com/i.php?page=videos/derbycon4/t203-mainframes-mopeds-and-mischief-a-pentesters-year-in-review-tyler-wrightson)
 * **Tools**
+	* [The Hercules System/370, ESA/390, and z/Architecture Emulator](http://www.hercules-390.org/)
+		* Hercules is an open source software implementation of the mainframe System/370 and ESA/390 architectures, in addition to the new 64-bit z/Architecture
 	* [Privilege escalation on z/OS](https://github.com/ayoul3/Privesc)
 		* Privilege escalation tools on Mainframe
 	* [Nmap Mainframe Scripts](https://github.com/zedsec390/NMAP)
@@ -523,6 +526,7 @@ Tactics
 		* Some scripts to quickly escalate on z/OS given certain misconfigurations.
 	* [REX_Scripts](https://github.com/ayoul3/Rexx_scripts)
 		* A collection of interesting REXX scripts to ease the life a mainframe pentester
+
 * **Writeups**
 
 

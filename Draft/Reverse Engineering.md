@@ -1,8 +1,6 @@
-
-
 # Reverse Engineering
 
-ToC
+## Table of Contents
 * [Frameworks](#frameworks)
 * [Debuggers & Related Techniques](#dbg)
 * [Decompilers](#decom)

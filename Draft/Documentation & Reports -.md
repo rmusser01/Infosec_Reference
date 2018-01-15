@@ -98,14 +98,14 @@ Other Materials:
 * [Record terminal sessions and have the ability to replay it](http://linux.byexamples.com/archives/279/record-the-terminal-session-and-replay-later/)
 
 ------
-### De/Briefing
+### De/Briefing/Presenting
 * General
 	* [kap](https://github.com/wulkano/kap)
 		* An open-source screen recorder built with web technology
 	* [Debriefing: A Simple Tool to Help Your Team Tackle Tough Problems](https://hbr.org/2015/07/debriefing-a-simple-tool-to-help-your-team-tackle-tough-problems)
 	* [Sample Debriefing Statement - Albion College](https://www.albion.edu/academics/student-research/institutional-review-board/submitting-a-proposal/sample-debriefing-statement)
 	* [A Project Post Mortem Template](http://brolik.com/blog/project-post-mortem-template/)
-
+	* [A presentation or presentations because presenting - Jason Blanchard - Derbycon7](https://www.youtube.com/watch?v=FcgM7c0vzcE&app=desktop)
 
 ----
 ### <a name="disclosure"></a>Disclosure

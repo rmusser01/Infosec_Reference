@@ -1,4 +1,4 @@
-# Programming Language Courses and References
+# Programming Language Courses/References/Security (AppSec)
 
 ## Table of Contents
 * [General](#general)
@@ -21,6 +21,28 @@
 [Code Insecurity or Code in Security - Mano 'dash4rk' Paul](http://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul)
 	* Attendees of this talk will benefit from learning about what constitutes insecure code and the associated attacks that stem from such code. Applicable attacks ranging from injection to reversing will be demonstrated to reinforce contents of this talk. This way, the attendee would not only be taught about “What not to do?” but also, “Why this should not do, what they ought not to do?”. Finally, attendees will also be introduced to secure development processes such as protection needs elicitation, threat modeling, code review and analysis and secure deployment, to illustrate that while writing secure code is one important aspect of software security, there is more to securing applications, than what meets the eye. Come for a fun filled, interactive session and your chance to win one of the personalized and autographed copies of the speaker’s renowned book – The 7 qualities of highly secure software.
 
+* [Django-Security](https://github.com/sdelements/django-security)
+	* This package offers a number of models, views, middlewares and forms to facilitate security hardening of Django applications.
+* [FindBugs](https://find-sec-bugs.github.io/)
+	* The FindBugs plugin for security audits of Java web applications.
+* [bundler-audit](https://github.com/rubysec/bundler-audit)
+	* Patch-level verification for Bundler
+* [OWASP SafeNuGet](https://github.com/owasp/SafeNuGet)
+	* OWASP SafeNuGet is an MsBuild task to warn about insecure NuGet libraries: https://nuget.org/packages/SafeNuGet/
+
+* [One Line of Code that Compromises Your Server - The dangers of a simplistic session secret](https://martinfowler.com/articles/session-secret.html)
+
+* [SourceTrail](https://www.sourcetrail.com/)
+	* A cross-platform source explorer for C/C++ and Java* 
+
+* [Attack Surface Meter](https://github.com/andymeneely/attack-surface-metrics)
+	* Python package for collecting attack surface metrics from a software system. In its current version, Attack Surface Meter is capable of analyzing software systems written in the C programming language with skeletal support for analyzing software systems written in the Java programming language. The attack surface metrics collected are:
+	* Proximity to Entry/Exit/Dangerous - The mean of shortest unweighted path length from a function/file to Entry Points/Exit Points/Dangerous Points.
+    * Risky Walk - The probability that a function/file will be invoked on a random execution path starting at the attack surface.
+
+* [Code Insecurity or Code in Security - Mano 'dash4rk' Paul - Derbycon2014](https://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul)
+	* Attendees of this talk will benefit from learning about what constitutes insecure code and the associated attacks that stem from such code. Applicable attacks ranging from injection to reversing will be demonstrated to reinforce contents of this talk. This way, the attendee would not only be taught about “What not to do?” but also, “Why this should not do, what they ought not to do?”. Finally, attendees will also be introduced to secure development processes such as protection needs elicitation, threat modeling, code review and analysis and secure deployment, to illustrate that while writing secure code is one important aspect of software security, there is more to securing applications, than what meets the eye. Come for a fun filled, interactive session and your chance to win one of the personalized and autographed copies of the speaker’s renowned book – The 7 qualities of highly secure software.
+
 
 http://en.cppreference.com/w/c	
 
@@ -38,7 +60,8 @@ Libraries for Java -> https://www.owasp.org/index.php/Category:Java#tab=Related_
 
 * [OWASP Proactive Controls](https://www.owasp.org/index.php/OWASP_Proactive_Controls?refresh=123#tab=OWASP_Proactive_Controls_2016)
 	* The OWASP Top Ten Proactive Controls 2016 is a list of security concepts that should be included in every software development project. They are ordered by order of importance, with control number 1 being the most important.
-
+* [OWASP Application Security Verification Standard](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
+* [What I learned from doing 1000 code reviews](https://hackernoon.com/what-i-learned-from-doing-1000-code-reviews-fe28d4d11c71)
 
 
 
@@ -413,7 +436,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 ### SQL
 * [SafeSQL](https://github.com/stripe/safesql)
 	* SafeSQL is a static analysis tool for Go that protects against SQL injections.
-
+* [The Hitchhiker's Guide to SQL Injection prevention](https://phpdelusions.net/sql_injection)
 
 
 ----------

@@ -72,6 +72,17 @@ Hacking the Dropcam series
 * [Outsmarting smartcards](http://gerhard.dekoninggans.nl/documents/publications/dekoninggans.phd.thesis.pdf)
 * [MagSpoof - credit card/magstripe spoofer](https://github.com/samyk/magspoof)
 
+* [Cloning Credit Cards: A combined pre-play and downgrade attack on EMV Contactless](https://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/12055-woot13-roland.pdf)
+* [How to Hack a Contactless Payment System](https://hackfu.mwrinfosecurity.com/hackfu-blog/params/post/465447/how-to-hack-a-contactless-payment-system.html)
+* [Owning and Cloning NFC Payment Cards](https://github.com/peterfillmore/Talk-Stuff/blob/master/Syscan2015/PeterFillmore_Syscan2015.pdf]
+* [On Relaying NFC Payment Transactions using Android devices](https://www.slideshare.net/cgvwzq/on-relaying-nfc-payment-transactions-using-android-devices)
+* [NFC Hacking: NFCProxy with Android Beam](https://www.youtube.com/watch?v=tFi0vYuYeAI&feature=youtu.be)
+* [Practical Experiences on NFC Relay Attacks with Android: Virtual Pickpocketing Revisited](https://conference.hitb.org/hitbsecconf2015ams/materials/Whitepapers/Relay%20Attacks%20in%20EMV%20Contactless%20Cards%20with%20Android%20OTS%20Devices.pdf)
+* [Pwning the POS! - Nick Douglas - Notacon11](https://www.irongeek.com/i.php?page=videos/notacon11/pwning-the-pos-mick-douglas)
+	* Everybody’s talking about the Target breach. However, there’s lots wrong with the retail space… and it’s been this way for quite some time! Focusing on Point of Sale (POS) systems this talk will show you how to exploit friendly the POS ecosystem really is, and how you can help fix things.
+* [An Inside Job: Remote Power Analysis Attacks on FPGAs](https://eprint.iacr.org/2018/012.pdf)
+
+
 #### end sort
 
 

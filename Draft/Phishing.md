@@ -15,6 +15,27 @@
 
 #### Sort
 
+
+* [Welcome to the Excel Software Development Kit](https://msdn.microsoft.com/en-us/library/office/bb687883.aspx)
+
+* [Hello World XLL](https://github.com/edparcell/HelloWorldXll)
+	* This is a simple XLL, showing how to create an XLL from scratch.
+
+* [Add-In Opportunities for Office Persistence](https://labs.mwrinfosecurity.com/blog/add-in-opportunities-for-office-persistence/)
+	* This post will explore various opportunities for gaining persistence through native Microsoft Office functionality.  It was inspired by Kostas Lintovois’ similar work which identified ways to persist in transient Virtual Desktop Infrastructure (VDI) environments through adding a VBA backdoor to Office template files 
+
+* [One Template To Rule 'Em All](https://labs.mwrinfosecurity.com/publications/one-template-to-rule-em-all/)
+	* This presentation discussed how Office security settings and templates can be abused to gain persistence in VDI implementations where traditional techniques relying on the file system or the Registry are not applicable. Additionally, it was described how the introduction of application control and anti-exploitation technologies may affect code execution in locked down environments and how these controls can be circumvented through the use of VBA.
+
+* [DLL Tricks with VBA to Improve Offensive Macro Capability](https://labs.mwrinfosecurity.com/blog/dll-tricks-with-vba-to-improve-offensive-macro-capability/)
+
+* [DLL Execution via Excel.Application RegisterXLL() method](https://gist.github.com/ryhanson/227229866af52e2d963cf941af135a52)
+	* A DLL can be loaded and executed via Excel by initializing the Excel.Application COM object and passing a DLL to the RegisterXLL method. The DLL path does not need to be local, it can also be a UNC path that points to a remote WebDAV server.
+* [ExcelDllLoader](https://github.com/3gstudent/ExcelDllLoader)
+	* Execute DLL via the Excel.Application object's RegisterXLL() method
+* [xllpoc](https://github.com/MoooKitty/xllpoc)
+	* A small project that aggregates community knowledge for Excel XLL execution, via xlAutoOpen() or PROCESS_ATTACH.
+
 #### End sort
 
 
@@ -155,7 +176,8 @@
 	* [CVE-2017-8759-Exploit-sample](https://github.com/vysec/CVE-2017-8759-Exploit-sample)
 		* Flow of the exploit: Word macro runs in the Doc1.doc file. The macro downloads a badly formatted txt file over wsdl, which triggers the WSDL parser log. Then the parsing log results in running mshta.exe which in turn runs a powershell commands that runs mspaint.exe
 * **DDE**
-	* * [Exploiting Office native functionality: Word DDE edition](https://www.securityforrealpeople.com/2017/10/exploiting-office-native-functionality.html)
+	* [About Dynamic Data Exchange](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648774(v=vs.85).aspx)
+	* [Exploiting Office native functionality: Word DDE edition](https://www.securityforrealpeople.com/2017/10/exploiting-office-native-functionality.html)
 * **HTA**
 	* [HTML Application - Wikipedia](https://en.wikipedia.org/wiki/HTML_Application)
 	* [Learn About Scripting for HTML Applications (HTAs)](https://technet.microsoft.com/en-us/scriptcenter/dd742317.aspx)
@@ -168,15 +190,19 @@
 	* [Resources for learning InfoPath - support.office.com](https://support.office.com/en-ie/article/Resources-for-learning-InfoPath-40227252-43A7-4E7A-97C6-29EC4B7E7B93)
 	* [InfoPhish](https://github.com/InfoPhish/InfoPhish)
 * **Macros**
+	* **Articles/Blogposts/Writeups**
+		* [Luckystrike: An Evil Office Document Generator](https://www.shellntel.com/blog/2016/9/13/luckystrike-a-database-backed-evil-macro-generator)
+		* [How To: Empire’s Cross Platform Office Macro](https://www.blackhillsinfosec.com/empires-cross-platform-office-macro/)
+		* [Excel macros with PowerShell](https://4sysops.com/archives/excel-macros-with-powershell/)
+		* [Multi-Platform Macro Phishing Payloads](https://medium.com/@malcomvetter/multi-platform-macro-phishing-payloads-3b688e8eff68)
+	* **Tools**
+		* [Pafish Macro](https://github.com/joesecurity/pafishmacro)
+			* Pafish Macro is a Macro enabled Office Document to detect malware analysis systems and sandboxes. It uses evasion & detection techniques implemented by malicious documents.
 	* [Malicious Macro Generator](https://github.com/Mr-Un1k0d3r/MaliciousMacroGenerator)
 		* Simple utility design to generate obfuscated macro that also include a AV / Sandboxes escape mechanism.
 	* [macphish](https://github.com/cldrn/macphish)
 		* Office for Mac Macro Payload Generator 
 	* [Generate Macro - Tool](https://github.com/enigma0x3/Generate-Macro)
-	* [Luckystrike: An Evil Office Document Generator](https://www.shellntel.com/blog/2016/9/13/luckystrike-a-database-backed-evil-macro-generator)
-	* [How To: Empire’s Cross Platform Office Macro](https://www.blackhillsinfosec.com/empires-cross-platform-office-macro/)
-	* [Excel macros with PowerShell](https://4sysops.com/archives/excel-macros-with-powershell/)
-	* [Multi-Platform Macro Phishing Payloads](https://medium.com/@malcomvetter/multi-platform-macro-phishing-payloads-3b688e8eff68)
 	* [RobustPentestMacro](https://github.com/mgeeky/RobustPentestMacro)
 		* This is a rich-featured Visual Basic macro code for use during Penetration Testing assignments, implementing various advanced post-exploitation techniques.
 	* [Generate MS Office Macro Malware Script](https://github.com/enigma0x3/Generate-Macro/blob/master/Generate-Macro.ps1)
@@ -196,7 +222,7 @@
 
 
 ------------------
-### <a name="talks></a>Talks/Presentations
+### <a name="talks"></a>Talks/Presentations
 * [Three Years of Phishing - What We've Learned - Mike Morabito](http://www.irongeek.com/i.php?page=videos/centralohioinfosec2015/tech105-three-years-of-phishing-what-weve-learned-mike-morabito)
 	* Cardinal Health has been aggressively testing and training users to recognize and avoid phishing emails. This presentation covers 3 years of lessons learned from over 18,000 employees tested, 150,000 individual phishes sent, 5 complaints, thousands of positive comments, and a dozen happy executives. Learn from actual phishing templates what works well, doesn,t work at all, and why? See efficient templates for education and reporting results.
 * [Ichthyology: Phishing as a Science - BH USA 2017](https://www.youtube.com/watch?v=Z20XNp-luNA&app=desktop)

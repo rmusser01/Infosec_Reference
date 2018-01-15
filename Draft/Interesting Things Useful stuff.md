@@ -48,7 +48,7 @@ http://spth.virii.lu/articles.htm
 * [statistically-likely-usernames](https://github.com/insidetrust/statistically-likely-usernames)
 	* This resource contains wordlists for creating statistically likely usernames for use in username-enumeration, simulated password-attacks and other security testing tasks.
 
-
+* [BE YOUR OWN VPN PROVIDER WITH OPENBSD (v2)](https://networkfilter.blogspot.com/2017/04/be-your-own-vpn-provider-with-openbsd-v2.html)
 
 #### End Sort
 
@@ -227,16 +227,14 @@ http://spth.virii.lu/articles.htm
 	* [Take Charge of Your Infosec Career! - Glen Roberts - BSidesSLC2015](https://www.youtube.com/watch?v=QqlnB2FeODo)
 		* You spent $5,000, a plane trip, a hotel and a full workweek on your last infosec course but when was the last time you invested even just a few hours of your time exclusively to developing your infosec career in a truly meaningful way? This talk will challenge the way you view your career and give you actionable steps for taking charge of it so you can optimize the rewards and fulfillment you receive from your work. Glen will leverage the stories and best practices from dozens of information security professionals to help inspire your infosec career journey. This presentation will be engaging and speak to the soul in a way that instills ownership of your own career and generates a passion for finding and carving out your own authentic career path.
 	* [Con Video Rig Enhancements - IronGeek & SkyDog](https://www.youtube.com/watch?v=BVCFAqLxdtY)
-
 * **Attacking/PenTester/RedTeam**
 	* [I Will Kill You - Chris Rock](https://www.youtube.com/watch?feature=youtu.be&v=9FdHq3WfJgs&t=77&app=desktop)
 		* Have you ever wanted to kill someone? Do you want to get rid of your partner, your boss or your arch nemesis? Perhaps you want to enjoy your life insurance payout whilst you’re still alive. Do you have rich elderly parents that just won’t die quick enough? Or do you want a “Do Over” new identity.  Then, this presentation is for you! I’ll provide you with the insight and techniques on how to “kill” someone and obtain a real death certificate and shutdown their lives. It focuses on the lack of security controls that allow any of us to virtually kill off anyone or any number of people. Forget the Dexter way of killing someone, I’ll show you how to avoid the messy clean up and focusing in on the digital aspects. You could be dead right now and not even know it.
-* [Kim Jong-il and Me: How to Build a Cyber Army to Defeat the U.S. - Charlie MIller](https://www.youtube.com/watch?v=4up0yTGlpaU)
-* [Evaluating the APT Armor - Matthias Luft, Felix Wilhelm](https://www.youtube.com/watch?v=3vh2s9Pui0E)
-* [How to Hack All the Transport Networks of a Country - Defcon20](https://www.youtube.com/watch?v=D6KEhdHFc9I)
-* [How to safely conduct shenanigans EvilMog Renderman - Derbycon7](https://www.youtube.com/watch?v=Ca0DA9Dq1IA&index=61&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
-* [If it fits - it sniffs: Adventures in WarShipping](http://www.irongeek.com/i.php?page=videos/derbycon4/t104-if-it-fits-it-sniffs-adventures-in-warshipping-larry-pesce)
-
+	* [Kim Jong-il and Me: How to Build a Cyber Army to Defeat the U.S. - Charlie MIller](https://www.youtube.com/watch?v=4up0yTGlpaU)
+	* [Evaluating the APT Armor - Matthias Luft, Felix Wilhelm](https://www.youtube.com/watch?v=3vh2s9Pui0E)
+	* [How to Hack All the Transport Networks of a Country - Defcon20](https://www.youtube.com/watch?v=D6KEhdHFc9I)
+	* [How to safely conduct shenanigans EvilMog Renderman - Derbycon7](https://www.youtube.com/watch?v=Ca0DA9Dq1IA&index=61&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
+	* [If it fits - it sniffs: Adventures in WarShipping](http://www.irongeek.com/i.php?page=videos/derbycon4/t104-if-it-fits-it-sniffs-adventures-in-warshipping-larry-pesce)
 * **Educational**
 	* [Con Video Rig Enhancements - IronGeek & SkyDog](https://www.youtube.com/watch?v=BVCFAqLxdtY)
 	* [How to Become an InfoSec Autodidact - Kelly Shortridge - Duo Tech Talk](https://www.youtube.com/watch?v=h92vmwg9Tyc)
@@ -251,7 +249,6 @@ http://spth.virii.lu/articles.htm
 		* In this talk, we aim to briefly cover the background of sock puppets (and related attacks) before moving on to real world demonstrations & “attacks“. Rigging polls, abusing Twitter, causing Reddit riots & targeting popular news organisations are some of the (many) attacks covered. In all these cases we discuss what we tried, what worked, what didn’t and what the implications are of the attacks. Where possible we will cover defences and solutions.
 	* [Youre stealing it wrong 30 years of inter pirate battles - Jason Scott - Defcon 18](https://www.youtube.com/watch?v=a5AceLYWE1Q&app=desktop)
 	* [[TROOPERS15] Andreas Lindh - Defender Economics](https://www.youtube.com/watch?v=mAP38Xy52X0)
-
 * **Genuinely Interesting/Unusual**
 	* [Achilles Heel of the American Banking System](http://www.irongeek.com/i.php?page=videos/derbycon4/the-achilles-heel-of-the-banking-system)
 	* [You're Leaking Trade Secrets - Defcon22 Michael Schrenk](https://www.youtube.com/watch?v=JTd5TL6_zgY)
@@ -271,10 +268,10 @@ http://spth.virii.lu/articles.htm
 	* [Pwning pwners like a n00b](https://www.youtube.com/watch?v=E8O8bB3I3i0)
 		* Cybercrime, blackhat hackers and some Ukrainians. If that doesn’t catch your attention, then stop reading. Follow the story of how stupid mistakes, OPSEC fails, and someone with a little too much time on his hands was able to completely dismantle a spamming and webshell enterprise using really simple skills and techniques you could pick up in a week. Did we mention that d0x were had as well? This talk will be an in-depth examination at the investigation and exploitation process involved. 
 	* [Human Trafficking in the Digital Age](https://www.irongeek.com/i.php?page=videos/derbycon4/t516-human-trafficking-in-the-digital-age-chris-jenks)
-
+	* [Stealing Profits from Spammers or: How I learned to Stop Worrying and Love the Spam - Grant Jordan - Defcon17](https://www.youtube.com/watch?v=ytDamqTjPwg)
+		* Every time you look at your inbox, there it is... SPAM! Your penis needs enlargement, a horny single girl from Russia "accidentally" emailed you, and a former Nigerian prince knows that you're just the man to safeguard his millions. But in 2007, while still a student at MIT, one particular kind caught my eye: stock spam. Those bizarre stock market "tips" that claim you should buy a particular stock because it's "about to go through the roof!!!!" Like most people, I initially thought nothing of these ridiculous emails. That was until Kyle Vogt (now of Justin.tv) proposed the stupidest idea I had ever heard: "There has to be some way we can make money off these spammers". After trying, and failing, to prove Kyle wrong, the two of us embarked on a 4-month study into the dark depths of stock spam. In this talk, I'll explain how we went from hand-sorting tens of thousands of spam emails to developing a trading strategy able to take a piece of the spammers' profits. And how, in the process, our work produced data that disproved the results of nearly all the existing stock spam research.
 * **Insider Threats**
 	* [Combating the Insider Threat at the FBI: Real World Lessons Learned - BlackHat2013](https://www.youtube.com/watch?v=0stTS-G5FsE)
-
 * **Policy**
 	* [Just What The Doctor Ordered? - Scott Erven and Shawn Merdinger - DEF CON 22](https://www.youtube.com/watch?v=wTEMSBXtkAc)
 		* This discussion will also highlight the fallout from security standards not being a requirement for medical device manufacturers, and our experience in identifying and reporting vulnerabilities. We will provide our insight into what needs to be done for healthcare organizations to respond to the new threat of cyber-attack against medical devices. We are working towards a future where cyber security issues in medical devices are a thing of the past. We will discuss the recent success and traction we have gained with healthcare organizations, federal agencies and device manufacturers in addressing these security issues. The train is now moving, so please join us to find out how you can get involved and make a difference by ensuring patient safety.

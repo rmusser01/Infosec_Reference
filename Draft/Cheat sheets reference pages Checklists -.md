@@ -40,6 +40,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 * [OWASP Cryptographic Storage Cheat Sheet](https://www.owasp.org/index.php/Cryptographic_Storage_Cheat_Sheet)
 * [OWASP IOS Application Security Testing Cheat Sheet](https://www.owasp.org/index.php/IOS_Application_Security_Testing_Cheat_Sheet#Insecure_data_storage)
 
+* [XML DTD Cheat Sheet](https://web-in-security.blogspot.it/2016/03/xxe-cheat-sheet.html)
 
 #### end sort
 
@@ -115,14 +116,14 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 * [ARM Exploitation Cheat Sheet](https://azeria-labs.com/assembly-basics-cheatsheet/)
 
 ----------
-### <a name="Metasploit">Metasploit Cheat Sheets</a>
+### <a name="Metasploit">Metasploit Cheat Sheets/References</a>
 * **Metasploit Cheat Sheets**
 * [Metasploit 4.2 documentation](https://community.rapid7.com/docs/DOC-1751)
 * [MSF Payload Cheat Sheet](http://aerokid240.blogspot.com/2009/11/msfpayload-goodness-cheatsheet.html)
 * [Metasploit Meterpreter Cheat Sheet](https://scadahacker.com/library/Documents/Cheat_Sheets/Hacking%20-%20Meterpreter%20Cheat%20%20Sheet.pdf)
 * [Tips & Tricks](https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks)
-
-
+* [Meterpreter Paranoid Mode - rapid7](https://github.com/rapid7/metasploit-framework/wiki/Meterpreter-Paranoid-Mode)
+* [Using the Database in Metasploit](https://www.offensive-security.com/metasploit-unleashed/using-databases/)
 
 
 ----------

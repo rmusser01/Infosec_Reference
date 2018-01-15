@@ -29,8 +29,9 @@
 	* A full-featured, open source, state-of-the-art video surveillance software system.
 
 
-* [Home Alone with localhost - Automating Home Defense - Chris Littlebury Defcon22](https://www.youtube.com/watch?v=9Tbft190x3Q)
-* [Physical Home Security Options - DiabloHorn](https://diablohorn.wordpress.com/2014/07/13/physical-home-security-options/#more-984)
+* [FATF blacklist - Wikipedia](https://en.wikipedia.org/wiki/FATF_blacklist)
+	* The FATF blacklist was the common shorthand description for the Financial Action Task Force list of "Non-Cooperative Countries or Territories" (NCCTs) issued since 2000, which it perceived to be non-cooperative in the global fight against money laundering and terrorist financing.
+* [The Green Beret Hotel Check-In Safety List](https://www.entrepreneur.com/article/286411)
 
 #### End Sort
 

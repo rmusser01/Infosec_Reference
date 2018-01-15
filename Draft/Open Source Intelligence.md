@@ -38,13 +38,7 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 * [RSOE EDIS - Emergency and Disaster Information Service](http://hisz.rsoe.hu/alertmap/index2.php)
 
-[Hunting Pastebin with PasteHunter](https://techanarchy.net/2017/09/hunting-pastebin-with-pastehunter/)
-
-[Pattern](https://github.com/clips/pattern/blob/master/README.md)
-	* Pattern is a web mining module for Python. It has tools for: Data Mining: web services (Google,; Twitter, Wikipedia), web crawler, HTML DOM parser; Natural Language Processing: part-of-speech taggers, n-gram search, sentiment analysis, WordNet; Machine Learning: vector space model, clustering, classification (KNN, SVM, Perceptron); Network Analysis: graph centrality and visualization.
-
-* [Cr3dOv3r](https://github.com/D4Vinci/Cr3dOv3r)
-	* Cr3dOv3r simply you give it an email then it does two simple jobs (but useful): Search for public leaks for the email and if it any, it returns with all available details about the leak (Using hacked-emails site API). Now you give it this email's old or leaked password then it checks this credentials against 16 websites (ex: facebook, twitter, google...) then it tells you if login successful in any website!
+* [Hunting Pastebin with PasteHunter](https://techanarchy.net/2017/09/hunting-pastebin-with-pastehunter/)
 
 
 #### End Sort
@@ -204,7 +198,8 @@ when directory browsing is turned off.
 		* theHarvester is a tool for gathering e-mail accounts, subdomain names, virtual hosts, open ports/ banners, and employee names from different public sources (search engines, pgp key servers).
 	* [discover.sh](https://github.com/leebaird/discover)
 		* For use with Kali Linux. Custom bash scripts used to automate various pentesting tasks.
-
+	* [Cr3dOv3r](https://github.com/D4Vinci/Cr3dOv3r)
+		* Cr3dOv3r simply you give it an email then it does two simple jobs (but useful): Search for public leaks for the email and if it any, it returns with all available details about the leak (Using hacked-emails site API). Now you give it this email's old or leaked password then it checks this credentials against 16 websites (ex: facebook, twitter, google...) then it tells you if login successful in any website!
 
 
 
@@ -223,7 +218,7 @@ when directory browsing is turned off.
 	* OSINT search engine of public documents(handy)
 * [GlobalFileSearch](https://ftplike.com)
 		* An FTP Search Engine that may come in handy.
-
+* [NAPALM FTP Indexer](https://www.searchftps.net/)
 
 -------------
 #### <a name="meta"></a>General Meta Data
@@ -251,7 +246,8 @@ when directory browsing is turned off.
 	* Description: The objective of this program is to gather emails, subdomains, hosts, employee names, open ports and banners from different public sources like search engines, PGP key servers and SHODAN computer database. This tool is intended to help Penetration testers in the early stages of the penetration test in order to understand the customer footprint on the Internet. It is also useful for anyone that wants to know what an attacker can see about their organization. 
 * [OSINT OPSEC Tool](https://github.com/hyprwired/osint-opsec-tool)
 	* Description: The OSINT OPSEC Tool monitors multiple 21st Century OSINT sources real-time for keywords, then analyses the results, generates alerts, and maps trends of the data, finding all sorts of info people probably don't want others to see... 
-
+* [Pattern](https://github.com/clips/pattern/blob/master/README.md)
+	* Pattern is a web mining module for Python. It has tools for: Data Mining: web services (Google,; Twitter, Wikipedia), web crawler, HTML DOM parser; Natural Language Processing: part-of-speech taggers, n-gram search, sentiment analysis, WordNet; Machine Learning: vector space model, clustering, classification (KNN, SVM, Perceptron); Network Analysis: graph centrality and visualization.
 
 -------------
 #### <a name="gh"></a>Google Hacking
@@ -291,6 +287,8 @@ when directory browsing is turned off.
 	* [LinkedIn Gatherer](https://github.com/DisK0nn3cT/linkedin-gatherer)
 	* [socilab](http://socilab.com/#home)
 		* This site allows users to visualize and analyze their LinkedIn network using methods derived from social-scientific research. Full sample output is shown here. The site is free and open-source. Have fun!
+	* [Linkedin_profiles](https://github.com/wpentester/Linkedin_profiles)
+		* This script uses selenium to scrape linkedin employee details from a specified company. If the script isn't working, you can always browse to the desired company's employee page and paste in the link on line 69 like this: "employees_page = url"
 * Twitter
 	* [OneMillionTweetMap](http://onemilliontweetmap.com/)
 		* This page maps the last geolocalized tweets delivered by the twitter stream API. ... YES - IN REAL-TIME - and we keep "only" the last one million tweets.

@@ -496,6 +496,7 @@ Writeups(Papers/Videos)
 * OS X
 	* [Reverse Engineering Mac OS X](http://reverse.put.as/papers/)
 		* Excellent source of papers from 2003-2013 all with a focus on reversing either iOS or OS X.
+	* [osx & ios re 101](https://github.com/michalmalik/osx-re-101)
 * Packers
 	* [A Brief Examination of Hacking Team’s Crypter: core-packer.](http://ethanheilman.tumblr.com/post/128708937890/a-brief-examination-of-hacking-teams-crypter)
 	* [The Art of Unpacking - Paper](https://www.blackhat.com/presentations/bh-usa-07/Yason/Whitepaper/bh-usa-07-yason-WP.pdf)

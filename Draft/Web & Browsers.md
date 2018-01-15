@@ -1,5 +1,3 @@
-
-
 # Web, Web Applications & Browsers
 
 Web TOC
@@ -36,6 +34,7 @@ Web TOC
 * [CMS Specific Tools](#cms)
 * [HTML5](#html5)
 * [Javascript](#javascript)
+* [Java Server Faces](#jsf)
 * [REST & Web Services](#rest)
 * [PHP](#php)
 * [Ruby](#ruby)
@@ -62,29 +61,36 @@ Web TOC
 	* [Intro to content Security Policy](http://www.html5rocks.com/en/tutorials/security/content-security-policy/)
 * Add SOAP
 * Clickjack(ing)
+* Websockets
+
 
 * [Detecting and Exploiting the HTTP PUT Method](http://www.smeegesec.com/2014/10/detecting-and-exploiting-http-put-method.html)
-
 * [AngularJS Security Documentation](https://docs.angularjs.org/guide/security)
-
-* [The Absurdly Underestimated Dangers of CSV Injection](http://georgemauer.net/2017/10/07/csv-injection.html)
-
-[Hacking with Pictures - Syscan2015](http://www.slideshare.net/saumilshah/hacking-with-pictures-syscan-2015)
-
-* [Abusing Google App Scripting Through Social Engineering](http://www.redblue.team/2017/02/abusing-google-app-scripting-through.html)
-
+* [Hacking with Pictures - Syscan2015](http://www.slideshare.net/saumilshah/hacking-with-pictures-syscan-2015)
 * [File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
-
 * [ebay.com: RCE using CCS](http://secalert.net/#ebay-rce-ccs)
-
-* [Exploiting Python Code Injection in Web Applications](https://sethsec.blogspot.com/2016/11/exploiting-python-code-injection-in-web.html)
-
+* [Abusing Google App Scripting Through Social Engineering](http://www.redblue.team/2017/02/abusing-google-app-scripting-through.html)
 * [Unrestricted File Upload Security Testing - Aptive](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
 
-Add websockets
-* [WSSiP: A WebSocket Manipulation Proxy])(https://github.com/nccgroup/wssip)
-	* Short for "WebSocket/Socket.io Proxy", this tool, written in Node.js, provides a user interface to capture, intercept, send custom messages and view all WebSocket and Socket.IO communications between the client and server.
-	
+
+
+* **Reflected File Download**
+	* [Reflected File Download - A New Web Attack Vector - BHEU 2014](https://www.youtube.com/watch?v=dl1BJUNk8V4)
+		* Skip to 19:24 for technical content
+	* [Paper](https://drive.google.com/file/d/0B0KLoHg_gR_XQnV4RVhlNl96MHM/view)
+
+* [How to configure Json.NET to create a vulnerable web API](https://www.alphabot.com/security/blog/2017/net/How-to-configure-Json.NET-to-create-a-vulnerable-web-API.html)
+
+* **Struts**
+	* [Apache Struts 2.3.5 < 2.3.31 / 2.5 < 2.5.10 - Remote Code Execution](https://www.exploit-db.com/exploits/41570/)
+* [Tricks to improve web app excel export attacks - Jerome Smith - CamSec2016](https://www.slideshare.net/exploresecurity/camsec-sept-2016-tricks-to-improve-web-app-excel-export-attacks)
+
+https://github.com/stephenbradshaw/breakableflask
+https://github.com/JasonHinds13/hackable
+https://github.com/omarkurt/flask-injection
+
+
+
 #### End Sort
 
 
@@ -117,9 +123,20 @@ Add websockets
 	* [HTTP Evasion](http://noxxi.de/research/http-evader-explained-8-borderline-robustness.html)	
 	* [Big List of Naughty Strings](https://github.com/minimaxir/big-list-of-naughty-strings)
 		* The Big List of Naughty Strings is an evolving list of strings which have a high probability of causing issues when used as user-input data. This is intended for use in helping both automated and manual QA testing; useful for whenever your QA engineer walks into a bar.
+
 * **Interesting Attacks that don't fit elsewhere**
 	* [Abusing Certificate Transparency Or How To Hack Web Applications BEfore Installation - Hanno Bock](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-Hanno-Boeck-Abusing-Certificate-Transparency-Logs.pdf)
 	* [Typosquatting programming language package managers](http://incolumitas.com/2016/06/08/typosquatting-package-managers/)
+	* **General Reconnaissance Techniques**
+		* [Insecure HTTP Header Removal](https://www.aspectsecurity.com/blog/insecure-http-header-removal)
+	* **CSV Injection**
+		* [From CSV to CMD to qwerty](http://www.exploresecurity.com/from-csv-to-cmd-to-qwerty/)
+		* [Comma Separated Vulnerabilities](https://www.contextis.com/blog/comma-separated-vulnerabilities)
+			* This post introduces Formula Injection, a technique for exploiting ‘Export to Spreadsheet’ functionality in web applications to attack users and steal spreadsheet contents. It also details a command injection exploit for Apache OpenOffice and LibreOffice that can be delivered using this technique.
+		* [The Absurdly Underestimated Dangers of CSV Injection](http://georgemauer.net/2017/10/07/csv-injection.html)
+
+
+
 
 ------------------
 ### <a name="pvuln"></a>Purposely Vulnerable Web Applications/Testing Grounds
@@ -204,19 +221,24 @@ Add websockets
 	* [sonar.js](https://thehackerblog.com/sonar-a-framework-for-scanning-and-exploiting-internal-hosts-with-a-webpage/)
 		* A Framework for Scanning and Exploiting Internal Hosts With a Webpage
 * **Recon**
-	* [hackability](https://github.com/PortSwigger/hackability)
-		* Rendering Engine Hackability Probe performs a variety of tests to discover what the unknown rendering engine supports. To use it simply extract it to your web server and visit the url in the rendering engine you want to test. The more successful probes you get the more likely the target engine is vulnerable to attack.
-	* [WhatWeb](https://github.com/urbanadventurer/WhatWeb)
-	* [Tachyon](https://github.com/delvelabs/tachyon)
-		* Tachyon is a Fast Multi-Threaded Web Discovery Tool
-	* [dirsearch](https://github.com/maurosoria/dirsearch)
-		* dirsearch is a simple command line tool designed to brute force directories and files in websites.
-* **Scanner**
 	* **General**
+		* [hackability](https://github.com/PortSwigger/hackability)
+			* Rendering Engine Hackability Probe performs a variety of tests to discover what the unknown rendering engine supports. To use it simply extract it to your web server and visit the url in the rendering engine you want to test. The more successful probes you get the more likely the target engine is vulnerable to attack.
+	* **Content/Folder Discovery**
+		* [Tachyon](https://github.com/delvelabs/tachyon)
+			* Tachyon is a Fast Multi-Threaded Web Discovery Tool
+		* [dirsearch](https://github.com/maurosoria/dirsearch)
+			* dirsearch is a simple command line tool designed to brute force directories and files in websites.
+	
+	* **Web Page**
 		* [HTCAP](https://github.com/segment-srl/htcap)
 			* htcap is a web application scanner able to crawl single page application (SPA) in a recursive manner by intercepting ajax calls and DOM changes
 		* [gethead](https://github.com/httphacker/gethead)
 			* HTTP Header Analysis Vulnerability Tool 
+	* **Web Server**	
+		* [WhatWeb](https://github.com/urbanadventurer/WhatWeb)
+		* [httprecon - Advanced Web Server Fingerprinting](https://github.com/scipag/httprecon-win32)
+			* The httprecon project is doing some research in the field of web server fingerprinting, also known as http fingerprinting. The goal is the highly accurate identification of given httpd implementations. This is very important within professional vulnerability analysis. Besides the discussion of different approaches and the documentation of gathered results also an implementation for automated analysis is provided. This software shall improve the easyness and efficiency of this kind of enumeration. Traditional approaches as like banner-grabbing, status code enumeration and header ordering analysis are used. However, many other analysis techniques were introduced to increase the possibilities of accurate web server fingerprinting. Some of them were already discussed in the book Die Kunst des Penetration Testing (Chapter 9.3, HTTP-Fingerprinting, pp. 530-550).
 	* **Virtual Hosts/VHOSTs**
 		* [virtual-host-discovery](https://github.com/jobertabma/virtual-host-discovery)
 			* This is a basic HTTP scanner that'll enumerate virtual hosts on a given IP address. During recon, this might help expand the target by detecting old or deprecated code. It may also reveal hidden hosts that are statically mapped in the developer's /etc/hosts file.
@@ -246,7 +268,8 @@ Add websockets
 	* dirsearch is a simple command line tool designed to brute force directories and files in websites.
 * [Tachyon](https://github.com/delvelabs/tachyon)
 		* Tachyon is a Fast Multi-Threaded Web Discovery Tool
-
+* [Syntribos](https://github.com/openstack/syntribos)
+	* Given a simple configuration file and an example HTTP request, syntribos can replace any API URL, URL parameter, HTTP header and request body field with a given set of strings. Syntribos iterates through each position in the request automatically. Syntribos aims to automatically detect common security defects such as SQL injection, LDAP injection, buffer overflow, etc. In addition, syntribos can be used to help identify new security defects by automated fuzzing.
 
 
 ----------------
@@ -324,7 +347,6 @@ Add websockets
 * [Exploiting Python Code Injection in Web Applications](https://sethsec.blogspot.com/2016/11/exploiting-python-code-injection-in-web.html)
 * [Popular Approaches to Preventing Code Injection Attacks are Dangerously Wrong - AppSecUSA 2017](https://www.youtube.com/watch?v=GjK0bB4K2zA&app=desktop)
 * See also: JNDI, JSON, SQLi, XSS
-
 
 
 
@@ -453,7 +475,11 @@ Add websockets
 
 -------------------
 ### NodeJS
-* **General**	
+* **101**
+* **Educational**
+	* [NodeGoat](https://github.com/OWASP/NodeGoat)
+		* Being lightweight, fast, and scalable, Node.js is becoming a widely adopted platform for developing web applications. This project provides an environment to learn how OWASP Top 10 security risks apply to web applications developed using Node.js and how to effectively address them.
+* **Articles/Blogposts/Presentations/Talks/Writeups**	
 	* [Reverse shell on a Node.js application](https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/)
 	* [NodeJS: Remote Code Execution as a Service - Peabnuts123 – Kiwicon 2016](https://www.youtube.com/watch?v=Qvtfagwlfwg)
 		* [SLIDES](http://archivedchaos.com/post/153372061089/kiwicon-2016-slides-upload)
@@ -470,14 +496,17 @@ Add websockets
 	* [SQL Injection Knowledge Base](http://websec.ca/kb/sql_injection#MySQL_Testing_Injection)
 	* [SQL Injection Cheat Sheet](http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/)
 	* [SQL Injection Cheat Sheet - NetSparker](https://www.netsparker.com/blog/web-security/sql-injection-cheat-sheet/)
-* **Testing**
-	* [Laduanum](http://laudanum.sourceforge.net/)
-		* “Laudanum is a collection of injectable files, designed to be used in a pentest when SQL injection flaws are found and are in multiple languages for different environments.They provide functionality such as shell, DNS query, LDAP retrieval and others.”
+* **Articles/Blogposts/Presentations/Talks/Writeups**
+	* [Abusing NoSQL Databases - Ming Chow](https://www.defcon.org/images/defcon-21/dc-21-presentations/Chow/DEFCON-21-Chow-Abusing-NoSQL-Databases.pdf)
+	* [No SQL, No Injection? - Examining NoSQL Security](https://arxiv.org/pdf/1506.04082.pdf)
+	* [NoSQL Injection in Modern Web Applications - petecorey.com](http://www.petecorey.com/blog/2016/03/21/nosql-injection-in-modern-web-applications/)
 * **Tools**
 	* [sqlmap](https://github.com/sqlmapproject/sqlmap)
 	* [jSQL Injection](https://github.com/ron190/jsql-injection)
 		* jSQL Injection is a Java application for automatic SQL database injection.
 	* [mongoaudit](https://github.com/stampery/mongoaudit)
+	* [Laduanum](http://laudanum.sourceforge.net/)
+		* “Laudanum is a collection of injectable files, designed to be used in a pentest when SQL injection flaws are found and are in multiple languages for different environments.They provide functionality such as shell, DNS query, LDAP retrieval and others.”
 * **Training**
 	* [SQLi Lab lessons](https://github.com/Audi-1/sqli-labs)
 		* SQLI-LABS is a platform to learn SQLI
@@ -486,6 +515,10 @@ Add websockets
 	* [Performing sqlmap POST request injection](https://hackertarget.com/sqlmap-post-request-injection/)
 * **DB2**
 	* [DB2 SQL injection cheat sheet](https://securityetalii.es/2012/05/20/db2-sql-injection-cheat-sheet/)
+* **MongoDB**
+	* [Attacking MongoDB - ZeroNights2012](http://blog.ptsecurity.com/2012/11/attacking-mongodb.html)
+	* [MongoDB Injection - How To Hack MongoDB](http://www.technopy.com/mongodb-injection-how-to-hack-mongodb-html/)
+	* [Hacking NodeJS and MongoDB - websecurify](https://blog.websecurify.com/2014/08/hacking-nodejs-and-mongodb.html)
 * **MS-SQL**
 	* [Pen test and hack microsoft sql server (mssql)](http://travisaltman.com/pen-test-and-hack-microsoft-sql-server-mssql/)
 * **MySQL**
@@ -499,6 +532,9 @@ Add websockets
 	* [PostgreSQL Pass The Hash protocol design weakness](https://hashcat.net/misc/postgres-pth/postgres-pth.pdf)
 * **Oracle SQL**
 	* [Oracle SQL Injection Guides & Whitepapers](https://haiderm.com/oracle-sql-injection-guides-and-whitepapers/)
+
+
+
 
 
 
@@ -556,6 +592,12 @@ Add websockets
 	* [Server-Side Template Injection](http://blog.portswigger.net/2015/08/server-side-template-injection.html)
 		* [Video](https://www.youtube.com/watch?v=3cT0uE7Y87s)
 		* This paper defines a methodology for detecting and exploiting template injection, and shows it being applied to craft RCE zerodays for two widely deployed enterprise web applications. Generic exploits are demonstrated for five of the most popular template engines, including escapes from sandboxes whose entire purpose is to handle user-supplied templates in a safe way.
+* **Purposefully Vulnerable Webapps**
+	* [Breakable Flask](https://github.com/stephenbradshaw/breakableflask)
+		* A simple vulnerable Flask application.
+	* [Hackable](https://github.com/JasonHinds13/hackable)
+		* A python flask app that is purposfully vulnerable to SQL injection and XSS Attacks
+	* [Injecting Flask - Nvisium](https://nvisium.com/blog/2015/12/07/injecting-flask/) 
 * **Writeups**
 	* [Exploring SSTI in Flask/Jinja2](https://nvisium.com/blog/2016/03/09/exploring-ssti-in-flask-jinja2/)
 	* [Exploring SSTI in Flask/Jinja2, Part II](https://nvisium.com/blog/2016/03/11/exploring-ssti-in-flask-jinja2-part-ii/)
@@ -607,7 +649,7 @@ Add websockets
 ### <a name="timing"></a>Timing Attacks
 * [Timing attack - Wikipedia](https://en.wikipedia.org/wiki/Timing_attack)
 * [Race conditions on the web ](https://www.josipfranjkovic.com/blog/race-conditions-on-web)
-* [Practical Race Condition Vulnerabilities in Web Applications](https://de
+* [Practical Race Condition Vulnerabilities in Web Applications](https://defuse.ca/race-conditions-in-web-applications.htm)
 * [Race The Web (RTW)](https://github.com/insp3ctre/race-the-web)
 	* Tests for race conditions in web applications by sending out a user-specified number of requests to a target URL (or URLs) simultaneously, and then compares the responses from the server for uniqueness. Includes a number of configuration options.
 * [timing_attack](https://github.com/ffleming/timing_attack)
@@ -662,6 +704,7 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [Postcards from a Post-XSS World - Michael Zalewski](http://lcamtuf.coredump.cx/postxss/#dangling-markup-injection)
 		* This page is a rough collection of notes on some of the fundamental alternatives to direct script injection that would be available to attackers following the universal deployment of CSP or other security mechanisms designed to prevent the execution of unauthorized scripts. I hope to demonstrate that in many cases, the capabilities offered by these alternative methods are highly compatible with the goals of contemporary XSS attacks.
 	* [Self XSS: we’re not so different you and I - Mathias Karlsson](https://www.youtube.com/watch?v=l3yThCIF7e4)
+	* [XSS Web Filter Bypass list - rvrsh3ll](https://gist.github.com/rvrsh3ll/09a8b933291f9f98e8ec#file-xxsfilterbypass-lst-L1)
 * **Testing**
 	* [XSS Test String Dump](https://github.com/zsitro/XSS-test-dump/blob/master/xss.txt)
 	* [XSS Filter Bypass List](https://gist.github.com/rvrsh3ll/09a8b933291f9f98e8ec)
@@ -793,10 +836,17 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [Dom Flow - Untangling The DOM For More Easy-Juicy Bugs  - BH USA 2015](https://www.youtube.com/watch?v=kedmtrIEW1k&list=PLH15HpR5qRsXF78lrpWP2JKpPJs_AFnD7&index=111)
 	* [Javascript Deobfuscator - kahusecurity](http://www.kahusecurity.com/tools/)
 	* [Revelo - kahusecurity](http://www.kahusecurity.com/tools/)
+	* [pwn.js](https://github.com/theori-io/pwnjs)
+		* A Javascript library for browser exploitation
+	* [Retire.js](https://retirejs.github.io/retire.js/)
+		* There is a plethora of JavaScript libraries for use on the web and in node.js apps out there. This greatly simplifies, but we need to stay update on security fixes. "Using Components with Known Vulnerabilities" is now a part of the OWASP Top 10 and insecure libraries can pose a huge risk for your webapp. The goal of Retire.js is to help you detect use of version with known vulnerabilities.
 
 ----------------
 ### Java Server Faces (JSF)
-* [Misconfigured JSF ViewStates can lead to severe RCE vulnerabilities - alphabot](https://www.alphabot.com/security/blog/2017/java/Misconfigured-JSF-ViewStates-can-lead-to-severe-RCE-vulnerabilities.html)
+* **101**
+	* [Java Server Faces - Wikipedia](https://en.wikipedia.org/wiki/JavaServer_Faces)
+* **Articles/Blogposts/Presentations/Talks/Writeups**
+	* [Misconfigured JSF ViewStates can lead to severe RCE vulnerabilities - alphabot](https://www.alphabot.com/security/blog/2017/java/Misconfigured-JSF-ViewStates-can-lead-to-severe-RCE-vulnerabilities.html)
 
 
 
@@ -852,13 +902,14 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [RESTful Services, The Web Security Blind Spot](https://www.youtube.com/watch?feature=player_embedded&v=pWq4qGLAZHI#!)
 		* [Blogpost](https://xiom.com/2016/10/31/restful-services-web-security-blind-spot/)
 		* [Presentation Slides -pdf](https://xiomcom.files.wordpress.com/2016/10/security-testing-for-rest-applications-v6-april-2013.pdf)
+	* [Learn REST: A Tutorial](http://rest.elkstein.org/)
 	* [Cracking and Fixing REST APIs](http://www.sempf.net/post/Cracking-and-Fixing-REST-APIs)
 	* [Cracking and fixing REST services](http://www.irongeek.com/i.php?page=videos/converge2015/track109-cracking-and-fixing-rest-services-bill-sempf)
 	* [Representational State Transfer - Wikipedia](https://en.wikipedia.org/wiki/Representational_state_transfer)
 	* [Web Services Security Testing Cheat Sheet Introduction - OWASP](https://www.owasp.org/index.php/Web_Service_Security_Testing_Cheat_Sheet)
 	* [Service-Oriented-Architecture](https://en.wikipedia.org/wiki/Service-oriented_architecture)
 	* [Microservices](https://en.wikipedia.org/wiki/Microservices)
-	* [Learn REST: A Tutorial](http://rest.elkstein.org/)
+	* [REST and Stateless Session IDs](https://appsandsecurity.blogspot.com/2011/04/rest-and-stateless-session-ids.html)
 * **Attacking**
 	* [REST Security Cheat Sheet](REST Security Cheat Sheet)
 	* [REST Assessment Cheat Sheet](https://www.owasp.org/index.php/REST_Assessment_Cheat_Sheet)
@@ -892,12 +943,27 @@ fuse.ca/race-conditions-in-web-applications.htm)
 
 -----------------
 ### <a name="saml"></a>Security Assertion Markup Language (SAML)
-* [Security Assertion Markup Language - Wikipedia](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language)
-* [SAML 2.0 - Wikipedia](https://en.wikipedia.org/wiki/SAML_2.0)
-* Golden SAML
+* **101**
+	* [Security Assertion Markup Language - Wikipedia](https://en.wikipedia.org/wiki/Security_Assertion_Markup_Language)
+	* [SAML 2.0 - Wikipedia](https://en.wikipedia.org/wiki/SAML_2.0)
+* **Articles/Blogposts/Writeups**
+	* [With Great Power Comes Great Pwnage](https://www.compass-security.com/fileadmin/Datein/Research/Praesentationen/area41_2016_saml.pdf)
+	* [Out of Band  XML External Entity Injection via SAML SSO - Sean Melia](https://seanmelia.files.wordpress.com/2016/01/out-of-band-xml-external-entity-injection-via-saml-redacted.pdf)
+	* [Web-based Single Sign-On and the Dangers of SAML XML Parsing](https://blog.sendsafely.com/web-based-single-sign-on-and-the-dangers-of-saml-xml-parsing)
+	* [Following the white Rabbit Down the SAML Code](https://medium.com/section-9-lab/following-the-white-rabbit-5e392e3f6fb9)
+	* [Evilginx - Advanced Phishing with Two-factor Authentication Bypass](https://breakdev.org/evilginx-advanced-phishing-with-two-factor-authentication-bypass/)
+		* [Evilginx - Update 1.0](https://breakdev.org/evilginx-1-0-update-up-your-game-in-2fa-phishing/)
+		* [Evilginx - Update 1.1](https://breakdev.org/evilginx-1-1-release/)
+* **Golden SAML Attack**
 	* [Golden SAML: Newly Discovered Attack Technique Forges Authentication to Cloud Apps](https://www.cyberark.com/threat-research-blog/golden-saml-newly-discovered-attack-technique-forges-authentication-cloud-apps/)
 	* [shimit](https://github.com/cyberark/shimit)
 		* In a golden SAML attack, attackers can gain access to an application (any application that supports SAML authentication) with any privileges they desire and be any user on the targeted application. shimit allows the user to create a signed SAMLResponse object, and use it to open a session in the Service Provider. shimit now supports AWS Console as a Service Provider, more are in the works...
+* **Tools**
+	* [Evilginx](https://github.com/kgretzky/evilginx)
+		* Evilginx is a man-in-the-middle attack framework used for phishing credentials and session cookies of any web service. It's core runs on Nginx HTTP server, which utilizes proxy_pass and sub_filter to proxy and modify HTTP content, while intercepting traffic between client and server.
+	* [SAMLReQuest Burpsuite Extention](https://insinuator.net/2016/06/samlrequest-burpsuite-extention/)
+
+
 
 -----------------
 ### <a name="scraping"></a>Scraping
@@ -1005,9 +1071,17 @@ fuse.ca/race-conditions-in-web-applications.htm)
 
 
 ----------------
-### WebUSB
-* [WebUSB API - Sept2017](https://wicg.github.io/webusb/)
+### Web Sockets
+* [WSSiP: A WebSocket Manipulation Proxy])(https://github.com/nccgroup/wssip)
+	* Short for "WebSocket/Socket.io Proxy", this tool, written in Node.js, provides a user interface to capture, intercept, send custom messages and view all WebSocket and Socket.IO communications between the client and server.
 
+----------------
+### WebUSB
+* **101**
+	* [WebUSB API - Sept2017](https://wicg.github.io/webusb/)
+* **Articles/Blogposts/Presentations/Talks/Writeups**
+	* [WebUSB - How a website could steal data off your phone](https://labs.mwrinfosecurity.com/blog/webusb/)
+		* This blog post looks in to the capabilities of WebUSB to understand how it works, the new attack surface, and privacy issues. We will describe the processes necessary to get access to devices and how permissions are handled in the browser. Then we will discuss some security implications and shows, how a website can use WebUSB to establish an ADB connection and effectively compromise a connected Android phone.
 
 
 
@@ -1033,6 +1107,7 @@ fuse.ca/race-conditions-in-web-applications.htm)
 * [XXEInjector](https://github.com/enjoiz/XXEinjector)
 	* XXEinjector automates retrieving files using direct and out of band methods. Directory listing only works in Java applications. Bruteforcing method needs to be used for other applications.
 * [Exploiting XXE In File Upload Functionality](https://www.blackhat.com/docs/us-15/materials/us-15-Vandevanter-Exploiting-XXE-Vulnerabilities-In-File-Parsing-Functionality.pdf)
+* [XML Parser Evaluation - web-in-security.blogspot.de](https://web-in-security.blogspot.de/2016/03/xml-parser-evaluation.html)
 
 
 
@@ -1152,7 +1227,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* Scout2 is a security tool that lets AWS administrators assess their environment's security posture. Using the AWS API, Scout2 gathers configuration data for manual inspection and highlights high-risk areas automatically. Rather than pouring through dozens of pages on the web, Scout2 supplies a clear view of the attack surface automatically.
 	* [AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)
 		* Security Tool to Look For Interesting Files in S3 Buckets
-
+	* [buckethead.py](https://github.com/RhinoSecurityLabs/Security-Research/tree/master/tools/aws-pentest-tools)
+		* buckethead.py searches across every AWS region for a variety of bucket names based on a domain name, subdomains, affixes given and more. Currently the tool will only present to you whether or not the bucket exists or if they're listable. If the bucket is listable, then further interrogation of the resource can be done. It does not attempt download or upload permissions currently but could be added as a module in the future. You will need the awscli to run this tool as this is a python wrapper around this tool.
 
 ------------------
 ### <a name="gcc"></a>Google Compute Cloud/AppEngine

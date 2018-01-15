@@ -29,18 +29,18 @@ root-me
 ### <a name="general">General</a>
 General
 * [ctf-time](https://ctftime.org/)
-* 101
+* **101**
 	* [How to play your first OpenCTF](http://www.openctf.com/html/firstctf.html)
 	* [Capture The Flag (CTF): What Is It for a Newbie?](https://www.alienvault.com/blogs/security-essentials/capture-the-flag-ctf-what-is-it-for-a-newbie)
 	* [Advice for my first CTF? - Reddit Thread](https://www.reddit.com/r/hacking/comments/24py5h/advice_for_my_first_ctf/)
-* Beginner Focused CTFs
-* Challenge Archives
+* **Beginner Focused CTFs**
+* **Challenge Archives**
 	* [Archive of recent CTFs](http://repo.shell-storm.org/CTF/)
-* Challenges (one-offs)
+* **Challenges (one-offs)**
 	* [Forensics Contest](http://forensicscontest.com/)
 	* [List of themed Hacker challenges](http://counterhack.net/Counter_Hack/Challenges.html)
 	* [Sans Community Forensics Challenges](https://www.digital-forensics.sans.org/community/challenges)
-* Challenge Sites
+* **Challenge Sites**
 	* [HacktheBox.eu](https://www.hackthebox.eu/)
 	* [Wechall](http://wechall.net/)
 		* An amazing site. Tracks, lists, scores, various challenge sites. If you’re looking for a challenge or two, and not a wargame, this is the site you want to hit up first.
@@ -56,39 +56,50 @@ General
 	* [Hack This](https://www.hackthis.co.uk/)
 	* [XSS Challenge Wiki](https://github.com/cure53/xss-challenge-wiki/wiki)
 		* [List without spoilers:](https://github.com/cure53/xss-challenge-wiki/wiki/Older-Challenges-and-Write-Ups)
-* Educational
+* **Educational**
 	* [Suggestions on Running a CTF](https://github.com/pwning/docs/blob/master/suggestions-for-running-a-ctf.markdown)
 		* This document describes some of the design decisions and technical details involved in running a CTF competition. It attempts to summarize some opinions held by the CTF community and list some specific pitfalls to avoid when designing problems.
 	* [The Many Maxims of Maximally Effective CTFs](http://captf.com/maxims.html)
-* General
+* **General**
 	* [CTF Field Guide - TrailofBits](https://trailofbits.github.io/ctf/)
 	* [Golden Flag CTF Awards](http://golden-flags.com/)
-* Handy Tools
+* **Handy Tools**
 	* [pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html)
 		* pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing the image data); it can optionally dump almost all of the chunk-level information in the image in human-readable form. For example, it can be used to print the basic statistics about an image (dimensions, bit depth, etc.); to list the color and transparency info in its palette (assuming it has one); or to extract the embedded text annotations. This is a command-line program with batch capabilities.
 	* [pwntools](https://github.com/Gallopsled/pwntools)
 	* [CTF Scripts and PyInstaller (.py > .exe) ](http://www.primalsecurity.net/ctf-scripts-and-pyinstaller-py-exe/)
-* Making Your Own CTF
+* **Making Your Own CTF**
 	* [AppJailLauncher](https://github.com/trailofbits/AppJailLauncher)
 		* CTF Challenge Framework for Windows 8 and above 
 	* [CTFd](https://github.com/isislab/CTFd)
 		* CTFd is a CTF in a can. Easily modifiable and has everything you need to run a jeopardy style CTF.
+	* [FBCTF](https://github.com/facebook/fbctf)
+		* The Facebook CTF is a platform to host Jeopardy and “King of the Hill” style Capture the Flag competitions.
+	* [hack-the-arch](https://github.com/mcpa-stlouis/hack-the-arch)
+		* This is a scoring server built using Ruby on Rails by the Military Cyber Professionals Association (MCPA). It is free to use and extend under the MIT license (see LICENSE file). The goal of this project is to provide a standard generic scoring server that provides an easy way to add and modify problems and track statistics of a Cyber Capture the Flag event. While it's not recommended, this server can be hosted with your challenges but we do recommend sand-boxing your challenges so they do not affect the scoring server.
 	* [iCTF Framwork](https://github.com/ucsb-seclab/ictf-framework)
 		* This is the framework that the UC Santa Barbara Seclab uses to host the iCTF, and that can be used to create your own CTFs at http://ictf.cs.ucsb.edu/framework. The framework creates several VMs: one for the organizers and one for every team. 
 	* [NightShade](https://github.com/UnrealAkama/NightShade)
 		* NightShade is a simple security capture the flag framework that is designed to make running your own contest as easy as possible.
 	* [Mellivora](https://github.com/Nakiami/mellivora)
 		* Mellivora is a CTF engine written in PHP
+	* [picoCTF-Platform-2](https://github.com/picoCTF/picoCTF-Platform-2)
+		* The picoCTF Platform 2 is the infrastructure on which picoCTF runs. The platform is designed to be easily adapted to other CTF or programming competitions. picoCTF Platform 2 targets Ubuntu 14.04 LTS but should work on just about any "standard" Linux distribution. It would probably even work on Windows. MongoDB must be installed; all default configurations should work.
+	* [py_chall_factory](https://github.com/pdautry/py_chall_factory)
+		*  Small framework to create/manage/package jeopardy CTF challenges
+	* [Root the Box](https://github.com/moloch--/RootTheBox)
+		* Root the Box is a real-time scoring engine for a computer wargames where hackers can practice and learn. The application can be easily modified for any hacker CTF game. Root the Box attempts to engage novice and experienced hackers alike by combining a fun game-like environment, with realistic challenges that convey knowledge applicable to real-world penetration testing. Just as in traditional CTF games, each team attacks targets of varying difficulty and sophistication, attempting to collect flags. However in Root the Box, teams can also create "Botnets" by uploading a small bot program to target machines. Teams are periodically rewarded with (in-game) money for each bot in their botnet; the larger the botnet the larger the reward.
+	* [scorebot](https://github.com/legitbs/scorebot)
 	* [SecGen](https://github.com/SecGen/SecGen)
 		* SecGen creates vulnerable virtual machines so students can learn security penetration testing techniques.
-* Vulnerable Virtual Machines
+* **Vulnerable Virtual Machines**
 	* [Vulnhub](https://www.Vulnhub.com)
 	* [The Hacker Games](http://www.scriptjunkie.us/2012/04/the-hacker-games/)
 		* VM Setup to practice VM breakouts/defense. Hack the VM before it hacks you!
 		* [VM Download](http://www.scriptjunkie.us/files/TheHackerGames.zip)
 	* [VulnInjector](https://github.com/g0tmi1k/VulnInjector)
 		* Generates a 'vulnerable' machine using the end users own setup files & product keys. 
-* Wargames
+* **Wargames**
 	* [Ringzer0 team CTF](http://ringzer0team.com/)
 		* Description: RingZer0 Team's online CTF offers you tons of challenges designed to test and improve your hacking skills thru hacking challenge. Register and get a flag for every challenges. 
 	* [pwn0 Wargame](https://pwn0.com/)
@@ -99,15 +110,9 @@ General
 		* OverTheWire provides several wargames publicly/freely available. All very good quality. Highly recommended.
 	* [Smash the Stack Wargames](http://smashthestack.org/)
 		* Smash the stack hosts several public wargames of very good quality for free use. Highly recommended.
-* Writeups
+* **Writeups**
 	* [CTF Writeups](https://github.com/ctfs/write-ups)
 	* [CTF write-ups 2015](https://github.com/ctfs/write-ups-2015)
 	* [CTF write-ups 2017](https://github.com/ctfs/write-ups-2017)
 	* [Pwning (sometimes) with style Dragons’ notes on CTFs](http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf)
-
-
-
-
-
-
 

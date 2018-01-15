@@ -15,12 +15,56 @@
 * [Miscellaneous](#misc)
 
 
-### Cull
+### Sort
+
+* [MASCAB: a Micro-Architectural Side-Channel Attack Bibliography](https://github.com/danpage/mascab/)
+	* Cryptography is a fast-moving field, which is enormously exciting but also quite challenging: resources such as the IACR eprint archive and CryptoBib help, but even keeping track of new results in certain sub-fields can be difficult, let alone then making useful contributions. The sub-field of micro-architectural side-channel attacks is an example of this, in part as the result of it bridging multiple disciplines (e.g., cryptography and computer architecture). I've found this particularly challenging (and so frustrating) over say the last 5 years; the volume of papers has expanded rapidly, but the time I'd normally allocate to reading them has been eroded by other commitments (as evidenced by a pile of printed papers gathering dust on my desk). In the end, I decided to tackle this problem by progressively a) collating papers I could read, then b) reading them one-by-one, but in no particular order, and attempting to summarise their contribution (and so organise the sub-field as a whole in my head). MASCAB is the result: after starting to advise MSc and PhD students on how to navigate the sub-field, it seems likely to be of use to others as well.
+
+From: https://www.reddit.com/r/securityengineering/comments/7o2uzy/a_collection_of_links_to_pdfs_of_papers_on/
+```
+    1973-10-01 "A note on the confinement problem" by Lampson https://www.cs.utexas.edu/~shmat/courses/cs380s_fall09/lampson73.pdf
+    1994-??-?? - "Countermeasures and tradeoffs for a class of covert timing channels" by Ray https://pdfs.semanticscholar.org/5505/384390d0b0bf86de8804baeaf82254572363.pdf
+    2003-09-08 - "Cryptanalysis of DES implemented on computers with cache" by Tsunoo et al. http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.135.1221&rep=rep1&type=pdf
+    2005-04-14 - "Cache-timing attacks on AES" by Bernstein https://cr.yp.to/antiforgery/cachetiming-20050414.pdf
+    2005-05-13 - "CACHE MISSING FOR FUN AND PROFIT" by Percival http://css.csail.mit.edu/6.858/2014/readings/ht-cache.pdf
+    2006-02-13 - "Cache attacks and countermeasures: the case of AES" by Osvik et al. https://www.cs.tau.ac.il/~tromer/papers/cache.pdf
+    2006-08-23 - "Predicting Secret Keys via Branch Prediction" by Aciicmez et al. https://eprint.iacr.org/2006/288.pdf
+    2007-03-20 - "On the Power of Simple Branch Prediction Analysis" by Acıi¸cmez1 et al. https://eprint.iacr.org/2006/351.pdf
+    2007-12-18 - "New Branch Prediction Vulnerabilities in OpenSSL and Necessary Software Countermeasures" by Aciicmez et al. https://eprint.iacr.org/2007/039.pdf
+    2010-11-22 - "Cache Games -- Bringing Access-Based Cache Attacks on AES to Practice" by Gullasch et al https://eprint.iacr.org/2010/594.pdf
+    2012-03-08 - "Plugging Side-Channel Leaks with Timing Information Flow Control" by Ford https://arxiv.org/pdf/1203.3428.pdf
+    2013-05-19 - "Practical Timing Side Channel Attacks against Kernel Space ASLR" by Hund et al. http://www.ieee-security.org/TC/SP2013/papers/4977a191.pdf
+    2013-08-13 - "The Page-Fault Weird Machine: Lessons in Instruction-less Computation" by Bangert et al. https://www.usenix.org/system/files/conference/woot13/woot13-bangert.pdf
+    2013-08-15 - "CacheAudit: A Tool for the Static Analysis of Cache Side Channels" by Doychev et al. https://eprint.iacr.org/2013/253.pdf
+    2013-09-26 - "On the Prevention of Cache-Based Side-Channel Attacks in a Cloud Environment" Godfrey et al. https://pdfs.semanticscholar.org/6367/9824606b1b0deb4a44639a4e4b3e5eb49303.pdf
+    2014-01-01 - "CACHE-BASED SIDE-CHANNEL ATTACKS IN MULTI-TENANT PUBLIC CLOUDS AND THEIR COUNTERMEASURES" by Zhang https://pdfs.semanticscholar.org/95a2/40ac8a7bbee77b32120081f00477e38776fe.pdf
+    2014-11-03 - "The Last Mile An Empirical Study of Timing Channels on seL4" by Cock et al http://research.davidcock.fastmail.fm/papers/Cock_GMH_14.pdf
+    2015-04-02 - "An Empirical Bandwidth Analysis of Interrupt-Related Covert Channels" by Gay e tal. http://www.mais.informatik.tu-darmstadt.de/WebBibPHP/papers/2013/2013-GayMantelSudbrock-EmpiricalIRCC.pdf
+    2015-05-17 - "Last-Level Cache Side-Channel Attacks are Practical" by Liu et al http://palms.ee.princeton.edu/system/files/SP_vfinal.pdf
+    2015-05-17 - "S$A: A Shared Cache Attack That Works across Cores and Defies VM Sandboxing -- and Its Application to AES" - by Irazoqui et al http://users.wpi.edu/~teisenbarth/pdf/SharedCacheAttackSnP2015.pdf
+    2016-03-07 - "Rigorous Analysis of Software Countermeasures against Cache Attacks" by Doychev et al. https://arxiv.org/pdf/1603.02187.pdf
+    2016-06-12 - "Flush+Flush: a fast and stealthy cache attack" by Gruss et al. https://gruss.cc/files/flushflush.pdf
+    2016-08-10 - "Verifying Constant-Time Implementations" by Almeida & Barbosa https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_almeida.pdf
+    2016-10-?? - "Jump over ASLR: Attacking branch predictors to bypass ASLR" by Evtyushkin et al. http://www.cs.wm.edu/~dmitry/assets/files/evtyushkin-micro16-camera.pdf
+    2016-10-?? - "Breaking Kernel Address Space Layout Randomization with Intel TSX" by Jang et al. https://sslab.gtisc.gatech.edu/assets/papers/2016/jang:drk-ccs.pdf
+    2016-10-?? - "A Survey of Microarchitectural Timing Attacks and Countermeasures on Contemporary Hardware" by Qian Ge et al http://eprint.iacr.org/2016/613
+    2016-10-24 - "Prefetch Side-Channel Attacks: Bypassing SMAP and Kernel ASLR" by Gruss et al https://gruss.cc/files/prefetch.pdf
+    2016-01-?? - "Attacking Cloud through cache based side channel in virtualized environment" by Teja et al. http://ijarcsee.org/index.php/IJARCSEE/article/download/301/267
+    2017-02-27 - "ASLR on the Line: Practical Cache Attacks on the MMU" by Gras & Kaveh et al http://www.cs.vu.nl/~herbertb/download/papers/anc_ndss17.pdf
+    2017-03-20 - "CacheZoom: How SGX Amplifies The Power of Cache Attacks" by Moghimi - https://arxiv.org/pdf/1703.06986.pdf
+    2017-05-20 - "Leaky Cauldron on the Dark Land: Understanding Memory Side-Channel Hazards in SGX" by Wang et al https://arxiv.org/pdf/1705.07289.pdf
+    2017-06-24 - "Kaslr is dead: long live kaslr", "the KAISER paper" by Gruss et al https://gruss.cc/files/kaiser.pdf
+    2017-08-16 - "Prime+Abort: A Timer-Free High-Precision L3 Cache Attack using Intel TSX" by Disselkoen et al https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-disselkoen.pdf
+    2017-10-?? - "LAZARUS: Practical Side-Channel Resilient Kernel-Space Randomization" by Gens et al http://jin.ece.ufl.edu/papers/RAID17.pdf
+    2018-01-04 - "Spectre Attacks: Exploiting Speculative Execution" by Kocher et al https://spectreattack.com/spectre.pdf
+    2018-01-04 - "Meltdown" by Lipp et al. https://meltdownattack.com/meltdown.pdf
+```
+
 
 
 https://conversations.im/xeps/multi-end.html
 
-### End Cull
+### End Sort
 
 
 -----

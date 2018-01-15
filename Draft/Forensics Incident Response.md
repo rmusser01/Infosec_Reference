@@ -27,10 +27,6 @@
 
 https://forensiccontrol.com/resources/free-software/
 
-* [LogonTracer](https://github.com/JPCERTCC/LogonTracer)
-	* Investigate malicious Windows logon by visualizing and analyzing Windows event log
-
-
 #### End Sort
 
 
@@ -110,8 +106,10 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 	* firepwd.py, an open source tool to decrypt Mozilla protected passwords
 * [osxcollector](https://github.com/Yelp/osxcollector)
 	* OSXCollector is a forensic evidence collection & analysis toolkit for OSX.
-[Jeffrey's Image Metadata Viewer](http://exif.regex.info/exif.cgi)
-
+* [Jeffrey's Image Metadata Viewer](http://exif.regex.info/exif.cgi)
+* **Android**
+	* [wechat-dump](https://github.com/ppwwyyxx/wechat-dump)
+		* Dump wechat messages from android. Right now it can dump messages in text-only mode, or generate a single-file html containing voice messages, images, emoji, etc.
 
 --------------
 ### <a name="firmware"></a>Firmware 
@@ -376,6 +374,8 @@ database of Microsoft Active Directory (NTDS.DIT).
 	* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
 * [PowerForensics - PowerShell Digital Forensics](https://github.com/Invoke-IR/PowerForensics)
 	* The purpose of PowerForensics is to provide an all inclusive framework for hard drive forensic analysis. PowerForensics currently supports NTFS and FAT file systems, and work has begun on Extended File System and HFS+ support.
+* [LogonTracer](https://github.com/JPCERTCC/LogonTracer)
+	* Investigate malicious Windows logon by visualizing and analyzing Windows event log
 
 --------------
 ### <a name="osx">OS X Forensics Tools</a>
@@ -387,7 +387,8 @@ database of Microsoft Active Directory (NTDS.DIT).
 	* KnockKnock displays persistent items (scripts, commands, binaries, etc.), that are set to execute automatically on OS X
 * [Pac4Mac](https://github.com/sud0man/pac4mac)
 	* Pac4Mac (Plug And Check for Mac OS X) is a portable Forensics framework (to launch from USB storage) allowing extraction and analysis session informations in highlighting the real risks in term of information leak (history, passwords, technical secrets, business secrets, ...). Pac4Mac can be used to check security of your Mac OS X system or to help you during forensics investigation.
-
+* [Mac OS X Keychain Forensic Tool](https://github.com/n0fate/chainbreaker)
+	* The chainbreaker can extract user credential in a Keychain file with Master Key or user password in forensically sound manner. Master Key candidates can be extracted from volafox or volatility keychaindump module. Supports: Snow Leopard, Lion, Mountain Lion, Mavericks, Yosemite, El Capitan, (High) Sierra
 
 
 --------------

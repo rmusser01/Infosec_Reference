@@ -29,8 +29,18 @@
 
 
 
-#### Cull/Sort
+#### Sort
 * Redo formatting
+
+* [Dynamically Inject a Shared Library Into a Running Process on Android/ARM](https://www.evilsocket.net/2015/05/01/dynamically-inject-a-shared-library-into-a-running-process-on-androidarm/)
+* [Android Native API Hooking With Library Injection and ELF Introspection](https://www.evilsocket.net/2015/05/04/android-native-api-hooking-with-library-injecto/)
+* [ARM Inject](https://github.com/evilsocket/arminject)
+	* An application to dynamically inject a shared object into a running process on ARM architectures and hook API calls.
+
+	
+https://github.com/doridori/Android-Security-Reference
+* [Android-Vulnerabilities-Overview](https://github.com/CHEF-KOCH/Android-Vulnerabilities-Overview)
+	* Android Vulnerabilities Overview (AVO) is a databse of known security vulnerabilities in Android.
 
 https://blog.gdssecurity.com/labs/2015/2/18/when-efbfbd-and-friends-come-knocking-observations-of-byte-a.html
 

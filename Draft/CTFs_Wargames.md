@@ -11,13 +11,6 @@
 
 #### Cull
 
-
-[Greenhorn](https://github.com/trailofbits/greenhorn)
-* Greenhorn is a Windows Pwnable released during CSAW Quals 2014. It's meant to be an introduction to modern Windows binary exploitation.
-
-
-sec-gen
-
 pentestit
 
 pentestlab
@@ -34,12 +27,16 @@ General
 	* [Capture The Flag (CTF): What Is It for a Newbie?](https://www.alienvault.com/blogs/security-essentials/capture-the-flag-ctf-what-is-it-for-a-newbie)
 	* [Advice for my first CTF? - Reddit Thread](https://www.reddit.com/r/hacking/comments/24py5h/advice_for_my_first_ctf/)
 * **Beginner Focused CTFs**
+	* PicoCTF
+	* CSAW
 * **Challenge Archives**
 	* [Archive of recent CTFs](http://repo.shell-storm.org/CTF/)
 * **Challenges (one-offs)**
 	* [Forensics Contest](http://forensicscontest.com/)
 	* [List of themed Hacker challenges](http://counterhack.net/Counter_Hack/Challenges.html)
 	* [Sans Community Forensics Challenges](https://www.digital-forensics.sans.org/community/challenges)
+	* [Greenhorn](https://github.com/trailofbits/greenhorn)
+		* Greenhorn is a Windows Pwnable released during CSAW Quals 2014. It's meant to be an introduction to modern Windows binary exploitation.
 * **Challenge Sites**
 	* [HacktheBox.eu](https://www.hackthebox.eu/)
 	* [Wechall](http://wechall.net/)
@@ -92,6 +89,8 @@ General
 	* [scorebot](https://github.com/legitbs/scorebot)
 	* [SecGen](https://github.com/SecGen/SecGen)
 		* SecGen creates vulnerable virtual machines so students can learn security penetration testing techniques.
+	* [Flawed Fortress](https://github.com/rgajendran/ctf_marker)
+		* Flawed Fortress is a front end platform for hosting Capture the Flag Event (CTF), it is programmed with PHP, JQuery, JavaScript and phpMyAdmin. Currently, It is designed to import SecGen CTF challenges using `marker.xml` file (which is generated in the project folder when creating a CTF Challenge)
 * **Vulnerable Virtual Machines**
 	* [Vulnhub](https://www.Vulnhub.com)
 	* [The Hacker Games](http://www.scriptjunkie.us/2012/04/the-hacker-games/)

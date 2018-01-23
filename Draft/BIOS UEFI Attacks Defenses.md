@@ -21,6 +21,7 @@ TOC
 #### Sort
 http://www.stoned-vienna.com/
 
+* [How to hack a disabled computer or run code in Intel ME](http://blog.ptsecurity.ru/2018/01/intel-me.html)
 * [Intel Q3’17 ME 11.x, SPS 4.0, and TXE 3.0 Security Review Cumulative Update](https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00086&languageid=en-fr)
 
 #### End Sort
@@ -72,6 +73,10 @@ http://www.stoned-vienna.com/
 * [From SMM to userland in a few bytes](https://scumjr.github.io/2016/01/10/from-smm-to-userland-in-a-few-bytes/)
 * [Getting Physical: Extreme abuse of Intel based Paging Systems - Part 1](https://blog.coresecurity.com/2016/05/10/getting-physical-extreme-abuse-of-intel-based-paging-systems-part-1/)
 * [I Boot when U-Boot, Bernardo Maia Rodrigues (@bernardomr) & Vincent Ruijter (`@_evict`)](https://www.youtube.com/watch?v=2-Y4X81QHys&index=11&list=PLwZycuzv10iLBFwRIWNAR-s4iuuUMRuEB)
+* [Extreme Privelege Escalataion on Windows8 UEFI Systems](https://www.youtube.com/watch?v=UJp_rMwdyyI)
+	* [Slides](https://www.blackhat.com/docs/us-14/materials/us-14-Kallenberg-Extreme-Privilege-Escalation-On-Windows8-UEFI-Systems.pdf)
+	* Summary by stormehh from reddit: In this whitepaper (and accompanying Defcon/Blackhat presentations), the authors demonstrate vulnerabilities in the UEFI "Runtime Service" interface accessible by a privileged userland process on Windows 8. This paper steps through the exploitation process in great detail and demonstrates the ability to obtain code execution in SMM and maintain persistence by means of overwriting SPI flash
+
 
 ------------------------
 ### <a name="firmware"></a>Firmware Analysis

@@ -27,6 +27,9 @@
 
 https://forensiccontrol.com/resources/free-software/
 
+
+
+
 #### End Sort
 
 
@@ -183,6 +186,8 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 	* A Loadable Kernel Module (LKM) which allows for volatile memory acquisition from Linux and Linux-based devices, such as Android. This makes LiME unique as it is the first tool that allows for full memory captures on Android devices. It also minimizes its interaction between user and kernel space processes during acquisition, which allows it to produce memory captures that are more forensically sound than those of other tools designed for Linux memory acquisition.
 * [Volatility](https://github.com/volatilityfoundation/volatility)
 	* An advanced memory forensics framework
+	* [VolUtility](https://github.com/kevthehermit/VolUtility)
+		* Web Interface for Volatility Memory Analysis framework
 * [evolve](https://github.com/JamesHabben/evolve)
 	* Web interface for the Volatility Memory Forensics Framework 
 * [How to Pull passwords from a memory dump](https://cyberarms.wordpress.com/2011/11/04/memory-forensics-how-to-pull-passwords-from-a-memory-dump/)
@@ -201,6 +206,11 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 * [Packet Capture Examples from "Practical Packet Analysis"](http://www.chrissanders.org/captures/)
 
 
+
+--------------
+### Transport Neutral Encapsulation Format
+* [Transport Neutral Encapsulation Format - Wikipedia](https://en.wikipedia.org/wiki/Transport_Neutral_Encapsulation_Format)
+* [Analyzing TNEF files](https://isc.sans.edu/diary/rss/23175)
 
 --------------
 ### <a name="talks">Presentations & Talks</a>

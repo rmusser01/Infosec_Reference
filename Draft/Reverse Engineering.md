@@ -30,9 +30,8 @@
 	* [code](https://github.com/0xdea/frida-scripts)
 * [Cryptoshark](https://github.com/frida/cryptoshark)
 	* Interactive code tracer for reverse-engineering proprietary software 
-* [Windows Anti-Debug techniques - OpenProcess filtering](https://blog.xpnsec.com/anti-debug-openprocess/)
-
-
+* [Offensive & Defensive Android Reverse Engineering](https://github.com/rednaga/training/tree/master/DEFCON23)
+	* Thinking like an attacker, you will learn to identify juicy Android targets, reverse engineer them, find vulnerabilities, and write exploits. We will deep dive into reverse engineering Android frameworks, applications, services, and boot loaders with the end goal of rooting devices. Approaching from a defensive perspective, we will learn quickly triage applications to determine maliciousness, exploits, and weaknesses. After learning triage skills, we will deep dive into malicious code along while dealing with packers, obfuscators, and anti-reversing techniques. Between the offensive and defensive aspects of this class, you should walk away with the fundamentals of reverse engineering and a strong understanding of how to further develop your skills for mobile platforms.
 
 #### End sort
 
@@ -57,6 +56,7 @@ General
 	* [mammon_'s tales to his grandson](https://mammon.github.io/tales/)
 	* [Reversing Prince Harming’s Kiss of Death]( https://reverse.put.as/2015/07/01/reversing-prince-harmings-kiss-of-death/)
 	* [Theorem prover, symbolic execution and practical reverse-engineering](https://doar-e.github.io/presentations/securityday2015/SecDay-Lille-2015-Axel-0vercl0k-Souchet.html#/)
+	* [Jailbreaks and Pirate Tractors: Reverse Engineering Do’s and Don’ts](https://www.youtube.com/watch?v=8_mMTVsOM6Y)
 * Timelines
 	* [Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
 		* Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
@@ -82,6 +82,8 @@ Things that Don't fit elsewhere
 	* [binwally](https://github.com/bmaia/binwally)
 		* Binary and Directory tree comparison tool using the Fuzzy Hashing concept (ssdeep)
 	* [Using binwally - a directory tree diff tool](http://w00tsec.blogspot.com/2013/12/binwally-directory-tree-diff-tool-using.html)
+	* [Diaphora](https://github.com/joxeankoret/diaphora)
+		* Diaphora (`διαφορά`, Greek for 'difference') is a program diffing plugin for IDA Pro and Radare2, similar to Zynamics Bindiff or the FOSS counterparts DarunGrim, TurboDiff, etc... It was released during SyScan 2015. It works with IDA Pro 6.9, 6.95 and 7.0. In batch mode, it supports Radare2 too (check this fork). In the future, adding support for Binary Ninja is also planned.
 * References
 	* [FCC ID Lookup](http://transition.fcc.gov/oet/ea/fccid/)
 		* Lookup devices according to FCC ID
@@ -225,6 +227,8 @@ Debuggers
 		* [Getting Started with WinDbg (User-Mode)](https://msdn.microsoft.com/en-us/library/windows/hardware/dn745911%28v=vs.85%29.aspx)
 		* [Getting Started with WinDbg (Kernel-Mode)](https://msdn.microsoft.com/en-us/library/windows/hardware/dn745912%28v=vs.85%29.aspx)
 		* [REhints MEX - WinDBG addons](https://github.com/REhints/WinDbg/tree/master/MEX)
+		* [pykd](https://pypi.python.org/pypi/pykd)
+			* python windbg extension
 	* [WinAppDbg](http://winappdbg.sourceforge.net/)
 		* The WinAppDbg python module allows developers to quickly code instrumentation scripts in Python under a Windows environment.  It uses ctypes to wrap many Win32 API calls related to debugging, and provides a powerful abstraction layer to manipulate threads, libraries and processes, attach your script as a debugger, trace execution, hook API calls, handle events in your debugee and set breakpoints of different kinds (code, hardware and memory). Additionally it has no native code at all, making it easier to maintain or modify than other debuggers on Windows.  The intended audience are QA engineers and software security auditors wishing to test or fuzz Windows applications with quickly coded Python scripts. Several ready to use tools are shipped and can be used for this purposes.  Current features also include disassembling x86/x64 native code, debugging multiple processes simultaneously and produce a detailed log of application crashes, useful for fuzzing and automated testing.
 	* [Open Source Windows x86/x64 Debugger](http://x64dbg.com/)
@@ -259,12 +263,20 @@ Decompilers & Disassemblers
 			* Reverse engineering for x86 binaries (elf-format). Generate a more readable code (pseudo-C) with colored syntax. Warning, the project is still in development, use it at your own risks. This tool will try to disassemble one function (by default main). The address of the function, or its symbol, can be passed by argument.
 		* [Medusa](https://github.com/wisk/medusa)
 			* Medusa is a disassembler designed to be both modular and interactive. It runs on Windows and Linux, it should be the same on OSX. This project is organized as a library. To disassemble a file you have to use medusa_dummy or qMedusa. wxMedusa and pydusa are not available anymore.
+		* [PLASMA](https://github.com/plasma-disassembler/plasma)
+			* PLASMA is an interactive disassembler. It can generate a more readable assembly (pseudo code) with colored syntax. You can write scripts with the available Python api (see an example below). The project is still in big development.
 	* Java
 		* [Procyon - Java Decompiler](https://bitbucket.org/mstrobel/procyon/wiki/Java%20Decompiler)
+			* [Luyten](https://github.com/deathmarine/Luyten)
+				* Java Decompiler Gui for Procyon
 		* [JavaSnoop](https://www.aspectsecurity.com/tools/javasnoop)
 			* A tool that lets you intercept methods, alter data and otherwise test the security of Java applications on your computer.
 		* [Blackhat - 2010 JavaSnoop: How to hack anything written in Java](https://www.youtube.com/watch?v=ipuSmbxBxKw)
 		* [JavaSnoop – Debugging Java applications](https://www.securityartwork.es/2013/02/20/javasnoop-debugging-java-applications/)
+		* [Krakatau](https://github.com/Storyyeller/Krakatau)
+			* Java decompiler, assembler, and disassembler
+		* [Bytecode Viewer](https://github.com/Konloch/bytecode-viewer)
+			* Bytecode Viewer is an Advanced Lightweight Java Bytecode Viewer, GUI Java Decompiler, GUI Bytecode Editor, GUI Smali, GUI Baksmali, GUI APK Editor, GUI Dex Editor, GUI APK Decompiler, GUI DEX Decompiler, GUI Procyon Java Decompiler, GUI Krakatau, GUI CFR Java Decompiler, GUI FernFlower Java Decompiler, GUI DEX2Jar, GUI Jar2DEX, GUI Jar-Jar, Hex Viewer, Code Searcher, Debugger and more. It's written completely in Java, and it's open sourced. It's currently being maintained and developed by Konloch.
 	* .NET
 		* [DotPeek](http://www.jetbrains.com/decompiler/features/)
 			* dotPeek is a .NET decompiler that has several handy features.
@@ -419,7 +431,8 @@ Anti-Reverse Engineering Techniques & Countermeasures
 		* AntiRE is a collection of such anti analysis approaches, gathered from various sources like Peter Ferrie's The "Ultimate" Anti-Debugging Reference and Ange Albertini's corkami. While these techniques by themselves are nothing new, we believe that the integration of these tests in a single, executable file provides a comprehensive overview on these, suitable for directly studying their behaviour in a harmless context without additional efforts. AntiRE includes different techniques to detect or circumvent debuggers, fool execution tracing, and disable memory dumping. Furthermore, it can detect the presence of different virtualization environments and gives examples of techniques used to twarth static analysis.
 	* [OpenRCE Anti Reverse Engineering Techniques Database](http://www.openrce.org/reference_library/anti_reversing)
 	* [Windows Anti-Debugging Reference](http://www.symantec.com/connect/articles/windows-anti-debug-reference)
-		* This paper classifies and presents several anti-debugging techniques used on Windows NT-based operating systems. Anti-debugging techniques are ways for a program to detect if it runs under control of a debugger. They are used by commercial executable protectors, packers and malicious software, to prevent or slow-down the process of reverse-engineering. We'll suppose the program is analyzed under a ring3 debugger, such as OllyDbg on Windows platforms. The paper is aimed towards reverse-engineers and malware analysts. Note that we will talk purely about generic anti-debugging and anti-tracing techniques. Specific debugger detection, such as window or processes enumeration, registry scanning, etc. will not be addressed here		
+		* This paper classifies and presents several anti-debugging techniques used on Windows NT-based operating systems. Anti-debugging techniques are ways for a program to detect if it runs under control of a debugger. They are used by commercial executable protectors, packers and malicious software, to prevent or slow-down the process of reverse-engineering. We'll suppose the program is analyzed under a ring3 debugger, such as OllyDbg on Windows platforms. The paper is aimed towards reverse-engineers and malware analysts. Note that we will talk purely about generic anti-debugging and anti-tracing techniques. Specific debugger detection, such as window or processes enumeration, registry scanning, etc. will not be addressed here
+	* [Windows Anti-Debug techniques - OpenProcess filtering](https://blog.xpnsec.com/anti-debug-openprocess/)
 	* [Detecting debuggers by abusing a bad assumption within Windows](http://www.triplefault.io/2017/08/detecting-debuggers-by-abusing-bad.html)
 	* [Dangers of the Decompiler - A Sampling of Anti-Decompilation Techniques](https://blog.ret2.io/2017/11/16/dangers-of-the-decompiler/)
 * Tools

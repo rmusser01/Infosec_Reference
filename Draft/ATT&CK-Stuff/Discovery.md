@@ -8,9 +8,8 @@
 
 
 
-
-### Account Discovery
 -------------------------------
+### Account Discovery
 * [Account Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1087)
 	* Adversaries may attempt to get a listing of local system or domain accounts. 
 
@@ -36,9 +35,8 @@
 
 
 
-
-### Application Window Discovery
 -------------------------------
+### Application Window Discovery
 * [Application Window Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1010)
 	* Adversaries may attempt to get a listing of open application windows. Window listings could convey information about how the system is used or give context to information collected by a keylogger. In Mac, this can be done natively with a small AppleScript script.
 
@@ -288,7 +286,8 @@ Web
 * [Nmap NSE - smb-enum-shares](https://nmap.org/nsedoc/scripts/smb-enum-shares.html)
 	*  Attempts to list shares using the srvsvc.NetShareEnumAll MSRPC function and retrieve more information about them using srvsvc.NetShareGetInfo. If access to those functions is denied, a list of common share names are checked.  Running NetShareEnumAll will work anonymously against Windows 2000, and requires a user-level account on any other Windows version. Calling NetShareGetInfo requires an administrator account on all versions of Windows up to 2003, as well as Windows Vista and Windows 7, if UAC is turned down. Even if NetShareEnumAll is restricted, attempting to connect to a share will always reveal its existence. So, if NetShareEnumAll fails, a pre-generated list of shares, based on a large test network, are used. If any of those succeed, they are recorded. 
 * [List Shares in Windows w/ PowerShell](http://krypted.com/windows-server/list-shares-in-windows-w-powershell/)
-* '''
+* 
+```
 The command, from PowerShell would be something similar to the following:
 
     get-WmiObject -class Win32_Share 
@@ -299,10 +298,7 @@ Assuming communication is working as intended, you can also query for the shares
 
 One can also list shared printers with a little trickeration in the {} side of things:
 get-WmiObject -list | where {$_.name -match “Printer”}
-''' 
-
-
-
+```
 
 
 

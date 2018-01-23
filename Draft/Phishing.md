@@ -15,26 +15,10 @@
 
 #### Sort
 
-
-* [Welcome to the Excel Software Development Kit](https://msdn.microsoft.com/en-us/library/office/bb687883.aspx)
-
-* [Hello World XLL](https://github.com/edparcell/HelloWorldXll)
-	* This is a simple XLL, showing how to create an XLL from scratch.
-
 * [Add-In Opportunities for Office Persistence](https://labs.mwrinfosecurity.com/blog/add-in-opportunities-for-office-persistence/)
 	* This post will explore various opportunities for gaining persistence through native Microsoft Office functionality.  It was inspired by Kostas Lintovois’ similar work which identified ways to persist in transient Virtual Desktop Infrastructure (VDI) environments through adding a VBA backdoor to Office template files 
-
 * [One Template To Rule 'Em All](https://labs.mwrinfosecurity.com/publications/one-template-to-rule-em-all/)
 	* This presentation discussed how Office security settings and templates can be abused to gain persistence in VDI implementations where traditional techniques relying on the file system or the Registry are not applicable. Additionally, it was described how the introduction of application control and anti-exploitation technologies may affect code execution in locked down environments and how these controls can be circumvented through the use of VBA.
-
-* [DLL Tricks with VBA to Improve Offensive Macro Capability](https://labs.mwrinfosecurity.com/blog/dll-tricks-with-vba-to-improve-offensive-macro-capability/)
-
-* [DLL Execution via Excel.Application RegisterXLL() method](https://gist.github.com/ryhanson/227229866af52e2d963cf941af135a52)
-	* A DLL can be loaded and executed via Excel by initializing the Excel.Application COM object and passing a DLL to the RegisterXLL method. The DLL path does not need to be local, it can also be a UNC path that points to a remote WebDAV server.
-* [ExcelDllLoader](https://github.com/3gstudent/ExcelDllLoader)
-	* Execute DLL via the Excel.Application object's RegisterXLL() method
-* [xllpoc](https://github.com/MoooKitty/xllpoc)
-	* A small project that aggregates community knowledge for Excel XLL execution, via xlAutoOpen() or PROCESS_ATTACH.
 
 #### End sort
 
@@ -64,7 +48,7 @@
 	* [How do I phish? – Advanced Email Phishing Tactics - Pentest Geek](https://www.pentestgeek.com/2013/01/30/how-do-i-phish-advanced-email-phishing-tactics/)
 	* [Real World Phishing Techniques - Honeynet Project](http://www.honeynet.org/book/export/html/89)
 	* [Phishing with Maldocs - n00py](https://www.n00py.io/2017/04/phishing-with-maldocs/)
-
+	* [Tabnabbing - An art of phishing - securelayer7](http://blog.securelayer7.net/tabnabbing-art-phishing/)
 
 
 
@@ -110,7 +94,12 @@
 	* Cartero is a modular project divided into commands that perform independent tasks (i.e. Mailer, Cloner, Listener, AdminConsole, etc...). In addition each sub-command has repeatable configuration options to configure and automate your work.
 * [FiercePhish](https://github.com/Raikia/FiercePhish)
 	* FiercePhish is a full-fledged phishing framework to manage all phishing engagements. It allows you to track separate phishing campaigns, schedule sending of emails, and much more
-
+* [King Phisher](https://github.com/securestate/king-phisher)
+	* King Phisher is a tool for testing and promoting user awareness by simulating real world phishing attacks. It features an easy to use, yet very flexible architecture allowing full control over both emails and server content. King Phisher can be used to run campaigns ranging from simple awareness training to more complicated scenarios in which user aware content is served for harvesting credentials.
+* [SpeedPhish Framework](https://github.com/tatanus/SPF)
+	* SPF (SpeedPhish Framework) is a python tool designed to allow for quick recon and deployment of simple social engineering phishing exercises.
+* [CredSniper](https://github.com/ustayready/CredSniper)
+	* CredSniper is a phishing framework written with the Python micro-framework Flask and Jinja2 templating which supports capturing 2FA tokens. Easily launch a new phishing site fully presented with SSL and capture credentials along with 2FA tokens using CredSniper. The API provides secure access to the currently captured credentials which can be consumed by other applications using a randomly generated API token.
 
 
 ------------------
@@ -152,6 +141,7 @@
 	* [Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)
 	* [Outlook and Exchange for the Bad Guys Nick Landers - Derbycon6](https://www.youtube.com/watch?v=cVhc9VOK5MY)
 	* [Microsoft Support and Recovery Assistant for Office 365](https://testconnectivity.microsoft.com/)
+	* [Elevating your security with Office 365 clients. - BRK3143](https://www.youtube.com/watch?v=BGpQ8S2-Oss&feature=youtu.be&t=372&app=desktop)
 * **Bypass**
 	* [How to bypass Web-Proxy Filtering](https://www.blackhillsinfosec.com/?p=5831)
 * **Outlook Rules**
@@ -178,6 +168,12 @@
 * **DDE**
 	* [About Dynamic Data Exchange](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648774(v=vs.85).aspx)
 	* [Exploiting Office native functionality: Word DDE edition](https://www.securityforrealpeople.com/2017/10/exploiting-office-native-functionality.html)
+* **DLL**
+	* [DLL Tricks with VBA to Improve Offensive Macro Capability](https://labs.mwrinfosecurity.com/blog/dll-tricks-with-vba-to-improve-offensive-macro-capability/)
+	* [DLL Execution via Excel.Application RegisterXLL() method](https://gist.github.com/ryhanson/227229866af52e2d963cf941af135a52)
+		* A DLL can be loaded and executed via Excel by initializing the Excel.Application COM object and passing a DLL to the RegisterXLL method. The DLL path does not need to be local, it can also be a UNC path that points to a remote WebDAV server.
+	* [ExcelDllLoader](https://github.com/3gstudent/ExcelDllLoader)
+		* Execute DLL via the Excel.Application object's RegisterXLL() method
 * **HTA**
 	* [HTML Application - Wikipedia](https://en.wikipedia.org/wiki/HTML_Application)
 	* [Learn About Scripting for HTML Applications (HTAs)](https://technet.microsoft.com/en-us/scriptcenter/dd742317.aspx)
@@ -217,7 +213,12 @@
 	* [Object Linking and Embedding - Wikipedia](https://en.wikipedia.org/wiki/Object_Linking_and_Embedding)
 	* [OLE - msdn.ms](https://msdn.microsoft.com/en-us/library/df267wkc.aspx)
 	* [Phishing with Empire](https://enigma0x3.net/2016/03/15/phishing-with-empire/)
-
+* **XLL**
+	* [Welcome to the Excel Software Development Kit](https://msdn.microsoft.com/en-us/library/office/bb687883.aspx)
+	* [Hello World XLL](https://github.com/edparcell/HelloWorldXll)
+		* This is a simple XLL, showing how to create an XLL from scratch.
+	* [xllpoc](https://github.com/MoooKitty/xllpoc)
+		* A small project that aggregates community knowledge for Excel XLL execution, via xlAutoOpen() or PROCESS_ATTACH.
 
 
 

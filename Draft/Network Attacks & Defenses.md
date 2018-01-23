@@ -8,8 +8,10 @@
 * [Bitsquatting](#bitsquat)
 * [DNS](#dns)
 * [D/DOS](#ddos)
+* [HNAP](#hnap)
 * [IDS/IPS Evasion](#evasion)
 * [ICMP](#icmp)
+* [IPSEC](#ipsec)
 * [IP Spoofing](#ipspoofing)
 * [IPMI](#ipmi)
 * [IPv6 Related](#ipv6)
@@ -47,11 +49,16 @@
 ##### To be sorted
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
-* [10 Places to Stick Your UNC Path - NetSPI](https://blog.netspi.com/10-places-to-stick-your-unc-path/)
-
-* [HackerOne H1-212 Capture the Flag Solution - Corben Douglas](http://www.sxcurity.pro/H1-212%20CTF%20Solution.pdf)
-
-
+* Add IPSEC Stuff
+* [MassDNS](https://github.com/blechschmidt/massdns)
+	* MassDNS is a simple high-performance DNS stub resolver targetting those who seek to resolve a massive amount of domain names in the order of millions or even billions. Without special configuration, MassDNS is capable of resolving over 350,000 names per second using publicly available resolvers.
+Printers
+* [Hacking Printers Wiki](http://hacking-printers.net/wiki/index.php/Main_Page)
+* [PRET](https://github.com/RUB-NDS/PRET)
+	* PRET is a new tool for printer security testing developed in the scope of a Master's Thesis at Ruhr University Bochum. It connects to a device via network or USB and exploits the features of a given printer language. Currently PostScript, PJL and PCL are supported which are spoken by most laser printers. This allows cool stuff like capturing or manipulating print jobs, accessing the printer's file system and memory or even causing physical damage to the device. All attacks are documented in detail in the Hacking Printers Wiki.
+* [Attacking *multifunction* printers and getting creds from them](http://www.irongeek.com/i.php?page=videos/bsidescleveland2014/plunder-pillage-and-print-the-art-of-leverage-multifunction-printers-during-penetration-testing-deral-heiland)
+* [HPwn - HP printer security research code](https://github.com/foxglovesec/HPwn)
+	* This repository contains varios scripts and projects referenced in FoxGlove security's HP printer blogpost.
 
 ##### sort end
 
@@ -93,9 +100,10 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 ------------
 ### <a name="attackw">Attacking Windows Networks</a>
-* Also check out the [Privilege Escalation/Post-Exploitation Section](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Privilege%20Escalation%20%26%20Post-Exploitation.md)
-* [Introducing PowerShell into your Arsenal with PS>Attack - Jared Haight](http://www.irongeek.com/i.php?page=videos/derbycon6/119-introducing-powershell-into-your-arsenal-with-psattack-jared-haight)
-* [Get-Help: An Intro to PowerShell and How to Use it for Evil - Jared Haight](https://www.psattack.com/presentations/get-help-an-intro-to-powershell-and-how-to-use-it-for-evil/)
+* **General**
+	* Also check out the Privilege Escalation/Post-Exploitation Document as well
+	* [Introducing PowerShell into your Arsenal with PS>Attack - Jared Haight](http://www.irongeek.com/i.php?page=videos/derbycon6/119-introducing-powershell-into-your-arsenal-with-psattack-jared-haight)
+	* [Get-Help: An Intro to PowerShell and How to Use it for Evil - Jared Haight](https://www.psattack.com/presentations/get-help-an-intro-to-powershell-and-how-to-use-it-for-evil/)
 * **Lateral Movement**
 	* [*Puff* *Puff* PSExec - Lateral Movement: An Overview](https://www.toshellandback.com/2017/02/11/psexec/)
 	* [Ditch PsExec, SprayWMI is here ;)](http://www.pentest.guru/index.php/2015/10/19/ditch-psexec-spraywmi-is-here/)
@@ -161,6 +169,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* [Dumping a Domain-s Worth of Passwords With Mimikatz pt. 2](http://www.harmj0y.net/blog/powershell/dumping-a-domains-worth-of-passwords-with-mimikatz-pt-2/)
 	* [LLMNR and NBT-NS Poisoning Using Responder](https://www.4armed.com/blog/llmnr-nbtns-poisoning-using-responder/)
 	* [Attacking ADFS Endpoints with PowerShell](http://www.irongeek.com/i.php?page=videos/derbycon6/118-attacking-adfs-endpoints-with-powershell-karl-fosaaen)
+	* [hashjacking](https://github.com/hob0/hashjacking)
 * **Getting Domain Admin**
 	* [Attack Methods for Gaining Domain Admin Rights in Active Directory - hackingandsecurity](https://hackingandsecurity.blogspot.com/2017/07/attack-methods-for-gaining-domain-admin.html?view=timeslide)
 * **Kerberos**
@@ -172,6 +181,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 * **Tools**
 	* [Responder](https://github.com/SpiderLabs/Responder/)
 		* Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication.
+		* [Where are my hashes? (Responder Observations) - markclayton](https://markclayton.github.io/where-are-my-hashes-responder-observations.html)
 	* [Enum4Linux](https://labs.portcullis.co.uk/tools/enum4linux/)
 		* Enum4linux is a tool for enumerating information from Windows and Samba systems. It attempts to offer similar functionality to enum.exe formerly available from www.bindview.com. It is written in Perl and is basically a wrapper around the Samba tools smbclient, rpclient, net and nmblookup. The tool usage can be found below followed by examples, previous versions of the tool can be found at the bottom of the page.
 * **Sharepoint**
@@ -210,8 +220,12 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 ------------
 #### <a name="arp"></a> ARP
-* [kickthemout](https://github.com/k4m4/kickthemout)
-	* A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all devices and ARP spoofs them off your local area network.
+* **101**
+	* [Address Resolution Protocol - Wikipedia](https://en.wikipedia.org/wiki/Address_Resolution_Protocol)
+	* [RFC 826 - An Ethernet Address Resolution Protocol or Converting Network Protocol Addresses to 48.bit Ethernet Address for Transmission on Ethernet Hardware](https://tools.ietf.org/html/rfc826)
+* **Tools**
+	* [kickthemout](https://github.com/k4m4/kickthemout)
+		* A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all devices and ARP spoofs them off your local area network.
 
 ------------
 #### <a name="bitsquat"></a>BitSquatting:
@@ -297,6 +311,18 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 
+
+
+
+---------------------
+### <a name="hnap"></a>HNAP
+* [Home Network Administration Protocol - Wikipedia](https://en.wikipedia.org/wiki/Home_Network_Administration_Protocol)
+	* Home Network Administration Protocol (HNAP) is a proprietary network protocol invented by Pure Networks, Inc. and acquired by Cisco Systems which allows identification, configuration, and management of network devices. HNAP is based on SOAP.
+* [HNAP - Router Security](https://www.routersecurity.org/hnap.php)
+* [More on HNAP - What is it, How to Use it, How to Find it](https://isc.sans.edu/forums/diary/More+on+HNAP+What+is+it+How+to+Use+it+How+to+Find+it/17648/)
+* [Home Network Administration Protocol (HNAP) Whitepaper](https://www.cisco.com/web/partners/downloads/guest/hnap_protocol_whitepaper.pdf)
+* [Hacking D-Link Routers With HNAP](https://regmedia.co.uk/2016/11/07/dlink_hnap_captcha.pdf)
+
 ------------
 ### <a name="icmp"></a>ICMP
 * **101**
@@ -339,6 +365,15 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 		* Dalton is a system that allows a user to quickly and easily run network packet captures ("pcaps") against an intrusion detection system ("IDS") sensor of his choice (e.g. Snort, Suricata) using defined rulesets and/or bespoke rules.
 	* [Fireaway](https://github.com/tcstool/Fireaway)
 		* Fireaway is a tool for auditing, bypassing, and exfiltrating data against layer 7/AppID inspection rules on next generation firewalls, as well as other deep packet inspection defense mechanisms, such as data loss prevention (DLP) and application aware proxies. These tactics are based on the principle of having to allow connections to establish through the NGFW in order to see layer 7 data to filter, as well as spoofing applications to hide communication channels inside the firewall logs as normal user traffic, such as Internet surfing. In the case of bypassing data loss prevention tools, Fireaway sends data in small "chunks", which do not match regular expression triggers and other DLP rules, as well as embedding data in spoofed HTTP headers of legitimate applications which most data loss prevention technologies are not designed to inspect. The tool also has had success defeating anomaly detection and heursitics engines through its ability to spoof application headers and hide data inside them.
+
+
+
+### <a name="ipsec"></a>IPSEC
+* IKEForce
+	* IKEForce is a command line IPSEC VPN brute forcing tool for Linux that allows group name/ID enumeration and XAUTH brute forcing capabilities.
+	* [Cracking IKE Mission:Improbable (Part 1)](https://www.trustwave.com/Resources/SpiderLabs-Blog/Cracking-IKE-Mission-Improbable-(Part-1)/)
+	* [Cracking IKE Mission:Improbable (Part 2) ](https://www.trustwave.com/Resources/SpiderLabs-Blog/Cracking-IKE-Mission-Improbable-(Part-2)/)
+	* [Cracking IKE Mission:Improbable (Part3) ](https://www.trustwave.com/Resources/SpiderLabs-Blog/Cracking-IKE-Mission-Improbable-(Part3)/)
 
 
 ------------
@@ -399,8 +434,12 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 ------------
 #### <a name="kerberos"></a>Kerberos
-Kerberos
-* 
+* **101**
+	* [Kerberos - Wikipedia](https://en.wikipedia.org/wiki/Kerberos_(protocol))
+	* [Kerberos Explained - msdn.ms](https://msdn.microsoft.com/en-us/library/bb742516.aspx)
+* **General**
+	* [Kerberos: The Network Authentication Protocol - MIT](https://web.mit.edu/kerberos/)
+	* [Explain like I’m 5: Kerberos](http://www.roguelynn.com/words/explain-like-im-5-kerberos/)
 
 ------------
 #### <a name="ldap"></a>LDAP
@@ -444,6 +483,10 @@ Kerberos
 		* Framework for Man-In-The-Middle attacks
 	* [Xeroxsploit](https://github.com/LionSec/xerosploit)
 		* Xerosploit is a penetration testing toolkit whose goal is to perform man in the middle attacks for testing purposes. It brings various modules that allow to realise efficient attacks, and also allows to carry out denial of service attacks and port scanning. Powered by bettercap and nmap.
+	* [bettercap](https://github.com/evilsocket/bettercap) 
+		* A complete, modular, portable and easily extensible MITM framework. 
+	* [NetRipper](https://github.com/NytroRST/NetRipper)
+		* NetRipper is a post exploitation tool targeting Windows systems which uses API hooking in order to intercept network traffic and encryption related functions from a low privileged user, being able to capture both plain-text traffic and encrypted traffic before encryption/after decryption.
 * **DNS**
 	* [FakeDNS](https://github.com/Crypt0s/FakeDns)
 		* A regular-expression based python MITM DNS server with support for DNS Rebinding attacks
@@ -495,18 +538,22 @@ Kerberos
 
 ------------
 #### <a name="modbus"></a>Modbus
-* See 'Modbus' in 'SCADA/Heavy Machinery'
-* [Modbus interface tutorial](https://www.lammertbies.nl/comm/info/modbus.html)
+* See 'Modbus' under 'SCADA/Heavy Machinery'
+
 
 
 
 
 ------------
-#### <a name="netbios"></a>Netbios
+#### <a name="netbios"></a>Netbios/LLMNR
 * **101**
 	* [NetBIOS - Wikipedia](https://en.wikipedia.org/wiki/NetBIOS)
 	* [NetBIOS - rhyshaden.com](http://www.rhyshaden.com/netbios.htm)
+	* [NetBIOS Name Resolution - technet.ms](https://technet.microsoft.com/library/cc958811.aspx)
+	* [Link-Local Multicast Name Resolution - Wikipedia](https://en.wikipedia.org/wiki/Link-Local_Multicast_Name_Resolution)
+	* [Link-Local Multicast Name Resolution - The cable guy - technet](https://technet.microsoft.com/library/bb878128)
 * **General/Articles/Writeups**
+	* [Local Network Attacks: LLMNR and NBT-NS Poisoning](https://www.sternsecurity.com/blog/local-network-attacks-llmnr-and-nbt-ns-poisoning)
 	* [Local Network Attacks: LLMNR and NBT-NS Poisoning](https://www.sternsecurity.com/blog/local-network-attacks-llmnr-and-nbt-ns-poisoning)
 * **Tools**
 	* [NbtScan](http://www.unixwiz.net/tools/nbtscan.html)
@@ -519,7 +566,7 @@ Kerberos
 
 ------------
 #### <a name="host"></a>Network Host Discovery/Service Discovery:
-* **Informational**
+* **Educational/Informational**
 	* [Nmap you’re doing it wrong - sneakerhax](https://sneakerhax.com/nmap-yourre-doing-it-wrong/)
 	* [Recon at scale - sneakerhax](https://sneakerhax.com/recon-at-scale/)
 	* [Nmap Reference Guide](https://nmap.org/book/man.html)
@@ -558,6 +605,9 @@ Kerberos
 	* [Scanning Effectively Through a SOCKS Pivot with Nmap and Proxychains](https://cybersyndicates.com/2015/12/nmap-and-proxychains-scanning-through-a-socks-piviot/)
 			* [Script](https://github.com/killswitch-GUI/PenTesting-Scripts/blob/master/Proxychains-Nmap.py)
 		* [ms15-034.nse Script](https://github.com/pr4jwal/quick-scripts/blob/master/ms15-034.nse)
+	* [nmapdb - Parse nmap's XML output files and insert them into an SQLite database](https://census.gr/research/sw/nmapdb/)
+	* [NmapDB](https://github.com/mainframed/nmapdb)
+	* nmapdb parses nmap's XML output files and inserts them into an SQLite database.
 	* [Angry IP Scanner](http://angryip.org/)
 		* Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner designed to be fast and simple to use. It scans IP addresses and ports as well as has many other features. 
 	* [ScanCannon](https://github.com/johnnyxmas/ScanCannon)
@@ -598,6 +648,8 @@ Kerberos
 		* changeme picks up where commercial scanners leave off. It focuses on detecting default and backdoor credentials and not necessarily common credentials. It's default mode is to scan HTTP default credentials, but has support for other credentials. changeme is designed to be simple to add new credentials without having to write any code or modules. changeme keeps credential data separate from code. All credentials are stored in yaml files so they can be both easily read by humans and processed by changeme. Credential files can be created by using the ./changeme.py --mkcred tool and answering a few questions. changeme supports the http/https, mssql, mysql, postgres, ssh, ssh w/key, snmp, mongodb and ftp protocols. Use ./changeme.py --dump to output all of the currently available credentials.
 	* [RANCID - Really Awesome New Cisco confIg Differ](http://www.shrubbery.net/rancid/)
 		* RANCID monitors a router's (or more generally a device's) configuration, including software and hardware (cards, serial numbers, etc) and uses CVS (Concurrent Version System) or Subversion to maintain history of changes. RANCID does this by the very simple process summarized as: login to each device in the router table (router.db), run various commands to get the information that will be saved, cook the output; re-format, remove oscillating or incrementing data, email any differences (sample) from the previous collection to a mail list, and finally commit those changes to the revision control system
+	* [SIET Smart Install Exploitation Toolkit](https://github.com/Sab0tag3d/SIET)
+		* Cisco Smart Install is a plug-and-play configuration and image-management feature that provides zero-touch deployment for new switches. You can ship a switch to a location, place it in the network and power it on with no configuration required on the device.
 * **Misc**
 	* [scanless](https://github.com/vesche/scanless)
 		* Command-line utility for using websites that can perform port scans on your behalf. Useful for early stages of a penetration test or if you'd like to run a port scan on a host and have it not come from your IP address.
@@ -699,7 +751,11 @@ Kerberos
 
 -------------
 ### <a name="pxe"></a>PXE
-* [Use DHCP to detect UEFI or Legacy BIOS system and PXE boot to SCCM](http://www.itfaq.dk/2016/07/27/use-dhcp-to-detect-uefi-or-legacy-bios-system-and-pxe-boot-to-sccm/)
+* **101** 
+	* [Preboot Execution Environment - Wikipedia](https://en.wikipedia.org/wiki/Preboot_Execution_Environment)
+* **Articles/Presentations/Talks/Writeups**
+	* [Use DHCP to detect UEFI or Legacy BIOS system and PXE boot to SCCM](http://www.itfaq.dk/2016/07/27/use-dhcp-to-detect-uefi-or-legacy-bios-system-and-pxe-boot-to-sccm/)
+* **Tools**
 
 
 
@@ -719,18 +775,21 @@ Kerberos
 
 
 ------------
-#### <a name="SIP"></a>SIP/VOIP:
-* [A Hitchhiker's Guide to the Session Initiation Protocol (SIP)](https://tools.ietf.org/html/rfc5411)
-* [Session Initiation Protocol - Wikipedia](https://en.wikipedia.org/wiki/Session_Initiation_Protocol)
-* [sipvicious](https://github.com/EnableSecurity/sipvicious)
-* [bluebox-ng](https://github.com/jesusprubio/bluebox-ng)
-	* Pentesting framework using Node.js powers, focused in VoIP.
-* [SIP Proxy](https://sourceforge.net/projects/sipproxy/)
-	* With SIP Proxy you will have the opportunity to eavesdrop and manipulate SIP traffic. Furthermore, predefined security test cases can be executed to find weak spots in VoIP devices. Security analysts can add and execute custom test cases.
-* [Sip Vicious](https://github.com/EnableSecurity/sipvicious)
-	* SIPVicious suite is a set of tools that can be used to audit SIP based VoIP systems. 
-* [Mr.SIP](https://github.com/meliht/mr.sip)
-	* Mr.SIP is a tool developed to audit and simulate SIP-based attacks. Originally it was developed to be used in academic work to help developing novel SIP-based DDoS attacks and defense approaches and then as an idea to convert it to a fully functional SIP-based penetration testing tool, it has been redeveloped into the current version.
+#### <a name="sip"></a>SIP/VOIP:
+* **101** 
+	* [A Hitchhiker's Guide to the Session Initiation Protocol (SIP)](https://tools.ietf.org/html/rfc5411)
+	* [Session Initiation Protocol - Wikipedia](https://en.wikipedia.org/wiki/Session_Initiation_Protocol)
+* **Articles/Presentations/Talks/Writeups**
+* **Tools**
+	* [sipvicious](https://github.com/EnableSecurity/sipvicious)
+	* [bluebox-ng](https://github.com/jesusprubio/bluebox-ng)
+		* Pentesting framework using Node.js powers, focused in VoIP.
+	* [SIP Proxy](https://sourceforge.net/projects/sipproxy/)
+		* With SIP Proxy you will have the opportunity to eavesdrop and manipulate SIP traffic. Furthermore, predefined security test cases can be executed to find weak spots in VoIP devices. Security analysts can add and execute custom test cases.
+	* [Sip Vicious](https://github.com/EnableSecurity/sipvicious)
+		* SIPVicious suite is a set of tools that can be used to audit SIP based VoIP systems. 
+	* [Mr.SIP](https://github.com/meliht/mr.sip)
+		* Mr.SIP is a tool developed to audit and simulate SIP-based attacks. Originally it was developed to be used in academic work to help developing novel SIP-based DDoS attacks and defense approaches and then as an idea to convert it to a fully functional SIP-based penetration testing tool, it has been redeveloped into the current version.
 
 
 
@@ -751,6 +810,7 @@ Kerberos
 	* [WinNT/Win95 Automatic Authentication Vulnerability (IE Bug #4)](http://insecure.org/sploits/winnt.automatic.authentication.html)	
 	* [Resurrection of the Living Dead: The “Redirect to SMB” Vulnerability](http://blog.trendmicro.com/trendlabs-security-intelligence/resurrection-of-the-living-dead-the-redirect-to-smb-vulnerability/)
 	* [SPEAR: Redirect to SMB](https://blog.cylance.com/content/dam/cylance/pdfs/white_papers/RedirectToSMB.pdf)
+	* [10 Places to Stick Your UNC Path - NetSPI](https://blog.netspi.com/10-places-to-stick-your-unc-path/)
 * **Re(p)lay Attack**
 	* [ADV170014 NTLM SSO: Exploitation Guide - sysadminjd.com](http://www.sysadminjd.com/adv170014-ntlm-sso-exploitation-guide/)
 	* [SMB Relay Demystified and NTLMv2 Pwnage with Python](https://pen-testing.sans.org/blog/2013/04/25/smb-relay-demystified-and-ntlmv2-pwnage-with-python)
@@ -874,7 +934,7 @@ Kerberos
 ------------
 #### <a name="telnet"></a>Telnet 
 * **101**
-* **General/Articls/Writeups**
+* **General/Articles/Writeups**
 	* [Shellshock and the Telnet USER Variable](https://digi.ninja/blog/telnet_shellshock.php)
 		* `telnet 10.1.1.1 -l "() { :;}; /usr/bin/id"`
 
@@ -882,10 +942,11 @@ Kerberos
 ### <a name="tr69">TR-069</a>
 * **101**
 	* [TR-069 - Wikipedia](https://en.wikipedia.org/wiki/TR-069)
-* **General/Articls/Writeups**
+* **General/Articles/Writeups**
 	* [Too Many Cooks; Exploiting the Internet of Tr-069](http://mis.fortunecook.ie/) 
 	* [TR-069 – A Crash Course University of New Hampshire Interoperability Laboratory 2009](https://www.iol.unh.edu/sites/default/files/knowledgebase/hnc/TR-069_Crash_Course.pdf)
-
+	* [I Hunt TR-069 Admins - Pwning ISPs Like a Boss - Defcon 22](https://media.defcon.org/DEF%20CON%2022/DEF%20CON%2022%20video%20and%20slides/DEF%20CON%2022%20Hacking%20Conference%20Presentation%20By%20Shahar%20Tal%20-%20I%20Hunt%20TR%20-%20069%20Admins%20-%20Pwning%20ISPs%20Like%20a%20Boss%20-%20Video%20and%20Slides.m4v)
+	* [Brief Survey of CWMP Security](http://blog.3slabs.com/2012/12/a-brief-survey-of-cwmp-security.html)
 
 
 ------------
@@ -894,7 +955,7 @@ Kerberos
 	* [Universal Plug and Play (UPnP) Internet Gateway Device - Port Control Protocol Interworking Function (IGD-PCP IWF)](https://tools.ietf.org/html/rfc6970)
 	* [UPnP™ Device Architecture 1.1 - upnp.org]
 	* [Universal Plug and Play - Wikipedia](https://en.wikipedia.org/wiki/Universal_Plug_and_Play)
-* **General/Articls/Writeups**
+* **General/Articles/Writeups**
 	* [UPNP Hacks](http://www.upnp-hacks.org/igd.html)
 * **Tools**
 	* [Ufuzz](https://github.com/phikshun/ufuzz)
@@ -908,7 +969,7 @@ Kerberos
 * **101**
 	* [Virtual LAN](https://en.wikipedia.org/wiki/Virtual_LAN)
 	* [Virtual Local Area Networks](https://www.cse.wustl.edu/~jain/cis788-97/ftp/virtual_lans/index.html)
-* **General/Articls/Writeups**
+* **General/Articles/Writeups**
 	* [VLAN hopping, ARP Poisoning and Man-In-The-Middle Attacks in Virtualized Environments - Ronny L. Bull - ANYCON 2017](http://www.irongeek.com/i.php?page=videos/anycon2017/110-vlan-hopping-arp-poisoning-and-man-in-the-middle-attacks-in-virtualized-environments-dr-ronny-l-bull)
 		* Cloud service providers and data centers offer their customers the ability to deploy virtual machines within multi-tenant environments. These virtual machines are typically connected to the physical network via a virtualized network configuration. This could be as simple as a bridged interface to each virtual machine or as complicated as a virtual switch providing more robust networking features such as VLANs, QoS, and monitoring. In this talk I will demonstrate the effects of VLAN hopping, ARP poisoning and Man-in-the-Middle attacks across every major hypervisor platform, including results of attacks originating from the physically connected network as well as within the virtual networks themselves. Each attack category that is discussed will be accompanied by a detailed proof of concept demonstration of the attack.
 
@@ -936,15 +997,8 @@ Kerberos
 
 
 ------------
-### <a name="other">Other</a>
-* [Home Network Administration Protocol - Wikipedia](https://en.wikipedia.org/wiki/Home_Network_Administration_Protocol)
-	* Home Network Administration Protocol (HNAP) is a proprietary network protocol invented[1] by Pure Networks, Inc. and acquired by Cisco Systems which allows identification, configuration, and management of network devices. HNAP is based on SOAP.[2]
-* [More on HNAP - What is it, How to Use it,How to Find it](https://isc.sans.edu/diary/More+on+HNAP+-+What+is+it%2C+How+to+Use+it%2C+How+to+Find+it/17648)
-* [HNAP - Router Security](https://www.routersecurity.org/hnap.php)
-* [More on HNAP - What is it, How to Use it, How to Find it](https://isc.sans.edu/forums/diary/More+on+HNAP+What+is+it+How+to+Use+it+How+to+Find+it/17648/)
-* [Home Network Administration Protocol (HNAP) Whitepaper](https://www.cisco.com/web/partners/downloads/guest/hnap_protocol_whitepaper.pdf)
-* [Hacking D-Link Routers With HNAP](https://regmedia.co.uk/2016/11/07/dlink_hnap_captcha.pdf)
-
+### <a name="other">Other</a> (Breaking Routers)
+* [ASUS Router infosvr UDP Broadcast root Command Execution](https://github.com/jduck/asus-cmd)
 
 ------------
 #### <a name="misc"></a>MISC:

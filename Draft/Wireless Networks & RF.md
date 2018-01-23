@@ -1,7 +1,8 @@
 # Wireless Networks
 
 
-#### TOC
+### Table of Contents
+
 * [General](#general)
 * [General Software Tools](#generalswt)
 * [Tutorials and Guides](#tut)
@@ -19,16 +20,17 @@
 * [General Blogs/Sites](#gbs)
 * [Talks/Presentations & Videos](#talks)
 * [Papers](#papers)
-
 * [Miscellaneous](#misc)
 
 
-
+-----------------
 #### Sort
 * Fix ToC
 * Add 101 stuff
 
 http://umtrx.org/
+
+* [Ghosts from the Past: Authentication bypass and OEM backdoors in WiMAX routers](http://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html)
 	* [Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
 	* [CC1101-FSK](https://github.com/trishmapow/CC1101-FSK)
 		* Jam and replay attack on vehicle keyless entry systems.
@@ -55,7 +57,14 @@ Cellular Networks in Use:
 * [Swiss Army Knife for RFID](https://www.cs.bham.ac.uk/~garciaf/publications/Tutorial_Proxmark_the_Swiss_Army_Knife_for_RFID_Security_Research-RFIDSec12.pdf)
 
 
-* [Spread Spectrum Satcom Hacking: Attacking The Globalstar Simplex Data Service - Colby Moore - BHUSA2015](https://www.youtube.com/watch?v=1VbmHmzofmc)
+
+
+EAP
+* [eapmd5pass](http://www.willhackforsushi.com/?page_id=67) - An implementation of an offline dictionary attack against the EAP-MD5 protocol. This utility can be used to audit passwords used for EAP-MD5 networks from wireless packet captures, or by manually specifying the challenge, response and associated authentication information.
+
+RADIUS 
+* [apbleed](https://github.com/vanhoefm/apbleed/) - Allows you to use existing heartbleed tools to test the RADIUS server
+* [Authentication protocols that DO support hashed passwords (FreeRADIUS mailing list)](http://freeradius-users.freeradius.narkive.com/ixOQ7yiK/authentication-protocols-that-do-support-hashed-passwords)
 
 
 ##### End Sort
@@ -67,7 +76,7 @@ Cellular Networks in Use:
 
 
 
-
+-------------------------------
 ### <a name="general">General</a>
 * [Cyberspectrum SDR Meetups](https://www.youtube.com/watch?v=MFBkX4CNb08&list=PLPmwwVknVIiXGzKhtimTMjhcyppeRRsnE&index=3)
 * **101**
@@ -78,7 +87,6 @@ Cellular Networks in Use:
 	* [sysmocom publicly releases Osmocom user manuals](https://www.sysmocom.de/news/sysmocom-publicly-releases-osmocom-user-manuals/)
 * **Documentation**
 	* [Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
-
 * **Educational**
 	* [Guide to Basics of Wireless Networking](http://documentation.netgear.com/reference/fra/wireless/TOC.html)
 	* [US Marine Antenna Handbook](http://www.zerobeat.net/r3403c.pdf)
@@ -100,6 +108,8 @@ Cellular Networks in Use:
 * **General Videos**
 	* [The Wireless World of the Internet of Things -  JP Dunning ".ronin"](http://www.irongeek.com/i.php?page=videos/derbycon4/t214-the-wireless-world-of-the-internet-of-things-jp-dunning-ronin)
 		* The Internet of Things brings all the hardware are home together. Most of these devices are controlled through wireless command and control network. But what kind of wireless? And what are the security is in place? This talk with cover the wireless tech used by the Internet of Things and some of the risks to your home or corporate security.
+	* [Drive it like you Hacked it- Samy Kamkar - Defcon23](https://www.youtube.com/watch?v=UNgvShN4USU)
+		* In this talk I’ll reveal new research and real attacks in the area of wirelessly controlled gates, garages, and cars. Many cars are now controlled from mobile devices over GSM, while even more can be unlocked and ignitions started from wireless keyfobs over RF. All of these are subject to attack with low-cost tools (such as RTL-SDR, GNU Radio, HackRF, Arduino, and even a Mattel toy).
 **APCO Project 25 (P25)**
 	* [HOPE Number Nine (2012): Practical Insecurity in Encrypted Radio](https://www.youtube.com/watch?v=7or-_gT8TWU&app=desktop)
 		* APCO Project 25 ("P25") is a suite of wireless communications protocols used in the United States and elsewhere for public safety two-way (voice) radio systems. The protocols include security options in which voice and data traffic can be cryptographically protected from eavesdropping. This talk analyzes the security of P25 systems against passive and active adversaries. The panel found a number of protocol, implementation, and user interface weaknesses that routinely leak information to a passive eavesdropper or that permit highly efficient and difficult to detect active attacks. They found new "selective subframe jamming" attacks against P25, in which an active attacker with very modest resources can prevent specific kinds of traffic (such as encrypted messages) from being received, while emitting only a small fraction of the aggregate power of the legitimate transmitter. And, more significantly, they found that even passive attacks represent a serious immediate threat. In an over-the-air analysis conducted over a two year period in several U.S. metropolitan areas, they found that a significant fraction of the "encrypted" P25 tactical radio traffic sent by federal law enforcement surveillance operatives is actually sent in the clear - in spite of their users' belief that they are encrypted - and often reveals such sensitive data as the names of informants in criminal investigations.
@@ -110,6 +120,7 @@ Cellular Networks in Use:
 
 ### <a name="bt">BlueTooth</a> BlueTooth
 * **101**
+	* [Bluetooth - Wikipedia](https://en.wikipedia.org/wiki/Bluetooth)
 * **(Big)Attacks**
 	* [blueborne](https://www.armis.com/blueborne/)
 * **Articles/Presentations/Talks/Writeups**
@@ -126,8 +137,10 @@ Cellular Networks in Use:
 	* [Bluetooth Smart: The Good, the Bad, the Ugly, and the Fix! - BHUSA 2013](https://www.youtube.com/watch?v=SoH11fi-FcA)
 		* [Slides](https://lacklustre.net/bluetooth/bluetooth_smart_good_bad_ugly_fix-mikeryan-blackhat_2013.pdf)
 	* [How Smart Is Bluetooth Smart?](https://lacklustre.net/bluetooth/how_smart_is_bluetooth_smart-mikeryan-shmoocon_2013.pdf)
-* **Documentation**
 	* [Bluetooth Hacking Tools Comparison - Mark Loveless](https://duo.com/blog/bluetooth-hacking-tools-comparison)
+* **Documentation**
+	* [NIST Special Publication 800-121 Revision 2: Guide to Bluetooth Security](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-121r2.pdf)
+	* [Protocol Specs - bluetooth.com](https://www.bluetooth.com/specifications/protocol-specifications)
 * **Testing**
 	* [Bluetooth Penetration Testing Framework - 2011](http://bluetooth-pentest.narod.ru/)
 	* [Hacking Bluetooth connections - hackingandsecurity](https://hackingandsecurity.blogspot.com/2017/08/hacking-bluetooth-connections.html?view=timeslide)
@@ -172,6 +185,9 @@ Cellular Networks in Use:
 		* Must watch video. Very informative.
 	* [LTE Security - How good is it?](http://csrc.nist.gov/news_events/cif_2015/research/day2_research_200-250.pdf)
 	* [Mobile self-defense - Karsten Nohl](https://www.youtube.com/watch?v=GeCkO0fWWqc)
+* **Tools**
+	* [SiGploit](https://github.com/SigPloiter/SigPloit)
+		* Telecom Signaling Exploitation Framework - SS7, GTP, Diameter & SIP. SiGploit a signaling security testing framework dedicated to Telecom Security professionals and reasearchers to pentest and exploit vulnerabilites in the signaling protocols used in mobile operators regardless of the geneartion being in use. SiGploit aims to cover all used protocols used in the operators interconnects SS7, GTP (3G), Diameter (4G) or even SIP for IMS and VoLTE infrastructures used in the access layer and SS7 message encapsulation into SIP-T. Recommendations for each vulnerability will be provided to guide the tester and the operator the steps that should be done to enhance their security posture
 * **SIM Cards**
 	* **101**
 	* **Articles/Presentations/Talks/Writeups**
@@ -252,14 +268,12 @@ Cellular Networks in Use:
 * [UAV Transponders & Tracker Kits - UST](http://www.unmannedsystemstechnology.com/company/sagetech-corporation/) 
 
 
-* **Fox Hunting & Wardriving**
-	* [Practical Foxhunting 101](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/04-practical-foxhunting-101-simonj)
-	* [iSniff](https://github.com/hubert3/iSniff-GPS) 
-		* iSniff GPS passively sniffs for SSID probes, ARPs and MDNS (Bonjour) packets broadcast by nearby iPhones, iPads and other wireless devices. The aim is to collect data which can be used to identify each device and determine previous geographical locations, based solely on information each device discloses about previously joined WiFi networks. iOS devices transmit ARPs which sometimes contain MAC addresses (BSSIDs) of previously joined WiFi networks, as described in [1]. iSniff GPS captures these ARPs and submits MAC addresses to Apple's WiFi location service (masquerading as an iOS device) to obtain GPS coordinates for a given BSSID. If only SSID probes have been captured for a particular device, iSniff GPS can query network names on wigle.net and visualise possible locations.
-
 
 
 ## <a name="80211">802.11 - WiFi</a>
+* **101**
+	* [802.11 frames : A starter guide to learn wireless sniffer traces](https://supportforums.cisco.com/t5/wireless-mobility-documents/802-11-frames-a-starter-guide-to-learn-wireless-sniffer-traces/ta-p/3110019)
+	* [IEEE 802.11 Pocket Reference Guide ](http://www.willhackforsushi.com/papers/80211_Pocket_Reference_Guide.pdf)
 * **Documentation**
 	* [Establishing Wireless Robust Security Networks: A Guide to IEEE 802.11i - NIST](http://csrc.nist.gov/publications/nistpubs/800-97/SP800-97.pdf)
 * **Educational**
@@ -267,11 +281,24 @@ Cellular Networks in Use:
 		* This document describes IEEE 802.11 Wireless Local Area Network (WLAN) Standard. It describes IEEE 802.11 MAC Layer in detail and it briefly mentions IEEE 802.11a, IEEE 802.11b physical layer standard and IEEE 802.11e MAC layer standard
 	* [Wi-Fi Protected Access 2 (WPA2) Overview](https://technet.microsoft.com/library/bb878054)
 	* [Wireless Leakage - Robin Wood](https://digi.ninja/files/Tech_for_Troops-Wi-Fi_Leakage.pdf)
+	* [Emulation and Exploration of BCM WiFi Frame Parsing using LuaQEMU](https://comsecuris.com/blog/posts/luaqemu_bcm_wifi/)
+* **Fox Hunting & Wardriving**
+	* [Practical Foxhunting 101](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/04-practical-foxhunting-101-simonj)
+	* [iSniff](https://github.com/hubert3/iSniff-GPS) 
+		* iSniff GPS passively sniffs for SSID probes, ARPs and MDNS (Bonjour) packets broadcast by nearby iPhones, iPads and other wireless devices. The aim is to collect data which can be used to identify each device and determine previous geographical locations, based solely on information each device discloses about previously joined WiFi networks. iOS devices transmit ARPs which sometimes contain MAC addresses (BSSIDs) of previously joined WiFi networks, as described in [1]. iSniff GPS captures these ARPs and submits MAC addresses to Apple's WiFi location service (masquerading as an iOS device) to obtain GPS coordinates for a given BSSID. If only SSID probes have been captured for a particular device, iSniff GPS can query network names on wigle.net and visualise possible locations.
+	* [If it fits - it sniffs: Adventures in WarShipping - Larry Pesce](http://www.irongeek.com/i.php?page=videos/derbycon4/t104-if-it-fits-it-sniffs-adventures-in-warshipping-larry-pesce)
+		*  There are plenty of ways to leverage known wireless attacks against our chosen victims. We've discovered a new WiFi discovery methodology that can give us insight into attack paths, internal distribution methods, internal policies and procedures as well as an opportunity to launch wireless attacks deep inside a facility without even stepping inside; no physical penetration test needed. How do we make that happen? Box it, tape it and slap an address on it: WARSHIPPING. Thanks FedEx, UPS and USPS for doing the heavy lifting for us. We've even got a new tool to do some of the heavy lifting for location lookups too!
+* **Identification/Tracking**
+	* [Fingerprinting 802.11 Implementations via Statistical Analysis of the Duration Field](http://uninformed.org/?v=all&a=23&t=sumry)
+		* The research presented in this paper provides the reader with a set of algorithms and techniques that enable the user to remotely determine what chipset and device driver an 802.11 device is using. The technique outlined is entirely passive, and given the amount of features that are being considered for inclusion into the 802.11 standard, seems quite likely that it will increase in precision as the standard marches forward. The implications of this are far ranging. On one hand, the techniques can be used to implement innovative new features in Wireless Intrusion Detection Systems (WIDS). On the other, they can be used to target link layer device driver attacks with much higher precision. 
+	* [Meeting People Over WiFi - JoshInGeneral - DC23](https://www.youtube.com/watch?v=9SIMe0yMy78)
+		* In this talk we will talk about some of the things that can identify you in an environment and how people can track you. We will look at bluetooth scanning apps that you can use every day to track people inconspicuously from your phone, while walking, metroing, or as a passenger in a car driving.
 * **Testing**
 	* [Wireless Pentesting on the Cheap](http://securitysynapse.blogspot.com/2013/12/wireless-pentesting-on-cheap-kali-tl.html)
 		* In this article, we proved the capabilities of an inexpensive wireless adapter and a flexible virtualized wireless attack image by breaking into a WEP protected test network.  For just $16 
 	* [WPA/WPA2 Dictionaries](https://wifi0wn.wordpress.com/wepwpawpa2-cracking-dictionary/)
 * **Tools**
+	* [wifi-arsenal](https://github.com/0x90/wifi-arsenal/)
 	* [Aircrack](https://www.aircrack-ng.org/doku.php?id=links)
 	* [SniffAir An Open Source Framework for Wireless Security Assessments Matthew Eidelberg - DerbyCon7](https://www.youtube.com/watch?v=QxVkr-3RK94&app=desktop)
 		* [SniffAir](https://github.com/Tylous/SniffAir)
@@ -292,34 +319,87 @@ Cellular Networks in Use:
 		* EAPeak is a suite of open source tools to facilitate auditing of wireless networks that utilize the Extensible Authentication Protocol framework for authentication. It is meant to give useful information relating to the security of these networks for pentesters to use while searching for vulnerabilities. 
 	* [Snifflab: An environment for testing mobile devices](https://openeffect.ca/snifflab-an-environment-for-testing-mobile-devices/)
 		* Specifically, we have created a WiFi hotspot that is continually collecting all the packets sent over it. All connected clients’ HTTPS communications are subjected to a “Man-in-the-middle” attack, whereby they can later be decrypted for analysis.
-* **Writeups**
-	* [Wireless Password Cracking With Cloud Clusters](http://www.commonexploits.com/wireless-password-cracking-with-cloud-clusters/)
+* **Cracking Passwords**
+		* [Wireless Password Cracking With Cloud Clusters](http://www.commonexploits.com/wireless-password-cracking-with-cloud-clusters/)
+* **Eduroam**
+	* **101**
+		* [The eduroam Architecture for Network Roaming - RFC 7593](https://tools.ietf.org/html/rfc7593)
+		* [Eduroam - Wikipedia](https://en.wikipedia.org/wiki/Eduroam)
+	* **Articles/Blogposts/Writeups**
+		* [Server Certificate Practices in Eduroam (2015)](http://services.geant.net/cbp/Knowledge_Base/Wireless/Documents/cbp-33_server-certificate-practices-in-eduroam.pdf)
+	* **Attacking**
+		* [MITM Attack Model against eduroam (2013)](http://www.eduroam.zm/Maninmiddle.pdf)
+		* [A Practical Investigation of Identity Theft Vulnerabilities in Eduroam (2015)](https://www.syssec.rub.de/media/infsec/veroeffentlichungen/2015/05/07/eduroam_WiSec2015.pdf)
+	* **Tools**
+		* [eduroam FreeRADIUS Docker](https://github.com/spgreen/eduroam-freeradius-docker)
+* **EAP**
+	* [EAP-PWD: Extensible Authentication Protocol (EAP) Authentication Using Only a Password - RFC 5931](https://tools.ietf.org/html/rfc5931)
+* **Evil/Infernal Twin**
+	* [Infernal twin](https://n0where.net/automated-evil-twin-attack/)
+	* [Evil Twin vulnerabilities in Wi-Fi networks (Master Thesis, 2016)](http://www.cs.ru.nl/bachelorscripties/2016/Matthias_Ghering___4395727___Evil_Twin_Vulnerabilities_in_Wi-Fi_Networks.pdf)
+	* [Evil Twin Vulnerabilities in Wi-Fi Networks (Bachelor Thesis, 2016)](http://www.cs.ru.nl/bachelorscripties/2016/Matthias_Ghering___4395727___Evil_Twin_Vulnerabilities_in_Wi-Fi_Networks.pdf)
+* **Exploit Dev**
 	* [Exploiting 802.11 Wireless Driver Vulnerabilities on Windows](http://uninformed.org/?v=all&a=29&t=sumry)
 		* This paper describes the process of identifying and exploiting 802.11 wireless device driver vulnerabilities on Windows. This process is described in terms of two steps: pre-exploitation and exploitation. The pre-exploitation step provides a basic introduction to the 802.11 protocol along with a description of the tools and libraries the authors used to create a basic 802.11 protocol fuzzer. The exploitation step describes the common elements of an 802.11 wireless device driver exploit. These elements include things like the underlying payload architecture that is used when executing arbitrary code in kernel-mode on Windows, how this payload architecture has been integrated into the 3.0 version of the Metasploit Framework, and the interface that the Metasploit Framework exposes to make developing 802.11 wireless device driver exploits easy. Finally, three separate real world wireless device driver vulnerabilities are used as case studies to illustrate the application of this process. It is hoped that the description and illustration of this process can be used to show that kernel-mode vulnerabilities can be just as dangerous and just as easy to exploit as user-mode vulnerabilities. In so doing, awareness of the need for more robust kernel-mode exploit prevention technology can be raised. 
-	* [Fingerprinting 802.11 Implementations via Statistical Analysis of the Duration Field](http://uninformed.org/?v=all&a=23&t=sumry)
-		* The research presented in this paper provides the reader with a set of algorithms and techniques that enable the user to remotely determine what chipset and device driver an 802.11 device is using. The technique outlined is entirely passive, and given the amount of features that are being considered for inclusion into the 802.11 standard, seems quite likely that it will increase in precision as the standard marches forward. The implications of this are far ranging. On one hand, the techniques can be used to implement innovative new features in Wireless Intrusion Detection Systems (WIDS). On the other, they can be used to target link layer device driver attacks with much higher precision. 
-	* [Emulation and Exploration of BCM WiFi Frame Parsing using LuaQEMU](https://comsecuris.com/blog/posts/luaqemu_bcm_wifi/)
+* **KARMA**
+		* [Attacking automatic Wireless network selection (2005)](https://www.trailofbits.com/resources/attacking_automatic_network_selection_paper.pdf)
+		* [Why do Wi-Fi Clientes disclose their PNL for Free Still Today? (2015)](http://blog.dinosec.com/2015/02/why-do-wi-fi-clients-disclose-their-pnl.html)
+		* [Instant KARMA might still gets you (2015)](https://insights.sei.cmu.edu/cert/2015/08/instant-karma-might-still-get-you.html)
+* **TKIP Related**
+		* [Practical attacks against WEP and WPA (2008)](http://dl.aircrack-ng.org/breakingwepandwpa.pdf)
+		* [An Improved Attack on TKIP (2009)  ](http://link.springer.com/chapter/10.1007/978-3-642-04766-4_9#page-1)
+		* [Cryptanalysis of IEEE 802.11i TKIP](http://download.aircrack-ng.org/wiki-files/doc/tkip_master.pdf)
+		* [Enhanced TKIP Michael Attacks (2010)](http://download.aircrack-ng.org/wiki-files/doc/enhanced_tkip_michael.pdf)
+		* [Plaintext Recovery Attacks Against WPA/TKIP (2013)](https://eprint.iacr.org/2013/748.pdf)
+		* [Practical verification of WPA-TKIP vulnerabilities (2013)](https://lirias.kuleuven.be/bitstream/123456789/401042/1/wpatkip.pdf)
+		* [On the security of RC4 in TLS (USENIX, 2013)](http://www.isg.rhul.ac.uk/tls/RC4biases.pdf)
+		* [All Your Biases Belong to Us: Breaking RC4 in WPA-TKIP and TLS (USENIX, 2015)](https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-vanhoef.pdf)
+		* [A Security Analysis of the WPA-TKIP and TLS Security Protocols (PhD Thesis, 2016)](https://lirias.kuleuven.be/bitstream/123456789/543228/1/thesis.pdf)
+		* [Predicting and Abusing WPA2/802.11 Group Keys (2016)](http://papers.mathyvanhoef.com/33c3-broadkey-slides.pdf)
+* **WEP**
 	* [WPA Migration Mode:  WEP is back to haunt you...(slides)](http://dl.aircrack-ng.org/wiki-files/doc/technique_papers/Meiners,_Sor_-_WPA_Migration_Mode_WEP_is_back_to_haunt_you_-_slides.pdf)
 		* Migration mode, from Cisco, allows both WEP and WPA clients on the same AP. Besides the fact that the WEP key can be cracked easily, they also bypass the additional security settings offered by Cisco. 
+* **WPA/2**
 	* [Predicting, Decrypting, and Abusing WPA2/802.11 Group Keys Mathy Vanhoef and Frank Piessens,  Katholieke Universiteit Leuven](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_vanhoef.pdf) 
 	* [Wifi Tracking: Collecting the (probe) Breadcrumbs - David Switzer](https://www.youtube.com/watch?v=HzQHWUM8cNo)
 		* Wifi probes have provided giggles via Karma and Wifi Pineapples for years, but is there more fun to be had? Like going from sitting next to someone on a bus, to knowing where they live and hang out? Why try to MITM someone’s wireless device in an enterprise environment where they may notice — when getting them at their favorite burger joint is much easier. In this talk we will review ways of collecting and analyzing probes. We’ll use the resulting data to figure out where people live, their daily habits, and discuss uses (some nice, some not so nice) for this information. We’ll also dicuss how to make yourself a little less easy to track using these methods. Stingrays are price prohibitive, but for just tracking people’s movements.. this is cheap and easy.
-	* [Brute forcing Wi-Fi Protected Setup - Stefan Viehböck](https://sviehb.files.wordpress.com/2011/12/viehboeck_wps.pdf)
-		* The original paper on WPS cracking.
-	* [DEF CON 23 - JoshInGeneral - Meeting People Over WiFi ](https://www.youtube.com/watch?v=9SIMe0yMy78)
-		* In this talk we will talk about some of the things that can identify you in an environment and how people can track you. We will look at bluetooth scanning apps that you can use every day to track people inconspicuously from your phone, while walking, metroing, or as a passenger in a car driving.
-	* [If it fits - it sniffs: Adventures in WarShipping - Larry Pesce](http://www.irongeek.com/i.php?page=videos/derbycon4/t104-if-it-fits-it-sniffs-adventures-in-warshipping-larry-pesce)
-		*  There are plenty of ways to leverage known wireless attacks against our chosen victims. We've discovered a new WiFi discovery methodology that can give us insight into attack paths, internal distribution methods, internal policies and procedures as well as an opportunity to launch wireless attacks deep inside a facility without even stepping inside; no physical penetration test needed. How do we make that happen? Box it, tape it and slap an address on it: WARSHIPPING. Thanks FedEx, UPS and USPS for doing the heavy lifting for us. We've even got a new tool to do some of the heavy lifting for location lookups too!
+* **WPS**
+	* **101**
+		* [Brute forcing Wi-Fi Protected Setup - Stefan Viehböck](https://sviehb.files.wordpress.com/2011/12/viehboeck_wps.pdf)
+			* The original paper on WPS cracking.
+		* [Offline bruteforce attack on wifi protected setup (**Pixie dust attack**, 2014)](http://archive.hack.lu/2014/Hacklu2014_offline_bruteforce_attack_on_wps.pdf)
+	* **Articles/Blogposts/Writeups**
+		* [An Investigation into the Wi-Fi Protected Setup PIN of the Linksys WRT160N v2 (2012)](http://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1139&context=ism)
+		* [Reversing D-Links WPS pin algorithm](http://www.devttys0.com/2014/10/reversing-d-links-wps-pin-algorithm/)
+	* **Tools**
+		* [wpscrack](https://github.com/ml31415/wpscrack/)
+			* Continuation of wpscrack originally written by Stefan Viehböck
+		* [reaver_reattempt](https://github.com/kurobeats/reaver_reattempt/)
+			* Change the Mac address of the wifi connection as well as the emulated one created by airmon-ng in an attempt to avoid being locked out of routers for repeated WPS attack attempts
+		* [Reaver-wps-fork-t6x](https://github.com/t6x/reaver-wps-fork-t6x/)
+			* Community forked version which includes various bug fixes, new features and additional attack method (such as the offline Pixie Dust attack)
+		* [WPSIG](https://www.coresecurity.com/corelabs-research/open-source-tools/wpsig)
+			* Simple tool (written in Python) that does information gathering using WPS information elements.
+* **Misc**
+	* [Scrutinizing WPA2 Password Generating Algorithms in Wireless Routers (WOOT, 2015)](https://www.usenix.org/system/files/conference/woot15/woot15-paper-lorente.pdf)
+	* [Keyspace List for WPA on Default Routers](https://hashcat.net/forum/thread-6170.html)
+* **Why not?**
+	* [Start Your Own (Wireless) ISP](https://startyourownisp.com/)
 
 
 
 ### <a name="rfid">RFID - Radio Frequency Identification</a>
 * **101**
+	* [Radio-frequency identification - Wikipedia](https://en.wikipedia.org/wiki/Radio-frequency_identification)
 	* [NFC Frequently Asked Questions](https://www.securetechalliance.org/publications-nfc-frequently-asked-questions/)
 * **Articles/Blogposts/Presentations/Talks/Writeups**
 	* Security of RFID Protocols A Case Study** | 
 		* In the context of Dolev-Yao style analysis of security proto cols, we investigate the security claims of a pro- posed strong-security RFID authentication protocol. We ex hibit a flaw which has gone unnoticed in RFID protocol literature and present the resulting attacks on au thentication, untraceability, and desynchroniza- tion resistance. We analyze and discuss the authors proofs of security. References to other vulnerable protocols are given.
 	* [Exploring NFC Attack Surface](https://media.blackhat.com/bh-us-12/Briefings/C_Miller/BH_US_12_Miller_NFC_attack_surface_WP.pdf)
+	* [Owning and Cloning NFC Payment Cards](https://github.com/peterfillmore/Talk-Stuff/blob/master/Syscan2015/PeterFillmore_Syscan2015.pdf]
+	* [On Relaying NFC Payment Transactions using Android devices](https://www.slideshare.net/cgvwzq/on-relaying-nfc-payment-transactions-using-android-devices)
+	* [NFC Hacking: NFCProxy with Android Beam](https://www.youtube.com/watch?v=tFi0vYuYeAI&feature=youtu.be)
+	* [Practical Experiences on NFC Relay Attacks with Android: Virtual Pickpocketing Revisited](https://conference.hitb.org/hitbsecconf2015ams/materials/Whitepapers/Relay%20Attacks%20in%20EMV%20Contactless%20Cards%20with%20Android%20OTS%20Devices.pdf)
 * **Tools**
 	* [ravenhid](https://github.com/emperorcow/ravenhid)
 		* Hardware and software to run a RFID reader to harvest card information. This is the PCB design and Arduino code that will run a RFID reader, allowing you to gather and harvest cards. Typically, a larger reader, such as those in garages, will be more successful, allowing you to ready over a couple feet instead of inches. The board itself is designed to be modular and support multiple methods to output harvested cards once they are read:
@@ -333,13 +413,20 @@ Cellular Networks in Use:
 
 ### <a name="retroreflectors">RF RetroReflectors</a>
 * **101**
-* **Articles/Presentations/Talks/Writeups*** [[TROOPERS15] Michael Ossmann - RF Retroflectors, Emission Security and SDR](https://www.youtube.com/watch?v=9DABAS-PCFM)
-* [The NSA Playset - RF Retroreflectors - Defcon22](https://www.youtube.com/watch?v=5gb3C80_wXI)
-* [CONGAFLOCK - NSA Playset](http://www.nsaplayset.org/congaflock)
-	* CONGAFLOCK is a general purpose RF retroreflector intended for experimentation.
-* [The Thing (Listening Device) - Wikipedia](https://en.wikipedia.org/wiki/The_Thing_(listening_device))
+	* [Modulating retro-reflector - Wikipedia](https://en.wikipedia.org/wiki/Modulating_retro-reflector)
+* **Articles/Presentations/Talks/Writeups**
+	* [[TROOPERS15] Michael Ossmann - RF Retroflectors, Emission Security and SDR](https://www.youtube.com/watch?v=9DABAS-PCFM)
+	* [The NSA Playset - RF Retroreflectors - Defcon22](https://www.youtube.com/watch?v=5gb3C80_wXI)
+* **Tools**
+	* [CONGAFLOCK - NSA Playset](http://www.nsaplayset.org/congaflock)
+		* CONGAFLOCK is a general purpose RF retroreflector intended for experimentation.
+	* [The Thing (Listening Device) - Wikipedia](https://en.wikipedia.org/wiki/The_Thing_(listening_device))
+	* [retroreflectors](https://github.com/mossmann/retroreflectors)
 
 
+### <a name="satellite">Satellite Related</a>
+* [SATELLITE TV RECEIVERS: FROM REMOTE CONTROL TO ROOT SHELL - Sofiane Talmat](https://vimeo.com/album/3682874/video/148910624)
+* [Spread Spectrum Satcom Hacking: Attacking The Globalstar Simplex Data Service - Colby Moore - BHUSA2015](https://www.youtube.com/watch?v=1VbmHmzofmc)
 
 
 ### <a name="sdr">Software Defined Radio</a>
@@ -387,21 +474,11 @@ Cellular Networks in Use:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### <a name="zigbee">Zigbee Wireless Networks</a>
 * **101**
+	* [Zigbee - Wikipedia](https://en.wikipedia.org/wiki/Zigbee)
+	* [IEEE 802.15.4 - Wikipedia](https://en.wikipedia.org/wiki/IEEE_802.15.4)
+	* [IEEE Std 802.15.4-2015 (Revision of IEEE Std 802.15.4-2011) - IEEE Standard for Low-Rate Wireless Networks](https://standards.ieee.org/findstds/standard/802.15.4-2015.html)
 * **Articles/Presentations/Talks/Writeups**
 	* [ZigBee Exploited: The good, the bad and the ugly - Tobias Zillner](http://www.sicherheitsforschung-magdeburg.de/uploads/journal/MJS_045_Zillner_ZigBee.pdf)
 	* [KillerBee Framework](https://code.google.com/p/killerbee/)

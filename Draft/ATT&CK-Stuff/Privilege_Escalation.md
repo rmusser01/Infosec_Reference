@@ -2,8 +2,8 @@
 
 [MITRE ATT&CK - Privilege Escalation](https://attack.mitre.org/wiki/Privilege_Escalation)
 
-## Access Token Manipulation
 -------------------------------
+## Access Token Manipulation
 * [Access Token Manipulation - ATT&CK](https://attack.mitre.org/wiki/Technique/T1134)
 	* Windows uses access tokens to determine the ownership of a running process. A user can manipulate access tokens to make a running process appear as though it belongs to someone other than the user that started the process. When this occurs, the process also takes on the security context associated with the new token. For example, Microsoft promotes the use of access tokens as a security best practice. Administrators should log in as a standard user but run their tools with administrator privileges using the built-in access token manipulation command runas. Microsoft runas 
 	* Adversaries may use access tokens to operate under a different user or system security context to perform actions and evade detection. An adversary can use built-in Windows API functions to copy access tokens from existing processes; this is known as token stealing. An adversary must already be in a privileged user context (i.e. administrator) to steal a token. However, adversaries commonly use token stealing to elevate their security context from the administrator level to the SYSTEM level.Pentestlab Token Manipulation 
@@ -27,8 +27,8 @@
 
 
 
-## Accessibility Features
 -------------------------------
+## Accessibility Features
 * [Accessibility Features - ATT&CK](https://attack.mitre.org/wiki/Technique/T1015)
 	* Windows contains accessibility features that may be launched with a key combination before a user has logged in (for example, when the user is on the Windows logon screen). An adversary can modify the way these programs are launched to get a command prompt or backdoor without logging in to the system.
 	* Two common accessibility programs are C:\Windows\System32\sethc.exe, launched when the shift key is pressed five times and C:\Windows\System32\utilman.exe, launched when the Windows + U key combination is pressed. The sethc.exe program is often referred to as "sticky keys", and has been used by adversaries for unauthenticated access through a remote desktop login screen.FireEye Hikit Rootkit
@@ -51,8 +51,8 @@
 
 
 
-## AppInit DLLs
 -------------------------------
+## AppInit DLLs
 * [AppInit DLLs - ATT&CK](https://attack.mitre.org/wiki/Technique/T1103)
 	* DLLs that are specified in the AppInit_DLLs value in the Registry key HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows are loaded by user32.dll into every process that loads user32.dll. In practice this is nearly every program. This value can be abused to obtain persistence by causing a DLL to be loaded into most processes on the computer.AppInit Registry The AppInit DLL functionality is disabled in Windows 8 and later versions when secure boot is enabled.AppInit Secure Boot
 
@@ -68,8 +68,8 @@
 
 
 
-## Application Shimming
 -------------------------------
+## Application Shimming
 * [Application Shimming - ATT&CK](https://attack.mitre.org/wiki/Technique/T1138)
 	* The Microsoft Windows Application Compatibility Infrastructure/Framework (Application Shim) was created to allow compatibility of programs as Windows updates and changes its code. For example, application shimming feature that allows programs that were created for Windows XP to work with Windows 10. Within the framework, shims are created to act as a buffer between the program (or more specifically, the Import Address Table) and the Windows OS. When a program is executed, the shim cache is referenced to determine if the program requires the use of the shim database (.sdb). If so, the shim database uses API hooking to redirect the code as necessary in order to communicate with the OS. A list of all shims currently installed by the default Windows installer (sdbinst.exe) is kept in: 
 		* `%WINDIR%\AppPatch\sysmain.sdb`
@@ -93,8 +93,8 @@
 
 
 
-## Bypass User Account Control
 -------------------------------
+## Bypass User Account Control
 * [Bypass User Account Control - ATT&CK](https://attack.mitre.org/wiki/Technique/T1088)
 	* Windows User Account Control (UAC) allows a program to elevate its privileges to perform a task under administrator-level permissions by prompting the user for confirmation. The impact to the user ranges from denying the operation under high enforcement to allowing the user to perform the action if they are in the local administrators group and click through the prompt or allowing them to enter an administrator password to complete the action.TechNet How UAC Works 
 	* If the UAC protection level of a computer is set to anything but the highest level, certain Windows programs are allowed to elevate privileges or execute some elevated COM objects without prompting the user through the UAC notification box.TechNet Inside UACMSDN COM Elevation An example of this is use of rundll32.exe to load a specifically crafted DLL which loads an auto-elevated COM object and performs a file operation in a protected directory which would typically require elevated access. Malicious software may also be injected into a trusted process to gain elevated privileges without prompting a user.Davidson Windows Adversaries can use these techniques to elevate privileges to administrator if the target process is unprotected. 
@@ -127,8 +127,8 @@
 
 
 
-## DLL Injection
 -------------------------------
+## DLL Injection
 * [DLL Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1055)
 	* DLL injection is used to run code in the context of another process by causing the other process to load and execute code. Running code in the context of another process provides adversaries many benefits, such as access to the process's memory and permissions. It also allows adversaries to mask their actions under a legitimate process. A more sophisticated kind of DLL injection, reflective DLL injection, loads code without calling the normal Windows API calls, potentially bypassing DLL load monitoring. Numerous methods of DLL injection exist on Windows, including modifying the Registry, creating remote threads, Windows hooking APIs, and DLL pre-loading.CodeProject Inject CodeWikipedia DLL Injection
 
@@ -144,8 +144,8 @@
 
 
 
-## DLL Search Order Hijacking
 -------------------------------
+## DLL Search Order Hijacking
 * [DLL Search Order Hijacking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1038)
 	* Windows systems use a common method to look for required DLLs to load into a program.Microsoft DLL Search Adversaries may take advantage of the Windows DLL search order and programs that ambiguously specify DLLs to gain privilege escalation and persistence. 
 	* Adversaries may perform DLL preloading, also called binary planting attacks,OWASP Binary Planting by placing a malicious DLL with the same name as an ambiguously specified DLL in a location that Windows searches before the legitimate DLL. Often this location is the current working directory of the program. Remote DLL preloading attacks occur when a program sets its current directory to a remote location such as a Web share before loading a DLL.Microsoft 2269637 Adversaries may use this behavior to cause the program to load a malicious DLL. 
@@ -173,8 +173,8 @@
 
 
 
-## Exploitation of Vulnerability
 -------------------------------
+## Exploitation of Vulnerability
 * [Exploitation of Vulnerability - ATT&CK](https://attack.mitre.org/wiki/Technique/T1068)
 	* Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Exploiting software vulnerabilities may allow adversaries to run a command or binary on a remote system for lateral movement, escalate a current process to a higher privilege level, or bypass security mechanisms. Exploits may also allow an adversary access to privileged accounts and credentials. One example of this is MS14-068, which can be used to forge Kerberos tickets using domain user permissions.Technet MS14-068ADSecurity Detecting Forged Tickets
 
@@ -198,14 +198,24 @@
 #### OS X
 * [physmem](https://github.com/bazad/physmem)
 	* physmem is a physical memory inspection tool and local privilege escalation targeting macOS up through 10.12.1. It exploits either CVE-2016-1825 or CVE-2016-7617 depending on the deployment target. These two vulnerabilities are nearly identical, and exploitation can be done exactly the same. They were patched in OS X El Capitan 10.11.5 and macOS Sierra 10.12.2, respectively.
+* [macOS High Sierra 10.13.1 insecure cron system](https://m4.rkw.io/blog/macos-high-sierra-10131-insecure-cron-system.html)
+	* Easy root
+* [Exploiting appliances presentation v1.1](https://www.slideshare.net/NCC_Group/exploiting-appliances-presentation-v11vidsremoved)
+* [async_wake](https://github.com/benjibobs/async_wake)
+	* async_wake - iOS 11.1.2 kernel exploit and PoC local kernel debugger by @i41nbeer
+* [IOHIDeous](https://siguza.github.io/IOHIDeous/)
+* [OS X El Capitan - Sinking the S\H/IP - Stefan Esser - Syscan360 - 2016](https://www.syscan360.org/slides/2016_SG_Stefan_Esser_OS_X_El_Capitan_Sinking_The_SHIP.pdf)
+* [ZeroNights / Syscan360 2016] Abusing the Mac Recovery & OS Update Process](https://speakerdeck.com/patrickwardle/syscan360-2016-abusing-the-mac-recovery-and-os-update-process)
+	* Did you know that Macs contain a secondary OS that sits hidden besides OS X? This talk will initially dive into technical details of the Recovery OS, before showing that while on (newer) native hardware Apple verifies this OS, in virtualized environments this may not be the case. Due to this 'flaw' we'll describe how an attacker can infect a virtualized OS X instance with malware that is able to survive a full OS X restore. Though limited to virtual instances, such malware can also abuse this process install itself into SIP'd locations making disinfection far more difficult. It's also worth noting that this attack likely would succeed on older versions of non-virtualized OS X as well.
 
 
 #### Windows
+* [Windows Exploit Suggester](https://github.com/AJMartel/Windows-Exploit-Suggester)
 
 
 
-## File System Permissions Weakness
 -------------------------------
+## File System Permissions Weakness
 * [File System Permissions Weakness - ATT&CK](https://attack.mitre.org/wiki/Technique/T1044)
 	* Processes may automatically execute specific binaries as part of their functionality or to perform other actions. If the permissions on the file system directory containing a target binary, or permissions on the binary itself, are improperly set, then the target binary may be overwritten with another binary using user-level permissions and executed by the original process. If the original process and thread are running under a higher permissions level, then the replaced binary will also execute under higher-level permissions, which could include SYSTEM. 
 	* Adversaries may use this technique to replace legitimate binaries with malicious ones as a means of executing code at a higher permissions level. If the executing process is set to run at a specific time or during a certain event (e.g., system bootup) then this technique can also be used for persistence. 
@@ -219,8 +229,22 @@
 
 
 
-## Launch Daemon
+
+---------------------------
+## Image File Execution Options Injection
+* [Image File Execution Options Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1183)
+	* Image File Execution Options (IFEO) enable a developer to attach a debugger to an application. When a process is created, any executable file present in an application’s IFEO will be prepended to the application’s name, effectively launching the new process under the debugger (e.g., `“C:\dbg\ntsd.exe -g notepad.exe”)`.
+	* IFEOs can be set directly via the Registry or in Global Flags via the Gflags tool.2 IFEOs are represented as Debugger Values in the Registry under `*HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options/<executable> and HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\<executable>` where `<executable>` is the binary on which the debugger is attached.
+	* Similar to Process Injection, this value can be abused to obtain persistence and privilege escalation by causing a malicious executable to be loaded and run in the context of separate processes on the computer. Installing IFEO mechanisms may also provide Persistence via continuous invocation.
+	* Malware may also use IFEO for Defense Evasion by registering invalid debuggers that redirect and effectively disable various system and security applications.
+
+#### Windows
+* [Image File Execution Options (IFEO) - blogs.msdn](https://blogs.msdn.microsoft.com/mithuns/2010/03/24/image-file-execution-options-ifeo/)
+
+
+
 ------------------------------- 
+## Launch Daemon
 * [Launch Daemon - ATT&CK](https://attack.mitre.org/wiki/Technique/T1160)
 	* Per Apple’s developer documentation, when macOS and OS X boot up, launchd is run to finish system initialization. This process loads the parameters for each launch-on-demand system-level daemon from the property list (plist) files found in /System/Library/LaunchDaemons and /Library/LaunchDaemonsAppleDocs Launch Agent Daemons. These LaunchDaemons have property list files which point to the executables that will be launchedMethods of Mac Malware Persistence. 
 	* Adversaries may install a new launch daemon that can be configured to execute at startup by using launchd or launchctl to load a plist into the appropriate directoriesOSX Malware Detection. The daemon name may be disguised by using a name from a related operating system or benign software WireLurker. Launch Daemons may be created with administrator privileges, but are executed under root privileges, so an adversary may also use a service to escalate privileges from administrator to root. 
@@ -233,9 +257,8 @@
 
 
 
-
-## Local Port Monitor
 -------------------------------
+## Local Port Monitor
 * [Local Port Monitor - ATT&CK](https://attack.mitre.org/wiki/Technique/T1013)
 	* A port monitor can be set through the AddMonitor API call to set a DLL to be loaded at startup.AddMonitor This DLL can be located in C:\Windows\System32 and will be loaded by the print spooler service, spoolsv.exe, on boot.Bloxham Alternatively, an arbitrary DLL can be loaded if permissions allow writing a fully-qualified pathname for that DLL to `HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors.Bloxham` The spoolsv.exe process also runs under SYSTEM level permissions. Adversaries can use this technique to load malicious code at startup that will persist on system reboot and execute as SYSTEM. 
 
@@ -250,9 +273,8 @@
 
 
 
-
-## New Service
 -------------------------------
+## New Service
 * [New Service - ATT&CK](https://attack.mitre.org/wiki/Technique/T1050)
 	* When operating systems boot up, they can start programs or applications called services that perform background system functions.TechNet Services A service's configuration information, including the file path to the service's executable, is stored in the Windows Registry. Adversaries may install a new service that can be configured to execute at startup by using utilities to interact with services or by directly modifying the Registry. The service name may be disguised by using a name from a related operating system or benign software with Masquerading. Services may be created with administrator privileges but are executed under SYSTEM privileges, so an adversary may also use a service to escalate privileges from administrator to SYSTEM. Adversaries may also directly start services through Service Execution. 
 
@@ -263,9 +285,8 @@
 
 
 
-
-### Path Interception
 -------------------------------
+### Path Interception
 * [Path Interception - ATT&CK](https://attack.mitre.org/wiki/Technique/T1034)
 	* Path interception occurs when an executable is placed in a specific path so that it is executed by an application instead of the intended target. One example of this was the use of a copy of cmd in the current working directory of a vulnerable application that loads a CMD or BAT file with the CreateProcess function.TechNet MS14-019 
 	* There are multiple distinct weaknesses or misconfigurations that adversaries may take advantage of when performing path interception: unquoted paths, path environment variable misconfigurations, and search order hijacking. The first vulnerability deals with full program paths, while the second and third occur when program paths are not specified. These techniques can be used for persistence if executables are called on a regular basis, as well as privilege escalation if intercepted executables are started by a higher privileged process. 
@@ -305,18 +326,41 @@ Search Order Hijacking
 
 
 
-## Plist Modification
 ------------------------------- 
+## Plist Modification
 * [Plist Modification - ATT&CK](https://attack.mitre.org/wiki/Technique/T1150)
 	* Property list (plist) files contain all of the information that macOS and OS X uses to configure applications and services. These files are UT-8 encoded and formatted like XML documents via a series of keys surrounded by < >. They detail when programs should execute, file paths to the executables, program arguments, required OS permissions, and many others. plists are located in certain locations depending on their purpose such as /Library/Preferences (which execute with elevated privileges) and ~/Library/Preferences (which execute with a user's privileges). Adversaries can modify these plist files to point to their own code, can use them to execute their code in the context of another user, bypass whitelisting procedures, or even use them as a persistence mechanismSofacy Komplex Trojan.
 
 
 
 
-
-
-## Scheduled Tasks
 -------------------------------
+## Process Injection
+* [Process Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1055)
+	* Process injection is a method of executing arbitrary code in the address space of a separate live process. Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via process injection may also evade detection from security products since the execution is masked under a legitimate process. 
+
+
+#### Linux & OS X
+* Implementations for Linux and OS X/macOS systems include:
+	* LD_PRELOAD, LD_LIBRARY_PATH (Linux), DYLD_INSERT_LIBRARIES (Mac OS X) environment variables, or the dlfcn application programming interface (API) can be used to dynamically load a library (shared object) in a process which can be used to intercept API calls from the running process.
+	* Ptrace system calls can be used to attach to a running process and modify it in runtime.
+	* /proc/[pid]/mem provides access to the memory of the process and can be used to read/write arbitrary data to it. This technique is very rare due to its complexity.
+	* VDSO hijacking performs runtime injection on ELF binaries by manipulating code stubs mapped in from the linux-vdso.so shared object.
+* Malware commonly utilizes process injection to access system resources through which Persistence and other environment modifications can be made. More sophisticated samples may perform multiple process injections to segment modules and further evade detection, utilizing named pipes or other inter-process communication (IPC) mechanisms as a communication channel.
+ 
+
+#### Windows
+There are multiple approaches to injecting code into a live process. Windows implementations include:
+	* Dynamic-link library (DLL) injection involves writing the path to a malicious DLL inside a process then invoking execution by creating a remote thread.
+	* Portable executable injection involves writing malicious code directly into the process (without a file on disk) then invoking execution with either additional code or by creating a remote thread. The displacement of the injected code introduces the additional requirement for functionality to remap memory references. Variations of this method such as reflective DLL injection (writing a self-mapping DLL into a process) and memory module (map DLL when writing into process) overcome the address relocation issue.
+	* Thread execution hijacking involves injecting malicious code or the path to a DLL into a thread of a process. Similar to Process Hollowing, the thread must first be suspended.
+	* Asynchronous Procedure Call (APC) injection involves attaching malicious code to the APC Queue3 of a process's thread. Queued APC functions are executed when the thread enters an alterable state. AtomBombing  is a variation that utilizes APCs to invoke malicious code previously written to the global atom table.
+	* Thread Local Storage (TLS) callback injection involves manipulating pointers inside a portable executable (PE) to redirect a process to malicious code before reaching the code's legitimate entry point.
+
+	
+
+-------------------------------
+## Scheduled Tasks
 * [Scheduled Tasks - ATT&CK](https://attack.mitre.org/wiki/Technique/T1053)
 	* Utilities such as at and schtasks, along with the Windows Task Scheduler, can be used to schedule programs or scripts to be executed at a date and time. The account used to create the task must be in the Administrators group on the local system. A task can also be scheduled on a remote system, provided the proper authentication is met to use RPC and file and printer sharing is turned on.TechNet Task Scheduler Security An adversary may use task scheduling to execute programs at system startup or on a scheduled basis for persistence, to conduct remote Execution as part of Lateral Movement, to gain SYSTEM privileges, or to run a process under the context of a specified account.
 
@@ -335,8 +379,8 @@ Search Order Hijacking
 
 
 
-## Service Registry Permissions Weakness
 -------------------------------
+## Service Registry Permissions Weakness
 * [Service Registry Permissions Weakness - ATT&CK](https://attack.mitre.org/wiki/Technique/T1058)
 	* Windows stores local service configuration information in the Registry under HKLM\SYSTEM\CurrentControlSet\Services. The information stored under a service's Registry keys can be manipulated to modify a service's execution parameters through tools such as the service controller, sc.exe, PowerShell, or Reg. Access to Registry keys is controlled through Access Control Lists and permissions.MSDN Registry Key Security If the permissions for users and groups are not properly set and allow access to the Registry keys for a service, then adversaries can change the service binPath/ImagePath to point to a different executable under their control. When the service starts or is restarted, then the adversary-controlled program will execute, allowing the adversary to gain persistence and/or privilege escalation to the account context the service is set to execute under (local/domain account, SYSTEM, LocalService, or NetworkService).
 
@@ -363,9 +407,18 @@ Search Order Hijacking
 
 
 
+## SID-History Injection
+* [SID-History Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1178)
+	* The Windows security identifier (SID) is a unique value that identifies a user or group account. SIDs are used by Windows security in both security descriptors and access tokens.1 An account can hold additional SIDs in the SID-History Active Directory attribute2, allowing inter-operable account migration between domains (e.g., all values in SID-History are included in access tokens).
+	* Adversaries may use this mechanism for privilege escalation. With Domain Administrator (or equivalent) rights, harvested or well-known SID values3 may be inserted into SID-History to enable impersonation of arbitrary users/groups such as Enterprise Administrators. This manipulation may result in elevated access to local resources and/or access to otherwise inaccessible domains via lateral movement techniques such as Remote Services, Windows Admin Shares, or Windows Remote Management. 
 
-## Startup Items
+#### Windows
+* [Security Identifiers - msdn.ms](https://msdn.microsoft.com/library/windows/desktop/aa379571.aspx)
+* [SID-History attribute - msdn.ms](https://msdn.microsoft.com/library/ms679833.aspx)
+* [Well-known security identifiers in Windows operating systems](https://support.microsoft.com/en-us/help/243330/well-known-security-identifiers-in-windows-operating-systems)
+
 ------------------------------- 
+## Startup Items
 * [Startup Items - ATT&CK](https://attack.mitre.org/wiki/Technique/T1165)
 	* Per Apple’s documentation, startup items execute during the final phase of the boot process and contain shell scripts or other executable files along with configuration information used by the system to determine the execution order for all startup itemsStartup Items. This is technically a deprecated version (superseded by Launch Daemons), and thus the appropriate folder, /Library/StartupItems isn’t guaranteed to exist on the system by default, but does appear to exist by default on macOS Sierra. A startup item is a directory whose executable and configuration property list (plist), StartupParameters.plist, reside in the top-level directory. An adversary can create the appropriate folders/files in the StartupItems directory to register their own persistence mechanismMethods of Mac Malware Persistence. Additionally, since StartupItems run during the bootup phase of macOS, they will run as root. If an adversary is able to modify an existing Startup Item, then they will be able to Privilege Escalate as well. 
 
@@ -374,8 +427,8 @@ Search Order Hijacking
 
 
 
-## Sudo
 ------------------------------- 
+## Sudo
 * [Sudo - ATT&CK](https://attack.mitre.org/wiki/Technique/T1169)
 	* The sudoers file, `/etc/sudoers`, describes which users can run which commands and from which terminals. This also describes which commands users can run as other users or groups. This provides the idea of least privilege such that users are running in their lowest possible permissions for most of the time and only elevate to other users or permissions as needed, typically by prompting for a password. However, the sudoers file can also specify when to not prompt users for passwords with a line like `user1 ALL=(ALL) NOPASSWD: ALLOSX.Dok Malware`. Adversaries can take advantage of these configurations to execute commands as other users or spawn processes with higher privileges. You must have elevated privileges to edit this file though. 
 
@@ -389,8 +442,8 @@ Search Order Hijacking
 
 
 
-## Valid Accounts
 ---------------------
+## Valid Accounts
 * [Valid Accounts - ATT&CK](https://attack.mitre.org/wiki/Technique/T1078)
 	* Adversaries may steal the credentials of a specific user or service account using Credential Access techniques. Compromised credentials may be used to bypass access controls placed on various resources on hosts and within the network and may even be used for persistent access to remote systems. Compromised credentials may also grant an adversary increased privilege to specific systems or access to restricted areas of the network. Adversaries may choose not to use malware or tools in conjunction with the legitimate access those credentials provide to make it harder to detect their presence. 
 	* Adversaries may also create accounts, sometimes using pre-defined account names and passwords, as a means for persistence through backup access in case other means are unsuccessful. 
@@ -412,10 +465,8 @@ also grant an adversary increased privilege to specific systems or access to res
 * [Attractive Accounts for Credential Theft - docs ms](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/attractive-accounts-for-credential-theft)
 
 
-
-## Web Shell
 -------------------------------
-Web Shell
+## Web Shell
 * [Web Shell - ATT&CK](https://attack.mitre.org/wiki/Technique/T1100)
 	* A Web shell is a Web script that is placed on an openly accessible Web server to allow an adversary to use the Web server as a gateway into a network. A Web shell may provide a set of functions to execute or a command-line interface on the system that hosts the Web server. 
 * [public-shell](https://github.com/BDLeet/public-shell)

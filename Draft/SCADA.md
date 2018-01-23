@@ -46,7 +46,10 @@
 	* [All You Need to Know About Modbus RTU](https://www.youtube.com/watch?v=OvRD2UvrHjE)
 	* [All You need to know about Modbus TCP](https://www.youtube.com/watch?v=E1nsgukeKKA)
 	* [Modbus Data structure](https://www.youtube.com/watch?v=8FYFai21JPA)
+	* [Modbus interface tutorial](https://www.lammertbies.nl/comm/info/modbus.html)
+	* [Modbus Protocol Overview](https://www.lammertbies.nl/comm/info/modbus.html)
 * **General**
+	* [A Collection of Resources for Getting Started in ICS/SCADA Cybersecurity - Robert M. Lee](http://www.robertmlee.org/a-collection-of-resources-for-getting-started-in-icsscada-cybersecurity/)
 	* [Different Type of SCADA](http://scadastrangelove.blogspot.com/2014/10/different-type-of-scada.html)
 	* [awesome-industrial-control-system-security](https://github.com/hslatman/awesome-industrial-control-system-security)
 	* [Cassandra coefficient and ICS cyber – is this why the system is broken](http://www.controlglobal.com/blogs/unfettered/cassandra-coefficient-and-ics-cyber-is-this-why-the-system-is-broken/)
@@ -71,6 +74,8 @@
 	* [GRASSMARLIN](https://github.com/iadgov/GRASSMARLIN)
 	* [Moki Linux](https://github.com/moki-ics/moki)
 		* Moki is a modification of Kali to encorporate various ICS/SCADA Tools scattered around the internet, to create a customized Kali Linux geared towards ICS/SCADA pentesting professionals.
+	* [nmap-scada](https://github.com/jpalanco/nmap-scada)
+		* nse scripts for scada identification
 * **Assessment Tools**
 	* [Redpoint](https://github.com/digitalbond/Redpoint)
 		* Redpoint is a Digital Bond research project to enumerate ICS applications and devices. The Redpoint tools use legitimate protocol or application commands to discover and enumerate devices and applications. There is no effort to exploit or crash anything. However many ICS devices and applications are fragile and can crash or respond in an unexpected way to any unexpected traffic so use with care.

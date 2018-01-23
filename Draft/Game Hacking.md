@@ -15,14 +15,7 @@ Fix ToC
 * [OwnedCore](http://www.ownedcore.com/forums/)
 * [Cathook Training Software](https://github.com/nullifiedcat/cathook)
 
-* [CSGOSimple](https://github.com/MarkHC/CSGOSimple)
-	* A simple base for internal Counter-Strike: Global Offensive cheats.
-* [NoEye](https://github.com/Schnocker/NoEye)
-	* An usermode BE Rootkit Bypass
-* [PubgPrivXcode85](https://github.com/TonyZesto/PubgPrivXcode85)
-	* Simple chams wallhack for Player Unknowns Battlegrounds using a D3D11DrawIndexed hook
 * [PortAIO-Loader](https://github.com/PirateEmpire/PortAIO-Loader) 
-
 
 #### End Sort
 
@@ -71,10 +64,10 @@ Fix ToC
 
 ------------
 ### <a name="console"></a>Nintendo
-* **Nintendo Gameboy**
+* **Nintendo Gameboy/Pocket/Color/Advance**
 	* [Reverse engineering a Gameboy ROM with radare2](https://www.megabeets.net/reverse-engineering-a-gameboy-rom-with-radare2/)
-* **Nintendo Gameboy Pocket/Color**
-* **Nintendo Gameboy Advance**
+	* [awesome-gbdev](https://github.com/avivace/awesome-gbdev)
+		* A curated list of Game Boy development resources such as tools, docs, emulators, related projects and open-source ROMs.
 * **Nintendo 3DS**
 	* **Articles/Writeups**
 		* [Keyshuffling Attack for Persistent Early Code Execution in the Nintendo 3DS Secure Bootchain](https://github.com/Plailect/keyshuffling)
@@ -144,11 +137,25 @@ Fix ToC
 			* In this talk, I'll provide a window into the warchest my team used to generate over a million lines of code. In particular, we created and used game hacks to process data from tens of millions of hours of in-game data and use the results to generate copies of a game's map, monsters, quests, items, spells, non-playable characters, and more. We also used a wiki crawler to obtain a large amount of data, generate additional code, and guide our cheat scripts in what to look for, clarify, and ignore. After explaining our end-game vision, I'll dive deep into the architecture of the game client, server and protocol. Once that's out of the way, I'll talk about the different types of hacks we used, how they work, and what data they were able to obtain. Once that's out of the way, I'll round out the story by explaining exactly what type of data we gathered and what parts of our toolkit we used to gather it.
 	* **Miscellaneous**
 		* [Hack the Vote CTF "The Wall" Solution](https://zerosum0x0.blogspot.com/2016/11/hack-vote-wall-solution.html)
-* **Non-Specific Tools**
+* **Tools**
+	* [CSGOSimple](https://github.com/MarkHC/CSGOSimple)
+		* A simple base for internal Counter-Strike: Global Offensive cheats.
+	* [PubgPrivXcode85](https://github.com/TonyZesto/PubgPrivXcode85)
+		* Simple chams wallhack for Player Unknowns Battlegrounds using a D3D11DrawIndexed hook
+
 * [TruePlay - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/mt808781(v=vs.85).aspx)
 *  **Game Trainers**
 	* [ugtrain](https://github.com/ugtrain/ugtrain)
 		* Universal Elite Game Trainer for CLI(linux game trainer)
+* **BattleEye**
+	* [FuckBattlEye](https://github.com/G-E-N-E-S-I-S/FuckBattlEye)
+		* Bypassing kernelmode anticheats via handle inheritance (across sections)
+	* [NoEye](https://github.com/Schnocker/NoEye)
+		* An usermode BE Rootkit Bypass
+
+
+
+
 
 
 --------------

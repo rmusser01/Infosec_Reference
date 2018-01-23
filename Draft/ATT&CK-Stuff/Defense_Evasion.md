@@ -7,9 +7,8 @@
 
 
 
-
-## Access Token Manipulation
 -------------------------------
+## Access Token Manipulation
 * [Access Token Manipulation - ATT&CK](https://attack.mitre.org/wiki/Technique/T1134)
 	* Windows uses access tokens to determine the ownership of a running process. A user can manipulate access tokens to make a running process appear as though it belongs to someone other than the user that started the process. When this occurs, the process also takes on the security context associated with the new token. For example, Microsoft promotes the use of access tokens as a security best practice. Administrators should log in as a standard user but run their tools with administrator privileges using the built-in access token manipulation command runas. Microsoft runas 
 	* Adversaries may use access tokens to operate under a different user or system security context to perform actions and evade detection. An adversary can use built-in Windows API functions to copy access tokens from existing processes; this is known as token stealing. An adversary must already be in a privileged user context (i.e. administrator) to steal a token. However, adversaries commonly use token stealing to elevate their security context from the administrator level to the SYSTEM level.Pentestlab Token Manipulation 
@@ -30,18 +29,16 @@
 * [Account Hunting for Invoke-TokenManipulation](https://www.trustedsec.com/2015/01/account-hunting-invoke-tokenmanipulation/)
 
 
-
-## Binary Padding
 -------------------------------
+## Binary Padding
 * [Binary Padding - ATT&CK](https://attack.mitre.org/wiki/Technique/T1009)
 	* Some security tools inspect files with static signatures to determine if they are known malicious. Adversaries may add data to files to increase the size beyond what security tools are capable of handling or to change the file hash to avoid hash-based blacklists.
 
 
 
 
-
-## Bypass User Account Control
 -------------------------------
+## Bypass User Account Control
 * [Bypass User Account Control](https://attack.mitre.org/wiki/Technique/T1088)
 	* Windows User Account Control (UAC) allows a program to elevate its privileges to perform a task under administrator-level permissions by prompting the user for confirmation. The impact to the user ranges from denying the operation under high enforcement to allowing the user to perform the action if they are in the local administrators group and click through the prompt or allowing them to enter an administrator password to complete the action.TechNet How UAC Works 
 	* If the UAC protection level of a computer is set to anything but the highest level, certain Windows programs are allowed to elevate privileges or execute some elevated COM objects without prompting the user through the UAC notification box.TechNet Inside UACMSDN COM Elevation An example of this is use of rundll32.exe to load a specifically crafted DLL which loads an auto-elevated COM object and performs a file operation in a protected directory which would typically require elevated access. Malicious software may also be injected into a trusted process to gain elevated privileges without prompting a user.Davidson Windows Adversaries can use these techniques to elevate privileges to administrator if the target process is unprotected. 
@@ -70,9 +67,8 @@
 	* Methods to bypass UAC and load a DLL over webdav 
 
 
-
-## Clear Command History
 ------------------------------- 
+## Clear Command History
 * [Clear Command History - ATT&CK](https://attack.mitre.org/wiki/Technique/T1146)
 	* macOS and Linux both keep track of the commands users type in their terminal so that users can easily remember what they've done. These logs can be accessed in a few different ways. While logged in, this command history is tracked in a file pointed to by the environment variable HISTFILE. When a user logs off a system, this information is flushed to a file in the user's home directory called ~/.bash_history. The benefit of this is that it allows users to go back to commands they've used before in different sessions. Since everything typed on the command-line is saved, passwords passed in on the command line are also saved. Adversaries can abuse this by searching these files for cleartext passwords. Additionally, adversaries can use a variety of methods to prevent their own commands from appear in these logs such as unset HISTFILE, export HISTFILESIZE=0, history -c, rm ~/.bash_history.
 
@@ -86,9 +82,8 @@
 
 
 
-
-## Code Signing
 -------------------------------
+## Code Signing
 * [Code Signing - ATT&CK](https://attack.mitre.org/wiki/Technique/T1116)
 	* Code signing provides a level of authenticity on a binary from the developer and a guarantee that the binary has not been tampered with.Wikipedia Code Signing However, adversaries are known to use code signing certificates to masquerade malware and tools as legitimate binariesJanicab. The certificates used during an operation may be created, forged, or stolen by the adversary.Securelist Digital CertificatesSymantec Digital Certificates 
 	* Code signing to verify software on first run can be used on modern Windows and MacOS/OS X systems. It is not used on Linux due to the decentralized nature of the platform.Wikipedia Code Signing 
@@ -111,16 +106,14 @@
 * [How to Evade Application Whitelisting Using REGSVR32 - BHIS](https://www.blackhillsinfosec.com/evade-application-whitelisting-using-regsvr32/)
 
 
-
-## Component Firmware
 -------------------------------
+## Component Firmware
 * [Component Firmware - ATT&CK](https://attack.mitre.org/wiki/Technique/T1109)
 	* Some adversaries may employ sophisticated means to compromise computer components and install malicious firmware that will execute adversary code outside of the operating system and main system firmware or BIOS. This technique may be similar to System Firmware but conducted upon other system components that may not have the same capability or level of integrity checking. Malicious device firmware could provide both a persistent level of access to systems despite potential typical failures to maintain access and hard disk re-images, as well as a way to evade host software-based defenses and integrity checks.
 * [HD Hacking - SpritesMods](http://spritesmods.com/?art=hddhack)
 
-
-## Component Object Model Hijacking
 -------------------------------
+## Component Object Model Hijacking
 * [Component Object Model Hijacking](https://attack.mitre.org/wiki/Defense_Evasion)
 	* The Microsoft Component Object Model (COM) is a system within Windows to enable interaction between software components through the operating system.Microsoft Component Object Model Adversaries can use this system to insert malicious code that can be executed in place of legitimate software through hijacking the COM references and relationships as a means for persistence. Hijacking a COM object requires a change in the Windows Registry to replace a reference to a legitimate system component which may cause that component to not work when executed. When that system component is executed through normal system operation the adversary's code will be executed instead.GDATA COM Hijacking An adversary is likely to hijack objects that are used frequently enough to maintain a consistent level of persistence, but are unlikely to break noticeable functionality within the system as to avoid system instability that could lead to detection.
 
@@ -133,9 +126,8 @@ Component Object Model Hijacking
 
 
 
-
-## DLL Injection
 -------------------------------
+## DLL Injection
 * [DLL Injection - ATT&CK](https://attack.mitre.org/wiki/Defense_Evasion)
 	* DLL injection is used to run code in the context of another process by causing the other process to load and execute code. Running code in the context of another process provides adversaries many benefits, such as access to the process's memory and permissions. It also allows adversaries to mask their actions under a legitimate process. A more sophisticated kind of DLL injection, reflective DLL injection, loads code without calling the normal Windows API calls, potentially bypassing DLL load monitoring. Numerous methods of DLL injection exist on Windows, including modifying the Registry, creating remote threads, Windows hooking APIs, and DLL pre-loading.CodeProject Inject CodeWikipedia DLL Injection
 
@@ -147,9 +139,8 @@ Component Object Model Hijacking
 	* [Code - Github](https://github.com/fdiskyou/injectAllTheThings)
 
 
-
-## DLL Search Order Hijacking
 -------------------------------
+## DLL Search Order Hijacking
 * [DLL Search Order Hijacking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1038)
 	* Windows systems use a common method to look for required DLLs to load into a program.Microsoft DLL Search Adversaries may take advantage of the Windows DLL search order and programs that ambiguously specify DLLs to gain privilege escalation and persistence. 
 	* Adversaries may perform DLL preloading, also called binary planting attacks,OWASP Binary Planting by placing a malicious DLL with the same name as an ambiguously specified DLL in a location that Windows searches before the legitimate DLL. Often this location is the current working directory of the program. Remote DLL preloading attacks occur when a program sets its current directory to a remote location such as a Web share before loading a DLL.Microsoft 2269637 Adversaries may use this behavior to cause the program to load a malicious DLL. 
@@ -166,9 +157,8 @@ Component Object Model Hijacking
 
 
 
-
-## DLL Side-Loading
 -------------------------------
+## DLL Side-Loading
 * [DLL Side Loading - ATT&CK](https://attack.mitre.org/wiki/Technique/T1073)
 	* Programs may specify DLLs that are loaded at runtime. Programs that improperly or vaguely specify a required DLL may be open to a vulnerability in which an unintended DLL is loaded. Side-loading vulnerabilities specifically occur when Windows Side-by-Side (WinSxS) manifestsMSDN Manifests are not explicit enough about characteristics of the DLL to be loaded. Adversaries may take advantage of a legitimate program that is vulnerable to side-loading to load a malicious DLL.Stewart 2014 Adversaries likely use this technique as a means of masking actions they perform under a legitimate, trusted system or software process.
 
@@ -181,9 +171,8 @@ Component Object Model Hijacking
 * [Secure loading of libraries to prevent DLL preloading attacks - MSDN](https://support.microsoft.com/en-us/help/2389418/secure-loading-of-libraries-to-prevent-dll-preloading-attacks)
 
 
-
-## Deobfuscate/Decode File or Information
 -------------------------------
+## Deobfuscate/Decode File or Information
 * [Deobfuscate/Decode Files or Information - ATT&CK](https://attack.mitre.org/wiki/Technique/T1140)
 	* Adversaries may use Obfuscated Files or Information to hide artifacts of an intrusion from analysis. They may require separate mechanisms to decode or deobfuscate that information depending on how they intend to use it. Methods for doing that include built-in functionality of malware, Scripting, PowerShell, or by using utilities present on the system. One such example is use of certutil to decode a remote access tool portable executable file that has been hidden inside a certificate file.Malwarebytes Targeted Attack against Saudi Arabia
 * [Obfuscation - Wikipedia](https://en.wikipedia.org/wiki/Obfuscation_(software))
@@ -192,9 +181,8 @@ Component Object Model Hijacking
 
 
 
-
-## Disabling Security Tools
 -------------------------------
+## Disabling Security Tools
 * [Disabling Security Tools - ATT&CK](https://attack.mitre.org/wiki/Technique/T1089)
 	* Adversaries may disable security tools to avoid possible detection of their tools and activities. This can take the form of killing security software or event logging processes, deleting Registry keys so that tools do not start at run time, or other methods to interfere with security scanning or event reporting. 
 
@@ -205,17 +193,26 @@ Component Object Model Hijacking
 
 
 
-
-## Exploitation of Vulnerability
 -------------------------------
+## Exploitation of Vulnerability
 * [Exploitation of Vulnerability - ATT&CK](https://attack.mitre.org/wiki/Technique/T1068) 
 	* Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Exploiting software vulnerabilities may allow adversaries to run a command or binary on a remote system for lateral movement, escalate a current process to a higher privilege level, or bypass security mechanisms. Exploits may also allow an adversary access to privileged accounts and credentials. One example of this is MS14-068, which can be used to forge Kerberos tickets using domain user permissions.Technet MS14-068ADSecurity Detecting Forged Tickets
 
 
+----------------
+## Extra Window Memory Injection
+* [Extra Window Memory Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1181)
+	* Before creating a window, graphical Windows-based processes must prescribe to or register a windows class, which stipulate appearance and behavior (via windows procedures, which are functions that handle input/output of data).1 Registration of new windows classes can include a request for up to 40 bytes of extra window memory (EWM) to be appended to the allocated memory of each instance of that class. This EWM is intended to store data specific to that window and has specific application programming interface (API) functions to set and get its value.23
+	* Although small, the EWM is large enough to store a 32-bit pointer and is often used to point to a windows procedure. Malware may possibly utilize this memory location in part of an attack chain that includes writing code to shared sections of the process’s memory, placing a pointer to the code in EWM, then invoking execution by returning execution control to the address in the process’s EWM.
+	* Execution granted through EWM injection may take place in the address space of a separate live process. Similar to Process Injection, this may allow access to both the target process's memory and possibly elevated privileges. Writing payloads to shared sections also avoids the use of highly monitored API calls such as WriteProcessMemory and CreateRemoteThread.4 More sophisticated malware samples may also potentially bypass protection mechanisms such as data execution prevention (DEP) by triggering a combination of windows procedures and other system functions that will rewrite the malicious payload inside an executable portion of the target process
+
+#### Windows
+* [PowerLoader Injection – Something truly amazing - malwaretech](https://www.malwaretech.com/2013/08/powerloader-injection-something-truly.html)
 
 
-## File Deletion
+
 -------------------------------
+## File Deletion
 * [File Deletion - ATT&CK](https://attack.mitre.org/wiki/Technique/T1107)
 	* Malware, tools, or other non-native files dropped or created on a system by an adversary may leave traces behind as to what was done within a network and how. Adversaries may remove these files over the course of an intrusion to keep their footprint low or remove them at the end as part of the post-intrusion cleanup process. 
 
@@ -231,9 +228,8 @@ Component Object Model Hijacking
 
 
 
-
-## File System Logical Offsets
 -------------------------------
+## File System Logical Offsets
 * [File System Logical Offsets - ATT&CK](https://attack.mitre.org/wiki/Technique/T1006)
 * Windows allows programs to have direct access to logical volumes. Programs with direct access may read and write files directly from the drive by analyzing file system data structures. This technique bypasses Windows file access controls as well as file system monitoring tools.Hakobyan 2009 Utilities, such as NinjaCopy, exist to perform these actions in PowerShell.Github PowerSploit Ninjacopy
 
@@ -244,9 +240,8 @@ Component Object Model Hijacking
 * [Invoke-NinjaCopy.ps1](https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Invoke-NinjaCopy.ps1)
 
 
-
-## Gatekeeper Bypass (OS X)
 ----------------------------- 
+## Gatekeeper Bypass (OS X)
 * [Gatekeeper Bypass- ATT&CK](https://attack.mitre.org/wiki/Technique/T1144)
 	* In macOS and OS X, when applications or programs are downloaded from the internet, there is a special attribute set on the file called com.apple.quarantine. This attribute is read by Apple's Gatekeeper defense program at execution time and provides a prompt to the user to allow or deny execution.
 	* Apps loaded onto the system from USB flash drive, optical disk, external hard drive, or even from a drive shared over the local network won’t set this flag. Additionally, other utilities or events like drive-by downloads don’t necessarily set it either. This completely bypasses the built-in Gatekeeper check1. The presence of the quarantine flag can be checked by the xattr command `xattr /path/to/MyApp.app for com.apple.quarantine`. Similarly, given sudo access or elevated permission, this attribute can be removed with xattr as well, sudo xattr -r -d com.apple.quarantine /path/to/MyApp.app.
@@ -258,9 +253,8 @@ Component Object Model Hijacking
 
 
 
-
-## Hidden Files and Directories
 -------------------------------
+## Hidden Files and Directories
 * [Hidden Files and Directories - ATT&CK](https://attack.mitre.org/wiki/Technique/T1158)
 	* To prevent normal users from accidentally changing special files on a system, most operating systems have the concept of a ‘hidden’ file. These files don’t show up when a user browses the file system with a GUI or when using normal commands on the command line. Users must explicitly ask to show the hidden files either via a series of Graphical User Interface (GUI) prompts or with command line switches (dir /a for Windows and ls –a for Linux and macOS). 
 
@@ -285,9 +279,8 @@ Component Object Model Hijacking
 
 
 
-
-## Hidden Users (OS X)
 ------------------------------- 
+## Hidden Users (OS X)
 * [Hidden Users - ATT&CK](https://attack.mitre.org/wiki/Technique/T1147)
 	* Every user account in macOS has a userID associated with it. When creating a user, you can specify the userID for that account. There is a property value in /Library/Preferences/com.apple.loginwindow called Hide500Users that prevents users with userIDs 500 and lower from appearing at the login screen. By using the Create Account technique with a userID under 500 and enabling this property (setting it to Yes), an adversary can hide their user accounts much more easily: sudo dscl . -create /Users/username UniqueID 401. 
 * [Hide a user account in macOS - support.apple](https://support.apple.com/en-us/HT203998)
@@ -296,40 +289,52 @@ Component Object Model Hijacking
 
 
 
-## Hidden Window
+
+
 ------------------------------- 
+## Hidden Window
 * [Hidden Window - ATT&CK](https://attack.mitre.org/wiki/Technique/T1143)
 	* The configurations for how applications run on macOS and OS X are listed in property list (plist) files. One of the tags in these files can be apple.awt.UIElement, which allows for Java applications to prevent the application's icon from appearing in the Dock. A common use for this is when applications run in the system tray, but don't also want to show up in the Dock. However, adversaries can abuse this feature and hide their running window.
 
 
-## HISTCONTROL (Linux)
 ------------------------------- 
+## HISTCONTROL (Linux)
 * [HISTCONTROL - ATT&CK](https://attack.mitre.org/wiki/Technique/T1148)
 	* The HISTCONTROL environment variable keeps track of what should be saved by the history command and eventually into the ~/.bash_history file when a user logs out. This setting can be configured to ignore commands that start with a space by simply setting it to "ignorespace". HISTCONTROL can also be set to ignore duplicate commands by setting it to "ignoredups". In some Linux systems, this is set by default to "ignoreboth" which covers both of the previous examples. This means that “ ls” will not be saved, but “ls” would be saved by history. HISTCONTROL does not exist by default on macOS, but can be set by the user and will be respected. Adversaries can use this to operate without leaving traces by simply prepending a space to all of their terminal commands. 
 * [15 Examples To Master Linux Command Line History](http://www.thegeekstuff.com/2008/08/15-examples-to-master-linux-command-line-history/)
 
 
+---------------------------
+## Image File Execution Options Injection
+* [Image File Execution Options Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1183)
+	* Image File Execution Options (IFEO) enable a developer to attach a debugger to an application. When a process is created, any executable file present in an application’s IFEO will be prepended to the application’s name, effectively launching the new process under the debugger (e.g., `“C:\dbg\ntsd.exe -g notepad.exe”)`.
+	* IFEOs can be set directly via the Registry or in Global Flags via the Gflags tool.2 IFEOs are represented as Debugger Values in the Registry under `*HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options/<executable> and HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\<executable>` where `<executable>` is the binary on which the debugger is attached.
+	* Similar to Process Injection, this value can be abused to obtain persistence and privilege escalation by causing a malicious executable to be loaded and run in the context of separate processes on the computer. Installing IFEO mechanisms may also provide Persistence via continuous invocation.
+	* Malware may also use IFEO for Defense Evasion by registering invalid debuggers that redirect and effectively disable various system and security applications.
+
+#### Windows
+* [Image File Execution Options (IFEO) - blogs.msdn](https://blogs.msdn.microsoft.com/mithuns/2010/03/24/image-file-execution-options-ifeo/)
 
 
 
-## Indicator Blocking
+
+
 -------------------------------
+## Indicator Blocking
 * [Indicator Blocking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1054)
 	* An adversary may attempt to block indicators or events from leaving the host machine. In the case of network-based reporting of indicators, an adversary may block traffic associated with reporting to prevent central analysis. This may be accomplished by many means, such as stopping a local process or creating a host-based firewall rule to block traffic to a specific server. 
 
 
-
-## Indicator Removal from Tools
 -------------------------------
+## Indicator Removal from Tools
 * [Indicator Removal from Tools - ATT&CK](https://attack.mitre.org/wiki/Technique/T1066)
 	* If a malicious tool is detected and quarantined or otherwise curtailed, an adversary may be able to determine why the malicious tool was detected (the indicator), modify the tool by removing the indicator, and use the updated version that is no longer detected by the target's defensive systems or subsequent targets that may use similar systems. A good example of this is when malware is detected with a file signature and quarantined by anti-virus software. An adversary who can determine that the malware was quarantined because of its file signature may use Software Packing or otherwise modify the file so it has a different signature, and then re-use the malware. 
 
 
 
 
-
-## Indicator Removal on Host
 -------------------------------
+## Indicator Removal on Host
 * [Indicator Removal on Host - ATT&CK](https://attack.mitre.org/wiki/Technique/T1070)
 	* Adversaries may delete or alter generated event files on a host system, including potentially captured files such as quarantined malware. This may compromise the integrity of the security solution, causing events to go unreported, or make forensic analysis and incident response more difficult due to lack of sufficient data to determine what occurred.
 
@@ -340,9 +345,8 @@ Component Object Model Hijacking
 
 
 
-
-## Install Root Certificate
 -------------------------------
+## Install Root Certificate
 * [Install Root Certifcate](https://attack.mitre.org/wiki/Technique/T1130)
 	* Root certificates are used in public key cryptography to identify a root certificate authority (CA). When a root certificate is installed, the system or application will trust certificates in the root's chain of trust that have been signed by the root certificate.Wikipedia Root Certificate Certificates are commonly used for establishing secure TLS/SSL communications within a web browser. When a user attempts to browse a website that presents a certificate that is not trusted an error message will be displayed to warn the user of the security risk. Depending on the security settings, the browser may not allow the user to establish a connection to the website. 
 	* Installation of a root certificate on a compromised system would give an adversary a way to degrade the security of that system. Adversaries have used this technique to avoid security warnings prompting users when compromised systems connect over HTTPS to adversary controlled web servers that spoof legitimate websites in order to collect login credentials.Operation Emmental 
@@ -364,8 +368,8 @@ Component Object Model Hijacking
 
 
 
-## InstallUtil
 -------------------------------
+## InstallUtil
 * [InstallUtil - ATT&CK](https://attack.mitre.org/wiki/Technique/T1118)
 	* InstallUtil is a command-line utility that allows for installation and uninstallation of resources by executing specific installer components specified in .NET binaries.MSDN InstallUtil InstallUtil is located in the .NET directory on a Windows system: C:\Windows\Microsoft.NET\Framework\v<version>\InstallUtil.exe.InstallUtil.exe is digitally signed by Microsoft. Adversaries may use InstallUtil to proxy execution of code through a trusted Windows utility. InstallUtil may also be used to bypass process whitelisting through use of attributes within the binary that execute the class decorated with the attribute [System.ComponentModel.RunInstaller(true)].
 
@@ -386,9 +390,8 @@ Component Object Model Hijacking
 * [Methods Of Malware Persistence On Mac OS X](https://www.virusbulletin.com/uploads/pdf/conference/vb2014/VB2014-Wardle.pdf)
 
 
-
-## Launchctl
 ------------------------------- 
+## Launchctl
 * [Launchctl - ATT&CK](https://attack.mitre.org/wiki/Technique/T1152)
 	* Launchctl controls the macOS launchd process which handles things like launch agents and launch daemons, but can execute other commands or programs itself. Launchctl supports taking subcommands on the command-line, interactively, or even redirected from standard input. By loading or reloading launch agents or launch daemons, adversaries can install persistence or execute changes they made Sofacy Komplex Trojan. Running a command from launchctl is as simple as `launchctl submit -l <labelName> -- /Path/to/thing/to/execute "arg" "arg" "arg"`. Loading, unloading, or reloading launch agents or launch daemons can require elevated privileges. Adversaries can abuse this functionality to execute code or even bypass whitelisting if launchctl is an allowed process.
 
@@ -400,9 +403,8 @@ Component Object Model Hijacking
 
 
 
-
-## Masquerading (Trusted Name/Path Execution Abuse)
 -------------------------------
+## Masquerading (Trusted Name/Path Execution Abuse)
 * [Masquerading - ATT&CK](https://attack.mitre.org/wiki/Technique/T1036)
 	* Masquerading occurs when an executable, legitimate or malicious, is placed in a commonly trusted location (such as C:\Windows\System32) or named with a common name (such as "explorer.exe" or "svchost.exe") to bypass tools that trust executables by relying on file name or path. An adversary may even use a renamed copy of a legitimate utility, such as rundll32.exe. Masquerading also may be done to deceive defenders and system administrators into thinking a file is benign by associating the name with something that is thought to be legitimate. 
 
@@ -421,9 +423,8 @@ Component Object Model Hijacking
 
 
 
-
-## Modify Registry
 -------------------------------
+## Modify Registry
 * [Modify Registry - ATT&CK](https://attack.mitre.org/wiki/Technique/T1112)
 	* Adversaries may interact with the Windows Registry to hide configuration information within Registry keys, remove information as part of cleaning up, or as part of other techniques to aid in Persistence and Execution. 
 	* Access to specific areas of the Registry depends on account permissions, some requiring administrator-level access. The built-in Windows command-line utility Reg may be used for local or remote Registry modification.Microsoft Reg Other tools may also be used, such as a remote access tool, which may contain functionality to interact with the Registry through the Windows API (see examples). 
@@ -437,9 +438,8 @@ Component Object Model Hijacking
 
 
 
-
-## NTFS Extended Attributes & Alternate Data Streams
 -------------------------------
+## NTFS Extended Attributes & Alternate Data Streams
 * [NTFS Extended Attributes - ATT&CK](https://attack.mitre.org/wiki/Technique/T1096)
 	* Data or executables may be stored in New Technology File System (NTFS) partition metadata instead of directly in files. This may be done to evade some defenses, such as static indicator scanning tools and anti-virus.Journey into IR ZeroAccess NTFS EA The NTFS format has a feature called Extended Attributes (EA), which allows data to be stored as an attribute of a file or folder.Microsoft File Streams
 
@@ -469,9 +469,8 @@ Alternate Data Streams
 
 
 
-
-## Network Share Connection Removal
 -------------------------------
+## Network Share Connection Removal
 * [Network Share Connection Removal - ATT&CK](https://attack.mitre.org/wiki/Technique/T1126)
 	* Windows shared drive and Windows Admin Shares connections can be removed when no longer needed. Net is an example utility that can be used to remove network share connections with the `net use \\system\share /delete` command. Use Adversaries may remove share connections that are no longer useful in order to clean up traces of their operation.
 
@@ -485,9 +484,8 @@ Alternate Data Streams
 
 
 
-
-## Obfuscated Files or Information
 -------------------------------
+## Obfuscated Files or Information
 * [Obfuscated Files or Information - ATT&CK](https://attack.mitre.org/wiki/Technique/T1027)
 	* Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system.
 
@@ -505,9 +503,8 @@ Alternate Data Streams
 
 
 
-
-## Process Hollowing
 -------------------------------
+## Process Hollowing
 * [Process Hollowing](https://attack.mitre.org/wiki/Technique/T1093)
 	* Process hollowing occurs when a process is created in a suspended state and the process's memory is replaced with the code of a second program so that the second program runs instead of the original program. Windows and process monitoring tools believe the original process is running, whereas the actual program running is different.Leitch Hollowing Process hollowing may be used similarly to DLL Injection to evade defenses and detection analysis of malicious process execution by launching adversary-controlled code under the context of a legitimate process.
 
@@ -520,17 +517,40 @@ Alternate Data Streams
 
 
 
-## Redundant Access 
 -------------------------------
+## Process Injection
+* [Process Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1055)
+	* Process injection is a method of executing arbitrary code in the address space of a separate live process. Running code in the context of another process may allow access to the process's memory, system/network resources, and possibly elevated privileges. Execution via process injection may also evade detection from security products since the execution is masked under a legitimate process. 
+
+
+#### Linux & OS X
+* Implementations for Linux and OS X/macOS systems include:
+	* LD_PRELOAD, LD_LIBRARY_PATH (Linux), DYLD_INSERT_LIBRARIES (Mac OS X) environment variables, or the dlfcn application programming interface (API) can be used to dynamically load a library (shared object) in a process which can be used to intercept API calls from the running process.
+	* Ptrace system calls can be used to attach to a running process and modify it in runtime.
+	* /proc/[pid]/mem provides access to the memory of the process and can be used to read/write arbitrary data to it. This technique is very rare due to its complexity.
+	* VDSO hijacking performs runtime injection on ELF binaries by manipulating code stubs mapped in from the linux-vdso.so shared object.
+* Malware commonly utilizes process injection to access system resources through which Persistence and other environment modifications can be made. More sophisticated samples may perform multiple process injections to segment modules and further evade detection, utilizing named pipes or other inter-process communication (IPC) mechanisms as a communication channel.
+ 
+
+#### Windows
+There are multiple approaches to injecting code into a live process. Windows implementations include:
+	* Dynamic-link library (DLL) injection involves writing the path to a malicious DLL inside a process then invoking execution by creating a remote thread.
+	* Portable executable injection involves writing malicious code directly into the process (without a file on disk) then invoking execution with either additional code or by creating a remote thread. The displacement of the injected code introduces the additional requirement for functionality to remap memory references. Variations of this method such as reflective DLL injection (writing a self-mapping DLL into a process) and memory module (map DLL when writing into process) overcome the address relocation issue.
+	* Thread execution hijacking involves injecting malicious code or the path to a DLL into a thread of a process. Similar to Process Hollowing, the thread must first be suspended.
+	* Asynchronous Procedure Call (APC) injection involves attaching malicious code to the APC Queue3 of a process's thread. Queued APC functions are executed when the thread enters an alterable state. AtomBombing  is a variation that utilizes APCs to invoke malicious code previously written to the global atom table.
+	* Thread Local Storage (TLS) callback injection involves manipulating pointers inside a portable executable (PE) to redirect a process to malicious code before reaching the code's legitimate entry point.
+
+
+-------------------------------
+## Redundant Access 
 * [Redundant Access - ATT&CK](https://attack.mitre.org/wiki/Technique/T1108)
 	* Adversaries may use more than one remote access tool with varying command and control protocols as a hedge against detection. If one type of tool is detected and blocked or removed as a response but the organization did not gain a full understanding of the adversary's tools and access, then the adversary will be able to retain access to the network. Adversaries may also attempt to gain access to Valid Accounts to use External Remote Services such as external VPNs as a way to maintain access despite interruptions to remote access tools deployed within a target network.
 
 
 
 
-
-## Regsvcs/Regasm
 -------------------------------
+## Regsvcs/Regasm
 * [Regsvcs/Regasm - ATT&CK](https://attack.mitre.org/wiki/Technique/T1121)
 	* Regsvcs and Regasm are Windows command-line utilities that are used to register .NET Component Object Model (COM) assemblies. Both are digitally signed by Microsoft.MSDN RegsvcsMSDN Regasm Adversaries can use Regsvcs and Regasm to proxy execution of code through a trusted Windows utility. Both utilities may be used to bypass process whitelisting through use of attributes within the binary to specify code that should be run before registration or unregistration: `[ComRegisterFunction]` or `[ComUnregisterFunction]` respectively. The code with the registration and unregistration attributes will be executed even if the process is run under insufficient privileges and fails to execute.
 
@@ -544,8 +564,8 @@ Alternate Data Streams
 
 
 
-## Regsvr32
 -------------------------------
+## Regsvr32
 * [Regsvr32 - ATT&CK](https://attack.mitre.org/wiki/Technique/T1117)
 	* Regsvr32.exe is a command-line program used to register and unregister object linking and embedding controls, including dynamic link libraries (DLLs), on Windows systems. Regsvr32.exe can be used to execute arbitrary binaries.Microsoft Regsvr32 
 	* Adversaries may take advantage of this functionality to proxy execution of code to avoid triggering security tools that may not monitor execution of, and modules loaded by, the regsvr32.exe process because of whitelists or false positives from Windows using regsvr32.exe for normal operations. Regsvr32.exe is also a Microsoft signed binary. 
@@ -558,9 +578,8 @@ Alternate Data Streams
 * [Practical use of JavaScript and COM Scriptlets for Penetration Testing](http://www.labofapenetrationtester.com/2016/05/practical-use-of-javascript-and-com-for-pentesting.html)
 
 
-
-## Rootkit
 -------------------------------
+## Rootkit
 * [Rootkit - ATT&CK](https://attack.mitre.org/wiki/Technique/T1014)
 	* Rootkits are programs that hide the existence of malware by intercepting and modifying operating system API calls that supply system information. Rootkits or rootkit enabling functionality may reside at the user or kernel level in the operating system or lower, to include a Hypervisor, Master Boot Record, or the System Firmware.Wikipedia Rootkit Adversaries may use rootkits to hide the presence of programs, files, network connections, services, drivers, and other system components.
 
@@ -571,8 +590,9 @@ Alternate Data Streams
 #### Windows
 
 
+
+------------------------------
 ## Rundll32
--------------------------------
 * [Rundll32 - ATT&CK](https://attack.mitre.org/wiki/Technique/T1085)
 	* The rundll32.exe program can be called to execute an arbitrary binary. Adversaries may take advantage of this functionality to proxy execution of code to avoid triggering security tools that may not monitor execution of the rundll32.exe process because of whitelists or false positives from Windows using rundll32.exe for normal operations. 
 
@@ -581,9 +601,8 @@ Alternate Data Streams
 * [AppLocker Bypass – Rundll32 - pentesterlab](https://pentestlab.blog/tag/rundll32/)
  	
 
-
-## Scripting
 -------------------------------
+## Scripting
 * [Scripting - ATT&CK](https://attack.mitre.org/wiki/Technique/T1064)
 	* Adversaries may use scripts to aid in operations and perform multiple actions that would otherwise be manual. Scripting is useful for speeding up operational tasks and reducing the time required to gain access to critical resources. Some scripting languages may be used to bypass process monitoring mechanisms by directly interacting with the operating system at an API level instead of calling other programs. Common scripting languages for Windows include VBScript and PowerShell but could also be in the form of command-line batch scripts. 
 
@@ -613,9 +632,8 @@ Alternate Data Streams
 
 
 
-
-## Software Packing
 -------------------------------
+## Software Packing
 * [Software Packing - ATT&CK](https://attack.mitre.org/wiki/Technique/T1045)
 	* Software packing is a method of compressing or encrypting an executable. Packing an executable changes the file signature in an attempt to avoid signature-based detection. Most decompression techniques decompress the executable code in memory. 
 * [Executable compression - Wikipedia](https://en.wikipedia.org/wiki/Executable_compression)
@@ -633,9 +651,8 @@ Alternate Data Streams
 
 
 
-
-## Timestomp
 -------------------------------
+## Timestomp
 * [Timestomp - ATT&CK](https://attack.mitre.org/wiki/Technique/T1099)
 	* Timestomping is a technique that modifies the timestamps of a file (the modify, access, create, and change times), often to mimic files that are in the same folder. This is done, for example, on files that have been modified or created by the adversary so that they do not appear conspicuous to forensic investigators or file analysis tools. Timestomping may be used along with file name Masquerading to hide malware and tools.
 
@@ -650,9 +667,8 @@ Alternate Data Streams
 
 
 
-
-## Trusted Developer Utilites
 ------------------------------
+## Trusted Developer Utilites
 * [Trusted Developer Utilities - ATT&CK](https://attack.mitre.org/wiki/Technique/T1127)
 	* There are many utilities used for software development related tasks that can be used to execute code in various forms to assist in development, debugging, and reverse engineering. These utilities may often be signed with legitimate certificates that allow them to execute on a system and proxy execution of malicious code through a trusted process that effectively bypasses application whitelisting defensive solutions. 
 
@@ -687,9 +703,8 @@ Alternate Data Streams
 * [Bypassing Application Whitelisting by using WinDbg/CDB as a Shellcode Runner - exploitmonday](http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html)
 
 
-
-## Valid Accounts
 --------------------
+## Valid Accounts
 * [Valid Accounts - ATT&CK](https://attack.mitre.org/wiki/Technique/T1078)
 	* Adversaries may steal the credentials of a specific user or service account using Credential Access techniques. Compromised credentials may be used to bypass access controls placed on various resources on hosts and within the network and may even be used for persistent access to remote systems. Compromised credentials may also grant an adversary increased privilege to specific systems or access to restricted areas of the network. Adversaries may choose not to use malware or tools in conjunction with the legitimate access those credentials provide to make it harder to detect their presence. Adversaries may also create accounts, sometimes using pre-defined account names and passwords, as a means for persistence through backup access in case other means are unsuccessful. The overlap of credentials and permissions across a network of systems is of concern because the adversary may be able to pivot across accounts and systems to reach a high level of access (i.e., domain or enterprise administrator) to bypass access controls set within the enterprise.
 	

@@ -16,8 +16,8 @@ Memory corruption is for wussies
 
 
 
-## Account Manipulation
 -------------------------------
+## Account Manipulation
 * [Account Manipulation - ATT&CK](https://attack.mitre.org/wiki/Technique/T1098)
 	* Account manipulation may aid adversaries in maintaining access to credentials and certain permission levels within an environment. Manipulation could consist of modifying permissions, adding or changing permission groups, modifying account settings, or modifying how authentication is performed. In order to create or manipulate accounts, the adversary must already have sufficient permissions on systems or the domain. 
 
@@ -46,8 +46,8 @@ Memory corruption is for wussies
 
 
 
-## Brute Force
 -------------------------------
+## Brute Force
 * [Brute Force - ATT&CK](https://attack.mitre.org/wiki/Technique/T1110)
 	* Adversaries may use brute force techniques to attempt access to accounts when passwords are unknown or when password hashes are obtained. 
 	* Credential Dumping to obtain password hashes may only get an adversary so far when Pass the Hash is not an option. Techniques to systematically guess the passwords used to compute hashes are available, or the adversary may use a pre-computed rainbow table. Cracking hashes is usually done on adversary-controlled systems outside of the target network.Wikipedia Password cracking 
@@ -59,8 +59,8 @@ Memory corruption is for wussies
 
 
 
-## Create Account
 -------------------------------
+## Create Account
 * [Create Account - ATT&CK](https://attack.mitre.org/wiki/Technique/T1136)
 	* Adversaries with a sufficient level of access may create a local system or domain account. Such accounts may be used for persistence that do not require persistent remote access tools to be deployed on the system. The net user commands can be used to create a local or domain account. 
 * [Net user - technet](https://technet.microsoft.com/en-us/library/cc771865(v=ws.11).aspx)
@@ -70,8 +70,8 @@ Memory corruption is for wussies
 
 
 
-## Credential Dumping
 -------------------------------
+## Credential Dumping
 * [Credential Dumping - ATT&CK](https://attack.mitre.org/wiki/Technique/T1003)
 	* Credential dumping is the process of obtaining account login and password information from the operating system and software. Credentials can be used to perform Lateral Movement and access restricted information. 
 	* Tools may dump credentials in many different ways: extracting credential hashes for offline cracking, extracting plaintext passwords, and extracting Kerberos tickets, among others. Examples of credential dumpers include pwdump7, Windows Credential Editor, Mimikatz, and gsecdump. These tools are in use by both professional security testers and adversaries. 
@@ -127,9 +127,8 @@ Memory corruption is for wussies
 
 
 
-
+----------------------------
 ## Credentials in Files
--------------------------------
 * [Credentials in Files](https://attack.mitre.org/wiki/Technique/T1081)
 	* Adversaries may search local file systems and remote file shares for files containing passwords. These can be files created by users to store their own credentials, shared credential stores for a group of individuals, configuration files containing passwords for a system or service, or source code/binary files containing embedded passwords. It is possible to extract passwords from backups or saved virtual machines through Credential Dumping.CG 2014 Passwords may also be obtained from Group Policy Preferences stored on the Windows Domain Controller.
 
@@ -147,9 +146,8 @@ Memory corruption is for wussies
 
 
 
-
+----------------------------
 ## Exploitation of Vulnerability
--------------------------------
 * [Exploitation of Vulnerability - ATT&CK](https://attack.mitre.org/wiki/Technique/T1068)
 	* Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Exploiting software vulnerabilities may allow adversaries to run a command or binary on a remote system for lateral movement, escalate a current process to a higher privilege level, or bypass security mechanisms. Exploits may also allow an adversary access to privileged accounts and credentials. One example of this is MS14-068, which can be used to forge Kerberos tickets using domain user permissions.
 
@@ -158,6 +156,43 @@ Memory corruption is for wussies
 	* Attempt to steal kernelcredentials from launchd + task_t pointer (Based on: CVE-2017-7047)
 
 #### Windows
+
+
+
+
+----------------------------
+## Forced Authentication
+* [Forced Authentication - ATT&CK](https://attack.mitre.org/wiki/Technique/T1187)
+	* The Server Message Block (SMB) protocol is commonly used in Windows networks for authentication and communication between systems for access to resources and file sharing. When a Windows system attempts to connect to an SMB resource it will automatically attempt to authenticate and send credential information for the current user to the remote system. 1 This behavior is typical in enterprise environments so that users do not need to enter credentials to access network resources. Web Distributed Authoring and Versioning (WebDAV) is typically used by Windows systems as a backup protocol when SMB is blocked or fails. WebDAV is an extension of HTTP and will typically operate over TCP ports 80 and 443.23
+	* Adversaries may take advantage of this behavior to gain access to user account hashes through forced SMB authentication. An adversary can send an attachment to a user through spearphishing that contains a resource link to an external server controlled by the adversary, or place a specially crafted file on navigation path for privileged accounts (e.g. .SCF file placed on desktop) or on a publicly accessible share to be accessed by victim(s). When the user's system accesses the untrusted resource it will attempt authentication and send information including the user's hashed credentials over SMB to the adversary controlled server.4 With access to the credential hash, an adversary can perform off-line Brute Force cracking to gain access to plaintext credentials, or reuse it for Pass the Hash.5
+	* There are different ways this can occur:
+		* A spearphishing attachment containing a document with a resource that is automatically loaded when the document is opened. The document can include, for example, a request similar to `file[:]//[remote address]/Normal.dotm` to trigger the SMB request.6
+		* A modified .LNK or .SCF file with the icon filename pointing to an external reference such as `\\[remote address]\pic.png` that will force the system to load the resource when the icon is rendered to repeatedly gather credentials.6
+
+#### Windows
+* [hashjacking](https://github.com/hob0/hashjacking)
+	* All current versions of Windows are affected by an architectural vulnerability due to the presumptive nature of SMB authentication. Hashed credentials will secretly be sent in cleartext across the Internet. This attack vector is trivial to execute and has critical consequences. See proof of concept videos below. The core of this issue is due to the presumptive nature of current SMB authentication methods. When a user accesses a file share or remote file, hashed Windows credentials from the current user are automatically sent to the remote server in cleartext in attempt to authenticate and access the remote file. The default behavior of assuming the remote server is trusted allows for systems to quickly access file shares in large corporations so that users won’t need to sign in with their company credentials each time to access network resources. However, this implementation presents a significant security risk to user accounts and passwords. Read more via the link below.
+
+
+----------------------------
+## Hooking
+* [Hooking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1179)
+	* Windows processes often leverage application programming interface (API) functions to perform tasks that require reusable system resources. Windows API functions are typically stored in dynamic-link libraries (DLLs) as exported functions. Hooking involves redirecting calls to these functions and can be implemented via:
+    	* Hooks procedures, which intercept and execute designated code in response to events such as messages, keystrokes, and mouse inputs.12
+    	* Import address table (IAT) hooking, which use modifications to a process’s IAT, where pointers to imported API functions are stored.234
+		* Inline hooking, which overwrites the first bytes in an API function to redirect code flow.254
+	* Similar to Process Injection, adversaries may use hooking to load and execute malicious code within the context of another process, masking the execution while also allowing access to the process's memory and possibly elevated privileges. Installing hooking mechanisms may also provide Persistence via continuous invocation when the functions are called through normal use.
+	* Malicious hooking mechanisms may also capture API calls that include parameters that reveal user authentication credentials for Credential Access.6
+	* Hooking is commonly utilized by Rootkits to conceal files, processes, Registry keys, and other objects in order to hide malware and associated behaviors.7 
+
+* [Hooks Overview - msdn.ms](https://msdn.microsoft.com/library/windows/desktop/ms644959.aspx)
+* [Userland Rootkits: Part 1, IAT hooks - adlice.com](https://www.adlice.com/userland-rootkits-part-1-iat-hooks/)
+* [Dynamic Hooking Techniques: User Mode - matt hillman](https://www.mwrinfosecurity.com/our-thinking/dynamic-hooking-techniques-user-mode/)
+* [Inline Hooking in Windows](https://webcache.googleusercontent.com/search?q=cache:mkBFZwQOVQAJ:https://www.exploit-db.com/docs/17802.pdf+&cd=1&hl=en&ct=clnk&gl=us)
+* [gethooks](https://github.com/jay/gethooks)
+	* GetHooks is a program designed for the passive detection and monitoring of hooks from a limited user account. 
+* [winhook](https://github.com/prekageo/winhook)
+
 
 
 
@@ -231,9 +266,29 @@ Memory corruption is for wussies
 
 
 
+## LLMNR/NBT-NS Poisoning
+* [LLMNR/NBT-NS Poisoning - ATT&CK](https://attack.mitre.org/wiki/Technique/T1171)
+	* Link-Local Multicast Name Resolution (LLMNR) and NetBIOS Name Service (NBT-NS) are Microsoft Windows components that serve as alternate methods of host identification. LLMNR is based upon the Domain Name System (DNS) format and allows hosts on the same local link to perform name resolution for other hosts. NBT-NS identifies systems on a local network by their NetBIOS name.12
+	* Adversaries can spoof an authoritative source for name resolution on a victim network by responding to LLMNR (UDP 5355)/NBT-NS (UDP 137) traffic as if they know the identity of the requested host, effectively poisoning the service so that the victims will communicate with the adversary controlled system. If the requested host belongs to a resource that requires identification/authentication, the username and NTLMv2 hash will then be sent to the adversary controlled system. The adversary can then collect the hash information sent over the wire through tools that monitor the ports for traffic or through Network Sniffing and crack the hashes offline through Brute Force to obtain the plaintext passwords. 
 
-## Network Sniffing
+#### Windows
+* [Inveigh](https://github.com/Kevin-Robertson/Inveigh)
+	* Inveigh is a PowerShell LLMNR/mDNS/NBNS spoofer and man-in-the-middle tool designed to assist penetration testers/red teamers that find themselves limited to a Windows system.
+* [Responder - lgandx](https://github.com/lgandx/Responder-Windows)
+	* NBT-NS/LLMNR Responder and Cross-Protocol NTLM Relay Windows Version (Beta)
+* [Pass the hash - Wikipedia](https://en.wikipedia.org/wiki/Pass_the_hash)
+* [Pass the hash attacks: Tools and Mitigation - 2010 SANS paper](https://www.sans.org/reading-room/whitepapers/testing/pass-the-hash-attacks-tools-mitigation-33283)
+* [Performing Pass-the-Hash Attacks with Mimikatz](https://blog.stealthbits.com/passing-the-hash-with-mimikatz)
+* [Pass-the-Hash Is Dead: Long Live LocalAccountTokenFilterPolicy](https://www.harmj0y.net/blog/redteaming/pass-the-hash-is-dead-long-live-localaccounttokenfilterpolicy/)
+* [Still Passing the Hash 15 Years Later](https://passing-the-hash.blogspot.com/)
+	* Providing all the extra info that didn't make it into the BlackHat 2012 USA Presentation "Still Passing the Hash 15 Years Later? Using the Keys to the Kingdom to Access All Your Data" by Alva Lease 'Skip' Duckwall IV and Christopher Campbell.
+* [Invoke-TheHash](https://github.com/Kevin-Robertson/Invoke-TheHash)
+	* Invoke-TheHash contains PowerShell functions for performing pass the hash WMI and SMB tasks. WMI and SMB services are accessed through .NET TCPClient connections. Authentication is performed by passing an NTLM hash into the NTLMv2 authentication protocol. Local administrator privilege is not required client-side.
+
+
+
 -------------------------------
+## Network Sniffing
 * [Network Sniffing - ATT&CK](https://attack.mitre.org/wiki/Technique/T1040)
 	* Network sniffing refers to using the network interface on a system to monitor or capture information sent over a wired or wireless connection. User credentials may be sent over an insecure, unencrypted protocol that can be captured and obtained through network packet analysis. An adversary may place a network interface into promiscuous mode, using a utility to capture traffic in transit over the network or use span ports to capture a larger amount of data. In addition, Address Resolution Protocol (ARP) and Domain Name Service (DNS) poisoning can be used to capture credentials to websites, proxies, and internal systems by redirecting traffic to an adversary.
 
@@ -249,7 +304,6 @@ Memory corruption is for wussies
 * [OS X Yosemite Has A Secret Packet Sniffer](https://jacobsalmela.com/2014/11/23/os-x-yosemite-secret-packet-sniffer/)
 * [Capture a packet trace using Terminal on your Mac - support.apple](https://support.apple.com/en-us/HT202013)
 
-
 #### Windows
 * [Packet Sniffing with PowerShell: Getting Started - technet](https://blogs.technet.microsoft.com/heyscriptingguy/2015/10/12/packet-sniffing-with-powershell-getting-started/)
 * [Network Monitor Automation/Scripting using PowerShell](https://channel9.msdn.com/Blogs/Darryl/Network-Monitor-AutomationScripting-using-PowerShell)
@@ -260,13 +314,17 @@ Memory corruption is for wussies
 
 
 
-
-
-
-
-## Private Keys
 -------------------------------
-Private Keys
+## Password Filter DLL
+* [Password Filter DLL - ATT&CK](https://attack.mitre.org/wiki/Technique/T1174)
+	* Windows password filters are password policy enforcement mechanisms for both domain and local accounts. Filters are implemented as dynamic link libraries (DLLs) containing a method to validate potential passwords against password policies. Filter DLLs can be positioned on local computers for local accounts and/or domain controllers for domain accounts.
+	* Before registering new passwords in the Security Accounts Manager (SAM), the Local Security Authority (LSA) requests validation from each registered filter. Any potential changes cannot take effect until every registered filter acknowledges validation.
+	* Adversaries can register malicious password filters to harvest credentials from local computers and/or entire domains. To perform proper validation, filters must receive plain-text credentials from the LSA. A malicious password filter would receive these plain-text credentials every time a password request is made.1
+
+
+
+-------------------------------
+## Private Keys
 * [Private Keys - ATT&CK](https://attack.mitre.org/wiki/Technique/T1145)
 	* Private cryptographic keys and certificates are used for authentication, encryption/decryption, and digital signatures.Wikipedia Public Key Crypto 
 	* Adversaries may gather private keys from compromised systems for use in authenticating to Remote Services like SSH or for use in decrypting other collected files such as email. Common key and certificate file extensions include: .key, .pgp, .gpg, .ppk., .p12, .pem, pfx, .cer, .p7b, .asc. Adversaries may also look in common key directories, such as ~/.ssh for SSH keys on `*nix-based systems` or `C:\Users\(username)\.ssh\` on Windows. 
@@ -288,8 +346,8 @@ Private Keys
 
 
 
-## Two-Factor Authentication Interception
 -------------------------------
+## Two-Factor Authentication Interception
 * [Two-Factor Authentication Interception](https://attack.mitre.org/wiki/Technique/T1111)
 	* Use of two- or multifactor authentication is recommended and provides a higher level of security than user names and passwords alone, but organizations should be aware of techniques that could be used to intercept and bypass these security mechanisms. Adversaries may target authentication mechanisms, such as smart cards, to gain access to systems, services, and network resources. 
 	* If a smart card is used for two-factor authentication (2FA), then a keylogger will need to be used to obtain the password associated with a smart card during normal use. With both an inserted card and access to the smart card password, an adversary can connect to a network resource using the infected system to proxy the authentication with the inserted hardware token.Mandiant M Trends 2011 

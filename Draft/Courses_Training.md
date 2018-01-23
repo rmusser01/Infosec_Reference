@@ -6,27 +6,27 @@
 ## Table of Contents
 
 * Cull
-* General Security Classes](#general)
-* General Sources/Repositories of Classes](#repo)
-* Incident Response and Forensics Training](#ir)
-* Penetration Testing Training](#pt)
-* Programming Classes/Training](#prog)
-* Reverse Engineering Classes/Training](#re)
-* Exploitation Development Training](#exploit)
-* UEFI/BIOS Training](#uefi)
-* Web Security Focused Training](#web)
-* Resources for instructors/Trainers](#resource)
+* [General Security Classes](#general)
+* [General Sources/Repositories of Classes](#repo)
+* [Incident Response and Forensics Training](#ir)
+* [Penetration Testing Training](#pt)
+* [Programming Classes/Training](#prog)
+* [Reverse Engineering Classes/Training](#re)
+* [Exploitation Development Training](#exploit)
+* [UEFI/BIOS Training](#uefi)
+* [Web Security Focused Training](#web)
+* [Resources for instructors/Trainers](#resource)
 
 
-
+-------------
 #### Sort 
+
 DVWA
-
-Hackingdojo
-
-BVWA
-
-Juiceshop
+* [OWASP Broken Web Applications Project](https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project)
+	* OWASP Broken Web Applications Project is a collection of vulnerable web applications that is distributed on a Virtual Machine.
+* [OWASP Juiceshop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project)
+	* [OWASP JuiceShop Gitbook walkthrough](https://www.gitbook.com/book/bkimminich/pwning-owasp-juice-shop/details)
+	* [Video Walk through by Sunny Wear](https://www.youtube.com/watch?v=zi3yDovd0RY&list=PL-giMT7sGCVI9T4rKhuiTG4EDmUz-arBo)
 
 #### End Sort
 
@@ -61,7 +61,8 @@ These classes are all focused on computer/information security. If you're lookin
 * [Technical Development Guide - Google](https://www.google.com/about/careers/students/guide-to-technical-development.html)
 * [OSS University - Computer Science](https://github.com/open-source-society/computer-science)
 	* Path to a free self-taught education in Computer Science!
-
+* [cs-video-courses](https://github.com/Developer-Y/cs-video-courses)
+	* List of Computer Science courses with video lectures.
 
 
 
@@ -104,12 +105,16 @@ These classes are all focused on computer/information security. If you're lookin
 
 -----
 ### <a name="prog"></a>Programming Classes/Courses
+
 * [asm - 0xAX](https://github.com/0xAX/asm)
 	* Learning assembly for linux-x64 
 * [Introductory Intel x86: Architecture, Assembly, Applications, & Alliteration](http://opensecuritytraining.info/IntroX86.html)
 	* This class serves as a foundation for the follow on Intermediate level x86 class. It teaches the basic concepts and describes the hardware that assembly code deals with. It also goes over many of the most common assembly instructions. Although x86 has hundreds of special purpose instructions, students will be shown it is possible to read most programs by knowing only around 20-30 instructions and their variations.
 * [Win32 ASM tutorials - Iczelion](http://win32assembly.programminghorizon.com/tutorials.html)
-
+* [Network Examples - knorrie](https://github.com/knorrie/network-examples)
+	* Linux networking examples and tutorials
+* [Low-Level Programming University](https://github.com/gurugio/lowlevelprogramming-university)
+	* This page is for beginners who want to be low-level programmers. I'm inspired by [google-interview-university](https://github.com/jwasham/google-interview-university). I'd like to share my experience and show a roadmap to becoming a low-level programmer because I have found that these skills are not as common as they once were. In addition, many students and beginners ask me how they could become low-level programmers and Linux kernel engineers.
 
 
 

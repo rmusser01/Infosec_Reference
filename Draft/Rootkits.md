@@ -22,6 +22,18 @@
 [Talk at CCC31](https://www.youtube.com/watch?v=5BrdX7VdOr0)
 
 * [FreeBSD Rootkits: A first step into Kernel Analysis #0 (Fundamentals)](https://www.youtube.com/watch?v=MbEhTkfuz3U)
+* [Vlany](https://github.com/mempodippy/vlany)
+	* vlany is a Linux LD_PRELOAD rootkit.
+* [Demon](https://github.com/x0r1/Demon)
+	* GPU keylogger PoC by Team Jellyfish
+* [WIN_JELLY](https://github.com/x0r1/WIN_JELLY)
+	* Windows GPU RAT PoC by Team Jellyfish. Project demonstrates persistent executable code storage in gpu that later can be mapped back to userspace after reboot. The sole purpose why we titled this concept that of a trojan is due to what it's capable of. Simply use this code to hide your own basically; we aren't responsible.
+
+* [KernelMode Rootkits: Part 1, SSDT hooks - adlice](https://www.adlice.com/kernelmode-rootkits-part-1-ssdt-hooks/)
+* [KernelMode Rootkits: Part 2, IRP hooks - adlice](https://www.adlice.com/kernelmode-rootkits-part-2-irp-hooks/)
+* [KernelMode Rootkits: Part 3, kernel filters- adlice](https://www.adlice.com/kernelmode-rootkits-part-3-kernel-filters/)
+
+* [HookPasswordChange](https://github.com/clymb3r/Misc-Windows-Hacking/tree/master/HookPasswordChange/HookPasswordChange)
 
 ##### End Sort
 

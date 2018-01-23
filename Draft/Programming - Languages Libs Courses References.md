@@ -17,21 +17,6 @@
 * [Papers](#papers)
 
 ### Sort
-
-[Code Insecurity or Code in Security - Mano 'dash4rk' Paul](http://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul)
-	* Attendees of this talk will benefit from learning about what constitutes insecure code and the associated attacks that stem from such code. Applicable attacks ranging from injection to reversing will be demonstrated to reinforce contents of this talk. This way, the attendee would not only be taught about “What not to do?” but also, “Why this should not do, what they ought not to do?”. Finally, attendees will also be introduced to secure development processes such as protection needs elicitation, threat modeling, code review and analysis and secure deployment, to illustrate that while writing secure code is one important aspect of software security, there is more to securing applications, than what meets the eye. Come for a fun filled, interactive session and your chance to win one of the personalized and autographed copies of the speaker’s renowned book – The 7 qualities of highly secure software.
-
-* [Django-Security](https://github.com/sdelements/django-security)
-	* This package offers a number of models, views, middlewares and forms to facilitate security hardening of Django applications.
-* [FindBugs](https://find-sec-bugs.github.io/)
-	* The FindBugs plugin for security audits of Java web applications.
-* [bundler-audit](https://github.com/rubysec/bundler-audit)
-	* Patch-level verification for Bundler
-* [OWASP SafeNuGet](https://github.com/owasp/SafeNuGet)
-	* OWASP SafeNuGet is an MsBuild task to warn about insecure NuGet libraries: https://nuget.org/packages/SafeNuGet/
-
-* [One Line of Code that Compromises Your Server - The dangers of a simplistic session secret](https://martinfowler.com/articles/session-secret.html)
-
 * [SourceTrail](https://www.sourcetrail.com/)
 	* A cross-platform source explorer for C/C++ and Java* 
 
@@ -39,31 +24,26 @@
 	* Python package for collecting attack surface metrics from a software system. In its current version, Attack Surface Meter is capable of analyzing software systems written in the C programming language with skeletal support for analyzing software systems written in the Java programming language. The attack surface metrics collected are:
 	* Proximity to Entry/Exit/Dangerous - The mean of shortest unweighted path length from a function/file to Entry Points/Exit Points/Dangerous Points.
     * Risky Walk - The probability that a function/file will be invoked on a random execution path starting at the attack surface.
-
-* [Code Insecurity or Code in Security - Mano 'dash4rk' Paul - Derbycon2014](https://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul)
-	* Attendees of this talk will benefit from learning about what constitutes insecure code and the associated attacks that stem from such code. Applicable attacks ranging from injection to reversing will be demonstrated to reinforce contents of this talk. This way, the attendee would not only be taught about “What not to do?” but also, “Why this should not do, what they ought not to do?”. Finally, attendees will also be introduced to secure development processes such as protection needs elicitation, threat modeling, code review and analysis and secure deployment, to illustrate that while writing secure code is one important aspect of software security, there is more to securing applications, than what meets the eye. Come for a fun filled, interactive session and your chance to win one of the personalized and autographed copies of the speaker’s renowned book – The 7 qualities of highly secure software.
-
-
 http://en.cppreference.com/w/c	
-
 * [Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
-* [Alamofire](https://github.com/Alamofire/Alamofire)
-	* Alamofire is an HTTP networking library written in Swift.
-
 * [plog](https://github.com/SergiusTheBest/plog)
-* Portable, simple and extensible C++ logging library
+	* Portable, simple and extensible C++ logging library
 * [Dynamic Source Code Generation and Compilation](https://docs.microsoft.comen-us/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)
 
 Libraries for Java -> https://www.owasp.org/index.php/Category:Java#tab=Related_3rd_Party_Projects
 
-* [Microsoft Software Development Lifecycle Process Guidance](https://msdn.microsoft.com/en-us/library/windows/desktop/cc307406.aspx)
+* [Modern Memory Safety: C/C++ Vulnerability Discovery, Exploitation, Hardening](https://github.com/struct/mms)
+	* This repo contains the slides for a training course originally developed in 2012. It has been delivered to many students since its creation. It's sold out at the Black Hat USA conference several years in a row. The content has gone through many iterations based on feedback from those classes. The original training focused mainly on browser vulnerability discovery and exploitation. This latest version still focuses on that but also covers more topics such as custom memory allocators, hardening concepts, and exploitation at a high level.
+* [Infer](https://github.com/facebook/infer)
+	* [Infer](http://fbinfer.com/) is a static analysis tool for Java, Objective-C and C, written in OCaml.
+* Added some python stuff
+* Secure Development
+	* [Microsoft Software Development Lifecycle Process Guidance](https://msdn.microsoft.com/en-us/library/windows/desktop/cc307406.aspx)
+	* [OWASP Proactive Controls](https://www.owasp.org/index.php/OWASP_Proactive_Controls?refresh=123#tab=OWASP_Proactive_Controls_2016)
+		* The OWASP Top Ten Proactive Controls 2016 is a list of security concepts that should be included in every software development project. They are ordered by order of importance, with control number 1 being the most important.
+	* [OWASP Application Security Verification Standard](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
 
-* [OWASP Proactive Controls](https://www.owasp.org/index.php/OWASP_Proactive_Controls?refresh=123#tab=OWASP_Proactive_Controls_2016)
-	* The OWASP Top Ten Proactive Controls 2016 is a list of security concepts that should be included in every software development project. They are ordered by order of importance, with control number 1 being the most important.
-* [OWASP Application Security Verification Standard](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
-* [What I learned from doing 1000 code reviews](https://hackernoon.com/what-i-learned-from-doing-1000-code-reviews-fe28d4d11c71)
-
-
+* [The 68 things the CLR does before executing a single line of your code (`*`)](https://web.archive.org/web/20170614215931/http://mattwarren.org:80/2017/02/07/The-68-things-the-CLR-does-before-executing-a-single-line-of-your-code/)
 
 #### End Sort
 
@@ -123,6 +103,17 @@ Talks/Videos
 -----------
 ### <a name="sca">Source Code Analysis</a>
 Source Code Analysis
+
+* **Articles/Blogposts/Writeups**
+	* [What I learned from doing 1000 code reviews](https://hackernoon.com/what-i-learned-from-doing-1000-code-reviews-fe28d4d11c71)
+	* [One Line of Code that Compromises Your Server - The dangers of a simplistic session secret](https://martinfowler.com/articles/session-secret.html)
+* **Presentations/Talks**
+	* [Code Insecurity or Code in Security - Mano 'dash4rk' Paul - Derbycon2014](https://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul)
+		* Attendees of this talk will benefit from learning about what constitutes insecure code and the associated attacks that stem from such code. Applicable attacks ranging from injection to reversing will be demonstrated to reinforce contents of this talk. This way, the attendee would not only be taught about “What not to do?” but also, “Why this should not do, what they ought not to do?”. Finally, attendees will also be introduced to secure development processes such as protection needs elicitation, threat modeling, code review and analysis and secure deployment, to illustrate that while writing secure code is one important aspect of software security, there is more to securing applications, than what meets the eye. Come for a fun filled, interactive session and your chance to win one of the personalized and autographed copies of the speaker’s renowned book – The 7 qualities of highly secure software.
+	* [Code Insecurity or Code in Security - Mano 'dash4rk' Paul](http://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul)
+		* Attendees of this talk will benefit from learning about what constitutes insecure code and the associated attacks that stem from such code. Applicable attacks ranging from injection to reversing will be demonstrated to reinforce contents of this talk. This way, the attendee would not only be taught about “What not to do?” but also, “Why this should not do, what they ought not to do?”. Finally, attendees will also be introduced to secure development processes such as protection needs elicitation, threat modeling, code review and analysis and secure deployment, to illustrate that while writing secure code is one important aspect of software security, there is more to securing applications, than what meets the eye. Come for a fun filled, interactive session and your chance to win one of the personalized and autographed copies of the speaker’s renowned book – The 7 qualities of highly secure software.
+
+
 * Tools
 	* [RIPS](http://rips-scanner.sourceforge.net/)
 		* RIPS is a tool written in PHP to find vulnerabilities in PHP applications using static code analysis. By tokenizing and parsing all source code files RIPS is able to transform PHP source code into a program model and to detect sensitive sinks (potentially vulnerable functions) that can be tainted by user input (influenced by a malicious user) during the program flow. Besides the structured output of found vulnerabilities RIPS also offers an integrated code audit framework for further manual analysis.
@@ -130,12 +121,22 @@ Source Code Analysis
 	* [PMD](http://pmd.sourceforge.net/)
 		* PMD is a source code analyzer. It finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth. It supports Java, JavaScript, PLSQL, Apache Velocity, XML, XSL. Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code in Java, C, C++, C#, PHP, Ruby, Fortran, JavaScript, PLSQL, Apache Velocity, Ruby, Scala, Objective C, Matlab, Python, Go. 
 	* [Graudit](http://www.justanotherhacker.com/projects/graudit.html)
-		* Graudit is a simple script and signature sets that allows you to find potential security flaws in source code using the GNU utility grep. It's comparable to other static analysis applications like RATS, SWAAT and flaw-finder while keeping the technical requirements to a minimum and being very flexible.
-	* [PumaScan](https://github.com/pumasecurity/puma-scan)
-		* provides real time, continuous source code analysis
+		* Graudit is a simple script and signature sets that allows you to find potential security flaws in source code using the GNU utility grep. It's comparable to other static analysis applications like RATS, analysis
 	* [How to find 56 potential vulnerabilities in FreeBSD code in one evening](https://www.viva64.com/en/b/0496/)
 	* [Phan](https://github.com/phan/phan)
 		* Phan is a static analyzer for PHP. Phan prefers to avoid false-positives and attempts to prove incorrectness rather than correctness.
+	* [PMD](https://github.com/pmd/pmd)
+		* PMD is a source code analyzer. It finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth. It supports Java, JavaScript, Salesforce.com Apex and Visualforce, PLSQL, Apache Velocity, XML, XSL.
+	* [Django-Security](https://github.com/sdelements/django-security)
+		* This package offers a number of models, views, middlewares and forms to facilitate security hardening of Django applications.
+	* [FindBugs](https://find-sec-bugs.github.io/)
+		* The FindBugs plugin for security audits of Java web applications.
+	* [bundler-audit](https://github.com/rubysec/bundler-audit)
+		* Patch-level verification for Bundler
+	* [OWASP SafeNuGet](https://github.com/owasp/SafeNuGet)
+		* OWASP SafeNuGet is an MsBuild task to warn about insecure NuGet libraries: https://nuget.org/packages/SafeNuGet/
+
+
 
 
 
@@ -379,27 +380,44 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 ----------
 ### <a name="python">Python</a>
-* [Python 3.6.2 documentation](https://docs.python.org/3/)
-* [Python 2.7 documentation](https://docs.python.org/2.7/)
-* Learn
+* **101**
 	* [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
 	* [Python For Beginners]()
 		* Welcome! Are you completely new to programming? If not then we presume you will be looking for information about why and how to get started with Python. Fortunately an experienced programmer in any programming language (whatever it may be) can pick up Python very quickly. It's also easy for beginners to use and learn, so jump in!
+* **Documentation/Reference**
+	* [Python Developer's Guide](http://docs.python.org/devguide/)
+	* [Extending and Embedding the Python Interpreter](http://docs.python.org/2.7/extending/index.html)
+	* [Python/C API Reference Manual](http://docs.python.org/2.7/c-api/index.html)
+	* [Python 3.6.2 documentation](https://docs.python.org/3/)
+	* [Python 2.7 documentation](https://docs.python.org/2.7/)
+	* [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
+* **Internals**
+	* [Diving deep into Python – the not-so-obvious language parts](http://sebastianraschka.com/Articles/2014_deep_python.html)
+	* [PEP: 551 Title: Security transparency in the Python runtime Version](https://github.com/python/peps/blob/cd795ec53c939e5b40808bb9d7a80c428c85dd52/pep-0551.rst)
+	* [Python Compiler Internals - Thomas Lee(2012)](http://tomlee.co/wp-content/uploads/2012/11/108_python-language-internals.pdf)
+	* [How Fast Can We Make Interpreted Python? - Russel Power and Alex Rubinsteyn](http://arxiv.org/pdf/1306.6047v2.pdf)
+	* [Python Attributes and Methods](http://www.cafepy.com/article/python_attributes_and_methods/python_attributes_and_methods.html)
+	* [Understanding Python by breaking it](http://blog.hakril.net/articles/0-understanding-python-by-breaking-it.html)
+	* [Eli Bendersky's Python Internals series](http://eli.thegreenplace.net/tag/python-internals)
+	* [Adding a New Statement to Python(2010)](http://eli.thegreenplace.net/2010/06/30/python-internals-adding-a-new-statement-to-python/)
+	* [Yaniv Aknin's Python Innards series](http://tech.blog.aknin.name/category/my-projects/pythons-innards/)
+	* [Allison Kaptur's Python Internals Series](http://akaptur.github.io/blog/categories/python-internals/)
+	* [My Python Internals Series!](http://mathamy.com/tag/python-internals.html)
+* **Learn**
 	* [Obfuscating python](https://reverseengineering.stackexchange.com/questions/1943/what-are-the-techniques-and-tools-to-obfuscate-python-programs)
 	* [Understanding Python Bytecode](http://security.coverity.com/blog/2014/Nov/understanding-python-bytecode.html)
 	* [Reverse debugging for Python](https://morepypy.blogspot.com/2016/07/reverse-debugging-for-python.html?m=1)
 	* [Python in a hacker's toolbox (PyConPl'15)](http://gynvael.coldwind.pl/?lang=en&id=572)
-	* [Diving deep into Python – the not-so-obvious language parts](http://sebastianraschka.com/Articles/2014_deep_python.html)
-	* [PEP: 551 Title: Security transparency in the Python runtime Version](https://github.com/python/peps/blob/cd795ec53c939e5b40808bb9d7a80c428c85dd52/pep-0551.rst)
-	* [Build an API under 30 lines of code with Python and Flask](https://impythonist.wordpress.com/2015/07/12/build-an-api-under-30-lines-of-code-with-python-and-flask/)
-	* [Diving deep into Python – the not-so-obvious language parts](http://sebastianraschka.com/Articles/2014_deep_python.html)
 	* [Virtualenv](https://virtualenv.pypa.io/en/latest/userguide/)
 		* [Python Static Analysis - Spencer J McIntyre - Derbycon7](https://www.youtube.com/watch?v=hWIiyOV4Wbk&index=45&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
 			* Python is a popular language and that is true as well within the Security industry. This talk will outline how Python code can be statically analyzed using publicly available tools such as bandit. It will then take a more technical approach and outline how the abstract syntax tree (AST) can be processed and searched based on behavior clues to identify potential security issues. Many security tools search for vulnerabilities by analyzing the contents of static strings and examining their variable names. This alternative approach instead demonstrates how the AST can be analyzed to identify pieces of sensitive information such as encryption keys and passwords based on matching them with usage patterns. This will be a technical talk focused on using automated techniques to find security vulnerabilities in Python projects. The audience will leave with an understanding of these techniques and how they can be applied to the projects they are either developing themselves or using in their daily routines. This talk will end with a live demonstration of a forked version of the public Bandit scanner where these techniques have been implemented. 
+	* **Build&Understand**
+		* [Build an API under 30 lines of code with Python and Flask](https://impythonist.wordpress.com/2015/07/12/build-an-api-under-30-lines-of-code-with-python-and-flask/)
+* **Analysis**
 	* [Python Static Analysis Spencer J McIntyre - Derbycon7](https://www.youtube.com/watch?v=hWIiyOV4Wbk&index=45&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
-* Reference
-	* [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
-* Libraries
+	* [Bandit](https://github.com/openstack/bandit)
+		* Bandit is a tool designed to find common security issues in Python code. To do this Bandit processes each file, builds an AST from it, and runs appropriate plugins against the AST nodes. Once Bandit has finished scanning all the files it generates a report.
+* **Libraries**
 	* [Python Library for interacting with Serial Ports](http://pyserial.sourceforge.net/)
 	* [Hachoir](https://bitbucket.org/haypo/hachoir/wiki/Home)
 		* Hachoir is a Python library that allows to view and edit a binary stream field by field
@@ -410,6 +428,9 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 	* [Impacket](https://github.com/CoreSecurity/impacket)
 		* Impacket is a collection of Python classes for working with network protocols. Impacket is focused on providing low-level programmatic access to the packets and for some protocols (for instance NMB, SMB1-3 and MS-DCERPC) the protocol implementation itself. Packets can be constructed from scratch, as well as parsed from raw data, and the object oriented API makes it simple to work with deep hierarchies of protocols. The library provides a set of tools as examples of what can be done within the context of this library.
 	* [Trollius and asyncio](https://trollius.readthedocs.io/asyncio.html)
+
+
+
 
 
 ----------
@@ -438,6 +459,13 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 	* SafeSQL is a static analysis tool for Go that protects against SQL injections.
 * [The Hitchhiker's Guide to SQL Injection prevention](https://phpdelusions.net/sql_injection)
 
+
+
+
+---------------
+### Swift
+* [Alamofire](https://github.com/Alamofire/Alamofire)
+	* Alamofire is an HTTP networking library written in Swift.
 
 ----------
 ### UEFI Programming

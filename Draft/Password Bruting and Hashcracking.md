@@ -17,8 +17,8 @@
 
 
 #### Sort
-* [statistically-likely-usernames](https://github.com/insidetrust/statistically-likely-usernames)
-	* This resource contains wordlists for creating statistically likely usernames for use in username-enumeration, simulated password-attacks and other security testing tasks.
+
+
 
 #### End cull
 
@@ -146,6 +146,14 @@
 	* CeWL is a ruby app which spiders a given url to a specified depth, optionally following external links, and returns a list of words which can then be used for password crackers such as John the Ripper.
 * [Generating Wordlists](http://netsec.ws/?p=457)
 * [Creating Wordlists with Crunch](http://adaywithtape.blogspot.com/2011/05/creating-wordlists-with-crunch-v30.html)
+* [OMEN: Ordered Markov ENumerator](https://github.com/RUB-SysSec/OMEN)
+	* OMEN is a Markov model-based password guesser written in C. It generates password candidates according to their occurrence probabilities, i.e., it outputs most likely passwords first. OMEN significantly improves guessing speed over existing proposals. If you are interested in the details on how OMEN improves on existing Markov model-based password guessing approaches, please refer to OMEN: Faster Password Guessing Using an Ordered Markov Enumerator.
+* [cupp.py - Common User Passwords Profiler](https://github.com/Mebus/cupp)
+	* The most common form of authentication is the combination of a username and a password or passphrase. If both match values stored within a locally stored table, the user is authenticated for a connection. Password strength is a measure of the difficulty involved in guessing or breaking the password through cryptographic techniques or library-based automated testing of alternate values. A weak password might be very short or only use alphanumberic characters, making decryption simple. A weak password can also be one that is easily guessed by someone profiling the user, such as a birthday, nickname, address, name of a pet or relative, or a common word such as God, love, money or password. That is why CUPP has born, and it can be used in situations like legal penetration tests or forensic crime investigations.
+
+
+
+
 
 
 ### <a name="wordlists">Wordlists</a>
@@ -159,7 +167,8 @@
 * [BEWGor](https://github.com/berzerk0/BEWGor)
 	* Bull's Eye Wordlist Generator
 * [SecLists](https://github.com/danielmiessler/SecLists)
-
+* [statistically-likely-usernames](https://github.com/insidetrust/statistically-likely-usernames)
+	* This resource contains wordlists for creating statistically likely usernames for use in username-enumeration, simulated password-attacks and other security testing tasks.
 
 
 
@@ -171,14 +180,13 @@
 
 ### <a name="papers">Papers</a>
 
-[Optimizing computation of Hash Algorithms as an attacker](https://hashcat.net/events/p13/js-ocohaaaa.pdf)
-
-[Attacking NTLM with Precomputed Hashtables](http://uninformed.org/?v=all&a=13&t=sumry)
-* Breaking encrypted passwords has been of interest to hackers for a long time, and protecting them has always been one of the biggest security problems operating systems have faced, with Microsoft's Windows being no exception. Due to errors in the design of the password encryption scheme, especially in the LanMan(LM) scheme, Windows has a bad track in this field of information security. Especially in the last couple of years, where the outdated DES encryption algorithm that LanMan is based on faced more and more processing power in the average household, combined with ever increasing harddisk size, made it crystal clear that LanMan nowadays is not just outdated, but even antiquated. 
-
-[Website Dedicated to Password Research](http://www.passwordresearch.com/papers/pubindex.html)
-* A core objective of the Password Research Institute is to improve the industry awareness of existing authentication research. Many valuable solutions for the problems associated with authentication have gone unnoticed by the people interested in, or responsible for, authentication security. This project will compile and share a comprehensive, but moderated, index of password and authentication related research papers. We aim to share the details of useful papers, provide access to the papers, and encourage collaboration between authors and other security professionals.
-
+* [Optimizing computation of Hash Algorithms as an attacker](https://hashcat.net/events/p13/js-ocohaaaa.pdf)
+* [Attacking NTLM with Precomputed Hashtables](http://uninformed.org/?v=all&a=13&t=sumry)
+	* Breaking encrypted passwords has been of interest to hackers for a long time, and protecting them has always been one of the biggest security problems operating systems have faced, with Microsoft's Windows being no exception. Due to errors in the design of the password encryption scheme, especially in the LanMan(LM) scheme, Windows has a bad track in this field of information security. Especially in the last couple of years, where the outdated DES encryption algorithm that LanMan is based on faced more and more processing power in the average household, combined with ever increasing harddisk size, made it crystal clear that LanMan nowadays is not just outdated, but even antiquated. 
+* [Website Dedicated to Password Research](http://www.passwordresearch.com/papers/pubindex.html)
+	* A core objective of the Password Research Institute is to improve the industry awareness of existing authentication research. Many valuable solutions for the problems associated with authentication have gone unnoticed by the people interested in, or responsible for, authentication security. This project will compile and share a comprehensive, but moderated, index of password and authentication related research papers. We aim to share the details of useful papers, provide access to the papers, and encourage collaboration between authors and other security professionals.
+* [When Privacy meets Security: Leveraging personal information for password cracking - M. Dürmuth,A. ChaabaneD. Perito,C. Castelluccia]()
+	* Passwords are widely used for user authentication and, de- spite their weaknesses, will likely remain in use in the fore seeable future. Human-generated passwords typically have a rich structure , which makes them susceptible to guessing attacks. In this paper, we stud y the effectiveness of guessing attacks based on Markov models. Our contrib utions are two-fold. First, we propose a novel password cracker based o n Markov models, which builds upon and extends ideas used by Narayana n and Shmatikov (CCS 2005). In extensive experiments we show that it can crack up to 69% of passwords at 10 billion guesses, more than a ll probabilistic password crackers we compared against. Second, we systematically analyze the idea that additional personal informatio n about a user helps in speeding up password guessing. We find that, on avera ge and by carefully choosing parameters, we can guess up to 5% more pas swords, especially when the number of attempts is low. Furthermore, we show that the gain can go up to 30% for passwords that are actually b ased on personal attributes. These passwords are clearly weaker an d should be avoided. Our cracker could be used by an organization to detect and reject them. To the best of our knowledge, we are the first to syst ematically study the relationship between chosen passwords and users’ personal in- formation. We test and validate our results over a wide colle ction of leaked password databases.
 
 
 

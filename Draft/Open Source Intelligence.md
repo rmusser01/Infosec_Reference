@@ -25,20 +25,16 @@
 #### Sort
 
 http://computercrimeinfo.com/cleaningid.html
-
-* [OSINT - onstrat](http://www.onstrat.com/osint/)
-* [PDF Creative Commons OSINT toolbag guide](http://www.phibetaiota.net/wp-content/uploads/2013/07/2013-07-11-OSINT-2ool-Kit-On-The-Go-Bag-O-Tradecraft.pdf)
-
 http://toddington.com/resources/
-
 www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
+* [OSINT - onstrat](http://www.onstrat.com/osint/)
+* [Hunting Pastebin with PasteHunter](https://techanarchy.net/2017/09/hunting-pastebin-with-pastehunter/)
+* [OSRFramework](https://github.com/i3visio/osrframework)
+	* OSRFramework is a GNU AGPLv3+ set of libraries developed by i3visio to perform Open Source Intelligence tasks. They include references to a bunch of different applications related to username checking, DNS lookups, information leaks research, deep web search, regular expressions extraction and many others. At the same time, by means of ad-hoc Maltego transforms, OSRFramework provides a way of making these queries graphically as well as several interfaces to interact with like OSRFConsole or a Web interface.
 
 * Add list of Sources:
 * UCC - Uniform Commercial Code; DOC - Current Industrial Patents; DMV - Vehicle Ownership applications; Patents - Patent DBs; Operating Licenses/Permits; Trade Journals;
 
-* [RSOE EDIS - Emergency and Disaster Information Service](http://hisz.rsoe.hu/alertmap/index2.php)
-
-* [Hunting Pastebin with PasteHunter](https://techanarchy.net/2017/09/hunting-pastebin-with-pastehunter/)
 
 
 #### End Sort
@@ -64,6 +60,7 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 	* [Corporate Espionage without the Hassle of Committing Felonies](https://www.slideshare.net/JohnCABambenek/corporate-espionage-without-the-hassle-of-committing-felonies)
 * General
 	* [NATO Open Source Intelligence Handbook](http://www.oss.net/dynamaster/file_archive/030201/ca5fb66734f540fbb4f8f6ef759b258c/NATO%20OSINT%20Handbook%20v1.2%20%2d%20Jan%202002.pdf)
+	* [OSINT toolbag guide - pdf](http://www.phibetaiota.net/wp-content/uploads/2013/07/2013-07-11-OSINT-2ool-Kit-On-The-Go-Bag-O-Tradecraft.pdf)
 * OSINT Based News
 	* [JustSecurity](https://www.justsecurity.org/)
 		* Just Security is an online forum for the rigorous analysis of U.S. national security law and policy. We aim to promote principled and pragmatic solutions to national security problems that decision-makers face. Our Board of Editors includes individuals with significant government experience, civil society attorneys, academics, and other leading voices. Just Security is based at the Center for Human Rights and Global Justice at New York University School of Law.
@@ -73,6 +70,7 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 		* By and for citizen investigative journalists
 	* [NightWatch](http://www.kforcegov.com/Solutions/IAO/NightWatch/About.aspx)
 		* NightWatch is an executive commentary and analysis of events that pose or advance threats to US national security interests. It is deliberately edgy in the interest of clarity and brevity. As a product for executives, the distribution and all feedback comments are anonymous. 
+	* [RSOE EDIS - Emergency and Disaster Information Service](http://hisz.rsoe.hu/alertmap/index2.php)
 * Resources
 	* [Awesome-OSINT](https://github.com/jivoi/awesome-osint)
 	* [OSINT Framework](http://osintframework.com/)
@@ -167,10 +165,15 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 * [Truffle Hog](https://github.com/dxa4481/truffleHog)
 	* Searches through git repositories for high entropy strings, digging deep into commit history and branches. This is effective at finding secrets accidentally committed that contain high entropy.
 * [dvcs-ripper](https://github.com/kost/dvcs-ripper)
-	* Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, ... It can rip repositories even 
-when directory browsing is turned off.
+	* Rip web accessible (distributed) version control systems: SVN, GIT, Mercurial/hg, bzr, ... It can rip repositories even when directory browsing is turned off.
 * [Truffle Hog](https://github.com/dxa4481/truffleHog)
 	* Searches through git repositories for high entropy strings, digging deep into commit history
+* [DVCS-Pillage](https://github.com/evilpacket/DVCS-Pillage)
+	* Pillage web accessible GIT, HG and BZR repositories. I thought it would be useful to automate some other techniques I found to extract code, configs and other information from a git,hg, and bzr repo's identified in a web root that was not 100% cloneable. Each script extracts as much knowledge about the repo as possible through predictable file names and known object hashes, etc.
+* [gitdigger](https://github.com/wick2o/gitDigger)
+	* gitDigger: Creating realworld wordlists from github hosted data.
+* [gitrob](https://github.com/michenriksen/gitrob)
+	* Gitrob is a command line tool which can help organizations and security professionals find sensitive information lingering in publicly available files on GitHub. The tool will iterate over all public organization and member repositories and match filenames against a range of patterns for files that typically contain sensitive or dangerous information. Looking for sensitive information in GitHub repositories is not a new thing, it has been [known for a while](http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html) that things such as private keys and credentials can be found with GitHub's search functionality, however Gitrob makes it easier to focus the effort on a specific organization.
 
 
 
@@ -278,6 +281,9 @@ when directory browsing is turned off.
 * AWS
 	* [AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)
 		* AWSBucketDump is a tool to quickly enumerate AWS S3 buckets to look for loot. It's similar to a subdomain bruteforcer but is made specifically for S3 buckets and also has some extra features that allow you to grep for delicious files as well as download interesting files if you're not afraid to quickly fill up your hard drive.
+* Facebook
+	* [pymk-inspector](https://github.com/GMG-Special-Projects-Desk/pymk-inspector/blob/master/README.md)
+		* The pymk-inspector is a tool built by Gizmodo's Special Projects Desk that we used for our investigation into Facebook's people you may know (pymk) algorithm.
 * LinkedIn
 	* [InSpy](https://github.com/gojhonny/InSpy)
 		* A LinkedIn enumeration tool
@@ -289,6 +295,10 @@ when directory browsing is turned off.
 		* This site allows users to visualize and analyze their LinkedIn network using methods derived from social-scientific research. Full sample output is shown here. The site is free and open-source. Have fun!
 	* [Linkedin_profiles](https://github.com/wpentester/Linkedin_profiles)
 		* This script uses selenium to scrape linkedin employee details from a specified company. If the script isn't working, you can always browse to the desired company's employee page and paste in the link on line 69 like this: "employees_page = url"
+	* [The Secrets of LinkedIn](https://webbreacher.com/2017/01/14/the-secrets-of-linkedin/)
+		* Grabbing usernames/connections(link analysis)
+* Tinder
+	* [OSINT: Advanced tinder capture](https://www.learnallthethings.net/osmosis)
 * Twitter
 	* [OneMillionTweetMap](http://onemilliontweetmap.com/)
 		* This page maps the last geolocalized tweets delivered by the twitter stream API. ... YES - IN REAL-TIME - and we keep "only" the last one million tweets.

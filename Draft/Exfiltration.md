@@ -8,13 +8,9 @@
 * [Writeups](#writeups)
 * [Tools](#tools)
 * [Papers](#papers)
-
+* Stenography
 
 ##### Sort
-
-
-
-
 
 ##### End Sort
 
@@ -89,6 +85,18 @@
 		* DET (is provided AS IS), is a proof of concept to perform Data Exfiltration using either single or multiple channel(s) at the same time. The idea was to create a generic toolkit to plug any kind of protocol/service to test implmented Network Monitoring and Data Leakage Prevention (DLP) solutions configuration, against different data exfiltration techniques.
 	* [EGRESSION](https://github.com/danielmiessler/egression)
 		* EGRESSION is a tool that provides an instant view of how easy it is to upload sensitive data from any given network.
+	* [Data Exfil Toolkit](https://github.com/conix-security/DET)
+		* DET (is provided AS IS), is a proof of concept to perform Data Exfiltration using either single or multiple channel(s) at the same time. The idea was to create a generic toolkit to plug any kind of protocol/service.
+	* [PyExfil](https://github.com/ytisf/PyExfil)
+		* This started as a PoC project but has later turned into something a bit more. Currently it's an Alpha-Alpha stage package, not yet tested (and will appriciate any feedbacks and commits) designed to show several techniques of data exfiltration is real world scenarios.
+	* [pingfs - "True cloud storage" - Erin Ekman](https://github.com/yarrick/pingfs)
+		*  pingfs is a filesystem where the data is stored only in the Internet itself, as ICMP Echo packets (pings) travelling from you to remote servers and back again. It is implemented using raw sockets and FUSE, so superuser powers are required. Linux is the only intended target OS, portability is not a goal. Both IPv4 and IPv6 remote hosts are supported.
+	* [Egress-Assess](https://github.com/ChrisTruncer/Egress-Assess)
+		* Egress-Assess is a tool used to test egress data detection capabilities.
+		* [Egress-Assess – Testing your Egress Data Detection Capabilities](https://www.christophertruncer.com/egress-assess-testing-egress-data-detection-capabilities/)
+		* [Egress-Assess in Action via Powershell](https://www.christophertruncer.com/egress-assess-action-via-powershell/)
+	* [QRXfer](https://github.com/leonjza/qrxfer)
+		* Transfer files from Air gapped machines using QR codes
 * **Articles/Papers/Writeups**
 	* [Self-Exfiltration: The Dangers of Browser-Enforced Information Flow Control](http://ericchen.me/self_exfiltration.pdf)
 		* Abstract —Since the early days of Netscape, browser vendors and web security researchers have restricted out-going data based on its destination. The security argument accompanying these mechanisms is that they prevent sensitive user data from being sent to the attacker’s domain. However, in this paper, we show that regulating web information flow based on its destination server is an inherently flawed security practice. It is vulnerable to self-exfiltration attacks, where an adversary stashes stolen information in the database of a whitelisted site, then later independently connects to the whitelisted site to retrieve the information. We describe eight existing browser security mechanisms that are vulnerable to these “self-exfiltration” attacks. Furthermore, we discovered at least one exfiltration channel for each of the Alexa top 100 websites. None of the existing information flow control mechanisms we surveyed are sufficient to protect data from being leaked to the attacker. Our goal is to prevent browser vendors and researchers from falling into this trap by designing more systems that are vulnerable to self-exfiltration.
@@ -100,3 +108,11 @@
 	* [Data Exfiltration (Tunneling) Attacks against Corporate Network](https://pentest.blog/data-exfiltration-tunneling-attacks-against-corporate-network/)
 	* [Using DNS to Break Out of Isolated Networks in a AWS Cloud Environment](https://dejandayoff.com/using-dns-to-break-out-of-isolated-networks-in-a-aws-cloud-environment/)
 		* Customers can utilize AWS' DNS infrastructure in VPCs (enabled by default). Traffic destined to the AmazonProvidedDNS is traffic bound for AWS management infrastructure and does not egress via the same network links as standard customer traffic and is not evaluated by Security Groups. Using DNS exfiltration, it is possible to exfiltrate data out of an isolated network.
+
+* **Stenography**
+    * [imagejs](https://github.com/jklmnn/imagejs)
+	   * imagejs is a small tool to hide javascript inside a valid image file. The image file is recognized as one by content checking software, e.g. the file command you might now from Linux or other Unix based operation systems.
+    * [Real-time Steganography with RTP](http://uninformed.org/?v=all&a=36&t=sumry)
+	   * Real-time Transfer Protocol (RTP) is used by nearly all Voice-over-IP systems to provide the audio channel for calls. As such, it provides ample opportunity for the creation of a covert communication channel due to its very nature. While use of steganographic techniques with various audio cover-medium has been extensively researched, most applications of such have been limited to audio cover-medium of a static nature such as WAV or MP3 file audio data. This paper details a common technique for the use of steganography with audio data cover-medium, outlines the problem issues that arise when attempting to use such techniques to establish a full-duplex communications channel within audio data transmitted via an unreliable streaming protocol, and documents solutions to these problems. An implementation of the ideas discussed entitled SteganRTP is included in the reference materials.
+	* [Stegano](https://github.com/cedricbonhomme/Stegano)
+		* Steganography is the art and science of writing hidden messages in such a way that no one, apart from the sender and intended recipient, suspects the existence of the message, a form of security through obscurity. Consequently, functions provided by Stéganô only hide messages, without encryption. Steganography is often used with cryptography.

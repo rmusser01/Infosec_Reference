@@ -3,8 +3,8 @@
 ---------------------------
 * MITRE ATT&CK Framework ([MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page)) for attackers.
 * This is a copy of the mappings with links to techniques and background information rather than APT reports.
-* If you want to test your defenses against a lot of these things:
-			* [Atomic Red Team - Small and highly portable detection tests mapped to the Mitre ATT&CK Framework.](https://github.com/redcanaryco/atomic-red-team)
+	* If you want to test your defenses against a lot of these things:
+		* [Atomic Red Team - Small and highly portable detection tests mapped to the Mitre ATT&CK Framework.](https://github.com/redcanaryco/atomic-red-team)
 * [Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Collection.md)
 * [Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Command_and_Control.md)
 * [Credential Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Command_and_Control.md)

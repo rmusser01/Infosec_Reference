@@ -5,8 +5,8 @@
 * Persistence is any access, action, or configuration change to a system that gives an adversary a persistent presence on that system. Adversaries will often need to maintain access to systems through interruptions such as system restarts, loss of credentials, or other failures that would require a remote access tool to restart or alternate backdoor for them to regain access. 
 
 
+-------------------------------
 ## .bash_profile and .bashrc
-------------------------------- 
 * [.bash_profile and .bashrc - ATT&CK](https://attack.mitre.org/wiki/Technique/T1156)
 	* `~/.bash_profile` and `~/.bashrc` are executed in a user's context when a new shell opens or when a user logs in so that their environment is set correctly. `~/.bash_profile` is executed for login shells and `~/.bashrc` is executed for interactive non-login shells. This means that when a user logs in (via username and password) to the console (either locally or remotely via something like SSH), `~/.bash_profile` is executed before the initial command prompt is returned to the user. After that, every time a new shell is opened, `~/.bashrc` is executed. This allows users more fine grained control over when they want certain commands executed.
 	* Mac's Terminal.app is a little different in that it runs a login shell by default each time a new terminal window is opened, thus calling ~/.bash_profile each time instead of ~/.bashrc.
@@ -21,8 +21,8 @@
 
 
 
-## Accessibility Features
 -------------------------------
+## Accessibility Features
 * [Accessibility Features - ATT&CK](https://attack.mitre.org/wiki/Technique/T1015)
 	* Windows contains accessibility features that may be launched with a key combination before a user has logged in (for example, when the user is on the Windows logon screen). An adversary can modify the way these programs are launched to get a command prompt or backdoor without logging in to the system.
 	* Two common accessibility programs are C:\Windows\System32\sethc.exe, launched when the shift key is pressed five times and C:\Windows\System32\utilman.exe, launched when the Windows + U key combination is pressed. The sethc.exe program is often referred to as "sticky keys", and has been used by adversaries for unauthenticated access through a remote desktop login screen.FireEye Hikit Rootkit
@@ -44,9 +44,20 @@
 * [Privilege Escalation via "Sticky" Keys](http://carnal0wnage.attackresearch.com/2012/04/privilege-escalation-via-sticky-keys.html)
 
 
-
-## AppInit DLLs
 -------------------------------
+## AppCert DLLs
+* [AppCert DLLs - ATT&CK](https://attack.mitre.org/wiki/Technique/T1182)
+	* Dynamic-link libraries (DLLs) that are specified in the AppCertDLLs value in the Registry key HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager are loaded into every process that calls the ubiquitously used application programming interface (API) functions:1
+	* CreateProcess
+	* CreateProcessAsUser
+	* CreateProcessWithLoginW
+	* CreateProcessWithTokenW
+	* WinExec
+		* Similar to Process Injection, this value can be abused to obtain persistence and privilege escalation by causing a malicious DLL to be loaded and run in the context of separate processes on the computer. 
+
+
+-------------------------------
+## AppInit DLLs
 * [AppInit DLLs - ATT&CK](https://attack.mitre.org/wiki/Technique/T1103)
 	* DLLs that are specified in the AppInit_DLLs value in the Registry key HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows are loaded by user32.dll into every process that loads user32.dll. In practice this is nearly every program. This value can be abused to obtain persistence by causing a DLL to be loaded into most processes on the computer.AppInit Registry The AppInit DLL functionality is disabled in Windows 8 and later versions when secure boot is enabled.AppInit Secure Boot
 
@@ -58,9 +69,8 @@
 * [AppInit DLLs and Secure Boot](https://msdn.microsoft.com/en-us/library/dn280412)
 
 
-
-## Application Shimming
 -------------------------------
+## Application Shimming
 * [Application Shimming - ATT&CK](https://attack.mitre.org/wiki/Technique/T1138)
 	* The Microsoft Windows Application Compatibility Infrastructure/Framework (Application Shim) was created to allow compatibility of programs as Windows updates and changes its code. For example, application shimming feature that allows programs that were created for Windows XP to work with Windows 10. Within the framework, shims are created to act as a buffer between the program (or more specifically, the Import Address Table) and the Windows OS. When a program is executed, the shim cache is referenced to determine if the program requires the use of the shim database (.sdb). If so, the shim database uses API hooking to redirect the code as necessary in order to communicate with the OS. A list of all shims currently installed by the default Windows installer (sdbinst.exe) is kept in: 
 		* `%WINDIR%\AppPatch\sysmain.sdb`
@@ -87,8 +97,8 @@
 
 
 
-## Authentication Package
 -------------------------------
+## Authentication Package
 * [Authentication Package - ATT&CK](https://attack.mitre.org/wiki/Technique/T1131)
 	* Windows Authentication Package DLLs are loaded by the Local Security Authority (LSA) process at system start. They provide support for multiple logon processes and multiple security protocols to the operating system.MSDN Authentication Packages Adversaries can use the autostart mechanism provided by LSA Authentication Packages for persistence by placing a reference to a binary in the Windows Registry location HKLM\SYSTEM\CurrentControlSet\Control\Lsa\ with the key value of "Authentication Packages"=<target binary>. The binary will then be executed by the system when the authentication packages are loaded.
 
@@ -101,8 +111,8 @@
 
 
 
-## Bootkit
 -------------------------------
+## Bootkit
 * [Bootkit - ATT&CK](https://attack.mitre.org/wiki/Technique/T1067)
 	* A bootkit is a malware variant that modifies the boot sectors of a hard drive, including the Master Boot Record (MBR) and Volume Boot Record (VBR).
 	* Adversaries may use bootkits to persist on systems at a layer below the operating system, which may make it difficult to perform full remediation unless an organization suspects one was used and can act accordingly. 
@@ -113,8 +123,8 @@
 
 
 
-## Change Default File Association
 -------------------------------
+## Change Default File Association
 * [Change Default File Association - ATT&CK](https://attack.mitre.org/wiki/Technique/T1042)
 	* When a file is opened, the default program used to open the file (also called the file association or handler) is checked. File association selections are stored in the Windows Registry and can be edited by users, administrators, or programs that have Registry access.Microsoft Change Default ProgramsMicrosoft File Handlers Applications can modify the file association for a given file extension to call an arbitrary program when a file with the given extension is opened.
 
@@ -125,8 +135,8 @@
 
 
 
-## Component Firmware
 -------------------------------
+## Component Firmware
 * [Component Firmware - ATT&CK](https://attack.mitre.org/wiki/Technique/T1109)
 	* Some adversaries may employ sophisticated means to compromise computer components and install malicious firmware that will execute adversary code outside of the operating system and main system firmware or BIOS. This technique may be similar to System Firmware but conducted upon other system components that may not have the same capability or level of integrity checking. Malicious device firmware could provide both a persistent level of access to systems despite potential typical failures to maintain access and hard disk re-images, as well as a way to evade host software-based defenses and integrity checks.
 * [HD Hacking - SpritesMods](http://spritesmods.com/?art=hddhack)
@@ -136,8 +146,8 @@
 
 
 
-## Component Object Model Hijacking
 -------------------------------
+## Component Object Model Hijacking
 * [Component Object Model Hijacking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1122)
 	* The Microsoft Component Object Model (COM) is a system within Windows to enable interaction between software components through the operating system.Microsoft Component Object Model Adversaries can use this system to insert malicious code that can be executed in place of legitimate software through hijacking the COM references and relationships as a means for persistence. Hijacking a COM object requires a change in the Windows Registry to replace a reference to a legitimate system component which may cause that component to not work when executed. When that system component is executed through normal system operation the adversary's code will be executed instead.GDATA COM Hijacking An adversary is likely to hijack objects that are used frequently enough to maintain a consistent level of persistence, but are unlikely to break noticeable functionality within the system as to avoid system instability that could lead to detection.
 
@@ -154,8 +164,8 @@
 
 
 
+-------------------------------
 ## Cron Job
-------------------------------- 
 * [Cron Job - ATT&CK](https://attack.mitre.org/wiki/Technique/T1168)
 	* System-wide cron jobs are installed by modifying /etc/crontab while per-user cron jobs are installed using crontab with specifically formatted crontab files 1. This works on Mac and Linux systems.
 	* Both methods allow for commands or scripts to be executed at specific, periodic intervals in the background without user interaction. An adversary may use task scheduling to execute programs at system startup or on a scheduled basis for persistence234, to conduct Execution as part of Lateral Movement, to gain root privileges, or to run a process under the context of a specific account. 
@@ -177,8 +187,8 @@
 
 
 
-## DLL Search Order Hijacking
 -------------------------------
+## DLL Search Order Hijacking
 * [DLL Search Order Hijacking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1038)
 	* Windows systems use a common method to look for required DLLs to load into a program.Microsoft DLL Search Adversaries may take advantage of the Windows DLL search order and programs that ambiguously specify DLLs to gain privilege escalation and persistence. 
 	* Adversaries may perform DLL preloading, also called binary planting attacks,OWASP Binary Planting by placing a malicious DLL with the same name as an ambiguously specified DLL in a location that Windows searches before the legitimate DLL. Often this location is the current working directory of the program. Remote DLL preloading attacks occur when a program sets its current directory to a remote location such as a Web share before loading a DLL.Microsoft 2269637 Adversaries may use this behavior to cause the program to load a malicious DLL. 
@@ -204,8 +214,8 @@
 * [Dylib Hijacking on OS X](https://www.virusbtn.com/pdf/magazine/2015/vb201503-dylib-hijacking.pdf)
 
 
-## External Remote Services
 -------------------------------
+## External Remote Services
 * [External Remote Services - ATT&CK](https://attack.mitre.org/wiki/Technique/T1133)
 	* Remote services such as VPNs, Citrix, and other access mechanisms allow users to connect to internal enterprise network resources from external locations. There are often remote service gateways that manage connections and credential authentication for these services. Adversaries may use remote services to access and persist within a network.Volexity Virtual Private Keylogging Access to Valid Accounts to use the service is often a requirement, which could be obtained through credential pharming or by obtaining the credentials from users after compromising the enterprise network. Access to remote services may be used as part of Redundant Access during an operation.
 * VPN/RDP/Citrix Hijacking
@@ -216,8 +226,8 @@
 
 
 
-## File System Permissions Weakness
 -------------------------------
+## File System Permissions Weakness
 * [File System Permissions Weakness - ATT&CK](https://attack.mitre.org/wiki/Technique/T1044)
 	* Processes may automatically execute specific binaries as part of their functionality or to perform other actions. If the permissions on the file system directory containing a target binary, or permissions on the binary itself, are improperly set, then the target binary may be overwritten with another binary using user-level permissions and executed by the original process. If the original process and thread are running under a higher permissions level, then the replaced binary will also execute under higher-level permissions, which could include SYSTEM.
 	* Adversaries may use this technique to replace legitimate binaries with malicious ones as a means of executing code at a higher permissions level. If the executing process is set to run at a specific time or during a certain event (e.g., system bootup) then this technique can also be used for persistence. 
@@ -234,8 +244,8 @@
 
 
 
-## Hidden Files and Directories
 -------------------------------
+## Hidden Files and Directories
 * [Hidden Files and Directories - ATT&CK](https://attack.mitre.org/wiki/Technique/T1158)
 	* To prevent normal users from accidentally changing special files on a system, most operating systems have the concept of a ‘hidden’ file. These files don’t show up when a user browses the file system with a GUI or when using normal commands on the command line. Users must explicitly ask to show the hidden files either via a series of Graphical User Interface (GUI) prompts or with command line switches (dir /a for Windows and ls –a for Linux and macOS). 
 	* 
@@ -253,21 +263,28 @@
 * Users can mark specific files as hidden by using the attrib.exe binary. Simply do attrib +h filename to mark a file or folder as hidden. Similarly, the “+s” marks a file as a system file and the “+r” flag marks the file as read only. Like most windows binaries, the attrib.exe binary provides the ability to apply these changes recursively “/S”. 
 
 
-
-## Hypervisor
 -------------------------------
+## Hypervisor
 * [Hypervisor - ATT&CK](https://attack.mitre.org/wiki/Technique/T1062)
 	* A type-1 hypervisor is a software layer that sits between the guest operating systems and system's hardware.Wikipedia Hypervisor It presents a virtual running environment to an operating system. An example of a common hypervisor is Xen.Wikipedia Xen A type-1 hypervisor operates at a level below the operating system and could be designed with Rootkit functionality to hide its existence from the guest operating system.Myers 2007 A malicious hypervisor of this nature could be used to persist on systems through interruption.
 * [An Introduction to Hardware-Assisted Virtual Machine (HVM) - pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.90.8832&rep=rep1&type=pdf)
 
 
 
+---------------------------
+## Image File Execution Options Injection
+* [Image File Execution Options Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1183)
+	* Image File Execution Options (IFEO) enable a developer to attach a debugger to an application. When a process is created, any executable file present in an application’s IFEO will be prepended to the application’s name, effectively launching the new process under the debugger (e.g., `“C:\dbg\ntsd.exe -g notepad.exe”)`.
+	* IFEOs can be set directly via the Registry or in Global Flags via the Gflags tool.2 IFEOs are represented as Debugger Values in the Registry under `*HKLM\Software\Microsoft\Windows NT\CurrentVersion\Image File Execution Options/<executable> and HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\<executable>` where `<executable>` is the binary on which the debugger is attached.
+	* Similar to Process Injection, this value can be abused to obtain persistence and privilege escalation by causing a malicious executable to be loaded and run in the context of separate processes on the computer. Installing IFEO mechanisms may also provide Persistence via continuous invocation.
+	* Malware may also use IFEO for Defense Evasion by registering invalid debuggers that redirect and effectively disable various system and security applications.
+
+#### Windows
+* [Image File Execution Options (IFEO) - blogs.msdn](https://blogs.msdn.microsoft.com/mithuns/2010/03/24/image-file-execution-options-ifeo/)
 
 
-
-
-## LC_LOAD_DYLIB Addition
 -------------------------------
+## LC_LOAD_DYLIB Addition
 * [LC_LOAD_DYLIB Addition - ATT&CK](https://attack.mitre.org/wiki/Technique/T1161)
 	* Mach-O binaries have a series of headers that are used to perform certain operations when a binary is loaded. The LC_LOAD_DYLIB header in a Mach-O binary tells macOS and OS X which dynamic libraries (dylibs) to load during execution time. These can be added ad-hoc to the compiled binary as long adjustments are made to the rest of the fields and dependenciesWriting Bad Malware for OSX. There are tools available to perform these changes. Any changes will invalidate digital signatures on binaries because the binary is being modified. Adversaries can remediate this issue by simply removing the LC_CODE_SIGNATURE command from the binary so that the signature isn’t checked at load timeMalware Persistence on OS X.
 
@@ -278,9 +295,8 @@
 
 
 
- 
-## Launch Agent
 -------------------------------
+## Launch Agent
 * [Launch Agent - ATT&CK](https://attack.mitre.org/wiki/Technique/T1159)
 	* Per Apple’s developer documentation, when a user logs in, a per-user launchd process is started which loads the parameters for each launch-on-demand user agent from the property list (plist) files found in /System/Library/LaunchAgents, /Library/LaunchAgents, and $HOME/Library/LaunchAgentsAppleDocs Launch Agent DaemonsOSX Keydnap malwareAntiquated Mac Malware. These launch agents have property list files which point to the executables that will be launchedOSX.Dok Malware. Adversaries may install a new launch agent that can be configured to execute at login by using launchd or launchctl to load a plist into the appropriate directories Sofacy Komplex Trojan Methods of Mac Malware Persistence. The agent name may be disguised by using a name from a related operating system or benign software. Launch Agents are created with user level privileges and are executed with the privileges of the user when they log inOSX Malware DetectionOceanLotus for OS X. They can be set up to execute when a specific user logs in (in the specific user’s directory structure) or when any user logs in (which requires administrator privileges). 
 
@@ -295,9 +311,8 @@
 
 
 
-
-## Launch Daemon
 -------------------------------
+## Launch Daemon
 * [Launch Daemon - ATT&CK](https://attack.mitre.org/wiki/Technique/T1160)
 	* Per Apple’s developer documentation, when macOS and OS X boot up, launchd is run to finish system initialization. This process loads the parameters for each launch-on-demand system-level daemon from the property list (plist) files found in /System/Library/LaunchDaemons and /Library/LaunchDaemonsAppleDocs Launch Agent Daemons. These LaunchDaemons have property list files which point to the executables that will be launchedMethods of Mac Malware Persistence. 
 	* Adversaries may install a new launch daemon that can be configured to execute at startup by using launchd or launchctl to load a plist into the appropriate directoriesOSX Malware Detection. The daemon name may be disguised by using a name from a related operating system or benign software WireLurker. Launch Daemons may be created with administrator privileges, but are executed under root privileges, so an adversary may also use a service to escalate privileges from administrator to root. 
@@ -306,9 +321,8 @@
 #### OS X
 
 
-
-## Launchctl
 -------------------------------
+## Launchctl
 * [Launchctl - ATT&CK](https://attack.mitre.org/wiki/Technique/T1152)
 	* Launchctl controls the macOS launchd process which handles things like launch agents and launch daemons, but can execute other commands or programs itself. Launchctl supports taking subcommands on the command-line, interactively, or even redirected from standard input. By loading or reloading launch agents or launch daemons, adversaries can install persistence or execute changes they made Sofacy Komplex Trojan. Running a command from launchctl is as simple as `launchctl submit -l <labelName> -- /Path/to/thing/to/execute "arg" "arg" "arg"`. Loading, unloading, or reloading launch agents or launch daemons can require elevated privileges. Adversaries can abuse this functionality to execute code or even bypass whitelisting if launchctl is an allowed process. 
 
@@ -316,9 +330,8 @@
 
 
 
-
-## Local Port Monitor
 -------------------------------
+## Local Port Monitor
 * [Local Port Monitor - ATT&CK](https://attack.mitre.org/wiki/Technique/T1013)
 	* A port monitor can be set through the AddMonitor API call to set a DLL to be loaded at startup.AddMonitor This DLL can be located in C:\Windows\System32 and will be loaded by the print spooler service, spoolsv.exe, on boot.Bloxham Alternatively, an arbitrary DLL can be loaded if permissions allow writing a fully-qualified pathname for that DLL to HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors.Bloxham The spoolsv.exe process also runs under SYSTEM level permissions. Adversaries can use this technique to load malicious code at startup that will persist on system reboot and execute as SYSTEM. 
 
@@ -328,9 +341,8 @@
 
 
 
-
-## Login Item
 -------------------------------
+## Login Item
 * [Login Item - ATT&CK](https://attack.mitre.org/wiki/Technique/T1162)
 	* MacOS provides the option to list specific applications to run when a user logs in. These applications run under the logged in user's context, and will be started every time the user logs in. Login items installed using the Service Management Framework are not visible in the System Preferences and can only be removed by the application that created themAdding Login Items. Users have direct control over login items installed using a shared file list which are also visible in System PreferencesAdding Login Items. These login items are stored in the user's `~/Library/Preferences/` directory in a plist file called `com.apple.loginitems.plist`. Some of these applications can open visible dialogs to the user, but they don’t all have to since there is an option to ‘Hide’ the window. If an adversary can register their own login item or modified an existing one, then they can use it to execute their code for a persistence mechanism each time the user logs inMalware Persistence on OS XOSX.Dok Malware. 
 
@@ -338,9 +350,8 @@
 
 
 
-
-## Logon Scripts
 -------------------------------
+## Logon Scripts
 * [Logon Scripts - ATT&CK](https://attack.mitre.org/wiki/Technique/T1037)
 
 #### OS X
@@ -357,9 +368,8 @@
 
 
 
-
-## Modify Existing Service
 -------------------------------
+## Modify Existing Service
 * [Modify Existing Service - ATT&CK](https://attack.mitre.org/wiki/Technique/T1031)
 	* Windows service configuration information, including the file path to the service's executable, is stored in the Registry. Service configurations can be modified using utilities such as sc.exe and Reg. Adversaries can modify an existing service to persist malware on a system by using system utilities or by using custom tools to interact with the Windows API. Use of existing services is a type of Masquerading that may make detection analysis more challenging. Modifying existing services may interrupt their functionality or may enable services that are disabled or otherwise not commonly used. 
 
@@ -373,9 +383,8 @@
 
 
 
-
-### Netsh Helper DLL
 -------------------------------
+### Netsh Helper DLL
 Netsh Helper DLL
 * [Netsh Helper DLL - ATT&CK](https://attack.mitre.org/wiki/Technique/T1128)
 	* Netsh.exe (also referred to as Netshell) is a command-line scripting utility used to interact with the network configuration of a system. It contains functionality to add helper DLLs for extending functionality of the utility.TechNet Netsh The paths to registered netsh.exe helper DLLs are entered into the Windows Registry at HKLM\SOFTWARE\Microsoft\Netsh. 
@@ -404,10 +413,8 @@ Netsh Helper DLL
 
 
 
-
-## Office Application Startup
 -------------------------------
-Office Application Startup
+## Office Application Startup
 * [Office Application Startup - ATT&CK](https://attack.mitre.org/wiki/Technique/T1137)
 	* Microsoft Office is a fairly common application suite on Windows-based operating systems within an enterprise network. There are multiple mechanisms that can be used with Office for persistence when an Office-based application is started. 
 	* Office template Macros
@@ -434,10 +441,8 @@ Office Application Startup
 	* Add-ins provide optional commands and features for Microsoft Excel. By default, add-ins are not immediately available in Excel, so you must first install and (in some cases) activate these add-ins so that you can use them.
 
 
-
-## Path Interception
 -------------------------------
-Path Interception
+## Path Interception
 * [Path Interception - ATT&CK](https://attack.mitre.org/wiki/Technique/T1034)
 	* Path interception occurs when an executable is placed in a specific path so that it is executed by an application instead of the intended target. One example of this was the use of a copy of cmd in the current working directory of a vulnerable application that loads a CMD or BAT file with the CreateProcess function.TechNet MS14-019 
 	* There are multiple distinct weaknesses or misconfigurations that adversaries may take advantage of when performing path interception: unquoted paths, path environment variable misconfigurations, and search order hijacking. The first vulnerability deals with full program paths, while the second and third occur when program paths are not specified. These techniques can be used for persistence if executables are called on a regular basis, as well as privilege escalation if intercepted executables are started by a higher privileged process.  
@@ -469,9 +474,8 @@ Path Interception
 
 
 
-
-## Plist Modification
 -------------------------------
+## Plist Modification
 [Plist Modification - ATT&CK](https://attack.mitre.org/wiki/Technique/T1150)
 	* Property list (plist) files contain all of the information that macOS and OS X uses to configure applications and services. These files are UT-8 encoded and formatted like XML documents via a series of keys surrounded by < >. They detail when programs should execute, file paths to the executables, program arguments, required OS permissions, and many others. plists are located in certain locations depending on their purpose such as /Library/Preferences (which execute with elevated privileges) and ~/Library/Preferences (which execute with a user's privileges). Adversaries can modify these plist files to point to their own code, can use them to execute their code in the context of another user, bypass whitelisting procedures, or even use them as a persistence mechanismSofacy Komplex Trojan.
 
@@ -480,8 +484,8 @@ Path Interception
 
 
 
+-------------------------------
 ## Rc.common
-------------------------------- 
 * [Rc.common - ATT&CK](https://attack.mitre.org/wiki/Technique/T1163)
 	* During the boot process, macOS and Linux both execute source /etc/rc.common, which is a shell script containing various utility functions. This file also defines routines for processing command-line arguments and for gathering system settings, and is thus recommended to include in the start of Startup Item ScriptsStartup Items. In macOS and OS X, this is now a deprecated technique in favor of launch agents and launch daemons, but is currently still used. Adversaries can use the rc.common file as a way to hide code for persistence that will execute on each reboot as the root userMethods of Mac Malware Persistence. 
 
@@ -497,18 +501,16 @@ Path Interception
 
 
 
-
-## Re-opened Applications
 -------------------------------
+## Re-opened Applications
 * [Re-opened Applications - ATT&CK](https://attack.mitre.org/wiki/Technique/T1164)
 	* Starting in Mac OS X 10.7 (Lion), users can specify certain applications to be re-opened when a user reboots their machine. While this is usually done via a Graphical User Interface (GUI) on an app-by-app basis, there are property list files (plist) that contain this information as well located at `~/Library/Preferences/com.apple.loginwindow.plist` and `~/Library/Preferences/ByHost/com.apple.loginwindow.*.plist`. An adversary can modify one of these files directly to include a link to their malicious executable to provide a persistence mechanism each time the user reboots their machineMethods of Mac Malware Persistence.
 
 #### OS X
 
 
-
-## Redundant Access
 -------------------------------
+## Redundant Access
 * [Redundant Access - ATT&CK](https://attack.mitre.org/wiki/Technique/T1108)
 	* Adversaries may use more than one remote access tool with varying command and control protocols as a hedge against detection. If one type of tool is detected and blocked or removed as a response but the organization did not gain a full understanding of the adversary's tools and access, then the adversary will be able to retain access to the network. Adversaries may also attempt to gain access to Valid Accounts to use External Remote Services such as external VPNs as a way to maintain access despite interruptions to remote access tools deployed within a target network.Mandiant APT1 Use of a Web Shell is one such way to maintain access to a network through an externally accessible Web server.
 * Don't just use one backdoor. Use multiple avenues of exfil. Plan ahead and exepct observation/discovery. Prepare backup solutions ready to go in case SHTF.
@@ -516,9 +518,8 @@ Path Interception
 
 
 
-
-## Registry Run Key/ Start Folder
 -------------------------------
+## Registry Run Key/ Start Folder
 * [Registry Run Keys / Start Folder - ATT&CK](https://attack.mitre.org/wiki/Technique/T1060)
 	* Adding an entry to the "run keys" in the Registry or startup folder will cause the program referenced to be executed when a user logs in.Microsoft Run Key The program will be executed under the context of the user and will have the account's associated permissions level. Adversaries can use these configuration locations to execute malware, such as remote access tools, to maintain persistence through system reboots. Adversaries may also use Masquerading to make the Registry entries look as if they are associated with legitimate programs. 
 
@@ -536,10 +537,8 @@ Path Interception
 
 
 
-
-## Scheduled Tasks
 -------------------------------
-Scheduled Tasks
+## Scheduled Tasks
 * [Scheduled Tasks - ATT&CK](https://attack.mitre.org/wiki/Technique/T1053)
 	* Utilities such as at and schtasks, along with the Windows Task Scheduler, can be used to schedule programs or scripts to be executed at a date and time. The account used to create the task must be in the Administrators group on the local system. A task can also be scheduled on a remote system, provided the proper authentication is met to use RPC and file and printer sharing is turned on.TechNet Task Scheduler Security An adversary may use task scheduling to execute programs at system startup or on a scheduled basis for persistence, to conduct remote Execution as part of Lateral Movement, to gain SYSTEM privileges, or to run a process under the context of a specified account.
 
@@ -557,8 +556,8 @@ Scheduled Tasks
 
 
 
-## Security Support Provider
 -------------------------------
+## Security Support Provider
 * [Security Support Provider - ATT&CK](https://attack.mitre.org/wiki/Technique/T1101)
 	* Windows Security Support Provider (SSP) DLLs are loaded into the Local Security Authority (LSA) process at system start. Once loaded into the LSA, SSP DLLs have access to encrypted and plaintext passwords that are stored in Windows, such as any logged-on user's Domain password or smart card PINs. The SSP configuration is stored in two Registry keys: `HKLM\SYSTEM\CurrentControlSet\Control\Lsa\Security Packages` and `HKLM\SYSTEM\CurrentControlSet\Control\Lsa\OSConfig\Security Packages`. An adversary may modify these Registry keys to add new SSPs, which will be loaded the next time the system boots, or when the AddSecurityPackage Windows API function is called.
 
@@ -569,9 +568,8 @@ Scheduled Tasks
 
 
 
-## Service Registry Permissions Weakness
 -------------------------------
-Service Registry Permissions Weakness
+## Service Registry Permissions Weakness
 * [Service Registry Permissions Weakness - ATT&CK](https://attack.mitre.org/wiki/Technique/T1058)
 	* Windows stores local service configuration information in the Registry under HKLM\SYSTEM\CurrentControlSet\Services. The information stored under a service's Registry keys can be manipulated to modify a service's execution parameters through tools such as the service controller, sc.exe, PowerShell, or Reg. Access to Registry keys is controlled through Access Control Lists and permissions.MSDN Registry Key Security If the permissions for users and groups are not properly set and allow access to the Registry keys for a service, then adversaries can change the service binPath/ImagePath to point to a different executable under their control. When the service starts or is restarted, then the adversary-controlled program will execute, allowing the adversary to gain persistence and/or privilege escalation to the account context the service is set to execute under (local/domain account, SYSTEM, LocalService, or NetworkService).
 
@@ -582,8 +580,8 @@ Service Registry Permissions Weakness
 
 
 
-## Shortcut Modification
 -------------------------------
+## Shortcut Modification
 * [Shortcut Modification - ATT&CK](https://attack.mitre.org/wiki/Technique/T1023)
 	* Shortcuts or symbolic links are ways of referencing other files or programs that will be opened or executed when the shortcut is clicked or executed by a system startup process. Adversaries could use shortcuts to execute their tools for persistence. They may create a new shortcut as a means of indirection that may use Masquerading to look like a legitimate program. Adversaries could also edit the target path or entirely replace an existing shortcut so their tools will be executed instead of the intended legitimate program.
 
@@ -607,8 +605,8 @@ Service Registry Permissions Weakness
 
 
 
-## Startup Items
 -------------------------------
+## Startup Items
 * [Startup Items - ATT&CK](https://attack.mitre.org/wiki/Technique/T1165)
 	* Per Apple’s documentation, startup items execute during the final phase of the boot process and contain shell scripts or other executable files along with configuration information used by the system to determine the execution order for all startup itemsStartup Items. This is technically a deprecated version (superseded by Launch Daemons), and thus the appropriate folder, /Library/StartupItems isn’t guaranteed to exist on the system by default, but does appear to exist by default on macOS Sierra. A startup item is a directory whose executable and configuration property list (plist), StartupParameters.plist, reside in the top-level directory. An adversary can create the appropriate folders/files in the StartupItems directory to register their own persistence mechanismMethods of Mac Malware Persistence. Additionally, since StartupItems run during the bootup phase of macOS, they will run as root. If an adversary is able to modify an existing Startup Item, then they will be able to Privilege Escalate as well.
 
@@ -616,8 +614,8 @@ Service Registry Permissions Weakness
 
 
 
-## System Firmware
 -------------------------------
+## System Firmware
 * [System Firmware - ATT&CK](https://attack.mitre.org/wiki/Technique/T1019)
 	* The BIOS (Basic Input/Output System) and The Unified Extensible Firmware Interface (UEFI) or Extensible Firmware Interface (EFI) are examples of system firmware that operate as the software interface between the operating system and hardware of a computer.Wikipedia BIOSWikipedia UEFIAbout UEFI System firmware like BIOS and (U)EFI underly the functionality of a computer and may be modified by an adversary to perform or assist in malicious activity. Capabilities exist to overwrite the system firmware, which may give sophisticated adversaries a means to install malicious firmware updates as a means of persistence on a system that may be difficult to detect.
 
@@ -626,8 +624,8 @@ Service Registry Permissions Weakness
 
 
 
-## Trap
 -------------------------------
+## Trap
 * [Trap - ATT&CK](https://attack.mitre.org/wiki/Technique/T1154)
 	* The `trap` command allows programs and shells to specify commands that will be executed upon receiving interrupt signals. A common situation is a script allowing for graceful termination and handling of common keyboard interrupts like ctrl+c and ctrl+d. Adversaries can use this to register code to be executed when the shell encounters specific interrupts either to gain execution or as a persistence mechanism. Trap commands are of the following format trap 'command list' signals where "command list" will be executed when "signals" are received. 
 
@@ -643,8 +641,8 @@ Service Registry Permissions Weakness
 
 
 
-## Valid Accounts
 -------------------------------
+## Valid Accounts
 * [Valid Accounts - ATT&CK](https://attack.mitre.org/wiki/Technique/T1078)
 	* Adversaries may steal the credentials of a specific user or service account using Credential Access techniques. Compromised credentials may be used to bypass access controls placed on various resources on hosts and within the network and may even be used for persistent access to remote systems. Compromised credentials may also grant an adversary increased privilege to specific systems or access to restricted areas of the network. Adversaries may choose not to use malware or tools in conjunction with the legitimate access those credentials provide to make it harder to detect their presence. 
 	* Adversaries may also create accounts, sometimes using pre-defined account names and passwords, as a means for persistence through backup access in case other means are unsuccessful. 
@@ -667,8 +665,8 @@ also grant an adversary increased privilege to specific systems or access to res
 
 
 
-## Web Shell
 -------------------------------
+## Web Shell
 * [Web Shell - ATT&CK](https://attack.mitre.org/wiki/Technique/T1100)
 	* A Web shell is a Web script that is placed on an openly accessible Web server to allow an adversary to use the Web server as a gateway into a network. A Web shell may provide a set of functions to execute or a command-line interface on the system that hosts the Web server. In addition to a server-side script, a Web shell may have a client interface program that is used to talk to the Web server (see, for example, China Chopper Web shell client).Lee 2013 Web shells may serve as Redundant Access or as a persistence mechanism in case an adversary's primary access methods are detected and removed.
 
@@ -683,8 +681,8 @@ also grant an adversary increased privilege to specific systems or access to res
 	* Weevely is a command line web shell dynamically extended over the network at runtime, designed for remote server administration and penetration testing.
 
 
-## Windows Management Instrumentation(WMI) Event Subscription
 -------------------------------
+## Windows Management Instrumentation(WMI) Event Subscription
 * [Windows Management Instrumentation Event Subscription - ATT&CK](https://attack.mitre.org/wiki/Technique/T1084)
 	* Windows Management Instrumentation (WMI) can be used to install event filters, providers, consumers, and bindings that execute code when a defined event occurs. Adversaries may use the capabilities of WMI to subscribe to an event and execute arbitrary code when that event occurs, providing persistence on a system. Adversaries may attempt to evade detection of this technique by compiling WMI scripts.Dell WMI Persistence Examples of events that may be subscribed to are the wall clock time or the computer's uptime.Kazanciyan 2014 Several threat groups have reportedly used this technique to maintain persistence.Mandiant M-Trends 2015
 
@@ -705,8 +703,8 @@ also grant an adversary increased privilege to specific systems or access to res
 
 
 
-## Winlogon Helper DLL
 -------------------------------
+## Winlogon Helper DLL
 * [Winlogon Helper DLL - ATT&CK](https://attack.mitre.org/wiki/Technique/T1004)
 	* Winlogon is a part of some Windows versions that performs actions at logon. In Windows systems prior to Windows Vista, a Registry key can be modified that causes Winlogon to load a DLL on startup. Adversaries may take advantage of this feature to load adversarial code at startup for persistence.
 

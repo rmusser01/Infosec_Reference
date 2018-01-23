@@ -63,7 +63,7 @@ Web TOC
 * Clickjack(ing)
 * Websockets
 
-
+* [HackerOne H1-212 Capture the Flag Solution - Corben Douglas](http://www.sxcurity.pro/H1-212%20CTF%20Solution.pdf)
 * [Detecting and Exploiting the HTTP PUT Method](http://www.smeegesec.com/2014/10/detecting-and-exploiting-http-put-method.html)
 * [AngularJS Security Documentation](https://docs.angularjs.org/guide/security)
 * [Hacking with Pictures - Syscan2015](http://www.slideshare.net/saumilshah/hacking-with-pictures-syscan-2015)
@@ -72,7 +72,7 @@ Web TOC
 * [Abusing Google App Scripting Through Social Engineering](http://www.redblue.team/2017/02/abusing-google-app-scripting-through.html)
 * [Unrestricted File Upload Security Testing - Aptive](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
 
-
+* [Cross Site History Manipulation - OWASP](https://www.owasp.org/index.php/Cross_Site_History_Manipulation_(XSHM))
 
 * **Reflected File Download**
 	* [Reflected File Download - A New Web Attack Vector - BHEU 2014](https://www.youtube.com/watch?v=dl1BJUNk8V4)
@@ -88,7 +88,8 @@ Web TOC
 https://github.com/stephenbradshaw/breakableflask
 https://github.com/JasonHinds13/hackable
 https://github.com/omarkurt/flask-injection
-
+* [Fingerprinter](https://github.com/erwanlr/Fingerprinter)
+	*  CMS/LMS/Library etc Versions Fingerprinter. This script's goal is to try to find the version of the remote application/third party script etc by using a fingerprinting approach.
 
 
 #### End Sort
@@ -283,7 +284,18 @@ https://github.com/omarkurt/flask-injection
 
 ----------------
 #### <a name="csrf"></a>Cross Site Request Forgery (CSRF)
-* [Cross Site Request Forgery](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
+* **101**
+	* [Cross Site Request Forgery - OWASP](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_%28CSRF%29)
+* **Articles/Blogposts/Presentations/Talks/Videos**
+	* [Cross-Site Request Forgery (CSRF) Prevention Cheat Sheet](https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)\_Prevention_Cheat_Sheet)
+	* [The OWASP Top Ten and ESAPI – Part 5 – Cross Site Request Forgery (CSRF)](http://www.jtmelton.com/2010/05/16/the-owasp-top-ten-and-esapi-part-6-cross-site-request-forgery-csrf/)
+	* [Testing for CSRF (OTG-SESS-005) - OWASP](https://www.owasp.org/index.php/Testing_for_CSRF_(OTG-SESS-005)\)
+	* [RequestRodeo: Client Side Protection against Session Riding - Martin Johns and Justus Winter - pdf](https://www.owasp.org/images/4/42/RequestRodeo-MartinJohns.pdf)
+	* [A most Neglected Fact About CSRF - pdf](http://yehg.net/lab/pr0js/view.php/A_Most-Neglected_Fact_About_CSRF.pdf)
+* **Tools**
+	* [OWASP CSRFGuard](https://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project)
+	* [OWASP CSRFTester](https://www.owasp.org/index.php/Category:OWASP_CSRFTester_Project)
+	* [](https://code.google.com/archive/p/pinata-csrf-tool/)
 
 
 

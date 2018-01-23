@@ -23,18 +23,18 @@
 https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 * Add Descriptions/generals to types of fuzzing
 
+* [FuzzManager](https://github.com/MozillaSecurity/FuzzManager)
+	* With this project, we aim to create a management toolchain for fuzzing. Unlike other toolchains and frameworks, we want to be modular in such a way that you can use those parts of FuzzManager that seem interesting to you without forcing a process upon you that does not fit your requirements.
+* [COMRaider](http://sandsprite.com/iDef/COMRaider/)
+	* ActiveX Fuzzing tool with GUI, object browser, system scanner, and distributed auditing capabilities
+	* [Github](https://github.com/dzzie/COMRaider)
+* [From Fuzzing to 0day.](http://blog.techorganic.com/2014/05/14/from-fuzzing-to-0-day/)
 
 * [Basic fuzzing framework](https://www.cert.org/vulnerability-analysis/tools/bff-download.cfm)
 * [Fuzzing 101 (Part 1)]()
 * [Fuzzing 101 (Part 2)](https://vimeo.com/5237484)
-
-* [From Fuzzing to 0day.](http://blog.techorganic.com/2014/05/14/from-fuzzing-to-0-day/)
 * [0-day streams: pdfcrack](https://www.youtube.com/watch?v=8VLNPIIgKbQ&app=desktop)
-* [Faster Fuzzing with Python](https://labs.mwrinfosecurity.com/blog/2014/12/10/faster-fuzzing-with-python/)
-* [Good slides on fuzzing](https://courses.cs.washington.edu/courses/cse484/14au/slides/Section8.pdf)
-* [The Power Of Pair: One Template That Reveals 100+ Uaf Ie Vulnerabilities - BlackhatEU14](http://www.securitytube.net/video/12924?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+SecurityTube+%28SecurityTube.Net%29)
-* [Mining for Bugs with Graph Database Queries [31c3]](https://www.youtube.com/watch?v=291hpUE5-3g)
-* [ClusterFuzz](http://nullcon.net/website/archives/ppt/goa-15/analyzing-chrome-crash-reports-at-scale-by-abhishek-arya.pdf)
+
 
 #### end sort
 
@@ -52,6 +52,12 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 	* [GitHub for Bug Bounty Hunters](https://gist.github.com/EdOverflow/922549f610b258f459b219a32f92d10b)
 	* [Secure Code Review - OpenSecurityTraining.info](http://opensecuritytraining.info/SecureCodeReview.html)
 	* [High-Level Approaches for Finding Vulnerabilities](http://jackson.thuraisamy.me/finding-vulnerabilities.html)
+* **Educational/Informative**
+	* [Faster Fuzzing with Python](https://labs.mwrinfosecurity.com/blog/2014/12/10/faster-fuzzing-with-python/)
+	* [Good slides on fuzzing](https://courses.cs.washington.edu/courses/cse484/14au/slides/Section8.pdf)
+	* [The Power Of Pair: One Template That Reveals 100+ Uaf Ie Vulnerabilities - BlackhatEU14](http://www.securitytube.net/video/12924?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+SecurityTube+%28SecurityTube.Net%29)
+	* [Mining for Bugs with Graph Database Queries [31c3]](https://www.youtube.com/watch?v=291hpUE5-3g)
+	* [ClusterFuzz](http://nullcon.net/website/archives/ppt/goa-15/analyzing-chrome-crash-reports-at-scale-by-abhishek-arya.pdf)
 * **History**
 	* [Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
 		* Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
@@ -88,6 +94,7 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 		* [usercorn](https://github.com/lunixbochs/usercorn)
 			* dynamic binary analysis via platform emulation 
 	* **Writeups**
+		* [Fuzzing TCP servers - Robert Swiecki](http://blog.swiecki.net/2018/01/fuzzing-tcp-servers.html)
 * **Static Fuzzing**
 	* **Frameworks**
 		* [Paper Machete](https://github.com/cetfor/PaperMachete/wiki)

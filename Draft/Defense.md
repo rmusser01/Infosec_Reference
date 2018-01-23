@@ -1,4 +1,4 @@
-# Defense
+z# Defense
 
 ## In Progress
 
@@ -23,33 +23,37 @@
 * [Powershell](#powershell)
 
 ### Sort
-* [limacharlie](https://github.com/refractionpoint/limacharlie)
-	* Endpoint monitoring stack.
 
-* [Aktaion: Open Source Tool For "Micro Behavior Based" Exploit Detection and Automated GPO Policy Generation](https://github.com/jzadeh/Aktaion)
-	* Aktaion is a lightweight JVM based project for detecting exploits (and more generally attack behaviors). The project is meant to be a learning/teaching tool on how to blend multiple security signals and behaviors into an expressive framework for intrusion detection. The cool thing about the project is it provides an expressive mechanism to add high level IOCs (micro beahviors) such as timing behavior of a certain malware family.
-
-https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-group-policy/
-* [Second section good resource for hardening windows](http://labs.bitdefender.com/2014/11/do-your-bit-to-limit-cryptowall/)
-* [Windows ISV Software Security Defenses - msdn](https://msdn.microsoft.com/en-us/library/bb430720.aspx)
-* [Common misconfigurations that lead to a breach - Justin Tharpe](https://www.youtube.com/watch?v=fI3mycr5cPg)
-* [Mitigate threats by using Windows 10 security features](https://docs.microsoft.com/en-us/windows/threat-protection/overview-of-threat-mitigations-in-windows-10)
-* [Real Incidents:Real Solutions - evil.plumbing](https://evil.plumbing/Current-version-June.pdf)
-* [Securi-Tay 2017 - Advanced Attack Detection](https://www.youtube.com/watch?v=ihElrBBJQo8)
-* [Windows Commands Abused by Attackers](http://blog.jpcert.or.jp/2016/01/windows-commands-abused-by-attackers.html)
-* [SANS Institute Security Consensus Operational Readiness Evaluation](https://www.sans.org/media/score/checklists/LinuxCheatsheet_2.pdf)
-* [Windows Server guidance to protect against speculative execution side-channel vulnerabilities](https://support.microsoft.com/en-us/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution?t=1&cn=ZmxleGlibGVfcmVjc18y&refsrc=email&iid=149b9032665345ba890ba51d3bf0d519&fl=4&uid=150127534&nid=244%20281088008)
-* [Security Guide for Developers](https://github.com/FallibleInc/security-guide-for-developers)
 * [Using an Expanded Cyber Kill Chain Model to Increase Attack Resiliency - Sean Malone - BHUSA16](https://www.youtube.com/watch?v=1Dz12M7u-S8)
 	* We'll review what actions are taken in each phase, and what's necessary for the adversary to move from one phase to the next. We'll discuss multiple types of controls that you can implement today in your enterprise to frustrate the adversary's plan at each stage, to avoid needing to declare "game over" just because an adversary has gained access to the internal network. The primary limiting factor of the traditional Cyber Kill Chain is that it ends with Stage 7: Actions on Objectives, conveying that once the adversary reaches this stage and has access to a system on the internal network, the defending victim has already lost. In reality, there should be multiple layers of security zones on the internal network, to protect the most critical assets. The adversary often has to move through numerous additional phases in order to access and manipulate specific systems to achieve his objective. By increasing the time and effort required to move through these stages, we decrease the likelihood of the adversary causing material damage to the enterprise. 
 	* [Slides](https://www.blackhat.com/docs/us-16/materials/us-16-Malone-Using-An-Expanded-Cyber-Kill-Chain-Model-To-Increase-Attack-Resiliency.pdf)
+https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-group-policy/
+* [Windows ISV Software Security Defenses - msdn](https://msdn.microsoft.com/en-us/library/bb430720.aspx)
+* [Common misconfigurations that lead to a breach - Justin Tharpe](https://www.youtube.com/watch?v=fI3mycr5cPg)
+* [Mitigate threats by using Windows 10 security features](https://docs.microsoft.com/en-us/windows/threat-protection/overview-of-threat-mitigations-in-windows-10)
+* [SANS Institute Security Consensus Operational Readiness Evaluation](https://www.sans.org/media/score/checklists/LinuxCheatsheet_2.pdf)
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ee791851(v=ws.11)
+* [Security Guide for Developers](https://github.com/FallibleInc/security-guide-for-developers)
 
+* [Windows Server guidance to protect against speculative execution side-channel vulnerabilities](https://support.microsoft.com/en-us/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution?t=1&cn=ZmxleGlibGVfcmVjc18y&refsrc=email&iid=149b9032665345ba890ba51d3bf0d519&fl=4&uid=150127534&nid=244%20281088008)
 
+* [SAMRi10 - Hardening SAM Remote Access in Windows 10/Server 2016](https://gallery.technet.microsoft.com/SAMRi10-Hardening-Remote-48d94b5b#content)
+	* "SAMRi10" tool is a short PowerShell (PS) script which alters remote SAM access default permissions on Windows 10 & Windows Server 2016. This hardening process prevents attackers from easily getting some valuable recon information to move laterally within their victim's network.
+
+* [simplewall](https://github.com/henrypp/simplewall)
+	* Simple tool to configure Windows Filtering Platform (WFP) which can configure network activity on your computer. The lightweight application is less than a megabyte, and it is compatible with Windows Vista and higher operating systems. You can download either the installer or portable version. For correct working, need administrator rights.
+* [Catching phishing before they catch you](https://blog.0day.rocks/catching-phishing-using-certstream-97177f0d499a)
+* [Certificate Transparency](https://www.certificate-transparency.org/)
+	* [What is Certificate Transparency?](https://www.certificate-transparency.org/what-is-ct)
+
+* Add User Awareness Training
 
 
 ### End Sort
 
 
+
+-----------------------
 ### <a name="s3"></a>Amazon S3
 * [Amazon S3 Bucket Public Access Considerations](https://aws.amazon.com/articles/5050)
 
@@ -84,17 +88,24 @@ https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-g
 
 -----------------
 ### <a name="hardening"></a>(General) Hardening
-* [ERNW Repository of Hardening Guides](https://github.com/ernw/hardening)
-* [OWASP Secure Configuration Guide](https://www.owasp.org/index.php/Secure_Configuration_Guide)
-* [PHP Secure Configuration Checker](https://github.com/sektioneins/pcc)
-* [Security + DevOps Automatic Server Hardening - dev-sec.io](http://dev-sec.io/)
-	* Open Source Automated Hardening Framework
-* [Mozilla's OpenSSH Configuration guide](https://wiki.mozilla.org/Security/Guidelines/OpenSSH)
-* [Harden windows IP Stack](https://www.reddit.com/r/netsec/comments/2sg80a/how_to_harden_windowsiis_ssltls_configuration/)
-* [Linux workstation security checklist](https://github.com/lfit/itpol/blob/master/linux-workstation-security.md)
-* [Secure Host Baseline](https://github.com/iadgov/Secure-Host-Baseline)
-	* Configuration guidance for implementing the Windows 10 and Windows Server 2016 DoD Secure Host Baseline settings. iadgov
-* [OS X Hardening: Securing a Large Global Mac Fleet - Greg Castle](https://www.usenix.org/conference/lisa13/os-x-hardening-securing-large-global-mac-fleet)
+* **101**
+* **Browsers**
+* **Guides**
+	* [ERNW Repository of Hardening Guides](https://github.com/ernw/hardening)
+	* [OWASP Secure Configuration Guide](https://www.owasp.org/index.php/Secure_Configuration_Guide)
+	* [PHP Secure Configuration Checker](https://github.com/sektioneins/pcc)
+	* [Security + DevOps Automatic Server Hardening - dev-sec.io](http://dev-sec.io/)
+		* Open Source Automated Hardening Framework
+* **SSH**
+	* [ssh-audit](https://github.com/arthepsy/ssh-audit)
+		* SSH server auditing (banner, key exchange, encryption, mac, compression, compatibility, security, etc)
+	* [Mozilla's OpenSSH Configuration guide](https://wiki.mozilla.org/Security/Guidelines/OpenSSH)
+* **Linux**
+	* [Linux workstation security checklist](https://github.com/lfit/itpol/blob/master/linux-workstation-security.md)
+* **OS X**
+	* [OS X Hardening: Securing a Large Global Mac Fleet - Greg Castle](https://www.usenix.org/conference/lisa13/os-x-hardening-securing-large-global-mac-fleet)
+
+
 
 
 
@@ -112,6 +123,11 @@ https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-g
 		* Prevents you from committing passwords and other sensitive information to a git repository.
 	* [keynuker](https://github.com/tleyden/keynuker)
 		* KeyNuker scans public activity across all Github users in your Github organization(s) and proactively deletes any AWS keys that are accidentally leaked. It gets the list of AWS keys to scan by directly connecting to the AWS API.
+	* [You're Leaking Trade Secrets - Defcon22 Michael Schrenk](https://www.youtube.com/watch?v=JTd5TL6_zgY)
+		* Networks don't need to be hacked for information to be compromised. This is particularly true for organizations that are trying to keep trade secrets. While we hear a lot about personal privacy, little is said in regard to organizational privacy. Organizations, in fact, leak information at a much greater rate than individuals, and usually do so with little fanfare. There are greater consequences for organizations when information is leaked because the secrets often fall into the hands of competitors. This talk uses a variety of real world examples to show how trade secrets are leaked online, and how organizational privacy is compromised by seemingly innocent use of The Internet.
+
+
+
 
 -----------------
 ### <a name="linux"></a>Linux/Unix
@@ -176,6 +192,8 @@ https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-g
 		* We’re going to look in detail at Microsoft Windows Firewall Hook drivers from Windows 2000, XP and 2003. This functionality was leveraged by the Derusbi family of malicious code to implement port-knocking like functionality. We’re going to discuss the problem we faced, the required reverse engineering to understand how these hooks could be identified and finally how the enumeration tool was developed.
 	* [Detecting DLL Hijackingon Windows](http://digital-forensics.sans.org/blog/2015/03/25/detecting-dll-hijacking-on-windows/)
 	* [The Effectiveness of Tools in Detecting the 'Maleficent Seven' Privileges in the Windows Environment](https://www.sans.org/reading-room/whitepapers/sysadmin/effectiveness-tools-detecting-039-maleficent-seven-039-privileges-windows-environment-38220)
+	* [Windows DACL Enum Project](https://github.com/nccgroup/WindowsDACLEnumProject)
+		* A collection of tools to enumerate and analyse Windows DACLs
 * **Account Credentials** 
 	* **General**
 		* [Blocking Remote Use of Local Accounts](https://blogs.technet.microsoft.com/secguide/2014/09/02/blocking-remote-use-of-local-accounts/)
@@ -185,6 +203,7 @@ https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-g
 			* Use Invoke-HoneyCreds to distribute fake cred throughout environment as "legit" service account and monitor for use of creds
 		* [The CredDefense Toolkit - BlackHills](https://www.blackhillsinfosec.com/the-creddefense-toolkit/)
 			* Credential and Red Teaming Defense for Windows Environments
+		* [KB2871997 and Wdigest – Part 1](https://blogs.technet.microsoft.com/kfalde/2014/11/01/kb2871997-and-wdigest-part-1/)
 	* **Credential/Device Guard**
 		* [Overview of Device Guard in Windows Server 2016](https://blogs.technet.microsoft.com/datacentersecurity/2016/09/20/overview-of-device-guard-in-windows-server-2016/)
 		* [Protect derived domain credentials with Windows Defender Credential Guard - docs.ms](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard)
@@ -201,6 +220,8 @@ https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-g
 		* [Kerberos Golden Ticket: Mitigating pass the ticket on Active Directory](http://cert.europa.eu/static/WhitePapers/CERT-EU-SWP_14_07_PassTheGolden_Ticket_v1_1.pdf)
 		* [Mitigating Kerberos Golden Tickets:](http://cert.europa.eu/static/WhitePapers/CERT-EU-SWP_14_07_PassTheGolden_Ticket_v1_1.pdf)
 		* [Protection from Kerberos Golden Ticket: Mitigating pass the ticket on Active Directory CERT-EU 2014](https://cert.europa.eu/static/WhitePapers/CERT-EU-SWP_14_07_PassTheGolden_Ticket_v1_1.pdf)
+		* [ Detecting Forged Kerberos Ticket (Golden Ticket & Silver Ticket) Use in Active Directory](https://adsecurity.org/?p=1515)
+		* [Using SCOM to Detect Golden Tickets](https://blogs.technet.microsoft.com/nathangau/2017/03/08/using-scom-to-detect-golden-tickets/)
 	* **Pass the Hash**
 		* [Mitigating Pass-the-Hash Attacks and other credential Theft-version2](http://download.microsoft.com/download/7/7/A/77ABC5BD-8320-41AF-863C-6ECFB10CB4B9/Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf)
 			* Official MS paper.
@@ -220,10 +241,12 @@ https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-g
 		* [Protecting Privileged Domain Accounts: Network Authentication In-Depth](https://digital-forensics.sans.org/blog/2012/09/18/protecting-privileged-domain-accounts-network-authentication-in-depth)
 		* [Active Directory: Real Defense for Domain Admins](https://www.irongeek.com/i.php?page=videos/derbycon4/t213-active-directory-real-defense-for-domain-admins-jason-lang)
 			* Did your AD recently get owned on a pentest? It’s always fun to see an unknown entry show up in your Domain Admins group (#fail). Come learn how to truly protect your organization’s IT crown jewels from some of the most popular AD attacks. If you’re stuck trying to figure out what to do with null sessions, pass the hash techniques, or protecting your Domain Admins, then you will want to be here.
-* **Application Whitelisting**
+* **AppLocker**
 	* [Script Rules in AppLocker - technet](https://technet.microsoft.com/en-us/library/ee460958.aspx)
 	* [DLL Rules in AppLocker](https://technet.microsoft.com/en-us/library/ee460947.aspx)
 	* [Application Whitelisting Using Microsoft AppLocker](https://www.iad.gov/iad/library/ia-guidance/tech-briefs/application-whitelisting-using-microsoft-applocker.cfm)
+	* [Harden Windows with AppLocker – based on Case study Part 1 - oddvar.moe](https://oddvar.moe/2017/12/13/harden-windows-with-applocker-based-on-case-study-part-1/)
+	* [Harden Windows with AppLocker – based on Case study part 2 - oddvar.moe](https://oddvar.moe/2017/12/21/harden-windows-with-applocker-based-on-case-study-part-2/)
 * **Auditing Account Passwords/Privileges**
 	* [Account lockout threshold - technet](https://technet.microsoft.com/en-us/library/hh994574.aspx)
 	* [Password Policy - technet](https://technet.microsoft.com/en-us/library/hh994572.aspx)
@@ -278,6 +301,12 @@ https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-g
 	* [Awesome Windows Domain Hardening](https://github.com/PaulSec/awesome-windows-domain-hardening)
 		*  A curated list of awesome Security Hardening techniques for Windows.
 	* [Threats and Countermeasures Guide: Security Settings in Windows Server 2008 R2 and Windows 7 - technet](https://technet.microsoft.com/en-us/library/hh125921.aspx)
+	* [Harden windows IP Stack](https://www.reddit.com/r/netsec/comments/2sg80a/how_to_harden_windowsiis_ssltls_configuration/)
+	* [Secure Host Baseline](https://github.com/iadgov/Secure-Host-Baseline)
+		* Configuration guidance for implementing the Windows 10 and Windows Server 2016 DoD Secure Host Baseline settings. iadgov
+	* [Second section good resource for hardening windows](http://labs.bitdefender.com/2014/11/do-your-bit-to-limit-cryptowall/)
+	* [Secure-Host-Baseline](https://github.com/iadgov/Secure-Host-Baseline)
+		* Configuration guidance for implementing the Windows 10 and Windows Server 2016 DoD Secure Host Baseline settings. iadgov
 * **Just Enough Administration (JEA)**
 	* [Just Enough Administration - docs.ms](https://docs.microsoft.com/en-us/powershell/jea/overview)
 	* [Just Enough Administration: Windows PowerShell security controls help protect enterprise data - msdn](https://msdn.microsoft.com/en-us/library/dn896648.aspx)
@@ -290,6 +319,9 @@ https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-g
 	* [Auditing and Reporting on JEA](https://docs.microsoft.com/en-us/powershell/jea/audit-and-report)
 	* [Just Enough Administration Samples and Resources](https://github.com/PowerShell/JEA)
 		* Just Enough Administration (JEA) is a PowerShell security technology that provides a role based access control platform for anything that can be managed with PowerShell. It enables authorized users to run specific commands in an elevated context on a remote machine, complete with full PowerShell transcription and logging. JEA is included in PowerShell version 5 and higher on Windows 10 and Windows Server 2016, and older OSes with the Windows Management Framework updates.
+* **LLMNR/NBNS**
+	* [Conveigh](https://github.com/Kevin-Robertson/Conveigh)
+		* Conveigh is a Windows PowerShell LLMNR/NBNS spoofer detection tool. LLMNR/NBNS requests sent by Conveigh are not legitimate requests to any enabled LLMNR/NBNS services. The requests will not result in name resolution in the event that a spoofer is present.
 * **Local Administrator Password Solution**
 	* [Microsoft security advisory: Local Administrator Password Solution](https://support.microsoft.com/en-us/help/3062591/microsoft-security-advisory-local-administrator-password-solution-laps)
 	* [Local Administrator Password Solution - technet](https://technet.microsoft.com/en-us/mt227395.aspx)
@@ -308,6 +340,7 @@ https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-g
 	* [PAW host buildout - blogs.technet](https://blogs.technet.microsoft.com/datacentersecurity/2017/10/17/paw-host-buildout/)
 	* [How to deploy a VM template for PAW - blogs.technet](https://blogs.technet.microsoft.com/datacentersecurity/2017/11/01/how-to-create-a-vm-template-for-paw/)
 * **SMB**
+	* [SMB Security Best Practices - US CERT](https://www.us-cert.gov/ncas/current-activity/2017/01/16/SMB-Security-Best-Practices)
 	* [SMB Packet Signing](https://technet.microsoft.com/en-us/library/cc180803.aspx)
 	* [Secure SMB Connections](http://techgenix.com/secure-smb-connections/)
 	* [Microsoft Security Advisory: Update to improve credentials protection and management: May 13, 2014](https://support.microsoft.com/en-us/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-a)
@@ -316,7 +349,10 @@ https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-g
 * **USB Detection**
 	* [BEAMGUN](https://github.com/JLospinoso/beamgun)
 		* A rogue-USB-device defeat program for Windows.
-* Visualization/Tracking/Reporting
+* **Tools**
+	* [Artillery](https://github.com/BinaryDefense/artillery)
+		* Artillery is a combination of a honeypot, monitoring tool, and alerting system. Eventually this will evolve into a hardening monitoring platform as well to detect insecure configurations from nix systems.
+* **Visualization/Tracking/Reporting**
 	* General
 		* [Userline](https://github.com/THIBER-ORG/userline)
 			* This tool automates the process of creating logon relations from MS Windows Security Events by showing a graphical relation among users domains, source and destination logons as well as session duration.

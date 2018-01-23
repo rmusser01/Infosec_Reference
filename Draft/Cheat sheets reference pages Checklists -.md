@@ -29,19 +29,6 @@
 http://www.amanhardikar.com/mindmaps.html
 http://www.amanhardikar.com/mindmaps/Practice.html
 
-* `[OWASP XSS (Cross Site Scripting) Prevention Cheat Sheet](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet)`
-* [OWASP Input Validation Cheat Sheet](https://www.owasp.org/index.php/Input_Validation_Cheat_Sheet)
-* [OWASP Authentication Cheat Sheet](https://www.owasp.org/index.php/Authentication_Cheat_Sheet)
-* [OWASP Forgot Password Cheat Sheet](https://www.owasp.org/index.php/Forgot_Password_Cheat_Sheet)
-* [OWASP Choosing and Using Security Questions Cheat Sheet](https://www.owasp.org/index.php/Choosing_and_Using_Security_Questions_Cheat_Sheet)
-* [OWASP Session Management Cheat Sheet](https://www.owasp.org/index.php/Session_Management_Cheat_Sheet)
-* [OWASP Transport Layer Protection Cheat Sheet](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
-* [OWASP Pinning Cheat Sheet](https://www.owasp.org/index.php/Pinning_Cheat_Sheet)
-* [OWASP Cryptographic Storage Cheat Sheet](https://www.owasp.org/index.php/Cryptographic_Storage_Cheat_Sheet)
-* [OWASP IOS Application Security Testing Cheat Sheet](https://www.owasp.org/index.php/IOS_Application_Security_Testing_Cheat_Sheet#Insecure_data_storage)
-
-* [XML DTD Cheat Sheet](https://web-in-security.blogspot.it/2016/03/xxe-cheat-sheet.html)
-
 #### end sort
 
 
@@ -77,7 +64,9 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 
 ----------
 ### <a name="ios">iOS Cheat Sheets</a>
+* **iOS Cheat Sheets**
 
+* [OWASP IOS Application Security Testing Cheat Sheet](https://www.owasp.org/index.php/IOS_Application_Security_Testing_Cheat_Sheet#Insecure_data_storage)
 
 
 ----------
@@ -165,6 +154,18 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 * [Securing Web Application Technologies Checklist](http://www.securingthehuman.org/developer/swat)
 * [SSRF Bible Cheatsheet](https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit)
 * [WebAppSec Testing Checklist](http://tuppad.com/blog/wp-content/uploads/2012/03/WebApp_Sec_Testing_Checklist.pdf)
+* [HTML5 Security Cheatsheet](https://github.com/jshaw87/Cheatsheets)
+* [XML DTD Cheat Sheet](https://web-in-security.blogspot.it/2016/03/xxe-cheat-sheet.html)
+* [OWASP XSS (Cross Site Scripting) Prevention Cheat Sheet](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)\_Prevention_Cheat_Sheet)
+* [OWASP Input Validation Cheat Sheet](https://www.owasp.org/index.php/Input_Validation_Cheat_Sheet)
+* [OWASP Authentication Cheat Sheet](https://www.owasp.org/index.php/Authentication_Cheat_Sheet)
+* [OWASP Forgot Password Cheat Sheet](https://www.owasp.org/index.php/Forgot_Password_Cheat_Sheet)
+* [OWASP Choosing and Using Security Questions Cheat Sheet](https://www.owasp.org/index.php/Choosing_and_Using_Security_Questions_Cheat_Sheet)
+* [OWASP Session Management Cheat Sheet](https://www.owasp.org/index.php/Session_Management_Cheat_Sheet)
+* [OWASP Transport Layer Protection Cheat Sheet](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
+* [OWASP Pinning Cheat Sheet](https://www.owasp.org/index.php/Pinning_Cheat_Sheet)
+* [OWASP Cryptographic Storage Cheat Sheet](https://www.owasp.org/index.php/Cryptographic_Storage_Cheat_Sheet)
+
 
 ----------
 ### Wireless Cheat Sheet

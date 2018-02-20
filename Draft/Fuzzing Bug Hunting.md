@@ -35,6 +35,11 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 * [Fuzzing 101 (Part 2)](https://vimeo.com/5237484)
 * [0-day streams: pdfcrack](https://www.youtube.com/watch?v=8VLNPIIgKbQ&app=desktop)
 
+* [pcrappyfuzzer](https://github.com/blazeinfosec/pcrappyfuzzer)
+	* Script to perform quick 'n dirty fuzzing of PCAPs with radamsa and Scapy.
+
+
+
 
 #### end sort
 
@@ -118,6 +123,8 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 		* [Fuzzing Object s d’ART Digging Into the New Android L Runtime Internals](http://census-labs.com/media/Fuzzing_Objects_d_ART_hitbsecconf2015ams_WP.pdf)
 	* **Tools**
 		* [MFFA - Media Fuzzing Framework for Android](https://github.com/fuzzing/MFFA)
+		* [android-afl](https://github.com/ele7enxxh/android-afl)
+			* Fuzzing Android program with american fuzzy lop (AFL)
 * **Browser Bug Hunting/Fuzzing**
 	* [Browser Bug Hunting and Mobile](http://slides.com/revskills/fzbrowsers#/)
 	* [Grinder - Fuzzer](https://github.com/stephenfewer/grinder)
@@ -125,12 +132,21 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 	* [browserfuzz](https://bitbucket.org/blackaura/browserfuzz)
 		* A very simple browser fuzzer based on tornado.
 	* [Browser bug hunting - Memoirs of a last man standing, Atte Kettunen](https://vimeo.com/109380793)
+	* [morph](https://github.com/walkerfuz/morph)
+		* an open source browser fuzzing framework for fun.
 * **C/C++ Fuzzing**
 	* [ansvif](https://oxagast.github.io/ansvif/) - An advanced cross platform fuzzing framework designed to find vulnerabilities in C/C++ code.
 	* [libFuzzer](http://libfuzzer.info) - In-process, coverage-guided, evolutionary fuzzing engine for targets written in C/C++.
 * **Cellular Related Technologies Bug Hunting/Fuzzing**
 	* [Binary SMS - The old backdoor to your new thing](https://www.contextis.com/resources/blog/binary-sms-old-backdoor-your-new-thing/)
 	* [Fuzzing the Phone in your Phone](https://www.blackhat.com/presentations/bh-usa-09/MILLER/BHUSA09-Miller-FuzzingPhone-PAPER.pdf)
+* **Cisco**
+	* [asadbg](https://github.com/nccgroup/asadbg)
+		* asadbg is a framework of tools to aid in automating live debugging of Cisco ASA devices, as well as automating interaction with the Cisco CLI over serial/ssh to quickly perform repetitive tasks.
+	* [asatools - NCCGroup](https://github.com/nccgroup/asatools)
+		* Main repository to pull all Cisco ASA-related projects.
+	* [asafw](https://github.com/nccgroup/asafw)
+		* Set of scripts to deal with Cisco ASA firmware [pack/unpack etc.]
 * **File Formats Bug Hunting/Fuzzing**
 	* [Practical File Format Fuzzing](http://www.irongeek.com/i.php?page=videos/derbycon3/3301-practical-file-format-fuzzing-jared-allar)
 		* File format fuzzing has been very fruitful at discovering exploitable vulnerabilities. Adversaries take advantage of these vulnerabilities to conduct spear-phishing attacks. This talk will cover the basics of file format fuzzing and show you how to use CERT’s fuzzing frameworks to discovery vulnerabilities in file parsers.

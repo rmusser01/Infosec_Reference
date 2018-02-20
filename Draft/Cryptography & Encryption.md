@@ -11,6 +11,7 @@
 To Do:
 * Add Books
 * Add educational stuff
+* Robot Attack Details
 
 * [Toward Robust Hidden Volumes Using Write-Only Oblivious RAM](https://eprint.iacr.org/2014/344.pdf) 
     * With sensitive data being increasingly stored on mobile devices and laptops, hard disk encryption is more important than ever. In partic- ular, being able to plausibly deny that a hard disk contains certain information is a very useful and interesting research goal. However, it has been known for some time that existing “hidden volume” so- lutions, like TrueCrypt, fail in the face of an adversary who is able to observe the contents of a disk on multiple, separate occasions. In this work, we explore more robust constructions for hidden vol- umes and present HIVE, which is resistant to more powerful ad- versaries with multiple-snapshot capabilities. In pursuit of this, we propose the first security definitions for hidden volumes, and prove HIVE secure under these definitions. At the core of HIVE, we de- sign a new write-only Oblivious RAM. We show that, when only hiding writes, it is possible to achieve ORAM with optimal O (1) communication complexity and only poly-logarithmic user mem- ory.  This is a significant improvement over existing work and an independently interesting result.  We go on to show that our write- only ORAM is specially equipped to provide hidden volume func- tionality with low overhead and significantly increased security. Fi- nally, we implement HIVE as a Linux kernel block device to show both its practicality and usefulness on existing platforms.
@@ -60,11 +61,9 @@ From: https://www.reddit.com/r/securityengineering/comments/7o2uzy/a_collection_
     2018-01-04 - "Meltdown" by Lipp et al. https://meltdownattack.com/meltdown.pdf
 ```
 
-
-
 * Monero
 * Zcash
-
+https://a16z.com/2018/02/10/crypto-readings-resources/
 * crypto101
 https://conversations.im/xeps/multi-end.html
 
@@ -86,6 +85,12 @@ https://conversations.im/xeps/multi-end.html
     * [Top 10 Developer Crypto Mistakes](https://littlemaninmyhead.wordpress.com/2017/04/22/top-10-developer-crypto-mistakes/amp/)
     * [Why does cryptographic software fail? A case study and open problems](http://pdos.csail.mit.edu/papers/cryptobugs:apsys14.pdf)
         * Abstract: Mistakes in cryptographic software implementations often undermine the strong security guarantees offered by cryptography. This paper presents a systematic study of cryptographic vulnerabilities in practice, an examination of state-of-the-art techniques to prevent such vulnerabilities, and a discussion of open problems and possible future research directions. Our study covers 269 cryptographic vulnerabilities reported in the CVE database from January 2011 to May 2014. The results show that just 17% of the bugs are in cryptographic libraries (which often have devastating consequences), and the remaining 83% are misuses of cryptographic libraries by individual applications. We observe that preventing bugs in different parts of a system requires different techniques, and that no effective techniques exist to deal with certain classes of mistakes, such as weak key generation.
+    * [Deadpool](https://github.com/SideChannelMarvels/Deadpool)
+        * Repository of various public white-box cryptographic implementations and their practical attacks.
+    * [RSA-and-LLL-attacks](https://github.com/mimoo/RSA-and-LLL-attacks)
+        * This repo host implementations and explanations of different RSA attacks using lattice reduction techniques (in particular LLL).\
+    * [Hunting For Vulnerabilities In Signal - Markus Vervier - HITB 2017 AMS](https://www.youtube.com/watch?v=2n9HmllVftA)
+        * Signal is the most trusted secure messaging and secure voice application, recommended by Edward Snowden and the Grugq. And indeed Signal uses strong cryptography, relies on a solid system architecture, and you’ve never heard of any vulnerability in its code base. That’s what this talk is about: hunting for vulnerabilities in Signal. We will present vulnerabilities found in the Signal Android client, in the underlying Java libsignal library, and in example usage of the C libsignal library. Our demos will show how these can be used to crash Signal remotely, to bypass the MAC authentication for certain attached files, and to trigger memory corruption bugs. Combined with vulnerabilities in the Android system it is even possible to remotely brick certain Android devices. We will demonstrate how to initiate a permanent boot loop via a single Signal message. We will also describe the general architecture of Signal, its attack surface, the tools you can use to analyze it, and the general threat model for secure mobile communication apps.
 * **Books**
     * Cryptography Engineering
     * Applied Cryptography
@@ -118,9 +123,6 @@ https://conversations.im/xeps/multi-end.html
     * [Applied-Crypto-Hardening](https://github.com/BetterCrypto/Applied-Crypto-Hardening)
         * Best Current Practices regarding secure online communication and configuration of services using cryptography. https://bettercrypto.org
     * [cr.yp.to blog](http://blog.cr.yp.to/index.html)
-* **Testing/Auditing**
-    * [Hunting For Vulnerabilities In Signal - Markus Vervier - HITB 2017 AMS](https://www.youtube.com/watch?v=2n9HmllVftA)
-        * Signal is the most trusted secure messaging and secure voice application, recommended by Edward Snowden and the Grugq. And indeed Signal uses strong cryptography, relies on a solid system architecture, and you’ve never heard of any vulnerability in its code base. That’s what this talk is about: hunting for vulnerabilities in Signal. We will present vulnerabilities found in the Signal Android client, in the underlying Java libsignal library, and in example usage of the C libsignal library. Our demos will show how these can be used to crash Signal remotely, to bypass the MAC authentication for certain attached files, and to trigger memory corruption bugs. Combined with vulnerabilities in the Android system it is even possible to remotely brick certain Android devices. We will demonstrate how to initiate a permanent boot loop via a single Signal message. We will also describe the general architecture of Signal, its attack surface, the tools you can use to analyze it, and the general threat model for secure mobile communication apps.
 * **Miscellaneous**
     * [SHA2017 Conference Videos](https://www.youtube.com/channel/UCHmPMdU0O9P_W6I1hNyvBIQ/videos)
     * **SSH**
@@ -176,7 +178,9 @@ https://conversations.im/xeps/multi-end.html
 * **Padding Oracle**
     * [Automated Padding Oracle Attacks with PadBuster](https://blog.gdssecurity.com/labs/2010/9/14/automated-padding-oracle-attacks-with-padbuster.html)
     * [PadBuster v0.3 and the .NET Padding Oracle Attack](https://blog.gdssecurity.com/labs/2010/10/4/padbuster-v03-and-the-net-padding-oracle-attack.html)
-
+* **ROBOT Attack**
+    * [robot-detect](https://github.com/robotattackorg/robot-detect)
+        * Proof of concept attack and detection for ROBOT (Return Of Bleichenbacher's Oracle Threat).
 
 
 
@@ -210,6 +214,8 @@ https://conversations.im/xeps/multi-end.html
             * Project HashClash is a Framework for MD5 & SHA-1 Differential Path Construction and Chosen-Prefix Collisions for MD5. It's goal is to further understanding and study of the weaknesses of MD5 and SHA-1. 
         * [CPC-MD5](https://github.com/dingelish/cpc-md5)
             * This project is forked from Marc Steven's Hashclash project hashclash and follows GPL.
+        * [SHA1Collider](https://github.com/nneonneo/sha1collider)
+            * Build two PDFs that have different content but identical SHA1 sums.
     * **Hash Pump**
         * [HashPump](https://github.com/bwall/HashPump)
             * A tool to exploit the hash length extension attack in various hashing algorithms. Currently supported algorithms: MD5, SHA1, SHA256, SHA512.
@@ -268,6 +274,8 @@ https://conversations.im/xeps/multi-end.html
     * [Price Manipulation in the Bitcoin Ecosystem](https://www.sciencedirect.com/science/article/pii/S0304393217301666?via%3Dihub)
     * [Meet ‘Spoofy’. How a Single entity dominates the price of Bitcoin.](https://hackernoon.com/meet-spoofy-how-a-single-entity-dominates-the-price-of-bitcoin-39c711d28eb4)
     * [The Willy Report: proof of massive fraudulent trading activity at Mt. Gox, and how it has affected the price of Bitcoin](https://willyreport.wordpress.com/2014/05/25/the-willy-report-proof-of-massive-fraudulent-trading-activity-at-mt-gox-and-how-it-has-affected-the-price-of-bitcoin/)
+    * [Coinbase Insider Trading: Litecoin Edition](https://medium.com/@bitfinexed/coinbase-insider-trading-litecoin-edition-be64ead3facc)
 * **Talks/Presentations**
     * [Deanonymisation of Clients in Bitcoin P2P Network](http://orbilu.uni.lu/bitstream/10993/18679/1/Ccsfp614s-biryukovATS.pdf)
-        * We present an effcient method to deanonymize Bitcoin users, which allows to link user pseudonyms to the IP addresses where the transactions are generated. Our techniques work for the most common and the most challenging scenario when users are behind NATs or rewalls of their ISPs. They allow to link transactions of a user behind a NAT and to distinguish connections and transactions of different users behind the same NAT. We also show that a natural countermeasure of using Tor or other anonymity services can be cut-o by abusing anti-DoS countermeasures of the Bitcoin network. Our attacks require only a few machines and have been experimentally verifed. The estimated success rate is between 11% and 60% depending on how stealthy an attacker wants to be. We propose several countermeasures to mitigate these new attacks.
+        * We present an effcient method to deanonymize Bitcoin users, which allows to link user pseudonyms to the IP addresses where the transactions are generated. Our techniques work for the most common and the most challenging scenario when users are behind NATs or firewalls of their ISPs. They allow to link transactions of a user behind a NAT and to distinguish connections and transactions of different users behind the same NAT. We also show that a natural countermeasure of using Tor or other anonymity services can be cut-out by abusing anti-DoS countermeasures of the Bitcoin network. Our attacks require only a few machines and have been experimentally verifed. The estimated success rate is between 11% and 60% depending on how stealthy an attacker wants to be. We propose several countermeasures to mitigate these new attacks.
+

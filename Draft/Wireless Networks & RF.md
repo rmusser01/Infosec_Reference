@@ -56,16 +56,12 @@ Cellular Networks in Use:
 * [RFID Hacking with The Proxmark 3](https://blog.kchung.co/rfid-hacking-with-the-proxmark-3/)
 * [Swiss Army Knife for RFID](https://www.cs.bham.ac.uk/~garciaf/publications/Tutorial_Proxmark_the_Swiss_Army_Knife_for_RFID_Security_Research-RFIDSec12.pdf)
 
+* [hdfm](https://github.com/KYDronePilot/hdfm)
+	* hdfm displays weather and traffic maps received from iHeartRadio HD radio stations. It relies on nrsc5 to decode and dump the radio station data for it to process and display.
+* [nexmon](https://github.com/seemoo-lab/nexmon)
+	* Nexmon is our C-based firmware patching framework for Broadcom/Cypress WiFi chips that enables you to write your own firmware patches, for example, to enable monitor mode with radiotap headers and frame injection.
 
-
-
-EAP
-* [eapmd5pass](http://www.willhackforsushi.com/?page_id=67) - An implementation of an offline dictionary attack against the EAP-MD5 protocol. This utility can be used to audit passwords used for EAP-MD5 networks from wireless packet captures, or by manually specifying the challenge, response and associated authentication information.
-
-RADIUS 
-* [apbleed](https://github.com/vanhoefm/apbleed/) - Allows you to use existing heartbleed tools to test the RADIUS server
-* [Authentication protocols that DO support hashed passwords (FreeRADIUS mailing list)](http://freeradius-users.freeradius.narkive.com/ixOQ7yiK/authentication-protocols-that-do-support-hashed-passwords)
-
+* [Dissecting Industrial Wireless Implementations - DEF CON 25](https://github.com/voteblake/DIWI)
 
 ##### End Sort
 
@@ -158,6 +154,10 @@ RADIUS
 		* A Node.js module for implementing BLE (Bluetooth Low Energy) peripherals.
 	* [crackle](https://github.com/mikeryan/crackle/)
 		* crackle cracks BLE Encryption (AKA Bluetooth Smart). crackle exploits a flaw in the BLE pairing process that allows an attacker to guess or very quickly brute force the TK (Temporary Key). With the TK and other data collected from the pairing process, the STK (Short Term Key) and later the LTK (Long Term Key) can be collected. With the STK and LTK, all communications between the master and the slave can be decrypted.
+	* [bluepot](https://github.com/andrewmichaelsmith/bluepot)
+		* Bluepot is a Bluetooth Honeypot written in Java, it runs on Linux.
+	* [BlueHydra](https://github.com/pwnieexpress/blue_hydra)
+		* BlueHydra is a Bluetooth device discovery service built on top of the bluez library. BlueHydra makes use of ubertooth where available and attempts to track both classic and low energy (LE) bluetooth devices over time.
 * **Bluetooth Low Energy**
 	* **101**
 	* **Articles/Presentations/Talks/Writeups**
@@ -188,6 +188,8 @@ RADIUS
 * **Tools**
 	* [SiGploit](https://github.com/SigPloiter/SigPloit)
 		* Telecom Signaling Exploitation Framework - SS7, GTP, Diameter & SIP. SiGploit a signaling security testing framework dedicated to Telecom Security professionals and reasearchers to pentest and exploit vulnerabilites in the signaling protocols used in mobile operators regardless of the geneartion being in use. SiGploit aims to cover all used protocols used in the operators interconnects SS7, GTP (3G), Diameter (4G) or even SIP for IMS and VoLTE infrastructures used in the access layer and SS7 message encapsulation into SIP-T. Recommendations for each vulnerability will be provided to guide the tester and the operator the steps that should be done to enhance their security posture
+	* [LTE-Cell-Scanner](https://github.com/Evrytania/LTE-Cell-Scanner)
+		* This is a collection of tools to locate and track LTE basestation cells using very low performance RF front ends. For example, these tools work with RTL2832 based dongles (E4000, R820T, etc.) which have a noise figure of 20dB, only 8 bits in the A/D, and a crystal with a frequency error of about 100 ppm.
 * **SIM Cards**
 	* **101**
 	* **Articles/Presentations/Talks/Writeups**
@@ -298,27 +300,26 @@ RADIUS
 		* In this article, we proved the capabilities of an inexpensive wireless adapter and a flexible virtualized wireless attack image by breaking into a WEP protected test network.  For just $16 
 	* [WPA/WPA2 Dictionaries](https://wifi0wn.wordpress.com/wepwpawpa2-cracking-dictionary/)
 * **Tools**
-	* [wifi-arsenal](https://github.com/0x90/wifi-arsenal/)
-	* [Aircrack](https://www.aircrack-ng.org/doku.php?id=links)
-	* [SniffAir An Open Source Framework for Wireless Security Assessments Matthew Eidelberg - DerbyCon7](https://www.youtube.com/watch?v=QxVkr-3RK94&app=desktop)
+	* **General**
+		* [Aircrack](https://www.aircrack-ng.org/doku.php?id=links)
+		* [wifi-arsenal](https://github.com/0x90/wifi-arsenal/)
+	* **D/DOS**
+		* [wifijammer](https://github.com/DanMcInerney/wifijammer)
+			* Continuously jam all wifi clients and access points within range. The effectiveness of this script is constrained by your wireless card. Alfa cards seem to effectively jam within about a block radius with heavy access point saturation. Granularity is given in the options for more effective targeting.
+		* [ESP8266 deauther](https://github.com/spacehuhn/esp8266_deauther)
+			* Deauthentication attack and other exploits using an ESP8266!
+	* **Logging/Monitoring**
+		* [SniffAir An Open Source Framework for Wireless Security Assessments Matthew Eidelberg - DerbyCon7](https://www.youtube.com/watch?v=QxVkr-3RK94&app=desktop)
 		* [SniffAir](https://github.com/Tylous/SniffAir)
-	* [Karma](http://www.theta44.org/karma/)
-	* [pixiewps](https://github.com/wiire/pixiewps)
-		* Pixiewps is a tool written in C used to bruteforce offline the WPS pin exploiting the low or non-existing entropy of some APs (pixie dust attack). It is meant for educational purposes only. All credits for the research go to Dominique Bongard.
-	* [eaphammer](https://github.com/s0lst1c3/eaphammer)
-		* EAPHammer is a toolkit for performing targeted evil twin attacks against WPA2-Enterprise networks. It is designed to be used in full scope wireless assessments and red team engagements. As such, focus is placed on providing an easy-to-use interface that can be leveraged to execute powerful wireless attacks with minimal manual configuration. To illustrate how fast this tool is, here's an example of how to setup and execute a credential stealing evil twin attack against a WPA2-TTLS network in just two commands:
-	* [ESP8266 deauther](https://github.com/spacehuhn/esp8266_deauther)
-		* Deauthentication attack and other exploits using an ESP8266!
-	* [probemon](https://github.com/nikharris0/probemon)
-		* A simple command line tool for monitoring and logging 802.11 probe frames
-	* [Infernal-Twin](https://github.com/entropy1337/infernal-twin)
-		* This is the tool created to automate Evil Twin attack and capturing public and guest credentials of Access Point
-	* [crEAP](https://github.com/Snizz/crEAP)
-		* Python script to identify wireless networks EAP types and harvest users 
-	* [EAPEAK](https://github.com/securestate/eapeak)
-		* EAPeak is a suite of open source tools to facilitate auditing of wireless networks that utilize the Extensible Authentication Protocol framework for authentication. It is meant to give useful information relating to the security of these networks for pentesters to use while searching for vulnerabilities. 
-	* [Snifflab: An environment for testing mobile devices](https://openeffect.ca/snifflab-an-environment-for-testing-mobile-devices/)
-		* Specifically, we have created a WiFi hotspot that is continually collecting all the packets sent over it. All connected clients’ HTTPS communications are subjected to a “Man-in-the-middle” attack, whereby they can later be decrypted for analysis.
+		* [probemon](https://github.com/nikharris0/probemon)
+			* A simple command line tool for monitoring and logging 802.11 probe frames
+		* [Snifflab: An environment for testing mobile devices](https://openeffect.ca/snifflab-an-environment-for-testing-mobile-devices/)
+			* Specifically, we have created a WiFi hotspot that is continually collecting all the packets sent over it. All connected clients’ HTTPS communications are subjected to a “Man-in-the-middle” attack, whereby they can later be decrypted for analysis.
+		* [Nzyme](https://github.com/lennartkoopmann/nzyme)
+			* Nzyme collects 802.11 management frames directly from the air and sends them to a Graylog (Open Source log management) setup for WiFi IDS, monitoring, and incident response. It only needs a JVM and a WiFi adapter that supports monitor mode.
+	* **WPS**
+		* [pixiewps](https://github.com/wiire/pixiewps)
+			* Pixiewps is a tool written in C used to bruteforce offline the WPS pin exploiting the low or non-existing entropy of some APs (pixie dust attack). It is meant for educational purposes only. All credits for the research go to Dominique Bongard.
 * **Cracking Passwords**
 		* [Wireless Password Cracking With Cloud Clusters](http://www.commonexploits.com/wireless-password-cracking-with-cloud-clusters/)
 * **Eduroam**
@@ -334,28 +335,43 @@ RADIUS
 		* [eduroam FreeRADIUS Docker](https://github.com/spgreen/eduroam-freeradius-docker)
 * **EAP**
 	* [EAP-PWD: Extensible Authentication Protocol (EAP) Authentication Using Only a Password - RFC 5931](https://tools.ietf.org/html/rfc5931)
+	* [eaphammer](https://github.com/s0lst1c3/eaphammer)
+		* EAPHammer is a toolkit for performing targeted evil twin attacks against WPA2-Enterprise networks. It is designed to be used in full scope wireless assessments and red team engagements. As such, focus is placed on providing an easy-to-use interface that can be leveraged to execute powerful wireless attacks with minimal manual configuration. To illustrate how fast this tool is, here's an example of how to setup and execute a credential stealing evil twin attack against a WPA2-TTLS network in just two commands:
+	* [crEAP](https://github.com/Snizz/crEAP)
+		* Python script to identify wireless networks EAP types and harvest users 
+	* [EAPEAK](https://github.com/securestate/eapeak)
+		* EAPeak is a suite of open source tools to facilitate auditing of wireless networks that utilize the Extensible Authentication Protocol framework for authentication. It is meant to give useful information relating to the security of these networks for pentesters to use while searching for vulnerabilities. 
+	* [eapmd5pass](http://www.willhackforsushi.com/?page_id=67)
+		* An implementation of an offline dictionary attack against the EAP-MD5 protocol. This utility can be used to audit passwords used for EAP-MD5 networks from wireless packet captures, or by manually specifying the challenge, response and associated authentication information.
 * **Evil/Infernal Twin**
 	* [Infernal twin](https://n0where.net/automated-evil-twin-attack/)
 	* [Evil Twin vulnerabilities in Wi-Fi networks (Master Thesis, 2016)](http://www.cs.ru.nl/bachelorscripties/2016/Matthias_Ghering___4395727___Evil_Twin_Vulnerabilities_in_Wi-Fi_Networks.pdf)
 	* [Evil Twin Vulnerabilities in Wi-Fi Networks (Bachelor Thesis, 2016)](http://www.cs.ru.nl/bachelorscripties/2016/Matthias_Ghering___4395727___Evil_Twin_Vulnerabilities_in_Wi-Fi_Networks.pdf)
+	* [Infernal-Twin](https://github.com/entropy1337/infernal-twin)
+		* This is the tool created to automate Evil Twin attack and capturing public and guest credentials of Access Point
 * **Exploit Dev**
 	* [Exploiting 802.11 Wireless Driver Vulnerabilities on Windows](http://uninformed.org/?v=all&a=29&t=sumry)
 		* This paper describes the process of identifying and exploiting 802.11 wireless device driver vulnerabilities on Windows. This process is described in terms of two steps: pre-exploitation and exploitation. The pre-exploitation step provides a basic introduction to the 802.11 protocol along with a description of the tools and libraries the authors used to create a basic 802.11 protocol fuzzer. The exploitation step describes the common elements of an 802.11 wireless device driver exploit. These elements include things like the underlying payload architecture that is used when executing arbitrary code in kernel-mode on Windows, how this payload architecture has been integrated into the 3.0 version of the Metasploit Framework, and the interface that the Metasploit Framework exposes to make developing 802.11 wireless device driver exploits easy. Finally, three separate real world wireless device driver vulnerabilities are used as case studies to illustrate the application of this process. It is hoped that the description and illustration of this process can be used to show that kernel-mode vulnerabilities can be just as dangerous and just as easy to exploit as user-mode vulnerabilities. In so doing, awareness of the need for more robust kernel-mode exploit prevention technology can be raised. 
 * **KARMA**
-		* [Attacking automatic Wireless network selection (2005)](https://www.trailofbits.com/resources/attacking_automatic_network_selection_paper.pdf)
-		* [Why do Wi-Fi Clientes disclose their PNL for Free Still Today? (2015)](http://blog.dinosec.com/2015/02/why-do-wi-fi-clients-disclose-their-pnl.html)
-		* [Instant KARMA might still gets you (2015)](https://insights.sei.cmu.edu/cert/2015/08/instant-karma-might-still-get-you.html)
+	* [Karma](http://www.theta44.org/karma/)
+	* [Attacking automatic Wireless network selection (2005)](https://www.trailofbits.com/resources/attacking_automatic_network_selection_paper.pdf)
+	* [Why do Wi-Fi Clientes disclose their PNL for Free Still Today? (2015)](http://blog.dinosec.com/2015/02/why-do-wi-fi-clients-disclose-their-pnl.html)
+	* [Instant KARMA might still gets you (2015)](https://insights.sei.cmu.edu/cert/2015/08/instant-karma-might-still-get-you.html)
+* **RADIUS**
+	* [apbleed](https://github.com/vanhoefm/apbleed/)
+		* Allows you to use existing heartbleed tools to test the RADIUS server
+	* [Authentication protocols that DO support hashed passwords (FreeRADIUS mailing list)](http://freeradius-users.freeradius.narkive.com/ixOQ7yiK/authentication-protocols-that-do-support-hashed-passwords)
 * **TKIP Related**
-		* [Practical attacks against WEP and WPA (2008)](http://dl.aircrack-ng.org/breakingwepandwpa.pdf)
-		* [An Improved Attack on TKIP (2009)  ](http://link.springer.com/chapter/10.1007/978-3-642-04766-4_9#page-1)
-		* [Cryptanalysis of IEEE 802.11i TKIP](http://download.aircrack-ng.org/wiki-files/doc/tkip_master.pdf)
-		* [Enhanced TKIP Michael Attacks (2010)](http://download.aircrack-ng.org/wiki-files/doc/enhanced_tkip_michael.pdf)
-		* [Plaintext Recovery Attacks Against WPA/TKIP (2013)](https://eprint.iacr.org/2013/748.pdf)
-		* [Practical verification of WPA-TKIP vulnerabilities (2013)](https://lirias.kuleuven.be/bitstream/123456789/401042/1/wpatkip.pdf)
-		* [On the security of RC4 in TLS (USENIX, 2013)](http://www.isg.rhul.ac.uk/tls/RC4biases.pdf)
-		* [All Your Biases Belong to Us: Breaking RC4 in WPA-TKIP and TLS (USENIX, 2015)](https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-vanhoef.pdf)
-		* [A Security Analysis of the WPA-TKIP and TLS Security Protocols (PhD Thesis, 2016)](https://lirias.kuleuven.be/bitstream/123456789/543228/1/thesis.pdf)
-		* [Predicting and Abusing WPA2/802.11 Group Keys (2016)](http://papers.mathyvanhoef.com/33c3-broadkey-slides.pdf)
+	* [Practical attacks against WEP and WPA (2008)](http://dl.aircrack-ng.org/breakingwepandwpa.pdf)
+	* [An Improved Attack on TKIP (2009)  ](http://link.springer.com/chapter/10.1007/978-3-642-04766-4_9#page-1)
+	* [Cryptanalysis of IEEE 802.11i TKIP](http://download.aircrack-ng.org/wiki-files/doc/tkip_master.pdf)
+	* [Enhanced TKIP Michael Attacks (2010)](http://download.aircrack-ng.org/wiki-files/doc/enhanced_tkip_michael.pdf)
+	* [Plaintext Recovery Attacks Against WPA/TKIP (2013)](https://eprint.iacr.org/2013/748.pdf)
+	* [Practical verification of WPA-TKIP vulnerabilities (2013)](https://lirias.kuleuven.be/bitstream/123456789/401042/1/wpatkip.pdf)
+	* [On the security of RC4 in TLS (USENIX, 2013)](http://www.isg.rhul.ac.uk/tls/RC4biases.pdf)
+	* [All Your Biases Belong to Us: Breaking RC4 in WPA-TKIP and TLS (USENIX, 2015)](https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-vanhoef.pdf)
+	* [A Security Analysis of the WPA-TKIP and TLS Security Protocols (PhD Thesis, 2016)](https://lirias.kuleuven.be/bitstream/123456789/543228/1/thesis.pdf)
+	* [Predicting and Abusing WPA2/802.11 Group Keys (2016)](http://papers.mathyvanhoef.com/33c3-broadkey-slides.pdf)
 * **WEP**
 	* [WPA Migration Mode:  WEP is back to haunt you...(slides)](http://dl.aircrack-ng.org/wiki-files/doc/technique_papers/Meiners,_Sor_-_WPA_Migration_Mode_WEP_is_back_to_haunt_you_-_slides.pdf)
 		* Migration mode, from Cisco, allows both WEP and WPA clients on the same AP. Besides the fact that the WEP key can be cracked easily, they also bypass the additional security settings offered by Cisco. 
@@ -363,6 +379,8 @@ RADIUS
 	* [Predicting, Decrypting, and Abusing WPA2/802.11 Group Keys Mathy Vanhoef and Frank Piessens,  Katholieke Universiteit Leuven](https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_vanhoef.pdf) 
 	* [Wifi Tracking: Collecting the (probe) Breadcrumbs - David Switzer](https://www.youtube.com/watch?v=HzQHWUM8cNo)
 		* Wifi probes have provided giggles via Karma and Wifi Pineapples for years, but is there more fun to be had? Like going from sitting next to someone on a bus, to knowing where they live and hang out? Why try to MITM someone’s wireless device in an enterprise environment where they may notice — when getting them at their favorite burger joint is much easier. In this talk we will review ways of collecting and analyzing probes. We’ll use the resulting data to figure out where people live, their daily habits, and discuss uses (some nice, some not so nice) for this information. We’ll also dicuss how to make yourself a little less easy to track using these methods. Stingrays are price prohibitive, but for just tracking people’s movements.. this is cheap and easy.
+	* [Predicting, Decrypting, and Abusing WPA2/802.11 Group Keys](https://github.com/vanhoefm/broadkey)
+		* Attacks against weak 802.11 Random Number Generators
 * **WPS**
 	* **101**
 		* [Brute forcing Wi-Fi Protected Setup - Stefan Viehböck](https://sviehb.files.wordpress.com/2011/12/viehboeck_wps.pdf)
@@ -406,7 +424,8 @@ RADIUS
 			* Text file on a MicroSD card; Print out to LCD; Bluetooth Low Energy Arduino serial connection 
 		* Each of these options are supported in code, but can be ignored on the PCB. The PCB itself has been designed to use a pluggable module for each of these options, making it easy to ignore, install, or change out which ones you find useful.
 	* [RFIDiggity - Pentester Guide to Hacking HF/NFC and UHF RFID - Defcon23](https://www.youtube.com/watch?v=7o38hyQWw6g)
-
+	* [Wiegotcha: Long Range RFID Thieving](https://github.com/lixmk/Wiegotcha)
+		* Wiegotcha is the next evolution of Long Range RFID badge capturing. Based on previous work by Fran Brown and Bishop Fox (Tastic RFID Thief), Wiegotcha uses a Raspberry Pi in place of an Arduino for the added capabilities and ease of customization. One of the immediate benefits of using an RPi is quick and easy wireless communication with the badge reader.
 
 
 
@@ -468,7 +487,10 @@ RADIUS
 	* [Scapy-Radio](https://bitbucket.org/cybertools/scapy-radio/src)
 		* This tool is a modified version of scapy that aims at providing an quick and efficient pentest tool with RF capabilities. A modified version of scapy that can leverage GNU Radio to handle a SDR card. 
 	* [Universal Radio Hacker](https://github.com/jopohl/urh)
-
+	* [RTLSDR Scanner](https://github.com/EarToEarOak/RTLSDR-Scanner)
+		* A cross platform Python frequency scanning GUI for the OsmoSDR rtl-sdr library.
+		* [Details](https://eartoearoak.com/software/rtlsdr-scanner)
+		* [Manual](https://github.com/EarToEarOak/RTLSDR-Scanner/blob/master/doc/Manual.pdf)
 
 
 

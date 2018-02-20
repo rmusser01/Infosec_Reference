@@ -155,3 +155,7 @@ Steps:
 			* Most of them are very nicely documented within the code/have a brief description at the top of the file. If you are running it, you should probably know what it does.
 
 
+Tips for defending against this:
+	* Procmon process logging
+	* Network Logging
+	* Hunting empire

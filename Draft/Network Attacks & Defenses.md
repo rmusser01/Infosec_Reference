@@ -48,10 +48,11 @@
 --------
 ##### To be sorted
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
-
 * Add IPSEC Stuff
-* [MassDNS](https://github.com/blechschmidt/massdns)
-	* MassDNS is a simple high-performance DNS stub resolver targetting those who seek to resolve a massive amount of domain names in the order of millions or even billions. Without special configuration, MassDNS is capable of resolving over 350,000 names per second using publicly available resolvers.
+* Add NTLM Section
+	* [Microsoft NTLM - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749%28v=vs.85%29.aspx)
+
+
 Printers
 * [Hacking Printers Wiki](http://hacking-printers.net/wiki/index.php/Main_Page)
 * [PRET](https://github.com/RUB-NDS/PRET)
@@ -59,6 +60,15 @@ Printers
 * [Attacking *multifunction* printers and getting creds from them](http://www.irongeek.com/i.php?page=videos/bsidescleveland2014/plunder-pillage-and-print-the-art-of-leverage-multifunction-printers-during-penetration-testing-deral-heiland)
 * [HPwn - HP printer security research code](https://github.com/foxglovesec/HPwn)
 	* This repository contains varios scripts and projects referenced in FoxGlove security's HP printer blogpost.
+* [blacksheepwall](https://github.com/tomsteele/blacksheepwall)
+	* blacksheepwall is a hostname reconnaissance tool written in Go. It can also be used as a stand-alone package in your tools.
+
+* [IVRE](https://github.com/cea-sec/ivre)
+	* IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
+
+* [Nili](https://github.com/niloofarkheirkhah/nili)
+	* Nili is a Tool for Network Scan, Man in the Middle, Protocol Reverse Engineering and Fuzzing.
+
 
 ##### sort end
 
@@ -276,6 +286,8 @@ Printers
 		* Knockpy is a python tool designed to enumerate subdomains on a target domain through a wordlist. It is designed to scan for DNS zone transfer and to try to bypass the wildcard DNS record automatically if it is enabled.
 	* [sub6](https://github.com/YasserGersy/sub6)
 		* subdomain take over detector and crawler
+	* [Anubis](https://github.com/jonluca/Anubis)
+		* Anubis is a subdomain enumeration and information gathering tool. Anubis collates data from a variety of sources, including HackerTarget, DNSDumpster, x509 certs, VirusTotal, Google, Pkey, and NetCraft. Anubis also has a sister project, [AnubisDB](https://github.com/jonluca/Anubis-DB), which serves as a centralized repository of subdomains.
 * **Service**
 	* [DNS Dumpster](https://www.DNSdumpster.com)
 		* free domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process
@@ -295,8 +307,11 @@ Printers
 		* Multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks.
 	* [Bluto](https://github.com/darryllane/Bluto)
 		* DNS Recon | Brute Forcer | DNS Zone Transfer | DNS Wild Card Checks | DNS Wild Card Brute Forcer | Email Enumeration | Staff Enumeration | Compromised Account Enumeration | MetaData Harvesting
-
-
+	* [Judas DNS](https://github.com/mandatoryprogrammer/JudasDNS)
+		* A DNS proxy server built to be deployed in place of a taken over nameserver to perform targeted exploitation. Judas works by proxying all DNS queries to the legitimate nameservers for a domain. The magic comes with Judas's rule configurations which allow you to change DNS responses depending on source IP or DNS query type. This allows an attacker to configure a malicious nameserver to do things like selectively re-route inbound email coming from specified source IP ranges (via modified MX records), set extremely long TTLs to keep poisoned records cached, and more.
+	* [Respect My Authority – Hijacking Broken Nameservers to Compromise Your Target](https://thehackerblog.com/respect-my-authority-hijacking-broken-nameservers-to-compromise-your-target/)
+	* [MassDNS](https://github.com/blechschmidt/massdns)
+		* MassDNS is a simple high-performance DNS stub resolver targetting those who seek to resolve a massive amount of domain names in the order of millions or even billions. Without special configuration, MassDNS is capable of resolving over 350,000 names per second using publicly available resolvers.
 
 
 ------------
@@ -305,6 +320,8 @@ Printers
 	* [Denial-of-service attack - Wikipedia](https://en.wikipedia.org/wiki/Denial-of-service_attack)
 * **General/Articles/Writeups/Talks**
 	* [Novel session initiation protocol-based distributed denial-of-service attacks and effective defense strategies](http://www.sciencedirect.com/science/article/pii/S0167404816300980)
+	* [Sockstress](https://github.com/defuse/sockstress)
+		* Sockstress is a Denial of Service attack on TCP services discovered in 2008 by Jack C. Louis from Outpost24 [1]. It works by using RAW sockets to establish many TCP connections to a listening service. Because the connections are established using RAW sockets, connections are established without having to save any per-connection state on the attacker's machine. Like SYN flooding, sockstress is an asymmetric resource consumption attack: It requires very little resources (time, memory, and bandwidth) to run a sockstress attack, but uses a lot of resources on the victim's machine. Because of this asymmetry, a weak attacker (e.g. one bot behind a cable modem) can bring down a rather large web server. Unlike SYN flooding, sockstress actually completes the connections, and cannot be thwarted using SYN cookies. In the last packet of the three-way handshake a ZERO window size is advertised -- meaning that the client is unable to accept data -- forcing the victim to keep the connection alive and periodically probe the client to see if it can accept data yet. This implementation of sockstress takes the idea a little further by allowing the user to specify a payload, which will be sent along with the last packet of the three-way handshake, so in addition to opening a connection, the attacker can request a webpage, perform a DNS lookup, etc.
 * **Tools**
 	* [Davoset](https://github.com/MustLive/DAVOSET) 
 		* DAVOSET - it is console (command line) tool for conducting DDoS attacks on the sites via Abuse of Functionality and XML External Entities vulnerabilities at other sites.
@@ -496,6 +513,8 @@ Printers
 	* [net-creds](https://github.com/DanMcInerney/net-creds)
 		* Thoroughly sniff passwords and hashes from an interface or pcap file. Concatenates fragmented packets and does not rely on ports for service identification. It sniffs: URLs visited; POST loads sent; HTTP form logins/passwords; HTTP basic auth logins/passwords; HTTP searches; FTP logins/passwords; IRC logins/passwords; POP logins/passwords; IMAP logins/passwords; Telnet logins/passwords; SMTP logins/passwords; SNMP community string; NTLMv1/v2 all supported protocols like HTTP, SMB, LDAP, etc; Kerberos.
 * **HTTP**
+	* [Injectify](https://github.com/samdenty99/injectify)
+		* Perform advanced MiTM attacks on websites with ease.
 	* [node-http-mitm-proxy](https://github.com/joeferner/node-http-mitm-proxy)
 		* HTTP Man In The Middle (MITM) Proxy written in node.js. Supports capturing and modifying the request and response data.
 	* [hyperfox](https://github.com/malfunkt/hyperfox)
@@ -623,6 +642,8 @@ Printers
 		* Consul is a tool for service discovery and configuration. Consul is distributed, highly available, and extremely scalable.
 	* [gateway-finder](https://github.com/pentestmonkey/gateway-finder)
 		* Gateway-finder is a scapy script that will help you determine which of the systems on the local LAN has IP forwarding enabled and which can reach the Internet.
+	* [GTScan](https://github.com/SigPloiter/GTScan)
+		* The Nmap Scanner for Telco. With the current focus on telecom security, there used tools in day to day IT side penetration testing should be extended to telecom as well. From here came the motivation for an nmap-like scanner but for telco. The current security interconnect security controls might fail against reconnaissance, although mobile operators might implement SMS firewalls/proxies, Interconnect firewalls, some of those leak information that could be used for further information gathering process. The motivation behind this project, first adding a new toolking into the arsenal of telecom penetration testers. Second give the mobile operators a way to test their controls to a primitive methodology such as information gathering and reconnaissance.
 * **Tor**
 	* [exitmap](https://github.com/NullHypothesis/exitmap)
 		* A fast and modular scanner for Tor exit relays. http://www.cs.kau.se/philwint/spoiled_onions/ 
@@ -867,7 +888,8 @@ Printers
 		*  snmpwalk - retrieve a subtree of management values using SNMP GETNEXT requests
 	* [Cisc0wn - Cisco SNMP Script](https://github.com/nccgroup/cisco-SNMP-enumeration)
 		* Automated Cisco SNMP Enumeration, Brute Force, Configuration Download and Password Cracking
-
+	* [SNMPwn](https://github.com/hatlord/snmpwn)
+		* SNMPwn is an SNMPv3 user enumerator and attack tool. It is a legitimate security tool designed to be used by security professionals and penetration testers against hosts you have permission to test. It takes advantage of the fact that SNMPv3 systems will respond with "Unknown user name" when an SNMP user does not exist, allowing us to cycle through large lists of users to find the ones that do.
 
 
 

@@ -14,7 +14,7 @@
 ### <a name="general"></a>General
 * [The Red Book: A Roadmap for Systems Security Research](http://www.red-book.eu/m/documents/syssec_red_book.pdf)
 * [IT Law Wiki](http://itlaw.wikia.com/wiki/The_IT_Law_Wiki))
-
+* [The security laws, regulations and guidelines directory - csoonline](https://www.csoonline.com/article/2126072/compliance/compliance-the-security-laws-regulations-and-guidelines-directory.html)
 
 ------------
 ### <a name="guides"></a>Guides
@@ -30,6 +30,9 @@
 * [Security Assessment Guidelines for Financial Institutions](https://www.sans.org/reading-room/whitepapers/auditing/security-assessment-guidelines-financial-institutions-993)
 * [Information Security Risk Assessment Guidelines - mass.gov](http://www.mass.gov/anf/research-and-tech/cyber-security/security-for-state-employees/risk-assessment/risk-assessment-guideline.html)
 * [NIST Special Publication 800 -46 Revision 2 - Guide to Enterprise Telework, Remote Access, and Bring Your Own Device (BYOD) Security](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-46r2.pdf)
+
+
+
 
 ------------
 ### <a name="talks"></a>Talks & Presentations

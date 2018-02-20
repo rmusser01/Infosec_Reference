@@ -33,6 +33,22 @@
 * [Offensive & Defensive Android Reverse Engineering](https://github.com/rednaga/training/tree/master/DEFCON23)
 	* Thinking like an attacker, you will learn to identify juicy Android targets, reverse engineer them, find vulnerabilities, and write exploits. We will deep dive into reverse engineering Android frameworks, applications, services, and boot loaders with the end goal of rooting devices. Approaching from a defensive perspective, we will learn quickly triage applications to determine maliciousness, exploits, and weaknesses. After learning triage skills, we will deep dive into malicious code along while dealing with packers, obfuscators, and anti-reversing techniques. Between the offensive and defensive aspects of this class, you should walk away with the fundamentals of reverse engineering and a strong understanding of how to further develop your skills for mobile platforms.
 
+
+* [BinCAT](https://github.com/airbus-seclab/bincat)
+	* BinCAT is a static Binary Code Analysis Toolkit, designed to help reverse engineers, directly from IDA.
+* [YaCo])(https://github.com/DGA-MI-SSI/YaCo)
+	* YaCo is an Hex-Rays IDA plugin. When enabled, multiple users can work simultaneously on the same binary. Any modification done by any user is synchronized through git version control.
+* [What are the methods to find hooked functions and APIs?](https://security.stackexchange.com/questions/17904/what-are-the-methods-to-find-hooked-functions-and-apis)
+* [Taking a Snapshot and Viewing Processes - msdn.ms](https://msdn.microsoft.com/library/windows/desktop/ms686701.aspx)
+
+* [Etnaviv](https://github.com/etnaviv/etna_viv)
+	* Project Etnaviv is an open source user-space driver for the Vivante GCxxx series of embedded GPUs. This repository contains reverse-engineering and debugging tools, and rnndb register documentation. It is not necessary to use this repository when building the driver.
+
+
+
+
+
+
 #### End sort
 
 
@@ -104,14 +120,14 @@ Things that Don't fit elsewhere
 
 --------------
 ### <a name="tools">Tools</a>
-* Binary Visualization Tools
+* **Binary Visualization Tools**
 	* [binglide](https://github.com/wapiflapi/binglide)
 		* binglide is a visual reverse engineering tool. It is designed to offer a quick overview of the different data types that are present in a file. This tool does not know about any particular file format, everything is done using the same analysis working on the data. This means it works even if headers are missing or corrupted or if the file format is unknown.
 	* [binvis.io](http://binvis.io/#/)
 		* visual analysis of binary files
 	* [cantor.dust](https://sites.google.com/site/xxcantorxdustxx/home)
 		* a powerful, dynamic, interactive binary visualization tool
-* General
+* **General**
 	* [Binwalk](https://github.com/devttys0/binwalk)
 		* Binwalk is a fast, easy to use tool for analyzing, reverse engineering, and extracting firmware images.
 	* [Pip3line, the Swiss army knife of byte manipulation](https://nccgroup.github.io/pip3line/index.html) 
@@ -122,7 +138,7 @@ Things that Don't fit elsewhere
 		* Indexation "full-bin" of binary files
 	* [Construct2](https://github.com/construct/construct)
 		* Construct is a powerful declarative parser (and builder) for binary data. Instead of writing imperative code to parse a piece of data, you declaratively define a data structure that describes your data. As this data structure is not code, you can use it in one direction to parse data into Pythonic objects, and in the other direction, convert ("build") objects into binary data.
-* De/Obfuscators/Unpackers
+* **De/Obfuscators/Unpackers**
 	* [de4dot](https://github.com/0xd4d/de4dot)
 		* de4dot is an open source (GPLv3) .NET deobfuscator and unpacker written in C#. It will try its best to restore a packed and obfuscated assembly to almost the original assembly. Most of the obfuscation can be completely restored (eg. string encryption), but symbol renaming is impossible to restore since the original names aren't (usually) part of the obfuscated assembly.
 	* [Universal Extractor](http://www.legroom.net/software/uniextract)
@@ -130,17 +146,20 @@ Things that Don't fit elsewhere
 	* [Stunnix C/C++ Obfuscator](http://stunnix.com/prod/cxxo/)
 	* [asar](https://github.com/electron/asar)
 		* Simple extensive tar-like archive format with indexing
-* ELF/Related Tools
+* **ELF/Related Tools**
 	* [Rdis](https://github.com/endeav0r/rdis)
 		* Rdis is a Binary Analysis Tool for Linux.
 	* [readelf](https://sourceware.org/binutils/docs/binutils/readelf.html)
 		* Unix Tool
-* Emulators
+* **Emulators**
 	* [Unicorn-Engine](http://www.unicorn-engine.org/)
 		* Unicorn is a lightweight multi-platform, multi-architecture CPU emulator framework.
 	* [pegasus - Windbg extension DLL for emulation](https://github.com/0a777h/pegasus)
 		* Windbg emulation plugin 
-* PE32/Related Tools
+* **Packers**
+	* [UPX - the Ultimate Packer for eXecutables](https://github.com/upx/upx)
+		* UPX is an advanced executable file compressor. UPX will typically reduce the file size of programs and DLLs by around 50%-70%, thus reducing disk space, network load times, download times and other distribution and storage costs.
+* **PE32/Related Tools**
 	* [Dependency Walker](http://www.dependencywalker.com/)
 		* Dependency Walker is a free utility that scans any 32-bit or 64-bit Windows module (exe, dll, ocx, sys, etc.) and builds a hierarchical tree diagram of all dependent modules. For each module found, it lists all the functions that are exported by that module, and which of those functions are actually being called by other modules. Another view displays the minimum set of required files, along with detailed information about each file including a full path to the file, base address, version numbers, machine type, debug information, and more.
 	* [PPEE(puppy)](https://www.mzrst.com/#top)
@@ -149,27 +168,27 @@ Things that Don't fit elsewhere
 		* pestudio is a tool that performs the static analysis of 32-bit and 64-bit Windows executable files.  Malicious executable attempts to hide its malicious intents and to evade detection. In doing so, it generally presents anomalies and suspicious patterns. The goal of pestudio is to detect these anomalies, provide indicators and score the executable being analyzed. Since the executable file being analyzed is never started, you can inspect any unknown or malicious executable with no risk. 
 	* [PEview](http://wjradburn.com/software/)
 		* PEview provides a quick and easy way to view the structure and content of 32-bit Portable Executable (PE) and Component Object File Format (COFF) files. This PE/COFF file viewer displays header, section, directory, import table, export table, and resource information within EXE, DLL, OBJ, LIB, DBG, and other file types.
-* OLE
+* **OLE**
 	* [python-oletools](https://github.com/decalage2/oletools)
 		* python-oletools is a package of python tools to analyze Microsoft OLE2 files (also called Structured Storage, Compound File Binary Format or Compound Document File Format), such as Microsoft Office documents or Outlook messages, mainly for malware analysis, forensics and debugging. It is based on the olefile parser. See http://www.decalage.info/python/oletools for more info.
-* Searching Through Binaries
+* **Searching Through Binaries**
  	* [bingrep](https://github.com/m4b/bingrep)
 		* Greps through binaries from various OSs and architectures, and colors them. 
-* Static Analysis Tools
+* **Static Analysis Tools**
 	* [Bindead - static binary binary analysis tool](https://bitbucket.org/mihaila/bindead/wiki/Home)
 		* Bindead is an analyzer for executable machine code. It features a disassembler that translates machine code bits into an assembler like language (RREIL) that in turn is then analyzed by the static analysis component using abstract interpretation. 
 	* [Static binary analysis tool](https://github.com/bdcht/amoco)
 		* Amoco is a python package dedicated to the (static) analysis of binaries. Worth a check on the Github
 	* [Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
-* OS X
+* **OS X**
 	* [Instruments - OS X system analysis](https://developer.apple.com/library/mac/documentation/DeveloperTools/Conceptual/InstrumentsUserGuide/Introduction/Introduction.html)
 		* Instruments is a performance-analysis and testing tool for dynamically tracing and profiling OS X and iOS code. It is a flexible and powerful tool that lets you track a process, collect data, and examine the collected data. In this way, Instruments helps you understand the behavior of both user apps and the operating system.
 	* [Reversing iOS/OS X](http://newosxbook.com/forum/viewforum.php?f=8)
-* Linux
+* **Linux**
 	* [Statically Linked Library Detector](https://github.com/arvinddoraiswamy/slid)
 	* [Rdis](https://github.com/endeav0r/rdis)
 		* Rdis is a Binary Analysis Tool for Linux.
-* Windows
+* **Windows**
 	* [PolyHook - x86/x64 Hooking Library](https://github.com/stevemk14ebr/PolyHook)
 		* Provides abstract C++ 11 interface for various hooking methods
 	* [EasyHook](https://easyhook.github.io/)
@@ -249,9 +268,8 @@ Debuggers
 
 --------------
 #### <a name="decom">Decompilers & Disassemblers</a>
-Decompilers & Disassemblers
-* Decompilers & Disassemblers
-	* General
+* **Decompilers & Disassemblers**
+	* **General**
 		* [IDA](https://www.hex-rays.com/products/ida/)
 			* IDA Pro combines an interactive, programmable, multi-processor disassembler coupled to a local and remote debugger and augmented by a complete plugin programming environment.
 			* [Overview & Tutorials](https://www.hex-rays.com/products/ida/debugger/index.shtml)
@@ -265,7 +283,9 @@ Decompilers & Disassemblers
 			* Medusa is a disassembler designed to be both modular and interactive. It runs on Windows and Linux, it should be the same on OSX. This project is organized as a library. To disassemble a file you have to use medusa_dummy or qMedusa. wxMedusa and pydusa are not available anymore.
 		* [PLASMA](https://github.com/plasma-disassembler/plasma)
 			* PLASMA is an interactive disassembler. It can generate a more readable assembly (pseudo code) with colored syntax. You can write scripts with the available Python api (see an example below). The project is still in big development.
-	* Java
+		* [Snowman decompiler](https://github.com/yegord/snowman)
+			* [Snowman](http://derevenets.com/) is a native code to C/C++ decompiler, supporting x86, AMD64, and ARM architectures. You can use it as a [standalone GUI application](https://github.com/yegord/snowman/blob/master/src/snowman), a [command-line tool](https://github.com/yegord/snowman/blob/master/src/nocode), an [IDA plug-in](https://github.com/yegord/snowman/blob/master/src/ida-plugin), a [radare2 plug-in](https://github.com/radare/radare2-pm/blob/master/db/r2snow), an [x64dbg plug-in](https://github.com/x64dbg/snowman), or a [library](https://github.com/yegord/snowman/blob/master/src/nc). Snowman is free software.
+	* **Java**
 		* [Procyon - Java Decompiler](https://bitbucket.org/mstrobel/procyon/wiki/Java%20Decompiler)
 			* [Luyten](https://github.com/deathmarine/Luyten)
 				* Java Decompiler Gui for Procyon
@@ -277,14 +297,16 @@ Decompilers & Disassemblers
 			* Java decompiler, assembler, and disassembler
 		* [Bytecode Viewer](https://github.com/Konloch/bytecode-viewer)
 			* Bytecode Viewer is an Advanced Lightweight Java Bytecode Viewer, GUI Java Decompiler, GUI Bytecode Editor, GUI Smali, GUI Baksmali, GUI APK Editor, GUI Dex Editor, GUI APK Decompiler, GUI DEX Decompiler, GUI Procyon Java Decompiler, GUI Krakatau, GUI CFR Java Decompiler, GUI FernFlower Java Decompiler, GUI DEX2Jar, GUI Jar2DEX, GUI Jar-Jar, Hex Viewer, Code Searcher, Debugger and more. It's written completely in Java, and it's open sourced. It's currently being maintained and developed by Konloch.
-	* .NET
+	* **.NET**
 		* [DotPeek](http://www.jetbrains.com/decompiler/features/)
 			* dotPeek is a .NET decompiler that has several handy features.
 		* [dnSpy](https://github.com/0xd4d/dnSpy)
 			* dnSpy is a debugger and .NET assembly editor. You can use it to edit and debug assemblies even if you don't have any source code available.
 		* [ILSpy](https://github.com/icsharpcode/ILSpy)
 			* ILSpy is the open-source .NET assembly browser and decompiler.
-	* IDA specific Stuff
+		* [Shed](https://github.com/enkomio/shed)
+			* Shed is an application that allow to inspect the .NET runtime of a program in order to extract useful information. It can be used to inspect malicious applications in order to have a first general overview of which information are stored once that the malware is executed.
+	* **IDA specific Stuff**
 		* IDA Extensions
 			* [BAP-IDA](https://github.com/BinaryAnalysisPlatform/bap-ida-python)
 				* This package provides the necessary IDAPython scripts required for interoperatibility between BAP and IDA Pro. It also provides many useful feature additions to IDA, by leveraging power from BAP.
@@ -292,7 +314,7 @@ Decompilers & Disassemblers
 				* This script records function calls (and returns) across an executable using IDA debugger API, along with all the arguments passed. It dumps the info to a text file, and also inserts it into IDA's inline comments. This way, static analysis that usually follows the behavioral runtime analysis when analyzing malware, can be directly fed with runtime info such as decrypted strings returned in function's arguments. In author's opinion this allows to understand the program's logic way faster than starting the "zero-knowledge" reversing. Quick understanding of a malware sample code was precisely the motivation to write this script and the author has been using it succesfully at his $DAYJOB. It is best to see the examples with screenshots to see how it works (see below). It must be noted that the script has been designed with many misconceptions, errors and bad design decisions (see issues and funcap.py code) as I was learning when coding but it has one advantage - it kind of works :) Current architectures supported are x86, amd64 and arm.
 			[IDAPython Embedded Toolkit](https://github.com/maddiestone/IDAPythonEmbeddedToolkit)
 				* IDAPython is a way to script different actions in the IDA Pro disassembler with Python. This repository of scripts automates many different processes necessary when analyzing the firmware running on microcontroller and microprocessor CPUs. The scripts are written to be easily modified to run on a variety of architectures. Read the instructions in the header of each script to determine what ought to be modified for each architecture.
-		* IDA Plugins 
+		* **IDA Plugins**
 			* [A list of IDA Plugins](https://github.com/onethawt/idaplugins-list)
 			* [IDA Python - Ero Carrera](http://www.offensivecomputing.net/papers/IDAPythonIntro.pdf)
 				* IDAPython is an extension for IDA , the Interactive Disassembler . It brings the power and convenience of Python scripting to aid in the analysis of binaries. This article will cover some basic usage and provide examples to get interested individuals started. W e will walk through practical examples ranging from iterating through functions, segments and instructions to data mining the binaries, collecting references and analyzing their structure.
@@ -326,7 +348,7 @@ Decompilers & Disassemblers
 				* The plugin is an integration of Virus Battle API to the well known IDA Disassembler. Virusbattle is a web service that analyses malware and other binaries with a variety of advanced static and dynamic analyses.
 			* [ida-batch_decompile](https://github.com/tintinweb/ida-batch_decompile)
 				* IDA Batch Decompile is a plugin for Hex-Ray's IDA Pro that adds the ability to batch decompile multiple files and their imports with additional annotations (xref, stack var size) to the pseudocode .c file
-		* IDA Tutorials/Help
+		* **IDA Tutorials/Help**
 			* [TiGa's Video Tutorial Series on IDA Pro](http://woodmann.com/TiGa/idaseries.html)
 			* [IDA PLUG-IN WRITING IN C/C++](http://www.binarypool.com/idapluginwriting/idapw.pdf)
 			* [How to Identify Virtual Table Functions with IDA Pro and the VTBL Plugin](https://www.youtube.com/watch?v=XHW9Akb4KLI&app=desktop)
@@ -341,7 +363,6 @@ Decompilers & Disassemblers
 
 --------------
 #### <a name="formats">File Formats</a>
-File Formats
 * [Encyclopedia of Graphics File Formats](http://fileformats.archiveteam.org/wiki/Encyclopedia_of_Graphics_File_Formats)
 * [PE File Format Graphs](http://blog.dkbza.org/2012/08/pe-file-format-graphs.html?view=mosaic)
 * [PNG File Format](http://fileformats.archiveteam.org/wiki/PNG)
@@ -360,7 +381,6 @@ File Formats
 
 --------------
 #### <a name="frameworks">Frameworks</a>
-Frameworks
 * [angr](http://angr.io/)
 	* angr is a python framework for analyzing binaries. It focuses on both static and dynamic symbolic ("concolic") analysis, making it applicable to a variety of tasks.
 * Radare2 - unix-like reverse engineering framework and commandline tools ](http://www.radare.org/y/?p=features)
@@ -373,6 +393,8 @@ Frameworks
 	* [radare2 cheat sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
 	* [radare2 as an alternative to gdb-peda](https://monosource.github.io/2016/10/radare2-peda)
 	* [Radare2 in 0x1E minutes](https://blog.techorganic.com/2016/03/08/radare-2-in-0x1e-minutes/)
+	* [cutter](https://github.com/radareorg/cutter)
+		* A Qt and C++ GUI for radare2 reverse engineering framework
 * [BitBlaze](http://bitblaze.cs.berkeley.edu/)
 	* The BitBlaze project aims to design and develop a powerful binary analysis platform and employ the platform in order to (1) analyze and develop novel COTS protection and diagnostic mechanisms and (2) analyze, understand, and develop defenses against malicious code. The BitBlaze project also strives to open new application areas of binary analysis, which provides sound and effective solutions to applications beyond software security and malicious code defense, such as protocol reverse engineering and fingerprint generation. 
 * [Platform for Architecture-Neutral Dynamic Analysis](https://github.com/moyix/panda)

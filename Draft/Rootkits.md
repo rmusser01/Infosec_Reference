@@ -139,7 +139,8 @@
 * [DragonKing Rootkit](https://github.com/mgrube/DragonKing)
 	* This is an open source rootkit created for a class taught on Rootkit Design. This rootkit hides by hooking the system call table and using an agent to do interactive manipulation in userland.
 * [GPU rootkit PoC by Team Jellyfish](https://github.com/x0r1/jellyfish)
-
+* [HORSE PILL](https://github.com/r00tkillah/HORSEPILL)
+	* Horse Pill is a PoC of a ramdisk based containerizing root kit. It resides inside the initrd, and prior to the actual init running, it puts it into a mount and pid namespace that allows it to run covert processes and covert storage. This also allows it run covert networking systems, such as dns tunnels.
 
 
 

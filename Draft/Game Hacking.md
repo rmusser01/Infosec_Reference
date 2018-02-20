@@ -17,6 +17,9 @@ Fix ToC
 
 * [PortAIO-Loader](https://github.com/PirateEmpire/PortAIO-Loader) 
 
+* [Awesome Gamedev](https://github.com/Calinou/awesome-gamedev)
+	* A collection of free software and free culture resources for making amazing games. 
+
 #### End Sort
 
 
@@ -71,31 +74,42 @@ Fix ToC
 * **Nintendo 3DS**
 	* **Articles/Writeups**
 		* [Keyshuffling Attack for Persistent Early Code Execution in the Nintendo 3DS Secure Bootchain](https://github.com/Plailect/keyshuffling)
-		* We demonstrate an attack on the secure bootchain of the Nintendo 3DS in order to gain early code execution. The attack utilizes the block shuffling vulnerability of the ECB cipher mode to rearrange keys in the Nintendo 3DS's encrypted keystore. Because the shuffled keys will deterministically decrypt the encrypted firmware binary to incorrect plaintext data and execute it, and because the device's memory contents are kept between hard reboots, it is possible to reliably reach a branching instruction to a payload in memory. This payload, due to its execution by a privileged processor and its early execution, is able to extract the hash of hardware secrets necessary to decrypt the device's encrypted keystore and set up a persistant exploit of the system.
-	* [ARM9Loader Technical Details - GBAtemp](https://gbatemp.net/threads/arm9loader-technical-details-and-discussion.408537/)
-	* [Throwback: K9Lhax by Bruteforce](http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce)
+			* We demonstrate an attack on the secure bootchain of the Nintendo 3DS in order to gain early code execution. The attack utilizes the block shuffling vulnerability of the ECB cipher mode to rearrange keys in the Nintendo 3DS's encrypted keystore. Because the shuffled keys will deterministically decrypt the encrypted firmware binary to incorrect plaintext data and execute it, and because the device's memory contents are kept between hard reboots, it is possible to reliably reach a branching instruction to a payload in memory. This payload, due to its execution by a privileged processor and its early execution, is able to extract the hash of hardware secrets necessary to decrypt the device's encrypted keystore and set up a persistant exploit of the system.
+		* [ARM9Loader Technical Details - GBAtemp](https://gbatemp.net/threads/arm9loader-technical-details-and-discussion.408537/)
+		* [Throwback: K9Lhax by Bruteforce](http://douevenknow.us/post/151129092928/throwback-k9lhax-by-bruteforce)
+		* [soundhax](https://github.com/nedwill/soundhax)
+			* A heap overflow in tag processing leads to code execution when a specially- crafted m4a file is loaded by Nintendo 3DS Sound. This bug is particularly good, because as far as I can tell it is the first ever homebrew exploit that is free, offline, and works on every version of the firmware for which the sound app is available.
 	* **Emulator**
-	* [Citra](https://citra-emu.org/)
-* **Nintendo**
+		* [Citra](https://citra-emu.org/)
+* **Nintendo Entertainment System**
 * **Nintendo Super Nintendo**
 * **Nintendo64**
-* **Articles/Writeups**
-	* [Reversing the Nintendo 64 CIC - Mike Ryan, marshallh, and John McMaster - REcon 2015](https://www.youtube.com/watch?v=HwEdqAb2l50)
-		* This presentation covers our successful efforts to reverse engineer and clone the Nintendo 64's copy protection chip: the N64 CIC. We describe the processes and techniques we used to finally conquer this chip, nearly 20 years after its introduction.
-* **Tools**
-	* [libdragon](https://dragonminded.com/n64dev/libdragon/)
-		* libdragon is meant to be a one stop library providing low level API for all hardware features of the N64.
-	* [64Drive](http://64drive.retroactive.be/)
-	* [FAT64](https://lacklustre.net/projects/fat64/)
-		* FAT64 is a FAT32 library for use on the 64drive, a development cart for the Nintendo 64. It is used by the 64drive bootloader and menu.
+	* **Articles/Writeups**
+		* [Reversing the Nintendo 64 CIC - Mike Ryan, marshallh, and John McMaster - REcon 2015](https://www.youtube.com/watch?v=HwEdqAb2l50)
+			* This presentation covers our successful efforts to reverse engineer and clone the Nintendo 64's copy protection chip: the N64 CIC. We describe the processes and techniques we used to finally conquer this chip, nearly 20 years after its introduction.
+	* **Tools**
+		* [libdragon](https://dragonminded.com/n64dev/libdragon/)
+			* libdragon is meant to be a one stop library providing low level API for all hardware features of the N64.
+		* [64Drive](http://64drive.retroactive.be/)
+		* [FAT64](https://lacklustre.net/projects/fat64/)
+			* FAT64 is a FAT32 library for use on the 64drive, a development cart for the Nintendo 64. It is used by the 64drive bootloader and menu.
 * **Nintendo Gamecube**
+	* [Dolphin](https://github.com/dolphin-emu/dolphin)
+		* Dolphin is a GameCube / Wii emulator, allowing you to play games for these two platforms on PC with improvements. https://dolphin-emu.org/
 * **Nintendo Wii**
+	* [Dolphin](https://github.com/dolphin-emu/dolphin)
+		* Dolphin is a GameCube / Wii emulator, allowing you to play games for these two platforms on PC with improvements. https://dolphin-emu.org/
 	* [wiihacks forum](http://www.wiihacks.com/)
 	* [WiiHacks](https://www.reddit.com/r/WiiHacks/)
+	* [The Homebrew Channel](https://github.com/fail0verflow/hbc)
+		* The Homebrew Channel - open source edition
+	* [WiiUse](https://github.com/rpavlik/wiiuse)
+		* Wiiuse is a library written in C that connects with several Nintendo Wii remotes. Supports motion sensing, IR tracking, nunchuk, classic controller, Balance Board, and the Guitar Hero 3 controller. Single threaded and nonblocking makes a light weight and clean API.
 * **Nintendo Switch**
 	* [yuzu](https://github.com/yuzu-emu/yuzu)
 		* yuzu is an experimental open-source emulator for the Nintendo Switch from the creators of Citra. It is written in C++ with portability in mind, with builds actively maintained for Windows, Linux and macOS. The emulator is currently only useful for homebrew development and research purposes.
-
+	* [Nintendo_Switch_Reverse_Engineering - dekuNukem](https://github.com/dekuNukem/Nintendo_Switch_Reverse_Engineering)
+		* A look at inner workings of Joycon and Nintendo Switch
 
 
 ------------
@@ -103,6 +117,15 @@ Fix ToC
 * **PSP / PS Vita**
 	* [Hacking the PS Vita](http://yifan.lu/2015/06/21/hacking-the-ps-vita/)
 	* [ Playstation Portable Cracking [24c3]](https://www.youtube.com/watch?v=TgzxyO2QO1M)
+	* [VITA2PC](https://github.com/Rinnegatamante/VITA2PC)
+		* VITA2PC is a tool allowing to stream PSVITA/PSTV to your PC via WiFi.
+	* [psvd](https://github.com/yifanlu/psvsd)
+	* [henkaku](https://github.com/henkaku/henkaku)
+		* Homebrew enabler for PS Vita
+	* [vitadump](https://github.com/St4rk/vitadump)
+		* This homebrew can dump some PS Vita shared modules
+	* [vitastick](https://github.com/xerpi/vitastick)
+		* vitastick is a plugin and an application that lets you use a PSVita as a USB controller. It uses the UDCD (USB Device Controller Driver) infrastructure in the kernel to simulate such controller, and thus, the host thinks the PSVita is a legit USB gamepad.
 * **Sony PlayStation 1**
 * **Sony PlayStation 2**
 * **Sony PlayStation 3**

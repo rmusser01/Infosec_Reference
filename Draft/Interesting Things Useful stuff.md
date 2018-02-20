@@ -40,6 +40,34 @@ http://spth.virii.lu/articles.htm
 * [Windows Firewall Control - Managing Windows Firewall is now easier than ever](https://www.binisoft.org/wfc.php)
 * [OSX for Hackers (Mavericks/Yosemite)](https://gist.github.com/matthewmueller/e22d9840f9ea2fee4716)
 
+* [Apple’s Software “Problem” and “Fixing” It (via twitter)](https://medium.learningbyshipping.com/apples-software-problem-and-fixing-it-via-twitter-c941a905ba20)
+
+* [Shadowbrokers](https://github.com/misterch0c/shadowbroker)
+	* The Shadow Brokers "Lost In Translation" leak
+
+* [Teach Yourself Demoscene in 14 Days](https://github.com/psenough/teach_yourself_demoscene_in_14_days)
+
+* [The Lounge](https://github.com/thelounge/lounge)
+	* Modern web IRC client designed for self-hosting.
+
+* [explainshell.com](https://github.com/idank/explainshell)
+	* explainshell is a tool (with a web interface) capable of parsing man pages, extracting options and explain a given command-line by matching each argument to the relevant help text in the man page.
+
+* [Magic Wormhole](https://github.com/warner/magic-wormhole)
+	* This package provides a library and a command-line tool named wormhole, which makes it possible to get arbitrary-sized files and directories (or short pieces of text) from one computer to another. The two endpoints are identified by using identical "wormhole codes": in general, the sending machine generates and displays the code, which must then be typed into the receiving machine.
+
+* [Object-oriented HTML](https://github.com/Michaelkielstra/Object-oriented-HTML)
+	* HTML isn't a programming language as such, it's actually a markup language. This means that it misses out on a lot of the good stuff that real programming languages have, including the joys of object-oriented programming. This project brings inheritance, polymorphism, and public "methods" to HTML. With startling imagination, I've called it object-oriented HTML and chosen the file extension .oohtml.
+
+* [Upspin](https://github.com/upspin/upspin)
+	* Upspin is an experimental project to build a framework for naming and sharing files and other data securely, uniformly, and globally: a global name system of sorts. It is not a file system, but a set of protocols and reference implementations that can be used to join things like file systems and other storage services to the name space. Performance is not a primary goal. Uniformity and security are. Upspin is not an official Google product
+
+* [pewpew](https://github.com/hrbrmstr/pewpew)
+	* Why should security vendors be the only ones allowed to use silly, animated visualizations to "compensate"? Now, you can have your very own IP attack map that's just as useful as everyone else's. IPew is a feature-rich, customizable D3 / javascript visualization, needing nothing more than a web server capable of serving static content and a sense of humor to operate.
+
+* [My Canons on (ISC)² Ethics - Such as They Are(2011)](http://infosecisland.com/blogview/15450-My-Canons-on-ISC-Ethics-Such-as-They-Are.html)
+
+
 
 
 * [Hacker Scripts](https://github.com/NARKOZ/hacker-scripts)

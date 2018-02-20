@@ -21,13 +21,6 @@
 -------------
 #### Sort 
 
-DVWA
-* [OWASP Broken Web Applications Project](https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project)
-	* OWASP Broken Web Applications Project is a collection of vulnerable web applications that is distributed on a Virtual Machine.
-* [OWASP Juiceshop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project)
-	* [OWASP JuiceShop Gitbook walkthrough](https://www.gitbook.com/book/bkimminich/pwning-owasp-juice-shop/details)
-	* [Video Walk through by Sunny Wear](https://www.youtube.com/watch?v=zi3yDovd0RY&list=PL-giMT7sGCVI9T4rKhuiTG4EDmUz-arBo)
-
 #### End Sort
 
 
@@ -84,8 +77,10 @@ These classes are all focused on computer/information security. If you're lookin
 * [CS 259D Data Mining for Cyber Security Autumn 2014](http://web.stanford.edu/class/cs259d/)
 
 
-
-
+--------------
+### Mobile Application Security
+* [Mobile Security Trainings](https://github.com/enovella/androidtrainings)
+	* Mobile security trainings based on android
 
 
 
@@ -179,7 +174,20 @@ These classes are all focused on computer/information security. If you're lookin
 
 ### <a name="web"></a>Web Security Focused Training
 * [Google Gruyere -  Web Application Exploits and Defenses ](http://google-gruyere.appspot.com/)
+* [Professionally Evil Web App Pen Testing 101 Course - secureideas](https://blog.secureideas.com/2018/01/professionally-evil-web-app-pen-testing-101-course.html)
+* [OWASP Broken Web Applications Project](https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project)
+	* OWASP Broken Web Applications Project is a collection of vulnerable web applications that is distributed on a Virtual Machine.
+* [OWASP Juiceshop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project)
+	* [OWASP JuiceShop Gitbook walkthrough](https://www.gitbook.com/book/bkimminich/pwning-owasp-juice-shop/details)
+	* [Video Walk through by Sunny Wear](https://www.youtube.com/watch?v=zi3yDovd0RY&list=PL-giMT7sGCVI9T4rKhuiTG4EDmUz-arBo)
+* [Hacker101](https://github.com/Hacker0x01/hacker101)
+	* Hacker101 is a free class for web security. Whether you're a programmer with an interest in bug bounties or a seasoned security professional, Hacker101 has something to teach you.
 
+
+
+### Wireless
+* [Dissecting Industrial Wireless Implementations - DEF CON 25](https://github.com/voteblake/DIWI)
+	* https://github.com/vortessence/vortessence
 
 ### <a name="data"></a>Data Science
 * [CS 259D Data Mining for Cyber Security Autumn 2014](http://web.stanford.edu/class/cs259d/)

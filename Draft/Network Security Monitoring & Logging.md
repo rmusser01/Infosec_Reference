@@ -22,10 +22,20 @@
 ##### To Do
 * Create incident Response section
 * Expand ELK Stack
-
+* Flesh out InfraMonitoring
 
 
 #### Sort
+* [Windows Event Forwarding Guidance](https://github.com/palantir/windows-event-forwarding) 
+	* Over the past few years, Palantir has a maintained an internal Windows Event Forwarding (WEF) pipeline for generating and centrally collecting logs of forensic and security value from Microsoft Windows hosts. Once these events are collected and indexed, alerting and detection strategies (ADS) can be constructed not only on high-fidelity security events (e.g. log deletion), but also for deviations from normalcy, such as unusual service account access, access to sensitive filesystem or registry locations, or installation of malware persistence. The goal of this project is to provide the necessary building blocks for organizations to rapidly evaluate and deploy WEF to a production environment, and centralize public efforts to improve WEF subscriptions and encourage adoption. While WEF has become more popular in recent years, it is still dramatically underrepresented in the community, and it is our hope that this project may encourage others to adopt it for incident detection and response purposes. We acknowledge the efforts that Microsoft, IAD, and other contributors have made to this space and wish to thank them for providing many of the subscriptions, ideas, and techniques that will be covered in this post.
+
+* [ElastAlert](https://github.com/Yelp/elastalert)
+	* ElastAlert is a simple framework for alerting on anomalies, spikes, or other patterns of interest from data in Elasticsearch.
+
+* [Ninja Level Infrastructure Monitoring Workshop - Defcon24](https://github.com/appsecco/defcon24-infra-monitoring-workshop)
+	* This repository contains all the presentation, documentation and the configuration, sample logs, ansible playbook, customized dashboards and more.
+
+
 * [Advanced Security Audit Policy Settings](https://technet.microsoft.com/en-us/library/dn319056(v=ws.11).aspx)
 
 * [Many ways of malware persistence (that you were always afraid to ask) ](http://jumpespjump.blogspot.com/2015/05/many-ways-of-malware-persistence-that.html)
@@ -89,6 +99,8 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 	* [SweetSecurity](https://github.com/TravisFSmith/SweetSecurity)
 		* Scripts to setup and install Bro IDS, Elastic Search, Logstash, Kibana, and Critical Stack on a Raspberry Pi 3 device
 	* [Response Operation Collections Kit Reference Build](https://github.com/rocknsm/rock)
+* **Infrastructure Monitoring**
+
 * **General Tools**
 	* **General**
 		* [Security Onion](http://blog.securityonion.net/p/securityonion.html)

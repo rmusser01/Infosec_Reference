@@ -35,8 +35,9 @@ Other Materials:
 * [Learn Technical Writing in Two Hours per Week - Norman Ramsey](http://www.cs.tufts.edu/~nr/pubs/learn-two.pdf)
 * [Politics and the English Language - George Orwell](http://www.npr.org/blogs/ombudsman/Politics_and_the_English_Language-1.pdf)
 * [Tips for Writing Better Infosec Job Descriptions](https://www.darkreading.com/cloud/tips-for-writing-better-infosec-job-descriptions/d/d-id/1330534?piddl_msgid=330184#msg_330184)
-
-
+* **Tools**
+	* [Ronn](https://github.com/rtomayko/ronn)
+		* Ronn builds manuals. It converts simple, human readable textfiles to roff for terminal display, and also to HTML for the web. The source format includes all of Markdown but has a more rigid structure and syntax extensions for features commonly found in manpages (definition lists, link notation, etc.). The ronn-format(7) manual page defines the format in detail.
 
 
 -----

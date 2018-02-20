@@ -174,7 +174,8 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 	* gitDigger: Creating realworld wordlists from github hosted data.
 * [gitrob](https://github.com/michenriksen/gitrob)
 	* Gitrob is a command line tool which can help organizations and security professionals find sensitive information lingering in publicly available files on GitHub. The tool will iterate over all public organization and member repositories and match filenames against a range of patterns for files that typically contain sensitive or dangerous information. Looking for sensitive information in GitHub repositories is not a new thing, it has been [known for a while](http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html) that things such as private keys and credentials can be found with GitHub's search functionality, however Gitrob makes it easier to focus the effort on a specific organization.
-
+* [reposcanner](https://github.com/Dionach/reposcanner)
+	* Python script to scan Git repos for interesting strings
 
 
 ----------------
@@ -297,6 +298,8 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 		* This script uses selenium to scrape linkedin employee details from a specified company. If the script isn't working, you can always browse to the desired company's employee page and paste in the link on line 69 like this: "employees_page = url"
 	* [The Secrets of LinkedIn](https://webbreacher.com/2017/01/14/the-secrets-of-linkedin/)
 		* Grabbing usernames/connections(link analysis)
+	* [The Endorser](https://github.com/eth0izzle/the-endorser)
+		* An OSINT tool that allows you to draw out relationships between people on LinkedIn via endorsements/skills.
 * Tinder
 	* [OSINT: Advanced tinder capture](https://www.learnallthethings.net/osmosis)
 * Twitter

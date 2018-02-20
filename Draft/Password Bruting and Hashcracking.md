@@ -18,8 +18,6 @@
 
 #### Sort
 
-
-
 #### End cull
 
 
@@ -61,15 +59,18 @@
 	* Hashview is a tool for security professionals to help organize and automate the repetitious tasks related to password cracking. Hashview is a web application that manages hashcat (https://hashcat.net) commands. Hashview strives to bring constiency in your hashcat tasks while delivering analytics with pretty pictures ready for ctrl+c, ctrl+v into your reports.
 * [Cracking Active Directory Passwords or “How to Cook AD Crack"](https://www.sans.org/reading-room/whitepapers/testing/cracking-active-directory-passwords-how-cook-ad-crack-37940)
 * [Cracking Corporate Passwords – Exploiting Password Policy Weaknesses - Minga / Rick Redman Derbycon 2013](https://www.irongeek.com/i.php?page=videos/derbycon3/1301-cracking-corporate-passwords-exploiting-password-policy-weaknesses-minga-rick-redman)
-
-
+* [hcxtools](https://github.com/ZerBea/hcxtools)
+	* Small set of tools to capture and convert packets from wlan devices (h = hash, c = capture, convert and calculate candidates, x = different hashtypes) for the use with latest hashcat or John the Ripper. The tools are 100% compatible to hashcat and John the Ripper and recommended by hashcat. This branch is pretty closely synced to hashcat git branch (that means: latest hcxtools matching on latest hashcat beta) and John the Ripper git branch ( "bleeding-jumbo").
+* [PACK (Password Analysis and Cracking Toolkit)](https://github.com/iphelix/pack)
+	* PACK (Password Analysis and Cracking Toolkit) is a collection of utilities developed to aid in analysis of password lists in order to enhance password cracking through pattern detection of masks, rules, character-sets and other password characteristics. The toolkit generates valid input files for Hashcat family of password crackers.
 
 
 
 ### <a name="appt">App Specific Tools(as in single application focus)</a>
 * [crackxls2003 0.4](https://github.com/GavinSmith0123/crackxls2003)
 	* This program may be used to break the encryption on Microsoft Excel and Microsoft Word file which have been encrypted using the RC4 method, which uses a 40-bit-long key. This was the default encryption method in Word and Excel 97/2000/2002/2003. This program will not work on files encrypted using Word or Excel 2007 or later, or for versions 95 or earlier. It will not work if a file was encrypted with a non-default method. Additionally, documents created with the Windows system locale set to France may use a different encryption method.
-
+* [mod0keecrack](https://github.com/devio/mod0keecrack)
+	* mod0keecrack is a simple tool to crack/bruteforce passwords of KeePass 2 databases. It implements a KeePass 2 Database file parser for .kdbx files, as well as decryption routines to verify if a supplied password is correct. mod0keecrack only handles the encrypted file format and is not able to parse the resulting plaintext database. The only purpose of mod0keecrack is the brute-forcing of a KeePass 2 database password.
 
 
 
@@ -187,7 +188,8 @@
 	* A core objective of the Password Research Institute is to improve the industry awareness of existing authentication research. Many valuable solutions for the problems associated with authentication have gone unnoticed by the people interested in, or responsible for, authentication security. This project will compile and share a comprehensive, but moderated, index of password and authentication related research papers. We aim to share the details of useful papers, provide access to the papers, and encourage collaboration between authors and other security professionals.
 * [When Privacy meets Security: Leveraging personal information for password cracking - M. Dürmuth,A. ChaabaneD. Perito,C. Castelluccia]()
 	* Passwords are widely used for user authentication and, de- spite their weaknesses, will likely remain in use in the fore seeable future. Human-generated passwords typically have a rich structure , which makes them susceptible to guessing attacks. In this paper, we stud y the effectiveness of guessing attacks based on Markov models. Our contrib utions are two-fold. First, we propose a novel password cracker based o n Markov models, which builds upon and extends ideas used by Narayana n and Shmatikov (CCS 2005). In extensive experiments we show that it can crack up to 69% of passwords at 10 billion guesses, more than a ll probabilistic password crackers we compared against. Second, we systematically analyze the idea that additional personal informatio n about a user helps in speeding up password guessing. We find that, on avera ge and by carefully choosing parameters, we can guess up to 5% more pas swords, especially when the number of attempts is low. Furthermore, we show that the gain can go up to 30% for passwords that are actually b ased on personal attributes. These passwords are clearly weaker an d should be avoided. Our cracker could be used by an organization to detect and reject them. To the best of our knowledge, we are the first to syst ematically study the relationship between chosen passwords and users’ personal in- formation. We test and validate our results over a wide colle ction of leaked password databases.
-
+* [PassGAN](https://github.com/brannondorsey/PassGAN)
+	* This repository contains code for the [PassGAN: A Deep Learning Approach for Password Guessing paper](https://arxiv.org/abs/1709.00440). The model from PassGAN is taken from [Improved Training of Wasserstein GANs](https://arxiv.org/abs/1704.00028) and it is assumed that the authors of PassGAN used the [improved_wgan_training tensorflow](https://github.com/igul222/improved_wgan_training) implementation in their work. For this reason, I have modified that reference implementation in this repository to make it easy to train (train.py) and sample (sample.py) from. 
 
 
 

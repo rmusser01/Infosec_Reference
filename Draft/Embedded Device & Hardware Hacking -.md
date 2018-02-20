@@ -16,6 +16,8 @@ http://greatscottgadgets.com/infiltrate2013/
 	* On every intel chip core2duo and newer
 * [Adapting Software Fault Isolation to Contemporary CPU Architectures](https://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35649.pdf)
 	* Software Fault Isolation (SFI) is an effective approach to sandboxing binary code of questionable provenance, an interesting use case for native plugins in a Web browser. We present software fault isolation schemes for ARM and x86-64 that provide control-flow and memory integrity with average performance overhead of under 5% on ARM and 7% on x86-64. We believe these are the best known SFI implementations for these architectures, with significantly lower overhead than previous systems for similar architectures. Our experience suggests that these SFI implementations benefit from instruction-level parallelism, and have particularly small impact for work- loads that are data memory-bound, both properties that tend to reduce the impact of our SFI systems for future CPU implementations.
+* [nexmon](https://github.com/seemoo-lab/nexmon)
+	* Nexmon is our C-based firmware patching framework for Broadcom/Cypress WiFi chips that enables you to write your own firmware patches, for example, to enable monitor mode with radiotap headers and frame injection.
 
 #### end sort
 
@@ -109,6 +111,10 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
+---------------
+### esp8266 H/W related
+* [esp8266 wiki](https://github.com/esp8266/esp8266-wiki)
+
 ---------------------------
 ### <a name="flash">Flash Memory</a>
 * **101**
@@ -130,7 +136,11 @@ http://greatscottgadgets.com/infiltrate2013/
 	* [Lost your "secure" HDD PIN? We can help!](https://syscall.eu/pdf/2016-Lenoir_Rigo-HDD_PIN-paper.pdf)
 	* [Analyzing and Running binaries from Firmware Images - Part 1](http://w00tsec.blogspot.com.br/2013/09/analyzing-and-running-binaries-from.html)
 * **General**
+	* [Damn Vulnerable Router Firmware (DVRF) v0.5](https://github.com/b1ack0wl/DVRF)
+		* The goal of this project is to simulate a real world environment to help people learn about other CPU architectures outside of the x86_64 space. This project is also for those who are curious about embedded research, but don't want to invest a lot of money.
 * **Tools**
+	* [Firmware Analysis Toolkit](https://github.com/attify/firmware-analysis-toolkit)
+		* FAT is a toolkit built in order to help security researchers analyze and identify vulnerabilities in IoT and embedded device firmware. 
 * **Miscellaneous**
 	* [Firmware Forensics: Diffs, Timelines, ELFs and Backdoors](http://w00tsec.blogspot.com/2015/02/firmware-forensics-diffs-timelines-elfs.html)
 	* [Firmwalker](https://github.com/craigz28/firmwalker
@@ -176,6 +186,17 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 
+------------------------
+### Miscellaneous Devices
+
+* [dustcloud](https://github.com/dgiese/dustcloud)
+	* Xiaomi Vacuum Robot Reverse Engineering and Hacking
+* [Xiaomi Dafang hacks](https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks)
+	* This repository is a collection of information & software for the Xiaomi Dafang Camera
+* [xiaomi-sensors-hacks](https://github.com/PischeDev/xiaomi-sensors-hacks)
+	* collection of xiaomi/aqara sensors hacks/modifications
+
+
 ---------------------------
 ### Lightning/Thunderbolt
 
@@ -214,11 +235,13 @@ See 'Printers' Section in Network Attacks & Scanning
 
 
 ------------------
-### Smart TVs
+### Smart TVs/Monitors
 * **101**
 * **Articles/Papers/Talks/Writeups**
 	* [Smart TV Security - #1984 in 21 st century](https://cansecwest.com/slides/2013/SmartTV%20Security.pdf)
 		* This talk is more about security bugs and rootkits than about firmware for TVs. This talk more covers rootkits than security bugs and exploitation thereof, as they’re not different to traditional techniques. This talk is about general security issues of all Smart TV vendors.
+	* [MonitorDarkly](https://github.com/RedBalloonShenanigans/MonitorDarkly)
+		* This repo contains the exploit for the Dell 2410U monitor. It contains utilities for communicating with and executing code on the device. The research presented here was done in order to highlight the lack of security in "modern" on-screen-display controllers. Please check out our Recon 0xA presentation (included) for a detailed description of our research findings and process.
 * **General**
 * **Tools**
 * **Miscellaneous**
@@ -246,6 +269,9 @@ See 'Printers' Section in Network Attacks & Scanning
 * **Tools**
 * **Miscellaneous**
 
+-------------
+### PCB Related
+* [PCB-RE: Tools & Techniques](https://www.amazon.com/dp/1979331383)
 
 ------------------------------
 ### Point-of-Sale

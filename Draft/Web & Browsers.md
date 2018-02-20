@@ -11,10 +11,12 @@ Web TOC
 	* [Brute Force Fuzzing](#brute)
 	* [Attacking Continous Integration Systems](#ci)
 	* [Cross-Site-Request Forgery](#csrf)
+	* [CSV Injection](#csv)
 	* [De/Encoders](#encode)
 	* [Data Structure Attacks](#dsa)
 	* [Embedded Malicious Code](#emc)
 	* [Exploitation of Authentication](#eoa) 
+	* [Insecure Direct Object Reference](#idor)
 	* [Injection Based Attacks](#ija)
 		* OS Command Injection 
 		* (NO)SQL Injection
@@ -23,6 +25,7 @@ Web TOC
 	* [JSON Web Tokens](#jwt)
 	* [LFI & RFI](#lrfi)
 	* [Path Traversal Attacks](#pta)
+	* [Reflected File Download](#rfd)
 	* [Server Side Request Forgery](#ssrf)
 	* [Server Side Include](#ssi)
 	* [Server Side Template Injection](#ssti)
@@ -50,6 +53,7 @@ Web TOC
 * [Miscellaneous](#misc)
 * [Burp Stuff/Plugins](#burp)
 * [AWS stuff](#aws)
+* [Cloudflare related](#cloudflare)
 * [Google Compute Cloud/AppEngine](#gcc)
 
 
@@ -72,25 +76,18 @@ Web TOC
 * [Abusing Google App Scripting Through Social Engineering](http://www.redblue.team/2017/02/abusing-google-app-scripting-through.html)
 * [Unrestricted File Upload Security Testing - Aptive](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
 
-* [Cross Site History Manipulation - OWASP](https://www.owasp.org/index.php/Cross_Site_History_Manipulation_(XSHM))
-
-* **Reflected File Download**
-	* [Reflected File Download - A New Web Attack Vector - BHEU 2014](https://www.youtube.com/watch?v=dl1BJUNk8V4)
-		* Skip to 19:24 for technical content
-	* [Paper](https://drive.google.com/file/d/0B0KLoHg_gR_XQnV4RVhlNl96MHM/view)
 
 * [How to configure Json.NET to create a vulnerable web API](https://www.alphabot.com/security/blog/2017/net/How-to-configure-Json.NET-to-create-a-vulnerable-web-API.html)
-
-* **Struts**
-	* [Apache Struts 2.3.5 < 2.3.31 / 2.5 < 2.5.10 - Remote Code Execution](https://www.exploit-db.com/exploits/41570/)
-* [Tricks to improve web app excel export attacks - Jerome Smith - CamSec2016](https://www.slideshare.net/exploresecurity/camsec-sept-2016-tricks-to-improve-web-app-excel-export-attacks)
 
 https://github.com/stephenbradshaw/breakableflask
 https://github.com/JasonHinds13/hackable
 https://github.com/omarkurt/flask-injection
 * [Fingerprinter](https://github.com/erwanlr/Fingerprinter)
 	*  CMS/LMS/Library etc Versions Fingerprinter. This script's goal is to try to find the version of the remote application/third party script etc by using a fingerprinting approach.
+https://github.com/toddmotto/public-apis
+https://github.com/grafscan/GraFScaN/blob/master/README.md
 
+* [Cross Site History Manipulation - OWASP](https://www.owasp.org/index.php/Cross_Site_History_Manipulation_(XSHM))
 
 #### End Sort
 
@@ -130,14 +127,6 @@ https://github.com/omarkurt/flask-injection
 	* [Typosquatting programming language package managers](http://incolumitas.com/2016/06/08/typosquatting-package-managers/)
 	* **General Reconnaissance Techniques**
 		* [Insecure HTTP Header Removal](https://www.aspectsecurity.com/blog/insecure-http-header-removal)
-	* **CSV Injection**
-		* [From CSV to CMD to qwerty](http://www.exploresecurity.com/from-csv-to-cmd-to-qwerty/)
-		* [Comma Separated Vulnerabilities](https://www.contextis.com/blog/comma-separated-vulnerabilities)
-			* This post introduces Formula Injection, a technique for exploiting ‘Export to Spreadsheet’ functionality in web applications to attack users and steal spreadsheet contents. It also details a command injection exploit for Apache OpenOffice and LibreOffice that can be delivered using this technique.
-		* [The Absurdly Underestimated Dangers of CSV Injection](http://georgemauer.net/2017/10/07/csv-injection.html)
-
-
-
 
 ------------------
 ### <a name="pvuln"></a>Purposely Vulnerable Web Applications/Testing Grounds
@@ -230,7 +219,8 @@ https://github.com/omarkurt/flask-injection
 			* Tachyon is a Fast Multi-Threaded Web Discovery Tool
 		* [dirsearch](https://github.com/maurosoria/dirsearch)
 			* dirsearch is a simple command line tool designed to brute force directories and files in websites.
-	
+		* [LinkFinder](https://github.com/GerbenJavado/LinkFinder)
+			* LinkFinder is a python script written to discover endpoints and their parameters in JavaScript files. This way penetration testers and bug hunters are able to gather new, hidden endpoints on the websites they are testing. Resulting in new testing ground, possibility containing new vulnerabilities. It does so by using [jsbeautifier](https://github.com/beautify-web/js-beautify) for python in combination with a fairly large regular expression.
 	* **Web Page**
 		* [HTCAP](https://github.com/segment-srl/htcap)
 			* htcap is a web application scanner able to crawl single page application (SPA) in a recursive manner by intercepting ajax calls and DOM changes
@@ -274,12 +264,19 @@ https://github.com/omarkurt/flask-injection
 
 
 ----------------
-#### Attacking Continous Integration Systems
+#### <a name="ci"></a> Attacking Continous Integration Systems
 * [cider - Continuous Integration and Deployment Exploiter](https://github.com/spaceB0x/cider)
 	* CIDER is a framework written in node js that aims to harness the functions necessary for exploiting Continuous Integration (CI) systems and their related infrastructure and build chain (eg. Travis-CI, Drone, Circle-CI). Most of the exploits in CIDER exploit CI build systems through open GitHub repositories via malicious Pull Requests. It is built modularly to encourage contributions, so more exploits, attack surfaces, and build chain services will be integrated in the future.
 * [Rotten Apple](https://github.com/claudijd/rotten_apple)
 	* A tool for testing continuous integration (CI) or continuous delivery (CD) system security
 * [Exploiting Continuous Integration (CI) and Automated Build Systems - spaceb0x](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-spaceB0x-Exploiting-Continuous-Integration.pdf)
+
+------------------
+#### <a name="csv"></a> CSV Injection
+* [From CSV to CMD to qwerty](http://www.exploresecurity.com/from-csv-to-cmd-to-qwerty/)
+* [Comma Separated Vulnerabilities](https://www.contextis.com/blog/comma-separated-vulnerabilities)
+	* This post introduces Formula Injection, a technique for exploiting ‘Export to Spreadsheet’ functionality in web applications to attack users and steal spreadsheet contents. It also details a command injection exploit for Apache OpenOffice and LibreOffice that can be delivered using this technique.
+* [The Absurdly Underestimated Dangers of CSV Injection](http://georgemauer.net/2017/10/07/csv-injection.html)
 
 
 ----------------
@@ -318,6 +315,23 @@ https://github.com/omarkurt/flask-injection
 * [Comma Separated Vulnerabilities](https://www.contextis.com/blog/comma-separated-vulnerabilities)
 
 
+----------------
+#### <a name="emc">Embedded Malicious Code</a>
+
+
+----------------
+#### <a name="eoa">Exploitation of Authentication </a>
+
+----------------
+#### <a name="idor">Insecure Direct Object Reference</a>
+
+
+
+* [Web to App Phone Notification IDOR to view Everyone’s Airbnb Messages - buer.haus](https://buer.haus/2017/03/31/airbnb-web-to-app-phone-notification-idor-to-view-everyones-airbnb-messages/)
+
+
+
+
 
 ----------------
 #### Electron
@@ -351,7 +365,11 @@ https://github.com/omarkurt/flask-injection
 	* [Security and Open Redirects  Impact of 301-ing people in 2013](https://makensi.es/rvl/openredirs/#/)
 
 
-
+------------
+#### File Upload Testing
+* [fuxploider](https://github.com/almandin/fuxploider)
+	* File upload vulnerability scanner and exploitation tool.
+* [Unrestricted File Upload Testing](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
 
 -------------------
 #### <a name="ija">Injection Based Attacks</a>
@@ -404,29 +422,38 @@ https://github.com/omarkurt/flask-injection
 ### <a name="jsa">De-/Serialization Attacks</a>
 * **General**
 * **Java**
-	* [Java-Deserialization-Cheat-Sheet](https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet)
-	* [Break Fast Serial](https://github.com/GoSecure/break-fast-serial)
-		* A proof of concept that demonstrates asynchronous scanning for Java deserialization bugs
-	* [SerialKiller: Bypass Gadget Collection](https://github.com/pwntester/SerialKillerBypassGadgetCollection)
-		* Collection of Bypass Gadgets that can be used in JVM Deserialization Gadget chains to bypass "Look-Ahead ObjectInputStreams" desfensive deserialization.
-	* [ysoserial](https://github.com/frohoff/ysoserial)
-	* [The perils of Java deserialization](https://community.hpe.com/t5/Security-Research/The-perils-of-Java-deserialization/ba-p/6838995)
-	* [Java-Deserialization-Cheat-Sheet](https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet)
-		* A cheat sheet for pentesters about Java Native Binary Deserialization vulnerabilities
-	* [Java Unmarshaller Security - Turning your data into code execution](https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true)
-		* This paper presents an analysis, including exploitation details, of various Java open-source marshalling libraries that allow(ed) for unmarshalling of arbitrary, attacker supplied, types and shows that no matter how this process is performed and what implicit constraints are in place it is prone to similar exploitation techniques.
-		* tool from the above paper: [marshalsec](https://github.com/mbechler/marshalsec/)
-	* [Reliable discovery and Exploitation of Java Deserialization vulns](https://techblog.mediaservice.net/2017/05/reliable-discovery-and-exploitation-of-java-deserialization-vulnerabilities/)
-	* [Pwning Your Java Messaging With De- serialization Vulnerabilities](https://www.blackhat.com/docs/us-16/materials/us-16-Kaiser-Pwning-Your-Java-Messaging-With-Deserialization-Vulnerabilities-wp.pdf)
-	* [Java Deserialization Security FAQ](https://christian-schneider.net/JavaDeserializationSecurityFAQ.html)
-	* [The Perils of Java Deserialization](http://community.hpe.com/hpeb/attachments/hpeb/off-by-on-software-security-blog/722/1/HPE-SR%20whitepaper%20java%20deserialization%20RSA2016.pdf)
-	* [Detecting deserialization bugs with DNS exfiltration](http://gosecure.net/2017/03/22/detecting-deserialization-bugs-with-dns-exfiltration/)
-	* [JMET](https://github.com/matthiaskaiser/jmet)
-		* JMET was released at Blackhat USA 2016 and is an outcome of Code White's research effort presented in the talk "Pwning Your Java Messaging With Deserialization Vulnerabilities". The goal of JMET is to make the exploitation of the Java Message Service (JMS) easy. In the talk more than 12 JMS client implementations where shown, vulnerable to deserialization attacks. The specific deserialization vulnerabilities were found in ObjectMessage implementations (classes implementing javax.jms.ObjectMessage).
-	* [Serianalyzer](https://github.com/mbechler/serianalyzer)
-		* A static byte code analyzer for Java deserialization gadget research
-	* [Java Deserialization Exploits](https://github.com/CoalfireLabs/java_deserialization_exploits)
-		* A collection of Java Deserialization Exploits
+	* **Articles/Blogposts/Writeups**
+		* [The perils of Java deserialization](https://community.hpe.com/t5/Security-Research/The-perils-of-Java-deserialization/ba-p/6838995)
+		* [Java Deserialization Security FAQ](https://christian-schneider.net/JavaDeserializationSecurityFAQ.html)
+		* [The Perils of Java Deserialization](http://community.hpe.com/hpeb/attachments/hpeb/off-by-on-software-security-blog/722/1/HPE-SR%20whitepaper%20java%20deserialization%20RSA2016.pdf)
+		* [Detecting deserialization bugs with DNS exfiltration](http://gosecure.net/2017/03/22/detecting-deserialization-bugs-with-dns-exfiltration/)
+
+	* **General**
+		* [Java-Deserialization-Cheat-Sheet](https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet)
+			* A cheat sheet for pentesters about Java Native Binary Deserialization vulnerabilities
+	* **Papers/Talks/Presentations**
+		* [Java Unmarshaller Security - Turning your data into code execution](https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true)
+			* This paper presents an analysis, including exploitation details, of various Java open-source marshalling libraries that allow(ed) for unmarshalling of arbitrary, attacker supplied, types and shows that no matter how this process is performed and what implicit constraints are in place it is prone to similar exploitation techniques.
+			* tool from the above paper: [marshalsec](https://github.com/mbechler/marshalsec/)
+		* [Reliable discovery and Exploitation of Java Deserialization vulns](https://techblog.mediaservice.net/2017/05/reliable-discovery-and-exploitation-of-java-deserialization-vulnerabilities/)
+		* [Pwning Your Java Messaging With De- serialization Vulnerabilities](https://www.blackhat.com/docs/us-16/materials/us-16-Kaiser-Pwning-Your-Java-Messaging-With-Deserialization-Vulnerabilities-wp.pdf)
+		* [Java Unmarshaller Security - Turning your data into code execution](https://github.com/mbechler/marshalsec)
+			* This paper presents an analysis, including exploitation details, of various Java open-source marshalling libraries that allow(ed) for unmarshalling of arbitrary, attacker supplied, types and shows that no matter how this process is performed and what implicit constraints are in place it is prone to similar exploitation techniques.
+	* **Tools**
+		* [Break Fast Serial](https://github.com/GoSecure/break-fast-serial)
+			* A proof of concept that demonstrates asynchronous scanning for Java deserialization bugs
+		* [ysoserial](https://github.com/frohoff/ysoserial)
+		* [JMET](https://github.com/matthiaskaiser/jmet)
+			* JMET was released at Blackhat USA 2016 and is an outcome of Code White's research effort presented in the talk "Pwning Your Java Messaging With Deserialization Vulnerabilities". The goal of JMET is to make the exploitation of the Java Message Service (JMS) easy. In the talk more than 12 JMS client implementations where shown, vulnerable to deserialization attacks. The specific deserialization vulnerabilities were found in ObjectMessage implementations (classes implementing javax.jms.ObjectMessage).
+	* **Exploits**
+		* [SerialKiller: Bypass Gadget Collection](https://github.com/pwntester/SerialKillerBypassGadgetCollection)
+			* Collection of Bypass Gadgets that can be used in JVM Deserialization Gadget chains to bypass "Look-Ahead ObjectInputStreams" desfensive deserialization.
+		* [Serianalyzer](https://github.com/mbechler/serianalyzer)
+			* A static byte code analyzer for Java deserialization gadget research
+		* [Java Deserialization Exploits](https://github.com/CoalfireLabs/java_deserialization_exploits)
+			* A collection of Java Deserialization Exploits
+		* [Java Deserialization Exploits](https://github.com/Coalfire-Research/java-deserialization-exploits)
+			* A collection of curated Java Deserialization Exploits
 * **Python**
 	* [Exploiting Python Deserialization Vulnerabilities](https://crowdshield.com/blog.php?name=exploiting-python-deserialization-vulnerabilities)
 	* [Exploiting misuse of Python's "pickle"](https://blog.nelhage.com/2011/03/exploiting-pickle/)
@@ -456,26 +483,22 @@ https://github.com/omarkurt/flask-injection
 	* [How to configure Json.NET to create a vulnerable web API - alphabot](https://www.alphabot.com/security/blog/2017/net/How-to-configure-Json.NET-to-create-a-vulnerable-web-API.html)
 	* [🔐 Learn how to use JSON Web Token (JWT) to secure your next Web App! (Tutorial/Example with Tests!!)](https://github.com/dwyl/learn-json-web-tokens)
 
-
-
-
 -------------------
 ### <a name="lrfi">LFI & RFI</a>
 * **101**
 	* [File inclusion vulnerability - Wikipedia](https://en.wikipedia.org/wiki/File_inclusion_vulnerability)
 * **General**
 * **Testing**
-	* [Unrestricted File Upload Testing](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
 	* [LFI Local File Inclusion Techniques (paper)](http://www.ush.it/2008/08/18/lfi2rce-local-file-inclusion-to-remote-code-execution-advanced-exploitation-proc-shortcuts/)
 		* This paper exposes the ability from the attacker standpoint to use /proc in order to exploit LFI (Local File Inclusion) vulnerabilities. While using /proc for such aim is well known this one is a specific technique that was not been previously published as far as we know. A tool to automatically exploit LFI using the shown approach is released accordingly. 
 	* [Update: a third (known) technique has been dissected here](http://www_ush_it/2008/07/09/local-file-inclusion-lfi-of-session-files-to-root-escalation/ ) 
-	* [psychoPATH - LFI](https://github.com/ewilded/psychoPATH/blob/master/README.md)
-		* This tool is a highly configurable payload generator detecting LFI & web root file uploads. Involves advanced path traversal evasive techniques, dynamic web root list generation, output encoding, site map-searching payload generator, LFI mode, nix & windows support plus single byte generator.
 * **Tools**
 	* [Liffy](https://github.com/rotlogix/liffy)
 		* Liffy is a Local File Inclusion Exploitation tool. 
 	* [lfi-labs](https://github.com/paralax/lfi-labs)
 		* small set of PHP scripts to practice exploiting LFI, RFI and CMD injection vulns
+	* [psychoPATH - LFI](https://github.com/ewilded/psychoPATH/blob/master/README.md)
+		* This tool is a highly configurable payload generator detecting LFI & web root file uploads. Involves advanced path traversal evasive techniques, dynamic web root list generation, output encoding, site map-searching payload generator, LFI mode, nix & windows support plus single byte generator.
 * **Writeups**
 	* [Turning LFI into RFI](https://l.avala.mp/?p=241)
 		* When configured in a specific way the web application would load the JAR file and search within the file for a class. Interestingly enough, in Java classes you can define a static block that is executed upon the class being processed
@@ -559,6 +582,12 @@ https://github.com/omarkurt/flask-injection
 * [dotdotpwn](https://github.com/wireghoul/dotdotpwn)
 	* It's a very flexible intelligent fuzzer to discover traversal directory vulnerabilities in software such as HTTP/FTP/TFTP servers, Web platforms such as CMSs, ERPs, Blogs, etc.
 
+
+-------------
+### <a name="rfd"></a>Reflected File Download
+* [Reflected File Download - A New Web Attack Vector - BHEU 2014](https://www.youtube.com/watch?v=dl1BJUNk8V4)
+	* Skip to 19:24 for technical content
+* [Paper](https://drive.google.com/file/d/0B0KLoHg_gR_XQnV4RVhlNl96MHM/view)
 
 
 -------------
@@ -758,6 +787,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 * **Securing**
 	* [RESTful API Best Practices and Common Pitfalls](https://medium.com/@schneidenbach/restful-api-best-practices-and-common-pitfalls-7a83ba3763b5)
 	* [OWASP API Security Project](https://www.owasp.org/index.php/OWASP_API_Security_Project)
+	* [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist/)
+		* Checklist of the most important security countermeasures when designing, testing, and releasing your API
 * **Tools**
 	* [Postman - chrome plugin](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
 	* [restclient - Firefox addon](https://addons.mozilla.org/de/firefox/addon/restclient/)
@@ -773,6 +804,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 ### <a name="atkb"Attacking Browsers</a>
 * **General**
 	* [White Lightning Attack Platform](https://github.com/TweekFawkes/White_Lightning)
+	* [Browser as Botnet - Brannon Dorsey - Radical Networks 2017](https://www.youtube.com/watch?v=GcXfu-EAECo)
+		* When surfing the web, browsers download and execute arbitrary JavaScript code they receive from websites they visit. What if high-traffic websites served obfuscated code that secretly borrowed clock cycles from their client’s web browser as a means of distributed computing? In this talk I present research on the topic of using web browsers as zero-configuration, trojan-less botnets. The presentation includes a brief history of botnets, followed by an overview of techniques to build and deploy command-and-control botnet clients that run in-browser.
 * **Browser Extensions**
 	* [Attacking Browser Extensions](https://github.com/qll/attacking-browser-extensions)
 	* [Botnet in the Browser: Understanding Threats Caused by Malicious Browser Extensions](https://arxiv.org/pdf/1709.09577.pdf)
@@ -784,7 +817,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* Goes from introducing a fuzzer to producing an IE11 0day
 	* [The Birth of a Complete IE11 Exploit Under the New Exploit Mitigations](https://www.syscan.org/index.php/download/get/aef11ba81927bf9aa02530bab85e303a/SyScan15%20Yuki%20Chen%20-%20The%20Birth%20of%20a%20Complete%20IE11%20Exploit%20Under%20the%20New%20Exploit%20Mitigations.pdf)
 	* [BeEF Browser Exploitation Framework](http://beefproject.com/)
-
+	* [BeEF](https://github.com/beefproject/beef)
+		* Amid growing concerns about web-borne attacks against clients, including mobile clients, BeEF allows the professional penetration tester to assess the actual security posture of a target environment by using client-side attack vectors. Unlike other security frameworks, BeEF looks past the hardened network perimeter and client system, and examines exploitability within the context of the one open door: the web browser. BeEF will hook one or more web browsers and use them as beachheads for launching directed command modules and further attacks against the system from within the browser context.
 
 
 ----------------
@@ -950,7 +984,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [Pentesting Django and Rails](https://es.slideshare.net/levigross/pentesting-django-and-rails)
 	* [Executing commands in ruby](http://blog.bigbinary.com/2012/10/18/backtick-system-exec-in-ruby.html)
 	* [Execution of shell code in Ruby scripts](https://makandracards.com/makandra/1243-execution-of-shell-code-in-ruby-scripts)
-
+	* [Brakeman](https://github.com/presidentbeef/brakeman)
+		* Brakeman is an open source static analysis tool which checks Ruby on Rails applications for security vulnerabilities.
 
 
 -----------------
@@ -1020,11 +1055,18 @@ fuse.ca/race-conditions-in-web-applications.htm)
 
 
 
+
+--------------
+### Apache Struts
+* **Struts**
+	* [Apache Struts 2.3.5 < 2.3.31 / 2.5 < 2.5.10 - Remote Code Execution](https://www.exploit-db.com/exploits/41570/)
+
+
 ----------------
-### <a name="websocket"></a>Web Sockets
+### <a name="websocket"></a>WebSockets
 * [The WebSocket Protocol Standard - IETF](https://tools.ietf.org/html/rfc6455)
 * [WebSocket Protocol - RFC Draft 17](https://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-17)
-
+* [Websockets - An Introduction - subudeepak](https://gist.github.com/subudeepak/9897212)
 
 
 
@@ -1069,6 +1111,17 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [Bypassing WAFs](http://www.nethemba.com/bypassing-waf.pdf)
 	* [WAFPASS](https://github.com/wafpassproject/wafpass)
 		* Analysing parameters with all payloads' bypass methods, aiming at benchmarking security solutions like WAF.
+	* [WAF Bypass Cheatsheet/gitbook](https://chybeta.gitbooks.io/waf-bypass/content/)
+	* [Web Application Firewall (WAF) Evasion Techniques - secjuice](https://medium.com/secjuice/waf-evasion-techniques-718026d693d8)
+* **Attacking/Auditing**
+	* [LightBulb](https://github.com/PortSwigger/lightbulb-framework)
+		* LightBulb is an open source python framework for auditing web application firewalls and filters.
+	* [WAFNinja](https://github.com/khalilbijjou/WAFNinja)
+		* WAFNinja is a tool which contains two functions to attack Web Application Firewalls.
+* **Identifying**
+	* [WhatWaf](https://github.com/Ekultek/WhatWaf)
+		* WhatWaf is an advanced firewall detection tool who's goal is to give you the idea of "There's a WAF?". WhatWaf works by detecting a firewall on a web application, and attempting to detect a bypass (or two) for said firewall, on the specified target.
+
 
 
 
@@ -1177,6 +1230,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [Burp Pro : Real-life tips and tricks](https://hackinparis.com/talk-nicolazs-gregoire)
 	* [Behind enemy lines: Bug hunting with Burp Infiltrator](http://blog.portswigger.net/2017/06/behind-enemy-lines-bug-hunting-with.html)
 	* [Automating Web Apps Input fuzzing via Burp Macros](http://blog.securelayer7.net/automating-web-apps-input-fuzzing-via-burp-macros/)
+	* [Developing Burp Suite Extensions - DOYENSEC](https://github.com/doyensec/burpdeveltraining)
+		* Material for the training "Developing Burp Suite Extensions – From Manual Testing to Security Automation"
 * **Plugins**
 	* [Adapting Burp Extensions for Tailored Pentesting](http://blog.portswigger.net/2017/08/adapting-burp-extensions-for-tailored.html)
 	* [AuthMatrix](https://github.com/SecurityInnovation/AuthMatrix)
@@ -1212,7 +1267,12 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* SAML Raider is a Burp Suite extension for testing SAML infrastructures. It contains two core functionalities: Manipulating SAML Messages and manage X.509 certificates.
 	* [swurg](https://github.com/AresS31/swurg)
 		* Parses Swagger files into the BurpSuite for automating RESTful API testing – approved by Burp for inclusion in their official BApp Store.
-
+	* [Burp-molly-pack](https://github.com/yandex/burp-molly-pack)
+		* Burp-molly-pack is Yandex security checks pack for Burp. The main goal of Burp-molly-pack is to extend Burp checks. Plugins contains Active and Passive security checks.
+	* [NoPE Proxy](https://github.com/summitt/Burp-Non-HTTP-Extension)
+		* Non-HTTP Protocol Extension (NoPE) Proxy and DNS for Burp Suite.
+	* [AutoRepeater](https://github.com/nccgroup/AutoRepeater)
+		* Burp Suite is an intercepting HTTP Proxy, and it is the defacto tool for performing web application security testing. While Burp Suite is a very useful tool, using it to perform authorization testing is often a tedious effort involving a "change request and resend" loop, which can miss vulnerabilities and slow down testing. AutoRepeater, an open source Burp Suite extension, was developed to alleviate this effort. AutoRepeater automates and streamlines web application authorization testing, and provides security researchers with an easy-to-use tool for automatically duplicating, modifying, and resending requests within Burp Suite while quickly evaluating the differences in responses.
 
 
 
@@ -1222,25 +1282,37 @@ fuse.ca/race-conditions-in-web-applications.htm)
 * **Attacking**
 	* [Gone in 60 Milliseconds - Intrusion and Exfiltration in Server-less Architectures](https://media.ccc.de/v/33c3-7865-gone_in_60_milliseconds)
 		* More and more businesses are moving away from monolithic servers and turning to event-driven microservices powered by cloud function providers like AWS Lambda. So, how do we hack in to a server that only exists for 60 milliseconds? This talk will show novel attack vectors using cloud event sources, exploitabilities in common server-less patterns and frameworks, abuse of undocumented features in AWS Lambda for persistent malware injection, identifying valuable targets for pilfering, and, of course, how to exfiltrate juicy data out of a secure Virtual Private Cloud. 
-	* [Bucketlist](https://github.com/michenriksen/bucketlist)
-		* Bucketlist is a quick project I threw together to find and crawl Amazon S3 buckets and put all the data into a PostgreSQL database for querying.
 	* [Penetration Testing AWS Storage: Kicking the S3 Bucket](https://rhinosecuritylabs.com/penetration-testing/penetration-testing-aws-storage/)
 	* [AWS pwn](https://github.com/dagrz/aws_pwn)
 		* This is a collection of horribly written scripts for performing various tasks related to penetration testing AWS. Please don't be sad if it doesn't work for you. It might be that AWS has changed since a given tool was written or it might be that the code sux. Either way, please feel free to contribute. Most of this junk was written by Daniel Grzelak but there's been plenty of contributions, most notably Mike Fuller.
-	* [bucket-stream](https://github.com/eth0izzle/bucket-stream/blob/master/README.md)
-		* This tool simply listens to various certificate transparency logs (via certstream) and attempts to find public S3 buckets from permutations of the certificates domain name.	
 * **General**
 	* [Using DNS to Break Out of Isolated Networks in a AWS Cloud Environment](https://dejandayoff.com/using-dns-to-break-out-of-isolated-networks-in-a-aws-cloud-environment/)
 		* Customers can utilize AWS' DNS infrastructure in VPCs (enabled by default). Traffic destined to the AmazonProvidedDNS is traffic bound for AWS management infrastructure and does not egress via the same network links as standard customer traffic and is not evaluated by Security Groups. Using DNS exfiltration, it is possible to exfiltrate data out of an isolated network.
-* **Securing**
-	* [AWS Security Primer](https://cloudonaut.io/aws-security-primer/#fn:2)
-* **Tools**
-	* [Scout2](https://github.com/nccgroup/Scout2)
-		* Scout2 is a security tool that lets AWS administrators assess their environment's security posture. Using the AWS API, Scout2 gathers configuration data for manual inspection and highlights high-risk areas automatically. Rather than pouring through dozens of pages on the web, Scout2 supplies a clear view of the attack surface automatically.
+* **S3 Buckets**
+	* [bucket-stream](https://github.com/eth0izzle/bucket-stream/blob/master/README.md)
+		* This tool simply listens to various certificate transparency logs (via certstream) and attempts to find public S3 buckets from permutations of the certificates domain name.	
 	* [AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)
 		* Security Tool to Look For Interesting Files in S3 Buckets
 	* [buckethead.py](https://github.com/RhinoSecurityLabs/Security-Research/tree/master/tools/aws-pentest-tools)
 		* buckethead.py searches across every AWS region for a variety of bucket names based on a domain name, subdomains, affixes given and more. Currently the tool will only present to you whether or not the bucket exists or if they're listable. If the bucket is listable, then further interrogation of the resource can be done. It does not attempt download or upload permissions currently but could be added as a module in the future. You will need the awscli to run this tool as this is a python wrapper around this tool.
+	* [slurp](https://github.com/bbb31/slurp)
+		* Enumerate S3 buckets via certstream, domain, or keywords
+	* [Bucketlist](https://github.com/michenriksen/bucketlist)
+		* Bucketlist is a quick project I threw together to find and crawl Amazon S3 buckets and put all the data into a PostgreSQL database for querying.
+* **Securing**
+	* [AWS Security Primer](https://cloudonaut.io/aws-security-primer/#fn:2)
+
+* **Tools**
+	* [Scout2](https://github.com/nccgroup/Scout2)
+		* Scout2 is a security tool that lets AWS administrators assess their environment's security posture. Using the AWS API, Scout2 gathers configuration data for manual inspection and highlights high-risk areas automatically. Rather than pouring through dozens of pages on the web, Scout2 supplies a clear view of the attack surface automatically.
+
+------------------
+### <a name="cloudflare"></a> Cloudflare
+
+* [CloudFlair: Bypassing Cloudflare using Internet-wide scan data](https://blog.christophetd.fr/bypassing-cloudflare-using-internet-wide-scan-data/)
+* [Exposing Server IPs Behind CloudFlare - chokepoint](http://www.chokepoint.net/2017/10/exposing-server-ips-behind-cloudflare.html)
+* [CloudFlair](https://github.com/christophetd/CloudFlair)
+	* CloudFlair is a tool to find origin servers of websites protected by CloudFlare who are publicly exposed and don't restrict network access to the CloudFlare IP ranges as they should. The tool uses Internet-wide scan data from Censys to find exposed IPv4 hosts presenting an SSL certificate associated with the target's domain name.
 
 ------------------
 ### <a name="gcc"></a>Google Compute Cloud/AppEngine

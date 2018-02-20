@@ -23,12 +23,9 @@
 #### Sort
 * Sort sections alphabetically
 * Update ToC
-
-
 https://forensiccontrol.com/resources/free-software/
-
-
-
+* [usbkill](https://github.com/hephaest0s/usbkill)
+	* usbkill » is an anti-forensic kill-switch that waits for a change on your USB ports and then immediately shuts down your computer.
 
 #### End Sort
 
@@ -160,14 +157,29 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 --------------
 ### <a name="browser"></a>Browser Forensics
-* [Firefox private browsing forensics](http://www.magnetforensics.com/forensic-implications-of-a-person-using-firefoxs-private-browsing/)
-* [MozillaRecovery](https://github.com/gtfy/MozillaRecovery)
-	* Recovers the master password of key3.db files, i.e. Thunderbird, Firefox
-* [Google Chrome Forensics-SANS](https://digital-forensics.sans.org/blog/2010/01/21/google-chrome-forensics#)
-* [Extension Finder](https://github.com/brad-anton/extension_finder)
-	* Python and PowerShell utilities for finding installed browser extensions, plug-ins and add-ons. Attempts to find installed browser extensions (sometimes called add-ons or plug-ins, depending on the browser).
-* [MozillaRecovery](https://github.com/gtfy/MozillaRecovery)
-	* Recovers the master password of key3.db files, i.e. Thunderbird, Firefox
+* **101**
+* **Articles/Papers/Talks/Writeups**
+	* [Firefox private browsing forensics](http://www.magnetforensics.com/forensic-implications-of-a-person-using-firefoxs-private-browsing/)
+	* [Google Chrome Forensics-SANS](https://digital-forensics.sans.org/blog/2010/01/21/google-chrome-forensics#)
+* **General**
+* **Tools**
+	* [MozillaRecovery](https://github.com/gtfy/MozillaRecovery)
+		* Recovers the master password of key3.db files, i.e. Thunderbird, Firefox
+	* [Extension Finder](https://github.com/brad-anton/extension_finder)
+		* Python and PowerShell utilities for finding installed browser extensions, plug-ins and add-ons. Attempts to find installed browser extensions (sometimes called add-ons or plug-ins, depending on the browser).
+	* [MozillaRecovery](https://github.com/gtfy/MozillaRecovery)
+		* Recovers the master password of key3.db files, i.e. Thunderbird, Firefox
+	* [Chrome Ragamuffin](https://github.com/cube0x8/chrome_ragamuffin)
+		* Volatility plugin designed to extract useful information from Google Chrome's address space. The goal of this plugin is to make possible the analysis of a Google Chrome running instance. Starting from a memory dump, Chrome Ragamuffin can list which page was open on which tab and it is able to extract the DOM Tree in order to analyze the full page structure.
+	* [firefox_decrypt](https://github.com/unode/firefox_decrypt)
+		* Firefox Decrypt is a tool to extract passwords from Mozilla (Firefox/Thunderbird/Seabird) profiles
+* **Miscellaneous**
+
+
+
+
+
+
 
 
 --------------
@@ -177,22 +189,35 @@ http://windowsir.blogspot.com/2013/11/sniper-forensics-memory-analysis-and.html
 
 --------------
 ### <a name="memory"></a>Memory Forensics
-* [Detekt](https://github.com/botherder/detekt)
-	* Detekt is a Python tool that relies on Yara, Volatility and Winpmem to scan the memory of a running Windows system (currently supporting Windows XP to Windows 8 both 32 and 64 bit and Windows 8.1 32bit). Detekt tries to detect the presence of pre-defined patterns that have been identified through the course of our research to be unique identifiers that indicate the presence of a given malware running on the computer. 
-* [Dshell](https://github.com/USArmyResearchLab/Dshell)
-	* An extensible network forensic analysis framework. Enables rapid development of plugins to support the dissection of network packet captures. 
-* [Mem forenics cheat sheet](http://forensicmethods.com/wp-content/uploads/2012/04/Memory-Forensics-Cheat-Sheet-v1.pdf)
-* [LiME - Linux Memory Extractor](https://github.com/504ensicsLabs/LiME)
-	* A Loadable Kernel Module (LKM) which allows for volatile memory acquisition from Linux and Linux-based devices, such as Android. This makes LiME unique as it is the first tool that allows for full memory captures on Android devices. It also minimizes its interaction between user and kernel space processes during acquisition, which allows it to produce memory captures that are more forensically sound than those of other tools designed for Linux memory acquisition.
-* [Volatility](https://github.com/volatilityfoundation/volatility)
-	* An advanced memory forensics framework
+* **101**
+* **Articles/Papers/Talks/Writeups**
+	* [How to Pull passwords from a memory dump](https://cyberarms.wordpress.com/2011/11/04/memory-forensics-how-to-pull-passwords-from-a-memory-dump/)
+	* [Unmasking Careto through Memory Analysis - Andrew Case](http://2014.video.sector.ca/video/110388398)
+* **General**
+	* [Windows Memory Analysis Checklist](http://www.dumpanalysis.org/windows-memory-analysis-checklist)
+	* [Mem forenics cheat sheet](http://forensicmethods.com/wp-content/uploads/2012/04/Memory-Forensics-Cheat-Sheet-v1.pdf)
+* **Tools**
+	* [Detekt](https://github.com/botherder/detekt)
+		* Detekt is a Python tool that relies on Yara, Volatility and Winpmem to scan the memory of a running Windows system (currently supporting Windows XP to Windows 8 both 32 and 64 bit and Windows 8.1 32bit). Detekt tries to detect the presence of pre-defined patterns that have been identified through the course of our research to be unique identifiers that indicate the presence of a given malware running on the computer. 
+	* [Dshell](https://github.com/USArmyResearchLab/Dshell)
+		* An extensible network forensic analysis framework. Enables rapid development of plugins to support the dissection of network packet captures. 
+	* [LiME - Linux Memory Extractor](https://github.com/504ensicsLabs/LiME)
+		* A Loadable Kernel Module (LKM) which allows for volatile memory acquisition from Linux and Linux-based devices, such as Android. This makes LiME unique as it is the first tool that allows for full memory captures on Android devices. It also minimizes its interaction between user and kernel space processes during acquisition, which allows it to produce memory captures that are more forensically sound than those of other tools designed for Linux memory acquisition.
+	* [Volatility](https://github.com/volatilityfoundation/volatility)
+		* An advanced memory forensics framework
 	* [VolUtility](https://github.com/kevthehermit/VolUtility)
 		* Web Interface for Volatility Memory Analysis framework
-* [evolve](https://github.com/JamesHabben/evolve)
-	* Web interface for the Volatility Memory Forensics Framework 
-* [How to Pull passwords from a memory dump](https://cyberarms.wordpress.com/2011/11/04/memory-forensics-how-to-pull-passwords-from-a-memory-dump/)
-* [Unmasking Careto through Memory Analysis - Andrew Case](http://2014.video.sector.ca/video/110388398)
-* [Windows Memory Analysis Checklist](http://www.dumpanalysis.org/windows-memory-analysis-checklist)
+	* [evolve](https://github.com/JamesHabben/evolve)
+		* Web interface for the Volatility Memory Forensics Framework 
+	* [Vortessence](https://github.com/vortessence/vortessence)
+		* Vortessence is a tool, whose aim is to partially automate memory forensics analysis. Vortessence is a project of the Security Engineering Lab of the Bern University of Applied Sciences.
+* **Miscellaneous**
+
+
+
+
+
+
 
 
 
@@ -330,62 +355,73 @@ Ghiro
 
 --------------
 ### <a name="linux">Linux Forensics</a>
+* **General**
+	* **101**
+	* **Articles/Papers/Talks/Writeups**
+	* **General**
+	* **Tools**
+	* **Miscellaneous**
 * [Santoku Linux How-Tos'](https://santoku-linux.com/howtos)
 
 
 ### <a name="windows">Windows Forensics</a>
-* [SANS CHEAT SHEET- Windows Artifact Analysis](https://uk.sans.org/posters/windows_artifact_analysis.pdf)
-* [How to parse Windows Eventlog](http://dfir-blog.com/2016/03/13/how-to-parse-windows-eventlog/)
-* [Know your Windows' Processes](https://sysforensics.org/2014/01/know-your-windows-processes.html)
+* **General**
+	* **101**
+	* **Articles/Papers/Talks/Writeups**
+		* [How to parse Windows Eventlog](http://dfir-blog.com/2016/03/13/how-to-parse-windows-eventlog/)
+		* [Techniques for fast windows forensics investigations](https://www.youtube.com/watch?v=eI4ceLgO_CE)
+			* Look at sniper forensics, skip around, 18min has resources you want to grab for snapshots		
+		* [Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
+			* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
+	* **Educational**
+		* [Know your Windows Processes or Die Trying](https://sysforensics.org/2014/01/know-your-windows-processes.html)
+			* Excellent quick reference on Windows proccesses with a focus on Win7. Good resource.
+		* [License to Kill: Malware Hunting with the Sysinternals Tools](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/ATC-B308)
+		* [Windows Program Automatic Startup Locations](http://www.bleepingcomputer.com/tutorials/windows-program-automatic-startup-locations/)
+		* [Collection of Windows Autostart locations](http://gladiator-antivirus.com/forum/index.php?showtopic=24610)
+		* [Spotting the Adversary with Windows Event Log Monitoring - NSA](http://cryptome.org/2014/01/nsa-windows-event.pdf)
+			* NSA 70-page writeup on windows event log monitoring
+	* **General**
+		* [SANS CHEAT SHEET- Windows Artifact Analysis](https://uk.sans.org/posters/windows_artifact_analysis.pdf)
+	* **Tools**
+		* [WMI_Forensics](https://github.com/davidpany/WMI_Forensics)
+			* This repository contains scripts used to find evidence in WMI repositories
+		* [NTDSXtract - Active Directory Forensics Framework](http://www.ntdsxtract.com/)
+			* Description from the page: This framework was developed by the author in order to provide the community with a solution to extract forensically important information from the main database of Microsoft Active Directory (NTDS.DIT).
+		* [Did it Execute? - Mandiant](https://www.mandiant.com/blog/execute/)
+			* You found a malicious executable! Now you’ve got a crucial question to answer: did the file execute? We’ll discuss a few sources of evidence you can use to answer this question. In this post, we will focus on static or “dead drive” forensics on Windows systems. We will cover four main sources of evidence: Windows Prefetch, Registry, Log Files, and File Information.
+		* [Get-InjectedThread.ps1](https://gist.github.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2)
+			* Code from "Taking Hunting to the Next Level: Hunting in Memory" presentation at SANS Threat Hunting Summit 2017 by Jared Atkinson and Joe Desimone
+		* [HowTo: Determine Program Execution](http://windowsir.blogspot.com/2013/07/howto-determine-program-execution.html)
+		* [Kansa -A Powershell incident response framework ](https://github.com/davehull/Kansa)
+			* A modular incident response framework in Powershell. Note there's a bug that's currently cropping up in PowerShell version 2 systems, but version 3 and later should be fine
+		* [DPAPIck](http://dpapick.com/)
+			* This is a forensic tool to deal, in an offline way, with Microsoft Windows® protected data, using the DPAPI (Data Protection API
+		* [WinPrefetchView v1.25](http://www.nirsoft.net/utils/win_prefetch_view.html)
+			* Each time that you run an application in your system, a Prefetch file which contains information about the files loaded by the application is created by Windows operating system. The information in the Prefetch file is used for optimizing the loading time of the application in the next time that you run it. WinPrefetchView is a small utility that reads the Prefetch files stored in your system and display the information stored in them. By looking in these files, you can learn which files every application is using, and which files are loaded on Windows boot. 
+		* [BTA - AD Security Audit Framework](https://bitbucket.org/iwseclabs/bta)
+			* BTA is an open-source Active Directory security audit framework. Its goal is to help auditors harvest the information they need to answer such questions as:
+				* Who has rights over a given object (computer, user account, etc.) ?
+				* Who can read a given mailbox ?
+				* Which are the accounts with domain admin rights ?
+				* Who has extended rights (userForceChangePassword, SendAs, etc.) ?
+				* What are the changes done on an AD between two points in time ?
+		* [Claimsman]()
+			* Claimsman logs all file handle creation on Windows systems, and logs to both a local file and centralized log management system.
+		* [FastIR Collector](https://github.com/SekoiaLab/Fastir_Collector)
+			* This tool collects different artefacts on live Windows and records the results in csv or json files. With the analyses of these artefacts, an early compromission can be detected.
+			* [FastIR Collector on advanced threats](http://www.sekoia.fr/blog/wp-content/uploads/2015/10/FastIR-Collector-on-advanced-threats_v1.4.pdf)
+		* [Windows Attribute changer](http://www.petges.lu/home/)
+		* [PowerForensics - PowerShell Digital Forensics](https://github.com/Invoke-IR/PowerForensics)
+			* The purpose of PowerForensics is to provide an all inclusive framework for hard drive forensic analysis. PowerForensics currently supports NTFS and FAT file systems, and work has begun on Extended File System and HFS+ support.
+		* [LogonTracer](https://github.com/JPCERTCC/LogonTracer)
+			* Investigate malicious Windows logon by visualizing and analyzing Windows event log
+		* [PoSH-R2](https://github.com/WiredPulse/PoSh-R2)
+			* PoSH-R2 is a set of Windows Management Instrumentation interface (WMI) scripts that investigators and forensic analysts can use to retrieve information from a compromised (or potentially compromised) Windows system. The scripts use WMI to pull this information from the operating system. Therefore, this script will need to be executed with a user that has the necessary privileges. 
+	* **Miscellaneous**
 
 
 
-
-
-#### Windows Forensics Tools
-* [NTDSXtract - Active Directory Forensics Framework](http://www.ntdsxtract.com/)
-	* Description from the page: This framework was developed by the author in order to provide the community
-with a solution to extract forensically important information from the main
-database of Microsoft Active Directory (NTDS.DIT).
-* [Did it Execute? - Mandiant](https://www.mandiant.com/blog/execute/)
-	* You found a malicious executable! Now you’ve got a crucial question to answer: did the file execute? We’ll discuss a few sources of evidence you can use to answer this question. In this post, we will focus on static or “dead drive” forensics on Windows systems. We will cover four main sources of evidence: Windows Prefetch, Registry, Log Files, and File Information.
-* [Get-InjectedThread.ps1](https://gist.github.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2)
-	* Code from "Taking Hunting to the Next Level: Hunting in Memory" presentation at SANS Threat Hunting Summit 2017 by Jared Atkinson and Joe Desimone
-* [HowTo: Determine Program Execution](http://windowsir.blogspot.com/2013/07/howto-determine-program-execution.html)
-* [Kansa -A Powershell incident response framework ](https://github.com/davehull/Kansa)
-	* A modular incident response framework in Powershell. Note there's a bug that's currently cropping up in PowerShell version 2 systems, but version 3 and later should be fine
-* [License to Kill: Malware Hunting with the Sysinternals Tools](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/ATC-B308)
-* [Windows Program Automatic Startup Locations](http://www.bleepingcomputer.com/tutorials/windows-program-automatic-startup-locations/)
-* [Collection of Windows Autostart locations](http://gladiator-antivirus.com/forum/index.php?showtopic=24610)
-* [Spotting the Adversary with Windows Event Log Monitoring - NSA](http://cryptome.org/2014/01/nsa-windows-event.pdf)
-	* NSA 70-page writeup on windows event log monitoring
-* [DPAPIck](http://dpapick.com/)
-	* This is a forensic tool to deal, in an offline way, with Microsoft Windows® protected data, using the DPAPI (Data Protection API
-* [Techniques for fast windows forensics investigations](https://www.youtube.com/watch?v=eI4ceLgO_CE)
-	* Look at sniper forensics, skip around, 18min has resources you want to grab for snapshots
-* [Know your Windows Processes or Die Trying](https://sysforensics.org/2014/01/know-your-windows-processes.html)
-	* Excellent quick reference on Windows proccesses with a focus on Win7. Good resource.
-* [WinPrefetchView v1.25](http://www.nirsoft.net/utils/win_prefetch_view.html)
-	* Each time that you run an application in your system, a Prefetch file which contains information about the files loaded by the application is created by Windows operating system. The information in the Prefetch file is used for optimizing the loading time of the application in the next time that you run it. WinPrefetchView is a small utility that reads the Prefetch files stored in your system and display the information stored in them. By looking in these files, you can learn which files every application is using, and which files are loaded on Windows boot. 
-* [BTA - AD Security Audit Framework](https://bitbucket.org/iwseclabs/bta)
-	* BTA is an open-source Active Directory security audit framework. Its goal is to help auditors harvest the information they need to answer such questions as:
-		* Who has rights over a given object (computer, user account, etc.) ?
-		* Who can read a given mailbox ?
-		* Which are the accounts with domain admin rights ?
-		* Who has extended rights (userForceChangePassword, SendAs, etc.) ?
-		* What are the changes done on an AD between two points in time ?
-* [Claimsman]()
-	* Claimsman logs all file handle creation on Windows systems, and logs to both a local file and centralized log management system.
-* [FastIR Collector](https://github.com/SekoiaLab/Fastir_Collector)
-	* This tool collects different artefacts on live Windows and records the results in csv or json files. With the analyses of these artefacts, an early compromission can be detected.
-* [FastIR Collector on advanced threats](http://www.sekoia.fr/blog/wp-content/uploads/2015/10/FastIR-Collector-on-advanced-threats_v1.4.pdf)
-* [Windows Attribute changer](http://www.petges.lu/home/)
-* [Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
-	* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
-* [PowerForensics - PowerShell Digital Forensics](https://github.com/Invoke-IR/PowerForensics)
-	* The purpose of PowerForensics is to provide an all inclusive framework for hard drive forensic analysis. PowerForensics currently supports NTFS and FAT file systems, and work has begun on Extended File System and HFS+ support.
-* [LogonTracer](https://github.com/JPCERTCC/LogonTracer)
-	* Investigate malicious Windows logon by visualizing and analyzing Windows event log
 
 --------------
 ### <a name="osx">OS X Forensics Tools</a>

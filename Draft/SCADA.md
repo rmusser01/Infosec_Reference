@@ -20,6 +20,11 @@
 
 #### Sort
 
+
+
+
+
+
 #### End Sort
 
 ----------------------
@@ -34,7 +39,8 @@
 		* Welcome to Control Systems Lectures!  This collection of videos is intended to supplement a first year controls class, not replace it.  My goal is to take specific concepts in controls and expand on them in order to provide an intuitive understanding which will ultimately make you a better controls engineer.  
 	* [plcprofessor - youtube channel](https://www.youtube.com/user/plcprofessor)
 		*  The PLC Professor YouTube Channel is soley dedicated to technical education, specifically industrial control systems and their supporting technologies. The "Complete PLCLearn Series" is comprised of lectures, hands on lab projects and lab project wrap up discussions. The playlists to use for the series are titled "Lectures", "Basics" lab discussions, "Advanced I" lab discussions and "Advanced II" lab discussions. There is also a "Support" playlist for miscellaneous supporting knowledge, "RSLogix5000", "How to Program", as well as many more to come. These lectures and lab projects were developed for actual classroom training and have been improved as hundreds of electricians and engineers completed and commented on the content. 
-* EDIFACT
+	* [Hacking US Traffic Control Systems - Cesar Cerrudo - Defcon22](https://www.defcon.org/images/defcon-22/dc-22-presentations/Cerrudo/DEFCON-22-Cesar-Cerrudo-Hacking-Traffic-Control-Systems-UPDATED.pdf)
+* **EDIFACT**
 	* [EDIFACT - Wikipedia](https://en.wikipedia.org/wiki/EDIFACT)
 	* [SMDG.org](http://www.smdg.org/)
 		* SMDG develops and promotes UN/EDIFACT EDI-messages for the Maritime Industry and is an official Global User Group, recognised by the UN/EDIFACT Board. 
@@ -60,6 +66,12 @@
 	* [Rocking the Pocket Book: Hacking Chemical Plant for Competition and Extortion - Marina Krotofil - Jason Larsen](https://www.youtube.com/watch?v=AL8L76n0Q9w)
 		* The appeal of hacking a physical process is dreaming about physical damage attacks lighting up the sky in a shower of goodness. Let’s face it, after such elite hacking action nobody is going to let one present it even at a conference like DEF CON. As a poor substitute, this presentation will get as close as using a simulated plant for Vinyl Acetate production for demonstrating a complete attack, from start to end, directed at persistent economic damage to a production site while avoiding attribution of production loss to a cyber-event. Such an attack scenario could be useful to a manufacturer aiming at putting competitors out of business or as a strong argument in an extortion attack. Exploiting physical process is an exotic and hard to develop skill which have so far kept a high barrier to entry. Therefore real-world control system exploitation has remained in the hands of a few. To help the community mastering new skills we have developed „Damn Vulnerable Chemical Process“ – first open source framework for cyber-physical experimentation based on two realistic models of chemical plants. Come to the session and take your first master class on complex physical hacking.
 	* [Offensive ICS Exploitation: A Description of an ICS CTF - MWR](https://labs.mwrinfosecurity.com/blog/offensive-ics-exploitation-a-technical-description/)
+* **Wireless**
+	* [Dissecting Industrial Wireless Implementations - DEF CON 25](https://github.com/voteblake/DIWI)
+
+
+
+
 
 
 ----------------------
@@ -111,3 +123,21 @@
 	* [Hacking Chemical Plants for Competition and Extortion - Marina Krotofil - HITBGSEC 2015](https://www.youtube.com/watch?v=0B-sG1rKJ2U)
 * **Threat Hunting** 
 	* [I Got You06 ICS SCADA Threat Hunting Robert M Lee Jon Lavender](https://www.youtube.com/watch?v=Zm5lDKxaaTY)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -35,9 +35,11 @@
 
 * https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-guri-update.pdf
 * [A Technical Description of Psiphon](https://psiphon.ca/en/blog/psiphon-a-technical-description)
-* [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
 * [Invasion of Privacy - HackerFactor](http://www.hackerfactor.com/blog/index.php?/archives/703-Invasion-of-Privacy.html)
 * [What Happens Next Will Amaze You](http://idlewords.com/talks/what_happens_next_will_amaze_you.htm#six_fixes)
+* [anonymouth](https://github.com/psal/anonymouth)
+	* Document Anonymization Tool, Version 0.5
+* [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
 
 
 #### end Sort
@@ -140,6 +142,8 @@
 			* The Tor network is designed to provide users with low- latency anonymous communications. Tor clients build circuits with publicly listed relays to anonymously reach their destinations. However, since the relays are publicly listed, they can be easily blocked by censoring adversaries. Consequently, the Tor project envisioned the possibility of unlisted entry points to the Tor network, commonly known as bridges. We address the issue of preventing censors from detecting the bridges by observing the communications between them and nodes in their network. We propose a model in which the client obfuscates its messages to the bridge in a widely used protocol over the Inter- net. We investigate using Skype video calls as our target protocol and our goal is to make it difficult for the censor- ing adversary to distinguish between the obfuscated bridge connections and actual Skype calls using statistical compar- isons. We have implemented our model as a proof-of-concept pluggable transport for Tor, which is available under an open-source licence. Using this implementation we observed the obfuscated bridge communications and compared it with those of Skype calls and presented the results.
 		* [StegoTorus: A Camouflage Proxy for the Tor Anonymity System](https://research.owlfolio.org/pubs/2012-stegotorus.pdf)
 			* Internet censorship by governments is an increasingly common practice worldwide. Internet users and censors are locked in an arms race: as users find ways to evade censorship schemes, the censors develop countermeasures for the evasion tactics. One of the most popular and effective circumvention tools, Tor, must regularly adjust its network traffic signature to remain usable. We present StegoTorus, a tool that comprehensively disguises Tor from protocol analysis. To foil analysis of packet contents, Tor’s traffic is steganographed to resemble an innocuous cover protocol, such as HTTP. To foil analysis at the transport level, the Tor circuit is distributed over many shorter-lived connections with per-packet characteristics that mimic cover-protocol traffic. Our evaluation demonstrates that StegoTorus improves the resilience of Tor to fingerprinting attacks and delivers usable performance.
+		* [Spoiled Onions](https://www.cs.kau.se/philwint/spoiled_onions/)
+			* In this research project, we were monitoring all exit relays for several months in order to expose, document, and thwart malicious or misconfigured relays. In particular, we monitor exit relays with two scanners we developed specifically for that purpose: exitmap and HoneyConnector. Since September 2013, we discovered 65 malicious or misconfigured exit relays which are listed in Table 1 and Table 2 in our research paper. These exit relays engaged in various attacks such as SSH and HTTPS MitM, HTML injection, SSL stripping, and traffic sniffing. We also found exit relays which were unintentionally interfering with network traffic because they were subject to DNS censorship. 
 * **Travel**
 	* [China travel laptop setup](https://mricon.com/i/travel-laptop-setup.html?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&iid=88d246896d384d5292f51df954a2c8ba&uid=150127534&nid=244+272699400)
 * **Misc/Unsorted**

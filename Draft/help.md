@@ -16,3 +16,10 @@ Tutorials involving %
 Writeups on %  
 
 Emoji Reference: [Emoji cheat sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
+
+* **General**
+* **101**
+* **Articles/Papers/Talks/Writeups**
+* **General**
+* **Tools**
+* **Miscellaneous**

@@ -1,7 +1,7 @@
 # Web, Web Applications & Browsers
 
 Web TOC
-* General](#general)
+* [General](#general)
 * [Purposely Vulnerable Web Apps](#pvuln)
 * [Securing Web Applications Checklists](#checklist)
 * [Talks & Presentations](#talks)
@@ -10,6 +10,7 @@ Web TOC
 	* [Abuse of Functionality](#abuse)
 	* [Brute Force Fuzzing](#brute)
 	* [Attacking Continous Integration Systems](#ci)
+	* [ClickJacking](#clickjack)
 	* [Cross-Site-Request Forgery](#csrf)
 	* [CSV Injection](#csv)
 	* [De/Encoders](#encode)
@@ -35,7 +36,11 @@ Web TOC
 * [API Stuff](#api)
 * [Attacking Browsers](#atkb)
 * [CMS Specific Tools](#cms)
+* [Content Security Policy(CSP)](#csp)
+* [Common Origin Resource Sharing (CORS)](#cors)
+* [Cross-Site History Manipulation (XHSM)](#xhsm)
 * [HTML5](#html5)
+* [HTTP Methods](#httpmethods)
 * [Javascript](#javascript)
 * [Java Server Faces](#jsf)
 * [REST & Web Services](#rest)
@@ -43,6 +48,8 @@ Web TOC
 * [Ruby](#ruby)
 * [Scraping](#scraping)
 * [Site/WebApp Scanners](#scanners)
+* [SubResource Integrity](#sri)
+* []()
 * [Web Sockets](#websocket)
 * [Web Proxies](#webproxy)
 * [Web Application Firewalls(WAFs)](#waf)
@@ -61,33 +68,35 @@ Web TOC
 
 #### Sort
 * Fix ToC
-* Add CSP
-	* [Intro to content Security Policy](http://www.html5rocks.com/en/tutorials/security/content-security-policy/)
 * Add SOAP
 * Clickjack(ing)
-* Websockets
+* HTTP Methods
+* Flesh out
+	* web frameworks
+	* CORS
+	* SRI
+	* CSP
+* Get rid of papers
 
-* [HackerOne H1-212 Capture the Flag Solution - Corben Douglas](http://www.sxcurity.pro/H1-212%20CTF%20Solution.pdf)
-* [Detecting and Exploiting the HTTP PUT Method](http://www.smeegesec.com/2014/10/detecting-and-exploiting-http-put-method.html)
-* [AngularJS Security Documentation](https://docs.angularjs.org/guide/security)
+* [domain_analyzer](https://github.com/eldraco/domain_analyzer)
+	* Analyze the security of any domain by finding all the information possible. Made in python.
+* [Web Application Defaults DB(2013)](https://github.com/pwnwiki/webappdefaultsdb)
 * [Hacking with Pictures - Syscan2015](http://www.slideshare.net/saumilshah/hacking-with-pictures-syscan-2015)
 * [File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
-* [ebay.com: RCE using CCS](http://secalert.net/#ebay-rce-ccs)
-* [Abusing Google App Scripting Through Social Engineering](http://www.redblue.team/2017/02/abusing-google-app-scripting-through.html)
-* [Unrestricted File Upload Security Testing - Aptive](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
-
 
 * [How to configure Json.NET to create a vulnerable web API](https://www.alphabot.com/security/blog/2017/net/How-to-configure-Json.NET-to-create-a-vulnerable-web-API.html)
 
 https://github.com/stephenbradshaw/breakableflask
 https://github.com/JasonHinds13/hackable
 https://github.com/omarkurt/flask-injection
-* [Fingerprinter](https://github.com/erwanlr/Fingerprinter)
-	*  CMS/LMS/Library etc Versions Fingerprinter. This script's goal is to try to find the version of the remote application/third party script etc by using a fingerprinting approach.
 https://github.com/toddmotto/public-apis
 https://github.com/grafscan/GraFScaN/blob/master/README.md
 
-* [Cross Site History Manipulation - OWASP](https://www.owasp.org/index.php/Cross_Site_History_Manipulation_(XSHM))
+* [oxml_xxe](https://github.com/BuffaloWill/oxml_xxe)
+	* This tool is meant to help test XXE vulnerabilities in file formats. 
+
+* [HackerOne H1-212 Capture the Flag Solution - Corben Douglas](http://www.sxcurity.pro/H1-212%20CTF%20Solution.pdf)
+* [ebay.com: RCE using CCS](http://secalert.net/#ebay-rce-ccs)
 
 #### End Sort
 
@@ -136,7 +145,8 @@ https://github.com/grafscan/GraFScaN/blob/master/README.md
 * [Pwning OWASP Juice Shop](https://leanpub.com/juice-shop)
 * [Hackazon](https://github.com/rapid7/hackazon)
 	* Hackazon is a free, vulnerable test site that is an online storefront built with the same technologies used in today’s rich client and mobile applications. Hackazon has an AJAX interface, strict workflows and RESTful API’s used by a companion mobile app providing uniquely-effective training and testing ground for IT security professionals. And, it’s full of your favorite vulnerabilities like SQL Injection, cross-site scripting and so on.
-
+* [Vulnerable Web applications Generator](https://github.com/qazbnm456/VWGen)
+	* This is the Git repo of the VWGen, which stands for Vulnerable Web applications Generator.
 
 
 
@@ -394,7 +404,7 @@ https://github.com/grafscan/GraFScaN/blob/master/README.md
 	* [commix](https://github.com/stasinopoulos/commix)
 		* Automated All-in-One OS Command Injection and Exploitation Tool
 * **Writeups**
-
+	
 
 
 
@@ -487,21 +497,24 @@ https://github.com/grafscan/GraFScaN/blob/master/README.md
 ### <a name="lrfi">LFI & RFI</a>
 * **101**
 	* [File inclusion vulnerability - Wikipedia](https://en.wikipedia.org/wiki/File_inclusion_vulnerability)
-* **General**
+* **Articles/Papers/Writeups**
+	* [LFI with PHPINFO() Assistance - InsomniaSecurity 2011](https://www.insomniasec.com/downloads/publications/LFI%20With%20PHPInfo%20Assistance.pdf)
+	* [Turning LFI into RFI](https://l.avala.mp/?p=241)
+		* When configured in a specific way the web application would load the JAR file and search within the file for a class. Interestingly enough, in Java classes you can define a static block that is executed upon the class being processed
+	* [Unrestricted File Upload Security Testing - Aptive](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
 * **Testing**
 	* [LFI Local File Inclusion Techniques (paper)](http://www.ush.it/2008/08/18/lfi2rce-local-file-inclusion-to-remote-code-execution-advanced-exploitation-proc-shortcuts/)
 		* This paper exposes the ability from the attacker standpoint to use /proc in order to exploit LFI (Local File Inclusion) vulnerabilities. While using /proc for such aim is well known this one is a specific technique that was not been previously published as far as we know. A tool to automatically exploit LFI using the shown approach is released accordingly. 
 	* [Update: a third (known) technique has been dissected here](http://www_ush_it/2008/07/09/local-file-inclusion-lfi-of-session-files-to-root-escalation/ ) 
 * **Tools**
+	* [dotdotpwn](https://github.com/wireghoul/dotdotpwn)
 	* [Liffy](https://github.com/rotlogix/liffy)
 		* Liffy is a Local File Inclusion Exploitation tool. 
 	* [lfi-labs](https://github.com/paralax/lfi-labs)
 		* small set of PHP scripts to practice exploiting LFI, RFI and CMD injection vulns
 	* [psychoPATH - LFI](https://github.com/ewilded/psychoPATH/blob/master/README.md)
 		* This tool is a highly configurable payload generator detecting LFI & web root file uploads. Involves advanced path traversal evasive techniques, dynamic web root list generation, output encoding, site map-searching payload generator, LFI mode, nix & windows support plus single byte generator.
-* **Writeups**
-	* [Turning LFI into RFI](https://l.avala.mp/?p=241)
-		* When configured in a specific way the web application would load the JAR file and search within the file for a class. Interestingly enough, in Java classes you can define a static block that is executed upon the class being processed
+
 
 
 
@@ -512,6 +525,7 @@ https://github.com/grafscan/GraFScaN/blob/master/README.md
 ### NodeJS
 * **101**
 * **Educational**
+	* [A Roadmap for Node.js Security](https://nodesecroadmap.fyi/)	
 	* [NodeGoat](https://github.com/OWASP/NodeGoat)
 		* Being lightweight, fast, and scalable, Node.js is becoming a widely adopted platform for developing web applications. This project provides an environment to learn how OWASP Top 10 security risks apply to web applications developed using Node.js and how to effectively address them.
 * **Articles/Blogposts/Presentations/Talks/Writeups**	
@@ -652,7 +666,7 @@ https://github.com/grafscan/GraFScaN/blob/master/README.md
 	* [Templates Injections - PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20injections)
 
 ----------------
-### <a name="subres"></a>Subresource Integrity
+### <a name="sri"></a> Subresource Integrity
 * **General**
 	* [Subresource Integrity - W3C](https://www.w3.org/TR/SRI/)
 	* [Subresource Integrity - Mozilla](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
@@ -801,11 +815,13 @@ fuse.ca/race-conditions-in-web-applications.htm)
 
 
 -------------------
-### <a name="atkb"Attacking Browsers</a>
+### <a name="atkb">Attacking Browsers</a>
 * **General**
 	* [White Lightning Attack Platform](https://github.com/TweekFawkes/White_Lightning)
 	* [Browser as Botnet - Brannon Dorsey - Radical Networks 2017](https://www.youtube.com/watch?v=GcXfu-EAECo)
 		* When surfing the web, browsers download and execute arbitrary JavaScript code they receive from websites they visit. What if high-traffic websites served obfuscated code that secretly borrowed clock cycles from their client’s web browser as a means of distributed computing? In this talk I present research on the topic of using web browsers as zero-configuration, trojan-less botnets. The presentation includes a brief history of botnets, followed by an overview of techniques to build and deploy command-and-control botnet clients that run in-browser.
+	* [CSS Keylogger](https://github.com/maxchehab/CSS-Keylogging)
+		* Chrome extension and Express server that exploits keylogging abilities of CSS.
 * **Browser Extensions**
 	* [Attacking Browser Extensions](https://github.com/qll/attacking-browser-extensions)
 	* [Botnet in the Browser: Understanding Threats Caused by Malicious Browser Extensions](https://arxiv.org/pdf/1709.09577.pdf)
@@ -834,6 +850,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [Highly Effective Joomla Backdoor with Small Profile](http://blog.sucuri.net/2014/02/highly-effective-joomla-backdoor-with-small-profile.html)
 	* [JoomScan](https://www.owasp.org/index.php/Category:OWASP_Joomla_Vulnerability_Scanner_Project)
 		* Joomla! is probably the most widely-used CMS out there due to its flexibility, user-friendlinesss, extensibility to name a few.So, watching its vulnerabilities and adding such vulnerabilities as KB to Joomla scanner takes ongoing activity.It will help web developers and web masters to help identify possible security weaknesses on their deployed Joomla! sites. No web security scanner is dedicated only one CMS. 
+	* [JScanner](https://github.com/tampe125/jscanner/blob/master/README.md)
+		* Analyze target Joomla! installation using several different techniques.
 * **Sharepoint**
 	* [Sparty - Sharepoint/Frontpage Auditing Tool](https://github.com/alias1/sparty)
 		* Sparty is an open source tool written in python to audit web applications using sharepoint and frontpage architecture. The motivation behind this tool is to provide an easy and robust way to scrutinize the security configurations of sharepoint and frontpage based web applications. Due to the complex nature of these web administration software, it is required to have a simple and efficient tool that gathers information, check access permissions, dump critical information from default files and perform automated exploitation if security risks are identified. A number of automated scanners fall short of this and Sparty is a solution to that.
@@ -842,6 +860,38 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* WPScan is a black box WordPress vulnerability scanner. 
 	* [WPSeku](https://github.com/m4ll0k/WPSeku)
 		* Wordpress Security Scanner
+
+
+------------------------
+### <a name="xshm"></a> Cross-Site History Manipulation
+* **101**
+	* [Cross Site History Manipulation - OWASP](https://www.owasp.org/index.php/Cross_Site_History_Manipulation_(XSHM))
+* **Articles/Papers/Talks/Writeups**
+* **Tools**
+* **Miscellaneous**
+
+
+------------------------
+### <a name="csp"></a> Content Security Policy (CSP)
+* **101**
+	* [Intro to content Security Policy](http://www.html5rocks.com/en/tutorials/security/content-security-policy/)
+* **Articles/Papers/Talks/Writeups**
+* **General**
+* **Tools**
+* **Miscellaneous**
+
+
+-------------------
+### <a name="cors"></a> Cross-Origin Resource Sharing (CORS)
+* **101**
+* **Articles/Papers/Talks/Writeups**
+	* [Exploiting CORS Misconfigurations For Bitcoins And Bounties by James Kettle](https://www.youtube.com/watch?v=wgkj4ZgxI4c)
+		*  Cross-Origin Resource Sharing (CORS) is a mechanism for relaxing the Same Origin Policy to enable communication between websites via browsers. It's already widely understood that certain CORS configurations are dangerous. In this presentation, I'll skim over the old knowledge then coax out and share with you an array of under-appreciated but dangerous subtleties and implications buried in the CORS specification. I'll illustrate each of these with recent attacks on real websites, showing how I could have used them to steal bitcoins from two different exchanges, partially bypass Google's use of HTTPS, and requisition API keys from numerous others. I'll also show how CORS blunders can provide an invaluable link in crafting exploit chains to pivot across protocols, exploit the unexploitable via server and client-side cache poisoning, and even escalate certain open redirects into vulnerabilities that are actually notable.
+* **General**
+* **Tools**
+	* [CORStest](https://github.com/RUB-NDS/CORStest/blob/master/README.md)
+		* A simple CORS misconfiguration scanner
+* **Miscellaneous**
 
 
 
@@ -870,6 +920,11 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* The Securing HTML5 Assessment Resource Kit, or SH5ARK, is an open source project that provides a repository of HTML5 features, proof-of-concept attack code, and filtering rules. The purpose of this project is to provide a single repository that can be used to collect sample code of vulnerable HTML5 features, actual attack code, and filtering rules to help prevent attacks and abuse of these features. The intent of the project is to bring awareness to the opportunities that HTML5 is providing for attackers, to help identify these attacks, and provide measures for preventing them
 	* [Presentation on SH5ARK](https://www.youtube.com/watch?v=1ZZ-vIwmWx4)
 	* [GetSH5ARK here](http://sourceforge.net/projects/sh5ark/)
+
+
+--------------------
+### <a name="httpmethods"></a> HTTP Methods
+* [Detecting and Exploiting the HTTP PUT Method](http://www.smeegesec.com/2014/10/detecting-and-exploiting-http-put-method.html)
 
 
 ----------------
@@ -1047,6 +1102,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* CMS Explorer is designed to reveal the the specific modules, plugins, components and themes that various CMS driven web sites are running. Additionally, CMS Explorer can be used to aid in security testing. While it performs no direct security checks, the "explore" option can be used to reveal hidden/library files which are not typically accessed by web clients but are nonetheless accessible. This is done by retrieving the module's current source tree and then requesting those file names from the target system. These requests can be sent through a distinct proxy to help "bootstrap" security testing tools like Burp, Paros, Webinspect, etc. 
 * [BlindElephant Web Application Fingerprinter](http://blindelephant.sourceforge.net/)
 	* The BlindElephant Web Application Fingerprinter attempts to discover the version of a (known) web application by comparing static files at known locations against precomputed hashes for versions of those files in all all available releases. The technique is fast, low-bandwidth, non-invasive, generic, and highly automatable. 
+* [Fingerprinter](https://github.com/erwanlr/Fingerprinter)
+	*  CMS/LMS/Library etc Versions Fingerprinter. This script's goal is to try to find the version of the remote application/third party script etc by using a fingerprinting approach.
 * [ParrotNG](https://github.com/ikkisoft/ParrotNG)
 	* ParrotNG is a tool capable of identifying Adobe Flex applications (SWF) vulnerable to CVE-2011-2461
 * [OpenDoor](https://github.com/stanislav-web/OpenDoor)
@@ -1086,6 +1143,9 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* TcpCatcher is a free TCP, SOCKS, HTTP and HTTPS proxy monitor server software. 
 * [wssip](https://github.com/nccgroup/wssip)
 	* Application for capturing, modifying and sending custom WebSocket data from client to server and vice versa.
+* [ratproxy](https://github.com/wallin/ratproxy)
+	* Ratproxy is a semi-automated, largely passive web application security audit  tool. It is meant to complement active crawlers and manual proxies more  commonly used for this task, and is optimized specifically for an accurate and  sensitive detection, and automatic annotation, of potential problems and  security-relevant design patterns based on the observation of existing,  user-initiated traffic in complex web 2.0 environments.
+
 
 
 --------------
@@ -1134,6 +1194,11 @@ fuse.ca/race-conditions-in-web-applications.htm)
 * [A cartoon intro to WebAssembly Articles](https://hacks.mozilla.org/category/code-cartoons/a-cartoon-intro-to-webassembly/)
 * [Lin Clark: A Cartoon Intro to WebAssembly | JSConf EU 2017](https://www.youtube.com/watch?v=HktWin_LPf4&app=desktop)
 
+
+-------------------
+### Web Frameworks
+* **Angular**
+	* [AngularJS Security Documentation](https://docs.angularjs.org/guide/security)
 
 ----------------
 ### Web Sockets
@@ -1201,7 +1266,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* This paper exposes the ability from the attacker standpoint to use /proc in order to exploit LFI (Local File Inclusion) vulnerabilities.
 	* [Cracking the Lens: Targeting HTTP's Hidden Attack Surface](https://portswigger.net/knowledgebase/papers/CrackingTheLens-whitepaper.pdf)
 	* [Browser Security White Paper - Cure53](https://browser-security.x41-dsec.de/X41-Browser-Security-White-Paper.pdf)
-
+* [Testing stateful web application workflows - SANS - András Veres-Szentkirályi](https://www.sans.org/reading-room/whitepapers/testing/testing-stateful-web-application-workflows-36637)
+	* Most web applications used for complex business operations and/or employing advanced GUI frameworks have stateful functionality. Certain workflows, for example, might require completing certain steps before a transaction is committed, or a request sent by a client-side UI element might need several preceding requests that all contribute to the session state. Most automated tools focus on a request and maybe a redirection, thus completely missing the point in these cases, where resending a request gets ignored by the target application. As a result, while these tools are getting better day by day, using them for testing such execution paths are usually out of the question. Since thorough assessment is cumbersome without such tools, there's progress, but we are far from plug-and-play products. This paper focuses on the capabilities of currently available solutions, demonstrating their pros and cons, along with opportunities for improvement.
 
 
 
@@ -1273,7 +1339,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* Non-HTTP Protocol Extension (NoPE) Proxy and DNS for Burp Suite.
 	* [AutoRepeater](https://github.com/nccgroup/AutoRepeater)
 		* Burp Suite is an intercepting HTTP Proxy, and it is the defacto tool for performing web application security testing. While Burp Suite is a very useful tool, using it to perform authorization testing is often a tedious effort involving a "change request and resend" loop, which can miss vulnerabilities and slow down testing. AutoRepeater, an open source Burp Suite extension, was developed to alleviate this effort. AutoRepeater automates and streamlines web application authorization testing, and provides security researchers with an easy-to-use tool for automatically duplicating, modifying, and resending requests within Burp Suite while quickly evaluating the differences in responses.
-
+	* [Uniqueness plugin for Burp Suite](https://github.com/silentsignal/burp-uniqueness)
+		* Makes requests unique based on regular expressions. Handy for registration forms and any other endpoint that requires unique values upon every request.
 
 
 
@@ -1301,7 +1368,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* Bucketlist is a quick project I threw together to find and crawl Amazon S3 buckets and put all the data into a PostgreSQL database for querying.
 * **Securing**
 	* [AWS Security Primer](https://cloudonaut.io/aws-security-primer/#fn:2)
-
+	* [CloudMapper](https://github.com/duo-labs/cloudmapper)
+		* CloudMapper generates network diagrams of Amazon Web Services (AWS) environments and displays them via your browser. It helps you understand visually what exists in your accounts and identify possible network misconfigurations.
 * **Tools**
 	* [Scout2](https://github.com/nccgroup/Scout2)
 		* Scout2 is a security tool that lets AWS administrators assess their environment's security posture. Using the AWS API, Scout2 gathers configuration data for manual inspection and highlights high-risk areas automatically. Rather than pouring through dozens of pages on the web, Scout2 supplies a clear view of the attack surface automatically.
@@ -1318,6 +1386,7 @@ fuse.ca/race-conditions-in-web-applications.htm)
 ### <a name="gcc"></a>Google Compute Cloud/AppEngine
 * **Articles/Writeups**
 	* [G-Jacking AppEngine-based applications - HITB2014](https://conference.hitb.org/hitbsecconf2014ams/materials/D2T1-G-Jacking-AppEngine-based-Applications.pdf)
+	* [Abusing Google App Scripting Through Social Engineering](http://www.redblue.team/2017/02/abusing-google-app-scripting-through.html)
 * **Tools**
 * [Introducing G-Scout](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2017/august/introducing-g-scout/)
 	* G-Scout is a tool to help assess the security of Google Cloud Platform (GCP) environment configurations. By leveraging the Google Cloud API, G-Scout automatically gathers a variety of configuration data and analyzes this data to determine security risks. It produces HTML output.

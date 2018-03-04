@@ -21,15 +21,19 @@
 ### Sort
 
 
+
 * [Attack Surface Meter](https://github.com/andymeneely/attack-surface-metrics)
 	* Python package for collecting attack surface metrics from a software system. In its current version, Attack Surface Meter is capable of analyzing software systems written in the C programming language with skeletal support for analyzing software systems written in the Java programming language. The attack surface metrics collected are:
 	* Proximity to Entry/Exit/Dangerous - The mean of shortest unweighted path length from a function/file to Entry Points/Exit Points/Dangerous Points.
     * Risky Walk - The probability that a function/file will be invoked on a random execution path starting at the attack surface.
-* [Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
-* [Dynamic Source Code Generation and Compilation](https://docs.microsoft.comen-us/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)
-Libraries for Java -> https://www.owasp.org/index.php/Category:Java#tab=Related_3rd_Party_Projects
-http://en.cppreference.com/w/c	
 
+* [Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
+
+Libraries for Java -> https://www.owasp.org/index.php/Category:Java#tab=Related_3rd_Party_Projects
+
+http://en.cppreference.com/w/c	
+* [Syntribos](https://github.com/openstack/syntribos)
+	* Syntribos is an open source automated API security testing tool that is maintained by members of the [OpenStack Security Project](https://wiki.openstack.org/wiki/Security). Given a simple configuration file and an example HTTP request, syntribos can replace any API URL, URL parameter, HTTP header and request body field with a given set of strings. Syntribos iterates through each position in the request automatically. Syntribos aims to automatically detect common security defects such as SQL injection, LDAP injection, buffer overflow, etc. In addition, syntribos can be used to help identify new security defects by automated fuzzing.
 
 #### End Sort
 
@@ -39,20 +43,24 @@ http://en.cppreference.com/w/c
 
 -----------
 ### <a name="general">General</a>
-The content here is just stuff I've come across or think would be useful to someone in infosec. It is not to be taken as anything beyond a suggestion about stuff.
-* [Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
-* [Secure Coding Cheat Sheet - OWASP](https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet)
-* [What a C programmer should know about memory](http://marek.vavrusa.com/c/memory/2015/02/20/memory/)
-* [How to be a Programmer: Community Version](https://github.com/braydie/HowToBeAProgrammer)
-	* To be a good programmer is difficult and noble. The hardest part of making real a collective vision of a software project is dealing with one's coworkers and customers. Writing computer programs is important and takes great intelligence and skill. But it is really child's play compared to everything else that a good programmer must do to make a software system that succeeds for both the customer and myriad colleagues for whom he or she is partially responsible. In this essay I attempt to summarize as concisely as possible those things that I wish someone had explained to me when I was twenty-one.
-* [Loop Patterns](https://users.cs.duke.edu/~ola/patterns/plopd/loops.html#loop-and-a-half)
-* [Learn_X_in_Y_Minutes](http://learnxinyminutes.com/)
-* [Hyperpolyglot](http://hyperpolyglot.org/)
-* [App Ideas - Stuff to build out ot improve your programming skills](https://github.com/tastejs/awesome-app-ideas)
-* [Secure iOS application development](https://github.com/felixgr/secure-ios-app-dev)
-	* This guide is a collection of the most common vulnerabilities found in iOS applications. The focus is on vulnerabilities in the applications’ code and only marginally covers general iOS system security, Darwin security, C/ObjC/C++ memory safety, or high-level application security. Nevertheless, hopefully the guide can serve as training material to iOS app developers that want to make sure that they ship a more secure app. Also, iOS security reviewers can use it as a reference during assessments.
-* [Mostly Adequate Guide](https://drboolean.gitbooks.io/mostly-adequate-guide/)
-	* This is a book on the functional paradigm in general. We'll use the world's most popular functional programming language: JavaScript. Some may feel this is a poor choice as it's against the grain of the current culture which, at the moment, feels predominately imperative. 
+* The content here is just stuff I've come across or think would be useful to someone in infosec. It is not to be taken as anything beyond a suggestion about stuff.
+* **101**
+* **Design Patterns**
+	* [The Death Star Design Pattern](https://kkovacs.eu/the-death-star-design-pattern)
+	* [Loop Patterns](https://users.cs.duke.edu/~ola/patterns/plopd/loops.html#loop-and-a-half)
+* **Educational**
+	* [App Ideas - Stuff to build out ot improve your programming skills](https://github.com/tastejs/awesome-app-ideas)
+	* [How to be a Programmer: Community Version](https://github.com/braydie/HowToBeAProgrammer)
+		* To be a good programmer is difficult and noble. The hardest part of making real a collective vision of a software project is dealing with one's coworkers and customers. Writing computer programs is important and takes great intelligence and skill. But it is really child's play compared to everything else that a good programmer must do to make a software system that succeeds for both the customer and myriad colleagues for whom he or she is partially responsible. In this essay I attempt to summarize as concisely as possible those things that I wish someone had explained to me when I was twenty-one.
+	* [Learn_X_in_Y_Minutes](http://learnxinyminutes.com/)
+	* [Hyperpolyglot](http://hyperpolyglot.org/)
+* **General**
+* **Articles/Blogposts/Writeups**
+* **Talks**
+* **Testing**
+	* [Big picture software testing unit testing, Lean Startup, and everything in between PyCon 2017](https://www.youtube.com/watch?v=Vaq_e7qUA-4&feature=youtu.be&t=63s)
+		* There are many ways you can test your software: unit testing, manual testing, end-to-end testing, and so forth. Take a step back and you'll discover even more form of testing, many of them very different in their goals: A/B testing, say, where you see which of two versions of your website results in more signups or ad clicks. How do these forms of testing differ, how do they relate to each other? How do you choose which kind of testing to pursue, given limited time and resources? How do you deal with strongly held yet opposite views arguing either that a particular kind of testing is essential or that it's a waste time? This talk will provide you with a model, a way to organize all forms of testing and understand what exactly they provide, and why. Once you understand the model you will be able to choose the right form of testing for *your* situation and goals.
+* **Miscellaneous**
 * [Six Stages of debugging](http://plasmasturm.org/log/6debug/)
 	```
 		* 1. That can’t happen.
@@ -64,24 +72,9 @@ The content here is just stuff I've come across or think would be useful to some
 	```
 
 
-### Talks/Videos
-* [Big picture software testing unit testing, Lean Startup, and everything in between PyCon 2017](https://www.youtube.com/watch?v=Vaq_e7qUA-4&feature=youtu.be&t=63s)
-* [Boundaries - By Gary Bernhardt from SCNA 2012](https://www.destroyallsoftware.com/talks/boundaries)
-	* This talk is about using simple values (as opposed to complex objects) not just for holding data, but also as the boundaries between components and subsystems. It moves through many topics: functional programming; mutability's relationship to OO; isolated unit testing with and without test doubles; and concurrency, to name some bar. The "Functional Core, Imperative Shell" screencast mentioned at the end is available as part of season 4 of the DAS catalog. 
-* [Big picture software testing unit testing, Lean Startup, and everything in between PyCon 2017](https://www.youtube.com/watch?v=Vaq_e7qUA-4&feature=youtu.be&t=63s)
-	* There are many ways you can test your software: unit testing, manual testing, end-to-end testing, and so forth. Take a step back and you'll discover even more form of testing, many of them very different in their goals: A/B testing, say, where you see which of two versions of your website results in more signups or ad clicks. How do these forms of testing differ, how do they relate to each other? How do you choose which kind of testing to pursue, given limited time and resources? How do you deal with strongly held yet opposite views arguing either that a particular kind of testing is essential or that it's a waste time? This talk will provide you with a model, a way to organize all forms of testing and understand what exactly they provide, and why. Once you understand the model you will be able to choose the right form of testing for *your* situation and goals.
-* [RailsConf 2015 - Nothing is Something](https://www.youtube.com/watch?v=OMPfEXIlTVE)
 
 
 
-### Articles
-* [Counterfeit Object-oriented Programming](http://syssec.rub.de/media/emma/veroeffentlichungen/2015/03/28/COOP-Oakland15.pdf)
-* [Getting Started with WinDbg part 1](http://blog.opensecurityresearch.com/2013/12/getting-started-with-windbg-part-1.html)
-* [An Introduction to Debugging the Windows Kernel with WinDbg](http://www.contextis.com/resources/blog/introduction-debugging-windows-kernel-windbg/)
-* [Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
-* [Record and Replay Debugging with Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Record_and_Replay_Debugging_Firefox)
-* [rr](https://github.com/mozilla/rr)
-	* rr is a lightweight tool for recording and replaying execution of applications (trees of processes and threads). More information about the project, including instructions on how to install, run, and build rr, is at http://rr-project.org.w
 
 -----------
 ### <a name="securedev"></a> Secure Development Practices/Resources
@@ -92,8 +85,12 @@ The content here is just stuff I've come across or think would be useful to some
 	* [OWASP Proactive Controls](https://www.owasp.org/index.php/OWASP_Proactive_Controls?refresh=123#tab=OWASP_Proactive_Controls_2016)
 		* The OWASP Top Ten Proactive Controls 2016 is a list of security concepts that should be included in every software development project. They are ordered by order of importance, with control number 1 being the most important.
 	* [OWASP Application Security Verification Standard](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
+	* [Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
+	* [Secure Coding Cheat Sheet - OWASP](https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet)
+	* [Secure iOS application development](https://github.com/felixgr/secure-ios-app-dev)
+		* This guide is a collection of the most common vulnerabilities found in iOS applications. The focus is on vulnerabilities in the applications’ code and only marginally covers general iOS system security, Darwin security, C/ObjC/C++ memory safety, or high-level application security. Nevertheless, hopefully the guide can serve as training material to iOS app developers that want to make sure that they ship a more secure app. Also, iOS security reviewers can use it as a reference during assessments.
 * **Articles/Papers/Talks/Writeups**
-* **General**
+	* [Counterfeit Object-oriented Programming](http://syssec.rub.de/media/emma/veroeffentlichungen/2015/03/28/COOP-Oakland15.pdf)
 * **Tools**
 
 
@@ -235,6 +232,7 @@ The content here is just stuff I've come across or think would be useful to some
 	* [How to C in 2016](https://matt.sh/howto-c)
 	* [A critique of "How to C in 2016" by Matt](https://github.com/Keith-S-Thompson/how-to-c-response)
 	* [C Right-Left Rule](http://ieng9.ucsd.edu/~cs30x/rt_lt.rule.html)
+	* [What a C programmer should know about memory](http://marek.vavrusa.com/c/memory/2015/02/20/memory/)
 * **Reference**
 	* [C++ TutorialsPoint](https://www.tutorialspoint.com/cplusplus/)
 	* [C Function Call Conventions and the Stack](https://archive.is/o2nD5)
@@ -254,7 +252,7 @@ The content here is just stuff I've come across or think would be useful to some
 ### <a name="c#"></a>C#
 * [Compiling C# Code at Runtime](https://www.codeproject.com/Tips/715891/Compiling-Csharp-Code-at-Runtime)
 * [The 68 things the CLR does before executing a single line of your code (`*`)](https://web.archive.org/web/20170614215931/http://mattwarren.org:80/2017/02/07/The-68-things-the-CLR-does-before-executing-a-single-line-of-your-code/)
-
+* [Dynamic Source Code Generation and Compilation](https://docs.microsoft.comen-us/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)
 
 
 ----------
@@ -268,7 +266,8 @@ The content here is just stuff I've come across or think would be useful to some
 
 ----------
 ### <a name="java"></a> Java
-* [Java - Wikipedia](https://en.wikipedia.org/wiki/Java_(programming_language))
+* **101**
+	* [Java - Wikipedia](https://en.wikipedia.org/wiki/Java_(programming_language))
 * **Learn**
 	* [SEI CERT Oracle Coding Standard for Java](https://www.securecoding.cert.org/confluence/display/java/SEI+CERT+Oracle+Coding+Standard+for+Java)
 	* [Protect Your Java Code - Through Obfuscators and Beyond](https://www.excelsior-usa.com/articles/java-obfuscators.html)
@@ -281,17 +280,27 @@ The content here is just stuff I've come across or think would be useful to some
 	
 ---------------
 ### <a name="javascript"></a> Javascript
-
+* **101**
+* **Vanilla JS**
 * **Node.js**
 	* [Node.js Best Practices](https://github.com/i0natan/nodebestpractices)
 		* The largest Node.JS best practices list. Curated from the top ranked articles and always updated 
-
+* **Learn**
+	* [Mostly Adequate Guide](https://drboolean.gitbooks.io/mostly-adequate-guide/)
+		* This is a book on the functional paradigm in general. We'll use the world's most popular functional programming language: JavaScript. Some may feel this is a poor choice as it's against the grain of the current culture which, at the moment, feels predominately imperative. 
+* **Reference**
+	* [project-guidelines](https://github.com/wearehive/project-guidelines)
+		*  A set of best practices for JavaScript projects - wearehive
+	* [styleguides - Javascript](https://github.com/causes/styleguides/tree/master/javascript)
+* **Tools**
+* **Other**
 
 ----------
 ### <a name="lisp"></a> Lisp
-* [Lisp - Wikipedia](https://en.wikipedia.org/wiki/Lisp_(programming_language))
-* [Common Lisp](https://common-lisp.net/)
-* [What makes lisp macros so special - StackOverflow](https://stackoverflow.com/questions/267862/what-makes-lisp-macros-so-special)
+* **101**
+	* [Lisp - Wikipedia](https://en.wikipedia.org/wiki/Lisp_(programming_language))
+	* [Common Lisp](https://common-lisp.net/)
+	* [What makes lisp macros so special - StackOverflow](https://stackoverflow.com/questions/267862/what-makes-lisp-macros-so-special)
 * **Learn**
 	* [Lisp - TutorialsPoint](https://www.tutorialspoint.com/lisp/)
 * **Reference**
@@ -337,24 +346,22 @@ The content here is just stuff I've come across or think would be useful to some
 
 ----------
 ### <a name="power">Powershell</a>
+* **101**
 * **Learn**
-* [Learn Windows PowerShell in a Month of Lunches, Third Edition - Book](https://www.manning.com/books/learn-windows-powershell-in-a-month-of-lunches-third-edition)
-* [learning-powershell/ - github repo](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell)
-* [Getting Started with Microsoft PowerShell - MS Virtual Academy](https://mva.microsoft.com/en-us/training-courses/getting-started-with-microsoft-powershell-8276?l=r54IrOWy_2304984382)
-* [Weekend Scripter: The Best Ways to Learn PowerShell - technet](https://blogs.technet.microsoft.com/heyscriptingguy/2015/01/04/weekend-scripter-the-best-ways-to-learn-powershell/)
-* [Powershell Tutorial Online](http://powershelltutorial.net/)
-* [Dirty Powershell Webserver](http://obscuresecurity.blogspot.com/2014/05/dirty-powershell-webserver.html)
-* [Useful Powershell scripts](https://github.com/clymb3r/PowerShell)
-
-
-#### Reference
-* [Invoke-Expression - docs.ms](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-expression?view=powershell-5.1)
-
-#### Tools
-* [Pester](https://github.com/pester/Pester)
-	* Pester provides a framework for running unit tests to execute and validate PowerShell commands from within PowerShell. Pester consists of a simple set of functions that expose a testing domain-specific language (DSL) for isolating, running, evaluating and reporting the results of PowerShell commands.
-
-#### Other
+	* [Learn Windows PowerShell in a Month of Lunches, Third Edition - Book](https://www.manning.com/books/learn-windows-powershell-in-a-month-of-lunches-third-edition)
+	* [learning-powershell/ - github repo](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell)
+	* [Getting Started with Microsoft PowerShell - MS Virtual Academy](https://mva.microsoft.com/en-us/training-courses/getting-started-with-microsoft-powershell-8276?l=r54IrOWy_2304984382)
+	* [Weekend Scripter: The Best Ways to Learn PowerShell - technet](https://blogs.technet.microsoft.com/heyscriptingguy/2015/01/04/weekend-scripter-the-best-ways-to-learn-powershell/)
+	* [Powershell Tutorial Online](http://powershelltutorial.net/)
+* **Reference**
+	* [The PowerShell Best Practices and Style Guide(Unofficial)](https://github.com/PoshCode/PowerShellPracticeAndStyle)
+	* [Invoke-Expression - docs.ms](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/invoke-expression?view=powershell-5.1)
+* **Tools**
+	* [Pester](https://github.com/pester/Pester)
+		* Pester provides a framework for running unit tests to execute and validate PowerShell commands from within PowerShell. Pester consists of a simple set of functions that expose a testing domain-specific language (DSL) for isolating, running, evaluating and reporting the results of PowerShell commands.
+	* [Dirty Powershell Webserver](http://obscuresecurity.blogspot.com/2014/05/dirty-powershell-webserver.html)
+	* [Useful Powershell scripts](https://github.com/clymb3r/PowerShell)
+* **Other**
 '''
 Try/Catch Exception in Powershell
 
@@ -423,6 +430,8 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 			* Python is a popular language and that is true as well within the Security industry. This talk will outline how Python code can be statically analyzed using publicly available tools such as bandit. It will then take a more technical approach and outline how the abstract syntax tree (AST) can be processed and searched based on behavior clues to identify potential security issues. Many security tools search for vulnerabilities by analyzing the contents of static strings and examining their variable names. This alternative approach instead demonstrates how the AST can be analyzed to identify pieces of sensitive information such as encryption keys and passwords based on matching them with usage patterns. This will be a technical talk focused on using automated techniques to find security vulnerabilities in Python projects. The audience will leave with an understanding of these techniques and how they can be applied to the projects they are either developing themselves or using in their daily routines. This talk will end with a live demonstration of a forked version of the public Bandit scanner where these techniques have been implemented.
 	* [A Whirlwind Tour of Python](https://github.com/jakevdp/WhirlwindTourOfPython)
 		* The Jupyter Notebooks behind my OReilly report, "A Whirlwind Tour of Python"
+	* [wtfpython](https://github.com/satwikkansal/wtfpython)
+		* Python, being a beautifully designed high-level and interpreter-based programming language, provides us with many features for the programmer's comfort. But sometimes, the outcomes of a Python snippet may not seem obvious to a regular user at first sight.  Here is a fun project to collect such tricky & counter-intuitive examples and lesser-known features in Python, attempting to discuss what exactly is happening under the hood!  While some of the examples you see below may not be WTFs in the truest sense, but they'll reveal some of the interesting parts of Python that you might be unaware of. I find it a nice way to learn the internals of a programming language, and I think you'll find them interesting as well!  If you're an experienced Python programmer, you can take it as a challenge to get most of them right in first attempt. You may be already familiar with some of these examples, and I might be able to revive sweet old memories of yours being bitten by these gotchas sweat_smile
 	* **Build&Understand**
 		* [Build an API under 30 lines of code with Python and Flask](https://impythonist.wordpress.com/2015/07/12/build-an-api-under-30-lines-of-code-with-python-and-flask/)
 * **Analysis**
@@ -442,7 +451,8 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 	* [Trollius and asyncio](https://trollius.readthedocs.io/asyncio.html)
 	* [Scapy3k](https://github.com/phaethon/scapy)
 		* This is a fork of scapy (http://www.secdev.org) to make it compatible with python3. Fork based on scapy v2.3.1 All tests from regression (758 tests), ipsec, and both other test suites pass. Also, I tested full tutorial series [Building Network Tools with Scapy by @thepacketgeek](http://thepacketgeek.com/series/building-network-tools-with-scapy/) using scapy-python3. Please, submit all issues https://github.com/phaethon/scapy preferrably with .pcap files for tests. Bugs for individual layers are usually easy to fix.
-
+	* [python-digitalocean](https://github.com/koalalorenzo/python-digitalocean)
+		* Python module to manage Digital Ocean droplets 
 
 
 
@@ -455,11 +465,15 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 	* [Ruby on Rails](http://rubyonrails.org/)
 	* [rails-security-checklist](https://github.com/eliotsykes/rails-security-checklist)
 		* Community-driven Rails Security Checklist (see our GitHub Issues for the newest checks that aren't yet in the README)
-**Learn**
+	* [RailsConf 2015 - Nothing is Something](https://www.youtube.com/watch?v=OMPfEXIlTVE)
+* **Learn**
 	* [Ruby - Tutorials Point](http://www.tutorialspoint.com/ruby/)
 	* [Ruby in 20 Minutes](https://www.ruby-lang.org/en/documentation/quickstart/)
 	* [rb2exe](https://github.com/loureirorg/rb2exe)
 		* Ruby to EXE - Turn ruby scripts into portable executable apps
+* **Reference**
+	* [ruby-style-guide](https://github.com/bbatsov/ruby-style-guide)
+		* A community-driven Ruby coding style guide
 * **Useful Libraries/programs/Frameworks**
 	* [Shellpaste](https://github.com/andrew-morris/shellpaste)
 		* Tiny snippet of code that pulls ASCII shellcode from pastebin and executes it. The purpose of this is to have a minimal amount of benign code so AV doesn't freak out, then it pulls down the evil stuff. People have been doing this kind of stuff for years so I take no credit for the concept. That being said, this code (or similar code) works surprisingly often during pentests when conventional malware fails. 

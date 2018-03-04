@@ -1,4 +1,4 @@
-# Logging/Network(/Host) Security Monitoring
+# Logging(Host/Network) / Security Monitoring / Threat Hunting
 
 
 
@@ -29,12 +29,16 @@
 * [Windows Event Forwarding Guidance](https://github.com/palantir/windows-event-forwarding) 
 	* Over the past few years, Palantir has a maintained an internal Windows Event Forwarding (WEF) pipeline for generating and centrally collecting logs of forensic and security value from Microsoft Windows hosts. Once these events are collected and indexed, alerting and detection strategies (ADS) can be constructed not only on high-fidelity security events (e.g. log deletion), but also for deviations from normalcy, such as unusual service account access, access to sensitive filesystem or registry locations, or installation of malware persistence. The goal of this project is to provide the necessary building blocks for organizations to rapidly evaluate and deploy WEF to a production environment, and centralize public efforts to improve WEF subscriptions and encourage adoption. While WEF has become more popular in recent years, it is still dramatically underrepresented in the community, and it is our hope that this project may encourage others to adopt it for incident detection and response purposes. We acknowledge the efforts that Microsoft, IAD, and other contributors have made to this space and wish to thank them for providing many of the subscriptions, ideas, and techniques that will be covered in this post.
 
+* [ThreatHunting - GossiTheDog](https://github.com/GossiTheDog/ThreatHunting)
+	* Tools for hunting for threats.
+
+* [HTTPS on every port? - SANS](https://isc.sans.edu/forums/diary/HTTPS+on+every+port/23261/%E2%80%94)
 * [ElastAlert](https://github.com/Yelp/elastalert)
 	* ElastAlert is a simple framework for alerting on anomalies, spikes, or other patterns of interest from data in Elasticsearch.
 
 * [Ninja Level Infrastructure Monitoring Workshop - Defcon24](https://github.com/appsecco/defcon24-infra-monitoring-workshop)
 	* This repository contains all the presentation, documentation and the configuration, sample logs, ansible playbook, customized dashboards and more.
-
+* [Sysinternals Sysmon suspicious activity guide - blogs.technet](https://blogs.technet.microsoft.com/motiba/2017/12/07/sysinternals-sysmon-suspicious-activity-guide/)
 
 * [Advanced Security Audit Policy Settings](https://technet.microsoft.com/en-us/library/dn319056(v=ws.11).aspx)
 
@@ -56,6 +60,9 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 	* bmon is a monitoring and debugging tool to capture networking related statistics and prepare them visually in a human friendly way. It features various output methods including an interactive curses user interface and a programmable text output for scripting.
 * [Aktaion: Open Source Tool For "Micro Behavior Based" Exploit Detection and Automated GPO Policy Generation](https://github.com/jzadeh/Aktaion)
 	* Aktaion is a lightweight JVM based project for detecting exploits (and more generally attack behaviors). The project is meant to be a learning/teaching tool on how to blend multiple security signals and behaviors into an expressive framework for intrusion detection. The cool thing about the project is it provides an expressive mechanism to add high level IOCs (micro beahviors) such as timing behavior of a certain malware family.
+
+* [The Incident Response Hierarchy of Needs](https://github.com/swannman/ircapabilities)
+	* The Incident Response Hierarchy is modeled after [Maslow's Hierarchy of Needs](https://github.com/swannman/ircapabilities). It describes the capabilities that organizations must build to defend their business assets.
 
 #### End Sort
 

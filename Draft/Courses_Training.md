@@ -180,14 +180,16 @@ These classes are all focused on computer/information security. If you're lookin
 * [OWASP Juiceshop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project)
 	* [OWASP JuiceShop Gitbook walkthrough](https://www.gitbook.com/book/bkimminich/pwning-owasp-juice-shop/details)
 	* [Video Walk through by Sunny Wear](https://www.youtube.com/watch?v=zi3yDovd0RY&list=PL-giMT7sGCVI9T4rKhuiTG4EDmUz-arBo)
-* [Hacker101](https://github.com/Hacker0x01/hacker101)
-	* Hacker101 is a free class for web security. Whether you're a programmer with an interest in bug bounties or a seasoned security professional, Hacker101 has something to teach you.
+* [hacker101](https://github.com/Hacker0x01/hacker101)
+	* Hacker101 is structured as a set of video lessons -- some covering multiple topics, some covering a single one -- and can be consumed in two different ways. You can either watch them in the order produced as in a normal class ([§](https://github.com/Hacker0x01/hacker101#sessions) Sessions), or you can watch individual videos ([§](https://github.com/Hacker0x01/hacker101#vulnerabilities) Vulnerabilities). If you're new to security, we recommend the former; this provides a guided path through the content and covers more than just individual bugs.
 
 
 
 ### Wireless
 * [Dissecting Industrial Wireless Implementations - DEF CON 25](https://github.com/voteblake/DIWI)
 	* https://github.com/vortessence/vortessence
+* [RFID INFOSEC](http://rfidsecurity.uark.edu/course/index.html)
+	* RFID INFOSEC is designed to teach undergraduate students about radio frequency identification (RFID) information systems security (INFOSEC).  It provides a system-wide description of a RFID system using a layered reference model that describes the tag, media interface, reader, network, middleware, and application layers.  In addition, it addresses RFID security and privacy threats, risks, and mitigation techniques.  These materials include lesson plans, slides, homework, laboratories, and assessment rubrics organized into modules. 
 
 ### <a name="data"></a>Data Science
 * [CS 259D Data Mining for Cyber Security Autumn 2014](http://web.stanford.edu/class/cs259d/)

@@ -24,6 +24,7 @@
 
 #### Sort
 
+* [Midasearch.org](https://midasearch.org/)
 http://computercrimeinfo.com/cleaningid.html
 http://toddington.com/resources/
 www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
@@ -34,6 +35,12 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 * Add list of Sources:
 * UCC - Uniform Commercial Code; DOC - Current Industrial Patents; DMV - Vehicle Ownership applications; Patents - Patent DBs; Operating Licenses/Permits; Trade Journals;
+
+* [gasmask](https://github.com/twelvesec/gasmask)
+	* All in one Information gathering tool - OSINT
+
+
+
 
 
 
@@ -279,13 +286,17 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 
 ------------------------
 ##### <a name="site"></a>Site Specific
-* AWS
+* **AWS**
 	* [AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)
 		* AWSBucketDump is a tool to quickly enumerate AWS S3 buckets to look for loot. It's similar to a subdomain bruteforcer but is made specifically for S3 buckets and also has some extra features that allow you to grep for delicious files as well as download interesting files if you're not afraid to quickly fill up your hard drive.
-* Facebook
+* **Facebook**
 	* [pymk-inspector](https://github.com/GMG-Special-Projects-Desk/pymk-inspector/blob/master/README.md)
 		* The pymk-inspector is a tool built by Gizmodo's Special Projects Desk that we used for our investigation into Facebook's people you may know (pymk) algorithm.
-* LinkedIn
+* **Github**
+	* [profile-summary-for-github](https://github.com/tipsy/profile-summary-for-github)
+		* Tool for visualizing GitHub profiles
+	* [Github dorks - finding vulns](http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html)
+* **LinkedIn**
 	* [InSpy](https://github.com/gojhonny/InSpy)
 		* A LinkedIn enumeration tool
 	* [linkedin](https://github.com/eracle/linkedin)
@@ -300,9 +311,9 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 		* Grabbing usernames/connections(link analysis)
 	* [The Endorser](https://github.com/eth0izzle/the-endorser)
 		* An OSINT tool that allows you to draw out relationships between people on LinkedIn via endorsements/skills.
-* Tinder
+* **Tinder**
 	* [OSINT: Advanced tinder capture](https://www.learnallthethings.net/osmosis)
-* Twitter
+* **Twitter**
 	* [OneMillionTweetMap](http://onemilliontweetmap.com/)
 		* This page maps the last geolocalized tweets delivered by the twitter stream API. ... YES - IN REAL-TIME - and we keep "only" the last one million tweets.
 	* [tweets_analyzer](https://github.com/x0rz/tweets_analyzer)
@@ -312,15 +323,6 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 		* Tweets metadata scraper & activity analyzer
 	* [Tinfoleak](http://vicenteaguileradiaz.com/tools/)
 		* tinfoleak is a simple Python script that allow to obtain: basic information about a Twitter user (name, picture, location, followers, etc.); devices and operating systems used by the Twitter user; applications and social networks used by the Twitter user; place and geolocation coordinates to generate a tracking map of locations visited; show user tweets in Google Earth!; download all pics from a Twitter user; hashtags used by the Twitter user and when are used (date and time); user mentions by the the Twitter user and when are occurred (date and time); topics used by the Twitter user
-* Github
-	* [Github dorks - finding vulns](http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html)
-
-
-
-
-
-
-
 
 
 

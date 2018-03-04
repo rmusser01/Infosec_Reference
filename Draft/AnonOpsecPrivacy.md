@@ -34,13 +34,10 @@
 #### Sort/Add
 
 * https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-guri-update.pdf
+
 * [A Technical Description of Psiphon](https://psiphon.ca/en/blog/psiphon-a-technical-description)
 * [Invasion of Privacy - HackerFactor](http://www.hackerfactor.com/blog/index.php?/archives/703-Invasion-of-Privacy.html)
 * [What Happens Next Will Amaze You](http://idlewords.com/talks/what_happens_next_will_amaze_you.htm#six_fixes)
-* [anonymouth](https://github.com/psal/anonymouth)
-	* Document Anonymization Tool, Version 0.5
-* [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
-
 
 #### end Sort
 
@@ -56,6 +53,7 @@
 * [The Gruqgs blog](http://grugq.tumblr.com/)
 * ['I've Got Nothing to Hide' and Other Misunderstandings of Privacy](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=998565&)
 	* We live in a surveillance state. Law enforcement and intelligence agencies have access to a huge amount of data about us, enabling them to learn intimate, private details about our lives. In part, the ease with which they can obtain such information reflects the fact that our laws have failed to keep up with advances in technology. However, privacy enhancing technologies can offer real protections even when the law does not. That intelligence agencies like the NSA are able to collect records about every telephone call made in the United States, or engage in the bulk surveillance of Internet communications is only possible because so much of our data is transmitted in the clear. The privacy enhancing technologies required to make bulk surveillance impossible and targeted surveillance more difficult already exist. We just need to start using them.
+* [A Guide to Law Enforcement Spying Technology - EFF](https://www.eff.org/sls)
 * **Android/iOS/Mobile**
 	* [Click and Dragger: Denial and Deception on Android mobile](https://www.slideshare.net/grugq/mobile-opsec/34-WHAT_ARETHEY_GOOD_FOR_Threat)
 	* [DEFCON 20: Can You Track Me Now? Government And Corporate Surveillance Of Mobile Geo-Location Data](https://www.youtube.com/watch?v=NjuhdKUH6U4)
@@ -88,6 +86,16 @@
 	* **Papers**
 		* [Speaker Recognition in Encrypted Voice Streams - Michael Backes,Goran Doychev,Markus Durmuth,Boris Kopf](http://software.imdea.org/~gdoychev/publications/esorics10.pdf)
 			* We develop a novel approach for unveiling the identity of speakers who participate in encrypted voice communication, solely by eavesdropping on the encrypted traffic. Our approach exploits the concept of voice activity detection (VAD), a widely used technique for reducing the bandwidth consumption of voice traffic. We show that the reduction of traffic caused by VAD techniques creates patterns in the encrypted traffic, which in turn reveal the patterns of pauses in the underlying voice stream. We show that these patterns are speaker-characteristic, and that they are sufficient to undermine the anonymity of the speaker in encrypted voice communication. In an empirical setup with 20 speakers our analysis is able to correctly identify an unknown speaker in about 48% of all cases. Our work extends and generalizes existing work that exploits variable bit-rate encoding for identifying the conversation language and content of encrypted voice streams)
+* **Documents**
+	* [anonymouth](https://github.com/psal/anonymouth)
+	* Document Anonymization Tool, Version 0.5
+		* [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
+	* [F⁠ingerprinting documents​ with steganography​](http://blog.fastforwardlabs.com/2017/06/23/fingerprinting-documents-with-steganography.html)
+	* [steganos](https://github.com/fastforwardlabs/steganos)
+		* This is a library to encode bits into text.... steganography in text!
+	* [Content-preserving Text Watermarking through Unicode Homoglyph Substitution](https://www.researchgate.net/publication/308044170_Content-preserving_Text_Watermarking_through_Unicode_Homoglyph_Substitution)
+		* Digital watermarking has become crucially important in authentication and copyright protection of the digital contents, since more and more data are daily generated and shared online through digital archives, blogs and social networks. Out of all, text watermarking is a more difficult task in comparison to other media watermarking. Text cannot be always converted into image, it accounts for a far smaller amount of data (eg. social network posts) and the changes in short texts would strongly affect the meaning or the overall visual form. In this paper we propose a text watermarking technique based on homoglyph characters substitution for latin symbols1. The proposed method is able to efficiently embed a password based watermark in short texts by strictly preserving the content. In particular, it uses alternative Unicode symbols to ensure visual indistinguishability and length preservation, namely content-preservation. To evaluate our method, we use a real dataset of 1.8 million New York articles. The results show the effectiveness of our approach providing an average length of 101 characters needed to embed a 64bit password based watermark.
+	* [Text Authorship Verification through Watermarking - Stefano Giovanni Rizzo, Flavio Bertini, Danilo Montesi](https://pdfs.semanticscholar.org/4028/f904da8e2c50672e6037168bf2bd72bc4cb9.pdf)
 * **Identification**
 	* [Achie­ving an­ony­mi­ty against major face re­co­gni­ti­on al­go­rith­ms -  Be­ne­dikt Dries­sen, Mar­kus Dür­muth](http://www.mobsec.rub.de/forschung/veroeffentlichungen/driessen-13-face-rec/)
 * **Informative/Educational**

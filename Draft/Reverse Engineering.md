@@ -26,28 +26,33 @@
 * To Add
 	* A proper ToC
 
-* [Tracing arbitrary Methods and Function calls on Android and iOS](https://techblog.mediaservice.net/2017/09/tracing-arbitrary-methods-and-function-calls-on-android-and-ios/)
-	* [code](https://github.com/0xdea/frida-scripts)
+* [State of the art of network protocol reverse engineering tools](https://hal.inria.fr/hal-01496958/document)
+* [Dissecting Industrial Wireless Implementations - DEF CON 25](https://github.com/voteblake/DIWI)
+
 * [Cryptoshark](https://github.com/frida/cryptoshark)
 	* Interactive code tracer for reverse-engineering proprietary software 
-* [Offensive & Defensive Android Reverse Engineering](https://github.com/rednaga/training/tree/master/DEFCON23)
-	* Thinking like an attacker, you will learn to identify juicy Android targets, reverse engineer them, find vulnerabilities, and write exploits. We will deep dive into reverse engineering Android frameworks, applications, services, and boot loaders with the end goal of rooting devices. Approaching from a defensive perspective, we will learn quickly triage applications to determine maliciousness, exploits, and weaknesses. After learning triage skills, we will deep dive into malicious code along while dealing with packers, obfuscators, and anti-reversing techniques. Between the offensive and defensive aspects of this class, you should walk away with the fundamentals of reverse engineering and a strong understanding of how to further develop your skills for mobile platforms.
+
+* [Getting Started with WinDbg part 1](http://blog.opensecurityresearch.com/2013/12/getting-started-with-windbg-part-1.html)
+* [An Introduction to Debugging the Windows Kernel with WinDbg](http://www.contextis.com/resources/blog/introduction-debugging-windows-kernel-windbg/)
+* [Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
+* [Record and Replay Debugging with Firefox](https://developer.mozilla.org/en-US/docs/Mozilla/Debugging/Record_and_Replay_Debugging_Firefox)
+* [rr](https://github.com/mozilla/rr)
+	* rr is a lightweight tool for recording and replaying execution of applications (trees of processes and threads). More information about the project, including instructions on how to install, run, and build rr, is at http://rr-project.org.w
 
 
-* [BinCAT](https://github.com/airbus-seclab/bincat)
-	* BinCAT is a static Binary Code Analysis Toolkit, designed to help reverse engineers, directly from IDA.
-* [YaCo])(https://github.com/DGA-MI-SSI/YaCo)
-	* YaCo is an Hex-Rays IDA plugin. When enabled, multiple users can work simultaneously on the same binary. Any modification done by any user is synchronized through git version control.
 * [What are the methods to find hooked functions and APIs?](https://security.stackexchange.com/questions/17904/what-are-the-methods-to-find-hooked-functions-and-apis)
 * [Taking a Snapshot and Viewing Processes - msdn.ms](https://msdn.microsoft.com/library/windows/desktop/ms686701.aspx)
 
 * [Etnaviv](https://github.com/etnaviv/etna_viv)
 	* Project Etnaviv is an open source user-space driver for the Vivante GCxxx series of embedded GPUs. This repository contains reverse-engineering and debugging tools, and rnndb register documentation. It is not necessary to use this repository when building the driver.
 
-
-
-
-
+Android
+* [Tracing arbitrary Methods and Function calls on Android and iOS](https://techblog.mediaservice.net/2017/09/tracing-arbitrary-methods-and-function-calls-on-android-and-ios/)
+	* [code](https://github.com/0xdea/frida-scripts)
+* [Offensive & Defensive Android Reverse Engineering](https://github.com/rednaga/training/tree/master/DEFCON23)
+	* Thinking like an attacker, you will learn to identify juicy Android targets, reverse engineer them, find vulnerabilities, and write exploits. We will deep dive into reverse engineering Android frameworks, applications, services, and boot loaders with the end goal of rooting devices. Approaching from a defensive perspective, we will learn quickly triage applications to determine maliciousness, exploits, and weaknesses. After learning triage skills, we will deep dive into malicious code along while dealing with packers, obfuscators, and anti-reversing techniques. Between the offensive and defensive aspects of this class, you should walk away with the fundamentals of reverse engineering and a strong understanding of how to further develop your skills for mobile platforms.
+* [BinCAT](https://github.com/airbus-seclab/bincat)
+	* BinCAT is a static Binary Code Analysis Toolkit, designed to help reverse engineers, directly from IDA.
 
 #### End sort
 
@@ -348,6 +353,10 @@ Debuggers
 				* The plugin is an integration of Virus Battle API to the well known IDA Disassembler. Virusbattle is a web service that analyses malware and other binaries with a variety of advanced static and dynamic analyses.
 			* [ida-batch_decompile](https://github.com/tintinweb/ida-batch_decompile)
 				* IDA Batch Decompile is a plugin for Hex-Ray's IDA Pro that adds the ability to batch decompile multiple files and their imports with additional annotations (xref, stack var size) to the pseudocode .c file
+			* [IdaRef](https://github.com/nologic/idaref)
+				* IDA Pro Full Instruction Reference Plugin - It's like auto-comments but useful.
+			* [YaCo])(https://github.com/DGA-MI-SSI/YaCo)
+				* YaCo is an Hex-Rays IDA plugin. When enabled, multiple users can work simultaneously on the same binary. Any modification done by any user is synchronized through git version control.
 		* **IDA Tutorials/Help**
 			* [TiGa's Video Tutorial Series on IDA Pro](http://woodmann.com/TiGa/idaseries.html)
 			* [IDA PLUG-IN WRITING IN C/C++](http://www.binarypool.com/idapluginwriting/idapw.pdf)

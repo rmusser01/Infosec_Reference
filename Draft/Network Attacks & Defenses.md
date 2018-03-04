@@ -22,8 +22,10 @@
 * [Netbios](#netbios)
 * [Network Host/Service Discovery](#host)
 * [NFS](#nfs)
+* [NTLM](#ntlm)
 * [PAC/WPAD](#pac)
 * [Pivoting](#pivot)
+* [Printers](#printers)
 * [Proxies](#proxy)
 * [PXE](#pxe)
 * [Software Defined Networking(SDN)](#sdn)
@@ -49,26 +51,14 @@
 ##### To be sorted
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
 * Add IPSEC Stuff
-* Add NTLM Section
-	* [Microsoft NTLM - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749%28v=vs.85%29.aspx)
-
-
-Printers
-* [Hacking Printers Wiki](http://hacking-printers.net/wiki/index.php/Main_Page)
-* [PRET](https://github.com/RUB-NDS/PRET)
-	* PRET is a new tool for printer security testing developed in the scope of a Master's Thesis at Ruhr University Bochum. It connects to a device via network or USB and exploits the features of a given printer language. Currently PostScript, PJL and PCL are supported which are spoken by most laser printers. This allows cool stuff like capturing or manipulating print jobs, accessing the printer's file system and memory or even causing physical damage to the device. All attacks are documented in detail in the Hacking Printers Wiki.
-* [Attacking *multifunction* printers and getting creds from them](http://www.irongeek.com/i.php?page=videos/bsidescleveland2014/plunder-pillage-and-print-the-art-of-leverage-multifunction-printers-during-penetration-testing-deral-heiland)
-* [HPwn - HP printer security research code](https://github.com/foxglovesec/HPwn)
-	* This repository contains varios scripts and projects referenced in FoxGlove security's HP printer blogpost.
-* [blacksheepwall](https://github.com/tomsteele/blacksheepwall)
-	* blacksheepwall is a hostname reconnaissance tool written in Go. It can also be used as a stand-alone package in your tools.
+	* DNSSEC
+	* ICE
+	* NTLM stuff
 
 * [IVRE](https://github.com/cea-sec/ivre)
 	* IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
-
 * [Nili](https://github.com/niloofarkheirkhah/nili)
 	* Nili is a Tool for Network Scan, Man in the Middle, Protocol Reverse Engineering and Fuzzing.
-
 
 ##### sort end
 
@@ -325,7 +315,8 @@ Printers
 * **Tools**
 	* [Davoset](https://github.com/MustLive/DAVOSET) 
 		* DAVOSET - it is console (command line) tool for conducting DDoS attacks on the sites via Abuse of Functionality and XML External Entities vulnerabilities at other sites.
-
+	* [beeswithmachineguns](https://github.com/newsapps/beeswithmachineguns)
+		* A utility for arming (creating) many bees (micro EC2 instances) to attack (load test) targets (web applications).
 
 
 
@@ -653,6 +644,8 @@ Printers
 	* [Virtual host and DNS names enumeration techniques](https://jekil.sexy/blog/2009/virtual-host-and-dns-names-enumeration-techniques.html)
 	* [hostmap](https://github.com/jekil/hostmap)
 		* hostmap is a free, automatic, hostnames and virtual hosts discovery tool written in Ruby by Alessandro Tanasi
+	* [blacksheepwall](https://github.com/tomsteele/blacksheepwall)
+		* blacksheepwall is a hostname reconnaissance tool written in Go. It can also be used as a stand-alone package in your tools.
 * **Cloudflare**
 	* [CloudFail](https://github.com/m0rtem/CloudFail)
 		* CloudFail is a tactical reconnaissance tool which aims to gather enough information about a target protected by CloudFlare in the hopes of discovering the location of the server.
@@ -700,11 +693,15 @@ Printers
 	* [Using nfsshell to compromise older environments](https://www.pentestpartners.com/security-blog/using-nfsshell-to-compromise-older-environments/)
 	* [Abusing Hardlinks Via NFS](http://pentestmonkey.net/blog/nfs-hardlink)
 	* [Exploiting Network File System, (NFS), shares - vulnerabilityassessment.co.uk](http://www.vulnerabilityassessment.co.uk/nfs.htm)
+	* [NFS - pentestacademy.wordpress](https://pentestacademy.wordpress.com/2017/09/20/nfs/)
 * **Tools**
 	* [NfSpy](https://github.com/bonsaiviking/NfSpy)
 		* NfSpy is a Python library for automating the falsification of NFS credentials when mounting an NFS share.
 
 
+
+## <a name="ntlm"></a> NTLM
+	* [Microsoft NTLM - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749%28v=vs.85%29.aspx)
 
 
 ------------
@@ -734,9 +731,17 @@ Printers
 
 
 
+--------------
+### <a name="printers"></a> Printers
+* [Hacking Printers Wiki](http://hacking-printers.net/wiki/index.php/Main_Page)
+* [PRET](https://github.com/RUB-NDS/PRET)
+	* PRET is a new tool for printer security testing developed in the scope of a Master's Thesis at Ruhr University Bochum. It connects to a device via network or USB and exploits the features of a given printer language. Currently PostScript, PJL and PCL are supported which are spoken by most laser printers. This allows cool stuff like capturing or manipulating print jobs, accessing the printer's file system and memory or even causing physical damage to the device. All attacks are documented in detail in the Hacking Printers Wiki.
+* [Attacking *multifunction* printers and getting creds from them](http://www.irongeek.com/i.php?page=videos/bsidescleveland2014/plunder-pillage-and-print-the-art-of-leverage-multifunction-printers-during-penetration-testing-deral-heiland)
+* [HPwn - HP printer security research code](https://github.com/foxglovesec/HPwn)
+	* This repository contains varios scripts and projects referenced in FoxGlove security's HP printer blogpost.
 
 ------------
-#### <a name="proxy"></a>Proxies
+### <a name="proxy"></a>Proxies
 * **Tools**
 * [Mallory](https://bitbucket.org/IntrepidusGroup/mallory)
 	* Mallory is an extensible TCP/UDP man in the middle proxy that is designed  to be run as a gateway. Unlike other tools of its kind, Mallory supports  modifying non-standard protocols on the fly.

@@ -30,6 +30,7 @@
 ----------------------
 ### <a name="general"></a>General
 * **101/Educational**
+	* [A Collection of Resources for Getting Started in ICS/SCADA Cybersecurity - Robert M. Lee](http://www.robertmlee.org/a-collection-of-resources-for-getting-started-in-icsscada-cybersecurity/)
 	* [Control System Basics](https://www.youtube.com/watch?v=VQLRVjEFRGI)
 	* [PLC Training Org](http://plc-training.org/plc-network-to-hmi-scada.html)
 	* [Serial Communication RS232 & RS485](https://www.youtube.com/watch?v=2DQdEHvnqvI)

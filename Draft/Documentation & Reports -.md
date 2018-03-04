@@ -35,6 +35,8 @@ Other Materials:
 * [Learn Technical Writing in Two Hours per Week - Norman Ramsey](http://www.cs.tufts.edu/~nr/pubs/learn-two.pdf)
 * [Politics and the English Language - George Orwell](http://www.npr.org/blogs/ombudsman/Politics_and_the_English_Language-1.pdf)
 * [Tips for Writing Better Infosec Job Descriptions](https://www.darkreading.com/cloud/tips-for-writing-better-infosec-job-descriptions/d/d-id/1330534?piddl_msgid=330184#msg_330184)
+* **Language**
+	* [Bishop Fox Cybersecurity Style Guide](https://www.bishopfox.com/blog/2018/02/hello-world-introducing-the-bishop-fox-cybersecurity-style-guide/)
 * **Tools**
 	* [Ronn](https://github.com/rtomayko/ronn)
 		* Ronn builds manuals. It converts simple, human readable textfiles to roff for terminal display, and also to HTML for the web. The source format includes all of Markdown but has a more rigid structure and syntax extensions for features commonly found in manpages (definition lists, link notation, etc.). The ronn-format(7) manual page defines the format in detail.
@@ -70,12 +72,15 @@ Other Materials:
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 * [vim-wordy](https://github.com/reedes/vim-wordy/blob/master/README.markdown)
 	* wordy is not a grammar checker. Nor is it a guide to proper word usage. Rather, wordy is a lightweight tool to assist you in identifying those words and phrases known for their history of misuse, abuse, and overuse, at least according to usage experts.
+* [tldr](https://github.com/tldr-pages/tldr)
+	* A collection of simplified and community-driven man pages.
 
+	
 
 -----
-### <a name="collab">Penetration Testing / Collaboration Tools</a>
+### <a name="collab">Penetration Testing Collaboration/Documenation Tools</a>
 * [Kvasir](https://github.com/KvasirSecurity/Kvasir)
-	* Kvasir is a vulnerability / penetration testing data management system designed to help mitigate the issues found when performing team-based assessments. Kvasir does this by homogenizing data sources into a pre-defined structure. Currently the following sources are supported:
+	* Kvasir is a vulnerability / penetration testing data management system designed to help mitigate the issues found when performing team-based assessments. Kvasir does this by homogenizing data sources into a pre-defined structure.
 * [Dradis](https://github.com/dradis/dradisframework#welcome-to-dradis)
 	* Dradis is an open source collaboration framework, tailored to InfoSec teams.
 	* It can integrate with a lot of existing tools you probably are using if you're reading this.
@@ -85,9 +90,10 @@ Other Materials:
 	* Lair is a reactive attack collaboration framework and web application built with meteor. 
 * [CrScreenshotDxe](https://github.com/NikolajSchlej/CrScreenshotDxe)
 	* UEFI DXE driver to take screenshots from GOP-compatible graphic console
-
-
-
+* [DART](https://github.com/lmco/dart/blob/master/README.md)
+	* DART is a test documentation tool created by the Lockheed Martin Red Team to document and report on penetration tests, especially in isolated network environments.
+* [Serpico](https://github.com/SerpicoProject/Serpico)
+	* Serpico is a penetration testing report generation and collaboration tool. It was developed to cut down on the amount of time it takes to write a penetration testing report.
 
 -----
 ### <a name="video">Video Recording/Recording</a>

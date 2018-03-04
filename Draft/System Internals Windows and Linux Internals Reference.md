@@ -40,6 +40,8 @@
 * [Netlogon - technet.ms](https://technet.microsoft.com/fr-fr/library/cc962284.aspx)
 * [What is Digest Authentication? - technet.ms](https://technet.microsoft.com/en-us/library/cc778868%28v=ws.10%29.aspx)
 
+* [Windows IT professional documentation](https://github.com/MicrosoftDocs/windows-itpro-docs)
+
 #### End Sort
 
 

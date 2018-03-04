@@ -22,6 +22,12 @@
 	* In this research project, we were monitoring all exit relays for several months in order to expose, document, and thwart malicious or misconfigured relays. In particular, we monitor exit relays with two scanners we developed specifically for that purpose: exitmap and HoneyConnector. Since September 2013, we discovered 65 malicious or misconfigured exit relays which are listed in Table 1 and Table 2 in our research paper. These exit relays engaged in various attacks such as SSH and HTTPS MitM, HTML injection, SSL stripping, and traffic sniffing. We also found exit relays which were unintentionally interfering with network traffic because they were subject to DNS censorship. 
 
 
+* [A Guide to Law Enforcement Spying Technology - EFF](https://www.eff.org/sls)
+* [F⁠ingerprinting documents​ with steganography​](http://blog.fastforwardlabs.com/2017/06/23/fingerprinting-documents-with-steganography.html)
+* [steganos](https://github.com/fastforwardlabs/steganos)
+	* This is a library to encode bits into text.... steganography in text!
+* [Content-preserving Text Watermarking through Unicode Homoglyph Substitution](https://www.researchgate.net/publication/308044170_Content-preserving_Text_Watermarking_through_Unicode_Homoglyph_Substitution)
+	* Digital watermarking has become crucially important in authentication and copyright protection of the digital contents, since more and more data are daily generated and shared online through digital archives, blogs and social networks. Out of all, text watermarking is a more difficult task in comparison to other media watermarking. Text cannot be always converted into image, it accounts for a far smaller amount of data (eg. social network posts) and the changes in short texts would strongly affect the meaning or the overall visual form. In this paper we propose a text watermarking technique based on homoglyph characters substitution for latin symbols1. The proposed method is able to efficiently embed a password based watermark in short texts by strictly preserving the content. In particular, it uses alternative Unicode symbols to ensure visual indistinguishability and length preservation, namely content-preservation. To evaluate our method, we use a real dataset of 1.8 million New York articles. The results show the effectiveness of our approach providing an average length of 101 characters needed to embed a 64bit password based watermark.
 
 
 ------------
@@ -232,7 +238,7 @@ https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-expl
 * [Ronn](https://github.com/rtomayko/ronn)
 	* Ronn builds manuals. It converts simple, human readable textfiles to roff for terminal display, and also to HTML for the web. The source format includes all of Markdown but has a more rigid structure and syntax extensions for features commonly found in manpages (definition lists, link notation, etc.). The ronn-format(7) manual page defines the format in detail.
 
-
+* [Bishop Fox Cybersecurity Style Guide](https://www.bishopfox.com/blog/2018/02/hello-world-introducing-the-bishop-fox-cybersecurity-style-guide/)
 
 ------------
 ## Drones
@@ -684,8 +690,11 @@ https://docs.microsoft.com/en-us/windows/threat-protection/windows-defender-expl
 * [DoubleAgent](https://github.com/Cybellum/DoubleAgent)
 	* DoubleAgent is a new Zero-Day technique for injecting code and maintaining persistence on a machine (i.e. auto-run).
 	* [Technical Writeup](https://cybellum.com/doubleagentzero-day-code-injection-and-persistence-technique/)
-
-
+* [swap_digger](https://github.com/sevagas/swap_digger)
+	* swap_digger is a bash script used to automate Linux swap analysis for post-exploitation or forensics purpose. It automates swap extraction and searches for Linux user credentials, Web form credentials, Web form emails, HTTP basic authentication, WiFi SSID and keys, etc.
+* [Digging passwords in Linux swap](http://blog.sevagas.com/?Digging-passwords-in-Linux-swap)
+* [nextnet](https://github.com/hdm/nextnet)
+	* nextnet is a pivot point discovery tool written in Go.
 
 
 
@@ -981,10 +990,19 @@ SAP
 * [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist/)
 	* Checklist of the most important security countermeasures when designing, testing, and releasing your API
 
+* [Testing stateful web application workflows - SANS - András Veres-Szentkirályi](https://www.sans.org/reading-room/whitepapers/testing/testing-stateful-web-application-workflows-36637)
+	* Most web applications used for complex business operations and/or employing advanced  GUI frameworks have stateful functionality. Certain workflows, for example, might  require completing certain steps before a transaction is committed, or a request sent by a  client-side UI element might need several preceding requests that all contribute to the  session state. Most automated tools focus on a request and maybe a redirection, thus  completely missing the point in these cases, where resending a request gets ignored by  the target application. As a result, while these tools are getting better day by day, using  them for testing such execution paths are usually out of the question. Since thorough  assessment is cumbersome without such tools, there's progress, but we are far from plug- and-play products. This paper focuses on the capabilities of currently available solutions,  demonstrating their pros and cons, along with opportunities for improvement. 
 
 https://github.com/toddmotto/public-apis
 
 https://github.com/grafscan/GraFScaN/blob/master/README.md
+
+* [Exploiting CORS Misconfigurations For Bitcoins And Bounties by James Kettle](https://www.youtube.com/watch?v=wgkj4ZgxI4c)
+	*  Cross-Origin Resource Sharing (CORS) is a mechanism for relaxing the Same Origin Policy to enable communication between websites via browsers. It's already widely understood that certain CORS configurations are dangerous. In this presentation, I'll skim over the old knowledge then coax out and share with you an array of under-appreciated but dangerous subtleties and implications buried in the CORS specification. I'll illustrate each of these with recent attacks on real websites, showing how I could have used them to steal bitcoins from two different exchanges, partially bypass Google's use of HTTPS, and requisition API keys from numerous others. I'll also show how CORS blunders can provide an invaluable link in crafting exploit chains to pivot across protocols, exploit the unexploitable via server and client-side cache poisoning, and even escalate certain open redirects into vulnerabilities that are actually notable.
+* [CORStest](https://github.com/RUB-NDS/CORStest/blob/master/README.md)
+	* A simple CORS misconfiguration scanner
+* [Uniqueness plugin for Burp Suite](https://github.com/silentsignal/burp-uniqueness)
+	* Makes requests unique based on regular expressions. Handy for registration forms and any other endpoint that requires unique values upon every request.
 
 ------------
 ## Wireless Stuff
@@ -1030,3 +1048,9 @@ https://github.com/grafscan/GraFScaN/blob/master/README.md
 
 
 
+### Container Security
+
+* [nsjail](https://github.com/google/nsjail)
+	* A light-weight process isolation tool, making use of Linux namespaces and seccomp-bpf syscall filters (with help of the kafel bpf language)
+* [docker-bench-security](https://github.com/docker/docker-bench-security)
+	* The Docker Bench for Security is a script that checks for dozens of common best-practices around deploying Docker containers in production.

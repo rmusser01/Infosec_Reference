@@ -31,18 +31,18 @@
 http://umtrx.org/
 
 * [Ghosts from the Past: Authentication bypass and OEM backdoors in WiMAX routers](http://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html)
-	* [Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
-	* [CC1101-FSK](https://github.com/trishmapow/CC1101-FSK)
-		* Jam and replay attack on vehicle keyless entry systems.
-	* [Fluxion](https://github.com/wi-fi-analyzer/fluxion)
-		* Fluxion is a remake of linset by vk496 with (hopefully) less bugs and more functionality. It's compatible with the latest release of Kali (rolling). The attack is mostly manual, but experimental versions will automatically handle most functionality from the stable releases.
+* [Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
+* [CC1101-FSK](https://github.com/trishmapow/CC1101-FSK)
+	* Jam and replay attack on vehicle keyless entry systems.
+* [Fluxion](https://github.com/wi-fi-analyzer/fluxion)
+	* Fluxion is a remake of linset by vk496 with (hopefully) less bugs and more functionality. It's compatible with the latest release of Kali (rolling). The attack is mostly manual, but experimental versions will automatically handle most functionality from the stable releases.
 
-	* [gr-lora](https://github.com/BastilleResearch/gr-lora)
-		* This is an open-source implementation of the LoRa CSS PHY, based on the blind signal analysis conducted by @matt-knight. The original research that guided this implementation may be found at https://github.com/matt-knight/research
+* [gr-lora](https://github.com/BastilleResearch/gr-lora)
+	* This is an open-source implementation of the LoRa CSS PHY, based on the blind signal analysis conducted by @matt-knight. The original research that guided this implementation may be found at https://github.com/matt-knight/research
 
-	* [An Auditing Tool for Wi-Fi or Wired Ethernet Connections - Matthew Sullivan](https://www.cookiecadger.com/wp-content/uploads/Cookie%20Cadger.pdf)
-	* [gr-nrsc5](https://github.com/argilo/gr-nrsc5)
-		* A GNU Radio implementation of HD Radio (NRSC-5)
+* [An Auditing Tool for Wi-Fi or Wired Ethernet Connections - Matthew Sullivan](https://www.cookiecadger.com/wp-content/uploads/Cookie%20Cadger.pdf)
+* [gr-nrsc5](https://github.com/argilo/gr-nrsc5)
+	* A GNU Radio implementation of HD Radio (NRSC-5)
 * [Taming Mr Hayes: Mitigating Signaling Based Attacks on Smartphones](https://www.mulliner.org/collin/academic/publications/mrhayes_mulliner_dsn2012.pdf)
 	* Malicious injection of cellular signaling traffic from mobile phones is an emerging security issue. The respective attacks can be performed by hijacked smartphones and by malware resident on mobile phones. Until today there are no protection mechanisms in place to prevent signaling based attacks other than implementing expensive additions to the cellular core network. In this work we present a protection system that resides on the mobile phone. Our solution works by partitioning the phone software stack into the application operating system and the communication partition. The application system is a standard fully featured Android sys tem. On the other side, communication to the cellular network is mediated by a flexible monitoring and enforcement system running on the communication partition. We implemented and evaluated our protection system on a real smartphone. Our evaluation shows that it can mitigate all currently know n signaling based attacks and in addition can protect users fr om cellular Trojans.
 Cellular Networks in Use: 
@@ -51,17 +51,18 @@ Cellular Networks in Use:
 * In use in Asia:
 * In use in Africa:
 * In use in South America:
-* [Practical Guide to RFID Badge copying](https://blog.nviso.be/2017/01/11/a-practical-guide-to-rfid-badge-copying/)
-* [Wireless Keyboard Sniffer](https://samy.pl/keysweeper/)
-* [RFID Hacking with The Proxmark 3](https://blog.kchung.co/rfid-hacking-with-the-proxmark-3/)
-* [Swiss Army Knife for RFID](https://www.cs.bham.ac.uk/~garciaf/publications/Tutorial_Proxmark_the_Swiss_Army_Knife_for_RFID_Security_Research-RFIDSec12.pdf)
 
+
+* [Wireless Keyboard Sniffer](https://samy.pl/keysweeper/)
+
+
+* [krackattacks-scripts](https://github.com/vanhoefm/krackattacks-scripts)
+	* This project contains scripts to test if clients or access points (APs) are affected by the KRACK attack against WPA2. For [details behind this attack see our website](https://www.krackattacks.com/) and [the research paper](https://papers.mathyvanhoef.com/ccs2017.pdf).
+	
 * [hdfm](https://github.com/KYDronePilot/hdfm)
 	* hdfm displays weather and traffic maps received from iHeartRadio HD radio stations. It relies on nrsc5 to decode and dump the radio station data for it to process and display.
 * [nexmon](https://github.com/seemoo-lab/nexmon)
 	* Nexmon is our C-based firmware patching framework for Broadcom/Cypress WiFi chips that enables you to write your own firmware patches, for example, to enable monitor mode with radiotap headers and frame injection.
-
-* [Dissecting Industrial Wireless Implementations - DEF CON 25](https://github.com/voteblake/DIWI)
 
 ##### End Sort
 
@@ -418,6 +419,8 @@ Cellular Networks in Use:
 	* [On Relaying NFC Payment Transactions using Android devices](https://www.slideshare.net/cgvwzq/on-relaying-nfc-payment-transactions-using-android-devices)
 	* [NFC Hacking: NFCProxy with Android Beam](https://www.youtube.com/watch?v=tFi0vYuYeAI&feature=youtu.be)
 	* [Practical Experiences on NFC Relay Attacks with Android: Virtual Pickpocketing Revisited](https://conference.hitb.org/hitbsecconf2015ams/materials/Whitepapers/Relay%20Attacks%20in%20EMV%20Contactless%20Cards%20with%20Android%20OTS%20Devices.pdf)
+	* [Practical Guide to RFID Badge copying](https://blog.nviso.be/2017/01/11/a-practical-guide-to-rfid-badge-copying/)
+	* [RFID Hacking with The Proxmark 3](https://blog.kchung.co/rfid-hacking-with-the-proxmark-3/)
 * **Tools**
 	* [ravenhid](https://github.com/emperorcow/ravenhid)
 		* Hardware and software to run a RFID reader to harvest card information. This is the PCB design and Arduino code that will run a RFID reader, allowing you to gather and harvest cards. Typically, a larger reader, such as those in garages, will be more successful, allowing you to ready over a couple feet instead of inches. The board itself is designed to be modular and support multiple methods to output harvested cards once they are read:
@@ -426,8 +429,7 @@ Cellular Networks in Use:
 	* [RFIDiggity - Pentester Guide to Hacking HF/NFC and UHF RFID - Defcon23](https://www.youtube.com/watch?v=7o38hyQWw6g)
 	* [Wiegotcha: Long Range RFID Thieving](https://github.com/lixmk/Wiegotcha)
 		* Wiegotcha is the next evolution of Long Range RFID badge capturing. Based on previous work by Fran Brown and Bishop Fox (Tastic RFID Thief), Wiegotcha uses a Raspberry Pi in place of an Arduino for the added capabilities and ease of customization. One of the immediate benefits of using an RPi is quick and easy wireless communication with the badge reader.
-
-
+	* [Swiss Army Knife for RFID](https://www.cs.bham.ac.uk/~garciaf/publications/Tutorial_Proxmark_the_Swiss_Army_Knife_for_RFID_Security_Research-RFIDSec12.pdf)
 
 
 ### <a name="retroreflectors">RF RetroReflectors</a>

@@ -29,6 +29,9 @@
 #### To Sort
 * sort and break into policy/high level/ vs interesting things
 
+* [Cubicles and Compromises - Webcast](https://www.blackhillsinfosec.com/webcast-cubicles-compromises/)
+	* [Printable Version](https://www.blackhillsinfosec.com/cubicles-compromises-printable/)
+
 
 * [Programming Sucks](http://www.stilldrinking.org/programming-sucks)
 
@@ -67,9 +70,10 @@ http://spth.virii.lu/articles.htm
 
 * [My Canons on (ISC)² Ethics - Such as They Are(2011)](http://infosecisland.com/blogview/15450-My-Canons-on-ISC-Ethics-Such-as-They-Are.html)
 
+* [Containers Will Not Fix Your Broken Culture (and Other Hard Truths) - Complex socio-technical systems are hard; film at 11. - Bridget Kromhout](https://queue.acm.org/detail.cfm?id=3185224)
 
-
-
+* [tcpTrigger](https://github.com/R-Smith/tcpTrigger)
+	* tcpTrigger is a Windows service intended to notify you of incoming network connections.  You specify a TCP port to monitor and an action to take.  Actions taken include: sending a notification email and/or launching an external application or script.  Your action will then be triggered each time an incoming connection is attempted on your specified port.
 * [Hacker Scripts](https://github.com/NARKOZ/hacker-scripts)
 	* Based on a true story
 

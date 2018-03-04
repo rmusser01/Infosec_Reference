@@ -259,6 +259,8 @@ https://conversations.im/xeps/multi-end.html
     * [Blockchain Security research](https://gist.github.com/insp3ctre/403b8cb99eae2f52565874d8547fbc94)
         * Open-source blockchain security research (contributions welcome!)
     * [Blockchain Graveyard](https://magoo.github..io/Blockchain-Graveyard/)
+    * [Crypto Canon](https://a16z.com/2018/02/10/crypto-readings-resources/)
+        * Curatd resources explaining various parts of crypto currencies. Hosted/maintained by a16z.com
 * **Bitcoin**
     * [Bitcoin Paper](https://bitcoin.org/bitcoin.pdf)
         * [Bitcoin Paper Annotated - Genius](https://genius.com/2683753)

@@ -104,7 +104,8 @@
 	* Phishing toolkit for red teams and pentesters. Ares allows security testers to create a landing page easily, embedded within the original site. Ares acts as a proxy between the phised and original site, and allows (realtime) modifications and injects. All references to the original site are being rewritten to the new site. Users will use the site like they'll normally do, but every step will be recorded of influenced. Ares will work perfect with dns poisoning as well.
 * [SocialFish](https://github.com/UndeadSec/SocialFish)
 	* Ultimate phishing tool with Ngrok integrated.
-
+* [SocialFish](https://github.com/UndeadSec/SocialFish)
+	* Easy phishing using socail media sites
 
 
 

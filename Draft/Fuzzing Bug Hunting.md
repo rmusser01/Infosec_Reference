@@ -22,23 +22,16 @@
 #### sort
 https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 * Add Descriptions/generals to types of fuzzing
-
+* [0-day streams: pdfcrack](https://www.youtube.com/watch?v=8VLNPIIgKbQ&app=desktop)
 * [FuzzManager](https://github.com/MozillaSecurity/FuzzManager)
 	* With this project, we aim to create a management toolchain for fuzzing. Unlike other toolchains and frameworks, we want to be modular in such a way that you can use those parts of FuzzManager that seem interesting to you without forcing a process upon you that does not fit your requirements.
 * [COMRaider](http://sandsprite.com/iDef/COMRaider/)
 	* ActiveX Fuzzing tool with GUI, object browser, system scanner, and distributed auditing capabilities
 	* [Github](https://github.com/dzzie/COMRaider)
-* [From Fuzzing to 0day.](http://blog.techorganic.com/2014/05/14/from-fuzzing-to-0-day/)
-
 * [Basic fuzzing framework](https://www.cert.org/vulnerability-analysis/tools/bff-download.cfm)
+
 * [Fuzzing 101 (Part 1)]()
 * [Fuzzing 101 (Part 2)](https://vimeo.com/5237484)
-* [0-day streams: pdfcrack](https://www.youtube.com/watch?v=8VLNPIIgKbQ&app=desktop)
-
-* [pcrappyfuzzer](https://github.com/blazeinfosec/pcrappyfuzzer)
-	* Script to perform quick 'n dirty fuzzing of PCAPs with radamsa and Scapy.
-
-
 
 
 #### end sort
@@ -63,6 +56,8 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 	* [The Power Of Pair: One Template That Reveals 100+ Uaf Ie Vulnerabilities - BlackhatEU14](http://www.securitytube.net/video/12924?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+SecurityTube+%28SecurityTube.Net%29)
 	* [Mining for Bugs with Graph Database Queries [31c3]](https://www.youtube.com/watch?v=291hpUE5-3g)
 	* [ClusterFuzz](http://nullcon.net/website/archives/ppt/goa-15/analyzing-chrome-crash-reports-at-scale-by-abhishek-arya.pdf)
+	* [Google VRP and Unicorns](https://sites.google.com/site/bughunteruniversity/behind-the-scenes/presentations/google-vrp-and-unicorns)
+		* In July 2017 at BountyCraft event we delivered a presentation entitled "Google VRP and Unicorns", featuring a selection of interesting bugs reported to our program, and disclosing some planned updates in store for Google VRP.
 * **History**
 	* [Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
 		* Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
@@ -100,6 +95,7 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 			* dynamic binary analysis via platform emulation 
 	* **Writeups**
 		* [Fuzzing TCP servers - Robert Swiecki](http://blog.swiecki.net/2018/01/fuzzing-tcp-servers.html)
+		* [From Fuzzing to 0day.](http://blog.techorganic.com/2014/05/14/from-fuzzing-to-0-day/)
 * **Static Fuzzing**
 	* **Frameworks**
 		* [Paper Machete](https://github.com/cetfor/PaperMachete/wiki)
@@ -160,6 +156,8 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 			* A dumb protocol-unaware packet fuzzer/replayer.
 		* [Nightmare](https://github.com/joxeankoret/nightmare)
 			* A distributed fuzzing testing suite with web administration, supports fuzzing using network protocols.
+		* [pcrappyfuzzer](https://github.com/blazeinfosec/pcrappyfuzzer)
+			* Script to perform quick 'n dirty fuzzing of PCAPs with radamsa and Scapy.
 * **Fuzzing Linux**
 	* **Kernel**
 		* [KernelFuzzer](https://github.com/mwrlabs/KernelFuzzer) - Cross Platform Kernel Fuzzer Framework.

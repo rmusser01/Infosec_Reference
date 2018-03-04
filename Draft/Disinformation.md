@@ -16,6 +16,6 @@
 * [A Digital World Full of Ghost Armies](http://www.cigtr.info/2015/02/a-digital-world-full-of-ghost-armies.html)
 	* Not very related to infosec per say, but the general idea/takeaway is very applicable.
 * [Russia Convention on International Information Security](http://cryptome.org/2014/05/ru-international-infosec.htm)
-* [IRA Code Words Spell Real Threat](articles.latimes.com/1997-04-19/news/mn-50393_1_code-words)
+* [IRA Code Words Spell Real Threat](https://articles.latimes.com/1997-04-19/news/mn-50393_1_code-words)
 * [‘A man who’s seen society's black underbelly’ Meduza meets ‘Anonymous International’](https://meduza.io/en/feature/2015/02/02/a-man-who-s-seen-society-s-black-underbelly)
 * [Down the Memory Hole: NYT Erases CIA’s Efforts to Overthrow Syria’s Government](https://web.archive.org/web/20150921054800id_/http://fair.org/home/down-the-memory-hole-nyt-erases-cias-efforts-to-overthrow-syrias-government/)

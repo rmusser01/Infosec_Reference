@@ -16,6 +16,11 @@
 ### Start
 * [How I read a research paper](https://muratbuffalo.blogspot.com/2013/07/how-i-read-research-paper.html?m=1
 
+
+
+
+
+
 -----
 ### <a name="writing">Writing</a>
 Start with the first two links, and go from there. They’re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
@@ -129,3 +134,9 @@ Other Materials:
 * [My first CVE-2016-1000329 in BlogPHP](https://www.stevencampbell.info/2016/12/my-first-cve-2016-1000329-in-blogphp/)
 * **Dealing with the press/journalists:**
 	* [Hacking the media for fame/profit talk](http://www.irongeek.com/i.php?page=videos/derbycon4/Hacking-The-Media-For-Fame-And-Profit-Jenn-Ellis-Steven-Reganh)
+
+
+
+----------------
+### Sample Documents
+* [Pentest/Red Team Offering Documents - mubix](https://drive.google.com/drive/folders/0ByiDshWJ_PnZdnJZQ0h3MWZyRUk)

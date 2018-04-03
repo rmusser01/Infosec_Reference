@@ -22,17 +22,16 @@
 #### sort
 https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 * Add Descriptions/generals to types of fuzzing
-* [0-day streams: pdfcrack](https://www.youtube.com/watch?v=8VLNPIIgKbQ&app=desktop)
+
 * [FuzzManager](https://github.com/MozillaSecurity/FuzzManager)
 	* With this project, we aim to create a management toolchain for fuzzing. Unlike other toolchains and frameworks, we want to be modular in such a way that you can use those parts of FuzzManager that seem interesting to you without forcing a process upon you that does not fit your requirements.
-* [COMRaider](http://sandsprite.com/iDef/COMRaider/)
-	* ActiveX Fuzzing tool with GUI, object browser, system scanner, and distributed auditing capabilities
-	* [Github](https://github.com/dzzie/COMRaider)
 * [Basic fuzzing framework](https://www.cert.org/vulnerability-analysis/tools/bff-download.cfm)
 
 * [Fuzzing 101 (Part 1)]()
 * [Fuzzing 101 (Part 2)](https://vimeo.com/5237484)
 
+* [Differential Slicing: Identifying Causal Execution Differences for Security Applications](http://bitblaze.cs.berkeley.edu/papers/diffslicing_oakland11.pdf)
+	* Abstract —A security analyst often needs to understand two runs of the same program that exhibit a difference in program state or output. This is important, for example, for vulnerability analysis, as well as for analyzing a malware program that features different behaviors when run in different environments. In this paper we propose a differential slicing approach that automates the analysis of such execution differences. Differential slicing outputs a causal difference graph that captures the input differences that triggered the observe d difference and the causal path of differences that led from thos e input differences to the observed difference. The analyst uses the graph to quickly understand the observed difference. We implement differential slicing and evaluate it on the analysis of 11 real-world vulnerabilities and 2 malware samples with environment-dependent behaviors. We also evaluate it in an informal user study with two vulnerability analysts. Our results show that differential slicing successfully identifies the input differences that caused the observed difference and that the causal difference graph significantly reduces the amount of time and effort required for an analyst to understand the observed difference
 
 #### end sort
 
@@ -121,6 +120,10 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 		* [MFFA - Media Fuzzing Framework for Android](https://github.com/fuzzing/MFFA)
 		* [android-afl](https://github.com/ele7enxxh/android-afl)
 			* Fuzzing Android program with american fuzzy lop (AFL)
+		* [Droid Application Fuzz Framework](https://github.com/ajinabraham/Droid-Application-Fuzz-Framework)
+			* Droid Application Fuzz Framework (DAFF) helps you to fuzz Android Browsers and PDF Readers for memory corruption bugs in real android devices. You can use the inbuilt fuzzers or import fuzz files from your own custom fuzzers. DAFF consist of inbuilt fuzzers and crash monitor. It currently supports fuzzing the following applications:
+		* [MFFA - Media Fuzzing Framework for Android (Stagefright fuzzer)](https://github.com/fuzzing/MFFA)
+			* The main idea behind this project is to create corrupt but structurally valid media files, direct them to the appropriate software components in Android to be decoded and/or played and monitor the system for potential issues (i.e system crashes) that may lead to exploitable vulnerabilities. Custom developed Python scripts are used to send the malformed data across a distributed infrastructure of Android devices, log the findings and monitor for possible issues, in an automated manner. The actual decoding of the media files on the Android devices is done using the Stagefright command line interface. The results are sorted out, in an attempt to find only the unique issues, using a custom built triage mechanism.
 * **Browser Bug Hunting/Fuzzing**
 	* [Browser Bug Hunting and Mobile](http://slides.com/revskills/fzbrowsers#/)
 	* [Grinder - Fuzzer](https://github.com/stephenfewer/grinder)
@@ -143,10 +146,15 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 		* Main repository to pull all Cisco ASA-related projects.
 	* [asafw](https://github.com/nccgroup/asafw)
 		* Set of scripts to deal with Cisco ASA firmware [pack/unpack etc.]
+* **COM Fuzzing**
+	* [COMRaider](http://sandsprite.com/iDef/COMRaider/)
+		* ActiveX Fuzzing tool with GUI, object browser, system scanner, and distributed auditing capabilities
+		* [Github](https://github.com/dzzie/COMRaider)
 * **File Formats Bug Hunting/Fuzzing**
 	* [Practical File Format Fuzzing](http://www.irongeek.com/i.php?page=videos/derbycon3/3301-practical-file-format-fuzzing-jared-allar)
 		* File format fuzzing has been very fruitful at discovering exploitable vulnerabilities. Adversaries take advantage of these vulnerabilities to conduct spear-phishing attacks. This talk will cover the basics of file format fuzzing and show you how to use CERT’s fuzzing frameworks to discovery vulnerabilities in file parsers.
 	* [File Format Fuzzing in Android](https://deepsec.net/docs/Slides/2015/File_Format_Fuzzing_in_Android_-Alexandru_Blanda.pdf)
+	* [Funky File Formats - Advanced Binary Exploitation](http://media.ccc.de/browse/congress/2014/31c3_-_5930_-_en_-_saal_6_-_201412291400_-_funky_file_formats_-_ange_albertini.html#video)
 * **Network Protocols Bug Hunting/Fuzzing**
 	* **Articles/Writeups**
 		* [Fuzzing proprietary protocols with Scapy, radamsa and a handful of PCAPs](https://blog.blazeinfosec.com/fuzzing-proprietary-protocols-with-scapy-radamsa-and-a-handful-of-pcaps/)
@@ -172,6 +180,8 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 		* Network accessible medical devices are ubiquitous in today’s clinical environment. These devices can be of great aid to healthcare profes- sionals in assessing, treating and monitoring a patient’s condition. However, they can also fall victim to a number of systemic vulnerabili- ties that can expose personal health information or PHI, compromise the integrity of patient data in transit, and affect the availability of the devices themselves. This talk looks at the methodology and approach to penetration testing of modern medical devices. It will provide an overview of the various stages of a medical device assessment, including discovery and analysis of a device’s remote and local attack surface, reverse engineering and exploitation of proprietary network protocols, vulner- ability discovery in network services, compromising supporting sys- tems, attacking common wireless protocols, exploitation of hardware debug interfaces and bus protocols and assessing proprietary wireless technologies. It will also cover a number of real world vulnerabilities that the speaker has discovered during medical device penetration testing assessments. These include weak cryptographic implementations, device impersonation and data manipulation vulnerabilities in pro- prietary protocols, unauthenticated database interfaces, hardcoded credentials/keys and other sensitive information stored in firmware/ binaries and the susceptibility of medical devices to remote denial of service attacks. The talk will conclude with some suggestions on how some of the most common classes of medical device vulnerabilities might be reme- diated by vendors and also how hospitals and other healthcare provid- ers can defend their medical devices in the meantime.
 * **OS X Bug Hunting/Fuzzing**
 	* [There's a lot of vulnerable OS X applications out there](https://vulnsec.com/2016/osx-apps-vulnerabilities/)
+* **PDF**
+	* [0-day streams: pdfcrack](https://www.youtube.com/watch?v=8VLNPIIgKbQ&app=desktop)
 * **RTP**
 	* [ohrwurm](http://mazzoo.de/blog/2006/08/25#ohrwurm)
 		* ohrwurm is a small and simple RTP fuzzer, I tested it on a small number of SIP phones, none of them did withstand.
@@ -214,7 +224,9 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 			* Diffing libs in Win7 compared to Win8 to id vuln dlls.
 		* [Fuzzing for MS15-010](http://blog.beyondtrust.com/fuzzing-for-ms15-010)
 			* Is what it says on the tin.
-
+	* **Patch Analysis**
+		* [Microsoft Patch Analysis for Exploitation - Stephen Sims](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t111-microsoft-patch-analysis-for-exploitation-stephen-sims)
+			* Since the early 2000's Microsoft has distributed patches on the second Tuesday of each month. Bad guys, good guys, and many in-between compare the newly released patches to the unpatched version of the files to identify the security fixes. Many organizations take weeks to patch and the faster someone can reverse engineer the patches and get a working exploit written, the more valuable it is as an attack vector. Analysis also allows a researcher to identify common ways that Microsoft fixes bugs which can be used to find 0-days. Microsoft has recently moved to mandatory cumulative patches which introduces complexity in extracting patches for analysis. Join me in this presentation while I demonstrate the analysis of various patches and exploits, as well as the best-known method for modern patch extraction.
 
 -----------------
 ### Non-Specific Tools(Don't explicitly fit into above sections)

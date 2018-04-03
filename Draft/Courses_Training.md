@@ -182,7 +182,8 @@ These classes are all focused on computer/information security. If you're lookin
 	* [Video Walk through by Sunny Wear](https://www.youtube.com/watch?v=zi3yDovd0RY&list=PL-giMT7sGCVI9T4rKhuiTG4EDmUz-arBo)
 * [hacker101](https://github.com/Hacker0x01/hacker101)
 	* Hacker101 is structured as a set of video lessons -- some covering multiple topics, some covering a single one -- and can be consumed in two different ways. You can either watch them in the order produced as in a normal class ([§](https://github.com/Hacker0x01/hacker101#sessions) Sessions), or you can watch individual videos ([§](https://github.com/Hacker0x01/hacker101#vulnerabilities) Vulnerabilities). If you're new to security, we recommend the former; this provides a guided path through the content and covers more than just individual bugs.
-
+* [Security_Ninjas_AppSec_Training](https://github.com/opendns/Security_Ninjas_AppSec_Training)
+	* OpenDNS application security training program. This hands-on training lab consists of 10 fun real world like hacking exercises, corresponding to each of the OWASP Top 10 vulnerabilities. Hints and solutions are provided along the way. Although the backend for this is written in PHP, vulnerabilities would remain the same across all web based languages, so the training would still be relevant even if you don’t actively code in PHP.
 
 
 ### Wireless

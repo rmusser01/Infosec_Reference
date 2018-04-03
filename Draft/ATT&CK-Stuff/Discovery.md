@@ -491,6 +491,9 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 	*  On Mac, the systemsetup command gives a detailed breakdown of the system, but it requires administrative privileges. Additionally, the `system_profiler` gives a very detailed breakdown of configurations, firewall rules, mounted volumes, hardware, and many other things without needing elevated permissions.
 * [Get OS X System Info from the Command Line](http://teczd.com/2015/09/23/osx-get-system-info-from-command-line/)
 * [Using System Profiler in Terminal](http://macstuff.beachdogs.org/blog/?p=21)
+* [Orchard](https://github.com/its-a-feature/Orchard)
+	* Live off the land for macOS. This program allows users to do Active Directory enumeration via macOS' JXA (JavaScript for Automation) code. This is the newest version of AppleScript, and thus has very poor documentation on the web.
+
 
 #### Windows
 * MITRE

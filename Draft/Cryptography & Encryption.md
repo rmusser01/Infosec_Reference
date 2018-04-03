@@ -67,6 +67,10 @@ https://a16z.com/2018/02/10/crypto-readings-resources/
 * crypto101
 https://conversations.im/xeps/multi-end.html
 
+* [TLS 1.3 Implementations](https://github.com/tlswg/tls13-spec/wiki/Implementations)
+* [Encryption 101, RSA 001 (The maths behind it) - IoTh1nkN0t](https://0x00sec.org/t/encryption-101-rsa-001-the-maths-behind-it/1921)
+
+
 ### End Sort
 
 
@@ -102,6 +106,7 @@ https://conversations.im/xeps/multi-end.html
         * Go through a series of increasingly difficult challenges while learning all about cryptography. Expected knowledge level: You passed 9th grade math and you have 0 knowledge of crypto.
     * [A Graduate Course in Applied Cryptography - Dan Boneh and Victor Shoup](http://toc.cryptobook.us/)
         * Version 0.3 - posted Dec. 9, 2016
+    * [Discovering Smart Contract Vulnerabilities with GOATCasino - NCCGroup](https://www.nccgroup.trust/us/our-research/discovering-smart-contract-vulnerabilities-with-goatcasino/?style=Cyber+Security)
 * **Crypto Frameworks/Libraries/Protocols**
     * [OMEMO Multi-End Message and Object Encryption](https://conversations.im/omemo/)
        * OMEMO is an XMPP Extension Protocol (XEP) for secure multi-client end-to-end encryption. It is an open standard based on a Double Ratchet and PEP which can be freely used and implemented by anyone. The protocol has been audited by a third party.
@@ -168,17 +173,18 @@ https://conversations.im/xeps/multi-end.html
 
 ----------------------
 ### Specific Attacks
-
+* **BEAST**
+* **CRIME**
 * **CBC Bit-Flipping Attack**
     * [CBC Byte Flipping Attack—101 Approach](http://resources.infosecinstitute.com/cbc-byte-flipping-attack-101-approach/)
-
 * **FREAK**
     * [Attack of the week: FREAK (or 'factoring the NSA for fun and profit')](http://blog.cryptographyengineering.com/2015/03/attack-of-week-freak-or-factoring-nsa.html)
-
 * **Padding Oracle**
     * [Automated Padding Oracle Attacks with PadBuster](https://blog.gdssecurity.com/labs/2010/9/14/automated-padding-oracle-attacks-with-padbuster.html)
     * [PadBuster v0.3 and the .NET Padding Oracle Attack](https://blog.gdssecurity.com/labs/2010/10/4/padbuster-v03-and-the-net-padding-oracle-attack.html)
 * **ROBOT Attack**
+    * [ROBOT Attack](https://robotattack.org/)
+        * ROBOT is the return of a 19-year-old vulnerability that allows performing RSA decryption and signing operations with the private key of a TLS server. In 1998, Daniel Bleichenbacher discovered that the error messages given by SSL servers for errors in the PKCS #1 v1.5 padding allowed an adaptive-chosen ciphertext attack; this attack fully breaks the confidentiality of TLS when used with RSA encryption. We discovered that by using some slight variations this vulnerability can still be used against many HTTPS hosts in today's Internet.
     * [robot-detect](https://github.com/robotattackorg/robot-detect)
         * Proof of concept attack and detection for ROBOT (Return Of Bleichenbacher's Oracle Threat).
 

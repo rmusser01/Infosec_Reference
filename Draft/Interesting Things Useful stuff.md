@@ -31,12 +31,19 @@
 
 * [Cubicles and Compromises - Webcast](https://www.blackhillsinfosec.com/webcast-cubicles-compromises/)
 	* [Printable Version](https://www.blackhillsinfosec.com/cubicles-compromises-printable/)
+* [The Marketing Behind MongoDB](https://www.nemil.com/mongo/3.html)
 
-
+* Add:
+	* Organizational Drift
+	* Pournelle's iron law
+	* Peter Principle
+	
 * [Programming Sucks](http://www.stilldrinking.org/programming-sucks)
 
 http://spth.virii.lu/articles.htm
 
+* [teleport](https://github.com/gravitational/teleport)
+	* Modern SSH server for clusters and teams. 
 * [Virtualization Based Security - Part 2: kernel communications](http://blog.amossys.fr/virtualization-based-security-part2.html)
 * [Binary SMS - The old backdoor to your new thing](https://www.contextis.com/resources/blog/binary-sms-old-backdoor-your-new-thing/)
 * [A Sysadmin's Unixersal Translator (ROSETTA STONE)](http://bhami.com/rosetta.html)

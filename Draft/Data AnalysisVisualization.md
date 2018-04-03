@@ -14,7 +14,7 @@
 
 ### To Do
 * Split into Data visualization/Working with data
-
+* Edward Tufte Books
 
 #### Sort
 
@@ -24,6 +24,10 @@
 [Just-Metadata](https://github.com/ChrisTruncer/Just-Metadata)
 * Just-Metadata is a tool that can be used to gather intelligence information passively about a large number of IP addresses, and attempt to extrapolate relationships that might not otherwise be seen. Just-Metadata has "gather" modules which are used to gather metadata about IPs loaded into the framework across multiple resources on the internet. Just-Metadata also has "analysis" modules. These are used to analyze the data loaded Just-Metadata and perform various operations that can identify potential relationships between the loaded systems.
 
+* [NewsDiffs](https://github.com/ecprice/newsdiffs)
+	* Automatic scraper that tracks changes in news articles over time.
+* [Active Directory Control Paths](https://github.com/ANSSI-FR/AD-control-paths)
+	* Control paths in Active Directory are an aggregation of "control relations" between entities of the domain (users, computers, groups, GPO, containers, etc.) which can be visualized as graphs (such as above) and whose purpose is to answer questions like "Who can get 'Domain Admins' privileges ?" or "What resources can a user control ?" and even "Who can read the CEO's emails ?".
 
 
 Apache Nifi - supports powerful and scalable directed graphs of data routing, transformation, and system mediation logic.

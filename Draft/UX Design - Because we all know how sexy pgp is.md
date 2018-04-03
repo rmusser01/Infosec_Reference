@@ -13,13 +13,6 @@
 
 #### Sort
 
-https://dribbble.com/
-
-https://www.uplabs.com/
-
-[CodePen](https://codepen.io/#)
-Find list of UI books and paste here(had one but can't seem to find it...)
-
 #### End Sort
  
 
@@ -40,6 +33,7 @@ Find list of UI books and paste here(had one but can't seem to find it...)
 	* Emotional Design
 	* Don't Make me think
 	* 
+	* [The Visual Display of Quantitative Information](https://www.edwardtufte.com/tufte/books_vdqi)
 * **Talks & Presentations**
 	* [UI Fundamentals for Programmers by Ryan Singer](https://vimeo.com/6702766)
 * **Websites/Organizations**
@@ -47,3 +41,7 @@ Find list of UI books and paste here(had one but can't seem to find it...)
 		* A Dark Pattern is a user interface that has been carefully crafted to trick users into doing things, such as buying insurance with their purchase or signing up for recurring bills.
 	* [Nielsen Norman Group](http://www.nngroup.com)
 		* Evidence-Based User Experience Research, Training, and Consulting; check articles and guidelines, ignore other sections
+* **Hiring Boards**
+	* [dribble](https://dribbble.com/)
+	* [uplabs](https://www.uplabs.com/)
+	* [CodePen](https://codepen.io/#)

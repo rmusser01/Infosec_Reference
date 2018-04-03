@@ -28,23 +28,16 @@
 * Fix ToC
 * Add 101 stuff
 
+
 http://umtrx.org/
 
+
 * [Ghosts from the Past: Authentication bypass and OEM backdoors in WiMAX routers](http://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html)
+
 * [Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
-* [CC1101-FSK](https://github.com/trishmapow/CC1101-FSK)
-	* Jam and replay attack on vehicle keyless entry systems.
 * [Fluxion](https://github.com/wi-fi-analyzer/fluxion)
 	* Fluxion is a remake of linset by vk496 with (hopefully) less bugs and more functionality. It's compatible with the latest release of Kali (rolling). The attack is mostly manual, but experimental versions will automatically handle most functionality from the stable releases.
 
-* [gr-lora](https://github.com/BastilleResearch/gr-lora)
-	* This is an open-source implementation of the LoRa CSS PHY, based on the blind signal analysis conducted by @matt-knight. The original research that guided this implementation may be found at https://github.com/matt-knight/research
-
-* [An Auditing Tool for Wi-Fi or Wired Ethernet Connections - Matthew Sullivan](https://www.cookiecadger.com/wp-content/uploads/Cookie%20Cadger.pdf)
-* [gr-nrsc5](https://github.com/argilo/gr-nrsc5)
-	* A GNU Radio implementation of HD Radio (NRSC-5)
-* [Taming Mr Hayes: Mitigating Signaling Based Attacks on Smartphones](https://www.mulliner.org/collin/academic/publications/mrhayes_mulliner_dsn2012.pdf)
-	* Malicious injection of cellular signaling traffic from mobile phones is an emerging security issue. The respective attacks can be performed by hijacked smartphones and by malware resident on mobile phones. Until today there are no protection mechanisms in place to prevent signaling based attacks other than implementing expensive additions to the cellular core network. In this work we present a protection system that resides on the mobile phone. Our solution works by partitioning the phone software stack into the application operating system and the communication partition. The application system is a standard fully featured Android sys tem. On the other side, communication to the cellular network is mediated by a flexible monitoring and enforcement system running on the communication partition. We implemented and evaluated our protection system on a real smartphone. Our evaluation shows that it can mitigate all currently know n signaling based attacks and in addition can protect users fr om cellular Trojans.
 Cellular Networks in Use: 
 * In use in North America:
 * In use in Europe:
@@ -53,16 +46,6 @@ Cellular Networks in Use:
 * In use in South America:
 
 
-* [Wireless Keyboard Sniffer](https://samy.pl/keysweeper/)
-
-
-* [krackattacks-scripts](https://github.com/vanhoefm/krackattacks-scripts)
-	* This project contains scripts to test if clients or access points (APs) are affected by the KRACK attack against WPA2. For [details behind this attack see our website](https://www.krackattacks.com/) and [the research paper](https://papers.mathyvanhoef.com/ccs2017.pdf).
-	
-* [hdfm](https://github.com/KYDronePilot/hdfm)
-	* hdfm displays weather and traffic maps received from iHeartRadio HD radio stations. It relies on nrsc5 to decode and dump the radio station data for it to process and display.
-* [nexmon](https://github.com/seemoo-lab/nexmon)
-	* Nexmon is our C-based firmware patching framework for Broadcom/Cypress WiFi chips that enables you to write your own firmware patches, for example, to enable monitor mode with radiotap headers and frame injection.
 
 ##### End Sort
 
@@ -186,6 +169,8 @@ Cellular Networks in Use:
 		* Must watch video. Very informative.
 	* [LTE Security - How good is it?](http://csrc.nist.gov/news_events/cif_2015/research/day2_research_200-250.pdf)
 	* [Mobile self-defense - Karsten Nohl](https://www.youtube.com/watch?v=GeCkO0fWWqc)
+	* [Taming Mr Hayes: Mitigating Signaling Based Attacks on Smartphones](https://www.mulliner.org/collin/academic/publications/mrhayes_mulliner_dsn2012.pdf)
+		* Malicious injection of cellular signaling traffic from mobile phones is an emerging security issue. The respective attacks can be performed by hijacked smartphones and by malware resident on mobile phones. Until today there are no protection mechanisms in place to prevent signaling based attacks other than implementing expensive additions to the cellular core network. In this work we present a protection system that resides on the mobile phone. Our solution works by partitioning the phone software stack into the application operating system and the communication partition. The application system is a standard fully featured Android sys tem. On the other side, communication to the cellular network is mediated by a flexible monitoring and enforcement system running on the communication partition. We implemented and evaluated our protection system on a real smartphone. Our evaluation shows that it can mitigate all currently know n signaling based attacks and in addition can protect users fr om cellular Trojans.
 * **Tools**
 	* [SiGploit](https://github.com/SigPloiter/SigPloit)
 		* Telecom Signaling Exploitation Framework - SS7, GTP, Diameter & SIP. SiGploit a signaling security testing framework dedicated to Telecom Security professionals and reasearchers to pentest and exploit vulnerabilites in the signaling protocols used in mobile operators regardless of the geneartion being in use. SiGploit aims to cover all used protocols used in the operators interconnects SS7, GTP (3G), Diameter (4G) or even SIP for IMS and VoLTE infrastructures used in the access layer and SS7 message encapsulation into SIP-T. Recommendations for each vulnerability will be provided to guide the tester and the operator the steps that should be done to enhance their security posture
@@ -243,6 +228,8 @@ Cellular Networks in Use:
 	* **Articles/Presentations/Talks/Writeups**
 		* [LTE Security - How good is it?](http://csrc.nist.gov/news_events/cif_2015/research/day2_research_200-250.pdf)
 		* [4G LTE Architecture and Security Concerns](http://www.secforce.com/blog/2014/03/4g-lte-architecture-and-security-concerns/)
+		* [LTEInspector : A Systematic Approach for Adversarial Testing of 4G LTE](http://wp.internetsociety.org/ndss/wp-content/uploads/sites/25/2018/02/ndss2018_02A-3_Hussain_paper.pdf)
+			* In this paper, we investigate the security and privacy of the three critical procedures of the 4G LTE protocol (i.e., attach, detach, and paging), and in the process, uncover potential design flaws of the protocol and unsafe practices employed by the stakeholders. For exposing vulnerabilities, we propose a model-based testing approach LTEInspector which lazily combines a symbolic model checker and a cryptographic protocol verifier in the symbolic attacker model. Using LTEInspector, we have uncovered 10 new attacks along with 9 prior attacks, cate- gorized into three abstract classes (i.e., security, user privacy, and disruption of service), in the three procedures of 4G LTE. Notable among our findings is the authentication relay attack that enables an adversary to spoof the location of a legitimate user to the core network without possessing appropriate credentials. To ensure that the exposed attacks pose real threats and are indeed realizable in practice, we have validated 8 of the 10 new attacks and their accompanying adversarial assumptions through experimentation in a real testbed
 * **SS7**
 	* **101**
 	* **Articles/Presentations/Talks/Writeups**
@@ -358,6 +345,12 @@ Cellular Networks in Use:
 	* [Attacking automatic Wireless network selection (2005)](https://www.trailofbits.com/resources/attacking_automatic_network_selection_paper.pdf)
 	* [Why do Wi-Fi Clientes disclose their PNL for Free Still Today? (2015)](http://blog.dinosec.com/2015/02/why-do-wi-fi-clients-disclose-their-pnl.html)
 	* [Instant KARMA might still gets you (2015)](https://insights.sei.cmu.edu/cert/2015/08/instant-karma-might-still-get-you.html)
+* **KRACK**
+	* [Key Reinstallation Attacks](https://www.krackattacks.com/)
+	* [KRACK - Wikipedia](https://en.wikipedia.org/wiki/KRACK)
+	* **Tools**
+		* [krackattacks-scripts](https://github.com/vanhoefm/krackattacks-scripts)
+			* This project contains scripts to test if clients or access points (APs) are affected by the KRACK attack against WPA2. For [details behind this attack see our website](https://www.krackattacks.com/) and [the research paper](https://papers.mathyvanhoef.com/ccs2017.pdf).
 * **RADIUS**
 	* [apbleed](https://github.com/vanhoefm/apbleed/)
 		* Allows you to use existing heartbleed tools to test the RADIUS server
@@ -480,6 +473,8 @@ Cellular Networks in Use:
 		* Software-Defined GPS Signal Simulator; GPS-SDR-SIM
 	* [nrsc5](https://github.com/theori-io/nrsc5)
 		* NRSC-5 receiver for rtl-sdr
+	* [gr-nrsc5](https://github.com/argilo/gr-nrsc5)
+		* A GNU Radio implementation of HD Radio (NRSC-5)
 	* [rtlamr](https://github.com/bemasher/rtlamr)
 		* An rtl-sdr receiver for Itron ERT compatible smart meters operating in the 900MHz ISM band. 
 	* [Uni-SDR Link](https://github.com/ms-dev-1/uni-sdr-link/releases)
@@ -493,8 +488,10 @@ Cellular Networks in Use:
 		* A cross platform Python frequency scanning GUI for the OsmoSDR rtl-sdr library.
 		* [Details](https://eartoearoak.com/software/rtlsdr-scanner)
 		* [Manual](https://github.com/EarToEarOak/RTLSDR-Scanner/blob/master/doc/Manual.pdf)
-
-
+	* [gr-lora](https://github.com/BastilleResearch/gr-lora)
+		* This is an open-source implementation of the LoRa CSS PHY, based on the blind signal analysis conducted by @matt-knight. The original research that guided this implementation may be found at https://github.com/matt-knight/research
+	* [hdfm](https://github.com/KYDronePilot/hdfm)
+		* hdfm displays weather and traffic maps received from iHeartRadio HD radio stations. It relies on nrsc5 to decode and dump the radio station data for it to process and display.
 
 
 
@@ -527,8 +524,10 @@ Cellular Networks in Use:
 * **Tools**
 
 
-
-
+## Miscellaneous
+* [Wireless Keyboard Sniffer](https://samy.pl/keysweeper/)
+* [nexmon](https://github.com/seemoo-lab/nexmon)
+	* Nexmon is our C-based firmware patching framework for Broadcom/Cypress WiFi chips that enables you to write your own firmware patches, for example, to enable monitor mode with radiotap headers and frame injection.
 
 
 

@@ -21,6 +21,8 @@
 
 #### Sort
 
+
+* [Windows Data Protection - msdn.ms](https://msdn.microsoft.com/en-us/library/ms995355.aspx)
 * [Elevate through ShellExecute - msdn](https://blogs.msdn.microsoft.com/vistacompatteam/2006/09/25/elevate-through-shellexecute/)
 * [Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11).aspx?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&iid=22f4306f9238443891cea105281cfd3f&uid=150127534&nid=244+289476616)
 [](http://archive.msdn.microsoft.com/ShellRevealed/Release/ProjectReleases.aspx?ReleaseId=2871)
@@ -117,6 +119,10 @@
 	* [Custom Credential Provider for Password Reset - blogs.technet](https://blogs.technet.microsoft.com/aho/2009/11/14/custom-credential-provider-for-password-reset/)
 	* [Starting to build your own Credential Provider](https://blogs.msmvps.com/alunj/2011/02/21/starting-to-build-your-own-credential-provider/)
 		* If you’re starting to work on a Credential Provider (CredProv or CP, for short) for Windows Vista, Windows Server 2008, Windows Server 2008 R2 or Windows 7, there are a few steps I would strongly recommend you take, because it will make life easier for you.
+* **Dynamic Data Exchange**
+	* [Dynamic Data Exchange - msdn.ms](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648711(v=vs.85).aspx)
+		* This section provides guidelines for implementing dynamic data exchange for applications that cannot use the Dynamic Data Exchange Management Library (DDEML).
+	* [About Dynamic Data Exchange - msdn.ms](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648774%28v=vs.85%29.aspx)
 * **Exchange Web Services**
 	* [Start using web services in Exchange - msdn 2017](https://msdn.microsoft.com/en-us/library/office/jj900168(v=exchg.150).aspx)
 	* [Exchange Web Services Overview - TechEd](https://www.youtube.com/watch?v=wOQMJhrp6GQ)

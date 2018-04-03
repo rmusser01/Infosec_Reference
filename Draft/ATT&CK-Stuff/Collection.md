@@ -29,10 +29,14 @@
 #### Linux
 * [LaZagne](https://github.com/AlessandroZ/LaZagne/blob/master/README.md)
 	* The LaZagne project is an open source application used to retrieve lots of passwords stored on a local computer. Each software stores its passwords using different techniques (plaintext, APIs, custom algorithms, databases, etc.). This tool has been developed for the purpose of finding these passwords for the most commonly-used software.
+* [PCredz](https://github.com/lgandx/PCredz)
+	* This tool extracts Credit card numbers, NTLM(DCE-RPC, HTTP, SQL, LDAP, etc), Kerberos (AS-REQ Pre-Auth etype 23), HTTP Basic, SNMP, POP, SMTP, FTP, IMAP, etc from a pcap file or from a live interface.
 
 #### Mac
 * [Lazagne](https://github.com/AlessandroZ/LaZagne)
 	* The LaZagne project is an open source application used to retrieve lots of passwords stored on a local computer. Each software stores its passwords using different techniques (plaintext, APIs, custom algorithms, databases, etc.). This tool has been developed for the purpose of finding these passwords for the most commonly-used software.
+* [PCredz](https://github.com/lgandx/PCredz)
+	* This tool extracts Credit card numbers, NTLM(DCE-RPC, HTTP, SQL, LDAP, etc), Kerberos (AS-REQ Pre-Auth etype 23), HTTP Basic, SNMP, POP, SMTP, FTP, IMAP, etc from a pcap file or from a live interface.
 
 #### Windows
 * [LaZagne](https://github.com/AlessandroZ/LaZagne/blob/master/README.md)
@@ -45,6 +49,9 @@
 	* Extracts passwords from a KeePass 2.x database, directly from memory.
 * [KeeThief](https://github.com/HarmJ0y/KeeThief)
 	* Methods for attacking KeePass 2.X databases, including extracting of encryption key material from memory.
+* [PCredz](https://github.com/lgandx/PCredz)
+	* This tool extracts Credit card numbers, NTLM(DCE-RPC, HTTP, SQL, LDAP, etc), Kerberos (AS-REQ Pre-Auth etype 23), HTTP Basic, SNMP, POP, SMTP, FTP, IMAP, etc from a pcap file or from a live interface.
+
 
 
 -------------------------------
@@ -195,6 +202,7 @@
 * [xwd - Wikipedia](https://en.wikipedia.org/wiki/Xwd)
 * [xwd - dump an image of an X window - manpage](https://www.x.org/releases/X11R7.5/doc/man/man1/xwd.1.html)
 
+
 #### Mac
 * MITRE
 	* On OSX, the native `command screencapture` is used to capture screenshots. 
@@ -204,7 +212,8 @@
 * [Using Problem Steps Recorder (PSR) Remotely with Metasploit](https://cyberarms.wordpress.com/2016/02/13/using-problem-steps-recorder-psr-remotely-with-metasploit/)
 * [Collection - Empire](http://www.powershellempire.com/?page_id=283)
 * [Capturing Screenshots with PowerShell and .NET](https://www.pdq.com/blog/capturing-screenshots-with-powershell-and-net/)
-
+* [jsmpeg-vnc](https://github.com/phoboslab/jsmpeg-vnc)
+	* A low latency, high framerate screen sharing server for Windows and client for browsers
 
 
 -------------------------------

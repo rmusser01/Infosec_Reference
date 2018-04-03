@@ -17,7 +17,7 @@
 * [osascript - SS64](https://ss64.com/osx/osascript.html)
 * [AppleScript - Wikipedia](https://en.wikipedia.org/wiki/AppleScript)
 * [Introduction to AppleScript Language Guide - developer.apple](https://developer.apple.com/library/content/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html)
- 
+* [Javascript for Automation - Release Notes 10.10 - dev.apple](https://developer.apple.com/library/content/releasenotes/InterapplicationCommunication/RN-JavaScriptForAutomation/Articles/OSX10-10.html)
 
 
 

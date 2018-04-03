@@ -37,6 +37,9 @@
 * [ARM Inject](https://github.com/evilsocket/arminject)
 	* An application to dynamically inject a shared object into a running process on ARM architectures and hook API calls.
 
+
+* [apk-anal](https://github.com/mhelwig/apk-anal)
+	* Android APK analyzer based on radare2 and others.
 	
 https://github.com/doridori/Android-Security-Reference
 * [Android-Vulnerabilities-Overview](https://github.com/CHEF-KOCH/Android-Vulnerabilities-Overview)

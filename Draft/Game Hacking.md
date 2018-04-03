@@ -20,6 +20,51 @@ Fix ToC
 * [Awesome Gamedev](https://github.com/Calinou/awesome-gamedev)
 	* A collection of free software and free culture resources for making amazing games. 
 
+* [EFF FAQ on Reverse Engineering Legalities](https://www.eff.org/issues/coders/reverse-engineering-faq)
+	* This FAQ details information that may help reverse engineers reduce their legal risk. *Use this information as a guide, not actual legal advice.*
+
+* [Hack.lu 2017: (Workshop) Reverse Engineering a MMORPG](https://www.slideshare.net/AntoninBeaujeant/reverse-engineering-a-mmorpg)
+	* This workshop covers the basics of reverse engineering a (M)MORPG. The target is [Pwn Adventure 3](http://www.pwnadventure.com/), an intentionally-vulnerable MMORPG developed by [Vector35](https://vector35.com/).
+
+
+[Hack the Vote 2016 CTF "The Wall" Solution](https://zerosum0x0.blogspot.com/2016/11/hack-vote-wall-solution.html) | A write-up for a 2016 CTF challenge 
+involving the multiplayer, open source Minecraft clone, Minetest.
+
+[Deciphering MMORPG Protocol Encoding](https://stackoverflow.com/questions/539812/deciphering-mmorpg-protocol-encoding)
+
+[Reverse Engineering of a Packet Encryption Function of a Game](https://reverseengineering.stackexchange.com/questions/8816/reverse-engineering-of-a-packet-encryption-function-of-a-game)
+
+[Fuzzing Online Games](https://www.elie.net/static/files/fuzzing-online-games/fuzzing-online-games-slides.pdf)
+
+[Presentation Page](https://www.elie.net/talk/fuzzing-online-games)
+
+* [Exploiting Game Engines for Fun and Profit](http://revuln.com/files/Ferrante_Auriemma_Exploiting_Game_Engines.pdf)
+[How to Hack Local Values in Browser-Based Games with Cheat Engine](https://www.youtube.com/watch?v=f_axmYpG1Lk)
+
+[DEF CON 19: Hacking MMORPGs for Fun and Mostly Profit](https://www.youtube.com/watch?v=hABj_mrP-no)
+
+[DEF CON 18: Securing MMOs - A Security Professional's View from the Inside](https://www.youtube.com/watch?v=9IGvIexJSFU)
+
+[DEF CON 17: Subverting the World Of Warcraft API](https://www.youtube.com/watch?v=EnmoI2dRwX4)
+[DEF CON 17: Fragging Game Servers](https://www.youtube.com/watch?v=bRM4J-LphUw)
+[Cyber Necromancy - Reverse Engineering Dead Protocols](https://media.ccc.de/v/31c3_-_5956_-_en_-_saal_2_-_201412281400_-_cyber_necromancy_-_joseph_tartaro_-_matthew_halchyshak)
+
+[32C3 - How Hackers Grind an MMORPG: By Taking it Apart!](https://www.youtube.com/watch?v=9pCb0vIp_kg)
+
+[DEF CON 18: Kartograph - Applying Reverse Engineering Techniques to Map Hacking](https://www.youtube.com/watch?v=WDNY4DMx8Jc)
+[Black Hat Europe 2014 - Next Level Cheating and Leveling Up Mitigations](https://www.youtube.com/watch?v=bsYxcpz3w8A)
+
+[DEF CON 23: Shall We Play A Game](https://www.youtube.com/watch?v=XxyRDkmNMHg)
+
+[DEF CON 20: Fuzzing Online Games](https://www.youtube.com/watch?v=r0UQ6bpKOX0)
+
+
+
+
+
+
+
+
 #### End Sort
 
 
@@ -155,6 +200,11 @@ Fix ToC
 ------------
 ### PC Games
 * **101**
+* **Articles/Blogposts/Writeups**
+	* [Hacking/Exploiting/Cheating in Online Games (PDF)](https://zdresearch.com/wp-content/uploads/2013/04/Exploiting-Online-Games.pdf)
+		* A presentation from 2013 that delves deeply into hacking online games, from defining terminology to providing code examples of specific hacks.
+	* [How to Hack an MMO - raphkoster.com(2008)](https://www.raphkoster.com/2008/04/17/how-to-hack-an-mmo/)
+	* [Reverse Engineering Online Games - Dragomon Hunter - 0xbaadf00dsec](http://0xbaadf00dsec.blogspot.com/2016/01/reverse-engineering-online-games.html)
 * **Educational**
 	* [DEFCON 17: Fragging Game Servers - Bruce Potter](https://www.youtube.com/watch?v=SooVvF9qO_k&app=desktop)
 	* [The Multibillion Dollar Industry That's Ignored](http://www.irongeek.com/i.php?page=videos/derbycon4/t204-the-multibillion-dollar-industry-thats-ignored-jason-montgomery-and-ryan-sevey)

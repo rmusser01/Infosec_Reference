@@ -39,11 +39,6 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 * [gasmask](https://github.com/twelvesec/gasmask)
 	* All in one Information gathering tool - OSINT
 
-
-
-
-
-
 #### End Sort
 
 
@@ -86,6 +81,13 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 	* [toddington - resources](https://www.toddington.com/resources/)
 	* [onstrat - osint](http://www.onstrat.com/osint/)
 	* http://osintinsight.com/shared.php?expand=169,175&folderid=0&user=Mediaquest
+	* IntelTechniques OSINT Flowcharts
+		* [Email Address](https://inteltechniques.com/data/Email.png)
+		* [Domain Name](https://inteltechniques.com/data/Domain.png)
+		* [Real Name](https://inteltechniques.com/data/Real%20Name.png)
+		* [Telephone #](https://inteltechniques.com/data/Telephone.png)
+		* [Location](https://inteltechniques.com/data/location.png)
+		* [User Name](https://inteltechniques.com/data/Username.png)
 * Writeups
 	* [Fantastic OSINT and where to find it - blindseeker/malware focused](http://archive.is/sYzcP#selection-62.0-62.1)
 	* [Some blog posts describing/bringing you up to speed on OSINT by krypt3ia](http://krypt3ia.wordpress.com/2012/01/11/the-subtle-art-of-osint/)
@@ -183,7 +185,8 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 	* Gitrob is a command line tool which can help organizations and security professionals find sensitive information lingering in publicly available files on GitHub. The tool will iterate over all public organization and member repositories and match filenames against a range of patterns for files that typically contain sensitive or dangerous information. Looking for sensitive information in GitHub repositories is not a new thing, it has been [known for a while](http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html) that things such as private keys and credentials can be found with GitHub's search functionality, however Gitrob makes it easier to focus the effort on a specific organization.
 * [reposcanner](https://github.com/Dionach/reposcanner)
 	* Python script to scan Git repos for interesting strings
-
+* [gitleaks](https://github.com/zricethezav/gitleaks)
+	*  Searches full repo history for secrets and keys
 
 ----------------
 ###### <a name="dns"></a>DNS Stuff
@@ -311,6 +314,8 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 		* Grabbing usernames/connections(link analysis)
 	* [The Endorser](https://github.com/eth0izzle/the-endorser)
 		* An OSINT tool that allows you to draw out relationships between people on LinkedIn via endorsements/skills.
+	* [ScrapedIn](https://github.com/dchrastil/ScrapedIn)
+		* this tool assists in performing reconnaissance using the LinkedIn.com website/API. Provide a search string just as you would on the original website and let ScrapedIn do all the dirty work. Output is stored as an XLSX file, however it is intended to be used with Google Spreadsheets. After importing the XLSX into Google Spreadsheets there will be a "dataset" worksheet and a "report" worksheet.
 * **Tinder**
 	* [OSINT: Advanced tinder capture](https://www.learnallthethings.net/osmosis)
 * **Twitter**

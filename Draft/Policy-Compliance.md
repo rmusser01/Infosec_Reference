@@ -10,6 +10,15 @@
 
 
 
+
+https://www.open-scap.org/tools/openscap-base/#documentation
+https://cloudsecurityalliance.org/group/cloud-controls-matrix/#_overview
+* [FATF blacklist - Wikipedia](https://en.wikipedia.org/wiki/FATF_blacklist)
+	* The FATF blacklist was the common shorthand description for the Financial Action Task Force list of "Non-Cooperative Countries or Territories" (NCCTs) issued since 2000, which it perceived to be non-cooperative in the global fight against money laundering and terrorist financing.
+* [Goodhart's Law - Wikipedia](https://en.m.wikipedia.org/wiki/Goodhart%27s_law)
+	* Goodhart's law is an adage named after economist Charles Goodhart, which has been phrased by Marilyn Strathern as: "When a measure becomes a target, it ceases to be a good measure."[1] One way in which this can occur is individuals trying to anticipate the effect of a policy and then taking actions which alter its outcome.
+
+
 ------------
 ### <a name="general"></a>General
 * [The Red Book: A Roadmap for Systems Security Research](http://www.red-book.eu/m/documents/syssec_red_book.pdf)

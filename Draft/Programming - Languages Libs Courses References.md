@@ -21,20 +21,6 @@
 ### Sort
 
 
-
-* [Attack Surface Meter](https://github.com/andymeneely/attack-surface-metrics)
-	* Python package for collecting attack surface metrics from a software system. In its current version, Attack Surface Meter is capable of analyzing software systems written in the C programming language with skeletal support for analyzing software systems written in the Java programming language. The attack surface metrics collected are:
-	* Proximity to Entry/Exit/Dangerous - The mean of shortest unweighted path length from a function/file to Entry Points/Exit Points/Dangerous Points.
-    * Risky Walk - The probability that a function/file will be invoked on a random execution path starting at the attack surface.
-
-* [Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
-
-Libraries for Java -> https://www.owasp.org/index.php/Category:Java#tab=Related_3rd_Party_Projects
-
-http://en.cppreference.com/w/c	
-* [Syntribos](https://github.com/openstack/syntribos)
-	* Syntribos is an open source automated API security testing tool that is maintained by members of the [OpenStack Security Project](https://wiki.openstack.org/wiki/Security). Given a simple configuration file and an example HTTP request, syntribos can replace any API URL, URL parameter, HTTP header and request body field with a given set of strings. Syntribos iterates through each position in the request automatically. Syntribos aims to automatically detect common security defects such as SQL injection, LDAP injection, buffer overflow, etc. In addition, syntribos can be used to help identify new security defects by automated fuzzing.
-
 #### End Sort
 
 
@@ -55,6 +41,7 @@ http://en.cppreference.com/w/c
 	* [Learn_X_in_Y_Minutes](http://learnxinyminutes.com/)
 	* [Hyperpolyglot](http://hyperpolyglot.org/)
 * **General**
+	* [Security Guide for Developers](https://github.com/FallibleInc/security-guide-for-developers)
 * **Articles/Blogposts/Writeups**
 * **Talks**
 * **Testing**
@@ -138,8 +125,17 @@ http://en.cppreference.com/w/c
 ----------------
 ### APIs
 * **101**
-* [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist/)
-	* Checklist of the most important security countermeasures when designing, testing, and releasing your API
+	* [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist/)
+		* Checklist of the most important security countermeasures when designing, testing, and releasing your API
+* **General/Articles/Writeups**
+	* [RESTful API Best Practices and Common Pitfalls - Spencer Schneidenbach](https://medium.com/@schneidenbach/restful-api-best-practices-and-common-pitfalls-7a83ba3763b5)
+	* [White House Web API Standards](https://github.com/WhiteHouse/api-standards)
+		* This document provides guidelines and examples for White House Web APIs, encouraging consistency, maintainability, and best practices across applications. White House APIs aim to balance a truly RESTful API interface with a positive developer experience (DX).
+	* [HTTP API Design Guide](https://github.com/interagent/http-api-design)
+		* HTTP API design guide extracted from work on the [Heroku Platform API](https://devcenter.heroku.com/articles/platform-api-reference)
+* **Tools**
+	* [Syntribos](https://github.com/openstack/syntribos)
+		* Syntribos is an open source automated API security testing tool that is maintained by members of the [OpenStack Security Project](https://wiki.openstack.org/wiki/Security). Given a simple configuration file and an example HTTP request, syntribos can replace any API URL, URL parameter, HTTP header and request body field with a given set of strings. Syntribos iterates through each position in the request automatically. Syntribos aims to automatically detect common security defects such as SQL injection, LDAP injection, buffer overflow, etc. In addition, syntribos can be used to help identify new security defects by automated fuzzing.
 
 ---------
 ### <a name="asm">Assembly x86/x64/ARM</a>
@@ -238,15 +234,23 @@ http://en.cppreference.com/w/c
 	* [C Function Call Conventions and the Stack](https://archive.is/o2nD5)
 	* [What a C programmer should know about memory](http://marek.vavrusa.com/c/memory/2015/02/20/memory/)
 	* [Cplusplus.com](http://www.cplusplus.com/)
+	* [C reference - cppreference.com](http://en.cppreference.com/w/c)
 * **Security**
 	* [SEI CERT C Coding Standard](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
 	* [SEI CERT C++ Coding Standard](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=637)
 	* [Vulnerabilities in C : When integers go bad!](https://blog.feabhas.com/2014/10/vulnerabilities-in-c-when-integers-go-bad/)
 	* [Modern Memory Safety: C/C++ Vulnerability Discovery, Exploitation, Hardening](https://github.com/struct/mms)
 		* This repo contains the slides for a training course originally developed in 2012. It has been delivered to many students since its creation. It's sold out at the Black Hat USA conference several years in a row. The content has gone through many iterations based on feedback from those classes. The original training focused mainly on browser vulnerability discovery and exploitation. This latest version still focuses on that but also covers more topics such as custom memory allocators, hardening concepts, and exploitation at a high level.
+* **Techniques**
+	* [Hide data inside pointers](http://arjunsreedharan.org/post/105266490272/hide-data-inside-pointers)
 * **Tools**
 	* [plog](https://github.com/SergiusTheBest/plog)
 		* Portable, simple and extensible C++ logging library
+	* [Attack Surface Meter](https://github.com/andymeneely/attack-surface-metrics)
+		* Python package for collecting attack surface metrics from a software system. In its current version, Attack Surface Meter is capable of analyzing software systems written in the C programming language with skeletal support for analyzing software systems written in the Java programming language. The attack surface metrics collected are:
+		* Proximity to Entry/Exit/Dangerous - The mean of shortest unweighted path length from a function/file to Entry Points/Exit Points/Dangerous Points.
+	    * Risky Walk - The probability that a function/file will be invoked on a random execution path starting at the attack surface.
+
 
 ----------
 ### <a name="c#"></a>C#
@@ -277,7 +281,12 @@ http://en.cppreference.com/w/c
 * **Tools**
 	* [Serianalyzer](https://github.com/mbechler/serianalyzer)
 		* A static byte code analyzer for Java deserialization gadget research
-	
+	* [List of 3rd Party Security Libraries for Java - OWASP](https://www.owasp.org/index.php/Category:Java#tab=Related_3rd_Party_Projects)
+		* A list of third party (i.e. not part of Java SE or EE) security frameworks. This page contains a list of Java security libraries and frameworks and indicates which security features each library supports. 
+
+
+
+
 ---------------
 ### <a name="javascript"></a> Javascript
 * **101**
@@ -288,6 +297,8 @@ http://en.cppreference.com/w/c
 * **Learn**
 	* [Mostly Adequate Guide](https://drboolean.gitbooks.io/mostly-adequate-guide/)
 		* This is a book on the functional paradigm in general. We'll use the world's most popular functional programming language: JavaScript. Some may feel this is a poor choice as it's against the grain of the current culture which, at the moment, feels predominately imperative. 
+	* [Spellbook of Modern Web Dev](https://github.com/dexteryy/spellbook-of-modern-webdev)
+		* A Big Picture, Thesaurus, and Taxonomy of Modern JavaScript Web Development
 * **Reference**
 	* [project-guidelines](https://github.com/wearehive/project-guidelines)
 		*  A set of best practices for JavaScript projects - wearehive

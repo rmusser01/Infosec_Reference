@@ -26,15 +26,9 @@
 To Do
 * Sort articles better
 * Add pivoting stuff from postex/privesc
-
 * [PenTesting-Scripts - killswitch-GUI](https://github.com/killswitch-GUI/PenTesting-Scripts)
-
-* [File Server Triage on Red Team Engagements](http://www.harmj0y.net/blog/redteaming/file-server-triage-on-red-team-engagements/)
-
-* [Full Contact Recon int0x80 of Dual Core savant - Derbycon7](https://www.youtube.com/watch?v=XBqmvpzrNfs)
-
-* [Advanced Threat Analytics Attack Simulation Playbook - Microsoft](https://gallery.technet.microsoft.com/Advanced-Threat-Analytics-8b0a86bc)
-* [Week of Evading Microsoft ATA - Announcement and Day 1 to Day 5](http://www.labofapenetrationtester.com/2017*8/week-of-evading-microsoft-ata-day1.html)
+* [Introducing the Adversary Resilience Methodology — Part One - specterops](https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-one-e38e06ffd604)
+* [Introducing the Adversary Resilience Methodology — Part Two](https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-two-279a1ed7863d)
 
 * [Using an Expanded Cyber Kill Chain Model to Increase Attack Resiliency - Sean Malone - BHUSA16](https://www.youtube.com/watch?v=1Dz12M7u-S8)
 	* We'll review what actions are taken in each phase, and what's necessary for the adversary to move from one phase to the next. We'll discuss multiple types of controls that you can implement today in your enterprise to frustrate the adversary's plan at each stage, to avoid needing to declare "game over" just because an adversary has gained access to the internal network. The primary limiting factor of the traditional Cyber Kill Chain is that it ends with Stage 7: Actions on Objectives, conveying that once the adversary reaches this stage and has access to a system on the internal network, the defending victim has already lost. In reality, there should be multiple layers of security zones on the internal network, to protect the most critical assets. The adversary often has to move through numerous additional phases in order to access and manipulate specific systems to achieve his objective. By increasing the time and effort required to move through these stages, we decrease the likelihood of the adversary causing material damage to the enterprise. 
@@ -93,6 +87,13 @@ To Do
 	* [Detect Me If You Can Ben Ten - Derbycon7](https://www.youtube.com/watch?v=AF3arWoKfKg&index=23&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
 	* [Modern Evasion Techniques Jason Lang - Derbycon7](https://www.irongeek.com/i.php?page=videos/derbycon7/t110-modern-evasion-techniques-jason-lang)
 		* As pentesters, we are often in need of working around security controls. In this talk, we will reveal ways that we bypass in-line network defenses, spam filters (in line and cloud based), as well as current endpoint solutions. Some techniques are old, some are new, but all work in helping to get a foothold established. Defenders: might want to come to this one.
+	* [Red Team Techniques for Evading, Bypassing, and Disabling MS Advanced Threat Protection and Advanced Threat Analytics - Chris Thompson](https://www.youtube.com/watch?v=2HNuzUuVyv0&app=desktop)
+		* [Slides](https://www.blackhat.com/docs/eu-17/materials/eu-17-Thompson-Red-Team-Techniques-For-Evading-Bypassing-And-Disabling-MS-Advanced-Threat-Protection-And-Advanced-Threat-Analytics.pdf)
+		* Windows Defender Advanced Threat Protection is now available for all Blue Teams to utilize within Windows 10 Enterprise and Server 2012/16, which includes detection of post breach tools, tactics and techniques commonly used by Red Teams, as well as behavior analytics. 
+	* [File Server Triage on Red Team Engagements](http://www.harmj0y.net/blog/redteaming/file-server-triage-on-red-team-engagements/)
+	* [Full Contact Recon int0x80 of Dual Core savant - Derbycon7](https://www.youtube.com/watch?v=XBqmvpzrNfs)
+	* [Advanced Threat Analytics Attack Simulation Playbook - Microsoft](https://gallery.technet.microsoft.com/Advanced-Threat-Analytics-8b0a86bc)
+	* [Week of Evading Microsoft ATA - Announcement and Day 1 to Day 5](http://www.labofapenetrationtester.com/2017*8/week-of-evading-microsoft-ata-day1.html)
 * **Red Team Experiences**
 	* [Passing the Torch: Old School Red Teaming, New School Tactics?](https://www.slideshare.net/harmj0y/derbycon-passing-the-torch)
 	* [Red Teaming Tips - Vincent Yiu](https://threatintel.eu/2017/06/03/red-teaming-tips-by-vincent-yiu/)
@@ -167,6 +168,7 @@ To Do
 		* Collection of Aggressor Scripts for Cobalt Strike
 	* [CVE-2018-4878](https://github.com/vysec/CVE-2018-4878)
 		* Aggressor Script to launch IE driveby for CVE-2018-4878
+	* [Aggressor 101: Unleashing Cobalt Strike for Fun and Profit](https://medium.com/@001SPARTaN/aggressor-101-unleashing-cobalt-strike-for-fun-and-profit-879bf22cea31)
 * **C2**
 	* [Cobalt Strike External C2 Paper](https://www.cobaltstrike.com/downloads/externalc2spec.pdf)
 	* [External C2 - cs](https://github.com/outflanknl/external_c2)
@@ -199,84 +201,101 @@ To Do
 
 --------------
 ### <a name="cnc"></a>Command & Control
-* **Communication Channel Example PoCs**
-	* [Using WebSockets and IE/Edge for C2 communications](https://arno0x0x.wordpress.com/2017/11/10/https://github.com/leoloobeek/GoG reen/blob/master/README.mdusing-websockets-and-ie-edge-for-c2-communications/)
-	* [Spidernet](https://github.com/wandering-nomad/Spidernet)
-		* Proof of Concept of SSH Botnet C&C Using Python 
-	* [twittor - twitter based backdoor](https://github.com/PaulSec/twittor)
-		* A stealthy Python based backdoor that uses Twitter (Direct Messages) as a command and control server This project has been inspired by Gcat which does the same but using a Gmail account.
-	* [Instegogram](https://github.com/endgameinc/instegogram)
-	* [WSC2](https://github.com/Arno0x/WSC2)
-		* WSC2 is a PoC of using the WebSockets and a browser process to serve as a C2 communication channel between an agent, running on the target system, and a controller acting as the actual C2 server.
-* **PoCs**
+* **General/Non-PoC&Dev Stuff**
+	* [Abusing "Accepted Risk" With 3rd Party C2 - HackMiamiCon5](https://www.slideshare.net/sixdub/abusing-accepted-risk-with-3rd-party-c2-hackmiamicon5)
+* **Development Of**
+	* [CheckPlease](https://github.com/Arvanaghi/CheckPlease)
+		* Implant-Security modules written in PowerShell, Python, Go, Ruby, C, C#, Perl, and Rust. 
+	* [How to Build a 404 page not found C2](https://www.blackhillsinfosec.com/?p=5134)
+	* [emptynest](https://github.com/empty-nest/emptynest)
+		* Emptynest is a plugin based C2 server framework. The goal of this project is not to replace robust tools such as Empire, Metasploit, or Cobalt Strike. Instead, the goal is to create a supporting framework for quickly creating small, purpose built handlers for custom agents. No agent is provided. Users of Emptynest should create their own agents that implement minimal functionality and can be used to evade detection and establish a more robust channel. An example of an agent might support Unhooking, DLL Unloading, and code execution. Due to the simple nature of this project, it is recommended that agents be kept private.
 	* [RemoteRecon](https://github.com/xorrior/RemoteRecon)
 		* RemoteRecon provides the ability to execute post-exploitation capabilities against a remote host, without having to expose your complete toolkit/agent. Often times as operator's we need to compromise a host, just so we can keylog or screenshot (or some other miniscule task) against a person/host of interest. Why should you have to push over beacon, empire, innuendo, meterpreter, or a custom RAT to the target? This increases the footprint that you have in the target environment, exposes functionality in your agent, and most likely your C2 infrastructure. An alternative would be to deploy a secondary agent to targets of interest and collect intelligence. Then store this data for retrieval at your discretion. If these compromised endpoints are discovered by IR teams, you lose those endpoints and the information you've collected, but nothing more.
 	* [Expand Your Horizon Red Team – Modern SaaS C2](https://cybersyndicates.com/2017/04/expand-your-horizon-red-team/)
-	* [JSBN](https://github.com/Plazmaz/JSBN)
-		* JSBN is a bot client which interprets commands through Twitter, requiring no hosting of servers or infected hosts from the command issuer. It is written purely in javascript as a Proof-of-Concept for javascript's botnet potentials.
-	* [Command and Control Using Active Directory](http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/)
-	* [PoshC2 v3 with SOCKS Proxy (SharpSocks)](https://labs.nettitude.com/blog/poshc2-v3-with-socks-proxy-sharpsocks/)
-	* [Abusing "Accepted Risk" With 3rd Party C2 - HackMiamiCon5](https://www.slideshare.net/sixdub/abusing-accepted-risk-with-3rd-party-c2-hackmiamicon5)
-	* [MurDock - Mutable Universal Relay Document Kit](https://github.com/themson/MurDocK)
-		* The purpose of this tool is to provide a protocol independent framework that contains a base set of features that can piggyback on top of any collaborative web platform or service. The base docClient and docServer are meant to be extended upon with Buffer classes written for individual web services. These buffer classes can be plugged into the MurDock framework in order to create a unique shell infrastructure that will always contains a base set of features, as well as the ability to tunnel over any web application traffic for which a buffer class has been constructed. The framework can be extended to operate over lower level protocols if desired.
-	[PoshC2](https://github.com/nettitude/PoshC2)
-		* Powershell C2 Server and Implants
-	* [Merlin](https://github.com/Ne0nd0g/merlin)
-		* Merlin is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in golang.
-	[FruityC2](https://github.com/xtr4nge/FruityC2)
-		* FruityC2 is a post-exploitation (and open source) framework based on the deployment of agents on compromised machines. Agents are managed from a web interface under the control of an operator.
-	* [PlugBot-C2C](https://github.com/redteamsecurity/PlugBot-C2C)
-		* This is the Command & Control component of the PlugBot project
-	* [How to Build a 404 page not found C2](https://www.blackhillsinfosec.com/?p=5134)
-	* [404 File not found C2 PoC](https://github.com/theG3ist/404)
-	* [Command and Control Using Active Directory](http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/)
-	* [C2 with twitter](https://pentestlab.blog/2017/09/26/command-and-control-twitter/)
-	* [C2 with DNS](https://pentestlab.blog/2017/09/06/command-and-control-dns/)
-	* [ICMP C2](https://pentestlab.blog/2017/07/28/command-and-control-icmp/)
-	* [C2 with Dropbox](https://pentestlab.blog/2017/08/29/command-and-control-dropbox/)
-	* [C2 with https](https://pentestlab.blog/2017/10/04/command-and-control-https/)
-	* [C2 with webdav](https://pentestlab.blog/2017/09/12/command-and-control-webdav/)
-	* [C2 with gmail](https://pentestlab.blog/2017/08/03/command-and-control-gmail/)
-	* [C2 with ICMP](https://pentestlab.blog/2017/07/28/command-and-control-icmp/)
-	* [C2 with Telegram](https://github.com/graniet/gshark-framework)
-	* [C2 over TLS Certs - Casey Smith](https://gist.github.com/caseysmithrc/a4c4748160ff9c782d8a86723dbc7334?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=6e15d70104f847a8ae7723921067fe1d&fl=4&uid=150127534&nid=244+285282312)
-	* [“Tasking” Office 365 for Cobalt Strike C2](https://labs.mwrinfosecurity.com/blog/tasking-office-365-for-cobalt-strike-c2/)
-	* [Simple domain fronting PoC with GAE C2 server](https://www.securityartwork.es/2017/01/31/simple-domain-fronting-poc-with-gae-c2-server/)
-	* [Using WebDAV features as a covert channel](https://arno0x0x.wordpress.com/2017/09/07/using-webdav-features-as-a-covert-channel/)
-	* [A Guide to Configuring Throwback](https://silentbreaksecurity.com/throwback-thursday-a-guide-to-configuring-throwback/)
-		* [Throwback - beacon](https://github.com/silentbreaksec/Throwback)
-		* [Throwback Listener](https://github.com/silentbreaksec/ThrowbackLP)
-	* [DBC2](https://github.com/Arno0x/DBC2)
-		* DBC2 (DropboxC2) is a modular post-exploitation tool, composed of an agent running on the victim's machine, a controler, running on any machine, powershell modules, and Dropbox servers as a means of communication.
-	* [External C2](https://github.com/ryhanson/ExternalC2)
-		* A library for integrating communication channels with the Cobalt Strike External C2 server
-	* [Galvatron](https://github.com/khr0x40sh/Galvatron)
-		* Powershell fork of Monohard by Carlos Ganoza P. This botnet/backdoor was designed to egress over unecrypted web using very little, but effective obfuscation. Egress over ICMP and DNS are planned as features. Lastly, the server code is designed to setup the C2 on a LAMP-esque server. The default creds are admin/admin.
-	* [Merlin](https://github.com/Ne0nd0g/merlin)
-		* Merlin is a cross-platform post-exploitation HTTP/2 Command & Control  server and agent written in golang.
-	* [emptynest](https://github.com/empty-nest/emptynest)
-		* Emptynest is a plugin based C2 server framework. The goal of this project is not to replace robust tools such as Empire, Metasploit, or Cobalt Strike. Instead, the goal is to create a supporting framework for quickly creating small, purpose built handlers for custom agents. No agent is provided. Users of Emptynest should create their own agents that implement minimal functionality and can be used to evade detection and establish a more robust channel. An example of an agent might support Unhooking, DLL Unloading, and code execution. Due to the simple nature of this project, it is recommended that agents be kept private.
-	* [CheckPlease](https://github.com/Arvanaghi/CheckPlease)
-		* Implant-Security modules written in PowerShell, Python, Go, Ruby, C, C#, Perl, and Rust. 
-	* [ThunderShell](https://github.com/Mr-Un1k0d3r/ThunderShell)
-		* ThunderShell is a Powershell based RAT that rely on HTTP request to communicate. All the network traffic is encrypted using a second layer of RC4 to avoid SSL interception and defeat network hooks.
-	* [dnscat2-powershell](https://github.com/lukebaggett/dnscat2-powershell)
-		* A Powershell client for dnscat2, an encrypted DNS command and control tool
-	* [WMImplant](https://github.com/ChrisTruncer/WMImplant)
-		* WMImplant is a PowerShell based tool that leverages WMI to both perform actions against targeted machines, but also as the C2 channel for issuing commands and receiving results. WMImplant will likely require local administrator permissions on the targeted machine.
-	* [DNS-Persist](https://github.com/0x09AL/DNS-Persist)
-		* DNS-Persist is a post-exploitation agent which uses DNS for command and control. The server-side code is in Python and the agent is coded in C++.
-	* [BrainDamage](https://github.com/mehulj94/BrainDamage)
-		* A fully featured backdoor that uses Telegram as a C&C server
-	* [EggShell](https://github.com/neoneggplant/EggShell)
-		* EggShell is an iOS and macOS post exploitation surveillance pentest tool written in Python. This tool creates 1 line multi stage payloads that give you a command line session with extra functionality. EggShell gives you the power and convenience of uploading/downloading files, taking pictures, location tracking, shell command execution, persistence, escalating privileges, password retrieval, and much more. Server communication features end to end encryption with 128 bit AES and the ability to handle multiple clients. This is a proof of concept pentest tool, intended for use on machines you own.
-		* [EggShell Blogpost](http://lucasjackson.me/dWkKX/index.php/eggshell)
-	* [Pacdoor](https://github.com/SafeBreach-Labs/pacdoor)
-		* Pacdoor is a proof-of-concept JavaScript malware implemented as a Proxy Auto-Configuration (PAC) File. Pacdoor includes a 2-way communication channel, ability to exfiltrate HTTPS URLs, disable access to cherry-picked URLs etc.
+* **Communication Channel Example PoCs**
+	* **404**
+		* [How to Build a 404 page not found C2](https://www.blackhillsinfosec.com/?p=5134)
+		* [404 File not found C2 PoC](https://github.com/theG3ist/404)
+	* **ActiveDirectory Features**
+		* [Command and Control Using Active Directory](http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/)
+	* **Cobalt Strike**
+		* [External C2](https://github.com/ryhanson/ExternalC2)
+			* A library for integrating communication channels with the Cobalt Strike External C2 server
+	* **DNS-based**
+		* [C2 with DNS](https://pentestlab.blog/2017/09/06/command-and-control-dns/)
+		* [dnscat2-powershell](https://github.com/lukebaggett/dnscat2-powershell)
+			* A Powershell client for dnscat2, an encrypted DNS command and control tool
+		* [DNS-Persist](https://github.com/0x09AL/DNS-Persist)
+			* DNS-Persist is a post-exploitation agent which uses DNS for command and control. The server-side code is in Python and the agent is coded in C++.
+	* **HTTP/S-based**
+		* [PoshC2 v3 with SOCKS Proxy (SharpSocks)](https://labs.nettitude.com/blog/poshc2-v3-with-socks-proxy-sharpsocks/)
+		* [PoshC2](https://github.com/nettitude/PoshC2)
+			* Powershell C2 Server and Implants
+		* [Galvatron](https://github.com/khr0x40sh/Galvatron)
+			* Powershell fork of Monohard by Carlos Ganoza P. This botnet/backdoor was designed to egress over unecrypted web using very little, but effective obfuscation. Egress over ICMP and DNS are planned as features. Lastly, the server code is designed to setup the C2 on a LAMP-esque server. The default creds are admin/admin.
+		* [C2 with https](https://pentestlab.blog/2017/10/04/command-and-control-https/)
+		* [C2 over TLS Certs - Casey Smith](https://gist.github.com/caseysmithrc/a4c4748160ff9c782d8a86723dbc7334?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=6e15d70104f847a8ae7723921067fe1d&fl=4&uid=150127534&nid=244+285282312)
+		* [ThunderShell](https://github.com/Mr-Un1k0d3r/ThunderShell)
+			* ThunderShell is a Powershell based RAT that rely on HTTP request to communicate. All the network traffic is encrypted using a second layer of RC4 to avoid SSL interception and defeat network hooks.
+		* [FruityC2](https://github.com/xtr4nge/FruityC2)
+			* FruityC2 is a post-exploitation (and open source) framework based on the deployment of agents on compromised machines. Agents are managed from a web interface under the control of an operator.
+		* [PlugBot-C2C](https://github.com/redteamsecurity/PlugBot-C2C)
+			* This is the Command & Control component of the PlugBot project
+		* [EggShell](https://github.com/neoneggplant/EggShell)
+			* EggShell is an iOS and macOS post exploitation surveillance pentest tool written in Python. This tool creates 1 line multi stage payloads that give you a command line session with extra functionality. EggShell gives you the power and convenience of uploading/downloading files, taking pictures, location tracking, shell command execution, persistence, escalating privileges, password retrieval, and much more. Server communication features end to end encryption with 128 bit AES and the ability to handle multiple clients. This is a proof of concept pentest tool, intended for use on machines you own.
+			* [EggShell Blogpost](http://lucasjackson.me/dWkKX/index.php/eggshell)
+		* [A Guide to Configuring Throwback](https://silentbreaksecurity.com/throwback-thursday-a-guide-to-configuring-throwback/)
+			* [Throwback - beacon](https://github.com/silentbreaksec/Throwback)
+			* [Throwback Listener](https://github.com/silentbreaksec/ThrowbackLP)
+	* **HTTP2**
+		* [Merlin](https://github.com/Ne0nd0g/merlin)
+			* Merlin is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in golang.
+	* **ICMP**
+		* [ICMP C2](https://pentestlab.blog/2017/07/28/command-and-control-icmp/)
+		* [C2 with ICMP](https://pentestlab.blog/2017/07/28/command-and-control-icmp/)
+	* **PAC**
+		* [Pacdoor](https://github.com/SafeBreach-Labs/pacdoor)
+			* Pacdoor is a proof-of-concept JavaScript malware implemented as a Proxy Auto-Configuration (PAC) File. Pacdoor includes a 2-way communication channel, ability to exfiltrate HTTPS URLs, disable access to cherry-picked URLs etc.
+	* **SSH** 
+		* [Spidernet](https://github.com/wandering-nomad/Spidernet)
+			* Proof of Concept of SSH Botnet C&C Using Python 
+	* **Social Media-based**
+		* [JSBN](https://github.com/Plazmaz/JSBN)
+			* JSBN is a bot client which interprets commands through Twitter, requiring no hosting of servers or infected hosts from the command issuer. It is written purely in javascript as a Proof-of-Concept for javascript's botnet potentials.
+		* [C2 with twitter](https://pentestlab.blog/2017/09/26/command-and-control-twitter/)
+		* [C2 with Telegram](https://github.com/graniet/gshark-framework)
+		* [BrainDamage](https://github.com/mehulj94/BrainDamage)
+			* A fully featured backdoor that uses Telegram as a C&C server
+		* [twittor - twitter based backdoor](https://github.com/PaulSec/twittor)
+			* A stealthy Python based backdoor that uses Twitter (Direct Messages) as a command and control server This project has been inspired by Gcat which does the same but using a Gmail account.
+		* [Instegogram](https://github.com/endgameinc/instegogram)
+	* **WebDAV**
+		* [C2 with webdav](https://pentestlab.blog/2017/09/12/command-and-control-webdav/)
+		* [Using WebDAV features as a covert channel](https://arno0x0x.wordpress.com/2017/09/07/using-webdav-features-as-a-covert-channel/)
+	* **Web Services**
+		* [C2 with Dropbox](https://pentestlab.blog/2017/08/29/command-and-control-dropbox/)
+		* [DBC2](https://github.com/Arno0x/DBC2)
+			* DBC2 (DropboxC2) is a modular post-exploitation tool, composed of an agent running on the victim's machine, a controler, running on any machine, powershell modules, and Dropbox servers as a means of communication.
+		* [C2 with gmail](https://pentestlab.blog/2017/08/03/command-and-control-gmail/)	
+		* [Simple domain fronting PoC with GAE C2 server](https://www.securityartwork.es/2017/01/31/simple-domain-fronting-poc-with-gae-c2-server/)
+		* [google_socks](https://github.com/lukebaggett/google_socks)
+			* A proof of concept demonstrating the use of Google Drive for command and control.
+	* **WebSockets**
+		* [WSC2](https://github.com/Arno0x/WSC2)
+			* WSC2 is a PoC of using the WebSockets and a browser process to serve as a C2 communication channel between an agent, running on the target system, and a controller acting as the actual C2 server.
+		* [Using WebSockets and IE/Edge for C2 communications](https://arno0x0x.wordpress.com/2017/11/10/https://github.com/leoloobeek/GoG reen/blob/master/README.mdusing-websockets-and-ie-edge-for-c2-communications/)
+		* [MurDock - Mutable Universal Relay Document Kit](https://github.com/themson/MurDocK)
+			* The purpose of this tool is to provide a protocol independent framework that contains a base set of features that can piggyback on top of any collaborative web platform or service. The base docClient and docServer are meant to be extended upon with Buffer classes written for individual web services. These buffer classes can be plugged into the MurDock framework in order to create a unique shell infrastructure that will always contains a base set of features, as well as the ability to tunnel over any web application traffic for which a buffer class has been constructed. The framework can be extended to operate over lower level protocols if desired.
+	* **WMI-based**
+		* [WMImplant](https://github.com/ChrisTruncer/WMImplant)
+			* WMImplant is a PowerShell based tool that leverages WMI to both perform actions against targeted machines, but also as the C2 channel for issuing commands and receiving results. WMImplant will likely require local administrator permissions on the targeted machine.	
 * **Papers**
 	* [Command & Control: Understanding, Denying and Detecting - 2014 - Joseph Gardiner, Marco Cova, Shishir Nagaraja](https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf)
 
-	
+
+
+
+---------------------------------	
 ### <a name="domains"></a>Domains
 * **Domain Fronting**
 	* [FindFrontableDomains](https://github.com/rvrsh3ll/FindFrontableDomains)
@@ -291,6 +310,9 @@ To Do
 	* [Finding Domain frontable Azure domains - thoth / Fionnbharr (@a_profligate)](https://theobsidiantower.com/2017/07/24/d0a7cfceedc42bdf3a36f2926bd52863ef28befc.html)
 	* [Red Team Insights on HTTPS Domain Fronting Google Hosts Using Cobalt Strike](https://www.cyberark.com/threat-research-blog/red-team-insights-https-domain-fronting-google-hosts-using-cobalt-strike/)
 	* [Domain Fronting Via Cloudfront Alternate Domains](https://www.mdsec.co.uk/2017/02/domain-fronting-via-cloudfront-alternate-domains/)
+	* [TTP: Domain Fronting with Metasploit and Meterpreter - beyondbinary](https://beyondbinary.io/articles/domain-fronting-with-metasploit-and-meterpreter/)
+	* [Alibaba CDN Domain Fronting - Vincent Yiu](https://medium.com/@vysec.private/alibaba-cdn-domain-fronting-1c0754fa0142)
+	* [How I Identified 93k Domain-Frontable CloudFront Domains](https://www.peew.pw/blog/2018/2/22/how-i-identified-93k-domain-frontable-cloudfront-domains)
 * **Domain Tools**
 	* [Domain Hunter](https://github.com/minisllc/domainhunter)
 		* Checks expired domains, bluecoat categorization, and Archive.org history to determine good candidates for phishing and C2 domain names
@@ -365,17 +387,21 @@ To Do
 	* [Athena: The CIA’s RAT vs Empire](https://bneg.io/2017/05/22/athena-the-cias-rat-vs-empire/)
 	* [Bringing the hashes home with reGeorg & Empire](https://sensepost.com/blog/2016/bringing-the-hashes-home-with-regeorg-empire/)
 	* [Intercepting passwords with Empire and winning](https://sensepost.com/blog/2016/intercepting-passwords-with-empire-and-winning/)
+	* [Advanced Weapons Training - for the Empire - Jeremy Johnson](https://www.slideshare.net/JeremyJohnson166/advanced-weapons-training-for-the-empire)
 * **Customizing**
 	* [Using PowerShell Empire with a Trusted Certificate](https://www.blackhillsinfosec.com/using-powershell-empire-with-a-trusted-certificate/)
 	* [How to Make Empire Communication profiles - bluescreenofjeff](https://github.com/bluscreenofjeff/bluscreenofjeff.github.io/blob/master/_posts/2017-03-01-how-to-make-communication-profiles-for-empire.md)
 	* [Empire – Modifying Server C2 Indicators](http://threatexpress.com/2017/05/empire-modifying-server-c2-indicators/)
 	* [Empire Domain Fronting](https://www.xorrior.com/Empire-Domain-Fronting/)
 	* [Empire without powershell](https://bneg.io/2017/07/26/empire-without-powershell-exe/)
-* **Other**
+* **Manual**
+	* [RedTrooperFM - Empire Module Wiki](https://github.com/SadProcessor/Cheats/blob/master/RedTrooperFM.md)
+		* A one page Wiki for all your Empire RTFM needs...
+* **Modules & Additions/Extensions**
 	* [Empire-mod-Hackplayers](https://github.com/Hackplayers/Empire-mod-Hackplayers)
 		* Collection of custom Empire Modules
 	* [Sharpire - An implimentation of the Empire Agent in C#](https://github.com/0xbadjuju/Sharpire)
-
+	* [Automated Empire Infrastructure - bneg.io](https://bneg.io/2017/11/06/automated-empire-infrastructure/)
 
 
 --------------
@@ -418,13 +444,15 @@ To Do
 	* [Red Team Infrastructure Wiki](https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki)
 		* Wiki to collect Red Team infrastructure hardening resources
 		* Accompanying Presentation: [Doomsday Preppers: Fortifying Your Red Team Infrastructure](https://speakerdeck.com/rvrsh3ll/doomsday-preppers-fortifying-your-red-team-infrastructure)
-	* [How to Build a C2 Infrastructure with Digital Ocean – Part 1](https://www.blackhillsinfosec.com/build-c2-infrastructure-digital-ocean-part-1/)
 	* [Infrastructure for Ongoing Red Team Operations](https://blog.cobaltstrike.com/2014/09/09/infrastructure-for-ongoing-red-team-operations/)
-	* [Automated Red Team Infrastructure Deployment with Terraform - Part 1](https://rastamouse.me/2017/08/automated-red-team-infrastructure-deployment-with-terraform---part-1/)
 	* [6 RED TEAM INFRASTRUCTURE TIPS](https://cybersyndicates.com/2016/11/top-red-team-tips/)
+	* [How to Build a C2 Infrastructure with Digital Ocean – Part 1](https://www.blackhillsinfosec.com/build-c2-infrastructure-digital-ocean-part-1/)
+	* [Automated Red Team Infrastructure Deployment with Terraform - Part 1](https://rastamouse.me/2017/08/automated-red-team-infrastructure-deployment-with-terraform---part-1/)
 	* [Migrating Your infrastructure](https://blog.cobaltstrike.com/2015/10/21/migrating-your-infrastructure/)
+* **Hardware**
 	* [tap](https://github.com/trustedsec/tap)
 		* TAP is a remote penetration testing platform builder. For folks in the security industry, traveling often times becomes a burden and adds a ton of cost to the customer. TAP was designed to make the deployment of these boxes super simple and create a self-healing and stable platform to deploy remote penetration testing platforms. Essentially the concept is simple, you pre-configure a brand new box and run the TAP setup file. This will install a service on Linux that will be configured the way you want. What it will do is establish a reverse SSH tunnel back to a machine thats exposed on the Internet for you. From there you can access the box locally from the server it connects back to. TAP automatically detects when an SSH connection has gone stale and will automatically rebuild it for you.
+	* [Red Team Laptop & Infrastructure (pt 1: Architecture) - hon1nbo](https://hackingand.coffee/2018/02/assessment-laptop-architecture/)
 * **Logging**
 	* [Attack Infrastructure Log Aggregation and Monitoring](https://posts.specterops.io/attack-infrastructure-log-aggregation-and-monitoring-345e4173044e)
 * **Scripts**
@@ -447,9 +475,14 @@ To Do
 
 ------------------
 ### <a name="payload"></a>Payloads
-* **Developing**
+* **Development**
 	* [covertutils - A framework for Backdoor development!](https://github.com/operatorequals/covertutils)
 		* This Python package is used to create Agent/Handler backdoors, like metasploit's meterpreter, empire's empire agent, cobalt strike's beacon and so on... It automatically handles all communication channel options, like encryption, chunking, steganography, sessions, etc. With a recent package addition (httpimport), staging from pure Python2/3 is finally possible! With all those set with a few lines of code, a programmer can spend time creating the actual payloads, persistense mechanisms, shellcodes and generally more creative stuff!! The security programmers can stop re-inventing the wheel by implementing encryption mechanisms both Agent-side and Handler-side to spend their time developing more versatile Agents, and generally feature-rich shells!
+* **Tools**
+	* [Demiguise](https://github.com/nccgroup/demiguise)
+		* The aim of this project is to generate .html files that contain an encrypted HTA file. The idea is that when your target visits the page, the key is fetched and the HTA is decrypted dynamically within the browser and pushed directly to the user. This is an evasion technique to get round content / file-type inspection implemented by some security-appliances. This tool is not designed to create awesome HTA content. There are many other tools/techniques that can help you with that. What it might help you with is getting your HTA into an environment in the first place, and (if you use environmental keying) to avoid it being sandboxed.
+	* [SharpShooter](https://github.com/mdsecactivebreach/SharpShooter)
+		* SharpShooter is a payload creation framework for the retrieval and execution of arbitrary CSharp source code. SharpShooter is capable of creating payloads in a variety of formats, including HTA, JS, VBS and WSF. It leverages James Forshaw's DotNetToJavaScript tool to invoke methods from the SharpShooter DotNet serialised object. Payloads can be retrieved using Web or DNS delivery or both; SharpShooter is compatible with the MDSec ActiveBreach PowerDNS project. Alternatively, stageless payloads with embedded shellcode execution can also be generated for the same scripting formats.
 * **Examples/Samples**
 	* [Pupy](https://github.com/n1nj4sec/pupy)
 		* Pupy is an opensource, multi-platform Remote Administration Tool with an embedded Python interpreter. Pupy can load python packages from memory and transparently access remote python objects. Pupy can communicate using different transports and have a bunch of cool features & modules. On Windows, Pupy is a reflective DLL and leaves no traces on disk.
@@ -467,7 +500,8 @@ To Do
 		* This is a cross platform python framework which allows you to build custom payloads for Windows, Mac OSX and Linux as well. You are able to select whether the payload binds to a specific IP and port, listens for a connection on a port, option to send an email of system info when the system boots, and option to start keylogger on boot. Payloads created can only run on the OS that they were created on.
 	* [QuasarRAT](https://github.com/quasar/QuasarRAT)
 		* Quasar is a fast and light-weight remote administration tool coded in C#. Providing high stability and an easy-to-use user interface, Quasar is the perfect remote administration solution for you.
-
+	* [Ares](https://github.com/sweetsoftware/Ares)
+		* Ares is a Python Remote Access Tool.
 
 
 
@@ -518,8 +552,12 @@ To Do
 		* The DumpsterFire Toolset is a modular, menu-driven, cross-platform tool for building repeatable, time-delayed, distributed security events. Easily create custom event chains for Blue Team drills and sensor / alert mapping. Red Teams can create decoy incidents, distractions, and lures to support and scale their operations. Turn paper tabletop exercises into controlled "live fire" range events. Build event sequences ("narratives") to simulate realistic scenarios and generate corresponding network and filesystem artifacts.
 	* [Caldera](https://github.com/mitre/caldera)
 		* CALDERA is an automated adversary emulation system that performs post-compromise adversarial behavior within enterprise networks. It generates plans during operation using a planning system and a pre-configured adversary model based on the Adversarial Tactics, Techniques & Common Knowledge (ATT&CK™) project. These features allow CALDERA to dynamically operate over a set of systems using variable behavior, which better represents how human adversaries perform operations than systems that follow prescribed sequences of actions.
+	* [Metta](https://github.com/uber-common/metta)
+		* An information security preparedness tool to do adversarial simulation. This project uses Redis/Celery, python, and vagrant with virtualbox to do adversarial simulation. This allows you to test (mostly) your host based instrumentation but may also allow you to test any network based detection and controls depending on how you set up your vagrants. The project parses yaml files with actions and uses celery to queue these actions up and run them one at a time without interaction.
 * **Powershell Scripts**
 	* [Red Team Powershell Scripts - Mr-Un1k0d3r](https://github.com/Mr-Un1k0d3r/RedTeamPowershellScripts)
+
+
 
 #### Code Injection
 * [injectAllTheThings](https://github.com/fdiskyou/injectAllTheThings/)

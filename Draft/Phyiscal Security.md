@@ -27,11 +27,8 @@
 
 * [zoneminder](https://www.zoneminder.com/)
 	* A full-featured, open source, state-of-the-art video surveillance software system.
-
-
-* [FATF blacklist - Wikipedia](https://en.wikipedia.org/wiki/FATF_blacklist)
-	* The FATF blacklist was the common shorthand description for the Financial Action Task Force list of "Non-Cooperative Countries or Territories" (NCCTs) issued since 2000, which it perceived to be non-cooperative in the global fight against money laundering and terrorist financing.
 * [The Green Beret Hotel Check-In Safety List](https://www.entrepreneur.com/article/286411)
+
 
 #### End Sort
 
@@ -42,7 +39,6 @@
 * **101**
 	* [Physical Security - Centre for the Protection of National Infrastructure - UK](https://www.cpni.gov.uk/physical-security)
 * **Articles/Blogposts/Writeups**
-
 * **Videos/Talks**
 	* [Physical Security: From Locks to Dox - Jess Hires](http://www.irongeek.com/i.php?page=videos/derbycon4/t540-physical-security-from-locks-to-dox-jess-hires)
 		* This talk is an introduction to Physical Penetration Testing. I briefly cover the Penetration Testing Methodology from a Physical Security perspective, but the talk is mostly oriented around the analysis and exploitation phases. Various attacks will be covered, from lock picking and bypass to safe cracking. No prior experience with lock picking or physical security is required, I will start with the basics and work up to advanced topics.

@@ -39,6 +39,10 @@
 * [Invasion of Privacy - HackerFactor](http://www.hackerfactor.com/blog/index.php?/archives/703-Invasion-of-Privacy.html)
 * [What Happens Next Will Amaze You](http://idlewords.com/talks/what_happens_next_will_amaze_you.htm#six_fixes)
 
+* [Cookieless Monster: Exploring the Ecosystem of Web-based Device Fingerprinting](http://securitee.org/files/cookieless_sp2013.pdf)
+		* Abstract —The web has become an essential part of our society and is currently the main medium of information delivery. Billions of users browse the web on a daily basis, and there are single websites that have reached over one billion user accounts. In this environment, the ability to track users and their online habits can be very lucrative for advertising companies, yet very intrusive for the privacy of users. In this paper, we examine how web-based device fingerprint- ing currently works on the Internet. By analyzing the code of three popular browser-fingerprinting code providers, we reveal the techniques that allow websites to track users without the need of client-side identifiers. Among these techniques, we show how current commercial fingerprinting approaches use questionable practices, such as the circumvention of HTTP proxies to discover a user’s real IP address and the installation of intrusive browser plugins. At the same time, we show how fragile the browser ecosystem is against fingerprinting through the use of novel browser- identifying techniques. With so many different vendors involved in browser development, we demonstrate how one can use diversions in the browsers’ implementation to distinguish successfully not only the browser-family, but also specific major and minor versions. Browser extensions that help users spoof the user-agent of their browsers are also evaluated. We show that current commercial approaches can bypass the extensions, and, in addition, take advantage of their shortcomings by using them as additional fingerprinting features.
+
+
 #### end Sort
 
 
@@ -59,6 +63,7 @@
 	* [DEFCON 20: Can You Track Me Now? Government And Corporate Surveillance Of Mobile Geo-Location Data](https://www.youtube.com/watch?v=NjuhdKUH6U4)
 	* [Can you track me now? - Defcon20](https://wEww.youtube.com/watch?v=DxIF66Tcino)
 	* [Phones and Privacy for Consumers - Matt Hoy (mattrix) and David Khudaverdyan (deltaflyer)](http://www.irongeek.com/i.php?page=videos/grrcon2015/submerssion-therapy05-phones-and-privacy-for-consumers-matt-hoy-mattrix-and-david-khudaverdyan-deltaflyerhttps://ritter.vg/blog-deanonymizing_amm.html)
+	* [Hacking FinSpy - a Case Study - Atilla Marosi - Troopers15](https://www.youtube.com/watch?v=Mb4mfBi06K4)
 * **Browser Related**
 	* [Panopticlick](https://panopticlick.eff.org/)
 		* Panopticlick will analyze how well your browser and add-ons protect you against online tracking techniques. We’ll also see if your system is uniquely configured—and thus identifiable—even if you are using privacy-protective software.

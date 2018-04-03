@@ -6,6 +6,7 @@
 * [Apache ActiveMQ/MQTT/RabbitMQ](#activemq)
 * [ARP](#arp)
 * [Bitsquatting](#bitsquat)
+* [Captive Portals](#captive-portal)
 * [DNS](#dns)
 * [D/DOS](#ddos)
 * [HNAP](#hnap)
@@ -43,6 +44,7 @@
 * [VLANs](#vlan)
 * [Talks/Videos](#videos)
 * [Web](#web)
+* [WebDAV](#webdav)
 * [Other](#other)
 * [MISC](#misc)
 
@@ -50,7 +52,9 @@
 --------
 ##### To be sorted
 http://www.pentest-standard.org/index.php/Intelligence_Gathering
-* Add IPSEC Stuff
+* Add 
+	* WebDAV
+	* IPSEC Stuff
 	* DNSSEC
 	* ICE
 	* NTLM stuff
@@ -59,6 +63,8 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
 * [Nili](https://github.com/niloofarkheirkhah/nili)
 	* Nili is a Tool for Network Scan, Man in the Middle, Protocol Reverse Engineering and Fuzzing.
+* [IP Cameras Default Passwords Directory](https://ipvm.com/reports/ip-cameras-default-passwords-directory)
+
 
 ##### sort end
 
@@ -127,6 +133,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 		* Providing all the extra info that didn't make it into the BlackHat 2012 USA Presentation "Still Passing the Hash 15 Years Later? Using the Keys to the Kingdom to Access All Your Data" by Alva Lease 'Skip' Duckwall IV and Christopher Campbell.
 	* [Invoke-TheHash](https://github.com/Kevin-Robertson/Invoke-TheHash)
 		* Invoke-TheHash contains PowerShell functions for performing pass the hash WMI and SMB tasks. WMI and SMB services are accessed through .NET TCPClient connections. Authentication is performed by passing an NTLM hash into the NTLMv2 authentication protocol. Local administrator privilege is not required client-side.
+	* [Why Crack When You Can Pass the Hash? - Chris Hummel(2009)](https://www.sans.org/reading-room/whitepapers/testing/crack-pass-hash-33219)
 * **Passing the Ticket Attacks**
 	* [How To Pass the Ticket Through SSH Tunnels](https://bluescreenofjeff.com/2017-05-23-how-to-pass-the-ticket-through-ssh-tunnels/)
 	* [Mimikatz and Active Directory Kerberos Attacks ](https://adsecurity.org/?p=556)
@@ -215,7 +222,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* [Enteletaor](https://github.com/cr0hn/enteletaor)
 		* Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.
 	* [a](https://github.com/fmtn/a)
-		* ActiveMQ CLI testing and message management
+		* ActiveMQ CLI testing and mescaptsage management
 
 
 ------------
@@ -242,6 +249,12 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 ------------
+### <a name="captive-portal"></a>Captive Portals
+* [cpscam](https://github.com/codewatchorg/cpscam)
+	* Bypass captive portals by impersonating inactive users
+
+
+------------
 #### <a name="dns"></a>DNS:
 * **Attacks**
 	* [DNS Cache Snooping or Snooping the Cache for Fun and Profit - Luis Grangeia](http://cs.unc.edu/~fabian/course_papers/cache_snooping.pdf)
@@ -262,6 +275,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 * **SubDomain**
 	* [Sub-domain enumeration - Reference](https://gist.github.com/yamakira/2a36d3ae077558ac446e4a89143c69ab)
 	* [The Art of Subdomain Enumeration](https://blog.sweepatic.com/art-of-subdomain-enumeration/)
+	* [A penetration tester’s guide to sub-domain enumeration - appseco](https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6)
 	* [Altdns](https://github.com/infosec-au/altdns)
 		* Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging) as well as takes in a list of subdomains that you know of.
 	* [AQUATONE](https://github.com/michenriksen/aquatone)
@@ -495,6 +509,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 		* A complete, modular, portable and easily extensible MITM framework. 
 	* [NetRipper](https://github.com/NytroRST/NetRipper)
 		* NetRipper is a post exploitation tool targeting Windows systems which uses API hooking in order to intercept network traffic and encryption related functions from a low privileged user, being able to capture both plain-text traffic and encrypted traffic before encryption/after decryption.
+	* [An Auditing Tool for Wi-Fi or Wired Ethernet Connections - Matthew Sullivan](https://www.cookiecadger.com/wp-content/uploads/Cookie%20Cadger.pdf)
 * **DNS**
 	* [FakeDNS](https://github.com/Crypt0s/FakeDns)
 		* A regular-expression based python MITM DNS server with support for DNS Rebinding attacks
@@ -577,13 +592,15 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 ------------
 #### <a name="host"></a>Network Host Discovery/Service Discovery:
 * **Educational/Informational**
-	* [Nmap you’re doing it wrong - sneakerhax](https://sneakerhax.com/nmap-yourre-doing-it-wrong/)
-	* [Recon at scale - sneakerhax](https://sneakerhax.com/recon-at-scale/)
-	* [Nmap Reference Guide](https://nmap.org/book/man.html)
-	* [Security.StackExchange Answer detailing Nmap Scanning tips and tactics - very good](https://security.stackexchange.com/questions/373/open-source-penetration-test-automation/82529#82529)
-	* [Massively Scaling your Scanning - SANS](https://pen-testing.sans.org/blog/2017/10/25/massively-scaling-your-scanning)
+	* **Nmap Related**
+		* [Nmap XML Parser Documentation](https://nmap-parser.readthedocs.io/en/latest/)
+		* [Nmap you’re doing it wrong - sneakerhax](https://sneakerhax.com/nmap-yourre-doing-it-wrong/)
+		* [Recon at scale - sneakerhax](https://sneakerhax.com/recon-at-scale/)
+		* [Nmap Reference Guide](https://nmap.org/book/man.html)
+		* [Security.StackExchange Answer detailing Nmap Scanning tips and tactics - very good](https://security.stackexchange.com/questions/373/open-source-penetration-test-automation/82529#82529)
+		* [Massively Scaling your Scanning - SANS](https://pen-testing.sans.org/blog/2017/10/25/massively-scaling-your-scanning)
+		* [StackOverflow Post on Scanning](https://security.stackexchange.com/questions/373/open-source-penetration-test-automation/82529#82529)
 	* [Mass Scanning the Internet: Tips, Tricks, Results - DEF CON 22 - Graham, Mcmillan, and Tentler](https://www.youtube.com/watch?v=nX9JXI4l3-E)
-	* [StackOverflow Post on Scanning](https://security.stackexchange.com/questions/373/open-source-penetration-test-automation/82529#82529)
 	* [halberd](https://github.com/jmbr/halberd)
 		* Load balancer detection tool
 	* [They see me scannin'; they hatin'](http://blog.bonsaiviking.com/2015/07/they-see-me-scannin-they-hatin.html)
@@ -1021,6 +1038,10 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 
+-----------------------
+### <a name="webdav"></a> WebDAV
+* [WsgiDAV](https://github.com/mar10/wsgidav)
+	* WsgiDAV is a generic WebDAV server written in Python and based on WSGI.
 
 
 ------------

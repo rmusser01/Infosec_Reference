@@ -35,8 +35,10 @@ Memory corruption is for wussies
 	* This reference topic for the IT professional provides an overview and links to information about the User Rights Assignment security policy settings user rights that are available in the Windows operating system.
 
 
-## Bash History
+
+
 ------------------------------- 
+## Bash History
 * [Bash History - ATT&CK](https://attack.mitre.org/wiki/Technique/T1139)
 	* Bash keeps track of the commands users type on the command-line with the "history" utility. Once a user logs out, the history is flushed to the user’s .bash_history file. For each user, this file resides at the same location: ~/.bash_history. Typically, this file keeps track of the user’s last 500 commands. Users often type usernames and passwords on the command-line as parameters to programs, which then get saved to this file when they log out. Attackers can abuse this by looking through the file for potential credentials.
 
@@ -54,7 +56,7 @@ Memory corruption is for wussies
 	* Adversaries may attempt to brute force logins without knowledge of passwords or hashes during an operation either with zero knowledge or by attempting a list of known or possible passwords. This is a riskier option because it could cause numerous authentication failures and account lockouts, depending on the organization's login failure policies.Cylance Cleaver 
 	*  A related technique called password spraying uses one password, or a small list of passwords, that matches the complexity policy of the domain and may be a commonly used password. Logins are attempted with that password and many different accounts on a network to avoid account lockouts that would normally occur when brute forcing a single account with many passwords.BlackHillsInfosec Password Spraying
 * [DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray)
-* DomainPasswordSpray is a tool written in PowerShell to perform a password spray attack against users of a domain. By default it will automatically generate the userlist from the domain. DomainPasswordSpray is a tool written in PowerShell to perform a password spray attack against users of a domain. By default it will automatically generate the userlist from the domain.
+	* DomainPasswordSpray is a tool written in PowerShell to perform a password spray attack against users of a domain. By default it will automatically generate the userlist from the domain. DomainPasswordSpray is a tool written in PowerShell to perform a password spray attack against users of a domain. By default it will automatically generate the userlist from the domain.
 * [Simplifying Password Spraying - Spiderlabs](https://www.trustwave.com/Resources/SpiderLabs-Blog/Simplifying-Password-Spraying/)
 
 
@@ -299,6 +301,8 @@ Memory corruption is for wussies
 	* Thoroughly sniff passwords and hashes from an interface or pcap file. Concatenates fragmented packets and does not rely on ports for service identification.
 * [tcpflow](https://github.com/simsong/tcpflow)
 	* tcpflow is a program that captures data transmitted as part of TCP connections (flows), and stores the data in a way that is convenient for protocol analysis and debugging. Each TCP flow is stored in its own file. Thus, the typical TCP flow will be stored in two files, one for each direction. tcpflow can also process stored 'tcpdump' packet flows.
+* [3snake](https://github.com/blendin/3snake)
+	* Targeting rooted servers, reads memory from sshd and sudo system calls that handle password based authentication. Doesn't write any memory to the traced processes. Spawns a new process for every sshd and sudo command that is run. Listens for the proc event using netlink sockets to get candidate processes to trace. When it receives an sshd or sudo process ptrace is attached and traces read and write system calls, extracting strings related to password based authentication.
 
 #### OS X
 * [OS X Yosemite Has A Secret Packet Sniffer](https://jacobsalmela.com/2014/11/23/os-x-yosemite-secret-packet-sniffer/)

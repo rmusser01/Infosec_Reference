@@ -1072,13 +1072,12 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* [Utilizing Code Reuse/ROP in PHP Application Exploits - BH 2010](https://www.owasp.org/images/9/9e/Utilizing-Code-Reuse-Or-Return-Oriented-Programming-In-PHP-Application-Exploits.pdf)
 		* [POP-Exploit](https://github.com/enddo/POP-Exploit)
 			* Research into Property Oriented Programming about php applications.
-* **Equivalency Check**
-	* [From hacked client to 0day discovery - infoteam](https://security.infoteam.ch/en/blog/posts/from-hacked-client-to-0day-discovery.html)
-		* PHP equivalency check failure writeup
 * **Type Juggling**
 	* [Writing Exploits For Exotic Bug Classes: PHP Type Juggling](https://turbochaos.blogspot.com.au/2013/08/exploiting-exotic-bugs-php-type-juggling.html)
 	* [PHP Magic Tricks: Type Juggling](https://www.owasp.org/images/6/6b/PHPMagicTricks-TypeJuggling.pdf)
 	* [PHP’s “Magic Hash” Vulnerability (Or Beware Of Type Juggling)](https://web.archive.org/web/20150530075600/http://blog.astrumfutura.com/2015/05/phps-magic-hash-vulnerability-or-beware-of-type-juggling)
+	* [From hacked client to 0day discovery - infoteam](https://security.infoteam.ch/en/blog/posts/from-hacked-client-to-0day-discovery.html)
+		* PHP equivalency check failure writeup
 * **Writeups**
 	* [Php Codz Hacking](https://github.com/80vul/phpcodz)
 		* Writeups of specific PHP vulns

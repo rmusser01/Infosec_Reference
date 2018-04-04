@@ -276,6 +276,8 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* [Sub-domain enumeration - Reference](https://gist.github.com/yamakira/2a36d3ae077558ac446e4a89143c69ab)
 	* [The Art of Subdomain Enumeration](https://blog.sweepatic.com/art-of-subdomain-enumeration/)
 	* [A penetration tester’s guide to sub-domain enumeration - appseco](https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6)
+	* [amass](https://github.com/caffix/amass)
+		* The amass tool searches Internet data sources, performs brute force subdomain enumeration, searches web archives, and uses machine learning to generate additional subdomain name guesses. DNS name resolution is performed across many public servers so the authoritative server will see the traffic coming from different locations.)
 	* [Altdns](https://github.com/infosec-au/altdns)
 		* Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging) as well as takes in a list of subdomains that you know of.
 	* [AQUATONE](https://github.com/michenriksen/aquatone)

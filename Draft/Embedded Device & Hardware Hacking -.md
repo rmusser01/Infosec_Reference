@@ -21,6 +21,9 @@ http://greatscottgadgets.com/infiltrate2013/
 * [dfu-programmer](https://github.com/dfu-programmer/dfu-programmer)
 	* dfu-programmer is an implementation of the Device Firmware Upgrade class USB driver that enables firmware upgrades for various USB enabled (with the correct bootloader) Atmel chips.  This program was created because the Atmel "FLIP" program for flashing devices does not support flashing via USB on Linux, and because standard DFU loaders do not work for Atmel's chips.
 * [Exploiting Qualcomm EDL Programmers (1): Gaining Access & PBL Internals](https://alephsecurity.com/2018/01/22/qualcomm-edl-1/)
+* [CPU security bugs caused by speculative execution](https://github.com/marcan/speculation-bugs)
+	* This repo is an attempt to collect information on the class of information disclosure vulnerabilities caused by CPU speculative execution that were disclosed on January 3rd, 2018.
+
 
 #### end sort
 
@@ -46,6 +49,8 @@ http://greatscottgadgets.com/infiltrate2013/
 	* [Hardware Hacking the Easyware Way](http://www.irongeek.com/i.php?page=videos/derbycon6/417-hardware-hacking-the-easyware-way-brian-fehrman)
 		* Interested in hardware hacking but not quite sure where to start? Does the thought of soldering thrill you (or scare you)? Come check out this talk to see just how easy it is to jump into this exciting field of research! Many people and companies use similar models of hardware. Unlike software, these devices rarely receive security updates. Sometimes, used devices are sold without clearing the configurations and important data is left behind. After this talk, you will know how to find hidden interfaces on these devices, start searching for vulnerabilities and sensitive information, and have irresistible urges to go home and tear apart all your old networking equipment. Did we mention...live demo?
 	* [Methodologies for Hacking Embedded Security Appliances](https://media.blackhat.com/us-13/US-13-Bathurst-Methodologies-for-Hacking-Embdded-Security-Appliances-Slides.pdf)
+	* [OWASP Embedded Application Security](https://www.owasp.org/index.php/OWASP_Embedded_Application_Security)
+		* [Live Copy](https://scriptingxss.gitbooks.io/embedded-appsec-best-practices//)
 * **Resources/Reference**
 	* [FCC ID Lookup](http://transition.fcc.gov/oet/ea/fccid/)
 		* Lookup devices according to FCC ID

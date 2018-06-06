@@ -21,6 +21,7 @@
 
 
 
+
 -----
 ### <a name="writing">Writing</a>
 Start with the first two links, and go from there. They’re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
@@ -83,7 +84,7 @@ Other Materials:
 	
 
 -----
-### <a name="collab">Penetration Testing Collaboration/Documenation Tools</a>
+### <a name="collab">Penetration Testing Collaboration</a>
 * [Kvasir](https://github.com/KvasirSecurity/Kvasir)
 	* Kvasir is a vulnerability / penetration testing data management system designed to help mitigate the issues found when performing team-based assessments. Kvasir does this by homogenizing data sources into a pre-defined structure.
 * [Dradis](https://github.com/dradis/dradisframework#welcome-to-dradis)
@@ -93,12 +94,15 @@ Other Materials:
 	* Faraday introduces a new concept (IPE) Integrated Penetration-Test Environment a multiuser Penetration test IDE. Designed for distribution, indexation and analysis of the generated data during the process of a security audit.  The main purpose of Faraday is to re-use the available tools in the community to take advantage of them in a multiuser way.
 * [Lair](https://github.com/lair-framework/lair)
 	* Lair is a reactive attack collaboration framework and web application built with meteor. 
-* [CrScreenshotDxe](https://github.com/NikolajSchlej/CrScreenshotDxe)
-	* UEFI DXE driver to take screenshots from GOP-compatible graphic console
-* [DART](https://github.com/lmco/dart/blob/master/README.md)
-	* DART is a test documentation tool created by the Lockheed Martin Red Team to document and report on penetration tests, especially in isolated network environments.
-* [Serpico](https://github.com/SerpicoProject/Serpico)
-	* Serpico is a penetration testing report generation and collaboration tool. It was developed to cut down on the amount of time it takes to write a penetration testing report.
+* **Documenation Tools**
+	* [CrScreenshotDxe](https://github.com/NikolajSchlej/CrScreenshotDxe)
+		* UEFI DXE driver to take screenshots from GOP-compatible graphic console
+	* [DART](https://github.com/lmco/dart/blob/master/README.md)
+		* DART is a test documentation tool created by the Lockheed Martin Red Team to document and report on penetration tests, especially in isolated network environments.
+	* [Serpico](https://github.com/SerpicoProject/Serpico)
+		* Serpico is a penetration testing report generation and collaboration tool. It was developed to cut down on the amount of time it takes to write a penetration testing report.
+	* [Vulnreport](https://github.com/Salesforce/Vulnreport)
+		* Vulnreport is a platform for managing penetration tests and generating well-formatted, actionable findings reports without the normal overhead that takes up security engineer's time. The platform is built to support automation at every stage of the process and allow customization for whatever other systems you use as part of your pentesting process.
 
 -----
 ### <a name="video">Video Recording/Recording</a>
@@ -108,6 +112,9 @@ Other Materials:
 * [Cryptoshot](https://github.com/DiabloHorn/cryptoshot) 
 	* This application will make a screenshot of the desktop. If the desktop consists of multiple monitors, it should still work fine. However it has only been tested with a dual monitor setup. The windows project has the added functionality of sending the screenshot to a server of your choosing.
 * [Record terminal sessions and have the ability to replay it](http://linux.byexamples.com/archives/279/record-the-terminal-session-and-replay-later/)
+* [Pocuito](https://github.com/tunnelshade/pocuito)
+	* A tiny chrome extension to record and replay your web application proof-of-concepts. Replaying PoCs from bug tracker written steps is a pain most of the time, so just record the poc, distribute and replay it whenever necessary without much hassle.
+
 
 ------
 ### De/Briefing/Presenting

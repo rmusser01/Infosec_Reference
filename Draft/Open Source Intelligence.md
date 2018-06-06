@@ -81,6 +81,8 @@ www.osintinsight.com/shared.php?user=Mediaquest&folderid=0\
 	* [toddington - resources](https://www.toddington.com/resources/)
 	* [onstrat - osint](http://www.onstrat.com/osint/)
 	* http://osintinsight.com/shared.php?expand=169,175&folderid=0&user=Mediaquest
+	* [Open Source Intelligence (OSINT) Tools & Resources - osint.link](http://osint.link/)
+		* Seems pretty good.
 	* IntelTechniques OSINT Flowcharts
 		* [Email Address](https://inteltechniques.com/data/Email.png)
 		* [Domain Name](https://inteltechniques.com/data/Domain.png)

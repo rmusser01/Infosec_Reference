@@ -206,6 +206,22 @@
 
 
 
+-------------------------------
+## Port Knocking
+* [Port Knocking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1205)
+	* Port Knocking is a well-established method used by both defenders and adversaries to hide open ports from access. To enable the port, the system expects a series of packets with certain characteristics before the port will be opened. This is often accomlished by the host based firewall, but could also be implemented by custom software.
+	* This technique has been observed to both for the dynamic opening of a listening port as well as the initiating of a connection to a listening server on a different system.
+	* The observation of the signal packets to trigger the communication can be conducted through different methods. One means, originally implemented by Cd00r, is to use the libpcap libraries to sniff for the packets in question. Another method leverages raw sockets, which enables the malware to use ports that are already open for use by other programs. 
+
+
+
+-------------------------------
+## Remote Access Tools
+* [Remote Access Tools](https://attack.mitre.org/wiki/Technique/T1219)
+	* An adversary may use legitimate desktop support and remote access software, such as Team Viewer, Go2Assist, LogMein, AmmyyAdmin, etc, to establish an interactive command and control channel to target systems within networks. These services are commonly used as legitimate technical support software, and may be whitelisted within a target environment. Remote access tools like VNC, Ammy, and Teamviewer are used frequently when compared with other legitimate software commonly used by adversaries.
+	* Remote access tools may be established and used post-compromise as alternate communications channel for Redundant Access or as a way to establish an interactive remote desktop session with the target system. They may also be used as a component of malware to establish a reverse connection or back-connect to a service or adversary controlled system.
+
+
 
 
 ## Remote File Copy

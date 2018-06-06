@@ -44,6 +44,11 @@
 * [Privilege Escalation via "Sticky" Keys](http://carnal0wnage.attackresearch.com/2012/04/privilege-escalation-via-sticky-keys.html)
 
 
+
+
+
+
+
 -------------------------------
 ## AppCert DLLs
 * [AppCert DLLs - ATT&CK](https://attack.mitre.org/wiki/Technique/T1182)
@@ -54,6 +59,10 @@
 	* CreateProcessWithTokenW
 	* WinExec
 		* Similar to Process Injection, this value can be abused to obtain persistence and privilege escalation by causing a malicious DLL to be loaded and run in the context of separate processes on the computer. 
+
+
+
+
 
 
 -------------------------------
@@ -108,6 +117,15 @@
 
 
 
+-------------------------------
+## BITS Jobs
+* [BITS Jobs - ATT&CK](https://attack.mitre.org/wiki/Technique/T1197)
+	* Windows Background Intelligent Transfer Service (BITS) is a low-bandwidth, asynchronous file transfer mechanism exposed through Component Object Model (COM)1.2 BITS is commonly used by updaters, messengers, and other applications preferred to operate in the background (using available idle bandwidth) without interrupting other networked applications. File transfer tasks are implemented as BITS jobs, which contain a queue of one or more file operations.
+	* The interface to create and manage BITS jobs is accessible through PowerShell and the BITSAdmin tool.
+	* Adversaries may abuse BITS to download, execute, and even clean up after malicious code. BITS tasks are self-contained in the BITS job database, without new files or registry modifications, and often permitted by host firewalls.456 BITS enabled execution may also allow Persistence by creating long-standing jobs (the default maximum lifetime is 90 days and extendable) or invoking an arbitrary program when a job completes or errors (including after system reboots).
+	* BITS upload functionalities can also be used to perform Exfiltration Over Alternative Protocol.
+
+
 
 
 
@@ -120,6 +138,16 @@
 		* The MBR is the section of disk that is first loaded after completing hardware initialization by the BIOS. It is the location of the boot loader. An adversary who has raw access to the boot drive may overwrite this area, diverting execution during startup from the normal boot loader to adversary code.Lau 2011 
 	* Volume Boot Record
 		*  The MBR passes control of the boot process to the VBR. Similar to the case of MBR, an adversary who has raw access to the boot drive may overwrite the VBR to divert execution during startup to adversary code.
+
+
+
+
+--------------------------------
+## Browser Extensions
+* [Browser Extensions - ATT&CK](https://attack.mitre.org/wiki/Technique/T1176)
+	* Browser extensions or plugins are small programs that can add functionality and customize aspects of internet browsers. They can be installed directly or through a browser's app store. Extensions generally have access and permissions to everything that the browser can access.
+	* Malicious extensions can be installed into a browser through malicious app store downloads masquerading as legitimate extensions, through social engineering, or by an adversary that has already compromised a system. Security can be limited on browser app stores so may not be difficult for malicious extensions to defeat automated scanners and be uploaded. Once the extension is installed, it can browse to websites in the background, steal all information that a user enters into a browser, to include credentials, and be used as an installer for a RAT for persistence. There have been instances of botnets using a persistent backdoor through malicious Chrome extensions. There have also been similar examples of extensions being used for command & control. 
+
 
 
 
@@ -163,28 +191,11 @@
 
 
 
-
 -------------------------------
-## Cron Job
-* [Cron Job - ATT&CK](https://attack.mitre.org/wiki/Technique/T1168)
-	* System-wide cron jobs are installed by modifying /etc/crontab while per-user cron jobs are installed using crontab with specifically formatted crontab files 1. This works on Mac and Linux systems.
-	* Both methods allow for commands or scripts to be executed at specific, periodic intervals in the background without user interaction. An adversary may use task scheduling to execute programs at system startup or on a scheduled basis for persistence234, to conduct Execution as part of Lateral Movement, to gain root privileges, or to run a process under the context of a specific account. 
-
-#### Linux
-* [Intro to Cron - unixgeeks](http://www.unixgeeks.org/security/newbie/unix/cron-1.html)
-* [Scheduling Tasks with Cron Jobs - tutsplus](https://code.tutsplus.com/tutorials/scheduling-tasks-with-cron-jobs--net-8800)
-
-#### OS X
-* Per Apple’s developer documentation, there are two supported methods for creating periodic background jobs: launchd and cron1. 
-	* Launchd 
-		* Each Launchd job is described by a different configuration property list (plist) file similar to Launch Daemons or Launch Agents, except there is an additional key called StartCalendarInterval with a dictionary of time values. This only works on macOS and OS X. 
-	* cron
-		* System-wide cron jobs are installed by modifying /etc/crontab while per-user cron jobs are installed using crontab with specifically formatted crontab files. This works on Mac and Linux systems.
-	* Both methods allow for commands or scripts to be executed at specific, periodic intervals in the background without user interaction. An adversary may use task scheduling to execute programs at system startup or on a scheduled basis for persistence234, to conduct Execution as part of Lateral Movement, to gain root privileges, or to run a process under the context of a specific account. 
-
-
-
-
+## Create Account
+* [Create Account - ATT&CK](https://attack.mitre.org/wiki/Technique/T1136)
+	* Adversaries with a sufficient level of access may create a local system or domain account. Such accounts may be used for persistence that do not require persistent remote access tools to be deployed on the system.
+	The `net user` commands can be used to create a local or domain account. 
 
 
 -------------------------------
@@ -202,9 +213,8 @@
 
 
 
-
-## Dylib Hijacking
 ---------------
+## Dylib Hijacking
 * [Dylib Hijacking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1157)
 	* macOS and OS X use a common method to look for required dynamic libraries (dylib) to load into a program based on search paths. Adversaries can take advantage of ambiguous paths to plant dylibs to gain privilege escalation or persistence. 
 	* A common method is to see what dylibs an application uses, then plant a malicious version with the same name higher up in the search path. This typically results in the dylib being in the same folder as the application itselfWriting Bad Malware for OSXMalware Persistence on OS X. 
@@ -263,11 +273,42 @@
 * Users can mark specific files as hidden by using the attrib.exe binary. Simply do attrib +h filename to mark a file or folder as hidden. Similarly, the “+s” marks a file as a system file and the “+r” flag marks the file as read only. Like most windows binaries, the attrib.exe binary provides the ability to apply these changes recursively “/S”. 
 
 
+
+
+
+
+----------------------------
+## Hooking
+* [Hooking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1179)
+	* Windows processes often leverage application programming interface (API) functions to perform tasks that require reusable system resources. Windows API functions are typically stored in dynamic-link libraries (DLLs) as exported functions. Hooking involves redirecting calls to these functions and can be implemented via:
+    	* **Hooks procedures**, which intercept and execute designated code in response to events such as messages, keystrokes, and mouse inputs.
+    	* **Import address table (IAT) hooking**, which use modifications to a process’s IAT, where pointers to imported API functions are stored.
+		* **Inline hooking**, which overwrites the first bytes in an API function to redirect code flow.
+	* Similar to Process Injection, adversaries may use hooking to load and execute malicious code within the context of another process, masking the execution while also allowing access to the process's memory and possibly elevated privileges. Installing hooking mechanisms may also provide Persistence via continuous invocation when the functions are called through normal use.
+	* Malicious hooking mechanisms may also capture API calls that include parameters that reveal user authentication credentials for Credential Access.
+	* Hooking is commonly utilized by Rootkits to conceal files, processes, Registry keys, and other objects in order to hide malware and associated behaviors.
+* **Tools**
+	* [Hooks Overview - msdn.ms](https://msdn.microsoft.com/library/windows/desktop/ms644959.aspx)
+	* [Userland Rootkits: Part 1, IAT hooks - adlice.com](https://www.adlice.com/userland-rootkits-part-1-iat-hooks/)
+	* [Dynamic Hooking Techniques: User Mode - matt hillman](https://www.mwrinfosecurity.com/our-thinking/dynamic-hooking-techniques-user-mode/)
+	* [Inline Hooking in Windows](https://webcache.googleusercontent.com/search?q=cache:mkBFZwQOVQAJ:https://www.exploit-db.com/docs/17802.pdf+&cd=1&hl=en&ct=clnk&gl=us)
+	* [gethooks](https://github.com/jay/gethooks)
+		* GetHooks is a program designed for the passive detection and monitoring of hooks from a limited user account. 
+	* [winhook](https://github.com/prekageo/winhook)
+
+
+
+
+
 -------------------------------
 ## Hypervisor
 * [Hypervisor - ATT&CK](https://attack.mitre.org/wiki/Technique/T1062)
 	* A type-1 hypervisor is a software layer that sits between the guest operating systems and system's hardware.Wikipedia Hypervisor It presents a virtual running environment to an operating system. An example of a common hypervisor is Xen.Wikipedia Xen A type-1 hypervisor operates at a level below the operating system and could be designed with Rootkit functionality to hide its existence from the guest operating system.Myers 2007 A malicious hypervisor of this nature could be used to persist on systems through interruption.
 * [An Introduction to Hardware-Assisted Virtual Machine (HVM) - pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.90.8832&rep=rep1&type=pdf)
+
+
+
+
 
 
 
@@ -291,6 +332,14 @@
 #### OS X
 
 
+
+
+
+------------------------------- 
+## LSASS Driver
+* [LSASS Driver - ATT&CK](https://attack.mitre.org/wiki/Technique/T1177)
+	* The Windows security subsystem is a set of components that manage and enforce the security policy for a computer or domain. The Local Security Authority (LSA) is the main component responsible for local security policy and user authentication. The LSA includes multiple dynamic link libraries (DLLs) associated with various other security functions, all of which run in the context of the LSA Subsystem Service (LSASS) lsass.exe process.
+	* Adversaries may target lsass.exe drivers to obtain execution and/or persistence. By either replacing or adding illegitimate drivers (e.g., DLL Side-Loading or DLL Search Order Hijacking), an adversary can achieve arbitrary code execution triggered by continuous LSA operations. 
 
 
 
@@ -327,16 +376,6 @@
 	* Launchctl controls the macOS launchd process which handles things like launch agents and launch daemons, but can execute other commands or programs itself. Launchctl supports taking subcommands on the command-line, interactively, or even redirected from standard input. By loading or reloading launch agents or launch daemons, adversaries can install persistence or execute changes they made Sofacy Komplex Trojan. Running a command from launchctl is as simple as `launchctl submit -l <labelName> -- /Path/to/thing/to/execute "arg" "arg" "arg"`. Loading, unloading, or reloading launch agents or launch daemons can require elevated privileges. Adversaries can abuse this functionality to execute code or even bypass whitelisting if launchctl is an allowed process. 
 
 
-
-
-
--------------------------------
-## Local Port Monitor
-* [Local Port Monitor - ATT&CK](https://attack.mitre.org/wiki/Technique/T1013)
-	* A port monitor can be set through the AddMonitor API call to set a DLL to be loaded at startup.AddMonitor This DLL can be located in C:\Windows\System32 and will be loaded by the print spooler service, spoolsv.exe, on boot.Bloxham Alternatively, an arbitrary DLL can be loaded if permissions allow writing a fully-qualified pathname for that DLL to HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors.Bloxham The spoolsv.exe process also runs under SYSTEM level permissions. Adversaries can use this technique to load malicious code at startup that will persist on system reboot and execute as SYSTEM. 
-
-#### Windows
-* [AddMonitor function](https://msdn.microsoft.com/en-us/library/dd183341)
 
 
 
@@ -484,6 +523,32 @@ Netsh Helper DLL
 
 
 
+
+
+-------------------------------
+## Port Knocking
+* [Port Knocking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1205)
+	* Port Knocking is a well-established method used by both defenders and adversaries to hide open ports from access. To enable the port, the system expects a series of packets with certain characteristics before the port will be opened. This is often accomlished by the host based firewall, but could also be implemented by custom software.
+	* This technique has been observed to both for the dynamic opening of a listening port as well as the initiating of a connection to a listening server on a different system.
+	* The observation of the signal packets to trigger the communication can be conducted through different methods. One means, originally implemented by Cd00r, is to use the libpcap libraries to sniff for the packets in question. Another method leverages raw sockets, which enables the malware to use ports that are already open for use by other programs. 
+
+
+
+-------------------------------
+## Port Monitors
+* [Port Monitors - ATT&CK](https://attack.mitre.org/wiki/Technique/T1013)
+	* A port monitor can be set through the AddMonitor API call to set a DLL to be loaded at startup.1 This DLL can be located in `C:\Windows\System32` and will be loaded by the print spooler service, spoolsv.exe, on boot. The spoolsv.exe process also runs under SYSTEM level permissions. Alternatively, an arbitrary DLL can be loaded if permissions allow writing a fully-qualified pathname for that DLL to `HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors`. The Registry key contains entries for the following:
+		* Local Port
+		* Standard TCP/IP Port
+		* USB Monitor
+    	* WSD Port
+	* Adversaries can use this technique to load malicious code at startup that will persist on system reboot and execute as SYSTEM.
+
+
+
+
+
+
 -------------------------------
 ## Rc.common
 * [Rc.common - ATT&CK](https://attack.mitre.org/wiki/Technique/T1163)
@@ -530,6 +595,20 @@ Netsh Helper DLL
 	* Here are the links to all the ‘Beyond good ol’ Run key’ posts so far. 
 
 
+
+
+
+-------------------------------
+## SIP and Trust Provider Hijacking
+* [SIP and Trust Provider Hijacking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1198)
+	* In user mode, Windows Authenticode1 digital signatures are used to verify a file's origin and integrity, variables that may be used to establish trust in signed code (ex: a driver with a valid Microsoft signature may be handled as safe). The signature validation process is handled via the WinVerifyTrust application programming interface (API) function, which accepts an inquiry and coordinates with the appropriate trust provider, which is responsible for validating parameters of a signature.
+	* Because of the varying executable file types and corresponding signature formats, Microsoft created software components called Subject Interface Packages (SIPs) to provide a layer of abstraction between API functions and files. SIPs are responsible for enabling API functions to create, retrieve, calculate, and verify signatures. Unique SIPs exist for most file formats (Executable, PowerShell, Installer, etc., with catalog signing providing a catch-all ) and are identified by globally unique identifiers (GUIDs).
+	* Similar to Code Signing, adversaries may abuse this architecture to subvert trust controls and bypass security policies that allow only legitimately signed code to execute on a system. Adversaries may hijack SIP and trust provider components to mislead operating system and whitelisting tools to classify malicious (or any) code as signed by:
+		* Modifying the `Dll` and `FuncName` Registry values in `HKLM\SOFTWARE[\WOW6432Node\]Microsoft\Cryptography\OID\EncodingType 0\CryptSIPDllGetSignedDataMsg\{SIP_GUID}` that point to the dynamic link library (DLL) providing a SIP’s `CryptSIPDllGetSignedDataMsg` function, which retrieves an encoded digital certificate from a signed file. By pointing to a maliciously-crafted DLL with an exported function that always returns a known good signature value (ex: a Microsoft signature for Portable Executables) rather than the file’s real signature, an adversary can apply an acceptable signature value all files using that SIP6 (although a hash mismatch will likely occur, invalidating the signature, since the hash returned by the function will not match the value computed from the file).
+    	* Modifying the `Dll` and `FuncName` Registry values in `HKLM\SOFTWARE\[WOW6432Node\]Microsoft\Cryptography\OID\EncodingType 0\CryptSIPDllVerifyIndirectData\{SIP_GUID}` that point to the DLL providing a SIP’s `CryptSIPDllVerifyIndirectData` function, which validates a file’s computed hash against the signed hash value. By pointing to a maliciously-crafted DLL with an exported function that always returns TRUE (indicating that the validation was successful), an adversary can successfully validate any file (with a legitimate signature) using that SIP6 (with or without hijacking the previously mentioned `CryptSIPDllGetSignedDataMsg` function). This Registry value could also be redirected to a suitable exported function from an already present DLL, avoiding the requirement to drop and execute a new file on disk.
+    	* Modifying the `DLL` and `Function` Registry values in `HKLM\SOFTWARE\[WOW6432Node\]Microsoft\Cryptography\Providers\Trust\FinalPolicy\{trust provider GUID}` that point to the DLL providing a trust provider’s FinalPolicy function, which is where the decoded and parsed signature is checked and the majority of trust decisions are made. Similar to hijacking SIP’s `CryptSIPDllVerifyIndirectData` function, this value can be redirected to a suitable exported function from an already present DLL or a maliciously-crafted DLL (though the implementation of a trust provider is complex).
+    	* Note: The above hijacks are also possible without modifying the Registry via DLL Search Order Hijacking.
+	* Hijacking SIP or trust provider components can also enable persistent code execution, since these malicious components may be invoked by any application that performs code signing or signature validation.
 
 
 
@@ -619,6 +698,15 @@ Netsh Helper DLL
 * [System Firmware - ATT&CK](https://attack.mitre.org/wiki/Technique/T1019)
 	* The BIOS (Basic Input/Output System) and The Unified Extensible Firmware Interface (UEFI) or Extensible Firmware Interface (EFI) are examples of system firmware that operate as the software interface between the operating system and hardware of a computer.Wikipedia BIOSWikipedia UEFIAbout UEFI System firmware like BIOS and (U)EFI underly the functionality of a computer and may be modified by an adversary to perform or assist in malicious activity. Capabilities exist to overwrite the system firmware, which may give sophisticated adversaries a means to install malicious firmware updates as a means of persistence on a system that may be difficult to detect.
 
+
+
+
+-------------------------------
+## Time Providers
+* [Time Providers - ATT&CK](https://attack.mitre.org/wiki/Technique/T1209)
+	* The Windows Time service (W32Time) enables time synchronization across and within domains. W32Time time providers are responsible for retrieving time stamps from hardware/network resources and outputting these values to other network clients.
+	* Time providers are implemented as dynamic-link libraries (DLLs) that are registered in the subkeys of `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\W32Time\TimeProviders\`. The time provider manager, directed by the service control manager, loads and starts time providers listed and enabled under this key at system startup and/or whenever parameters are changed.
+	* Adversaries may abuse this architecture to establish Persistence, specifically by registering and enabling a malicious DLL as a time provider. Administrator privileges are required for time provider registration, though execution will run in context of the Local Service account.
 
 
 

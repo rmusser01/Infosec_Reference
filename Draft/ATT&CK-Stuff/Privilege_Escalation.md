@@ -52,6 +52,19 @@
 
 
 -------------------------------
+## AppCert DLLs
+* [AppCert DLLs - ATT&CK](https://attack.mitre.org/wiki/Technique/T1182)
+	* Dynamic-link libraries (DLLs) that are specified in the AppCertDLLs value in the Registry key HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Session Manager are loaded into every process that calls the ubiquitously used application programming interface (API) functions:1
+	* CreateProcess
+	* CreateProcessAsUser
+	* CreateProcessWithLoginW
+	* CreateProcessWithTokenW
+	* WinExec
+		* Similar to Process Injection, this value can be abused to obtain persistence and privilege escalation by causing a malicious DLL to be loaded and run in the context of separate processes on the computer. 
+
+
+
+-------------------------------
 ## AppInit DLLs
 * [AppInit DLLs - ATT&CK](https://attack.mitre.org/wiki/Technique/T1103)
 	* DLLs that are specified in the AppInit_DLLs value in the Registry key HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\Windows are loaded by user32.dll into every process that loads user32.dll. In practice this is nearly every program. This value can be abused to obtain persistence by causing a DLL to be loaded into most processes on the computer.AppInit Registry The AppInit DLL functionality is disabled in Windows 8 and later versions when secure boot is enabled.AppInit Secure Boot
@@ -158,9 +171,9 @@
 
 
 
-
-## Dylib Hijacking
 ---------------
+## Dylib Hijacking
+
 * [Dylib Hijacking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1157)
 	* macOS and OS X use a common method to look for required dynamic libraries (dylib) to load into a program based on search paths. Adversaries can take advantage of ambiguous paths to plant dylibs to gain privilege escalation or persistence. 
 	* A common method is to see what dylibs an application uses, then plant a malicious version with the same name higher up in the search path. This typically results in the dylib being in the same folder as the application itselfWriting Bad Malware for OSXMalware Persistence on OS X. 
@@ -172,45 +185,32 @@
 
 
 
-
--------------------------------
-## Exploitation of Vulnerability
-* [Exploitation of Vulnerability - ATT&CK](https://attack.mitre.org/wiki/Technique/T1068)
-	* Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Exploiting software vulnerabilities may allow adversaries to run a command or binary on a remote system for lateral movement, escalate a current process to a higher privilege level, or bypass security mechanisms. Exploits may also allow an adversary access to privileged accounts and credentials. One example of this is MS14-068, which can be used to forge Kerberos tickets using domain user permissions.Technet MS14-068ADSecurity Detecting Forged Tickets
-
-#### Linux
-* [unix-privesc-check](https://github.com/pentestmonkey/unix-privesc-check)
-	* Shell script to check for simple privilege escalation vectors on Unix systems. Unix-privesc-checker is a script that runs on Unix systems (tested on Solaris 9, HPUX 11, Various Linuxes, FreeBSD 6.2). It tries to find misconfigurations that could allow local unprivileged users to escalate privileges to other users or to access local apps (e.g. databases).
-* [LinEnum](https://github.com/rebootuser/LinEnum)
-	* Scripted Local Linux Enumeration & Privilege Escalation Checks
-* [linux-exploit-suggester.sh](https://github.com/mzet-/linux-exploit-suggester)
-	* linux-exploit-suggester.sh was inspired by the excellent Linux_Exploit_Suggester script by PenturaLabs. The issue with Pentura's script however is that it isn't up to date anymore (the script was last updated in early 2014) so it lacks some recent Linux kernel exploits. linux-exploit-suggester.sh on the other hand also contains all the latest (as of early 2017) publicly known Linux kernel exploits. It is also capable to identify possible privilege escalation vectors via installed userspace packages and comes with some additional minor features that makes finding right exploit more time efficient.
-* [cve-check-tool - Intel](https://github.com/clearlinux/cve-check-tool)
-	* Original Automated CVE Checking Tool
-* [Linux Kernel Exploitation - xairy github](https://github.com/xairy/linux-kernel-exploitation)
-* [Vuls: Vulnerability Scanner](https://github.com/future-architect/vuls)
-	* Vulnerability scanner for Linux/FreeBSD, agentless, written in golang.
-* [cvechecker](https://github.com/sjvermeu/cvechecker)
-	* The goal of cvechecker is to report about possible vulnerabilities on your system, by scanning a list of installed software and matching results with the CVE database. This is not a bullet-proof method and you will have many false positives (ie: vulnerability is fixed with a revision-release, but the tool isn't able to detect the revision itself), yet it is still better than nothing, especially if you are running a distribution with little security coverage.
-* [kernel-exploits - xairy](https://github.com/xairy/kernel-exploits)
-	* A bunch of proof-of-concept exploits for the Linux kernel
-
-#### OS X
-* [physmem](https://github.com/bazad/physmem)
-	* physmem is a physical memory inspection tool and local privilege escalation targeting macOS up through 10.12.1. It exploits either CVE-2016-1825 or CVE-2016-7617 depending on the deployment target. These two vulnerabilities are nearly identical, and exploitation can be done exactly the same. They were patched in OS X El Capitan 10.11.5 and macOS Sierra 10.12.2, respectively.
-* [macOS High Sierra 10.13.1 insecure cron system](https://m4.rkw.io/blog/macos-high-sierra-10131-insecure-cron-system.html)
-	* Easy root
-* [Exploiting appliances presentation v1.1](https://www.slideshare.net/NCC_Group/exploiting-appliances-presentation-v11vidsremoved)
-* [async_wake](https://github.com/benjibobs/async_wake)
-	* async_wake - iOS 11.1.2 kernel exploit and PoC local kernel debugger by @i41nbeer
-* [IOHIDeous](https://siguza.github.io/IOHIDeous/)
-* [OS X El Capitan - Sinking the S\H/IP - Stefan Esser - Syscan360 - 2016](https://www.syscan360.org/slides/2016_SG_Stefan_Esser_OS_X_El_Capitan_Sinking_The_SHIP.pdf)
-* [ZeroNights / Syscan360 2016] Abusing the Mac Recovery & OS Update Process](https://speakerdeck.com/patrickwardle/syscan360-2016-abusing-the-mac-recovery-and-os-update-process)
-	* Did you know that Macs contain a secondary OS that sits hidden besides OS X? This talk will initially dive into technical details of the Recovery OS, before showing that while on (newer) native hardware Apple verifies this OS, in virtualized environments this may not be the case. Due to this 'flaw' we'll describe how an attacker can infect a virtualized OS X instance with malware that is able to survive a full OS X restore. Though limited to virtual instances, such malware can also abuse this process install itself into SIP'd locations making disinfection far more difficult. It's also worth noting that this attack likely would succeed on older versions of non-virtualized OS X as well.
+---------------
+## Exploitation for Privilege Escalation
+* [Exploitation for Privilege Escalation - ATT&CK](https://attack.mitre.org/wiki/Technique/T1068)
+	* Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Security constructs such as permission levels will often hinder access to information and use of certain techniques, so adversaries will likely need to perform Privilege Escalation to include use of software exploitation to circumvent those restrictions.
+	* When initially gaining access to a system, an adversary may be operating within a lower privileged process which will prevent them from accessing certain resources on the system. Vulnerabilities may exist, usually in operating system components and software commonly running at higher permissions, that can be exploited to gain higher levels of access on the system. This could enable someone to move from unprivileged or user level permissions to SYSTEM or root permissions depending on the component that is vulnerable. This may be a necessary step for an adversary compromising a endpoint system that has been properly configured and limits other privilege escalation methods. 
 
 
-#### Windows
-* [Windows Exploit Suggester](https://github.com/AJMartel/Windows-Exploit-Suggester)
+
+
+
+
+
+
+
+---------------
+## Extra Window Memory Injection
+* [Extra Window Memory Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1181)
+	* Before creating a window, graphical Windows-based processes must prescribe to or register a windows class, which stipulate appearance and behavior (via windows procedures, which are functions that handle input/output of data).1 Registration of new windows classes can include a request for up to 40 bytes of extra window memory (EWM) to be appended to the allocated memory of each instance of that class. This EWM is intended to store data specific to that window and has specific application programming interface (API) functions to set and get its value.
+	* Although small, the EWM is large enough to store a 32-bit pointer and is often used to point to a windows procedure. Malware may possibly utilize this memory location in part of an attack chain that includes writing code to shared sections of the process’s memory, placing a pointer to the code in EWM, then invoking execution by returning execution control to the address in the process’s EWM.
+	* Execution granted through EWM injection may take place in the address space of a separate live process. Similar to Process Injection, this may allow access to both the target process's memory and possibly elevated privileges. Writing payloads to shared sections also avoids the use of highly monitored API calls such as WriteProcessMemory and CreateRemoteThread. More sophisticated malware samples may also potentially bypass protection mechanisms such as data execution prevention (DEP) by triggering a combination of windows procedures and other system functions that will rewrite the malicious payload inside an executable portion of the target process.
+
+
+
+
+
+
 
 
 
@@ -226,6 +226,30 @@
 
 #### Windows
 * [Executable installers are vulnerable^WEVIL (case 7): 7z.exe allows remote code execution with escalation of privilege](http://seclists.org/fulldisclosure/2015/Dec/34)
+
+
+
+
+
+
+----------------------------
+## Hooking
+* [Hooking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1179)
+	* Windows processes often leverage application programming interface (API) functions to perform tasks that require reusable system resources. Windows API functions are typically stored in dynamic-link libraries (DLLs) as exported functions. Hooking involves redirecting calls to these functions and can be implemented via:
+    	* Hooks procedures, which intercept and execute designated code in response to events such as messages, keystrokes, and mouse inputs.12
+    	* Import address table (IAT) hooking, which use modifications to a process’s IAT, where pointers to imported API functions are stored.234
+		* Inline hooking, which overwrites the first bytes in an API function to redirect code flow.254
+	* Similar to Process Injection, adversaries may use hooking to load and execute malicious code within the context of another process, masking the execution while also allowing access to the process's memory and possibly elevated privileges. Installing hooking mechanisms may also provide Persistence via continuous invocation when the functions are called through normal use.
+	* Malicious hooking mechanisms may also capture API calls that include parameters that reveal user authentication credentials for Credential Access.6
+	* Hooking is commonly utilized by Rootkits to conceal files, processes, Registry keys, and other objects in order to hide malware and associated behaviors.7 
+
+* [Hooks Overview - msdn.ms](https://msdn.microsoft.com/library/windows/desktop/ms644959.aspx)
+* [Userland Rootkits: Part 1, IAT hooks - adlice.com](https://www.adlice.com/userland-rootkits-part-1-iat-hooks/)
+* [Dynamic Hooking Techniques: User Mode - matt hillman](https://www.mwrinfosecurity.com/our-thinking/dynamic-hooking-techniques-user-mode/)
+* [Inline Hooking in Windows](https://webcache.googleusercontent.com/search?q=cache:mkBFZwQOVQAJ:https://www.exploit-db.com/docs/17802.pdf+&cd=1&hl=en&ct=clnk&gl=us)
+* [gethooks](https://github.com/jay/gethooks)
+	* GetHooks is a program designed for the passive detection and monitoring of hooks from a limited user account. 
+* [winhook](https://github.com/prekageo/winhook)
 
 
 
@@ -251,21 +275,6 @@
 	*  The plist file permissions must be root:wheel, but the script or program that it points to has no such requirement. So, it is possible for poor configurations to allow an adversary to modify a current Launch Daemon’s executable and gain persistence or Privilege Escalation.
 
 #### OS X
-
-
-
-
-
-
--------------------------------
-## Local Port Monitor
-* [Local Port Monitor - ATT&CK](https://attack.mitre.org/wiki/Technique/T1013)
-	* A port monitor can be set through the AddMonitor API call to set a DLL to be loaded at startup.AddMonitor This DLL can be located in C:\Windows\System32 and will be loaded by the print spooler service, spoolsv.exe, on boot.Bloxham Alternatively, an arbitrary DLL can be loaded if permissions allow writing a fully-qualified pathname for that DLL to `HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors.Bloxham` The spoolsv.exe process also runs under SYSTEM level permissions. Adversaries can use this technique to load malicious code at startup that will persist on system reboot and execute as SYSTEM. 
-
-#### Windows
-* [AddMonitor function](https://msdn.microsoft.com/en-us/library/dd183341)
-
-
 
 
 
@@ -334,6 +343,25 @@ Search Order Hijacking
 
 
 
+
+-------------------------------
+## Port Monitors
+* [Port Monitors - ATT&CK](https://attack.mitre.org/wiki/Technique/T1013)
+	* A port monitor can be set through the AddMonitor API call to set a DLL to be loaded at startup. This DLL can be located in `C:\Windows\System32` and will be loaded by the print spooler service, spoolsv.exe, on boot. The `spoolsv.exe` process also runs under `SYSTEM` level permissions. Alternatively, an arbitrary DLL can be loaded if permissions allow writing a fully-qualified pathname for that DLL to `HKLM\SYSTEM\CurrentControlSet\Control\Print\Monitors`. The Registry key contains entries for the following:
+
+    Local Port
+    Standard TCP/IP Port
+    USB Monitor
+    WSD Port
+
+Adversaries can use this technique to load malicious code at startup that will persist on system reboot and execute as SYSTEM.
+
+#### Windows
+* [AddMonitor function](https://msdn.microsoft.com/en-us/library/dd183341)
+
+
+
+
 -------------------------------
 ## Process Injection
 * [Process Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1055)
@@ -359,6 +387,19 @@ There are multiple approaches to injecting code into a live process. Windows imp
 
 	
 
+
+
+-------------------------------
+## SID-History Injection
+* [SID-History Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1178)
+	* The Windows security identifier (SID) is a unique value that identifies a user or group account. SIDs are used by Windows security in both security descriptors and access tokens. An account can hold additional SIDs in the SID-History Active Directory attribute, allowing inter-operable account migration between domains (e.g., all values in SID-History are included in access tokens).
+	* Adversaries may use this mechanism for privilege escalation. With Domain Administrator (or equivalent) rights, harvested or well-known SID values may be inserted into SID-History to enable impersonation of arbitrary users/groups such as Enterprise Administrators. This manipulation may result in elevated access to local resources and/or access to otherwise inaccessible domains via lateral movement techniques such as Remote Services, Windows Admin Shares, or Windows Remote Management. 
+
+
+
+
+
+
 -------------------------------
 ## Scheduled Tasks
 * [Scheduled Tasks - ATT&CK](https://attack.mitre.org/wiki/Technique/T1053)
@@ -374,6 +415,8 @@ There are multiple approaches to injecting code into a live process. Windows imp
 ## Plist Modification
 [Plist Modification - ATT&CK](https://attack.mitre.org/wiki/Technique/T1150)
 * Property list (plist) files contain all of the information that macOS and OS X uses to configure applications and services. These files are UT-8 encoded and formatted like XML documents via a series of keys surrounded by < >. They detail when programs should execute, file paths to the executables, program arguments, required OS permissions, and many others. plists are located in certain locations depending on their purpose such as /Library/Preferences (which execute with elevated privileges) and ~/Library/Preferences (which execute with a user's privileges). Adversaries can modify these plist files to point to their own code, can use them to execute their code in the context of another user, bypass whitelisting procedures, or even use them as a persistence mechanism.mand to Schedule Tasks - MS](https://support.microsoft.com/en-us/help/313565/how-to-use-the-at-command-to-schedule-tasks)
+
+
 
 
 
@@ -417,6 +460,13 @@ There are multiple approaches to injecting code into a live process. Windows imp
 * [SID-History attribute - msdn.ms](https://msdn.microsoft.com/library/ms679833.aspx)
 * [Well-known security identifiers in Windows operating systems](https://support.microsoft.com/en-us/help/243330/well-known-security-identifiers-in-windows-operating-systems)
 
+
+
+
+
+
+
+
 ------------------------------- 
 ## Startup Items
 * [Startup Items - ATT&CK](https://attack.mitre.org/wiki/Technique/T1165)
@@ -438,6 +488,15 @@ There are multiple approaches to injecting code into a live process. Windows imp
 * [sudo - Wikipedia](https://en.wikipedia.org/wiki/Sudo)
 
 
+
+
+
+------------------------------- 
+## Sudo Caching
+* [Sudo Caching - ATT&CK](https://attack.mitre.org/wiki/Technique/T1206)
+	* The sudo command "allows a system administrator to delegate authority to give certain users (or groups of users) the ability to run some (or all) commands as root or another user while providing an audit trail of the commands and their arguments" . Since sudo was made for the system administrator, it has some useful configuration features such as a `timestamp_timeout` that is the amount of time in minutes between instances of `sudo` before it will re-prompt for a password. This is because sudo has the ability to cache credentials for a period of time. Sudo creates (or touches) a file at `/var/db/sudo` with a timestamp of when sudo was last run to determine this timeout. Additionally, there is a `tty_tickets` variable that treats each new tty (terminal session) in isolation. This means that, for example, the sudo timeout of one tty will not affect another tty (you will have to type the password again).
+	* Adversaries can abuse poor configurations of this to escalate privileges without needing the user's password. `/var/db/sudo`'s timestamp can be monitored to see if it falls within the `timestamp_timeout` range. If it does, then malware can execute sudo commands without needing to supply the user's password. Combined with `tty_tickets` being disabled, means adversaries can do this from any tty for that user.
+	* The OSX Proton Malware has disabled `tty_tickets` to potentially make scripting easier by issuing echo `\'Defaults !tty_tickets\' >> /etc/sudoers`. In order for this change to be reflected, the Proton malware also must issue `killall Terminal`. As of macOS Sierra, the sudoers file has `tty_tickets` enabled by default. 
 
 
 

@@ -55,12 +55,6 @@
 
 
 -------------------------------
-## Browser Extensions
-* [Browser Extensions - ATT&CK](https://attack.mitre.org/wiki/Technique/T1176)
-	* Browser extensions or plugins are small programs that can add functionality and customize aspects of internet browsers. They can be installed directly or through a browser's app store. Extensions generally have access and permissions to everything that the browser can access.12 
-
-
--------------------------------
 ## Clipboard Data
 * [Clipboard Data - ATT&CK](https://attack.mitre.org/wiki/Technique/T1115)
 	* Adversaries may collect data stored in the Windows clipboard from users copying information within or between applications. 
@@ -85,6 +79,26 @@
 * [Data Staged - ATT&CK](https://attack.mitre.org/wiki/Technique/T1074)
 	* Collected data is staged in a central location or directory prior to Exfiltration. Data may be kept in separate files or combined into one file through techniques such as Data Compressed or Data Encrypted. Interactive command shells may be used, and common functionality within cmd and bash may be used to copy data into a staging location.
 
+
+
+-------------------------------
+## Data from Information Repositories
+* [Data from Information Repositories - ATT&CK](https://attack.mitre.org/wiki/Technique/T1213)
+	* Adversaries may leverage information repositories to mine valuable information. Information repositories are tools that allow for storage of information, typically to facilitate collaboration or information sharing between users, and can store a wide variety of data that may aid adversaries in further objectives, or direct access to the target information.
+	* The following is a brief list of example information that may hold potential value to an adversary and may also be found on an information repository:
+    	* Policies, procedures, and standards
+    	* Physical / logical network diagrams
+    	* System architecture diagrams
+    	* Technical system documentation
+    	* Testing / development credentials
+    	* Work / project schedules
+    	* Source code snippets
+    	* Links to network shares and other internal resources
+	* Common information repositories:
+		* Microsoft SharePoint
+			* Found in many enterprise networks and often used to store and share significant amounts of documentation.
+		* Atlassian Confluence
+			* Often found in development environments alongside Atlassian JIRA, Confluence is generally used to store development-related documentation.
 
 
 

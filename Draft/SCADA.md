@@ -21,10 +21,6 @@
 #### Sort
 
 
-
-
-
-
 #### End Sort
 
 ----------------------
@@ -40,7 +36,10 @@
 		* Welcome to Control Systems Lectures!  This collection of videos is intended to supplement a first year controls class, not replace it.  My goal is to take specific concepts in controls and expand on them in order to provide an intuitive understanding which will ultimately make you a better controls engineer.  
 	* [plcprofessor - youtube channel](https://www.youtube.com/user/plcprofessor)
 		*  The PLC Professor YouTube Channel is soley dedicated to technical education, specifically industrial control systems and their supporting technologies. The "Complete PLCLearn Series" is comprised of lectures, hands on lab projects and lab project wrap up discussions. The playlists to use for the series are titled "Lectures", "Basics" lab discussions, "Advanced I" lab discussions and "Advanced II" lab discussions. There is also a "Support" playlist for miscellaneous supporting knowledge, "RSLogix5000", "How to Program", as well as many more to come. These lectures and lab projects were developed for actual classroom training and have been improved as hundreds of electricians and engineers completed and commented on the content. 
+	* [Robust control system networks: how to achieve reliable control after Stuxnet / Ralph Langner.](https://catalog.princeton.edu/catalog/9908132)
 	* [Hacking US Traffic Control Systems - Cesar Cerrudo - Defcon22](https://www.defcon.org/images/defcon-22/dc-22-presentations/Cerrudo/DEFCON-22-Cesar-Cerrudo-Hacking-Traffic-Control-Systems-UPDATED.pdf)
+	* [Industrial Control Systems Pattern - opensecurityarchitecture.com](http://www.opensecurityarchitecture.org/cms/en/library/patternlandscape/293-draft-sp-023-industrial-control-systems)
+	* [SCADApedia](https://www.digitalbond.com/wiki)
 * **EDIFACT**
 	* [EDIFACT - Wikipedia](https://en.wikipedia.org/wiki/EDIFACT)
 	* [SMDG.org](http://www.smdg.org/)

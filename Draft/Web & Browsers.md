@@ -1,5 +1,6 @@
 # Web, Web Applications & Browsers
 
+(#file-upload)
 Web TOC
 * [General](#general)
 * [Purposely Vulnerable Web Apps](#pvuln)
@@ -39,19 +40,25 @@ Web TOC
 * [CMS Specific Tools](#cms)
 * [Content Security Policy(CSP)](#csp)
 * [Common Origin Resource Sharing (CORS)](#cors)
+* [Cold Fusion](#coldfusion)
+* [Continous Integration/Build Systems](#cii)
 * [Cross-Site History Manipulation (XHSM)](#xhsm)
+* [Electron](#electron)
 * [HTML5](#html5)
 * [HTTP Methods](#httpmethods)
 * [Javascript](#javascript)
 * [Java Server Faces](#jsf)
 * [Java Server Pages](#jsp)
-* [REST & Web Services](#rest)
+* [MIME Sniffing](#mime)
+	* [NodeJS](#nodejs)
 * [PHP](#php)
+* [REST & Web Services](#rest)
 * [Ruby](#ruby)
 * [Scraping](#scraping)
 * [Site/WebApp Scanners](#scanners)
 * [SubResource Integrity](#sri)
-* []()
+* [Flash/SWF](#swf)
+* [TLS Redirection/VirtualHost Confusion](#tls-redirect)
 * [Web Sockets](#websocket)
 * [Web Proxies](#webproxy)
 * [Web Application Firewalls(WAFs)](#waf)
@@ -89,14 +96,14 @@ Web TOC
 	* webrtc
 	* XML
 
-
+* [Enteletaor](https://github.com/cr0hn/enteletaor)
+	* Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.
 * [Web Application Defaults DB(2013)](https://github.com/pwnwiki/webappdefaultsdb)
 * [Hacking with Pictures - Syscan2015](http://www.slideshare.net/saumilshah/hacking-with-pictures-syscan-2015)
 * [File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
 
 https://github.com/toddmotto/public-apis
-https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-and-templating-frameworks/15-Keep_pokinCanJS_for_examplescript_srcjquery203minjsscriptscript
-* [Continuous Security - In the DevOps World - Julien Vehent](https://jvehent.github.io/continuous-security-talk/#/)
+
 
 #### End Sort
 
@@ -107,6 +114,7 @@ https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-
 * **101**
 * **Cheat Sheets**
 	* [Attack Surface Analysis Cheat Sheet](https://www.owasp.org/index.php/Attack_Surface_Analysis_Cheat_Sheet)
+	* [Web Application Penetration Testing Cheat Sheet - jdow.io](https://jdow.io/blog/2018/03/18/web-application-penetration-testing-methodology/)
 * **Documentation**
 	* [DOM - Standard](https://dom.spec.whatwg.org/)
 	* [DOM Living Standard](https://dom.spec.whatwg.org/)
@@ -115,6 +123,7 @@ https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-
 	* [Web IDL Standards](https://heycam.github.io/webidl/)
 	* [Object MetaInformation](https://www.w3.org/Protocols/HTTP/Object_Headers.html#public)
 * **Educational**
+	* [Continuous Security - In the DevOps World - Julien Vehent](https://jvehent.github.io/continuous-security-talk/#/)
 	* [Practical tips for defending web  applications in the age of agile/DevOps - Zane Lackey](https://www.blackhat.com/docs/us-17/thursday/us-17-Lackey-Practical%20Tips-for-Defending-Web-Applications-in-the-Age-of-DevOps.pdf)
 	* [The Tale of a Fameless but Widespread Web Vulnerability Class - Veit Hailperin](https://www.youtube.com/watch?v=5qA0CtS6cZ4)
 		* Two keys components account for finding vulnerabilities of a certain class: awareness of the vulnerability and ease of finding the vulnerability. Cross-Site Script Inclusion (XSSI) vulnerabilities are not mentioned in the de facto standard for public attention - the OWASP Top 10. Additionally there is no public tool available to facilitate finding XSSI. The impact reaches from leaking personal information stored, circumvention of token-based protection to complete compromise of accounts. XSSI vulnerabilities are fairly wide spread and the lack of detection increases the risk of each XSSI. In this talk we are going to demonstrate how to find XSSI, exploit XSSI and also how to protect against XSSI.
@@ -143,6 +152,8 @@ https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-
 	* [Big List of Naughty Strings](https://github.com/minimaxir/big-list-of-naughty-strings)
 		* The Big List of Naughty Strings is an evolving list of strings which have a high probability of causing issues when used as user-input data. This is intended for use in helping both automated and manual QA testing; useful for whenever your QA engineer walks into a bar.
 	* [Browser Security White Paper - Cure53](https://browser-security.x41-dsec.de/X41-Browser-Security-White-Paper.pdf)
+	* [OWASP Testing Checklist(OTGv4)](https://github.com/tanprathan/OWASP-Testing-Checklist)
+		* OWASP based Web Application Security Testing Checklist is an Excel based checklist which helps you to track the status of completed and pending test cases. This checklist is completely based on OWASP Testing Guide v 4. The OWASP Testing Guide includes a “best practice” penetration testing framework which users can implement in their own organizations and a “low level” penetration testing guide that describes techniques for testing most common web application security issues. Moreover, the checklist also contains OWASP Risk Assessment Calculator and Summary Findings template.
 * **Interesting Attacks that don't fit elsewhere**
 	* [Typosquatting programming language package managers](http://incolumitas.com/2016/06/08/typosquatting-package-managers/)
 	* [Self-Exfiltration: The Dangers of Browser-Enforced Information Flow Control](http://ericchen.me/self_exfiltration.pdf)
@@ -175,7 +186,6 @@ https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-
 	* [OWASP Testing Checklist](https://www.owasp.org/index.php/Testing_Checklist)
 	* [WebAppSec Testing Checklist](http://tuppad.com/blog/wp-content/uploads/2012/03/WebApp_Sec_Testing_Checklist.pdf)
 	* [OWASP Web Application Security Testing Cheat Sheet](https://www.owasp.org/index.php/Web_Application_Security_Testing_Cheat_Sheet)
-
 * **Securing**
 	* [Center for Internet Security Apache Server 2.4 Hardening Guide](https://benchmarks.cisecurity.org/tools2/apache/CIS_Apache_HTTP_Server_2.4_Benchmark_v1.1.0.pdf)
 	* [Securing Web Application Technologies Checklist](http://www.securingthehuman.org/developer/swat)
@@ -299,12 +309,21 @@ https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-
 	* A tool for testing continuous integration (CI) or continuous delivery (CD) system security
 * [Exploiting Continuous Integration (CI) and Automated Build Systems - spaceb0x](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-spaceB0x-Exploiting-Continuous-Integration.pdf)
 
+
+
+
+
 ------------------
 #### <a name="csv"></a> CSV Injection
 * [From CSV to CMD to qwerty](http://www.exploresecurity.com/from-csv-to-cmd-to-qwerty/)
 * [Comma Separated Vulnerabilities](https://www.contextis.com/blog/comma-separated-vulnerabilities)
 	* This post introduces Formula Injection, a technique for exploiting ‘Export to Spreadsheet’ functionality in web applications to attack users and steal spreadsheet contents. It also details a command injection exploit for Apache OpenOffice and LibreOffice that can be delivered using this technique.
 * [The Absurdly Underestimated Dangers of CSV Injection](http://georgemauer.net/2017/10/07/csv-injection.html)
+
+
+
+
+
 
 
 ----------------
@@ -321,7 +340,17 @@ https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-
 	* [OWASP CSRFGuard](https://www.owasp.org/index.php/Category:OWASP_CSRFGuard_Project)
 	* [OWASP CSRFTester](https://www.owasp.org/index.php/Category:OWASP_CSRFTester_Project)
 	* [](https://code.google.com/archive/p/pinata-csrf-tool/)
+* **Onsite-Request-Forgery**
+	* [On-Site Request Forgery - PortSwigger](http://blog.portswigger.net/2007/05/on-site-request-forgery.html)
+	* [On-site Request Forgery - cm2.pw](https://blog.cm2.pw/on-site-request-forgery/)
 
+----------------
+#### <a name="cswsh"></a>Cross Site WebSocket Hijacking
+* **101**
+	* [Cross-Site WebSocket Hijacking (CSWSH)](https://www.christian-schneider.net/CrossSiteWebSocketHijacking.html)
+* **Articles/Blogposts/Presentations/Talks/Videos**
+	* [How Cross-Site WebSocket Hijacking could lead to full Session Compromise](https://www.notsosecure.com/how-cross-site-websocket-hijacking-could-lead-to-full-session-compromise/)
+* **Tools**
 
 
 ----------------
@@ -369,28 +398,6 @@ https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-
 
 
 
-
-
-----------------
-#### Electron
-* **Articles**
-	* [From Markdown to RCE in Atom](https://statuscode.ch/2017/11/from-markdown-to-rce-in-atom/)
-* **Documentation**
-	* [Electron Documentation](https://electronjs.org/docs)
-	* [Security, Native Capabilities, and Your Responsibility - Electron Documentation](https://electron.atom.io/docs/tutorial/security/)
-* **Talks**
-	* [MarkDoom: How I Hacked Every Major IDE in 2 Weeks - Matt Austin, LevelUp 2017](https://www.youtube.com/watch?v=nnEnwJbiO-A)
-* [As It Stands - Electron Security - 2016](http://blog.scottlogic.com/2016/03/09/As-It-Stands-Electron-Security.html)
-* [As It Stands - Update on Electorn Security - 2016](http://blog.scottlogic.com/2016/06/01/An-update-on-Electron-Security.html)
-* [Modern Alchemy: Turning XSS into RCE](https://blog.doyensec.com/2017/08/03/electron-framework-security.html)
-* [Electron - Build cross platform desktop XSS, it’s easier than you think by Yosuke Hasegawa - [CB16] ](https://www.youtube.com/watch?v=-j1DPPf9Z4U)
-* [Electronegativity - A Study of Electron Security - Carettoni](https://www.blackhat.com/docs/us-17/thursday/us-17-Carettoni-Electronegativity-A-Study-Of-Electron-Security.pdf)
-* [Build cross platform desktop XSS, it’s easier than you think by Yosuke Hasegawa - CodeBlue16](https://www.slideshare.net/codeblue_jp/cb16-hasegawa-en)
-* [Electron Security Checklist - A guide for developers and auditors - Luca Carettoni](https://www.blackhat.com/docs/us-17/thursday/us-17-Carettoni-Electronegativity-A-Study-Of-Electron-Security-wp.pdf)
-
-
-
-
 ------------------
 #### <a name="ear">Execution After(/Open) Redirect (EAR)
 * **Execution After Redirect**
@@ -404,7 +411,7 @@ https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-
 
 
 ------------
-#### File Upload Testing
+#### <a name="file-upload"></a>File Upload Testing
 * [fuxploider](https://github.com/almandin/fuxploider)
 	* File upload vulnerability scanner and exploitation tool.
 * [Unrestricted File Upload Testing](https://www.aptive.co.uk/blog/unrestricted-file-upload-testing/)
@@ -498,36 +505,6 @@ https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-
 
 
 
-
-
-
-
--------------------
-### <a name="jwt"></a>JSON Web Tokens
-* **101**
-	* [JSON Web Token - Wikipedia](https://en.wikipedia.org/wiki/JSON_Web_Token)
-	* [RFC 7159: JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519)
-	* [The Anatomy of a JSON Web Token](https://scotch.io/tutorials/the-anatomy-of-a-json-web-token)
-	* [Introduction to JSON Web Tokens](https://jwt.io/introduction/) 
-* **General**
-	* [JWT Handbook - Auth0](https://auth0.com/resources/ebooks/jwt-handbook)
-	* [Friday the 13th: JSON Attacks - Defcon25](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-Alvaro-Munoz-JSON-attacks.pdf)
-	* [Critical vulnerabilities in JSON Web Token libraries - 2015](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/)
-* **Testing**
-	* [Attacking JWT authentication](https://www.sjoerdlangkemper.nl/2016/09/28/attacking-jwt-authentication/)
-	* [Fuzzing JSON Web Services - Simple guide how to fuzz JSON web services properly - secapps](https://secapps.com/blog/2018/03/fuzzing-json-web-services)
-* **Tools**
-	* [json token decode](http://jwt.calebb.net/)
-	* [JWT Inspector - FF plugin](https://www.jwtinspector.io/)
-		* JWT Inspector is a browser extension that lets you decode and inspect JSON Web Tokens in requests, cookies, and local storage. Also debug any JWT directly from the console or in the built-in UI.
-	* [c-jwt-cracker ](https://github.com/brendan-rius/c-jwt-cracker)
-* **Writeups**
-	* [How to configure Json.NET to create a vulnerable web API - alphabot](https://www.alphabot.com/security/blog/2017/net/How-to-configure-Json.NET-to-create-a-vulnerable-web-API.html)
-	* [🔐 Learn how to use JSON Web Token (JWT) to secure your next Web App! (Tutorial/Example with Tests!!)](https://github.com/dwyl/learn-json-web-tokens)
-	* [Critical vulnerabilities in JSON Web Token libraries](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/)
-	* [Brute Forcing HS256 is Possible: The Importance of Using Strong Keys in Signing JWTs](https://auth0.com/blog/brute-forcing-hs256-is-possible-the-importance-of-using-strong-keys-to-sign-jwts/)
-
-
 -------------------
 ### <a name="lrfi">LFI & RFI</a>
 * **101**
@@ -552,26 +529,6 @@ https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-
 	* [psychoPATH - LFI](https://github.com/ewilded/psychoPATH/blob/master/README.md)
 		* This tool is a highly configurable payload generator detecting LFI & web root file uploads. Involves advanced path traversal evasive techniques, dynamic web root list generation, output encoding, site map-searching payload generator, LFI mode, nix & windows support plus single byte generator.
 
-
-
-
-
-
-
--------------------
-### NodeJS
-* **101**
-* **Educational**
-	* [A Roadmap for Node.js Security](https://nodesecroadmap.fyi/)	
-	* [NodeGoat](https://github.com/OWASP/NodeGoat)
-		* Being lightweight, fast, and scalable, Node.js is becoming a widely adopted platform for developing web applications. This project provides an environment to learn how OWASP Top 10 security risks apply to web applications developed using Node.js and how to effectively address them.
-* **Articles/Blogposts/Presentations/Talks/Writeups**	
-	* [Reverse shell on a Node.js application](https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/)
-	* [NodeJS: Remote Code Execution as a Service - Peabnuts123 – Kiwicon 2016](https://www.youtube.com/watch?v=Qvtfagwlfwg)
-		* [SLIDES](http://archivedchaos.com/post/153372061089/kiwicon-2016-slides-upload)
-* **Tools**
-	* [faker.js](https://github.com/Marak/faker.js)
-		* generate massive amounts of fake data in Node.js and the browser
 
 -------------------
 ### <a name="sql"></a>(No)SQL Injection
@@ -642,6 +599,20 @@ https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-
 * [Paper](https://drive.google.com/file/d/0B0KLoHg_gR_XQnV4RVhlNl96MHM/view)
 
 
+
+----------------
+### <a name="rpo"></a>Relative Path Overwrite
+* **101**
+	* [Relative Path Overwrite Explanation/Writeup](http://www.thespanner.co.uk/2014/03/21/rpo/)
+		* RPO (Relative Path Overwrite) is a technique to take advantage of relative URLs by overwriting their target file. To understand the technique we must first look into the differences between relative and absolute URLs. An absolute URL is basically the full URL for a destination address including the protocol and domain name whereas a relative URL doesn’t specify a domain or protocol and uses the existing destination to determine the protocol and domain.
+* **Articles/Papers/Talks/Writeups**
+	* [A few RPO exploitation techniques - Takeshi Terada](https://www.mbsd.jp/Whitepaper/rpo.pdf)
+	* [Non-Root-Relative Path Overwrite (RPO) in IIS and .Net applications - soroush.techproject](https://soroush.secproject.com/blog/tag/non-root-relative-path-overwrite/)
+* **General**
+* **Tools**
+* **Miscellaneous**
+
+
 -------------
 ### <a name="ssrf"></a>Server Side Request Forgery (SSRF)
 * **101**
@@ -706,39 +677,6 @@ https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-
 		* Code and Server-Side Template Injection Detection and Exploitation Tool
 	* [Templates Injections - PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20injections)
 
-----------------
-### <a name="sri"></a> Subresource Integrity
-* **General**
-	* [Subresource Integrity - W3C](https://www.w3.org/TR/SRI/)
-	* [Subresource Integrity - Mozilla](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
-	* [Subresource Integrity (SRI) for Validating Web Resources Hosted on Third Party Services (CDNs) - Netsparker](https://www.netsparker.com/blog/web-security/subresource-integrity-SRI-security/)
-	* [SRI Hash Generator](https://www.srihash.org/)
-
-----------------
-### <a name="swf"></a>SWF
-* **General**
-	* [The old is new, again. CVE-2011-2461 is back!](https://www.slideshare.net/ikkisoft/the-old-is-new-again-cve20112461-is-back)
-		* As a part of an ongoing investigation on Adobe Flash SOP bypass techniques, we identified a vulnerability affecting old releases of the Adobe Flex SDK compiler. Further investigation traced the issue back to a well known vulnerability (CVE20112461), already patched by Adobe. Old vulnerability, let's move on? Not this time. CVE20112461 is a very interesting bug. As long as the SWF file was compiled with a vulnerable Flex SDK, attackers can still use this vulnerability against the latest web browsers and Flash plugin. Even with the most recent updates, vulnerable Flex applications hosted on your domain can be exploited. In this presentation, we will disclose the details of this vulnerability (Adobe has never released all technicalities) and we will discuss how we conducted a large scale analysis on popular websites, resulting in the identification of numerous Alexa Top 50 sites vulnerable to this bug. Finally, we will also release a custom tool and a Burp plugin capable of detecting vulnerable SWF applications. 
-	* Advanced Flash Vulnerabilities in Youtube Writeups Series
-		* [Advanced Flash Vulnerabilities in Youtube – Part 1](https://opnsec.com/2017/08/advanced-flash-vulnerabilities-in-youtube-part-1/)
-		* [Advanced Flash Vulnerabilities in Youtube – Part 2](https://opnsec.com/2017/08/advanced-flash-vulnerabilities-in-youtube-part-2/)
-		* [Advanced Flash Vulnerabilities in Youtube – Part 3](https://opnsec.com/2017/08/advanced-flash-vulnerabilities-in-youtube-part-3/)
-	* [Decode Adobe Flex AMF protocol](http://blog.dornea.nu/2015/06/22/decode-adobe-flex-amf-protocol/)
-* **Securing**
-	* [HardenFlash](https://github.com/HaifeiLi/HardenFlash)
-		* Patching Flash binary to stop Flash exploits and zero-days
-* **Tools**
-	* [ParrotNG](https://github.com/ikkisoft/ParrotNG/releases)
-		* ParrotNG is a Java-based tool for automatically identifying vulnerable SWF files, built on top of swfdump. One JAR, two flavors: command line tool and Burp Pro Passive Scanner Plugin.
-	[deblaze](http://blog.dornea.nu/2015/06/22/decode-adobe-flex-amf-protocol/)
-		* Performs method enumeration and interrogation against flash remoting end points.
-
-
-
-
-
-
-
 
 
 -------------------
@@ -756,17 +694,7 @@ fuse.ca/race-conditions-in-web-applications.htm)
 
 
 
--------------------
-### Web Hooks
-* [Webhooks - pbworks](https://webhooks.pbworks.com/w/page/13385124/FrontPage)
-* [WebHook - Wikipedia](https://en.wikipedia.org/wiki/Webhook)
-* [Abusing Webhooks for Command and Control - Dimitry Snezhkov - BSides LV 2017](https://www.youtube.com/watch?v=TmLoTrJuung)
-	* [octohook](https://github.com/dsnezhkov/octohook)
-
-
-
-
--------------------
+------------------
 ### <a name="shells">Web Shells</a>
 * **Articles**
 * **Detection**
@@ -794,8 +722,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 -------------------
 ### <a name="xss">XSS</a>
 * **101**
-	* [3 Types of XSS](https://www.owasp.org/index.php/Types_of_Cross-Site_Scripting)
-		* Reflected, Persistent, DOM-based
+	* [Types of Cross-Site Scripting - OWASP](https://www.owasp.org/index.php/Types_of_Cross-Site_Scripting)
+		* 3 Main ones are: Reflected, Persistent, DOM-based
 * **General**
 	* [XSS bypass strtoupper & htmlspecialchars](https://security.stackexchange.com/questions/145716/xss-bypass-strtoupper-htmlspecialchars)
 	* [Is htmlspecialchars enough to prevent an SQL injection on a variable enclosed in single quotes? - StackOverflow](https://stackoverflow.com/questions/22116934/is-htmlspecialchars-enough-to-prevent-an-sql-injection-on-a-variable-enclosed-in)
@@ -805,6 +733,13 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [XSS Web Filter Bypass list - rvrsh3ll](https://gist.github.com/rvrsh3ll/09a8b933291f9f98e8ec#file-xxsfilterbypass-lst-L1)
 	* [Scriptless Attacks – Stealing the Pie Without Touching the Sill](http://www.syssec.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf)
 		* Due to their high practical impact, Cross-Site Scripting (XSS) attacks have attracted a lot of attention from the security community members. In the same way, a plethora of more or less effective defense techniques have been proposed, addressing the causes and effects of XSS vulnerabilities. As a result, an adversary often can no longer inject or even execute arbitrary scripting code in several real-life scenarios. In this paper, we examine the attack surface that remains after XSS and similar scripting attacks are supposedly mitigated by preventing an attacker from executing JavaScript code. We address the question of whether an attacker really needs JavaScript or similar functionality to perform attacks aiming for information theft. The surprising result is that an attacker can also abuse Cascading Style Sheets (CSS) in combination with other Web techniques like plain HTML, inactive SVG images or font files. Through several case studies, we introduce the so called scriptless attacks and demonstrate that an adversary might not need to execute code to preserve his ability to extract sensitive informati on from well protected websites. More precisely, we show that an attacker can use seemingly benign features to build side channel attacks that measure and exfiltrate almost arbitrar y data displayed on a given website. We conclude this paper with a discussion of potential mitigation techniques against this class of attacks. In addition, we have implemented a browser patch that enables a website to make a vital determination as to being loaded in a detached view or pop-up window. This approach proves useful for prevention of certain types of attacks we here discuss.
+* **Mutation XSS**
+	* [What is mutation XSS (mXSS)? - StackOverflow](https://security.stackexchange.com/questions/46836/what-is-mutation-xss-mxss)
+	* [How mXSS attacks change everything we believed to know so far - Mario Heiderich - OWASP AppSec EU 2013](https://www.youtube.com/watch?v=Haum9UpIQzU)
+	* [mXSS - TheSpanner](http://www.thespanner.co.uk/2014/05/06/mxss/)
+	* [Exploiting the unexploitable with lesser known browser tricks - filedescriptor](https://speakerdeck.com/filedescriptor/exploiting-the-unexploitable-with-lesser-known-browser-tricks)
+	* [Running Your Instance of Burp Collaborator Server - blog.fabiopires.pt](https://blog.fabiopires.pt/running-your-instance-of-burp-collaborator-server/)
+	* [Piercing the Veil: Server Side Request Forgery to NIPRNet access](https://web.archive.org/web/20180410080115/https://medium.com/bugbountywriteup/piercing-the-veil-server-side-request-forgery-to-niprnet-access-171018bca2c3)
 * **Testing**
 	* [XSS Test String Dump](https://github.com/zsitro/XSS-test-dump/blob/master/xss.txt)
 	* [XSS Filter Bypass List](https://gist.github.com/rvrsh3ll/09a8b933291f9f98e8ec)
@@ -829,7 +764,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* XSStrike is an advanced XSS detection and exploitation suite. 
 * **Writeups**
 	* [Writing an XSS Worm](http://blog.gdssecurity.com/labs/2013/5/8/writing-an-xss-worm.html)
-
+	* [XSS without HTML: Client-Side Template Injection with AngularJS](https://portswigger.net/blog/xss-without-html-client-side-template-injection-with-angularjs)
+	* [XSS in AngularJS video series (walkthrough) - explaining some AngularJS sandbox bypasses, which resulted in the removal of the sandbox in 1.6](https://www.reddit.com/r/angularjs/comments/557bhr/xss_in_angularjs_video_series_walkthrough/)
 
 
  
@@ -846,15 +782,16 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [WebSocket API Standards](https://www.w3.org/TR/2011/WD-websockets-20110929/)
 	* [White House Web API Standards](https://github.com/WhiteHouse/api-standards)
 		* This document provides guidelines and examples for White House Web APIs, encouraging consistency, maintainability, and best practices across applications. White House APIs aim to balance a truly RESTful API interface with a positive developer experience (DX).
+	* [Build Simple Restful Api With Python and Flask Part 1 - Mukhammad Ginanjar Azie](https://medium.com/python-pandemonium/build-simple-restful-api-with-python-and-flask-part-1-fae9ff66a706)
 * **Securing**
-	* [RESTful API Best Practices and Common Pitfalls](https://medium.com/@schneidenbach/restful-api-best-practices-and-common-pitfalls-7a83ba3763b5)
 	* [OWASP API Security Project](https://www.owasp.org/index.php/OWASP_API_Security_Project)
 	* [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist/)
 		* Checklist of the most important security countermeasures when designing, testing, and releasing your API
 * **Tools**
 	* [Postman - chrome plugin](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
 	* [restclient - Firefox addon](https://addons.mozilla.org/de/firefox/addon/restclient/)
-
+	* [Astra](https://github.com/flipkart-incubator/Astra)
+		* REST API penetration testing is complex due to continuous changes in existing APIs and newly added APIs. Astra can be used by security engineers or developers as an integral part of their process, so they can detect and patch vulnerabilities early during development cycle. Astra can automatically detect and test login & logout (Authentication API), so it's easy for anyone to integrate this into CICD pipeline. Astra can take API collection as an input so this can also be used for testing apis in standalone mode.
 
 
 
@@ -883,7 +820,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [BeEF Browser Exploitation Framework](http://beefproject.com/)
 	* [BeEF](https://github.com/beefproject/beef)
 		* Amid growing concerns about web-borne attacks against clients, including mobile clients, BeEF allows the professional penetration tester to assess the actual security posture of a target environment by using client-side attack vectors. Unlike other security frameworks, BeEF looks past the hardened network perimeter and client system, and examines exploitability within the context of the one open door: the web browser. BeEF will hook one or more web browsers and use them as beachheads for launching directed command modules and further attacks against the system from within the browser context.
-
+	* [Browsers Gone Wild - Angelo Prado & Xiaoran Wang - BHAsia2015](https://www.youtube.com/watch?v=nsjCQlEsgW8)
+		* In this talk, we will demonstrate and unveil the latest developments on browser specific weaknesses including creative new mechanisms to compromise confidentiality, successfully perform login and history detection, serve mixed content, deliver malicious ghost binaries without a C&C server, exploit cache/timing side channels to extract secrets from third-party domains, and leverage new HTML5 features to carry out more stealthy attacks. This is a practical presentation with live demos that will challenge your knowledge of the Same Origin Policy and push the limits of what is possible with today's web clients.
 
 -----------
 ### <a name="ct">Certificate Transparency</a>
@@ -945,9 +883,14 @@ fuse.ca/race-conditions-in-web-applications.htm)
 ### <a name="cors"></a> Cross-Origin Resource Sharing (CORS)
 * **101**
 	* [Cross-Origin Resource Sharing (CORS) - Mozilla Dev Docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+	* [CORS Findings: Another Way to Comprehend - Ryan Leese](https://www.trustedsec.com/2018/04/cors-findings/)
+	* [Same Origin Policy - dev.mozilla](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)
+	* [Same Origin Policy - W3C](https://www.w3.org/Security/wiki/Same_Origin_Policy)
+	* [Cross-Origin Resource Sharing (CORS) - dev.mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
 * **Articles/Papers/Talks/Writeups**
 	* [Exploiting CORS Misconfigurations For Bitcoins And Bounties by James Kettle](https://www.youtube.com/watch?v=wgkj4ZgxI4c)
 		*  Cross-Origin Resource Sharing (CORS) is a mechanism for relaxing the Same Origin Policy to enable communication between websites via browsers. It's already widely understood that certain CORS configurations are dangerous. In this presentation, I'll skim over the old knowledge then coax out and share with you an array of under-appreciated but dangerous subtleties and implications buried in the CORS specification. I'll illustrate each of these with recent attacks on real websites, showing how I could have used them to steal bitcoins from two different exchanges, partially bypass Google's use of HTTPS, and requisition API keys from numerous others. I'll also show how CORS blunders can provide an invaluable link in crafting exploit chains to pivot across protocols, exploit the unexploitable via server and client-side cache poisoning, and even escalate certain open redirects into vulnerabilities that are actually notable.
+		* [Blogpost](http://blog.portswigger.net/2016/10/exploiting-cors-misconfigurations-for.html)
 * **General**
 * **Tools**
 	* [CORStest](https://github.com/RUB-NDS/CORStest/blob/master/README.md)
@@ -958,16 +901,35 @@ fuse.ca/race-conditions-in-web-applications.htm)
 
 
 
+
+
 --------------
-### ColdFusion
+### <a name="coldfusion"></a> ColdFusion
 * [Attacking Adobe ColdFusion](http://jumpespjump.blogspot.com/2014/03/attacking-adobe-coldfusion.html)
 * [ColdFusion Security Resources](https://www.owasp.org/index.php/ColdFusion_Security_Resources)
 * [ColdFusion for Penetration Testers](http://www.slideshare.net/chrisgates/coldfusion-for-penetration-testers)
 
 
+----------------
+#### <a name="electron"></a>Electron
+* **Articles**
+	* [From Markdown to RCE in Atom](https://statuscode.ch/2017/11/from-markdown-to-rce-in-atom/)
+* **Documentation**
+	* [Electron Documentation](https://electronjs.org/docs)
+	* [Security, Native Capabilities, and Your Responsibility - Electron Documentation](https://electron.atom.io/docs/tutorial/security/)
+* **Talks**
+	* [MarkDoom: How I Hacked Every Major IDE in 2 Weeks - Matt Austin, LevelUp 2017](https://www.youtube.com/watch?v=nnEnwJbiO-A)
+* [As It Stands - Electron Security - 2016](http://blog.scottlogic.com/2016/03/09/As-It-Stands-Electron-Security.html)
+* [As It Stands - Update on Electorn Security - 2016](http://blog.scottlogic.com/2016/06/01/An-update-on-Electron-Security.html)
+* [Modern Alchemy: Turning XSS into RCE](https://blog.doyensec.com/2017/08/03/electron-framework-security.html)
+* [Electron - Build cross platform desktop XSS, it’s easier than you think by Yosuke Hasegawa - [CB16] ](https://www.youtube.com/watch?v=-j1DPPf9Z4U)
+* [Electronegativity - A Study of Electron Security - Carettoni](https://www.blackhat.com/docs/us-17/thursday/us-17-Carettoni-Electronegativity-A-Study-Of-Electron-Security.pdf)
+* [Build cross platform desktop XSS, it’s easier than you think by Yosuke Hasegawa - CodeBlue16](https://www.slideshare.net/codeblue_jp/cb16-hasegawa-en)
+* [Electron Security Checklist - A guide for developers and auditors - Luca Carettoni](https://www.blackhat.com/docs/us-17/thursday/us-17-Carettoni-Electronegativity-A-Study-Of-Electron-Security-wp.pdf)
+
 
 --------------
-### Continous Integration/Delivery/Build Systems
+### <a name="cii"></a>Continous Integration/Delivery/Build Systems
 * [Hacking Jenkins Servers With No Password](https://www.pentestgeek.com/penetration-testing/hacking-jenkins-servers-with-no-password)
 * [Hacking Jenkins - Ideas - Zeroknock](http://zeroknock.blogspot.com/search/label/Hacking%20Jenkins)
 
@@ -1023,6 +985,39 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* [Code](https://github.com/SecurityRiskAdvisors/cmd.jsp)
 
 
+-------------------
+### <a name="jwt"></a>JSON Web Tokens
+* **101**
+	* [JSON Web Token - Wikipedia](https://en.wikipedia.org/wiki/JSON_Web_Token)
+	* [RFC 7159: JSON Web Token (JWT)](https://tools.ietf.org/html/rfc7519)
+	* [The Anatomy of a JSON Web Token](https://scotch.io/tutorials/the-anatomy-of-a-json-web-token)
+	* [Introduction to JSON Web Tokens](https://jwt.io/introduction/) 
+	* [JSON Web Token Flowchart](http://cryto.net/%7Ejoepie91/blog/attachments/jwt-flowchart.png)
+	* [JSON Web Token Security Cheat Sheet](https://assets.pentesterlab.com/jwt_security_cheatsheet/jwt_security_cheatsheet.pdf)
+* **General**
+	* [JWT Handbook - Auth0](https://auth0.com/resources/ebooks/jwt-handbook)
+	* [Friday the 13th: JSON Attacks - Defcon25](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-Alvaro-Munoz-JSON-attacks.pdf)
+	* [Critical vulnerabilities in JSON Web Token libraries - 2015](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/)
+	* [Stop using JWT for sessions, part 2: Why your solution doesn't work - joepie91](http://cryto.net/~joepie91/blog/2016/06/19/stop-using-jwt-for-sessions-part-2-why-your-solution-doesnt-work/)
+	* [Jwt==insecurity? - Ruxcon2018](https://www.slideshare.net/snyff/jwt-insecurity)
+* **Testing**
+	* [Attacking JWT authentication](https://www.sjoerdlangkemper.nl/2016/09/28/attacking-jwt-authentication/)
+	* [Fuzzing JSON Web Services - Simple guide how to fuzz JSON web services properly - secapps](https://secapps.com/blog/2018/03/fuzzing-json-web-services)
+* **Tools**
+	* [json token decode](http://jwt.calebb.net/)
+	* [JWT Inspector - FF plugin](https://www.jwtinspector.io/)
+		* JWT Inspector is a browser extension that lets you decode and inspect JSON Web Tokens in requests, cookies, and local storage. Also debug any JWT directly from the console or in the built-in UI.
+	* [c-jwt-cracker ](https://github.com/brendan-rius/c-jwt-cracker)
+* **Writeups**
+	* [How to configure Json.NET to create a vulnerable web API - alphabot](https://www.alphabot.com/security/blog/2017/net/How-to-configure-Json.NET-to-create-a-vulnerable-web-API.html)
+	* [🔐 Learn how to use JSON Web Token (JWT) to secure your next Web App! (Tutorial/Example with Tests!!)](https://github.com/dwyl/learn-json-web-tokens)
+	* [Critical vulnerabilities in JSON Web Token libraries](https://auth0.com/blog/critical-vulnerabilities-in-json-web-token-libraries/)
+	* [Brute Forcing HS256 is Possible: The Importance of Using Strong Keys in Signing JWTs](https://auth0.com/blog/brute-forcing-hs256-is-possible-the-importance-of-using-strong-keys-to-sign-jwts/)
+	* [Hacking JSON Web Token (JWT) - Hate_401](https://medium.com/101-writeups/hacking-json-web-token-jwt-233fe6c862e6)
+
+
+
+
 -------------
 ### <a name="mime">MIME Sniffing</a>
 * [What is MIME Sniffing? - keycdn.com](https://www.keycdn.com/support/what-is-mime-sniffing/)
@@ -1036,13 +1031,31 @@ fuse.ca/race-conditions-in-web-applications.htm)
 
 
 
+-------------------
+### <a name="nodejs"></a> NodeJS
+* **101**
+* **Educational**
+	* [A Roadmap for Node.js Security](https://nodesecroadmap.fyi/)	
+	* [NodeGoat](https://github.com/OWASP/NodeGoat)
+		* Being lightweight, fast, and scalable, Node.js is becoming a widely adopted platform for developing web applications. This project provides an environment to learn how OWASP Top 10 security risks apply to web applications developed using Node.js and how to effectively address them.
+* **Articles/Blogposts/Presentations/Talks/Writeups**	
+	* [Reverse shell on a Node.js application](https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/)
+	* [NodeJS: Remote Code Execution as a Service - Peabnuts123 – Kiwicon 2016](https://www.youtube.com/watch?v=Qvtfagwlfwg)
+		* [SLIDES](http://archivedchaos.com/post/153372061089/kiwicon-2016-slides-upload)
+* **Tools**
+	* [faker.js](https://github.com/Marak/faker.js)
+		* generate massive amounts of fake data in Node.js and the browser
+
+
+
 --------------
 ### <a name="php"></a>PHP
 * **101**
-
 * **Articles/Blogposts/Writeups**
 	* [Pwning PHP mail() function For Fun And RCE | New Exploitation Techniques And Vectors](https://exploitbox.io/paper/Pwning-PHP-Mail-Function-For-Fun-And-RCE.html)
 	* [The unexpected dangers of preg_replace](https://bitquark.co.uk/blog/2013/07/23/the_unexpected_dangers_of_preg_replace)
+	* [Imagecreatefromgif-Bypass](https://github.com/JohnHoder/Imagecreatefromgif-Bypass)
+		* A simple helper script to find byte sequences present in both of 2 given files. The main purpose of this is to find bytes that remain untouched after being processed with imagecreatefromgif() PHP function from GD-LIB. That is the place where a malicious PHP script can be inserted to achieve some nasty RCE.
 * **Code Reuse**
 	* **101**
 		* [The ReflectionClass class](https://secure.php.net/ReflectionClass)
@@ -1084,18 +1097,6 @@ fuse.ca/race-conditions-in-web-applications.htm)
 
 
 
-
-----------------
-### Relative Path Overwrite
-* **101**
-	* [Relative Path Overwrite Explanation/Writeup](http://www.thespanner.co.uk/2014/03/21/rpo/)
-		* RPO (Relative Path Overwrite) is a technique to take advantage of relative URLs by overwriting their target file. To understand the technique we must first look into the differences between relative and absolute URLs. An absolute URL is basically the full URL for a destination address including the protocol and domain name whereas a relative URL doesn’t specify a domain or protocol and uses the existing destination to determine the protocol and domain.
-* **Articles/Papers/Talks/Writeups**
-* **General**
-* **Tools**
-* **Miscellaneous**
-
-
 ----------------
 ### <a name="rest"></a>REST/SOAP/Web Services(WSDL)
 * **Learning/Reference**
@@ -1111,6 +1112,7 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [Learn REST: A Tutorial](http://rest.elkstein.org/)
 	* [REST and Stateless Session IDs](https://appsandsecurity.blogspot.com/2011/04/rest-and-stateless-session-ids.html)	
 	* [Beginner’s Guide to API(REST) security](https://introvertmac.wordpress.com/2015/09/09/beginners-guide-to-apirest-security/)
+	* [Introduction to RESTful APIs with Chris Wahl](https://www.youtube.com/watch?v=k00sfolsmp0&index=1&list=PL2rC-8e38bUU7Xa5kBaw0Cceo2NoI4mK-)
 * **Attacking**
 	* [Exploiting CVE-2017-8759: SOAP WSDL Parser Code Injection](https://www.mdsec.co.uk/2017/09/exploiting-cve-2017-8759-soap-wsdl-parser-code-injection/)
 	* [Cracking and Fixing REST APIs](http://www.sempf.net/post/Cracking-and-Fixing-REST-APIs)
@@ -1122,6 +1124,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* Damn Vulnerable Web Services is an insecure web application with multiple vulnerable web service components that can be used to learn real world web service vulnerabilities.
 	* [WS-Attacks.org](http://www.ws-attacks.org/Welcome_to_WS-Attacks)
 		* WS-Attacks.org is not a new web service standard by the OASIS Group or W3C; instead it presents the flaws of today's web service standards and implementations in regard to web service security! WS-Attacks.org aims at delivering the most comprehensive enumeration of all known web service attacks.
+	* [Astra](https://github.com/flipkart-incubator/Astra)
+		* REST API penetration testing is complex due to continuous changes in existing APIs and newly added APIs. Astra can be used by security engineers or developers as an integral part of their process, so they can detect and patch vulnerabilities early during development cycle. Astra can automatically detect and test login & logout (Authentication API), so it's easy for anyone to integrate this into CICD pipeline. Astra can take API collection as an input so this can also be used for testing apis in standalone mode.
 * **Reference**
 	* [Web Services Security Testing Cheat Sheet Introduction - OWASP](https://www.owasp.org/index.php/Web_Service_Security_Testing_Cheat_Sheet)
 	* [REST Security Cheat Sheet](REST Security Cheat Sheet)
@@ -1232,10 +1236,56 @@ fuse.ca/race-conditions-in-web-applications.htm)
 
  
 
- 
+----------------
+### <a name="sri"></a> Subresource Integrity
+* **General**
+	* [Subresource Integrity - W3C](https://www.w3.org/TR/SRI/)
+	* [Subresource Integrity - Mozilla](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
+	* [Subresource Integrity (SRI) for Validating Web Resources Hosted on Third Party Services (CDNs) - Netsparker](https://www.netsparker.com/blog/web-security/subresource-integrity-SRI-security/)
+	* [SRI Hash Generator](https://www.srihash.org/)
 
 
 
+----------------
+### <a name="swf"></a>SWF
+* **Articles/Blogposts/Writeups**
+	* [Testing for Cross-Site-Flashing - OWASP](https://www.owasp.org/index.php/Testing_for_Cross_site_flashing_(OTG-CLIENT-008)\)
+	* [Security Domains, Application Domains, and More in ActionScript 3.0](http://www.senocular.com/flash/tutorials/contentdomains/)
+	* [The old is new, again. CVE-2011-2461 is back!](https://www.slideshare.net/ikkisoft/the-old-is-new-again-cve20112461-is-back)
+		* As a part of an ongoing investigation on Adobe Flash SOP bypass techniques, we identified a vulnerability affecting old releases of the Adobe Flex SDK compiler. Further investigation traced the issue back to a well known vulnerability (CVE20112461), already patched by Adobe. Old vulnerability, let's move on? Not this time. CVE20112461 is a very interesting bug. As long as the SWF file was compiled with a vulnerable Flex SDK, attackers can still use this vulnerability against the latest web browsers and Flash plugin. Even with the most recent updates, vulnerable Flex applications hosted on your domain can be exploited. In this presentation, we will disclose the details of this vulnerability (Adobe has never released all technicalities) and we will discuss how we conducted a large scale analysis on popular websites, resulting in the identification of numerous Alexa Top 50 sites vulnerable to this bug. Finally, we will also release a custom tool and a Burp plugin capable of detecting vulnerable SWF applications. 
+	* Advanced Flash Vulnerabilities in Youtube Writeups Series
+		* [Advanced Flash Vulnerabilities in Youtube – Part 1](https://opnsec.com/2017/08/advanced-flash-vulnerabilities-in-youtube-part-1/)
+		* [Advanced Flash Vulnerabilities in Youtube – Part 2](https://opnsec.com/2017/08/advanced-flash-vulnerabilities-in-youtube-part-2/)
+		* [Advanced Flash Vulnerabilities in Youtube – Part 3](https://opnsec.com/2017/08/advanced-flash-vulnerabilities-in-youtube-part-3/)
+	* [Decode Adobe Flex AMF protocol](http://blog.dornea.nu/2015/06/22/decode-adobe-flex-amf-protocol/)	
+	* [Finding XSS vulnerabilities in flash files.](https://olivierbeg.com/finding-xss-vulnerabilities-in-flash-files/)
+	* [XSS and CSRF via SWF Applets (SWFUpload, Plupload)](https://nealpoole.com/blog/2012/05/xss-and-csrf-via-swf-applets-swfupload-plupload/)
+	* [WordPress Flash XSS in flashmediaelement.swf - cure53](https://gist.github.com/cure53/df34ea68c26441f3ae98f821ba1feb9c)
+* **General**
+
+* **Securing**
+	* [HardenFlash](https://github.com/HaifeiLi/HardenFlash)
+		* Patching Flash binary to stop Flash exploits and zero-days
+* **Tools**
+	* [ParrotNG](https://github.com/ikkisoft/ParrotNG/releases)
+		* ParrotNG is a Java-based tool for automatically identifying vulnerable SWF files, built on top of swfdump. One JAR, two flavors: command line tool and Burp Pro Passive Scanner Plugin.
+	[deblaze](http://blog.dornea.nu/2015/06/22/decode-adobe-flex-amf-protocol/)
+		* Performs method enumeration and interrogation against flash remoting end points.
+
+
+
+
+----------------
+### <a name="tls-redirect"></a> TLS Redirection (and Virtual Host Confusion)
+* **101**
+	* [TLS Redirection (and Virtual Host Confusion) - GrrDog](https://github.com/GrrrDog/TLS-Redirection)
+		* The goal of this document is to raise awareness of a little-known group of attacks, TLS redirection / Virtual Host Confusion, and to bring all the information related to this topic together.
+* **Articles/Papers/Talks/Writeups**
+	* [Network-based Origin Confusion Attacks against HTTPS Virtual Hosting - Antoine Delignat-Lavaud, Karthikeyan Bhargavan](http://antoine.delignat-lavaud.fr/doc/www15.pdf)
+	* [The BEAST Wins Again: Why TLS Keeps Failing to Protect HTTP - BHUSA14](https://www.blackhat.com/docs/us-14/materials/us-14-Delignat-The-BEAST-Wins-Again-Why-TLS-Keeps-Failing-To-Protect-HTTP.pdf)
+* **General**
+* **Tools**
+* **Miscellaneous**
 
 
 
@@ -1339,6 +1389,7 @@ fuse.ca/race-conditions-in-web-applications.htm)
 
 -------------------
 ### <a name="webframeworks"></a> Web Frameworks
+* [JSMVCOMFG - To sternly look at JavaScript MVC and Templating Frameworks ](https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-and-templating-frameworks/15-Keep_pokinCanJS_for_examplescript_srcjquery203minjsscriptscript)
 * **Angular**
 	* [AngularJS Security Documentation](https://docs.angularjs.org/guide/security)
 * **Apache Struts**
@@ -1353,6 +1404,14 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [mustache-security(2013)](https://code.google.com/archive/p/mustache-security/)
 		* This place will host a collection of security tips and tricks for JavaScript MVC frameworks and templating libraries.
 		* [Wikis](https://code.google.com/archive/p/mustache-security/wikis)
+
+
+-------------------
+### <a name="webhooks"></a>Web Hooks
+* [Webhooks - pbworks](https://webhooks.pbworks.com/w/page/13385124/FrontPage)
+* [WebHook - Wikipedia](https://en.wikipedia.org/wiki/Webhook)
+* [Abusing Webhooks for Command and Control - Dimitry Snezhkov - BSides LV 2017](https://www.youtube.com/watch?v=TmLoTrJuung)
+	* [octohook](https://github.com/dsnezhkov/octohook)
 
 
 
@@ -1495,13 +1554,21 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* Makes requests unique based on regular expressions. Handy for registration forms and any other endpoint that requires unique values upon every request.
 	* [Bumpster](https://github.com/markclayton/bumpster)
 		* The Unofficial Burp Extension for DNSDumpster.com. You simply supply a domain name and it returns a ton of DNS information and basically lays out the external network topology. 
+	* [J2EEScan](https://github.com/ilmila/J2EEScan)
+		* J2EEScan is a plugin for Burp Suite Proxy. The goal of this plugin is to improve the test coverage during web application penetration tests on J2EE applications.
+	* [JWT4B](https://github.com/mvetsch/JWT4B)
+		* JSON Web Tokens (JWT) support for the Burp Interception Proxy. JWT4B will let you manipulate a JWT on the fly, automate common attacks against JWT and decode it for you in the proxy history. JWT4B automagically detects JWTs in the form of 'Authorization Bearer' headers as well as customizable post body parameters.
+	* [Brida](https://github.com/federicodotta/Brida)
+		* Brida is a Burp Suite Extension that, working as a bridge between Burp Suite and Frida, lets you use and manipulate applications’ own methods while tampering the traffic exchanged between the applications and their back-end services/servers. It supports all platforms supported by Frida (Windows, macOS, Linux, iOS, Android, and QNX)
+	* [burp-suite-error-message-checks](https://github.com/ewilded/burp-suite-error-message-checks)
+		* Burp Suite extension to passively scan for applications revealing server error messages
 
 
 --------------------
 ### <a name="cloud"></a>General Cloud Services
 * [A Placement Vulnerability Study in Multi-Tenant Public Clouds](https://www.usenix.org/node/191017)
-
-
+* [Cloud Security Suite](https://github.com/SecurityFTW/cs-suite)
+	* One stop tool for auditing the security posture of AWS & GCP infrastructure.
 
 
 
@@ -1513,6 +1580,7 @@ fuse.ca/race-conditions-in-web-applications.htm)
 ### <a name="aws"></a>AWS
 * **101**
 	* [Request form for performing Pentesting on AWS Infrastructure](https://aws.amazon.com/premiumsupport/knowledge-center/penetration-testing/)
+	* [AWS Security Audit Guidelines - docs.aws](https://docs.aws.amazon.com/general/latest/gr/aws-security-audit-guide.html)
 * **Attacking**
 	* [Gone in 60 Milliseconds - Intrusion and Exfiltration in Server-less Architectures](https://media.ccc.de/v/33c3-7865-gone_in_60_milliseconds)
 		* More and more businesses are moving away from monolithic servers and turning to event-driven microservices powered by cloud function providers like AWS Lambda. So, how do we hack in to a server that only exists for 60 milliseconds? This talk will show novel attack vectors using cloud event sources, exploitabilities in common server-less patterns and frameworks, abuse of undocumented features in AWS Lambda for persistent malware injection, identifying valuable targets for pilfering, and, of course, how to exfiltrate juicy data out of a secure Virtual Private Cloud. 
@@ -1554,8 +1622,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* This is a collection of horribly written scripts for performing various tasks related to penetration testing AWS. Please don't be sad if it doesn't work for you. It might be that AWS has changed since a given tool was written or it might be that the code sux. Either way, please feel free to contribute. Most of this junk was written by Daniel Grzelak but there's been plenty of contributions, most notably Mike Fuller.
 	* [Nimbostratus](https://github.com/andresriancho/nimbostratus)
 		* Tools for fingerprinting and exploiting Amazon cloud infrastructures
-
-
+	* [cloudfrunt](https://github.com/MindPointGroup/cloudfrunt)
+		* A tool for identifying misconfigured CloudFront domains
 
 ------------------
 ### <a name="cloudflare"></a> Cloudflare
@@ -1566,6 +1634,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 * [Exposing Server IPs Behind CloudFlare - chokepoint](http://www.chokepoint.net/2017/10/exposing-server-ips-behind-cloudflare.html)
 * [CloudFlair](https://github.com/christophetd/CloudFlair)
 	* CloudFlair is a tool to find origin servers of websites protected by CloudFlare who are publicly exposed and don't restrict network access to the CloudFlare IP ranges as they should. The tool uses Internet-wide scan data from Censys to find exposed IPv4 hosts presenting an SSL certificate associated with the target's domain name.
+
+
 
 ------------------
 ### <a name="gcc"></a>Google Compute Cloud/AppEngine

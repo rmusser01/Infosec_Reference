@@ -18,8 +18,11 @@
 
 
 
-## Application Deployment Software
+
+
+
 -------------------------------
+## Application Deployment Software
 Application Deployment Software
 * [Application Deployment Software - ATT&CK](https://attack.mitre.org/wiki/Technique/T1017)
 	* Adversaries may deploy malicious software to systems within a network using application deployment systems employed by enterprise administrators. The permissions required for this action vary by system configuration; local credentials may be sufficient with direct access to the deployment server, or specific domain credentials may be required. However, the system may require an administrative account to log in or to perform software deployment. Access to a network-wide or enterprise-wide software deployment system enables an adversary to have remote code execution on all systems that are connected to such a system. The access may be used to laterally move to systems, gather information, or cause a specific effect, such as wiping the hard drives on all endpoints.
@@ -28,8 +31,31 @@ Application Deployment Software
 * [Owning One To Rule Them All - Defcon20](https://www.trustedsec.com/files/Owning_One_Rule_All_v2.pdf)
 
 
-## Exploitation of Vulnerability
+
+
 -------------------------------
+## Distributed Component Object Model
+* [Distributed Component Object Model - ATT&CK](https://attack.mitre.org/wiki/Technique/T1175)
+	* Windows Distributed Component Object Model (DCOM) is transparent middleware that extends the functionality of Component Object Model (COM)1 beyond a local computer using remote procedure call (RPC) technology. COM is a component of the Windows application programming interface (API) that enables interaction between software objects. Through COM, a client object can call methods of server objects, which are typically Dynamic Link Libraries (DLL) or executables (EXE).
+	* Permissions to interact with local and remote server COM objects are specified by access control lists (ACL) in the Registry. By default, only Administrators may remotely activate and launch COM objects through DCOM.
+	* Adversaries may use DCOM for lateral movement. Through DCOM, adversaries operating in the context of an appropriately privileged user can remotely obtain arbitrary and even direct shellcode execution through Office applications5 as well as other Windows objects that contain insecure methods.67 DCOM can also execute macros in existing documents and may also invoke Dynamic Data Exchange (DDE) execution directly through a COM created instance of a Microsoft Office application9, bypassing the need for a malicious document. 
+
+
+
+-------------------------------
+## Exploitation of Remote Services
+* [Exploitation of Remote Services - ATT&CK](https://attack.mitre.org/wiki/Technique/T1210)
+	* Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. A common goal for post-compromise exploitation of remote services is for lateral movement to enable access to a remote system.
+	* An adversary may need to determine if the remote system is in a vulnerable state, which may be done through Network Service Scanning or other Discovery methods looking for common, vulnerable software that may be deployed in the network, the lack of certain patches that may indicate vulnerabilities, or security software that may be used to detect or contain remote exploitation. Servers are likely a high value target for lateral movement exploitation, but endpoint systems may also be at risk if they provide an advantage or access to additional resources.
+	* There are several well-known vulnerabilities that exist in common services such as SMB and RDP as well as applications that may be used within internal networks such as MySQL3 and web server services.
+	* Depending on the permissions level of the vulnerable remote service an adversary may achieve Exploitation for Privilege Escalation as a result of lateral movement exploitation as well. 
+
+
+
+
+
+-------------------------------
+## Exploitation of Vulnerability
 * [Exploitation of Vulnerability - ATT&CK](https://attack.mitre.org/wiki/Technique/T1068)
 	* Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Exploiting software vulnerabilities may allow adversaries to run a command or binary on a remote system for lateral movement, escalate a current process to a higher privilege level, or bypass security mechanisms. Exploits may also allow an adversary access to privileged accounts and credentials. One example of this is MS14-068, which can be used to forge Kerberos tickets using domain user permissions.Technet MS14-068ADSecurity Detecting Forged Tickets
 
@@ -157,20 +183,24 @@ Application Deployment Software
 
 
 
-
-## Shared Webroot
 -------------------------------
+## Shared Webroot
 * [Shared Webroot - ATT&CK](https://attack.mitre.org/wiki/Technique/T1051)
 	* Adversaries may add malicious content to an internally accessible website through an open network file share that contains the website's webroot or Web content directory and then browse to that content with a Web browser to cause the server to execute the malicious content. The malicious content will typically run under the context and permissions of the Web server process, often resulting in local system or administrative privileges, depending on how the Web server is configured. This mechanism of shared access and remote execution could be used for lateral movement to the system running the Web server. For example, a Web server running PHP with an open network share could allow an adversary to upload a remote access tool and PHP script to execute the RAT on the system running the Web server when a specific page is visited.
 
 
 
-
-
-
-
-## Taint Shared Content
 -------------------------------
+## SSH Hijacking
+* [SSH Hijacking - ATT*&CK](https://attack.mitre.org/wiki/Technique/T1184)
+	* Secure Shell (SSH) is a standard means of remote access on Linux and Mac systems. It allows a user to connect to another system via an encrypted tunnel, commonly authenticating through a password, certificate or the use of an asymmetric encryption key pair.
+	* In order to move laterally from a compromised host, adversaries may take advantage of trust relationships established with other systems via public key authentication in active SSH sessions by hijacking an existing connection to another system. This may occur through compromising the SSH agent itself or by having access to the agent's socket. If an adversary is able to obtain root access, then hijacking SSH sessions is likely trivial. Compromising the SSH agent also provides access to intercept SSH credentials.
+	* SSH Hijacking differs from use of Remote Services because it injects into an existing SSH session rather than creating a new session using Valid Accounts. 
+
+
+
+-------------------------------
+## Taint Shared Content
 * [Taint Shared Content - ATT&CK](https://attack.mitre.org/wiki/Technique/T1080)
 	* Content stored on network drives or in other shared locations may be tainted by adding malicious programs, scripts, or exploit code to otherwise valid files. Once a user opens the shared tainted content, the malicious portion can be executed to run the adversary's code on a remote system. Adversaries may use tainted shared content to move laterally. 
 * [The Backdoor Factory](https://github.com/secretsquirrel/the-backdoor-factory)
@@ -178,8 +208,11 @@ Application Deployment Software
 
 
 
-## Third-Party Software
+
+
+
 -------------------------------
+## Third-Party Software
 * [Third-party Software - ATT&CK](https://attack.mitre.org/wiki/Technique/T1072)
 	* Third-party applications and software deployment systems may be in use in the network environment for administration purposes (e.g., SCCM, VNC, HBSS, Altiris, etc.). If an adversary gains access to these systems, then they may be able to execute code. 
 	* Adversaries may gain access to and use third-party application deployment systems installed within an enterprise network. Access to a network-wide or enterprise-wide software deployment system enables an adversary to have remote code execution on all systems that are connected to such a system. The access may be used to laterally move to systems, gather information, or cause a specific effect, such as wiping the hard drives on all endpoints. 
@@ -189,9 +222,8 @@ Application Deployment Software
 
 
 
-
-## Windows Admin Shares
 -------------------------------
+## Windows Admin Shares
 * [Windows Admin Shares - ATT&CK](https://attack.mitre.org/wiki/Technique/T1077)
 	* Windows systems have hidden network shares that are accessible only to administrators and provide the ability for remote file copy and other administrative functions. Example network shares include C$, ADMIN$, and IPC$. 
 	* Adversaries may use this technique in conjunction with administrator-level Valid Accounts to remotely access a networked system over server message block (SMB)Wikipedia SMB to interact with systems using remote procedure calls (RPCs),TechNet RPC transfer files, and run transferred binaries through remote Execution. Example execution techniques that rely on authenticated sessions over SMB/RPC are Scheduled Task, Service Execution, and Windows Management Instrumentation. Adversaries can also use NTLM hashes to access administrator shares on systems with Pass the Hash and certain configuration and patch levels.Microsoft Admin Shares 
@@ -204,9 +236,8 @@ Application Deployment Software
 
 
 
-
-## Windows Remote Management
 -------------------------------
+## Windows Remote Management
 * [Windows Remote Management - ATT&CK](https://attack.mitre.org/wiki/Technique/T1028)
 	* Windows Remote Management (WinRM) is the name of both a Windows service and a protocol that allows a user to interact with a remote system (e.g., run an executable, modify the Registry, modify services).Microsoft WinRM It may be called with the winrm command or by any number of programs such as PowerShell.Jacobsen 2014
 

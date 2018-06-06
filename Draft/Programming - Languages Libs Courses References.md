@@ -20,6 +20,11 @@
 
 ### Sort
 
+* [Providence](https://github.com/salesforce/Providence
+	* Providence is a system for code commit & bug system monitoring. It is deployed within an organization to monitor code commits for security (or other) concerns, via customizable plugins. A plugin performs logic whenever a commit occurs.
+* [Damn Small Vulnerable Web](https://github.com/stamparm/DSVW)
+	* Damn Small Vulnerable Web (DSVW) is a deliberately vulnerable web application written in under 100 lines of code, created for educational purposes. It supports majority of (most popular) web application vulnerabilities together with appropriate attacks.
+* [Application Security in a DevOps Environment - Lyft](https://eng.lyft.com/application-security-in-a-devops-environment-53092f8a6048)
 
 #### End Sort
 
@@ -113,6 +118,8 @@
 		* This package offers a number of models, views, middlewares and forms to facilitate security hardening of Django applications.
 	* [FindBugs](https://find-sec-bugs.github.io/)
 		* The FindBugs plugin for security audits of Java web applications.
+	* [SpotBugs](https://github.com/spotbugs/spotbugs)
+		* SpotBugs is the spiritual successor of FindBugs, carrying on from the point where it left off with support of its community.
 	* [bundler-audit](https://github.com/rubysec/bundler-audit)
 		* Patch-level verification for Bundler
 	* [OWASP SafeNuGet](https://github.com/owasp/SafeNuGet)
@@ -121,6 +128,12 @@
 		* [Infer](http://fbinfer.com/) is a static analysis tool for Java, Objective-C and C, written in OCaml.
 	* [SourceTrail](https://www.sourcetrail.com/)
 		* A cross-platform source explorer for C/C++ and Java
+	* [Graudit](https://github.com/wireghoul/graudit)
+		* Graudit is a simple script and signature sets that allows you to find potential  security flaws in source code using the GNU utility grep. It's comparable to  other static analysis applications like RATS, SWAAT and flaw-finder while  keeping the technical requirements to a minimum and being very flexible.
+	* [cloc](https://github.com/AlDanial/cloc)
+		* cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
+
+
 
 ----------------
 ### APIs
@@ -304,6 +317,8 @@
 		*  A set of best practices for JavaScript projects - wearehive
 	* [styleguides - Javascript](https://github.com/causes/styleguides/tree/master/javascript)
 * **Tools**
+	* [NodeJsScan](https://github.com/ajinabraham/NodeJsScan)
+		* Static security code scanner (SAST) for Node.js applications.
 * **Other**
 
 ----------
@@ -419,6 +434,8 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 	* [Python 2.7 documentation](https://docs.python.org/2.7/)
 	* [The Hitchhiker’s Guide to Python!](http://docs.python-guide.org/en/latest/)
 	* [Google Python Style Guide](https://google.github.io/styleguide/pyguide.html)
+	* [What the f\*ck Python!](https://github.com/satwikkansal/wtfpython)
+		* An interesting collection of surprising snippets and lesser-known Python features.
 * **Internals**
 	* [Diving deep into Python – the not-so-obvious language parts](http://sebastianraschka.com/Articles/2014_deep_python.html)
 	* [PEP: 551 Title: Security transparency in the Python runtime Version](https://github.com/python/peps/blob/cd795ec53c939e5b40808bb9d7a80c428c85dd52/pep-0551.rst)
@@ -449,6 +466,8 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 	* [Python Static Analysis Spencer J McIntyre - Derbycon7](https://www.youtube.com/watch?v=hWIiyOV4Wbk&index=45&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
 	* [Bandit](https://github.com/openstack/bandit)
 		* Bandit is a tool designed to find common security issues in Python code. To do this Bandit processes each file, builds an AST from it, and runs appropriate plugins against the AST nodes. Once Bandit has finished scanning all the files it generates a report.
+	* [Python Taint](https://github.com/python-security/pyt)
+		* Static analysis of Python web applications based on theoretical foundations (Control flow graphs, fixed point, dataflow analysis)
 * **Libraries**
 	* [Python Library for interacting with Serial Ports](http://pyserial.sourceforge.net/)
 	* [Hachoir](https://bitbucket.org/haypo/hachoir/wiki/Home)

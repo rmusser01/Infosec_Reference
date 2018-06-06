@@ -46,7 +46,8 @@ https://github.com/doridori/Android-Security-Reference
 	* Android Vulnerabilities Overview (AVO) is a databse of known security vulnerabilities in Android.
 
 https://blog.gdssecurity.com/labs/2015/2/18/when-efbfbd-and-friends-come-knocking-observations-of-byte-a.html
-
+* [Diggy](https://github.com/UltimateHackers/Diggy)
+	* Diggy can extract endpoints/URLs from apk files. It saves the result into a txt file for further processing.
 [Intercepting HTTPS traffic of Android Nougat Applications](https://serializethoughts.com/2016/09/10/905/)
 * TL;DR To intercept network traffic for Android 7.0 targeted applications, introduce a res/xml/network_security_config.xml file.
 

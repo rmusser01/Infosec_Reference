@@ -28,7 +28,7 @@
 * [MS "reg" commandreference](http://www.computerhope.com/reg.htm)
 http://www.amanhardikar.com/mindmaps.html
 http://www.amanhardikar.com/mindmaps/Practice.html
-
+* [Windows CMD Reference - ms](https://www.microsoft.com/en-us/download/details.aspx?id=56846)
 #### end sort
 
 
@@ -42,6 +42,7 @@ http://www.amanhardikar.com/mindmaps/Practice.html
 * [Penetration Testing Tools Cheat Sheet](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
 * [Security Architecture Cheat Sheet for Internet Applications](https://zeltser.com/security-architecture-cheat-sheet/)
 * [tmux Cheat Sheet](http://tmuxcheatsheet.com/)
+* [Windows CMD Reference - ms](https://www.microsoft.com/en-us/download/details.aspx?id=56846)
 
 
 

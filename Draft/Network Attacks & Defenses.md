@@ -59,11 +59,16 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* ICE
 	* NTLM stuff
 
+* [How to resolve a million domains](https://idea.popcount.org/2013-11-28-how-to-resolve-a-million-domains/)
 * [IVRE](https://github.com/cea-sec/ivre)
 	* IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
 * [Nili](https://github.com/niloofarkheirkhah/nili)
 	* Nili is a Tool for Network Scan, Man in the Middle, Protocol Reverse Engineering and Fuzzing.
 * [IP Cameras Default Passwords Directory](https://ipvm.com/reports/ip-cameras-default-passwords-directory)
+* **Distributed Systems**
+	* [Garfield](https://github.com/tunnelshade/garfield)
+		* Garfield is and open source framework for scanning and exploiting Distributed Systems. The framework currently being in it's alpha stage and is undergoing rapid development.
+* [SNMP Config File Injection to Shell - digi.ninja](https://digi.ninja/blog/snmp_to_shell.php)
 
 
 ##### sort end
@@ -103,6 +108,10 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 		* Simulating shitty network connections so you can build better systems.
 	* [TCPCopy](https://github.com/session-replay-tools/tcpcopy)
 		* TCPCopy is a TCP stream replay tool to support real testing of Internet server applications.
+	* [nessusporter](https://github.com/Tw1sm/nessporter)
+		* Easily download entire folders of Nessus scans in the format(s) of your choosing. This script uses provided credentials to connect to a Nessus server and store a session token, which is then used for all subsquent requests.
+
+
 
 ------------
 ### <a name="attackw">Attacking Windows Networks</a>
@@ -555,11 +564,13 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 		* This tool provides a demonstration of the HTTPS stripping attacks that I presented at Black Hat DC 2009. It will transparently hijack HTTP traffic on a network, watch for HTTPS links and redirects, then map those links into either look-alike HTTP links or homograph-similar HTTPS links. It also supports modes for supplying a favicon which looks like a lock icon, selective logging, and session denial.
 	* [tiny-mitm-proxy](https://github.com/floyd-fuh/tiny-mitm-proxy)
 		* Probably one of the smallest SSL MITM proxies you can make
-* WSUS(Windows Server Updater Serice)
+* **WSUS(Windows Server Updater Serice)**
 	* [WSUXploit](https://github.com/pimps/wsuxploit)
 		* This is a MiTM weaponized exploit script to inject 'fake' updates into non-SSL WSUS traffic. It is based on the WSUSpect Proxy application that was introduced to public on the Black Hat USA 2015 presentation, 'WSUSpect - Compromising the Windows Enterprise via Windows Update'
-
-
+	* [WSUSpect Proxy](https://github.com/pdjstone/wsuspect-proxy)
+		* This is a proof of concept script to inject 'fake' updates into non-SSL WSUS traffic. It is based on the BlackHat USA 2015 presentation, 'WSUSpect – Compromising the Windows Enterprise via Windows Update'
+		- White paper: http://www.contextis.com/documents/161/CTX_WSUSpect_White_Paper.pdf
+		- Slides: http://www.contextis.com/documents/162/WSUSpect_Presentation.pdf
 
 
 
@@ -800,6 +811,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* [Preboot Execution Environment - Wikipedia](https://en.wikipedia.org/wiki/Preboot_Execution_Environment)
 * **Articles/Presentations/Talks/Writeups**
 	* [Use DHCP to detect UEFI or Legacy BIOS system and PXE boot to SCCM](http://www.itfaq.dk/2016/07/27/use-dhcp-to-detect-uefi-or-legacy-bios-system-and-pxe-boot-to-sccm/)
+	* [Attacks Against Windows PXE Boot Images - Thomas Elling](https://blog.netspi.com/attacks-against-windows-pxe-boot-images/)
 * **Tools**
 
 
@@ -878,7 +890,8 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 		* An automated SMB Relay Script
 	* [SMB Spider](https://github.com/T-S-A/smbspider)
 		* SMB Spider is a lightweight utility for searching SMB/CIFS/Samba file shares. This project was born during a penetration test, via the need to search hundreds of hosts quickly for sensitive password files. Simply run "python smbspider.py -h" to get started.
-
+	* [SMBrute](https://github.com/m4ll0k/SMBrute)
+		* SMBrute is a program that can be used to bruteforce username and passwords of servers that are using SMB (Samba).
 
 
 

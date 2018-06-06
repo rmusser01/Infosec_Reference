@@ -18,13 +18,14 @@
 
 #### Sort
 
+
 #### End cull
 
 
 
 
 
-
+---------------------------
 ### <a name="general">General</a>
 * [How I became a password cracker](https://arstechnica.com/information-technology/2013/03/how-i-became-a-password-cracker/)
 * [HashView](https://github.com/hashview/hashview)
@@ -35,12 +36,13 @@
 * [Password Recovery Speeds](http://www.lockdown.co.uk/?pg=combi)
 	* Password cracking time measurements
 * [Password cracking, mining, and GPUs](http://blog.erratasec.com/2011/06/password-cracking-mining-and-gpus.html#.VG3xspPF_tw)
+* [CredKing](https://github.com/ustayready/CredKing)
+	* Password spraying using AWS Lambda for IP rotation
 
 
 
 
-
-
+------------------
 ### <a name="better">Making Better Passwords</a>
 
 
@@ -50,7 +52,7 @@
 
 
 
-
+------------------
 ### <a name="crack">Cracking Passwords/Hashes</a>
 * [Introduction to Cracking Hashes](http://n0where.net/introduction-break-that-hash/)
 	* Good introduction source to hash cracking.
@@ -65,7 +67,7 @@
 	* PACK (Password Analysis and Cracking Toolkit) is a collection of utilities developed to aid in analysis of password lists in order to enhance password cracking through pattern detection of masks, rules, character-sets and other password characteristics. The toolkit generates valid input files for Hashcat family of password crackers.
 
 
-
+------------------
 ### <a name="appt">App Specific Tools(as in single application focus)</a>
 * [crackxls2003 0.4](https://github.com/GavinSmith0123/crackxls2003)
 	* This program may be used to break the encryption on Microsoft Excel and Microsoft Word file which have been encrypted using the RC4 method, which uses a 40-bit-long key. This was the default encryption method in Word and Excel 97/2000/2002/2003. This program will not work on files encrypted using Word or Excel 2007 or later, or for versions 95 or earlier. It will not work if a file was encrypted with a non-default method. Additionally, documents created with the Windows system locale set to France may use a different encryption method.
@@ -76,7 +78,7 @@
 
 
 
-
+------------------
 #### OCL/Hashcat
 * General
 	* [OCL hashcat wiki](http://hashcat.net/wiki/)
@@ -123,7 +125,7 @@
 
 
 
-
+------------------
 ### <a name="generalt">Tools</a>
 * [Patator](https://github.com/lanjelot/patator)
 	* Patator was written out of frustration from using Hydra, Medusa, Ncrack, Metasploit modules and Nmap NSE scripts for password guessing attacks. I opted for a different approach in order to not create yet another brute-forcing tool and avoid repeating the same shortcomings. Patator is a multi-threaded tool written in Python, that strives to be more reliable and flexible than his fellow predecessors.
@@ -137,7 +139,7 @@
 
 
 
-
+------------------
 ### <a name="wordlistgen">Wordlist Generation</a>
 * [GitDigger](https://github.com/wick2o/gitdigger)
 	* gitDigger: Creating realworld wordlists from github hosted data.
@@ -151,12 +153,14 @@
 	* OMEN is a Markov model-based password guesser written in C. It generates password candidates according to their occurrence probabilities, i.e., it outputs most likely passwords first. OMEN significantly improves guessing speed over existing proposals. If you are interested in the details on how OMEN improves on existing Markov model-based password guessing approaches, please refer to OMEN: Faster Password Guessing Using an Ordered Markov Enumerator.
 * [cupp.py - Common User Passwords Profiler](https://github.com/Mebus/cupp)
 	* The most common form of authentication is the combination of a username and a password or passphrase. If both match values stored within a locally stored table, the user is authenticated for a connection. Password strength is a measure of the difficulty involved in guessing or breaking the password through cryptographic techniques or library-based automated testing of alternate values. A weak password might be very short or only use alphanumberic characters, making decryption simple. A weak password can also be one that is easily guessed by someone profiling the user, such as a birthday, nickname, address, name of a pet or relative, or a common word such as God, love, money or password. That is why CUPP has born, and it can be used in situations like legal penetration tests or forensic crime investigations.
+* [Mentalist](https://github.com/sc0tfree/mentalist)
+	* Mentalist is a graphical tool for custom wordlist generation. It utilizes common human paradigms for constructing passwords and can output the full wordlist as well as rules compatible with Hashcat and John the Ripper.
+	* [Wiki](https://github.com/sc0tfree/mentalist/wiki)
 
 
 
 
-
-
+------------------
 ### <a name="wordlists">Wordlists</a>
 * [Crackstation’s Password Cracking Dictionary 1.5b words](https://crackstation.net/buy-crackstation-wordlist-password-cracking-dictionary.htm)
 	* HIGHLY recommended
@@ -170,15 +174,18 @@
 * [SecLists](https://github.com/danielmiessler/SecLists)
 * [statistically-likely-usernames](https://github.com/insidetrust/statistically-likely-usernames)
 	* This resource contains wordlists for creating statistically likely usernames for use in username-enumeration, simulated password-attacks and other security testing tasks.
+* [Oracle Default Password List](http://www.petefinnigan.com/default/default_password_list.htm)
+* [Passhunt](https://github.com/Viralmaniar/Passhunt/blob/master/README.md)
+	* Passhunt is a simple tool for searching of default credentials for network devices, web applications and more. Search through 523 vendors and their 2084 default passwords.
 
-
-
+	
+------------------
 ### Talks & Presentations
 * [Cracking Corporate Passwords Exploiting Password Policy Weaknesses - Minga Rick Redm - Derbycon3](https://www.youtube.com/watch?v=qR-qRUbeKAo)
 
 
 
-
+------------------
 ### <a name="papers">Papers</a>
 
 * [Optimizing computation of Hash Algorithms as an attacker](https://hashcat.net/events/p13/js-ocohaaaa.pdf)

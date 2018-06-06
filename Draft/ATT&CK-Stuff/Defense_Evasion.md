@@ -10,11 +10,15 @@
 -------------------------------
 ## Access Token Manipulation
 * [Access Token Manipulation - ATT&CK](https://attack.mitre.org/wiki/Technique/T1134)
-	* Windows uses access tokens to determine the ownership of a running process. A user can manipulate access tokens to make a running process appear as though it belongs to someone other than the user that started the process. When this occurs, the process also takes on the security context associated with the new token. For example, Microsoft promotes the use of access tokens as a security best practice. Administrators should log in as a standard user but run their tools with administrator privileges using the built-in access token manipulation command runas. Microsoft runas 
-	* Adversaries may use access tokens to operate under a different user or system security context to perform actions and evade detection. An adversary can use built-in Windows API functions to copy access tokens from existing processes; this is known as token stealing. An adversary must already be in a privileged user context (i.e. administrator) to steal a token. However, adversaries commonly use token stealing to elevate their security context from the administrator level to the SYSTEM level.Pentestlab Token Manipulation 
-	* Adversaries can also create spoofed access tokens if they know the credentials of a user. Any standard user can use the runas command, and the Windows API functions, to do this; it does not require access to an administrator account. 
-	* Lastly, an adversary can use a spoofed token to authenticate to a remote system as the account for that token if the account has appropriate permissions on the remote system. 
-	* Metasploit’s Meterpreter payload allows arbitrary token stealing and uses token stealing to escalate privileges. Metasploit access token The Cobalt Strike beacon payload allows arbitrary token stealing and can also create tokens. Cobalt Strike Access Token
+	* Windows uses access tokens to determine the ownership of a running process. A user can manipulate access tokens to make a running process appear as though it belongs to someone other than the user that started the process. When this occurs, the process also takes on the security context associated with the new token. For example, Microsoft promotes the use of access tokens as a security best practice. Administrators should log in as a standard user but run their tools with administrator privileges using the built-in access token manipulation command runas.
+	* Adversaries may use access tokens to operate under a different user or system security context to perform actions and evade detection. An adversary can use built-in Windows API functions to copy access tokens from existing processes; this is known as token stealing. An adversary must already be in a privileged user context (i.e. administrator) to steal a token. However, adversaries commonly use token stealing to elevate their security context from the administrator level to the SYSTEM level. An adversary can use a token to authenticate to a remote system as the account for that token if the account has appropriate permissions on the remote system.
+	* Access tokens can be leveraged by adversaries through three methods:
+		* **Token Impersonation/Theft** - An adversary creates a new access token that duplicates an existing token using DuplicateToken(Ex). The token can then be used with ImpersonateLoggedOnUser to allow the calling thread to impersonate a logged on user's security context, or with SetThreadToken to assign the impersonated token to a thread. This is useful for when the target user has a non-network logon session on the system.
+		* **Create Process with a Token** - An adversary creates a new access token with `DuplicateToken(Ex)` and uses it with `CreateProcessWithTokenW` to create a new process running under the security context of the impersonated user. This is useful for creating a new process under the security context of a different user.
+		* **Make and Impersonate Token** - An adversary has a username and password but the user is not logged onto the system. The adversary can then create a logon session for the user using the `LogonUser` function. The function will return a copy of the new session's access token and the adversary can use `SetThreadToken` to assign the token to a thread.
+		* Any standard user can use the `runas` command, and the Windows API functions, to create impersonation tokens; it does not require access to an administrator account.
+	* Metasploit’s Meterpreter payload allows arbitrary token manipulation and uses token impersonation to escalate privileges. The Cobalt Strike beacon payload allows arbitrary token impersonation and can also create tokens. 
+
 
 #### Windows
 * [Access Token Manipulation - ATT&CK](https://attack.mitre.org/wiki/Technique/T1134)
@@ -29,10 +33,29 @@
 * [Account Hunting for Invoke-TokenManipulation](https://www.trustedsec.com/2015/01/account-hunting-invoke-tokenmanipulation/)
 
 
+
+
+-------------------------------
+## BITS Jobs
+* [BITS Jobs - ATT&CK](https://attack.mitre.org/wiki/Technique/T1197)
+	* Windows Background Intelligent Transfer Service (BITS) is a low-bandwidth, asynchronous file transfer mechanism exposed through Component Object Model (COM)1.2 BITS is commonly used by updaters, messengers, and other applications preferred to operate in the background (using available idle bandwidth) without interrupting other networked applications. File transfer tasks are implemented as BITS jobs, which contain a queue of one or more file operations.
+	* The interface to create and manage BITS jobs is accessible through PowerShell and the BITSAdmin tool.
+	* Adversaries may abuse BITS to download, execute, and even clean up after malicious code. BITS tasks are self-contained in the BITS job database, without new files or registry modifications, and often permitted by host firewalls.456 BITS enabled execution may also allow Persistence by creating long-standing jobs (the default maximum lifetime is 90 days and extendable) or invoking an arbitrary program when a job completes or errors (including after system reboots).
+	* BITS upload functionalities can also be used to perform Exfiltration Over Alternative Protocol.
+
+
+
+
+
+
 -------------------------------
 ## Binary Padding
 * [Binary Padding - ATT&CK](https://attack.mitre.org/wiki/Technique/T1009)
 	* Some security tools inspect files with static signatures to determine if they are known malicious. Adversaries may add data to files to increase the size beyond what security tools are capable of handling or to change the file hash to avoid hash-based blacklists.
+
+
+
+
 
 
 
@@ -82,6 +105,15 @@
 
 
 
+
+
+-------------------------------
+* [CMSTP.exe - ATT&CK](https://attack.mitre.org/wiki/Technique/T1191)
+	* The Microsoft Connection Manager Profile Installer (CMSTP.exe) is a command-line program used to install Connection Manager service profiles. CMSTP.exe accepts an installation information file (INF) as a parameter and installs a service profile leveraged for remote access connections.
+	* Adversaries may supply CMSTP.exe with INF files infected with malicious commands. Similar to Regsvr32 / ”Squiblydoo”, CMSTP.exe may be abused to load and execute DLLs and/or COM scriptlets (SCT) from remote servers. This execution may also bypass AppLocker and other whitelisting defenses since CMSTP.exe is a legitimate, signed Microsoft application.
+	* CMSTP.exe can also be abused to Bypass User Account Control and execute arbitrary commands from a malicious INF through an auto-elevated COM interface.
+
+
 -------------------------------
 ## Code Signing
 * [Code Signing - ATT&CK](https://attack.mitre.org/wiki/Technique/T1116)
@@ -106,11 +138,18 @@
 * [How to Evade Application Whitelisting Using REGSVR32 - BHIS](https://www.blackhillsinfosec.com/evade-application-whitelisting-using-regsvr32/)
 
 
+
+
 -------------------------------
 ## Component Firmware
 * [Component Firmware - ATT&CK](https://attack.mitre.org/wiki/Technique/T1109)
 	* Some adversaries may employ sophisticated means to compromise computer components and install malicious firmware that will execute adversary code outside of the operating system and main system firmware or BIOS. This technique may be similar to System Firmware but conducted upon other system components that may not have the same capability or level of integrity checking. Malicious device firmware could provide both a persistent level of access to systems despite potential typical failures to maintain access and hard disk re-images, as well as a way to evade host software-based defenses and integrity checks.
 * [HD Hacking - SpritesMods](http://spritesmods.com/?art=hddhack)
+
+
+
+
+
 
 -------------------------------
 ## Component Object Model Hijacking
@@ -126,17 +165,30 @@ Component Object Model Hijacking
 
 
 
--------------------------------
-## DLL Injection
-* [DLL Injection - ATT&CK](https://attack.mitre.org/wiki/Defense_Evasion)
-	* DLL injection is used to run code in the context of another process by causing the other process to load and execute code. Running code in the context of another process provides adversaries many benefits, such as access to the process's memory and permissions. It also allows adversaries to mask their actions under a legitimate process. A more sophisticated kind of DLL injection, reflective DLL injection, loads code without calling the normal Windows API calls, potentially bypassing DLL load monitoring. Numerous methods of DLL injection exist on Windows, including modifying the Registry, creating remote threads, Windows hooking APIs, and DLL pre-loading.CodeProject Inject CodeWikipedia DLL Injection
 
-#### Windows
-* [DLL Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1055)
-* [DLL injection - Wikipedia](https://en.wikipedia.org/wiki/DLL_injection)
-* [Inject All the Things - Shutup and Hack](http://blog.deniable.org/blog/2017/07/16/inject-all-the-things/)
-	* Writeup of 7 different injection techniques
-	* [Code - Github](https://github.com/fdiskyou/injectAllTheThings)
+
+
+------------------------------- 
+## Control Panel Items
+* [Control Panel Items - ATT&CK](https://attack.mitre.org/wiki/Technique/T1196)
+	* Windows Control Panel items are utilities that allow users to view and adjust computer settings. Control Panel items are registered executable (.exe) or Control Panel (.cpl) files, the latter are actually renamed dynamic-link library (.dll) files that export a CPlApplet function. Control Panel items can be executed directly from the command line, programmatically via an application programming interface (API) call, or by simply double-clicking the file.
+	* For ease of use, Control Panel items typically include graphical menus available to users after being registered and loaded into the Control Panel.
+	* Adversaries can use Control Panel items as execution payloads to execute arbitrary commands. Malicious Control Panel items can be delivered via Spearphishing Attachment campaigns 23 or executed as part of multi-stage malware.4 Control Panel items, specifically CPL files, may also bypass application and/or file extension whitelisting. 
+
+
+
+
+
+-------------------------------
+## DCShadow
+* [DCShadow - ATT&CK](https://attack.mitre.org/wiki/Technique/T1207)
+	* DCShadow is a method of manipulating Active Directory (AD) data, including objects and schemas, by registering (or reusing an inactive registration) and simulating the behavior of a Domain Controller (DC). Once registered, a rogue DC may be able to inject and replicate changes into AD infrastructure for any domain object, including credentials and keys.
+	* Registering a rogue DC involves creating a new server and nTDSDSA objects in the Configuration partition of the AD schema, which requires Administrator privileges (either Domain or local to the DC) or the KRBTGT hash.
+	* This technique may bypass system logging and security monitors such as security information and event management (SIEM) products (since actions taken on a rogue DC may not be reported to these sensors). The technique may also be used to alter and delete replication and other associated metadata to obstruct forensic analysis. Adversaries may also utilize this technique to perform SID-History Injection and/or manipulate AD objects (such as accounts, access control lists, schemas) to establish backdoors for Persistence.
+
+
+
+
 
 
 -------------------------------
@@ -190,7 +242,11 @@ Component Object Model Hijacking
 * [Invoke-Phant0m](https://github.com/hlldz/Invoke-Phant0m)
 	* This script walks thread stacks of Event Log Service process (spesific svchost.exe) and identify Event Log Threads to kill Event Log Service Threads. So the system will not be able to collect logs and at the same time the Event Log Service will appear to be running.
 
-
+-------------------------------
+## Exploitation for Defense Evasion
+* [Exploitation for Defense Evasion - ATT&CK](https://attack.mitre.org/wiki/Technique/T1211)
+	* Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Vulnerabilities may exist in defensive security software that can be used to disable or circumvent them.
+	* Adversaries may have prior knowledge through reconnaissance that security software exists within an environment or they may perform checks during or shortly after the system is compromised for Security Software Discovery. The security software will likely be targeted directly for exploitation. There are examples of antivirus software being targeted by persistent threat groups to avoid detection. 
 
 
 -------------------------------
@@ -342,6 +398,13 @@ Component Object Model Hijacking
 * [Phant0m: Killing Windows Event Log Phant0m: Killing Windows Event Log](https://artofpwn.com/phant0m-killing-windows-event-log.html)
 
 
+
+
+-------------------------------
+## Indirect Command Execution
+* [Indirect Command Execution - ATT&CK](https://attack.mitre.org/wiki/Technique/T1202)
+	* Various Windows utilities may be used to execute commands, possibly without invoking cmd. For example, Forfiles, the Program Compatibility Assistant (pcalua.exe), components of the Windows Subsystem for Linux (WSL), as well as other utilities may invoke the execution of programs and commands from a Command-Line Interface, Run window, or via scripts.
+	 * Adversaries may abuse these utilities for Defense Evasion, specifically to perform arbitrary execution while subverting detections and/or mitigation controls (such as Group Policy) that limit/prevent the usage of cmd. 
 
 
 
@@ -503,6 +566,25 @@ Alternate Data Streams
 
 
 
+
+
+
+-------------------------------
+## Process Doppelgänging
+* [Process Doppelgänging - ATT&CK](https://attack.mitre.org/wiki/Technique/T1186)
+	* Windows Transactional NTFS (TxF) was introduced in Vista as a method to perform safe file operations. To ensure data integrity, TxF enables only one transacted handle to write to a file at a given time. Until the write handle transaction is terminated, all other handles are isolated from the writer and may only read the committed version of the file that existed at the time the handle was opened. To avoid corruption, TxF performs an automatic rollback if the system or application fails during a write transaction.
+	* Although deprecated, the TxF application programming interface (API) is still enabled as of Windows 10.
+	* Adversaries may leverage TxF to a perform a file-less variation of Process Injection called Process Doppelgänging. Similar to Process Hollowing, Process Doppelgänging involves replacing the memory of a legitimate process, enabling the veiled execution of malicious code that may evade defenses and detection. Process Doppelgänging's use of TxF also avoids the use of highly-monitored API functions such as NtUnmapViewOfSection, VirtualProtectEx, and SetThreadContext.4
+	* Process Doppelgänging is implemented in 4 steps4:
+		* Transact – Create a TxF transaction using a legitimate executable then overwrite the file with malicious code. These changes will be isolated and only visible within the context of the transaction.
+		* Load – Create a shared section of memory and load the malicious executable.
+    	* Rollback – Undo changes to original executable, effectively removing malicious code from the file system.
+    	* Animate – Create a process from the tainted section of memory and initiate execution.
+
+
+
+
+
 -------------------------------
 ## Process Hollowing
 * [Process Hollowing](https://attack.mitre.org/wiki/Technique/T1093)
@@ -628,6 +710,23 @@ There are multiple approaches to injecting code into a live process. Windows imp
 		* Welcome to the PowerShell GitHub Community! PowerShell Core is a cross-platform (Windows, Linux, and macOS) automation and configuration tool/framework that works well with your existing tools and is optimized for dealing with structured data (e.g. JSON, CSV, XML, etc.), REST APIs, and object models. It includes a command-line shell, an associated scripting language and a framework for processing cmdlets.
 	* [Getting Started with Windows PowerShell - docs.ms](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/getting-started-with-windows-powershell?view=powershell-5.1)
 	* [Learning PowerShell](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell)
+
+
+
+
+-------------------------------
+## SIP and Trust Provider Hijacking
+* [SIP and Trust Provider Hijacking - ATT&CK](https://attack.mitre.org/wiki/Technique/T1198)
+	* In user mode, Windows Authenticode1 digital signatures are used to verify a file's origin and integrity, variables that may be used to establish trust in signed code (ex: a driver with a valid Microsoft signature may be handled as safe). The signature validation process is handled via the WinVerifyTrust application programming interface (API) function, which accepts an inquiry and coordinates with the appropriate trust provider, which is responsible for validating parameters of a signature.
+	* Because of the varying executable file types and corresponding signature formats, Microsoft created software components called Subject Interface Packages (SIPs) to provide a layer of abstraction between API functions and files. SIPs are responsible for enabling API functions to create, retrieve, calculate, and verify signatures. Unique SIPs exist for most file formats (Executable, PowerShell, Installer, etc., with catalog signing providing a catch-all ) and are identified by globally unique identifiers (GUIDs).
+	* Similar to Code Signing, adversaries may abuse this architecture to subvert trust controls and bypass security policies that allow only legitimately signed code to execute on a system. Adversaries may hijack SIP and trust provider components to mislead operating system and whitelisting tools to classify malicious (or any) code as signed by:
+		* Modifying the `Dll` and `FuncName` Registry values in `HKLM\SOFTWARE[\WOW6432Node\]Microsoft\Cryptography\OID\EncodingType 0\CryptSIPDllGetSignedDataMsg\{SIP_GUID}` that point to the dynamic link library (DLL) providing a SIP’s `CryptSIPDllGetSignedDataMsg` function, which retrieves an encoded digital certificate from a signed file. By pointing to a maliciously-crafted DLL with an exported function that always returns a known good signature value (ex: a Microsoft signature for Portable Executables) rather than the file’s real signature, an adversary can apply an acceptable signature value all files using that SIP6 (although a hash mismatch will likely occur, invalidating the signature, since the hash returned by the function will not match the value computed from the file).
+    	* Modifying the `Dll` and `FuncName` Registry values in `HKLM\SOFTWARE\[WOW6432Node\]Microsoft\Cryptography\OID\EncodingType 0\CryptSIPDllVerifyIndirectData\{SIP_GUID}` that point to the DLL providing a SIP’s `CryptSIPDllVerifyIndirectData` function, which validates a file’s computed hash against the signed hash value. By pointing to a maliciously-crafted DLL with an exported function that always returns TRUE (indicating that the validation was successful), an adversary can successfully validate any file (with a legitimate signature) using that SIP6 (with or without hijacking the previously mentioned `CryptSIPDllGetSignedDataMsg` function). This Registry value could also be redirected to a suitable exported function from an already present DLL, avoiding the requirement to drop and execute a new file on disk.
+    	* Modifying the `DLL` and `Function` Registry values in `HKLM\SOFTWARE\[WOW6432Node\]Microsoft\Cryptography\Providers\Trust\FinalPolicy\{trust provider GUID}` that point to the DLL providing a trust provider’s FinalPolicy function, which is where the decoded and parsed signature is checked and the majority of trust decisions are made. Similar to hijacking SIP’s `CryptSIPDllVerifyIndirectData` function, this value can be redirected to a suitable exported function from an already present DLL or a maliciously-crafted DLL (though the implementation of a trust provider is complex).
+    	* Note: The above hijacks are also possible without modifying the Registry via DLL Search Order Hijacking.
+	* Hijacking SIP or trust provider components can also enable persistent code execution, since these malicious components may be invoked by any application that performs code signing or signature validation.
+
+
 
 
 

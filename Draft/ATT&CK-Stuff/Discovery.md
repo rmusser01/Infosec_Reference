@@ -57,8 +57,16 @@
 
 
 
-### File and Directory Discovery
 -------------------------------
+## Browser Bookmark Discovery
+* [Browser Bookmark Discovery](https://attack.mitre.org/wiki/Technique/T1217)
+	* Adversaries may enumerate browser bookmarks to learn more about compromised hosts. Browser bookmarks may reveal personal information about users (ex: banking sites, interests, social media, etc.) as well as details about internal network resources such as servers, tools/dashboards, or other related infrastructure.
+	* Browser bookmarks may also highlight additional targets after an adversary has access to valid credentials, especially Credentials in Files associated with logins cached by a browser.
+	* Specific storage locations vary based on platform and/or application, but browser bookmarks are typically stored in local files/databases.
+
+
+-------------------------------
+### File and Directory Discovery
 * [File and Directory Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1083)
 	* Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. 
 
@@ -303,8 +311,23 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 
 
 
-## Peripheral Device Discovery
+
 -------------------------------
+## Password Policy Discovery
+* [Password Policy Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1201)
+	* Password policies for networks are a way to enforce complex passwords that are difficult to guess or crack through Brute Force. An adversary may attempt to access detailed information about the password policy used within an enterprise network. This would help the adversary to create a list of common passwords and launch dictionary and/or brute force attacks which adheres to the policy (e.g. if the minimum password length should be 8, then not trying passwords such as 'pass123'; not checking for more than 3-4 passwords per account if the lockout is set to 6 as to not lock out accounts).
+	* Password policies can be set and discovered on Windows, Linux, and macOS systems.
+
+
+
+
+
+
+
+
+
+-------------------------------
+## Peripheral Device Discovery
 * [Peripheral Device Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1120)
 	* Adversaries may attempt to gather information about attached peripheral devices and components connected to a computer system. The information may be used to enhance their awareness of the system and network environment or may be used for further actions.
 

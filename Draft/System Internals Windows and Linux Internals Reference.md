@@ -20,7 +20,9 @@
 
 
 #### Sort
-
+* [Linux Kernel Map](http://www.makelinux.net/kernel_map/)
+	* Interactive map of the Linux Kernel
+* [Everything You Never Wanted To Know About DLLs](http://blog.omega-prime.co.uk/2011/07/04/everything-you-never-wanted-to-know-about-dlls/)
 
 * [Windows Data Protection - msdn.ms](https://msdn.microsoft.com/en-us/library/ms995355.aspx)
 * [Elevate through ShellExecute - msdn](https://blogs.msdn.microsoft.com/vistacompatteam/2006/09/25/elevate-through-shellexecute/)
@@ -28,7 +30,7 @@
 [](http://archive.msdn.microsoft.com/ShellRevealed/Release/ProjectReleases.aspx?ReleaseId=2871)
 * [[MS-SAMR]: Security Account Manager (SAM) Remote Protocol (Client-to-Server)](https://msdn.microsoft.com/en-us/library/cc245476.aspx)
 	* Specifies the Security Account Manager (SAM) Remote Protocol (Client-to-Server), which supports printing and spooling operations that are synchronous between client and server.
-* [Securing Privileged Access](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access)
+
 * [BCDEdit /dbgsettings - msdn](https://msdn.microsoft.com/en-us/library/windows/hardware/ff542187(v=vs.85).aspx)
 	* [AppInit_DLLs in Windows 7 and Windows Server 2008 R2](https://msdn.microsoft.com/en-us/library/windows/desktop/dd744762(v=vs.85).aspx)
 	* [Windows Data Protection](https://msdn.microsoft.com/en-us/library/ms995355.aspx)
@@ -37,8 +39,7 @@
 	* [Security Configuration Wizard](https://technet.microsoft.com/en-us/library/cc754997(v=ws.11).aspx)
 		* The Security Configuration Wizard (SCW) guides you through the process of creating, editing, applying, or rolling back a security policy. A security policy that you create with SCW is an .xml file that, when applied, configures services, network security, specific registry values, and audit policy. SCW is a role-based tool: you can use it to create a policy that enables services, firewall rules, and settings that are required for a selected server to perform specific roles, such as a file server, a print server, or a domain controller.
 * [Windows 8 Security and ARM](http://2012.ruxconbreakpoint.com/assets/Uploads/bpx/alex-breakpoint2012.pdf)
-
-* [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control - docs.ms](https://docs.microsoft.com/en-us/windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
+* [Securing Privileged Access](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access)
 * [Netlogon - technet.ms](https://technet.microsoft.com/fr-fr/library/cc962284.aspx)
 * [What is Digest Authentication? - technet.ms](https://technet.microsoft.com/en-us/library/cc778868%28v=ws.10%29.aspx)
 
@@ -119,6 +120,8 @@
 	* [Custom Credential Provider for Password Reset - blogs.technet](https://blogs.technet.microsoft.com/aho/2009/11/14/custom-credential-provider-for-password-reset/)
 	* [Starting to build your own Credential Provider](https://blogs.msmvps.com/alunj/2011/02/21/starting-to-build-your-own-credential-provider/)
 		* If you’re starting to work on a Credential Provider (CredProv or CP, for short) for Windows Vista, Windows Server 2008, Windows Server 2008 R2 or Windows 7, there are a few steps I would strongly recommend you take, because it will make life easier for you.
+* **Device Guard**
+	* [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control - docs.ms](https://docs.microsoft.com/en-us/windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
 * **Dynamic Data Exchange**
 	* [Dynamic Data Exchange - msdn.ms](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648711(v=vs.85).aspx)
 		* This section provides guidelines for implementing dynamic data exchange for applications that cannot use the Dynamic Data Exchange Management Library (DDEML).
@@ -204,6 +207,12 @@
 * **Sandboxing**
 	* [Advanced Desktop Application Sandboxing via AppContainer](https://www.malwaretech.com/2015/09/advanced-desktop-application-sandboxing.html)
 	* [Usermode Sandboxing](http://www.malwaretech.com/2014/10/usermode-sandboxing.html)
+* **Security Descriptor Definition Language**
+	* [The Security Descriptor Definition Language of Love (Part 1) - technet.ms](https://blogs.technet.microsoft.com/askds/2008/04/18/the-security-descriptor-definition-language-of-love-part-1/)
+	* [The Security Descriptor Definition Language of Love (Part 2) - technet.ms](https://blogs.technet.microsoft.com/askds/2008/05/07/the-security-descriptor-definition-language-of-love-part-2/)
+* **Service Accounts**
+	* [Service Account best practices Part 1: Choosing a Service Account](https://4sysops.com/archives/service-account-best-practices-part-1-choosing-a-service-account/)
+		* In this article you will learn the fundamentals of Windows service accounts. Specifically, we discover the options and best practices concerning the selection of a service account for a particular service application.
 * **Server Message Block(SMB)**
 	* [Server Message Block Overview - msdn.ms](https://msdn.microsoft.com/fr-fr/library/hh831795%28v=ws.11%29.aspx)
 * **Symbol Files**

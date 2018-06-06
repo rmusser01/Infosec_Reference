@@ -149,6 +149,27 @@ Memory corruption is for wussies
 
 
 ----------------------------
+## Credentials in Registry
+* [Credentials in Registry - ATT&CK](https://attack.mitre.org/wiki/Technique/T1214)
+	* The Windows Registry stores configuration information that can be used by the system or other programs. Adversaries may query the Registry looking for credentials and passwords that have been stored for use by other programs or services. Sometimes these credentials are used for automatic logons.
+	* Example commands to find Registry keys related to password information:1
+		* Local Machine Hive: `reg query HKLM /f password /t REG_SZ /s`
+		* Current User Hive: `reg query HKCU /f password /t REG_SZ /s`
+
+
+
+
+----------------------------
+## Exploitation for Credential Access
+* [Exploitation for Credential Access - ATT&CK](https://attack.mitre.org/wiki/Technique/T1212)
+	* Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Credentialing and authentication mechanisms may be targeted for exploitation by adversaries as a means to gain access to useful credentials or circumvent the process to gain access to systems. One example of this is MS14-068, which targets Kerberos and can be used to forge Kerberos tickets using domain user permissions. Exploitation for credential access may also result in Privilege Escalation depending on the process targeted or credentials obtained. 
+
+
+
+
+
+
+----------------------------
 ## Exploitation of Vulnerability
 * [Exploitation of Vulnerability - ATT&CK](https://attack.mitre.org/wiki/Technique/T1068)
 	* Exploitation of a software vulnerability occurs when an adversary takes advantage of a programming error in a program, service, or within the operating system software or kernel itself to execute adversary-controlled code. Exploiting software vulnerabilities may allow adversaries to run a command or binary on a remote system for lateral movement, escalate a current process to a higher privilege level, or bypass security mechanisms. Exploits may also allow an adversary access to privileged accounts and credentials. One example of this is MS14-068, which can be used to forge Kerberos tickets using domain user permissions.
@@ -248,6 +269,18 @@ Memory corruption is for wussies
 * [osascript - macphish](https://github.com/cldrn/macphish/wiki/Osascript)
 * [EvilOSX](https://github.com/Marten4n6/EvilOSX)
 	* A pure python, post-exploitation, RAT (Remote Administration Tool) for macOS / OSX.
+
+
+
+------------------------------- 
+## Kerberoasting
+* [Kerberoasting - ATT&CK](https://attack.mitre.org/wiki/Technique/T1208)
+	* Service principal names (SPNs) are used to uniquely identify each instance of a Windows service. To enable authentication, Kerberos requires that SPNs be associated with at least one service logon account (an account specifically tasked with running a service).
+	* Adversaries possessing a valid Kerberos ticket-granting ticket (TGT) may request one or more Kerberos ticket-granting service (TGS) service tickets for any SPN from a domain controller (DC).67 Portions of these tickets may be encrypted with the RC4 algorithm, meaning the Kerberos 5 TGS-REP etype 23 hash of the service account associated with the SPN is used as the private key and is thus vulnerable to offline Brute Force attacks that may expose plaintext credentials.
+	* This same attack could be executed using service tickets captured from network traffic.
+
+
+
 
 
 ------------------------------- 

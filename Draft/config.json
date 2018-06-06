@@ -1,8 +1,17 @@
 {
-    "title": "InfoSec Reference",
+	"title": "InfoSec Reference",
     "tagline": "A Reference that doesn't suck",
     "ignore": {
         "files": ["4.md"],
         "folders": ["99_Not_Ready"]
     }
+	"css": ["theme.min.css"],
+	"js": [],
+	"fonts": ["bookman"],
+	"variants": {
+		"blue": {
+			"favicon": "",
+			"css": ["theme-blue.min.css"]
+		}
+	}
 }

@@ -14,6 +14,9 @@
 
 Sort tools into categories of type, i.e. physical network, wireless(types thereof) etc.
 
+* [SneakyCreeper](https://strikersecurity.com/blog/sneaky-creeper-data-exfiltration-overview/)
+	* A Framework for Data Exfiltration
+	* [Github](https://github.com/DakotaNelson/sneaky-creeper)
 
 ##### End Sort
 

@@ -26,7 +26,17 @@
 * To Add
 	* A proper ToC
 	* Bottom sort section
-	
+* [Reverse Engineering Reference Manual (beta)](https://github.com/yellowbyte/reverse-engineering-reference-manual)
+	*  collage of reverse engineering topics that I find interesting - yellowbyte
+* [A bibliography of papers related to symbolic execution](https://github.com/saswatanand/symexbib)
+* [DbgShell](https://github.com/Microsoft/DbgShell)
+	* A PowerShell front-end for the Windows debugger engine.
+* [BOLO: Reverse Engineering — Part 1 (Basic Programming Concepts) - Daniel Bloom](https://medium.com/bugbountywriteup/bolo-reverse-engineering-part-1-basic-programming-concepts-f88b233c63b7)
+* [WhatsApp Web reverse engineered](https://github.com/sigalor/whatsapp-web-reveng)
+	* This project intends to provide a complete description and re-implementation of the WhatsApp Web API, which will eventually lead to a custom client. WhatsApp Web internally works using WebSockets; this project does as well.
+* [BinDbg](https://github.com/kukfa/bindbg)
+	* BinDbg is a Binary Ninja plugin that syncs WinDbg to Binja to create a fusion of dynamic and static analyses. It was primarily written to improve the Windows experience for Binja debugger integrations.
+
 #### End sort
 
 

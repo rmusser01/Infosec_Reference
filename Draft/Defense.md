@@ -25,8 +25,20 @@
 * [Powershell](#powershell)
 
 ### Sort
+* [Invoke-DOSfuscation](https://github.com/danielbohannon/Invoke-DOSfuscation)
+	* Cmd.exe Command Obfuscation Generator & Detection Test Harness
+* [Powershell Download Cradles - Matthew Green](https://mgreen27.github.io/posts/2018/04/02/DownloadCradle.html)
+	* [DrawBridge](https://github.com/landhb/DrawBridge)
+		* A layer 4 Single Packet Authentication (SPA) Module, used to conceal TCP ports on public facing machines and add an extra layer of security.
 
+* [WindowsDefenderATP-Hunting-Queries](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries)
+	* This repo contains sample queries for Advanced hunting on Windows Defender Advanced Threat Protection. With these sample queries, you can start to experience Advanced hunting, including the types of data that it covers and the query language it supports. You can also explore a variety of attack techniques and how they may be surfaced through Advanced hunting.
 
+* [PE-sieve](https://github.com/hasherezade/pe-sieve)
+	* PE-sieve scans a given process, searching for the modules containing in-memory code modifications. When found, it dumps the modified PE.
+* [ClrGuard](https://github.com/endgameinc/ClrGuard)
+	* ClrGuard is a proof of concept project to explore instrumenting the Common Language Runtime (CLR) for security purposes. ClrGuard leverages a simple appInit DLL (ClrHook32/64.dll) in order to load into all CLR/.NET processes. From there, it performs an in-line hook of security critical functions. Currently, the only implemented hook is on the native LoadImage() function. When events are observed, they are sent over a named pipe to a monitoring process for further introspection and mitigation decision.
+* [Defending against PowerShell attacks - in theory, and in practice by Lee holmes](https://www.youtube.com/watch?v=M5bkHUQy-JA&feature=youtu.be)
 
 https://www.auditscripts.com/free-resources/critical-security-controls/
 * [Windows ISV Software Security Defenses - msdn](https://msdn.microsoft.com/en-us/library/bb430720.aspx)
@@ -37,7 +49,6 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 * [Protected Processes Part 3: Windows PKI Internals (Signing Levels, Scenarios, Signers, Root Keys, EKUs & Runtime Signers)](https://www.crowdstrike.com/blog/protected-processes-part-3-windows-pki-internals-signing-levels-scenarios-signers-root-keys/)
 
 * Add User Awareness Training
-
 
 ### End Sort
 
@@ -119,6 +130,8 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 	* [PHP Secure Configuration Checker](https://github.com/sektioneins/pcc)
 	* [Security + DevOps Automatic Server Hardening - dev-sec.io](http://dev-sec.io/)
 		* Open Source Automated Hardening Framework
+	* [YubiKey-Guide](https://github.com/drduh/YubiKey-Guide)
+		* This is a practical guide to using YubiKey as a SmartCard for storing GPG encryption and signing keys.
 * **SSH**
 	* [ssh-audit](https://github.com/arthepsy/ssh-audit)
 		* SSH server auditing (banner, key exchange, encryption, mac, compression, compatibility, security, etc)
@@ -181,6 +194,8 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 -----------------
 ### <a name="osx"></a>OS X
 * **General**
+	* [macOS-Security-and-Privacy-Guide](https://github.com/drduh/macOS-Security-and-Privacy-Guide)
+		*  A practical guide to securing macOS.
 * **Tools**
 	* [netman](https://github.com/iadgov/netman)
 		* A userland network manager with monitoring and limiting capabilities for macOS.
@@ -203,8 +218,10 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 	* PhishingKitHunter (or PKHunter) is a tool made for identifying phishing kits URLs used in phishing campains targeting your customers and using some of your own website files (as CSS, JS, ...). This tool - write in Python 3 - is based on the analysis of referer's URL which GET particular files on the legitimate website (as some style content) or redirect user after the phishing session. Log files (should) contains the referer URL where the user come from and where the phishing kit is deployed. PhishingKitHunter parse your logs file to identify particular and non-legitimate referers trying to get legitimate pages based on regular expressions you put into PhishingKitHunter's config file.
 * [Catching phishing before they catch you](https://blog.0day.rocks/catching-phishing-using-certstream-97177f0d499a)
 * [Tracking Newly Registered Domains - SANS](https://isc.sans.edu/forums/diary/Tracking+Newly+Registered+Domains/23127/)
-
-
+* [Hunting-Newly-Registered-Domains](https://github.com/gfek/Hunting-New-Registered-Domains)
+	* The hnrd.py is a python utility for finding and analysing potential phishing domains used in phishing campaigns targeting your customers. This utility is written in python (2.7 and 3) and is based on the analysis of the features below by consuming a free daily list provided by the Whoisds site.
+* [SwiftFilter](https://github.com/SwiftOnSecurity/SwiftFilter)
+	* Exchange Transport rules using text matching and Regular Expressions to detect and enable response to basic phishing. Designed to augment EOP in Office 365.
 
 
 
@@ -229,7 +246,8 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 * [AWS Lambda - IAM Access Key Disabler](https://github.com/te-papa/aws-key-disabler)
 	* The AWS Key disabler is a Lambda Function that disables AWS IAM User Access Keys after a set amount of time in order to reduce the risk associated with old access keys.
 * [OWASP Secure Headers Project](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project)
-
+* [The Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws)
+	* A lot of information on AWS is already written. Most people learn AWS by reading a blog or a “getting started guide” and referring to the standard AWS references. Nonetheless, trustworthy and practical information and recommendations aren’t easy to come by. AWS’s own documentation is a great but sprawling resource few have time to read fully, and it doesn’t include anything but official facts, so omits experiences of engineers. The information in blogs or Stack Overflow is also not consistently up to date. This guide is by and for engineers who use AWS. It aims to be a useful, living reference that consolidates links, tips, gotchas, and best practices. It arose from discussion and editing over beers by several engineers who have used AWS extensively.
 
 
 
@@ -402,6 +420,7 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 			* This is a python script that will generate password use statistics from password hashes dumped from a domain controller and a password crack file such as hashcat.potfile generated from the Hashcat tool during password cracking. The report is an HTML report with clickable links.
 			* [Tutorial Video & Demo](https://www.blackhillsinfosec.com/webcast-demo-domain-password-audit-tool/)
 		* [Azure AD and ADFS best practices: Defending against password spray attacks](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/05/azure-ad-and-adfs-best-practices-defending-against-password-spray-attacks/)
+		* [Detect Password Spraying With Windows Event Log Correlation](https://www.ziemba.ninja/?p=66)
 	* **Privileged Access Workstation**
 		* [How Microsoft IT used Windows 10 and Windows Server 2016 to implement privileged access workstations](https://myignite.microsoft.com/sessions/54896)
 			* As part of the security strategy to protect administrative privilege, Microsoft recommends using a dedicated machine, referred to as PAW (privileged access workstation), for administrative tasks; and using a separate device for the usual productivity tasks such as Outlook and Internet browsing. This can be costly for the company to acquire machines just for server administrative tasks, and inconvenient for the admins to carry multiple machines. In this session, we show you how MSIT uses shielded VMs on the new release of Windows client to implement a PAW.
@@ -478,6 +497,8 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 	* **Event Forwarding**
 		* [Windows Event Forwarding Guidance](https://github.com/palantir/windows-event-forwarding) 
 			* Over the past few years, Palantir has a maintained an internal Windows Event Forwarding (WEF) pipeline for generating and centrally collecting logs of forensic and security value from Microsoft Windows hosts. Once these events are collected and indexed, alerting and detection strategies (ADS) can be constructed not only on high-fidelity security events (e.g. log deletion), but also for deviations from normalcy, such as unusual service account access, access to sensitive filesystem or registry locations, or installation of malware persistence. The goal of this project is to provide the necessary building blocks for organizations to rapidly evaluate and deploy WEF to a production environment, and centralize public efforts to improve WEF subscriptions and encourage adoption. While WEF has become more popular in recent years, it is still dramatically underrepresented in the community, and it is our hope that this project may encourage others to adopt it for incident detection and response purposes. We acknowledge the efforts that Microsoft, IAD, and other contributors have made to this space and wish to thank them for providing many of the subscriptions, ideas, and techniques that will be covered in this post.
+		* [Auditing Security Events - WCF - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/auditing-security-events)
+		* [Windows Security Log Events - ultimatewindowssecurity.com](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/)
 * **Hardening**
 	* [Enable Attack surface reduction(Win10)- docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction)
 	* [Harden windows IP Stack](https://www.reddit.com/r/netsec/comments/2sg80a/how_to_harden_windowsiis_ssltls_configuration/)
@@ -485,10 +506,18 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 		* Configuration guidance for implementing the Windows 10 and Windows Server 2016 DoD Secure Host Baseline settings. iadgov
 	* [Mitigate threats by using Windows 10 security features](https://docs.microsoft.com/en-us/windows/threat-protection/overview-of-threat-mitigations-in-windows-10)
 	* [Windows Server guidance to protect against speculative execution side-channel vulnerabilities](https://support.microsoft.com/en-us/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution?t=1&cn=ZmxleGlibGVfcmVjc18y&refsrc=email&iid=149b9032665345ba890ba51d3bf0d519&fl=4&uid=150127534&nid=244%20281088008)
+	* [Awesome Windows Domain Hardening](https://github.com/PaulSec/awesome-windows-domain-hardening)
+		* A curated list of awesome Security Hardening techniques for Windows.
+	* [DCSYNCMonitor](https://github.com/shellster/DCSYNCMonitor)
+		* Monitors for DCSYNC and DCSHADOW attacks and create custom Windows Events for these events.
+	* [Service Account best practices Part 1: Choosing a Service Account](https://4sysops.com/archives/service-account-best-practices-part-1-choosing-a-service-account/)
+		* In this article you will learn the fundamentals of Windows service accounts. Specifically, we discover the options and best practices concerning the selection of a service account for a particular service application.
+	* [Service Account best practices - Part 2: Least Privilege implementation](https://4sysops.com/archives/service-account-best-practices-part-2-least-privilege-implementation/)
+	* In this article you will learn some best-practice suggestions for using service applications according to the IT security rule of least privilege.
+	* [Best Practice: Securing Windows Service Accounts and Privileged Access – Part 1 - SecurIT360](https://www.securit360.com/blog/best-practice-service-accounts/)
+	* [Best Practice: Securing Windows Service Accounts and Privileged Access – Part 2 - SecurIT360](https://www.securit360.com/blog/best-practice-service-accounts-p2/)
 
-
-
-
-
+	* [OpenPasswordFilter](https://github.com/jephthai/OpenPasswordFilter)
+		* An open source custom password filter DLL and userspace service to better protect / control Active Directory domain passwords.
 
 

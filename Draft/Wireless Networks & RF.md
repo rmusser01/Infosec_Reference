@@ -31,7 +31,6 @@
 
 http://umtrx.org/
 
-
 * [Ghosts from the Past: Authentication bypass and OEM backdoors in WiMAX routers](http://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html)
 
 * [Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
@@ -44,6 +43,8 @@ Cellular Networks in Use:
 * In use in Asia:
 * In use in Africa:
 * In use in South America:
+
+
 
 
 
@@ -93,11 +94,14 @@ Cellular Networks in Use:
 **APCO Project 25 (P25)**
 	* [HOPE Number Nine (2012): Practical Insecurity in Encrypted Radio](https://www.youtube.com/watch?v=7or-_gT8TWU&app=desktop)
 		* APCO Project 25 ("P25") is a suite of wireless communications protocols used in the United States and elsewhere for public safety two-way (voice) radio systems. The protocols include security options in which voice and data traffic can be cryptographically protected from eavesdropping. This talk analyzes the security of P25 systems against passive and active adversaries. The panel found a number of protocol, implementation, and user interface weaknesses that routinely leak information to a passive eavesdropper or that permit highly efficient and difficult to detect active attacks. They found new "selective subframe jamming" attacks against P25, in which an active attacker with very modest resources can prevent specific kinds of traffic (such as encrypted messages) from being received, while emitting only a small fraction of the aggregate power of the legitimate transmitter. And, more significantly, they found that even passive attacks represent a serious immediate threat. In an over-the-air analysis conducted over a two year period in several U.S. metropolitan areas, they found that a significant fraction of the "encrypted" P25 tactical radio traffic sent by federal law enforcement surveillance operatives is actually sent in the clear - in spite of their users' belief that they are encrypted - and often reveals such sensitive data as the names of informants in criminal investigations.
+* **Miscellaneous**
+	* [RF-Capture](http://rfcapture.csail.mit.edu/)
+		* RF-Capture is a device that captures a human figure through walls and occlusions. It transmits wireless signals and reconstructs a human figure by analyzing the signals' reflections. RF-Capture does not require the person to wear any sensor, and its transmitted power is 10,000 times lower than that of a standard cell-phone.
+		* [Paper](http://rfcapture.csail.mit.edu/rfcapture-paper.pdf)
 
 
 
-
-
+----------------------
 ### <a name="bt">BlueTooth</a> BlueTooth
 * **101**
 	* [Bluetooth - Wikipedia](https://en.wikipedia.org/wiki/Bluetooth)
@@ -165,6 +169,7 @@ Cellular Networks in Use:
 ### <a name="cn">Cellular Networks</a>
 * **101**
 * **Educational**
+	* [Guide to LTE Security - NIST Special Publication 800-187](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-187.pdf)
 	* [Demystifying the Mobile Network by Chuck McAuley](http://2014.video.sector.ca/video/110383258)
 		* Must watch video. Very informative.
 	* [LTE Security - How good is it?](http://csrc.nist.gov/news_events/cif_2015/research/day2_research_200-250.pdf)
@@ -247,7 +252,7 @@ Cellular Networks in Use:
 
 
 
-
+----------------------
 ### Dongles
 * [FunCube dongle](http://www.funcubedongle.com)
 * [RZUSBstick](http://www.atmel.com/tools/rzusbstick.aspx)
@@ -260,7 +265,9 @@ Cellular Networks in Use:
 
 
 
-## <a name="80211">802.11 - WiFi</a>
+
+----------------------
+### <a name="80211">802.11 - WiFi</a>
 * **101**
 	* [802.11 frames : A starter guide to learn wireless sniffer traces](https://supportforums.cisco.com/t5/wireless-mobility-documents/802-11-frames-a-starter-guide-to-learn-wireless-sniffer-traces/ta-p/3110019)
 	* [IEEE 802.11 Pocket Reference Guide ](http://www.willhackforsushi.com/papers/80211_Pocket_Reference_Guide.pdf)
@@ -400,6 +407,8 @@ Cellular Networks in Use:
 
 
 
+
+----------------------
 ### <a name="rfid">RFID - Radio Frequency Identification</a>
 * **101**
 	* [Radio-frequency identification - Wikipedia](https://en.wikipedia.org/wiki/Radio-frequency_identification)
@@ -425,6 +434,8 @@ Cellular Networks in Use:
 	* [Swiss Army Knife for RFID](https://www.cs.bham.ac.uk/~garciaf/publications/Tutorial_Proxmark_the_Swiss_Army_Knife_for_RFID_Security_Research-RFIDSec12.pdf)
 
 
+
+----------------------
 ### <a name="retroreflectors">RF RetroReflectors</a>
 * **101**
 	* [Modulating retro-reflector - Wikipedia](https://en.wikipedia.org/wiki/Modulating_retro-reflector)
@@ -437,12 +448,23 @@ Cellular Networks in Use:
 	* [The Thing (Listening Device) - Wikipedia](https://en.wikipedia.org/wiki/The_Thing_(listening_device))
 	* [retroreflectors](https://github.com/mossmann/retroreflectors)
 
-
+----------------------
 ### <a name="satellite">Satellite Related</a>
 * [SATELLITE TV RECEIVERS: FROM REMOTE CONTROL TO ROOT SHELL - Sofiane Talmat](https://vimeo.com/album/3682874/video/148910624)
 * [Spread Spectrum Satcom Hacking: Attacking The Globalstar Simplex Data Service - Colby Moore - BHUSA2015](https://www.youtube.com/watch?v=1VbmHmzofmc)
+* [A Wake-Up Call for SATCOM Security - Ruben Santamarta](https://ioactive.com/pdfs/IOActive_SATCOM_Security_WhitePaper.pdf)
+* [Inmarsat-C - Inmarsat](https://www.inmarsat.com/services/safety/inmarsat-c/)
+* [Inmarsat-C - Wikipedia](https://en.wikipedia.org/wiki/Inmarsat-C)
+* [Very-small-aperture terminal - Wikipedia](https://en.wikipedia.org/wiki/Very-small-aperture_terminal)
+* [BGAN](https://www.inmarsat.com/service/bgan/)
+* [Broadband Global Area Network - Wikipedia](https://en.wikipedia.org/wiki/Broadband_Global_Area_Network)
+* [SwiftBroadband - inmarsat](https://www.inmarsat.com/service-collection/swiftbroadband/)
+* [SwiftBroadband - Wikipedia](https://en.wikipedia.org/wiki/SwiftBroadband)
+* [FleetBroadband](https://www.inmarsat.com/service/fleetbroadband/)
+* [Fleet Broadband - Wikipedia](https://en.wikipedia.org/wiki/FleetBroadband)
 
 
+----------------------
 ### <a name="sdr">Software Defined Radio</a>
 * **101**
 	* [Software Defined Radio for Infosec People 101](http://garrettgee.com/appearances/software-defined-radio-for-infosec-people-101/)

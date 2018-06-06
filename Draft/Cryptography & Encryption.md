@@ -13,63 +13,15 @@ To Do:
 * Add educational stuff
 * Robot Attack Details
 
-* [Toward Robust Hidden Volumes Using Write-Only Oblivious RAM](https://eprint.iacr.org/2014/344.pdf) 
-    * With sensitive data being increasingly stored on mobile devices and laptops, hard disk encryption is more important than ever. In partic- ular, being able to plausibly deny that a hard disk contains certain information is a very useful and interesting research goal. However, it has been known for some time that existing “hidden volume” so- lutions, like TrueCrypt, fail in the face of an adversary who is able to observe the contents of a disk on multiple, separate occasions. In this work, we explore more robust constructions for hidden vol- umes and present HIVE, which is resistant to more powerful ad- versaries with multiple-snapshot capabilities. In pursuit of this, we propose the first security definitions for hidden volumes, and prove HIVE secure under these definitions. At the core of HIVE, we de- sign a new write-only Oblivious RAM. We show that, when only hiding writes, it is possible to achieve ORAM with optimal O (1) communication complexity and only poly-logarithmic user mem- ory.  This is a significant improvement over existing work and an independently interesting result.  We go on to show that our write- only ORAM is specially equipped to provide hidden volume func- tionality with low overhead and significantly increased security. Fi- nally, we implement HIVE as a Linux kernel block device to show both its practicality and usefulness on existing platforms.
-* [Secrets and LIE-abilities: The State of Modern Secret Management (2017)](https://medium.com/on-docker/secrets-and-lie-abilities-the-state-of-modern-secret-management-2017-c82ec9136a3d)
-* [Indistinguishability Obfuscation from the Multilinear Subgroup Elimination Assumption](https://eprint.iacr.org/2014/309)
-    *  Abstract: We revisit the question of constructing secure general-purpose indistinguishability obfuscation (iO), with a security reduction based on explicit computational assumptions over multi- linear maps. Previous to our work, such reductions were only known to exist based on meta- assumptions and/or ad-hoc assumptions: In the original constructive work of Garg et al. (FOCS 2013), the underlying explicit computational assumption encapsulated an exponential family of assumptions for each pair of circuits to be obfuscated. In the more recent work of Pass et al. (Crypto 2014), the underlying assumption is a meta-assumption that also encapsulates an exponential family of assumptions, and this meta-assumption is invoked in a manner that captures the specific pair of circuits to be obfuscated. The assumptions underlying both these works substantially capture (either explicitly or implicitly) the actual structure of the obfuscation mechanism itself.  In our work, we provide the first construction of general-purpose indistinguishability obfuscation proven secure via a reduction to a natural computational assumption over multilinear maps, namely, the Multilinear Subgroup Elimination Assumption. This assumption does not depend on the circuits to be obfuscated (except for its size), and does not correspond to the underlying structure of our obfuscator. The technical heart of our paper is our reduction, which gives a new way to argue about the security of indistinguishability obfuscation. 
 
-* [MASCAB: a Micro-Architectural Side-Channel Attack Bibliography](https://github.com/danpage/mascab/)
-    * Cryptography is a fast-moving field, which is enormously exciting but also quite challenging: resources such as the IACR eprint archive and CryptoBib help, but even keeping track of new results in certain sub-fields can be difficult, let alone then making useful contributions. The sub-field of micro-architectural side-channel attacks is an example of this, in part as the result of it bridging multiple disciplines (e.g., cryptography and computer architecture). I've found this particularly challenging (and so frustrating) over say the last 5 years; the volume of papers has expanded rapidly, but the time I'd normally allocate to reading them has been eroded by other commitments (as evidenced by a pile of printed papers gathering dust on my desk). In the end, I decided to tackle this problem by progressively a) collating papers I could read, then b) reading them one-by-one, but in no particular order, and attempting to summarise their contribution (and so organise the sub-field as a whole in my head). MASCAB is the result: after starting to advise MSc and PhD students on how to navigate the sub-field, it seems likely to be of use to others as well.
-From: https://www.reddit.com/r/securityengineering/comments/7o2uzy/a_collection_of_links_to_pdfs_of_papers_on/
-```
-    1973-10-01 "A note on the confinement problem" by Lampson https://www.cs.utexas.edu/~shmat/courses/cs380s_fall09/lampson73.pdf
-    1994-??-?? - "Countermeasures and tradeoffs for a class of covert timing channels" by Ray https://pdfs.semanticscholar.org/5505/384390d0b0bf86de8804baeaf82254572363.pdf
-    2003-09-08 - "Cryptanalysis of DES implemented on computers with cache" by Tsunoo et al. http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.135.1221&rep=rep1&type=pdf
-    2005-04-14 - "Cache-timing attacks on AES" by Bernstein https://cr.yp.to/antiforgery/cachetiming-20050414.pdf
-    2005-05-13 - "CACHE MISSING FOR FUN AND PROFIT" by Percival http://css.csail.mit.edu/6.858/2014/readings/ht-cache.pdf
-    2006-02-13 - "Cache attacks and countermeasures: the case of AES" by Osvik et al. https://www.cs.tau.ac.il/~tromer/papers/cache.pdf
-    2006-08-23 - "Predicting Secret Keys via Branch Prediction" by Aciicmez et al. https://eprint.iacr.org/2006/288.pdf
-    2007-03-20 - "On the Power of Simple Branch Prediction Analysis" by Acıi¸cmez1 et al. https://eprint.iacr.org/2006/351.pdf
-    2007-12-18 - "New Branch Prediction Vulnerabilities in OpenSSL and Necessary Software Countermeasures" by Aciicmez et al. https://eprint.iacr.org/2007/039.pdf
-    2010-11-22 - "Cache Games -- Bringing Access-Based Cache Attacks on AES to Practice" by Gullasch et al https://eprint.iacr.org/2010/594.pdf
-    2012-03-08 - "Plugging Side-Channel Leaks with Timing Information Flow Control" by Ford https://arxiv.org/pdf/1203.3428.pdf
-    2013-05-19 - "Practical Timing Side Channel Attacks against Kernel Space ASLR" by Hund et al. http://www.ieee-security.org/TC/SP2013/papers/4977a191.pdf
-    2013-08-13 - "The Page-Fault Weird Machine: Lessons in Instruction-less Computation" by Bangert et al. https://www.usenix.org/system/files/conference/woot13/woot13-bangert.pdf
-    2013-08-15 - "CacheAudit: A Tool for the Static Analysis of Cache Side Channels" by Doychev et al. https://eprint.iacr.org/2013/253.pdf
-    2013-09-26 - "On the Prevention of Cache-Based Side-Channel Attacks in a Cloud Environment" Godfrey et al. https://pdfs.semanticscholar.org/6367/9824606b1b0deb4a44639a4e4b3e5eb49303.pdf
-    2014-01-01 - "CACHE-BASED SIDE-CHANNEL ATTACKS IN MULTI-TENANT PUBLIC CLOUDS AND THEIR COUNTERMEASURES" by Zhang https://pdfs.semanticscholar.org/95a2/40ac8a7bbee77b32120081f00477e38776fe.pdf
-    2014-11-03 - "The Last Mile An Empirical Study of Timing Channels on seL4" by Cock et al http://research.davidcock.fastmail.fm/papers/Cock_GMH_14.pdf
-    2015-04-02 - "An Empirical Bandwidth Analysis of Interrupt-Related Covert Channels" by Gay e tal. http://www.mais.informatik.tu-darmstadt.de/WebBibPHP/papers/2013/2013-GayMantelSudbrock-EmpiricalIRCC.pdf
-    2015-05-17 - "Last-Level Cache Side-Channel Attacks are Practical" by Liu et al http://palms.ee.princeton.edu/system/files/SP_vfinal.pdf
-    2015-05-17 - "S$A: A Shared Cache Attack That Works across Cores and Defies VM Sandboxing -- and Its Application to AES" - by Irazoqui et al http://users.wpi.edu/~teisenbarth/pdf/SharedCacheAttackSnP2015.pdf
-    2016-03-07 - "Rigorous Analysis of Software Countermeasures against Cache Attacks" by Doychev et al. https://arxiv.org/pdf/1603.02187.pdf
-    2016-06-12 - "Flush+Flush: a fast and stealthy cache attack" by Gruss et al. https://gruss.cc/files/flushflush.pdf
-    2016-08-10 - "Verifying Constant-Time Implementations" by Almeida & Barbosa https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_almeida.pdf
-    2016-10-?? - "Jump over ASLR: Attacking branch predictors to bypass ASLR" by Evtyushkin et al. http://www.cs.wm.edu/~dmitry/assets/files/evtyushkin-micro16-camera.pdf
-    2016-10-?? - "Breaking Kernel Address Space Layout Randomization with Intel TSX" by Jang et al. https://sslab.gtisc.gatech.edu/assets/papers/2016/jang:drk-ccs.pdf
-    2016-10-?? - "A Survey of Microarchitectural Timing Attacks and Countermeasures on Contemporary Hardware" by Qian Ge et al http://eprint.iacr.org/2016/613
-    2016-10-24 - "Prefetch Side-Channel Attacks: Bypassing SMAP and Kernel ASLR" by Gruss et al https://gruss.cc/files/prefetch.pdf
-    2016-01-?? - "Attacking Cloud through cache based side channel in virtualized environment" by Teja et al. http://ijarcsee.org/index.php/IJARCSEE/article/download/301/267
-    2017-02-27 - "ASLR on the Line: Practical Cache Attacks on the MMU" by Gras & Kaveh et al http://www.cs.vu.nl/~herbertb/download/papers/anc_ndss17.pdf
-    2017-03-20 - "CacheZoom: How SGX Amplifies The Power of Cache Attacks" by Moghimi - https://arxiv.org/pdf/1703.06986.pdf
-    2017-05-20 - "Leaky Cauldron on the Dark Land: Understanding Memory Side-Channel Hazards in SGX" by Wang et al https://arxiv.org/pdf/1705.07289.pdf
-    2017-06-24 - "Kaslr is dead: long live kaslr", "the KAISER paper" by Gruss et al https://gruss.cc/files/kaiser.pdf
-    2017-08-16 - "Prime+Abort: A Timer-Free High-Precision L3 Cache Attack using Intel TSX" by Disselkoen et al https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-disselkoen.pdf
-    2017-10-?? - "LAZARUS: Practical Side-Channel Resilient Kernel-Space Randomization" by Gens et al http://jin.ece.ufl.edu/papers/RAID17.pdf
-    2018-01-04 - "Spectre Attacks: Exploiting Speculative Execution" by Kocher et al https://spectreattack.com/spectre.pdf
-    2018-01-04 - "Meltdown" by Lipp et al. https://meltdownattack.com/meltdown.pdf
-```
+* [Indistinguishability Obfuscation from the Multilinear Subgroup Elimination Assumption](https://eprint.iacr.org/2014/309)
+    *  Abstract: We revisit the question of constructing secure general-purpose indistinguishability obfuscation (iO), with a security reduction based on explicit computational assumptions over multilinear maps. Previous to our work, such reductions were only known to exist based on meta- assumptions and/or ad-hoc assumptions: In the original constructive work of Garg et al. (FOCS 2013), the underlying explicit computational assumption encapsulated an exponential family of assumptions for each pair of circuits to be obfuscated. In the more recent work of Pass et al. (Crypto 2014), the underlying assumption is a meta-assumption that also encapsulates an exponential family of assumptions, and this meta-assumption is invoked in a manner that captures the specific pair of circuits to be obfuscated. The assumptions underlying both these works substantially capture (either explicitly or implicitly) the actual structure of the obfuscation mechanism itself. In our work, we provide the first construction of general-purpose indistinguishability obfuscation proven secure via a reduction to a natural computational assumption over multilinear maps, namely, the Multilinear Subgroup Elimination Assumption. This assumption does not depend on the circuits to be obfuscated (except for its size), and does not correspond to the underlying structure of our obfuscator. The technical heart of our paper is our reduction, which gives a new way to argue about the security of indistinguishability obfuscation. 
 
 * Monero
 * Zcash
 https://a16z.com/2018/02/10/crypto-readings-resources/
 * crypto101
 https://conversations.im/xeps/multi-end.html
-
-* [TLS 1.3 Implementations](https://github.com/tlswg/tls13-spec/wiki/Implementations)
-* [Encryption 101, RSA 001 (The maths behind it) - IoTh1nkN0t](https://0x00sec.org/t/encryption-101-rsa-001-the-maths-behind-it/1921)
-
 
 ### End Sort
 
@@ -83,6 +35,7 @@ https://conversations.im/xeps/multi-end.html
     * [Homomorphic encryption](https://en.wikipedia.org/wiki/Homomorphic_encryption)
     * [Differential Cryptanalysis for Dummies - Jon King](https://www.youtube.com/watch?v=xav-GUO_o4s&feature=youtu.be)
     * [Lifetimes of cryptographic hash functions](http://valerieaurora.org/hash.html)
+    * [Hash-based Signatures: An illustrated Primer](https://blog.cryptographyengineering.com/2018/04/07/hash-based-signatures-an-illustrated-primer/)
 * **Articles/Papers/Talks/Writeups**
 * **Auditing**
     * [A Formal Security Analysis of the Signal Messaging Protocol - Oct2016](https://eprint.iacr.org/2016/1013.pdf)
@@ -135,10 +88,64 @@ https://conversations.im/xeps/multi-end.html
             * This is a collection of static SSH keys (host and authentication) that have made their way into software and hardware products. This was inspired by the Little Black Box project, but focused primarily on SSH (as opposed to TLS) keys.
         * [House of Keys](https://github.com/sec-consult/houseofkeys)
         * [Widespread Weak Keys in Network Devices](https://factorable.net/)
+* **Secrets Management**
+    * [Secrets and LIE-abilities: The State of Modern Secret Management (2017)](https://medium.com/on-docker/secrets-and-lie-abilities-the-state-of-modern-secret-management-2017-c82ec9136a3d)
+    * [Toward Robust Hidden Volumes Using Write-Only Oblivious RAM](https://eprint.iacr.org/2014/344.pdf) 
+        * With sensitive data being increasingly stored on mobile devices and laptops, hard disk encryption is more important than ever. In particular, being able to plausibly deny that a hard disk contains certain information is a very useful and interesting research goal. However, it has been known for some time that existing “hidden volume” solutions, like TrueCrypt, fail in the face of an adversary who is able to observe the contents of a disk on multiple, separate occasions. In this work, we explore more robust constructions for hidden volumes and present HIVE, which is resistant to more powerful adversaries with multiple-snapshot capabilities. In pursuit of this, we propose the first security definitions for hidden volumes, and prove HIVE secure under these definitions. At the core of HIVE, we de- sign a new write-only Oblivious RAM. We show that, when only hiding writes, it is possible to achieve ORAM with optimal O(1) communication complexity and only polylogarithmic user mem- ory.  This is a significant improvement over existing work and an independently interesting result.  We go on to show that our write-only ORAM is specially equipped to provide hidden volume functionality with low overhead and significantly increased security. Finally, we implement HIVE as a Linux kernel block device to show both its practicality and usefulness on existing platforms.
+* **Side Channel Attacks**
+    * [MASCAB: a Micro-Architectural Side-Channel Attack Bibliography](https://github.com/danpage/mascab/)
+        * Cryptography is a fast-moving field, which is enormously exciting but also quite challenging: resources such as the IACR eprint archive and CryptoBib help, but even keeping track of new results in certain sub-fields can be difficult, let alone then making useful contributions. The sub-field of micro-architectural side-channel attacks is an example of this, in part as the result of it bridging multiple disciplines (e.g., cryptography and computer architecture). I've found this particularly challenging (and so frustrating) over say the last 5 years; the volume of papers has expanded rapidly, but the time I'd normally allocate to reading them has been eroded by other commitments (as evidenced by a pile of printed papers gathering dust on my desk). In the end, I decided to tackle this problem by progressively a) collating papers I could read, then b) reading them one-by-one, but in no particular order, and attempting to summarise their contribution (and so organise the sub-field as a whole in my head). MASCAB is the result: after starting to advise MSc and PhD students on how to navigate the sub-field, it seems likely to be of use to others as well.
+From: https://www.reddit.com/r/securityengineering/comments/7o2uzy/a_collection_of_links_to_pdfs_of_papers_on/
+```
+    1973-10-01 "A note on the confinement problem" by Lampson https://www.cs.utexas.edu/~shmat/courses/cs380s_fall09/lampson73.pdf
+    1994-??-?? - "Countermeasures and tradeoffs for a class of covert timing channels" by Ray https://pdfs.semanticscholar.org/5505/384390d0b0bf86de8804baeaf82254572363.pdf
+    2003-09-08 - "Cryptanalysis of DES implemented on computers with cache" by Tsunoo et al. http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.135.1221&rep=rep1&type=pdf
+    2005-04-14 - "Cache-timing attacks on AES" by Bernstein https://cr.yp.to/antiforgery/cachetiming-20050414.pdf
+    2005-05-13 - "CACHE MISSING FOR FUN AND PROFIT" by Percival http://css.csail.mit.edu/6.858/2014/readings/ht-cache.pdf
+    2006-02-13 - "Cache attacks and countermeasures: the case of AES" by Osvik et al. https://www.cs.tau.ac.il/~tromer/papers/cache.pdf
+    2006-08-23 - "Predicting Secret Keys via Branch Prediction" by Aciicmez et al. https://eprint.iacr.org/2006/288.pdf
+    2007-03-20 - "On the Power of Simple Branch Prediction Analysis" by Acıi¸cmez1 et al. https://eprint.iacr.org/2006/351.pdf
+    2007-12-18 - "New Branch Prediction Vulnerabilities in OpenSSL and Necessary Software Countermeasures" by Aciicmez et al. https://eprint.iacr.org/2007/039.pdf
+    2010-11-22 - "Cache Games -- Bringing Access-Based Cache Attacks on AES to Practice" by Gullasch et al https://eprint.iacr.org/2010/594.pdf
+    2012-03-08 - "Plugging Side-Channel Leaks with Timing Information Flow Control" by Ford https://arxiv.org/pdf/1203.3428.pdf
+    2013-05-19 - "Practical Timing Side Channel Attacks against Kernel Space ASLR" by Hund et al. http://www.ieee-security.org/TC/SP2013/papers/4977a191.pdf
+    2013-08-13 - "The Page-Fault Weird Machine: Lessons in Instruction-less Computation" by Bangert et al. https://www.usenix.org/system/files/conference/woot13/woot13-bangert.pdf
+    2013-08-15 - "CacheAudit: A Tool for the Static Analysis of Cache Side Channels" by Doychev et al. https://eprint.iacr.org/2013/253.pdf
+    2013-09-26 - "On the Prevention of Cache-Based Side-Channel Attacks in a Cloud Environment" Godfrey et al. https://pdfs.semanticscholar.org/6367/9824606b1b0deb4a44639a4e4b3e5eb49303.pdf
+    2014-01-01 - "CACHE-BASED SIDE-CHANNEL ATTACKS IN MULTI-TENANT PUBLIC CLOUDS AND THEIR COUNTERMEASURES" by Zhang https://pdfs.semanticscholar.org/95a2/40ac8a7bbee77b32120081f00477e38776fe.pdf
+    2014-11-03 - "The Last Mile An Empirical Study of Timing Channels on seL4" by Cock et al http://research.davidcock.fastmail.fm/papers/Cock_GMH_14.pdf
+    2015-04-02 - "An Empirical Bandwidth Analysis of Interrupt-Related Covert Channels" by Gay e tal. http://www.mais.informatik.tu-darmstadt.de/WebBibPHP/papers/2013/2013-GayMantelSudbrock-EmpiricalIRCC.pdf
+    2015-05-17 - "Last-Level Cache Side-Channel Attacks are Practical" by Liu et al http://palms.ee.princeton.edu/system/files/SP_vfinal.pdf
+    2015-05-17 - "S$A: A Shared Cache Attack That Works across Cores and Defies VM Sandboxing -- and Its Application to AES" - by Irazoqui et al http://users.wpi.edu/~teisenbarth/pdf/SharedCacheAttackSnP2015.pdf
+    2016-03-07 - "Rigorous Analysis of Software Countermeasures against Cache Attacks" by Doychev et al. https://arxiv.org/pdf/1603.02187.pdf
+    2016-06-12 - "Flush+Flush: a fast and stealthy cache attack" by Gruss et al. https://gruss.cc/files/flushflush.pdf
+    2016-08-10 - "Verifying Constant-Time Implementations" by Almeida & Barbosa https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_almeida.pdf
+    2016-10-?? - "Jump over ASLR: Attacking branch predictors to bypass ASLR" by Evtyushkin et al. http://www.cs.wm.edu/~dmitry/assets/files/evtyushkin-micro16-camera.pdf
+    2016-10-?? - "Breaking Kernel Address Space Layout Randomization with Intel TSX" by Jang et al. https://sslab.gtisc.gatech.edu/assets/papers/2016/jang:drk-ccs.pdf
+    2016-10-?? - "A Survey of Microarchitectural Timing Attacks and Countermeasures on Contemporary Hardware" by Qian Ge et al http://eprint.iacr.org/2016/613
+    2016-10-24 - "Prefetch Side-Channel Attacks: Bypassing SMAP and Kernel ASLR" by Gruss et al https://gruss.cc/files/prefetch.pdf
+    2016-01-?? - "Attacking Cloud through cache based side channel in virtualized environment" by Teja et al. http://ijarcsee.org/index.php/IJARCSEE/article/download/301/267
+    2017-02-27 - "ASLR on the Line: Practical Cache Attacks on the MMU" by Gras & Kaveh et al http://www.cs.vu.nl/~herbertb/download/papers/anc_ndss17.pdf
+    2017-03-20 - "CacheZoom: How SGX Amplifies The Power of Cache Attacks" by Moghimi - https://arxiv.org/pdf/1703.06986.pdf
+    2017-05-20 - "Leaky Cauldron on the Dark Land: Understanding Memory Side-Channel Hazards in SGX" by Wang et al https://arxiv.org/pdf/1705.07289.pdf
+    2017-06-24 - "Kaslr is dead: long live kaslr", "the KAISER paper" by Gruss et al https://gruss.cc/files/kaiser.pdf
+    2017-08-16 - "Prime+Abort: A Timer-Free High-Precision L3 Cache Attack using Intel TSX" by Disselkoen et al https://www.usenix.org/system/files/conference/usenixsecurity17/sec17-disselkoen.pdf
+    2017-10-?? - "LAZARUS: Practical Side-Channel Resilient Kernel-Space Randomization" by Gens et al http://jin.ece.ufl.edu/papers/RAID17.pdf
+    2018-01-04 - "Spectre Attacks: Exploiting Speculative Execution" by Kocher et al https://spectreattack.com/spectre.pdf
+    2018-01-04 - "Meltdown" by Lipp et al. https://meltdownattack.com/meltdown.pdf
+```
+
+
+
+
+
+
+
+
+
 
 --------------------------------
 ### Specific Implementation Stuff
-
 * **Android**
     * **101**
     * **Articles/Papers/Talks/Writeups**
@@ -157,13 +164,20 @@ https://conversations.im/xeps/multi-end.html
 * **Key Exchange**
     * [The SIGMA Family of Key-Exchange Protocols](http://webee.technion.ac.il/~hugo/sigma-pdf.pdf)
         * Summary: SIGMA is a family of cryptographic key-exchange protocols that provide perfect forward secrecy via a Diffie-Hellman exchange authenticated with digital signatures. SIGMA is designed to support a variety of features and trade-offs required in common practical scenarios (such as identity protection and reduced number of protocol rounds) as well as to enjoy sound cryptographic security. This design puts forth the "SIGn-and-MAc" (SIGMA, for short) approach that carefully combines the use of digital signatures and MAC functions to guarantee an authenticated binding between the Diffie-Hellman key and the identities of the parties to the exchange. This simple approach resolves security shortcomings found in previous protocols. The SIGMA protocols serve as the cryptographic basis for the signature-based modes of the standardized Internet Key Exchange (IKE) protocol, and its current revision IKE version 2. 
+* **MD5**
+    * [Project HashClash](https://marc-stevens.nl/p/hashclash/)
+        * Framework for MD5 & SHA-1 Differential Path Construction and Chosen-Prefix Collisions for MD5. It's goal is to further understanding and study of the weaknesses of MD5 and SHA-1. 
+* **RSA**
+    * [Encryption 101, RSA 001 (The maths behind it) - IoTh1nkN0t](https://0x00sec.org/t/encryption-101-rsa-001-the-maths-behind-it/1921)
 * **Signal**
     * [Demystifying the Signal Protocol for End-to-End Encryption (E2EE)](https://medium.com/@justinomora/demystifying-the-signal-protocol-for-end-to-end-encryption-e2ee-ad6a567e6cb4)
 * **SSL/TLS**
     * **101**
-
     * **Articles/Talks/Writeups**
         * [Poor Man's Guide to Troubleshooting TLS Failures](http://blogs.technet.com/b/tspring/archive/2015/02/23/poor-man-s-guide-to-troubleshooting-tls-failures.aspx)
+        * [TLS 1.3 Implementations](https://github.com/tlswg/tls13-spec/wiki/Implementations)
+        * [s2n](https://github.com/awslabs/s2n)
+            * s2n is a C99 implementation of the TLS/SSL protocols that is designed to be simple, small, fast, and with security as a priority. It is released and licensed under the Apache License 2.0.
     * **Papers**
         * [A Messy State of the Union: Taming the Composite State Machines of TLS](https://www.smacktls.com/smack.pdf)
             * Abstract —Implementations of the Transport Layer Security (TLS) protocol must handle a variety of protocol versions and extensions, authentication modes and key exchange methods, where each combination may prescribe a different message sequence between the client and the server. We address the problem of designing a robust composite state machine that can correctly multiplex between these different protocol modes. We systematically test popular open-source TLS implementations for state machine bugs and discover several critical security vulnerabilities that have lain hidden in these libraries for years (they are now in the process of being patched). We argue that these vulnerabilities stem from incorrect compositions of individually correct state machines. We present the first verified implementation of a composite TLS state machine in C that can be embedded into OpenSSL and accounts for all its supported ciphersuites. Our attacks expose the need for the formal verifica- tion of core components in cryptographic protocol libraries; our implementation demonstrates that such mechanized proofs are within reach, even for mainstream TLS implementations.
@@ -277,6 +291,8 @@ https://conversations.im/xeps/multi-end.html
     * [Ethereum 'White Paper'](https://github.com/ethereum/wiki/wiki/White-Paper)
     * [Cracking the Ethereum White Paper](https://medium.com/@FolusoOgunlana/cracking-the-ethereum-white-paper-e0e60c44126)
     * [The Ether Thief](https://www.bloomberg.com/features/2017-the-ether-thief/)
+    * [Outsmarting-Smart-Contracts](https://github.com/sneakerhax/Outsmarting-Smart-Contracts)
+        * A repo with information about the security of Ethereum Smart Contracts
 * **Shady Shit**
     * [The Problem with Calling Bitcoin a “Ponzi Scheme”](https://prestonbyrne.com/2017/12/08/bitcoin_ponzi/)
     * [Price Manipulation in the Bitcoin Ecosystem](https://www.sciencedirect.com/science/article/pii/S0304393217301666?via%3Dihub)

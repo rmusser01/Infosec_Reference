@@ -33,6 +33,13 @@ To Do
 * [Using an Expanded Cyber Kill Chain Model to Increase Attack Resiliency - Sean Malone - BHUSA16](https://www.youtube.com/watch?v=1Dz12M7u-S8)
 	* We'll review what actions are taken in each phase, and what's necessary for the adversary to move from one phase to the next. We'll discuss multiple types of controls that you can implement today in your enterprise to frustrate the adversary's plan at each stage, to avoid needing to declare "game over" just because an adversary has gained access to the internal network. The primary limiting factor of the traditional Cyber Kill Chain is that it ends with Stage 7: Actions on Objectives, conveying that once the adversary reaches this stage and has access to a system on the internal network, the defending victim has already lost. In reality, there should be multiple layers of security zones on the internal network, to protect the most critical assets. The adversary often has to move through numerous additional phases in order to access and manipulate specific systems to achieve his objective. By increasing the time and effort required to move through these stages, we decrease the likelihood of the adversary causing material damage to the enterprise. 
 	* [Slides](https://www.blackhat.com/docs/us-16/materials/us-16-Malone-Using-An-Expanded-Cyber-Kill-Chain-Model-To-Increase-Attack-Resiliency.pdf)
+* [Powershell Github Shell](https://github.com/zlocal/Powershell-Github-Shell)
+
+
+
+	
+
+
 
 
 #### End sort
@@ -65,6 +72,7 @@ To Do
 	* [Planning Effective Red Team Exercises - Sean T Malone - BSidesSF2016](https://www.youtube.com/watch?v=cD-jKBfSKP4)
 		* An effective red team exercise is substantially different from a penetration test, and it should be chartered differently as well. The scenario, objective, scope, and rules of engagement all need to be positioned correctly at the beginning in order to most closely simulate a real adversary and provide maximum value to the client.In this presentation, we'll review best practices in each of these areas, distilled from conducting dozens of successful red team exercises - along with some war stories highlighting why each element matters. Those in offensive security will gain an understanding of how to manage the client's expectations for this process, and how to guide them towards an engagement that provides a realistic measurement of their ability to prevent, detect, and respond to real attacks. Those in enterprise security will gain a deeper understanding of this style of assessment, and how to work with a red team to drive real improvement in their security programs. 
 	* [Red Team Gut Check - Tim MalcomVetter](https://medium.com/@malcomvetter/red-team-gut-check-10b5976ffd19)
+	* [Internal Red Teams and Insider Knowledge - Tim MalcomVetter](https://medium.com/@malcomvetter/internal-red-teams-and-insider-knowledge-8324555aaf40)
 * **Educational(Specific Tactics/Techniques/Misc)**
 	* [#OLEOutlook - bypass almost every Corporate security control with a point’n’click GUI](https://doublepulsar.com/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0)
 	* [Offensive Encrypted Data Storage](http://www.harmj0y.net/blog/redteaming/offensive-encrypted-data-storage/)
@@ -169,6 +177,8 @@ To Do
 	* [CVE-2018-4878](https://github.com/vysec/CVE-2018-4878)
 		* Aggressor Script to launch IE driveby for CVE-2018-4878
 	* [Aggressor 101: Unleashing Cobalt Strike for Fun and Profit](https://medium.com/@001SPARTaN/aggressor-101-unleashing-cobalt-strike-for-fun-and-profit-879bf22cea31)
+	* [UACBypass Aggressor Script](https://github.com/RhinoSecurityLabs/Aggressor-Scripts/tree/master/UACBypass)
+		* This aggressor script adds three UAC bypass techniques to Cobalt Strike's interface + beacon console.
 * **C2**
 	* [Cobalt Strike External C2 Paper](https://www.cobaltstrike.com/downloads/externalc2spec.pdf)
 	* [External C2 - cs](https://github.com/outflanknl/external_c2)
@@ -218,6 +228,9 @@ To Do
 		* [404 File not found C2 PoC](https://github.com/theG3ist/404)
 	* **ActiveDirectory Features**
 		* [Command and Control Using Active Directory](http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/)
+	* **ARP**
+		* [Zarp](https://github.com/hatRiot/zarp)
+			* Zarp is a network attack tool centered around the exploitation of local networks. This does not include system exploitation, but rather abusing networking protocols and stacks to take over, infiltrate, and knock out. Sessions can be managed to quickly poison and sniff multiple systems at once, dumping sensitive information automatically or to the attacker directly. Various sniffers are included to automatically parse usernames and passwords from various protocols, as well as view HTTP traffic and more. DoS attacks are included to knock out various systems and applications.
 	* **Cobalt Strike**
 		* [External C2](https://github.com/ryhanson/ExternalC2)
 			* A library for integrating communication channels with the Cobalt Strike External C2 server
@@ -227,6 +240,9 @@ To Do
 			* A Powershell client for dnscat2, an encrypted DNS command and control tool
 		* [DNS-Persist](https://github.com/0x09AL/DNS-Persist)
 			* DNS-Persist is a post-exploitation agent which uses DNS for command and control. The server-side code is in Python and the agent is coded in C++.
+	* **Email**
+		* [DicerosBicornis](https://github.com/maldevel/dicerosbicornis)
+			* A stealthy Python based Windows backdoor that uses email as a command and control server.
 	* **HTTP/S-based**
 		* [PoshC2 v3 with SOCKS Proxy (SharpSocks)](https://labs.nettitude.com/blog/poshc2-v3-with-socks-proxy-sharpsocks/)
 		* [PoshC2](https://github.com/nettitude/PoshC2)
@@ -269,6 +285,8 @@ To Do
 		* [twittor - twitter based backdoor](https://github.com/PaulSec/twittor)
 			* A stealthy Python based backdoor that uses Twitter (Direct Messages) as a command and control server This project has been inspired by Gcat which does the same but using a Gmail account.
 		* [Instegogram](https://github.com/endgameinc/instegogram)
+		* [canisrufus](https://github.com/maldevel/canisrufus)
+			* A stealthy Python based Windows backdoor that uses Github as a command and control server.
 	* **WebDAV**
 		* [C2 with webdav](https://pentestlab.blog/2017/09/12/command-and-control-webdav/)
 		* [Using WebDAV features as a covert channel](https://arno0x0x.wordpress.com/2017/09/07/using-webdav-features-as-a-covert-channel/)
@@ -289,6 +307,10 @@ To Do
 	* **WMI-based**
 		* [WMImplant](https://github.com/ChrisTruncer/WMImplant)
 			* WMImplant is a PowerShell based tool that leverages WMI to both perform actions against targeted machines, but also as the C2 channel for issuing commands and receiving results. WMImplant will likely require local administrator permissions on the targeted machine.	
+		* [WheresMyImplant](https://github.com/0xbadjuju/WheresMyImplant)
+			* This WMI provider includes functions to execute commands, payloads, and Empire Agent to maintain a low profile on the host. This is related to the project PowerProvider. PowerProvider provides the deployment methods for the implant.
+		* [PowerProvider](https://github.com/0xbadjuju/PowerProvider/)
+			* PowerProvider: A toolkit to manipulate WMI. Used with WheresMyImplant
 * **Papers**
 	* [Command & Control: Understanding, Denying and Detecting - 2014 - Joseph Gardiner, Marco Cova, Shishir Nagaraja](https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf)
 
@@ -313,13 +335,14 @@ To Do
 	* [TTP: Domain Fronting with Metasploit and Meterpreter - beyondbinary](https://beyondbinary.io/articles/domain-fronting-with-metasploit-and-meterpreter/)
 	* [Alibaba CDN Domain Fronting - Vincent Yiu](https://medium.com/@vysec.private/alibaba-cdn-domain-fronting-1c0754fa0142)
 	* [How I Identified 93k Domain-Frontable CloudFront Domains](https://www.peew.pw/blog/2018/2/22/how-i-identified-93k-domain-frontable-cloudfront-domains)
+	* [Metasploit Domain Fronting With Microsoft Azure - chigstuff](https://chigstuff.com/blog/metasploit-domain-fronting-with-microsoft-azure/)
 * **Domain Tools**
 	* [Domain Hunter](https://github.com/minisllc/domainhunter)
 		* Checks expired domains, bluecoat categorization, and Archive.org history to determine good candidates for phishing and C2 domain names
 	* [AIRMASTER](https://github.com/t94j0/AIRMASTER)
 		* Use ExpiredDomains.net and BlueCoat to find useful domains for red team.
 	* [Chameleon](https://github.com/mdsecactivebreach/Chameleon)
-		* A tool for evading Proxy categorisation
+		* Chameleon is a tool which assists red teams in categorising their infrastructure under arbitrary categories. Currently, the tool supports arbitrary categorisation for Bluecoat, McAfee Trustedsource and IBM X-Force. However, the tool is designed in such a way that additional proxies can be added with ease.
 	* [CatMyFish](https://github.com/Mr-Un1k0d3r/CatMyFish)
 		* Search for categorized domain that can be used during red teaming engagement. Perfect to setup whitelisted domain for your Cobalt Strike beacon C&C.  It relies on expireddomains.net to obtain a list of expired domains. The domain availability is validated using checkdomain.com
 	* [Finding Frontable Domain](https://github.com/rvrsh3ll/FindFrontableDomains)
@@ -347,7 +370,7 @@ To Do
 
 
 
-
+-----------------------------------
 ### <a name="egress"></a>Egress/Exfiltration
 * **See Also: <a href="Exfiltration.md">Exfiltration.md</a>
 * **Articles**
@@ -380,6 +403,9 @@ To Do
 		* Exfiltrate data over screen interfaces
 	
 
+
+
+
 --------------
 ### <a name="empire"></a>Empire
 * **Articles**
@@ -388,15 +414,18 @@ To Do
 	* [Bringing the hashes home with reGeorg & Empire](https://sensepost.com/blog/2016/bringing-the-hashes-home-with-regeorg-empire/)
 	* [Intercepting passwords with Empire and winning](https://sensepost.com/blog/2016/intercepting-passwords-with-empire-and-winning/)
 	* [Advanced Weapons Training - for the Empire - Jeremy Johnson](https://www.slideshare.net/JeremyJohnson166/advanced-weapons-training-for-the-empire)
+	* [Empire API Cheat Sheet](https://github.com/SadProcessor/Cheats/blob/master/EmpireAPI.md)
 * **Customizing**
 	* [Using PowerShell Empire with a Trusted Certificate](https://www.blackhillsinfosec.com/using-powershell-empire-with-a-trusted-certificate/)
 	* [How to Make Empire Communication profiles - bluescreenofjeff](https://github.com/bluscreenofjeff/bluscreenofjeff.github.io/blob/master/_posts/2017-03-01-how-to-make-communication-profiles-for-empire.md)
 	* [Empire – Modifying Server C2 Indicators](http://threatexpress.com/2017/05/empire-modifying-server-c2-indicators/)
 	* [Empire Domain Fronting](https://www.xorrior.com/Empire-Domain-Fronting/)
 	* [Empire without powershell](https://bneg.io/2017/07/26/empire-without-powershell-exe/)
+	* [Build Your Own: Plugins in Empire - strikersecurity](https://strikersecurity.com/blog/empire-plugins/)
 * **Manual**
 	* [RedTrooperFM - Empire Module Wiki](https://github.com/SadProcessor/Cheats/blob/master/RedTrooperFM.md)
 		* A one page Wiki for all your Empire RTFM needs...
+	* [Encrypted Key Exchange understanding - StackOverflow](https://stackoverflow.com/questions/15779392/encrypted-key-exchange-understanding)
 * **Modules & Additions/Extensions**
 	* [Empire-mod-Hackplayers](https://github.com/Hackplayers/Empire-mod-Hackplayers)
 		* Collection of custom Empire Modules
@@ -484,6 +513,8 @@ To Do
 	* [SharpShooter](https://github.com/mdsecactivebreach/SharpShooter)
 		* SharpShooter is a payload creation framework for the retrieval and execution of arbitrary CSharp source code. SharpShooter is capable of creating payloads in a variety of formats, including HTA, JS, VBS and WSF. It leverages James Forshaw's DotNetToJavaScript tool to invoke methods from the SharpShooter DotNet serialised object. Payloads can be retrieved using Web or DNS delivery or both; SharpShooter is compatible with the MDSec ActiveBreach PowerDNS project. Alternatively, stageless payloads with embedded shellcode execution can also be generated for the same scripting formats.
 * **Examples/Samples**
+	* [Invoke-BSOD](https://github.com/peewpw/Invoke-BSOD)
+		* A PowerShell script to induce a Blue Screen of Death (BSOD) without admin privileges. Also enumerates Windows crash dump settings. This is a standalone script, it does not depend on any other files.
 	* [Pupy](https://github.com/n1nj4sec/pupy)
 		* Pupy is an opensource, multi-platform Remote Administration Tool with an embedded Python interpreter. Pupy can load python packages from memory and transparently access remote python objects. Pupy can communicate using different transports and have a bunch of cool features & modules. On Windows, Pupy is a reflective DLL and leaves no traces on disk.
 		* [Pupy WebSocket Transport](https://bitrot.sh/post/28-11-2017-pupy-websocket-transport/)
@@ -502,8 +533,10 @@ To Do
 		* Quasar is a fast and light-weight remote administration tool coded in C#. Providing high stability and an easy-to-use user interface, Quasar is the perfect remote administration solution for you.
 	* [Ares](https://github.com/sweetsoftware/Ares)
 		* Ares is a Python Remote Access Tool.
-
-
+	* [CHAOS](https://github.com/tiagorlampert/CHAOS)
+		* Windows payload generator in go
+	* [go-deliver](https://github.com/0x09AL/go-deliver)
+		* Go-deliver is a payload delivery tool coded in Go.
 
 
 
@@ -697,3 +730,6 @@ To Do
 * **General**
 	* [Hacking Virtual Appliances - Jeremy Brown - Derbycon2015](https://www.irongeek.com/i.php?page=videos/derbycon5/fix-me08-hacking-virtual-appliances-jeremy-brown)
 		* Virtual Appliances have become very prevalent these days as virtualization is ubiquitous and hypervisors commonplace. More and more of the major vendors are providing literally virtual clones for many of their once physical-only products. Like IoT and the CAN bus, it's early in the game and vendors are late as usual. One thing that it catching these vendors off guard is the huge additional attack surface, ripe with vulnerabilities, added in the process. Also, many vendors see software appliances as an opportunity for the customer to easily evaluate the product before buying the physical one, making these editions more accessible and debuggable by utilizing features of the platform on which it runs. During this talk, I will provide real case studies for various vulnerabilities created by mistakes that many of the major players made when shipping their appliances. You'll learn how to find these bugs yourself and how the vendors went about fixing them, if at all. By the end of this talk, you should have a firm grasp of how one goes about getting remotes on these appliances.
+	* [External Enumeration and Exploitation of Email and Web Security Solutions - Ben Williams](https://www.blackhat.com/docs/us-14/materials/us-14-Williams-I-Know-Your-Filtering-Policy-Better-Than-You-Do.pdf)
+	* [Hacking Appliances: Ironic Exploitation Of Security Products - Ben Williams - BHEU 2013](https://www.youtube.com/watch?v=rrjSEkSwwOQ)
+		* [Slides](https://www.blackhat.com/docs/webcast/07182013-Hacking-Appliances-Ironic-exploits-in-security-products.pdf)

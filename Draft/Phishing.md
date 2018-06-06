@@ -15,6 +15,13 @@
 
 #### Sort
 
+* [Image-Cache-Logger](https://github.com/kale/image-cache-logger)
+	* A simple tool to see when other services/clients like Gmail open an image and test if they are storing it within their cache.
+* [Phishing with PowerPoint - BHIS](https://www.blackhillsinfosec.com/phishing-with-powerpoint/)
+* [Phishing with Empire - Enigma0x3](https://enigma0x3.net/2016/03/15/phishing-with-empire/)
+* [Phishing for “Access” - rvrsh3ll's blog](http://www.rvrsh3ll.net/blog/phishing/phishing-for-access/)
+* [Cross-Site Phishing](http://blog.obscuritylabs.com/merging-web-apps-and-red-teams/)
+
 #### End sort
 
 
@@ -105,7 +112,8 @@
 * [ReelPhish: A Real-Time Two-Factor Phishing Tool](https://www.fireeye.com/blog/threat-research/2018/02/reelphish-real-time-two-factor-phishing-tool.html)
 * [ReelPhish](https://github.com/fireeye/ReelPhish)
 	* Tool page
-
+* [ReelPhish: A Real-Time Two-Factor Phishing Tool](https://www.fireeye.com/blog/threat-research/2018/02/reelphish-real-time-two-factor-phishing-tool.html)
+* [ReelPhish](https://github.com/fireeye/ReelPhish)
 
 ------------------
 ### <a name="tools"></a>Tools
@@ -180,6 +188,7 @@
 	* [CVE-2017-8759-Exploit-sample](https://github.com/vysec/CVE-2017-8759-Exploit-sample)
 		* Flow of the exploit: Word macro runs in the Doc1.doc file. The macro downloads a badly formatted txt file over wsdl, which triggers the WSDL parser log. Then the parsing log results in running mshta.exe which in turn runs a powershell commands that runs mspaint.exe
 	* [Office Document Macros, OLE, Actions, DDE Payloads and Filter Bypass - Pwndizzle](https://pwndizzle.blogspot.com.es/2017/03/office-document-macros-ole-actions-dde.html)
+	* [Macro-less Code Exec in MSWord - Sensepost](https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/)
 * **DDE**
 	* [About Dynamic Data Exchange](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648774(v=vs.85).aspx)
 	* [Exploiting Office native functionality: Word DDE edition](https://www.securityforrealpeople.com/2017/10/exploiting-office-native-functionality.html)
@@ -197,6 +206,7 @@
 	* [Malicious HTAs - trustedsec](https://www.trustedsec.com/2015/07/malicious-htas/)
 	* [Exploiting CVE-2017-0199: HTA Handler Vulnerability](https://www.mdsec.co.uk/2017/04/exploiting-cve-2017-0199-hta-handler-vulnerability/)
 	* [CVE-2017-0199 Toolkit](https://github.com/bhdresh/CVE-2017-0199)
+	* [CVE-2017-0199: In the Wild Attacks Leveraging HTA Handler - Fireeye](https://www.fireeye.com/blog/threat-research/2017/04/cve-2017-0199-hta-handler.html)
 * **InfoPath**
 	* [THE {PHISHING} {PATH} TO {INFO} WE MISSED](http://blog.obscuritylabs.com/the-phishing-path-to-info-we-missed/)
 		* TL;DR: InfoPath is a fantastic way to run custom C# code, and we missed it as an attack vector sadly. At the moment it has been deprecated, but don't fret it's still everywhere!
@@ -230,6 +240,8 @@
 	* [Object Linking and Embedding - Wikipedia](https://en.wikipedia.org/wiki/Object_Linking_and_Embedding)
 	* [OLE - msdn.ms](https://msdn.microsoft.com/en-us/library/df267wkc.aspx)
 	* [Phishing with Empire](https://enigma0x3.net/2016/03/15/phishing-with-empire/)
+* **subDoc**
+	* [Abusing Microsoft Word Features for Phishing: “subDoc”](https://rhinosecuritylabs.com/research/abusing-microsoft-word-features-phishing-subdoc/)
 * **XLL**
 	* [Welcome to the Excel Software Development Kit](https://msdn.microsoft.com/en-us/library/office/bb687883.aspx)
 	* [Hello World XLL](https://github.com/edparcell/HelloWorldXll)

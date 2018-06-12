@@ -24,9 +24,9 @@
 
 -----
 ### <a name="writing">Writing</a>
-Start with the first two links, and go from there. They’re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
+Start with the first two links, and go from there. Theyâ€™re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
 * [A beginners guide to writing documentation](http://docs.writethedocs.org/writing/beginners-guide-to-docs/)
-* [Teach, Don’t Tell](http://stevelosh.com/blog/2013/09/teach-dont-tell/)
+* [Teach, Donâ€™t Tell](http://stevelosh.com/blog/2013/09/teach-dont-tell/)
 * [How to Write Papers So People Can Read Them - Derek Dreyer](https://www.youtube.com/watch?v=L_6xoMjFr70)
 
 Other Materials:
@@ -34,7 +34,7 @@ Other Materials:
 	* [What to write](http://jacobian.org/writing/what-to-write/)
 	* [Technical Style](http://jacobian.org/writing/technical-style/)
 	* [Editors](http://jacobian.org/writing/editors/)
-* [Writing Types of User Documentation](https://en.wikiversity.org/wiki/Technical_writing_Types_of_User_Documentation0
+* [Writing Types of User Documentation](https://en.wikiversity.org/wiki/Technical_writing_Types_of_User_Documentation)
 * [How to write a great research paper - Simon Peyton Jones](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/)
 * [The 7 Rules for Writing World Class Technical Documentation](http://www.developer.com/tech/article.php/3848981/The-7-Rules-for-Writing-World-Class-Technical-Documentation.htm)
 * [Teach Technical Writing in Two Hours per Week](http://www.cs.tufts.edu/~nr/pubs/two-abstract.html)

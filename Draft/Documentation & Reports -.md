@@ -25,7 +25,7 @@
 -----
 ### <a name="writing">Writing</a>
 Start with the first two links, and go from there. They’re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
-* [A beginners guide to writing documentation](https://www.writethedocs.org/guide/writing/beginners-guide-to-docs/)
+* [A beginners guide to writing documentation](http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/)
 * [Teach, Don’t Tell](http://stevelosh.com/blog/2013/09/teach-dont-tell/)
 * [How to Write Papers So People Can Read Them - Derek Dreyer](https://www.youtube.com/watch?v=L_6xoMjFr70)
 

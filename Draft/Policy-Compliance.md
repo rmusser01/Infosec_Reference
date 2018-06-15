@@ -5,7 +5,7 @@
 
 https://www.open-scap.org/tools/openscap-base/#documentation
 https://cloudsecurityalliance.org/group/cloud-controls-matrix/#_overview
-
+https://shelteredharbor.org/sh-faqs
 
 ------------
 ### <a name="general"></a>General

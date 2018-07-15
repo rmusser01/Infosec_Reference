@@ -26,7 +26,7 @@
 	* At some point I will sort the sections into a grid alphabetically.
 * For latest content updates, check here: [Things added since last update](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/things-added.md)
 	* This will have all links added to the other pages sorted according to topic, making it easier to see new stuff.
-* All links on this page should work. Last tested 3/3
+* All links on this page should work. Last tested 7/15
 * Contributions are welcome, format is pretty simple/easy to pick up, add anything not already in it that fits.
 
 

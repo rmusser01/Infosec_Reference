@@ -18,6 +18,8 @@ Sort tools into categories of type, i.e. physical network, wireless(types thereo
 	* A Framework for Data Exfiltration
 	* [Github](https://github.com/DakotaNelson/sneaky-creeper)
 
+* [GSMem: Data Exfiltration from Air-Gapped Computers over GSM Frequencies - usenix conference](https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-guri-update.pdf)
+
 ##### End Sort
 
 

@@ -27,15 +27,17 @@
 #### Sort
 * Fix ToC
 * Add 101 stuff
-
+* Add SMS Standards/related
 
 http://umtrx.org/
 
+* [The Great SIM Heist How Spies Stole the Keys to the Encryption Castle - The Intercept](https://theintercept.com/2015/02/19/great-sim-heist/)
 * [Ghosts from the Past: Authentication bypass and OEM backdoors in WiMAX routers](http://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html)
 
 * [Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
 * [Fluxion](https://github.com/wi-fi-analyzer/fluxion)
 	* Fluxion is a remake of linset by vk496 with (hopefully) less bugs and more functionality. It's compatible with the latest release of Kali (rolling). The attack is mostly manual, but experimental versions will automatically handle most functionality from the stable releases.
+* [Binary SMS - The old backdoor to your new thing - contextis](https://www.contextis.com/blog/binary-sms-the-old-backdoor-to-your-new-thing)
 
 Cellular Networks in Use: 
 * In use in North America:

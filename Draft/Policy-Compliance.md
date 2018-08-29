@@ -3,9 +3,11 @@
 
 
 
-https://www.open-scap.org/tools/openscap-base/#documentation
-https://cloudsecurityalliance.org/group/cloud-controls-matrix/#_overview
-https://shelteredharbor.org/sh-faqs
+* [Documentation for OpenSCAP Base](https://www.open-scap.org/tools/openscap-base/#documentation)
+* [Cloud Controls Matrix Working Group](https://cloudsecurityalliance.org/group/cloud-controls-matrix/#_overview)
+
+
+
 
 ------------
 ### <a name="general"></a>General
@@ -18,13 +20,18 @@ https://shelteredharbor.org/sh-faqs
 	* [FATF blacklist - Wikipedia](https://en.wikipedia.org/wiki/FATF_blacklist)
 		* The FATF blacklist was the common shorthand description for the Financial Action Task Force list of "Non-Cooperative Countries or Territories" (NCCTs) issued since 2000, which it perceived to be non-cooperative in the global fight against money laundering and terrorist financing.
 	* [Security Assessment Guidelines for Financial Institutions](https://www.sans.org/reading-room/whitepapers/auditing/security-assessment-guidelines-financial-institutions-993)
-w* **HIPAA**
+	* [SWIFT Customer Security Programme](https://www2.swift.com/uhbonline/books/a2z/customer_security_programme.htm)
+	* [SWIFT Customer Security Controls Framework](https://www.swift.com/myswift/customer-security-programme-csp/security-controls?tl=en#topic-tabs-menu)
+	* [Sheltered Harbor FAQ](https://shelteredharbor.org/sh-faqs)
+* **HIPAA**
 	* [HIPAA vs Security: Building security into medical purchasing decisions - infosystir](https://infosystir.blogspot.com/2018/01/hipaa-vs-security-building-security.html?m=1)
 * **Insider Threat**
 	* [A Survey of Insider Attack Detection Research - 2008](http://web.stanford.edu/class/cs259d/readings/Insider_survey.pdf)
 	* [The “Big Picture” of Insider IT Sabotage Across U.S. Critical Infrastructures](http://web.stanford.edu/class/cs259d/readings/Infrastructure.pdf)
 	* [An Overview of Threat and Risk Assessment](https://www.sans.org/reading-room/whitepapers/auditing/overview-threat-risk-assessment-76)
 	* [The foundation is rotting and the basement is flooding: A deeper look at the implicit trust relationships in your organization](https://www.youtube.com/watch?v=nL64uj9Xm24)
+* **Notable Malicious Occurances**
+	* [Moldovan bank fraud scandal - Wikipedia](https://en.wikipedia.org/wiki/Moldovan_bank_fraud_scandal)
 * **PCI**
 	* [PCI DSS V3.2.1](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf)
 	* [PCI SSC Cloud  Computing  Guidelines - 4/2018](https://www.pcisecuritystandards.org/pdfs/PCI_SSC_Cloud_Guidelines_v3.pdf)
@@ -33,7 +40,8 @@ w* **HIPAA**
 * **Misellaneous**
 	* [Goodhart's Law - Wikipedia](https://en.m.wikipedia.org/wiki/Goodhart%27s_law)
 		* Goodhart's law is an adage named after economist Charles Goodhart, which has been phrased by Marilyn Strathern as: "When a measure becomes a target, it ceases to be a good measure."[1] One way in which this can occur is individuals trying to anticipate the effect of a policy and then taking actions which alter its outcome.
-
+* **Vendor Security**
+	* [Web Application Security Requirements for Google Providers](https://partner-security.withgoogle.com/docs/webapp_requirements)
 
 
 

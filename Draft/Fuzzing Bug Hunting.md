@@ -27,6 +27,14 @@ https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 * [Fuzzing 101 (Part 1)]()
 * [Fuzzing 101 (Part 2)](https://vimeo.com/5237484)
 
+* [Differential testing - Wikipedia](https://en.wikipedia.org/wiki/Differential_testing)
+	* Differential testing, also known as differential fuzzing, is a popular software testing technique that attempts to detect bugs, by providing the same input to a series of similar applications (or to different implementations of the same application), and observing differences in their execution. Differential testing complements traditional software testing, because it is well-suited to find semantic or logic bugs that do not exhibit explicit erroneous behaviors like crashes or assertion failures. Differential testing is sometimes called back-to-back testing. 
+https://github.com/taviso/dbusmap
+https://github.com/IOActive/XDiFF
+* [How to: Fuzzing open source projects with american fuzzy lop (AFL)](https://0x00rick.com/research/2018/04/20/afl_intro.html)
+* [Bug Hunting: Drilling into the Internet of Things(IoT) - DuoLabs](https://duo.com/assets/ebooks/Duo-Labs-Bug-Hunting-Drilling-Into-the-Internet-of-Things-IoT.pdf)
+
+
 #### end sort
 
 

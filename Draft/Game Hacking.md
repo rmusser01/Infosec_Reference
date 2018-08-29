@@ -17,6 +17,8 @@ Fix ToC
 * [PortAIO-Loader](https://github.com/PirateEmpire/PortAIO-Loader) 
 * [Fabien Sanglard's Website](http://fabiensanglard.net/)
 * [Hack the Vote 2016 CTF "The Wall" Solution](https://zerosum0x0.blogspot.com/2016/11/hack-vote-wall-solution.html)
+https://github.com/dsasmblr/game-hacking
+https://github.com/dsasmblr/hacking-online-games
 
 #### End Sort
 

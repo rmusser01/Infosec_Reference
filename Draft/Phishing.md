@@ -6,6 +6,7 @@
 * [Tools](#tools)
 * [Microsoft Outlook/Exchange Related](#msoutlook)
 * [Microsoft Office](#msoffice)
+- [Setting up a Server](#settingup)
 * [Talks/Presentations](#talks)
 
 
@@ -17,10 +18,13 @@
 
 * [Image-Cache-Logger](https://github.com/kale/image-cache-logger)
 	* A simple tool to see when other services/clients like Gmail open an image and test if they are storing it within their cache.
-* [Phishing with PowerPoint - BHIS](https://www.blackhillsinfosec.com/phishing-with-powerpoint/)
-* [Phishing with Empire - Enigma0x3](https://enigma0x3.net/2016/03/15/phishing-with-empire/)
-* [Phishing for “Access” - rvrsh3ll's blog](http://www.rvrsh3ll.net/blog/phishing/phishing-for-access/)
-* [Cross-Site Phishing](http://blog.obscuritylabs.com/merging-web-apps-and-red-teams/)
+* [Malicious Macro MSBuild Generator](https://github.com/infosecn1nja/MaliciousMacroMSBuild)
+	* Generates Malicious Macro and Execute Powershell or Shellcode via MSBuild Application Whitelisting Bypass.
+* [There is a shell in your lunch-box by Rotimi Akinyele](https://hakin9.org/shell-lunch-box-rotimi-akinyele/)
+* [Email Notification on shell connectback MSF Plugin](https://hansesecure.de/howto-msf-email/)
+	* [Code](https://github.com/HanseSecure/metasploit-modules)
+* **To-Do**
+	* Add more on vba
 
 #### End sort
 
@@ -41,6 +45,9 @@
 	* [Email Delivery – What Pen Testers Should Know - cs](https://blog.cobaltstrike.com/2013/10/03/email-delivery-what-pen-testers-should-know/)
 	* [What’s the go-to phishing technique or exploit? - cs](https://blog.cobaltstrike.com/2014/12/17/whats-the-go-to-phishing-technique-or-exploit/)
 	* [Phishing, Lateral Movement, SCADA, OH MY!](https://web.archive.org/web/20160408193653/http://www.idzer0.com/?p=210)
+	* [Phishing with Empire - Enigma0x3](https://enigma0x3.net/2016/03/15/phishing-with-empire/)
+	* [Phishing for “Access” - rvrsh3ll's blog](http://www.rvrsh3ll.net/blog/phishing/phishing-for-access/)
+	* [Cross-Site Phishing](http://blog.obscuritylabs.com/merging-web-apps-and-red-teams/)
 * **Papers**
 	* [Tab Napping - Phishing](http://www.exploit-db.com/papers/13950/)
 	* [Skeleton in the closet. MS Office vulnerability you didn’t know about](https://embedi.com/blog/skeleton-closet-ms-office-vulnerability-you-didnt-know-about)
@@ -55,20 +62,32 @@
 		* This post will explore various opportunities for gaining persistence through native Microsoft Office functionality.  It was inspired by Kostas Lintovois’ similar work which identified ways to persist in transient Virtual Desktop Infrastructure (VDI) environments through adding a VBA backdoor to Office template files 
 	* [One Template To Rule 'Em All](https://labs.mwrinfosecurity.com/publications/one-template-to-rule-em-all/)
 		* This presentation discussed how Office security settings and templates can be abused to gain persistence in VDI implementations where traditional techniques relying on the file system or the Registry are not applicable. Additionally, it was described how the introduction of application control and anti-exploitation technologies may affect code execution in locked down environments and how these controls can be circumvented through the use of VBA.
-
+	* [Spear Phishing 101 - inspired-sec.com](https://blog.inspired-sec.com/archive/2017/05/07/Phishing.html)
 
 
 ----------
 ### <a name="documentation"> Documentation
+* **Dynamic Data Exchange(DDE)**
+	* [About Dynamic Data Exchange](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648774(v=vs.85).aspx)
 * **DomainKeys Identified Mail**
 	* [DomainKeys Identified Mail - Wikipedia](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)
 * **Domain Message Authentication, Reporting, and Conformance - DMARC**
 	* [DMARC - Wikipedia](https://en.wikipedia.org/wiki/DMARC)
 	* [Domain-based Message Authentication, Reporting, and Conformance (DMARC) - RFC7489](https://tools.ietf.org/html/rfc7489)
+* **HTA**
+	* [HTML Application - Wikipedia](https://en.wikipedia.org/wiki/HTML_Application)
+	* [Learn About Scripting for HTML Applications (HTAs) - technet.ms](https://technet.microsoft.com/en-us/scriptcenter/dd742317.aspx)
+	* [Extreme Makeover: Wrap Your Scripts Up in a GUI Interface - technet.ms](https://technet.microsoft.com/en-us/library/ee692768.aspx)
+* **Object Linking and Embedding**
+	* [Object Linking and Embedding - Wikipedia](https://en.wikipedia.org/wiki/Object_Linking_and_Embedding)
+	* [OLE - msdn.ms](https://msdn.microsoft.com/en-us/library/df267wkc.aspx)
 * **Sender Policy Framework - SPF**
 	* [Sender Policy Framework - Wikipedia](https://en.wikipedia.org/wiki/Sender_Policy_Framework)
 * **SMTP Strict Transport Security** 
 	* [SMTP Strict Transport Security](https://lwn.net/Articles/684462/)
+* **XLL**
+	* [Welcome to the Excel Software Development Kit - msdn.ms](https://msdn.microsoft.com/en-us/library/office/bb687883.aspx)
+	* [Accessing XLL code in Excel - docs.ms](https://docs.microsoft.com/en-us/office/client-developer/excel/accessing-xll-code-in-excel)
 * **General**
 	* [SPF, DKIM, and DMARC Demystified - McAfee](https://jira.sakaiproject.org/secure/attachment/43722/sb-spf-dkim-dmarc-demystified.pdf)
 	* [Add commands to your presentation with action buttons](https://support.office.com/en-us/article/Add-commands-to-your-presentation-with-action-buttons-7db2c0f8-5424-4780-93cb-8ac2b6b5f6ce)
@@ -114,6 +133,8 @@
 	* Tool page
 * [ReelPhish: A Real-Time Two-Factor Phishing Tool](https://www.fireeye.com/blog/threat-research/2018/02/reelphish-real-time-two-factor-phishing-tool.html)
 * [ReelPhish](https://github.com/fireeye/ReelPhish)
+
+
 
 ------------------
 ### <a name="tools"></a>Tools
@@ -176,24 +197,23 @@
 
 
 
+
 ------------------
 ### <a name="msoffice"></a>MS Office
 * **General**
 	* [Phishing against Protected View](https://enigma0x3.net/2017/07/13/phishing-against-protected-view/)
-	* [PowerPoint and Custom Actions](https://phishme.com/powerpoint-and-custom-actions/)
-	* [Macro-less Code Exec in MSWord](https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/)
-	* [Macroless DOC malware that avoids detection with Yara rule](https://furoner.wordpress.com/2017/10/17/macroless-malware-that-avoids-detection-with-yara-rule/amp/)
-	* [Phishing with PowerPoint](https://www.blackhillsinfosec.com/phishing-with-powerpoint/)
 	* [Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
-	* [CVE-2017-8759-Exploit-sample](https://github.com/vysec/CVE-2017-8759-Exploit-sample)
-		* Flow of the exploit: Word macro runs in the Doc1.doc file. The macro downloads a badly formatted txt file over wsdl, which triggers the WSDL parser log. Then the parsing log results in running mshta.exe which in turn runs a powershell commands that runs mspaint.exe
 	* [Office Document Macros, OLE, Actions, DDE Payloads and Filter Bypass - Pwndizzle](https://pwndizzle.blogspot.com.es/2017/03/office-document-macros-ole-actions-dde.html)
-	* [Macro-less Code Exec in MSWord - Sensepost](https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/)
+	* **PowerPoint**
+		* [Phishing with PowerPoint - BHIS](https://www.blackhillsinfosec.com/phishing-with-powerpoint/)
+		* [PowerPoint and Custom Actions](https://phishme.com/powerpoint-and-custom-actions/)
 * **DDE**
-	* [About Dynamic Data Exchange](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648774(v=vs.85).aspx)
 	* [Exploiting Office native functionality: Word DDE edition](https://www.securityforrealpeople.com/2017/10/exploiting-office-native-functionality.html)
 	* [Excel DDE Walkthrough](https://github.com/merrillmatt011/Excel_DDE_Walkthrough/blob/master/Excel_DDE_Walkthrough.pdf)
 	* [Macro-less Code Exec in MSWord - Sensepost](https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/)
+	* [Macroless DOC malware that avoids detection with Yara rule](https://furoner.wordpress.com/2017/10/17/macroless-malware-that-avoids-detection-with-yara-rule/amp/)
+	* [Office-DDE-Payloads](https://github.com/0xdeadbeefJERKY/Office-DDE-Payloads)
+		* Collection of scripts and templates to generate Office documents embedded with the DDE, macro-less command execution technique.
 * **DLL**
 	* [DLL Tricks with VBA to Improve Offensive Macro Capability](https://labs.mwrinfosecurity.com/blog/dll-tricks-with-vba-to-improve-offensive-macro-capability/)
 	* [DLL Execution via Excel.Application RegisterXLL() method](https://gist.github.com/ryhanson/227229866af52e2d963cf941af135a52)
@@ -201,8 +221,6 @@
 	* [ExcelDllLoader](https://github.com/3gstudent/ExcelDllLoader)
 		* Execute DLL via the Excel.Application object's RegisterXLL() method
 * **HTA**
-	* [HTML Application - Wikipedia](https://en.wikipedia.org/wiki/HTML_Application)
-	* [Learn About Scripting for HTML Applications (HTAs)](https://technet.microsoft.com/en-us/scriptcenter/dd742317.aspx)
 	* [Malicious HTAs - trustedsec](https://www.trustedsec.com/2015/07/malicious-htas/)
 	* [Exploiting CVE-2017-0199: HTA Handler Vulnerability](https://www.mdsec.co.uk/2017/04/exploiting-cve-2017-0199-hta-handler-vulnerability/)
 	* [CVE-2017-0199 Toolkit](https://github.com/bhdresh/CVE-2017-0199)
@@ -219,36 +237,44 @@
 		* [Excel macros with PowerShell](https://4sysops.com/archives/excel-macros-with-powershell/)
 		* [Multi-Platform Macro Phishing Payloads](https://medium.com/@malcomvetter/multi-platform-macro-phishing-payloads-3b688e8eff68)
 	* **Tools**
-		* [Pafish Macro](https://github.com/joesecurity/pafishmacro)
-			* Pafish Macro is a Macro enabled Office Document to detect malware analysis systems and sandboxes. It uses evasion & detection techniques implemented by malicious documents.
-	* [Malicious Macro Generator](https://github.com/Mr-Un1k0d3r/MaliciousMacroGenerator)
-		* Simple utility design to generate obfuscated macro that also include a AV / Sandboxes escape mechanism.
-	* [macphish](https://github.com/cldrn/macphish)
-		* Office for Mac Macro Payload Generator 
-	* [Generate Macro - Tool](https://github.com/enigma0x3/Generate-Macro)
-	* [RobustPentestMacro](https://github.com/mgeeky/RobustPentestMacro)
-		* This is a rich-featured Visual Basic macro code for use during Penetration Testing assignments, implementing various advanced post-exploitation techniques.
-	* [Generate MS Office Macro Malware Script](https://github.com/enigma0x3/Generate-Macro/blob/master/Generate-Macro.ps1)
-		* Standalone Powershell script that will generate a malicious Microsoft Office document with a specified payload and persistence method
-	* [VBad](https://github.com/Pepitoh/VBad)
-		* VBad is fully customizable VBA Obfuscation Tool combined with an MS Office document generator. It aims to help Red & Blue team for attack or defense.
-	* [Wepwnise](https://labs.mwrinfosecurity.com/tools/wepwnise/)
-		* WePWNise is a proof-of-concept python script that generates architecture independent VBA code to be used in Office documents or templates. It aims in introducing a certain level of automation and intelligence to dynamically deliver its payload, circumventing defences such as application control and anti-exploitation mitigations that may exist on a target system.
-	* [CVE-2017-8759-Exploit-sample](https://github.com/vysec/CVE-2017-8759-Exploit-sample)
-		* Flow of the exploit: Word macro runs in the Doc1.doc file. The macro downloads a badly formatted txt file over wsdl, which triggers the WSDL parser log. Then the parsing log results in running mshta.exe which in turn runs a powershell commands that runs mspaint.exe
+		* **Generators**
+			* [Pafish Macro](https://github.com/joesecurity/pafishmacro)
+				* Pafish Macro is a Macro enabled Office Document to detect malware analysis systems and sandboxes. It uses evasion & detection techniques implemented by malicious documents.
+			* [Malicious Macro Generator](https://github.com/Mr-Un1k0d3r/MaliciousMacroGenerator)
+				* Simple utility design to generate obfuscated macro that also include a AV / Sandboxes escape mechanism.
+			* [macphish](https://github.com/cldrn/macphish)
+				* Office for Mac Macro Payload Generator 
+			* [Generate Macro - Tool](https://github.com/enigma0x3/Generate-Macro)
+			* [Generate MS Office Macro Malware Script](https://github.com/enigma0x3/Generate-Macro/blob/master/Generate-Macro.ps1)
+				* Standalone Powershell script that will generate a malicious Microsoft Office document with a specified payload and persistence method
+			* [Wepwnise](https://labs.mwrinfosecurity.com/tools/wepwnise/)
+				* WePWNise is a proof-of-concept python script that generates architecture independent VBA code to be used in Office documents or templates. It aims in introducing a certain level of automation and intelligence to dynamically deliver its payload, circumventing defences such as application control and anti-exploitation mitigations that may exist on a target system.
+		* **Samples**
+			* [CVE-2017-8759-Exploit-sample](https://github.com/vysec/CVE-2017-8759-Exploit-sample)
+				* Flow of the exploit: Word macro runs in the Doc1.doc file. The macro downloads a badly formatted txt file over wsdl, which triggers the WSDL parser log. Then the parsing log results in running mshta.exe which in turn runs a powershell commands that runs mspaint.exe
+		* **Obfuscation**
+			* [VBad](https://github.com/Pepitoh/VBad)
+				* VBad is fully customizable VBA Obfuscation Tool combined with an MS Office document generator. It aims to help Red & Blue team for attack or defense.
 * **OLE**
-	* [Object Linking and Embedding - Wikipedia](https://en.wikipedia.org/wiki/Object_Linking_and_Embedding)
-	* [OLE - msdn.ms](https://msdn.microsoft.com/en-us/library/df267wkc.aspx)
 	* [Phishing with Empire](https://enigma0x3.net/2016/03/15/phishing-with-empire/)
 * **subDoc**
 	* [Abusing Microsoft Word Features for Phishing: “subDoc”](https://rhinosecuritylabs.com/research/abusing-microsoft-word-features-phishing-subdoc/)
+* **VBA**
+	* [RobustPentestMacro](https://github.com/mgeeky/RobustPentestMacro)
+		* This is a rich-featured Visual Basic macro code for use during Penetration Testing assignments, implementing various advanced post-exploitation techniques.
 * **XLL**
-	* [Welcome to the Excel Software Development Kit](https://msdn.microsoft.com/en-us/library/office/bb687883.aspx)
 	* [Hello World XLL](https://github.com/edparcell/HelloWorldXll)
 		* This is a simple XLL, showing how to create an XLL from scratch.
 	* [xllpoc](https://github.com/MoooKitty/xllpoc)
 		* A small project that aggregates community knowledge for Excel XLL execution, via xlAutoOpen() or PROCESS_ATTACH.
 
+
+
+------------------
+### Setting up a Server
+* [Mail Servers Made Easy - Inspired-Sec](https://blog.inspired-sec.com/archive/2017/02/14/Mail-Server-Setup.html)
+* [Postfix-Server-Setup](https://github.com/n0pe-sled/Postfix-Server-Setup)
+	* "Setting up a phishing server is a very long and tedious process. It can take hours to setup, and can be compromised in minutes. The esteemed gentlemen @cptjesus and @Killswitch_GUI have already made leaps and bounds in this arena. I took everything that I learned from them on setting up a server, and applied it to a bash script to automate the process.""
 
 
 ------------------
@@ -263,3 +289,11 @@
 * [MetaPhish - Valsmith, Colin Ames, and David Kerb - DEF CON 17](https://www.youtube.com/watch?v=3DYOMkkTK4A)
 
 
+------------------
+### <a name="pretext"></a> Phishing Pre-texts
+* [Phishing Pretexts](https://github.com/L4bF0x/PhishingPretexts)
+	* A library of pretexts to use on offensive phishing engagements. Orginially presented at Layer8 by @L4bF0x and @RizzyRong.
+	* [Video Presentation](https://www.youtube.com/watch?v=D21E_2sXqmo)
+	* [Slides](https://goo.gl/U6qiiy)
+* [RealBusinessmen](http://realbusinessmen.com/)
+	* All Business, All the Time.

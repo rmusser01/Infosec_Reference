@@ -19,70 +19,60 @@
 
 
 
-##### To Do
-* Create incident Response section
+#### Sort
 * Expand ELK Stack
 * Flesh out InfraMonitoring
 
+https://github.com/appbaseio/dejavu
 
-#### Sort
-* [Windows Event Forwarding Guidance](https://github.com/palantir/windows-event-forwarding) 
-	* Over the past few years, Palantir has a maintained an internal Windows Event Forwarding (WEF) pipeline for generating and centrally collecting logs of forensic and security value from Microsoft Windows hosts. Once these events are collected and indexed, alerting and detection strategies (ADS) can be constructed not only on high-fidelity security events (e.g. log deletion), but also for deviations from normalcy, such as unusual service account access, access to sensitive filesystem or registry locations, or installation of malware persistence. The goal of this project is to provide the necessary building blocks for organizations to rapidly evaluate and deploy WEF to a production environment, and centralize public efforts to improve WEF subscriptions and encourage adoption. While WEF has become more popular in recent years, it is still dramatically underrepresented in the community, and it is our hope that this project may encourage others to adopt it for incident detection and response purposes. We acknowledge the efforts that Microsoft, IAD, and other contributors have made to this space and wish to thank them for providing many of the subscriptions, ideas, and techniques that will be covered in this post.
+https://github.com/TTP0/drone/blob/master/README.md
 
-* [ThreatHunting - GossiTheDog](https://github.com/GossiTheDog/ThreatHunting)
-	* Tools for hunting for threats.
+http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Analysis-What-Should-You-Choose.pdf
 
 * [HTTPS on every port? - SANS](https://isc.sans.edu/forums/diary/HTTPS+on+every+port/23261/%E2%80%94)
-* [ElastAlert](https://github.com/Yelp/elastalert)
-	* ElastAlert is a simple framework for alerting on anomalies, spikes, or other patterns of interest from data in Elasticsearch.
-
-* [Ninja Level Infrastructure Monitoring Workshop - Defcon24](https://github.com/appsecco/defcon24-infra-monitoring-workshop)
-	* This repository contains all the presentation, documentation and the configuration, sample logs, ansible playbook, customized dashboards and more.
-* [Sysinternals Sysmon suspicious activity guide - blogs.technet](https://blogs.technet.microsoft.com/motiba/2017/12/07/sysinternals-sysmon-suspicious-activity-guide/)
 
 * [Advanced Security Audit Policy Settings](https://technet.microsoft.com/en-us/library/dn319056(v=ws.11).aspx)
 
-* [Many ways of malware persistence (that you were always afraid to ask) ](http://jumpespjump.blogspot.com/2015/05/many-ways-of-malware-persistence-that.html)
-* [Utilizing SysInternal Tools for IT Pros](http://www.microsoftvirtualacademy.com/training-courses/utilizing-sysinternals-tools-for-it-pros#fbid=1IKsqgyvnWp)
-* [License to Kill: Malware Hunting with the Sysinternals Tools](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/ATC-B308)
-* [Aktaion: Open Source Tool For "Micro Behavior Based" Exploit Detection and Automated GPO Policy Generation](https://github.com/jzadeh/Aktaion)
-	* Aktaion is a lightweight JVM based project for detecting exploits (and more generally attack behaviors). The project is meant to be a learning/teaching tool on how to blend multiple security signals and behaviors into an expressive framework for intrusion detection. The cool thing about the project is it provides an expressive mechanism to add high level IOCs (micro beahviors) such as timing behavior of a certain malware family.
+* [Many ways of malware persistence (that you were always afraid to ask)](http://jumpespjump.blogspot.com/2015/05/many-ways-of-malware-persistence-that.html)
+	* [JA3 - A method for profiling SSL/TLS Clients](https://github.com/salesforce/ja3)
+		* JA3 is a method for creating SSL/TLS client fingerprints that are easy to produce and can be easily shared for threat intelligence. 
+	* [Talk/Presentation](https://www.youtube.com/watch?v=oprPu7UIEuk&feature=youtu.be)
+		* In this talk we will show the benefits of SSL fingerprinting, JA3’s capabilities, and how best to utilize it in your detection and response operations. We will show how to utilize JA3 to find and detect SSL malware on your network. Imagine detecting every Meterpreter shell, regardless of C2 and without the need for SSL interception. We will also announce JA3S, JA3 for SSL server fingerprinting. Imagine detecting every Metasploit Multi Handler or [REDACTED] C2s on AWS. Then we’ll tie it all together, making you armed to the teeth for detecting all things SSL.
+
 * [Diamond](https://github.com/python-diamond/Diamond)
 	* Diamond is a python daemon that collects system metrics and publishes them to [Graphite](http://diamond.readthedocs.io/en/latest/handlers/GraphiteHandler/) (and others). It is capable of collecting cpu, memory, network, i/o, load and disk metrics. Additionally, it features an API for implementing custom collectors for gathering metrics from almost any source.
 	* [Documentation](http://diamond.readthedocs.io/en/latest/)
+
 * [laikaboss](https://github.com/lmco/laikaboss)
-http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Analysis-What-Should-You-Choose.pdf
+
+
 * [limacharlie](https://github.com/refractionpoint/limacharlie)
 	* Endpoint monitoring stack.
+
 * [Using rwuniq for Top-10 Lists](https://tools.netsa.cert.org/confluence/display/tt/Using+rwuniq+for+Top-10+Lists)
 * [ELSA](https://github.com/mcholste/elsa)
-* [bmon - bandwidth monitor and rate estimator](https://github.com/tgraf/bmon)
-	* bmon is a monitoring and debugging tool to capture networking related statistics and prepare them visually in a human friendly way. It features various output methods including an interactive curses user interface and a programmable text output for scripting.
+
 * [Aktaion: Open Source Tool For "Micro Behavior Based" Exploit Detection and Automated GPO Policy Generation](https://github.com/jzadeh/Aktaion)
 	* Aktaion is a lightweight JVM based project for detecting exploits (and more generally attack behaviors). The project is meant to be a learning/teaching tool on how to blend multiple security signals and behaviors into an expressive framework for intrusion detection. The cool thing about the project is it provides an expressive mechanism to add high level IOCs (micro beahviors) such as timing behavior of a certain malware family.
 
-* [The Incident Response Hierarchy of Needs](https://github.com/swannman/ircapabilities)
-	* The Incident Response Hierarchy is modeled after [Maslow's Hierarchy of Needs](https://github.com/swannman/ircapabilities). It describes the capabilities that organizations must build to defend their business assets.
-
-* [Network Forensics with Windows DNS Analytical Logging](https://blogs.technet.microsoft.com/teamdhcp/2015/11/23/network-forensics-with-windows-dns-analytical-logging/)
-* [ The Quieter You Become, the More You’re Able to (H)ELK -  Nate Guagenti, Roberto Rodriquez - BSides Colombus Ohio 2018](https://www.irongeek.com/i.php?page=videos/bsidescolumbus2018/p05-the-quieter-you-become-the-more-youre-able-to-helk-nate-guagenti-roberto-rodriquez)
-	* Enabling the correct endpoint logging and centralizing the collection of different data sources has finally become a basic security standard. This allows organizations to not just increase the level of visibility, but to enhance their threat detection. Solutions such as an (Elastic) ELK stack have largely been adopted by small and large organizations for data ingestion, storage and visualization. Although, it might seem that collecting a massive amount of data is all analysts need to do their jobs, there are several challenges for them when faced with large, unstructured and often incomplete/disparate data sets. In addition to the sisyphean task of detecting and responding to adversaries there may be pitfalls with organizational funding, support, and or approval (Government). Although “everyone” is collecting logs and despite the many challenges, we will show you how to make sense of these logs in an efficient and consistent way. Specifically when it comes to Windows Event logs (ie: Sysmon, PowerShell, etc) and the ability to map fields to other logs such as Bro NSM or some other network monitoring/prevention device. This will include different Windows Event log data normalization techniques across the 1,000+ unique Event IDs and its 3,000+ unique fields. Also, proven data normalization techniques such as hashing fields/values for logs such as PowerShell, Scheduled Tasks, Command Line, and more. These implementations will show how it allows an analyst to efficiently “pivot” from an endpoint log to a NSM log or a device configuration change log. However, we will also show how an analyst can make an informed decision without degrading/hindering their investigation as well as to enhance their decision. Whether this is preventing an analyst from excluding keywords that a malicious actor may include as an “evasion” technique or adding additional analysis techniques (ie: graphing).
-* [WEBCAST: Tales from the Network Threat Hunting Trenches - BHIS](https://www.blackhillsinfosec.com/webcast-tales-network-threat-hunting-trenches/)
-	* In this webcast John walks through a couple of cool things we’ve found useful in some recent network hunt teams. He also shares some of our techniques and tools (like RITA) that we use all the time to work through massive amounts of data. There are lots of awesome websites that can greatly increase the effectiveness of your in network threat hunting.
-* [Windows-Hunting](https://github.com/beahunt3r/Windows-Hunting)
-	* The Purpose of this repository is to aid windows threat hunters to look for some common artifacts during their day to day operations.
 * [process-forest](https://github.com/williballenthin/process-forest)
 	* process-forest is a tool that processes Microsoft Windows EVTX event logs that contain process accounting events and reconstructs the historical process heirarchies. That is, it displays the parent-child relationships among programs. When using this tool during an incident response engagement, identifying a reverse shell process quickly leads to the processes launched by the operator, and insight into how it may be maintaining persistence.
-* [Places of Interest in Stealing NetNTLM Hashes - osandamalith.com/](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
-* [Using Osquery to Detect Reverse Shells on MacOS - Chris Long](https://www.clo.ng/blog/osquery_reverse_shell/)
 
+* [Places of Interest in Stealing NetNTLM Hashes - osandamalith.com/](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
+
+
+* Add stuff on OSQuery
+* [Using Osquery to Detect Reverse Shells on MacOS - Chris Long](https://www.clo.ng/blog/osquery_reverse_shell/)
 
 #### End Sort
 
 
 ---------------------------
 ### Network Security Monitoring/Logging/Threat Hunting
-* **101/Educational**
+* **History**
+	* [The Origin of Threat Hunting - TaoSecurity](https://taosecurity.blogspot.com/2017/03/the-origin-of-threat-hunting.html?m=1)
+* **101**
+* **Educational**
 * **Courses**
 * **General**
 * **Articles/Presentations/Talks/Writeups**
@@ -103,6 +93,8 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 		* [Making the Most of OSSEC](http://www.ossec.net/files/Making_the_Most_of_OSSEC.pdf)
 		* [Using SiLK for Network  Traffic Analysis](https://tools.netsa.cert.org/silk/analysis-handbook.pdf)
 		* [Current State of Virtualizing Network Monitoring](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t202-current-state-of-virtualizing-network-monitoring-daniel-lohin-ed-sealing)
+		* [The Quieter You Become, the More You’re Able to (H)ELK -  Nate Guagenti, Roberto Rodriquez - BSides Colombus Ohio 2018](https://www.irongeek.com/i.php?page=videos/bsidescolumbus2018/p05-the-quieter-you-become-the-more-youre-able-to-helk-nate-guagenti-roberto-rodriquez)
+			* Enabling the correct endpoint logging and centralizing the collection of different data sources has finally become a basic security standard. This allows organizations to not just increase the level of visibility, but to enhance their threat detection. Solutions such as an (Elastic) ELK stack have largely been adopted by small and large organizations for data ingestion, storage and visualization. Although, it might seem that collecting a massive amount of data is all analysts need to do their jobs, there are several challenges for them when faced with large, unstructured and often incomplete/disparate data sets. In addition to the sisyphean task of detecting and responding to adversaries there may be pitfalls with organizational funding, support, and or approval (Government). Although “everyone” is collecting logs and despite the many challenges, we will show you how to make sense of these logs in an efficient and consistent way. Specifically when it comes to Windows Event logs (ie: Sysmon, PowerShell, etc) and the ability to map fields to other logs such as Bro NSM or some other network monitoring/prevention device. This will include different Windows Event log data normalization techniques across the 1,000+ unique Event IDs and its 3,000+ unique fields. Also, proven data normalization techniques such as hashing fields/values for logs such as PowerShell, Scheduled Tasks, Command Line, and more. These implementations will show how it allows an analyst to efficiently “pivot” from an endpoint log to a NSM log or a device configuration change log. However, we will also show how an analyst can make an informed decision without degrading/hindering their investigation as well as to enhance their decision. Whether this is preventing an analyst from excluding keywords that a malicious actor may include as an “evasion” technique or adding additional analysis techniques (ie: graphing).
 * **Breach Detection/Response**
 	* **Articles/Blogposts/Presentations/Talks/Writeups**
 		* [The fox is in the Henhouse - Detecting a breach before the damage is done](http://www.irongeek.com/i.php?page=videos/houseccon2015/t302-the-fox-is-in-the-henhouse-detecting-a-breach-before-the-damage-is-done-josh-sokol)
@@ -120,7 +112,8 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 		* Scripts to setup and install Bro IDS, Elastic Search, Logstash, Kibana, and Critical Stack on a Raspberry Pi 3 device
 	* [Response Operation Collections Kit Reference Build](https://github.com/rocknsm/rock)
 * **Infrastructure Monitoring**
-
+	* [Ninja Level Infrastructure Monitoring Workshop - Defcon24](https://github.com/appsecco/defcon24-infra-monitoring-workshop)
+		* This repository contains all the presentation, documentation and the configuration, sample logs, ansible playbook, customized dashboards and more.
 * **General Tools**
 	* **General**
 		* [Security Onion](http://blog.securityonion.net/p/securityonion.html)
@@ -162,6 +155,16 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 		* [Shellcode Analysis Pipeline](https://7h3ram.github.io/2014/3/18/shellcode-pipeline/)
 			* I recently required an automated way of analyzing shellcode and verifying if it is detected by Libemu, Snort, Suricata, Bro, etc. Shellcode had to come from public sources like Shell-Storm, Exploit-DB and Metasploit. I needed an automated way of sourcing shellcode from these projects and pass it on to the analysis engines in a pipeline-like mechanism. This posts documents the method I used to complete this task and the overall progress of the project.
 * **Logging**
+	* **Bandwidth**
+		* [bmon - bandwidth monitor and rate estimator](https://github.com/tgraf/bmon)
+			* bmon is a monitoring and debugging tool to capture networking related statistics and prepare them visually in a human friendly way. It features various output methods including an interactive curses user interface and a programmable text output for scripting.
+	* **ESXi**
+		* **Articles/Writeups**
+			* [ESXi Security Events Log Monitoring - communities.vmware](https://communities.vmware.com/docs/DOC-11542)
+			* [Analyze ESXi Logs for Security-Related Messages](http://buildvirtual.net/analyze-esxi-logs-for-security-related-messages/)
+		* **Tools**
+			* [sexilog](https://github.com/sexibytes/sexilog)
+				* SexiLog is a specific ELK virtual appliance designed for vSphere environment 
 	* **Linux**
 		* [Syslong-ng](https://github.com/balabit/syslog-ng) 
 	* syslog-ng is an enhanced log daemon, supporting a wide range of input and output methods: syslog, unstructured text, message queues, databases (SQL and NoSQL alike) and more.
@@ -180,6 +183,8 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 			[Introduction to Windows Event Forwarding](https://hackernoon.com/the-windows-event-forwarding-survival-guide-2010db7a68c4)
 			* [Use Windows Event Forwarding to help with intrusion detection](https://docs.microsoft.com/en-us/windows/threat-protection/use-windows-event-forwarding-to-assist-in-instrusion-detection)
 			* [Monitoring what matters – Windows Event Forwarding for everyone (even if you already have a SIEM.)](https://blogs.technet.microsoft.com/jepayne/2015/11/23/monitoring-what-matters-windows-event-forwarding-for-everyone-even-if-you-already-have-a-siem/)
+			* [Windows Event Forwarding Guidance](https://github.com/palantir/windows-event-forwarding) 
+				* Over the past few years, Palantir has a maintained an internal Windows Event Forwarding (WEF) pipeline for generating and centrally collecting logs of forensic and security value from Microsoft Windows hosts. Once these events are collected and indexed, alerting and detection strategies (ADS) can be constructed not only on high-fidelity security events (e.g. log deletion), but also for deviations from normalcy, such as unusual service account access, access to sensitive filesystem or registry locations, or installation of malware persistence. The goal of this project is to provide the necessary building blocks for organizations to rapidly evaluate and deploy WEF to a production environment, and centralize public efforts to improve WEF subscriptions and encourage adoption. While WEF has become more popular in recent years, it is still dramatically underrepresented in the community, and it is our hope that this project may encourage others to adopt it for incident detection and response purposes. We acknowledge the efforts that Microsoft, IAD, and other contributors have made to this space and wish to thank them for providing many of the subscriptions, ideas, and techniques that will be covered in this post.
 		* **Event Log**
 			* [Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
 				* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it-s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What-s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
@@ -208,16 +213,37 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 		* [WMI-IDS](https://github.com/fireeye/flare-wmi/tree/master/WMI-IDS)
 			* WMI-IDS is a proof-of-concept agent-less host intrusion detection system designed to showcase the unique ability of WMI to respond to and react to operating system events in real-time.
 * **Threat Hunting**
-	* [Hunting Red Team Empire C2 Infrastructure](http://www.chokepoint.net/2017/04/hunting-red-team-empire-c2.html)
-	* [Windows Log Hunting with PowerShell](http://909research.com/windows-log-hunting-with-powershell/)
-	* [Hunting in Memory](https://www.endgame.com/blog/technical-blog/hunting-memory)
-	* [Windows Log Hunting with PowerShell](http://909research.com/windows-log-hunting-with-powershell/)
-	* [Taking Hunting to the Next Level Hunting in Memory - Jared Atkinson 2017](https://www.youtube.com/watch?v=3RUMShnJq_I)
-	* [Sysmon - The Best Free Windows Monitoring Tool You Aren't Using](http://909research.com/sysmon-the-best-free-windows-monitoring-tool-you-arent-using/)
-	* [SysInternals: SysMon Unleashed](https://blogs.technet.microsoft.com/motiba/2016/10/18/sysinternals-sysmon-unleashed/)
+	* **101**
+		* [Threat Hunting Workshop - Methodologies for Threat Analysis - RiskIQ](https://www.youtube.com/playlist?list=PLgLzPE5LJevb_PcjMYMF2ypjnVcKf8rjY)
+	* **Articles/Writeups**
+		* [Hunting Red Team Empire C2 Infrastructure](http://www.chokepoint.net/2017/04/hunting-red-team-empire-c2.html)
+		* [Windows Log Hunting with PowerShell](http://909research.com/windows-log-hunting-with-powershell/)
+		* [Hunting in Memory](https://www.endgame.com/blog/technical-blog/hunting-memory)
+		* [Windows Log Hunting with PowerShell](http://909research.com/windows-log-hunting-with-powershell/)
+		* [Taking Hunting to the Next Level Hunting in Memory - Jared Atkinson 2017](https://www.youtube.com/watch?v=3RUMShnJq_I)
+		* [Sysmon - The Best Free Windows Monitoring Tool You Aren't Using](http://909research.com/sysmon-the-best-free-windows-monitoring-tool-you-arent-using/)
+		* [SysInternals: SysMon Unleashed](https://blogs.technet.microsoft.com/motiba/2016/10/18/sysinternals-sysmon-unleashed/)
+		* [Sysinternals Sysmon suspicious activity guide - blogs.technet](https://blogs.technet.microsoft.com/motiba/2017/12/07/sysinternals-sysmon-suspicious-activity-guide/)
+
+	* **Talks & Presentations**
+		* [WEBCAST: Tales from the Network Threat Hunting Trenches - BHIS](https://www.blackhillsinfosec.com/webcast-tales-network-threat-hunting-trenches/)
+			* In this webcast John walks through a couple of cool things we’ve found useful in some recent network hunt teams. He also shares some of our techniques and tools (like RITA) that we use all the time to work through massive amounts of data. There are lots of awesome websites that can greatly increase the effectiveness of your in network threat hunting.
+		* [License to Kill: Malware Hunting with the Sysinternals Tools](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/ATC-B308)
+		* [Utilizing SysInternal Tools for IT Pros](http://www.microsoftvirtualacademy.com/training-courses/utilizing-sysinternals-tools-for-it-pros#fbid=1IKsqgyvnWp)
+	* **Tools**
+		* [ThreatHunting - GossiTheDog](https://github.com/GossiTheDog/ThreatHunting)
+			* Tools for hunting for threats.)
+		* [Windows-Hunting](https://github.com/beahunt3r/Windows-Hunting)
+			* The Purpose of this repository is to aid windows threat hunters to look for some common artifacts during their day to day operations.
 * **Traffic Analysis**
 	* [Behavioral Analysis using DNS, Network Traffic and Logs, Josh Pyorre (@joshpyorre)](https://www.youtube.com/watch?v=oLemvzZjDOs&index=13&list=PLwZycuzv10iLBFwRIWNAR-s4iuuUMRuEB)
 		* Multiple methods exist for detecting malicious activity in a network, including intrusion detection, anti-virus, and log analysis. However, the majority of these use signatures, looking for already known events and they typically require some level of human intervention and maintenance. Using behavioral analysis methods, it may be possible to observe and create a baseline of average behavior on a network, enabling intelligent notification of anomalous activity. This talk will demonstrate methods of performing this activity in different environments. Attendees will learn new methods which they can apply to further monitor and secure their networks
+	* **DNS**
+		* [Network Forensics with Windows DNS Analytical Logging](https://blogs.technet.microsoft.com/teamdhcp/2015/11/23/network-forensics-with-windows-dns-analytical-logging/)
+	* **SMB**
+		* [An Introduction to SMB for Network Security Analysts - 401trg](https://401trg.com/an-introduction-to-smb-for-network-security-analysts/)
+	* **TLS**
+		* [TLS client fingerprinting with Bro](https://www.securityartwork.es/2017/02/02/tls-client-fingerprinting-with-bro/)
 	* **Tools**
 		* **Frameworks**
 			* [RITA - Real Intelligence Threat Analytics](https://github.com/ocmdev/rita)
@@ -287,13 +313,23 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 	* **101**
 		* [Introduction and Demo to the Elasticsearch, Logstash and Kibana](https://www.youtube.com/watch?v=GrdzX9BNfkg)
 	* **Elastic Search**
-		* [Elasticsearch: The Definitive Guide The Definitive Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html)
+		* **101**
+			* [Elasticsearch: The Definitive Guide The Definitive Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html)
+		* **Reference**
+		* **Articles/Writeups**
+		* **Tools**
+			* [ElastAlert](https://github.com/Yelp/elastalert)
+				* ElastAlert is a simple framework for alerting on anomalies, spikes, or other patterns of interest from data in Elasticsearch.
 	* **Kibana**
-		* [Kibana](https://github.com/elasticsearch/kibana)
-			* Kibana is an open source (Apache Licensed), browser based analytics and search dashboard for Elasticsearch. Kibana is a snap to setup and start using. Kibana strives to be easy to get started with, while also being flexible and powerful, just like Elasticsearch.
-		* [Introduction to Kibana](http://www.elasticsearch.org/guide/en/kibana/current/introduction.html)
-		* [Kibana Documentation/Guides](http://www.elasticsearch.org/guide/en/kibana/current/)
-		* [Installing Kibana](http://www.elasticsearch.org/overview/kibana/installation/)
+		* **101**
+			* [Kibana](https://github.com/elasticsearch/kibana)
+				* Kibana is an open source (Apache Licensed), browser based analytics and search dashboard for Elasticsearch. Kibana is a snap to setup and start using. Kibana strives to be easy to get started with, while also being flexible and powerful, just like Elasticsearch.
+			* [Introduction to Kibana](http://www.elasticsearch.org/guide/en/kibana/current/introduction.html)
+		* **Reference**
+			* [Kibana Documentation/Guides](http://www.elasticsearch.org/guide/en/kibana/current/)
+			* [Installing Kibana](http://www.elasticsearch.org/overview/kibana/installation/)
+		* **Articles/Writeups**
+			* [Kibana 5 Introduction - timroe.de](https://www.timroes.de/2016/10/23/kibana5-introduction/)
 	* **LogStash**
 		* [LogStash](https://github.com/elasticsearch/logstash)
 			* Logstash is a tool for managing events and logs. You can use it to collect logs, parse them, and store them for later use (like, for searching). If you store them in Elasticsearch, you can view and analyze them with Kibana. It is fully free and fully open source. The license is Apache 2.0, meaning you are pretty much free to use it however you want in whatever way.

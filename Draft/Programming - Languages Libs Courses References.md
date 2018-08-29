@@ -20,11 +20,8 @@
 
 ### Sort
 
-* [Providence](https://github.com/salesforce/Providence
+* [Providence](https://github.com/salesforce/Providence)
 	* Providence is a system for code commit & bug system monitoring. It is deployed within an organization to monitor code commits for security (or other) concerns, via customizable plugins. A plugin performs logic whenever a commit occurs.
-* [Damn Small Vulnerable Web](https://github.com/stamparm/DSVW)
-	* Damn Small Vulnerable Web (DSVW) is a deliberately vulnerable web application written in under 100 lines of code, created for educational purposes. It supports majority of (most popular) web application vulnerabilities together with appropriate attacks.
-* [Application Security in a DevOps Environment - Lyft](https://eng.lyft.com/application-security-in-a-devops-environment-53092f8a6048)
 
 #### End Sort
 
@@ -35,24 +32,47 @@
 -----------
 ### <a name="general">General</a>
 * The content here is just stuff I've come across or think would be useful to someone in infosec. It is not to be taken as anything beyond a suggestion about stuff.
-* **101**
-* **Design Patterns**
-	* [The Death Star Design Pattern](https://kkovacs.eu/the-death-star-design-pattern)
-	* [Loop Patterns](https://users.cs.duke.edu/~ola/patterns/plopd/loops.html#loop-and-a-half)
 * **Educational**
 	* [App Ideas - Stuff to build out ot improve your programming skills](https://github.com/tastejs/awesome-app-ideas)
 	* [How to be a Programmer: Community Version](https://github.com/braydie/HowToBeAProgrammer)
 		* To be a good programmer is difficult and noble. The hardest part of making real a collective vision of a software project is dealing with one's coworkers and customers. Writing computer programs is important and takes great intelligence and skill. But it is really child's play compared to everything else that a good programmer must do to make a software system that succeeds for both the customer and myriad colleagues for whom he or she is partially responsible. In this essay I attempt to summarize as concisely as possible those things that I wish someone had explained to me when I was twenty-one.
 	* [Learn_X_in_Y_Minutes](http://learnxinyminutes.com/)
 	* [Hyperpolyglot](http://hyperpolyglot.org/)
+
+
+
+
+
+-----------
+### <a name="securedev"></a> Secure Development Patterns/Practices/Resources
 * **General**
+	* [OWASP Developer Guide Reboot](https://github.com/OWASP/DevGuide)
+	* [Microsoft Software Development Lifecycle Process Guidance](https://msdn.microsoft.com/en-us/library/windows/desktop/cc307406.aspx)
 	* [Security Guide for Developers](https://github.com/FallibleInc/security-guide-for-developers)
-* **Articles/Blogposts/Writeups**
-* **Talks**
-* **Testing**
+* **Design Patterns**
+	* [The Death Star Design Pattern](https://kkovacs.eu/the-death-star-design-pattern)
+	* [Loop Patterns](https://users.cs.duke.edu/~ola/patterns/plopd/loops.html#loop-and-a-half)
+* **Development Lifecycle/Things to Read While Still in The Design/Early Development Stages**
+	* [OWASP Proactive Controls](https://www.owasp.org/index.php/OWASP_Proactive_Controls?refresh=123#tab=OWASP_Proactive_Controls_2016)
+		* The OWASP Top Ten Proactive Controls 2016 is a list of security concepts that should be included in every software development project. They are ordered by order of importance, with control number 1 being the most important.
+	* [OWASP Application Security Verification Standard](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
+* **Secure Coding Documents**
+	* [Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
+	* [Secure Coding Cheat Sheet - OWASP](https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet)
+	* [Secure iOS application development](https://github.com/felixgr/secure-ios-app-dev)
+		* This guide is a collection of the most common vulnerabilities found in iOS applications. The focus is on vulnerabilities in the applications’ code and only marginally covers general iOS system security, Darwin security, C/ObjC/C++ memory safety, or high-level application security. Nevertheless, hopefully the guide can serve as training material to iOS app developers that want to make sure that they ship a more secure app. Also, iOS security reviewers can use it as a reference during assessments.
+* **Articles/Papers/Talks/Writeups**
+	* [Counterfeit Object-oriented Programming](http://syssec.rub.de/media/emma/veroeffentlichungen/2015/03/28/COOP-Oakland15.pdf)
+	* [Application Security in a DevOps Environment - Lyft](https://eng.lyft.com/application-security-in-a-devops-environment-53092f8a6048)
+* **Secure File Upload**
+	* [8 Basic Rules to Implement Secure File Uploads - SANS](https://software-security.sans.org/blog/2009/12/28/8-basic-rules-to-implement-secure-file-uploads/)
+* **Software Testing**
 	* [Big picture software testing unit testing, Lean Startup, and everything in between PyCon 2017](https://www.youtube.com/watch?v=Vaq_e7qUA-4&feature=youtu.be&t=63s)
 		* There are many ways you can test your software: unit testing, manual testing, end-to-end testing, and so forth. Take a step back and you'll discover even more form of testing, many of them very different in their goals: A/B testing, say, where you see which of two versions of your website results in more signups or ad clicks. How do these forms of testing differ, how do they relate to each other? How do you choose which kind of testing to pursue, given limited time and resources? How do you deal with strongly held yet opposite views arguing either that a particular kind of testing is essential or that it's a waste time? This talk will provide you with a model, a way to organize all forms of testing and understand what exactly they provide, and why. Once you understand the model you will be able to choose the right form of testing for *your* situation and goals.
-* **Miscellaneous**
+	* [When to Test and How to Test It - Bruce Potter - Derbycon7](https://www.youtube.com/watch?v=Ej97WyEMRkI)
+		* “I think we need a penetration test” This is one of the most misunderstood phrases in the security community. It can mean anything from “Someone should run a vulnerability scan against a box” to “I’d like nation-state capable actors to tell me everything that wrong with my enterprise” and everything in between. Security testing is a complex subject and it can be hard to understand what the best type of testing is for a given situation. This talk will examine the breadth of software security testing. From early phase unit and abuse testing to late phase penetration testing, this talk will provide details on the different tests that can be performed, what to expect from the testing, and how to select the right tests for your situation. Test coverage, work effort, attack simulation, and reporting results will be discussed. Also, this talk will provide a process for detailed product assessments, i.e.: if you’ve got a specific product you’re trying to break, how do you approach assessing the product in a way that maximizes your chance of breaking in as well as maximizing the coverage you will get from your testing activity.
+* **Talks & Presentations**
+	* [Securing without Slowing DevOps - Wolfgang Goerlich - Circle City Con 5.0](https://www.youtube.com/watch?v=y8MopriNaMo&feature=youtu.be)
 * [Six Stages of debugging](http://plasmasturm.org/log/6debug/)
 	```
 		* 1. That can’t happen.
@@ -63,27 +83,6 @@
 		* 6. How did that ever work?
 	```
 
-
-
-
-
-
------------
-### <a name="securedev"></a> Secure Development Practices/Resources
-* **101**
-* **General**
-	* [OWASP Developer Guide Reboot](https://github.com/OWASP/DevGuide)
-	* [Microsoft Software Development Lifecycle Process Guidance](https://msdn.microsoft.com/en-us/library/windows/desktop/cc307406.aspx)
-	* [OWASP Proactive Controls](https://www.owasp.org/index.php/OWASP_Proactive_Controls?refresh=123#tab=OWASP_Proactive_Controls_2016)
-		* The OWASP Top Ten Proactive Controls 2016 is a list of security concepts that should be included in every software development project. They are ordered by order of importance, with control number 1 being the most important.
-	* [OWASP Application Security Verification Standard](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
-	* [Secure Coding Standards - Android](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=111509535)
-	* [Secure Coding Cheat Sheet - OWASP](https://www.owasp.org/index.php/Secure_Coding_Cheat_Sheet)
-	* [Secure iOS application development](https://github.com/felixgr/secure-ios-app-dev)
-		* This guide is a collection of the most common vulnerabilities found in iOS applications. The focus is on vulnerabilities in the applications’ code and only marginally covers general iOS system security, Darwin security, C/ObjC/C++ memory safety, or high-level application security. Nevertheless, hopefully the guide can serve as training material to iOS app developers that want to make sure that they ship a more secure app. Also, iOS security reviewers can use it as a reference during assessments.
-* **Articles/Papers/Talks/Writeups**
-	* [Counterfeit Object-oriented Programming](http://syssec.rub.de/media/emma/veroeffentlichungen/2015/03/28/COOP-Oakland15.pdf)
-* **Tools**
 
 
 -----------
@@ -483,7 +482,8 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 		* This is a fork of scapy (http://www.secdev.org) to make it compatible with python3. Fork based on scapy v2.3.1 All tests from regression (758 tests), ipsec, and both other test suites pass. Also, I tested full tutorial series [Building Network Tools with Scapy by @thepacketgeek](http://thepacketgeek.com/series/building-network-tools-with-scapy/) using scapy-python3. Please, submit all issues https://github.com/phaethon/scapy preferrably with .pcap files for tests. Bugs for individual layers are usually easy to fix.
 	* [python-digitalocean](https://github.com/koalalorenzo/python-digitalocean)
 		* Python module to manage Digital Ocean droplets 
-
+	* [docopt](https://github.com/docopt/docopt)
+		* Pythonic command line arguments parser, that will make you smile https://github.com/docopt/docopt
 
 
 ----------

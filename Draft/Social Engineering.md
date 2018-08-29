@@ -1,21 +1,15 @@
 # Social Engineering
+
+
+------------------------
 ## Table of Contents
-
-* [Articles](#articles)
-* [Books](#books)
-* [Presentations](#talks)
-* [Papers](#papers)
-* [Tools](#tools)
-
+- [Articles](#articles)
+- [Books](#books)
+- [Presentations](#talks)
+- [Papers](#papers)
+- [Tools](#tools)
 
 
-
-#### sort
-
-
-http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
-
-#### end sort
 
 
 ------------------------
@@ -29,8 +23,9 @@ http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/
 * [The Social Engineering Framework](http://www.social-engineer.org/framework/general-discussion/)
 	* The Social Engineering Framework is a searchable information resource for people wishing to learn more about the psychological, physical and historical aspects of social engineering. 
 * [Phishing Family Tree Now: A Social Engineering Odyssey](https://www.blackhillsinfosec.com/?p=5629)
-
-
+* [The Man Who Captures Criminals for the D.E.A. by Playing Them - The New Yorker](https://www.newyorker.com/magazine/2018/07/30/the-man-who-captures-criminals-for-the-dea-by-playing-them)
+* [Construal-Level Theory of Psychological Distance](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/)
+	* People are capable of thinking about the future, the past, remote locations, another person’s perspective, and counterfactual alternatives. Without denying the uniqueness of each process, it is proposed that they constitute different forms of traversing psychological distance. Psychological distance is egocentric: Its reference point is the self in the here and now, and the different ways in which an object might be removed from that point—in time, in space, in social distance, and in hypotheticality—constitute different distance dimensions. Transcending the self in the here and now entails mental construal, and the farther removed an object is from direct experience, the higher (more abstract) the level of construal of that object. Supporting this analysis, research shows (a) that the various distances are cognitively related to each other, (b) that they similarly influence and are influenced by level of mental construal, and (c) that they similarly affect prediction, preference, and action.
 
 
 ----------------------

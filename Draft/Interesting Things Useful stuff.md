@@ -1,57 +1,24 @@
 # Interesting Things & Useful Stuff
 
 ## Table of Contents
-* [Attribution](#attribution)
-* [News/Reports](#news)
-* [General](#general)
-* [Tamper Evidence](#tamper)
-* [General Interesting things that aren't neccessarily infosec related](#notinfo)
-* [Interesting Talks & Videos](#talks)
-* [Interesting & Useful Attacks](#attacks)
-* [Interesting & Useful Papers](#papers)
-* [Interesting & Useful Hardware Projects](#hwprojects)
-* [Interesting & Useful Software](#software))
-* [Interesting & Useful Write-ups](#writeup)
-* [Simulators](#sim)
-* [Screen Scraping](#scrape)
-* [Various Purpose Based OS's](#purpose)
-* change all the above.
 
 
+#### Sort
+* [A Verified Information-Flow Architecture](http://www.crash-safe.org/assets/verified-ifc-long-draft-2013-11-10.pdf)
+	* SAFE is a clean-slate design for a highly secure computer system, with pervasive mechanisms for tracking and limiting information flows. At the lowest level, the SAFE hardware supports fine-grained programmable tags, with efficient and flexible propagation and combination of tags as instructions are executed. The operating system virtualizes these generic facilities to present an information-flow abstract machine that allows user programs to label sensitive data with rich confidentiality policies. We present a formal, machine-checked model of the key hardware and software mechanisms used to control information flow in SAFE and an end- to-end proof of noninterference for this model.
+* [SimpleVisor](https://github.com/ionescu007/SimpleVisor)
+	* SimpleVisor is a simple, portable, Intel VT-x hypervisor with two specific goals: using the least amount of assembly code (10 lines), and having the smallest amount of VMX-related code to support dynamic hyperjacking and unhyperjacking (that is, virtualizing the host state from within the host). It works on Windows and UEFI.
 
-
-
-
-
-
-
-
-#### To Sort
-* sort and break into policy/high level/ vs interesting things
-
-* [Cubicles and Compromises - Webcast](https://www.blackhillsinfosec.com/webcast-cubicles-compromises/)
-	* [Printable Version](https://www.blackhillsinfosec.com/cubicles-compromises-printable/)
-* [The Marketing Behind MongoDB](https://www.nemil.com/mongo/3.html)
-
-* Add:
-	* Organizational Drift
-	* Pournelle's iron law
-	* Peter Principle
-	
-* [Programming Sucks](http://www.stilldrinking.org/programming-sucks)
 
 http://spth.virii.lu/articles.htm
+https://bugs.php.net/bug.php?id=50696
 
-* [teleport](https://github.com/gravitational/teleport)
-	* Modern SSH server for clusters and teams. 
+
+* [A Sysadmin's Unixersal Translator (ROSETTA STONE)](http://bhami.com/rosetta.html)
 * [Virtualization Based Security - Part 2: kernel communications](http://blog.amossys.fr/virtualization-based-security-part2.html)
 * [Binary SMS - The old backdoor to your new thing](https://www.contextis.com/resources/blog/binary-sms-old-backdoor-your-new-thing/)
-* [A Sysadmin's Unixersal Translator (ROSETTA STONE)](http://bhami.com/rosetta.html)
-* [Windows Firewall Control - Managing Windows Firewall is now easier than ever](https://www.binisoft.org/wfc.php)
 * [OSX for Hackers (Mavericks/Yosemite)](https://gist.github.com/matthewmueller/e22d9840f9ea2fee4716)
-
 * [Apple’s Software “Problem” and “Fixing” It (via twitter)](https://medium.learningbyshipping.com/apples-software-problem-and-fixing-it-via-twitter-c941a905ba20)
-
 * [Shadowbrokers](https://github.com/misterch0c/shadowbroker)
 	* The Shadow Brokers "Lost In Translation" leak
 
@@ -63,41 +30,10 @@ http://spth.virii.lu/articles.htm
 * [explainshell.com](https://github.com/idank/explainshell)
 	* explainshell is a tool (with a web interface) capable of parsing man pages, extracting options and explain a given command-line by matching each argument to the relevant help text in the man page.
 
-* [Magic Wormhole](https://github.com/warner/magic-wormhole)
-	* This package provides a library and a command-line tool named wormhole, which makes it possible to get arbitrary-sized files and directories (or short pieces of text) from one computer to another. The two endpoints are identified by using identical "wormhole codes": in general, the sending machine generates and displays the code, which must then be typed into the receiving machine.
-
-* [Object-oriented HTML](https://github.com/Michaelkielstra/Object-oriented-HTML)
-	* HTML isn't a programming language as such, it's actually a markup language. This means that it misses out on a lot of the good stuff that real programming languages have, including the joys of object-oriented programming. This project brings inheritance, polymorphism, and public "methods" to HTML. With startling imagination, I've called it object-oriented HTML and chosen the file extension .oohtml.
-
-* [Upspin](https://github.com/upspin/upspin)
-	* Upspin is an experimental project to build a framework for naming and sharing files and other data securely, uniformly, and globally: a global name system of sorts. It is not a file system, but a set of protocols and reference implementations that can be used to join things like file systems and other storage services to the name space. Performance is not a primary goal. Uniformity and security are. Upspin is not an official Google product
-
-* [pewpew](https://github.com/hrbrmstr/pewpew)
-	* Why should security vendors be the only ones allowed to use silly, animated visualizations to "compensate"? Now, you can have your very own IP attack map that's just as useful as everyone else's. IPew is a feature-rich, customizable D3 / javascript visualization, needing nothing more than a web server capable of serving static content and a sense of humor to operate.
-
-* [My Canons on (ISC)² Ethics - Such as They Are(2011)](http://infosecisland.com/blogview/15450-My-Canons-on-ISC-Ethics-Such-as-They-Are.html)
-
-* [Containers Will Not Fix Your Broken Culture (and Other Hard Truths) - Complex socio-technical systems are hard; film at 11. - Bridget Kromhout](https://queue.acm.org/detail.cfm?id=3185224)
-
 * [tcpTrigger](https://github.com/R-Smith/tcpTrigger)
-	* tcpTrigger is a Windows service intended to notify you of incoming network connections.  You specify a TCP port to monitor and an action to take.  Actions taken include: sending a notification email and/or launching an external application or script.  Your action will then be triggered each time an incoming connection is attempted on your specified port.
-* [Hacker Scripts](https://github.com/NARKOZ/hacker-scripts)
-	* Based on a true story
-
-* [statistically-likely-usernames](https://github.com/insidetrust/statistically-likely-usernames)
-	* This resource contains wordlists for creating statistically likely usernames for use in username-enumeration, simulated password-attacks and other security testing tasks.
+	* tcpTrigger is a Windows service intended to notify you of incoming network connections. You specify a TCP port to monitor and an action to take.  Actions taken include: sending a notification email and/or launching an external application or script. Your action will then be triggered each time an incoming connection is attempted on your specified port.
 
 * [BE YOUR OWN VPN PROVIDER WITH OPENBSD (v2)](https://networkfilter.blogspot.com/2017/04/be-your-own-vpn-provider-with-openbsd-v2.html)
-* ["I want my money back!" Li­mi­t­ing On­line Pass­word-Gues­sing Fi­nan­ci­al­ly -Ma­xi­mi­li­an Golla, Da­ni­el V. Bai­ley, Mar­kus Dür­muth](http://www.mobsec.rub.de/forschung/veroeffentlichungen/limiting-online-password-guessing-financially/)
-	* In this work-in-pro­gress re­port, we pro­po­se an opt-in de­po­sit-ba­sed ap­proach to ra­te-li­mi­t­ing that tack­les on­line gues­sing at­tacks. By de­man­ding a small de­po­sit for each login at­tempt, which is im­me­dia­te­ly re­fun­ded after a suc­cess­ful sign in, on­line gues­sing at­ta­ckers face high costs for re­pea­ted un­suc­cess­ful log­ins. We pro­vi­de an in­iti­al ana­ly­sis of sui­ta­ble pay­ment sys­tems and re­a­sonable de­po­sit va­lues for re­al-world im­ple­men­ta­ti­ons and di­s­cuss se­cu­ri­ty and usa­bi­li­ty im­pli­ca­ti­ons of the sys­tem.
-* [Emo­ji­Auth: Quan­ti­fy­ing the Se­cu­ri­ty of Emo­ji-ba­sed Au­then­ti­ca­ti­on -  Ma­xi­mi­li­an Golla, Den­nis De­te­ring, Mar­kus Dür­muth](http://www.mobsec.rub.de/forschung/veroeffentlichungen/quantifying-security-emoji-based-authentication/)
-	* Mo­bi­le de­vices, such as smart­pho­nes and ta­blets, fre­quent­ly store con­fi­den­ti­al data, yet im­ple­men­ting a se­cu­re de­vice un­lock func­tio­na­li­ty is non-tri­vi­al due to re­stric­ted input me­thods. Gra­phi­cal know­ledge-ba­sed sche­mes have been wi­de­ly used on smart­pho­nes and are ge­ne­ral­ly well ad­ap­ted to the touch­screen in­ter­face on small screens. Re­cent­ly, gra­phi­cal pass­word sche­mes based on emoji have been pro­po­sed. They offer po­ten­ti­al be­ne­fits due to the fa­mi­li­a­ri­ty of users with emoji and the ease of ex­pres­sing me­mo­ra­ble sto­ries. Howe­ver, it is well-known from other gra­phi­cal sche­mes that user-selec­ted au­then­ti­ca­ti­on secrets can sub­stan­ti­al­ly limit the re­sul­ting en­tro­py of the au­then­ti­ca­ti­on secret. In this work, we study the en­tro­py of user-selec­ted secrets for one ex­em­pla­ry in­stan­tia­ti­on of emo­ji-ba­sed au­then­ti­ca­ti­on. We ana­ly­zed an im­ple­men­ta­ti­on using 20 emoji dis­play­ed in ran­dom order on a grid, where a user selects pass­codes of length 4 wi­thout fur­ther re­stric­tions. We con­duc­ted an on­line user study with 795 par­ti­ci­pants, using the collec­ted pass­codes to de­ter­mi­ne the re­sis­tan­ce to gues­sing based on se­ver­al gues­sing stra­te­gies, thus esti­ma­ting the selec­tion bias. We eva­lua­ted Mar­kov mo­del-ba­sed gues­sing stra­te­gies based on the selec­ted se­quence of emoji, on its po­si­ti­on in the grid, and com­bined mo­dels ta­king into ac­count both fea­tures. While we find selec­tion bias based on both the emoji as well as the po­si­ti­on, the me­a­su­red bias is lower than for si­mi­lar sche­mes. De­pen­ding on the model, we can re­co­ver up to 7% at 100 gues­sing at­tempts, and up to 11% of the pass­codes at 1000 gues­sing at­tempts. (For com­pa­ri­son, pre­vious work on the gra­phi­cal An­dro­id Un­lock pat­tern sche­me (CCS 2013) re­co­ver­ed around 18% at 100 and 50% at 1000 gues­sing at­tempts, de­s­pi­te a theo­re­ti­cal key­space of more than dou­b­le the size for the An­dro­id sche­me.) These re­sults de­mons­tra­te some po­ten­ti­al for a usa­ble and re­la­tive­ly se­cu­re sche­me and show that the size of the theo­re­ti­cal key­space is a bad pre­dic­tor for the rea­lis­tic guessa­bi­li­ty of pass­codes.
-* [The XY Problem](http://xyproblem.info/)
-	* The XY problem is asking about your attempted solution rather than your actual problem. This leads to enormous amounts of wasted time and energy, both on the part of people asking for help, and on the part of those providing help.
-* [The AZ Problem](http://azproblem.info/)
-	* This website introduces the AZ Problem: a generalization of the XY Problem. To wit, if we agree that the XY Problem is a problem, than the AZ Problem is a metaproblem. And while the XY Problem is often technical, the AZ Problem is procedural. The AZ Problem is when business requirements are misunderstood or decontextualized. These requirements end up being the root cause of brittle, ill-suited, or frivolous features. An AZ Problem will often give rise to several XY Problems. 
-
-
 
 #### End Sort
 
@@ -118,13 +54,11 @@ http://spth.virii.lu/articles.htm
 	* [The Distribution of Users’ Computer Skills: Worse Than You Think](https://www.nngroup.com/articles/computer-skill-levels/)
 	* [Infosec Podcasts](http://www.getmon.com/)
 	* [THE BASIC LAWS OF HUMAN STUPIDITY - Carlo M. Cipolia](http://harmful.cat-v.org/people/basic-laws-of-human-stupidity/)
-
 * **Airplanes**
 	* [NTSB Aviation Accident Database & Synopses](https://www.ntsb.gov/_layouts/ntsb.aviation/index.aspx)
 	* [The Aviation Herald](https://avherald.com/)
 	* [radar - securitywizardy](http://www.securitywizardry.com/radar.htm)
 	* [Real-life experiences in avionics security assessment (A. Barisani)](https://www.youtube.com/watch?v=xtSmPgXw34I&feature=youtu.be&app=desktop)
-
 * **Attacking**
 	* [It’s all about the timing. . . Blackhat talk](https://www.blackhat.com/presentations/bh-usa-07/Meer_and_Slaviero/Whitepaper/bh-usa-07-meer_and_slaviero-WP.pdf)
 	* Description: This paper is broken up into several distinct parts, all related loosely to timing and its role in information se- curity today. While timing has long been recognized as an important component in the crypt-analysts arse- nal, it has not featured very prominently in the domain of Application Security Testing. This paper aims at highlighting some of the areas in which timing can be used with great effect, where traditional avenues fail. In this paper, a brief overview of previous timing attacks is provided, the use of timing as a covert channel is examined and the effectiveness of careful timing during traditional web application and SQL injection attacks is demonstrated. The use of Cross Site Timing in bypass- ing the Same Origin policy is explored as we believe the technique has interesting possibilities for turning innocent browsers into bot-nets aimed at, for instance, brute-force attacks against third party web-sites
@@ -140,13 +74,11 @@ http://spth.virii.lu/articles.htm
 	* [The Geometry of Innocent Flesh on the Bone: Return-into-libc without Function Calls (on the x86)](https://cseweb.ucsd.edu/~hovav/dist/geometry.pdf)
 	* We present new techniques that allow a return-into-libc attack to be mounted on x86 executables that calls no functions at all. Our attack combines a large number of short instruction sequences to build gadgets that allow arbitrary computation. We show how to discover such instruction sequences by means of static analysis. We make use, in an essential way, of the properties of the x86 instruction set.
 	* [Ultimate beginners guide to phreaking v3.2 - 1999](http://web.textfiles.com/phreak/phreaking.txt)
-
 * **Attribution**
 	* [Cyber Attack Attribution Report](http://whohackedus.com/)
 	* [NSARCHIVE - The Cyber Vault](http://nsarchive.gwu.edu/cybervault/)
 	* An online resource documenting cyber activities of the U.S. and foreign governments as well as international organizations.
 	* [IPew Attack Map](http://ocularwarfare.com/ipew/)
-
 * **Barcodes**
 	* [Simplifying the Business Bar Coded Boarding Pass Implementation Guide](http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf)
 	* [What’s contained in a boarding pass barcode?](https://shaun.net/posts/whats-contained-in-a-boarding-pass-barcode)
@@ -155,31 +87,33 @@ http://spth.virii.lu/articles.htm
 	* [Decoding Small QR-Codes by hand](http://blog.qartis.com/decoding-small-qr-codes-by-hand/)
 	* [QR Inception: Barcode-in-Barcode Attacks](https://www.sba-research.org/wp-content/uploads/publications/qrinception.pdf)
 		* 2D barcodes offer many benefits compared to 1D barcodes, such as high information density and robustness. Before their introduction to the mobile phone ecosystem, they have been widely used in specific applications, such as logistics or ticketing. However, there are multiple competing standards with different benefits and drawbacks. Therefore, reader applications as well as dedicated devices have to support multiple standards. In this paper, we present novel attacks based on deliberately caused ambiguities when especially crafted barcodes conform to multiple standards. Implementation details decide which standard the decoder locks on. This way, two users scanning the same barcode with different phones or apps will receive different content. This potentially opens way for multiple problems related to security. We describe how embedding one barcode symbology into another can be used to perform phishing attacks as well as targeted exploits. In addition, we evaluate the extent to which popular 2D barcode reader applications on smartphones are susceptible to these barcode-in-barcode attacks. We furthermore discuss mitigation techniques against this type of attack.
-
 * **Breaches**
 	* [Alexsey’s TTPs](https://medium.com/@chrismcnab/alexseys-ttps-1204d9050551#.y2krgov7t)
-	* Short writeup on large breaches(Short: Shit ain't secure.)
-
+		* Short writeup on large breaches(Short: Shit ain't secure.)
 * **Code Search Engines**
 	* [symbolhound](http://symbolhound.com/)
 		* SymbolHound is a search engine that doesn't ignore special characters. This means you can easily search for symbols like &, %, and π. We hope SymbolHound will help programmers-------- find information about their chosen languages and frameworks more easily.
 	* [grokbit](https://grokbit.com/)
 		* Code search engine
-
 * **Crypto**
 	* [RSA Key Extraction via Low-Bandwidth Acoustic Cryptanalysis](http://www.tau.ac.il/~tromer/acoustic/)
 		* Here, we describe a new acoustic cryptanalysis key extraction attack, applicable to GnuPG's current implementation of RSA. The attack can extract full 4096-bit RSA decryption keys from laptop computers (of various models), within an hour, using the sound generated by the computer during the decryption of some chosen ciphertexts. We experimentally demonstrate that such attacks can be carried out, using either a plain mobile phone placed next to the computer, or a more sensitive microphone placed 4 meters away.
 	* [Get Your Hands Off My Laptop: Physical Side-Channel Key-Extraction Attacks On PCs](http://www.tau.ac.il/~tromer/handsoff/)
 		* We demonstrated physical side-channel attacks on a popular software implementation of RSA and ElGamal, running on laptop computers. Our attacks use novel side channels and are based on the observation that the "ground" electric potential in many computers fluctuates in a computation-dependent way. An attacker can measure this signal by touching exposed metal on the computer's chassis with a plain wire, or even with a bare hand. The signal can also be measured at the remote end of Ethernet, VGA or USB cables. Through suitable cryptanalysis and signal processing, we have extracted 4096-bit RSA keys and 3072-bit ElGamal keys from laptops, via each of these channels, as well as via power analysis and electromagnetic probing. Despite the GHz-scale clock rate of the laptops and numerous noise sources, the full attacks require a few seconds of measurements using Medium Frequency signals (around 2 MHz), or one hour using Low Frequency signals (up to 40 kHz).
-
 * **Databases**
 	* [NIST National Vulnerability Database](https://nvd.nist.gov/ncp/repository)
 	* [List of disposable email domains](https://github.com/martenson/disposable-email-domains)
-
 * **Educational**
 	* [Underhanded C contest](http://underhanded-c.org/)
 	* [DIY Nukeproofing: A New Dig at “Data-Mining”](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-3alarmlampscooter-DIY-Nukeproofing.pdf)
-
+	* [Cubicles and Compromises - Webcast](https://www.blackhillsinfosec.com/webcast-cubicles-compromises/)
+		* [Printable Version](https://www.blackhillsinfosec.com/cubicles-compromises-printable/)
+* **Funny**
+	* [Hacker Scripts](https://github.com/NARKOZ/hacker-scripts)
+		* Based on a true story
+	* [Programming Sucks](http://www.stilldrinking.org/programming-sucks)
+	* [pewpew](https://github.com/hrbrmstr/pewpew)
+		* Why should security vendors be the only ones allowed to use silly, animated visualizations to "compensate"? Now, you can have your very own IP attack map that's just as useful as everyone else's. IPew is a feature-rich, customizable D3 / javascript visualization, needing nothing more than a web server capable of serving static content and a sense of humor to operate.
 * **General Computation**
 	* [Introduction to Resource Oriented Computing - Whitepaper](http://resources.1060research.com/docs/IntroductionToResourceOrientedComputing-1.pdf)
 	* [Detecting Automation of Twitter Accounts: Are You a Human, Bot, or Cyborg](http://www.cs.wm.edu/~hnw/paper/tdsc12b.pdf)
@@ -195,7 +129,9 @@ http://spth.virii.lu/articles.htm
 	* [Ceremony Design and Analysis](http://eprint.iacr.org/2007/399.pdf)
 		* Abstract: The concept of Ceremony is introduced as an extension of the concept of network protocol, with human nodes alongside computer nodes and with communication links that include UI, human-to-human communication and transfers of physical objects that carry data. What is out-of-band to a protocol is in-band to a ceremony, and therefore subject to design and analysis using variants of the same mature techniques used for the design and analysis of protocols. Ceremonies include all protocols, as well as all applications with a user interface, all workflow and all provisioning scenarios. A secure ceremony is secure against both normal attacks and social engineering. However, some secure protocols imply ceremonies that cannot be made secure. 
 	* [Lightweight Virtualization on Microkernel-based Systems](https://os.inf.tu-dresden.de/papers_ps/liebergeld-diplom.pdf)
-
+* **History**
+	* [The Black Team](http://www.penzba.co.uk/GreybeardStories/TheBlackTeam.html)
+	* [IBM Black Team](http://www.t3.org/tangledwebs/07/tw0706.html)
 * **Informational**
 	* [List of Data Breaches - privacyrights.org](https://www.privacyrights.org/data-breaches)
 	* [Manuals Library](https://www.manualslib.com/)
@@ -207,27 +143,24 @@ http://spth.virii.lu/articles.htm
 	* [Shakespeare in the Bush An American anthropologist set out to study the Tiv of West Africa and was taught the true meaning of Hamlet.](http://www.naturalhistorymag.com/picks-from-the-past/12476/shakespeare-in-the-bush)
 	* [China’s Great Cannon](https://citizenlab.org/2015/04/chinas-great-cannon/) 
 		* This post describes our analysis of China’s “Great Cannon,” our term for an attack tool that we identify as separate from, but co-located with, the Great Firewall of China. The first known usage of the Great Cannon is in the recent large-scale novel DDoS attack on both GitHub and servers used by GreatFire.org.
-
 * **Informational(non-serious-kinda)**
 	* [Encyclopedia of things considered harmful](http://harmful.cat-v.org/)
 	* [“Considered Harmful” Essays Considered Harmful](http://meyerweb.com/eric/comment/chech.html)
-
 * **Internet**
 	* [chipmachine](https://github.com/sasq64/chipmachine)
 	* [Wars Within](http://uninformed.org/?v=all&a=26&t=sumry)
 		* In this paper I will uncover the information exchange of what may be classified as one of the highest money making schemes coordinated by 'organized crime'. I will elaborate on information gathered from a third party individual directly involved in all aspects of the scheme at play. I will provide a detailed explanation of this market's origin, followed by a brief description of some of the actions strategically performed by these individuals in order to ensure their success. Finally, I will elaborate on real world examples of how a single person can be labeled a spammer, malware author, cracker, and an entrepreneur gone thief. For the purposes of avoiding any legal matters, and unwanted media, I will refrain from mentioning the names of any individuals and corporations who are involved in the schemes described in this paper. 
 	* [Seven Months’ Worth of Mistakes: A Longitudinal Study of Typosquatting Abuse](https://lirias.kuleuven.be/bitstream/123456789/471369/3/typos-final.pdf)
 		* Abstract: Typosquatting is the act of purposefully registering a domain name that is a mistype of a popular domain name. It is a concept that has been known and studied for over 15 years, yet still thoroughly practiced up until this day. While previous typosquatting studies have always taken a snapshot of the typosquatting landscape or base their longitudinal results only on domain registration data, we present the first content- based , longitudinal study of typosquatting. We collected data about the typosquatting domains of the 500 most popular sites of the Internet every day, for a period of seven months, and we use this data to establish whether previously discovered typosquatting trends still hold today, and to provide new results and insights in the typosquatting landscape. In particular we reveal that, even though 95% of the popular domains we investigated are actively targeted by typosquatters, only few trademark owners protect themselves against this practice by proactively registering their own typosquatting domains. We take advantage of the longitudinal aspect of our study to show, among other results, that typosquatting domains change hands from typosquatters to legitimate owners and vice versa, and that typosquatters vary their monetization strategy by hosting different types of pages over time. Our study also reveals that a large fraction of typosquatting domains can be traced back to a small group of typosquatting page hosters and that certain top-level domains are much more prone to typosquatting than others
-
+* **Marketing**
+	* [The Marketing Behind MongoDB](https://www.nemil.com/mongo/3.html)
 * **News**
 	* [U.S. Department of Health and Human Services Office for Civil Rights Breach Portal: Notice to the Secretary of HHS Breach of Unsecured Protected Health Information](https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf)
 	* [Medical Device Law: Compliance Issues, Best Practices and Trends - American Bar Association](https://www.americanbar.org/content/dam/aba/events/cle/2015/10/ce1510mdm/ce1510mdm_interactive.authcheckdam.pdf)
 	* [LeakedSource.ru](https://leakedsource.ru/)
-
-* **Programs**
-	* [No More Secrets](https://github.com/bartobri/no-more-secrets/blob/master/README.md)
-		* This project provides a command line tool called nms that recreates the famous data decryption effect seen on screen in the 1992 hacker movie Sneakers. For reference, you can see this effect at 0:35 in this movie clip.
-
+* **Programming**
+	* [Object-oriented HTML](https://github.com/Michaelkielstra/Object-oriented-HTML)
+		* HTML isn't a programming language as such, it's actually a markup language. This means that it misses out on a lot of the good stuff that real programming languages have, including the joys of object-oriented programming. This project brings inheritance, polymorphism, and public "methods" to HTML. With startling imagination, I've called it object-oriented HTML and chosen the file extension .oohtml.
 * **Political**
 	* [Drone Survival Guide](http://dronesurvivalguide.org)
 	* [They clapped](http://www.econlib.org/library/Columns/y2007/Mungergouging.html)
@@ -235,16 +168,13 @@ http://spth.virii.lu/articles.htm
 	* [What Colour are your bits?](http://ansuz.sooke.bc.ca/entry/23)
 	* [The NSL Archive](https://nslarchive.org/)
 		* Tracking who has disclosed NSLs, how many, and when.
-
 * **Random**
 	* [what3words](https://what3words.com/about/)
 	* what3words provides a precise and incredibly simple way to talk about location. We have divided the world into a grid of 3m x 3m squares and assigned each one a unique 3 word address.
-
 * **Side Channel Attacks**
 	* [A Practical Methodology for Measuring the Side-Channel Signal Available to the Attacker for Instruction-Level Event](http://users.ece.gatech.edu/~az30/Downloads/Micro14.pdf)
 		* Abstract: This paper presents a new metric, which we call Signal Available to Attacker (SAVAT), that measures the side channel signal created by a specific single-instruction difference in program execution, i.e. the amount of signal made available to a potential attacker who wishes to decide whether the program has executed instruction/event A or instruction/event B. We also devise a practical methodology for measuring SAVAT in real systems using only user-level access permissions and common measurement equipment. Finally, we perform a case study where we measure electromagnetic (EM) emanations SAVAT among 11 different instructions for three different laptop systems. Our findings from these experiments confirm key intuitive expectations, e.g. that SAVAT between on-chip instructions and off-chip memory accesses tends to be higher than between two on-chip instructions. However, we find that particular instructions, such as integer divide, have much higher SAVAT than other instructions in the same general category (integer arithmetic), and that last-level-cache hits and misses have similar (high) SAVAT. Overall, we confirm that our new metric and methodology can help discover the most vulnerable aspects of a processor architecture or a program, and thus inform decision-making about how to best manage the overall side channel vulnerability of a processor, a program, or a system.
 	* [Palinopsia - Is your VirtualBox reading your E-Mail? Reconstruction of FrameBuffers from VRAM](https://hsmr.cc/palinopsia/)
-
 * **Timelines**
 	* [Timeline/List of low-level attacks/persistence techniques.  HIGHLY RECOMMENDED!](http://timeglider.com/timeline/5ca2daa6078caaf4)
 	* [Timeline of Software/Timing Attestation papers](http://timeglider.com/timeline/be11d685a7c4374d)
@@ -330,7 +260,6 @@ http://spth.virii.lu/articles.htm
 		* The entire security industry has a serious skill problem. We,re technically able, but we have no soft skills. We can,t talk to normal people at all. We can barely even talk to each other, and it's killing our industry. Every successful industry relies on the transfer of skills from the experienced to the inexperienced. Security lacks this today. If I asked you how you learned what you know about security, what would your answer be? In most cases you learned everything you know on your own. There was minimal learning from someone else. This has left us with an industry full of magicians, but even worse it puts us in a place where there is no way to transfer skill and knowledge from one generation to the next. Magicians don,t scale. If we think about this in the context of how we engage non security people it's even worse! Most non security people have no idea what security is, what security does, or even why security is important. It's easy to laugh at the horrible security problems almost everything has today, but in reality we,re laughing at ourselves. Historically we,ve blamed everything else for this problem when in reality it's 100% our fault. One of the our great weaknesses is failing to get the regular people to understand security and why it's important. This isn,t a surprise if you think about how the industry communicates. We can barely talk to each other, how can we possibly talk to someone who doesn,t know anything about security? Normal people are confused and scared, they want to do the right thing but they have no idea what that is. The future leaders in security are going to have to be able to teach and talk to their security peers, but more importantly they will have to engage everyone else. Security is being paid attention to like never before, and yet we have nothing to say to anyone. What has changed in the last few years? If we don,t do our jobs, someone else will do them for us, and we,re not going to like the results. Security isn,t a technical problem, technical problems are easy, security is a communication problem. Communications problems are difficult. Let's figure out how we can fix that.
 	* [Bridging the Air Gap: Cross Domain Solutions - Patrick Orzechowski](https://www.irongeek.com/i.php?page=videos/bsideslasvegas2014/pg08-bridging-the-air-gap-cross-domain-solutions-patrick-orzechowski)
 		* For years the government has been using CDS to bridge networks with different classification levels. This talk will focus on what CDS systems are, how they’re built, and what kind of configurations are common in the wild. Furthermore, we’ll look at testing techniques to evaluate the security of these systems and potential ways to exploit holes in configuration and design. We’ll also look at the ways the commercial world might benefit from a data and type-driven firewall as well as some of the downfalls and negative aspects of implementing a cross-domain system. 
-
 * **Political**
 	* [Coming War on General Computation](https://www.youtube.com/watch?v=HUEvRyemKSg)
 	* [Kinetic to Digital Terrorism in the Digital Age Kyle Wilhoit](https://www.youtube.com/watch?v=IsaUuCrjXu4&index=24&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
@@ -338,7 +267,6 @@ http://spth.virii.lu/articles.htm
 	* [When the Cops Come A-Knocking: Handling Technical Assistance Demands from Law Enforcement](https://www.youtube.com/watch?v=PX2RjJAfTYg)
 	* [New cache architecture on Intel I9 and Skylake server: An initial assessment](https://cyber.wtf/2017/07/18/new-cache-architecture-on-intel-i9-and-skylake-server-an-initial-assessment/)
 	* [How They Did It: An Analysis of Emission Defeat Devices in Modern Automobiles](https://www.ieee-security.org/TC/SP2017/papers/101.pdf)
-
 * **Misc/Didn't Fit above**
 	* [NSA USB Playset - ShmooCon201](https://www.youtube.com/watch?v=eTDBFpLYcGA)
 	* [Code Execution In Spite Of BitLocker](https://cryptoservices.github.io/fde/2014/12/08/code-execution-in-spite-of-bitlocker.html)
@@ -353,11 +281,22 @@ http://spth.virii.lu/articles.htm
 		* Release Branches for MoFlow
 	* [List of hacker sites](http://link-base.org/)
 
+* **Interesting Papers**
+* ["I want my money back!" Li­mi­t­ing On­line Pass­word-Gues­sing Fi­nan­ci­al­ly -Ma­xi­mi­li­an Golla, Da­ni­el V. Bai­ley, Mar­kus Dür­muth](http://www.mobsec.rub.de/forschung/veroeffentlichungen/limiting-online-password-guessing-financially/)
+	* In this work-in-pro­gress re­port, we pro­po­se an opt-in de­po­sit-ba­sed ap­proach to ra­te-li­mi­t­ing that tack­les on­line gues­sing at­tacks. By de­man­ding a small de­po­sit for each login at­tempt, which is im­me­dia­te­ly re­fun­ded after a suc­cess­ful sign in, on­line gues­sing at­ta­ckers face high costs for re­pea­ted un­suc­cess­ful log­ins. We pro­vi­de an in­iti­al ana­ly­sis of sui­ta­ble pay­ment sys­tems and re­a­sonable de­po­sit va­lues for re­al-world im­ple­men­ta­ti­ons and di­s­cuss se­cu­ri­ty and usa­bi­li­ty im­pli­ca­ti­ons of the sys­tem.
+* [Emo­ji­Auth: Quan­ti­fy­ing the Se­cu­ri­ty of Emo­ji-ba­sed Au­then­ti­ca­ti­on -  Ma­xi­mi­li­an Golla, Den­nis De­te­ring, Mar­kus Dür­muth](http://www.mobsec.rub.de/forschung/veroeffentlichungen/quantifying-security-emoji-based-authentication/)
+	* Mo­bi­le de­vices, such as smart­pho­nes and ta­blets, fre­quent­ly store con­fi­den­ti­al data, yet im­ple­men­ting a se­cu­re de­vice un­lock func­tio­na­li­ty is non-tri­vi­al due to re­stric­ted input me­thods. Gra­phi­cal know­ledge-ba­sed sche­mes have been wi­de­ly used on smart­pho­nes and are ge­ne­ral­ly well ad­ap­ted to the touch­screen in­ter­face on small screens. Re­cent­ly, gra­phi­cal pass­word sche­mes based on emoji have been pro­po­sed. They offer po­ten­ti­al be­ne­fits due to the fa­mi­li­a­ri­ty of users with emoji and the ease of ex­pres­sing me­mo­ra­ble sto­ries. Howe­ver, it is well-known from other gra­phi­cal sche­mes that user-selec­ted au­then­ti­ca­ti­on secrets can sub­stan­ti­al­ly limit the re­sul­ting en­tro­py of the au­then­ti­ca­ti­on secret. In this work, we study the en­tro­py of user-selec­ted secrets for one ex­em­pla­ry in­stan­tia­ti­on of emo­ji-ba­sed au­then­ti­ca­ti­on. We ana­ly­zed an im­ple­men­ta­ti­on using 20 emoji dis­play­ed in ran­dom order on a grid, where a user selects pass­codes of length 4 wi­thout fur­ther re­stric­tions. We con­duc­ted an on­line user study with 795 par­ti­ci­pants, using the collec­ted pass­codes to de­ter­mi­ne the re­sis­tan­ce to gues­sing based on se­ver­al gues­sing stra­te­gies, thus esti­ma­ting the selec­tion bias. We eva­lua­ted Mar­kov mo­del-ba­sed gues­sing stra­te­gies based on the selec­ted se­quence of emoji, on its po­si­ti­on in the grid, and com­bined mo­dels ta­king into ac­count both fea­tures. While we find selec­tion bias based on both the emoji as well as the po­si­ti­on, the me­a­su­red bias is lower than for si­mi­lar sche­mes. De­pen­ding on the model, we can re­co­ver up to 7% at 100 gues­sing at­tempts, and up to 11% of the pass­codes at 1000 gues­sing at­tempts. (For com­pa­ri­son, pre­vious work on the gra­phi­cal An­dro­id Un­lock pat­tern sche­me (CCS 2013) re­co­ver­ed around 18% at 100 and 50% at 1000 gues­sing at­tempts, de­s­pi­te a theo­re­ti­cal key­space of more than dou­b­le the size for the An­dro­id sche­me.) These re­sults de­mons­tra­te some po­ten­ti­al for a usa­ble and re­la­tive­ly se­cu­re sche­me and show that the size of the theo­re­ti­cal key­space is a bad pre­dic­tor for the rea­lis­tic guessa­bi­li­ty of pass­codes.
 
-### <a name="hwprojects"></a>Interesting Hardware Projects
+
+
+
+* **Interesting Software Projects**
+	* [Upspin](https://github.com/upspin/upspin)
+		* Upspin is an experimental project to build a framework for naming and sharing files and other data securely, uniformly, and globally: a global name system of sorts. It is not a file system, but a set of protocols and reference implementations that can be used to join things like file systems and other storage services to the name space. Performance is not a primary goal. Uniformity and security are. Upspin is not an official Google product
 * **Interesting Hardware Projects**
 	* [Digital Ding Dong Ditch](https://github.com/samyk/dingdong)
 		* Digital Ding Dong Ditch is a device to hack into and ring my best friend's wireless doorbell whenever I send a text message to the device. The best part of the device is that it causes my friend, without fail, to come outside, find no one, and go back in. In this project, we'll learn not only how to create this device, but how to reverse engineer radio frequencies we know nothing about using RTL-SDR (a ~$14 software defined radio), as well as creating hardware and software using Arduino, the Adafruit FONA (GSM/SMS/2G board), an RF (radio frequency) transmitter to transmit custom signals, and even how to reverse engineer a proprietary radio signal we know nothing about!
+
 
 
 ---------------
@@ -387,6 +326,15 @@ http://spth.virii.lu/articles.htm
 	* [Wayback scraper](https://github.com/abrenaut/waybackscraper)
 	* [scrape-twitter](https://github.com/sebinsua/scrape-twitter)
 		* Access Twitter data without an API key
+	* [Puppeteer](https://github.com/GoogleChrome/puppeteer)
+		* Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol. Puppeteer runs headless by default, but can be configured to run full (non-headless) Chrome or Chromium.
+	* [teleport](https://github.com/gravitational/teleport)
+		* Modern SSH server for clusters and teams. 
+
+
+
+
+
 
 
 -------------
@@ -482,6 +430,15 @@ http://spth.virii.lu/articles.htm
 		* Cyber-free browsing extension for Chrome
 	* [noVNC](https://github.com/novnc/noVNC/blob/master/README.md)
 		* noVNC is a HTML5 VNC client that runs well in any modern browser including mobile browsers (iOS and Android).
+	* [No More Secrets](https://github.com/bartobri/no-more-secrets/blob/master/README.md)
+		* This project provides a command line tool called nms that recreates the famous data decryption effect seen on screen in the 1992 hacker movie Sneakers. For reference, you can see this effect at 0:35 in this movie clip.
+	* [Hardentools](https://github.com/securitywithoutborders/hardentools)
+		* Hardentools is a collection of simple utilities designed to disable a number of "features" exposed by operating systems (Microsoft Windows, for now), and primary consumer applications. These features, commonly thought for Enterprise customers, are generally useless to regular users and rather pose as dangers as they are very commonly abused by attackers to execute malicious code on a victim's computer. The intent of this tool is to simply reduce the attack surface by disabling the low-hanging fruit. Hardentools is intended for individuals at risk, who might want an extra level of security at the price of some usability. It is not intended for corporate environments.
+	* [Etcher](https://github.com/resin-io/etcher)
+		* Etcher is a powerful OS image flasher built with web technologies to ensure flashing an SDCard or USB drive is a pleasant and safe experience. It protects you from accidentally writing to your hard-drives, ensures every byte of data was written correctly and much more.
+	* [Windows Firewall Control - Managing Windows Firewall is now easier than ever](https://www.binisoft.org/wfc.php)
+	* [Magic Wormhole](https://github.com/warner/magic-wormhole)
+		* This package provides a library and a command-line tool named wormhole, which makes it possible to get arbitrary-sized files and directories (or short pieces of text) from one computer to another. The two endpoints are identified by using identical "wormhole codes": in general, the sending machine generates and displays the code, which must then be typed into the receiving machine.
 * **Editors**
 	* [wxHex Editor](http://www.wxhexeditor.org/home.php)
 		* wxHexEditor is another Free Hex Editor, build because there is no good hex editor for Linux system, specially for big files.

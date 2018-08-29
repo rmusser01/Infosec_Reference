@@ -36,6 +36,19 @@
 	* This project intends to provide a complete description and re-implementation of the WhatsApp Web API, which will eventually lead to a custom client. WhatsApp Web internally works using WebSockets; this project does as well.
 * [BinDbg](https://github.com/kukfa/bindbg)
 	* BinDbg is a Binary Ninja plugin that syncs WinDbg to Binja to create a fusion of dynamic and static analyses. It was primarily written to improve the Windows experience for Binja debugger integrations.
+```
+https://github.com/Wenzel/r2vmi
+https://github.com/giMini/mimiDbg
+https://github.com/samyk/frisky
+https://hshrzd.wordpress.com/how-to-start/
+http://www.hexacorn.com/blog/2018/04/14/how-to-become-the-best-malware-analyst-e-v-e-r/
+https://github.com/yellowbyte/reverse-engineering-reference-manual
+https://hex-rays.com/contests/2017/index.shtml
+https://www.endgame.com/blog/technical-blog/introduction-windows-kernel-debugging
+http://jamie-wong.com/post/reverse-engineering-instruments-file-format/
+http://deniable.org/reversing/binary-instrumentation
+http://terminus.rewolf.pl/terminus/
+```
 
 #### End sort
 

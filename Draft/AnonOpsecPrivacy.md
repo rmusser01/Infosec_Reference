@@ -1,93 +1,89 @@
 ## Anonymity, Opsec & Privacy
 
 ### Table of Contents
-
-* Cull
-* General
-* Android/iOS/Mobile
-* Browser Related
-* Communications Security
-* Data Collection
-* De-anonymization
-* Identification
-* Informative/Educational
-* Obfuscation
-* OPSEC
-* References/Resources
-* WiFi
-* Tool Configuration
-* Tor
-* Travel
-* Misc
-* Tools
-* Counter-Surveillance
-	* Writeups
-	* Videos/Talks
-	* Papers
-* Emissions Security
-	* Papers
-
+- [General](#general)
+- [Android/iOS/Mobile](#mobile)
+- [Browser Related](#browser)
+- [Communications Security](#comsec)
+- [Data Collection](#dcollect)
+- [De-anonymization](#de-anon)
+- [Documents/Writing](#writing)
+- [Facial Identification](#face)
+- [Informative/Educational](#informative)
+- [Journalism & Media Publishing](#media)
+- [Network Obfuscation](#obfuscation)
+- [Operational Security - OPSEC](#opsec)
+- [References/Resources](#ref)
+- [Wireless Radios](#)
+- [Tor](#tor)
+- [Traveling](#travel)
+- [Miscellaneous Stuff](#misc)
+- [Miscellaneous Tools](#misc-tools)
+- [Counter-Surveillance](#counter)
+	- [Writeups](#cwriteup)
+	- [Videos/Talks](#cvideos)
+	- [Papers](#cpapers)
+- [Emissions Security](#emissions)
+	- [Papers](#papers)
+- [Modern Surveillance](#modern)
+	- [China](#china)
+	- [United States](#usa)
 
 
 
 
 #### Sort/Add
 
-* https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-guri-update.pdf
-
-* [A Technical Description of Psiphon](https://psiphon.ca/en/blog/psiphon-a-technical-description)
-* [Invasion of Privacy - HackerFactor](http://www.hackerfactor.com/blog/index.php?/archives/703-Invasion-of-Privacy.html)
-* [What Happens Next Will Amaze You](http://idlewords.com/talks/what_happens_next_will_amaze_you.htm#six_fixes)
-* [RF-Capture](http://rfcapture.csail.mit.edu/)
-	* RF-Capture is a device that captures a human figure through walls and occlusions. It transmits wireless signals and reconstructs a human figure by analyzing the signals' reflections. RF-Capture does not require the person to wear any sensor, and its transmitted power is 10,000 times lower than that of a standard cell-phone.
-	* [Paper](http://rfcapture.csail.mit.edu/rfcapture-paper.pdf)
-* [Cookieless Monster: Exploring the Ecosystem of Web-based Device Fingerprinting](http://securitee.org/files/cookieless_sp2013.pdf)
-		* Abstract —The web has become an essential part of our society and is currently the main medium of information delivery. Billions of users browse the web on a daily basis, and there are single websites that have reached over one billion user accounts. In this environment, the ability to track users and their online habits can be very lucrative for advertising companies, yet very intrusive for the privacy of users. In this paper, we examine how web-based device fingerprint- ing currently works on the Internet. By analyzing the code of three popular browser-fingerprinting code providers, we reveal the techniques that allow websites to track users without the need of client-side identifiers. Among these techniques, we show how current commercial fingerprinting approaches use questionable practices, such as the circumvention of HTTP proxies to discover a user’s real IP address and the installation of intrusive browser plugins. At the same time, we show how fragile the browser ecosystem is against fingerprinting through the use of novel browser- identifying techniques. With so many different vendors involved in browser development, we demonstrate how one can use diversions in the browsers’ implementation to distinguish successfully not only the browser-family, but also specific major and minor versions. Browser extensions that help users spoof the user-agent of their browsers are also evaluated. We show that current commercial approaches can bypass the extensions, and, in addition, take advantage of their shortcomings by using them as additional fingerprinting features.
-* [Understanding & Improving Privacy "Audits" under FTC Orders](https://cyberlaw.stanford.edu/blog/2018/04/understanding-improving-privacy-audits-under-ftc-orders)
-	* This new white paper, entitled “Understanding and Improving Privacy ‘Audits’ under FTC Orders,” carefully parses the third-party audits that Google and Facebook are required to conduct under their 2012 Federal Trade Commission consent orders.  Using only publicly available documents, the article contrasts the FTC’s high expectations for the audits with what the FTC actually received (as released to the public in redacted form).   These audits, as a practical matter, are often the only “tooth” in FTC orders to protect consumer privacy.  They are critically important to accomplishing the agency’s privacy mission.  As such, a failure to attend to their robust enforcement can have unintended consequences, and arguably, provide consumers with a false sense of security. The paper shows how the audits are not actually audits as commonly understood.  Instead, because the FTC order language only requires third-party “assessments,” the companies submit reports that are termed “attestations.”  Attestations fundamentally rely on a few vague privacy program aspects that are self-selected by the companies themselves.  While the FTC could reject attestation-type assessments, the agency could also insist the companies bolster certain characteristics of the attestation assessments to make them more effective and replicate audit attributes.  For example, the FTC could require a broader and deeper scope for the assessments.  The agency could also require that assessors evaluate Fair Information Practices, data flows, notice/consent effectiveness, all company privacy assurances, and known order violations.
-
-
-
+* **To-Do**
+	* Add more Tor related things
+	* Add government documents
+	* 
 
 #### end Sort
 
 
 --------------
 ### <a name="general"></a>General
-* [OS X Security and Privacy Guide](https://github.com/drduh/OS-X-Security-and-Privacy-Guide)
-* [Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
-	* Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
-* [Mobile Phone Data lookup](https://medium.com/@philipn/want-to-see-something-crazy-open-this-link-on-your-phone-with-wifi-turned-off-9e0adb00d024)
-* [Privacy Online Test And Resource Compendium](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List/blob/master/README.md)
-* [Winning and Quitting the Privacy Game What it REALLY takes to have True Privacy in the 21st Century - Derbycon 7](https://www.youtube.com/watch?v=bxQSu06yuZc)
-* [The Gruqgs blog](http://grugq.tumblr.com/)
-* ['I've Got Nothing to Hide' and Other Misunderstandings of Privacy](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=998565&)
-	* We live in a surveillance state. Law enforcement and intelligence agencies have access to a huge amount of data about us, enabling them to learn intimate, private details about our lives. In part, the ease with which they can obtain such information reflects the fact that our laws have failed to keep up with advances in technology. However, privacy enhancing technologies can offer real protections even when the law does not. That intelligence agencies like the NSA are able to collect records about every telephone call made in the United States, or engage in the bulk surveillance of Internet communications is only possible because so much of our data is transmitted in the clear. The privacy enhancing technologies required to make bulk surveillance impossible and targeted surveillance more difficult already exist. We just need to start using them.
-* [A Guide to Law Enforcement Spying Technology - EFF](https://www.eff.org/sls)
-* **Android/iOS/Mobile**
+* **General**
+	* [Anonymity](https://en.wikipedia.org/wiki/Anonymity)
+	* [Operations Security - Wikipedia](https://en.wikipedia.org/wiki/Operations_security)
+	* [OS X Security and Privacy Guide](https://github.com/drduh/OS-X-Security-and-Privacy-Guide)
+	* [Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
+		* Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
+	* [Mobile Phone Data lookup](https://medium.com/@philipn/want-to-see-something-crazy-open-this-link-on-your-phone-with-wifi-turned-off-9e0adb00d024)
+	* [Privacy Online Test And Resource Compendium](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List/blob/master/README.md)
+	* [Winning and Quitting the Privacy Game What it REALLY takes to have True Privacy in the 21st Century - Derbycon 7](https://www.youtube.com/watch?v=bxQSu06yuZc)
+	* [The Gruqgs blog](http://grugq.tumblr.com/)
+	* ['I've Got Nothing to Hide' and Other Misunderstandings of Privacy](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=998565&)
+		* We live in a surveillance state. Law enforcement and intelligence agencies have access to a huge amount of data about us, enabling them to learn intimate, private details about our lives. In part, the ease with which they can obtain such information reflects the fact that our laws have failed to keep up with advances in technology. However, privacy enhancing technologies can offer real protections even when the law does not. That intelligence agencies like the NSA are able to collect records about every telephone call made in the United States, or engage in the bulk surveillance of Internet communications is only possible because so much of our data is transmitted in the clear. The privacy enhancing technologies required to make bulk surveillance impossible and targeted surveillance more difficult already exist. We just need to start using them.
+	* [A Guide to Law Enforcement Spying Technology - EFF](https://www.eff.org/sls)
+* **Android/iOS/Mobile**<a name="mobile"></a>
 	* [Click and Dragger: Denial and Deception on Android mobile](https://www.slideshare.net/grugq/mobile-opsec/34-WHAT_ARETHEY_GOOD_FOR_Threat)
 	* [DEFCON 20: Can You Track Me Now? Government And Corporate Surveillance Of Mobile Geo-Location Data](https://www.youtube.com/watch?v=NjuhdKUH6U4)
 	* [Can you track me now? - Defcon20](https://wEww.youtube.com/watch?v=DxIF66Tcino)
 	* [Phones and Privacy for Consumers - Matt Hoy (mattrix) and David Khudaverdyan (deltaflyer)](http://www.irongeek.com/i.php?page=videos/grrcon2015/submerssion-therapy05-phones-and-privacy-for-consumers-matt-hoy-mattrix-and-david-khudaverdyan-deltaflyerhttps://ritter.vg/blog-deanonymizing_amm.html)
 	* [Hacking FinSpy - a Case Study - Atilla Marosi - Troopers15](https://www.youtube.com/watch?v=Mb4mfBi06K4)
-* **Browser Related**
+* **Browser Related**<a name="browser"></a>
 	* [Panopticlick](https://panopticlick.eff.org/)
 		* Panopticlick will analyze how well your browser and add-ons protect you against online tracking techniques. We’ll also see if your system is uniquely configured—and thus identifiable—even if you are using privacy-protective software.
 	* [Discovering Browser Extensions via Web Accessible Resources - Chalmers security lab](http://www.cse.chalmers.se/research/group/security/publications/2017/extensions/codaspy-17-full.pdf)
 	* [Cookieless Monster: Exploring the Ecosystem of Web-based Device Fingerprinting](http://securitee.org/files/cookieless_sp2013.pdf)
 	* [Client Identification Mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms)
 	* [Technical analysis of client identification mechanisms](http://www.chromium.org/Home/chromium-security/client-identification-mechanisms) 
-* **Communication Security**
+	* [What Happens Next Will Amaze You](http://idlewords.com/talks/what_happens_next_will_amaze_you.htm#six_fixes)
+		* In this paper, we examine how web-based device fingerprinting currently works on the Internet. By analyzing the code of three popular browser-fingerprinting code providers, we reveal the techniques that allow websites to track users without the need of client-side identifiers. Among these techniques, we show how current commercial fingerprinting approaches use questionable practices, such as the circumvention of HTTP proxies to discover a user’s real IP address and the installation of intrusive browser plugins. At the same tim e, we show how fragile the browser ecosystem is against fingerprinting through the use of novel browser- identifying techniques. With so many different vendors involved in browser development, we demonstrate how one can use diversions in the browsers’ implementation to distinguish successfully not only the browser-family, but also specific major and minor versions. Browser extensions that help users spoof the user-agent of their browsers are also evaluated. We show that current commercial approaches can bypass the extensions, and, in addition, take advantage of their shortcomings by using them as additional fingerprinting features.
+	* [Invasion of Privacy - HackerFactor](http://www.hackerfactor.com/blog/index.php?/archives/703-Invasion-of-Privacy.html)
+* **Communication Security**<a name="comsec"></a>
 	* [A Study of COMINT Personnel Security Standards and Practices](https://www.cia.gov/library/readingroom/document/cia-rdp82s00527r000100060014-6)
 	* [COMSEC Beyond Encryption](https://grugq.github.io/presentations/COMSEC%20beyond%20encryption.pdf)
-* **Data Collection**
+* **Data Collection**<a name="dcollect"></a>
 	* [This Time, Facebook Is Sharing Its Employees’ Data: Some of the biggest companies turn over their workers’ most personal information to the troubled credit reporting agency Equifax](https://www.fastcompany.com/40485634/equifax-salary-data-and-the-work-number-database)
 	* [No boundaries: Exfiltration of personal data by session-replay scripts](https://freedom-to-tinker.com/2017/11/15/no-boundaries-exfiltration-of-personal-data-by-session-replay-scripts/)
 	* [Data release: list of websites that have third-party “session replay” scripts ](https://webtransparency.cs.princeton.edu/no_boundaries/session_replay_sites.html)
 	* [.NET Github: .NET core should not SPY on users by default #3093](https://github.com/dotnet/cli/issues/3093)
 	* [.NET Github: Revisit Telemetry configuration #6086 ](https://github.com/dotnet/cli/issues/6086)
 	* [iTerm2 Leaks Everything You Hover in Your Terminal via DNS Requests](https://www.bleepingcomputer.com/news/security/iterm2-leaks-everything-you-hover-in-your-terminal-via-dns-requests/)
-* **De-Anonymization**
+* **De-Anonymization**<a name="de-anon"></a>
 	* **Articles/Blogposts/Writeups**
 		* [De-Anonymizing Alt.Anonymous. Messages - Tom Ritter - Defcon21](https://www.youtube.com/watch?v=_Tj6c2Ikq_E)
 		* [De-Anonymizing Alt.Anonymous.Messages](https://ritter.vg/blog-deanonymizing_amm.html)
@@ -97,26 +93,33 @@
 	* **Papers**
 		* [Speaker Recognition in Encrypted Voice Streams - Michael Backes,Goran Doychev,Markus Durmuth,Boris Kopf](http://software.imdea.org/~gdoychev/publications/esorics10.pdf)
 			* We develop a novel approach for unveiling the identity of speakers who participate in encrypted voice communication, solely by eavesdropping on the encrypted traffic. Our approach exploits the concept of voice activity detection (VAD), a widely used technique for reducing the bandwidth consumption of voice traffic. We show that the reduction of traffic caused by VAD techniques creates patterns in the encrypted traffic, which in turn reveal the patterns of pauses in the underlying voice stream. We show that these patterns are speaker-characteristic, and that they are sufficient to undermine the anonymity of the speaker in encrypted voice communication. In an empirical setup with 20 speakers our analysis is able to correctly identify an unknown speaker in about 48% of all cases. Our work extends and generalizes existing work that exploits variable bit-rate encoding for identifying the conversation language and content of encrypted voice streams)
-* **Documents**
-	* [anonymouth](https://github.com/psal/anonymouth)
-	* Document Anonymization Tool, Version 0.5
-		* [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
-	* [F⁠ingerprinting documents​ with steganography​](http://blog.fastforwardlabs.com/2017/06/23/fingerprinting-documents-with-steganography.html)
-	* [steganos](https://github.com/fastforwardlabs/steganos)
-		* This is a library to encode bits into text.... steganography in text!
-	* [Content-preserving Text Watermarking through Unicode Homoglyph Substitution](https://www.researchgate.net/publication/308044170_Content-preserving_Text_Watermarking_through_Unicode_Homoglyph_Substitution)
-		* Digital watermarking has become crucially important in authentication and copyright protection of the digital contents, since more and more data are daily generated and shared online through digital archives, blogs and social networks. Out of all, text watermarking is a more difficult task in comparison to other media watermarking. Text cannot be always converted into image, it accounts for a far smaller amount of data (eg. social network posts) and the changes in short texts would strongly affect the meaning or the overall visual form. In this paper we propose a text watermarking technique based on homoglyph characters substitution for latin symbols1. The proposed method is able to efficiently embed a password based watermark in short texts by strictly preserving the content. In particular, it uses alternative Unicode symbols to ensure visual indistinguishability and length preservation, namely content-preservation. To evaluate our method, we use a real dataset of 1.8 million New York articles. The results show the effectiveness of our approach providing an average length of 101 characters needed to embed a 64bit password based watermark.
-	* [Text Authorship Verification through Watermarking - Stefano Giovanni Rizzo, Flavio Bertini, Danilo Montesi](https://pdfs.semanticscholar.org/4028/f904da8e2c50672e6037168bf2bd72bc4cb9.pdf)
-* **Identification**
+* **Documents**<a name="writing"></a>
+	* **Authorship Analysis/Identification**
+		* [anonymouth](https://github.com/psal/anonymouth)
+			* Document Anonymization Tool, Version 0.5
+		* [F⁠ingerprinting documents​ with steganography​](http://blog.fastforwardlabs.com/2017/06/23/fingerprinting-documents-with-steganography.html)
+		* [Text Authorship Verification through Watermarking - Stefano Giovanni Rizzo, Flavio Bertini, Danilo Montesi](https://pdfs.semanticscholar.org/4028/f904da8e2c50672e6037168bf2bd72bc4cb9.pdf)
+	* **Obfuscation/Making it harder to OCR/Redaction Tactics and Methods**
+		* [Redaction of PDF Files Using Adobe Acrobat Professional X - NSA](https://www.cs.columbia.edu/~smb/doc/Redaction-of-PDF-Files-Using-Adobe-Acrobat-Professional-X.pdf)
+		* [Why Government Agencies Use Ugly, Difficult to Use Scanned PDFs - There's More Than Meets the Eye - circleid.com](http://www.circleid.com/posts/20180720_why_government_agencies_use_ugly_difficul_to_use_scanned_pdfs/)
+	* **Stegonagraphy**
+		* [steganos](https://github.com/fastforwardlabs/steganos)
+			* This is a library to encode bits into text.... steganography in text!
+		* [Content-preserving Text Watermarking through Unicode Homoglyph Substitution](https://www.researchgate.net/publication/308044170_Content-preserving_Text_Watermarking_through_Unicode_Homoglyph_Substitution)
+			* Digital watermarking has become crucially important in authentication and copyright protection of the digital contents, since more and more data are daily generated and shared online through digital archives, blogs and social networks. Out of all, text watermarking is a more difficult task in comparison to other media watermarking. Text cannot be always converted into image, it accounts for a far smaller amount of data (eg. social network posts) and the changes in short texts would strongly affect the meaning or the overall visual form. In this paper we propose a text watermarking technique based on homoglyph characters substitution for latin symbols1. The proposed method is able to efficiently embed a password based watermark in short texts by strictly preserving the content. In particular, it uses alternative Unicode symbols to ensure visual indistinguishability and length preservation, namely content-preservation. To evaluate our method, we use a real dataset of 1.8 million New York articles. The results show the effectiveness of our approach providing an average length of 101 characters needed to embed a 64bit password based watermark.
+* **Facial Identification**<a name="facial"></a>
 	* [Achie­ving an­ony­mi­ty against major face re­co­gni­ti­on al­go­rith­ms -  Be­ne­dikt Dries­sen, Mar­kus Dür­muth](http://www.mobsec.rub.de/forschung/veroeffentlichungen/driessen-13-face-rec/)
-* **Informative/Educational**
+* **Informative/Educational**<a name="informative"></a>
 	* [Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
 		* Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
 	* [Detect Tor Exit doing sniffing by passively detecting unique DNS query (via HTML & PCAP parsing/viewing)](https://github.com/NullHypothesis/exitmap/issues/37)
 	* [Dutch-Russian cyber crime case reveals how police tap the internet - ElectroSpaces](http://electrospaces.blogspot.de/2017/06/dutch-russian-cyber-crime-case-reveals.html?m=1)
 	* [An Underground education](https://www.slideshare.net/grugq/underground-education-21151795)
 	* [How to Spot a Spook](https://cryptome.org/dirty-work/spot-spook.htm)
-* **Obfuscation**
+* **Journalism/Media Publishing**<a name="media"></a>
+	* [Information Security For Journalist book - Centre for Investigative Journalism](http://files.gendo.nl/Books/InfoSec_for_Journalists_V1.1.pdf)
+	* [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
+* **Network Obfuscation**<a name="obfuscation"></a>
 	* [HORNET: High-speed Onion Routing at the Network Layer](http://arxiv.org/pdf/1507.05724v1.pdf)
 	* [Decoy Routing: Toward Unblockable Internet Communication](https://www.usenix.org/legacy/events/foci11/tech/final_files/Karlin.pdf)
 		* We present decoy routing, a mechanism capable of circumventing common network filtering strategies. Unlike other circumvention techniques, decoy routing does not require a client to connect to a specific IP address (which is easily blocked) in order to provide circumvention. We show that if it is possible for a client to connect to any unblocked host/service, then decoy routing could be used to connect them to a blocked destination without coop- eration from the host. This is accomplished by placing the circumvention service in the network itself – where a single device could proxy traffic between a significant fraction of hosts – instead of at the edge.
@@ -124,7 +127,7 @@
 		* This is a protocol obfuscation layer for TCP protocols. Its purpose is to keep a third party from telling what protocol is in use based on message contents. Unlike obfs3, obfs4 attempts to provide authentication and data integrity, though it is still designed primarily around providing a layer of obfuscation for an existing authenticated protocol like SSH or TLS.
 	* [obfs3 (The Threebfuscator)](https://gitweb.torproject.org/pluggable-transports/obfsproxy.git/tree/doc/obfs3/obfs3-protocol-spec.txt)
 		* This is a protocol obfuscation layer for TCP protocols. Its purpose is to keep a third party from telling what protocol is in use based on message contents. Like obfs2, it does not provide authentication or data integrity. It does not hide data lengths. It is more suitable for providing a layer of obfuscation for an existing authenticated protocol, like SSH or TLS. 
-* **OPSEC(Specifically)**
+* **OPSEC(Specifically)**<a name="opsec"></a>
 	* [Operational Security and the Real World - The Grugq](https://medium.com/@thegrugq/operational-security-and-the-real-world-3c07e7eeb2e8)
 	* [CIA Vault7 Development Tradecraft DOs and DON'Ts](https://wikileaks.org/ciav7p1/cms/page_14587109.html)
 	* [Campaign Information Security In Theory and Practice](https://medium.com/@thegrugq/campaign-information-security-ff6ac49966e1)
@@ -138,17 +141,24 @@
 	* [OPSEC Concerns in Using Crypto](https://www.slideshare.net/JohnCABambenek/defcon-crypto-village-opsec-concerns-in-using-crypto)
 	* [You're Leaking Trade Secrets - Defcon22 Michael Schrenk](https://www.youtube.com/watch?v=JTd5TL6_zgY)
 		* Networks don't need to be hacked for information to be compromised. This is particularly true for organizations that are trying to keep trade secrets. While we hear a lot about personal privacy, little is said in regard to organizational privacy. Organizations, in fact, leak information at a much greater rate than individuals, and usually do so with little fanfare. There are greater consequences for organizations when information is leaked because the secrets often fall into the hands of competitors. This talk uses a variety of real world examples to show how trade secrets are leaked online, and how organizational privacy is compromised by seemingly innocent use of The Internet.
-* **Reference/Resources**
+* **Reference/Resources**<a name="ref"></a>
 	* [The Paranoid's Bible: An anti-dox effort.](https://paranoidsbible.tumblr.com/)
 	* [Debian-Privacy-Server-Guide](https://github.com/drduh/Debian-Privacy-Server-Guide)
 		* This is a step-by-step guide to configuring and managing a domain, remote server and hosted services, such as VPN, a private and obfuscated Tor bridge, and encrypted chat, using the Debian GNU/Linux operating system and other free software.
 	* [Anonymous’s Guide to OpSec](http://www.covert.io/research-papers/security/Anonymous%20Hacking%20Group%20--%20OpNewblood-Super-Secret-Security-Handbook.pdf)
-* **WiFi**
+* **WiFi**<a name="wifi"></a>
 	* [Wifi Tracking: Collecting the (probe) Breadcrumbs - David Switzer](https://www.youtube.com/watch?v=HzQHWUM8cNo)
 		* Wifi probes have provided giggles via Karma and Wifi Pineapples for years, but is there more fun to be had? Like going from sitting next to someone on a bus, to knowing where they live and hang out? Why try to MITM someone’s wireless device in an enterprise environment where they may notice — when getting them at their favorite burger joint is much easier. In this talk we will review ways of collecting and analyzing probes. We’ll use the resulting data to figure out where people live, their daily habits, and discuss uses (some nice, some not so nice) for this information. We’ll also dicuss how to make yourself a little less easy to track using these methods. Stingrays are price prohibitive, but for just tracking people’s movements.. this is cheap and easy.
 * **Tool Configuration**
 	* [How to stop Firefox from making automatic connections](https://support.mozilla.org/en-US/kb/how-stop-firefox-making-automatic-connections)
-* **Tor**
+* **Tor**<a name="tor"></a>
+	* **101**
+		* [Tor - Wikipedia](https://en.wikipedia.org/wiki/Tor_(anonymity_network))
+		* [Onion Routing](https://www.onion-router.net/History.html)
+		* [Tor Project Overview](https://www.torproject.org/about/overview.html.en)
+		* [Tor Official FAQ](https://www.torproject.org/docs/faq.html.en)
+		* [Tor Official Documentation](https://www.torproject.org/docs/documentation.html.en)
+		* [Tor Wiki](https://trac.torproject.org/projects/tor/wiki)
 	* **Articles/Blogposts/Writeups**
 		* [Trawling Tor Hidden Service – Mapping the DHT](https://donncha.is/2013/05/trawling-tor-hidden-services/)
 		* [How Tor Users Got Caught by Government Agencies](http://se.azinstall.net/2015/11/how-tor-users-got-caught.html)
@@ -156,6 +166,15 @@
 		* [How Tor Users Got Caught - Defcon 22](https://www.youtube.com/watch?v=7G1LjQSYM5Q)
 			* [Part 2](https://www.youtube.com/watch?v=TQ2bk9kMneI)
 		* [Deep Dive Into Tor Onion Services - David Goulet](https://www.youtube.com/watch?v=AkoyCLAXVsc)
+	* **Tools**
+		* [Nipe](https://github.com/GouveaHeitor/nipe)
+			* Nipe is a script to make Tor Network your default gateway.
+		* [P.O.R.T.A.L.](https://github.com/grugq/portal)
+			* PORTAL is a project that aims to keep people out of jail. It is a dedicated hardware device (a router) which forces all internet traffic to be sent over the Tor network. This significantly increases the odds of using Tor effectively, and reduces the potential to make fatal mistakes.
+		* [PORTAL of Pi](https://github.com/grugq/PORTALofPi)
+			* This will guide you through configuring an Arch based RaspberryPi installation which transparently forwards all TCP traffic over the Tor network. There is also a Tor SOCKS proxy for explicitly interacting with the Tor network, either for more security, or to access a Hidden Service.
+		* [Nipe](https://github.com/GouveaHeitor/nipe)
+			* Nipe is a script to make Tor Network your default gateway.
 	* **Papers**
 		* [SkypeMorph: Protocol Obfuscation for Tor Bridges](https://www.cypherpunks.ca/~iang/pubs/skypemorph-ccs.pdf)
 			* The Tor network is designed to provide users with low- latency anonymous communications. Tor clients build circuits with publicly listed relays to anonymously reach their destinations. However, since the relays are publicly listed, they can be easily blocked by censoring adversaries. Consequently, the Tor project envisioned the possibility of unlisted entry points to the Tor network, commonly known as bridges. We address the issue of preventing censors from detecting the bridges by observing the communications between them and nodes in their network. We propose a model in which the client obfuscates its messages to the bridge in a widely used protocol over the Inter- net. We investigate using Skype video calls as our target protocol and our goal is to make it difficult for the censor- ing adversary to distinguish between the obfuscated bridge connections and actual Skype calls using statistical compar- isons. We have implemented our model as a proof-of-concept pluggable transport for Tor, which is available under an open-source licence. Using this implementation we observed the obfuscated bridge communications and compared it with those of Skype calls and presented the results.
@@ -163,14 +182,15 @@
 			* Internet censorship by governments is an increasingly common practice worldwide. Internet users and censors are locked in an arms race: as users find ways to evade censorship schemes, the censors develop countermeasures for the evasion tactics. One of the most popular and effective circumvention tools, Tor, must regularly adjust its network traffic signature to remain usable. We present StegoTorus, a tool that comprehensively disguises Tor from protocol analysis. To foil analysis of packet contents, Tor’s traffic is steganographed to resemble an innocuous cover protocol, such as HTTP. To foil analysis at the transport level, the Tor circuit is distributed over many shorter-lived connections with per-packet characteristics that mimic cover-protocol traffic. Our evaluation demonstrates that StegoTorus improves the resilience of Tor to fingerprinting attacks and delivers usable performance.
 		* [Spoiled Onions](https://www.cs.kau.se/philwint/spoiled_onions/)
 			* In this research project, we were monitoring all exit relays for several months in order to expose, document, and thwart malicious or misconfigured relays. In particular, we monitor exit relays with two scanners we developed specifically for that purpose: exitmap and HoneyConnector. Since September 2013, we discovered 65 malicious or misconfigured exit relays which are listed in Table 1 and Table 2 in our research paper. These exit relays engaged in various attacks such as SSH and HTTPS MitM, HTML injection, SSL stripping, and traffic sniffing. We also found exit relays which were unintentionally interfering with network traffic because they were subject to DNS censorship. 
-* **Travel**
+* **Travel**<a name="travel"></a>
 	* [China travel laptop setup](https://mricon.com/i/travel-laptop-setup.html?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&iid=88d246896d384d5292f51df954a2c8ba&uid=150127534&nid=244+272699400)
 * **Misc/Unsorted**
 	* [Cat Videos and the Death of Clear Text](https://citizenlab.org/2014/08/cat-video-and-the-death-of-clear-text/)
 	* [You Are Being Tracked: How License Plate Readers Are Being Used to Record Americans' Movements - ACLU](https://www.aclu.org/other/you-are-being-tracked-how-license-plate-readers-are-being-used-record-americans-movements?redirect=technology-and-liberty/you-are-being-tracked-how-license-plate-readers-are-being-used-record)
+	* [A Technical Description of Psiphon](https://psiphon.ca/en/blog/psiphon-a-technical-description)
 	* **Papers**
 		* [Deep-Spying: Spying using Smartwatch and Deep Learning - Tony Beltramelli](https://arxiv.org/pdf/1512.05616v1.pdf)
-* **Tools**
+* **Miscellaneous Tools**<a name="tools-misc"></a>
 	* [FakeNameGenerator](http://www.fakenamegenerator.com/)
 	* [MAT: Metadata Anonymisation Toolkit](https://mat.boum.org/) 
 		* MAT is a toolbox composed of a GUI application, a CLI application and a library.
@@ -196,16 +216,20 @@
 	* [haven](https://guardianproject.github.io/haven/)
 		* Android application that leverages on-device sensors to provide monitoring and protection of physical spaces.
 
+
+
+
+
 --------------------------
 ## <a name="counter"></a>Counter Surveillance
-* **Writeups**
+* **Writeups**<a name="cwriteup"></a>
 	* Detecting Surveillance - Spiderlabs blog
 		* [1 Hardware Implants](http://blog.spiderlabs.com/2014/03/detecting-surveillance-state-surveillance-part-1-hardware-impants.html)
 		* [2 Radio Frequency Exfiltration](http://blog.spiderlabs.com/2014/03/detecting-a-surveillance-state-part-2-radio-frequency-exfiltration.html)
 		* [3 Infected Firmware](http://blog.spiderlabs.com/2014/04/detecting-a-surveillance-state-part-3-infected-firmware.html)
 	* [A Simple Guide to TSCM Sweeps](http://www.international-intelligence.co.uk/tscm-sweep-guide.html)
 	* [Dutch-Russian cyber crime case reveals how police tap the internet - ElectroSpaces](http://electrospaces.blogspot.de/2017/06/dutch-russian-cyber-crime-case-reveals.html?m=1)
-* **Presentations/Talks/Videos**
+* **Presentations/Talks/Videos**<a name="cvideos"></a>
 	* [PISSED: Privacy In a Surveillance State Evading Detection - Joe Cicero - CYPHERCON11 ](https://www.youtube.com/watch?v=keA3WcKwZwA)
 	* [Fuck These Guys: Practical Countersurveillance Lisa Lorenzin - BsidesSF15](http://www.irongeek.com/i.php?page=videos/bsidessf2015/201-fck-these-guys-practical-countersurveillance-lisa-lorenzin)
 		* We've all seen the steady stream of revelations about the NSA's unconstitutional, illegal mass surveillance. Seems like there's a new transgression revealed every week! I'm getting outrage fatigue. So I decided to fight back... by looking for practical, realistic, everyday actions I can take to protect my privacy and civil liberties on the Internet, and sharing them with my friends. Join me in using encryption and privacy technology to resist eavesdropping and tracking, and to start to opt out of the bulk data collection that the NSA has unilaterally decided to secretly impose upon the world. Let's take back the Internet, one encrypted bit at a time.
@@ -224,7 +248,7 @@
 		* [Slides](https://www.portalmasq.com/portal-defcon.pdf)
 	* [The NSA: Capabilities and Countermeasures** - Bruce Schneier - ShmooCon 2014](https://www.youtube.com/watch?v=D5JA8Ytk9EI)
 		* Edward Snowden has given us an unprecedented window into the NSA's surveillance activities. Drawing from both the Snowden documents and revelations from previous whistleblowers, I will describe the sorts of surveillance the NSA does and how it does it. The emphasis is on the technical capabilities of the NSA, not the politics of their actions. This includes how it conducts Internet surveillance on the backbone, but is primarily focused on their offensive capabilities: packet injection attacks from the Internet backbone, exploits against endpoint computers and implants to exfiltrate information, fingerprinting computers through cookies and other means, and so on. I will then talk about what sorts of countermeasures are likely to frustrate the NSA. Basically, these are techniques to raise the cost of wholesale surveillance in favor of targeted surveillance: encryption, target hardening, dispersal, and so on.
-* **Papers**
+* **Papers**<a name="cpapers"></a>
 	* [Exploiting Lawful Intercept to Wiretap the Internet](https://www.blackhat.com/presentations/bh-dc-10/Cross_Tom/BlackHat-DC-2010-Cross-Attacking-LawfulI-Intercept-wp.pdf)
 		* This paper will review Cisco's architecture for lawful intercept from asecurity perspective. We explain how a number of different weaknesses in its design coupled with publicly disclosed security vulnerabilities could enable a malicious person to access the interface and spy on communications without leaving a trace. We then provide a set of recommendations for the redesign of the interface as well as SNMP authentication in general to better mitigate the security risks. 
 	* [Protocol Misidentification Made Easy with Format-Transforming Encryption](https://kpdyer.com/publications/ccs2013-fte.pdf)
@@ -246,7 +270,7 @@
 
 
 --------------------------
-### Emissions Security
+### <a name="emissions"></a> Emissions Security 
 * **101**
 * **Articles/Blogposts/Writeups**
 * **Presentations/Talks/Videos**
@@ -257,5 +281,35 @@
 		* We examine the problem of acoustic emanations of printers. We present a novel attack that recovers what a dot- matrix printer processing English text is printing based on a record of the sound it makes, if the microphone is close enough to the printer. In our experiments, the attack recovers up to 72% of printed  words, and up to 95% if we assume contextual knowledge about the text, with a microphone at a distance of 10 cm from the printer. After an upfront training phase, the attack is fully automated and uses a combination of machine learning, audio processing, and speech recognition techniques, including spectrum features, Hidden Markov Models and linear classification; moreover, it allows for feedback-based incremental learning. We evaluate the effectiveness of countermeasures, and we describe how we successfully mounted the attack in-field (with appropriate privacy protections) in a doctor’s practice to recover the content of medical prescriptions.
 	* [Tempest in a Teapot: Compromising Reflections Revisited](http://www.mia.uni-saarland.de/Publications/backes-sp09.pdf)
 		* Reflecting objects such as tea pots and glasses, but also diffusely reflecting objects such as a user’s shirt, can be used to spy on confidential data displayed on a monitor. First, we show how reflections in the user’s eye can be exploited for spying  on  confidential data. Second, we investigate to what extent monitor images can be reconstructed from the diffuse reflections on a wall or the user’s clothes, and provide information- theoretic bounds limiting this type of attack. Third, we evaluate the effectiveness of several countermeasures
+	* [GSMem: Data Exfiltration from Air-Gapped Computers over GSM Frequencies - usenix conference](https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-guri-update.pdf)
 * **Tools**
 * **Miscellaneous**
+
+
+-------------------------
+### <a name="modern"></a> Modern Surveillance
+* **Papers**
+* **Articles**
+	* [Understanding & Improving Privacy "Audits" under FTC Orders](https://cyberlaw.stanford.edu/blog/2018/04/understanding-improving-privacy-audits-under-ftc-orders)
+		* This new white paper, entitled “Understanding and Improving Privacy ‘Audits’ under FTC Orders,” carefully parses the third-party audits that Google and Facebook are required to conduct under their 2012 Federal Trade Commission consent orders.  Using only publicly available documents, the article contrasts the FTC’s high expectations for the audits with what the FTC actually received (as released to the public in redacted form).   These audits, as a practical matter, are often the only “tooth” in FTC orders to protect consumer privacy.  They are critically important to accomplishing the agency’s privacy mission.  As such, a failure to attend to their robust enforcement can have unintended consequences, and arguably, provide consumers with a false sense of security. The paper shows how the audits are not actually audits as commonly understood.  Instead, because the FTC order language only requires third-party “assessments,” the companies submit reports that are termed “attestations.”  Attestations fundamentally rely on a few vague privacy program aspects that are self-selected by the companies themselves.  While the FTC could reject attestation-type assessments, the agency could also insist the companies bolster certain characteristics of the attestation assessments to make them more effective and replicate audit attributes.  For example, the FTC could require a broader and deeper scope for the assessments.  The agency could also require that assessors evaluate Fair Information Practices, data flows, notice/consent effectiveness, all company privacy assurances, and known order violations.
+	* **China**<a name="china"></a>
+		* [ China's Xinjiang Region A Surveillance State Unlike Any the World Has Ever Seen - Spiegel.de](http://www.spiegel.de/international/world/china-s-xinjiang-province-a-surveillance-state-unlike-any-the-world-has-ever-seen-a-1220174.html)
+	* **France**
+	* **Germany**
+	* **United States**<a name="usa"></a>
+* **Things**
+	* [RF-Capture](http://rfcapture.csail.mit.edu/)
+		* RF-Capture is a device that captures a human figure through walls and occlusions. It transmits wireless signals and reconstructs a human figure by analyzing the signals' reflections. RF-Capture does not require the person to wear any sensor, and its transmitted power is 10,000 times lower than that of a standard cell-phone.
+		* [Paper](http://rfcapture.csail.mit.edu/rfcapture-paper.pdf)
+
+
+
+
+
+
+
+
+
+
+
+

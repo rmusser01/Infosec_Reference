@@ -1,43 +1,52 @@
 # CTFs & Wargames
 
 ## Table of Contents
-* [General](#general)
-* [Wargames](#wargames)
-* [Vulnerable VMs](#vulnvm)
-* [Challenge Sites](#challenge)
-* [One-off Challenges & Puzzles](#puzzle)
-* [Hosting CTFs/Making your own](#make)
+- [General](#general)
+- [101](#101)
+- [Beginner Focused CTFs](#beginner)
+- [Challenge Archives](#archives)
+- [One-Off Challenges](#one-off)
+- [Challenge Sites](#sites)
+- [Educational Stuff](#educational)
+- [Handy Tools](#tools)
+- [Making Your Own CTF](#own)
+- [Vulnerable VMs](#vulnerable)
+- [Wargames](#wargames)
+- [Writeups](#writeups)
+
+
+
 
 
 #### Cull
 
-pentestit
-
-pentestlab
-
+* [Penetration Test 'test lab'](https://lab.pentestit.ru/)
 root-me
+* [Defcon DFIR CTF 2018 Open to the Public - HackingExposed Computer Forensics](http://www.hecfblog.com/2018/08/daily-blog-451-defcon-dfir-ctf-2018.html?m=1)
+* [DFRWS IoT Forensic Challenge (2018 - 2019)](http://dfrws.org/dfrws-forensic-challenge)
+
 #### end cull
 
 -----
 ### <a name="general">General</a>
-General
-* [ctf-time](https://ctftime.org/)
-* **101**
+* **General**
+	* [ctf-time](https://ctftime.org/)
+* **101**<a name="101"></a>
 	* [How to play your first OpenCTF](http://www.openctf.com/html/firstctf.html)
 	* [Capture The Flag (CTF): What Is It for a Newbie?](https://www.alienvault.com/blogs/security-essentials/capture-the-flag-ctf-what-is-it-for-a-newbie)
 	* [Advice for my first CTF? - Reddit Thread](https://www.reddit.com/r/hacking/comments/24py5h/advice_for_my_first_ctf/)
-* **Beginner Focused CTFs**
+* **Beginner Focused CTFs**<a name="beginner"></a>
 	* PicoCTF
 	* CSAW
-* **Challenge Archives**
+* **Challenge Archives**<a name="archives"></a>
 	* [Archive of recent CTFs](http://repo.shell-storm.org/CTF/)
-* **Challenges (one-offs)**
+* **Challenges (one-offs)**<a name="one-off"></a>
 	* [Forensics Contest](http://forensicscontest.com/)
 	* [List of themed Hacker challenges](http://counterhack.net/Counter_Hack/Challenges.html)
 	* [Sans Community Forensics Challenges](https://www.digital-forensics.sans.org/community/challenges)
 	* [Greenhorn](https://github.com/trailofbits/greenhorn)
 		* Greenhorn is a Windows Pwnable released during CSAW Quals 2014. It's meant to be an introduction to modern Windows binary exploitation.
-* **Challenge Sites**
+* **Challenge Sites**<a name="sites"></a>
 	* [HacktheBox.eu](https://www.hackthebox.eu/)
 	* [Wechall](http://wechall.net/)
 		* An amazing site. Tracks, lists, scores, various challenge sites. If you’re looking for a challenge or two, and not a wargame, this is the site you want to hit up first.
@@ -53,19 +62,18 @@ General
 	* [Hack This](https://www.hackthis.co.uk/)
 	* [XSS Challenge Wiki](https://github.com/cure53/xss-challenge-wiki/wiki)
 		* [List without spoilers:](https://github.com/cure53/xss-challenge-wiki/wiki/Older-Challenges-and-Write-Ups)
-* **Educational**
+* **Educational**<a name="educational"></a>
 	* [Suggestions on Running a CTF](https://github.com/pwning/docs/blob/master/suggestions-for-running-a-ctf.markdown)
 		* This document describes some of the design decisions and technical details involved in running a CTF competition. It attempts to summarize some opinions held by the CTF community and list some specific pitfalls to avoid when designing problems.
 	* [The Many Maxims of Maximally Effective CTFs](http://captf.com/maxims.html)
-* **General**
 	* [CTF Field Guide - TrailofBits](https://trailofbits.github.io/ctf/)
 	* [Golden Flag CTF Awards](http://golden-flags.com/)
-* **Handy Tools**
+* **Handy Tools**<a name="tools"></a>
 	* [pngcheck](http://www.libpng.org/pub/png/apps/pngcheck.html)
 		* pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing the image data); it can optionally dump almost all of the chunk-level information in the image in human-readable form. For example, it can be used to print the basic statistics about an image (dimensions, bit depth, etc.); to list the color and transparency info in its palette (assuming it has one); or to extract the embedded text annotations. This is a command-line program with batch capabilities.
 	* [pwntools](https://github.com/Gallopsled/pwntools)
 	* [CTF Scripts and PyInstaller (.py > .exe) ](http://www.primalsecurity.net/ctf-scripts-and-pyinstaller-py-exe/)
-* **Making Your Own CTF**
+* **Making Your Own CTF**<a name="make"></a>
 	* [AppJailLauncher](https://github.com/trailofbits/AppJailLauncher)
 		* CTF Challenge Framework for Windows 8 and above 
 	* [CTFd](https://github.com/isislab/CTFd)
@@ -91,14 +99,14 @@ General
 		* SecGen creates vulnerable virtual machines so students can learn security penetration testing techniques.
 	* [Flawed Fortress](https://github.com/rgajendran/ctf_marker)
 		* Flawed Fortress is a front end platform for hosting Capture the Flag Event (CTF), it is programmed with PHP, JQuery, JavaScript and phpMyAdmin. Currently, It is designed to import SecGen CTF challenges using `marker.xml` file (which is generated in the project folder when creating a CTF Challenge)
-* **Vulnerable Virtual Machines**
+* **Vulnerable Virtual Machines**<a name="vulnerable"></a>
 	* [Vulnhub](https://www.Vulnhub.com)
 	* [The Hacker Games](http://www.scriptjunkie.us/2012/04/the-hacker-games/)
 		* VM Setup to practice VM breakouts/defense. Hack the VM before it hacks you!
 		* [VM Download](http://www.scriptjunkie.us/files/TheHackerGames.zip)
 	* [VulnInjector](https://github.com/g0tmi1k/VulnInjector)
 		* Generates a 'vulnerable' machine using the end users own setup files & product keys. 
-* **Wargames**
+* **Wargames**<a name="wargames"></a>
 	* [Ringzer0 team CTF](http://ringzer0team.com/)
 		* Description: RingZer0 Team's online CTF offers you tons of challenges designed to test and improve your hacking skills thru hacking challenge. Register and get a flag for every challenges. 
 	* [pwn0 Wargame](https://pwn0.com/)
@@ -115,7 +123,7 @@ General
 	* [pwnable.tw](http://pwnable.tw/)
 	* [Gracker](http://gracker.org)
 	* [ROP Wargames](https://game.rop.sh/)
-* **Writeups**
+* **Writeups**<a name="writeups"></a>
 	* [CTF Writeups](https://github.com/ctfs/write-ups)
 	* [CTF write-ups 2015](https://github.com/ctfs/write-ups-2015)
 	* [CTF write-ups 2017](https://github.com/ctfs/write-ups-2017)

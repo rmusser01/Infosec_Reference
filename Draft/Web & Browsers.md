@@ -98,12 +98,67 @@ Web TOC
 
 * [Enteletaor](https://github.com/cr0hn/enteletaor)
 	* Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.
+* [Access Control (Authentication, Authorisation) in RabbitMQ](https://www.rabbitmq.com/access-control.html)
+* [Credentials and Passwords](https://www.rabbitmq.com/passwords.html)
+* [Management Plugin](https://www.rabbitmq.com/management.html)
+* [File and Directory Locations](https://www.rabbitmq.com/relocate.html)
+* [Credentials and Passwords](https://www.rabbitmq.com/passwords.html)
+	* [domain_analyzer](https://github.com/eldraco/domain_analyzer)
+		* Analyze the security of any domain by finding all the information possible. Made in python.
 * [Web Application Defaults DB(2013)](https://github.com/pwnwiki/webappdefaultsdb)
 * [Hacking with Pictures - Syscan2015](http://www.slideshare.net/saumilshah/hacking-with-pictures-syscan-2015)
 * [File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
 
 https://github.com/toddmotto/public-apis
 
+* [Uncovering Drupalgeddon 2 - Checkpoint](https://research.checkpoint.com/uncovering-drupalgeddon-2/)
+https://github.com/Fuzzapi/API-fuzzer
+https://github.com/ThreatResponse/mad-king
+http://www.syhunt.com/sandcat/
+https://www.aptive.co.uk/blog/local-file-inclusion-lfi-testing/
+* [JSMVCOMFG - To sternly look at JavaScript MVC and Templating Frameworks - Mario Heiderich](https://www.youtube.com/watch?v=SLH_IgaQWjs)
+	* [Slides](https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-and-templating-frameworks)
+https://docs.microsoft.com/en-us/azure/security/azure-security-services-technologies
+https://github.com/disruptops/cred_scanner
+https://github.com/D35m0nd142/LFISuite
+https://medium.com/@nodepractices/were-under-attack-23-node-js-security-best-practices-e33c146cb87d
+https://www.tutorialdocs.com/article/jwt-learn.html
+https://docs.microsoft.com/en-us/azure/security/azure-operational-security-checklist
+https://azure.microsoft.com/en-us/resources/videos/fabric-controller-internals-building-and-updating-high-availability-apps/
+https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet#Providing_Transport_Layer_Protection_with_SSL.2FTLS
+Add links to SSL/TLS RFCs
+* [Pass-the-Hash Web Style - SANS](https://pen-testing.sans.org/blog/2013/04/05/pass-the-hash-web-style)
+* [Building beautiful REST APIs using Flask, Swagger UI and Flask-RESTPlus](http://michal.karzynski.pl/blog/2016/06/19/building-beautiful-restful-apis-using-flask-swagger-ui-flask-restplus/)
+* [How Spring Web MVC Really Works - Stackify.com](https://stackify.com/spring-mvc/)
+* [Microsoft Azure Datacenter IP Ranges - ms.com](https://www.microsoft.com/en-us/download/details.aspx?id=41653)
+* [weapons4pentester](https://github.com/merttasci/weapons4pentester)
+	* Payload Samples
+* [Exploiting PHP-GD imagecreatefromjpeg() function - fakhrizulkifli](https://github.com/fakhrizulkifli/Defeating-PHP-GD-imagecreatefromjpeg)
+	* Proof-of-concept to exploit the flaw in the PHP-GD built-in function, imagecreatefromjpeg(). Inspired by one of Reddit's comment on my previous thread regarding exploiting the imagecreatefromgif() PHP-GD function.
+* [Beyond SQLi: Obfuscate and Bypass - CWH Underground](https://www.exploit-db.com/papers/17934/)
+https://www.geekboy.ninja/blog/exploiting-misconfigured-cors-cross-origin-resource-sharing/
+* [MySQL UDF Exploitation](https://osandamalith.com/2018/02/11/mysql-udf-exploitation/)
+* [Bypassing Web-Application Firewalls by abusing SSL/TLS - 0x09AL](https://0x09al.github.io/waf/bypass/ssl/2018/07/02/web-application-firewall-bypass.html)
+* [WAF_buster](https://github.com/viperbluff/WAF_buster/blob/master/README.md)
+* [File Operation Induced Unserialization via the "phar://" Stream Wrapper - secarma labs](https://github.com/s-n-t/presentations/blob/master/us-18-Thomas-It's-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-Know-It-wp.pdf)
+* [Puppeteer](https://github.com/GoogleChrome/puppeteer)
+	* Puppeteer is a Node library which provides a high-level API to control Chrome or Chromium over the DevTools Protocol. Puppeteer runs headless by default, but can be configured to run full (non-headless) Chrome or Chromium.
+* [OWASP LFI](https://www.owasp.org/index.php/Testing_for_Local_File_Inclusion)
+* [HighOn.coffee LFI Cheat](https://highon.coffee/blog/lfi-cheat-sheet/)
+* [Turning LFI to RFI ](https://l.avala.mp/?p=241)
+* [Is PHP vulnerable and under what conditions?](http://0x191unauthorized.blogspot.fr/2015/04/is-php-vulnerable-and-under-what.html)
+* [Upgrade from LFI to RCE via PHP Sessions](https://www.rcesecurity.com/2017/08/from-lfi-to-rce-via-php-sessions/)
+* [Local file inclusion tricks](http://devels-playground.blogspot.fr/2007/08/local-file-inclusion-tricks.html)
+* [CVV #1: Local File Inclusion - SI9INT](https://medium.com/bugbountywriteup/cvv-1-local-file-inclusion-ebc48e0e479a)
+* [Exploiting Blind File Reads / Path Traversal Vulnerabilities on Microsoft Windows Operating Systems - @evisneffos](http://www.soffensive.com/2018/06/exploiting-blind-file-reads-path.html)
+http://security-geek.in/2014/08/22/using-burp-suite-to-brute-force-http-auth-attacks/
+* [mongoaudit](https://github.com/stampery/mongoaudit)
+	* mongoaudit is a CLI tool for auditing MongoDB servers, detecting poor security settings and performing automated penetration testing.
+* [Intro to Hacking Mongo DB - SecuritySynapse](https://securitysynapse.blogspot.com/2015/07/intro-to-hacking-mongo-db.html)
+
+
+* [An Introduction to Penetration Testing AWS: Same Same, but Different - GracefulSecurity](https://www.gracefulsecurity.com/an-introduction-to-penetration-testing-aws/)
+* [An Introduction to PenTesting Azure](https://www.gracefulsecurity.com/an-introduction-to-pentesting-azure/)
 
 #### End Sort
 

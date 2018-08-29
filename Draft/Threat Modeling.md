@@ -1,7 +1,7 @@
 ## Threat Modeling
 
 
-* [ThreatHuntingStuff](https://github.com/MatthewDemaske/ThreatHuntingStuff)
+
 
 ### Threat Modeling
 * **Talks & Presentations**
@@ -10,6 +10,8 @@
 	* [Global Adversarial Capability Modeling](https://www.youtube.com/watch?v=56T3JN09SrY#t=41)
 	* [Adam Shostack - Pentesting: Lessons from Star Wars](https://www.youtube.com/watch?v=BfWWryF8M7E&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=13)
 		* Everyone knows you ought to threat model, but in practical reality it turns out to be tricky. If past efforts to threat model haven’t panned out, perhaps part of the problem is confusion over what works, and how the various approaches conflict or align. This talk captures lessons from years of work helping people throughout the software industry threat model more effectively. It’s designed to help security pros, especially pen testers, all of whom will leave with both threat modeling lessons from Star Wars and a proven foundation, enabling them to threat model effectively on offense or defense.
+	* [Threat Modeling - Jim DelGrosso](https://www.somersetrecon.com/blog/2018/7/27/infecting-the-embedded-supply-chain)
+	* [Threat Modeling 101 - Dan Tentler](https://www.youtube.com/watch?v=wu8SDWao_Ns)
 * **Threat Modeling Methodologies**
 	* [Guerrilla Threat Modelling (or 'Threat Modeling' if you're American)](http://blogs.msdn.com/b/ptorr/archive/2005/02/22/guerillathreatmodelling.aspx)
 * **Articles/Papers/Writeups**

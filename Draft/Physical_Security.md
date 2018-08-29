@@ -24,11 +24,12 @@
 * [Physical Home Security Options - DiabloHorn](https://diablohorn.wordpress.com/2014/07/13/physical-home-security-options/#more-984)
 
 * [Hacking things by touching them - armadillo](https://www.armadillophone.com/blog/2017/08/27/hacking-things-by-touching-them)
-
+	* [Contents of a Physical Pentester Backpack](https://www.tunnelsup.com/contents-of-a-physical-pen-testers-backpack/)
 * [zoneminder](https://www.zoneminder.com/)
 	* A full-featured, open source, state-of-the-art video surveillance software system.
 * [The Green Beret Hotel Check-In Safety List](https://www.entrepreneur.com/article/286411)
-
+* [88MPH Digital tricks to bypass Physical security- Andrew MacPherson - ZaCon4](https://vimeo.com/52865794)
+[What Does The Perfect Door Or Padlock Look Like? - Deviant Ollam - BruCON 0x08](https://www.youtube.com/watch?v=4skSBwBBI-s&list=PLtb1FJdVWjUfCe1Vcj67PG5Px8u1VY3YD&index=2)
 
 #### End Sort
 

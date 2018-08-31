@@ -20,7 +20,7 @@
 - [Ransomware](#ransom)
 - [User Awareness Training](#uat)
 - [Web](#web)
-- [WAF(#waf)
+- [WAF](#waf)
 - [Windows](#windows)
 - [Powershell](#powershell)
 

@@ -13,9 +13,6 @@
 
 
 
-
-
-
 -------------------------
 ### <a name="general"></a> General
 * This page is supposed to be a collection of resources for building a lab for performing various security related tasks. Generally, the idea is that you setup a local VM hypervisor software(VMware, Virtualbox) and then install a virtual machine to perform testing and analysis without any impact to your "physical" machine.
@@ -48,7 +45,6 @@
 	* [List of VMs that are preconfigured virtual machines](http://www.amanhardikar.com/mindmaps/PracticeUrls.html)
 	* [The Hacker Games - Hack the VM before it hacks you](http://www.scriptjunkie.us/2012/04/the-hacker-games/)
 		* I have talked about counterattacks here before, and this system has implemented a number of aggressive anti-hacker measures.  In fact, this VM is downright evil. I am probably legally obligated to tell you that it will try to hack you. So if a calculator or message declaring your pwnedness pops up or shows up on your desktop, you asked for it. But don’t worry, it won’t steal your docs or rm you, it will just demonstrate compromise for the game.  To save precious bandwidth, this has been implemented in a minimal tinycore-based VM, and will require VirtualBox to run.
-
 	* **Docker**
 		* [Down by the Docker](https://www.notsosecure.com/vulnerable-docker-vm/)
 			* Ever fantasized about playing with docker misconfigurations, privilege escalation, etc. within a container? Download this VM, pull out your pentest hats and get started 
@@ -86,10 +82,18 @@
 			* grails_nV is a vulnerable jobs listing website.
 		* [RailsGoat](https://github.com/OWASP/railsgoat)
 			* RailsGoat is a vulnerable version of the Ruby on Rails Framework from versions 3 to 5. It includes vulnerabilities from the OWASP Top 10, as well as some "extras" that the initial project contributors felt worthwhile to share. This project is designed to educate both developers, as well as security professionals.
+		* [File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
+		* [OWASP DevSlop Project](https://www.owasp.org/index.php/OWASP_DevSlop_Project)
+			* collection of DevOps-driven applications, specifically designed to showcase security catastrophes and vulnerabilities for use in security testing, software testing, learning and teaching for both developers and security professionals.
+
+
+
+
+
 
 
 -------------------------
-### <a name="AD"></a> Installing Active Directory
+### <a name="AD"></a> Setting up ActiveDirectory Focused Labs
 * **Official Documentation**
 	* [Install AD DS using Powerhsell](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-#BKMK_PS)
 	* [Active Directory Domain Services Overview](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
@@ -99,6 +103,7 @@
 	* [Building an Effective Active Directory Lab Environment for Testing - adsecurity.org](https://adsecurity.org/?p=2653)
 	* [Step-By-Step: Setting up Active Directory in Windows Server 2016 - blogs.technet](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
 	* [Pentest Home Lab - 0x2 - Building Your AD Lab on Premises-SethSec](https://sethsec.blogspot.com/2017/06/pentest-home-lab-0x2-building-your-ad.html)
+	* [Building and Attacking an Active Directory lab with PowerShell - 1337red](https://1337red.wordpress.com/building-and-attacking-an-active-directory-lab-with-powershell/)
 	* **AWS**
 		* [Active Directory Domain Services on the AWS Cloud: Quick Start Reference Deployment - docs.aws](https://docs.aws.amazon.com/quickstart/latest/active-directory-ds/welcome.html)
 		* [Active Directory Domain Services on AWS](https://aws.amazon.com/quickstart/architecture/active-directory-ds/)
@@ -112,7 +117,10 @@
 		* Automated deployment of Windows and Active Directory test lab networks. Useful for red and blue teams.
 	* [ADImporter](https://github.com/curi0usJack/ADImporter)
 		* When you need to simulate a real Active Directory with thousands of users you quickly find that creating realistic test accounts is not trivial. Sure enough, you can whip up a quick PowerShell one-liner that creates any number of accounts, but what if you need real first and last names? Real (existing) addresses? Postal codes matching phone area codes? I could go on. The point is that you need two things: input files with names, addresses etc. And script logic that creates user accounts from that data. This blog post provides both.
-
+	* [youzer](https://github.com/SpiderLabs/youzer)
+		* Fake User Generator for Active Directory Environments
+	* [sheepl](https://github.com/SpiderLabs/sheepl)
+		* sheepl is a tool that aims to bridge the gap by emulating the behaviour that people normally undertake within a network environment. Using Python3 and AutoIT3 the output can be compiled into a standalone executable without any other dependancies that when executed on an Windows endpoint, executes a set of tasks randomly over a chosen time frame.
 
 
 

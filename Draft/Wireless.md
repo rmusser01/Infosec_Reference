@@ -28,33 +28,31 @@
 * Fix ToC
 * Add 101 stuff
 * Add SMS Standards/related
+	* [#root via SMS: 4G access level security assessment](https://conference.hitb.org/hitbsecconf2015ams/materials/D1T1%20-%20T.%20Yunusov%20K.%20Nesterov%20-%20Bootkit%20via%20SMS.pdf)
+* add krack
 
-http://umtrx.org/
+* [RPL Attacks Framework](https://github.com/dhondta/rpl-attacks)
+	* This project is aimed to provide a simple and convenient way to generate simulations and deploy malicious motes for a Wireless Sensor Network (WSN) that uses Routing Protocol for Low-power and lossy devices (RPL) as its network layer. With this framework, it is possible to easily define campaign of simulations either redefining RPL configuration constants, modifying single lines from the ContikiRPL library or using an own external RPL library. Moreover, experiments in a campaign can be generated either based on a same or a randomized topology for each simulation.
 
-* [The Great SIM Heist How Spies Stole the Keys to the Encryption Castle - The Intercept](https://theintercept.com/2015/02/19/great-sim-heist/)
+
+https://docs.google.com/presentation/d/19A1JWyOTueZvD8AksqCxtxriNJJgj0vPdq3cNTwndf4/mobilepresent#slide=id.g35506ef05e_0_7
+https://alter-attack.net/
+
+https://github.com/ZerBea/hcxtools
+https://github.com/riverloopsec/tumblerf
+https://github.com/mikeryan/crackle
+https://github.com/DigitalSecurity/btlejuice/blob/master/README.md
+https://github.com/noble/noble
+https://hashcat.net/forum/thread-7717.html
+https://www.airxperts.net/index.php/2018/07/10/improving-wireshark-for-wifi-packet-analysis/
+
+
+
+
+
 * [Ghosts from the Past: Authentication bypass and OEM backdoors in WiMAX routers](http://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html)
-
+* [One Billion Apples' Secret Sauce: Recipe for the Apple Wireless Direct Link Ad hoc Protocol](https://arxiv.org/abs/1808.03156)
 * [Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
-* [Fluxion](https://github.com/wi-fi-analyzer/fluxion)
-	* Fluxion is a remake of linset by vk496 with (hopefully) less bugs and more functionality. It's compatible with the latest release of Kali (rolling). The attack is mostly manual, but experimental versions will automatically handle most functionality from the stable releases.
-* [Binary SMS - The old backdoor to your new thing - contextis](https://www.contextis.com/blog/binary-sms-the-old-backdoor-to-your-new-thing)
-
-Cellular Networks in Use: 
-* In use in North America:
-* In use in Europe:
-* In use in Asia:
-* In use in Africa:
-* In use in South America:
-
-
-
-
-
-##### End Sort
-
-
-
-
 
 
 
@@ -183,6 +181,8 @@ Cellular Networks in Use:
 		* Telecom Signaling Exploitation Framework - SS7, GTP, Diameter & SIP. SiGploit a signaling security testing framework dedicated to Telecom Security professionals and reasearchers to pentest and exploit vulnerabilites in the signaling protocols used in mobile operators regardless of the geneartion being in use. SiGploit aims to cover all used protocols used in the operators interconnects SS7, GTP (3G), Diameter (4G) or even SIP for IMS and VoLTE infrastructures used in the access layer and SS7 message encapsulation into SIP-T. Recommendations for each vulnerability will be provided to guide the tester and the operator the steps that should be done to enhance their security posture
 	* [LTE-Cell-Scanner](https://github.com/Evrytania/LTE-Cell-Scanner)
 		* This is a collection of tools to locate and track LTE basestation cells using very low performance RF front ends. For example, these tools work with RTL2832 based dongles (E4000, R820T, etc.) which have a noise figure of 20dB, only 8 bits in the A/D, and a crystal with a frequency error of about 100 ppm.
+	* [UmTRX](https://umtrx.org/products/)
+		* UmTRX is a dual-channel wide-band SDR platform with gigabit Ethernet connectivity, that is developed by Fairwaves and designed to be used as a transceiver (TRX) with OpenBTS and OsmoBTS GSM base stations.
 * **SIM Cards**
 	* **101**
 	* **Articles/Presentations/Talks/Writeups**
@@ -194,6 +194,7 @@ Cellular Networks in Use:
 		* [The Secret Life of SIM Cards - Defcon21](https://www.youtube.com/watch?v=31D94QOo2gY)
 		* [Small Tweaks do Not Help: Differential Power Analysis of MILENAGE Implementations in 3G/4G USIM Cards](https://www.blackhat.com/docs/us-15/materials/us-15-Yu-Cloning-3G-4G-SIM-Cards-With-A-PC-And-An-Oscilloscope-Lessons-Learned-In-Physical-Security-wp.pdf)
 		* [Mobile: Cellular Exploitation on a Global Scale The Rise & Fall of the Control](https://www.youtube.com/watch?v=HD1ngJ85vWM)
+		* [The Great SIM Heist How Spies Stole the Keys to the Encryption Castle - The Intercept](https://theintercept.com/2015/02/19/great-sim-heist/)
 	* **Tools**
 		* [Osmocom SIMtrace](http://bb.osmocom.org/trac/wiki/SIMtrace)
 			* Osmocom SIMtrace is a software and hardware system for passively tracing SIM-ME communication between the SIM card and the mobile phone. 	
@@ -237,6 +238,8 @@ Cellular Networks in Use:
 		* [4G LTE Architecture and Security Concerns](http://www.secforce.com/blog/2014/03/4g-lte-architecture-and-security-concerns/)
 		* [LTEInspector : A Systematic Approach for Adversarial Testing of 4G LTE](http://wp.internetsociety.org/ndss/wp-content/uploads/sites/25/2018/02/ndss2018_02A-3_Hussain_paper.pdf)
 			* In this paper, we investigate the security and privacy of the three critical procedures of the 4G LTE protocol (i.e., attach, detach, and paging), and in the process, uncover potential design flaws of the protocol and unsafe practices employed by the stakeholders. For exposing vulnerabilities, we propose a model-based testing approach LTEInspector which lazily combines a symbolic model checker and a cryptographic protocol verifier in the symbolic attacker model. Using LTEInspector, we have uncovered 10 new attacks along with 9 prior attacks, cate- gorized into three abstract classes (i.e., security, user privacy, and disruption of service), in the three procedures of 4G LTE. Notable among our findings is the authentication relay attack that enables an adversary to spoof the location of a legitimate user to the core network without possessing appropriate credentials. To ensure that the exposed attacks pose real threats and are indeed realizable in practice, we have validated 8 of the 10 new attacks and their accompanying adversarial assumptions through experimentation in a real testbed
+* **SMS**
+	* [Binary SMS - The old backdoor to your new thing - Contextis](https://www.contextis.com/blog/binary-sms-the-old-backdoor-to-your-new-thing)
 * **SS7**
 	* **101**
 	* **Articles/Presentations/Talks/Writeups**
@@ -314,6 +317,9 @@ Cellular Networks in Use:
 			* Specifically, we have created a WiFi hotspot that is continually collecting all the packets sent over it. All connected clients’ HTTPS communications are subjected to a “Man-in-the-middle” attack, whereby they can later be decrypted for analysis.
 		* [Nzyme](https://github.com/lennartkoopmann/nzyme)
 			* Nzyme collects 802.11 management frames directly from the air and sends them to a Graylog (Open Source log management) setup for WiFi IDS, monitoring, and incident response. It only needs a JVM and a WiFi adapter that supports monitor mode.
+	* **MiTM**
+		* [Fluxion](https://github.com/wi-fi-analyzer/fluxion)
+			* Fluxion is a security auditing and social-engineering research tool. It is a remake of linset by vk496 with (hopefully) less bugs and more functionality. The script attempts to retrieve the WPA/WPA2 key from a target access point by means of a social engineering (phishing) attack. It's compatible with the latest release of Kali (rolling). Fluxion's attacks' setup is mostly manual, but experimental auto-mode handles some of the attacks' setup parameters
 	* **WPS**
 		* [pixiewps](https://github.com/wiire/pixiewps)
 			* Pixiewps is a tool written in C used to bruteforce offline the WPS pin exploiting the low or non-existing entropy of some APs (pixie dust attack). It is meant for educational purposes only. All credits for the research go to Dominique Bongard.
@@ -404,6 +410,10 @@ Cellular Networks in Use:
 * **Misc**
 	* [Scrutinizing WPA2 Password Generating Algorithms in Wireless Routers (WOOT, 2015)](https://www.usenix.org/system/files/conference/woot15/woot15-paper-lorente.pdf)
 	* [Keyspace List for WPA on Default Routers](https://hashcat.net/forum/thread-6170.html)
+	* [nexmon](https://github.com/seemoo-lab/nexmon)
+		* Nexmon is our C-based firmware patching framework for Broadcom/Cypress WiFi chips that enables you to write your own firmware patches, for example, to enable monitor mode with radiotap headers and frame injection.
+	* [BoopSuite](https://github.com/MisterBianco/BoopSuite/)
+		* BoopSuite a wireless pentesting suite designed to emulate aircrack-ng functionality for personal growth.
 * **Why not?**
 	* [Start Your Own (Wireless) ISP](https://startyourownisp.com/)
 

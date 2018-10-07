@@ -1,33 +1,11 @@
 # Defense
 
-## In Progress
 
 ## Table of Contents
-- [Amazon S3](#s3)
-- [Application Whitelisting](#whitelist)
-- [AppSec](#appsec)
-- [Attack Surface Analysis/Reduction](#asa)
-- [Auditing Account Passwords/Privileges](#aapp)
-- [Auditing Processes](#ap)
-- [Baselining](#baseline)
-- [Hardening](#harden)
-- [Leaks](#leak)
-- [Linux/Unix](#linux)
-- [Malicious USB](#malusb)
-- [Network](#network)
-- [OS X](#osx)
-- [Phishing](#phishing)
-- [Ransomware](#ransom)
-- [User Awareness Training](#uat)
-- [Web](#web)
-- [WAF(#waf)
-- [Windows](#windows)
-- [Powershell](#powershell)
 
 
 
-------------------
-### Sort
+
 
 * **To-Do**
 	* User Awareness training
@@ -37,31 +15,11 @@
 	* Azure stuff
 	* AWS Stuff
 	* GCP Stuff
-\
 
 
-* [Introducing the Adversary Resilience Methodology — Part One - specterops](https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-one-e38e06ffd604)
-* [Introducing the Adversary Resilience Methodology — Part Two](https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-two-279a1ed7863d)
-* [Using an Expanded Cyber Kill Chain Model to Increase Attack Resiliency - Sean Malone - BHUSA16](https://www.youtube.com/watch?v=1Dz12M7u-S8)
-	* We'll review what actions are taken in each phase, and what's necessary for the adversary to move from one phase to the next. We'll discuss multiple types of controls that you can implement today in your enterprise to frustrate the adversary's plan at each stage, to avoid needing to declare "game over" just because an adversary has gained access to the internal network. The primary limiting factor of the traditional Cyber Kill Chain is that it ends with Stage 7: Actions on Objectives, conveying that once the adversary reaches this stage and has access to a system on the internal network, the defending victim has already lost. In reality, there should be multiple layers of security zones on the internal network, to protect the most critical assets. The adversary often has to move through numerous additional phases in order to access and manipulate specific systems to achieve his objective. By increasing the time and effort required to move through these stages, we decrease the likelihood of the adversary causing material damage to the enterprise. 
-	* [Slides](https://www.blackhat.com/docs/us-16/materials/us-16-Malone-Using-An-Expanded-Cyber-Kill-Chain-Model-To-Increase-Attack-Resiliency.pdf)
 
-
-https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls
-
-https://www.auditscripts.com/free-resources/critical-security-controls/
-
-* [Windows ISV Software Security Defenses - msdn](https://msdn.microsoft.com/en-us/library/bb430720.aspx)
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ee791851(v=ws.11)
-
-* [DevSec Hardening Framework](https://github.com/dev-sec)
-
-* [A Linux Auditd rule set mapped to MITRE's Attack Framework](https://github.com/bfuzzy/auditd-attack)
-
-
-### End Sort
-
-
+----------------------------
+### Defense & Hardening
 * **Access Control** <a name="acl"></a>
 	* [Capirca](https://github.com/google/capirca)
 		* Capirca is a tool designed to utilize common definitions of networks, services and high-level policy files to facilitate the development and manipulation of network access control lists (ACLs) for various platforms. It was developed by Google for internal use, and is now open source.
@@ -496,3 +454,27 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 			* In this article you will learn some best-practice suggestions for using service applications according to the IT security rule of least privilege.
 		* [Best Practice: Securing Windows Service Accounts and Privileged Access – Part 1 - SecurIT360](https://www.securit360.com/blog/best-practice-service-accounts/)
 		* [Best Practice: Securing Windows Service Accounts and Privileged Access – Part 2 - SecurIT360](https://www.securit360.com/blog/best-practice-service-accounts-p2/)
+
+
+
+### Sort
+* [A Linux Auditd rule set mapped to MITRE's Attack Framework](https://github.com/bfuzzy/auditd-attack)
+* [Introducing the Adversary Resilience Methodology — Part One - specterops](https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-one-e38e06ffd604)
+* [Introducing the Adversary Resilience Methodology — Part Two](https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-two-279a1ed7863d)
+
+* [Using an Expanded Cyber Kill Chain Model to Increase Attack Resiliency - Sean Malone - BHUSA16](https://www.youtube.com/watch?v=1Dz12M7u-S8)
+	* We'll review what actions are taken in each phase, and what's necessary for the adversary to move from one phase to the next. We'll discuss multiple types of controls that you can implement today in your enterprise to frustrate the adversary's plan at each stage, to avoid needing to declare "game over" just because an adversary has gained access to the internal network. The primary limiting factor of the traditional Cyber Kill Chain is that it ends with Stage 7: Actions on Objectives, conveying that once the adversary reaches this stage and has access to a system on the internal network, the defending victim has already lost. In reality, there should be multiple layers of security zones on the internal network, to protect the most critical assets. The adversary often has to move through numerous additional phases in order to access and manipulate specific systems to achieve his objective. By increasing the time and effort required to move through these stages, we decrease the likelihood of the adversary causing material damage to the enterprise. 
+	* [Slides](https://www.blackhat.com/docs/us-16/materials/us-16-Malone-Using-An-Expanded-Cyber-Kill-Chain-Model-To-Increase-Attack-Resiliency.pdf)
+
+* [Network access: Restrict clients allowed to make remote calls to SAM - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls)
+	* The Network access: Restrict clients allowed to make remote calls to SAM security policy setting controls which users can enumerate users and groups in the local Security Accounts Manager (SAM) database and Active Directory. The setting was first supported by Windows 10 version 1607 and Windows Server 2016 (RTM) and can be configured on earlier Windows client and server operating systems by installing updates from the KB articles listed in Applies to section of this topic. 
+
+* [AuditScripts - CIS Critical Security Controls](https://www.auditscripts.com/free-resources/critical-security-controls/)
+
+
+
+
+* [Windows ISV Software Security Defenses - msdn](https://msdn.microsoft.com/en-us/library/bb430720.aspx)
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/ee791851(v=ws.11)
+
+* [DevSec Hardening Framework](https://github.com/dev-sec)

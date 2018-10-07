@@ -16,123 +16,44 @@
 
 
 
+* http://www.insidepro.team/
+* add brute force tools
 
 
 
-* **To-Do**
-	* move actual brutin tools to this section, or just rename.
-	* Add credential spraying
 
-		* **Password Spraying**
-			* **Linux**
-				* [Raining shells on Linux environments with Hwacha](https://www.n00py.io/2017/12/raining-shells-on-linux-environments-with-hwacha/)
-				* [Hwacha](https://github.com/n00py/Hwacha)
-					* Hwacha is a tool to quickly execute payloads on `*`Nix based systems. Easily collect artifacts or execute shellcode on an entire subnet of systems for which credentials are obtained.
-			* **Windows**
-				* [Use PowerShell to Get Account Lockout and Password Policy](https://blogs.technet.microsoft.com/heyscriptingguy/2014/01/09/use-powershell-to-get-account-lockout-and-password-policy/)
-				* [DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray)
-					* DomainPasswordSpray is a tool written in PowerShell to perform a password spray attack against users of a domain. By default it will automatically generate the userlist from the domain. DomainPasswordSpray is a tool written in PowerShell to perform a password spray attack against users of a domain. By default it will automatically generate the userlist from the domain.
-				* [NTLM - Open-source script from root9B for manipulating NTLM authentication](https://github.com/root9b/NTLM)
-					* This script tests a single hash or file of hashes against an ntlmv2 challenge/response e.g. from auxiliary/server/capture/smb The idea is that you can identify re-used passwords between accounts that you do have the hash for and accounts that you do not have the hash for, offline and without cracking the password hashes. This saves you from trying your hashes against other accounts live, which triggers lockouts and alerts.
-				* [CredNinja](https://github.com/Raikia/CredNinja)
-					* A multithreaded tool designed to identify if credentials are valid, invalid, or local admin valid credentials within a network at-scale via SMB, plus now with a user hunter.
-
-	
 ---------------------------
-### <a name="general">General</a>
-
+### <a name="general"></a> General
 * **101**
+	* 
 * **Articles/Papers/Talks/Writeups**
-	* [How I became a password cracker](https://arstechnica.com/information-technology/2013/03/how-i-became-a-password-cracker/)
-* **Other**
-	* [HashView](https://github.com/hashview/hashview)
-		* Hashview is a tool for security professionals to help organize and automate the repetitious tasks related to password cracking. Hashview is a web application that manages hashcat (https://hashcat.net) commands. Hashview strives to bring constiency in your hashcat tasks while delivering analytics with pretty pictures ready for ctrl+c, ctrl+v into your reports.
-	* [Password cracking, mining, and GPUs](http://blog.erratasec.com/2011/06/password-cracking-mining-and-gpus.html#.VG3xspPF_tw)
-	* [CredKing](https://github.com/ustayready/CredKing)
-		* Password spraying using AWS Lambda for IP rotation
-
-
---------------------
-### Cracking Hashes
-* **Cracking Passwords/Hashes**<a name="crack"></a>
-	* **101**
-		* [Introduction to Cracking Hashes](http://n0where.net/introduction-break-that-
-		/)
-			* Good introduction source to hash cracking.
-	* **Reference**
-		* [List of hash types/examples](https://docs.google.com/file/d/0B0TzWBRmg5pWWUtxRTFMbFRRZzA/edit)
-		* [Password Recovery Speeds](http://www.lockdown.co.uk/?pg=combi)
-			* Password cracking time measurements
-	* **ArticlesWriteups**
-		* [Cracking Active Directory Passwords or “How to Cook AD Crack"](https://www.sans.org/reading-room/whitepapers/testing/cracking-active-directory-passwords-how-cook-ad-crack-37940)
-		* [How to crack password hashes efficiently](http://www.dafthack.com/blog/howtocrackpasswordhashesefficiently)
-			* Excellent writeup/methodology explanation
-		* [Building a Better GPU based hash cracking methodology](https://blog.netspi.com/gpu-password-cracking-building-a-bette Penr-methodology/)
-			* Bit basic advice but still great advice nonetheless
-		* [5min Guide to setting up a GPU cracker in the cloud on AWS + a script to automate it all](http://thehackerblog.com/amazon-ec2-gpu-hvm-spot-instance-cracking-setup-tutorial/)
-	* **Talks & Presentations**
-		* [Cracking Corporate Passwords Exploiting Password Policy Weaknesses - Minga Rick Redm - Derbycon2013](https://www.youtube.com/watch?v=qR-qRUbeKAo)
-	* **Password Rulesets**
-		* [password_cracking_rule - notsosecure](https://github.com/NotSoSecure/password_cracking_rules)
-	* **Tools**
-		* [Hashtag](http://www.smeegesec.com/2013/11/hashtag-password-hash-identification.html)
-			* Password hash identification tool written in python
-		* [hcxtools](https://github.com/ZerBea/hcxtools)
-			* Small set of tools to capture and convert packets from wlan devices (h = hash, c = capture, convert and calculate candidates, x = different hashtypes) for the use with latest hashcat or John the Ripper. The tools are 100% compatible to hashcat and John the Ripper and recommended by hashcat. This branch is pretty closely synced to hashcat git branch (that means: latest hcxtools matching on latest hashcat beta) and John the Ripper git branch ( "bleeding-jumbo").
-		* [PACK (Password Analysis and Cracking Toolkit)](https://github.com/iphelix/pack)
-			* PACK (Password Analysis and Cracking Toolkit) is a collection of utilities developed to aid in analysis of password lists in order to enhance password cracking through pattern detection of masks, rules, character-sets and other password characteristics. The toolkit generates valid input files for Hashcat family of password crackers.
-	* **Miscellaneous**
-* **App Specific Tools(as in single application focus)**<a name="appt"></a>
-	* [crackxls2003 0.4](https://github.com/GavinSmith0123/crackxls2003)
-		* This program may be used to break the encryption on Microsoft Excel and Microsoft Word file which have been encrypted using the RC4 method, which uses a 40-bit-long key. This was the default encryption method in Word and Excel 97/2000/2002/2003. This program will not work on files encrypted using Word or Excel 2007 or later, or for versions 95 or earlier. It will not work if a file was encrypted with a non-default method. Additionally, documents created with the Windows system locale set to France may use a different encryption method.
-	* [mod0keecrack](https://github.com/devio/mod0keecrack)
-		* mod0keecrack is a simple tool to crack/bruteforce passwords of KeePass 2 databases. It implements a KeePass 2 Database file parser for .kdbx files, as well as decryption routines to verify if a supplied password is correct. mod0keecrack only handles the encrypted file format and is not able to parse the resulting plaintext database. The only purpose of mod0keecrack is the brute-forcing of a KeePass 2 database password.
-* **OCL/Hashcat** <a name="ocl"></a>
-	* **General**
-		* [OCL hashcat wiki](http://hashcat.net/wiki/)
-			* Its the Wiki
-		* [OCL hashcat](http://n0where.net/introduction-break-that-hash/)
-			* It’s OCL hashcat
-	* **Automating Hashcat**
-		* [Hate_Crack](https://github.com/trustedsec/hate_crack)
-			* A tool for automating cracking methodologies through Hashcat from the TrustedSec team. 
-	* **Hashcat Attacks**
-		* [Mask atttack](http://hashcat.net/wiki/doku.php?id=mask_attack)
-			* Try all combinations from a given keyspace just like in Brute-Force attack, but more specific. 
-		* [Combinator attack](http://hashcat.net/wiki/doku.php?id=combinator_attack)
-			* Each word of a dictionary is appended to each word in a dictionary. 
-		* [Dictionary attack](http://hashcat.net/wiki/doku.php?id=dictionary_attack)
-			* The dictionary attack is a very simple attack mode. It is also known as a “Wordlist attack”. 
-		* [Fingerprint Attack](http://hashcat.net/wiki/doku.php?id=fingerprint_attack)
-			* The Fingerprint attack is a combination of the results of the expander with a combination engine. It is an automatically generated attack on pattern that works fine on GPGPU. 
-		* [Hybrid attack](http://hashcat.net/wiki/doku.php?id=hybrid_attack)
-			* Basically, the hybrid attack is just a Combinator attack. One side is simply a dictionary, the other is the result of a Brute-Force attack. In other words, the full Brute-Force keyspace is either appended or prepended to each of the words from the dictionary. That's why it's called “hybrid”. 
-		* [Mask attack](http://hashcat.net/wiki/doku.php?id=mask_attack)
-			* Try all combinations from a given keyspace just like in Brute-Force attack, but more specific. 
-		* [Permutation attack[(http://hashcat.net/wiki/doku.php?id=permutation_attack)
-			* Each word in a dictionary generates all permutations of itself. 
-		* [Rule Based attack](http://hashcat.net/wiki/doku.php?id=rule_based_attack)
-			* The rule-based attack is one of the most complicated of all the attack modes. The reason for this is very simple. The rule-based attack is like a programming language designed for password candidate generation. It has functions to modify, cut or extend words and has conditional operators to skip some, etc. That makes it the most flexible, accurate and efficient attack. 
-		* [Table Lookup attack](http://hashcat.net/wiki/doku.php?id=table_lookup_attack)
-			* With each word in our dictionary, it automatically generates masks as in a batch of Mask attack. 
-		* [Toggle-Case attack](http://hashcat.net/wiki/doku.php?id=toggle_case_attack)
-			* For each word in a dictionary, all possible combinations of upper- and lower-case variants are generated. 
-		* [OCLHashcat Hash Examples + hash code](https://hashcat.net/wiki/doku.php?id=example_hashes)
-* **Tools** <a name="generalt"></a>
-	* [Patator](https://github.com/lanjelot/patator)
-		* Patator was written out of frustration from using Hydra, Medusa, Ncrack, Metasploit modules and Nmap NSE scripts for password guessing attacks. I opted for a different approach in order to not create yet another brute-forcing tool and avoid repeating the same shortcomings. Patator is a multi-threaded tool written in Python, that strives to be more reliable and flexible than his fellow predecessors.
-	* [Firefox password cracker](https://github.com/pradeep1288/ffpasscracker)
-	* [Cracklord](https://github.com/jmmcatee/cracklord)
-		* CrackLord is a system designed to provide a scalable, pluggable, and distributed system for both password cracking as well as any other jobs needing lots of computing resources. Better said, CrackLord is a way to load balance the resources, such as CPU, GPU, Network, etc. from multiple hardware systems into a single queueing service across two primary services: the Resource and Queue. It won't make these tasks faster, but it will make it easier to manage them.
-	* [Dagon](https://github.com/Ekultek/Dagon)
-		* Named after the prince of Hell, Dagon (day-gone) is an advanced hash cracking and manipulation system, capable of bruteforcing multiple hash types, creating bruteforce dictionaries, automatic hashing algorithm verification, random salt generation from Unicode to ASCII, and much more.
-	* [Gladius](https://github.com/praetorian-inc/gladius)
-		* Automated Responder/secretsdump.py cracking. Gladius provides an automated method for cracking credentials from various sources during an engagement. We currently crack hashes from Responder, secretsdump.py, and smart_hashdump.
+	* [How I fcame a password cracker](https://arstechnica.com/information-technology/2013/03/how-i-became-a-password-cracker/)
+* **BruteForce Tools**
+	* [Crowbar](https://github.com/galkan/crowbar)
+		* Crowbar is brute forcing tool that can be used during penetration tests. It is developed to support protocols that are not currently supported by thc-hydra and other popular brute forcing tools.
+* **Password Spraying**
+	* **Linux**
+		* [Raining shells on Linux environments with Hwacha](https://www.n00py.io/2017/12/raining-shells-on-linux-environments-with-hwacha/)
+		* [Hwacha](https://github.com/n00py/Hwacha)
+			* Hwacha is a tool to quickly execute payloads on `*`Nix based systems. Easily collect artifacts or execute shellcode on an entire subnet of systems for which credentials are obtained.
+	* **Windows**
+		* [Use PowerShell to Get Account Lockout and Password Policy](https://blogs.technet.microsoft.com/heyscriptingguy/2014/01/09/use-powershell-to-get-account-lockout-and-password-policy/)
+		* [DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray)
+			* DomainPasswordSpray is a tool written in PowerShell to perform a password spray attack against users of a domain. By default it will automatically generate the userlist from the domain. DomainPasswordSpray is a tool written in PowerShell to perform a password spray attack against users of a domain. By default it will automatically generate the userlist from the domain.
+		* [NTLM - Open-source script from root9B for manipulating NTLM authentication](https://github.com/root9b/NTLM)
+			* This script tests a single hash or file of hashes against an ntlmv2 challenge/response e.g. from auxiliary/server/capture/smb The idea is that you can identify re-used passwords between accounts that you do have the hash for and accounts that you do not have the hash for, offline and without cracking the password hashes. This saves you from trying your hashes against other accounts live, which triggers lockouts and alerts.
+		* [CredNinja](https://github.com/Raikia/CredNinja)
+			* A multithreaded tool designed to identify if credentials are valid, invalid, or local admin valid credentials within a network at-scale via SMB, plus now with a user hunter.
+		* [SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit/blob/master/README.md)
+			* A set of Python scripts/utilities that tries to make password spraying attacks against Lync/S4B & OWA a lot quicker, less painful and more efficient.
 * **Wordlist Generation** <a name="wordlistgen"></a>
 	* **Articles/Writeups**
 		* [Generating Wordlists](http://netsec.ws/?p=457)
 	* **Source: From Nothing**
 		* [Creating Wordlists with Crunch](http://adaywithtape.blogspot.com/2011/05/creating-wordlists-with-crunch-v30.html)
+	* **Source: Keyboard Walks**
+		* [Generating Keyboard Walks - bytesdarkly.com](https://bytesdarkly.com/2014/08/generating-keyboard-walks/)
+		* [Methods to Generate Keyboard Walks for Password Cracking - Rich Kelley](https://github.com/Rich5/Keyboard-Walk-Generators)
 	* **Source: Permutations Based on User Input**
 		* [Creating Wordlists with Crunch](http://adaywithtape.blogspot.com/2011/05/creating-wordlists-with-crunch-v30.html)
 		* [OMEN: Ordered Markov ENumerator](https://github.com/RUB-SysSec/OMEN)
@@ -161,14 +82,109 @@
 	* [WPA/WPA2 Dictionaries](https://wifi0wn.wordpress.com/wepwpawpa2-cracking-dictionary/)
 	* [SkullSecurity Password lists](https://wiki.skullsecurity.org/Passwords)
 	* [Crack Me if You Can - Defcon 2010](http://contest-2010.korelogic.com/wordlists.html)
-
 	* [BEWGor](https://github.com/berzerk0/BEWGor)
 		* Bull's Eye Wordlist Generator
 	* [SecLists](https://github.com/danielmiessler/SecLists)
-
 	* [Oracle Default Password List](http://www.petefinnigan.com/default/default_password_list.htm)
 	* [Passhunt](https://github.com/Viralmaniar/Passhunt/blob/master/README.md)
 		* Passhunt is a simple tool for searching of default credentials for network devices, web applications and more. Search through 523 vendors and their 2084 default passwords.
+* **Other**
+	* [HashView](https://github.com/hashview/hashview)
+		* Hashview is a tool for security professionals to help organize and automate the repetitious tasks related to password cracking. Hashview is a web application that manages hashcat (https://hashcat.net) commands. Hashview strives to bring constiency in your hashcat tasks while delivering analytics with pretty pictures ready for ctrl+c, ctrl+v into your reports.
+	* [Password cracking, mining, and GPUs](http://blog.erratasec.com/2011/06/password-cracking-mining-and-gpus.html#.VG3xspPF_tw)
+	* [CredKing](https://github.com/ustayready/CredKing)
+		* Password spraying using AWS Lambda for IP rotation
+
+
+
+--------------------
+### Cracking Hashes
+* **Cracking Passwords/Hashes**<a name="crack"></a>
+	* **101**
+		* [Introduction to Cracking Hashes](http://n0where.net/introduction-break-that-
+		/)
+			* Good introduction source to hash cracking.
+		* [Example hashes - hashcat.net](https://hashcat.net/wiki/doku.php?id=example_hashes)
+	* **Reference**
+		* [List of hash types/examples](https://docs.google.com/file/d/0B0TzWBRmg5pWWUtxRTFMbFRRZzA/edit)
+		* [Password Recovery Speeds](http://www.lockdown.co.uk/?pg=combi)
+			* Password cracking time measurements
+	* **ArticlesWriteups**
+		* [Cracking Active Directory Passwords or “How to Cook AD Crack"](https://www.sans.org/reading-room/whitepapers/testing/cracking-active-directory-passwords-how-cook-ad-crack-37940)
+		* [How to crack password hashes efficiently](http://www.dafthack.com/blog/howtocrackpasswordhashesefficiently)
+			* Excellent writeup/methodology explanation
+		* [Building a Better GPU based hash cracking methodology](https://blog.netspi.com/gpu-password-cracking-building-a-bette Penr-methodology/)
+			* Bit basic advice but still great advice nonetheless
+		* [5min Guide to setting up a GPU cracker in the cloud on AWS + a script to automate it all](http://thehackerblog.com/amazon-ec2-gpu-hvm-spot-instance-cracking-setup-tutorial/)
+		* [GPU Password Cracking – Building a Better Methodology - Karl Fosaaen](https://blog.netspi.com/gpu-password-cracking-building-a-better-methodology/)
+		* [oclHashcat, HalfLM (netlm), and Bruteforcing the Second Half - jedge.com](http://www.jedge.com/wordpress/2014/01/oclhashcat-halflm-netlm-and-bruteforcing-the-second-half/)
+		* [Hashdumps and Passwords(2010-2014) - adeptus-mechanicus](http://www.adeptus-mechanicus.com/codex/hashpass/hashpass.php)
+	* **Talks & Presentations**
+		* [Cracking Corporate Passwords Exploiting Password Policy Weaknesses - Minga Rick Redm - Derbycon2013](https://www.youtube.com/watch?v=qR-qRUbeKAo)
+	* **Password Rulesets**
+		* [password_cracking_rule - notsosecure](https://github.com/NotSoSecure/password_cracking_rules)
+	* **Tools**
+		* [Hashtag](http://www.smeegesec.com/2013/11/hashtag-password-hash-identification.html)
+			* Password hash identification tool written in python
+		* [hcxtools](https://github.com/ZerBea/hcxtools)
+			* Small set of tools to capture and convert packets from wlan devices (h = hash, c = capture, convert and calculate candidates, x = different hashtypes) for the use with latest hashcat or John the Ripper. The tools are 100% compatible to hashcat and John the Ripper and recommended by hashcat. This branch is pretty closely synced to hashcat git branch (that means: latest hcxtools matching on latest hashcat beta) and John the Ripper git branch ( "bleeding-jumbo").
+		* [PACK (Password Analysis and Cracking Toolkit)](https://github.com/iphelix/pack)
+			* PACK (Password Analysis and Cracking Toolkit) is a collection of utilities developed to aid in analysis of password lists in order to enhance password cracking through pattern detection of masks, rules, character-sets and other password characteristics. The toolkit generates valid input files for Hashcat family of password crackers.
+		* [BarsWF](https://3.14.by/en/md5)
+			* MD5 Cracker
+	* **Miscellaneous**
+* **App Specific Tools(as in single application focus)**<a name="appt"></a>
+	* [crackxls2003 0.4](https://github.com/GavinSmith0123/crackxls2003)
+		* This program may be used to break the encryption on Microsoft Excel and Microsoft Word file which have been encrypted using the RC4 method, which uses a 40-bit-long key. This was the default encryption method in Word and Excel 97/2000/2002/2003. This program will not work on files encrypted using Word or Excel 2007 or later, or for versions 95 or earlier. It will not work if a file was encrypted with a non-default method. Additionally, documents created with the Windows system locale set to France may use a different encryption method.
+	* [mod0keecrack](https://github.com/devio/mod0keecrack)
+		* mod0keecrack is a simple tool to crack/bruteforce passwords of KeePass 2 databases. It implements a KeePass 2 Database file parser for .kdbx files, as well as decryption routines to verify if a supplied password is correct. mod0keecrack only handles the encrypted file format and is not able to parse the resulting plaintext database. The only purpose of mod0keecrack is the brute-forcing of a KeePass 2 database password.
+* **John the Ripper**
+	* [John the Ripper benchmarks - openwall](https://openwall.info/wiki/john/benchmarks)
+	* [John The Ripper Hash Formats - pentestmonkey](http://pentestmonkey.net/cheat-sheet/john-the-ripper-hash-formats)
+* **OCL/Hashcat** <a name="ocl"></a>
+	* **General**
+		* [OCL hashcat wiki](http://hashcat.net/wiki/)
+			* Its the Wiki
+		* [OCL hashcat](http://n0where.net/introduction-break-that-hash/)
+			* It’s OCL hashcat
+	* **Automating Hashcat**
+		* [Hate_Crack](https://github.com/trustedsec/hate_crack)
+			* A tool for automating cracking methodologies through Hashcat from the TrustedSec team. 
+		* [Automated Password Cracking: Use oclHashcat To Launch A Fingerprint Attack](https://www.question-defense.com/2010/08/15/automated-password-cracking-use-oclhashcat-to-launch-a-fingerprint-attack)
+	* **Hashcat Attacks**
+		* [Mask atttack](http://hashcat.net/wiki/doku.php?id=mask_attack)
+			* Try all combinations from a given keyspace just like in Brute-Force attack, but more specific. 
+		* [Combinator attack](http://hashcat.net/wiki/doku.php?id=combinator_attack)
+			* Each word of a dictionary is appended to each word in a dictionary. 
+		* [Dictionary attack](http://hashcat.net/wiki/doku.php?id=dictionary_attack)
+			* The dictionary attack is a very simple attack mode. It is also known as a “Wordlist attack”. 
+		* [Fingerprint Attack](http://hashcat.net/wiki/doku.php?id=fingerprint_attack)
+			* The Fingerprint attack is a combination of the results of the expander with a combination engine. It is an automatically generated attack on pattern that works fine on GPGPU. 
+		* [Hybrid attack](http://hashcat.net/wiki/doku.php?id=hybrid_attack)
+			* Basically, the hybrid attack is just a Combinator attack. One side is simply a dictionary, the other is the result of a Brute-Force attack. In other words, the full Brute-Force keyspace is either appended or prepended to each of the words from the dictionary. That's why it's called “hybrid”. 
+		* [Mask attack](http://hashcat.net/wiki/doku.php?id=mask_attack)
+			* Try all combinations from a given keyspace just like in Brute-Force attack, but more specific. 
+		* [Permutation attack[(http://hashcat.net/wiki/doku.php?id=permutation_attack)
+			* Each word in a dictionary generates all permutations of itself. 
+		* [Rule Based attack](http://hashcat.net/wiki/doku.php?id=rule_based_attack)
+			* The rule-based attack is one of the most complicated of all the attack modes. The reason for this is very simple. The rule-based attack is like a programming language designed for password candidate generation. It has functions to modify, cut or extend words and has conditional operators to skip some, etc. That makes it the most flexible, accurate and efficient attack. 
+		* [Table Lookup attack](http://hashcat.net/wiki/doku.php?id=table_lookup_attack)
+			* With each word in our dictionary, it automatically generates masks as in a batch of Mask attack. 
+		* [Toggle-Case attack](http://hashcat.net/wiki/doku.php?id=toggle_case_attack)
+			* For each word in a dictionary, all possible combinations of upper- and lower-case variants are generated. 
+		* [OCLHashcat Hash Examples + hash code](https://hashcat.net/wiki/doku.php?id=example_hashes)
+	* **Hashcat Related Stuff**
+		* [Password Analysis To Hashcat (PATH) script](https://tickorone.wordpress.com/2012/06/02/password-analysis-to-hashcat-path-script/)
+* **Tools** <a name="generalt"></a>
+	* [Patator](https://github.com/lanjelot/patator)
+		* Patator was written out of frustration from using Hydra, Medusa, Ncrack, Metasploit modules and Nmap NSE scripts for password guessing attacks. I opted for a different approach in order to not create yet another brute-forcing tool and avoid repeating the same shortcomings. Patator is a multi-threaded tool written in Python, that strives to be more reliable and flexible than his fellow predecessors.
+	* [Firefox password cracker](https://github.com/pradeep1288/ffpasscracker)
+	* [Cracklord](https://github.com/jmmcatee/cracklord)
+		* CrackLord is a system designed to provide a scalable, pluggable, and distributed system for both password cracking as well as any other jobs needing lots of computing resources. Better said, CrackLord is a way to load balance the resources, such as CPU, GPU, Network, etc. from multiple hardware systems into a single queueing service across two primary services: the Resource and Queue. It won't make these tasks faster, but it will make it easier to manage them.
+	* [Dagon](https://github.com/Ekultek/Dagon)
+		* Named after the prince of Hell, Dagon (day-gone) is an advanced hash cracking and manipulation system, capable of bruteforcing multiple hash types, creating bruteforce dictionaries, automatic hashing algorithm verification, random salt generation from Unicode to ASCII, and much more.
+	* [Gladius](https://github.com/praetorian-inc/gladius)
+		* Automated Responder/secretsdump.py cracking. Gladius provides an automated method for cracking credentials from various sources during an engagement. We currently crack hashes from Responder, secretsdump.py, and smart_hashdump.
 * **Papers** <a name="papers"></a>
 	* [Optimizing computation of Hash Algorithms as an attacker](https://hashcat.net/events/p13/js-ocohaaaa.pdf)
 	* [Attacking NTLM with Precomputed Hashtables](http://uninformed.org/?v=all&a=13&t=sumry)

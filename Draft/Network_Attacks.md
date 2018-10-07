@@ -3,7 +3,6 @@
 ## Table of Contents
 - [General](#general)
 - [Attacking Windows Networks](#attackw)
-- [Apache ActiveMQ/MQTT/RabbitMQ](#activemq)
 - [ARP](#arp)
 - [Bitsquatting](#bitsquat)
 - [Captive Portals](#captive-portal)
@@ -15,11 +14,13 @@
 - [IPSEC](#ipsec)
 - [IP Spoofing](#ipspoofing)
 - [IPMI](#ipmi)
+- [IP Obfuscation](#ipobf)
 - [IPv6 Related](#ipv6)
 - [Kerberos](#kerberos)
 - [LDAP](#ldap)
 - [Man-in-the-Middle Tools](#mitm)
 - [Modbus](#modbus)
+- [MQTT](#mqtt)
 - [Network Address Translation](#nat)
 - [Netbios](#netbios)
 - [Network Host/Service Discovery](#host)
@@ -50,10 +51,7 @@
 - [MISC](#misc)
 - [Vendor Specific Stuff](#vendor)
 
---------
-##### To be sorted
-http://www.pentest-standard.org/index.php/Intelligence_Gathering
-* Add 
+* Need to Add 
 	* WebDAV
 	* IPSEC Stuff
 	* DNSSEC
@@ -64,38 +62,8 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* MQTT Stuff
 	* NAT
 	* BGP
-
-* [DbDat](https://github.com/foospidy/DbDat)
-	* DbDat performs numerous checks on a database to evaluate security. The categories of checks performed are configuration, privileges, users, and information. Checks are performed by running queries or reading database configuration files. The goal of this tool is to highlight issues that need immediate attention and identify configuration settings that should be reviewed for appropriateness. This tool is not for identifying SQL Injection vulnerabilities in an application, there are good tools available for that already (e.g. https://github.com/sqlmapproject). Also, this tool does not attempt to determine what CVEs may impact the version of the target database (but may do so in the future - maybe). Rather, this tool can help you better understand the potential impact of a successful SQL Injection attack due to weak configuration or access controls. A majority of the checks are from the CIS (https://cisecurity.org) Security Benchmarks for databases, so thanks to the CIS! The benchmark documents can be found here: https://benchmarks.cisecurity.org/downloads/browse/index.cfm?category=benchmarks.servers.database
-* [IVRE](https://github.com/cea-sec/ivre)
-	* IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
-* [Nili](https://github.com/niloofarkheirkhah/nili)
-	* Nili is a Tool for Network Scan, Man in the Middle, Protocol Reverse Engineering and Fuzzing.
-* [IP Cameras Default Passwords Directory](https://ipvm.com/reports/ip-cameras-default-passwords-directory)
-* [Crowbar](https://github.com/galkan/crowbar)
-	* Crowbar is brute forcing tool that can be used during penetration tests. It is developed to support protocols that are not currently supported by thc-hydra and other popular brute forcing tools.
-* **Distributed Systems**
-	* [Garfield](https://github.com/tunnelshade/garfield)
-		* Garfield is and open source framework for scanning and exploiting Distributed Systems. The framework currently being in it's alpha stage and is undergoing rapid development.
-* [Polymorph](https://github.com/shramos/polymorph)
-	* Polymorph is a framework written in Python 3 that allows the modification of network packets in real time, providing maximum control to the user over the contents of the packet. This framework is intended to provide an effective solution for real-time modification of network packets that implement practically any existing protocol, including private protocols that do not have a public specification. In addition to this, one of its main objectives is to provide the user with the maximum possible control over the contents of the packet and with the ability to perform complex processing on this information.
-* [Vendor/Ethernet/Bluetooth MAC Address Lookup and Search - coffer.com](http://www.coffer.com/mac_find/)
-* [IPFuscator](https://github.com/vysec/IPFuscator)
-	* IPFuscation is a technique that allows for IP addresses to be represented in hexadecimal or decimal instead of the decimal encoding we are used to. IPFuscator allows us to easily convert to these alternative formats that are interpreted in the same way.
-	* [Blogpost](https://vincentyiu.co.uk/ipfuscation/)
-* [Cuteit](https://github.com/D4Vinci/Cuteit)
-	* A simple python tool to help you to social engineer, bypass whitelisting firewalls, potentially break regex rules for command line logging looking for IP addresses and obfuscate cleartext strings to C2 locations within the payload.
-
-	* [nullinux](https://github.com/m8r0wn/nullinux)
-		* nullinux is an internal penetration testing tool for Linux that can be used to enumerate OS information, domain information, shares, directories, and users through SMB. If no username and password are provided, nullinux will attempt to connect to the target using an SMB null session. Unlike many of the enumeration tools out there already, nullinux can enumerate multiple targets at once and when finished, creates a users.txt file of all users found on the host(s). This file is formatted for direct implementation and further exploitation.This script uses Python 2.7 and the smbclient package, run the setup.sh script to get started.
-
-##### sort end
-
-
-
-
-
-
+	* QUIC
+	* STUN
 
 
 
@@ -138,42 +106,49 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* Also check out the Privilege Escalation/Post-Exploitation Document as well
 	* [Introducing PowerShell into your Arsenal with PS>Attack - Jared Haight](http://www.irongeek.com/i.php?page=videos/derbycon6/119-introducing-powershell-into-your-arsenal-with-psattack-jared-haight)
 	* [Get-Help: An Intro to PowerShell and How to Use it for Evil - Jared Haight](https://www.psattack.com/presentations/get-help-an-intro-to-powershell-and-how-to-use-it-for-evil/)
-* **Lateral Movement**
-	* [*Puff* *Puff* PSExec - Lateral Movement: An Overview](https://www.toshellandback.com/2017/02/11/psexec/)
-	* [Ditch PsExec, SprayWMI is here ;)](http://www.pentest.guru/index.php/2015/10/19/ditch-psexec-spraywmi-is-here/)
-	* [WMIOps](https://github.com/ChrisTruncer/WMIOps)
-		* WMIOps is a powershell script that uses WMI to perform a variety of actions on hosts, local or remote, within a Windows environment. It's designed primarily for use on penetration tests or red team engagements.
-	* [spraywmi](https://github.com/trustedsec/spraywmi)
-		* SprayWMI is a method for mass spraying Unicorn PowerShell injection to CIDR notations.
-	* [psexec](https://github.com/pentestgeek/smbexec)
-		* A rapid psexec style attack with samba tools
-		* [Blogpost that inspired it](http://carnal0wnage.attackresearch.com/2012/01/psexec-fail-upload-and-exec-instead.html)
-	* [sshuttle](https://github.com/apenwarr/sshuttle)
-		* Transparent proxy server that works as a poor man's VPN. Forwards over ssh. Doesn't require admin. Works with Linux and MacOS. Supports DNS tunneling.
-	* [PowerShell PSRemoting Pwnage](https://pentestn00b.wordpress.com/2016/08/22/powershell-psremoting-pwnage/)
-	* [PowerShell Remoting for Penetration Testers ](https://lockboxx.blogspot.com/2015/07/powershell-remoting-for-penetration.html)
-* **Pass-the-Hash**
-	* [Pass the hash - Wikipedia](https://en.wikipedia.org/wiki/Pass_the_hash)
-	* [Pass the hash attacks: Tools and Mitigation - 2010 SANS paper](https://www.sans.org/reading-room/whitepapers/testing/pass-the-hash-attacks-tools-mitigation-33283)
-	* [Performing Pass-the-Hash Attacks with Mimikatz](https://blog.stealthbits.com/passing-the-hash-with-mimikatz)
-	* [Pass-the-Hash Is Dead: Long Live LocalAccountTokenFilterPolicy](https://www.harmj0y.net/blog/redteaming/pass-the-hash-is-dead-long-live-localaccounttokenfilterpolicy/)
-	* [Still Passing the Hash 15 Years Later](https://passing-the-hash.blogspot.com/)
-		* Providing all the extra info that didn't make it into the BlackHat 2012 USA Presentation "Still Passing the Hash 15 Years Later? Using the Keys to the Kingdom to Access All Your Data" by Alva Lease 'Skip' Duckwall IV and Christopher Campbell.
-	* [Invoke-TheHash](https://github.com/Kevin-Robertson/Invoke-TheHash)
-		* Invoke-TheHash contains PowerShell functions for performing pass the hash WMI and SMB tasks. WMI and SMB services are accessed through .NET TCPClient connections. Authentication is performed by passing an NTLM hash into the NTLMv2 authentication protocol. Local administrator privilege is not required client-side.
-	* [Why Crack When You Can Pass the Hash? - Chris Hummel(2009)](https://www.sans.org/reading-room/whitepapers/testing/crack-pass-hash-33219)
-* **Passing the Ticket Attacks**
-	* [How To Pass the Ticket Through SSH Tunnels](https://bluescreenofjeff.com/2017-05-23-how-to-pass-the-ticket-through-ssh-tunnels/)
-	* [Mimikatz and Active Directory Kerberos Attacks ](https://adsecurity.org/?p=556)
-	* **Silver Tickets**
-		* [How Attackers Use Kerberos Silver Tickets to Exploit Systems](https://adsecurity.org/?p=2011)
-	* **Gold Tickets**
-		* [mimikatz - Golden Ticket](http://rycon.hu/papers/goldenticket.html)
-		* [The Golden Ticket Attack - A Look Under The Hood](http://cybersecology.com/wp-content/uploads/2016/05/Golden_Ticket-v1.13-Final.pdf)
-		* [Kerberos Golden Ticket Protection Mitigating Pass-the-Ticket on Active Directory - CERT-EU](https://cert.europa.eu/static/WhitePapers/UPDATED%20-%20CERT-EU_Security_Whitepaper_2014-007_Kerberos_Golden_Ticket_Protection_v1_4.pdf)
-		* [The path to the Golden Ticket](https://countuponsecurity.com/tag/pass-the-ticket/)
-	* [The Secret Life of KRBTGT](https://defcon.org/images/defcon-22/dc-22-presentations/Campbell/DEFCON-22-Christopher-Campbell-The-Secret-Life-of-Krbtgt.pdf)
-	* [From Pass-the-Hash to Pass-the-Ticket with No Pain](http://resources.infosecinstitute.com/pass-hash-pass-ticket-no-pain/)
+* **Active Directory**
+	* Check under privesc/postex for More info
+	* [Active Directory - Wikipedia](https://en.wikipedia.org/wiki/Active_Directory)
+	* [AD Security Active Directory Resources](https://adsecurity.org/?page_id=41)
+	* [AD Reading: Active Directory Core Concepts](http://adsecurity.org/?p=15)
+	* [AD Reading: Active Directory Authentication & Logon](http://adsecurity.org/?p=20)
+	* [MS Network Level Authentication](https://technet.microsoft.com/en-us/magazine/hh750380.aspx)
+	* **Pass-the-Hash**
+		* [Pass the hash - Wikipedia](https://en.wikipedia.org/wiki/Pass_the_hash)
+		* [Pass the hash attacks: Tools and Mitigation - 2010 SANS paper](https://www.sans.org/reading-room/whitepapers/testing/pass-the-hash-attacks-tools-mitigation-33283)
+		* [Performing Pass-the-Hash Attacks with Mimikatz](https://blog.stealthbits.com/passing-the-hash-with-mimikatz)
+		* [Pass-the-Hash Is Dead: Long Live LocalAccountTokenFilterPolicy](https://www.harmj0y.net/blog/redteaming/pass-the-hash-is-dead-long-live-localaccounttokenfilterpolicy/)
+		* [Still Passing the Hash 15 Years Later](https://passing-the-hash.blogspot.com/)
+			* Providing all the extra info that didn't make it into the BlackHat 2012 USA Presentation "Still Passing the Hash 15 Years Later? Using the Keys to the Kingdom to Access All Your Data" by Alva Lease 'Skip' Duckwall IV and Christopher Campbell.
+		* [Invoke-TheHash](https://github.com/Kevin-Robertson/Invoke-TheHash)
+			* Invoke-TheHash contains PowerShell functions for performing pass the hash WMI and SMB tasks. WMI and SMB services are accessed through .NET TCPClient connections. Authentication is performed by passing an NTLM hash into the NTLMv2 authentication protocol. Local administrator privilege is not required client-side.
+		* [Why Crack When You Can Pass the Hash? - Chris Hummel(2009)](https://www.sans.org/reading-room/whitepapers/testing/crack-pass-hash-33219)
+	* **Passing the Ticket Attacks**
+		* [How To Pass the Ticket Through SSH Tunnels](https://bluescreenofjeff.com/2017-05-23-how-to-pass-the-ticket-through-ssh-tunnels/)
+		* [Mimikatz and Active Directory Kerberos Attacks ](https://adsecurity.org/?p=556)
+		* **Silver Tickets**
+			* [How Attackers Use Kerberos Silver Tickets to Exploit Systems](https://adsecurity.org/?p=2011)
+		* **Gold Tickets**
+			* [mimikatz - Golden Ticket](http://rycon.hu/papers/goldenticket.html)
+			* [The Golden Ticket Attack - A Look Under The Hood](http://cybersecology.com/wp-content/uploads/2016/05/Golden_Ticket-v1.13-Final.pdf)
+			* [Kerberos Golden Ticket Protection Mitigating Pass-the-Ticket on Active Directory - CERT-EU](https://cert.europa.eu/static/WhitePapers/UPDATED%20-%20CERT-EU_Security_Whitepaper_2014-007_Kerberos_Golden_Ticket_Protection_v1_4.pdf)
+			* [The path to the Golden Ticket](https://countuponsecurity.com/tag/pass-the-ticket/)
+		* [The Secret Life of KRBTGT](https://defcon.org/images/defcon-22/dc-22-presentations/Campbell/DEFCON-22-Christopher-Campbell-The-Secret-Life-of-Krbtgt.pdf)
+		* [From Pass-the-Hash to Pass-the-Ticket with No Pain](http://resources.infosecinstitute.com/pass-hash-pass-ticket-no-pain/)
+	* **Lateral Movement**
+		* [*Puff* *Puff* PSExec - Lateral Movement: An Overview](https://www.toshellandback.com/2017/02/11/psexec/)
+		* [Ditch PsExec, SprayWMI is here ;)](http://www.pentest.guru/index.php/2015/10/19/ditch-psexec-spraywmi-is-here/)
+		* [WMIOps](https://github.com/ChrisTruncer/WMIOps)
+			* WMIOps is a powershell script that uses WMI to perform a variety of actions on hosts, local or remote, within a Windows environment. It's designed primarily for use on penetration tests or red team engagements.
+		* [spraywmi](https://github.com/trustedsec/spraywmi)
+			* SprayWMI is a method for mass spraying Unicorn PowerShell injection to CIDR notations.
+		* [psexec](https://github.com/pentestgeek/smbexec)
+			* A rapid psexec style attack with samba tools
+			* [Blogpost that inspired it](http://carnal0wnage.attackresearch.com/2012/01/psexec-fail-upload-and-exec-instead.html)
+		* [sshuttle](https://github.com/apenwarr/sshuttle)
+			* Transparent proxy server that works as a poor man's VPN. Forwards over ssh. Doesn't require admin. Works with Linux and MacOS. Supports DNS tunneling.
+		* [PowerShell PSRemoting Pwnage](https://pentestn00b.wordpress.com/2016/08/22/powershell-psremoting-pwnage/)
+		* [PowerShell Remoting for Penetration Testers ](https://lockboxx.blogspot.com/2015/07/powershell-remoting-for-penetration.html)
 * **RDP**
 	* [RDP hijacking-how to hijack RDS and RemoteApp sessions transparently to move through an organisation](https://medium.com/@networksecurity/rdp-hijacking-how-to-hijack-rds-and-remoteapp-sessions-transparently-to-move-through-an-da2a1e73a5f6)
 	* [RDP Man-in-The-Middle attack ](https://theevilbit.blogspot.com/2014/04/rdp-man-in-middle-attack.html)
@@ -183,13 +158,6 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* [SSL -Man-In-The-Middle- attacks on RDP](https://web.archive.org/web/20161007044945/https://labs.portcullis.co.uk/blog/ssl-man-in-the-middle-attacks-on-rdp/)
 	* [rdps2rdp](https://github.com/DiabloHorn/rdps2rdp)
 		* Decrypt MITM SSL RDP and save to pcap
-* **Active Directory**
-	* Check under privesc/postex for More info
-	* [Active Directory - Wikipedia](https://en.wikipedia.org/wiki/Active_Directory)
-	* [AD Security Active Directory Resources](https://adsecurity.org/?page_id=41)
-	* [AD Reading: Active Directory Core Concepts](http://adsecurity.org/?p=15)
-	* [AD Reading: Active Directory Authentication & Logon](http://adsecurity.org/?p=20)
-	* [MS Network Level Authentication](https://technet.microsoft.com/en-us/magazine/hh750380.aspx)
 * **Recon**
 	* [PowerView](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1)
 		* PowerView is a PowerShell tool to gain network situational awareness on Windows domains. It contains a set of pure-PowerShell replacements for various windows `net *` commands, which utilize PowerShell AD hooks and underlying Win32 API functions to perform useful Windows domain functionality.
@@ -219,8 +187,12 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 		* [Where are my hashes? (Responder Observations) - markclayton](https://markclayton.github.io/where-are-my-hashes-responder-observations.html)
 	* [Enum4Linux](https://labs.portcullis.co.uk/tools/enum4linux/)
 		* Enum4linux is a tool for enumerating information from Windows and Samba systems. It attempts to offer similar functionality to enum.exe formerly available from www.bindview.com. It is written in Perl and is basically a wrapper around the Samba tools smbclient, rpclient, net and nmblookup. The tool usage can be found below followed by examples, previous versions of the tool can be found at the bottom of the page.
+* **MS SQL Server**
+	* [Authentication in SQL Server - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/sql/authentication-in-sql-server)
 * **Sharepoint**
 	* [MS Sharepoint - Wikipedia](https://en.wikipedia.org/wiki/SharePoint)
+	* [Technical Advisory: Bypassing Workflows Protection Mechanisms - Remote Code Execution on SharePoint - nccgroup](https://www.nccgroup.trust/uk/our-research/technical-advisory-bypassing-workflows-protection-mechanisms-remote-code-execution-on-sharepoint/)
+		* "authenticated users of SharePoint could execute commands on the server.""
 	* **Tools**
 		* [Sparty - MS Sharepoint and Frontpage Auditing Tool](http://sparty.secniche.org/)
 			* Sparty is an open source tool written in python to audit web applications using sharepoint and frontpage architecture. The motivation behind this tool is to provide an easy and robust way to scrutinize the security configurations of sharepoint and frontpage based web applications. Due to the complex nature of these web administration software, it is required to have a simple and efficient tool that gathers information, check access permissions, dump critical information from default files and perform automated exploitation if security risks are identified. A number of automated scanners fall short of this and Sparty is a solution to that.
@@ -230,22 +202,34 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 			* SPartan is a Frontpage and Sharepoint fingerprinting and attack tool
 
 
+
+
+
+
 --------------------
-#### <a name="activemq"></a>Apache ActiveMQ / MQTT / RabbitMQ
+#### <a name="mqtt"></a>Apache ActiveMQ / MQTT / RabbitMQ
 * **101**
 	* [RabbitMQ - Wikipedia](https://en.wikipedia.org/wiki/RabbitMQ)
 	* [MQTT](http://mqtt.org/)
 		* MQTT is a machine-to-machine (M2M)/"Internet of Things" connectivity protocol. It was designed as an extremely lightweight publish/subscribe messaging transport. 
 	* [MQTT - Wikipedia](https://en.wikipedia.org/wiki/MQTT)
 	* [MQTT 101 – How to Get Started with the lightweight IoT Protocol](https://www.hivemq.com/blog/how-to-get-started-with-mqtt)
+* **Talks & Presentations**
+	* [Light Weight Protocol: Critical Implications - Lucas Lundgren, Neal Hindocha - Defcon24](https://www.youtube.com/watch?v=o7qDVZr0t2c)
 * **General**
-	* ActiveMQ
+	* **ActiveMQ**
 		* [Apache ActiveMQ - Wikipedia](https://en.wikipedia.org/wiki/Apache_ActiveMQ)
 		* [ActiveMQ](http://activemq.apache.org/)
 		* [Getting Started](http://activemq.apache.org/getting-started.html)
 		* [What is ActiveMQ used for? - StackOverflow](https://stackoverflow.com/questions/12805377/what-is-activemq-used-for)
-	* MQTT
-	* RabbitMQ
+	* **MQTT**
+		* [Light Weight Protocol: Critical Implications - Lucas Lundgren, Neal Hindocha - Defcon24](https://www.youtube.com/watch?v=o7qDVZr0t2c&app=desktop)
+	* **RabbitMQ**
+		* [Access Control (Authentication, Authorisation) in RabbitMQ](https://www.rabbitmq.com/access-control.html)
+		* [Credentials and Passwords](https://www.rabbitmq.com/passwords.html)
+		* [Management Plugin](https://www.rabbitmq.com/management.html)
+		* [File and Directory Locations](https://www.rabbitmq.com/relocate.html)
+		* [Credentials and Passwords](https://www.rabbitmq.com/passwords.html)
 * **Tools**
 	* [Enteletaor](https://github.com/cr0hn/enteletaor)
 		* Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.
@@ -302,6 +286,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* [A penetration tester’s guide to sub-domain enumeration](https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6)
 	* [Secrets of DNS Ron Bowes - Derbycon4](https://www.youtube.com/watch?v=MgO-gPiVTSc)
 	* [The power of DNS rebinding: stealing WiFi passwords with a website - Michele Spagnuolo](https://miki.it/blog/2015/4/20/the-power-of-dns-rebinding-stealing-wifi-passwords-with-a-website/)
+	* [Protecting Browsers from DNS Rebinding Attacks](https://crypto.stanford.edu/dns/)
 * **Educational**
 	* [DNS RFC - Domain Name System RFC's (IETF)](http://www.bind9.net/rfc)
 	* [RFC 1034 - DOMAIN NAMES - CONCEPTS AND FACILITIES](https://www.ietf.org/rfc/rfc1034.txt)
@@ -462,8 +447,16 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 * **Tools**
 	* [OpenIPMI](http://openipmi.sourceforge.net/)
 
-
-
+-------------------
+### <a name="ipobf"></a>IP Obfuscation
+* **Tools**
+	* [IPFuscator](https://github.com/vysec/IPFuscator)
+		* IPFuscation is a technique that allows for IP addresses to be represented in hexadecimal or decimal instead of the decimal encoding we are used to. IPFuscator allows us to easily convert to these alternative formats that are interpreted in the same way.
+		* [Blogpost](https://vincentyiu.co.uk/ipfuscation/)
+	* [Cuteit](https://github.com/D4Vinci/Cuteit)
+		* A simple python tool to help you to social engineer, bypass whitelisting firewalls, potentially break regex rules for command line logging looking for IP addresses and obfuscate cleartext strings to C2 locations within the payload.
+	* [IP Obfuscator](https://stuff.soumikghosh.com/ipobfuscator/)
+		* Simple site to obfuscate IPs
 
 ------------
 ### <a name="ipv6">IPv6 Related</a>
@@ -554,6 +547,8 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* [NetRipper](https://github.com/NytroRST/NetRipper)
 		* NetRipper is a post exploitation tool targeting Windows systems which uses API hooking in order to intercept network traffic and encryption related functions from a low privileged user, being able to capture both plain-text traffic and encrypted traffic before encryption/after decryption.
 	* [An Auditing Tool for Wi-Fi or Wired Ethernet Connections - Matthew Sullivan](https://www.cookiecadger.com/wp-content/uploads/Cookie%20Cadger.pdf)
+	* [Polymorph](https://github.com/shramos/polymorph)
+		* Polymorph is a framework written in Python 3 that allows the modification of network packets in real time, providing maximum control to the user over the contents of the packet. This framework is intended to provide an effective solution for real-time modification of network packets that implement practically any existing protocol, including private protocols that do not have a public specification. In addition to this, one of its main objectives is to provide the user with the maximum possible control over the contents of the packet and with the ability to perform complex processing on this information.
 * **DNS**
 	* [FakeDNS](https://github.com/Crypt0s/FakeDns)
 		* A regular-expression based python MITM DNS server with support for DNS Rebinding attacks
@@ -776,8 +771,9 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 ## <a name="ntlm"></a> NTLM
+* **General**
 	* [Microsoft NTLM - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749%28v=vs.85%29.aspx)
-
+	* [The NTLM Authentication Protocol and Security Support Provider - davenport.sourceforge.net](http://davenport.sourceforge.net/ntlm.html)
 
 ------------
 ### <a name="pac"></a>PAC/WPAD
@@ -912,6 +908,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 * **101**
 	* [Server Message Block - Wikipedia](https://en.wikipedia.org/wiki/Server_Message_Block)
 	* [Microsoft SMB Protocol and CIFS Protocol Overview](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365233(v=vs.85).aspx)
+	* [An Introduction to SMB for Network Security Analysts - 401trg.com](https://401trg.com/an-introduction-to-smb-for-network-security-analysts/)
 * **General/Articles/Writeups**
 	* [SMBv2 - Sharing More Than Just Your Files - Hormazd Billimoria, Jonathan Brossard - BHUSA2015](https://www.blackhat.com/docs/us-15/materials/us-15-Brossard-SMBv2-Sharing-More-Than-Just-Your-Files.pdf)
 	* [Windows: SMB Server (v1 and v2) Mount Point Arbitrary Device Open EoP](https://bugs.chromium.org/p/project-zero/issues/detail?id=1416&t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=0ba06fc942c7473c8c3669dfc193d5e0&fl=4&uid=150127534&nid=244+293670920)
@@ -923,6 +920,7 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* [SPEAR: Redirect to SMB](https://blog.cylance.com/content/dam/cylance/pdfs/white_papers/RedirectToSMB.pdf)
 	* [10 Places to Stick Your UNC Path - NetSPI](https://blog.netspi.com/10-places-to-stick-your-unc-path/)
 * **Re(p)lay Attack**
+	* [Places of Interest in Stealing NetNTLM Hashes - osandamalith.com/](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
 	* [ADV170014 NTLM SSO: Exploitation Guide - sysadminjd.com](http://www.sysadminjd.com/adv170014-ntlm-sso-exploitation-guide/)
 	* [SMB Relay Demystified and NTLMv2 Pwnage with Python](https://pen-testing.sans.org/blog/2013/04/25/smb-relay-demystified-and-ntlmv2-pwnage-with-python)
 	* [Stealing Windows Credentials Using Google Chrome - Bosko Stankovic](http://www.defensecode.com/whitepapers/Stealing-Windows-Credentials-Using-Google-Chrome.pdf)
@@ -948,6 +946,11 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 		* SMBrute is a program that can be used to bruteforce username and passwords of servers that are using SMB (Samba).
 	* [smbmap](https://github.com/ShawnDEvans/smbmap)
 		* SMBMap allows users to enumerate samba share drives across an entire domain. List share drives, drive permissions, share contents, upload/download functionality, file name auto-download pattern matching, and even execute remote commands. This tool was designed with pen testing in mind, and is intended to simplify searching for potentially sensitive data across large networks.
+	* [nullinux](https://github.com/m8r0wn/nullinux)
+		* nullinux is an internal penetration testing tool for Linux that can be used to enumerate OS information, domain information, shares, directories, and users through SMB. If no username and password are provided, nullinux will attempt to connect to the target using an SMB null session. Unlike many of the enumeration tools out there already, nullinux can enumerate multiple targets at once and when finished, creates a users.txt file of all users found on the host(s). This file is formatted for direct implementation and further exploitation.This script uses Python 2.7 and the smbclient package, run the setup.sh script to get started.
+
+
+
 
 
 ------------
@@ -1000,7 +1003,8 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 		* [Documentation](https TLS/SSL Vulnerabilities ://github.com/NetSPI/PowerUpSQL/wiki)
 		* [Overview of PowerUpSQL](https://github.com/NetSPI/PowerUpSQL/wiki/Overview-of-PowerUpSQL)
 	* [nmap ms-sql-info.nse](https://nmap.org/nsedoc/scripts/ms-sql-info.html)
-
+	* [DbDat](https://github.com/foospidy/DbDat)
+		* DbDat performs numerous checks on a database to evaluate security. The categories of checks performed are configuration, privileges, users, and information. Checks are performed by running queries or reading database configuration files. The goal of this tool is to highlight issues that need immediate attention and identify configuration settings that should be reviewed for appropriateness. This tool is not for identifying SQL Injection vulnerabilities in an application, there are good tools available for that already (e.g. https://github.com/sqlmapproject). Also, this tool does not attempt to determine what CVEs may impact the version of the target database (but may do so in the future - maybe). Rather, this tool can help you better understand the potential impact of a successful SQL Injection attack due to weak configuration or access controls. A majority of the checks are from the CIS (https://cisecurity.org) Security Benchmarks for databases, so thanks to the CIS! The benchmark documents can be found here: https://benchmarks.cisecurity.org/downloads/browse/index.cfm?category=benchmarks.servers.database
 
 
 ------------
@@ -1030,6 +1034,8 @@ http://www.pentest-standard.org/index.php/Intelligence_Gathering
 	* [TLS/SSL Vulnerabilities](https://www.gracefulsecurity.com/tls-ssl-vulnerabilities/)
 	* [SSL/TLS and PKI History](https://www.feistyduck.com/ssl-tls-and-pki-history/)
 		* A comprehensive history of the most important events that shaped the SSL/TLS and PKI ecosystem. Based on Bulletproof SSL and TLS, by Ivan Ristić.
+	* [Security/Server Side TLS - Mozilla](https://wiki.mozilla.org/Security/Server_Side_TLS)
+		* The goal of this document is to help operational teams with the configuration of TLS on servers. All Mozilla sites and deployment should follow the recommendations below. The Operations Security (OpSec) team maintains this document as a reference guide to navigate the TLS landscape. It contains information on TLS protocols, known issues and vulnerabilities, configuration examples and testing tools. Changes are reviewed and merged by the OpSec team, and broadcasted to the various Operational teams. 
 * **Tools**
 	* [testssl.sh](https://github.com/drwetter/testssl.sh)
 		* testssl.sh is a free command line tool which checks a server's service on any port for the support of TLS/SSL ciphers, protocols as well as some cryptographic flaws.
@@ -1137,9 +1143,21 @@ EIGRP and OSPF).
 
 ---------------------------
 ### <a name="vendor"></a> Vendor Specific Stuff
+* **Non-Specific**
+	* [Vendor/Ethernet/Bluetooth MAC Address Lookup and Search - coffer.com](http://www.coffer.com/mac_find/)
+	* [IP Cameras Default Passwords Directory](https://ipvm.com/reports/ip-cameras-default-passwords-directory)
 * **Cisco**
 	* [CVE-2016-6366](https://github.com/RiskSense-Ops/CVE-2016-6366/blob/master/README.md)
 		* Public repository for improvements to the EXTRABACON exploit, a remote code execution for Cisco ASA written by the Equation Group (NSA) and leaked by the Shadow Brokers.
 * **IBM**
 	* [Domi-Owned](https://github.com/coldfusion39/domi-owned)
 		* Domi-Owned is a tool used for compromising IBM/Lotus Domino servers. Tested on IBM/Lotus Domino 8.5.2, 8.5.3, 9.0.0, and 9.0.1 running on Windows and Linux.
+
+
+
+* **Distributed Systems**
+	* [Garfield](https://github.com/tunnelshade/garfield)
+		* Garfield is and open source framework for scanning and exploiting Distributed Systems. The framework currently being in it's alpha stage and is undergoing rapid development.
+* [IVRE](https://github.com/cea-sec/ivre)
+	* IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
+	http://www.pentest-standard.org/index.php/Intelligence_Gathering

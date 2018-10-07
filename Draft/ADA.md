@@ -45,6 +45,8 @@ https://github.com/doridori/Android-Security-Reference
 * [Android-Vulnerabilities-Overview](https://github.com/CHEF-KOCH/Android-Vulnerabilities-Overview)
 	* Android Vulnerabilities Overview (AVO) is a databse of known security vulnerabilities in Android.
 
+* [ATtention Spanned: Comprehensive Vulnerability Analysis of AT Commands Within the Android Ecosystem](https://atcommands.org/)
+
 https://blog.gdssecurity.com/labs/2015/2/18/when-efbfbd-and-friends-come-knocking-observations-of-byte-a.html
 * [Diggy](https://github.com/UltimateHackers/Diggy)
 	* Diggy can extract endpoints/URLs from apk files. It saves the result into a txt file for further processing.

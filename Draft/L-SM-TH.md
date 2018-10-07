@@ -1,70 +1,9 @@
 # Logging(Host/Network) / Security Monitoring / Threat Hunting
 
 
-
+--------------------
 ## Table of Contents
 
-* [Presentations/Videos](#videos)
-* [Writeups](#writeups)
-* [Tools](#tools)
-* [IDS/IPS](#ips)
-* [IDS/IPS Monitoring](#monitor)
-* [Logging](#log)
-	* [Linux](#linux)
-	* [Windows](#win)
-* [PCaps/Static Data](#pcap)
-* Making Sense of the Data
-* [Papers](#papers)
-* [Tricks & Tips](#tricks)
-
-
-
-#### Sort
-* Expand ELK Stack
-* Flesh out InfraMonitoring
-
-https://github.com/appbaseio/dejavu
-
-https://github.com/TTP0/drone/blob/master/README.md
-
-http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Analysis-What-Should-You-Choose.pdf
-
-* [HTTPS on every port? - SANS](https://isc.sans.edu/forums/diary/HTTPS+on+every+port/23261/%E2%80%94)
-
-* [Advanced Security Audit Policy Settings](https://technet.microsoft.com/en-us/library/dn319056(v=ws.11).aspx)
-
-* [Many ways of malware persistence (that you were always afraid to ask)](http://jumpespjump.blogspot.com/2015/05/many-ways-of-malware-persistence-that.html)
-	* [JA3 - A method for profiling SSL/TLS Clients](https://github.com/salesforce/ja3)
-		* JA3 is a method for creating SSL/TLS client fingerprints that are easy to produce and can be easily shared for threat intelligence. 
-	* [Talk/Presentation](https://www.youtube.com/watch?v=oprPu7UIEuk&feature=youtu.be)
-		* In this talk we will show the benefits of SSL fingerprinting, JA3’s capabilities, and how best to utilize it in your detection and response operations. We will show how to utilize JA3 to find and detect SSL malware on your network. Imagine detecting every Meterpreter shell, regardless of C2 and without the need for SSL interception. We will also announce JA3S, JA3 for SSL server fingerprinting. Imagine detecting every Metasploit Multi Handler or [REDACTED] C2s on AWS. Then we’ll tie it all together, making you armed to the teeth for detecting all things SSL.
-
-* [Diamond](https://github.com/python-diamond/Diamond)
-	* Diamond is a python daemon that collects system metrics and publishes them to [Graphite](http://diamond.readthedocs.io/en/latest/handlers/GraphiteHandler/) (and others). It is capable of collecting cpu, memory, network, i/o, load and disk metrics. Additionally, it features an API for implementing custom collectors for gathering metrics from almost any source.
-	* [Documentation](http://diamond.readthedocs.io/en/latest/)
-
-* [laikaboss](https://github.com/lmco/laikaboss)
-
-
-* [limacharlie](https://github.com/refractionpoint/limacharlie)
-	* Endpoint monitoring stack.
-
-* [Using rwuniq for Top-10 Lists](https://tools.netsa.cert.org/confluence/display/tt/Using+rwuniq+for+Top-10+Lists)
-* [ELSA](https://github.com/mcholste/elsa)
-
-* [Aktaion: Open Source Tool For "Micro Behavior Based" Exploit Detection and Automated GPO Policy Generation](https://github.com/jzadeh/Aktaion)
-	* Aktaion is a lightweight JVM based project for detecting exploits (and more generally attack behaviors). The project is meant to be a learning/teaching tool on how to blend multiple security signals and behaviors into an expressive framework for intrusion detection. The cool thing about the project is it provides an expressive mechanism to add high level IOCs (micro beahviors) such as timing behavior of a certain malware family.
-
-* [process-forest](https://github.com/williballenthin/process-forest)
-	* process-forest is a tool that processes Microsoft Windows EVTX event logs that contain process accounting events and reconstructs the historical process heirarchies. That is, it displays the parent-child relationships among programs. When using this tool during an incident response engagement, identifying a reverse shell process quickly leads to the processes launched by the operator, and insight into how it may be maintaining persistence.
-
-* [Places of Interest in Stealing NetNTLM Hashes - osandamalith.com/](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
-
-
-* Add stuff on OSQuery
-* [Using Osquery to Detect Reverse Shells on MacOS - Chris Long](https://www.clo.ng/blog/osquery_reverse_shell/)
-
-#### End Sort
 
 
 ---------------------------
@@ -224,7 +163,8 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 		* [Sysmon - The Best Free Windows Monitoring Tool You Aren't Using](http://909research.com/sysmon-the-best-free-windows-monitoring-tool-you-arent-using/)
 		* [SysInternals: SysMon Unleashed](https://blogs.technet.microsoft.com/motiba/2016/10/18/sysinternals-sysmon-unleashed/)
 		* [Sysinternals Sysmon suspicious activity guide - blogs.technet](https://blogs.technet.microsoft.com/motiba/2017/12/07/sysinternals-sysmon-suspicious-activity-guide/)
-
+	* **Persistence**
+		* [Many ways of malware persistence (that you were always afraid to ask)](http://jumpespjump.blogspot.com/2015/05/many-ways-of-malware-persistence-that.html)
 	* **Talks & Presentations**
 		* [WEBCAST: Tales from the Network Threat Hunting Trenches - BHIS](https://www.blackhillsinfosec.com/webcast-tales-network-threat-hunting-trenches/)
 			* In this webcast John walks through a couple of cool things we’ve found useful in some recent network hunt teams. He also shares some of our techniques and tools (like RITA) that we use all the time to work through massive amounts of data. There are lots of awesome websites that can greatly increase the effectiveness of your in network threat hunting.
@@ -244,6 +184,10 @@ http://www.netfort.com/wp-content/uploads/PDF/WhitePapers/NetFlow-Vs-Packet-Anal
 		* [An Introduction to SMB for Network Security Analysts - 401trg](https://401trg.com/an-introduction-to-smb-for-network-security-analysts/)
 	* **TLS**
 		* [TLS client fingerprinting with Bro](https://www.securityartwork.es/2017/02/02/tls-client-fingerprinting-with-bro/)
+		* [JA3 - A method for profiling SSL/TLS Clients](https://github.com/salesforce/ja3)
+			* JA3 is a method for creating SSL/TLS client fingerprints that are easy to produce and can be easily shared for threat intelligence. 
+			* [Talk/Presentation](https://www.youtube.com/watch?v=oprPu7UIEuk&feature=youtu.be)
+				* In this talk we will show the benefits of SSL fingerprinting, JA3’s capabilities, and how best to utilize it in your detection and response operations. We will show how to utilize JA3 to find and detect SSL malware on your network. Imagine detecting every Meterpreter shell, regardless of C2 and without the need for SSL interception. We will also announce JA3S, JA3 for SSL server fingerprinting. Imagine detecting every Metasploit Multi Handler or [REDACTED] C2s on AWS. Then we’ll tie it all together, making you armed to the teeth for detecting all things SSL.
 	* **Tools**
 		* **Frameworks**
 			* [RITA - Real Intelligence Threat Analytics](https://github.com/ocmdev/rita)

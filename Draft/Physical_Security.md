@@ -17,19 +17,9 @@
 
 
 
-#### Sort
-* [Home Alone with localhost - Automating Home Defense - Chris Littlebury Defcon22](https://www.youtube.com/watch?v=9Tbft190x3Q)
 
-* [Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
-* [Physical Home Security Options - DiabloHorn](https://diablohorn.wordpress.com/2014/07/13/physical-home-security-options/#more-984)
 
-* [Hacking things by touching them - armadillo](https://www.armadillophone.com/blog/2017/08/27/hacking-things-by-touching-them)
-	* [Contents of a Physical Pentester Backpack](https://www.tunnelsup.com/contents-of-a-physical-pen-testers-backpack/)
-* [zoneminder](https://www.zoneminder.com/)
-	* A full-featured, open source, state-of-the-art video surveillance software system.
-* [The Green Beret Hotel Check-In Safety List](https://www.entrepreneur.com/article/286411)
-* [88MPH Digital tricks to bypass Physical security- Andrew MacPherson - ZaCon4](https://vimeo.com/52865794)
-[What Does The Perfect Door Or Padlock Look Like? - Deviant Ollam - BruCON 0x08](https://www.youtube.com/watch?v=4skSBwBBI-s&list=PLtb1FJdVWjUfCe1Vcj67PG5Px8u1VY3YD&index=2)
+
 
 #### End Sort
 
@@ -40,6 +30,10 @@
 * **101**
 	* [Physical Security - Centre for the Protection of National Infrastructure - UK](https://www.cpni.gov.uk/physical-security)
 * **Articles/Blogposts/Writeups**
+	* [The Green Beret Hotel Check-In Safety List](https://www.entrepreneur.com/article/286411)
+	* [Physical Home Security Options - DiabloHorn](https://diablohorn.wordpress.com/2014/07/13/physical-home-security-options/#more-984)
+	* [Contents of a Physical Pentester Backpack](https://www.tunnelsup.com/contents-of-a-physical-pen-testers-backpack/)
+	* [Hacking things by touching them - armadillo](https://www.armadillophone.com/blog/2017/08/27/hacking-things-by-touching-them)
 * **Videos/Talks**
 	* [Physical Security: From Locks to Dox - Jess Hires](http://www.irongeek.com/i.php?page=videos/derbycon4/t540-physical-security-from-locks-to-dox-jess-hires)
 		* This talk is an introduction to Physical Penetration Testing. I briefly cover the Penetration Testing Methodology from a Physical Security perspective, but the talk is mostly oriented around the analysis and exploitation phases. Various attacks will be covered, from lock picking and bypass to safe cracking. No prior experience with lock picking or physical security is required, I will start with the basics and work up to advanced topics.
@@ -47,6 +41,12 @@
 	* [Home Insecurity: No Alarms, False Alarms, and SIGINT](https://media.defcon.org/DEF%20CON%2022/DEF%20CON%2022%20presentations/Logan%20Lamb/DEFCON-22-Logan-Lamb-HOME-INSECURITY-NO-ALARMS-FALSE-ALARMS-AND-SIGINT-WP.pdf)
 		* The market share of home security systems has substantially increased as vendors incorporate more desirable features: intrusion detection, automation, wireless, and LCD touch panel controls. Wireless connectivity allows vendors to manufacture cheaper, more featureful products that require little to no home modification to install.  Consumer win, since adding devices is easier. The result: an ostensibly more secure, convenient, and connected home for a larger number of citizens. Sadly, this hypothesis is flawed; the idea of covering a home with more security sensors does not translate into a more secure home.  Additionally, the number of homes using these vulnerable systems is large, and the growth rate is increasing producing a even larger problem. In this paper, we will demonstrate a generalized approach for compromising three systems: ADT, the largest home security dealer in North America; Honeywell, one of the largest manufacturers of security devices; and Vivint, a top 5 security dealer.  We will suppress alarms, create false alarms, and collect artifacts that facilitate tracking the movements of individuals in their homes
 	* [Defcon 19: DIY Non-Destructive-Entry](https://www.youtube.com/watch?v=ChbyaXBKNY8)
+	* [Home Alone with localhost - Automating Home Defense - Chris Littlebury Defcon22](https://www.youtube.com/watch?v=9Tbft190x3Q)
+	* [88MPH Digital tricks to bypass Physical security- Andrew MacPherson - ZaCon4](https://vimeo.com/52865794)
+* **Tools**
+	* [zoneminder](https://www.zoneminder.com/)
+		* A full-featured, open source, state-of-the-art video surveillance software system.
+
 
 -----------------------
 ### <a name="tamper"></a>Tamper Evident Related
@@ -66,10 +66,10 @@
 -----------------------
 ## <a name="lockpicking"></a>Lock Picking
 * **101**
-
-* [Wikipedia on Lockpicking](https://en.wikipedia.org/wiki/Lock_picking)
+	* [Wikipedia on Lockpicking](https://en.wikipedia.org/wiki/Lock_picking)
 * **General**
 	* [Various types of locks](https://securitysnobs.com/Types-Of-Locks.html)
+	* [lockwiki](http://www.lockwiki.com/index.php/Main_Page)
 * **Guides**
 	* [Newbies guide to picking safes](http://cybergibbons.com/lockpicking-2/a-newbies-guide-to-safes/)
 	* [Attack the Key, Own the Lock - Defcon18](https://www.youtube.com/watch?v=_-PqzkoQQ7s)
@@ -123,6 +123,7 @@
 * **Articles/Blogposts/Writeups**
 	* [Door Control Systems: An Examination of Lines of Attack](https://www.nccgroup.com/en/blog/2013/09/door-control-systems-an-examination-of-lines-of-attack/)
 * **Talks/Videos**
+	* [What Does The Perfect Door Or Padlock Look Like? - Deviant Ollam - BruCON 0x08](https://www.youtube.com/watch?v=4skSBwBBI-s&list=PLtb1FJdVWjUfCe1Vcj67PG5Px8u1VY3YD&index=2)
 	* [What Does The Perfect Door Or Padlock Look Like? - Deviant Ollam - BruCON 0x08](https://www.youtube.com/watch?v=4skSBwBBI-s)
 	* [The Search for the Perfect Door - Deviant Ollam - Shakacon](https://www.youtube.com/watch?v=4YYvBLAF4T8)
 		* You have spent lots of money on a high-grade, pick-resistant, ANSI-rated lock for your door. Your vendor has assured you how it will resist attack and how difficult it would be for someone to copy your key. Maybe they’re right. But… the bulk of attacks that both penetration testers and also criminals attempt against doors have little or nothing to do with the lock itself! This talk will be a hard-hitting exploration (full of photo and video examples) of the ways in which your door — the most fundamental part of your physical security — can possibly be thwarted by someone attempting illicit entry. The scary problems will be immediately followed by simple solutions that are instantly implementable and usually very within-budget. You, too, can have a near-perfect door… if you’re willing to learn and understand the problems that all doors tend to have. 

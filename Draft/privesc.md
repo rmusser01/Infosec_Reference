@@ -24,7 +24,7 @@
 - [ActiveDirectory](#ad)
 	- [Kerberos](#kerberos)
 - [Avoiding/Bypassing Anti-Virus/Whitelisting/Sandboxes/etc](#av)
-- [Containers & Docker](#docker)
+- [Containers](#containers)
 - [Email/Exchange](#email)
 - [Office Macros](#officemacro)
 - [Grabbing Goodies](#grabbing)
@@ -46,24 +46,30 @@
 	* Add links to relevant ATT&CK sections
 
 
-* [Battle Of SKM And IUM How Windows 10 Rewrites OS Architecture - Alex Ionescu - BHUSA2015](https://www.youtube.com/watch?v=LqaWIn4y26E&index=15&list=PLH15HpR5qRsXF78lrpWP2JKpPJs_AFnD7)
-	* [Slides](http://www.alex-ionescu.com/blackhat2015.pdf)
-* [Malicious Installer Plugins - specterops](https://posts.specterops.io/malicious-installer-plugins-6e30991bb529)
-* [Lateral Movement – WinRM - pentestlab.blog](https://pentestlab.blog/2018/05/15/lateral-movement-winrm/)
-* [Operating in the Shadows - Carlos Perez - DerbyCon(2015)](https://www.youtube.com/watch?v=NXTr4bomAxk)
 
-* [Disrupting AWS logging - Daniel Grzelak](https://danielgrzelak.com/disrupting-aws-logging-a42e437d6594?gi=dde97e1f07f7)
-* [recomposer](https://github.com/secretsquirrel/recomposer)
-	* Randomly changes Win32/64 PE Files for 'safer' uploading to malware and sandbox sites.
-* [Windows Privilege Escalation Methods for Pentesters - pentest.blog](https://pentest.blog/windows-privilege-escalation-methods-for-pentesters/)
-* [IPFuscator](https://github.com/vysec/IPFuscator)
-	* IPFuscation is a technique that allows for IP addresses to be represented in hexadecimal or decimal instead of the decimal encoding we are used to. IPFuscator allows us to easily convert to these alternative formats that are interpreted in the same way.
-	* [Blogpost](https://vincentyiu.co.uk/ipfuscation/)
-* [Cuteit](https://github.com/D4Vinci/Cuteit)
-	* A simple python tool to help you to social engineer, bypass whitelisting firewalls, potentially break regex rules for command line logging looking for IP addresses and obfuscate cleartext strings to C2 locations within the payload.
+* [Impersonating everyday applications for profit - FoxIT](https://www.fox-it.com/en/insights/blogs/blog/phishing-ask-and-ye-shall-receive/)
+
+* [How I did not get a shell - NCCGroup](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/august/how-i-did-not-get-a-shell/)
+
+* [Get $pwnd: Attacking Battle Hardened Windows Server - Lee Holmes - Defcon25](https://www.youtube.com/watch?v=ahxMOAAani8)
+
+* ALPC
+	* [Original](https://github.com/SandboxEscaper/randomrepo)
+	* [zeroday-powershell](https://github.com/OneLogicalMyth/zeroday-powershell)
+		* A PowerShell example of the Windows zero day priv esc
+		
+* [How to Bypass Safe Link/Attachment Processing of ATP - support.knowbe4.com](https://support.knowbe4.com/hc/en-us/articles/115004326408-How-to-Bypass-Safe-Link-Attachment-Processing-of-ATP)
+
+* [Code injection on Windows using Python: a simple example - andreafortuna](https://www.andreafortuna.org/programming/code-injection-on-windows-using-python-a-simple-example/)
+
+* [SSP Packages Provided by Microsoft - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/SecAuthN/ssp-packages-provided-by-microsoft)
 
 
-#### end Sort
+* [The Mouse is Mightier than the Sword - Patrick Wardle](https://speakerdeck.com/patrickwardle/the-mouse-is-mightier-than-the-sword)
+* [Fire & Ice: Making and Breaking macOS Firewalls - Patrick Wardle](https://speakerdeck.com/patrickwardle/fire-and-ice-making-and-breaking-macos-firewalls)
+
+
+
 
 
 ---------------
@@ -108,6 +114,7 @@
 	* [Back To The Future: Unix Wildcards Gone Wild - Leon Juranic](https://www.defensecode.com/public/DefenseCode_Unix_WildCards_Gone_Wild.txt)
 	* [Using the docker command to root the host (totally not a security issue)](http://reventlov.com/advisories/using-the-docker-command-to-root-the-host)
 		* It is possible to do a few more things more with docker besides working with containers, such as creating a root shell on the host, overwriting system configuration files, reading restricted stuff, etc.
+	* [Linux: VMA use-after-free via buggy vmacache_flush_all() fastpath - projectzero](https://bugs.chromium.org/p/project-zero/issues/detail?id=1664)
 * **Talks/Videos**
 	* [Chw00t: Breaking Unixes’ Chroot Solutions](https://www.youtube.com/watch?v=1A7yJxh-fyc)
 * **Tools**
@@ -145,85 +152,86 @@
 		* [Windows Privilege Escalation Cheat Sheet/Tricks](http://it-ovid.blogspot.fr/2012/02/windows-privilege-escalation.html)
 		* [Windows / Linux Local Privilege Escalation Workshop](https://github.com/sagishahar/lpeworkshop)
 	* **Specific Techniques**
-	* **DLL Stuff** <a name="dll"></a>
-		* [Creating a Windows DLL with Visual Basic](http://www.windowsdevcenter.com/pub/a/windows/2005/04/26/create_dll.html)
-		* [Calling DLL Functions from Visual Basic Applications - msdn](https://msdn.microsoft.com/en-us/library/dt232c9t.aspx)
-		* **DLL Hijacking**
-			* [Dynamic-Link Library Search Order - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/Dlls/dynamic-link-library-search-order)
-			* [Dynamic-Link Library Hijacking](https://www.exploit-db.com/docs/31687.pdf)
-			* [Crash Course in DLL Hijacking](https://blog.fortinet.com/2015/12/10/a-crash-course-in-dll-hijacking)
-			* [VB.NET Tutorial - Create a DLL / Class Library](https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf)
-		* **DLL Injection**
-			* [DLL Injection and Hooking](http://securityxploded.com/dll-injection-and-hooking.php)
-			* [Windows DLL Injection Basics](http://blog.opensecurityresearch.com/2013/01/windows-dll-injection-basics.html)
-			* [Crash Course in DLL Hijacking](https://blog.fortinet.com/2015/12/10/a-crash-course-in-dll-hijacking)
-			* [Windows DLL Injection Basics - OpenSecurityTraining](http://blog.opensecurityresearch.com/2013/01/windows-dll-injection-basics.html)
-			* [An Improved Reflective DLL Injection Technique - Dan Staples](https://disman.tl/2015/01/30/an-improved-reflective-dll-injection-technique.html)
-			* [Reflective DLL Injection with PowerShell - clymb3r](https://clymb3r.wordpress.com/2013/04/06/reflective-dll-injection-with-powershell/)	
-			* [Delivering custom payloads with Metasploit using DLL injection - blog.cobalstrike](https://blog.cobaltstrike.com/2012/09/17/delivering-custom-payloads-with-metasploit-using-dll-injection/)
-		* **DLL Tools**
-			* [rattler](https://github.com/sensepost/rattler)
-				* Rattler is a tool that automates the identification of DLL's which can be used for DLL preloading attacks.
-			* [injectAllTheThings](https://github.com/fdiskyou/injectAllTheThings)
-				* Single Visual Studio project implementing multiple DLL injection techniques (actually 7 different techniques) that work both for 32 and 64 bits. Each technique has its own source code file to make it easy way to read and understand.
-			* [Pazuzu](https://github.com/BorjaMerino/Pazuzu)
-				* Pazuzu is a Python script that allows you to embed a binary within a precompiled DLL which uses reflective DLL injection. The goal is that you can run your own binary directly from memory. This can be useful in various scenarios.	
-		* **Group Policy Preferences**	
-			* [Exploiting Windows 2008 Group Policy Preferences](http://rewtdance.blogspot.com/2012/06/exploiting-windows-2008-group-policy.html)
-			* [Decrypting Windows 2008 GPP user passwords using Gpprefdecrypt.py](https://web.archive.org/web/20160408235812/http://www.leonteale.co.uk/decrypting-windows-2008-gpp-user-passwords-using-gpprefdecrypt-py/)
-			* [Group Policy Preferences and Getting Your Domain 0wned - Carnal0wnage](http://carnal0wnage.attackresearch.com/2012/10/group-policy-preferences-and-getting.html)
-			* [Compromise Networks Through Group Policy Preferences - securestate.com(archive.org)](https://web.archive.org/web/20150108083024/http://blog.securestate.com/how-to-pwn-systems-through-group-policy-preferences/)
-		* **Intel SYSRET**
-			* [Windows Kernel Intel x64 SYSRET Vulnerability + Code Signing Bypass Bonus](https://repret.wordpress.com/2012/08/25/windows-kernel-intel-x64-sysret-vulnerability-code-signing-bypass-bonus/)
-			* [Windows Kernel Intel x64 SYSRET Vulnerability Exploit + Kernel Code Signing Bypass Bonus](https://github.com/shjalayeri/sysret)
-		* **Logic**
+		* **DLL Stuff** <a name="dll"></a>
+			* [Creating a Windows DLL with Visual Basic](http://www.windowsdevcenter.com/pub/a/windows/2005/04/26/create_dll.html)
+			* [Calling DLL Functions from Visual Basic Applications - msdn](https://msdn.microsoft.com/en-us/library/dt232c9t.aspx)
+			* **DLL Hijacking**
+				* [Dynamic-Link Library Search Order - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/Dlls/dynamic-link-library-search-order)
+				* [Dynamic-Link Library Hijacking](https://www.exploit-db.com/docs/31687.pdf)
+				* [Crash Course in DLL Hijacking](https://blog.fortinet.com/2015/12/10/a-crash-course-in-dll-hijacking)
+				* [VB.NET Tutorial - Create a DLL / Class Library](https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf)
+			* **DLL Injection**
+				* [DLL Injection and Hooking](http://securityxploded.com/dll-injection-and-hooking.php)
+				* [Windows DLL Injection Basics](http://blog.opensecurityresearch.com/2013/01/windows-dll-injection-basics.html)
+				* [Crash Course in DLL Hijacking](https://blog.fortinet.com/2015/12/10/a-crash-course-in-dll-hijacking)
+				* [Windows DLL Injection Basics - OpenSecurityTraining](http://blog.opensecurityresearch.com/2013/01/windows-dll-injection-basics.html)
+				* [An Improved Reflective DLL Injection Technique - Dan Staples](https://disman.tl/2015/01/30/an-improved-reflective-dll-injection-technique.html)
+				* [Reflective DLL Injection with PowerShell - clymb3r](https://clymb3r.wordpress.com/2013/04/06/reflective-dll-injection-with-powershell/)	
+				* [Delivering custom payloads with Metasploit using DLL injection - blog.cobalstrike](https://blog.cobaltstrike.com/2012/09/17/delivering-custom-payloads-with-metasploit-using-dll-injection/)
+			* **DLL Tools**
+				* [rattler](https://github.com/sensepost/rattler)
+					* Rattler is a tool that automates the identification of DLL's which can be used for DLL preloading attacks.
+				* [injectAllTheThings](https://github.com/fdiskyou/injectAllTheThings)
+					* Single Visual Studio project implementing multiple DLL injection techniques (actually 7 different techniques) that work both for 32 and 64 bits. Each technique has its own source code file to make it easy way to read and understand.
+				* [Pazuzu](https://github.com/BorjaMerino/Pazuzu)
+					* Pazuzu is a Python script that allows you to embed a binary within a precompiled DLL which uses reflective DLL injection. The goal is that you can run your own binary directly from memory. This can be useful in various scenarios.	
+			* **Group Policy Preferences**	
+				* [Exploiting Windows 2008 Group Policy Preferences](http://rewtdance.blogspot.com/2012/06/exploiting-windows-2008-group-policy.html)
+				* [Decrypting Windows 2008 GPP user passwords using Gpprefdecrypt.py](https://web.archive.org/web/20160408235812/http://www.leonteale.co.uk/decrypting-windows-2008-gpp-user-passwords-using-gpprefdecrypt-py/)
+				* [Group Policy Preferences and Getting Your Domain 0wned - Carnal0wnage](http://carnal0wnage.attackresearch.com/2012/10/group-policy-preferences-and-getting.html)
+				* [Compromise Networks Through Group Policy Preferences - securestate.com(archive.org)](https://web.archive.org/web/20150108083024/http://blog.securestate.com/how-to-pwn-systems-through-group-policy-preferences/)
+			* **Intel SYSRET**
+				* [Windows Kernel Intel x64 SYSRET Vulnerability + Code Signing Bypass Bonus](https://repret.wordpress.com/2012/08/25/windows-kernel-intel-x64-sysret-vulnerability-code-signing-bypass-bonus/)
+				* [Windows Kernel Intel x64 SYSRET Vulnerability Exploit + Kernel Code Signing Bypass Bonus](https://github.com/shjalayeri/sysret)
+			* **Logic**
 			* [Introduction to Logical Privilege Escalation on Windows - James Forshaw](https://conference.hitb.org/hitbsecconf2017ams/materials/D2T3%20-%20James%20Forshaw%20-%20Introduction%20to%20Logical%20Privilege%20Escalation%20on%20Windows.pdf)
-			* [Windows Logical EoP Workbook](https://docs.google.com/document/d/1qujIzDmFrcFCBeIgMjWDZTLNMCAHChAnKDkHdWYEomM/edit)			
-			* [Abusing Token Privileges For EoP](https://github.com/hatRiot/token-priv)
-				* This repository contains all code and a Phrack-style paper on research into abusing token privileges for escalation of privilege. Please feel free to ping us with questions, ideas, insults, or bugs.
-		* **PentestLab Windows PrivEsc Writeup List**
-			* [Hot Potato](https://pentestlab.blog/2017/04/13/hot-potato/)
-			* [Always Install Elevated](https://pentestlab.blog/2017/02/28/always-install-elevated/)
-			* [Unquoted Service Path](https://pentestlab.blog/2017/03/09/unquoted-service-path/)
-			* [Token Manipulation](https://pentestlab.blog/2017/04/03/token-manipulation/)
-			* [Secondary Logon Handle](https://pentestlab.blog/2017/04/07/secondary-logon-handle/)
-			* [Insecure Registry Permissions](https://pentestlab.blog/2017/03/31/insecure-registry-permissions/)
-			* [Intel SYSRET](https://pentestlab.blog/2017/06/14/intel-sysret/)
-			* [Weak Service Permissions](https://pentestlab.blog/2017/03/30/weak-service-permissions/)
-		* **NTLM-related**
-			* [Windows: DCOM DCE/RPC Local NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=325&redir=1)
-			* [Windows: Local WebDAV NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=222&redir=1)
-			* **Hot Potato**
-				* [Hot Potato](https://foxglovesecurity.com/2016/01/16/hot-potato/)
-					* Hot Potato (aka: Potato) takes advantage of known issues in Windows to gain local privilege escalation in default configurations, namely NTLM relay (specifically HTTP->SMB relay) and NBNS spoofing.
+				* [Windows Logical EoP Workbook](https://docs.google.com/document/d/1qujIzDmFrcFCBeIgMjWDZTLNMCAHChAnKDkHdWYEomM/edit)	
+				* [Abusing Token Privileges For EoP](https://github.com/hatRiot/token-priv)
+					* This repository contains all code and a Phrack-style paper on research into abusing token privileges for escalation of privilege. Please feel free to ping us with questions, ideas, insults, or bugs.
+			* **PentestLab Windows PrivEsc Writeup List**
+				* [Hot Potato](https://pentestlab.blog/2017/04/13/hot-potato/)
+				* [Always Install Elevated](https://pentestlab.blog/2017/02/28/always-install-elevated/)
+				* [Unquoted Service Path](https://pentestlab.blog/2017/03/09/unquoted-service-path/)
+				* [Token Manipulation](https://pentestlab.blog/2017/04/03/token-manipulation/)
+				* [Secondary Logon Handle](https://pentestlab.blog/2017/04/07/secondary-logon-handle/)
+				* [Insecure Registry Permissions](https://pentestlab.blog/2017/03/31/insecure-registry-permissions/)
+				* [Intel SYSRET](https://pentestlab.blog/2017/06/14/intel-sysret/)
+				* [Weak Service Permissions](https://pentestlab.blog/2017/03/30/weak-service-permissions/)
+			* **NTLM-related**
+				* [Windows: DCOM DCE/RPC Local NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=325&redir=1)
+				* [Windows: Local WebDAV NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=222&redir=1)
+				* **Hot Potato**
+					* [Hot Potato](https://foxglovesecurity.com/2016/01/16/hot-potato/)
+						* Hot Potato (aka: Potato) takes advantage of known issues in Windows to gain local privilege escalation in default configurations, namely NTLM relay (specifically HTTP->SMB relay) and NBNS spoofing.
 				* [SmashedPotato](https://github.com/Cn33liz/SmashedPotato)
-		* **Tokens**
-			* [Abusing Token Privileges For LPE - drone/breenmachine](https://raw.githubusercontent.com/hatRiot/token-priv/master/abusing_token_eop_1.0.txt)
-			* [The Art of Becoming TrustedInstaller](https://tyranidslair.blogspot.co.uk/2017/08/the-art-of-becoming-trustedinstaller.html)
-				* There's many ways of getting the TI token other than these 3 techniques. For example as Vincent Yiu pointed out on Twitter if you've got easy access to a system token, say using Metasploit's getsystem command you can impersonate system and then open the TI token, it's just IMO less easy :-). If you get a system token with SeTcbPrivilege you can also call LogonUserExExW or LsaLogonUser where you can specify an set of additional groups to apply to a service token. Finally if you get a system token with SeCreateTokenPrivilege (say from LSASS.exe if it's not running PPL) you can craft an arbitrary token using the NtCreateToken system call.
-			* [Rotten Potato – Privilege Escalation from Service Accounts to SYSTEM - @breenmachine](https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/)
-			* [Windows: DCOM DCE/RPC Local NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=325&redir=1)
-			* [Social Engineering The Windows Kernel: Finding And Exploiting Token Handling Vulnerabilities - James Forshaw](https://www.youtube.com/watch?v=QRpfvmMbDMg)
-			* [Social Engineering The Windows Kernel: Finding And Exploiting Token Handling Vulnerabilities - James Forshaw - BHUSA2015](https://www.youtube.com/watch?v=QRpfvmMbDMg)
-				* One successful technique in social engineering is pretending to be someone or something you're not and hoping the security guard who's forgotten their reading glasses doesn't look too closely at your fake ID. Of course there's no hyperopic guard in the Windows OS, but we do have an ID card, the Access Token which proves our identity to the system and let's us access secured resources. The Windows kernel provides simple capabilities to identify fake Access Tokens, but sometimes the kernel or other kernel-mode drivers are too busy to use them correctly. If a fake token isn't spotted during a privileged operation local elevation of privilege or information disclosure vulnerabilities can be the result. This could allow an attacker to break out of an application sandbox, elevate to administrator privileges, or even compromise the kernel itself. This presentation is about finding and then exploiting the incorrect handling of tokens in the Windows kernel as well as first and third party drivers. Examples of serious vulnerabilities, such as CVE-2015-0002 and CVE-2015-0062 will be presented. It will provide clear exploitable patterns so that you can do your own security reviews for these issues. Finally, I'll discuss some of the ways of exploiting these types of vulnerabilities to elevate local privileges.
-			* [token_manipulation](https://github.com/G-E-N-E-S-I-S/token_manipulation)
-				* Bypass User Account Control by manipulating tokens (can bypass AlwaysNotify)
-			* **Rotten Potato**
-				* [Rotten Potato – Privilege Escalation from Service Accounts to SYSTEM - foxglove security](https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/)
-				* [Rotten Potato Privilege Escalation from Service Accounts to SYSTEM - Stephen Breen Chris Mallz - Derbycon6](https://www.youtube.com/watch?v=8Wjs__mWOKI)
-				* [RottenPotatoNG](https://github.com/breenmachine/RottenPotatoNG)
-					* New version of RottenPotato as a C++ DLL and standalone C++ binary - no need for meterpreter or other tools.
-	* **Obtaining System Privileges**
-		* [The “SYSTEM” challenge](https://decoder.cloud/2017/02/21/the-system-challenge/)
-		* Writeup of achieving system from limited user privs.
-		* [All roads lead to SYSTEM](https://labs.mwrinfosecurity.com/system/assets/760/original/Windows_Services_-_All_roads_lead_to_SYSTEM.pdf)
-		* [Alternative methods of becoming SYSTEM - XPN](https://blog.xpnsec.com/becoming-system/)
-		* [admin to SYSTEM win7 with remote.exe - carnal0wnage](http://carnal0wnage.attackresearch.com/2013/07/admin-to-system-win7-with-remoteexe.html)
-		* [Getting a CMD prompt as SYSTEM in Windows Vista and Windows Server 2008 - blogs.technet](https://blogs.technet.microsoft.com/askds/2008/10/22/getting-a-cmd-prompt-as-system-in-windows-vista-and-windows-server-2008/)
-		* [Another way to get to a system shell – Assistive Technology -oddvar.moe](https://oddvar.moe/2018/07/23/another-way-to-get-to-a-system-shell/)
-			* `Manipulate HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs\magnifier – StartExe to run other binary when pressing WinKey and plus to zoom.`
-    		* `Can load binary from Webdav and also start webbrowser and browse to desired link`
-    		* `Runs command as system during UAC prompt and logon screen`
+			* **Tokens**
+				* [Abusing Token Privileges For LPE - drone/breenmachine](https://raw.githubusercontent.com/hatRiot/token-priv/master/abusing_token_eop_1.0.txt)
+				* [The Art of Becoming TrustedInstaller](https://tyranidslair.blogspot.co.uk/2017/08/the-art-of-becoming-trustedinstaller.html)
+					* There's many ways of getting the TI token other than these 3 techniques. For example as Vincent Yiu pointed out on Twitter if you've got easy access to a system token, say using Metasploit's getsystem command you can impersonate system and then open the TI token, it's just IMO less easy :-). If you get a system token with SeTcbPrivilege you can also call LogonUserExExW or LsaLogonUser where you can specify an set of additional groups to apply to a service token. Finally if you get a system token with SeCreateTokenPrivilege (say from LSASS.exe if it's not running PPL) you can craft an arbitrary token using the NtCreateToken system call.
+				* [Rotten Potato – Privilege Escalation from Service Accounts to SYSTEM - @breenmachine](https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/)
+				* [Windows: DCOM DCE/RPC Local NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=325&redir=1)
+				* [Social Engineering The Windows Kernel: Finding And Exploiting Token Handling Vulnerabilities - James Forshaw](https://www.youtube.com/watch?v=QRpfvmMbDMg)
+				* [Social Engineering The Windows Kernel: Finding And Exploiting Token Handling Vulnerabilities - James Forshaw - BHUSA2015](https://www.youtube.com/watch?v=QRpfvmMbDMg)
+					* One successful technique in social engineering is pretending to be someone or something you're not and hoping the security guard who's forgotten their reading glasses doesn't look too closely at your fake ID. Of course there's no hyperopic guard in the Windows OS, but we do have an ID card, the Access Token which proves our identity to the system and let's us access secured resources. The Windows kernel provides simple capabilities to identify fake Access Tokens, but sometimes the kernel or other kernel-mode drivers are too busy to use them correctly. If a fake token isn't spotted during a privileged operation local elevation of privilege or information disclosure vulnerabilities can be the result. This could allow an attacker to break out of an application sandbox, elevate to administrator privileges, or even compromise the kernel itself. This presentation is about finding and then exploiting the incorrect handling of tokens in the Windows kernel as well as first and third party drivers. Examples of serious vulnerabilities, such as CVE-2015-0002 and CVE-2015-0062 will be presented. It will provide clear exploitable patterns so that you can do your own security reviews for these issues. Finally, I'll discuss some of the ways of exploiting these types of vulnerabilities to elevate local privileges.
+				* [token_manipulation](https://github.com/G-E-N-E-S-I-S/token_manipulation)
+					* Bypass User Account Control by manipulating tokens (can bypass AlwaysNotify)
+				* [Account Hunting for Invoke-TokenManipulation - TrustedSec](https://www.trustedsec.com/2015/01/account-hunting-invoke-tokenmanipulation/)
+				* **Rotten Potato**
+					* [Rotten Potato – Privilege Escalation from Service Accounts to SYSTEM - foxglove security](https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/)
+					* [Rotten Potato Privilege Escalation from Service Accounts to SYSTEM - Stephen Breen Chris Mallz - Derbycon6](https://www.youtube.com/watch?v=8Wjs__mWOKI)
+					* [RottenPotatoNG](https://github.com/breenmachine/RottenPotatoNG)
+						* New version of RottenPotato as a C++ DLL and standalone C++ binary - no need for meterpreter or other tools.
+		* **Obtaining System Privileges**
+			* [The “SYSTEM” challenge](https://decoder.cloud/2017/02/21/the-system-challenge/)
+			* Writeup of achieving system from limited user privs.
+			* [All roads lead to SYSTEM](https://labs.mwrinfosecurity.com/system/assets/760/original/Windows_Services_-_All_roads_lead_to_SYSTEM.pdf)
+			* [Alternative methods of becoming SYSTEM - XPN](https://blog.xpnsec.com/becoming-system/)
+			* [admin to SYSTEM win7 with remote.exe - carnal0wnage](http://carnal0wnage.attackresearch.com/2013/07/admin-to-system-win7-with-remoteexe.html)
+			* [Getting a CMD prompt as SYSTEM in Windows Vista and Windows Server 2008 - blogs.technet](https://blogs.technet.microsoft.com/askds/2008/10/22/getting-a-cmd-prompt-as-system-in-windows-vista-and-windows-server-2008/)
+			* [Another way to get to a system shell – Assistive Technology -oddvar.moe](https://oddvar.moe/2018/07/23/another-way-to-get-to-a-system-shell/)
+				* `Manipulate HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Accessibility\ATs\magnifier – StartExe to run other binary when pressing WinKey and plus to zoom.`
+    			* `Can load binary from Webdav and also start webbrowser and browse to desired link`
+    			* `Runs command as system during UAC prompt and logon screen`
 	* **Writeups**
 		* [Analyzing local privilege escalations in win32k](http://uninformed.org/?v=all&a=45&t=sumry)
 			* This paper analyzes three vulnerabilities that were found in win32k.sys that allow kernel-mode code execution. The win32k.sys driver is a major component of the GUI subsystem in the Windows operating system. These vulnerabilities have been reported by the author and patched in MS08-025. The first vulnerability is a kernel pool overflow with an old communication mechanism called the Dynamic Data Exchange (DDE) protocol. The second vulnerability involves improper use of the ProbeForWrite function within string management functions. The third vulnerability concerns how win32k handles system menu functions. Their discovery and exploitation are covered. 
@@ -239,6 +247,7 @@
 			* [Slides](http://www.bluehatil.com/files/Linux%20Vulnerabilities%2C%20Windows%20Exploits%20-%20Escalating%20Privileges%20with%20WSL.PDF)
 		* [Escalating Privileges with CylancePROTECT - atredis](https://www.atredis.com/blog/cylance-privilege-escalation-vulnerability)
 		* [CVE-2018-0952: Privilege Escalation Vulnerability in Windows Standard Collector Service - Ryan Hanson](https://www.atredis.com/blog/cve-2018-0952-privilege-escalation-vulnerability-in-windows-standard-collector-service)
+		* [Windows 10 Privilege Escalation using Fodhelper - hackercool](https://web.archive.org/web/20180903225606/https://hackercool.com/2017/08/windows-10-privilege-escalation-using-fodhelper/)
 * **Talks/Videos**
 	* [Hacking windows through the Windows API; delves into windows api, how it can break itself](http://www.irongeek.com/i.php?page=videos/derbycon4/t122-getting-windows-to-play-with-itself-a-pen-testers-guide-to-windows-api-abuse-brady-bloxham)
 	* [Sedating the Watchdog Abusing Security Products to Bypass Windows Protections - Tomer Bit - BSidesSF](https://www.youtube.com/watch?v=7RKHux8QJfU)
@@ -272,6 +281,8 @@
 		* getsystem via parent process using ps1 & embeded c#
 	* [Sherlock](https://github.com/rasta-mouse/Sherlock)
 		* PowerShell script to quickly find missing software patches for local privilege escalation vulnerabilities.
+	* [Robber](https://github.com/MojtabaTajik/Robber)
+		* Robber is open source tool for finding executables prone to DLL hijacking 
 * **Misc Privilege Escalation**
 	* [dtappgather-poc.sh](https://github.com/HackerFantastic/Public/blob/master/exploits/dtappgather-poc.sh)
 		* Exploit PoC reverse engineered from EXTREMEPARR which provides local root on Solaris 7 - 11 (x86 & SPARC). Uses a environment variable of setuid binary dtappgather to manipulate file permissions and create a user owned directory anywhere on the system (as root). Can then add a shared object to locale folder and run setuid binaries with an untrusted library file.
@@ -485,10 +496,11 @@
 
 
 -------------------
-### <a name="post-ex"></a>General Post Exploitation
+### <a name="postex"></a>General Post Exploitation
 * **Tactics**
 	* [Adversarial Post Ex - Lessons from the Pros](https://www.slideshare.net/sixdub/adversarial-post-ex-lessons-from-the-pros)
 	* [Meta-Post Exploitation - Using Old, Lost, Forgotten Knowledge](https://www.blackhat.com/presentations/bh-usa-08/Smith_Ames/BH_US_08_Smith_Ames_Meta-Post_Exploitation.pdf)
+	* [Operating in the Shadows - Carlos Perez - DerbyCon(2015)](https://www.youtube.com/watch?v=NXTr4bomAxk)
 * **Linux**
 	* [How to determine Linux guest VM virtualization technology](https://www.cyberciti.biz/faq/linux-determine-virtualization-technology-command/)
 * **Egress Testing**	
@@ -514,6 +526,11 @@
 		* [JVM Post-Exploitation One-Liners](https://gist.github.com/frohoff/a976928e3c1dc7c359f8)
 		* [Oneliner-izer](https://github.com/csvoss/onelinerizer)
 			* Convert any Python file into a single line of code which has the same functionality.
+		* [IPFuscator](https://github.com/vysec/IPFuscator)
+			* IPFuscation is a technique that allows for IP addresses to be represented in hexadecimal or decimal instead of the decimal encoding we are used to. IPFuscator allows us to easily convert to these alternative formats that are interpreted in the same way.
+			* [Blogpost](https://vincentyiu.co.uk/ipfuscation/)
+		* [Cuteit](https://github.com/D4Vinci/Cuteit)
+			* A simple python tool to help you to social engineer, bypass whitelisting firewalls, potentially break regex rules for command line logging looking for IP addresses and obfuscate cleartext strings to C2 locations within the payload.
 
 -------------------
 ### <a name="linpost">Post-Exploitation Linux</a>
@@ -575,6 +592,10 @@
 		* One of the first "Living Off The Land" talks (That I know of) is this one: https://www.youtube.com/watch?v=j-r6UonEkUw
 		* The term LOLBins came from a twitter discussion on what to call these binaries. It was first proposed by Philip Goh - @MathCasualty here: https://twitter.com/MathCasualty/status/969174982579273728
 		* The term LOLScripts came from Jimmy - @bohops: https://twitter.com/bohops/status/984828803120881665
+	* **MSBuild**
+		* [MSBuild - docs.ms](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild?view=vs-2015)
+		* [MSBuild Inline Tasks - docs.ms](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-inline-tasks?view=vs-2015)
+		* [Doing More With MSBuild - 3gstudent](https://3gstudent.github.io/3gstudent.github.io/Use-MSBuild-To-Do-More/)
 * **Articles/Blogposts/Writeups**
 	* [Post-Exploitation on Windows using ActiveX Controls](http://uninformed.org/?v=all&a=3&t=sumry)
 	* [Windows Driver and Service enumeration with Python](https://cybersyndicates.com/2015/09/windows-driver-and-service-enumeration-with-python/)
@@ -592,6 +613,7 @@
 		* [Technical Writeup](https://cybellum.com/doubleagentzero-day-code-injection-and-persistence-technique/)
 	* [Syringe](https://github.com/securestate/syringe)
 		* Syringe is a general purpose DLL and code injection utility for 32 and 64-bit Windows. It is capable of executing raw shellcode as well as injecting shellcode or a DLL directly into running processes.
+	* [sRDI – Shellcode Reflective DLL Injection - silentbreaksecurity](https://silentbreaksecurity.com/srdi-shellcode-reflective-dll-injection/)
 * **Discretionary Access Control Lists**
 	* [Windows DACL Enum Project](https://github.com/nccgroup/WindowsDACLEnumProject)
 		* A collection of tools to enumerate and analyse Windows DACLs
@@ -599,29 +621,40 @@
 		* The Discretionary ACL Modification Project: Persistence Through Host-based Security Descriptor Modification. This project contains several files that implement host-based security descriptor "backdoors" that facilitate the abuse of various remotely accessible services for arbitrary trustees/security principals. tl;dr - this grants users/groups (local, domain, or 'well-known' like 'Everyone') of an attacker's choosing the ability to perform specific administrative actions on a modified host without needing membership in the local administrators group.
 * **Dumping Passwords**
 	* **Windows**
+		* [How Attackers Dump Active Directory Database Credentials - adsecurity.org](https://adsecurity.org/?p=2398)
 		* [Dumping Windows Credentials](https://www.securusglobal.com/community/2013/12/20/dumping-windows-credentials/)
 		* [Dump Windows password hashes efficiently - Part 1](http://www.bernardodamele.blogspot.com/2011/12/dump-windows-password-hashes.html)
 		* [Dumping hashes from Active Directory for cracking](http://blog.spiderlabs.com/2013/11/tutorial-for-ntds-goodness-vssadmin-wmis-ntdsdit-system-.html)
 		* [Stored passwords found all over the place after installing Windows in company networks :( - Win-Fu Official Blog](http://blog.win-fu.com/2017/08/stored-passwords-found-all-over-place.html?m=1)
+		* [Hunting for Credentials  Dumping in Windows  Environment - Teymur Kheirhabarov - ZeroNights](https://2017.zeronights.org/wp-content/uploads/materials/ZN17_Kheirkhabarov_Hunting_for_Credentials_Dumping_in_Windows_Environment.pdf)
 		* **Dumping NTDS.dit**
 			* [DIT Snapshot Viewer](https://github.com/yosqueoy/ditsnap)
 				* DIT Snapshot Viewer is an inspection tool for Active Directory database, ntds.dit. This tool connects to ESE (Extensible Storage Engine) and reads tables/records including hidden objects by low level C API. The tool can extract ntds.dit file without stopping lsass.exe. When Active Directory Service is running, lsass.exe locks the file and does not allow to access to it. The snapshot wizard copies ntds.dit using VSS (Volume Shadow Copy Service) even if the file is exclusively locked. As copying ntds.dit may cause data inconsistency in ESE DB, the wizard automatically runs esentutil /repair command to fix the inconsistency.
 			* [NTDSXtract - Active Directory Forensics Framework](http://www.ntdsxtract.com/)
 				* This framework was developed by the author in order to provide the community with a solution to extract forensically important information from the main database of Microsoft Active Directory (NTDS.DIT).
 			* [Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS](https://github.com/eladshamir/Internal-Monologue)
+			* [NTDSDumpEx](https://github.com/zcgonvh/NTDSDumpEx)
+				* NTDS.dit offline dumper with non-elevated
 		* **Mimikatz/Similar**
 			* [mimikatz](https://github.com/gentilkiwi/mimikatz)
-				* [Unofficial Guide to Mimikatz](https://adsecurity.org/?page_id=1821)
-				* [Mimikatz Overview, Defenses and Detection](https://www.sans.org/reading-room/whitepapers/detection/mimikatz-overview-defenses-detection-36780)
-				* [Mimikatz Logs and Netcat](http://blackpentesters.blogspot.com/2013/12/mimikatz-logs-and-netcat.html?m=1)
-		* [quarkspwdump](https://github.com/quarkslab/quarkspwdump)
-			* Dump various types of Windows credentials without injecting in any process.
-		* [SessionGopher](https://github.com/fireeye/SessionGopher)
-			* SessionGopher is a PowerShell tool that uses ff to extract saved session information for remote access tools such as WinSCP, PuTTY, SuperPuTTY, FileZilla, and Microsoft Remote Desktop. It can be run remotely or locally.
-		* [CredCrack](https://github.com/gojhonny/CredCrack)
-			* CredCrack is a fast and stealthy credential harvester. It exfiltrates credentials recusively in memory and in the clear. Upon completion, CredCrack will parse and output the credentials while identifying any domain administrators obtained. CredCrack also comes with the ability to list and enumerate share access and yes, it is threaded! CredCrack has been tested and runs with the tools found natively in Kali Linux. CredCrack solely relies on having PowerSploit's "Invoke-Mimikatz.ps1" under the /var/www directory.
-		* [pysecdump](https://github.com/pentestmonkey/pysecdump)
-			* pysecdump is a python tool to extract various credentials and secrets from running Windows systems. It currently extracts:
+			* [Unofficial Guide to Mimikatz](https://adsecurity.org/?page_id=1821)
+			* [Mimikatz Overview, Defenses and Detection](https://www.sans.org/reading-room/whitepapers/detection/mimikatz-overview-defenses-detection-36780)
+			* [Mimikatz Logs and Netcat](http://blackpentesters.blogspot.com/2013/12/mimikatz-logs-and-netcat.html?m=1)
+			* [Mimikatz Scheduled tasks Creds](https://github.com/gentilkiwi/mimikatz/wiki/howto-~-scheduled-tasks-credentials)
+		* **Volume Shadow Copy Service**
+			* [Shadow Copy - Wikipedia](https://en.wikipedia.org/wiki/Shadow_Copy)
+			* [Manage Volume Shadow Copy Service from the Vssadmin Command-Line - technet.ms](https://technet.microsoft.com/en-us/library/dd348398.aspx)
+			* [vssadmin - ss64](https://ss64.com/nt/vssadmin.html)
+			* [vssown.vbs](https://github.com/lanmaster53/ptscripts/blob/master/windows/vssown.vbs)
+		* **Tools**
+			* [quarkspwdump](https://github.com/quarkslab/quarkspwdump)
+				* Dump various types of Windows credentials without injecting in any process.
+			* [SessionGopher](https://github.com/fireeye/SessionGopher)
+				* SessionGopher is a PowerShell tool that uses ff to extract saved session information for remote access tools such as WinSCP, PuTTY, SuperPuTTY, FileZilla, and Microsoft Remote Desktop. It can be run remotely or locally.
+			* [CredCrack](https://github.com/gojhonny/CredCrack)
+				* CredCrack is a fast and stealthy credential harvester. It exfiltrates credentials recusively in memory and in the clear. Upon completion, CredCrack will parse and output the credentials while identifying any domain administrators obtained. CredCrack also comes with the ability to list and enumerate share access and yes, it is threaded! CredCrack has been tested and runs with the tools found natively in Kali Linux. CredCrack solely relies on having PowerSploit's "Invoke-Mimikatz.ps1" under the /var/www directory.
+			* [pysecdump](https://github.com/pentestmonkey/pysecdump)
+				* pysecdump is a python tool to extract various credentials and secrets from running Windows systems. It currently extracts:
 				* LM and NT hashes (SYSKEY protected); Cached domain passwords; LSA secrets; Secrets from Credential Manager (only some)
 * **Persistence**
 	* [Evading Autoruns - DerbyCon 7.0 - huntresslabs](https://github.com/huntresslabs/evading-autoruns)
@@ -631,6 +664,7 @@
 	* [Invisible Persistence](https://github.com/ewhitehats/InvisiblePersistence)
 		* [Code](https://github.com/ewhitehats/InvisiblePersistence/tree/master/InvisibleKeys)
 		* [Paper](https://github.com/ewhitehats/InvisiblePersistence/blob/master/InvisibleRegValues_Whitepaper.pdf)
+	* [Sneaky Active Directory Persistence #12: Malicious Security Support Provider (SSP) - adsecurity.org](https://adsecurity.org/?p=1760)
 * **PowerShell Desired State Configuration**
 	* **Documentation**
 		* [Windows PowerShell Desired State Configuration Overview - docs.ms](https://docs.microsoft.com/en-us/powershell/dsc/overview)
@@ -653,6 +687,8 @@
 		* Portia aims to automate a number of techniques commonly performed on internal network penetration tests after a low privileged account has been compromised. Portia performs privilege escalation as well as lateral movement automatically in the network
 	* [NetRipper](https://github.com/NytroRST/NetRipper)
 		* NetRipper is a post exploitation tool targeting Windows systems which uses API hooking in order to intercept network traffic and encryption related functions from a low privileged user, being able to capture both plain-text traffic and encrypted traffic before encryption/after decryption.
+
+
 
 
 
@@ -750,7 +786,10 @@
 			* [Complete Domain Compromise with Golden Tickets - stealthbits](https://blog.stealthbits.com/complete-domain-compromise-with-golden-tickets/)
 			* [Pass-the-(Golden)-Ticket with WMIC](https://blog.cobaltstrike.com/2015/01/07/pass-the-golden-ticket-with-wmic/)
 * **Password/Credential Attacks**
+	* [How Attackers Dump Active Directory Database Credentials - adsecurity.org](https://adsecurity.org/?p=2398)
 	* [Places of Interest in Stealing NetNTLM Hashes - osandamalith.com](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
+	* [Multi-Factor Mixup: Who Were You Again? - Okta](https://www.okta.com/security-blog/2018/08/multi-factor-authentication-microsoft-adfs-vulnerability/)
+		* A weakness in the Microsoft ADFS protocol for integration with MFA products allows a second factor for one account to be used for second-factor authentication to all other accounts in an organization.
 * **Reconaissance**
 	* **Articles/Blogposts/Presentations/Talks/Writeups**
 		* [Automating the Empire with the Death Star: getting Domain Admin with a push of a button](https://byt3bl33d3r.github.io/automating-the-empire-with-the-death-star-getting-domain-admin-with-a-push-of-a-button.html)
@@ -938,6 +977,7 @@
 	* [Hiding Files by Exploiting Spaces in Windows Paths](http://blakhal0.blogspot.com/2012/08/hiding-files-by-exploiting-spaces-in.html)
 	* [Stealing passwords every time they change - carnal0wnage](http://carnal0wnage.attackresearch.com/2013/09/stealing-passwords-every-time-they.html)
 	* [Installing and Registering a Password Filter DLL - msdn.ms](https://msdn.microsoft.com/library/windows/desktop/ms721766.aspx)
+	* [Persistence using Universal Windows Platform apps (APPX) - Oddvar.moe](https://oddvar.moe/2018/09/06/persistence-using-universal-windows-platform-apps-appx/)
 	* **AppDomain**
 		* [Use AppDomainManager to maintain persistence](https://3gstudent.github.io/3gstudent.github.io/Use-AppDomainManager-to-maintain-persistence/)
 	* **AppInit.dlls**
@@ -1135,11 +1175,13 @@
 	* [[Virus] Self-modifying code-short overview for beginners](http://phimonlinemoinhat.blogspot.com/2010/12/virus-self-modifying-code-short.html)
 	* [Escaping The Avast Sandbox Using A Single IOCTL](https://www.nettitude.co.uk/escaping-avast-sandbox-using-single-ioctl-cve-2016-4025)
 	* [AVLeak: Fingerprinting Antivirus Emulators Through Black-Box Testing](https://www.usenix.org/system/files/conference/woot16/woot16-paper-blackthorne_update.pdf)
+	* [Antivirus Evasion for Penetration Testing Engagements - alienvault](https://www.alienvault.com/blogs/security-essentials/antivirus-evasion-for-penetration-testing-engagements)
 * **Talks & Presentations**
 	* [Adventures in Asymmetric Warfare by Will Schroeder](https://www.youtube.com/watch?v=53qQfCkVM_o)
 		* As a co-founder and principal developer of the Veil-Framework, the speaker has spent a considerable amount of time over the past year and a half researching AV-evasion techniques. This talk will briefly cover the problem space of antivirus detection, as well as the reaction to the initial release of Veil-Evasion, a tool for generating AV-evading executables that implements much of the speaker’s research. We will trace through the evolution of the obfuscation techniques utilized by Veil-Evasion’s generation methods, culminating in the release of an entirely new payload language class, as well as the release of a new ..NET encryptor. The talk will conclude with some basic static analysis of several Veil-Evasion payload families, showing once and for all that antivirus static signature detection is dead.
 	* [ EDR, ETDR, Next Gen AV is all the rage, so why am I enraged? - Michael Gough - Derbycon7](https://www.irongeek.com/i.php?page=videos/derbycon7/t416-edr-etdr-next-gen-av-is-all-the-rage-so-why-am-i-enraged-michael-gough)
 		* A funny thing happened when I evaluated several EDR, ETDR and Next Gen AV products, currently all the rage and latest must have security solution. Surprisingly to me the solutions kinda sucked at things we expected them to do or be better at, thus this talk so you can learn from our efforts. While testing, flaws were discovered and shared with the vendors, some of the flaws, bugs, or vulns that were discovered will be discussed. This talk takes a look at what we initially expected the solutions to provide us, the options or categories of what these solutions address, what to consider when doing an evaluation, how to go about testing these solutions, how they would fit into our process, and what we found while testing these solutions. What enraged me about these EDR solutions were how they were all over the place in how they worked, how hard or ease of use of the solutions, and the fact I found malware that did not trigger an alert on every solution I tested. And this is the next new bright and shiny blinky security savior solution? The news is not all bad, there is hope if you do some work to understand what these solutions target and provide, what to look for, and most importantly how to test them! What we never anticipated or expected is the tool we used to compare the tests and how well it worked and how it can help you. 
+	* [Next Gen AV vs My Shitty Code by James Williams - SteelCon 2018](https://www.youtube.com/watch?v=247m2dwLlO4)
 * **Techniques**
 	* **Code Injection**
 	* **Debuggers**
@@ -1197,6 +1239,7 @@
 			* [Meterpreter stage AV/IDS evasion with powershell](https://arno0x0x.wordpress.com/2016/04/13/meterpreter-av-ids-evasion-powershell/)
 			* [Facts and myths about antivirus evasion with Metasploit - mihi - 2011](http://schierlm.users.sourceforge.net/avevasion.html)
 				* This article tries to given an overview about the current executable generation scheme of Metasploit, how AV detects them, and how to evade them. Note that this document only covers standalone EXE files (for Windows) that replace an EXE template's functionality, and not other payloads for exploits, service executables (like for the windows/psexec exploit) or executables that merely add to the original template's functionality (like the -k option of msfpayload).
+			* [Hiding Metasploit Shellcode to Evade Windows Defender - Rapid7](https://blog.rapid7.com/2018/05/03/hiding-metasploit-shellcode-to-evade-windows-defender/)
 	* **Sandbox Detection**
 		* [CheckPlease](https://github.com/Arvanaghi/CheckPlease)
 	* **Tools**
@@ -1237,6 +1280,8 @@
 			* IDPS & SandBox & AntiVirus STEALTH KILLER. MorphAES is the world's first polymorphic shellcode engine, with metamorphic properties and capability to bypass sandboxes, which makes it undetectable for an IDPS, it's cross-platform as well and library-independent.
 		* [Inception](https://github.com/two06/Inception)
 			* Provides In-memory compilation and reflective loading of C# apps for AV evasion.
+		* [recomposer](https://github.com/secretsquirrel/recomposer)
+			* Randomly changes Win32/64 PE Files for 'safer' uploading to malware and sandbox sites.
 * **Application Whitelisting**
 	* [Whitelist Evasion revisited](https://khr0x40sh.wordpress.com/2015/05/27/whitelist-evasion-revisited/)
 	* [Shackles, Shims, and Shivs - Understanding Bypass Techniques](http://www.irongeek.com/i.php?page=videos/derbycon6/535-shackles-shims-and-shivs-understanding-bypass-techniques-mirovengi)
@@ -1264,6 +1309,7 @@
 			* Applocker bypass
 		* [AppLocker Bypass – Weak Path Rules](https://pentestlab.blog/2017/05/22/applocker-bypass-weak-path-rules/)
 		* [Applocker Bypass via Registry Key Manipulation](https://www.contextis.com/resources/blog/applocker-bypass-registry-key-manipulation/)
+		* [Bypassing AppLocker Custom Rules - 0x09AL Security Blog](https://0x09al.github.io/security/applocker/bypass/custom/rules/windows/2018/09/13/applocker-custom-rules-bypass.html)
 * **DeviceGuard Bypass**
 	* [Window 10 Device Guard Bypass](https://github.com/tyranid/DeviceGuardBypasses)
 	* [Defeating Device Guard: A look into CVE-2017-0007](https://enigma0x3.net/2017/04/03/defeating-device-guard-a-look-into-cve-2017-0007/)
@@ -1363,12 +1409,19 @@
 
 
 
-
-
 ----------------------
-### <a name="docker"></a>Docker & Containers
+### <a name="containers"></a>Containers
+* **101**
+	* [LXC - Wikipedia](https://en.wikipedia.org/wiki/LXC)
+	* [Process Containers - lwn.net](https://lwn.net/Articles/236038/)
+	* [cgroups - wikipedia](https://en.wikipedia.org/wiki/Cgroups)
+	* [Everything you need to know about Jails - bsdnow.tv](http://www.bsdnow.tv/tutorials/jails)
+	* [Jails - FreeBSD handbook](https://www.freebsd.org/doc/handbook/jails.html)
 * **Articles/Blogposts/Writeups**
 	* **Containers**
+		* [Controlling access to user namespaces - lwn.net](https://lwn.net/Articles/673597/)
+		* [Namespaces in operation, part 1: namespaces overview - lwn.net](https://lwn.net/Articles/531114/#series_index)
+		* [Linux LXC vs FreeBSD jail - Are there any notable differences between LXC (Linux containers) and FreeBSD's jails in terms of security, stability & performance? - unix.StackExchange](https://unix.stackexchange.com/questions/127001/linux-lxc-vs-freebsd-jail)
 	* **Docker**
 		* [Docker Security Best-Practices - Peter Benjamin](https://dev.to/petermbenjamin/docker-security-best-practices-45ih)
 		* [Is it possible to escalate privileges and escaping from a Docker container? - StackOverflow](https://security.stackexchange.com/questions/152978/is-it-possible-to-escalate-privileges-and-escaping-from-a-docker-container)
@@ -1376,13 +1429,18 @@
 		* [Abusing Privileged and Unprivileged Linux Containers - nccgroup](https://www.nccgroup.trust/uk/our-research/abusing-privileged-and-unprivileged-linux-containers/)
 		* [Understanding and Hardening Linux Containers - nccgroup](https://www.nccgroup.trust/uk/our-research/understanding-and-hardening-linux-containers/)
 			* Linux containers offer native OS virtualisation, segmented by kernel namespaces, limited through process cgroups and restricted through reduced root capabilities, Mandatory Access Control and user namespaces. This paper discusses these container features, as well as exploring various security mechanisms. Also included is an examination of attack surfaces, threats, and related hardening features in order to properly evaluate container security. Finally, this paper contrasts different container defaults and enumerates strong security recommendations to counter deployment weaknesses-- helping support and explain methods for building high-security Linux containers. Are Linux containers the future or merely a fad or fantasy? This paper attempts to answer that question.
+	* **Jails**
+		* [ezjail – Jail administration framework](https://erdgeist.org/arts/software/ezjail/)
 	* **Kubernetes**
+* **Privilege Escalation**
+	* [Privilege Escalation via lxd -  Josiah Beverton](https://reboare.github.io/lxd/lxd-escape.html)
 * **Talks & Presentations**
 	* [Docker: Security Myths, Security Legends - Rory McCune](https://www.youtube.com/watch?v=uQigvjSXMLw)
 * **Tools**
 	* **Containers**
 		* [nsjail](https://github.com/google/nsjail)
 			* A light-weight process isolation tool, making use of Linux namespaces and seccomp-bpf syscall filters (with help of the kafel bpf language)
+		* [ezjail – Jail administration framework](https://erdgeist.org/arts/software/ezjail/)
 	* **Docker**
 		* [docker-layer2-icc](https://github.com/brthor/docker-layer2-icc)
 			* Demonstrating that disabling ICC in docker does not block raw packets between containers.
@@ -1392,9 +1450,6 @@
 			* For practicing pen testing docker instances
 	* **Kubernetes**
 		* [Kubernetes Security Best-Practices - Peter Benjamin](https://dev.to/petermbenjamin/kubernetes-security-best-practices-hlk)
-
-
-
 
 
 

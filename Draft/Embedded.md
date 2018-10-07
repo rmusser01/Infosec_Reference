@@ -4,72 +4,45 @@
 
 ## Table of Contents
 - [General](#general)
-- []()
+- [Attacking Routers and their Firmware\)(#routers)
+- [Cable Modem Hacking](#modem)
+- [Credit Cards](#cc)
+- [esp2866 Related](#esp2866)
+- [Flash Memory](#flash)
+- [Firmware(nonspecific)](#firmware)
+- [IoT/IoS](#iot)
+- [JTAG](#jtag)
+- [Medical Devices](#medical)
+- [Miscellaneous Devices](#misc-devices)
+- [Lightning/Thunderbolt](#lightning)
+- [PCI](#pci)
+- [Printers](#printers)
+- [Smart TVs](#smart)
+- [Serial Peripheral Interface(SPI)](#spi)
+- [SD Cards](#sdcard)
+- [PCB Related](#pcb)
+- [Point-of-Sale](#pos)
+- [Secure Tokens](#tokens)
+- [USB](#usb)
+- [SIM Cards](#sim)
+- [SmartCards](#smartcard)
+- [Voting Machines](#voting)
+- [Specific Attacks](#specific)
 
 
-
-
-
-
-
-#### To Sort
-
+---------------------
+### <a name="general"></a>General
 * **To-Do**
+	* Fingeprint readers
+ 		* [Breaking apple touchID cheaply](http://www.ccc.de/en/updates/2013/ccc-breaks-apple-touchid)
 	* SIMs
 	* USB
 	* Lightning
 	* Voting machines
 	* Tokens
 	* SD Cards
-
-http://www.sp3ctr3.me/hardware-security-resources/
-http://greatscottgadgets.com/infiltrate2013/
-
-* [When IoT Research Matters - Mark Loveless - Derbycon2017](https://www.youtube.com/watch?v=abkb5-F7BfA)
-	* Most IoT research involves low hanging fruit and kitchen appliances. But what happens when the tech you are researching is changing a niche industry, or creating one? This involves a little deeper dive. This talk illustrates some basic concepts and includes some tips on how to make that dive slightly deeper, with examples of hacking tool usage, going above and beyond with a vendor during disclosure, and creating realistic attack scenarios without coming across as mere stunt hacking.
-* [IoT Security: Executing an Effective Security Testing Process  - Deral Heiland - Derbycon2017](https://www.irongeek.com/i.php?page=videos/derbycon7/t403-iot-security-executing-an-effective-security-testing-process-deral-heiland)
-	* With IoT expected to top 20 billion connected devices by the end of the decade. A focused effort is critical if we plan to be successfully securing our new IoT driven world. One of the primary necessities to meet this goal is to develop sound methods for identification, and mitigation of security vulnerabilities within IoT products. As an IoT security researcher and consultant, I regularly conduct IoT security testing. Within my testing methodologies I leverage a holistic approach that focuses on the entire ecosystem of an IoT solution, including: hardware, mobile, and cloud environments allowing for a more through evaluation of a solutions security issues. During this presentation attendees will learn about the ecosystem structure of IoT and security implication of the interconnected components as I guide the audience through several research projects focused on security testing of an IoT technology. Using live demonstration I will show real-world security vulnerability examples identified within each segment of an IoT ecosystem 
-* [Pwn2Win 2017 - Shift Register](http://blog.dragonsector.pl/2017/10/pwn2win-2017-shift-register.html)
-
-* [Reverse Engineering Intels Management Engine](http://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf) 
-	* On every intel chip core2duo and newer
-
-* [Adapting Software Fault Isolation to Contemporary CPU Architectures](https://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35649.pdf)
-	* Software Fault Isolation (SFI) is an effective approach to sandboxing binary code of questionable provenance, an interesting use case for native plugins in a Web browser. We present software fault isolation schemes for ARM and x86-64 that provide control-flow and memory integrity with average performance overhead of under 5% on ARM and 7% on x86-64. We believe these are the best known SFI implementations for these architectures, with significantly lower overhead than previous systems for similar architectures. Our experience suggests that these SFI implementations benefit from instruction-level parallelism, and have particularly small impact for work- loads that are data memory-bound, both properties that tend to reduce the impact of our SFI systems for future CPU implementations.
-
-* [nexmon](https://github.com/seemoo-lab/nexmon)
-	* Nexmon is our C-based firmware patching framework for Broadcom/Cypress WiFi chips that enables you to write your own firmware patches, for example, to enable monitor mode with radiotap headers and frame injection.
-
-* [dfu-programmer](https://github.com/dfu-programmer/dfu-programmer)
-	* dfu-programmer is an implementation of the Device Firmware Upgrade class USB driver that enables firmware upgrades for various USB enabled (with the correct bootloader) Atmel chips.  This program was created because the Atmel "FLIP" program for flashing devices does not support flashing via USB on Linux, and because standard DFU loaders do not work for Atmel's chips.
-
-* [Exploiting Qualcomm EDL Programmers (1): Gaining Access & PBL Internals](https://alephsecurity.com/2018/01/22/qualcomm-edl-1/)
-
-* [CPU security bugs caused by speculative execution](https://github.com/marcan/speculation-bugs)
-	* This repo is an attempt to collect information on the class of information disclosure vulnerabilities caused by CPU speculative execution that were disclosed on January 3rd, 2018.
-
-* [Hardware Backdooring is Practical -Jonathan Brossard](https://www.youtube.com/watch?v=umBruM-wFUw)
-
-* [Attacking ìsecureî chips](https://www.youtube.com/watch?v=w7PT0nrK2BE)
-* [Attackin the TPM part 2](https://www.youtube.com/watch?v=h-hohCfo4LA)
-* [Breaking apple touchID cheaply](http://www.ccc.de/en/updates/2013/ccc-breaks-apple-touchid)
-* [The Empire Strikes Back Apple ñ how your Mac firmware security is completely broken](https://reverse.put.as/2015/05/29/the-empire-strikes-back-apple-how-your-mac-firmware-security-is-completely-broken/)
-	* Writeup on compromise of UEFI on apple hardware.
-* [CansecWest2016 Getting Physical: Extreme Abuse of Intel Based Paging Systems](https://github.com/n3k/CansecWest2016_Getting_Physical_Extreme_Abuse_of_Intel_Based_Paging_Systems)
-* [#root via SMS: 4G access level security assessment](https://conference.hitb.org/hitbsecconf2015ams/materials/D1T1%20-%20T.%20Yunusov%20K.%20Nesterov%20-%20Bootkit%20via%20SMS.pdf)
-* [RPL Attacks Framework](https://github.com/dhondta/rpl-attacks)
-	* This project is aimed to provide a simple and convenient way to generate simulations and deploy malicious motes for a Wireless Sensor Network (WSN) that uses Routing Protocol for Low-power and lossy devices (RPL) as its network layer. With this framework, it is possible to easily define campaign of simulations either redefining RPL configuration constants, modifying single lines from the ContikiRPL library or using an own external RPL library. Moreover, experiments in a campaign can be generated either based on a same or a randomized topology for each simulation.
-* [Here's a List of 29 Different Types of USB Attacks - BleepingComputer](https://www.bleepingcomputer.com/news/security/heres-a-list-of-29-different-types-of-usb-attacks/)
-* [Infecting the Embedded Supply Chain - somersetrecon](https://www.somersetrecon.com/blog/2018/7/27/infecting-the-embedded-supply-chain)
-* [lowRISC](https://www.lowrisc.org/)
-* [Tagged memory and minion cores in the lowRISC SoC](https://www.lowrisc.org/downloads/lowRISC-memo-2014-001.pdf)
-
-#### end sort
-
-
-
----------------------
-### <a name="general"></a>General
+	* TPM
+		* [Attackin the TPM part 2](https://www.youtube.com/watch?v=h-hohCfo4LA)
 * **101**
 	* [Embedded System - Wikipedia](https://en.wikipedia.org/wiki/Embedded_system)
 	* [Hardware Security and Trust/ECE 4451/5451: Introduction to Hardware Security and Trust](https://www.engr.uconn.edu/~tehrani/teaching/hst/)
@@ -78,9 +51,13 @@ http://greatscottgadgets.com/infiltrate2013/
 	* [Display Data Channel](https://en.wikipedia.org/wiki/Display_Data_Channel)
 	* [UART - Universal asynchronous receiver/transmitter](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter)
 * **Articles/Papers/Talks/Writeups**
+	* [Infecting the Embedded Supply Chain - somersetrecon](https://www.somersetrecon.com/blog/2018/7/27/infecting-the-embedded-supply-chain)
+	* [Exploiting Qualcomm EDL Programmers (1): Gaining Access & PBL Internals](https://alephsecurity.com/2018/01/22/qualcomm-edl-1/)
 * **Circuit Boards**
 	* [Deconstructing the Circuit Board Sandwich DEF CON 22 - Joe Grand aka Kingpin](https://www.youtube.com/watch?v=O8FQZIPkgZM)
 * **Educational/Informative**
+	* [OWASP Embedded Application Security](https://www.owasp.org/index.php/OWASP_Embedded_Application_Security)
+		* [Live Copy](https://scriptingxss.gitbooks.io/embedded-appsec-best-practices//)
 	* [Hardware Hacking - Nicolas Collins](http://www.nicolascollins.com/texts/originalhackingmanual.pdf)
 	* [Reversing and Exploiting Embedded Devices: The Software Stack (Part 1)](https://p16.praetorian.com/blog/reversing-and-exploiting-embedded-devices-part-1-the-software-stack)
 	* [Common methods of H/W hacking](https://www.sparkfun.com/news/1314)
@@ -88,8 +65,7 @@ http://greatscottgadgets.com/infiltrate2013/
 	* [Hardware Hacking the Easyware Way](http://www.irongeek.com/i.php?page=videos/derbycon6/417-hardware-hacking-the-easyware-way-brian-fehrman)
 		* Interested in hardware hacking but not quite sure where to start? Does the thought of soldering thrill you (or scare you)? Come check out this talk to see just how easy it is to jump into this exciting field of research! Many people and companies use similar models of hardware. Unlike software, these devices rarely receive security updates. Sometimes, used devices are sold without clearing the configurations and important data is left behind. After this talk, you will know how to find hidden interfaces on these devices, start searching for vulnerabilities and sensitive information, and have irresistible urges to go home and tear apart all your old networking equipment. Did we mention...live demo?
 	* [Methodologies for Hacking Embedded Security Appliances](https://media.blackhat.com/us-13/US-13-Bathurst-Methodologies-for-Hacking-Embdded-Security-Appliances-Slides.pdf)
-	* [OWASP Embedded Application Security](https://www.owasp.org/index.php/OWASP_Embedded_Application_Security)
-		* [Live Copy](https://scriptingxss.gitbooks.io/embedded-appsec-best-practices//)
+	* [Hardware Backdooring is Practical -Jonathan Brossard](https://www.youtube.com/watch?v=umBruM-wFUw)
 * **Resources/Reference**
 	* [FCC ID Lookup](http://transition.fcc.gov/oet/ea/fccid/)
 		* Lookup devices according to FCC ID
@@ -121,11 +97,11 @@ http://greatscottgadgets.com/infiltrate2013/
 	* [Unpacking Firmware images from cable modems](http://w00tsec.blogspot.com.br/2013/11/unpacking-firmware-images-from-cable.html)
 * **Articles/Papers/Talks/Writeups**
 	* [Hacking the D-Link DIR-890L](http://www.devttys0.com/2015/04/hacking-the-d-link-dir-890l/)
-	* [Multiple Vulnerabilities in BHU WiFi ìuRouterî](http://blog.ioactive.com/2016/08/multiple-vulnerabilities-in-bhu-wifi.html)
+	* [Multiple Vulnerabilities in BHU WiFi ‚ÄúuRouter‚Äù](http://blog.ioactive.com/2016/08/multiple-vulnerabilities-in-bhu-wifi.html)
 	* [From Zero to ZeroDay Journey: Router Hacking (WRT54GL Linksys Case)](http://www.defensecode.com/whitepapers/From_Zero_To_ZeroDay_Network_Devices_Exploitation.txt)
 	* [Rooting the MikroTik routers (SHA2017)](https://www.youtube.com/watch?v=KZWGD9fWIcM)
-		* In this talk I describe my journey into reverse engineering parts of MikroTik system to gain access to hardware features and the shell behind the RouterOS that has no ìlsî.
-	* [From 0-day to exploit ñ Buffer overflow in Belkin N750 (CVE-2014-1635)](https://labs.integrity.pt/articles/from-0-day-to-exploit-buffer-overflow-in-belkin-n750-cve-2014-1635/)
+		* In this talk I describe my journey into reverse engineering parts of MikroTik system to gain access to hardware features and the shell behind the RouterOS that has no ‚Äúls‚Äù.
+	* [From 0-day to exploit ‚Äì Buffer overflow in Belkin N750 (CVE-2014-1635)](https://labs.integrity.pt/articles/from-0-day-to-exploit-buffer-overflow-in-belkin-n750-cve-2014-1635/)
 	* [Firmware Exploitation with JEB: Part 1](https://www.pnfsoftware.com/blog/firmware-exploitation-with-jeb-part-1/)
 * **Tools**
 	* [Router Post-Exploitation Framework](https://github.com/mncoppola/rpef)
@@ -157,7 +133,7 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 -----------------------
-### Credit Cards
+### Credit Cards<a name="cc"></a>
 * **101**
 * **Articles/Papers/Talks/Writeups**
 	* [Cloning Credit Cards: A combined pre-play and downgrade attack on EMV Contactless](https://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/12055-woot13-roland.pdf)
@@ -187,9 +163,11 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 --------------------------
-### Firmware(Non-Specific)
+### <a name="firmware"></a> Firmware(Non-Specific)
 * **101**
 	* Check the BIOS/UEFI page as well.
+	* Check out the RE page too.
+	* [Reverse Engineering Firmware Primer - SecurityWeekly](https://wiki.securityweekly.com/Reverse_Engineering_Firmware_Primer)
 * **Articles/Papers/Talks/Writeups**
 	* [Lost your "secure" HDD PIN? We can help!](https://syscall.eu/pdf/2016-Lenoir_Rigo-HDD_PIN-paper.pdf)
 	* [Analyzing and Running binaries from Firmware Images - Part 1](http://w00tsec.blogspot.com.br/2013/09/analyzing-and-running-binaries-from.html)
@@ -199,6 +177,8 @@ http://greatscottgadgets.com/infiltrate2013/
 * **Tools**
 	* [Firmware Analysis Toolkit](https://github.com/attify/firmware-analysis-toolkit)
 		* FAT is a toolkit built in order to help security researchers analyze and identify vulnerabilities in IoT and embedded device firmware. 
+	* [dfu-programmer](https://github.com/dfu-programmer/dfu-programmer)
+		* dfu-programmer is an implementation of the Device Firmware Upgrade class USB driver that enables firmware upgrades for various USB enabled (with the correct bootloader) Atmel chips.  This program was created because the Atmel "FLIP" program for flashing devices does not support flashing via USB on Linux, and because standard DFU loaders do not work for Atmel's chips.
 * **Miscellaneous**
 	* [Firmware Forensics: Diffs, Timelines, ELFs and Backdoors](http://w00tsec.blogspot.com/2015/02/firmware-forensics-diffs-timelines-elfs.html)
 	* [Firmwalker](https://github.com/craigz28/firmwalker)
@@ -210,7 +190,7 @@ http://greatscottgadgets.com/infiltrate2013/
 ### <a name="iot">Internet of Things</a> IoT
 * **101**
 	* [A Primer on IoT Security Research](https://community.rapid7.com/community/infosec/blog/2015/03/10/iot-security-research-whats-it-take)
-* **Articles/Blogposts/Talks/Writeups**
+* **Articles, Blogposts & Writeups**
 	* [Smart Parking Meters](http://uninformed.org/?v=all&a=6&t=sumry)
 		* Security through obscurity is unfortunately much more common than people think: many interfaces are built on the premise that since they are a "closed system" they can ignore standard security practices. This paper will demonstrate how parking meter smart cards implement their protocol and will point out some weaknesses in their design that open the doors to the system. It will also present schematics and code that you can use to perform these basic techniques for auditing almost any type of blackblox secure memory card.
 	* [Smart Nest Thermostat A Smart Spy in Your Home](https://www.youtube.com/watch?v=UFQ9AYMee_Q)
@@ -220,10 +200,17 @@ http://greatscottgadgets.com/infiltrate2013/
 		* [Part 2 - Rooting the Dropcam](http://blog.includesecurity.com/2014/04/reverse-engineering-dropcam-rooting-the-device.html)
 		* [Part 3 - Dropcam Lua Bytecode](http://blog.includesecurity.com/2014/08/Reverse-Engineering-Dropcam-Lua-Bytecode.html)
 	* [When IoT Attacks: Hacking A Linux-Powered Rifle ](https://www.blackhat.com/docs/us-15/materials/us-15-Sandvik-When-IoT-Attacks-Hacking-A-Linux-Powered-Rifle.pdf)
+* **Talks & Presentations**
+	* [When IoT Research Matters - Mark Loveless - Derbycon2017](https://www.youtube.com/watch?v=abkb5-F7BfA)
+		* Most IoT research involves low hanging fruit and kitchen appliances. But what happens when the tech you are researching is changing a niche industry, or creating one? This involves a little deeper dive. This talk illustrates some basic concepts and includes some tips on how to make that dive slightly deeper, with examples of hacking tool usage, going above and beyond with a vendor during disclosure, and creating realistic attack scenarios without coming across as mere stunt hacking.
+	* [IoT Security: Executing an Effective Security Testing Process  - Deral Heiland - Derbycon2017](https://www.irongeek.com/i.php?page=videos/derbycon7/t403-iot-security-executing-an-effective-security-testing-process-deral-heiland)
+		* With IoT expected to top 20 billion connected devices by the end of the decade. A focused effort is critical if we plan to be successfully securing our new IoT driven world. One of the primary necessities to meet this goal is to develop sound methods for identification, and mitigation of security vulnerabilities within IoT products. As an IoT security researcher and consultant, I regularly conduct IoT security testing. Within my testing methodologies I leverage a holistic approach that focuses on the entire ecosystem of an IoT solution, including: hardware, mobile, and cloud environments allowing for a more through evaluation of a solutions security issues. During this presentation attendees will learn about the ecosystem structure of IoT and security implication of the interconnected components as I guide the audience through several research projects focused on security testing of an IoT technology. Using live demonstration I will show real-world security vulnerability examples identified within each segment of an IoT ecosystem 
+	* [Backdooring the Frontdoor - Jmaxxz - DEF CON 24](https://www.youtube.com/watch?v=MMB1CkZi6t4&feature=youtu.be)
+		* As our homes become smarter and more connected we come up with new ways of reasoning about our privacy and security. Vendors promise security, but provide little technical information to back up their claims. Further complicating the matter, many of these devices are closed systems which can be difficult to assess. This talk will explore the validity of claims made by one smart lock manufacturer about the security of their product. The entire solution will be deconstructed and examined all the way from web services to the lock itself. By exploiting multiple vulnerabilities Jmaxxz will demonstrate not only how to backdoor a front door, but also how to utilize these same techniques to protect your privacy.
 * **Educational/Informative**
-	* [Security of Things: An Implementersí Guide to Cyber-Security for Internet of Things Devices and Beyond - NCC Group](https://www.nccgroup.com/media/481272/2014-04-09_-_security_of_things_-_an_implementers_guide_to_cyber_security_for_internet_of_things_devices_and_beyond-2.pdf)
+	* [Security of Things: An Implementers‚Äô Guide to Cyber-Security for Internet of Things Devices and Beyond - NCC Group](https://www.nccgroup.com/media/481272/2014-04-09_-_security_of_things_-_an_implementers_guide_to_cyber_security_for_internet_of_things_devices_and_beyond-2.pdf)
 	* [Ian Douglas - Creating an Internet of Private Things](https://www.youtube.com/watch?v=4W8SkujOXi4&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=8)
-		* The next big market push is to have the cool IoT device thatís connected to the internet. As weíve seen from the Mirai and Switcher hacks, itís important to embed the appropriate safeguards so that devices are not open to attack. When selecting device components there are things that should be checked for, and when youíre doing the coding and workflows, there are other things that need to be taken in to account. Although security and privacy are close cousins, theyíre also different. This talk will be centered around some best security and privacy practices as well as some common errors that should be avoided.
+		* The next big market push is to have the cool IoT device that‚Äôs connected to the internet. As we‚Äôve seen from the Mirai and Switcher hacks, it‚Äôs important to embed the appropriate safeguards so that devices are not open to attack. When selecting device components there are things that should be checked for, and when you‚Äôre doing the coding and workflows, there are other things that need to be taken in to account. Although security and privacy are close cousins, they‚Äôre also different. This talk will be centered around some best security and privacy practices as well as some common errors that should be avoided.
 * **Tools**
 * **Papers**
 
@@ -296,17 +283,17 @@ http://greatscottgadgets.com/infiltrate2013/
 
 
 ----------------------
-### Printers
+### Printers<a name="printers"></a>
 See 'Printers' Section in Network Attacks & Scanning
 
 
 
 ------------------
-### Smart TVs/Monitors
+### Smart TVs/Monitors <a name="smart"></a>
 * **101**
 * **Articles/Papers/Talks/Writeups**
 	* [Smart TV Security - #1984 in 21 st century](https://cansecwest.com/slides/2013/SmartTV%20Security.pdf)
-		* This talk is more about security bugs and rootkits than about firmware for TVs. This talk more covers rootkits than security bugs and exploitation thereof, as theyíre not different to traditional techniques. This talk is about general security issues of all Smart TV vendors.
+		* This talk is more about security bugs and rootkits than about firmware for TVs. This talk more covers rootkits than security bugs and exploitation thereof, as they‚Äôre not different to traditional techniques. This talk is about general security issues of all Smart TV vendors.
 	* [MonitorDarkly](https://github.com/RedBalloonShenanigans/MonitorDarkly)
 		* This repo contains the exploit for the Dell 2410U monitor. It contains utilities for communicating with and executing code on the device. The research presented here was done in order to highlight the lack of security in "modern" on-screen-display controllers. Please check out our Recon 0xA presentation (included) for a detailed description of our research findings and process.
 * **General**
@@ -316,7 +303,7 @@ See 'Printers' Section in Network Attacks & Scanning
 
 
 ---------------
-### SPI(Serial Peripheral Interface Bus)
+### SPI(Serial Peripheral Interface Bus)<a name="spi"></a>
 * **101**
 	* [Serial Peripheral Interface Bus - Wikipedia](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
 	* [SPI](https://trmm.net/SPI_flash)
@@ -337,18 +324,18 @@ See 'Printers' Section in Network Attacks & Scanning
 * **Miscellaneous**
 
 -------------
-### PCB Related
+### PCB Related <a name="pcb"></a>
 * [PCB-RE: Tools & Techniques](https://www.amazon.com/dp/1979331383)
 
 ------------------------------
-### Point-of-Sale
+### Point-of-Sale <a name="pos"></a>
 * **101**
 * **Articles & Writeups**
 * **Talks & Presentations**
 	* [Chip & PIN is Definitely Broken - Defcon 19](https://www.youtube.com/watch?v=JABJlvrZWbY)
 	* [Jackson Thuraisamy & Jason Tran - Hacking POS PoS Systems](https://www.youtube.com/watch?v=-n7oJqmTUCo) 
 	* [Pwning the POS! - Nick Douglas - Notacon11](https://www.irongeek.com/i.php?page=videos/notacon11/pwning-the-pos-mick-douglas)
-		* Everybodyís talking about the Target breach. However, thereís lots wrong with the retail spaceÖ and itís been this way for quite some time! Focusing on Point of Sale (POS) systems this talk will show you how to exploit friendly the POS ecosystem really is, and how you can help fix things.
+		* Everybody‚Äôs talking about the Target breach. However, there‚Äôs lots wrong with the retail space‚Ä¶ and it‚Äôs been this way for quite some time! Focusing on Point of Sale (POS) systems this talk will show you how to exploit friendly the POS ecosystem really is, and how you can help fix things.
 	* [Pandora's Cash Box - The Ghost under your POS - RECON2015](https://recon.cx/2015/slides/recon2015-17-nitay-artenstein-shift-reduce-Pandora-s-Cash-Box-The-Ghost-Under-Your-POS.pdf)
 	* [Retail Store/POS Penetration Testing - Daniel Brown - Derbycon2017](https://www.irongeek.com/i.php?page=videos/derbycon7/s10-retail-storepos-penetration-testing-daniel-brown)
 		* Penetration Testing a retail/POS environment. The methods companies are using to try and protect them, methods of bypassing security implementations, and how they tie into a companies overall security.
@@ -363,10 +350,10 @@ See 'Printers' Section in Network Attacks & Scanning
 
 
 ------------------
-### Secure Tokens
+### Secure Tokens<a name="tokens"></a>
 * **101**
 * **Articles/Papers/Talks/Writeups**
-	* [Secure Tokiní & Doobiekeys: How to roll your own counterfeit hardware security devices - @securelyfitz, @r00tkillah](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-r00killah-and-securelyfitz-Secure-Tokin-and-Doobiekeys.pdf)
+	* [Secure Tokin‚Äô & Doobiekeys: How to roll your own counterfeit hardware security devices - @securelyfitz, @r00tkillah](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-r00killah-and-securelyfitz-Secure-Tokin-and-Doobiekeys.pdf)
 * **General**
 * **Tools**
 * **Miscellaneous**
@@ -379,7 +366,7 @@ See 'Printers' Section in Network Attacks & Scanning
 		* Great explanation of the USB standard in depth
 * **Articles/Papers/Talks/Writeups**
 	* **Attacking**
-		* [USB Attacks Need Physical Access Right? Not Any MoreÖ by Andy Davis](https://www.youtube.com/watch?v=90MIjgh5ESU)
+		* [USB Attacks Need Physical Access Right? Not Any More‚Ä¶ by Andy Davis](https://www.youtube.com/watch?v=90MIjgh5ESU)
 			* This project's goal is to turn PS2303-based USB flash drive into a cheap USB 3.0 development platform (i.e. fast USB 3.0 to FPGA bridge).
 		* [Multiplexed Wired Attack Surfaces - Michael Ossmann & Kos - Toorcon15](https://www.youtube.com/watch?v=4QB79921Nlw)
 			* Manufacturers of mobile devices often multiplex several wired interfaces onto a single connector. Some of these interfaces, probably intended for test and development, are still enabled when the devices ship. We'll show you how you can get a shell on a popular mobile phone via its USB port without using a USB connection and we will release an open source tool for exploring multiplexed wired interfaces.
@@ -392,15 +379,16 @@ See 'Printers' Section in Network Attacks & Scanning
 			* USB is used in almost every computing device produced in recent years. In addition to well-known usages like keyboard, mouse, and mass storage, a much wider range of capabilities exist such as Device Firmware Update, USB On-The-Go, debug over USB, and more. What actually happens on the wire? Is there interesting data we can observe or inject into these operations that we can take advantage of? In this talk, we will present an overview of USB and its corresponding attack surface. We will demonstrate different tools and methods that can be used to monitor and abuse USB for malicious purposes.
 		* [Implementing an USB Host Driver Fuzzer - Daniel Mende - Troopers14](https://www.youtube.com/watch?v=h777lF6xjs4)
 		* [Attacking secure USB keys, behind the scene](https://www.j-michel.org/blog/2018/01/16/attacking-secure-usb-keys-behind-the-scene)
-		* [Attacking encrypted USB keys the hard(ware) way - Jean-Michel Picod, RÈmi Audebert, Elie Bursztein -BHUSA 17](https://elie.net/talk/attacking-encrypted-usb-keys-the-hardware-way)
+		* [Attacking encrypted USB keys the hard(ware) way - Jean-Michel Picod, R√©mi Audebert, Elie Bursztein -BHUSA 17](https://elie.net/talk/attacking-encrypted-usb-keys-the-hardware-way)
 			* In this talk, we will present our methodology to assess "secure" USB devices both from the software and the hardware perspectives. We will demonstrate how this methodology works in practice via a set of case-studies. We will demonstrate some of the practical attacks we found during our audit so you will learn what type of vulnerability to look for and how to exploit them. Armed with this knowledge and our tools, you will be able to evaluate the security of the USB device of your choice.
+		* [Here's a List of 29 Different Types of USB Attacks - BleepingComputer](https://www.bleepingcomputer.com/news/security/heres-a-list-of-29-different-types-of-usb-attacks/)
 	* **Understanding**
 		* [USB Device Drivers: A Stepping Stone into your Kernel](https://www.youtube.com/watch?v=HQWFHskIY2)
 			* [Slides])(www.jodeit.org/research/DeepSec2009_USB_Device_Drivers.pdf)
 * **Educational/Informative**
 	* [USBProxy](https://github.com/dominicgs/USBProxy)
 		* A USB man in the middle device using USB On-The-Go, libUSB and gadgetFS 
-	* [Attacks via physical access to USB (DMAÖ?)](https://security.stackexchange.com/questions/118854/attacks-via-physical-access-to-usb-dma)
+	* [Attacks via physical access to USB (DMA‚Ä¶?)](https://security.stackexchange.com/questions/118854/attacks-via-physical-access-to-usb-dma)
 	* [Can a connected USB device read all data from the USB bus?](https://security.stackexchange.com/questions/37927/can-a-connected-usb-device-read-all-data-from-the-usb-bus?rq=1)
 * **Tools**
 	* [WHID Injector: an USB-Rubberducky/BadUSB on Steroids](https://whid-injector.blogspot.lt/2017/04/whid-injector-how-to-bring-hid-attacks.html)
@@ -423,7 +411,7 @@ See 'Printers' Section in Network Attacks & Scanning
 
 
 ---------------------------
-### SIM Cards
+### SIM Cards <a name="sim"></a>
 * **101**
 * **Articles/Papers/Talks/Writeups**
 	* [Rooting SIM cards](https://www.youtube.com/watch?v=BR0yWjQYnhQ)
@@ -445,6 +433,8 @@ See 'Printers' Section in Network Attacks & Scanning
 	* [How can I do that? Intro to hardware hacking with an RFID badge reader - Kevin Bong](http://www.irongeek.com/i.php?page=videos/derbycon3/3303-how-can-i-do-that-intro-to-hardware-hacking-with-an-rfid-badge-reader-kevin-bong)
 	* [An analysis of the vulnerabilities introduced with Java Card 3 Connected Edition](http://www.ma.rhul.ac.uk/static/techrep/2013/MA-2013-04.pdf)
 	* [Outsmarting smartcards](http://gerhard.dekoninggans.nl/documents/publications/dekoninggans.phd.thesis.pdf)
+	* [Deconstructing a secure processor - Christopher Tarnovsky](https://www.youtube.com/watch?v=w7PT0nrK2BE)
+		* From start to finish, we will walk through how a current generation smartcard was successfully compromised. The talk will discuss everything that was required in the order the events took place. We will cram several months into an hour! PS- The talk will be very technical mixed hardware and software (60% hardware, 40% software).
 * **Tools**
 * **Miscellaneous**
 * **Chameleon Mini**
@@ -468,7 +458,7 @@ See 'Printers' Section in Network Attacks & Scanning
 ### Specific Attacks
 * [Introduction to Trusted Execution  Environments - Steven J. Murdoch](https://www.cl.cam.ac.uk/~sjm217/talks/rhul14tee.pdf)
 * **Fault Attacks**
-	* [The Sorcererís Apprentice Guide to Fault Attacks](https://eprint.iacr.org/2004/100.pdf)
+	* [The Sorcerer‚Äôs Apprentice Guide to Fault Attacks](https://eprint.iacr.org/2004/100.pdf)
 		* The effect of faults on electronic systems has been studied since the 1970s when it was noticed that radioactive particles caused errors in chips. This led to further research on the effect of charged particles on silicon, motivated by the aerospace industry who was becoming concerned about the effect of faults in airborne electronic systems. Since then various mechanisms for fault creation and propagation have been discovered and researched. This paper covers the various methods that can be used to induce faults in semiconductors and exploit such errors maliciously. Several examples of attacks stemming from the exploiting of faults are explained. Finally a series of countermeasures to thwart these attacks are described.
 * **Glitch Attacks**
 	* [Introduction to Glitch Attacks](https://wiki.newae.com/Tutorial_A2_Introduction_to_Glitch_Attacks_(including_Glitch_Explorer))

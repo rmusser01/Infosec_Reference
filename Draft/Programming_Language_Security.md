@@ -165,6 +165,7 @@
 	* [cgasm](https://github.com/bnagy/cgasm)
 		* cgasm is a standalone, offline terminal-based tool with no dependencies that gives me x86 assembly documentation. It is pronounced "SeekAzzem".
 	* [x86 Assembly Crash Course](https://www.youtube.com/watch?v=75gBFiFtAb8)
+	* [Intro to x86 Assembly Language - DavyBot(Youtube Video Playlist)](https://www.youtube.com/watch?v=wLXIWKUWpSs&list=PLmxT2pVYo5LB5EzTPZGfFN0c2GDiSXgQe)
 	* [Learning assembly for linux-x64](https://github.com/0xAX/asm)
 	* [Introduction to writing x86 assembly code in Visual Studio](http://lallouslab.net/2014/07/03/introduction-to-writing-x86-assembly-code-in-visual-studio/)
 	* [Introduction to writing x64 assembly in Visual Studio](http://lallouslab.net/2016/01/11/introduction-to-writing-x64-assembly-in-visual-studio/)
@@ -491,6 +492,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 * [Ruby Homepage](https://www.ruby-lang.org/en/)
 * [Official Ruby Docs](https://ruby-doc.org/)
 * [Ruby Gems](https://rubygems.org/)
+* [How Do Ruby/Rails Developers Keep Updated on Security Alerts?(2015) - gavinmiller.io](http://gavinmiller.io/2015/staying-up-to-date-with-security-alerts/)
 * **Rails**
 	* [Ruby on Rails](http://rubyonrails.org/)
 	* [rails-security-checklist](https://github.com/eliotsykes/rails-security-checklist)

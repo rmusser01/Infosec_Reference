@@ -3,43 +3,46 @@
 
 
 ## Table of Contents
+- [Genera](#general)
+	* [101](#101)
+	* [Books](#books)
+	* [Bug Hunting in Source Code](#bughunt)
+	* [Educational/Informative](#edu)
+	* [History](#history)
+	* [General](#general2)
+	* [Presentations/Talks](#pres)
+	* [Training](#train)
+- [Fuzzing Stuff & Hunting Bugs](#fuzzhunt)
+	* [Dynamic Fuzzing](#dynamic)
+	* [Static Fuzzing](#static)
+	* [Android Bug Hunting/Fuzzing](#android)
+	* [Browser Bug Hunting/Fuzzing](#browser)
+	* [C/C++ Fuzzing](#c)
+	* [Cellular Related Technologies Bug Hunting/Fuzzing](#cell)
+	* [Cisco](#cisco)
+	* [COM Fuzzing](#com)
+	* [Embedded Devices](#embedded)
+	* [File Formats Bug Hunting/Fuzzing](#file)
+	* [Network Protocol Bug Hunting/Fuzzing](#network)
+	* [Fuzzing Linux](#linux)
+	* [Medical Devices](#medical)
+	* [OS X Bug Hunting/Fuzzing](#osx)
+	* [PDF](#pdf)
+	* [RTP](#rtp)
+	* [Source Fuzzing/Bug Hunting](#source)
+	* [USB Bug Hunting/Fuzzing](#usb)
+	* [Virtual Appliance Bug Hunting/Fuzzing](#virtual)
+	* [Web Application Bug Hunting/Fuzzing](#web)
+	* [Windows Fuzzing/Bug Hunting](#windows)
+- [Non Specific Fuzzing Related Tools](#nonspecific)
+	* [AFL](#afl)
+	* [Peach](#peach)
+	* [Miscellaneous/Other](#misc)
 
-* [General](#general)
-* [Videos/Presentations](#videos)
-* [Techniques](#tech)
-* [Write-ups](#writeup)
-* [Training](#training)
-* [Tools](#tools)
-* [Papers](#papers)
-* [Presentations](#presen)
-* [Books](#books)
-* [Miscellaneous](#misc)
-
-
-
-
-
-#### sort
-https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
-* Add Descriptions/generals to types of fuzzing
-* [Basic fuzzing framework](https://www.cert.org/vulnerability-analysis/tools/bff-download.cfm)
-
-* [Fuzzing 101 (Part 1)]()
-* [Fuzzing 101 (Part 2)](https://vimeo.com/5237484)
-
-* [Differential testing - Wikipedia](https://en.wikipedia.org/wiki/Differential_testing)
-	* Differential testing, also known as differential fuzzing, is a popular software testing technique that attempts to detect bugs, by providing the same input to a series of similar applications (or to different implementations of the same application), and observing differences in their execution. Differential testing complements traditional software testing, because it is well-suited to find semantic or logic bugs that do not exhibit explicit erroneous behaviors like crashes or assertion failures. Differential testing is sometimes called back-to-back testing. 
-https://github.com/taviso/dbusmap
-https://github.com/IOActive/XDiFF
-* [How to: Fuzzing open source projects with american fuzzy lop (AFL)](https://0x00rick.com/research/2018/04/20/afl_intro.html)
-* [Bug Hunting: Drilling into the Internet of Things(IoT) - DuoLabs](https://duo.com/assets/ebooks/Duo-Labs-Bug-Hunting-Drilling-Into-the-Internet-of-Things-IoT.pdf)
-
-
-#### end sort
 
 
 ------------
-### <a name="general"></a>General
+### <a name="general"></a>General<a name="general"></a>
 * **101**
 	* [15 minute guide to fuzzing](https://www.mwrinfosecurity.com/our-thinking/15-minute-guide-to-fuzzing/)
 	* [Fuzzing basics...how to break software - grid - Scott M](http://www.irongeek.com/i.php?page=videos/derbycon6/411-fuzzing-basicshow-to-break-software-grid-aka-scott-m)
@@ -87,30 +90,44 @@ https://github.com/IOActive/XDiFF
 
 
 -----------------
-### Fuzzing Stuff & Hunting Bugs
+### <a name="fuzzhunt"></a> Fuzzing Stuff & Hunting Bugs
 * **Dynamic Fuzzing**
 	* **Frameworks**
 		* [Triton](https://github.com/JonathanSalwan/Triton)
 			* Triton is a dynamic binary analysis (DBA) framework. It provides internal components like a Dynamic Symbolic Execution (DSE) engine, a Taint engine, AST representations of the x86 and the x86-64 instructions set semantics, SMT simplification passes, an SMT Solver Interface and, the last but not least, Python bindings.
 		* [XDiFF](https://github.com/IOActive/XDiFF)
 			* XDiFF is an Extended Differential Fuzzing Framework built for finding vulnerabilities in software. It collects as much data as possible from different executions an then tries to infer different potential vulnerabilities based on the different outputs obtained. The fuzzer uses Python and runs on multiple OSs (Linux, Windows, OS X, and Freebsd). Its main goal is to detect issues based on diffential fuzzing aided with the extended capabilities to increase coverage. Still, it will found common vulnerabilities based on hangs and crashes, allowing to attach a memory debugger to the fuzzing sessions.
-	* **General**
 	* **Differential Fuzzers**	
-		* [Exposing Hidden ExploitableBehaviors in ProgrammingLanguagesUsingDifferential Fuzzing - Fernando Arnaboldi](https://www.blackhat.com/docs/eu-17/materials/eu-17-Arnaboldi-Exposing-Hidden-Exploitable-Behaviors-In-Programming-Languages-Using-Differential-Fuzzing-wp.pdf)
-		* [Differential Slicing: Identifying Causal Execution Differences for Security Applications](http://bitblaze.cs.berkeley.edu/papers/diffslicing_oakland11.pdf)
-			* Abstract —A security analyst often needs to understand two runs of the same program that exhibit a difference in program state or output. This is important, for example, for vulnerability analysis, as well as for analyzing a malware program that features different behaviors when run in different environments. In this paper we propose a differential slicing approach that automates the analysis of such execution differences. Differential slicing outputs a causal difference graph that captures the input differences that triggered the observe d difference and the causal path of differences that led from thos e input differences to the observed difference. The analyst uses the graph to quickly understand the observed difference. We implement differential slicing and evaluate it on the analysis of 11 real-world vulnerabilities and 2 malware samples with environment-dependent behaviors. We also evaluate it in an informal user study with two vulnerability analysts. Our results show that differential slicing successfully identifies the input differences that caused the observed difference and that the causal difference graph significantly reduces the amount of time and effort required for an analyst to understand the observed difference
+		* **101**
+			* [Differential testing - Wikipedia](https://en.wikipedia.org/wiki/Differential_testing)
+				* Differential testing, also known as differential fuzzing, is a popular software testing technique that attempts to detect bugs, by providing the same input to a series of similar applications (or to different implementations of the same application), and observing differences in their execution. Differential testing complements traditional software testing, because it is well-suited to find semantic or logic bugs that do not exhibit explicit erroneous behaviors like crashes or assertion failures. Differential testing is sometimes called back-to-back testing.
+		* **Articles/Blogposts/Writeups**
+		* **Talks and Presentations**
+			* [Exposing Hidden ExploitableBehaviors in ProgrammingLanguagesUsingDifferential Fuzzing - Fernando Arnaboldi](https://www.blackhat.com/docs/eu-17/materials/eu-17-Arnaboldi-Exposing-Hidden-Exploitable-Behaviors-In-Programming-Languages-Using-Differential-Fuzzing-wp.pdf)
+			* [Differential Slicing: Identifying Causal Execution Differences for Security Applications](http://bitblaze.cs.berkeley.edu/papers/diffslicing_oakland11.pdf)
+				* Abstract —A security analyst often needs to understand two runs of the same program that exhibit a difference in program state or output. This is important, for example, for vulnerability analysis, as well as for analyzing a malware program that features different behaviors when run in different environments. In this paper we propose a differential slicing approach that automates the analysis of such execution differences. Differential slicing outputs a causal difference graph that captures the input differences that triggered the observe d difference and the causal path of differences that led from thos e input differences to the observed difference. The analyst uses the graph to quickly understand the observed difference. We implement differential slicing and evaluate it on the analysis of 11 real-world vulnerabilities and 2 malware samples with environment-dependent behaviors. We also evaluate it in an informal user study with two vulnerability analysts. Our results show that differential slicing successfully identifies the input differences that caused the observed difference and that the causal difference graph significantly reduces the amount of time and effort required for an analyst to understand the observed difference
+		* **Tools**
+			* [XDiFF](https://github.com/IOActive/XDiFF)
+				* XDiFF is an Extended Differential Fuzzing Framework built for finding vulnerabilities in software. It collects as much data as possible from different executions an then tries to infer different potential vulnerabilities based on the different outputs obtained.
 	* **SAT/SMT Solvers**
-		* [Quick introduction into SAT/SMT solvers and symbolic execution - Dennis Yurichev](https://yurichev.com/writings/SAT_SMT_draft-EN.pdf)
-		* [SAT_SMT_Article](https://github.com/DennisYurichev/SAT_SMT_article)
+		* **101**
+			* [Quick introduction into SAT/SMT solvers and symbolic execution - Dennis Yurichev](https://yurichev.com/writings/SAT_SMT_draft-EN.pdf)
+			* [SAT_SMT_Article](https://github.com/DennisYurichev/SAT_SMT_article)
+		* **Articles/Blogposts/Writeups**
+		* **Talks and Presentations**
 	* **Taint Analysis**
-		* [Taint analysis and pattern matching with Pin - Jonathan Salwan](http://shell-storm.org/blog/Taint-analysis-and-pattern-matching-with-Pin/)
-		* [Applying Taint Analysis and Theorem Proving to Exploit Development - Sean Heelan - RECON2010](http://static1.squarespace.com/static/507c09ede4b0954f51d59c75/t/508eb764e4b047ba54db4999/1351530340153/applying_taint_analysis_and_theorem_proving_to_xdev.pdf)
-		* [All You Ever Wanted to Know About Dynamic Taint Analysis and Forward Symbolic Execution (but might have been afraid to ask)](http://users.ece.cmu.edu/~ejschwar/papers/oakland10.pdf)
-			* Abstract —Dynamic taint analysis and forward symbolic execution are quickly becoming staple techniques in security analyses. Example applications of dynamic taint analysis and forward symbolic execution include malware analysis, input filter generation, test case generation, and vulnerability dis- covery. Despite the widespread usage of these two techniques, there has been little effort to formally define the algorithms and summarize the critical issues that arise when these techniques are used in typical security contexts. The contributions of this paper are two-fold. First, we precisely describe the algorithms for dynamic taint analysis and forward symbolic execution as extensions to the run-time se- mantics of a general language. Second, we highlight important implementation choices, common pitfalls, and considerations when using these techniques in a security context.
-		* [A Critical Review of Dynamic Taint Analysis and Forward Symbolic Execution](https://asankhaya.github.io/pdf/CriticalReviewofDynamicTaintAnalysisandForwardSymbolicExecution.pdf)
-			* In this note , we describe a critical review of the paper titled “All you wanted to know about dynamics taint analysis and forward symbolic execution (but may have been afraid to ask)” [1] . We analyze the paper using Paul Elder critical thinking framework [2] . We sta rt with a summary of the paper and motivation behind the research work described in [1]. Then we evaluate the study with respect to the universal intellectual standards of [2]. We find that the paper provides a good survey of the existing techniques and algorithms used for security analysis. It explains them using the theoretical framework of operational runtime semantics. However in some places t he paper can do a better job in highlighting what new insights or heuristics can be gained from a runtime seman tics formulation. The paper fails to convince the reader how such an intricate understanding of operational semantics of a new generic language SimpIL helps in advancing the state of the art in dynamic taint analysis and forward symbolic execution. We also found that the Paul Elder critical thinking framework is a useful technique to reason about and analyze research papers.
-		* [TAJ: Effective Taint Analysis of Web Applications - Java Webapps](http://manu.sridharan.net/files/pldi153-tripp.pdf)
-			* Taint analysis, a form of information-flow analysis, establishes whether values from untrusted methods and parameters may flow into security-sensitive operations. Taint analysis can detect many common vulnerabilities in Web applications, and so has attracted much attention from both the research community and industry. However, most static taint-analysis tools do not address criti- cal requirements for an industrial-strength tool. Specifically, an industrial-strength tool must scale to large industrial Web applica- tions, model essential Web-application code artifacts, and generate consumable reports for a wide range of attack vectors. We have designed and implemented a static Taint Analysis for Java (TAJ) that meets the requirements of industry-level applica- tions. TAJ can analyze applications of virtually any size, as it em- ploys a set of techniques designed to produce useful answers given limited time and space. TAJ addresses a wide variety of attack vec- tors, with techniques to handle reflective calls, flow through con- tainers, nested taint, and issues in generating useful reports. This paper provides a description of the algorithms comprising TAJ, evaluates TAJ against production-level benchmarks, and compares it with alternative solutions.
+		* **101**
+		* **Articles/Blogposts/Writeups**
+			* [Taint analysis and pattern matching with Pin - Jonathan Salwan](http://shell-storm.org/blog/Taint-analysis-and-pattern-matching-with-Pin/)
+		* **Talks and Presentations**
+			* [Applying Taint Analysis and Theorem Proving to Exploit Development - Sean Heelan - RECON2010](http://static1.squarespace.com/static/507c09ede4b0954f51d59c75/t/508eb764e4b047ba54db4999/1351530340153/applying_taint_analysis_and_theorem_proving_to_xdev.pdf)
+			* [All You Ever Wanted to Know About Dynamic Taint Analysis and Forward Symbolic Execution (but might have been afraid to ask)](http://users.ece.cmu.edu/~ejschwar/papers/oakland10.pdf)
+				* Abstract — Dynamic taint analysis and forward symbolic execution are quickly becoming staple techniques in security analyses. Example applications of dynamic taint analysis and forward symbolic execution include malware analysis, input filter generation, test case generation, and vulnerability dis- covery. Despite the widespread usage of these two techniques, there has been little effort to formally define the algorithms and summarize the critical issues that arise when these techniques are used in typical security contexts. The contributions of this paper are two-fold. First, we precisely describe the algorithms for dynamic taint analysis and forward symbolic execution as extensions to the run-time se- mantics of a general language. Second, we highlight important implementation choices, common pitfalls, and considerations when using these techniques in a security context.
+		* **Papers**
+			* [A Critical Review of Dynamic Taint Analysis and Forward Symbolic Execution](https://asankhaya.github.io/pdf/CriticalReviewofDynamicTaintAnalysisandForwardSymbolicExecution.pdf)
+				* In this note , we describe a critical review of the paper titled “All you wanted to know about dynamics taint analysis and forward symbolic execution (but may have been afraid to ask)” [1] . We analyze the paper using Paul Elder critical thinking framework [2] . We sta rt with a summary of the paper and motivation behind the research work described in [1]. Then we evaluate the study with respect to the universal intellectual standards of [2]. We find that the paper provides a good survey of the existing techniques and algorithms used for security analysis. It explains them using the theoretical framework of operational runtime semantics. However in some places t he paper can do a better job in highlighting what new insights or heuristics can be gained from a runtime seman tics formulation. The paper fails to convince the reader how such an intricate understanding of operational semantics of a new generic language SimpIL helps in advancing the state of the art in dynamic taint analysis and forward symbolic execution. We also found that the Paul Elder critical thinking framework is a useful technique to reason about and analyze research papers.
+			* [TAJ: Effective Taint Analysis of Web Applications - Java Webapps](http://manu.sridharan.net/files/pldi153-tripp.pdf)
+				* Taint analysis, a form of information-flow analysis, establishes whether values from untrusted methods and parameters may flow into security-sensitive operations. Taint analysis can detect many common vulnerabilities in Web applications, and so has attracted much attention from both the research community and industry. However, most static taint-analysis tools do not address criti- cal requirements for an industrial-strength tool. Specifically, an industrial-strength tool must scale to large industrial Web applica- tions, model essential Web-application code artifacts, and generate consumable reports for a wide range of attack vectors. We have designed and implemented a static Taint Analysis for Java (TAJ) that meets the requirements of industry-level applica- tions. TAJ can analyze applications of virtually any size, as it em- ploys a set of techniques designed to produce useful answers given limited time and space. TAJ addresses a wide variety of attack vec- tors, with techniques to handle reflective calls, flow through con- tainers, nested taint, and issues in generating useful reports. This paper provides a description of the algorithms comprising TAJ, evaluates TAJ against production-level benchmarks, and compares it with alternative solutions.
 	* **Tools**
 		* [usercorn](https://github.com/lunixbochs/usercorn)
 			* dynamic binary analysis via platform emulation 
@@ -118,10 +135,11 @@ https://github.com/IOActive/XDiFF
 		* [Fuzzing TCP servers - Robert Swiecki](http://blog.swiecki.net/2018/01/fuzzing-tcp-servers.html)
 		* [From Fuzzing to 0day.](http://blog.techorganic.com/2014/05/14/from-fuzzing-to-0-day/)
 * **Static Fuzzing**
+	* **101**
+	* **Articles/Blogposts/Writeups**
 	* **Frameworks**
 		* [Paper Machete](https://github.com/cetfor/PaperMachete/wiki)
 			* Paper Machete (PM) orchestrates Binary Ninja and GRAKN.AI to perform static analysis on binary targets with the goal of finding exploitable vulnerabilities. PM leverages the Binary Ninja MLIL SSA to extract semantic meaning about individual instructions, operations, register/variable state, and overall control flow. This data is then migrated into GRAKN.AI, a hyper-relational database. We then run queries against the database that are designed to look for indications of common software vulnerability classes.
-	* **General**
 	* **Tools**
 	* **Talks/Writeups**
 		* [Aiding Static Analysis: Discovering Vulnerabilities in Binary Targets through Knowledge Graph Inferences - John Toterhi - Derbycon7](https://www.irongeek.com/i.php?page=videos/derbycon7/t116-aiding-static-analysis-discovering-vulnerabilities-in-binary-targets-through-knowledge-graph-inferences-john-toterhi)
@@ -163,16 +181,20 @@ https://github.com/IOActive/XDiFF
 	* [COMRaider](http://sandsprite.com/iDef/COMRaider/)
 		* ActiveX Fuzzing tool with GUI, object browser, system scanner, and distributed auditing capabilities
 		* [Github](https://github.com/dzzie/COMRaider)
+* **Embedded Devices Fuzzing/Bug Hunting**
+	* [Bug Hunting: Drilling into the Internet of Things(IoT) - DuoLabs](https://duo.com/assets/ebooks/Duo-Labs-Bug-Hunting-Drilling-Into-the-Internet-of-Things-IoT.pdf)
 * **File Formats Bug Hunting/Fuzzing**
 	* [Practical File Format Fuzzing](http://www.irongeek.com/i.php?page=videos/derbycon3/3301-practical-file-format-fuzzing-jared-allar)
 		* File format fuzzing has been very fruitful at discovering exploitable vulnerabilities. Adversaries take advantage of these vulnerabilities to conduct spear-phishing attacks. This talk will cover the basics of file format fuzzing and show you how to use CERT’s fuzzing frameworks to discovery vulnerabilities in file parsers.
 	* [File Format Fuzzing in Android](https://deepsec.net/docs/Slides/2015/File_Format_Fuzzing_in_Android_-Alexandru_Blanda.pdf)
 	* [Funky File Formats - Advanced Binary Exploitation](http://media.ccc.de/browse/congress/2014/31c3_-_5930_-_en_-_saal_6_-_201412291400_-_funky_file_formats_-_ange_albertini.html#video)
-* **Network Protocols Bug Hunting/Fuzzing**
+* **Network Protocols Bug Hunting/Fuzzing** <a name="network"></a>
 	* **Articles/Writeups**
 		* [Fuzzing proprietary protocols with Scapy, radamsa and a handful of PCAPs](https://blog.blazeinfosec.com/fuzzing-proprietary-protocols-with-scapy-radamsa-and-a-handful-of-pcaps/)
 		* [Introduction to Custom Protocol Fuzzing](https://www.youtube.com/watch?v=ieatSJ7ViBw)
 	* **Tools**
+		* [boofuzz](https://github.com/jtpereyda/boofuzz)
+			* Boofuzz is a fork of and the successor to the venerable Sulley fuzzing framework. Besides numerous bug fixes, boofuzz aims for extensibility. The goal: fuzz everything.
 		* [rage_fuzzer](https://github.com/deanjerkovich/rage_fuzzer)
 			* A dumb protocol-unaware packet fuzzer/replayer.
 		* [Nightmare](https://github.com/joxeankoret/nightmare)
@@ -202,6 +224,11 @@ https://github.com/IOActive/XDiFF
 	* **Articles/Talks/Writeups**
 		* [Improving security with Fuzzing and Sanitizers](https://media.ccc.de/v/SHA2017-148-improving_security_with_fuzzing_and_sanitizers)
 			* A bug in Gstreamer could be used to own a Linux Desktop system. TCPDump released a security update fixing 42 CVEs. We have far too many security critical bugs in the free and open source software stack. But we have powerful tools to find them - we just have to use them.
+		* [GitHub for Bug Bounty Hunters](https://gist.github.com/EdOverflow/922549f610b258f459b219a32f92d10b)
+		* [Secure Code Review - OpenSecurityTraining.info](http://opensecuritytraining.info/SecureCodeReview.html)
+		* [High-Level Approaches for Finding Vulnerabilities](http://jackson.thuraisamy.me/finding-vulnerabilities.html)
+		* [Vulnerabilities 101 : How to Launch or Improve Your  Vulnerability Research Game - Joshua Drake, Steve Christey Coley](https://media.defcon.org/DEF%20CON%2024/DEF%20CON%2024%20presentations/DEFCON-24-Drake-Christey-Vulnerabilities-101-UPDATED.pdf)
+		* [Bug Hunting with Static Code  Analysis - Nick Jones](https://labs.mwrinfosecurity.com/assets/BlogFiles/mwri-bug-hunting-with-static-code-analysis-bsides-2016.pdf)
 	* **Tools**
 		* [Google - AddressSanitizer, ThreadSanitizer, MemorySanitizer, LeaksSanitizer](https://github.com/google/sanitizers)
 			* This project is the home for Sanitizers: AddressSanitizer, MemorySanitizer, ThreadSanitizer, LeakSanitizer. The actual code resides in the LLVM repository. Here we keep extended documentation, bugs and some helper code.
@@ -215,8 +242,9 @@ https://github.com/IOActive/XDiFF
 		* Virtual Appliances have become very prevalent these days as virtualization is ubiquitous and hypervisors commonplace. More and more of the major vendors are providing literally virtual clones for many of their once physical-only products. Like IoT and the CAN bus, it's early in the game and vendors are late as usual. One thing that it catching these vendors off guard is the huge additional attack surface, ripe with vulnerabilities, added in the process. Also, many vendors see software appliances as an opportunity for the customer to easily evaluate the product before buying the physical one, making these editions more accessible and debuggable by utilizing features of the platform on which it runs. During this talk, I will provide real case studies for various vulnerabilities created by mistakes that many of the major players made when shipping their appliances. You'll learn how to find these bugs yourself and how the vendors went about fixing them, if at all. By the end of this talk, you should have a firm grasp of how one goes about getting remotes on these appliances.
 * **Web Application Bug Hunting/Fuzzing**
 	* [Advice From A Researcher: Hunting XXE For Fun and Profit](https://blog.bugcrowd.com/advice-from-a-researcher-xxe/)
+	* See web section.
 * **Windows Fuzzing/Bug Hunting**
-	* **f** 
+	* **F** 
 	* **Tools**
 		* [WinAFL](https://github.com/ivanfratric/winafl) - A fork of AFL for fuzzing Windows binaries 
 		* [!exploitable Crash Analyzer](https://msecdbg.codeplex.com/)
@@ -251,6 +279,7 @@ https://github.com/IOActive/XDiFF
 	* **Articles/Writeups/Talks**
 		* [How to fuzz a server with American Fuzzy Lop](https://www.fastly.com/blog/how-fuzz-server-american-fuzzy-lop)
 		* [Fuzz Smarter, Not Harder (An Afl-Fuzz Primer) BSides-SF 2016](http://www.securitytube.net/video/15372)
+		* [How to: Fuzzing open source projects with american fuzzy lop (AFL)](https://0x00rick.com/research/2018/04/20/afl_intro.html)
 	* **Associated Tools**
 		* [crashwalk](https://github.com/bnagy/crashwalk)
 			* Bucket and triage on-disk crashes. OSX and Linux.(automated triaging of AFL-based crashes)
@@ -286,3 +315,9 @@ https://github.com/IOActive/XDiFF
 	* [libFuzzer-gv: new techniques for dramatically faster fuzzing](https://guidovranken.wordpress.com/2017/07/08/libfuzzer-gv-new-techniques-for-dramatically-faster-fuzzing/)
 	* [FuzzManager](https://github.com/MozillaSecurity/FuzzManager)
 		* With this project, we aim to create a management toolchain for fuzzing. Unlike other toolchains and frameworks, we want to be modular in such a way that you can use those parts of FuzzManager that seem interesting to you without forcing a process upon you that does not fit your requirements.
+
+
+
+### Sorting
+* [dbusmap](https://github.com/taviso/dbusmap)
+	* This is a simple utility for enumerating D-Bus endpoints, an nmap for D-Bus.

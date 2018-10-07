@@ -32,7 +32,10 @@
 		* [Rowhammer.js: A Remote Software-Induced Fault Attack in JavaScript](https://link.springer.com/chapter/10.1007/978-3-319-40667-1_15)
 		* [Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors](https://www.ece.cmu.edu/~safari/pubs/kim-isca14.pdf)
 			* Abstract. Memory isolation is a key property of a reliable and secure computing system — an access to one memory ad- dress should not have unintended side e ects on data stored in other addresses. However, as DRAM process technology scales down to smaller dimensions, it becomes more diffcult to prevent DRAM cells from electrically interacting with each other. In this paper, we expose the vulnerability of commodity DRAM chips to disturbance errors. By reading from the same address in DRAM, we show that it is possible to corrupt data in nearby addresses. More specifically, activating the same row in DRAM corrupts data in nearby rows. We demonstrate this phenomenon on Intel and AMD systems using a malicious program that generates many DRAM accesses. We induce errors in most DRAM modules (110 out of 129) from three major DRAM manufacturers. From this we conclude that many deployed systems are likely to be at risk. We identify the root cause of disturbance errors as the repeated toggling of a DRAM row’s wordline, which stresses inter-cell coupling e ects that accelerate charge leakage from nearby rows. We provide an extensive characterization study of disturbance errors and their behavior using an FPGA-based testing plat- form. Among our key findings, we show that (i) it takes as few as 139K accesses to induce an error and (ii) up to one in every 1.7K cells is susceptible to errors. After examining var- ious potential ways of addressing the problem, we propose a low-overhead solution to prevent the errors.
+* [CPU security bugs caused by speculative execution](https://github.com/marcan/speculation-bugs)
+	* This repo is an attempt to collect information on the class of information disclosure vulnerabilities caused by CPU speculative execution that were disclosed on January 3rd, 2018.
 
+	
 #### End Sort
 
 -----------------
@@ -60,6 +63,8 @@
 	* [Security Evaluation of Intel's Active Management Technology](http://people.kth.se/~maguire/DEGREE-PROJECT-REPORTS/100402-Vassilios_Ververis-with-cover.pdf)
 	* [Security Evaluation of Intel's Active Management Technology](http://people.kth.se/~maguire/DEGREE-PROJECT-REPORTS/100402-Vassilios_Ververis-with-cover.pdf)
 	* [Disabling Intel ME 11 via undocumented mode - ptsecurity](http://blog.ptsecurity.com/2017/08/disabling-intel-me.html)
+	* [Reverse Engineering Intels Management Engine](http://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf) 
+		* On every intel chip core2duo and newer
 * **Papers**
 * **General**
 	* [Intel Q3’17 ME 11.x, SPS 4.0, and TXE 3.0 Security Review Cumulative Update](https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00086&languageid=en-fr)
@@ -86,6 +91,8 @@
 		* Through this analysis paper we’ll give a look at Windows 8 (and 8.1) UEFI startup mechanisms and we’ll try to understand their relationship with the underlying hardware platform.
 	* [Understanding AMT, UEFI BIOS and Secure boot relationships](https://communities.intel.com/community/itpeernetwork/vproexpert/blog/2013/08/11/understanding-amt-uefi-bios-and-secure-boot-relationships)
 	* [Easily create UEFI applications using Visual Studio 2013](http://pete.akeo.ie/2015/01/easily-create-uefi-applications-using.html)
+	* [The Empire Strikes Back Apple – how your Mac firmware security is completely broken](https://reverse.put.as/2015/05/29/the-empire-strikes-back-apple-how-your-mac-firmware-security-is-completely-broken/)
+		* Writeup on compromise of UEFI on apple hardware.
 * **Papers**
 	* [LEGBACORE Research/Publications](http://www.legbacore.com/Research.html)
 * **General**

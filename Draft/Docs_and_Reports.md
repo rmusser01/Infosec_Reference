@@ -125,6 +125,8 @@
 			* An open-source screen recorder built with web technology
 	* [CrScreenshotDxe](https://github.com/NikolajSchlej/CrScreenshotDxe)
 		* UEFI DXE driver to take screenshots from GOP-compatible graphic console
+	* [ScreenToGif](https://github.com/NickeManarin/ScreenToGif)
+		* ScreenToGif allows you to record a selected area of your screen, edit and save it as a gif or video
 * **Sample/Template Documents**
 	* [Pentest/Red Team Offering Documents - mubix](https://drive.google.com/drive/folders/0ByiDshWJ_PnZdnJZQ0h3MWZyRUk)
 

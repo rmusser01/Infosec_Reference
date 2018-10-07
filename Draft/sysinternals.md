@@ -19,33 +19,18 @@
 * Further categorize sections (network vs memory vs exploit mitigations vs feature)
 
 
-#### Sort
-* [Linux Kernel Map](http://www.makelinux.net/kernel_map/)
-	* Interactive map of the Linux Kernel
-* [Everything You Never Wanted To Know About DLLs](http://blog.omega-prime.co.uk/2011/07/04/everything-you-never-wanted-to-know-about-dlls/)
 
-* [Windows Data Protection - msdn.ms](https://msdn.microsoft.com/en-us/library/ms995355.aspx)
-* [Elevate through ShellExecute - msdn](https://blogs.msdn.microsoft.com/vistacompatteam/2006/09/25/elevate-through-shellexecute/)
-* [Waitfor - tehcnet](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11).aspx?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&iid=22f4306f9238443891cea105281cfd3f&uid=150127534&nid=244+289476616)
-[](http://archive.msdn.microsoft.com/ShellRevealed/Release/ProjectReleases.aspx?ReleaseId=2871)
-* [[MS-SAMR]: Security Account Manager (SAM) Remote Protocol (Client-to-Server)](https://msdn.microsoft.com/en-us/library/cc245476.aspx)
-	* Specifies the Security Account Manager (SAM) Remote Protocol (Client-to-Server), which supports printing and spooling operations that are synchronous between client and server.
 
-* [BCDEdit /dbgsettings - msdn](https://msdn.microsoft.com/en-us/library/windows/hardware/ff542187(v=vs.85).aspx)
-	* [AppInit_DLLs in Windows 7 and Windows Server 2008 R2](https://msdn.microsoft.com/en-us/library/windows/desktop/dd744762(v=vs.85).aspx)
-	* [Windows Data Protection](https://msdn.microsoft.com/en-us/library/ms995355.aspx)
-	* [Application Compatibility in Windows](https://technet.microsoft.com/en-us/windows/jj863248)
-	* [Hard Links and Junctions - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365006(v=vs.85).aspx)
-	* [Security Configuration Wizard](https://technet.microsoft.com/en-us/library/cc754997(v=ws.11).aspx)
-		* The Security Configuration Wizard (SCW) guides you through the process of creating, editing, applying, or rolling back a security policy. A security policy that you create with SCW is an .xml file that, when applied, configures services, network security, specific registry values, and audit policy. SCW is a role-based tool: you can use it to create a policy that enables services, firewall rules, and settings that are required for a selected server to perform specific roles, such as a file server, a print server, or a domain controller.
-* [Windows 8 Security and ARM](http://2012.ruxconbreakpoint.com/assets/Uploads/bpx/alex-breakpoint2012.pdf)
-* [Securing Privileged Access](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access)
-* [Netlogon - technet.ms](https://technet.microsoft.com/fr-fr/library/cc962284.aspx)
-* [What is Digest Authentication? - technet.ms](https://technet.microsoft.com/en-us/library/cc778868%28v=ws.10%29.aspx)
 
-* [Windows IT professional documentation](https://github.com/MicrosoftDocs/windows-itpro-docs)
 
-#### End Sort
+
+
+
+
+
+
+
+
 
 
 ---------------------
@@ -64,6 +49,7 @@
 ## <a name="winref">Windows Reference</a>
 
 ### <a name="Winternals">Windows Internals</a>
+* [Windows IT professional documentation](https://github.com/MicrosoftDocs/windows-itpro-docs)
 * **Windows Internals**
 	* [theForger's Win32 API Programming Tutorial](http://www.winprog.org/tutorial/)
 	* [x86 Disassembly/Windows Executable Files - WikiBooks](https://en.wikibooks.org/wiki/X86_Disassembly/Windows_Executable_Files)
@@ -75,6 +61,11 @@
 	* [BATTLE OF SKM AND IUM - How Windows 10 rewrites OS Architecture - Alex Ionescu](http://www.alex-ionescu.com/blackhat2015.pdf)
 	* [RtlEncryptMemory function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa387693(v=vs.85).aspx)
 	* [RtlDecryptMemory function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa387692(v=vs.85).aspx)
+* **Unsorted**
+	* [Waitfor - technet.ms](https://technet.microsoft.com/en-us/library/cc731613(v=ws.11).aspx?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&iid=22f4306f9238443891cea105281cfd3f&uid=150127534&nid=244+289476616)
+	* [Windows Data Protection - msdn.ms](https://msdn.microsoft.com/en-us/library/ms995355.aspx)
+	* [Elevate through ShellExecute - msdn](https://blogs.msdn.microsoft.com/vistacompatteam/2006/09/25/elevate-through-shellexecute/)
+	* [Securing Privileged Access](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access)
 * **Access Control**
 	* [Mandatory Integrity Control](https://msdn.microsoft.com/en-gb/library/windows/desktop/bb648648(v=vs.85).aspx)
 	* [Windows Access Control Demystified](http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=E1A09F166B29C17D2CD38C70A02576E4?doi=10.1.1.88.1930&rep=rep1&type=pdf)
@@ -93,6 +84,9 @@
 	* [NTFS Alternate Data Streams - winitor](https://www.winitor.com/pdf/NtfsAlternateDataStreams.pdf)
 * **Anti-Malware Scan Interface**
 	* [Antimalware Scan Interface Reference](https://msdn.microsoft.com/en-us/library/windows/desktop/dn889588(v=vs.85).aspx)
+* **API**
+	* [Windows API Index](https://docs.microsoft.com/en-us/windows/desktop/apiindex/windows-api-list)
+		* The following is a list of the reference content for the Windows application programming interface (API) for desktop and server applications.
 * **App Containers**
 	* [Demystifying AppContainers in Windows 8 (Part I)](https://blog.nextxpert.com/2013/01/31/demystifying-appcontainers-in-windows-8-part-i/)
 	* [AppContainer Isolation](https://msdn.microsoft.com/en-us/library/windows/desktop/mt595898(v=vs.85).aspx)
@@ -122,6 +116,10 @@
 		* If you’re starting to work on a Credential Provider (CredProv or CP, for short) for Windows Vista, Windows Server 2008, Windows Server 2008 R2 or Windows 7, there are a few steps I would strongly recommend you take, because it will make life easier for you.
 * **Device Guard**
 	* [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control - docs.ms](https://docs.microsoft.com/en-us/windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
+* **Digest Authentication**
+	* [What is Digest Authentication? - technet.ms](https://technet.microsoft.com/en-us/library/cc778868%28v=ws.10%29.aspx)
+* **DLLs**
+	* [Everything You Never Wanted To Know About DLLs](http://blog.omega-prime.co.uk/2011/07/04/everything-you-never-wanted-to-know-about-dlls/)
 * **Dynamic Data Exchange**
 	* [Dynamic Data Exchange - msdn.ms](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648711(v=vs.85).aspx)
 		* This section provides guidelines for implementing dynamic data exchange for applications that cannot use the Dynamic Data Exchange Management Library (DDEML).
@@ -168,12 +166,15 @@
 	* ReadFile function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365467(v=vs.85).aspx)
 	* [WriteFile function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365747(v=vs.85).aspx)
 	* [How to create an anonymous pipe that gives access to everyone](https://support.microsoft.com/en-us/help/813414/how-to-create-an-anonymous-pipe-that-gives-access-to-everyone)
+* **Netlogon**
+	* [Netlogon - technet.ms](https://technet.microsoft.com/fr-fr/library/cc962284.aspx)
 * **Networking**
 	* [WinHTTP](https://msdn.microsoft.com/en-us/library/windows/desktop/aa382925%28v=vs.85%29.aspx)
 	* [WinINet](https://msdn.microsoft.com/en-us/library/windows/desktop/aa383630%28v=vs.85%29.aspx)
 	* [WinINet vs WinHTTP](https://msdn.microsoft.com/en-us/library/windows/desktop/hh227298%28v=vs.85%29.aspx)
 * **NTLM**
 	* [Microsoft NTLM - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749%28v=vs.85%29.aspx)
+	* [The NTLM Authentication Protocol and Security Support Provider - davenport.sourceforge.net](http://davenport.sourceforge.net/ntlm.html)
 * **PE File Structure**
 	* [PEB Structure 32/64 pdf](http://blog.rewolf.pl/blog/wp-content/uploads/2013/03/PEB_Evolution.pdf)
 	* [PE File Format Graphs](http://blog.dkbza.org/2012/08/pe-file-format-graphs.html?view=mosaic)
@@ -183,6 +184,9 @@
 * **Powershell**
 	* [Understanding the Windows PowerShell Pipeline - docs.ms](https://docs.microsoft.com/en-us/powershell/scripting/getting-started/fundamental/understanding-the-windows-powershell-pipeline?view=powershell-5.1)
 	* [PowerShell Language Modes - docs.ms](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_language_modes?view=powershell-5.1)
+* **Printing**
+	* [[MS-SAMR]: Security Account Manager (SAM) Remote Protocol (Client-to-Server)](https://msdn.microsoft.com/en-us/library/cc245476.aspx)
+		* Specifies the Security Account Manager (SAM) Remote Protocol (Client-to-Server), which supports printing and spooling operations that are synchronous between client and server.
 * **Processes/Threads**
 	* [About Processes and Threads](https://msdn.microsoft.com/en-us/library/windows/desktop/ms681917%28v=vs.85%29.aspx)
 	* [TechNet Library: About Processes and Threads](https://msdn.microsoft.com/en-us/library/windows/desktop/ms681917%28v=vs.85%29.aspx)
@@ -234,6 +238,8 @@
 	* [How Do Windows NT System Calls REALLY Work?](http://www.codeguru.com/cpp/w-p/system/devicedriverdevelopment/article.php/c8035/How-Do-Windows-NT-System-Calls-REALLY-Work.htm)
 	* [Debugging Functions - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/ms679303.aspx)
 	* [Intercepting System Calls on x86_64 Windows](http://jbremer.org/intercepting-system-calls-on-x86_64-windows/)
+* **UAC**
+	* [Protecting Windows Networks – UAC - dfirblog.wordpress.com](https://dfirblog.wordpress.com/2015/10/24/protecting-windows-networks-uac/) 
 * **Windows Filtering Platform**
 	* [Windows Filtering Platform: Persistent state under the hood](http://blog.quarkslab.com/windows-filtering-platform-persistent-state-under-the-hood.html)
 * **Windows Communication Foundation**
@@ -302,6 +308,8 @@
 	* [Kernel booting process](https://github.com/0xAX/linux-insides/tree/master/Booting)
 		* This chapter describes linux kernel booting process.
 	* [How the Kernel manages Memory - Linux](http://duartes.org/gustavo/blog/post/how-the-kernel-manages-your-memory/)
+	* [Linux Kernel Map](http://www.makelinux.net/kernel_map/)
+		* Interactive map of the Linux Kernel
 * **Memory**
 	* [Understanding glibc malloc](https://sploitfun.wordpress.com/2015/02/10/understanding-glibc-malloc/)
 	* [Memory Management: Paging](https://www.cs.rutgers.edu/~pxk/416/notes/09a-paging.html)
@@ -362,3 +370,16 @@
 * [Emojipedia](https://emojipedia.org/)
 	* Emoji Meanings
 
+
+
+
+#### To be Sorted
+
+* [Windows 8 Security and ARM](http://2012.ruxconbreakpoint.com/assets/Uploads/bpx/alex-breakpoint2012.pdf)
+* [BCDEdit /dbgsettings - msdn](https://msdn.microsoft.com/en-us/library/windows/hardware/ff542187(v=vs.85).aspx)
+	* [AppInit_DLLs in Windows 7 and Windows Server 2008 R2](https://msdn.microsoft.com/en-us/library/windows/desktop/dd744762(v=vs.85).aspx)
+	* [Windows Data Protection](https://msdn.microsoft.com/en-us/library/ms995355.aspx)
+	* [Application Compatibility in Windows](https://technet.microsoft.com/en-us/windows/jj863248)
+	* [Hard Links and Junctions - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365006(v=vs.85).aspx)
+	* [Security Configuration Wizard](https://technet.microsoft.com/en-us/library/cc754997(v=ws.11).aspx)
+		* The Security Configuration Wizard (SCW) guides you through the process of creating, editing, applying, or rolling back a security policy. A security policy that you create with SCW is an .xml file that, when applied, configures services, network security, specific registry values, and audit policy. SCW is a role-based tool: you can use it to create a policy that enables services, firewall rules, and settings that are required for a selected server to perform specific roles, such as a file server, a print server, or a domain controller.

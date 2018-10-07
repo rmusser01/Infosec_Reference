@@ -10,6 +10,9 @@
 		* a command line client for explainshell.com
 * **Communication**
 	* [Tips for Troubleshooting Human Communications](https://zeltser.com/human-communications-cheat-sheet/)
+* **ARM**
+	* [ARMwiki - hehyrick.co.uk](https://www.heyrick.co.uk/armwiki/Category:Introduction)
+		* ARM processor wiki
 * **ASM Cheat Sheets**
 	* [x86 opcode structure and instruction overview](http://pnx.tf/files/x86_opcode_structure_and_instruction_overview.pdf)
 	* [Intro to x86 calling conventions](http://codearcana.com/posts/2013/05/21/a-brief-introduction-to-x86-calling-conventions.html)
@@ -85,6 +88,7 @@
 * **Windows Cheat Sheets**<a name="windows"></a>
 	* [Windows Startup Application Database](http://www.pacs-portal.co.uk/startup_content.php)
 	* [Windows CMD Reference - ms](https://www.microsoft.com/en-us/download/details.aspx?id=56846)
+	* [Windows Command Line cheatsheet (part 2): WMIC - andreafortuna](https://www.andreafortuna.org/dfir/windows-command-line-cheatsheet-part-2-wmic/)
 * **Wireless Cheat Sheets**<a name="wifi"></a>
 	* [Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
 * **DB Cheat Sheets**<a name="db"></a>

@@ -14,22 +14,6 @@
 
 
 
-#### Sort
-
-* [Image-Cache-Logger](https://github.com/kale/image-cache-logger)
-	* A simple tool to see when other services/clients like Gmail open an image and test if they are storing it within their cache.
-* [Malicious Macro MSBuild Generator](https://github.com/infosecn1nja/MaliciousMacroMSBuild)
-	* Generates Malicious Macro and Execute Powershell or Shellcode via MSBuild Application Whitelisting Bypass.
-* [There is a shell in your lunch-box by Rotimi Akinyele](https://hakin9.org/shell-lunch-box-rotimi-akinyele/)
-* [Email Notification on shell connectback MSF Plugin](https://hansesecure.de/howto-msf-email/)
-	* [Code](https://github.com/HanseSecure/metasploit-modules)
-* **To-Do**
-	* Add more on vba
-
-#### End sort
-
-
-
 ------------------
 ### <a name="general">General</a>
 * **General**
@@ -48,6 +32,8 @@
 	* [Phishing with Empire - Enigma0x3](https://enigma0x3.net/2016/03/15/phishing-with-empire/)
 	* [Phishing for “Access” - rvrsh3ll's blog](http://www.rvrsh3ll.net/blog/phishing/phishing-for-access/)
 	* [Cross-Site Phishing](http://blog.obscuritylabs.com/merging-web-apps-and-red-teams/)
+	* [Email Notification on shell connectback MSF Plugin](https://hansesecure.de/howto-msf-email/)
+		* [Code](https://github.com/HanseSecure/metasploit-modules)
 * **Papers**
 	* [Tab Napping - Phishing](http://www.exploit-db.com/papers/13950/)
 	* [Skeleton in the closet. MS Office vulnerability you didn’t know about](https://embedi.com/blog/skeleton-closet-ms-office-vulnerability-you-didnt-know-about)
@@ -63,7 +49,7 @@
 	* [One Template To Rule 'Em All](https://labs.mwrinfosecurity.com/publications/one-template-to-rule-em-all/)
 		* This presentation discussed how Office security settings and templates can be abused to gain persistence in VDI implementations where traditional techniques relying on the file system or the Registry are not applicable. Additionally, it was described how the introduction of application control and anti-exploitation technologies may affect code execution in locked down environments and how these controls can be circumvented through the use of VBA.
 	* [Spear Phishing 101 - inspired-sec.com](https://blog.inspired-sec.com/archive/2017/05/07/Phishing.html)
-
+	* [There is a shell in your lunch-box by Rotimi Akinyele](https://hakin9.org/shell-lunch-box-rotimi-akinyele/)
 
 ----------
 ### <a name="documentation"> Documentation
@@ -249,6 +235,8 @@
 				* Standalone Powershell script that will generate a malicious Microsoft Office document with a specified payload and persistence method
 			* [Wepwnise](https://labs.mwrinfosecurity.com/tools/wepwnise/)
 				* WePWNise is a proof-of-concept python script that generates architecture independent VBA code to be used in Office documents or templates. It aims in introducing a certain level of automation and intelligence to dynamically deliver its payload, circumventing defences such as application control and anti-exploitation mitigations that may exist on a target system.
+			* [Malicious Macro MSBuild Generator](https://github.com/infosecn1nja/MaliciousMacroMSBuild)
+				* Generates Malicious Macro and Execute Powershell or Shellcode via MSBuild Application Whitelisting Bypass.
 		* **Samples**
 			* [CVE-2017-8759-Exploit-sample](https://github.com/vysec/CVE-2017-8759-Exploit-sample)
 				* Flow of the exploit: Word macro runs in the Doc1.doc file. The macro downloads a badly formatted txt file over wsdl, which triggers the WSDL parser log. Then the parsing log results in running mshta.exe which in turn runs a powershell commands that runs mspaint.exe

@@ -29,14 +29,7 @@
 	* Operating Licenses/Permits; 
 	* Trade Journals;
 
-https://start.me/p/b5Aow7/asint_collection
-https://start.me/p/ZME8nR/osint
-* [Open Source Intelligence Resources - toddington.com](https://www.toddington.com/resources/)
-* [OSINT - onstrat](http://www.onstrat.com/osint/)
 
-
-
-#### End Sort
 
 
 
@@ -49,6 +42,9 @@ https://start.me/p/ZME8nR/osint
 	* [Open Source Intelligence - Wikipedia](http://en.wikipedia.org/wiki/Open-source_intelligence)
 * **Articles/Writeups**
 	* [Hunting Pastebin with PasteHunter](https://techanarchy.net/2017/09/hunting-pastebin-with-pastehunter/)
+	* [Open Source Intelligence Gathering 101 - appseco.com](https://blog.appsecco.com/open-source-intelligence-gathering-101-d2861d4429e3)
+	* [Open Source Intelligence Gathering 201 - appseco.com](https://blog.appsecco.com/open-source-intelligence-gathering-201-covering-12-additional-techniques-b76417b5a544)
+	* [Open Source Intelligence Gathering: Techniques, Automation, and Visualization - Christopher Maddalena](https://posts.specterops.io/gathering-open-source-intelligence-bee58de48e05)
 * **Alerting**
 	* [Google Trends](https://trends.google.com/trends/)
 		* See what are the popular related topics people are searching for. This will help widen your search scope.
@@ -82,6 +78,8 @@ https://start.me/p/ZME8nR/osint
 	* [Open Source Intelligence (OSINT) Tools & Resources - osint.link](http://osint.link/)
 		* Seems pretty good.
 	* [Midasearch.org](https://midasearch.org/)
+		* [Open Source Intelligence Resources - toddington.com](https://www.toddington.com/resources/)
+		* [OSINT - onstrat](http://www.onstrat.com/osint/)
 	* **IntelTechniques OSINT Flowcharts**
 		* [Email Address](https://inteltechniques.com/data/Email.png)
 		* [Domain Name](https://inteltechniques.com/data/Domain.png)
@@ -128,6 +126,9 @@ https://start.me/p/ZME8nR/osint
 			* [gasmask](https://github.com/twelvesec/gasmask)
 				* All in one Information gathering tool - OSINT
 		* **Data Manipulation**
+			* [Danger-zone](https://github.com/woj-ciech/Danger-zone/blob/master/README.md)
+				* Correlate data between domains, ips and email addresses, present it as a graph and store everything into Elasticsearch and JSON files.
+				* [Article](https://medium.com/@woj_ciech/osint-tool-for-visualizing-relationships-between-domains-ips-and-email-addresses-94377aa1f20a)
 			* [OpenRefine](https://github.com/OpenRefine/OpenRefine)	
 				* Description: OpenRefine is a power tool that allows you to load data, understand it, clean it up, reconcile it to master database, and augment it with data coming from Freebase or other web sources. All with the comfort and privacy of your own computer.
 			* [OSRFramework](https://github.com/i3visio/osrframework)
@@ -162,6 +163,7 @@ https://start.me/p/ZME8nR/osint
 * **Country Specific Resources**
 	* **USA**
 		* [SEC EDGAR Search](https://www.sec.gov/edgar/searchedgar/webusers.htm)
+		* [US Congressional Research Service - crsreports.congress.gov](https://crsreports.congress.gov/search/#/?termsToSearch=&orderBy=Date)
 * **CVS/Git/Similar Focused** <a name="cvs"></a>
 	* [repo-supervisor](https://github.com/auth0/repo-supervisor)
 	* [GitPrey](https://github.com/repoog/GitPrey)
@@ -189,6 +191,8 @@ https://start.me/p/ZME8nR/osint
 		* Python script to scan Git repos for interesting strings
 	* [gitleaks](https://github.com/zricethezav/gitleaks)
 		*  Searches full repo history for secrets and keys
+	* [Reposcanner](https://github.com/Dionach/reposcanner)
+		* Reposcanner is a python script to search through the commit history of Git repositories looking for interesting strings such as API keys, inspired by truffleHog.
 * **DNS Stuff** <a name="dns"></a>
 	* [dauntless](https://github.com/cmeister2/dauntless)
 		* Tools for analysing the forward DNS data set published at https://scans.io/study/sonar.fdns_v2
@@ -290,6 +294,9 @@ https://start.me/p/ZME8nR/osint
 			* An OSINT tool that allows you to draw out relationships between people on LinkedIn via endorsements/skills.
 		* [ScrapedIn](https://github.com/dchrastil/ScrapedIn)
 			* this tool assists in performing reconnaissance using the LinkedIn.com website/API. Provide a search string just as you would on the original website and let ScrapedIn do all the dirty work. Output is stored as an XLSX file, however it is intended to be used with Google Spreadsheets. After importing the XLSX into Google Spreadsheets there will be a "dataset" worksheet and a "report" worksheet.
+		* [Gathering Usernames from Google LinkedIn Results Using Burp Suite Pro - BHIS](https://www.blackhillsinfosec.com/gathering-usernames-from-google-linkedin-results-using-burp-suite-pro/)
+		* [GatherContacts](https://github.com/clr2of8/GatherContacts)
+			* A Burp Suite Extension to pull Employee Names from Google and Bing LinkedIn Search Results.
 	* **Tinder**
 		* [OSINT: Advanced tinder capture](https://www.learnallthethings.net/osmosis)
 	* **Twitter**

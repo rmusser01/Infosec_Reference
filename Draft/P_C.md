@@ -5,7 +5,7 @@
 
 * [Documentation for OpenSCAP Base](https://www.open-scap.org/tools/openscap-base/#documentation)
 * [Cloud Controls Matrix Working Group](https://cloudsecurityalliance.org/group/cloud-controls-matrix/#_overview)
-
+* [Penetration Testing Shouldn't be a Waste of Time - Jim Bird](https://dzone.com/articles/penetration-testing-shouldnt)
 
 
 

@@ -4,7 +4,7 @@
 ### How to Suck at InfoSec
 * [How to Suck at Information Security – A Cheat Sheet](https://zeltser.com/suck-at-security-cheat-sheet/)
 * [How not to Infosec - Dan Tentler](https://www.youtube.com/watch?v=S5O47gemMNQ)
-
+* 
 
 
 ### General Information
@@ -16,6 +16,7 @@
 		* A collection of resources/documentation/links/etc to help people learn about Infosec and break into the field.
 	* [Salted Hash Ep 34: Red Team vs. Vulnerability Assessments - CSO Online](https://www.csoonline.com/article/3286604/security/salted-hash-ep-34-red-team-vs-vulnerability-assessments.html#tk.twt_cso)
 		* Words matter. This week on Salted Hash, we talk to Phil Grimes about the differences between full Red Team engagements and vulnerability assessments
+	* [Encoding vs. Encryption vs. Hashing vs. Obfuscation - Daniel Messler](https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation/)
 * **Security 101**
 	* [Types of Authentication](http://www.gfi.com/blog/security-101-authentication-part-2/)
 	* [Access control best practices](https://srlabs.de/acs/)
@@ -34,12 +35,16 @@
 	* **Relevant Standards**
 		* [NICE Cybersecurity Workforce Framework](https://www.nist.gov/itl/applied-cybersecurity/national-initiative-cybersecurity-education-nice/nice-cybersecurity)
 			* The NICE Framework, NIST Special Publication 800-181, establishes taxonomy and common lexicon that is to be used to describe all cybersecurity work and workers irrespective of where or for whom the work is performed. The NICE Framework is intended to be applied in the public, private, and academic sectors. (USA Focused)
+	* **Data Scientist**
+		* [What Data Scientists Really Do, According to 35 Data Scientists - HBR](https://hbr.org/2018/08/what-data-scientists-really-do-according-to-35-data-scientists?mc_cid=f8f788d39e&mc_eid=f956a0c5ca)
 	* **Penetration Tester**
 		* **Articles & Writeups**
 			* [How to become a pentester - Corelan](https://www.corelan.be/index.php/2015/10/13/how-to-become-a-pentester/)
 			* [Attacking Big Business](https://www.cyberis.co.uk/blog/attacking-big-business)	
 			* [10 common mistakes aspiring/new pentesters make - PentesterLab](https://blog.pentesterlab.com/10-common-mistakes-aspiring-new-pentesters-make-b74a81e58934)
+			* [So You Want To Be a Pentester? - Jack Halon](https://jhalon.github.io/becoming-a-pentester/)
 			* [And THIS is Why Penetration Testing Sucks - Ronin Chang](https://www.linkedin.com/pulse/why-penetration-testing-sucks-ronin-chang/)
+			* [So You Want To Be a Pentester? - Jack Halon](https://jhalon.github.io/becoming-a-pentester/)
 			* [World's Worst Penetration Test Report - rant](https://it.toolbox.com/blogs/chiefmonkey/the-worlds-worst-penetration-test-report-by-scumbagpentester-012814)
 			* [Make It Count: Progressing through Pentesting - Bálint Varga-Perke -Silent Signal](https://silentsignal.hu/docs/Make_It_Count_-_Progressing_through_Pentesting_Balint_Varga-Perke_Silent_Signal.pdf)
 		* **Talks & Presentations**

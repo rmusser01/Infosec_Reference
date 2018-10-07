@@ -28,35 +28,30 @@
 - [Modern Surveillance](#modern)
 	- [China](#china)
 	- [United States](#usa)
+- [Disinformation](#disinfo)
 
 
 
-
-#### Sort/Add
-
-* **To-Do**
-	* Add more Tor related things
-	* Add government documents
-	* 
-
-#### end Sort
 
 
 --------------
 ### <a name="general"></a>General
-* **General**
+* **101**
+	* [A Guide to Law Enforcement Spying Technology - EFF](https://www.eff.org/sls)
 	* [Anonymity](https://en.wikipedia.org/wiki/Anonymity)
 	* [Operations Security - Wikipedia](https://en.wikipedia.org/wiki/Operations_security)
+* **General**
 	* [OS X Security and Privacy Guide](https://github.com/drduh/OS-X-Security-and-Privacy-Guide)
 	* [Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
 		* Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
 	* [Mobile Phone Data lookup](https://medium.com/@philipn/want-to-see-something-crazy-open-this-link-on-your-phone-with-wifi-turned-off-9e0adb00d024)
 	* [Privacy Online Test And Resource Compendium](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List/blob/master/README.md)
 	* [Winning and Quitting the Privacy Game What it REALLY takes to have True Privacy in the 21st Century - Derbycon 7](https://www.youtube.com/watch?v=bxQSu06yuZc)
-	* [The Gruqgs blog](http://grugq.tumblr.com/)
 	* ['I've Got Nothing to Hide' and Other Misunderstandings of Privacy](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=998565&)
 		* We live in a surveillance state. Law enforcement and intelligence agencies have access to a huge amount of data about us, enabling them to learn intimate, private details about our lives. In part, the ease with which they can obtain such information reflects the fact that our laws have failed to keep up with advances in technology. However, privacy enhancing technologies can offer real protections even when the law does not. That intelligence agencies like the NSA are able to collect records about every telephone call made in the United States, or engage in the bulk surveillance of Internet communications is only possible because so much of our data is transmitted in the clear. The privacy enhancing technologies required to make bulk surveillance impossible and targeted surveillance more difficult already exist. We just need to start using them.
-	* [A Guide to Law Enforcement Spying Technology - EFF](https://www.eff.org/sls)
+	* [The Gruqgs blog](http://grugq.tumblr.com/)
+	* [How to Cover Your Tracks - ouah.org](http://www.ouah.org/cover_your_tracks1.html)
+	* [Becoming Virtually Untraceable (Eps1.0_B4s!c_T3chn1qu3s.onion) - Ian Barwise](https://medium.com/@IanBarwise/becoming-virtually-untraceable-part-1-e8470ae60745)
 * **Android/iOS/Mobile**<a name="mobile"></a>
 	* [Click and Dragger: Denial and Deception on Android mobile](https://www.slideshare.net/grugq/mobile-opsec/34-WHAT_ARETHEY_GOOD_FOR_Threat)
 	* [DEFCON 20: Can You Track Me Now? Government And Corporate Surveillance Of Mobile Geo-Location Data](https://www.youtube.com/watch?v=NjuhdKUH6U4)
@@ -76,6 +71,7 @@
 * **Communication Security**<a name="comsec"></a>
 	* [A Study of COMINT Personnel Security Standards and Practices](https://www.cia.gov/library/readingroom/document/cia-rdp82s00527r000100060014-6)
 	* [COMSEC Beyond Encryption](https://grugq.github.io/presentations/COMSEC%20beyond%20encryption.pdf)
+	* [NSA operation ORCHESTRA: Annual Status Report(2014) - Poul-Henning Kamp - FOSDEM14](https://www.youtube.com/watch?v=fwcl17Q0bpk&feature=youtu.be)
 * **Data Collection**<a name="dcollect"></a>
 	* [This Time, Facebook Is Sharing Its Employees’ Data: Some of the biggest companies turn over their workers’ most personal information to the troubled credit reporting agency Equifax](https://www.fastcompany.com/40485634/equifax-salary-data-and-the-work-number-database)
 	* [No boundaries: Exfiltration of personal data by session-replay scripts](https://freedom-to-tinker.com/2017/11/15/no-boundaries-exfiltration-of-personal-data-by-session-replay-scripts/)
@@ -109,6 +105,7 @@
 			* Digital watermarking has become crucially important in authentication and copyright protection of the digital contents, since more and more data are daily generated and shared online through digital archives, blogs and social networks. Out of all, text watermarking is a more difficult task in comparison to other media watermarking. Text cannot be always converted into image, it accounts for a far smaller amount of data (eg. social network posts) and the changes in short texts would strongly affect the meaning or the overall visual form. In this paper we propose a text watermarking technique based on homoglyph characters substitution for latin symbols1. The proposed method is able to efficiently embed a password based watermark in short texts by strictly preserving the content. In particular, it uses alternative Unicode symbols to ensure visual indistinguishability and length preservation, namely content-preservation. To evaluate our method, we use a real dataset of 1.8 million New York articles. The results show the effectiveness of our approach providing an average length of 101 characters needed to embed a 64bit password based watermark.
 * **Facial Identification**<a name="facial"></a>
 	* [Achie­ving an­ony­mi­ty against major face re­co­gni­ti­on al­go­rith­ms -  Be­ne­dikt Dries­sen, Mar­kus Dür­muth](http://www.mobsec.rub.de/forschung/veroeffentlichungen/driessen-13-face-rec/)
+	* [IBM Used NYPD Surveillance Footage to Develop Technology That Lets Police Search by Skin Color](https://theintercept.com/2018/09/06/nypd-surveillance-camera-skin-tone-search/)
 * **Informative/Educational**<a name="informative"></a>
 	* [Bugger - Adam Curtis](http://www.bbc.co.uk/blogs/adamcurtis/entries/3662a707-0af9-3149-963f-47bea720b460)
 		* Maybe the real state secret is that spies aren't very good at their jobs and don't know much about the world
@@ -127,6 +124,9 @@
 		* This is a protocol obfuscation layer for TCP protocols. Its purpose is to keep a third party from telling what protocol is in use based on message contents. Unlike obfs3, obfs4 attempts to provide authentication and data integrity, though it is still designed primarily around providing a layer of obfuscation for an existing authenticated protocol like SSH or TLS.
 	* [obfs3 (The Threebfuscator)](https://gitweb.torproject.org/pluggable-transports/obfsproxy.git/tree/doc/obfs3/obfs3-protocol-spec.txt)
 		* This is a protocol obfuscation layer for TCP protocols. Its purpose is to keep a third party from telling what protocol is in use based on message contents. Like obfs2, it does not provide authentication or data integrity. It does not hide data lengths. It is more suitable for providing a layer of obfuscation for an existing authenticated protocol, like SSH or TLS. 
+* **Online Influence Methods**
+	* [The Art of Deception: Training for a New Generation of Online Covert Operations](https://theintercept.com/document/2014/02/24/art-deception-training-new-generation-online-covert-operations/)
+	* [How Covert Agents Infiltrate the Internet to Manipulate, Deceive, and Destroy Reputations - TheIntercept](https://theintercept.com/2014/02/24/jtrig-manipulation/)
 * **OPSEC(Specifically)**<a name="opsec"></a>
 	* [Operational Security and the Real World - The Grugq](https://medium.com/@thegrugq/operational-security-and-the-real-world-3c07e7eeb2e8)
 	* [CIA Vault7 Development Tradecraft DOs and DON'Ts](https://wikileaks.org/ciav7p1/cms/page_14587109.html)
@@ -141,6 +141,7 @@
 	* [OPSEC Concerns in Using Crypto](https://www.slideshare.net/JohnCABambenek/defcon-crypto-village-opsec-concerns-in-using-crypto)
 	* [You're Leaking Trade Secrets - Defcon22 Michael Schrenk](https://www.youtube.com/watch?v=JTd5TL6_zgY)
 		* Networks don't need to be hacked for information to be compromised. This is particularly true for organizations that are trying to keep trade secrets. While we hear a lot about personal privacy, little is said in regard to organizational privacy. Organizations, in fact, leak information at a much greater rate than individuals, and usually do so with little fanfare. There are greater consequences for organizations when information is leaked because the secrets often fall into the hands of competitors. This talk uses a variety of real world examples to show how trade secrets are leaked online, and how organizational privacy is compromised by seemingly innocent use of The Internet.
+	* [The Need for Identity Management - alienvault](https://www.alienvault.com/blogs/security-essentials/managing-pseudonyms-with-compartmentalization-identity-management-of-personas)
 * **Reference/Resources**<a name="ref"></a>
 	* [The Paranoid's Bible: An anti-dox effort.](https://paranoidsbible.tumblr.com/)
 	* [Debian-Privacy-Server-Guide](https://github.com/drduh/Debian-Privacy-Server-Guide)
@@ -222,6 +223,7 @@
 
 --------------------------
 ## <a name="counter"></a>Counter Surveillance
+* **Articles**
 * **Writeups**<a name="cwriteup"></a>
 	* Detecting Surveillance - Spiderlabs blog
 		* [1 Hardware Implants](http://blog.spiderlabs.com/2014/03/detecting-surveillance-state-surveillance-part-1-hardware-impants.html)
@@ -263,8 +265,7 @@
 		* Many users face surveillance of their Internet communications and a significant fraction suffer from outright blocking of certain destinations. Anonymous communication systems allow users to conceal the destinations they communicate with, but do not hide the fact that the users are using them. The mere use of such systems may invite suspicion, or access to them may be blocked. We therefore propose Cirripede, a system that can be used for unobservable communication with Internet destinations. Cirripede is designed to be deployed by ISPs; it intercepts connections from clients to innocent-looking desti- nations and redirects them to the true destination requested by the client. The communication is encoded in a way that is indistinguishable from normal communications to anyone without the master secret key, while public-key cryptogra- phy is used to eliminate the need for any secret information that must be shared with Cirripede users. Cirripede is designed to work scalably with routers that handle large volumes of traffic while imposing minimal over- head on ISPs and not disrupting existing traffic. This allows Cirripede proxies to be strategically deployed at central lo- cations, making access to Cirripede very difficult to block. We built a proof-of-concept implementation of Cirripede and performed a testbed evaluation of its performance proper- ties
 	* [TapDance: End-to-Middle Anticensorship without Flow Blocking](https://jhalderm.com/pub/papers/tapdance-sec14.pdf)
 		* In response to increasingly sophisticated state-sponsored Internet censorship, recent work has proposed a new ap- proach to censorship resistance: end-to-middle proxying. This concept, developed in systems such as Telex, Decoy Routing, and Cirripede, moves anticensorship technology into the core of the network, at large ISPs outside the censoring country. In this paper, we focus on two technical obstacles to the deployment of certain end-to-middle schemes: the need to selectively block flows and the need to observe both directions of a connection. We propose a new construction, TapDance, that removes these require- ments. TapDance employs a novel TCP-level technique that allows the anticensorship station at an ISP to function as a passive network tap, without an inline blocking com- ponent. We also apply a novel steganographic encoding to embed control messages in TLS ciphertext, allowing us to operate on HTTPS connections even under asymmetric routing. We implement and evaluate a TapDance proto- type that demonstrates how the system could function with minimal impact on an ISP’s network operations.
-
-
+	* [Of Moles and Molehunters: A Review of Counterintelligence Literature, 1977-92](https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/U-Oct%20%201993-%20Of%20Moles%20-%20Molehunters%20-%20A%20Review%20of%20Counterintelligence%20Literature-%201977-92%20-v2.pdf)
 
 
 
@@ -288,7 +289,8 @@
 
 -------------------------
 ### <a name="modern"></a> Modern Surveillance
-* **Papers**
+* **Vendors**
+	* [buggedplanet.info](https://buggedplanet.info/index.php?title=Main_Page)
 * **Articles**
 	* [Understanding & Improving Privacy "Audits" under FTC Orders](https://cyberlaw.stanford.edu/blog/2018/04/understanding-improving-privacy-audits-under-ftc-orders)
 		* This new white paper, entitled “Understanding and Improving Privacy ‘Audits’ under FTC Orders,” carefully parses the third-party audits that Google and Facebook are required to conduct under their 2012 Federal Trade Commission consent orders.  Using only publicly available documents, the article contrasts the FTC’s high expectations for the audits with what the FTC actually received (as released to the public in redacted form).   These audits, as a practical matter, are often the only “tooth” in FTC orders to protect consumer privacy.  They are critically important to accomplishing the agency’s privacy mission.  As such, a failure to attend to their robust enforcement can have unintended consequences, and arguably, provide consumers with a false sense of security. The paper shows how the audits are not actually audits as commonly understood.  Instead, because the FTC order language only requires third-party “assessments,” the companies submit reports that are termed “attestations.”  Attestations fundamentally rely on a few vague privacy program aspects that are self-selected by the companies themselves.  While the FTC could reject attestation-type assessments, the agency could also insist the companies bolster certain characteristics of the attestation assessments to make them more effective and replicate audit attributes.  For example, the FTC could require a broader and deeper scope for the assessments.  The agency could also require that assessors evaluate Fair Information Practices, data flows, notice/consent effectiveness, all company privacy assurances, and known order violations.
@@ -313,3 +315,26 @@
 
 
 
+
+
+
+
+-----
+### <a name="talks">General
+* **General**
+	* [Russia Convention on International Information Security](http://cryptome.org/2014/05/ru-international-infosec.htm)
+	* [The Gentleperson’s Guide to Forum Spies](cryptome.org/2012/07/gent-forum-spies.htm)
+	* [A Digital World Full of Ghost Armies](http://www.cigtr.info/2015/02/a-digital-world-full-of-ghost-armies.html)
+* **Articles/BlogPosts/Writeups**
+	* [25 Rules of Disinformation](http://vigilantcitizen.com/latestnews/the-25-rules-of-disinformation/)
+	* [8 Traits of the Disinformationalist](https://calloutjoe.wordpress.com/psyop/eight-traits-of-the-disinformationalist/)
+	* [Attribution As A Weapon & Marketing Tool: Hubris In INFOSEC & NATSEC](https://krypt3ia.wordpress.com/2014/12/30/attribution-as-a-weapon-marketing-tool-hubris-in-infosec-natsec/)
+	* [Disinformation of Charlie Hebdo and The Fake BBC Website](http://thetrendythings.com/read/18256)
+	* [Counterintelligence, False Flags, Disinformation, and Network Defense - krypt3ia](https://krypt3ia.wordpress.com/2012/10/17/counterintelligence-false-flags-disinformation-and-network-defense/)
+	* [PsyOps and Socialbots](http://resources.infosecinstitute.com/psyops-and-socialbots/)
+	* [IRA Code Words Spell Real Threat](https://articles.latimes.com/1997-04-19/news/mn-50393_1_code-words)
+	* [‘A man who’s seen society's black underbelly’ Meduza meets ‘Anonymous International’](https://meduza.io/en/feature/2015/02/02/a-man-who-s-seen-society-s-black-underbelly)
+	* [Down the Memory Hole: NYT Erases CIA’s Efforts to Overthrow Syria’s Government](https://web.archive.org/web/20150921054800id_/http://fair.org/home/down-the-memory-hole-nyt-erases-cias-efforts-to-overthrow-syrias-government/)
+* **Talks**
+	* [Governments and UFOs: A Historical Analysis of Disinformation and Deception - Richard Thieme](http://www.irongeek.com/i.php?page=videos/bsideslasvegas2013/1-2-7-governments-and-ufos-a-historical-analysis-of-disinformation-and-deception-richard-thieme)
+	* [[TROOPERS15] Azhar Desai, Marco Slaviero - Weapons of Mass Distraction](https://www.youtube.com/watch?v=jdaPJLJCK1M)

@@ -4,7 +4,7 @@
 
 ## Table of Contents
 - [General](#general)
-- [Attacking Routers and their Firmware\)(#routers)
+- [Attacking Routers and their Firmware)(#routers)
 - [Cable Modem Hacking](#modem)
 - [Credit Cards](#cc)
 - [esp2866 Related](#esp2866)

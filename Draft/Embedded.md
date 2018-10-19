@@ -92,7 +92,7 @@
 
 
 ---------------------------
-### <a name="routers">Attacking Routers(/'s Firmware)</a>
+### <a name="routers">Attacking Routers(Firmware)</a>
 * **101**
 	* [Unpacking Firmware images from cable modems](http://w00tsec.blogspot.com.br/2013/11/unpacking-firmware-images-from-cable.html)
 * **Articles/Papers/Talks/Writeups**

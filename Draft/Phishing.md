@@ -6,7 +6,7 @@
 * [Tools](#tools)
 * [Microsoft Outlook/Exchange Related](#msoutlook)
 * [Microsoft Office](#msoffice)
-- [Setting up a Server](#settingup)
+* [Setting up a Server](#settingup)
 * [Talks/Presentations](#talks)
 
 

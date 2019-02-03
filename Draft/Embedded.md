@@ -30,8 +30,9 @@
 - [Specific Attacks](#specific)
 
 
----------------------
-### <a name="general"></a>General
+
+
+
 * **To-Do**
 	* Fingeprint readers
  		* [Breaking apple touchID cheaply](http://www.ccc.de/en/updates/2013/ccc-breaks-apple-touchid)
@@ -43,6 +44,12 @@
 	* SD Cards
 	* TPM
 		* [Attackin the TPM part 2](https://www.youtube.com/watch?v=h-hohCfo4LA)
+
+
+* [From 0 to Infinity - Guy](https://docs.google.com/presentation/d/19A1JWyOTueZvD8AksqCxtxriNJJgj0vPdq3cNTwndf4/mobilepresent#slide=id.g35506ef05e_0_0)
+
+---------------------
+### <a name="general"></a>General
 * **101**
 	* [Embedded System - Wikipedia](https://en.wikipedia.org/wiki/Embedded_system)
 	* [Hardware Security and Trust/ECE 4451/5451: Introduction to Hardware Security and Trust](https://www.engr.uconn.edu/~tehrani/teaching/hst/)
@@ -53,6 +60,7 @@
 * **Articles/Papers/Talks/Writeups**
 	* [Infecting the Embedded Supply Chain - somersetrecon](https://www.somersetrecon.com/blog/2018/7/27/infecting-the-embedded-supply-chain)
 	* [Exploiting Qualcomm EDL Programmers (1): Gaining Access & PBL Internals](https://alephsecurity.com/2018/01/22/qualcomm-edl-1/)
+	* [Using the Shikra to Attack Embedded Systems: Getting Started - xipiter](https://www.xipiter.com/musings/using-the-shikra-to-attack-embedded-systems-getting-started)
 * **Circuit Boards**
 	* [Deconstructing the Circuit Board Sandwich DEF CON 22 - Joe Grand aka Kingpin](https://www.youtube.com/watch?v=O8FQZIPkgZM)
 * **Educational/Informative**
@@ -89,7 +97,7 @@
 	* [U-Boot -- the Universal Boot Loader](http://www.denx.de/wiki/U-Boot)
 		* Very popular on embedded devices open source bootloader for linux
 		* [Manual/Documentation](http://www.denx.de/wiki/DULG/Manual)
-
+	* [Probe comparison - sigrok.org](https://sigrok.org/wiki/Probe_comparison)
 
 ---------------------------
 ### <a name="routers">Attacking Routers(/'s Firmware)</a>
@@ -382,6 +390,7 @@ See 'Printers' Section in Network Attacks & Scanning
 		* [Attacking encrypted USB keys the hard(ware) way - Jean-Michel Picod, Rémi Audebert, Elie Bursztein -BHUSA 17](https://elie.net/talk/attacking-encrypted-usb-keys-the-hardware-way)
 			* In this talk, we will present our methodology to assess "secure" USB devices both from the software and the hardware perspectives. We will demonstrate how this methodology works in practice via a set of case-studies. We will demonstrate some of the practical attacks we found during our audit so you will learn what type of vulnerability to look for and how to exploit them. Armed with this knowledge and our tools, you will be able to evaluate the security of the USB device of your choice.
 		* [Here's a List of 29 Different Types of USB Attacks - BleepingComputer](https://www.bleepingcomputer.com/news/security/heres-a-list-of-29-different-types-of-usb-attacks/)
+		* [5 Things to Do Now: the USB/JTAG/IME Exploit - ci.security](https://ci.security/news/article/5-things-to-do-now-the-usb-jtag-ime-exploit)
 	* **Understanding**
 		* [USB Device Drivers: A Stepping Stone into your Kernel](https://www.youtube.com/watch?v=HQWFHskIY2)
 			* [Slides])(www.jodeit.org/research/DeepSec2009_USB_Device_Drivers.pdf)
@@ -390,6 +399,8 @@ See 'Printers' Section in Network Attacks & Scanning
 		* A USB man in the middle device using USB On-The-Go, libUSB and gadgetFS 
 	* [Attacks via physical access to USB (DMA…?)](https://security.stackexchange.com/questions/118854/attacks-via-physical-access-to-usb-dma)
 	* [Can a connected USB device read all data from the USB bus?](https://security.stackexchange.com/questions/37927/can-a-connected-usb-device-read-all-data-from-the-usb-bus?rq=1)
+	* [Defending Against Malicious USB Firmware with GoodUSB - Dave Tian, Adam Bates, Kevin Butler](https://cise.ufl.edu/~butler/pubs/acsac15.pdf)
+	* [Defending Against Malicious USB Firmware with GoodUSB - davejintian.org](https://davejingtian.org/2015/12/03/defending-against-malicious-usb-firmware-with-goodusb/)
 * **Tools**
 	* [WHID Injector: an USB-Rubberducky/BadUSB on Steroids](https://whid-injector.blogspot.lt/2017/04/whid-injector-how-to-bring-hid-attacks.html)
 	* [umap](https://github.com/nccgroup/umap) 
@@ -397,15 +408,20 @@ See 'Printers' Section in Network Attacks & Scanning
 	* [NSA USB Playset - ShmooCon201](https://www.youtube.com/watch?v=eTDBFpLYcGA)
 	* [Phison PS2303 (PS2251-03) framework](https://bitbucket.org/flowswitch/phison)
 * **Miscellaneous**
+	* [Vendors, Disclosure, and a bit of WebUSB Madness - Markus Vervier](https://pwnaccelerator.github.io/2018/webusb-yubico-disclosure.html)
 * **BadUSB**
 	* [Slides](https://srlabs.de/blog/wp-content/uploads/2014/11/SRLabs-BadUSB-Pacsec-v2.pdf)
 	* [Video](https://www.youtube.com/watch?v=nuruzFqMgIw)
 	* [Code - Psychson](https://github.com/adamcaudill/Psychson) 
 	* [Media Transfer Protocol and USB device Research](http://nicoleibrahim.com/part-1-mtp-and-ptp-usb-device-research/)
-* **USB Class Info**
+* **USB Device/Class Info**
 	* [USB Device Class Specifications - Official Site](http://www.usb.org/developers/docs/devclass_docs/)
 		* These specifications recommend design targets for classes of devices. For HID related information, please go to the [HID web page.](http://www.usb.org/developers/docs/docs/hidpage/)
 	* [Universal Serial Bus Device Class Specification for Device Firmware Upgrade Version 1.1 Aug 5, 2004](http://www.usb.org/developers/docs/devclass_docs/DFU_1.1.pdf)
+	* [Identifiers for USB Devices - docs.ms](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/identifiers-for-usb-devices)
+
+
+
 
 
 

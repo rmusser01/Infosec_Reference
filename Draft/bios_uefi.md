@@ -20,6 +20,8 @@
 * **To-Do**
 	* Add rowhammer related materials
 
+* [How Does an Intel Processor Boot? - BinaryDebt](https://binarydebt.wordpress.com/2018/10/06/how-does-an-x86-processor-boot/)
+* [Understanding L1 Terminal Fault aka Foreshadow: What you need to know - Jon Masters](https://www.redhat.com/en/blog/understanding-l1-terminal-fault-aka-foreshadow-what-you-need-know)
 * [GuardION - Android GuardION patches to mitigate DMA-based Rowhammer attacks on ARM](https://github.com/vusec/guardion)
 	* This software is the open-source component of our paper "GuardION: Practical Mitigation of DMA-based Rowhammer Attacks on ARM", published in the Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA) 2018. It allows you to patch an Android kernel so that DMA allocations are guarded with empty rows, resulting in the isolation of bitflips and thus mitigation of Drammer-like attacks.
 

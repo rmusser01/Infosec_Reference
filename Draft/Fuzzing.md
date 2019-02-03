@@ -64,6 +64,7 @@
 	* [ClusterFuzz](http://nullcon.net/website/archives/ppt/goa-15/analyzing-chrome-crash-reports-at-scale-by-abhishek-arya.pdf)
 	* [Google VRP and Unicorns](https://sites.google.com/site/bughunteruniversity/behind-the-scenes/presentations/google-vrp-and-unicorns)
 		* In July 2017 at BountyCraft event we delivered a presentation entitled "Google VRP and Unicorns", featuring a selection of interesting bugs reported to our program, and disclosing some planned updates in store for Google VRP.
+	* [How to Spot Good Fuzzing Research - trailofbits](https://blog.trailofbits.com/2018/10/05/how-to-spot-good-fuzzing-research/)
 * **History**
 	* [Symbolic execution timeline](https://github.com/enzet/symbolic-execution)
 		* Diagram highlights some major tools and ideas of pure symbolic execution, dynamic symbolic execution (concolic) as well as related ideas of model checking, SAT/SMT solving, black-box fuzzing, taint data tracking, and other dynamic analysis techniques.
@@ -102,6 +103,7 @@
 			* [Differential testing - Wikipedia](https://en.wikipedia.org/wiki/Differential_testing)
 				* Differential testing, also known as differential fuzzing, is a popular software testing technique that attempts to detect bugs, by providing the same input to a series of similar applications (or to different implementations of the same application), and observing differences in their execution. Differential testing complements traditional software testing, because it is well-suited to find semantic or logic bugs that do not exhibit explicit erroneous behaviors like crashes or assertion failures. Differential testing is sometimes called back-to-back testing.
 		* **Articles/Blogposts/Writeups**
+			* [Exposing Hidden Exploitable Behaviors in Programming Languages Using Differential Fuzzing - Fernando Arnaboldi](https://www.blackhat.com/docs/eu-17/materials/eu-17-Arnaboldi-Exposing-Hidden-Exploitable-Behaviors-In-Programming-Languages-Using-Differential-Fuzzing-wp.pdf)
 		* **Talks and Presentations**
 			* [Exposing Hidden ExploitableBehaviors in ProgrammingLanguagesUsingDifferential Fuzzing - Fernando Arnaboldi](https://www.blackhat.com/docs/eu-17/materials/eu-17-Arnaboldi-Exposing-Hidden-Exploitable-Behaviors-In-Programming-Languages-Using-Differential-Fuzzing-wp.pdf)
 			* [Differential Slicing: Identifying Causal Execution Differences for Security Applications](http://bitblaze.cs.berkeley.edu/papers/diffslicing_oakland11.pdf)
@@ -195,6 +197,7 @@
 	* **Tools**
 		* [boofuzz](https://github.com/jtpereyda/boofuzz)
 			* Boofuzz is a fork of and the successor to the venerable Sulley fuzzing framework. Besides numerous bug fixes, boofuzz aims for extensibility. The goal: fuzz everything.
+			* [boofuzz quickstart](https://boofuzz.readthedocs.io/en/latest/user/quickstart.html)
 		* [rage_fuzzer](https://github.com/deanjerkovich/rage_fuzzer)
 			* A dumb protocol-unaware packet fuzzer/replayer.
 		* [Nightmare](https://github.com/joxeankoret/nightmare)

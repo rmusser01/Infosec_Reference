@@ -51,6 +51,8 @@
 		* [Offensive Security 2013 Demo report](http://www.offensive-security.com/offsec/penetration-test-report-2013/)
 	* **Writing a Report**
 		* [Writing a Penetration Testing Report by SANS](https://www.sans.org/reading-room/whitepapers/bestprac/writing-penetration-testing-report-33343)
+		* [I \<3 Reporting - ](https://github.com/leesoh/iheartreporting)
+			* Reporting Tips for Penetration Testers
 		* [Penetration Testing Execution Standard section on Reporting](http://www.pentest-standard.org/index.php/Reporting)
 		* [Tips for Creating an Information Security Assessment Report Cheat Sheet](https://zeltser.com/security-assessment-report-cheat-sheet/)
 		* [HowTo: Write pentest reports the easy way](http://blog.dornea.nu/2014/05/20/howto-write-pentest-reports-the-easy-way/)

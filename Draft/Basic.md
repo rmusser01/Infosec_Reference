@@ -17,12 +17,16 @@
 	* [Salted Hash Ep 34: Red Team vs. Vulnerability Assessments - CSO Online](https://www.csoonline.com/article/3286604/security/salted-hash-ep-34-red-team-vs-vulnerability-assessments.html#tk.twt_cso)
 		* Words matter. This week on Salted Hash, we talk to Phil Grimes about the differences between full Red Team engagements and vulnerability assessments
 	* [Encoding vs. Encryption vs. Hashing vs. Obfuscation - Daniel Messler](https://danielmiessler.com/study/encoding-encryption-hashing-obfuscation/)
+	* [Ask Good Questions: Deep Dive - Yousef Kazerooni](https://medium.com/@YousefKazerooni/ask-good-questions-deep-dive-dacd8dddc247)
 * **Security 101**
 	* [Types of Authentication](http://www.gfi.com/blog/security-101-authentication-part-2/)
 	* [Access control best practices](https://srlabs.de/acs/)
 * **General Good Stuff**
 	* [Words Have Meanings - Dan Tentler - CircleCityCon 2017]
 	* [(Deliberate) practice makes perfect: how to become an expert in anything - Aytekin Tank](https://medium.com/swlh/deliberate-practice-makes-perfect-how-to-become-an-expert-in-anything-ec30e0c1314e)
+* **Learning the Command Line**
+	* [explainshell.com](https://github.com/idank/explainshell)
+		* explainshell is a tool (with a web interface) capable of parsing man pages, extracting options and explain a given command-line by matching each argument to the relevant help text in the man page.
 * **Careers in Information Security**
 	* **Educational/Informational**
 		* [Navigating Career Choices in InfoSec - Fernando Montenegro - BSides Detroit2017](https://www.youtube.com/watch?v=yM2xCjrQSY4)
@@ -66,6 +70,9 @@
 
 
 
-### Tools you should probably know exist
-* [Introduction To Metasploit – The Basics](http://www.elithecomputerguy.com/2013/02/08/introduction-to-metasploit-the-basics/) 
-* [Shodan](http://www.shodanhq.com/help)
+### Tools 
+* **Tools you should probably know exist**
+	* [Introduction To Metasploit – The Basics](http://www.elithecomputerguy.com/2013/02/08/introduction-to-metasploit-the-basics/) 
+	* [Shodan](http://www.shodanhq.com/help)
+* **Learning New Tools**
+	* [A little collection of cool unix terminal/console/curses tools](https://kkovacs.eu/cool-but-obscure-unix-tools)

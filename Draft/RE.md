@@ -33,7 +33,6 @@
 
 
 
-
 --------------
 ### General
 * **101**
@@ -317,6 +316,8 @@
 				* IDA Pro Full Instruction Reference Plugin - It's like auto-comments but useful.
 			* [YaCo])(https://github.com/DGA-MI-SSI/YaCo)
 				* YaCo is an Hex-Rays IDA plugin. When enabled, multiple users can work simultaneously on the same binary. Any modification done by any user is synchronized through git version control.
+			* [HexRaysPyTools](https://github.com/igogo-x86/HexRaysPyTools/blob/master/readme.md)
+				* The plugin assists in the creation of classes/structures and detection of virtual tables. It also facilitates transforming decompiler output faster and allows to do some stuff which is otherwise impossible.
 		* **IDA Tutorials/Help**
 			* [TiGa's Video Tutorial Series on IDA Pro](http://woodmann.com/TiGa/idaseries.html)
 			* [IDA PLUG-IN WRITING IN C/C++](http://www.binarypool.com/idapluginwriting/idapw.pdf)
@@ -537,6 +538,17 @@
 * [What are the methods to find hooked functions and APIs?](https://security.stackexchange.com/questions/17904/what-are-the-methods-to-find-hooked-functions-and-apis)
 
 * [Taking a Snapshot and Viewing Processes - msdn.ms](https://msdn.microsoft.com/library/windows/desktop/ms686701.aspx)
+
+* **QEMU**
+	* [PyREBox](https://github.com/Cisco-Talos/pyrebox)
+		* PyREBox is a Python scriptable Reverse Engineering sandbox. It is based on QEMU, and its goal is to aid reverse engineering by providing dynamic analysis and debugging capabilities from a different perspective. PyREBox allows to inspect a running QEMU VM, modify its memory or registers, and to instrument its execution, by creating simple scripts in python to automate any kind of analysis. QEMU (when working as a whole-system-emulator) emulates a complete system (CPU, memory, devices...). By using VMI techniques, it does not require to perform any modification into the guest operating system, as it transparently retrieves information from its memory at run-time.
+
+
+
+
+* **Binary Instrumentation**
+	* [Dynamic Binary Instrumentation Primer - rui - deniable.org ](http://deniable.org/reversing/binary-instrumentation)
+		* "Dynamic Binary Instrumentation (DBI) is a method of analyzing the behavior of a binary application at runtime through the injection of instrumentation code" - Uninformed 2007
 
 
 * [Etnaviv](https://github.com/etnaviv/etna_viv)

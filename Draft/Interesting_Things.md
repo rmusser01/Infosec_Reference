@@ -14,6 +14,16 @@
 http://spth.virii.lu/articles.htm
 https://bugs.php.net/bug.php?id=50696
 
+
+* [Pulling Back the Curtain on Airport Security: Can a Weapon Get Past TSA? - Billy Rios - BHUSA 2014](https://www.youtube.com/watch?reload=9&v=hbqVNlwfjxo)
+	* Every day, millions of people go through airport security. While it is an inconvenience that could take a while, most are willing to follow the necessary procedures if it can guarantee their safety. Modern airport security checkpoints use sophisticated technology to help the security screeners identify potential threats and suspicious baggage. Have you ever wondered how these devices work? Have you ever wondered why an airport security checkpoint was set up in a particular configuration? Join us as we present the details on how a variety of airport security systems actually work, and reveal their weaknesses. We’ll present what we have learned about modern airport security procedures, dive deep into the devices used to detect threats, and we’ll present some the bugs we discovered along the way.
+* [The Shirky Principle - Technium](https://kk.org/thetechnium/the-shirky-prin/)
+	* “Institutions will try to preserve the problem to which they are the solution.” — Clay Shirky
+* [So you want to be a pentester? - Hans-Michael Varbaek](https://speakerdeck.com/varbaek/so-you-want-to-be-a-pentester?slide=104)
+	* This presentation gives the viewer an idea of what it is to be a pentester full-time, what a pentester typically works with, how to learn ethical hacking, and improving your chances of getting a full-time job.
+* [The Google Cemetery](https://gcemetery.co/)
+* [Law #8: The Law of Duality - ericsink.com](https://ericsink.com/laws/Law_08.html)
+
 * [InfoSanity.org - When the Bad Guys are in your head](https://www.infosanity.org/)
 * [A Sysadmin's Unixersal Translator (ROSETTA STONE)](http://bhami.com/rosetta.html)
 * [Virtualization Based Security - Part 2: kernel communications](http://blog.amossys.fr/virtualization-based-security-part2.html)

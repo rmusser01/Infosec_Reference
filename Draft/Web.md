@@ -63,6 +63,7 @@
 - [Web Proxies](#webproxy)
 - [Web Application Firewalls(WAFs)](#waf)
 - [Web Assembly](#webasm)
+- [Web Cache Deception](#webcache)
 - [Web Frameworks](#webframeworks)
 - [WebRTC](#webrtc)
 - [WebSockets](#websockets)
@@ -293,11 +294,14 @@
 
 ------------------
 #### <a name="csv"></a> CSV Injection
-* [From CSV to CMD to qwerty](http://www.exploresecurity.com/from-csv-to-cmd-to-qwerty/)
-* [Comma Separated Vulnerabilities](https://www.contextis.com/blog/comma-separated-vulnerabilities)
-	* This post introduces Formula Injection, a technique for exploiting ‘Export to Spreadsheet’ functionality in web applications to attack users and steal spreadsheet contents. It also details a command injection exploit for Apache OpenOffice and LibreOffice that can be delivered using this technique.
-* [The Absurdly Underestimated Dangers of CSV Injection](http://georgemauer.net/2017/10/07/csv-injection.html)
-
+* **101**
+* **Articles/Blogposts/Writeups**
+* **Talks & Presentations**
+	* [From CSV to CMD to qwerty](http://www.exploresecurity.com/from-csv-to-cmd-to-qwerty/)
+	* [Comma Separated Vulnerabilities](https://www.contextis.com/blog/comma-separated-vulnerabilities)
+		* This post introduces Formula Injection, a technique for exploiting ‘Export to Spreadsheet’ functionality in web applications to attack users and steal spreadsheet contents. It also details a command injection exploit for Apache OpenOffice and LibreOffice that can be delivered using this technique.
+	* [The Absurdly Underestimated Dangers of CSV Injection](http://georgemauer.net/2017/10/07/csv-injection.html)
+	* [ [Cell Injection] Attacking the end user through the application - 7elements.co.uk](http://blog.7elements.co.uk/2013/01/cell-injection.html)
 
 
 
@@ -686,6 +690,7 @@ fuse.ca/race-conditions-in-web-applications.htm)
 ------------------
 ### <a name="shells">Web Shells</a>
 * **Articles**
+	* [Binary Webshell Through OPcache in PHP 7 - Ian Bouchard](https://gosecure.net/2016/04/27/binary-webshell-through-opcache-in-php-7/)
 * **Detection**
 	* [Case Study: How Backdoors Bypass Security Solutions with Advanced Camouflage Techniques](https://www.incapsula.com/blog/backdoor-malware-analysis-obfuscation-techniques.html)
 		* Look at PHP obfuscation methods for webshells
@@ -706,6 +711,9 @@ fuse.ca/race-conditions-in-web-applications.htm)
 		* An interactive multi-user web based JS shell written in Python with Flask (for server side) and of course Javascript and HTML (client side). It was initially created to debug remote esoteric browsers during tests and research. I'm aware of other purposes this tool might serve, use it at your own responsibility and risk.
 	* [htshells](https://github.com/wireghoul/htshells)
 		* Self contained web shells and other attacks via .htaccess files.
+	* [Encoding Web Shells in PNG IDAT chunks - idontplaydarts.com](https://www.idontplaydarts.com/2012/06/encoding-web-shells-in-png-idat-chunks/)
+
+
 
 
 -------------------
@@ -865,7 +873,9 @@ fuse.ca/race-conditions-in-web-applications.htm)
 * **101**
 	* [Intro to content Security Policy](http://www.html5rocks.com/en/tutorials/security/content-security-policy/)
 * **Articles/Papers/Talks/Writeups**
-* **General**
+	* [GitHub's post-CSP journey - githubengineering](https://githubengineering.com/githubs-post-csp-journey/)
+	* [Github's CSP Journey - githubengineering](https://githubengineering.com/githubs-csp-journey/)
+	* [ CVE-2018-5175: Universal CSP strict-dynamic bypass in Firefox - Masato Kinugawa](https://mksben.l0.cm/2018/05/cve-2018-5175-firefox-csp-strict-dynamic-bypass.html)
 * **Tools**
 * **Miscellaneous**
 
@@ -910,6 +920,8 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [As It Stands - Update on Electorn Security - 2016](http://blog.scottlogic.com/2016/06/01/An-update-on-Electron-Security.html)
 	* [Modern Alchemy: Turning XSS into RCE](https://blog.doyensec.com/2017/08/03/electron-framework-security.html)
 	* [Build cross platform desktop XSS, it’s easier than you think by Yosuke Hasegawa - CodeBlue16](https://www.slideshare.net/codeblue_jp/cb16-hasegawa-en)
+	* [Modern Alchemy: Turning XSS into RCE - doyensec](https://blog.doyensec.com/2017/08/03/electron-framework-security.html)
+	* [From Markdown to RCE in Atom - statuscode.ch](https://statuscode.ch/2017/11/from-markdown-to-rce-in-atom/)
 * **Documentation**
 	* [Electron Documentation](https://electronjs.org/docs)
 	* [Security, Native Capabilities, and Your Responsibility - Electron Documentation](https://electron.atom.io/docs/tutorial/security/)
@@ -1121,6 +1133,9 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [REST and Stateless Session IDs](https://appsandsecurity.blogspot.com/2011/04/rest-and-stateless-session-ids.html)	
 	* [Beginner’s Guide to API(REST) security](https://introvertmac.wordpress.com/2015/09/09/beginners-guide-to-apirest-security/)
 	* [Introduction to RESTful APIs with Chris Wahl](https://www.youtube.com/watch?v=k00sfolsmp0&index=1&list=PL2rC-8e38bUU7Xa5kBaw0Cceo2NoI4mK-)
+* **Talks & Presentations**
+	* [ Cracking and fixing REST services - Bill Sempf - Converge 2015](https://www.irongeek.com/i.php?page=videos/converge2015/track109-cracking-and-fixing-rest-services-bill-sempf)
+		* REST, or Representational State Transfer, just refers to the protocol with which the whole Web works. No big. We are used to using REST with a browser, but there is more to it - we can write programs with REST. The problem is that writing properties and functions using the web's transfer protocol open them up to all of the security weaknesses of the web, and we know there are a few of those. Finding those bugs is just half of the battle - fixing them is a whole other story. You'll need the details, and you'll get them here.
 * **Attacking**
 	* [Exploiting CVE-2017-8759: SOAP WSDL Parser Code Injection](https://www.mdsec.co.uk/2017/09/exploiting-cve-2017-8759-soap-wsdl-parser-code-injection/)
 	* [Cracking and Fixing REST APIs](http://www.sempf.net/post/Cracking-and-Fixing-REST-APIs)
@@ -1269,8 +1284,10 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [Finding XSS vulnerabilities in flash files.](https://olivierbeg.com/finding-xss-vulnerabilities-in-flash-files/)
 	* [XSS and CSRF via SWF Applets (SWFUpload, Plupload)](https://nealpoole.com/blog/2012/05/xss-and-csrf-via-swf-applets-swfupload-plupload/)
 	* [WordPress Flash XSS in flashmediaelement.swf - cure53](https://gist.github.com/cure53/df34ea68c26441f3ae98f821ba1feb9c)
-* **General**
-
+	* [WordPress Flash XSS in flashmediaelement.swf - cure53](https://gist.github.com/cure53/df34ea68c26441f3ae98f821ba1feb9c)
+	* [Security Domains, Application Domains, and More in ActionScript 3.0 - senocular](http://www.senocular.com/flash/tutorials/contentdomains/)
+	* [Testing for Cross site flashing (OTG-CLIENT-008) - OWASP](https://www.owasp.org/index.php/Testing_for_Cross_site_flashing_(OTG-CLIENT-008))
+	* [XSS and CSRF via SWF Applets (SWFUpload, Plupload) - Neal Poole](https://nealpoole.com/blog/2012/05/xss-and-csrf-via-swf-applets-swfupload-plupload/)
 * **Securing**
 	* [HardenFlash](https://github.com/HaifeiLi/HardenFlash)
 		* Patching Flash binary to stop Flash exploits and zero-days
@@ -1365,6 +1382,9 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [Web Application Firewall (WAF) Evasion Techniques - secjuice](https://medium.com/secjuice/waf-evasion-techniques-718026d693d8)
 	* [Bypassing Web-Application Firewalls by abusing SSL/TLS - 0x09AL](https://0x09al.github.io/waf/bypass/ssl/2018/07/02/web-application-firewall-bypass.html)
 	* [WAF_buster](https://github.com/viperbluff/WAF_buster/blob/master/README.md)
+	* [Request encoding to bypass web application firewalls - NCCGroup](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/august/request-encoding-to-bypass-web-application-firewalls/)
+	* [HTTP Invisibility Cloak by Soroush Dalili - SteelCon2017](https://www.youtube.com/watch?reload=9&v=sHEv_EoQJwc)
+		* This talk illustrates a number of techniques to smuggle and reshape HTTP requests using features such as HTTP Pipelining that are not normally used by testers. The strange behaviour of web servers with different technologies will be reviewed using HTTP versions 1.1, 1.0, and 0.9 before HTTP v2 becomes too popular! Some of these techniques might come in handy when dealing with a dumb WAF or load balancer that blocks your attacks.
 * **Attacking/Auditing**
 	* [LightBulb](https://github.com/PortSwigger/lightbulb-framework)
 		* LightBulb is an open source python framework for auditing web application firewalls and filters.
@@ -1390,10 +1410,24 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [Web Assembly](http://webassembly.org/)
 	* [A cartoon intro to WebAssembly Articles](https://hacks.mozilla.org/category/code-cartoons/a-cartoon-intro-to-webassembly/)
 	* [Lin Clark: A Cartoon Intro to WebAssembly | JSConf EU 2017](https://www.youtube.com/watch?v=HktWin_LPf4&app=desktop)
+	* [WebAssembly Design Documents](https://github.com/WebAssembly/design)
+		* This repository contains documents describing the design and high-level overview of WebAssembly.
 * **Articles/Papers/Talks/Writeups**
+	* [Web-(Dis)Assembly - Christophe Alladoum - Shakacon X](https://github.com/sophos/WebAssembly/blob/master/Misc/Web-(Dis)Assembly.pdf)
+		* `https://github.com/sophos/WebAssembly/blob/master/Misc/Web-(Dis)Assembly.pdf`
 * **General**
 * **Tools**
 * **Miscellaneous**
+
+
+
+----------------
+### <a name="webcache"></a>Web Cache Deception Attack
+* **101**
+* **Articles/Papers/Talks/Writeups**
+	* [Web Cache Deception Attack - Omer Gil](https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html)
+* **Tools**
+
 
 
 
@@ -1700,7 +1734,33 @@ fuse.ca/race-conditions-in-web-applications.htm)
 * [ebay.com: RCE using CCS](http://secalert.net/#ebay-rce-ccs)
 
 
-Sort 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Sort 
 
 
 (http://www.soffensive.com/2018/06/exploiting-blind-file-reads-path.html)
@@ -1753,3 +1813,27 @@ Sort
 	* webrtc
 	* XML
 	* domains
+
+* [How I hacked hundreds of companies through their helpdesk - Inti De Ceukelaire](https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c)
+* [A deep dive into AWS S3 access controls – taking full control over your assets - labs.detectify](https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/)
+* [The Good, The Bad and The Ugly of Safari in Client-Side Attacks - bo0om, Wallarm Research](https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a)
+
+* [Rare ASP.NET request validation bypass using request encoding - nccgroup](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/september/rare-aspnet-request-validation-bypass-using-request-encoding/)
+
+* [$10k host header - eze2307](https://sites.google.com/site/testsitehacking/10k-host-header)
+
+* [Hacking Slack using postMessage and WebSocket-reconnect to steal your precious token - labs.detectify](https://labs.detectify.com/2017/02/28/hacking-slack-using-postmessage-and-websocket-reconnect-to-steal-your-precious-token/)
+* [Hacking The RPi Cam Web Interface - reigningshells.com](https://blog.reigningshells.com/2018/09/hacking-rpi-cam-web-interface.html?m=1)
+
+* [Peeking Behind the Curtains of Serverless Platforms](http://pages.cs.wisc.edu/~liangw/pub/atc18-final298.pdf?utm_campaign=Serverless%2BDigest&utm_source=Serverless_Digest_44)
+
+* [JSON API's Are Automatically Protected Against CSRF, And Google Almost Took It Away.](https://github.com/dxa4481/CORS)
+
+https://blog.appsecco.com/static-analysis-of-client-side-javascript-for-pen-testers-and-bug-bounty-hunters-f1cb1a5d5288
+https://github.com/segment-srl/htcap
+https://github.com/byt3bl33d3r/SprayingToolkit/blob/master/README.md
+https://latacora.micro.blog/2018/06/12/a-childs-garden.html
+https://en.wikipedia.org/wiki/Content_Security_Policy
+https://www.w3.org/TR/CSP3/#intro
+https://github.com/nccgroup/BurpSuiteHTTPSmuggler
+https://www.awsgeek.com/?mc_cid=065d80dbfd&mc_eid=f956a0c5ca

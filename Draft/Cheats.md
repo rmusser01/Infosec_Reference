@@ -1,6 +1,8 @@
 # Cheat Sheets & Reference Pages
 
 
+
+
 ### Cheat Sheets
 * **General Cheat Sheets**
 	* [How to Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)
@@ -11,6 +13,7 @@
 * **Communication**
 	* [Tips for Troubleshooting Human Communications](https://zeltser.com/human-communications-cheat-sheet/)
 * **ARM**
+	* [ARM Assembly Basics Cheatsheet - AzeriaLabs](https://azeria-labs.com/assembly-basics-cheatsheet/)
 	* [ARMwiki - hehyrick.co.uk](https://www.heyrick.co.uk/armwiki/Category:Introduction)
 		* ARM processor wiki
 * **ASM Cheat Sheets**
@@ -68,8 +71,10 @@
 * **Tmux**
 	* [tmux Cheat Sheet](http://tmuxcheatsheet.com/)
 * **Web Cheat Sheets**<a name="Web"></a>
+	* [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist/)
+	* Checklist of the most important security countermeasures when designing, testing, and releasing your API.
 	* [Drupal Security Checklist](https://github.com/gfoss/attacking-drupal/blob/master/presentation/drupal-security-checklist.pdf)
-	* [O-Auth Security Cheat Sheet](http://www.oauthsecurity.com/)
+	* [OWASP Authentication Cheat Sheet](https://www.owasp.org/index.php/Authentication_Cheat_Sheet)
 	* [OWASP Testing Checklist](https://www.owasp.org/index.php/Testing_Checklist)
 	* [Securing Web Application Technologies Checklist](http://www.securingthehuman.org/developer/swat)
 	* [SSRF Bible Cheatsheet](https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit)

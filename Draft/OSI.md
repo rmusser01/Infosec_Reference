@@ -10,7 +10,7 @@
 - [DNS Stuff/related](#dns)
 - [Email Gathering](#email)
 - [Fancy Search Engines](#search)
-- [Google Hacking](#gh)
+- [Search Engine Dorks](#gh)
 - [Site Specific Tools](#site)
 - [Social Media Search/Enumeration](#social)
 - [Company/People Searching](#ppl)
@@ -31,9 +31,6 @@
 
 
 
-
-
-
 --------------------
 ### <a name="general"></a>General
 * **General**
@@ -45,6 +42,7 @@
 	* [Open Source Intelligence Gathering 101 - appseco.com](https://blog.appsecco.com/open-source-intelligence-gathering-101-d2861d4429e3)
 	* [Open Source Intelligence Gathering 201 - appseco.com](https://blog.appsecco.com/open-source-intelligence-gathering-201-covering-12-additional-techniques-b76417b5a544)
 	* [Open Source Intelligence Gathering: Techniques, Automation, and Visualization - Christopher Maddalena](https://posts.specterops.io/gathering-open-source-intelligence-bee58de48e05)
+	* [The OSINT Connection: Intelligence In Executive Protection - protectioncircle.com](https://protectioncircle.org/2017/03/06/the-osint-connection-intelligence-in-executive-protection/)
 * **Alerting**
 	* [Google Trends](https://trends.google.com/trends/)
 		* See what are the popular related topics people are searching for. This will help widen your search scope.
@@ -93,6 +91,9 @@
 	* [Glass Reflections in Pictures + OSINT = More Accurate Location](http://blog.ioactive.com/2014/05/glass-reflections-in-pictures-osint.html)
 	* [Exploring the Github Firehose](http://blog.scalyr.com/2013/10/exploring-the-github-firehose/)
 	* [OSINT Through Sender Policy Framework (SPF) Records](https://community.rapid7.com/community/infosec/blog/2015/02/23/osint-through-sender-policy-framework-spf-records)
+	* [Hunting with ꓘamerka 2.0 aka FIST (Flickr, Instagram, Shodan, Twitter)](https://hackernoon.com/hunting-with-%EA%93%98amerka-2-0-aka-fist-flickr-instagram-shodan-twitter-ca363f12562a)
+	* [ꓘamerka 2.0 aka FIST (Flickr, Instagram, Shodan, Twitter)](https://github.com/woj-ciech/kamerka)
+		* Build interactive map of cameras, printers, tweets and photos. The script creates a map of cameras, printers, tweets and photos based on your coordinates. Everything is clearly presented in form of interactive map with icons and popups.
 * **Talks & Presentations**
 	* [Cognitive Bias and Critical Thinking in Open Source Intelligence - Defcamp 2014](https://www.youtube.com/watch?v=pVAM21UERLU&index=24&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH)
 	* [Dark Arts of OSINT Skydogcon](https://www.youtube.com/watch?v=062pLOoZhk8)
@@ -200,9 +201,18 @@
 		* Domain name permutation engine for detecting typo squatting, phishing and corporate espionage
 	* [typofinder](https://github.com/nccgroup/typofinder)
 		* Typofinder for domain typo discovery
+* **Domain Recon**
+	* **Tools**
+		* [Waybackpack](https://github.com/jsvine/waybackpack)
+			* Waybackpack is a command-line tool that lets you download the entire Wayback Machine archive for a given URL.
+		* [domain - jhaddix](https://github.com/jhaddix/domain)
+			* Recon-ng and Alt-DNS are awesome. This script combines the power of these tools with the ability to run multiple domains within the same session.  TLDR; I just want to do my subdomain discovery via ONE command and be done with it. Only 1 module needs an api key (/api/google_site) find instructions for that on the recon-ng wiki. Script to enumerate subdomains, leveraging recon-ng. Uses google scraping, bing scraping, baidu scraping, yahoo scraping, netcraft, and bruteforces to find subdomains. Plus resolves to IP
+		* [check0365](https://github.com/vysecurity/checkO365)
+			* checkO365 is a tool to check if a target domain is using O365
 * **Email Gathering/Reconnaissance** <a name="email"></a>
 	* **Articles/Writeups**
 		* [OSINT Through Sender Policy Framework Records](https://community.rapid7.com/community/infosec/blog/2015/02/23/osint-through-sender-policy-framework-spf-records)
+		* [The most complete guide to finding anyone’s email - Timur Daudpota](https://www.blurbiz.io/blog/the-most-complete-guide-to-finding-anyones-email)
 	* **Tools**
 		* [SimplyEmail](https://github.com/killswitch-GUI/SimplyEmail)
 			* What is the simple email recon tool? This tool was based off the work of theHarvester and kind of a port of the functionality. This was just an expansion of what was used to build theHarvester and will incorporate his work but allow users to easily build Modules for the Framework. Which I felt was desperately needed after building my first module for theHarvester.
@@ -213,6 +223,8 @@
 			* For use with Kali Linux. Custom bash scripts used to automate various pentesting tasks.
 		* [Cr3dOv3r](https://github.com/D4Vinci/Cr3dOv3r)
 			* Cr3dOv3r simply you give it an email then it does two simple jobs (but useful): Search for public leaks for the email and if it any, it returns with all available details about the leak (Using hacked-emails site API). Now you give it this email's old or leaked password then it checks this credentials against 16 websites (ex: facebook, twitter, google...) then it tells you if login successful in any website!
+		* [Infoga](https://github.com/m4ll0k/Infoga)
+			* Infoga is a tool gathering email accounts informations (ip,hostname,country,...) from different public source (search engines, pgp key servers and shodan) and check if emails was leaked using haveibeenpwned.com API. Is a really simple tool, but very effective for the early stages of a penetration test or just to know the visibility of your company in the Internet.
 * **Facial Mapping Data**
 	* [Social Mapper](https://github.com/SpiderLabs/social_mapper)
 		* Social Mapper is a Open Source Intelligence Tool that uses facial recognition to correlate social media profiles across different sites on a large scale. It takes an automated approach to searching popular social media sites for targets names and pictures to accurately detect and group a person’s presence, outputting the results into report that a human operator can quickly review.
@@ -250,15 +262,18 @@
 		* Description: The OSINT OPSEC Tool monitors multiple 21st Century OSINT sources real-time for keywords, then analyses the results, generates alerts, and maps trends of the data, finding all sorts of info people probably don't want others to see... 
 	* [Pattern](https://github.com/clips/pattern/blob/master/README.md)
 		* Pattern is a web mining module for Python. It has tools for: Data Mining: web services (Google,; Twitter, Wikipedia), web crawler, HTML DOM parser; Natural Language Processing: part-of-speech taggers, n-gram search, sentiment analysis, WordNet; Machine Learning: vector space model, clustering, classification (KNN, SVM, Perceptron); Network Analysis: graph centrality and visualization.
-* **Google Hacking** <a name="gh"></a>
+* **Search Engine Dorks** <a name="gh"></a>
 	* **101**
 		* [Google Hacking for Penetration Testers](https://www.blackhat.com/presentations/bh-europe-05/BH_EU_05-Long.pdf)
+		* [How to Find (Almost) Anything on Google - Barbara Davidson](https://www.netcredit.com/blog/how-to-find-anything-on-google/)
 	* **Databases/Lists**
 		* [ExpoitDB archive of the google hacking database](http://www.exploit-db.com/google-dorks/)
 		* [Google Hacking Database](http://www.hackersforcharity.org/ghdb/)
 			* We call them 'googledorks': Inept or foolish people as revealed by Google. Whatever you call these fools, you've found the center of the Google Hacking Universe! 
 		* [4500+ Google Dork List 2018 - conzu.de](http://www.conzu.de/en/google-dork-liste-2018-conzu/)
 	* **Tools**
+		* [GooHak](https://github.com/1N3/Goohak)
+			* Automatically launch google hacking queries against a target domain to find vulnerabilities and enumerate a target.
 		* [Google Hacking - Search Diggity tool](http://www.bishopfox.com/resources/tools/google-hacking-diggity/attack-tools/)
 			* SearchDiggity 3.1 is the primary attack tool of the Google Hacking Diggity Project. It is Bishop Fox’s MS Windows GUI application that serves as a front-end to the most recent versions of our Diggity tools: GoogleDiggity, BingDiggity, Bing LinkFromDomainDiggity, CodeSearchDiggity, DLPDiggity, FlashDiggity, MalwareDiggity, PortScanDiggity, SHODANDiggity, BingBinaryMalwareSearch, and NotInMyBackYard Diggity.
 		* [GoogD0rker](https://github.com/ZephrFish/GoogD0rker)
@@ -273,6 +288,7 @@
 	* **Facebook**
 		* [pymk-inspector](https://github.com/GMG-Special-Projects-Desk/pymk-inspector/blob/master/README.md)
 			* The pymk-inspector is a tool built by Gizmodo's Special Projects Desk that we used for our investigation into Facebook's people you may know (pymk) algorithm.
+		* [Find FB profiles by Email](https://booleanstrings.com/2018/05/06/how-to-identify-facebook-profiles-from-email-addresses/)
 	* **Github**
 		* [profile-summary-for-github](https://github.com/tipsy/profile-summary-for-github)
 			* Tool for visualizing GitHub profiles
@@ -297,6 +313,7 @@
 		* [Gathering Usernames from Google LinkedIn Results Using Burp Suite Pro - BHIS](https://www.blackhillsinfosec.com/gathering-usernames-from-google-linkedin-results-using-burp-suite-pro/)
 		* [GatherContacts](https://github.com/clr2of8/GatherContacts)
 			* A Burp Suite Extension to pull Employee Names from Google and Bing LinkedIn Search Results.
+		* [linkedin2username](https://github.com/initstring/linkedin2username)
 	* **Tinder**
 		* [OSINT: Advanced tinder capture](https://www.learnallthethings.net/osmosis)
 	* **Twitter**
@@ -309,6 +326,9 @@
 			* Tweets metadata scraper & activity analyzer
 		* [Tinfoleak](http://vicenteaguileradiaz.com/tools/)
 			* tinfoleak is a simple Python script that allow to obtain: basic information about a Twitter user (name, picture, location, followers, etc.); devices and operating systems used by the Twitter user; applications and social networks used by the Twitter user; place and geolocation coordinates to generate a tracking map of locations visited; show user tweets in Google Earth!; download all pics from a Twitter user; hashtags used by the Twitter user and when are used (date and time); user mentions by the the Twitter user and when are occurred (date and time); topics used by the Twitter user
+		* [How to Find the Twitter ID from an Email Address - booleanstrings.com](https://booleanstrings.com/2018/05/02/how-to-find-the-twitter-id-from-an-email-address/)
+		* [Twint](https://github.com/twintproject/twint)
+			* Formerly known as Tweep, Twint is an advanced Twitter scraping tool written in Python that allows for scraping Tweets from Twitter profiles without using Twitter's API.  Twint utilizes Twitter's search operators to let you scrape Tweets from specific users, scrape Tweets relating to certain topics, hashtags & trends, or sort out sensitive information from Tweets like e-mail and phone numbers. I find this very useful, and you can get really creative with it too.  Twint also makes special queries to Twitter allowing you to also scrape a Twitter user's followers, Tweets a user has liked, and who they follow without any authentication, API, Selenium, or browser emulation.
 * **Social Media Search/Enumeration** <a name="social"></a>
 	* [CheckUsernames](http://checkusernames.com/)
 		* Check the use of your brand or username on 160 Social Networks

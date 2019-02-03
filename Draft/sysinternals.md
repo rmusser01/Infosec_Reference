@@ -19,20 +19,6 @@
 * Further categorize sections (network vs memory vs exploit mitigations vs feature)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---------------------
 ## <a name="general">General Internals</a>
 * [C Function Call Conventions and the Stack](https://archive.is/o2nD5)

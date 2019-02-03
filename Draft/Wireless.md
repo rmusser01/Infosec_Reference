@@ -28,32 +28,12 @@
 * Fix ToC
 * Add 101 stuff
 * Add SMS Standards/related
-	* [#root via SMS: 4G access level security assessment](https://conference.hitb.org/hitbsecconf2015ams/materials/D1T1%20-%20T.%20Yunusov%20K.%20Nesterov%20-%20Bootkit%20via%20SMS.pdf)
+	
 * add krack
 
 * [RPL Attacks Framework](https://github.com/dhondta/rpl-attacks)
 	* This project is aimed to provide a simple and convenient way to generate simulations and deploy malicious motes for a Wireless Sensor Network (WSN) that uses Routing Protocol for Low-power and lossy devices (RPL) as its network layer. With this framework, it is possible to easily define campaign of simulations either redefining RPL configuration constants, modifying single lines from the ContikiRPL library or using an own external RPL library. Moreover, experiments in a campaign can be generated either based on a same or a randomized topology for each simulation.
-
-
-https://docs.google.com/presentation/d/19A1JWyOTueZvD8AksqCxtxriNJJgj0vPdq3cNTwndf4/mobilepresent#slide=id.g35506ef05e_0_7
-https://alter-attack.net/
-
-https://github.com/ZerBea/hcxtools
-https://github.com/riverloopsec/tumblerf
-https://github.com/mikeryan/crackle
-https://github.com/DigitalSecurity/btlejuice/blob/master/README.md
-https://github.com/noble/noble
-https://hashcat.net/forum/thread-7717.html
-https://www.airxperts.net/index.php/2018/07/10/improving-wireshark-for-wifi-packet-analysis/
-
-
-
-
-
-* [Ghosts from the Past: Authentication bypass and OEM backdoors in WiMAX routers](http://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html)
-* [One Billion Apples' Secret Sauce: Recipe for the Apple Wireless Direct Link Ad hoc Protocol](https://arxiv.org/abs/1808.03156)
 * [Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
-
 
 
 
@@ -75,6 +55,10 @@ https://www.airxperts.net/index.php/2018/07/10/improving-wireshark-for-wifi-pack
 	* [PHYs, MACs, and SDRs - Robert Ghilduta](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/17-phys-macs-and-sdrs-robert-ghilduta)
 		* The talk will touch on a variety of topics and projects that have been under development including YateBTS, PHYs, MACs, and GNURadio modules. The talk will deal with GSM/LTE/WiFi protocol stacks.
 	* [Intro to SDR and RF Signal Analysis](https://www.elttam.com.au/blog/intro-sdr-and-rf-analysis/)
+* **Fuzzing**
+	* [Unifying RF Fuzzing Techniques under a Common API: Introducing unfAPI - Matt Knight, Ryan Speers - Troopers18](https://www.youtube.com/watch?v=sfV_O_dZycE)
+		* [TumbleRF](https://github.com/riverloopsec/tumblerf)
+			* TumbleRF is a framework that orchestrates the application of fuzzing techniques to RF systems. While fuzzing has always been a powerful mechanism for fingerprinting and enumerating bugs within software systems, the application of these techniques to wireless and hardware systems has historically been nontrivial due to fragmented and siloed tools. TumbleRF aims to enable RF fuzzing by providing an API to unify these techniques across protocols, radios, and drivers.
 * **Testing**
 	* [Introduction to Wireless Security Testing](http://www.grymoire.com/Security/Hardware.html)
 	* [RF Testing Methodology - NCCGroup](https://nccgroup.github.io/RFTM/)
@@ -98,7 +82,7 @@ https://www.airxperts.net/index.php/2018/07/10/improving-wireshark-for-wifi-pack
 	* [RF-Capture](http://rfcapture.csail.mit.edu/)
 		* RF-Capture is a device that captures a human figure through walls and occlusions. It transmits wireless signals and reconstructs a human figure by analyzing the signals' reflections. RF-Capture does not require the person to wear any sensor, and its transmitted power is 10,000 times lower than that of a standard cell-phone.
 		* [Paper](http://rfcapture.csail.mit.edu/rfcapture-paper.pdf)
-
+	* [One Billion Apples' Secret Sauce: Recipe for the Apple Wireless Direct Link Ad hoc Protocol](https://arxiv.org/abs/1808.03156)
 
 
 ----------------------
@@ -129,23 +113,15 @@ https://www.airxperts.net/index.php/2018/07/10/improving-wireshark-for-wifi-pack
 	* [Bluetooth Penetration Testing Framework - 2011](http://bluetooth-pentest.narod.ru/)
 	* [Hacking Bluetooth connections - hackingandsecurity](https://hackingandsecurity.blogspot.com/2017/08/hacking-bluetooth-connections.html?view=timeslide)
 * **Tools**
-	* [crackle](https://github.com/mikeryan/crackle)
-		* cracks BLE Encryption (AKA Bluetooth Smart).  crackle exploits a flaw in the BLE pairing process that allows an attacker to guess or very quickly brute force the TK (Temporary Key). With the TK and other data collected from the pairing process, the STK (Short Term Key) and later the LTK (Long Term Key) can be collected.
 	* [PyBT](https://github.com/mikeryan/PyBT)
 		* PyBT is a crappy half implementation of a Bluetooth stack in Python. At the moment it only supports Bluetooth Smart (BLE).
 	* [Bluetooth NSA Toolset Talk/Attacks video](http://www.irongeek.com/i.php?page=videos/defcon-wireless-village-2014/15-the-nsa-playset-bluetooth-smart-attack-tools-mike-ryan)
-	* [gattacker](https://github.com/securing/gattacker)
-		* A Node.js package for BLE (Bluetooth Low Energy) Man-in-the-Middle & more
-	* [noble](https://github.com/sandeepmistry/noble)
-		* A Node.js BLE (Bluetooth Low Energy) central module.
-	* [bleno](https://github.com/sandeepmistry/bleno)
-		* A Node.js module for implementing BLE (Bluetooth Low Energy) peripherals.
-	* [crackle](https://github.com/mikeryan/crackle/)
-		* crackle cracks BLE Encryption (AKA Bluetooth Smart). crackle exploits a flaw in the BLE pairing process that allows an attacker to guess or very quickly brute force the TK (Temporary Key). With the TK and other data collected from the pairing process, the STK (Short Term Key) and later the LTK (Long Term Key) can be collected. With the STK and LTK, all communications between the master and the slave can be decrypted.
 	* [bluepot](https://github.com/andrewmichaelsmith/bluepot)
 		* Bluepot is a Bluetooth Honeypot written in Java, it runs on Linux.
 	* [BlueHydra](https://github.com/pwnieexpress/blue_hydra)
 		* BlueHydra is a Bluetooth device discovery service built on top of the bluez library. BlueHydra makes use of ubertooth where available and attempts to track both classic and low energy (LE) bluetooth devices over time.
+	* [crackle](https://github.com/mikeryan/crackle)
+		* crackle exploits a flaw in the BLE pairing process that allows an attacker to guess or very quickly brute force the TK (Temporary Key). With the TK and other data collected from the pairing process, the STK (Short Term Key) and later the LTK (Long Term Key) can be collected.
 * **Bluetooth Low Energy**
 	* **101**
 	* **Articles/Presentations/Talks/Writeups**
@@ -158,6 +134,19 @@ https://www.airxperts.net/index.php/2018/07/10/improving-wireshark-for-wifi-pack
 		* [Hacking Bluetooth Low Energy: I Am Jack's Heart Monitor - Toorcon2012](https://www.youtube.com/watch?v=4POOiVrdnX8)
 			* Bluetooth Low Energy (BTLE) is the hottest new mode in the latest and greatest Bluetooth 4.0 spec. A new generation of wireless devices, including medical devices will be implemented using this mode. BTLE is much simpler than classic Bluetooth. Simpler to implement, simpler to debug, and hey, simpler to hack. I present the progress of a BTLE sniffer/smasher/smusher written for Ubertooth in this WIP talk. 
 			* [Slides](https://lacklustre.net/bluetooth/hacking_btle-i_am_jacks_heart_monitor-mikeryan-toorcon_2012.pdf)
+	* **Tools**
+		* [BtleJuice](https://github.com/DigitalSecurity/btlejuice/blob/master/README.md)
+			* BtleJuice is a complete framework to perform Man-in-the-Middle attacks on Bluetooth Smart devices (also known as Bluetooth Low Energy).
+		* [crackle](https://github.com/mikeryan/crackle)
+			* cracks BLE Encryption (AKA Bluetooth Smart).  crackle exploits a flaw in the BLE pairing process that allows an attacker to guess or very quickly brute force the TK (Temporary Key). With the TK and other data collected from the pairing process, the STK (Short Term Key) and later the LTK (Long Term Key) can be collected.
+		* [gattacker](https://github.com/securing/gattacker)
+			* A Node.js package for BLE (Bluetooth Low Energy) Man-in-the-Middle & more
+		* [noble](https://github.com/sandeepmistry/noble)
+			* A Node.js BLE (Bluetooth Low Energy) central module.
+		* [bleno](https://github.com/sandeepmistry/bleno)
+			* A Node.js module for implementing BLE (Bluetooth Low Energy) peripherals.
+		* [crackle](https://github.com/mikeryan/crackle/)
+			* crackle cracks BLE Encryption (AKA Bluetooth Smart). crackle exploits a flaw in the BLE pairing process that allows an attacker to guess or very quickly brute force the TK (Temporary Key). With the TK and other data collected from the pairing process, the STK (Short Term Key) and later the LTK (Long Term Key) can be collected. With the STK and LTK, all communications between the master and the slave can be decrypted.
 * **Papers**
 	* [Cracking the Bluetooth PIN - Yaniv Shaked and Avishai Wool](http://www.eng.tau.ac.il/~yash/shaked-wool-mobisys05/)
 		* This paper describes the implementation of an attack on the Bluetooth security mechanism. Specifically, we describe a passive attack, in which an attacker can find the PIN used during the pairing process. We then describe the cracking speed we can achieve through three optimizations methods. Our fastest optimization employs an algebraic representation of a central cryptographic primitive (SAFER+) used in Bluetooth. Our results show that a 4-digit PIN can be cracked in less than 0.3 sec on an old Pentium III 450MHz computer, and in 0.06 sec on a Pentium IV 3Ghz HT computer. 
@@ -238,8 +227,11 @@ https://www.airxperts.net/index.php/2018/07/10/improving-wireshark-for-wifi-pack
 		* [4G LTE Architecture and Security Concerns](http://www.secforce.com/blog/2014/03/4g-lte-architecture-and-security-concerns/)
 		* [LTEInspector : A Systematic Approach for Adversarial Testing of 4G LTE](http://wp.internetsociety.org/ndss/wp-content/uploads/sites/25/2018/02/ndss2018_02A-3_Hussain_paper.pdf)
 			* In this paper, we investigate the security and privacy of the three critical procedures of the 4G LTE protocol (i.e., attach, detach, and paging), and in the process, uncover potential design flaws of the protocol and unsafe practices employed by the stakeholders. For exposing vulnerabilities, we propose a model-based testing approach LTEInspector which lazily combines a symbolic model checker and a cryptographic protocol verifier in the symbolic attacker model. Using LTEInspector, we have uncovered 10 new attacks along with 9 prior attacks, cate- gorized into three abstract classes (i.e., security, user privacy, and disruption of service), in the three procedures of 4G LTE. Notable among our findings is the authentication relay attack that enables an adversary to spoof the location of a legitimate user to the core network without possessing appropriate credentials. To ensure that the exposed attacks pose real threats and are indeed realizable in practice, we have validated 8 of the 10 new attacks and their accompanying adversarial assumptions through experimentation in a real testbed
+		* [Breaking LTE on Layer Two](https://alter-attack.net/)
+			* Our security analysis of the mobile communication standard LTE ( Long-Term Evolution, also know as 4G) on the data link layer (so called layer two) has uncovered three novel attack vectors that enable different attacks against the protocol. On the one hand, we introduce two passive attacks that demonstrate an identity mapping attack and a method to perform website fingerprinting. On the other hand, we present an active cryptographic attack called aLTEr attack that allows an attacker to redirect network connections by performing DNS spoofing due to a specification flaw in the LTE standard. In the following, we provide an overview of the website fingerprinting and aLTE attack, and explain how we conducted them in our lab setup. Our work will appear at the 2019 IEEE Symposium on Security & Privacy and all details are available in a pre-print version of the paper.
 * **SMS**
 	* [Binary SMS - The old backdoor to your new thing - Contextis](https://www.contextis.com/blog/binary-sms-the-old-backdoor-to-your-new-thing)
+	* [#root via SMS: 4G access level security assessment](https://conference.hitb.org/hitbsecconf2015ams/materials/D1T1%20-%20T.%20Yunusov%20K.%20Nesterov%20-%20Bootkit%20via%20SMS.pdf)
 * **SS7**
 	* **101**
 	* **Articles/Presentations/Talks/Writeups**
@@ -323,8 +315,10 @@ https://www.airxperts.net/index.php/2018/07/10/improving-wireshark-for-wifi-pack
 	* **WPS**
 		* [pixiewps](https://github.com/wiire/pixiewps)
 			* Pixiewps is a tool written in C used to bruteforce offline the WPS pin exploiting the low or non-existing entropy of some APs (pixie dust attack). It is meant for educational purposes only. All credits for the research go to Dominique Bongard.
-* **Cracking Passwords**
+	* **Cracking Passwords**
 		* [Wireless Password Cracking With Cloud Clusters](http://www.commonexploits.com/wireless-password-cracking-with-cloud-clusters/)
+		* [hcxtools](https://github.com/ZerBea/hcxtools)
+			* Portable solution for capturing wlan traffic and conversion to hashcat formats (recommended by hashcat) and to John the Ripper formats. hcx: h = hash, c = capture, convert and calculate candidates, x = different hashtypes
 * **Eduroam**
 	* **101**
 		* [The eduroam Architecture for Network Roaming - RFC 7593](https://tools.ietf.org/html/rfc7593)
@@ -414,6 +408,7 @@ https://www.airxperts.net/index.php/2018/07/10/improving-wireshark-for-wifi-pack
 		* Nexmon is our C-based firmware patching framework for Broadcom/Cypress WiFi chips that enables you to write your own firmware patches, for example, to enable monitor mode with radiotap headers and frame injection.
 	* [BoopSuite](https://github.com/MisterBianco/BoopSuite/)
 		* BoopSuite a wireless pentesting suite designed to emulate aircrack-ng functionality for personal growth.
+	* [New attack on WPA/WPA2 using PMKID - atom - hashcat.net](https://hashcat.net/forum/thread-7717.html)
 * **Why not?**
 	* [Start Your Own (Wireless) ISP](https://startyourownisp.com/)
 
@@ -529,6 +524,11 @@ https://www.airxperts.net/index.php/2018/07/10/improving-wireshark-for-wifi-pack
 
 
 
+* **Wi-Max**
+	* [Ghosts from the Past: Authentication bypass and OEM backdoors in WiMAX routers](http://blog.sec-consult.com/2017/06/ghosts-from-past-authentication-bypass.html)
+
+
+--------------------------------
 ### <a name="zigbee">Zigbee Wireless Networks</a>
 * **101**
 	* [Zigbee - Wikipedia](https://en.wikipedia.org/wiki/Zigbee)

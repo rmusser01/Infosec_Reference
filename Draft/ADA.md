@@ -26,12 +26,20 @@
 * [Other](#Other)
 
 
-
-
-
 #### Sort
+
 * Redo formatting
 
+
+
+
+
+
+
+
+https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-Slava-Makkaveev-and-Avi-Bashan-Unboxing-Android.pdf
+
+https://github.com/ernw/AndroTickler
 * [Dynamically Inject a Shared Library Into a Running Process on Android/ARM](https://www.evilsocket.net/2015/05/01/dynamically-inject-a-shared-library-into-a-running-process-on-androidarm/)
 * [Android Native API Hooking With Library Injection and ELF Introspection](https://www.evilsocket.net/2015/05/04/android-native-api-hooking-with-library-injecto/)
 * [ARM Inject](https://github.com/evilsocket/arminject)

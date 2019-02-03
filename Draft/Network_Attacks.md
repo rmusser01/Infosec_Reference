@@ -8,6 +8,7 @@
 - [Captive Portals](#captive-portal)
 - [DNS](#dns)
 - [D/DOS](#ddos)
+- [Hadoop](#hadoop)
 - [HNAP](#hnap)
 - [IDS/IPS Evasion](#evasion)
 - [ICMP](#icmp)
@@ -64,6 +65,11 @@
 	* BGP
 	* QUIC
 	* STUN
+	* Hadoop
+	* Fax
+
+
+
 
 
 
@@ -200,7 +206,8 @@
 			* SPScan is a tool written in Ruby that enumerates a SharePoint installation gathering information about the version and installed plugins.
 		* [SPartan](https://github.com/sensepost/SPartan)
 			* SPartan is a Frontpage and Sharepoint fingerprinting and attack tool
-
+		* [SharePwn](https://github.com/0rigen/SharePwn)
+			* A tool for auditing SharePoint security settings and identifying common security holes.
 
 
 
@@ -230,6 +237,9 @@
 		* [Management Plugin](https://www.rabbitmq.com/management.html)
 		* [File and Directory Locations](https://www.rabbitmq.com/relocate.html)
 		* [Credentials and Passwords](https://www.rabbitmq.com/passwords.html)
+* **Attacking**
+	* **ActiveMQ**
+		* [A Pentesters Guide to Hacking  ActiveMQ-Based JMS Applications - Gursev Singh Kalra](https://www.mcafee.com/enterprise/en-us/assets/white-papers/wp-pentesters-guide-hacking-activemq-jms-applications.pdf)
 * **Tools**
 	* [Enteletaor](https://github.com/cr0hn/enteletaor)
 		* Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.
@@ -318,6 +328,8 @@
 * **Service**
 	* [DNS Dumpster](https://www.DNSdumpster.com)
 		* free domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process
+	* [DNS-Trails](https://securitytrails.com/dns-trails)
+		* The World's Largest Repository of historical DNS data
 * **Tools**
 	* [DNSRecon](https://github.com/darkoperator/dnsrecon)
 		* [Quick Reference Guide](http://pentestlab.wordpress.com/2012/11/13/dns-reconnaissance-dnsrecon/)
@@ -329,7 +341,7 @@
 		* a tool to enumerate the resource records of a DNS zone using its DNSSEC NSEC or NSEC3 chain
 	* [passivedns](https://github.com/gamelinux/passivedns)
 		* A tool to collect DNS records passively
-	* [DNS Recon](https://github.com/darkoperator/dnsrecon)
+	* [DNS Recon]DNS(https://github.com/darkoperator/dnsrecon)
 	* [DNSEnum](https://github.com/fwaeytens/dnsenum)
 		* Multithreaded perl script to enumerate DNS information of a domain and to discover non-contiguous ip blocks.
 	* [Bluto](https://github.com/darryllane/Bluto)
@@ -361,6 +373,21 @@
 		* A utility for arming (creating) many bees (micro EC2 instances) to attack (load test) targets (web applications).
 
 
+
+
+
+---------------------
+### <a name="fax"></a> Fax
+* [What the Fax?! - Eyal Itkin, Yaniv Balmas - DEF CON 26](https://www.youtube.com/watch?v=qLCE8spVX9Q)
+	* Join us as we take you through the strange world of embedded operating systems, 30-year-old protocols, museum grade compression algorithms, weird extensions and undebuggable environments. See for yourself first-hand as we give a live demonstration of the first ever full fax exploitation, leading to complete control over the entire device as well as the network, using nothing but a standard telephone line. 
+
+
+---------------------
+### <a name="hadoop"></a>Hadoop
+* **101**
+* **General/Articles/Writeups/Talks**
+	* [Hadoop Attack Library](https://github.com/wavestone-cdt/hadoop-attack-library)
+		* A collection of pentest tools and resources targeting Hadoop environments
 
 
 
@@ -656,7 +683,7 @@
 		* A TTL monitor utility for identifying route changes, port forwards, intrusion responses, and more
 	* [Saving Polar Bears When Banner Grabbing](http://blog.ioactive.com/2015/07/saving-polar-bears-when-banner-grabbing.html)
 	* [polarbearscan](http://santarago.org/pbscan.html)
-		*  polarbearscan is an attempt to do faster and more efficient banner grabbing and port scanning. It combines two different ideas which hopefully will make it somewhat worthy of your attention and time.  The first of these ideas is to use stateless SYN scanning using cryptographically protected cookies to parse incoming acknowledgements. To the best of the author's knowledge this technique was pioneered by Dan Kaminsky in scanrand. Scanrand was itself part of Paketto Keiretsu, a collection of scanning utilities, and it was released somewhere in 2001-2002. A mirror of this code can be found at Packet Storm. The second idea is use a patched userland TCP/IP stack such that the scanner can restore state immediately upon receiving a cryptographically verified packet with both the SYN and ACK flags set. The userland stack being used here by polarbearscan is called libuinet[2](http://wanproxy.org/libuinet.shtml). Unlike some of the other userland TCP/IP stacks out there this one is very mature as it's simply a port of FreeBSD's TCP/IP stack. By patching the libuinet stack one can then construct a socket and complete the standard TCP 3-way handshake by replying with a proper ACK. Doing it this way a fully functional TCP connection is immediately established. This as opposed to other scanners (such as nmap) who would have to, after noting that a TCP port is open, now perform a full TCP connect via the kernel to do things such as banner grabbing or version scanning. A full TCP connect leads to a whole new TCP 3-way handshake being performed. This completely discards the implicit state which was built up by the initial two packets being exchanged between the hosts. By avoiding this one can reduce bandwidth usage and immediately go from detecting that a port is open to connecting to it. This connection can then simply sit back and receive data in banner grab mode or it could send out an HTTP request. 
+		* polarbearscan is an attempt to do faster and more efficient banner grabbing and port scanning. It combines two different ideas which hopefully will make it somewhat worthy of your attention and time.  The first of these ideas is to use stateless SYN scanning using cryptographically protected cookies to parse incoming acknowledgements. To the best of the author's knowledge this technique was pioneered by Dan Kaminsky in scanrand. Scanrand was itself part of Paketto Keiretsu, a collection of scanning utilities, and it was released somewhere in 2001-2002. A mirror of this code can be found at Packet Storm. The second idea is use a patched userland TCP/IP stack such that the scanner can restore state immediately upon receiving a cryptographically verified packet with both the SYN and ACK flags set. The userland stack being used here by polarbearscan is called libuinet[2](http://wanproxy.org/libuinet.shtml). Unlike some of the other userland TCP/IP stacks out there this one is very mature as it's simply a port of FreeBSD's TCP/IP stack. By patching the libuinet stack one can then construct a socket and complete the standard TCP 3-way handshake by replying with a proper ACK. Doing it this way a fully functional TCP connection is immediately established. This as opposed to other scanners (such as nmap) who would have to, after noting that a TCP port is open, now perform a full TCP connect via the kernel to do things such as banner grabbing or version scanning. A full TCP connect leads to a whole new TCP 3-way handshake being performed. This completely discards the implicit state which was built up by the initial two packets being exchanged between the hosts. By avoiding this one can reduce bandwidth usage and immediately go from detecting that a port is open to connecting to it. This connection can then simply sit back and receive data in banner grab mode or it could send out an HTTP request. 
 	* [fragroute](https://www.monkey.org/~dugsong/fragroute/fragroute.8.txt)
 	* [Ask and you shall receive (Part 2)](https://securityhorror.blogspot.com/2012/07/ask-and-you-shall-receive-part-2.html)
 	* [Layer Four Traceroute (LFT) and WhoB](http://pwhois.org/lft/)
@@ -672,6 +699,8 @@
 	* **Nmap**
 		* [Nmap](http://nmap.org/)
 			* Nmap ("Network Mapper") is a free and open source (license) utility for network discovery and security auditing. Many systems and network administrators also find it useful for tasks such as network inventory, managing service upgrade schedules, and monitoring host or service uptime. Nmap uses raw IP packets in novel ways to determine what hosts are available on the network, what services (application name and version) those hosts are offering, what operating systems (and OS versions) they are running, what type of packet filters/firewalls are in use, and dozens of other characteristics. It was designed to rapidly scan large networks, but works fine against single hosts. Nmap runs on all major computer operating systems, and official binary packages are available for Linux, Windows, and Mac OS X. In addition to the classic command-line Nmap executable, the Nmap suite includes an advanced GUI and results viewer (Zenmap), a flexible data transfer, redirection, and debugging tool (Ncat), a utility for comparing scan results (Ndiff), and a packet generation and response analysis tool (Nping). 
+		* [WebMap](https://github.com/Rev3rseSecurity/WebMap/blob/v2/master/README.md)
+			* Nmap Web Dashboard and Reporting
 		* **Articles/Papers**
 			* [NMAP - Port-Scanning: A Practical Approach Modified for better](https://www.exploit-db.com/papers/35425/)
 			* [NSEInfo](https://github.com/christophetd/nmap-nse-info/blob/master/README.md)
@@ -921,10 +950,11 @@
 	* [10 Places to Stick Your UNC Path - NetSPI](https://blog.netspi.com/10-places-to-stick-your-unc-path/)
 * **Re(p)lay Attack**
 	* [Places of Interest in Stealing NetNTLM Hashes - osandamalith.com/](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
+	* [Document Tracking: What You Should Know - justhaifei1](https://justhaifei1.blogspot.com/2013/10/document-tracking-what-you-should-know.html)
+	* [Microsoft Office – NTLM Hashes via Frameset - pentestlab.blog](https://pentestlab.blog/2017/12/18/microsoft-office-ntlm-hashes-via-frameset/)
 	* [ADV170014 NTLM SSO: Exploitation Guide - sysadminjd.com](http://www.sysadminjd.com/adv170014-ntlm-sso-exploitation-guide/)
 	* [SMB Relay Demystified and NTLMv2 Pwnage with Python](https://pen-testing.sans.org/blog/2013/04/25/smb-relay-demystified-and-ntlmv2-pwnage-with-python)
 	* [Stealing Windows Credentials Using Google Chrome - Bosko Stankovic](http://www.defensecode.com/whitepapers/Stealing-Windows-Credentials-Using-Google-Chrome.pdf)
-	* [Stealing Windows Credentials Using Google Chrome](http://www.defensecode.com/whitepapers/Stealing-Windows-Credentials-Using-Google-Chrome.pdf)
 	* [Windows: Local WebDAV NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=222&redir=1)
 	* [Hot Potato](https://foxglovesecurity.com/2016/01/16/hot-potato/)
 		* Hot Potato (aka: Potato) takes advantage of known issues in Windows to gain local privilege escalation in default configurations, namely NTLM relay (specifically HTTP->SMB relay) and NBNS spoofing.
@@ -1118,13 +1148,35 @@
 
 -----------------------
 ### <a name="webdav"></a> WebDAV
-* [WsgiDAV](https://github.com/mar10/wsgidav)
-	* WsgiDAV is a generic WebDAV server written in Python and based on WSGI.
+* **101**
+* **General/Articles/Writeups**
+* **Tools**
+	* [WsgiDAV](https://github.com/mar10/wsgidav)
+		* WsgiDAV is a generic WebDAV server written in Python and based on WSGI.
+
+
+
+
+-----------------------
+### <a name="wmi"></a> Windows Management Instrumentation(WMI)
+* **101**
+	* [Introduction to WMI Basics with PowerShell Part 1 (What it is and exploring it with a GUI) - Carlos Perez](https://www.darkoperator.com/blog/2013/1/31/introduction-to-wmi-basics-with-powershell-part-1-what-it-is.html)
+* **General/Articles/Writeups**
+	* [Post Exploitation Using WMIC (System Command) - hackingarticles.in](https://www.hackingarticles.in/post-exploitation-using-wmic-system-command/)
+* **Reference**
+	* [Connecting to WMI Remotely with C# - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/wmisdk/connecting-to-wmi-remotely-with-c-)
+* **Tools**
+
+
+
 
 
 ------------
 ### <a name="other">Other</a> (Breaking Routers)
 * [ASUS Router infosvr UDP Broadcast root Command Execution](https://github.com/jduck/asus-cmd)
+
+
+
 
 ------------
 #### <a name="misc"></a>MISC:

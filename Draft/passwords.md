@@ -20,8 +20,6 @@
 * add brute force tools
 
 
-
-
 ---------------------------
 ### <a name="general"></a> General
 * **101**
@@ -71,6 +69,7 @@
 			* A script to generate wordlists out of wikipedia pages. Should support most of the subdomains. Some ugly code may occur
 		* [CeWL](http://digi.ninja/projects/cewl.php)
 			* CeWL is a ruby app which spiders a given url to a specified depth, optionally following external links, and returns a list of words which can then be used for password crackers such as John the Ripper.
+			* [Comprehensive Guide on Cewl Tool - Raj Chandel](https://rajhackingarticles.blogspot.com/2018/11/hello-friends-in-this-article-we-are.html)
 * **Wordlists** <a name="wordlists"></a>
 	* [Probable-Wordlists](https://github.com/berzerk0/Probable-Wordlists)
 		* Wordlists sorted by probability originally created for password generation and testing
@@ -88,6 +87,7 @@
 	* [Oracle Default Password List](http://www.petefinnigan.com/default/default_password_list.htm)
 	* [Passhunt](https://github.com/Viralmaniar/Passhunt/blob/master/README.md)
 		* Passhunt is a simple tool for searching of default credentials for network devices, web applications and more. Search through 523 vendors and their 2084 default passwords.
+	* [Rocktastic: a word list on steroids - nettitude](https://labs.nettitude.com/blog/rocktastic/)
 * **Other**
 	* [HashView](https://github.com/hashview/hashview)
 		* Hashview is a tool for security professionals to help organize and automate the repetitious tasks related to password cracking. Hashview is a web application that manages hashcat (https://hashcat.net) commands. Hashview strives to bring constiency in your hashcat tasks while delivering analytics with pretty pictures ready for ctrl+c, ctrl+v into your reports.

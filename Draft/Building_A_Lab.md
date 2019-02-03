@@ -13,15 +13,15 @@
 
 
 
+
+
 -------------------------
 ### <a name="general"></a> General
 * This page is supposed to be a collection of resources for building a lab for performing various security related tasks. Generally, the idea is that you setup a local VM hypervisor software(VMware, Virtualbox) and then install a virtual machine to perform testing and analysis without any impact to your "physical" machine.
 
 
 
-* [Detection Lab](https://github.com/clong/DetectionLab)
-	* Vagrant & Packer scripts to build a lab environment complete with security tooling and logging best practices. This lab has been designed with defenders in mind. Its primary purpose is to allow the user to quickly build a Windows domain that comes pre-loaded with security tooling and some best practices when it comes to system logging configurations. It can easily be modified to fit most needs or expanded to include additional hosts.
-* [Set up your own malware analysis lab with VirtualBox, INetSim and Burp - Christophe Tafani-Dereeper](https://blog.christophetd.fr/malware-analysis-lab-with-virtualbox-inetsim-and-burp/)
+
 
 
 -------------------------
@@ -41,6 +41,15 @@
 	* [Windows Server Evaluation ISOs](https://www.microsoft.com/en-us/evalcenter/)
 	* [Vulnhub](https://www.Vulnhub.com)
 		* Vulnhub is a website dedicated to cataloging various vulnerable VMs from across the web. It also has a healthy community that creates and submits new VMs on a regular basis. As I write this now, I believe there is around 100 or so different VMs on Vulnhub, so you have a bit of variation.
+* **Automated Lab/Machine Creation Tools**
+	* Security Scenario Generator (SecGen)](https://github.com/cliffe/SecGen)
+		* SecGen creates vulnerable virtual machines so students can learn security penetration testing techniques. Boxes like Metasploitable2 are always the same, this project uses Vagrant, Puppet, and Ruby to create randomly vulnerable virtual machines that can be used for learning or for hosting CTF events.
+	* [Detection Lab](https://github.com/clong/DetectionLab)
+		* Vagrant & Packer scripts to build a lab environment complete with security tooling and logging best practices. This lab has been designed with defenders in mind. Its primary purpose is to allow the user to quickly build a Windows domain that comes pre-loaded with security tooling and some best practices when it comes to system logging configurations. It can easily be modified to fit most needs or expanded to include additional hosts.
+	* [Set up your own malware analysis lab with VirtualBox, INetSim and Burp - Christophe Tafani-Dereeper](https://blog.christophetd.fr/malware-analysis-lab-with-virtualbox-inetsim-and-burp/)
+	* [CyRIS: Cyber Range Instantiation System](https://github.com/crond-jaist/cyris)
+		* CyRIS is a tool for facilitating cybersecurity training by automating the creation and management of the corresponding training environments (a.k.a, cyber ranges) based on a description in YAML format. CyRIS is being developed by the Cyber Range Organization and Design (CROND) NEC-endowed chair at the Japan Advanced Institute of Science and Technology (JAIST).
+
 * **VMs Designed to be Attacked**
 	* [List of VMs that are preconfigured virtual machines](http://www.amanhardikar.com/mindmaps/PracticeUrls.html)
 	* [The Hacker Games - Hack the VM before it hacks you](http://www.scriptjunkie.us/2012/04/the-hacker-games/)
@@ -109,18 +118,25 @@
 		* [Active Directory Domain Services on AWS](https://aws.amazon.com/quickstart/architecture/active-directory-ds/)
 			* This Quick Start deploys Microsoft Active Directory Domain Services (AD DS) on the AWS Cloud. AD DS and Domain Name Server (DNS) are core Windows services that provide the foundation for many Microsoft-based solutions for the enterprise, including Microsoft SharePoint, Microsoft Exchange, and .NET Framework applications.
 * **Tools**
-	* [AutomatedLab](https://github.com/AutomatedLab/AutomatedLab)
-		* AutomatedLab is a provisioning solution and framework that lets you deploy complex labs on HyperV and Azure with simple PowerShell scripts. It supports all Windows operating systems from 2008 R2 to 2016 including Nano Server and various products like AD, Exchange, PKI, IIS, etc.
-	* [Automated-AD-Setup](https://github.com/OneLogicalMyth/Automated-AD-Setup)
-		* A PowerShell script that aims to have a fully configured domain built in under 10 minutes, but also apply security configuration and hardening.
-	* [Invoke-ADLabDeployer](https://github.com/outflanknl/Invoke-ADLabDeployer)
-		* Automated deployment of Windows and Active Directory test lab networks. Useful for red and blue teams.
-	* [ADImporter](https://github.com/curi0usJack/ADImporter)
-		* When you need to simulate a real Active Directory with thousands of users you quickly find that creating realistic test accounts is not trivial. Sure enough, you can whip up a quick PowerShell one-liner that creates any number of accounts, but what if you need real first and last names? Real (existing) addresses? Postal codes matching phone area codes? I could go on. The point is that you need two things: input files with names, addresses etc. And script logic that creates user accounts from that data. This blog post provides both.
-	* [youzer](https://github.com/SpiderLabs/youzer)
-		* Fake User Generator for Active Directory Environments
-	* [sheepl](https://github.com/SpiderLabs/sheepl)
-		* sheepl is a tool that aims to bridge the gap by emulating the behaviour that people normally undertake within a network environment. Using Python3 and AutoIT3 the output can be compiled into a standalone executable without any other dependancies that when executed on an Windows endpoint, executes a set of tasks randomly over a chosen time frame.
+	* **Lab Generation**
+		* [AutomatedLab](https://github.com/AutomatedLab/AutomatedLab)
+			* AutomatedLab is a provisioning solution and framework that lets you deploy complex labs on HyperV and Azure with simple PowerShell scripts. It supports all Windows operating systems from 2008 R2 to 2016 including Nano Server and various products like AD, Exchange, PKI, IIS, etc.	
+		* [Automated-AD-Setup](https://github.com/OneLogicalMyth/Automated-AD-Setup)
+			* A PowerShell script that aims to have a fully configured domain built in under 10 minutes, but also apply security configuration and hardening.
+		* [Invoke-ADLabDeployer](https://github.com/outflanknl/Invoke-ADLabDeployer)
+			* Automated deployment of Windows and Active Directory test lab networks. Useful for red and blue teams.
+	* **User Generation**
+		* [ADImporter](https://github.com/curi0usJack/ADImporter)
+			* When you need to simulate a real Active Directory with thousands of users you quickly find that creating realistic test accounts is not trivial. Sure enough, you can whip up a quick PowerShell one-liner that creates any number of accounts, but what if you need real first and last names? Real (existing) addresses? Postal codes matching phone area codes? I could go on. The point is that you need two things: input files with names, addresses etc. And script logic that creates user accounts from that data. This blog post provides both.
+		* [youzer](https://github.com/SpiderLabs/youzer)
+			* Fake User Generator for Active Directory Environments
+	* **User Simulation**
+		* [sheepl](https://github.com/SpiderLabs/sheepl)
+			* sheepl is a tool that aims to bridge the gap by emulating the behaviour that people normally undertake within a network environment. Using Python3 and AutoIT3 the output can be compiled into a standalone executable without any other dependancies that when executed on an Windows endpoint, executes a set of tasks randomly over a chosen time frame.
+
+
+
+
 
 
 

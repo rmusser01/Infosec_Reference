@@ -24,6 +24,7 @@
 	* [abovethefold.fyi](http://abovethefold.fyi/)
 * **Style Critiques**
 	* [TurboTax: a critical analysis & UX design teardown - Brandon Read](https://uxdesign.cc/turbotax-design-1a37356adc61)
+	* [How to Design for the Modern Web](https://medium.com/s/silicon-satire/how-to-design-for-the-modern-web-52eaa926bae2)
 * **General**
 	* [User Interface - Wikipedia](https://en.wikipedia.org/wiki/User_interface)
 	* [User Interface Design - Wikipedia](https://en.wikipedia.org/wiki/User_interface_design)

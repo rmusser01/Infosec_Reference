@@ -57,6 +57,16 @@ To Do:
     
 * [Cryptographic Right Answers - Latacora](https://latacora.singles/2018/04/03/cryptographic-right-answers.html)
 
+
+
+* [SIGMA: the ‘SIGn-and-MAc’ Approach to Authenticated Diffie-Hellman  and its Use in the IKE Protocols - Hugo Krawczyk](http://webee.technion.ac.il/~hugo/sigma-pdf.pdf)
+* [Generic Attacks against MAC algorithms - Gaëtan Leurent](https://who.rocq.inria.fr/Gaetan.Leurent/files/Generic_SAC15.pdf)
+* [Roughtime: Securing Time with Digital Signatures - CloudFlare](https://blog.cloudflare.com/roughtime/)
+* [Auditing KRACKs in Wi-Fi - Preventing all attacks is hard in practice By Mathy Vanhoef of imec-DistriNet, KU Leuven, 2018](https://www.krackattacks.com/followup.html)
+
+* [Hash-based Signatures: An illustrated Primer - Matthew Green](https://blog.cryptographyengineering.com/2018/04/07/hash-based-signatures-an-illustrated-primer/)
+
+
 -----
 ### <a name="general">General Information</a>
 * **101** <a name="101"></a>
@@ -127,6 +137,8 @@ To Do:
 * **History**<a name="history"></a>
 * **Miscellaneous**<a name="misc"></a>
     * [SHA2017 Conference Videos](https://www.youtube.com/channel/UCHmPMdU0O9P_W6I1hNyvBIQ/videos)
+* **PGP**
+    * [Want to understand Pretty Good Privacy? Simulate it. - Tejaas Solanki](https://medium.freecodecamp.org/understanding-pgp-by-simulating-it-79248891325f)
 * **Secrets Management**<a name="secrets"></a>
     * [Secrets and LIE-abilities: The State of Modern Secret Management (2017)](https://medium.com/on-docker/secrets-and-lie-abilities-the-state-of-modern-secret-management-2017-c82ec9136a3d)
     * [Toward Robust Hidden Volumes Using Write-Only Oblivious RAM](https://eprint.iacr.org/2014/344.pdf) 
@@ -218,6 +230,7 @@ From: https://www.reddit.com/r/securityengineering/comments/7o2uzy/a_collection_
 * **Articles/Talks/Writeups**<a name="sart"></a>
     * [Poor Man's Guide to Troubleshooting TLS Failures](http://blogs.technet.com/b/tspring/archive/2015/02/23/poor-man-s-guide-to-troubleshooting-tls-failures.aspx)
     * [TLS 1.3 Implementations](https://github.com/tlswg/tls13-spec/wiki/Implementations)
+    * [TLS/SSL Vulnerabilities - GracefulSecurity](https://www.gracefulsecurity.com/tls-ssl-vulnerabilities/)
     * [s2n](https://github.com/awslabs/s2n)
         * s2n is a C99 implementation of the TLS/SSL protocols that is designed to be simple, small, fast, and with security as a priority. It is released and licensed under the Apache License 2.0.
 * **Papers**<a name="spapers"></a>
@@ -380,6 +393,8 @@ From: https://www.reddit.com/r/securityengineering/comments/7o2uzy/a_collection_
     * [The Willy Report: proof of massive fraudulent trading activity at Mt. Gox, and how it has affected the price of Bitcoin](https://willyreport.wordpress.com/2014/05/25/the-willy-report-proof-of-massive-fraudulent-trading-activity-at-mt-gox-and-how-it-has-affected-the-price-of-bitcoin/)
     * [Coinbase Insider Trading: Litecoin Edition](https://medium.com/@bitfinexed/coinbase-insider-trading-litecoin-edition-be64ead3facc)
     * [Best of Bitcoin Maximalist - Scammers, Morons, Clowns, Shills & BagHODLers - Inside The New New Crypto Ponzi Economics (Book Edition) - Trolly McTrollface, et al](https://bitsblocks.github.io/bitcoin-maximalist)
+* **Smart Contract Security**
+    * * [Practical Smart Contract Security Analysis and Exploitation— Part 1 - Bernhard Mueller](https://hackernoon.com/practical-smart-contract-security-analysis-and-exploitation-part-1-6c2f2320b0c)
 * **Talks/Presentations**
     * [Deanonymisation of Clients in Bitcoin P2P Network](http://orbilu.uni.lu/bitstream/10993/18679/1/Ccsfp614s-biryukovATS.pdf)
         * We present an effcient method to deanonymize Bitcoin users, which allows to link user pseudonyms to the IP addresses where the transactions are generated. Our techniques work for the most common and the most challenging scenario when users are behind NATs or firewalls of their ISPs. They allow to link transactions of a user behind a NAT and to distinguish connections and transactions of different users behind the same NAT. We also show that a natural countermeasure of using Tor or other anonymity services can be cut-out by abusing anti-DoS countermeasures of the Bitcoin network. Our attacks require only a few machines and have been experimentally verifed. The estimated success rate is between 11% and 60% depending on how stealthy an attacker wants to be. We propose several countermeasures to mitigate these new attacks.

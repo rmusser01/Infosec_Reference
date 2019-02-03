@@ -66,6 +66,8 @@
 		* pngcheck verifies the integrity of PNG, JNG and MNG files (by checking the internal 32-bit CRCs [checksums] and decompressing the image data); it can optionally dump almost all of the chunk-level information in the image in human-readable form. For example, it can be used to print the basic statistics about an image (dimensions, bit depth, etc.); to list the color and transparency info in its palette (assuming it has one); or to extract the embedded text annotations. This is a command-line program with batch capabilities.
 	* [pwntools](https://github.com/Gallopsled/pwntools)
 	* [CTF Scripts and PyInstaller (.py > .exe) ](http://www.primalsecurity.net/ctf-scripts-and-pyinstaller-py-exe/)
+	* [RSACtfTool](https://github.com/Ganapati/RsaCtfTool)
+		* RSA tool for ctf - uncipher data from weak public key and try to recover private key Automatic selection of best attack for the given public key
 * **Making Your Own CTF**<a name="make"></a>
 	* [AppJailLauncher](https://github.com/trailofbits/AppJailLauncher)
 		* CTF Challenge Framework for Windows 8 and above 

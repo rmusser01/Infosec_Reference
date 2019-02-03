@@ -12,13 +12,9 @@
 
 #### Sort
 Fix ToC
-* [OwnedCore](http://www.ownedcore.com/forums/)
-* [Cathook Training Software](https://github.com/nullifiedcat/cathook)
-* [PortAIO-Loader](https://github.com/PirateEmpire/PortAIO-Loader) 
-* [Fabien Sanglard's Website](http://fabiensanglard.net/)
-* [Hack the Vote 2016 CTF "The Wall" Solution](https://zerosum0x0.blogspot.com/2016/11/hack-vote-wall-solution.html)
-https://github.com/dsasmblr/game-hacking
-https://github.com/dsasmblr/hacking-online-games
+
+
+
 
 #### End Sort
 
@@ -208,6 +204,7 @@ https://github.com/dsasmblr/hacking-online-games
 	* **Breaking The Game**
 		* [Hacking the Source Engine](http://vallentinsource.com/hacking-source-engine)
 	* **Reverse Engineering**
+		* [Source SDK Server [Security Research Repo] - pyperanger](https://github.com/pyperanger/sourcengine)
 		* [+1,000,000 -0: Cloning a Game Using Game Hacking and Terabytes of Data](https://github.com/nickcano/gamehackingpres2016)
 			* In this talk, I'll provide a window into the warchest my team used to generate over a million lines of code. In particular, we created and used game hacks to process data from tens of millions of hours of in-game data and use the results to generate copies of a game's map, monsters, quests, items, spells, non-playable characters, and more. We also used a wiki crawler to obtain a large amount of data, generate additional code, and guide our cheat scripts in what to look for, clarify, and ignore. After explaining our end-game vision, I'll dive deep into the architecture of the game client, server and protocol. Once that's out of the way, I'll talk about the different types of hacks we used, how they work, and what data they were able to obtain. Once that's out of the way, I'll round out the story by explaining exactly what type of data we gathered and what parts of our toolkit we used to gather it.
 	* **Miscellaneous**
@@ -217,8 +214,7 @@ https://github.com/dsasmblr/hacking-online-games
 		* A simple base for internal Counter-Strike: Global Offensive cheats.
 	* [PubgPrivXcode85](https://github.com/TonyZesto/PubgPrivXcode85)
 		* Simple chams wallhack for Player Unknowns Battlegrounds using a D3D11DrawIndexed hook
-
-* [TruePlay - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/mt808781(v=vs.85).aspx)
+	* [TruePlay - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/mt808781(v=vs.85).aspx)
 *  **Game Trainers**
 	* [ugtrain](https://github.com/ugtrain/ugtrain)
 		* Universal Elite Game Trainer for CLI(linux game trainer)

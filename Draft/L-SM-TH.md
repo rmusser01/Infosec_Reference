@@ -6,6 +6,22 @@
 
 
 
+
+
+
+
+* **Osquery**
+	* [Using Osquery to Detect Reverse Shells on MacOS - Chris Long](https://www.clo.ng/blog/osquery_reverse_shell/)
+* **File Monitoring**
+	* [Practical PowerShell for IT Security, Part I: File Event Monitoring - varonis.com](https://www.varonis.com/blog/practical-powershell-for-it-security-part-i-file-event-monitoring/)
+
+
+* [Chronicles of a Threat Hunter: Hunting for In-Memory Mimikatz with Sysmon and ELK - Part I (Event ID 7) - Roberto Rodriguez](https://cyberwardog.blogspot.com/2017/03/chronicles-of-threat-hunter-hunting-for.html?m=1)
+* [Threat Hunting With Python Part 1 - Dan Gunter](https://dragos.com/blog/industry-news/threat-hunting-with-python-part-1/)
+* [Windows-Hunting](https://github.com/beahunt3r/Windows-Hunting)
+	* The Purpose of this repository is to aid windows threat hunters to look for some common artifacts during their day to day operations.
+
+
 ---------------------------
 ### Network Security Monitoring/Logging/Threat Hunting
 * **History**
@@ -124,11 +140,15 @@
 			* [Monitoring what matters – Windows Event Forwarding for everyone (even if you already have a SIEM.)](https://blogs.technet.microsoft.com/jepayne/2015/11/23/monitoring-what-matters-windows-event-forwarding-for-everyone-even-if-you-already-have-a-siem/)
 			* [Windows Event Forwarding Guidance](https://github.com/palantir/windows-event-forwarding) 
 				* Over the past few years, Palantir has a maintained an internal Windows Event Forwarding (WEF) pipeline for generating and centrally collecting logs of forensic and security value from Microsoft Windows hosts. Once these events are collected and indexed, alerting and detection strategies (ADS) can be constructed not only on high-fidelity security events (e.g. log deletion), but also for deviations from normalcy, such as unusual service account access, access to sensitive filesystem or registry locations, or installation of malware persistence. The goal of this project is to provide the necessary building blocks for organizations to rapidly evaluate and deploy WEF to a production environment, and centralize public efforts to improve WEF subscriptions and encourage adoption. While WEF has become more popular in recent years, it is still dramatically underrepresented in the community, and it is our hope that this project may encourage others to adopt it for incident detection and response purposes. We acknowledge the efforts that Microsoft, IAD, and other contributors have made to this space and wish to thank them for providing many of the subscriptions, ideas, and techniques that will be covered in this post.
-		* **Event Log**
+	* **Event Log**
+			* [Event Logging Structures - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/eventlog/event-logging-structures)
+			* [ Windows security audit events - ms.com](https://www.microsoft.com/en-us/download/details.aspx?id=50034)
+				*  This spreadsheet details the security audit events for Windows. 
 			* [Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
 				* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it-s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What-s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
 			* [Public:Windows Event Log Zero 2 Hero Slides](https://docs.google.com/presentation/d/1dkrldTTlN3La-OjWtkWJBb4hVk6vfsSMBFBERs6R8zA/edit#slide=id.g21acf94f3f_2_27)
 			* [Spotting the Adversary with Windows Event Log Monitoring - NSA](https://www.nsa.gov/ia/_files/app/Spotting_the_Adversary_with_Windows_Event_Log_Monitoring.pdf)
+			* [Advanced Audit Policy – which GPO corresponds with which Event ID - girl-germs.com](https://girl-germs.com/?p=363)
 	* **Parsing**
 		* [Parsing Text Logs with Message Analyzer - Microsoft](http://blogs.technet.com/b/messageanalyzer/archive/2015/02/23/parsing-text-logs-with-message-analyzer.aspx)
 	* **PowerShell**
@@ -171,6 +191,7 @@
 		* [License to Kill: Malware Hunting with the Sysinternals Tools](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/ATC-B308)
 		* [Utilizing SysInternal Tools for IT Pros](http://www.microsoftvirtualacademy.com/training-courses/utilizing-sysinternals-tools-for-it-pros#fbid=1IKsqgyvnWp)
 	* **Tools**
+		* **OSQuery**
 		* [ThreatHunting - GossiTheDog](https://github.com/GossiTheDog/ThreatHunting)
 			* Tools for hunting for threats.)
 		* [Windows-Hunting](https://github.com/beahunt3r/Windows-Hunting)
@@ -264,6 +285,8 @@
 		* **Tools**
 			* [ElastAlert](https://github.com/Yelp/elastalert)
 				* ElastAlert is a simple framework for alerting on anomalies, spikes, or other patterns of interest from data in Elasticsearch.
+		* [dejavu](https://github.com/appbaseio/dejavu)
+			* The Missing Web UI for Elasticsearch: Import, browse and edit data with rich filters and query views, create search UIs visually.
 	* **Kibana**
 		* **101**
 			* [Kibana](https://github.com/elasticsearch/kibana)

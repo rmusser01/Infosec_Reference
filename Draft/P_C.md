@@ -9,6 +9,12 @@
 
 
 
+SOX
+* [California S.B. 1386 - Wikipedia](https://en.wikipedia.org/wiki/California_S.B._1386)
+https://www.auditscripts.com/training/
+
+
+
 ------------
 ### <a name="general"></a>General
 * **General**
@@ -30,6 +36,13 @@
 	* [The “Big Picture” of Insider IT Sabotage Across U.S. Critical Infrastructures](http://web.stanford.edu/class/cs259d/readings/Infrastructure.pdf)
 	* [An Overview of Threat and Risk Assessment](https://www.sans.org/reading-room/whitepapers/auditing/overview-threat-risk-assessment-76)
 	* [The foundation is rotting and the basement is flooding: A deeper look at the implicit trust relationships in your organization](https://www.youtube.com/watch?v=nL64uj9Xm24)
+* **ISO**
+	* [ISO/IEC 27001 - Wikipedia](https://en.wikipedia.org/wiki/ISO/IEC_27001)
+	* [ISO/IEC 27000 family - Information security management systems](https://www.iso.org/isoiec-27001-information-security.html)
+		* The ISO/IEC 27000 family of standards helps organizations keep information assets secure.
+* **NIST**
+	* [NIST Special Publication 800-series - General Information](https://www.nist.gov/itl/nist-special-publication-800-series-general-information)
+		* Publications in NIST’s Special Publication (SP) 800 series present information of interest to the computer security community. The series comprises guidelines, recommendations, technical specifications, and annual reports of NIST’s cybersecurity activities.  SP 800 publications are developed to address and support the security and privacy needs of U.S. Federal Government information and information systems. NIST develops SP 800-series publications in accordance with its statutory responsibilities under the Federal Information Security Modernization Act (FISMA) of 2014, 44 U.S.C. § 3551 et seq., Public Law (P.L.) 113-283.  Created in 1990, the series reports on the Information Technology Laboratory’s research, guidelines, and outreach efforts in computer security, and its collaborative activities with industry, government, and academic organizations.
 * **Notable Malicious Occurances**
 	* [Moldovan bank fraud scandal - Wikipedia](https://en.wikipedia.org/wiki/Moldovan_bank_fraud_scandal)
 * **PCI**
@@ -37,6 +50,9 @@
 	* [PCI SSC Cloud  Computing  Guidelines - 4/2018](https://www.pcisecuritystandards.org/pdfs/PCI_SSC_Cloud_Guidelines_v3.pdf)
 	* [PCI DSS Quick Reference Guide - v3.2](https://www.pcisecuritystandards.org/documents/PCIDSS_QRGv3_2.pdf)
 	* [Guidance for PCI DSS Scoping and Network Segmentation - 2016](https://www.pcisecuritystandards.org/documents/Guidance-PCI-DSS-Scoping-and-Segmentation_v1.pdf)
+* **PII**
+	* [EU General Data Protection Regulation(GDPR)](https://gdpr-info.eu/)
+	* [GDPR - Wikipedia](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)
 * **Misellaneous**
 	* [Goodhart's Law - Wikipedia](https://en.m.wikipedia.org/wiki/Goodhart%27s_law)
 		* Goodhart's law is an adage named after economist Charles Goodhart, which has been phrased by Marilyn Strathern as: "When a measure becomes a target, it ceases to be a good measure."[1] One way in which this can occur is individuals trying to anticipate the effect of a policy and then taking actions which alter its outcome.

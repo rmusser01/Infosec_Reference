@@ -33,7 +33,6 @@
 
 
 
-
 --------------
 ### <a name="general"></a>General
 * **101**
@@ -47,6 +46,7 @@
 	* [Mobile Phone Data lookup](https://medium.com/@philipn/want-to-see-something-crazy-open-this-link-on-your-phone-with-wifi-turned-off-9e0adb00d024)
 	* [Privacy Online Test And Resource Compendium](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List/blob/master/README.md)
 	* [Winning and Quitting the Privacy Game What it REALLY takes to have True Privacy in the 21st Century - Derbycon 7](https://www.youtube.com/watch?v=bxQSu06yuZc)
+	* [We Should All Have Something To Hide - Moxie Marlinspike](https://moxie.org/blog/we-should-all-have-something-to-hide/)
 	* ['I've Got Nothing to Hide' and Other Misunderstandings of Privacy](http://papers.ssrn.com/sol3/papers.cfm?abstract_id=998565&)
 		* We live in a surveillance state. Law enforcement and intelligence agencies have access to a huge amount of data about us, enabling them to learn intimate, private details about our lives. In part, the ease with which they can obtain such information reflects the fact that our laws have failed to keep up with advances in technology. However, privacy enhancing technologies can offer real protections even when the law does not. That intelligence agencies like the NSA are able to collect records about every telephone call made in the United States, or engage in the bulk surveillance of Internet communications is only possible because so much of our data is transmitted in the clear. The privacy enhancing technologies required to make bulk surveillance impossible and targeted surveillance more difficult already exist. We just need to start using them.
 	* [The Gruqgs blog](http://grugq.tumblr.com/)
@@ -250,7 +250,10 @@
 		* [Slides](https://www.portalmasq.com/portal-defcon.pdf)
 	* [The NSA: Capabilities and Countermeasures** - Bruce Schneier - ShmooCon 2014](https://www.youtube.com/watch?v=D5JA8Ytk9EI)
 		* Edward Snowden has given us an unprecedented window into the NSA's surveillance activities. Drawing from both the Snowden documents and revelations from previous whistleblowers, I will describe the sorts of surveillance the NSA does and how it does it. The emphasis is on the technical capabilities of the NSA, not the politics of their actions. This includes how it conducts Internet surveillance on the backbone, but is primarily focused on their offensive capabilities: packet injection attacks from the Internet backbone, exploits against endpoint computers and implants to exfiltrate information, fingerprinting computers through cookies and other means, and so on. I will then talk about what sorts of countermeasures are likely to frustrate the NSA. Basically, these are techniques to raise the cost of wholesale surveillance in favor of targeted surveillance: encryption, target hardening, dispersal, and so on.
+	* [Wagging the Tail:Covert Passive Surveillance - Si, Agent X - DEF CON 26](https://www.youtube.com/watch?v=tYFOXeItRFM)
+		* This talk will focus on mobile and foot surveillance techniques used by surveillance teams. It will also include tips on identifying if you are under surveillance and how to make their life difficult.
 * **Papers**<a name="cpapers"></a>
+	* [Ghostbuster: Detecting the Presence of Hidden Eavesdroppers](https://synrg.csl.illinois.edu/papers/ghostbuster-mobicom18.pdf)
 	* [Exploiting Lawful Intercept to Wiretap the Internet](https://www.blackhat.com/presentations/bh-dc-10/Cross_Tom/BlackHat-DC-2010-Cross-Attacking-LawfulI-Intercept-wp.pdf)
 		* This paper will review Cisco's architecture for lawful intercept from asecurity perspective. We explain how a number of different weaknesses in its design coupled with publicly disclosed security vulnerabilities could enable a malicious person to access the interface and spy on communications without leaving a trace. We then provide a set of recommendations for the redesign of the interface as well as SNMP authentication in general to better mitigate the security risks. 
 	* [Protocol Misidentification Made Easy with Format-Transforming Encryption](https://kpdyer.com/publications/ccs2013-fte.pdf)
@@ -266,7 +269,9 @@
 	* [TapDance: End-to-Middle Anticensorship without Flow Blocking](https://jhalderm.com/pub/papers/tapdance-sec14.pdf)
 		* In response to increasingly sophisticated state-sponsored Internet censorship, recent work has proposed a new ap- proach to censorship resistance: end-to-middle proxying. This concept, developed in systems such as Telex, Decoy Routing, and Cirripede, moves anticensorship technology into the core of the network, at large ISPs outside the censoring country. In this paper, we focus on two technical obstacles to the deployment of certain end-to-middle schemes: the need to selectively block flows and the need to observe both directions of a connection. We propose a new construction, TapDance, that removes these require- ments. TapDance employs a novel TCP-level technique that allows the anticensorship station at an ISP to function as a passive network tap, without an inline blocking com- ponent. We also apply a novel steganographic encoding to embed control messages in TLS ciphertext, allowing us to operate on HTTPS connections even under asymmetric routing. We implement and evaluate a TapDance proto- type that demonstrates how the system could function with minimal impact on an ISP’s network operations.
 	* [Of Moles and Molehunters: A Review of Counterintelligence Literature, 1977-92](https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/U-Oct%20%201993-%20Of%20Moles%20-%20Molehunters%20-%20A%20Review%20of%20Counterintelligence%20Literature-%201977-92%20-v2.pdf)
-
+	* [Ghostbuster: Detecting the Presence of Hidden Eavesdroppers]()https://synrg.csl.illinois.edu/papers/ghostbuster-mobicom18.pdf)]
+* **Misc**
+	* [Laser Surveillance Defeater - Shomer-Tec](https://www.shomer-tec.com/laser-surveillance-defeater.html)
 
 
 
@@ -296,9 +301,14 @@
 		* This new white paper, entitled “Understanding and Improving Privacy ‘Audits’ under FTC Orders,” carefully parses the third-party audits that Google and Facebook are required to conduct under their 2012 Federal Trade Commission consent orders.  Using only publicly available documents, the article contrasts the FTC’s high expectations for the audits with what the FTC actually received (as released to the public in redacted form).   These audits, as a practical matter, are often the only “tooth” in FTC orders to protect consumer privacy.  They are critically important to accomplishing the agency’s privacy mission.  As such, a failure to attend to their robust enforcement can have unintended consequences, and arguably, provide consumers with a false sense of security. The paper shows how the audits are not actually audits as commonly understood.  Instead, because the FTC order language only requires third-party “assessments,” the companies submit reports that are termed “attestations.”  Attestations fundamentally rely on a few vague privacy program aspects that are self-selected by the companies themselves.  While the FTC could reject attestation-type assessments, the agency could also insist the companies bolster certain characteristics of the attestation assessments to make them more effective and replicate audit attributes.  For example, the FTC could require a broader and deeper scope for the assessments.  The agency could also require that assessors evaluate Fair Information Practices, data flows, notice/consent effectiveness, all company privacy assurances, and known order violations.
 	* **China**<a name="china"></a>
 		* [ China's Xinjiang Region A Surveillance State Unlike Any the World Has Ever Seen - Spiegel.de](http://www.spiegel.de/international/world/china-s-xinjiang-province-a-surveillance-state-unlike-any-the-world-has-ever-seen-a-1220174.html)
+		* [China's 5 Steps for Recruiting Spies - Wired](https://www.wired.com/story/china-spy-recruitment-us/)
 	* **France**
 	* **Germany**
 	* **United States**<a name="usa"></a>
+	* **Japan**
+		* [The Untold Story of Japan’s Secret Spy Agency - TheIntercept](https://theintercept.com/2018/05/19/japan-dfs-surveillance-agency/)
+* **License Plate Tracking**
+	* [Private companies know where you've been, thanks to license plate cameras - syracuse.com](https://www.syracuse.com/news/index.ssf/2015/01/private_companies_know_where_youve_been_thanks_to_license_plate_cameras.html)
 * **Things**
 	* [RF-Capture](http://rfcapture.csail.mit.edu/)
 		* RF-Capture is a device that captures a human figure through walls and occlusions. It transmits wireless signals and reconstructs a human figure by analyzing the signals' reflections. RF-Capture does not require the person to wear any sensor, and its transmitted power is 10,000 times lower than that of a standard cell-phone.

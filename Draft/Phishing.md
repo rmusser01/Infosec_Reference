@@ -14,11 +14,15 @@
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 ------------------
 ### <a name="general">General</a>
 * **General**
 	* [Phishing - wikipedia](http://www.en.wikipedia.org/wiki/Phishing):
-		* ìPhishing is the attempt to acquire sensitive information such as usernames, passwords, and credit card details (and sometimes, indirectly, money) by masquerading as a trustworthy entity in an electronic communication.î
+		* ‚ÄúPhishing is the attempt to acquire sensitive information such as usernames, passwords, and credit card details (and sometimes, indirectly, money) by masquerading as a trustworthy entity in an electronic communication.‚Äù
 	* [Phishing with Maldocs](https://www.n00py.io/2017/04/phishing-with-maldocs/)
 	* [Post exploitation trick - Phish users for creds on domains, from their own box](https://enigma0x3.wordpress.com/2015/01/21/phishing-for-credentials-if-you-want-it-just-ask/)
 	* [iOS Privacy: steal.password - Easily get the user's Apple ID password, just by asking](https://krausefx.com/blog/ios-privacy-stealpassword-easily-get-the-users-apple-id-password-just-by-asking)
@@ -29,27 +33,27 @@
 	* [Best Time to send email](https://coschedule.com/blog/best-time-to-send-email/)
 	* [Top 10 Email Subjects for Company Phishing Attacks](http://www.pandasecurity.com/mediacenter/security/top-10-email-subjects-phishing-attacks/)
 	* [Some Tips for Legitimate Senders to Avoid False Positives - Apache SpamAssassin](https://wiki.apache.org/spamassassin/AvoidingFpsForSenders)
-	* [Email Delivery ñ What Pen Testers Should Know - cs](https://blog.cobaltstrike.com/2013/10/03/email-delivery-what-pen-testers-should-know/)
-	* [Whatís the go-to phishing technique or exploit? - cs](https://blog.cobaltstrike.com/2014/12/17/whats-the-go-to-phishing-technique-or-exploit/)
+	* [Email Delivery ‚Äì What Pen Testers Should Know - cs](https://blog.cobaltstrike.com/2013/10/03/email-delivery-what-pen-testers-should-know/)
+	* [What‚Äôs the go-to phishing technique or exploit? - cs](https://blog.cobaltstrike.com/2014/12/17/whats-the-go-to-phishing-technique-or-exploit/)
 	* [Phishing, Lateral Movement, SCADA, OH MY!](https://web.archive.org/web/20160408193653/http://www.idzer0.com/?p=210)
 	* [Phishing with Empire - Enigma0x3](https://enigma0x3.net/2016/03/15/phishing-with-empire/)
-	* [Phishing for ìAccessî - rvrsh3ll's blog](http://www.rvrsh3ll.net/blog/phishing/phishing-for-access/)
+	* [Phishing for ‚ÄúAccess‚Äù - rvrsh3ll's blog](http://www.rvrsh3ll.net/blog/phishing/phishing-for-access/)
 	* [Cross-Site Phishing](http://blog.obscuritylabs.com/merging-web-apps-and-red-teams/)
 	* [Email Notification on shell connectback MSF Plugin](https://hansesecure.de/howto-msf-email/)
 		* [Code](https://github.com/HanseSecure/metasploit-modules)
 * **Papers**
 	* [Tab Napping - Phishing](http://www.exploit-db.com/papers/13950/)
-	* [Skeleton in the closet. MS Office vulnerability you didnít know about](https://embedi.com/blog/skeleton-closet-ms-office-vulnerability-you-didnt-know-about)
+	* [Skeleton in the closet. MS Office vulnerability you didn‚Äôt know about](https://embedi.com/blog/skeleton-closet-ms-office-vulnerability-you-didnt-know-about)
 		* Microsoft Equation Editor Exploit writeup
 	* [MetaPhish Paper](https://www.blackhat.com/presentations/bh-usa-09/SMITH_VAL/BHUSA09-Smith-MetaPhish-PAPER.pdf)
 	* [MetaPhish - Defcon17](https://www.defcon.org/images/defcon-17/dc-17-presentations/Valsmith/defcon-17-valsmith-metaphish-wp.pdf)
 * **Writeups**
-	* [How do I phish? ñ Advanced Email Phishing Tactics - Pentest Geek](https://www.pentestgeek.com/2013/01/30/how-do-i-phish-advanced-email-phishing-tactics/)
+	* [How do I phish? ‚Äì Advanced Email Phishing Tactics - Pentest Geek](https://www.pentestgeek.com/2013/01/30/how-do-i-phish-advanced-email-phishing-tactics/)
 	* [Real World Phishing Techniques - Honeynet Project](http://www.honeynet.org/book/export/html/89)
 	* [Phishing with Maldocs - n00py](https://www.n00py.io/2017/04/phishing-with-maldocs/)
 	* [Tabnabbing - An art of phishing - securelayer7](http://blog.securelayer7.net/tabnabbing-art-phishing/)
 	* [Add-In Opportunities for Office Persistence](https://labs.mwrinfosecurity.com/blog/add-in-opportunities-for-office-persistence/)
-		* This post will explore various opportunities for gaining persistence through native Microsoft Office functionality.  It was inspired by Kostas Lintovoisí similar work which identified ways to persist in transient Virtual Desktop Infrastructure (VDI) environments through adding a VBA backdoor to Office template files 
+		* This post will explore various opportunities for gaining persistence through native Microsoft Office functionality.  It was inspired by Kostas Lintovois‚Äô similar work which identified ways to persist in transient Virtual Desktop Infrastructure (VDI) environments through adding a VBA backdoor to Office template files 
 	* [One Template To Rule 'Em All](https://labs.mwrinfosecurity.com/publications/one-template-to-rule-em-all/)
 		* This presentation discussed how Office security settings and templates can be abused to gain persistence in VDI implementations where traditional techniques relying on the file system or the Registry are not applicable. Additionally, it was described how the introduction of application control and anti-exploitation technologies may affect code execution in locked down environments and how these controls can be circumvented through the use of VBA.
 	* [Spear Phishing 101 - inspired-sec.com](https://blog.inspired-sec.com/archive/2017/05/07/Phishing.html)
@@ -64,8 +68,11 @@
 	* [About Dynamic Data Exchange - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/dataxchg/about-dynamic-data-exchange)
 	* [Dynamic Data Exchange - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/dataxchg/dynamic-data-exchange)
 		* This section provides guidelines for implementing dynamic data exchange for applications that cannot use the Dynamic Data Exchange Management Library (DDEML). 
+<<<<<<< HEAD
 	* [Dynamic Data Exchange - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/dataxchg/dynamic-data-exchange)
 		* This section provides guidelines for implementing dynamic data exchange for applications that cannot use the Dynamic Data Exchange Management Library (DDEML). 
+=======
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 * **DomainKeys Identified Mail**
 	* [DomainKeys Identified Mail - Wikipedia](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)
 * **Domain Message Authentication, Reporting, and Conformance - DMARC**
@@ -79,8 +86,11 @@
 	* [Object Linking and Embedding - Wikipedia](https://en.wikipedia.org/wiki/Object_Linking_and_Embedding)
 	* [OLE - msdn.ms](https://msdn.microsoft.com/en-us/library/df267wkc.aspx)
 	* [[MS-OLEDS]: Object Linking and Embedding (OLE) Data Structures - msdn.ms](https://msdn.microsoft.com/en-us/library/dd942265.aspx)
+<<<<<<< HEAD
 * **Protected View**
 	* [What is Protected View? - support.office.com](https://support.office.com/en-us/article/What-is-Protected-View-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
+=======
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 * **Sender Policy Framework - SPF**
 	* [Sender Policy Framework - Wikipedia](https://en.wikipedia.org/wiki/Sender_Policy_Framework)
 * **SMTP Strict Transport Security** 
@@ -144,10 +154,14 @@
 * [ReelPhish](https://github.com/fireeye/ReelPhish)
 * [evilginx2](https://github.com/kgretzky/evilginx2)
 	* evilginx2 is a man-in-the-middle attack framework used for phishing login credentials along with session cookies, which in turn allows to bypass 2-factor authentication protection.
+<<<<<<< HEAD
 * [Mercure](https://github.com/atexio/mercure)
 	* Mercure is a tool for security managers who want to teach their colleagues about phishing.
 
 	
+=======
+
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 
 ------------------
 ### <a name="tools"></a>Tools
@@ -177,9 +191,12 @@
 		* transform your payload.exe into one fake word doc (.ppt)
 	* [EmbedInHTML](https://github.com/Arno0x/EmbedInHTML)
 		* What this tool does is taking a file (any type of file), encrypt it, and embed it into an HTML file as ressource, along with an automatic download routine simulating a user clicking on the embedded ressource. Then, when the user browses the HTML file, the embedded file is decrypted on the fly, saved in a temporary folder, and the file is then presented to the user as if it was being downloaded from the remote site. Depending on the user's browser and the file type presented, the file can be automatically opened by the browser.
+<<<<<<< HEAD
 	* [malicious_file_maker](https://github.com/carnal0wnage/malicious_file_maker)
 		* malicious file maker/sender to create and send malicious attachments to test your email filter/alerting
 	* [VBA ScriptControl to run Java Script Function](https://www.experts-exchange.com/questions/28190006/VBA-ScriptControl-to-run-Java-Script-Function.html)
+=======
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 * **Recon**
 	* [hackability](https://github.com/PortSwigger/hackability)
 		* Rendering Engine Hackability Probe performs a variety of tests to discover what the unknown rendering engine supports. To use it simply extract it to your web server and visit the url in the rendering engine you want to test. The more successful probes you get the more likely the target engine is vulnerable to attack.
@@ -202,7 +219,7 @@
 ------------------
 ### <a name="msoutlook"></a>Microsoft Outlook/Exchange Stuff
 * **General**
-	* [Outlook Home Page ñ Another Ruler Vector](https://sensepost.com/blog/2017/outlook-home-page-another-ruler-vector/)
+	* [Outlook Home Page ‚Äì Another Ruler Vector](https://sensepost.com/blog/2017/outlook-home-page-another-ruler-vector/)
 	* [Outlook Forms and Shells](https://sensepost.com/blog/2017/outlook-forms-and-shells/)
 	* [Exchange Versions, Builds & Dates](https://eightwone.com/references/versions-builds-dates/)
 	* [Outlook and Exchange for the Bad Guys Nick Landers - Derbycon6](https://www.youtube.com/watch?v=cVhc9VOK5MY)
@@ -227,12 +244,18 @@
 ------------------
 ### <a name="msoffice"></a>MS Office
 * **General**
+<<<<<<< HEAD
 	* [office-exploit-case-study](https://github.com/houjingyi233/office-exploit-case-study)
 		* I collect some office vuln recent years.Many samples are malware used in the real world,please study them in virtual machine.Take responsibility yourself if you use them for illegal purposes.Samples should match hash in corresponding paper if mentioned.	* [Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
+=======
+	* [office-exploit-case-study - houjingy1233](https://github.com/houjingyi233/office-exploit-case-study)
+	* [Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 	* [Office Document Macros, OLE, Actions, DDE Payloads and Filter Bypass - Pwndizzle](https://pwndizzle.blogspot.com.es/2017/03/office-document-macros-ole-actions-dde.html)
 	* [MSWord - Obfuscation with Field Codes - Staaldraad](https://staaldraad.github.io/2017/10/23/msword-field-codes/)
 	* [Analysis of the Attack Surface of Microsoft Office from a User's Perspective](https://0b3dcaf9-a-62cb3a1a-s-sites.googlegroups.com/site/zerodayresearch/Analysis_of_the_Attack_Surface_of_Microsoft_Office_from_User_Perspective_final.pdf)
 	* [Document Tracking: What You Should Know - justhaifei1](https://justhaifei1.blogspot.com/2013/10/document-tracking-what-you-should-know.html)
+<<<<<<< HEAD
 	* [ Microsoft Office ñ NTLM Hashes via Frameset - pentestlab.blog](https://pentestlab.blog/2017/12/18/microsoft-office-ntlm-hashes-via-frameset/)
 	* [EXD: An attack surface for Microsoft Office](https://www.fortinet.com/blog/threat-research/exd-an-attack-surface-for-microsoft-office.html)
 	* [Microsoft Office ñ Payloads in Document Properties - pentestlab.blog](https://pentestlab.blog/2017/12/15/microsoft-office-payloads-in-document-properties/)
@@ -263,6 +286,19 @@
 			* This presentation is an embellished version of the second half of a talk originally presented at BSides MCR 2016. It covers more general web app export issues as well as revisions on the DDE content following feedback from BSides.
 			* [Slides](https://www.slideshare.net/exploresecurity/camsec-sept-2016-tricks-to-improve-web-app-excel-export-attacks)
 		* [Insert an object in your Excel spreadsheet - support.office](https://support.office.com/en-us/article/Insert-an-object-in-your-Excel-spreadsheet-e73867b2-2988-4116-8d85-f5769ea435ba)
+=======
+	* [ Microsoft Office ‚Äì NTLM Hashes via Frameset - pentestlab.blog](https://pentestlab.blog/2017/12/18/microsoft-office-ntlm-hashes-via-frameset/)
+	* [EXD: An attack surface for Microsoft Office](https://www.fortinet.com/blog/threat-research/exd-an-attack-surface-for-microsoft-office.html)
+		* Fortinet has discovered a potential attack surface for Microsoft office via EXD file. After a malformed or specifically crafted EXD file was placed in an expected location, it could trigger a remote code execution when a document with ActiveX is opened with office applications.
+	* [Persisting with Microsoft Office: Abusing Extensibility Options - William Knowles](https://labs.mwrinfosecurity.com/assets/BlogFiles/WilliamKnowles-MWR-44con-PersistingWithMicrosoftOffice.pdf)
+	* **Access**
+		* [Phishing for ‚ÄúAccess‚Äù - Changing Phishing Tactics Require Closer User and Defender Attention - Steve Borosh](https://medium.com/rvrsh3ll/phishing-for-access-554105b0901e)
+		* [MAccess ‚Äì Bypassing Office macro warnings - kaiosec](https://kaiosec.com/blog/maccess.html)
+		* [Changing Phishing Tactics Require Closer User and Defender Attention - nuix.com](https://www.nuix.com/blog/changing-phishing-tactics-require-closer-user-and-defender-attention)
+	* **Excel**
+		* [When Scriptlets Attack: Excel‚Äôs Alternative to DDE Code Execution - David Wells](https://www.lastline.com/labsblog/when-scriptlets-attack-excels-alternative-to-dde-code-execution/)
+		* [Malicious Excel DDE Execution with ML AV Bypass and Persistence - hyperiongray](https://blog.hyperiongray.com/excel-dde-exploitation-and-ml-av-bypass/)
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 	* **PowerPoint**
 		* [Phishing with PowerPoint - BHIS](https://www.blackhillsinfosec.com/phishing-with-powerpoint/)
 		* [PowerPoint and Custom Actions](https://phishme.com/powerpoint-and-custom-actions/)
@@ -275,15 +311,22 @@
 		* [Macro-less Code Exec in MSWord - Sensepost](https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/)
 		* [Macroless DOC malware that avoids detection with Yara rule](https://furoner.wordpress.com/2017/10/17/macroless-malware-that-avoids-detection-with-yara-rule/amp/)
 		* [The Current State of DDE - Office DDE Attacks from an Offensive and Defensive Perspective - @0xdeadbeefJERKY](https://medium.com/@0xdeadbeefJERKY/the-current-state-of-dde-a62fd3277e9)
+<<<<<<< HEAD
 		* [ Microsoft Office ñ DDE Attacks - pentestlab.blog](https://pentestlab.blog/2018/01/16/microsoft-office-dde-attacks/)
+=======
+		* [ Microsoft Office ‚Äì DDE Attacks - pentestlab.blog](https://pentestlab.blog/2018/01/16/microsoft-office-dde-attacks/)
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 		* [Abusing Microsoft Office DDE - SecuritySift](https://www.securitysift.com/abusing-microsoft-office-dde/)
 		* [PowerShell, C-Sharp and DDE The Power Within](https://sensepost.com/blog/2016/powershell-c-sharp-and-dde-the-power-within/)
 			* aka Exploiting MS16-032 via Excel DDE without macros.
 		* [Macroless DOC malware that avoids detection with Yara rule - Furoner.CAT](https://furoner.wordpress.com/2017/10/17/macroless-malware-that-avoids-detection-with-yara-rule/)
 		* [PowerShell, C-Sharp and DDE The Power Within - sensepost](https://sensepost.com/blog/2016/powershell-c-sharp-and-dde-the-power-within/)
+<<<<<<< HEAD
 		* [Microsoft Office ñ DDE Attacks - pentestlab.blog](https://pentestlab.blog/2018/01/16/microsoft-office-dde-attacks/)
 		* [Abusing Microsoft Office DDE - SecuritySift](https://www.securitysift.com/abusing-microsoft-office-dde/)
 		* [Malicious Excel DDE Execution with ML AV Bypass and Persistence - hyperiongray](https://blog.hyperiongray.com/excel-dde-exploitation-and-ml-av-bypass/)
+=======
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 	* **Payload Creation/Generation**
 		* [Office-DDE-Payloads - 0xdeadbeefJERKY](https://github.com/0xdeadbeefJERKY/Office-DDE-Payloads)
 			* Collection of scripts and templates to generate Word and Excel documents embedded with the DDE, macro-less command execution technique described by @\_staaldraad and @0x5A1F (blog post link in References section below). Intended for use during sanctioned red team engagements and/or phishing campaigns.
@@ -291,19 +334,27 @@
 		* [CACTUSTORCH_DDEAUTO](https://github.com/xillwillx/CACTUSTORCH_DDEAUTO)
 			* OFFICE DDEAUTO Payload Generation script to automatically create a .vbs/.hta/.js payload for use inside a Microsoft Office document. Will create the DDEAUTO function to download and execute your payload using powershell or mshta that you can paste inside a Word document. That function can also be copy and pasted from Word to trigger in One Note/Outlook email/Outlook Calendar/Outlook Task. 
 		* [Office DDEAUTO attacks - Will Genovese](http://willgenovese.com/office-ddeauto-attacks/)
+<<<<<<< HEAD
 	* **Payload Obfuscation**
 		* [MSWord - Obfuscation with Field Codes - Staaldraad](https://staaldraad.github.io/2017/10/23/msword-field-codes/)
+=======
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 * **DLL**
 	* [DLL Tricks with VBA to Improve Offensive Macro Capability](https://labs.mwrinfosecurity.com/blog/dll-tricks-with-vba-to-improve-offensive-macro-capability/)
 	* [DLL Execution via Excel.Application RegisterXLL() method](https://gist.github.com/ryhanson/227229866af52e2d963cf941af135a52)
 		* A DLL can be loaded and executed via Excel by initializing the Excel.Application COM object and passing a DLL to the RegisterXLL method. The DLL path does not need to be local, it can also be a UNC path that points to a remote WebDAV server.
 	* [ExcelDllLoader](https://github.com/3gstudent/ExcelDllLoader)
 		* Execute DLL via the Excel.Application object's RegisterXLL() method
+<<<<<<< HEAD
 * **Exploits**
 	* [CVE-2017-0199](https://github.com/bhdresh/CVE-2017-0199)
 		* Exploit toolkit CVE-2017-0199 - v4.0 is a handy python script which provides pentesters and security researchers a quick and effective way to test Microsoft Office RCE. It could generate a malicious RTF/PPSX file and deliver metasploit / meterpreter / other payload to victim without any complex configuration.
 	* [PowerShell, C-Sharp and DDE The Power Within](https://sensepost.com/blog/2016/powershell-c-sharp-and-dde-the-power-within/)
 		* aka Exploiting MS16-032 via Excel DDE without macros.
+=======
+* **Excel**
+	* [Insert an object in your Excel spreadsheet - support.office](https://support.office.com/en-us/article/Insert-an-object-in-your-Excel-spreadsheet-e73867b2-2988-4116-8d85-f5769ea435ba)
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 * **HTA**
 	* [Malicious HTAs - trustedsec](https://www.trustedsec.com/2015/07/malicious-htas/)
 	* [Exploiting CVE-2017-0199: HTA Handler Vulnerability](https://www.mdsec.co.uk/2017/04/exploiting-cve-2017-0199-hta-handler-vulnerability/)
@@ -317,14 +368,18 @@
 * **Macros**
 	* **Articles/Blogposts/Writeups**
 		* [Luckystrike: An Evil Office Document Generator](https://www.shellntel.com/blog/2016/9/13/luckystrike-a-database-backed-evil-macro-generator)
-		* [How To: Empireís Cross Platform Office Macro](https://www.blackhillsinfosec.com/empires-cross-platform-office-macro/)
+		* [How To: Empire‚Äôs Cross Platform Office Macro](https://www.blackhillsinfosec.com/empires-cross-platform-office-macro/)
 		* [Excel macros with PowerShell](https://4sysops.com/archives/excel-macros-with-powershell/)
 		* [Multi-Platform Macro Phishing Payloads](https://medium.com/@malcomvetter/multi-platform-macro-phishing-payloads-3b688e8eff68)
 		* [Running Macros via ActiveX Controls - greyhathacker.net](http://www.greyhathacker.net/?p=948)
 		* [Abusing native Windows functions for shellcode execution - ropgadget](http://ropgadget.com/posts/abusing_win_functions.html)
+<<<<<<< HEAD
 		* [Microsoft Office ñ Payloads in Document Properties - pentestlab.blog](https://pentestlab.blog/2017/12/15/microsoft-office-payloads-in-document-properties/)
 		* [Running Macros via ActiveX Controls - greyhathacker.net](http://www.greyhathacker.net/?p=948)
 		* [MAccess ñ Bypassing Office macro warnings - kaiosec](https://kaiosec.com/blog/maccess.html)
+=======
+		* [Microsoft Office ‚Äì Payloads in Document Properties - pentestlab.blog](https://pentestlab.blog/2017/12/15/microsoft-office-payloads-in-document-properties/)
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 	* **Tools**
 		* **Generators**
 			* [Pafish Macro](https://github.com/joesecurity/pafishmacro)
@@ -356,6 +411,7 @@
 * **Protected View**
 	* [What is Protected View? - support.office.com](https://support.office.com/en-us/article/What-is-Protected-View-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653)
 	* [Phishing against Protected View](https://enigma0x3.net/2017/07/13/phishing-against-protected-view/)
+<<<<<<< HEAD
 	* [Understanding The Microsft Office 2013 Protected-View Sandbox - Yong Chuan, Kho (2015)](https://labs.mwrinfosecurity.com/assets/BlogFiles/UNDERSTANDING-THE-MICROSOFT-OFFICE-2013-PROTECTED-VIEW-SANDBOX-WP3.pdf)
 * **Shellcode**
 	* [CallByName Function - docs.ms](https://docs.microsoft.com/en-us/office/vba/Language/Reference/User-Interface-Help/callbyname-function)
@@ -366,6 +422,10 @@
 		* Trigen is a Python script which uses different combinations of Win32 function calls in generated VBA to execute shellcode.
 * **subDoc**
 	* [Abusing Microsoft Word Features for Phishing: ìsubDocî](https://rhinosecuritylabs.com/research/abusing-microsoft-word-features-phishing-subdoc/)
+=======
+* **subDoc**
+	* [Abusing Microsoft Word Features for Phishing: ‚ÄúsubDoc‚Äù](https://rhinosecuritylabs.com/research/abusing-microsoft-word-features-phishing-subdoc/)
+>>>>>>> 636860a6bdccefb3a5c226b4b100959a9d9e2bf7
 	* [SubDocumentReference class - msdn.ms](https://msdn.microsoft.com/en-us/library/office/documentformat.openxml.wordprocessing.subdocumentreference.aspx?cs-save-lang=1&cs-lang=vb#Syntax)
 * **Temporary File Drop**
 	* [Demonstration of the Windows/Office "Insecure Temporary File Dropping" Vulnerability - justhaifeil](https://justhaifei1.blogspot.com/2014/08/demonstration-of-windowsoffice-insecure.html)
@@ -396,8 +456,8 @@
 * [Ichthyology: Phishing as a Science - BH USA 2017](https://www.youtube.com/watch?v=Z20XNp-luNA&app=desktop)
 * [Modern Evasion Techniques Jason Lang - Derbycon7](https://www.irongeek.com/i.php?page=videos/derbycon7/t110-modern-evasion-techniques-jason-lang)
 	* As pentesters, we are often in need of working around security controls. In this talk, we will reveal ways that we bypass in-line network defenses, spam filters (in line and cloud based), as well as current endpoint solutions. Some techniques are old, some are new, but all work in helping to get a foothold established. Defenders: might want to come to this one.
-* [Phishing Like The Pros - Luis ìConnectionî Santana - Derbycon 2013](https://www.irongeek.com/i.php?page=videos/derbycon3/1305-phishing-like-the-pros-luis-connection-santana)
-	* This talk will discuss phishing techniques used by professionals during phishing campaigns and introduce ìPhishPollî, a PHP-based phishing framework for creating, managing, and tracking phishing campaigns.
+* [Phishing Like The Pros - Luis ‚ÄúConnection‚Äù Santana - Derbycon 2013](https://www.irongeek.com/i.php?page=videos/derbycon3/1305-phishing-like-the-pros-luis-connection-santana)
+	* This talk will discuss phishing techniques used by professionals during phishing campaigns and introduce ‚ÄúPhishPoll‚Äù, a PHP-based phishing framework for creating, managing, and tracking phishing campaigns.
 * [MetaPhish - Valsmith, Colin Ames, and David Kerb - DEF CON 17](https://www.youtube.com/watch?v=3DYOMkkTK4A)
 * [Phishing for Funds: Understanding Business Email Compromise - Keith Turpin - BH Asia2017](https://www.youtube.com/watch?v=_gk4i33lriY&list=PLH15HpR5qRsWx4qw9ZlgmisHOcKG4ZcRS&index=11)
 	* Business Email Compromise (aka CEO fraud) is a rapidly expanding cybercrime in which reported cases jumped 1300% from 2015 to 2016. This financial fraud scheme can target any market segment or organization regardless of size. Thousands of organizations from more than 100 countries have reported losses. The reasons for this surge is simple - it makes money. 

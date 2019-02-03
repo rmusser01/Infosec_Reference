@@ -4,7 +4,7 @@
 
 ## Table of Contents
 - [General](#general)
-- [Attacking Routers and their Firmware\)(#routers)
+- [Attacking Routers and their Firmware)(#routers)
 - [Cable Modem Hacking](#modem)
 - [Credit Cards](#cc)
 - [esp2866 Related](#esp2866)
@@ -100,7 +100,7 @@
 	* [Probe comparison - sigrok.org](https://sigrok.org/wiki/Probe_comparison)
 
 ---------------------------
-### <a name="routers">Attacking Routers(/'s Firmware)</a>
+### <a name="routers">Attacking Routers(Firmware)</a>
 * **101**
 	* [Unpacking Firmware images from cable modems](http://w00tsec.blogspot.com.br/2013/11/unpacking-firmware-images-from-cable.html)
 * **Articles/Papers/Talks/Writeups**

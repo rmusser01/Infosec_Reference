@@ -914,6 +914,10 @@
   * Sn1per is an automated scanner that can be used during a penetration test to
     enumerate and scan for vulnerabilities.
 
+* [Osmedeus](https://github.com/j3ssie/Osmedeus)
+
+  * Osmedeus allow you automated run the collection of awesome tools to reconnaissance and vulnerability scanning against the target.
+
 ### NFS
 
 * [Network File System](https://en.wikipedia.org/wiki/Network_File_System)

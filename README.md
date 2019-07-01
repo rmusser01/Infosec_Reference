@@ -52,7 +52,7 @@
 - [Forensics & Incident Response](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/DFIR.md)
 - [:bug: Fuzzing & Bug Hunting :bug:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Fuzzing.md)
 - [:video_game: Game Hacking :video_game:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Games.md)
-- [:beehive:Honeypots:beehive:]()
+- [:honey_pot:Honeypots:honey_pot:]()
 - [Interesting Things & Useful Information](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Stuff.md)
 - [:skull:Malware:skull:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Malware.md)
 - [:warning:Network Attacks & Defense:warning:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Network_Attacks.md)

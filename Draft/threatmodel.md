@@ -1,9 +1,12 @@
-## Threat Modeling
+## Threat Modeling & Risk Assessment
 
 
-
-
+----------------------------------
 ### Threat Modeling
+* **Articles/Papers/Writeups**
+	* [Statement for the Record  Worldwide Threat Assessment  of the  US Intelligence Community  Senate Select Committee on Intelligence](https://www.dni.gov/files/documents/Newsroom/Testimonies/SSCI%20Unclassified%20SFR%20-%20Final.pdf)
+	* [Why your threat model is probably wrong - Cyberwar](http://blog.thinkst.com/p/cyberwar-why-your-threat-model-is.html)
+	* [7 Steps to Threat Modeling](https://www.slideshare.net/chinwhei/7-steps-to-threat-modeling)
 * **Talks & Presentations**
 	* [The Triple A Threat: Aggressive Autonomous Agents - the grugq](http://grugq.github.io/presentations/comae-blackhat-year-of-the-worm.pdf)
 	* [A Hacker's Guide to Risk](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-Bruce-Potter-Hackers-Guide-to-Risk.pdf)
@@ -13,11 +16,14 @@
 	* [Threat Modeling - Jim DelGrosso](https://www.somersetrecon.com/blog/2018/7/27/infecting-the-embedded-supply-chain)
 	* [Threat Modeling 101 - Dan Tentler](https://www.youtube.com/watch?v=wu8SDWao_Ns)
 * **Threat Modeling Methodologies**
-	* [Guerrilla Threat Modelling (or 'Threat Modeling' if you're American)](http://blogs.msdn.com/b/ptorr/archive/2005/02/22/guerillathreatmodelling.aspx)
-* **Articles/Papers/Writeups**
-	* [Statement for the Record  Worldwide Threat Assessment  of the  US Intelligence Community  Senate Select Committee on Intelligence](https://www.dni.gov/files/documents/Newsroom/Testimonies/SSCI%20Unclassified%20SFR%20-%20Final.pdf)
-	* [Why your threat model is probably wrong - Cyberwar](http://blog.thinkst.com/p/cyberwar-why-your-threat-model-is.html)
-	* [7 Steps to Threat Modeling](https://www.slideshare.net/chinwhei/7-steps-to-threat-modeling)
+	* **OCTAVE**
+	* **PASTA**
+	* **STRIDE**
+		* [STRIDE (security) - Wikipedia](https://en.wikipedia.org/wiki/STRIDE_(security))
+			* STRIDE is a model of threats developed by Praerit Garg and Loren Kohnfelder at Microsoft for identifying computer security threats. It provides a mnemonic for security threats in six categories.
+		* [Guerrilla Threat Modelling (or 'Threat Modeling' if you're American)](http://blogs.msdn.com/b/ptorr/archive/2005/02/22/guerillathreatmodelling.aspx)
+	* **TRIKE**
+	* **VAST**
 * **Tools**
 	* [seasponge - Mozilla Project](https://github.com/mozilla/seasponge)
 		* Accessible and client-side threat modeling tool

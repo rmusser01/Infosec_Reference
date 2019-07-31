@@ -18,16 +18,6 @@
 * [Ruby](#ruby)
 * [Papers](#papers)
 
-### Sort
-
-* [Providence](https://github.com/salesforce/Providence)
-	* Providence is a system for code commit & bug system monitoring. It is deployed within an organization to monitor code commits for security (or other) concerns, via customizable plugins. A plugin performs logic whenever a commit occurs.
-
-#### End Sort
-
-
-
-
 
 -----------
 ### <a name="general">General</a>
@@ -543,6 +533,10 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 		* Rich Hickey emphasizes simplicity’s virtues over easiness’, showing that while many choose easiness they may end up with complexity, and the better way is to choose easiness along the simplicity path.
 
 
+-----------------------------------------
+### Software Build & Deployment Process
+* [Providence](https://github.com/salesforce/Providence)
+	* Providence is a system for code commit & bug system monitoring. It is deployed within an organization to monitor code commits for security (or other) concerns, via customizable plugins. A plugin performs logic whenever a commit occurs.
 
 ----
 ### Other

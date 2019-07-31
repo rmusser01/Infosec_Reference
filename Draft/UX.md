@@ -1,7 +1,7 @@
 # UX/UI Design - Because we all know how sexy PGP looks / How easy to use it is.
 
 
-
+----------------------
 #### ToC
 * [General](#general)
 * [Books](#books)
@@ -10,13 +10,7 @@
 
 
 
-
-#### Sort
-
-#### End Sort
- 
-
-
+---------------------------
 ### General User Interface/User Experience Design
 * **Articles**
 	* [How Technology Hijacks People’s Minds — from a Magician and Google’s Design Ethicist](http://www.tristanharris.com/2016/05/how-technology-hijacks-peoples-minds%E2%80%8A-%E2%80%8Afrom-a-magician-and-googles-design-ethicist/)
@@ -46,7 +40,3 @@
 		* A Dark Pattern is a user interface that has been carefully crafted to trick users into doing things, such as buying insurance with their purchase or signing up for recurring bills.
 	* [Nielsen Norman Group](http://www.nngroup.com)
 		* Evidence-Based User Experience Research, Training, and Consulting; check articles and guidelines, ignore other sections
-* **Hiring Boards**
-	* [dribble](https://dribbble.com/)
-	* [uplabs](https://www.uplabs.com/)
-	* [CodePen](https://codepen.io/#)

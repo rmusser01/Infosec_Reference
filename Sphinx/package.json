@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "prettier": "prettier --write ./source/Network-Attacks-Defenses.md"
-  },
-  "devDependencies": {
-    "prettier": "^1.8.2"
-  }
-}

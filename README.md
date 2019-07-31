@@ -61,7 +61,7 @@
 - [Passwords](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/passwords.md)
 - [:fishing_pole_and_fish:Phishing:fishing_pole_and_fish:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Phishing.md)
 - [:door:Physical Security:door:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Physical_Security.md)
-- [Privilege Escalation and Post-Exploitation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/privesc.md)
+- [Privilege Escalation and Post-Exploitation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/PrivescPostEx.md)
 - [AppSec/Programming Stuff](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Programming_Language_Security.md)
 - [:lemon:Rants & Writeups:lemon:](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Rants%26Writeups)
 - [:izakaya_lantern: Red Teaming/Penetration Testing Stuff :izakaya_lantern:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/RT.md)

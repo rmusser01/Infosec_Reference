@@ -28,12 +28,55 @@
 * Fix ToC
 * Add 101 stuff
 * Add SMS Standards/related
-	
-* add krack
 
+
+* [RFC 7710: Captive-Portal Identification Using DHCP or Router Advertisements (RAs)](https://tools.ietf.org/html/rfc7710)
+
+https://comsecuris.com/blog/posts/theres_life_in_the_old_dog_yet_tearing_new_holes_into_inteliphone_cellular_modems/
+
+* [New Privacy Threat on 3G, 4G, and Upcoming5G AKA Protocols - Ravishankar Borgaonkar, Lucca Hirschi∗, Shinjo Park, and Altaf Shaik](https://eprint.iacr.org/2018/1175.pdf)
+	* In this paper, we reveal a new privacy attack against allvariants of the AKA protocol, including 5G AKA, thatbreaches subscriber privacy more severely than knownlocation privacy attacks do. Our attack exploits a newlogical vulnerability we uncovered that would requirededicated fixes. We demonstrate the practical feasibilityof our attack using low cost and widely available setups.Finally we conduct a security analysis of the vulnerabil-ity and discuss countermeasures to remedy our attack
+
+* [Security and Protocol Exploit Analysis of the 5GSpecifications - Roger Jover, Vuk Marojevic](https://arxiv.org/pdf/1809.06925.pdf)
+	* ? Abstract—The Third Generation Partnership Project (3GPP)released  its  first  5G  security  specifications  in  March  2018.This paper reviews the proposed security architecture, its mainrequirements and procedures, and evaluates them in the contextof  known  and  new  protocol  exploits.  Although  security  hasbeen improved from previous generations, our analysis identifiesunrealistic 5G system assumptions and protocol edge cases thatcan render 5G communication systems vulnerable to adversarialattacks. For example, null encryption and null authentication arestill supported and can be used in valid system configurations.With no clear proposal to tackle pre-authentication messages,mobile devices continue to implicitly trust any serving network,which may or may not enforce a number of optional securityfeatures, or which may not be legitimate. Moreover, severalcritical security and key management functions are left outsideof the scope of the specifications. The comparison with known 4GLong-Term Evolution (LTE) protocol exploits reveals that the 5Gsecurity specifications, as of Release 15, Version 1.0.0, do not fullyaddress the user privacy and network availability challenges.Keywords–Security, 5G, 3GPP Release 15, LTE
+* [A Formal Analysis of 5G Authentication](https://arxiv.org/pdf/1806.10360.pdf)
+* [Component-Based Formal Analysis of 5G-AKA:Channel Assumptions and Session Confusion - Cas Cremers, Martin Dehnel-Wild](https://people.cispa.io/cas.cremers/downloads/papers/CrDe2018-5G.pdf)
+	* We perform fine-grained formal analysis of 5G’s main au-thentication and key agreement protocol (AKA), and providethe first models to explicitly consider all parties defined by theprotocol specification. Our analysis reveals that the security of5G-AKA critically relies on unstated assumptions on the innerworkings of the underlying channels. In practice this means thatfollowing the 5G-AKA specification, a provider can easily and ‘correctly’ implement the standard insecurely, leaving the protocolvulnerable to a security-critical race condition. We provide thefirst models and analysis considering component and channelcompromise in 5G, whose results further demonstrate the fragilityand subtle trust assumptions of the 5G-AKA protocol.We propose formally verified fixes to the encountered issues,and have worked with 3GPP to ensure these fixes are adopted.
+
+* add krack
+* [Captive-Portal Identification Using DHCP or Router Advertisements (RAs) - RFC 7718](https://tools.ietf.org/html/rfc7710)
+	* This document describes a DHCP option (and a Router Advertisement(RA) extension) to inform clients that they are behind some sort ofcaptive-portal device and that they will need to authenticate to getInternet access. It is not a full solution to address all of theissues that clients may have with captive portals; it is designed tobe used in larger solutions. The method of authenticating to andinteracting with the captive portal is out of scope for thisdocument
+https://wpa3.mathyvanhoef.com/#new
+https://news.ycombinator.com/item?id=6942389
 * [RPL Attacks Framework](https://github.com/dhondta/rpl-attacks)
 	* This project is aimed to provide a simple and convenient way to generate simulations and deploy malicious motes for a Wireless Sensor Network (WSN) that uses Routing Protocol for Low-power and lossy devices (RPL) as its network layer. With this framework, it is possible to easily define campaign of simulations either redefining RPL configuration constants, modifying single lines from the ContikiRPL library or using an own external RPL library. Moreover, experiments in a campaign can be generated either based on a same or a randomized topology for each simulation.
 * [Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload](https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf)
+https://github.com/steve-m/fl2k-examples
+https://osmocom.org/projects/osmo-fl2k/wiki
+
+
+https://wpa3.mathyvanhoef.com/#new
+
+https://googleprojectzero.blogspot.com/2017/04/over-air-exploiting-broadcoms-wi-fi_4.html?m=1
+https://googleprojectzero.blogspot.com/2017/04/over-air-exploiting-broadcoms-wi-fi_11.html
+https://blade.tencent.com/en/advisories/qualpwn/
+
+
+
+
+https://www.blackhat.com/asia-17/arsenal.html#damn-vulnerable-ss7-network
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

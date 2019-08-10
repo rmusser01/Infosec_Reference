@@ -23,12 +23,737 @@
 - [Avoiding/Bypassing Anti-Virus/Whitelisting/Sandboxes/etc](#av)	
 - [Payloads](#payloads)
 
+https://x-c3ll.github.io/posts/PAM-backdoor-DNS/
+https://github.com/securing/DumpsterDiver
+https://github.com/securemode/Invoke-Apex
+https://github.com/bitsadmin/wesng
+https://github.com/DimopoulosElias/SEPM-EoP
+https://github.com/foospidy/payloads
+https://doublepulsar.com/rdp-hijacking-how-to-hijack-rds-and-remoteapp-sessions-transparently-to-move-through-an-da2a1e73a5f6
+https://medium.com/@reegun/unsanitized-file-validation-leads-to-malicious-payload-download-via-office-binaries-202d02db7191
+https://3xpl01tc0d3r.blogspot.com/2019/07/dumping-process-memory-with-custom-c-sharp.html
+https://github.com/checkymander/MemScan
+https://github.com/GhostPack/Rubeus#asktgt
+* [Lateral Movement and Persistence: tactics vs techniques - hexacorn](http://www.hexacorn.com/blog/2018/10/05/lateral-movement-and-persistence-tactics-vs-techniques/)
+* [Capturing NetNTLM Hashes with Office [DOT] XML Documents - bohops](https://bohops.com/2018/08/04/capturing-netntlm-hashes-with-office-dot-xml-documents/)
+
+https://modexp.wordpress.com/2019/08/30/minidumpwritedump-via-com-services-dll/
+
+https://blog.christophetd.fr/stealthier-persistence-using-new-services-purposely-vulnerable-to-path-interception/
+
+https://stackoverflow.com/questions/29865977/bypassing-windows-aslr-by-determining-the-library-address-using-shared-pages
+
+https://github.com/outflanknl/Dumpert
+https://gist.github.com/knavesec/0bf192d600ee15f214560ad6280df556
+https://github.com/tinkersec/scratchpad/blob/master/BashScripts/grabDump.sh
+
+* [[MS-DCOM]: Distributed Component Object Model (DCOM) Remote Protocol - msdn.ms](https://msdn.microsoft.com/en-us/library/cc226801.aspx)
+* [DCOM Overview - active-undelete.com](http://active-undelete.com/dcom-overview.htm)
+* [Three New DDE Obfuscation Methods - reversinglabs.com](https://blog.reversinglabs.com/blog/cvs-dde-exploits-and-obfuscation)
+* [Shadow Admins – The Stealthy Accounts That You Should Fear The Most - Asaf Hect](https://www.cyberark.com/threat-research-blog/shadow-admins-stealthy-accounts-fear/)
+* [Escaping the Microsoft Office Sandbox: a faulty regex, allows malicious code to escape and persist - Adam Chester](https://objective-see.com/blog/blog_0x35.html)
+
+https://www.fortynorthsecurity.com/how-to-bypass-wdac-with-dbgsrv-exe/
+https://github.com/panagioto/SharpExchangePriv
+
+* [MessageBox](https://github.com/enigma0x3/MessageBox)
+	* PoC dlls for Task Scheduler COM Hijacking
+* [Get $pwnd: Attacking Battle Hardened Windows Server - Lee Holmes - Defcon25](https://www.youtube.com/watch?v=ahxMOAAani8)
+
+* https://blog.netspi.com/databases-and-clouds-sql-server-as-a-c2/
+* https://blog.netspi.com/exploiting-adidns/
+* https://blog.netspi.com/tokenvator-a-tool-to-elevate-privilege-using-windows-tokens/
+* https://www.blackhat.com/docs/eu-17/materials/eu-17-Thompson-Red-Team-Techniques-For-Evading-Bypassing-And-Disabling-MS-Advanced-Threat-Protection-And-Advanced-Threat-Analytics.pdf
+* https://github.com/vysec/RedTips
+https://github.com/M4ximuss/Powerless/blob/master/README.md
+https://www.blackhat.com/docs/asia-18/asia-18-Tal-Liberman-Documenting-the-Undocumented-The-Rise-and-Fall-of-AMSI.pdf
+
+https://github.com/sailay1996/Fileless_UAC_bypass_WSReset
+
+https://modexp.wordpress.com/2019/08/27/process-injection-apc/
+https://www.activecyber.us/activelabs/windows-uac-bypass
+
+https://github.com/mkorman90/sysmon-config-bypass-finder
+https://www.n00py.io/2017/03/from-osint-to-internal-gaining-access-from-the-outside-the-perimeter/
+https://pentestlab.blog/2018/07/04/dumping-domain-password-hashes/
+http://niiconsulting.com/checkmate/2018/05/kerberoasting-exploiting-unpatched-systems-a-day-in-the-life-of-a-red-teamer/
+
+https://adsecurity.org/?p=1929
+
+LAPS
+https://blog.netspi.com/running-laps-around-cleartext-passwords/
+https://www.harmj0y.net/blog/powershell/running-laps-with-powerview/
+https://rastamouse.me/2018/03/laps---part-1/
+https://technet.microsoft.com/en-us/mt227395.aspx
+https://rastamouse.me/2018/03/laps---part-2/
+https://adsecurity.org/?p=3164http://www.harmj0y.net/blog/powershell/running-laps-with-powerview/
+
+Skeleton Key
+https://adsecurity.org/?p=1275
+https://www.secureworks.com/research/skeleton-key-malware-analysis
+
+* [tgscrack](https://github.com/leechristensen/tgscrack)
+   * Kerberos TGS_REP cracker written in Golang
+
+https://rastamouse.me/2019/08/tikiservice/
+
+
+    * [Kerberoast - pentestlab.blog](https://pentestlab.blog/2018/06/12/kerberoast/)
+    * [The power of backup operators - ](https://decoder.cloud/2018/02/12/the-power-of-backup-operatos/)
+    * [Targeted Workstation Compromise with SCCM - enigma0x3](https://enigma0x3.net/2015/10/27/targeted-workstation-compromise-with-sccm/)
+    * [ Fun with LDAP, Kerberos (and MSRPC) in AD Environments - ropnop](https://speakerdeck.com/ropnop/fun-with-ldap-kerberos-and-msrpc-in-ad-environments?slide=6)
+    * [Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS](https://github.com/eladshamir/Internal-Monologue/)
+        * In secure environments, where Mimikatz should not be executed, an adversary can perform an Internal Monologue Attack, in which they invoke a local procedure call to the NTLM authentication package (MSV1_0) from a user-mode application through SSPI to calculate a NetNTLM response in the context of the logged on user, after performing an extended NetNTLM downgrade.
+    * [LM Hash and NT Hash - AD Shot Gyan](http://www.adshotgyan.com/2012/02/lm-hash-and-nt-hash.html)
+    * [What is Active Directory Red Forest Design? - social.technet.ms](https://social.technet.microsoft.com/wiki/contents/articles/37509.what-is-active-directory-red-forest-design.aspx)
+    * [Securing Privileged Access Reference Material - docs.ms](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material)
+    * [Understanding “Red Forest”: The 3-Tier Enhanced Security Admin Environment (ESAE) and Alternative Ways to Protect Privileged Credentials - ultimatewindowsecurity](https://www.ultimatewindowssecurity.com/webinars/register.aspx?id=1409)
+    * [Planting the Red Forest: Improving AD on the Road to ESAE - Jacques Louw and Katie Knowles](https://www.mwrinfosecurity.com/our-thinking/planting-the-red-forest-improving-ad-on-the-road-to-esae/)
+    * [ Understanding “Red Forest”: The 3-Tier Enhanced Security Admin Environment (ESAE) and Alternative Ways to Protect Privileged Credentials - ultimatewindowssecurity.com](https://www.ultimatewindowssecurity.com/webinars/register.aspx?id=1409)
+    * [How Microsoft Red Forest improves Active Directory Security - Bryan Patton](https://www.quest.com/community/quest/microsoft-platform-management/b/microsoft-platform-management-blog/posts/how-microsoft-red-forest-improves-active-directory-security)
+    * [WSUSpendu](https://github.com/AlsidOfficial/WSUSpendu)
+        * Implement WSUSpendu attack
+        * [Compromising the Windows Enterprise via Windows Update - Paul Stone, Alex Chapman - BHUS15](https://www.blackhat.com/docs/us-15/materials/us-15-Stone-WSUSpect-Compromising-Windows-Enterprise-Via-Windows-Update.pdf)
+    * [Active Directory forest trusts part 1 - How does SID filtering work? - Dirk-jan Mollema](https://dirkjanm.io/active-directory-forest-trusts-part-one-how-does-sid-filtering-work/)
+    * [Kerberos Authentication problems – Service Principal Name (SPN) issues – Part 1 - blogs.technet](https://blogs.technet.microsoft.com/askds/2008/05/29/kerberos-authentication-problems-service-principal-name-spn-issues-part-1/)
+    * [ Return From The Underworld - The Future Of Red Team Kerberos - Jim Shaver & Mitchell Hennigan](https://www.irongeek.com/i.php?page=videos/derbycon7/t107-return-from-the-underworld-the-future-of-red-team-kerberos-jim-shaver-mitchell-hennigan)
+    * [Abusing Exchange: One API call away from Domain Admin - dirkjanm.io](https://dirkjanm.io/abusing-exchange-one-api-call-away-from-domain-admin/)
+    * [Red Teaming Made Easy with Exchange Privilege Escalation and PowerPriv - RedXORBlue](http://blog.redxorblue.com/2019/01/red-teaming-made-easy-with-exchange.html)
+    * [PowerPriv](https://github.com/G0ldenGunSec/PowerPriv)
+        * A powershell implementation of PrivExchange by `@_dirkjan` (original code found here: https://github.com/dirkjanm/PrivExchange/blob/master/privexchange.py) Useful for environments on which you cannot run python-based applications, have user credentials, or do not want to drop files to disk. Will cause the target exchange server system account to attempt to authenticate to a system of your choice.
+    * * [Designing a Multilayered,  In-Depth Defense  Approach to AD Security - Quest.com](https://www.quest.com/docs/designing-a-multilayered-in-depth-defense-approach-to-ad-security-white-paper-22453.pdf)
+
+* [Exchange-AD-Privesc](https://github.com/gdedrouas/Exchange-AD-Privesc)
+	* This repository provides a few techniques and scripts regarding the impact of Microsoft Exchange deployment on Active Directory security. This is a side project of AD-Control-Paths, an AD permissions auditing project to which I recently added some Exchange-related modules.
+* [AD-Control-Paths](https://github.com/ANSSI-FR/AD-control-paths)
+	* Control paths in Active Directory are an aggregation of "control relations" between entities of the domain (users, computers, groups, GPO, containers, etc.) which can be visualized as graphs (such as above) and whose purpose is to answer questions like "Who can get 'Domain Admins' privileges ?" or "What resources can a user control ?" and even "Who can read the CEO's emails ?".
+
+* [Attack Methods for Gaining Domain Admin Rights in Active Directory - adsecurity](https://adsecurity.org/?p=2362)
+
+https://github.com/DanMcInerney/icebreaker
+
+
+https://adsecurity.org/?p=1515
+
+
+Kerberos
+https://adsecurity.org/?p=227
+https://www.youtube.com/watch?v=E_BNhuGmJwM&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3
+http://www.roguelynn.com/words/explain-like-im-5-kerberos/
+https://blogs.technet.microsoft.com/motiba/2018/02/23/detecting-kerberoasting-activity-using-azure-security-center/
+https://www.attackdebris.com/?p=311
+
+domain trusts
+http://www.harmj0y.net/blog/redteaming/domain-trusts-why-you-should-care/
+http://www.harmj0y.net/blog/redteaming/domain-trusts-were-not-done-yet/
+http://www.harmj0y.net/blog/redteaming/the-trustpocalypse/
+
+
+* [Fun with LDAP, Kerberos (and MSRPC) in AD Environments](https://blog.rapid7.com/2018/05/03/hiding-metasploit-shellcode-to-evade-windows-defender/)
+
+
+* [Using sshuttle in daily work - Huiming Teo](http://teohm.com/blog/using-sshuttle-in-daily-work/)
+
+https://github.com/fridgehead/Powershell-SSHTools
+https://i.blackhat.com/us-18/Thu-August-9/us-18-Bulazel-Windows-Offender-Reverse-Engineering-Windows-Defenders-Antivirus-Emulator.pdf
+
+https://i.blackhat.com/eu-18/Wed-Dec-5/eu-18-Baz-When-Everyones-Dog-Is-Named-Fluffy.pdf
+
+https://labs.portcullis.co.uk/presentations/where-2-worlds-collide-bringing-mimikatz-et-al-to-unix/
+
+* [Escape From SHELLcatraz - Breaking Out of Restricted Unix Shells - Michal Knapkiewicz](https://speakerdeck.com/knaps/escape-from-shellcatraz-breaking-out-of-restricted-unix-shells?slide=9)
+https://www.beyondtrust.com/resources/webinar/cybercriminal-checklist-review-password-theft-tactics-pth-attacks/
+
+
+* [XIGNCODE3 xhunter1.sys LPE - x86.re](https://x86.re/blog/xigncode3-xhunter1.sys-lpe/)
+
+* [adXtract](https://github.com/LordNem/adXtract)
+
+* [Abusing Windows Management Instrumentation (WMI) - Matthew Graeber(BH USA 2015)](https://www.youtube.com/watch?v=0SjMgnGwpq8)
+	* Imagine a technology that is built into every Windows operating system going back to Windows 95, runs as System, executes arbitrary code, persists across reboots, and does not drop a single file to disk. Such a thing does exist and it's called Windows Management Instrumentation (WMI). With increased scrutiny from anti-virus and 'next-gen' host endpoints, advanced red teams and attackers already know that the introduction of binaries into a high-security environment is subject to increased scrutiny. WMI enables an attacker practicing a minimalist methodology to blend into their target environment without dropping a single utility to disk. WMI is also unlike other persistence techniques in that rather than executing a payload at a predetermined time, WMI conditionally executes code asynchronously in response to operating system events. This talk will introduce WMI and demonstrate its offensive uses. We will cover what WMI is, how attackers are currently using it in the wild, how to build a full-featured backdoor, and how to detect and prevent these attacks from occurring.
 
 
 
 
 
 
+
+
+
+Service Principal Names
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc961723(v=technet.10)
+https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections?view=sql-server-2017
+https://adsecurity.org/?p=230
+https://pentestlab.blog/2018/06/04/spn-discovery/
+
+
+https://github.com/cyberark/zBang
+https://www.cyberark.com/threat-research-blog/the-big-zbang-theory-a-new-open-source-tool/
+https://github.com/securifera/serviceFu
+
+WinEvent Log
+	* https://github.com/0xrawsec/gene
+	* https://github.com/hlldz/Invoke-Phant0m
+
+https://cssi.us/office-365-brute-force-powershell/
+
+https://github.com/securemode/Invoke-Apex
+
+Malware writeup (use for COM)
+* [IcoScript: using webmail to control malware - 	 Grooten](https://www.virusbulletin.com/virusbulletin/2014/08/icoscript-using-webmail-control-malware)
+* [Major shift in strategy for ZeroAccess rootkit malware, as it shifts to user-mode - James Wyke](https://nakedsecurity.sophos.com/2012/06/06/zeroaccess-rootkit-usermode/)
+* [BBSRAT Attacks Targeting Russian Organizations Linked to Roaming Tiger - Bryan Lee, Josh Grunzweig](https://unit42.paloaltonetworks.com/bbsrat-attacks-targeting-russian-organizations-linked-to-roaming-tiger/)
+
+https://labs.mwrinfosecurity.com/blog/pth-attacks-against-ntlm-authenticated-web-applications/
+https://blogs.technet.microsoft.com/srd/2019/03/14/local-privilege-escalation-via-the-windows-i-o-manager-a-variant-finding-collaboration/
+
+https://www.blackhat.com/eu-18/briefings/schedule/index.html#when-everyone39s-dog-is-named-fluffy-abusing-the-brand-new-security-questions-in-windows-10-to-gain-domain-wide-persistence-12863
+
+
+Extracting NTDS.dit
+	https://blog.stealthbits.com/extracting-password-hashes-from-the-ntds-dit-file/
+	https://room362.com/post/2013/2013-06-10-volume-shadow-copy-ntdsdit-domain-hashes-remotely-part-1/
+	https://www.swordshield.com/2015/07/getting-hashes-from-ntds-dit-file/
+	https://adsecurity.org/?p=451
+	https://blog.ropnop.com/extracting-hashes-and-domain-info-from-ntds-dit/
+	https://blog.didierstevens.com/2016/07/13/practice-ntds-dit-file-part-2-extracting-hashes/
+	https://blog.stealthbits.com/extracting-password-hashes-from-the-ntds-dit-file/
+
+
+
+
+
+https://labs.mwrinfosecurity.com/advisories/windows-dhcp-client/
+
+
+
+
+
+https://github.com/p3nt4/Powershdll
+
+* https://blog.stealthbits.com/extracting-user-password-data-with-mimikatz-dcsync/
+
+https://pen-testing.sans.org/blog/2013/04/25/smb-relay-demystified-and-ntlmv2-pwnage-with-python
+ https://github.com/L3cr0f/DccwBypassUAC
+* [Active Directory: What can make your million dollar SIEM go blind? - Vincent Le Toux, Benjamin Delpy](https://www.dropbox.com/s/baypdb6glmvp0j9/Buehat%20IL%20v2.3.pdf)
+https://googleprojectzero.blogspot.com/2017/04/exploiting-net-managed-dcom.html
+* [Get-GPTrashFire - Mike Loss(BSides Canberra 2018)](https://www.youtube.com/watch?v=JfyiWspXpQo)
+	* Identifying and Abusing Vulnerable Configurations in MS AD Group Policy
+https://www.talkingdotnet.com/create-trimmed-self-contained-executable-in-net-core-3-0/
+https://github.com/FuzzySecurity/BH-Arsenal-2019/blob/master/Ruben%20Boonen%20-%20BHArsenal_SilkETW_v0.2.pdf
+* [How to break out of restricted shells with tcpdump - Oiver Matula](https://insinuator.net/2019/07/how-to-break-out-of-restricted-shells-with-tcpdump/)
+http://www.hexacorn.com/blog/2017/11/10/reusigned-binaries-living-off-the-signed-land/
+http://www.hexacorn.com/blog/2019/05/26/plata-o-plomo-code-injections-execution-tricks/
+https://ninja.style/post/privesc/
+http://www.hexacorn.com/blog/2019/04/18/installers-interactive-lolbins/
+https://web.archive.org/web/20160424110035/http://subt0x10.blogspot.com:80/2016/04/bypass-application-whitelisting-script.html
+https://blog.ensilo.com/elastic-boundaries-elevating-privileges-by-environment-variables-expansion
+https://docs.microsoft.com/en-us/windows/win32/adsi/active-directory-service-interfaces-adsi
+https://github.com/ropnop/kerbrute
+https://github.com/TarlogicSecurity/kerbrute
+https://blog.ropnop.com/practical-usage-of-ntlm-hashes/
+https://github.com/ropnop/windapsearch
+* [Fun with LDAP and Kerberos: Attacking AD from non-Windows machines - Ronnie Flathers(TR19)](https://www.youtube.com/watch?v=2Xfd962QfPs)
+	* [Slides](https://speakerdeck.com/ropnop/fun-with-ldap-and-kerberos-troopers-19?slide=101)
+
+https://github.com/Jsitech/relayer
+
+https://github.com/lolp1/Process.NET
+* [kerberos, kerberoast and golden tickets - leonzja](https://leonjza.github.io/blog/2016/01/09/kerberos-kerberoast-and-golden-tickets/)
+https://github.com/GhostPack
+
+
+https://davidstorie.ca/lessons-learned-with-manual-powershell-obfuscation/
+
+* https://github.com/no0be/DNSlivery
+
+https://pentestlab.blog/2017/12/18/microsoft-office-ntlm-hashes-via-frameset/
+
+* [Malicious use of Microsoft LAPS - akijos](https://akijosberryblog.wordpress.com/2019/01/01/malicious-use-of-microsoft-laps/)
+
+* [Hiding Registry keys with PSReflect - Brian Reitz](https://posts.specterops.io/hiding-registry-keys-with-psreflect-b18ec5ac8353)
+https://www.usenix.org/system/files/conference/woot16/woot16-paper-blackthorne_update.pdf
+* [A Pentester’s Guide to Group Scoping - Will Harmjoy](https://posts.specterops.io/a-pentesters-guide-to-group-scoping-c7bbbd9c7560)
+
+* [Gone to the Dogs - Elad Shamir](https://shenaniganslabs.io/2019/08/08/Lock-Screen-LPE.html)
+	* Win10 PrivEsc Domain Joined
+
+* [Staged vs Stageless Handlers - OJ Reeves](https://buffered.io/posts/staged-vs-stageless-handlers/)
+
+* [Gaining Domain Admin from Outside Active Directory - markitzeroday.com](https://markitzeroday.com/pass-the-hash/crack-map-exec/2018/03/04/da-from-outside-the-domain.html)
+* [Windows Exploitation Tricks: Exploiting Arbitrary File Writes for Local Elevation of Privilege - James Forshaw](https://googleprojectzero.blogspot.com/2018/04/windows-exploitation-tricks-exploiting.html)
+* [Auto-Dumping Domain Credentials using SPNs, PowerShell Remoting, and Mimikatz - Scott Sutherland](https://blog.netspi.com/auto-dumping-domain-credentials-using-spns-powershell-remoting-and-mimikatz/)
+* [Beyond Domain Admins – Domain Controller & AD Administration - ADSecurity.org](https://adsecurity.org/?p=3700)
+	* This post provides information on how Active Directory is typically administered and the associated roles & rights.
+
+https://github.com/malcomvetter/DnsCache
+
+* [Hacking In Windows Using Nishang With Windows PowerShell, Like A Boss! - serenity-networks.com](https://serenity-networks.com/hacking-in-windows-using-nishang-with-windows-powershell/)
+
+* [Defeating Device Guard: A look into CVE-2017–0007 - Matt Nelson](https://posts.specterops.io/defeating-device-guard-a-look-into-cve-2017-0007-25c77c155767)
+
+
+* [PowerQuinsta - harmj0y](http://www.harmj0y.net/blog/powershell/powerquinsta/)
+
+https://blog.ensilo.com/metamorfo-avast-abuser
+* [Powershell Download Cradles - Matthew Green](https://mgreen27.github.io/posts/2018/04/02/DownloadCradle.html)
+
+https://bohops.com/2019/08/19/dotnet-core-a-vector-for-awl-bypass-defense-evasion/
+
+https://www.fortynorthsecurity.com/how-to-bypass-wdac-with-dbgsrv-exe/
+
+* [DotNet Core: A Vector For AWL Bypass & Defense Evasion - bohops](https://bohops.com/2019/08/19/dotnet-core-a-vector-for-awl-bypass-defense-evasion/)
+
+https://github.com/mwrlabs/SharpGPOAbuse
+
+
+* [Adapting Software Fault Isolation to Contemporary CPU Architectures](https://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35649.pdf)
+	* Adapting Software Fault Isolation to Contemporary CPU ArchitecturesSoftware Fault Isolation (SFI) is an effective approach to sandboxing binary code of questionable provenance, an interesting use case for native plugins in a Web browser. We present software fault isolation schemes for ARM and x86-64 that provide control-flow and memory integrity with average performance overhead of under 5% on ARM and 7% on x86-64. We believe these are the best known SFI implementations for these architectures, with significantly lower overhead than previous systems for similar architectures. Our experience suggests that these SFI implementations benefit from instruction-level parallelism, and have particularly small impact for work- loads that are data memory-bound, both properties that tend to reduce the impact of our SFI systems for future CPU implementations.](https://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35649.pdf)
+* [NaCl SFI model on x86-64 systems](https://developer.chrome.com/native-client/reference/sandbox_internals/x86-64-sandbox#x86-64-sandbox)
+	* This document addresses the details of the Software Fault Isolation (SFI) model for executable code that can be run in Native Client on an x86-64 system
+
+
+
+https://dexters-lab.net/2019/02/16/analyzing-the-windows-lnk-file-attack-method/
+
+
+
+
+
+
+
+
+
+
+
+
+https://github.com/hvqzao/foolavc
+
+https://github.com/everdox/InfinityHook
+
+
+
+
+
+
+
+
+
+
+https://github.com/ZenLulz/MemorySharp
+https://github.com/itm4n/VBA-RunPE
+https://medium.com/@riccardo.ancarani94/bloodhound-tips-and-tricks-e1853c4b81ad
+https://modexp.wordpress.com/2019/05/10/dotnet-loader-shellcode/
+https://github.com/silentbreaksec/Throwback/blob/master/README.md
+https://bohops.com/2019/08/19/dotnet-core-a-vector-for-awl-bypass-defense-evasion/
+
+* [Gaining Domain Admin from Outside Active Directory - markitzeroday.com](https://markitzeroday.com/pass-the-hash/crack-map-exec/2018/03/04/da-from-outside-the-domain.html)
+
+* [Lateral Movement via Desired State Configuration(DSC) - Matt Graeber](https://twitter.com/mattifestation/status/970440419485007872?s=19)
+
+* [Kerberos Golden Tickets are Now More Golden - ADSecurity.org](https://adsecurity.org/?p=1640)
+
+https://pentest.blog/art-of-anti-detection-4-self-defense/
+
+* [Attack Methods for Gaining Domain Admin Rights in Active Directory - ADSecurity.org](https://adsecurity.org/?p=2362)
+
+* [The Industrial Revolution of Lateral Movement - Tal Be'ery, Tal Maor](https://www.blackhat.com/docs/us-17/thursday/us-17-Beery-The-Industrial-Revolution-Of-Lateral-Movement.pdf)
+
+* [Offensive P/Invoke: Leveraging the Win32 API from Managed Code - Matt Hand](https://posts.specterops.io/offensive-p-invoke-leveraging-the-win32-api-from-managed-code-7eef4fdef16d)
+
+https://github.com/mvelazc0/defcon27_csharp_workshop
+https://www.exploit-db.com/docs/english/46990-active-directory-enumeration-with-powershell.pdf
+https://dirkjanm.io/exploiting-CVE-2019-1040-relay-vulnerabilities-for-rce-and-domain-admin/
+https://blog.preempt.com/security-advisory-critical-vulnerabilities-in-ntlm
+https://dirkjanm.io/worst-of-both-worlds-ntlm-relaying-and-kerberos-delegation/
+https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/
+https://www.fireeye.com/blog/threat-research/2019/01/digging-up-the-past-windows-registry-forensics-revisited.html
+https://www.fireeye.com/blog/threat-research/2019/06/hunting-com-objects.html
+https://medium.com/tenable-techblog/comodo-from-sandbox-to-system-cve-2019-3969-b6a34cc85e67
+* [ClickOnce (Twice or Thrice): A Technique for Social Engineering and (Un)trusted Command Execution - bohops](https://bohops.com/2017/12/02/clickonce-twice-or-thrice-a-technique-for-social-engineering-and-untrusted-command-execution/)
+
+https://www.blackhillsinfosec.com/a-toast-to-kerberoast/
+* [Backdooring Plugins - Averagejoe](https://www.gironsec.com/blog/2018/03/backdooring-plugins/
+https://blog.netspi.com/tokenvator-a-tool-to-elevate-privilege-using-windows-tokens/
+https://github.com/anshumanbh/git-all-secrets
+https://www.greyhathacker.net/?p=894
+https://github.com/sagishahar/lpeworkshop
+https://github.com/Viralmaniar/Remote-Desktop-Caching-
+https://github.com/sveinbjornt/Platypus
+https://labs.portcullis.co.uk/blog/uid0-is-deprecated-a-trick-unix-privesc-check-doesnt-yet-know/
+https://magisterquis.github.io/2018/03/31/in-memory-only-elf-execution.html
+https://www.fracturelabs.com/posts/2017/exploiting-ms17-010-on-windows-embedded-7-devices/
+https://www.trustedsec.com/april-2015/kioskpos-breakout-keys-in-windows/
+https://fedoraproject.org/wiki/QA:Testcase_adcli_info
+https://fedoraproject.org/wiki/QA:Testcase_adcli_info_forest
+http://carnal0wnage.attackresearch.com/2010/06/more-with-rpcclient.html
+http://carnal0wnage.attackresearch.com/2007/08/more-of-using-rpcclient-to-find.html
+
+https://www.digitalinterruption.com/single-post/2018/04/22/NET-Deserialization-to-NTLM-hashes
+https://techblog.mediaservice.net/2018/02/from-xml-external-entity-to-ntlm-domain-hashes/
+* [Windows Management Instrumentation (WMI)Offense, Defense, and Forensics](https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/wp-windows-management-instrumentation.pdf)
+https://github.com/sevagas/swap_digger
+	* [CVE-2018-0952-SystemCollector](https://github.com/atredispartners/CVE-2018-0952-SystemCollector)
+		* PoC for Privilege Escalation in Windows 10 Diagnostics Hub Standard Collector Service
+* [Hack Microsoft Using Microsoft Signed Binaries - Pierre-Alexandre Braeken](https://www.blackhat.com/docs/asia-17/materials/asia-17-Braeken-Hack-Microsoft-Using-Microsoft-Signed-Binaries-wp.pdf)
+* [How-To Assess System Images: Overview (Part 1) - @Jackson_T](https://web.archive.org/web/20190101093253/https://jackson.thuraisamy.me/system-image-assessments.html)
+
+
+https://github.com/maus-/slack-auditor
+
+* [Pentester’s Windows NTFS Tricks Collection - Rene Freingruber](https://sec-consult.com/en/blog/2018/06/pentesters-windows-ntfs-tricks-collection/)
+https://www.researchgate.net/publication/319454675_Testing_UAC_on_Windows_10
+
+
+* [Post-Exploitation in Windows: From Local Admin To Domain Admin (efficiently) - pentestmonkey](http://pentestmonkey.net/uncategorized/from-local-admin-to-domain-admin)
+* [5 Ways to Find Systems Running Domain Admin Processes(2012) - Scott Sutherland](https://blog.netspi.com/5-ways-to-find-systems-running-domain-admin-processes/)
+
+C# PostEx
+https://www.forcepoint.com/blog/x-labs/using-c-post-powershell-attacks
+* [.NET Process Injection - Tim MalcomVetter](https://medium.com/@malcomvetter/net-process-injection-1a1af00359bc)
+* [How to Port Microsoft.Workflow.Compiler.exe Loader to Veil - FortyNorth Security](https://www.fortynorthsecurity.com/port-microsoft-workflow-compiler-exe-loader-to-veil/)
+
+
+Looting
+* [Compliance search – a pentesters dream - Oddvar Moe](https://msitpros.com/?p=3678)
+* [GitHub for Bug Bounty Hunters - Ed Overflow](https://edoverflow.com/2017/github-for-bugbountyhunters/)
+
+
+https://oddvar.moe/2018/04/10/persistence-using-globalflags-in-image-file-execution-options-hidden-from-autoruns-exe/
+
+
+* [Playing Cat and Mouse: Three Techniques Abused to Avoid Detection - ZLAB-YOROI](https://blog.yoroi.company/research/playing-cat-and-mouse-three-techniques-abused-to-avoid-detection/)
+
+https://evademalwareml.io/
+
+Bypassing Windows 10 Device Guard - using WinDbg
+http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html
+
+* [menu2eng.txt - How To Break Out of Restricted Shells and Menus, v2.3(1999)](https://packetstormsecurity.com/files/14914/menu2eng.txt.html)
+	* An excellent whitepaper detailing methods for breaking out of virtually any kind of restricted shell or menu you might come across.
+https://keenlab.tencent.com/en/2018/04/23/A-bunch-of-Red-Pills-VMware-Escapes/
+
+* [Automatically Stealing Password Hashes with Microsoft Outlook and OLE - Will Dormann](https://insights.sei.cmu.edu/cert/2018/04/automatically-stealing-password-hashes-with-microsoft-outlook-and-ole.html)
+* [SMB hash hijacking & user tracking in MS Outlook - ](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/may/smb-hash-hijacking-and-user-tracking-in-ms-outlook/)
+* [PowerShell Remoting from Linux to Windows - William Martin](https://blog.quickbreach.io/ps-remote-from-linux-to-windows/)
+
+Persistence Via SQL
+https://msdn.microsoft.com/en-us/library/ms141752.aspx
+* [Lateral movement using URL Protocol - Matt harr0ey](https://medium.com/@mattharr0ey/lateral-movement-using-url-protocol-e6f7d2d6cf2e
+
+* [The Dangers of Per-User COM Objects - Jon Larimer](https://www.virusbulletin.com/uploads/pdf/conference_slides/2011/Larimer-VB2011.pdf)
+
+https://posts.specterops.io/remote-hash-extraction-on-demand-via-host-security-descriptor-modification-2cf505ec5c40
+
+
+
+* [Firework: Leveraging Microsoft Workspaces in a Penetration Test - trustwave](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/firework-leveraging-microsoft-workspaces-in-a-penetration-test/)
+
+Dumping Creds
+* [Safely Dumping Domain Hashes, with Meterpreter - Rapid7](https://blog.rapid7.com/2015/07/01/safely-dumping-domain-hashes-with-meterpreter/)
+* [Using Shadow Copies to Steal the SAM - dcortesi.com](http://www.dcortesi.com/blog/2005/03/22/using-shadow-copies-to-steal-the-sam/)
+* [Dumping user passwords in plaintext on Windows 8.1 and Server 2012 - labofapenetrationtester](http://www.labofapenetrationtester.com/2015/05/dumping-passwords-in-plain-on-windows-8-1.html)
+* [Dumping WDigest Creds with Meterpreter Mimikatz/Kiwi in Windows 8.1 - TrustedSec](https://www.trustedsec.com/2015/04/dumping-wdigest-creds-with-meterpreter-mimikatzkiwi-in-windows-8-1/)
+* [Intercepting Password Changes With Function Hooking - clymb3r](https://clymb3r.wordpress.com/2013/09/15/intercepting-password-changes-with-function-hooking/)
+
+
+* [Pentests in restricted VDI environments - tarlogic](https://www.tarlogic.com/en/blog/pentests-in-restricted-vdi-environments/)
+* [COM Hijacking – Windows Overlooked Security Vulnerability - Yaniv Assor](https://www.cyberbit.com/blog/endpoint-security/com-hijacking-windows-overlooked-security-vulnerability/)
+
+https://blog.conscioushacker.io/index.php/2017/09/27/borrowing-microsoft-code-signing-certificates/
+http://www.darknessgate.com/security-tutorials/date-hiding/ntfs-alternate-data-streams/
+https://web.archive.org/web/20170517232357/http://subt0x10.blogspot.com:80/2017/04/consider-application-whitelisting-with.html
+https://web.archive.org/web/20170714075746/http://subt0x10.blogspot.com:80/2017/04/bypassing-application-whitelisting.html
+
+https://github.com/zodiacon/ManagedWindows
+
+https://github.com/giMini/PowerMemory
+http://hardsec.net/post-exploitation-with-incognito/?lang=en
+https://pentestlab.blog/2017/12/13/smb-share-scf-file-attacks/
+
+
+* [Here Be Dragons The Unexplored Land of Active Directory ACLs - Andy Robbins, Will Schroeder, Rohan(Derbycon7)](https://www.youtube.com/watch?v=bHuetBOeOOQ)
+
+
+
+* [How NOT to use the PAM trust - Leveraging Shadow Principals for Cross Forest Attacks - Nikhil Mittal](http://www.labofapenetrationtester.com/2019/04/abusing-PAM.html)
+
+https://shenaniganslabs.io/2019/08/08/Lock-Screen-LPE.html
+https://www.exploit-db.com/exploits/46716
+https://initblog.com/2019/switcheroo/
+https://clement.notin.org/blog/2019/07/03/credential-theft-without-admin-or-touching-lsass-with-kekeo-by-abusing-credssp-tspkg-rdp-sso/
+https://github.com/bytecode77/performance-monitor-privilege-escalation
+https://github.com/bytecode77/enter-product-key-privilege-escalation
+https://github.com/bytecode77/sysprep-privilege-escalation
+https://github.com/bytecode77/remote-assistance-privilege-escalation
+https://github.com/bytecode77/display-languages-privilege-escalation
+https://github.com/bytecode77/component-services-privilege-escalation
+
+https://cqureacademy.com/blog/windows-internals/black-hat-europe-2017
+https://vztekoverflow.com/2018/07/31/tbal-dpapi-backdoor/
+
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2821100/
+
+https://pulsesecurity.co.nz/articles/TPM-sniffing
+
+
+
+
+ADS
+https://gist.github.com/api0cradle/cdd2d0d0ec9abb686f0e89306e277b8f
+https://github.com/p0shkatz/Get-ADS
+https://github.com/forgottentq/powershell/blob/master/find-steams.ps1
+https://oddvar.moe/2018/01/14/putting-data-in-alternate-data-streams-and-how-to-execute-it/
+https://enigma0x3.net/2015/03/05/using-alternate-data-streams-to-persist-on-a-compromised-machine/
+https://oddvar.moe/2018/01/14/putting-data-in-alternate-data-streams-and-how-to-execute-it/
+https://oddvar.moe/2018/04/11/putting-data-in-alternate-data-streams-and-how-to-execute-it-part-2/
+
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc780036(v=ws.10)
+
+https://cr0n1c.wordpress.com/2016/01/27/using-sccm-to-violate-best-practices/
+
+* [bytecode-api](https://github.com/bytecode77/bytecode-api)
+	* C# library with common classes, extensions and additional features in addition to the .NET Framework. BytecodeApi implements lots of extensions and classes for general purpose use. In addition, specific classes implement more complex logic for both general app development as well as for WPF apps. Especially, boilerplate code that is known to be part of any Core DLL in a C# project is likely to be already here. In fact, I use this library in many of my own projects. For this reason, each class and method has been reviewed numerous times. BytecodeApi is highly consistent, particularly in terms of structure, naming conventions, patterns, etc. The entire code style resembles the patterns used in the .NET Framework itself. You will find it intuitive to understand.
+* [Here to stay: Gaining persistency by Abusing Advanced Authentication Mechanisms - Marina Simakov, Igal Gofman](https://www.youtube.com/watch?v=JvormRcth9w)
+	* [Slides](https://paper.seebug.org/papers/Security%20Conf/Defcon/2017/DEFCON-25-Marina-Simakov-and-Igal-Gofman-Here-to-stay-Gaining-persistence-by-abusing-auth-mechanisms.pdf)
+
+
+https://oddvar.moe/2018/01/14/putting-data-in-alternate-data-streams-and-how-to-execute-it/
+
+
+https://web.archive.org/web/20170815050734/http://subt0x10.blogspot.com/2017/05/using-application-compatibility-shims.html
+https://web.archive.org/web/20170517232357/http://subt0x10.blogspot.com:80/2017/04/consider-application-whitelisting-with.html
+https://web.archive.org/web/20170714075746/http://subt0x10.blogspot.com:80/2017/04/bypassing-application-whitelisting.html
+https://web.archive.org/web/20160908140124/https://subt0x10.blogspot.in/2016/04/setting-up-homestead-in-enterprise-with.html
+
+https://posts.specterops.io/lateral-movement-using-outlooks-createobject-method-and-dotnettojscript-a88a81df27eb
+http://www.exploit-monday.com/2017/08/application-of-authenticode-signatures.html
+https://www.youtube.com/watch?v=c8LgqtATAnE&index=21&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3
+https://github.com/Cn33liz/VBSMeter
+https://msitpros.com/?p=3831
+http://www.labofapenetrationtester.com/2016/05/practical-use-of-javascript-and-com-for-pentesting.html
+
+Code Signing Windows
+* https://drive.google.com/file/d/1LZkLx9dscAAbnUOJBaSnRyqdsRMCmi81/view
+* https://specterops.io/assets/resources/SpecterOps_Subverting_Trust_in_Windows.pdf
+* https://posts.specterops.io/code-signing-certificate-cloning-attacks-and-defenses-6f98657fc6ec
+
+COM
+https://web.archive.org/web/20160826221656/http://thrysoee.dk:80/InsideCOM+/ch05e.htm
+
+https://www.youtube.com/watch?v=j-r6UonEkUw&feature=youtu.be
+https://web.archive.org/web/20190303110249/http://threatexpress.com/2017/10/metatwin-borrowing-microsoft-metadata-and-digital-signatures-to-hide-binaries/
+https://gist.github.com/lithackr/c71c8a1a756e7142cf19a6b9d081b2f4
+
+OS X
+https://conference.hitb.org/hitbsecconf2019ams/materials/D2T2%20-%20ModJack%20-%20Hijacking%20the%20MacOS%20Kernel%20-%20Zhi%20Zhou.pdf
+
+
+Persistence
+https://labs.mwrinfosecurity.com/blog/add-in-opportunities-for-office-persistence/
+https://labs.mwrinfosecurity.com/publications/one-template-to-rule-em-all/
+
+https://github.com/huntresslabs/evading-autoruns
+
+[Imagecreatefromgif-Bypass](https://github.com/JohnHoder/Imagecreatefromgif-Bypass)
+
+
+* [Scenario-based pen-testing: From zero to domain admin with no missing patches required - Georgia Weidman](https://www.computerworld.com/article/2843632/scenario-based-pen-testing-from-zero-to-domain-admin-with-no-missing-patches-required.html)
+* [Top Five Ways I Got Domain Admin on Your Internal Network before Lunch (2018 Edition) - Adam Toscher](https://medium.com/@adam.toscher/top-five-ways-i-got-domain-admin-on-your-internal-network-before-lunch-2018-edition-82259ab73aaa)
+
+
+
+
+Execute DLL through excel
+https://github.com/3gstudent/ExcelDllLoader
+https://gist.github.com/ryhanson/227229866af52e2d963cf941af135a52
+https://translate.google.com/translate?sl=auto&tl=en&u=https%3A%2F%2F3gstudent.github.io%2F3gstudent.github.io%2FUse-Excel.Application-object%27s-RegisterXLL%28%29-method-to-load-dll%2F
+
+XLL 
+https://github.com/MoooKitty/xllpoc
+https://github.com/edparcell/HelloWorldXll
+https://docs.microsoft.com/en-us/office/client-developer/excel/welcome-to-the-excel-software-development-kit
+
+
+
+
+https://web.archive.org/web/20170614215931/http://mattwarren.org:80/2017/02/07/The-68-things-the-CLR-does-before-executing-a-single-line-of-your-code/
+https://github.com/allyshka/Rogue-MySql-Server
+https://www.tripwire.com/state-of-security/mitre-framework/evade-detection-hiding-registry/
+https://www.youtube.com/watch?v=Yp19i40plOA
+https://skylightcyber.com/2019/07/18/cylance-i-kill-you/
+* [DotNetToJScript](https://github.com/tyranid/DotNetToJScript)
+	* ﻿This file is part of DotNetToJScript - A tool to generate a JScript which bootstraps an arbitrary .NET Assembly and class.
+
+
+Powershell-less
+https://decoder.cloud/2017/11/02/we-dont-need-powershell-exe/
+https://decoder.cloud/2017/11/08/we-dont-need-powershell-exe-part-2/
+https://decoder.cloud/2017/11/17/we-dont-need-powershell-exe-part-3/
+
+
+
+
+http://www.hexacorn.com/blog/2019/06/15/toying-with-inheritance/
+
+
+NTLM
+https://blog.preempt.com/how-to-easily-bypass-epa
+https://blog.preempt.com/drop-the-mic
+https://blog.preempt.com/your-session-key-is-my-session-key
+https://blog.preempt.com/security-advisory-critical-vulnerabilities-in-ntlm
+
+
+AdminSDHolder
+https://specopssoft.com/support-docs/specops-password-reset/reference-material/understanding-privileged-accounts-and-the-adminsdholder/
+https://blogs.technet.microsoft.com/askds/2009/05/07/five-common-questions-about-adminsdholder-and-sdprop/
+
+* [A Black Path Toward The Sun](https://github.com/nccgroup/ABPTTS)
+	* ABPTTS uses a Python client script and a web application server page/package[1] to tunnel TCP traffic over an HTTP/HTTPS connection to a web application server. In other words, anywhere that one could deploy a web shell, one should now be able to establish a full TCP tunnel. This permits making RDP, interactive SSH, Meterpreter, and other connections through the web application server.
+
+
+* [Go-deliver](https://github.com/0x09AL/go-deliver/)
+	* Go-deliver is a payload delivery tool coded in Go. This is the first version and other features will be added in the future.
+
+
+* Get-GPTrashFire - Mike Loss(BSides Canberra2018)]()
+	* Identifying and Abusing Vulnerable Configurations in MS AD Group Policy
+	* [Slides](https://github.com/l0ss/Get-GPTrashfire)
+
+* [Hijacking .NET to Defend PowerShell - Amanda Rosseau](https://arxiv.org/pdf/1709.07508.pdf)
+	* Abstract—With the rise of attacks using PowerShell in the recent months, there has not been a comprehensive solution for monitoring or prevention. Microsoft recently released the AMSI solution for PowerShell v5, however this can also be bypassed. This paper focuses on repurposing various stealthy runtime .NET hijacking techniques implemented for PowerShell attacks for defensive monitoring of PowerShell. It begins with a brief introduction to .NET and PowerShell, followed by a deeper explanation of various attacker techniques, which is explained from the perspective of the defender, including assembly modification, class and method injection, compiler profiling, and C based function hooking. Of the four attacker techniques that are repurposed for defensive real-time monitoring of PowerShell execution, intermediate language binary modification, JIT hooking, and machine code manipulation provide the best results for stealthy run-time interfaces for PowerShell scripting analysis
+
+* [Reflection in the .NET Framework - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/reflection)
+
+* [Out-Minidump.ps1](https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Out-Minidump.ps1)
+	* Generates a full-memory minidump of a process.
+
+
+
+* [CHAOS](https://github.com/tiagorlampert/CHAOS)
+	* CHAOS is a PoC that allow generate payloads and control remote operating systems.
+
+* [Installers – Interactive Lolbins - Hexacorn](http://www.hexacorn.com/blog/2019/04/18/installers-interactive-lolbins/)
+* [Installers – Interactive Lolbins, Part 2 - Hexacorn](http://www.hexacorn.com/blog/2019/04/19/installers-interactive-lolbins-part-2/)
+* [Bring your own lolbas? - Hexacorn](http://www.hexacorn.com/blog/2019/07/05/bring-your-own-lolbas/)
+* [Reusigned Binaries - Hexacorn](http://www.hexacorn.com/blog/category/living-off-the-land/reusigned-binaries/)
+* [Reusigned Binaries – Living off the signed land - Hexacorn](http://www.hexacorn.com/blog/2017/11/10/reusigned-binaries-living-off-the-signed-land/)
+
+* [Invoke-DOSfuscation](https://github.com/danielbohannon/Invoke-DOSfuscation)
+	* Cmd.exe Command Obfuscation Generator & Detection Test Harness
+* [DOSfuscation: Exploring the Depths of Cmd.exe Obfuscation and Detection Techniques - Daniel Bohannon](https://www.fireeye.com/blog/threat-research/2018/03/dosfuscation-exploring-obfuscation-and-detection-techniques.html)
+
+
+* [Domi-Owned](https://github.com/coldfusion39/domi-owned)
+	* Domi-Owned is a tool used for compromising IBM/Lotus Domino servers.
+
+Create NTLM sectoin
+
+* [Invoke-WCMDump](https://github.com/peewpw/Invoke-WCMDump)
+	* PowerShell Script to Dump Windows Credentials from the Credential Manager
+
+* [PowEnum](https://github.com/whitehat-zero/PowEnum)
+	* Executes common PowerSploit Powerview functions then combines output into a spreadsheet for easy analysis.
+
+
+AD Trusts
+https://bohops.com/2017/12/02/trust-direction-an-enabler-for-active-directory-enumeration-and-trust-exploitation/
+
+
+
+https://github.com/mdsecactivebreach/PowerDNS
+https://github.com/taviso/dbusmap
+
+
+
+* [Invoke-Phant0m](https://github.com/hlldz/Invoke-Phant0m)
+	* This script walks thread stacks of Event Log Service process (spesific svchost.exe) and identify Event Log Threads to kill Event Log Service Threads. So the system will not be able to collect logs and at the same time the Event Log Service will appear to be running.
+
+
+* [Remote NTLM relaying through meterpreter on Windows port 445 - Diablohorn](https://diablohorn.com/2018/08/25/remote-ntlm-relaying-through-meterpreter-on-windows-port-445/)
+
+
+* [Arbitrary, Unsigned Code Execution Vector in Microsoft.Workflow.Compiler.exe - Matt Graeber](https://posts.specterops.io/arbitrary-unsigned-code-execution-vector-in-microsoft-workflow-compiler-exe-3d9294bc5efb)
+* [How to Port Microsoft.Workflow.Compiler.exe Loader to Veil - FortyNorthSecurity](https://www.fortynorthsecurity.com/port-microsoft-workflow-compiler-exe-loader-to-veil/)
+
+
+
+* [CVE-2018-8440 - PowerShell PoC](https://github.com/OneLogicalMyth/zeroday-powershell)
+
+
+
+
+* [Using C# for post-PowerShell attacks - John Bergbom](https://www.forcepoint.com/blog/x-labs/using-c-post-powershell-attacks)
+
+DSC Attack
+https://www.blackhat.com/docs/asia-16/materials/asia-16-Kazanciyan-DSCompromised-A-Windows-DSC-Attack-Framework.pdf
+https://github.com/matthastings/DSCompromised
+
+
+DC Sync
+http://www.harmj0y.net/blog/redteaming/mimikatz-and-dcsync-and-extrasids-oh-my/
+https://adsecurity.org/?p=1729
+https://adsecurity.org/?page_id=1821
+
+
+DC Shadow Attack
+https://blog.alsid.eu/dcshadow-explained-4510f52fc19d
+http://www.labofapenetrationtester.com/2018/04/dcshadow.html
+
+Domain Trusts(DOMAINS ARE NOT TRUST BOUNDARIES, FORESTS ARE.)
+https://specterops.io/assets/resources/SpecterOps_Subverting_Trust_in_Windows.pdf
+https://posts.specterops.io/a-guide-to-attacking-domain-trusts-971e52cb2944
+http://www.harmj0y.net/blog/redteaming/a-guide-to-attacking-domain-trusts/
+https://www.youtube.com/watch?v=tEfwmReo1Hk
+
+
+
+
+
+
+
+
+
+
+UAC
+https://tyranidslair.blogspot.com/2018/10/farewell-to-token-stealing-uac-bypass.html
+
+https://github.com/skelsec/pypykatz/tree/master/pypykatz
+
+* [Attacking Read-Only Domain Controllers (RODCs) to Own Active Directory](https://adsecurity.org/?p=3592)
+
+[How Attackers Dump Active Directory Database Credentials](https://adsecurity.org/?p=2398) 
+http://www.exploit-monday.com/2017/08/application-of-authenticode-signatures.html
+https://github.com/HarmJ0y/DAMP
+https://github.com/trustedsec/unicorn
+
+https://diaryofadeveloper.wordpress.com/2012/04/26/using-paramters-with-installutil/
+https://www.mdsec.co.uk/2017/06/rdpinception/
+https://github.com/foospidy/DbDat
+
+https://warroom.securestate.com/pillaging-pst-files/
+https://warroom.securestate.com/pillage-exchange/
+* [Windows oneliners to download remote payload and execute arbitrary code - arno0x0x](https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/)
+https://github.com/rofl0r/proxychains-ng
+
+https://github.com/Cn33liz/p0shKiller
+
+* [howto ~ scheduled tasks credentials - Benjamin Delpy](https://github.com/gentilkiwi/mimikatz/wiki/howto-~-scheduled-tasks-credentials)
+	* There are somes ways to get scheduled tasks passwords
+
+* [SimpleShellcodeInjector (SSI)](https://github.com/DimopoulosElias/SimpleShellcodeInjector)
+	* SimpleShellcodeInjector or SSI receives as an argument a shellcode in hex and executes it. It DOES NOT inject the shellcode in a third party application and it stays under the radar for tools like Get-InjectedThread.
+
+* [ClickOnce Applications in Enterprise Environments - Remko Weijnen](https://www.remkoweijnen.nl/blog/2013/08/05/clickonce-applications-in-enterprise-environments/)
+	* ClickOnce is a Microsoft technology that enables an end user to install an application from the web without administrative permissions.
+	https://docs.microsoft.com/en-us/visualstudio/deployment/clickonce-security-and-deployment?view=vs-2015
+
+* [NTDSDumpEx](https://github.com/zcgonvh/NTDSDumpEx)
+	* NTDS.dit offline dumper with non-elevated
+* [NTDS-Extraction-Tools](https://github.com/robemmerson/NTDS-Extractions-Tools)
+	* Automated scripts that use an older version of libesedb (2014-04-06) to extract large NTDS.dit files
+
+	
 ---------------
 ## <a name="privesc"></a>Privilege Escalation 
 
@@ -210,15 +935,9 @@
 				* [Windows Logical EoP Workbook](https://docs.google.com/document/d/1qujIzDmFrcFCBeIgMjWDZTLNMCAHChAnKDkHdWYEomM/edit)	
 				* [Abusing Token Privileges For EoP](https://github.com/hatRiot/token-priv)
 					* This repository contains all code and a Phrack-style paper on research into abusing token privileges for escalation of privilege. Please feel free to ping us with questions, ideas, insults, or bugs.				
-			* **PentestLab Windows PrivEsc Writeup List**
-				* [Hot Potato](https://pentestlab.blog/2017/04/13/hot-potato/)
-				* [Always Install Elevated](https://pentestlab.blog/2017/02/28/always-install-elevated/)
-				* [Unquoted Service Path](https://pentestlab.blog/2017/03/09/unquoted-service-path/)
-				* [Token Manipulation](https://pentestlab.blog/2017/04/03/token-manipulation/)
-				* [Secondary Logon Handle](https://pentestlab.blog/2017/04/07/secondary-logon-handle/)
-				* [Insecure Registry Permissions](https://pentestlab.blog/2017/03/31/insecure-registry-permissions/)
-				* [Intel SYSRET](https://pentestlab.blog/2017/06/14/intel-sysret/)
-				* [Weak Service Permissions](https://pentestlab.blog/2017/03/30/weak-service-permissions/)
+			* **Privileged File Operation Abuse**
+				* [An introduction to privileged file operation abuse on Windows - @Claviollotte](https://offsec.provadys.com/intro-to-file-operation-abuse-on-Windows.html)
+					* TL;DR This is a (bit long) introduction on how to abuse file operations performed by privileged processes on Windows for local privilege escalation (user to admin/system), and a presentation of available techniques, tools and procedures to exploit these types of bugs.
 			* **NTLM-related**
 				* [Windows: DCOM DCE/RPC Local NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=325&redir=1)
 				* [Windows: Local WebDAV NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=222&redir=1)
@@ -255,6 +974,15 @@
 					* [No more rotten/juicy potato? - decoder.cloud](https://decoder.cloud/2018/10/29/no-more-rotten-juicy-potato/)
 						* Rotten potato inadvertently patched on Win10 1809
 					* [Juicy Potato (abusing the golden privileges)](https://github.com/ohpe/juicy-potato)
+			* **PentestLab Windows PrivEsc Writeup List**
+				* [Hot Potato](https://pentestlab.blog/2017/04/13/hot-potato/)
+				* [Always Install Elevated](https://pentestlab.blog/2017/02/28/always-install-elevated/)
+				* [Unquoted Service Path](https://pentestlab.blog/2017/03/09/unquoted-service-path/)
+				* [Token Manipulation](https://pentestlab.blog/2017/04/03/token-manipulation/)
+				* [Secondary Logon Handle](https://pentestlab.blog/2017/04/07/secondary-logon-handle/)
+				* [Insecure Registry Permissions](https://pentestlab.blog/2017/03/31/insecure-registry-permissions/)
+				* [Intel SYSRET](https://pentestlab.blog/2017/06/14/intel-sysret/)
+				* [Weak Service Permissions](https://pentestlab.blog/2017/03/30/weak-service-permissions/)
 		* **Obtaining System Privileges**
 			* [The “SYSTEM” challenge](https://decoder.cloud/2017/02/21/the-system-challenge/)
 			* Writeup of achieving system from limited user privs.
@@ -417,7 +1145,10 @@
 		* Query Active Directory for Workstations and then Pull their Wireless Network Passwords. This tool is designed to pull a list of machines from AD and then use psexec to pull their wireless network passwords. This should be run with either a DOMAIN or WORKSTATION Admin account.
 	* [Grouper](https://github.com/l0ss/Grouper)
 		* Grouper is a slightly wobbly PowerShell module designed for pentesters and redteamers (although probably also useful for sysadmins) which sifts through the (usually very noisy) XML output from the Get-GPOReport cmdlet (part of Microsoft's Group Policy module) and identifies all the settings defined in Group Policy Objects (GPOs) that might prove useful to someone trying to do something fun/evil.
-* **Bypass Powershell Restrictions**
+* **Bypass X**
+	* **General**
+		* [nps_payload](https://github.com/trustedsec/nps_payload)
+			* This script will generate payloads for basic intrusion detection avoidance. It utilizes publicly demonstrated techniques from several different sources.
 	* **AMSI**
 		* **101**
 			* [AMSI Bypass - Paul Laine](https://www.contextis.com/en/blog/amsi-bypass)
@@ -437,7 +1168,7 @@
 			* [Antimalware Scan Interface (AMSI) — A Red Team Analysis on Evasion - iwantmore.pizza](https://iwantmore.pizza/posts/amsi.html)
 			* [How Red Teams Bypass AMSI and WLDP for .NET Dynamic Code - modexp](https://modexp.wordpress.com/2019/06/03/disable-amsi-wldp-dotnet/)
 			* [PowerShell ScriptBlock Logging Bypass - cobbr.io](https://cobbr.io/ScriptBlock-Logging-Bypass.html)
-			* [Bypassing Amsi using PowerShell 5 DLL Hijacking - cn33liz](http://cn33liz.blogspot.com/2016/05/bypassing-amsi-using-powershell-5-dll.html)
+			* [Bypassing Amsi using PowerShell 5 DLL Hijacking - cn33liz](https://cn33liz.blogspot.com/2016/05/bypassing-amsi-using-powershell-5-dll.html)
 			* [Bypass for PowerShell ScriptBlock Warning Logging of Suspicious Commands - cobbr.io](https://cobbr.io/ScriptBlock-Warning-Event-Logging-Bypass.html)
 			* [Alternative AMSI bypass - Benoit Sevens](https://medium.com/@benoit.sevens/alternative-amsi-bypass-554dc61d70b1)
 			* [AMSI Bypass With a Null Character - satoshi's note](http://standa-note.blogspot.com/2018/02/amsi-bypass-with-null-character.html)
@@ -488,59 +1219,29 @@
 			* **Talks & Presentations**
 				* [Bypassing AMSI for VBA - Pieter Ceelen](https://outflank.nl/blog/2019/04/17/bypassing-amsi-for-vba/)
 					* This blog is a writeup of the various AMSI weaknesses presented at [the Troopers talk ‘MS Office File Format Sorcery‘](https://github.com/outflanknl/Presentations/raw/master/Troopers19_MS_Office_file_format_sorcery.pdf) and [the Blackhat Asia presentation ‘Office in Wonderland’](https://i.blackhat.com/asia-19/Thu-March-28/bh-asia-Hegt-MS-Office-in-Wonderland.pdf).
-	* **Non-AMSI**
-		* [Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation)
-			* Invoke-Obfuscation is a PowerShell v2.0+ compatible PowerShell command and script obfuscator.
-			* [Presentation](https://www.youtube.com/watch?v=P1lkflnWb0I)
-			* [Invoke-Obfuscation: PowerShell obFUsk8tion Techniques & How To (Try To) D""e`Tec`T 'Th'+'em'](http://www.irongeek.com/i.php?page=videos/derbycon6/121-invoke-obfuscation-powershell-obfusk8tion-techniques-how-to-try-to-detect-them-daniel-bohannon)
-		* **Articles/Videos**
-			* [15 Ways to Bypass the PowerShell Execution Policy15 Ways to bypass](https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/)
-			* [PowerShell ScriptBlock Logging Bypass](https://cobbr.io/ScriptBlock-Logging-Bypass.html)
-			* [Powershell without Powershell to bypass app whitelist](https://www.blackhillsinfosec.com/powershell-without-powershell-how-to-bypass-application-whitelisting-environment-restrictions-av/)
-			* [Empire without PowerShell.exe](https://bneg.io/2017/07/26/empire-without-powershell-exe/)
+    * **Constrained-Language Mode**
+		* **Articles/Blogposts/Writeups**
+			* [PowerShell Constrained Language Mode - devblogs.ms](https://devblogs.microsoft.com/powershell/powershell-constrained-language-mode/)
+		    * [PowerShell Constrained Language Mode - devblogs.ms](https://devblogs.microsoft.com/powershell/powershell-constrained-language-mode/)
 			* [Exploiting PowerShell Code Injection Vulnerabilities to Bypass Constrained Language Mode](http://www.exploit-monday.com/2017/08/exploiting-powershell-code-injection.html?m=1)
-			* [Pulling Back the Curtains on EncodedCommand PowerShell Attacks](https://researchcenter.paloaltonetworks.com/2017/03/unit42-pulling-back-the-curtains-on-encodedcommand-powershell-attacks/)
-			* [Invoke-CradleCrafter: Moar PowerShell obFUsk8tion by Daniel Bohannon](https://www.youtube.com/watch?feature=youtu.be&v=Nn9yJjFGXU0&app=desktop)
-			* [Invoke-CradleCrafter v1.1](https://github.com/danielbohannon/Invoke-CradleCrafter)
-			* [PowerShell: In-Memory Injection Using CertUtil.exe](https://www.coalfire.com/The-Coalfire-Blog/May-2018/PowerShell-In-Memory-Injection-Using-CertUtil-exe)
 			* [AppLocker CLM Bypass via COM - MDSec](https://www.mdsec.co.uk/2018/09/applocker-clm-bypass-via-com/)
-			* [We don’t need powershell.exe - decoder.cloud](https://decoder.cloud/2017/11/02/we-dont-need-powershell-exe/)
 		* **Tools**
 			* [DotNetToJScript Constrained/Restricted LanguageMode Breakout](https://github.com/FuzzySecurity/DotNetToJScript-LanguageModeBreakout/blob/master/README.md)
 				* This repository is based on a post by [@xpn](https://twitter.com/_xpn_), [more details available here.](https://www.mdsec.co.uk/2018/09/applocker-clm-bypass-via-com/) Xpn's post outlines a bug of sorts where ConstrainedLanguage, when enforced through AppLocker does not prevent COM invocation. Because of this it is possible to define a custom COM object in the registry and force PowerShell to load a Dll. On load it is possible to change the LanguageMode to FullLanguage and break out of the restricted shell. This repo is a variation on this technique where a DotNetToJScript scriptlet is used to directly stage a .Net assembly into the PowerShell process.
-			* [PSShell](https://github.com/fdiskyou/PSShell)
-				* PSShell is an application written in C# that does not rely on powershell.exe but runs powershell commands and functions within a powershell runspace environment (.NET). It doesn't need to be "installed" so it's very portable.
-			* [DigitalSignature-Hijack.ps1](https://gist.github.com/netbiosX/fe5b13b4cc59f9a944fe40944920d07c)
-				* [Hijack Digital Signatures – PowerShell Script - pentestlab](https://pentestlab.blog/2017/11/08/hijack-digital-signatures-powershell-script/)
-			* [PoCSubjectInterfacePackage](https://github.com/mattifestation/PoCSubjectInterfacePackage)
-				* A proof-of-concept subject interface package (SIP) used to demonstrate digital signature subversion attacks.
-			* [nps - Not PowerShell](https://github.com/Ben0xA/nps)
-				* Execute powershell without powershell.exe
-			* [nps_payload](https://github.com/trustedsec/nps_payload)
-				* This script will generate payloads for basic intrusion detection avoidance. It utilizes publicly demonstrated techniques from several different sources. 
-			* [PowerShdll](https://github.com/p3nt4/PowerShdll)
-				* Run PowerShell with rundll32. Bypass software restrictions.
-			* [p0wnedShell](https://github.com/Cn33liz/p0wnedShell)
-				* p0wnedShell is an offensive PowerShell host application written in C# that does not rely on powershell.exe but runs powershell commands and functions within a powershell runspace environment (.NET).	
-			* [UnmanagedPowerShell](https://github.com/leechristensen/UnmanagedPowerShell/tree/master)
-			* [PowerOPS: PowerShell for Offensive Operations](https://labs.portcullis.co.uk/blog/powerops-powershell-for-offensive-operations/)
-				* [PowerOPS Github page](https://github.com/fdiskyou/PowerOPS)
-				* PowerOPS is an application written in C# that does not rely on powershell.exe but runs PowerShell commands and functions within a powershell runspace environment (.NET). It intends to include multiple offensive PowerShell modules to make the process of Post Exploitation easier.
-			* [PowerLine](https://github.com/fullmetalcache/powerline)
-				* [Presentation](https://www.youtube.com/watch?v=HiAtkLa8FOc)
-			* [Bat Armor](https://github.com/klsecservices/bat-armor)
-				* Bypass PowerShell execution policy by encoding ps script into bat file.
-			* [PyFuscation](https://github.com/CBHue/PyFuscation)
-				* Obfuscate powershell scripts by replacing Function names, Variables and Parameters.
-			* [NoPowerShell](https://github.com/bitsadmin/nopowershell)
-				* NoPowerShell is a tool implemented in C# which supports executing PowerShell-like commands while remaining invisible to any PowerShell logging mechanisms. This .NET Framework 2 compatible binary can be loaded in Cobalt Strike to execute commands in-memory. No `System.Management.Automation.dll` is used; only native .NET libraries. An alternative usecase for NoPowerShell is to launch it as a DLL via rundll32.exe: `rundll32 NoPowerShell.dll,main`.
 			* [PoSH_Bypass](https://github.com/davehardy20/PoSHBypass)
 				* PoSHBypass is a payload and console proof of concept that allows an attatcker or for that matter a legitimate user to bypass PowerShell's 'Constrianed Language Mode, AMSI and ScriptBlock and Module logging'. The bulk of this concept is the combination of 3 separate pieces of research, I've stuck these 3 elements together as my first attempt at non 'Hello World!' C# project.
-			* [OffensivePowerShellTasking](https://github.com/leechristensen/OffensivePowerShellTasking)
-				* Run multiple PowerShell scripts concurrently in different app domains. Solves the offensive security problem of running multiple PowerShell scripts concurrently without spawning powershell.exe and without the scripts causing problems with each other (usually due to PInvoke'd functions).
+			* [PSByPassCLM](https://github.com/padovah4ck/PSByPassCLM)
+				* Bypass for PowerShell Constrained Language Mode
 			* [powershellveryless](https://github.com/decoder-it/powershellveryless)
 				* Constrained Language Mode + AMSI bypass all in one(Currently Blocked without modification)
-	* **Bypass Logging**
+	* **Execution Policy**
+		* [15 Ways to Bypass the PowerShell Execution Policy - NetSPI](https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/)
+		* [Bat Armor](https://github.com/klsecservices/bat-armor)
+			* Bypass PowerShell execution policy by encoding ps script into bat file.
+	* **Logging**
+		* [About Eventlogs(PowerShell) - docs.ms](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_eventlogs?view=powershell-5.1)
+		* [Script Tracing and Logging - docs.ms](https://docs.microsoft.com/en-us/powershell/wmf/whats-new/script-logging)
+		* [PowerShell ScriptBlock Logging Bypass](https://cobbr.io/ScriptBlock-Logging-Bypass.html)
 		* [A Critique of Logging Capabilities in PowerShell v6](http://www.labofapenetrationtester.com/2018/01/powershell6.html)
 			* Introduces 'PowerShell Upgrade Attack'
 		* [Bypass for PowerShell ScriptBlock Warning Logging of Suspicious Commands - cobbr.io](https://cobbr.io/ScriptBlock-Warning-Event-Logging-Bypass.html)
@@ -584,6 +1285,43 @@
 * **Malicious X (Document/Macro/whatever) Generation**
 	* [​psWar.py](https://gist.github.com/HarmJ0y/aecabdc30f4c4ef1fad3)
 	* Code that quickly generates a deployable .war for a PowerShell one-liner
+* **Obfuscation**
+	* [Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation)
+		* Invoke-Obfuscation is a PowerShell v2.0+ compatible PowerShell command and script obfuscator.
+		* [Presentation](https://www.youtube.com/watch?v=P1lkflnWb0I)
+		* [Invoke-Obfuscation: PowerShell obFUsk8tion Techniques & How To (Try To) D""e`Tec`T 'Th'+'em'](http://www.irongeek.com/i.php?page=videos/derbycon6/121-invoke-obfuscation-powershell-obfusk8tion-techniques-how-to-try-to-detect-them-daniel-bohannon)
+		* [PyFuscation](https://github.com/CBHue/PyFuscation)
+	* Obfuscate powershell scripts by replacing Function names, Variables and Parameters.
+	* [Pulling Back the Curtains on EncodedCommand PowerShell Attacks](https://researchcenter.paloaltonetworks.com/2017/03/unit42-pulling-back-the-curtains-on-encodedcommand-powershell-attacks/)
+	* [Invoke-CradleCrafter: Moar PowerShell obFUsk8tion by Daniel Bohannon](https://www.youtube.com/watch?feature=youtu.be&v=Nn9yJjFGXU0&app=desktop)
+	* [Invoke-CradleCrafter v1.1](https://github.com/danielbohannon/Invoke-CradleCrafter)
+* **Powershell without Powershell**
+	* **Articles/Blogposts/Writeups**
+		* [Empire without PowerShell.exe](https://bneg.io/2017/07/26/empire-without-powershell-exe/)
+		* [Powershell without Powershell to bypass app whitelist](https://www.blackhillsinfosec.com/powershell-without-powershell-how-to-bypass-application-whitelisting-environment-restrictions-av/)
+		* [We don’t need powershell.exe - decoder.cloud](https://decoder.cloud/2017/11/02/we-dont-need-powershell-exe/)
+		* [PowerShell: In-Memory Injection Using CertUtil.exe](https://www.coalfire.com/The-Coalfire-Blog/May-2018/PowerShell-In-Memory-Injection-Using-CertUtil-exe)
+	* **Talks & Presentations**
+	* **Tools**
+		* [PowerLessShell](https://github.com/Mr-Un1k0d3r/PowerLessShell)
+			* PowerLessShell rely on MSBuild.exe to remotely execute PowerShell scripts and commands without spawning powershell.exe. You can also execute raw shellcode using the same approach.
+		* [NoPowerShell](https://github.com/bitsadmin/nopowershell)
+			* NoPowerShell is a tool implemented in C# which supports executing PowerShell-like commands while remaining invisible to any PowerShell logging mechanisms. This .NET Framework 2 compatible binary can be loaded in Cobalt Strike to execute commands in-memory. No `System.Management.Automation.dll` is used; only native .NET libraries. An alternative usecase for NoPowerShell is to launch it as a DLL via rundll32.exe: `rundll32 NoPowerShell.dll,main`.
+		* [p0wnedShell](https://github.com/Cn33liz/p0wnedShell)
+			* p0wnedShell is an offensive PowerShell host application written in C# that does not rely on powershell.exe but runs powershell commands and functions within a powershell runspace environment (.NET).	
+		* [UnmanagedPowerShell](https://github.com/leechristensen/UnmanagedPowerShell/tree/master)
+		* [nps - Not PowerShell](https://github.com/Ben0xA/nps)
+			* Execute powershell without powershell.exe
+		* [PSShell](https://github.com/fdiskyou/PSShell)
+			* PSShell is an application written in C# that does not rely on powershell.exe but runs powershell commands and functions within a powershell runspace environment (.NET). It doesn't need to be "installed" so it's very portable.
+		* [PowerShdll](https://github.com/p3nt4/PowerShdll)
+			* Run PowerShell with rundll32. Bypass software restrictions.
+		* [PowerOPS: PowerShell for Offensive Operations](https://labs.portcullis.co.uk/blog/powerops-powershell-for-offensive-operations/)
+		* [PowerOPS Github page](https://github.com/fdiskyou/PowerOPS)
+			* PowerOPS is an application written in C# that does not rely on powershell.exe but runs PowerShell commands and functions within a powershell runspace environment (.NET). It intends to include multiple offensive PowerShell modules to make the process of Post Exploitation easier.
+		* [PowerLine](https://github.com/fullmetalcache/powerline)
+			* [Presentation](https://www.youtube.com/watch?v=HiAtkLa8FOc)
+			* Running into environments where the use of PowerShell is being monitored or is just flat-out disabled? Have you tried out the fantastic PowerOps framework but are wishing you could use something similar via Meterpreter, Empire, or other C2 channels? Look no further! In this talk, Brian Fehrman talks about his new PowerLine framework. He overviews the tool, walks you through how to use it, shows you how you can add additional PowerShell scripts with little effort, and demonstrates just how powerful (all pun intended) this little program can be!
 * **Priv Esc / Post Ex Scripts**
 	* [PowerUp](https://github.com/HarmJ0y/PowerUp) 
 		* PowerUp is a powershell tool to assist with local privilege escalation on Windows systems. It contains several methods to identify and abuse vulnerable services, as well as DLL hijacking opportunities, vulnerable registry settings, and escalation opportunities.
@@ -602,9 +1340,11 @@
 		* AD PowerShell Recon Scripts
 	* [PowEnum](https://github.com/whitehat-zero/PowEnum)
 		* PowEnum executes common PowerSploit Powerview functions and combines the output into a spreadsheet for easy analysis. All network traffic is only sent to the DC(s). PowEnum also leverages PowerSploit Get-GPPPassword and Harmj0y's ASREPRoast.
-* **Running Powershell without PowerShell**
-	* [PowerLessShell](https://github.com/Mr-Un1k0d3r/PowerLessShell)
-		* PowerLessShell rely on MSBuild.exe to remotely execute PowerShell scripts and commands without spawning powershell.exe. You can also execute raw shellcode using the same approach.
+* **Signatures**
+	* [DigitalSignature-Hijack.ps1](https://gist.github.com/netbiosX/fe5b13b4cc59f9a944fe40944920d07c)
+		* [Hijack Digital Signatures – PowerShell Script - pentestlab](https://pentestlab.blog/2017/11/08/hijack-digital-signatures-powershell-script/)
+	* [PoCSubjectInterfacePackage](https://github.com/mattifestation/PoCSubjectInterfacePackage)
+		* A proof-of-concept subject interface package (SIP) used to demonstrate digital signature subversion attacks.
 * **Miscellaneous Useful Things** 
 	* [Invoke-DCOM.ps1](https://github.com/rvrsh3ll/Misc-Powershell-Scripts/blob/master/Invoke-DCOM.ps1)
 	* [PowerShell and Token Impersonation](https://clymb3r.wordpress.com/2013/11/03/powershell-and-token-impersonation/)
@@ -626,7 +1366,8 @@
 		* A PowerShell script to induce a Blue Screen of Death (BSOD) without admin privileges. Also enumerates Windows crash dump settings. This is a standalone script, it does not depend on any other files.
 	* [Invoke-SocksProxy](https://github.com/p3nt4/Invoke-SocksProxy)
 		* Creates a Socks proxy using powershell.
-
+	* [OffensivePowerShellTasking](https://github.com/leechristensen/OffensivePowerShellTasking)
+		* Run multiple PowerShell scripts concurrently in different app domains. Solves the offensive security problem of running multiple PowerShell scripts concurrently without spawning powershell.exe and without the scripts causing problems with each other (usually due to PInvoke'd functions).
 
 
 -------------------
@@ -641,8 +1382,6 @@
 	* [RTLO-attack](https://github.com/ctrlaltdev/RTLO-attack)
 		* This is a really simple example on how to create a file with a unicode right to left ove rride character used to disguise the real extention of the file.  In this example I disguise my .sh file as a .jpg file.
 	* [Blog](https://ctrlalt.dev/RTLO)
-* **Linux**
-	* [How to determine Linux guest VM virtualization technology](https://www.cyberciti.biz/faq/linux-determine-virtualization-technology-command/)
 * **Egress Testing**	
 	* [Egress Testing using PowerShell](http://www.labofapenetrationtester.com/2014/04/egress-testing-using-powershell.html)
 	* [Egress Buster Reverse Shell](https://www.trustedsec.com/files/egress_buster_revshell.zip)
@@ -650,11 +1389,22 @@
 	* [Egress-Assess](https://github.com/FortyNorthSecurity/Egress-Assess)
 		* Egress-Assess is a tool used to test egress data detection capabilities
 * **Network Awareness**
-	* [Packet sniffing with powershell](https://blogs.technet.microsoft.com/heyscriptingguy/2015/10/12/packet-sniffing-with-powershell-getting-started/)
+	* **Packet Sniffing**
+		* See Network_Attacks.md
+	* **Finding your external IP:**
+		* Curl any of the following addresses: `ident.me, ifconfig.me or whatsmyip.akamai.com`
+		* [Determine Public IP from CLI](http://askubuntu.com/questions/95910/command-for-determining-my-public-ip)
 * **Miscellaneous**
-	* Finding your external IP:
-		* Simply curl any of the following addresses: `ident.me, ifconfig.me or whatsmyip.akamai.com`
-	* [Determine Public IP from CLI](http://askubuntu.com/questions/95910/command-for-determining-my-public-ip)
+* **Redis**
+	* [Redis post-exploitation - Pavel Toporkov(ZeroNights18)](https://www.youtube.com/watch?v=Jmv-0PnoJ6c&feature=share)
+		* We will overview the techniques of redis post-exploitation and present new ones. In the course of the talk, you will also find out what to do if a pentester or adversary has obtained access to redis.
+* **Virtual Machine Detection**
+	* [How to determine Linux guest VM virtualization technology](https://www.cyberciti.biz/faq/linux-determine-virtualization-technology-command/)
+	* **Virtualbox**
+		* [VirtualBox Detection Via WQL Queries](http://waleedassar.blogspot.com/)
+		* [Bypassing VirtualBox Process Hardening on Windows](https://googleprojectzero.blogspot.com/2017/08/bypassing-virtualbox-process-hardening.html)
+		* [VBoxHardenedLoader](https://github.com/hfiref0x/VBoxHardenedLoader)
+			* VirtualBox VM detection mitigation loader
 * **Tools**
 	* **Web Browsers**
 		* [HeraKeylogger](https://github.com/UndeadSec/HeraKeylogger)
@@ -722,7 +1472,7 @@
 	* [Fire & Ice; Making and Breaking macOS firewalls - Patrick Wardle(Rootcon12)](https://www.youtube.com/watch?v=zmIt9ags3Cg&app=desktop)
 * **Grabbing Goodies**
 	* [Mac OS X Keychain Forensic Tool](https://github.com/n0fate/chainbreaker)
-		* The chainbreaker can extract user credential in a Keychain file with Master Key or user password in forensically sound manner. Master Key candidates can be extracted from volafox or volatility keychaindump module. Supports: Snow Leopard, Lion, Mountain Lion, Mavericks, Yosemite, El Capitan, (High) Sierra
+		* The chainbreaker can extract user credential in a Keychain file with Master Key or user password in forensically sound manner. Master Key candidates can be extracted from volafox or volatility keychaindump module. Supports: Snow Leopard, Lion, Mountain Lion, Mavericks, Yosemite, El Capitan, (High) Sierra. This branch contains a quick patch for chainbreaker to dump non-exportable keys on High Sierra, see README-keydump.txt for more details.
 * **Recon**
 	* [Orchard](https://github.com/its-a-feature/Orchard)
 		* Live off the land for macOS. This program allows users to do Active Directory enumeration via macOS' JXA (JavaScript for Automation) code. This is the newest version of AppleScript, and thus has very poor documentation on the web.
@@ -798,7 +1548,6 @@
 		* [Active Directory Domain Services Database Mounting Tool (Snapshot Viewer or Snapshot Browser) Step-by-Step Guide](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753609(v=ws.10))
 			* This guide shows how you can use an improved version of Ntdsutil and a new Active Directory® database mounting tool in Windows Server® 2008 to create and view snapshots of data that is stored in Active Directory Domain Services (AD DS) or Active Directory Lightweight Directory Services (AD LDS), without restarting the domain controller or AD LDS server. A snapshot is a shadow copy—created by the Volume Shadow Copy Service (VSS)—of the volumes that contain the Active Directory database and log files.
 	    * [Extracting SSH Private Keys from Windows 10 ssh-agent - ropnop](https://blog.ropnop.com/extracting-ssh-private-keys-from-windows-10-ssh-agent/)
-		* [Dumping a Domains worth of passwords using mimikatz](http://carnal0wnage.attackresearch.com/2013/10/dumping-domains-worth-of-passwords-with.html)
 		* [Dump Windows password hashes efficiently - Part 1](http://www.bernardodamele.blogspot.com/2011/12/dump-windows-password-hashes.html)
 		* [Compromising Plain Text Passwords In Active Directory](https://blog.stealthbits.com/compromising-plain-text-passwords-in-active-directory)
 		* **Dumping NTDS.dit**
@@ -816,16 +1565,39 @@
 		* **Internal Monologue**
 			* [Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS](https://github.com/eladshamir/Internal-Monologue)
 		* **Mimikatz/Similar**
-			* [mimikatz](https://github.com/gentilkiwi/mimikatz)
-			* [Unofficial Guide to Mimikatz](https://adsecurity.org/?page_id=1821)
-			* [Mimikatz Overview, Defenses and Detection](https://www.sans.org/reading-room/whitepapers/detection/mimikatz-overview-defenses-detection-36780)
-			* [Mimikatz Logs and Netcat](http://blackpentesters.blogspot.com/2013/12/mimikatz-logs-and-netcat.html?m=1)
-			* [Mimikatz Scheduled tasks Creds](https://github.com/gentilkiwi/mimikatz/wiki/howto-~-scheduled-tasks-credentials)
+			* **Official**
+				* ["Mimikatz" - Benjamin Delpy(NoSuchCon#2)](https://www.youtube.com/watch?v=j2m7x1deVRk)
+					* [Slides](http://www.nosuchcon.org/talks/2014/D2_02_Benjamin_Delpy_Mimikatz.pdf)
+				* [mimikatz](https://github.com/gentilkiwi/mimikatz)
+				* [Mimikatz Scheduled tasks Creds](https://github.com/gentilkiwi/mimikatz/wiki/howto-~-scheduled-tasks-credentials)
+				* [module ~ dpapi - mimikatz](https://github.com/gentilkiwi/mimikatz/wiki/module-~-dpapi)
+			* **Using**
+				* [Unofficial Guide to Mimikatz](https://adsecurity.org/?page_id=1821)
+				* [Mimikatz Overview, Defenses and Detection](https://www.sans.org/reading-room/whitepapers/detection/mimikatz-overview-defenses-detection-36780)
+				* [Mimikatz Logs and Netcat](http://blackpentesters.blogspot.com/2013/12/mimikatz-logs-and-netcat.html?m=1)
+				* [Dumping a Domains worth of passwords using mimikatz](http://carnal0wnage.attackresearch.com/2013/10/dumping-domains-worth-of-passwords-with.html)
+				* [Mass mimikatz - hacklikeapornstar](https://www.hacklikeapornstar.com/mass-mimikatz/)
+				* [Reading DPAPI Encrypted Secrets with Mimikatz and C++ -ired.team](https://ired.team/offensive-security/credential-access-and-credential-dumping/reading-dpapi-encrypted-secrets-with-mimikatz-and-c++)
+			* **Other**
+				* [Attackers Can Now Use Mimikatz to Implant Skeleton Key on Domain Controllers & BackDoor Your Active Directory Forest](https://adsecurity.org/?p=1275)
+				* [mimikatz - golden ticket](http://rycon.hu/papers/goldenticket.html)
+				* [Windows Credential Guard & Mimikatz - nviso](https://blog.nviso.be/2018/01/09/windows-credential-guard-mimikatz/)
+				* [Mimikatz DCSync Usage, Exploitation, and Detection - Sean Metcalf](https://adsecurity.org/?p=1729)
+				* [Mimikatz and DCSync and ExtraSids, Oh My - harmj0y](http://www.harmj0y.net/blog/redteaming/mimikatz-and-dcsync-and-extrasids-oh-my/)
+				* [DCShadow](https://www.dcshadow.com/)
+					* DCShadow is a new feature in mimikatz located in the lsadump module. It simulates the behavior of a Domain Controller (using protocols like RPC used only by DC) to inject its own data, bypassing most of the common security controls and including your SIEM. It shares some similarities with the DCSync attack (already present in the lsadump module of mimikatz).
+				* [Auto-Dumping Domain Credentials using SPNs, PowerShell Remoting, and Mimikatz - Scott Sutherland](https://blog.netspi.com/auto-dumping-domain-credentials-using-spns-powershell-remoting-and-mimikatz/)
+				* [Mimikatz 2.0 - Brute-Forcing Service Account Passwords ](https://www.beneaththewaves.net/Projects/Mimikatz_20_-_Brute-Forcing_Service_Account_Passwords.html)
+					* If everything about that ticket-generation operation is valid except for the NTLM hash, then accessing the web application will result in a failure. However, this will not cause a failed logon to appear in the Windows® event log. It will also not increment the count of failed logon attempts for the service account. Therefore, the result is an ability to perform brute-force (or, more realistically, dictionary-based) password checks for such a service account, without locking it out or generating suspicious event log entries. 
+				* [Active Directory Domain Controller Skeleton Key Malware & Mimikatz - ADSecurity](https://adsecurity.org/?p=1255)
 		* **Volume Shadow Copy Service**
 			* [Shadow Copy - Wikipedia](https://en.wikipedia.org/wiki/Shadow_Copy)
 			* [Manage Volume Shadow Copy Service from the Vssadmin Command-Line - technet.ms](https://technet.microsoft.com/en-us/library/dd348398.aspx)
 			* [vssadmin - ss64](https://ss64.com/nt/vssadmin.html)
 			* [vssown.vbs](https://github.com/lanmaster53/ptscripts/blob/master/windows/vssown.vbs)
+		* **RDP**
+			* [Vol de session RDP - Gentil Kiwi](http://blog.gentilkiwi.com/securite/vol-de-session-rdp)
+			* [Passwordless RDP Session Hijacking Feature All Windows versions - Alexander Korznikov](http://www.korznikov.com/2017/03/0-day-or-feature-privilege-escalation.html)
 		* **Tools**
 			* [credgrap_ie_edge](https://github.com/HanseSecure/credgrap_ie_edge)
 				* Extract stored credentials from Internet Explorer and Edge
@@ -865,7 +1637,6 @@
 			* A collection of tools to enumerate and analyse Windows DACLs
 		* [DAMP](https://github.com/HarmJ0y/DAMP)
 			* The Discretionary ACL Modification Project: Persistence Through Host-based Security Descriptor Modification. This project contains several files that implement host-based security descriptor "backdoors" that facilitate the abuse of various remotely accessible services for arbitrary trustees/security principals. tl;dr - this grants users/groups (local, domain, or 'well-known' like 'Everyone') of an attacker's choosing the ability to perform specific administrative actions on a modified host without needing membership in the local administrators group.
-
 * **DPAPI**<a name="dpapi"></a>
 	* **101**
 		* [CNG DPAPI - docs.ms](https://docs.microsoft.com/en-us/windows/win32/seccng/cng-dpapi)
@@ -946,6 +1717,8 @@
 ### <a name="active-directory"></a>Active Directory
 * **101**
 	* [What is Active Directory Domain Services and how does it work?](https://serverfault.com/questions/402580/what-is-active-directory-domain-services-and-how-does-it-work#)
+	* [Beyond the Mcse: Active Directory for the Security Professional - Sean Metcalf(BHUSA 2016)](https://www.youtube.com/watch?v=2w1cesS7pGY)
+		* Active Directory (AD) is leveraged by 95% of the Fortune 1000 companies for its directory, authentication, and management capabilities. This means that both Red and Blue teams need to have a better understanding of Active Directory, it's security, how it's attacked, and how best to align defenses. This presentation covers key Active Directory components which are critical for security professionals to know in order to defend AD. Properly securing the enterprise means identifying and leveraging appropriate defensive technologies. The provided information is immediately useful and actionable in order to help organizations better secure their enterprise resources against attackers. Highlighted are areas attackers go after including some recently patched vulnerabilities and the exploited weaknesses. This includes the critical Kerberos vulnerability (MS14-068), Group Policy Man-in-the-Middle (MS15-011 & MS15-014) and how they take advantages of AD communication.
 * **General**
 	* [Offensive Active Directory with Powershell](https://www.youtube.com/watch?v=cXWtu-qalSs)
 	* [Abusing Active Directory in Post-Exploitation](https://www.irongeek.com/i.php?page=videos/derbycon4/t105-abusing-active-directory-in-post-exploitation-carlos-perez)
@@ -954,7 +1727,8 @@
 	* [Pen Testing Active Directory Series](https://blog.varonis.com/binge-read-pen-testing-active-directory-series/)
 	* [Beyond the MCSE: Red Teaming Active Directory](https://www.youtube.com/watch?v=tEfwmReo1Hk)
 	* [Red vs Blue: Modern Active Directory Attacks & Defense - Defcon23](https://www.youtube.com/watch?v=rknpKIxT7NM)
-	* [Red Vs. Blue: Modern Active Directory Attacks, Detection, And Protection - BHUSA15](https://www.youtube.com/watch?v=b6GUXerE9Ac)
+	* [Red Vs. Blue: Modern Active Directory Attacks, Detection, And Protection - Sean Metcalf(BHUSA15)](https://www.youtube.com/watch?v=b6GUXerE9Ac)
+		* Kerberos "Golden Tickets" were unveiled by Alva "Skip" Duckwall & Benjamin Delpy in 2014 during their Black Hat USA presentation. Around this time, Active Directory (AD) admins all over the world felt a great disturbance in the Force. Golden Tickets are the ultimate method for persistent, forever AD admin rights to a network since they are valid Kerberos tickets and can't be detected, right? The news is filled with reports of breached companies and government agencies with little detail on the attack vectors and mitigation. This briefing discusses in detail the latest attack methods for gaining and maintaining administrative access in Active Directory. Also covered are traditional defensive security measures that work (and ones that don't) as well as the mitigation strategies that can keep your company's name off the front page. Prepare to go beyond "Pass-the-Hash" and down the rabbit hole. This talk explores the latest Active Directory attack vectors and describes how Golden Ticket usage can be detected. When forged Kerberos tickets are used in AD, there are some interesting artifacts that can be identified. Yes, despite what you may have read on the internet, there are ways to detect Golden & Silver Ticket usage!
 	* [Abusing Active Directory in Post Exploitation - Carlos Perez - Derbycon 4](https://www.youtube.com/watch?v=sTU-70dD-Ok)
 	* [Setting up Samba as a Domain Member](https://wiki.samba.org/index.php/Setting_up_Samba_as_a_Domain_Member)
 	* [ATA Suspicious Activity Playbook - technet.ms](https://gallery.technet.microsoft.com/ATA-Playbook-ef0a8e38)
@@ -1002,7 +1776,7 @@
 	* **Articles/Blogposts/Writeups**
 		* [Abusing DNSAdmins privilege for escalation in Active Directory](http://www.labofapenetrationtester.com/2017/05/abusing-dnsadmins-privilege-for-escalation-in-active-directory.html)
 		* [From DNSAdmins to Domain Admin, When DNSAdmins is More than Just DNS Administration](https://adsecurity.org/?p=4064)
-		* [AD Zone Transfers as a user - Carnal0wnage](http://carnal0wnage.attackresearch.com/2013/10/ad-zone-transfers-as-user.html)
+		* [AD Zone Transfers as a user - mubix](http://carnal0wnage.attackresearch.com/2013/10/ad-zone-transfers-as-user.html)
 		* [Feature, not bug: DNSAdmin to DC compromise in one line - Shay Ber](https://medium.com/@esnesenon/feature-not-bug-dnsadmin-to-dc-compromise-in-one-line-a0f779b8dc83)
 		* [Abusing DNSAdmins privilege for escalation in Active Directory](http://www.labofapenetrationtester.com/2017/05/abusing-dnsadmins-privilege-for-escalation-in-active-directory.html)
 		* [Getting in the Zone: dumping Active Directory DNS using adidnsdump - Dirk-jan Mollema](https://dirkjanm.io/getting-in-the-zone-dumping-active-directory-dns-with-adidnsdump/)
@@ -1011,6 +1785,9 @@
 	* **Tools**
 		* [DnsCache](https://github.com/malcomvetter/DnsCache)
 			* This is a reference example for how to call the Windows API to enumerate cached DNS records in the Windows resolver. Proof of concept or pattern only.
+		* [adidnsdump](https://github.com/dirkjanm/adidnsdump)
+			* By default any user in Active Directory can enumerate all DNS records in the Domain or Forest DNS zones, similar to a zone transfer. This tool enables enumeration and exporting of all DNS records in the zone for recon purposes of internal networks.
+			* [Blogpost](https://dirkjanm.io/getting-in-the-zone-dumping-active-directory-dns-with-adidnsdump/)
 * **Domain Trusts**
 	* [Domain Trusts: Why You Should Care](http://www.harmj0y.net/blog/redteaming/domain-trusts-why-you-should-care/)
 	* [Trusts You Might Have Missed](http://www.harmj0y.net/blog/redteaming/trusts-you-might-have-missed/)
@@ -1055,6 +1832,7 @@
 		* [A Red Teamer’s Guide to GPOs and OUs](https://wald0.com/?p=179)
 		* [File templates for GPO Abuse](https://github.com/rasta-mouse/GPO-Abuse)
 		* [GPO Abuse - Part 1](https://rastamouse.me/2019/01/gpo-abuse-part-1/)
+		* [Local Group Enumeration - harmj0y](http://www.harmj0y.net/blog/redteaming/local-group-enumeration/)
 	* **Talks & Presentations**
 	 **Tools**
 		* [Grouper2](https://github.com/l0ss/Grouper2)
@@ -1065,6 +1843,8 @@
 			* Identifiying and Abusing Vulnerable Configuraitons in MS AD Group Policy
 		* [SharpGPOAbuse](https://github.com/mwrlabs/SharpGPOAbuse)
 			* SharpGPOAbuse is a .NET application written in C# that can be used to take advantage of a user's edit rights on a Group Policy Object (GPO) in order to compromise the objects that are controlled by that GPO. [Blogpost](https://labs.mwrinfosecurity.com/tools/sharpgpoabuse)
+* **Group Scoping**
+	* [A Pentester’s Guide to Group Scoping - harmj0y](http://www.harmj0y.net/blog/activedirectory/a-pentesters-guide-to-group-scoping/)
 * **Kerberos** <a name="kerberos"></a>
 	* **101**
 		* [Kerberos (I): How does Kerberos work? – Theory - Eloy Perez](https://www.tarlogic.com/en/blog/how-kerberos-works/)
@@ -1092,6 +1872,7 @@
 			* [Unconstrained Delegation Permissions](https://blog.stealthbits.com/unconstrained-delegation-permissions/)
 			* [Trust? Years to earn, seconds to break](https://labs.mwrinfosecurity.com/blog/trust-years-to-earn-seconds-to-break/)
 			* [Hunting in Active Directory: Unconstrained Delegation & Forests Trusts](https://posts.specterops.io/hunting-in-active-directory-unconstrained-delegation-forests-trusts-71f2b33688e1)
+			* [Getting Domain Admin with Kerberos Unconstrained Delegation - Nikhil Mittal](http://www.labofapenetrationtester.com/2016/02/getting-domain-admin-with-kerberos-unconstrained-delegation.html)
 		* **Talks & Presentations**
 		* **Tools**
 	* **Kerberoast(ing)**
@@ -1109,6 +1890,8 @@
 			* [Targeted Kerberoasting - harmj0y](http://www.harmj0y.net/blog/activedirectory/targeted-kerberoasting/)
 			* [Kerberoast PW list for cracking passwords with complexity requirements](https://gist.github.com/edermi/f8b143b11dc020b854178d3809cf91b5)
 		* **Talks & Presentations**
+			* [Attacking Kerberos: Kicking the Guard Dog of Hades - Tim Medin](https://www.youtube.com/watch?v=HHJWfG9b0-E)
+				* Kerberos, besides having three heads and guarding the gates of hell, protects services on Microsoft Windows Domains. Its use is increasing due to the growing number of attacks targeting NTLM authentication. Attacking Kerberos to access Windows resources represents the next generation of attacks on Windows authentication.In this talk Tim will discuss his research on new attacks against Kerberos- including a way to attack the credentials of a remote service without sending traffic to the service as well as rewriting tickets to access systems.He will also examine potential countermeasures against Kerberos attacks with suggestions for mitigating the most common weaknesses in Windows Kerberos deployments.
 			* [Demo of kerberoasting on EvilCorp Derbycon6](https://adsecurity.org/wp-content/uploads/2016/09/DerbyCon6-2016-AttackingEvilCorp-Anatomy-of-a-Corporate-Hack-Demo-4-kerberoast.mp4)
 			* [Attacking EvilCorp Anatomy of a Corporate Hack - Sean Metcalf, Will Schroeder](https://www.youtube.com/watch?v=nJSMJyRNvlM&feature=youtu.be&t=16)
 				* [Slides](https://adsecurity.org/wp-content/uploads/2016/09/DerbyCon6-2016-AttackingEvilCorp-Anatomy-of-a-Corporate-Hack-Presented.pdf)
@@ -1180,7 +1963,9 @@
 		* [Windows Credential Guard & Mimikatz - nviso](https://blog.nviso.be/2018/01/09/windows-credential-guard-mimikatz/)
 		* [Wendel's Small Hacking Tricks - The Annoying NT_STATUS_INVALID_WORKSTATION](https://www.trustwave.com/Resources/SpiderLabs-Blog/Wendel-s-Small-Hacking-Tricks---The-Annoying-NT_STATUS_INVALID_WORKSTATION-/)
 		* [Passing the hash with native RDP client (mstsc.exe)](https://michael-eder.net/post/2018/native_rdp_pass_the_hash/)
-			* TL;DR: If the remote server allows Restricted Admin login, it is possible to login via RDP by passing the hash using the native Windows RDP client mstsc.exe. (You’ll need mimikatz or something else to inject the hash into the process)
+			* TL;DR: If the remote server allows Restricted Admin login, it is possible to login via RDP by passing the hash using the native 	Windows RDP client mstsc.exe. (You’ll need mimikatz or something else to inject the hash into the process)
+	* **Over-Pass-the-Hash**
+		* [Overpass-the-hash - Benjamin Delpy](http://blog.gentilkiwi.com/securite/mimikatz/overpass-the-hash)
 	* **Ticket**
 		* [How To Pass the Ticket Through SSH Tunnels](https://bluescreenofjeff.com/2017-05-23-how-to-pass-the-ticket-through-ssh-tunnels/)
 		* [Pass-the-ticket - ldapwiki](http://ldapwiki.com/wiki/Pass-the-ticket)
@@ -1201,16 +1986,15 @@
 	* [Multi-Factor Mixup: Who Were You Again? - Okta](https://www.okta.com/security-blog/2018/08/multi-factor-authentication-microsoft-adfs-vulnerability/)
 		* A weakness in the Microsoft ADFS protocol for integration with MFA products allows a second factor for one account to be used for second-factor authentication to all other accounts in an organization.
 	* [Playing with Relayed Credentials - SecureAuth](https://www.secureauth.com/blog/playing-relayed-credentials)
+	* [Credential Assessment: Mapping Privilege Escalation at Scale - Matt Weeks(Hack.lu 2016)](https://www.youtube.com/watch?v=tXx6RB0raEY)
+		* In countless intrusions from large retail giants to oil companies, attackers have progressed from initial access to complete network compromise. In the aftermath, much ink is spilt and products are sold on how the attackers first obtained access and how the malware they used could or could not have been detected, while little attention is given to the credentials they found that turned their access on a single-system into thousands more. This process, while critical for offensive operations, is often complex, involving many links in the escalation chain composed of obtaining credentials on system A that grant access to system B and credentials later used on system B that grant further access, etc. We’ll show how to identify and combat such credential exposure at scale with the framework we developed. We comprehensively identify exposed credentials and automatically construct the compromise chains to identify maximal access and privileges gained, useful for either offensive or defensive purposes.
 * **Reconaissance**
 	* **Articles/Blogposts/Presentations/Talks/Writeups**
 		* [Active Directory Firewall Ports – Let’s Try To Make This Simple - Ace Fekay(2011)](https://blogs.msmvps.com/acefekay/2011/11/01/active-directory-firewall-ports-let-s-try-to-make-this-simple/)
 		* [Automating the Empire with the Death Star: getting Domain Admin with a push of a button](https://byt3bl33d3r.github.io/automating-the-empire-with-the-death-star-getting-domain-admin-with-a-push-of-a-button.html)
 		* [Active Directory Pentest Recon Part 1: SPN Scanning aka Mining Kerberos Service Principal Names](https://adsecurity.org/?p=230)
 		* [Active Directory Recon Without Admin Rights - adsecurity](https://adsecurity.org/?p=2535)
-		* [Discovering Service Accounts Without Using Privileges - Jeff Warren](https://blog.stealthbits.com/discovering-service-accounts-without-using-privileges/)
 		* [Using ActiveDirectory module for Domain Enumeration from PowerShell Constrained Language Mode - Nikhil Mittal](http://www.labofapenetrationtester.com/2018/10/domain-enumeration-from-PowerShell-CLM.html)
-		* [Extending BloodHound: Track and Visualize Your Compromise](https://porterhau5.com/blog/extending-bloodhound-track-and-visualize-your-compromise/)
-			* Customizing BloodHound's UI and taking advantage of Custom Queries to document a compromise, find collateral spread of owned nodes, and visualize deltas in privilege gains.
 	* **Tools**
 		* **Admin/User Hunting**
 			* [Invoke-HostRecon](https://github.com/dafthack/HostRecon)
@@ -1225,18 +2009,38 @@
 			* [DomainTrustExplorer](https://github.com/sixdub/DomainTrustExplorer)
 				* Python script for analyis of the "Trust.csv" file generated by Veil PowerView. Provides graph based analysis and output.
 		* **BloodHound**
+			* [Introducing BloodHound](https://wald0.com/?p=68)
 			* [BloodHound](https://github.com/BloodHoundAD/BloodHound)
 				* BloodHound is a single page Javascript web application, built on top of Linkurious, compiled with Electron, with a Neo4j database fed by a PowerShell ingestor. BloodHound uses graph theory to reveal the hidden and often unintended relationships within an Active Directory environment. Attackers can use BloodHound to easily identify highly complex attack paths that would otherwise be impossible to quickly identify. Defenders can use BloodHound to identify and eliminate those same attack paths. Both blue and red teams can use BloodHound to easily gain a deeper understanding of privilege relationships in an Active Directory environment.
-			* [BloodHound 1.3 – The ACL Attack Path Update - wald0](https://wald0.com/?p=112)	
-			* [My First Go with BloodHound](https://blog.cobaltstrike.com/2016/12/14/my-first-go-with-bloodhound/)
-			* [Lay of the Land with BloodHound](http://threat.tevora.com/lay-of-the-land-with-bloodhound/)
-			* [Visualizing BloodHound Data with PowerBI — Part 1 - Andy Robbins](https://posts.specterops.io/visualizing-bloodhound-data-with-powerbi-part-1-ba8ea4908422)
-			* [SharpHound: Evolution of the BloodHound Ingestor - CptJesus](https://blog.cptjesus.com/posts/newbloodhoundingestor)
-			* [Bloodhound walkthrough. A Tool for Many Tradecrafts - Andy Gill](https://www.pentestpartners.com/security-blog/bloodhound-walkthrough-a-tool-for-many-tradecrafts/)
-				* A walkthrough on how to set up and use BloodHound
-			* [The Dog Whisperer's Handbook: A Hacker's Guide to the BloodHound Galaxy - @SadProcessor](https://www.ernw.de/download/BloodHoundWorkshop/ERNW_DogWhispererHandbook.pdf)
+			* **Historical Posts**
+				* [Defenders think in lists. Attackers think in graphs. As long as this is true, attackers win. - JohnLaTwC](https://github.com/JohnLaTwC/Shared/blob/master/Defenders%20think%20in%20lists.%20Attackers%20think%20in%20graphs.%20As%20long%20as%20this%20is%20true%2C%20attackers%20win.md)
+				* [Automated Derivative Administrator Search - wald0](https://wald0.com/?p=14)
+				* [BloodHound 1.3 – The ACL Attack Path Update - wald0](https://wald0.com/?p=112)	
+				* [BloodHound 1.4: The Object Properties Update - CptJesus](https://blog.cptjesus.com/posts/bloodhoundobjectproperties)
+				* [SharpHound: Target Selection and API Usage](https://blog.cptjesus.com/posts/sharphoundtargeting)	
+				* [BloodHound 1.5: The Container Update](https://blog.cptjesus.com/posts/bloodhound15)
+				* [A Red Teamer’s Guide to GPOs and OUs - wald0](https://wald0.com/?p=179)
+				* [BloodHound 2.0 - CptJesus](https://blog.cptjesus.com/posts/bloodhound20)
+				* [BloodHound 2.1: The Fix Broken Stuff Update - Rohan Vazarkar](https://posts.specterops.io/bloodhound-2-1-the-fix-broken-stuff-update-4d28ff732b1)
+			* **Using**
+				* [The Dog Whisperer's Handbook: A Hacker's Guide to the BloodHound Galaxy - @SadProcessor](https://www.ernw.de/download/BloodHoundWorkshop/ERNW_DogWhispererHandbook.pdf)
 				* [Blogpost](https://insinuator.net/2018/11/the-dog-whisperers-handbook/)
-			* [CypherDog](https://github.com/SadProcessor/CypherDog)
+				* [My First Go with BloodHound](https://blog.cobaltstrike.com/2016/12/14/my-first-go-with-bloodhound/)
+				* [Lay of the Land with BloodHound](http://threat.tevora.com/lay-of-the-land-with-bloodhound/)
+				* [Bloodhound walkthrough. A Tool for Many Tradecrafts - Andy Gill](https://www.pentestpartners.com/security-blog/bloodhound-walkthrough-a-tool-for-many-tradecrafts/)
+					* A walkthrough on how to set up and use BloodHound
+				* [BloodHound From Red to Blue - Mathieu Saulnier(BSides Charm2019)](https://www.youtube.com/watch?v=UWY772iIq_Y)
+			* **Neo4j**
+				* [Neo4j Cypher Refcard 3.5](https://neo4j.com/docs/cypher-refcard/current/)
+			* **Extending Functionality**
+				* [Visualizing BloodHound Data with PowerBI — Part 1 - Andy Robbins](https://posts.specterops.io/visualizing-bloodhound-data-with-powerbi-part-1-ba8ea4908422)
+				* [Extending BloodHound: Track and Visualize Your Compromise](https://porterhau5.com/blog/extending-bloodhound-track-and-visualize-your-compromise/)
+					* Customizing BloodHound's UI and taking advantage of Custom Queries to document a compromise, find collateral spread of 	owned nodes, and visualize deltas in privilege gains.
+			* **Ingestors**
+				* [BloodHound.py](https://github.com/fox-it/BloodHound.py)
+					* A Python based ingestor for BloodHound
+			* **API**
+				* [CypherDog](https://github.com/SadProcessor/CypherDog)
 		* **Domain Reconaissance**
 			* [goddi](https://github.com/NetSPI/goddi)
 				* goddi (go dump domain info) dumps Active Directory domain information
@@ -1260,11 +2064,13 @@
 		* **Passwords**
 			* [NtdsAudit](https://github.com/Dionach/NtdsAudit)
 				* NtdsAudit is an application to assist in auditing Active Directory databases. It provides some useful statistics relating to accounts and passwords. It can also be used to dump password hashes for later cracking.
-		* **SPN Scanning**
+		* **Service Principal Name(SPN) Scanning**
 			* [Service Principal Names - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/AD/service-principal-names)
 			* [SPNs - adsecurity.org](https://adsecurity.org/?page_id=183)
 				* This page is a comprehensive reference (as comprehensive as possible) for Active Directory Service Principal Names (SPNs). As I discover more SPNs, they will be added.
 			* [Service Principal Names (SPNs) SetSPN Syntax (Setspn.exe - social.technet.ms.com)](https://social.technet.microsoft.com/wiki/contents/articles/717.service-principal-names-spns-setspn-syntax-setspn-exe.aspx)
+			* [SPN Discovery - pentestlab.blog](https://pentestlab.blog/2018/06/04/spn-discovery/)
+			* [Discovering Service Accounts Without Using Privileges - Jeff Warren](https://blog.stealthbits.com/discovering-service-accounts-without-using-privileges/)
 * **Red Forest**
 	* [Attack and defend Microsoft Enhanced Security Administrative](https://download.ernw-insight.de/troopers/tr18/slides/TR18_AD_Attack-and-Defend-Microsoft-Enhanced-Security.pdf)
 * **Skeleton Key**
@@ -1275,9 +2081,19 @@
 	* [Attackers Can Now Use Mimikatz to Implant Skeleton Key on Domain Controllers & BackDoor Your Active Directory Forest](https://adsecurity.org/?p=1275)
 * **Specific Vulnerabilities**"active
 	* **MS14-068**
-		* [MS14-068: Vulnerability in (Active Directory) Kerberos Could Allow Elevation of Privilege](https://adsecurity.org/?p=525)
-		* [Digging into MS14-068, Exploitation and Defence](https://labs.mwrinfosecurity.com/blog/digging-into-ms14-068-exploitation-and-defence/)
-		* [From MS14-068 to Full Compromise – Step by Step](https://www.trustedsec.com/2014/12/ms14-068-full-compromise-step-step/)
+		* **About**
+			* [MS14-068: Vulnerability in (Active Directory) Kerberos Could Allow Elevation of Privilege](https://adsecurity.org/?p=525)
+			* [MS14-068: Vulnerability in (Active Directory) Kerberos Could Allow Elevation of Privilege - adsecurity.org](https://adsecurity.org/?p=525)
+			* [Kerberos Vulnerability in MS14-068 (KB3011780) Explained - adsecurity.org](https://adsecurity.org/?p=541)
+			* [Detecting MS14-068 Kerberos Exploit Packets on the Wire aka How the PyKEK Exploit Works - adsecurity.org](https://adsecurity.org/?p=763)
+			* [Exploiting MS14-068 Vulnerable Domain Controllers Successfully with the Python Kerberos Exploitation Kit (PyKEK) - adsecurity.org](https://adsecurity.org/?p=676)
+			* [Digging into MS14-068, Exploitation and Defence - Ben Campbell, Jon Cave](https://labs.mwrinfosecurity.com/blog/digging-into-ms14-068-exploitation-and-defence/)
+		* **Exploiting**
+			* [Digging into MS14-068, Exploitation and Defence](https://labs.mwrinfosecurity.com/blog/digging-into-ms14-068-exploitation-and-defence/)
+			* [From MS14-068 to Full Compromise - Stepy by Step - David Kennedy](https://www.trustedsec.com/2014/12/ms14-068-full-compromise-step-step/)
+			* [Microsoft Security Bulletin MS14-068 - Critical - docs.ms](https://docs.microsoft.com/en-us/security-updates/securitybulletins/2014/ms14-068)
+			* [Exploiting MS14-068 with PyKEK and Kali - Zach Grace](https://zachgrace.com/posts/exploiting-ms14-068/)
+			* [Exploiting MS14-068 Vulnerable Domain Controllers Successfully with the Python Kerberos Exploitation Kit (PyKEK) - adsecurity.org](https://adsecurity.org/?p=676)
 	* **MS15-011**
 		* [Practically Exploiting MS15-014 and MS15-011 - MWR](https://labs.mwrinfosecurity.com/blog/practically-exploiting-ms15-014-and-ms15-011/)
 		* [MS15-011 - Microsoft Windows Group Policy real exploitation via a SMB MiTM attack - coresecurity](https://www.coresecurity.com/blog/ms15-011-microsoft-windows-group-policy-real-exploitation-via-a-smb-mitm-attack)
@@ -1495,21 +2311,25 @@
 		* [Invoke-ExShellcode.ps1 - Philts](https://gist.github.com/Philts/f7c85995c5198e845c70cc51cd4e7e2a)
 			* Lateral movement and shellcode injection via Excel 4.0 macros
 	* **Pass-The-Hash**
-		* [PsExec and the Nasty Things It Can Do](http://www.windowsecurity.com/articles-tutorials/misc_network_security/PsExec-Nasty-Things-It-Can-Do.html)
-			* An overview of what PsExec is and what its capabilities are from an administrative standpoint.
-		* [smbexec](https://github.com/pentestgeek/smbexec)
-			* A rapid psexec style attack with samba tools
-		* [Blogpost that inspired it](http://carnal0wnage.attackresearch.com/2012/01/psexec-fail-upload-and-exec-instead.html)
-		* [pth-toolkit I.e Portable pass the hash toolkit](https://github.com/byt3bl33d3r/pth-toolkit)
-			* A modified version of the passing-the-hash tool collection https://code.google.com/p/passing-the-hash/ designed to be portable and work straight out of the box even on the most 'bare bones' systems
-		* [Pass-the-Hash is Dead: Long Live Pass-the-Hash](http://www.harmj0y.net/blog/penetesting/pass-the-hash-is-dead-long-live-pass-the-hash/)
-		* [Still Passing the Hash 15 Years Later: Using Keys to the Kingdom to Access Data - BH 2012](https://www.youtube.com/watch?v=O7WRojkYR00)
-		* [Still Passing the Hash 15 Years Later](http://passing-the-hash.blogspot.com/)
-		* [The Evolution of Protected Processes Part 1: Pass-the-Hash Mitigations in Windows 8.1](http://www.alex-ionescu.com/?p=97)
-		* [Et tu Kerberos - Christopher Campbell](https://www.youtube.com/watch?v=RIRQQCM4wz8)
-			* For over a decade we have been told that Kerberos is the answer to Microsoft’s authentication woes and now we know that isn’t the case. The problems with LM and NTLM are widely known- but the problems with Kerberos have only recently surfaced. In this talk we will look back at previous failures in order to look forward. We will take a look at what recent problems in Kerberos mean to your enterprise and ways you could possibly mitigate them. Attacks such as Spoofed-PAC- Pass-the-Hash- Golden Ticket- Pass-the-Ticket and Over-Pass-the-Ticket will be explained. Unfortunately- we don’t really know what is next – only that what we have now is broken.
-		* [Battle Of SKM And IUM How Windows 10 Rewrites OS Architecture - Alex Ionescu - BHUSA2015](https://www.youtube.com/watch?v=LqaWIn4y26E&index=15&list=PLH15HpR5qRsXF78lrpWP2JKpPJs_AFnD7)
-			* [Slides](http://www.alex-ionescu.com/blackhat2015.pdf)
+		* **Articles/Blogposts/Writeups**
+			* [*Puff* *Puff* PSExec - Jonathan Renard](https://www.toshellandback.com/2017/02/11/psexec/)
+			* [PsExec and the Nasty Things It Can Do](http://www.windowsecurity.com/articles-tutorials/misc_network_security/PsExec-Nasty-Things-It-Can-Do.html)
+				* An overview of what PsExec is and what its capabilities are from an administrative standpoint.
+			* [Pass-the-Hash is Dead: Long Live Pass-the-Hash - harmj0y](http://www.harmj0y.net/blog/penetesting/pass-the-hash-is-dead-long-live-pass-the-hash/)
+			* [Pass-the-Hash Is Dead: Long Live LocalAccountTokenFilterPolicy - harmj0y](http://www.harmj0y.net/blog/redteaming/pass-the-hash-is-dead-long-live-localaccounttokenfilterpolicy/)
+			* [Still Passing the Hash 15 Years Later: Using Keys to the Kingdom to Access Data - BH 2012](https://www.youtube.com/watch?v=O7WRojkYR00)
+			* [Still Passing the Hash 15 Years Later](http://passing-the-hash.blogspot.com/)
+			* [The Evolution of Protected Processes Part 1: Pass-the-Hash Mitigations in Windows 8.1](http://www.alex-ionescu.com/?p=97)
+			* [Et tu Kerberos - Christopher Campbell](https://www.youtube.com/watch?v=RIRQQCM4wz8)
+				* For over a decade we have been told that Kerberos is the answer to Microsoft’s authentication woes and now we know that isn’t the case. The problems with LM and NTLM are widely known- but the problems with Kerberos have only recently surfaced. In this talk we will look back at previous failures in order to look forward. We will take a look at what recent problems in Kerberos mean to your enterprise and ways you could possibly mitigate them. Attacks such as Spoofed-PAC- Pass-the-Hash- Golden Ticket- Pass-the-Ticket and Over-Pass-the-Ticket will be explained. Unfortunately- we don’t really know what is next – only that what we have now is broken.
+			* [Battle Of SKM And IUM How Windows 10 Rewrites OS Architecture - Alex Ionescu - BHUSA2015](https://www.youtube.com/watch?v=LqaWIn4y26E&index=15&list=PLH15HpR5qRsXF78lrpWP2JKpPJs_AFnD7)
+				* [Slides](http://www.alex-ionescu.com/blackhat2015.pdf)
+		* **Tools**
+			* [smbexec](https://github.com/pentestgeek/smbexec)
+				* A rapid psexec style attack with samba tools
+				* [Blogpost that inspired it](http://carnal0wnage.attackresearch.com/2012/01/psexec-fail-upload-and-exec-instead.html)
+			* [pth-toolkit I.e Portable pass the hash toolkit](https://github.com/byt3bl33d3r/pth-toolkit)
+				* A modified version of the passing-the-hash tool collection https://code.google.com/p/passing-the-hash/ designed to be portable and work straight out of the box even on the most 'bare bones' systems
 	* **SCM**
 		* [Lateral Movement — SCM and DLL Hijacking Primer - Dwight Hohnstein](https://posts.specterops.io/lateral-movement-scm-and-dll-hijacking-primer-d2f61e8ab992)
 	* **WinRM**
@@ -1625,6 +2445,7 @@
 	* [Noob 101: Practical Techniques for AV Bypass - Jared Hoffman - ANYCON 2017](http://www.irongeek.com/i.php?page=videos/anycon2017/103-noob-101-practical-techniques-for-av-bypass-jared-hoffman)
 		* The shortcomings of anti-virus (AV) solutions have been well known for some time. Nevertheless, both public and private organizations continue to rely on AV software as a critical component of their information security programs, acting as a key protection mechanism over endpoints and other information systems within their networks. As a result, the security posture of these organizations is significantly jeopardized by relying only on this weakened control.
 * **Educational**
+	* [Bypass Antivirus Dynamic Analysis: Limitations of the AV model and how to exploit them - Emeric Nasi(2014)](https://wikileaks.org/ciav7p1/cms/files/BypassAVDynamics.pdf)
 	* [Learn how to hide your trojans, backdoors, etc from anti virus.](https://www.hellboundhackers.org/articles/read-article.php?article_id=842)
 	* [Easy Ways To Bypass Anti-Virus Systems - Attila Marosi -Trooper14](https://www.youtube.com/watch?v=Sl1Sru3OwJ4)
 	* [Muts Bypassing AV in Vista/Pissing all over your AV](https://web.archive.org/web/20130514172102/http://www.shmoocon.org/2008/videos/Backtrack%20Demo.mp4)
@@ -1648,6 +2469,7 @@
 	* [Executing Meterpreter in Memory on Windows 10 and Bypassing AntiVirus - n00py](https://www.n00py.io/2018/06/executing-meterpreter-in-memory-on-windows-10-and-bypassing-antivirus/)
 	* [Simple AV Evasion Symantec and P4wnP1 USB - Frans Hendrik Botes](https://medium.com/@fbotes2/advance-av-evasion-symantec-and-p4wnp1-usb-c7899bcbc6af)
 	* [How to Bypass Anti-Virus to Run Mimikatz - Carrie Roberts(2017)](https://www.blackhillsinfosec.com/bypass-anti-virus-run-mimikatz/)
+	* [DeepSec 2013 Talk: Easy Ways To Bypass Anti-Virus Systems - Attila Marosi](https://blog.deepsec.net/deepsec-2013-talk-easy-ways-to-bypass-anti-virus-systems/)
 * **Talks & Presentations**
 	* [Adventures in Asymmetric Warfare by Will Schroeder](https://www.youtube.com/watch?v=53qQfCkVM_o)
 		* As a co-founder and principal developer of the Veil-Framework, the speaker has spent a considerable amount of time over the past year and a half researching AV-evasion techniques. This talk will briefly cover the problem space of antivirus detection, as well as the reaction to the initial release of Veil-Evasion, a tool for generating AV-evading executables that implements much of the speaker’s research. We will trace through the evolution of the obfuscation techniques utilized by Veil-Evasion’s generation methods, culminating in the release of an entirely new payload language class, as well as the release of a new ..NET encryptor. The talk will conclude with some basic static analysis of several Veil-Evasion payload families, showing once and for all that antivirus static signature detection is dead.
@@ -1864,11 +2686,7 @@
 		* [Red Teaming in the EDR age - Will Burgess](https://www.youtube.com/watch?v=l8nkXCOYQC4)
 	* **Tools**
 		* [Sharp-Suite - Process Argument Spoofing](https://github.com/FuzzySecurity/Sharp-Suite)
-* **Virtualbox**
-	* [VirtualBox Detection Via WQL Queries](http://waleedassar.blogspot.com/)
-	* [Bypassing VirtualBox Process Hardening on Windows](https://googleprojectzero.blogspot.com/2017/08/bypassing-virtualbox-process-hardening.html)
-	* [VBoxHardenedLoader](https://github.com/hfiref0x/VBoxHardenedLoader)
-		* VirtualBox VM detection mitigation loader
+
 
 
 

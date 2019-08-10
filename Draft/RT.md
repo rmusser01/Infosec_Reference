@@ -24,9 +24,107 @@
 
 
 * **To Do**
+
+https://github.com/mthbernardes/GTRS/blob/master/README.md
+https://github.com/tearsecurity/firstorder
+https://github.com/CylanceSPEAR/MarkovObfuscate
+
+
+https://www.sprocketsecurity.com/blog/penetration-testing-dropbox-setup-part2
+
+https://mthbernardes.github.io/persistence/2019/03/07/using-firefox-webextensions-as-c2-client.html
+https://www.welivesecurity.com/2018/08/22/turla-unique-outlook-backdoor/
+
+
+
+https://github.com/gen0cide/gscript
+
+
+
+https://github.com/panagioto/Covenant
+
+
+https://www.irongeek.com/i.php?page=videos/derbycon7/t315-game-on-using-red-team-to-rapidly-evolve-your-defenses-joff-thyer-pete-petersen
+
+https://www.irongeek.com/i.php?page=videos/derbycon7/t211-common-assessment-mistakes-pen-testers-and-clients-should-avoid-brent-white-tim-roberts
+
+* [Modern Defenses and YOU!](https://blog.cobaltstrike.com/2017/10/25/modern-defenses-and-you/)
+* [OPSEC Considerations for Beacon Commands](https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/)
+* [Red Team Tradecraft and TTP Guidance](https://sec564.com/#!docs/tradecraft.md)
+* [Fighting the Toolset](https://www.youtube.com/watch?v=RoqVunX_sqA)
+
+https://posts.specterops.io/designing-effective-covert-red-team-attack-infrastructure-767d4289af43
+https://github.com/psychsecurity/Red-Team-Infrastructure
+* [Red Teaming in the EDR age - Will Burgess - WWF HackFest 2018](https://www.youtube.com/watch?v=l8nkXCOYQC4)
+	* Will Burgess is a security consultant with experience across both defensive and offensive cyber security. Will previously worked as a Threat Hunter within MWR's Countercept Division and specialised in detecting advanced malware across enterprises. As part of his role, Will researched attack techniques used by a wide range of malware families (including popular commercial tools such as Cobalt Strike), developed new ways of catching attackers, and presented this research at different conferences. Most recently, Will has been involved in red team engagements, putting his extensive knowledge of detection to bypass and hide from existing Endpoint Detection & Response (EDR) tools and AV solutions. Will's research interests include advanced attack detection, Windows internals, and finding new techniques for post exploitation in Windows environments.
+* [RedTeaming from Zero to One – Part 1](https://payatu.com/RedTeaming-from-zero-to-one-part-1/)
+* [RedTeaming from Zero to One – Part 2 - Rashid Feroze](https://payatu.com/redteaming-zero-one-part-2/)
 	* Sort articles better
 		* Add pivoting stuff from postex/privesc
 	* add usb/hw related stuff
+* [Cons and Conjurers Lessons for Infiltration - Paul Blonsky - BSides Cleveland](https://www.youtube.com/watch?v=jRgOVCBg_Q4)
+* [There is a shell in your lunch-box - Rotimi Akinyele](https://hakin9.org/shell-lunch-box-rotimi-akinyele/)
+* [Cons and Conjurers Lessons for Infiltration - Paul Blonsky - BSides Cleveland](https://www.youtube.com/watch?v=jRgOVCBg_Q4)
+* [No More Secrets - Sneakers](https://github.com/bartobri/no-more-secrets)
+	* This project provides a command line tool called nms that recreates the famous data decryption effect seen on screen in the 1992 hacker movie Sneakers.
+* [Windows API resolution via hashing](https://github.com/LloydLabs/Windows-API-Hashing)
+	* Although this method of API obfuscation is relatively old, my friend who was wanting to increase his skills in the Windows sphere confronted me about a way a few malware families seem to resolve APIs. It's pretty simple, however he could not find any documentation with a solid programming example on the matter at the time, so I thought I'd quickly write something up regarding it. I was going to write my own loader for this example (loading the desired module via LdrLoadDll within kernel32.dll, walking the InMemoryOrderModuleList to find the desired loaded module, finding the exported function we're after within the EAT..) - however I thought this might of have been a bit overkill for such a simple concept, I want to cover writing your own PE loader in the future though as it's an interesting subject.
+https://posts.specterops.io/being-a-good-domain-shepherd-part-2-5e8597c3fe63
+* [Evading Anomaly-Based NIDS with Empire - utkusen.com](https://utkusen.com/blog/bypassing-anomaly-based-nids-with-empire.html)
+
+https://github.com/nccgroup/phantap
+https://github.com/SecurityRiskAdvisors/VECTR
+* [Empire & Tool Diversity: Integration is Key - sixdub](https://www.sixdub.net/?p=627)
+
+https://labs.mwrinfosecurity.com/blog/tasking-office-365-for-cobalt-strike-c2/
+https://www.youtube.com/watch?v=OjtftdPts4g
+
+* [Evading Anomaly-Based NIDS with Empire - utkusen.com](https://utkusen.com/blog/bypassing-anomaly-based-nids-with-empire.html)
+https://attactics.org/2019/07/18/cslogwatch-cobalt-strike-tracking-parsing-storage/
+* [e2modrewrite](https://github.com/infosecn1nja/e2modrewrite)
+	* Convert Empire profiles to Apache mod_rewrite scripts
+
+
+
+https://blog.stratumsecurity.com/2018/10/17/route-53-as-a-pentest-infrastructure/
+
+https://github.com/operatorequals/covertutils
+
+
+* [cmd.exe running any file no matter what extension - Hexacorn](http://www.hexacorn.com/blog/2019/04/21/cmd-exe-running-any-file-no-matter-what-extension/)
+https://github.com/Mr-Un1k0d3r/ClickOnceGenerator
+* [intrigue-core](https://github.com/intrigueio/intrigue-core)
+	* Intrigue-core is a framework for external attack surface discovery and automated OSINT.
+See payloads section in Postex_Privesc}
+https://github.com/byt3bl33d3r/SILENTTRINITY
+https://github.com/jymcheong/AutoTTP
+https://github.com/vysecurity/RedTips
+https://github.com/taherio/redi/
+* [Let's Create A Redteam Mission - Alex Kouzmine - BlackAlps 2018](https://www.youtube.com/watch?v=-kK8K-UVhWY)
+https://vanmieghem.io/reigning-the-empire-evading-detection/
+
+* [How to Make Communication Profiles for Empire - Jeff Dimmock](https://posts.specterops.io/how-to-make-communication-profiles-for-empire-46da8554338a)
+* [Being a Good Domain Shepherd - Christopher Maddalena](https://posts.specterops.io/being-a-good-domain-shepherd-57754edd955f?gi=2cadd2578045)
+
+	* We wrote a tool called firstorder, which analyses the network traffic and identifies normal traffic profile. With this information, it configures Empire’s listener. So with this listener, we have a good chance to evade listener-agent communication from an -application layer- anomaly based NIDS, since we are matching with normal traffic profile.
+* [firstorder](https://github.com/tearsecurity/firstorder)
+	* firstorder is designed to evade Empire's C2-Agent communication from anomaly-based intrusion detection systems. It takes a traffic capture file (pcap) of the network and tries to identify normal traffic profile. According to results, it creates an Empire HTTP listener with appropriate options.
+https://www.tarlogic.com/en/blog/red-team-tales-0x01/
+https://www.mdsec.co.uk/2018/06/freestyling-with-sharpshooter-v1-0/
+
+https://github.com/sveinbjornt/Platypus
+* [PentestHardware](https://github.com/unprovable/PentestHardware)
+	* Kinda useful notes collated together publicly	
+
+https://www.fireeye.com/blog/threat-research/2018/06/bring-your-own-land-novel-red-teaming-technique.html
+
+https://github.com/SecurityRiskAdvisors/RedTeamSIEM
+
+
+
+
+https://zachgrace.com/2018/05/20/Red_Team_Telemetry_Part_1.html
+https://github.com/ztgrace/pwnboard
 
 
 --------------
@@ -63,8 +161,6 @@
 * **Building a Red Team**
 	* [Building A Successful Internal Adversarial Simulation Team - C. Gates & C. Nickerson - BruCON 0x08](https://www.youtube.com/watch?v=Q5Fu6AvXi_A&list=PLtb1FJdVWjUfCe1Vcj67PG5Px8u1VY3YD&index=1)
 	* [Zero to Hero – Building a Red Team - Robert Neel & David Thompson](http://penconsultants.com/blog/presentation-zero-to-hero-building-a-red-team/)
-	* [Zero to Hero – A Red Team’s Journey - Robert Neel & David Thompson](http://penconsultants.com/blog/presentation-zero-to-hero-a-red-teams-journey/)
-	* [Building A Successful Internal Adversarial Simulation Team - C. Gates & C. Nickerson - BruCON 0x08](https://www.youtube.com/watch?v=Q5Fu6AvXi_A&list=PLtb1FJdVWjUfCe1Vcj67PG5Px8u1VY3YD&index=1)
 * **Generally Relevant/Useful Information**
 	* [The ‘Laws’ of Red Teaming - RedTeam Journal](https://redteamjournal.com/red-teaming-laws/)
 		* Red teaming is governed by informal and wholly unscientific “laws” based largely on human nature. These laws are driven by paradox and, in many cases, a healthy dose of humor. We state some from a general perspective, some from the perspective of the customer or sponsor, and some from the perspective of the red team. Enjoy. We add to these as the mood strikes. (For an alternative list of rules, try the one at redteams.net.)

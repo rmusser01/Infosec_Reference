@@ -9,6 +9,22 @@
 * [Websites/Organizations](#web)
 
 
+UX Strategy: How to Devise Innovative Digital Products that People Want 
+Mapping Experiences: A Complete Guide to Creating Value through Journeys, Blueprints, and Diagrams
+How to Make Sense of Any Mess: Information Architecture for Everybody
+The Elements of User Experience: User-Centered Design for the Web and Beyond (2nd Edition) (Voices That Matter)
+Articulating Design Decisions: Communicate with Stakeholders, Keep Your Sanity, and Deliver the Best User Experience
+UX Research: Practical Techniques for Designing Better Products
+Lean UX: Applying Lean Principles to Improve User Experience
+Information Architecture: For the Web and Beyond
+http://www.catb.org/~esr/html-hell.html
+
+
+
+
+
+
+
 
 ---------------------------
 ### General User Interface/User Experience Design

@@ -19,6 +19,78 @@
 * [Papers](#papers)
 
 
+
+
+
+
+
+https://github.com/Instagram/LibCST
+https://pyre-check.org/
+
+
+https://github.com/facebookincubator/SPARTA
+https://engineering.fb.com/security/zoncolan/
+* [Static Analysis at Scale: An Instagram Story - Benjamin Woodruff](https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c)
+
+https://github.com/IOActive/RepoSsessed
+* [PHP The Right Way](http://www.phptherightway.com/)
+* [Exploiting PHP7 unserialize - Yannay Livneh (33c3)](https://media.ccc.de/v/33c3-7858-exploiting_php7_unserialize)
+	* PHP-7 is a new version of the most prevalent server-side language in use today. Like previous version, this version is also vulnerable to memory corruptions. However, the language has gone through extensive changes and none of previous exploitation techniques are relevant. In this talk, we explore the new memory internals of the language from exploiters and vulnerability researchers point of view. We will explain newly found vulnerabilities in the 'unserialize' mechanism of the language and present re-usable primitives for remote exploitation of these vulnerabilities.
+* [Damn Small Vulnerable Web in Docker](https://blog.appsecco.com/damn-small-vulnerable-web-in-docker-fd850ee129d5)
+https://github.com/OWASP/Benchmark
+* [I Forgot Your Password: Randomness Attacks Against PHP Applications - George Argyros, Aggelos Kiayis](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.360.4033&rep=rep1&type=pdf)
+* [10 common security gotchas in Python and how to avoid them - Anthony Shaw](https://hackernoon.com/10-common-security-gotchas-in-python-and-how-to-avoid-them-e19fbe265e03?gi=ac211b3349e8)
+https://viewsourcecode.org/snaptoken/kilo/index.html
+
+* [Roslyn](https://github.com/dotnet/roslyn)
+	* Roslyn provides open-source C# and Visual Basic compilers with rich code analysis APIs. It enables building code analysis tools with the same APIs that are used by Visual Studio.
+	* [Overview](https://github.com/dotnet/roslyn/wiki/Roslyn%20Overview)
+http://pentest.cryptocity.net/code-audits/
+* [Typeful Programming - Luca Cardelli](http://lucacardelli.name/Papers/TypefulProg.pdf)
+
+https://danger.systems/js/
+https://www.zerodayinitiative.com/blog/2018/4/12/inverting-your-assumptions-a-guide-to-jit-comparisons
+https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html
+
+
+https://github.com/mre/awesome-static-analysis
+https://github.com/troessner/reek
+https://github.com/seattlerb/flay
+https://github.com/seattlerb/flog
+https://github.com/whitesmith/rubycritic
+http://www.rubyguides.com/2015/08/static-analysis-in-ruby/
+https://github.com/rubocop-hq/rubocop
+https://realpython.com/python-csv/
+
+https://gist.github.com/carnal0wnage/ed9e4c10e065bd00e21e2af67301e9d9
+
+https://blog.ripstech.com/2018/woocommerce-php-object-injection/
+
+
+* [Static Analysis at Scale: An Instagram Story - Benjamin Woodruff](https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c)
+
+
+
+https://www.blackhillsinfosec.com/pyfunnels-data-normalization-for-infosec-workflows/
+https://github.com/packetvitality/PyFunnels
+https://www.sans.org/reading-room/whitepapers/OpenSource/pyfunnels-data-normalization-infosec-workflows-38785
+
+https://github.com/slackhq/go-audit
+
+
+* [RSA Encore: The Emergent Cloud Security Toolchain for CI/CD - SignalSciences](https://info.signalsciences.com/cloud-security-toolchain-ci-cd-rsa-2018-encore-web-ty?)
+* [The Evil within the Comparison Functions - Andrey Karpov](https://www.viva64.com/en/b/0509/)
+
+
+
+
+
+
+
+
+
+
+
 -----------
 ### <a name="general">General</a>
 * The content here is just stuff I've come across or think would be useful to someone in infosec. It is not to be taken as anything beyond a suggestion about stuff.

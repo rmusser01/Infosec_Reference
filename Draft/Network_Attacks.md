@@ -1,4 +1,4 @@
-# Network Attacks & Defenses
+https://hypothetical.me/short/dns-0x20/# Network Attacks & Defenses
 
 ## Table of Contents
 - [General](#general)
@@ -67,6 +67,239 @@
 	* STUN
 	* Hadoop
 	* Fax
+	* Packet sniffers
+
+	* [Packet sniffing with powershell](https://blogs.technet.microsoft.com/heyscriptingguy/2015/10/12/packet-sniffing-with-powershell-getting-started/)
+https://github.com/x1mdev/ReconPi
+https://www.blackhillsinfosec.com/poking-holes-in-the-firewall-egress-testing-with-allports-exposed/
+https://cqureacademy.com/blog/penetration-testing/nse-scripts
+https://github.com/dnkolegov/bigipsecurity/blob/master/README.md
+WMI Stuff
+https://www.blackhat.com/docs/us-15/materials/us-15-Graeber-Abusing-Windows-Management-Instrumentation-WMI-To-Build-A-Persistent%20Asynchronous-And-Fileless-Backdoor-wp.pdf
+https://github.com/mattifestation/WMI_Backdoor
+https://blog.netspi.com/getting-started-wmi-weaponization-part-5/
+* [Windows Management Instrumentation(WMI) Offense, Defense, and Forensics - William Ballenthin, Matt Graeber, Claudiu Teodorescu](https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/wp-windows-management-instrumentation.pdf)
+https://docs.microsoft.com/en-us/windows/win32/wmisdk/about-wmi
+https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page
+https://en.wikipedia.org/wiki/Windows_Management_Instrumentation
+* Understanding WMI Scripting: Exploiting Microsoft's Windows Management Instrumentation in Mission-Critical Computing Infrastructures - Alain Lissoir
+* [An Illustrated Guide to the BEAST Attack - Joshua Davies](http://commandlinefanatic.com/cgi-bin/showarticle.cgi?article=art027)
+
+
+* [Papercut](https://github.com/changemakerstudios/papercut)
+	* Simple Desktop SMTP Server
+
+* [RFC 3041: Privacy Extensions for Stateless Address Autoconfiguration in IPv6](https://tools.ietf.org/html/rfc3041)
+* [RFC 7710: Captive-Portal Identification Using DHCP or Router Advertisements (RAs)](https://tools.ietf.org/html/rfc7710)
+
+
+https://github.com/nccgroup/DatajackProxy
+* [RFC 4861: Neighbor Discovery for IP version 6 (IPv6)](https://tools.ietf.org/html/rfc4861)
+https://github.com/praetorian-inc/trudy
+https://github.com/brannondorsey/dns-rebind-toolkit
+* [LLMNR/NBT-NS Poisoning Using Responder](https://www.4armed.com/blog/llmnr-nbtns-poisoning-using-responder/)
+https://blog.netspi.com/attacks-against-windows-pxe-boot-images/
+https://www.andreafortuna.org/2017/08/09/windows-command-line-cheatsheet-part-2-wmic/
+https://tools.ietf.org/html/rfc8461
+https://github.com/dnkolegov/bigipsecurity/blob/master/README.md
+https://github.com/danielmiessler/egression
+https://github.com/audibleblink/doxycannon
+* [A Tale From Defcon and the Fun of BNAT](https://blog.rapid7.com/2011/08/26/a-tale-from-defcon-and-the-fun-of-bnat/)
+* [BNAT Hijacking: Repairing Broken Communication Channels - Jonathan Claudius
+ - AIDE 2012](http://www.irongeek.com/i.php?page=videos/aide2012/bnat-hijacking-repairing-broken-communication-channels-jonathan-claudius)
+ https://tls.ulfheim.net/
+https://nmap.org/nsedoc/scripts/ipidseq.html
+ https://bryceboe.com/2012/03/12/bypassing-gogos-inflight-internet-authentication/
+* AMQP
+    * [AMQP v1.0(2011) Protocol Document](http://www.amqp.org/sites/amqp.org/files/amqp.pdf)
+https://medium.com/@brannondorsey/attacking-private-networks-from-the-internet-with-dns-rebinding-ea7098a2d325
+* [Capturing NetNTLM Hashes with Office [DOT] XML Documents - bohops](https://bohops.com/2018/08/04/capturing-netntlm-hashes-with-office-dot-xml-documents/)
+
+* [RFC1350: THE TFTP PROTOCOL (REVISION 2)](https://tools.ietf.org/html/rfc1350)
+https://github.com/cldrn/nmap-nse-scripts
+https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-convery-franz-v2.pdf
+* [Ntlm Relay Reloaded: Attack methods you do not know - Jianing Wang, Junyu Zhou - zeronights18](https://www.youtube.com/watch?v=BrSS_0a0vzQ)
+
+http://niiconsulting.com/checkmate/2013/05/memcache-exploit/
+* [Overpass-the-hash - GentilKiwi](http://blog.gentilkiwi.com/securite/mimikatz/overpass-the-hash)
+
+http://trouble.org/?p=712
+https://community.rapid7.com/community/metasploit/blog/2013/07/02/a-penetration-testers-guide-to-ipmi
+http://fish2.com/ipmi/bp.pdf
+
+https://github.com/lorenzog/dns-rebinding
+https://www.blackhat.com/docs/us-15/materials/us-15-Cassidy-Switches-Get-Stitches.pdf
+
+https://labs.mwrinfosecurity.com/blog/pth-attacks-against-ntlm-authenticated-web-applications/
+
+Redis
+* [redis - Wikipedia](https://en.wikipedia.org/wiki/Redis)
+* [Introduction to redis - redis.io](https://redis.io/topics/introduction)
+* [redis security - redis.io](https://redis.io/topics/security)
+* [A Few Things About redis Security - antirez](http://antirez.com/news/96)
+* [Securing redis - redis.io](https://redis.io/topics/quickstart#securing-redis)
+* [Pentesting Redis Servers - averagesecurityguy](https://averagesecurityguy.github.io/code/pentest/2015/09/17/pentesting-redis-servers/)
+* [redis-dump](http://delanotes.com/redis-dump/)
+* [Script attempted to create global variable - Stackoverflow](https://stackoverflow.com/questions/19997647/script-attempted-to-create-global-variable)
+
+* [NetworkBoot.org](https://networkboot.org/)
+    * A place where beginners can learn the fundamentals of network booting. 
+Hadoop
+* [Hadoop Safari Hunting for Vulnerabilities - Thomas Debize, Mehdi Braik - PHDays](https://www.slideshare.net/phdays/hadoop-76515903)
+* [Hadoop Attack Library](https://github.com/wavestone-cdt/hadoop-attack-library)
+	* A collection of pentest tools and resources targeting Hadoop environments
+* [Talk - Big problems with big data - Hadoop interfaces security - AppSecEU16](https://www.youtube.com/watch?v=ClXKGI8AzTk)
+	* [Slides - Big problems with big data – Hadoop interfaces security - Jakub Kaluzny - ZeroNights, Moscow 2015](http://2015.zeronights.org/assets/files/03-Kaluzny.pdf)
+* [Cloud Security in Map/Reduce - An Analysis - Jason Schlesinger(2009)](http://hackedexistence.com/downloads/Cloud_Security_in_Map_Reduce.pdf)
+* [Hadoop Security Design? Just Add Kerberos? Really? - Andrew Becherer - BHUSA2010]
+* [Securing Hadoop: Security Recommendations for Hadoop Environments - Securosis(2016)](https://securosis.com/assets/library/reports/Securing_Hadoop_Final_V2.pdf)
+* [SANS Cloudera Hadoop Hardening Checklist Guide](https://www.sans.org/score/checklists/cloudera-security-hardening)
+* [Ports Used by Components of CDH 5 - cloudera.com](https://www.cloudera.com/documentation/enterprise/latest/topics/cdh_ig_ports_cdh5.html)
+* [The Hadoop Ecosystem Table](https://hadoopecosystemtable.github.io/)
+	* This page is a summary to keep the track of Hadoop related projects, focused on FLOSS environment.
+* WMI
+	* https://pentestarmoury.com/2016/07/13/151/
+	* https://learn-powershell.net/2013/08/02/powershell-and-events-wmi-temporary-event-subscriptions/
+	* http://www.fuzzysecurity.com/tutorials/19.html
+	* https://www.blackhat.com/docs/us-15/materials/us-15-Graeber-Abusing-Windows-Management-Instrumentation-WMI-To-Build-A-Persistent%20Asynchronous-And-Fileless-Backdoor-wp.pdf
+	* https://medium.com/threatpunter/detecting-removing-wmi-persistence-60ccbb7dff96
+	* https://in.security/an-intro-into-abusing-and-identifying-wmi-event-subscriptions-for-persistence/
+	* https://www.redcanary.com/blog/lateral-movement-winrm-wmi/
+    * https://blog.netspi.com/getting-started-wmi-weaponization-part-2/
+    * https://docs.microsoft.com/en-us/windows/desktop/WmiSdk/wmi-classes
+    * https://www.xorrior.com/wmic-the-enterprise/
+    * https://www.andreafortuna.org/dfir/windows-command-line-cheatsheet-part-2-wmic/
+    * https://www.andreafortuna.org/command-line/windows-command-line-cheatsheet-part-1-some-useful-tips/
+    * https://docs.microsoft.com/en-us/windows/desktop/wmisdk/access-to-wmi-namespaces
+    * https://docs.microsoft.com/en-us/windows/desktop/wmisdk/wmi-tasks--files-and-folders
+    * https://www.cs.cmu.edu/~tgp/scsadmins/winadmin/WMIC_Queries.txt
+    * https://www.jaapbrasser.com/search-for-files-using-wmi/
+    * https://docs.microsoft.com/en-us/windows/desktop/wmisdk/wmi-reference
+    * https://blogs.msdn.microsoft.com/powershell/2012/08/24/introduction-to-cim-cmdlets/
+    * https://blogs.technet.microsoft.com/heyscriptingguy/2016/02/10/using-the-powershell-cim-cmdlets-for-fun-and-profit/
+    * https://blogs.technet.microsoft.com/heyscriptingguy/2011/09/26/use-powershell-and-wmi-to-get-processor-information/
+    * https://docs.microsoft.com/en-us/windows/desktop/wmisdk/wmi-tasks--accounts-and-domains
+    * https://docs.microsoft.com/en-us/windows/desktop/wmisdk/wmi-tasks--services
+    * https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-powershell-1.0/ee176854(v=technet.10)
+    * https://docs.microsoft.com/en-us/powershell/module/Microsoft.PowerShell.Management/Get-Process?view=powershell-5.1
+    * https://support.microsoft.com/en-us/help/290216/a-description-of-the-windows-management-instrumentation-wmi-command-li
+    * https://docs.microsoft.com/en-us/windows/desktop/WmiSdk/wmic
+    * https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb742610(v=technet.10)
+    * https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc779482(v=ws.10)
+    * http://www.room362.com/blog/2014/04/19/executing-code-via-smb-without-psexec/ (import wmiexec)
+    * http://passing-the-hash.blogspot.co.nz/2013/07/WMIS-PowerSploit-Shells.html
+    * https://msdn.microsoft.com/en-us/library/bb742610.aspx
+    * https://www.youtube.com/watch?v=0SjMgnGwpq8&gl=http://h4k.in/dataurlUS&hl=en
+    * https://blogs.technet.microsoft.com/askperf/2012/02/17/useful-wmic-queries/
+
+
+https://github.com/theMiddleBlue/nmap-elasticsearch-nse
+https://medium.com/@themiddleblue
+
+* [Revocation doesn't work - ImperialViolet(2011)](https://www.imperialviolet.org/2011/03/18/revocation.html)
+
+Message Queueing Telemetry Transport Protocol (MQTT)
+* Default port `1833`
+* MQTT stands for MQ Telemetry Transport. It is a publish/subscribe, extremely simple and lightweight messaging protocol, designed for constrained devices and low-bandwidth, high-latency or unreliable networks. The design principles are to minimise network bandwidth and device resource requirements whilst also attempting to ensure reliability and some degree of assurance of delivery.
+
+It’s open source, royalty free and therefore easy to adopt and adapt
+It follows a publish/subscribe model for one-to-many distribution
+Small message headers
+Multiple Quality of Service levels
+Simple command messages
+Data type agnostic
+Retained messages
+Clean sessions and durable connections
+Last Will and Testament (LWT)
+
+| Publisher |
+	V
+| MQTT Broker | <-> Bridge <-> | MQTT Broker |
+	V
+| Subscriber | 
+https://sensepost.com/blog/2018/punching-messages-in-the-q/
+http://mqtt.org/faq
+http://mqtt.org/documentation
+https://github.com/mqtt/mqtt.github.io/wiki
+http://blog.catchpoint.com/2017/07/06/dissecting-mqtt-using-wireshark/
+https://www.hivemq.com/mqtt-security-fundamentals/
+http://www.steves-internet-guide.com/mqtt-security-mechanisms/
+https://dzone.com/articles/mqtt-security
+https://ieeexplore.ieee.org/document/8239179/
+https://dzone.com/articles/exploiting-mqtt-using-lua
+http://www.steves-internet-guide.com/mqtt/
+https://hub.packtpub.com/lightweight-messaging-mqtt-311-and-mosquitto/
+https://www.youtube.com/watch?v=J_BAXVSVPVI&feature=youtu.be
+https://github.com/zombiesam/joffrey
+https://morphuslabs.com/hacking-the-iot-with-mqtt-8edaf0d07b9b
+NSE Lib: https://nmap.org/nsedoc/lib/mqtt.html
+https://dzone.com/articles/exploiting-mqtt-using-lua
+http://blog.catchpoint.com/2017/05/30/protocol-for-internet-of-things/
+http://blog.catchpoint.com/2017/07/06/dissecting-mqtt-using-wireshark/
+http://www.steves-internet-guide.com/mqtt-protocol-messages-overview/
+http://www.steves-internet-guide.com/mqtt-security-mechanisms/
+MQTT Version 3.1: http://public.dhe.ibm.com/software/dw/webservices/ws-mqtt/MQTT_V3.1_Protocol_Specific.pdf
+MQTT Version 5 HTML: http://docs.oasis-open.org/mqtt/mqtt/v5.0/cs01/mqtt-v5.0-cs01.html
+MQTT Version 5 PDF: http://docs.oasis-open.org/mqtt/mqtt/v5.0/cs01/mqtt-v5.0-cs01.pdf
+Big changes for V5: https://www.oasis-open.org/committees/download.php/57616/Big%20Ideas%20for%20MQTT%20v5.pdf
+
+
+
+
+
+
+
+* [Writing NMAP Scripts Like A Super-Hero - Peter Benjamin](https://medium.com/@petermbenjamin/writing-nmap-scripts-like-a-super-hero-e4b0dc4c782)
+* [Nmap Script Writing Tutorial - nmap.org](https://nmap.org/book/nse-tutorial.html)
+
+
+
+
+https://hypothetical.me/short/dns-0x20/
+
+
+* [SMTP Log Poisioning through LFI to Remote Code Excecution - Raj Chandel](https://www.hackingarticles.in/smtp-log-poisioning-through-lfi-to-remote-code-exceution/)
+
+* MQTT
+    * [What simple security tests can I perform on my MQTT network? - StackExchange IoT](https://iot.stackexchange.com/questions/452/what-simple-security-tests-can-i-perform-on-my-mqtt-network)
+    * [MQTT Security: A Novel Fuzzing Approach](https://www.hindawi.com/journals/wcmc/2018/8261746/)
+        * "we propose the creation of a framework that allows for performing a novel, template-based fuzzing technique on the MQTT protocol. The first experimental results showed that performance of the fuzzing technique presented here makes it a good candidate for use in network architectures with low processing power sensors, such as Smart Cities. In addition, the use of this fuzzer in widely used applications that implement MQTT has led to the discovery of several new security flaws not hitherto reported, demonstrating its usefulness as a tool for finding security vulnerabilities."
+    * [Yankee Swapped: MQTT Primer, Exposure, Exploitation, and Exploration - Rapid7](https://blog.rapid7.com/2018/01/02/yankee-swapped-mqtt-primer-exposure-exploitation-and-exploration/)
+    * [MQTT Version 3.1.1 Oasis Standard](http://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html)
+
+https://github.com/T-S-A/smbspider
+
+* [SSL/TLS and PKI History](https://www.feistyduck.com/ssl-tls-and-pki-history/)
+	* A comprehensive history of the most important events that shaped the SSL/TLS and PKI ecosystem.
+
+https://github.com/tcstool/Fireaway
+
+NSE Scripts
+* https://github.com/cldrn/nmap-nse-scripts/tree/master/scripts
+* https://github.com/b4ldr/nse-scripts
+* https://github.com/peter-hackertarget/nmap-nse-scripts
+* https://github.com/s4n7h0/NSE
+* https://github.com/aerissecure/nse
+
+
+
+
+
+* [PDFiD: GoToE and GoToR Detection (“NTLM Credential Theft”) - Didier Stevens](https://blog.didierstevens.com/2018/05/31/pdfid-gotoe-and-gotor-detection-ntlm-credential-theft/)
+	* The article [“NTLM Credentials Theft via PDF Files”](https://research.checkpoint.com/ntlm-credentials-theft-via-pdf-files/) explains how PDF documents can refer to a resource via UNC paths. This is done using  PDF names /GoToE or /GoToR. My tool pdfid.py can now be extended to report /GoToE and /GoToR usage in a PDF file, without having to change the source code
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1161,11 +1394,14 @@
 ### <a name="wmi"></a> Windows Management Instrumentation(WMI)
 * **101**
 	* [Introduction to WMI Basics with PowerShell Part 1 (What it is and exploring it with a GUI) - Carlos Perez](https://www.darkoperator.com/blog/2013/1/31/introduction-to-wmi-basics-with-powershell-part-1-what-it-is.html)
+	* [WMIC - Take Command-line Control over WMI - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/bb742610(v=technet.10))
 * **General/Articles/Writeups**
 	* [Post Exploitation Using WMIC (System Command) - hackingarticles.in](https://www.hackingarticles.in/post-exploitation-using-wmic-system-command/)
+	* [WMIC Command Line Kung-Fu - tech-wreck.blogspot.com](https://tech-wreckblog.blogspot.com/2009/11/wmic-command-line-kung-fu.html)
 * **Reference**
 	* [Connecting to WMI Remotely with C# - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/wmisdk/connecting-to-wmi-remotely-with-c-)
 * **Tools**
+
 
 
 

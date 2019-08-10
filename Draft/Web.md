@@ -79,6 +79,266 @@
 	- [Google Compute Cloud/AppEngine](#gcc)
 - [BugBounty Writeups](#bugbounty)
 
+https://www.slideshare.net/ssuserf09cba/xxe-how-to-become-a-jedi
+https://x-c3ll.github.io/posts/parasite-web-server-process/
+* [Robust Defenses for Cross-Site Request Forgery](http://theory.stanford.edu/people/jcm/papers/ccs2008-barth.pdf)
+* [Exploiting XXE Vulnerabilities In File Parsing Functionality - Willis Vandevanter - BHUSA 2015](https://www.youtube.com/watch?v=LZUlw8hHp44)
+	* In this 25-minute briefing, we will discuss techniques for exploiting XXE vulnerabilities in File Parsing/Upload functionality. Specifically, XML Entity Attacks are well known, but their exploitation inside XML supported file formats such as docx, xlsx, pptx, and others are not. Discussing the technically relevant points step by step, we will use real world examples from products and recent bug bounties. Finally, in our experience, creating 'XXE backdoored' files can be a very slow process. We will introduce our battle tested tool for infecting the file formats discussed.
+* [Exploiting CVE-2016-4264 With OXML_XXE](https://www.silentrobots.com/blog/2016/10/02/exploiting-cve-2016-4264-with-oxml-xxe/)
+	* https://seclab.stanford.edu/websec/framebusting/framebust.pdf
+	* https://tools.ietf.org/html/rfc7034
+	* https://www.nccgroup.trust/us/fabout-us/newsroom-and-events/blog/2019/february/downgrade-attack-on-tls-1.3-and-vulnerabilities-in-major-tls-libraries/
+https://nets.ec/File_Inclusion
+https://github.com/P0cL4bs/Kadimus
+https://github.com/m101/lfipwn
+
+https://github.com/s0md3v/Arjun
+https://github.com/phra/rustbuster
+https://github.com/yamakira/domains-from-csp
+https://securityheaders.com/
+* [Turtles All the Way Down: Storing Secrets in the Cloud and the Data Center  - Daniel Somerfield(OWASP AppSec SF 15)](https://www.youtube.com/watch?v=OUSvv2maMYI)
+* [SSH "accept : too many open files" on OS X when using Burp - dewhurstsecurity.com](https://blog.dewhurstsecurity.com/2013/04/08/ssh-too-many-open-files-burp.html)
+https://github.com/usdAG/cstc
+https://github.com/sensepost/gowitness
+https://hynek.me/articles/hardening-your-web-servers-ssl-ciphers/
+
+* [Cerberus FTP Blind Cross-Site Scripting to remote code execution as SYSTEM. (Version 9 and 10) - Kevin(secu.dk)]
+https://github.com/we45/Serverless-Workshop
+https://www.balda.ch/posts/2013/Jun/23/python-web-frameworks-pickle/
+
+https://hackernoon.com/azure-brute-farce-17e27dc05f85?gi=b3fa876cd4b5
+
+https://portswigger.net/blog/http-desync-attacks-request-smuggling-reborn
+
+https://github.com/DenizParlak/Hayat
+
+https://www.secjuice.com/bypass-xss-filters-using-javascript-global-variables/
+* [AWS IAM Privilege Escalation – Methods and Mitigation - Spencer Gietzen](https://rhinosecuritylabs.com/aws/aws-privilege-escalation-methods-mitigation/)
+https://github.com/OAI/OpenAPI-Specification
+https://mahmoudsec.blogspot.com/2019/08/exploiting-out-of-band-xxe-using.html
+
+* [Reverse engineering AWS Lambda - denialof.service](https://www.denialof.services/lambda/)
+* [Firefox uXSS and CSS XSS - leucosite.com](https://leucosite.com/Firefox-uXSS-and-CSS-XSS/)
+https://github.com/bishopfox/eyeballer
+https://github.com/HoLyVieR/prototype-pollution-nsec18
+
+https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/august/aspnet-resource-files-resx-and-deserialisation-issues/
+https://github.com/aws-samples/aws-serverless-security-workshop
+
+https://github.com/superhedgy/AttackSurfaceMapper
+https://github.com/PortSwigger/postman-integration
+https://pen-testing.sans.org/blog/2015/12/20/pen-testing-node-js-staying-n-sync-can-make-the-server-go-bye-bye-bye
+https://medium.com/@89berner/persistant-gcp-backdoors-with-googles-cloud-shell-2f75c83096ec
+
+https://danielsomerfield.github.io/turtles/
+
+
+* [RCE in Hubspot with EL injection in HubL - betterhacker.com](https://www.betterhacker.com/2018/12/rce-in-hubspot-with-el-injection-in-hubl.html)
+	* "This is the story of how I was able to get remote code execution on Hubspot's servers by exploiting a vulnerability in HubL expression language, which is used for creating templates and custom modules within the Hubspot CRM."
+
+
+Jetty
+	https://www.appsecconsulting.com/blog/making-jetty-bleed
+	https://blog.gdssecurity.com/labs/2015/2/25/jetleak-vulnerability-remote-leakage-of-shared-buffers-in-je.html
+
+Useful List of file paths to check:
+http://www.r00tsec.com/2014/04/useful-list-file-for-local-file.html
+https://github.com/maaaaz/webscreenshot
+https://github.com/theori-io/zer0con2018_bpak/blob/master/Chrome_Analysis_Zer0Con_2018_Final.pdf
+https://fetch.spec.whatwg.org/#goals
+http://blog.portswigger.net/2016/10/exploiting-cors-misconfigurations-for.html
+https://www.w3.org/TR/webauthn/
+http://blog.portswigger.net/2016/07/executing-non-alphanumeric-javascript.html
+http://blog.portswigger.net/2016/04/adapting-angularjs-payloads-to-exploit.html
+https://mechatechsec.blogspot.com/2018/01/dom-xss-intro.html
+https://sethsec.blogspot.com/2016/11/exploiting-python-code-injection-in-web.html
+https://github.com/yuvadm/viewstate
+https://www.forcepoint.com/blog/security-labs/manual-reverse-engineering-webassembly-static-code-analysis
+https://www.forcepoint.com/blog/security-labs/analyzing-webassembly-binaries-initial-feel-and-behavioral-analysis
+https://github.com/Shiva108/WAES
+
+
+https://www.allysonomalley.com/2018/12/03/ios-bug-hunting-web-view-xss/
+https://medium.com/tsscyber/penetration-testing-window-opener-xss-vectors-part-1-c6be37701cab
+https://www.netsparker.com/blog/web-security/bypass-disabled-system-functions/
+https://www.netsparker.com/blog/web-security/tabnabbing-protection-bypass/
+https://speakerdeck.com/andresriancho/automated-security-analysis-aws-clouds
+
+https://xorl.wordpress.com/2017/12/11/microsoft-excel-csv-code-execution-injection-method/
+https://www.contextis.com/blog/comma-separated-vulnerabilities
+https://www.forcepoint.com/blog/security-labs/analyzing-webassembly-binaries
+https://www.forcepoint.com/blog/security-labs/webassembly-potentials-and-pitfalls
+https://github.com/nccgroup/CrossSiteContentHijacking
+https://github.com/RhinoSecurityLabs/Security-Research/blob/master/tools/python/xxe-server.py
+https://blog.netspi.com/playing-content-type-xxe-json-endpoints/
+www.vsecurity.com/download/papers/XMLDTDEntityAttacks.pdf
+https://github.com/maaaaz/webscreenshot
+https://github.com/mdhama/lazyshot
+https://es.slideshare.net/HackIT-ukraine/15-technique-to-exploit-file-upload-pages-ebrahim-hegazy
+https://github.com/fgeek/pyfiscan
+
+https://rhinosecuritylabs.com/research/xml-external-entity-injection-xxe-cve-2018-5758/
+https://leucosite.com/Microsoft-Edge-RCE/
+
+https://rhinosecuritylabs.com/application-security/xxe-zeroday-vulnerability-in-hp-project/
+
+
+http://www.visualsitemapper.com/
+https://www.theregister.co.uk/2019/08/10/memory_corruption_sqlite/
+
+
+
+https://swagger.io/docs/specification/about/
+https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md
+
+https://github.com/mvetsch/JWT4B
+
+JS recon
+https://github.com/GerbenJavado/LinkFinder
+https://github.com/nahamsec/JSParser
+https://medium.com/bugbountywriteup/bug-bounty-tips-tricks-js-javascript-files-bdde412ea49d
+* [Instrumenting Electron Apps for Security Testing - Paolo Stagno](https://blog.doyensec.com/2018/07/19/instrumenting-electron-app.html)
+
+* [Gone in 60 Milliseconds (33c3)2016](https://www.youtube.com/watch?v=YZ058hmLuv0) * This talk will show novel attack vectors using cloud event sources,  exploitabilities in common server-less patterns and frameworks, abuse of undocumented features in AWS Lambda for persistent malware injection, identifying valuable targets for pilfering, and, of course, how to exfiltrate juicy data out of a secure Virtual Private Cloud.
+https://www.youtube.com/watch?v=nsjCQlEsgW8
+https://depthsecurity.com/blog/exploiting-custom-template-engines
+
+https://github.com/psi-probe/psi-probe
+https://portswigger.net/blog/top-10-web-hacking-techniques-of-2017
+https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/#jenkins
+https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/
+
+VHostScan
+https://github.com/codingo/VHostScan
+https://github.com/eldraco/domain_analyzer
+https://github.com/jpf/domain-profiler
+
+http://httpsecure.org/?works=how-to-exploit-http-methods-put-and-delete
+MIME Sniffing
+https://mimesniff.spec.whatwg.org/#matching-a-mime-type-pattern
+Media Type Sniffing - https://tools.ietf.org/html/draft-abarth-mime-sniff-06
+https://jankopecky.net/index.php/2017/04/18/0day-textplain-considered-harmful/
+https://www.w3.org/Protocols/rfc822/#z26
+
+
+
+Browser Extensions
+	* https://www.usenix.org/system/files/conference/cset17/cset17-paper-dekoven.pdf
+	* https://www.usenix.org/node/205856
+	* https://kjaer.io/extension-malware/
+	* https://www.labnol.org/internet/sold-chrome-extension/28377/
+	* https://developer.chrome.com/extensions/xhr#security-considerations
+	* https://developer.chrome.com/extensions/contentSecurityPolicy#interactions
+	* https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2
+
+
+* [BookFresh Tricky File Upload Bypass to RCE - secgeek.net](https://secgeek.net/bookfresh-vulnerability/)
+OAuth
+* [OAuth 2.0 Security Best Current Practice draft-ietf-oauth-security-topics-05 - Expires Sept19,2018](https://tools.ietf.org/html/draft-ietf-oauth-security-topics-05)
+	* This document describes best current security practices for OAuth 2.0.. It updates and extends the OAuth 2.0 Security Threat Model to incorporate practical experiences gathered since OAuth 2.0 was published and cover new threats relevant due to the broader application of OAuth 2.0.
+* [OAuth 2.0 Dynamic Client Registration Protocol - rfc7591](https://tools.ietf.org/html/rfc7591)
+	* This specification defines mechanisms for dynamically registering OAuth 2.0 clients with authorization servers. Registration requests send a set of desired client metadata values to the authorization server. The resulting registration responses return a client identifier to use at the authorization server and the client metadata values registered for the client. The client can then use this registration information to communicate with the authorization server using the OAuth 2.0 protocol. This specification also defines a set of common client metadata fields and values for clients to use during registration.
+* [The OAuth 2.0 Authorization Framework: JWT Secured Authorization Request - ietf.org](https://tools.ietf.org/html/draft-ietf-oauth-jwsreq-15)
+	* The authorization request in OAuth 2.0 described in RFC 6749 utilizes query parameter serialization, which means that Authorization Request parameters are encoded in the URI of the request and sent through user agents such as web browsers. While it is easy to implement, it means that (a) the communication through the user agents are not integrity protected and thus the parameters can be tainted, and (b) the source of the communication is not authenticated. Because of these weaknesses, several attacks to the protocol have now been put forward. This document introduces the ability to send request parameters in a JSON Web Token (JWT) instead, which allows the request to be signed with JSON Web Signature (JWS) and encrypted with JSON Web Encryption (JWE) so that the integrity, source authentication and confidentiality property of the Authorization Request is attained. The request can be sent by value or by reference.
+* [OAuth 2.0 Mutual TLS Client Authentication and Certificate Bound Access Tokens - ietf](https://tools.ietf.org/html/draft-ietf-oauth-mtls-07)
+	* This document describes Transport Layer Security (TLS) mutual authentication using X.509 certificates as a mechanism for OAuth client authentication to the authorization sever as well as for certificate bound sender constrained access tokens as a method for a protected resource to ensure that an access token presented to it by a given client was issued to that client by the authorization server.
+
+
+
+
+
+
+
+
+* [Fuzzing JSON Web Services: Simple guide how to fuzz JSON web services properly - secapps](https://secapps.com/blog/2018/03/fuzzing-json-web-services)
+
+
+https://labs.detectify.com/2014/10/21/hostile-subdomain-takeover-using-herokugithubdesk-more/
+
+SQL
+* ["How I hacked PacketStorm" - rain forest puppy](http://www.ouah.org/rfp.txt)
+https://github.com/GerbenJavado/LinkFinder
+https://www.lanmaster53.com/2015/04/24/burp-suite-visual-aids/
+https://portswigger.net/blog/http-desync-attacks-request-smuggling-reborn
+https://github.com/lanjelot/albatar
+https://rhinosecuritylabs.com/aws/aws-privilege-escalation-methods-mitigation-part-2/
+https://www.fireeye.com/blog/threat-research/2018/05/shining-a-light-on-oauth-abuse-with-pwnauth.html
+* [No Place Like Chrome - xorrior](https://www.xorrior.com/No-Place-Like-Chrome/)
+
+https://github.com/hehnope/slurp
+* [Reverse shell on a Node.js application - wiremask.eu](https://wiremask.eu/writeups/reverse-shell-on-a-nodejs-application/)
+https://medium.com/@imashishmathur/0auth-a142656859c6
+https://gist.github.com/akhil-reni/e2116cc243af096ca3416168f49b3298
+https://medium.com/secjuice/web-application-firewall-waf-evasion-techniques-2-125995f3e7b0
+https://medium.com/secjuice/waf-evasion-techniques-718026d693d8
+https://github.com/streaak/keyhacks?mc_cid=2c7d4caad8&mc_eid=e91018dc5d#Google-Maps-API-key
+https://medium.com/netflix-techblog/netflix-cloud-security-detecting-credential-compromise-in-aws-9493d6fd373a
+https://medium.com/netflix-techblog/netflix-information-security-preventing-credential-compromise-in-aws-41b112c15179
+* [Azure ATP Security Alerts - docs.ms](https://docs.microsoft.com/en-us/azure-advanced-threat-protection/suspicious-activity-guide)
+* [novahot](https://github.com/chrisallenlane/novahot)
+	* novahot is a webshell framework for penetration testers. It implements a JSON-based API that can communicate with trojans written in any language. By default, it ships with trojans written in PHP, ruby, and python. Beyond executing system commands, novahot is able to emulate interactive terminals, including mysql, sqlite3, and psql. It additionally implements "virtual commands" that make it possible to upload, download, edit, and view remote files locallly using your preferred applications.
+
+* [Inventory-BrowserExts - keyboardcrunch](https://github.com/keyboardcrunch/Inventory-BrowserExts)
+	* This script can inventory Firefox and/or Chrome extensions for each user from a list of machines. It returns all the information back in a csv file and prints to console a breakdown of that information.
+
+* [Firefed](https://github.com/numirias/firefed)
+	* Firefed is a command-line tool to inspect Firefox profiles. It can extract saved passwords, preferences, addons, history and more. You may use it for forensic analysis, to audit your config for insecure settings or just to quickly extract some data without starting up the browser.
+
+https://gravitational.com/blog/how-saml-authentication-works/
+* [HTML Punctuation Symbols, Punctuation Entities and ASCII Character Code Reference - toptotal.com](https://www.toptal.com/designers/htmlarrows/punctuation/)
+
+https://onecloudplease.com/blog/s3-bucket-namesquatting
+* [intrigue-core](https://github.com/intrigueio/intrigue-core)
+	* Intrigue-core is a framework for external attack surface discovery and automated OSINT.
+
+* [Sunny Wear's Brakeing Down Security Web App Sec Training](https://www.youtube.com/playlist?list=PL-giMT7sGCVI9T4rKhuiTG4EDmUz-arBo&app=desktop)
+* [Web Server Screenshots with a Single Command - Carrie Roberts](https://www.blackhillsinfosec.com/web-server-screenshots-single-command/)
+
+* [Everything about the CSV Excel Macro Injection - Ishaq Mohammed](http://blog.securelayer7.net/how-to-perform-csv-excel-macro-injection/)
+* [From CSV to CMD to qwerty - exploresecurity](http://www.exploresecurity.com/from-csv-to-cmd-to-qwerty/)
+* [Everything about the CSV Excel Macro Injection - Ishaq Mohammed](http://blog.securelayer7.net/how-to-perform-csv-excel-macro-injection/)
+* [Tricks to improve web app excel export attacks(Slides) - Jerome Smith - CamSec2016]()
+	* [Video](https://www.youtube.com/watch?v=3wNvxRCJLQQ)
+	* This presentation is an embellished version of the second half of a talk originally presented at BSides MCR 2016. It covers more general web app export issues as well as revisions on the DDE content following feedback from BSides. This talk also had more demos.
+* [CSV Injection Revisited - Making Things More Dangerous(and fun) - Andy Gill](https://blog.zsec.uk/csv-dangers-mitigations/)
+* [From CSV to Meterpreter - XPNSec](https://xpnsec.tumblr.com/post/133298850231/from-csv-to-meterpreter)
+* [CSV Injection- There's devil in the detail - Sunil Joshi](https://www.we45.com/blog/2017/02/14/csv-injection-theres-devil-in-the-detail)
+* [CSV injection: Basic to Exploit!!!! - Akansha Kesharwani](https://payatu.com/csv-injection-basic-to-exploit/)
+https://github.com/IAIK/jstemplate
+* [RFC5785: Defining Well-Known Uniform Resource Identifiers (URIs)](https://tools.ietf.org/html/rfc5785)
+https://docs.microsoft.com/en-us/previous-versions/dotnet/articles/ms972976(v=msdn.10)
+Subdomain recon
+https://github.com/nccgroup/CrossSiteContentHijacking/
+https://github.com/flipkart-incubator/Astra/
+
+https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6
+* [Fingerprinter](https://github.com/erwanlr/Fingerprinter)
+	* This script goal is to try to find the version of the remote application/third party script etc by using a fingerprinting approach.
+
+
+https://medium.com/@nahoragg/chaining-cache-poisoning-to-stored-xss-b910076bda4f
+
+* [NT Web Technology Vulnerabilities - rain.forest.puppy](http://phrack.org/issues/54/8.html)
+
+https://github.com/disruptops/cred_scanner
+* [The HTML Handbook - Flavio Copes](https://www.freecodecamp.org/news/the-html-handbook/)
+
+
+	* **User-Profiling**
+		* [Browser fingerprints for a more secure web - Julien Sobrier & Ping Yan(OWASP AppSecCali2019)](https://www.youtube.com/watch?v=P_nYYsaVi1w&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=30&t=0s)
+
+
+* [CloudFlair: Bypassing Cloudflare using Internet-wide scan data - blog.christophetd](https://blog.christophetd.fr/bypassing-cloudflare-using-internet-wide-scan-data/)
+* [CloudFlair](https://github.com/christophetd/CloudFlair)
+	* CloudFlair is a tool to find origin servers of websites protected by CloudFlare who are publicly exposed and don't restrict network access to the CloudFlare IP ranges as they should. The tool uses Internet-wide scan data from Censys to find exposed IPv4 hosts presenting an SSL certificate associated with the target's domain name.
+* [Exposing Server IPs Behind CloudFlare - chokepoint](http://www.chokepoint.net/2017/10/exposing-server-ips-behind-cloudflare.html)
+
+
+WebUSB
+https://labs.mwrinfosecurity.com/blog/webusb/
+
+
+
 
 
 
@@ -1649,17 +1909,21 @@ fuse.ca/race-conditions-in-web-applications.htm)
 	* [An Introduction to Penetration Testing AWS: Same Same, but Different - GracefulSecurity](https://www.gracefulsecurity.com/an-introduction-to-penetration-testing-aws/)
 	* [Using DNS to Break Out of Isolated Networks in a AWS Cloud Environment](https://dejandayoff.com/using-dns-to-break-out-of-isolated-networks-in-a-aws-cloud-environment/)
 		* Customers can utilize AWS' DNS infrastructure in VPCs (enabled by default). Traffic destined to the AmazonProvidedDNS is traffic bound for AWS management infrastructure and does not egress via the same network links as standard customer traffic and is not evaluated by Security Groups. Using DNS exfiltration, it is possible to exfiltrate data out of an isolated network.
-* **S3 Buckets**
-	* [bucket-stream](https://github.com/eth0izzle/bucket-stream/blob/master/README.md)
-		* This tool simply listens to various certificate transparency logs (via certstream) and attempts to find public S3 buckets from permutations of the certificates domain name.	
-	* [AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)
-		* Security Tool to Look For Interesting Files in S3 Buckets
-	* [buckethead.py](https://github.com/RhinoSecurityLabs/Security-Research/tree/master/tools/aws-pentest-tools)
-		* buckethead.py searches across every AWS region for a variety of bucket names based on a domain name, subdomains, affixes given and more. Currently the tool will only present to you whether or not the bucket exists or if they're listable. If the bucket is listable, then further interrogation of the resource can be done. It does not attempt download or upload permissions currently but could be added as a module in the future. You will need the awscli to run this tool as this is a python wrapper around this tool.
-	* [slurp](https://github.com/bbb31/slurp)
-		* Enumerate S3 buckets via certstream, domain, or keywords
-	* [Bucketlist](https://github.com/michenriksen/bucketlist)
-		* Bucketlist is a quick project I threw together to find and crawl Amazon S3 buckets and put all the data into a PostgreSQL database for querying.
+* **Mapping**
+* **S3**
+	* **Articles/Blogposts/Writeups**
+		* [A deep dive into AWS S3 access controls – taking full control over your assets - labs.detectify](https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/)
+	* **Tools**
+		* [bucket-stream](https://github.com/eth0izzle/bucket-stream/blob/master/README.md)
+			* This tool simply listens to various certificate transparency logs (via certstream) and attempts to find public S3 buckets from permutations of the certificates domain name.	
+		* [AWSBucketDump](https://github.com/jordanpotti/AWSBucketDump)
+			* Security Tool to Look For Interesting Files in S3 Buckets
+		* [buckethead.py](https://github.com/RhinoSecurityLabs/Security-Research/tree/master/tools/aws-pentest-tools)
+			* buckethead.py searches across every AWS region for a variety of bucket names based on a domain name, subdomains, affixes given and more. Currently the tool will only present to you whether or not the bucket exists or if they're listable. If the bucket is listable, then further interrogation of the resource can be done. It does not attempt download or upload permissions currently but could be added as a module in the future. You will need the awscli to run this tool as this is a python wrapper around this tool.
+		* [slurp](https://github.com/bbb31/slurp)
+			* Enumerate S3 buckets via certstream, domain, or keywords
+		* [Bucketlist](https://github.com/michenriksen/bucketlist)
+			* Bucketlist is a quick project I threw together to find and crawl Amazon S3 buckets and put all the data into a PostgreSQL database for querying.
 * **Securing**
 	* [AWS Security Primer](https://cloudonaut.io/aws-security-primer/#fn:2)
 	* [CloudMapper](https://github.com/duo-labs/cloudmapper)
@@ -1815,7 +2079,7 @@ Sort
 	* domains
 
 * [How I hacked hundreds of companies through their helpdesk - Inti De Ceukelaire](https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c)
-* [A deep dive into AWS S3 access controls – taking full control over your assets - labs.detectify](https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/)
+
 * [The Good, The Bad and The Ugly of Safari in Client-Side Attacks - bo0om, Wallarm Research](https://lab.wallarm.com/the-good-the-bad-and-the-ugly-of-safari-in-client-side-attacks-56d0cb61275a)
 
 * [Rare ASP.NET request validation bypass using request encoding - nccgroup](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2017/september/rare-aspnet-request-validation-bypass-using-request-encoding/)
@@ -1830,7 +2094,6 @@ Sort
 * [JSON API's Are Automatically Protected Against CSRF, And Google Almost Took It Away.](https://github.com/dxa4481/CORS)
 
 https://blog.appsecco.com/static-analysis-of-client-side-javascript-for-pen-testers-and-bug-bounty-hunters-f1cb1a5d5288
-https://github.com/segment-srl/htcap
 https://github.com/byt3bl33d3r/SprayingToolkit/blob/master/README.md
 https://latacora.micro.blog/2018/06/12/a-childs-garden.html
 https://en.wikipedia.org/wiki/Content_Security_Policy

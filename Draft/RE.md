@@ -18,18 +18,45 @@
 * [Papers](#papers)
 * [Wikis & Useful Sites](#wikis)
 
+http://ropgadget.com/posts/pebwalk.html
+
+
+https://github.com/TakahiroHaruyama/ida_haru/tree/master/bindiff
 
 
 
 
+
+
+* https://github.com/JusticeRage/Manalyze
+* https://bordplate.no/blog/en/post/debugging-a-windows-service/
+
+
+* [How to break PDF Signatures](https://www.pdf-insecurity.org/)
+	* [Technical Writeup](https://www.pdf-insecurity.org/signature/signature.html)
 * **ToDo**
 	* A proper ToC
 	* Sort bottom section
+https://blog.xpnsec.com/analysing-rpc-with-ghidra-neo4j/
 
+* [Advanced Portable Executable File Analyzer](https://github.com/blacknbunny/peanalyzer)
+	* Advanced Portable Executable File Analyzer And Disassembler 32 & 64 Bit
 
+* [Debugging with Symbols - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/DxTechArts/debugging-with-symbols)
+https://secrary.com/Random/unexported/
 
-
-
+PDF
+http://joxeankoret.com/blog/2010/02/21/analyzing-pdf-exploits-with-pyew/
+https://blog.didierstevens.com/2008/10/30/pdf-parserpy/
+http://blog.9bplus.com/
+http://blog.9bplus.com/scoring-pdfs-based-on-malicious-filter/
+http://honeynet.org/node/1304
+https://itsjack.cc/blog/2017/08/analysingdetecting-malicious-pdfs-primer/
+https://securityoversimplicity.wordpress.com/2017/09/28/not-all-she-wrote-part-1-rigged-pdfs/
+https://digital-forensics.sans.org/blog/2009/12/14/pdf-malware-analysis/
+https://blog.didierstevens.com/programs/pdf-tools/
+https://blog.didierstevens.com/2009/03/31/pdfid/
+https://www.cs.unm.edu/~eschulte/data/bed.pdf
 
 --------------
 ### General

@@ -9,6 +9,13 @@
 * [Talks & Presentations](#talks)
 * [Tools](#tools)
 
+https://www.youtube.com/user/L4DL4D2EUROPE/videos
+
+
+* [Diablo1 Notes](https://github.com/sanctuary/notes)
+	* The aim of this project is to organize and cross-reference a collection of notes related to the inner workings of the Diablo 1 game engine.
+
+
 
 
 ------------

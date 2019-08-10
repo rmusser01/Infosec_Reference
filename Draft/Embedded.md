@@ -31,7 +31,24 @@
 
 
 
+http://www.sp3ctr3.me/hardware-security-resources/
 
+
+https://www.irongeek.com/i.php?page=videos/derbycon7/t316-anatomy-of-a-medical-device-hack-doctors-vs-hackers-in-a-clinical-simulation-cage-match-joshua-corman-christian-dameff-md-ms-jeff-tully-md-beau-woods
+
+
+	* https://media.blackhat.com/us-13/US-13-Zaddach-Workshop-on-Embedded-Devices-Security-and-Firmware-Reverse-Engineering-WP.pdf
+	* https://github.com/nsacyber/Hardware-and-Firmware-Security-Guidance
+https://inception-framework.github.io/inception/
+
+
+IoT Methodology
+https://resources.infosecinstitute.com/beginners-guide-to-pentesting-iot-architecture-network-and-setting-up-iot-pentesting-lab-part-1/
+https://github.com/phodal/awesome-iot
+http://iotpentest.com/iot-protocols-introduction/
+https://www.networkworld.com/article/3198495/internet-of-things/how-to-conduct-an-iot-pen-test.html
+https://github.com/V33RU/IoTSecurity101
+https://blog.attify.com/how-to-iot-pentesting/
 
 * **To-Do**
 	* Fingeprint readers
@@ -44,7 +61,14 @@
 	* SD Cards
 	* TPM
 		* [Attackin the TPM part 2](https://www.youtube.com/watch?v=h-hohCfo4LA)
+https://firmwaresecurity.com/2019/05/01/deral-heiland-extracting-firmware-from-microcontrollers-onboard-flash-memory-parts-1-3/
+https://firmwaresecurity.com/2019/04/28/mimoja-amd-firmware-presentation-uploaded/
 
+http://www.farleyforensics.com/2019/04/25/have-you-ever-wanted-to-get-started-with-jtag-isp-chip-off-extractions-but-never-knew-what-you-needed-to-get-started/
+
+https://blog.quarkslab.com/reverse-engineering-broadcom-wireless-chipsets.html
+
+https://github.com/ChrisTheCoolHut/Firmware_Slap
 
 * [From 0 to Infinity - Guy](https://docs.google.com/presentation/d/19A1JWyOTueZvD8AksqCxtxriNJJgj0vPdq3cNTwndf4/mobilepresent#slide=id.g35506ef05e_0_0)
 

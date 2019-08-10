@@ -1,5 +1,10 @@
---------------------------
 ### <a name="honey"></a> Honeypots
+--------------------------
+
+https://github.com/4sp1r3/honeytrap
+	* [sshesame](https://github.com/jaksi/sshesame)
+		* A fake SSH server that lets everyone in and logs their activity
+
 * **General**
 	* **101**
 		* [Honeypot Computing - Wikipedia](https://en.wikipedia.org/wiki/Honeypot_%28computing%29)

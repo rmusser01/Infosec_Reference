@@ -32,9 +32,37 @@
 
 
 
+
+https://citizenlab.ca/2019/07/cant-picture-this-2-an-analysis-of-wechats-realtime-image-filtering-in-chats/
+https://citizenlab.ca/2018/08/cant-picture-this-an-analysis-of-image-filtering-on-wechat-moments/
+
+Remove hidden data and personal information by inspecting documents, presentations, or workbooks
+https://support.office.com/en-us/article/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks-356b7b5d-77af-44fe-a07f-9aa4d085966f
+
+https://www.fcc.gov/public-safety-and-homeland-security/policy-and-licensing-division/911-services/general/location-accuracy-indoor-benchmarks
+https://www.wsj.com/articles/SB105546175751598400
+https://opaque.link/post/dropgang/
+https://github.com/ctrlaltdev/LMGTFY-queries
+
+* [A DC Think Tank Used Fake Social Media Accounts, A Bogus Expert, And Fancy Events To Reach The NSA, FBI, And White House - Craig Silverman(BuzzFeed News)](https://www.buzzfeednews.com/article/craigsilverman/icit-james-scott-think-tank-fake-twitter-youtube#.dnqv2lQJr)
+
+* [Opting Out Like A Boss - The OSINT Way (Part 1) - learnallthethings.net](https://www.learnallthethings.net/blog/2018/1/23/opting-out-like-a-boss-the-osint-way)
+https://electricalstrategies.com/about/in-the-news/spies-in-the-xerox-machine/
+https://discover.cobbtechnologies.com/blog/the-soviet-union-and-the-photocopier
+
+https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/privacy/manage-windows-1809-endpoints.md
+
+* [Creating Your Own Citizen Database -  Aiganysh Aidarbekova](https://www.bellingcat.com/resources/how-tos/2019/02/14/creating-your-own-citizen-database/)
+
+	* [Manage connections from Windows operating system components to Microsoft services - docs.ms](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 * [Cookies – what does ‘good’ look like? - UK Information Comissioner's Office - Ali Shah](https://ico.org.uk/about-the-ico/news-and-events/news-and-blogs/2019/07/blog-cookies-what-does-good-look-like/)
 
 https://www.freehaven.net/anonbib/
+http://computer-outlines.over-blog.com/article-windows-ipv6-privacy-addresses-118018020.html
+
+https://blog.superuser.com/2011/02/11/did-you-know-that-ipv6-may-include-your-mac-address-heres-how-to-stop-it/
+
+https://www.bloomberg.com/news/articles/2018-08-30/google-and-mastercard-cut-a-secret-ad-deal-to-track-retail-sales
 
 * [Ghostbuster: Detecting the Presence of Hidden Eavesdroppers](https://synrg.csl.illinois.edu/papers/ghostbuster-mobicom18.pdf)
 
@@ -42,6 +70,7 @@ https://www.freehaven.net/anonbib/
 	* [Project Feels: How USA Today, ESPN and The New York Times are targeting ads to mood - digiday](https://digiday.com/media/project-feels-usa-today-espn-new-york-times-targeting-ads-mood/)
 	* [The New York Times Advertising & Marketing Solutions Group Introduces ‘nytDEMO’: A Cross-Functional Team Focused on Bringing Insights and Data Solutions to Brands(2018)](https://investors.nytco.com/press/press-releases/press-release-details/2018/The-New-York-Times-Advertising--Marketing-Solutions-Group-Introduces-nytDEMO-A-Cross-Functional-Team-Focused-on-Bringing-Insights-and-Data-Solutions-to-Brands/default.aspx)
 
+* [A DC Think Tank Used Fake Social Media Accounts, A Bogus Expert, And Fancy Events To Reach The NSA, FBI, And White House - Craig Silverman](https://www.buzzfeednews.com/article/craigsilverman/icit-james-scott-think-tank-fake-twitter-youtube#.dnqv2lQJr)
 
 * [Toward an Information Operations Kill Chain - Bruce Schneier](https://www.lawfareblog.com/toward-information-operations-kill-chain)
 

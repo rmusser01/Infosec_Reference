@@ -24,6 +24,8 @@
 #### End Sort
 
 
+* [Under Cover of Darkness: Practical considerations for (legally) breaking and entering. - Tom](https://medium.com/tsscyber/under-cover-of-darkness-7c2b4b5203f8)
+
 
 -----------------------
 ### <a name="general"></a>General

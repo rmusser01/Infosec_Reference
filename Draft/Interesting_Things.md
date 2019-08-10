@@ -4,6 +4,45 @@
 
 
 #### Sort
+
+
+
+https://getindico.io/
+
+https://www.niceideas.ch/roller2/badtrash/entry/deciphering-the-bengladesh-bank-heist
+https://citizenlab.ca/2018/10/the-kingdom-came-to-canada-how-saudi-linked-digital-espionage-reached-canadian-soil/
+
+* [Cambridge Analytica explains how the Trump campaign worked](https://www.youtube.com/watch?v=bB2BJjMNXpA)
+	* Molly Schweickert, Vice President Global Media from Cambridge Analytica on "How digital advertising worked for the US 2016 presidential campaign". How they used Facebook user data and other sources to target specific users with individual messages for the 2016 Trump election campaign. She is Alexander Nix' digital marketing expert.
+
+http://www.tidepools.co/history.html
+
+http://habitatchronicles.com/2007/03/the-untold-history-of-toontowns-speedchat-or-blockchattm-from-disney-finally-arrives/
+https://v1.escapistmagazine.com/articles/view/video-games/issues/issue_101/559-Will-Bobba-for-Furni.3
+
+https://pagedout.institute/?page=issues.php
+https://www.cnet.com/forums/discussions/beyond-the-grave-virus-infecting-hedge-funds/
+
+https://elpais.com/elpais/2019/03/13/inenglish/1552464196_279320.html
+http://www.catb.org/~esr/jargon/html/koans.html
+
+* [Cyber-Mercenary Groups Shouldn't be Trusted in Your Browser or Anywhere Else - Cooper Quintin(EFF)](https://www.eff.org/deeplinks/2019/02/cyber-mercenary-groups-shouldnt-be-trusted-your-browser-or-anywhere-else)
+
+
+https://baesystemsai.blogspot.com/2016/04/two-bytes-to-951m.html
+https://www.ribbonfarm.com/2012/03/08/halls-law-the-nineteenth-century-prequel-to-moores-law/
+https://epic.org/2019/01/border-agency-finalizes-social.html
+https://epic.org/foia/epic-v-dhs-media-monitoring/
+https://www.govinfo.gov/content/pkg/FR-2018-12-27/pdf/2018-27944.pdf
+https://www.rand.org/research/gun-policy/analysis/essays/mass-shootings.html
+
+
+
+
+
+
+
+
 * [A Verified Information-Flow Architecture](http://www.crash-safe.org/assets/verified-ifc-long-draft-2013-11-10.pdf)
 	* SAFE is a clean-slate design for a highly secure computer system, with pervasive mechanisms for tracking and limiting information flows. At the lowest level, the SAFE hardware supports fine-grained programmable tags, with efficient and flexible propagation and combination of tags as instructions are executed. The operating system virtualizes these generic facilities to present an information-flow abstract machine that allows user programs to label sensitive data with rich confidentiality policies. We present a formal, machine-checked model of the key hardware and software mechanisms used to control information flow in SAFE and an end- to-end proof of noninterference for this model.
 * [SimpleVisor](https://github.com/ionescu007/SimpleVisor)
@@ -13,7 +52,7 @@
 
 http://spth.virii.lu/articles.htm
 https://bugs.php.net/bug.php?id=50696
-
+https://dynamicland.org/
 
 * [Pulling Back the Curtain on Airport Security: Can a Weapon Get Past TSA? - Billy Rios - BHUSA 2014](https://www.youtube.com/watch?reload=9&v=hbqVNlwfjxo)
 	* Every day, millions of people go through airport security. While it is an inconvenience that could take a while, most are willing to follow the necessary procedures if it can guarantee their safety. Modern airport security checkpoints use sophisticated technology to help the security screeners identify potential threats and suspicious baggage. Have you ever wondered how these devices work? Have you ever wondered why an airport security checkpoint was set up in a particular configuration? Join us as we present the details on how a variety of airport security systems actually work, and reveal their weaknesses. We’ll present what we have learned about modern airport security procedures, dive deep into the devices used to detect threats, and we’ll present some the bugs we discovered along the way.
@@ -67,15 +106,15 @@ https://bugs.php.net/bug.php?id=50696
 	* [Windows Commands Abused by Attackers](http://blog.jpcert.or.jp/2016/01/windows-commands-abused-by-attackers.html)
 	* [The Distribution of Users’ Computer Skills: Worse Than You Think](https://www.nngroup.com/articles/computer-skill-levels/)
 	* [Infosec Podcasts](http://www.getmon.com/)
-	* [THE BASIC LAWS OF HUMAN STUPIDITY - Carlo M. Cipolia](http://harmful.cat-v.org/people/basic-laws-of-human-stupidity/)
+	* [The Basic Laws Of Human Stupidity - Carlo M. Cipolia](http://harmful.cat-v.org/people/basic-laws-of-human-stupidity/)
 * **Airplanes**
 	* [NTSB Aviation Accident Database & Synopses](https://www.ntsb.gov/_layouts/ntsb.aviation/index.aspx)
 	* [The Aviation Herald](https://avherald.com/)
 	* [radar - securitywizardy](http://www.securitywizardry.com/radar.htm)
 	* [Real-life experiences in avionics security assessment (A. Barisani)](https://www.youtube.com/watch?v=xtSmPgXw34I&feature=youtu.be&app=desktop)
 * **Attacking**
-	* [It’s all about the timing. . . Blackhat talk](https://www.blackhat.com/presentations/bh-usa-07/Meer_and_Slaviero/Whitepaper/bh-usa-07-meer_and_slaviero-WP.pdf)
-	* Description: This paper is broken up into several distinct parts, all related loosely to timing and its role in information se- curity today. While timing has long been recognized as an important component in the crypt-analysts arse- nal, it has not featured very prominently in the domain of Application Security Testing. This paper aims at highlighting some of the areas in which timing can be used with great effect, where traditional avenues fail. In this paper, a brief overview of previous timing attacks is provided, the use of timing as a covert channel is examined and the effectiveness of careful timing during traditional web application and SQL injection attacks is demonstrated. The use of Cross Site Timing in bypass- ing the Same Origin policy is explored as we believe the technique has interesting possibilities for turning innocent browsers into bot-nets aimed at, for instance, brute-force attacks against third party web-sites
+	* [It’s all about the timing... - lackhat talk](https://www.blackhat.com/presentations/bh-usa-07/Meer_and_Slaviero/Whitepaper/bh-usa-07-meer_and_slaviero-WP.pdf)
+		* Description: This paper is broken up into several distinct parts, all related loosely to timing and its role in information se- curity today. While timing has long been recognized as an important component in the crypt-analysts arse- nal, it has not featured very prominently in the domain of Application Security Testing. This paper aims at highlighting some of the areas in which timing can be used with great effect, where traditional avenues fail. In this paper, a brief overview of previous timing attacks is provided, the use of timing as a covert channel is examined and the effectiveness of careful timing during traditional web application and SQL injection attacks is demonstrated. The use of Cross Site Timing in bypass- ing the Same Origin policy is explored as we believe the technique has interesting possibilities for turning innocent browsers into bot-nets aimed at, for instance, brute-force attacks against third party web-sites
 	* [A Look In the Mirror: Attacks on Package Managers](https://isis.poly.edu/~jcappos/papers/cappos_mirror_ccs_08.pdf)
 	* [VM as injection payload ](http://infiltratecon.com/downloads/python_deflowered.pdf)
 	* [Thousands of MongoDB installations on the net unprotected](http://cispa.saarland/wp-content/uploads/2015/02/MongoDB_documentation.pdf)
@@ -400,7 +439,6 @@ https://bugs.php.net/bug.php?id=50696
 	* Local
 	* [Foreign LINUX](https://github.com/wishstudio/flinux)
 		* Foreign LINUX is a dynamic binary translator and a Linux system call interface emulator for the Windows platform. It is capable of running unmodified Linux binaries on Windows without any drivers or modifications to the system. This provides another way of running Linux applications under Windows in constrast to Cygwin and other tools.
-
 * **Network**
 	* [Netdude](http://netdude.sourceforge.net/)
 		* The Network Dump data Displayer and Editor is a framework for inspection, analysis and manipulation of tcpdump trace files. It addresses the need for a toolset that allows easy inspection, modification, and creation of pcap/tcpdump trace files. Netdude builds on any popular UNIX-like OS, such as Linux, the BSDs, or OSX.
@@ -459,68 +497,3 @@ https://bugs.php.net/bug.php?id=50696
 * **GPU Keylogger**
 	* [Demon](https://github.com/x0r1/Demon)
 		* GPU keylogger PoC by Team Jellyfish
-
-
-
-
-
-### Professional Development
-* [You Suck at Excel with Joel Spolsky(2015)](https://www.youtube.com/watch?v=0nbkaYsR94c&feature=youtu.be)
-	* The way you are using Excel causes errors, creates incomprehensible spaghetti spreadsheets, and makes me want to stab out my own eyes. Enough of the =VLOOKUPs with the C3:$F$38. You don't even know what that means.
-	* [Notes](https://trello.com/b/HGITnpih/you-suck-at-excel)
-* [Robustness Principle - Wikipedia](https://en.m.wikipedia.org/wiki/Robustness_principle)
-https://blog.codinghorror.com/recommended-reading-for-developers/
-
-* Add:
-	* Manager's Tools podcast
-	* RibbonFarm Gervais theory
-* These are rantings of someone who dropped out of college and holds no business degree. Be forewarned.
-
-https://hbr.org/2017/05/how-to-have-difficult-conversations-when-you-dont-like-conflict
-https://malicious.link/post/2018/getting-hired-a-few-tips/
-
-
-
-* [Maker's Schedule, Manager's Schedule - Paul Graham(2009)](http://www.paulgraham.com/makersschedule.html)
-* [Reaching Peak Meeting Efficiency: Meetings are a critical tool for building a diverse, high-performance team with shared values - Steven Sinofsky](https://medium.learningbyshipping.com/reaching-peak-meeting-efficiency-f8e47c93317a)
-* [Salary Comparison Across Various companies](https://www.levels.fyi/)
-
-* [How to Apply Critical Thinking Using Paul-Elder Framework - designorate](https://www.designorate.com/critical-thinking-paul-elder-framework/)
-* [When to Test and How to Test It - Bruce Potter - Derbycon7](https://www.youtube.com/watch?v=Ej97WyEMRkI)
-	* “I think we need a penetration test” This is one of the most misunderstood phrases in the security community. It can mean anything from “Someone should run a vulnerability scan against a box” to “I’d like nation-state capable actors to tell me everything that wrong with my enterprise” and everything in between. Security testing is a complex subject and it can be hard to understand what the best type of testing is for a given situation. This talk will examine the breadth of software security testing. From early phase unit and abuse testing to late phase penetration testing, this talk will provide details on the different tests that can be performed, what to expect from the testing, and how to select the right tests for your situation. Test coverage, work effort, attack simulation, and reporting results will be discussed. Also, this talk will provide a process for detailed product assessments, i.e.: if you’ve got a specific product you’re trying to break, how do you approach assessing the product in a way that maximizes your chance of breaking in as well as maximizing the coverage you will get from your testing activity.
-* [Q: Why Do Keynote Speakers Keep Suggesting That Improving Security Is Possible? A: Because Keynote Speakers Make Bad Life Decisions and Are Poor Role Models](https://www.usenix.org/conference/usenixsecurity18/presentation/mickens)
-	* Some people enter the technology industry to build newer, more exciting kinds of technology as quickly as possible. My keynote will savage these people and will burn important professional bridges, likely forcing me to join a monastery or another penance-focused organization. In my keynote, I will explain why the proliferation of ubiquitous technology is good in the same sense that ubiquitous Venus weather would be good, i.e., not good at all. Using case studies involving machine learning and other hastily-executed figments of Silicon Valley’s imagination, I will explain why computer security (and larger notions of ethical computing) are difficult to achieve if developers insist on literally not questioning anything that they do since even brief introspection would reduce the frequency of git commits. At some point, my microphone will be cut off, possibly by hotel management, but possibly by myself, because microphones are technology and we need to reclaim the stark purity that emerges from amplifying our voices using rams’ horns and sheets of papyrus rolled into cone shapes. I will explain why papyrus cones are not vulnerable to buffer overflow attacks, and then I will conclude by observing that my new start-up papyr.us is looking for talented full-stack developers who are comfortable executing computational tasks on an abacus or several nearby sticks.
-
-
-
-* **101**
-	* [Bureaucratic drift - Wikipedia](https://en.wikipedia.org/wiki/Bureaucratic_drift)
-	* [Organizational Theory - Wikipedia](https://en.wikipedia.org/wiki/Organizational_theory)
-* **Compensation/Salary Negotiation**
-* **Culture**
-	* [Containers Will Not Fix Your Broken Culture (and Other Hard Truths) - Complex socio-technical systems are hard; film at 11. - Bridget Kromhout](https://queue.acm.org/detail.cfm?id=3185224)
-* **Informal Laws & Principles**
-	* [The Gervais Principle - RibbonFarm](https://www.ribbonfarm.com/the-gervais-principle/)
-	* [Peter Principle - Wikipedia](https://en.wikipedia.org/wiki/Peter_principle)
-		* The Peter principle is a concept in management developed by Laurence J. Peter, which observes that people in a hierarchy tend to rise to their "level of incompetence". In other words, employees are promoted based on their success in previous jobs until they reach a level at which they are no longer competent, as skills in one job do not necessarily translate to another. The concept was enunciated in the 1969 book The Peter Principle by Peter and Raymond Hull.
-		* It was originally written as a satire.
-	* [Dilbert Principle - Wikipedia](https://en.wikipedia.org/wiki/Dilbert_principle)
-		* The Dilbert principle refers to a 1990s theory by Dilbert cartoonist Scott Adams stating that companies tend to systematically promote their least competent employees to management (generally middle management), to limit the amount of damage they are capable of doing.
-	* [The Iron Law of Bureaucracy](https://www.jerrypournelle.com/reports/jerryp/iron.html)
-		* Pournelle's Iron Law of Bureaucracy states that in any bureaucratic organization there will be two kinds of people":
-			* `First, there will be those who are devoted to the goals of the organization. Examples are dedicated classroom teachers in an educational bureaucracy, many of the engineers and launch technicians and scientists at NASA, even some agricultural scientists and advisors in the former Soviet Union collective farming administration.`
-			* `Secondly, there will be those dedicated to the organization itself. Examples are many of the administrators in the education system, many professors of education, many teachers union officials, much of the NASA headquarters staff, etc.`
-		* The Iron Law states that in every case the second group will gain and keep control of the organization. It will write the rules, and control promotions within the organization.
-* **Management**
-	* [The Tyranny of Structurelessness - Jo freeman](https://www.jofreeman.com/joreen/tyranny.htm)
-	* [Vitality Curve](https://en.m.wikipedia.org/wiki/Vitality_curve)
-* **Networking**
-	* [That’s still not my RJ 45 Jack - IRL Networking for Humans Pt 2 - Johnny Xmas](https://www.irongeek.com/i.php?page=videos/converge2015/%22track112-how-to-dress-like-a-human-being-irl-networking-for-humans-pt-2-johnny-xmas%22)
-		* We're smart. We're incredibly tech savvy. We can rock some mad OSINT with our Google-Fu. We're 85% +-10% sure which part of the body a hat goes on. We think you can never have enough beard. WE THINK THAT'S ACCEPTABLE. The second in his multi-part series on building social prowess, this talk will focus on the inconvenient truth of your book always, always, always being judged by its cover, and how to deal with that with minimal effort so you can get back to sewing more pockets on your utilikilt. This talk covers both male and female situations, though it is primarily unisex. We'll get you set up with a core wardrobe and hygenic skillset so you'll be able to roll out of bed, spend minimal time "getting ready," rock the dreaded client-facing meeting or industry meetup, and get you back home where you can safely take your pants off.
-* **Problem Solving**
-	* [The XY Problem](http://xyproblem.info/)
-		* The XY problem is asking about your attempted solution rather than your actual problem. This leads to enormous amounts of wasted time and energy, both on the part of people asking for help, and on the part of those providing help.
-	* [The AZ Problem](http://azproblem.info/)
-		* This website introduces the AZ Problem: a generalization of the XY Problem. To wit, if we agree that the XY Problem is a problem, than the AZ Problem is a metaproblem. And while the XY Problem is often technical, the AZ Problem is procedural. The AZ Problem is when business requirements are misunderstood or decontextualized. These requirements end up being the root cause of brittle, ill-suited, or frivolous features. An AZ Problem will often give rise to several XY Problems.
-* **Surrounding Environment**
-	* [My Canons on (ISC)² Ethics - Such as They Are(2011)](http://infosecisland.com/blogview/15450-My-Canons-on-ISC-Ethics-Such-as-They-Are.html)

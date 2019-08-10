@@ -14,6 +14,31 @@
 - [Talks & Presentations](#)
 - [Papers](#papers)
 
+
+
+https://github.com/Raikia/CredNinja
+* [HVAZARD Dictionary Modifier](https://github.com/MichaelDim02/Hvazard)
+	* Remove short passwords & duplicates, change lowercase to uppercase & reverse, combine wordlists!
+
+https://allanfeid.com/content/cracking-zip-files-fcrackzip
+https://github.com/hyc/fcrackzip
+http://pdfcrack.sourceforge.net/
+
+https://www.betterbuys.com/estimating-password-cracking-times/
+
+https://github.com/clr2of8/DPAT
+* [Comprehensive Guide on Cewl Tool - rajhackingarticles.blogspot.com](https://rajhackingarticles.blogspot.com/2018/11/hello-friends-in-this-article-we-are.html)
+
+* [Exploiting Password Reuse on Personal Accounts: How to Gain Access to Domain Credentials Without Being on a Target’s Network: Part 1 - BHIS](https://www.blackhillsinfosec.com/exploiting-password-reuse-on-personal-accounts-how-to-gain-access-to-domain-credentials-without-being-on-a-targets-network-part-1/)
+* [Password Spraying Outlook Web Access – How to Gain Access to Domain Credentials Without Being on a Target’s Network: Part 2 - BHIS](https://www.blackhillsinfosec.com/password-spraying-outlook-web-access-how-to-gain-access-to-domain-credentials-without-being-on-a-targets-network-part-2/)
+* [Brute Forcing with Burp - Pentesters Tips & Tricks Week 1 - securenetwork.com](https://www.securenetworkinc.com/news/2017/7/16/brute-forcing-with-burp-pentesters-tips-tricks-week-1)
+* [Exploiting Password Reuse on Personal Accounts: How to Gain Access to Domain Credentials Without Being on a Target’s Network: Part 1 - Beau Bullock](https://www.blackhillsinfosec.com/exploiting-password-reuse-on-personal-accounts-how-to-gain-access-to-domain-credentials-without-being-on-a-targets-network-part-1/)
+* [Password Spraying Outlook Web Access – How to Gain Access to Domain Credentials Without Being on a Target’s Network: Part 2 - Beau Bullock](https://www.blackhillsinfosec.com/password-spraying-outlook-web-access-how-to-gain-access-to-domain-credentials-without-being-on-a-targets-network-part-2/)
+
+
+Default Oracle Creds:
+http://www.petefinnigan.com/default/default_password_list.htm
+
 ---------------------------
 ### <a name="general"></a> General
 * **101**

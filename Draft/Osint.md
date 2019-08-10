@@ -18,7 +18,8 @@
 - [Miscellaneous](#misc)
 
 
-
+* [WhatsMyName](https://github.com/webbreacher/whatsmyname)
+	* This repository has the unified data required to perform user and username enumeration on various websites. Content is in a JSON file and can easily be used in other projects
 
 #### Sort
 * Add list of Sources:
@@ -29,13 +30,52 @@
 	* Operating Licenses/Permits; 
 	* Trade Journals;
 
+https://github.com/intrigueio/intrigue-core
 
 
+https://github.com/vysecurity/DomLink
+
+
+https://github.com/woj-ciech/kamerka
+https://github.com/SourcingDenis/free-online-competitive-intelligence/blob/master/README.md
+https://github.com/0days/Blue
+https://github.com/digininja/leakyrepo
+* [Username enumeration techniques and their value - Ben Williams](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2015/june/username-enumeration-techniques-and-their-value/)
+* [MailInt - Profiling China based Employees](https://web.archive.org/web/20180706004654/https://vincentyiu.co.uk/maiint-profiling-china-based-employees/)
+
+* [Giggity](https://github.com/needmorecowbell/giggity)
+	* Get information about an organization, user, or repo on github. Stores all data in a json file, organized in a tree of dictionaries for easy database transfer or data analysis. All done through the github api, with or without authentication (authentication highly recommended)
+https://www.komodosec.com/post/github-the-red-teamer-s-cheat-sheet
+https://github.com/IVMachiavelli/OSINT_Team_Links
+https://www.bellingcat.com/resources/2019/07/12/how-to-tell-stories-a-beginners-guide-for-open-source-researchers/
 * [asint collection - start.me](https://start.me/p/b5Aow7/asint_collection)
 * [cloud_enum](https://github.com/initstring/cloud_enum)
 	* Multi-cloud OSINT tool. Enumerate public resources in AWS, Azure, and Google Cloud.
 * [SingleFile](https://github.com/gildas-lormeau/SingleFile)
 	* SingleFile is a Web Extension compatible with Chrome, Firefox (Desktop and Mobile), Chromium-based Edge, Vivaldi, Brave, Waterfox, Yandex browser, and Opera. It helps you to save a complete web page into a single HTML file.
+https://github.com/ZephrFish/GoogD0rker
+
+
+
+https://github.com/GeneralTesler/deluxe
+
+
+* [ODIN](https://github.com/chrismaddalena/ODIN)
+	* ODIN aims to automate the basic recon tasks used by red teams to discover and collect data on network assets, including domains, IP addresses, and internet-facing systems. The key feature of ODIN is the data management and reporting. The data is organized in a database and then, optionally, that database can be converted into an HTML report or a Neo4j graph database for visualizing the data.
+	* [Open Source Intelligence Gathering: Techniques, Automation, and Visualization - Christopher Maddalena](https://posts.specterops.io/gathering-open-source-intelligence-bee58de48e05)
+
+
+Remove hidden data and personal information by inspecting documents, presentations, or workbooks
+https://support.office.com/en-us/article/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks-356b7b5d-77af-44fe-a07f-9aa4d085966f
+
+
+
+
+
+
+
+
+
 
 --------------------
 ### <a name="general"></a>General

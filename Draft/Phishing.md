@@ -12,6 +12,164 @@
 * [Setting up a Server](#settingup)
 * [Talks/Presentations](#talks)
 
+* [VBA Macros Pest Control - Philippe Lagadec](https://www.decalage.info/files/THC17_Lagadec_Macro_Pest_Control2.pdf)
+* [Traversing The Kill-Chain: The New Shiny In 2018 - Vincent Yiu - HITBGSEC 2018](https://www.youtube.com/watch?v=w1fNGOKkeSg&feature=youtu.be)
+
+https://www.mdsec.co.uk/2019/02/macros-and-more-with-sharpshooter-v2-0/
+* [Papercut](https://github.com/changemakerstudios/papercut)
+	* Simple Desktop SMTP Server
+* [How to Bypass Safe Link/Attachment Processing of ATP - support.knowbe4.com](https://support.knowbe4.com/hc/en-us/articles/115004326408-How-to-Bypass-Safe-Link-Attachment-Processing-of-ATP)
+
+https://www.fireeye.com/blog/threat-research/2017/04/cve-2017-0199-hta-handler.html
+https://github.com/mdsecactivebreach/SharpShooter
+https://github.com/0x09AL/WordSteal
+* [JS2PDFInjector](https://github.com/cornerpirate/JS2PDFInjector)
+	* Use this tool to Inject a JavaScript file into a PDF file.
+https://medium.com/@reegun/unsanitized-file-validation-leads-to-malicious-payload-download-via-office-binaries-202d02db7191
+* [Introducing the Office 365 Attack Toolkit - MDSec](https://www.mdsec.co.uk/2019/07/introducing-the-office-365-attack-toolkit/)
+* [o365-attack-toolkit](https://github.com/mdsecactivebreach/o365-attack-toolkit)
+https://www.mdsec.co.uk/2019/07/introducing-the-office-365-attack-toolkit/
+https://github.com/mdsecactivebreach/o365-attack-toolkit
+https://i.blackhat.com/asia-19/Thu-March-28/bh-asia-Hegt-MS-Office-in-Wonderland.pdf
+https://secureyourit.co.uk/wp/2019/05/10/dynamic-microsoft-office-365-amsi-in-memory-bypass-using-vba/
+https://www.youtube.com/watch?v=xY2DIRfqNvA
+https://github.com/InfoPhish/InfoPhish
+https://blog.netspi.com/10-places-to-stick-your-unc-path/
+* [PowerPoint and Custom Actions - Sean Wilson](https://cofense.com/powerpoint-and-custom-actions/)
+* [Phishing for Funds: Understanding Business Email Compromise - Keith Turpin - BHA17](https://www.youtube.com/watch?v=_gk4i33lriY&list=PLH15HpR5qRsWx4qw9ZlgmisHOcKG4ZcRS&index=11)
+	* Business Email Compromise (aka CEO fraud) is a rapidly expanding cybercrime in which reported cases jumped 1300% from 2015 to 2016. This financial fraud scheme can target any market segment or organization regardless of size. Thousands of organizations from more than 100 countries have reported losses. The reasons for this surge is simple - it makes money. 
+* [VB2018 paper: Office bugs on the rise - Gabor Szappanos](https://www.virusbulletin.com/virusbulletin/2018/12/vb2018-paper-office-bugs-rise/)
+* [Detecting and Protecting Against Word Field Code Abuse - Mark E. Soderlund(2003)](https://www.giac.org/paper/gsec/2624/detecting-protecting-word-field-code-abuse/104497)
+* [Abusing Misconfigured Cloud Email Providers for Enhanced Phishing Campaigns - und3rf10w.blogspot](https://und3rf10w.blogspot.com/2017/07/abusing-misconfigured-cloud-email.html)
+
+* [Malicious Outlook Rules - Nick Landers](https://silentbreaksecurity.com/malicious-outlook-rules/)
+* [Macro-less Code Exec in MSWord -  Etienne Stalmans, Saif El-Sherei](https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/)
+* [Office Document Macros, OLE, Actions, DDE Payloads and Filter Bypass - PwnDizzle](https://pwndizzle.blogspot.com/2017/03/office-document-macros-ole-actions-dde.html)
+https://duo.com/blog/new-open-source-phishing-tools-isthislegit-and-phinn
+
+https://labs.mwrinfosecurity.com/publications/corrupting-memory-in-microsoft-office-protected-view-sandbox/?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=565088e5a455476c97c557e8bbcec069&fl=4&uid=150127534&nid=244+285282312
+https://www.forcepoint.com/blog/x-labs/sway-and-pray
+https://www.greyhathacker.net/?p=948
+https://pwndizzle.blogspot.com/2017/03/office-document-macros-ole-actions-dde.html
+
+* [When Scriptlets Attack: Excel’s Alternative to DDE Code Execution - David Wells](https://www.lastline.com/labsblog/when-scriptlets-attack-excels-alternative-to-dde-code-execution/)
+* [Insert an object in your Excel spreadsheet - support.office](https://support.office.com/en-us/article/Insert-an-object-in-your-Excel-spreadsheet-e73867b2-2988-4116-8d85-f5769ea435ba)
+* [Malicious Excel DDE Execution with ML AV Bypass and Persistence - hyperiongray.com](https://blog.hyperiongray.com/excel-dde-exploitation-and-ml-av-bypass/)
+* [Microsoft Powerpoint as Malware Dropper - Marco Ramilli](https://marcoramilli.blogspot.com/2018/11/microsoft-powerpoint-as-malware-dropper.html)
+* [Running Macros via ActiveX Controls - Parvez](http://www.greyhathacker.net/?p=948)
+* [Abusing Microsoft Office DDE - Mike Czumak](https://www.securitysift.com/abusing-microsoft-office-dde/)
+* [Detecting and Protecting Against Word Field Code Abuse - Mark E. Soderlund(2003)](https://www.giac.org/paper/gsec/2624/detecting-protecting-word-field-code-abuse/104497)
+* [Disable DDEAUTO for Outlook, Word, OneNote, and Excel versions 2010, 2013, 2016](https://gist.github.com/wdormann/732bb88d9b5dd5a66c9f1e1498f31a1b)
+* [The Current State of DDE - 0xdeadbeefjerky](1/2018)](https://0xdeadbeefjerky.github.io/2018/01/29/state-of-dde.html)
+
+* [Word to Your Mac - analyzing a malicious word document targeting macOS users - Patrick Wardle](https://objective-see.com/blog/blog_0x3A.html)
+* [Escaping the Microsoft Office Sandbox
+a faulty regex, allows malicious code to escape and persist](https://objective-see.com/blog/blog_0x35.html)
+
+* [Hacking around HTA Files](http://blog.sevagas.com/?Hacking-around-HTA-files)
+https://silentbreaksecurity.com/malicious-outlook-rules/
+
+
+* [EmbedInHTML](https://github.com/Arno0x/EmbedInHTML)
+	* What this tool does is taking a file (any type of file), encrypt it, and embed it into an HTML file as ressource, along with an automatic download routine simulating a user clicking on the embedded resource. Then, when the user browses the HTML file, the embedded file is decrypted on the fly, saved in a temporary folder, and the file is then presented to the user as if it was being downloaded from the remote site. Depending on the user's browser and the file type presented, the file can be automatically opened by the browser.
+
+
+
+
+
+
+
+
+
+
+
+
+https://blog.cymulate.com/abusing-microsoft-office-online-video
+
+
+
+Hacking Outlook/OWA:
+https://silentbreaksecurity.com/malicious-outlook-rules/
+https://www.youtube.com/watch?v=cVhc9VOK5MY
+https://doublepulsar.com/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0?gi=18b1f4a3ca13
+
+
+* [Introducing the Office (2007) Open XML File Formats
+ - docs.ms](https://docs.microsoft.com/en-us/previous-versions/office/developer/office-2007/aa338205(v=office.12)#office2007aboutnewfileformat_structureoftheofficexmlformats)
+
+
+
+
+
+* [macro_pack](https://github.com/sevagas/macro_pack)
+	* macro_pack is a tool by @EmericNasi used to automatize obfuscation and generation of MS Office documents for pentest, demo, and social engineering assessments. The goal of macro_pack is to simplify exploitation, antimalware bypass, and automatize the process from vba generation to final Office document generation.
+* [mraptor](https://github.com/decalage2/oletools/wiki/mraptor)
+	* mraptor is a tool designed to detect most malicious VBA Macros using generic heuristics. Unlike antivirus engines, it does not rely on signatures.
+	* [blogpost](http://decalage.info/mraptor)
+* [olevba](https://github.com/decalage2/oletools/wiki/olevba)
+	* olevba is a script to parse OLE and OpenXML files such as MS Office documents (e.g. Word, Excel), to detect VBA Macros, extract their source code in clear text, and detect security-related patterns such as auto-executable macros, suspicious VBA keywords used by malware, anti-sandboxing and anti-virtualization techniques, and potential IOCs (IP addresses, URLs, executable filenames, etc). It also detects and decodes several common obfuscation methods including Hex encoding, StrReverse, Base64, Dridex, VBA expressions, and extracts IOCs from decoded strings.
+* [loffice - Lazy Office Analyzer](https://github.com/tehsyntx/loffice)
+	* Loffice is making use of WinAppDbg to extract URLs' from Office documents but also VB-script and Javascript. By setting strategical breakpoints it's possible to neutralize obfuscation and get the URL and file destination. Anti-analysis via WMI, for example detecting running processes or installed software is handled by patching the query string before the query is run.
+* [VBA Dynamic Hook](https://github.com/eset/vba-dynamic-hook)
+	* Dynamically analyzes VBA macros inside Office documents by hooking function calls
+* [[MS-OVBA]: Office VBA File Format Structure - msdn.ms](https://msdn.microsoft.com/en-us/library/cc313094(v=office.12).aspx)
+	* Specifies the Office VBA File Format Structure, which describes the Microsoft Visual Basic for Applications (VBA) File Format for Microsoft Office 97, Microsoft Office 2000, Microsoft Office XP, Microsoft Office 2003, and the 2007 Microsoft Office system. This specification also describes a storage that contains a VBA project, which contains embedded macros and custom forms for use in Office documents.
+* [[MS-VBAL]: VBA Language Specification](https://msdn.microsoft.com/en-us/library/dd361851.aspx)
+	* Specifies the VBA Language, which defines the implementation-independent and operating system-independent programming language that is required to be supported by all conforming VBA implementations. This specification also defines all features and behaviors of the language that are required to exist and behave identically in all conforming implementations.
+* [How to grill Malicious Macros - SSTIC15 - Decalage](https://decalage.info/en/sstic15)
+* [Applied Machine Learning: Defeating Modern Malicious Documents](https://www.youtube.com/embed/ZAuCEgA3itI?enablejsapi=1&modestbranding=1&disablekb=1&rel=0)
+* [MaliciousMacroBot](https://github.com/egaus/MaliciousMacroBot)
+* [Direct shellcode execution in MS Office macros - scriptjunkie.us](https://www.scriptjunkie.us/2012/01/direct-shellcode-execution-in-ms-office-macros/)
+* [Powershell Empire Stagers 1: Phishing with an Office Macro and Evading AVs - fzuckerman](https://fzuckerman.wordpress.com/2016/10/06/powershell-empire-stagers-1-phishing-with-an-office-macro-and-evading-avs/)
+* [MacroMilter](https://github.com/sbidy/MacroMilter)
+	* This python based milter (mail-filter) checks an incoming mail for suspicious VBA macro code in MS 20xx Office attachments (doc, xls, ppt ...).
+* [MSWord - Obfuscation with Field Codes - staaldraad](http://staaldraad.github.io/2017/10/23/msword-field-codes/)
+* [Macroless DOC malware that avoids detection with Yara rule - furoner](https://furoner.wordpress.com/2017/10/17/macroless-malware-that-avoids-detection-with-yara-rule/amp/)
+
+DDE
+* [The Current State of DDE - Office DDE Attacks from an Offensive and Defensive Perspective - @0xdeadbeefJERKY](https://medium.com/@0xdeadbeefJERKY/the-current-state-of-dde-a62fd3277e9)
+
+* [When Scriptlets Attack: Excel’s Alternative to DDE Code Execution - David Wells](https://www.lastline.com/labsblog/when-scriptlets-attack-excels-alternative-to-dde-code-execution/)
+
+* [Insert an object in your Excel spreadsheet - support.office](https://support.office.com/en-us/article/Insert-an-object-in-your-Excel-spreadsheet-e73867b2-2988-4116-8d85-f5769ea435ba)
+* [Running Macros via ActiveX Controls - greyhathacker.net](http://www.greyhathacker.net/?p=948)
+* [Variable Object (Word) - msdn.ms](https://msdn.microsoft.com/en-us/VBA/Word-VBA/articles/variable-object-word)
+* [Using ScriptControl Methods - docs.ms](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-6.0/aa227637(v=vs.60))
+	* The ScriptControl contains methods to execute code, add code and objects to the scripting engine, and reset the scripting engine to its initial state.
+* [VBA ScriptControl to run Java Script Function](https://www.experts-exchange.com/questions/28190006/VBA-ScriptControl-to-run-Java-Script-Function.html)
+* [CallByName Function - msdn.ms](https://msdn.microsoft.com/en-us/VBA/Language-Reference-VBA/articles/callbyname-function)
+	* Executes a method of an object, or sets or returns a property of an object. SyntaxCallByName( object, procname, calltype,[args()])
+* [Abusing native Windows functions for shellcode execution - ropgadget](http://ropgadget.com/posts/abusing_win_functions.html)
+* [trigen](https://github.com/karttoon/trigen)
+	* Trigen is a Python script which uses different combinations of Win32 function calls in generated VBA to execute shellcode.
+* [PowerShell, C-Sharp and DDE The Power Within - sensepost](https://sensepost.com/blog/2016/powershell-c-sharp-and-dde-the-power-within/)
+* [Macro-less Code Exec in MSWord - sensepost]
+* [Office Document Macros, OLE, Actions, DDE Payloads and Filter Bypass - pwndizzle](http://pwndizzle.blogspot.com.es/2017/03/office-document-macros-ole-actions-dde.html)
+
+
+
+
+
+
+* [Factur-X](http://fnfe-mpe.org/factur-x/factur-x_en/)
+	* Factur-X is a Franco-German standard for hybrid e-invoice (PDF for users and XML data for process automation), the first implementation of the European Semantic Standard EN 16931 published by the European Commission on October 16th 2017. Factur-X is the same standard than ZUGFeRD 2.0.
+	* Factur-X is at the same time a full readable invoice in a PDF A/3 format, containing all information useful for its treatment, especially in case of discrepancy or absence of automatic matching with orders and / or receptions, and a set of invoice data presented in an XML structured file conformant to EN16931 (syntax CII D16B), complete or not, allowing invoice process automation.
+* [Factur-X Python library - github](https://github.com/invoice-x/factur-x-ng)
+	* Factur-X is a EU standard for embedding XML representations of invoices in PDF files. This library provides an interface for reading, editing and saving the this metadata.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ------------------

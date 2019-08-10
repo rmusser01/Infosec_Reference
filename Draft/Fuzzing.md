@@ -41,6 +41,29 @@
 
 
 
+
+https://danluu.com/testing/
+
+https://www.usenix.org/conference/woot12/workshop-program/presentation/vanegue
+https://labs.mwrinfosecurity.com/publications/corrupting-memory-in-microsoft-office-protected-view-sandbox/?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=565088e5a455476c97c557e8bbcec069&fl=4&uid=150127534&nid=244+285282312
+https://github.com/nccgroup/fuzzowski
+https://mattwarren.org/2018/08/28/Fuzzing-the-.NET-JIT-Compiler/
+https://github.com/jakobbotsch/Fuzzlyn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------------
 ### <a name="general"></a>General<a name="general"></a>
 * **101**

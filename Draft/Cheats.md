@@ -1,7 +1,9 @@
 # Cheat Sheets & Reference Pages
 
 
-
+https://github.com/SadProcessor/Cheats
+https://github.com/chrisallenlane/cheat
+* [PowerShell Remoting Cheatsheet - Scott Sutherland](https://blog.netspi.com/powershell-remoting-cheatsheet/)
 
 ### Cheat Sheets
 * **General Cheat Sheets**
@@ -94,6 +96,8 @@
 	* [Windows Startup Application Database](http://www.pacs-portal.co.uk/startup_content.php)
 	* [Windows CMD Reference - ms](https://www.microsoft.com/en-us/download/details.aspx?id=56846)
 	* [Windows Command Line cheatsheet (part 2): WMIC - andreafortuna](https://www.andreafortuna.org/dfir/windows-command-line-cheatsheet-part-2-wmic/)
+	* [Windows CLI gems. Tweets of @wincmdfu](https://github.com/madhuakula/wincmdfu#list-missing-updates)
+		* Windows one line commands that make life easier, shortcuts and command line fu.
 * **Wireless Cheat Sheets**<a name="wifi"></a>
 	* [Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
 * **DB Cheat Sheets**<a name="db"></a>

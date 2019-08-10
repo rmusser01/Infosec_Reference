@@ -10,7 +10,8 @@
 - [Tools](#tools)
 
 
-
+* [Make Vishing Suck Less - Jonathan Stines(Layer8 2018)](https://www.youtube.com/watch?v=4DphohJvnx8&index=5&list=UUynWOUeHAOflEQtJnrZpkNA)
+	* The purpose of this talk is to describe methodologies which one could follow when performing telephone pretexting. Social dynamics have changed over the years causing the entry barrier to being successful with Vishing more difficult and talking on the telephone less comfortable. The aim of this speech will be to crack the code for a newb getting started so he or she can hit the ground running, jump on the horn, and start pwning some folks like it's 1989.
 
 ------------------------
 ### <a name="articles">Articles

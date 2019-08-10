@@ -42,6 +42,40 @@
 https://tls.ulfheim.net/
 https://bearssl.org/
 https://thecryptobible.co/protocols/tls.html
+https://research.checkpoint.com/cryptographic-attacks-a-guide-for-the-perplexed/
+https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Eng.pdf
+
+* [A Diagram for Sabotaging Cryptosystems - @Jackson_T](https://web.archive.org/web/20180129010248/http://jackson.thuraisamy.me/crypto-backdoors.html)
+
+* [A Detailed Look at RFC 8446 (a.k.a. TLS 1.3) - Cloudflare](https://blog.cloudflare.com/rfc-8446-aka-tls-1-3/)
+* [Hash collisions and exploitations - Ange Albertini and Marc Stevens](https://github.com/corkami/collisions)
+    * The goal is to explore extensively existing attacks - and show on the way how weak MD5 is (instant collisions of any JPG, PNG, PDF, MP4, PE...) - and also explore in detail common file formats to determine how they can be exploited with present or with future attacks. Indeed, the same file format trick can be used on several hashes (the same JPG tricks were used for MD5, malicious SHA-1 and SHA1), as long as the collisions follow the same byte patterns. This document is not about new attacks (the most recent one was documented in 2012), but about new forms of exploitations of existing attacks.
+https://blog.doyensec.com/2019/08/01/common-crypto-bugs.html
+
+https://github.com/corkami/collisions
+* [SSL/TLS and PKI History](https://www.feistyduck.com/ssl-tls-and-pki-history/)
+    * A comprehensive history of the most important events that shaped the SSL/TLS and PKI ecosystem.
+https://tls.ulfheim.net/
+https://asecuritysite.com/subjects/chapter58
+https://github.com/ashutosh1206/Crypton
+https://thecryptobible.co/primitives/symmetric_encryption.html
+
+* [An Illustrated Guide to the BEAST Attack - Joshua Davies](http://commandlinefanatic.com/cgi-bin/showarticle.cgi?article=art027)
+* [SHATTERED](https://shattered.io/)
+
+
+http://securityintelligence.com/cve-2014-0195-adventures-in-openssls-dtls-fragmented-land/
+
+https://www.wst.space/ssl-part1-ciphersuite-hashing-encryption/
+https://wiki.mozilla.org/images/0/0b/Thunderbird-enigmail-report.pdf
+
+
+
+https://malicioussha1.github.io/
+
+
+
+
 
 -----
 ### <a name="general">General Information</a>

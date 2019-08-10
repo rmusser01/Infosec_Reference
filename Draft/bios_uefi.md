@@ -20,10 +20,30 @@
 * **To-Do**
 	* Add rowhammer related materials
 
+https://i.blackhat.com/USA-19/Wednesday/us-19-Hasarfaty-Behind-The-Scenes-Of-Intel-Security-And-Manageability-Engine.pdf
+
+BMC Related
+* [The Unbearable Lightness of BMCs | Matias Soler & Nico Waisman (BHUSA2018)](https://www.youtube.com/watch?v=mosERjbrgdo&t=0s&list=PLH15HpR5qRsVAXGmSVfjWrGtGLJjIJuGe&index=101)
+* [Remotely Attacking System Firmware - Alex Bazhaniuk, Jesse Michael, Mickey Shkatov(BHUSA2018)](https://i.blackhat.com/us-18/Wed-August-8/us-18-Michael-Shkatov-Remotely-Attacking-System-Firmware.pdf)
+* [Turning your BMC into a revolving door - Alexandre Gazet, Fabien Perigaud 0xf4b, Joffrey Czarny - ZeroNights2018](https://www.youtube.com/watch?v=z5uBYTXSex0)
+	* [Slides](https://www.synacktiv.com/ressources/zeronights_2018_turning_your_bmc_into_a_revolving_door.pdf)
+* [Subverting your server through its BMC: the HPE iLO4 case - Fabien Periguad, Alexandre Gazet, Joffrey Czarny](https://airbus-seclab.github.io/ilo/RECONBRX2018-Slides-Subverting_your_server_through_its_BMC_the_HPE_iLO4_case-perigaud-gazet-czarny.pdf)
+* [ilo4_toolbox - Subverting your server through its BMC: the HPE iLO4 case](https://github.com/airbus-seclab/ilo4_toolbox)
+* [CVE-2017-12542 - skelsec](https://github.com/skelsec/CVE-2017-12542)
+	* Test and exploit for CVE-2017-12542
+* [Turning your BMC into a revolving door - Alexandre Gazet, Fabien Perigaud 0xf4b, Joffrey Czarny - ZeroNights 2018](https://www.youtube.com/watch?v=z5uBYTXSex0)
+	* Unmonitored and unpatched BMC (remote administration hardware feature for servers) are an almost certain source of chaos. They have the potential to completely undermined the security of complex network infrastructures and data centers. Our on-going effort to analyze HPE iLO systems (4 and 5) resulted in the discovery of many vulnerabilities, the last one having the capacity to fully compromise the iLO chip from the host system itself. This talk will show how a combination of these vulnerabilities can turn an iLO BMC into a revolving door between an administration network and the production network.
+	* [Slides](	https://www.synacktiv.com/ressources/zeronights_2018_turning_your_bmc_into_a_revolving_door.pdf)
+
+https://translate.google.com/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=http%3A%2F%2Fblog.ptsecurity.ru%2F2018%2F01%2Fintel-me.html&edit-text=
+https://www.welivesecurity.com/2018/09/27/lojax-first-uefi-rootkit-found-wild-courtesy-sednit-group/
+https://www.welivesecurity.com/wp-content/uploads/2018/09/ESET-LoJax.pdf
 * [How Does an Intel Processor Boot? - BinaryDebt](https://binarydebt.wordpress.com/2018/10/06/how-does-an-x86-processor-boot/)
 * [Understanding L1 Terminal Fault aka Foreshadow: What you need to know - Jon Masters](https://www.redhat.com/en/blog/understanding-l1-terminal-fault-aka-foreshadow-what-you-need-know)
 * [GuardION - Android GuardION patches to mitigate DMA-based Rowhammer attacks on ARM](https://github.com/vusec/guardion)
 	* This software is the open-source component of our paper "GuardION: Practical Mitigation of DMA-based Rowhammer Attacks on ARM", published in the Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA) 2018. It allows you to patch an Android kernel so that DMA allocations are guarded with empty rows, resulting in the isolation of bitflips and thus mitigation of Drammer-like attacks.
+
+https://firmwaresecurity.com/2019/04/22/modern-secure-boot-attacks-slides-available/
 
 	* **Rowhammer**
 		* [Exploiting the DRAM rowhammer bug to gain kernel privileges](https://googleprojectzero.blogspot.com/2015/03/exploiting-dram-rowhammer-bug-to-gain.html)

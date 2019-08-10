@@ -18,6 +18,8 @@
 
 
 
+https://maxkersten.nl/binary-analysis-course/
+
 
 -----
 ### Classes & Training

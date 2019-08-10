@@ -17,10 +17,14 @@ Sort tools into categories of type, i.e. physical network, wireless(types thereo
 * [SneakyCreeper](https://strikersecurity.com/blog/sneaky-creeper-data-exfiltration-overview/)
 	* A Framework for Data Exfiltration
 	* [Github](https://github.com/DakotaNelson/sneaky-creeper)
-
+* [PacketWhisper](https://github.com/TryCatchHCF/PacketWhisper?mc_cid=065d80dbfd&mc_eid=f956a0c5ca)
+	* Stealthily Transfer Data & Defeat Attribution Using DNS Queries & Text-Based Steganography, without the need for attacker-controlled Name Servers or domains; Evade DLP/MLS Devices; Defeat Data- & DNS Name Server Whitelisting Controls. Convert any file type (e.g. executables, Office, Zip, images) into a list of Fully Qualified Domain Names (FQDNs), use DNS queries to transfer data. Simple yet extremely effective.
 * [GSMem: Data Exfiltration from Air-Gapped Computers over GSM Frequencies - usenix conference](https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-guri-update.pdf)
-
+https://github.com/moloch--/wire-transfer
 ##### End Sort
+https://github.com/TarlogicSecurity/Arecibo
+* [Secure WebDav Egress: AMZ EC2, Apache, and Let's Encrypt - Chris Patten](http://rift.stacktitan.com/alternate-unc-webdav-ssl-and-lets-encrypt/)
+
 
 
 -----

@@ -1,3 +1,4 @@
+
 # System Internals of Windows; OS X; Linux; ARM
 
 ## Table of Contents
@@ -13,11 +14,192 @@
 
 
 
+
+
 ##### To Do:
 * Fix ToC so its accurate
 *	Split sections into reference material and writeup material(quick vs long reference)
 * Further categorize sections (network vs memory vs exploit mitigations vs feature)
+* [SetProcessMitigationPolicy function - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessmitigationpolicy)
+	* Sets a mitigation policy for the calling process. Mitigation policies enable a process to harden itself against various types of attacks.
+[GetProcessMitigationPolicy function - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getprocessmitigationpolicy)
+	* Retrieves mitigation policy settings for the calling process.
+* [Introduction to Paging - Philipp Oppermann](https://os.phil-opp.com/paging-introduction/)
+* [Windows Defender Advanced Threat Protection - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/windows-defender-advanced-threat-protection)
+* [Windows Defender ATP data storage and privacy - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/data-storage-privacy-windows-defender-advanced-threat-protection)
+	* This document explains the data storage and privacy details related to Windows Defender ATP
+* [Thread-local storage - Wikipedia](https://en.wikipedia.org/wiki/Thread-local_storage)
+* [SSP Packages Provided by Microsoft - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/SecAuthN/ssp-packages-provided-by-microsoft)
+* [Microsoft Digest SSP - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/SecAuthN/microsoft-digest-ssp)
+	* Microsoft Digest is a security support provider (SSP) that implements the Digest Access protocol, a lightweight authentication protocol for parties involved in Hypertext Transfer Protocol (HTTP) or Simple Authentication Security Layer (SASL) based communications. Microsoft Digest provides a simple challenge response mechanism for authenticating clients. This SSP is intended for use by client/server applications using HTTP or SASL based communications.
 
+
+https://xinu.cs.purdue.edu/
+https://github.com/mit-pdos/xv6-public
+http://pages.cs.wisc.edu/~remzi/OSTEP/
+http://man7.org/tlpi/
+https://wiki.osdev.org/Expanded_Main_Page
+https://www.haiku-os.org/
+
+
+https://devblogs.microsoft.com/commandline/learn-about-windows-console-and-windows-subsystem-for-linux-wsl/
+
+https://j00ru.vexillium.org/syscalls/nt/64/
+
+
+
+* [User Account Control: Inside Windows 7 User Account Control - Mark Russinovich](https://docs.microsoft.com/en-us/previous-versions/technet-magazine/dd822916(v=msdn.10))
+
+http://arno.org/arnotify/2006/10/on-the-origins-of-ds_store/
+https://0day.work/parsing-the-ds_store-file-format/
+https://en.internetwache.org/scanning-the-alexa-top-1m-for-ds-store-files-12-03-2018/
+* [Introducing the Office (2007) Open XML File Formats
+ - docs.ms](https://docs.microsoft.com/en-us/previous-versions/office/developer/office-2007/aa338205(v=office.12)#office2007aboutnewfileformat_structureoftheofficexmlformats)
+
+* [SSP Packages Provided by Microsoft - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/SecAuthN/ssp-packages-provided-by-microsoft)
+
+
+File Locking
+	* https://lwn.net/Articles/317814/
+OOM
+	* https://linux-mm.org/OOM_Killer
+	* https://unix.stackexchange.com/questions/153585/how-does-the-oom-killer-decide-which-process-to-kill-first
+	* https://www.memset.com/docs/additional-information/oom-killer/
+	* https://www.kernel.org/doc/gorman/html/understand/understand016.html
+	* https://stackoverflow.com/questions/9199731/understanding-the-linux-oom-killers-logs
+	* https://static.lwn.net/kerneldoc/admin-guide/mm/concepts.html
+	* https://serverfault.com/questions/134669/how-to-diagnose-causes-of-oom-killer-killing-processes
+	* http://eloquence.marxmeier.com/sdb/html/linux_limits.html
+	* http://bl0rg.krunch.be/oom-frag.html
+	* https://stackoverflow.com/questions/17935873/malloc-fails-when-there-is-still-plenty-of-swap-left
+	* https://serverfault.com/questions/724469/rsync-triggered-linux-oom-killer-on-a-single-50-gb-file/724518#724518
+	* https://www.oracle.com/technetwork/articles/servers-storage-dev/oom-killer-1911807.html
+
+
+https://www.vergiliusproject.com/
+
+https://www.tarlogic.com/en/blog/how-kerberos-works/
+
+
+
+
+
+
+
+
+
+
+
+* [chcp](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/chcp)
+	* Changes the active console code page. If used without parameters, chcp displays the number of the active console code page.
+https://techcommunity.microsoft.com/t5/Windows-Kernel-Internals/Windows-Sandbox/ba-p/301849
+
+* [Secure Channel - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/SecAuthN/secure-channel)
+	* Secure Channel, also known as Schannel, is a security support provider (SSP) that contains a set of security protocols that provide identity authentication and secure, private communication through encryption. Schannel is primarily used for Internet applications that require secure Hypertext Transfer Protocol (HTTP) communications.
+
+* [Know your Windows Processes or Die Trying(2014) - sysforensics.org](https://web.archive.org/web/20140209004217/https://sysforensics.org/2014/01/know-your-windows-processes.html)
+* [Fibers - docs.ms](https://docs.microsoft.com/en-us/windows/win32/procthread/fibers)
+* [Using Fibers](https://docs.microsoft.com/en-us/windows/win32/procthread/using-fibers)
+
+* [NUMA Support - docs.ms](https://docs.microsoft.com/en-us/windows/win32/procthread/numa-support)
+* [Standard ECMA-335 Common Language Infrastructure (CLI) 6th ed- ECMA](https://www.ecma-international.org/publications/standards/Ecma-335.htm)
+* [The NTLM Authentication Protocol and Security Support Provider - davenport.sourceforge.net](http://davenport.sourceforge.net/ntlm.html)
+* [What are the undocumented features and limitations of the Windows FINDSTR command? - StackOverflow](https://stackoverflow.com/questions/8844868/what-are-the-undocumented-features-and-limitations-of-the-windows-findstr-comman)
+* [Remote Procedure Call (RPC) - cio-wiki.org](https://cio-wiki.org/wiki/Remote_Procedure_Call_(RPC))
+* [Remote Procedure Call - Wikipedia](https://en.wikipedia.org/wiki/Remote_procedure_call)
+
+    * **Constrained-Language Mode**
+	    * [PowerShell Constrained Language Mode - devblogs.ms](https://devblogs.microsoft.com/powershell/powershell-constrained-language-mode/)
+	* **Logging**
+		* [About Eventlogs(PowerShell) - docs.ms](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_eventlogs?view=powershell-5.1)
+		* [Script Tracing and Logging - docs.ms](https://docs.microsoft.com/en-us/powershell/wmf/whats-new/script-logging)
+* [Remote Procedure Calls - Paul Krzyzanowski](https://www.cs.rutgers.edu/~pxk/417/notes/08-rpc.html)
+* [What is RPC and why is it so important?(windows) - StackOverflow](https://superuser.com/questions/616098/what-is-rpc-and-why-is-it-so-important)
+* [How RPC Works - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc738291(v=ws.10))
+* [RPC Components - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/Rpc/microsoft-rpc-components)
+
+
+* [Kerberos.NET](https://github.com/SteveSyfuhs/Kerberos.NET)
+https://devblogs.microsoft.com/commandline/learn-about-windows-console-and-windows-subsystem-for-linux-wsl/
+
+* [The COM Library - docs.ms](https://docs.microsoft.com/en-us/windows/win32/com/the-com-library)
+* [Security in COM - docs.ms](https://docs.microsoft.com/en-us/windows/win32/com/security-in-com)
+
+
+* [Remote Procedure Call - IBM Knowledgebase](https://www.ibm.com/support/knowledgecenter/en/ssw_aix_71/com.ibm.aix.progcomc/ch8_rpc.htm)
+
+* [Remote Procedure Calls (RPC) - users.cs.cf.ac.uk](https://users.cs.cf.ac.uk/Dave.Marshall/C/node33.html)
+
+* [CLSID Key - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/com/clsid-key-hklm)
+	* A CLSID is a globally unique identifier that identifies a COM class object. If your server or container allows linking to its embedded objects, you need to register a CLSID for each supported class of objects.
+	* The CLSID key contains information used by the default COM handler to return information about a class when it is in the running state.
+
+* [COM Fundamentals - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/com/com-fundamentals)
+
+* [Executing Macros From a DOCX With Remote Template Injection - redxorblue.com](http://blog.redxorblue.com/2018/07/executing-macros-from-docx-with-remote.html)
+* [LM, NTLM, Net-NTLMv2, oh my! - Peter Gombos](https://medium.com/@petergombos/lm-ntlm-net-ntlmv2-oh-my-a9b235c58ed4)
+* [ Microsoft Office – NTLM Hashes via Frameset - netbiosX](https://pentestlab.blog/2017/12/18/microsoft-office-ntlm-hashes-via-frameset/)
+* [SMB/HTTP Auth Capture via SCF File - mubix](https://room362.com/post/2016/smb-http-auth-capture-via-scf/)
+* [Places of Interest in Stealing NetNTLM Hashes - Osanda Malith](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
+* [Microsoft Word – UNC Path Injection with Image Linking - Thomas Elling](https://blog.netspi.com/microsoft-word-unc-path-injection-image-linking/)
+
+* [Creating a service using sc.exe](https://support.microsoft.com/en-us/help/251192/how-to-create-a-windows-service-by-using-sc-exe)
+
+
+Windows Authentication
+* [Windows Authentication Overview - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/windows-authentication/windows-authentication-overview)
+* [Windows Authentication Architecture - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/windows-authentication/windows-authentication-architecture)
+* [Windows Authentication Technical Overview - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/windows-authentication/windows-authentication-technical-overview)
+* [Security Support Provider Interface Architecture - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/windows-authentication/security-support-provider-interface-architecture)
+* [Group Policy Settings Used in Windows Authentication - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/windows-authentication/group-policy-settings-used-in-windows-authentication)
+
+
+* [Windows Logon and Authentication Technical Overview - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/windows-authentication/group-policy-settings-used-in-windows-authentication)
+* [Windows Logon and Authentication Technical Overview - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dn169017(v=ws.10))
+
+
+
+Accounts
+	* [AD Accounts - docs.ms](https://technet.microsoft.com/itpro/windows/keep-secure/active-directory-accounts)
+	* [AD Security Groups](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/active-directory-security-groups)
+	* [Microsoft Accounts - docs.ms](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/microsoft-accounts)
+	* [Service Accounts - docs.ms](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/service-accounts)
+	* [Special Identities - docs.ms](https://docs.microsoft.com/en-us/windows/security/identity-protection/access-control/special-identities)
+	* [Group Managed Service Accounts Overview - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
+	* [Managed Service Accounts - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd378925(v=ws.10))
+	* [Getting Started with Group Managed Service Accounts - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/getting-started-with-group-managed-service-accounts)
+	* [Managed Service Accounts - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd378925(v=ws.10))
+	* [Managed Service Accounts - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ff641731(v=ws.10))
+	* [Service Accounts Step-by-Step Guide - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd548356(v=ws.10))
+
+Logon
+* [Windows Logon Scenarios - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/windows-authentication/windows-logon-scenarios)
+
+
+AD
+* [How Domain and Forest Trusts Work - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc773178(v=ws.10))
+* 
+
+Kerberos
+* [Kerberos Authentication Overview - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/kerberos/kerberos-authentication-overview)
+
+https://googleprojectzero.blogspot.com/2019/08/down-rabbit-hole.html
+https://web.archive.org/web/20060904080018/http://security.tombom.co.uk/shatter.html
+
+
+https://web.archive.org/web/20170614215931/http://mattwarren.org:80/2017/02/07/The-68-things-the-CLR-does-before-executing-a-single-line-of-your-code/
+http://morningcoffee.io/killing-a-process-and-all-of-its-descendants.html
+https://jugad2.blogspot.com/2008/09/unix-one-liner-to-kill-hanging-firefox.html?m=1
+
+* [The Windows Research Kernel AKA WRK](https://github.com/Zer0Mem0ry/ntoskrnl)
+	* Is a part of the source code of the actual windows NT Kernel. WRK is designed for academic uses and research, by no means it can be used for commercial purposes.
+
+
+https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/clr-configuration-knobs.md
+
+https://web.archive.org/web/20170411184849/https://github.com/dotnet/coreclr/blob/master/Documentation/project-docs/clr-configuration-knobs.md
+
+https://docs.microsoft.com/en-us/windows/win32/adsi/active-directory-service-interfaces-adsi
 
 ---------------------
 ## <a name="general">General Internals</a>

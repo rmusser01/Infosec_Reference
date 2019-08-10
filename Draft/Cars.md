@@ -9,7 +9,9 @@
 #### Sort
 #### End Sort
 
-
+https://www.pentestpartners.com/security-blog/vehicle-telematics-security-getting-it-right/
+https://console-cowboys.blogspot.com/2019/04/hacking-all-cars-part-2.html
+https://becomeautonomous.com/
 ------------------
 ### <a name="general"></a> General
 * **Seriously check this first --->** [Awesome Vehicle Security List(github awesome lists)](https://github.com/jaredthecoder/awesome-vehicle-security)

@@ -6,6 +6,12 @@
 
 
 
+* [Vulnerability Management Program Best Practices – Irfahn Khimji](https://www.tripwire.com/state-of-security/vulnerability-management/vulnerability-management-program-best-practices-part-1/)
+* [Using security policies to restrict NTLM traffic - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/jj865668(v=ws.10))
+
+https://blog.stealthbits.com/how-to-detect-overpass-the-hash-attacks/
+
+
 
 * **To-Do**
 	* User Awareness training
@@ -15,6 +21,117 @@
 	* Azure stuff
 	* AWS Stuff
 	* GCP Stuff
+
+https://infosec.mozilla.org/guidelines/openssh
+https://wiki.mozilla.org/Security/Server_Side_TLS
+https://www.dhs.gov/stopthinkconnect-toolkit
+
+
+https://forensixchange.com/posts/19_08_03_usb_storage_forensics_1/
+https://www.slideshare.net/HuyKha2/adsvs-v10-improving-the-security-of-active-directory
+
+https://avleonov.com/2016/08/02/nessus-v2-xml-report-format/
+https://avleonov.com/2017/01/25/parsing-nessus-v2-xml-reports-with-python/
+https://www.verifyit.nl/wp/?p=175591
+http://static.tenable.com/documentation/nessus_v2_file_format.pdf
+
+https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide
+* https://medium.com/palantir/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e
+
+* [New feature in Office 2016 can block macros and help prevent infection](https://web.archive.org/web/20180527161910/https://cloudblogs.microsoft.com/microsoftsecure/2016/03/22/new-feature-in-office-2016-can-block-macros-and-help-prevent-infection/?source=mmpc)
+* [Defensive Coding Strategies for a High-Security Environment - Matt Graeber - PowerShell Conference EU 2017](https://www.youtube.com/watch?reload=9&v=O1lglnNTM18)
+* [What is conditional access in Azure Active Directory? - docs.ms](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview)
+* [Windows 10 Security Checklist Starter Kit - itprotoday](https://www.itprotoday.com/industry-perspectives/windows-10-security-checklist-starter-kit)
+* [What is Active Directory Red Forest Design? - social.technet.ms](https://social.technet.microsoft.com/wiki/contents/articles/37509.what-is-active-directory-red-forest-design.aspx)
+* [Securing Privileged Access Reference Material - docs.ms](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material)
+* [Understanding “Red Forest”: The 3-Tier Enhanced Security Admin Environment (ESAE) and Alternative Ways to Protect Privileged Credentials - ultimatewindowsecurity](https://www.ultimatewindowssecurity.com/webinars/register.aspx?id=1409)
+* [Planting the Red Forest: Improving AD on the Road to ESAE - Jacques Louw and Katie Knowles](https://www.mwrinfosecurity.com/our-thinking/planting-the-red-forest-improving-ad-on-the-road-to-esae/)
+* [MongoDB Security Checklist](https://docs.mongodb.com/manual/administration/security-checklist/)
+* [kethash](https://github.com/cyberark/ketshash)
+	* A little tool for detecting suspicious privileged NTLM connections, in particular Pass-The-Hash attack, based on event viewer logs.
+* [ERNW Repository of Hardening Guides](https://github.com/ernw/hardening)
+	* This repository contains various hardening guides compiled by ERNW for various purposes. Most of those guides strive to provide a baseline level of hardening and may lack certain hardening options which could increase the security posture even more (but may have impact on operations or required operational effort).
+* [Planning for Compromise - docs.ms](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/planning-for-compromise)
+* [Application Whitelist Auditor - 	airlockdigital](https://www.airlockdigital.com/application-whitelisting-auditor/)
+* [iconSimple Software-Restriction Policy - iwrconsultancy](https://iwrconsultancy.co.uk/softwarepolicy)
+* [Recon by Fire](https://github.com/HewlettPackard/reconbf)
+	* Recon is a tool for reviewing the security configuration of a local system. It can detect existing issues, known-insecure settings, existing strange behaviour, and options for further hardening. Recon can be used in existing systems to find out which elements can be improved and can provide some information about why the change is recommended. It can also be used to scan prepared system images to verify that they contain the expected protection.
+* [How to Allow Non-Admin Users to Start/Stop Windows Service - woshub.com](http://woshub.com/set-permissions-on-windows-service/)
+* [Protect your enterprise data using Windows Information Protection (WIP) - docs.ms](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+* [Security WatchLock Up Your Domain Controllers - Steve Riley - docs.ms](https://docs.microsoft.com/en-us/previous-versions/technet-magazine/cc160936(v=msdn.10))
+* [Creating a Secure Environment using PowerShell Desired State Configuration - blogs.ms](https://blogs.msdn.microsoft.com/powershell/2014/07/21/creating-a-secure-environment-using-powershell-desired-state-configuration/)
+* [AuditScripts - CIS Critical Security Controls](https://www.auditscripts.com/free-resources/critical-security-controls/)
+
+
+
+https://github.com/MicrosoftDocs/windowsserverdocs/blob/master/WindowsServerDocs/identity/securing-privileged-access/securing-privileged-access-reference-material.md
+
+
+* https://securitycheckli.st/?mc_cid=b3a4b630b7&mc_eid=f956a0c5ca
+* https://cyber.gov.au/government/publications/securing-powershell-in-the-enterprise-pdf/
+
+* [Inventory-BrowserExts - keyboardcrunch](https://github.com/keyboardcrunch/Inventory-BrowserExts)
+	* This script can inventory Firefox and/or Chrome extensions for each user from a list of machines. It returns all the information back in a csv file and prints to console a breakdown of that information.
+https://github.com/Schillings/SwordPhish
+
+	* [Detect Password Spraying With Windows Event Log Correlation](https://www.ziemba.ninja/?p=66)
+	* [Hunting for SILENTTRINITY - Wee-Jing Chung](https://countercept.com/blog/hunting-for-silenttrinity/)
+* [BloodHound and the Adversary Resilience Model](https://docs.google.com/presentation/d/14tHNBCavg-HfM7aoeEbGnyhVQusfwOjOyQE1_wXVs9o/mobilepresent#slide=id.g35f391192_00)
+
+http://blog.win-fu.com/2017/08/stored-passwords-found-all-over-place.html?m=1
+
+https://cqureacademy.com/blog/securing-infrastructure/role-separation-pki
+
+
+* [Configuring Additional LSA Protection - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection)
+https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-two-279a1ed7863d?gi=8bb99beb092b
+
+https://github.com/google/santa
+
+* [CIS Amazon Web Services Foundations](https://d0.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf)
+* [Blocking Remote Use of Local Accounts - blogs.technet](https://blogs.technet.microsoft.com/secguide/2014/09/02/blocking-remote-use-of-local-accounts/)
+
+* [Weaponizing Active Directory - David Fletcher](https://www.youtube.com/watch?reload=9&v=vLWGJ3f3-gI&feature=youtu.be)
+	* This webcast covers basic techniques to catch attackers attempting lateral movement and privilege escalation within your environment with the goal of reducing that Mean Time to Detect (MTTD) metric. Using tactical deception, we will lay out strategies to increase the odds that an attacker will give away their presence early after initial compromise.
+
+https://www.microsoft.com/security/blog/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password
+
+* [Practical PowerShell Security: Enable Auditing and Logging with DSC - Ashley McGlone](https://blogs.technet.microsoft.com/ashleymcglone/2017/03/29/practical-powershell-security-enable-auditing-and-logging-with-dsc/)
+
+* [Where have all the Domain Admins gone? Rooting out Unwanted Domain Administrators - Rob VandenBrink](https://isc.sans.edu/diary/Where+have+all+the+Domain+Admins+gone%3F++Rooting+out+Unwanted+Domain+Administrators/24874)
+* [Account lockout duration - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/account-lockout-duration)
+* [Detecting Offensive PowerShell Attack Tools - adsecurity.org](https://adsecurity.org/?p=2604)
+
+https://dirteam.com/sander/2012/09/05/new-features-in-active-directory-domain-services-in-windows-server-2012-part-11-kerberos-armoring-fast/
+https://social.technet.microsoft.com/wiki/contents/articles/38015.credential-guard-say-good-bye-to-ptht-pass-the-hashticket-attacks.aspx
+https://oddvar.moe/2017/12/13/harden-windows-with-applocker-based-on-case-study-part-1/
+
+https://www.youtube.com/watch?v=YXjIVuX6zQk
+* [BloodHound From Red to Blue - Mathieu Saulnier(BSides Charm2019)](https://www.youtube.com/watch?v=UWY772iIq_Y)
+
+* [Beyond Domain Admins – Domain Controller & AD Administration - ADSecurity.org](https://adsecurity.org/?p=3700)
+	* This post provides information on how Active Directory is typically administered and the associated roles & rights.
+https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/
+
+* [Why Does the Penetration Testing Team Hate Me? - Ryan Oberfelder](https://medium.com/@ryoberfelder/why-does-the-penetration-testing-team-hate-me-67a981c5e10c)
+
+* [Weaponizing Active Directory - David Fletcher](https://www.youtube.com/watch?v=vLWGJ3f3-gI&feature=youtu.be)
+	* This webcast covers basic techniques to catch attackers attempting lateral movement and privilege escalation within your environment with the goal of reducing that Mean Time to Detect (MTTD) metric. Using tactical deception, we will lay out strategies to increase the odds that an attacker will give away their presence early after initial compromise.
+
+* [Introducing the Adversary Resilience Methodology — Part One - Andy Robbins](https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-one-e38e06ffd604)
+* [Introducing the Adversary Resilience Methodology — Part Two - Andy Robbins](https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-two-279a1ed7863d)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -34,6 +151,11 @@
 		* Capirca is a tool designed to utilize common definitions of networks, services and high-level policy files to facilitate the development and manipulation of network access control lists (ACLs) for various platforms. It was developed by Google for internal use, and is now open source.
 * **Amazon AWS** <a name="aws"></a>
 	* **AWS**
+		* [The Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws)
+			* A lot of information on AWS is already written. Most people learn AWS by reading a blog or a “getting started guide” and referring to the standard AWS references. Nonetheless, trustworthy and practical information and recommendations aren’t easy to come by. AWS’s own documentation is a great but sprawling resource few have time to read fully, and it doesn’t include anything but official facts, so omits experiences of engineers. The information in blogs or Stack Overflow is also not consistently up to date. This guide is by and for engineers who use AWS. It aims to be a useful, living reference that consolidates links, tips, gotchas, and best practices. It arose from discussion and editing over beers by several engineers who have used AWS extensively.
+	* **Lambda**
+		* [AWS Lambda - IAM Access Key Disabler](https://github.com/te-papa/aws-key-disabler)
+			* The AWS Key disabler is a Lambda Function that disables AWS IAM User Access Keys after a set amount of time in order to reduce the risk associated with old access keys.
 	* **S3**
 		* [Amazon S3 Bucket Public Access Considerations](https://aws.amazon.com/articles/5050)
 * **Blue team Tactics** <a name="antired"></a>
@@ -70,7 +192,6 @@
 		* Simple tool to configure Windows Filtering Platform (WFP) which can configure network activity on your computer. The lightweight application is less than a megabyte, and it is compatible with Windows Vista and higher operating systems. You can download either the installer or portable version. For correct working, need administrator rights.
 * **(General) Hardening** <a name="hardening"></a>
 	* **101**
-	* **Browsers**
 	* **Guides**
 		* [ERNW Repository of Hardening Guides](https://github.com/ernw/hardening)
 		* [OWASP Secure Configuration Guide](https://www.owasp.org/index.php/Secure_Configuration_Guide)
@@ -157,14 +278,13 @@
 	* [Decryptonite](https://github.com/DecryptoniteTeam/Decryptonite)
 		* Decryptonite is a tool that uses heuristics and behavioural analysis to monitor for and stop ransomware.
 * **User Awareness Training** <a name="uat"></a>
-* **Web**
-	* [Practical Approach to Detecting and Preventing Web Application Attacks over HTTP2](https://www.sans.org/reading-room/whitepapers/protocols/practical-approach-detecting-preventing-web-application-attacks-http-2-36877)
-	* [AWS Lambda - IAM Access Key Disabler](https://github.com/te-papa/aws-key-disabler)
-		* The AWS Key disabler is a Lambda Function that disables AWS IAM User Access Keys after a set amount of time in order to reduce the risk associated with old access keys.
-	* [OWASP Secure Headers Project](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project)
-	* [The Open Guide to Amazon Web Services](https://github.com/open-guides/og-aws)
-		* A lot of information on AWS is already written. Most people learn AWS by reading a blog or a “getting started guide” and referring to the standard AWS references. Nonetheless, trustworthy and practical information and recommendations aren’t easy to come by. AWS’s own documentation is a great but sprawling resource few have time to read fully, and it doesn’t include anything but official facts, so omits experiences of engineers. The information in blogs or Stack Overflow is also not consistently up to date. This guide is by and for engineers who use AWS. It aims to be a useful, living reference that consolidates links, tips, gotchas, and best practices. It arose from discussion and editing over beers by several engineers who have used AWS extensively.
+* **Web Browsers**
+	* **User-Profiling**
+		* [Browser fingerprints for a more secure web - Julien Sobrier & Ping Yan(OWASP AppSecCali2019)](https://www.youtube.com/watch?v=P_nYYsaVi1w&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=30&t=0s)
 * **WAF** <a name="waf"></a>
+	* **General**
+		* [Practical Approach to Detecting and Preventing Web Application Attacks over HTTP2](https://www.sans.org/reading-room/whitepapers/protocols/practical-approach-detecting-preventing-web-application-attacks-http-2-36877)
+		* [OWASP Secure Headers Project](https://www.owasp.org/index.php/OWASP_Secure_Headers_Project)
 	* **NAXSI**
 		* [naxsi](https://github.com/nbs-system/naxsi)
 			* NAXSI is an open-source, high performance, low rules maintenance WAF for NGINX
@@ -442,6 +562,8 @@
 			* [Awesome Windows Domain Hardening](https://github.com/PaulSec/awesome-windows-domain-hardening)
 				* A curated list of awesome Security Hardening techniques for Windows.
 		* **Documentation**
+			* [Introducing the security configuration framework: A prioritized guide to hardening Windows 10 - Chris Jackson(MS)](https://www.microsoft.com/security/blog/2019/04/11/introducing-the-security-configuration-framework-a-prioritized-guide-to-hardening-windows-10/)
+			* [Windows security baselines - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-security-baselines)
 		* **Guides**
 			* [Enable Attack surface reduction(Win10)- docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction)
 			* [Harden windows IP Stack](https://www.reddit.com/r/netsec/comments/2sg80a/how_to_harden_windowsiis_ssltls_configuration/)
@@ -471,6 +593,21 @@
 			* In this article you will learn some best-practice suggestions for using service applications according to the IT security rule of least privilege.
 		* [Best Practice: Securing Windows Service Accounts and Privileged Access – Part 1 - SecurIT360](https://www.securit360.com/blog/best-practice-service-accounts/)
 		* [Best Practice: Securing Windows Service Accounts and Privileged Access – Part 2 - SecurIT360](https://www.securit360.com/blog/best-practice-service-accounts-p2/)
+* **Vulnerability Management**
+	* **101**
+        * US-CERT VulnMGMT FAQ: https://www.us-cert.gov/cdm/capabilities/vuln
+        * The Five Stages of Vulnerability Management(tripwire) - https://www.tripwire.com/state-of-security/vulnerability-management/the-five-stages-of-vulnerability-management/
+        * SANS - Implementing a Vulnerability Management Process: https://www.sans.org/reading-room/whitepapers/threats/implementing-vulnerability-management-process-34180
+        * Building a Model for Endpoint Security Maturity: https://www.tripwire.com/state-of-security/vulnerability-management/building-a-model-for-endpoint-security-maturity/
+    * **Measuring Maturity**
+        * Vulnerability Management Maturity Models – Trip Wire: https://traviswhitney.com/2016/05/02/vulnerability-management-maturity-models-trip-wire/
+        * Capability Maturity Model(Wikipedia): https://en.wikipedia.org/wiki/Capability_Maturity_Model
+    * **CVSS-related**
+        * Towards Improving CVSS - CMU SEI: https://resources.sei.cmu.edu/asset_files/WhitePaper/2018_019_001_538372.pdf
+        * When CVSS Fits and When it Doesn’t(NCC Group): https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2016/may/when-cvss-fits-and-when-it-doesnt/
+        * Don’t Substitute CVSS for Risk: Scoring System Inflates Importance of CVE-2017-3735: https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/dont-substitute-cvss-for-risk-scoring-system-inflates-importance-of-cve-2017-3735/
+        * Microsoft Exploitability Index: https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1
+
 
 
 

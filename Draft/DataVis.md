@@ -9,8 +9,14 @@
 
 
 
+* [Open Graph Viz Platform](https://gephi.org/)
+	* Gephi is the leading visualization and exploration software for all kinds of graphs and networks. Gephi is open-source and free.
 
+* https://arxiv.org/abs/1901.01769
 
+https://www.blackhillsinfosec.com/pyfunnels-data-normalization-for-infosec-workflows/
+https://github.com/packetvitality/PyFunnels
+https://www.sans.org/reading-room/whitepapers/OpenSource/pyfunnels-data-normalization-infosec-workflows-38785
 
 ### To Do
 * Split into Data visualization/Working with data

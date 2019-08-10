@@ -9,17 +9,88 @@
 
 
 
+* [Mental Models for Effective Searching - Chris Sanders](https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1555082140.pdf)
 
+https://www.endgame.com/blog/technical-blog/hunting-memory-net-attacks
+
+https://blog.redteam.pl/2019/08/threat-hunting-dns-firewall.html?m=1
+* [Windows 10, version 1809 basic level Windows diagnostic events and fields](https://docs.microsoft.com/en-gb/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1809#windows-error-reporting-events)
+
+* [The Role of Evidence Intention - Chris Sanders](https://rhinosecuritylabs.com/application-security/simplifying-api-pentesting-swagger-files/)
+* [$SignaturesAreDead = “Long Live RESILIENT Signatures” wide ascii nocase - Matthew Dunwoody, Daniel Bohannon(BruCON 0x0A)](https://www.youtube.com/watch?v=YGJaj6_3dGA)
+	* Signatures are dead, or so we're told. It's true that many items that are shared as Indicators of Compromise (file names/paths/sizes/hashes and network IPs/domains) are no longer effective. These rigid indicators break at the first attempt at evasion. Creating resilient detections that stand up to evasion attempts by dedicated attackers and researchers is challenging, but is possible with the right tools, visibility and methodical (read iterative) approach.   As part of FireEye's Advanced Practices Team, we are tasked with creating resilient, high-fidelity detections that run across hundreds of environments and millions of endpoints. In this talk we will share insights on our processes and approaches to detection development, including practical examples derived from real-world attacks.
+https://github.com/miriamxyra/EventList
+* [Different Approaches to Linux Monitoring - Kelly Shortridge](https://capsule8.com/blog/different-approaches-to-linux-monitoring/)
+* [Detecting the Elusive Active Directory Threat Hunting - Sean Metcalf(BSidesCharm2017)](https://www.youtube.com/watch?v=9Uo7V9OUaUw)
+	* Attacks are rarely detected even after months of activity. What are defenders missing and how could an attack by detected? This talk covers effective methods to detect attacker activity using the features built into Windows and how to optimize a detection strategy. The primary focus is on what knobs can be turned and what buttons can be pushed to better detect attacks. One of the latest tools in the offensive toolkit is ""Kerberoast"" which involves cracking service account passwords offline without admin rights. This attack technique is covered at length including the latest methods to extract and crack the passwords. Furthermore, this talk describes a new detection method the presenter developed. The attacker's playbook evolves quickly, defenders need to stay up to speed on the latest attack methods and ways to detect them. This presentation will help you better understand what events really matter and how to better leverage Windows features to track, limit, and detect attacks.
+	* [Slides](https://adsecurity.org/wp-content/uploads/2017/04/2017-BSidesCharm-DetectingtheElusive-ActiveDirectoryThreatHunting-Final.pdf)
+
+* [What’s in a name? TTPs in Info Sec - Robby Winchester](https://posts.specterops.io/whats-in-a-name-ttps-in-info-sec-14f24480ddcc)
+
+https://blog.kolide.com/monitoring-macos-hosts-with-osquery-ba5dcc83122d?gi=e42e60717e0
+https://blog.trailofbits.com/2017/11/09/how-are-teams-currently-using-osquery/
+https://blog.trailofbits.com/2017/12/21/osquery-pain-points/
+https://blog.trailofbits.com/2018/04/10/what-do-you-wish-osquery-could-do/
+https://github.com/davehull/Kansa
+* [WebDAV Traffic To Malicious Sites - Didier Stevens](https://blog.didierstevens.com/2017/11/13/webdav-traffic-to-malicious-sites/)
+
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor
+https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/
+https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/advanced-security-audit-policy-settings
+https://www.microsoft.com/en-us/download/confirmation.aspx?id=52630
+https://www.microsoft.com/en-us/download/details.aspx?id=50034
+
+
+* [Mental Models for Effective Searching - Chris Sanders](https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1555082140.pdf)
+
+
+
+
+
+https://posts.specterops.io/threat-hunting-with-jupyter-notebooks-part-4-sql-join-via-apache-sparksql-6630928c931e
 * **Osquery**
 	* [Using Osquery to Detect Reverse Shells on MacOS - Chris Long](https://www.clo.ng/blog/osquery_reverse_shell/)
 * **File Monitoring**
 	* [Practical PowerShell for IT Security, Part I: File Event Monitoring - varonis.com](https://www.varonis.com/blog/practical-powershell-for-it-security-part-i-file-event-monitoring/)
+* [Use Windows Event Forwarding to help with intrusion detection - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection)
 
+* [Threat Hunting: Fine Tuning Sysmon & Logstash to find Malware Callbacks C&C - Pablo Delgado](https://www.syspanda.com/index.php/2018/07/30/threat-hunting-fine-tuning-sysmon-logstash-find-malware-callbacks-cc/)
 
 * [Chronicles of a Threat Hunter: Hunting for In-Memory Mimikatz with Sysmon and ELK - Part I (Event ID 7) - Roberto Rodriguez](https://cyberwardog.blogspot.com/2017/03/chronicles-of-threat-hunter-hunting-for.html?m=1)
 * [Threat Hunting With Python Part 1 - Dan Gunter](https://dragos.com/blog/industry-news/threat-hunting-with-python-part-1/)
 * [Windows-Hunting](https://github.com/beahunt3r/Windows-Hunting)
 	* The Purpose of this repository is to aid windows threat hunters to look for some common artifacts during their day to day operations.
+* [Danger-Zone](https://github.com/woj-ciech/Danger-zone)
+	* Correlate data between domains, IPs and email addresses, present it as a graph and store everything into Elasticsearch and JSON files.
+https://medium.com/@maarten.goet/analyzing-your-microsoft-defender-atp-data-in-real-time-in-elk-using-the-new-streaming-api-c435d2943605
+
+https://blog.redteam.pl/2019/04/dns-based-threat-hunting-and-doh.html
+https://www.peerlyst.com/posts/security-monitoring-and-attack-detection-with-elasticsearch-logstash-and-kibana-martin-boller
+
+https://www.youtube.com/watch?v=SzbABydoz0k
+
+* https://github.com/Patrowl/PatrowlManager
+https://medium.com/@cryps1s/detecting-windows-endpoint-compromise-with-sacls-cd748e10950
+
+https://www.blackhat.com/docs/eu-17/materials/eu-17-Atkinson-A-Process-Is-No-One-Hunting-For-Token-Manipulation-wp.pdf
+
+https://github.com/kolide/fleet
+
+https://github.com/deviantony/docker-elk
+https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Hunting-for-reconnaissance-activities-using-LDAP-search-filters/ba-p/824726
+
+https://github.com/github/vulcanizer
+
+* [Hunting for Bad Apples – Part 1 - Richie Cyrus](https://securityneversleeps.net/2018/06/25/hunting-for-bad-apples-part-1/)
+
+http://penconsultants.com/blog/crown-jewels-monitoring-vs-mitigating/
+
+https://github.com/Yelp/elastalert
+
+
+
+
+
 
 
 ---------------------------

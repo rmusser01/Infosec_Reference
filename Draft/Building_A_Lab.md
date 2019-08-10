@@ -11,6 +11,26 @@
 
 
 
+https://github.com/foxlet/macOS-Simple-KVM
+Building a defensive Lab
+https://blog.secureideas.com/2019/05/automating-red-team-homelabs-part-2-build-pentest-destroy-and-repeat.html
+https://systemoverlord.com/2017/10/24/building-a-home-lab-for-offensive-security-basics.html
+https://github.com/digininja/leakyrepo
+https://github.com/chryzsh/DarthSidious
+
+* https://github.com/brimstone/windows-ova/blob/master/README.md
+
+https://github.com/DrDonk/unlocker
+	* https://github.com/DefectDojo/django-DefectDojo
+
+* [Hashicorp at Home part 2](https://www.mockingbirdconsulting.co.uk/blog/2019-01-08-hashicorp-at-home-part-2/)
+* [Hashicorp at Home - Code](https://github.com/mockingbirdconsulting/HashicorpAtHome)
+
+
+
+https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/
+
+https://github.com/RhinoSecurityLabs/cloudgoat
 
 
 
@@ -18,9 +38,6 @@
 -------------------------
 ### <a name="general"></a> General
 * This page is supposed to be a collection of resources for building a lab for performing various security related tasks. Generally, the idea is that you setup a local VM hypervisor software(VMware, Virtualbox) and then install a virtual machine to perform testing and analysis without any impact to your "physical" machine.
-
-
-
 
 
 
@@ -49,7 +66,6 @@
 	* [Set up your own malware analysis lab with VirtualBox, INetSim and Burp - Christophe Tafani-Dereeper](https://blog.christophetd.fr/malware-analysis-lab-with-virtualbox-inetsim-and-burp/)
 	* [CyRIS: Cyber Range Instantiation System](https://github.com/crond-jaist/cyris)
 		* CyRIS is a tool for facilitating cybersecurity training by automating the creation and management of the corresponding training environments (a.k.a, cyber ranges) based on a description in YAML format. CyRIS is being developed by the Cyber Range Organization and Design (CROND) NEC-endowed chair at the Japan Advanced Institute of Science and Technology (JAIST).
-
 * **VMs Designed to be Attacked**
 	* [List of VMs that are preconfigured virtual machines](http://www.amanhardikar.com/mindmaps/PracticeUrls.html)
 	* [The Hacker Games - Hack the VM before it hacks you](http://www.scriptjunkie.us/2012/04/the-hacker-games/)

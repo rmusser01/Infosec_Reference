@@ -7,6 +7,9 @@
 * [ChipWhisperer](http://www.newae.com/chipwhisperer)
 	* ChipWhisperer is the first ever open-source solution that provides a complete toolchain for research and analysis of embedded hardware security. Side Channel Power Analysis, Clock Glitching, VCC Glitching, and more are all possible with this unique tool.
 
+https://blog.xpnsec.com/total-meltdown-cve-2018-1038/
+
+https://misc0110.net/web/files/netspectre.pdf
 
 ---------------------
 ### Side-Channel Attacks

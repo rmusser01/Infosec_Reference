@@ -11,7 +11,12 @@
 - [Video Documentation](#video)
 - [Disclosure](#disclosure)
 
-
+https://github.com/pavanw3b/sh00t
+https://blogs.technet.microsoft.com/ecostrat/2010/07/22/coordinated-vulnerability-disclosure-bringing-balance-to-the-force/
+https://github.com/GhostManager/Ghostwriter
+https://posts.specterops.io/introducing-ghostwriter-part-1-61e7bd014aff
+* [The Ultimate Workflow for Writers Obsessed with Quality - Rob Hardy](https://betterhumans.coach.me/the-ultimate-workflow-for-writers-obsessed-with-quality-5b2810e1214b)
+* [The Elements Of Style: UNIX As Literature - Thomas Scoville](http://theody.net/elements.html)
 
 -----------------
 ### Start Here	
@@ -49,15 +54,22 @@
 			* Curated list of public penetration test reports released by several consulting firms and academic security groups
 		* [Penetration tests done by cure53, good examples of how a report should be done.](https://cure53.de/#publications )
 		* [Offensive Security 2013 Demo report](http://www.offensive-security.com/offsec/penetration-test-report-2013/)
-	* **Writing a Report**
-		* [Writing a Penetration Testing Report by SANS](https://www.sans.org/reading-room/whitepapers/bestprac/writing-penetration-testing-report-33343)
-		* [I \<3 Reporting - ](https://github.com/leesoh/iheartreporting)
-			* Reporting Tips for Penetration Testers
-		* [Penetration Testing Execution Standard section on Reporting](http://www.pentest-standard.org/index.php/Reporting)
-		* [Tips for Creating an Information Security Assessment Report Cheat Sheet](https://zeltser.com/security-assessment-report-cheat-sheet/)
-		* [HowTo: Write pentest reports the easy way](http://blog.dornea.nu/2014/05/20/howto-write-pentest-reports-the-easy-way/)
-		* [ The Penetration Testing Report - websecuritywatch](https://web.archive.org/web/20180201103151/http://www.websecuritywatch.com/the-penetration-testing-report/)
-		* [Excellent blog post breaking down the various parts, a must read](http://wwwwebsecuritywatch.com/the-penetration-testing-report/)
+	* **Writing a Penetration Test Report**
+		* **Articles**
+			* [Writing a Penetration Testing Report by SANS](https://www.sans.org/reading-room/whitepapers/bestprac/writing-penetration-testing-report-33343)
+			* [Penetration Testing Execution Standard section on Reporting](http://www.pentest-standard.org/index.php/Reporting)
+			* [Tips for Creating an Information Security Assessment Report Cheat Sheet](https://zeltser.com/security-assessment-report-cheat-sheet/)
+			* [HowTo: Write pentest reports the easy way](http://blog.dornea.nu/2014/05/20/howto-write-pentest-reports-the-easy-way/)
+			* [ The Penetration Testing Report - websecuritywatch](https://web.archive.org/web/20180201103151/http://www.websecuritywatch.com/the-penetration-testing-report/)
+			* [Excellent blog post breaking down the various parts, a must read](http://wwwwebsecuritywatch.com/the-penetration-testing-report/)
+			* [Your Reporting Matters: How to Improve Pen Test Reporting - Brian B. King](https://www.blackhillsinfosec.com/your-reporting-matters-how-to-improve-pen-test-reporting/)
+				* [Video Presentation](https://www.youtube.com/watch?v=NUueNT1svb8)
+		* **Talks**
+			* [Hack for Show, Report for Dough - Brian B. King(WWHF 2018)](https://www.youtube.com/watch?v=c_LBWqNDY0M)
+				* The fun part of pentesting is the hacking. But the part that makes it a viable career is the report. You can develop the most amazing exploit for the most surprising vulnerability, but if you can't document it clearly for the people who need to fix it, then you're just having fun. Which is fine! But if you want to make a career out of it, your reports need to be as clear and useful as your hacks are awesome. This talk shows simple techniques you can use to make your reports clear, useful, and brief. You'll see some before-and-after examples of a bad report made good, with clear explanations of what makes the difference. Those things will be useful no matter what tools you use to create reports. Then, if we have time, we'll look at some Microsoft Word hacks that will save you time and improve consistency.
+		* **Tools that can help**
+			* [I \<3 Reporting - ](https://github.com/leesoh/iheartreporting)
+				* Reporting Tips for Penetration Testers
 	* **Writing an Request for Proposal**
 		* [security-assessment-rfp-cheat-sheet](http://zeltser.com/security-assessments/security-assessment-rfp-cheat-sheet.html)
 	* **Templates**
@@ -66,11 +78,15 @@
 * **Meta**<a name="meta"></a>
 	* **LaTex**
 	* **Markdown**
-		* [What is Markdown?](http://daringfireball.net/projects/markdown/syntax)
-		* [Using markdown](https://guides.github.com/features/mastering-markdown/)
-		* [Markdown Syntax](http://daringfireball.net/projects/markdown/syntax)
-		* [Markdown basics](https://help.github.com/articles/markdown-basics/)
-		* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+		* **101**
+			* [What is Markdown?](http://daringfireball.net/projects/markdown/syntax)
+			* [Markdown Syntax](http://daringfireball.net/projects/markdown/syntax)
+			* [Markdown basics](https://help.github.com/articles/markdown-basics/)
+		* **Using**
+			* [Markdown For Penetration testers & Bug-bounty hunters - enciphers](https://enciphers.com/markdown-for-penetration-testers-bug-bounty-hunters/)
+			* [Using markdown](https://guides.github.com/features/mastering-markdown/)
+			* [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+		* **Tools**
 	* **Tools**
 		* [vim-wordy](https://github.com/reedes/vim-wordy/blob/master/README.markdown)
 			* wordy is not a grammar checker. Nor is it a guide to proper word usage. Rather, wordy is a lightweight tool to assist you in identifying those words and phrases known for their history of misuse, abuse, and overuse, at least according to usage experts.

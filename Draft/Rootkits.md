@@ -10,6 +10,25 @@
 * [Tools](#tools)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* https://github.com/katlogic/WindowsD
+https://www.youtube.com/watch?v=Ul8uPvlOsug&index=43&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3
+https://github.com/bytecode77/r77-rootkit
+
 -----------------
 ## Rootkits
 * **101**

@@ -19,6 +19,13 @@
 
 
 #### Sort
+* [Firefed](https://github.com/numirias/firefed)
+	* Firefed is a command-line tool to inspect Firefox profiles. It can extract saved passwords, preferences, addons, history and more. You may use it for forensic analysis, to audit your config for insecure settings or just to quickly extract some data without starting up the browser.
+* [Forensics: Monitor Active Directory Privileged Groups with PowerShell - Ashley McGlone](https://blogs.technet.microsoft.com/ashleymcglone/2014/12/17/forensics-monitor-active-directory-privileged-groups-with-powershell/)
+https://zeltser.com/security-incident-questionnaire-cheat-sheet/
+https://zeltser.com/security-incident-survey-cheat-sheet/
+https://zeltser.com/security-incident-log-review-checklist/
+* [Touch Screen Lexicon Forensics (TextHarvester/WaitList.dat) - Barnaby Skeggs](https://b2dfir.blogspot.com/2016/10/touch-screen-lexicon-forensics.html?m=1)
 * Sort sections alphabetically
 * Update ToC
 * [National Incident Management System -USA](https://www.fema.gov/national-incident-management-system)
@@ -31,6 +38,14 @@
 * [Investigating CloudTrail Logs - ](https://medium.com/starting-up-security/investigating-cloudtrail-logs-c2ecdf578911)
 * [Who Fixes That Bug? - Part One: Them! - Ryan McGeehan](https://medium.com/starting-up-security/who-fixes-that-bug-d44f9a7939f2)
 https://medium.com/starting-up-security/who-fixes-that-bug-f17d48443e21
+https://www.sans.org/score/law-enforcement-faq/
+https://www.sans.org/score/incident-forms/
+
+https://aboutdfir.com/
+https://forensixchange.com/posts/19_08_03_usb_storage_forensics_1/
+
+
+https://github.com/giMini/PowerMemory
 
 * [Sysmon - DFIR](https://github.com/MHaggis/sysmon-dfir)
 	* A curated list of resources for learning about deploying, managing and hunting with Microsoft Sysmon. Contains presentations, deployment methods, configuration file examples, blogs and additional github repositories.
@@ -41,15 +56,28 @@ https://medium.com/starting-up-security/who-fixes-that-bug-f17d48443e21
 
 * [Hacking Exposed Daily Blog #440: Windows 10 Notifications Database](http://www.hecfblog.com/2018/08/daily-blog-440-windows-10-notifications.html)
 
+
+* [Data recovery on dead micro SD card - HDD Recovery Services](https://www.youtube.com/watch?v=jjB6wliyE_Y&feature=youtu.be)
+
+
+
+
+
+
+
+
+
 * [SQLite-Parser](https://github.com/mdegrazia/SQLite-Deleted-Records-Parser)
 	* Script to recover deleted entries in an SQLite database
 
 * [Python Parser to Recover Deleted SQLite Database Data - az4n6](
 https://az4n6.blogspot.com/2013/11/python-parser-to-recover-deleted-sqlite.html)
-
+https://medium.com/@sroberts/introduction-to-dfir-d35d5de4c180
 https://github.com/demisto/COPS
-
+https://blog.1234n6.com/2018/10/available-artifacts-evidence-of.html
 https://www.incidentresponse.com/playbooks/
+https://windowsir.blogspot.com/2019/05/evtxecmd.html
+
 
 https://cert.societegenerale.com/en/publications.html
 

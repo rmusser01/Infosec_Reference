@@ -36,8 +36,6 @@
 - [Other](#other)
 - [Industry](#industry)
 
-
-
 ------------------------------------------------------
 ### Career Information<a name="career-info"></a>
 * **101**<a name="101"></a>
@@ -48,6 +46,11 @@
 	* [Strategy Letter I: Ben and Jerry’s vs. Amazon - Joel on Software](https://www.joelonsoftware.com/2000/05/12/strategy-letter-i-ben-and-jerrys-vs-amazon/)
 	* [Defining The Corporate Hierarchy - Erik Dietrich](https://daedtech.com/defining-the-corporate-hierarchy/)
 	* [The Beggar CEO and Sucker Culture - Erik Dietrich](https://daedtech.com/the-beggar-ceo-and-sucker-culture/)
+	* [One week of bugs - Dan Luu](http://danluu.com/everything-is-broken/)
+	* [I could do that in a weekend! - danluu.com](https://danluu.com/sounds-easy/)
+	* [Harvey Weinstein and the Common Knowledge Game - Ben Hunt](https://www.epsilontheory.com/harvey-weinstein-common-knowledge-game/)
+	* [Cybersecurity Career Pathway](https://www.cyberseek.org/pathway.html)
+	* [Tech Company Org Charts(Joke)](http://bonkersworld.net/organizational-charts)
 * **Business**<a name="business"></a>
 	* [When Everything That Counts Can’t Be Counted - Joshua M. Brown](https://thereformedbroker.com/2019/06/13/when-everything-that-counts-cant-be-counted/)
 	* [The Trillion-Dollar Vision of Dee Hock - Mitchell Waldrop(FastCompany)](https://www.fastcompany.com/27333/trillion-dollar-vision-dee-hock)
@@ -60,6 +63,8 @@
 	* [Your Job Title of Tomorrow: Efficiencer - Erik Dietrich](https://daedtech.com/your-job-title-of-tomorrow-efficiencer/)
 	* [Things I Learnt The Hard Way (in 30 Years of Software Development) - juliobiason.net](https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/)
 	* [Recommended Reading for Developers(2015) - blog.codinghorror.com]
+	* [Research Debt - Chris Olah, Shan Carter](https://distill.pub/2017/research-debt/)
+	* [A day at the park - mused](http://kiriakakis.net/comics/mused/a-day-at-the-park)
 * **Careers in Information Security**<a name="infosec-careers"></a>
 	* [NICE Cybersecurity Workforce Framework - NICCS.us-cert.gov](https://niccs.us-cert.gov/workforce-development/cyber-security-workforce-framework)
 	* [Q: Why Do Keynote Speakers Keep Suggesting That Improving Security Is Possible? A: Because Keynote Speakers Make Bad Life Decisions and Are Poor Role Models](https://www.usenix.org/conference/usenixsecurity18/presentation/mickens)
@@ -125,6 +130,9 @@
 		* Stock options, RSUs, job offers, and taxes—a detailed reference, including hundreds of resources, explained from the ground up and made to be improved over time.
 	* [Salary strategies everyone in tech already knows — but you don't - Candor](https://teamcandor.com/salary/guide/)
 	* [H1B Salary Database - h1bdata.info](https://h1bdata.info/index.php)
+	* [Compensation in 2019 New Grad Tech Offers - Jon Luca](https://blog.jonlu.ca/posts/tech-offers)
+	* [Ten Rules for Negotiating a Job Offer - Haseeb Qureshi](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
+	* [Negotiating Pattern Language - wiki.c2.com](http://wiki.c2.com/?NegotiatingPatternLanguage)
 * **Contracting & Consulting**<a name="contract"></a>
 	* [Why A Billable Hours Model Does not Work in Consulting - firmsconsulting.com](https://www.firmsconsulting.com/quarterly/billable-hours-strategy-consulting/)
 	* [How To Build Your Own Infosec Company - Mario Heiderich (BSides Lisbon 2018: Keynote)](https://www.youtube.com/watch?reload=9&v=UE5xS7-kFjE)
@@ -178,6 +186,7 @@
 	* [The Shirky Principle - Technium](https://kk.org/thetechnium/the-shirky-prin/)
 		* “Institutions will try to preserve the problem to which they are the solution.” — Clay Shirky
 	* [Law #8: The Law of Duality - ericsink.com](https://ericsink.com/laws/Law_08.html)
+	* [No Silver Bullet - fmiljang.co.uk](http://www.fmjlang.co.uk/blog/NoSilverBullet.html)
 * **Interview Prep**<a name="interview"></a>
 	* [offensiveinterview - WebBreacher](https://github.com/WebBreacher/offensiveinterview)
 		* Interview questions to screen offensive (red team/pentest) candidates
@@ -194,15 +203,28 @@
 	* [Raising the Bar - The Unconventional Interview Method That Really Works - socialtalent](https://www.socialtalent.com/blog/recruitment/raising-the-bar-unconventional-interview-method-really-works)
 	* [The Trouble With "Culture Fit" - Rich Moy](https://www.stackoverflowbusiness.com/blog/the-trouble-with-culture-fit)
 	* [Salary Negotiations: Win by Losing - Erik Dietrich](https://daedtech.com/salary-negotiations-win-by-losing/)
+	* [Guide to Guerilla Interviewing Discussion - C2](http://wiki.c2.com/?GuerrillaGuideToInterviewing)
 * **Management**<a name="mgmt"></a>
 	* [Up Or Out: Solving The IT Turnover Crisis - Alex Papadimoulis](http://thedailywtf.com/articles/Up-or-Out-Solving-the-IT-Turnover-Crisis)
 	* [The Wetware Crisis: the Dead Sea effect - Bruce F. Webster](http://brucefwebster.com/2008/04/11/the-wetware-crisis-the-dead-sea-effect/)
 	* [The Tyranny of Structurelessness - Jo freeman](https://www.jofreeman.com/joreen/tyranny.htm)
 	* [Vitality Curve](https://en.m.wikipedia.org/wiki/Vitality_curve)
 	* [Servant leadership - Wikipedia](https://en.wikipedia.org/wiki/Servant_leadership)
+	* ["The Loser" - Warning Signs You're Dating a Loser - Joseph M. Carver](https://www.drjoecarver.com/clients/49355/File/IdentifyingLosers.html)
+	* [Objectives and Key Results(OKR) - Wikipedia](https://en.wikipedia.org/wiki/OKR)
+	* [OKRs: The Fundamentals - niket](https://medium.com/startup-tools/okrs-5afdc298bc28)
+	* [Management by objectives - Wikipedia](https://en.wikipedia.org/wiki/Management_by_objectives)
+	* [Objectives, Goals, Strategies, and Measures - Wikipedia](https://en.wikipedia.org/wiki/OGSM)
+	* [SMART criteria - Wikipedia](https://en.wikipedia.org/wiki/SMART_criteria)
+	* [The Beginner's Guide to OKRs - Felipe Castro](https://felipecastro.com/en/okr/what-is-okr/)
+	* [HN Comment by walterbell on understanding managment](https://news.ycombinator.com/item?id=8881752)
 * **Management Skills**<a name="mgmt"></a>
 	* [Managers - rework.withgoogle.com](https://rework.withgoogle.com/subjects/managers/)
 	* [Manager Tools](https://www.manager-tools.com/)
+	* [31 Core Competencies Explained - Edward J. Cripe](https://www.workforce.com/2002/09/03/31-core-competencies-explained/)
+* **Marketing**
+	* [Marketing-for-Engineers](https://github.com/LisaDziuba/Marketing-for-Engineers)
+		* A curated collection of marketing articles & tools to grow your product.
 * **Meetings**<a name="meetings"></a>
 	* [Reaching Peak Meeting Efficiency: Meetings are a critical tool for building a diverse, high-performance team with shared values - Steven Sinofsky](https://medium.learningbyshipping.com/reaching-peak-meeting-efficiency-f8e47c93317a)
 	* [Maker's Schedule, Manager's Schedule - Paul Graham(2009)](http://www.paulgraham.com/makersschedule.html)
@@ -210,7 +232,10 @@
 	* **Burnout**
 		* [13 Surprising Signs of Burnout You May Be Missing - thriveglobal](https://thriveglobal.com/stories/13-surprising-signs-of-burnout-you-may-be-missing/)
 		* [Burnout and the Brain - Alexandra Michel(psychologicalscience.org)](https://www.psychologicalscience.org/observer/burnout-and-the-brain)
-		* [Maslach Burnout Inventory 3ed - Christina Maslach, Susan E. Jackson, Michael P. Leiter](https://www.researchgate.net/profile/Christina_Maslach/publication/277816643_The_Maslach_Burnout_Inventory_Manual/links/5574dbd708aeb6d8c01946d7.pdf)
+		* [The Maslach Burnout Inventory Manual - Christina Maslach, Michael P. Leiter, Susan E. Jackson](https://www.researchgate.net/publication/277816643_The_Maslach_Burnout_Inventory_Manual)
+		* [When Passion Leads to Burnout - Jennifer Moss](https://hbr.org/2019/07/when-passion-leads-to-burnout)
+		* [Managing Burnout - TaoSecurity](https://taosecurity.blogspot.com/2018/12/managing-burnout.html)
+		* [Only race cars should burnout - Brett Shavers](https://brettshavers.com/brett-s-blog/entry/only-race-cars-should-burnout)
 	* **Depression**
 		* [Living with Depression in Tech - Jonathan Zdziarski](https://www.zdziarski.com/blog/?p=7437)
 	* **General**
@@ -218,6 +243,7 @@
 		* [National Alliance on Mental Illness](https://www.nami.org/#)
 		* [Mental Health Hackers](https://www.mentalhealthhackers.org/)
 		* [Laziness Does Not Exist - But unseen barriers do - Devon Price](https://medium.com/@devonprice/laziness-does-not-exist-3af27e312d01)
+		* [#44CON: Establishing a Mental Health Toolbox - Dan Raywood](https://www.infosecurity-magazine.com/news/44con-mental-health-toolbox/)
 	* **Stress**
 		* [Stress management - Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/stress/art-20046037)
 		* [Understanding chronic stress - American Psychological Association](https://www.apa.org/helpcenter/understanding-chronic-stress)
@@ -233,18 +259,21 @@
 		* We're smart. We're incredibly tech savvy. We can rock some mad OSINT with our Google-Fu. We're 85% +-10% sure which part of the body a hat goes on. We think you can never have enough beard. WE THINK THAT'S ACCEPTABLE. The second in his multi-part series on building social prowess, this talk will focus on the inconvenient truth of your book always, always, always being judged by its cover, and how to deal with that with minimal effort so you can get back to sewing more pockets on your utilikilt. This talk covers both male and female situations, though it is primarily unisex. We'll get you set up with a core wardrobe and hygenic skillset so you'll be able to roll out of bed, spend minimal time "getting ready," rock the dreaded client-facing meeting or industry meetup, and get you back home where you can safely take your pants off.
 * **Non-Competes**<a name="noncomp"></a>
 	* [Why I Turned Down an AWS Job Offer  - Corey Quinn](https://www.lastweekinaws.com/blog/why-i-turned-down-an-aws-job-offer/)
-* **Non-Technical Skills**<a name="non-tech"></a>
-	* [Relearning the Art of Asking Questions - HBR](https://hbr.org/2015/03/relearning-the-art-of-asking-questions)
-	* [How To Ask Questions The Smart Way - Eric Raymond](http://www.catb.org/esr/faqs/smart-questions.html)
-* **Organizational Theory**<a name="orgtheory"></a>
-	* [Organizational Theory - Wikipedia](https://en.wikipedia.org/wiki/Organizational_theory)
-	* [The normalization of deviance in healthcare delivery - John Banja](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2821100/)
-	* [Resilience Engineering: Part I - Kitchen Soap](https://www.kitchensoap.com/2011/04/07/resilience-engineering-part-i/)
-	* [Bureaucratic drift - Wikipedia](https://en.wikipedia.org/wiki/Bureaucratic_drift)
-	* [Why are large companies so difficult to rescue (regarding bad internal technology) - Lawrence Krubner](http://www.smashcompany.com/business/why-are-large-companies-so-difficult-to-rescue-regarding-bad-internal-technology)
+* **Normalization of Deviance**
 	* [The normalization of deviance in healthcare delivery - John Banja](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2821100/)
 	* [Bedford and the Normalization of Deviance - Ron Rapp](https://www.rapp.org/archives/2015/12/normalization-of-deviance/)
 	* [Resilience In Complex Adaptive Systems - Richard Cook(Velocity NY 2013)](https://www.youtube.com/watch?v=PGLYEDpNu60)
+	* [Normalization of deviance - Dan Luu](https://danluu.com/wat/)
+	* [Resilience Engineering: Part I - Kitchen Soap](https://www.kitchensoap.com/2011/04/07/resilience-engineering-part-i/)
+* **Non-Technical Skills**<a name="non-tech"></a>
+	* [Relearning the Art of Asking Questions - HBR](https://hbr.org/2015/03/relearning-the-art-of-asking-questions)
+	* [How To Ask Questions The Smart Way - Eric Raymond](http://www.catb.org/esr/faqs/smart-questions.html)
+* **Organizational Theory/Stuff about Organizations**<a name="orgtheory"></a>
+	* [Organizational Theory - Wikipedia](https://en.wikipedia.org/wiki/Organizational_theory)
+	* [Bureaucratic drift - Wikipedia](https://en.wikipedia.org/wiki/Bureaucratic_drift)
+	* [Why are large companies so difficult to rescue (regarding bad internal technology) - Lawrence Krubner](http://www.smashcompany.com/business/why-are-large-companies-so-difficult-to-rescue-regarding-bad-internal-technology)
+	* [Leverage Points: Places to Intervene in a System - Donella Meadows](http://donellameadows.org/archives/leverage-points-places-to-intervene-in-a-system/)
+	* [How Software Companies Die - Orson Scott Card](http://www.call-with-current-continuation.org/rants/how-companies-die.txt)
 * **Performance Reviews**<a name="perf-review"></a>
 	* [A Beginner’s Guide to Giving Performance Reviews - Advice for new managers on the most effective way to deliver feedback(Rebecca Fishbein)](https://medium.com/s/story/a-beginners-guide-to-giving-performance-reviews-963aba23bd)
 * **Post-Mortems**<a name="postmort"></a>
@@ -254,6 +283,19 @@
 	* [Why “Agile” and especially Scrum are terrible - Michael O. Church](https://michaelochurch.wordpress.com/2015/06/)
 		* [Article Comments](https://michaelochurch.wordpress.com/2015/06/06/why-agile-and-especially-scrum-are-terrible/#comments)
 	* [Minimal Project Management - Hilton Lipschitz](https://hiltmon.com/blog/2016/03/05/minimal-project-management/)
+* **Remote Work**
+	* [awesome-remote-job](https://github.com/lukasz-madon/awesome-remote-job)
+		* A curated list of awesome remote jobs and resources.
+	* [All Remote - Gitlab](https://about.gitlab.com/company/culture/all-remote/)
+	* [Gitlab Team Handbook](https://about.gitlab.com/handbook/)
+	* [A Decade of Remote Work - Viktor Petersson](https://blog.viktorpetersson.com/remote-work/2019/05/18/a-decade-of-remote.html)
+	* [Remote Work Guides - Twist](https://twist.com/remote-work-guides/)
+	* [Tips from 16 years of working from home - a.wholelottanothing.org](https://a.wholelottanothing.org/2019/08/09/tips-from-16-years-of-working-from-home/)
+	* [A Year of Working Remotely - mikeindustries.com](https://mikeindustries.com/blog/archive/2019/08/a-year-of-working-remotely)
+	* [Why Working from Home is Good for Business - Mat Mullenweg](https://www.ted.com/talks/matt_mullenweg_why_working_from_home_is_good_for_business)
+		* As the popularity of remote working continues to spread, workers today can collaborate across cities, countries and even multiple time zones. How does this change office dynamics? And how can we make sure that all employees, both at headquarters and at home, feel connected? Matt Mullenweg, cofounder of Wordpress and CEO of Automattic (which has a 100 percent distributed workforce), shares his secrets.
+	* [Remote Work - Zapier](https://zapier.com/learn/remote-work/)
+		* Beginning as a series of posts on the Zapier blog, this book is an ongoing work about our experiences as a remote team, with much of the book written by Zapier CEO Wade Foster along with chapters from our team members and other remote employees. We'll update it periodically so you can learn how our thinking and processes change as we've grown from three to 200+ people and beyond, and we'll keep the older versions of each chapter archived so you can learn with us over time.
 * **Resume**<a name="resume"></a>
 	* [17 things that make this the perfect résumé - Áine Cain and Shayanne Gal(BusinessInsider)](https://www.businessinsider.com/why-this-is-an-excellent-resume-2013-11)
 	* [résumés - PracticalTypography](https://practicaltypography.com/resumes.html)
@@ -263,6 +305,11 @@
 	* [Impossible is Nothing - Resume](https://en.m.wikipedia.org/wiki/Impossible_Is_Nothing_(video_r%C3%A9sum%C3%A9))
 * **Testing(Certifications/Exams)**<a name="testing"></a>
 	* [Better GIAC Testing with Pancakes - H4cks4panckakes](https://tisiphone.net/2015/08/18/giac-testing/)
+	* [Self-Study SANS SEC503 GCIA - Gary Hoffman](https://www.linkedin.com/pulse/self-study-sans-sec503-gcia-gary-hoffman/)
+* **Training**
+	* [Employee Training: Paid or Unpaid? - Epstein Becker & Green, P.C.](https://www.wagehourblog.com/2014/01/articles/off-the-clock/employee-training-paid-or-unpaid/)
+	* [Does My Employer Have to Pay Me for Training? - Lisa Guerin](https://www.lawyers.com/legal-info/labor-employment-law/wage-and-hour-law/employer-paid-training-may-really-be-employee-paid.html)
+	* [Are Employers Required to Pay Employees for Training Courses? - Jules Halpern Associates](https://www.halpernadvisors.com/employers-required-pay-employees-training-courses/)
 * **Other**<a name="other"></a>
 	* [What senior engineers do: fix knowledge holes - Dan Moore](http://www.mooreds.com/wordpress/archives/3232)
 		* Worthwhile for the first comment in response to the article: "I don’t see anything “senior” about it, or even “engineer”.  Seeing problems and solving them is what everyone does.  Documenting the solution is one part of solving a problem.  An apprentice carpenter does these things, too, and so does a farmer, and a waiter.  Unfortunately, it’s not what most software companies reward, or how they operate.  Whenever I did this, my manager, at every software company I’ve worked for, would say:  “That’s cool, but you’re supposed to add the FooBar feature, and it needs to be done this Friday.  Don’t waste time with reverse-engineering, or documentation.  Just add one new field to the protocol somewhere.  We can clean it up Later(TM).”  This is Conway’s Law at work.  What sort of company encourages the creation of two critical components which are completely undocumented?  The sort of company which doesn’t reward documentation of critical components.  That’s not likely to change because the engineer that created them happened to leave.  (It took more time to reverse-engineer the protocol than it would have to document it when the knowledge was fresh.)  The PM and QA who allowed this to happen are still there, right?  What “Senior Engineer” really means is someone who’s spent enough time in the trenches to have earned a job title that allows them the latitude to make these sorts of improvements, and not have a PM question why they aren’t, instead, doing exactly what they were assigned.  Look back at the story.  Did the “senior engineer” go through proper channels to schedule a “reverse-engineer and document network protocol” task?  No, he clearly didn’t trust that it would happen.  Or maybe it was already there, but lowest priority (way below “fix CSS on IE”, of course).  What was his actual responsibility that week?  The story doesn’t say, but I don’t see any remarks about a PM breathing down his neck asking about the CSS fix he asked for (because that PM is the only user of the system, anywhere, of course, who uses IE and sees that particular bug).  Documentation is not on this week’s “Sprint”!  The process is fundamentally broken.  We hear fables like this about how life would be better if we all did something one way (you’ll get promoted to Senior Engineer!), while in practice we’re punished for doing so." 
@@ -272,12 +319,15 @@
 	* **Job Hunting Experiences**
 		* [Farewell, App Academy. Hello, Airbnb. (Part I) - Haseeb Qureshi](https://haseebq.com/farewell-app-academy-hello-airbnb-part-i/)
 * **Industry**<a name="Industry"></a>
+	* **Ageism in Tech**
+		* [REID v. GOOGLE INC - findlaw](https://caselaw.findlaw.com/ca-supreme-court/1534156.html)
+		* [The Apple engineer who moved Mac to Intel applied to work at the Genius Bar in an Apple store and was rejected - BuisinessInsider](https://www.businessinsider.com/jk-scheinberg-apple-engineer-rejected-job-apple-store-genius-bar-2016-9)
 	* **Shady things**
 		* [How Google Protected Andy Rubin, the ‘Father of Android’ - Daisuke Wakabayashi and Katie Benner(NYT)](https://www.nytimes.com/2018/10/25/technology/google-sexual-harassment-andy-rubin.html)
 	* **Wages**
 		* [Techtopus - Pando](https://pando.com/tag/techtopus/)
 		* [Newly unsealed documents show Steve Jobs' brutal response after getting a Google employee fired - Mark Ames](https://pando.com/2014/03/25/newly-unsealed-documents-show-steve-jobs-brutally-callous-response-after-getting-a-google-employee-fired/)
-
+		* [Revealed: Apple and Google's wage-fixing cartel involved dozens more companies, over one million employees - Mark Ames(Pando)](https://pando.com/2014/03/22/revealed-apple-and-googles-wage-fixing-cartel-involved-dozens-more-companies-over-one-million-employees/)
 
 
 

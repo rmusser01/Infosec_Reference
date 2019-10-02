@@ -65,6 +65,7 @@
 	* [Recommended Reading for Developers(2015) - blog.codinghorror.com]
 	* [Research Debt - Chris Olah, Shan Carter](https://distill.pub/2017/research-debt/)
 	* [A day at the park - mused](http://kiriakakis.net/comics/mused/a-day-at-the-park)
+	* [The Asshole Filter - Siderea](https://siderea.livejournal.com/1230660.html)
 * **Careers in Information Security**<a name="infosec-careers"></a>
 	* [NICE Cybersecurity Workforce Framework - NICCS.us-cert.gov](https://niccs.us-cert.gov/workforce-development/cyber-security-workforce-framework)
 	* [Q: Why Do Keynote Speakers Keep Suggesting That Improving Security Is Possible? A: Because Keynote Speakers Make Bad Life Decisions and Are Poor Role Models](https://www.usenix.org/conference/usenixsecurity18/presentation/mickens)

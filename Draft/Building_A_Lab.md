@@ -6,40 +6,17 @@
 - [Virtual Machines](#vm)
 - [Installing/Configuring Active Directory](#AD)
 - [Building a Pentest Lab](#pentest)
+- [Infrastructure Automation](#infra)
 
 
 
-
-
-https://github.com/foxlet/macOS-Simple-KVM
-Building a defensive Lab
-https://blog.secureideas.com/2019/05/automating-red-team-homelabs-part-2-build-pentest-destroy-and-repeat.html
-https://systemoverlord.com/2017/10/24/building-a-home-lab-for-offensive-security-basics.html
-https://github.com/digininja/leakyrepo
-https://github.com/chryzsh/DarthSidious
-
-* https://github.com/brimstone/windows-ova/blob/master/README.md
-
-https://github.com/DrDonk/unlocker
-	* https://github.com/DefectDojo/django-DefectDojo
-
-* [Hashicorp at Home part 2](https://www.mockingbirdconsulting.co.uk/blog/2019-01-08-hashicorp-at-home-part-2/)
-* [Hashicorp at Home - Code](https://github.com/mockingbirdconsulting/HashicorpAtHome)
-
-
-
-https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/
-
-https://github.com/RhinoSecurityLabs/cloudgoat
-
-
-
+* **To Do**
+	* Building a defensive Lab
+	* Infra Automation
 
 -------------------------
 ### <a name="general"></a> General
 * This page is supposed to be a collection of resources for building a lab for performing various security related tasks. Generally, the idea is that you setup a local VM hypervisor software(VMware, Virtualbox) and then install a virtual machine to perform testing and analysis without any impact to your "physical" machine.
-
-
 
 -------------------------
 ### <a name="vm"></a> Virtual Machines
@@ -58,6 +35,10 @@ https://github.com/RhinoSecurityLabs/cloudgoat
 	* [Windows Server Evaluation ISOs](https://www.microsoft.com/en-us/evalcenter/)
 	* [Vulnhub](https://www.Vulnhub.com)
 		* Vulnhub is a website dedicated to cataloging various vulnerable VMs from across the web. It also has a healthy community that creates and submits new VMs on a regular basis. As I write this now, I believe there is around 100 or so different VMs on Vulnhub, so you have a bit of variation.
+	* [macOS-Simple-KVM](https://github.com/foxlet/macOS-Simple-KVM)
+		* Documentation to set up a simple macOS VM in QEMU, accelerated by KVM.
+	* [unlocker](https://github.com/DrDonk/unlocker)
+		* VMware Workstation macOS
 * **Automated Lab/Machine Creation Tools**
 	* Security Scenario Generator (SecGen)](https://github.com/cliffe/SecGen)
 		* SecGen creates vulnerable virtual machines so students can learn security penetration testing techniques. Boxes like Metasploitable2 are always the same, this project uses Vagrant, Puppet, and Ruby to create randomly vulnerable virtual machines that can be used for learning or for hosting CTF events.
@@ -66,54 +47,70 @@ https://github.com/RhinoSecurityLabs/cloudgoat
 	* [Set up your own malware analysis lab with VirtualBox, INetSim and Burp - Christophe Tafani-Dereeper](https://blog.christophetd.fr/malware-analysis-lab-with-virtualbox-inetsim-and-burp/)
 	* [CyRIS: Cyber Range Instantiation System](https://github.com/crond-jaist/cyris)
 		* CyRIS is a tool for facilitating cybersecurity training by automating the creation and management of the corresponding training environments (a.k.a, cyber ranges) based on a description in YAML format. CyRIS is being developed by the Cyber Range Organization and Design (CROND) NEC-endowed chair at the Japan Advanced Institute of Science and Technology (JAIST).
-* **VMs Designed to be Attacked**
+* **VMs/Apps Designed to be Attacked**
 	* [List of VMs that are preconfigured virtual machines](http://www.amanhardikar.com/mindmaps/PracticeUrls.html)
 	* [The Hacker Games - Hack the VM before it hacks you](http://www.scriptjunkie.us/2012/04/the-hacker-games/)
 		* I have talked about counterattacks here before, and this system has implemented a number of aggressive anti-hacker measures.  In fact, this VM is downright evil. I am probably legally obligated to tell you that it will try to hack you. So if a calculator or message declaring your pwnedness pops up or shows up on your desktop, you asked for it. But don’t worry, it won’t steal your docs or rm you, it will just demonstrate compromise for the game.  To save precious bandwidth, this has been implemented in a minimal tinycore-based VM, and will require VirtualBox to run.
+	* **AWS**
+		* [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat)
+			* CloudGoat is Rhino Security Labs' "Vulnerable by Design" AWS deployment tool. It allows you to hone your cloud cybersecurity skills by creating and completing several "capture-the-flag" style scenarios. Each scenario is composed of AWS resources arranged together to create a structured learning experience. Some scenarios are easy, some are hard, and many offer multiple paths to victory. As the attacker, it is your mission to explore the environment, identify vulnerabilities, and exploit your way to the scenario's goal(s).
 	* **Docker**
 		* [Down by the Docker](https://www.notsosecure.com/vulnerable-docker-vm/)
 			* Ever fantasized about playing with docker misconfigurations, privilege escalation, etc. within a container? Download this VM, pull out your pentest hats and get started 
 		* [Vulhub - Some Docker-Compose files for vulnerabilities environment](https://github.com/vulhub/vulhub)
+		* [Vulnerable Docker VM - notsosecure](https://www.notsosecure.com/vulnerable-docker-vm/)
 	* **Exploit Development**
 		* [exploit_me](https://github.com/bkerler/exploit_me)
 			* Very vulnerable ARM application (CTF style exploitation tutorial for ARM, but portable to other platforms)
+	* **Git Repo**
+		* [Leaky Repo](https://github.com/digininja/leakyrepo)
 	* **Router**
 		* [iv-wrt](https://github.com/iv-wrt/iv-wrt)
 			* An Intentionally Vulnerable Router Firmware Distribution
 	* **Thick Client**
 		* [Damn Vulnerable Thick Client Application - Part 1 - Setup - Parsia's Den](https://parsiya.net/blog/2018-07-15-damn-vulnerable-thick-client-application---part-1---setup/)
 	* **Web Application Focused**
-		* [OWASP Broken Web Applications Project](https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project)
-			* OWASP Broken Web Applications Project is a collection of vulnerable web applications that is distributed on a Virtual Machine.
-		* [OWASP Juiceshop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project)
-			* [OWASP JuiceShop Gitbook walkthrough](https://www.gitbook.com/book/bkimminich/pwning-owasp-juice-shop/details)
-			* [Video Walk through by Sunny Wear](https://www.youtube.com/watch?v=zi3yDovd0RY&list=PL-giMT7sGCVI9T4rKhuiTG4EDmUz-arBo)
-		* [OWASP Damn Vulnerabl Web Sockets](https://github.com/interference-security/DVWS)
-			* OWASP Damn Vulnerable Web Sockets (DVWS) is a vulnerable web application which works on web sockets for client-server communication. The flow of the application is similar to DVWA. You will find more vulnerabilities than the ones listed in the application.
-		* [Damn Vulnerable Web App](https://github.com/ethicalhack3r/DVWA)
-			* Damn Vulnerable Web Application (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students & teachers to learn about web application security in a controlled class room environment.
-		* [Damn Small Vulnerable Web](https://github.com/stamparm/DSVW)
-			* Damn Small Vulnerable Web (DSVW) is a deliberately vulnerable web application written in under 100 lines of code, created for educational purposes. It supports majority of (most popular) web application vulnerabilities together with appropriate attacks.
-		* [vulnerable-api](https://github.com/mattvaldes/vulnerable-api)
-		* [django.nV](https://github.com/nVisium/django.nV)
-			* django.nV is a purposefully vulnerable Django application provided by nVisium.
-		* [node.nV](https://github.com/nVisium/node.nV)
-			* Intentionally Vulnerable node.js application
-		* [goat.js](https://github.com/nVisium/goat.js)
-			* Tutorial for Node.js security
-		* [MoneyX](https://github.com/nVisium/MoneyX)
-			* MoneyX is an intentionally vulnerable JSP application used for training developers in application security concepts.
-		* [grails_nV](https://github.com/nVisium/grails-nV)
-			* grails_nV is a vulnerable jobs listing website.
-		* [RailsGoat](https://github.com/OWASP/railsgoat)
-			* RailsGoat is a vulnerable version of the Ruby on Rails Framework from versions 3 to 5. It includes vulnerabilities from the OWASP Top 10, as well as some "extras" that the initial project contributors felt worthwhile to share. This project is designed to educate both developers, as well as security professionals.
-		* [File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
-		* [OWASP DevSlop Project](https://www.owasp.org/index.php/OWASP_DevSlop_Project)
-			* collection of DevOps-driven applications, specifically designed to showcase security catastrophes and vulnerabilities for use in security testing, software testing, learning and teaching for both developers and security professionals.
-
-
-
-
+		* **OWASP**
+			* [OWASP Broken Web Applications Project](https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project)
+				* OWASP Broken Web Applications Project is a collection of vulnerable web applications that is distributed on a Virtual Machine.
+			* [OWASP Juiceshop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project)
+				* [OWASP JuiceShop Gitbook walkthrough](https://www.gitbook.com/book/bkimminich/pwning-owasp-juice-shop/details)
+				* [Video Walk through by Sunny Wear](https://www.youtube.com/watch?v=zi3yDovd0RY&list=PL-giMT7sGCVI9T4rKhuiTG4EDmUz-arBo)
+			* [OWASP Damn Vulnerable Web Sockets](https://github.com/interference-security/DVWS)
+				* OWASP Damn Vulnerable Web Sockets (DVWS) is a vulnerable web application which works on web sockets for client-server communication. The flow of the application is similar to DVWA. You will find more vulnerabilities than the ones listed in the application.
+			* [NodeGoat](https://github.com/OWASP/NodeGoat)
+				* Being lightweight, fast, and scalable, Node.js is becoming a widely adopted platform for developing web applications. This project provides an environment to learn how OWASP Top 10 security risks apply to web applications developed using Node.js and how to effectively address them.
+			* [OWASP DevSlop Project](https://www.owasp.org/index.php/OWASP_DevSlop_Project)
+				* collection of DevOps-driven applications, specifically designed to showcase security catastrophes and vulnerabilities for use in security testing, software testing, learning and teaching for both developers and security professionals.
+		* **General**
+			* [Damn Vulnerable Web App](https://github.com/ethicalhack3r/DVWA)
+				* Damn Vulnerable Web Application (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students & teachers to learn about web application security in a controlled class room environment.
+			* [Damn Small Vulnerable Web](https://github.com/stamparm/DSVW)
+				* Damn Small Vulnerable Web (DSVW) is a deliberately vulnerable web application written in under 100 lines of code, created for educational purposes. It supports majority of (most popular) web application vulnerabilities together with appropriate attacks.
+			* [File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
+		* **API**
+			* [vulnerable-api](https://github.com/mattvaldes/vulnerable-api)
+		* **Django**
+			* [django.nV](https://github.com/nVisium/django.nV)
+				* django.nV is a purposefully vulnerable Django application provided by nVisium.
+		* **JSP**
+			* [MoneyX](https://github.com/nVisium/MoneyX)
+				* MoneyX is an intentionally vulnerable JSP application used for training developers in application security concepts.
+		* **Node.js**
+			* [node.nV](https://github.com/nVisium/node.nV)
+				* Intentionally Vulnerable node.js application
+			* [goat.js](https://github.com/nVisium/goat.js)
+				* Tutorial for Node.js security
+			* [Damn Vulnerable NodeJS Application(DVNA)](https://github.com/appsecco/dvna)
+				* Damn Vulnerable NodeJS Application (DVNA) is a simple NodeJS application to demonstrate OWASP Top 10 Vulnerabilities and guide on fixing and avoiding these vulnerabilities. The fixes branch will contain fixes for the vulnerabilities. Fixes for vunerabilities OWASP Top 10 2017 vulnerabilities at fixes-2017 branch.
+		* **Ruby**
+			* [grails_nV](https://github.com/nVisium/grails-nV)
+				* grails_nV is a vulnerable jobs listing website.
+			* [RailsGoat](https://github.com/OWASP/railsgoat)
+				* RailsGoat is a vulnerable version of the Ruby on Rails Framework from versions 3 to 5. It includes vulnerabilities from the OWASP Top 10, as well as some "extras" that the initial project contributors felt worthwhile to share. This project is designed to educate both developers, as well as security professionals.
+		* **SSO**
+			* [Vulnerable SSO](https://github.com/dogangcr/vulnerable-sso)
+				* Vulnerable SSo is focused on single sign on related vulnerabilities. If you want to learn, you should check this and contribute this project. VulnSSO tool is focused on sso attacks. Nowadays most of the company uses their own implementation for sso solutions. Some of the bug hunters found really good vulnerability on the big company. There are some tools(dvwa and others .. ) that contains vulnerability. They don't have any support for sso vulnerability. Our focus is only sso related bugs. VulnSSO is training tool.It will contain redirect uri vulnerability , XXE on saml request and many others.
 
 
 
@@ -129,6 +126,9 @@ https://github.com/RhinoSecurityLabs/cloudgoat
 	* [Step-By-Step: Setting up Active Directory in Windows Server 2016 - blogs.technet](https://blogs.technet.microsoft.com/canitpro/2017/02/22/step-by-step-setting-up-active-directory-in-windows-server-2016/)
 	* [Pentest Home Lab - 0x2 - Building Your AD Lab on Premises-SethSec](https://sethsec.blogspot.com/2017/06/pentest-home-lab-0x2-building-your-ad.html)
 	* [Building and Attacking an Active Directory lab with PowerShell - 1337red](https://1337red.wordpress.com/building-and-attacking-an-active-directory-lab-with-powershell/)
+	* [DarthSidious](https://github.com/chryzsh/DarthSidious)
+		* Building an Active Directory domain and hacking it
+	* [Creating a SCCM Lab: Part 1 - Setting up AD](https://www.youtube.com/watch?v=4zwQsQEtrwY&feature=share)
 	* **AWS**
 		* [Active Directory Domain Services on the AWS Cloud: Quick Start Reference Deployment - docs.aws](https://docs.aws.amazon.com/quickstart/latest/active-directory-ds/welcome.html)
 		* [Active Directory Domain Services on AWS](https://aws.amazon.com/quickstart/architecture/active-directory-ds/)
@@ -141,6 +141,7 @@ https://github.com/RhinoSecurityLabs/cloudgoat
 			* A PowerShell script that aims to have a fully configured domain built in under 10 minutes, but also apply security configuration and hardening.
 		* [Invoke-ADLabDeployer](https://github.com/outflanknl/Invoke-ADLabDeployer)
 			* Automated deployment of Windows and Active Directory test lab networks. Useful for red and blue teams.
+			* [Blogpost](https://outflank.nl/blog/2018/03/30/automated-ad-and-windows-test-lab-deployments-with-invoke-adlabdeployer/))
 	* **User Generation**
 		* [ADImporter](https://github.com/curi0usJack/ADImporter)
 			* When you need to simulate a real Active Directory with thousands of users you quickly find that creating realistic test accounts is not trivial. Sure enough, you can whip up a quick PowerShell one-liner that creates any number of accounts, but what if you need real first and last names? Real (existing) addresses? Postal codes matching phone area codes? I could go on. The point is that you need two things: input files with names, addresses etc. And script logic that creates user accounts from that data. This blog post provides both.
@@ -149,12 +150,6 @@ https://github.com/RhinoSecurityLabs/cloudgoat
 	* **User Simulation**
 		* [sheepl](https://github.com/SpiderLabs/sheepl)
 			* sheepl is a tool that aims to bridge the gap by emulating the behaviour that people normally undertake within a network environment. Using Python3 and AutoIT3 the output can be compiled into a standalone executable without any other dependancies that when executed on an Windows endpoint, executes a set of tasks randomly over a chosen time frame.
-
-
-
-
-
-
 
 
 -------------------------
@@ -188,3 +183,22 @@ https://github.com/RhinoSecurityLabs/cloudgoat
 	* **Azure**
 		* [Building a security lab in Azure - blogs.technet](https://blogs.technet.microsoft.com/motiba/2018/05/11/building-a-security-lab-in-azure/)
 	* **GCP**
+
+
+
+-------------------------
+### <a name="defense"></a> Building a Defensive Lab
+* **Guides**
+* **Tools**
+* **In the Clouds**
+	* [Securing Azure Infrastructure - Hands on Lab Guide - Adam Raffle, Tom Wilde](https://github.com/Araffe/azure-security-lab)
+
+
+
+-------------------------------------------------------
+### Infrastructure Automation <a name="infra"></a>
+* **Infrastructure Automation**
+	* [An Intro to Terraform with Azure, PFSense, and Windows 10 - FortyNorth Security](https://www.fortynorthsecurity.com/an-intro-to-terraform-with-azure-pfsense-and-windows-10/)
+	* [Automating Red Team Homelabs: Part 2 – Build, Pentest, Destroy, and Repeat - Alex Rodriguez](https://blog.secureideas.com/2019/05/automating-red-team-homelabs-part-2-build-pentest-destroy-and-repeat.html)
+	* [Self-Installing Windows OVA](https://github.com/brimstone/windows-ova)
+		* This is an Virtual Machine in OVA format that will install Windows ontop of itself. I wrote this as an alternative to packer. This OVA basically downloads the evaluation version of the Windows version you select to one drive as installation media and then installs onto the primary drive. After this is done, the smaller secondary drive can be discarded to save disk space.

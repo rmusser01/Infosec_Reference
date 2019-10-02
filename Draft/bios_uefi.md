@@ -20,7 +20,12 @@
 * **To-Do**
 	* Add rowhammer related materials
 
-https://i.blackhat.com/USA-19/Wednesday/us-19-Hasarfaty-Behind-The-Scenes-Of-Intel-Security-And-Manageability-Engine.pdf
+* [GOD MODE UNLOCKED - Hardware Backdoors in x86 CPUs - Christopher Domas](https://www.youtube.com/watch?v=_eSAF_qT_FY&feature=youtu.be)
+	* This talk will demonstrate what everyone has long feared but never proven: there are hardware backdoors in some x86 processors, and they're buried deeper than we ever imagined possible. While this research specifically examines a third-party processor, we use this as a stepping stone to explore the feasibility of more widespread hardware backdoors.
+
+* [Behind the Scenes of Intel Security and Manageability Engine - Shai Hasarfaty, Yanai Moyal](https://i.blackhat.com/USA-19/Wednesday/us-19-Hasarfaty-Behind-The-Scenes-Of-Intel-Security-And-Manageability-Engine.pdf)
+
+https://www.peerlyst.com/posts/the-everything-about-chips-uefi-and-firmware-security-wiki-chiheb-chebbi?trk=search_page_search_result
 
 BMC Related
 * [The Unbearable Lightness of BMCs | Matias Soler & Nico Waisman (BHUSA2018)](https://www.youtube.com/watch?v=mosERjbrgdo&t=0s&list=PLH15HpR5qRsVAXGmSVfjWrGtGLJjIJuGe&index=101)
@@ -35,28 +40,31 @@ BMC Related
 	* Unmonitored and unpatched BMC (remote administration hardware feature for servers) are an almost certain source of chaos. They have the potential to completely undermined the security of complex network infrastructures and data centers. Our on-going effort to analyze HPE iLO systems (4 and 5) resulted in the discovery of many vulnerabilities, the last one having the capacity to fully compromise the iLO chip from the host system itself. This talk will show how a combination of these vulnerabilities can turn an iLO BMC into a revolving door between an administration network and the production network.
 	* [Slides](	https://www.synacktiv.com/ressources/zeronights_2018_turning_your_bmc_into_a_revolving_door.pdf)
 
+
 https://translate.google.com/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=http%3A%2F%2Fblog.ptsecurity.ru%2F2018%2F01%2Fintel-me.html&edit-text=
-https://www.welivesecurity.com/2018/09/27/lojax-first-uefi-rootkit-found-wild-courtesy-sednit-group/
-https://www.welivesecurity.com/wp-content/uploads/2018/09/ESET-LoJax.pdf
+
 * [How Does an Intel Processor Boot? - BinaryDebt](https://binarydebt.wordpress.com/2018/10/06/how-does-an-x86-processor-boot/)
 * [Understanding L1 Terminal Fault aka Foreshadow: What you need to know - Jon Masters](https://www.redhat.com/en/blog/understanding-l1-terminal-fault-aka-foreshadow-what-you-need-know)
 * [GuardION - Android GuardION patches to mitigate DMA-based Rowhammer attacks on ARM](https://github.com/vusec/guardion)
 	* This software is the open-source component of our paper "GuardION: Practical Mitigation of DMA-based Rowhammer Attacks on ARM", published in the Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA) 2018. It allows you to patch an Android kernel so that DMA allocations are guarded with empty rows, resulting in the isolation of bitflips and thus mitigation of Drammer-like attacks.
 
-https://firmwaresecurity.com/2019/04/22/modern-secure-boot-attacks-slides-available/
+Intel VISA
+	* https://www.blackhat.com/asia-19/briefings/schedule/#intel-visa-through-the-rabbit-hole-13513
+	* https://www.zdnet.com/article/researchers-discover-and-abuse-new-undocumented-feature-in-intel-chipsets/
+	* https://www.theregister.co.uk/2019/03/29/intel_visa_hack/
+	* https://github.com/ptresearch/IntelVISA-BH2019
 
-	* **Rowhammer**
-		* [Exploiting the DRAM rowhammer bug to gain kernel privileges](https://googleprojectzero.blogspot.com/2015/03/exploiting-dram-rowhammer-bug-to-gain.html)
-		* [Row hammer - Wikipedia](https://en.wikipedia.org/wiki/Row_hammer)
-		* [Another Flip in the Wall of Rowhammer Defenses](https://arxiv.org/abs/1710.00551)
-		* [rowhammer.js](https://github.com/IAIK/rowhammerjs)
-			* Rowhammer.js - A Remote Software-Induced Fault Attack in JavaScript
-		* [Rowhammer.js: A Remote Software-Induced Fault Attack in JavaScript](https://link.springer.com/chapter/10.1007/978-3-319-40667-1_15)
-		* [Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors](https://www.ece.cmu.edu/~safari/pubs/kim-isca14.pdf)
-			* Abstract. Memory isolation is a key property of a reliable and secure computing system — an access to one memory ad- dress should not have unintended side e ects on data stored in other addresses. However, as DRAM process technology scales down to smaller dimensions, it becomes more diffcult to prevent DRAM cells from electrically interacting with each other. In this paper, we expose the vulnerability of commodity DRAM chips to disturbance errors. By reading from the same address in DRAM, we show that it is possible to corrupt data in nearby addresses. More specifically, activating the same row in DRAM corrupts data in nearby rows. We demonstrate this phenomenon on Intel and AMD systems using a malicious program that generates many DRAM accesses. We induce errors in most DRAM modules (110 out of 129) from three major DRAM manufacturers. From this we conclude that many deployed systems are likely to be at risk. We identify the root cause of disturbance errors as the repeated toggling of a DRAM row’s wordline, which stresses inter-cell coupling e ects that accelerate charge leakage from nearby rows. We provide an extensive characterization study of disturbance errors and their behavior using an FPGA-based testing plat- form. Among our key findings, we show that (i) it takes as few as 139K accesses to induce an error and (ii) up to one in every 1.7K cells is susceptible to errors. After examining var- ious potential ways of addressing the problem, we propose a low-overhead solution to prevent the errors.
+* [Attacking Hardware Root of Trust from UEFI Firmware - Alex Matrosov(OffensiveCon19)](https://www.youtube.com/watch?v=Ap-2CnoyBek)
+	* [Slides(from BHASIA19](https://github.com/REhints/Publications/blob/f1f305eff156267e194e941d32caf7cc2bfc053b/Conferences/Bypassing%20Hardware%20Root%20of%20Trust/BHASIA2019_matrosov_final.pdf)
+
 * [CPU security bugs caused by speculative execution](https://github.com/marcan/speculation-bugs)
 	* This repo is an attempt to collect information on the class of information disclosure vulnerabilities caused by CPU speculative execution that were disclosed on January 3rd, 2018.
 
+
+* [UEFI Resources](https://github.com/uefitech/resources)
+	* One-stop shop for UEFI/BIOS specifications/utilities by UEFI.Tech community
+* [uefi_specs_personal_collections](https://github.com/xiaopangzi313/uefi_specs_personal_collections)
+	* "This repo contains some UEFI learning documents collected by individuals. Although these documents are not comprehensive enough, they are still helpful for beginner developers."
 	
 #### End Sort
 

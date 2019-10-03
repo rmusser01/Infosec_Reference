@@ -587,7 +587,7 @@
         * When CVSS Fits and When it Doesn’t(NCC Group): https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2016/may/when-cvss-fits-and-when-it-doesnt/
         * Don’t Substitute CVSS for Risk: Scoring System Inflates Importance of CVE-2017-3735: https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/dont-substitute-cvss-for-risk-scoring-system-inflates-importance-of-cve-2017-3735/
         * Microsoft Exploitability Index: https://www.microsoft.com/en-us/msrc/exploitability-index?rtc=1
-
+		* [Towards Improving CVSS - J.M. Spring, E. Hatleback, A. Householder, A. Manion, D. Shick - CMU](https://resources.sei.cmu.edu/asset_files/WhitePaper/2018_019_001_538372.pdf)
 
 ### Sort
 

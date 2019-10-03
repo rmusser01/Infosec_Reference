@@ -30,6 +30,10 @@ To do:
 	Code injection stuff
 	OS X and Linux stuff
 
+
+
+
+
 ---------------
 ## <a name="privesc"></a>Privilege Escalation 
 
@@ -75,7 +79,6 @@ To do:
 	* **Docker**
 	* **Dirty COW**
 		* [DirtyCow.ninja](https://dirtycow.ninja/)
-
 	* **Huge Dirty COW**
 		* [“Huge Dirty COW” (CVE-2017–1000405) The incomplete Dirty COW patch - Eylon Ben Yaakov](https://medium.com/bindecy/huge-dirty-cow-cve-2017-1000405-110eca132de0)
 		* [HugeDirtyCow PoC](https://github.com/bindecy/HugeDirtyCowPOC)
@@ -1322,6 +1325,7 @@ To do:
 		* [PowerPriv](https://github.com/G0ldenGunSec/PowerPriv)
 			* A powershell implementation of PrivExchange by `@_dirkjan` (original code found here: https://github.com/dirkjanm/PrivExchange/blob/master/privexchange.py) Useful for environments on which you cannot run python-based applications, have user credentials, or do not want to drop files to disk. Will cause the target exchange server system account to attempt to authenticate to a system of your choice.
 * **Forests**
+	* [How Domain and Forest Trusts Work - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc773178(v=ws.10))
 	* [How NOT to use the PAM trust - Leveraging Shadow Principals for Cross Forest Attacks - Nikhil Mittal](http://www.labofapenetrationtester.com/2019/04/abusing-PAM.html)
 * **Getting(Hunting) Domain User(s)**
 	* [Derivative Local Admin - sixdub](http://www.sixdub.net/?p=591)
@@ -1563,6 +1567,9 @@ To do:
 	* [Playing with Relayed Credentials - SecureAuth](https://www.secureauth.com/blog/playing-relayed-credentials)
 	* [Credential Assessment: Mapping Privilege Escalation at Scale - Matt Weeks(Hack.lu 2016)](https://www.youtube.com/watch?v=tXx6RB0raEY)
 		* In countless intrusions from large retail giants to oil companies, attackers have progressed from initial access to complete network compromise. In the aftermath, much ink is spilt and products are sold on how the attackers first obtained access and how the malware they used could or could not have been detected, while little attention is given to the credentials they found that turned their access on a single-system into thousands more. This process, while critical for offensive operations, is often complex, involving many links in the escalation chain composed of obtaining credentials on system A that grant access to system B and credentials later used on system B that grant further access, etc. We’ll show how to identify and combat such credential exposure at scale with the framework we developed. We comprehensively identify exposed credentials and automatically construct the compromise chains to identify maximal access and privileges gained, useful for either offensive or defensive purposes.
+* **Persistence**
+	* [The Active Directory Botnet - Ty Miller, Paul Kalinin(BHUSA 17)](https://www.blackhat.com/docs/us-17/wednesday/us-17-Miller-The-Active-Directory-Botnet.pdf)
+	* [Command and Control Using Active Directory - harmj0y](http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/)
 * **Privilege Escalation**
 	* [Gaining Domain Admin from Outside Active Directory - markitzeroday.com](https://markitzeroday.com/pass-the-hash/crack-map-exec/2018/03/04/da-from-outside-the-domain.html)
 	* [ADAPE-Script](https://github.com/hausec/ADAPE-Script)

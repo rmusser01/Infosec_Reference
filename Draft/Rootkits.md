@@ -1,33 +1,9 @@
 # Rootkits
+
+----------------------------------
 ## Table of Contents
+- []()
 
-* [Cull](#cull)
-* [Developing](#dev)
-* [Identifying/Defending Against](#id)
-* [Talks/Videos](#talks)
-* [Writeups](#writeups)
-* [Papers](#papers)
-* [Tools](#tools)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* https://github.com/katlogic/WindowsD
-https://www.youtube.com/watch?v=Ul8uPvlOsug&index=43&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3
-https://github.com/bytecode77/r77-rootkit
 
 -----------------
 ## Rootkits
@@ -83,6 +59,9 @@ https://github.com/bytecode77/r77-rootkit
 		* [Masochist](https://github.com/squiffy/Masochist)
 			* Masochist is a framework for creating XNU based rootkits. Very useful in OS X and iOS security research.
 		* [Revisiting Mac OS X Kernel Rootkits - fG! <phrack@put.as>-](http://phrack.org/issues/69/7.html)
+	* **UEFI**
+		* [LoJax: First UEFI rootkit found in the wild, courtesy of the Sednit group - ESET](https://www.welivesecurity.com/2018/09/27/lojax-first-uefi-rootkit-found-wild-courtesy-sednit-group/)
+		* [LOJAX: First UEFI rootkit found in the wild, courtesy of the Sednit group](https://www.welivesecurity.com/wp-content/uploads/2018/09/ESET-LoJax.pdf)
 	* **Windows**
 		* **Educational**
 			* [NTIllusion: A portable Win32 userland rootkit - Kdm](http://phrack.org/issues/62/12.html)
@@ -149,3 +128,24 @@ https://github.com/bytecode77/r77-rootkit
 		* [WindowsRegistryRootkit](https://github.com/Cr4sh/WindowsRegistryRootkit)
 			* Kernel rootkit, that lives inside the Windows registry value data. By Oleksiuk Dmytro (aka Cr4sh) 
 			* Rootkit uses the zero day vulnerability in win32k.sys (buffer overflow in function win32k!bInitializeEUDC()) to get the execution at the OS startup.
+
+
+
+#### Sort
+* [WoW64 internals...re-discovering Heaven's Gate on ARM - wbenny](https://wbenny.github.io/2018/11/04/wow64-internals.html)
+* [5 Days To Virtualization: A Series On Hypervisor Development - Daax Rynd](https://revers.engineering/7-days-to-virtualization-a-series-on-hypervisor-development/)
+* [Day 2: Entering VMX Operation, Explaining Implementation Requirements - Daax Rynd](https://revers.engineering/day-2-entering-vmx-operation/)
+* [Superseding Driver Altitude Checks On Windows - Daax Rynd](https://revers.engineering/superseding-driver-altitude-checks-on-windows/)
+* [System call dispatching on Windows ARM64 - Bruce Dang](https://gracefulbits.com/2018/07/26/system-call-dispatching-for-windows-on-arm64/)
+* [Find which process is using the microphone, from a kernel-mode driver - Bruce Dang](https://gracefulbits.com/2018/08/13/find-which-process-is-using-the-microphone-from-a-kernel-mode-driver/)
+* [Windows Notification Facility: Peeling the Onion of the Most Undocumented Kernel Attack Surface Yet - Gabrielle Viala, Alex Ionescu](https://www.youtube.com/watch?v=MybmgE95weo)
+
+* [WindowsD](https://github.com/katlogic/WindowsD)
+	* Disable DSE and WinTcb (without breaking DRM)
+* [Windows Rootkit Development Python prototyping to kernel level - RJ McDown, Joshua Theimer(Derbycon2017)](https://www.youtube.com/watch?v=Ul8uPvlOsug&index=43&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
+
+* [DSEFix](https://github.com/hfiref0x/DSEFix)
+	* Windows x64 Driver Signature Enforcement Overrider
+* [Some fun with vintage bugs and driver signing enforcement - kat.lua](http://kat.lua.cz/posts/Some_fun_with_vintage_bugs_and_driver_signing_enforcement/#more)
+* [r77 Rootkit](https://github.com/bytecode77/r77-rootkit)
+	* This work in progress ring 3 rootkit hides processes, files and directories from applications in user mode. Future implementation on modules, registry, services and possibly other entities is planned.

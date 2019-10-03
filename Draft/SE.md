@@ -10,53 +10,50 @@
 - [Tools](#tools)
 
 
-* [Make Vishing Suck Less - Jonathan Stines(Layer8 2018)](https://www.youtube.com/watch?v=4DphohJvnx8&index=5&list=UUynWOUeHAOflEQtJnrZpkNA)
-	* The purpose of this talk is to describe methodologies which one could follow when performing telephone pretexting. Social dynamics have changed over the years causing the entry barrier to being successful with Vishing more difficult and talking on the telephone less comfortable. The aim of this speech will be to crack the code for a newb getting started so he or she can hit the ground running, jump on the horn, and start pwning some folks like it's 1989.
 
-------------------------
-### <a name="articles">Articles
-* [Source Handling](http://guerrillamerica.com/2014/01/source-handling-part-one/)
-* [Source Recruitment](http://guerrillamerica.com/2013/12/source-recruitment/)
-* [List of the 48 Laws of Power](http://cgt411.tech.purdue.edu/covey/48_laws_of_power.htm)
-* [Influence: Book notes](http://www.2uo.de/influence/)
-* [DiSC Overview](https://www.discprofile.com/what-is-disc/overview/)
-	* DiSC is a personal assessment tool used to improve work productivity, teamwork and communication. DiSC is non-judgmental and helps people discuss their behavioral differences.
-* [The Social Engineering Framework](http://www.social-engineer.org/framework/general-discussion/)
-	* The Social Engineering Framework is a searchable information resource for people wishing to learn more about the psychological, physical and historical aspects of social engineering. 
-* [Phishing Family Tree Now: A Social Engineering Odyssey](https://www.blackhillsinfosec.com/?p=5629)
-* [The Man Who Captures Criminals for the D.E.A. by Playing Them - The New Yorker](https://www.newyorker.com/magazine/2018/07/30/the-man-who-captures-criminals-for-the-dea-by-playing-them)
-* [Construal-Level Theory of Psychological Distance](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/)
-	* People are capable of thinking about the future, the past, remote locations, another person’s perspective, and counterfactual alternatives. Without denying the uniqueness of each process, it is proposed that they constitute different forms of traversing psychological distance. Psychological distance is egocentric: Its reference point is the self in the here and now, and the different ways in which an object might be removed from that point—in time, in space, in social distance, and in hypotheticality—constitute different distance dimensions. Transcending the self in the here and now entails mental construal, and the farther removed an object is from direct experience, the higher (more abstract) the level of construal of that object. Supporting this analysis, research shows (a) that the various distances are cognitively related to each other, (b) that they similarly influence and are influenced by level of mental construal, and (c) that they similarly affect prediction, preference, and action.
+----------------------------------------------------
+### Social Engineering
+* **Articles/Blogposts/Writeups**
+	* [Source Handling](http://guerrillamerica.com/2014/01/source-handling-part-one/)
+	* [Source Recruitment](http://guerrillamerica.com/2013/12/source-recruitment/)
+	* [List of the 48 Laws of Power](http://cgt411.tech.purdue.edu/covey/48_laws_of_power.htm)
+	* [Influence: Book notes](http://www.2uo.de/influence/)
+	* [DiSC Overview](https://www.discprofile.com/what-is-disc/overview/)
+		* DiSC is a personal assessment tool used to improve work productivity, teamwork and communication. DiSC is non-judgmental and helps people discuss their behavioral differences.
+	* [The Social Engineering Framework](http://www.social-engineer.org/framework/general-discussion/)
+		* The Social Engineering Framework is a searchable information resource for people wishing to learn more about the psychological, physical and historical aspects of social engineering. 
+	* [Phishing Family Tree Now: A Social Engineering Odyssey](https://www.blackhillsinfosec.com/?p=5629)
+	* [The Man Who Captures Criminals for the D.E.A. by Playing Them - The New Yorker](https://www.newyorker.com/magazine/2018/07/30/the-man-who-captures-criminals-for-the-dea-by-playing-them)
+	* [Our Take on Social Engineering - dnet(silentsignla)](https://blog.silentsignal.eu/2019/04/04/our-take-on-social-engineering/)
+* **Books**
+	* [Toastmaster's guide to body language](http://westsidetoastmasters.com/resources/book_of_body_language/toc.html)
+	* Miss Manners Guide to Excellent Manners
+	* [Influence: Science and Practice](https://en.wikipedia.org/wiki/Influence:_Science_and_Practice)
+	* Art of Deception
+	* Social Engineering: Art of Human Hacking
+	* Anything by Paul Eckman and his research
+	* What Every Body is saying
+	* Art of the Steal
+	* Craft of Intelligence
+	* How to Win Friends and Influence People
+	* Thank You For Arguing, Revised and Updated Edition: What Aristotle, Lincoln, And Homer Simpson Can Teach Us About the Art of Persuasion
+	* [The Amy Vanderbilt Complete Book of Etiquette](https://www.archive.org/stream/amyvanderbiltsco00vandrich/amyvanderbiltsco00vandrich_djvu.txt)
+	* Propaganda by Edward Bernays
+	* Art of War by Sun Tzu
+	* Language Intelligence: Lessons on persuasion from Jesus, Shakespeare, Lincoln, and Lady Gaga
+	* The Prince by Machiavelli
+	* The Definitive Book of Body Language - Barbara pease
+	* 48 Laws of Power
+	* Thinking Fast and Slow
+	* Unmasking the Social Engineer: The Human Element of Security
+	* Emotions Revealed, Second Edition: Recognizing Faces and Feelings to Improve Communication and Emotional Life
+	* Influence Without Authority
+* **Talks & Presentations**
+	* **Voice Phishing/Pretexting**
+		* [Make Vishing Suck Less - Jonathan Stines(Layer8 2018)](https://www.youtube.com/watch?v=4DphohJvnx8&index=5&list=UUynWOUeHAOflEQtJnrZpkNA)
+			* The purpose of this talk is to describe methodologies which one could follow when performing telephone pretexting. Social dynamics have changed over the years causing the entry barrier to being successful with Vishing more difficult and talking on the telephone less comfortable. The aim of this speech will be to crack the code for a newb getting started so he or she can hit the ground running, jump on the horn, and start pwning some folks like it's 1989.
 
-
-----------------------
-### <a name="books">Books</a>
-* [Toastmaster's guide to body language](http://westsidetoastmasters.com/resources/book_of_body_language/toc.html)
-* Miss Manners Guide to Excellent Manners
-* [Influence: Science and Practice](https://en.wikipedia.org/wiki/Influence:_Science_and_Practice)
-* Art of Deception
-* Social Engineering: Art of Human Hacking
-* Anything by Paul Eckman and his research
-* What Every Body is saying
-* Art of the Steal
-* Craft of Intelligence
-* How to Win Friends and Influence People
-* Thank You For Arguing, Revised and Updated Edition: What Aristotle, Lincoln, And Homer Simpson Can Teach Us About the Art of Persuasion
-* [The Amy Vanderbilt Complete Book of Etiquette](https://www.archive.org/stream/amyvanderbiltsco00vandrich/amyvanderbiltsco00vandrich_djvu.txt)
-* Propaganda by Edward Bernays
-* Art of War by Sun Tzu
-* Language Intelligence: Lessons on persuasion from Jesus, Shakespeare, Lincoln, and Lady Gaga
-* The Prince by Machiavelli
-* The Definitive Book of Body Language - Barbara pease
-* 48 Laws of Power
-* Thinking Fast and Slow
-* Unmasking the Social Engineer: The Human Element of Security
-* Emotions Revealed, Second Edition: Recognizing Faces and Feelings to Improve Communication and Emotional Life
-* Influence Without Authority
-
-
---------------------
-### <a name="talks">Presentations</a>:
+* [Dynamic Risk Taking and Social Engineering - Chris Hadnagy(Derbycon2019)](https://www.youtube.com/watch?v=5EjSwH_T7hQ&feature=share)
 * [Total Fail: and Bad Mistakes, I've Made a Few- Jayson Street -DEF CON 24 SE Village](https://www.youtube.com/watch?v=l1OFH_H8PjQ)
 * [Social Engineering Like In Movies -- Reality of awareness and manipulation - Dale Pearson- #days](https://www.youtube.com/watch?v=XUIWi5p0oFI)
 * [Manipulating Human Minds: The Psychological Side of Social Engineering - Christina Camilleri - CrikeyCon](https://www.youtube.com/watch?v=8enkIWl79_4)
@@ -133,15 +130,10 @@
 * If using hardhat, make sure to beat the shit out of it. Add stickers. 
 ```
 
+* **Research Papers**
+	* [Construal-Level Theory of Psychological Distance](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/)
+		* Abstract: People are capable of thinking about the future, the past, remote locations, another person’s perspective, and counterfactual alternatives. Without denying the uniqueness of each process, it is proposed that they constitute different forms of traversing psychological distance. Psychological distance is egocentric: Its reference point is the self in the here and now, and the different ways in which an object might be removed from that point—in time, in space, in social distance, and in hypotheticality—constitute different distance dimensions. Transcending the self in the here and now entails mental construal, and the farther removed an object is from direct experience, the higher (more abstract) the level of construal of that object. Supporting this analysis, research shows (a) that the various distances are cognitively related to each other, (b) that they similarly influence and are influenced by level of mental construal, and (c) that they similarly affect prediction, preference, and action.
+	* [The Neural Basis of Decision-Making During Sensemaking: Implications for Human-System Interaction](https://www.researchgate.net/publication/278679336_The_Neural_Basis_of_Decision-Making_During_Sensemaking_Implications_for_Human-System_Interaction)
 
-
------------------------------
-### <a name="papers">Research Papers</a>
-* [Construal-Level Theory of Psychological Distance](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3152826/)
-	* Abstract: People are capable of thinking about the future, the past, remote locations, another person’s perspective, and counterfactual alternatives. Without denying the uniqueness of each process, it is proposed that they constitute different forms of traversing psychological distance. Psychological distance is egocentric: Its reference point is the self in the here and now, and the different ways in which an object might be removed from that point—in time, in space, in social distance, and in hypotheticality—constitute different distance dimensions. Transcending the self in the here and now entails mental construal, and the farther removed an object is from direct experience, the higher (more abstract) the level of construal of that object. Supporting this analysis, research shows (a) that the various distances are cognitively related to each other, (b) that they similarly influence and are influenced by level of mental construal, and (c) that they similarly affect prediction, preference, and action.
-* [The Neural Basis of Decision-Making During Sensemaking: Implications for Human-System Interaction](https://www.researchgate.net/publication/278679336_The_Neural_Basis_of_Decision-Making_During_Sensemaking_Implications_for_Human-System_Interaction)
-
-
---------------------------------
-### <a name="tools"></a>Tools
-* [Step7 Open Source Ethernet Communication Suite](http://snap7.sourceforge.net/)
+* **Tools**
+	* [Step7 Open Source Ethernet Communication Suite](http://snap7.sourceforge.net/)

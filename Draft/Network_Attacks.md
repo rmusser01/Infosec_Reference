@@ -1,4 +1,4 @@
-https://hypothetical.me/short/dns-0x20/# Network Attacks & Defenses
+# Network Attacks & Defenses
 
 ## Table of Contents
 - [General](#general)
@@ -32,6 +32,7 @@ https://hypothetical.me/short/dns-0x20/# Network Attacks & Defenses
 - [Printers](#printers)
 - [Proxies](#proxy)
 - [PXE](#pxe)
+- [Redis](#redis)
 - [Software Defined Networking(SDN)](#sdn)
 - [SIP/VoIP](#sip)
 - [SMB](#smb)
@@ -69,6 +70,20 @@ https://hypothetical.me/short/dns-0x20/# Network Attacks & Defenses
 	* Fax
 	* Packet sniffers
 
+
+
+
+
+
+
+* [pentest-machine](https://github.com/DanMcInerney/pentest-machine)
+
+* [More of using rpcclient to find usernames - carnal0wnage](http://carnal0wnage.attackresearch.com/2007/08/more-of-using-rpcclient-to-find.html)
+* [more with rpcclient - carnal0wnage](http://carnal0wnage.attackresearch.com/2010/06/more-with-rpcclient.html)
+
+* [How We Bypassed All NTLM Relay Mitigations - And How To Ensure You're Protected - ](https://www.youtube.com/watch?v=b9yMR6hSPzk)
+    * In an encore presentation of one of Black Hat 2019’s and DEFCON27’s most popular talks, members of our research team will: Alert you to several new ways to abuse NTLM, including a critical zero-day vulnerability we have discovered which enables attackers to perform NTLM Relay and take over any machine in the domain, even with the strictest security configuration, while bypassing all of today’s offered mitigations. Tell you why the risks of this protocol are not limited to the boundaries of the on-premises environment, and show another vulnerability which allows to bypass various AD-FS restrictions in order to take over cloud resources as well.
+
 	* [Packet sniffing with powershell](https://blogs.technet.microsoft.com/heyscriptingguy/2015/10/12/packet-sniffing-with-powershell-getting-started/)
 https://github.com/x1mdev/ReconPi
 https://www.blackhillsinfosec.com/poking-holes-in-the-firewall-egress-testing-with-allports-exposed/
@@ -84,7 +99,72 @@ https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page
 https://en.wikipedia.org/wiki/Windows_Management_Instrumentation
 * Understanding WMI Scripting: Exploiting Microsoft's Windows Management Instrumentation in Mission-Critical Computing Infrastructures - Alain Lissoir
 * [An Illustrated Guide to the BEAST Attack - Joshua Davies](http://commandlinefanatic.com/cgi-bin/showarticle.cgi?article=art027)
+* [Abusing Windows Management Instrumentation (WMI) - Matthew Graeber(BH USA 2015)](https://www.youtube.com/watch?v=0SjMgnGwpq8)
+    * Imagine a technology that is built into every Windows operating system going back to Windows 95, runs as System, executes arbitrary code, persists across reboots, and does not drop a single file to disk. Such a thing does exist and it's called Windows Management Instrumentation (WMI). With increased scrutiny from anti-virus and 'next-gen' host endpoints, advanced red teams and attackers already know that the introduction of binaries into a high-security environment is subject to increased scrutiny. WMI enables an attacker practicing a minimalist methodology to blend into their target environment without dropping a single utility to disk. WMI is also unlike other persistence techniques in that rather than executing a payload at a predetermined time, WMI conditionally executes code asynchronously in response to operating system events. This talk will introduce WMI and demonstrate its offensive uses. We will cover what WMI is, how attackers are currently using it in the wild, how to build a full-featured backdoor, and how to detect and prevent these attacks from occurring.
+https://kn100.me/exploiting-upnp-literally-childsplay/
+https://github.com/s0md3v/Striker
+http://www.guadalajaracon.org/talleres/desarrollando-para-nmap-scripting-engine-nse/
+https://github.com/unixrox/prebellico
 
+https://hypothetical.me/short/dns-0x20/
+https://www.digitalinterruption.com/single-post/2018/04/22/NET-Deserialization-to-NTLM-hashes
+https://techblog.mediaservice.net/2018/02/from-xml-external-entity-to-ntlm-domain-hashes/
+
+* [Windows Management Instrumentation (WMI)Offense, Defense, and Forensics](https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/wp-windows-management-instrumentation.pdf)
+
+
+NTLM
+    * https://blog.preempt.com/drop-the-mic
+    * https://blog.preempt.com/your-session-key-is-my-session-key
+    * https://blog.preempt.com/how-to-easily-bypass-epa
+    * https://blog.preempt.com/security-advisory-critical-vulnerabilities-in-ntlm
+
+Cloud Networking
+    * https://cloud.google.com/blog/products/gcp/google-shares-software-network-load-balancer-design-powering-gcp-networking
+    * https://atscaleconference.com/videos/networking-scale-2018-load-balancing-at-hyperscale/
+    * https://ai.googleblog.com/2015/08/pulling-back-curtain-on-googles-network.html
+    * https://www.youtube.com/watch?v=8gc2DgBqo9U
+    * https://www.youtube.com/watch?v=f45Uo5rw6YY
+    * https://www.youtube.com/watch?v=3qln2u1Vr2E
+https://diablohorn.com/2017/10/26/port-scanning-without-an-ip-address/
+https://github.com/Abss0x7tbh/massNS
+DNS
+    * https://www.blackhat.com/asia-19/arsenal/schedule/#redtunnel-explore-internal-networks-via-dns-rebinding-tunnel-14332
+    * https://portswigger.net/daily-swig/new-tool-enables-dns-rebinding-tunnel-attacks-without-reconnaissance
+    * http://http.jameshfisher.com/2019/05/26/i-can-see-your-local-web-servers/
+
+https://github.com/evyatarmeged/Raccoon/blob/master/README.md
+
+* [Dissecting One of APT29’s Fileless WMI and PowerShell Backdoors (POSHSPY) - Matthew Dunwoody](https://www.fireeye.com/blog/threat-research/2017/03/dissecting_one_ofap.html)
+Nmap parsing
+    * https://github.com/laconicwolf/Nmap-Scan-to-CSV
+    * https://github.com/raesene/TestingScripts/blob/master/nmapautoanalyzer.rb
+
+
+* [DbDat](https://github.com/foospidy/DbDat)
+    * DbDat performs numerous checks on a database to evaluate security. The categories of checks performed are configuration, privileges, users, and information. Checks are performed by running queries or reading database configuration files. The goal of this tool is to highlight issues that need immediate attention and identify configuration settings that should be reviewed for appropriateness. This tool is not for identifying SQL Injection vulnerabilities in an application, there are good tools available for that already (e.g. https://github.com/sqlmapproject). Also, this tool does not attempt to determine what CVEs may impact the version of the target database (but may do so in the future - maybe). Rather, this tool can help you better understand the potential impact of a successful SQL Injection attack due to weak configuration or access controls. A majority of the checks are from the CIS (https://cisecurity.org) Security Benchmarks for databases, so thanks to the CIS! The benchmark documents can be found here: https://benchmarks.cisecurity.org/downloads/browse/index.cfm?category=benchmarks.servers.database
+
+* [LAN-Based Blind SSRF Attack Primitive for Windows Systems (switcheroo) - initblog](https://initblog.com/2019/switcheroo/)
+
+* [SMB Relay Demystified and NTLMv2 Pwnage with Python - Ed Skoudis](https://pen-testing.sans.org/blog/2013/04/25/smb-relay-demystified-and-ntlmv2-pwnage-with-python)
+
+* [Application-Layer TLS - draft-friel-tls-atls-02](https://tools.ietf.org/html/draft-friel-tls-atls-02)
+    * This document specifies how TLS sessions can be established at the application layer over untrusted transport between clients and services for the purposes of establishing secure end-to-end encrypted communications channels.Transport layer encodings for applicationlayer TLS records are specified for HTTP and CoAP transport. Explicit identification of application layer TLS packets enablesmiddleboxes to provide transport services and enforce suitable transport policies for these payloads, without requiring access to the unencrypted payload content. Multiple scenarios are presented identifying the need for end-to-end application layer encryption between clients and services, and the benefits of reusing the well-defined TLS protocol, and a standard TLS stack, to accomplish thisare described.Application software architectures for building, and network architectures for deploying application layer TLS are outlined.
+TLS
+    * https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet
+    * http://2015.video.sector.ca/video/144175700
+    * https://github.com/LeeBrotherston/tls-fingerprinting
+
+https://www.marcolancini.it/2018/blog-elk-for-nmap/
+https://www.elastic.co/blog/using-nmap-logstash-to-gain-insight-into-your-network
+https://github.com/deviantony/docker-elk
+https://qbox.io/blog/how-to-index-nmap-port-scan-results-into-elasticsearch
+
+* [Passing-the-Hash to NTLM Authenticated Web Applications - Christopher Panayi](https://labs.mwrinfosecurity.com/blog/pth-attacks-against-ntlm-authenticated-web-applications/)
+
+DNS Rebinding
+    * https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2018/august/singularity-of-origin-a-dns-rebinding-attack-framework/
+    * https://github.com/nccgroup/singularity
 
 * [Papercut](https://github.com/changemakerstudios/papercut)
 	* Simple Desktop SMTP Server
@@ -93,6 +173,22 @@ https://en.wikipedia.org/wiki/Windows_Management_Instrumentation
 * [RFC 7710: Captive-Portal Identification Using DHCP or Router Advertisements (RAs)](https://tools.ietf.org/html/rfc7710)
 
 
+* [An Illustrated Guide to the Kaminsky DNS Vulnerability - unixwiz](http://unixwiz.net/techtips/iguide-kaminsky-dns-vuln.html)
+    * This paper covers how DNS works: first at a high level, then by picking apart an individual packet exchange field by field. Next, we'll use this knowledge to see how weaknesses in common implementations can lead to cache poisoning.
+
+
+https://www.udemy.com/hadoopstarterkit/
+https://www.edx.org/course/introduction-apache-hadoop-linuxfoundationx-lfs103x
+
+Cross-Application/Cross Protocol Scripting
+    * https://en.wikipedia.org/wiki/Cross-application_scripting
+    * https://www.jochentopf.com/hfpa/hfpa.pdf
+    * http://milano.securitysummit.it/upload/file/atti%20milano%202010/16%20marzo/12_GENTILI_ACRI_SCOSCIA.PDF
+    * https://vimeo.com/10258669
+    * https://bou.ke/blog/hacking-developers/
+https://github.com/Lekssays/kibanarec
+
+https://blog.digital-horror.com/setting-up-your-out-of-band-dns-resolver/
 https://github.com/nccgroup/DatajackProxy
 * [RFC 4861: Neighbor Discovery for IP version 6 (IPv6)](https://tools.ietf.org/html/rfc4861)
 https://github.com/praetorian-inc/trudy
@@ -110,15 +206,22 @@ https://github.com/audibleblink/doxycannon
  https://tls.ulfheim.net/
 https://nmap.org/nsedoc/scripts/ipidseq.html
  https://bryceboe.com/2012/03/12/bypassing-gogos-inflight-internet-authentication/
+
+* [CameraRadar](https://github.com/Ullaakut/cameradar)
+	* An RTSP stream access tool that comes with its library
+
+
+
+* [Rails Webconsole DNS Rebinding - benmmurphy.github.io](https://web.archive.org/web/20161211232606/http://benmmurphy.github.io/blog/2016/07/11/rails-webconsole-dns-rebinding/)
+
 * AMQP
     * [AMQP v1.0(2011) Protocol Document](http://www.amqp.org/sites/amqp.org/files/amqp.pdf)
 https://medium.com/@brannondorsey/attacking-private-networks-from-the-internet-with-dns-rebinding-ea7098a2d325
-* [Capturing NetNTLM Hashes with Office [DOT] XML Documents - bohops](https://bohops.com/2018/08/04/capturing-netntlm-hashes-with-office-dot-xml-documents/)
+
 
 * [RFC1350: THE TFTP PROTOCOL (REVISION 2)](https://tools.ietf.org/html/rfc1350)
 https://github.com/cldrn/nmap-nse-scripts
 https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-convery-franz-v2.pdf
-* [Ntlm Relay Reloaded: Attack methods you do not know - Jianing Wang, Junyu Zhou - zeronights18](https://www.youtube.com/watch?v=BrSS_0a0vzQ)
 
 http://niiconsulting.com/checkmate/2013/05/memcache-exploit/
 * [Overpass-the-hash - GentilKiwi](http://blog.gentilkiwi.com/securite/mimikatz/overpass-the-hash)
@@ -132,31 +235,9 @@ https://www.blackhat.com/docs/us-15/materials/us-15-Cassidy-Switches-Get-Stitche
 
 https://labs.mwrinfosecurity.com/blog/pth-attacks-against-ntlm-authenticated-web-applications/
 
-Redis
-* [redis - Wikipedia](https://en.wikipedia.org/wiki/Redis)
-* [Introduction to redis - redis.io](https://redis.io/topics/introduction)
-* [redis security - redis.io](https://redis.io/topics/security)
-* [A Few Things About redis Security - antirez](http://antirez.com/news/96)
-* [Securing redis - redis.io](https://redis.io/topics/quickstart#securing-redis)
-* [Pentesting Redis Servers - averagesecurityguy](https://averagesecurityguy.github.io/code/pentest/2015/09/17/pentesting-redis-servers/)
-* [redis-dump](http://delanotes.com/redis-dump/)
-* [Script attempted to create global variable - Stackoverflow](https://stackoverflow.com/questions/19997647/script-attempted-to-create-global-variable)
-
 * [NetworkBoot.org](https://networkboot.org/)
     * A place where beginners can learn the fundamentals of network booting. 
-Hadoop
-* [Hadoop Safari Hunting for Vulnerabilities - Thomas Debize, Mehdi Braik - PHDays](https://www.slideshare.net/phdays/hadoop-76515903)
-* [Hadoop Attack Library](https://github.com/wavestone-cdt/hadoop-attack-library)
-	* A collection of pentest tools and resources targeting Hadoop environments
-* [Talk - Big problems with big data - Hadoop interfaces security - AppSecEU16](https://www.youtube.com/watch?v=ClXKGI8AzTk)
-	* [Slides - Big problems with big data – Hadoop interfaces security - Jakub Kaluzny - ZeroNights, Moscow 2015](http://2015.zeronights.org/assets/files/03-Kaluzny.pdf)
-* [Cloud Security in Map/Reduce - An Analysis - Jason Schlesinger(2009)](http://hackedexistence.com/downloads/Cloud_Security_in_Map_Reduce.pdf)
-* [Hadoop Security Design? Just Add Kerberos? Really? - Andrew Becherer - BHUSA2010]
-* [Securing Hadoop: Security Recommendations for Hadoop Environments - Securosis(2016)](https://securosis.com/assets/library/reports/Securing_Hadoop_Final_V2.pdf)
-* [SANS Cloudera Hadoop Hardening Checklist Guide](https://www.sans.org/score/checklists/cloudera-security-hardening)
-* [Ports Used by Components of CDH 5 - cloudera.com](https://www.cloudera.com/documentation/enterprise/latest/topics/cdh_ig_ports_cdh5.html)
-* [The Hadoop Ecosystem Table](https://hadoopecosystemtable.github.io/)
-	* This page is a summary to keep the track of Hadoop related projects, focused on FLOSS environment.
+
 * WMI
 	* https://pentestarmoury.com/2016/07/13/151/
 	* https://learn-powershell.net/2013/08/02/powershell-and-events-wmi-temporary-event-subscriptions/
@@ -244,17 +325,6 @@ MQTT Version 5 PDF: http://docs.oasis-open.org/mqtt/mqtt/v5.0/cs01/mqtt-v5.0-cs0
 Big changes for V5: https://www.oasis-open.org/committees/download.php/57616/Big%20Ideas%20for%20MQTT%20v5.pdf
 
 
-
-
-
-
-
-* [Writing NMAP Scripts Like A Super-Hero - Peter Benjamin](https://medium.com/@petermbenjamin/writing-nmap-scripts-like-a-super-hero-e4b0dc4c782)
-* [Nmap Script Writing Tutorial - nmap.org](https://nmap.org/book/nse-tutorial.html)
-
-
-
-
 https://hypothetical.me/short/dns-0x20/
 
 
@@ -280,27 +350,8 @@ NSE Scripts
 * https://github.com/peter-hackertarget/nmap-nse-scripts
 * https://github.com/s4n7h0/NSE
 * https://github.com/aerissecure/nse
-
-
-
-
-
-* [PDFiD: GoToE and GoToR Detection (“NTLM Credential Theft”) - Didier Stevens](https://blog.didierstevens.com/2018/05/31/pdfid-gotoe-and-gotor-detection-ntlm-credential-theft/)
-	* The article [“NTLM Credentials Theft via PDF Files”](https://research.checkpoint.com/ntlm-credentials-theft-via-pdf-files/) explains how PDF documents can refer to a resource via UNC paths. This is done using  PDF names /GoToE or /GoToR. My tool pdfid.py can now be extended to report /GoToE and /GoToR usage in a PDF file, without having to change the source code
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [Writing NMAP Scripts Like A Super-Hero - Peter Benjamin](https://medium.com/@petermbenjamin/writing-nmap-scripts-like-a-super-hero-e4b0dc4c782)
+* [Nmap Script Writing Tutorial - nmap.org](https://nmap.org/book/nse-tutorial.html)
 
 
 
@@ -618,9 +669,27 @@ NSE Scripts
 ---------------------
 ### <a name="hadoop"></a>Hadoop
 * **101**
-* **General/Articles/Writeups/Talks**
-	* [Hadoop Attack Library](https://github.com/wavestone-cdt/hadoop-attack-library)
+    * [The Hadoop Ecosystem Table](https://hadoopecosystemtable.github.io/)
+        * This page is a summary to keep the track of Hadoop related projects, focused on FLOSS environment.
+* **Articles/Blogposts/Writeups**
+    * [Hadoop Safari Hunting for Vulnerabilities - Thomas Debize, Mehdi Braik - PHDays](https://www.slideshare.net/phdays/hadoop-76515903)
+    * [Cloud Security in Map/Reduce - An Analysis - Jason Schlesinger(2009)](http://hackedexistence.com/downloads/Cloud_Security_in_Map_Reduce.pdf)
+    * [Securing Hadoop: Security Recommendations for Hadoop Environments - Securosis(2016)](https://securosis.com/assets/library/reports/Securing_Hadoop_Final_V2.pdf)
+    * [SANS Cloudera Hadoop Hardening Checklist Guide](https://www.sans.org/score/checklists/cloudera-security-hardening)
+    * [Ports Used by Components of CDH 5 - cloudera.com](https://www.cloudera.com/documentation/enterprise/latest/topics/cdh_ig_ports_cdh5.html)
+* **Talks & Presentations**
+    * [Big problems with big data - Hadoop interfaces security - AppSecEU16](https://www.youtube.com/watch?v=ClXKGI8AzTk)
+       * [Slides - Big problems with big data – Hadoop interfaces security - Jakub Kaluzny - ZeroNights, Moscow 2015](http://2015.zeronights.org/assets/files/03-Kaluzny.pdf)
+    * [Hadoop Security Design? Just Add Kerberos? Really? - Andrew Becherer - BHUSA2010](https://www.youtube.com/watch?v=Z-1KESMfLKg)
+        * This talk will describe the types of attacks the Hadoop team attempted to prevent as well as the types of attacks the Hadoop team decided to ignore. We will determine whether Hadoop was made any more secure through the application of copious amounts of kerberos. We will complete the talk with a short discussion of how to approach a Hadoop deployment from the perspective of an penetration tester. 
+        * [Slides](https://media.blackhat.com/bh-us-10/presentations/Becherer/BlackHat-USA-2010-Becherer-Andrew-Hadoop-Security-slides.pdf)
+* **Tools**
+    * [Hadoop Attack Library](https://github.com/wavestone-cdt/hadoop-attack-library)
 		* A collection of pentest tools and resources targeting Hadoop environments
+
+
+
+
 
 
 
@@ -1033,9 +1102,18 @@ NSE Scripts
 
 
 ## <a name="ntlm"></a> NTLM
-* **General**
+* **101**
 	* [Microsoft NTLM - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749%28v=vs.85%29.aspx)
 	* [The NTLM Authentication Protocol and Security Support Provider - davenport.sourceforge.net](http://davenport.sourceforge.net/ntlm.html)
+* **'Leaking'**
+    * [PDFiD: GoToE and GoToR Detection (“NTLM Credential Theft”) - Didier Stevens](https://blog.didierstevens.com/2018/05/31/pdfid-gotoe-and-gotor-detection-ntlm-credential-theft/)
+        * The article [“NTLM Credentials Theft via PDF Files”](https://research.checkpoint.com/ntlm-credentials-theft-via-pdf-files/) explains how PDF documents can refer to a resource via UNC paths. This is done using  PDF names /GoToE or /GoToR. My tool pdfid.py can now be extended to report /GoToE and /GoToR usage in a PDF file, without having to change the source code
+    * [Capturing NetNTLM Hashes with Office [DOT] XML Documents - bohops](https://bohops.com/2018/08/04/capturing-netntlm-hashes-with-office-dot-xml-documents/)
+    * [Love letters from the red team: from e-mail to NTLM hashes with Microsoft Outlook - WildFire Labs](https://wildfire.blazeinfosec.com/love-letters-from-the-red-team-from-e-mail-to-ntlm-hashes-with-microsoft-outlook/)
+    * [Leveraging web application vulnerabilities to steal NTLM hashes - WildFire Labs](https://blog.blazeinfosec.com/leveraging-web-application-vulnerabilities-to-steal-ntlm-hashes-2/)
+    * [Automatically Stealing Password Hashes with Microsoft Outlook and OLE - Will Dormann](https://insights.sei.cmu.edu/cert/2018/04/automatically-stealing-password-hashes-with-microsoft-outlook-and-ole.html)
+    * [SMB hash hijacking & user tracking in MS Outlook - Soroush Dalili](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/may/smb-hash-hijacking-and-user-tracking-in-ms-outlook/)
+    * [Capturing NetNTLM Hashes with Office [DOT] XML Documents - bohops](https://bohops.com/2018/08/04/capturing-netntlm-hashes-with-office-dot-xml-documents/)
 
 ------------
 ### <a name="pac"></a>PAC/WPAD
@@ -1128,6 +1206,19 @@ NSE Scripts
 * **Tools**
 
 
+-------------
+### <a name="redis"></a>Redis
+* **101** 
+    * [redis - Wikipedia](https://en.wikipedia.org/wiki/Redis)
+    * [Introduction to redis - redis.io](https://redis.io/topics/introduction)
+* **Articles/Presentations/Talks/Writeups**
+    * [redis security - redis.io](https://redis.io/topics/security)
+    * [A Few Things About redis Security - antirez](http://antirez.com/news/96)
+    * [Securing redis - redis.io](https://redis.io/topics/quickstart#securing-redis)
+    * [Pentesting Redis Servers - averagesecurityguy](https://averagesecurityguy.github.io/code/pentest/2015/09/17/pentesting-redis-servers/)
+* **Tools**
+    * [redis-dump](http://delanotes.com/redis-dump/)
+    * [Script attempted to create global variable - Stackoverflow](https://stackoverflow.com/questions/19997647/script-attempted-to-create-global-variable)
 
 -------------
 ### <a name="sdn"></a>Software Defined Networking (SDN)
@@ -1181,7 +1272,8 @@ NSE Scripts
 	* [Resurrection of the Living Dead: The “Redirect to SMB” Vulnerability](http://blog.trendmicro.com/trendlabs-security-intelligence/resurrection-of-the-living-dead-the-redirect-to-smb-vulnerability/)
 	* [SPEAR: Redirect to SMB](https://blog.cylance.com/content/dam/cylance/pdfs/white_papers/RedirectToSMB.pdf)
 	* [10 Places to Stick Your UNC Path - NetSPI](https://blog.netspi.com/10-places-to-stick-your-unc-path/)
-* **Re(p)lay Attack**
+* **Re(p)lay Attack(and Leaks)**
+    * [SMB hash hijacking & user tracking in MS Outlook - Soroush Dalili](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/may/smb-hash-hijacking-and-user-tracking-in-ms-outlook/)
 	* [Places of Interest in Stealing NetNTLM Hashes - osandamalith.com/](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
 	* [Document Tracking: What You Should Know - justhaifei1](https://justhaifei1.blogspot.com/2013/10/document-tracking-what-you-should-know.html)
 	* [Microsoft Office – NTLM Hashes via Frameset - pentestlab.blog](https://pentestlab.blog/2017/12/18/microsoft-office-ntlm-hashes-via-frameset/)
@@ -1196,6 +1288,12 @@ NSE Scripts
 	* [RottenPotatoNG](https://github.com/breenmachine/RottenPotatoNG)
 		* New version of RottenPotato as a C++ DLL and standalone C++ binary - no need for meterpreter or other tools.
 	* [SMB Relay with Snarf - Making the Most of Your MitM](https://bluescreenofjeff.com/2016-02-19-smb-relay-with-snarfjs-making-the-most-of-your-mitm/)
+    * [Relayer - SMB Relay Attack Script.](https://github.com/Jsitech/relayer)
+        * Relayer is an SMB relay Attack Script that automates all the necessary steps to scan for systems with SMB signing disabled and relaying authentication request to these systems with the objective of gaining a shell. Great when performing Penetration testing.
+    * [Ntlm Relay Reloaded: Attack methods you do not know - Jianing Wang, Junyu Zhou - zeronights18](https://www.youtube.com/watch?v=BrSS_0a0vzQ)
+    * [Remote NTLM relaying through meterpreter on Windows port 445 - Diablohorn](https://diablohorn.com/2018/08/25/remote-ntlm-relaying-through-meterpreter-on-windows-port-445/)
+    * [Automatically Stealing Password Hashes with Microsoft Outlook and OLE - Will Dormann](https://insights.sei.cmu.edu/cert/2018/04/automatically-stealing-password-hashes-with-microsoft-outlook-and-ole.html)
+    * [SMB hash hijacking & user tracking in MS Outlook - ](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/may/smb-hash-hijacking-and-user-tracking-in-ms-outlook/)
 * **Tools**
 	* [Responder](https://github.com/lgandx/Responder)
 		* Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication.

@@ -1,7 +1,6 @@
 # Fuzzing (and bug hunting)
 
-
-
+-------------------------------------------------
 ## Table of Contents
 - [Genera](#general)
 	* [101](#101)
@@ -38,29 +37,6 @@
 	* [AFL](#afl)
 	* [Peach](#peach)
 	* [Miscellaneous/Other](#misc)
-
-
-
-
-https://danluu.com/testing/
-
-https://www.usenix.org/conference/woot12/workshop-program/presentation/vanegue
-https://labs.mwrinfosecurity.com/publications/corrupting-memory-in-microsoft-office-protected-view-sandbox/?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=565088e5a455476c97c557e8bbcec069&fl=4&uid=150127534&nid=244+285282312
-https://github.com/nccgroup/fuzzowski
-https://mattwarren.org/2018/08/28/Fuzzing-the-.NET-JIT-Compiler/
-https://github.com/jakobbotsch/Fuzzlyn
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -315,7 +291,7 @@ https://github.com/jakobbotsch/Fuzzlyn
 	* **101**
 		* [Peach Documentation](http://old.peachfuzzer.com/Introduction.html)
 		* [Creating Custom Peach Fuzzer Publishers](http://blog.opensecurityresearch.com/2014/01/creating-custom-peach-fuzzer-publishers.html)
-			* [Code](https://github.com/OpenSecurityResearch/CustomPeachPublisher
+			* [Code](https://github.com/OpenSecurityResearch/CustomPeachPublisher)
 	* **Articles/Talks/Writeups**
 		* [Fuzzing with Peach tutorial](http://www.flinkd.org/2011/07/fuzzing-with-peach-part-1/)
 			* [Part 2](http://www.flinkd.org/2011/11/fuzzing-with-peach-part-2-fixups-2/)
@@ -347,3 +323,38 @@ https://github.com/jakobbotsch/Fuzzlyn
 ### Sorting
 * [dbusmap](https://github.com/taviso/dbusmap)
 	* This is a simple utility for enumerating D-Bus endpoints, an nmap for D-Bus.
+
+
+* [Firmware Slap](https://github.com/ChrisTheCoolHut/Firmware_Slap)
+	* Firmware slap combines concolic analysis with function clustering for vulnerability discovery and function similarity in firmware. Firmware slap is built as a series of libraries and exports most information as either pickles or JSON for integration with other tools.
+
+https://github.com/secfigo/Awesome-Fuzzing
+* [AFL + QuickCheck = ? - Dan Luu](https://danluu.com/testing/)
+* [Automating Windows Kernel Analysis With Symbolic Execution - Spencer McIntyre(BSides Cleveland 2019)](https://www.irongeek.com/i.php?page=videos/bsidescleveland2019/bsides-cleveland-c-03-automating-windows-kernel-analysis-with-symbolic-execution-spencer-mcintyre)
+
+https://www.usenix.org/conference/woot12/workshop-program/presentation/vanegue
+https://labs.mwrinfosecurity.com/publications/corrupting-memory-in-microsoft-office-protected-view-sandbox/?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=565088e5a455476c97c557e8bbcec069&fl=4&uid=150127534&nid=244+285282312
+https://github.com/nccgroup/fuzzowski
+https://mattwarren.org/2018/08/28/Fuzzing-the-.NET-JIT-Compiler/
+https://github.com/jakobbotsch/Fuzzlyn
+
+
+Fuzzing
+https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
+* Add Descriptions/generals to types of fuzzing
+* [Basic fuzzing framework](https://www.cert.org/vulnerability-analysis/tools/bff-download.cfm)
+* [Fuzzing 101 (Part 1)]()
+* [Fuzzing 101 (Part 2)](https://vimeo.com/5237484)
+
+https://github.com/MotherFuzzers/meetups/blob/master/README.md
+
+
+https://github.com/googleprojectzero/BrokenType
+	* https://bloggeek.me/webrtc-fuzz-testing/
+	* https://webrtchacks.com/lets-get-better-at-fuzzing-in-2019-heres-how/
+	* https://github.com/googleprojectzero/Street-Party
+	* https://googleprojectzero.blogspot.com/2018/12/adventures-in-video-conferencing-part-5.html
+
+Binary Instrumentation
+	* http://deniable.org/reversing/binary-instrumentation
+	* https://thefengs.com/wuchang/courses/cs492/afl/#0

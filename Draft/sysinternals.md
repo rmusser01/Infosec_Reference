@@ -233,27 +233,34 @@ Windows Authentication
 * **Processes/Threads**
 	* [About Processes and Threads](https://msdn.microsoft.com/en-us/library/windows/desktop/ms681917%28v=vs.85%29.aspx)
 	* [TechNet Library: About Processes and Threads](https://msdn.microsoft.com/en-us/library/windows/desktop/ms681917%28v=vs.85%29.aspx)
-	* [A Crash Course on the Depths of Win32™ Structured Exception Handling](https://www.microsoft.com/msj/0197/exception/exception.aspx)
-	* [What is a DLL?](https://support.microsoft.com/en-us/help/815065/what-is-a-dll)
-		* This article describes what a dynamic link library (DLL) is and the various issues that may occur when you use DLLs.  Then, this article describes some advanced issues that you should consider when you develop your own DLLs. In describing what a DLL is, this article describes dynamic linking methods, DLL dependencies, DLL entry points, exporting DLL functions, and DLL troubleshooting tools.
-	* [Run-Time Dynamic Linking](https://msdn.microsoft.com/en-us/library/ms685090.aspx)
-	* [Thread Local Storage](https://msdn.microsoft.com/en-us/library/ms686749.aspx)
-	* [Windows 8 BOot](http://technet.microsoft.com/en-US/windows/dn168167.aspx)
-	* [VirtualAlloc function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366887(v=vs.85).aspx)
 	* [Processes, Threads, and Jobs in the Windows Operating System](https://www.microsoftpressstore.com/articles/article.aspx?p=2233328&seqNum=2)
 	* [Know your Windows Processes or Die Trying](https://sysforensics.org/2014/01/know-your-windows-processes.html)
-	* Excellent quick reference on Windows proccesses with a focus on Win7. Good resource.
-	* [Unkillable Processes](https://blogs.technet.microsoft.com/markrussinovich/2005/08/17/unkillable-processes/)
+		* Excellent quick reference on Windows proccesses with a focus on Win7. Good resource.
+	* **DLL**
+		* [What is a DLL?](https://support.microsoft.com/en-us/help/815065/what-is-a-dll)
+			* This article describes what a dynamic link library (DLL) is and the various issues that may occur when you use DLLs.  Then, this article describes some advanced issues that you should consider when you develop your own DLLs. In describing what a DLL is, this article describes dynamic linking methods, DLL dependencies, DLL entry points, exporting DLL functions, and DLL troubleshooting tools.
+	* **Fibers**
+		* [Fibers - docs.ms](https://docs.microsoft.com/en-us/windows/win32/procthread/fibers)
+		* [Using Fibers](https://docs.microsoft.com/en-us/windows/win32/procthread/using-fibers)
+	* **Protected Processes**
+		* [Unkillable Processes](https://blogs.technet.microsoft.com/markrussinovich/2005/08/17/unkillable-processes/)
+		* [The Evolution of Protected Processes Part 1: Pass-the-Hash Mitigations in Windows 8.1 - Alex Ionescu](http://www.alex-ionescu.com/?p=97)
+		* [The Evolution of Protected Processes Part 2: Exploit/Jailbreak Mitigations, Unkillable Processes and Protected Services - Alex Ionescu](http://ww.alex-ionescu.com/?p=116)
+		* [Protected Processes Part 3 : Windows PKI Internals (Signing Levels, Scenarios, Root Keys, EKUs & Runtime Signers) - Alex Ionescu](http://www.alex-ionescu.com/?p=146)
+	* **Thread Local Storage**
+		* [Thread Local Storage](https://msdn.microsoft.com/en-us/library/ms686749.aspx)
+		* [Thread-local storage - Wikipedia](https://en.wikipedia.org/wiki/Thread-local_storage)
+	* **Exception Handling**
+		* [A Crash Course on the Depths of Win32™ Structured Exception Handling](https://www.microsoft.com/msj/0197/exception/exception.aspx)
+	* [Run-Time Dynamic Linking](https://msdn.microsoft.com/en-us/library/ms685090.aspx)
+	* [Windows 8 Boot](http://technet.microsoft.com/en-US/windows/dn168167.aspx)
+	* [VirtualAlloc function](https://msdn.microsoft.com/en-us/library/windows/desktop/aa366887(v=vs.85).aspx)
 	* [SetProcessMitigationPolicy function - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/api/processthreadsapi/nf-processthreadsapi-setprocessmitigationpolicy)
 		* Sets a mitigation policy for the calling process. Mitigation policies enable a process to harden itself against various types of attacks.
 	* [GetProcessMitigationPolicy function - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/api/processthreadsapi/nf-processthreadsapi-getprocessmitigationpolicy)
 		* Retrieves mitigation policy settings for the calling process.
-	* [Know your Windows Processes or Die Trying(2014) - sysforensics.org](https://web.archive.org/web/20140209004217/https://sysforensics.org/2014/01/know-your-windows-processes.html)
-	* [Fibers - docs.ms](https://docs.microsoft.com/en-us/windows/win32/procthread/fibers)
-	* [Using Fibers](https://docs.microsoft.com/en-us/windows/win32/procthread/using-fibers)
 	* [PE-Runtime-Data-Structures](https://github.com/JeremyBlackthorne/PE-Runtime-Data-Structures)
 		* Originally posted by me in 2013: http://uncomputable.blogspot.com/2013/08/pe-runtime-data-structures-v1.html, just migrating it to a better home.  This is a diagram of PE runtime data structures created using WinDbg and OmniGraffle. I have included jpg and PDF versions in the repository.  I was inspired by Ero Carrera's [1](http://blog.dkbza.org/2012/08/pe-file-format-graphs.html) diagrams and Corkami [2](https://code.google.com/p/corkami/). I made this diagram because I was teaching myself Windows data structures and was unsatisfied with what was out there. The information for these structures was obtained from WinDbg and Windows Internals 6 by Russinovich, Solomon, and Ionescu [Windows Internals].
-	* [Thread-local storage - Wikipedia](https://en.wikipedia.org/wiki/Thread-local_storage)
 * **Prefetch**
 	* [WinPrefetchView v1.25](http://www.nirsoft.net/utils/win_prefetch_view.html)
 		* Each time that you run an application in your system, a Prefetch file which contains information about the files loaded by the application is created by Windows operating system. The information in the Prefetch file is used for optimizing the loading time of the application in the next time that you run it. WinPrefetchView is a small utility that reads the Prefetch files stored in your system and display the information stored in them. By looking in these files, you can learn which files every application is using, and which files are loaded on Windows boot. 

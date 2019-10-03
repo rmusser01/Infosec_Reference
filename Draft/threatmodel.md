@@ -1,14 +1,10 @@
-## Threat Modeling & Risk Assessment
+# Threat Modeling & Risk Assessment
 
-
-
-* [Threat Modeling: 12 Available Methods - Nataliya Shevchenko](https://insights.sei.cmu.edu/sei_blog/2018/12/threat-modeling-12-available-methods.html)
-* [Draw.io for threat modeling - Michael Henriksen](https://michenriksen.com/blog/drawio-for-threat-modeling/)
-https://insights.sei.cmu.edu/sei_blog/2018/12/threat-modeling-12-available-methods.html
-* [The Security Principles of Saltzer and Schroeder - Adam Shostack & Friends](https://adam.shostack.org/blog/the-security-principles-of-saltzer-and-schroeder/)
-
-* [TOWARDS IMPROVING CVSS - J.M. Spring, E. Hatleback, A. 
-Householder, A. Manion, D. Shick - CMU](https://resources.sei.cmu.edu/asset_files/WhitePaper/2018_019_001_538372.pdf)
+## Table of Contents
+- []()
+- []()
+- []()
+- []()
 
 Threat Modeling
 * Threat Modeling Book
@@ -17,12 +13,22 @@ Threat Modeling
 * OWASP ASVS
 * Mozilla Rapid Risk Assessment
 
-
+* https://www.turnkeyconsulting.com/information-security-risk-assessment
+	* https://www.isaca.org/Journal/archives/2010/Volume-1/Pages/Performing-a-Security-Risk-Assessment1.aspx
+* [Application Threat Modeling using DREAD and STRIDE - Haider Mahmood](https://haiderm.com/application-threat-modeling-using-dread-and-stride/)
 * [Dark Matter and Measuring Security - Crispin Cowan](https://www.leviathansecurity.com/blog/dark-matter-and-measuring-security)
+https://web.archive.org/web/20141118061526/http://www.riskmanagementinsight.com/media/docs/FAIR_introduction.pdf
+* [ThreatPlaybook](https://github.com/we45/ThreatPlaybook)
+	* A unified DevSecOps Framework that allows you to go from iterative, collaborative Threat Modeling to Application Security Test Orchestration
+	* [Homepage](https://we45.gitbook.io/threatplaybook/)
+* [Threat Modeling: 12 Available Methods - Nataliya Shevchenko](https://insights.sei.cmu.edu/sei_blog/2018/12/threat-modeling-12-available-methods.html)
+* [Draw.io for threat modeling - Michael Henriksen](https://michenriksen.com/blog/drawio-for-threat-modeling/)
+https://insights.sei.cmu.edu/sei_blog/2018/12/threat-modeling-12-available-methods.html
+* [The Security Principles of Saltzer and Schroeder - Adam Shostack & Friends](https://adam.shostack.org/blog/the-security-principles-of-saltzer-and-schroeder/)
+* [Towards Improving CVSS - J.M. Spring, E. Hatleback, A. Householder, A. Manion, D. Shick - CMU](https://resources.sei.cmu.edu/asset_files/WhitePaper/2018_019_001_538372.pdf)
+
 http://plantuml.com/
 
-http://www.riskmanagementinsight.com/media/docs/FAIR_introduction.pdf
-https://web.archive.org/web/20141118061526/http://www.riskmanagementinsight.com/media/docs/FAIR_introduction.pdf
 
 
 ----------------------------------

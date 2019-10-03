@@ -3,15 +3,6 @@
 ## Table of Contents
 - [General](#general)
 
-
-
-
-#### Sort
-#### End Sort
-
-https://www.pentestpartners.com/security-blog/vehicle-telematics-security-getting-it-right/
-https://console-cowboys.blogspot.com/2019/04/hacking-all-cars-part-2.html
-https://becomeautonomous.com/
 ------------------
 ### <a name="general"></a> General
 * **Seriously check this first --->** [Awesome Vehicle Security List(github awesome lists)](https://github.com/jaredthecoder/awesome-vehicle-security)
@@ -67,3 +58,13 @@ https://becomeautonomous.com/
 			* [QNX Security Architecture - Alex Plaskett](https://labs.mwrinfosecurity.com/assets/BlogFiles/mwri-qnx-security-whitepaper-2016-03-14.pdf)
 
 
+
+#### Sort
+* [Jailbreaking Subaru StarLink](https://github.com/sgayou/subaru-starlink-research/blob/master/doc/README.md)
+
+* [Vehicle Telematics Security; getting it right - Andrew Tierney](https://www.pentestpartners.com/security-blog/vehicle-telematics-security-getting-it-right/)
+* [Hacking All the Cars - Part 2 - ConsoleCowboys](https://console-cowboys.blogspot.com/2019/04/hacking-all-cars-part-2.html)
+* [Want to become an autonomous vehicle engineer? - Kyle Martin](https://becomeautonomous.com/)
+* [FREE-FALL: TESLA HACKING 2016: Hacking Tesla from Wireless to CAN Bus - Keenlab](https://www.blackhat.com/docs/us-17/thursday/us-17-Nie-Free-Fall-Hacking-Tesla-From-Wireless-To-CAN-Bus.pdf)
+* [Getting your head under the hood and out of the sand: Automotive security testing - Andrew Tierney](https://www.pentestpartners.com/security-blog/getting-your-head-under-the-hood-and-out-of-the-sand-automotive-security-testing/)
+* [Lojack’d: Pwning Smart vehicle trackers - Vangelis Stykas](https://www.pentestpartners.com/security-blog/lojackd-pwning-smart-vehicle-trackers/)

@@ -329,7 +329,9 @@
 		* [Techtopus - Pando](https://pando.com/tag/techtopus/)
 		* [Newly unsealed documents show Steve Jobs' brutal response after getting a Google employee fired - Mark Ames](https://pando.com/2014/03/25/newly-unsealed-documents-show-steve-jobs-brutally-callous-response-after-getting-a-google-employee-fired/)
 		* [Revealed: Apple and Google's wage-fixing cartel involved dozens more companies, over one million employees - Mark Ames(Pando)](https://pando.com/2014/03/22/revealed-apple-and-googles-wage-fixing-cartel-involved-dozens-more-companies-over-one-million-employees/)
-
+	* **Other**
+		* [Attrition.org](http://attrition.org/attrition/)
+			* Attrition.org (http://attrition.org/) is a computer security web site dedicated to the collection, dissemination and distribution of information about the security industry for anyone interested in the subject. They maintain one of the only open and honest grim look at the industry, reminding everyone that we must strive to be better than we have been historically. The crusade to expose industry frauds and inform the public about incorrect information in computer security articles is a primary goal of the site. Previously, Attrition.org maintained the largest catalogs of security advisories, text files, and humorous image galleries. They are also known for maintaining the largest mirror of Web site defacements and the creation of the Data Loss Database (Open Source), which eventually became DatalossDB (http://datalossdb.org/).
 
 
 

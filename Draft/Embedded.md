@@ -562,3 +562,5 @@ Drone hacking
 * [nRF24L01+ sniffer - part 1 - Yveaux](https://yveaux.blogspot.com/2014/07/nrf24l01-sniffer-part-1.html)
 * [GPS Spoofing Of UAV - YUAN Jian](https://www.syscan360.org/slides/2015_EN_GPSSpoofingofUav_YuanJian.pdf)
 * [DEVIATIONTX WITH NRF24L01 MODULE, THE UNIVERSAL DRONE REMOTE CONTROL. - garagedrone](https://dronegarageblog.wordpress.com/2016/06/07/deviationtx-with-nrf24l01-module-the-universal-drone-remote/)
+https://github.com/phodal/awesome-iot
+https://github.com/V33RU/IoTSecurity101

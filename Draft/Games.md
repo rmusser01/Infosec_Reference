@@ -9,11 +9,6 @@
 * [Talks & Presentations](#talks)
 * [Tools](#tools)
 
-https://www.youtube.com/user/L4DL4D2EUROPE/videos
-
-
-* [Diablo1 Notes](https://github.com/sanctuary/notes)
-	* The aim of this project is to organize and cross-reference a collection of notes related to the inner workings of the Diablo 1 game engine.
 
 
 
@@ -226,7 +221,6 @@ https://www.youtube.com/user/L4DL4D2EUROPE/videos
 
 --------------
 ### Game Programming Papers
-
 * [The TRIBES Engine Networking Model or How to Make the Internet Rock for Multi­player Games](http://www.pingz.com/wordpress/wp-content/uploads/2009/11/tribes_networking_model.pdf)
 	* This paper discusses the networking model developed to support a "real­time" multi­player gaming environment.  This model is being developed for TRIBES II, and was first implemented in Starsiege TRIBES, a multi­player online team game published in December '98. The three major features of this model are: support for multiple data delivery requirements, partial object state updates and a packet delivery notification protocol.
 
@@ -254,3 +248,15 @@ Reminder: Real hackers hack in silence. You all suck.
 
 F8001BE1190CAED74BBDDAD78667877C84D1A128
 ```
+
+### Sort
+* [Fabien Sanglard's Website](http://fabiensanglard.net/)
+* [Hack the Vote 2016 CTF "The Wall" Solution](https://zerosum0x0.blogspot.com/2016/11/hack-vote-wall-solution.html)
+https://github.com/dsasmblr/game-hacking
+https://github.com/dsasmblr/hacking-online-games
+
+* [Diablo1 Notes](https://github.com/sanctuary/notes)
+	* The aim of this project is to organize and cross-reference a collection of notes related to the inner workings of the Diablo 1 game engine.
+* [CS:GO RCE 0-day - Real World CTF Qualifiers 2018 - Perfect Blue](https://blog.perfect.blue/P90_Rush_B)
+
+https://web.archive.org/web/20110926012139/http://insertcredit.com/2011/09/22/who-killed-videogames-a-ghost-story/

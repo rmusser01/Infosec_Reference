@@ -338,3 +338,8 @@ Solaris Zones
 	* https://docs.oracle.com/cd/E18440_01/doc.111/e18415/chapter_zones.htm#OPCUG426
 	https://en.wikipedia.org/wiki/Solaris_Containers
 	https://www.fujitsu.com/global/products/computing/servers/unix/sparc-enterprise/software/solaris10/container/zone/
+https://sysdig.com/blog/oss-container-security-stack/
+https://sysdig.com/blog/docker-image-scanning/
+https://docs.google.com/presentation/d/1u6S1ycs8DURORf6S9XYKjP56oszJpouOca6xlkH9ILs/edit#slide=id.p
+https://medium.com/@mccode/understanding-how-uid-and-gid-work-in-docker-containers-c37a01d01cf
+* [Getting vulnerabilities and metadata for images - cloud.google](https://cloud.google.com/container-registry/docs/get-image-vulnerabilities)

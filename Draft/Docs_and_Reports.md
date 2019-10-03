@@ -11,16 +11,16 @@
 - [Video Documentation](#video)
 - [Disclosure](#disclosure)
 
-https://github.com/pavanw3b/sh00t
-https://blogs.technet.microsoft.com/ecostrat/2010/07/22/coordinated-vulnerability-disclosure-bringing-balance-to-the-force/
-https://github.com/GhostManager/Ghostwriter
-https://posts.specterops.io/introducing-ghostwriter-part-1-61e7bd014aff
-* [The Ultimate Workflow for Writers Obsessed with Quality - Rob Hardy](https://betterhumans.coach.me/the-ultimate-workflow-for-writers-obsessed-with-quality-5b2810e1214b)
-* [The Elements Of Style: UNIX As Literature - Thomas Scoville](http://theody.net/elements.html)
+
+
+
+To Do:
+	* Add Note taking methods
+
 
 -----------------
 ### Start Here	
-	* [How I read a research paper](https://muratbuffalo.blogspot.com/2013/07/how-i-read-research-paper.html?m=1)
+* [How I read a research paper](https://muratbuffalo.blogspot.com/2013/07/how-i-read-research-paper.html)
 * **Writing**<a name="writing"></a>
 	* Start with the first two links, and go from there. They’re both great resources to writing technical documentation, the first being a beginners guide and the second being a general guide that beginners can understand.
 		* [A beginners guide to writing documentation](http://www.writethedocs.org/guide/writing/beginners-guide-to-docs/)
@@ -34,6 +34,7 @@ https://posts.specterops.io/introducing-ghostwriter-part-1-61e7bd014aff
 			* [What to write](http://jacobian.org/writing/what-to-write/)
 			* [Technical Style](http://jacobian.org/writing/technical-style/)
 			* [Editors](http://jacobian.org/writing/editors/)
+		* [The Ultimate Workflow for Writers Obsessed with Quality - Rob Hardy](https://betterhumans.coach.me/the-ultimate-workflow-for-writers-obsessed-with-quality-5b2810e1214b)
 	* **Writing a Paper**
 		* [How to write a great research paper - Simon Peyton Jones](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/)
 	* **Technical Writing**
@@ -45,6 +46,8 @@ https://posts.specterops.io/introducing-ghostwriter-part-1-61e7bd014aff
 		* [Microsoft Writing Style Guide](https://docs.microsoft.com/en-us/style-guide/welcome/)
 * **Language**
 	* [Bishop Fox Cybersecurity Style Guide](https://www.bishopfox.com/blog/2018/02/hello-world-introducing-the-bishop-fox-cybersecurity-style-guide/)
+* **Taking Notes**
+	* [My Forensic and Incident Response Note Taking Methodology - IronMoon](https://ironmoon.net/2019/02/04/My-Forensic-and-Incident-Response-Note-Taking-Methodology.html)
 * **Tools**
 	* [Ronn](https://github.com/rtomayko/ronn)
 		* Ronn builds manuals. It converts simple, human readable textfiles to roff for terminal display, and also to HTML for the web. The source format includes all of Markdown but has a more rigid structure and syntax extensions for features commonly found in manpages (definition lists, link notation, etc.). The ronn-format(7) manual page defines the format in detail.
@@ -75,6 +78,8 @@ https://posts.specterops.io/introducing-ghostwriter-part-1-61e7bd014aff
 	* **Templates**
 		* [Report Template from vulnerabilityassessment.co.uk](http://www.vulnerabilityassessment.co.uk/report%20template.html)
 		* [SANS InfoSec Policy Templates](https://www.sans.org/security-resources/policies/)
+* **Writing Technical Documentation**
+	* [The Elements Of Style: UNIX As Literature - Thomas Scoville](http://theody.net/elements.html)
 * **Meta**<a name="meta"></a>
 	* **LaTex**
 	* **Markdown**
@@ -104,6 +109,7 @@ https://posts.specterops.io/introducing-ghostwriter-part-1-61e7bd014aff
 	* [Sample Debriefing Statement - Albion College](https://www.albion.edu/academics/student-research/institutional-review-board/submitting-a-proposal/sample-debriefing-statement)
 * **General**
 	* [Debriefing Facilitation Guide: Leading Groups at Etsy to Learn from Accidents - Etsy](https://extfiles.etsy.com/DebriefingFacilitationGuide.pdf)
+	* [Presentation Tips for Technical Talks - SheHacksPurple](https://medium.com/@shehackspurple/presentation-tips-for-technical-talks-8d59f3de9f6d)
 * **Talks**
 	* [A presentation or presentations because presenting - Jason Blanchard - Derbycon7](https://www.youtube.com/watch?v=FcgM7c0vzcE&app=desktop)
 * **Tools**
@@ -131,6 +137,10 @@ https://posts.specterops.io/introducing-ghostwriter-part-1-61e7bd014aff
 		* Serpico is a penetration testing report generation and collaboration tool. It was developed to cut down on the amount of time it takes to write a penetration testing report.
 	* [Vulnreport](https://github.com/Salesforce/Vulnreport)
 		* Vulnreport is a platform for managing penetration tests and generating well-formatted, actionable findings reports without the normal overhead that takes up security engineer's time. The platform is built to support automation at every stage of the process and allow customization for whatever other systems you use as part of your pentesting process.
+	* [Ghostwriter](https://github.com/GhostManager/Ghostwriter)
+		* Ghostwriter is a Django project written in Python 3.7 and is designed to be used by a team of operators. The platform is made up of several Django apps that own different roles but work together. See the Wiki for more information.
+		* [Wiki](https://ghostwriter.wiki/)
+		* [Introducing Ghostwriter - Christopher Maddalena](https://posts.specterops.io/introducing-ghostwriter-part-1-61e7bd014aff)
 * **Video Recording/Visual Documentation**<a name="video"></a>
 	* [Open Broadcaster Software OBS](https://obsproject.com/)
 		* Open Broadcaster Software is free and open source software for video recording and live streaming. Cross Platform, Windows/OsX/Linux
@@ -153,15 +163,20 @@ https://posts.specterops.io/introducing-ghostwriter-part-1-61e7bd014aff
 ----------------
 ### <a name="disclosure"></a>Disclosure
 * **101**
+	* [OWASP Vulnerability Disclosure Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Vulnerability_Disclosure_Cheat_Sheet.html)
 	* [NCSAM: Coordinated Vulnerability Disclosure Advice for Researchers](https://community.rapid7.com/community/infosec/blog/2016/10/28/ncsam-coordinated-vulnerability-disclosure-advice-for-researchers)
 	* [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
 	* [Good comparison of various forms of disclosure](http://blog.opensecurityresearch.com/2014/06/approaches-to-vulnerability-disclosure.html)
+	* [Threatbutt irresponsible disclosure policy](http://threatbutt.com/bugbounty.html)
 * **CVE**
 	* [Request a CVE ID](http://cve.mitre.org/cve/request_id.html#cna_coverage)
 	* [My first CVE-2016-1000329 in BlogPHP](https://www.stevencampbell.info/2016/12/my-first-cve-2016-1000329-in-blogphp/)
 * **Dealing with the press/journalists:**
 	* [Hacking the media for fame/profit talk](http://www.irongeek.com/i.php?page=videos/derbycon4/Hacking-The-Media-For-Fame-And-Profit-Jenn-Ellis-Steven-Reganh)
 * **History**
+	* [Coordinated Vulnerability Disclosure: Bringing Balance to the Force - blogs.technet](https://blogs.technet.microsoft.com/ecostrat/2010/07/22/coordinated-vulnerability-disclosure-bringing-balance-to-the-force/)
+	* [Full disclosure (computer security) - Wikipedia](https://en.wikipedia.org/wiki/Full_disclosure_(computer_security))
+	* [Schneier: Full Disclosure of Security Vulnerabilities a 'Damned Good Idea' - Bruce Schneier](https://www.schneier.com/essays/archives/2007/01/schneier_full_disclo.html)
 	* [Responsible Disclosure is Wrong](https://adamcaudill.com/2015/11/19/responsible-disclosure-is-wrong/)
 * **How-To**
 	* [How to Disclose or Sell an Exploit - DEF CON 21 - James Denaro](https://www.youtube.com/watch?v=N1Xj3f4felg)
@@ -169,5 +184,6 @@ https://posts.specterops.io/introducing-ghostwriter-part-1-61e7bd014aff
 * **Tools**
 	* [Portcullis Computer Security Co-ordinated Disclosure Toolkit](https://github.com/portcullislabs/co-ordinated-disclosure-toolkit)
 	* [Clean writeup of Full-Disclosure release policy that is more similar to Coordinated Disclosure.](http://www.ilias.de/docu/goto_docu_wiki_1357_RFPolicy.html)
+
 
 

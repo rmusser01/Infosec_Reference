@@ -1,7 +1,7 @@
 # Embedded Device Security
 
 
-
+-----------------------------------
 ## Table of Contents
 - [General](#general)
 - [Attacking Routers and their Firmware)(#routers)
@@ -30,26 +30,7 @@
 - [Specific Attacks](#specific)
 
 
-
-http://www.sp3ctr3.me/hardware-security-resources/
-
-
-https://www.irongeek.com/i.php?page=videos/derbycon7/t316-anatomy-of-a-medical-device-hack-doctors-vs-hackers-in-a-clinical-simulation-cage-match-joshua-corman-christian-dameff-md-ms-jeff-tully-md-beau-woods
-
-
-	* https://media.blackhat.com/us-13/US-13-Zaddach-Workshop-on-Embedded-Devices-Security-and-Firmware-Reverse-Engineering-WP.pdf
-	* https://github.com/nsacyber/Hardware-and-Firmware-Security-Guidance
-https://inception-framework.github.io/inception/
-
-
-IoT Methodology
-https://resources.infosecinstitute.com/beginners-guide-to-pentesting-iot-architecture-network-and-setting-up-iot-pentesting-lab-part-1/
-https://github.com/phodal/awesome-iot
-http://iotpentest.com/iot-protocols-introduction/
-https://www.networkworld.com/article/3198495/internet-of-things/how-to-conduct-an-iot-pen-test.html
-https://github.com/V33RU/IoTSecurity101
-https://blog.attify.com/how-to-iot-pentesting/
-
+-----------------------------
 * **To-Do**
 	* Fingeprint readers
  		* [Breaking apple touchID cheaply](http://www.ccc.de/en/updates/2013/ccc-breaks-apple-touchid)
@@ -61,16 +42,20 @@ https://blog.attify.com/how-to-iot-pentesting/
 	* SD Cards
 	* TPM
 		* [Attackin the TPM part 2](https://www.youtube.com/watch?v=h-hohCfo4LA)
-https://firmwaresecurity.com/2019/05/01/deral-heiland-extracting-firmware-from-microcontrollers-onboard-flash-memory-parts-1-3/
-https://firmwaresecurity.com/2019/04/28/mimoja-amd-firmware-presentation-uploaded/
 
-http://www.farleyforensics.com/2019/04/25/have-you-ever-wanted-to-get-started-with-jtag-isp-chip-off-extractions-but-never-knew-what-you-needed-to-get-started/
 
-https://blog.quarkslab.com/reverse-engineering-broadcom-wireless-chipsets.html
 
-https://github.com/ChrisTheCoolHut/Firmware_Slap
 
-* [From 0 to Infinity - Guy](https://docs.google.com/presentation/d/19A1JWyOTueZvD8AksqCxtxriNJJgj0vPdq3cNTwndf4/mobilepresent#slide=id.g35506ef05e_0_0)
+
+--------
+### General
+* [ArduPilot](http://ardupilot.org/ardupilot/index.html)
+* [Knocking my neighbors kids cruddy drone offline - DefCon 23 Robinson and Mitchell](https://www.youtube.com/watch?v=5CzURm7OpAA)
+* [Game of Drones - Brown,Latimer - Defcon25](https://www.youtube.com/watch?v=iG7hUE2BZZo)
+	* We’ve taken a MythBusters-style approach to testing the effectiveness of a variety of drone defense solutions, pitting them against our DangerDrone. Videos demonstrating the results should be almost as fun for you to watch as they were for us to produce. Expect to witness epic aerial battles against an assortment of drone defense types
+* [DUMLRacer](https://github.com/CunningLogic/DUMLRacer)
+	* Root Exploit for DJI Drones and Controllers (up to and including v01.04.0100)
+
 
 ---------------------
 ### <a name="general"></a>General
@@ -98,6 +83,7 @@ https://github.com/ChrisTheCoolHut/Firmware_Slap
 		* Interested in hardware hacking but not quite sure where to start? Does the thought of soldering thrill you (or scare you)? Come check out this talk to see just how easy it is to jump into this exciting field of research! Many people and companies use similar models of hardware. Unlike software, these devices rarely receive security updates. Sometimes, used devices are sold without clearing the configurations and important data is left behind. After this talk, you will know how to find hidden interfaces on these devices, start searching for vulnerabilities and sensitive information, and have irresistible urges to go home and tear apart all your old networking equipment. Did we mention...live demo?
 	* [Methodologies for Hacking Embedded Security Appliances](https://media.blackhat.com/us-13/US-13-Bathurst-Methodologies-for-Hacking-Embdded-Security-Appliances-Slides.pdf)
 	* [Hardware Backdooring is Practical -Jonathan Brossard](https://www.youtube.com/watch?v=umBruM-wFUw)
+	* [Infecting the Embedded Supply Chain - Somerset Recon](https://www.somersetrecon.com/blog/2018/7/27/infecting-the-embedded-supply-chain)
 * **Resources/Reference**
 	* [FCC ID Lookup](http://transition.fcc.gov/oet/ea/fccid/)
 		* Lookup devices according to FCC ID
@@ -266,10 +252,15 @@ https://github.com/ChrisTheCoolHut/Firmware_Slap
 ### <a name="medical"></a> Medical Devices
 * **101**
 * **Articles/Papers/Talks/Writeups**
+	* [Insulin Pumps, Decapped chips and Software Defined Radios - Pete Schwamb](https://blog.usejournal.com/insulin-pumps-decapped-chips-and-software-defined-radios-1be50f121d05)
 * **General**
 	* [FDA.gov Medical Devices Page](https://www.fda.gov/Medicaldevices/default.htm)
+* **Talks & Presentations**
+	* [Anatomy of a Medical Device Hack- Doctors vs. Hackers in a Clinical Simulation Cage Match - Joshua Corman & Christian Dameff MD MS & Jeff Tully MD & Beau Woods(Derbycon2017)](https://www.irongeek.com/i.php?page=videos/derbycon7/t316-anatomy-of-a-medical-device-hack-doctors-vs-hackers-in-a-clinical-simulation-cage-match-joshua-corman-christian-dameff-md-ms-jeff-tully-md-beau-woods)
+		* In the near future, a crisis unfolds at a hospital: patients on automated drug infusion machines overdose, hacked insulin pumps lead to car crashes, and internal defibrillators flatline weakened hearts. Clinical staff are unprepared and ill equipped to treat these complications, as they are all unaware of the true culprits behind the crisis. A state of emergency is declared, the public demands answers, and policymakers scramble to preserve national trust. This was the scenario that played out in first-of-their-kind clinical simulations carried out in June, and the results were scary yet unsurprising: health care cybersecurity is in critical condition. It’s been a long four years since the guiding ideals and message of The Cavalry was tempered from the forge that was the first Hacker Constitutional Congress (hosted in these very halls at DerbyCon 3). The battle continues to ensure that technologies capable of impacting public safety and human life remain worthy of our trust, and no battlefield looms larger than the healthcare space. Despite important steps toward change- from the Hippocratic Oath for Connected Medical Devices to the just-published Health Care Industry Cybersecurity Task Force Report- recent events remind us that the dual pillars of healthcare technology- patient facing medical devices and the infrastructure that supports clinical practice- remain as vulnerable and exposed as ever. Join Josh Corman and Beau Woods of I am The Cavalry as they team up with Christian Dameff, MD, and Jeff Tully, MD- two “white coat hackers” working to save patient lives at the bedside- to share lessons learned from the world’s first ever clinical simulations of patients threatened by hacked medical devices. By bringing the technical work done by security researchers you know and love to life and demonstrating the profound impact to patient physiology from compromised devices, these life-like simulations provide a powerful avenue to engage with stakeholder groups including clinicians and policymakers, and may represent the new standard for hackers looking to demonstrate the true impact and importance of their biomedical work.
 * **Tools**
 * **Miscellaneous**
+
 
 
 
@@ -508,3 +499,66 @@ See 'Printers' Section in Network Attacks & Scanning
 * **Traffic Injection**
 	* [Perimeter-Crossing Buses: a New Attack Surface for Embedded Systems](http://www.cs.dartmouth.edu/~sws/pubs/bgjss12.pdf)
 		* Abstract: This paper maps out the bus-facing attack surface of a modern operating system, and demonstrates that effective and effcient injection of traffc into the buses is real and easily a ordable. Further, it presents a simple and inexpensive hardware tool for the job, outlining the architectural and computation-theoretic challenges to creating a defensive OS/driver architecture comparable to that which has been achieved for network stacks.
+
+
+
+---------------------------------
+#### Sort
+http://www.sp3ctr3.me/hardware-security-resources/
+https://github.com/yadox666/The-Hackers-Hardware-Toolkit/
+
+* [nRF24L01+ sniffer - part 1 - Yveaux](https://yveaux.blogspot.com/2014/07/nrf24l01-sniffer-part-1.html)
+
+* [Code used in the Great Drone Duel of 2016](https://github.com/marcnewlin/drone-duel)
+	* At ToorCamp 2016, an unknown Chinese benefactor provided all participants with Cheerson CX-10A quadcopters. Coincidentally, Michael Ossmann and Dominic Spill gave a talk about hacking those very same quadcopters, and as part of their talk, they released a protocol specification which formalized the packet format used by the drones. Following the only logical path that made sense at the time, we challenged them to a duel at high noon. Using Python, nRF24LU1+ dongles (running Marc's nRF24LU1+ firmware), and an IntimidationAntenna(tm), we hacked together some code to either fly their drones far, far away, or bring them crashing to the ground. The code has been alpha tested against giant fishing nets with mixed results.
+* [How To Set Up A Drone Vulnerability Testing Lab - Sanders Walters](https://medium.com/@swalters/how-to-set-up-a-drone-vulnerability-testing-lab-db8f7c762663#.9nxqcjnqw)
+
+* [JTAG Explained (finally!): Why "IoT", Software Security Engineers, and Manufacturers Should Car - senr.io]
+https://www.attify-store.com/
+
+* [Hardware Stuff for Software People By Stephen Ridley(REcon2011)](https://archive.org/details/HardwareStuffForSoftwarePeople)
+	* This talk will be an introduction to doing "hardware stuff" stuff, for people accustomed to plying their trade against software. I will discuss how to build tools (and use existing tools) to sniff/spy on a variety of hardware communications channels from UART Serial (the kind in your computer) to the very ubiquitous SPI/I2C serial busses used in virtual everything (from EEPROM in your portable DVD player to the HDMI/VGA cables between your computer and monitor). I will demonstrate how these simple hardware taps can be used to begin reverse engineering, spoofing, and fuzzing in places where (as a software person) you might not have previously felt comfortable. I will be bringing along a number of custom hardware and software tools (used specifically for these purposes) as well as a mock lab environment for demonstrations. Other than these practical skills, I am new to this "hardware stuff" so please don't expect a "embedded-JTag-SCADA-mobile" buzzword soliloquy. I'll just be sharing some stories and showing some neat hardware and software I've recently found useful.
+
+* [PentestHardware](https://github.com/unprovable/PentestHardware)
+	* "Kinda useful notes collated together publicly"
+
+* [Embedded Devices Security and Firmware Reverse Engineering - Jonas Zaddach, Andrei Costin(BH13USA)](https://media.blackhat.com/us-13/US-13-Zaddach-Workshop-on-Embedded-Devices-Security-and-Firmware-Reverse-Engineering-WP.pdf)
+	* This workshop aims at presenting a quick-start at how to inspect firmwares and a hands-on presentation with exercises on real firmwares from a security analysis standpoint.
+
+* [Hardware and Firmware Security Guidance](https://github.com/nsacyber/Hardware-and-Firmware-Security-Guidance)
+	* This repository provides content for aiding DoD administrators in verifying systems have applied and enabled mitigations for hardware and firmware vulnerabilities such as side-channel and UEFI vulnerabilities. The repository is a companion to NSA Cybersecurity Advisories such as Vulnerabilities Affecting Modern Processors. This repository is updated as new information, research, strategies, and guidance are developed.
+
+* [Inception: System-wide Security Testing of Real-World Embedded Systems Software](https://inception-framework.github.io/inception/)
+http://s3.eurecom.fr/docs/usenixsec18_corteggiani.pdf
+
+* [ESP32/ESP8266 Wi-Fi Attacks](https://github.com/Matheus-Garbelini/esp32_esp8266_attacks)
+
+* [UBoot to Root - Deral Heiland(OISF19)](https://www.youtube.com/watch?v=Yn1mN1ySwQc&feature=share)
+
+* [Are We Really Safe? - Bypassing Access Control Systems - Dennis Maldonado(Defcon23)](https://www.youtube.com/watch?v=-cZ7eDV2n5Y)
+	* The world relies on access control systems to ensure that secured areas are only accessible to authorized users. Usually, a keypad is the only thing stopping an unauthorized person from accessing the private space behind it. There are many types of access control systems from stand-alone keypads to telephony access control. In this talk, Dennis will be going over how and where access control systems are used. Dennis will walk through and demonstrate the tips and tricks used in bypassing common access control systems. This presentation will include attack methods of all nature including physical attacks, RFID, wireless, telephony, network, and more.
+* [Firmware analysis Basic Approach - Veerababu Penugonda](http://www.iotpentest.com/2019/02/firmware-analysis-basic-approach.html)
+
+* [The Ninja Recon Technique for IoT Pentesting - attify](https://blog.attify.com/how-to-iot-pentesting/)
+
+* [Extracting Firmware from Microcontrollers' Onboard Flash Memory, Part 1: Atmel Microcontrollers - Deral Heiland](https://blog.rapid7.com/2019/04/16/extracting-firmware-from-microcontrollers-onboard-flash-memory-part-1-atmel-microcontrollers/)
+* [Extracting Firmware from Microcontrollers' Onboard Flash Memory, Part 2: Nordic RF Microcontrollers - Deral Heiland](https://blog.rapid7.com/2019/04/23/extracting-firmware-from-microcontrollers-onboard-flash-memory-part-2-nordic-rf-microcontrollers/)
+* [Extracting Firmware from Microcontrollers' Onboard Flash Memory, Part 3: Microchip PIC Microcontrollers - Deral Heiland](https://blog.rapid7.com/2019/04/30/extracting-firmware-from-microcontrollers-onboard-flash-memory-part-3-microchip-pic-microcontrollers/)
+
+
+* [Building your own JTAG, ISP, & Chip Off Lab - Jack Farley](http://www.farleyforensics.com/2019/04/25/have-you-ever-wanted-to-get-started-with-jtag-isp-chip-off-extractions-but-never-knew-what-you-needed-to-get-started/)
+
+* [Reverse-engineering Broadcom wireless chipsets - Hugues Anguelkov](https://blog.quarkslab.com/reverse-engineering-broadcom-wireless-chipsets.html)
+
+* [From 0 to Infinity - Guy](https://docs.google.com/presentation/d/19A1JWyOTueZvD8AksqCxtxriNJJgj0vPdq3cNTwndf4/mobilepresent#slide=id.g35506ef05e_0_0)
+
+Drone hacking
+* [DeviationTX with NRF24L01 module, the universal drone remote control - dronegarageblog.wordpress](https://dronegarageblog.wordpress.com/2016/06/07/deviationtx-with-nrf24l01-module-the-universal-drone-remote/)
+* [How To Set Up A Drone Vulnerability Testing Lab - Sander Walters](https://medium.com/@swalters/how-to-set-up-a-drone-vulnerability-testing-lab-db8f7c762663)
+* [How to hack IP camera in toy drone - u/pj530i](https://www.reddit.com/r/HowToHack/comments/4512il/how_to_hack_ip_camera_in_toy_drone/)
+* [ PHD VI: How They Stole Our Drone ](http://blog.ptsecurity.com/2016/06/phd-vi-how-they-stole-our-drone.html)
+* [Code used in the Great Drone Duel of 2016](https://github.com/marcnewlin/drone-duel)
+	* "At ToorCamp 2016, an unknown Chinese benefactor provided all participants with Cheerson CX-10A quadcopters. Coincidentally, Michael Ossmann and Dominic Spill gave a talk about hacking those very same quadcopters, and as part of their talk, they released a protocol specification which formalized the packet format used by the drones. Following the only logical path that made sense at the time, [we challenged them](https://twitter.com/marcnewlin/status/741401358465519616) to a duel at high noon.""
+* [nRF24L01+ sniffer - part 1 - Yveaux](https://yveaux.blogspot.com/2014/07/nrf24l01-sniffer-part-1.html)
+* [GPS Spoofing Of UAV - YUAN Jian](https://www.syscan360.org/slides/2015_EN_GPSSpoofingofUav_YuanJian.pdf)
+* [DEVIATIONTX WITH NRF24L01 MODULE, THE UNIVERSAL DRONE REMOTE CONTROL. - garagedrone](https://dronegarageblog.wordpress.com/2016/06/07/deviationtx-with-nrf24l01-module-the-universal-drone-remote/)

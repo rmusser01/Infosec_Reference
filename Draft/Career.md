@@ -36,6 +36,8 @@
 - [Other](#other)
 - [Industry](#industry)
 
+
+
 ------------------------------------------------------
 ### Career Information<a name="career-info"></a>
 * **101**<a name="101"></a>
@@ -83,6 +85,8 @@
 	* **Relevant Standards**
 		* [NICE Cybersecurity Workforce Framework](https://www.nist.gov/itl/applied-cybersecurity/national-initiative-cybersecurity-education-nice/nice-cybersecurity)
 			* The NICE Framework, NIST Special Publication 800-181, establishes taxonomy and common lexicon that is to be used to describe all cybersecurity work and workers irrespective of where or for whom the work is performed. The NICE Framework is intended to be applied in the public, private, and academic sectors. (USA Focused)
+	* **Application Security**
+		* [Pushing Left, Like a Boss: Table of Contents - SheHacksPurple](https://medium.com/bugbountywriteup/pushing-left-like-a-boss-table-of-contents-42fd063a75bb)
 	* **Autonomous Vehicles**
 		* [Want to become an autonomous vehicle engineer? - Kyle Martin](https://becomeautonomous.com/)
 	* **Data Scientist**

@@ -1,4 +1,4 @@
-# Building a Lab
+	# Building a Lab
 
 
 ## Table of Contents
@@ -13,6 +13,10 @@
 * **To Do**
 	* Building a defensive Lab
 	* Infra Automation
+
+
+
+
 
 -------------------------
 ### <a name="general"></a> General
@@ -47,6 +51,8 @@
 	* [Set up your own malware analysis lab with VirtualBox, INetSim and Burp - Christophe Tafani-Dereeper](https://blog.christophetd.fr/malware-analysis-lab-with-virtualbox-inetsim-and-burp/)
 	* [CyRIS: Cyber Range Instantiation System](https://github.com/crond-jaist/cyris)
 		* CyRIS is a tool for facilitating cybersecurity training by automating the creation and management of the corresponding training environments (a.k.a, cyber ranges) based on a description in YAML format. CyRIS is being developed by the Cyber Range Organization and Design (CROND) NEC-endowed chair at the Japan Advanced Institute of Science and Technology (JAIST).
+	* [DockerSecurityPlayground](https://github.com/giper45/DockerSecurityPlayground)
+		* A Microservices-based framework for the study of Network Security and Penetration Test techniques
 * **VMs/Apps Designed to be Attacked**
 	* [List of VMs that are preconfigured virtual machines](http://www.amanhardikar.com/mindmaps/PracticeUrls.html)
 	* [The Hacker Games - Hack the VM before it hacks you](http://www.scriptjunkie.us/2012/04/the-hacker-games/)
@@ -197,6 +203,9 @@
 
 -------------------------------------------------------
 ### Infrastructure Automation <a name="infra"></a>
+* **Articles/Blogposts**
+	* [PhoenixServer - Martin Fowler](https://martinfowler.com/bliki/PhoenixServer.html)
+	* [An introduction to immutable infrastructure - Josh Stella](https://www.oreilly.com/radar/an-introduction-to-immutable-infrastructure/)
 * **Infrastructure Automation**
 	* [An Intro to Terraform with Azure, PFSense, and Windows 10 - FortyNorth Security](https://www.fortynorthsecurity.com/an-intro-to-terraform-with-azure-pfsense-and-windows-10/)
 	* [Automating Red Team Homelabs: Part 2 – Build, Pentest, Destroy, and Repeat - Alex Rodriguez](https://blog.secureideas.com/2019/05/automating-red-team-homelabs-part-2-build-pentest-destroy-and-repeat.html)

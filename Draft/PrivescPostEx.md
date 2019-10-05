@@ -31,9 +31,6 @@ To do:
 	OS X and Linux stuff
 
 
-
-
-
 ---------------
 ## <a name="privesc"></a>Privilege Escalation 
 
@@ -1912,6 +1909,7 @@ To do:
 		* [Add-In Opportunities for Office Persistence - William Knowles](https://labs.mwrinfosecurity.com/blog/add-in-opportunities-for-office-persistence/)
 		* [One Template To Rule 'Em All - Kostas Lintovois](https://labs.f-secure.com/archive/one-template-to-rule-em-all/)
 			* Introduction of wePWNize
+		* [Persisting with Microsoft Office: Abusing Extensibility Options - William Knowles](https://labs.mwrinfosecurity.com/assets/BlogFiles/WilliamKnowles-MWR-44con-PersistingWithMicrosoftOffice.pdf)
 	* **.NET**
 		* [CLR-Persistence](https://github.com/3gstudent/CLR-Injection)
 			* Use CLR to inject all the .NET apps

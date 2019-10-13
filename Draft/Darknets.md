@@ -19,11 +19,11 @@
 	* [Ordering Checklist](https://www.reddit.com/r/DarkNetMarketsNoobs/wiki/completeorderingchecklist)
 * **General**
 	* [Site list: (NO CP)](http://belsec.skynetblogs.be/deepnet-the-tor-onion-directory-of-things-that-work-today.html)
-	* [Deep Dot Web](http://www.deepdotweb.co/)
+	* [Dark.Fail](http://darkfailllnkf4vf.onion/)
 	* [ProjectX](https://github.com/CHEF-KOCH/ProjectX)
 		* DarkWeb pages overview (yet another one) is designed to show Deep Web specific pages, software and other related information.
 * **Markets**
-	* [Market Discussions](https://www.reddit.com/r/DarkNetMarkets)
+	* [Market Discussions](http://dreadditevelidot.onion/d/darknetmarkets)
 * **Tools**
 	* [Tor Search engine.](https://ahmia.fi/search/)
 * **Wikis**

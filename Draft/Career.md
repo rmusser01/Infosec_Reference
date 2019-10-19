@@ -38,6 +38,9 @@
 
 
 
+
+
+
 ------------------------------------------------------
 ### Career Information<a name="career-info"></a>
 * **101**<a name="101"></a>
@@ -174,6 +177,8 @@
 * **Independent Business**<a name="Independent"></a>
 	* [Why You Should Charge Clients More Than You Think You’re Worth - Dorie Clark(HBR)](https://hbr.org/2017/10/why-you-should-charge-clients-more-than-you-think-youre-worth)	
 	* [How to Write a Statement of Work - Mary K Pratt](https://www.computerworld.com/article/2555324/how-to-write-a-statement-of-work.html)
+	* [Entrepreneurship for hackers - snyff(Christchurch CON 2019)](https://www.slideshare.net/snyff/entrepreneurship-for-hackers)
+	* [How to build your own Infosec Company - Mario Heiderich(nullcon Goa 2019)](https://www.youtube.com/watch?v=N2JG7qIlpi0)
 * **Informal Laws & Principles**<a name="laws"></a>
 	* [The Gervais Principle - RibbonFarm](https://www.ribbonfarm.com/the-gervais-principle/)
 	* [Peter Principle - Wikipedia](https://en.wikipedia.org/wiki/Peter_principle)
@@ -329,6 +334,14 @@
 		* [The Apple engineer who moved Mac to Intel applied to work at the Genius Bar in an Apple store and was rejected - BuisinessInsider](https://www.businessinsider.com/jk-scheinberg-apple-engineer-rejected-job-apple-store-genius-bar-2016-9)
 	* **Shady things**
 		* [How Google Protected Andy Rubin, the ‘Father of Android’ - Daisuke Wakabayashi and Katie Benner(NYT)](https://www.nytimes.com/2018/10/25/technology/google-sexual-harassment-andy-rubin.html)
+	* **Stack Ranking**
+		* [Vitality curve - Wikipedia](https://en.wikipedia.org/wiki/Vitality_curve)
+		* [How stack ranking corrupts culture, at Uber and Beyond - Rob Davies(Perdoo)](https://www.perdoo.com/blog/stack-ranking/)
+		* [Stack-ranking is appealing, and it should die - Girard Dorney(HRMOnline)](https://www.hrmonline.com.au/performance/stack-ranking-appealing-die/)
+		* [Inside Facebook’s ‘cult-like’ workplace, where dissent is discouraged and employees pretend to be happy all the time - Salvador Rodriguez(CNBC)](https://www.cnbc.com/2019/01/08/facebook-culture-cult-performance-review-process-blamed.html)
+		* [Microsoft's Lost Decade - Kurt Eichenwald(Vanitfair)](https://www.vanityfair.com/news/business/2012/08/microsoft-lost-mojo-steve-ballmer)
+		* [Microsoft Abandons 'Stack Ranking' of Employees - Shira Ovide, Rachel Feintzeig(WallStreetJournal)](https://www.wsj.com/articles/microsoft-abandons-8216stack-ranking8217-of-employees-1384279446)
+		* [ Amazon to drop dreaded stack-ranking performance reviews - Ángel González, Matt Day(SeattleTimes)](https://www.seattletimes.com/business/amazon/amazon-says-it-will-change-performance-reviews-focus-on-staffers-strengths/)
 	* **Wages**
 		* [Techtopus - Pando](https://pando.com/tag/techtopus/)
 		* [Newly unsealed documents show Steve Jobs' brutal response after getting a Google employee fired - Mark Ames](https://pando.com/2014/03/25/newly-unsealed-documents-show-steve-jobs-brutally-callous-response-after-getting-a-google-employee-fired/)

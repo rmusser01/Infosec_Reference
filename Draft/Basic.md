@@ -25,6 +25,7 @@
 * To Do:
 	* Add 'Day 0' Stuff - First member of the security team
 
+
 -------------------------
 ### General Information
 * **101**<a name="101"></a>
@@ -41,6 +42,7 @@
 	* [Software Engineering Body of Knowledge (SWEBOK) - IEEE](https://www.computer.org/education/bodies-of-knowledge/software-engineering)
 	* [Infra Living Standard — whatwg.org](https://infra.spec.whatwg.org/)
 		* Last Updated 30 August 2019; The Infra Standard aims to define the fundamental concepts upon which standards are built.
+	* [The Most Important Productivity Lesson I Ever Learned - Daniel Messler](https://danielmiessler.com/blog/the-most-important-productivity-lesson-i-ever-learned/)
 * **101 Principles**
 	* [Types of Authentication](http://www.gfi.com/blog/security-101-authentication-part-2/)
 	* [Access control best practices](https://srlabs.de/acs/)
@@ -62,6 +64,7 @@
 		* [Infosec Tools of the Trade: Getting Your Hands Dirty](http://www.irongeek.com/i.php?page=videos/bsidesnashville2017/bsides-nashville-2017-green00-infosec-tools-of-the-trade-getting-your-hands-dirty-jason-smith-and-tara-wink)
 			* In this presentation we'll will be going over introductions to the various focuses in information security and demoing the most common tools that are used in operational security, both offense and defense. You'll leave with an idea on how to freely obtain and use these tools so that you can have what you need for that first interview: experience and a passion for security. This is a green talk for people who don't have a clue on what offensive and defensive people do operationally, from a tool perspective.
 		* [So You Want To Be A H6x0r Getting Started in Cybersecurity Doug White and Russ Beauchemin ](https://www.youtube.com/watch?v=rRJKghTTics)
+		* [Breaking Into Information Security A Modern Guide - 0xSha](https://0xsha.io/posts/breaking-into-information-security-a-modern-guide)
 	* **Interview Preparation**
 		* See 'Career.md'
 	* **Relevant Standards**
@@ -114,6 +117,8 @@
 	* [Internet Safety for Teens, Kids, and Students - cooltechzone.com](https://cooltechzone.com/internet-safety-guide)
 	* [STOP. THINK. CONNECT. ™ Toolkit - DHS](https://www.dhs.gov/stopthinkconnect-toolkit)
 	* [What I Learned Trying To Secure Congressional Campaigns - idlewords](https://idlewords.com/2019/05/what_i_learned_trying_to_secure_congressional_campaigns.htm)
+* **History**
+	* [CyberInsecurity: The Cost of Monopoly - How the Dominance of Microsoft's Products Poses a Risk to Security - Daniel Geer, Charles P. Pfleeger, Bruce Schneier, John S. Quarterman, Perry Metzger, Rebecca Bace, and Peter Gutmann](https://www.schneier.com/essays/archives/2003/09/cyberinsecurity_the.html)
 * **How to Ask Better Questions**<a name="bq"></a>
 	* [How To Ask Questions The Smart Way - Eric Raymond](http://www.catb.org/esr/faqs/smart-questions.html)
 	* [Socratic questioning - Wikipedia](https://en.wikipedia.org/wiki/Socratic_questioning)

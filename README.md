@@ -7,9 +7,9 @@
 * Be an awesome Information Security Reference :ballot_box_with_check:
 * List of techinques, tools and tactics to learn from/reference. :ballot_box_with_check:
 * Rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches OR as a reference/recall method for stuff. :ballot_box_with_check:
-	* Something like a "Yellow Pages" in the sense of you know something exists, but what was it called....
-	* 'if you give a man a fish he is hungry again in an hour. If you teach him to catch a fish you do him a good turn.'
-* Always accepting more links/stuff. Feel free to make a pull request or complaint.
+* Something like a "Yellow Pages" in the sense of you know something exists, but what was it called....
+	* 'If you give a man a fish, he is hungry again in an hour. If you teach him to catch a fish, you do him a good turn.'
+* Always accepting more links/stuff. Feel free to make a pull request or a complaint.
 
 
 #### Why Do *You* Care?
@@ -18,15 +18,15 @@
 * Want to read some good info.
 
 #### Why Do *I* Care?
-* I do this as a resource for myself(to teach others from) and offer it publicly as a way of giving back to the general community.
+* I do this as a resource for myself(to teach myself & others from) and offer it publicly as a way of giving back to the general community.
 * To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel help build someone's skillset or increase understanding of attacks/methods/defenses.
+	* To be clear, I do not condone illegal activities and the purpose of this repo is not to enable or spread the perfomance of illegal activities.
 
 ##### This page
 * This page isn't ~~terrible~~ the best on mobile. Use [https://rmusser.net/docs](https://rmusser.net/docs) for better mobile formatting.
-* For latest content updates, check here: [Things added since last update](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/things-added.md)
-	* This will have all links added to the other pages sorted according to topic, making it easier to see new stuff.
-* All links on this page should work. Last tested 9/18
-* Contributions are welcome, format is pretty simple/easy to pick up, add anything not already in it that fits.
+* For latest content updates, check the git history. The Things-added.md file will be updated eventually.
+* All links on this page should work. Last tested some time ago.
+* Contributions are encouraged/appreciated.
 
 ------------------------------
 ### Index - Table of Contents
@@ -37,8 +37,10 @@
 - [BIOS/UEFI/Firmware Attacks/Defense](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/bios_uefi.md)
 - [:hammer:Building a Testing Lab:hammer:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Building_A_Lab.md)
 - [:car: Car hacking :car:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Cars.md)
+- [Career](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Career.md)
 - [Cheat Sheets](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Cheats.md)
 - [:video_camera:Conferences/Recordings:video_camera:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Conferences.md)
+- [Containers](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Containers.md)
 - [:star:Courses & Training:star:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Courses_Training.md)
 - [:game_die:Cryptography & Encryption:game_die:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/CandE.md)
 - [:checkered_flag: CTFs & Wargames :checkered_flag:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/CTFs_Wargames.md)

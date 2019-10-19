@@ -19,8 +19,7 @@
 
 
 #### Sort
-* [Firefed](https://github.com/numirias/firefed)
-	* Firefed is a command-line tool to inspect Firefox profiles. It can extract saved passwords, preferences, addons, history and more. You may use it for forensic analysis, to audit your config for insecure settings or just to quickly extract some data without starting up the browser.
+
 * [Forensics: Monitor Active Directory Privileged Groups with PowerShell - Ashley McGlone](https://blogs.technet.microsoft.com/ashleymcglone/2014/12/17/forensics-monitor-active-directory-privileged-groups-with-powershell/)
 https://zeltser.com/security-incident-questionnaire-cheat-sheet/
 https://zeltser.com/security-incident-survey-cheat-sheet/
@@ -28,6 +27,11 @@ https://zeltser.com/security-incident-log-review-checklist/
 * [Touch Screen Lexicon Forensics (TextHarvester/WaitList.dat) - Barnaby Skeggs](https://b2dfir.blogspot.com/2016/10/touch-screen-lexicon-forensics.html?m=1)
 * Sort sections alphabetically
 * Update ToC
+* [Planning for Compromise - docs.ms](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/planning-for-compromise)
+* [ADTimeline](https://github.com/ANSSI-FR/ADTimeline)
+	* PowerShell script creating a timeline of Active Directory changes with replication metadata
+* [Strategies to Mitigate Cyber Security Incidents - Mitigation Details - Australian Cyber Security Center](https://www.cyber.gov.au/publications/strategies-to-mitigate-cyber-security-incidents-mitigation-details)
+* [Digging Up the Past: Windows Registry Forensics Revisited - David Via](https://www.fireeye.com/blog/threat-research/2019/01/digging-up-the-past-windows-registry-forensics-revisited.html)
 * [National Incident Management System -USA](https://www.fema.gov/national-incident-management-system)
 * [Investigating CloudTrail Logs](https://medium.com/starting-up-security/investigating-cloudtrail-logs-c2ecdf578911)
 * [pagerduty Incident Response](https://response.pagerduty.com/)
@@ -40,10 +44,53 @@ https://zeltser.com/security-incident-log-review-checklist/
 https://medium.com/starting-up-security/who-fixes-that-bug-f17d48443e21
 https://www.sans.org/score/law-enforcement-faq/
 https://www.sans.org/score/incident-forms/
+* [Extracting Bitlocker Keys from a TPM - Denis Andzakovic](https://pulsesecurity.co.nz/articles/TPM-sniffing)
+
+
+DFIR
+	https://github.com/yampelo/beagle
+	https://medium.com/@forensic_matt/opcode-and-task-enumeration-and-shell-items-bd4ff0b548a3
+	https://www.linkedin.com/pulse/invoke-liveresponse-matthew-green
+	https://github.com/mgreen27/Powershell-IR
+	https://docs.velociraptor.velocidex.com/
+	https://www.andreafortuna.org/2019/06/12/windows-security-event-logs-my-own-cheatsheet/
+	https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/Default.aspx
+	https://www.crowdstrike.com/blog/automating-mac-forensic-triage/
+	https://www.irongeek.com/i.php?page=videos/bsidescleveland2019/bsides-cleveland-c-04-incident-response-on-macos-thomas-reed
+	https://github.com/certsocietegenerale/IRM/tree/master/EN
+	https://www.incidentresponse.com/playbooks/
+
+https://docs.microsoft.com/en-us/office365/securitycompliance/siem-server-integration
+
+* [The only PowerShell Command you will ever need to find out who did what in Active Directory - Przemyslaw Klys](https://evotec.xyz/the-only-powershell-command-you-will-ever-need-to-find-out-who-did-what-in-active-directory/)
+
+
+* [Regipy: Automating registry forensics with python - Martin Korman](https://medium.com/dfir-dudes/regipy-automating-registry-forensics-with-python-b170a1e2b474)
+* [regipy](https://github.com/mkorman90/regipy)
+	* Regipy is an os independent python library for parsing offline registry hives
+
+Cloud IR
+	* https://www.sans.org/reading-room/whitepapers/cloud/digital-forensic-analysis-amazon-linux-ec2-instances-38235
+	* https://www.sans.org/reading-room/whitepapers/incident/paper/36902
+	* https://www.blackhat.com/docs/us-16/materials/us-16-Krug-Hardening-AWS-Environments-And-Automating-Incident-Response-For-AWS-Compromises-wp.pdf
+	* https://aws.amazon.com/blogs/publicsector/building-a-cloud-specific-incident-response-plan/
+	* https://www.amazon.com/Incident-Response-Strategic-Handling-Security/dp/1578702569
+	* http://threatresponse-derbycon.s3-website-us-west-2.amazonaws.com/#/step-1
+	* https://cloud.gov/docs/ops/security-ir/
+	* https://www.slideshare.net/AmazonWebServices/incident-response-in-the-cloud-sid319-reinvent-2017
+	* https://www.slideshare.net/AmazonWebServices/incident-response-in-the-cloud-sid319-reinvent-2017
+	* https://www.youtube.com/watch?v=Y9cAHxd0kW4
+
+* [Cleaning the Apple Orchard - Using Venator to Detect macOS Compromise - Richie Cyrus(BSides Charm2019)](http://www.irongeek.com/i.php?page=videos/bsidescharm2019/1-02-cleaning-the-apple-orchard-using-venator-to-detect-macos-compromise-richie-cyrus)
+	* Various solutions exist to detect malicious activity on macOS. However, they are not intended for enterprise use or involve installation of an agent. This session will introduce and demonstrate how to detect malicious macOS activity using the tool Venator. Venator is a python based macOS tool designed to provide defenders with the data to proactively identify malicious macOS activity at scale.
+
+
+https://www.youtube.com/watch?v=YGJaj6_3dGA
 
 https://aboutdfir.com/
 https://forensixchange.com/posts/19_08_03_usb_storage_forensics_1/
-
+* [HAWK 1.1.4](https://www.powershellgallery.com/packages/HAWK/1.1.4)
+	* The Hawk module has been designed to ease the burden on O365 administrators who are performing a forensic analysis in their organization. It accelerates the gathering of data from multiple sources in the service. It does NOT take the place of a human reviewing the data generated and is simply here to make data gathering easier.
 
 https://github.com/giMini/PowerMemory
 
@@ -59,13 +106,7 @@ https://github.com/giMini/PowerMemory
 
 * [Data recovery on dead micro SD card - HDD Recovery Services](https://www.youtube.com/watch?v=jjB6wliyE_Y&feature=youtu.be)
 
-
-
-
-
-
-
-
+* [Digital Forensics Tips&Tricks: How to Detect an Intruder-driven Group Policy Changes - volnodumcev](https://habr.com/en/post/444048/)
 
 * [SQLite-Parser](https://github.com/mdegrazia/SQLite-Deleted-Records-Parser)
 	* Script to recover deleted entries in an SQLite database
@@ -274,18 +315,23 @@ https://cert.societegenerale.com/en/publications.html
 	* [Google Chrome Forensics-SANS](https://digital-forensics.sans.org/blog/2010/01/21/google-chrome-forensics#)
 * **General**
 * **Tools**
-	* [MozillaRecovery](https://github.com/gtfy/MozillaRecovery)
-		* Recovers the master password of key3.db files, i.e. Thunderbird, Firefox
-	* [Extension Finder](https://github.com/brad-anton/extension_finder)
-		* Python and PowerShell utilities for finding installed browser extensions, plug-ins and add-ons. Attempts to find installed browser extensions (sometimes called add-ons or plug-ins, depending on the browser).
-	* [MozillaRecovery](https://github.com/gtfy/MozillaRecovery)
-		* Recovers the master password of key3.db files, i.e. Thunderbird, Firefox
-	* [Chrome Ragamuffin](https://github.com/cube0x8/chrome_ragamuffin)
-		* Volatility plugin designed to extract useful information from Google Chrome's address space. The goal of this plugin is to make possible the analysis of a Google Chrome running instance. Starting from a memory dump, Chrome Ragamuffin can list which page was open on which tab and it is able to extract the DOM Tree in order to analyze the full page structure.
-	* [firefox_decrypt](https://github.com/unode/firefox_decrypt)
-		* Firefox Decrypt is a tool to extract passwords from Mozilla (Firefox/Thunderbird/Seabird) profiles
-	* [firepwd.py](https://github.com/lclevy/firepwd)
-		* firepwd.py, an open source tool to decrypt Mozilla protected passwords
+	* **Chrome**
+		* [Chrome Ragamuffin](https://github.com/cube0x8/chrome_ragamuffin)
+			* Volatility plugin designed to extract useful information from Google Chrome's address space. The goal of this plugin is to make possible the analysis of a Google Chrome running instance. Starting from a memory dump, Chrome Ragamuffin can list which page was open on which tab and it is able to extract the DOM Tree in order to analyze the full page structure.
+	* **Firefox**
+		* [MozillaRecovery](https://github.com/gtfy/MozillaRecovery)
+			* Recovers the master password of key3.db files, i.e. Thunderbird, Firefox
+		* [MozillaRecovery](https://github.com/gtfy/MozillaRecovery)
+			* Recovers the master password of key3.db files, i.e. Thunderbird, Firefox
+		* [firefox_decrypt](https://github.com/unode/firefox_decrypt)
+			* Firefox Decrypt is a tool to extract passwords from Mozilla (Firefox/Thunderbird/Seabird) profiles
+		* [firepwd.py](https://github.com/lclevy/firepwd)
+			* firepwd.py, an open source tool to decrypt Mozilla protected passwords
+		* [Firefed](https://github.com/numirias/firefed)
+			* Firefed is a command-line tool to inspect Firefox profiles. It can extract saved passwords, preferences, addons, history and more. You may use it for forensic analysis, to audit your config for insecure settings or just to quickly extract some data without starting up the browser.
+	* **Neutral**
+		* [Extension Finder](https://github.com/brad-anton/extension_finder)
+			* Python and PowerShell utilities for finding installed browser extensions, plug-ins and add-ons. Attempts to find installed browser extensions (sometimes called add-ons or plug-ins, depending on the browser).
 * **Miscellaneous**
 
 

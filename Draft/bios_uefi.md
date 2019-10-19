@@ -11,63 +11,6 @@
 - [Speculative Execution Flaws/Writeups](#melt)
 - [Miscellaneous Things](#other)
 
-
-
-
-
-#### Sort
-
-* **To-Do**
-	* Add rowhammer related materials
-
-* [GOD MODE UNLOCKED - Hardware Backdoors in x86 CPUs - Christopher Domas](https://www.youtube.com/watch?v=_eSAF_qT_FY&feature=youtu.be)
-	* This talk will demonstrate what everyone has long feared but never proven: there are hardware backdoors in some x86 processors, and they're buried deeper than we ever imagined possible. While this research specifically examines a third-party processor, we use this as a stepping stone to explore the feasibility of more widespread hardware backdoors.
-
-* [Behind the Scenes of Intel Security and Manageability Engine - Shai Hasarfaty, Yanai Moyal](https://i.blackhat.com/USA-19/Wednesday/us-19-Hasarfaty-Behind-The-Scenes-Of-Intel-Security-And-Manageability-Engine.pdf)
-
-https://www.peerlyst.com/posts/the-everything-about-chips-uefi-and-firmware-security-wiki-chiheb-chebbi?trk=search_page_search_result
-
-BMC Related
-* [The Unbearable Lightness of BMCs | Matias Soler & Nico Waisman (BHUSA2018)](https://www.youtube.com/watch?v=mosERjbrgdo&t=0s&list=PLH15HpR5qRsVAXGmSVfjWrGtGLJjIJuGe&index=101)
-* [Remotely Attacking System Firmware - Alex Bazhaniuk, Jesse Michael, Mickey Shkatov(BHUSA2018)](https://i.blackhat.com/us-18/Wed-August-8/us-18-Michael-Shkatov-Remotely-Attacking-System-Firmware.pdf)
-* [Turning your BMC into a revolving door - Alexandre Gazet, Fabien Perigaud 0xf4b, Joffrey Czarny - ZeroNights2018](https://www.youtube.com/watch?v=z5uBYTXSex0)
-	* [Slides](https://www.synacktiv.com/ressources/zeronights_2018_turning_your_bmc_into_a_revolving_door.pdf)
-* [Subverting your server through its BMC: the HPE iLO4 case - Fabien Periguad, Alexandre Gazet, Joffrey Czarny](https://airbus-seclab.github.io/ilo/RECONBRX2018-Slides-Subverting_your_server_through_its_BMC_the_HPE_iLO4_case-perigaud-gazet-czarny.pdf)
-* [ilo4_toolbox - Subverting your server through its BMC: the HPE iLO4 case](https://github.com/airbus-seclab/ilo4_toolbox)
-* [CVE-2017-12542 - skelsec](https://github.com/skelsec/CVE-2017-12542)
-	* Test and exploit for CVE-2017-12542
-* [Turning your BMC into a revolving door - Alexandre Gazet, Fabien Perigaud 0xf4b, Joffrey Czarny - ZeroNights 2018](https://www.youtube.com/watch?v=z5uBYTXSex0)
-	* Unmonitored and unpatched BMC (remote administration hardware feature for servers) are an almost certain source of chaos. They have the potential to completely undermined the security of complex network infrastructures and data centers. Our on-going effort to analyze HPE iLO systems (4 and 5) resulted in the discovery of many vulnerabilities, the last one having the capacity to fully compromise the iLO chip from the host system itself. This talk will show how a combination of these vulnerabilities can turn an iLO BMC into a revolving door between an administration network and the production network.
-	* [Slides](	https://www.synacktiv.com/ressources/zeronights_2018_turning_your_bmc_into_a_revolving_door.pdf)
-
-
-https://translate.google.com/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=http%3A%2F%2Fblog.ptsecurity.ru%2F2018%2F01%2Fintel-me.html&edit-text=
-
-* [How Does an Intel Processor Boot? - BinaryDebt](https://binarydebt.wordpress.com/2018/10/06/how-does-an-x86-processor-boot/)
-* [Understanding L1 Terminal Fault aka Foreshadow: What you need to know - Jon Masters](https://www.redhat.com/en/blog/understanding-l1-terminal-fault-aka-foreshadow-what-you-need-know)
-* [GuardION - Android GuardION patches to mitigate DMA-based Rowhammer attacks on ARM](https://github.com/vusec/guardion)
-	* This software is the open-source component of our paper "GuardION: Practical Mitigation of DMA-based Rowhammer Attacks on ARM", published in the Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA) 2018. It allows you to patch an Android kernel so that DMA allocations are guarded with empty rows, resulting in the isolation of bitflips and thus mitigation of Drammer-like attacks.
-
-Intel VISA
-	* https://www.blackhat.com/asia-19/briefings/schedule/#intel-visa-through-the-rabbit-hole-13513
-	* https://www.zdnet.com/article/researchers-discover-and-abuse-new-undocumented-feature-in-intel-chipsets/
-	* https://www.theregister.co.uk/2019/03/29/intel_visa_hack/
-	* https://github.com/ptresearch/IntelVISA-BH2019
-
-* [Attacking Hardware Root of Trust from UEFI Firmware - Alex Matrosov(OffensiveCon19)](https://www.youtube.com/watch?v=Ap-2CnoyBek)
-	* [Slides(from BHASIA19](https://github.com/REhints/Publications/blob/f1f305eff156267e194e941d32caf7cc2bfc053b/Conferences/Bypassing%20Hardware%20Root%20of%20Trust/BHASIA2019_matrosov_final.pdf)
-
-* [CPU security bugs caused by speculative execution](https://github.com/marcan/speculation-bugs)
-	* This repo is an attempt to collect information on the class of information disclosure vulnerabilities caused by CPU speculative execution that were disclosed on January 3rd, 2018.
-
-
-* [UEFI Resources](https://github.com/uefitech/resources)
-	* One-stop shop for UEFI/BIOS specifications/utilities by UEFI.Tech community
-* [uefi_specs_personal_collections](https://github.com/xiaopangzi313/uefi_specs_personal_collections)
-	* "This repo contains some UEFI learning documents collected by individuals. Although these documents are not comprehensive enough, they are still helpful for beginner developers."
-	
-#### End Sort
-
 -----------------
 ### <a name="general">General</a>
 * [Timeline of Low level software and hardware attack papers](http://timeglider.com/timeline/5ca2daa6078caaf4)
@@ -104,10 +47,7 @@ Intel VISA
 * **Miscellaneous**
 	* [Intel ME (Manageability engine) Huffman algorithm](http://io.smashthestack.org/me/)
 
-
-
-
--------------------------
+---------------------------
 ## <a name="uefi"></a> UEFI
 * **101**
 	* [Official UEFI Site - Specs](http://www.uefi.org/specsandtesttools)
@@ -275,3 +215,62 @@ Intel VISA
 	* includes UEFI, NTFS, bootmgr SLIC injectors and installers.
 * [Firmware Modifcation kit](https://code.google.com/p/firmware-mod-kit/)
 	* This kit is a collection of scripts and utilities to extract and rebuild linux based firmware images.
+
+
+
+
+
+#### Sort
+
+* **To-Do**
+	* Add rowhammer related materials
+
+* [GOD MODE UNLOCKED - Hardware Backdoors in x86 CPUs - Christopher Domas](https://www.youtube.com/watch?v=_eSAF_qT_FY&feature=youtu.be)
+	* This talk will demonstrate what everyone has long feared but never proven: there are hardware backdoors in some x86 processors, and they're buried deeper than we ever imagined possible. While this research specifically examines a third-party processor, we use this as a stepping stone to explore the feasibility of more widespread hardware backdoors.
+https://chaos.mimoja.de/p/BkzDbBgsV#/
+http://build.mimoja.de/AMD%20x86_64%20Firmware.html
+
+* [Behind the Scenes of Intel Security and Manageability Engine - Shai Hasarfaty, Yanai Moyal](https://i.blackhat.com/USA-19/Wednesday/us-19-Hasarfaty-Behind-The-Scenes-Of-Intel-Security-And-Manageability-Engine.pdf)
+
+https://www.peerlyst.com/posts/the-everything-about-chips-uefi-and-firmware-security-wiki-chiheb-chebbi?trk=search_page_search_result
+
+BMC Related
+* [The Unbearable Lightness of BMCs | Matias Soler & Nico Waisman (BHUSA2018)](https://www.youtube.com/watch?v=mosERjbrgdo&t=0s&list=PLH15HpR5qRsVAXGmSVfjWrGtGLJjIJuGe&index=101)
+* [Remotely Attacking System Firmware - Alex Bazhaniuk, Jesse Michael, Mickey Shkatov(BHUSA2018)](https://i.blackhat.com/us-18/Wed-August-8/us-18-Michael-Shkatov-Remotely-Attacking-System-Firmware.pdf)
+* [Turning your BMC into a revolving door - Alexandre Gazet, Fabien Perigaud 0xf4b, Joffrey Czarny - ZeroNights2018](https://www.youtube.com/watch?v=z5uBYTXSex0)
+	* [Slides](https://www.synacktiv.com/ressources/zeronights_2018_turning_your_bmc_into_a_revolving_door.pdf)
+* [Subverting your server through its BMC: the HPE iLO4 case - Fabien Periguad, Alexandre Gazet, Joffrey Czarny](https://airbus-seclab.github.io/ilo/RECONBRX2018-Slides-Subverting_your_server_through_its_BMC_the_HPE_iLO4_case-perigaud-gazet-czarny.pdf)
+* [ilo4_toolbox - Subverting your server through its BMC: the HPE iLO4 case](https://github.com/airbus-seclab/ilo4_toolbox)
+* [CVE-2017-12542 - skelsec](https://github.com/skelsec/CVE-2017-12542)
+	* Test and exploit for CVE-2017-12542
+* [Turning your BMC into a revolving door - Alexandre Gazet, Fabien Perigaud 0xf4b, Joffrey Czarny - ZeroNights 2018](https://www.youtube.com/watch?v=z5uBYTXSex0)
+	* Unmonitored and unpatched BMC (remote administration hardware feature for servers) are an almost certain source of chaos. They have the potential to completely undermined the security of complex network infrastructures and data centers. Our on-going effort to analyze HPE iLO systems (4 and 5) resulted in the discovery of many vulnerabilities, the last one having the capacity to fully compromise the iLO chip from the host system itself. This talk will show how a combination of these vulnerabilities can turn an iLO BMC into a revolving door between an administration network and the production network.
+	* [Slides](	https://www.synacktiv.com/ressources/zeronights_2018_turning_your_bmc_into_a_revolving_door.pdf)
+
+
+https://translate.google.com/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=http%3A%2F%2Fblog.ptsecurity.ru%2F2018%2F01%2Fintel-me.html&edit-text=
+
+* [How Does an Intel Processor Boot? - BinaryDebt](https://binarydebt.wordpress.com/2018/10/06/how-does-an-x86-processor-boot/)
+* [Understanding L1 Terminal Fault aka Foreshadow: What you need to know - Jon Masters](https://www.redhat.com/en/blog/understanding-l1-terminal-fault-aka-foreshadow-what-you-need-know)
+* [GuardION - Android GuardION patches to mitigate DMA-based Rowhammer attacks on ARM](https://github.com/vusec/guardion)
+	* This software is the open-source component of our paper "GuardION: Practical Mitigation of DMA-based Rowhammer Attacks on ARM", published in the Conference on Detection of Intrusions and Malware & Vulnerability Assessment (DIMVA) 2018. It allows you to patch an Android kernel so that DMA allocations are guarded with empty rows, resulting in the isolation of bitflips and thus mitigation of Drammer-like attacks.
+
+Intel VISA
+	* https://www.blackhat.com/asia-19/briefings/schedule/#intel-visa-through-the-rabbit-hole-13513
+	* https://www.zdnet.com/article/researchers-discover-and-abuse-new-undocumented-feature-in-intel-chipsets/
+	* https://www.theregister.co.uk/2019/03/29/intel_visa_hack/
+	* https://github.com/ptresearch/IntelVISA-BH2019
+
+* [Attacking Hardware Root of Trust from UEFI Firmware - Alex Matrosov(OffensiveCon19)](https://www.youtube.com/watch?v=Ap-2CnoyBek)
+	* [Slides(from BHASIA19](https://github.com/REhints/Publications/blob/f1f305eff156267e194e941d32caf7cc2bfc053b/Conferences/Bypassing%20Hardware%20Root%20of%20Trust/BHASIA2019_matrosov_final.pdf)
+
+* [CPU security bugs caused by speculative execution](https://github.com/marcan/speculation-bugs)
+	* This repo is an attempt to collect information on the class of information disclosure vulnerabilities caused by CPU speculative execution that were disclosed on January 3rd, 2018.
+
+
+* [UEFI Resources](https://github.com/uefitech/resources)
+	* One-stop shop for UEFI/BIOS specifications/utilities by UEFI.Tech community
+* [uefi_specs_personal_collections](https://github.com/xiaopangzi313/uefi_specs_personal_collections)
+	* "This repo contains some UEFI learning documents collected by individuals. Although these documents are not comprehensive enough, they are still helpful for beginner developers."
+	
+#### End Sort

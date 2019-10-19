@@ -76,6 +76,12 @@
 
 
 
+
+https://github.com/ceicke/bettercap-elbsides
+* [Signaling vulnerabilities in wiretapping systems](http://www.crypto.com/papers/wiretap.pdf)
+https://www.nds.rub.de/media/ei/arbeiten/2017/01/30/exploiting-printers.pdf
+https://web-in-security.blogspot.com/2017/01/printer-security.html
+
 * [pentest-machine](https://github.com/DanMcInerney/pentest-machine)
 
 * [More of using rpcclient to find usernames - carnal0wnage](http://carnal0wnage.attackresearch.com/2007/08/more-of-using-rpcclient-to-find.html)
@@ -105,11 +111,11 @@ https://kn100.me/exploiting-upnp-literally-childsplay/
 https://github.com/s0md3v/Striker
 http://www.guadalajaracon.org/talleres/desarrollando-para-nmap-scripting-engine-nse/
 https://github.com/unixrox/prebellico
-
+https://incogbyte.github.io/bypass_nac/
 https://hypothetical.me/short/dns-0x20/
 https://www.digitalinterruption.com/single-post/2018/04/22/NET-Deserialization-to-NTLM-hashes
 https://techblog.mediaservice.net/2018/02/from-xml-external-entity-to-ntlm-domain-hashes/
-
+https://github.com/ceicke/bettercap-elbsides
 * [Windows Management Instrumentation (WMI)Offense, Defense, and Forensics](https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/wp-windows-management-instrumentation.pdf)
 
 

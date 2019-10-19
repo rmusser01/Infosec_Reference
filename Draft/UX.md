@@ -1,5 +1,6 @@
-# UX/UI Design - Because we all know how sexy PGP looks / How easy to use it is.
+# UX/UI Design
 
+## Because we all know how sexy using PGP is.
 
 ----------------------
 #### ToC
@@ -17,11 +18,10 @@ Articulating Design Decisions: Communicate with Stakeholders, Keep Your Sanity, 
 UX Research: Practical Techniques for Designing Better Products
 Lean UX: Applying Lean Principles to Improve User Experience
 Information Architecture: For the Web and Beyond
-http://www.catb.org/~esr/html-hell.html
 
+* [Welcome to The HTML Hell Page - catb.org](http://www.catb.org/~esr/html-hell.html)
 
-
-
+* [Re-approaching Color - Kevyn Arnott](https://design.lyft.com/re-approaching-color-9e604ba22c88)
 
 
 

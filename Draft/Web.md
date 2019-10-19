@@ -20,8 +20,8 @@
 	- [Exploitation of Authentication](#eoa) 
 	- [Insecure Direct Object Reference](#idor)
 	- [Injection Based Attacks](#ija)
-		- OS Command Injection 
-		- (NO)SQL Injection
+		- [OS Command Injection](#osc)
+		- [(NO)SQL Injection](#sql)
 	- [JNDI](#jndi)
 	- [Java Serialization Attacks](#jsa) 
 	- [LFI & RFI](#lrfi)
@@ -39,7 +39,7 @@
 - [CMS Specific Tools](#cms)
 - [Content Security Policy(CSP)](#csp)
 - [Common Origin Resource Sharing (CORS)](#cors)
-- [Cold Fusion](#coldfusion)php"
+- [Cold Fusion](#coldfusion)
 - [Continous Integration/Build Systems](#cii)
 - [Cross-Site History Manipulation (XHSM)](#xhsm)
 - [Electron](#electron)
@@ -78,6 +78,182 @@
 	- [Cloudflare related](#cloudflare)
 	- [Google Compute Cloud/AppEngine](#gcc)
 - [BugBounty Writeups](#bugbounty)
+
+
+
+
+
+ASP(X)
+https://poc-server.com/blog/2018/05/22/rce-by-uploading-a-web-config/
+https://www.youtube.com/watch?v=NPDp7GHmMa0&list=PLIK9nm3mu-S4vjC0EGZVEK3WAKwT3rAFy&index=5&t=0s
+
+
+https://tasteofsecurity.com/security/php-strip-tags-to-bypass-waf-xss/
+https://labs.nettitude.com/blog/how-to-exfiltrate-aws-ec2-data/
+
+
+Code Analysis
+https://rastating.github.io/bludit-brute-force-mitigation-bypass/
+https://blog.ripstech.com/2019/woocommerce-csrf-to-stored-xss/
+https://www.fortinet.com/blog/threat-research/d-link-routers-found-vulnerable-rce.html
+https://blog.hacktivesecurity.com/index.php?controller=post&action=view&id_post=41
+
+
+
+
+https://github.com/d3vilbug/HackBar
+
+https://www.netsparker.com/whitepaper-same-origin-policy/
+https://offsec.almond.consulting/super-magic-hash.html
+https://research.kudelskisecurity.com/2019/10/08/fido2-solving-the-password-problem/
+https://frichetten.com/blog/bypass-guardduty-pentest-alerts
+https://github.com/prodigysml/Dr.-Watson
+https://www.youtube.com/watch?v=AMmGtFsZutk
+
+https://research.aurainfosec.io/same-origin-policy/
+https://medium.com/@tarekmohamed_20773/add-new-user-with-admin-permission-and-takeover-the-organization-6318ee10154a
+https://ryanwise.me/intigriti-xss-challenge/
+
+https://www.veracode.com/blog/secure-development/data-extraction-command-execution-csv-injection
+https://incogbyte.github.io/pathtraversal/
+https://www.nccgroup.trust/us/our-research/requests-racer-a-python-library-for-exploiting-concurrency-related-vulnerabilities-in-web-applications/
+
+
+https://www.ryanwendel.com/2019/09/27/application-enumeration-tips-using-aquatone-and-burp-suite/
+https://medium.com/redteam/stealing-jwts-in-localstorage-via-xss-6048d91378a0
+https://portswigger.net/research/one-xss-cheatsheet-to-rule-them-all
+
+https://github.com/pwnwiki/webappdefaultsdb
+
+https://github.com/eonlight/BurpExtenderHeaderChecks
+* [MarkOfTheWeb: How a Forgetful Russian Agent Left a Trail of Breadcrumbs - Yonathan Klijnsma](https://www.riskiq.com/blog/labs/markoftheweb/)
+
+https://portswigger.net/web-security/request-smuggling
+https://d1.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf
+https://d1.awsstatic.com/whitepapers/Storage/AWS%20Storage%20Services%20Whitepaper-v9.pdf
+
+https://www.arturjanc.com/cross-origin-infoleaks.pdf
+https://chromium.googlesource.com/chromium/src/+/master/services/network/cross_origin_read_blocking_explainer.md
+https://chromium.googlesource.com/chromium/src/+/master/docs/security/side-channel-threat-model.md
+https://www.youtube.com/watch?v=pGn95-L8_sA&feature=youtu.be
+https://github.com/redhuntlabs/BurpSuite-Asset_Discover
+
+https://github.com/0xacb/viewgen
+https://github.com/internetwache/CT_subdomains
+
+* [Red Teaming Microsoft: Part 1 – Active Directory Leaks via Azure - Mike Felch](https://www.blackhillsinfosec.com/red-teaming-microsoft-part-1-active-directory-leaks-via-azure/)
+
+* [CIS Amazon Web Services Foundations](https://d0.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf)
+* [REMOTE CODE EXECUTION ! 😜 Recon Wins - vishnuraj](https://medium.com/@vishnu0002/remote-code-execution-recon-wins-e9c1db79f3da)
+* [Imagecreatefromgif-Bypass](https://github.com/JohnHoder/Imagecreatefromgif-Bypass)
+
+
+https://jspin.re/fileupload-blind-sqli/
+* [Same-Origin Policy: From birth until today -Alex Nikolova ](https://research.aurainfosec.io/same-origin-policy/)
+
+https://securityriskadvisors.com/blog/aws-iam-exploitation/
+
+
+https://www.blackhillsinfosec.com/securing-the-cloud-a-story-of-research-discovery-and-disclosure/
+
+https://github.com/nccgroup/requests-racer
+https://vimeo.com/album/3510171
+
+* https://0x09al.github.io/waf/bypass/ssl/2018/07/02/web-application-firewall-bypass.html
+https://speakerdeck.com/tweekfawkes/blue-cloud-of-death-red-teaming-azure-1
+https://github.com/aws-samples/aws-security-workshops
+XSS
+https://portswigger.net/blog/xss-without-parentheses-and-semi-colons
+https://speakerdeck.com/lmt_swallow/gimme-a-bit-exploring-attacks-in-the-post-xss-world
+https://zeropwn.github.io/2019-05-13-xss-to-rce/
+https://www.allysonomalley.com/2018/12/03/ios-bug-hunting-web-view-xss/
+https://github.com/tr4l/iframeBusterXSS
+https://www.hahwul.com/2019/04/bypass-xss-protection-with-xmp-noscript-etc....html
+https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-lekies.pdf
+
+https://github.com/RyanLamansky/dotnet-webassembly
+* [Content Security Policy Level 3 - w3c Feb2019](https://w3c.github.io/webappsec-csp/)
+https://lgtm.com/blog/apache_struts_CVE-2018-11776
+
+https://www.slideshare.net/MichaelFelch/red-team-tactics-for-cracking-the-gsuite-perimeter
+
+
+https://github.com/martinjackson/electron-run-shell-example?files=1
+https://thetestlabs.io/post/cloudgoat-2-walkthrough-part-one/
+
+https://github.com/for-GET/http-decision-diagram/blob/master/doc/README.md
+
+* [HTML Smuggling Explained](https://outflank.nl/blog/2018/08/14/html-smuggling-explained/)
+
+https://github.com/jdonsec/AllThingsSSRF
+https://www.offensive-security.com/offsec/analyzing-a-creative-attack-chain/
+https://portswigger.net/blog/exploiting-cors-misconfigurations-for-bitcoins-and-bounties
+https://github.com/nccgroup/requests-racer
+
+* [DOM - Living Standard(Aug 2019)](https://dom.spec.whatwg.org/)
+* [The most common OAuth 2.0 Hacks - Okhomiak](https://habr.com/en/post/449182/)
+https://appio.dev/vulns/clickjacking-xss-on-google-org/
+* https://github.com/0xSobky/HackVault/wiki
+
+https://captmeelo.com/bugbounty/2019/09/02/asset-enumeration.html
+https://github.com/kapytein/jsonp
+https://github.com/EdOverflow/bugbountywiki/wiki/XSSI-and-JSONP-leaks
+https://blog.hackedu.io/analysis-of-common-federated-identity-protocols/
+https://medium.com/swlh/bypassing-csrf-protection-c9b217175ee
+
+https://portswigger.net/daily-swig/av-oracle-new-hacking-technique-leverages-antivirus-to-steal-secrets
+https://blog.appsecco.com/getting-shell-and-data-access-in-aws-by-chaining-vulnerabilities-7630fa57c7ed
+
+https://github.com/arbazkiraak/LinksDumper
+
+* [Kraken](https://github.com/Sw4mpf0x/Kraken)
+	* Kraken is a tool to help make your web interface testing workflow more efficient. This is done by using Django, Apache, and a MySql database to store and organize web interface screenshots and data. This allows you and your team to take notes and track which hosts have been tested simultaniously. Once you are finished, you can view these notes you took and generate reports in the Reports section.
+
+https://paragonie.com/blog/2018/08/security-concerns-surrounding-webauthn-don-t-implement-ecdaa-yet
+
+* [Using HTTP Pipelining to hide requests - digi.ninja](https://digi.ninja/blog/pipelining.php)
+
+https://frichetten.com/blog/bypass-guardduty-pentest-alerts
+https://www.blackhat.com/docs/us-16/materials/us-16-Amiga-Account-Jumping-Post-Infection-Persistency-And-Lateral-Movement-In-AWS-wp.pdf
+
+* [Breaking and abusing specifications and policies - Frans Rosén(SecurityFest 2018)](https://www.youtube.com/watch?v=_VsFrYAjJ8k&feature=youtu.be)
+	* Last year at Secfest, Frans Rosén talked about DNS hijacking using cloud services. This time, he approaches technologies where verification methods actually exists and how to break them. Let’s Encrypt closed down one of their three blessed verification methods due to a bug Frans found in January. Cloud storage containers already patched from being publicly exposed are still often vulnerable to full modification, extraction and deletion by abusing weak policies and application logic. Frans goes through some weak design patterns, policy structures and explains how to bypass them which have netted him over $45,000 in bug bounties.
+
+RE JS
+	https://www.youtube.com/watch?v=8UqHCrGdxOM
+	https://www.youtube.com/watch?v=PPzRcZLNCPY
+	https://www.youtube.com/watch?v=y6Uzinz3DRU
+	https://www.youtube.com/watch?v=VcFQeimLH1c
+	https://medium.com/the-node-js-collection/debugging-node-js-with-google-chrome-4965b5f910f4
+
+
+* [XSS in steam react chat client - Zemmez](https://hackerone.com/reports/409850)
+
+* .NET DeSerialization Attack Research
+	* https://github.com/0xACB/viewgen
+	* https://github.com/Illuminopi/RCEvil.NET
+	* https://github.com/pwntester/ysoserial.net
+	* https://illuminopi.com/assets/files/BSidesIowa_RCEvil.net_20190420.pdf
+	* https://cyku.tw/ctf-hitcon-2018-why-so-serials/
+	* https://xz.aliyun.com/t/3019
+	* https://speakerdeck.com/pwntester/dot-net-serialization-detecting-and-defending-vulnerable-endpoints
+	* TL;DR - if you can leak the web.config file for a .NET application you are testing (via LFD, XXE, etc), you can most likely achieve remote code execution by exploiting the VIEWSTATE parameter. The value of the view state in .NET is deserialized via ObjectStateFormatter.Deserialize. You can generate a signed/encrypted viewstate containing your own serialized contents, leading to RCE. This tool helps generating both signed and encrypted payloads with leaked validation keys.
+
+	https://github.com/stuhirst/awssecurity/
+
+
+https://www.doyler.net/security-not-included/referer-xss
+
+* [How to steal any developer's local database - bouk.co](https://web.archive.org/web/20170119060232/https://bouk.co/blog/hacking-developers/)
+	* [Extract data](https://github.com/bouk/extractdata)
+		* Extract data is a demo combining a cross-protocol request attack with DNS rebinding
+
+* [HTML Form Protocol Attack - Jochen Topf(2001)](https://web.archive.org/web/20170810193321/https://www.jochentopf.com/hfpa/hfpa.pdf)
+	* This paper describes how some HTML browsers can be tricked through the use of HTML forms into sending more or less arbitrary data to any TCP port. This can be used to send commands to servers using ASCII based protocols like SMTP, NNTP, POP3, IMAP, IRC, and others. By sending HTML email to unsuspecting users or using a trojan HTML page, an attacker might be able to send mail or post Usenet News through servers normally not accessible to him. In special cases an attacker might be able to do other harm, e.g. deleting mail from a POP3 mailbox.
+
+* [The Hamburglar](https://github.com/needmorecowbell/Hamburglar)
+	* Hamburglar -- collect useful information from urls, directories, and files
+
 
 https://www.slideshare.net/ssuserf09cba/xxe-how-to-become-a-jedi
 https://x-c3ll.github.io/posts/parasite-web-server-process/
@@ -186,11 +362,11 @@ https://rhinosecuritylabs.com/application-security/xxe-zeroday-vulnerability-in-
 http://www.visualsitemapper.com/
 https://www.theregister.co.uk/2019/08/10/memory_corruption_sqlite/
 
-
+https://github.com/soffensive/windowsblindread
 
 https://swagger.io/docs/specification/about/
 https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md
-
+https://www.offensive-security.com/offsec/analyzing-a-creative-attack-chain/
 https://github.com/mvetsch/JWT4B
 
 JS recon
@@ -199,14 +375,21 @@ https://github.com/nahamsec/JSParser
 https://medium.com/bugbountywriteup/bug-bounty-tips-tricks-js-javascript-files-bdde412ea49d
 * [Instrumenting Electron Apps for Security Testing - Paolo Stagno](https://blog.doyensec.com/2018/07/19/instrumenting-electron-app.html)
 
-* [Gone in 60 Milliseconds (33c3)2016](https://www.youtube.com/watch?v=YZ058hmLuv0) * This talk will show novel attack vectors using cloud event sources,  exploitabilities in common server-less patterns and frameworks, abuse of undocumented features in AWS Lambda for persistent malware injection, identifying valuable targets for pilfering, and, of course, how to exfiltrate juicy data out of a secure Virtual Private Cloud.
+* [Gone in 60 Milliseconds (33c3)2016](https://www.youtube.com/watch?v=YZ058hmLuv0) 
+	* This talk will show novel attack vectors using cloud event sources,  exploitabilities in common server-less patterns and frameworks, abuse of undocumented features in AWS Lambda for persistent malware injection, identifying valuable targets for pilfering, and, of course, how to exfiltrate juicy data out of a secure Virtual Private Cloud.
+
 https://www.youtube.com/watch?v=nsjCQlEsgW8
 https://depthsecurity.com/blog/exploiting-custom-template-engines
 
 https://github.com/psi-probe/psi-probe
 https://portswigger.net/blog/top-10-web-hacking-techniques-of-2017
+https://github.com/jdonsec/AllThingsSSRF
+https://github.com/gquere/pwn_jenkins
 https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/#jenkins
 https://labs.detectify.com/2017/07/13/a-deep-dive-into-aws-s3-access-controls-taking-full-control-over-your-assets/
+
+https://www.twistlock.com/labs-blog/gaining-persistency-vulnerable-lambdas/
+
 
 VHostScan
 https://github.com/codingo/VHostScan
@@ -230,7 +413,10 @@ Browser Extensions
 	* https://developer.chrome.com/extensions/xhr#security-considerations
 	* https://developer.chrome.com/extensions/contentSecurityPolicy#interactions
 	* https://medium.freecodecamp.org/cool-chrome-devtools-tips-and-tricks-you-wish-you-knew-already-f54f65df88d2
-
+	* https://www.brokenbrowser.com/microsoft-edge-detecting-installed-extensions/
+	* https://umbrella.cisco.com/blog/2016/06/16/finding-browser-extensions-find-evil/
+	* http://blog.kotowicz.net/2012/02/intro-to-chrome-addons-hacking.html
+	* https://www.xorrior.com/No-Place-Like-Chrome/
 
 * [BookFresh Tricky File Upload Bypass to RCE - secgeek.net](https://secgeek.net/bookfresh-vulnerability/)
 OAuth
@@ -925,6 +1111,7 @@ https://labs.mwrinfosecurity.com/blog/webusb/
 	* [Remote Code Execution via Server Side Template Injection at OFBiz 13.07.03 (CVE-2016-4462)](https://insinuator.net/2016/07/dilligent-bug/)
 	* [Injecting Flask - Nvisium](https://nvisium.com/blog/2015/12/07/injecting-flask/)
 	* [Spring Boot RCE](deadpool.sh/2017/RCE-Springs/)
+	* [Fuzzing `{{7*7}} Till {{P1}}` - err0rr](http://verneet.com/fuzzing-77-till-p1/)
 * **Tools**
 	* [tplmap](https://github.com/epinna/tplmap)
 		* Code and Server-Side Template Injection Detection and Exploitation Tool

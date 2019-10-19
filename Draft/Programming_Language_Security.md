@@ -20,14 +20,75 @@
 
 
 
+https://graphql.org/
+https://github.com/doyensec/graph-ql
+
+* [Android's billion-dollar mistake(s) - Jean-Michel Fayard ](https://web.archive.org/web/20190930114632/https://dev.to/jmfayard/android-s-billion-dollar-mistake-327b)
+https://videogg.com/watch?v=BA9DqsgfgRQ
+https://github.com/coinbase/salus
+https://www.youtube.com/watch?v=IAzPKzwY-ks
+https://vulncat.fortify.com/en
+https://www.youtube.com/watch?v=HIdexRqjpWc&t=0s&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=23
+https://www.youtube.com/watch?v=-bZM_48Ghv0&t=0s&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=25
+https://www.youtube.com/watch?v=VbW-X0j35gw&t=0s&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=21
+https://blogs.dropbox.com/tech/2017/02/meet-securitybot-open-sourcing-automated-security-at-scale/
+https://www.youtube.com/watch?v=jNxjUKZpDWo
+https://www.youtube.com/watch?v=Ivc5Sj0nj2c&app=desktop
+https://engineering.salesforce.com/announcing-providence-rapid-vulnerability-prevention-3505ffd17e17
+https://github.com/Netflix-Skunkworks/Scumblr/issues
+https://www.youtube.com/watch?v=4rjmtdvrGrg&app=desktop
+https://www.youtube.com/watch?v=4rjmtdvrGrg&app=desktop
+https://www.youtube.com/watch?v=3PgWM8qwWas
+https://www.youtube.com/watch?v=7KT4Fi_vW-c
+https://www.youtube.com/watch?v=NUTNN7W4Pro&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=41&t=0s
+https://github.com/willbengtson/trailblazer-aws
+https://github.com/Netflix-Skunkworks/aws-credential-compromise-detection
+https://www.youtube.com/watch?v=aVVX8hV_ywI&t=0s&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=13
+https://www.youtube.com/watch?v=c9A8v5hiqoA&t=0s&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=28
+https://ieeexplore.ieee.org/ielx7/6954656/6956545/06956589.pdf?tp=&arnumber=6956589&isnumber=6956545
+https://www.youtube.com/watch?v=6WwP7eUY52Y&app=desktop
+https://www.youtube.com/watch?v=IvdKtf3ol2U
+https://www.youtube.com/watch?v=VXJNuDV6DQo&t=1s
+https://www.youtube.com/watch?v=eY3RmQ_eNgA
+https://www.youtube.com/watch?v=ImJqBX0OXew&app=desktop
+https://www.youtube.com/watch?v=ltXYbIacHr8&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=17
+https://www.youtube.com/watch?index=17&list=PLFTyE08qmQMVgSobf2QmBEGkjfuvjfpyj&v=ETkHISgEh3g&app=desktop
+https://www.youtube.com/watch?v=6iNpqTZrwjE&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=20&t=0s
+https://slack.engineering/moving-fast-and-securing-things-540e6c5ae58a
 
 
 
+http://www.cyrius.com/publications/michlmayr_fitzgerald-time_based_release_management.pdf
+https://www.youtube.com/watch?v=IKsQsxubuAA
+https://wozniak.ca/blog/2014/08/03/What-ORMs-have-taught-me-just-learn-SQL/
+
+PS Workshop
+https://github.com/darkoperator/DEFCON25_PS_Workshop
+https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20workshops/DEFCON-25-Carlos-Perez-Leveraging-PowerShell.pdf
+https://github.com/mre/awesome-static-analysis
+
+https://www.slideshare.net/SoroushDalili/waf-bypass-techniques-using-http-standard-and-web-servers-behaviour
+https://awesome-tech.readthedocs.io/security/#php-security
+
+
+
+
+* [PowerShell Productivity Hacks: How I use Get-Command - Mike Robbins](https://mikefrobbins.com/2019/09/05/powershell-productivity-hacks-how-i-use-get-command/)
+
+https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-lekies.pdf
+
+
+https://github.com/in-toto/in-toto
+https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here/
+https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43322.pdf
+
+https://www.youtube.com/watch?v=2mevf60qm60
 
 https://github.com/Instagram/LibCST
 https://pyre-check.org/
-
-
+* https://github.com/guardrailsio/awesome-golang-security
+* [DevSecOps State of the Union - Clint Gibler(BSidesSF 2019)](https://www.youtube.com/watch?v=AusPKzwNnMg)
+	* Many companies have shared their lessons learned in scaling their security efforts, leading to hundreds of blog posts and conference talks. Sharing knowledge is fantastic, but when you're a busy AppSec engineer or manager struggling to keep up with day-to-day requirements, it can be difficult to stay on top of or even be aware of relevant research. This talk will summarize and distill the unique tips and tricks, lessons learned, and tools discussed in a vast number of blog posts and conference talks over the past few years and combine it with knowledge gained from in-person discussions with AppSec engineers at a number of companies with mature security teams. Topics covered will include: Principles, mindsets, and methodologies of highly effective AppSec teams, Best practices in developing security champions and building a positive security culture, High value engineering projects that can prevent classes of bugs, How and where to integrate security automation into the CI/CD process in a high signal, low noise way, Open source tools that help with one or more of the above. Attendees will leave this talk with an understanding of the current state of the art in DevSecOps, links to tools they can use, resources where they can dive into specific topics of interest, and most importantly an actionable path forward for taking their security program to the next level.
 https://github.com/facebookincubator/SPARTA
 https://engineering.fb.com/security/zoncolan/
 * [Static Analysis at Scale: An Instagram Story - Benjamin Woodruff](https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c)
@@ -41,17 +102,16 @@ https://github.com/OWASP/Benchmark
 * [I Forgot Your Password: Randomness Attacks Against PHP Applications - George Argyros, Aggelos Kiayis](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.360.4033&rep=rep1&type=pdf)
 * [10 common security gotchas in Python and how to avoid them - Anthony Shaw](https://hackernoon.com/10-common-security-gotchas-in-python-and-how-to-avoid-them-e19fbe265e03?gi=ac211b3349e8)
 https://viewsourcecode.org/snaptoken/kilo/index.html
+https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext
 
-* [Roslyn](https://github.com/dotnet/roslyn)
-	* Roslyn provides open-source C# and Visual Basic compilers with rich code analysis APIs. It enables building code analysis tools with the same APIs that are used by Visual Studio.
-	* [Overview](https://github.com/dotnet/roslyn/wiki/Roslyn%20Overview)
+
 http://pentest.cryptocity.net/code-audits/
 * [Typeful Programming - Luca Cardelli](http://lucacardelli.name/Papers/TypefulProg.pdf)
+* [Tasks - C#](https://kudchikarsk.com/tasks-in-csharp/csharp-task/)
 
 https://danger.systems/js/
 https://www.zerodayinitiative.com/blog/2018/4/12/inverting-your-assumptions-a-guide-to-jit-comparisons
 https://blog.hboeck.de/archives/892-Introducing-Snallygaster-a-Tool-to-Scan-for-Secrets-on-Web-Servers.html
-
 
 https://github.com/mre/awesome-static-analysis
 https://github.com/troessner/reek
@@ -62,6 +122,8 @@ http://www.rubyguides.com/2015/08/static-analysis-in-ruby/
 https://github.com/rubocop-hq/rubocop
 https://realpython.com/python-csv/
 
+https://alex.kaskaso.li/post/effective-security-pipeline
+
 https://gist.github.com/carnal0wnage/ed9e4c10e065bd00e21e2af67301e9d9
 
 https://blog.ripstech.com/2018/woocommerce-php-object-injection/
@@ -69,7 +131,7 @@ https://blog.ripstech.com/2018/woocommerce-php-object-injection/
 
 * [Static Analysis at Scale: An Instagram Story - Benjamin Woodruff](https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c)
 
-
+* [StackStorm](https://stackstorm.com/)
 
 https://www.blackhillsinfosec.com/pyfunnels-data-normalization-for-infosec-workflows/
 https://github.com/packetvitality/PyFunnels
@@ -82,12 +144,10 @@ https://github.com/slackhq/go-audit
 * [The Evil within the Comparison Functions - Andrey Karpov](https://www.viva64.com/en/b/0509/)
 
 
-
-
-
-
-
-
+* [Bypassing Python3.8 Audit Hooks [Part 1] - daddycocoaman](https://daddycocoaman.dev/posts/bypassing-python38-audit-hooks-part-1/)
+https://www.python.org/dev/peps/pep-0551/
+https://www.python.org/dev/peps/pep-0578/
+* [Why does Python need security transparency? - Steve Dower](https://www.youtube.com/watch?v=K7qUVyeh10U)
 
 
 
@@ -161,6 +221,7 @@ https://github.com/slackhq/go-audit
 		* Attendees of this talk will benefit from learning about what constitutes insecure code and the associated attacks that stem from such code. Applicable attacks ranging from injection to reversing will be demonstrated to reinforce contents of this talk. This way, the attendee would not only be taught about “What not to do?” but also, “Why this should not do, what they ought not to do?”. Finally, attendees will also be introduced to secure development processes such as protection needs elicitation, threat modeling, code review and analysis and secure deployment, to illustrate that while writing secure code is one important aspect of software security, there is more to securing applications, than what meets the eye. Come for a fun filled, interactive session and your chance to win one of the personalized and autographed copies of the speaker’s renowned book – The 7 qualities of highly secure software.
 	* [Code Insecurity or Code in Security - Mano 'dash4rk' Paul](http://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul)
 		* Attendees of this talk will benefit from learning about what constitutes insecure code and the associated attacks that stem from such code. Applicable attacks ranging from injection to reversing will be demonstrated to reinforce contents of this talk. This way, the attendee would not only be taught about “What not to do?” but also, “Why this should not do, what they ought not to do?”. Finally, attendees will also be introduced to secure development processes such as protection needs elicitation, threat modeling, code review and analysis and secure deployment, to illustrate that while writing secure code is one important aspect of software security, there is more to securing applications, than what meets the eye. Come for a fun filled, interactive session and your chance to win one of the personalized and autographed copies of the speaker’s renowned book – The 7 qualities of highly secure software.
+	* [Seth & Ken’s Excellent Adventures in Secure Code Review - thesecuredeveloper.com](https://www.thesecuredeveloper.com/post/seth-ken-s-excellent-adventures-in-secure-code-review)
 * **Tools**
 	* [RIPS](http://rips-scanner.sourceforge.net/)
 		* RIPS is a tool written in PHP to find vulnerabilities in PHP applications using static code analysis. By tokenizing and parsing all source code files RIPS is able to transform PHP source code into a program model and to detect sensitive sinks (potentially vulnerable functions) that can be tainted by user input (influenced by a malicious user) during the program flow. Besides the structured output of found vulnerabilities RIPS also offers an integrated code audit framework for further manual analysis.
@@ -193,11 +254,12 @@ https://github.com/slackhq/go-audit
 		* Graudit is a simple script and signature sets that allows you to find potential  security flaws in source code using the GNU utility grep. It's comparable to  other static analysis applications like RATS, SWAAT and flaw-finder while  keeping the technical requirements to a minimum and being very flexible.
 	* [cloc](https://github.com/AlDanial/cloc)
 		* cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
-
+	* [CRASS](https://github.com/floyd-fuh/crass)
+		* The "code review audit script scanner" (CRASS) started as a source code grep-er with a set of selected high-potential strings that may result in (security) problems. By now it is searching for strings that are interesting for analysts. Simplicity is the key: You don't need anything than a couple of standard `*nix` command line tools (especially grep), while the project still serves as a "what can go wrong" collection of things we see over the years.
 
 
 ----------------
-### APIs
+### APIs<a name="apis"></a>
 * **101**
 	* [API Security Checklist](https://github.com/shieldfy/API-Security-Checklist/)
 		* Checklist of the most important security countermeasures when designing, testing, and releasing your API
@@ -254,7 +316,7 @@ https://github.com/slackhq/go-audit
 
 
 ----------
-### Android (Kotlin/Android Java)
+### Android (Kotlin/Android Java)<a name="android"></a>
 * [Kotlin - Wikipedia](https://en.wikipedia.org/wiki/Kotlin_(programming_language))
 * [Java - Wikipedia](https://en.wikipedia.org/wiki/Java_(programming_language))
 * **Learn**
@@ -268,11 +330,8 @@ https://github.com/slackhq/go-audit
 
 
 
-
-
-
 ----------
-### Bash 
+### Bash<a name="bash"></a>
 * [Bash - GNU](https://www.gnu.org/software/bash/)
 * [Bash (Unix shell) - Wikipedia](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
 *  **Learn**
@@ -332,6 +391,9 @@ https://github.com/slackhq/go-audit
 * [Compiling C# Code at Runtime](https://www.codeproject.com/Tips/715891/Compiling-Csharp-Code-at-Runtime)
 * [The 68 things the CLR does before executing a single line of your code (`*`)](https://web.archive.org/web/20170614215931/http://mattwarren.org:80/2017/02/07/The-68-things-the-CLR-does-before-executing-a-single-line-of-your-code/)
 * [Dynamic Source Code Generation and Compilation](https://docs.microsoft.comen-us/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)
+* [Roslyn](https://github.com/dotnet/roslyn)
+	* Roslyn provides open-source C# and Visual Basic compilers with rich code analysis APIs. It enables building code analysis tools with the same APIs that are used by Visual Studio.
+	* [Overview](https://github.com/dotnet/roslyn/wiki/Roslyn%20Overview)
 
 
 ----------
@@ -465,7 +527,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 
 ----------
-### PHP
+### PHP<a name="php"></a>
 * [awesome-php](https://github.com/ziadoz/awesome-php)
 	* A curated list of amazingly awesome PHP libraries, resources and shiny things.
 * **Documentation**
@@ -576,7 +638,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 
 ----------
-### SQL
+### SQL<a name="sql"></a>
 * [SafeSQL](https://github.com/stripe/safesql)
 	* SafeSQL is a static analysis tool for Go that protects against SQL injections.
 * [The Hitchhiker's Guide to SQL Injection prevention](https://phpdelusions.net/sql_injection)
@@ -585,12 +647,12 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 
 ---------------
-### Swift
+### Swift <a name="swift"></a>
 * [Alamofire](https://github.com/Alamofire/Alamofire)
 	* Alamofire is an HTTP networking library written in Swift.
 
 ----------
-### UEFI Programming
+### UEFI Programming <a name="uefi"></a>
 * [Unified Extensible Firmware Interface Forum](http://www.uefi.org/)
 * [Unified Extensible Firmware Interface](https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)
 * **Learn**
@@ -606,14 +668,12 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 
 -----------------------------------------
-### Software Build & Deployment Process
+### Software Build & Deployment Process <a name="build"></a>
 * [Providence](https://github.com/salesforce/Providence)
 	* Providence is a system for code commit & bug system monitoring. It is deployed within an organization to monitor code commits for security (or other) concerns, via customizable plugins. A plugin performs logic whenever a commit occurs.
 
 ----
-### Other
+### Other <a name="sql"></a>
 * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 * [Mostly Adequate Guide](https://drboolean.gitbooks.io/mostly-adequate-guide/)
 	* This is a book on the functional paradigm in general. We'll use the world's most popular functional programming language: JavaScript. Some may feel this is a poor choice as it's against the grain of the current culture which, at the moment, feels predominately imperative.
-* [Reflective DLL Injection](http://www.harmonysecurity.com/files/HS-P005_ReflectiveDllInjection.pdf)
-* [Porting Windows Dynamic Link Libraries to Linux](https://github.com/taviso/loadlibrary)

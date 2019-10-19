@@ -2,32 +2,40 @@
 
 ----------------------------------
 ## Table of Contents
-- []()
+- [101](#101)
+- [Platforms](#platforms)
+	- [Android](#android)
+	- [FreeBSD](#freebsd)
+	- [Linux](#linux)
+	- [OS X](#osx)
+	- [UEFI](#uefi)
+	- [Windows](#windows)
+- [Defense Against/Identification of](#defense)
+- [Educational](#educational)
+- [Samples](#samples)
+
 
 
 -----------------
 ## Rootkits
 * **101**
 * **General Information**
-* [Introducing Ring -3 Rootkits](http://invisiblethingslab.com/resources/bh09usa/Ring%20-3%20Rootkits.pdf)
-* [Rise of the dual architecture usermode rootkit](http://www.malwaretech.com/2013/06/rise-of-dual-architecture-usermode.html)
-* [Pitfalls of virtual machine introspection on modern hardware](https://www.acsac.org/2014/workshops/mmf/Tamas%20Lengyel-Pitfalls%20of%20virtual%20machine%20introspection%20on%20modern%20hardware.pdf)
-* [Thunderstrike](https://trmm.net/EFI)
-	* Thunderstrike is the name for a class of Apple EFI firmware security vulnerabilities that allow malicious software or Thunderbolt devices to flash untrusted code to the boot ROM and propagate via shared devices.
-* [SharknAT&To](https://www.nomotion.net/blog/sharknatto/)
-* **F**
-	* **Android**
+	* [Introducing Ring -3 Rootkits](http://invisiblethingslab.com/resources/bh09usa/Ring%20-3%20Rootkits.pdf)
+	* [Rise of the dual architecture usermode rootkit](http://www.malwaretech.com/2013/06/rise-of-dual-architecture-usermode.html)
+	* [Pitfalls of virtual machine introspection on modern hardware](https://www.acsac.org/2014/workshops/mmf/Tamas%20Lengyel-Pitfalls%20of%20virtual%20machine%20introspection%20on%20modern%20hardware.pdf)
+	* [Thunderstrike](https://trmm.net/EFI)
+		* Thunderstrike is the name for a class of Apple EFI firmware security vulnerabilities that allow malicious software or Thunderbolt devices to flash untrusted code to the boot ROM and propagate via shared devices.
+	* [SharknAT&To](https://www.nomotion.net/blog/sharknatto/)
+* **Platforms**<a name="platforms"></a>
+	* **Android**<a name="android"></a>
 		* [Android Rootkit](https://github.com/hiteshd/Android-Rootkit)
 		* [Advanced Bootkit Techniques on Android](http://www.syscan360.org/slides/2014_EN_AdvancedBootkitTechniquesOnAndroid_ChenZhangqiShendi.pdf)
 		* [Android platform based linux kernel rootkit - dong-hoon you](http://www.phrack.org/issues/68/6.html)
-	* **FreeBSD**
+	* **FreeBSD**<a name="freebsd"></a>
 		* [FreeBSD Rootkits: A first step into Kernel Analysis #0 (Fundamentals)](https://www.youtube.com/watch?v=MbEhTkfuz3U)
-	* **Linux**
+	* **Linux**<a name="linux"></a>
 		* **Educational**
 			* [BoutiqueKit: Playing WarGames with Expensive Rootkits and Malware- Defcon 21](https://www.youtube.com/watch?v=gKUleWyfut0)
-			* [KernelMode Rootkits: Part 1, SSDT hooks - adlice](https://www.adlice.com/kernelmode-rootkits-part-1-ssdt-hooks/)
-			* [KernelMode Rootkits: Part 2, IRP hooks - adlice](https://www.adlice.com/kernelmode-rootkits-part-2-irp-hooks/)
-			* [KernelMode Rootkits: Part 3, kernel filters- adlice](https://www.adlice.com/kernelmode-rootkits-part-3-kernel-filters/)
 			* [Kernel Rootkit Experiences - stealth](http://phrack.org/issues/61/14.html)
 			* [How to Write Your Own Linux Kernel Module with a Simple Example - thegeekstuff.com](https://www.thegeekstuff.com/2013/07/write-linux-kernel-module/)
 			* [Writing a Linux character Device Driver - appusajeev.wordpress](https://appusajeev.wordpress.com/2011/06/18/writing-a-linux-character-device-driver/)
@@ -54,18 +62,21 @@
 			* [Video - MoRE Shadow Walker : TLB - splitting on Modern x86](https://www.youtube.com/watch?v=XU1uNGZ7HnY)
 				* This presentation provides a cohesive overview of the work performed by AIS, Inc. on the DARPA CFT MoRE effort. MoRE was a 4-month effort which examined the feasibility of utilizing TLB splitting as a mechanism for periodic measurement of dynamically changing binaries. The effort created a proof-of-concept system to split the TLB for target applications, allowing dynamic applications to be measured and can detect code corruption with low performance overhead.
 			* [Measurement of Running Executables](http://vimeo.com/81335517)
-	* **OS X**
+	* **OS X**<a name="osx"></a>
 		* [Crafting Mac OS Rootkits](https://www.zdziarski.com/blog/wp-content/uploads/2017/02/Crafting-macOS-Root-Kits.pdf)
 		* [Masochist](https://github.com/squiffy/Masochist)
 			* Masochist is a framework for creating XNU based rootkits. Very useful in OS X and iOS security research.
 		* [Revisiting Mac OS X Kernel Rootkits - fG! <phrack@put.as>-](http://phrack.org/issues/69/7.html)
-	* **UEFI**
+	* **UEFI**<a name="UEFI"></a>
 		* [LoJax: First UEFI rootkit found in the wild, courtesy of the Sednit group - ESET](https://www.welivesecurity.com/2018/09/27/lojax-first-uefi-rootkit-found-wild-courtesy-sednit-group/)
 		* [LOJAX: First UEFI rootkit found in the wild, courtesy of the Sednit group](https://www.welivesecurity.com/wp-content/uploads/2018/09/ESET-LoJax.pdf)
-	* **Windows**
+	* **Windows**<a name="windows"></a>
 		* **Educational**
 			* [NTIllusion: A portable Win32 userland rootkit - Kdm](http://phrack.org/issues/62/12.html)
-			* Windows Rootkits
+			* [KernelMode Rootkits: Part 1, SSDT hooks - adlice](https://www.adlice.com/kernelmode-rootkits-part-1-ssdt-hooks/)
+			* [KernelMode Rootkits: Part 2, IRP hooks - adlice](https://www.adlice.com/kernelmode-rootkits-part-2-irp-hooks/)
+			* [KernelMode Rootkits: Part 3, kernel filters- adlice](https://www.adlice.com/kernelmode-rootkits-part-3-kernel-filters/)
+			* [Program Develop: Windows Rootkits]()
 				* [Part 1](http://www.programdevelop.com/5408113/)
 				* [Part 2](http://www.programdevelop.com/5409574/)
 				* [Part 3](http://www.programdevelop.com/5408212/)
@@ -90,7 +101,7 @@
 				* [FakeMBR](https://github.com/MalwareTech/FakeMBR/)
 			* [EquationDrug rootkit analysis (mstcp32.sys) - artemonsecurity](https://artemonsecurity.blogspot.com/2017/03/equationdrug-rootkit-analysis-mstcp32sys.html)
 			* [GrayFish rootkit analysis - artemonsecurity](https://artemonsecurity.blogspot.com/2017/05/grayfish-rootkit-analysis.html)
-* **Defense Against/Identifying**
+* **Defense Against/Identifying**<a name="defense"></a>
 	* [Killing Rootkits](http://blog.ioactive.com/2014/09/killing-rootkit.html)
 	* [Killing the Rootkit - Shane Macaulay](http://blog.ioactive.com/2014/09/killing-rootkit.html)
 		* Cross-platform, cross-architecture DKOM detection
@@ -99,7 +110,7 @@
 	* [Tyton](https://github.com/nbulischeck/tyton)
 		* Linux Kernel-Mode Rootkit Hunter for 4.4.0-31+.
 		* [Homepage](https://nbulischeck.github.io/tyton/)
-* **Educational**
+* **Interesting Things**
 	* [From Kernel to VM](https://www.youtube.com/watch?v=FSw8Ff1SFLM)
 		* Description from stormeh on reddit(https://www.reddit.com/r/rootkit/comments/25hsc4/jacob_i_torrey_from_kernel_to_vmm/): Although it's not directly a lecture about rootkit development, the topics discussed are very much of interest: hardware virtualization, page table and TLB manipulation, hypervisors and privilege levels below ring 0, etc. The speaker does also go on to mention how prior rootkits such as Blue Pill and Shadow Walker leveraged these features, as well as defensive technologies such as PaX. 
 		* [Slides](http://jacobtorrey.com/VMMLecture.pdf)
@@ -107,7 +118,7 @@
 		* GPU keylogger PoC by Team Jellyfish
 	* [WIN_JELLY](https://github.com/x0r1/WIN_JELLY)
 		* Windows GPU RAT PoC by Team Jellyfish. Project demonstrates persistent executable code storage in gpu that later can be mapped back to userspace after reboot. The sole purpose why we titled this concept that of a trojan is due to what it's capable of. Simply use this code to hide your own basically; we aren't responsible.	
-* **Samples**
+* **Samples**<a name="samples"></a>
 	* **GPU**
 		* [GPU rootkit PoC by Team Jellyfish](https://github.com/x0r1/jellyfish)
 	* **Android**
@@ -130,7 +141,7 @@
 			* Rootkit uses the zero day vulnerability in win32k.sys (buffer overflow in function win32k!bInitializeEUDC()) to get the execution at the OS startup.
 
 
-
+-----------------
 #### Sort
 * [WoW64 internals...re-discovering Heaven's Gate on ARM - wbenny](https://wbenny.github.io/2018/11/04/wow64-internals.html)
 * [5 Days To Virtualization: A Series On Hypervisor Development - Daax Rynd](https://revers.engineering/7-days-to-virtualization-a-series-on-hypervisor-development/)

@@ -358,3 +358,7 @@ https://github.com/googleprojectzero/BrokenType
 Binary Instrumentation
 	* http://deniable.org/reversing/binary-instrumentation
 	* https://thefengs.com/wuchang/courses/cs492/afl/#0
+
+http://joxeankoret.com/blog/2015/03/13/diaphora-a-program-diffing-plugin-for-ida-pro/
+http://joxeankoret.com/blog/2018/08/12/histories-of-comparing-binaries-with-source-codes/
+http://joxeankoret.com/blog/2018/11/04/new-cfg-based-heuristic-diaphora/

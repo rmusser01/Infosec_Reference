@@ -6,6 +6,14 @@
 
 
 
+* [Windows oneliners to download remote payload and execute arbitrary code - arno0x0x](https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/)
+* [Arbitrary, Unsigned Code Execution Vector in Microsoft.Workflow.Compiler.exe - Matt Graeber](https://posts.specterops.io/arbitrary-unsigned-code-execution-vector-in-microsoft-workflow-compiler-exe-3d9294bc5efb)
+* [How to Port Microsoft.Workflow.Compiler.exe Loader to Veil - FortyNorthSecurity](https://www.fortynorthsecurity.com/port-microsoft-workflow-compiler-exe-loader-to-veil/)
+* [MSXSL.EXE AND WMIC.EXE — A Way to Proxy Code Execution - TH Team](https://medium.com/@threathuntingteam/msxsl-exe-and-wmic-exe-a-way-to-proxy-code-execution-8d524f642b75)
+
+
+
+
 
 
 -------------------------------

@@ -1,5 +1,6 @@
 # CTFs & Wargames
 
+-------------------------
 ## Table of Contents
 - [General](#general)
 - [101](#101)
@@ -14,15 +15,16 @@
 - [Wargames](#wargames)
 - [Writeups](#writeups)
 
--------------------------
 
 
 
 
+https://github.com/stripe-ctf/stripe-ctf-2.0/
 https://www.counterhackchallenges.com/
 https://labs.nettitude.com/blog/derbycon-2018-ctf-write-up/
 http://ctfhacker.com/reverse/2018/09/16/flareon-2018-wasabi.html
------
+
+----------------------------------------
 ### <a name="general">General</a>
 * **General**
 	* [ctf-time](https://ctftime.org/)

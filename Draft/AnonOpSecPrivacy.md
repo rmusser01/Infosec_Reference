@@ -33,77 +33,6 @@
 
 
 
-https://citizenlab.ca/2019/07/cant-picture-this-2-an-analysis-of-wechats-realtime-image-filtering-in-chats/
-https://citizenlab.ca/2018/08/cant-picture-this-an-analysis-of-image-filtering-on-wechat-moments/
-
-Remove hidden data and personal information by inspecting documents, presentations, or workbooks
-https://support.office.com/en-us/article/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks-356b7b5d-77af-44fe-a07f-9aa4d085966f
-
-https://www.fcc.gov/public-safety-and-homeland-security/policy-and-licensing-division/911-services/general/location-accuracy-indoor-benchmarks
-https://www.wsj.com/articles/SB105546175751598400
-https://opaque.link/post/dropgang/
-https://github.com/ctrlaltdev/LMGTFY-queries
-
-* [A DC Think Tank Used Fake Social Media Accounts, A Bogus Expert, And Fancy Events To Reach The NSA, FBI, And White House - Craig Silverman(BuzzFeed News)](https://www.buzzfeednews.com/article/craigsilverman/icit-james-scott-think-tank-fake-twitter-youtube#.dnqv2lQJr)
-
-* [Opting Out Like A Boss - The OSINT Way (Part 1) - learnallthethings.net](https://www.learnallthethings.net/blog/2018/1/23/opting-out-like-a-boss-the-osint-way)
-https://electricalstrategies.com/about/in-the-news/spies-in-the-xerox-machine/
-https://discover.cobbtechnologies.com/blog/the-soviet-union-and-the-photocopier
-
-https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/privacy/manage-windows-1809-endpoints.md
-
-* [Creating Your Own Citizen Database -  Aiganysh Aidarbekova](https://www.bellingcat.com/resources/how-tos/2019/02/14/creating-your-own-citizen-database/)
-
-	* [Manage connections from Windows operating system components to Microsoft services - docs.ms](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-* [Cookies – what does ‘good’ look like? - UK Information Comissioner's Office - Ali Shah](https://ico.org.uk/about-the-ico/news-and-events/news-and-blogs/2019/07/blog-cookies-what-does-good-look-like/)
-
-https://www.freehaven.net/anonbib/
-http://computer-outlines.over-blog.com/article-windows-ipv6-privacy-addresses-118018020.html
-
-https://blog.superuser.com/2011/02/11/did-you-know-that-ipv6-may-include-your-mac-address-heres-how-to-stop-it/
-
-https://www.bloomberg.com/news/articles/2018-08-30/google-and-mastercard-cut-a-secret-ad-deal-to-track-retail-sales
-
-* [Ghostbuster: Detecting the Presence of Hidden Eavesdroppers](https://synrg.csl.illinois.edu/papers/ghostbuster-mobicom18.pdf)
-
-* Propaganda
-	* [Project Feels: How USA Today, ESPN and The New York Times are targeting ads to mood - digiday](https://digiday.com/media/project-feels-usa-today-espn-new-york-times-targeting-ads-mood/)
-	* [The New York Times Advertising & Marketing Solutions Group Introduces ‘nytDEMO’: A Cross-Functional Team Focused on Bringing Insights and Data Solutions to Brands(2018)](https://investors.nytco.com/press/press-releases/press-release-details/2018/The-New-York-Times-Advertising--Marketing-Solutions-Group-Introduces-nytDEMO-A-Cross-Functional-Team-Focused-on-Bringing-Insights-and-Data-Solutions-to-Brands/default.aspx)
-
-* [A DC Think Tank Used Fake Social Media Accounts, A Bogus Expert, And Fancy Events To Reach The NSA, FBI, And White House - Craig Silverman](https://www.buzzfeednews.com/article/craigsilverman/icit-james-scott-think-tank-fake-twitter-youtube#.dnqv2lQJr)
-
-* [Toward an Information Operations Kill Chain - Bruce Schneier](https://www.lawfareblog.com/toward-information-operations-kill-chain)
-
-
-* [Project Raven: Inside the UAE’s secret hacking team of American mercenaries(Christopher Bing, Joel Schectman)]
-
-* [How to Purge Google and Start Over – Part 2 - Mike Felch](https://www.blackhillsinfosec.com/how-to-purge-google-and-start-over-part-2/)
-
-* [Of Moles and Molehunters: A Review of Counterintelligence Literature, 1977-92](https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/U-Oct%20%201993-%20Of%20Moles%20-%20Molehunters%20-%20A%20Review%20of%20Counterintelligence%20Literature-%201977-92%20-v2.pdf)
-
-* [Salamandra](https://github.com/eldraco/Salamandra)
-	* Salamandra is a tool to detect and locate spy microphones in closed environments. It find microphones based on the strength of the signal sent by the microphone and the amount of noise and overlapped frequencies. Based on the generated noise it can estimate how close or far away you are from the microphone.
-
-* [zwsp-steg](https://github.com/offdev/zwsp-steg-js)
-	* Zero-Width Space Steganography. Encodes and decodes hidden messages as non printable/readable characters. [A demo can be found here](https://offdev.net/demos/zwsp-steg-js).
-* [DEDA](https://github.com/dfd-tud/deda)
-	* DEDA - tracking Dots Extraction, Decoding and Anonymisation toolkit; Document Colour Tracking Dots, or yellow dots, are small systematic dots which encode information about the printer and/or the printout itself. This process is integrated in almost every commercial colour laser printer. This means that almost every printout contains coded information about the source device, such as the serial number.
-	* https://dfd.inf.tu-dresden.de/
-* [The Spy and the Traitor: The Greatest Espionage Story of the Cold War - cia.gov](https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/csi-studies/studies/vol-63-no-1/spy_and_traitor.html)
-* [How a Bitcoin Evangelist Made Himself Vanish, in 15 (Not So Easy) Steps - Nathaniel Popper](https://www.nytimes.com/2019/03/12/technology/how-to-disappear-surveillance-state.html)
-
-* [A Glance through the VPN Looking Glass: IPv6 Leakage and DNS Hijacking in Commercial VPN clients - Vasile C. Perta, Marco V. Barbera, Gareth Tyson, Hamed Haddadi, and Alessandro Mei(2/2015)](https://www.petsymposium.org/2015/papers/02_Perta.pdf)
-
-* [Forensic Analysis and Anonymisation of Printed Documents](https://dl.acm.org/citation.cfm?doid=3206004.3206019)
-	* Contrary to popular belief, the paperless office has not yet established itself. Printer forensics is therefore still an important field today to protect the reliability of printed documents or to track criminals. An important task of this is to identify the source device of a printed document. There are many forensic approaches that try to determine the source device automatically and with commercially available recording devices. However, it is difficult to find intrinsic signatures that are robust against a variety of influences of the printing process and at the same time can identify the specific source device. In most cases, the identification rate only reaches up to the printer model. For this reason we reviewed document colour tracking dots, an extrinsic signature embedded in nearly all modern colour laser printers. We developed a refined and generic extraction algorithm, found a new tracking dot pattern and decoded pattern information. Through out we propose to reuse document colour tracking dots, in combination with passive printer forensic methods. From privacy perspective we additional investigated anonymization approaches to defeat arbitrary tracking. Finally we propose our toolkitdeda which implements the entire workflow of extracting, analysing and anonymisation of a tracking dot pattern.
-
-* [NCCA Polygraph Countermeasure Course Files Leaked](https://antipolygraph.org/blog/2018/06/09/ncca-polygraph-countermeasure-course-files-leaked/)
-
-
-* [Fooling automated surveillance cameras: adversarial patches to attack person detection - Simen Thys, Wiebe Van Ranst, Toon Goedemé](https://arxiv.org/abs/1904.08653)
-	* Adversarial attacks on machine learning models have seen increasing interest in the past years. By making only subtle changes to the input of a convolutional neural network, the output of the network can be swayed to output a completely different result. The first attacks did this by changing pixel values of an input image slightly to fool a classifier to output the wrong class. Other approaches have tried to learn "patches" that can be applied to an object to fool detectors and classifiers. Some of these approaches have also shown that these attacks are feasible in the real-world, i.e. by modifying an object and filming it with a video camera. However, all of these approaches target classes that contain almost no intra-class variety (e.g. stop signs). The known structure of the object is then used to generate an adversarial patch on top of it. In this paper, we present an approach to generate adversarial patches to targets with lots of intra-class variety, namely persons. The goal is to generate a patch that is able successfully hide a person from a person detector. An attack that could for instance be used maliciously to circumvent surveillance systems, intruders can sneak around undetected by holding a small cardboard plate in front of their body aimed towards the surveillance camera. From our results we can see that our system is able significantly lower the accuracy of a person detector. Our approach also functions well in real-life scenarios where the patch is filmed by a camera. To the best of our knowledge we are the first to attempt this kind of attack on targets with a high level of intra-class variety like persons. 
-
-
 
 
 
@@ -157,6 +86,8 @@ https://www.bloomberg.com/news/articles/2018-08-30/google-and-mastercard-cut-a-s
 	* [iTerm2 Leaks Everything You Hover in Your Terminal via DNS Requests](https://www.bleepingcomputer.com/news/security/iterm2-leaks-everything-you-hover-in-your-terminal-via-dns-requests/)
 	* [Google Has Quietly Dropped Ban on Personally Identifiable Web Tracking - ProPublica(2016)](https://www.propublica.org/article/google-has-quietly-dropped-ban-on-personally-identifiable-web-tracking)
 	* [No boundaries: Exfiltration of personal data by session-replay scripts - Freedom to Tinker](https://freedom-to-tinker.com/2017/11/15/no-boundaries-exfiltration-of-personal-data-by-session-replay-scripts/)
+	* [Notes on privacy and data collection of Matrix.org - maxidorius](https://gist.github.com/maxidorius/5736fd09c9194b7a6dc03b6b8d7220d0)
+	* [PSA: Go 1.13 Default Module Proxy Privacy - codeengineered.org](https://codeengineered.com/blog/2019/go-mod-proxy-psa/)
 * **De-Anonymization**<a name="de-anon"></a>
 	* **Articles/Blogposts/Writeups**
 		* [De-Anonymizing Alt.Anonymous. Messages - Tom Ritter - Defcon21](https://www.youtube.com/watch?v=_Tj6c2Ikq_E)
@@ -426,3 +357,104 @@ https://www.bloomberg.com/news/articles/2018-08-30/google-and-mastercard-cut-a-s
 * **Talks**
 	* [Governments and UFOs: A Historical Analysis of Disinformation and Deception - Richard Thieme](http://www.irongeek.com/i.php?page=videos/bsideslasvegas2013/1-2-7-governments-and-ufos-a-historical-analysis-of-disinformation-and-deception-richard-thieme)
 	* [[TROOPERS15] Azhar Desai, Marco Slaviero - Weapons of Mass Distraction](https://www.youtube.com/watch?v=jdaPJLJCK1M)
+
+
+
+
+
+
+
+
+
+### Sort
+
+* [Pixel Tracking: How it’s used and abused - Barry Kimball(OISF19)](http://www.irongeek.com/i.php?page=videos/oisf2019/oisf-2019-05-pixel-tracking-how-its-used-and-abused-barry-kimball)
+* [SyTech’s FSB Document Dump: Owning The Information Space and Disconnecting It - Krytp3ia](https://krypt3ia.wordpress.com/2019/08/03/sytechs-fsb-document-dump-owning-the-information-space-and-disconnecting-it/)
+https://www.vice.com/en_us/article/3kx5y3/uzbekistan-hacking-operations-uncovered-due-to-spectacularly-bad-opsec
+https://rastating.github.io/opsec-in-the-after-life/
+
+https://github.com/VSCodium/vscodium/
+http://tscm.com/
+https://dat.foundation/
+https://ssbc.github.io/scuttlebutt-protocol-guide/
+http://www.servalproject.org/
+
+* [DMVs Are Selling Your Data to Private Investigators - Joseph Cox(Vice)](https://www.vice.com/en_us/article/43kxzq/dmvs-selling-data-private-investigators-making-millions-of-dollars)
+
+* [Create a Reusable Burner OS with Docker, Part 1: Making an Ubuntu Hacking Container - EvilToddler](https://null-byte.wonderhowto.com/how-to/create-reusable-burner-os-with-docker-part-1-making-ubuntu-hacking-container-0175328/)
+	* [Part 2](https://null-byte.wonderhowto.com/how-to/create-reusable-burner-os-with-docker-part-2-customizing-our-hacking-container-0175353/)
+
+https://citizenlab.ca/2019/07/cant-picture-this-2-an-analysis-of-wechats-realtime-image-filtering-in-chats/
+https://citizenlab.ca/2018/08/cant-picture-this-an-analysis-of-image-filtering-on-wechat-moments/
+
+Remove hidden data and personal information by inspecting documents, presentations, or workbooks
+https://support.office.com/en-us/article/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks-356b7b5d-77af-44fe-a07f-9aa4d085966f
+
+https://www.fcc.gov/public-safety-and-homeland-security/policy-and-licensing-division/911-services/general/location-accuracy-indoor-benchmarks
+https://www.wsj.com/articles/SB105546175751598400
+https://opaque.link/post/dropgang/
+https://github.com/ctrlaltdev/LMGTFY-queries
+
+* [A DC Think Tank Used Fake Social Media Accounts, A Bogus Expert, And Fancy Events To Reach The NSA, FBI, And White House - Craig Silverman(BuzzFeed News)](https://www.buzzfeednews.com/article/craigsilverman/icit-james-scott-think-tank-fake-twitter-youtube#.dnqv2lQJr)
+
+* [Opting Out Like A Boss - The OSINT Way (Part 1) - learnallthethings.net](https://www.learnallthethings.net/blog/2018/1/23/opting-out-like-a-boss-the-osint-way)
+https://electricalstrategies.com/about/in-the-news/spies-in-the-xerox-machine/
+https://discover.cobbtechnologies.com/blog/the-soviet-union-and-the-photocopier
+
+https://github.com/MicrosoftDocs/windows-itpro-docs/blob/master/windows/privacy/manage-windows-1809-endpoints.md
+
+* [Creating Your Own Citizen Database -  Aiganysh Aidarbekova](https://www.bellingcat.com/resources/how-tos/2019/02/14/creating-your-own-citizen-database/)
+
+	* [Manage connections from Windows operating system components to Microsoft services - docs.ms](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
+* [Cookies – what does ‘good’ look like? - UK Information Comissioner's Office - Ali Shah](https://ico.org.uk/about-the-ico/news-and-events/news-and-blogs/2019/07/blog-cookies-what-does-good-look-like/)
+
+
+
+
+
+https://www.eff.org/nsa-spying/nsadocs
+https://www.freehaven.net/anonbib/
+http://computer-outlines.over-blog.com/article-windows-ipv6-privacy-addresses-118018020.html
+
+https://blog.superuser.com/2011/02/11/did-you-know-that-ipv6-may-include-your-mac-address-heres-how-to-stop-it/
+
+https://www.bloomberg.com/news/articles/2018-08-30/google-and-mastercard-cut-a-secret-ad-deal-to-track-retail-sales
+
+* [Ghostbuster: Detecting the Presence of Hidden Eavesdroppers](https://synrg.csl.illinois.edu/papers/ghostbuster-mobicom18.pdf)
+
+* Propaganda
+	* [Project Feels: How USA Today, ESPN and The New York Times are targeting ads to mood - digiday](https://digiday.com/media/project-feels-usa-today-espn-new-york-times-targeting-ads-mood/)
+	* [The New York Times Advertising & Marketing Solutions Group Introduces ‘nytDEMO’: A Cross-Functional Team Focused on Bringing Insights and Data Solutions to Brands(2018)](https://investors.nytco.com/press/press-releases/press-release-details/2018/The-New-York-Times-Advertising--Marketing-Solutions-Group-Introduces-nytDEMO-A-Cross-Functional-Team-Focused-on-Bringing-Insights-and-Data-Solutions-to-Brands/default.aspx)
+
+* [A DC Think Tank Used Fake Social Media Accounts, A Bogus Expert, And Fancy Events To Reach The NSA, FBI, And White House - Craig Silverman](https://www.buzzfeednews.com/article/craigsilverman/icit-james-scott-think-tank-fake-twitter-youtube#.dnqv2lQJr)
+
+* [Toward an Information Operations Kill Chain - Bruce Schneier](https://www.lawfareblog.com/toward-information-operations-kill-chain)
+
+* [Attacks on applications of k-anonymity for password retrieval - Jack Cable](https://cablej.io/blog/k-anonymity/)
+* [Project Raven: Inside the UAE’s secret hacking team of American mercenaries(Christopher Bing, Joel Schectman)]
+
+* [How to Purge Google and Start Over – Part 2 - Mike Felch](https://www.blackhillsinfosec.com/how-to-purge-google-and-start-over-part-2/)
+
+* [Of Moles and Molehunters: A Review of Counterintelligence Literature, 1977-92](https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/U-Oct%20%201993-%20Of%20Moles%20-%20Molehunters%20-%20A%20Review%20of%20Counterintelligence%20Literature-%201977-92%20-v2.pdf)
+
+* [Salamandra](https://github.com/eldraco/Salamandra)
+	* Salamandra is a tool to detect and locate spy microphones in closed environments. It find microphones based on the strength of the signal sent by the microphone and the amount of noise and overlapped frequencies. Based on the generated noise it can estimate how close or far away you are from the microphone.
+
+* [zwsp-steg](https://github.com/offdev/zwsp-steg-js)
+	* Zero-Width Space Steganography. Encodes and decodes hidden messages as non printable/readable characters. [A demo can be found here](https://offdev.net/demos/zwsp-steg-js).
+* [DEDA](https://github.com/dfd-tud/deda)
+	* DEDA - tracking Dots Extraction, Decoding and Anonymisation toolkit; Document Colour Tracking Dots, or yellow dots, are small systematic dots which encode information about the printer and/or the printout itself. This process is integrated in almost every commercial colour laser printer. This means that almost every printout contains coded information about the source device, such as the serial number.
+	* https://dfd.inf.tu-dresden.de/
+* [The Spy and the Traitor: The Greatest Espionage Story of the Cold War - cia.gov](https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/csi-studies/studies/vol-63-no-1/spy_and_traitor.html)
+* [How a Bitcoin Evangelist Made Himself Vanish, in 15 (Not So Easy) Steps - Nathaniel Popper](https://www.nytimes.com/2019/03/12/technology/how-to-disappear-surveillance-state.html)
+
+* [A Glance through the VPN Looking Glass: IPv6 Leakage and DNS Hijacking in Commercial VPN clients - Vasile C. Perta, Marco V. Barbera, Gareth Tyson, Hamed Haddadi, and Alessandro Mei(2/2015)](https://www.petsymposium.org/2015/papers/02_Perta.pdf)
+
+* [Forensic Analysis and Anonymisation of Printed Documents](https://dl.acm.org/citation.cfm?doid=3206004.3206019)
+	* Contrary to popular belief, the paperless office has not yet established itself. Printer forensics is therefore still an important field today to protect the reliability of printed documents or to track criminals. An important task of this is to identify the source device of a printed document. There are many forensic approaches that try to determine the source device automatically and with commercially available recording devices. However, it is difficult to find intrinsic signatures that are robust against a variety of influences of the printing process and at the same time can identify the specific source device. In most cases, the identification rate only reaches up to the printer model. For this reason we reviewed document colour tracking dots, an extrinsic signature embedded in nearly all modern colour laser printers. We developed a refined and generic extraction algorithm, found a new tracking dot pattern and decoded pattern information. Through out we propose to reuse document colour tracking dots, in combination with passive printer forensic methods. From privacy perspective we additional investigated anonymization approaches to defeat arbitrary tracking. Finally we propose our toolkitdeda which implements the entire workflow of extracting, analysing and anonymisation of a tracking dot pattern.
+
+* [NCCA Polygraph Countermeasure Course Files Leaked](https://antipolygraph.org/blog/2018/06/09/ncca-polygraph-countermeasure-course-files-leaked/)
+
+
+* [Fooling automated surveillance cameras: adversarial patches to attack person detection - Simen Thys, Wiebe Van Ranst, Toon Goedemé](https://arxiv.org/abs/1904.08653)
+	* Adversarial attacks on machine learning models have seen increasing interest in the past years. By making only subtle changes to the input of a convolutional neural network, the output of the network can be swayed to output a completely different result. The first attacks did this by changing pixel values of an input image slightly to fool a classifier to output the wrong class. Other approaches have tried to learn "patches" that can be applied to an object to fool detectors and classifiers. Some of these approaches have also shown that these attacks are feasible in the real-world, i.e. by modifying an object and filming it with a video camera. However, all of these approaches target classes that contain almost no intra-class variety (e.g. stop signs). The known structure of the object is then used to generate an adversarial patch on top of it. In this paper, we present an approach to generate adversarial patches to targets with lots of intra-class variety, namely persons. The goal is to generate a patch that is able successfully hide a person from a person detector. An attack that could for instance be used maliciously to circumvent surveillance systems, intruders can sneak around undetected by holding a small cardboard plate in front of their body aimed towards the surveillance camera. From our results we can see that our system is able significantly lower the accuracy of a person detector. Our approach also functions well in real-life scenarios where the patch is filmed by a camera. To the best of our knowledge we are the first to attempt this kind of attack on targets with a high level of intra-class variety like persons. 

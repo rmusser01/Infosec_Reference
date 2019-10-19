@@ -1,6 +1,5 @@
 # Embedded Device Security
 
-
 -----------------------------------
 ## Table of Contents
 - [General](#general)
@@ -29,7 +28,6 @@
 - [Voting Machines](#voting)
 - [Specific Attacks](#specific)
 
-
 -----------------------------
 * **To-Do**
 	* Fingeprint readers
@@ -42,10 +40,6 @@
 	* SD Cards
 	* TPM
 		* [Attackin the TPM part 2](https://www.youtube.com/watch?v=h-hohCfo4LA)
-
-
-
-
 
 --------
 ### General
@@ -564,3 +558,6 @@ Drone hacking
 * [DEVIATIONTX WITH NRF24L01 MODULE, THE UNIVERSAL DRONE REMOTE CONTROL. - garagedrone](https://dronegarageblog.wordpress.com/2016/06/07/deviationtx-with-nrf24l01-module-the-universal-drone-remote/)
 https://github.com/phodal/awesome-iot
 https://github.com/V33RU/IoTSecurity101
+* [Hardware Hacking for the Masses (and you!) - BusesCanFly(LevelUp 0x05)](https://www.youtube.com/watch?v=95vRsoGG9dc&list=PLIK9nm3mu-S4vjC0EGZVEK3WAKwT3rAFy&index=2&t=0s)
+    * Custom summary: Intro(ish)-level talk for getting started/introduced to HardwareHacking. Good stuff.
+    * [Slides](https://github.com/BusesCanFly/HardwareHackingForTheMasses/blob/master/HardwareHackingForTheMasses.pdf)

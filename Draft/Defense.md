@@ -568,6 +568,8 @@
     * **Articles/Blogposts/Writeups**
 	    * [Vulnerability Management Program Best Practices – Irfahn Khimji](https://www.tripwire.com/state-of-security/vulnerability-management/vulnerability-management-program-best-practices-part-1/)
 		* [The Five Stages of Vulnerability Management - Irfahn Khimji](https://www.tripwire.com/state-of-security/vulnerability-management/the-five-stages-of-vulnerability-management/)
+		* [Building a VulnerabilityManagement Program: A project management approach - Wylie Shanks(2015)](https://www.sans.org/reading-room/whitepapers/projectmanagement/building-vulnerability-management-program-project-management-approach-35932)
+    		* Abstract: This paper examines the critical role of project management in building a successful vulnerability management program. This paper outlines how organizational risk and regulatory compliance needs can be addressed through a "Plan-Do-Check-Act" approach to a vulnerability management program.
 	* **Identifying Assets**
 		* [PowerShell: Documenting your environment by running systeminfo on all Domain-Computers - Patrick Gruenauer](https://sid-500.com/2017/08/09/powershell-documenting-your-environment-by-running-systeminfo-on-all-domain-computers/)
 		* [A Faster Way to Identify High Risk Windows Assets - Scott Sutherland](https://blog.netspi.com/a-faster-way-to-identify-high-risk-windows-assets/)
@@ -663,3 +665,25 @@ Active Directory
 * [Stored passwords found all over the place after installing Windows in company networks :( - Sami Laiho](http://blog.win-fu.com/2017/08/stored-passwords-found-all-over-place.html)
 
 * [Protect Yourself From Malicious PKI Administrator – Role Separation In PKI - Paula Januszkiewicz](https://cqureacademy.com/blog/securing-infrastructure/role-separation-pki)
+* [Cost Effective Drone Detection - Alex Farrant](https://www.contextis.com/en/blog/cost-effective-drone-detection)
+
+https://www.slideshare.net/HuyKha2/adsvs-v10-improving-the-security-of-active-directory
+https://www.slideshare.net/HuyKha2/adstg-v20-guidance
+https://www.slideshare.net/HuyKha2/iam-policy-ad
+https://www.slideshare.net/HuyKha2/delegate-backup-important-stuff-in-active-directory
+https://support.microsoft.com/en-us/help/4020089/windows-10-in-s-mode-faq
+https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/All-your-creds-are-belong-to-us/ba-p/855124
+* [Disable DDEAUTO for Outlook, Word, OneNote, and Excel versions 2010, 2013, 2016](https://gist.github.com/wdormann/732bb88d9b5dd5a66c9f1e1498f31a1b)
+
+* [Project Phinn](https://github.com/duo-labs/phinn)
+	* A toolkit to generate an offline Chrome extension to detect phishing attacks using a bespoke convolutional neural network.
+* [IsThisLegit?](https://github.com/duo-labs/isthislegit)
+	* IsThisLegit is a dashboard and Chrome extension that makes it easy to receive, analyze, and respond to phishing reports.
+
+* [How to grill Malicious Macros - SSTIC15 - Decalage](https://decalage.info/en/sstic15)
+* [Applied Machine Learning: Defeating Modern Malicious Documents](https://www.youtube.com/embed/ZAuCEgA3itI?enablejsapi=1&modestbranding=1&disablekb=1&rel=0)
+* [MacroMilter](https://github.com/sbidy/MacroMilter)
+	* This python based milter (mail-filter) checks an incoming mail for suspicious VBA macro code in MS 20xx Office attachments (doc, xls, ppt ...).
+* [MaliciousMacroBot](https://github.com/egaus/MaliciousMacroBot)
+
+* [Hunting for evil: detect macros being executed - Pieter Ceelen](https://outflank.nl/blog/2018/01/16/hunting-for-evil-detect-macros-being-executed/)

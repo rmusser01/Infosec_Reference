@@ -947,6 +947,7 @@ To do:
 				* **DCSync**
 					* [Mimikatz DCSync Usage, Exploitation, and Detection - Sean Metcalf](https://adsecurity.org/?p=1729)
 					* [Mimikatz and DCSync and ExtraSids, Oh My - harmj0y](http://www.harmj0y.net/blog/redteaming/mimikatz-and-dcsync-and-extrasids-oh-my/)
+					* [Active Directory Attack - DCSync - c0d3xpl0it](https://www.c0d3xpl0it.com/2018/06/active-directory-attack-dcsync.html)
 				* **DCShadow**
 					* [DCShadow - Minimal permissions, Active Directory Deception, Shadowception and more - Nikhil Mittal](http://www.labofapenetrationtester.com/2018/04/dcshadow.html)
 					* [DCShadow](https://www.dcshadow.com/)
@@ -1447,6 +1448,8 @@ To do:
 			* [Demo of kerberoasting on EvilCorp Derbycon6](https://adsecurity.org/wp-content/uploads/2016/09/DerbyCon6-2016-AttackingEvilCorp-Anatomy-of-a-Corporate-Hack-Demo-4-kerberoast.mp4)
 			* [Attacking EvilCorp Anatomy of a Corporate Hack - Sean Metcalf, Will Schroeder](https://www.youtube.com/watch?v=nJSMJyRNvlM&feature=youtu.be&t=16)
 				* [Slides](https://adsecurity.org/wp-content/uploads/2016/09/DerbyCon6-2016-AttackingEvilCorp-Anatomy-of-a-Corporate-Hack-Presented.pdf)
+			* [Kerberos & Attacks 101 - Tim Medin(SANS Webcast)](https://www.youtube.com/watch?v=LmbP-XD1SC8)
+			    * Want to understand how Kerberos works? Would you like to understand modern Kerberos attacks? If so, then join Tim Medin as he walks you through how to attack Kerberos with ticket attacks and Kerberoasting. Well cover the basics of Kerberos authentication and then show you how the trust model can be exploited for persistence, pivoting, and privilege escalation.
 		* **Tools**
 			* [kerberoast](https://github.com/nidem/kerberoast)
 				* Kerberoast is a series of tools for attacking MS Kerberos implementations.
@@ -2720,3 +2723,41 @@ https://github.com/mkorman90/sysmon-config-bypass-finder
 Bug Chains
 	* [CVE-2018-873X - NagiosXI Vulnerability Chaining; Death By a Thousand Cuts](https://blog.redactedsec.net/exploits/2018/04/26/nagios.html)
 	    * tl;dr: We found four vulnerabilities in NagiosXI, and chained them together to create a root RCE exploit
+https://pentestlab.blog/2019/10/07/persistence-new-service/
+https://pentestlab.blog/2019/10/08/persistence-shortcut-modification/
+https://pentestlab.blog/2019/10/09/persistence-screensaver/
+https://iwantmore.pizza/posts/meterpreter-shellcode-inject.html
+https://www.contextis.com/documents/166/WSUSuspect_Presentation.pdf
+https://www.contextis.com/services/research/white-papers/wsuspect-compromising-windows-enterprise/
+* [Breaking Antivirus Software - Joxean Koret, COSEINC(SYSCAN2014)](http://mincore.c9x.org/breaking_av_software.pdf)
+https://googleprojectzero.blogspot.com/2015/06/analysis-and-exploitation-of-eset.html
+https://secrary.com/Random/RedTeamTrick/
+https://www.contextis.com/en/blog/common-language-runtime-hook-for-persistence
+* [Obtain D.C. Hashes within Azure in 4 Easy Steps - FortyNorth Security](https://www.fortynorthsecurity.com/obtain-d-c-hashes-within-azure-in-4-easy-steps/)
+* [PowerShell, Azure, and Password Hashes in 4 steps - FortyNorth Security](https://www.fortynorthsecurity.com/powershell-azure-and-password-hashes-in-4-steps/)
+	* this blog post will walk you through the process of obtaining hashes from a domain controller within Azure using PowerShell.
+
+https://pentestlab.blog/2019/09/04/microsoft-exchange-domain-escalation/
+https://pentestlab.blog/2019/09/05/microsoft-exchange-password-spraying/
+https://andripwn.github.io/Labs/RCE1/
+https://pentestlab.blog/2019/09/12/microsoft-exchange-acl/
+
+https://github.com/infosecn1nja/SharpDoor
+* [ Proxy-Aware Payload Testing - redxorblue](https://blog.redxorblue.com/2019/09/proxy-aware-payload-testing.html)
+    * "I get told that I am too wordy, so if you want the summary, here are some steps to setup a virtual testing environment to test payloads to see if they can handle HTTP(S) proxies and if so, can they authenticate properly through them as well. This post will cover the proxy setup without authentication since that is the easier part, and I will do a second post shortly to hack together the authentication portion of it."
+https://blog.redteam.pl/2019/10/internal-domain-name-collision-dns.html
+* [Delegating like a boss: Abusing Kerberos Delegation in Active Directory - Kevin Murphy](https://www.guidepointsecurity.com/2019/09/04/delegating-like-a-boss-abusing-kerberos-delegation-in-active-directory/)
+    * I wanted to write a post that could serve as a (relatively) quick reference for how to abuse the various types of Kerberos delegation that you may find in an Active Directory environment during a penetration test or red team engagement.
+
+
+https://pentestlab.blog/2019/10/07/persistence-new-service/
+https://pentestlab.blog/2019/10/09/persistence-screensaver/
+https://pentestlab.blog/2019/10/08/persistence-shortcut-modification/
+
+https://techblog.mediaservice.net/2019/10/remote-desktop-tunneling-tips-tricks/
+https://www.vdalabs.com/2019/09/25/windows-credential-theft-rdp-internet-explorer-11/
+
+https://medium.com/@PenTest_duck/almost-all-the-ways-to-file-transfer-1bd6bf710d65
+
+* [Dynamic Microsoft Office 365 AMSI In Memory Bypass Using VBA - @rd_pentest](https://secureyourit.co.uk/wp/2019/05/10/dynamic-microsoft-office-365-amsi-in-memory-bypass-using-vba/)
+https://codewhitesec.blogspot.com/2018/06/cve-2018-0624.html

@@ -7,6 +7,7 @@
 
 
 
+https://www.recordedfuture.com/disinformation-service-campaigns/
 https://getindico.io/
 
 https://www.niceideas.ch/roller2/badtrash/entry/deciphering-the-bengladesh-bank-heist
@@ -16,9 +17,36 @@ https://citizenlab.ca/2018/10/the-kingdom-came-to-canada-how-saudi-linked-digita
 	* Molly Schweickert, Vice President Global Media from Cambridge Analytica on "How digital advertising worked for the US 2016 presidential campaign". How they used Facebook user data and other sources to target specific users with individual messages for the 2016 Trump election campaign. She is Alexander Nix' digital marketing expert.
 
 http://www.tidepools.co/history.html
-
+https://www.iafrikan.com/2019/09/02/south-africa-mass-surveillance-spying-undersea-fiber-cables/
 http://habitatchronicles.com/2007/03/the-untold-history-of-toontowns-speedchat-or-blockchattm-from-disney-finally-arrives/
 https://v1.escapistmagazine.com/articles/view/video-games/issues/issue_101/559-Will-Bobba-for-Furni.3
+* [HiJackThis Fork v3](https://github.com/dragokas/hijackthis)
+
+* [Revealed: How a secret Dutch mole aided the U.S.-Israeli Stuxnet cyberattack on Iran - Kim Zetter, Huib Modderkolk(Yahoo News)](https://news.yahoo.com/revealed-how-a-secret-dutch-mole-aided-the-us-israeli-stuxnet-cyber-attack-on-iran-160026018.html)
+
+* [Why Arabs Lose Wars - Norvell B. De Atkine - Middle East Quarterly(1999)](https://www.meforum.org/441/why-arabs-lose-wars)
+* [Flame Warriors - Mike Reed](http://www.flamewarriorsguide.com/)
+
+* Spying
+	* https://theintercept.com/2018/05/19/japan-dfs-surveillance-agency/
+	* http://www.spiegel.de/international/germany/inside-the-nsa-s-war-on-internet-security-a-1010361.html
+	* https://commons.erau.edu/cgi/viewcontent.cgi?article=1008&context=ibpp
+	* http://science.sciencemag.org/content/363/6425/374
+	* https://www.amazon.com/The-Widow-Spy-Martha-Peterson/dp/0983878129
+	* http://www.wect.com/story/31012495/ex-cia-spy-recalls-her-time-in-russia/
+	* https://espionagehistoryarchive.com/2015/03/24/the-kgbs-intelligence-school/
+	* https://ia800300.us.archive.org/16/items/MoraleOperations/MoraleOperations.pdf
+	* https://repository.library.georgetown.edu/bitstream/handle/10822/553096/mobleyBlake.pdf?se
+	* https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/csi-studies/studies/vol.-57-no.-1-a/vol.-57-no.-1-a-pdfs/Burkett-MICE%20to%20RASCALS.pdf
+	* https://drive.google.com/file/d/0Bzt0K7_O4qyqNE1UMG5Uc1VGcXc/edit
+	* https://longreads.com/2015/01/12/the-dark-arts-a-corporate-espionage-reading-list/
+	* https://www.gov.uk/government/speeches/mi6-c-speech-on-fourth-generation-espionage
+	* https://www.bellingcat.com/resources/how-tos/2019/02/01/tracking-illicit-transactions-with-blockchain-a-guide-featuring-mueller/
+	* https://www.reuters.com/investigates/special-report/usa-spying-raven/
+China
+	* https://www.theguardian.com/news/2018/dec/07/china-plan-for-global-media-dominance-propaganda-xi-jinping
+https://theblog.okcupid.com/the-case-for-an-older-woman-99d8cabacdf5
+https://theblog.okcupid.com/the-big-lies-people-tell-in-online-dating-a9e3990d6ae2
 
 https://pagedout.institute/?page=issues.php
 https://www.cnet.com/forums/discussions/beyond-the-grave-virus-infecting-hedge-funds/
@@ -26,22 +54,31 @@ https://www.cnet.com/forums/discussions/beyond-the-grave-virus-infecting-hedge-f
 https://elpais.com/elpais/2019/03/13/inenglish/1552464196_279320.html
 http://www.catb.org/~esr/jargon/html/koans.html
 
+* [An Interview With A Google Search Quality Rater - Matt McGee](https://searchengineland.com/interview-google-search-quality-rater-108702)
+
 * [Cyber-Mercenary Groups Shouldn't be Trusted in Your Browser or Anywhere Else - Cooper Quintin(EFF)](https://www.eff.org/deeplinks/2019/02/cyber-mercenary-groups-shouldnt-be-trusted-your-browser-or-anywhere-else)
+https://www.brennancenter.org/blog/standards-opening-fbi-investigation-so-low-they-make-statistic-meaningless
 
+https://cepr.shorthandstories.com/haiti-contractors/index.html
+https://www.brennancenter.org/analysis/just-what-fbi-investigation-fact-sheet
+https://vault.fbi.gov/FBI%20Domestic%20Investigations%20and%20Operations%20Guide%20%28DIOG%29/FBI%20Domestic%20Investigations%20and%20Operations%20Guide%20%28DIOG%29%202016%20Version/FBI%20Domestic%20Investigations%20and%20Operations%20Guide%20%28DIOG%29%202016%20Version%20Part%2001%20of%2002/view
 
+* [gotty](https://github.com/yudai/gotty)
+	* Share your terminal as a web application
 https://baesystemsai.blogspot.com/2016/04/two-bytes-to-951m.html
 https://www.ribbonfarm.com/2012/03/08/halls-law-the-nineteenth-century-prequel-to-moores-law/
 https://epic.org/2019/01/border-agency-finalizes-social.html
 https://epic.org/foia/epic-v-dhs-media-monitoring/
 https://www.govinfo.gov/content/pkg/FR-2018-12-27/pdf/2018-27944.pdf
 https://www.rand.org/research/gun-policy/analysis/essays/mass-shootings.html
+https://priceonomics.com/the-san-francisco-drug-economy/
 
+https://cosmism.blogspot.com/2010/05/existentialism-today-terror-management.html
 
+* [The Virgin CSV vs. the Chad TSV - Imagine unironically escaping special characters](https://www.256kilobytes.com/content/show/10868/the-virgin-csv-vs-the-chad-tsv)
+https://trollfactory.yle.fi/
 
-
-
-
-
+https://www.mail-archive.com/lt@lists.liberationtech.org/msg00104.html
 
 * [A Verified Information-Flow Architecture](http://www.crash-safe.org/assets/verified-ifc-long-draft-2013-11-10.pdf)
 	* SAFE is a clean-slate design for a highly secure computer system, with pervasive mechanisms for tracking and limiting information flows. At the lowest level, the SAFE hardware supports fine-grained programmable tags, with efficient and flexible propagation and combination of tags as instructions are executed. The operating system virtualizes these generic facilities to present an information-flow abstract machine that allows user programs to label sensitive data with rich confidentiality policies. We present a formal, machine-checked model of the key hardware and software mechanisms used to control information flow in SAFE and an end- to-end proof of noninterference for this model.
@@ -85,7 +122,8 @@ https://dynamicland.org/
 
 * [lowRISC](https://www.lowrisc.org/)
 * [Tagged memory and minion cores in the lowRISC SoC](https://www.lowrisc.org/downloads/lowRISC-memo-2014-001.pdf)
-
+* **Open Source**
+	* [How to abandon a FLOSS project - Drew DeVault](https://drewdevault.com/2018/12/04/How-to-abandon-a-FLOSS-project.html)
 * [BE YOUR OWN VPN PROVIDER WITH OPENBSD (v2)](https://networkfilter.blogspot.com/2017/04/be-your-own-vpn-provider-with-openbsd-v2.html)
 
 #### End Sort

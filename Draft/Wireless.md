@@ -28,9 +28,25 @@
 * Fix ToC
 * Add 101 stuff
 * Add SMS Standards/related
-
+https://www.usenix.org/legacy/events/sec11/tech/full_papers/Clark.pdf
 
 * [RFC 7710: Captive-Portal Identification Using DHCP or Router Advertisements (RAs)](https://tools.ietf.org/html/rfc7710)
+
+Bluetooth Low-Energy
+	* https://blog.attify.com/the-practical-guide-to-hacking-bluetooth-low-energy/
+	* https://csrc.nist.gov/csrc/media/publications/sp/800-121/rev-2/draft/documents/sp800_121_r2_draft.pdf
+	* https://obvi.us/presentation/rf-sig/
+
+	* https://www.usenix.org/system/files/conference/nsdi16/nsdi16-paper-vasisht.pdf
+	* https://github.com/gsmaxwell/DopplerFi
+	* https://github.com/seemoo-lab/nexmon
+	* https://www.arxiv-vanity.com/papers/1811.10948/
+	* https://arxiv.org/abs/1811.10948
+https://github.com/hexway/apple_bleee
+
+* https://papers.mathyvanhoef.com/dragonblood.pdf
+https://www.blackhat.com/presentations/bh-europe-07/Butti/Presentation/bh-eu-07-Butti.pdf
+https://www.youtube.com/watch?v=FCu8rnQVU5M
 
 https://comsecuris.com/blog/posts/theres_life_in_the_old_dog_yet_tearing_new_holes_into_inteliphone_cellular_modems/
 
@@ -61,7 +77,7 @@ https://googleprojectzero.blogspot.com/2017/04/over-air-exploiting-broadcoms-wi-
 https://googleprojectzero.blogspot.com/2017/04/over-air-exploiting-broadcoms-wi-fi_11.html
 https://blade.tencent.com/en/advisories/qualpwn/
 
-
+https://devtty0.io/pwning-wireless-peripherals/
 
 
 https://www.blackhat.com/asia-17/arsenal.html#damn-vulnerable-ss7-network

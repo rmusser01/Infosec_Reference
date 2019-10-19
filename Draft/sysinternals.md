@@ -525,3 +525,12 @@ http://arno.org/arnotify/2006/10/on-the-origins-of-ds_store/
 https://0day.work/parsing-the-ds_store-file-format/
 https://en.internetwache.org/scanning-the-alexa-top-1m-for-ds-store-files-12-03-2018/
 https://www.vergiliusproject.com/
+
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/
+https://stackoverflow.com/questions/17935873/malloc-fails-when-there-is-still-plenty-of-swap-left
+http://www.adrc.com/ckr/windows_bootup_process.html
+https://social.technet.microsoft.com/wiki/contents/articles/11341.windows-7-the-boot-process-explained.aspx
+http://www.codemachine.com/article_kernelstruct.html
+
+
+

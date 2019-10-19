@@ -25,7 +25,7 @@ https://github.com/hyc/fcrackzip
 http://pdfcrack.sourceforge.net/
 
 https://www.betterbuys.com/estimating-password-cracking-times/
-
+* [brut3k1t](https://github.com/ex0dus-0x/brut3k1t)
 https://github.com/clr2of8/DPAT
 * [Comprehensive Guide on Cewl Tool - rajhackingarticles.blogspot.com](https://rajhackingarticles.blogspot.com/2018/11/hello-friends-in-this-article-we-are.html)
 

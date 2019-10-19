@@ -5,16 +5,63 @@
 ## Table of Contents
 
 
+https://www.youtube.com/watch?v=YGJaj6_3dGA
 
-
-
+https://adsecurity.org/wp-content/uploads/2017/04/2017-BSidesCharm-DetectingtheElusive-ActiveDirectoryThreatHunting-Final.pdf
 
 * [Mental Models for Effective Searching - Chris Sanders](https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1555082140.pdf)
-
+* [kethash](https://github.com/cyberark/ketshash)
+	* A little tool for detecting suspicious privileged NTLM connections, in particular Pass-The-Hash attack, based on event viewer logs.
 https://www.endgame.com/blog/technical-blog/hunting-memory-net-attacks
+* [Hunting for SILENTTRINITY - Wee-Jing Chung](https://countercept.com/blog/hunting-for-silenttrinity/)
+* [Use Windows Event Forwarding to help with intrusion detection - docs.ms](Use Windows Event Forwarding to help with intrusion detection)
+* [Digital Steganography as an Advanced Malware Detection Evasion Technique - z3roTrust(Masters Thesis)](https://medium.com/@z3roTrust/digital-steganography-as-an-advanced-malware-detection-evasion-technique-40d4eeb19830)
+* [Sysinternals Sysmon suspicious activity guide - Moti Bani](https://blogs.technet.microsoft.com/motiba/2017/12/07/sysinternals-sysmon-suspicious-activity-guide/)
+* [Background Intelligent Transfer Protocol - TH Team](https://medium.com/@threathuntingteam/background-intelligent-transfer-protocol-ab81cd900aa7)
+https://blog.xpnsec.com/evading-sysmon-dns-monitoring/
+* [GENE: Go Evtx sigNature Engine](https://github.com/0xrawsec/gene)
+	* The idea behind this project is to provide an efficient and standard way to look into Windows Event Logs (a.k.a EVTX files). For those who are familiar with Yara, it can be seen as a Yara engine but to look for information into Windows Events.
+https://medium.com/mitre-attack/getting-started-with-attack-detection-a8e49e4960d0
+		* [Obtaining and Detecting Domain Persistence - Grant Bugher(DEF CON 23)](https://www.youtube.com/watch?v=gajEuuC2-Dk)
+			* When a Windows domain is compromised, an attacker has several options to create backdoors, obscure his tracks, and make his access difficult to detect and remove. In this talk, I discuss ways that an attacker who has obtained domain administrator privileges can extend, persist, and maintain control, as well as how a forensic examiner or incident responder could detect these activities and root out an attacker.
 
+
+https://fortinetweb.s3.amazonaws.com/fortiguard/research/Learn_How_to_Build_Your_Own_Utility_to_Monitor_Malicious_Behaviors_of_Malware_on%20macOS_KaiLu.pdf
+https://www.blackhat.com/us-18/arsenal.html#learn-how-to-build-your-own-utility-to-monitor-malicious-behaviors-of-malware-on-macos
+https://jpcertcc.github.io/ToolAnalysisResultSheet/
+https://techcommunity.microsoft.com/t5/Azure-Sentinel/Identifying-Threat-Hunting-opportunities-in-your-data/ba-p/915721
+
+
+
+
+https://www.peerlyst.com/posts/security-monitoring-and-attack-detection-with-elasticsearch-logstash-and-kibana-martin-boller
+https://github.com/littl3field/Audix
+https://digital-forensics.sans.org/blog/2019/02/09/investigating-wmi-attacks
+https://github.com/hunters-forge/API-To-Event
+https://www.peerlyst.com/posts/threat-hunting-basics-getting-manual-soc-prime
+* [Windows Privilege Abuse: Auditing, Detection, and Defense - Palantir](https://medium.com/palantir/windows-privilege-abuse-auditing-detection-and-defense-3078a403d74e)
+
+https://www.youtube.com/watch?v=iweEI60PWeY
+* [Container Forensics: What to Do When Your Cluster is a Cluster - Maya Kaczorowski & Ann Wallace(CloudNativeConEU19) ](https://www.youtube.com/watch?v=MyXROAqO7YI&list=PLKDRii1YwXnLmd8ngltnf9Kzvbja3DJWx&index=7&t=0s)
+	* When responding to an incident in your containers, you don’t necessarily have the same tools at your disposal that you do with VMs - and so your incident investigation process and forensics are different. In a best case scenario, you have access to application logs, orchestrator logs, node snapshots, and more.  In this talk, we’ll go over where to get information about what’s happening in your cluster, including logs and open source tools you can install, and how to tie this information together to get a better idea of what’s happening in your infrastructure. Armed with this info, we’ll review the common mitigation options such as to alert, isolate, pause, restart, or kill a container. For common types of container attacks, we'll discuss what options are best and why. Lastly, we’ll talk about restoring services after an incident, and the best steps to take to prevent the next one.
+* [Get Cozy with OpenBSM Auditing...the good, the bad, & the ugly - Patrick Wardle](https://objective-see.com/talks/Wardle_ShmooCon2018.pdf)
+* [Getting Cozy With OpenBSM Auditing On MacOS - Patrick Wardle](https://www.youtube.com/watch?v=CqlpJ7rIT6M)
+	* With the demise of dtrace on macOS, and Apple’s push to rid the kernel of 3rd-party kexts, another option is needed to perform effective auditing on macOS. Lucky for us, OpenBSM fits the bill. Though quite powerful, this auditing mechanism is rather poorly documented and suffered from a variety of kernel vulnerabilities. In this talk, we’ll begin with an introductory overview of OpenBSM’s goals, capabilities, and components before going ‘behind-the-scenes’ to take a closer look at it’s kernel-mode implementation. Armed with this understanding, we’ll then detail exactly how to build powerful user-mode macOS monitoring utilities such as file, process, and networking monitors based on the OpenBSM framework and APIs. Next we’ll don our hacker hats and discuss a handful of kernel bugs discovered during a previous audit of the audit subsystem (yes, quite meta): a subtle off-by-one read error, a blotched patch that turned the off-by-one into a kernel info leak, and finally an exploitable heap overflow. Though now patched, the discussion of these bugs provides an interesting ‘case-study’ of finding and exploiting several types of bugs that lurked within the macOS kernel for many years
+https://github.com/maus-/slack-auditor
+* [When Macs Come Under ATT&CK - Richie Cyrus(Derbycon2018)](http://www.irongeek.com/i.php?page=videos/derbycon8/track-3-01-when-macs-come-under-attck-richie-cyrus)
+	* Macs are becoming commonplace in corporate environments as a alternative to Windows systems. Developers, security teams, and executives alike favor the ease of use and full administrative control Macs provide. However, their systems are often joined to an active directory domain and ripe for attackers to leverage for initial access and lateral movement. Mac malware is evolving as Mac computers continue to grow in popularity. As a result, there is a need for proactive detection of attacks targeting MacOS systems in a enterprise environment. Despite advancements in MacOS security tooling for a single user/endpoint, little is known and discussed regarding detection at a enterprise level. This talk will discuss common tactics, techniques and procedures used by attackers on MacOS systems, as well as methods to detect adversary activity. We will take a look at known malware, mapping the techniques utilized to the MITRE ATT&CK framework. Attendees will leave equipped to begin hunting for evil lurking within their MacOS fleet.
+https://blog.stealthbits.com/windows-file-activity-monitoring/
+https://github.com/salesforce/bro-sysmon
+* [Detecting Kerberoasting activity using Azure Security Center - Moti Bani](https://blogs.technet.microsoft.com/motiba/2018/02/23/detecting-kerberoasting-activity-using-azure-security-center/)
+* [Practical PowerShell Security: Enable Auditing and Logging with DSC - Ashley McGlone](https://blogs.technet.microsoft.com/ashleymcglone/2017/03/29/practical-powershell-security-enable-auditing-and-logging-with-dsc/)
+* [Detecting Offensive PowerShell Attack Tools - adsecurity.org](https://adsecurity.org/?p=2604)
+https://github.com/djhohnstein/EventLogParser
 https://blog.redteam.pl/2019/08/threat-hunting-dns-firewall.html?m=1
 * [Windows 10, version 1809 basic level Windows diagnostic events and fields](https://docs.microsoft.com/en-gb/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1809#windows-error-reporting-events)
+* [How to Detect Overpass-The-Hash Attacks - Jeff Warren](https://blog.stealthbits.com/how-to-detect-overpass-the-hash-attacks/)
+
+* [Implementing Sysmon and Applocker - BHIS](https://www.youtube.com/watch?v=9qsP5h033Qk)
+	* In almost every BHIS webcast we talk about how important application whitelisting and Sysmon are to a healthy security infrastructure. And yet, we have not done a single webcast on these two topics. Let's fix that. In this webcast we cover how to implement Sysmon and Applocker. We cover overall strategies for implementation and how to deploy them via Group Policy. We walk through a basic sample of malware and show how both of these technologies react to it. Finally, we cover a couple of different "bypass" techniques for each. Everything in security has weaknesses, and these two technologies are no exception.
 
 * [The Role of Evidence Intention - Chris Sanders](https://rhinosecuritylabs.com/application-security/simplifying-api-pentesting-swagger-files/)
 * [$SignaturesAreDead = “Long Live RESILIENT Signatures” wide ascii nocase - Matthew Dunwoody, Daniel Bohannon(BruCON 0x0A)](https://www.youtube.com/watch?v=YGJaj6_3dGA)
@@ -34,6 +81,8 @@ https://blog.trailofbits.com/2018/04/10/what-do-you-wish-osquery-could-do/
 https://github.com/davehull/Kansa
 * [WebDAV Traffic To Malicious Sites - Didier Stevens](https://blog.didierstevens.com/2017/11/13/webdav-traffic-to-malicious-sites/)
 
+* https://github.com/beahunt3r/Windows-Hunting
+
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor
 https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/
 https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/advanced-security-audit-policy-settings
@@ -41,10 +90,35 @@ https://www.microsoft.com/en-us/download/confirmation.aspx?id=52630
 https://www.microsoft.com/en-us/download/details.aspx?id=50034
 
 
+* [Logs Are Streams, Not Files - Adam Wiggins](https://adam.herokuapp.com/past/2011/4/1/logs_are_streams_not_files/)
+
+https://www.youtube.com/watch?v=YwR7m3Qt2ao&feature=youtu.be
+
+* [Getting Cozy With OpenBSM Auditing On MacOS - Patrick Wardle(Shmoocon2018)](https://www.youtube.com/watch?v=CqlpJ7rIT6M)
+
+https://posts.specterops.io/threat-hunting-with-jupyter-notebooks-part-1-your-first-notebook-9a99a781fde7
+
+OSQuery
+	* https://github.com/facebook/osquery/tree/master/packs
+	* https://osquery.readthedocs.io/en/stable/
+
+* [Mordor](https://github.com/Cyb3rWard0g/mordor)
+	* The Mordor project provides pre-recorded security events generated by simulated adversarial techniques in the form of JavaScript Object Notation (JSON) files for easy consumption. The pre-recorded data is categorized by platforms, adversary groups, tactics and techniques defined by the Mitre ATT&CK Framework. The pre-recorded data represents not only specific known malicious events but additional context/events that occur around it. This is done on purpose so that you can test creative correlations across diverse data sources, enhancing your detection strategy and potentially reducing the number of false positives in your own environment.
+
+ThreatHunting
+	* https://github.com/ThreatHuntingProject/ThreatHunting
+	* https://sqrrl.com/media/Framework-for-Threat-Hunting-Whitepaper.pdf
+	* https://www.threathunting.net/files/huntpedia.pdf
+	* https://www.sans.org/reading-room/whitepapers/threats/paper/37172
+
+
 * [Mental Models for Effective Searching - Chris Sanders](https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1555082140.pdf)
 
 
+* [DNS based threat hunting and DoH (DNS over HTTPS) - blog.redteam.pl](https://blog.redteam.pl/2019/04/dns-based-threat-hunting-and-doh.html)
 
+* [Hunting COM Objects - Charles Hamilton](https://www.fireeye.com/blog/threat-research/2019/06/hunting-com-objects.html)
+* [Hunting COM Objects (Part Two) - Brett Hawkins](https://www.fireeye.com/blog/threat-research/2019/06/hunting-com-objects-part-two.html)
 
 
 https://posts.specterops.io/threat-hunting-with-jupyter-notebooks-part-4-sql-join-via-apache-sparksql-6630928c931e
@@ -87,7 +161,8 @@ http://penconsultants.com/blog/crown-jewels-monitoring-vs-mitigating/
 
 https://github.com/Yelp/elastalert
 
-
+* [Mordor](https://github.com/Cyb3rWard0g/mordor)
+	* The Mordor project provides pre-recorded security events generated by simulated adversarial techniques in the form of JavaScript Object Notation (JSON) files for easy consumption. The pre-recorded data is categorized by platforms, adversary groups, tactics and techniques defined by the Mitre ATT&CK Framework. The pre-recorded data represents not only specific known malicious events but additional context/events that occur around it. This is done on purpose so that you can test creative correlations across diverse data sources, enhancing your detection strategy and potentially reducing the number of false positives in your own environment.
 
 
 

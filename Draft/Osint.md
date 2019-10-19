@@ -18,8 +18,7 @@
 - [Miscellaneous](#misc)
 
 
-* [WhatsMyName](https://github.com/webbreacher/whatsmyname)
-	* This repository has the unified data required to perform user and username enumeration on various websites. Content is in a JSON file and can easily be used in other projects
+
 
 #### Sort
 * Add list of Sources:
@@ -30,17 +29,31 @@
 	* Operating Licenses/Permits; 
 	* Trade Journals;
 
+* [keyhacks](https://github.com/streaak/keyhacks)
+	* Keyhacks is a repository which shows quick ways in which API keys leaked by a bug bounty program can be checked to see if they're valid.
+* [Threat Intel RSS Feeds via Twitter Lists - Joe Hopper](https://www.fracturelabs.com/posts/2018/threat-intel-rss-feeds-via-twitter-lists/)
+https://ahrefs.com/blog/google-advanced-search-operators/
+* [Username enumeration techniques and their value - Ben Williams](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2015/june/username-enumeration-techniques-and-their-value/)
+* [WhatsMyName](https://github.com/webbreacher/whatsmyname)
+	* This repository has the unified data required to perform user and username enumeration on various websites. Content is in a JSON file and can easily be used in other projects
+* [git-all-secrets](https://github.com/anshumanbh/git-all-secrets)
+	* A tool to capture all the git secrets by leveraging multiple open source git searching tools
+https://github.com/hisxo/gitGraber
+https://posts.specterops.io/gathering-open-source-intelligence-bee58de48e05
 https://github.com/intrigueio/intrigue-core
-
-
+* https://www.bellingcat.com/resources/how-tos/2019/04/08/using-phone-contact-book-apps-for-digital-research/
+* [How To Tell Stories: A Beginner’s Guide For Open Source Researchers - Natalia Antonova](https://www.bellingcat.com/resources/2019/07/12/how-to-tell-stories-a-beginners-guide-for-open-source-researchers/)
 https://github.com/vysecurity/DomLink
-
+https://www.icscybersecurityconference.com/intelligence-gathering-on-u-s-critical-infrastructure/
+* [GitHub for Bug Bounty Hunters - Ed Overflow](https://edoverflow.com/2017/github-for-bugbountyhunters/)
+* [pastebin_scraper](https://github.com/Critical-Start/pastebin_scraper)
+	* https://www.criticalstart.com/2019/03/automated-tool-to-monitor-pastebin-for-interesting-information/
 
 https://github.com/woj-ciech/kamerka
 https://github.com/SourcingDenis/free-online-competitive-intelligence/blob/master/README.md
 https://github.com/0days/Blue
 https://github.com/digininja/leakyrepo
-* [Username enumeration techniques and their value - Ben Williams](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2015/june/username-enumeration-techniques-and-their-value/)
+
 * [MailInt - Profiling China based Employees](https://web.archive.org/web/20180706004654/https://vincentyiu.co.uk/maiint-profiling-china-based-employees/)
 
 * [Giggity](https://github.com/needmorecowbell/giggity)
@@ -59,6 +72,10 @@ https://github.com/ZephrFish/GoogD0rker
 
 https://github.com/GeneralTesler/deluxe
 
+* [Weaponizing Corporate Intel - Mike Felch and Beau Bullock(B-Sides Orlando 2019)](https://www.youtube.com/watch?v=EfVXgvABkGg)
+	* Strategically targeting a corporation requires deep knowledge of their technologies and employees. Successfully compromising an organization can depend on the quality of reconnaissance a tester performs up front. Often times testers only resort to using publicly available tools which can overlook critical assets.  In this presentation, we will begin by examining some commonly overlooked methods to discover external resources. Next, we will show how to discover employees of a target organization and quickly locate their social media accounts. Finally, we will strategically identify and weaponize personal information about the employees to target the organization directly using new attack techniques. Attendees will learn an external defense evasion method, a new process to gain credentialed access, and be the first to receive a newly released tool!  While the approach is designed to assist offensive security professionals, the presentation will be informative for technical and non-technical audiences; demonstrating the importance of security-awareness for everyone.
+
+
 
 * [ODIN](https://github.com/chrismaddalena/ODIN)
 	* ODIN aims to automate the basic recon tasks used by red teams to discover and collect data on network assets, including domains, IP addresses, and internet-facing systems. The key feature of ODIN is the data management and reporting. The data is organized in a database and then, optionally, that database can be converted into an HTML report or a Neo4j graph database for visualizing the data.
@@ -73,7 +90,8 @@ https://support.office.com/en-us/article/remove-hidden-data-and-personal-informa
 
 
 
-
+* [yar](https://github.com/Furduhlutur/yar)
+	* yar is an OSINT tool for reconnaissance of repositories/users/organizations on Github. Yar clones repositories of users/organizations given to it and goes through the whole commit history in order of commit time, in search for secrets/tokens/passwords, essentially anything that shouldn't be there. Whenever yar finds a secret, it will print it out for you to further assess. Yar searches either by regex, entropy or both, the choice is yours. You can think of yar as a bigger and better truffleHog, it does everything that truffleHog does and more!
 
 
 

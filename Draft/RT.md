@@ -25,28 +25,100 @@
 
 * **To Do**
 
+* [Victor or Victim Strategies for Avoiding an InfoSec Cold War - Jason Lang, Stuart McIntosh(Derbycon 2018)](https://www.youtube.com/watch?v=9_cZ5xn-huc)
+https://github.com/vysec/RedTips
+* [Finding Domain frontable Azure domains - thoth / Fionnbharr](https://theobsidiantower.com/2017/07/24/d0a7cfceedc42bdf3a36f2926bd52863ef28befc.html)
+
+https://blogs.technet.microsoft.com/motiba/2018/04/09/invoke-adversary-simulating-adversary-operations/
+* [Playing Cat and Mouse: Three Techniques Abused to Avoid Detection - ZLAB-YOROI](https://blog.yoroi.company/research/playing-cat-and-mouse-three-techniques-abused-to-avoid-detection/)
+* [sh00t](https://github.com/pavanw3b/sh00t)
+	* Security Testing is not as simple as right click > Scan. It's messy, a tough game. What if you had missed to test just that one thing and had to regret later? Sh00t is a highly customizable, intelligent platform that understands the life of bug hunters and emphasizes on manual security testing.
+https://hackmd.io/EhFjuYHESIGhFQXFQ6duTQ?view
+http://threatexpress.com/redteaming/redteamplanning/tradecraft/
+https://github.com/HunnicCyber/SharpSniper
+https://blog.xpnsec.com/rundll32-your-dotnet/
+* [Domi-Owned](https://github.com/coldfusion39/domi-owned)
+	* Domi-Owned is a tool used for compromising IBM/Lotus Domino servers.
+
+
+* [Macros and More with SharpShooter v2.0 - MDSec](https://www.mdsec.co.uk/2019/02/macros-and-more-with-sharpshooter-v2-0/)
+* [SharpShooter](https://github.com/mdsecactivebreach/SharpShooter)
+	* SharpShooter is a payload creation framework for the retrieval and execution of arbitrary CSharp source code. SharpShooter is capable of creating payloads in a variety of formats, including HTA, JS, VBS and WSF. It leverages James Forshaw's DotNetToJavaScript tool to invoke methods from the SharpShooter DotNet serialised object. Payloads can be retrieved using Web or DNS delivery or both; SharpShooter is compatible with the MDSec ActiveBreach PowerDNS project. Alternatively, stageless payloads with embedded shellcode execution can also be generated for the same scripting formats.
+https://bitbucket.org/gavinanders/callback-catcher/src/master/
+https://medium.com/@prsecurity_/how-to-build-an-internal-red-team-7957ec644695
+
+* [Advanced Pen-Testing Tricks: Building a Lure to Collect High Value Credentials - Bobby Kuzma](https://www.coresecurity.com/article/advanced-pen-testing-tricks-building-a-lure-to-collect-high-value-credentials)
+* [Powershell Empire Stagers 1: Phishing with an Office Macro and Evading AVs - fzuckerman](https://fzuckerman.wordpress.com/2016/10/06/powershell-empire-stagers-1-phishing-with-an-office-macro-and-evading-avs/)
+* [Invoke-Apex](https://github.com/securemode/Invoke-Apex)
+	* Invoke-Apex is a PowerShell-based toolkit consisting of a collection of techniques and tradecraft for use in red team, post-exploitation, adversary simulation, or other offensive security tasks.  It can also be useful in identifying lapses in "malicious" activity detection processes for defenders as well.
+* [Hacking Corporate Emil Systems - Nate Power(BSides Columbus 2016)](https://www.youtube.com/watch?v=mJ172K1dxoM)
+
+https://github.com/praetorian-code/purple-team-attack-automation
+
+	
+* [Tips, Tricks, and Cheats Gathered from Red vs. Blue Team-Based Training - Ed Skoudis, Joshua Wright](https://www.sans.org/webcasts/tips-tricks-cheats-gathered-red-vs-blue-team-based-training-111505/success)
+https://speakerdeck.com/patrickwardle/harnessing-weapons-of-mac-destruction?slide=23
+https://www.coalfire.com/The-Coalfire-Blog/Sept-2018/From-OSINT-to-Internal-Gaining-Domain-Admin
 https://github.com/mthbernardes/GTRS/blob/master/README.md
 https://github.com/tearsecurity/firstorder
 https://github.com/CylanceSPEAR/MarkovObfuscate
+https://lockboxx.blogspot.com/2019/03/macos-red-teaming-201-introduction.html
+https://rastamouse.me/2019/06/the-return-of-aggressor/
+https://labs.mwrinfosecurity.com/tools/c3/
+https://github.com/mwrlabs/C3
+https://posts.specterops.io/entering-a-covenant-net-command-and-control-e11038bcf462
+https://github.com/BishopFox/sliver/blob/master/README.md
 
+https://medium.com/@d.bougioukas/red-team-diary-entry-1-making-nsas-peddlecheap-rat-invisible-f88ccbdc484d
 
+* [Empire Fails - harmj0y](http://www.harmj0y.net/blog/empire/empire-fails/)
+https://ired.team/offensive-security/red-team-infrastructure
+* [From OSINT to Internal – Gaining Access from outside the perimeter - n00py](https://www.n00py.io/2017/03/from-osint-to-internal-gaining-access-from-the-outside-the-perimeter/)
+http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/
+
+* [Invoke-Apex](https://github.com/securemode/Invoke-Apex)
+	* Invoke-Apex is a PowerShell-based toolkit consisting of a collection of techniques and tradecraft for use in red team, post-exploitation, adversary simulation, or other offensive security tasks.  It can also be useful in identifying lapses in "malicious" activity detection processes for defenders as well.
+
+https://www.slideshare.net/JasonLang1/red-team-methodology-a-naked-look-169879355
+
+* [DeviceDetector.NET](https://github.com/totpero/DeviceDetector.NET)
+	* The Universal Device Detection library will parse any User Agent and detect the browser, operating system, device used (desktop, tablet, mobile, tv, cars, console, etc.), brand and model.
+* [DNSlivery](https://github.com/no0be/DNSlivery)
+	* Easy files and payloads delivery over DNS.
+https://blog.obscuritylabs.com/merging-web-apps-and-red-teams/
+
+* [Invoke-Adversary – Simulating Adversary Operations - Moti Bani](https://blogs.technet.microsoft.com/motiba/2018/04/09/invoke-adversary-simulating-adversary-operations/)
+* [Harlem Shake JS script](https://gist.github.com/devn/5007287)
+https://ijustwannared.team/2017/10/28/outlooktoolbox/
+https://github.com/francisck/DanderSpritz_lab
+* [Post Exploitation with KOADIC - Ian Kings](https://www.prismacsi.com/en/post-exploitation-with-koadic/)
+* [How to Start a Cyber War: Lessons from Brussels - Chris Kubecka(BSides Charm 2019)](http://www.irongeek.com/i.php?page=videos/bsidescharm2019/1-06-how-to-start-a-cyber-war-lessons-from-brussels-chris-kubecka)
+	* A sanitized peek behind the diplomatic curtain, revealing challenges, decisions & tools at their disposal. The Vanguard cyber warfare exercises in Brussels involving EU & NATO member states. Nation-states leveraging software, hardware and human vulnerabilities into digital warfare, with devastating consequences. Embassy threats, leaked Intel agency tools, hacking back & mass casualties.
+
+https://blogs.technet.microsoft.com/motiba/2018/04/09/invoke-adversary-simulating-adversary-operations/
 https://www.sprocketsecurity.com/blog/penetration-testing-dropbox-setup-part2
 
 https://mthbernardes.github.io/persistence/2019/03/07/using-firefox-webextensions-as-c2-client.html
 https://www.welivesecurity.com/2018/08/22/turla-unique-outlook-backdoor/
 
+* [Docker Your Command & Control (C2) - obscuritylabs](https://blog.obscuritylabs.com/docker-command-controll-c2/)
+* [Firework: Leveraging Microsoft Workspaces in a Penetration Test - trustwave](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/firework-leveraging-microsoft-workspaces-in-a-penetration-test/)
 
 
-https://github.com/gen0cide/gscript
 
+https://chigstuff.com/blog/metasploit-domain-fronting-with-microsoft-azure/
+https://medium.com/@rvrsh3ll/hardening-your-azure-domain-front-7423b5ab4f64
 
+* [Cracking The Perimeter: How Red Teams Penetrate - Dominic Chell(BSidesMCR 2018)](https://www.youtube.com/watch?v=u-MHX9-O890)
 
 https://github.com/panagioto/Covenant
-
+* [Red v Blue Workshop - WOPR Summit - Taylor, Dan, Phil](https://github.com/ahhh/presentations/blob/master/Red%20V%20Blue%20Workshop.pdf)
 
 https://www.irongeek.com/i.php?page=videos/derbycon7/t315-game-on-using-red-team-to-rapidly-evolve-your-defenses-joff-thyer-pete-petersen
 
 https://www.irongeek.com/i.php?page=videos/derbycon7/t211-common-assessment-mistakes-pen-testers-and-clients-should-avoid-brent-white-tim-roberts
+
+https://vincentyiu.co.uk/red-team/domain-fronting/domain-fronting-using-stackpath-cdn
 
 * [Modern Defenses and YOU!](https://blog.cobaltstrike.com/2017/10/25/modern-defenses-and-you/)
 * [OPSEC Considerations for Beacon Commands](https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/)
@@ -84,6 +156,9 @@ https://attactics.org/2019/07/18/cslogwatch-cobalt-strike-tracking-parsing-stora
 * [e2modrewrite](https://github.com/infosecn1nja/e2modrewrite)
 	* Convert Empire profiles to Apache mod_rewrite scripts
 
+
+* [gscript](https://github.com/gen0cide/gscript)
+	* Gscript is a framework for building multi-tenant executors for several implants in a stager. The engine works by embedding runtime logic (powered by the V8 Javascript Virtual Machine) for each persistence technique. This logic gets run at deploy time on the victim machine, in parallel for every implant contained with the stager. The Gscript engine leverages the multi-platform support of Golang to produce final stage one binaries for Windows, Mac, and Linux.
 
 
 https://blog.stratumsecurity.com/2018/10/17/route-53-as-a-pentest-infrastructure/

@@ -207,6 +207,11 @@
 		* [FreeBSD Handbook: Jails](https://www.freebsd.org/doc/handbook/jails.html)
 	* **Tools**<a name="jtools"></a>
 		* [ezjail – Jail administration framework](https://erdgeist.org/arts/software/ezjail/)
+* **LXC**
+	* **101**
+		* [Linux containers](https://linuxcontainers.org/)
+	* **Articles/Blogposts/Writeups**
+		* [LXC 1.0: Blog post series [0/10] - Stephane Graber](https://stgraber.org/2013/12/20/lxc-1-0-blog-post-series/)
 * **Kubernetes**<a name="kubernetes"></a>
 	* **101**<a name="k101"></a>
 		* [An Introduction to Kubernetes(2018) - Justin Ellingwood(DO tutorials)](https://www.digitalocean.com/community/tutorials/an-introduction-to-kubernetes)
@@ -275,7 +280,6 @@
 				* This talk will give you practical advice about securing your Kubernetes clusters, from an attacker’s perspective. We’ll walk through the attack process from discovery to post-exploitation, and you’ll walk away with tools and techniques that can be used for prevention along the way. Learn how to keep your infrastructure safer by making a hacker’s job harder.
 			* [Crafty Requests: Deep Dive Into Kubernetes CVE-2018-1002105 - Ian Coldwater(CloudNativeConEU19)](https://www.youtube.com/watch?v=VjSJqc13PNk&list=PLKDRii1YwXnLmd8ngltnf9Kzvbja3DJWx&index=6&t=0s)
 				* You may have heard about CVE-2018-1002105, one of the most severe Kubernetes security vulnerabilities of all time. But how does this flaw work? How can it be exploited, and what does it all mean? This deep dive will walk the audience through the Kubernetes back end, going over relevant concepts like aggregated API servers, the kubelet API, and permissions for namespace-constrained users. We will explain the details of how this flaw works, how a cluster’s moving parts can fit together to create a vulnerable context, and the risks involved in leaving this CVE unpatched in the wild. A live demonstration will show the audience exactly how easy it is to exploit this vulnerability. After explaining the attack pathways, the audience will leave with practical advice about mitigation and how to protect their clusters. 
-
 	* **Tools**
 		* **Authentication**
 		* **Operating**
@@ -343,3 +347,9 @@ https://sysdig.com/blog/docker-image-scanning/
 https://docs.google.com/presentation/d/1u6S1ycs8DURORf6S9XYKjP56oszJpouOca6xlkH9ILs/edit#slide=id.p
 https://medium.com/@mccode/understanding-how-uid-and-gid-work-in-docker-containers-c37a01d01cf
 * [Getting vulnerabilities and metadata for images - cloud.google](https://cloud.google.com/container-registry/docs/get-image-vulnerabilities)
+
+https://blog.aquasec.com/dns-spoofing-kubernetes-clusters
+https://blog.aquasec.com/a-brief-history-of-containers-from-1970s-chroot-to-docker-2016
+https://www.cyberark.com/threat-research-blog/kubernetes-pentest-methodology-part-2/
+
+https://blog.appsecco.com/from-thick-client-exploitation-to-becoming-kubernetes-cluster-admin-the-story-of-a-fun-bug-we-fe92a7e70aa2

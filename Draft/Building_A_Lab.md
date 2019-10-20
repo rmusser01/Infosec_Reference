@@ -1,6 +1,6 @@
-	# Building a Lab
+# Building a Lab
 
-
+-------------------------
 ## Table of Contents
 - [General Info](#general)
 - [Virtual Machines](#vm)
@@ -13,10 +13,6 @@
 * **To Do**
 	* Building a defensive Lab
 	* Infra Automation
-
-
-
-
 
 -------------------------
 ### <a name="general"></a> General

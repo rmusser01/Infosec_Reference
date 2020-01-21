@@ -11,14 +11,19 @@
 - [Speculative Execution Flaws/Writeups](#melt)
 - [Miscellaneous Things](#other)
 
+
+
+
+
+
+
+
+
 -----------------
 ### <a name="general">General</a>
 * [Timeline of Low level software and hardware attack papers](http://timeglider.com/timeline/5ca2daa6078caaf4)
 * [Dr Sergei Skorobogatov - Researcher in hardware based attacks, good stuff](https://www.cl.cam.ac.uk/~sps32/)
 * [Advanced Threat Research - Intel](http://www.intelsecurity.com/advanced-threat-research/index.html)
-
-
-
 
 
 
@@ -80,7 +85,8 @@
 		* UEFITool is a cross-platform C++/Qt program for parsing, extracting and modifying UEFI firmware images. It supports parsing of full BIOS images starting with the flash descriptor or any binary files containing UEFI volumes.
 	* [UEFI Firmware Parser](https://github.com/theopolis/uefi-firmware-parser)
 		* The UEFI firmware parser is a simple module and set of scripts for parsing, extracting, and recreating UEFI firmware volumes. This includes parsing modules for BIOS, OptionROM, Intel ME and other formats too. Please use the example scripts for parsing tutorials.
-
+	* [UEFI_RETool](https://github.com/yeggor/UEFI_RETool)
+		* A tool for UEFI firmware reverse engineering. The tool consists of a plugin for IDA and a set of scripts for UEFI firmware analysing
 
 
 
@@ -152,6 +158,8 @@
 	* Reverse Engineering Router Firmware Writeup - secforce
 		* [Part 1](http://www.secforce.com/blog/2014/04/reverse-engineer-router-firmware-part-1/)
 		* [Part 2](http://www.secforce.com/blog/2014/07/reverse-engineer-router-firmware-part-2/)
+	* [Firmware Reverse Engineering](https://github.com/frizb/FirmwareReverseEngineering)
+		* Notes and tools from my experiences reverse engineering firmware
 * **Papers**
 * **General**
 * **Tools**
@@ -161,6 +169,8 @@
 		* A system hardware latency detector Linux Kernel Module. This patch introduces a new hardware latency detector module that can be used to detect high hardware-induced latencies within the system. It was originally written for use in the RT kernel, but has wider applications.
 	* [me-tools](https://github.com/skochinsky/me-tools)
 		* Tools for working with Intel ME
+	* [Ghidra Firmware Utilities](https://github.com/al3xtjames/ghidra-firmware-utils)
+		* Various modules for Ghidra to assist with PC firmware reverse engineering
 
 
 
@@ -272,5 +282,5 @@ Intel VISA
 	* One-stop shop for UEFI/BIOS specifications/utilities by UEFI.Tech community
 * [uefi_specs_personal_collections](https://github.com/xiaopangzi313/uefi_specs_personal_collections)
 	* "This repo contains some UEFI learning documents collected by individuals. Although these documents are not comprehensive enough, they are still helpful for beginner developers."
-	
+https://www.coalfire.com/The-Coalfire-Blog/April-2019/The-Death-Metal-Suite	
 #### End Sort

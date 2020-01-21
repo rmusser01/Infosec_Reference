@@ -14,6 +14,8 @@
 	* Building a defensive Lab
 	* Infra Automation
 
+
+
 -------------------------
 ### <a name="general"></a> General
 * This page is supposed to be a collection of resources for building a lab for performing various security related tasks. Generally, the idea is that you setup a local VM hypervisor software(VMware, Virtualbox) and then install a virtual machine to perform testing and analysis without any impact to your "physical" machine.
@@ -39,6 +41,7 @@
 		* Documentation to set up a simple macOS VM in QEMU, accelerated by KVM.
 	* [unlocker](https://github.com/DrDonk/unlocker)
 		* VMware Workstation macOS
+	* [Running macOS Catalina Beta on VirtualBox Linux - Astr0baby](https://astr0baby.wordpress.com/2019/07/04/running-macos-catalina-beta-on-virtualbox-linux/)
 * **Automated Lab/Machine Creation Tools**
 	* Security Scenario Generator (SecGen)](https://github.com/cliffe/SecGen)
 		* SecGen creates vulnerable virtual machines so students can learn security penetration testing techniques. Boxes like Metasploitable2 are always the same, this project uses Vagrant, Puppet, and Ruby to create randomly vulnerable virtual machines that can be used for learning or for hosting CTF events.
@@ -54,8 +57,17 @@
 	* [The Hacker Games - Hack the VM before it hacks you](http://www.scriptjunkie.us/2012/04/the-hacker-games/)
 		* I have talked about counterattacks here before, and this system has implemented a number of aggressive anti-hacker measures.  In fact, this VM is downright evil. I am probably legally obligated to tell you that it will try to hack you. So if a calculator or message declaring your pwnedness pops up or shows up on your desktop, you asked for it. But don’t worry, it won’t steal your docs or rm you, it will just demonstrate compromise for the game.  To save precious bandwidth, this has been implemented in a minimal tinycore-based VM, and will require VirtualBox to run.
 	* **AWS**
+		* [AWS Well-Architected Security Labs - Amazon(Official)](https://www.wellarchitectedlabs.com/Security/README.html)
+			* This repository contains documentation and code in the format of hands-on labs to help you learn, measure, and build using architectural best practices. The labs are categorized into levels, where 100 is introductory, 200/300 is intermediate and 400 is advanced.
 		* [CloudGoat](https://github.com/RhinoSecurityLabs/cloudgoat)
 			* CloudGoat is Rhino Security Labs' "Vulnerable by Design" AWS deployment tool. It allows you to hone your cloud cybersecurity skills by creating and completing several "capture-the-flag" style scenarios. Each scenario is composed of AWS resources arranged together to create a structured learning experience. Some scenarios are easy, some are hard, and many offer multiple paths to victory. As the attacker, it is your mission to explore the environment, identify vulnerabilities, and exploit your way to the scenario's goal(s).
+		* [CloudGoat 2: The New & Improved “Vulnerable by Design” AWS Deployment Tool - Jeffrey Anderson](https://rhinosecuritylabs.com/aws/introducing-cloudgoat-2/)
+		* [CloudGoat 2 Walkthrough - Part One - thetestlabs.io](https://thetestlabs.io/post/cloudgoat-2-walkthrough-part-one/)
+		* [OWASP Mutillidae II](https://sourceforge.net/projects/mutillidae/)
+			* OWASP Mutillidae II is a free, open source, deliberately vulnerable web-application providing a target for web-security enthusiast. Mutillidae can be installed on Linux and Windows using LAMP, WAMP, and XAMMP. It is pre-installed on SamuraiWTF and OWASP BWA. The existing version can be updated on these platforms. With dozens of vulnerabilities and hints to help the user; this is an easy-to-use web hacking environment designed for labs, security enthusiast, classrooms, CTF, and vulnerability assessment tool targets. Mutillidae has been used in graduate security courses, corporate web sec training courses, and as an "assess the assessor" target for vulnerability assessment software.
+		* **Lambda**
+			* [lambhack](https://github.com/wickett/lambhack)
+				* A vulnerable serverless lambda application. This is certainly a bad idea to base any coding patterns of what you see here. lambhack allows you to take advantage of our tried and true application security problems, namely arbitrary code execution, XSS, injection attacks aand more. This first release only contains arbitrary code execution through the query string. Please feel free to contribute new vulnerabilities.
 	* **Docker**
 		* [Down by the Docker](https://www.notsosecure.com/vulnerable-docker-vm/)
 			* Ever fantasized about playing with docker misconfigurations, privilege escalation, etc. within a container? Download this VM, pull out your pentest hats and get started 
@@ -73,11 +85,15 @@
 		* [Damn Vulnerable Thick Client Application - Part 1 - Setup - Parsia's Den](https://parsiya.net/blog/2018-07-15-damn-vulnerable-thick-client-application---part-1---setup/)
 	* **Web Application Focused**
 		* **OWASP**
+			* [OWASP Vulnerable Web Applications Directory Project/Pages/Offline](https://www.owasp.org/index.php/OWASP_Vulnerable_Web_Applications_Directory_Project/Pages/Offline)
 			* [OWASP Broken Web Applications Project](https://www.owasp.org/index.php/OWASP_Broken_Web_Applications_Project)
 				* OWASP Broken Web Applications Project is a collection of vulnerable web applications that is distributed on a Virtual Machine.
 			* [OWASP Juiceshop](https://www.owasp.org/index.php/OWASP_Juice_Shop_Project)
+				* [OWASP Juice Shop(Github)](https://github.com/bkimminich/juice-shop)
+				* OWASP Juice Shop is an intentionally insecure web application written entirely in Javascript which encompasses the entire range of OWASP Top Ten and other severe security flaws.
 				* [OWASP JuiceShop Gitbook walkthrough](https://www.gitbook.com/book/bkimminich/pwning-owasp-juice-shop/details)
 				* [Video Walk through by Sunny Wear](https://www.youtube.com/watch?v=zi3yDovd0RY&list=PL-giMT7sGCVI9T4rKhuiTG4EDmUz-arBo)
+				* [Pwning OWASP Juice Shop](https://leanpub.com/juice-shop)
 			* [OWASP Damn Vulnerable Web Sockets](https://github.com/interference-security/DVWS)
 				* OWASP Damn Vulnerable Web Sockets (DVWS) is a vulnerable web application which works on web sockets for client-server communication. The flow of the application is similar to DVWA. You will find more vulnerabilities than the ones listed in the application.
 			* [NodeGoat](https://github.com/OWASP/NodeGoat)
@@ -90,8 +106,17 @@
 			* [Damn Small Vulnerable Web](https://github.com/stamparm/DSVW)
 				* Damn Small Vulnerable Web (DSVW) is a deliberately vulnerable web application written in under 100 lines of code, created for educational purposes. It supports majority of (most popular) web application vulnerabilities together with appropriate attacks.
 			* [File scanner web app (Part 1 of 5): Stand-up and webserver](http://0xdabbad00.com/2013/09/02/file-scanner-web-app-part-1-of-5-stand-up-and-webserver/)
+			* [Xtreme Vulnerable Web Application (XVWA)](https://github.com/s4n7h0/xvwa)
+				* XVWA is a badly coded web application written in PHP/MySQL that helps security enthusiasts to learn application security. It’s not advisable to host this application online as it is designed to be “Xtremely Vulnerable”. We recommend hosting this application in local/controlled environment and sharpening your application security ninja skills with any tools of your own choice.
+			* [Hackazon](https://github.com/rapid7/hackazon)
+				* Hackazon is a free, vulnerable test site that is an online storefront built with the same technologies used in today’s rich client and mobile applications. Hackazon has an AJAX interface, strict workflows and RESTful API’s used by a companion mobile app providing uniquely-effective training and testing ground for IT security professionals. And, it’s full of your favorite vulnerabilities like SQL Injection, cross-site scripting and so on.
+			* [Vulnerable Web applications Generator](https://github.com/qazbnm456/VWGen)
+				* This is the Git repo of the VWGen, which stands for Vulnerable Web applications Generator.
+			* [secDevLabs](https://github.com/globocom/secDevLabs)
+				* By provisioning local environments via docker-compose, you will learn how the most critical web application security risks are exploited and how these vulnerable codes can be fixed to mitigate them. woman_technologist
 		* **API**
 			* [vulnerable-api](https://github.com/mattvaldes/vulnerable-api)
+			* [How to configure Json.NET to create a vulnerable web API](https://www.alphabot.com/security/blog/2017/net/How-to-configure-Json.NET-to-create-a-vulnerable-web-API.html)
 		* **Django**
 			* [django.nV](https://github.com/nVisium/django.nV)
 				* django.nV is a purposefully vulnerable Django application provided by nVisium.
@@ -110,10 +135,12 @@
 				* grails_nV is a vulnerable jobs listing website.
 			* [RailsGoat](https://github.com/OWASP/railsgoat)
 				* RailsGoat is a vulnerable version of the Ruby on Rails Framework from versions 3 to 5. It includes vulnerabilities from the OWASP Top 10, as well as some "extras" that the initial project contributors felt worthwhile to share. This project is designed to educate both developers, as well as security professionals.
+		* **SSRF**
+			* [SSRF Vulnerable Lab](https://github.com/incredibleindishell/SSRF_Vulnerable_Lab)
+				* This repository contain PHP codes which are vulnerable to Server-Side Request Forgery (SSRF) attack.
 		* **SSO**
 			* [Vulnerable SSO](https://github.com/dogangcr/vulnerable-sso)
 				* Vulnerable SSo is focused on single sign on related vulnerabilities. If you want to learn, you should check this and contribute this project. VulnSSO tool is focused on sso attacks. Nowadays most of the company uses their own implementation for sso solutions. Some of the bug hunters found really good vulnerability on the big company. There are some tools(dvwa and others .. ) that contains vulnerability. They don't have any support for sso vulnerability. Our focus is only sso related bugs. VulnSSO is training tool.It will contain redirect uri vulnerability , XXE on saml request and many others.
-
 
 
 -------------------------
@@ -131,12 +158,20 @@
 	* [DarthSidious](https://github.com/chryzsh/DarthSidious)
 		* Building an Active Directory domain and hacking it
 	* [Creating a SCCM Lab: Part 1 - Setting up AD](https://www.youtube.com/watch?v=4zwQsQEtrwY&feature=share)
+	* [Build a new Windows Domain with a (semi) easy button - Craig Bowser](http://shadowtrackers.net/blog/build-a-new-windows-domain-with-a-semi-easy-button)
+	* [Introducing the Active Directory Learning Lab - @jckhmr_t](https://github.com/jckhmr/adlab)
+		* I'm a big fan of automation with tools such as Ansible, Vagrant and Terrorm now being put to regular use by me. Also, as a Red Team Operator I spend a lot of time modelling attacks up, trying new ideas out and generally keeping myself 'sharp'. I wanted to create something that help me to scratch all of these itches. The research and development culminated in my [BSides Belfast 2019 presentation: Offensive Ansible for Red Teams (Attack, Build, Learn)](https://github.com/jckhmr/presentations/blob/master/BSidesBelfast2019_Final_Optimized.pptx?raw=true).
 	* **AWS**
 		* [Active Directory Domain Services on the AWS Cloud: Quick Start Reference Deployment - docs.aws](https://docs.aws.amazon.com/quickstart/latest/active-directory-ds/welcome.html)
 		* [Active Directory Domain Services on AWS](https://aws.amazon.com/quickstart/architecture/active-directory-ds/)
 			* This Quick Start deploys Microsoft Active Directory Domain Services (AD DS) on the AWS Cloud. AD DS and Domain Name Server (DNS) are core Windows services that provide the foundation for many Microsoft-based solutions for the enterprise, including Microsoft SharePoint, Microsoft Exchange, and .NET Framework applications.
+	* **Azure**
+		* [Disruption](https://github.com/xFreed0m/Disruption/)
+			* Disruption is a code for Terraform to deploy a small AD domain-based environment in Azure. The environment contains two domain controllers (Windows Server 2012), Fileserver + Web server (Windows Server 2019), Windows 7 client, Windows 10 client, and kali Linux machine. They are connected to the same subnet. Each windows machine has some packages being installing during deployment (the list can be viewed and modified here: chocolist). All the needed configurations (Domain creation, DC promotion, joining the machines to the domain and more are automated and part of the deployment. However, there are more improvments to be added (creating OUs, Users, and stuff like that. I'll might get to it in the future, or, you will submit a pull request :))
 * **Tools**
 	* **Lab Generation**
+		* [WSLab - Official Microsoft Stuff](https://github.com/microsoft/WSLab)
+			* Windows Server rapid lab deployment scripts
 		* [AutomatedLab](https://github.com/AutomatedLab/AutomatedLab)
 			* AutomatedLab is a provisioning solution and framework that lets you deploy complex labs on HyperV and Azure with simple PowerShell scripts. It supports all Windows operating systems from 2008 R2 to 2016 including Nano Server and various products like AD, Exchange, PKI, IIS, etc.	
 		* [Automated-AD-Setup](https://github.com/OneLogicalMyth/Automated-AD-Setup)
@@ -202,8 +237,15 @@
 * **Articles/Blogposts**
 	* [PhoenixServer - Martin Fowler](https://martinfowler.com/bliki/PhoenixServer.html)
 	* [An introduction to immutable infrastructure - Josh Stella](https://www.oreilly.com/radar/an-introduction-to-immutable-infrastructure/)
+	* [An Introduction to the /opt Directory - Nick Sweeting](https://docs.sweeting.me/s/an-intro-to-the-opt-directory#)
+	* [Automation Testing With Ansible, Molecule, And Vagrant - Mike Spitzer](https://www.trustedsec.com/blog/automation-testing-with-ansible-molecule-and-vagrant/)
 * **Infrastructure Automation**
 	* [An Intro to Terraform with Azure, PFSense, and Windows 10 - FortyNorth Security](https://www.fortynorthsecurity.com/an-intro-to-terraform-with-azure-pfsense-and-windows-10/)
 	* [Automating Red Team Homelabs: Part 2 – Build, Pentest, Destroy, and Repeat - Alex Rodriguez](https://blog.secureideas.com/2019/05/automating-red-team-homelabs-part-2-build-pentest-destroy-and-repeat.html)
 	* [Self-Installing Windows OVA](https://github.com/brimstone/windows-ova)
 		* This is an Virtual Machine in OVA format that will install Windows ontop of itself. I wrote this as an alternative to packer. This OVA basically downloads the evaluation version of the Windows version you select to one drive as installation media and then installs onto the primary drive. After this is done, the smaller secondary drive can be discarded to save disk space.
+	* [Modern C2 Infrastructure with Terraform, DigitalOcean, Covenant and Cloudflare - Riccardo](https://riccardoancarani.github.io/2019-09-28-modern-c2-infra/)
+	* [Automating Red Team Homelabs: Part 1 – Kali Automation - Alex Rodriguez](https://blog.secureideas.com/2018/09/automating-red-team-homelabs-part-1-kali-automation.html)
+* **Sort**
+	* [Building a scalable, highly available, and portable web server - Surya Dantuluri](https://blog.suryad.com/sd2/)
+	* [Containerised Home Server With Docker Compose and Traefik - Kristian Glass](https://blog.doismellburning.co.uk/containerised-home-server-with-docker-compose-and-traefik/)

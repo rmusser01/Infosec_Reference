@@ -1,10 +1,9 @@
 # Cheat Sheets & Reference Pages
 
 
-https://github.com/SadProcessor/Cheats
-https://github.com/chrisallenlane/cheat
-* [PowerShell Remoting Cheatsheet - Scott Sutherland](https://blog.netspi.com/powershell-remoting-cheatsheet/)
 
+
+	
 ### Cheat Sheets
 * **General Cheat Sheets**
 	* [How to Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)
@@ -12,6 +11,9 @@ https://github.com/chrisallenlane/cheat
 		*  the only cheat sheet you need https://cheat.sh/
 	* [exp](https://github.com/troydm/exp)
 		* a command line client for explainshell.com
+	* [Malware Archaeology Cheatsheets](https://www.malwarearchaeology.com/cheat-sheets)
+	* [cheat](https://github.com/cheat/cheat)
+		* cheat allows you to create and view interactive cheatsheets on the command-line. It was designed to help remind nix system administrators of options for commands that they use frequently, but not frequently enough to remember.
 * **Communication**
 	* [Tips for Troubleshooting Human Communications](https://zeltser.com/human-communications-cheat-sheet/)
 * **ARM**
@@ -38,12 +40,14 @@ https://github.com/chrisallenlane/cheat
 	* [Initial Security Incident Questionnaire for responders Cheat Sheet](https://zeltser.com/security-incident-questionnaire-cheat-sheet/)
 	* [Critical Log Review Checklist for Security Incidents](https://zeltser.com/security-incident-log-review-checklist/)
 	* [Network DDOS Incident Response Cheat Sheet](https://zeltser.com/ddos-incident-cheat-sheet/)
+	* [Windows Registry Auditing Cheatsheet - Malware Archaeology](https://static1.squarespace.com/static/552092d5e4b0661088167e5c/t/5d497aefe58b7e00011f6947/1565096688890/Windows+Registry+Auditing+Cheat+Sheet+ver+Aug+2019.pdf)
 * **Linux Cheat Sheets**<a name="Linux"></a>
 	* [Linux Syscall Table](http://www.informatik.htw-dresden.de/~beck/ASM/syscall_list.html)
 		* Complete listing of all Linux Syscalls
 * **Malware Cheat Sheets**<a name="Malware"></a>
 	* [Reverse Engineering Malware Cheat Sheet](https://zeltser.com/reverse-malware-cheat-sheet/)
 	* [Analyzing Malicious Documents Cheat Sheet](https://zeltser.com/analyzing-malicious-documents/)
+	* [Windows Registry Auditing Cheatsheet - Malware Archaeology](https://static1.squarespace.com/static/552092d5e4b0661088167e5c/t/5d497aefe58b7e00011f6947/1565096688890/Windows+Registry+Auditing+Cheat+Sheet+ver+Aug+2019.pdf)
 * **Metasploit Cheat Sheets**<a name="metasploit"></a>
 	* [Metasploit 4.2 documentation](https://community.rapid7.com/docs/DOC-1751)
 	* [MSF Payload Cheat Sheet](http://aerokid240.blogspot.com/2009/11/msfpayload-goodness-cheatsheet.html)
@@ -61,6 +65,10 @@ https://github.com/chrisallenlane/cheat
 	* [Linux - Breaking out of shells](https://highon.coffee/docs/linux-commands/#breaking-out-of-limited-shells)
 	* [RootVG - Website Dedicated to AIX](http://www.rootvg.net/content/view/102/98/)
 	* [Windows Privilege Escalation Cheat Sheet/Tricks](http://it-ovid.blogspot.fr/2012/02/windows-privilege-escalation.html)
+	* [Attack Surface Analysis Cheat Sheet](https://www.owasp.org/index.php/Attack_Surface_Analysis_Cheat_Sheet)
+	* [Web Application Penetration Testing Cheat Sheet - jdow.io](https://jdow.io/blog/2018/03/18/web-application-penetration-testing-methodology/)
+* **PowerShell**
+	* [PowerShell Remoting Cheatsheet - Scott Sutherland](https://blog.netspi.com/powershell-remoting-cheatsheet/)
 * **RE Cheat Sheets**<a name="re"></a>
 	* [Radare2 Cheat-Sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
 	* [WinDbg Cheat Sheet/mindmap](http://tylerhalfpop.com/2014/08/16/windbg-cheatsheet/)

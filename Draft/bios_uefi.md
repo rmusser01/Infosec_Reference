@@ -158,6 +158,7 @@
 	* Reverse Engineering Router Firmware Writeup - secforce
 		* [Part 1](http://www.secforce.com/blog/2014/04/reverse-engineer-router-firmware-part-1/)
 		* [Part 2](http://www.secforce.com/blog/2014/07/reverse-engineer-router-firmware-part-2/)
+	* [Ewon Flexy IoT Router. A Deep dive - Stuart Kennedy](https://www.pentestpartners.com/security-blog/ewon-flexy-iot-router-a-deep-dive/)
 	* [Firmware Reverse Engineering](https://github.com/frizb/FirmwareReverseEngineering)
 		* Notes and tools from my experiences reverse engineering firmware
 * **Papers**

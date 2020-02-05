@@ -17,7 +17,6 @@
 To Do:
 	* Add Note taking methods
 
-
 -----------------
 ### Start Here	
 * [How I read a research paper](https://muratbuffalo.blogspot.com/2013/07/how-i-read-research-paper.html)
@@ -44,13 +43,51 @@ To Do:
 		* [Learn Technical Writing in Two Hours per Week - Norman Ramsey](http://www.cs.tufts.edu/~nr/pubs/learn-two.pdf)
 		* [writingfordevelopers](https://writingfordevelopers.substack.com/)
 		* [Microsoft Writing Style Guide](https://docs.microsoft.com/en-us/style-guide/welcome/)
+		* [Notes on Technical Writing - Marcus Kazmierczak](https://mkaz.blog/misc/notes-on-technical-writing/)
+		* [SANS 10 Cybersecurity Writing Mistakes(Videos)](https://www.youtube.com/playlist?list=PLtgaAEEmVe6As4oO81VRtC-27yWQrzWI-)
+		* [Writing Tips for IT Professionals - Lenny Zeltser](https://zeltser.com/writing-tips-for-it-professionals/)
+		* [Tech Writing Handbook - Kyle Wiens, Julia Bluff(iFixit)](https://help.dozuki.com/Tech_Writing)
+			* This handbook will teach you how to create everything from manuals to work instructions. We’ll help you avoid the most common pitfalls of tech writing, from poor planning to outdated publishing.
+	* **Software Design Documentation/Functional Specifications**
+		* [Islandora Software Design Documents](https://github.com/Islandora/islandora/wiki/design-documents)
+		* [Painless Functional Specifications – Part 1: Why Bother? - JoelonSoftware](https://www.joelonsoftware.com/2000/10/02/painless-functional-specifications-part-1-why-bother/)
+			* [Part 2: What’s a Spec? - JoelonSoftware](https://www.joelonsoftware.com/2000/10/03/painless-functional-specifications-part-2-whats-a-spec/)
+			* [Part 3: But… How? - JoelonSoftware](https://www.joelonsoftware.com/2000/10/04/painless-functional-specifications-part-3-but-how/)
+			* [Part 4: Tips - JoelonSoftware](https://www.joelonsoftware.com/2000/10/15/painless-functional-specifications-part-4-tips/)
+		* [whattimeisit.com - JoelonSoftware](https://www.joelonsoftware.com/whattimeisit/)
+			* Functional Specification Example
+		* [Controlling Your Environment Makes You Happy - JoelonSoftware](https://www.joelonsoftware.com/2000/04/10/controlling-your-environment-makes-you-happy/)
+			* Should be read in conjunction with the above link.
+		* [Why Writing Software Design Documents Matters - Chris Fox](https://www.toptal.com/freelance/why-design-documents-matter)
+		* [How to Write an Effective Design Document - Scott Hackett](https://web.archive.org/web/20190420045654/http://blog.slickedit.com/2007/05/how-to-write-an-effective-design-document/)
+		* [How to write a good software design doc - Angela Zhang](https://medium.freecodecamp.org/how-to-write-a-good-software-design-document-66fcf019569c)
+			* Be sure to read the first comment by John Rote
 * **Language**
 	* [Bishop Fox Cybersecurity Style Guide](https://www.bishopfox.com/blog/2018/02/hello-world-introducing-the-bishop-fox-cybersecurity-style-guide/)
 * **Taking Notes**
 	* [My Forensic and Incident Response Note Taking Methodology - IronMoon](https://ironmoon.net/2019/02/04/My-Forensic-and-Incident-Response-Note-Taking-Methodology.html)
 * **Tools**
-	* [Ronn](https://github.com/rtomayko/ronn)
-		* Ronn builds manuals. It converts simple, human readable textfiles to roff for terminal display, and also to HTML for the web. The source format includes all of Markdown but has a more rigid structure and syntax extensions for features commonly found in manpages (definition lists, link notation, etc.). The ronn-format(7) manual page defines the format in detail.
+	* [Mark](https://github.com/kovetskiy/mark/)
+		* tool for syncing your markdown documentation with Atlassian Confluence pages.
+	* **Note Taking/Management Software**
+		* [leaps - shared text editing in Golang](https://github.com/denji/leaps)
+			* Leaps is a service for hosting collaboratively edited documents using operational transforms to ensure zero-collision synchronization across any number of editing clients.
+		* [Anno](https://github.com/gwgundersen/anno)
+			* Anno is a local, browser-based user interface on top of Markdown files in a given directory. It makes writing, organizing, and searching through those files easy. That's it. There are many benefits to this approach:
+		* [Zim(Desktop Wiki)](https://zim-wiki.org/index.html)
+			*  Zim is a graphical text editor used to maintain a collection of wiki pages. Each page can contain links to other pages, simple formatting and images. Pages are stored in a folder structure, like in an outliner, and can have attachments. Creating a new page is as easy as linking to a nonexistent page. All data is stored in plain text files with wiki formatting. Various plugins provide additional functionality, like a task list manager, an equation editor, a tray icon, and support for version control.
+		* [Dnote](https://github.com/dnote/dnote)
+			* Dnote is a lightweight personal knowledge base. The main design goal is to keep you focused by providing a way of swiftly capturing new information without having to switch environment. To that end, you can use Dnote as a command line interface, browser extension, web client, or an IDE plugin.
+		* [Joplin](https://github.com/laurent22/joplin)
+			* Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. The notes are searchable, can be copied, tagged and modified either from the applications directly or from your own text editor. The notes are in Markdown format.
+	* **Diagramming Tools**
+		* [Mermaid](https://github.com/mermaid-js/mermaid)
+			* Generation of diagram and flowchart from text in a similar manner as markdown 
+		* [PlantUML](http://plantuml.com/faq)
+			* PlantUML is used to draw UML diagrams, using a simple and human readable text description.
+	* **Manual Publishing**
+		* [Ronn](https://github.com/rtomayko/ronn)
+			* Ronn builds manuals. It converts simple, human readable textfiles to roff for terminal display, and also to HTML for the web. The source format includes all of Markdown but has a more rigid structure and syntax extensions for features commonly found in manpages (definition lists, link notation, etc.). The ronn-format(7) manual page defines the format in detail.
 * **Writing Reports** <a name="reports"></a>
 	* **Report Examples/Samples**
 		* [Public penetration testing reports](https://github.com/juliocesarfort/public-pentesting-reports)
@@ -80,6 +117,9 @@ To Do:
 		* [SANS InfoSec Policy Templates](https://www.sans.org/security-resources/policies/)
 * **Writing Technical Documentation**
 	* [The Elements Of Style: UNIX As Literature - Thomas Scoville](http://theody.net/elements.html)
+	* [What nobody tells you about documentation - Daniele Procida](https://www.divio.com/blog/documentation/)
+	* [Minimalism - Hans Van Der Meij](https://www.utwente.nl/en/bms/ist/minimalism/)
+		* Writeup on the 'Minimalist' approach to technical documentation
 * **Meta**<a name="meta"></a>
 	* **LaTex**
 	* **Markdown**
@@ -97,10 +137,15 @@ To Do:
 			* wordy is not a grammar checker. Nor is it a guide to proper word usage. Rather, wordy is a lightweight tool to assist you in identifying those words and phrases known for their history of misuse, abuse, and overuse, at least according to usage experts.
 		* [tldr](https://github.com/tldr-pages/tldr)
 			* A collection of simplified and community-driven man pages.
+		* [CyberSecurity Style Guide Dictionary file(cyber.dic)](https://github.com/bishopfox/cyberdic)
+			* This is the companion dictionary of the Cybersecurity Style Guide. The cyber.dic dictionary file can be added to your word processor to augment its standard spellcheck list. This is a resource for anyone who regularly writes about tech and is not a fan of the red underline that plagues any highly technical document.
+		* [Scanning reports to tabular (sr2t)](https://gitlab.com/0bs1d1an/sr2t)
+			* This tool takes a scanning tool's output file, and converts it to a tabular format (CSV, XLSX, or text table). This tool can process output from the following tools: Nmap (XML); Nessus (XML); Nikto (XML); Dirble (XML); Testssl (JSON); Fortify (FPR)
 * **PoC Documentation**
 	* [CaptureIT](https://github.com/MSAdministrator/CaptureIT)
 		* CaptureIT can generate GIFs of both the actively selected window or your entire desktop
-
+	* [Peek](https://github.com/phw/peek)
+		* Peek makes it easy to create short screencasts of a screen area. It was built for the specific use case of recording screen areas, e.g. for easily showing UI features of your own apps or for showing a bug in bug reports. With Peek, you simply place the Peek window over the area you want to record and press "Record". Peek is optimized for generating animated GIFs, but you can also directly record to WebM or MP4 if you prefer. Peek is not a general purpose screencast app with extended features but rather focuses on the single task of creating small, silent screencasts of an area of the screen for creating GIF animations or silent WebM or MP4 videos. Peek runs on X11 or inside a GNOME Shell Wayland session using XWayland.
 
 ----------------------------
 ### <a name="debrief"></a> De/Briefing & Presenting
@@ -110,6 +155,8 @@ To Do:
 * **General**
 	* [Debriefing Facilitation Guide: Leading Groups at Etsy to Learn from Accidents - Etsy](https://extfiles.etsy.com/DebriefingFacilitationGuide.pdf)
 	* [Presentation Tips for Technical Talks - SheHacksPurple](https://medium.com/@shehackspurple/presentation-tips-for-technical-talks-8d59f3de9f6d)
+	* [Make your PowerPoint presentations accessible to people with disabilities - support.office.com](https://support.office.com/en-us/article/make-your-powerpoint-presentations-accessible-to-people-with-disabilities-6f7772b2-2f33-4bd2-8ca7-dae3b2b3ef25)
+		* This topic gives you step-by-step instructions to make your PowerPoint presentations accessible to people with disabilities.
 * **Talks**
 	* [A presentation or presentations because presenting - Jason Blanchard - Derbycon7](https://www.youtube.com/watch?v=FcgM7c0vzcE&app=desktop)
 * **Tools**
@@ -168,6 +215,7 @@ To Do:
 	* [Protecting Your Sources When Releasing Sensitive Documents](https://source.opennews.org/articles/how-protect-your-sources-when-releasing-sensitive-/)
 	* [Good comparison of various forms of disclosure](http://blog.opensecurityresearch.com/2014/06/approaches-to-vulnerability-disclosure.html)
 	* [Threatbutt irresponsible disclosure policy](http://threatbutt.com/bugbounty.html)
+	* [The CERT Guide to Coordinated Vulnerability Disclosure - Allen Householder](https://vuls.cert.org/confluence/display/CVD)
 * **CVE**
 	* [Request a CVE ID](http://cve.mitre.org/cve/request_id.html#cna_coverage)
 	* [My first CVE-2016-1000329 in BlogPHP](https://www.stevencampbell.info/2016/12/my-first-cve-2016-1000329-in-blogphp/)
@@ -181,6 +229,9 @@ To Do:
 * **How-To**
 	* [How to Disclose or Sell an Exploit - DEF CON 21 - James Denaro](https://www.youtube.com/watch?v=N1Xj3f4felg)
 	* [How to Disclose an Exploit Without Getting in Trouble DEF CON 22 - Jim Denaro and Tod Beardsley](https://www.youtube.com/watch?v=Y8Cpio6z9qA)
+* **Talks/Presentations/Videos**
+	* [Selling 0-Days to Governments and Offensive Security Companies - Maor Shwartz(BHUSA2019)](https://www.youtube.com/watch?v=ZDHHGZlEfsQ&feature=emb_logo)
+		* Selling 0-days is a fascinating process that not a lot of people are familiar with. This talk will discuss a vulnerability brokerage company called Q-recon and provide a glimpse of how this market works. In the presentation, questions will be answered from three different angles: researcher, broker and client
 * **Tools**
 	* [Portcullis Computer Security Co-ordinated Disclosure Toolkit](https://github.com/portcullislabs/co-ordinated-disclosure-toolkit)
 	* [Clean writeup of Full-Disclosure release policy that is more similar to Coordinated Disclosure.](http://www.ilias.de/docu/goto_docu_wiki_1357_RFPolicy.html)

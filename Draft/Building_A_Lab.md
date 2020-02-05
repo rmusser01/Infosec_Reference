@@ -15,7 +15,6 @@
 	* Infra Automation
 
 
-
 -------------------------
 ### <a name="general"></a> General
 * This page is supposed to be a collection of resources for building a lab for performing various security related tasks. Generally, the idea is that you setup a local VM hypervisor software(VMware, Virtualbox) and then install a virtual machine to perform testing and analysis without any impact to your "physical" machine.
@@ -141,7 +140,9 @@
 		* **SSO**
 			* [Vulnerable SSO](https://github.com/dogangcr/vulnerable-sso)
 				* Vulnerable SSo is focused on single sign on related vulnerabilities. If you want to learn, you should check this and contribute this project. VulnSSO tool is focused on sso attacks. Nowadays most of the company uses their own implementation for sso solutions. Some of the bug hunters found really good vulnerability on the big company. There are some tools(dvwa and others .. ) that contains vulnerability. They don't have any support for sso vulnerability. Our focus is only sso related bugs. VulnSSO is training tool.It will contain redirect uri vulnerability , XXE on saml request and many others.
-
+		* **Web Cache Poisoning**
+			* [Web Cache Poisoning Lab](https://poison.digi.ninja)
+				* Welcome to the Cache Poisoning Lab. In this lab you will have the opportunity to experiment with some of the vulnerabilities presented in the brilliant paper Practical Web Cache Poisoning by James Kettle.
 
 -------------------------
 ### <a name="AD"></a> Setting up ActiveDirectory Focused Labs
@@ -249,3 +250,5 @@
 * **Sort**
 	* [Building a scalable, highly available, and portable web server - Surya Dantuluri](https://blog.suryad.com/sd2/)
 	* [Containerised Home Server With Docker Compose and Traefik - Kristian Glass](https://blog.doismellburning.co.uk/containerised-home-server-with-docker-compose-and-traefik/)
+	* [Modern Windows Attacks and Defense Lab](https://github.com/jaredhaight/WindowsAttackAndDefenseLab/)
+		* This is the lab configuration for the Modern Windows Attacks and Defense class that Sean Metcalf (@pyrotek3) and I(Jared Haight) teach.

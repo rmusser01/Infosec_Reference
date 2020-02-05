@@ -24,6 +24,9 @@
 
 * To Do:
 	* Add 'Day 0' Stuff - First member of the security team
+	* https://github.com/0x416c616e/intro_to_security
+	
+
 
 
 -------------------------
@@ -60,8 +63,9 @@
 	* [Safety with Dignity Booklist - Sidney Dekker](http://sidneydekker.com/books/)
 	* [10 Immutable Laws of Security (Microsoft TechNet) Non-original](https://www.wciapool.org/pdf/Tab_5_10_Immutable_LawsofSecurity.pdf)
 	* [Ten Immutable Laws Of Security (Version 2.0) - docs.ms](https://docs.microsoft.com/en-us/archive/blogs/rhalbheer/ten-immutable-laws-of-security-version-2-0)
-	* **Classes/Types of Vulnerabilities**
-		* [Race Condition Exploits - Prabhaker Mateti](https://web1.cs.wright.edu/~pmateti/InternetSecurity/Lectures/RaceConditions/index.html)
+* **Classes/Types of Vulnerabilities**
+	* [MITRE Common Attack Pattern Enumeration and Classification(CAPEC)](https://capec.mitre.org)
+	* [Race Condition Exploits - Prabhaker Mateti](https://web1.cs.wright.edu/~pmateti/InternetSecurity/Lectures/RaceConditions/index.html)
 * **How to Suck at InfoSec**<a name="suck"></a>
 	* [How to Suck at Information Security – A Cheat Sheet](https://zeltser.com/suck-at-security-cheat-sheet/)
 	* [How not to Infosec - Dan Tentler](https://www.youtube.com/watch?v=S5O47gemMNQ)
@@ -73,39 +77,11 @@
 * **Being the First Security Person**<a name="fps"></a>
 	* [Startup security: Starting a security program at a startup - Evan Johnson(AppSecCali 2019)](https://www.youtube.com/watch?v=6iNpqTZrwjE&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=20&t=0s)
 		* There's no blueprint for how to be successful at a small startup. Startups are quirky, ambiguous, and full of challenges and broken processes. Startups also have a high risk tolerance and rarely introduce security from the beginning. This talk will discuss different approaches to introducing security at a company, how to be successful as a security professional at a startup, and how to integrate your security team with the rest of the company.
-* **Careers in Information Security**<a name="careers"></a>
-	* **Educational/Informational**<a name="ced"></a>
-		* [Navigating Career Choices in InfoSec - Fernando Montenegro - BSides Detroit2017](https://www.youtube.com/watch?v=yM2xCjrQSY4)
-			* Making career choices can be intimidating and stressful. Perhaps this presentation can help. The tidal forces affecting technology impact our careers as well. If we're not actively managing them, we're leaving decisions to chance (or to others), and may not like the outcomes. This presentation describes a framework I've used over the past few years to evaluate both ongoing job satisfaction as well as new opportunities as they appear. I'm happy with the outcomes I've obtained with it, and have used this same framework when providing advice to others, and it has been well received. Hopefully it can help others as well.
-		* [Infosec Tools of the Trade: Getting Your Hands Dirty](http://www.irongeek.com/i.php?page=videos/bsidesnashville2017/bsides-nashville-2017-green00-infosec-tools-of-the-trade-getting-your-hands-dirty-jason-smith-and-tara-wink)
-			* In this presentation we'll will be going over introductions to the various focuses in information security and demoing the most common tools that are used in operational security, both offense and defense. You'll leave with an idea on how to freely obtain and use these tools so that you can have what you need for that first interview: experience and a passion for security. This is a green talk for people who don't have a clue on what offensive and defensive people do operationally, from a tool perspective.
-		* [So You Want To Be A H6x0r Getting Started in Cybersecurity Doug White and Russ Beauchemin ](https://www.youtube.com/watch?v=rRJKghTTics)
-		* [Breaking Into Information Security A Modern Guide - 0xSha](https://0xsha.io/posts/breaking-into-information-security-a-modern-guide)
-	* **Interview Preparation**
-		* See 'Career.md'
-	* **Relevant Standards**
-		* [NICE Cybersecurity Workforce Framework](https://www.nist.gov/itl/applied-cybersecurity/national-initiative-cybersecurity-education-nice/nice-cybersecurity)
-			* The NICE Framework, NIST Special Publication 800-181, establishes taxonomy and common lexicon that is to be used to describe all cybersecurity work and workers irrespective of where or for whom the work is performed. The NICE Framework is intended to be applied in the public, private, and academic sectors. (USA Focused)
-	* **Data Scientist**
-		* [What Data Scientists Really Do, According to 35 Data Scientists - HBR](https://hbr.org/2018/08/what-data-scientists-really-do-according-to-35-data-scientists?mc_cid=f8f788d39e&mc_eid=f956a0c5ca)
-	* **Penetration Tester**
-		* **Articles & Writeups**
-			* [How to become a pentester - Corelan](https://www.corelan.be/index.php/2015/10/13/how-to-become-a-pentester/)
-			* [Attacking Big Business](https://www.cyberis.co.uk/blog/attacking-big-business)	
-			* [10 common mistakes aspiring/new pentesters make - PentesterLab](https://blog.pentesterlab.com/10-common-mistakes-aspiring-new-pentesters-make-b74a81e58934)
-			* [So You Want To Be a Pentester? - Jack Halon](https://jhalon.github.io/becoming-a-pentester/)
-			* [And THIS is Why Penetration Testing Sucks - Ronin Chang](https://www.linkedin.com/pulse/why-penetration-testing-sucks-ronin-chang/)
-			* [So You Want To Be a Pentester? - Jack Halon](https://jhalon.github.io/becoming-a-pentester/)
-			* [World's Worst Penetration Test Report - rant](https://it.toolbox.com/blogs/chiefmonkey/the-worlds-worst-penetration-test-report-by-scumbagpentester-012814)
-			* [Make It Count: Progressing through Pentesting - Bálint Varga-Perke -Silent Signal](https://silentsignal.hu/docs/Make_It_Count_-_Progressing_through_Pentesting_Balint_Varga-Perke_Silent_Signal.pdf)
-		* **Talks & Presentations**
-			* [So you think you want to be a penetration tester - Defcon24](https://www.youtube.com/watch?v=be7bvZkgFmY)
-				* So, you think you want to be a penetration tester, or you already are and don't understand what the difference between you and all the other "so called" penetration testers out there. Think you know the difference between a Red Team, Penetration Test and a Vulnerability assessment? Know how to write a report your clients will actually read and understand? Can you leverage the strengths of your team mates to get through tough roadblocks, migrate, pivot, pwn and pillage? No? well this talk is probably for you then! We will go through the fascinating, intense and often crazily boring on-site assessment process. Talk about planning and performing Red Teams, how they are different, and why they can be super effective and have some fun along the way. I'll tell you stories that will melt your face, brain and everything in between. Give you the answers to all of your questions you never knew you had, and probably make you question your life choices. By the end of this session you will be ready to take your next steps into the job you've always wanted, or know deep inside that you should probably look for something else. There will be no judgment or shame, only information, laughter and fun.
-		* [Hold my Red Bull Undergraduate Red Teaming Jonathan Gaines](https://www.youtube.com/watch?v=9vgpqRzuvLk)
 * **Cognitive Bias**<a name="cbias"></a>
 	* [List of cognitive biases - Wikipedia](https://en.wikipedia.org/wiki/List_of_cognitive_biases)
 	* [58 cognitive biases that screw up everything we do - Business Insider](https://www.businessinsider.com/cognitive-biases-2015-10)
 	* [Mental Models: The Best Way to Make Intelligent Decisions (109 Models Explained) - Farnam Street](https://fs.blog/mental-models/)
+	* [Spotlight effect - Wikipedia](https://en.wikipedia.org/wiki/Spotlight_effect)
 * **Comedy**
 	* [The Website is Down #1: Sales Guy vs. Web Dude](https://www.youtube.com/watch?v=uRGljemfwUE)
 	* [BOFH Index](https://bearbin.net/bofh)
@@ -148,6 +124,7 @@
 	* [(Deliberate) practice makes perfect: how to become an expert in anything - Aytekin Tank](https://medium.com/swlh/deliberate-practice-makes-perfect-how-to-become-an-expert-in-anything-ec30e0c1314e)
 	* [Information Security Mental Models - Chris Sanders](https://chrissanders.org/2019/05/infosec-mental-models/)
 	* [The Submarine (Article)- Paul Graham](http://paulgraham.com/submarine.html)
+	* [Satya Nadella ‘Reads’/‘Games’ Hacker News - KicksCondor](https://www.kickscondor.com/satya-nadella-'reads''games'-hacker-news/)
 	* [Unintendedconsequenc.es](https://unintendedconsequenc.es)
 	* [Art as a Methodology for Security Research - Leigh-Anne Galloway](https://leigh-annegalloway.com/art-as-a-methodology-for-security-research/)
 	* [The Natural Life Cycle of Mailing Lists - Kat Nagel](http://users.rider.edu/~suler/psycyber/lifelist.html)
@@ -195,6 +172,9 @@
 			* Master the command line, in one page
 		* [Stupid Unix Tricks - Jeffrey Paul](https://sneak.berlin/20191011/stupid-unix-tricks/)
 		* [Linux Productivity Tools](https://code.ornl.gov/km0/lisa19)
+		* [Linux Command Line](https://github.com/learnbyexample/Linux_command_line)
+			* Introduction to Linux commands and Shell scripting
+		* [Why Learn AWK? - Jonathan Palardy](https://blog.jpalardy.com/posts/why-learn-awk/)
 	* **Tools**	
 		* [A little collection of cool unix terminal/console/curses tools](https://kkovacs.eu/cool-but-obscure-unix-tools)
 		* [Structured Text Tools](https://github.com/dbohdan/structured-text-tools)

@@ -112,6 +112,8 @@
 		* Welcome to the Beginner Network Pentesting course. Previously, the course was delivered weekly on Twitch and built from lessons learned in the previous week. The course provides an opportunity for those interested in becoming an ethical hacker / penetration tester the chance to learn the practical skills necessary to work in the field. Throughout the course, we will develop our own Active Directory lab in Windows, make it vulnerable, hack it, and patch it. We'll cover the red and blue sides. We'll also cover some of the boring stuff like report writing :).
 	* [Penetration Test Guide based on the OWASP + Extra](https://github.com/Voorivex/pentest-guide)
 		* This guid[e] is for the penetration testers seeking for the appropriate test cases required during a penetration test project. I rearranged the OWASP Testing Guide v4 from my point of view including 9 Test Classes and each class has several Test Cases to conduct against the target. Each Test Case covers several OWASP tests which also is useful for the report document. I've also added 14 extra Tests Cases marked by the EXTRA-TEST. I hope it will be useful in both penetration test projects and bug-bounty.
+	* [SpecterOps Adversary Tactics: PowerShell Course](https://github.com/specterops/at-ps)
+		* 
 * **Programming Classes/Courses**<a name="prog"></a>
 	* [asm - 0xAX](https://github.com/0xAX/asm)
 		* Learning assembly for linux-x64 
@@ -199,7 +201,7 @@
 	* [The case for case studies of programming problems - Marcia C. Linn, Michael J Clancy](https://dl.acm.org/doi/10.1145/131295.131301)
 	* [The Effect of Reading Code Aloud on Comprehension: An Empirical Study with School Students - Alaaeddin  Swidan, Felienne Hermans](https://dl.acm.org/doi/10.1145/3300115.3309504)
 	* [Constructivism in computer science education - Mordechai Ben-Ari](https://dl.acm.org/doi/10.1145/274790.274308)
-
+	* [Reflections on Teaching Wargame Design - James Fielder(War on the Rocks)](https://warontherocks.com/2020/01/reflections-on-teaching-wargame-design/)
 
 
 

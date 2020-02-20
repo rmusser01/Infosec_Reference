@@ -44,6 +44,8 @@
 		* ENISA CERT Exercises and training material was introduced in 2008, in 2012 and 2013 it was complemented with new exercise scenarios containing essential material for success in the CERT community and in the field of information security. In this page you will find the ENISA CERT Exercise material, containing Handbook for teachers, Toolset for students and Virtual Image to support hands on training sessions.
 	* [SEEDLabs](http://www.cis.syr.edu/~wedu/seed/all_labs.html)
 		* People learn from mistakes. In security education, we study mistakes that lead to software vulnerabilities. Studying mistakes from the past not only help students understand why systems are vulnerable, why a "seemly-benign" mistake can turn into a disaster, and why many security mechanisms are needed. More importantly, it also helps students learn the common patterns of vulnerabilities, so they can avoid making similar mistakes in the future. Moreover, using vulnerabilities as case studies, students can learn the principles of secure design, secure programming, and security testing. 
+	* [Hopper's Roppers Intro to Security](https://hoppersroppers.github.io/course.html)
+		* A free, self-paced curriculum that builds a base of knowledge in computers and networking prior to moving on to the fundamentals of security and defense. The course is intended to build up a student with no prior technical knowledge to be confident in their ability to learn anything and continue their security education. 
 	* [Teach Yourself Computer Science](https://teachyourselfcs.com/)
 	* [Technical Development Guide - Google](https://www.google.com/about/careers/students/guide-to-technical-development.html)
 	* [OSS University - Computer Science](https://github.com/open-source-society/computer-science)
@@ -99,7 +101,7 @@
 	* [CS 144: Introduction to Computer Networking, Fall 2019](https://cs144.github.io)
 	* [Introduction to Computer Networking(Stanford) - Philip Levis, Nick McKeown](https://lagunita.stanford.edu/courses/Engineering/Networking-SP/SelfPaced/about)
 		* This is a self-paced introductory course on computer networking, specifically the Internet. It focuses on explaining how the Internet works, ranging from how bits are modulated on wires and in wireless to application-level protocols like BitTorrent and HTTP. It also explains the principles of how to design networks and network protocols. Students gain experience reading and understanding RFCs (Internet protocol specifications) as statements of what a system should do. The course grounds many of the concepts in current practice and recent developments, such as net neutrality and DNS security. A textbook is recommended, but not required: you can use either Peterson and Davie or Kurose and Ross, any version in the past 5 years will do.
-* **Penetration Testing**<a name="pentest"></a>
+* **Penetration Testing**<a name="pt"></a>
 	* [Pentester Lab](https://www.pentesterlab.com/)
 		* PentesterLab provides vulnerable systems that can be used to test and understand vulnerabilities.
 	* [FSU Offensive Security 2014](http://www.cs.fsu.edu/~redwood/OffensiveComputerSecurity/)

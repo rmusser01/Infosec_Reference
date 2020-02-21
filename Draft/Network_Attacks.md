@@ -708,7 +708,30 @@ EIGRP and OSPF).
         * Stupid MQTT Brute Forcer
     * [MQTT NSE Library](https://nmap.org/nsedoc/lib/mqtt.html)
         * An implementation of MQTT 3.1.1 https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html This library does not currently implement the entire MQTT protocol, only those control packets which are necessary for existing scripts are included. Extending to accommodate additional control packets should not be difficult.
-
+* **ActiveMQ**
+	* **101**
+        * [Apache ActiveMQ - Wikipedia](https://en.wikipedia.org/wiki/Apache_ActiveMQ)
+        * [ActiveMQ](http://activemq.apache.org/)
+	* **Articles/Blogposts/Writeups**
+        * [Getting Started](http://activemq.apache.org/getting-started.html)
+        * [What is ActiveMQ used for? - StackOverflow](https://stackoverflow.com/questions/12805377/what-is-activemq-used-for)
+		* [A Pentesters Guide to Hacking  ActiveMQ-Based JMS Applications - Gursev Singh Kalra](https://www.mcafee.com/enterprise/en-us/assets/white-papers/wp-pentesters-guide-hacking-activemq-jms-applications.pdf)
+	* **Talks/Presentations/Videos**
+        * [Light Weight Protocol: Critical Implications - Lucas Lundgren, Neal Hindocha - Defcon24](https://www.youtube.com/watch?v=o7qDVZr0t2c&app=desktop)
+	* **Tools**
+	    * [a](https://github.com/fmtn/a)
+    	    * ActiveMQ CLI testing and mescaptsage management
+* **RabbitMQ**
+	* **101**
+	    * [RabbitMQ - Wikipedia](https://en.wikipedia.org/wiki/RabbitMQ)
+		* [Access Control (Authentication, Authorisation) in RabbitMQ](https://www.rabbitmq.com/access-control.html)
+		* [Credentials and Passwords](https://www.rabbitmq.com/passwords.html)
+		* [Management Plugin](https://www.rabbitmq.com/management.html)
+		* [File and Directory Locations](https://www.rabbitmq.com/relocate.html)
+		* [Credentials and Passwords](https://www.rabbitmq.com/passwords.html)
+	* **Tools**
+    	* [Enteletaor](https://github.com/cr0hn/enteletaor)
+        	* Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.
 
 
 

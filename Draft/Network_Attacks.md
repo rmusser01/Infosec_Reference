@@ -56,6 +56,7 @@
     - [Redis](#redis)
     - [Software Defined Networking(SDN)](#sdn)
     - [SQL](#sql)
+    - [Switches](#switches)
     - [VLANs](#vlan)
     - [Web](#web)
     - [WebDAV](#webdav)
@@ -1784,6 +1785,21 @@ EIGRP and OSPF).
 * **Tools**
     * [DELTA: SDN SECURITY EVALUATION FRAMEWORK](https://github.com/OpenNetworkingFoundation/DELTA)
         * DELTA is a penetration testing framework that regenerates known attack scenarios for diverse test cases. This framework also provides the capability of discovering unknown security problems in SDN by employing a fuzzing technique.
+
+
+-------------
+### <a name="switches"></a>Switches(Network Hardware)
+* **101** 
+* **Articles/Presentations/Talks/Writeups**
+    * [Switches Get Stitches (or: Switches Get DNA Helicased) - Dale Peterson](https://dale-peterson.com/2015/06/15/switches-get-stitches-or-switches-get-dna-helicased/)
+* **Talks/Presentations/Videos**
+    * [Switches Get Stitches - Eireann Leverett(31c3)](https://www.youtube.com/watch?v=GaeLWpow-u8)
+        * This talk will introduce you to Industrial Ethernet Switches and their vulnerabilities. These are switches used in industrial environments, like substations, factories, refineries, ports, or other other homes of industrial automation. In other words: DCS, PCS, ICS & SCADA switches. It is a very good companion talk to Damn Vulnerable Chemical Process? Own your own critical infrastructures today!
+    * [Switches Get Stitches - Colin Cassidy, Robert Lee, Eireann Leverett(BHUSA15)](https://www.youtube.com/watch?v=urjKkQaspHQ)
+        * This talk will introduce you to Industrial Ethernet Switches and their vulnerabilities. These are switches used in industrial environments, like substations, factories, refineries, ports, or other homes of industrial automation. In other words: DCS, PCS, ICS & SCADA switches. The researchers focus on attacking the management plane of these switches, because we all know that industrial system protocols lack authentication or cryptographic integrity. Thus, compromising any switch allows the creation of malicious firmwares for further MITM manipulation of a live process. Such MITM manipulation can lead to the plant or process shutting down (think: nuclear reactor SCRAM) or getting into a unknown and hazardous state (think: damaging a blast furnace at a steel mill). Not only will vulnerabilities be disclosed for the first time (exclusively at Black Hat), but the methods of finding those vulnerabilities will be shared. All vulnerabilities disclosed will be in the default configuration state of the devices. While these vulnerabilities have been responsibly disclosed to the vendors, SCADA/ICS patching in live environments tends to take 1-3 years. Because of this patching lag, the researchers will also be providing live mitigations that owner/operators can use immediately to protect themselves. At least four vendors switches will be examined: Siemens, GE, Garrettcom, and Opengear.
+* **Tools**
+
+
 
 
 

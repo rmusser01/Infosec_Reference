@@ -20,4 +20,8 @@
 * [Documentation & Reporting](untitled-15.md)
 * [Embedded Device Security](untitled-16.md)
 * [Exfiltration](untitled-17.md)
+* [Exploit Development](untitled-18.md)
+* [Fuzzing](untitled-19.md)
+* [Game Hacking](untitled-20.md)
+* [Honeypots](untitled-21.md)
 

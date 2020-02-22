@@ -10,4 +10,10 @@
 * [Car\_Hacking](untitled-5.md)
 * [Cheat Sheets](untitled-6.md)
 * [Conferences](untitled-7.md)
+* [Containers](untitled-8.md)
+* [Courses & Training](untitled-9.md)
+* [CTFs & Wargames](untitled-10.md)
+* [Darknets](untitled-11.md)
+* [Data Visualization](untitled-12.md)
+* [Defense](untitled-13.md)
 

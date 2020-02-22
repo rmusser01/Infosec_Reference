@@ -29,7 +29,7 @@ An Information Security Reference That Doesn't Suck
 * For latest content updates, check the git history. The Things-added.md file will be updated eventually.
 * All links on this page should work. Last tested some time ago.
 * Contributions are encouraged/appreciated.
-* If this resource has helped you in any way, please consider making a donation to [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm) or [Reporters Without Borders](https://donate.rsf.org/b/my-donation). 
+* If this resource has helped you in any way, please consider making a donation to [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm) or [Amnesty International](https://www.amnesty.org/en/donate/). 
 
 ## Index - Table of Contents
 

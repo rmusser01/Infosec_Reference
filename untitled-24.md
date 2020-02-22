@@ -1,0 +1,662 @@
+# Malware
+
+Table of Contents
+
+* [General Stuff]()
+* [General Analysis]()
+* [Android]()
+* [APTs]()
+* [Botnets]()
+* [C2 Infrastructure]()
+* [Domain Generation Algorithms\(DGA\)]()
+* [Campaigns]()
+* [Code Injection Techniques]()
+* [DLL Related]()
+* [Embedded]()
+* [Exploit Kits]()
+* [Hashing]()
+* [Mac OS X]()
+* [Malware Repositories]()
+* [Network Analysis]()
+* [Obfuscation]()
+* [Office Documents]()
+* [Malware Scanner/Identifier Services\(Is it identified/Malicious?\)]()
+* \[\(Un\)Packers/Encoders\]\(\#packer"\)
+* [Persistence Mechanisms]()
+* [Process-'\_\_\_']()
+* [Virtual Machines & Anti-Analysis Tricks]()
+* [Dynamic Analysis]()
+* [Static Analysis]()
+* [Honeypots]()
+* [https://pentest.blog/n-ways-to-unpack-mobile-malware/](https://pentest.blog/n-ways-to-unpack-mobile-malware/) [https://github.com/MISP/MISP](https://github.com/MISP/MISP)
+* [Golem Malware - The Malware Hiding in Your Windows Fonts Folder - Pierre-Alexandre Braeken](https://sysadminconcombre.blogspot.com/2018/11/golem-malware-malware-hiding-in-your.html)
+
+  [https://www.youtube.com/watch?reload=9&v=CGvQIgoBd3Q](https://www.youtube.com/watch?reload=9&v=CGvQIgoBd3Q)
+
+  [https://medium.com/@z3roTrust/digital-steganography-as-an-advanced-malware-detection-evasion-technique-40d4eeb19830](https://medium.com/@z3roTrust/digital-steganography-as-an-advanced-malware-detection-evasion-technique-40d4eeb19830)
+
+  [https://research.checkpoint.com/macos-malware-pedia/](https://research.checkpoint.com/macos-malware-pedia/)
+
+  [https://objective-see.com/blog/blog\_0x32.html](https://objective-see.com/blog/blog_0x32.html)
+
+  [https://unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/](https://unit42.paloaltonetworks.com/tracking-oceanlotus-new-downloader-kerrdown/)
+
+  [https://www.fireeye.com/blog/threat-research/2017/04/cve-2017-0199-hta-handler.html](https://www.fireeye.com/blog/threat-research/2017/04/cve-2017-0199-hta-handler.html)
+
+  [https://github.com/hfiref0x/VBoxHardenedLoader](https://github.com/hfiref0x/VBoxHardenedLoader)
+
+* Extend 
+  * maldocs section
+  * Hooking techniques
+  * Hollowing
+* Add
+  * Stuxnet
+  * Duqu
+  * Flame
+  * Itaduke
+  * Packers
+    * mew
+    * ASPROTECT
+    * UPX
+    * FSG
+    * PESpin
+
+[https://github.com/tarcisio-marinho/GonnaCry?files=1](https://github.com/tarcisio-marinho/GonnaCry?files=1) [https://0x00sec.org/t/how-ransomware-works-and-gonnacry-linux-ransomware/4594](https://0x00sec.org/t/how-ransomware-works-and-gonnacry-linux-ransomware/4594) [https://medium.com/@tarcisioma/how-ransomware-works-and-gonnacry-linux-ransomware-17f77a549114](https://medium.com/@tarcisioma/how-ransomware-works-and-gonnacry-linux-ransomware-17f77a549114) [https://medium.com/@tarcisioma/ransomware-encryption-techniques-696531d07bb9](https://medium.com/@tarcisioma/ransomware-encryption-techniques-696531d07bb9)
+
+* [loffice - Lazy Office Analyzer](https://github.com/tehsyntx/loffice)
+  * Loffice is making use of WinAppDbg to extract URLs' from Office documents but also VB-script and Javascript. By setting strategical breakpoints it's possible to neutralize obfuscation and get the URL and file destination. Anti-analysis via WMI, for example detecting running processes or installed software is handled by patching the query string before the query is run.
+
+## General Stuff
+
+* **Look Here First**
+  * [Awesome Malware Analysis - Github Awesome List series](https://github.com/rshipp/awesome-malware-analysis)
+  * [Tips For Reverse-Engineering Malicious Code - Lenny Zeltser](https://zeltser.com/media/docs/reverse-engineering-malicious-code-tips.pdf)
+* **Analysts Blog's**
+  * [Bryan Campbells blog](https://brycampbell.co.uk/new-blog/)
+* **Becoming a Malware Analyst**
+  * [How to start RE/malware analysis? - hasherezade's 1001 nights](https://hshrzd.wordpress.com/how-to-start/)
+* **Tutorials** 
+  * **Analysis 101**
+    * [Reverse Engineering Malware 101 Material - Malware Unicorn](https://securedorg.github.io/RE101/)
+    * [Malware Analysis Tutorials: a Reverse Engineering Approach - Dr Xiang Fu](https://fumalwareanalysis.blogspot.com/p/malware-analysis-tutorials-reverse.html)
+    * [Malware Analysis Tutorials: a Reverse Engineering Approach](http://fumalwareanalysis.blogspot.com/p/malware-analysis-tutorials-reverse.html)
+    * [Malware Analysis 101 - N00b to Ninja in 60 Minutes at CactusCon on April 4, 2014](https://www.slideshare.net/grecsl/malware-analysis-101-n00b-to-ninja-in-60-minutes-at-cactuscon-on-april-4-2014)
+    * [Reversing & Malware Analysis Training](http://securitytrainings.net/)
+  * **Making an Analysis Box**
+    * [VirtualBox Hardened Loader](https://github.com/hfiref0x/VBoxHardenedLoader)
+    * [Creating a Malware Sandbox in Seconds with Noriben.](http://www.ghettoforensics.com/2016/01/creating-malware-sandbox-in-seconds.html?m=1)
+    * [Building a Home Lab to Become a Malware Hunter - A Beginner’s Guide](https://www.alienvault.com/blogs/security-essentials/building-a-home-lab-to-become-a-malware-hunter-a-beginners-guide)
+    * [Cuckoo Sandbox Hardening\(2013\)](http://0xmalware.blogspot.com/2013/10/cuckoo-sandbox-hardening-virtualbox.html)
+    * [Awesome Guide to building a VM for anonymous Malware Analysis and Reverse Engineering](https://www.codeandsec.com/Building-Ultimate-Anonymous-Malware-Analysis-and-Reverse-Engineering-Machine)
+    * [malboxes](https://github.com/GoSecure/malboxes)
+      * Builds malware analysis Windows VMs so that you don't have to.
+    * [Advanced Desktop Application Sandboxing via AppContainer](https://www.malwaretech.com/2015/09/advanced-desktop-application-sandboxing.html)
+  * **General Analysis Writeups**
+    * [Analyzing unknown malware blogpost series](http://thegoldenmessenger.blogspot.com/)
+    * [Malware Analysis: Penn National Health and Wellness Program 2018.doc - 0xdf](https://0xdf.gitlab.io/2018/08/07/malware-analysis-penn-national-health-and-wellness-program-2018doc.html)
+  * **Sandboxes**
+    * [Limon - Sandbox for Analyzing Linux Malwares](https://github.com/monnappa22/Limon)
+    * [Truman](http://www.secureworks.com/cyber-threat-intelligence/tools/truman/)
+      * Truman can be used to build a "sandnet", a tool for analyzing malware in an environment that is isolated, yet provides a virtual Internet for the malware to interact with. It runs on native hardware, therefore it is not stymied by malware which can detect VMWare and other VMs. The major stumbling block to not using VMs is the difficulty involved with repeatedly imaging machines for re-use. Truman automates this process, leaving the researcher with only minimal work to do in order to get an initial analysis of a piece of malware. Truman consists of a Linux boot image \(originally based on Chas Tomlin's Windows Image Using Linux\) and a collection of scripts. Also provided is pmodump, a Perl-based tool to reconstruct the virtual memory space of a process from a PhysicalMemory dump. With this tool it is possible to circumvent most packers to perform strings analysis on the dumped malware.
+    * [Noriben - The Portable Sandbox System - ghettoforensics.com](http://www.ghettoforensics.com/2013/04/noriben-your-personal-portable-malware.html)
+      * Noriben is a Python-based script that works in conjunction with SysInternals Procmon to automatically collect, analyze, and report on runtime indicators of malware and suspicious system behavior. In a nutshell, it allows you to run your malware, hit a keypress, and get a simple text report of the system's activity after running an attack.
+      * [Noriben - github](https://github.com/Rurik/noriben)
+  * **General Tutorials**
+    * [A Guide to Malware Binary Reconstruction](https://github.com/0xAX/linux-insides/blob/master/Misc/contribute.md)
+    * [Automating Removal of JS Obfuscators](http://www.contextis.com/resources/blog/automating-removal-java-obfuscation/)
+      * In this post we detail a method to improve analysis of Java code for a particular obfuscator, we document the process that was followed and demonstrate the results of automating our method. Obscurity will not stop an attacker and once the method is known, methodology can be developed to automate the process. 
+    * [DIY Android Malware Analysis with OBAD](http://securityintelligence.com/diy-android-malware-analysis-taking-apart-obad-part-1/)
+    * [ ZeroAccess Malware - Part 1 De-Obfuscating and Reversing the User-Mode Agent Dropper](http://resources.infosecinstitute.com/step-by-step-tutorial-on-reverse-engineering-malware-the-zeroaccessmaxsmiscer-crimeware-rootkit/)
+    * [Malware Analysis, Threat Intelligence and Reverse Engineering: workshop slides](https://bartblaze.blogspot.com/2018/02/malware-analysis-threat-intelligence.html)
+* **General Analysis**
+  * **Papers**
+    * [PortEX: Robust static anaylsis of Portable Executable Malware](https://evilzone.org/reverse-engineering/%28pdf%29-robust-static-analysis-of-portable-executable-malware/)
+* **Android**
+  * [How To Dissect Android Flappy Bird Malware](http://securehoney.net/blog/how-to-dissect-android-flappy-bird-malware.html)
+  * [Hacking Team Writeup](https://citizenlab.org/2014/06/backdoor-hacking-teams-tradecraft-android-implant/)
+  * [Android/Beita.A malware analysis](http://www.jamesejr.com/android-beita-malware-analysis/)
+  * Analysis
+    * Static
+    * Dynamic
+      * [Android Sandbox V1](http://androidsandbox.net/)
+        * Automated Malware Analysis
+      * [Cuckoo-Droid](https://github.com/i[danr1986/cuckoo-droid/blob/master/README.md)
+        * CuckooDroid is an extension of Cuckoo Sandbox the Open Source software for automating analysis of suspicious files, CuckooDroid brigs to cuckoo the capabilities of execution and analysis of android application.
+  * **Obfuscators**
+    * [ProGuard](http://proguard.sourceforge.net/)
+    * [DexGuard](http://www.saikoa.com/dexguard)
+    * [Obfuscation in Android malware, and how to fight back](https://www.virusbtn.com/virusbulletin/archive/2014/07/vb201407-Android-obfuscation)
+  * **De-Obfuscators**
+    * [De-hoser](https://github.com/strazzere/dehoser)
+      * Unpacker for the HoseDex2Jar APK Protection which packs the original file inside the dex header
+    * [hidex](https://github.com/cryptax/dextools/tree/master/hidex)
+      * hides or reveals a given method in a DEX file
+    * [Android Unpacker presented at Defcon 22: Android Hacker Protection Level 0](https://github.com/strazzere/android-unpacker)
+      * native-unpacker/ - Unpacker for APKProtect/Bangcle/LIAPP/Qihoo Packer that runs natively, no dependency on gdb
+      * hide-qemu/ - Small hacks for hiding the qemu/debuggers, specifically from APKProtect
+  * **Packers**
+    * [Android Packers](http://www.fortiguard.com/uploads/general/Area41Public.pdf)
+* **APTs** 
+  * **101**
+  * **Articles/Writeups**
+    * [Decoding ZeuS disguised as an .RTF File](http://phishme.com/decoding-zeus-disguised-as-an-rtf-file/)
+      * Excellent step by step writeup
+    * [FinFisher Malware Dropper Analysis](https://www.codeandsec.com/FinFisher-Malware-Dropper-Analysis)
+    * [North Korean Malware Writeup](https://www.codeandsec.com/Supreme-Leaders-Not-That-Supreme-Malwares)
+    * [Regin Malware writeup by F-Secure](https://www.f-secure.com/weblog/archives/00002774.html)
+    * [Fanny Malware Writeup](https://securelist.com/blog/research/68787/a-fanny-equation-i-am-your-father-stuxnet/)    
+    * [The DUQU 2.0 Technical Details - Kaspersky](https://cdn.securelist.com/files/2015/06/The_Mystery_of_Duqu_2_0_a_sophisticated_cyberespionage_actor_returns.pdf)
+    * FinFisher - CodeandSec
+      * [Part 1](https://www.codeandsec.com/FinFisher-Malware-Dropper-Analysis)
+      * [Part 2](https://www.codeandsec.com/FinFisher-Malware-Analysis-Part-2)
+      * [Part 3](https://www.codeandsec.com/FinFisher-Malware-Analysis-Part-3)
+    * [Keep Calm and \(Don’t\) Enable Macros: A New Threat Actor Targets UAE Dissidents](https://citizenlab.org/2016/05/stealth-falcon/)
+    * Axiom Threat Actor Group Report
+      * [Executive Summary](http://www.novetta.com/files/9714/1446/8199/Executive_Summary-Final_1.pdf)
+  * **Talks & Presentations**
+    * [Unmasking Careto through Memory Analysis - Andrew Case](http://2014.video.sector.ca/video/110388398)
+    * [Clean up on Aisle APT - Mark Parsons](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t101-clean-up-on-aisle-apt-mark-parsons)
+      * This presentation will discuss findings from running multiple sinkholes over the past year. I have purchased multiple domains associated with 'APT' activity after the domains have expired. I will discuss initial expectations before beginning this journey and then discuss actual results and findings. To assist other researchers, suggestions and lessons learned from this experiment will be shared.
+    * [Hacking FinSpy - a Case Study - Atilla Marosi - \[TROOPERS15\]](https://www.youtube.com/watch?v=Mb4mfBi06K4)
+    * [To Catch a Spy Tyler Hudak - Derbycon7](https://www.youtube.com/watch?v=usyCWf3gsQ4)
+    * [ZitMo NoM - Derbycon2014](https://www.irongeek.com/i.php?page=videos/derbycon4/t520-zitmo-nom-david-schwartzberg)
+      * A world without malware is ideal but unlikely. Many of us would prefer _not_ to install another layer of protection on their already resource constrained handheld mobile device. Alternatively, Android malware detection sans anti-virus installation has become a reality. Learn about how it’s possible to detect mobile malware using simple text messages with ZitMo NoM. ZeuS in the mobile, known as ZitMo, is infamous for intercepting SMS transmissions then redirecting them to a Command & Control in order steal banking and personal information. Research with SMS transmissions directed at mobile malware has resulted in the ability to detect ZitMo’s presence without anti,virus applications installed. Turning their own tools against them makes this even more of a rewarding endeavor. We are looking for malware researchers to contribute to the continued development of this open tool. The presentation will include the research, the infrastructure and a demonstration of ZitMo NoM. Live malware will be used during this presentation, assuming we get it to behave.
+    * [Malware: From your text editor, to the United States Government's Lab \(SHA2017\)](https://www.youtube.com/watch?v=PtufumVvN-E)
+      * How Universities in the US collaborate with the United States Government to make America stronger, and the rest weaker. Ever wonder where your malware ends up after you deploy it? Are you curious how the United States Government researches Cyber Security on the backs of students? First, this is not a technical talk. This is an informative talk on the insides of how the inner workings of an Information Security Lab in one of the Top Technical Universities in the United States works with its Government to provide insights in the world of, as the feds like to call it, "CyberSecurity". \(All Americans apologize for Trump. We're sorry.\)
+    * [Modern Reconnaissance Phase by APT – Protection Layer -Paul Rascagneres](https://www.youtube.com/watch?v=4JVrK7bRKb0&index=10&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
+* **Botnets** 
+  * **101**
+  * **Articles/Writeups**
+    * [Analysis of a Romanian Botnet](http://www.politoinc.com/2015/04/analysis-of-a-romanian-botnet/)
+      * Going from first sighting in logs to tracing attackers to their C2 IRC room
+    * [A timeline of mobile botnets](https://www.virusbtn.com/virusbulletin/archive/2015/03/vb201503-mobile-botnets) 
+      * With the recent explosion in smartphone usage, malware authors have increasingly focused their attention on mobile devices, leading to a steep rise in mobile malware over the past couple of years. In this paper, Ruchna Nigam focuses on mobile botnets, drawing up an inventory of types of known mobile bot variants.
+    * [Inside Your Botnet](http://www.exposedbotnets.com/?m=0)
+  * **Papers**
+    * [Case study of the miner botnet](http://pnx.tf/files/2012_cycon-official_miner_plohmann_padilla.pdf)
+  * **Talks & Presentations**
+  * **Tools**
+    * [Botnet Lab](https://github.com/jpdias/botnet-lab)
+      * An IRC based tool for testing the capabilities of a botnet
+    * [BYOB \(Build Your Own Botnet\)](https://github.com/malwaredllc/byob/blob/master/README.md)
+      * BYOB is an open-source project that provides a framework for security researchers and developers to build and operate a basic botnet to deepen their understanding of the sophisticated malware that infects millions of devices every year and spawns modern botnets, in order to improve their ability to develop counter-measures against these threats.
+* **C2 Infrastructure** 
+  * **101**
+  * **Articles/Writeups**
+    * [Dead RATs: Exploiting malware C2 servers](https://samvartaka.github.io/exploitation/2016/06/03/dead-rats-exploiting-malware)
+    * [Hiding in Plain Sight: Advances in malware covert communication channels - BH2015 Pierre-Marc Bureau, Christian Dietrich](https://www.blackhat.com/docs/eu-15/materials/eu-15-Bureau-Hiding-In-Plain-Sight-Advances-In-Malware-Covert-Communication-Channels-wp.pdf)
+    * [IcoScript: using webmail to control malware](https://www.virusbulletin.com/virusbulletin/2014/08/icoscript-using-webmail-control-malware)
+  * **Tools**
+    * [fastfluxanalysis](https://github.com/staaldraad/fastfluxanalysis)
+      * Scripts to detect Fast-Flux and DGA using DNS query responses
+* **Domain-Generation Algorithms**
+  * **101**
+  * **Articles/Writeups**
+    * [Domain Generation Algorithms](https://github.com/baderj/domain_generation_algorithms)
+      * Johannes Bacher's reversing efforts
+  * **Talks & Presentations**
+  * **Tools**
+* **Campaigns**
+  * [Malware Attribution tracking cyber spies - Greg Hoglund - BH2010](https://www.youtube.com/watch?v=k4Ry1trQhDk)
+  * [Repurposing OnionDuke: A Single Case Study Around Reusing Nation State Malware - BH USA 15](https://www.youtube.com/watch?v=OuyLzkG16Uk)
+  * [Hack.lu 2016 Unveiling the attack chain of Russian-speaking cybercriminals](https://www.youtube.com/watch?v=apOKU7j2XAY)
+  * [Attacking Linux Moose Unraveled an Ego Market - Masarah Paquet-Clouston & Olivier Bilodeau](https://www.youtube.com/watch?v=8c8C5cHbRU0&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=2)
+    * For this talk, a criminologist and a security researcher teamed up to hunt a large-scale botnet dubbed Linux/Moose that conducts social media fraud. Linux/Moose has stealth features and runs only on embedded systems such as consumer routers or Internet of Things \(IoT\) devices. Using honeypots set up across the world, we managed to get virtual routers infected to learn how this botnet spread and operated. We performed a large-scale HTTPS man-in-the-middle attack on several honeypots over the course of several months decrypting the bots’ proxy traffic. This gave us an impressive amount of information on the botnet’s activities on social networks: the name of the fake accounts it uses, its modus operandi to conduct social media fraud and the identification of its consumers, companies and individuals. This presentation will be of interest to a wide audience. First, it will present the elaborate methodology we used to infect custom honeypots with Linux/Moose and led to contributions to the open-source Cowrie Honeypot Project. Second, it will describe the technical details behind the man-in-the-middle attack conducted to decrypt the traffic. The talk will further increase its draw by placing the botnet’s activities within a larger-scope: the illicit market for social media fraud. With the data gathered from the decrypted traffic and open-source research, market dynamics behind the sale of social media fraud will be presented, allowing an overview of the botnet’s potential profitability. Overall, this research elevates the standards of botnet studies as it not only investigates how a botnet is built, but also what drives it.    
+* **Code Injection Techniques** 
+  * **101**
+  * **Articles/Writeups**
+    * [Code Injection Techniques -2013](http://resources.infosecinstitute.com/code-injection-techniques/)
+  * **Talks & Presentations**
+* **DLL Related**
+  * [Running DLL Files for Malware Analysis](https://techtalk.pcpitstop.com/2017/11/30/running-dll-files-malware-analysis/)
+* **Embedded**
+  * **101**
+  * **Articles/Writeups**
+    * [Analyzing Malware for Embedded Devices: TheMoon Worm](http://w00tsec.blogspot.com/2014/02/analyzing-malware-for-embedded-devices.html)
+* **Exploit Kits**
+  * **101**
+  * **Articles/Writeups**
+    * [How exploit packs are concealed in a Flash object](https://securelist.com/analysis/publications/69727/how-exploit-packs-are-concealed-in-a-flash-object/?utm_content=buffer5de59&utm_medium=social&utm_source=twitter.com&utm_campaign=buffer)
+    * [RIG Exploit Kit Writeup](https://www.trustwave.com/Resources/SpiderLabs-Blog/RIG-Exploit-Kit-%E2%80%93-Diving-Deeper-into-the-Infrastructure/)
+  * **Talks & Presentations**
+    * [The Economics of Exploit Kits & E-Crime](http://www.irongeek.com/i.php?page=videos/bsidescolumbus2016/offense03-the-economics-of-exploit-kits-e-crime-adam-hogan)
+      * I will discuss how the market for exploit kits has been changing, in techniques, marketing and prices. I argue that the competitiveness between exploit kits shows a maturing market, but will leverage economic theory to demonstrate the limits to which that market will continue to mature. This should allow us to understand how exploit kits affect \(and are affected by\) the rest of the greater market for hacker services, from malware \(as an input\) to nation-state level attacks \(e.g. trickle down from Hacking Team\). I hope to provide a better understanding of how exploit kits work and how their sold as well as how this market can teach us about the rational choice to engage in criminal activity and how we might dissuade them.
+* **Hashing**
+  * **101**
+  * **Articles/Writeups**
+  * **Talks & Presentations**
+  * **Tools**
+    * [binwally](https://github.com/bmaia/binwally)
+      * [Binary and Directory tree comparison tool using the Fuzzy Hashing concept \(ssdeep\)](http://w00tsec.blogspot.com/2013/12/binwally-directory-tree-diff-tool-using.html)
+    * [Ssdeep](http://ssdeep.sourceforge.net/)
+      * static malware comparison tool - ssdeep is a program for computing context triggered piecewise hashes \(CTPH\). Also called fuzzy hashes, CTPH can match inputs that have homologies. Such inputs have sequences of identical bytes in the same order, although bytes in between these sequences may be different in both content and length.
+* **Mac/OS X**
+  * **101**
+  * **Articles/Writeups**
+    * [Mac Malware of 2017 - ObjectiveSee](https://objective-see.com/blog/blog_0x25.html)
+  * **Talks & Presentations**
+    * [Writing Bad @$$ Malware for OS X - Patrick Wardle](https://www.blackhat.com/docs/us-15/materials/us-15-Wardle-Writing-Bad-A-Malware-For-OS-X.pdf)
+    * [Offensive Malware Analysis: Dissecting OSX FruitFly - Patrick Wardle - DEF CON 25](https://www.youtube.com/watch?v=q7VZtCUphgg)
+      * FruitFly, the first OS X/macOS malware of 2017, is a rather intriguing specimen. Selectively targeting biomedical research institutions, it is thought to have flown under the radar for many years. In this talk, we'll focus on the 'B' variant of FruitFly that even now, is only detected by a handful of security products. We'll begin by analyzing the malware's dropper, an obfuscated perl script. As this language is rather archaic and uncommon in malware droppers, we'll discuss some debugging techniques and fully deconstruct the script.
+    * [I got 99 Problems, but        Little Snitch ain’t one! - Defcon2016](https://speakerdeck.com/patrickwardle/defcon-2016-i-got-99-problems-but-little-snitch-aint-one)
+    * [Let's Play Doctor:Practical OSX Malware Detection and Analysis - Patrick Wardle](https://www.youtube.com/watch?v=V9oAIUYjzl8)
+  * **Tools**
+* **Malware Repos**
+  * **Repositories of Malware**
+    * [The Zoo](https://github.com/ytisf/theZoo)
+      * A repository of LIVE malwares for your own joy and pleasure
+    * [Mobile Malware dumps - Contagio](http://contagiominidump.blogspot.ca/)
+    * [Equation Group Malware Samples - ContagioDump](http://contagiodump.blogspot.com/2015/02/equation-samples-from-kaspersky-report.html)
+    * [Objective-See Mac Malware Repo](https://objective-see.com/malware.html)
+    * [Contagio - Malware Dump](https://contagiodump.blogspot.com/)
+    * [DAS MALWERK](http://dasmalwerk.eu/)
+    * [freetrojanbotnet.com](http://www.freetrojanbotnet.com/)
+    * [Kernelmode Malware Sample Collection](http://www.kernelmode.info/forum/viewforum.php?f=16)
+    * [MalShare](http://malshare.com/)
+    * [AVcaeasar](https://avcaesar.malware.lu/)
+    * [theZoo](http://thezoo.morirt.com/)
+    * [Malwr](https://malwr.com/)
+    * [Mac Malware - Objective-see](https://objective-see.com/malware.html)
+    * [VirusShare](https://virusshare.com/)
+    * [ViruSign](http://www.virusign.com/)
+    * [Javascript Malware Collection](https://github.com/HynekPetrak/javascript-malware-collection)
+      * A collection of almost 40.000 Javascript malware samples.
+    * \[botnets\]\([https://github.com/maestron/botnets/blob/master/](https://github.com/maestron/botnets/blob/master/)\)
+      * This is a collection of botnet source codes, unorganized. For EDUCATIONAL PURPOSES ONLY. Many projects are duplicates or revisions of each other. Many of them have outdated depedencies. My goal is to collectively put them together so that they are compilable and help people interested in malware research analyze them and learn from these samples.
+  * **Tools to Obtain Malware**
+    * [Ragpicker - Malware Crawler](https://code.google.com/p/malware-crawler/)
+      * Ragpicker is a Plugin based malware crawler with pre-analysis and reporting functionalities. Use this tool if you are testing antivirus products, collecting malware for another analyzer/zoo.
+* **Network Analysis**
+  * [Malcom](https://github.com/tomchop/malcom)
+    * Malcom is a tool designed to analyze a system's network communication using graphical representations of network traffic, and cross-reference them with known malware sources. This comes handy when analyzing how certain malware species try to communicate with the outside world.
+* **Obfuscation** 
+  * [Data Obfuscation: Now you see me... Now you don't...](http://malwageddon.blogspot.com/2015/03/data-obfuscation-now-you-see-me-now-you.html)
+    * This blog post shows how malware authors use Adobe Flash files to hide their creations' 'sensitive' data. I'll be using 2 recent Neutrino EK and 1 FlashPack malvertising samples to demonstrate it. In the case of Neutrino EK our goal will be extraction and decryption of its configuration file and in the malvertising case we'll be after the initial payload URL + exploit shellcode.
+  * [Protectors](https://github.com/rootm0s/Protectors)
+    * Obfuscator, Encryption, Junkcode, Anti-Debug, PE protection/modification
+* **Office Documents**
+  * **101**
+    * [Analyzing Malicious Documents Cheat Sheet](https://zeltser.com/analyzing-malicious-documents/)
+  * **MS Office Macros**
+    * [Loffice - Analyzing malicious documents using WinDbg](https://thembits.blogspot.com/2016/06/loffice-analyzing-malicious-documents.html)
+  * **Tools**
+    * [DDEtect](https://github.com/aserper/DDEtect)
+      * Simple DDE object detector
+    * [oletools](https://github.com/decalage2/oletools/blob/master/README.md)
+      * [oletools](http://www.decalage.info/python/oletools) is a package of python tools to analyze [Microsoft OLE2 files](http://en.wikipedia.org/wiki/Compound_File_Binary_Format) \(also called Structured Storage, Compound File Binary Format or Compound Document File Format\), such as Microsoft Office documents or Outlook messages, mainly for malware analysis, forensics and debugging. It is based on the [olefile](http://www.decalage.info/olefile) parser. See [http://www.decalage.info/python/oletools](http://www.decalage.info/python/oletools) for more info.
+    * [ViperMonkey](https://github.com/decalage2/ViperMonkey)
+      * ViperMonkey is a VBA Emulation engine written in Python, designed to analyze and deobfuscate malicious VBA Macros contained in Microsoft Office files \(Word, Excel, PowerPoint, Publisher, etc\).
+* **Malware Scanner/Identifier Services\(Is it identified/Malicious?\)** 
+  * **Articles**
+    * [VirusTotal Mining](http://blog.9bplus.com/wp-content/uploads/2014/08/VirusTotal-Mining.pdf)
+  * **Scanner/Identifer Services - 3rd Party Hosted**
+    * [metasearch-public](https://github.com/PaulSec/metasearch-public?t=1&cn=ZmxleGlibGVfcmVjc18y&refsrc=email&iid=fbefaaabb99249989456a6e322557550&fl=4&uid=150127534&nid=244+276893704)
+      * Purpose: stop searching for sample hashes on 10 different sites. This is a simple Python3 Flask application running on port 5000 interacting with various platforms \(TBC\) and caching the results in a Redis database for faster responses.
+  * **Scanner/Identifer Services - Self-Hosted**
+    * [Malice](https://github.com/maliceio/malice)
+      * Malice's mission is to be a free open source version of VirusTotal that anyone can use at any scale from an independent researcher to a fortune 500 company.
+    * [Wepawet](https://wepawet.iseclab.org/)
+      * Wepawet is a free service, for non-commercial organizations, to detect and analyze web-based threats. It currently handles Flash, JavaScript, and PDF files
+    * [IRMA - Incident Response & Malware Analysis](http://irma.quarkslab.com/index.html)
+      * IRMA intends to be an open-source platform designed to help identifying and analyzing malicious files.  However, today's defense is not only about learning about a file, but it is also getting a fine overview of the incident you dealt with: where / when a malicious file has been seen, who submitted a hash, where a hash has been noticed, which anti-virus detects it, ...  An important value with IRMA comes from you keep control over where goes / who gets your data. Once you install IRMA on your network, your data stays on your network.  Each submitted files is analyzed in various ways. For now, we focus our efforts on multiple anti-virus engines, but we are working on other "probes" \(feel free to submit your own\).
+    * [PlagueScanner](https://github.com/PlagueScanner/PlagueScanner)
+      * PlagueScanner is a multiple AV scanner framework for orchestrating a group of individual AV scanners into one contiguous scanner. There are two basic components in this initial release: Core and Agents.
+    * [MultiAV](https://github.com/joxeankoret/multiav)
+      * MultiAV scanner with Python and JSON API. \[Not currently Maintained\]
+* **\(Un\)Packers/Encoders**
+  * --&gt; See 'Packers' section under 'Writeups' in RE
+  * **101**
+    * [Stack Overflow RE -What are the different types of packers?](https://reverseengineering.stackexchange.com/questions/1779/what-are-the-different-types-of-packers)
+  * **Reference**
+    * [Corkami - Packers](https://corkami.googlecode.com/files/packers.pdf)
+      * Beautiful.
+  * **Articles/Writeups**
+    * [Deep dive into a custom malware packer](http://resources.infosecinstitute.com/deep-dive-into-a-custom-malware-packer/)
+    * [Packer Analysis Report - Debugging and unpacking the NsPack 3.4 and 3.7 packer](https://www.sans.org/reading-room/whitepapers/malicious/packer-analysis-report-debugging-unpacking-nspack-34-37-packer-33428)
+  * **Papers**
+    * [One packer to rule them all: Empirical identification, comparison and circumvention of current Antivirus detection techniques](http://www.arneswinnen.net/wp-content/uploads/2014/08/)
+    * [Paper on Manual unpacking of UPX packed executable using Ollydbg and Importrec](http://www.iosrjournals.org/iosr-jce/papers/Vol16-issue1/Version-1/L016117177.pdf)
+    * [A study of the packer problem and its solutions](https://link.springer.com/chapter/10.1007/978-3-540-87403-4_6)
+    * [Locreate: An Anagram for Relocate ](http://uninformed.org/?v=all&a=30&t=sumry)
+      * This paper presents a proof of concept executable packer that does not use any custom code to unpack binaries at execution time. This is different from typical packers which generally rely on packed executables containing code that is used to perform the inverse of the packing operation at runtime. Instead of depending on custom code, the technique described in this paper uses documented behavior of the dynamic loader as a mechanism for performing the unpacking operation. This difference can make binaries packed using this technique more difficult to signature and analyze, but only when presented to an untrained eye. The description of this technique is meant to be an example of a fun thought exercise and not as some sort of revolutionary packer. In fact, it's been used in the virus world many years prior to this paper.
+    * [Implementing a Custom X86 Encoder](http://uninformed.org/?v=all&a=25&t=sumry)
+      * This paper describes the process of implementing a custom encoder for the x86 architecture. To help set the stage, the McAfee Subscription Manager ActiveX control vulnerability, which was discovered by eEye, will be used as an example of a vulnerability that requires the implementation of a custom encoder. In particular, this vulnerability does not permit the use of uppercase characters. To help make things more interesting, the encoder described in this paper will also avoid all characters above 0x7f. This will make the encoder both UTF-8 safe and tolower safe.
+    * [Using dual-mappings to evade automated unpackers ](http://uninformed.org/?v=all&a=44&t=sumry)
+      * Automated unpackers such as Renovo, Saffron, and Pandora's Bochs attempt to dynamically unpack executables by detecting the execution of code from regions of virtual memory that have been written to. While this is an elegant method of detecting dynamic code execution, it is possible to evade these unpackers by dual-mapping physical pages to two distinct virtual address regions where one region is used as an editable mapping and the second region is used as an executable mapping. In this way, the editable mapping is written to during the unpacking process and the executable mapping is used to execute the unpacked code dynamically. This effectively evades automated unpackers which rely on detecting the execution of code from virtual addresses that have been written to.
+  * **Talks & Presentations**
+    * [Duping the machine: malware strategies, post Sandbox detection](https://www.virusbtn.com/pdf/conference_slides/2014/Wyke-VB2014.pdf)
+    * [One packer to rule them all: Empirical identification, comparison and circumvention of current Antivirus detection techniques - Alaeddine Mesbahi and Arne Swinnen - BHUSA14](https://www.youtube.com/watch?reload=9&v=gtLMXxZErWE)
+      * [Paper](https://www.blackhat.com/docs/us-14/materials/us-14-Mesbahi-One-Packer-To-Rule-Them-All-WP.pdf)
+  * **Tools**
+    * [packer-breaker](http://www.sysreveal.com/category/packerbreaker/)
+      * Unpacker for a variety of packing tools.
+    * [de4dot](https://github.com/0xd4d/de4dot)
+      * de4dot is an open source \(GPLv3\) .NET deobfuscator and unpacker written in C\#. It will try its best to restore a packed and obfuscated assembly to almost the original assembly. Most of the obfuscation can be completely restored \(eg. string encryption\), but symbol renaming is impossible to restore since the original names aren't \(usually\) part of the obfuscated assembly.
+    * [AMBER](https://github.com/EgeBalci/Amber)
+      * Amber is a proof of concept packer, it can pack regularly compiled PE files into reflective PE files that can be used as multi stage infection payloads. If you want to learn the packing methodology used inside the Amber check out below.
+    * [EvadeML](https://github.com/uvasrg/EvadeML)
+      * An Evolutionary Framework for Evading Machine Learning-based Malware Classifiers
+  * **Tutorials**
+    * [Manually unpacking a Morphine-packed DLL with OllyDbg](http://www.joestewart.org/morphine-dll/)
+    * [Unpacking with OllyBonE](http://www.joestewart.org/ollybone/tutorial.html)
+      * This is a brief tutorial giving the basic steps to unpack code using the OllyBonE plugin.
+* **Portable Document Format\(PDF\)** a&gt;
+  * **Articles/Writeups**
+    * [Analyzing PDF exploits with Pyew - Joxean Koret](http://joxeankoret.com/blog/2010/02/21/analyzing-pdf-exploits-with-pyew/)
+    * [Scoring PDFs Based on Malicious Filter - 9bplus](http://blog.9bplus.com/scoring-pdfs-based-on-malicious-filter/)
+    * [Adding a scoring system in peepdf - Honeynet Project](http://honeynet.org/node/1304)
+    * [Analysing/Detecting Malicious PDF’s Primer - Linkcabin](https://itsjack.cc/blog/2017/08/analysingdetecting-malicious-pdfs-primer/)
+    * [\(Not\) All She Wrote \(Part 1\): Rigged PDFs - Bruno Braga](https://securityoversimplicity.wordpress.com/2017/09/28/not-all-she-wrote-part-1-rigged-pdfs/)
+    * [PDF malware analysis\(2009\) - SANS DFIR](https://digital-forensics.sans.org/blog/2009/12/14/pdf-malware-analysis/)
+  * **Talks & Presentations**
+  * **Tools**
+    * [pdf-parser.py - Didier Stevens](https://blog.didierstevens.com/2008/10/30/pdf-parserpy/)
+    * [PDF Tools - Didier Stevens](https://blog.didierstevens.com/programs/pdf-tools/)
+    * [PDFiD](https://blog.didierstevens.com/2009/03/31/pdfid/)
+* **Persistence Mechanisms**
+  * **Articles/Writeups**
+    * [List of autorun keys / malware persistence Windows registry entries](https://www.peerlyst.com/posts/list-of-autorun-keys-malware-persistence-windows-registry-entries-benjamin-infosec)
+    * [Temporal Persistence with bitsadmin and schtasks](http://0xthem.blogspot.com/2014/03/t-emporal-persistence-with-and-schtasks.html)
+    * [Many ways of malware persistence \(that you were always afraid to ask\) ](http://jumpespjump.blogspot.com/2015/05/many-ways-of-malware-persistence-that.html)
+  * **Case-Studies**
+    * [Poweliks: the persistent malware without a file](https://blog.gdatasoftware.com/blog/article/poweliks-the-persistent-malware-without-a-file.html)
+* **Process-'**_**\_**_**'** 
+  * **Hooking**
+    * **101**
+    * **Articles/Writeups**
+      * [Universal Unhooking - Cylance](https://www.cylance.com/content/dam/cylance/pdfs/white_papers/Universal_Unhooking.pdf)
+    * **Talks & Presentations**
+    * **Tools**
+      * [TitanHide](https://github.com/mrexodia/TitanHide)
+        * TitanHide is a driver intended to hide debuggers from certain processes. The driver hooks various Nt\* kernel functions \(using SSDT table hooks\) and modifies the return values of the original functions. To hide a process, you must pass a simple structure with a ProcessID and the hiding option\(s\) to enable, to the driver. The internal API is designed to add hooks with little effort, which means adding features is really easy.
+  * **Hollowing**
+    * **101**
+    * **Articles/Writeups**
+      * [Process Hollowing - Dridex](http://countuponsecurity.com/2015/12/07/malware-analysis-dridex-process-hollowing/)
+      * [Process Hollowing Example in Linux - Volatility](https://github.com/volatilityfoundation/volatility/blob/master/volatility/plugins/linux/process_hollow.py)
+    * **Talks & Presentations**
+    * **Tools**
+* **Virtual Machines & Anti-Analysis Tricks** 
+  * **101**
+    * [VirtualDbgHide](https://github.com/Nukem9/VirtualDbgHide)
+      * Windows kernel mode driver to prevent detection of debuggers.
+    * \[Win32\_ComputerSystem class\]\([https://msdn.microsoft.com/en-us/library/aa394102\(v=vs.85\).aspx](https://msdn.microsoft.com/en-us/library/aa394102%28v=vs.85%29.aspx)\)
+    * \[Win32\_BIOS class\]\([https://msdn.microsoft.com/en-us/library/aa394077\(v=vs.85\).aspx](https://msdn.microsoft.com/en-us/library/aa394077%28v=vs.85%29.aspx)\)
+  * **Articles/Writeups**
+    * [rdtsc x86 instruction to detect virtual machines](http://blog.badtrace.com/post/rdtsc-x86-instruction-to-detect-vms/)
+    * [Win64/Vabushky - The Great Code Heist](http://www.malwaretech.com/2013/09/win64vabushky-great-code-heist.html)
+    * [Modeling Zero Day Malware Spread](https://lqdc.github.io/modeling-zero-day-malware-spread.html)
+    * [warbirdvm](https://github.com/airbus-seclab/warbirdvm)
+      * An analysis of the Warbird virtual-machine protection
+    * [Knowledge Fragment: Hardening Win7 x64 on VirtualBox for Malware Analysis](https://byte-atlas.blogspot.com/2017/02/hardening-vbox-win7x64.html)
+  * **Papers**
+    * [Breaking the Sandbox - Sudeep Singh](http://www.exploit-db.com/wp-content/themes/exploit/docs/34591.pdf)
+      * Abstract: In this paper, I would like to discuss various existing and interesting techniques which are used to evade the detection of a virus in Sandbox. We will also look at ways a sandbox can be hardened to prevent such evasion.
+    * [On the Cutting Edge: Thwarting Virtual Machine Detection](http://handlers.sans.org/tliston/ThwartingVMDetection_Liston_Skoudis.pdf)
+  * **Talks & Presentations**
+    * [Scientific but Not Academical Overview of Malware Anti-Debugging, Anti-Disassembly and Anti-VM Technologies](http://research.dissect.pe/docs/blackhat2012-paper.pdf)
+      * This talk catalogs the common evasion techniques malware authors employ, applying over 50 different static detections, combined with a few dynamic ones for completeness. We validate our catalog by running these detections against a database of 4 million samples \(the system is constantly running and the numbers will be updated for the presentation\), enabling us to present an analysis on the real state of evasion techniques in use by malware today. The resulting data will help security companies and researchers around the world to focus their attention on making their tools and processes more efficient to rapidly avoid the malware authors' countermeasures. 
+    * Duping the Machine: malware strategies, post sandbox detection
+      * [Slide deck presentation](https://www.virusbtn.com/pdf/conference_slides/2014/Wyke-VB2014.pdf)
+  * **Tools**
+    * [antivmdetection](https://github.com/nsmfoo/antivmdetection)
+      * Script to create templates to use with VirtualBox to make vm detection harder.
+    * [Paranoid Fish](https://github.com/a0rtega/pafish)
+      * Pafish is a demo tool that performs some anti\(debugger/VM/sandbox\) tricks. Most of them are often used by malware to avoid debugging and dynamic analysis. The project is open source, you can read the code of all anti-analysis checks. You can also download the compiled executable \(or compile it by yourself\) and reverse engineer it, which is quite recommended.
+    * [makin](https://github.com/secrary/makin)
+      * makin - reveal anti-debugging tricks
+    * [SubVirt: Implementing malware with virtual machines](http://web.eecs.umich.edu/virtual/papers/king06.pdf)
+      * We evaluate a new type of malicious software that gains qualitatively more control over a system. This new type of malware, which we call a virtual-machine based rootkit \(VMBR\), installs a virtual-machine monitor underneath an existing operating system and hoists the original operating system into a virtual machine. Virtual-machine based rootkits are hard to detect and remove because their state cannot be accessed by soft- ware running in the target system. Further, VMBRs support general-purpose malicious services by allowing such services to run in a separate operating system that is protected from the target system. We evaluate this new threat by implementing two proof-of-concept VMBRs. We use our proof-of-concept VMBRs to subvert Windows XP and Linux target systems, and we implement four example malicious services using the VMBR platform. Last, we use what we learn from our proof-of-concept VMBRs to explore ways to defend against this new threat. We discuss possible ways to detect and prevent VMBRs, and we implement a defense strategy suitable for protecting systems against this threat.
+    * [Truman](http://www.secureworks.com/cyber-threat-intelligence/tools/truman/)
+      * Truman can be used to build a "sandnet", a tool for analyzing malware in an environment that is isolated, yet provides a virtual Internet for the malware to interact with. It runs on native hardware, therefore it is not stymied by malware which can detect VMWare and other VMs. The major stumbling block to not using VMs is the difficulty involved with repeatedly imaging machines for re-use. Truman automates this process, leaving the researcher with only minimal work to do in order to get an initial analysis of a piece of malware. Truman consists of a Linux boot image \(originally based on Chas Tomlin's Windows Image Using Linux\) and a collection of scripts. Also provided is pmodump, a Perl-based tool to reconstruct the virtual memory space of a process from a PhysicalMemory dump. With this tool it is possible to circumvent most packers to perform strings analysis on the dumped malware.
+    * [al-khaser](https://github.com/LordNoteworthy/al-khaser)
+      * al-khaser is a PoC "malware" application with good intentions that aims to stress your anti-malware system. It performs a bunch of common malware tricks with the goal of seeing if you stay under the radar.
+
+## Dynamic Analysis
+
+* **Articles/Talks/Writeups**
+  * [Unicorn VS. Malware](https://r3v3rs3r.wordpress.com/2015/12/12/unicorn-vs-malware/)
+  * [Dynamic Anti-Emulation using Blackbox Analysis by Second Part To Hell](http://spth.virii.lu/dynamic_anti_emulation.txt)
+* **Papers**
+  * [PyTrigger: A System to Trigger & Extract User-Activated Malware Behavior](http://cs.gmu.edu/~astavrou/research/PyTrigger_ARES2013.pdf)
+    * Abstract: We introduce PyTrigger, a dynamic malware analy- sis system that automatically exercises a malware binary extract- ing its behavioral profile even when specific user activity or input is required. To accomplish this, we developed a novel user activity record and playback framework and a new  behavior  extraction approach.  Unlike  existing research, the activity recording and playback  includes the context of every object  in  addition  to traditional keyboard and mouse actions. The addition of the con- text makes the playback more accurate and avoids dependenciesand pitfalls that come with pure mouse and keyboard  replay. Moreover,  playback  can  become  more  efficient by condensing common activities into a single action. After playback, PyTrigger analyzes the system trace using a combination of multiple states and  behavior  differencing  to accurately extract  the  malware behavior and user triggered behavior from the complete system trace  log.  We  present the  algorithms, architecture and evaluate the   PyTrigger prototype using 3994 real malware samples. Results and analysis are presented showing PyTrigger extracts additional behavior in 21% of the samples
+  * [A Survey On Automated  Dynamic Malware Analysis  Evasion and Counter-Evasion: PC, Mobile, and Web - Alexei Bulazel & Bülent Yener](https://deepsec.net/docs/Slides/2017/A_Survey_On_Automated_Dynamic_Malware_Analysis_Evasion_And_Counter-Evasion_PC_Mobile_And_Web_Alexei_Bulazel.pdf)
+* **Tools**
+  * [DRAKVUF](https://tklengyel.github.io/drakvuf/)
+    * DRAKVUF is an agentless dynamic malware analysis system built on Xen, LibVMI, Volatility and Rekall. It allows for in-depth execution tracing of malware samples and extracting deleted files from memory, all without having to install any special software within the virtual machine used for analysis.
+    * [Code](https://github.com/tklengyel/drakvuf)
+  * [Zero Wine](http://zerowine.sourceforge.net/)
+    * Zero wine is an open source \(GPL v2\) research project to dynamically analyze the behavior of malware. Zero wine just runs the malware using WINE in a safe virtual sandbox \(in an isolated environment\) collecting information about the APIs called by the program.
+  * [Honeyagent](https://bitbucket.org/fkie_cd_dare/honeyagent)
+    * HoneyAgent is a Java agent library that creates a Sandbox for Java applications and applets. Therefore, it uses the JVMTI as well as the JNI to intercept class loading and function calls. During runtime HoneyAgent traces function calls from the analysed application. It is displayed which class calles which function with which parameters. Reflected function calls are translated to the origin function names for simpler reading.
+  * [Pybox](https://bitbucket.org/daniel_plohmann/pybox/)
+    * user-level framework for monitoring processes
+    * [Research paper on it](https://eldorado.tu-dortmund.de/bitstream/2003/27336/1/BookOfAbstracts_Spring5_2010.pdf)
+  * [INetSim](http://www.inetsim.org/)
+    * INetSim is a software suite for simulating common internet services in a lab environment, e.g. for analyzing the network behaviour of unknown malware samples. 
+  * [Regshot](http://sourceforge.net/projects/regshot/)
+    * Regshot is an open-source \(LGPL\) registry compare utility that allows you to quickly take a snapshot of your registry and then compare it with a second one - done after doing system changes or installing a new software product.
+  * [Mandiant ApateDNS](https://www.mandiant.com/resources/download/research-tool-mandiant-apatedns)
+    * Mandiant ApateDNS is a tool for controlling DNS responses though an easy to use GUI. As a phony DNS server, Mandiant ApateDNS spoofs DNS responses to a user-specified IP address by listening on UDP port 53 on the local machine. Mandiant ApateDNS also automatically sets the local DNS to localhost. Upon exiting the tool, it sets back the original local DNS settings.
+  * [Malcom - Malware Communication Analyzer](https://github.com/tomchop/malcom)
+    * Malcom is a tool designed to analyze a system's network communication using graphical representations of network traffic, and cross-reference them with known malware sources. This comes handy when analyzing how certain malware species try to communicate with the outside world.
+  * [BasicHook](https://github.com/MalwareTech/BasicHook)
+    * x86 Inline hooking engine \(using trampolines\)
+  * [Claimsman](https://github.com/mikkolehtisalo/claimsman)
+    * Claimsman logs all file handle creation on Windows systems, and logs to both a local file and centralized log management system.
+  * [WinMerge](http://winmerge.org/)
+    * WinMerge is an Open Source differencing and merging tool for Windows. WinMerge can compare both folders and files, presenting differences in a visual text format that is easy to understand and handle.
+  * [API Monitor](http://www.rohitab.com/apimonitor)
+    * API Monitor is a free software that lets you monitor and control API calls made by applications and services. Its a powerful tool for seeing how applications and services work or for tracking down problems that you have in your own applications.
+  * [SpyStudio](http://www.nektra.com/products/spystudio-api-monitor/)
+    * SpyStudio shows and interprets calls, displaying the results in a structured way which is easy for any IT professional to understand. SpyStudio can show registry keys and files that an application uses, COM objects and Windows the application has created, and errors and exceptions.
+  * [Microsoft Message Analyzer](http://www.microsoft.com/en-us/download/details.aspx?id=40308)
+    * Microsoft Message Analyzer is a new tool for capturing, displaying, and analyzing protocol messaging traffic and other system messages. Message Analyzer also enables you to import, aggregate, and analyze data from log and trace files. It is the successor to Microsoft Network Monitor 3.4 and a key component in the Protocol Engineering Framework \(PEF\) that was created by Microsoft for the improvement of protocol design, development, documentation, testing, and support. With Message Analyzer, you can choose to capture data live or load archived message collections from multiple data sources simultaneously.
+  * [PyTrigger: A System to Trigger & Extract User-Activated Malware Behavior](http://cs.gmu.edu/~astavrou/research/PyTrigger_ARES2013.pdf)
+    * Abstract: PyTrigger analyzes the system trace using a combination of multiple states and behavior differencing to accurately extract the malware behavior and user triggered behavior from the complete system trace log. We present the algorithms, architecture and evaluate the PyTrigger prototype using 3994 real malware samples. Results and analysis are presented showing PyTrigger extracts additional behavior in 21% of the samples.
+  * [rVMI - A New Paradigm For Full System Analysis](https://github.com/fireeye/rvmi)
+    * rVMI is a debugger on steroids. It leverages Virtual Machine Introspection \(VMI\) and memory forensics to provide full system analysis. This means that an analyst can inspect userspace processes, kernel drivers, and preboot environments in a single tool.  It was specifially designed for interactive dynamic malware analysis. rVMI isolates itself from the malware by placing its interactive debugging environment out of the virtual machine \(VM\) onto the hypervisor-level. Through the use of VMI the analyst still has full control of the VM, which allows her to pause the VM at any point in time and to use typical debugging features such as breakpoints and watchpoints. In addtion, rVMI provides access to the entire Rekall feature set, which enables an analyst to inspect the kernel and its data structures with ease.
+
+## Static Analysis
+
+* Tools
+  * [Pyew](https://code.google.com/p/pyew/)
+    * Pyew is a \(command line\) python tool to analyse malware. It does have support for hexadecimal viewing, disassembly \(Intel 16, 32 and 64 bits\), PE and ELF file formats \(it performs code analysis and let you write scripts using an API to perform many types of analysis\), follows direct call/jmp instructions in the interactive command line, displays function names and string data references; supports OLE2 format, PDF format and more. It also supports plugins to add more features to the tool.
+  * [Manalyze - static analyzer for PE files](https://github.com/JusticeRage/Manalyze)
+    * Manalyze was written in C++ for Windows and Linux and is released under the terms of the GPLv3 license. It is a robust parser for PE files with a flexible plugin architecture which allows users to statically analyze files in-depth.
+  * [yalda - Gita Ziabari](https://github.com/fideliscyber/yalda)
+    * The tool is designed to analyze the given files and extract malicious data out of the files.
+  * [Presentation](https://www.youtube.com/watch?v=OPRqgEZXWOE)
+  * [Dependency Walker](http://www.dependencywalker.com/)
+    * Dependency Walker is a free utility that scans any 32-bit or 64-bit Windows module \(exe, dll, ocx, sys, etc.\) and builds a hierarchical tree diagram of all dependent modules. For each module found, it lists all the functions that are exported by that module, and which of those functions are actually being called by other modules. Another view displays the minimum set of required files, along with detailed information about each file including a full path to the file, base address, version numbers, machine type, debug information, and more.
+* Techniques
+  * [BG00 Injection on Steroids Code less Code Injections and 0 Day Techniques Paul Schofield Udi Yavo](https://www.youtube.com/watch?v=0BAaAM2wD4s)
+    * [\[Slides\]Injection on Steroids: Code-less Code Injections and 0-Day Techniques](https://breakingmalware.com/injection-techniques/code-less-code-injections-and-0-day-techniques/)
+  * [Amoco - Static binary analysis tool](https://github.com/bdcht/amoco)
+    * Amoco is a python package dedicated to the \(static\) analysis of binaries.
+
+## Honeypots
+
+* **General**
+  * **101**
+    * [Honeypot Computing - Wikipedia](https://en.wikipedia.org/wiki/Honeypot_%28computing%29)
+    * [The Honeynet Project](https://www.honeynet.org/about)
+      * The Honeynet Project is a leading international 501c3 non-profit security research organization, dedicated to investigating the latest attacks and developing open source security tools to improve Internet security. With Chapters around the world, our volunteers have contributed to fight against malware \(such as Confickr\), discovering new attacks and creating security tools used by businesses and government agencies all over the world. The organization continues to be on the cutting edge of security research by working to analyze the latest attacks and educating the public about threats to information systems across the world.
+    * [Honeypots - ShadowServer](https://www.shadowserver.org/wiki/pmwiki.php/Information/Honeypots)
+    * **Types of Honeypots**
+      * **Zero Interaction\(Think Passive\)**
+      * **Low Interaction\(Think canned, limited responses to incoming data**
+      * **Medium/High Interaction\(Think Emulating Graphical Services/Providing Continual Content\)**
+      * **HoneyData - Strings, shares/drives, etc.**
+  * **Articles/Papers/Talks/Writeups**
+    * [Deploying Dionaea on a Raspberry Pi using MHN](https://github.com/threatstream/mhn/wiki/Deploying-Dionaea-on-a-Raspberry-Pi)
+    * [Experimenting with Honeypots Using The Modern Honey Network](https://zeltser.com/modern-honey-network-experiments/)
+    * [Building a Honeypot to Research Cyber-Attack Techniques](https://www.sussex.ac.uk/webteam/gateway/file.php?name=bell-proj.pdf&site=20)
+    * [Lessons Learn from attacks on Kippo honeypots](https://isc.sans.edu/diary/Lessons+Learn+from+attacks+on+Kippo+honeypots/18935)
+    * [An in-depth analysis of SSH attacks on Amazon EC2](https://blog.secdim.com/in-depth-analysis-of-ssh-attacks-on-amazon-ec2/)
+      * The research study investigates Secure Shell \(SSH\) attacks on Amazon EC2 cloud instances across different AWS zones by means of deploying Smart Honeypot \(SH\). It provides an in-depth analysis of SSH attacks, SSH intruders profile, and attempts to identify their tactics and purposes.
+    * [Analysis of Attacks Using a Honeypot - Verlag Berlin Heidelberg 2011]()
+      * Abstract. A Honeypot is a software based security device, deployed to attract hackers by displaying services and open ports which are potentially vulnerable. While the attackers are diverted, t heir activities can then be monitored and an a- lysed to identify current a ttack methods and trends. A low - interaction Honeypot called Dion aea was chosen for this project because it can simulate services while preventing an attacker from gaining full control. Results were collected over the six week period of the experiment. The logged information of the o b- served attacks was analysed and compared with current vulnerabilities, the loc a- tions where the attacks were originating from and the time of day at the orig i- nating site. A profile of individual attackers can then be built to ga in an insight into the current attack trends in order to improve network defences.
+    * [POSTER: Dragging Attackers to Honeypots for Effective Analysis of Cyber Threats](http://www.aims-conference.org/2014/POSTER-Dragging_Attackers_to_Honeypots_for_Effective_Analysis_of_Cyber_Threats.pdf)
+    * [Setting Honeytraps with Modsecurity - Adding fake hidden form fields](http://blog.spiderlabs.com/2014/06/setting-honeytraps-with-modsecurity-adding-fake-hidden-form-fields.html)
+    * [Honeypots for Active Defense - A Practical Guide to Deploying Honeynets Within the Enterprise - Greg Foss](http://www.irongeek.com/i.php?page=videos/centralohioinfosec2015/tech201-honeypots-for-active-defense-a-practical-guide-to-deploying-honeynets-within-the-enterprise-greg-foss)
+      * InfoSec analysts are all somewhat familiar with honeypots. When they are given the proper attention, care and feeding, they produce invaluable information. This intelligence has been primarily used by security researchers and organizations with advanced defensive capabilities to study their adversaries and learn from their actions. But what about the rest of us? Honeypots are a lot of work to configure, maintain, and monitor -- how can an organization that is not focused on research gain valuable intelligence using honeypots and actively defend their network using the data obtained? The answer is honeypots for active defense. There are currently many open source security tool distributions that come pre-loaded with honeypots among other useful tools, however the honeypot software is often not deployed in an effective manner. This session will discuss techniques to deploy honeypots in ways that will not overburden the security team with massive logs to sift through and focuses on correlating active threat data observed in the honeypot with the production environment. When deploying honeypots effectively, this can give security analysts one additional mechanism to tip them off to nefarious activity within their network.
+    * [Global Honeypot Trends - Elliot Brink](https://www.youtube.com/watch?v=rjd-r4WA0PU)
+      * Many of my computer systems are constantly compromised, attacked, hacked, 24/7. How do I know this? I've been allowing it. This presentation will cover over one year of research running several vulnerable systems \(or honeypots\) in multiple countries including the USA, mainland China, Russia and others. We'll be taking a look at: a brief introduction to honeypots, common attacker trends \(both sophisticated and script kiddie\), brief malware analysis and the statistical analysis of attackers based on GeoIP. Are there differences in attacks based on where a computer system is located? Let's investigate this together! Beginners to the topic of honeypots fear not, the basics will be covered.
+    * [Security Onions and Honey Potz - Ethan Dodge - BSidesSLC2015](https://www.youtube.com/watch?v=1Jbm1zwiGTM)
+* **Miscellaneous**
+* **Tools**
+  * **General**
+    * [Introduction to T-Pot - The all in one honeypot - northsec.tech](https://northsec.tech/introduction-to-t-pot-the-all-in-one-honeypot/)
+      * [T-Pot ISO Creator](https://github.com/dtag-dev-sec/tpotce)
+        * T-Pot Universal Installer and ISO Creator
+    * [Modern Honey Network\(MHN\)](https://threatstream.github.io/mhn/)
+      * From the secure deployment to the aggregation of thousands of events MHN provides enteprise grade management of the most current open source honeypot software. MHN is completely free open source software which supports external and internal honeypot deployments at a large and distributed scale. MHN uses the HPFeeds standard and low-interaction honeypots to keep effectiveness and security at enterprise grade levels. MHN provides full REST API out of the box and we are making CEF and STIX support available now for direct SIEM integration through our Commercial platform Optic. 
+      * [Honeypot Farming: Setup Modern Honey Network](https://medium.com/@theroxyd/honeypot-farming-setup-mhn-f07d241fcac6)
+    * [Beeswarm](http://www.beeswarm-ids.org/)
+      * Beeswarm is a honeypot project which provides easy configuration, deployment and managment of honeypots. Beeswarm operates by deploying fake end-user systems \(clients\) and services \(honeypots\). Beeswarm uses these systems to provides IoC \(Indication of Compromise\) by observing the difference between expected and actual traffic. 
+      * [Github](https://github.com/honeynet/beeswarm)
+    * [Honeywall Project](https://projects.honeynet.org/honeywall/)
+      * The goal of this page is to provide you the latest documentation, source code, distribution, and information for the Honeynet Project's Honeywall CDROM. The Honeywall CDROM is a bootable CD that installs onto a hard drive and comes with all the tools and functionality for you to implement data capture, control and analysis. 
+    * [dionea](http://dionaea.carnivore.it/)
+      * dionaea intention is to trap malware exploiting vulnerabilities exposed by services offerd to a network, the ultimate goal is gaining a copy of the malware. 
+    * [Glastopf Project](http://glastopf.org/)
+      * Glastopf is a Honeypot which emulates thousands of vulnerabilities to gather data from attacks targeting web applications. The principle behind it is very simple: Reply the correct response to the attacker exploiting the web application. The project has been kicked off by Lukas Rist in 2009 and the results we are got during this time are very promising and are an incentive to put even more effort in the development of this unique tool. Read the tool description for further information. We are working together with different people, organizations and institutions to get the best from the collected data. Find out more about collaborating with the project. 
+    * [Amun](http://sourceforge.net/projects/amunhoney/)
+      * Amun is a low-interaction honeypot, like Nepenthes or Omnivora, designed to capture autonomous spreading malware in an automated fashion. Amun is written in Python and therefore allows easy integration of new features.
+      * [Amun Honeypot - Github](https://github.com/zeroq/amun)
+      * [Amun Honeypot Paper](https://ub-madoc.bib.uni-mannheim.de/2595/1/amunhoneypot2.pdf)
+    * [Portspoof](https://drk1wi.github.io/portspoof/)
+      * The Portspoof program primary goal is to enhance your systems security through a set of new camouflage techniques. As a result of applying them your attackers' port scan result will become entirely mangled and to very significant extent meaningless. 
+    * Opens all ports, hosts seemingly legitimate services on each.
+    * [Honeytrap](https://github.com/honeytrap/honeytrap)
+      * Honeytrap is an extensible and opensource system for running, monitoring and managing honeypots.
+  * **HoneyTokens**
+    * [SPACECRAB](https://bitbucket.org/asecurityteam/spacecrab)
+      * Bootstraps an AWS account with everything you need to generate, mangage, and distribute and alert on AWS honey tokens. Made with breakfast roti by the Atlassian security team.
+    * [DCEPT](https://github.com/secureworks/dcept)
+      * A tool for deploying and detecting use of Active Directory honeytokens 
+  * **Java Apps**
+    * [Honeyagent](https://bitbucket.org/fkie_cd_dare/honeyagent)
+      * HoneyAgent is a Java agent library that creates a Sandbox for Java applications and applets. Therefore, it uses the JVMTI as well as the JNI to intercept class loading and function calls. During runtime HoneyAgent traces function calls from the analysed application. It is displayed which class calles which function with which parameters. Reflected function calls are translated to the original function names for simpler reading.
+  * **Low-Interaction**
+    * [Static Low-interaction Honeypots](http://www.frameloss.org/2014/07/12/static-low-interaction-honeypots/)
+  * **Service Simulators**
+    * [iNetSim](http://www.inetsim.org/)
+      * INetSim is a software suite for simulating common internet services in a lab environment, e.g. for analyzing the network behaviour of unknown malware samples. 
+  * **Single Purpose Emulation**
+    * [PHP-ShockPot](https://github.com/leonjza/PHP-ShockPot)
+      * PHP-ShockPot is a small honeypot aimed at showing you the interesting attempts made trying to exploit your host using the now famous "Shellshock" \(also known as bashbug\) bug.
+    * [HoneyBadger](https://bitbucket.org/LaNMaSteR53/honeybadger)
+      * A framework for targeted geolocation.
+    * [elastichoney](https://github.com/jordan-wright/elastichoney)0
+      * Elastichoney is a simple elasticsearch honeypot designed to catch attackers exploiting RCE vulnerabilities in elasticsearch.
+  * **SSH**
+    * [PSHITT](https://github.com/regit/pshitt)
+      * pshitt \(for Passwords of SSH Intruders Transferred to Text\) is a lightweight fake SSH server designed to collect authentication data sent by intruders. It basically collects username and password used by SSH bruteforce software and writes the extracted data to a file in JSON format. pshitt is written in Python and use paramiko to implement the SSH layer.
+    * [Kippo](https://github.com/desaster/kippo)
+      * Kippo is a medium interaction SSH honeypot designed to log brute force attacks and, most importantly, the entire shell interaction performed by the attacker.
+  * **Search Engine**
+    * [Google Hack Honeypot GHH](http://ghh.sourceforge.net/)
+      * Google Hack Honeypot is the reaction to a new type of malicious web traffic: search engine hackers. GHH is a “Google Hack” honeypot. It is designed to provide reconaissance against attackers that use search engines as a hacking tool against your resources. GHH implements honeypot theory to provide additional security to your web presence.  Google has developed a powerful tool. The search engine that Google has implemented allows for searching on an immense amount of information. The Google index has swelled past 8 billion pages \[February 2005\] and continues to grow daily. Mirroring the growth of the Google index, the spread of web-based applications such as message boards and remote administrative tools has resulted in an increase in the number of misconfigured and vulnerable web apps available on the Internet.  These insecure tools, when combined with the power of a search engine and index which Google provides, results in a convenient attack vector for malicious users. GHH is a tool to combat this threat. 
+  * **Tarpits**
+    * [Web Labyrinth](https://github.com/mayhemiclabs/weblabyrinth)
+      * A simple tool that creates a maze of bogus web pages to  confuse web scanners. It's main goal is to delay and occupy malicious  scanners that scan websites in order for incident handlers to detected  and respond to them before damage is done.
+  * **USB**
+    * [Ghost USB honeypot](https://github.com/honeynet/ghost-usb-honeypot)
+      * Ghost is a honeypot for malware that spreads via USB storage devices. It detects infections with such malware without the need of any further information. If you would like to see a video introduction to the project, have a look at this Youtube video\]\([https://www.youtube.com/watch?v=9G9oo3b9qR4](https://www.youtube.com/watch?v=9G9oo3b9qR4)\)
+      * [Ghost USB Honeypot - Installing/Running](http://highaltitudehacks.com/2013/06/15/ghost-usb-honeypot-part-2-installing-and-running-the-honeypot/)
+  * **Web**
+    * [Thug - Python low-interaction honeyclient](https://buffer.github.io/thug/)
+      * Thug is a Python low-interaction honeyclient aimed at mimicing the behavior of a web browser in order to detect and emulate malicious contents.
+    * [Wordpot](https://github.com/gbrindisi/wordpot)
+      * Wordpot is a Wordpress honeypot which detects probes for plugins, themes, timthumb and other common files used to fingerprint a wordpress installation.
+    * [phpmyadmin\_honeypot](https://github.com/gfoss/phpmyadmin_honeypot)
+      * Probably one of the smallest and simplest web honeypots out there...
+    * [Web Bug Server](http://sourceforge.net/p/adhd/wiki/Web%20Bug%20Server/)
+      * Easily embed a web bug inside word processing documents. These bugs are hidden to the casual observer by using things like linked style sheets and 1 pixel images.
+    * [honeyLambda](https://github.com/0x4D31/honeyLambda)
+      * a simple, serverless application designed to create and monitor URL {honey}tokens, on top of AWS Lambda and Amazon API Gateway
+  * **Windows-based**
+    * [Omnivora](http://sourceforge.net/projects/omnivora/)
+      * Omnivora is a low-interaction honeypot for systems running Windows operating systems and is implemented using Borland Delphi. It is primarily designed to collect autonomous spreading malware.
+  * **Wireless**
+    * [romanHunter](http://sourceforge.net/projects/romanhunter/)
+      * romanHunter \(router man Hunter\) is a wireless honeypot or closer to a sinkhole that will bait a cracker, capture the MAC address, reset the WIFI password \(effectively destroying their connection\) and wait for the next authorized connection.  The password changes happen on a round robin basis from entries in the password file \(pw\_list.txt\).
+* **Integration with Other Tools**
+  * **Splunk**
+    * [Tango Honeypot Intelligence](https://github.com/aplura/Tango)
+      * Honeypot Intelligence with Splunk
+* **Miscellaneous**
+  * [Hflow2](https://projects.honeynet.org/hflow)
+    * Data Analysis System
+* **101**
+* **Articles/Writeups**
+* **Talks & Presentations**
+* **Tools**
+
+## Sort
+
+* [License to Kill: Malware Hunting with the Sysinternals Tools](https://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/ATC-B308)
+* [gscript](https://github.com/gen0cide/gscript)
+  * Scriptable dynamic runtime execution of malware
+* [Trojan.Foxy writeup](http://www.cyberesi.com/2011/08/31/trojan-foxy/)
+  * Today I will write about a sample that I will refer to as Trojan.Foxy. Trojan.Foxy requests and parses .JPG images that contain encoded instructions. The encoding algorithm used by this Trojan is loosely based off of the Vigenère cipher; however there is a deviation in how the cipher is applied.
+* [Uroburos](https://blog.gdatasoftware.com/blog/article/uroburos-highly-complex-espionage-software-with-russian-roots.html)
+  * `https://www.gdata.de/rdk/dl-en-rp-Uroburos`
+* [Thousand ways to backdoor a Windows domain \(forest\)](http://jumpespjump.blogspot.com/2015/03/thousand-ways-to-backdoor-windows.html)
+* [COM Object hijacking: the discreet way of persistence](https://blog.gdatasoftware.com/blog/article/com-object-hijacking-the-discreet-way-of-persistence.html)
+* [Nesting doll: unwrapping Vawtrak](https://www.virusbtn.com/virusbulletin/archive/2015/01/vb201501-Vawtrak)
+* [Rotten Tomatoes campaign by Sophos](http://www.sophos.com/en-us/medialibrary/PDFs/technical%20papers/sophos-rotten-tomato-campaign.pdf)
+* [Full details on CVE-2015-0096 and the failed MS10-046 Stuxnet fix](http://h30499.www3.hp.com/t5/HP-Security-Research-Blog/Full-details-on-CVE-2015-0096-and-the-failed-MS10-046-Stuxnet/ba-p/6718459#.VP9cTDTF-PU)
+* [Malware Reversing - Burpsuite Keygen - 0x00sec](https://0x00sec.org/t/malware-reversing-burpsuite-keygen/5167)
+* [Interesting Malware - No, I’m not kidding... by Marion Marschalek](https://www.youtube.com/watch?v=u2Ry9HTBbZI)
+* [Frida](http://www.frida.re/docs/home/)
+  * Inject JS into native apps
+* [PowerLoaderEX](https://github.com/BreakingMalware/PowerLoaderEx)
+* [Software Distribution Malware Infection Vector](http://dl.packetstormsecurity.net/papers/general/Software.Distribution.Malware.Infection.Vector.pdf)
+  * In this paper we present an efficient mechanism as well as the corresponding reference implementation for on-the-fly infecting of executable code with malicious software. Our algorithm deploys virus infection routines and network redirection attacks, without requiring to modify the application itself. This allows to even infect executables with a embedded signature when the signature is not automatically verified before execution. We briefly discuss also countermeasures such as secure channels, code authentication as well as trusted virtualization that enables the isolation of untrusted downloads from other application running in trusted domains or compartments.
+* [Statistical Structures: Fingerprinting Malware for Classification and Analysis - Daniel Bilar](https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Bilar.pdf)
+* [Malware Guard Extension: Using SGX to Conceal Cache Attacks](https://arxiv.org/abs/1702.08719)
+  * In this paper, we demonstrate fine-grained software-based side-channel attacks from a malicious SGX enclave targeting co-located enclaves. Our attack is the first malware running on real SGX hardware, abusing SGX protection features to conceal itself. Furthermore, we demonstrate our attack both in a native environment and across multiple Docker containers. We perform a Prime+Probe cache side-channel attack on a co-located SGX enclave running an up-to-date RSA implementation that uses a constant-time multiplication primitive. The attack works although in SGX enclaves there are no timers, no large pages, no physical addresses, and no shared memory. In a semi-synchronous attack, we extract 96% of an RSA private key from a single trace. We extract the full RSA private key in an automated attack from 11 traces within 5 minutes.
+* [Windows’ PsSetLoadImageNotifyRoutine Callbacks: the Good, the Bad and the Unclear \(Part 2\)](https://breakingmalware.com/documentation/windows-pssetloadimagenotifyroutine-callbacks-good-bad-unclear-part-2/)
+* [Malvertising: Under The Hood by Chris Boyd - BSides Manchester2017](https://www.youtube.com/watch?v=VESvOsr91_M&index=1&list=PLcgqQkap1lNrOBNCXqpPqpPAqckxv0XhP)
+* [Computer Viruses In This Modern Age - alcopaul/brigada ocho 2014](http://spth.virii.lu/dc6/TEXTS/alcopaul/virus_alcopaul.txt)
+* [Windows API resolution via hashing](https://github.com/LloydLabs/Windows-API-Hashing)
+  * Although this method of API obfuscation is relatively old, my friend who was wanting to increase his skills in the Windows sphere confronted me about a way a few malware families seem to resolve APIs. It's pretty simple, however he could not find any documentation with a solid programming example on the matter at the time, so I thought I'd quickly write something up regarding it. I was going to write my own loader for this example \(loading the desired module via LdrLoadDll within kernel32.dll, walking the InMemoryOrderModuleList to find the desired loaded module, finding the exported function we're after within the EAT..\) - however I thought this might of have been a bit overkill for such a simple concept, I want to cover writing your own PE loader in the future though as it's an interesting subject.
+* [Tip: how to find malware samples containing specific strings - Decalage](https://decalage.info/en/malware_string_search)
+* [Digital Steganography as an Advanced Malware Detection Evasion Technique - z3roTrust\(Masters Thesis\)](https://medium.com/@z3roTrust/digital-steganography-as-an-advanced-malware-detection-evasion-technique-40d4eeb19830)
+* [Betabot still alive with multi-stage packing. - Wojciech](https://medium.com/@woj_ciech/betabot-still-alive-with-multi-stage-packing-fbe8ef211d39)
+
+[https://objective-see.com/blog/blog\_0x49.html](https://objective-see.com/blog/blog_0x49.html)
+
+* [Let’s dig into Vidar – An Arkei Copycat/Forked Stealer \(In-depth analysis\) - fumko](https://fumik0.com/2018/12/24/lets-dig-into-vidar-an-arkei-copycat-forked-stealer-in-depth-analysis/)
+* [Predator The Thief: In-depth analysis \(v2.3.5\) - fumko](https://fumik0.com/2018/10/15/predator-the-thief-in-depth-analysis-v2-3-5/)
+* [PDF Analysis - zbetheckin](https://github.com/zbetcheckin/PDF_analysis)
+  * Several PDF analysis reassembled with additional tips and tools
+* [Vba2Graph](https://github.com/MalwareCantFly/Vba2Graph)
+  * Generate call graphs from VBA code, for easier analysis of malicious documents.
+
+    [https://github.com/kevthehermit/RATDecoders](https://github.com/kevthehermit/RATDecoders)
+
+[https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/mcafee-atr-analyzes-sodinokibi-aka-revil-ransomware-as-a-service-follow-the-money/](https://securingtomorrow.mcafee.com/other-blogs/mcafee-labs/mcafee-atr-analyzes-sodinokibi-aka-revil-ransomware-as-a-service-follow-the-money/)
+
+Malware writeup \(use for COM\)
+
+* [IcoScript: using webmail to control malware - Grooten](https://www.virusbulletin.com/virusbulletin/2014/08/icoscript-using-webmail-control-malware)
+* [Major shift in strategy for ZeroAccess rootkit malware, as it shifts to user-mode - James Wyke](https://nakedsecurity.sophos.com/2012/06/06/zeroaccess-rootkit-usermode/)
+* [BBSRAT Attacks Targeting Russian Organizations Linked to Roaming Tiger - Bryan Lee, Josh Grunzweig](https://unit42.paloaltonetworks.com/bbsrat-attacks-targeting-russian-organizations-linked-to-roaming-tiger/)
+
+[https://malpedia.caad.fkie.fraunhofer.de/](https://malpedia.caad.fkie.fraunhofer.de/)
+
+* [Malware Theory - Oligomorphic, Polymorphic and Metamorphic Viruses - MalwareAnalysisForHedgehogs](https://www.youtube.com/watch?v=Jsohdah8ZCg)
+
+[https://shasaurabh.blogspot.com/2018/01/analyzing-atm-malwares.html](https://shasaurabh.blogspot.com/2018/01/analyzing-atm-malwares.html) [https://shasaurabh.blogspot.com/2017/07/virtual-machine-detection-techniques.html](https://shasaurabh.blogspot.com/2017/07/virtual-machine-detection-techniques.html)
+
+[https://github.com/rj-chap/CFWorkshop](https://github.com/rj-chap/CFWorkshop) [https://www.youtube.com/watch?v=imq8CG5oNug](https://www.youtube.com/watch?v=imq8CG5oNug)
+
+* [Unprotect Project](http://unprotect.tdgt.org/index.php/Unprotect_Project)
+  * Malware are one of the most aggressive threats in the IT field. They are often used to cause damage, steal data, or spy on a target. Companies and Security Industry are working to be more effective against this threat and detecting new variants. Malware authors spend a great deal of time and effort to develop complex code to perform malicious actions against a target system. It is crucial for malware to remain undetected and avoid sandbox analysis, antiviruses or malware analysts. With this kind of technics, malware are able to pass under the radar and stay undetected on a system. The purpose of this wiki is to try to centralise all these techniques, to understand and detect new generation of malware.
+
+[https://www.slideshare.net/matrosov/cybercrime-in-russia-trends-and-issues](https://www.slideshare.net/matrosov/cybercrime-in-russia-trends-and-issues)
+

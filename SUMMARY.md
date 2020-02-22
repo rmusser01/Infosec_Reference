@@ -25,4 +25,6 @@
 * [Game Hacking](untitled-20.md)
 * [Honeypots](untitled-21.md)
 * [Interesting Things](untitled-22.md)
+* [Logging, Security Monitoring & Threat Hunting](untitled-23.md)
+* [Malware](untitled-24.md)
 

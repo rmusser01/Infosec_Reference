@@ -8,4 +8,5 @@
 * [Cryptography and Encryption](untitled-3.md)
 * [Career](untitled-4.md)
 * [Car\_Hacking](untitled-5.md)
+* [Cheat Sheets](untitled-6.md)
 

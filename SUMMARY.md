@@ -15,4 +15,6 @@
 * [CTFs & Wargames](untitled-10.md)
 * [Darknets](untitled-11.md)
 * [Data Visualization](untitled-12.md)
+* [Defense](untitled-13.md)
+* [Data Forensics & Incident Response](untitled-14.md)
 

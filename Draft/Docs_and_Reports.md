@@ -13,9 +13,6 @@
 
 
 
-
-
-
 To Do:
 	* Add Note taking methods
 
@@ -36,6 +33,8 @@ To Do:
 			* [Technical Style](http://jacobian.org/writing/technical-style/)
 			* [Editors](http://jacobian.org/writing/editors/)
 		* [The Ultimate Workflow for Writers Obsessed with Quality - Rob Hardy](https://betterhumans.coach.me/the-ultimate-workflow-for-writers-obsessed-with-quality-5b2810e1214b)
+		* [How To Write Like It’s Your Job - Bria Hughes(BSidesSF2020)](http://www.encyclopediabriannica.com/?p=667)
+			* Good presentation on increasing your general writing ability.
 	* **Writing a Paper**
 		* [How to write a great research paper - Simon Peyton Jones](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/)
 	* **Technical Writing**
@@ -50,6 +49,10 @@ To Do:
 		* [Writing Tips for IT Professionals - Lenny Zeltser](https://zeltser.com/writing-tips-for-it-professionals/)
 		* [Tech Writing Handbook - Kyle Wiens, Julia Bluff(iFixit)](https://help.dozuki.com/Tech_Writing)
 			* This handbook will teach you how to create everything from manuals to work instructions. We’ll help you avoid the most common pitfalls of tech writing, from poor planning to outdated publishing.
+		* [Technical Writing Courses - Google](https://developers.google.com/tech-writing)
+			* "This collection of courses and learning resources aims to improve your technical documentation. Learn how to plan and author technical documents. You can also learn about the role of technical writers at Google."
+		* [Learning Technical Writing Using the Engineering Method - Norman Ramsey(2016)](https://www.cs.tufts.edu/~nr/pubs/learn.pdf)
+			* "This booklet explains how to study technical writing in the context of a weekly group. If nothing else, a group will show you that you are not alone in your difficulties. Problems you may have are problems that others also have, and you can find similar problems even in published papers. But we do not emphasize problems; instead we emphasize useful principles and practices—engineering heuristics—that you can learn to apply to your own manuscripts."
 	* **Software Design Documentation/Functional Specifications**
 		* [Islandora Software Design Documents](https://github.com/Islandora/islandora/wiki/design-documents)
 		* [Painless Functional Specifications – Part 1: Why Bother? - JoelonSoftware](https://www.joelonsoftware.com/2000/10/02/painless-functional-specifications-part-1-why-bother/)

@@ -3,33 +3,24 @@
 An Information Security Reference That Doesn't Suck
 
 ### Goal:
-
-* Be an awesome Information Security Reference
-* List of techinques, tools and tactics to learn from/reference.
-* Rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches OR as a reference/recall method for stuff. 
-* Something like a "Yellow Pages" in the sense of you know something exists, but what was it called....
-  * 'If you give a man a fish, he is hungry again in an hour. If you teach him to catch a fish, you do him a good turn.'
-* Always accepting more links/stuff. Feel free to make a pull request or a complaint.
-
-### Why Do _You_ Care?
-
-* Don't have to constantly google for tools/reminder. 
-* Easily browsable list of tools, techniques, papers, and research in all sorts of areas.
-* Want to read some good info.
-
-### Why Do _I_ Care?
-
-* I do this as a resource for myself\(to teach myself & others from\) and offer it publicly as a way of giving back to the general community.
-* To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel help build someone's skillset or increase understanding of attacks/methods/defenses.
-  * To be clear, I do not condone illegal activities and the purpose of this repo is not to enable or spread the perfomance of illegal activities.
-
-#### This page
-
-* This page isn't ~~terrible~~ the best on mobile. Use [https://docs.rmusser.ne](https://docs.rmusser.net)t for better mobile formatting.
-* For latest content updates, check the git history. The Things-added.md file will be updated eventually.
-* All links on this page should work. Last tested some time ago.
-* Contributions are encouraged/appreciated.
-* If this resource has helped you in any way, please consider making a donation to [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm) or [Amnesty International](https://www.amnesty.org/en/donate/). 
+* **Be an awesome Information Security Reference**
+* **List of techinques, tools and tactics to learn from/reference.**
+	* Rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches OR as a reference/recall method for stuff. 
+	* Something like a "Yellow Pages" in the sense of you know something exists, but what was it called....
+  		* 'If you give a man a fish, he is hungry again in an hour. If you teach him to catch a fish, you do him a good turn.'
+* **Always accepting more links/stuff. Feel free to make a pull request or a complaint through a pull request or filing a bug**
+* **Why Do _You_ Care?**
+	* Don't have to constantly google for tools/reminder. 
+	* Easily browsable list of tools, techniques, papers, and research in all sorts of areas.
+	* Want to read some good info.
+* **Why Do _I_ Care?**
+	* I do this as a resource for myself\(to teach myself & others from\) and offer it publicly as a way of giving back to the general community.
+	* To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel help build someone's skillset or increase understanding of attacks/methods/defenses. This is not meant to condone illegal or malicious activities.
+* **This page**
+	* This page isn't ~~terrible~~ the best on mobile. Use [https://docs.rmusser.ne](https://rmusser.net/docs)t for better mobile formatting.
+	* For latest content updates, check the git history.
+	* Contributions are encouraged/appreciated.
+	* If this resource has helped you in any way, please consider making a donation to [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm) or [Amnesty International](https://www.amnesty.org/en/donate/). 
 
 ## Index - Table of Contents
 
@@ -40,10 +31,10 @@ An Information Security Reference That Doesn't Suck
 * [BIOS/UEFI/Firmware Attacks/Defense](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/bios_uefi.md)
 * [:hammer:Building a Testing Lab:hammer:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Building_A_Lab.md)
 * [:car: Car hacking :car:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Cars.md)
-* [Career](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Career.md)
+* [:money_with_wings:Career:money_with_wings:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Career.md)
 * [Cheat Sheets](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Cheats.md)
 * [:video\_camera:Conferences/Recordings:video\_camera:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Conferences.md)
-* [Containers](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Containers.md)
+* [:bento:Containers:bento:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Containers.md)
 * [:star:Courses & Training:star:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Courses_Training.md)
 * [:game\_die:Cryptography & Encryption:game\_die:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/CandE.md)
 * [:checkered\_flag: CTFs & Wargames :checkered\_flag:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/CTFs_Wargames.md)

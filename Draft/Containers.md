@@ -35,9 +35,6 @@
 
 
 
-
-
-
 ------------------------
 ### <a name="containers"></a>Containers
 * **101**<a name="c101"></a>
@@ -65,6 +62,8 @@
 			* Runs the given cmd application within a tightly confined SELinux domain. The default sandbox domain only allows applications the ability to read and write stdin, stdout and any other file descriptors handed to it. It is not allowed to open any other files.
 		* [seccomp_filter - kernel.org](https://www.kernel.org/doc/Documentation/prctl/seccomp_filter.txt)
 			* Seccomp filtering provides a means for a process to specify a filter for incoming system calls. The filter is expressed as a Berkeley Packet Filter (BPF) program, as with socket filters, except that the data operated on is related to the system call being made: system call number and the system call arguments. This allows for expressive filtering of system calls using a filter program language with a long history of being exposed to userland and a straightforward data set.
+		* [The Container Operator's Manual - Alice Goldfuss(Velocity NY2018)](https://www.youtube.com/watch?v=zGw_xKF47T0)
+			* Containers have been the future for five years now, featured on the stage of every major distributed systems conference in the world. But beyond the hype and the swag is a real technical solution, with real technical challenges, used for real problems at scale. And for the companies and engineers looking to adopt this solution, there’s little content on what awaits them. Containers can be a great infrastructure solution, but no one should drive them without a manual. Alice Goldfuss discusses some of the advantages and disadvantages of running containers in production at scale. You’ll learn why you should use containers, why you shouldn’t, and the trade-offs required at both the technical and human levels for implementing them. You’ll leave with a better understanding of how containers could fit into your own architecture and what you need to do to make that rollout a reality.
 	* **Building**<a name="cbuild"></a>
 		* [Best practices for building containers - cloud.google](https://cloud.google.com/solutions/best-practices-for-building-containers)
 		* [img](https://github.com/genuinetools/img)
@@ -82,6 +81,7 @@
 		* [Getting Towards Real Sandbox Containers - Jesse Frazelle(May2016)](https://blog.jessfraz.com/post/getting-towards-real-sandbox-containers/)
 		* [Best Practices for Operating Containers - cloud.google](https://cloud.google.com/solutions/best-practices-for-operating-containers)
 			* This article describes a set of best practices for making containers easier to operate. These practices cover a wide range of topics, from security to monitoring and logging.
+		* [Linux containers in 500 lines of code - lizzie.io](https://blog.lizzie.io/linux-containers-in-500-loc.html)
 	* **Logging & Monitoring**
 		* [Auditing containers with osquery - Corentin Badot-Bertrand](https://itnext.io/auditing-containers-with-osquery-389636f8c420)
 		* [SELinux, Seccomp, Sysdig Falco, and you: A technical discussion - Mark Stemm](https://sysdig.com/blog/selinux-seccomp-falco-technical-discussion/)
@@ -103,6 +103,7 @@
 			* [NIST Special Publication 800-190: Application Container Security Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf)
 			* [Container security: What you need to know about the NIST standards - Neil McAllister](https://techbeacon.com/enterprise-it/container-security-what-you-need-know-about-nist-standards)
 		* **Articles/Blogposts/Writeups**
+			* [Container Security – Nobody Knows What It Means But It’s Provocative - Kelley Shortridge(2020)](https://capsule8.com/blog/container-security-nobody-knows-what-it-means-but-its-provocative/)
 			* [How to implement an open source container security stack (part 1)(2018) - Mateo Burillo](https://sysdig.com/blog/oss-container-security-stack/)
 			* [Understanding and Hardening Linux Containers - nccgroup](https://www.nccgroup.trust/uk/our-research/understanding-and-hardening-linux-containers/)
 				* Linux containers offer native OS virtualisation, segmented by kernel namespaces, limited through process cgroups and restricted through reduced root capabilities, Mandatory Access Control and user namespaces. This paper discusses these container features, as well as exploring various security mechanisms. Also included is an examination of attack surfaces, threats, and related hardening features in order to properly evaluate container security. Finally, this paper contrasts different container defaults and enumerates strong security recommendations to counter deployment weaknesses-- helping support and explain methods for building high-security Linux containers. Are Linux containers the future or merely a fad or fantasy? This paper attempts to answer that question.
@@ -138,6 +139,8 @@
 			* In today's contemporary world, containers are one of the most trending and hottest topics in IT, wherever you go, you will find people talking about some shiny and new technologies and most of the time they're either talking about DevOps, Docker, Kubernetes or are deploying it. It becomes very difficult to know where to start and how to take your career to the next level in these shiny technologies. So, in today's session, we will be talking about the Big Picture of Docker. You will learn the basic fundamentals and how it works. After this session, you'll be able to get started with Docker.
 			* [Gitbook](https://dockub.rootrwx.com/)
 		* [Docker Cheat Sheet - wsargent](https://github.com/wsargent/docker-cheat-sheet)
+	* [Bocker](https://github.com/p8952/bocker)
+		* Docker implemented in around 100 lines of bash.
 	* **Compose**<a name="dcom"></a>
 	* **Containers & Images**<a name="dci"></a>
 		* **101**
@@ -410,6 +413,11 @@
 	* **Securing**
 	* **Tools**
 * **Other Stuff**
+	* [Container-Optimized OS - GCP](https://cloud.google.com/container-optimized-os)
+		* The OS built for containers, designed for Google Cloud Platform
+	* [Bottlerocket - AWS](https://aws.amazon.com/bottlerocket/)
+		* Bottlerocket is a Linux-based open-source operating system that is purpose-built by Amazon Web Services for running containers on virtual machines or bare metal hosts.
+		* [Github](https://github.com/bottlerocket-os/bottlerocket)
 	* [Firecracker-microvm](https://firecracker-microvm.github.io)
 		* Firecracker is an open source virtualization technology that is purpose-built for creating and managing secure, multi-tenant container and function-based services.
 	* [Photon OS](https://github.com/vmware/photon)
@@ -425,6 +433,8 @@
 
 ------------------------
 ### Sort	
+
+
 
 
 

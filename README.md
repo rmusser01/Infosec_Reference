@@ -72,6 +72,6 @@ An Information Security Reference That Doesn't Suck
 * [:signal\_strength: Wireless Networks and RF Devices :signal\_strength:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Wireless.md)
 * Notable Policy Docs
   * [Insurance Data Security Model Law](http://www.naic.org/documents/committees_ex_cybersecurity_tf_exposure_mod_draft_clean.pdf) 
-  * [NIST Cyber Security Framework 02/12/2014](https://www.nist.gov/sites/default/files/documents/cyberframework/cybersecurity-framework-021214.pdf) 
+  * [NIST Cyber Security Framework](https://www.nist.gov/cyberframework)
   * [PCI-DSS V3.2.1](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf)
 

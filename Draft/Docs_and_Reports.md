@@ -13,7 +13,6 @@
 
 
 
-
 To Do:
 	* Add Note taking methods
 
@@ -34,6 +33,8 @@ To Do:
 			* [Technical Style](http://jacobian.org/writing/technical-style/)
 			* [Editors](http://jacobian.org/writing/editors/)
 		* [The Ultimate Workflow for Writers Obsessed with Quality - Rob Hardy](https://betterhumans.coach.me/the-ultimate-workflow-for-writers-obsessed-with-quality-5b2810e1214b)
+		* [How To Write Like It’s Your Job - Bria Hughes(BSidesSF2020)](http://www.encyclopediabriannica.com/?p=667)
+			* Good presentation on increasing your general writing ability.
 	* **Writing a Paper**
 		* [How to write a great research paper - Simon Peyton Jones](https://www.microsoft.com/en-us/research/academic-program/write-great-research-paper/)
 	* **Technical Writing**
@@ -48,6 +49,10 @@ To Do:
 		* [Writing Tips for IT Professionals - Lenny Zeltser](https://zeltser.com/writing-tips-for-it-professionals/)
 		* [Tech Writing Handbook - Kyle Wiens, Julia Bluff(iFixit)](https://help.dozuki.com/Tech_Writing)
 			* This handbook will teach you how to create everything from manuals to work instructions. We’ll help you avoid the most common pitfalls of tech writing, from poor planning to outdated publishing.
+		* [Technical Writing Courses - Google](https://developers.google.com/tech-writing)
+			* "This collection of courses and learning resources aims to improve your technical documentation. Learn how to plan and author technical documents. You can also learn about the role of technical writers at Google."
+		* [Learning Technical Writing Using the Engineering Method - Norman Ramsey(2016)](https://www.cs.tufts.edu/~nr/pubs/learn.pdf)
+			* "This booklet explains how to study technical writing in the context of a weekly group. If nothing else, a group will show you that you are not alone in your difficulties. Problems you may have are problems that others also have, and you can find similar problems even in published papers. But we do not emphasize problems; instead we emphasize useful principles and practices—engineering heuristics—that you can learn to apply to your own manuscripts."
 	* **Software Design Documentation/Functional Specifications**
 		* [Islandora Software Design Documents](https://github.com/Islandora/islandora/wiki/design-documents)
 		* [Painless Functional Specifications – Part 1: Why Bother? - JoelonSoftware](https://www.joelonsoftware.com/2000/10/02/painless-functional-specifications-part-1-why-bother/)
@@ -88,6 +93,9 @@ To Do:
 	* **Manual Publishing**
 		* [Ronn](https://github.com/rtomayko/ronn)
 			* Ronn builds manuals. It converts simple, human readable textfiles to roff for terminal display, and also to HTML for the web. The source format includes all of Markdown but has a more rigid structure and syntax extensions for features commonly found in manpages (definition lists, link notation, etc.). The ronn-format(7) manual page defines the format in detail.
+	* **Documentation Browsers**
+		* [Zeal](https://zealdocs.org)
+			* Zeal is a simple offline documentation browser inspired by Dash.
 * **Writing Reports** <a name="reports"></a>
 	* **Report Examples/Samples**
 		* [Public penetration testing reports](https://github.com/juliocesarfort/public-pentesting-reports)
@@ -104,6 +112,7 @@ To Do:
 			* [Excellent blog post breaking down the various parts, a must read](http://wwwwebsecuritywatch.com/the-penetration-testing-report/)
 			* [Your Reporting Matters: How to Improve Pen Test Reporting - Brian B. King](https://www.blackhillsinfosec.com/your-reporting-matters-how-to-improve-pen-test-reporting/)
 				* [Video Presentation](https://www.youtube.com/watch?v=NUueNT1svb8)
+			* [LTR101: Writing or Receiving Your First Pentest Report - Andy Gill](https://blog.zsec.uk/ltr101-pentest-reporting/)
 		* **Talks**
 			* [Hack for Show, Report for Dough - Brian B. King(WWHF 2018)](https://www.youtube.com/watch?v=c_LBWqNDY0M)
 				* The fun part of pentesting is the hacking. But the part that makes it a viable career is the report. You can develop the most amazing exploit for the most surprising vulnerability, but if you can't document it clearly for the people who need to fix it, then you're just having fun. Which is fine! But if you want to make a career out of it, your reports need to be as clear and useful as your hacks are awesome. This talk shows simple techniques you can use to make your reports clear, useful, and brief. You'll see some before-and-after examples of a bad report made good, with clear explanations of what makes the difference. Those things will be useful no matter what tools you use to create reports. Then, if we have time, we'll look at some Microsoft Word hacks that will save you time and improve consistency.
@@ -188,6 +197,8 @@ To Do:
 		* Ghostwriter is a Django project written in Python 3.7 and is designed to be used by a team of operators. The platform is made up of several Django apps that own different roles but work together. See the Wiki for more information.
 		* [Wiki](https://ghostwriter.wiki/)
 		* [Introducing Ghostwriter - Christopher Maddalena](https://posts.specterops.io/introducing-ghostwriter-part-1-61e7bd014aff)
+	* [sh00t](https://github.com/pavanw3b/sh00t)
+		* sh00t is a task manager to let you focus on performing security testing. Provides To Do checklists of test cases and helps to create bug reports with customizable bug templates
 * **Video Recording/Visual Documentation**<a name="video"></a>
 	* [Open Broadcaster Software OBS](https://obsproject.com/)
 		* Open Broadcaster Software is free and open source software for video recording and live streaming. Cross Platform, Windows/OsX/Linux

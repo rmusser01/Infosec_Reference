@@ -40,7 +40,6 @@
 
 
 
-
 ------------------------------------------------------
 ### Career Information<a name="career-info"></a>
 * **101**<a name="101"></a>
@@ -83,6 +82,7 @@
 	* [Q: Why Do Keynote Speakers Keep Suggesting That Improving Security Is Possible? A: Because Keynote Speakers Make Bad Life Decisions and Are Poor Role Models](https://www.usenix.org/conference/usenixsecurity18/presentation/mickens)
 		* Some people enter the technology industry to build newer, more exciting kinds of technology as quickly as possible. My keynote will savage these people and will burn important professional bridges, likely forcing me to join a monastery or another penance-focused organization. In my keynote, I will explain why the proliferation of ubiquitous technology is good in the same sense that ubiquitous Venus weather would be good, i.e., not good at all. Using case studies involving machine learning and other hastily-executed figments of Silicon Valley’s imagination, I will explain why computer security (and larger notions of ethical computing) are difficult to achieve if developers insist on literally not questioning anything that they do since even brief introspection would reduce the frequency of git commits. At some point, my microphone will be cut off, possibly by hotel management, but possibly by myself, because microphones are technology and we need to reclaim the stark purity that emerges from amplifying our voices using rams’ horns and sheets of papyrus rolled into cone shapes. I will explain why papyrus cones are not vulnerable to buffer overflow attacks, and then I will conclude by observing that my new start-up papyr.us is looking for talented full-stack developers who are comfortable executing computational tasks on an abacus or several nearby sticks.
 	* [How to Start in InfoSec - Mubix](https://gist.github.com/mubix/5737a066c8845d25721ec4bf3139fd31)
+	* ["Firemen vs Safety Matches" - Amélie Koran(ShmooCon XV 2019)](https://www.youtube.com/watch?v=_pej1oHN-pE)
 	* **Educational/Informational**
 		* [Navigating Career Choices in InfoSec - Fernando Montenegro - BSides Detroit2017](https://www.youtube.com/watch?v=yM2xCjrQSY4)
 			* Making career choices can be intimidating and stressful. Perhaps this presentation can help. The tidal forces affecting technology impact our careers as well. If we're not actively managing them, we're leaving decisions to chance (or to others), and may not like the outcomes. This presentation describes a framework I've used over the past few years to evaluate both ongoing job satisfaction as well as new opportunities as they appear. I'm happy with the outcomes I've obtained with it, and have used this same framework when providing advice to others, and it has been well received. Hopefully it can help others as well.
@@ -161,6 +161,8 @@
 	* [Compensation in 2019 New Grad Tech Offers - Jon Luca](https://blog.jonlu.ca/posts/tech-offers)
 	* [Ten Rules for Negotiating a Job Offer - Haseeb Qureshi](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
 	* [Negotiating Pattern Language - wiki.c2.com](http://wiki.c2.com/?NegotiatingPatternLanguage)
+	* [How to Calculate and Communicate Your Desired Total Compensation - Danile Miessler](https://danielmiessler.com/blog/how-to-calculate-and-communicate-your-desired-compensation/)
+	* [Equifax Could Be Selling Your Salary History. Here’s How To Protect It(2017 - Joel Winston)](https://www.fastcompany.com/40508924/equifax-could-be-selling-your-salary-history-heres-how-to-protect-it)
 * **Contracting & Consulting**<a name="contract"></a>
 	* [Why A Billable Hours Model Does not Work in Consulting - firmsconsulting.com](https://www.firmsconsulting.com/quarterly/billable-hours-strategy-consulting/)
 	* [How To Build Your Own Infosec Company - Mario Heiderich (BSides Lisbon 2018: Keynote)](https://www.youtube.com/watch?reload=9&v=UE5xS7-kFjE)
@@ -169,6 +171,8 @@
 	* [How to build your own Infosec Company - Mario Heiderich(nullcon Goa2019)](https://www.youtube.com/watch?v=N2JG7qIlpi0&feature=youtu.be)
 	* [What to Expect in an Ethical Hacking Interview - TheCyberMentor](https://www.youtube.com/watch?v=nrewE1mLlaU)
 	* [How I Made $100,000 in a Month - TheCyberMentor](https://www.youtube.com/watch?v=dRTqRJsr1ss)
+	* [Successful Infosec Consulting 101 - Ted Demopoulos](https://www.sans.org/webcasts/successful-infosec-consulting-101-111885)
+	* [Successful Infosec Consulting: Lessons from Three Decades in The Field - Ted Demopoulos](https://www.sans.org/webcasts/successful-infosec-consulting-lessons-decades-field-111890)
 * **Difficult Conversations**<a name="difficult"></a>
 	* [Our 6 Must Reads for Cutting Through Conflict and Tough Conversations - firstround.com](https://firstround.com/review/our-6-must-reads-for-cutting-through-conflict-and-tough-conversations/)
 	* [7 Tips for Difficult Conversations - Daisy Wademan Dowling(HBR)](https://hbr.org/2009/03/7-tips-for-difficult-conversat)
@@ -190,6 +194,7 @@
 	* [The worst morale boosting gesture I've experienced - Terence Eden](https://shkspr.mobi/blog/2019/06/the-worst-morale-boosting-gesture-ive-experienced/)
 	* [How to Identify an Immoral Maze - thezvi](https://thezvi.wordpress.com/2020/01/12/how-to-identify-an-immoral-maze/)
 	* [How Software Groups Rot: Legacy of the Expert Beginner - Erik Dietrich](https://daedtech.com/how-software-groups-rot-legacy-of-the-expert-beginner/)
+	* [Moral Mazes: Bureaucracy and Managerial Work - Robert Jackall](https://hbr.org/1983/09/moral-mazes-bureaucracy-and-managerial-work)
 * **Hiring**<a name="hiring"></a>
 	* [What I Learned Doing 250 Interviews at Google - Moishe Lettvin](https://www.youtube.com/watch?v=r8RxkpUvxK0)
 	* [F*** You, I Quit — Hiring Is Broken - Sahat Yalkabov](https://medium.com/@evnowandforever/f-you-i-quit-hiring-is-broken-bb8f3a48d324)
@@ -254,7 +259,11 @@
 	* [How Not to Bomb Your Offer Negotiation - Haseeb Qureshi](https://haseebq.com/farewell-app-academy-hello-airbnb-part-i/)
 	* [Deploying Guerrilla Tactics to Combat Stupid Tech Interviews - Erik Dietrch](https://daedtech.com/deploying-guerrilla-tactics-combat-stupid-tech-interviews/)
 	* [Security_Engineer_Interview_Questions - Tad Whitaker](https://github.com/tadwhitaker/Security_Engineer_Interview_Questions/blob/master/security-interview-questions)
+	* [Preparing the SRE interview - balthazar-rouberol](https://blog.balthazar-rouberol.com/preparing-the-sre-interview)
+	* [what-happens-when](https://github.com/alex/what-happens-when)
+		* An attempt to answer the age old interview question "What happens when you type google.com into your browser and press enter?"
 * **Interviewing**<a name="interviewing"></a>
+	* [STAR Method Technique Interview Questions & Answers - Christian Eilers](https://zety.com/blog/star-method-interview)
 	* [What I Learned Doing 250 Interviews at Google - Moishe Lettvin](https://www.youtube.com/watch?v=r8RxkpUvxK0)
 	* [Raising the Bar - The Unconventional Interview Method That Really Works - socialtalent](https://www.socialtalent.com/blog/recruitment/raising-the-bar-unconventional-interview-method-really-works)
 	* [The Trouble With "Culture Fit" - Rich Moy](https://www.stackoverflowbusiness.com/blog/the-trouble-with-culture-fit)
@@ -263,6 +272,8 @@
 	* [What I Learned From Conducting 500 Technical Interviews, Pt. 1: The Interviewer Skills Ladder - Alex Allain](https://www.holloway.com/s/trh-what-i-learned-from-conducting-500-technical-interviews-part-1)
 	* [After a lot more data, technical interview performance really is kind of arbitrary. - Aline Lerner](http://blog.interviewing.io/after-a-lot-more-data-technical-interview-performance-really-is-kind-of-arbitrary/)
 	* [The Joel Test: 12 Steps to Better Code - Joel Spolsky](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
+	* [The Rands Test - RandsinRepose](https://randsinrepose.com/archives/the-rands-test/)
+		* It’s hard to pick a single best work by Joel Spolsky, but if I was forced to, I’d pick The Joel Test. It’s his own, highly irresponsible, sloppy test to rate the quality of software, and when anyone asks me what is wrong with their team I usually start by pointing the questioner at the test. Start here.  It’s a test with 12 points and as Joel says, “A score of 12 is perfect, 11 is tolerable, but a 10 or lower and you’ve got serious problems”. More important than the points, his test clearly documents what I consider to be healthy aspects of an engineering team, but there are other points to be made. So it is completely an homage to Joel that I offer The Rands Test.
 	* [Get that job at Google - Steve Yegge(2008)](https://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html)
 		* Sharing for context.
 	* [Reverse interview](https://github.com/viraptor/reverse-interview)
@@ -362,6 +373,9 @@
 * **Presenting**
 	* [Presentation and Social Media tips with SheHacksPurple](https://www.youtube.com/watch?v=wDHliJ2qH_c)
 	* [More Tips for Social Media and Presenting - SheHacksPurple](https://medium.com/@shehackspurple/more-tips-for-social-media-and-presenting-a887062eda57)
+	* [How to Look and Sound Confident During a Presentation - Carmine Gallo](https://hbr.org/2019/10/how-to-look-and-sound-confident-during-a-presentation)
+	* [Make your PowerPoint presentations accessible to people with disabilities - support.office.com](https://support.office.com/en-us/article/make-your-powerpoint-presentations-accessible-to-people-with-disabilities-6f7772b2-2f33-4bd2-8ca7-dae3b2b3ef25)
+		* This topic gives you step-by-step instructions to make your PowerPoint presentations accessible to people with disabilities.
 * **Post-Mortems**<a name="postmort"></a>
 	* [A List of Post-mortems! - Dan Luu](https://github.com/danluu/post-mortems)
 * **Project Management**<a name="projm"></a>
@@ -412,6 +426,8 @@
 	* **Ageism in Tech**
 		* [REID v. GOOGLE INC - findlaw](https://caselaw.findlaw.com/ca-supreme-court/1534156.html)
 		* [The Apple engineer who moved Mac to Intel applied to work at the Genius Bar in an Apple store and was rejected - BuisinessInsider](https://www.businessinsider.com/jk-scheinberg-apple-engineer-rejected-job-apple-store-genius-bar-2016-9)
+	* **History**
+		* [If I Told You I’d Have to Kill You: The Story Behind “The Secret History of Silicon Valley” - Steve Blank](https://steveblank.com/2009/03/23/if-i-told-you-i%e2%80%99d-have-to-kill-you-the-story-behind-the-secret-history-of-silicon-valley/)
 	* **Shady things**
 		* [Google Forfeits $500 Million Generated by Online Ads & Prescription Drug Sales by Canadian Online Pharmacies - US Department of Justice(2011)](https://www.justice.gov/opa/pr/google-forfeits-500-million-generated-online-ads-prescription-drug-sales-canadian-online)
 		* [How Google Protected Andy Rubin, the ‘Father of Android’ - Daisuke Wakabayashi and Katie Benner(NYT)](https://www.nytimes.com/2018/10/25/technology/google-sexual-harassment-andy-rubin.html)
@@ -420,6 +436,7 @@
 		* [Three Years of Misery Inside Google, the Happiest Company in Tech - Nitasha Tiku](https://www.wired.com/story/inside-google-three-years-misery-happiest-company-tech/)
 		* [When Elon Musk Tried to Destroy a Tesla Whistleblower - Matt Robinson, Zeke Faux](https://www.bloomberg.com/news/features/2019-03-13/when-elon-musk-tried-to-destroy-tesla-whistleblower-martin-tripp)
 		* [Uber Criminal Probe Shines Light on Vanishing Message System - Joel Rosenblatt](https://www.bloomberg.com/news/articles/2017-11-28/waymo-trial-delayed-again-with-sharp-words-for-uber-from-judge)
+		* [Inside The Culture Of Sexism At Riot Games - Cecilia D'Anastasio](https://kotaku.com/inside-the-culture-of-sexism-at-riot-games-1828165483)
 	* **Stack Ranking**
 		* [Vitality curve - Wikipedia](https://en.wikipedia.org/wiki/Vitality_curve)
 		* [How stack ranking corrupts culture, at Uber and Beyond - Rob Davies(Perdoo)](https://www.perdoo.com/blog/stack-ranking/)

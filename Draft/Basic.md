@@ -3,32 +3,51 @@
 ----------------------------------
 ## Table of Contents
 - [101](#101)
-- [How to Suck at InfoSec](#suck)
-- [Getting Started with InfoSec](#getstart)
+- [Classes/Types of Vulnerabilities](#vulnerabilityclass)
+- [How to suck at infosec](#suck)
+- [Getting started with infosec](#getstart)
 - [Being the First Security Person](#fps)
-- [Careers in Information Security](#careers)
-	- [Educational](#ced)
-- [Cognitive Bias](#cbias)
-- [Critical Thinking](#critthink)
+- [Cognitive Biases](#bias)
+- [Critical Thinking](#crittihnk)
 - [Common Vulnerability Scoring System](#cvss)
+- [Data Breaches](#db)
 - [Fundamental Papers](#fund)
+- [General Good Stuff](#)
 - [Helping Others](#helpo)
-- [Asking Better Questions](#bq)
+- [History](#history)
+- [How to ask better questions](#bq)
 - [Learning](#learning)
 - [Normalization of Deviance](#nom)
 - [Problem Solving](#ps)
 - [Regular Expressions](#rex)
 - [Research](#research)
-- [Fun](#Fun)
+- [Risk](#risk)
+- [Securing yourself](#secself)
+- [Task Automation](#automation)
+- [The Web](#web)
 
 * To Do:
 	* Add 'Day 0' Stuff - First member of the security team
 	* [Chart.xkcd](https://github.com/timqian/chart.xkcd)
 		* Chart.xkcd is a chart library that plots “sketchy”, “cartoony” or “hand-drawn” styled charts.
 
+https://github.com/donnemartin/system-design-primer
+* [RFC 3552: Guidelines for Writing RFC Text on Security Considerations](https://tools.ietf.org/html/rfc3552)
+https://github.com/pomerium/awesome-zero-trust
+https://securethelogs.com/2019/06/25/exploring-the-zero-trust-model/
+https://www.youtube.com/watch?v=-jNkjuWMFrk
 
+* **Software Testing**
+	* [When to Test and How to Test It - Bruce Potter - Derbycon7](https://www.youtube.com/watch?v=Ej97WyEMRkI)
+		* “I think we need a penetration test” This is one of the most misunderstood phrases in the security community. It can mean anything from “Someone should run a vulnerability scan against a box” to “I’d like nation-state capable actors to tell me everything that wrong with my enterprise” and everything in between. Security testing is a complex subject and it can be hard to understand what the best type of testing is for a given situation. This talk will examine the breadth of software security testing. From early phase unit and abuse testing to late phase penetration testing, this talk will provide details on the different tests that can be performed, what to expect from the testing, and how to select the right tests for your situation. Test coverage, work effort, attack simulation, and reporting results will be discussed. Also, this talk will provide a process for detailed product assessments, i.e.: if you’ve got a specific product you’re trying to break, how do you approach assessing the product in a way that maximizes your chance of breaking in as well as maximizing the coverage you will get from your testing activity.
 
-
+* https://medium.com/starting-up-security/measuring-a-red-team-or-penetration-test-44ea373e5089
+* https://medium.com/starting-up-security/killing-chicken-little-measure-and-eliminate-risk-through-forecasting-ecdf4c7e9575
+* https://medium.com/starting-up-security
+* https://www.yash.com/blog/red-team-assessment-and-penetration-testing/
+* https://www.redteamsecure.com/businesses-beware-of-security-reporting-mills/
+* https://tbgsecurity.com/pen-tests-and-red-teams-are-not-the-same/
+* https://www.gartner.com/doc/3801866/select-penetration-testing-provider
 
 
 -------------------------

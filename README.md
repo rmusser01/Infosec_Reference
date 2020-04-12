@@ -17,7 +17,7 @@ An Information Security Reference That Doesn't Suck
 	* I do this as a resource for myself\(to teach myself & others from\) and offer it publicly as a way of giving back to the general community.
 	* To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel help build someone's skillset or increase understanding of attacks/methods/defenses. This is not meant to condone illegal or malicious activities.
 * **This page**
-	* This page isn't ~~terrible~~ the best on mobile. Use [https://docs.rmusser.ne](https://rmusser.net/docs)t for better mobile formatting.
+	* This page isn't ~~terrible~~ the best on mobile. Use [https://rmusser.net/docs](https://rmusser.net/docs)t for better mobile formatting.
 	* For latest content updates, check the git history.
 	* Contributions are encouraged/appreciated.
 	* If this resource has helped you in any way, please consider making a donation to [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm) or [Amnesty International](https://www.amnesty.org/en/donate/). 

@@ -211,6 +211,9 @@ https://support.office.com/en-us/article/remove-hidden-data-and-personal-informa
 				* Paid web archiving tool
 			* [zotero.org](https://www.zotero.org/)
 				* Research Collection/Organization Tool
+		* **Search Engine**
+			* [shodan.io](https://www.shodan.io/)
+				* Description: DescriptionShodan is a search engine that lets the user find specific types of computers connected to the internet using a variety of filters.		
 * **Company/People Searching** <a name="ppl"></a>
 	* [data.com](https://www.data.com/)
 	* [LittleSis](https://littlesis.org/)

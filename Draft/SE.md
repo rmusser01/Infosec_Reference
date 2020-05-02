@@ -30,7 +30,7 @@
 	* [Toastmaster's guide to body language](http://westsidetoastmasters.com/resources/book_of_body_language/toc.html)
 	* Miss Manners Guide to Excellent Manners
 	* [Influence: Science and Practice](https://en.wikipedia.org/wiki/Influence:_Science_and_Practice)
-	* Art of Deception
+	* [Art of Deception](https://repo.zenk-security.com/Magazine%20E-book/Kevin_Mitnick_-_The_Art_of_Deception.pdf)
 	* Social Engineering: Art of Human Hacking
 	* Anything by Paul Eckman and his research
 	* What Every Body is saying
@@ -40,15 +40,15 @@
 	* Thank You For Arguing, Revised and Updated Edition: What Aristotle, Lincoln, And Homer Simpson Can Teach Us About the Art of Persuasion
 	* [The Amy Vanderbilt Complete Book of Etiquette](https://www.archive.org/stream/amyvanderbiltsco00vandrich/amyvanderbiltsco00vandrich_djvu.txt)
 	* Propaganda by Edward Bernays
-	* Art of War by Sun Tzu
+	* [Art of War by Sun Tzu](https://sites.ualberta.ca/~enoch/Readings/The_Art_Of_War.pdf)
 	* Language Intelligence: Lessons on persuasion from Jesus, Shakespeare, Lincoln, and Lady Gaga
-	* The Prince by Machiavelli
-	* The Definitive Book of Body Language - Barbara pease
+	* [The Prince by Machiavelli](https://www.planetebook.com/free-ebooks/the-prince.pdf)
+	* [The Definitive Book of Body Language - Barbara pease](https://e-edu.nbu.bg/pluginfile.php/331752/mod_resource/content/0/Allan_and_Barbara_Pease_-_Body_Language_The_Definitive_Book.pdf)
 	* 48 Laws of Power
 	* Thinking Fast and Slow
 	* Unmasking the Social Engineer: The Human Element of Security
-	* Emotions Revealed, Second Edition: Recognizing Faces and Feelings to Improve Communication and Emotional Life
-	* Influence Without Authority
+	* [Emotions Revealed, Second Edition: Recognizing Faces and Feelings to Improve Communication and Emotional Life](https://zscalarts.files.wordpress.com/2014/01/emotions-revealed-by-paul-ekman1.pdf)
+	* [Influence Without Authority](https://dongengbudaya.files.wordpress.com/2014/05/1472.pdf)
 * **Talks & Presentations**
 	* **Voice Phishing/Pretexting**
 		* [Make Vishing Suck Less - Jonathan Stines(Layer8 2018)](https://www.youtube.com/watch?v=4DphohJvnx8&index=5&list=UUynWOUeHAOflEQtJnrZpkNA)

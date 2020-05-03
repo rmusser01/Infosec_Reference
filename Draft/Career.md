@@ -32,10 +32,10 @@
 - [Post-Mortems](#postmort)
 - [Project Management](#projm)
 - [Resume](#resume)
+- [Strategy](#strategy)
 - [Testing](#testing)
 - [Other](#other)
 - [Industry](#industry)
-
 
 
 
@@ -59,6 +59,8 @@
 		* What is a Hacker Convention & who deserves to be called a Hacker (Plus other uncomfortable discussions with Jayson)
 	* [Real Software Engineering by Glenn Vanderburg(Lone Star Ruby Conference(2010)](https://www.youtube.com/watch?v=NP9AIUT9nos&feature=youtu.be)
 		* Software engineering as it's taught in universities simply doesn't work. It doesn't produce software systems of high quality, and it doesn't produce them for low cost. Sometimes, even when practiced rigorously, it doesn't produce systems at all.  That's odd, because in every other field, the term "engineering" is reserved for methods that work.  What then, does real software engineering look like? How can we consistently deliver high-quality systems to our customers and employers in a timely fashion and for a reasonable cost? In this session, we'll discuss where software engineering went wrong, and build the case that disciplined Agile methods, far from being "anti-engineering" (as they are often described), actually represent the best of engineering principles applied to the task of software development.
+	* [The Rise of the Meritocracy - Wikipedia](https://en.wikipedia.org/wiki/The_Rise_of_the_Meritocracy)
+		* [...] a book by British sociologist and politician Michael Dunlop Young which was first published in 1958. It describes a dystopian society in a future United Kingdom in which intelligence and merit have become the central tenet of society, replacing previous divisions of social class and creating a society stratified between a merited power-holding elite and a disenfranchised underclass of the less merited. The essay satirised the Tripartite System of education that was being practised at the time.
 * **Business**<a name="business"></a>
 	* [When Everything That Counts Can’t Be Counted - Joshua M. Brown](https://thereformedbroker.com/2019/06/13/when-everything-that-counts-cant-be-counted/)
 	* [The Trillion-Dollar Vision of Dee Hock - Mitchell Waldrop(FastCompany)](https://www.fastcompany.com/27333/trillion-dollar-vision-dee-hock)
@@ -66,23 +68,31 @@
 	* [How Complex Systems Fail - Richard I. Cook](http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf)
 	* [Big companies v. startups - Dan Luu](https://danluu.com/startup-tradeoffs/)
 	* [The Innovation Equation - Safi Bahcall](https://hbr.org/2019/03/the-innovation-equation)
+	* [The story of Totlol](https://web.archive.org/web/20100113220844/http://www.totlol.com/t/story)
+		* Example/reminder of why you don't build your product on someone else's API.
 * **Career Growth/Progression**<a name="growth"></a>
-	* [How Developers Stop Learning: Rise of the Expert Beginner - Erik Dietrich](https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/)
-	* [Your Job Title of Tomorrow: Efficiencer - Erik Dietrich](https://daedtech.com/your-job-title-of-tomorrow-efficiencer/)
-	* [Things I Learnt The Hard Way (in 30 Years of Software Development) - juliobiason.net](https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/)
-	* [Recommended Reading for Developers(2015) - blog.codinghorror.com]
-	* [Research Debt - Chris Olah, Shan Carter](https://distill.pub/2017/research-debt/)
-	* [A day at the park - mused](http://kiriakakis.net/comics/mused/a-day-at-the-park)
-	* [The Asshole Filter - Siderea](https://siderea.livejournal.com/1230660.html)
-	* [Hacking a Security Career - Deviant Ollam(WWHF19)](https://www.youtube.com/watch?v=jZFuCYyQB6c&list=PLXF21PFPPXTNXEgkUEBbRgvraxWP3c4Hr&index=2)
-	* [Accelerate Your Career By Building FIVE Critical Professional Skills - Ted Demopoulos](https://www.sans.org/webcasts/accelerate-career-building-critical-professional-skills-112310/success)
-	* [Continuous Skills Improvement For Everyone - Matt Scheurer(OISF19)](http://www.irongeek.com/i.php?page=videos/oisf2019/oisf-2019-03-continuous-skills-improvement-for-everyone-matt-scheurer)
+	* **101**
+		* [Recommended Reading for Developers(2015) - blog.codinghorror.com](https://blog.codinghorror.com/recommended-reading-for-developers/)
+		* [Your Job Title of Tomorrow: Efficiencer - Erik Dietrich](https://daedtech.com/your-job-title-of-tomorrow-efficiencer/)
+		* [Research Debt - Chris Olah, Shan Carter](https://distill.pub/2017/research-debt/)
+	* **Articles/Blogposts/Writeups**
+		* [How Developers Stop Learning: Rise of the Expert Beginner - Erik Dietrich](https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/)
+		* [Things I Learnt The Hard Way (in 30 Years of Software Development) - juliobiason.net](https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/)
+		* [A day at the park - mused](http://kiriakakis.net/comics/mused/a-day-at-the-park)
+		* [The Asshole Filter - Siderea](https://siderea.livejournal.com/1230660.html)
+	* **Talks/Presentations/Videos**
+		* [Hacking a Security Career - Deviant Ollam(WWHF19)](https://www.youtube.com/watch?v=jZFuCYyQB6c&list=PLXF21PFPPXTNXEgkUEBbRgvraxWP3c4Hr&index=2)
+		* [Accelerate Your Career By Building FIVE Critical Professional Skills - Ted Demopoulos](https://www.sans.org/webcasts/accelerate-career-building-critical-professional-skills-112310/success)
+		* [Continuous Skills Improvement For Everyone - Matt Scheurer(OISF19)](http://www.irongeek.com/i.php?page=videos/oisf2019/oisf-2019-03-continuous-skills-improvement-for-everyone-matt-scheurer)
+	* **Tools**
+		* [InfoSec Skills Matrix](https://infosecskillsmatrix.com/rolesskills)
 * **Careers in Information Security**<a name="infosec-careers"></a>
-	* [NICE Cybersecurity Workforce Framework - NICCS.us-cert.gov](https://niccs.us-cert.gov/workforce-development/cyber-security-workforce-framework)
-	* [Q: Why Do Keynote Speakers Keep Suggesting That Improving Security Is Possible? A: Because Keynote Speakers Make Bad Life Decisions and Are Poor Role Models](https://www.usenix.org/conference/usenixsecurity18/presentation/mickens)
-		* Some people enter the technology industry to build newer, more exciting kinds of technology as quickly as possible. My keynote will savage these people and will burn important professional bridges, likely forcing me to join a monastery or another penance-focused organization. In my keynote, I will explain why the proliferation of ubiquitous technology is good in the same sense that ubiquitous Venus weather would be good, i.e., not good at all. Using case studies involving machine learning and other hastily-executed figments of Silicon Valley’s imagination, I will explain why computer security (and larger notions of ethical computing) are difficult to achieve if developers insist on literally not questioning anything that they do since even brief introspection would reduce the frequency of git commits. At some point, my microphone will be cut off, possibly by hotel management, but possibly by myself, because microphones are technology and we need to reclaim the stark purity that emerges from amplifying our voices using rams’ horns and sheets of papyrus rolled into cone shapes. I will explain why papyrus cones are not vulnerable to buffer overflow attacks, and then I will conclude by observing that my new start-up papyr.us is looking for talented full-stack developers who are comfortable executing computational tasks on an abacus or several nearby sticks.
-	* [How to Start in InfoSec - Mubix](https://gist.github.com/mubix/5737a066c8845d25721ec4bf3139fd31)
-	* ["Firemen vs Safety Matches" - Amélie Koran(ShmooCon XV 2019)](https://www.youtube.com/watch?v=_pej1oHN-pE)
+	* **101/General**
+		* [NICE Cybersecurity Workforce Framework - NICCS.us-cert.gov](https://niccs.us-cert.gov/workforce-development/cyber-security-workforce-framework)
+		* [Q: Why Do Keynote Speakers Keep Suggesting That Improving Security Is Possible? A: Because Keynote Speakers Make Bad Life Decisions and Are Poor Role Models](https://www.usenix.org/conference/usenixsecurity18/presentation/mickens)
+			* Some people enter the technology industry to build newer, more exciting kinds of technology as quickly as possible. My keynote will savage these people and will burn important professional bridges, likely forcing me to join a monastery or another penance-focused organization. In my keynote, I will explain why the proliferation of ubiquitous technology is good in the same sense that ubiquitous Venus weather would be good, i.e., not good at all. Using case studies involving machine learning and other hastily-executed figments of Silicon Valley’s imagination, I will explain why computer security (and larger notions of ethical computing) are difficult to achieve if developers insist on literally not questioning anything that they do since even brief introspection would reduce the frequency of git commits. At some point, my microphone will be cut off, possibly by hotel management, but possibly by myself, because microphones are technology and we need to reclaim the stark purity that emerges from amplifying our voices using rams’ horns and sheets of papyrus rolled into cone shapes. I will explain why papyrus cones are not vulnerable to buffer overflow attacks, and then I will conclude by observing that my new start-up papyr.us is looking for talented full-stack developers who are comfortable executing computational tasks on an abacus or several nearby sticks.
+		* [How to Start in InfoSec - Mubix](https://gist.github.com/mubix/5737a066c8845d25721ec4bf3139fd31)
+		* ["Firemen vs Safety Matches" - Amélie Koran(ShmooCon XV 2019)](https://www.youtube.com/watch?v=_pej1oHN-pE)
 	* **Educational/Informational**
 		* [Navigating Career Choices in InfoSec - Fernando Montenegro - BSides Detroit2017](https://www.youtube.com/watch?v=yM2xCjrQSY4)
 			* Making career choices can be intimidating and stressful. Perhaps this presentation can help. The tidal forces affecting technology impact our careers as well. If we're not actively managing them, we're leaving decisions to chance (or to others), and may not like the outcomes. This presentation describes a framework I've used over the past few years to evaluate both ongoing job satisfaction as well as new opportunities as they appear. I'm happy with the outcomes I've obtained with it, and have used this same framework when providing advice to others, and it has been well received. Hopefully it can help others as well.
@@ -92,6 +102,7 @@
 		* [How to Get Any Job You Want (even if you’re unqualified) - Raghav Haran](https://medium.com/the-mission/how-to-get-any-job-you-want-even-if-you-re-unqualified-6f49a65f5491)
 		* [Getting Hired: A Few Tips - Mubix](https://malicious.link/post/2018/getting-hired-a-few-tips/)
 		* [Day-1 Skills That Cybersecurity Hiring Managers Are Looking For - Daniel Messler](https://danielmiessler.com/blog/day-1-skills-required-to-land-an-entry-level-cybersecurity-job/)
+		* [What is the difference amongst a TPM, PM, and EM in a technology company? How do they typically work together? - Quora](https://www.quora.com/What-is-the-difference-amongst-a-TPM-PM-and-EM-in-a-technology-company-How-do-they-typically-work-together)
 	* **Interview Preparation**
 		* [How to prepare for an infosec interview - Timothy DeBlock](http://www.timothydeblock.com/eis/135)
 	* **Relevant Standards**
@@ -173,6 +184,8 @@
 	* [How I Made $100,000 in a Month - TheCyberMentor](https://www.youtube.com/watch?v=dRTqRJsr1ss)
 	* [Successful Infosec Consulting 101 - Ted Demopoulos](https://www.sans.org/webcasts/successful-infosec-consulting-101-111885)
 	* [Successful Infosec Consulting: Lessons from Three Decades in The Field - Ted Demopoulos](https://www.sans.org/webcasts/successful-infosec-consulting-lessons-decades-field-111890)
+	* [Managing Client Relationships as an Investment Banker, Lawyer or Consultant - Jim Donovan(2015)](https://www.youtube.com/watch?v=z8kqCIxXTEw)
+		* Goldman Sachs managing director and Law School adjunct professor Jim Donovan shares his insights on the skills necessary to manage and cultivate client relationships. Donovan is responsible for advising many of the largest corporate and individual clients of Goldman Sachs. (University of Virginia School of Law, Nov. 6, 2015)
 * **Difficult Conversations**<a name="difficult"></a>
 	* [Our 6 Must Reads for Cutting Through Conflict and Tough Conversations - firstround.com](https://firstround.com/review/our-6-must-reads-for-cutting-through-conflict-and-tough-conversations/)
 	* [7 Tips for Difficult Conversations - Daisy Wademan Dowling(HBR)](https://hbr.org/2009/03/7-tips-for-difficult-conversat)
@@ -215,6 +228,8 @@
 	* [How to Write a Statement of Work - Mary K Pratt](https://www.computerworld.com/article/2555324/how-to-write-a-statement-of-work.html)
 	* [Entrepreneurship for hackers - snyff(Christchurch CON 2019)](https://www.slideshare.net/snyff/entrepreneurship-for-hackers)
 	* [How to build your own Infosec Company - Mario Heiderich(nullcon Goa 2019)](https://www.youtube.com/watch?v=N2JG7qIlpi0)
+	* [The SOC2 Starting Seven - Latacora Blog](https://latacora.micro.blog/2020/03/12/the-soc-starting.html)
+		* Sage advice about SOC2 from Latacora.
 * **Informal Laws & Principles(and other things)**<a name="laws"></a>
 	* [The Gervais Principle - RibbonFarm](https://www.ribbonfarm.com/the-gervais-principle/)
 	* [Peter Principle - Wikipedia](https://en.wikipedia.org/wiki/Peter_principle)
@@ -407,6 +422,16 @@
 	* [Impossible is Nothing - Resume](https://en.m.wikipedia.org/wiki/Impossible_Is_Nothing_(video_r%C3%A9sum%C3%A9))
 * **Social Skills**
 	* [Basic Guide to Social Skills](https://www.improveyoursocialskills.com/basic-social-skills-guide)
+* **Strategy**
+	* **101**
+	* **Books**
+		* Good Strategy/Bad Strategy
+		* Playing to Win
+	* **Articles/Blogposts/Writeups**
+		* [Playing to Win: How Strategy Really Works - farnamstreet](https://fs.blog/2013/03/playing-to-win-how-strategy-really-works/)
+	* **Talks/Presentations/Videos**
+		* [Good Strategy/Bad Strategy: the difference and why it matters - Prof. Richard Rumelt(LSE Events)(2011)](https://www.youtube.com/watch?v=UZrTl16hZdk)
+			* Developing and implementing a strategy is the central task of any leader. Richard Rumelt shows that there has been a growing and unfortunate tendency to equate motherhood and apple-pie values and fluffy packages of buzzwords with "strategy."
 * **Testing(Certifications/Exams)**<a name="testing"></a>
 	* [Better GIAC Testing with Pancakes - H4cks4panckakes](https://tisiphone.net/2015/08/18/giac-testing/)
 	* [Self-Study SANS SEC503 GCIA - Gary Hoffman](https://www.linkedin.com/pulse/self-study-sans-sec503-gcia-gary-hoffman/)

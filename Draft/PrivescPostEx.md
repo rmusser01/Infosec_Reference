@@ -103,6 +103,7 @@
 
 
 ------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ## <a name="privesc"></a>Privilege Escalation 
 
 ---------------
@@ -363,7 +364,6 @@
 		* [A Critique of Logging Capabilities in PowerShell v6](http://www.labofapenetrationtester.com/2018/01/powershell6.html)
 			* Introduces 'PowerShell Upgrade Attack'
 		* [Bypass for PowerShell ScriptBlock Warning Logging of Suspicious Commands - cobbr.io](https://cobbr.io/ScriptBlock-Warning-Event-Logging-Bypass.html)
-		* [PowerShell ScriptBlock Logging Bypass - cobbr.io](https://cobbr.io/ScriptBlock-Logging-Bypass.html)
 * **Frameworks**
 	* Empire -> See rt.md
 	* Powersploit
@@ -958,12 +958,22 @@
 	* **General**
 		* [Weaponizing a Lazarus Group Implant - Patrick Wardle(2020)](https://objective-see.com/blog/blog_0x54.html)
 			* repurposing a 1st-stage loader, to execute custom 'fileless' payloads
-	* **AppleScript**
+	* **AppleScript**<a name="osxa"></a>
 		* **101**
+			* [AppleScript Language Guide - developer.apple](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/introduction/ASLR_intro.html#//apple_ref/doc/uid/TP40000983-CH208-SW1)
 			* [AppleScript Fundamentals - developer.apple](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptLangGuide/conceptual/ASLR_fundamentals.html)
+				* Section from the Language Guide
+			* [AppleScript - William R. Cook(2006)](https://www.cs.utexas.edu/users/wcook/Drafts/2006/ashopl.pdf)
+			* [Scripting with AppleScript - developer.apple](https://developer.apple.com/library/archive/documentation/AppleScript/Conceptual/AppleScriptX/Concepts/work_with_as.html#//apple_ref/doc/uid/TP40001568)
+				* The following is a brief introduction to AppleScript scripts, tools for working with them, and information on using AppleScript scripts together with other scripting systems. For related documents, see the learning paths in Getting Started with AppleScript.
+			* [AppleScript: The Definitive Guide, 2nd Edition - Matt Neuburg](http://books.gigatux.nl/mirror/applescriptdefinitiveguide/toc.html)
 		* **Articles/Blogposts/Writeups**
+			* [macOS Red Team: Spoofing Privileged Helpers (and Others) to Gain Root - Phil Stokes](https://www.sentinelone.com/blog/macos-red-team-spoofing-privileged-helpers-and-others-to-gain-root/)
 			* [macOS Red Team: Calling Apple APIs Without Building Binaries - Phil Stokes](https://www.sentinelone.com/blog/macos-red-team-calling-apple-apis-without-building-binaries/)
 			* [Launch Scripts from Webpage Links - macosxautomation.com](https://www.macosxautomation.com/applescript/linktrigger/)
+			* [Using NSAppleScript - appscript.sourceforge](http://appscript.sourceforge.net/nsapplescript.html)
+			* [hello, applescript 2: user in, user out - philastokes(applehelpwriter.com)](https://applehelpwriter.com/2018/09/03/hello-applescript-2-user-in-user-out/)
+			* [hello, applescript 3: (don’t?) tell me to run - philastokes(appplehelpwriter)](https://applehelpwriter.com/2018/09/14/hello-applescript-3-dont-tell-me-to-run/)
 		* **Tools**
 	* **Command-Line Interface**
 		* **Articles/Blogposts/Writeups**
@@ -1121,6 +1131,10 @@
 	    		* [Slides](https://objectivebythesea.com/v2/talks/OBTS_v2_Keeley.pdf)
    			 	* Apple released System Integrity Protection/rootless with OS X El Capitan almost four years ago.The root account is still there, and many common pieces of software open the Mac up to simple root escalations - including common macOS management tools. How can we detect these vulnerabilities across our Mac fleets? What can root still be abused for in 2019?	
 	* **Plist Modification**
+	* **Privileged File Operations**
+		* **Articles/Blogposts/Writeups**
+		* **Talks/Presentations/Videos**
+			* [Job(s) Bless Us!Privileged Operations on macOS - Julia Vaschenko(OBTSv3.0)](https://objectivebythesea.com/v3/talks/OBTS_v3_jVashchenko.pdf)
 	* **Process Injection**
 		* **Articles/Blogposts/Writeups**
 			* [Privilege Escalation on OS X below 10.0](https://bugs.chromium.org/p/project-zero/issues/detail?id=121)
@@ -1186,6 +1200,8 @@
 		* [XProtect Explained: How Your Mac’s Built-in Anti-malware Software Works - Chris Hoffman(2015)](https://www.howtogeek.com/217043/xprotect-explained-how-your-macs-built-in-anti-malware-works/)
 		* [How the “antimalware” XProtect for MacOS works and why it detects poorly and badly - ElevenPaths(2019)](https://business.blogthinkbig.com/antimalware-xprotect-macos/)
 		* [How To Bypass XProtect on Catalina - Phil Stokes](https://www.sentinelone.com/blog/macos-malware-researchers-how-to-bypass-xprotect-on-catalina/)
+		* [XProtect](https://github.com/knightsc/XProtect)
+			* This repo contains historical releases of the XProtect configuration data.
 * **Credential Access**<a name="osxcredac"></a>
 	* **Cracking Password Hashes**
 		* **Articles/Blogposts/Writeups**
@@ -3875,6 +3891,7 @@
 		* [How to bypass AMSI and execute ANY malicious Powershell code - zc00l](https://0x00-0x00.github.io/research/2018/10/28/How-to-bypass-AMSI-and-Execute-ANY-malicious-powershell-code.html)
 	* **Bypass Talks**
 		* [Antimalware Scan Interface (AMSI) - Dave Kennedy(WWHF2018)](https://www.youtube.com/watch?v=wBK1fTg6xuU)
+			* This talk will dive into the Antimalware Scan Interface (AMSI) as well as other alternatives in the “NextGen” series of preventative measures and show how trivial it is to write code that doesn’t get snagged.  The security market is focusing on open source data collection sources and security researchers as the main method to write signatures to detect attacks, much like what we saw in the 90s with traditional anti-virus tech. Not much has changed, let’s dive into the reality in security and how little these protective measures really do in the grand scheme of things. We’ll also be covering solid practices in defending against attacks, and what we should be focusing on.
 		* [PSAmsi An offensive PowerShell module for interacting with the Anti Malware Scan Interface in Windows - Ryan Cobb(Derbycon7)](https://www.youtube.com/watch?v=rEFyalXfQWk)
 		* [The Rise and Fall of AMSI - Tal Liberman(BH Asia18)]https://i.blackhat.com/briefings/asia/2018/asia-18-Tal-Liberman-Documenting-the-Undocumented-The-Rise-and-Fall-of-AMSI.pdf)
 		* [Red Team TTPs Part 1: AMSI Evasion - paranoidninja](https://0xdarkvortex.dev/index.php/2019/07/17/red-team-ttps-part-1-amsi-evasion/)
@@ -4182,6 +4199,3 @@
 			* Using this tool you can inject x-code/shellcode into PE file. InjectPE works only with 32-bit executable files.
 		* [PowerLoaderEX](https://github.com/BreakingMalware/PowerLoaderEx)
 			* Advanced Code Injection Technique for x32 / x64
-
-
-### Sort

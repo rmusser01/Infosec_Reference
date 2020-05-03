@@ -89,6 +89,155 @@
 
 
 
+* Need to Add 
+    * WebDAV
+    * IPSEC Stuff
+    * NAT
+    * DNSSEC
+    * ICE
+    * NTLM things
+    * Captive portals
+    * BGP
+    * QUIC
+    * STUN
+    * Fax
+    * Packet sniffers
+    * memcache
+    * IP spoofing
+    * OCSP
+
+
+
+https://github.com/gquere/pwn_jenkins
+
+https://zwischenzugs.com/2018/06/08/anatomy-of-a-linux-dns-lookup-part-i/
+
+https://rootsh3ll.com/captive-portal-guide/
+
+UPNP
+    * https://www.vdoo.com/blog/security-issues-discovered-in-miniupnp/
+
+
+
+ZeroConf Networking
+
+https://research.checkpoint.com/pxe-dust-finding-a-vulnerability-in-windows-servers-deployment-services/
+
+Grpc
+    * [gRPC and Protocol Buffers: an Alternative to REST APIs and JSON - Andrew Connell](http://www.andrewconnell.com/blog/grpc-and-protocol-buffers-an-alternative-to-rest-apis-and-json)
+    * https://github.com/grpc-ecosystem/awesome-grpc
+    * [Building High Performance APIs In Go Using gRPC And Protocol Buffers - Shiju Varghese](https://medium.com/@shijuvar/building-high-performance-apis-in-go-using-grpc-and-protocol-buffers-2eda5b80771b)
+
+mDNS
+* [Multicast DNS - Wikipedia](https://en.wikipedia.org/wiki/Multicast_DNS)
+* [Name (mDNS) Poisoning Attacks Inside The LAN(2008)](https://www.gnucitizen.org/blog/name-mdns-poisoning-attacks-inside-the-lan/)
+* DNS Cache Poisoning
+    * [DNSTrust – 28 queries later: an example attack on .fr](https://web.archive.org/web/20090614054817/http://shinobi.dempsky.org/~matthew/dnstrust/example.html)
+* Script to examine: https://www.gnucitizen.org/files/2008/01/mdns.py 
+
+
+
+* [Cisco Smart Installs and Why They’re Not “Informational” - Jordan Drysdale](https://www.blackhillsinfosec.com/cisco-smart-installs-and-why-theyre-not-informational/)
+* [Smart Install Description - cisco.com](https://www.cisco.com/c/en/us/td/docs/switches/lan/smart_install/configuration/guide/smart_install/concepts.html)
+* [Action Required to Secure the Cisco IOS and IOS XE Smart Install Feature](https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180409-smi)
+
+https://github.com/Tib3rius/AutoRecon
+https://howdns.works/
+https://www.thomas-krenn.com/en/wiki/IPMI_Basics
+https://blog.preempt.com/security-advisory-critical-vulnerabilities-in-ntlm
+http://hackersgeeks.blogspot.com/2018/06/penetration-testing-on-x11-server.html
+https://zachgrace.com/training/x11/
+http://rageweb.info/2014/05/04/open-x11-server/
+https://github.com/tcstool/Fireaway
+https://github.com/s0md3v/Striker
+* [Post Exploitation: Striking Gold with Covert Recon - Derek Rook(WWHF19)](https://www.youtube.com/watch?v=04H1s9z0JDo)
+    * You're on a covert penetration test focusing on the client's monitoring and alerting capabilities. You've just established a foothold, maybe even elevated to admin, but now what? You want to know more about the internal network but careless packet slinging will get you caught. Join me on a mining expedition where you can't swing your pick axe without striking gold. We'll be mining logs, pilfering connection statistics, and claim jumping process network connections. Without leaving the comfort of your beachhead, you'll be shouting "Eureka!" in no time.
+https://github.com/L1ves/windows-pentesting-resources/blob/master/README.md
+* [LDAP Injection Cheat Sheet, Attack Examples & Protection - Checkmarx](https://www.checkmarx.com/knowledge/knowledgebase/LDAP)
+https://github.com/evyatarmeged/Raccoon
+https://github.com/unixrox/prebellico
+https://i.blackhat.com/USA-19/Wednesday/us-19-Tsai-Infiltrating-Corporate-Intranet-Like-NSA.pdf
+https://blog.cloudflare.com/rpki-and-the-rtr-protocol/
+https://techcommunity.microsoft.com/t5/itops-talk-blog/smb-over-quic-files-without-the-vpn/ba-p/1183449#
+https://labs.mwrinfosecurity.com/blog/routing-101/
+
+* [The Illustrated TLS Connection - @XargsNotBombs](https://tls.ulfheim.net/)
+https://docs.microsoft.com/en-us/windows/desktop/wmisdk/about-wmi
+https://www.dmtf.org/standards/redfish
+https://www.postscapes.com/internet-of-things-protocols/
+
+* [DHCP Discovery - Chris Dent](https://www.indented.co.uk/dhcp-discovery/)
+
+PXE
+https://github.com/wavestone-cdt/powerpxe
+https://blog.netspi.com/attacks-against-windows-pxe-boot-images/
+https://github.com/mattifestation/BCD
+
+* [DHCP Discovery - Chris Dent](https://www.indented.co.uk/dhcp-discovery/)
+    * A PowerShell script to send a DHCP Discover request and listen for DHCP Offer responses, it can be used for finding DHCP servers (including rogue servers), or for testing DHCP servers and relays. The output from this script is an object containing a decode of the DHCP packet and a number of options.
+
+https://www.synacktiv.com/posts/pentest/pentesting-cisco-sd-wan-part-1-attacking-vmanage.html
+* [Attacks Against Windows PXE Boot Images - Thomas Elling](https://blog.netspi.com/attacks-against-windows-pxe-boot-images/)
+* [DHCP Discovery](https://www.indented.co.uk/dhcp-discovery/)
+* [PowerPXE](https://github.com/wavestone-cdt/powerpxe)
+    * PowerPXE is a PowerShell script that extracts interesting data from insecure PXE boot.
+* [BCD](https://github.com/mattifestation/BCD)
+    * BCD is a module to interact with boot configuration data (BCD) either locally or remotely using the ROOT/WMI:Bcd* WMI classes. The functionality of the functions in this module mirror that of bcdedit.exe.
+
+
+* [WifiPhisher](https://github.com/wifiphisher/wifiphisher)
+    * Wifiphisher is a rogue Access Point framework for conducting red team engagements or Wi-Fi security testing. Using Wifiphisher, penetration testers can easily achieve a man-in-the-middle position against wireless clients by performing targeted Wi-Fi association attacks. Wifiphisher can be further used to mount victim-customized web phishing attacks against the connected clients in order to capture credentials (e.g. from third party login pages or WPA/WPA2 Pre-Shared Keys) or infect the victim stations with malwares.
+https://blog.preempt.com/security-advisory-targeting-ad-fs-with-external-brute-force-attacks
+https://blog.preempt.com/security-advisory-critical-vulnerabilities-in-ntlm
+* [Dilettante](https://github.com/mveytsman/dilettante)
+    * Maven central doesn't do SSL when serving you JARs. Dilettante is a MiTM proxy for exploiting that.
+* [Through the Looking Glass Own the Data Center - Chris McCoy(Defcon27 - RT Village)](https://www.youtube.com/watch?v=G-heFh4t-Pk&list=PL9fPq3eQfaaChXmQKpp1YO19Gw-6SxBDs&index=4)
+    * [Slides]()
+    * The data center embodies the heart of many businesses on the Internet. It contains much of the information in a centralized location which provides a huge incentive for those who would wish harm. The data centers in the realm of Cloud may no longer contain just a single entity, but many individual tenants that attach to a common fabric. The Cisco Application Centric Infrastructure (ACI) aims to meet these needs with a multi-tenant, scalable fabric that interconnects physical hosts, VMs and containers. ACI is Cisco's answer to the centrally-managed Software Defined Network (SDN). The Application Policy Infrastructure Controller (APIC) and Nexus 9000 series switches form the brains and backbone of ACI. A member of Cisco's Advanced Security Initiatives Group (ASIG) will demonstrate their findings during an evaluation of ACI and the APIC, more than three years before the BH2019 talk "APIC's Adventures in Wonderland." Step into the mind of an attacker and scan, probe, and interact with the network fabric to progress from an unauthenticated user to administrator and root of the data center switch fabric. Once inside the system, see how the APIC can be modified in a nearly undetectable manner to provide the attacker unfettered internal access to all the interconnected hosts and VMs in the data center. The target audience for this talk includes those with a technical interest in offensive discovery and secure product development. Participants will receive an overview of how a data center product is viewed in an offensive light.
+https://github.com/theMiddleBlue/nmap-elasticsearch-nse
+DNS
+    http://unixwiz.net/techtips/iguide-kaminsky-dns-vuln.html
+    https://developers.google.com/speed/public-dns/docs/security
+https://www.libtorrent.org/utp.html
+https://github.com/preempt/ntlm-scanner
+Newtorking
+Cloud Networking
+    * https://cloud.google.com/blog/products/gcp/google-shares-software-network-load-balancer-design-powering-gcp-networking
+    * https://atscaleconference.com/videos/networking-scale-2018-load-balancing-at-hyperscale/
+    * https://ai.googleblog.com/2015/08/pulling-back-curtain-on-googles-network.html
+    * https://www.youtube.com/watch?v=8gc2DgBqo9U
+    * https://www.youtube.com/watch?v=f45Uo5rw6YY
+    * https://www.youtube.com/watch?v=3qln2u1Vr2E
+https://github.com/Arno0x/TCPRelayInjecter
+
+https://community.turgensec.com/shodan-pentesting-guide/
+https://research.nccgroup.com/2020/03/04/a-survey-of-istios-network-security-features/
+https://jreppiks.github.io/pentest/wireless/bypass/2020/02/13/BypassingWirelessCaptivePortals.html
+https://www.irongeek.com/i.php?page=videos/bsidestampa2020/track-e-01-breaking-nbad-and-ueba-detection-charles-herring
+
+https://github.com/stufus/reconerator
+
+DNS over HTTPS
+    https://www.youtube.com/watch?v=fG5nQ5Bf_R8
+    https://dtm.uk/playing-with-dns-over-https/
+    https://github.com/SpiderLabs/DoHC2
+    https://github.com/Und3rf10w/external_c2_framework
+    https://sensepost.com/blog/2018/waiting-for-godoh/
+    * [goprox](https://github.com/3lpsy/goprox)
+
+* [chisel](https://github.com/jpillora/chisel)
+    * Chisel is a fast TCP tunnel, transported over HTTP, secured via SSH. Single executable including both client and server. Written in Go (golang). Chisel is mainly useful for passing through firewalls, though it can also be used to provide a secure endpoint into your network. Chisel is very similar to crowbar though achieves much higher performance.
+
+* [Introduction to mobile network intrusions from a mobile phone - Sébastien Dudek](https://medium.com/mobile-stacks-and-networks-security/introduction-to-mobile-network-intrusions-from-a-mobile-phone-9a8e909cc276)
+https://sensepost.com/blog/2018/a-new-look-at-null-sessions-and-user-enumeration/
+
+https://www.elastic.co/blog/using-nmap-logstash-to-gain-insight-into-your-network
+
+
+
+https://www.blackhillsinfosec.com/cisco-smart-installs-and-why-theyre-not-informational/
+
+
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 ### <a name="general"></a>General

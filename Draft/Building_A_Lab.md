@@ -180,6 +180,8 @@
 	* [Introducing the Active Directory Learning Lab - @jckhmr_t](https://github.com/jckhmr/adlab)
 		* I'm a big fan of automation with tools such as Ansible, Vagrant and Terrorm now being put to regular use by me. Also, as a Red Team Operator I spend a lot of time modelling attacks up, trying new ideas out and generally keeping myself 'sharp'. I wanted to create something that help me to scratch all of these itches. The research and development culminated in my [BSides Belfast 2019 presentation: Offensive Ansible for Red Teams (Attack, Build, Learn)](https://github.com/jckhmr/presentations/blob/master/BSidesBelfast2019_Final_Optimized.pptx?raw=true).
 	* [How to Build an Active Directory Hacking Lab - TheCyberMentor](https://www.youtube.com/watch?v=xftEuVQ7kY0)
+	* [PAW deployment guide - Jian Yan(2018)](https://blogs.technet.microsoft.com/datacentersecurity/2018/04/30/paw-deployment-guide/)
+		* This blogpost only focusses on one aspect, which is the PAW deployment, including the backend servers. 
 	* **AWS**
 		* [Active Directory Domain Services on the AWS Cloud: Quick Start Reference Deployment - docs.aws](https://docs.aws.amazon.com/quickstart/latest/active-directory-ds/welcome.html)
 		* [Active Directory Domain Services on AWS](https://aws.amazon.com/quickstart/architecture/active-directory-ds/)
@@ -247,8 +249,6 @@
 -------------------------
 ### <a name="defense"></a> Building a Defensive Lab
 * **Guides**
-	* [PAW deployment guide - Jian Yan(2018)](https://blogs.technet.microsoft.com/datacentersecurity/2018/04/30/paw-deployment-guide/)
-		* This blogpost only focusses on one aspect, which is the PAW deployment, including the backend servers. 
 * **Tools**
 * **In the Clouds**
 	* [Securing Azure Infrastructure - Hands on Lab Guide - Adam Raffle, Tom Wilde](https://github.com/Araffe/azure-security-lab)
@@ -271,6 +271,8 @@
 			* [Bad Dockerfile](https://github.com/ianmiell/bad-dockerfile)
 				* A Dockerfile that creates an image with known vulnerabilities.
 				* [Blogpost](https://www.stindustries.net/docker/bad-dockerfile/)
+
+
 	* **Kubernetes**
 		* **Tools**
 			* [Bust-a-Kube](https://www.bustakube.com/download)
@@ -286,7 +288,6 @@
 				* kind is a tool for running local Kubernetes clusters using Docker container “nodes”. kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.
 * **Elastic Search + Log Forwarder/Parser + Kibana**
 	* **101**
-		* [Elastic Stack and Product Documentation - elastic.co](https://www.elastic.co/guide/index.html)
 	* **Articles/Blogposts/Writeups**
 		* [Installing ELK 7 (Elasticsearch, Logstash and Kibana) – Windows Server 2016 (Part I) - Rob Willis(2019)](http://robwillis.info/2019/05/installing-elk-7-elasticsearch-logstash-and-kibana-windows-server-2016/)
 		* [Using the ELK Stack and Python in Penetration Testing Workflow - Adam Vanderbush](https://qbox.io/blog/elk-penetration-testing-workflow-elasticsearch-python?utm_source=qbox.io&utm_medium=article&utm_campaign=elk-penetration-testing-workflow-elasticsearch-python)
@@ -338,6 +339,7 @@
 			* This is the lab configuration for the Modern Windows Attacks and Defense class that Sean Metcalf (@pyrotek3) and I(Jared Haight) teach.
 		* [Self-Installing Windows OVA](https://github.com/brimstone/windows-ova)
 			* This is an Virtual Machine in OVA format that will install Windows ontop of itself. I wrote this as an alternative to packer. This OVA basically downloads the evaluation version of the Windows version you select to one drive as installation media and then installs onto the primary drive. After this is done, the smaller secondary drive can be discarded to save disk space.
+
 * **Sort**
 	* [Imaginary C2](https://github.com/felixweyne/imaginaryC2)
 		* A python tool which aims to help in the behavioral (network) analysis of malware. Imaginary C2 hosts a HTTP server which captures HTTP requests towards selectively chosen domains/IPs. Additionally, the tool aims to make it easy to replay captured Command-and-Control responses/served payloads.

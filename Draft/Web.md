@@ -117,6 +117,285 @@
 
 
 
+
+
+https://blog.wpsec.com/backdooring-wordpress-with-phpsploit/
+
+
+
+
+Buff up recon game
++massdns
+amass
+altdns
+
+
+https://github.com/initstring/uptux
+https://captmeelo.com/bugbounty/2019/09/02/asset-enumeration.html
+https://0xpatrik.com/subdomain-enumeration-2019/
+https://github.com/qazbnm456/awesome-web-security
+https://github.com/crawl3r/PortswiggerXSS
+https://speakerdeck.com/andresriancho/step-by-step-aws-cloud-hacking
+https://github.com/NotSoSecure/cloud-service-enum
+https://danderspritz.com/terms
+https://github.com/francisck/DanderSpritz_docs
+
+
+Sector.ca
+	https://sector.ca/sessions/car-hacking-on-simulation/
+	https://sector.ca/sessions/step-by-step-aws-cloud-hacking/
+	https://sector.ca/sessions/the-tools-of-a-web-app-pentester/
+	https://sector.ca/sessions/using-static-and-runtime-analysis-to-understand-third-party-applications/
+	https://sector.ca/sessions/visualizing-your-security-posture-from-link-to-gateway-and-beyond/
+	https://sector.ca/sessions/career-panel-and-career-fair-2019/
+	https://sector.ca/sessions/chip-fail-glitching-the-silicon-of-the-connected-world/
+	https://sector.ca/sessions/flair-fuzzy-similarity-framework/
+	https://sector.ca/sessions/major-pitfalls-to-avoid-in-performing-incident-response-in-aws/
+	https://sector.ca/sessions/poisoned-rdp-offense-and-defense/
+	https://sector.ca/sessions/powershell-is-dead-long-live-c/
+	https://sector.ca/sessions/oauth-everything-you-wanted-to-know-but-not-really/
+
+https://pentestlab.blog/2019/11/05/persistence-powershell-profile/
+
+Web
+* https://www.youtube.com/watch?v=vRqcUS4CPFs
+* https://www.youtube.com/watch?v=rSY-zqDfc_s
+* https://www.youtube.com/watch?v=gfh-VCTwMw8
+
+* [Exposing Intranets with reliable Browser-based Port scanning - Gareth Heyes](https://portswigger.net/blog/exposing-intranets-with-reliable-browser-based-port-scanning)
+ 	* In this blog post I describe how I created a port scanner using JavaScript.
+
+ * https://wunderwuzzi23.github.io/blog/passthecookie.html#CheatSheet
+* https://github.com/emtunc/SlackPirate
+https://blog.doyensec.com/2019/01/24/electronegativity.html
+
+WebService Workers
+	* https://alf.nu/ServiceWorker
+	* https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API
+	* https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-2_Papadopoulos_paper.pdf
+	* https://gist.github.com/Rich-Harris/fd6c3c73e6e707e312d7c5d7d0f3b2f9
+	* https://chromium.googlesource.com/chromium/src/+/master/docs/security/service-worker-security-faq.md
+
+https://portswigger.net/web-security/sql-injection
+https://portswigger.net/blog/top-10-web-hacking-techniques-of-2018
+
+https://francozappa.github.io/publication/rearby/
+https://rhinosecuritylabs.com/gcp/google-cloud-platform-gcp-bucket-enumeration/
+https://portswigger.net/blog/hunting-asynchronous-vulnerabilities
+https://portswigger.net/kb/papers/huntingasynchronousvulnerabilities.pdf
+
+* https://blog.xpnsec.com/azuread-connect-for-redteam/
+* https://blog.orange.tw/2019/02/abusing-meta-programming-for-unauthenticated-rce.html
+
+
+Browser Extensions
+	* https://github.com/mandatoryprogrammer/tarnish/
+	* https://thehackerblog.com/kicking-the-rims-a-guide-for-securely-writing-and-auditing-chrome-extensions/index.html
+	* https://duo.com/blog/crxcavator
+	* https://crxcavator.io/docs#/risk_breakdown
+
+AWS
+	* https://www.thesubtlety.com/post/patching-boto3-useragent/
+	* https://blog.netspi.com/exploiting-adidns/
+
+* https://blog.ripstech.com/2019/wordpress-image-remote-code-execution/
+* https://paper.seebug.org/821/
+
+
+https://avleonov.com/2018/11/29/making-vulnerable-web-applications-xxs-rce-sql-injection-and-stored-xss-buffer-overflow/
+	* https://portswigger.net/blog/turbo-intruder-embracing-the-billion-request-attack
+
+My main focus, however, is using already-found domains to generate other possible alteration. See, when there is an active domain called “app.staging.example.com”, there is a high chance that there is a “sibling” domain named “app.production.example.com”. Tools such as Amass might not find it, so you need to deal with it on your own. For this purpose, I recommend using my new tool [dnsgen][dnsgen] to generate brute force possibilities. Dnsgen is a tool that generates a combination of domain names from provided input and the combinations are created using wordlists. This is done with the following technique and let’s say that the wordlist contains only the word stage:
+
+Insert word on every index — Creates new subdomain levels by inserting the words between existing levels. foo.example.com → stage.foo.example.com, foo.stage.example.com
+Insert num on every index — Creates new subdomain levels by inserting the numbers between existing levels. foo.bar.example.com → 1.foo.bar.example.com, foo.1.bar.example.com, 01.foo.bar.example.com, …
+Increase/Decrease num found — (In development) If number is found in an existing subdomain, increase/decrease this number without any other alteration. foo01.example.com → foo02.example.com, foo03.example.com, …
+Prepend word on every index — On every subdomain level, prepend existing content with WORD and WORD-. foo.example.com → stagefoo.example.com, stage-foo.example.com
+Append word on every index — On every subdomain level, append existing content with WORD and WORD-. foo.example.com → foostage.example.com, foo-stage.example.com
+Replace the word with word — If word longer than 3 is found in an existing subdomain, replace it with other words from the wordlist. (If we have more words than one in our wordlist). stage.foo.example.com → otherword.foo.example.com, anotherword.foo.example.com, …
+Extract custom words — Extend the wordlist based on target’s domain naming conventions. Such words are either whole subdomain levels, or - is used for a split on some subdomain level. For instance mapp1-current.datastream.example.com has mapp1, current, datastream words. To prevent the overflow, user-defined word length is used for word extraction. The default value is set to 6. This means that only words strictly longer than 5 characters are included (from the previous example, mapp1 does not satisfy this condition).
+https://github.com/EdOverflow/can-i-take-over-xyz#all-entries
+https://github.com/assetnote/commonspeak2
+
+
+
+https://blog.xpnsec.com/aws-lambda-redirector/
+https://blog.netspi.com/azure-privilege-escalation-using-managed-identities/
+https://blog.netspi.com/attacking-azure-with-custom-script-extensions/
+https://www.irongeek.com/i.php?page=videos/derbycon9/1-12-adventures-in-azure-privilege-escalation-karl-fosaaen
+https://medium.com/@emilefugulin/http-desync-attacks-with-python-and-aws-1ba07d2c860f
+https://aws.amazon.com/training/course-descriptions/security-fundamentals/
+
+* [Browser-2020](https://github.com/luruke/browser-2020)
+	* Things you can do with a browser in 2020
+	* It's like, did no one read 'The Tangled Web: A Guide to Securing Modern Web Applications'? Or did they, and their take away was, 'Man, what a bunch of great ideas! Blinking text with no user control? Woah. I'm so on this.'
+https://blog.netspi.com/gaining-aws-console-access-via-api-keys/
+https://srcincite.io/advisories/src-2020-0011/
+https://medium.com/@cryptocracker99/a-penetration-testers-guide-to-postgresql-d78954921ee9
+https://infosecaddicts.com/tag/postgres-attack/
+https://www.postgresql.org/docs/9.0/sql-syntax-lexical.html
+https://medium.com/rangeforce/meteor-blind-nosql-injection-29211775cd01
+https://nullsweep.com/a-nosql-injection-primer-with-mongo/
+https://github.com/authcov/authcov
+
+https://www.endpoint.com/blog/2015/05/28/postgres-unsupported-frontend-protocol
+https://www.secjuice.com/abusing-php-query-string-parser-bypass-ids-ips-waf/
+* [How I hacked hundreds of companies through their helpdesk - Inti De Ceukelaire](https://medium.com/intigriti/how-i-hacked-hundreds-of-companies-through-their-helpdesk-b7680ddc2d4c)
+https://websec.fr/
+* **Tools**
+	* [WPScan](https://github.com/wpscanteam/wpscan)
+		* WPScan is a black box WordPress vulnerability scanner.
+	* [WhatWeb](https://github.com/urbanadventurer/WhatWeb)
+		* WhatWeb identifies websites. Its goal is to answer the question, "What is that Website?". WhatWeb recognises web technologies including content management systems (CMS), blogging platforms, statistic/analytics packages, JavaScript libraries, web servers, and embedded devices. WhatWeb has over 1500 plugins, each to recognise something different. WhatWeb also identifies version numbers, email addresses, account IDs, web framework modules, SQL errors, and more.
+	* [webDisco](https://github.com/joeybelans/webDisco)
+		* Web discovery tool to capture screenshots from a list of hosts & vhosts.  Requests are made via IP address and vhosts to determine differences. Additionallty checks for common administrative interfaces and web server  misconfigurations.
+	* [w3af](https://github.com/andresriancho/w3af)
+		* w3af: web application attack and audit framework, the open source web vulnerability scanner.
+	* [PowerWebShot](https://github.com/dafthack/PowerWebShot)
+		* A PowerShell tool for taking screenshots of multiple web servers quickly.
+
+
+
+
+
+https://blog.iamwritingaboutsecurity.com/posts/how-to-embezzle-money/
+https://github.com/SolomonSklash/chomp-scan
+https://github.com/jonrau1/ElectricEye
+https://portswigger.net/research/javascript-without-parentheses-using-dommatrix
+https://research.securitum.com/jwt-json-web-token-security/
+https://www.youtube.com/watch?v=SG2ibjuzRJM&feature=youtu.be&list=PLH15HpR5qRsWrfkjwFSI256x1u2Zy49VI
+* [Magento 2.2.0 <= 2.3.0 Unauthenticated SQLi - Charles Fol](https://www.ambionics.io/blog/magento-sqli)
+https://tools.ietf.org/html/rfc7515
+https://tools.ietf.org/html/rfc7517
+https://github.com/bishopfox/dufflebag
+https://github.com/adrecon/AzureADRecon
+https://posts.specterops.io/attacking-azure-azure-ad-and-introducing-powerzure-ca70b330511a
+* [Breaking Through Single Sign On (SSO) - Alex Bainbridge](https://www.praetorian.com/blog/breaking-through-okta-single-sign-on-sso-security)
+https://textslashplain.com/2020/02/09/demystifying-browsers/
+https://westerns.tokyo/wctf2019-gtf/wctf2019-gtf-slides.pdf
+https://blog.georgovassilis.com/2016/04/16/advanced-web-security-topics/
+GraphQL
+* https://gurushiva.github.io/2018-12-16-second-post/f
+https://nordicapis.com/5-potential-benefits-integrating-graphql/
+https://nordicapis.com/security-points-to-consider-before-implementing-graphql/
+https://www.facebook.com/notes/phwd/a-facebook-graphql-crash-course/1189337427822946
+https://dev-blog.apollodata.com/the-next-step-for-realtime-data-in-graphql-b564b72eb07b
+https://blog.hunniccyber.com/ektron-cms-remote-code-execution-xslt-transform-injection-java/
+https://medium.com/tenable-techblog/coding-a-webassembly-ctf-challenge-5560576e9cb7
+https://portswigger.net/daily-swig/new-xs-leak-techniques-reveal-fresh-ways-to-expose-user-information
+https://www.notsosecure.com/oob-exploitation-cheatsheet/
+https://medium.com/@milanmagyar/ggvulnz-how-i-hacked-hundreds-of-companies-through-google-groups-b69c658c8924
+https://securosis.com/blog/defining-the-journey-the-four-cloud-adoption-patterns
+https://www.netsparker.com/whitepaper-same-origin-policy/
+https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc
+https://research.kudelskisecurity.com/2019/10/08/fido2-solving-the-password-problem/
+https://offsec.almond.consulting/super-magic-hash.html
+https://research.aurainfosec.io/same-origin-policy/
+https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack
+https://nvisium.com/blog/2019/01/10/angular-for-pentesters-part-1.html
+https://rhinosecuritylabs.com/aws/cloudgoat-walkthrough-rce_web_app/
+https://www.rfc-editor.org/rfc/rfc8693.html
+https://blog.nviso.eu/2020/01/16/deep-dive-into-the-security-of-progressive-web-apps/
+https://www.youtube.com/watch?v=rAuuN0OohJc
+https://www.youtube.com/watch?v=IvsANO0qZEg
+https://research.securitum.com/css-data-exfiltration-in-firefox-via-single-injection-point/
+https://dzone.com/articles/do-you-really-know-cors
+https://owasp.org/www-project-cheat-sheets/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html
+https://apisecurity.io/encyclopedia/content/owasp/owasp-api-security-top-10.htm?mkt_tok=eyJpIjoiTnpRMU16ZzNNamN4WTJZMSIsInQiOiI2MHJFQWhmTWI2aG5wb3dsbUlFdmxhK203eXNZRGExa0RTVEF0QmJDbVplQmxGVEtKQXNYcFwvMGxXc3UxcTdtXC9IUklNWUxNeDh6emhsWkdQMFQ4RUlJUm9ob1pyWG96ejRaOHhza0VtNDhsRE1HS093dWxwSUdFYnRYYkZ1UHNSIn0%3D
+https://www.youtube.com/watch?v=2IT2oAzTcvU
+https://medium.com/a-bugz-life/exploiting-an-ssrf-trials-and-tribulations-14c5d8dbd69a
+https://www.youtube.com/watch?v=y6Uzinz3DRU
+https://www.youtube.com/watch?v=PPzRcZLNCPY
+https://www.youtube.com/watch?v=8UqHCrGdxOM
+https://blog.hackedu.io/analysis-of-common-federated-identity-protocols/
+https://securitylab.github.com/research/apache-struts-CVE-2018-11776
+https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-lekies.pdf
+https://zero.lol/2019-05-13-xss-to-rce/
+https://chromium.googlesource.com/chromium/src/+/master/services/network/cross_origin_read_blocking_explainer.md
+https://developer.okta.com/blog/2018/02/27/a-breakdown-of-the-new-saml-authentication-bypass-vulnerability
+https://epi052.gitlab.io/notes-to-self/blog/2019-03-07-how-to-test-saml-a-methodology/
+
+https://www.arturjanc.com/cross-origin-infoleaks.pdf
+https://srcincite.io/assets/postscript-pat-and-his-black-and-white-hat.pdf
+https://www.youtube.com/watch?v=7J-5mTc2e8A&feature=youtu.be
+https://appsecforums.com/topic/65/how-to-secure-your-app-the-ultimate-reference
+https://martinfowler.com/articles/web-security-basics.html
+https://owasp.org/www-project-cheat-sheets/cheatsheets/Session_Management_Cheat_Sheet.html
+https://rinseandrepeatanalysis.blogspot.com/2018/10/analysis-settingcontent-ms-exploit.html
+https://nathandavison.com/blog/exploiting-email-address-parsing-with-aws-ses
+https://apisecurity.io/encyclopedia/content/owasp/api1-broken-object-level-authorization.htm
+https://github.com/qazbnm456/awesome-web-security#sub-domain-enumeration
+* [Brida](https://github.com/federicodotta/Brida)
+	* Brida is a Burp Suite Extension that, working as a bridge between Burp Suite and Frida, lets you use and manipulate applications’ own methods while tampering the traffic exchanged between the applications and their back-end services/servers. It supports all platforms supported by Frida (Windows, macOS, Linux, iOS, Android, and QNX).
+http://vmcall.blog/reversal/2019/05/16/exam-surveillance2.html
+https://anotherhackerblog.com/exploiting-file-uploads-pt1/
+https://github.com/3dot14r8/S3-Tools
+https://github.com/gradiuscypher/grIDS/wiki
+https://www.soluble.ai/blog/public-disclosure-emoji-to-zero-day
+https://honoki.net/2020/02/18/http-request-smuggling-5-practical-tips/
+
+https://www.peerlyst.com/posts/automated-checking-of-an-aws-environment-against-the-cis-benchmarks-paco-hope
+https://www.rfc-editor.org/rfc/rfc8725.html
+https://about.gitlab.com/blog/2020/02/12/plundering-gcp-escalating-privileges-in-google-cloud-platform/
+
+https://www.youtube.com/watch?reload=9&feature=youtu.be&v=nvzMN5Z8DJI&list=PLEx5khR4g7PLIxNHQ5Ze0Mz6sAXA8vSPE&app=desktop#menu
+https://blog.doyensec.com/2020/02/24/electron-updater-update-signature-bypass.html
+https://carvesystems.com/news/rule-based-highlighter-plugin-for-burpsuite/
+
+https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc
+https://github.com/dxa4481/AttackingAndDefendingTheGCPMetadataAPI/blob/master/README.md
+https://blog.appsecco.com/static-analysis-of-client-side-javascript-for-pen-testers-and-bug-bounty-hunters-f1cb1a5d5288
+
+https://archive.md/yEIJT
+https://nvisium.com/blog/2019/01/17/angular-for-pentesters-part-2.html
+https://techblog.mediaservice.net/2018/02/from-xml-external-entity-to-ntlm-domain-hashes/
+
+OAUTH
+	https://www.youtube.com/watch?v=996OiexHze0
+	* [Deconstructing REST Security by David Blevins(DevoxxUSA2017)](https://www.youtube.com/watch?v=9CJ_BAeOmW0)
+		* With an aggressive distaste for fancy terminology, this session delves into OAuth 2.0 as it pertains to REST and shows how it falls into two camps: stateful and stateless. The presentation also details a competing Amazon-style approach called HTTP Signatures and digs into the architectural differences of all three, with a heavy focus on the wire, showing actual HTTP messages and enough detail to have you thinking, “I could write this myself.”
+
+http://webconcepts.info/specs/IETF/I-D/cavage-http-signatures.html
+https://docs.adobe.com/content/help/en/audience-manager/user-guide/implementation-integration-guides/receiving-audience-data/real-time-outbound-transfers/digitally-signed-http-requests.html
+https://medium.com/@technospace/ensuring-message-integrity-with-http-signatures-86f121ac9823
+https://github.com/microsoft/playwright
+https://portswigger.net/research/top-10-web-hacking-techniques-of-2019
+https://know.bishopfox.com/blog/how-to-prevent-the-owasp-top-10
+https://github.com/nccgroup/freddy
+https://cardaci.xyz/advisories/2020/03/10/horde-groupware-webmail-edition-5.2.22-rce-in-csv-data-import/
+https://lab.wallarm.com/blind-ssrf-exploitation/
+https://research.kudelskisecurity.com/2020/02/12/fido2-deep-dive-attestations-trust-model-and-security/
+https://github.com/defaultnamehere/cookie_crimes
+* [API Throwdown: RPC vs REST vs GraphQL - Nate Barbettini(Iterate 2018)](https://www.youtube.com/watch?v=IvsANO0qZEg)
+	* Choosing an API design style can be downright daunting. The RPC vs. REST debate has raged for years, and now there's a new kid on the block: GraphQL. Which is right for your application? I'll demystify these API styles in clear terms and help you decide how to design your API.
+
+https://speakerdeck.com/ropnop/dont-cross-me-same-origin-policy-and-all-the-cross-vulns-xss-csrf-and-cors
+
+https://posts.specterops.io/detecting-attacks-within-azure-bdc40f8c0766
+https://medium.com/@krautonsecurity/inside-a-malicious-chrome-extension-aa7c9d1a2fd2
+
+
+
+* [DbDat](https://github.com/foospidy/DbDat)
+    * DbDat performs numerous checks on a database to evaluate security. The categories of checks performed are configuration, privileges, users, and information. Checks are performed by running queries or reading database configuration files. The goal of this tool is to highlight issues that need immediate attention and identify configuration settings that should be reviewed for appropriateness. This tool is not for identifying SQL Injection vulnerabilities in an application, there are good tools available for that already (e.g. https://github.com/sqlmapproject). Also, this tool does not attempt to determine what CVEs may impact the version of the target database (but may do so in the future - maybe). Rather, this tool can help you better understand the potential impact of a successful SQL Injection attack due to weak configuration or access controls. A majority of the checks are from the CIS (https://cisecurity.org) Security Benchmarks for databases, so thanks to the CIS! The benchmark documents can be found here: https://benchmarks.cisecurity.org/downloads/browse/index.cfm?category=benchmarks.servers.database
+* [LAN-Based Blind SSRF Attack Primitive for Windows Systems (switcheroo) - initblog](https://initblog.com/2019/switcheroo/)
+
+* [Callback Catcher](https://bitbucket.org/gavinanders/callback-catcher/src/master/)
+	* Callback Catcher is a multi-socket control tool designed to aid in pentest activities. It has a simple web application with an backend API that allows the user control what TCP and UDP sockets should be opened on the server. It records any and all data send to the exposed sockets and logs it to a database which can be easily accessed via it's backend API. Itís kind of intended to be like the love child of Burp Collaborator and Responder. Alternatively think of it like a low/medium interactive honeypot. Its been coded on top of the Django REST framework, which offers a number of benefits , primarily being able to create your own client scripts and tools and quickly searching and filtering of data. Opening of sockets is built on top of Python's ServerSocket library. Upon spinning up a socket a user is given the option to assign a handler to the socket, which is affectively user defined code that overwrites the handler function within the SocketServer.TCPServer and SocketServer.UDPServer classes. This code tells the socket how to handle the incoming data and what to respond with. Each connection to the socket is recorded to a database.
+
+
+PASETO
+	https://developer.okta.com/blog/2019/10/17/a-thorough-introduction-to-paseto
+
+FIDO2
+	https://research.kudelskisecurity.com/2020/02/12/fido2-deep-dive-attestations-trust-model-and-security/
+	https://research.kudelskisecurity.com/2019/10/08/fido2-solving-the-password-problem/
+https://martinfowler.com/articles/web-security-basics.html
+
+
+
+
+
 ----------------
 ### <a name="general">General</a>
 

@@ -35,6 +35,52 @@
 
 
 
+Containers
+	* https://github.com/ProfessionallyEvil/harpoon
+	* https://jvns.ca/blog/2016/10/10/what-even-is-a-container/
+	* https://github.com/ProfessionallyEvil/Pequod/blob/master/pres.md
+	* https://github.com/opencontainers
+	* https://linuxcontainers.org/lxc/introduction/
+	* https://blog.secureideas.com/2018/05/escaping-the-whale-things-you-probably-shouldnt-do-with-docker-part-1.html
+	* https://infoslack.com/devops/exploring-docker-remote-api
+	* https://raesene.github.io/blog/2016/03/06/The-Dangers-Of-Docker.sock/
+	* https://blog.secureideas.com/2018/08/escaping-the-whale-things-you-probably-shouldnt-do-with-docker-part-2.html
+	* https://github.com/ProfessionallyEvil/Pequod/blob/master/pres.md
+	* https://www.blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence_wp.pdf
+https://hackarandas.com/blog/2020/03/17/hacking-docker-remotely/
+https://engineering.fb.com/data-center-engineering/tupperware/
+* [Open Container Initiative](https://github.com/opencontainers)
+* [What even is a container: namespaces and cgroups - Julia Evans](https://jvns.ca/blog/2016/10/10/what-even-is-a-container/)
+* [Linux Containers LXC](https://linuxcontainers.org/lxc/introduction/)
+* [A crash course on Docker — Learn to swim with the big fish - Adnan Rahić](https://blog.sourcerer.io/a-crash-course-on-docker-learn-to-swim-with-the-big-fish-6ff25e8958b0)
+* [NIST Special Publication 800-190 - Application Container Security Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf)
+* [Container security (redhat)](https://www.redhat.com/en/topics/security/container-security)
+* [Introducing a *Super* Privileged Container Concept - Daniel Walsh](https://developers.redhat.com/blog/2014/11/06/introducing-a-super-privileged-container-concept/)
+* [Are Docker containers really secure?(2014) - Daniel Walsh](https://opensource.com/business/14/7/docker-security-selinux)
+* [Bringing new security features to Docker(2014) - Daniel Walsh](https://opensource.com/business/14/9/security-for-docker)
+* [namespaces - overview of Linux namespaces(man page)](http://man7.org/linux/man-pages/man7/namespaces.7.html)
+* [Linux Namespaces - Wikipedia](https://en.wikipedia.org/wiki/Linux_namespaces)
+* [Capabilities, a short intro - Sven Vermeulen](http://blog.siphos.be/2013/05/capabilities-a-short-intro/)
+* [Capability-based Security - Wikipedia](https://en.wikipedia.org/wiki/Capability-based_security)
+
+https://sysdogs.com/en/on-docker-image-security/
+
+Capabilities
+	* http://www.friedhoff.org/posixfilecaps.html
+	* https://www.linuxjournal.com/magazine/making-root-unprivileged
+	* http://blog.sevagas.com/POSIX-file-capabilities-the-dark-side
+	* https://archive.is/20130112225523/http://www.eros-os.org/essays/capintro.html
+	* https://archive.is/20130414162939/http://www.eros-os.org/pipermail/cap-talk/2003-March/001133.html
+	* http://www.cap-lore.com/CapTheory/index.html
+
+* https://github.com/SUSE/Portus
+* https://github.com/coreos/clair
+
+https://capsule8.com/blog/practical-container-escape-exercise/
+http://carnal0wnage.attackresearch.com/2019/02/abusing-docker-api-socket.html
+https://zwischenzugs.com/2016/04/04/convert-any-server-to-a-docker-container-updated/
+
+
 ------------------------
 ### <a name="containers"></a>Containers
 * **101**<a name="c101"></a>
@@ -438,3 +484,38 @@
 
 
 
+
+https://unit42.paloaltonetworks.com/what-i-learned-from-reverse-engineering-windows-containers/
+https://www.youtube.com/watch?v=8fi7uSYlOdc
+* [Notary](https://github.com/theupdateframework/notary)
+	* Notary is a project that allows anyone to have trust over arbitrary collections of data
+
+
+
+
+Kubernetes
+	https://github.com/k8gege/K8tools
+	Kubernetes tool sheet - https://docs.google.com/spreadsheets/d/1WPHt0gsb7adVzY3eviMK2W8LejV0I5m_Zpc8tMzl_2w/htmlview
+	https://speakerdeck.com/iancoldwater/the-path-less-traveled-abusing-kubernetes-defaults
+	https://github.com/bgeesaman/kube-env-stealer
+	https://news.ycombinator.com/item?id=21546099
+	https://rancher.com/
+	https://www.youtube.com/watch?v=uxRDKJCB4Rk
+	https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/
+	https://docs.google.com/presentation/d/1tCqmGSOJJzi6ZK7TNhbzVFsTekvjvQR8GGPoaYBrM1o/mobilepresent#slide=id.g5ebbe23d47_1_73
+	https://github.com/kubernetes/kops
+	https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-engine-features-and-guidance-to-help-lock-down-your-containers?utm_source=mosaicsecurity
+	https://research.nccgroup.com/2020/02/12/command-and-kubectl-talk-follow-up/
+	https://github.com/trailofbits/audit-kubernetes
+	https://github.com/hjacobs/kubernetes-failure-stories
+* [kind](https://kind.sigs.k8s.io)
+	* kind is a tool for running local Kubernetes clusters using Docker container “nodes”. kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.
+* [How to Train Your Red Team (for Cloud Native) - @sublimino](https://drive.google.com/file/d/1cV5BJBZPZMjsvJExY-nlPDsdgwSsZXGI/view)
+* [K8s Attack Tree - Summary](https://github.com/cncf/financial-user-group/tree/master/projects/k8s-threat-model)
+	* The following threat model encompasses a series of attack trees and documentation targeting a generic Kubernetes installation. The aim of this work is to provide a detailed view of threats and mitigations that can be used as a checklist to identify common attack vectors for the platform and how a would be attacker could exploit configuration vulnerabilities within Kubernetes to achieve specific goals. This can then be used as a tool to test the security of an installation and gain visibility on the logging output that would be generated in the event of a potential attack.
+* [11 Ways (Not) to Get Hacked - Andrew Martin](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/)
+	* Kubernetes security has come a long way since the project's inception, but still contains some gotchas. Starting with the control plane, building up through workload and network security, and finishing with a projection into the future of security, here is a list of handy tips to help harden your clusters and increase their resilience if compromised.
+* [How to Train Your Red Team(for Cloud Native) - @sublimino, @controlplaneio(Aqua KubeSec Summit Nov19)](https://drive.google.com/file/d/1cV5BJBZPZMjsvJExY-nlPDsdgwSsZXGI/view)
+https://octetz.com/docs/2018/2018-12-07-psp/
+https://www.4armed.com/assess/kubernetes-penetration-testing/
+https://github.com/bgeesaman/kube-env-stealer

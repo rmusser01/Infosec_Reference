@@ -116,6 +116,9 @@
 	* **Cloud**
 		* [GSuite Digital Forensics and Incident Response - Megan Roddie(BSides SanAntonio)](https://www.youtube.com/watch?v=pGn95-L8_sA&feature=youtu.be)
 			* With the current standard of companies transitioning to the cloud, digital forensic investigators and incident responders are facing new, unknown territory. As a starting point of talking about cloud DFIR, this talk aims to provide a real-life case study of what it is like to respond to an incident in GSuite, Google’s cloud business suite. The goal is that by reviewing this case study the audience will not only learn about GSuite DFIR but also begin to think about how this extends to all cloud environments.
+	* **Containers**
+		* [Container Forensics: What to Do When Your Cluster is a Cluster - Maya Kaczorowski & Ann Wallace(CloudNativeConEU19) ](https://www.youtube.com/watch?v=MyXROAqO7YI&list=PLKDRii1YwXnLmd8ngltnf9Kzvbja3DJWx&index=7&t=0s)
+			* When responding to an incident in your containers, you don’t necessarily have the same tools at your disposal that you do with VMs - and so your incident investigation process and forensics are different. In a best case scenario, you have access to application logs, orchestrator logs, node snapshots, and more.  In this talk, we’ll go over where to get information about what’s happening in your cluster, including logs and open source tools you can install, and how to tie this information together to get a better idea of what’s happening in your infrastructure. Armed with this info, we’ll review the common mitigation options such as to alert, isolate, pause, restart, or kill a container. For common types of container attacks, we'll discuss what options are best and why. Lastly, we’ll talk about restoring services after an incident, and the best steps to take to prevent the next one.
 	* **OS X**
 		* [Incident response on macOS - Thomas Reed](https://www.irongeek.com/i.php?page=videos/bsidescleveland2019/bsides-cleveland-c-04-incident-response-on-macos-thomas-reed)
 			* This talk will provide details about how to do incident response on macOS, which is something that is not well-understood except by a relatively small number of Mac-knowledgeable experts. Examples will be given using real-world malware and tools.
@@ -410,31 +413,86 @@
 	* [Kernel Extension Overview - Apple](https://developer.apple.com/library/archive/documentation/Darwin/Conceptual/KernelProgramming/Extend/Extend.html)
 	* [What are Kexts? - MacBreaker](http://www.macbreaker.com/2012/01/what-are-kexts.html)
 	* [Property List - Wikipedia](https://en.wikipedia.org/wiki/Property_list#Mac_OS_X)
+	* [Logging - developer.apple](https://developer.apple.com/documentation/os/logging)
 * **Articles/Blogposts/Writeups**
-	* [The Cider Press:Extracting Forensic Artifacts From Apple Continuity](https://www.sans.org/summit-archives/file/summit-archive-1498146226.pdf)
-	* [Mac OS X Live Forensics 101 - Action Dan](https://lockboxx.blogspot.com/2014/03/mac-os-x-live-forensics-101.html)
+	* **General**
+		* [OS X Forensics Generals](https://davidkoepi.wordpress.com/category/os-x-forensics-10-8/)
+		* [OSX Lion User Interface Preservation Analysis](https://digital-forensics.sans.org/blog/2011/10/03/osx-lion-user-interface-preservation-analysis#)
+		* [When did my Mac last start up, and why? An exploration with Ulbow - hoakley(2020)](https://eclecticlight.co/2020/01/02/when-did-my-mac-last-start-up-and-why-an-exploration-with-ulbow/)
+		* [RunningBoard: a new subsystem in Catalina to detect errors - hoakley(2019)](https://eclecticlight.co/2019/11/07/runningboard-a-new-subsystem-in-catalina-to-detect-errors/)
+		* [How RunningBoard tracks every app, and manages some - hoakley(2019)](https://eclecticlight.co/2019/11/09/how-runningboard-tracks-every-app-and-manages-some/)
+		* [Mac Forensic Artifacts - Corrie Erk(2015)](https://corrieerk.com/2015/06/mac-forensic-artifacts/)
+			* `*This is a running list of notes gathered based on experience investigating devices. This is very much an incomplete collection of artifacts*`
+	* **Collection**
+		* [The Cider Press:Extracting Forensic Artifacts From Apple Continuity](https://www.sans.org/summit-archives/file/summit-archive-1498146226.pdf)
+
+	* **Logs**
+		* [Making your own logarchive from a backup - hoakley](https://eclecticlight.co/2020/02/07/making-your-own-logarchive-from-a-backup/)
+	* **Parsing**
+		* [Parsing the .DS_Store file format - 0day.work](https://0day.work/parsing-the-ds_store-file-format/)	
 * **General**
 * **Papers**
+	* [Logs Unite! Forensic Analysis Of Apple Unified Logs - Sarah Edwards(2017)](https://papers.put.as/papers/macosx/2017/LogsUnite.pdf)
 * **Presentations/Talks/Videos**
+	* [Learn Incident Response for Mac - Thomas Reed(Derbycon2019)](https://www.youtube.com/watch?v=BdcGqy9VJ5M)
+		* [Slides](https://macadmins.psu.edu/files/2019/07/psumac2019-350-Learn-Incident-Response-for-Mac.pdf)
+		* All too often, admins simply reimage an infected Mac, losing vital information in the process. Learn how to analyze a Mac that you suspect has been infected: what artifacts to collect, and how to parse out what happened. You'll learn about the techniques malware is currently using, with concrete examples, as well as some things that malware could do in the future but hasn't yet. Suspicious behaviors that can help identify processes as malicious will also be discussed. These lessons will be illustrated with examples from real-world malware.
 	* [Cleaning the Apple Orchard - Using Venator to Detect macOS Compromise - Richie Cyrus(BSides Charm2019)](http://www.irongeek.com/i.php?page=videos/bsidescharm2019/1-02-cleaning-the-apple-orchard-using-venator-to-detect-macos-compromise-richie-cyrus)
 		* Various solutions exist to detect malicious activity on macOS. However, they are not intended for enterprise use or involve installation of an agent. This session will introduce and demonstrate how to detect malicious macOS activity using the tool Venator. Venator is a python based macOS tool designed to provide defenders with the data to proactively identify malicious macOS activity at scale.
+	* [Detecting macOS Compromise with Venator - Richie Cyrus(Objective by the Sea v2.0)](https://www.youtube.com/watch?v=8oMxegxZva8&list=PLliknDIoYszvTDaWyTh6SYiTccmwOsws8&index=6)
+    	* [Slides](https://objectivebythesea.com/v2/talks/OBTS_v2_Cyrus.pdf)
+    	* Various solutions exist to detect malicious activity on macOS. However, they are not intended for enterprise use or involve installation of an agent. This session will introduce and demonstrate how to detect malicious macOS activity using the tool Venator. Venator is a python based macOS tool designed to provide defenders with the data to proactively identify malicious macOS activity at scale. This data can then be imported into a SIEM for the purpose of building robust analytics during hunting engagements. 
+    	* [Blogpost](https://posts.specterops.io/introducing-venator-a-macos-tool-for-proactive-detection-34055a017e56)
+	* [Watching the Watchers - Sarah Edwards(Objective by the Sea v2.0)](https://www.youtube.com/watch?v=XOZQqSruzZI&list=PLliknDIoYszvTDaWyTh6SYiTccmwOsws8&index=7)
+    	* [Slides](https://objectivebythesea.com/v2/talks/OBTS_v2_Edwards.pdf)
+    	*  Forensic analysis is sometimes all about grasping for straws. You never know what time little piece of data can make a difference in an investigation. We focus so much on native forensic artifacts that we lose sight of what third party applications provide us. I’m a huge proponent of having monitoring tools to keep track of what is happening on my system and to (hopefully) protect it. These tools are inherently monitoring the system, what data can they provide to forensic investigators?  This talk will go through some of the most popular monitoring utilities to show what they record and how that can help move forward investigations. Objective-See, Little Snitch, iStat Menus, AV, and more! 
+
 * **Tools**
-	* [osxcollector](https://github.com/Yelp/osxcollector)
-		* OSXCollector is a forensic evidence collection & analysis toolkit for OSX.
-	* [Mac OS X Keychain Forensic Tool](https://github.com/n0fate/chainbreaker)
-		* The chainbreaker can extract user credential in a Keychain file with Master Key or user password in forensically sound manner. Master Key candidates can be extracted from volafox or volatility keychaindump module. Supports: Snow Leopard, Lion, Mountain Lion, Mavericks, Yosemite, El Capitan, (High) Sierra
-	* [OS X Audiotr](https://github.com/jipegit/OSXAuditor)
-		* OS X Auditor is a free Mac OS X computer forensics tool.
-	* [OS X Forensics Generals](https://davidkoepi.wordpress.com/category/os-x-forensics-10-8/)
-	* [OSX Lion User Interface Preservation Analysis](https://digital-forensics.sans.org/blog/2011/10/03/osx-lion-user-interface-preservation-analysis#)
-	* [Knock Knock](https://github.com/synack/knockknock)
-	* KnockKnock displays persistent items (scripts, commands, binaries, etc.), that are set to execute automatically on OS X
-	* [Pac4Mac](https://github.com/sud0man/pac4mac)
-		* Pac4Mac (Plug And Check for Mac OS X) is a portable Forensics framework (to launch from USB storage) allowing extraction and analysis session informations in highlighting the real risks in term of information leak (history, passwords, technical secrets, business secrets, ...). Pac4Mac can be used to check security of your Mac OS X system or to help you during forensics investigation.
-	* [AutoMacTC: Automating Mac Forensic Triage - CrowdStrike](https://github.com/CrowdStrike/automactc)
-		* This is a modular forensic triage collection framework designed to access various forensic artifacts on macOS, parse them, and present them in formats viable for analysis. The output may provide valuable insights for incident response in a macOS environment. Automactc can be run against a live system or dead disk (as a mounted volume.)
+	* **Collection**
+		* [Venator](https://github.com/richiercyrus/Venator)
+			* Venator is a python tool used to gather data for proactive detection of malicious activity on macOS devices.
+		* [osxcollector](https://github.com/Yelp/osxcollector)
+			* OSXCollector is a forensic evidence collection & analysis toolkit for OSX.
+		* [Mac OS X Keychain Forensic Tool](https://github.com/n0fate/chainbreaker)
+			* The chainbreaker can extract user credential in a Keychain file with Master Key or user password in forensically sound manner. Master Key candidates can be extracted from volafox or volatility keychaindump module. Supports: Snow Leopard, Lion, Mountain Lion, Mavericks, Yosemite, El Capitan, (High) Sierra
+		* [Pac4Mac](https://github.com/sud0man/pac4mac)
+			* Pac4Mac (Plug And Check for Mac OS X) is a portable Forensics framework (to launch from USB storage) allowing extraction and analysis session informations in highlighting the real risks in term of information leak (history, passwords, technical secrets, business secrets, ...). Pac4Mac can be used to check security of your Mac OS X system or to help you during forensics investigation.
+		* [AutoMacTC: Automating Mac Forensic Triage - CrowdStrike](https://github.com/CrowdStrike/automactc)
+			* This is a modular forensic triage collection framework designed to access various forensic artifacts on macOS, parse them, and present them in formats viable for analysis. The output may provide valuable insights for incident response in a macOS environment. Automactc can be run against a live system or dead disk (as a mounted volume.)
 		* [Article](https://www.crowdstrike.com/blog/automating-mac-forensic-triage/)
-* **Miscellaneous**
+		* [PICT - Post-Infection Collection Toolkit](https://github.com/thomasareed/pict)
+			* This set of scripts is designed to collect a variety of data from an endpoint thought to be infected, to facilitate the incident response process. This data should not be considered to be a full forensic data collection, but does capture a lot of useful forensic information.
+		* [PICT-Swift (Post Infection Collection Toolkit)](https://github.com/cedowens/PICT-Swift/tree/master/pict-Swift)
+			* This is a Swift (and slightly modified) version of Thomas Reed's PICT (Post Infection Collection Toolkit: https://github.com/thomasareed/pict). Thomas Reed is the brains behind the awesome PICT concept. I just simply wrote a Swift version of it and added an additional collector.
+		* [Catalina Forensic Tool](https://github.com/andrewbluepiano/macOS-CatalinaForensicsTool)
+			* A GUI frontend for AppleScript (shell, etc) based forensic artifact retreival.
+		* [macOSTriageTool](https://github.com/Recruit-CSIRT/macOSTriageTool)
+			* A DFIR tool to collect artifacts on macOS
+	* **Parsing**
+		* [TrueTree](https://github.com/themittenmac/TrueTree)
+			* TrueTree is more than just a pstree command for macOS. It is used to display a process tree for current running processes while using a hierarchy built on additoinal pids that can be collected from the operating system. The standard process tree on macOS that can be built with traditional pids and ppids is less than helpful on macOS due to all the XPC communication at play. The vast majority of processes end up having a parent process of launchd. TrueTree however displays a process tree that is meant to be useful to incident responders, threat hunters, researchers, and everything in between!
+		* [mac_apt](https://github.com/ydkhatri/mac_apt)
+			* macOS Artifact Parsing Tool. mac_apt is a DFIR tool to process Mac computer full disk images (or live machines) and extract data/metadata useful for forensic investigation. It is a python based framework, which has plugins to process individual artifacts (such as Safari internet history, Network interfaces, Recently accessed files & volumes, ..)
+		* [DSStoreParser](https://github.com/nicoleibrahim/DSStoreParser)
+			* macOS .DS_Store Parser. Searches recursively for .DS_Store files in the path provided and parses them. MacOS Finder uses .DS_Store files to remember how a folder view was customized by the user.
+	* **Point-in-Time**
+		* [Crescendo](https://github.com/SuprHackerSteve/Crescendo)
+			* Crescendo is a swift based, real time event viewer for macOS. It utilizes Apple's Endpoint Security Framework.
+	* **Miscellaneous**
+		* [Knock Knock](https://github.com/synack/knockknock)
+			* KnockKnock displays persistent items (scripts, commands, binaries, etc.), that are set to execute automatically on OS X
+		* [OS X Auditor](https://github.com/jipegit/OSXAuditor)
+			* OS X Auditor is a free Mac OS X computer forensics tool. - No longer maintained
+		* [FileMonitor](https://github.com/objective-see/FileMonitor)
+			* A macOS File Monitor (based on Apple's new Endpoint Security Framework)	
+		* [ProcessMonitor](https://github.com/objective-see/ProcessMonitor)
+			* Process Monitor Library (based on Apple's new Endpoint Security Framework)
+	
+
+
+
+
+
 
 
 
@@ -445,11 +503,14 @@
 ----------------
 ### <a name="windows">Windows Forensics</a>
 * **101**
+	* [Introduction to Windows Forensics - 13cubed](https://www.youtube.com/watch?v=VYROU-ZwZX8&list=PLlv3b9B16ZadqDQH0lTRO4kqn2P1g9Mve)
+		* An introduction to basic Windows forensics, covering topics including UserAssist, Shellbags, USB devices, network adapter information and Network Location Awareness (NLA), LNK files, prefetch, and numerous other common Windows forensic artifacts. We will walk through a DFIR cheat sheet I have created, and see a live example of each topic as we analyze a Windows 10 image.
 * **Articles/Blogposts/Writeups**
 	* **Active Directory**
 		* [The only PowerShell Command you will ever need to find out who did what in Active Directory - Przemyslaw Klys](https://evotec.xyz/the-only-powershell-command-you-will-ever-need-to-find-out-who-did-what-in-active-directory/)
 		* [Forensics: Monitor Active Directory Privileged Groups with PowerShell - Ashley McGlone](https://blogs.technet.microsoft.com/ashleymcglone/2014/12/17/forensics-monitor-active-directory-privileged-groups-with-powershell/)
 		* [Digital Forensics Tips&Tricks: How to Detect an Intruder-driven Group Policy Changes - volnodumcev](https://habr.com/en/post/444048/)
+		* [ADTIMELINE – Active Directory Forensics With Replication Metadata at the First Technical Colloqium](https://www.ssi.gouv.fr/en/actualite/adtimeline-active-directory-forensics-with-replication-metadata-at-the-first-technical-colloquium/)
 	* **Bitlocker**
 		* [Extracting Bitlocker Keys from a TPM - Denis Andzakovic](https://pulsesecurity.co.nz/articles/TPM-sniffing)
 		* [NVbit : Accessing Bitlocker volumes from linux](http://www.nvlabs.in/index.php?/archives/1-NVbit-Accessing-Bitlocker-volumes-from-linux.html)
@@ -672,3 +733,10 @@
 
 
 
+O365
+	https://github.com/nov3mb3r/monte-carlo/blob/master/README.md
+	* [hawk](https://github.com/Canthv0/hawk)
+		* Powershell Based tool for gathering information related to O365 intrusions and potential Breaches
+	* [Office 365 Incident Response - Alex Parsons(BSides Orlando2019)](https://www.youtube.com/watch?v=5YfH4y5olMQ)
+		* In this talk, I will discuss attacker patterns in O365 environments, how to collect the data you need during an incident, and how to respond to questions from CISOs and lawyers, and tell some Incident Response war stories along the way. We will also look into some of the new techniques attackers are using to perform things like MFA bypass, new features that Microsoft is rolling out to assist Incident Responders (such as MailItemsAccessed operations), and ways to automate and prepare for such an attack.
+		* [Slides](https://www.slideshare.net/AlexParsons13/office-365-incident-response-2019-bsides-orlando)

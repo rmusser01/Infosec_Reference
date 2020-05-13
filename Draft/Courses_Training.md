@@ -63,8 +63,14 @@
 	* [ARM Exploit Development - Azeria](https://azeria-labs.com/writing-arm-shellcode/)
 	* [Whirlwind Tour of ARM Assembly - ](https://www.coranac.com/tonc/text/asm.htm)
 * **Basic Security**
-	* [Hopper's Roppers Intro to Security](https://hoppersroppers.github.io/course.html)
+	* [Hopper's Roppers Computing Fundamentals](https://hoppersroppers.org/course.html)
 		* A free, self-paced curriculum that builds a base of knowledge in computers and networking prior to moving on to the fundamentals of security and defense. The course is intended to build up a student with no prior technical knowledge to be confident in their ability to learn anything and continue their security education. 
+	* [Hopper's Roppers Security Fundamentals](https://www.hoppersroppers.org/courseSecurity.html)
+		* A free, self-paced curriculum that teaches a beginner how security works in the real world. Learn security theory and execute defensive measures so that you are better prepared against threats online and in the physical world.
+	* [Hopper's Roppers Intro. to CTFs](https://www.hoppersroppers.org/courseCTF.html)
+		* A free, self-paced curriculum that teaches the fundamentals required to be successful in Capture the Flag competitions and compete in the picoCTF event. Goes over the basics of Forensics, Cryptography, and Web-Exploitation.
+
+
 
 * **Cryptography**
     * [Coursera Cryptography](https://www.coursera.org/learn/crypto)

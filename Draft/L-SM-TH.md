@@ -135,6 +135,9 @@
 * **Windows**<a name="winlog"></a>
 	* **101**
 		* [Windows 10, version 1809 basic level Windows diagnostic events and fields](https://docs.microsoft.com/en-gb/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1809#windows-error-reporting-events)
+		* [Windows Logging Basics - loggly](https://www.loggly.com/ultimate-guide/windows-logging-basics/)
+	* **General Articles/Overview aka How to use Event Viewer**
+		* * [Windows Logging Basics - loggly](https://web.archive.org/web/20200520162154/https://www.loggly.com/ultimate-guide/windows-logging-basics/)
 	* **Auditing/Audit Events**
 		* [Windows 10 and Windows Server 2016 security auditing and monitoring reference - microsoft.com](https://www.microsoft.com/en-us/download/details.aspx?id=52630)
 			* This reference details most advanced security audit events for Windows 10 and Windows Server 2016. 
@@ -151,34 +154,59 @@
 		* [Microsoft security advisory: Update to improve Windows command-line auditing: February 10, 2015](https://support.microsoft.com/en-us/help/3004375/microsoft-security-advisory-update-to-improve-windows-command-line-aud)
 		* [Audit Process Creation - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn319093(v=ws.11)\)
 			* Prior to Win10
-		* [Audit logon events - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-logon-events)
-			* Win10
+		* [Command line process auditing - docs.ms(2017)](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/command-line-process-auditing)
+			* 'Applies To: Windows Server 2016, Windows Server 2012 R2'
+		* [Invoke-DOSfuscation: Techniques FOR %F IN (-style) DO (S-level CMD Obfuscation) - Daniel Bohannon(BHAsia2018)](https://www.youtube.com/watch?v=mej5L9PE1fs)
+			* "In this presentation, I will dive deep into cmd[.]exe's multi-faceted obfuscation opportunities beginning with carets, quotes and stdin argument hiding. Next I will extrapolate more complex techniques including FIN7's string removal/replacement concept and two never-before-seen obfuscation and full encoding techniques – all performed entirely in memory by cmd[.]exe. Finally, I will outline three approaches for obfuscating binary names from static and dynamic analysis while highlighting lesser-known cmd[.]exe replacement binaries."
 	* **Event Collector**
 		* [Windows event Collector - Setting up source initiated Subscriptions](https://msdn.microsoft.com/en-us/library/bb870973(v=vs.85).aspx)
 		* [Windows Event Collector(For centralizing windows domain logging with no local agent, windows actually has built-in logging freely available)](https://msdn.microsoft.com/en-us/library/bb427443(v=vs.85).aspx)
 	* **Event Forwarding**
 		* **101**
 			* [Introduction to Windows Event Forwarding](https://hackernoon.com/the-windows-event-forwarding-survival-guide-2010db7a68c4)
-		* **Articles/Writeups**
+			* [Windows Event Collector - docs.ms](https://docs.microsoft.com/en-us/windows/win32/wec/windows-event-collector)
+			* [Using Windows Event Collector - docs.ms](https://docs.microsoft.com/en-us/windows/win32/wec/using-windows-event-collector)
+				* This section lists the topics that explain the tasks that can be accomplished using the Windows Event Collector SDK.
+			* [Windows Event Forwarding - Centralized logging for everyone! (Even if you already have centralized logging!) - Jessica Payne(2015)](https://web.archive.org/web/20171212201838/https://channel9.msdn.com/Events/Ignite/Australia-2015/INF327)
+			* [Use Windows Event Forwarding to help with intrusion detection - docs.ms(2019)](https://docs.microsoft.com/en-us/windows/security/threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection)
+				* Learn about an approach to collect events from devices in your organization. This article talks about events in both normal operations and when an intrusion is suspected.
+			* [Creating Custom Windows Event Forwarding Logs - docs.ms](https://docs.microsoft.com/en-us/archive/blogs/russellt/creating-custom-windows-event-forwarding-logs)
 			* [Use Windows Event Forwarding to help with intrusion detection](https://docs.microsoft.com/en-us/windows/threat-protection/use-windows-event-forwarding-to-assist-in-instrusion-detection)
-			* [Monitoring what matters – Windows Event Forwarding for everyone (even if you already have a SIEM.)](https://blogs.technet.microsoft.com/jepayne/2015/11/23/monitoring-what-matters-windows-event-forwarding-for-everyone-even-if-you-already-have-a-siem/)
+			* [Monitoring what matters – Windows Event Forwarding for everyone (even if you already have a SIEM.) - docs.ms(2015)](https://web.archive.org/web/20200402150250/https://docs.microsoft.com/en-us/archive/blogs/jepayne/monitoring-what-matters-windows-event-forwarding-for-everyone-even-if-you-already-have-a-siem)
+		* **Articles/Writeups**
 			* [Windows Event Logging and Forwarding - Australian Cybersecurity Center](https://www.cyber.gov.au/publications/windows-event-logging-and-forwarding)
 				* This document has been developed as a guide to the setup and configuration of Windows event logging and forwarding. This advice has been developed to support both the detection and investigation of malicious activity by providing an ideal balance between the collection of important events and management of data volumes. This advice is also designed to complement existing host-based intrusion detection and prevention systems.  This document is intended for information technology and information security professionals. It covers the types of events which can be generated and an assessment of their relative value, centralised collection of event logs, the retention of event logs, and recommended Group Policy settings along with implementation notes.
-			* [Windows Event Forwarding Guidance](https://github.com/palantir/windows-event-forwarding) 
+				* [Paper - 2019](https://web.archive.org/web/20200507235341/https://www.cyber.gov.au/sites/default/files/2019-05/PROTECT%20-%20Windows%20Event%20Logging%20and%20Forwarding%20%28April%202019%29_0.pdf)
+				* [Australian Cyber Security Center's Windows Event Logging repository](https://github.com/AustralianCyberSecurityCentre/windows_event_logging)
+			* [Windows Event Forwarding Guidance - Palantir](https://github.com/palantir/windows-event-forwarding) 
 				* Over the past few years, Palantir has a maintained an internal Windows Event Forwarding (WEF) pipeline for generating and centrally collecting logs of forensic and security value from Microsoft Windows hosts. Once these events are collected and indexed, alerting and detection strategies (ADS) can be constructed not only on high-fidelity security events (e.g. log deletion), but also for deviations from normalcy, such as unusual service account access, access to sensitive filesystem or registry locations, or installation of malware persistence. The goal of this project is to provide the necessary building blocks for organizations to rapidly evaluate and deploy WEF to a production environment, and centralize public efforts to improve WEF subscriptions and encourage adoption. While WEF has become more popular in recent years, it is still dramatically underrepresented in the community, and it is our hope that this project may encourage others to adopt it for incident detection and response purposes. We acknowledge the efforts that Microsoft, IAD, and other contributors have made to this space and wish to thank them for providing many of the subscriptions, ideas, and techniques that will be covered in this post.
-			* [Event-Forwarding-Guidance](https://github.com/nsacyber/Event-Forwarding-Guidance)
-				* Configuration guidance for implementing collection of security relevant Windows Event Log events by using Windows Event Forwarding.
-			* [Creating Custom Windows Event Forwarding Logs - docs.ms](https://docs.microsoft.com/en-us/archive/blogs/russellt/creating-custom-windows-event-forwarding-logs)
+			* [Event-Forwarding-Guidance - NSA](https://github.com/nsacyber/Event-Forwarding-Guidance)
+				* Configuration guidance for implementing collection of security relevant Windows Event Log events by using Windows Event Forwarding.				
 			* [Windows Event Forwarding for Network Defense - Palantir](https://medium.com/palantir/windows-event-forwarding-for-network-defense-cb208d5ff86f)
+			* [End-Point Log Consolidation with Windows Event Forwarder - Derek Banks(2017)](https://www.blackhillsinfosec.com/end-point-log-consolidation-windows-event-forwarder/)
+			* [The Windows Event Forwarding Survival Guide - Chris Long(2017)](https://hackernoon.com/the-windows-event-forwarding-survival-guide-2010db7a68c4)
 			* [Setting up Windows Event Forwarder Server (WEF) (Domain) Part 1/3 - Pablo Delgado(2017)](https://www.syspanda.com/index.php/2017/03/01/setting-up-windows-event-forwarder-server-wef-domain-part-13/)
 				* [Setting up Windows Event Forwarder Server (WEF) (Domain) – Sysmon Part 2/3 - Pablo Delgado(2017)](https://www.syspanda.com/index.php/2017/03/01/setting-up-windows-event-forwarder-server-wef-domain-sysmon-part-23/)
 				* [Setting up Windows Event Forwarder Server (WEF) (Domain) – GPO Deployment Part 3/3 - Pablo Delgado(2017)](https://www.syspanda.com/index.php/2017/03/01/setting-up-windows-event-forwarder-server-wef-domain-gpo-deployment-part-33/)
+		* **Custom Logs**
+			* [Introducing Project Sauron - Centralised Storage of Windows Events - Domain Controller Edition - docs.ms(2017)](https://docs.microsoft.com/en-us/archive/blogs/russellt/project-sauron-introduction)
+				* [Code](https://github.com/russelltomkins/project-sauron)
+			* [Creating Custom Windows Event Forwarding Logs - docs.ms(2016)](https://web.archive.org/web/20200508010912/https://docs.microsoft.com/en-us/archive/blogs/russellt/creating-custom-windows-event-forwarding-logs)
+		* **Filtering/XPath**
+			* [XPath - Wikipedia](https://en.wikipedia.org/wiki/XPath)
+			* [XPath Standard Documentation](https://www.w3.org/TR/xpath/all/)
+			* [Advanced XML filtering in the Windows Event Viewer - Ned Pyle(2011)](https://web.archive.org/web/20190712091207/https://blogs.technet.microsoft.com/askds/2011/09/26/advanced-xml-filtering-in-the-windows-event-viewer/)
+			* [Consuming Events - docs.ms(2015)](https://docs.microsoft.com/en-us/windows/win32/wes/consuming-events?redirectedfrom=MSDN#limitations)
+		* **Tools**
+			* [WEFFLES](https://github.com/jepayneMSFT/WEFFLES)
+				* Build a fast, free, and effective Threat Hunting/Incident Response Console with Windows Event Forwarding and PowerBI 
+				* [Blogpost](https://web.archive.org/web/20200308233607/https://blogs.technet.microsoft.com/jepayne/2017/12/08/weffles/)
 	* **Event Log**
 		* **101**
 			* [Windows Event Log Reference - docs.ms](https://docs.microsoft.com/en-us/windows/win32/wes/windows-event-log-reference?redirectedfrom=MSDN)
 			* [Event Logging Structures - docs.ms](https://docs.microsoft.com/en-us/windows/desktop/eventlog/event-logging-structures)
 			* [Log Everything Right? - Edward Ruprecht](https://medium.com/@e_rupert/log-everything-right-13d86224ef7f)
-		* **Reference**
+		* **Reference for Logs**
 			* [My Event Log](https://www.myeventlog.com)
 				* Searchable database of Windows Event log entries.
 			* [Windows Event Log Encyclopedia - ultimatewindowsecurity.com](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/)
@@ -191,15 +219,53 @@
 			* [JPCert Tool Analysis Result Sheet](https://jpcertcc.github.io/ToolAnalysisResultSheet/)
 				* This site summarizes the results of examining logs recorded in Windows upon execution of the 49 tools which are likely to be used by the attacker that has infiltrated a network. The following logs were examined. Note that it was confirmed that traces of tool execution is most likely to be left in event logs. Accordingly, examination of event logs is the main focus here. 
 		* **Understanding**
+			* [EVTX and Windows Event Logging - Brandon Charter(2008)](https://www.sans.org/reading-room/whitepapers/logging/paper/32949)
+				* This paper will explore Microsoft’s EVTX log format and Windows Event Logging framework. 
+			* [Event Log File Format - docs.ms](https://docs.microsoft.com/en-us/windows/win32/eventlog/event-log-file-format)
+			* [[MS-EVEN6]: EventLog Remoting Protocol Version 6.0 - docs.ms](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-even6/18000371-ae6d-45f7-95f3-249cbe2be39b?redirectedfrom=MSDN)
 		* **Talks/Presentations/Videos**
 		* **Tools**
 			* [EventLogParser](https://github.com/djhohnstein/EventLogParser)
 				* Parse PowerShell and Security event logs for sensitive information.
+			* [libevtx](https://github.com/libyal/libevtx)
+				* Library and tools to access the Windows XML Event Log (EVTX) format
+			* [python-evtx](https://github.com/williballenthin/python-evtx)
+				* python-evtx is a pure Python parser for recent Windows Event Log files (those with the file extension ".evtx"). The module provides programmatic access to the File and Chunk headers, record templates, and event entries.
+	* **Event Tracing for Windows**<a name="etw"></a>
+		* **101**
+			* [Event Tracing - docs.ms](https://docs.microsoft.com/en-us/windows/win32/etw/event-tracing-portal)
+			* [About Event Tracing - docs.ms](https://docs.microsoft.com/en-us/windows/win32/etw/about-event-tracing)
+			* [Using Event Tracing - docs.ms](https://docs.microsoft.com/en-us/windows/win32/etw/using-event-tracing)
+			* [Event Tracing for Windows - Core OS Events in Windows 7, Part 1 - Dr. Insung Park, Alex Bendetovers](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/september/core-os-events-in-windows-7-part-1)
+				* [Part 2](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/october/core-instrumentation-events-in-windows-7-part-2)
+		* **Articles/Blogposts/Writeups**
+			* [ETW Event Tracing for Windows and ETL Files - Nicole Ibrahim](https://www.hecfblog.com/2018/06/etw-event-tracing-for-windows-and-etl.html)
+			* [SilkETW: Because Free Telemetry is … Free! - Ruben Boonnen](https://www.fireeye.com/blog/threat-research/2019/03/silketw-because-free-telemetry-is-free.html)
+				* [Slides](https://github.com/FuzzySecurity/BH-Arsenal-2019/blob/master/Ruben%20Boonen%20-%20BHArsenal_SilkETW_v0.2.pdf)
+			* [Tampering with Windows Event Tracing: Background, Offense, and Defense - Palantir](https://medium.com/palantir/tampering-with-windows-event-tracing-background-offense-and-defense-4be7ac62ac63)
+			* [Getting started with Event Tracing for Windows in C# - Alex Khanin](https://medium.com/@alexkhanin/getting-started-with-event-tracing-for-windows-in-c-8d866e8ab5f2)
+			* [Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
+				* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it-s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What-s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
+		* **Talks/Videos**
+			* [Production tracing with Event Tracing for Windows (ETW) - Doug Cook](https://channel9.msdn.com/Events/Build/2017/P4099)
+			* [ETW - Monitor Anything, Anytime, Anywhere - Dina Goldshtein(NDC Oslo 2017)](https://www.youtube.com/watch?v=ZNdpLM4uIpw)
+				* You’ll learn how to diagnose incredibly complex issues in production systems such as excessive garbage collection pauses, slow startup due to JIT and disk accesses, and even sluggishness during the Windows boot process. We will also explore some ways to automate ETW collection and analysis to build self-diagnosing applications that identify high CPU issues, resource leaks, and concurrency problems and produce alerts and reports. In the course of the talk we will use innovative performance tools that haven’t been applied to ETW before — flame graphs for visualising call stacks and a command-line interface for dynamic, scriptable ETW tracing. ETW is truly a window into everything happening on your system, and it doesn’t require expensive licenses, invasive tools, or modifying your code in any way. It is a critical, first-stop skill on your way to mastering application performance and diagnostics.
+			* [Windows Forensics: Event Trace Logs - Nicole Ibrahim(SANS DFIR Summit 2018)](https://www.youtube.com/watch?v=TUR-L9AtzQE)
+				* This talk will cover what ETL files are and where you can expect to find them, how to decode ETL files, caveats associated with those files, and some interesting and forensically relevant data that ETL files can provide. 
+		* **Tools**
+			* [SilkETW & SilkService](https://github.com/fireeye/SilkETW)
+				* SilkETW & SilkService are flexible C# wrappers for ETW, they are meant to abstract away the complexities of ETW and give people a simple interface to perform research and introspection. While both projects have obvious defensive (and offensive) applications they should primarily be considered as research tools. For easy consumption, output data is serialized to JSON. The JSON data can either be written to file and analyzed locally using PowerShell, stored in the Windows eventlog or shipped off to 3rd party infrastructure such as Elasticsearch.
+	* **Logon Events**
+		* [Audit logon events - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-logon-events)
+			* Win10
 	* **Parsing**
 		* [Parsing Text Logs with Message Analyzer - Microsoft](http://blogs.technet.com/b/messageanalyzer/archive/2015/02/23/parsing-text-logs-with-message-analyzer.aspx)
 	* **PowerShell**
 		* **101**
 			* [PowerShell ♥ the Blue Team - PowerShell Team(2015)](https://devblogs.microsoft.com/powershell/powershell-the-blue-team/)
+			* [About Group Policy Settings - docs.ms](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_group_policy_settings?view=powershell-7)
+				* Describes the Group Policy settings for Windows PowerShell
+			* [Windows PowerShell Logging CheatSheet - Malware Archaeology](https://static1.squarespace.com/static/552092d5e4b0661088167e5c/t/59c1814829f18782e24f1fe2/1505853768977/Windows+PowerShell+Logging+Cheat+Sheet+ver+Sept+2017+v2.1.pdf)
 		* **Articles/Blogposts/Writeups**
 			* [Greater Visibility Through PowerShell Logging](https://www.fireeye.com/blog/threat-research/2016/02/greater_visibilityt.html)
 			* [Practical PowerShell Security: Enable Auditing and Logging with DSC - Ashley McGlone](https://blogs.technet.microsoft.com/ashleymcglone/2017/03/29/practical-powershell-security-enable-auditing-and-logging-with-dsc/)
@@ -210,10 +276,18 @@
 			* [PowerShell – Everything you wanted to know about Event Logs and then some - Przemyslaw Klys(2019)](https://evotec.xyz/powershell-everything-you-wanted-to-know-about-event-logs/)
 		* **Script Block Logging**
 		* **Transcript Logging**
+			* [PowerShell: Documenting your work with Start-Transcript - Patrick Gruenauer](https://sid-500.com/2017/07/15/powershell-documenting-your-work-with-start-transcript/)
+			* [PowerShell Security: Enabling Transcription Logging by using Group Policy - Patrick Gruenauer](https://sid-500.com/2017/11/07/powershell-enabling-transcription-logging-by-using-group-policy/)
 		* **Talks/Presentations/Videos**
 			* [When Logging Everything Becomes an Issue - Edward Ruprecht(WWHF19)](https://www.youtube.com/watch?v=g-1l9ZPhc2A)
 				* [Slides](https://docs.google.com/presentation/d/12rMlIRE3136TlRnbhs65V-rqZTo_u-T7raEwUu2P2L4/edit#slide=id.p1)
 				* Discussing potential issues with logging Sysmon and PowerShell logs. Potential sensitive data leakage, best practices, and scalability issues.
+			* [Invoke-Obfuscation: PowerShell obFUsk8tion - Daniel Bohannon(Hactivity2016)](https://www.youtube.com/watch?v=uE8IAxM_BhE)
+				* "Today’s detection techniques monitor for certain strings in powershell.exe’s command-line arguments. While this provides tremendous value for most of today’s PowerShell attacks, I will introduce over a dozen obfuscation techniques that render today’s detection techniques grossly ineffective. These techniques will enable the innovative Red Team to continue using PowerShell undetected while challenging the Blue Team to identify these attacks more effectively. Finally, I will unveil Invoke-Obfuscation.ps1 which will enable both Red and Blue Teams to effortlessly create highly obfuscated PowerShell commands so organizations can test their detection capabilities against these obfuscation techniques."
+			* [Revoke-Obfuscation: PowerShell Obfuscation Detection (And Evasion) Using Science - Daniel Bohannon(BHUSA2017)](https://www.youtube.com/watch?v=x97ejtv56xw&list=TLPQMjAwNTIwMjBVJ_NawM9s8A&index=2)
+				* Attackers, administrators and many legitimate products rely on PowerShell for their core functionality. However, being a Windows-signed binary native on Windows 7 and later that enables reflective injection of binaries and DLLs and memory-resident execution of remotely hosted scripts, has made it increasingly attractive for attackers and commodity malware authors alike. In environments where PowerShell is heavily used, filtering out legitimate activity to detect malicious PowerShell usage is not trivial.
+			* [Malicious payloads vs. deep visibility: a PowerShell story - Daniel Bohannon(PSConEU2019)](https://www.youtube.com/watch?v=h1Sbb-1wRKw)
+				* "This talk draws from over four years of Incident Response experience to lay out a technical buffet of in-the-wild malicious PowerShell payloads and techniques. In addition to diving deep into the mechanics of each malicious example, this presentation will highlight forensic artifacts, detection approaches and the deep visibility that the latest versions of PowerShell provides security practitioners to defend their organizations against the latest attacks that utilize PowerShell. So if you are new to security or just want to learn about how attackers have used PowerShell in their attacks, then this talk is for you. If you want to see what obfuscated and multi-stage, evasive PowerShell-based attacks look like under the microscope of PowerShell deep inspection capabilities, this talk is for you. And if you want to see why these security advancements to PowerShell are causing many attackers to shift their tradecraft development away from PowerShell, this talk is for you."
 		* **Tools**
 			* [check_ioc](https://github.com/oneoffdallas/check_ioc)
 				* Check_ioc is a script to check for various, selectable indicators of compromise on Windows systems via PowerShell and Event Logs. It was primarily written to be run on a schedule from a monitoring engine such as Nagios, however, it may also be run from a command-line (for incident response).
@@ -233,6 +307,27 @@
 	* **WMI**
 		* [WMI-IDS](https://github.com/fireeye/flare-wmi/tree/master/WMI-IDS)
 			* WMI-IDS is a proof-of-concept agent-less host intrusion detection system designed to showcase the unique ability of WMI to respond to and react to operating system events in real-time.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -372,6 +467,46 @@
 		* **ShellCode Analysis**
 			* [Shellcode Analysis Pipeline](https://7h3ram.github.io/2014/3/18/shellcode-pipeline/)
 				* I recently required an automated way of analyzing shellcode and verifying if it is detected by Libemu, Snort, Suricata, Bro, etc. Shellcode had to come from public sources like Shell-Storm, Exploit-DB and Metasploit. I needed an automated way of sourcing shellcode from these projects and pass it on to the analysis engines in a pipeline-like mechanism. This posts documents the method I used to complete this task and the overall progress of the project.
+* **OSQuery**
+	* **101**
+		* [osquery](https://github.com/osquery/osquery)
+			* osquery is a SQL powered operating system instrumentation, monitoring, and analytics framework. Available for Linux, macOS, Windows, and FreeBSD. 
+		* [Table Schema v4.3](https://osquery.io/schema/4.3.0/)
+		* [Getting Started Documentation](https://osquery.readthedocs.io/en/latest/)
+		* [Optimizing Queries in OSQuery - Dennis Griffin(2018)](https://osquery.io/blog/optimizing-queries-in-osquery)
+	* **Articles/Blogposts/Writeups**
+		* [osquery Across the Enterprise - Chris L(Palantir 2017)](https://medium.com/palantir/osquery-across-the-enterprise-3c3c9d13ec55)
+		* [Palantir osquery Configuration](https://github.com/palantir/osquery-configuration)
+			The goal of this project is to provide a baseline template for any organization considering a deployment of osquery in a production environment. 
+		* [Blue Team Diary, Entry #1: Leveraging Osquery For Enhanced Incident Response & Threat Hunting - Dimitrios Bougioukas(2019)](https://medium.com/@d.bougioukas/blue-team-diary-entry-1-leveraging-osquery-for-enhanced-incident-response-threat-hunting-70935538c9c3)
+	* **Talks/Presentations/Videos**
+		* [Leveraging Osquery For Enhanced Incident Response & Threat Hunting - Dimitrios Bougioukas(2019)](https://www.youtube.com/watch?v=E6vJGEXCaLM)
+			* This video accompanies eLearnSecurity's [Blue Team Diary, Entry #1: Leveraging Osquery For Enhanced Incident Response & Threat Hunting](https://medium.com/@d.bougioukas/blue-team-diary-entry-1-leveraging-osquery-for-enhanced-incident-response-threat-hunting-70935538c9c3) post on medium.
+		* [Osquery across compliance, monitoring, risk and threat hunting - Hugh Neale(QueryCon2019)](https://www.youtube.com/watch?v=zQFXLm-SweY)
+			* Stories, use cases and lessons learnt from the front line: Hugh will demonstrate how powerful osquery is across compliance, monitoring, risk IAM and threat hunting. The goal is to help build a complete picture of your IT estate and security posture. This talk is aimed at IT and Security operations. Zercurity has been using osquery in production workloads from startups to listed companies. They use osquery for inventory management, monitoring, compliance, risk, vulnerability management and IAM to name a few. Hugh will share some of their takeaways over the last few years and tell you about some of the things you can build atop osquery.
+			* [Slides](https://docs.google.com/presentation/d/1lEAIa5CwUHh7CvKl7Q8plmFwNKPBQDfFfMWtZNlGBuo/edit#slide=id.g5b5f9e628d_0_42)
+		* [Monitoring Ephemeral Infrastructure with osquery - Matt Jane(Querycon219)](https://www.youtube.com/watch?v=03tCsq-vDbA)
+			* Modern infrastructure and deployment methods, as well as web-scale infrastructure have brought about a new paradigm in infrastructure management. Short lived and ephemeral resources allow applications to scale up and down on demand. Unfortunately this means that one of the primary information gather methods of osquery, scheduled queries, becomes far less useful if queries are scheduled for a longer interval than the infrastructure will exist. This doesn’t mean osquery and scheduled queries are no longer useful, far from it. It simply means that we need to adjust our way of thinking a bit and adapt our methods of information gathering to overcome these new issues.
+			* [Slides](https://github.com/securityclippy/QueryCon/blob/master/monitoring_ephemeral_infrastructure_with_osquery.pdf)
+		* [Linux security event monitoring with osquery - Alessandro Gario(Querycon2019)](https://www.youtube.com/watch?v=t5weGeLvhBY)
+			* This talk introduces security event monitoring on Linux, and our lessons learned from attempts to implement it within osquery. Our first experience with osquery event monitoring was rewriting its use of Auditd. In order to capture events within containers, we next implemented an event publisher based on eBPF. We discovered what works, what doesn’t, and some paths forward.
+		* [How osquery uses sqlite3 and rocksdb - Alex Malone(Querycon2019)](https://www.youtube.com/watch?v=Epl3k3mAfEM)
+			* We will walk through a query from SQL to the logged JSON results, noting the important interactions with sqlite3 and rocksdb. For example, the processes table specifies an INDEX on pid. What does that entail, and how does it impact how the table generate() function is called? In this talk, listeners will gain insight into the sqlite3 virtual table API.
+	* **Tooling**
+		* Fleet Managers
+			* [Fleet](https://github.com/kolide/fleet)
+				* Fleet is the most widely used open-source osquery Fleet manager. Deploying osquery with Fleet enables live queries, and effective management of osquery infrastructure.
+			* [Doorman](https://github.com/mwielgoszewski/doorman)
+				* Doorman is an osquery fleet manager that allows administrators to remotely manage the osquery configurations retrieved by nodes. Administrators can dynamically configure the set of packs, queries, and/or file integrity monitoring target paths using tags. Doorman takes advantage of osquery's TLS configuration, logger, and distributed read/write endpoints, to give administrators visibility across a fleet of devices with minimal overhead and intrusiveness.
+		* Plugins/Extensions
+			* [osquery-go](https://github.com/kolide/osquery-go)
+				* This project contains Go bindings for creating osquery extensions in Go.
+			* [osquery-python](https://github.com/osquery/osquery-python)
+				* This project contains the official Python bindings for creating osquery extensions in Python.
+			* [brosquery](https://github.com/jandre/brosquery)
+				* This project builds an OSQuery module libbro.so for loading bro logs as tables in osquery.
+			* [osquery extensions by Trail of Bits](https://github.com/trailofbits/osquery-extensions)
+				* This repository includes osquery extensions developed and maintained by Trail of Bits.
 * **Linux**<a name="linmon"></a>
 	* **101**
 	* **Articles/Writeups**
@@ -417,7 +552,9 @@
 		* [Windows File Activity Monitoring - Farrah Gamboa(2019)](https://blog.stealthbits.com/windows-file-activity-monitoring/)
 		* [Practical PowerShell for IT Security, Part I: File Event Monitoring - varonis.com](https://www.varonis.com/blog/practical-powershell-for-it-security-part-i-file-event-monitoring/)
 	* **Talks/Presentations/Videos**		
-			* [Sysinternals Video Library - Tour of the Sysinternals Tools - Mark Russinovich, David Solomon](https://www.youtube.com/watch?v=TMlTwRsO5F8&list=PL96F5PDvO1HHuVewlKWQDzzTUrhMm-wGS)
+		* [Sysinternals Video Library - Tour of the Sysinternals Tools - Mark Russinovich, David Solomon](https://www.youtube.com/watch?v=TMlTwRsO5F8&list=PL96F5PDvO1HHuVewlKWQDzzTUrhMm-wGS)
+		* [How To Do Consolidated Endpoint Monitoring on a Shoe-String Budget - Derek Banks & Joff Thyer(2017)](https://www.blackhillsinfosec.com/webcast-consolidated-endpoint-monitoring-shoestring-budget/)
+			* [Blogpost Writeup](https://www.blackhillsinfosec.com/endpoint-monitoring-shoestring-budget-webcast-write/)
 	* **Understanding**
 	* **Tools**
 	* **Audit Policy**
@@ -467,6 +604,7 @@
 		* [Uncovering The Unknowns - Jonathan Johnson(2019)](https://posts.specterops.io/uncovering-the-unknowns-a47c93bb6971)
 			* Mapping Windows API’s to Sysmon Events
 		* [Getting Started with ATT&CK: Detection and Analytics - John Wunder(2019)](https://medium.com/mitre-attack/getting-started-with-attack-detection-a8e49e4960d0)
+		* [The Detection Maturity Level Model - Ryan Stillion(2014)](https://web.archive.org/web/20200501220417/http://ryanstillions.blogspot.com/web/20191003131310/http://ryanstillions.blogspot.com/2014/04/the-dml-model_21.html)
 	* **Talks & Presentations**
 		* [$SignaturesAreDead = “Long Live RESILIENT Signatures” wide ascii nocase - Matthew Dunwoody, Daniel Bohannon(BruCON 0x0A)](https://www.youtube.com/watch?v=YGJaj6_3dGA)
 			* Signatures are dead, or so we're told. It's true that many items that are shared as Indicators of Compromise (file names/paths/sizes/hashes and network IPs/domains) are no longer effective. These rigid indicators break at the first attempt at evasion. Creating resilient detections that stand up to evasion attempts by dedicated attackers and researchers is challenging, but is possible with the right tools, visibility and methodical (read iterative) approach.   As part of FireEye's Advanced Practices Team, we are tasked with creating resilient, high-fidelity detections that run across hundreds of environments and millions of endpoints. In this talk we will share insights on our processes and approaches to detection development, including practical examples derived from real-world attacks.
@@ -538,8 +676,15 @@
 			* [DeTTECT - Detect Tactics, Techniques & Combat Threats](https://github.com/rabobank-cdc/DeTTECT)
 		* [The Role of Evidence Intention - Chris Sanders](https://chrissanders.org/2018/10/the-role-of-evidence-intention/)
 		* [Threat Hunting - Getting Closer to Anomalous Behavior - findingbad.blogspot](https://findingbad.blogspot.com/2016/10/threat-hunting-getting-closer-to.html)
+		* [On TTPs - Ryan Stillions](https://web.archive.org/web/20200501220419/http://ryanstillions.blogspot.com/web/20191003131313/http://ryanstillions.blogspot.com/2014/04/on-ttps.html)
+			* [...]I set off a few months ago on a personal quest.  I wanted to see if I could locate any official citations that attempted to clearly define, compare or contrast "TTPs" in a cyber context, and show how they could be used both individually and jointly with other models to further advance our work in the context of things above and beyond atomic Indicators of Compromise (IOCs).  In this blog post I'll share with you what I found regarding the definitions of "TTPs", and then transition into how I believe they apply to incident detection and response.
+		* [The PARIS Model](http://threathunter.guru/blog/the-paris-model/)
+	* **Resources**
+		* [awesome-threat-detection](https://github.com/0x4D31/awesome-threat-detection)
 	* **Talks & Presentations**
 		* [Threat Hunting Workshop - Methodologies for Threat Analysis - RiskIQ](https://www.youtube.com/playlist?list=PLgLzPE5LJevb_PcjMYMF2ypjnVcKf8rjY)
+		* [Find_Evil - Threat Hunting Anurag Khanna(SANS2020)](https://www.youtube.com/watch?v=GrhVz1Sjd_0)
+			* Today, organizations are constantly under attack. While security teams are getting good at monitoring and incident response, the frontier to conquer is proactively looking for evil in the environment. Threat hunting is one of the ways in which organizations can proactively look for threats. This talk would discuss the fundamentals of threat hunting, what the hunting teams should look for and how to collect and analyze relevant data. We will discuss some of the recipes to perform threat hunting.
 	* **Papers**
 		* [Generating Hypotheses for Successful Threat Hunting - Robert M. Lee, David Bianco](https://www.sans.org/reading-room/whitepapers/threats/paper/37172)
 			* Threat hunting is a proactive and iterative approach to detecting threats. Although threat hunters should rely heavily on automation and machine assistance, the process itself cannot be fully automated. One of the human’s key contributions to a hunt is the formulation of a hypotheses to guide the hunt. This paper explores three types of hypotheses and outlines how and when to formulate each of them.
@@ -556,6 +701,23 @@
 				* A Hunting ELK (Elasticsearch, Logstash, Kibana) with advanced analytic capabilities.
 			* [The Quieter You Become, the More You’re Able to (H)ELK -  Nate Guagenti, Roberto Rodriquez - BSides Colombus Ohio 2018](https://www.irongeek.com/i.php?page=videos/bsidescolumbus2018/p05-the-quieter-you-become-the-more-youre-able-to-helk-nate-guagenti-roberto-rodriquez)
 				* Enabling the correct endpoint logging and centralizing the collection of different data sources has finally become a basic security standard. This allows organizations to not just increase the level of visibility, but to enhance their threat detection. Solutions such as an (Elastic) ELK stack have largely been adopted by small and large organizations for data ingestion, storage and visualization. Although, it might seem that collecting a massive amount of data is all analysts need to do their jobs, there are several challenges for them when faced with large, unstructured and often incomplete/disparate data sets. In addition to the sisyphean task of detecting and responding to adversaries there may be pitfalls with organizational funding, support, and or approval (Government). Although “everyone” is collecting logs and despite the many challenges, we will show you how to make sense of these logs in an efficient and consistent way. Specifically when it comes to Windows Event logs (ie: Sysmon, PowerShell, etc) and the ability to map fields to other logs such as Bro NSM or some other network monitoring/prevention device. This will include different Windows Event log data normalization techniques across the 1,000+ unique Event IDs and its 3,000+ unique fields. Also, proven data normalization techniques such as hashing fields/values for logs such as PowerShell, Scheduled Tasks, Command Line, and more. These implementations will show how it allows an analyst to efficiently “pivot” from an endpoint log to a NSM log or a device configuration change log. However, we will also show how an analyst can make an informed decision without degrading/hindering their investigation as well as to enhance their decision. Whether this is preventing an analyst from excluding keywords that a malicious actor may include as an “evasion” technique or adding additional analysis techniques (ie: graphing).
+	* **EQL**
+		* **101**
+			* [Event Query Language](https://github.com/endgameinc/eql)
+			* [Getting Started](https://eqllib.readthedocs.io/en/latest/guides/index.html)
+			* [Query Guide](https://eql.readthedocs.io/en/latest/query-guide/)
+			* [Schemas](https://eqllib.readthedocs.io/en/latest/schemas.html)
+		* **Articles/Blogposts/Writeups**
+			* [Introducing Event Query Language - Ross Wolf(2019)](https://www.elastic.co/blog/introducing-event-query-language)
+			* [The No Hassle Guide to Event Query Language (EQL) for Threat Hunting - Andy Green](https://www.varonis.com/blog/guide-no-hassle-eql-threat-hunting/)
+		* **Talks/Presentations/Videos**
+			* [Fantastic Red Team Attacks and How To Find Them - Casey Smith, Ross Wolf(BHUSA2019)](https://www.youtube.com/watch?v=9bUrVgP8Duk)
+				* [Slides](https://i.blackhat.com/USA-19/Thursday/us-19-Smith-Fantastic-Red-Team-Attacks-And-How-To-Find-Them.pdf)
+		* **Tooling**
+			* [EQL Analytics Library](https://github.com/endgameinc/eqllib)
+				* The Event Query Language Analytics Library (eqllib) is a library of event based analytics, written in EQL to detect adversary behaviors identified in MITRE ATT&CK™.
+			* [Varna](https://github.com/endgameinc/varna)
+				* Varna is an AWS serverless cloud security tool that parses and alerts on CloudTrail logs using Event Query Language (EQL). Varna is deployed as a lambda function, for scanning and serving web requests, and a dynamodb table, for keeping track of seen alerts. Varna is cheap & efficient to run, costing less than 15 dollars a month with proper configuration and ingesting alerts as soon as CloudTrail stores them in S3.
 * **Hunt Experiences/Demonstrations of**
 	* **Articles/Blogposts/Writeups**
 		* [Threat Hunting with Python: Prologue and Basic HTTP Hunting - Dan Gunter(2017)](https://dgunter.com/2017/09/17/threat-hunting-with-python-prologue-and-basic-http-hunting/)
@@ -651,6 +813,7 @@
 			* [Part 3](https://www.elastic.co/blog/mac-system-extensions-for-threat-detection-part-3)
 			* In part 1 of this series, we’ll go over some of the frameworks accessible by kernel extensions that provide information about file system, process, and network events. These frameworks include the Mandatory Access Control Framework, the KAuth framework, and the IP/socket filter frameworks. We won't do a deep dive into each one of these frameworks specifically, as there have been many other posts and guides [0](https://www.synack.com/blog/monitoring-process-creation-via-the-kernel-part-i/) [1](https://www.apriorit.com/dev-blog/411-mac-os-x-kauth-listeners) [2](https://reverse.put.as/2014/10/03/can-i-suid-a-trustedbsd-policy-module-to-control-suid-binaries-execution/) [3](https://developer.apple.com/library/archive/technotes/tn2127/_index.html) [4](https://developer.apple.com/library/archive/technotes/tn2459/_index.html) regarding how to use these frameworks. Instead, we’ll recap and review each of these frameworks, then in [part 2](https://www.elastic.co/blog/mac-system-extensions-for-threat-detection-part-2) we’ll cover some valuable tips and tricks we can use inside the kernel extensions framework that will no longer be available in the new SystemExtensions framework starting in macOS 10.15. And finally, in [part 3](https://www.elastic.co/blog/mac-system-extensions-for-threat-detection-part-3) of the series, we’ll cover the new SystemExtensions framework and the features it provides to third-party developers.
 		* [Hunting for Bad Apples – Part 1 - Richie Cyrus](https://securityneversleeps.net/2018/06/25/hunting-for-bad-apples-part-1/)
+		* [Logs Unite! Forensic Analysis Of Apple Unified Logs - Sarah Edwards(2017)](https://papers.put.as/papers/macosx/2017/LogsUnite.pdf)
 	* **Talks & Presentations**
 		* [When Macs Come Under ATT&CK - Richie Cyrus(OBTSv1.0)](https://www.youtube.com/watch?v=X99QKMCVOBc)
 			* This talk will discuss common tactics, techniques and procedures used by attackers on MacOS systems, as well as methods to detect adversary activity. We will take a look at known malware, mapping the techniques utilized to the MITRE ATT&CK framework. Attendees will leave equipped to begin hunting for evil lurking within their MacOS fleet.
@@ -670,6 +833,19 @@
 			* [Part 1: Intro to Threat Hunting with Powershell Empire, Windows event logs, and Graylog - Spartan2194(2017)](https://holdmybeersecurity.com/2017/12/05/part-1-intro-to-threat-hunting-with-powershell-empire-windows-event-logs-and-graylog/)
 			* [Spotting the Adversary with Windows Event Log Monitoring - NSA](https://www.nsa.gov/ia/_files/app/Spotting_the_Adversary_with_Windows_Event_Log_Monitoring.pdf)
 			* [Windows Event ID 4649 “A replay attack was detected “ — Oh really? Are we under ATTACK? Should we do Incident Response? - Iveco Aliza(2020)](https://medium.com/@ivecodoe/windows-event-id-4649-a-replay-attack-was-detected-ab02968d91ee)
+			* [Sysmon Threat Analysis Guide - Andy Green(2020)](https://www.varonis.com/blog/sysmon-threat-detection-guide/)
+			* [Blue Team Hacks - Binary Rename](https://mgreen27.github.io/posts/2019/05/12/BinaryRename.html)
+				* "In this post I thought I would share an interesting proof of concept I developed to detect Binary Rename of commonly abused binaries. Im going to describe the detection, its limitations and share the code."
+			* [Binary Rename 2](https://mgreen27.github.io/posts/2019/05/29/BinaryRename2.html)
+				* In this post I am focusing on static detection, that is assessing files on disk. I am going to describe differences between both Yara and Powershell based detections, then share the code.
+		* **Papers**
+			* [Detecting Security Incidents Using Windows WorkstationEvent Logs - Russ Anthony(2013)](https://www.sans.org/reading-room/whitepapers/logging/detecting-security-incidents-windows-workstation-event-logs-34262)
+				* Windows event logs can be an extremely valuable resource todetect securityincidents. While many companies collect logs from security devices and critical serversto comply with regulatory requirements, few collect them from their windows workstations;even fewer proactively analyze theselogs.  Collecting and analyzingworkstation logs is critical because it is increasinglyatthe workstation levelwherethe initial compromiseishappening.If we areto get better at detecting theseinitial compromisesthen it is imperative that we develop an efficient,common sense approach to collectingand analyzingthese events.
+			* [Windows Logon Forensics - Sunil Gupta(2013)](https://www.sans.org/reading-room/whitepapers/forensics/windows-logon-forensics-34132)
+				* A compromised Windows® system's forensic analysis may not yield much relevant information about the actual target. Microsoft® Windows Operating System uses a variety of logon and authentication mechanisms to connect to remote systems over the network. Incident Response and Forensic Analysis outcomes are prone to errors without proper understanding of different account types, Windows logons and authentication methods available on a Windows platform. This paper walks thru the logon and authentication and how they are audited for various Windows account types’ logons for a successful investigation. In the process it describes common authentication protocols such as Kerberos, NTLM to better understanding of the logon process communications in the Windows environment.
+			* [Detecting Advanced Threats With Sysmon, WEF, and ElasticSearch - Josh Lewis(2015)](https://www.root9b.com/sites/default/files/whitepapers/R9B_blog_005_whitepaper_01.pdf)
+		* **Talks & Presentations**
+			* 
 	* **Active Directory**
 		* **101**
 			* [Monitoring Active Directory for Signs of Compromise - docs.ms](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/monitoring-active-directory-for-signs-of-compromise)
@@ -705,6 +881,13 @@
 		* **Articles/Writeups**
 			* [Hunting COM Objects - Charles Hamilton](https://www.fireeye.com/blog/threat-research/2019/06/hunting-com-objects.html)
 			* [Hunting COM Objects (Part Two) - Brett Hawkins](https://www.fireeye.com/blog/threat-research/2019/06/hunting-com-objects-part-two.html)
+	* **Event Logs**
+		* **Articles/Writeups**
+		* **Talks/Presentations/Videos**
+			* [What Event Logs? Part 1: Attacker Tricks to Remove Event Logs - Matt Bromiley(SANS DFIR 2018)](https://www.youtube.com/watch?v=7JIftAw8wQY)
+				* In part 1 of this series, SANS instructor and incident responder Matt Bromiley focuses on techniques, old and new, that attackers are using to neutralize event logs as a recording mechanism. Ranging from clearing of logs to surgical, specific event removal, in this webcast we will discuss how the attackers are doing what they're doing, and the forensic techniques we can use to detect their methods. There has been a lot of discussions lately about attackers' ability to fool the system into not writing event logs - but are our attackers truly staying hidden when they do this? Let's find out!
+			* [What Event Logs Part 2 Lateral Movement without Event Logs - Matt Bromiley(SANS DFIR 2018)](https://www.youtube.com/watch?v=H8ybADELHzk)
+				* In part 2 of this series, SANS instructor and incident responder Matt Bromiley will discuss techniques to identify lateral movement when Windows Event Logs are not present. Sometimes logs roll without preservation, and sometimes attackers remove them from infected systems. Despite this, there are still multiple artifacts we can rely on to identify where our attackers came from, and where they went. In this webcast, we'll discuss the techniques and artifacts to identify this activity.
 	* **Lateral Movement**
 		* **Articles/Writeups**
 			* [Threat Hunting for PsExec, Open-Source Clones, and Other Lateral Movement Tools - Tony Lambert(2018)](https://redcanary.com/blog/threat-hunting-psexec-lateral-movement/)
@@ -748,6 +931,9 @@
 	* **Processes**
 		* **Articles/Writeups**
 			* [Verifying Running Processes against VirusTotal - Domain-Wide - Rob VandenBrink(isc.sans 2019)](https://isc.sans.edu/diary/Verifying+Running+Processes+against+VirusTotal+-+Domain-Wide/25078)
+		* **Talks/Presentations/Videos**
+			* [Tricking modern endpoint security products - Michel Coene(SANS2020)](https://www.youtube.com/watch?v=xmNpS9mbwEc)
+				* The current endpoint monitoring capabilities we have available to us are unprecedented. Many tools and our self/community-built detection rules rely on parent-child relationships and command-line arguments to detect malicious activity taking place on a system. There are, however, ways the adversaries can get around these detections. During this presentation, we'll talk about the following techniques and how we can detect them: Parent-child relationships spoofing; Command-line arguments spoofing; Process injection; Process hollowing
 		* **Tools**
 			* [PE-Sieve](https://github.com/hasherezade/pe-sieve)
 				* [..]tool that helps to detect malware running on the system, as well as to collect the potentially malicious material for further analysis. Recognizes and dumps variety of implants within the scanned process: replaced/injected PEs, shellcodes, hooks, and other in-memory patches. Detects inline hooks, Process Hollowing, Process Doppelgänging, Reflective DLL Injection, etc.
@@ -767,22 +953,31 @@
 			* [DeepBlueCLI](https://github.com/sans-blue-team/DeepBlueCLI)
 				* a PowerShell Module for Threat Hunting via Windows Event Logs
 			* [Securing PowerShell in the Enterprise - Australian Cyber Security Center(2020)](https://www.cyber.gov.au/publications/securing-powershell-in-the-enterprise)
-				* This document describes a maturity framework for PowerShell in a way that balances the security and business requirements of organisations. This maturity framework will enable organisations to take incremental steps towards securing PowerShell across their environment.
+				* This document describes a maturity framework for PowerShell in a way that balances the security and business requirements of organisations. This maturity framework will enable organisations to take incremental steps towards securing PowerShell across their environment; Appendix E - Strings for log analysis
 			* [From PowerShell to P0W3rH3LL – Auditing PowerShell - ingmar.koecher(2018)](https://www.eventsentry.com/blog/2018/01/powershell-p0wrh11-securing-powershell.html)
 			* [Windows Log Hunting with PowerShell](http://909research.com/windows-log-hunting-with-powershell/)
-			* [Securing PowerShell in the Enterprise - Australian Cyber Security Center(2020)](https://www.cyber.gov.au/publications/securing-powershell-in-the-enterprise)
-				* Appendix E - Strings for log analysis
 			* [Uncovering Indicators of Compromise (IoC) Using PowerShell, Event Logs, and a Traditional Monitoring Tool](https://www.sans.org/reading-room/whitepapers/critical/uncovering-indicators-compromise-ioc-powershell-event-logs-traditional-monitoring-tool-36352)
 			* [Detecting Offensive PowerShell Attack Tools - adsecurity.org](https://adsecurity.org/?p=2604)
+			* [Attack and Defense Around PowerShell Event Logging - Mina Hao(2019)](https://nsfocusglobal.com/Attack-and-Defense-Around-PowerShell-Event-Logging)
+				* This document dwells upon security features of the logging function of major versions of PowerShell, as well as attack means, ideas, and techniques against each version of the event viewer.
+			* [Detecting Modern PowerShell Attacks with SIEM - Justin Henderson](https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1511980157.pdf)
+			* [PowerShell Security: Is itEnough? - Timothy Hoffman](https://www.sans.org/reading-room/whitepapers/microsoft/powershell-security-enough-38815)
+				* "This paper aims to analyze a PowerShell-based attack campaign and evaluate each security feature in its ability to effectively prevent or detect the attacksindividually and collectively.  These results will in no way be all inclusive, as technology is ever-changing, andnewmethods are emergingto counteract current security measures"
 		* **Talks/Presentations/Videos**
 			* [Hunting for PowerShell Abuse - Teymur Kheirkhabarov(Offzone2019)](https://www.youtube.com/watch?v=_zDdf0GGqdA&list=PL0xCSYnG_iTuNQV9RrCLHdnZgthISKxP4&index=4&t=0s)
 				* [Slides](https://speakerdeck.com/heirhabarov/hunting-for-powershell-abuse)
 				* In the presentation author is going to demostrate an approaches for detection of PowerShell abuses based on different event sources like native Windows logging capabilities as well as usage of additional tools, like Sysmon or EDR solutions. How to collect traces of using PowerShell, how to filter out false positives, and how to find evidence of malicious uses among the remaining after filtering volume of events — all these questions will be answered in the talk for present and future threat hunters.
 			* [Tracking Activity and Abuse of PowerShell - Carlos Perez(PSConEU 2019)](https://www.youtube.com/watch?v=O-80e7z4THo)
 				* [Slides](https://github.com/darkoperator/Presentations/blob/master/PSConfEU%202019%20Tracking%20PowerShell%20Usage.pdf)
+			* [Investigating PowerShell Attacks - Ryan Kazanciyan, Matt Hastings(BHUSA2014)](https://www.youtube.com/watch?v=zUbTM9N7V7w)
+				* [Paper](https://www.blackhat.com/docs/us-14/materials/us-14-Kazanciyan-Investigating-Powershell-Attacks-WP.pdf)
+				* This presentation will focus on common attack patterns performed through PowerShell - such as lateral movement, remote command execution, reconnaissance, file transfer, and establishing persistence - and the sources of evidence they leave behind. We'll demonstrate how to collect and interpret these forensic artifacts, both on individual hosts and at scale across the enterprise. Throughout the presentation, we'll include examples from real-world incidents and recommendations on how to limit exposure to these attacks."
 		* **Tooling**
 			* [Kansa](https://github.com/davehull/Kansa)
 				* A modular incident response framework in Powershell. It's been tested in PSv2 / .NET 2 and later and works mostly without issue. It uses Powershell Remoting to run user contributed, ahem, user contri- buted modules across hosts in an enterprise to collect data for use during incident response, breach hunts, or for building an environmental baseline.
+	* **ShimCache**
+		* **Articles/Writeups**
+			* [Is Windows ShimCache a threat hunting goldmine? - Tim Bandos](https://www.helpnetsecurity.com/2018/07/10/windows-shimcache-threat-hunting/)
 	* **Services**
 		* [Services: Windows 10 Services(ss64)](https://ss64.com/nt/syntax-services.html)
 			* A list of the default services in Windows 10 (build 1903).
@@ -873,3 +1068,15 @@
 			* [Part 7: Firewall log collection](https://vdalabs.com/2020/03/25/graylog-firewall-syslog/)
 * **Splunk**<a name='splunk'></a>
 * **Articles/Writeups**
+		* [Hunting Red Team Empire C2 Infrastructure](http://www.chokepoint.net/2017/04/hunting-red-team-empire-c2.html)
+
+		* [Hunting in Memory](https://www.endgame.com/blog/technical-blog/hunting-memory)
+		* [Taking Hunting to the Next Level Hunting in Memory - Jared Atkinson 2017](https://www.youtube.com/watch?v=3RUMShnJq_I)
+
+	* **Talks & Presentations**
+		* [Utilizing SysInternal Tools for IT Pros](http://www.microsoftvirtualacademy.com/training-courses/utilizing-sysinternals-tools-for-it-pros#fbid=1IKsqgyvnWp)
+
+
+
+* [Bootsy](https://github.com/IndustryBestPractice/Bootsy)
+	* Designed to be installed on a fresh install of raspbian on a raspberry pi, by combining Respounder (Responder detection) and Artillery (port and service spoofing) for network deception, this tool allows you to detect an attacker on the network quickly by weeding out general noisy alerts with only those that matter.

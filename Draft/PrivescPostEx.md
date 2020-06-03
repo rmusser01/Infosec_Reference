@@ -103,7 +103,6 @@
 
 
 ------------------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------------------
 ## <a name="privesc"></a>Privilege Escalation 
 
 ---------------
@@ -3654,6 +3653,8 @@
 	* [Modern Evasion Techniques - Jason Lang(Derbycon7 2017)](https://www.irongeek.com/i.php?page=videos/derbycon7/t110-modern-evasion-techniques-jason-lang)
 		* As pentesters, we are often in need of working around security controls. In this talk, we will reveal ways that we bypass in-line network defenses, spam filters (in line and cloud based), as well as current endpoint solutions. Some techniques are old, some are new, but all work in helping to get a foothold established. Defenders: might want to come to this one.
 		* [Slides](https://www.slideshare.net/JasonLang1/modern-evasion-techniques)
+	* [Tricking modern endpoint security products - Michel Coene(SANS2020)](https://www.youtube.com/watch?v=xmNpS9mbwEc)
+		* The current endpoint monitoring capabilities we have available to us are unprecedented. Many tools and our self/community-built detection rules rely on parent-child relationships and command-line arguments to detect malicious activity taking place on a system. There are, however, ways the adversaries can get around these detections. During this presentation, we'll talk about the following techniques and how we can detect them: Parent-child relationships spoofing; Command-line arguments spoofing; Process injection; Process hollowing
 * **Techniques**
 	* **Code Injection**
 	* **Debuggers**
@@ -4199,3 +4200,4 @@
 			* Using this tool you can inject x-code/shellcode into PE file. InjectPE works only with 32-bit executable files.
 		* [PowerLoaderEX](https://github.com/BreakingMalware/PowerLoaderEx)
 			* Advanced Code Injection Technique for x32 / x64
+

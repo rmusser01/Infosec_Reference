@@ -40,6 +40,7 @@
 
 
 
+
 ------------------------------------------------------
 ### Career Information<a name="career-info"></a>
 * **101**<a name="101"></a>
@@ -71,21 +72,16 @@
 	* [The story of Totlol](https://web.archive.org/web/20100113220844/http://www.totlol.com/t/story)
 		* Example/reminder of why you don't build your product on someone else's API.
 * **Career Growth/Progression**<a name="growth"></a>
-	* **101**
-		* [Recommended Reading for Developers(2015) - blog.codinghorror.com](https://blog.codinghorror.com/recommended-reading-for-developers/)
-		* [Your Job Title of Tomorrow: Efficiencer - Erik Dietrich](https://daedtech.com/your-job-title-of-tomorrow-efficiencer/)
-		* [Research Debt - Chris Olah, Shan Carter](https://distill.pub/2017/research-debt/)
-	* **Articles/Blogposts/Writeups**
-		* [How Developers Stop Learning: Rise of the Expert Beginner - Erik Dietrich](https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/)
-		* [Things I Learnt The Hard Way (in 30 Years of Software Development) - juliobiason.net](https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/)
-		* [A day at the park - mused](http://kiriakakis.net/comics/mused/a-day-at-the-park)
-		* [The Asshole Filter - Siderea](https://siderea.livejournal.com/1230660.html)
-	* **Talks/Presentations/Videos**
-		* [Hacking a Security Career - Deviant Ollam(WWHF19)](https://www.youtube.com/watch?v=jZFuCYyQB6c&list=PLXF21PFPPXTNXEgkUEBbRgvraxWP3c4Hr&index=2)
-		* [Accelerate Your Career By Building FIVE Critical Professional Skills - Ted Demopoulos](https://www.sans.org/webcasts/accelerate-career-building-critical-professional-skills-112310/success)
-		* [Continuous Skills Improvement For Everyone - Matt Scheurer(OISF19)](http://www.irongeek.com/i.php?page=videos/oisf2019/oisf-2019-03-continuous-skills-improvement-for-everyone-matt-scheurer)
-	* **Tools**
-		* [InfoSec Skills Matrix](https://infosecskillsmatrix.com/rolesskills)
+	* [How Developers Stop Learning: Rise of the Expert Beginner - Erik Dietrich](https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/)
+	* [Your Job Title of Tomorrow: Efficiencer - Erik Dietrich](https://daedtech.com/your-job-title-of-tomorrow-efficiencer/)
+	* [Things I Learnt The Hard Way (in 30 Years of Software Development) - juliobiason.net](https://blog.juliobiason.net/thoughts/things-i-learnt-the-hard-way/)
+	* [Recommended Reading for Developers(2015) - blog.codinghorror.com]
+	* [Research Debt - Chris Olah, Shan Carter](https://distill.pub/2017/research-debt/)
+	* [A day at the park - mused](http://kiriakakis.net/comics/mused/a-day-at-the-park)
+	* [The Asshole Filter - Siderea](https://siderea.livejournal.com/1230660.html)
+	* [Hacking a Security Career - Deviant Ollam(WWHF19)](https://www.youtube.com/watch?v=jZFuCYyQB6c&list=PLXF21PFPPXTNXEgkUEBbRgvraxWP3c4Hr&index=2)
+	* [Accelerate Your Career By Building FIVE Critical Professional Skills - Ted Demopoulos](https://www.sans.org/webcasts/accelerate-career-building-critical-professional-skills-112310/success)
+	* [Continuous Skills Improvement For Everyone - Matt Scheurer(OISF19)](http://www.irongeek.com/i.php?page=videos/oisf2019/oisf-2019-03-continuous-skills-improvement-for-everyone-matt-scheurer)
 * **Careers in Information Security**<a name="infosec-careers"></a>
 	* **101/General**
 		* [NICE Cybersecurity Workforce Framework - NICCS.us-cert.gov](https://niccs.us-cert.gov/workforce-development/cyber-security-workforce-framework)
@@ -359,6 +355,10 @@
 	* [How to Be a Career-Changing Mentor — 25 Tips From The Best Mentors We Know - FirstRoundReview](https://firstround.com/review/how-to-be-a-career-changing-mentor-25-tips-from-the-best-mentors-we-know/)
 * **Metrics**<a name="metrics"></a>
 	* [Be Careful What You Measure - Mark Graham Brown](https://corporater.com/en/the-chicken-kpi-be-careful-of-what-you-measure/)
+	* [How to Use Metrics - George K. Campbell(2006)](https://www.csoonline.com/article/2120344/how-to-use-metrics.html)
+	* [Security metric techniques: How to answer the 'so what?' - Bill Brenner](https://www.csoonline.com/article/2125789/security-metric-techniques--how-to-answer-the--so-what--.html)
+	* [Security Value Made Visible: How American Water's Bruce Larson uses a simple metric to build bridges with business partners and justify security spending at the same time - Scott Berinato](https://www.csoonline.com/article/2120656/security-value-made-visible.html)
+	* [A key performance indicator for infosec organizations: Using probabilistic risk KPIs to direct complex risk engineering efforts - Ryan McGeehan(2019)](https://medium.com/starting-up-security/a-key-performance-indicator-for-infosec-organizations-7f654b7cd256)
 * **Networking**<a name="network"></a>
 	* [That’s still not my RJ 45 Jack - IRL Networking for Humans Pt 2 - Johnny Xmas](https://www.irongeek.com/i.php?page=videos/converge2015/%22track112-how-to-dress-like-a-human-being-irl-networking-for-humans-pt-2-johnny-xmas%22)
 		* We're smart. We're incredibly tech savvy. We can rock some mad OSINT with our Google-Fu. We're 85% +-10% sure which part of the body a hat goes on. We think you can never have enough beard. WE THINK THAT'S ACCEPTABLE. The second in his multi-part series on building social prowess, this talk will focus on the inconvenient truth of your book always, always, always being judged by its cover, and how to deal with that with minimal effort so you can get back to sewing more pockets on your utilikilt. This talk covers both male and female situations, though it is primarily unisex. We'll get you set up with a core wardrobe and hygenic skillset so you'll be able to roll out of bed, spend minimal time "getting ready," rock the dreaded client-facing meeting or industry meetup, and get you back home where you can safely take your pants off.

@@ -3,57 +3,51 @@
 ----------------------------------
 ## Table of Contents
 - [101](#101)
-- [Classes/Types of Vulnerabilities](#vulnerabilityclass)
+- [Classes/Types of Vulnerabilities](#classes)
 - [How to suck at infosec](#suck)
 - [Getting started with infosec](#getstart)
-- [Being the First Security Person](#fps)
+- [Being the First Security Person/Starting a Security Program](#fps) 
+- [Scaling a Security Program](#scalingsec)
+- [Building a Security Team](#buildteam)
+- [Red Team, Blue Team, Purple Team, Green Team](#team)
 - [Cognitive Biases](#bias)
+- [Mental Models](#mm)
+- [Comedy](#comedy)
+- [Command Line](#cli)
 - [Critical Thinking](#crittihnk)
 - [Common Vulnerability Scoring System](#cvss)
 - [Data Breaches](#db)
 - [Fundamental Papers](#fund)
-- [General Good Stuff](#)
+- [General Good Stuff](#general)
 - [Helping Others](#helpo)
 - [History](#history)
 - [How to ask better questions](#bq)
+- [Information Processing](#ip)
 - [Learning](#learning)
+- [Networking](#networking)
 - [Normalization of Deviance](#nom)
 - [Problem Solving](#ps)
 - [Regular Expressions](#rex)
 - [Research](#research)
 - [Risk](#risk)
 - [Securing yourself](#secself)
+- [System Design](#systemdesign)
 - [Task Automation](#automation)
 - [The Web](#web)
+- [Zero Trust](#zerotrust)
 
-* To Do:
-	* Add 'Day 0' Stuff - First member of the security team
-	* [Chart.xkcd](https://github.com/timqian/chart.xkcd)
-		* Chart.xkcd is a chart library that plots “sketchy”, “cartoony” or “hand-drawn” styled charts.
 
-https://github.com/donnemartin/system-design-primer
-* [RFC 3552: Guidelines for Writing RFC Text on Security Considerations](https://tools.ietf.org/html/rfc3552)
-https://github.com/pomerium/awesome-zero-trust
-https://securethelogs.com/2019/06/25/exploring-the-zero-trust-model/
-https://www.youtube.com/watch?v=-jNkjuWMFrk
 
-* **Software Testing**
-	* [When to Test and How to Test It - Bruce Potter - Derbycon7](https://www.youtube.com/watch?v=Ej97WyEMRkI)
-		* “I think we need a penetration test” This is one of the most misunderstood phrases in the security community. It can mean anything from “Someone should run a vulnerability scan against a box” to “I’d like nation-state capable actors to tell me everything that wrong with my enterprise” and everything in between. Security testing is a complex subject and it can be hard to understand what the best type of testing is for a given situation. This talk will examine the breadth of software security testing. From early phase unit and abuse testing to late phase penetration testing, this talk will provide details on the different tests that can be performed, what to expect from the testing, and how to select the right tests for your situation. Test coverage, work effort, attack simulation, and reporting results will be discussed. Also, this talk will provide a process for detailed product assessments, i.e.: if you’ve got a specific product you’re trying to break, how do you approach assessing the product in a way that maximizes your chance of breaking in as well as maximizing the coverage you will get from your testing activity.
-
-* https://medium.com/starting-up-security/measuring-a-red-team-or-penetration-test-44ea373e5089
-* https://medium.com/starting-up-security/killing-chicken-little-measure-and-eliminate-risk-through-forecasting-ecdf4c7e9575
-* https://medium.com/starting-up-security
-* https://www.yash.com/blog/red-team-assessment-and-penetration-testing/
-* https://www.redteamsecure.com/businesses-beware-of-security-reporting-mills/
-* https://tbgsecurity.com/pen-tests-and-red-teams-are-not-the-same/
-* https://www.gartner.com/doc/3801866/select-penetration-testing-provider
+* **To Do:**
+	* Make things better
 
 
 -------------------------
 ### General Information
 * **101**<a name="101"></a>
 	* **General**
+		* [Security Engineering (3rd ed) - Ross Anderson](https://www.cl.cam.ac.uk/~rja14/book.html)
+		* [10 Immutable Laws of Security Administration - Scott Culp(docs.ms)](https://docs.microsoft.com/en-us/previous-versions//cc722488(v=technet.10)?redirectedfrom=MSDN)
 		* [Learning the Ropes 101: Introduction - zsec.uk](https://blog.zsec.uk/101-intro/)
 		* [InfoSec Newbie List by Mubix](https://gist.github.com/mubix/5737a066c8845d25721ec4bf3139fd31)
 		* [infosec_getting_started](https://github.com/gradiuscypher/infosec_getting_started)
@@ -63,11 +57,13 @@ https://www.youtube.com/watch?v=-jNkjuWMFrk
 		* [Software Engineering Body of Knowledge (SWEBOK) - IEEE](https://www.computer.org/education/bodies-of-knowledge/software-engineering)
 		* [Infra Living Standard — whatwg.org](https://infra.spec.whatwg.org/)
 			* Last Updated 30 August 2019; The Infra Standard aims to define the fundamental concepts upon which standards are built.
-	* **Mentatity**
+	* **Mentality**
 		* [One week of bugs - danluu.com](http://danluu.com/everything-is-broken/)
 		* [I could do that in a weekend! - danluu.com](https://danluu.com/sounds-easy/)
 		* [Zero-One-Infinity Rule - catb.org](http://www.catb.org/jargon/html/Z/Zero-One-Infinity-Rule.html)
 		* [Improving Infosec (or any Community/Industry) in One Simple but Mindful Step - Matt Graeber](https://medium.com/@mattifestation/improving-infosec-or-any-community-industry-in-one-simple-but-mindful-step-651e18296f9)
+		* [Tacit Knowledge](https://en.wikipedia.org/wiki/Tacit_knowledge)
+			* Tacit knowledge or implicit knowledge (as opposed to formal, codified or explicit knowledge) is the kind of knowledge that is difficult to transfer to another person by means of writing it down or verbalizing it. For example, that London is in the United Kingdom is a piece of explicit knowledge that can be written down, transmitted, and understood by a recipient. However, the ability to speak a language, ride a bicycle, knead dough, play a musical instrument, or design and use complex equipment requires all sorts of knowledge which is not always known explicitly, even by expert practitioners, and which is difficult or impossible to explicitly transfer to other people.
 	* **Things**
 		* [Every TED Talk Ever, In One Brutal Parody - FastCompany](https://www.fastcompany.com/3060820/every-ted-talk-ever-in-one-brutal-parody)
 		* [The Most Important Productivity Lesson I Ever Learned - Daniel Messler](https://danielmiessler.com/blog/the-most-important-productivity-lesson-i-ever-learned/)
@@ -90,7 +86,7 @@ https://www.youtube.com/watch?v=-jNkjuWMFrk
 	* [10 Immutable Laws of Security (Microsoft TechNet) Non-original](https://www.wciapool.org/pdf/Tab_5_10_Immutable_LawsofSecurity.pdf)
 	* [Ten Immutable Laws Of Security (Version 2.0) - docs.ms](https://docs.microsoft.com/en-us/archive/blogs/rhalbheer/ten-immutable-laws-of-security-version-2-0)
 	* [You Can’t Do Everything: The Importance of Prioritization in Security - RecordedFuture](https://www.recordedfuture.com/vulnerability-threat-prioritization/)
-* **Classes/Types of Vulnerabilities**
+* **Classes/Types of Vulnerabilities**<a name="classes"></a>
 	* [MITRE Common Attack Pattern Enumeration and Classification(CAPEC)](https://capec.mitre.org)
 	* [Race Condition Exploits - Prabhaker Mateti](https://web1.cs.wright.edu/~pmateti/InternetSecurity/Lectures/RaceConditions/index.html)
 * **How to Suck at InfoSec**<a name="suck"></a>
@@ -101,18 +97,113 @@ https://www.youtube.com/watch?v=-jNkjuWMFrk
 		* List of links on getting started in InfoSec/Starting a career.
 	* [Breaking Into Information Security A Modern Guide - 0xsha](https://0xsha.io/posts/breaking-into-information-security-a-modern-guide)
 	* [Passwords in a file - erratasec](https://blog.erratasec.com/2019/01/passwords-in-file.html)
-* **Being the First Security Person**<a name="fps"></a>
-	* [Startup security: Starting a security program at a startup - Evan Johnson(AppSecCali 2019)](https://www.youtube.com/watch?v=6iNpqTZrwjE&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=20&t=0s)
-		* There's no blueprint for how to be successful at a small startup. Startups are quirky, ambiguous, and full of challenges and broken processes. Startups also have a high risk tolerance and rarely introduce security from the beginning. This talk will discuss different approaches to introducing security at a company, how to be successful as a security professional at a startup, and how to integrate your security team with the rest of the company.
+* **Being the First Security Person/Starting a Security Program/Growing it**<a name="fps"></a>
+	* **101**
+		* Asset Inventory
+		* Baseline Hardening
+		* Developer Training/Secure Coding Training
+		* File Integrity Monitoring
+		* Firewall
+		* Logging
+		* Mobile Device Management
+		* Monitoring
+		* Patch Management
+		* Policies
+		* User Security Awareness Training
+		* Vendor Management
+		* Vulnerability Management
+	* **Articles/Blogposts/Writeups**
+		* [Starting Up Security - Ryan McGeehan](https://scrty.io/)
+			* A collection of information security essays and links to help growing teams manage risks.
+		* [A comprehensive guide to security for startups - David Cowan](https://www.bvp.com/atlas/security-for-startups)
+		* [How Early-Stage Startups Can Enlist The Right Amount of Security As They Grow - firstround.com](https://firstround.com/review/how-early-stage-startups-can-enlist-the-right-amount-of-security-as-they-grow/)
+		* [Starting Up Security - Ryan McGeehan](https://medium.com/starting-up-security/starting-up-security-87839ab21bae)
+		* [Killing “Chicken Little”: Measure and eliminate risk through forecasting. - Ryan McGeehan](https://medium.com/starting-up-security/killing-chicken-little-measure-and-eliminate-risk-through-forecasting-ecdf4c7e9575)
+		* [OWASP Security Champions Playbook](https://wiki.owasp.org/index.php/Security_Champions_Playbook)
+		* [A bug goes skateboarding on Boehm’s Curve - Ulf Eriksson(2013)](https://reqtest.com/general/a-bug-goes-skateboarding-on-boehms-curve/)
+	* **Talks/Presentations/Videos**
+		* [Pushing left like a boss - Tanya Janca(DevSecCon Singapore2018)](https://www.youtube.com/watch?v=8kqtrX6C10c&feature=youtu.be)
+			* With incident response and penetration testing currently receiving most of our application security dollars, it would appear that industry has decided to treat the symptom instead of the disease. “Pushing left” refers to starting security earlier in the SDLC; addressing the problem throughout the process. From scanning your code with a vulnerability scanner to red team exercises, developer education programs and bug bounties, this talk will show you how to ‘push left’, like a boss.
+		* [Starting Strength for AppSec - Fredrick Lee(OWASP AppSec Cali2019)](https://www.youtube.com/watch?v=kGt3pVDloy0&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=5)
+			* [Slides](https://static.sched.com/hosted_files/appseccalifornia2019/17/AppSecCali2019-StartingStrengthForAppSec.pdf)
+		* [Startup security: Starting a security program at a startup - Evan Johnson(OWASP AppSecCali 2019)](https://www.youtube.com/watch?v=6iNpqTZrwjE&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=19)
+			* There's no blueprint for how to be successful at a small startup. Startups are quirky, ambiguous, and full of challenges and broken processes. Startups also have a high risk tolerance and rarely introduce security from the beginning. This talk will discuss different approaches to introducing security at a company, how to be successful as a security professional at a startup, and how to integrate your security team with the rest of the company.
+		* [Twubhubbook: Like an Appsec Program, but for Startups - Brent Johnson, Neil Matatall(OWASP AppSec CA 2017)](https://www.youtube.com/watch?v=JEE7wXHa1kY&feature=youtu.be)
+			* Simulated walk through of two 'security' contractors being brought on to establish security within a 'startup'. Good talk.
+		* [We Come Bearing Gifts: Enabling Product Security with Culture and Cloud - Astha Singhal, Patrick Thomas(OWASP AppSec Cali2018)](https://www.youtube.com/watch?v=L1WaMzN4dhY&feature=youtu.be)
+			* This talk explores that counter-intuitive premise, and shows how it is not just possible but *necessary* to discard many traditional security behaviors in order to support modern high-velocity, cloud-centric engineering teams. For the product security team at Netflix, this is the logical implication of a cultural commitment to enabling the organization. Attendees will learn how to replace heavy-handed gating with an automation-first approach, and build powerful security capabilities on top of cloud deployment primitives. Specific examples including provable application identity, immutable and continuous deployment, and secret bootstrapping illustrate how this approach balances security impact with engineering enablement.
+		* [starting an AppSec Program: An Honest Retrospective - John Melton](https://www.youtube.com/watch?v=ETkHISgEh3g&feature=youtu.be)
+			* This talk will cover the lessons learned from a 2-year journey starting an appsec program at a small-medium sized company that previously had no security program. This will be an honest look at what worked, what didn't work, as well as a follow-up analysis. There will be plenty of stories, common sense perspective, as well as discussion around goal-setting and execution. This will be the talk I wish I had two years ago when I was starting this adventure.
+		* [Startup security: Starting a security program at a startup - Evan Johnson(AppSecCali 2019)](https://www.youtube.com/watch?v=6iNpqTZrwjE&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=20&t=0s)
+			* There's no blueprint for how to be successful at a small startup. Startups are quirky, ambiguous, and full of challenges and broken processes. Startups also have a high risk tolerance and rarely introduce security from the beginning. This talk will discuss different approaches to introducing security at a company, how to be successful as a security professional at a startup, and how to integrate your security team with the rest of the company.
+		* [Jumpstarting Your Appsec Program - Julia Knecht & Jacob Lords(BSidesSLC 2020)](https://www.youtube.com/watch?v=Wgob-wbQ26w&list=PLqVzh0_XpLfSJ2Okt38acDdO_xu2zKYmK&index=17&t=0s)
+		* [Building a Modern Security Engineering Organization - Zane Lackey(OWASP AppSec California2015](https://www.youtube.com/watch?v=aJ-RGaCiDSM)
+			* Continuous deployment and the DevOps philosophy have forever changed the ways in which businesses operate. This talk with discuss how security adapts effectively to these changes, specifically covering: Practical advice for building and scaling modern AppSec and NetSec programs; Lessons learned for organizations seeking to launch a bug bounty program; How to run realistic attack simulations and learn the signals of compromise in your environment
+		* [Where do I start The first 365 days of building a security program - Hudson Bush(ShellCon2018)](https://www.youtube.com/watch?v=uO7ybTOb5OE&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN&index=15)
+			* Scenario: You've been put in charge of InfoSec for a business with no existing security posture and the executive team thinks that Antivirus and Firewall is a sufficient InfoSec budget. They expect results in one year. If you're thinking '`Oh $(*7, I have to do what?'`, this talk is for you. At the end of this talk you will have a roadmap for the first year of implementing a security program, with some understanding of what those who have come before you have done. I hope to explain my mistakes so that you don't have to make mine; you can make your own.
+		* [Working with Developers for Fun and Progress - Leif Dreizler(OWASP AppSec Cali2019)](https://www.youtube.com/watch?v=ltXYbIacHr8&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=17)
+			* Forging a strong relationship with developers is essential part of creating an impactful AppSec program. Without it, your team will have little idea what's going on and will have trouble getting bugs fixed and features shipped. Segment has built strong ties to developers using our competition-based training featuring Burp Suite and OWASP Juice Shop, partnership during implementation of tooling, and contributions to the existing codebase. This presentation is chock full of practical examples and references that attendees can bring back to their organization.
+* **Scaling a Security Program**<a name="scalingsec"></a>
+	* **101**
+		* [How to 10X Your Company’s Security (Without a Series D) - Clint Gibler(BSidesSF2020)](https://www.youtube.com/watch?v=tWA_EBNsQH8&feature=emb_title)
+			* [Slides](https://docs.google.com/presentation/d/1lfEvXtw5RTj3JmXwSQDXy8or87_BHrFbo1ZtQQlHbq0/mobilepresent?slide=id.g6555b225cd_0_1069)
+			* I’ll summarize and distill the insights, unique tips and tricks, and actionable lessons learned from a vast number of DevSecOps/modern AppSec talks and blog posts, saving attendees 100s of hours. I’ll show where we’ve been, where we’re going, and provide a lengthy bibliography for further review.
+	* **Articles/Blogposts/Writeups**
+		* [Scaling Appsec at Netflix - Astha Singhal](https://medium.com/@NetflixTechBlog/scaling-appsec-at-netflix-6a13d7ab6043)
+	* **Talks/Presentations/Videos**
+		* [DevSecOps State of the Union - Clint Gibler(BSidesSF 2019)](https://www.youtube.com/watch?v=AusPKzwNnMg)
+			* Many companies have shared their lessons learned in scaling their security efforts, leading to hundreds of blog posts and conference talks. Sharing knowledge is fantastic, but when you're a busy AppSec engineer or manager struggling to keep up with day-to-day requirements, it can be difficult to stay on top of or even be aware of relevant research. This talk will summarize and distill the unique tips and tricks, lessons learned, and tools discussed in a vast number of blog posts and conference talks over the past few years and combine it with knowledge gained from in-person discussions with AppSec engineers at a number of companies with mature security teams. Topics covered will include: Principles, mindsets, and methodologies of highly effective AppSec teams, Best practices in developing security champions and building a positive security culture, High value engineering projects that can prevent classes of bugs, How and where to integrate security automation into the CI/CD process in a high signal, low noise way, Open source tools that help with one or more of the above. Attendees will leave this talk with an understanding of the current state of the art in DevSecOps, links to tools they can use, resources where they can dive into specific topics of interest, and most importantly an actionable path forward for taking their security program to the next level.
+		* [Efforts in Scaling Application Security Programs - Eric Fay(ShellCon2018)](https://www.youtube.com/watch?v=YNHqDGL0goo&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN&index=10)
+			* With organizational success comes the exciting period of ever-increasing scale and scope. This talk will cover some of the past and current efforts that Eric personally took on while creating and scaling the application security program at Hulu. A retrospective look will be taken at the focus points, tradeoffs and decisions made by the application security team while keeping up with the growth and continued success of Hulu.
+		* [Scale your security with DevSecOps: 4 valuable mindsets and principles - Clint Gibler(2019)](https://techbeacon.com/devops/how-scale-security-devsecops-4-valuable-mindsets-principles)
+		* [A​ Pragmatic Approach for Internal Security Partnerships - Scott Behrens, Esha Kanekar(OWASP AppSecCali 2019)](https://www.youtube.com/watch?v=HIdexRqjpWc&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=22)
+			* Why do we have such a hard time getting engineering teams to care about vulnerabilities? How is it that we are fixing lots of vulnerabilities, yet are still falling ever further behind on the actual risks? These questions both have the same answer, but getting to it requires empathy, trust, courage, and a giant step back from our day-to-day approach to security. In this talk we will share our experiences about creating proactive partnerships with engineering and product teams. From the ways we have seen this fail to recent success stories, we will illustrate specific practices that help developers and security teams focus and align on a shared view of risk, rather than a laundry list of vulnerabilities: the leverage that comes from enabling rather than gating, automating for visibility and action to manage scale, threat modeling across organizations rather than individual applications, and the particulars of how we get big security features onto busy product teams' roadmaps.
+		* [Efforts in Scaling Application Security Programs - Eric Fay(ShellCon2018)](https://www.youtube.com/watch?v=YNHqDGL0goo&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN&index=10)
+			* With organizational success comes the exciting period of ever-increasing scale and scope. This talk will cover some of the past and current efforts that Eric personally took on while creating and scaling the application security program at Hulu. A retrospective look will be taken at the focus points, tradeoffs and decisions made by the application security team while keeping up with the growth and continued success of Hulu.
+		* [Year[0]: AppSec at a Startup - Leif Dreizler(LASCON2019)](https://www.youtube.com/watch?v=ImJqBX0OXew&app=desktop)
+			* Have you wanted to be on the application security team at a startup, but were worried about having an employer that can’t figure out how to monetize its user base, being compensated in potentially worthless stock options, or discovering your company’s business model is based on selling a $400 juicer and expensive juice packets that could actually be squeezed by hand? If so, then this talk is for you! From the safety of the audience you’ll hear about the first year of an appsec program at a tech startup. We’ll cover how to win over the hearts and minds of your developers, useful tooling/automation, and other topics to rapidly improve the security of a growing SaaS startup.
+		* [(in)Secure Development - Why some product teams are great and others … aren’t... - Koen Hendrix(AppSecCali 2019)](https://www.youtube.com/watch?v=-bZM_48Ghv0&t=0s&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=25)
+			* In this presentation, Koen will share his experiences with Product Teams at Riot Games and how those teams do or do not take security into consideration. Every product team is unique; but they all behave in similar security patterns, and care about security in predictable ways. Using metrics of our Bug Bounty program and security review process, we’ll dissect the impact that team culture and process have on the security posture of a product. The framework that we’ve created allows you to quickly see what makes a good team good, and how other teams can improve. Taking into account how agile organisations want to operate, we will look at some tools you can introduce into your product teams to help raise the security bar.
+		* [The Call is Coming From Inside the House: Lessons in Securing Internal Apps - Hongyi Hu(OWASP AppSec Cali 2019)](https://www.youtube.com/watch?v=c9A8v5hiqoA&t=0s&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=28)
+			* Come hear a dramatic and humorous tale of internal appsec and the technical and management lessons we learned along the way. Even if your focus is on securing external apps, this talk will be relevant for you. You’ll hear about what worked well for us and what didn’t, including: Finding a useful mental model to organize your roadmap; Starting with the basics: authn/z, TLS, etc.; Rolling out Content Security Policy; Using SameSite cookies as a powerful entry point regulation mechanism; Leveraging WAFs for useful detection and response; Using internal apps as a training ground for new security engineers
+* **Building a Security Team**<a name="buildteam"></a>
+	* [How to Build a Security Team and Program - Coleen Coolidge(BSidesSF2017)](https://www.youtube.com/watch?v=b0r5vc_eCoU&feature=youtu.be)
+* **Red Team, Blue Team, Purple Team, Green Team**<a name='team'></a>
+	* See [RedTeam Page](./RT.md)
+	* [The Difference Between Red, Blue, and Purple Teams - Daniel Miessler](https://danielmiessler.com/study/red-blue-purple-teams/)
+	* [Red Teams - Ryan McGeehan(2015)](https://medium.com/starting-up-security/red-teams-6faa8d95f602)
+	* **Purple Teaming**
+		* [Purple Teaming: The Pen-Test Grows Up - Bryce Galbraith](https://www.sans.org/webcasts/purple-teaming-pen-test-grows-111630)
+			* This webcast will cover: Why your annual pen-test is a recipe for disaster, and what you can do about it.; Why many Red and Blue Teams are ineffective despite their efforts, and how to turn this around.; Several real-world TTPs that adversaries utilize (including demos) to completely dominate organizations, shockingly fast.; How to begin to perform adversary emulation and Purple Teaming.; Several helpful tools and resources you can begin to explore immediately...; As Einstein wisely stated, Insanity is doing the same thing over and over again and expecting different results. There is a better way...
+		* [Purple Team Exposed](https://www.youtube.com/watch?v=Mkh5cSnunrI&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN&index=13)
+			* Are you looking to rapidly improve your security posture or train a new member of your security organization? Are you a Blue Team member looking to cross train with Red Team or vice versa? Purple Teaming could be the answer to your problems. You may have already heard about Purple Teaming through a spare think piece online, casual mentions or even rage tweets, but few know what makes a Purple Team. In this talk I will cover how to build your own Purple Team function from the ground up using applied gap analysis, creating meaningful test cases, modifying tools, cross-training possibilities, and automation frameworks. We'll walk through the methodology together so you leave with the tools and experience you need to do it yourself. If implemented, this can give you a better knowledge of your security baseline, improvements in defenses, opportunities for internal training and mentorship, and an increased dialogue between Red and Blue.
+	* **Having a Pentest Performed**
+		* [Red Team Assessment and Penetration Testing - Manga Sridhar Akella](https://www.yash.com/blog/red-team-assessment-and-penetration-testing/)
+		* [Pen Tests and Red Teams are NOT the same - Carole Theriault](https://tbgsecurity.com/pen-tests-and-red-teams-are-not-the-same/)
+		* [Putting your security assessment budget on a leash while avoiding the Pentest Puppy Mill - John Strand, Paul Asadoorian(2013)](https://www.sans.org/webcasts/putting-security-assessment-budget-leash-avoiding-pentest-puppy-mill-96927)
+			* The goal of a penetration test should be to elevate your security, not line the pocket of the pentester. In this webcast, Paul and John discuss ways to structure your pentest so that you aren't paying for shells from a Pentest Puppy Mill, but instead paying for reproducible results that will provide a baseline for future testing.
+	* **Measuring Results of a Red Team/Pentest**
+		* [Measuring a red team or penetration test. - Ryan McGeehan](https://medium.com/starting-up-security/measuring-a-red-team-or-penetration-test-44ea373e5089)
+		* [A Red Team Maturity Model - redteams.fyi](https://redteams.fyi/)
 * **Cognitive Bias**<a name="cbias"></a>
 	* [List of cognitive biases - Wikipedia](https://en.wikipedia.org/wiki/List_of_cognitive_biases)
 	* [58 cognitive biases that screw up everything we do - Business Insider](https://www.businessinsider.com/cognitive-biases-2015-10)
 	* [Mental Models: The Best Way to Make Intelligent Decisions (109 Models Explained) - Farnam Street](https://fs.blog/mental-models/)
 	* [Spotlight effect - Wikipedia](https://en.wikipedia.org/wiki/Spotlight_effect)
-* **Comedy**
+	* [Curse of knowledge - Wikipedia](https://en.wikipedia.org/wiki/Curse_of_knowledge)
+		* The curse of knowledge is a cognitive bias that occurs when an individual, communicating with other individuals, unknowingly assumes that the others have the background to understand. This bias is also called by some authors the curse of expertise, although that term is also used to refer to various other phenomena.
+* **Mental Models**<a name="mm"></a>
+	* [The Map Is Not the Territory - Farnam Street](https://fs.blog/2015/11/map-and-territory/)
+		* The map of reality is not reality. Even the best maps are imperfect. That’s because they are reductions of what they represent. If a map were to represent the territory with perfect fidelity, it would no longer be a reduction and thus would no longer be useful to us. A map can also be a snapshot of a point in time, representing something that no longer exists. This is important to keep in mind as we think through problems and make better decisions.
+	* [Coastline paradox - Wikipedia](https://en.wikipedia.org/wiki/Coastline_paradox)
+		* The coastline paradox is the counterintuitive observation that the coastline of a landmass does not have a well-defined length. This results from the fractal curve-like properties of coastlines, i.e., the fact that a coastline typically has a fractal dimension (which in fact makes the notion of length inapplicable).
+	* [Information Security Mental Models - Chris Sanders](https://chrissanders.org/2019/05/infosec-mental-models/)
+* **Comedy**<a name="comedy"></a>
 	* [The Website is Down #1: Sales Guy vs. Web Dude](https://www.youtube.com/watch?v=uRGljemfwUE)
 	* [BOFH Index](https://bearbin.net/bofh)
 		* This is a collection of links to most of the BOFH stories from 2000 to 2016 (For BOFH episodes from before 2000, please see the [Official Archive)](https://web.archive.org/web/20160106082840/http://bofh.ntk.net/BOFH/index.php).
+	* [Microservices](https://www.youtube.com/watch?v=y8OnoxKotPQ&app=desktop)
+		* Satire or documentary.
 * **Command Line**<a name="cli"><</a>
 	* **Linux/MacOS**
 		* **Articles/Resources**
@@ -122,6 +213,9 @@ https://www.youtube.com/watch?v=-jNkjuWMFrk
 				* [The BashGuide](https://mywiki.wooledge.org/BashGuide)
 					* This guide aims to aid people interested in learning to work with BASH. It aspires to teach good practice techniques for using BASH, and writing simple scripts. This guide is targeted at beginning users. It assumes no advanced knowledge -- just the ability to login to a Unix-like system and open a command-line (terminal) interface. It will help if you know how to use a text editor; we will not be covering editors, nor do we endorse any particular editor choice. Familiarity with the fundamental Unix tool set, or with other programming languages or programming concepts, is not required, but those who have such knowledge may understand some of the examples more quickly.
 				* [Bash Pitfalls - wooledge.org](https://mywiki.wooledge.org/BashPitfalls)
+			* **`*`grep**
+				* [learn_gnugrep_ripgrep](https://github.com/learnbyexample/learn_gnugrep_ripgrep)
+					* Example based guide to mastering GNU grep and ripgrep
 			* **SSH**
 				* [Secure Shell - Wikipedia](https://en.wikipedia.org/wiki/Secure_Shell)
 					* Secure Shell (SSH) is a cryptographic network protocol for operating network services securely over an unsecured network. Typical applications include remote command-line, login, and remote command execution, but any network service can be secured with SSH.
@@ -136,6 +230,7 @@ https://www.youtube.com/watch?v=-jNkjuWMFrk
 					* [A Quick and Easy Guide to tmux - Ham Vocke](https://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
 					* [tmux plugin manager](https://github.com/tmux-plugins/tpm)
 						* Installs and loads tmux plugins.
+					* [Introduction to tmux - ippsec](https://www.youtube.com/watch?v=Lqehvpe_djs)
 					* [.tmux - oh my tmux!](https://github.com/gpakosz/.tmux)
 						* Self-contained, pretty and versatile .tmux.conf configuration file.
 				* **Screen**
@@ -155,6 +250,10 @@ https://www.youtube.com/watch?v=-jNkjuWMFrk
 				* [Linux Productivity Tools](https://code.ornl.gov/km0/lisa19)
 				* [Don Libes' Expect: A Surprisingly Underappreciated Unix Automation Tool - Robert Elder](https://blog.robertelder.org/don-libes-expect-unix-automation-tool/)
 				* [mastering-zsh](https://github.com/rothgar/mastering-zsh)
+			* **Videos**
+				* [Linux Command Line Dojo with Hal Pomeranz(BHIS 2020)](https://www.youtube.com/watch?v=-jNkjuWMFrk)
+					* In this webcast, we have our friend Hal Pomeranz sharing his massive knowledge on Linux. If you’re new to Linux, or if you know it and just want to hear from Hal’s years of using and teaching all things Linux, then this is the webcast for you. 
+					* [Part 2](https://www.youtube.com/watch?v=dtyX7XO-GSg&list=RDCMUCJ2U9Dq9NckqHMbcUupgF0A&index=2)
 			* **Tools**
 				* [explainshell.com](https://github.com/idank/explainshell)
 					* explainshell is a tool (with a web interface) capable of parsing man pages, extracting options and explain a given command-line by matching each argument to the relevant help text in the man page.
@@ -231,13 +330,15 @@ https://www.youtube.com/watch?v=-jNkjuWMFrk
 	* [Ask Good Questions: Deep Dive - Yousef Kazerooni](https://medium.com/@YousefKazerooni/ask-good-questions-deep-dive-dacd8dddc247)
 	* [Relearning the Art of Asking Questions - HBR](https://hbr.org/2015/03/relearning-the-art-of-asking-questions)
 	* [How To Ask Questions The Smart Way - wiki.c2.com](http://wiki.c2.com/?HowToAskQuestionsTheSmartWay)
-* **Information Processing**
+* **Information Processing**<a name="ip"></a>
 	* [Drinking from the Fire Hose: Making Smarter Decisions Without Drowning in Information - Book](https://paradoxesinc.com/portfolio/5104/)
 	* [How to make sense of any mess - Abby Covert](https://www.youtube.com/watch?v=r10Sod44rME)
 * **Learning:**<a name="learning"></a>
 	* **101**
 		* [Effective learning: Twenty rules of formulating knowledge - SuperMemo](http://super-memory.com/articles/20rules.htm)
 		* [Learning How to Learn: Powerful mental tools to help you master tough subjects - Coursera](https://www.coursera.org/learn/learning-how-to-learn)
+		* [Double-loop Learning - Wikipedia](https://en.wikipedia.org/wiki/Double-loop_learning)
+			* Double-loop learning entails the modification of goals or decision-making rules in the light of experience. The first loop uses the goals or decision-making rules, the second loop enables their modification, hence "double-loop". Double-loop learning recognises that the way a problem is defined and solved can be a source of the problem. This type of learning can be useful in organizational learning since it can drive creativity and innovation, going beyond adapting to change to anticipating or being ahead of change.
 		* [The Motivation Secret: How to Maintain Intense Motivation as a Hacker (or Anything) - Luke Stephens](https://medium.com/@hakluke/the-motivation-secret-how-to-maintain-intense-motivation-as-a-hacker-43d8876cc86c)
 		* [Deliberate Practice: What It Is and How to Use It - James Clear](https://jamesclear.com/deliberate-practice-theory)
 		* [Continuous Skills Improvement For Everyone - Matt Scheurer(OISF19)](https://www.youtube.com/watch?time_continue=1&v=Se-qPMIfLRI&feature=emb_title)
@@ -252,8 +353,21 @@ https://www.youtube.com/watch?v=-jNkjuWMFrk
 	* **Agnostic Tools**	
 		* [Structured Text Tools](https://github.com/dbohdan/structured-text-tools)
 			* The following is a list of text-based file formats and command line tools for manipulating each.
+	* **Videos**
+		* [jumpcutter](https://github.com/carykh/jumpcutter)
+			* Automatically edits vidx. [Explanation here](https://www.youtube.com/watch?v=DQ8orIurGxw)
+		* [Auto-Editor](https://github.com/WyattBlue/auto-editor)
+			* Auto-Editor is a video editing tool that can automatically edit raw source video into a entertaining and polished video. It works by analyzing the video's audio to detect when a section needs to be cut, kept in, or zoomed in, then auto-editor runs a subprocess called ffmpeg to create the new video.
+		* [cut-the-crap](https://github.com/jappeace/cut-the-crap)
+			* Cut the crap is an automatic video editing program for streamers. It can cut out uninteresting parts by detecting silences. This was inspired by jumpcutter, where this program can get better quality results by using an (optional) dedicated microphone track. This prevents cutting of quieter consonants for example. Using ffmpeg more efficiently also produces faster results and is less error prone.
 	* **Learning New Things**
 		* [The Paradox of Choice: Learning new skills in InfoSec without getting overwhelmed - AzeriaLabs](https://azeria-labs.com/paradox-of-choice/)
+* **Metrics**<a name="metrics"></a>
+	* [Be Careful What You Measure - Mark Graham Brown](https://corporater.com/en/the-chicken-kpi-be-careful-of-what-you-measure/)
+	* [How to Use Metrics - George K. Campbell(2006)](https://www.csoonline.com/article/2120344/how-to-use-metrics.html)
+	* [Security metric techniques: How to answer the 'so what?' - Bill Brenner](https://www.csoonline.com/article/2125789/security-metric-techniques--how-to-answer-the--so-what--.html)
+	* [Security Value Made Visible: How American Water's Bruce Larson uses a simple metric to build bridges with business partners and justify security spending at the same time - Scott Berinato](https://www.csoonline.com/article/2120656/security-value-made-visible.html)
+	* [A key performance indicator for infosec organizations: Using probabilistic risk KPIs to direct complex risk engineering efforts - Ryan McGeehan(2019)](https://medium.com/starting-up-security/a-key-performance-indicator-for-infosec-organizations-7f654b7cd256)
 * **Networking**<a name="networking"></a>
 	* [The Bits and Bytes of Computer Networking - Google/Coursera](https://www.coursera.org/learn/computer-networking)
 		* This course is designed to provide a full overview of computer networking. We’ll cover everything from the fundamentals of modern networking technologies and protocols to an overview of the cloud to practical applications and network troubleshooting. By the end of this course, you’ll be able to: describe computer networks in terms of a five-layer model; understand all of the standard protocols involved with TCP/IP communications; grasp powerful network troubleshooting tools and techniques; learn network services like DNS and DHCP that help make computer networks run; understand cloud computing, everything as a service, and cloud storage
@@ -274,18 +388,29 @@ https://www.youtube.com/watch?v=-jNkjuWMFrk
 * **Research**<a name="research"></a>
 	* [Research Debt - Chris Olah, Shan Carter](https://distill.pub/2017/research-debt/)
 	* [Ten Simple Rules for Doing Your Best Research, According to Hamming](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2041981/)
-* **Risk**
-* **Securing yourself**
+* **Risk**<a name="risk"></a>
+	* **FAIR**
+		* [Factor analysis of information risk - Wikipedia](https://en.wikipedia.org/wiki/Factor_analysis_of_information_risk)
+			* Factor Analysis of Information Risk (FAIR) is a taxonomy of the factors that contribute to risk and how they affect each other. It is primarily concerned with establishing accurate probabilities for the frequency and magnitude of data loss events. It is not a methodology for performing an enterprise (or individual) risk assessment.
+* **Securing yourself**<a name="secself"></a>
 	* [Operation Luigi: How I hacked my friend without her noticing](https://www.youtube.com/watch?v=ZlNkIFipKZ4&feature=youtu.be)
 	    * My friend gave me permission to "hack all her stuff" and this is my story. It's about what I tried, what worked, my many flubs, and how easy it is to compromise Non Paranoid People TM.
 	    * [Blogpost](https://mango.pdf.zone/operation-luigi-how-i-hacked-my-friend-without-her-noticing)
-* **Skill-Testing/Question Prep**
-	* [test-your-admin-skills](https://github.com/trimstray/test-your-sysadmin-skills)
-		*  A collection of \*nix Sysadmin Test Questions with Answers for Interview/Exam (2018 Edition).
-* **Task Automation**
+* **Software Testing**<a name="softwaretesting"></a>
+	* [When to Test and How to Test It - Bruce Potter - Derbycon7](https://www.youtube.com/watch?v=Ej97WyEMRkI)
+		* “I think we need a penetration test” This is one of the most misunderstood phrases in the security community. It can mean anything from “Someone should run a vulnerability scan against a box” to “I’d like nation-state capable actors to tell me everything that wrong with my enterprise” and everything in between. Security testing is a complex subject and it can be hard to understand what the best type of testing is for a given situation. This talk will examine the breadth of software security testing. From early phase unit and abuse testing to late phase penetration testing, this talk will provide details on the different tests that can be performed, what to expect from the testing, and how to select the right tests for your situation. Test coverage, work effort, attack simulation, and reporting results will be discussed. Also, this talk will provide a process for detailed product assessments, i.e.: if you’ve got a specific product you’re trying to break, how do you approach assessing the product in a way that maximizes your chance of breaking in as well as maximizing the coverage you will get from your testing activity.
+* **System Design**<a name="systemdesign"></a>
+	* [The System Design Primer](https://github.com/donnemartin/system-design-primer)
+		* Learning how to design scalable systems will help you become a better engineer. System design is a broad topic. There is a vast amount of resources scattered throughout the web on system design principles. This repo is an organized collection of resources to help you learn how to build systems at scale.
+* **Task Automation**<a name="automation"></a>
 	* [WALKOFF](https://github.com/nsacyber/WALKOFF)
 		* WALKOFF is a flexible, easy to use, automation framework allowing users to integrate their capabilities and devices to cut through the repetitive, tedious tasks slowing them down,
-* **The Web**
+	* [StackStorm](https://stackstorm.com/)
+* **Vendor Security**<a name="vensec"></a>
+	* [UC Berkely Vendor Security Assessment Program](https://security.berkeley.edu/services/vendor-security-assessment-program/details-vendor-security-assessment-program)
+	* [VSAQ: Vendor Security Assessment Questionnaire](https://github.com/google/vsaq)
+		* VSAQ is an interactive questionnaire application. Its initial purpose was to support security reviews by facilitating not only the collection of information, but also the redisplay of collected data in templated form. At Google, questionnaires like the ones in this repository are used to assess the security programs of third parties. But the templates provided can be used for a variety of purposes, including doing a self-assessment of your own security program, or simply becoming familiar with issues affecting the security of web applications.
+* **The Web**<a name='web'></a>
 	* [Web Architecture 101 - Jonathan Fulton](https://engineering.videoblocks.com/web-architecture-101-a3224e126947?gi=d79a0aa34949)
 	* [The Tangled Web - Michal Zalewski(book)](https://lcamtuf.coredump.cx/tangled/)
 		* "The Tangled Web is my second book, a lovingly crafted guide to the world of browser security. It enters an overcrowded market, but there are two reasons why you may want to care. First of all, where other books simply dispense old and tired advice on remediating common vulnerabilities, The Tangled Web offers a detailed and thoroughly enjoyable account of both the "how" and the "why" of the modern web. In doing so, it enables you to deal with the seedy underbelly of contemporary, incredibly complex web apps. The other reason is that it is based on years of original research - including, of course, my Browser Security Handbook (2008). I think it is simply unmatched when it comes to the breadth and the quality of the material presented. It outlines dozens of obscure but remarkably important security policies, governing everything from content rendering to frame navigation - and affecting your applications in more ways than you may expect."
@@ -295,7 +420,11 @@ https://www.youtube.com/watch?v=-jNkjuWMFrk
 		* [Chrome DevTools - developers.google](https://developers.google.com/web/tools/chrome-devtools)
 		* [Discover DevTools](https://www.codeschool.com/courses/discover-devtools)
 			* Learn how Chrome DevTools can sharpen your dev process and discover the tools that can optimize your workflow and make life easier.
-
+* **Zero Trust**<a name="zerotrust"></a>
+	* **Articles/Blogposts/Writeups**
+		* [Exploring The Zero Trust Model - securethelogs.com](https://securethelogs.com/2019/06/25/exploring-the-zero-trust-model/)
+		* [Awesome Zero trust](https://github.com/pomerium/awesome-zero-trust/blob/master/README.md)
+	* **Talks/Presentations/Videos**
 * **Tools you should probably know exist**
 	* [Introduction To Metasploit – The Basics](http://www.elithecomputerguy.com/2013/02/08/introduction-to-metasploit-the-basics/) 
 	* [Shodan](http://www.shodanhq.com/help)

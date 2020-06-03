@@ -50,6 +50,7 @@ An Information Security Reference That Doesn't Suck
 * [:video\_game: Game Hacking :video\_game:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Games.md)
 * [:honey\_pot:Honeypots:honey\_pot:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/honeypot.md)
 * [Interesting Things & Useful Information](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Stuff.md)
+* [Logging, Monitoring, & Threat Hunting](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/L-SM-TH.md)
 * [:skull:Malware:skull:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Malware.md)
 * [:warning:Network Attacks & Defense:warning:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Network_Attacks.md)
 * [:triangular\_flag\_on\_post:Network Security Monitoring & Logging:triangular\_flag\_on\_post:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/L-SM-TH.md)

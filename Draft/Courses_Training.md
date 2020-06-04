@@ -1,31 +1,52 @@
 # Classes & Training
 
-
 -----------------
 ## Table of Contents
+- [Learning](#learning)
 - [General Security Classes](#general)
 - [General Sources/Repositories of Classes](#repo)
+- [ARM](#arm)
+- [Basic Security](#basic)
+- [Containers](#containers)
+- [Cryptography](#crypto)
+- [Data Science](#ds)
+- [Databases](#db)
+- [Exploit Development Training](#exploit)
 - [Incident Response and Forensics Training](#ir)
+- [Linux](#linux)
+- [Machine Learning](#ml)
+- [Malware Analysis](#malw)
+- [Mobile Applications](#mobile)
+- [Networking](#networking)
 - [Penetration Testing Training](#pt)
+- [Program Management](#pm)
 - [Programming Classes/Training](#prog)
+- [Red Team Training](#rt)
+- [Regular Expressions](#regex)
 - [Reverse Engineering Classes/Training](#re)
-- [Exploitation Development Training](#exploit)
+- [Threat Hunting](#th)
+- [Threat Intelligence](#cti)
 - [UEFI/BIOS Training](#uefi)
 - [Web Security Focused Training](#web)
 - [Wireless](#wireless)
 - [Resources for instructors/Trainers](#resource)
 
 
-
 -----
 ### Classes & Training
 * **HEADS UP**
 	* These classes are all focused on computer/information security. If you're looking for online courses to learn material other than the mentioned, check out "coursera.com", Standford's online classes or MIT's online courses.
-	* [Coursera](https://www.coursera.org/)
 	* [MIT OpenCourseware](https://ocw.mit.edu/courses/)
 	* [Standford](http://online.stanford.edu/courses)
+	* [Harvard](https://online-learning.harvard.edu/catalog)
+	* [Coursera](https://www.coursera.org/)
+	* [Open Security Training](https://www.opensecuritytraining.info)
 	* [Udemy](https://www.udemy.com/courses/)
-* **Learning**
+	* [Hackr.io](http://hackr.io/)
+		* Share and discover the best programming tutorials and courses online.
+	* [Class Central](https://www.class-central.com/)
+		* Search engine for MooCs
+* **Learning**<a name="learning"></a>
 	* [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn)
 		* Free Coursera Course
 		* About this course: This course gives you easy access to the invaluable learning techniques used by experts in art, music, literature, math, science, sports, and many other disciplines. We’ll learn about the how the brain uses two very different learning modes and how it encapsulates (“chunks”) information. We’ll also cover illusions of learning, memory techniques, dealing with procrastination, and best practices shown by research to be most effective in helping you master tough subjects. 
@@ -47,32 +68,24 @@
 				* [Augmenting Long-term Memory - Michael Nielsen](http://augmentingcognition.com/ltm.html)
 				* [Strategies, Tips, and Tricks for Anki - Jeff Shek](https://senrigan.io/blog/everything-i-know-strategies-tips-and-tricks-for-spaced-repetition-anki/)
 				* [Anki Tips: What I Learned Making 10,000 Flashcards - rs.io](https://rs.io/anki-tips/)
-* **General Sources/Repository of Classes**<a name="repo"></a>
-	* [Hackr.io](http://hackr.io/)
-		* Share and discover the best programming tutorials and courses online.
-	* [Open Security Training](https://www.opensecuritytraining.info)
-	* [Class Central](https://www.class-central.com/)
-		* Search engine for MooCs
 * **General Classes**<a name="general"></a>
 	* [ENISA CERT Exercises and Training](http://www.enisa.europa.eu/activities/cert/support/exercise)
 		* ENISA CERT Exercises and training material was introduced in 2008, in 2012 and 2013 it was complemented with new exercise scenarios containing essential material for success in the CERT community and in the field of information security. In this page you will find the ENISA CERT Exercise material, containing Handbook for teachers, Toolset for students and Virtual Image to support hands on training sessions.
 	* [SEEDLabs](http://www.cis.syr.edu/~wedu/seed/all_labs.html)
 		* People learn from mistakes. In security education, we study mistakes that lead to software vulnerabilities. Studying mistakes from the past not only help students understand why systems are vulnerable, why a "seemly-benign" mistake can turn into a disaster, and why many security mechanisms are needed. More importantly, it also helps students learn the common patterns of vulnerabilities, so they can avoid making similar mistakes in the future. Moreover, using vulnerabilities as case studies, students can learn the principles of secure design, secure programming, and security testing. 
-* **ARM**
+* **ARM**<a name="arm"></a>
 	* [ARM Assembly Basics - Azeria](https://azeria-labs.com/writing-arm-assembly-part-1/)
 	* [ARM Exploit Development - Azeria](https://azeria-labs.com/writing-arm-shellcode/)
 	* [Whirlwind Tour of ARM Assembly - ](https://www.coranac.com/tonc/text/asm.htm)
-* **Basic Security**
+* **Basic Security**<a name='basic'></a>
 	* [Hopper's Roppers Computing Fundamentals](https://hoppersroppers.org/course.html)
 		* A free, self-paced curriculum that builds a base of knowledge in computers and networking prior to moving on to the fundamentals of security and defense. The course is intended to build up a student with no prior technical knowledge to be confident in their ability to learn anything and continue their security education. 
 	* [Hopper's Roppers Security Fundamentals](https://www.hoppersroppers.org/courseSecurity.html)
 		* A free, self-paced curriculum that teaches a beginner how security works in the real world. Learn security theory and execute defensive measures so that you are better prepared against threats online and in the physical world.
-	* [Hopper's Roppers Intro. to CTFs](https://www.hoppersroppers.org/courseCTF.html)
-		* A free, self-paced curriculum that teaches the fundamentals required to be successful in Capture the Flag competitions and compete in the picoCTF event. Goes over the basics of Forensics, Cryptography, and Web-Exploitation.
-
-
-
-* **Cryptography**
+* **Containers**<a name="containers"></a>
+	* [Attacking and Auditing Docker Containers and Kubernetes Clusters](https://github.com/appsecco/attacking-and-auditing-docker-containers-and-kubernetes-clusters)
+		* This course will set the base for security testers and DevOps teams to test for common security vulnerabilities and configuration weaknesses across containerised environments and distributed systems. It also helps to understand approach and process to audit the Kubernetes environment for security posture. The courseware is meant to introduce participants to container and cluster management with Kubernetes.
+* **Cryptography**<a name="crypto"></a>
     * [Coursera Cryptography](https://www.coursera.org/learn/crypto)
     * [Matsano Crypto Challenges](https://www.cryptopals.com)
         * Go through a series of increasingly difficult challenges while learning all about cryptography. Expected knowledge level: You passed 9th grade math and you have 0 knowledge of crypto.
@@ -82,7 +95,7 @@
 	* [CS 355: Topics in Cryptography - Stanford(Spring 2020)](https://crypto.stanford.edu/cs355/20sp/)
 * **Data Science**<a name="data"></a>
 	* [CS 259D Data Mining for Cyber Security Autumn 2014](http://web.stanford.edu/class/cs259d/)
-* **Databases**
+* **Databases**<a name="db"></a>
 	* [Intro to Databases Systems(CMU) / Fall 2019)](https://www.youtube.com/watch?list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&v=oeYBdghaIjc&app=desktop)
 		* [Site page](https://15445.courses.cs.cmu.edu/fall2019/)
 		* This course is on the design and implementation of database management systems. Topics include data models (relational, document, key/value), storage models (n-ary, decomposition), query languages (SQL, stored procedures), storage architectures (heaps, log-structured), indexing (order preserving trees, hash tables), transaction processing (ACID, concurrency control), recovery (logging, checkpoints), query processing (joins, sorting, aggregation, optimization), and parallel architectures (multi-core, distributed). Case studies on open-source and commercial database systems are used to illustrate these techniques and trade-offs. The course is appropriate for students with lit systems programming skills.
@@ -110,13 +123,13 @@
 * **Incident Response/Forensics/NSM Training**<a name="ir"></a>
 	* [Android Forensics & Security Testing - OpenSecurityTraining.info](http://opensecuritytraining.info/AndroidForensics.html)
 	* [CS 259D Data Mining for Cyber Security Autumn 2014](http://web.stanford.edu/class/cs259d/)
-* **Linux**
+* **Linux**<a name="linux"></a>
 	* **Kernel**
 		* [Linux Kernel Teaching - linux-kernel-labs](https://linux-kernel-labs.github.io/refs/heads/master/index.html)
 			* This is a collection of lectures and labs Linux kernel topics. The lectures focus on theoretical and Linux kernel exploration. The labs focus on device drivers topics and they resemble “howto” style documentation. Each topic has two parts: a walk-through the topic which contains an overview, the main abstractions, simple examples and pointers to APIs, and a hands-on part which contains a few exercises that should be resolved by the student; to focus on the topic at hand, the student is presented with a starting coding skeleton and with in-depth tips on how to solve the exercises This content is based on the [Operatings Systems 2 course](https://ocw.cs.pub.ro/courses/so2_) from the Computer Science and Engineering Department, the Faculty of Automatic Control and Computers, University POLITEHNICA of Bucharest. You can get the latest version at http://github.com/linux-kernel-labs.
 * **Machine Learning**<a name="ml"></a>
 	* [IntroductionToMachineLearningForSecurityPros](https://github.com/CylanceSPEAR/IntroductionToMachineLearningForSecurityPros)
-* **Malware Analysis**
+* **Malware Analysis**<a name="malw"></a>
 	* [CS6038/CS5138 Malware Analysis, UC](https://class.malware.re/)
 		* This class will introduce the CS graduate students to malware concepts, malware analysis, and black-box reverse engineering techniques. The target audience is focused on computer science graduate students or undergraduate seniors without prior cyber security or malware experience. It is intended to introduce the students to types of malware, common attack recipes, some tools, and a wide array of malware analysis techniques.
 	* [Malware Analysis - CSCI 4976](https://github.com/RPISEC/Malware)
@@ -127,7 +140,7 @@
 * **Mobile Application Security**<a name="mobile"></a>
 	* [Mobile Security Trainings](https://github.com/enovella/androidtrainings)
 		* Mobile security trainings based on android
-* **Networking**
+* **Networking**<a name="networking">
 	* [CS 144: Introduction to Computer Networking, Fall 2019](https://cs144.github.io)
 	* [Introduction to Computer Networking(Stanford) - Philip Levis, Nick McKeown](https://lagunita.stanford.edu/courses/Engineering/Networking-SP/SelfPaced/about)
 		* This is a self-paced introductory course on computer networking, specifically the Internet. It focuses on explaining how the Internet works, ranging from how bits are modulated on wires and in wireless to application-level protocols like BitTorrent and HTTP. It also explains the principles of how to design networks and network protocols. Students gain experience reading and understanding RFCs (Internet protocol specifications) as statements of what a system should do. The course grounds many of the concepts in current practice and recent developments, such as net neutrality and DNS security. A textbook is recommended, but not required: you can use either Peterson and Davie or Kurose and Ross, any version in the past 5 years will do.
@@ -150,7 +163,7 @@
 	* [SpecterOps Adversary Tactics: PowerShell Course](https://github.com/specterops/at-ps)
 	* [Powershell-Attack-Guide](https://github.com/rootclay/Powershell-Attack-Guide)
 		* Learning PowerShell for internal Pentesting
-* **Product Management**
+* **Product Management**<a name="pm"></a>
 	* [Software Product Management Specialization - University of Alabama(Coursera)](https://www.coursera.org/specializations/product-management)
 		* In this Software Product Management Specialization, you will master Agile software management practices to lead a team of developers and interact with clients. In the final Capstone Project, you will practice and apply management techniques to realistic scenarios that you will face as a Software Product Manager. You will have the opportunity to share your experiences and learn from the insights of others as part of a Software Product Management
 * **Programming Classes/Courses**<a name="prog"></a>
@@ -178,6 +191,7 @@
 			* Twenty years ago Abelson and Sussman’s Structure and Interpretation of Computer Programs radically changed the intellectual landscape of introductory computing courses. Instead of teaching some currently fashionable programming language, it employed Scheme and functional programming to teach important ideas. Introductory courses based on the book showed up around the world and made Scheme and functional programming popular. Unfortunately, these courses quickly disappeared again due to shortcomings of the book and the whimsies of Scheme. Worse, the experiment left people with a bad impression of Scheme and functional programming in general. In this pearl, we propose an alternative role for functional programming in the first-year curriculum. Specifically, we present a framework for discussing the first-year curriculum and, based on it, the design rationale for our book and course, dubbed How to Design Programs. The approach emphasizes the systematic design of programs. Experience shows that it works extremely well as a preparation for a course on object-oriented programming
 		* [Structure and Interpretration of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html)
 			* [MIT Lecture Series](https://www.youtube.com/watch?v=2Op3QLzMgSY)
+	* **Secure Coding**
 	* **Development**
 		* [Software Development Lifecycle Specialization - University of Minnesota(Coursera)](https://www.coursera.org/specializations/software-development-lifecycle)
 			* This Specialization is designed for people who are new to software engineering. It's also for those who have already developed software, but wish to gain a deeper understanding of the underlying context and theory of software development practices. At the end of this Specialization, we expect learners to be able to: 1.) Build high-quality and secure software using SDLC methodologies such as agile, lean, and traditional/waterfall.; 2.) Analyze a software development team's SDLC methodology and make recommendations for improvements.; 3.) Compare and contrast software development methodologies with respect to environmental, organizational, and product constraints.
@@ -191,12 +205,16 @@
 	* **PowerShell**
 		* [InfosecPosh101](https://github.com/garignack/InfosecPosh101)
 			* A repository of Labs and other information for learning how PowerShell can help with infosec
+		* [PowerShell Basics - Carlos Perez](https://www.darkoperator.com/powershellbasics/)
 	* **Python**
 		* [Introduction to Computer Science and Programming in Python - MIT(Fall2016)]](https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA)
 	* **Scheme**
 		* [Simply Scheme: Introducing Computer Science - Brian Harvey, Matthew Wright](https://people.eecs.berkeley.edu/~bh/ss-toc2.html)
 			* Below this short table of contents is an expanded table of contents including sections within each chapter. Click on the chapter name to jump down. You can also download the complete text of each chapter in PDF format for elegant printing, or browse the HTML version. Part introductions are included in the PDF of the following chapter. Projects are included in the PDF of the preceding chapter.
-* **Regular Expressions**<a name="re"></a>
+* **Red-Team**<a name="rt"></a>
+	* [Red Team Operations with Cobalt Strike (2019) - Raphael Mudge](https://www.youtube.com/playlist?list=PL9HO6M_MU2nfQ4kHSCzAQMqxQxH47d1no)
+		* Red Team Operations with Cobalt Strike is a course on Adversary Simulations and Red Team Operations. Learn how to stand up sophisticated command and control infrastructure, weaponize a payload, send a phishing email, conduct post-exploitation, evade defenses, escalate privileges, take over an Active Directory domain, and tunnel tools and attacks through compromised systems.
+* **Regular Expressions**<a name="regex"></a>
 	* [RegEx Crossword](https://regexcrossword.com/)
 		* Learn RegEx through crosswords
 * **Reverse Engineering**<a name="re"></a>
@@ -228,6 +246,11 @@
 		* The issue of program protection has never been more relevant. Commerical software companies need techniques to protect their intellectual property, malware authors try to slow the down the process of reversing and detecting their creations, and nation-states are creating cyber-weapons that they do not want reverse engineered and repurposed. Program protection is has two main approaches, tamper-resistance and obfuscation. Tamperresistance focuses on the detection and corruption of tools used to analyze programs. Obfuscation focuses on making a program hard to understand, even when under flawless analysis tools. Tamper-resistance techniques tend to be an arms race, of one off tricks versus analysis tool updates. Obfuscation offers a much more stable and provably secure avenue in which to protect programs. Obfuscation is thorougly grounded in the formal methods and proofs of cryptography. The only distinction between obfuscation and cryptography is the location of the key. In cryptography, the key is outside the system or data under analysis. In obfuscation, the obfuscated data and key are together, making it a challenging problem of its own. It is the difficulty of provable security and the great need program protection in the current day, that make this class relevant and necessary. In this readings class, we will focus on 15 of the most important works in program obfuscation. We will attain thorough understanding of these papers through paper reviews, discussion, and a project implementing an obfuscation scheme from one of the papers.
 	* [Advanced Binary Deobfuscation(2020)](https://github.com/malrev/ABD)
 		* This repository contains the course materials of Advanced Binary Deobfuscation at the Global Cybersecurity Camp (GCC) Tokyo in 2020. Reverse engineering is not easy, especially if a binary code is obfuscated. Once obfuscation performed, the binary would not be analyzed accurately with naive techniques alone. In this course, you will learn obfuscation principles (especially used by malware), theory and practice of obfuscated code analysis, and how to write your own tool for deobfuscation. In particular, we delve into data-flow analysis and SAT/SMT-based binary analysis (e.g., symbolic execution) to render obfuscation ineffective.
+* **Threat Hunting**<a name='th'></a>
+	* [Flow Analysis & Network Hunting](http://opensecuritytraining.info/Flow.html)
+		* This course focuses on network analysis and hunting of malicious activity from a security operations center perspective. We will dive into the netflow strengths, operational limitations of netflow, recommended sensor placement, netflow tools, visualization of network data, analytic trade craft for network situational awareness and networking hunting scenarios.
+* **Threat Intelligence**<a name='cti'></a>
+	* [Using ATT&CK for Cyber Threat Intelligence Training - MITRE](https://attack.mitre.org/resources/training/cti/)
 * **UEFI/BIOS Training**<a name="uefi"></a>
 	* [firmware-security-training](https://github.com/advanced-threat-research/firmware-security-training)
 * **Web Security Focused Training**<a name="web"></a>

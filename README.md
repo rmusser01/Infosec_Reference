@@ -14,8 +14,8 @@ An Information Security Reference That Doesn't Suck
 	* Easily browsable list of tools, techniques, papers, and research in all sorts of areas.
 	* Want to read some good info.
 * **Why Do _I_ Care?**
-	* I do this as a resource for myself\(to teach myself & others from\) and offer it publicly as a way of giving back to the general community.
-	* To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel help build someone's skillset or increase understanding of attacks/methods/defenses. This is not meant to condone illegal or malicious activities.
+	* I do this as a resource to learn and help others, and offer it publicly as a way of giving back to the general community.
+	* To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel might help build someone's skillset or increase their understanding of attacks/methods/defenses. This is not meant to condone illegal or malicious activities.
 * **This page**
 	* This page isn't ~~terrible~~ the best on mobile. Use [https://rmusser.net/docs](https://rmusser.net/docs)t for better mobile formatting.
 	* For latest content updates, check the git history.

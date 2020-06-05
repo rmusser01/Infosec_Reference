@@ -5,7 +5,12 @@
 - [Protocols(Mostly)](#protocols)
     - [Advanced Query Message Protocol](#amqp)
     - [ARP](#arp)
+    - [BGP](#bgp)
+    - [DHCP](#dhcp)
     - [DNS](#dns)
+        - [mDNS](#mdns)
+        - [DNS over HTTPS(DoH)](#doh)
+    - [gRPC](#grpc)
     - [HNAP](#hnap)
     - [ICMP](#icmp)
     - [IPMI](#ipmi)
@@ -66,339 +71,60 @@
     - [Other](#other)
     - [MISC](#misc2)
 
-
-
 * Need to Add 
-	* WebDAV
-	* IPSEC Stuff
-    * NAT
-	* DNSSEC
-	* ICE
-	* NTLM things
-	* Captive portals
-	* BGP
-	* QUIC
-	* STUN
-	* Fax
-	* Packet sniffers
-    * memcache
-    * IP spoofing
-    * OCSP
-
-
-
-
-
-* Need to Add 
-    * WebDAV
-    * IPSEC Stuff
-    * NAT
-    * DNSSEC
-    * ICE
-    * NTLM things
-    * Captive portals
     * BGP
-    * QUIC
-    * STUN
+    * Captive portals
+    * DNSSEC
     * Fax
-    * Packet sniffers
-    * memcache
+    * ICE
     * IP spoofing
+    * IPSEC Stuff
+    * memcache
+    * NAT
+    * NTLM things
     * OCSP
-
-
-
-https://github.com/gquere/pwn_jenkins
-
-https://zwischenzugs.com/2018/06/08/anatomy-of-a-linux-dns-lookup-part-i/
-
-https://rootsh3ll.com/captive-portal-guide/
-
-UPNP
-    * https://www.vdoo.com/blog/security-issues-discovered-in-miniupnp/
-
-
-
-ZeroConf Networking
-
-https://research.checkpoint.com/pxe-dust-finding-a-vulnerability-in-windows-servers-deployment-services/
-
-Grpc
-    * [gRPC and Protocol Buffers: an Alternative to REST APIs and JSON - Andrew Connell](http://www.andrewconnell.com/blog/grpc-and-protocol-buffers-an-alternative-to-rest-apis-and-json)
-    * https://github.com/grpc-ecosystem/awesome-grpc
-    * [Building High Performance APIs In Go Using gRPC And Protocol Buffers - Shiju Varghese](https://medium.com/@shijuvar/building-high-performance-apis-in-go-using-grpc-and-protocol-buffers-2eda5b80771b)
-
-mDNS
-* [Multicast DNS - Wikipedia](https://en.wikipedia.org/wiki/Multicast_DNS)
-* [Name (mDNS) Poisoning Attacks Inside The LAN(2008)](https://www.gnucitizen.org/blog/name-mdns-poisoning-attacks-inside-the-lan/)
-* DNS Cache Poisoning
-    * [DNSTrust – 28 queries later: an example attack on .fr](https://web.archive.org/web/20090614054817/http://shinobi.dempsky.org/~matthew/dnstrust/example.html)
-* Script to examine: https://www.gnucitizen.org/files/2008/01/mdns.py 
-
-
-
-* [Cisco Smart Installs and Why They’re Not “Informational” - Jordan Drysdale](https://www.blackhillsinfosec.com/cisco-smart-installs-and-why-theyre-not-informational/)
-* [Smart Install Description - cisco.com](https://www.cisco.com/c/en/us/td/docs/switches/lan/smart_install/configuration/guide/smart_install/concepts.html)
-* [Action Required to Secure the Cisco IOS and IOS XE Smart Install Feature](https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180409-smi)
-
-https://github.com/Tib3rius/AutoRecon
-https://howdns.works/
-https://www.thomas-krenn.com/en/wiki/IPMI_Basics
-https://blog.preempt.com/security-advisory-critical-vulnerabilities-in-ntlm
-http://hackersgeeks.blogspot.com/2018/06/penetration-testing-on-x11-server.html
-https://zachgrace.com/training/x11/
-http://rageweb.info/2014/05/04/open-x11-server/
-https://github.com/tcstool/Fireaway
-https://github.com/s0md3v/Striker
-* [Post Exploitation: Striking Gold with Covert Recon - Derek Rook(WWHF19)](https://www.youtube.com/watch?v=04H1s9z0JDo)
-    * You're on a covert penetration test focusing on the client's monitoring and alerting capabilities. You've just established a foothold, maybe even elevated to admin, but now what? You want to know more about the internal network but careless packet slinging will get you caught. Join me on a mining expedition where you can't swing your pick axe without striking gold. We'll be mining logs, pilfering connection statistics, and claim jumping process network connections. Without leaving the comfort of your beachhead, you'll be shouting "Eureka!" in no time.
-https://github.com/L1ves/windows-pentesting-resources/blob/master/README.md
-* [LDAP Injection Cheat Sheet, Attack Examples & Protection - Checkmarx](https://www.checkmarx.com/knowledge/knowledgebase/LDAP)
-https://github.com/evyatarmeged/Raccoon
-https://github.com/unixrox/prebellico
-https://i.blackhat.com/USA-19/Wednesday/us-19-Tsai-Infiltrating-Corporate-Intranet-Like-NSA.pdf
-https://blog.cloudflare.com/rpki-and-the-rtr-protocol/
-https://techcommunity.microsoft.com/t5/itops-talk-blog/smb-over-quic-files-without-the-vpn/ba-p/1183449#
-https://labs.mwrinfosecurity.com/blog/routing-101/
-
-* [The Illustrated TLS Connection - @XargsNotBombs](https://tls.ulfheim.net/)
-https://docs.microsoft.com/en-us/windows/desktop/wmisdk/about-wmi
-https://www.dmtf.org/standards/redfish
-https://www.postscapes.com/internet-of-things-protocols/
-
-* [DHCP Discovery - Chris Dent](https://www.indented.co.uk/dhcp-discovery/)
-
-PXE
-https://github.com/wavestone-cdt/powerpxe
-https://blog.netspi.com/attacks-against-windows-pxe-boot-images/
-https://github.com/mattifestation/BCD
-
-* [DHCP Discovery - Chris Dent](https://www.indented.co.uk/dhcp-discovery/)
-    * A PowerShell script to send a DHCP Discover request and listen for DHCP Offer responses, it can be used for finding DHCP servers (including rogue servers), or for testing DHCP servers and relays. The output from this script is an object containing a decode of the DHCP packet and a number of options.
-
-https://www.synacktiv.com/posts/pentest/pentesting-cisco-sd-wan-part-1-attacking-vmanage.html
-* [Attacks Against Windows PXE Boot Images - Thomas Elling](https://blog.netspi.com/attacks-against-windows-pxe-boot-images/)
-* [DHCP Discovery](https://www.indented.co.uk/dhcp-discovery/)
-* [PowerPXE](https://github.com/wavestone-cdt/powerpxe)
-    * PowerPXE is a PowerShell script that extracts interesting data from insecure PXE boot.
-* [BCD](https://github.com/mattifestation/BCD)
-    * BCD is a module to interact with boot configuration data (BCD) either locally or remotely using the ROOT/WMI:Bcd* WMI classes. The functionality of the functions in this module mirror that of bcdedit.exe.
-
-
-* [WifiPhisher](https://github.com/wifiphisher/wifiphisher)
-    * Wifiphisher is a rogue Access Point framework for conducting red team engagements or Wi-Fi security testing. Using Wifiphisher, penetration testers can easily achieve a man-in-the-middle position against wireless clients by performing targeted Wi-Fi association attacks. Wifiphisher can be further used to mount victim-customized web phishing attacks against the connected clients in order to capture credentials (e.g. from third party login pages or WPA/WPA2 Pre-Shared Keys) or infect the victim stations with malwares.
-https://blog.preempt.com/security-advisory-targeting-ad-fs-with-external-brute-force-attacks
-https://blog.preempt.com/security-advisory-critical-vulnerabilities-in-ntlm
-* [Dilettante](https://github.com/mveytsman/dilettante)
-    * Maven central doesn't do SSL when serving you JARs. Dilettante is a MiTM proxy for exploiting that.
-* [Through the Looking Glass Own the Data Center - Chris McCoy(Defcon27 - RT Village)](https://www.youtube.com/watch?v=G-heFh4t-Pk&list=PL9fPq3eQfaaChXmQKpp1YO19Gw-6SxBDs&index=4)
-    * [Slides]()
-    * The data center embodies the heart of many businesses on the Internet. It contains much of the information in a centralized location which provides a huge incentive for those who would wish harm. The data centers in the realm of Cloud may no longer contain just a single entity, but many individual tenants that attach to a common fabric. The Cisco Application Centric Infrastructure (ACI) aims to meet these needs with a multi-tenant, scalable fabric that interconnects physical hosts, VMs and containers. ACI is Cisco's answer to the centrally-managed Software Defined Network (SDN). The Application Policy Infrastructure Controller (APIC) and Nexus 9000 series switches form the brains and backbone of ACI. A member of Cisco's Advanced Security Initiatives Group (ASIG) will demonstrate their findings during an evaluation of ACI and the APIC, more than three years before the BH2019 talk "APIC's Adventures in Wonderland." Step into the mind of an attacker and scan, probe, and interact with the network fabric to progress from an unauthenticated user to administrator and root of the data center switch fabric. Once inside the system, see how the APIC can be modified in a nearly undetectable manner to provide the attacker unfettered internal access to all the interconnected hosts and VMs in the data center. The target audience for this talk includes those with a technical interest in offensive discovery and secure product development. Participants will receive an overview of how a data center product is viewed in an offensive light.
-https://github.com/theMiddleBlue/nmap-elasticsearch-nse
-DNS
-    http://unixwiz.net/techtips/iguide-kaminsky-dns-vuln.html
-    https://developers.google.com/speed/public-dns/docs/security
-https://www.libtorrent.org/utp.html
-https://github.com/preempt/ntlm-scanner
-Newtorking
-Cloud Networking
-    * https://cloud.google.com/blog/products/gcp/google-shares-software-network-load-balancer-design-powering-gcp-networking
-    * https://atscaleconference.com/videos/networking-scale-2018-load-balancing-at-hyperscale/
-    * https://ai.googleblog.com/2015/08/pulling-back-curtain-on-googles-network.html
-    * https://www.youtube.com/watch?v=8gc2DgBqo9U
-    * https://www.youtube.com/watch?v=f45Uo5rw6YY
-    * https://www.youtube.com/watch?v=3qln2u1Vr2E
-https://github.com/Arno0x/TCPRelayInjecter
-
-https://community.turgensec.com/shodan-pentesting-guide/
-https://research.nccgroup.com/2020/03/04/a-survey-of-istios-network-security-features/
-https://jreppiks.github.io/pentest/wireless/bypass/2020/02/13/BypassingWirelessCaptivePortals.html
-https://www.irongeek.com/i.php?page=videos/bsidestampa2020/track-e-01-breaking-nbad-and-ueba-detection-charles-herring
-
-https://github.com/stufus/reconerator
-
-DNS over HTTPS
-    https://www.youtube.com/watch?v=fG5nQ5Bf_R8
-    https://dtm.uk/playing-with-dns-over-https/
-    https://github.com/SpiderLabs/DoHC2
-    https://github.com/Und3rf10w/external_c2_framework
-    https://sensepost.com/blog/2018/waiting-for-godoh/
-    * [goprox](https://github.com/3lpsy/goprox)
-
-* [chisel](https://github.com/jpillora/chisel)
-    * Chisel is a fast TCP tunnel, transported over HTTP, secured via SSH. Single executable including both client and server. Written in Go (golang). Chisel is mainly useful for passing through firewalls, though it can also be used to provide a secure endpoint into your network. Chisel is very similar to crowbar though achieves much higher performance.
-
-* [Introduction to mobile network intrusions from a mobile phone - Sébastien Dudek](https://medium.com/mobile-stacks-and-networks-security/introduction-to-mobile-network-intrusions-from-a-mobile-phone-9a8e909cc276)
-https://sensepost.com/blog/2018/a-new-look-at-null-sessions-and-user-enumeration/
-
-https://www.elastic.co/blog/using-nmap-logstash-to-gain-insight-into-your-network
-
-
-
-https://www.blackhillsinfosec.com/cisco-smart-installs-and-why-theyre-not-informational/
+    * Packet sniffers
+    * QUIC
+    * r* protocols
+    * STUN
+    * WebDAV
 
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 ### <a name="general"></a>General
 * **101**
-	* [Fundamentals That Time Forgot - Jup1t3r  - BSides SLC](https://www.youtube.com/watch?v=PQvUWImljOw)
-	* [TCPDump Primer](http://danielmiessler.com/study/tcpdump/)
-	* [IANA Complete list of assigned ports](http://www.vulnerabilityassessment.co.uk/port-numbers.txt)
-	* [RFC 2827 -  Network Ingress Filtering: Defeating Denial of Service Attacks which employ IP Source Address Spoofing](https://tools.ietf.org/html/rfc2827)
-	* [RFC 5246 - The Transport Layer Security (TLS) Protocol Version 1.2](https://tools.ietf.org/html/rfc5246)
-	* [TCPDump Command Examples](http://www.thegeekstuff.com/2010/08/tcpdump-command-examples/)
+    * [Fundamentals That Time Forgot - Jup1t3r  - BSides SLC](https://www.youtube.com/watch?v=PQvUWImljOw)
+    * [TCPDump Primer](http://danielmiessler.com/study/tcpdump/)
+    * [IANA Complete list of assigned ports](http://www.vulnerabilityassessment.co.uk/port-numbers.txt)
+    * [RFC 2827 -  Network Ingress Filtering: Defeating Denial of Service Attacks which employ IP Source Address Spoofing](https://tools.ietf.org/html/rfc2827)
+    * [RFC 5246 - The Transport Layer Security (TLS) Protocol Version 1.2](https://tools.ietf.org/html/rfc5246)
+    * [TCPDump Command Examples](http://www.thegeekstuff.com/2010/08/tcpdump-command-examples/)
 * **Educational/History**
     * [Ethernet Briefings in April 1978 by Bob Metcalfe](https://www.youtube.com/watch?v=Fj7r3vYAjGY)
 * **General/Articles/Writeups**
-	* [Examples](http://www.hackwhackandsmack.com/?p=422)
-	* [The Eavesdropper’s Dillemma](http://www.crypto.com/papers/internet-tap.pdf)
-	* [Strange Attractors and TCP/IP Sequence Number Analysis  - Michal Zalewski](http://lcamtuf.coredump.cx/oldtcp/tcpseq.html)
+    * [Examples](http://www.hackwhackandsmack.com/?p=422)
+    * [The Eavesdropper’s Dillemma](http://www.crypto.com/papers/internet-tap.pdf)
+    * [Strange Attractors and TCP/IP Sequence Number Analysis  - Michal Zalewski](http://lcamtuf.coredump.cx/oldtcp/tcpseq.html)
     * [Signaling vulnerabilities in wiretapping systems](http://www.crypto.com/papers/wiretap.pdf)
 * **Tools**
-	* [pynessus](https://github.com/rmusser01/pynessus)
-		* Python Parser for Nessus Output
-	* [which-cloud](https://github.com/bcoe/which-cloud)
-		* Given an ip address, return which cloud provider it belongs to (AWS, GCE, etc)  
-	* [Zarp](https://github.com/hatRiot/zarp)
-		* Zarp is a network attack tool centered around the exploitation of local networks. This does not include system exploitation, but rather abusing networking protocols and stacks to take over, infiltrate, and knock out. Sessions can be managed to quickly poison and sniff multiple systems at once, dumping sensitive information automatically or to the attacker directly. Various sniffers are included to automatically parse usernames and passwords from various protocols, as well as view HTTP traffic and more. DoS attacks are included to knock out various systems and applications. These tools open up the possibility for very complex attack scenarios on live networks quickly, cleanly, and quietly.
-	* [Yersinia](http://www.yersinia.net/)
-		* Yersinia is a network tool designed to take advantage of some weakeness in different network protocols. It pretends to be a solid framework for analyzing and testing the deployed networks and systems. 
-		* [Attacks Supported](http://www.yersinia.net/attacks.htm)
-	* [comcast](https://github.com/tylertreat/comcast)
-		* Simulating shitty network connections so you can build better systems.
-	* [TCPCopy](https://github.com/session-replay-tools/tcpcopy)
-		* TCPCopy is a TCP stream replay tool to support real testing of Internet server applications.
-	* [nessusporter](https://github.com/Tw1sm/nessporter)
-		* Easily download entire folders of Nessus scans in the format(s) of your choosing. This script uses provided credentials to connect to a Nessus server and store a session token, which is then used for all subsquent requests.
-	* [nessaws](https://github.com/TerbiumLabs/nessaws?files=1)
-		* Automate Nessus scans against AWS EC2/RDS endpoints.
-
-
-
-
-
-
-
------------------------
-### <a name="mitm"></a>MitM Tools
-* **General/Suites of tools**
-	* [Dsniff](http://www.monkey.org/~dugsong/dsniff/)
-		* dsniff is a collection of tools for network auditing and penetration testing. dsniff, filesnarf, mailsnarf, msgsnarf, urlsnarf, and webspy passively monitor a network for interesting data (passwords, e-mail, files, etc.). arpspoof, dnsspoof, and macof facilitate the interception of network traffic normally unavailable to an attacker (e.g, due to layer-2 switching). sshmitm and webmitm implement active monkey-in-the-middle attacks against redirected SSH and HTTPS sessions by exploiting weak bindings in ad-hoc PKI. 
-	* [Ettercap](https://ettercap.github.io/ettercap/)
-		* Ettercap is a comprehensive suite for man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.
-	* [striptls - auditing proxy](https://github.com/tintinweb/striptls)
-		* A generic tcp proxy implementation and audit tool to perform protocol independent ssl/tls interception and STARTTLS stripping attacks on SMTP, POP3, IMAP, FTP, NNTP, XMPP, ACAP and IRC.
-	* [BackDoor Factory](https://github.com/secretsquirrel/the-backdoor-factory)
-		* The goal of BDF is to patch executable binaries with user desired shellcode and continue normal execution of the prepatched state.
-		* [Wiki](https://github.com/secretsquirrel/the-backdoor-factory/wiki)
-		* [Video](http://www.youtube.com/watch?v=jXLb2RNX5xs)
-	* [Man-in-the-Middle Framework](https://github.com/byt3bl33d3r/MITMf)
-		* Framework for Man-In-The-Middle attacks
-	* [Xeroxsploit](https://github.com/LionSec/xerosploit)
-		* Xerosploit is a penetration testing toolkit whose goal is to perform man in the middle attacks for testing purposes. It brings various modules that allow to realise efficient attacks, and also allows to carry out denial of service attacks and port scanning. Powered by bettercap and nmap.
-	* [bettercap](https://github.com/evilsocket/bettercap) 
-	    * A complete, modular, portable and easily extensible MITM framework. 
-	    * [Elbsides 2019 Workshop](https://github.com/ceicke/bettercap-elbsides)
-            * This repository holds stuff which might be useful to the participants of the Bettercap workshop on the Elbsides 2019.
-    * [NetRipper](https://github.com/NytroRST/NetRipper)
-		* NetRipper is a post exploitation tool targeting Windows systems which uses API hooking in order to intercept network traffic and encryption related functions from a low privileged user, being able to capture both plain-text traffic and encrypted traffic before encryption/after decryption.
-	* [An Auditing Tool for Wi-Fi or Wired Ethernet Connections - Matthew Sullivan](https://www.cookiecadger.com/wp-content/uploads/Cookie%20Cadger.pdf)
-	* [Polymorph](https://github.com/shramos/polymorph)
-		* Polymorph is a framework written in Python 3 that allows the modification of network packets in real time, providing maximum control to the user over the contents of the packet. This framework is intended to provide an effective solution for real-time modification of network packets that implement practically any existing protocol, including private protocols that do not have a public specification. In addition to this, one of its main objectives is to provide the user with the maximum possible control over the contents of the packet and with the ability to perform complex processing on this information.
-* **DNS**
-	* [FakeDNS](https://github.com/Crypt0s/FakeDns)
-		* A regular-expression based python MITM DNS server with support for DNS Rebinding attacks
-	* [CopyCat](https://github.com/compewter/CopyCat)
-		* CopyCat is a Node.js based universal MITM web server. Used with DNS spoofing or another redirect attack, this server will act as a MITM for web traffic between the victim and a real server.
-* **Dumping from an interface**
-	* [net-creds](https://github.com/DanMcInerney/net-creds)
-		* Thoroughly sniff passwords and hashes from an interface or pcap file. Concatenates fragmented packets and does not rely on ports for service identification. It sniffs: URLs visited; POST loads sent; HTTP form logins/passwords; HTTP basic auth logins/passwords; HTTP searches; FTP logins/passwords; IRC logins/passwords; POP logins/passwords; IMAP logins/passwords; Telnet logins/passwords; SMTP logins/passwords; SNMP community string; NTLMv1/v2 all supported protocols like HTTP, SMB, LDAP, etc; Kerberos.
-    * [pcredz](https://github.com/lgandx/PCredz)
-        * This tool extracts Credit card numbers, NTLM(DCE-RPC, HTTP, SQL, LDAP, etc), Kerberos (AS-REQ Pre-Auth etype 23), HTTP Basic, SNMP, POP, SMTP, FTP, IMAP, etc from a pcap file or from a live interface.
-* **HTTP**
-	* [Injectify](https://github.com/samdenty99/injectify)
-		* Perform advanced MiTM attacks on websites with ease.
-	* [node-http-mitm-proxy](https://github.com/joeferner/node-http-mitm-proxy)
-		* HTTP Man In The Middle (MITM) Proxy written in node.js. Supports capturing and modifying the request and response data.
-	* [hyperfox](https://github.com/malfunkt/hyperfox)
-		* HTTP/HTTPs MITM proxy and traffic recorder with on-the-fly TLS cert generation. 
-	* [warcproxy](https://github.com/internetarchive/warcprox)
-		* WARC writing MITM HTTP/S proxy
-* **IPv6**
-	* [suddensix](https://github.com/Neohapsis/suddensix)
-		* IPV6 MITM attack tool
-* **Local**
-    * [Datajack Proxy](https://github.com/nccgroup/DatajackProxy)
-        * Datajack Proxy a tool to intercept non-HTTP traffic between a native application and a server. This would allow for communications interception and modification, even if encryption and certificate pinning were in use. This is done by hooking the application and intercepting calls to common socket and TLS libraries, and reading the data prior to encryption (for outbound) and after decryption (for inbound).
-        * [Blogpost](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2019/august/datajack-proxy-intercepting-tls-in-native-applications/)
-    * [Trudy](https://github.com/praetorian-code/trudy)
-        * Trudy is a transparent proxy that can modify and drop traffic for arbitrary TCP connections. Trudy can be used to programmatically modify TCP traffic for proxy-unaware clients. Trudy creates a 2-way "pipe" for each connection it proxies. The device you are proxying (the "client") connects to Trudy (but doesn't know this) and Trudy connects to the client's intended destination (the "server"). Traffic is then passed between these pipes. Users can create Go functions to mangle data between pipes. See it in action! For a practical overview, check out @tsusanka's very good blog post on using Trudy to analyze Telegram's MTProto. Trudy can also proxy TLS connections. Obviously, you will need a valid certificate or a client that does not validate certificates. Trudy was designed for monitoring and modifying proxy-unaware devices that use non-HTTP protocols. If you want to monitor, intercept, and modify HTTP traffic, Burp Suite is probably the better option.
-* **RDP**
-	* [Seth](https://github.com/SySS-Research/Seth)
-		* Seth is a tool written in Python and Bash to MitM RDP connections. It attempts to downgrade the connection and extract clear text credentials.
-* **NTLM/SMB/NTBS**
-	* [NTLMssp-Extract](https://github.com/sinnaj-r/NTLMssp-Extract)
-		* A small Python-Script to extract NetNTLMv2 Hashes from NTMLssp-HTTP-Authentications, which were captured in a pcap.
-	* [ntlmRelayToEWS](https://github.com/Arno0x/NtlmRelayToEWS)
-		* ntlmRelayToEWS is a tool for performing ntlm relay attacks on Exchange Web Services (EWS). It spawns an SMBListener on port 445 and an HTTPListener on port 80, waiting for incoming connection from the victim. Once the victim connects to one of the listeners, an NTLM negociation occurs and is relayed to the target EWS server.
-	* [CVE-2017-7494](https://github.com/joxeankoret/CVE-2017-7494)
-		* Remote root exploit for the SAMBA CVE-2017-7494 vulnerability
-* **Postgres**
-	* [postgres-mitm](https://github.com/thusoy/postgres-mitm)
-		* Test whether your Postgres connections are vulnerable to MitM attacks.
-* **SSH**
-	* [ssh-mitm](https://github.com/jtesta/ssh-mitm)
-		* This penetration testing tool allows an auditor to intercept SSH connections. A patch applied to the OpenSSH v7.5p1 source code causes it to act as a proxy between the victim and their intended SSH server; all plaintext passwords and sessions are logged to disk.
-* **SSL/TLS**
-	* [SSLsplit - transparent and scalable SSL/TLS interception](https://www.roe.ch/SSLsplit)
-		* SSLsplit is a tool for man-in-the-middle attacks against SSL/TLS encrypted network connections. Connections are transparently intercepted through a network address translation engine and redirected to SSLsplit. SSLsplit terminates SSL/TLS and initiates a new SSL/TLS connection to the original destination address, while logging all data transmitted. SSLsplit is intended to be useful for network forensics and penetration testing.  SSLsplit supports plain TCP, plain SSL, HTTP and HTTPS connections over both IPv4 and IPv6.
-	* [SSLStrip](http://www.thoughtcrime.org/software/sslstrip/)
-		* This tool provides a demonstration of the HTTPS stripping attacks that I presented at Black Hat DC 2009. It will transparently hijack HTTP traffic on a network, watch for HTTPS links and redirects, then map those links into either look-alike HTTP links or homograph-similar HTTPS links. It also supports modes for supplying a favicon which looks like a lock icon, selective logging, and session denial.
-	* [tiny-mitm-proxy](https://github.com/floyd-fuh/tiny-mitm-proxy)
-		* Probably one of the smallest SSL MITM proxies you can make
-* **WSUS(Windows Server Updater Serice)**
-	* [WSUXploit](https://github.com/pimps/wsuxploit)
-		* This is a MiTM weaponized exploit script to inject 'fake' updates into non-SSL WSUS traffic. It is based on the WSUSpect Proxy application that was introduced to public on the Black Hat USA 2015 presentation, 'WSUSpect - Compromising the Windows Enterprise via Windows Update'
-	* [WSUSpect Proxy](https://github.com/pdjstone/wsuspect-proxy)
-		* This is a proof of concept script to inject 'fake' updates into non-SSL WSUS traffic. It is based on the BlackHat USA 2015 presentation, 'WSUSpect – Compromising the Windows Enterprise via Windows Update'
-		- White paper: http://www.contextis.com/documents/161/CTX_WSUSpect_White_Paper.pdf
-		- Slides: http://www.contextis.com/documents/162/WSUSpect_Presentation.pdf
-
-
-
-------------
-#### <a name="modbus"></a>Modbus
-* See 'Modbus' under 'SCADA/Heavy Machinery'
-
-
-
-
-
-
-
-------------
-### <a name="pivot"></a>Pivoting
-* Really, look at the Pivoting section in Post Exploitation/Privilege Escalation
-
-
-
-
-
-
-
-
-
-
-
------------------------------------------------------------------------------------------------------------------------------------------------
-### <a name="rpc"></a>
-* **101**
-* **Articles/Blogposts/Writeups**
-    * [More of using rpcclient to find usernames - carnal0wnage](http://carnal0wnage.attackresearch.com/2007/08/more-of-using-rpcclient-to-find.html)
-    * [more with rpcclient - carnal0wnage](http://carnal0wnage.attackresearch.com/2010/06/more-with-rpcclient.html)
-* **Talks/Videos**
-* **Papers**
+    * [pynessus](https://github.com/rmusser01/pynessus)
+        * Python Parser for Nessus Output
+    * [which-cloud](https://github.com/bcoe/which-cloud)
+        * Given an ip address, return which cloud provider it belongs to (AWS, GCE, etc)  
+    * [Zarp](https://github.com/hatRiot/zarp)
+        * Zarp is a network attack tool centered around the exploitation of local networks. This does not include system exploitation, but rather abusing networking protocols and stacks to take over, infiltrate, and knock out. Sessions can be managed to quickly poison and sniff multiple systems at once, dumping sensitive information automatically or to the attacker directly. Various sniffers are included to automatically parse usernames and passwords from various protocols, as well as view HTTP traffic and more. DoS attacks are included to knock out various systems and applications. These tools open up the possibility for very complex attack scenarios on live networks quickly, cleanly, and quietly.
+    * [Yersinia](http://www.yersinia.net/)
+        * Yersinia is a network tool designed to take advantage of some weakeness in different network protocols. It pretends to be a solid framework for analyzing and testing the deployed networks and systems. 
+        * [Attacks Supported](http://www.yersinia.net/attacks.htm)
+    * [comcast](https://github.com/tylertreat/comcast)
+        * Simulating shitty network connections so you can build better systems.
+    * [TCPCopy](https://github.com/session-replay-tools/tcpcopy)
+        * TCPCopy is a TCP stream replay tool to support real testing of Internet server applications.
+    * [nessusporter](https://github.com/Tw1sm/nessporter)
+        * Easily download entire folders of Nessus scans in the format(s) of your choosing. This script uses provided credentials to connect to a Nessus server and store a session token, which is then used for all subsquent requests.
+    * [nessaws](https://github.com/TerbiumLabs/nessaws?files=1)
+        * Automate Nessus scans against AWS EC2/RDS endpoints.
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -418,96 +144,11 @@ https://www.blackhillsinfosec.com/cisco-smart-installs-and-why-theyre-not-inform
 
 
 
-
-
-
-
-
-
-------------
-#### <a name="web"></a>Web:
-* **Tools**
-	* [WPScan](https://github.com/wpscanteam/wpscan)
-		* WPScan is a black box WordPress vulnerability scanner.
-	* [WhatWeb](https://github.com/urbanadventurer/WhatWeb)
-		* WhatWeb identifies websites. Its goal is to answer the question, "What is that Website?". WhatWeb recognises web technologies including content management systems (CMS), blogging platforms, statistic/analytics packages, JavaScript libraries, web servers, and embedded devices. WhatWeb has over 1500 plugins, each to recognise something different. WhatWeb also identifies version numbers, email addresses, account IDs, web framework modules, SQL errors, and more.
-	* [webDisco](https://github.com/joeybelans/webDisco)
-		* Web discovery tool to capture screenshots from a list of hosts & vhosts.  Requests are made via IP address and vhosts to determine differences. Additionallty checks for common administrative interfaces and web server  misconfigurations.
-	* [w3af](https://github.com/andresriancho/w3af)
-		* w3af: web application attack and audit framework, the open source web vulnerability scanner.
-	* [PowerWebShot](https://github.com/dafthack/PowerWebShot)
-		* A PowerShell tool for taking screenshots of multiple web servers quickly.
-
-
-
------------------------
-### <a name="webdav"></a> WebDAV
-* **101**
-* **General/Articles/Writeups**
-* **Tools**
-	* [WsgiDAV](https://github.com/mar10/wsgidav)
-		* WsgiDAV is a generic WebDAV server written in Python and based on WSGI.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-------------
+-----------
 ### <a name="other">Other</a> (Breaking Routers)
 * [ASUS Router infosvr UDP Broadcast root Command Execution](https://github.com/jduck/asus-cmd)
 
 
-
-
-------------
-#### <a name="misc"></a>MISC:
-* [t50 - the fastest packet injector.](https://github.com/fredericopissarra/t50)
-	* T50 was designed to perform -Stress Testing-  on a variety of infra-structure
-network devices (Version 2.45), using widely implemented protocols, and after
-some requests it was was re-designed to extend the tests (as of Version 5.3),
-covering some regular protocols (ICMP,  TCP  and  UDP),  some infra-structure
-specific protocols (GRE,  IPSec  and  RSVP), and some routing protocols (RIP,
-EIGRP and OSPF).
-* [C3CM: Defeating the Command - Control - and Communications of Digital Assailants](http://www.irongeek.com/i.php?page=videos/derbycon4/t206-c3cm-defeating-the-command-control-and-communications-of-digital-assailants-russ-mcree)
-	* C3CM: the acronym for command- control- and communi - cations countermeasures. Ripe for use in the information security realm, C3CM takes us past C2 analysis and to the next level. Initially, C3CM was most often intended to wreck the command and control of enemy air defense networks, a very specific military mission. We-ll apply that mindset in the context of combating bots and other evil. Our version of C3CM therefore is to identify, interrupt, and counter the command, control, and communications capabilities of our digital assailants. The three phases of C3CM will utilize: Nfsight with Nfdump, Nfsen, and fprobe to conduct our identification phase, Bro with Logstash and Kibana for the interruption phase, and ADHD for the counter phase. Converge these on one useful platform and you too might have a chance deter those who would do you harm. We-ll discuss each of these three phases (identify, interrupt, and counter) with tooling and tactics, complete with demonstrations and methodology attendees can put to use in their environments. Based on the three part ISSA Journal Toolsmith series: http://holisticinfosec. blogspot.com/search?q=c3cm&max-results=20&by-date=true
-
-
-
-
----------------------------
-### <a name="vendor"></a> Vendor Specific Stuff
-* **Non-Specific**
-	* [Vendor/Ethernet/Bluetooth MAC Address Lookup and Search - coffer.com](http://www.coffer.com/mac_find/)
-	* [IP Cameras Default Passwords Directory](https://ipvm.com/reports/ip-cameras-default-passwords-directory)
-* **Cisco**
-	* [CVE-2016-6366](https://github.com/RiskSense-Ops/CVE-2016-6366/blob/master/README.md)
-		* Public repository for improvements to the EXTRABACON exploit, a remote code execution for Cisco ASA written by the Equation Group (NSA) and leaked by the Shadow Brokers.
-* **F5**
-    * [BigIP Security - dnkolegov](https://github.com/dnkolegov/bigipsecurity/blob/master/README.md)
-        * This document describes common misconfigurations of F5 Networks BigIP systems.
-* **IBM**
-	* [Domi-Owned](https://github.com/coldfusion39/domi-owned)
-		* Domi-Owned is a tool used for compromising IBM/Lotus Domino servers. Tested on IBM/Lotus Domino 8.5.2, 8.5.3, 9.0.0, and 9.0.1 running on Windows and Linux.
-
-
-
-* **Distributed Systems**
-	* [Garfield](https://github.com/tunnelshade/garfield)
-		* Garfield is and open source framework for scanning and exploiting Distributed Systems. The framework currently being in it's alpha stage and is undergoing rapid development.
-* [IVRE](https://github.com/cea-sec/ivre)
-	* IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
-	http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 
@@ -536,22 +177,48 @@ EIGRP and OSPF).
     * [RFC 826 - An Ethernet Address Resolution Protocol or Converting Network Protocol Addresses to 48.bit Ethernet Address for Transmission on Ethernet Hardware](https://tools.ietf.org/html/rfc826)
 * **Articles/Blogposts/Writeups**
     * [Analyzing ARP to Discover & Exploit Stale Network Address Configurations - Justin Angel](https://www.blackhillsinfosec.com/analyzing-arp-to-discover-exploit-stale-network-address-configurations/)
-
 * **Tools**
     * [kickthemout](https://github.com/k4m4/kickthemout)
         * A tool to kick devices out of your network and enjoy all the bandwidth for yourself. It allows you to select specific or all devices and ARP spoofs them off your local area network.
-    * [eavesarp](https://github.com/arch4ngel/eavesarp)
-        * Analyze ARP requests to identify intercommunicating hosts and stale network address configurations (SNACs)
+    * [Eavesarp](https://github.com/arch4ngel/eavesarp)
+        * A reconnaissance tool that analyzes ARP requests to identify hosts that are likely communicating with one another, which is useful in those dreaded situations where LLMNR/NBNS aren't in use for name resolution.
+        * [Blogpost](https://blackhillsinfosec.com/analyzing-arp-to-discover-exploit-stale-network-address-configurations/)
 
 ------------
 #### <a name="bgp"></a> BGP
-* [BGP Hijacking overview. Routing incidents prevention and defense mechanisms - noction](https://www.noction.com/blog/bgp-hijacking)
-* [BGP Vulnerability Testing: Separating Fact from FUD - Sean Covery, Matthew Franz(BHUSA03)](https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-convery-franz-v2.pdf)
+* **101**
+* **Educational**
+    * [isbgpsafeyet.com](https://isbgpsafeyet.com/)
+* **Attacking**
+    * **Articles/Blogposts/Writeups**
+        * [BGP Hijacking overview. Routing incidents prevention and defense mechanisms - noction](https://www.noction.com/blog/bgp-hijacking)
+        * [BGP Vulnerability Testing: Separating Fact from FUD - Sean Covery, Matthew Franz(BHUSA03)](https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-convery-franz-v2.pdf)
+* **Tools**
+
 
 
 
 ------------
-#### <a name="dns"></a>DNS:
+#### <a name="dhcp"></a>Dynamic Host Configuration Protocol (DHCP)
+* **101**
+    * [Dynamic Host Configuration Protocol - Wikipedia](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol)
+    * [DHCPv6 - Wikipedia](https://en.wikipedia.org/wiki/DHCPv6)
+    * [Understanding the Basic Operations of DHCP - netmanias(2013)](https://www.netmanias.com/en/post/techdocs/5998/dhcp-network-protocol/understanding-the-basic-operations-of-dhcp)
+    * [DHCP Overview - Juniper](https://www.juniper.net/documentation/en_US/junos/topics/topic-map/dhcp-overview.html)
+* **RFCs**
+    * [RFC2131: Dynamic Host Configuration Protocol](https://tools.ietf.org/html/rfc2131)
+    * [RFC4339: IPv6 Host Configuration of DNS Server Information Approaches](https://tools.ietf.org/html/rfc4339)
+* **Educational**
+* **Attacking**
+* **Tools**
+    * [DHCP Discovery - Chris Dent](https://www.indented.co.uk/dhcp-discovery/)
+        * A PowerShell script to send a DHCP Discover request and listen for DHCP Offer responses, it can be used for finding DHCP servers (including rogue servers), or for testing DHCP servers and relays. The output from this script is an object containing a decode of the DHCP packet and a number of options.
+
+
+
+
+------------
+#### <a name="dns"></a>Domain Name System(DNS)
 * **101**
     * [DNS 101: An introduction to Domain Name Servers - Alex Callejas](https://www.redhat.com/sysadmin/dns-domain-name-servers)
     * [A Cat Explains DNS - ](https://www.youtube.com/watch?v=4ZtFk2dtqv0)
@@ -562,67 +229,102 @@ EIGRP and OSPF).
     * [RFC 1035 - DOMAIN NAMES - IMPLEMENTATION AND SPECIFICATION](https://www.ietf.org/rfc/rfc1035.txt)
     * [DNS Reference Information - technet](https://technet.microsoft.com/en-us/library/dd197499(v=ws.10).aspx)
     * [DNS Records: an Introduction](https://www.linode.com/docs/networking/dns/dns-records-an-introduction)
-* **Articles/Blogposts/Writeups**
-    * [An Illustrated Guide to the Kaminsky DNS Vulnerability - Steve Friedl](http://unixwiz.net/techtips/iguide-kaminsky-dns-vuln.html)
-        * This paper covers how DNS works: first at a high level, then by picking apart an individual packet exchange field by field. Next, we'll use this knowledge to see how weaknesses in common implementations can lead to cache poisoning.
-    * [Enumerating DNSSEC NSEC and NSEC3 Records](https://www.altsci.com/concepts/page.php?s=dnssec&p=1)
-    * [DNS database espionage](http://dnscurve.org/espionage2.html)
-    * [How to resolve a million domains](https://idea.popcount.org/2013-11-28-how-to-resolve-a-million-domains/)
-    * [Respect My Authority – Hijacking Broken Nameservers to Compromise Your Target - thehackerblog](https://thehackerblog.com/respect-my-authority-hijacking-broken-nameservers-to-compromise-your-target/)
+    * [How DNS Works](https://howdns.works/)
+        * A fun and colorful explanation of how DNS works.
+    * [Google on DNS Security](https://developers.google.com/speed/public-dns/docs/security)
+        * For Google Public DNS
+    * [Anatomy of a Linux DNS Lookup – Part I - zwischenzugs(2018)](https://zwischenzugs.com/2018/06/08/anatomy-of-a-linux-dns-lookup-part-i/)
+* **DIY**
     * [Setup your Out-of-Band DNS Server - Juxhin Dyrmishi Brigjaj](https://blog.digital-horror.com/setting-up-your-out-of-band-dns-resolver/)
+* **Recon**
+    * **Articles/Blogposts/Writeups**
+        * [Enumerating DNSSEC NSEC and NSEC3 Records](https://www.altsci.com/concepts/page.php?s=dnssec&p=1)
+        * [DNS database espionage](http://dnscurve.org/espionage2.html)
+        * [How to resolve a million domains](https://idea.popcount.org/2013-11-28-how-to-resolve-a-million-domains/)
+    * **Subdomain Enumeration**
+        * [Sub-domain enumeration - Reference](https://gist.github.com/yamakira/2a36d3ae077558ac446e4a89143c69ab)
+        * [The Art of Subdomain Enumeration](https://blog.sweepatic.com/art-of-subdomain-enumeration/)
+        * [A penetration tester’s guide to sub-domain enumeration - appseco](https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6)
+        * **Tools**
+            * [amass](https://github.com/caffix/amass)
+                * The amass tool searches Internet data sources, performs brute force subdomain enumeration, searches web archives, and uses machine learning to generate additional subdomain name guesses. DNS name resolution is performed across many public servers so the authoritative server will see the traffic coming from different locations.)
+            * [Altdns](https://github.com/infosec-au/altdns)
+                * Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging) as well as takes in a list of subdomains that you know of.
+            * [AQUATONE](https://github.com/michenriksen/aquatone)
+                * AQUATONE is a set of tools for performing reconnaissance on domain names. It can discover subdomains on a given domain by using open sources as well as the more common subdomain dictionary brute force approach. After subdomain discovery, AQUATONE can then scan the hosts for common web ports and HTTP headers, HTML bodies and screenshots can be gathered and consolidated into a report for easy analysis of the attack surface.
+            * [Sublist3r](https://github.com/aboul3la/Sublist3r)
+                * Fast subdomains enumeration tool for penetration testers
+            * [dns-parallel-prober](https://github.com/lorenzog/dns-parallel-prober)
+                * This script is a proof of concept for a parallelised domain name prober. It creates a queue of threads and tasks each one to probe a sub-domain of the given root domain. At every iteration step each dead thread is removed and the queue is replenished as necessary.
+            * [enumall](https://github.com/Dhayalan96/enumall)
+                * Script to enumerate subdomains, leveraging recon-ng. Uses google scraping, bing scraping, baidu scraping, yahoo scarping, netcraft, and bruteforces to find subdomains. Plus resolves to IP.
+            * [Knockpy](https://github.com/guelfoweb/knock)
+                * Knockpy is a python tool designed to enumerate subdomains on a target domain through a wordlist. It is designed to scan for DNS zone transfer and to try to bypass the wildcard DNS record automatically if it is enabled.
+            * [sub6](https://github.com/YasserGersy/sub6)
+                * subdomain take over detector and crawler
+            * [Anubis](https://github.com/jonluca/Anubis)
+                * Anubis is a subdomain enumeration and information gathering tool. Anubis collates data from a variety of sources, including HackerTarget, DNSDumpster, x509 certs, VirusTotal, Google, Pkey, and NetCraft. Anubis also has a sister project, [AnubisDB](https://github.com/jonluca/Anubis-DB), which serves as a centralized repository of subdomains.
+    * **Domain Resolution**
+        * [Bass](https://github.com/Abss0x7tbh/bass)
+            * bass aim's at maximizing your resolver count wherever it can by combining different valid dns servers from the targets DNS Providers & adding them to your initial set of public resolvers (here located in /resolvers/public.txt), thereby allowing you to use the maximum number of resolvers obtainable for your target. This is more of a best-case-scenario per target. More the resolvers, lesser the traffic to each resolver when using tools like massdns that perform concurrent lookups using internal hash table. So easier it is to scale your target list
+        * [MassDNS](https://github.com/blechschmidt/massdns)
+            * MassDNS is a simple high-performance DNS stub resolver targetting those who seek to resolve a massive amount of domain names in the order of millions or even billions. Without special configuration, MassDNS is capable of resolving over 350,000 names per second using publicly available resolvers.
+        * [TXTDNS](http://www.txdns.net/)
+           * TXDNS is a Win32 aggressive multithreaded DNS digger. Capable of placing, on the wire, thousands of DNS queries per minute. TXDNS main goal is to expose a domain namespace trough a number of techniques: Typos: Mised, doouble and transposde keystrokes; TLD/ccSLD rotation; Dictionary attack; Full Brute-force attack using alpha, numeric or alphanumeric charsets; Reverse grinding.
+    * **Services**
+        * [DNS Dumpster](https://www.DNSdumpster.com)
+            * free domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process
+        * [DNS-Trails](https://securitytrails.com/dns-trails)
+            * The World's Largest Repository of historical DNS data
+* **Attacking**
+    * **Articles/Blogposts/Writeups**
+        * [An Illustrated Guide to the Kaminsky DNS Vulnerability - Steve Friedl](http://unixwiz.net/techtips/iguide-kaminsky-dns-vuln.html)
+            * This paper covers how DNS works: first at a high level, then by picking apart an individual packet exchange field by field. Next, we'll use this knowledge to see how weaknesses in common implementations can lead to cache poisoning.
+        * [Respect My Authority – Hijacking Broken Nameservers to Compromise Your Target - thehackerblog](https://thehackerblog.com/respect-my-authority-hijacking-broken-nameservers-to-compromise-your-target/)
+    * **Presentations/Talks/Videos**
+        * [DNS Dark Matter Discovery Theres Evil In Those Queries - Jim Nitterauer](https://www.youtube.com/watch?v=-A2Wqagz73Y)
+        * [DNS hijacking using cloud providers - Frans Ros-n](https://www.youtube.com/watch?v=HhJv8CU-RIk)
+        * [DNS May Be Hazardous to Your Health - Robert Stucke](https://www.youtube.com/watch?v=ZPbyDSvGasw)
+            * Great talk on attacking DNS
+        * [Secrets of DNS Ron Bowes - Derbycon4](https://www.youtube.com/watch?v=MgO-gPiVTSc)
+    * **Cache Poisoning**
+        * **101**
+            * [DNS Spoofing - Wikipedia](https://en.wikipedia.org/wiki/DNS_spoofing)
+            * [What is DNS cache poisoning? | DNS spoofing - Cloudflare](https://www.cloudflare.com/learning/dns/dns-cache-poisoning/)
+        * **Articles/Blogposts/Writeups**
+            * [DNSTrust – 28 queries later: an example attack on .fr](https://web.archive.org/web/20090614054817/http://shinobi.dempsky.org/~matthew/dnstrust/example.html)
     * **Cache Snooping***
+        * **101**
         * **Articles/Blogposts/Writeups**
             * [DNS Cache Snooping or Snooping the Cache for Fun and Profit - Luis Grangeia](http://cs.unc.edu/~fabian/course_papers/cache_snooping.pdf)
             * [DNS and The Bit 0x20 - Hypothetical.me](https://hypothetical.me/short/dns-0x20/)
                 * While writing a post on Certificate Authority Authorization (CAA) DNS record, I’ve learned about this other DNS thing — a neat hack that makes cache poisoning attacks harder.
     * **DNS Rebinding**
-        * [DNS Rebinding - Wikipedia](https://en.wikipedia.org/wiki/DNS_rebinding)
-        * [Protecting Browsers from DNS Rebinding Attacks - Stanford Web Security Research](https://crypto.stanford.edu/dns/)
-        * [DNS Rebinding Attacks Explained - Daniel Miessler](https://danielmiessler.com/blog/dns-rebinding-explained/)
-        * [The power of DNS rebinding: stealing WiFi passwords with a website - Michele Spagnuolo](https://miki.it/blog/2015/4/20/the-power-of-dns-rebinding-stealing-wifi-passwords-with-a-website/)
-        * [Protecting Browsers from DNS Rebinding Attacks](https://crypto.stanford.edu/dns/)
-        * [Rails Webconsole DNS Rebinding - benmmurphy.github.io](https://web.archive.org/web/20161211232606/http://benmmurphy.github.io/blog/2016/07/11/rails-webconsole-dns-rebinding/)
-        * [Attacking Private Networks from the Internet with DNS Rebinding - Brannon Dorsey](https://medium.com/@brannondorsey/attacking-private-networks-from-the-internet-with-dns-rebinding-ea7098a2d325)
-        * [Practical Attacks with DNS Rebinding - Craig Young](https://www.tripwire.com/state-of-security/vert/practical-attacks-dns-rebinding/)
-        * [I can see your local web servers - James Fisher](http://http.jameshfisher.com/2019/05/26/i-can-see-your-local-web-servers/)
-        * [How to steal any developer's local database - Bouke van der Bijl](https://bou.ke/blog/hacking-developers/)
-            * If you’re reading this and you’re a software developer, you’re probably running some services locally. Redis, Memcached, and Elasticsearch are software products that many rely on. What you might not know, is that these locally running services are accessible by any website you visit, making it possible for bad guys to steal the data you have locally!
-    * **Subdomain Enumeration**
-        * [Sub-domain enumeration - Reference](https://gist.github.com/yamakira/2a36d3ae077558ac446e4a89143c69ab)
-        * [The Art of Subdomain Enumeration](https://blog.sweepatic.com/art-of-subdomain-enumeration/)
-        * [A penetration tester’s guide to sub-domain enumeration - appseco](https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6)
-* **Presentations/Talks/Videos**
-    * [DNS Dark Matter Discovery Theres Evil In Those Queries - Jim Nitterauer](https://www.youtube.com/watch?v=-A2Wqagz73Y)
-    * [DNS hijacking using cloud providers - Frans Ros-n](https://www.youtube.com/watch?v=HhJv8CU-RIk)
-    * [DNS May Be Hazardous to Your Health - Robert Stucke](https://www.youtube.com/watch?v=ZPbyDSvGasw)
-        * Great talk on attacking DNS
-    * [Secrets of DNS Ron Bowes - Derbycon4](https://www.youtube.com/watch?v=MgO-gPiVTSc)
-* **SubDomain Enumeration Tools**
-    * [amass](https://github.com/caffix/amass)
-        * The amass tool searches Internet data sources, performs brute force subdomain enumeration, searches web archives, and uses machine learning to generate additional subdomain name guesses. DNS name resolution is performed across many public servers so the authoritative server will see the traffic coming from different locations.)
-    * [Altdns](https://github.com/infosec-au/altdns)
-        * Altdns is a DNS recon tool that allows for the discovery of subdomains that conform to patterns. Altdns takes in words that could be present in subdomains under a domain (such as test, dev, staging) as well as takes in a list of subdomains that you know of.
-    * [AQUATONE](https://github.com/michenriksen/aquatone)
-        * AQUATONE is a set of tools for performing reconnaissance on domain names. It can discover subdomains on a given domain by using open sources as well as the more common subdomain dictionary brute force approach. After subdomain discovery, AQUATONE can then scan the hosts for common web ports and HTTP headers, HTML bodies and screenshots can be gathered and consolidated into a report for easy analysis of the attack surface.
-    * [Sublist3r](https://github.com/aboul3la/Sublist3r)
-        * Fast subdomains enumeration tool for penetration testers
-    * [dns-parallel-prober](https://github.com/lorenzog/dns-parallel-prober)
-        * This script is a proof of concept for a parallelised domain name prober. It creates a queue of threads and tasks each one to probe a sub-domain of the given root domain. At every iteration step each dead thread is removed and the queue is replenished as necessary.
-    * [enumall](https://github.com/Dhayalan96/enumall)
-        * Script to enumerate subdomains, leveraging recon-ng. Uses google scraping, bing scraping, baidu scraping, yahoo scarping, netcraft, and bruteforces to find subdomains. Plus resolves to IP.
-    * [Knockpy](https://github.com/guelfoweb/knock)
-        * Knockpy is a python tool designed to enumerate subdomains on a target domain through a wordlist. It is designed to scan for DNS zone transfer and to try to bypass the wildcard DNS record automatically if it is enabled.
-    * [sub6](https://github.com/YasserGersy/sub6)
-        * subdomain take over detector and crawler
-    * [Anubis](https://github.com/jonluca/Anubis)
-        * Anubis is a subdomain enumeration and information gathering tool. Anubis collates data from a variety of sources, including HackerTarget, DNSDumpster, x509 certs, VirusTotal, Google, Pkey, and NetCraft. Anubis also has a sister project, [AnubisDB](https://github.com/jonluca/Anubis-DB), which serves as a centralized repository of subdomains.
-* **Service**
-    * [DNS Dumpster](https://www.DNSdumpster.com)
-        * free domain research tool that can discover hosts related to a domain. Finding visible hosts from the attackers perspective is an important part of the security assessment process
-    * [DNS-Trails](https://securitytrails.com/dns-trails)
-        * The World's Largest Repository of historical DNS data
-* **Tools**
-    * **General**
+        * **101**
+            * [DNS Rebinding - Wikipedia](https://en.wikipedia.org/wiki/DNS_rebinding)
+            * [DNS Rebinding Attacks Explained - Daniel Miessler](https://danielmiessler.com/blog/dns-rebinding-explained/)
+            * [Protecting Browsers from DNS Rebinding Attacks - Stanford Web Security Research](https://crypto.stanford.edu/dns/)
+        * **Articles/Blogposts/Writeups**
+            * [The power of DNS rebinding: stealing WiFi passwords with a website - Michele Spagnuolo](https://miki.it/blog/2015/4/20/the-power-of-dns-rebinding-stealing-wifi-passwords-with-a-website/)
+            * [Rails Webconsole DNS Rebinding - benmmurphy.github.io](https://web.archive.org/web/20161211232606/http://benmmurphy.github.io/blog/2016/07/11/rails-webconsole-dns-rebinding/)
+            * [Attacking Private Networks from the Internet with DNS Rebinding - Brannon Dorsey](https://medium.com/@brannondorsey/attacking-private-networks-from-the-internet-with-dns-rebinding-ea7098a2d325)
+            * [Practical Attacks with DNS Rebinding - Craig Young](https://www.tripwire.com/state-of-security/vert/practical-attacks-dns-rebinding/)
+            * [I can see your local web servers - James Fisher](http://http.jameshfisher.com/2019/05/26/i-can-see-your-local-web-servers/)
+            * [How to steal any developer's local database - Bouke van der Bijl](https://bou.ke/blog/hacking-developers/)
+                * If you’re reading this and you’re a software developer, you’re probably running some services locally. Redis, Memcached, and Elasticsearch are software products that many rely on. What you might not know, is that these locally running services are accessible by any website you visit, making it possible for bad guys to steal the data you have locally!
+        * **Tools**
+            * [ReDTunnel: Explore Internal Networks via DNS Rebinding Tunnel - Nimrod Levy & Tomer Zait(BHUSA19)](https://www.youtube.com/watch?v=sqUxeiqq0xE)
+                * [Tool](https://github.com/ReDTunnel/redtunnel)
+            * [Singularity](https://github.com/nccgroup/singularity)
+                * Singularity of Origin is a tool to perform DNS rebinding attacks. It includes the necessary components to rebind the IP address of the attack server DNS name to the target machine's IP address and to serve attack payloads to exploit vulnerable software on the target machine.
+                * [Blogpost](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2018/august/singularity-of-origin-a-dns-rebinding-attack-framework/)
+            * [DNS Rebind Toolkit](https://github.com/brannondorsey/dns-rebind-toolkit)
+                * DNS Rebind Toolkit is a frontend JavaScript framework for developing DNS Rebinding exploits against vulnerable hosts and services on a local area network (LAN).
+            * [A DNS rebinding implementation](https://github.com/lorenzog/dns-rebinding)
+                * This tool will exfiltrate data cross-domains using a DNS rebinding attack, bypassing the browser's same-origin policy.
+            * [whonow](https://github.com/brannondorsey/whonow)
+                * A "malicious" DNS server for executing DNS Rebinding attacks on the fly
+    * **Tools**
         * [DNSRecon](https://github.com/darkoperator/dnsrecon)
             * [Quick Reference Guide](http://pentestlab.wordpress.com/2012/11/13/dns-reconnaissance-dnsrecon/)
         * [dns-discovery](https://github.com/mafintosh/dns-discovery)
@@ -633,31 +335,35 @@ EIGRP and OSPF).
             * DNS Recon | Brute Forcer | DNS Zone Transfer | DNS Wild Card Checks | DNS Wild Card Brute Forcer | Email Enumeration | Staff Enumeration | Compromised Account Enumeration | MetaData Harvesting
         * [nsec3map](https://github.com/anonion0/nsec3map)
             * a tool to enumerate the resource records of a DNS zone using its DNSSEC NSEC or NSEC3 chain
-    * **Rebinding Attacks**
-        * [ReDTunnel: Explore Internal Networks via DNS Rebinding Tunnel - Nimrod Levy & Tomer Zait(BHUSA19)](https://www.youtube.com/watch?v=sqUxeiqq0xE)
-            * [Tool](https://github.com/ReDTunnel/redtunnel)
-        * [Singularity](https://github.com/nccgroup/singularity)
-            * Singularity of Origin is a tool to perform DNS rebinding attacks. It includes the necessary components to rebind the IP address of the attack server DNS name to the target machine's IP address and to serve attack payloads to exploit vulnerable software on the target machine.
-            * [Blogpost](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2018/august/singularity-of-origin-a-dns-rebinding-attack-framework/)
-        * [DNS Rebind Toolkit](https://github.com/brannondorsey/dns-rebind-toolkit)
-            * DNS Rebind Toolkit is a frontend JavaScript framework for developing DNS Rebinding exploits against vulnerable hosts and services on a local area network (LAN).
-        * [A DNS rebinding implementation](https://github.com/lorenzog/dns-rebinding)
-            * This tool will exfiltrate data cross-domains using a DNS rebinding attack, bypassing the browser's same-origin policy.
-        * [whonow](https://github.com/brannondorsey/whonow)
-            * A "malicious" DNS server for executing DNS Rebinding attacks on the fly
-    * **Domain Resolution**
-        * [Bass](https://github.com/Abss0x7tbh/bass)
-            * bass aim's at maximizing your resolver count wherever it can by combining different valid dns servers from the targets DNS Providers & adding them to your initial set of public resolvers (here located in /resolvers/public.txt), thereby allowing you to use the maximum number of resolvers obtainable for your target. This is more of a best-case-scenario per target. More the resolvers, lesser the traffic to each resolver when using tools like massdns that perform concurrent lookups using internal hash table. So easier it is to scale your target list
-        * [MassDNS](https://github.com/blechschmidt/massdns)
-            * MassDNS is a simple high-performance DNS stub resolver targetting those who seek to resolve a massive amount of domain names in the order of millions or even billions. Without special configuration, MassDNS is capable of resolving over 350,000 names per second using publicly available resolvers.
-        * [TXTDNS](http://www.txdns.net/)
-           * TXDNS is a Win32 aggressive multithreaded DNS digger. Capable of placing, on the wire, thousands of DNS queries per minute. TXDNS main goal is to expose a domain namespace trough a number of techniques: Typos: Mised, doouble and transposde keystrokes; TLD/ccSLD rotation; Dictionary attack; Full Brute-force attack using alpha, numeric or alphanumeric charsets; Reverse grinding.
+* **Tools**
     * **Logging**
         * [passivedns](https://github.com/gamelinux/passivedns)
             * A tool to collect DNS records passively
     * **MitM**
     * [Judas DNS](https://github.com/mandatoryprogrammer/JudasDNS)
         * A DNS proxy server built to be deployed in place of a taken over nameserver to perform targeted exploitation. Judas works by proxying all DNS queries to the legitimate nameservers for a domain. The magic comes with Judas's rule configurations which allow you to change DNS responses depending on source IP or DNS query type. This allows an attacker to configure a malicious nameserver to do things like selectively re-route inbound email coming from specified source IP ranges (via modified MX records), set extremely long TTLs to keep poisoned records cached, and more.
+
+
+
+#### Multicast DNS <a name="mdns"></a>
+* **101**
+    * [Multicast DNS - Wikipedia](https://en.wikipedia.org/wiki/Multicast_DNS)
+* **Educational**
+* **Attacking**
+    * **Articles/Blogposts/Writeups**
+       * [Name (mDNS) Poisoning Attacks Inside The LAN(2008)](https://www.gnucitizen.org/blog/name-mdns-poisoning-attacks-inside-the-lan/)
+
+
+---------------------
+### <a name="hnap"></a>HNAP
+* **101**
+    * [gRPC and Protocol Buffers: an Alternative to REST APIs and JSON - Andrew Connell](http://www.andrewconnell.com/blog/grpc-and-protocol-buffers-an-alternative-to-rest-apis-and-json)
+    * [Awesome gRPC](https://github.com/grpc-ecosystem/awesome-grpc)
+        * A curated list of useful resources for gRPC
+* **Articles/Blogposts/Writeups**
+    * [Building High Performance APIs In Go Using gRPC And Protocol Buffers - Shiju Varghese](https://medium.com/@shijuvar/building-high-performance-apis-in-go-using-grpc-and-protocol-buffers-2eda5b80771b)
+* **Presentations/Talks/Videos**
+* **Tools**
 
 
 
@@ -669,6 +375,12 @@ EIGRP and OSPF).
 
 ---------------------
 ### <a name="hnap"></a>HNAP
+* **101**
+
+* **Articles/Blogposts/Writeups
+* **Presentations/Talks/Videos**
+* **Tools**
+
 * [Home Network Administration Protocol - Wikipedia](https://en.wikipedia.org/wiki/Home_Network_Administration_Protocol)
     * Home Network Administration Protocol (HNAP) is a proprietary network protocol invented by Pure Networks, Inc. and acquired by Cisco Systems which allows identification, configuration, and management of network devices. HNAP is based on SOAP.
 * [HNAP - Router Security](https://www.routersecurity.org/hnap.php)
@@ -697,6 +409,11 @@ EIGRP and OSPF).
 
 ### <a name="ipsec"></a>IPSEC
 * **101**
+* **Attacking*** 
+    * **Articles/Blogposts/Writeups**
+    * **Presentations/Talks/Videos**
+* **Papers**
+* **Tools**
 * IKEForce
     * IKEForce is a command line IPSEC VPN brute forcing tool for Linux that allows group name/ID enumeration and XAUTH brute forcing capabilities.
     * [Cracking IKE Mission:Improbable (Part 1)](https://www.trustwave.com/Resources/SpiderLabs-Blog/Cracking-IKE-Mission-Improbable-(Part-1)/)
@@ -706,23 +423,29 @@ EIGRP and OSPF).
 
 
 ------------
-### <a name="ipmi"></a>IPMI
+### <a name="ipmi"></a>BMCs/IPMI/iDRAC/Similar
 * **101**
     * [Intelligent Platform Managment Interface Documentation - Intel](https://www.intel.com/content/www/us/en/servers/ipmi/ipmi-home.html)
     * [IPMI Basics](https://www.thomas-krenn.com/en/wiki/IPMI_Basics)
     * [Intelligent Platform Management Interface - Wikipedia](https://en.wikipedia.org/wiki/Intelligent_Platform_Management_Interface)
-* **Articles/Blogposts/Writeups**
-    * [A Penetration Tester's Guide to IPMI and BMCs - HD Moore](https://blog.rapid7.com/2013/07/02/a-penetration-testers-guide-to-ipmi/)
-    * [one packet auditing - trouble.org](http://trouble.org/?p=712)
-    * [IPMI - fish2.com](http://fish2.com/ipmi/)
+    * [Redfish](https://www.dmtf.org/standards/redfish)
+        * DMTF’s Redfish® is a standard designed to deliver simple and secure management for converged, hybrid IT and the Software Defined Data Center (SDDC). Both human readable and machine capable, Redfish leverages common Internet and web services standards to expose information directly to the modern tool chain.
+* **Educational**
+    * [IPMI Basics - Thomas Krenn](https://www.thomas-krenn.com/en/wiki/IPMI_Basics)
+* **Attacking*** 
+    * **Articles/Blogposts/Writeups**
+        * [A Penetration Tester's Guide to IPMI and BMCs - HD Moore](https://blog.rapid7.com/2013/07/02/a-penetration-testers-guide-to-ipmi/)
+        * [one packet auditing - trouble.org](http://trouble.org/?p=712)
+        * [IPMI - fish2.com](http://fish2.com/ipmi/)
+        * [CVE-2019-6260: Gaining control of BMC from the host processor - Stewart Smith](https://www.flamingspork.com/blog/2019/01/23/cve-2019-6260-gaining-control-of-bmc-from-the-host-processor/)
+        * [A Penetration Tester's Guide to IPMI and BMCs](https://blog.rapid7.com/2013/07/02/a-penetration-testers-guide-to-ipmi/)
+        * [Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)
+        * [IPMI – A Gentle Introduction with OpenIPMI](http://openipmi.sourceforge.net/IPMI.pdf)
+    * **Presentations/Talks/Videos**
 * **Papers**
     * [Sold Down the River - Dan Farmer](http://fish2.com/ipmi/river.pdf)
     * [IPMI: FREIGHT TRAIN TO HELL OR LINDA WU & THE NIGHT OF THE LEECHES - Dan Farmer](http://fish2.com/ipmi/itrain.pdf)
     * [IPMI++ Security Best Practices  - Dan Farmer](http://fish2.com/ipmi/bp.pdf)
-* **Presentations/Talks/Videos**
-    * [A Penetration Tester's Guide to IPMI and BMCs](https://blog.rapid7.com/2013/07/02/a-penetration-testers-guide-to-ipmi/)
-    * [Breaking IPMI/BMC](http://fish2.com/ipmi/how-to-break-stuff.html)
-    * [IPMI – A Gentle Introduction with OpenIPMI](http://openipmi.sourceforge.net/IPMI.pdf)
 * **Tools**
     * [OpenIPMI](http://openipmi.sourceforge.net/)
 
@@ -751,21 +474,26 @@ EIGRP and OSPF).
     * [RFC 3041: Privacy Extensions for Stateless Address Autoconfiguration in IPv6](https://tools.ietf.org/html/rfc3041)
     * [RFC 4861: Neighbor Discovery for IP version 6 (IPv6)](https://tools.ietf.org/html/rfc4861)
     * [RFC 7710: Captive-Portal Identification Using DHCP or Router Advertisements (RAs)](https://tools.ietf.org/html/rfc7710)
-* **General/Articles/Writeups/Talks**
-    * [Penetration Testing Tools that (do not) Support](https://www.ernw.de/download/newsletter/ERNW_Newsletter_45_PenTesting_Tools_that_Support_IPv6_v.1.1_en.pdf)
-        * Find out which of our favorite penetration testing tools can be used natively using IPv6 as an underlying layer-3 protocol. Find alternative solutions for the rest.
-    * IPv6: Basic Attacks and Defences - Christopher Werny[TROOPERS15]
-        * [Part 1](https://www.youtube.com/watch?v=Y8kjQEGHbAU)
-        * [Part 2](https://www.youtube.com/watch?v=V-GYPp-j-lE)
-    * [Exploiting Tomorrow's Internet Today: Penetration testing with IPv6](http://uninformed.org/?v=all&a=46&t=sumry)
-        * This paper illustrates how IPv6-enabled systems with link-local and auto-configured addresses can be compromised using existing security tools. While most of the techniques described can apply to "real" IPv6 networks, the focus of this paper is to target IPv6-enabled systems on the local network. 
-    * [MITM All The IPv6 Things - DEFCON 21 - Scott Behrens and Brent Bandelgar](https://www.youtube.com/watch?v=9fJGVVuG8Pc)
-    * [[TROOPERS15] Merike Kaeo - Deploying IPv6 Securely - Avoiding Mistakes Others Have Made](https://www.youtube.com/watch?v=rQg4y78xHf8)
-    * [IPv6 Local Neighbor Discovery Using Router Advertisement](https://www.rapid7.com/db/modules/auxiliary/scanner/discovery/ipv6_neighbor_router_advertisement)
-        * Send a spoofed router advertisement with high priority to force hosts to start the IPv6 address auto-config. Monitor for IPv6 host advertisements, and try to guess the link-local address by concatinating the prefix, and the host portion of the IPv6 address. Use NDP host solicitation to determine if the IP address is valid'
-    * [IPv6 - Playing with IPv6 for fun and profit](https://github.com/zbetcheckin/IPv6)
-    * [mitm6 – compromising IPv4 networks via IPv6](https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/)
+* **Educational**
+* **Attacking**
+    * **Articles/Blogposts/Writeups**
+        * [Exploiting Tomorrow's Internet Today: Penetration testing with IPv6](http://uninformed.org/?v=all&a=46&t=sumry)
+            * This paper illustrates how IPv6-enabled systems with link-local and auto-configured addresses can be compromised using existing security tools. While most of the techniques described can apply to "real" IPv6 networks, the focus of this paper is to target IPv6-enabled systems on the local network. 
+        * [mitm6 – compromising IPv4 networks via IPv6 - FOX-IT](https://blog.fox-it.com/2018/01/11/mitm6-compromising-ipv4-networks-via-ipv6/)
+        * [Penetration Testing Tools that (do not) Support](https://www.ernw.de/download/newsletter/ERNW_Newsletter_45_PenTesting_Tools_that_Support_IPv6_v.1.1_en.pdf)
+            * Find out which of our favorite penetration testing tools can be used natively using IPv6 as an underlying layer-3 protocol. Find alternative solutions for the rest.
+        * [IPv6 Local Neighbor Discovery Using Router Advertisement](https://www.rapid7.com/db/modules/auxiliary/scanner/discovery/ipv6_neighbor_router_advertisement)
+            * Send a spoofed router advertisement with high priority to force hosts to start the IPv6 address auto-config. Monitor for IPv6 host advertisements, and try to guess the link-local address by concatinating the prefix, and the host portion of the IPv6 address. Use NDP host solicitation to determine if the IP address is valid'
+        * [IPv6 - Playing with IPv6 for fun and profit](https://github.com/zbetcheckin/IPv6)
+    * **Presentations/Talks/Videos**
+        * IPv6: Basic Attacks and Defences - Christopher Werny[TROOPERS15]
+            * [Part 1](https://www.youtube.com/watch?v=Y8kjQEGHbAU)
+            * [Part 2](https://www.youtube.com/watch?v=V-GYPp-j-lE)
+        * [MITM All The IPv6 Things - DEFCON 21 - Scott Behrens and Brent Bandelgar](https://www.youtube.com/watch?v=9fJGVVuG8Pc)
+        * [[TROOPERS15] Merike Kaeo - Deploying IPv6 Securely - Avoiding Mistakes Others Have Made](https://www.youtube.com/watch?v=rQg4y78xHf8)
 * **Tools**
+    * [ipv666](https://github.com/lavalamp-/ipv666)
+        * ipv666 is a set of tools that enables the discovery of IPv6 addresses both in the global IPv6 address space and in more narrow IPv6 network ranges. These tools are designed to work out of the box with minimal knowledge of their workings.
     * [IPv6 Toolkit](https://github.com/fgont/ipv6toolkit)
         * SI6 Networks' IPv6 Toolkit
     * [THC-IPv6](https://www.thc.org/thc-ipv6/)
@@ -776,6 +504,8 @@ EIGRP and OSPF).
         * Chiron is an IPv6 Security Assessment Framework, written in Python and employing Scapy. It is comprised of the following modules: • IPv6 Scanner • IPv6 Local Link • IPv4-to-IPv6 Proxy • IPv6 Attack Module • IPv6 Proxy. All the above modules are supported by a common library that allows the creation of completely arbitrary IPv6 header chains, fragmented or not.
     * [fi6s](https://github.com/sfan5/fi6s)
         * IPv6 network scanner designed to be fast
+    * [mitm6](https://github.com/fox-it/mitm6)
+        * mitm6 is a pentesting tool that exploits the default configuration of Windows to take over the default DNS server. It does this by replying to DHCPv6 messages, providing victims with a link-local IPv6 address and setting the attackers host as default DNS server. As DNS server, mitm6 will selectively reply to DNS queries of the attackers choosing and redirect the victims traffic to the attacker machine instead of the legitimate server.
 
 
 
@@ -805,6 +535,7 @@ EIGRP and OSPF).
 * **Attacking**
     * [Public Facing LDAP Enumeration](https://www.lanmaster53.com/2013/05/24/public-facing-ldap-enumeration/)
     * [Dangers of LDAP NULL Base and Bind](https://securitysynapse.blogspot.com/2013/09/dangers-of-ldap-null-base-and-bind.html)
+    * [LDAP Injection Cheat Sheet, Attack Examples & Protection - Checkmarx](https://www.checkmarx.com/knowledge/knowledgebase/LDAP)
 * **Tools**
     * [JXplorer](http://jxplorer.org/)
         * JXplorer is a cross platform LDAP browser and editor. It is a standards compliant general purpose LDAP client that can be used to search, read and edit any standard LDAP directory, or any directory service with an LDAP or DSML interface. It is highly flexible and can be extended and customised in a number of ways. JXplorer is written in java, and the source code and Ant build system are available via svn or as a packaged build for users who want to experiment or further develop the program. 
@@ -817,6 +548,9 @@ EIGRP and OSPF).
 
 
 
+------------
+#### <a name="modbus"></a>Modbus
+* See 'Modbus' under 'SCADA/Heavy Machinery'
 
 
 
@@ -858,29 +592,29 @@ EIGRP and OSPF).
     * [MQTT NSE Library](https://nmap.org/nsedoc/lib/mqtt.html)
         * An implementation of MQTT 3.1.1 https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html This library does not currently implement the entire MQTT protocol, only those control packets which are necessary for existing scripts are included. Extending to accommodate additional control packets should not be difficult.
 * **ActiveMQ**
-	* **101**
+    * **101**
         * [Apache ActiveMQ - Wikipedia](https://en.wikipedia.org/wiki/Apache_ActiveMQ)
         * [ActiveMQ](http://activemq.apache.org/)
-	* **Articles/Blogposts/Writeups**
+    * **Articles/Blogposts/Writeups**
         * [Getting Started](http://activemq.apache.org/getting-started.html)
         * [What is ActiveMQ used for? - StackOverflow](https://stackoverflow.com/questions/12805377/what-is-activemq-used-for)
-		* [A Pentesters Guide to Hacking  ActiveMQ-Based JMS Applications - Gursev Singh Kalra](https://www.mcafee.com/enterprise/en-us/assets/white-papers/wp-pentesters-guide-hacking-activemq-jms-applications.pdf)
-	* **Talks/Presentations/Videos**
+        * [A Pentesters Guide to Hacking  ActiveMQ-Based JMS Applications - Gursev Singh Kalra](https://www.mcafee.com/enterprise/en-us/assets/white-papers/wp-pentesters-guide-hacking-activemq-jms-applications.pdf)
+    * **Talks/Presentations/Videos**
         * [Light Weight Protocol: Critical Implications - Lucas Lundgren, Neal Hindocha - Defcon24](https://www.youtube.com/watch?v=o7qDVZr0t2c&app=desktop)
-	* **Tools**
-	    * [a](https://github.com/fmtn/a)
-    	    * ActiveMQ CLI testing and mescaptsage management
+    * **Tools**
+        * [a](https://github.com/fmtn/a)
+            * ActiveMQ CLI testing and mescaptsage management
 * **RabbitMQ**
-	* **101**
-	    * [RabbitMQ - Wikipedia](https://en.wikipedia.org/wiki/RabbitMQ)
-		* [Access Control (Authentication, Authorisation) in RabbitMQ](https://www.rabbitmq.com/access-control.html)
-		* [Credentials and Passwords](https://www.rabbitmq.com/passwords.html)
-		* [Management Plugin](https://www.rabbitmq.com/management.html)
-		* [File and Directory Locations](https://www.rabbitmq.com/relocate.html)
-		* [Credentials and Passwords](https://www.rabbitmq.com/passwords.html)
-	* **Tools**
-    	* [Enteletaor](https://github.com/cr0hn/enteletaor)
-        	* Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.
+    * **101**
+        * [RabbitMQ - Wikipedia](https://en.wikipedia.org/wiki/RabbitMQ)
+        * [Access Control (Authentication, Authorisation) in RabbitMQ](https://www.rabbitmq.com/access-control.html)
+        * [Credentials and Passwords](https://www.rabbitmq.com/passwords.html)
+        * [Management Plugin](https://www.rabbitmq.com/management.html)
+        * [File and Directory Locations](https://www.rabbitmq.com/relocate.html)
+        * [Credentials and Passwords](https://www.rabbitmq.com/passwords.html)
+    * **Tools**
+        * [Enteletaor](https://github.com/cr0hn/enteletaor)
+            * Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.
 
 
 
@@ -891,16 +625,17 @@ EIGRP and OSPF).
 
 
 ------------
-#### <a name="netbios"></a>Netbios/LLMNR
+#### <a name="netbios"></a>Netbios/Link-Local Multicast Name Resolution (LLMNR)
 * **101**
     * [NetBIOS - Wikipedia](https://en.wikipedia.org/wiki/NetBIOS)
     * [NetBIOS - rhyshaden.com](http://www.rhyshaden.com/netbios.htm)
     * [NetBIOS Name Resolution - technet.ms](https://technet.microsoft.com/library/cc958811.aspx)
     * [Link-Local Multicast Name Resolution - Wikipedia](https://en.wikipedia.org/wiki/Link-Local_Multicast_Name_Resolution)
     * [Link-Local Multicast Name Resolution - The cable guy - technet](https://technet.microsoft.com/library/bb878128)
-* **General/Articles/Writeups**
+* **Articles/Blogposts/Writeups**
     * [Local Network Attacks: LLMNR and NBT-NS Poisoning](https://www.sternsecurity.com/blog/local-network-attacks-llmnr-and-nbt-ns-poisoning)
     * [Local Network Attacks: LLMNR and NBT-NS Poisoning](https://www.sternsecurity.com/blog/local-network-attacks-llmnr-and-nbt-ns-poisoning)
+    * [Bypassing LLMNR/NBT-NS honeypot - blog.redteam.pl](https://blog.redteam.pl/2019/10/bypassing-llmnr-nbns-honeypot.html)
 * **Tools**
     * [NbtScan](http://www.unixwiz.net/tools/nbtscan.html)
         * This is a command-line tool that scans for open NETBIOS nameservers on a local or remote TCP/IP network, and this is a first step in finding of open shares. It is based on the functionality of the standard Windows tool nbtstat, but it operates on a range of addresses instead of just one. I wrote this tool because the existing tools either didn't do what I wanted or ran only on the Windows platforms: mine runs on just about everything.
@@ -910,6 +645,97 @@ EIGRP and OSPF).
 
 
 
+
+
+
+------------
+### <a name="nfs"></a>NFS
+* **101**
+    * [Network File System](https://en.wikipedia.org/wiki/Network_File_System)
+    * [NFS - ArchWiki](https://wiki.archlinux.org/index.php/NFS)
+    * [Linux NFS Documentation](http://nfs.sourceforge.net/)
+        * This document provides an introduction to NFS as implemented in the Linux kernel. It links to developers' sites, mailing list archives, and relevant RFCs, and provides guidance for quickly configuring and getting started with NFS on Linux. A Frequently Asked Questions section is also included. This document assumes the reader is already familiar with generic NFS terminology.
+    * [NFS: Network File System Protocol Specification - rfc1094](https://tools.ietf.org/html/rfc1094)
+* **General/Articles**
+    * NFS Abuse for Fun and Profit - m0noc.com
+        * [Part 1](http://blog.m0noc.com/2016/05/nfs-abuse-for-fun-and-profit-part-1_12.html)
+        * [Part 2](http://blog.m0noc.com/2016/05/nfs-abuse-for-fun-and-profit-part-2.html)
+        * [Part 3](http://blog.m0noc.com/2016/05/nfs-abuse-for-fun-and-profit-part-3.html?m=1)
+    * [Using nfsshell to compromise older environments](https://www.pentestpartners.com/security-blog/using-nfsshell-to-compromise-older-environments/)
+    * [Abusing Hardlinks Via NFS](http://pentestmonkey.net/blog/nfs-hardlink)
+    * [Exploiting Network File System, (NFS), shares - vulnerabilityassessment.co.uk](http://www.vulnerabilityassessment.co.uk/nfs.htm)
+    * [NFS - pentestacademy.wordpress](https://pentestacademy.wordpress.com/2017/09/20/nfs/)
+* **Tools**
+    * [NfSpy](https://github.com/bonsaiviking/NfSpy)
+        * NfSpy is a Python library for automating the falsification of NFS credentials when mounting an NFS share.
+
+
+
+
+
+
+------------
+## <a name="ntlm"></a> NTLM
+* **101**
+    * [Microsoft NTLM - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749%28v=vs.85%29.aspx)
+    * [The NTLM Authentication Protocol and Security Support Provider - davenport.sourceforge.net](http://davenport.sourceforge.net/ntlm.html)
+* **Educational**
+    * **Articles/Blogposts/Writeups**
+    * **Talks/Presentations/Videos**
+* **Attacking**
+    * **Articles/Blogposts/Writeups**
+        * [LLMNR/NBT-NS Poisoning Using Responder](https://www.4armed.com/blog/llmnr-nbtns-poisoning-using-responder/)
+        * [Drop The MIC 2 (CVE 2019-1166) & Exploiting LMv2 Clients (CVE-2019-1338) - Yaron Zinar, Marina Simakov](https://www.preempt.com/blog/drop-the-mic-2-active-directory-open-to-more-ntlm-attacks/)
+        * [Your Session Key is My Session Key: How to Retrieve the Session Key for Any Authentication - Marina Simakov](https://www.preempt.com/blog/your-session-key-is-my-session-key-how-to-retrieve-the-session-key-for-any-authentication/)
+        * [How to Easily Bypass EPA to Compromise any Web Server that Supports Windows Integrated Authentication - Yaron Zinar](https://www.preempt.com/blog/how-to-easily-bypass-epa-to-compromise-any-web-server-that-supports-windows-integrated-authentication/)
+        * [Security Advisory: Critical Vulnerabilities in NTLM Allow Remote Code Execution and Cloud Resources Compromise - Yaron Zinar](https://blog.preempt.com/security-advisory-critical-vulnerabilities-in-ntlm)
+            * On June 2019 Patch Tuesday, Microsoft released patches for CVE-2019-1040 and CVE-2019-1019, two vulnerabilities discovered by Preempt researchers. The critical vulnerabilities consist of three logical flaws in NTLM (Microsoft’s proprietary authentication protocol). Preempt researchers were able to bypass all major NTLM protection mechanisms. These vulnerabilities allow attackers to remotely execute malicious code on any Windows machine or authenticate to any HTTP server that supports Windows Integrated Authentication (WIA) such as Exchange or ADFS. All Windows versions are vulnerable.
+        * [Downgrade SPNEGO Authentication - Carsten Sandker(2018)](https://www.contextis.com/en/blog/downgrade-spnego-authentication)   
+            * Microsoft’s SPNEGO protocol is a less well known sub protocol used by better known protocols to negotiate authentication. This blog post covers weaknesses Context have discovered in SPNEGO and leverages this to highlight an inconsistency in the SMBv2 protocol, both of which lead to user credentials being sent over the wire in a way which makes them vulnerable to offline cracking. 
+            * [spnegoDown](https://github.com/csandker/spnegoDown)
+            * PoC Tool for SPNEGO Downgrade
+    * **Talks/Presentations/Videos**
+        * [How We Bypassed All NTLM Relay Mitigations - And How To Ensure You're Protected - ](https://www.youtube.com/watch?v=b9yMR6hSPzk)
+            * In an encore presentation of one of Black Hat 2019’s and DEFCON27’s most popular talks, members of our research team will: Alert you to several new ways to abuse NTLM, including a critical zero-day vulnerability we have discovered which enables attackers to perform NTLM Relay and take over any machine in the domain, even with the strictest security configuration, while bypassing all of today’s offered mitigations. Tell you why the risks of this protocol are not limited to the boundaries of the on-premises environment, and show another vulnerability which allows to bypass various AD-FS restrictions in order to take over cloud resources as well.
+* **'Leaking' Hashes**
+    * **Articles/Blogposts/Writeups**
+        * [A Pentesters Guide - Part 4 (Grabbing Hashes and Forging External Footholds) - Ben Bidmead](https://delta.navisec.io/a-pentesters-guide-part-4-grabbing-hashes-and-forging-external-footholds/)
+        * [From XML External Entity to NTLM Domain Hashes - Gianluca Baldi](https://techblog.mediaservice.net/2018/02/from-xml-external-entity-to-ntlm-domain-hashes/)
+        * [Stealing NTLMv2 hash by abusing SQL injection in File download functionality - mannulinux.org](http://www.mannulinux.org/2020/01/stealing-ntlmv2-hash-by-abusing-sqlInjection.html)
+            * In this blog post, I am going to explain about a scenario in which an attacker can take advantage of SQL Injection vulnerability and can force Web server to leak NTLMv2 hash.
+        * [PDFiD: GoToE and GoToR Detection (“NTLM Credential Theft”) - Didier Stevens](https://blog.didierstevens.com/2018/05/31/pdfid-gotoe-and-gotor-detection-ntlm-credential-theft/)
+            * The article [“NTLM Credentials Theft via PDF Files”](https://research.checkpoint.com/ntlm-credentials-theft-via-pdf-files/) explains how PDF documents can refer to a resource via UNC paths. This is done using  PDF names /GoToE or /GoToR. My tool pdfid.py can now be extended to report /GoToE and /GoToR usage in a PDF file, without having to change the source code
+        * [Capturing NetNTLM Hashes with Office [DOT] XML Documents - bohops](https://bohops.com/2018/08/04/capturing-netntlm-hashes-with-office-dot-xml-documents/)
+        * [Love letters from the red team: from e-mail to NTLM hashes with Microsoft Outlook - WildFire Labs](https://wildfire.blazeinfosec.com/love-letters-from-the-red-team-from-e-mail-to-ntlm-hashes-with-microsoft-outlook/)
+        * [Leveraging web application vulnerabilities to steal NTLM hashes - WildFire Labs](https://blog.blazeinfosec.com/leveraging-web-application-vulnerabilities-to-steal-ntlm-hashes-2/)
+        * [Automatically Stealing Password Hashes with Microsoft Outlook and OLE - Will Dormann](https://insights.sei.cmu.edu/cert/2018/04/automatically-stealing-password-hashes-with-microsoft-outlook-and-ole.html)
+        * [SMB hash hijacking & user tracking in MS Outlook - Soroush Dalili](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/may/smb-hash-hijacking-and-user-tracking-in-ms-outlook/)
+        * [Capturing NetNTLM Hashes with Office [DOT] XML Documents - bohops](https://bohops.com/2018/08/04/capturing-netntlm-hashes-with-office-dot-xml-documents/)
+        * [Stealing Windows Credentials Using Google Chrome - Bosko Stankovic](http://www.defensecode.com/whitepapers/Stealing-Windows-Credentials-Using-Google-Chrome.pdf)
+        * [Windows Credential Theft: RDP & Internet Explorer 11](https://vdalabs.com/2019/09/25/windows-credential-theft-rdp-internet-explorer-11/)
+            * NTLM Hashes/relay through RDP files/IE11 XXE explained
+        * [SMB hash hijacking & user tracking in MS Outlook - Soroush Dalili](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/may/smb-hash-hijacking-and-user-tracking-in-ms-outlook/)
+        * [Places of Interest in Stealing NetNTLM Hashes - osandamalith.com/](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
+        * [Document Tracking: What You Should Know - justhaifei1](https://justhaifei1.blogspot.com/2013/10/document-tracking-what-you-should-know.html)
+        * [Microsoft Office – NTLM Hashes via Frameset - pentestlab.blog](https://pentestlab.blog/2017/12/18/microsoft-office-ntlm-hashes-via-frameset/)
+        * [Automatically Stealing Password Hashes with Microsoft Outlook and OLE - Will Dormann](https://insights.sei.cmu.edu/cert/2018/04/automatically-stealing-password-hashes-with-microsoft-outlook-and-ole.html)
+    * **Talks/Presentations/Videos**
+    * **Tools**
+* **Tools**
+    * [NTLM scanner](https://github.com/preempt/ntlm-scanner)
+        * Checks for various NTLM vulnerabilities over SMB. The script will establish a connection to the target host(s) and send an invalid NTLM authentication. If this is accepted, the host is vulnerable to the applied NTLM vulnerability and you can execute the relevant NTLM attack.
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+### <a name="rpc"></a>RPC
+* **101**
+* **Articles/Blogposts/Writeups**
+    * [More of using rpcclient to find usernames - carnal0wnage](http://carnal0wnage.attackresearch.com/2007/08/more-of-using-rpcclient-to-find.html)
+    * [more with rpcclient - carnal0wnage](http://carnal0wnage.attackresearch.com/2010/06/more-with-rpcclient.html)
+* **Talks/Videos**
+* **Papers**
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -956,39 +782,46 @@ EIGRP and OSPF).
     * [Server Message Block - Wikipedia](https://en.wikipedia.org/wiki/Server_Message_Block)
     * [Microsoft SMB Protocol and CIFS Protocol Overview](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365233(v=vs.85).aspx)
     * [An Introduction to SMB for Network Security Analysts - 401trg.com](https://401trg.com/an-introduction-to-smb-for-network-security-analysts/)
-* **General/Articles/Writeups**
-    * [SMBv2 - Sharing More Than Just Your Files - Hormazd Billimoria, Jonathan Brossard - BHUSA2015](https://www.blackhat.com/docs/us-15/materials/us-15-Brossard-SMBv2-Sharing-More-Than-Just-Your-Files.pdf)
-    * [Windows: SMB Server (v1 and v2) Mount Point Arbitrary Device Open EoP](https://bugs.chromium.org/p/project-zero/issues/detail?id=1416&t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=0ba06fc942c7473c8c3669dfc193d5e0&fl=4&uid=150127534&nid=244+293670920)
-    * [Practically Exploiting MS15-014 and MS15-011 - MWR](https://labs.mwrinfosecurity.com/blog/practically-exploiting-ms15-014-and-ms15-011/)
-    * [MS15-011 - Microsoft Windows Group Policy real exploitation via a SMB MiTM attack - coresecurity](https://www.coresecurity.com/blog/ms15-011-microsoft-windows-group-policy-real-exploitation-via-a-smb-mitm-attack)
-* **Redirect**
-    * [WinNT/Win95 Automatic Authentication Vulnerability (IE Bug #4)](http://insecure.org/sploits/winnt.automatic.authentication.html) 
-    * [Resurrection of the Living Dead: The “Redirect to SMB” Vulnerability](http://blog.trendmicro.com/trendlabs-security-intelligence/resurrection-of-the-living-dead-the-redirect-to-smb-vulnerability/)
-    * [SPEAR: Redirect to SMB](https://blog.cylance.com/content/dam/cylance/pdfs/white_papers/RedirectToSMB.pdf)
-    * [10 Places to Stick Your UNC Path - NetSPI](https://blog.netspi.com/10-places-to-stick-your-unc-path/)
-* **Re(p)lay Attack(and Leaks)**
-    * [SMB hash hijacking & user tracking in MS Outlook - Soroush Dalili](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/may/smb-hash-hijacking-and-user-tracking-in-ms-outlook/)
-    * [Places of Interest in Stealing NetNTLM Hashes - osandamalith.com/](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
-    * [Document Tracking: What You Should Know - justhaifei1](https://justhaifei1.blogspot.com/2013/10/document-tracking-what-you-should-know.html)
-    * [Microsoft Office – NTLM Hashes via Frameset - pentestlab.blog](https://pentestlab.blog/2017/12/18/microsoft-office-ntlm-hashes-via-frameset/)
-    * [ADV170014 NTLM SSO: Exploitation Guide - sysadminjd.com](http://www.sysadminjd.com/adv170014-ntlm-sso-exploitation-guide/)
-    * [SMB Relay Demystified and NTLMv2 Pwnage with Python](https://pen-testing.sans.org/blog/2013/04/25/smb-relay-demystified-and-ntlmv2-pwnage-with-python)
-    * [Stealing Windows Credentials Using Google Chrome - Bosko Stankovic](http://www.defensecode.com/whitepapers/Stealing-Windows-Credentials-Using-Google-Chrome.pdf)
-    * [Windows: Local WebDAV NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=222&redir=1)
-    * [Hot Potato](https://foxglovesecurity.com/2016/01/16/hot-potato/)
-        * Hot Potato (aka: Potato) takes advantage of known issues in Windows to gain local privilege escalation in default configurations, namely NTLM relay (specifically HTTP->SMB relay) and NBNS spoofing.
-    * [Rotten Potato – Privilege Escalation from Service Accounts to SYSTEM - foxglove security](https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/)
-    * [Rotten Potato Privilege Escalation from Service Accounts to SYSTEM - Stephen Breen Chris Mallz - Derbycon6](https://www.youtube.com/watch?v=8Wjs__mWOKI)
-    * [RottenPotatoNG](https://github.com/breenmachine/RottenPotatoNG)
-        * New version of RottenPotato as a C++ DLL and standalone C++ binary - no need for meterpreter or other tools.
-    * [SMB Relay with Snarf - Making the Most of Your MitM](https://bluescreenofjeff.com/2016-02-19-smb-relay-with-snarfjs-making-the-most-of-your-mitm/)
-    * [Relayer - SMB Relay Attack Script.](https://github.com/Jsitech/relayer)
-        * Relayer is an SMB relay Attack Script that automates all the necessary steps to scan for systems with SMB signing disabled and relaying authentication request to these systems with the objective of gaining a shell. Great when performing Penetration testing.
-    * [Ntlm Relay Reloaded: Attack methods you do not know - Jianing Wang, Junyu Zhou - zeronights18](https://www.youtube.com/watch?v=BrSS_0a0vzQ)
-    * [Remote NTLM relaying through meterpreter on Windows port 445 - Diablohorn](https://diablohorn.com/2018/08/25/remote-ntlm-relaying-through-meterpreter-on-windows-port-445/)
-    * [Automatically Stealing Password Hashes with Microsoft Outlook and OLE - Will Dormann](https://insights.sei.cmu.edu/cert/2018/04/automatically-stealing-password-hashes-with-microsoft-outlook-and-ole.html)
-    * [SMB hash hijacking & user tracking in MS Outlook - ](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/may/smb-hash-hijacking-and-user-tracking-in-ms-outlook/)
-    * [SMB Relay Demystified and NTLMv2 Pwnage with Python - Ed Skoudis](https://pen-testing.sans.org/blog/2013/04/25/smb-relay-demystified-and-ntlmv2-pwnage-with-python)
+* **Educational**
+* **Attacking**
+    **Articles/Blogposts/Writeups**
+        * [A new look at null sessions and user enumeration - Reino Mostert(2018)](https://sensepost.com/blog/2018/a-new-look-at-null-sessions-and-user-enumeration/)
+    * **Talks/Presentations/Videos**
+        * [SMBv2 - Sharing More Than Just Your Files - Hormazd Billimoria, Jonathan Brossard - BHUSA2015](https://www.blackhat.com/docs/us-15/materials/us-15-Brossard-SMBv2-Sharing-More-Than-Just-Your-Files.pdf)
+    * **Specific Exploits/Vulns**
+        **Articles/Blogposts/Writeups**
+            * [Practically Exploiting MS15-014 and MS15-011 - MWR](https://labs.mwrinfosecurity.com/blog/practically-exploiting-ms15-014-and-ms15-011/)
+            * [MS15-011 - Microsoft Windows Group Policy real exploitation via a SMB MiTM attack - coresecurity](https://www.coresecurity.com/blog/ms15-011-microsoft-windows-group-policy-real-exploitation-via-a-smb-mitm-attack)
+            * [Windows: SMB Server (v1 and v2) Mount Point Arbitrary Device Open EoP](https://bugs.chromium.org/p/project-zero/issues/detail?id=1416&t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=0ba06fc942c7473c8c3669dfc193d5e0&fl=4&uid=150127534&nid=244+293670920)
+            * [Windows: Local WebDAV NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=222&redir=1)
+        * **Talks/Presentations/Videos**
+    * **Redirect**
+        * [WinNT/Win95 Automatic Authentication Vulnerability (IE Bug #4)](http://insecure.org/sploits/winnt.automatic.authentication.html) 
+        * [Resurrection of the Living Dead: The “Redirect to SMB” Vulnerability](http://blog.trendmicro.com/trendlabs-security-intelligence/resurrection-of-the-living-dead-the-redirect-to-smb-vulnerability/)
+        * [SPEAR: Redirect to SMB](https://blog.cylance.com/content/dam/cylance/pdfs/white_papers/RedirectToSMB.pdf)
+        * [10 Places to Stick Your UNC Path - NetSPI](https://blog.netspi.com/10-places-to-stick-your-unc-path/)
+    * **Re(p)lay Attack**
+        * **Articles/Blogposts/Writeups**
+            * [ADV170014 NTLM SSO: Exploitation Guide - sysadminjd.com](http://www.sysadminjd.com/adv170014-ntlm-sso-exploitation-guide/)
+            * [SMB Relay with Snarf - Making the Most of Your MitM(2016)](https://bluescreenofjeff.com/2016-02-19-smb-relay-with-snarfjs-making-the-most-of-your-mitm/)
+            * [Remote NTLM relaying through meterpreter on Windows port 445 - Diablohorn(2018)](https://diablohorn.com/2018/08/25/remote-ntlm-relaying-through-meterpreter-on-windows-port-445/)
+            * [SMB Relay Demystified and NTLMv2 Pwnage with Python - Ed Skoudis(2013)](https://pen-testing.sans.org/blog/2013/04/25/smb-relay-demystified-and-ntlmv2-pwnage-with-python)
+            * [What is old is new again: The Relay Attack - SecureAuth(2020)](https://www.secureauth.com/blog/what-old-new-again-relay-attack)
+        * **Talks/Presentations/Videos**
+            * [Ntlm Relay Reloaded: Attack methods you do not know - Jianing Wang, Junyu Zhou - zeronights18](https://www.youtube.com/watch?v=BrSS_0a0vzQ)
+        * **Tools**
+            * [Relayer - SMB Relay Attack Script.](https://github.com/Jsitech/relayer)
+                * Relayer is an SMB relay Attack Script that automates all the necessary steps to scan for systems with SMB signing disabled and relaying authentication request to these systems with the objective of gaining a shell. Great when performing Penetration testing.
+    * **Potatoes**
+        * [Hot Potato](https://foxglovesecurity.com/2016/01/16/hot-potato/)
+            * Hot Potato (aka: Potato) takes advantage of known issues in Windows to gain local privilege escalation in default configurations, namely NTLM relay (specifically HTTP->SMB relay) and NBNS spoofing.
+        * [Rotten Potato – Privilege Escalation from Service Accounts to SYSTEM - foxglove security](https://foxglovesecurity.com/2016/09/26/rotten-potato-privilege-escalation-from-service-accounts-to-system/)
+        * [Rotten Potato Privilege Escalation from Service Accounts to SYSTEM - Stephen Breen Chris Mallz - Derbycon6](https://www.youtube.com/watch?v=8Wjs__mWOKI)
+        * [RottenPotatoNG](https://github.com/breenmachine/RottenPotatoNG)
+            * New version of RottenPotato as a C++ DLL and standalone C++ binary - no need for meterpreter or other tools.
+        * [Juicy Potato](https://github.com/ohpe/juicy-potato)
+        * [SmashedPotato](https://github.com/Cn33liz/SmashedPotato)
+        * [Ghost Potato - Danyal Drew(2019)](https://shenaniganslabs.io/2019/11/12/Ghost-Potato.html)
 * **Tools**
     * [Responder](https://github.com/lgandx/Responder)
         * Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication.
@@ -1006,6 +839,7 @@ EIGRP and OSPF).
         * nullinux is an internal penetration testing tool for Linux that can be used to enumerate OS information, domain information, shares, directories, and users through SMB. If no username and password are provided, nullinux will attempt to connect to the target using an SMB null session. Unlike many of the enumeration tools out there already, nullinux can enumerate multiple targets at once and when finished, creates a users.txt file of all users found on the host(s). This file is formatted for direct implementation and further exploitation.This script uses Python 2.7 and the smbclient package, run the setup.sh script to get started.
         * [smbspider](https://github.com/T-S-A/smbspider)
             * SMB Spider is a lightweight python utility for searching SMB/CIFS/Samba file shares. While performing a penetration test, the need to search hundreds of hosts for sensitive password files resulted in this project.
+
 
 
 
@@ -1092,7 +926,7 @@ EIGRP and OSPF).
     * [Transport Layer Security - Wikipedia](https://en.wikipedia.org/wiki/Transport_Layer_Security)
     * [Application-Layer TLS - draft-friel-tls-atls-02](https://tools.ietf.org/html/draft-friel-tls-atls-02)
         * This document specifies how TLS sessions can be established at the application layer over untrusted transport between clients and services for the purposes of establishing secure end-to-end encrypted communications channels.Transport layer encodings for applicationlayer TLS records are specified for HTTP and CoAP transport. Explicit identification of application layer TLS packets enablesmiddleboxes to provide transport services and enforce suitable transport policies for these payloads, without requiring access to the unencrypted payload content. Multiple scenarios are presented identifying the need for end-to-end application layer encryption between clients and services, and the benefits of reusing the well-defined TLS protocol, and a standard TLS stack, to accomplish thisare described.Application software architectures for building, and network architectures for deploying application layer TLS are outlined.
-    * [The Illustrated TLS Connection - tls.uflheim.net](https://tls.ulfheim.net)
+    * [The Illustrated TLS Connection - @XargsNotBombs](https://tls.ulfheim.net/)
 * **General**
     * [OWASP Transport Layer Protection Cheat Sheet](https://owasp.org/www-project-cheat-sheets/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html)
     * [SSL/TLS and PKI History](https://www.feistyduck.com/ssl-tls-and-pki-history/)
@@ -1193,9 +1027,12 @@ EIGRP and OSPF).
     * [UPnP™ Device Architecture 1.1 - upnp.org]
     * [Universal Plug and Play - Wikipedia](https://en.wikipedia.org/wiki/Universal_Plug_and_Play)
 * **General**
-* **Articles/Blogposts/Writeups**
-    * [Exploiting UPnP, literally childsplay. - KN100](https://kn100.me/exploiting-upnp-literally-childsplay/)
-    * [UPNP Hacks](http://www.upnp-hacks.org/igd.html)
+    * **Articles/Blogposts/Writeups**
+* **Attacking**
+    * **Articles/Blogposts/Writeups**
+        * [Exploiting UPnP, literally childsplay. - KN100](https://kn100.me/exploiting-upnp-literally-childsplay/)
+        * [UPNP Hacks](http://www.upnp-hacks.org/igd.html)
+        * [Security Issues Discovered in MiniUPnP - Ben Barnea(2019)](https://www.vdoo.com/blog/security-issues-discovered-in-miniupnp)
 * **Tools**
     * [Ufuzz](https://github.com/phikshun/ufuzz)
         * UFuzz, or Universal Plug and Fuzz, is an automatic UPnP fuzzing tool. It will enumerate all UPnP endpoints on the network, find the available services and fuzz them. It also has the capability to fuzz HTTP using Burp proxy logs.
@@ -1206,96 +1043,39 @@ EIGRP and OSPF).
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-------------
-### <a name="nfs"></a>NFS
+-----------------------
+### <a name="webdav"></a> WebDAV
 * **101**
-    * [Network File System](https://en.wikipedia.org/wiki/Network_File_System)
-    * [NFS - ArchWiki](https://wiki.archlinux.org/index.php/NFS)
-    * [Linux NFS Documentation](http://nfs.sourceforge.net/)
-        * This document provides an introduction to NFS as implemented in the Linux kernel. It links to developers' sites, mailing list archives, and relevant RFCs, and provides guidance for quickly configuring and getting started with NFS on Linux. A Frequently Asked Questions section is also included. This document assumes the reader is already familiar with generic NFS terminology.
-    * [NFS: Network File System Protocol Specification - rfc1094](https://tools.ietf.org/html/rfc1094)
-* **General/Articles**
-    * NFS Abuse for Fun and Profit - m0noc.com
-        * [Part 1](http://blog.m0noc.com/2016/05/nfs-abuse-for-fun-and-profit-part-1_12.html)
-        * [Part 2](http://blog.m0noc.com/2016/05/nfs-abuse-for-fun-and-profit-part-2.html)
-        * [Part 3](http://blog.m0noc.com/2016/05/nfs-abuse-for-fun-and-profit-part-3.html?m=1)
-    * [Using nfsshell to compromise older environments](https://www.pentestpartners.com/security-blog/using-nfsshell-to-compromise-older-environments/)
-    * [Abusing Hardlinks Via NFS](http://pentestmonkey.net/blog/nfs-hardlink)
-    * [Exploiting Network File System, (NFS), shares - vulnerabilityassessment.co.uk](http://www.vulnerabilityassessment.co.uk/nfs.htm)
-    * [NFS - pentestacademy.wordpress](https://pentestacademy.wordpress.com/2017/09/20/nfs/)
+* **General/Articles/Writeups**
 * **Tools**
-    * [NfSpy](https://github.com/bonsaiviking/NfSpy)
-        * NfSpy is a Python library for automating the falsification of NFS credentials when mounting an NFS share.
+    * [WsgiDAV](https://github.com/mar10/wsgidav)
+        * WsgiDAV is a generic WebDAV server written in Python and based on WSGI.
 
 
 
-## <a name="ntlm"></a> NTLM
-* **101**
-    * [Microsoft NTLM - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749%28v=vs.85%29.aspx)
-    * [The NTLM Authentication Protocol and Security Support Provider - davenport.sourceforge.net](http://davenport.sourceforge.net/ntlm.html)
-* **Articles/Blogposts/Writeups**
-    * [How We Bypassed All NTLM Relay Mitigations - And How To Ensure You're Protected - ](https://www.youtube.com/watch?v=b9yMR6hSPzk)
-        * In an encore presentation of one of Black Hat 2019’s and DEFCON27’s most popular talks, members of our research team will: Alert you to several new ways to abuse NTLM, including a critical zero-day vulnerability we have discovered which enables attackers to perform NTLM Relay and take over any machine in the domain, even with the strictest security configuration, while bypassing all of today’s offered mitigations. Tell you why the risks of this protocol are not limited to the boundaries of the on-premises environment, and show another vulnerability which allows to bypass various AD-FS restrictions in order to take over cloud resources as well.
-    * [From XML External Entity to NTLM Domain Hashes - Gianluca Baldi](https://techblog.mediaservice.net/2018/02/from-xml-external-entity-to-ntlm-domain-hashes/)
-    * [Drop The MIC 2 (CVE 2019-1166) & Exploiting LMv2 Clients (CVE-2019-1338) - Yaron Zinar, Marina Simakov](https://www.preempt.com/blog/drop-the-mic-2-active-directory-open-to-more-ntlm-attacks/)
-    * [Your Session Key is My Session Key: How to Retrieve the Session Key for Any Authentication - Marina Simakov](https://www.preempt.com/blog/your-session-key-is-my-session-key-how-to-retrieve-the-session-key-for-any-authentication/)
-    * [How to Easily Bypass EPA to Compromise any Web Server that Supports Windows Integrated Authentication - Yaron Zinar](https://www.preempt.com/blog/how-to-easily-bypass-epa-to-compromise-any-web-server-that-supports-windows-integrated-authentication/)
-    * [Security Advisory: Critical Vulnerabilities in NTLM Allow Remote Code Execution and Cloud Resources Compromise - Yaron Zinar](https://blog.preempt.com/security-advisory-critical-vulnerabilities-in-ntlm)
-        * On June 2019 Patch Tuesday, Microsoft released patches for CVE-2019-1040 and CVE-2019-1019, two vulnerabilities discovered by Preempt researchers. The critical vulnerabilities consist of three logical flaws in NTLM (Microsoft’s proprietary authentication protocol). Preempt researchers were able to bypass all major NTLM protection mechanisms. These vulnerabilities allow attackers to remotely execute malicious code on any Windows machine or authenticate to any HTTP server that supports Windows Integrated Authentication (WIA) such as Exchange or ADFS. All Windows versions are vulnerable.
-* **'Leaking Hashes'**
-    * [PDFiD: GoToE and GoToR Detection (“NTLM Credential Theft”) - Didier Stevens](https://blog.didierstevens.com/2018/05/31/pdfid-gotoe-and-gotor-detection-ntlm-credential-theft/)
-        * The article [“NTLM Credentials Theft via PDF Files”](https://research.checkpoint.com/ntlm-credentials-theft-via-pdf-files/) explains how PDF documents can refer to a resource via UNC paths. This is done using  PDF names /GoToE or /GoToR. My tool pdfid.py can now be extended to report /GoToE and /GoToR usage in a PDF file, without having to change the source code
-    * [Capturing NetNTLM Hashes with Office [DOT] XML Documents - bohops](https://bohops.com/2018/08/04/capturing-netntlm-hashes-with-office-dot-xml-documents/)
-    * [Love letters from the red team: from e-mail to NTLM hashes with Microsoft Outlook - WildFire Labs](https://wildfire.blazeinfosec.com/love-letters-from-the-red-team-from-e-mail-to-ntlm-hashes-with-microsoft-outlook/)
-    * [Leveraging web application vulnerabilities to steal NTLM hashes - WildFire Labs](https://blog.blazeinfosec.com/leveraging-web-application-vulnerabilities-to-steal-ntlm-hashes-2/)
-    * [Automatically Stealing Password Hashes with Microsoft Outlook and OLE - Will Dormann](https://insights.sei.cmu.edu/cert/2018/04/automatically-stealing-password-hashes-with-microsoft-outlook-and-ole.html)
-    * [SMB hash hijacking & user tracking in MS Outlook - Soroush Dalili](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/may/smb-hash-hijacking-and-user-tracking-in-ms-outlook/)
-    * [Capturing NetNTLM Hashes with Office [DOT] XML Documents - bohops](https://bohops.com/2018/08/04/capturing-netntlm-hashes-with-office-dot-xml-documents/)
+
+
 
 ------------
 ### <a name="pac"></a>PAC/WPAD
 * **101/Educational**
+     * [IETF: Web Proxy Auto-Discovery Protocol](https://tools.ietf.org/html/draft-ietf-wrec-wpad-01)
     * [Web Proxy Auto-Discovery Protocol - Wikipedia](https://en.wikipedia.org/wiki/Web_Proxy_Auto-Discovery_Protocol)
     * [Proxy auto-config - Wikipedia](https://en.wikipedia.org/wiki/Proxy_auto-config)
     * [Proxy Auto-Configuration (PAC) file - dev.mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)\_file)
         * A Proxy Auto-Configuration (PAC) file is a JavaScript function that determines whether web browser requests (HTTP, HTTPS, and FTP) go directly to the destination or are forwarded to a web proxy server. The JavaScript function contained in the PAC file defines the function:
-* **General**
+* **Articles/Blogposts/Writeups**
     * [Sample proxy auto-configuration (PAC) file](https://support.symantec.com/en_US/article.HOWTO54198.html)
-
+    * [wpadblock.com](https://www.wpadblock.com/)
+        * WPADblock initiative: monitoring and blocking WPAD traffic since 2007.
+    * [aPAColypse now: Exploiting Windows 10 in a Local Network with WPAD/PAC and JScript - Ivan Fratric, Thomas Dullien, James Forshaw and Steven Vittitoe](https://googleprojectzero.blogspot.com/2017/12/apacolypse-now-exploiting-windows-10-in_18.html)
+    * [WPAD Man In The Middle (Clear Text Passwords) - Larry Spohn](https://www.trustedsec.com/blog/wpad-man-in-the-middle-clear-text-passwords/)
+    * [WPAD Man in the Middle - Erik Hjelmvik](netresec.com/?page=Blog&month=2012-07&post=WPAD-Man-in-the-Middle)
+    * [WPAD: instruction manual - cdump(Russian text)](https://habr.com/en/company/mailru/blog/259521/)
+* **Presentations/Talks/Videos**
     * [aPAColypse now: Exploiting Windows 10 in a Local Network with WPAD/PAC and JScript](https://googleprojectzero.blogspot.com/2017/12/apacolypse-now-exploiting-windows-10-in_18.html?m=1)
-    * [badWPAD - Maxim Goncharov](https://www.blackhat.com/docs/us-16/materials/us-16-Goncharov-BadWpad.pdf)
+    * [badWPAD - Maxim Goncharov(BHUSA16-slides)](https://www.blackhat.com/docs/us-16/materials/us-16-Goncharov-BadWpad.pdf)
+    * [badWPAD: The Lasting Menace of a Bad Protocol - Max Goncharov](https://www.trendmicro.co.uk/media/misc/wp-badwpad.pdf)
     * [Crippling HTTPs With Unholy PAC - Itzik Kotler & Amit Klein](https://www.youtube.com/watch?v=7q40RLilXKw)
         * [Slides](https://www.blackhat.com/docs/us-16/materials/us-16-Kotler-Crippling-HTTPS-With-Unholy-PAC.pdf)
     * [Toxic Proxies - Bypassing HTTPS - Defcon24 - Alex Chapman, Paul Stone](https://www.youtube.com/watch?v=3vegxj5a1Rw&app=desktop)
@@ -1303,6 +1083,7 @@ EIGRP and OSPF).
         * [Slides](https://media.defcon.org/DEF%20CON%2024/DEF%20CON%2024%20presentations/DEFCON-24-Chapman-Stone-Toxic-Proxies-Bypassing-HTTPS-and-VPNs.pdf)
         * [PAC HTTPS Leak Demos](https://github.com/ctxis/pac-leak-demo)
             * This is the code for the demos from our DEF CON 24 talk, [Toxic Proxies - Bypassing HTTPS and VPNs to Pwn Your Online Identity](https://defcon.org/html/defcon-24/dc-24-speakers.html#Chapman) The demos use the [PAC HTTPS leak](http://www.contextis.com/resources/blog/leaking-https-urls-20-year-old-vulnerability/) to steal data and do various fun things. Our demos worked in Chrome on Windows with default settings, until the issue was fixed in Chrome 52. You can use Chrome 52+ to try out these demos if you launch it with the --unsafe-pac-url flag.
+
 
 
 
@@ -1399,7 +1180,46 @@ EIGRP and OSPF).
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
-## <a name="attacks"></a>Attacks
+## <a name="------------
+### <a name="pivot"></a>Pivoting
+* Look at the Pivoting section in Post Exploitation/Privilege Escalation
+
+
+---------------------------
+### <a name="vendor"></a> Vendor Specific Stuff
+* **Non-Specific**
+    * [Vendor/Ethernet/Bluetooth MAC Address Lookup and Search - coffer.com](http://www.coffer.com/mac_find/)
+    * [IP Cameras Default Passwords Directory](https://ipvm.com/reports/ip-cameras-default-passwords-directory)
+* **Cisco**
+    * **Application Centric Infrastructure**
+        * [Through the Looking Glass Own the Data Center - Chris McCoy(Defcon27 - RT Village)](https://www.youtube.com/watch?v=G-heFh4t-Pk&list=PL9fPq3eQfaaChXmQKpp1YO19Gw-6SxBDs&index=4)
+            * [Slides]()
+            * The data center embodies the heart of many businesses on the Internet. It contains much of the information in a centralized location which provides a huge incentive for those who would wish harm. The data centers in the realm of Cloud may no longer contain just a single entity, but many individual tenants that attach to a common fabric. The Cisco Application Centric Infrastructure (ACI) aims to meet these needs with a multi-tenant, scalable fabric that interconnects physical hosts, VMs and containers. ACI is Cisco's answer to the centrally-managed Software Defined Network (SDN). The Application Policy Infrastructure Controller (APIC) and Nexus 9000 series switches form the brains and backbone of ACI. A member of Cisco's Advanced Security Initiatives Group (ASIG) will demonstrate their findings during an evaluation of ACI and the APIC, more than three years before the BH2019 talk "APIC's Adventures in Wonderland." Step into the mind of an attacker and scan, probe, and interact with the network fabric to progress from an unauthenticated user to administrator and root of the data center switch fabric. Once inside the system, see how the APIC can be modified in a nearly undetectable manner to provide the attacker unfettered internal access to all the interconnected hosts and VMs in the data center. The target audience for this talk includes those with a technical interest in offensive discovery and secure product development. Participants will receive an overview of how a data center product is viewed in an offensive light.
+    * **Smart Install**
+        * [Cisco Smart Installs and Why They’re Not “Informational” - Jordan Drysdale](https://www.blackhillsinfosec.com/cisco-smart-installs-and-why-theyre-not-informational/)
+        * [Smart Install Description - cisco.com](https://www.cisco.com/c/en/us/td/docs/switches/lan/smart_install/configuration/guide/smart_install/concepts.html)
+        * [Action Required to Secure the Cisco IOS and IOS XE Smart Install Feature](https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20180409-smi)
+    * **Misc**
+        * [CVE-2016-6366](https://github.com/RiskSense-Ops/CVE-2016-6366/blob/master/README.md)
+            * Public repository for improvements to the EXTRABACON exploit, a remote code execution for Cisco ASA written by the Equation Group (NSA) and leaked by the Shadow Brokers.
+        * [Pentesting Cisco SD-WAN Part 1: Attacking VManage - Julien Legras, Thomas Etrillard(2020)](https://www.synacktiv.com/posts/pentest/pentesting-cisco-sd-wan-part-1-attacking-vmanage.html)
+* **F5**
+    * [BigIP Security - dnkolegov](https://github.com/dnkolegov/bigipsecurity/blob/master/README.md)
+        * This document describes common misconfigurations of F5 Networks BigIP systems.
+* **IBM**
+    * [Domi-Owned](https://github.com/coldfusion39/domi-owned)
+        * Domi-Owned is a tool used for compromising IBM/Lotus Domino servers. Tested on IBM/Lotus Domino 8.5.2, 8.5.3, 9.0.0, and 9.0.1 running on Windows and Linux.
+
+
+
+* **Distributed Systems**
+    * [Garfield](https://github.com/tunnelshade/garfield)
+        * Garfield is and open source framework for scanning and exploiting Distributed Systems. The framework currently being in it's alpha stage and is undergoing rapid development.
+* [IVRE](https://github.com/cea-sec/ivre)
+    * IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
+    http://www.pentest-standard.org/index.php/Intelligence_Gathering
+
+></a>Attacks
 
 
 ------------
@@ -1425,6 +1245,8 @@ EIGRP and OSPF).
         * [Invoke-TheHash](https://github.com/Kevin-Robertson/Invoke-TheHash)
             * Invoke-TheHash contains PowerShell functions for performing pass the hash WMI and SMB tasks. WMI and SMB services are accessed through .NET TCPClient connections. Authentication is performed by passing an NTLM hash into the NTLMv2 authentication protocol. Local administrator privilege is not required client-side.
         * [Why Crack When You Can Pass the Hash? - Chris Hummel(2009)](https://www.sans.org/reading-room/whitepapers/testing/crack-pass-hash-33219)
+        * [Passing-the-Hash to NTLM Authenticated Web Applications - Christopher Panayi](https://labs.mwrinfosecurity.com/blog/pth-attacks-against-ntlm-authenticated-web-applications/)
+            * A blog post detailing the practical steps involved in executing a Pass-the-Hash (PtH) attack in Windows/Active Directory environments against web applications that use domain-backed NTLM authentication. The fundamental technique detailed here was previously discussed by Alva 'Skip' Duckwall and Chris Campbell in their excellent 2012 Blackhat talk, "Still Passing the Hash 15 Years Later…" 
     * **Passing the Ticket Attacks**
         * [How To Pass the Ticket Through SSH Tunnels](https://bluescreenofjeff.com/2017-05-23-how-to-pass-the-ticket-through-ssh-tunnels/)
         * [Mimikatz and Active Directory Kerberos Attacks ](https://adsecurity.org/?p=556)
@@ -1550,7 +1372,8 @@ EIGRP and OSPF).
         * DAVOSET - it is console (command line) tool for conducting DDoS attacks on the sites via Abuse of Functionality and XML External Entities vulnerabilities at other sites.
     * [beeswithmachineguns](https://github.com/newsapps/beeswithmachineguns)
         * A utility for arming (creating) many bees (micro EC2 instances) to attack (load test) targets (web applications).
-
+    * [t50 - the fastest packet injector.](https://github.com/fredericopissarra/t50)
+        * T50 was designed to perform -Stress Testing-  on a variety of infra-structure network devices (Version 2.45), using widely implemented protocols, and after some requests it was was re-designed to extend the tests (as of Version 5.3), covering some regular protocols (ICMP, TCP and UDP), some infra-structure specific protocols (GRE, IPSec and RSVP), and some routing protocols (RIP, EIGRP and OSPF).
 
 
 
@@ -1618,25 +1441,129 @@ EIGRP and OSPF).
 * [State of IP Spoofing](https://spoofer.caida.org/summary.php)
 
 
+
+-----------------------
+### <a name="mitm"></a>MitM Tools
+* **General/Suites of tools**
+    * [Dsniff](http://www.monkey.org/~dugsong/dsniff/)
+        * dsniff is a collection of tools for network auditing and penetration testing. dsniff, filesnarf, mailsnarf, msgsnarf, urlsnarf, and webspy passively monitor a network for interesting data (passwords, e-mail, files, etc.). arpspoof, dnsspoof, and macof facilitate the interception of network traffic normally unavailable to an attacker (e.g, due to layer-2 switching). sshmitm and webmitm implement active monkey-in-the-middle attacks against redirected SSH and HTTPS sessions by exploiting weak bindings in ad-hoc PKI. 
+    * [Ettercap](https://ettercap.github.io/ettercap/)
+        * Ettercap is a comprehensive suite for man in the middle attacks. It features sniffing of live connections, content filtering on the fly and many other interesting tricks. It supports active and passive dissection of many protocols and includes many features for network and host analysis.
+    * [striptls - auditing proxy](https://github.com/tintinweb/striptls)
+        * A generic tcp proxy implementation and audit tool to perform protocol independent ssl/tls interception and STARTTLS stripping attacks on SMTP, POP3, IMAP, FTP, NNTP, XMPP, ACAP and IRC.
+    * [BackDoor Factory](https://github.com/secretsquirrel/the-backdoor-factory)
+        * The goal of BDF is to patch executable binaries with user desired shellcode and continue normal execution of the prepatched state.
+        * [Wiki](https://github.com/secretsquirrel/the-backdoor-factory/wiki)
+        * [Video](http://www.youtube.com/watch?v=jXLb2RNX5xs)
+    * [Man-in-the-Middle Framework](https://github.com/byt3bl33d3r/MITMf)
+        * Framework for Man-In-The-Middle attacks
+    * [Xeroxsploit](https://github.com/LionSec/xerosploit)
+        * Xerosploit is a penetration testing toolkit whose goal is to perform man in the middle attacks for testing purposes. It brings various modules that allow to realise efficient attacks, and also allows to carry out denial of service attacks and port scanning. Powered by bettercap and nmap.
+    * [bettercap](https://github.com/evilsocket/bettercap) 
+        * A complete, modular, portable and easily extensible MITM framework. 
+        * [Elbsides 2019 Workshop](https://github.com/ceicke/bettercap-elbsides)
+            * This repository holds stuff which might be useful to the participants of the Bettercap workshop on the Elbsides 2019.
+    * [NetRipper](https://github.com/NytroRST/NetRipper)
+        * NetRipper is a post exploitation tool targeting Windows systems which uses API hooking in order to intercept network traffic and encryption related functions from a low privileged user, being able to capture both plain-text traffic and encrypted traffic before encryption/after decryption.
+    * [An Auditing Tool for Wi-Fi or Wired Ethernet Connections - Matthew Sullivan](https://www.cookiecadger.com/wp-content/uploads/Cookie%20Cadger.pdf)
+    * [Polymorph](https://github.com/shramos/polymorph)
+        * Polymorph is a framework written in Python 3 that allows the modification of network packets in real time, providing maximum control to the user over the contents of the packet. This framework is intended to provide an effective solution for real-time modification of network packets that implement practically any existing protocol, including private protocols that do not have a public specification. In addition to this, one of its main objectives is to provide the user with the maximum possible control over the contents of the packet and with the ability to perform complex processing on this information.
+* **DNS**
+    * [FakeDNS](https://github.com/Crypt0s/FakeDns)
+        * A regular-expression based python MITM DNS server with support for DNS Rebinding attacks
+    * [CopyCat](https://github.com/compewter/CopyCat)
+        * CopyCat is a Node.js based universal MITM web server. Used with DNS spoofing or another redirect attack, this server will act as a MITM for web traffic between the victim and a real server.
+* **Dumping from an interface**
+    * [net-creds](https://github.com/DanMcInerney/net-creds)
+        * Thoroughly sniff passwords and hashes from an interface or pcap file. Concatenates fragmented packets and does not rely on ports for service identification. It sniffs: URLs visited; POST loads sent; HTTP form logins/passwords; HTTP basic auth logins/passwords; HTTP searches; FTP logins/passwords; IRC logins/passwords; POP logins/passwords; IMAP logins/passwords; Telnet logins/passwords; SMTP logins/passwords; SNMP community string; NTLMv1/v2 all supported protocols like HTTP, SMB, LDAP, etc; Kerberos.
+    * [pcredz](https://github.com/lgandx/PCredz)
+        * This tool extracts Credit card numbers, NTLM(DCE-RPC, HTTP, SQL, LDAP, etc), Kerberos (AS-REQ Pre-Auth etype 23), HTTP Basic, SNMP, POP, SMTP, FTP, IMAP, etc from a pcap file or from a live interface.
+* **HTTP**
+    * [Injectify](https://github.com/samdenty99/injectify)
+        * Perform advanced MiTM attacks on websites with ease.
+    * [node-http-mitm-proxy](https://github.com/joeferner/node-http-mitm-proxy)
+        * HTTP Man In The Middle (MITM) Proxy written in node.js. Supports capturing and modifying the request and response data.
+    * [hyperfox](https://github.com/malfunkt/hyperfox)
+        * HTTP/HTTPs MITM proxy and traffic recorder with on-the-fly TLS cert generation. 
+    * [warcproxy](https://github.com/internetarchive/warcprox)
+        * WARC writing MITM HTTP/S proxy
+* **IPv6**
+    * [suddensix](https://github.com/Neohapsis/suddensix)
+        * IPV6 MITM attack tool
+* **Local**
+    * [Datajack Proxy](https://github.com/nccgroup/DatajackProxy)
+        * Datajack Proxy a tool to intercept non-HTTP traffic between a native application and a server. This would allow for communications interception and modification, even if encryption and certificate pinning were in use. This is done by hooking the application and intercepting calls to common socket and TLS libraries, and reading the data prior to encryption (for outbound) and after decryption (for inbound).
+        * [Blogpost](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2019/august/datajack-proxy-intercepting-tls-in-native-applications/)
+    * [Trudy](https://github.com/praetorian-code/trudy)
+        * Trudy is a transparent proxy that can modify and drop traffic for arbitrary TCP connections. Trudy can be used to programmatically modify TCP traffic for proxy-unaware clients. Trudy creates a 2-way "pipe" for each connection it proxies. The device you are proxying (the "client") connects to Trudy (but doesn't know this) and Trudy connects to the client's intended destination (the "server"). Traffic is then passed between these pipes. Users can create Go functions to mangle data between pipes. See it in action! For a practical overview, check out @tsusanka's very good blog post on using Trudy to analyze Telegram's MTProto. Trudy can also proxy TLS connections. Obviously, you will need a valid certificate or a client that does not validate certificates. Trudy was designed for monitoring and modifying proxy-unaware devices that use non-HTTP protocols. If you want to monitor, intercept, and modify HTTP traffic, Burp Suite is probably the better option.
+* **Maven**
+    * [Dilettante](https://github.com/mveytsman/dilettante)
+        * Maven central doesn't do SSL when serving you JARs. Dilettante is a MiTM proxy for exploiting that.
+* **RDP**
+    * [Seth](https://github.com/SySS-Research/Seth)
+        * Seth is a tool written in Python and Bash to MitM RDP connections. It attempts to downgrade the connection and extract clear text credentials.
+* **NTLM/SMB/NTBS**
+    * [NTLMssp-Extract](https://github.com/sinnaj-r/NTLMssp-Extract)
+        * A small Python-Script to extract NetNTLMv2 Hashes from NTMLssp-HTTP-Authentications, which were captured in a pcap.
+    * [ntlmRelayToEWS](https://github.com/Arno0x/NtlmRelayToEWS)
+        * ntlmRelayToEWS is a tool for performing ntlm relay attacks on Exchange Web Services (EWS). It spawns an SMBListener on port 445 and an HTTPListener on port 80, waiting for incoming connection from the victim. Once the victim connects to one of the listeners, an NTLM negociation occurs and is relayed to the target EWS server.
+    * [CVE-2017-7494](https://github.com/joxeankoret/CVE-2017-7494)
+        * Remote root exploit for the SAMBA CVE-2017-7494 vulnerability
+* **Postgres**
+    * [postgres-mitm](https://github.com/thusoy/postgres-mitm)
+        * Test whether your Postgres connections are vulnerable to MitM attacks.
+* **SSH**
+    * [ssh-mitm](https://github.com/jtesta/ssh-mitm)
+        * This penetration testing tool allows an auditor to intercept SSH connections. A patch applied to the OpenSSH v7.5p1 source code causes it to act as a proxy between the victim and their intended SSH server; all plaintext passwords and sessions are logged to disk.
+* **SSL/TLS**
+    * [SSLsplit - transparent and scalable SSL/TLS interception](https://www.roe.ch/SSLsplit)
+        * SSLsplit is a tool for man-in-the-middle attacks against SSL/TLS encrypted network connections. Connections are transparently intercepted through a network address translation engine and redirected to SSLsplit. SSLsplit terminates SSL/TLS and initiates a new SSL/TLS connection to the original destination address, while logging all data transmitted. SSLsplit is intended to be useful for network forensics and penetration testing.  SSLsplit supports plain TCP, plain SSL, HTTP and HTTPS connections over both IPv4 and IPv6.
+    * [SSLStrip](http://www.thoughtcrime.org/software/sslstrip/)
+        * This tool provides a demonstration of the HTTPS stripping attacks that I presented at Black Hat DC 2009. It will transparently hijack HTTP traffic on a network, watch for HTTPS links and redirects, then map those links into either look-alike HTTP links or homograph-similar HTTPS links. It also supports modes for supplying a favicon which looks like a lock icon, selective logging, and session denial.
+    * [tiny-mitm-proxy](https://github.com/floyd-fuh/tiny-mitm-proxy)
+        * Probably one of the smallest SSL MITM proxies you can make
+* **WSUS(Windows Server Updater Serice)**
+    * [WSUXploit](https://github.com/pimps/wsuxploit)
+        * This is a MiTM weaponized exploit script to inject 'fake' updates into non-SSL WSUS traffic. It is based on the WSUSpect Proxy application that was introduced to public on the Black Hat USA 2015 presentation, 'WSUSpect - Compromising the Windows Enterprise via Windows Update'
+    * [WSUSpect Proxy](https://github.com/pdjstone/wsuspect-proxy)
+        * This is a proof of concept script to inject 'fake' updates into non-SSL WSUS traffic. It is based on the BlackHat USA 2015 presentation, 'WSUSpect – Compromising the Windows Enterprise via Windows Update'
+        - White paper: http://www.contextis.com/documents/161/CTX_WSUSpect_White_Paper.pdf
+        - Slides: http://www.contextis.com/documents/162/WSUSpect_Presentation.pdf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------------
 #### <a name="host"></a>Network Host Discovery/Service Discovery:
 * **Educational/Informational**
-    * [Mass Scanning the Internet: Tips, Tricks, Results - DEF CON 22 - Graham, Mcmillan, and Tentler](https://www.youtube.com/watch?v=nX9JXI4l3-E)
-    * [halberd](https://github.com/jmbr/halberd)
-        * Load balancer detection tool
-    * [Port scanning without an IP address - DiabloHorn](https://diablohorn.com/2017/10/26/port-scanning-without-an-ip-address/)
-    * [They see me scannin'; they hatin'](http://blog.bonsaiviking.com/2015/07/they-see-me-scannin-they-hatin.html)
-    * [They see me scannin' (part 2)](http://blog.bonsaiviking.com/2015/07/they-see-me-scannin-part-2.html)
-    * [Inspecting Remote Network Topography by Monitoring Response Time-To-Live](http://howto.hackallthethings.com/2015/04/inspecting-remote-network-topography-by.html)
-    * [ttl-monitor](https://github.com/hack-all-the-things/ttl-monitor)
-        * A TTL monitor utility for identifying route changes, port forwards, intrusion responses, and more
-    * [Saving Polar Bears When Banner Grabbing](http://blog.ioactive.com/2015/07/saving-polar-bears-when-banner-grabbing.html)
-    * [polarbearscan](http://santarago.org/pbscan.html)
-        * polarbearscan is an attempt to do faster and more efficient banner grabbing and port scanning. It combines two different ideas which hopefully will make it somewhat worthy of your attention and time.  The first of these ideas is to use stateless SYN scanning using cryptographically protected cookies to parse incoming acknowledgements. To the best of the author's knowledge this technique was pioneered by Dan Kaminsky in scanrand. Scanrand was itself part of Paketto Keiretsu, a collection of scanning utilities, and it was released somewhere in 2001-2002. A mirror of this code can be found at Packet Storm. The second idea is use a patched userland TCP/IP stack such that the scanner can restore state immediately upon receiving a cryptographically verified packet with both the SYN and ACK flags set. The userland stack being used here by polarbearscan is called libuinet[2](http://wanproxy.org/libuinet.shtml). Unlike some of the other userland TCP/IP stacks out there this one is very mature as it's simply a port of FreeBSD's TCP/IP stack. By patching the libuinet stack one can then construct a socket and complete the standard TCP 3-way handshake by replying with a proper ACK. Doing it this way a fully functional TCP connection is immediately established. This as opposed to other scanners (such as nmap) who would have to, after noting that a TCP port is open, now perform a full TCP connect via the kernel to do things such as banner grabbing or version scanning. A full TCP connect leads to a whole new TCP 3-way handshake being performed. This completely discards the implicit state which was built up by the initial two packets being exchanged between the hosts. By avoiding this one can reduce bandwidth usage and immediately go from detecting that a port is open to connecting to it. This connection can then simply sit back and receive data in banner grab mode or it could send out an HTTP request. 
-    * [fragroute](https://www.monkey.org/~dugsong/fragroute/fragroute.8.txt)
-    * [Ask and you shall receive (Part 2)](https://securityhorror.blogspot.com/2012/07/ask-and-you-shall-receive-part-2.html)
-    * [Layer Four Traceroute (LFT) and WhoB](http://pwhois.org/lft/)
-        * The alternative traceroute and whois tools for network (reverse) engineers
+    * **Articles/Blogposts/Writeups**
+        * [Port scanning without an IP address - DiabloHorn](https://diablohorn.com/2017/10/26/port-scanning-without-an-ip-address/)
+        * [They see me scannin'; they hatin'](http://blog.bonsaiviking.com/2015/07/they-see-me-scannin-they-hatin.html)
+        * [They see me scannin' (part 2)](http://blog.bonsaiviking.com/2015/07/they-see-me-scannin-part-2.html)
+        * [Inspecting Remote Network Topography by Monitoring Response Time-To-Live](http://howto.hackallthethings.com/2015/04/inspecting-remote-network-topography-by.html)
+        * [Saving Polar Bears When Banner Grabbing](http://blog.ioactive.com/2015/07/saving-polar-bears-when-banner-grabbing.html)
+        * [fragroute](https://www.monkey.org/~dugsong/fragroute/fragroute.8.txt)
+        * [Ask and you shall receive (Part 2)](https://securityhorror.blogspot.com/2012/07/ask-and-you-shall-receive-part-2.html)
+    * **Talks/Presentations/Videos**
+        * [Mass Scanning the Internet: Tips, Tricks, Results - DEF CON 22 - Graham, Mcmillan, and Tentler](https://www.youtube.com/watch?v=nX9JXI4l3-E)
+        * [Post Exploitation: Striking Gold with Covert Recon - Derek Rook(WWHF19)](https://www.youtube.com/watch?v=04H1s9z0JDo)
+            * You're on a covert penetration test focusing on the client's monitoring and alerting capabilities. You've just established a foothold, maybe even elevated to admin, but now what? You want to know more about the internal network but careless packet slinging will get you caught. Join me on a mining expedition where you can't swing your pick axe without striking gold. We'll be mining logs, pilfering connection statistics, and claim jumping process network connections. Without leaving the comfort of your beachhead, you'll be shouting "Eureka!" in no time.
     * **Nmap Related**
         * [Nmap XML Parser Documentation](https://nmap-parser.readthedocs.io/en/latest/)
         * [Nmap you’re doing it wrong - sneakerhax](https://sneakerhax.com/nmap-yourre-doing-it-wrong/)
@@ -1650,9 +1577,14 @@ EIGRP and OSPF).
     * [CSRecon - Censys and Shodan Reconnasiance Tool](https://github.com/markclayton/csrecon)
     * [ICS Honeypot Detection using Shodan](https://asciinema.org/a/38992)
     * [Honeypot Or Not? - shodanhq](https://honeyscore.shodan.io/)
-* **Firewall**
-    * [Firewalk](http://packetfactory.openwall.net/projects/firewalk/)
-        * Firewalk is an active reconnaissance network security tool that attempts to determine what layer 4 protocols a  given IP forwarding device will pass. Firewalk  works  by sending out TCP or UDP packets with a TTL one greater than the targeted gateway.  If the gateway allows the traffic, it will forward the packets to the next hop where they will expire and elicit an ICMP_TIME_EXCEEDED  message.  If the gateway hostdoes not allow the traffic, it will likely drop the packets on  the floor and we will see no response. To get  the  correct  IP  TTL that will result in expired packets one beyond the gateway we need  to  ramp  up  hop-counts.   We  do  this  in the same manner that traceroute works.  Once we have the gateway hopcount (at  that point the scan is said to be `bound`) we can begin our scan.
+* **Distributed Scanning**
+        * **Articles/Blogposts/Writeups/Papers**
+        * **Tools**
+            * [Natlas](https://github.com/natlas/natlas)
+                * You've got a lot of maps and they are getting pretty unruly. What do you do? You put them in a book and call it an atlas. This is like that, except it's a website and it's a collection of nmaps. The Natlas server doubles as a task manager for the agents to get work, allowing you to control the scanning scope in one centralized place.
+            * [Scantron](https://github.com/rackerlabs/scantron)
+                * Scantron is a distributed nmap and masscan scanner comprised of two components. The first is a Master node that consists of a web front end used for scheduling scans and storing nmap scan targets and results. The second component is an agent that pulls scan jobs from Master and conducts the actual nmap scanning. A majority of the application's logic is purposely placed on Master to make the agent(s) as "dumb" as possible. All nmap target files and nmap results reside on Master and are shared through a network file share (NFS) leveraging SSH tunnels. The agents call back to Master periodically using a REST API to check for scan tasks and provide scan status updates.
+                * [Blogpost(2018)](https://developer.rackspace.com/blog/scantron-a-distributed-nmap-scanner/)
 * **Tools**
     * **Nmap**
         * [Nmap](http://nmap.org/)
@@ -1692,43 +1624,74 @@ EIGRP and OSPF).
                 * Converts Nmap XML output to csv file, and other useful functions
             * [nmapautoanalyzer.rb - raesene](https://github.com/raesene/TestingScripts/blob/master/nmapautoanalyzer.rb)
                 * This script is designed to co-ordinate parsing of nmap xml files and production of a concise report, just listing ports that are open on hosts, with whatever supplementary information nmap provide about them (service, product name, reason nmap thinks the port is open).
+            * [Gnmap-Parser](https://github.com/ChrisTruncer/gnmap-parser)
+                * Gnmap-Parser takes multiple Nmap scans exported in greppable (.gnmap) format and parses them into various types of plain-text files for easy analysis.
         * **Storing/Parsing the scan data**
             * [Offensive ELK: Elasticsearch for Offensive Security - Marco Lancini](https://www.marcolancini.it/2018/blog-elk-for-nmap/)
             * [Using Nmap + Logstash to Gain Insight Into Your Network - Andrew Cholakian](https://www.elastic.co/blog/using-nmap-logstash-to-gain-insight-into-your-network)
                 * In this post we'll look at a brand new logstash codec plugin: logstash-codec-nmap. This plugin lets you directly import Nmap scan results into Elasticsearch where you can then visualize them with Kibana. Nmap is somewhat hard to describe because its a sort of swiss army knife of network tools. It crams many different features into a single small executable. I've put together a small list of things you can do with Nmap below, though it is by no means complete!
             * [How to Index NMAP Port Scan Results into Elasticsearch - Adam Vanderbush](https://qbox.io/blog/how-to-index-nmap-port-scan-results-into-elasticsearch)
+            * [Using Nmap + Logstash to Gain Insight Into Your Network - Andrew Cholakian(2016)](https://www.elastic.co/blog/using-nmap-logstash-to-gain-insight-into-your-network)
         * **Helpful Tools**
             * [pentest-machine](https://github.com/DanMcInerney/pentest-machine)
                 * Automates some pentest jobs via nmap xml file
+            * [Autorecon](https://github.com/Tib3rius/AutoRecon)
+                * AutoRecon is a multi-threaded network reconnaissance tool which performs automated enumeration of services. It is intended as a time-saving tool for use in CTFs and other penetration testing environments (e.g. OSCP). It may also be useful in real-world engagements. The tool works by firstly performing port scans / service detection scans. From those initial results, the tool will launch further enumeration scans of those services using a number of different tools. For example, if HTTP is found, nikto will be launched (as well as many others).
+            * [Raccoon](https://github.com/evyatarmeged/Raccoon)
+                * Raccoon is a tool made for reconnaissance and information gathering with an emphasis on simplicity. It will do everything from fetching DNS records, retrieving WHOIS information, obtaining TLS data, detecting WAF presence and up to threaded dir busting and subdomain enumeration. Every scan outputs to a corresponding file. As most of Raccoon's scans are independent and do not rely on each other's results, it utilizes Python's asyncio to run most scans asynchronously.
+    * **Firewall**
+        * [Firewalk](http://packetfactory.openwall.net/projects/firewalk/)
+            * Firewalk is an active reconnaissance network security tool that attempts to determine what layer 4 protocols a  given IP forwarding device will pass. Firewalk  works  by sending out TCP or UDP packets with a TTL one greater than the targeted gateway.  If the gateway allows the traffic, it will forward the packets to the next hop where they will expire and elicit an ICMP_TIME_EXCEEDED  message.  If the gateway hostdoes not allow the traffic, it will likely drop the packets on  the floor and we will see no response. To get  the  correct  IP  TTL that will result in expired packets one beyond the gateway we need  to  ramp  up  hop-counts.   We  do  this  in the same manner that traceroute works.  Once we have the gateway hopcount (at  that point the scan is said to be `bound`) we can begin our scan.
+        * [Fireaway](https://github.com/tcstool/Fireaway)
+            * Fireaway is a tool for auditing, bypassing, and exfiltrating data against layer 7/AppID inspection rules on next generation firewalls, as well as other deep packet inspection defense mechanisms, such as data loss prevention (DLP) and application aware proxies. These tactics are based on the principle of having to allow connections to establish through the NGFW in order to see layer 7 data to filter, as well as spoofing applications to hide communication channels inside the firewall logs as normal user traffic, such as Internet surfing. In the case of bypassing data loss prevention tools, Fireaway sends data in small "chunks", which do not match regular expression triggers and other DLP rules, as well as embedding data in spoofed HTTP headers of legitimate applications which most data loss prevention technologies are not designed to inspect.
+    * **Load-Balancers**
+        * [halberd](https://github.com/jmbr/halberd)
+            * Load balancer detection tool
     * **MassScan**
-        * [Ever wanted to scan the internet in a few hours?](http://blog.erratasec.com/2013/10/faq-from-where-can-i-scan-internet.html)
-        * [Adding your protocol to Masscan](http://blog.erratasec.com/2014/11/adding-protocols-to-masscan.html)
-    * [Angry IP Scanner](http://angryip.org/)
-        * Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner designed to be fast and simple to use. It scans IP addresses and ports as well as has many other features. 
-    * [ScanCannon](https://github.com/johnnyxmas/ScanCannon)
-        * The speed of masscan with the reliability and detailed enumeration of nmap!
-    * [UnicornScan](http://www.unicornscan.org/)
-        * Unicornscan is a new information gathering and correlation engine built for and by members of the security research and testing communities. It was designed to provide an engine that is Scalable, Accurate, Flexible, and Efficient. It is released for the community to use under the terms of the GPL license. 
-        * Editor note: Use this to mass scan networks. It-s faster than nmap at scanning large host lists and allows you to see live hosts quickly.
-    * [hping](http://www.hping.org/)
-        * hping is a command-line oriented TCP/IP packet assembler/analyzer. The interface is inspired to the ping(8) unix command, but hping isn't only able to send ICMP echo requests. It supports TCP, UDP, ICMP and RAW-IP protocols, has a traceroute mode, the ability to send files between a covered channel, and many other features. 
-    * [Consul](https://github.com/hashicorp/consul)
-        * Consul is a tool for service discovery and configuration. Consul is distributed, highly available, and extremely scalable.
-    * [gateway-finder](https://github.com/pentestmonkey/gateway-finder)
-        * Gateway-finder is a scapy script that will help you determine which of the systems on the local LAN has IP forwarding enabled and which can reach the Internet.
-    * [GTScan](https://github.com/SigPloiter/GTScan)
-        * The Nmap Scanner for Telco. With the current focus on telecom security, there used tools in day to day IT side penetration testing should be extended to telecom as well. From here came the motivation for an nmap-like scanner but for telco. The current security interconnect security controls might fail against reconnaissance, although mobile operators might implement SMS firewalls/proxies, Interconnect firewalls, some of those leak information that could be used for further information gathering process. The motivation behind this project, first adding a new toolking into the arsenal of telecom penetration testers. Second give the mobile operators a way to test their controls to a primitive methodology such as information gathering and reconnaissance.
+        * **Articles/Blogposts/Writeups**
+            * [Ever wanted to scan the internet in a few hours?](http://blog.erratasec.com/2013/10/faq-from-where-can-i-scan-internet.html)
+            * [Adding your protocol to Masscan](http://blog.erratasec.com/2014/11/adding-protocols-to-masscan.html)
+        * **Talks/Presentations/Videos**
+        * **Tools**
+            * [ScanCannon](https://github.com/johnnyxmas/ScanCannon)
+                * The speed of masscan with the reliability and detailed enumeration of nmap!
+    * **Other IP Scanners**
+        * [polarbearscan](http://santarago.org/pbscan.html)
+            * polarbearscan is an attempt to do faster and more efficient banner grabbing and port scanning. It combines two different ideas which hopefully will make it somewhat worthy of your attention and time.  The first of these ideas is to use stateless SYN scanning using cryptographically protected cookies to parse incoming acknowledgements. To the best of the author's knowledge this technique was pioneered by Dan Kaminsky in scanrand. Scanrand was itself part of Paketto Keiretsu, a collection of scanning utilities, and it was released somewhere in 2001-2002. A mirror of this code can be found at Packet Storm. The second idea is use a patched userland TCP/IP stack such that the scanner can restore state immediately upon receiving a cryptographically verified packet with both the SYN and ACK flags set. The userland stack being used here by polarbearscan is called libuinet[2](http://wanproxy.org/libuinet.shtml). Unlike some of the other userland TCP/IP stacks out there this one is very mature as it's simply a port of FreeBSD's TCP/IP stack. By patching the libuinet stack one can then construct a socket and complete the standard TCP 3-way handshake by replying with a proper ACK. Doing it this way a fully functional TCP connection is immediately established. This as opposed to other scanners (such as nmap) who would have to, after noting that a TCP port is open, now perform a full TCP connect via the kernel to do things such as banner grabbing or version scanning. A full TCP connect leads to a whole new TCP 3-way handshake being performed. This completely discards the implicit state which was built up by the initial two packets being exchanged between the hosts. By avoiding this one can reduce bandwidth usage and immediately go from detecting that a port is open to connecting to it. This connection can then simply sit back and receive data in banner grab mode or it could send out an HTTP request.
+        * [Angry IP Scanner](http://angryip.org/)
+            * Angry IP Scanner (or simply ipscan) is an open-source and cross-platform network scanner designed to be fast and simple to use. It scans IP addresses and ports as well as has many other features.
+        * [UnicornScan](http://www.unicornscan.org/)
+            * Unicornscan is a new information gathering and correlation engine built for and by members of the security research and testing communities. It was designed to provide an engine that is Scalable, Accurate, Flexible, and Efficient. It is released for the community to use under the terms of the GPL license. 
+            * Editor note: Use this to mass scan networks. It-s faster than nmap at scanning large host lists and allows you to see live hosts quickly.
+        * [hping](http://www.hping.org/)
+            * hping is a command-line oriented TCP/IP packet assembler/analyzer. The interface is inspired to the ping(8) unix command, but hping isn't only able to send ICMP echo requests. It supports TCP, UDP, ICMP and RAW-IP protocols, has a traceroute mode, the ability to send files between a covered channel, and many other features.
+        * [fi6s](https://github.com/sfan5/fi6s)
+            * fi6s is an IPv6 port scanner designed to be fast. This is achieved by sending and processing raw packets asynchronously. The design and goal is pretty similar to Masscan, though it is not as full-featured yet.
+    * **Other**
+        * [ttl-monitor](https://github.com/hack-all-the-things/ttl-monitor)
+            * A TTL monitor utility for identifying route changes, port forwards, intrusion responses, and more
+        * [Layer Four Traceroute (LFT) and WhoB](http://pwhois.org/lft/)
+            * The alternative traceroute and whois tools for network (reverse) engineers
+        * [gateway-finder](https://github.com/pentestmonkey/gateway-finder)
+            * Gateway-finder is a scapy script that will help you determine which of the systems on the local LAN has IP forwarding enabled and which can reach the Internet.
+        * [Consul](https://github.com/hashicorp/consul)
+            * Consul is a tool for service discovery and configuration. Consul is distributed, highly available, and extremely scalable.
+        * [GTScan](https://github.com/SigPloiter/GTScan)
+            * The Nmap Scanner for Telco. With the current focus on telecom security, there used tools in day to day IT side penetration testing should be extended to telecom as well. From here came the motivation for an nmap-like scanner but for telco. The current security interconnect security controls might fail against reconnaissance, although mobile operators might implement SMS firewalls/proxies, Interconnect firewalls, some of those leak information that could be used for further information gathering process. The motivation behind this project, first adding a new toolking into the arsenal of telecom penetration testers. Second give the mobile operators a way to test their controls to a primitive methodology such as information gathering and reconnaissance.
 * **Tor**
     * [exitmap](https://github.com/NullHypothesis/exitmap)
         * A fast and modular scanner for Tor exit relays. http://www.cs.kau.se/philwint/spoiled_onions/ 
     * [OnionScan](https://github.com/s-rah/onionscan)
         * [What OnionScan Scans for](https://github.com/s-rah/onionscan/blob/master/doc/what-is-scanned-for.md)
 * **VHost Scanning**
-    * [Virtual host and DNS names enumeration techniques](https://jekil.sexy/blog/2009/virtual-host-and-dns-names-enumeration-techniques.html)
-    * [hostmap](https://github.com/jekil/hostmap)
-        * hostmap is a free, automatic, hostnames and virtual hosts discovery tool written in Ruby by Alessandro Tanasi
-    * [blacksheepwall](https://github.com/tomsteele/blacksheepwall)
-        * blacksheepwall is a hostname reconnaissance tool written in Go. It can also be used as a stand-alone package in your tools.
+    * **Articles/Blogposts/Writeups**
+        * [Virtual host and DNS names enumeration techniques](https://jekil.sexy/blog/2009/virtual-host-and-dns-names-enumeration-techniques.html)
+    * **Tools**
+        * [hostmap](https://github.com/jekil/hostmap)
+            * hostmap is a free, automatic, hostnames and virtual hosts discovery tool written in Ruby by Alessandro Tanasi
+        * [blacksheepwall](https://github.com/tomsteele/blacksheepwall)
+            * blacksheepwall is a hostname reconnaissance tool written in Go. It can also be used as a stand-alone package in your tools.
+        * [gobuster](https://github.com/OJ/gobuster)
 * **Cloudflare**
     * [CloudFail](https://github.com/m0rtem/CloudFail)
         * CloudFail is a tactical reconnaissance tool which aims to gather enough information about a target protected by CloudFlare in the hopes of discovering the location of the server.
@@ -1758,6 +1721,35 @@ EIGRP and OSPF).
         * metasploitHelper (msfHelper) communicates with Metasploit via msrpc. It uses both port and web related exploits from Metasploit. You can point msfHelper at an IP address/Nmap XML file/File containing list of Ip addresses. First, it performs a Nmap scan of the target host(s) and then attempt to find compatible and possible Metasploit modules based on 1) nmap service banner and 2) service name and run them against the targets.
         * [Slides](https://docs.google.com/presentation/d/1No9K1OsuYy5mDP0FmRzb2fNWeuyyq2R41N0p7qu8r_0/edit#slide=id.g20261039dc_2_48)
 
+
+------------
+### <a name="pivot"></a>Pivoting
+* Look at the Pivoting section in Post Exploitation/Privilege Escalation
+
+
+---------------------------
+### <a name="vendor"></a> Vendor Specific Stuff
+* **Non-Specific**
+    * [Vendor/Ethernet/Bluetooth MAC Address Lookup and Search - coffer.com](http://www.coffer.com/mac_find/)
+    * [IP Cameras Default Passwords Directory](https://ipvm.com/reports/ip-cameras-default-passwords-directory)
+* **Cisco**
+    * [CVE-2016-6366](https://github.com/RiskSense-Ops/CVE-2016-6366/blob/master/README.md)
+        * Public repository for improvements to the EXTRABACON exploit, a remote code execution for Cisco ASA written by the Equation Group (NSA) and leaked by the Shadow Brokers.
+* **F5**
+    * [BigIP Security - dnkolegov](https://github.com/dnkolegov/bigipsecurity/blob/master/README.md)
+        * This document describes common misconfigurations of F5 Networks BigIP systems.
+* **IBM**
+    * [Domi-Owned](https://github.com/coldfusion39/domi-owned)
+        * Domi-Owned is a tool used for compromising IBM/Lotus Domino servers. Tested on IBM/Lotus Domino 8.5.2, 8.5.3, 9.0.0, and 9.0.1 running on Windows and Linux.
+
+
+
+* **Distributed Systems**
+    * [Garfield](https://github.com/tunnelshade/garfield)
+        * Garfield is and open source framework for scanning and exploiting Distributed Systems. The framework currently being in it's alpha stage and is undergoing rapid development.
+* [IVRE](https://github.com/cea-sec/ivre)
+    * IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
+    http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
 
 
@@ -1792,13 +1784,21 @@ EIGRP and OSPF).
     * [nac_bypass](https://github.com/scipag/nac_bypass)
         * Script collection to bypass Network Access Control (NAC, 802.1x)
     * [Tapping 802.1x Links with Marvin - abb(2011)](https://www.gremwell.com/marvin-mitm-tapping-dot1x-links)
+    * [PacketFence](https://packetfence.org/)
+        * PacketFence is a fully supported, trusted, Free and Open Source network access control (NAC) solution. Boasting an impressive feature set including a captive-portal for registration and remediation, centralized wired, wireless and VPN management, industry-leading BYOD capabilities, 802.1X and RBAC support, integrated network anomaly detection with layer-2 isolation of problematic devices; PacketFence can be used to effectively secure small to very large heterogeneous networks.
+
+
 
 ------------
 ### <a name="captive-portal"></a>Captive Portals
 * **101**
     * [IETF RFC 7710: Captive-Portal Identification Using DHCP or Router Advertisements (RAs)](https://tools.ietf.org/html/rfc7710)
-* **Articles/Blogposts/Writeups**
-* **Presentations/Talks/Videos**
+* **Educational**
+* **Attacking**
+    * **Articles/Blogposts/Writeups**
+        * [CAPTIVE PORTAL: The Definitive Guide - rootsh3ll(2019)](https://rootsh3ll.com/captive-portal-guide/)
+        * [Bypassing Wireless Captive Portals - jreppiks(2020)](https://jreppiks.github.io/pentest/wireless/bypass/2020/02/13/BypassingWirelessCaptivePortals.html)
+    * **Presentations/Talks/Videos**
 * **Tools**
     * [cpscam](https://github.com/codewatchorg/cpscam)
         * Bypass captive portals by impersonating inactive users
@@ -1886,7 +1886,7 @@ EIGRP and OSPF).
 * **Talks & Presentations**
     * [Attacking *multifunction* printers and getting creds from them](http://www.irongeek.com/i.php?page=videos/bsidescleveland2014/plunder-pillage-and-print-the-art-of-leverage-multifunction-printers-during-penetration-testing-deral-heiland)
     * [Print Me If You Dare Firmware Modification Attacks and the Rise of Printer Malware - Ang Cui, Jonathan Voris - 28C3](https://www.youtube.com/watch?v=njVv7J2azY8&feature=youtu.be)
-        * We first present several generic firmware modification attacks against HP printers. Weaknesses within the firmware update process allows the attacker to make arbitrary modifications to the NVRAM contents of the device. The attacks we present exploit a functional vulnerability common to all HP printers, and do not depend on any specific code vulnerability. These attacks cannot be prevented by any authentication mechanism on the printer, and can be delivered over the network, either directly or through a print server (active attack) and as hidden payloads within documents (reflexive attack). Next, we describe the design and operation a sophisticated piece of malware for HP (P2050) printers. Essentially a VxWorks rootkit, this malware is equipped with: port scanner, covert reverse-IP proxy, print-job snooper that can monitor, intercept, manipulate and exfiltrate incoming print-jobs, a live code update mechanism, and more (see presentation outline below). Lastly, we will demonstrate a self-propagation mechanism, turning this malware into a full-blown printer worm. Lastly, we present an accurate distribution of all HP printers vulnerable to our attack, as determined by our global embedded device vulnerability scanner (see [1](ids.cs.columbia.edu/sites/default/files/paper-acsac.pdf)). Our scan is still incomplete, but extrapolating from available data, we estimate that there exist at least 100,000 HP printers that can be compromised through an active attack, and several million devices that can be compromised through reflexive attacks. We will present a detailed breakdown of the geographical and organizational distribution of observable vulnerable printers in the world.
+        * We first present several generic firmware modification attacks against HP printers. Weaknesses within the firmware update process allows the attacker to make arbitrary modifications to the NVRAM contents of the device. The attacks we present exploit a functional vulnerability common to all HP printers, and do not depend on any specific code vulnerability. These attacks cannot be prevented by any authentication mechanism on the printer, and can be delivered over the network, either directly or through a print server (active attack) and as hidden payloads within documents (reflexive attack). Next, we describe the design and operation a sophisticated piece of malware for HP (P2050) printers. Essentially a VxWorks rootkit, this malware is equipped with: port scanner, covert reverse-IP proxy, print-job snooper that can monitor, intercept, manipulate and exfiltrate incoming print-jobs, a live code update mechanism, and more (see presentation outline below). Lastly, we will demonstrate a self-propagation mechanism, turning this malware into a full-blown printer worm. Lastly, we present an accurate distribution of all HP printers vulnerable to our attack, as determined by our global embedded device vulnerability scanner (see [1](http://www.ids.cs.columbia.edu/sites/default/files/paper-acsac.pdf)). Our scan is still incomplete, but extrapolating from available data, we estimate that there exist at least 100,000 HP printers that can be compromised through an active attack, and several million devices that can be compromised through reflexive attacks. We will present a detailed breakdown of the geographical and organizational distribution of observable vulnerable printers in the world.
 * **Tools**
     * [PRET](https://github.com/RUB-NDS/PRET)
         * PRET is a new tool for printer security testing developed in the scope of a Master's Thesis at Ruhr University Bochum. It connects to a device via network or USB and exploits the features of a given printer language. Currently PostScript, PJL and PCL are supported which are spoken by most laser printers. This allows cool stuff like capturing or manipulating print jobs, accessing the printer's file system and memory or even causing physical damage to the device. All attacks are documented in detail in the Hacking Printers Wiki.
@@ -1899,33 +1899,44 @@ EIGRP and OSPF).
 ------------
 ### <a name="proxy"></a>Proxies
 * **Tools**
-    * [Mallory](https://bitbucket.org/IntrepidusGroup/mallory)
-        * Mallory is an extensible TCP/UDP man in the middle proxy that is designed  to be run as a gateway. Unlike other tools of its kind, Mallory supports  modifying non-standard protocols on the fly.
-    * [SSLStrip](http://www.thoughtcrime.org/software/sslstrip/)
-        * This tool provides a demonstration of the HTTPS stripping attacks that I presented at Black Hat DC 2009. It will transparently hijack HTTP traffic on a network, watch for HTTPS links and redirects, then map those links into either look-alike HTTP links or homograph-similar HTTPS links. It also supports modes for supplying a favicon which looks like a lock icon, selective logging, and session denial.
-    * [Echo Mirage](http://www.wildcroftsecurity.com/echo-mirage)
-        * Echo Mirage is a generic network proxy. It uses DLL injection and function hooking techniques to redirect network related function calls so that data transmitted and received by local applications can be observed and modified. Windows encryption and OpenSSL functions are also hooked so that plain text of data being sent and received over an encrypted session is also available. Traffic can be intercepted in real-time, or manipulated with regular expressions and a number of action directives
-    * [Burp Proxy](http://portswigger.net/burp/proxy.html)
-        * Burp Proxy is an intercepting proxy server for security testing of web applications. It operates as a man-in-the-middle between your browser and the target application
-    * [Charles Proxy](https://www.charlesproxy.com/)
-        * Charles is an HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL / HTTPS traffic between their machine and the Internet. This includes requests, responses and the HTTP headers (which contain the cookies and caching information).
-    * [OWASP Zed Attack Proxy](http://www.zaproxy.org/)
+    * **General(Not designed for attackers)**
+        * [Squid Proxy](http://www.squid-cache.org/)
+            * Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more. It reduces bandwidth and improves response times by caching and reusing frequently-requested web pages. Squid has extensive access controls and makes a great server accelerator. It runs on most available operating systems, including Windows and is licensed under the GNU GPL.
+    * **TCP/UDP**
+        * [Mallory](https://bitbucket.org/IntrepidusGroup/mallory)
+            * Mallory is an extensible TCP/UDP man in the middle proxy that is designed  to be run as a gateway. Unlike other tools of its kind, Mallory supports  modifying non-standard protocols on the fly.
+        * [Echo Mirage](http://www.wildcroftsecurity.com/echo-mirage)
+            * Echo Mirage is a generic network proxy. It uses DLL injection and function hooking techniques to redirect network related function calls so that data transmitted and received by local applications can be observed and modified. Windows encryption and OpenSSL functions are also hooked so that plain text of data being sent and received over an encrypted session is also available. Traffic can be intercepted in real-time, or manipulated with regular expressions and a number of action directives
+        * [TCP Catcher](http://www.tcpcatcher.org/)
+            * TcpCatcher is a free TCP, SOCKS, HTTP and HTTPS proxy monitor server software. 
+        * [SharpSocks](https://github.com/nettitude/SharpSocks)
+            * Tunnellable HTTP/HTTPS socks4a proxy written in C# and deployable via PowerShell
+        * [ssf - Secure Socket Funneling](https://github.com/securesocketfunneling/ssf)
+            * Network tool and toolkit. It provides simple and efficient ways to forward data from multiple sockets (TCP or UDP) through a single secure TLS tunnel to a remote computer. SSF is cross platform (Windows, Linux, OSX) and comes as standalone executables.
+        * [PowerCat](https://github.com/secabstraction/PowerCat)
+            * A PowerShell TCP/IP swiss army knife that works with Netcat & Ncat
+        * [goprox](https://github.com/3lpsy/goprox)
+            * Just need a simple proxy that supports unauthenticated or authenticated connections? Don't want to edit another squid config? Need simple pivoting in, out, or within a network? This may be the proxy for you!
+        * [chisel](https://github.com/jpillora/chisel)
+           * Chisel is a fast TCP tunnel, transported over HTTP, secured via SSH. Single executable including both client and server. Written in Go (golang). Chisel is mainly useful for passing through firewalls, though it can also be used to provide a secure endpoint into your network. Chisel is very similar to crowbar though achieves much higher performance.
+    * **DNS**
+        * [Phreebird](http://dankaminsky.com/phreebird/) 
+            * Phreebird is a DNSSEC proxy that operates in front of an existing DNS server (such as BIND, Unbound, PowerDNS, Microsoft DNS, or QIP) and supplements its records with DNSSEC responses. Features of Phreebird include automatic key generation, realtime record signing, support for arbitrary responses, zero configuration, NSEC3 -White Lies-, caching and rate limiting to deter DoS attacks, and experimental support for both Coarse Time over DNS and HTTP Virtual Channels. The suite also contains a large amount of sample code, including support for federated identity over OpenSSH. Finally, -Phreeload- enhances existing OpenSSL applications with DNSSEC support.
+        * [DNS Chef](https://github.com/amckenna/DNSChef)
+            * This is a fork of the DNSChef project v0.2.1 hosted at: http://thesprawl.org/projects/dnschef/
+    * **HTTP/HTTPS**
+        * [Burp Proxy](http://portswigger.net/burp/proxy.html)
+            * Burp Proxy is an intercepting proxy server for security testing of web applications. It operates as a man-in-the-middle between your browser and the target application
+        * [OWASP Zed Attack Proxy](http://www.zaproxy.org/)
         * [Zed Attack Proxy (ZAP) Community Scripts](https://github.com/zaproxy/community-scripts)
             * A collection of ZAP scripts provided by the community - pull requests very welcome! 
-    * [Phreebird](http://dankaminsky.com/phreebird/) 
-        * Phreebird is a DNSSEC proxy that operates in front of an existing DNS server (such as BIND, Unbound, PowerDNS, Microsoft DNS, or QIP) and supplements its records with DNSSEC responses. Features of Phreebird include automatic key generation, realtime record signing, support for arbitrary responses, zero configuration, NSEC3 -White Lies-, caching and rate limiting to deter DoS attacks, and experimental support for both Coarse Time over DNS and HTTP Virtual Channels. The suite also contains a large amount of sample code, including support for federated identity over OpenSSH. Finally, -Phreeload- enhances existing OpenSSL applications with DNSSEC support.
-    * [TCP Catcher](http://www.tcpcatcher.org/)
-        * TcpCatcher is a free TCP, SOCKS, HTTP and HTTPS proxy monitor server software. 
-    * [DNS Chef](https://github.com/amckenna/DNSChef)
-        * This is a fork of the DNSChef project v0.2.1 hosted at: http://thesprawl.org/projects/dnschef/
-    * [Squid Proxy](http://www.squid-cache.org/)
-        * Squid is a caching proxy for the Web supporting HTTP, HTTPS, FTP, and more. It reduces bandwidth and improves response times by caching and reusing frequently-requested web pages. Squid has extensive access controls and makes a great server accelerator. It runs on most available operating systems, including Windows and is licensed under the GNU GPL.
-    * [SharpSocks](https://github.com/nettitude/SharpSocks)
-        * Tunnellable HTTP/HTTPS socks4a proxy written in C# and deployable via PowerShell
-    * [ssf - Secure Socket Funneling](https://github.com/securesocketfunneling/ssf)
-        * Network tool and toolkit. It provides simple and efficient ways to forward data from multiple sockets (TCP or UDP) through a single secure TLS tunnel to a remote computer. SSF is cross platform (Windows, Linux, OSX) and comes as standalone executables.
-    * [PowerCat](https://github.com/secabstraction/PowerCat)
-        * A PowerShell TCP/IP swiss army knife that works with Netcat & Ncat
+        * [Charles Proxy](https://www.charlesproxy.com/)
+            * Charles is an HTTP proxy / HTTP monitor / Reverse Proxy that enables a developer to view all of the HTTP and SSL / HTTPS traffic between their machine and the Internet. This includes requests, responses and the HTTP headers (which contain the cookies and caching information).
+    * **SSL/TLS**
+        * [SSLStrip](http://www.thoughtcrime.org/software/sslstrip/)
+            * This tool provides a demonstration of the HTTPS stripping attacks that I presented at Black Hat DC 2009. It will transparently hijack HTTP traffic on a network, watch for HTTPS links and redirects, then map those links into either look-alike HTTP links or homograph-similar HTTPS links. It also supports modes for supplying a favicon which looks like a lock icon, selective logging, and session denial.
+
+
 
 
 
@@ -1940,11 +1951,18 @@ EIGRP and OSPF).
     * [Preboot Execution Environment - Wikipedia](https://en.wikipedia.org/wiki/Preboot_Execution_Environment)
     * [NetworkBoot.org](https://networkboot.org/)
         * A place where beginners can learn the fundamentals of network booting.
-* **Articles/Presentations/Talks/Writeups**
-    * [Use DHCP to detect UEFI or Legacy BIOS system and PXE boot to SCCM](http://www.itfaq.dk/2016/07/27/use-dhcp-to-detect-uefi-or-legacy-bios-system-and-pxe-boot-to-sccm/)
-    * [Attacks Against Windows PXE Boot Images - Thomas Elling](https://blog.netspi.com/attacks-against-windows-pxe-boot-images/)
-    * [Network Nightmare – PXE talk at Defcon - scriptjunkie.us](https://www.scriptjunkie.us/2011/08/network-nightmare/)
+* **Educational**
+* **Attacks**
+    * **Articles/Presentations/Talks/Writeups**
+        * [Use DHCP to detect UEFI or Legacy BIOS system and PXE boot to SCCM](http://www.itfaq.dk/2016/07/27/use-dhcp-to-detect-uefi-or-legacy-bios-system-and-pxe-boot-to-sccm/)
+        * [Attacks Against Windows PXE Boot Images - Thomas Elling](https://blog.netspi.com/attacks-against-windows-pxe-boot-images/)
+        * [Network Nightmare – PXE talk at Defcon - scriptjunkie.us](https://www.scriptjunkie.us/2011/08/network-nightmare/)
 * **Tools**
+    * [PowerPXE](https://github.com/wavestone-cdt/powerpxe)
+    * PowerPXE is a PowerShell script that extracts interesting data from insecure PXE boot.
+    * [BCD](https://github.com/mattifestation/BCD)
+        * BCD is a module to interact with boot configuration data (BCD) either locally or remotely using the ROOT/WMI:Bcd* WMI classes. The functionality of the functions in this module mirror that of bcdedit.exe.
+
 
 
 

@@ -34,53 +34,6 @@
 - [Solaris Zones](#zones)
 
 
-
-Containers
-	* https://github.com/ProfessionallyEvil/harpoon
-	* https://jvns.ca/blog/2016/10/10/what-even-is-a-container/
-	* https://github.com/ProfessionallyEvil/Pequod/blob/master/pres.md
-	* https://github.com/opencontainers
-	* https://linuxcontainers.org/lxc/introduction/
-	* https://blog.secureideas.com/2018/05/escaping-the-whale-things-you-probably-shouldnt-do-with-docker-part-1.html
-	* https://infoslack.com/devops/exploring-docker-remote-api
-	* https://raesene.github.io/blog/2016/03/06/The-Dangers-Of-Docker.sock/
-	* https://blog.secureideas.com/2018/08/escaping-the-whale-things-you-probably-shouldnt-do-with-docker-part-2.html
-	* https://github.com/ProfessionallyEvil/Pequod/blob/master/pres.md
-	* https://www.blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence_wp.pdf
-https://hackarandas.com/blog/2020/03/17/hacking-docker-remotely/
-https://engineering.fb.com/data-center-engineering/tupperware/
-* [Open Container Initiative](https://github.com/opencontainers)
-* [What even is a container: namespaces and cgroups - Julia Evans](https://jvns.ca/blog/2016/10/10/what-even-is-a-container/)
-* [Linux Containers LXC](https://linuxcontainers.org/lxc/introduction/)
-* [A crash course on Docker — Learn to swim with the big fish - Adnan Rahić](https://blog.sourcerer.io/a-crash-course-on-docker-learn-to-swim-with-the-big-fish-6ff25e8958b0)
-* [NIST Special Publication 800-190 - Application Container Security Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf)
-* [Container security (redhat)](https://www.redhat.com/en/topics/security/container-security)
-* [Introducing a *Super* Privileged Container Concept - Daniel Walsh](https://developers.redhat.com/blog/2014/11/06/introducing-a-super-privileged-container-concept/)
-* [Are Docker containers really secure?(2014) - Daniel Walsh](https://opensource.com/business/14/7/docker-security-selinux)
-* [Bringing new security features to Docker(2014) - Daniel Walsh](https://opensource.com/business/14/9/security-for-docker)
-* [namespaces - overview of Linux namespaces(man page)](http://man7.org/linux/man-pages/man7/namespaces.7.html)
-* [Linux Namespaces - Wikipedia](https://en.wikipedia.org/wiki/Linux_namespaces)
-* [Capabilities, a short intro - Sven Vermeulen](http://blog.siphos.be/2013/05/capabilities-a-short-intro/)
-* [Capability-based Security - Wikipedia](https://en.wikipedia.org/wiki/Capability-based_security)
-
-https://sysdogs.com/en/on-docker-image-security/
-
-Capabilities
-	* http://www.friedhoff.org/posixfilecaps.html
-	* https://www.linuxjournal.com/magazine/making-root-unprivileged
-	* http://blog.sevagas.com/POSIX-file-capabilities-the-dark-side
-	* https://archive.is/20130112225523/http://www.eros-os.org/essays/capintro.html
-	* https://archive.is/20130414162939/http://www.eros-os.org/pipermail/cap-talk/2003-March/001133.html
-	* http://www.cap-lore.com/CapTheory/index.html
-
-* https://github.com/SUSE/Portus
-* https://github.com/coreos/clair
-
-https://capsule8.com/blog/practical-container-escape-exercise/
-http://carnal0wnage.attackresearch.com/2019/02/abusing-docker-api-socket.html
-https://zwischenzugs.com/2016/04/04/convert-any-server-to-a-docker-container-updated/
-
-
 ------------------------
 ### <a name="containers"></a>Containers
 * **101**<a name="c101"></a>
@@ -110,6 +63,8 @@ https://zwischenzugs.com/2016/04/04/convert-any-server-to-a-docker-container-upd
 			* Seccomp filtering provides a means for a process to specify a filter for incoming system calls. The filter is expressed as a Berkeley Packet Filter (BPF) program, as with socket filters, except that the data operated on is related to the system call being made: system call number and the system call arguments. This allows for expressive filtering of system calls using a filter program language with a long history of being exposed to userland and a straightforward data set.
 		* [The Container Operator's Manual - Alice Goldfuss(Velocity NY2018)](https://www.youtube.com/watch?v=zGw_xKF47T0)
 			* Containers have been the future for five years now, featured on the stage of every major distributed systems conference in the world. But beyond the hype and the swag is a real technical solution, with real technical challenges, used for real problems at scale. And for the companies and engineers looking to adopt this solution, there’s little content on what awaits them. Containers can be a great infrastructure solution, but no one should drive them without a manual. Alice Goldfuss discusses some of the advantages and disadvantages of running containers in production at scale. You’ll learn why you should use containers, why you shouldn’t, and the trade-offs required at both the technical and human levels for implementing them. You’ll leave with a better understanding of how containers could fit into your own architecture and what you need to do to make that rollout a reality.
+	* **Articles/Blogposts/Writeups**
+		* [Efficient, reliable cluster management at scale with Tupperware - Facebook Engineering](https://engineering.fb.com/data-center-engineering/tupperware/)
 	* **Building**<a name="cbuild"></a>
 		* [Best practices for building containers - cloud.google](https://cloud.google.com/solutions/best-practices-for-building-containers)
 		* [img](https://github.com/genuinetools/img)
@@ -119,7 +74,17 @@ https://zwischenzugs.com/2016/04/04/convert-any-server-to-a-docker-container-upd
 		* [Linux Containers: Future or Fantasy? - Aaron Grattafiori(Defcon23)](https://www.youtube.com/watch?v=iN6QbszB1R8)
 			* Containers, a pinnacle of fast and secure deployment or a panacea of false security? In recent years Linux containers have developed from an insecure and loose collection of Linux kernel namespaces to a production-ready OS virtualization stack. In this talk, the audience will first learn the basics of how containers function, understanding namespaces, capabilities and cgroups in order to see how Linux containers and the supporting kernel features can offer an effective application and system sandboxing solution yet to be widely deployed or adopted. Understanding LXC or Docker use, weaknesses and security for PaaS and application sandboxing is only the beginning. Leveraging container technologies is rapidly becoming popular within the modern PaaS and devops world but little has been publicly discussed in terms of actual security risks or guarantees. Understanding prior container vulnerabilities or escapes, and current risks or pitfalls in major public platforms will be explored in this talk. I'll cover methods to harden containers against future attacks and common mistakes to avoid when using systems such as LXC and Docker. This will also include an analysis and discussion of techniques such as Linux kernel hardening, reduced capabilities, Mandatory Access Controls (MAC), the User kernel namespace and seccomp-bpf (syscall filtering); all of which help actually contain containers. The talk will end on some methods for creating minimal, highly-secure containers and end on where containers are going and why they might show up where you least expect them.
 	* **Capabilities**<a name="ccap"></a>
-		* [Exploiting capabilities: Parcel root power, the dark side of capabilities - Emeric Nasi](http://blog.sevagas.com/IMG/pdf/exploiting_capabilities_the_dark_side.pdf)
+		* **101**
+			* [Capability-based Security - Wikipedia](https://en.wikipedia.org/wiki/Capability-based_security)
+			* [What is a Capability, Anyway? - Jonathan Shapiro(1999)](https://web.archive.org/web/20160302160222/http://www.eros-os.org/essays/capintro.html)
+		* **Articles/Blogposts/Writeups**
+			* [POSIX Capabilities & File POSIX Capabilities - friedhoff.org](https://web.archive.org/web/20190225184922/http://www.friedhoff.org/posixfilecaps.html)
+			* [Capability Theory by Sound Bytes](http://www.cap-lore.com/CapTheory/index.html)
+			* [Capabilities, a short intro - Sven Vermeulen](http://blog.siphos.be/2013/05/capabilities-a-short-intro/)
+			* [[cap-talk] "Capability Myths Demolished" review(2003)](https://archive.is/20130414162939/http://www.eros-os.org/pipermail/cap-talk/2003-March/001133.html#selection-9.0-12.0)
+		* **Attacking**
+			* [POSIX file capabilities, the dark side - Emeric Nasi(2010)](http://blog.sevagas.com/POSIX-file-capabilities-the-dark-side)
+			* [Exploiting capabilities: Parcel root power, the dark side of capabilities - Emeric Nasi](http://blog.sevagas.com/IMG/pdf/exploiting_capabilities_the_dark_side.pdf)
 	* **Forensics**
 		* [Container Forensics: What to Do When Your Cluster is a Cluster - Maya Kaczorowski & Ann Wallace(CloudNativeConEU19) ](https://www.youtube.com/watch?v=MyXROAqO7YI&list=PLKDRii1YwXnLmd8ngltnf9Kzvbja3DJWx&index=7&t=0s)
 			* When responding to an incident in your containers, you don’t necessarily have the same tools at your disposal that you do with VMs - and so your incident investigation process and forensics are different. In a best case scenario, you have access to application logs, orchestrator logs, node snapshots, and more.  In this talk, we’ll go over where to get information about what’s happening in your cluster, including logs and open source tools you can install, and how to tie this information together to get a better idea of what’s happening in your infrastructure. Armed with this info, we’ll review the common mitigation options such as to alert, isolate, pause, restart, or kill a container. For common types of container attacks, we'll discuss what options are best and why. Lastly, we’ll talk about restoring services after an incident, and the best steps to take to prevent the next one.
@@ -148,6 +113,7 @@ https://zwischenzugs.com/2016/04/04/convert-any-server-to-a-docker-container-upd
 			* [What is container security? - redhat.com](https://www.redhat.com/en/topics/security/container-security)
 			* [NIST Special Publication 800-190: Application Container Security Guide](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf)
 			* [Container security: What you need to know about the NIST standards - Neil McAllister](https://techbeacon.com/enterprise-it/container-security-what-you-need-know-about-nist-standards)
+			* [Container security (redhat)](https://www.redhat.com/en/topics/security/container-security)
 		* **Articles/Blogposts/Writeups**
 			* [Container Security – Nobody Knows What It Means But It’s Provocative - Kelley Shortridge(2020)](https://capsule8.com/blog/container-security-nobody-knows-what-it-means-but-its-provocative/)
 			* [How to implement an open source container security stack (part 1)(2018) - Mateo Burillo](https://sysdig.com/blog/oss-container-security-stack/)
@@ -158,6 +124,10 @@ https://zwischenzugs.com/2016/04/04/convert-any-server-to-a-docker-container-upd
 			* [Exploring container security: An overview - Maya Kaczorowski(GCP Focused)](https://cloud.google.com/blog/products/gcp/exploring-container-security-an-overview?m=1)
 			* [Runtimes And the Curse of the Privileged Container - brauner](https://brauner.github.io/2019/02/12/privileged-containers.html)
 				* Writeup of CVE-2019-5736
+			* [On container image security - Kamil Zabielski(2020)](https://sysdogs.com/en/on-docker-image-security/)
+				* The biggest goal of this article, is to be a comprehensive guide on building and delivering secure and safe container images. Having that said, we try to focus on build-time. We will not cover registry, orchestrator and runtime protection in this write-up. All of these are so broad, that they deserve a completely different article.
+		* **Escaping**
+			* [An Exercise in Practical Container Escapology - Nick Freeman](https://capsule8.com/blog/practical-container-escape-exercise/)
 		* **Papers**
 			* [Understanding and Hardening Linux Containers - Aaron Grattafiori(2016)](https://www.nccgroup.trust/globalassets/our-research/us/whitepapers/2016/april/ncc_group_understanding_hardening_linux_containers-1-1.pdf)
 				* Operating System virtualization is an attractive feature for efficiency, speed and modern application deployment, amid questionable security. Recent advancements of the Linux kernel have coalesced for simple yet powerful OS virtualization via Linux Containers, as implemented by LXC, Docker, and CoreOS Rkt among others. Recent container focused start-ups such as Docker have helped push containers into the limelight. Linux containers offer native OS virtualization, segmented by kernel namespaces, limited through process cgroups and restricted through reduced root capabilities, Mandatory Access Control and user namespaces. This paper discusses these container features, as well as exploring various security mechanisms. Also included is an examination of attack surfaces, threats, and related hardening features in order to properly evaluate container security. Finally, this paper contrasts different container defaults and enumerates strong security recommendations to counter deployment weaknesses– helping support and explain methods for building high-security Linux containers. Are Linux containers the future or merely a fad or fantasy? This paper attempts to answer that question
@@ -207,6 +177,8 @@ https://zwischenzugs.com/2016/04/04/convert-any-server-to-a-docker-container-upd
 		* **Registry**
 			* [Setting up a private Docker registry - Nicolas Frankel](https://www.exoscale.com/syslog/setup-private-docker-registry/)
 			* [How to secure a private Docker registry - Nicolas Frankel](https://www.exoscale.com/syslog/securing-private-docker-registry/)
+			* [Portus](https://github.com/SUSE/Portus)
+				* Portus is an authorization server and a user interface for the next generation of the Docker registry. Portus targets version 2 of the Docker Registry API. The minimum required version of Registry is 2.1, which is the first version supporting soft deletes of blobs.
 		* **Scanning**
 			* **Articles/Blogposts/Writeups**
 				* [Docker Security Best Practices: Part 3 – Securing Container Images - Jeremy Valance](https://anchore.com/docker-security-best-practices-part-3-securing-container-images/)
@@ -216,6 +188,14 @@ https://zwischenzugs.com/2016/04/04/convert-any-server-to-a-docker-container-upd
 			* **Tools**
 				* [clair](https://github.com/coreos/clair)
 					* Clair is an open source project for the static analysis of vulnerabilities in application containers (currently including appc and docker).
+				* [dagda](https://github.com/eliasgranderubio/dagda)
+					* a tool to perform static analysis of known vulnerabilities, trojans, viruses, malware & other malicious threats in docker images/containers and to monitor the docker daemon and running docker containers for detecting anomalous activities
+				* [dockle](https://github.com/goodwithtech/dockle)
+					* Container Image Linter for Security, Helping build the Best-Practice Docker Image, Easy to start 
+				* [container-scan](https://github.com/Azure/container-scan)
+					* A GitHub action to help you scan your docker image for vulnerabilities. This action can be used to help you add some additional checks to help you secure your Docker Images in your CI. This would help you attain some confidence in your docker image before pushing them to your container registry or a deployment. It internally uses Trivy and Dockle for running certain kinds of scans on these images.
+				* [trivy](https://github.com/aquasecurity/trivy)
+					* A Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI.
 	* **Deployment**<a name="ddep"></a>
 		* [Hawkeye](https://github.com/hawkeyesec/scanner-cli)
 			* The Hawkeye scanner-cli is a project security, vulnerability and general risk highlighting tool. It is meant to be integrated into your pre-commit hooks and your pipelines.
@@ -263,6 +243,10 @@ https://zwischenzugs.com/2016/04/04/convert-any-server-to-a-docker-container-upd
 			* [You can't contain me! :: Analyzing and Exploiting an Elevation of Privilege Vulnerability in Docker for Windows - srcincite.io](https://srcincite.io/blog/2018/08/31/you-cant-contain-me-analyzing-and-exploiting-an-elevation-of-privilege-in-docker-for-windows.html)
 			* [Breaking out of Docker via runC – Explaining CVE-2019-5736 - Yuval Avrahami](https://www.twistlock.com/labs-blog/breaking-docker-via-runc-explaining-cve-2019-5736/)
 			* [Container Runtime Security Bypasses on Falco - antitree](https://www.antitree.com/2019/09/container-runtime-security-bypasses-on-falco/)
+			* [Abusing Docker API | Socket - Carnal0wnage](http://carnal0wnage.attackresearch.com/2019/02/abusing-docker-api-socket.html)
+			* [Understanding Docker container escapes - TrailofBits(2019)](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/)
+			* [How I Hacked Play-with-Docker and Remotely Ran Code on the Host - Nimrod Stoler(2019)](https://www.cyberark.com/resources/threat-research-blog/how-i-hacked-play-with-docker-and-remotely-ran-code-on-the-host)
+			* [Are Docker containers really secure?(2014) - Daniel Walsh](https://opensource.com/business/14/7/docker-security-selinux)
 		* **Securing**
 			* **101**
 				* [Docker security - docs.docker](https://docs.docker.com/engine/security/security/)
@@ -285,6 +269,14 @@ https://zwischenzugs.com/2016/04/04/convert-any-server-to-a-docker-container-upd
 				* [Introduction to Docker Content Trust - Paul Novarese](https://success.docker.com/article/introduction-to-docker-content-trust)
 					* Docker Content Trust provides strong cryptographic guarantees over what code and what versions of software are being run in your infrastructure. Docker Content Trust integrates The Update Framework (TUF) into Docker using Notary , an open source tool that provides trust over any content.
 				* [Docker Reference Architecture: Development Pipeline Best Practices Using Docker EE](https://success.docker.com/article/dev-pipeline)
+				* [dagda](https://github.com/eliasgranderubio/dagda)
+					* a tool to perform static analysis of known vulnerabilities, trojans, viruses, malware & other malicious threats in docker images/containers and to monitor the docker daemon and running docker containers for detecting anomalous activities
+				* [dockle](https://github.com/goodwithtech/dockle)
+					* Container Image Linter for Security, Helping build the Best-Practice Docker Image, Easy to start 
+				* [container-scan](https://github.com/Azure/container-scan)
+					* A GitHub action to help you scan your docker image for vulnerabilities. This action can be used to help you add some additional checks to help you secure your Docker Images in your CI. This would help you attain some confidence in your docker image before pushing them to your container registry or a deployment. It internally uses Trivy and Dockle for running certain kinds of scans on these images.
+				* [trivy](https://github.com/aquasecurity/trivy)
+					* A Simple and Comprehensive Vulnerability Scanner for Containers, Suitable for CI.
 			* **Tools**
 				* [Docker Bench for Security](https://github.com/docker/docker-bench-security)
 					* The Docker Bench for Security is a script that checks for dozens of common best-practices around deploying Docker containers in production. The tests are all automated, and are inspired by the CIS Docker Benchmark v1.2.0.
@@ -470,52 +462,3 @@ https://zwischenzugs.com/2016/04/04/convert-any-server-to-a-docker-container-upd
 		* Photon OS™ is an open source Linux container host optimized for cloud-native applications, cloud platforms, and VMware infrastructure. Photon OS provides a secure run-time environment for efficiently running containers.
 	* [The Twelve-Factor App](https://12factor.net/)
 		* In the modern era, software is commonly delivered as a service: called web apps, or software-as-a-service. The twelve-factor app is a methodology for building software-as-a-service apps that: Use declarative formats for setup automation, to minimize time and cost for new developers joining the project; Have a clean contract with the underlying operating system, offering maximum portability between execution environments; Are suitable for deployment on modern cloud platforms, obviating the need for servers and systems administration; Minimize divergence between development and production, enabling continuous deployment for maximum agility; And can scale up without significant changes to tooling, architecture, or development practices. The twelve-factor methodology can be applied to apps written in any programming language, and which use any combination of backing services (database, queue, memory cache, etc).
-
-
-
-* https://www.youtube.com/watch?v=0ZFMlO98Jkc
-
-
-
-------------------------
-### Sort	
-
-
-
-
-
-
-https://unit42.paloaltonetworks.com/what-i-learned-from-reverse-engineering-windows-containers/
-https://www.youtube.com/watch?v=8fi7uSYlOdc
-* [Notary](https://github.com/theupdateframework/notary)
-	* Notary is a project that allows anyone to have trust over arbitrary collections of data
-
-
-
-
-Kubernetes
-	https://github.com/k8gege/K8tools
-	Kubernetes tool sheet - https://docs.google.com/spreadsheets/d/1WPHt0gsb7adVzY3eviMK2W8LejV0I5m_Zpc8tMzl_2w/htmlview
-	https://speakerdeck.com/iancoldwater/the-path-less-traveled-abusing-kubernetes-defaults
-	https://github.com/bgeesaman/kube-env-stealer
-	https://news.ycombinator.com/item?id=21546099
-	https://rancher.com/
-	https://www.youtube.com/watch?v=uxRDKJCB4Rk
-	https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/
-	https://docs.google.com/presentation/d/1tCqmGSOJJzi6ZK7TNhbzVFsTekvjvQR8GGPoaYBrM1o/mobilepresent#slide=id.g5ebbe23d47_1_73
-	https://github.com/kubernetes/kops
-	https://cloud.google.com/blog/products/containers-kubernetes/kubernetes-engine-features-and-guidance-to-help-lock-down-your-containers?utm_source=mosaicsecurity
-	https://research.nccgroup.com/2020/02/12/command-and-kubectl-talk-follow-up/
-	https://github.com/trailofbits/audit-kubernetes
-	https://github.com/hjacobs/kubernetes-failure-stories
-* [kind](https://kind.sigs.k8s.io)
-	* kind is a tool for running local Kubernetes clusters using Docker container “nodes”. kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.
-* [How to Train Your Red Team (for Cloud Native) - @sublimino](https://drive.google.com/file/d/1cV5BJBZPZMjsvJExY-nlPDsdgwSsZXGI/view)
-* [K8s Attack Tree - Summary](https://github.com/cncf/financial-user-group/tree/master/projects/k8s-threat-model)
-	* The following threat model encompasses a series of attack trees and documentation targeting a generic Kubernetes installation. The aim of this work is to provide a detailed view of threats and mitigations that can be used as a checklist to identify common attack vectors for the platform and how a would be attacker could exploit configuration vulnerabilities within Kubernetes to achieve specific goals. This can then be used as a tool to test the security of an installation and gain visibility on the logging output that would be generated in the event of a potential attack.
-* [11 Ways (Not) to Get Hacked - Andrew Martin](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/)
-	* Kubernetes security has come a long way since the project's inception, but still contains some gotchas. Starting with the control plane, building up through workload and network security, and finishing with a projection into the future of security, here is a list of handy tips to help harden your clusters and increase their resilience if compromised.
-* [How to Train Your Red Team(for Cloud Native) - @sublimino, @controlplaneio(Aqua KubeSec Summit Nov19)](https://drive.google.com/file/d/1cV5BJBZPZMjsvJExY-nlPDsdgwSsZXGI/view)
-https://octetz.com/docs/2018/2018-12-07-psp/
-https://www.4armed.com/assess/kubernetes-penetration-testing/
-https://github.com/bgeesaman/kube-env-stealer

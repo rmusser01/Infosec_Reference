@@ -80,6 +80,7 @@
 	* [Learn_X_in_Y_Minutes](http://learnxinyminutes.com/)
 	* [Hyperpolyglot](http://hyperpolyglot.org/)
 	* [Android's billion-dollar mistake(s) - Jean-Michel Fayard ](https://web.archive.org/web/20190930114632/https://dev.to/jmfayard/android-s-billion-dollar-mistake-327b)
+	* [Security Training for Engineers - PagerDuty](https://sudo.pagerduty.com/for_engineers/)
 * **Dev Environment**
 	* [gitignore](https://github.com/github/gitignore)
 		* This is GitHub’s collection of .gitignore file templates. We use this list to populate the .gitignore template choosers available in the GitHub.com interface when creating new repositories and files.
@@ -100,16 +101,18 @@
 		* [Who Fixes That Bug? - Part One: Them! - Ryan McGeehan](https://medium.com/starting-up-security/who-fixes-that-bug-d44f9a7939f2)
 			* [Part 2](https://medium.com/starting-up-security/who-fixes-that-bug-f17d48443e21)
 	* **Talks/Presentations/Videos**
-		* [Lessons Learned from the DevSecOps Trenches - OWASP AppSec Cali 2019](https://tldrsec.com/blog/appsec-cali-2019-lessons-learned-from-the-devsecops-trenches/)
-* **Account Enumeration**
+* **Account Enumeration**<a name="ace"></a>
 	* [Once upon a time an account enumeration - Cust0n](https://sidechannel.tempestsi.com/once-upon-a-time-there-was-an-account-enumeration-4cf8ca7cd6c1)
 		* "The aim of this blogpost is to illustrate how account enumeration can occur in web applications, from the classic example to some tricks we’ve learned over the years (and of course show how to avoid this)."
-* **Application Logging & Monitoring**
-* **'AppSec' Stuff**
+* **Application Logging & Monitoring**<a name="logmon"></a>
+* **'AppSec' Stuff**<a name="appsec"></a>
 	* **Articles/Blogposts/Writeups**
 		* [Application Security in a DevOps Environment - Lyft](https://eng.lyft.com/application-security-in-a-devops-environment-53092f8a6048)
 		* [Designing Security for Billions - Facebook](https://newsroom.fb.com/news/2019/01/designing-security-for-billions/)
 		* [Abuser Stories: A Sneak Peak For Scrum Teams - Abhay Bhargav(2018)](https://www.we45.com/blog/abuser-stories-a-sneak-peak-for-scrum-teams)
+		* [Pushing Left, Like a Boss: Table of Contents - Tanya Janca(2018)](https://medium.com/bugbountywriteup/pushing-left-like-a-boss-table-of-contents-42fd063a75bb)
+			* "The following is a table of contents for my modern-day book, based off of a talk I wrote in 2016 entitled “Pushing Left, Like a Boss”. It serves as a foundational lesson on what “Application Security” is, and how to get started. I hope you find the series helpful."
+		* [What I Learned Watching All 44 AppSec Cali 2019 Talks - Clint Gibler](https://tldrsec.com/blog/appsec-cali-2019/)
 	* **Talks/Presentations/Videos**
 		* [The AppSec Starter Kit - Timothy De Block(BSides Detroit 2017)](https://www.youtube.com/watch?v=KMz8lWNAUmg)
 			* Security teams are starting to get more involved in the development life cycle. What tools are going to be introduced to the SDLC? What strategy is the security team going to use? This talk will provide an introduction to the tools and strategies security teams are using to improve security in the SDLC. We will walk through dynamic and static analyzers. Their strengths and weaknesses. The Open Web Applications Security Project (OWASP). It’s vast resources for learning more about security. We will look at OWASP Pipeline. How it can help with automating security in a DevOps environment. Learn about the names providing excellent appsec content. This talk is for developers who want to know about security and the tools being integrated into the development life cycle.
@@ -117,7 +120,9 @@
 			* This talk will review the OWASP Top Ten 2017 and the OWASP Top Ten Proactive Controls 2018 and compare them to a more comprehensive standard: the OWASP Application Security Verification Standard (ASVS) v4.0. OWASP's ASVS contains over 180 requirements that can provide a basis for defining what secure software really is. The OWASP ASVS can be used to help test technical security controls of web and API applications. It can also be used to provide developers with a list of requirements for secure development with much more nuance and detail than a top ten list! You cannot base a security program off a Top Ten list. You can base an Application Security program off of the OWASP ASVS.
 		* [Modeling and Discovering Vulnerabilities with Code Property Graphs - Fabian Yamaguchi, Nico Golde, Daniel Arp, Konrad Rieck(2014)](https://ieeexplore.ieee.org/ielx7/6954656/6956545/06956589.pdf?tp=&arnumber=6956589&isnumber=6956545)
 			* The vast majority of security breaches encountered today are a direct result of insecure code. Consequently, the protection of computer systems critically depends on the rigorous identification of vulnerabilities in software, a tedious and errorprone process requiring significant expertise. Unfortunately, a single flaw suffices to undermine the security of a system and thus the sheer amount of code to audit plays into the attacker’s cards. In this paper, we present a method to effectively mine large amounts of source code for vulnerabilities. To this end, we introduce a novel representation of source code called a code property graph that merges concepts of classic program analysis, namely abstract syntax trees, control flow graphs and program dependence graphs, into a joint data structure. This comprehensive representation enables us to elegantly model templates for common vulnerabilities with graph traversals that, for instance, can identify buffer overflows, integer overflows, format string vulnerabilities, or memory disclosures. We implement our approach using a popular graph database and demonstrate its efficacy by identifying 18 previously unknown vulnerabilities in the source code of the Linux kernel.
-* **Code-Repo Related**
+		* [Pushing Left Like A Boss - Tanya Janca](https://www.youtube.com/watch?v=Q5Nt8VhXg-0)
+			* With incident response and penetration testing currently receiving most of our application security dollars, it would appear that industry has decided to treat the symptom instead of the disease. 'Pushing left' refers to starting security earlier in the SDLC; addressing the problem throughout the process, and specifically during the development phase. From scanning your code with a vulnerability scanner to red team exercises, developer education programs and bug bounties, this talk will show you how to 'push left', like a boss. This talk is aimed at developers, operations, dev-ops, people who are new to application security, managers, or anyone who works in any other field of security than AppSec.
+* **Code-Repo Related**<a name="crepo"></a>
 	* **Articles/Blogposts/Writeups**
 		* [Why Google Stores Billions of Lines of Code in a Single Repository - Rachel Potvin, Josh Levenberg(2016)](https://cacm.acm.org/magazines/2016/7/204032-why-google-stores-billions-of-lines-of-code-in-a-single-repository/fulltext)
 	* **Repo Software**
@@ -129,11 +134,7 @@
 			* See also: Gitea, Gogs, Gitolite, Gitlab
 	* **Code Search**
 		* [Sourcegraph](https://about.sourcegraph.com/)
-* **Comparison Operations**
-	* **Articles/Blogposts/Writeups**
-		* [The Evil within the Comparison Functions - Andrey Karpov](https://www.viva64.com/en/b/0509/)
-		* [Inverting Your Assumptions: A Guide To JIT Comparisons - Jasiel Spelman(2018)](https://www.zerodayinitiative.com/blog/2018/4/12/inverting-your-assumptions-a-guide-to-jit-comparisons)
-* **Code Review**
+* **Code Review**<a name="code-review"></a>
 	* **101**
 		* [Code Reviews: Just Do It - Jeff Atwood](https://blog.codinghorror.com/code-reviews-just-do-it/)
 		* [On Code Reviews - Nick Shrock(2018)](https://medium.com/@schrockn/on-code-reviews-b1c7c94d868c)
@@ -218,15 +219,9 @@
 * **Design Patterns**
 	* **Articles/Blogposts/Writeups**
 	* **Talks/Presentations/Videos**
-	* [The Death Star Design Pattern](https://kkovacs.eu/the-death-star-design-pattern)
-	* [Loop Patterns](https://users.cs.duke.edu/~ola/patterns/plopd/loops.html#loop-and-a-half)
-* **Development Lifecycle/Things to Read While Still in The Design/Early Development Stages**
-	* **Articles/Blogposts/Writeups**
-		* [OWASP Proactive Controls](https://www.owasp.org/index.php/OWASP_Proactive_Controls?refresh=123#tab=OWASP_Proactive_Controls_2016)
-			* The OWASP Top Ten Proactive Controls 2016 is a list of security concepts that should be included in every software development project. They are ordered by order of importance, with control number 1 being the most important.
-		* [OWASP Application Security Verification Standard](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
-	* **Talks/Presentations/Videos**
-	* **Tools**
+	* **Papers**
+		* [The Death Star Design Pattern](https://kkovacs.eu/the-death-star-design-pattern)
+		* [Loop Patterns](https://users.cs.duke.edu/~ola/patterns/plopd/loops.html#loop-and-a-half)
 * **Documentation**
 * **Methodology**
 	* [OWASP security Knowledge Framework](https://owasp.org/www-project-security-knowledge-framework/)
@@ -234,6 +229,7 @@
 * **Metrics/Measurements**
 	* [OWASP Security Assurance Maturity Model (SAMM)](https://owasp.org/www-project-samm/)
 		* Our mission is to provide an effective and measurable way for all types of organizations to analyze and improve their software security posture. We want to raise awareness and educate organizations on how to design, develop, and deploy secure software through our self-assessment model. SAMM supports the complete software lifecycle and is technology and process agnostic. We built SAMM to be evolutive and risk-driven in nature, as there is no single recipe that works for all organizations.
+* **Password Storage/Hashing**
 * **Secrets Management**
 	* **Articles/Blogposts/Writeups**
 		* [Infrastructure Secret Management Software Overview](https://gist.github.com/maxvt/bb49a6c7243163b8120625fc8ae3f3cd)
@@ -248,18 +244,25 @@
 		* This guide is a collection of the most common vulnerabilities found in iOS applications. The focus is on vulnerabilities in the applications’ code and only marginally covers general iOS system security, Darwin security, C/ObjC/C++ memory safety, or high-level application security. Nevertheless, hopefully the guide can serve as training material to iOS app developers that want to make sure that they ship a more secure app. Also, iOS security reviewers can use it as a reference during assessments.
 	* [OWASP Secure Coding Practices-Quick Reference Guide](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/migrated_content)
 		* The Secure Coding Practices Quick Reference Guide is a technology agnostic set of general software security coding practices, in a comprehensive checklist format, that can be integrated into the development lifecycle. At only 17 pages long, it is easy to read and digest. The focus is on secure coding requirements, rather then on vulnerabilities and exploits. It includes an introduction to Software Security Principles and a glossary of key terms. It is designed to serve as a secure coding kick-start tool and easy reference, to help development teams quickly understand secure coding practices.
-* **Secure Development Life Cycle(SDLC/SDL)**
+* **Secure/Software/Systems Development Life Cycle(SDLC/SDL)**<a name="sdlc"></a>
+	* **101**
+		* [Systems development life cycle - Wikipedia](https://en.wikipedia.org/wiki/Systems_development_life_cycle)
+		* [Microsoft Security Development Lifecycle](https://www.microsoft.com/en-us/securityengineering/sdl)
+		* [Microsoft SDL Practices](https://www.microsoft.com/en-us/securityengineering/sdl/practices)
+		* [SDLC Overview - tutorialspoint](https://www.tutorialspoint.com/sdlc/sdlc_overview.htm)
+		* [The SDLC: 7 phases, popular models, benefits & more - Dave Swersky(2019)](https://raygun.com/blog/software-development-life-cycle/)
 	* **Articles/Blogposts/Writeups**
 		* [Moving Fast and Securing Things: The SDL at Slack and goSDL - Max Feldman(2018)](https://slack.engineering/moving-fast-and-securing-things-540e6c5ae58a)
 		* [The Security Development Lifecycle(free ebook) - Microsoft](https://docs.microsoft.com/en-us/archive/blogs/microsoft_press/free-ebook-the-security-development-lifecycle)
+		* [OWASP Proactive Controls](https://www.owasp.org/index.php/OWASP_Proactive_Controls?refresh=123#tab=OWASP_Proactive_Controls_2016)
+			* The OWASP Top Ten Proactive Controls 2016 is a list of security concepts that should be included in every software development project. They are ordered by order of importance, with control number 1 being the most important.
+		* [OWASP Application Security Verification Standard](https://www.owasp.org/index.php/Category:OWASP_Application_Security_Verification_Standard_Project)
 	* **Talks/Presentations/Videos**
 		* [Moving Fast and Securing Things - Max Feldman(AppSecUSA 2017)](https://www.youtube.com/watch?v=feRypwVqcuQ)
 			* In this presentation we will discuss both our Secure Development Lifecycle (SDL) process and tooling, as well as view metrics and provide analysis of how the process has worked thus far. We intend to open-source our tooling as a supplement to this presentation, and offer advice for others wishing to attempt similar implementations. We'll discuss our deployment of a flexible framework for security reviews, including a lightweight self-service assessment tool, a checklist generator, and most importantly a chat-based process that meets people where they are already working. We’ll show how it’s possible to encourage a security mindset among developers, while avoiding an adversarial relationship. By tracking data from multiple sources, we can also view the quantified success of such an approach and show how it can be applied in other organizations.
 		* [Practical tips for defending web applications - Zane Lackey - devops Amsterdam 2017](https://www.youtube.com/watch?v=Mae2iXUA7a4)
 			* [Slides](https://www.blackhat.com/docs/us-17/thursday/us-17-Lackey-Practical%20Tips-for-Defending-Web-Applications-in-the-Age-of-DevOps.pdf)
-* **Secure File Upload**
-	* [8 Basic Rules to Implement Secure File Uploads - SANS](https://software-security.sans.org/blog/2009/12/28/8-basic-rules-to-implement-secure-file-uploads/)
-* **Software Testing**
+* **Software Testing**<a name="stest"></a>
 	* **Articles/Blogposts/Writeups**
 		* [A kernel unit-testing framework - Jonathan Corbet](https://lwn.net/Articles/780985/)
 		* [How is the Linux kernel tested? - StackOverflow](https://stackoverflow.com/questions/3177338/how-is-the-linux-kernel-tested)
@@ -269,23 +272,25 @@
 			* “I think we need a penetration test” This is one of the most misunderstood phrases in the security community. It can mean anything from “Someone should run a vulnerability scan against a box” to “I’d like nation-state capable actors to tell me everything that wrong with my enterprise” and everything in between. Security testing is a complex subject and it can be hard to understand what the best type of testing is for a given situation. This talk will examine the breadth of software security testing. From early phase unit and abuse testing to late phase penetration testing, this talk will provide details on the different tests that can be performed, what to expect from the testing, and how to select the right tests for your situation. Test coverage, work effort, attack simulation, and reporting results will be discussed. Also, this talk will provide a process for detailed product assessments, i.e.: if you’ve got a specific product you’re trying to break, how do you approach assessing the product in a way that maximizes your chance of breaking in as well as maximizing the coverage you will get from your testing activity.
 		* [Big picture software testing unit testing, Lean Startup, and everything in between PyCon 2017](https://www.youtube.com/watch?v=Vaq_e7qUA-4&feature=youtu.be&t=63s)
 			* There are many ways you can test your software: unit testing, manual testing, end-to-end testing, and so forth. Take a step back and you'll discover even more form of testing, many of them very different in their goals: A/B testing, say, where you see which of two versions of your website results in more signups or ad clicks. How do these forms of testing differ, how do they relate to each other? How do you choose which kind of testing to pursue, given limited time and resources? How do you deal with strongly held yet opposite views arguing either that a particular kind of testing is essential or that it's a waste time? This talk will provide you with a model, a way to organize all forms of testing and understand what exactly they provide, and why. Once you understand the model you will be able to choose the right form of testing for *your* situation and goals.
-		* [When to Test and How to Test It - Bruce Potter - Derbycon7](https://www.youtube.com/watch?v=Ej97WyEMRkI)
-			* “I think we need a penetration test” This is one of the most misunderstood phrases in the security community. It can mean anything from “Someone should run a vulnerability scan against a box” to “I’d like nation-state capable actors to tell me everything that wrong with my enterprise” and everything in between. Security testing is a complex subject and it can be hard to understand what the best type of testing is for a given situation. This talk will examine the breadth of software security testing. From early phase unit and abuse testing to late phase penetration testing, this talk will provide details on the different tests that can be performed, what to expect from the testing, and how to select the right tests for your situation. Test coverage, work effort, attack simulation, and reporting results will be discussed. Also, this talk will provide a process for detailed product assessments, i.e.: if you’ve got a specific product you’re trying to break, how do you approach assessing the product in a way that maximizes your chance of breaking in as well as maximizing the coverage you will get from your testing activity.
 		* [Robots with Pentest Recipes - Abhay Bhargav(OWASP AppSec Cali 2018)](https://www.youtube.com/watch?v=EC1X4bqAqCk)
 			* Over the last few months, my team and I have leveraged the all-powerful Robot Framework to integrate various security testing tools, including OWASP ZAP, Nmap, Nessus. Robot Framework is a generic test automation framework for acceptance testing and acceptance test-driven development (ATDD). It provides a very extensible test-driven syntax that extend test libraries implemented in Python or Java. We have developed Open Source libraries for popular tools like OWASP ZAP, Nmap, Nessus and some recon tools, which can be invoked with existing libraries like Selenium, etc to perform completely automated, parameterized, security tests across the continuous delivery pipeline with easy-to-write, almost trivial test syntax like `run nmap scan` OR `start zap active scan` thereby making it easier for engineering teams to be able to create “recipes” of security tests that they want to run, integrate with functional test automation to run anything from a baseline scan to a complete parameterized security test of the application on various environments. In fact, we have used these libraries to run a “mostly automated pentest as a recipe” replete with recon, mapping, vulnerability discovery phases with evidences and reporting built-in.
-* **Supply-Chain Management**
+* **Supply-Chain Management**<a name="supply"></a>
 	* **Articles/Blogposts/Writeups**
 		* [Want to take over the Java ecosystem? All you need is a MITM! - Jonathan Leitschuh(2019)](https://medium.com/bugbountywriteup/want-to-take-over-the-java-ecosystem-all-you-need-is-a-mitm-1fc329d898fb)
 		* [How To Take Over The Computer Of any Java (or Clojure or Scala) Developer - max.computer(2014)](https://max.computer/blog/how-to-take-over-the-computer-of-any-java-or-clojure-or-scala-developer/)
 	* **Talks/Presentations/Videos**	
 		* [Securing the software supply chain together - Maya Kaczorowski(GitHub Satellite 2020)](https://www.youtube.com/watch?v=XwKTUji5HtY&feature=emb_title)
 		* Writing secure code is hard in its own right, but understanding what vulnerabilities exist in your code— and how to keep up to date with the latest patches—is daunting for even the most sophisticated software teams. In this session, you'll learn how GitHub is making it easier to secure your software supply chain, and how to get started in protecting your code and its dependencies.
+		* [The path to code provenance at uber - Matt Finifter, Debosmit Ray, Tony Ngo(2019)](https://www.youtube.com/watch?v=vb08Jkp1f-M)
+			* We will share some specific examples and use cases from our Uber’s product security team that can be applied in other environments including: - deploying hooks for developers to sign commits (and enforcement of signatures before building container images); - making security a first-class citizen in our build pipelines to harden and sign builds (and integrations with our container orchestration framework to ensure that our build/image artifacts have been appropriately hardened and vetted to be run within our infrastructure); - improvements to our container runtime security, in order to efficiently detect and block any unauthorized code (including runtime anomaly detection and a process for remediation of newly-blacklisted packages); - deploying security policies around third-party dependencies (and how we hook into the SDLC in order to warn and enforce when something is out of policy compliance)
 	* **Tools**
 		* [in-toto](https://github.com/in-toto/in-toto)
 			* in-toto provides a framework to protect the integrity of the software supply chain. It does so by verifying that each task in the chain is carried out as planned, by authorized personnel only, and that the product is not tampered with in transit.
-* **Talks & Presentations**
-	* [Securing without Slowing DevOps - Wolfgang Goerlich - Circle City Con 5.0](https://www.youtube.com/watch?v=y8MopriNaMo&feature=youtu.be)
-* **Threat Modeling**
+		* [LibScout](https://github.com/reddr/LibScout)
+			* LibScout is a light-weight and effective static analysis tool to detect third-party libraries in Android/Java apps. The detection is resilient against common bytecode obfuscation techniques such as identifier renaming or code-based obfuscations such as reflection-based API hiding or control-flow randomization. Further, LibScout is capable of pinpointing exact library versions including versions that contain severe bugs or security issues.
+		* [third-party-lib-analyzer](https://github.com/jtmelton/third-party-lib-analyzer)
+			* A tool for analyzing third party libraries and how they connect to user classes. TPLA constructs a graph database of all dependencies, user classes, and relationships between all classes. It also allows some built in queries to be executed with reports generated based on the results.
+* **Threat Modeling**<a name="threatm"></a>
 	* See [Threat Modeling](./threatmodel.md)
 	* **Articles/Blogposts/Writeups**
 		* [Abuser Stories: A Sneak Peak For Scrum Teams - Abhay Bhargav(2018)](https://www.we45.com/blog/abuser-stories-a-sneak-peak-for-scrum-teams)
@@ -323,12 +328,28 @@
 			* goSDL is a web application tool that serves as a self-service entry point for following a Security Development Lifecycle checklist in a software development project. This tool collects relevant information about the feature, determines the risk rating, and generates the appropriate security requirements. The tool tailors the checklist to the developers’ specific needs, without providing unnecessary unrelated security requirements. Security experts can establish custom security guidance and requirements as checklist items for all developers. This checklist is used as a guide and reference for building secure software. This encourages a security mindset among developers when working on a project and can be used to easily track the completion of security goals for that project.
 		* [Mozilla Rapid Risk Assessment](https://infosec.mozilla.org/guidelines/risk/rapid_risk_assessment)
 			* A typical Rapid Risk Analysis/Assessment (RRA) takes about 30 minutes. It is not a security review, a full threat-model, a vulnerability assessment, or an audit. These types of activities may however follow an RRA if deemed appropriate or necessary. The main objective of the RRA is to understand the value and impact of a service to the reputation, finances, productivity of the project or business. It is based on the data processed, stored or simply accessible by services. Note that the RRA does not focus on enumerating and analyzing security controls. The RRA process is intended for analyzing and assessing services, not processes or individual controls.
-* **Specific Vulnerabilitiy Prevention**
+* **Specific Vulnerabilitiy Mitigation/Prevention**<a name="specvuln"></a>
+	* **Comparison Operations**
+		* **Articles/Blogposts/Writeups**
+			* [The Evil within the Comparison Functions - Andrey Karpov](https://www.viva64.com/en/b/0509/)
+			* [Inverting Your Assumptions: A Guide To JIT Comparisons - Jasiel Spelman(2018)](https://www.zerodayinitiative.com/blog/2018/4/12/inverting-your-assumptions-a-guide-to-jit-comparisons)
+	* **Cryptogrpaphic Issues**
+		* **Articles/Blogposts/Writeups**
+			* [Top 10 Developer Crypto Mistakes - crazycontini(2017)](https://littlemaninmyhead.wordpress.com/2017/04/22/top-10-developer-crypto-mistakes/)
+	* **Input Validation**
+		* **Articles/Blogposts/Writeups**
+			* [Validating input - David Wheeler(2003)](https://www.ibm.com/developerworks/library/l-sp2/index.html)
 	* **Race Conditions/ToCToU Bugs**
-		* [Exploiting and Protecting Against Race Conditions - Jack Cable(2017)](https://lightningsecurity.io/blog/race-conditions/)
+		* **Articles/Blogposts/Writeups**
+			* [Exploiting and Protecting Against Race Conditions - Jack Cable(2017)](https://lightningsecurity.io/blog/race-conditions/)
+	* **Secure File Upload**<a name="sfu"></a>
+		* **Articles/Blogposts/Writeups**
+			* [8 Basic Rules to Implement Secure File Uploads - SANS](https://software-security.sans.org/blog/2009/12/28/8-basic-rules-to-implement-secure-file-uploads/)
 	* **SQLi**
-		* [Bobby Tables: A guide to preventing SQL injection](https://bobby-tables.com/)
-		* [What ORMs have taught me: just learn SQL - wozniak.ca(2014)](https://wozniak.ca/blog/2014/08/03/What-ORMs-have-taught-me-just-learn-SQL/)
+		* **Articles/Blogposts/Writeups**
+			* [Bobby Tables: A guide to preventing SQL injection](https://bobby-tables.com/)
+			* [SQL Injection Prevention Cheat Sheet - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
+			* [What ORMs have taught me: just learn SQL - wozniak.ca(2014)](https://wozniak.ca/blog/2014/08/03/What-ORMs-have-taught-me-just-learn-SQL/)
 * [Six Stages of debugging](http://plasmasturm.org/log/6debug/)
 	```
 		* 1. That can’t happen.
@@ -342,32 +363,7 @@
 
 
 
-
-### Code Repos
-* **Git-related**
-	* **Articles/BLogposts/Writeups**
-		* [Removing sensitive data from a repository - github](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
-		* [Exposing secrets on GitHub: What to do after leaking credentials and API keys - Mackenzie Jackson](https://blog.gitguardian.com/leaking-secrets-on-github-what-to-do/)
-		* [GitHub for Bug Bounty Hunters - Ed Overflow](https://edoverflow.com/2017/github-for-bugbountyhunters/)
-		* [Credential mitigation in large-scale organizations - Tobias Gabriel, Nikolas Kratzschmar(GitHub Satellite 2020)](https://www.youtube.com/watch?v=kCo0OJZHRX8)
-		* [“CI Knew There Would Be Bugs Here” — Exploring Continuous Integration Services as a Bug Bounty Hunter - Ed Overflow](https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here/)
-	* **Tools**
-		* [git-secrets](https://github.com/awslabs/git-secrets)
-			* git-secrets scans commits, commit messages, and --no-ff merges to prevent adding secrets into your git repositories. If a commit, commit message, or any commit in a --no-ff merge history matches one of your configured prohibited regular expression patterns, then the commit is rejected.
-		* [gitignore](https://github.com/github/gitignore)
-			* This is GitHub’s collection of .gitignore file templates. We use this list to populate the .gitignore template choosers available in the GitHub.com interface when creating new repositories and files.
-		* [RepoSsessed](https://github.com/IOActive/RepoSsessed)
-			* RepoSsessed is a project designed to parse public source code repositories and find various types of vulnerabilities. The current focus is on finding secrets, but see the Next Steps section to see what is being added.
-		* [gitleaks](https://github.com/zricethezav/gitleaks)
-			* Gitleaks is a SAST tool for detecting hardcoded secrets like passwords, api keys, and tokens in git repos. Gitleaks aims to be the easy-to-use, all-in-one solution for finding secrets, past or present, in your code.
-		* [tartufo](https://github.com/godaddy/tartufo)
-			* tartufo searches through git repositories for secrets, digging deep into commit history and branches. This is effective at finding secrets accidentally committed. tartufo also can be used by git pre-commit scripts to screen changes for secrets before they are committed to the repository.
-		* [git-crypt - transparent file encryption in git](https://www.agwa.name/projects/git-crypt/)
-			* git-crypt enables transparent encryption and decryption of files in a git repository. Files which you choose to protect are encrypted when committed, and decrypted when checked out. git-crypt lets you freely share a repository containing a mix of public and private content. git-crypt gracefully degrades, so developers without the secret key can still clone and commit to a repository with encrypted files. This lets you store your secret material (such as keys or passwords) in the same repository as your code, without requiring you to lock down your entire repository.
-
-
-
------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 ### <a name="sca">Source Code Analysis</a>
 * **Articles/Blogposts/Writeups**
 	* [What I learned from doing 1000 code reviews](https://hackernoon.com/what-i-learned-from-doing-1000-code-reviews-fe28d4d11c71)
@@ -383,23 +379,30 @@
 	* [Code Insecurity or Code in Security - Mano 'dash4rk' Paul](http://www.irongeek.com/i.php?page=videos/derbycon4/t205-code-insecurity-or-code-in-security-mano-dash4rk-paul)
 		* Attendees of this talk will benefit from learning about what constitutes insecure code and the associated attacks that stem from such code. Applicable attacks ranging from injection to reversing will be demonstrated to reinforce contents of this talk. This way, the attendee would not only be taught about “What not to do?” but also, “Why this should not do, what they ought not to do?”. Finally, attendees will also be introduced to secure development processes such as protection needs elicitation, threat modeling, code review and analysis and secure deployment, to illustrate that while writing secure code is one important aspect of software security, there is more to securing applications, than what meets the eye. Come for a fun filled, interactive session and your chance to win one of the personalized and autographed copies of the speaker’s renowned book – The 7 qualities of highly secure software.
 	* [Seth & Ken’s Excellent Adventures in Secure Code Review - thesecuredeveloper.com](https://www.thesecuredeveloper.com/post/seth-ken-s-excellent-adventures-in-secure-code-review)
-* **Non-Specific**
+* **Non-Specific**<a name="nonspec"></a>
 	* **Tools**
-		* [cloc](https://github.com/AlDanial/cloc)
-			* cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
-		* [Semantic](https://github.com/github/semantic/)
-			* `semantic` is a Haskell library and command line tool for parsing, analyzing, and comparing source code.
-		* [Semgrep](https://github.com/returntocorp/semgrep)
-			* semgrep is a tool for easily detecting and preventing bugs and anti-patterns in your codebase. It combines the convenience of grep with the correctness of syntactical and semantic search. Developers, DevOps engineers, and security engineers use semgrep to write code with confidence.
-		* [PMD](http://pmd.sourceforge.net/)
-			* PMD is a source code analyzer. It finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth. It supports Java, JavaScript, PLSQL, Apache Velocity, XML, XSL. Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code in Java, C, C++, C#, PHP, Ruby, Fortran, JavaScript, PLSQL, Apache Velocity, Ruby, Scala, Objective C, Matlab, Python, Go. 
-		* [SourceTrail](https://www.sourcetrail.com/)
-			* A cross-platform source explorer for C/C++ and Java
-		* [Infer](https://github.com/facebook/infer)
-			* [Infer](http://fbinfer.com/) is a static analysis tool for Java, Objective-C and C, written in OCaml.
-		* [VCG](https://github.com/nccgroup/VCG)
-			* VCG is an automated code security review tool that handles C/C++, Java, C#, VB and PL/SQL.
+		* **Analyzer**
+			* [Semgrep](https://github.com/returntocorp/semgrep)
+				* semgrep is a tool for easily detecting and preventing bugs and anti-patterns in your codebase. It combines the convenience of grep with the correctness of syntactical and semantic search. Developers, DevOps engineers, and security engineers use semgrep to write code with confidence.
+			* [PMD](http://pmd.sourceforge.net/)
+				* PMD is a source code analyzer. It finds common programming flaws like unused variables, empty catch blocks, unnecessary object creation, and so forth. It supports Java, JavaScript, PLSQL, Apache Velocity, XML, XSL. Additionally it includes CPD, the copy-paste-detector. CPD finds duplicated code in Java, C, C++, C#, PHP, Ruby, Fortran, JavaScript, PLSQL, Apache Velocity, Ruby, Scala, Objective C, Matlab, Python, Go. 
+			* [SourceTrail](https://www.sourcetrail.com/)
+				* A cross-platform source explorer for C/C++ and Java
+			* [Infer](https://github.com/facebook/infer)
+				* [Infer](http://fbinfer.com/) is a static analysis tool for Java, Objective-C and C, written in OCaml.
+			* [VCG](https://github.com/nccgroup/VCG)
+				* VCG is an automated code security review tool that handles C/C++, Java, C#, VB and PL/SQL.
+		* **IDE-Related**
+			* [DevSkim](https://github.com/Microsoft/DevSkim)
+				* DevSkim is a framework of IDE extensions and language analyzers that provide inline security analysis in the dev environment as the developer writes code. It has a flexible rule model that supports multiple programming languages. The goal is to notify the developer as they are introducing a security vulnerability in order to fix the issue at the point of introduction, and to help build awareness for the developer.
+		* **Libraries**
+			* [Semantic](https://github.com/github/semantic/)
+				* `semantic` is a Haskell library and command line tool for parsing, analyzing, and comparing source code.
+		* **Miscellaneous**
+			* [cloc](https://github.com/AlDanial/cloc)
+				* cloc counts blank lines, comment lines, and physical lines of source code in many programming languages.
 	* **Grep-Based**
+		* [Don't Underestimate Grep Based Code Scanning - Crazy Contini](https://littlemaninmyhead.wordpress.com/2019/08/04/dont-underestimate-grep-based-code-scanning/)
 		* [Graudit](https://github.com/wireghoul/graudit)
 			* Graudit is a simple script and signature sets that allows you to find potential  security flaws in source code using the GNU utility grep. It's comparable to  other static analysis applications like RATS, SWAAT and flaw-finder while  keeping the technical requirements to a minimum and being very flexible.
 		* [CRASS](https://github.com/floyd-fuh/crass)
@@ -407,7 +410,7 @@
 		* [ripgrep](https://github.com/burntsushi/ripgrep)
 			* ripgrep is a line-oriented search tool that recursively searches your current directory for a regex pattern. By default, ripgrep will respect your .gitignore and automatically skip hidden files/directories and binary files. ripgrep has first class support on Windows, macOS and Linux, with binary downloads available for every release. ripgrep is similar to other popular search tools like The Silver Searcher, ack and grep.
 			* [ripgrep is faster than {grep, ag, git grep, ucg, pt, sift} - Andrew Gallant(2016)](https://blog.burntsushi.net/ripgrep/)
-* **Specific Languages**
+* **Specific Languages**<a name="spec"></a>
 	* **`*`sh**
 		**Bash**
 			* [Shellcheck](https://github.com/koalaman/shellcheck)
@@ -476,6 +479,8 @@
 				* Static security code scanner (SAST) for Node.js applications.
 			* [ESLint](https://github.com/eslint/eslint)
 				* ESLint is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+			* [eslint-plugin-no-unsanitized](https://github.com/mozilla/eslint-plugin-no-unsanitized)
+				* Custom ESLint rule to disallows unsafe innerHTML, outerHTML, insertAdjacentHTML and alike
 			* [npm-audit](https://docs.npmjs.com/cli/audit)
 				* [Auditing package dependencies for security vulnerabilities](https://docs.npmjs.com/auditing-package-dependencies-for-security-vulnerabilities)
 			* [retire.js](https://github.com/retirejs/retire.js/)
@@ -543,7 +548,7 @@
 		* **Tooling**
 			* [cargo-audit](https://github.com/RustSec/cargo-audit)
 				* Audit Cargo.lock files for crates with security vulnerabilities
-* **Infrastructure-as-Code Scanners & Linters**
+* **Infrastructure-as-Code Scanners & Linters**<a name="iaac"></a>
 	* **Non-Specific**
 		* [conftest](https://github.com/open-policy-agent/conftest)
 			* Conftest helps you write tests against structured configuration data. Using Conftest you can write tests for your Kubernetes configuration, Tekton pipeline definitions, Terraform code, Serverless configs or any other config files.
@@ -572,10 +577,52 @@
 
 
 
---------------------------------------------------------------------------------
-### Application Security Pipeline Scanning<a name="appsecpipeline"></a>
-* **Continous Integration**
-* **Continous Deployment**
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+### Application Security Pipeline <a name="appsecpipeline"></a>
+* **General**
+	* **Articles/Blogposts/Writeups**
+		* [Scale your security with DevSecOps: 4 valuable mindsets and principles - Clint Gibler](https://techbeacon.com/devops/how-scale-security-devsecops-4-valuable-mindsets-principles)
+		* [Lessons Learned from the DevSecOps Trenches - OWASP AppSec Cali 2019](https://tldrsec.com/blog/appsec-cali-2019-lessons-learned-from-the-devsecops-trenches/)
+		* [Achieving DevSecOps with Open-Source Tools - notsosecure.com(2019)](https://www.notsosecure.com/achieving-devsecops-with-open-source-tools/)
+	* **Talks/Presentations/Videos**
+		* [How to 10X Your Company’s Security (Without a Series D) - Clint Gibler(BSidesSF2020)](https://www.youtube.com/watch?v=tWA_EBNsQH8&feature=emb_title)
+			* [Slides](https://docs.google.com/presentation/d/1lfEvXtw5RTj3JmXwSQDXy8or87_BHrFbo1ZtQQlHbq0/mobilepresent?slide=id.g6555b225cd_0_1069)
+			* I’ll summarize and distill the insights, unique tips and tricks, and actionable lessons learned from a vast number of DevSecOps/modern AppSec talks and blog posts, saving attendees 100s of hours. I’ll show where we’ve been, where we’re going, and provide a lengthy bibliography for further review.
+		* [DevSecOps : What, Why and How - Anant Shrivastava(BHUSA 2019)](https://www.youtube.com/watch?v=DzX9Vi_UQ8o)
+			* [Slides](https://i.blackhat.com/USA-19/Thursday/us-19-Shrivastava-DevSecOps-What-Why-And-How.pdf)
+			* In this talk, we shall focus on how a DevOps pipeline can easily be metamorphosed into a DevSecOps and the benefits which can be achieved with this transformation. The talk (assisted with various demos) will focus on developing a DevSecOps pipeline using free/open-source tools in various deployment platforms, i.e. on-premise, cloud native and hybrid scenarios.
+* **Continous Integration**<a name="ci"></a>
+	* **Alerting**
+	* **Git-related**
+		* [githooks](https://githooks.com/)
+			* Git hooks are scripts that Git executes before or after events such as: commit, push, and receive. Git hooks are a built-in feature - no need to download anything. Git hooks are run locally.
+	* **Integration**
+		* **Articles/Blogposts/Writeups**
+		* **Talks/Presentations/Videos**
+		* **Tools**
+			* [StackStorm](https://github.com/StackStorm/st2)
+				* StackStorm (aka "IFTTT for Ops") is event-driven automation for auto-remediation, security responses, troubleshooting, deployments, and more. Includes rules engine, workflow, 160 integration packs with 6000+ actions (see https://exchange.stackstorm.org) and ChatOps.
+	* **Testing**
+	* **Policy as Code**
+		* **Articles/Blogposts/Writeups**
+		* **Talks/Presentations/Videos**
+			* [Security & Policy Configurations for Infrastructure as Code with Rosemary Wang - OWASP DevSlop - Tanya Janca, Nicole Becher, Rosemary Wang(2020)](https://www.youtube.com/watch?v=KOTXCIN0yE0&feature=share)
+				* How can we enforce security and policy on our infrastructure by shifting configuration testing left? Reactively enforcing security does not scale for infrastructure as code. We explored techniques for proactively checking the security and policy of our infrastructure as code, using examples featuring Open Policy Agent and Terraform.
+		* **Tools**
+			* [DevSec Hardening Framework](https://github.com/dev-sec)
+			* [serverspec](https://github.com/mizzy/serverspec)
+				* RSpec tests for your servers configured by CFEngine, Puppet, Chef, Ansible, Itamae or anything else even by hand
+			* [Chef InSpec](https://github.com/inspec/inspec)
+				* Chef InSpec is an open-source testing framework for infrastructure with a human- and machine-readable language for specifying compliance, security and policy requirements.
+			* [Test-kitchen](https://github.com/test-kitchen/test-kitchen)
+				* Test Kitchen is an integration tool for developing and testing infrastructure code and software on isolated target platforms.
+			* [inspec-iggy](https://github.com/mattray/inspec-iggy)
+				* InSpec-Iggy (InSpec Generate -> "IG" -> "Iggy") is an InSpec plugin for generating compliance controls and profiles from Terraform tfstate files and AWS CloudFormation templates. Iggy generates InSpec controls by mapping Terraform and CloudFormation resources to InSpec resources and exports a profile that may be used from the inspec CLI and report to Chef Automate.
+* **Continous Deployment**<a name="cd"></a>
 	* **Articles/Blogposts/Writeups**
 		* [Security-focused CI/CD Pipeline - alxk(2018)](https://alex.kaskaso.li/post/effective-security-pipeline)
 			* In this post we’ll walk through the main components of a DevSecOps Continuous Integration pipeline. This will allow us to catch security issues both during development and on a continuous basis in production.
@@ -588,11 +635,8 @@
 		* [Time-Based Release Management in Free and Open Source (FOSS) Projects - Martin Michlmayr, Brian Fitzgerald(2012)](http://www.cyrius.com/publications/michlmayr_fitzgerald-time_based_release_management.pdf)
 			* As the Free and Open Source (FOSS) concept has matured, its commercial significance has also increased, and issues such as quality and sustainability have moved to the fore. In this study, the authors focus on timebased release management in large volunteerFOSS projects, and reveal howthey address quality and sustainability issues. They discuss the differences between release management in the traditional software context and contrast it with FOSS settings. Based on detailed case studies of a number of prominent FOSS projects, they describe the move to time-based release management and identify the factors and criteria necessary for a successful transition. The authors also consider the implications for software development more generally in the current dynamic Internet-enabled environment.
 	* **Tooling**
-* **CI/CD Scanning Tooling/Approaches**
+* **CI/CD Scanning Tooling/Approaches**<a name="cdscan"></a>
 	* **Articles/Blogposts/Writeups**
-		* https://medium.com/dowjones/zero-to-hero-continuous-security-with-reapsaw-656bab07566c
-		* https://www.cloudsecuritypodcast.tv/listen-to-the-episodes/jay-kelath
-		* https://github.com/dowjones/reapsaw
 	* **Homegrown Implementing Scanner Tooling**
 		* **Talks/Presentations/Videos**
 			* [Scaling Security Assessment at the Speed of DevOps - Blake Hitchcock, Brian Manifold, Roger Seagle(OWASP AppSec USA2016 DC)](https://www.youtube.com/watch?v=hEHCB7iWUzk&index=24&list=PLpr-xdpM8wG8DPozMmcbwBjFn15RtC75N)
@@ -610,21 +654,58 @@
 				* framework written in Go for building your own Web Application Scanner.
 			* [Predator](https://github.com/s0md3v/Predator)
 				* Predator is a prototype web application designed to demonstrate anti-crawling, anti-automation & bot detection techniques. It can be used a honeypot, anti-crawling system or a false positive test bed for vulnerability scanners.
+			* [Reapsaw](https://github.com/dowjones/reapsaw)
+				* Reapsaw is an orchestration platform for various security tools (static and run-time) which helps in identifying different types of security bugs during the process (open source vulnerabilities, static code security bugs, insecure functions, secrets in code, authentication bypass etc.). It can be easily integrated into already-established process and tools in an organizations SDLC, bug trackers, source repositories and other testing tools. Being CI/CD friendly,once enabled within the CI pipeline, reapsaw will help in identifying very high fidelity and low false positive bugs into developers backlog. This will enable in quick feedback and provide developers friendly recommendations on fixes.
+				* [Zero to Hero: Continuous Security with Reapsaw - Pranav Patel(2019)](https://medium.com/dowjones/zero-to-hero-continuous-security-with-reapsaw-656bab07566c)
 			* [OWASP Benchmark](https://github.com/OWASP/Benchmark)
 				* The OWASP Benchmark Project is a Java test suite designed to verify the speed and accuracy of vulnerability detection tools. It is a fully runnable open source web application that can be analyzed by any type of Application Security Testing (AST) tool, including SAST, DAST (like OWASP ZAP), and IAST tools. The intent is that all the vulnerabilities deliberately included in and scored by the Benchmark are actually exploitable so its a fair test for any kind of application vulnerability detection tool. The Benchmark also includes scorecard generators for numerous open source and commercial AST tools, and the set of supported tools is growing all the time.
-	* **(DIY) Building an AppSec Pipeline**
-		* **Articles/Blogposts/Writeups**
-		* **Talks/Presentations/Videos**
-			* [Building a Secure DevOps Pipeline - Matt Tesauro, Aaron Weaver(OWASP AppSecUSA 2017)](https://www.youtube.com/watch?v=IAzPKzwY-ks)
-				* Is software development outpacing your ability to secure your company’s portfolio of apps?  You don’t have to buy into Agile, DevOps or CI/CD to realize the business wants to move faster.  And it's not like you didn’t already have more than enough to do. This talk will cover how to take the lessons learned from forward thinking software development and show you how they have been applied across several business.  This isn’t a theoretical talk.  It covers the results of  successfully applying these strategies to AppSec across multiple companies ranging from 4,000 to 40,000+ employees.  Yes, real stats on improvements seen will be provided. By changing focus from a point in time security testing and assessments to automation, continual health checks and event-based security, your AppSec program can start to keep pace with the increasing speed of delivery your business is trying to obtain.  By embracing the same methodologies, you can turn Docker from a problem to how you horizontally scale your security work.  Don't swim against the current of DevOps, Agile software development and Continuous Delivery. Instead use those movements to speed your AppSec program to new levels.
-			* [`*`AST In CI/CD – how to make it WORK! - Ofer Maor(DevSecCon Singapore 2018)](https://www.youtube.com/watch?v=eY3RmQ_eNgA)
-				* SAST, IAST, DAST, MAST, `*`AST – There are plenty of technologies and ways to test your software, but how do we do that without slowing us down in a rapid development environment. In this talk we will give practical advice on how to integrate software security testing into your CI/CD and your development process so it works. The talk will review the pros and cons of each of the testing technologies, and how to adapt it to rapid development, and how to manage the balance between risk and speed to build a proper signoff process, so that real threats will become blockers, but other issues will be handled in a parallel slower cycle, without slowing down the main delivery.
-			* [Creating An AppSec Pipeline With Containers In A Week: How We Failed And Succeeded - Jeroen Willemsen(OWASP AppSecEU Belfast 2017)](https://www.youtube.com/watch?v=3PgWM8qwWas)
-				* Join us on our adventure of setting up a appsec pipeline with Docker containers. What did go wrong, how did we succeed? How do you fight false positives and how do you get the best out of the products out there without bothering the development teams too much.
-		* **Tooling**
-			* [Danger.JS](https://danger.systems/js/)
-				* Danger runs during your CI process, and gives teams the chance to automate common code review chores. This provides another logical step in your build, through this Danger can help lint your rote tasks in daily code review. You can use Danger to codify your teams norms. Leaving humans to think about harder problems. This happens by Danger leaving messages inside your PRs based on rules that you create with JavaScript or TypeScript. Over time, as rules are adhered to, the message is amended to reflect the current state of the code review.
-* **Static Analysis Approaches & Tooling**
+**(DIY) Building an AppSec Pipeline**<a name="cddiy"></a>
+	* **Articles/Blogposts/Writeups**
+	* **Talks/Presentations/Videos**
+		* [Building a Secure DevOps Pipeline - Matt Tesauro, Aaron Weaver(OWASP AppSecUSA 2017)](https://www.youtube.com/watch?v=IAzPKzwY-ks)
+			* Is software development outpacing your ability to secure your company’s portfolio of apps?  You don’t have to buy into Agile, DevOps or CI/CD to realize the business wants to move faster.  And it's not like you didn’t already have more than enough to do. This talk will cover how to take the lessons learned from forward thinking software development and show you how they have been applied across several business.  This isn’t a theoretical talk.  It covers the results of  successfully applying these strategies to AppSec across multiple companies ranging from 4,000 to 40,000+ employees.  Yes, real stats on improvements seen will be provided. By changing focus from a point in time security testing and assessments to automation, continual health checks and event-based security, your AppSec program can start to keep pace with the increasing speed of delivery your business is trying to obtain.  By embracing the same methodologies, you can turn Docker from a problem to how you horizontally scale your security work.  Don't swim against the current of DevOps, Agile software development and Continuous Delivery. Instead use those movements to speed your AppSec program to new levels.
+		* [`*`AST In CI/CD – how to make it WORK! - Ofer Maor(DevSecCon Singapore 2018)](https://www.youtube.com/watch?v=eY3RmQ_eNgA)
+			* SAST, IAST, DAST, MAST, `*`AST – There are plenty of technologies and ways to test your software, but how do we do that without slowing us down in a rapid development environment. In this talk we will give practical advice on how to integrate software security testing into your CI/CD and your development process so it works. The talk will review the pros and cons of each of the testing technologies, and how to adapt it to rapid development, and how to manage the balance between risk and speed to build a proper signoff process, so that real threats will become blockers, but other issues will be handled in a parallel slower cycle, without slowing down the main delivery.
+		* [Creating An AppSec Pipeline With Containers In A Week: How We Failed And Succeeded - Jeroen Willemsen(OWASP AppSecEU Belfast 2017)](https://www.youtube.com/watch?v=3PgWM8qwWas)
+			* Join us on our adventure of setting up a appsec pipeline with Docker containers. What did go wrong, how did we succeed? How do you fight false positives and how do you get the best out of the products out there without bothering the development teams too much.
+		* [Securing without Slowing DevOps - Wolfgang Goerlich - Circle City Con 5.0](https://www.youtube.com/watch?v=y8MopriNaMo&feature=youtu.be)
+	* **Tooling**
+		* [pre-commit](https://pre-commit.com/)
+			* A framework for managing and maintaining multi-language pre-commit hooks.
+		* [Danger.JS](https://danger.systems/js/)
+			* Danger runs during your CI process, and gives teams the chance to automate common code review chores. This provides another logical step in your build, through this Danger can help lint your rote tasks in daily code review. You can use Danger to codify your teams norms. Leaving humans to think about harder problems. This happens by Danger leaving messages inside your PRs based on rules that you create with JavaScript or TypeScript. Over time, as rules are adhered to, the message is amended to reflect the current state of the code review.
+	* **Encrypting Commits**
+		* [git-crypt - transparent file encryption in git](https://www.agwa.name/projects/git-crypt/)
+			* git-crypt enables transparent encryption and decryption of files in a git repository. Files which you choose to protect are encrypted when committed, and decrypted when checked out. git-crypt lets you freely share a repository containing a mix of public and private content. git-crypt gracefully degrades, so developers without the secret key can still clone and commit to a repository with encrypted files. This lets you store your secret material (such as keys or passwords) in the same repository as your code, without requiring you to lock down your entire repository.
+		* [git-secret](https://git-secret.io/)
+			* git-secret is a bash tool to store your private data inside a git repo. How’s that? Basically, it just encrypts, using gpg, the tracked files with the public keys of all the users that you trust. So everyone of them can decrypt these files using only their personal secret key. Why deal with all this private-public keys stuff? Well, to make it easier for everyone to manage access rights. There are no passwords that change. When someone is out - just delete their public key, reencrypt the files, and they won’t be able to decrypt secrets anymore.
+	* **Removing Secrets from Commits/Repo**
+		* **Articles/BLogposts/Writeups**
+			* [Removing sensitive data from a repository - github](https://help.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository)
+			* [Exposing secrets on GitHub: What to do after leaking credentials and API keys - Mackenzie Jackson](https://blog.gitguardian.com/leaking-secrets-on-github-what-to-do/)
+			* [GitHub for Bug Bounty Hunters - Ed Overflow](https://edoverflow.com/2017/github-for-bugbountyhunters/)
+			* [Credential mitigation in large-scale organizations - Tobias Gabriel, Nikolas Kratzschmar(GitHub Satellite 2020)](https://www.youtube.com/watch?v=kCo0OJZHRX8)
+			* [“CI Knew There Would Be Bugs Here” — Exploring Continuous Integration Services as a Bug Bounty Hunter - Ed Overflow](https://edoverflow.com/2019/ci-knew-there-would-be-bugs-here/)
+		* **Tools**
+			* [git-secrets](https://github.com/awslabs/git-secrets)
+				* git-secrets scans commits, commit messages, and --no-ff merges to prevent adding secrets into your git repositories. If a commit, commit message, or any commit in a --no-ff merge history matches one of your configured prohibited regular expression patterns, then the commit is rejected.
+			* [gitleaks](https://github.com/zricethezav/gitleaks)
+				* Gitleaks is a SAST tool for detecting hardcoded secrets like passwords, api keys, and tokens in git repos. Gitleaks aims to be the easy-to-use, all-in-one solution for finding secrets, past or present, in your code.
+			* [tartufo](https://github.com/godaddy/tartufo)
+				* tartufo searches through git repositories for secrets, digging deep into commit history and branches. This is effective at finding secrets accidentally committed. tartufo also can be used by git pre-commit scripts to screen changes for secrets before they are committed to the repository.
+			* [gitignore](https://github.com/github/gitignore)
+				* This is GitHub’s collection of .gitignore file templates. We use this list to populate the .gitignore template choosers available in the GitHub.com interface when creating new repositories and files.
+			* [talisman](https://github.com/thoughtworks/talisman)
+				* Talisman is a tool that installs a hook to your repository to ensure that potential secrets or sensitive information do not leave the developer's workstation. It validates the outgoing changeset for things that look suspicious - such as potential SSH keys, authorization tokens, private keys etc.
+			* [detect-secrets](https://github.com/Yelp/detect-secrets)
+				* detect-secrets is an aptly named module for (surprise, surprise) detecting secrets within a code base. However, unlike other similar packages that solely focus on finding secrets, this package is designed with the enterprise client in mind: providing a backwards compatible, systematic means of: Preventing new secrets from entering the code base, Detecting if such preventions are explicitly bypassed, and Providing a checklist of secrets to roll, and migrate off to a more secure storage.
+			* [Git-Hound](https://github.com/ezekg/git-hound)
+				* Hound is a Git plugin that helps prevent sensitive data from being committed into a repository by sniffing potential commits against PCRE regular expressions.
+			* [RepoSsessed](https://github.com/IOActive/RepoSsessed)
+				* RepoSsessed is a project designed to parse public source code repositories and find various types of vulnerabilities. The current focus is on finding secrets, but see the Next Steps section to see what is being added.
+			* [truffleHog](https://github.com/dxa4481/truffleHog)
+				* Searches through git repositories for high entropy strings and secrets, digging deep into commit history
+* **Static Analysis Approaches & Tooling**<a name="static"></a>
 	* **Articles/Blogposts/Writeups**
 		* [Static Analysis at Scale: An Instagram Story - Benjamin Woodruff(2019)](https://instagram-engineering.com/static-analysis-at-scale-an-instagram-story-8f498ab71a0c)
 		* [Scaling Static Analyses at Facebook - ino Distefano, Manuel Fähndrich, Francesco Logozzo, Peter W. O'Hearn(2019)](https://cacm.acm.org/magazines/2019/8/238344-scaling-static-analyses-at-facebook/fulltext)
@@ -639,9 +720,15 @@
 			* In this talk, we’ll help you understand the strengths and weaknesses of SAST tools by illustrating how they trace your code for vulnerabilities. You’ll see out-of-the-box rules for commercial and open-source SAST tools, and learn how to write custom rules for the widely-used open source SAST tool, PMD. We’ll explain the value of customizing tools for your organization; and you’ll learn how to integrate SAST technologies into your existing build and deployment pipelines. Lastly, we’ll describe many of the common challenges organizations face when deploying a new security tool to security or development teams, as well as some helpful hints to resolve these issues
 		* [Static analysis for code and infrastructure​ - Nick Jones(DevSecCon2016)](https://www.youtube.com/watch?v=vJbh711yRNk)
 			* Many will likely have seen or used static analysis tools in the past, but they’re often poorly understood. This talk covers the theory behind a number of the techniques commonly used to analyze applications, including taint checking and analysis of control flow graphs and field initializations. After covering the benefits and pitfalls that these techniques bring to the table, it then goes on to address how to best fit these tools into your development environment and infrastructure, demonstrate how to catch software bugs early in your development cycle and how analysis maContinousy be applied to infrastructure as code definitions.
+		* [Variant Analysis – A critical step in handling vulnerabilities - Kevin Backhouse(DevSecCon London 2018)](https://www.youtube.com/watch?v=6WwP7eUY52Y&app=desktop)
+			* In software development, we frequently see the same logical coding mistakes being made repeatedly over the course of a project’s lifetime, and sometimes across multiple projects. Sometimes there are a number of simultaneously active instances of these mistakes, and sometimes there’s only ever one active instance at a time, but it keeps reappearing. When these mistakes lead to security vulnerabilities, the consequences can be severe. With each vulnerability discovered or reported, if the root cause was a bug in the code, we’re presented with an opportunity to investigate how often this mistake is repeated, whether there are any other unknown vulnerabilities as a result, and implement a process to prevent it reappearing. In this talk, I’ll be introducing Variant Analysis, a process for doing just this, and discuss how it can be integrated into your development and security operations. I’ll also be sharing real-world stories of what has happened when variant analysis was neglected, as well as stories of when it’s saved the day.
+		* [Automated Discovery of Deserialization Gadget Chains - Ian Haken(BHUSA 2018)](https://www.youtube.com/watch?v=MTfE2OgUlKc)
+			* Although vulnerabilities stemming from the deserialization of untrusted data have been understood for many years, unsafe deserialization continues to be a vulnerability class that isn't going away. Attention on Java deserialization vulnerabilities skyrocketed in 2015 when Frohoff and Lawrence published an RCE gadget chain in the Apache Commons library and as recently as last year's Black Hat, Muñoz and Miroshis presented a survey of dangerous JSON deserialization libraries.
 	* **Papers**
 		* [Tricorder: Building a Program Analysis Ecosystem - Caitlin Sadowski, Jeffrey van Gogh, Ciera Jaspan, Emma Söderberg, Collin Winter(2015)](https://research.google/pubs/pub43322/)
 			* Static analysis tools help developers find bugs, improve code readability, and ensure consistent style across a project. However, these tools can be difficult to smoothly integrate with each other and into the developer workflow, particularly when scaling to large codebases. We present TRICORDER, a program analysis platform aimed at building a data-driven ecosystem around program analysis. We present a set of guiding principles for our program analysis tools and a scalable architecture for an analysis platform implementing these principles. We include an empirical, in-situ evaluation of the tool as it is used by developers across Google that shows the usefulness and impact of the platform.
+		* [What Developers Want and Need from Program Analysis: An Empirical Study - Maria Christakis, Christian Bird(2016)](https://www.microsoft.com/en-us/research/uploads/prod/2016/07/What-Developers-Want-and-Need-from-Program-Analysis-An-Empirical-Study.pdf)
+			* Program Analysis has been a rich and fruitful field of research for many decades, and countless high quality program analysis tools have been produced by academia. Though there are some well-known examples of tools that have found their way into routine use by practitioners, a common challenge faced by researchers is knowing how to achieve broad and lasting adoption of their tools. In an effort to understand what makes a program analyzer most attractive to developers, we mounted a multi-method investigation at Microsoft. Through interviews and surveys of developers as well as analysis of defect data, we provide insight and answers to four high level research questions that can help researchers design program analyzers meeting the needs of software developers. First, we explore what barriers hinder the adoption of program analyzers, like poorly expressed warning messages. Second, we shed light on what functionality developers want from analyzers, including the types of code issues that developers care about. Next, we answer what non-functional characteristics an analyzer should have to be widely used, how the analyzer should fit into the development process, and how its results should be reported. Finally, we investigate defects in one of Microsoft’s flagship software services, to understand what types of code issues are most important to minimize, potentially through program analysis.
 	* **Tooling**
 		* **Config-Mgmt**
 			* [Checkov](https://github.com/bridgecrewio/checkov)
@@ -658,7 +745,9 @@
 		* **Tool Coordination/Orchestration**
 			* [Salus](https://github.com/coinbase/salus)
 				* Salus (Security Automation as a Lightweight Universal Scanner), named after the Roman goddess of protection, is a tool for coordinating the execution of security scanners. You can run Salus on a repository via the Docker daemon and it will determine which scanners are relevant, run them and provide the output. Most scanners are other mature open source projects which we include directly in the container.
-* **Dynamic Analysis - Continuous Scanning**
+* **Dynamic Analysis - Continuous Scanning**<a name="dynscan"></a>
+	* See the [Fuzzing](./fuzzing.html) page.
+	* **Articles/Blogposts/Writeups**
 	* **Talks & Presentations**
 		* [Differences Between Web Application Scanning Tools when Scanning for XSS and SQLi - Robert Feeney(AppSecUSA 2017)](https://www.youtube.com/watch?v=VO2uBSfXZso)
 			* This presentation addresses the problems that current web application scanners face in dealing with both traditional and contemporary web architectures and technologies. It suggests improvements and identifies pitfalls of using automation without applying intelligence and a contextual view of the target being assessed.
@@ -671,7 +760,7 @@
 	* **Tooling**
 		* [fuzz-lightyear](https://github.com/Yelp/fuzz-lightyear)
 			* A pytest-inspired, DAST framework, capable of identifying vulnerabilities in a distributed, micro-service ecosystem through chaos engineering testing and stateful, Swagger fuzzing.
-* **Dependency Management**
+* **Dependency Management**<a name="depmgmt"></a>
 	* **Articles/Blogposts/Writeups**
 		* [Creating a Comprehensive 3rd-Party Package License Policy for OSS - Kate Downing](https://fossa.com/blog/creating-a-comprehensive-third-party-package-license-policy/)
 	* **Talks/Presentations/Videos**
@@ -680,12 +769,17 @@
 			* [Slides](https://i.blackhat.com/USA-19/Thursday/us-19-Almubayed-Practical-Approach-To-Automate-The-Discovery-And-Eradication-Of-Open-Source-Software-Vulnerabilities-At-Scale.pdf)
 		* [Use Case – Astrid: Artifactory-Sourced Dependency Insight at Netflix - Artifactory](https://www.youtube.com/watch?list=PLY0Zjn5rFo4NHb-5fdiMzNJFan9_raiF_&v=hJWlg4PFWzk)
 			* With a dependency management strategy based solely on binary integration, Netflix successfully performs thousands of production changes per day with only tens of operations engineers and no NOC. This success is due in large part to tools and techniques developed to allow product engineering teams to move quickly with as much context as possible. Astrid stitches together information from as low level as a Java method call to thousand-plus instance auto scaling groups in AWS to provide engineers with a multi-dimensional view of the impact of a piece of code on the Netflix ecosystem. We will provide a live demonstration early access view of Astrid, which Netflix plans to open source in 2016.
-		* Never opensourced.
-
+			* Never opensourced.
 	* **Tools**
 		* [Dependency-Check](https://github.com/jeremylong/DependencyCheck)
 			* Dependency-Check is a Software Composition Analysis (SCA) tool that attempts to detect publicly disclosed vulnerabilities contained within a project's dependencies. It does this by determining if there is a Common Platform Enumeration (CPE) identifier for a given dependency. If found, it will generate a report linking to the associated CVE entries.
-* **Metrics**
+		* [LibScout](https://github.com/reddr/LibScout)
+			* LibScout is a light-weight and effective static analysis tool to detect third-party libraries in Android/Java apps. The detection is resilient against common bytecode obfuscation techniques such as identifier renaming or code-based obfuscations such as reflection-based API hiding or control-flow randomization. Further, LibScout is capable of pinpointing exact library versions including versions that contain severe bugs or security issues.
+		* [third-party-lib-analyzer](https://github.com/jtmelton/third-party-lib-analyzer)
+			* A tool for analyzing third party libraries and how they connect to user classes. TPLA constructs a graph database of all dependencies, user classes, and relationships between all classes. It also allows some built in queries to be executed with reports generated based on the results.
+		* [bundler-audit](https://github.com/rubysec/bundler-audit)
+			* Patch-level verification for bundler.
+* **Metrics**<a name="metrics"></a>
 	* **Articles/Blogposts/Writeups**
 		* [Magic Numbers: An In-Depth Guide to the 5 Key Performance Indicators for Web Application Security](https://owasp.org/www-pdf-archive/Magic_Numbers_-_5_KPIs_for_Measuring_WebAppSec_Program_Success_v3.2.pdf)
 		* [Using Metrics to Manage Your Application Security Program - Jim Bird(2016)](https://www.veracode.com/sites/default/files/Resources/Whitepapers/using-metrics-to-manage-your-application-security-program-sans-veracode.pdf)
@@ -702,7 +796,7 @@
 			* Executives often ask the wrong questions about application security. This session will discuss techniques for changing the conversation in order to encourage execs to ask the right questions—and provide data-driven answers that show progress towards meaningful objectives. 
 		* [Starting a metrics program - Marcus Ranum(OWASP AppSec California 2016)](https://www.youtube.com/watch?v=yW7kSVwucSk)
 			* Security practitioners constantly bemoan their difficulty in communicating effectively with business units or senior management. The key, of course, is using the right language - namely, metrics. In this presentation we'll outline a bunch of useful things you should know about setting up your own metrics process.
-* **Automated Response**
+* **Automated Response**<a name="auto"></a>
 	* **Articles/Blogposts/Writeups**
 		* [Put Your Robots to Work: Security Automation at Twitter - Justin Collins, Neil Matatall, Alex Smolen(OWASP AppSecUSA 2012)](https://www.youtube.com/watch?v=Ivc5Sj0nj2c&app=desktop)
 			* With daily code releases and a growing infrastructure, manually reviewing code changes and protecting against security regressions quickly becomes impractical. Even when using security tools, whether commercial or open source, the difficult work of integrating them into the development and security cycles remains. We need to use an automated approach to push these tools as close to when the code is written as possible, allowing us to prevent potential vulnerabilities before they are shipped. We worked with development, operations, and release teams to create a targeted suite of tools focused on specific security concerns that are effective and don't introduce any noise. This presentation will give an overview of what we've done over the past year, what we have learned along the way, and will provide advice for anyone else going down this road.
@@ -849,14 +943,31 @@
 
 
 ----------
-### <a name="c#"></a>C#
-* [Compiling C# Code at Runtime](https://www.codeproject.com/Tips/715891/Compiling-Csharp-Code-at-Runtime)
-* [The 68 things the CLR does before executing a single line of your code (`*`)](https://web.archive.org/web/20170614215931/http://mattwarren.org:80/2017/02/07/The-68-things-the-CLR-does-before-executing-a-single-line-of-your-code/)
-* [Dynamic Source Code Generation and Compilation](https://docs.microsoft.comen-us/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)
-* [Roslyn](https://github.com/dotnet/roslyn)
-	* Roslyn provides open-source C# and Visual Basic compilers with rich code analysis APIs. It enables building code analysis tools with the same APIs that are used by Visual Studio.
-	* [Overview](https://github.com/dotnet/roslyn/wiki/Roslyn%20Overview)
-* [Transport Layer Security (TLS) best practices with the .NET Framework - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/network-programming/tls)
+### <a name="c#"></a>C`#`
+* **101**
+* **Learn**
+	* **Articles/Blogposts/Writeups**
+		* [Book of the Runtime (BOTR) for the .NET Runtime](https://github.com/dotnet/coreclr/tree/master/Documentation/botr)
+			* This contains a collection of articles about the non-trivial internals of the .NET Runtime. Its intended audience are people actually modifying the code or simply wishing to have a deep understanding of the runtime.
+		* [.Net The Managed Heap and Garbage Collection in the CLR](https://www.microsoftpressstore.com/articles/article.aspx?p=2224054)
+		* [Compiling C# Code at Runtime](https://www.codeproject.com/Tips/715891/Compiling-Csharp-Code-at-Runtime)
+		* [The 68 things the CLR does before executing a single line of your code (`*`)](https://web.archive.org/web/20170614215931/http://mattwarren.org:80/2017/02/07/The-68-things-the-CLR-does-before-executing-a-single-line-of-your-code/)
+		* [Dynamic Source Code Generation and Compilation](https://docs.microsoft.comen-us/dotnet/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation)
+* **Reference**
+	* [Transport Layer Security (TLS) best practices with the .NET Framework - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/network-programming/tls)
+* **Security**
+	* [.NET serialiception](https://blog.scrt.ch/2016/05/12/net-serialiception/)
+* **Tools**
+	* [Roslyn](https://github.com/dotnet/roslyn)
+		* Roslyn provides open-source C# and Visual Basic compilers with rich code analysis APIs. It enables building code analysis tools with the same APIs that are used by Visual Studio.
+		* [Overview](https://github.com/dotnet/roslyn/wiki/Roslyn%20Overview)
+
+
+
+
+
+
+
 
 ----------
 ### <a name="go">Go</a>
@@ -966,13 +1077,6 @@
 	* [REPL.lua](https://github.com/hoelzro/lua-repl)
 		* a reusable Lua REPL written in Lua, and an alternative to /usr/bin/lua
 
---------------
-### <a name="net".NET</a>
-* [Book of the Runtime (BOTR) for the .NET Runtime](https://github.com/dotnet/coreclr/tree/master/Documentation/botr)
-	* This contains a collection of articles about the non-trivial internals of the .NET Runtime. Its intended audience are people actually modifying the code or simply wishing to have a deep understanding of the runtime.
-* [.NET serialiception](https://blog.scrt.ch/2016/05/12/net-serialiception/)
-* [.Net The Managed Heap and Garbage Collection in the CLR](https://www.microsoftpressstore.com/articles/article.aspx?p=2224054)
-
 
 -----------
 ### <a name="perl"Perl</a>
@@ -991,6 +1095,7 @@
 ----------
 ### <a name="power">Powershell</a>
 * **101**
+	* [PowerShell Basics - Carlos Perez](https://www.darkoperator.com/powershellbasics/)
 * **Learn**
 	* [Learn Windows PowerShell in a Month of Lunches, Third Edition - Book](https://www.manning.com/books/learn-windows-powershell-in-a-month-of-lunches-third-edition)
 	* [learning-powershell/ - github repo](https://github.com/PowerShell/PowerShell/tree/master/docs/learning-powershell)
@@ -1198,7 +1303,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 
 ----
-### Other <a name="sql"></a>
+### Other 
 * [A successful Git branching model](http://nvie.com/posts/a-successful-git-branching-model/)
 * [Mostly Adequate Guide](https://drboolean.gitbooks.io/mostly-adequate-guide/)
 	* This is a book on the functional paradigm in general. We'll use the world's most popular functional programming language: JavaScript. Some may feel this is a poor choice as it's against the grain of the current culture which, at the moment, feels predominately imperative.

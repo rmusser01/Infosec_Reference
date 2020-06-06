@@ -4,10 +4,13 @@
 ## Table of Contents
 - [General Info](#general)
 - [Virtual Machines](#vm)
+- [Web Applications](#webapp)
 - [Installing/Configuring Active Directory](#AD)
+- [Installing/Configuring Active Directory](#AD)
+- [Building a Defensive Lab](#defense)
 - [Building a Pentest Lab](#pentest)
+- [Other Labs](#other)
 - [Infrastructure Automation](#infra)
-
 
 
 * **To Do**
@@ -302,6 +305,7 @@
 * **Monitoring & Threat Hunting**
 	* **Articles/Blogposts/Writeups**
 		* [How To Do Endpoint Monitoring on a Shoestring Budget – Webcast Write-Up - Joff Thyer, Derek Banks](https://www.blackhillsinfosec.com/endpoint-monitoring-shoestring-budget-webcast-write/)	
+		* [Azure Sentinel To-Go: Sentinel Lab w/ Prerecorded Data 😈 & a Custom Logs Pipe via ARM Templates 🚀 - Cyb3rWard0g](https://techcommunity.microsoft.com/t5/azure-sentinel/azure-sentinel-to-go-sentinel-lab-w-prerecorded-data-amp-a/ba-p/1260191)
 	* **Talks/Presentations/Videos**
 		* [Build your own threat hunting based on open-source tools - Teymur Kheirkhabarov(PHDays2018)](https://speakerdeck.com/heirhabarov/phdays-2018-threat-hunting-hands-on-lab)
 		* [Building a Home Network Configured to Collect Artifacts for Supporting Network Forensic Incident Response](https://www.sans.org/reading-room/whitepapers/forensics/building-home-network-configured-collect-artifacts-supporting-network-forensic-incident-response-37302)
@@ -345,8 +349,6 @@
 			* [Bad Dockerfile](https://github.com/ianmiell/bad-dockerfile)
 				* A Dockerfile that creates an image with known vulnerabilities.
 				* [Blogpost](https://www.stindustries.net/docker/bad-dockerfile/)
-
-
 	* **Kubernetes**
 		* **Tools**
 			* [Bust-a-Kube](https://www.bustakube.com/download)
@@ -392,6 +394,9 @@
 	* [Automating a RedELK Deployment Using Ansible - Jason Lang](https://www.trustedsec.com/blog/automating-a-redelk-deployment-using-ansible/)
 	* [Red Teaming Series: Part 1 : Setting the environment, Running the C2 server on Docker and Bypassing latest security controls. - ](https://br0h4ck3rs.blogspot.com/2020/03/red-teaming-series-part-1-setting_20.html)
 	* [Designing The Adversary Simulation Lab - Adam Chester](https://www.mdsec.co.uk/2020/04/designing-the-adversary-simulation-lab/)
+	* [Building, Modifying, and Packing with Azure DevOps - Adam Chester(2020)](https://blog.xpnsec.com/building-modifying-packing-devops/)
+	* [Hitchhikers Guide to the PowerShell Module Pipeline - Michael Willis](https://xainey.github.io/2017/powershell-module-pipeline/)
+		* The following article highlights both high and mid level concepts toward creating a simple release pipeline for PowerShell modules. The major focus will cover file structure, test practices, task runners, and portability between CI/CD systems. Additional topics include generated reports, design patterns for code consistency, and a Jenkins CI implementation. The supplementary project: Xainey/PSHitchhiker is available on Github to analyze alongside the project.
 * **Infrastructure Automation**
 	* **Ansible**
 		* **Articles/Blogposts**
@@ -419,6 +424,9 @@
 	* **Other Tools**
 		* [axiom](https://github.com/pry0cc/axiom)
 			* Project Axiom is a set of utilities for managing a small dynamic infrastructure setup for bug bounty and pentesting.
+	* **Package Management**
+		* [fpm](https://github.com/jordansissel/fpm)
+			*  Effing package management! Build packages for multiple platforms (deb, rpm, etc) with great ease and sanity. 
 * **Sort**
 	* [Imaginary C2](https://github.com/felixweyne/imaginaryC2)
 		* A python tool which aims to help in the behavioral (network) analysis of malware. Imaginary C2 hosts a HTTP server which captures HTTP requests towards selectively chosen domains/IPs. Additionally, the tool aims to make it easy to replay captured Command-and-Control responses/served payloads.

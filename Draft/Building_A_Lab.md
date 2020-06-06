@@ -16,11 +16,25 @@
 
 
 
+
 -------------------------
 ### <a name="general"></a> General
 * This page is supposed to be a collection of resources for building a lab for performing various security related tasks. Generally, the idea is that you setup a local VM hypervisor software(VMware, Virtualbox) and then install a virtual machine to perform testing and analysis without any impact to your "physical" machine.
 * **Useful links**
 	* [Warming Up. Using ATT&CK for Self Advancement - 	Adam Swan](https://socprime.com/en/blog/warming-up-using-attck-for-self-advancement/)
+* **Building a Dropbox**
+	* **Articles/Blogposts/Writeups**
+		* [DigiDucky - How to setup a Digispark like a rubber ducky](http://www.redteamr.com/2016/08/digiducky/)
+		* [How to Build Your Own Penetration Testing Drop Box - BHIS](https://www.blackhillsinfosec.com/?p=5156&)
+	* **Talks/Presentations/Videos**
+	* **Tools**
+		* [ubuntu.autossh](https://github.com/Monadical-SAS/ubuntu.autossh)
+			* Autossh reverse tunnel to central server.
+		* [P4wnP1](https://github.com/mame82/P4wnP1)
+			* P4wnP1 is a highly customizable USB attack platform, based on a low cost Raspberry Pi Zero or Raspberry Pi Zero W.
+
+
+
 
 -------------------------
 ### <a name="vm"></a> Virtual Machines
@@ -34,6 +48,13 @@
 		* [Proxmox - free](https://www.proxmox.com/en/)
 		* [VMware vSphere - free](https://www.vmware.com/products/vsphere-hypervisor.html)
 		* [Xen - free](https://www.xenproject.org/)
+* **VirtualBox
+* **VMware(Workstation/vSphere/ESXi)**
+	* **VM Snapshots**
+		* [Understanding VM snapshots in ESXi (1015180) - vmware.com](https://kb.vmware.com/s/article/1015180)
+		* [How to Manage VMware Snapshots - Vladan Seget](https://blog.netwrix.com/2019/12/23/how-to-manage-vmware-snapshots/)
+		* [Deep Dive – The Ultimate Guide to Master VMware Snapshot - Mohammed Rafic](http://www.vmwarearena.com/deep-dive-the-ultimate-guide-to-master-vmware-snapshot/)
+* **Xen**
 * **Obtaining VMs**
 	* [Internet Explorer Windows Vista through 10 Virtual Machines](https://github.com/mikescott/ie-virtual-machines/blob/master/README.md)
 	* [Windows Server Evaluation ISOs](https://www.microsoft.com/en-us/evalcenter/)
@@ -44,6 +65,9 @@
 	* [unlocker](https://github.com/DrDonk/unlocker)
 		* VMware Workstation macOS
 	* [Running macOS Catalina Beta on VirtualBox Linux - Astr0baby](https://astr0baby.wordpress.com/2019/07/04/running-macos-catalina-beta-on-virtualbox-linux/)
+	* [macos-virtualbox](https://github.com/myspaghetti/macos-virtualbox)
+		* macos-guest-virtualbox.sh is a Bash script that creates a macOS virtual machine guest on VirtualBox with unmodified macOS installation files downloaded directly from Apple servers. Tested on Cygwin. Works on macOS, Windows Subsystem for Linux, and centOS 7. Should work on most modern Linux distros.
+	* [How to create a macOS virtual machine in VmWare Fusion on Mac without a CD, USB drive or recovery partition - Oleksii Chekulaiev(2017)](https://medium.com/@achekulaev/how-to-create-a-macos-virtual-machine-in-vmware-fusion-on-mac-without-a-cd-usb-drive-or-a-recovery-cb942d821654)
 * **Automated Lab/Machine Creation Tools**
 	* Security Scenario Generator (SecGen)](https://github.com/cliffe/SecGen)
 		* SecGen creates vulnerable virtual machines so students can learn security penetration testing techniques. Boxes like Metasploitable2 are always the same, this project uses Vagrant, Puppet, and Ruby to create randomly vulnerable virtual machines that can be used for learning or for hosting CTF events.
@@ -58,6 +82,9 @@
 	* [List of VMs that are preconfigured virtual machines](http://www.amanhardikar.com/mindmaps/PracticeUrls.html)
 	* [The Hacker Games - Hack the VM before it hacks you](http://www.scriptjunkie.us/2012/04/the-hacker-games/)
 		* I have talked about counterattacks here before, and this system has implemented a number of aggressive anti-hacker measures.  In fact, this VM is downright evil. I am probably legally obligated to tell you that it will try to hack you. So if a calculator or message declaring your pwnedness pops up or shows up on your desktop, you asked for it. But don’t worry, it won’t steal your docs or rm you, it will just demonstrate compromise for the game.  To save precious bandwidth, this has been implemented in a minimal tinycore-based VM, and will require VirtualBox to run.
+	* **Android**
+		* [EVABS (Extremely Vulnerable Android Labs)](https://github.com/abhi-r3v0/EVABS)
+			* An open source Android application that is intentionally vulnerable so as to act as a learning platform for Android application security beginners. The effort is to introduce beginners with very limited or zero knowledge to some of the major and commonly found real-world based Android application vulnerabilities in a story-based, interactive model. EVABS follows a level-wise difficulty approach and in each level, the player learns a new concept. This project is still under progress and aims at incorporating as many levels as possible.
 	* **AWS**
 		* [AWS Well-Architected Security Labs - Amazon(Official)](https://www.wellarchitectedlabs.com/Security/README.html)
 			* This repository contains documentation and code in the format of hands-on labs to help you learn, measure, and build using architectural best practices. The labs are categorized into levels, where 100 is introductory, 200/300 is intermediate and 400 is advanced.
@@ -215,24 +242,31 @@
 
 -------------------------
 ### <a name="pentest"></a> Building a Pen test lab
-* **Guides**
+* **Articles/Blogposts/Writeups**
 	* [DarthSidious](https://chryzsh.gitbooks.io/darthsidious/content/)
 		* To share my modest knowledge about hacking Windows systems. This is commonly refered to as red team exercises. This book however, is also very concerned with the blue team; the defenders. That is, helping those who are working as defenders, analysts and security experts to build secure Active Directory environments and monitor them for malicious activity.
-	* [SANS Webcast: Building Your Own Super Duper Home Lab](https://www.youtube.com/watch?v=uzqwoufhwyk&app=desktop)
 	* [Home Lab with pfSense & VMware Workstation - sysadmin perspective](http://itpro.outsidesys.com/2015/02/19/home-lab-with-pfsense-workstation/)
 		* I wanted to build a virtual lab environment at home that would emulate an office environment.  My requirements were to have separate network segments for Clients & Servers, and two DMZ networks.  I also wanted my home network, which is external to the virtual lab environment, to emulate the Internet, even though it really isn’t. The following is how I created multiple “named” LAN segments within VMware Workstation, and routed between them using a VM running pfSense, which is an open source firewall.
 	* [Setting Up a Pentest/Hacking Lab with Hyper-V](http://cyberthreathunt.com/2017/04/01/setting-up-a-pentest-lab-with-hyper-v/)
-	* [Hack Yourself: Building a Test Lab - David Boyd](https://www.youtube.com/watch?v=rgdX-hn0xXU)
-	* [Hack-Yourself: Building a pentesting lab for fun & profit](https://www.slideshare.net/DavidBoydCISSP/hack-yourself-building-a-pentesting-lab-for-fun-and-profit)
 	* [Setting up a Windows Lab Environment](http://thehackerplaybook.com/Windows_Domain.htm)
 	* [Setting Up A Penetration Testing Lab - Rapid7](https://kb.help.rapid7.com/docs/setting-up-a-penetration-testing-lab)
 	* [Building a Pentest Lab - stan.gr](http://www.stan.gr/2013/03/building-pentest-lab.html)
+	* [Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation)
+		* Collection of VMs aimed at teaching different privilege escalation techniques with Vulnhub machines used for examples.
+* **Talks/Presentations/Videos**
+	* [SANS Webcast: Building Your Own Super Duper Home Lab](https://www.youtube.com/watch?v=uzqwoufhwyk&app=desktop)
+	* [Hack Yourself: Building a Test Lab - David Boyd](https://www.youtube.com/watch?v=rgdX-hn0xXU)
+	* [Hack-Yourself: Building a pentesting lab for fun & profit](https://www.slideshare.net/DavidBoydCISSP/hack-yourself-building-a-pentesting-lab-for-fun-and-profit)
 * **Tools**
 	* [DumpsterFire](https://github.com/TryCatchHCF/DumpsterFire)
 		* [Slides](https://github.com/TryCatchHCF/DumpsterFire/raw/master/CactusCon_2017_Presentation/DumpsterFire_CactusCon_2017_Slides.pdf)
 		* The DumpsterFire Toolset is a modular, menu-driven, cross-platform tool for building repeatable, time-delayed, distributed security events. Easily create custom event chains for Blue Team drills and sensor / alert mapping. Red Teams can create decoy incidents, distractions, and lures to support and scale their operations. Turn paper tabletop exercises into controlled "live fire" range events. Build event sequences ("narratives") to simulate realistic scenarios and generate corresponding network and filesystem artifacts.
 	* [Pentest Environment Deployer](https://github.com/Sliim/pentest-env)
 		* This repo provides an easy way to deploy a clean and customized pentesting environment with Kali linux using vagrant and virtualbox.
+	* [Capsulecorp Pentest](https://github.com/R3dy/capsulecorp-pentest)
+		* "The Capsulecorp Pentest is a small virtual network managed by vagrant and ansible. It contains five virtual machines, including one Linux attacking system running xubuntu and 4 Windows 2019 servers configured with various vulnerable services. This project can be used to learn network penetration testing as a stand-alone environment but is ultimatly designed to compliment my book The Art of Network Penetration Testing"
+	* [Sadcloud](https://github.com/nccgroup/sadcloud)
+		* sadcloud is a tool for spinning up insecure AWS infrastructure with Terraform. It supports approx. 84 misconfigurations across 22 AWS Services. The inital set of misconfigurations were drawn from ScoutSuite, NCCGroup's Multi-cloud auditing tool. sadcloud was created to easily allow security researchers to misconfigure AWS for training purposes, or to use to asses AWS security tools - including built-ins and third-party.
 * **In the Clouds**
 	* **AWS**
 		* **Official Documentation**
@@ -249,9 +283,49 @@
 -------------------------
 ### <a name="defense"></a> Building a Defensive Lab
 * **Guides**
+	* **Articles/Blogposts/Writeups**
+		* [DIY Single Sign-On for SSH - Carl Tashian(2020)](https://smallstep.com/blog/diy-single-sign-on-for-ssh/)
+			* TL;DR In this post we're going to set up Google single sign-on for SSH. Behind the scenes, we'll use OpenID Connect (OIDC), short-lived SSH certificates, a couple of clever SSH configuration tweaks, and Smallstep's open-source step-ca and step packages. We will set up an SSH Certificate Authority, and use it to bootstrap a new host and a new user in our system. While this approach requires more up-front work than a typical SSH public/private key setup, it comes with a lot of benefits beyond single sign-on. It eliminates the need for gathering and shipping and managing authorized_keys files.
+	* **Talks/Presentations/Videos**
+* **Network Access Controls**
+	* [PacketFence](https://packetfence.org/)
+	    * PacketFence is a fully supported, trusted, Free and Open Source network access control (NAC) solution. Boasting an impressive feature set including a captive-portal for registration and remediation, centralized wired, wireless and VPN management, industry-leading BYOD capabilities, 802.1X and RBAC support, integrated network anomaly detection with layer-2 isolation of problematic devices; PacketFence can be used to effectively secure small to very large heterogeneous networks.
+* **Individual Machines**
+	* **Linux**
+		* **Articles/Blogposts/Writeups**
+		* **Talks/Presentations/Videos**
+	* **Windows**
+		* **Articles/Blogposts/Writeups**
+			* [Windows 10 is ‘mine’…, Part 1 - Hexacorn](http://www.hexacorn.com/blog/2020/05/05/windows-10-is-mine-part-1/)
+				* Hexacorn walking through setting up a Win10 VM to his standards.
+		* **Talks/Presentations/Videos**
+* **Monitoring & Threat Hunting**
+	* **Articles/Blogposts/Writeups**
+		* [How To Do Endpoint Monitoring on a Shoestring Budget – Webcast Write-Up - Joff Thyer, Derek Banks](https://www.blackhillsinfosec.com/endpoint-monitoring-shoestring-budget-webcast-write/)	
+	* **Talks/Presentations/Videos**
+		* [Build your own threat hunting based on open-source tools - Teymur Kheirkhabarov(PHDays2018)](https://speakerdeck.com/heirhabarov/phdays-2018-threat-hunting-hands-on-lab)
+		* [Building a Home Network Configured to Collect Artifacts for Supporting Network Forensic Incident Response](https://www.sans.org/reading-room/whitepapers/forensics/building-home-network-configured-collect-artifacts-supporting-network-forensic-incident-response-37302)
+	* **Tools**
+		* [DetectionLab](https://github.com/clong/DetectionLab)
+			* [...]to allow the user to quickly build a Windows domain that comes pre-loaded with security tooling and some best practices when it comes to system logging configurations. It can easily be modified to fit most needs or expanded to include additional hosts.
+		* [ELK Detection Lab](https://github.com/thomaspatzke/elk-detection-lab)
+			* An ELK environment loaded with the following datasets: Mordor from Roberto Rodriguez @Cyb3rWard0g and Jose Luis Rodriguez @Cyb3rPandaH; EVTX-ATTACK-SAMPLES from Samir Bousseaden SBousseaden; malware-traffic-analysis.net PCAPs from @malware_traffic processed with Suricata.
+		* [SweetSecurity](https://github.com/TravisFSmith/SweetSecurity)
+			* Scripts to setup and install Bro IDS, Elastic Search, Logstash, Kibana, and Critical Stack on a Raspberry Pi 3 device
+		* [Response Operation Collections Kit Reference Build](https://github.com/rocknsm/rock)	
+		* [Mordor](https://github.com/Cyb3rWard0g/mordor)
+			* The Mordor project provides pre-recorded security events generated by simulated adversarial techniques in the form of JavaScript Object Notation (JSON) files for easy consumption. The pre-recorded data is categorized by platforms, adversary groups, tactics and techniques defined by the Mitre ATT&CK Framework. The pre-recorded data represents not only specific known malicious events but additional context/events that occur around it. This is done on purpose so that you can test creative correlations across diverse data sources, enhancing your detection strategy and potentially reducing the number of false positives in your own environment.
+* **Windows Domain**
+	* **Articles/Blogposts/Writeups**
+		* [Microsoft-Blue-Forest](https://github.com/rootsecdev/Microsoft-Blue-Forest)
+			* A Blue Forest is centered around Blue Team operational security in domain networks. This repository serves as a living documentation on securing Windows domain networks running modern Microsoft operating systems.
+	* **Talks/Presentations/Videos**
 * **Tools**
+	* [PowerShell Script To Reset The KrbTgt Account Password/Keys For Both RWDCs And RODCs - Jorge]https://jorgequestforknowledge.wordpress.com/2020/04/06/powershell-script-to-reset-the-krbtgt-account-password-keys-for-both-rwdcs-and-rodcs-update-5/)
 * **In the Clouds**
 	* [Securing Azure Infrastructure - Hands on Lab Guide - Adam Raffle, Tom Wilde](https://github.com/Araffe/azure-security-lab)
+	* [Response Operation Collections Kit Reference Build](https://github.com/rocknsm/rock)
+
 
 
 
@@ -315,6 +389,9 @@
 	* [Building a scalable, highly available, and portable web server - Surya Dantuluri](https://blog.suryad.com/sd2/)
 	* [Containerised Home Server With Docker Compose and Traefik - Kristian Glass](https://blog.doismellburning.co.uk/containerised-home-server-with-docker-compose-and-traefik/)
 	* [Infrastructure as Code, Part One - Emily Woods](https://crate.io/a/infrastructure-as-code-part-one/)
+	* [Automating a RedELK Deployment Using Ansible - Jason Lang](https://www.trustedsec.com/blog/automating-a-redelk-deployment-using-ansible/)
+	* [Red Teaming Series: Part 1 : Setting the environment, Running the C2 server on Docker and Bypassing latest security controls. - ](https://br0h4ck3rs.blogspot.com/2020/03/red-teaming-series-part-1-setting_20.html)
+	* [Designing The Adversary Simulation Lab - Adam Chester](https://www.mdsec.co.uk/2020/04/designing-the-adversary-simulation-lab/)
 * **Infrastructure Automation**
 	* **Ansible**
 		* **Articles/Blogposts**
@@ -339,9 +416,10 @@
 			* This is the lab configuration for the Modern Windows Attacks and Defense class that Sean Metcalf (@pyrotek3) and I(Jared Haight) teach.
 		* [Self-Installing Windows OVA](https://github.com/brimstone/windows-ova)
 			* This is an Virtual Machine in OVA format that will install Windows ontop of itself. I wrote this as an alternative to packer. This OVA basically downloads the evaluation version of the Windows version you select to one drive as installation media and then installs onto the primary drive. After this is done, the smaller secondary drive can be discarded to save disk space.
-
+	* **Other Tools**
+		* [axiom](https://github.com/pry0cc/axiom)
+			* Project Axiom is a set of utilities for managing a small dynamic infrastructure setup for bug bounty and pentesting.
 * **Sort**
 	* [Imaginary C2](https://github.com/felixweyne/imaginaryC2)
 		* A python tool which aims to help in the behavioral (network) analysis of malware. Imaginary C2 hosts a HTTP server which captures HTTP requests towards selectively chosen domains/IPs. Additionally, the tool aims to make it easy to replay captured Command-and-Control responses/served payloads.
-	* [Privilege-Escalation](https://github.com/Ignitetechnologies/Privilege-Escalation)
-		* Collection of VMs aimed at teaching different privilege escalation techniques with Vulnhub machines used for examples.
+

@@ -7,6 +7,10 @@
 - [General Sources/Repositories of Classes](#repo)
 - [ARM](#arm)
 - [Basic Security](#basic)
+- [Cloud](#cloud)
+	- [AWS](#aws)
+	- [Azure](#azure)
+	- [GCP](#gcp)
 - [Containers](#containers)
 - [Cryptography](#crypto)
 - [Data Science](#ds)
@@ -24,6 +28,7 @@
 - [Red Team Training](#rt)
 - [Regular Expressions](#regex)
 - [Reverse Engineering Classes/Training](#re)
+- [Security Awareness Training](#aware)
 - [Threat Hunting](#th)
 - [Threat Intelligence](#cti)
 - [UEFI/BIOS Training](#uefi)
@@ -32,7 +37,8 @@
 - [Resources for instructors/Trainers](#resource)
 
 
------
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Classes & Training
 * **HEADS UP**
 	* These classes are all focused on computer/information security. If you're looking for online courses to learn material other than the mentioned, check out "coursera.com", Standford's online classes or MIT's online courses.
@@ -82,6 +88,11 @@
 		* A free, self-paced curriculum that builds a base of knowledge in computers and networking prior to moving on to the fundamentals of security and defense. The course is intended to build up a student with no prior technical knowledge to be confident in their ability to learn anything and continue their security education. 
 	* [Hopper's Roppers Security Fundamentals](https://www.hoppersroppers.org/courseSecurity.html)
 		* A free, self-paced curriculum that teaches a beginner how security works in the real world. Learn security theory and execute defensive measures so that you are better prepared against threats online and in the physical world.
+* **Cloud**
+	* **AWS**
+	* **Azure**
+		* [So you want to learn Azure Security? - Michael Howard(2020)](https://michaelhowardsecure.blog/2020/02/14/so-you-want-to-learn-azure-security/)
+	* **GCP**
 * **Containers**<a name="containers"></a>
 	* [Attacking and Auditing Docker Containers and Kubernetes Clusters](https://github.com/appsecco/attacking-and-auditing-docker-containers-and-kubernetes-clusters)
 		* This course will set the base for security testers and DevOps teams to test for common security vulnerabilities and configuration weaknesses across containerised environments and distributed systems. It also helps to understand approach and process to audit the Kubernetes environment for security posture. The courseware is meant to introduce participants to container and cluster management with Kubernetes.
@@ -147,6 +158,8 @@
 	* [CS 155: Computer and Network Security - Stanford(Spring2020)](https://cs155.stanford.edu/)
 	* [Network Examples - knorrie](https://github.com/knorrie/network-examples)
 		* Linux networking examples and tutorials
+	* [High Performance Browser Networking - Ilya Grigorik](https://hpbn.co/)
+		* Performance is a feature. This book provides a hands-on overview of what every web developer needs to know about the various types of networks (WiFi, 3G/4G), transport protocols (UDP, TCP, and TLS), application protocols (HTTP/1.1, HTTP/2), and APIs available in the browser (XHR, WebSocket, WebRTC, and more) to deliver the best—fast, reliable, and resilient—user experience.
 * **Penetration Testing**<a name="pt"></a>
 	* [Pentester Lab](https://www.pentesterlab.com/)
 		* PentesterLab provides vulnerable systems that can be used to test and understand vulnerabilities.
@@ -192,6 +205,12 @@
 		* [Structure and Interpretration of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/index.html)
 			* [MIT Lecture Series](https://www.youtube.com/watch?v=2Op3QLzMgSY)
 	* **Secure Coding**
+		* [Introduction to Secure Coding - Andrew Buttner, Larry Shields](http://opensecuritytraining.info/IntroSecureCoding.html)
+			* The purpose of this course is to provide developers with a short, focused primer related to secure coding.  The hope is that each developer will leave the course with a better understanding of how they can improve, from a security perspective, the code that they write.  This course provides a look at some of the most prevalent security related coding mistakes made in industry today.  Each type of issue is explained in depth including how a malicious user may attack the code, and strategies for avoiding the issues are then reviewed.  Knowledge of at least one programming language is required, although the specific programming language is not important as the concepts that will be discussed are language independent.  The course will cover many of the weaknesses within the context of a web application, but most of the concepts will apply to all application development.
+		* [Secure Code Review - Andrew Buttner, Mark Davidson](http://opensecuritytraining.info/SecureCodeReview.html)
+			* This course is designed to help developers bring a secure coding mindset into typical project peer reviews. The course briefly talks about the development lifecycle and the importance of peer reviews in delivering a quality product. How to perform this review is discussed and how to keep secure coding a priority during the review is stressed. A variety of hands-on exercises will address common coding mistakes, what to focus on during a review, and how to manage limited time. Throughout the course, the class will break out into pairs and perform example peer reviews on sample code. Perl will be used for the hands-on exercises; however every attempt will be made to generalize the code such that anyone with an understanding of a coding language will be comfortable.
+		* [Pushing Left, Like a Boss - Train the Trainer](https://github.com/shehackspurple/TTT-Pushing-Left)
+			* This is a “Train the Trainer” document, to be used by someone who wants to present this talk for an audience.
 	* **Development**
 		* [Software Development Lifecycle Specialization - University of Minnesota(Coursera)](https://www.coursera.org/specializations/software-development-lifecycle)
 			* This Specialization is designed for people who are new to software engineering. It's also for those who have already developed software, but wish to gain a deeper understanding of the underlying context and theory of software development practices. At the end of this Specialization, we expect learners to be able to: 1.) Build high-quality and secure software using SDLC methodologies such as agile, lean, and traditional/waterfall.; 2.) Analyze a software development team's SDLC methodology and make recommendations for improvements.; 3.) Compare and contrast software development methodologies with respect to environmental, organizational, and product constraints.
@@ -246,6 +265,9 @@
 		* The issue of program protection has never been more relevant. Commerical software companies need techniques to protect their intellectual property, malware authors try to slow the down the process of reversing and detecting their creations, and nation-states are creating cyber-weapons that they do not want reverse engineered and repurposed. Program protection is has two main approaches, tamper-resistance and obfuscation. Tamperresistance focuses on the detection and corruption of tools used to analyze programs. Obfuscation focuses on making a program hard to understand, even when under flawless analysis tools. Tamper-resistance techniques tend to be an arms race, of one off tricks versus analysis tool updates. Obfuscation offers a much more stable and provably secure avenue in which to protect programs. Obfuscation is thorougly grounded in the formal methods and proofs of cryptography. The only distinction between obfuscation and cryptography is the location of the key. In cryptography, the key is outside the system or data under analysis. In obfuscation, the obfuscated data and key are together, making it a challenging problem of its own. It is the difficulty of provable security and the great need program protection in the current day, that make this class relevant and necessary. In this readings class, we will focus on 15 of the most important works in program obfuscation. We will attain thorough understanding of these papers through paper reviews, discussion, and a project implementing an obfuscation scheme from one of the papers.
 	* [Advanced Binary Deobfuscation(2020)](https://github.com/malrev/ABD)
 		* This repository contains the course materials of Advanced Binary Deobfuscation at the Global Cybersecurity Camp (GCC) Tokyo in 2020. Reverse engineering is not easy, especially if a binary code is obfuscated. Once obfuscation performed, the binary would not be analyzed accurately with naive techniques alone. In this course, you will learn obfuscation principles (especially used by malware), theory and practice of obfuscated code analysis, and how to write your own tool for deobfuscation. In particular, we delve into data-flow analysis and SAT/SMT-based binary analysis (e.g., symbolic execution) to render obfuscation ineffective.
+* **Security (Awareness) Training**<a name='aware'></a>
+	* [Security Training for Engineers - Pagerduty](https://sudo.pagerduty.com/for_engineers/)
+		* This is an open-source version of "Security Training for Engineers", PagerDuty's internal technical security training, open to all PagerDuty employees as part of our continuous security training program. Unlike our course for everyone, this course covers more technical topics and is more applicable to those in an engineering role. While it delves into various technical topics, it has been designed in such a way as it should be useful regardless of your skill level, whether you've just started your engineering career, or you've been doing this for years. While some of the material we present internally contains sensitive PagerDuty information, the majority consists of generic security lessons, presented in a light-hearted and informative way. Many employees asked for a version of the training they could share with friends and family. This site is the culmination of our efforts to do just that.
 * **Threat Hunting**<a name='th'></a>
 	* [Flow Analysis & Network Hunting](http://opensecuritytraining.info/Flow.html)
 		* This course focuses on network analysis and hunting of malicious activity from a security operations center perspective. We will dive into the netflow strengths, operational limitations of netflow, recommended sensor placement, netflow tools, visualization of network data, analytic trade craft for network situational awareness and networking hunting scenarios.
@@ -280,11 +302,15 @@
 		* [The Distribution of Users’ Computer Skills: Worse Than You Think](https://www.nngroup.com/articles/computer-skill-levels/)
 		* [LevelUP](https://www.level-up.cc/)
 			* Resources for the global digital safety training community.
+		* [Swim Don’t Sink: Why Training Matters to a Site Reliability Engineering Practice • Jennifer Petoff (2020)](https://www.youtube.com/watch?v=8iaNMMwozCc&app=desktop)
+			* This talk will explore the business case for training, the trade-offs between cost and effectiveness, and best practices for training design and deployment depending on where your organization lies on the spectrum of size and maturity.
 	* **Training**
 		* [How To Give A Digital Security Training](https://medium.com/@geminiimatt/how-to-give-a-digital-security-training-4c83af667d40)
 		* [Be a Better Trainer](https://www.level-up.cc/you-the-trainer/be-a-better-trainer/)
 		* [Teaching Evil - Chris Niemira](https://www.irongeek.com/i.php?page=videos/bsidescharm2017/bsidescharm-2017-t200-teaching-evil-chris-niemira)
 		* [Reflections on Teaching Wargame Design - James Fielder(War on the Rocks)](https://warontherocks.com/2020/01/reflections-on-teaching-wargame-design/)
+		* [How To Learn (And Teach) Hacking - Ruben Gonzalez(OWASP Amsterdam2019)](https://www.youtube.com/watch?v=p6IC-7Nx3r4)
+			* We started hacking a couple of years back, competing in capture the flag competitions. Hacking through the weekends and winning prizes sure was a lot of fun. But it‘s nothing compared to the joy of teaching offensive security to students and observing them surpass themselves every week. For multiple semesters now, we‘re teaching hacking to undergraduate students. Somehow we managed to make our course the most attended one in the whole bachelor program. Our lecture doesn't follow teacher centered methods, but utilizes problem based learning and lessons learned from capture the flag competitions. Since teaching also means learning, we worked in a lot of feedback from our students and aligned the contents of the course. In this talk we‘ll explain how to learn and teach this challenging topic, how to correctly use problem based learning in teaching and how to avoid typical pitfalls.
 	* **Writeups of experiences**
 		* [Scaling up Binary Exploitation Education Augmenting Esoteric Security Subjects with Gamification & Accessibility - Markus Gaasedelen, Patrick Biernat, Amy Burnett](https://blog.ret2.io/2018/09/11/scalable-security-education/)
 			* [Demo](https://wargames.ret2.systems/level/corruption)
@@ -300,12 +326,6 @@
 		* [The case for case studies of programming problems - Marcia C. Linn, Michael J Clancy](https://dl.acm.org/doi/10.1145/131295.131301)
 		* [The Effect of Reading Code Aloud on Comprehension: An Empirical Study with School Students - Alaaeddin  Swidan, Felienne Hermans](https://dl.acm.org/doi/10.1145/3300115.3309504)
 		* [Constructivism in computer science education - Mordechai Ben-Ari](https://dl.acm.org/doi/10.1145/274790.274308)
-
-
-
-
-
-
 
 
 

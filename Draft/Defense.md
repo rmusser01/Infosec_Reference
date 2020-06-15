@@ -62,19 +62,24 @@
 	* **S3**
 		* [Amazon S3 Bucket Public Access Considerations](https://aws.amazon.com/articles/5050)
 * **Blue Team Tactics & Stratgies** <a name="antired"></a>
-	* [So you want to beat the Red Team - sCameron Moore - Bsides Philly 2016](https://www.youtube.com/watch?list=PLNhlcxQZJSm8IHSE1JzvAH2oUty_yXQHT&v=BYazrXR_DFI&index=10&app=desktop) 
-	* [NorkNork - Tool for identifying Empire persistence payloads](https://github.com/n00py/NorkNork)
-	* [Removing Backdoors – Powershell Empire Edition - n00py](https://www.n00py.io/2017/01/removing-backdoors-powershell-empire-edition/)
-	* [ketshash](https://github.com/cyberark/ketshash)
-		* A little tool for detecting suspicious privileged NTLM connections, in particular Pass-The-Hash attack, based on event viewer logs.
-	* [Sysinternals Sysmon suspicious activity guide - blogs.technet](https://blogs.technet.microsoft.com/motiba/2017/12/07/sysinternals-sysmon-suspicious-activity-guide/)
-	* [Using an Expanded Cyber Kill Chain Model to Increase Attack Resiliency - Sean Malone - BHUSA16](https://www.youtube.com/watch?v=1Dz12M7u-S8)
-		* We'll review what actions are taken in each phase, and what's necessary for the adversary to move from one phase to the next. We'll discuss multiple types of controls that you can implement today in your enterprise to frustrate the adversary's plan at each stage, to avoid needing to declare "game over" just because an adversary has gained access to the internal network. The primary limiting factor of the traditional Cyber Kill Chain is that it ends with Stage 7: Actions on Objectives, conveying that once the adversary reaches this stage and has access to a system on the internal network, the defending victim has already lost. In reality, there should be multiple layers of security zones on the internal network, to protect the most critical assets. The adversary often has to move through numerous additional phases in order to access and manipulate specific systems to achieve his objective. By increasing the time and effort required to move through these stages, we decrease the likelihood of the adversary causing material damage to the enterprise. 
+	* **Articles/Blogposts/Writeups**
+		* [Removing Backdoors – Powershell Empire Edition - n00py](https://www.n00py.io/2017/01/removing-backdoors-powershell-empire-edition/)
+		* [Sysinternals Sysmon suspicious activity guide - blogs.technet](https://blogs.technet.microsoft.com/motiba/2017/12/07/sysinternals-sysmon-suspicious-activity-guide/)
+	* **Talks/Presentations/Videos**
+		* [So you want to beat the Red Team - sCameron Moore - Bsides Philly 2016](https://www.youtube.com/watch?list=PLNhlcxQZJSm8IHSE1JzvAH2oUty_yXQHT&v=BYazrXR_DFI&index=10&app=desktop) 
+		* [DIY Blue Teaming - Vyrus(ShellCon2018)](https://www.youtube.com/watch?v=9i7GA4Z2vcM&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN)
+			* "White hat", "black hat", "corporate", "criminal", no matter the context, "red" or offensive security practitioners tend to build their own tools in order to be successful. Weather it's to avoid paying high costs for "enterprise" level solutions, prototype new concepts, or simply "glue" solutions together that are otherwise not designed to play well with others, the accomplished attacker is also a tool smith. "What about the blue team!?" This talk aims to address just that by providing practical solutions to defender tasks that include but are not limited to: IPS/IDS, malware detection and defense, forensics, system hardening, and practical and expedient reverse engineering techniques.
+		* [Using an Expanded Cyber Kill Chain Model to Increase Attack Resiliency - Sean Malone - BHUSA16](https://www.youtube.com/watch?v=1Dz12M7u-S8)
+			* We'll review what actions are taken in each phase, and what's necessary for the adversary to move from one phase to the next. We'll discuss multiple types of controls that you can implement today in your enterprise to frustrate the adversary's plan at each stage, to avoid needing to declare "game over" just because an adversary has gained access to the internal network. The primary limiting factor of the traditional Cyber Kill Chain is that it ends with Stage 7: Actions on Objectives, conveying that once the adversary reaches this stage and has access to a system on the internal network, the defending victim has already lost. In reality, there should be multiple layers of security zones on the internal network, to protect the most critical assets. The adversary often has to move through numerous additional phases in order to access and manipulate specific systems to achieve his objective. By increasing the time and effort required to move through these stages, we decrease the likelihood of the adversary causing material damage to the enterprise. 
 		* [Slides](https://www.blackhat.com/docs/us-16/materials/us-16-Malone-Using-An-Expanded-Cyber-Kill-Chain-Model-To-Increase-Attack-Resiliency.pdf)
-	* [PE-sieve](https://github.com/hasherezade/pe-sieve)
-		* PE-sieve scans a given process, searching for the modules containing in-memory code modifications. When found, it dumps the modified PE.
-	* [Finding a Domain's Worth of Malware - Jeff McJunkin(WWHF19)](https://www.youtube.com/watch?v=DgxZ8ssuI_o)
-		* Are you tired of demonstrations of products that take months or years to get effective data from? How many products have you seen half-implemented (but fully paid for!) that didn’t ever deliver any real value to your organization? Here, I’ll discuss multiple free products that you can use next week to find evil inside your organization. Some techniques will find less advanced adversaries, and some will trip up even some of the most advanced ones - but they’ll all deliver value in less than a week of implementation, and I’ll discuss how you can integrate them and find the malware you already have in your environment. “Assume breach”...then find it!
+		* [Finding a Domain's Worth of Malware - Jeff McJunkin(WWHF19)](https://www.youtube.com/watch?v=DgxZ8ssuI_o)
+			* Are you tired of demonstrations of products that take months or years to get effective data from? How many products have you seen half-implemented (but fully paid for!) that didn’t ever deliver any real value to your organization? Here, I’ll discuss multiple free products that you can use next week to find evil inside your organization. Some techniques will find less advanced adversaries, and some will trip up even some of the most advanced ones - but they’ll all deliver value in less than a week of implementation, and I’ll discuss how you can integrate them and find the malware you already have in your environment. “Assume breach”...then find it!
+	* **Tools**
+		* [NorkNork - Tool for identifying Empire persistence payloads](https://github.com/n00py/NorkNork)
+		* [ketshash](https://github.com/cyberark/ketshash)
+			* A little tool for detecting suspicious privileged NTLM connections, in particular Pass-The-Hash attack, based on event viewer logs.
+		* [PE-sieve](https://github.com/hasherezade/pe-sieve)
+			* PE-sieve scans a given process, searching for the modules containing in-memory code modifications. When found, it dumps the modified PE.
 * **Application Whitelisting** <a name="whitelist"></a>
 	* [Guide to Application Whitelisting - NIST Special Publication 800 - 167](http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-167.pdf)
 * **Attack Surface Analysis/Reduction** <a name="asa"></a>
@@ -102,6 +107,8 @@
 * **(General) Hardening** <a name="hardening"></a>
 	* **101**
 		* [Why Does the Penetration Testing Team Hate Me? - Ryan Oberfelder](https://medium.com/@ryoberfelder/why-does-the-penetration-testing-team-hate-me-67a981c5e10c)
+	* **Databases**
+		* [MongoDB Security Checklist](https://docs.mongodb.com/manual/administration/security-checklist/)
 	* **Guides**
 		* [ERNW Repository of Hardening Guides](https://github.com/ernw/hardening)
 		* [OWASP Secure Configuration Guide](https://www.owasp.org/index.php/Secure_Configuration_Guide)
@@ -131,6 +138,7 @@
 			* This repository contains various hardening guides compiled by ERNW for various purposes. Most of those guides strive to provide a baseline level of hardening and may lack certain hardening options which could increase the security posture even more (but may have impact on operations or required operational effort).
 		* [Awesome Windows Domain Hardening](https://github.com/PaulSec/awesome-windows-domain-hardening/blob/master/README.md)
 		* [Windows 10 Hardening Checklist](https://github.com/0x6d69636b/windows_hardening)
+		* [Windows 10 Security Checklist Starter Kit - itprotoday](https://www.itprotoday.com/industry-perspectives/windows-10-security-checklist-starter-kit)
 * **Google** <a name="google"></a>
 	* **G-Suite**
 		* [Securing G Suite - Megan Roddie](https://blog.reconinfosec.com/securing-g-suite/)
@@ -172,6 +180,9 @@
 	* **General**
 		* [macOS-Security-and-Privacy-Guide](https://github.com/drduh/macOS-Security-and-Privacy-Guide)
 			*  A practical guide to securing macOS.
+			* [Apple Platform Security Guide(Spring2020)](https://manuals.info.apple.com/MANUALS/1000/MA1902/en_US/apple-platform-security-guide.pdf)
+			* [Behind the scenes of iOS and Mac Security - Ivan Krstić(BHUSA 19)](https://www.youtube.com/watch?v=3byNNUReyvE)
+				* The Find My feature in iOS 13 and macOS Catalina enables users to receive help from other nearby Apple devices in finding their lost Macs, while rigorously protecting the privacy of all participants. We will discuss our efficient elliptic curve key diversification system that derives short non-linkable public keys from a user’s keypair, and allows users to find their offline devices without divulging sensitive information to Apple.
 	* **Application Whitelisting**
 		* [Santa](https://github.com/google/santa)
 			* Santa is a binary whitelisting/blacklisting system for macOS. It consists of a kernel extension that monitors for executions, a userland daemon that makes execution decisions based on the contents of a SQLite database, a GUI agent that notifies the user in case of a block decision and a command-line utility for managing the system and synchronizing the database with a server.
@@ -186,6 +197,11 @@
 			* A kernel network manager with monitoring and limiting capabilities for macOS.
 		* [OverSight](https://objective-see.com/products/oversight.html)
 			* OverSight monitors a mac's mic and webcam, alerting the user when the internal mic is activated, or whenever a process accesses the webcam.
+* **Personal PKI Infra**
+	* [Run your own private CA & ACME server using step-ca - Mike Malone](https://smallstep.com/blog/private-acme-server/)	
+		* With today’s release (v0.13.0), you can now use ACME to get certificates from step-ca(certificates). ACME (RFC8555) is the protocol that Let’s Encrypt uses to automate certificate management for websites.
+	* [certificates](https://github.com/smallstep/certificates)
+		* A private certificate authority (X.509 & SSH) & ACME server for secure automated certificate management, so you can use TLS everywhere & SSO for SSH.
 * **Phishing** <a name="phishing"></a>
 	* **101**
 		* See 'Phishing.md'
@@ -211,6 +227,16 @@
 	* [Decryptonite](https://github.com/DecryptoniteTeam/Decryptonite)
 		* Decryptonite is a tool that uses heuristics and behavioural analysis to monitor for and stop ransomware.
 * **User Awareness Training** <a name="uat"></a>
+* **User-Profiling**
+	* **Articles/Blogposts/Writeups**
+		* [Browser fingerprints for a more secure web - Julien Sobrier & Ping Yan(OWASP AppSecCali2019)](https://www.youtube.com/watch?v=P_nYYsaVi1w&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=30&t=0s)
+		* [Stealthier Attacks and Smarter Defending with TLS Fingerprinting - Lee Brotherston(SecTor2015)](http://2015.video.sector.ca/video/144175700)
+			* [Slides from Derbycon for the same talk](https://www.slideshare.net/LeeBrotherston/tls-fingerprinting-stealthier-attacking-smarter-defending-derbycon)
+		* [Moloch + Suricata + JA3 - Anton](https://haveyousecured.blogspot.com/2018/10/moloch-suricata-ja3.html)
+			* Inspired by the awesome Derbycon talk by John Althouse I wanted to give JA3 a try. After some Googling around the easiest way seemed like installing Moloch which has JA3 support baked in. This post is just a brief overview how to set this up and start exploring JA3 hashes. As a bonus, I also configured Suricata support for Moloch.
+	* **Talks/Presentations/Videos**
+		* [Baselining Behavior Tradecraft through Simulations - Dave Kennedy(WWHF19)](https://www.youtube.com/watch?v=DgxZ8ssuI_o)
+			* With the adoption of endpoint detection and response tools as well as a higher focus on behavior detection within organizations, when simulating an adversary it's important to understand the systems you are targeting. This talk will focus on the next evolution of red teaming and how defeating defenders will take more work and effort. This is a good thing! It's also proof that working together (red and blue) collectively, we can make our security programs more robust in defending against attacks. This talk will dive into actual simulations where defenders have caught us as well as ways that we have circumvented even some of the best detection programs out there today. Let's dive into baselining behavior and refining our tradecraft to evade detection and how we can use that to make blue better.
 * **Web Applications**
 	* **Tools**
 		* [Caja](https://developers.google.com/caja/)
@@ -425,7 +451,7 @@
 		* [Detecting Lateral Movement through Tracking Event Logs - JPCERTCC](https://www.jpcert.or.jp/english/pub/sr/ir_research.html)
 		* [Detecting Lateral Movements in Windows Infrastructure - CERT-EU](http://cert.europa.eu/static/WhitePapers/CERT-EU_SWP_17-002_Lateral_Movements.pdf)
 		* [Designing a Multilayered, In-Depth Defense Approach to AD Security - Quest.com](https://www.quest.com/docs/designing-a-multilayered-in-depth-defense-approach-to-ad-security-white-paper-22453.pdf)
-		* [Get rid of accounts that use Kerberos Unconstrained Delegation - Willem Kasdorp(blogs.technet)](https://blogs.technet.microsoft.com/389thoughts/2017/04/18/get-rid-of-accounts-that-use-kerberos-unconstrained-delegation/)
+			* There are a number of configuration options we recommend for securing high privileged accounts. One of them, enabling 'Account is sensitive and cannot be delegated', ensures that an account’s credentials cannot be forwarded to other computers or services on the network by a trusted application.
 		* [New features in Active Directory Domain Services in Windows Server 2012, Part 11: Kerberos Armoring (FAST) - Sander Berkouwer](https://dirteam.com/sander/2012/09/05/new-features-in-active-directory-domain-services-in-windows-server-2012-part-11-kerberos-armoring-fast/)
 		* [Protect your enterprise data using Windows Information Protection (WIP) - docs.ms](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
 	* **Just Enough Administration (JEA)**
@@ -444,6 +470,7 @@
 		* [Kerberos & KRBTGT: Active Directory’s Domain Kerberos Service Account - adsecurity.org](https://adsecurity.org/?p=483)
 		* [KRBTGT Account Password Reset Scripts now available for customers - Tim Rains(Ms.com)](https://www.microsoft.com/security/blog/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/)
 		* [AD Forest Recovery - Resetting the krbtgt password - docs.ms](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password)
+		* [PowerShell Script To Reset The KrbTgt Account Password/Keys For Both RWDCs And RODCs - Jorge](https://jorgequestforknowledge.wordpress.com/2020/04/06/powershell-script-to-reset-the-krbtgt-account-password-keys-for-both-rwdcs-and-rodcs-update-5/)
 	* **LLMNR/NBNS**
 		* [Conveigh](https://github.com/Kevin-Robertson/Conveigh)
 			* Conveigh is a Windows PowerShell LLMNR/NBNS spoofer detection tool. LLMNR/NBNS requests sent by Conveigh are not legitimate requests to any enabled LLMNR/NBNS services. The requests will not result in name resolution in the event that a spoofer is present.
@@ -508,6 +535,8 @@
 			* [More Detecting Obfuscated PowerShell](http://www.leeholmes.com/blog/2016/10/22/more-detecting-obfuscated-powershell/)
 			* [Detecting and Preventing PowerShell Downgrade Attacks - leeholmes](http://www.leeholmes.com/blog/2017/03/17/detecting-and-preventing-powershell-downgrade-attacks/)
 			* [Creating a Secure Environment using PowerShell Desired State Configuration - blogs.ms](https://blogs.msdn.microsoft.com/powershell/2014/07/21/creating-a-secure-environment-using-powershell-desired-state-configuration/)
+			* [Securing PowerShell in the Enterprise - Australian Cyber Security Center(2020)](https://www.cyber.gov.au/publications/securing-powershell-in-the-enterprise)
+				* This document describes a maturity framework for PowerShell in a way that balances the security and business requirements of organisations. This maturity framework will enable organisations to take incremental steps towards securing PowerShell across their environment.
 		* **Talks & Presentations**
 			* [Hijacking .NET to Defend PowerShell - Amanda Rousseau(BSidesSF 2017)](https://www.youtube.com/watch?v=YXjIVuX6zQk)
 			* [Automating security with PowerShell, Jaap Brasser (@Jaap_Brasser)](https://www.youtube.com/watch?v=WOC8vC2KoNs&index=12&list=PLwZycuzv10iLBFwRIWNAR-s4iuuUMRuEB)
@@ -680,12 +709,17 @@
 * **Articles/Blogposts/Writeups**
 	* [Vulnerability Management Program Best Practices – Irfahn Khimji](https://www.tripwire.com/state-of-security/vulnerability-management/vulnerability-management-program-best-practices-part-1/)
 	* [The Five Stages of Vulnerability Management - Irfahn Khimji](https://www.tripwire.com/state-of-security/vulnerability-management/the-five-stages-of-vulnerability-management/)
-	* [Building a VulnerabilityManagement Program: A project management approach - Wylie Shanks(2015)](https://www.sans.org/reading-room/whitepapers/projectmanagement/building-vulnerability-management-program-project-management-approach-35932)
-    	* Abstract: This paper examines the critical role of project management in building a successful vulnerability management program. This paper outlines how organizational risk and regulatory compliance needs can be addressed through a "Plan-Do-Check-Act" approach to a vulnerability management program.
+	* [Who Fixes That Bug? - Part One: Them! - Ryan McGeehan](https://medium.com/starting-up-security/who-fixes-that-bug-d44f9a7939f2)
+		* [Part 2](https://medium.com/starting-up-security/who-fixes-that-bug-f17d48443e21)
 * **Identifying Assets**
-	* [PowerShell: Documenting your environment by running systeminfo on all Domain-Computers - Patrick Gruenauer](https://sid-500.com/2017/08/09/powershell-documenting-your-environment-by-running-systeminfo-on-all-domain-computers/)
-	* [A Faster Way to Identify High Risk Windows Assets - Scott Sutherland](https://blog.netspi.com/a-faster-way-to-identify-high-risk-windows-assets/)
-		* "In this blog I took a quick look at how common Active Directory mining techniques used by the pentest community can also be used by the blue teams to reduce the time it takes to identify high risk Windows systems in their environments."
+	* **Local Networks**
+		* [PowerShell: Documenting your environment by running systeminfo on all Domain-Computers - Patrick Gruenauer](https://sid-500.com/2017/08/09/powershell-documenting-your-environment-by-running-systeminfo-on-all-domain-computers/)
+		* [A Faster Way to Identify High Risk Windows Assets - Scott Sutherland](https://blog.netspi.com/a-faster-way-to-identify-high-risk-windows-assets/)
+			* "In this blog I took a quick look at how common Active Directory mining techniques used by the pentest community can also be used by the blue teams to reduce the time it takes to identify high risk Windows systems in their environments."
+	* **Cloud**
+		* [Lyft Cartography: Automating Security Visibility and Democratization - Sacha Faust(BSidesSF2019)](https://www.youtube.com/watch?v=ZukUmZSKSek)
+			* Lyft Security Intelligence team mission is to "Empower the company to make informed and automated security decisions." To achieve our mission, we invested in our cartography capabilities that aim at keeping track of our assets but most importantly, the relationship and interaction between them. The talk provides insight on an intelligence service solution implemented by Lyft Security Intelligence team to tackle knowledge consolidation and improve decision making. Attendees of this session will be introduced to the platform we implemented along with a broad set of scenarios that allow us to burndown security debt, detect assumptions drift, and enable teams to explore their service and environment. Furthermore, Lyft will release the platform to the open source community as part of the conference and provide details on how it can be extended to adapt to each need.
+		* [Overcoming the old ways of working with DevSecOps - Culture, Data, Graph, and Query - Erkang Zheng(2019)](https://www.slideshare.net/ErkangZheng/overcoming-the-old-ways-of-working-with-devsecops-culture-data-graph-and-query)
 * **Measuring Maturity**
 	* Vulnerability Management Maturity Models – Trip Wire: https://traviswhitney.com/2016/05/02/vulnerability-management-maturity-models-trip-wire/
 	* Capability Maturity Model(Wikipedia): https://en.wikipedia.org/wiki/Capability_Maturity_Model
@@ -696,6 +730,18 @@
 	* [Nessus v2 File Format - Tenable](https://static.tenable.com/documentation/nessus_v2_file_format.pdf)
 * **Talks & Presentations**
 	* [SANS Webcast: Beyond Scanning Delivering Impact Driven Vulnerability Assessments - Matthew Toussain](https://www.youtube.com/watch?v=-ObkJ03UcN0)
+	* [Practical Approach to Automate the Discovery & Eradication of Open-Source Software Vulnerabilitie - Aladdin Almubayed](https://www.youtube.com/watch?v=ks9J0uZGMh0&list=PLH15HpR5qRsWrfkjwFSI256x1u2Zy49VI&index=1)
+		* Over the last decade, there has been steady growth in the adoption of open-source components in modern web applications. Although this is generally a good trend for the industry, there are potential risks stemming from this practice that requires careful attention. In this talk, we will describe a simple but pragmatic approach to identifying and eliminating open-source vulnerabilities in Netflix applications at scale.
+	* [Network gravity: Exploiring a enterprise network - Casey Martin(BSides Tampa2020)](https://www.irongeek.com/i.php?page=videos/bsidestampa2020/track-d-01-network-gravity-exploiring-a-enterprise-network-casey-martin)
+		*  Enterprise networks are often complex, hard to understand, and worst of all - undocumented. Few organizations have network diagrams and asset management systems and even fewer organizations have those that are effective and up to date. Leveraging an organization's SIEM or logging solution, network diagrams and asset inventories can be extrapolated from this data through the 'gravity' of the network. Similar to our solar system and galaxy, even if you cannot confirm or physically see an object, you can measure the forces of gravity it exerts on the observable objects around it that we do know about. For example, unconfirmed endpoints can be enumerated by the authentication activity they register on known domain controllers. The inferred list of endpoints and their network addresses can begin to map out logical networks. The unpolished list of logical networks can be mapped against known egress points to identify physical networks and potentially identify undiscovered egress points and the technologies that exist at the egress points. As more objects are extrapolated and inferred, the more accurate the model of your enterprise network will become. Through this iterative and repeatable process, network diagrams and asset inventories can be drafted, further explored, refined, and ultimately managed. Even the weakest of observable forces can create fingerprints that security professionals can leverage to more effectively become guardians of the galaxy.
+	* [We detected a severe vulnerability, why is nobody listening? An Introduction to Product Management](https://www.youtube.com/watch?v=nz9duF9JeBc&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN&index=11)
+		* Have you ever wondered why one of your high-priority vulnerabilities got rejected or delayed even though you thought it was foolish of your company not to implement it in a timely fashion? You probably got slowed down or stopped by the gatekeepers to engineering resources namely product management. However, what product management entails and what the goals of product management are, is rarely explained. I lead a group of product managers in a medical software company, and it is my job to decide which projects make it into the engineering/R&D backlog and which ones are being delayed or even eliminated. I will share the decision-making process and critical questions that need to be answered by any project to make it onto the shortlist. In this presentation, I will provide a view of product management from the inside. Once everybody understands what product management is, what product managers do, why he or she does it, and what his or her decision process is, we can improve the chances of critical IT projects or vulnerability fixes to be completed on time. I believe that together we can build better and more secure products when we understand each other's motivators and goals.
+	* [The Art of Vulnerability Management - Alexandra Nassar, Harshil Parikh(OWASP AppSecCali 2019)](https://www.youtube.com/watch?v=EkyY1q2-JBI&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=44)
+		* To summarize, in this talk we will discuss the pain points that most organizations face in getting traction to vulnerability remediation, how we decided to tackle the challenge, the solution we built and how we drove accountability to improve metrics. We will talk about the key decisions we made that the audience can relate to and improve their own vulnerability management program. Finally, we will show templates of our Jira boards, metrics and charts that helped in measuring success of the program.
+* **Papers**
+	* [Implementing a Vulnerability Management Process - Tom Palmaers(SANS2013)](https://www.sans.org/reading-room/whitepapers/threats/paper/34180)
+	* [Building a VulnerabilityManagement Program: A project management approach - Wylie Shanks(2015)](https://www.sans.org/reading-room/whitepapers/projectmanagement/building-vulnerability-management-program-project-management-approach-35932)
+    	* Abstract: This paper examines the critical role of project management in building a successful vulnerability management program. This paper outlines how organizational risk and regulatory compliance needs can be addressed through a "Plan-Do-Check-Act" approach to a vulnerability management program.
 * **CVSS-related**
     * [Towards Improving CVSS - CMU SEI](https://resources.sei.cmu.edu/asset_files/WhitePaper/2018_019_001_538372.pdf)
     * [When CVSS Fits and When it Doesn’t(NCC Group)](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2016/may/when-cvss-fits-and-when-it-doesnt/)
@@ -705,73 +751,11 @@
 * **Tools**
 	* [Vuls](https://github.com/future-architect/vuls)
 		* Agent-less vulnerability scanner for Linux, FreeBSD, Container Image, Running Container, WordPress, Programming language libraries, Network devices 
-
-
-### Sort
-
-
-* [Improving the Security of Authentication in an AD DS Domain(2011) - Dan Holme, Jason Kellington, Danielle Ruest, Nelson Ruest](https://www.microsoftpressstore.com/articles/article.aspx?p=2224364&seqNum=2)
-
-
-* [Apple Platform Security Guide(2019)](https://manuals.info.apple.com/MANUALS/1000/MA1902/en_US/apple-platform-security-guide.pdf)
-* [Behind the scenes of iOS and Mac Security - Ivan Krstić(BHUSA 19)](https://www.youtube.com/watch?v=3byNNUReyvE)
-	* The Find My feature in iOS 13 and macOS Catalina enables users to receive help from other nearby Apple devices in finding their lost Macs, while rigorously protecting the privacy of all participants. We will discuss our efficient elliptic curve key diversification system that derives short non-linkable public keys from a user’s keypair, and allows users to find their offline devices without divulging sensitive information to Apple.
-* **User-Profiling**
-	* [Browser fingerprints for a more secure web - Julien Sobrier & Ping Yan(OWASP AppSecCali2019)](https://www.youtube.com/watch?v=P_nYYsaVi1w&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=30&t=0s)
-	* [Stealthier Attacks and Smarter Defending with TLS Fingerprinting - Lee Brotherston(SecTor2015)](http://2015.video.sector.ca/video/144175700)
-		* [Slides from Derbycon for the same talk](https://www.slideshare.net/LeeBrotherston/tls-fingerprinting-stealthier-attacking-smarter-defending-derbycon)
-	* [Moloch + Suricata + JA3 - Anton](https://haveyousecured.blogspot.com/2018/10/moloch-suricata-ja3.html)
-		* Inspired by the awesome Derbycon talk by John Althouse I wanted to give JA3 a try. After some Googling around the easiest way seemed like installing Moloch which has JA3 support baked in. This post is just a brief overview how to set this up and start exploring JA3 hashes. As a bonus, I also configured Suricata support for Moloch.
-* **Mobile Device Management**
-	* [Mobile device management - docs.ms](https://docs.microsoft.com/en-us/windows/client-management/mdm/)
-		* Windows 10 provides an enterprise management solution to help IT pros manage company security policies and business applications, while avoiding compromise of the users’ privacy on their personal devices. A built-in management component can communicate with the management server.
-* **PKI Infra**
-	* [Run your own private CA & ACME server using step-ca - Mike Malone](https://smallstep.com/blog/private-acme-server/)	
-		* With today’s release (v0.13.0), you can now use ACME to get certificates from step-ca(certificates). ACME (RFC8555) is the protocol that Let’s Encrypt uses to automate certificate management for websites.
-	* [certificates](https://github.com/smallstep/certificates)
-		* A private certificate authority (X.509 & SSH) & ACME server for secure automated certificate management, so you can use TLS everywhere & SSO for SSH. 
-
-* [Baselining Behavior Tradecraft through Simulations - Dave Kennedy(WWHF19)](https://www.youtube.com/watch?v=DgxZ8ssuI_o)
-	* With the adoption of endpoint detection and response tools as well as a higher focus on behavior detection within organizations, when simulating an adversary it's important to understand the systems you are targeting. This talk will focus on the next evolution of red teaming and how defeating defenders will take more work and effort. This is a good thing! It's also proof that working together (red and blue) collectively, we can make our security programs more robust in defending against attacks. This talk will dive into actual simulations where defenders have caught us as well as ways that we have circumvented even some of the best detection programs out there today. Let's dive into baselining behavior and refining our tradecraft to evade detection and how we can use that to make blue better.
-
-* [x33fcon 2019 - Keynote by Aaron Wade](https://www.youtube.com/watch?v=IRmlOxGGZhY&list=PL7ZDZo2Xu333TCnxQwn7Y2dHtPiE-RFwh)
-
-
-AuditD
-	* [A Linux Auditd rule set mapped to MITRE's Attack Framework](https://github.com/bfuzzy/auditd-attack)
-
-* [Disrupting the KillChain - Amanda Berlin](https://docs.google.com/spreadsheets/d/1J0swcA1Phb4mh-Pj8eR9ZEAIm5GEtz0UklP9YhVUbEY/edit#gid=0)
-
-* [Assess your data potential with ATTACK Datamap - Olaf Hartong](https://medium.com/@olafhartong/assess-your-data-potential-with-att-ck-datamap-f44884cfed11)
-
-* [Security Fun: Bloodhound, MS16-072 and GPO Discoverability - Darren Mar-Elia](https://sdmsoftware.com/group-policy-blog/security-related/security-fun-bloodhound-ms16-072-gpo-discoverability/)
-
-* [Windows Admin Center - ms](https://www.microsoft.com/en-us/cloud-platform/windows-admin-center)
-	* Windows Admin Center is your remote management tool for Windows Server running anywhere–physical, virtual, on-premises, in Azure, or in a hosted environment–at no additional cost.
-
-* [WSUS in the Real World (Under construction) - DecentSecurity](https://decentsecurity.com/enterprise/#/real-world-wsus/)
-
-* [Red vs Blue: The Untold Chapter - Aaron Herndon, Thomas Somerville(GrrCon2018)](http://www.irongeek.com/i.php?page=videos/grrcon2018/grrcon-2018-lovelace10-red-vs-blue-the-untold-chapter-aaron-herndon-thomas-somerville)
-
-
-
-* [Windows 10 Security Checklist Starter Kit - itprotoday](https://www.itprotoday.com/industry-perspectives/windows-10-security-checklist-starter-kit)
-
-* [Application Whitelist Auditor - 	airlockdigital](https://www.airlockdigital.com/application-whitelisting-auditor/)
-
-* [iconSimple Software-Restriction Policy - iwrconsultancy](https://iwrconsultancy.co.uk/softwarepolicy)
-
-* [Recon by Fire](https://github.com/HewlettPackard/reconbf)
-	* Recon is a tool for reviewing the security configuration of a local system. It can detect existing issues, known-insecure settings, existing strange behaviour, and options for further hardening. Recon can be used in existing systems to find out which elements can be improved and can provide some information about why the change is recommended. It can also be used to scan prepared system images to verify that they contain the expected protection.
-
-* [Stored passwords found all over the place after installing Windows in company networks :( - Sami Laiho](http://blog.win-fu.com/2017/08/stored-passwords-found-all-over-place.html)
-
-* [Protect Yourself From Malicious PKI Administrator – Role Separation In PKI - Paula Januszkiewicz](https://cqureacademy.com/blog/securing-infrastructure/role-separation-pki)
-
-* [Cost Effective Drone Detection - Alex Farrant](https://www.contextis.com/en/blog/cost-effective-drone-detection)
-
-* [Windows 10 in S mode FAQ - support.ms](https://support.microsoft.com/en-us/help/4020089/windows-10-in-s-mode-faq)
-	* Windows 10 in S mode is a version of Windows 10 that's streamlined for security and performance, while providing a familiar Windows experience. To increase security, it allows only apps from the Microsoft Store, and requires Microsoft Edge for safe browsing.
-
-* [All your creds are belong to us! - Alex Weinert](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/all-your-creds-are-belong-to-us/ba-p/855124)
-	* MFA & Azure
+	* [ArcherySec](https://github.com/archerysec/archerysec)
+		* Centralize Vulnerability Assessment and Management for DevSecOps Team
+	* [Scumblr](https://github.com/Netflix-Skunkworks/Scumblr)
+		* Web framework that allows performing periodic syncs of data sources and performing analysis on the identified results
+	* [Predator](https://github.com/s0md3v/Predator)
+		* Predator is a prototype web application designed to demonstrate anti-crawling, anti-automation & bot detection techniques. It can be used a honeypot, anti-crawling system or a false positive test bed for vulnerability scanners.
+	* [DefectDojo](https://github.com/DefectDojo/django-DefectDojo)
+		* DefectDojo is a security program and vulnerability management tool. DefectDojo allows you to manage your application security program, maintain product and application information, schedule scans, triage vulnerabilities and push findings into defect trackers. Consolidate your findings into one source of truth with DefectDojo.

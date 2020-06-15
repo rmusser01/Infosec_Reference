@@ -52,6 +52,8 @@
 		* [InfoSec Newbie List by Mubix](https://gist.github.com/mubix/5737a066c8845d25721ec4bf3139fd31)
 		* [infosec_getting_started](https://github.com/gradiuscypher/infosec_getting_started)
 			* A collection of resources/documentation/links/etc to help people learn about Infosec and break into the field.
+		* [Brandolini's Law - Wikipedia](https://en.wikipedia.org/wiki/Brandolini%27s_law)
+			* Brandolini's law, also known as the bullshit asymmetry principle, is an internet adage which emphasizes the difficulty of debunking bullshit: "The amount of energy needed to refute bullshit is an order of magnitude bigger than to produce it."
 	* **Computer Science**
 		* [40 Key Computer Science Concepts Explained In Layman’s Terms - carlcheo.com](http://carlcheo.com/compsci)
 		* [Software Engineering Body of Knowledge (SWEBOK) - IEEE](https://www.computer.org/education/bodies-of-knowledge/software-engineering)
@@ -150,6 +152,7 @@
 			* I’ll summarize and distill the insights, unique tips and tricks, and actionable lessons learned from a vast number of DevSecOps/modern AppSec talks and blog posts, saving attendees 100s of hours. I’ll show where we’ve been, where we’re going, and provide a lengthy bibliography for further review.
 	* **Articles/Blogposts/Writeups**
 		* [Scaling Appsec at Netflix - Astha Singhal](https://medium.com/@NetflixTechBlog/scaling-appsec-at-netflix-6a13d7ab6043)
+		* [Building analysts from the ground up - Jack Crook](https://findingbad.blogspot.com/2016/09/building-analysts-from-ground-up.html)
 	* **Talks/Presentations/Videos**
 		* [DevSecOps State of the Union - Clint Gibler(BSidesSF 2019)](https://www.youtube.com/watch?v=AusPKzwNnMg)
 			* Many companies have shared their lessons learned in scaling their security efforts, leading to hundreds of blog posts and conference talks. Sharing knowledge is fantastic, but when you're a busy AppSec engineer or manager struggling to keep up with day-to-day requirements, it can be difficult to stay on top of or even be aware of relevant research. This talk will summarize and distill the unique tips and tricks, lessons learned, and tools discussed in a vast number of blog posts and conference talks over the past few years and combine it with knowledge gained from in-person discussions with AppSec engineers at a number of companies with mature security teams. Topics covered will include: Principles, mindsets, and methodologies of highly effective AppSec teams, Best practices in developing security champions and building a positive security culture, High value engineering projects that can prevent classes of bugs, How and where to integrate security automation into the CI/CD process in a high signal, low noise way, Open source tools that help with one or more of the above. Attendees will leave this talk with an understanding of the current state of the art in DevSecOps, links to tools they can use, resources where they can dive into specific topics of interest, and most importantly an actionable path forward for taking their security program to the next level.
@@ -166,6 +169,7 @@
 			* In this presentation, Koen will share his experiences with Product Teams at Riot Games and how those teams do or do not take security into consideration. Every product team is unique; but they all behave in similar security patterns, and care about security in predictable ways. Using metrics of our Bug Bounty program and security review process, we’ll dissect the impact that team culture and process have on the security posture of a product. The framework that we’ve created allows you to quickly see what makes a good team good, and how other teams can improve. Taking into account how agile organisations want to operate, we will look at some tools you can introduce into your product teams to help raise the security bar.
 		* [The Call is Coming From Inside the House: Lessons in Securing Internal Apps - Hongyi Hu(OWASP AppSec Cali 2019)](https://www.youtube.com/watch?v=c9A8v5hiqoA&t=0s&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=28)
 			* Come hear a dramatic and humorous tale of internal appsec and the technical and management lessons we learned along the way. Even if your focus is on securing external apps, this talk will be relevant for you. You’ll hear about what worked well for us and what didn’t, including: Finding a useful mental model to organize your roadmap; Starting with the basics: authn/z, TLS, etc.; Rolling out Content Security Policy; Using SameSite cookies as a powerful entry point regulation mechanism; Leveraging WAFs for useful detection and response; Using internal apps as a training ground for new security engineers
+		* [Jumpstarting Your Appsec Program - Julia Knecht & Jacob Lords(BSidesSLC 2020)](https://www.youtube.com/watch?v=Wgob-wbQ26w&list=PLqVzh0_XpLfSJ2Okt38acDdO_xu2zKYmK&index=17&t=0s)
 * **Building a Security Team**<a name="buildteam"></a>
 	* [How to Build a Security Team and Program - Coleen Coolidge(BSidesSF2017)](https://www.youtube.com/watch?v=b0r5vc_eCoU&feature=youtu.be)
 * **Red Team, Blue Team, Purple Team, Green Team**<a name='team'></a>
@@ -248,6 +252,7 @@
 				* [Linux Command Line](https://github.com/learnbyexample/Linux_command_line)
 					* Introduction to Linux commands and Shell scripting
 				* [Linux Productivity Tools](https://code.ornl.gov/km0/lisa19)
+					* Highly recommend.
 				* [Don Libes' Expect: A Surprisingly Underappreciated Unix Automation Tool - Robert Elder](https://blog.robertelder.org/don-libes-expect-unix-automation-tool/)
 				* [mastering-zsh](https://github.com/rothgar/mastering-zsh)
 			* **Videos**

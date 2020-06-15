@@ -47,33 +47,73 @@
 		* The Incident Response Hierarchy is modeled after [Maslow's Hierarchy of Needs](https://github.com/swannman/ircapabilities). It describes the capabilities that organizations must build to defend their business assets.
 	* [SCORE: Law Enforcement FAQ - SANS(2004)](https://www.sans.org/score/law-enforcement-faq/)
 		* If we are going to turn the tide against computer attacks, the entire information security community must cooperate more effectively than ever before. The private sector, government agencies, and law enforcement must cooperate in responding to computer attacks. Yet, many security personnel aren't familiar with how to engage law enforcement effectively. For example, when should you call local or national law enforcement to help handle a case? How can you develop communication channels with law enforcement? This FAQ addresses these questions and more, with the goal of helping to foster communication with the law enforcement community. This project was developed as part of the SANS Institute's Cyber Defense Initiative ® (CDI). Each year, SANS polls the security community for ideas about CDI collaborative projects we can all use to help improve our security. Volunteers from around the world pour enormous amounts of effort to bring these projects to fruition, including this FAQ.
-* **Articles/Blogposts/Writeups**
-	* [No Easy Breach: Challenges and Lessons Learned from an Epic Investigation](https://archive.org/details/No_Easy_Breach#)
-	* [Handler Diaries - Another Hunting Post(DFIR)](http://blog.handlerdiaries.com/?p=775)
-		* Good post on not only knowing the layout, but knowing expected behaviours.
-	* [Triaging Malware Incidents](http://journeyintoir.blogspot.com/2013/09/triaging-malware-incidents.html)
-		* Good writeup/blogpost from Journey into Incidence Response
-	* [SANS Institute Security Consensus Operational Readiness Evaluation](https://www.sans.org/media/score/checklists/LinuxCheatsheet_2.pdf)
-	* [Security Breach 101 - Ryan McGeehan](https://medium.com/starting-up-security/security-breach-101-b0f7897c027c)
-	* [Security Breach 102 - Ryan McGeehan](https://medium.com/starting-up-security/security-breach-102-d5fc88c5660f)
-	* [Learning From A Year of Security Breaches - Ryan McGeehan](https://medium.com/starting-up-security/learning-from-a-year-of-security-breaches-ed036ea05d9b)
-	* [VirusTotal is not an Incident Responder - Matt Benton](https://medium.com/maverislabs/virustotal-is-not-an-incident-responder-80a6bb687eb9)
-		* This post is designed for both Defenders and fellow Red Teamers. For Defenders, I hope to shed some light on how attackers can manipulate VirusTotal’s URL link scanning to provide clean responses. For Red Teamers, this is just information to add to the toolkit on how to emulate an adversary and challenge Defenders to not make all decisions based on a VirusTotal response.
-	* **Cloud**
-		* [Scalable infrastructure for investigations and incident response - MSRC Team(2019)](https://msrc-blog.microsoft.com/2019/08/30/scalable-infrastructure-for-investigations-and-incident-response/)
-		* [Digital Forensic Analysis of Amazon Linux EC2 Instances - Ken Hartman(2018)](https://www.sans.org/reading-room/whitepapers/cloud/digital-forensic-analysis-amazon-linux-ec2-instances-38235)
-		* [Incident Response in Amazon EC2: First Responders Guide to Security Incidents in the Cloud - Tom Arnold(2016)](https://www.sans.org/reading-room/whitepapers/incident/paper/36902)
-			* As Head of Digital Forensics for Payment Software Company Inc. (“PSC”), a company that focuses exclusively on Clients that accept or process payments,1 we’ve responded to sites operating within cloud environments, most notably Amazon EC2.
-		* [Hardening AWS Environments and Automating Incident Response for AWS Compromises - Andrew Krug, Alex McCormack, Joel Ferrier, Jeff Parr](https://www.blackhat.com/docs/us-16/materials/us-16-Krug-Hardening-AWS-Environments-And-Automating-Incident-Response-For-AWS-Compromises-wp.pdf)
-		* [Building a Cloud-Specific Incident Response Plan - AWS Security Team(2017)](https://aws.amazon.com/blogs/publicsector/building-a-cloud-specific-incident-response-plan/)
-		* [Hardening AWS Environments and Automating Incident Response - Andrew Krug, Alex McCormack](http://threatresponse-derbycon.s3-website-us-west-2.amazonaws.com/#/step-1)
-		* [Incident Response in the Cloud - Jim Jennis, Conrad Fernandes(re:Invent 2017)](https://www.slideshare.net/AmazonWebServices/incident-response-in-the-cloud-sid319-reinvent-2017)
-			* In this session, we walk you through a hypothetical incident response managed on AWS. Learn how to apply existing best practices as well as how to leverage the unique security visibility, control, and automation that AWS provides. We cover how to set up your AWS environment to prevent a security event and how to build a cloud-specific incident response plan so that your organization is prepared before a security event occurs. This session also covers specific environment recovery steps available on AWS.
-		* [Hardening AWS Environments and Automating Incident Response for AWS Compromises - Andrew Krug & Alex McCormack(BHUSA2016)](https://www.youtube.com/watch?v=Y9cAHxd0kW4)
-	* Incident Response procedures differ in the cloud versus when performed in traditional, on-premise, environments. The cloud offers the ability to respond to an incident by programmatically collecting evidence and quarantining instances but with this programmatic ability comes the risk of a compromised API key. The risk of a compromised key can be mitigated but proper configuration and monitoring must be in place. The talk discusses the paradigm of Incident Response in the cloud and introduces tools to automate the collection of forensic evidence of a compromised host. It highlights the need to properly configure an AWS environment and provides a tool to aid the configuration process.
-	* **Linux**
-	* **OS X**
-	* **Windows**
+* **General/Agnostic**
+	* **Articles/Blogposts/Writeups**
+		* [No Easy Breach: Challenges and Lessons Learned from an Epic Investigation](https://archive.org/details/No_Easy_Breach#)
+		* [Handler Diaries - Another Hunting Post(DFIR)](http://blog.handlerdiaries.com/?p=775)
+			* Good post on not only knowing the layout, but knowing expected behaviours.
+		* [Triaging Malware Incidents](http://journeyintoir.blogspot.com/2013/09/triaging-malware-incidents.html)
+			* Good writeup/blogpost from Journey into Incidence Response
+		* [SANS Institute Security Consensus Operational Readiness Evaluation](https://www.sans.org/media/score/checklists/LinuxCheatsheet_2.pdf)
+		* [Security Breach 101 - Ryan McGeehan](https://medium.com/starting-up-security/security-breach-101-b0f7897c027c)
+		* [Security Breach 102 - Ryan McGeehan](https://medium.com/starting-up-security/security-breach-102-d5fc88c5660f)
+		* [Learning From A Year of Security Breaches - Ryan McGeehan](https://medium.com/starting-up-security/learning-from-a-year-of-security-breaches-ed036ea05d9b)
+		* [VirusTotal is not an Incident Responder - Matt Benton](https://medium.com/maverislabs/virustotal-is-not-an-incident-responder-80a6bb687eb9)
+			* This post is designed for both Defenders and fellow Red Teamers. For Defenders, I hope to shed some light on how attackers can manipulate VirusTotal’s URL link scanning to provide clean responses. For Red Teamers, this is just information to add to the toolkit on how to emulate an adversary and challenge Defenders to not make all decisions based on a VirusTotal response.
+	* **Talks/Presentations/Videos**
+		* [Lend me your IR’s! - Matt Scheurer(SecureWVHack3rCon2019)](https://www.youtube.com/watch?v=tsEWcoPFfbs&list=PLpYLcKpNrG2Xw4q9tMReG9W3o4igr7nYz&index=8&t=0s)
+			* [Slides](https://www.slideshare.net/cerkah/hack3rcon-x-lend-me-your-irs)
+* **Cloud**
+	* **AWS**
+		* **Articles/Blogposts/Writeups**
+			* [Scalable infrastructure for investigations and incident response - MSRC Team(2019)](https://msrc-blog.microsoft.com/2019/08/30/scalable-infrastructure-for-investigations-and-incident-response/)
+			* [Digital Forensic Analysis of Amazon Linux EC2 Instances - Ken Hartman(2018)](https://www.sans.org/reading-room/whitepapers/cloud/digital-forensic-analysis-amazon-linux-ec2-instances-38235)
+			* [Incident Response in Amazon EC2: First Responders Guide to Security Incidents in the Cloud - Tom Arnold(2016)](https://www.sans.org/reading-room/whitepapers/incident/paper/36902)
+				* As Head of Digital Forensics for Payment Software Company Inc. (“PSC”), a company that focuses exclusively on Clients that accept or process payments,1 we’ve responded to sites operating within cloud environments, most notably Amazon EC2.
+			* [Hardening AWS Environments and Automating Incident Response for AWS Compromises - Andrew Krug, Alex McCormack, Joel Ferrier, Jeff Parr](https://www.blackhat.com/docs/us-16/materials/us-16-Krug-Hardening-AWS-Environments-And-Automating-Incident-Response-For-AWS-Compromises-wp.pdf)
+		* **Talks/Presentations/Videos**
+			* [Logging in the Cloud: From Zero to (Incident Response) Hero - Jonathon Poling(2020)](https://www.youtube.com/watch?v=n7ec0REBFkk)
+				* [Slides](https://ponderthebits.com/wp-content/uploads/2020/02/Logging-in-the-Cloud-From-Zero-to-Incident-Response-Hero-Public.pdf)
+				* So many logs, so little time. What logs even exist? Which are enabled by default? Which are the most critical to enable and configure for effective incident response? AWS. Azure. GCP. My. Dear. God. Send help! And, help you this presentation shall. This session will walk through the most important logging to enable (and how) in each cloud provider to take you from zero to incident response hero!Pre-Requisites: Basic familiarity operating with the three major Cloud providers: AWS, Azure, and GCP.
+			* [A Planned Methodology for Forensically Sound IR in Office 365 - Devon Ackerman(SANS DFIR Summit2018)](https://www.youtube.com/watch?v=CubGixACC4E&feature=share)
+				* A planned methodology for developing and implementing a forensically sound incident response plan in Microsoft’s Office 365 cloud environment must be thoroughly researched and re-evaluated over time as the system evolves, new features are introduced, and older capabilities are deprecated. This presentation will walk through the numerous forensic, incident response, and evidentiary aspects of Office 365. The presentation is based on two years’ worth of collection of forensics and incident response data in Microsoft’s Office 365 and Azure environments. It combines knowledge from more than a hundred Office 365 investigations, primarily centered around Business Email Compromise (BEC) and insider threat cases.
+			* [Incident Response in the Cloud - Jim Jennis, Conrad Fernandes(re:Invent 2017)](https://www.slideshare.net/AmazonWebServices/incident-response-in-the-cloud-sid319-reinvent-2017)
+				* In this session, we walk you through a hypothetical incident response managed on AWS. Learn how to apply existing best practices as well as how to leverage the unique security visibility, control, and automation that AWS provides. We cover how to set up your AWS environment to prevent a security event and how to build a cloud-specific incident response plan so that your organization is prepared before a security event occurs. This session also covers specific environment recovery steps available on AWS.
+		* **Tools**
+			* [aws_ir](https://github.com/ThreatResponse/aws_ir)
+				* Python installable command line utility for mitigation of instance and key compromises.
+	* **Azure**
+		* **Articles/Blogposts/Writeups**
+		* **Talks/Presentations/Videos**
+	* **GCP**
+		* **Articles/Blogposts/Writeups**
+		* **Talks/Presentations/Videos**
+	* **O365**
+		* See [O365](#o365)
+* **Containers**
+	* **Articles/Blogposts/Writeups**
+	* **Talks/Presentations/Videos**
+		* [Container Forensics: What to Do When Your Cluster is a Cluster - Maya Kaczorowski & Ann Wallace(CloudNativeConEU19) ](https://www.youtube.com/watch?v=MyXROAqO7YI&list=PLKDRii1YwXnLmd8ngltnf9Kzvbja3DJWx&index=7&t=0s)
+			* When responding to an incident in your containers, you don’t necessarily have the same tools at your disposal that you do with VMs - and so your incident investigation process and forensics are different. In a best case scenario, you have access to application logs, orchestrator logs, node snapshots, and more.  In this talk, we’ll go over where to get information about what’s happening in your cluster, including logs and open source tools you can install, and how to tie this information together to get a better idea of what’s happening in your infrastructure. Armed with this info, we’ll review the common mitigation options such as to alert, isolate, pause, restart, or kill a container. For common types of container attacks, we'll discuss what options are best and why. Lastly, we’ll talk about restoring services after an incident, and the best steps to take to prevent the next one.
+* **Linux**
+	* **Articles/Blogposts/Writeups**
+	* **Talks/Presentations/Videos**
+* **OS X**
+	* **Articles/Blogposts/Writeups**
+	* **Talks/Presentations/Videos**
+		* [Incident response on macOS - Thomas Reed](https://www.irongeek.com/i.php?page=videos/bsidescleveland2019/bsides-cleveland-c-04-incident-response-on-macos-thomas-reed)
+			* This talk will provide details about how to do incident response on macOS, which is something that is not well-understood except by a relatively small number of Mac-knowledgeable experts. Examples will be given using real-world malware and tools.
+		* [Learn Incident Response for Mac - Thomas Reed(Derbycon2019)](https://www.youtube.com/watch?v=BdcGqy9VJ5M)
+			* [Slides](https://macadmins.psu.edu/files/2019/07/psumac2019-350-Learn-Incident-Response-for-Mac.pdf)
+			* All too often, admins simply reimage an infected Mac, losing vital information in the process. Learn how to analyze a Mac that you suspect has been infected: what artifacts to collect, and how to parse out what happened. You'll learn about the techniques malware is currently using, with concrete examples, as well as some things that malware could do in the future but hasn't yet. Suspicious behaviors that can help identify processes as malicious will also be discussed. These lessons will be illustrated with examples from real-world malware.
+		* [Cleaning the Apple Orchard - Using Venator to Detect macOS Compromise - Richie Cyrus(BSides Charm2019)](http://www.irongeek.com/i.php?page=videos/bsidescharm2019/1-02-cleaning-the-apple-orchard-using-venator-to-detect-macos-compromise-richie-cyrus)
+			* Various solutions exist to detect malicious activity on macOS. However, they are not intended for enterprise use or involve installation of an agent. This session will introduce and demonstrate how to detect malicious macOS activity using the tool Venator. Venator is a python based macOS tool designed to provide defenders with the data to proactively identify malicious macOS activity at scale.
+		* [Detecting macOS Compromise with Venator - Richie Cyrus(Objective by the Sea v2.0)](https://www.youtube.com/watch?v=8oMxegxZva8&list=PLliknDIoYszvTDaWyTh6SYiTccmwOsws8&index=6)
+    		* [Slides](https://objectivebythesea.com/v2/talks/OBTS_v2_Cyrus.pdf)
+    		* Various solutions exist to detect malicious activity on macOS. However, they are not intended for enterprise use or involve installation of an agent. This session will introduce and demonstrate how to detect malicious macOS activity using the tool Venator. Venator is a python based macOS tool designed to provide defenders with the data to proactively identify malicious macOS activity at scale. This data can then be imported into a SIEM for the purpose of building robust analytics during hunting engagements. 
+	    	* [Blogpost](https://posts.specterops.io/introducing-venator-a-macos-tool-for-proactive-detection-34055a017e56)
+* **Windows**
+	* **Articles/Blogposts/Writeups**
 		* [Planning for Compromise - docs.ms](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/planning-for-compromise)
 		* [Alerting and Detection Strategy Framework - palantir](https://medium.com/palantir/alerting-and-detection-strategy-framework-52dc33722df2)
 		* [Know your Windows Processes or Die Trying](https://sysforensics.org/2014/01/know-your-windows-processes.html)
@@ -84,6 +124,23 @@
 		* [Spotting the Adversary with Windows Event Log Monitoring - NSA](http://cryptome.org/2014/01/nsa-windows-event.pdf)
 			* NSA 70-page writeup on windows event log monitoring
 		* [Ways to Identify Malware on a System Ryan Irving](http://www.irongeek.com/i.php?page=videos/bsidestampa2015/201-ways-to-identify-malware-on-a-system-ryan-irving)
+	* **Talks/Presentations/Videos**
+		* [Malicious payloads vs. deep visibility: a PowerShell story - Daniel Bohannon(PSConEU19)](https://www.youtube.com/watch?v=h1Sbb-1wRKw)
+			* This talk draws from over four years of Incident Response experience to lay out a technical buffet of in-the-wild malicious PowerShell payloads and techniques. In addition to diving deep into the mechanics of each malicious example, this presentation will highlight forensic artifacts, detection approaches and the deep visibility that the latest versions of PowerShell provides security practitioners to defend their organizations against the latest attacks that utilize PowerShell.
+		* [Investigating PowerShell Attacks - Ryan Kazanciyan and Matt Hastings - DEFCON22](https://www.youtube.com/watch?v=qF06PFcezLs)
+			* This presentation will focus on common attack patterns performed through PowerShell - such as lateral movement, remote command execution, reconnaissance, file transfer, etc. - and the sources of evidence they leave behind. We'll demonstrate how to collect and interpret these forensic artifacts, both on individual hosts and at scale across the enterprise. Throughout the presentation, we'll include examples from real-world incidents and recommendations on how to limit exposure to these attacks.
+		* [Incident Response is HARRRRRD: But It Doesn't Have to Be - Michael Gough(WWHF2019)](https://www.youtube.com/watch?v=MlxCjc6V_lc)
+			* So your EDR, AV, or other fancy shiny blinky lights security tools alerted you that Bobs Windows box has some suspicious activity.  Do you have the details you need to investigate or remediate the system?  Can you quickly and easily investigate it?   You can enable a lot of things you already have for FREE to help you with your investigations, no matter the tools used.  Let’s take a look at how we do Incident Response on Windows systems and what you can do to prepare for an inevitable event. How is your logging? Is it enabled? Configured to some best practice? (hopefully better than an industry standard that is seriously lacking). Have you enabled some critical logs that by default Microsoft does NOT enable? Do you have a way to run a command, script, or a favorite tool across one or all your systems and retrieve the results? Do you block some well-known exploitable file types so users do not initiate the scripting engine when they double click, rather just open good ol’ Notepad? Everything mentioned here is FREE and you already have it! This talk will describe these things and how to prepare, and be PREPARED to do incident Response on Windows systems. A few tools will be discussed as well that you can use to speed things up. The attendee can take the information from this talk and immediately start improving their environment to prepare for the… inevitable, an incident.
+* **Talks & Videos**
+	* **General/Unsorted**
+		* [Lend me your IR's! - Matt Scheurer(Hack3rCon X)](https://www.youtube.com/watch?v=tsEWcoPFfbs&list=PLpYLcKpNrG2Xw4q9tMReG9W3o4igr7nYz&index=8&t=0s)
+			* Have you ever felt compelled to tip your cap to a malicious threat actor? Protecting systems and networks as a tech defender means withstanding a constant barrage of unsophisticated attacks from automated tools, botnets, crawlers, exploit kits, phish kits, and script kiddies; oh my! Once in a while we encounter attacks worthy of style points for creativity or new twists on old attack techniques. This talk features live demo reenactments from some advanced attacks the presenter investigated. These live demos showcase technical deep dives of the underpinnings from both the attacker and investigator sides of these attacks. Attendee key takeaways are strategies, freely available tools, and techniques helpful during incident response investigations.
+			* [Slides](https://www.slideshare.net/cerkah/hack3rcon-x-lend-me-your-irs)
+		* [Fraud detection and forensics on telco networks - Hack.lu 2016](https://www.youtube.com/watch?v=09EAWT_F1ZA&app=desktop)
+	* **Spyware**
+		* [Commercial Spyware - Detecting the Undetectable](https://www.blackhat.com/docs/us-15/materials/us-15-Dalman-Commercial-Spyware-Detecting-The-Undetectable-wp.pdf)
+* **Red Team/Pentest/Purple Teaming**
+	* [Red Team Engagement Guide: How an Organization Should React - Jason Lang](https://www.trustedsec.com/blog/red-team-engagement-guide-how-an-organization-should-react/)
 * **CheatSheets/Checklists**
 	* [Initial Security Incident Questionnaire for Responders - Lenny Zeltser](https://zeltser.com/security-incident-questionnaire-cheat-sheet/)
 	* [Security Incident Survey Cheat Sheet for Server Administrators - Lenny Zeltser](https://zeltser.com/security-incident-survey-cheat-sheet/)
@@ -92,55 +149,79 @@
 * **Documents**
 	* [Sample Incident Handling Forms - SANS](https://www.sans.org/score/incident-forms/)
 * **Methodologies/Playbooks**
-	* [incidentresponse.com playbooks](https://www.incidentresponse.com/playbooks/)
-	* [Using a “Playbook” Model to Organize Your Information Security Monitoring Strategy - cisco](https://blogs.cisco.com/security/using-a-playbook-model-to-organize-your-information-security-monitoring-strategy)
-	* [Univeristy of Florida IR Playbooks](http://www.cst.ucf.edu/about/information-security-office/incident-response/)
-	* [pagerduty Incident Response](https://response.pagerduty.com/)
-		* This documentation covers parts of the PagerDuty Incident Response process. It is a cut-down version of our internal documentation, used at PagerDuty for any major incidents, and to prepare new employees for on-call responsibilities. It provides information not only on preparing for an incident, but also what to do during and after. It is intended to be used by on-call practitioners and those involved in an operational incident response process (or those wishing to enact a formal incident response process). See the about page for more information on what this documentation is and why it exists.
-	* [Strategies to Mitigate Cyber Security Incidents - Mitigation Details - Australian Cyber Security Center](https://www.cyber.gov.au/publications/strategies-to-mitigate-cyber-security-incidents-mitigation-details)
-	* [National Incident Management System -USA](https://www.fema.gov/national-incident-management-system)
-	* [IRM (Incident Response Methodologies)](https://github.com/certsocietegenerale/IRM)
-		* CERT Societe Generale provides easy to use operational incident best practices. These cheat sheets are dedicated to incident handling and cover multiple fields in which a CERT team can be involved. One IRM exists for each security incident we're used to dealing with.
-	* [Security Incident Response Guide - Cloud.gov](https://cloud.gov/docs/ops/security-ir/)
-		* This document outlines cloud.gov’s internal process for responding to security incidents. It outlines roles and responsibilities during and after incidents, and it lays out the steps we’ll take to resolve them.
+	* **Examples of:**
+		* [incidentresponse.com playbooks](https://www.incidentresponse.com/playbooks/)
+		* [Univeristy of Florida IR Playbooks](http://www.cst.ucf.edu/about/information-security-office/incident-response/)
+		* [pagerduty Incident Response](https://response.pagerduty.com/)
+			* This documentation covers parts of the PagerDuty Incident Response process. It is a cut-down version of our internal documentation, used at PagerDuty for any major incidents, and to prepare new employees for on-call responsibilities. It provides information not only on preparing for an incident, but also what to do during and after. It is intended to be used by on-call practitioners and those involved in an operational incident response process (or those wishing to enact a formal incident response process). See the about page for more information on what this documentation is and why it exists.
+		* [Strategies to Mitigate Cyber Security Incidents - Mitigation Details - Australian Cyber Security Center](https://www.cyber.gov.au/publications/strategies-to-mitigate-cyber-security-incidents-mitigation-details)
+		* [National Incident Management System -USA](https://www.fema.gov/national-incident-management-system)
+		* [IRM (Incident Response Methodologies)](https://github.com/certsocietegenerale/IRM)
+			* CERT Societe Generale provides easy to use operational incident best practices. These cheat sheets are dedicated to incident handling and cover multiple fields in which a CERT team can be involved. One IRM exists for each security incident we're used to dealing with.
+		* [Security Incident Response Guide - Cloud.gov](https://cloud.gov/docs/ops/security-ir/)
+			* This document outlines cloud.gov’s internal process for responding to security incidents. It outlines roles and responsibilities during and after incidents, and it lays out the steps we’ll take to resolve them.
+		* [RE&CT](https://github.com/atc-project/atc-react)
+			* The RE&CT Framework is designed for accumulating, describing and classification actionable Incident Response techniques.
+	* **Building**
+		* [Using a “Playbook” Model to Organize Your Information Security Monitoring Strategy - cisco](https://blogs.cisco.com/security/using-a-playbook-model-to-organize-your-information-security-monitoring-strategy)
+		* [Building a Cloud-Specific Incident Response Plan - AWS Security Team(2017)](https://aws.amazon.com/blogs/publicsector/building-a-cloud-specific-incident-response-plan/)
+		* [Collaborative Open Playbook Standard(COPS)](https://github.com/demisto/COPS)
+			* This repository contains schema definitions for a DFIR (Digital Forensics Incident Response) Playbook. The scheme is based on YAML (http://yaml.org/), and describes an incident response runbook (aka. playbook, “use case”) that is a written guidance for identifying, containing, eradicating and recovering from cyber security incidents.
+* **On-Call**
+	* **Articles/Blogposts/Writeups**
+		* [Ask an expert: How should startups approach on-call and incident response? - Increment(2017)](https://increment.com/on-call/ask-an-expert/)
+			* Increment asked several industry experts if they had any advice for small companies who are just starting to set up their on-call and incident response processes, and here’s what they said.
+		* [On-call at any size - Increment(2017)](https://increment.com/on-call/on-call-at-any-size/)
+			* We take a close look at how to make on-call work at any scale, sharing industry best practices that apply to companies at any size, from tiny startups in garages to companies the size of Amazon, Facebook, and Google.
 * **Papers**
 	* [An Incident Handling Process for Small and Medium Businesses  - SANS 2007](https://www.sans.org/reading-room/whitepapers/incident/incident-handling-process-small-medium-businesses-1791)
 * **Platforms**
-	* [TheHive](https://github.com/TheHive-Project/TheHive)
-		* TheHive is a scalable 4-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly. It is the perfect companion for MISP. You can synchronize it with one or multiple MISP instances to start investigations out of MISP events. You can also export an investigation's results as a MISP event to help your peers and partners detect and react to attacks you've dealt with. Additionally, when TheHive is used in conjunction with Cortex, security analysts and researchers can easily analyze hundred of observables at once using more than 100 analyzers, contain an incident or eradicate malware thanks to Cortex responders.
-	* [INCIDENTS](https://github.com/veeral-patel/incidents)
-		* INCIDENTS is a web-based, actively maintained case management tool for incident response, just like TheHive. You can use INCIDENTS whether you're investigating a malware infection, a phishing campaign, insider abuse, an application vulnerability, a denial-of-service attempt, or any other kind of security incident.
+	* **Building one**
+		* **Articles/Blogposts/Writeups**
+			* [How Dropbox Security builds tools for threat detection and incident response - Mayank Dhiman, Wilson Kong, Colin O'Brien(2019)](https://dropbox.tech/security/how-dropbox-security-builds-better-tools-for-threat-detection-and-incident-response)
+	* **Built**
+		* [TheHive](https://github.com/TheHive-Project/TheHive)
+			* TheHive is a scalable 4-in-1 open source and free Security Incident Response Platform designed to make life easier for SOCs, CSIRTs, CERTs and any information security practitioner dealing with security incidents that need to be investigated and acted upon swiftly. It is the perfect companion for MISP. You can synchronize it with one or multiple MISP instances to start investigations out of MISP events. You can also export an investigation's results as a MISP event to help your peers and partners detect and react to attacks you've dealt with. Additionally, when TheHive is used in conjunction with Cortex, security analysts and researchers can easily analyze hundred of observables at once using more than 100 analyzers, contain an incident or eradicate malware thanks to Cortex responders.
+		* [INCIDENTS](https://github.com/veeral-patel/incidents)
+			* INCIDENTS is a web-based, actively maintained case management tool for incident response, just like TheHive. You can use INCIDENTS whether you're investigating a malware infection, a phishing campaign, insider abuse, an application vulnerability, a denial-of-service attempt, or any other kind of security incident.
+		* [MIG: Mozilla InvestiGator](https://http://mig.mozilla.org/)
+			* Mozilla's real-time digital forensics and investigation platform.
+		* [Fully Integrated Defense Operation (FIDO)](https://github.com/Netflix/Fido)
+			* FIDO is an orchestration layer used to automate the incident response process by evaluating, assessing and responding to malware. FIDO’s primary purpose is to handle the heavy manual effort needed to evaluate threats coming from today's security stack and the large number of alerts generated by them. As an orchestration platform FIDO can make using your existing security tools more efficient and accurate by heavily reducing the manual effort needed to detect, notify and respond to attacks against a network.
 * **Prioritization**
 	* [Determining Incident Priority - Michael Churchman PagerDuty Blog(2017)](https://www.pagerduty.com/blog/determining-incident-priority/)
-* **Talks & Videos**
-	* **Cloud**
-		* [GSuite Digital Forensics and Incident Response - Megan Roddie(BSides SanAntonio)](https://www.youtube.com/watch?v=pGn95-L8_sA&feature=youtu.be)
-			* With the current standard of companies transitioning to the cloud, digital forensic investigators and incident responders are facing new, unknown territory. As a starting point of talking about cloud DFIR, this talk aims to provide a real-life case study of what it is like to respond to an incident in GSuite, Google’s cloud business suite. The goal is that by reviewing this case study the audience will not only learn about GSuite DFIR but also begin to think about how this extends to all cloud environments.
-	* **Containers**
-		* [Container Forensics: What to Do When Your Cluster is a Cluster - Maya Kaczorowski & Ann Wallace(CloudNativeConEU19) ](https://www.youtube.com/watch?v=MyXROAqO7YI&list=PLKDRii1YwXnLmd8ngltnf9Kzvbja3DJWx&index=7&t=0s)
-			* When responding to an incident in your containers, you don’t necessarily have the same tools at your disposal that you do with VMs - and so your incident investigation process and forensics are different. In a best case scenario, you have access to application logs, orchestrator logs, node snapshots, and more.  In this talk, we’ll go over where to get information about what’s happening in your cluster, including logs and open source tools you can install, and how to tie this information together to get a better idea of what’s happening in your infrastructure. Armed with this info, we’ll review the common mitigation options such as to alert, isolate, pause, restart, or kill a container. For common types of container attacks, we'll discuss what options are best and why. Lastly, we’ll talk about restoring services after an incident, and the best steps to take to prevent the next one.
-	* **OS X**
-		* [Incident response on macOS - Thomas Reed](https://www.irongeek.com/i.php?page=videos/bsidescleveland2019/bsides-cleveland-c-04-incident-response-on-macos-thomas-reed)
-			* This talk will provide details about how to do incident response on macOS, which is something that is not well-understood except by a relatively small number of Mac-knowledgeable experts. Examples will be given using real-world malware and tools.
-	* [Fraud detection and forensics on telco networks - Hack.lu 2016](https://www.youtube.com/watch?v=09EAWT_F1ZA&app=desktop)
-	* [Commercial Spyware - Detecting the Undetectable](https://www.blackhat.com/docs/us-15/materials/us-15-Dalman-Commercial-Spyware-Detecting-The-Undetectable-wp.pdf)
-	* [Investigating PowerShell Attacks - Ryan Kazanciyan and Matt Hastings - DEFCON22](https://www.youtube.com/watch?v=qF06PFcezLs)
-		* This presentation will focus on common attack patterns performed through PowerShell - such as lateral movement, remote command execution, reconnaissance, file transfer, etc. - and the sources of evidence they leave behind. We'll demonstrate how to collect and interpret these forensic artifacts, both on individual hosts and at scale across the enterprise. Throughout the presentation, we'll include examples from real-world incidents and recommendations on how to limit exposure to these attacks.
-	* [Lend me your IR's! - Matt Scheurer(Hack3rCon X)](https://www.youtube.com/watch?v=tsEWcoPFfbs&list=PLpYLcKpNrG2Xw4q9tMReG9W3o4igr7nYz&index=8&t=0s)
-		* Have you ever felt compelled to tip your cap to a malicious threat actor? Protecting systems and networks as a tech defender means withstanding a constant barrage of unsophisticated attacks from automated tools, botnets, crawlers, exploit kits, phish kits, and script kiddies; oh my! Once in a while we encounter attacks worthy of style points for creativity or new twists on old attack techniques. This talk features live demo reenactments from some advanced attacks the presenter investigated. These live demos showcase technical deep dives of the underpinnings from both the attacker and investigator sides of these attacks. Attendee key takeaways are strategies, freely available tools, and techniques helpful during incident response investigations.
-		* [Slides](https://www.slideshare.net/cerkah/hack3rcon-x-lend-me-your-irs)
+* **Response Automation**
+	* **Building**
+		* **Articles/Blogposts/Writeups**
+			* [Automated Response and Remediation with AWS Security Hub - AWS(2020)](https://aws.amazon.com/blogs/security/automated-response-and-remediation-with-aws-security-hub/)
+			* [Hardening AWS Environments and Automating Incident Response - Andrew Krug, Alex McCormack](http://threatresponse-derbycon.s3-website-us-west-2.amazonaws.com/#/step-1)
+		* **Talks/Presentations/Videos**
+			* [Hardening AWS Environments and Automating Incident Response for AWS Compromises - Andrew Krug & Alex McCormack(BHUSA2016)](https://www.youtube.com/watch?v=Y9cAHxd0kW4)
+				* Incident Response procedures differ in the cloud versus when performed in traditional, on-premise, environments. The cloud offers the ability to respond to an incident by programmatically collecting evidence and quarantining instances but with this programmatic ability comes the risk of a compromised API key. The risk of a compromised key can be mitigated but proper configuration and monitoring must be in place. The talk discusses the paradigm of Incident Response in the cloud and introduces tools to automate the collection of forensic evidence of a compromised host. It highlights the need to properly configure an AWS environment and provides a tool to aid the configuration process.
+		* **Tools**
+			* [SOCless](https://twilio-labs.github.io/socless/)
+				* SOCless is a serverless framework built to help security teams easily automate their incident response and operations processes.
+			* [Dispatch - Netflix](https://github.com/Netflix/dispatch)
+				* Dispatch helps us effectively manage security incidents by deeply integrating with existing tools used throughout an organization (Slack, GSuite, Jira, etc.,) Dispatch is able to leverage the existing familiarity of these tools to provide orchestration instead of introducing another tool.
+	* **Built**
+		* **Articles/Blogposts/Writeups**
+			* [Introducing Twilio's SOCless: Automated Security Runbooks](https://www.twilio.com/blog/introducing-twilio-socless)
+			* [Guardians of the Cloud: Automating the Response to Security Events - Alejandro Ortuno(2019)](https://auth0.com/blog/guardians-of-the-cloud-automating-response-to-security-events/)
+				* "How Auth0 uses security automation to respond to GuardDuty events at scale and our learnings in the process"
+		* **Tools**
 * **Tools**
-	* [binwally](https://github.com/bmaia/binwally)
-		* Binary and Directory tree comparison tool using the Fuzzy Hashing concept (ssdeep)
-	* [IRMA - Incident Response & Malware Analysis](http://irma.quarkslab.com/index.html)
-		* IRMA intends to be an open-source platform designed to help identifying and analyzing malicious files.  However, today's defense is not only about learning about a file, but it is also getting a fine overview of the incident you dealt with: where / when a malicious file has been seen, who submitted a hash, where a hash has been noticed, which anti-virus detects it, ...  An important value with IRMA comes from you keep control over where goes / who gets your data. Once you install IRMA on your network, your data stays on your network.  Each submitted files is analyzed in various ways. For now, we focus our efforts on multiple anti-virus engines, but we are working on other "probes" (feel free to submit your own).	
-	* [aws_ir](https://github.com/ThreatResponse/aws_ir)
-		* Python installable command line utility for mitigation of instance and key compromises.
-	* [MIG: Mozilla InvestiGator](https://http://mig.mozilla.org/)
-		* Mozilla's real-time digital forensics and investigation platform.
-	* [Fully Integrated Defense Operation (FIDO)](https://github.com/Netflix/Fido)
-		* FIDO is an orchestration layer used to automate the incident response process by evaluating, assessing and responding to malware. FIDO’s primary purpose is to handle the heavy manual effort needed to evaluate threats coming from today's security stack and the large number of alerts generated by them. As an orchestration platform FIDO can make using your existing security tools more efficient and accurate by heavily reducing the manual effort needed to detect, notify and respond to attacks against a network.
-	* [Invoke-IR](http://www.invoke-ir.com/)
+	* **Fuzzy Hashes**
+		* [binwally](https://github.com/bmaia/binwally)
+			* Binary and Directory tree comparison tool using the Fuzzy Hashing concept (ssdeep)
+	* **DIY VirusTotal**
+		* [IRMA - Incident Response & Malware Analysis](http://irma.quarkslab.com/index.html)
+			* IRMA intends to be an open-source platform designed to help identifying and analyzing malicious files.  However, today's defense is not only about learning about a file, but it is also getting a fine overview of the incident you dealt with: where / when a malicious file has been seen, who submitted a hash, where a hash has been noticed, which anti-virus detects it, ...  An important value with IRMA comes from you keep control over where goes / who gets your data. Once you install IRMA on your network, your data stays on your network.  Each submitted files is analyzed in various ways. For now, we focus our efforts on multiple anti-virus engines, but we are working on other "probes" (feel free to submit your own).	
+		* [Invoke-IR](http://www.invoke-ir.com/)
+	* **Timeline**
+		* [plaso](https://github.com/log2timeline/plaso)
+			* log2timeline is a tool designed to extract timestamps from various files found on a typical computer system(s) and aggregate them.
+		* [Timesketch](https://github.com/google/timesketch)
+			* Timesketch is an open source tool for collaborative forensic timeline analysis. Using sketches you and your collaborators can easily organize your timelines and analyze them all at the same time. Add meaning to your raw data with rich annotations, comments, tags and stars.
 * **Miscellaneous**
 	* [Human Hunting](http://www.irongeek.com/i.php?page=videos/bsidessf2015/108-human-hunting-sean-gillespie) 
 		* Much of what appears to be happening in information security seems to be focused on replacing humans with magic boxes and automation rather than providing tools to augment human capabilities. However, when we look at good physical security we see technology is being used to augment human capabilities rather than simply replace them. The adversary is human so we are ultimately looking for human directed behaviors. If analysts don't know how to go looking for evil without automated detection tools then they are not going to be able to effectively evaluate if the detection tools are working properly or if the deployment was properly engineered. An over reliance on automated detection also puts organizations in a position of paying protection money if they want to remain secure. We should be spending more resources on honing analyst hunting skills to find human adversaries rather than purchasing more automated defenses for human adversaries to bypass.
@@ -269,7 +350,9 @@
 * **Articles/Papers/Talks/Writeups**
 	* [Firefox private browsing forensics](http://www.magnetforensics.com/forensic-implications-of-a-person-using-firefoxs-private-browsing/)
 	* [Google Chrome Forensics-SANS](https://digital-forensics.sans.org/blog/2010/01/21/google-chrome-forensics#)
-* **General**
+* **Talks/Presentations/Videos**
+	* [Efficiently Summarizing Web Browsing Activity - Ryan Benson(SANS DFIR Summit2018)](https://www.youtube.com/watch?v=ymHqWnnxol8)
+		* Reviewing web browsing activity is relevant in a wide variety of DFIR cases. With many users having multiple devices that may need to be analyzed, we need better ways to get answers quickly. This presentation will show how a synopsis of browsing activity can be a starting point before a deep-dive investigation and can help investigators decide whether a device is relevant to their case. We will also examine if a device is relevant to their case, and how this summary can provide quick answers to some  common questions that are useful in communicating one’s findings to a less technical audience.
 * **Tools**
 	* **Chrome**
 		* [Chrome Ragamuffin](https://github.com/cube0x8/chrome_ragamuffin)
@@ -291,18 +374,63 @@
 * **Miscellaneous**
 
 
+
+
+
+
+
+
+
+
+
 --------------
 ####<a name="cloud">Cloud Forensics</a>
 * **101**
-* **Articles/Blogposts/Writeups**
-	* **AWS**
+* **Agnostic/Multiple**
+	* **Articles/Blogposts/Writeups**
+	* **Presentations/Talks/Videos**
+		* [Logging in the Cloud: From Zero to (Incident Response) Hero - Jonathon Poling(2020)](https://www.youtube.com/watch?v=n7ec0REBFkk)
+			* [Slides](https://ponderthebits.com/wp-content/uploads/2020/02/Logging-in-the-Cloud-From-Zero-to-Incident-Response-Hero-Public.pdf)
+			* So many logs, so little time. What logs even exist? Which are enabled by default? Which are the most critical to enable and configure for effective incident response? AWS. Azure. GCP. My. Dear. God. Send help! And, help you this presentation shall. This session will walk through the most important logging to enable (and how) in each cloud provider to take you from zero to incident response hero!Pre-Requisites: Basic familiarity operating with the three major Cloud providers: AWS, Azure, and GCP.
+* **AWS**
+	* **Articles/Blogposts/Writeups**
 		* [Investigating CloudTrail Logs](https://medium.com/starting-up-security/investigating-cloudtrail-logs-c2ecdf578911)
-	* **Azure**
+		* [Dufflebag: Uncovering Secrets in Exposed EBS Volumes - Dan Petro(2020)](https://know.bishopfox.com/research/dufflebag-uncovering-exposed-ebs)
+	* **Presentations/Talks/Videos**
+	* **Tools**
+		* [Dufflebag](https://github.com/BishopFox/dufflebag)
+			* Dufflebag is a tool that searches through public Elastic Block Storage (EBS) snapshots for secrets that may have been accidentally left in.
+* **Azure**
+	* **Articles/Blogposts/Writeups**
 		* [Acquiring a VHD to Investigate - MSRC Team](https://msrc-blog.microsoft.com/2019/09/03/acquiring-a-vhd-to-investigate/)
-	* **GCP**
-* **Presentations/Talks/Videos**
-* **Tools**
+	* **Presentations/Talks/Videos**
+* **GCP**
+	* **Articles/Blogposts/Writeups**
+	* **Presentations/Talks/Videos**
+		* [Cloud Forensics 101 - Sami Zuhuruddin(Cloud Next '18)](https://www.youtube.com/watch?reload=9&v=OkjTqlETgMA)
+			* We hope it never happens, but we need a plan to deal with 'incidents' should we ever suspect one is happening. This could be anything from an application issue to a suspected compromise. How do we capture needed environment details on the spot and carry out a full investigation? We'll demonstrate the tools and processes that everyone should be familiar with when running in a cloud environment.
+* **GSuite**
+	* **Articles/Blogposts/Writeups**
+	* **Presentations/Talks/Videos**
+		* [GSuite Digital Forensics and Incident Response - Megan Roddie(BSides SanAntonio)](https://www.youtube.com/watch?v=pGn95-L8_sA&feature=youtu.be)
+			* With the current standard of companies transitioning to the cloud, digital forensic investigators and incident responders are facing new, unknown territory. As a starting point of talking about cloud DFIR, this talk aims to provide a real-life case study of what it is like to respond to an incident in GSuite, Google’s cloud business suite. The goal is that by reviewing this case study the audience will not only learn about GSuite DFIR but also begin to think about how this extends to all cloud environments.
+* **O365**
+	* **Tools**
+		* [hawk](https://github.com/Canthv0/hawk)
+			* Powershell Based tool for gathering information related to O365 intrusions and potential Breaches
 * **Miscellaneous**
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -414,6 +542,7 @@
 	* [What are Kexts? - MacBreaker](http://www.macbreaker.com/2012/01/what-are-kexts.html)
 	* [Property List - Wikipedia](https://en.wikipedia.org/wiki/Property_list#Mac_OS_X)
 	* [Logging - developer.apple](https://developer.apple.com/documentation/os/logging)
+	* [Terminal commands, periodic etc - Apple Support](https://discussions.apple.com/thread/8563234)
 * **Articles/Blogposts/Writeups**
 	* **General**
 		* [OS X Forensics Generals](https://davidkoepi.wordpress.com/category/os-x-forensics-10-8/)
@@ -425,7 +554,6 @@
 			* `*This is a running list of notes gathered based on experience investigating devices. This is very much an incomplete collection of artifacts*`
 	* **Collection**
 		* [The Cider Press:Extracting Forensic Artifacts From Apple Continuity](https://www.sans.org/summit-archives/file/summit-archive-1498146226.pdf)
-
 	* **Logs**
 		* [Making your own logarchive from a backup - hoakley](https://eclecticlight.co/2020/02/07/making-your-own-logarchive-from-a-backup/)
 	* **Parsing**
@@ -434,18 +562,13 @@
 * **Papers**
 	* [Logs Unite! Forensic Analysis Of Apple Unified Logs - Sarah Edwards(2017)](https://papers.put.as/papers/macosx/2017/LogsUnite.pdf)
 * **Presentations/Talks/Videos**
-	* [Learn Incident Response for Mac - Thomas Reed(Derbycon2019)](https://www.youtube.com/watch?v=BdcGqy9VJ5M)
-		* [Slides](https://macadmins.psu.edu/files/2019/07/psumac2019-350-Learn-Incident-Response-for-Mac.pdf)
-		* All too often, admins simply reimage an infected Mac, losing vital information in the process. Learn how to analyze a Mac that you suspect has been infected: what artifacts to collect, and how to parse out what happened. You'll learn about the techniques malware is currently using, with concrete examples, as well as some things that malware could do in the future but hasn't yet. Suspicious behaviors that can help identify processes as malicious will also be discussed. These lessons will be illustrated with examples from real-world malware.
-	* [Cleaning the Apple Orchard - Using Venator to Detect macOS Compromise - Richie Cyrus(BSides Charm2019)](http://www.irongeek.com/i.php?page=videos/bsidescharm2019/1-02-cleaning-the-apple-orchard-using-venator-to-detect-macos-compromise-richie-cyrus)
-		* Various solutions exist to detect malicious activity on macOS. However, they are not intended for enterprise use or involve installation of an agent. This session will introduce and demonstrate how to detect malicious macOS activity using the tool Venator. Venator is a python based macOS tool designed to provide defenders with the data to proactively identify malicious macOS activity at scale.
-	* [Detecting macOS Compromise with Venator - Richie Cyrus(Objective by the Sea v2.0)](https://www.youtube.com/watch?v=8oMxegxZva8&list=PLliknDIoYszvTDaWyTh6SYiTccmwOsws8&index=6)
-    	* [Slides](https://objectivebythesea.com/v2/talks/OBTS_v2_Cyrus.pdf)
-    	* Various solutions exist to detect malicious activity on macOS. However, they are not intended for enterprise use or involve installation of an agent. This session will introduce and demonstrate how to detect malicious macOS activity using the tool Venator. Venator is a python based macOS tool designed to provide defenders with the data to proactively identify malicious macOS activity at scale. This data can then be imported into a SIEM for the purpose of building robust analytics during hunting engagements. 
-    	* [Blogpost](https://posts.specterops.io/introducing-venator-a-macos-tool-for-proactive-detection-34055a017e56)
 	* [Watching the Watchers - Sarah Edwards(Objective by the Sea v2.0)](https://www.youtube.com/watch?v=XOZQqSruzZI&list=PLliknDIoYszvTDaWyTh6SYiTccmwOsws8&index=7)
     	* [Slides](https://objectivebythesea.com/v2/talks/OBTS_v2_Edwards.pdf)
     	*  Forensic analysis is sometimes all about grasping for straws. You never know what time little piece of data can make a difference in an investigation. We focus so much on native forensic artifacts that we lose sight of what third party applications provide us. I’m a huge proponent of having monitoring tools to keep track of what is happening on my system and to (hopefully) protect it. These tools are inherently monitoring the system, what data can they provide to forensic investigators?  This talk will go through some of the most popular monitoring utilities to show what they record and how that can help move forward investigations. Objective-See, Little Snitch, iStat Menus, AV, and more! 
+* **OS X Specific Stuff**
+	* **.DS_Store**
+		* [.DS_Stores: Like Shellbags but for Macs - Nicole Ibrahim(SANS DFIR Summit2019)](https://www.youtube.com/watch?v=FOpiDSAD-Yk)
+			* [Slides](https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1565288427.pdf)
 
 * **Tools**
 	* **Collection**
@@ -468,6 +591,8 @@
 			* A GUI frontend for AppleScript (shell, etc) based forensic artifact retreival.
 		* [macOSTriageTool](https://github.com/Recruit-CSIRT/macOSTriageTool)
 			* A DFIR tool to collect artifacts on macOS
+		* [macOS-ir](https://github.com/SynAckJack/macOS-ir)
+			* Prototype to collect data and analyse it from a compromised macOS device.
 	* **Parsing**
 		* [TrueTree](https://github.com/themittenmac/TrueTree)
 			* TrueTree is more than just a pstree command for macOS. It is used to display a process tree for current running processes while using a hierarchy built on additoinal pids that can be collected from the operating system. The standard process tree on macOS that can be built with traditional pids and ppids is less than helpful on macOS due to all the XPC communication at play. The vast majority of processes end up having a parent process of launchd. TrueTree however displays a process tree that is meant to be useful to incident responders, threat hunters, researchers, and everything in between!
@@ -525,12 +650,18 @@
 	* **Event Tracing**
 		* [Event Tracing for Windows and Network Monitor](http://blogs.technet.com/b/netmon/archive/2009/05/13/event-tracing-for-windows-and-network-monitor.aspx)
 			* "Event Tracing for Windows, (ETW), has been around for quite a while now as it was introduced in Windows 2000. It's basically instrumented logging that describes what a component is doing. Conceptually, it’s something like the proverbial printf("here1") concept used by programmers, but it is present in retail builds. When you enable logging in a component the result is an ETL (Event Trace Log) file. What’s new is that that Network Monitor can read any ETL file. And with the supplied parsers many network oriented ETW providers can be decoded."
+		* [Windows Forensics: Event Trace Logs - Nicole Ibrahim(SANS DFIR Summit 2018)](https://www.youtube.com/watch?v=TUR-L9AtzQE)
+			* This talk will cover what ETL files are and where you can expect to find them, how to decode ETL files, caveats associated with those files, and some interesting and forensically relevant data that ETL files can provide. 
 	* **Evidence of Execution**
 		* [Available Artifacts - Evidence of Execution - Adam Harrison(2019)](https://blog.1234n6.com/2018/10/available-artifacts-evidence-of.html)
 		* [HowTo: Determine Program Execution - Harlan Carvey(2013)](http://windowsir.blogspot.com/2013/07/howto-determine-program-execution.html)
 		* [Forensic Artifacts: evidences of program execution on Windows systems - Andrea Fortuna(2018)](https://www.andreafortuna.org/2018/05/23/forensic-artifacts-evidences-of-program-execution-on-windows-systems/)
 		* [It Is All About Program Execution - Corey Harrell(2014)](http://journeyintoir.blogspot.com/2014/01/it-is-all-about-program-execution.html)
 		* [Did It Execute? - Mary Singh](https://www.fireeye.com/blog/threat-research/2013/08/execute.html)
+	* **Exchange**
+		* [Exchange – Find Mailboxes with Forwarding Addresses Enabled - Khoa Nguyen(2018)](https://www.syspanda.com/index.php/2018/01/10/exchange-find-mailboxes-forwarding-addresses-enabled/)
+	* **Microsoft Teams**
+		* [Looking at Microsoft Teams from a DFIR Perspective - CyberForensicator.com(2020)](https://cyberforensicator.com/2020/04/16/looking-at-microsoft-teams-from-a-dfir-perspective/)
 	* **Notification DB**
 		* [Hacking Exposed Daily Blog #440: Windows 10 Notifications Database](http://www.hecfblog.com/2018/08/daily-blog-440-windows-10-notifications.html)
 		* [Windows 10 Notification WAL database - malwaremaloney](https://malwaremaloney.blogspot.com/2018/08/windows-10-notification-wal-database.html?m=1)
@@ -539,10 +670,14 @@
 			* Is your organization using or planning to get a Security Information and Event Management (SIEM) server? You might be wondering how it integrates with Microsoft 365 or Office 365. This article provides a list of resources you can use to integrate your SIEM server with Microsoft 365 services and applications.
 	* **Registry**
 		* [Digging Up the Past: Windows Registry Forensics Revisited - David Via](https://www.fireeye.com/blog/threat-research/2019/01/digging-up-the-past-windows-registry-forensics-revisited.html)
+	* **Telemetry**
+		* [Forensic analysis of the Windows telemetry for diagnostics - Jaehyeok Han, Jungheum Park, Hyunji Chung, Sangjin Lee(2020)](https://arxiv.org/abs/2002.12506)
+			* Telemetry is the automated sensing and collection of data from a remote device. It is often used to provide better services for users. Microsoft uses telemetry to periodically collect information about Windows systems and to help improve user experience and fix potential issues. Windows telemetry service functions by creating RBS files on the local system to reliably transfer and manage the telemetry data, and these files can provide useful information in a digital forensic investigation. Combined with the information derived from traditional Windows forensics, investigators can have greater confidence in the evidence derived from various artifacts. It is possible to acquire information that can be confirmed only for live systems, such as the computer hardware serial number, the connection records for external storage devices, and traces of executed processes. This information is included in the RBS files that are created for use in Windows telemetry. In this paper, we introduced how to acquire RBS files telemetry and analyzed the data structure of these RBS files, which are able to determine the types of information that Windows OS have been collected. We also discussed the reliability and the novelty by comparing the conventional artifacts with the RBS files, which could be useful in digital forensic investigation.
+			* [Tool](https://github.com/JaehyeokHan/Windows-Telemetry)
 	* **Touch-Screen**
 		* [Touch Screen Lexicon Forensics (TextHarvester/WaitList.dat) - Barnaby Skeggs](https://b2dfir.blogspot.com/2016/10/touch-screen-lexicon-forensics.html)
 	* **USB**
-		* [USB storage forensics in Win10 #1 - Events -Forensics Exchange](https://forensixchange.com/posts/19_08_03_usb_storage_forensics_1/)
+		* [USB storage forensics in Win10 #1 - Events - Forensics Exchange](https://forensixchange.com/posts/19_08_03_usb_storage_forensics_1/)
 * **Educational**
 	* [Happy DPAPI!](http://blog.digital-forensics.it/2015/01/happy-dpapi.html)
 	* [WINDOWS REGISTRY AUDITING CHEAT SHEET - Win 7/Win 2008 or later - Malware Archaelogy](https://static1.squarespace.com/static/552092d5e4b0661088167e5c/t/5a00963153450a8779b23489/1509987890282/Windows+Registry+Auditing+Cheat+Sheet+ver+Nov+2017.pdf)
@@ -565,6 +700,12 @@
 * **Talks/Presentations/Videos**
 	* [Techniques for fast windows forensics investigations](https://www.youtube.com/watch?v=eI4ceLgO_CE)
 		* Look at sniper forensics, skip around, 18min has resources you want to grab for snapshots		
+	* **O365**
+		* [A Planned Methodology for Forensically Sound IR in Office 365 - Devon Ackerman(SANS DFIR Summit2018)](https://www.youtube.com/watch?v=CubGixACC4E&feature=share)
+			* A planned methodology for developing and implementing a forensically sound incident response plan in Microsoft’s Office 365 cloud environment must be thoroughly researched and re-evaluated over time as the system evolves, new features are introduced, and older capabilities are deprecated. This presentation will walk through the numerous forensic, incident response, and evidentiary aspects of Office 365. The presentation is based on two years’ worth of collection of forensics and incident response data in Microsoft’s Office 365 and Azure environments. It combines knowledge from more than a hundred Office 365 investigations, primarily centered around Business Email Compromise (BEC) and insider threat cases.
+		* [Office 365 Incident Response - Alex Parsons(BSides Orlando2019)](https://www.youtube.com/watch?v=5YfH4y5olMQ)
+			* In this talk, I will discuss attacker patterns in O365 environments, how to collect the data you need during an incident, and how to respond to questions from CISOs and lawyers, and tell some Incident Response war stories along the way. We will also look into some of the new techniques attackers are using to perform things like MFA bypass, new features that Microsoft is rolling out to assist Incident Responders (such as MailItemsAccessed operations), and ways to automate and prepare for such an attack.
+			* [Slides](https://www.slideshare.net/AlexParsons13/office-365-incident-response-2019-bsides-orlando)
 * **Tools**
 	* **Active Directory Focused**
 		* [NTDSXtract - Active Directory Forensics Framework](http://www.ntdsxtract.com/)
@@ -578,6 +719,8 @@
 				* Which are the accounts with domain admin rights ?
 				* Who has extended rights (userForceChangePassword, SendAs, etc.) ?
 				* What are the changes done on an AD between two points in time ?
+		* [ADTimeline](https://github.com/ANSSI-FR/ADTimeline/)
+			* The ADTimeline script generates a timeline based on Active Directory replication metadata for objects considered of interest. Replication metadata gives you the time at which each replicated attribute for a given object was last changed. As a result the timeline of modifications is partial. For each modification of a replicated attribute a version number is incremented.
 	* **Artifact Collection**
 		* [FastIR Collector](https://github.com/SekoiaLab/Fastir_Collector)
 			* This tool collects different artefacts on live Windows and records the results in csv or json files. With the analyses of these artefacts, an early compromission can be detected.
@@ -612,10 +755,14 @@
 	* **Memory Acquisition**
 		* [Margarita Shotgun](https://github.com/ThreatResponse/margaritashotgun)
 			* Python Remote Memory Aquisition
+	* **.NET CLR**
+		* [Interesting DFIR traces of .NET CLR Usage Logs - menasec.net](https://blog.menasec.net/2019/07/interesting-difr-traces-of-net-clr.html)
 	* **Notifications DB**
 	* **Office365**
 		* [HAWK 1.1.4](https://www.powershellgallery.com/packages/HAWK/1.1.4)
 			* The Hawk module has been designed to ease the burden on O365 administrators who are performing a forensic analysis in their organization. It accelerates the gathering of data from multiple sources in the service. It does NOT take the place of a human reviewing the data generated and is simply here to make data gathering easier.
+		* [Monte Carlo](https://github.com/nov3mb3r/monte-carlo/blob/master/README.md)
+			* Monte Carlo is a collection of 3 tools to process Office 365 Unified audit logs in incident response investigations. It is extensible and breaks the processing tasks in 3 stages (sectors):
 	* **Pre-Fetch**
 		* [WinPrefetchView v1.25](http://www.nirsoft.net/utils/win_prefetch_view.html)
 			* Each time that you run an application in your system, a Prefetch file which contains information about the files loaded by the application is created by Windows operating system. The information in the Prefetch file is used for optimizing the loading time of the application in the next time that you run it. WinPrefetchView is a small utility that reads the Prefetch files stored in your system and display the information stored in them. By looking in these files, you can learn which files every application is using, and which files are loaded on Windows boot. 
@@ -624,6 +771,9 @@
 			* A modular incident response framework in Powershell. Note there's a bug that's currently cropping up in PowerShell version 2 systems, but version 3 and later should be fine
 		* [Meerkat](https://github.com/TonyPhipps/Meerkat)
 			* Meerkat is collection of PowerShell modules designed for artifact gathering and reconnaisance of Windows-based endpoints. Use cases include incident response triage, threat hunting, baseline monitoring, snapshot comparisons, and more.
+	* **Processes**
+		* [PE-sieve](https://github.com/hasherezade/pe-sieve)
+			* PE-sieve is a tool that helps to detect malware running on the system, as well as to collect the potentially malicious material for further analysis. Recognizes and dumps variety of implants within the scanned process: replaced/injected PEs, shellcodes, hooks, and other in-memory patches.
 	* **Program Execution**
 		* [Did it Execute? - Mandiant](https://www.mandiant.com/blog/execute/)
 			* You found a malicious executable! Now you’ve got a crucial question to answer: did the file execute? We’ll discuss a few sources of evidence you can use to answer this question. In this post, we will focus on static or “dead drive” forensics on Windows systems. We will cover four main sources of evidence: Windows Prefetch, Registry, Log Files, and File Information.
@@ -706,37 +856,3 @@
 
 
 
-
-
-
-
-
---------------
-#### Bootkit Disk Forensics
-* **101**
-* **Articles/Papers/Talks/Writeups**
-	* [Bootkit Disk Forensics – Part 1 - MalwareTech](http://www.malwaretech.com/2015/02/bootkit-disk-forensics-part-1.html)
-		* [Part 2](http://www.malwaretech.com/2015/03/bootkit-disk-forensics-part-2.html)
-* **General**
-* **Tools**
-* **Miscellaneous**
-
-
-
-
-
-
-
-
-
-
-
-
-
-O365
-	https://github.com/nov3mb3r/monte-carlo/blob/master/README.md
-	* [hawk](https://github.com/Canthv0/hawk)
-		* Powershell Based tool for gathering information related to O365 intrusions and potential Breaches
-	* [Office 365 Incident Response - Alex Parsons(BSides Orlando2019)](https://www.youtube.com/watch?v=5YfH4y5olMQ)
-		* In this talk, I will discuss attacker patterns in O365 environments, how to collect the data you need during an incident, and how to respond to questions from CISOs and lawyers, and tell some Incident Response war stories along the way. We will also look into some of the new techniques attackers are using to perform things like MFA bypass, new features that Microsoft is rolling out to assist Incident Responders (such as MailItemsAccessed operations), and ways to automate and prepare for such an attack.
-		* [Slides](https://www.slideshare.net/AlexParsons13/office-365-incident-response-2019-bsides-orlando)

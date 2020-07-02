@@ -16,28 +16,24 @@
 
 
 
-https://github.com/Raikia/CredNinja
-* [HVAZARD Dictionary Modifier](https://github.com/MichaelDim02/Hvazard)
-	* Remove short passwords & duplicates, change lowercase to uppercase & reverse, combine wordlists!
 
-https://allanfeid.com/content/cracking-zip-files-fcrackzip
-https://github.com/hyc/fcrackzip
-http://pdfcrack.sourceforge.net/
-
-https://www.betterbuys.com/estimating-password-cracking-times/
-* [brut3k1t](https://github.com/ex0dus-0x/brut3k1t)
-https://github.com/clr2of8/DPAT
-* [Comprehensive Guide on Cewl Tool - rajhackingarticles.blogspot.com](https://rajhackingarticles.blogspot.com/2018/11/hello-friends-in-this-article-we-are.html)
-
-* [Exploiting Password Reuse on Personal Accounts: How to Gain Access to Domain Credentials Without Being on a Target’s Network: Part 1 - BHIS](https://www.blackhillsinfosec.com/exploiting-password-reuse-on-personal-accounts-how-to-gain-access-to-domain-credentials-without-being-on-a-targets-network-part-1/)
-* [Password Spraying Outlook Web Access – How to Gain Access to Domain Credentials Without Being on a Target’s Network: Part 2 - BHIS](https://www.blackhillsinfosec.com/password-spraying-outlook-web-access-how-to-gain-access-to-domain-credentials-without-being-on-a-targets-network-part-2/)
-* [Brute Forcing with Burp - Pentesters Tips & Tricks Week 1 - securenetwork.com](https://www.securenetworkinc.com/news/2017/7/16/brute-forcing-with-burp-pentesters-tips-tricks-week-1)
-* [Exploiting Password Reuse on Personal Accounts: How to Gain Access to Domain Credentials Without Being on a Target’s Network: Part 1 - Beau Bullock](https://www.blackhillsinfosec.com/exploiting-password-reuse-on-personal-accounts-how-to-gain-access-to-domain-credentials-without-being-on-a-targets-network-part-1/)
-* [Password Spraying Outlook Web Access – How to Gain Access to Domain Credentials Without Being on a Target’s Network: Part 2 - Beau Bullock](https://www.blackhillsinfosec.com/password-spraying-outlook-web-access-how-to-gain-access-to-domain-credentials-without-being-on-a-targets-network-part-2/)
-
-
-Default Oracle Creds:
-http://www.petefinnigan.com/default/default_password_list.htm
+---------------------------
+### Password Spraying <a name="spray"></a>
+* **General**
+	* **Articles/Papers/Talks/Writeups**
+		* [Exploiting Password Reuse on Personal Accounts: How to Gain Access to Domain Credentials Without Being on a Target’s Network: Part 1 - Beau Bullock](https://www.blackhillsinfosec.com/exploiting-password-reuse-on-personal-accounts-how-to-gain-access-to-domain-credentials-without-being-on-a-targets-network-part-1/)
+		* [Password Spraying Outlook Web Access – How to Gain Access to Domain Credentials Without Being on a Target’s Network: Part 2 - Beau Bullock](https://www.blackhillsinfosec.com/password-spraying-outlook-web-access-how-to-gain-access-to-domain-credentials-without-being-on-a-targets-network-part-2/)
+		* [Brute Forcing with Burp - Pentesters Tips & Tricks Week 1 - securenetwork.com](https://www.securenetworkinc.com/news/2017/7/16/brute-forcing-with-burp-pentesters-tips-tricks-week-1)
+	* **Tools**	
+		* [brut3k1t](https://github.com/ex0dus-0x/brut3k1t)
+			* brute is a Python-based library framework and engine that enables security professionals to rapidly construct bruteforce / credential stuffing attacks. It features both a multi-purpose command-line application (brute), and a software library that can be used in tandem to quickly generate standalone module scripts for attack.
+* **MS Outlook/Office365**
+	* **Articles/Papers/Talks/Writeups**
+	* **Tools**	
+		* [MSOLSpray](https://github.com/dafthack/MSOLSpray)
+			* A password spraying tool for Microsoft Online accounts (Azure/O365). The script logs if a user cred is valid, if MFA is enabled on the account, if a tenant doesn't exist, if a user doesn't exist, if the account is locked, or if the account is disabled.
+		* [SprayingToolkit](https://github.com/byt3bl33d3r/SprayingToolkit)
+			* Scripts to make password spraying attacks against Lync/S4B & OWA a lot quicker, less painful and more efficient
 
 ---------------------------
 ### <a name="general"></a> General
@@ -67,8 +63,11 @@ http://www.petefinnigan.com/default/default_password_list.htm
 * **Wordlist Generation** <a name="wordlistgen"></a>
 	* **Articles/Writeups**
 		* [Generating Wordlists](http://netsec.ws/?p=457)
+		* [Weak in, Weak out: Keeping Password Lists Current - @NYXGEEK](https://www.trustedsec.com/blog/weak-in-weak-out-keeping-password-lists-current/)
 	* **Source: From Nothing**
 		* [Creating Wordlists with Crunch](http://adaywithtape.blogspot.com/2011/05/creating-wordlists-with-crunch-v30.html)
+		* [weakpass_generator](https://github.com/nyxgeek/weakpass_generator)
+			* generates weak passwords based on current date
 	* **Source: Keyboard Walks**
 		* [Generating Keyboard Walks - bytesdarkly.com](https://bytesdarkly.com/2014/08/generating-keyboard-walks/)
 		* [Methods to Generate Keyboard Walks for Password Cracking - Rich Kelley](https://github.com/Rich5/Keyboard-Walk-Generators)
@@ -90,9 +89,15 @@ http://www.petefinnigan.com/default/default_password_list.htm
 		* [CeWL](http://digi.ninja/projects/cewl.php)
 			* CeWL is a ruby app which spiders a given url to a specified depth, optionally following external links, and returns a list of words which can then be used for password crackers such as John the Ripper.
 			* [Comprehensive Guide on Cewl Tool - Raj Chandel](https://rajhackingarticles.blogspot.com/2018/11/hello-friends-in-this-article-we-are.html)
+		* [rhodiola](https://github.com/utkusen/rhodiola)
+			* Rhodiola tool is developed to narrow the brute force combination pool by creating a personalized wordlist for target people. It finds interest areas of a given user by analyzing his/her tweets, and builds a personalized wordlist.
+	 	* [Generating Personalized Wordlists by Analyzing Targets Tweets - Utku Sen(DEFCON27 ReconVillage)](https://www.youtube.com/watch?v=R3XuI9JUFDA&list=PL9fPq3eQfaaCkpP6XOD4uCQB6NpGrbujo&index=4&t=0s)
 	* **BigData**
 		* [Commonspeak2](https://github.com/assetnote/commonspeak2)
     		* Commonspeak2 leverages publicly available datasets from Google BigQuery to generate content discovery and subdomain wordlists. As these datasets are updated on a regular basis, the wordlists generated via Commonspeak2 reflect the current technologies used on the web. By using the Golang client for BigQuery, we can stream the data and process it very quickly. The future of this project will revolve around improving the quality of wordlists generated by creating automated filters and substitution functions. Let's turn creating wordlists from a manual task, into a reproducible and reliable science with BigQuery.
+    * **Modifying Wordlists**
+	    * [HVAZARD Dictionary Modifier](https://github.com/MichaelDim02/Hvazard)
+			* Remove short passwords & duplicates, change lowercase to uppercase & reverse, combine wordlists!
 * **Wordlists** <a name="wordlists"></a>
 	* [Probable-Wordlists](https://github.com/berzerk0/Probable-Wordlists)
 		* Wordlists sorted by probability originally created for password generation and testing
@@ -158,11 +163,19 @@ http://www.petefinnigan.com/default/default_password_list.htm
 			* PACK (Password Analysis and Cracking Toolkit) is a collection of utilities developed to aid in analysis of password lists in order to enhance password cracking through pattern detection of masks, rules, character-sets and other password characteristics. The toolkit generates valid input files for Hashcat family of password crackers.
 		* [BarsWF](https://3.14.by/en/md5)
 			* MD5 Cracker
+		* [Cryptbreaker](https://github.com/Sy14r/Cryptbreaker)
+			* Upload files and use AWS Spot Instances to crack passwords. Using cloud capabilities you can even prevent plaintext credentials from leaving the isolated cracking box ensuring that you get usable statistics on passwords while minimizing plaintext credential exposure.
 	* **Miscellaneous**
 	* **Windows**
-		* [LM, NTLM, Net-NTLMv2, oh my! A Pentester’s Guide to Windows Hashes- Peter Gombos](https://medium.com/@petergombos/lm-ntlm-net-ntlmv2-oh-my-a9b235c58ed4)
-		* [ntlmv1-multi](https://github.com/evilmog/ntlmv1-multi)
-			* This tool modifies NTLMv1/NTLMv1-ESS/MSCHAPv2 hashes so they can be cracked with DES Mode 14000 in hashcat
+		* **Articles/Papers/Talks/Writeups**
+			* [Cracking NTLMv1 \w ESS/SSP - crack.sh]()https://crack.sh/cracking-ntlmv1-w-ess-ssp/
+			* [LM, NTLM, Net-NTLMv2, oh my! A Pentester’s Guide to Windows Hashes- Peter Gombos](https://medium.com/@petergombos/lm-ntlm-net-ntlmv2-oh-my-a9b235c58ed4)
+		* **Tools**
+			* [Rainbow Crackalack v1.2](https://github.com/jtesta/rainbowcrackalack)
+				* This project produces open-source code to generate rainbow tables as well as use them to look up password hashes. While the current release only supports NTLM, future releases may support MD5, SHA-1, SHA-256, and possibly more. Both Linux and Windows are supported!
+				* [Homepage](https://www.rainbowcrackalack.com/)
+			* [ntlmv1-multi](https://github.com/evilmog/ntlmv1-multi)
+				* This tool modifies NTLMv1/NTLMv1-ESS/MSCHAPv2 hashes so they can be cracked with DES Mode 14000 in hashcat
 * **App Specific Tools(as in single application focus)**<a name="appt"></a>
 	* [crackxls2003 0.4](https://github.com/GavinSmith0123/crackxls2003)
 		* This program may be used to break the encryption on Microsoft Excel and Microsoft Word file which have been encrypted using the RC4 method, which uses a 40-bit-long key. This was the default encryption method in Word and Excel 97/2000/2002/2003. This program will not work on files encrypted using Word or Excel 2007 or later, or for versions 95 or earlier. It will not work if a file was encrypted with a non-default method. Additionally, documents created with the Windows system locale set to France may use a different encryption method.
@@ -181,6 +194,8 @@ http://www.petefinnigan.com/default/default_password_list.htm
 		* [Hate_Crack](https://github.com/trustedsec/hate_crack)
 			* A tool for automating cracking methodologies through Hashcat from the TrustedSec team. 
 		* [Automated Password Cracking: Use oclHashcat To Launch A Fingerprint Attack](https://www.question-defense.com/2010/08/15/automated-password-cracking-use-oclhashcat-to-launch-a-fingerprint-attack)
+		* [HAT - Hashcat Automation Tool](https://github.com/sp00ks-git/hat)
+			* An automated Hashcat tool for common wordlists and rules to speed up the process of cracking hashes during engagements. HAT is simply a wrapper for Hashcat (with a few extra features) - https://hashcat.net, however I take no credit for that superb tool.
 	* **Hashcat Attacks**
 		* [Mask atttack](http://hashcat.net/wiki/doku.php?id=mask_attack)
 			* Try all combinations from a given keyspace just like in Brute-Force attack, but more specific. 
@@ -205,12 +220,19 @@ http://www.petefinnigan.com/default/default_password_list.htm
 		* [OCLHashcat Hash Examples + hash code](https://hashcat.net/wiki/doku.php?id=example_hashes)
 	* **Hashcat Related Stuff**
 		* [Password Analysis To Hashcat (PATH) script](https://tickorone.wordpress.com/2012/06/02/password-analysis-to-hashcat-path-script/)
+		* [nsa-rules](https://github.com/NSAKEY/nsa-rules)
+			* Password cracking rules and masks for hashcat that I generated from cracked passwords.
+	* **Hashcat-related Tools**
+		* [Hashtopolis](https://github.com/s3inlc/hashtopolis)
+			* Hashtopolis is a multi-platform client-server tool for distributing hashcat tasks to multiple computers. The main goals for Hashtopolis's development are portability, robustness, multi-user support, and multiple groups management.
+		* [CrackerJack](https://github.com/ctxis/crackerjack)
+			* Web Interface for Hashcat by Context Information Security
+		* [Cracklord](https://github.com/jmmcatee/cracklord)
+			* CrackLord is a system designed to provide a scalable, pluggable, and distributed system for both password cracking as well as any other jobs needing lots of computing resources. Better said, CrackLord is a way to load balance the resources, such as CPU, GPU, Network, etc. from multiple hardware systems into a single queueing service across two primary services: the Resource and Queue. It won't make these tasks faster, but it will make it easier to manage them.
 * **Tools** <a name="generalt"></a>
 	* [Patator](https://github.com/lanjelot/patator)
 		* Patator was written out of frustration from using Hydra, Medusa, Ncrack, Metasploit modules and Nmap NSE scripts for password guessing attacks. I opted for a different approach in order to not create yet another brute-forcing tool and avoid repeating the same shortcomings. Patator is a multi-threaded tool written in Python, that strives to be more reliable and flexible than his fellow predecessors.
 	* [Firefox password cracker](https://github.com/pradeep1288/ffpasscracker)
-	* [Cracklord](https://github.com/jmmcatee/cracklord)
-		* CrackLord is a system designed to provide a scalable, pluggable, and distributed system for both password cracking as well as any other jobs needing lots of computing resources. Better said, CrackLord is a way to load balance the resources, such as CPU, GPU, Network, etc. from multiple hardware systems into a single queueing service across two primary services: the Resource and Queue. It won't make these tasks faster, but it will make it easier to manage them.
 	* [Dagon](https://github.com/Ekultek/Dagon)
 		* Named after the prince of Hell, Dagon (day-gone) is an advanced hash cracking and manipulation system, capable of bruteforcing multiple hash types, creating bruteforce dictionaries, automatic hashing algorithm verification, random salt generation from Unicode to ASCII, and much more.
 	* [Gladius](https://github.com/praetorian-inc/gladius)
@@ -227,6 +249,12 @@ http://www.petefinnigan.com/default/default_password_list.htm
 		* This repository contains code for the [PassGAN: A Deep Learning Approach for Password Guessing paper](https://arxiv.org/abs/1709.00440). The model from PassGAN is taken from [Improved Training of Wasserstein GANs](https://arxiv.org/abs/1704.00028) and it is assumed that the authors of PassGAN used the [improved_wgan_training tensorflow](https://github.com/igul222/improved_wgan_training) implementation in their work. For this reason, I have modified that reference implementation in this repository to make it easy to train (train.py) and sample (sample.py) from. 
 	* [Mnemonic Password Formulas](http://uninformed.org/?v=all&a=33&t=sumry)
 		*  The current information technology landscape is cluttered with a large number of information systems that each have their own individual authentication schemes. Even with single sign-on and multi-system authentication methods, systems within disparate management domains are likely to be utilized by users of various levels of involvement within the landscape as a whole. Due to this complexity and the abundance of authentication requirements, many users are required to manage numerous credentials across various systems. This has given rise to many different insecurities relating to the selection and management of passwords. This paper details a subset of issues facing users and managers of authentication systems involving passwords, discusses current approaches to mitigating those issues, and finally introduces a new method for password management and recalls termed Mnemonic Password Formulas. 
+* **ZIP Archives**
+	* [Cracking ZIP files with fcrackzip - Allan Feid(2009)](https://allanfeid.com/content/cracking-zip-files-fcrackzip)
+	* [fcrackzip](https://github.com/hyc/fcrackzip)
+		* A braindead program for cracking encrypted ZIP archives. Forked from http://oldhome.schmorp.de/marc/fcrackzip.html
+	* [PDFCrack](http://pdfcrack.sourceforge.net/)
+		* PDFCrack is a GNU/Linux (other POSIX-compatible systems should work too) tool for recovering passwords and content from PDF-files. It is small, command line driven without external dependencies. The application is Open Source (GPL).
 
 
 

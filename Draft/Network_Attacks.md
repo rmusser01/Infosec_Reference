@@ -1,5 +1,6 @@
 # Network Attacks & Defenses
 
+--------------------------------------------------------
 ## Table of Contents
 - [General](#general)
 - [Protocols(Mostly)](#protocols)
@@ -59,6 +60,7 @@
     - [Printers](#printers)
     - [Proxies](#proxy)
     - [Redis](#redis)
+    - [Preboot Execution Environment (PXE)](#pxe)
     - [Software Defined Networking(SDN)](#sdn)
     - [SQL](#sql)
     - [Switches](#switches)
@@ -70,6 +72,7 @@
     - [Talks/Videos](#videos)
     - [Other](#other)
     - [MISC](#misc2)
+
 
 * Need to Add 
     * BGP
@@ -125,28 +128,6 @@
         * Easily download entire folders of Nessus scans in the format(s) of your choosing. This script uses provided credentials to connect to a Nessus server and store a session token, which is then used for all subsquent requests.
     * [nessaws](https://github.com/TerbiumLabs/nessaws?files=1)
         * Automate Nessus scans against AWS EC2/RDS endpoints.
-
-
--------------------------------------------------------------------------------------------------------------------------------------------------
-### <a name="redis"></a>Redis
-* **101** 
-    * [redis - Wikipedia](https://en.wikipedia.org/wiki/Redis)
-    * [Introduction to redis - redis.io](https://redis.io/topics/introduction)
-* **Articles/Presentations/Talks/Writeups**
-    * [redis security - redis.io](https://redis.io/topics/security)
-    * [A Few Things About redis Security - antirez](http://antirez.com/news/96)
-    * [Securing redis - redis.io](https://redis.io/topics/quickstart#securing-redis)
-    * [Pentesting Redis Servers - averagesecurityguy](https://averagesecurityguy.github.io/code/pentest/2015/09/17/pentesting-redis-servers/)
-* **Tools**
-    * [redis-dump](http://delanotes.com/redis-dump/)
-    * [Script attempted to create global variable - Stackoverflow](https://stackoverflow.com/questions/19997647/script-attempted-to-create-global-variable)
-
-
-
-
------------
-### <a name="other">Other</a> (Breaking Routers)
-* [ASUS Router infosvr UDP Broadcast root Command Execution](https://github.com/jduck/asus-cmd)
 
 
 
@@ -407,8 +388,13 @@
 
 
 
+
+
+------------
 ### <a name="ipsec"></a>IPSEC
 * **101**
+    * [IPSec - Wikipedia](https://en.wikipedia.org/wiki/IPsec)
+    * [IPSec RFCs - docs.oracle](https://docs.oracle.com/cd/E19253-01/816-4554/ipsec-ov-14/index.html)
 * **Attacking*** 
     * **Articles/Blogposts/Writeups**
     * **Presentations/Talks/Videos**
@@ -1963,6 +1949,23 @@
     * [BCD](https://github.com/mattifestation/BCD)
         * BCD is a module to interact with boot configuration data (BCD) either locally or remotely using the ROOT/WMI:Bcd* WMI classes. The functionality of the functions in this module mirror that of bcdedit.exe.
 
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+### <a name="redis"></a>Redis
+* **101** 
+    * [redis - Wikipedia](https://en.wikipedia.org/wiki/Redis)
+    * [Introduction to redis - redis.io](https://redis.io/topics/introduction)
+* **Articles/Presentations/Talks/Writeups**
+    * [redis security - redis.io](https://redis.io/topics/security)
+    * [A Few Things About redis Security - antirez](http://antirez.com/news/96)
+    * [Securing redis - redis.io](https://redis.io/topics/quickstart#securing-redis)
+    * [Pentesting Redis Servers - averagesecurityguy](https://averagesecurityguy.github.io/code/pentest/2015/09/17/pentesting-redis-servers/)
+* **Tools**
+    * [redis-dump](http://delanotes.com/redis-dump/)
+    * [Script attempted to create global variable - Stackoverflow](https://stackoverflow.com/questions/19997647/script-attempted-to-create-global-variable)
 
 
 

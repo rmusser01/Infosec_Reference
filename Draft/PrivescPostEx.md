@@ -101,7 +101,6 @@
 
 
 
-
 ------------------------------------------------------------------------------------------------------------------------
 ## <a name="privesc"></a>Privilege Escalation 
 
@@ -359,10 +358,6 @@
 	* **Logging**
 		* [About Eventlogs(PowerShell) - docs.ms](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_eventlogs?view=powershell-5.1)
 		* [Script Tracing and Logging - docs.ms](https://docs.microsoft.com/en-us/powershell/wmf/whats-new/script-logging)
-		* [PowerShell ScriptBlock Logging Bypass](https://cobbr.io/ScriptBlock-Logging-Bypass.html)
-		* [A Critique of Logging Capabilities in PowerShell v6](http://www.labofapenetrationtester.com/2018/01/powershell6.html)
-			* Introduces 'PowerShell Upgrade Attack'
-		* [Bypass for PowerShell ScriptBlock Warning Logging of Suspicious Commands - cobbr.io](https://cobbr.io/ScriptBlock-Warning-Event-Logging-Bypass.html)
 * **Frameworks**
 	* Empire -> See rt.md
 	* Powersploit
@@ -910,7 +905,6 @@
 		* **Tools**
 			* [swap_digger](https://github.com/sevagas/swap_digger)
 				* swap_digger is a bash script used to automate Linux swap analysis for post-exploitation or forensics purpose. It automates swap extraction and searches for Linux user credentials, Web form credentials, Web form emails, HTTP basic authentication, WiFi SSID and keys, etc.
-
 	* **Data from Network Shared Drive**
 	* **Data from Removable Media**
 	* **Data Staged**
@@ -1173,34 +1167,47 @@
 		* [App security overview - support.apple](https://support.apple.com/guide/security/app-security-overview-sec35dd877d0/1/web/1)
 		* [Protecting against malware - support.apple](https://support.apple.com/guide/security/protecting-against-malware-sec469d47bd8/1/web/1)
 		* [Gatekeeper and runtime protection - support.apple](https://support.apple.com/guide/security/gatekeeper-and-runtime-protection-sec5599b66df/1/web/1)
-	* **Endpoint Security**
-		* [EndpointSecurity - developer.apple](https://developer.apple.com/documentation/endpointsecurity)
-			* Endpoint Security is a C API for monitoring system events for potentially malicious activity. Your client, which you can write in any language supporting native calls, registers with Endpoint Security to authorize pending events, or receive notifications of events that have already occurred. These events include process executions, mounting file systems, forking processes, and raising signals. Develop your system extension with Endpoint Security and package it in an app that uses the SystemExtensions framework to install and upgrade the extension on the user’s Mac.
-	* **Gatekeeper**
-		* [Gatekeeper - Wikipedia](https://en.wikipedia.org/wiki/Gatekeeper_(macOS))
-		* [Gatekeeper Bypass - ATT&CK](https://attack.mitre.org/techniques/T1144/)
-		* [Safely open apps on your Mac - support.apple](https://support.apple.com/en-us/HT202491)
-    		* 'macOS includes a technology called Gatekeeper, that's designed to ensure that only trusted software runs on your Mac.'
-		* [Launch Service Keys - `LSFileQuarantineEnabled`](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW10)
-		* [macOS Code Signing In Depth - developer.apple](https://developer.apple.com/library/archive/technotes/tn2206/_index.html)
-		* [GateKeeper - Bypass or not bypass? - theevilbit(2019)](https://theevilbit.github.io/posts/gatekeeper_bypass_or_not_bypass/)
-		* [How WindTail and Other Malware Bypass macOS Gatekeeper Settings - Phil Stokes](https://www.sentinelone.com/blog/how-malware-bypass-macos-gatekeeper/)
-		* [MacOS X GateKeeper Bypass - Filippo Cavallarin(2019)](https://www.fcvl.net/vulnerabilities/macosx-gatekeeper-bypass)
-	* **System Integrity Protection(SIP)**
-		* [System Integrity Protection - Wikipedia](https://en.wikipedia.org/wiki/System_Integrity_Protection)
-		* [About System Integrity Protection on your Mac - support.apple.com](https://support.apple.com/en-us/HT204899)
-		* [Configuring System Integrity Protection - developer.apple](https://developer.apple.com/library/archive/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html#//apple_ref/doc/uid/TP40016462-CH5-SW1)
-		* [Bypassing Apple's System Integrity Protection - Patrick Wardle](https://objective-see.com/blog/blog_0x14.html)
-			› abusing the local upgrade process to bypass SIP]
-		* [Bad Things in Small Packages - Jaron Bradley](https://www.youtube.com/watch?v=5nOxznrOK48&list=PLliknDIoYszvTDaWyTh6SYiTccmwOsws8&index=5)
-    		* [Slides](https://objectivebythesea.com/v2/talks/OBTS_v2_Bradley.pdf)
-   			* This talk will primarily focus on the work that went into discovering CVE-2019-8561. The vulnerability exists within PackageKit that could lead to privilege escalation, signature bypassing, and ultimately the bypassing of Apple's System Integrity Protection (SIP). This vulnerability was patched in macOS 10.14.4, but the details behind this exploit have not been documented anywhere prior to this conference! 
-	* **XProtect**
-		* [XProtect Explained: How Your Mac’s Built-in Anti-malware Software Works - Chris Hoffman(2015)](https://www.howtogeek.com/217043/xprotect-explained-how-your-macs-built-in-anti-malware-works/)
-		* [How the “antimalware” XProtect for MacOS works and why it detects poorly and badly - ElevenPaths(2019)](https://business.blogthinkbig.com/antimalware-xprotect-macos/)
-		* [How To Bypass XProtect on Catalina - Phil Stokes](https://www.sentinelone.com/blog/macos-malware-researchers-how-to-bypass-xprotect-on-catalina/)
-		* [XProtect](https://github.com/knightsc/XProtect)
-			* This repo contains historical releases of the XProtect configuration data.
+	* **Application Whitelisting**<a name="whitelist"></a>
+		* **Articles/Blogposts/Writeups**
+				* [Bypassing Google's Santa Application Whitelisting on macOS (Part 1 of 2) - Adam Crosser](https://www.praetorian.com/blog/bypassing-google-santa-application-whitelisting-on-macos-part-1)
+				* [Bypassing Google's Santa Application Whitelisting on macOS (Part 2 of 2) - Adam Crosser](https://www.praetorian.com/blog/bypassing-google-santa-application-whitelisting-on-macos-part-2)
+	* **Endpoint Security**<a name="esf"></a>
+		* **101**
+			* [EndpointSecurity - developer.apple](https://developer.apple.com/documentation/endpointsecurity)
+				* Endpoint Security is a C API for monitoring system events for potentially malicious activity. Your client, which you can write in any language supporting native calls, registers with Endpoint Security to authorize pending events, or receive notifications of events that have already occurred. These events include process executions, mounting file systems, forking processes, and raising signals. Develop your system extension with Endpoint Security and package it in an app that uses the SystemExtensions framework to install and upgrade the extension on the user’s Mac.
+		* **Articles/Blogposts/Writeups**
+	* **Gatekeeper**<a name="gatekeeper"></a>
+		* **101**
+			* [Gatekeeper - Wikipedia](https://en.wikipedia.org/wiki/Gatekeeper_(macOS))
+			* [Gatekeeper Bypass - ATT&CK](https://attack.mitre.org/techniques/T1144/)
+			* [Safely open apps on your Mac - support.apple](https://support.apple.com/en-us/HT202491)
+    			* 'macOS includes a technology called Gatekeeper, that's designed to ensure that only trusted software runs on your Mac.'
+			* [Launch Service Keys - `LSFileQuarantineEnabled`](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW10)
+			* [macOS Code Signing In Depth - developer.apple](https://developer.apple.com/library/archive/technotes/tn2206/_index.html)
+		* **Articles/Blogposts/Writeups**
+			* [GateKeeper - Bypass or not bypass? - theevilbit(2019)](https://theevilbit.github.io/posts/gatekeeper_bypass_or_not_bypass/)
+			* [How WindTail and Other Malware Bypass macOS Gatekeeper Settings - Phil Stokes](https://www.sentinelone.com/blog/how-malware-bypass-macos-gatekeeper/)
+			* [MacOS X GateKeeper Bypass - Filippo Cavallarin(2019)](https://www.fcvl.net/vulnerabilities/macosx-gatekeeper-bypass)
+	* **System Integrity Protection(SIP)**<a name="sip"></a>
+		* **101**
+			* [System Integrity Protection - Wikipedia](https://en.wikipedia.org/wiki/System_Integrity_Protection)
+			* [About System Integrity Protection on your Mac - support.apple.com](https://support.apple.com/en-us/HT204899)
+			* [Configuring System Integrity Protection - developer.apple](https://developer.apple.com/library/archive/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html#//apple_ref/doc/uid/TP40016462-CH5-SW1)
+		* **Articles/Blogposts/Writeups**
+			* [Bypassing Apple's System Integrity Protection - Patrick Wardle](https://objective-see.com/blog/blog_0x14.html)
+				* abusing the local upgrade process to bypass SIP]
+		* **Talks/Presentations/Videos**
+			* [Bad Things in Small Packages - Jaron Bradley](https://www.youtube.com/watch?v=5nOxznrOK48&list=PLliknDIoYszvTDaWyTh6SYiTccmwOsws8&index=5)
+    			* [Slides](https://objectivebythesea.com/v2/talks/OBTS_v2_Bradley.pdf)
+   				* This talk will primarily focus on the work that went into discovering CVE-2019-8561. The vulnerability exists within PackageKit that could lead to privilege escalation, signature bypassing, and ultimately the bypassing of Apple's System Integrity Protection (SIP). This vulnerability was patched in macOS 10.14.4, but the details behind this exploit have not been documented anywhere prior to this conference! 
+	* **XProtect**<a name="xprotect"></a>
+		* **101**
+			* [XProtect Explained: How Your Mac’s Built-in Anti-malware Software Works - Chris Hoffman(2015)](https://www.howtogeek.com/217043/xprotect-explained-how-your-macs-built-in-anti-malware-works/)
+			* [How the “antimalware” XProtect for MacOS works and why it detects poorly and badly - ElevenPaths(2019)](https://business.blogthinkbig.com/antimalware-xprotect-macos/)
+		* **Articles/Blogposts/Writeups**
+			* [How To Bypass XProtect on Catalina - Phil Stokes](https://www.sentinelone.com/blog/macos-malware-researchers-how-to-bypass-xprotect-on-catalina/)
+			* [XProtect](https://github.com/knightsc/XProtect)
+				* This repo contains historical releases of the XProtect configuration data.
 * **Credential Access**<a name="osxcredac"></a>
 	* **Cracking Password Hashes**
 		* **Articles/Blogposts/Writeups**
@@ -2198,38 +2205,268 @@
 		* [A bunch of Red Pills: VMware Escapes - Marco Grassi, Azureyang, Jackyxty](https://keenlab.tencent.com/en/2018/04/23/A-bunch-of-Red-Pills-VMware-Escapes/)
 		* [VMware Exploitation](https://github.com/xairy/vmware-exploitation)
 			* A bunch of links related to VMware escape exploits
-
-	* **Access Token Manipulation**
-	* **Accessibility Features**
-	* **AppCert DLLs**
-	* **AppInit DLLs**
-	* **Application Shimming**
-	* **Bypass User Account Control**
-	* **DLL Search Order Hijacking**
-	* **Exploitation for Privilege Escalation**
-	* **Extra Window Memory Injection**
-	* **File System Permissions Weakness**
-	* **Hooking**
-	* **Image File Execution Options Injection**
-	* **New Service**
-	* **Parent PID Spoofing**
-	* **Path Interception**
-	* **Port Monitors**
-	* **PowerShell Profile**
-	* **Process Injection**
-	* **Scheduled Task**
-	* **Service Registry Permissions Weakness**
-	* **SID-History Injection**
-	* **Valid Accounts** 
-	* **Web Shell**
-
 * **Defense Evasion**<a name="windefev"></a>
 	* **101**
 	* **Articles/Blogposts/Writeups**
 	* **Talks/Presentations/Videos**
-	* **Tools**
-	* **Access Token Manipulation**
-
+	* **AMSI**<a name="amsi"></a>
+		* **101**
+			* [AMSI Bypass - Paul Laine](https://www.contextis.com/en/blog/amsi-bypass)
+			* [Exploring PowerShell AMSI and Logging Evasion - Adam Chester](https://www.mdsec.co.uk/2018/06/exploring-powershell-amsi-and-logging-evasion/)
+			* [AMSI: How Windows 10 Plans to Stop Script-Based Attacks and How Well It Does It - Blogpost](http://www.labofapenetrationtester.com/2016/09/amsi.html)
+			* [AMSI: How Windows 10 Plans to Stop Script-Based Attaacks and How Well It Does It - BH US16](https://www.blackhat.com/docs/us-16/materials/us-16-Mittal-AMSI-How-Windows-10-Plans-To-Stop-Script-Based-Attacks-And-How-Well-It-Does-It.pdf)
+		* **AMSI Internals**
+			* [The Rise and Fall of AMSI - Tal Liberman(BHAsia 2018)](https://i.blackhat.com/briefings/asia/2018/asia-18-Tal-Liberman-Documenting-the-Undocumented-The-Rise-and-Fall-of-AMSI.pdf)
+			* [IAmsiStream interface sample - MS Github](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/AmsiStream)
+				* Demonstrates how to use the Antimalware Scan Interface to scan a stream.
+			* [Antimalware Scan Interface (AMSI) - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal)
+			* [Developer audience, and sample code - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/dev-audience)
+			* [Antimalware Scan Interface (AMSI) functions - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-functions)
+			* [MS Office file format sorcery - Stan Hegt, Pieter Ceelen(Troopers19)](https://www.youtube.com/watch?v=iXvvQ5XML7g)
+				* [Slides](https://github.com/outflanknl/Presentations/raw/master/Troopers19_MS_Office_file_format_sorcery.pdf)
+				* A deep dive into file formats used in MS Office and how we can leverage these for offensive purposes. We will show how to fully weaponize ‘p-code’ across all MS Office versions in order to create malicious documents without using VBA code, successfully bypassing antivirus and other defensive measures. In this talk Stan and Pieter will do a deep dive into the file formats used in MS Office, demonstrating many features that can be used offensively. They will present attacks that apply to both the legacy formats (OLE streams) and the newer XML based documents. Specific focus is around the internal representation of VBA macros and pseudo code (p-code, execodes) and how these can be weaponized. We will detail the inner logic of Word and Excel regarding VBA and p-code, and release scripts and tools for creating malicious Office documents that bypass anti-virus, YARA rules, AMSI for VBA and various MS Office document analyzers.
+		* **Bypass Blogposts**
+			* [Antimalware Scan Interface (AMSI) — A Red Team Analysis on Evasion - iwantmore.pizza](https://iwantmore.pizza/posts/amsi.html)
+			* [How Red Teams Bypass AMSI and WLDP for .NET Dynamic Code - modexp](https://modexp.wordpress.com/2019/06/03/disable-amsi-wldp-dotnet/)
+			* [Bypassing Amsi using PowerShell 5 DLL Hijacking - cn33liz](https://cn33liz.blogspot.com/2016/05/bypassing-amsi-using-powershell-5-dll.html)
+			* [Alternative AMSI bypass - Benoit Sevens](https://medium.com/@benoit.sevens/alternative-amsi-bypass-554dc61d70b1)
+			* [AMSI Bypass With a Null Character - satoshi's note](http://standa-note.blogspot.com/2018/02/amsi-bypass-with-null-character.html)
+			* [Disabling AMSI in JScript with One Simple Trick - James Forshaw](https://tyranidslair.blogspot.com/2018/06/disabling-amsi-in-jscript-with-one.html)
+			* [AMSI Bypass: Patching Technique - Avi Gimpel & Zeev Ben Porat](https://www.cyberark.com/threat-research-blog/amsi-bypass-patching-technique/)
+			* [AMSI Bypass Redux - Avi Gimpel](https://www.cyberark.com/threat-research-blog/amsi-bypass-redux/)
+			* [Bypassing AMSI via COM Server Hijacking - Enigma0x3](https://enigma0x3.net/2017/07/19/bypassing-amsi-via-com-server-hijacking/)
+				*  This post will highlight a way to bypass AMSI by hijacking the AMSI COM server, analyze how Microsoft fixed it in build #16232 and then how to bypass that fix. This issue was reported to Microsoft on May 3rd, and has been fixed as a Defense in Depth patch in build #16232.
+			* [Sneaking Past Device Guard - Philip Tsukerman](https://conference.hitb.org/hitbsecconf2019ams/materials/D2T1%20-%20Sneaking%20Past%20Device%20Guard%20-%20Philip%20Tsukerman.pdf)
+			* [Red Team TTPs Part 1: AMSI Evasion - 0xDarkVortex.dev](https://0xdarkvortex.dev/index.php/2019/07/17/red-team-ttps-part-1-amsi-evasion/)
+			* RastaMouse AmsiScanBuffer Bypass Series
+				* [Part 1](https://rastamouse.me/2018/10/amsiscanbuffer-bypass---part-1/)
+				* [Part 2](https://rastamouse.me/2018/10/amsiscanbuffer-bypass---part-2/)
+				* [Part 3](https://rastamouse.me/2018/11/amsiscanbuffer-bypass-part-3/)
+				* [Part 4](https://rastamouse.me/2018/12/amsiscanbuffer-bypass-part-4/)
+			* [How to bypass AMSI and execute ANY malicious Powershell code - zc00l](https://0x00-0x00.github.io/research/2018/10/28/How-to-bypass-AMSI-and-Execute-ANY-malicious-powershell-code.html)
+			* [Weaponizing AMSI bypass with PowerShell - @0xB455](http://ha.cker.info/weaponizing-amsi-bypass-with-powershell/)
+			* [How to Bypass AMSI with an Unconventional Powershell Cradle - Mohammed Danish](https://medium.com/@gamer.skullie/bypassing-amsi-with-an-unconventional-powershell-cradle-6bd15a17d8b9)
+			* [Bypassing AMSI via COM Server Hijacking - Matt Nelson](https://posts.specterops.io/bypassing-amsi-via-com-server-hijacking-b8a3354d1aff)
+			* fixed as a Defense in Depth patch in build #16232.
+			* [Adventures in the Wonderful World of AMSI. - byte_st0rm](https://medium.com/@byte_St0rm/adventures-in-the-wonderful-world-of-amsi-25d235eb749c)
+			* [How to bypass AMSI and execute ANY malicious Powershell code - zc00l](https://0x00-0x00.github.io/research/2018/10/28/How-to-bypass-AMSI-and-Execute-ANY-malicious-powershell-code.html)
+			* [Understanding and Bypassing AMSI - Tom Carver(2020)](https://x64sec.sh/understanding-and-bypassing-amsi/)
+		* **Bypass Talks**
+			* [Antimalware Scan Interface (AMSI) - Dave Kennedy(WWHF2018)](https://www.youtube.com/watch?v=wBK1fTg6xuU)
+				* This talk will dive into the Antimalware Scan Interface (AMSI) as well as other alternatives in the “NextGen” series of preventative measures and show how trivial it is to write code that doesn’t get snagged.  The security market is focusing on open source data collection sources and security researchers as the main method to write signatures to detect attacks, much like what we saw in the 90s with traditional anti-virus tech. Not much has changed, let’s dive into the reality in security and how little these protective measures really do in the grand scheme of things. We’ll also be covering solid practices in defending against attacks, and what we should be focusing on.
+			* [PSAmsi An offensive PowerShell module for interacting with the Anti Malware Scan Interface in Windows - Ryan Cobb(Derbycon7)](https://www.youtube.com/watch?v=rEFyalXfQWk)
+			* [The Rise and Fall of AMSI - Tal Liberman(BH Asia18)]https://i.blackhat.com/briefings/asia/2018/asia-18-Tal-Liberman-Documenting-the-Undocumented-The-Rise-and-Fall-of-AMSI.pdf)
+			* [Red Team TTPs Part 1: AMSI Evasion - paranoidninja](https://0xdarkvortex.dev/index.php/2019/07/17/red-team-ttps-part-1-amsi-evasion/)
+			* [AMSI: How Windows 10 Plans To Stop Script Based Attacks And How Well It Does It - Nikhil Mittal(BHUSA16)](https://www.blackhat.com/docs/us-16/materials/us-16-Mittal-AMSI-How-Windows-10-Plans-To-Stop-Script-Based-Attacks-And-How-Well-It-Does-It.pdf)
+			* [Goodbye Obfuscation, Hello Invisi-Shell: Hiding Your Powershell Script in Plain Sight - Omer Yair(Derbycon2018)](http://www.irongeek.com/i.php?page=videos/derbycon8/track-3-15-goodbye-obfuscation-hello-invisi-shell-hiding-your-powershell-script-in-plain-sight-omer-yair)
+				* “The very concept of objective truth is fading out of the world. Lies will pass into history.” George Orwell. Objective truth is essential for security. Logs, notifications and saved data must reflect the actual events for security tools, forensic teams and IT managers to perform their job correctly. Powershell is a prime example of the constant cat and mouse game hackers and security personnel play every day to either reveal or hide the “objective truth” of a running script. Powershell’s auto logging, obfuscation techniques, AMSI and more are all participants of the same game playing by the same rules. We don’t like rules, so we broke them. As a result, Babel-Shellfish and Invisi-Shelltwo new tools that both expose and disguise powershell scripts were born. Babel-Shellfish reveals the inner hidden code of any obfuscated script while Invisi-Shell offers a new method of hiding malicious scripts, even from the Powershell process running it. Join us as we present a new way to think about scripts.
+		* **Bypass Tools**
+			* [Invisi-Shell](https://github.com/OmerYa/Invisi-Shell)
+			* [AmsiScanBufferBypass](https://github.com/rasta-mouse/AmsiScanBufferBypass)
+				* Circumvent AMSI by patching AmsiScanBuffer
+			* [CorruptCLRGlobal.ps1](https://gist.github.com/mattifestation/ef0132ba4ae3cc136914da32a88106b9)
+				* A PoC function to corrupt the g_amsiContext global variable in clr.dll in .NET Framework Early Access build 3694 Raw
+			* [AMSI Bypass Code Snippet Examples](https://github.com/SecureThisShit/Amsi-Bypass-Powershell#Using-Cornelis-de-Plaas-DLL-hijack-method)
+				* "This repo contains some Amsi Bypass methods i found on different Blog Posts."
+			* [PSAmsi](https://github.com/cobbr/PSAmsi)
+				* PSAmsi is a tool for auditing and defeating AMSI signatures. It's best utilized in a test environment to quickly create payloads you know will not be detected by a particular AntiMalware Provider, although it can be useful in certain situations outside of a test environment. When using outside of a test environment, be sure to understand how PSAmsi works, as it can generate AMSI alerts.
+			* [powershellveryless](https://github.com/decoder-it/powershellveryless)
+				* Constrained Language Mode + AMSI bypass all in one
+			* [AmsiBypass](https://github.com/0xb455/AmsiBypass/)
+				* C# PoC implementation for bypassing AMSI via in memory patching
+			* [NoAmci](https://github.com/med0x2e/NoAmci)
+				* A PoC for using DInvoke to patch AMSI.dll in order to bypass AMSI detections triggered when loading .NET tradecraft via Assembly.Load(). .Net tradecraft can be compressed, encoded (encrypted if required) in order to keep the assembly size less than 1MB, then embedded as a resource to be loaded after patching amsi.dll memory.
+		* **VBA Specific**
+			* **101**	
+				* [Office VBA + AMSI: Parting the veil on malicious macros - MS Security Team](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/)
+			* **Blogposts**
+				* [Dynamic Microsoft Office 365 AMSI In Memory Bypass Using VBA - Richard Davy, Gary Nield](https://secureyourit.co.uk/wp/2019/05/10/dynamic-microsoft-office-365-amsi-in-memory-bypass-using-vba/)
+				* [The Document that Eluded AppLocker and AMSI - ZLAB-YOROI](https://blog.yoroi.company/research/the-document-that-eluded-applocker-and-amsi/)
+				* [Office 365 AMSI Bypass (fixed) - Ring0x00](https://idafchev.github.io/research/2019/03/23/office365_amsi_bypass.html)
+			* **Talks & Presentations**
+				* [Bypassing AMSI for VBA - Pieter Ceelen](https://outflank.nl/blog/2019/04/17/bypassing-amsi-for-vba/)
+					* This blog is a writeup of the various AMSI weaknesses presented at [the Troopers talk ‘MS Office File Format Sorcery‘](https://github.com/outflanknl/Presentations/raw/master/Troopers19_MS_Office_file_format_sorcery.pdf) and [the Blackhat Asia presentation ‘Office in Wonderland’](https://i.blackhat.com/asia-19/Thu-March-28/bh-asia-Hegt-MS-Office-in-Wonderland.pdf).
+	* **Application Whitelisting**<a name="appwhitelist"></a>
+		* **101**
+			* [Whitelist Evasion revisited](https://khr0x40sh.wordpress.com/2015/05/27/whitelist-evasion-revisited/)
+			* [Shackles, Shims, and Shivs - Understanding Bypass Techniques](http://www.irongeek.com/i.php?page=videos/derbycon6/535-shackles-shims-and-shivs-understanding-bypass-techniques-mirovengi)
+			* [$@|sh – Or: Getting a shell environment from Runtime.exec](https://codewhitesec.blogspot.ro/2015/03/sh-or-getting-shell-environment-from.html)
+			* [WSH Injection: A Case Study - enigma0x3](https://enigma0x3.net/2017/08/03/wsh-injection-a-case-study/)
+		* **Articles/Blogposts/Writeups**
+			* [Escaping the Microsoft Office Sandbox: a faulty regex, allows malicious code to escape and persist - Adam Chester](https://objective-see.com/blog/blog_0x35.html)
+			* [Microsoft Applications and Blocklist - FortyNorthSecurity](https://www.fortynorthsecurity.com/how-to-bypass-wdac-with-dbgsrv-exe/)
+			* [Technical Advisory: Bypassing Workflows Protection Mechanisms - Remote Code Execution on SharePoint - Soroush Dalilil](https://www.nccgroup.trust/uk/our-research/technical-advisory-bypassing-workflows-protection-mechanisms-remote-code-execution-on-sharepoint/)
+			* [Bypassing Application Whitelisting with BGInfo - Oddvar Moe](https://msitpros.com/?p=3831)
+			* [Bypassing Application Whitelisting by using WinDbg/CDB as a Shellcode Runner - exploit-monday.com](http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html)
+			* [Bypass Application Whitelisting Script Protections - Regsvr32.exe & COM Scriptlets (.sct files)](https://web.archive.org/web/20160424110035/http://subt0x10.blogspot.com:80/2016/04/bypass-application-whitelisting-script.html)
+			* [How to Evade Application Whitelisting Using REGSVR32 - Joff Thyer](https://www.blackhillsinfosec.com/evade-application-whitelisting-using-regsvr32/)
+			* [Bypassing Application Whitelisting with runscripthelper.exe - Matt Graeber](https://posts.specterops.io/bypassing-application-whitelisting-with-runscripthelper-exe-1906923658fc)
+			* [Using Application Compatibility Shims - subTee](https://web.archive.org/web/20170815050734/http://subt0x10.blogspot.com/2017/05/using-application-compatibility-shims.html)
+			* [Consider Application Whitelisting with Device Guard - subTee](https://web.archive.org/web/20170517232357/http://subt0x10.blogspot.com:80/2017/04/consider-application-whitelisting-with.html)
+			* [Bypassing Application Whitelisting using MSBuild.exe - Device Guard Example and Mitigations - subTee](https://web.archive.org/web/20170714075746/http://subt0x10.blogspot.com:80/2017/04/bypassing-application-whitelisting.html)
+			* [Setting Up A Homestead In the Enterprise with JavaScript - subTee](https://web.archive.org/web/20160908140124/https://subt0x10.blogspot.in/2016/04/setting-up-homestead-in-enterprise-with.html)
+			* [Bypass Application Whitelisting Script Protections - Regsvr32.exe & COM Scriptlets (.sct files)](http://subt0x10.blogspot.sg/2017/04/bypass-application-whitelisting-script.html)
+			* [Application Whitelist Bypass Techniques](https://web.archive.org/web/20170430065331/https://github.com/subTee/ApplicationWhitelistBypassTechniques/blob/master/TheList.txt)
+				* A Catalog of Application Whitelisting Bypass Techniques - SubTee
+			* [Bypassing Application Whitelisting by using WinDbg/CDB as a Shellcode Runner](http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html)
+			* [BinariesThatDoesOtherStuff.txt - api0cradle](https://gist.github.com/api0cradle/8cdc53e2a80de079709d28a2d96458c2)
+			* [VBA RunPE - Breaking Out of Highly Constrained Desktop Environments - Part 1/2 - itm4n](https://itm4n.github.io/vba-runpe-part1/)
+				* [Part 2](https://itm4n.github.io/vba-runpe-part2/)	
+		* **Talks & Presentations**
+			* [Fantastic Red-Team Attacks and How to Find Them - Casey Smith, Ross Wolf(BHUSA 2019)](https://www.blackhat.com/us-19/briefings/schedule/index.html#fantastic-red-team-attacks-and-how-to-find-them-16540)
+				* This talk summarizes prevalent and ongoing gaps across organizations uncovered by testing their defenses against a broad spectrum of attacks via Atomic Red Team. Many of these adversary behaviors are not atomic, but span multiple events in an event stream that may be arbitrarily and inconsistently separated in time by nuisance events.
+				* [Slides](https://i.blackhat.com/USA-19/Thursday/us-19-Smith-Fantastic-Red-Team-Attacks-And-How-To-Find-Them.pdf)
+		* **Talks**
+			* [Modern Evasion Techniques Jason Lang - Derbycon7](https://www.youtube.com/watch?v=xcA2riLyHtQ&index=6&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
+			* [Whitelisting Evasion - subTee - Shmoocon 2015](https://www.youtube.com/watch?v=85M1Rw6mh4U)
+		* **Tools**
+			* [MS Signed mimikatz in just 3 steps](https://github.com/secretsquirrel/SigThief)
+			* [GreatSCT](https://github.com/GreatSCT/GreatSCT)
+				* The project is called Great SCT (Great Scott). Great SCT is an open source project to generate application white list bypasses. This tool is intended for BOTH red and blue team.
+			* [RunMe.c](https://gist.github.com/hugsy/e5c4ce99cd7821744f95)
+				* Trick to run arbitrary command when code execution policy is enforced (i.e. AppLocker or equivalent). Works on Win98 (lol) and up - tested on 7/8
+			* [Window Signed Binary](https://github.com/vysec/Windows-SignedBinary)
+			* [VBA-RunPE](https://github.com/itm4n/VBA-RunPE)
+				* A VBA implementation of the RunPE technique or how to bypass application whitelisting.
+		* **Applocker**
+			* **101**
+				* [Ultimate AppLocker ByPass List](https://github.com/api0cradle/UltimateAppLockerByPassList)
+					* "The goal of this repository is to document the most common and known techniques to bypass AppLocker. Since AppLocker can be configured in different ways I maintain a verified list of bypasses (that works against the default AppLocker rules) and a list with possible bypass technique (depending on configuration) or claimed to be a bypass by someone. I also have a list of generic bypass techniques as well as a legacy list of methods to execute through DLLs."
+			* **Articles/Blogposts/Writeups**
+				* [AppLocker Bypass Checklist - netbiosX](https://github.com/netbiosX/Checklists/blob/master/AppLocker.md)
+				* [AppLocker Case study: How insecure is it really? Part 1 oddvar.moe](https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-1/)
+				* AppLocker Case study: How insecure is it really? Part 2](https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/)
+				* [AppLocker Bypass – Weak Path Rules](https://pentestlab.blog/2017/05/22/applocker-bypass-weak-path-rules/)
+				* [Applocker Bypass via Registry Key Manipulation](https://www.contextis.com/resources/blog/applocker-bypass-registry-key-manipulation/)
+				* [Bypassing AppLocker Custom Rules - 0x09AL Security Blog](https://0x09al.github.io/security/applocker/bypass/custom/rules/windows/2018/09/13/applocker-custom-rules-bypass.html)
+				* [AppLocker Bypass – CMSTP - netbiosX](https://pentestlab.blog/2018/05/10/applocker-bypass-cmstp/)
+				* [Bypassing AppLocker Custom Rules](https://0x09al.github.io/security/applocker/bypass/custom/rules/windows/2018/09/13/applocker-custom-rules-bypass.html)
+				* [A small discovery about AppLocker - oddvar.moe](https://oddvar.moe/2019/05/29/a-small-discovery-about-applocker/)
+					* 'While I was prepping for a session a while back I made a a little special discovery about AppLocker. Turns out that the files that AppLocker uses under C:\Windows\System32\AppLocker can be used in many cases to bypass a Default AppLocker ruleset.'
+				* [Applocker Bypass via Registry Key Manipulation - Francesco Mifsud](https://www.contextis.com/en/blog/applocker-bypass-via-registry-key-manipulation)
+				* [Bypassing AppLocker Custom Rules - 0x09AL](https://0x09al.github.io/security/applocker/bypass/custom/rules/windows/2018/09/13/applocker-custom-rules-bypass.html)
+				* [myAPPLockerBypassSummary](https://github.com/0xVIC/myAPPLockerBypassSummary)
+					* Simple APPLocker bypass summary based on the extensive work of @api0cradle
+			* **Tools**
+				* [Backdoor-Minimalist.sct](https://gist.github.com/subTee/24c7d8e1ff0f5602092f58cbb3f7d302)
+					* Applocker bypass
+	* **Defender**<a name="defender"></a>
+		* **Articles/Blogposts/Writeups**
+ 			* [Untangling the “Windows Defender” Naming Mess - Lenny Zeltser](https://blog.minerva-labs.com/untangling-the-windows-defender-naming-mess)
+ 			* [Bypass Windows Defender Attack Surface Reduction - Emeric Nasi](https://blog.sevagas.com/IMG/pdf/bypass_windows_defender_attack_surface_reduction.pdf)
+			* [Documenting and Attacking a Windows Defender Application Control Feature the Hard Way — A Case Study in Security Research Methodology - Matt Graeber](https://posts.specterops.io/documenting-and-attacking-a-windows-defender-application-control-feature-the-hard-way-a-case-73dd1e11be3a)
+			* [Bypassing AV (Windows Defender) … the tedious way. - CB Hue](https://www.cyberguider.com/bypassing-windows-defender-the-tedious-way/)
+			* [Dear Windows Defender, please tell me where I can drop my malicious code. - Simone Aonzo](https://medium.com/@simone.aonzo/dear-windows-defender-please-tell-me-where-i-can-drop-my-malicious-code-9c4f50f417a1)
+				* 'The Get-MpPreference cmdlet exposes the field ExclusionPath without administrator privilege.'
+			* [Hiding Metasploit Shellcode to Evade Windows Defender - Rapid7](https://blog.rapid7.com/2018/05/03/hiding-metasploit-shellcode-to-evade-windows-defender/)
+		* **Talks/Presentations/Videos**
+			* [Reverse Engineering Windows Defender’s JavaScript Engine - Alexei Bulazel(REcon Brussels18)](https://recon.cx/2018/brussels/resources/slides/RECON-BRX-2018-Reverse-Engineering-Windows-Defender-s-JavaScript-Engine.pdf)
+				* [Defcon Videos](https://media.defcon.org/DEF%20CON%2026/DEF%20CON%2026%20presentations/Alexei%20Bulazel/Alexei-Bulazel-Reverse-Engineering-Windows-Defender-Demo-Videos/)
+				* [Blackhat2018 Slides](https://i.blackhat.com/us-18/Thu-August-9/us-18-Bulazel-Windows-Offender-Reverse-Engineering-Windows-Defenders-Antivirus-Emulator.pdf)
+				* [Tools](https://github.com/0xAlexei/WindowsDefenderTools)
+		* **Tools**
+	 		* [Windows Defender Emulator Tools](https://github.com/0xAlexei/WindowsDefenderTools)
+				* Tools for instrumenting Windows Defender's mpengine.dll
+				* [Slides](https://i.blackhat.com/us-18/Thu-August-9/us-18-Bulazel-Windows-Offender-Reverse-Engineering-Windows-Defenders-Antivirus-Emulator.pdf)
+				* [Video](https://www.youtube.com/watch?v=xbu0ARqmZDc)
+			* [ExpandDefenderSig.ps1](https://gist.github.com/mattifestation/3af5a472e11b7e135273e71cb5fed866)
+				* Decompresses Windows Defender AV signatures for exploration purposes
+	* **Microsoft ATA & ATP**<a name="msatap"></a>
+			* [Red Team Techniques for Evading, Bypassing, and Disabling MS Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.com/docs/eu-17/materials/eu-17-Thompson-Red-Team-Techniques-For-Evading-Bypassing-And-Disabling-MS-Advanced-Threat-Protection-And-Advanced-Threat-Analytics.pdf)
+			* [Red Team Revenge - Attacking Microsoft ATA](https://www.slideshare.net/nikhil_mittal/red-team-revenge-attacking-microsoft-ata)
+			* [Evading Microsoft ATA for Active Directory Domination](https://www.slideshare.net/nikhil_mittal/evading-microsoft-ata-for-active-directory-domination)
+			* [Week of Evading Microsoft ATA - Announcement and Day 1 - Nikhil Mittal(Aug 2017)](http://www.labofapenetrationtester.com/2017/08/week-of-evading-microsoft-ata-day1.html)
+			* [Week of Evading Microsoft ATA - Day 2 - Overpass-the-hash and Golden Ticket - Nikhil Mittal](http://www.labofapenetrationtester.com/2017/08/week-of-evading-microsoft-ata-day2.html)
+			* [Week of Evading Microsoft ATA - Day 3 - Constrained Delegation, Attacks across trusts, DCSync and DNSAdmins - Nikhil Mittal](http://www.labofapenetrationtester.com/2017/08/week-of-evading-microsoft-ata-day3.html)
+			* [Week of Evading Microsoft ATA - Day 4 - Silver ticket, Kerberoast and SQL Servers - Nikhil Mittal](http://www.labofapenetrationtester.com/2017/08/week-of-evading-microsoft-ata-day4.html)
+			* [Week of Evading Microsoft ATA - Day 5 - Attacking ATA, Closing thoughts and Microsoft's response - Nikhil MIttal](http://www.labofapenetrationtester.com/2017/08/week-of-evading-microsoft-ata-day5.html)
+			* [Evading Microsoft ATA for Active Directory Domination - Nikhil Mittal(BH USA17)](https://www.youtube.com/watch?v=bHkv63-1GBY)
+				* [Slides](https://www.blackhat.com/docs/us-17/thursday/us-17-Mittal-Evading-MicrosoftATA-for-ActiveDirectory-Domination.pdf)
+				* [BruCON 0x09 Talk](https://www.youtube.com/watch?v=5gu4r-IDDwU)
+			* [Microsoft Advanced Threat Analytics – My best practices - Oddvar Moe](https://msitpros.com/?p=3509)
+			* [Evading WinDefender ATP credential-theft: kernel version - B4rtik](https://b4rtik.github.io/posts/evading-windefender-atp-credential-theft-kernel-version/)
+		* **Tools**
+			* [DefenderCheck](https://github.com/matterpreter/DefenderCheck)
+				* Takes a binary as input and splits it until it pinpoints that exact byte that Microsoft Defender will flag on, and then prints those offending bytes to the screen.
+	* **DeviceGuard Bypass**<a name="deviceguard"></a>
+		* **Articles/Blogposts/Talks/Writeups**
+			* [Defeating Device Guard: A look into CVE-2017-0007](https://enigma0x3.net/2017/04/03/defeating-device-guard-a-look-into-cve-2017-0007/)
+			* [Consider Application Whitelisting with Device Guard](https://web.archive.org/web/20170517232357/http://subt0x10.blogspot.com:80/2017/04/consider-application-whitelisting-with.html)
+			* [Bypassing Application Whitelisting using MSBuild.exe - Device guard Example and Mitigations](https://web.archive.org/web/20170714075746/http://subt0x10.blogspot.com:80/2017/04/bypassing-application-whitelisting.html)
+			* [Defeating Device Guard: A look into CVE-2017–0007 - Matt Nelson](https://posts.specterops.io/defeating-device-guard-a-look-into-cve-2017-0007-25c77c155767)
+			* [UMCI vs Internet Explorer: Exploring CVE-2017–8625 - Matt Nelson](https://posts.specterops.io/umci-vs-internet-explorer-exploring-cve-2017-8625-3946536c6442)
+			* [Windows: LUAFV NtSetCachedSigningLevel Device Guard Bypass - Google](https://www.exploit-db.com/exploits/46716)
+		* **Talks/Presentations/Videos**
+			* [Sneaking Past Device Guard - Philip Tsukerman(Troopers19)](https://www.youtube.com/watch?v=VJqr_UIwB_M&list=PL1eoQr97VfJlV65VBem99gRd6r4ih9GQE&index=6)
+		* **Tools**
+			* [DeviceGuard Bypasses - James Forshaw](https://github.com/tyranid/DeviceGuardBypasses)
+				* This solution contains some of my UMCI/Device Guard bypasses. They're are designed to allow you to analyze a system, such as Windows 10 S which comes pre-configured with a restrictive UMCI policy.
+			* [Window 10 Device Guard Bypass](https://github.com/tyranid/DeviceGuardBypasses)
+	* **PowerShell Script Block Logging**
+		* **Articles/Blogposts/Writeups**
+			* [A Critique of Logging Capabilities in PowerShell v6](http://www.labofapenetrationtester.com/2018/01/powershell6.html)
+				* Introduces 'PowerShell Upgrade Attack'
+			* [Some PowerShell Logging Observations - mrt-f.com](https://mrt-f.com/blog/2018/powershellLogging/)
+			* [Bypass for PowerShell ScriptBlock Warning Logging of Suspicious Commands - cobbr.io(2017)](https://cobbr.io/ScriptBlock-Warning-Event-Logging-Bypass.html)
+			* [PowerShell ScriptBlock Logging Bypass - cobbr.io(2017)](https://cobbr.io/ScriptBlock-Logging-Bypass.html)
+			* [Exploring PowerShell AMSI and Logging Evasion - Adam Chester(2018)](https://www.mdsec.co.uk/2018/06/exploring-powershell-amsi-and-logging-evasion/)
+		* **Talks/Presentations/Videos**
+		* **Tools**
+	* **PowerShell Constrained Language Mode**
+		* **Articles/Blogposts/Writeups**
+			* [A Critique of Logging Capabilities in PowerShell v6](http://www.labofapenetrationtester.com/2018/01/powershell6.html)
+				* Introduces 'PowerShell Upgrade Attack'
+		* **Talks/Presentations/Videos**
+		* **Tools**
+	* **Sysmon**
+		* **Articles/Blogposts/Writeups**
+			* [Subverting Sysmon materials](https://github.com/mattifestation/BHUSA2018_Sysmon)
+		* **Talks/Presentations/Videos**
+		* **Tools**
+			* [Shhmon - Neuter Sysmon by unloading its driver](https://github.com/matterpreter/Shhmon)
+			* [Sysmon configuration bypass finder](https://github.com/mkorman90/sysmon-config-bypass-finder)
+				* Detect possible sysmon logging bypasses given a specific configuration
+	* **Windows User Account Control(UAC)**
+		* **101**
+			* [User Account Control - docs.ms](https://docs.microsoft.com/en-us/windows/win32/secauthz/user-account-control)
+			* [User Account Control Step-by-Step Guide - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc709691(v=ws.10))
+			* User Account Control - Steven Sinofsky(blogs.msdn)](https://blogs.msdn.microsoft.com/e7/2008/10/08/user-account-control/)
+			* [Inside Windows Vista User Account Control - docs.ms](https://docs.microsoft.com/en-us/previous-versions/technet-magazine/cc138019(v=msdn.10)?redirectedfrom=MSDN)
+			* [Inside Windows 7 User Account Control - docs.ms](https://docs.microsoft.com/en-us/previous-versions/technet-magazine/dd822916(v=msdn.10)?redirectedfrom=MSDN)
+		* **Articles/Blogposts/Writeups**
+			* [Anatomy of UAC Attacks - b33f](https://www.fuzzysecurity.com/tutorials/27.html)
+			* [Farewell to the Token Stealing UAC Bypass - tyranidslair.blogspot](https://tyranidslair.blogspot.com/2018/10/farewell-to-token-stealing-uac-bypass.html)
+			* [Testing UAC on Windows 10 - Ernesto Fernandez](https://www.researchgate.net/publication/319454675_Testing_UAC_on_Windows_10)
+				* User Account Control (UAC) is a mechanism implemented in Windows systems from Vista to prevent malicious software from executing with administrative privileges without user consent. However, this mechanism does not provide a secure solution to that problem, since can be easily bypassed in some ways, something we will show by means of different methods such as DLL hijacking, token impersonation or COM interface elevation, also we will show a new method which we have developed based on a previous one. Moreover, this new Proof of Concept has been ported to the Metasploit Framework as a new module, which indeed is the only UAC bypass module that works in the latest Windows 10 build version.
+			* [Reading Your Way Around UAC (Part 1)](https://tyranidslair.blogspot.no/2017/05/reading-your-way-around-uac-part-1.html)
+				* [Reading Your Way Around UAC (Part 2)](https://tyranidslair.blogspot.no/2017/05/reading-your-way-around-uac-part-2.html)
+				* [Reading Your Way Around UAC (Part 3)](https://tyranidslair.blogspot.no/2017/05/reading-your-way-around-uac-part-3.html)
+			* [Testing User Account Control (UAC) on  Windows 10 - Ernesto Fernández Provecho](https://www.researchgate.net/publication/319454675_Testing_UAC_on_Windows_10)
+		* **Bypasses**
+			* [Bypassing Windows User Account Control (UAC) and ways of mitigation](https://www.greyhathacker.net/?p=796)
+			* [Bypassing User Account Control (UAC) using TpmInit.exe - uacmeltdown.blogspot](https://uacmeltdown.blogspot.com/)
+			* [UAC Bypass in System Reset Binary via DLL Hijacking - activecyber.us](https://www.activecyber.us/activelabs/uac-bypass-in-system-reset-binary-via-dll-hijacking)
+			* [Bypassing UAC using App Paths - Matt Nelson](https://posts.specterops.io/bypassing-uac-using-app-paths-9249d8cbe9c9)
+			* [Bypassing UAC on Windows 10 using Disk Cleanup](https://enigma0x3.net/2016/07/22/bypassing-uac-on-windows-10-using-disk-cleanup/)
+			* [Research on CMSTP.exe](https://msitpros.com/?p=3960)
+				* Methods to bypass UAC and load a DLL over webdav 
+			* [Bypassing UAC using App Paths](https://enigma0x3.net/2017/03/14/bypassing-uac-using-app-paths/)
+			* [“Fileless” UAC Bypass Using eventvwr.exe and Registry Hijacking](https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/)
+			* [Fileless UAC Bypass using sdclt](https://posts.specterops.io/fileless-uac-bypass-using-sdclt-exe-3e9f9ad4e2b3)
+			* [Eventvwr File-less UAC Bypass CNA](https://www.mdsec.co.uk/2016/12/cna-eventvwr-uac-bypass/)
+			* [How to bypass UAC in newer Windows versions - zcool(Oct2018)](https://0x00-0x00.github.io/research/2018/10/31/How-to-bypass-UAC-in-newer-Windows-versions.html)
+			* [Fileless UAC Bypass in Windows Store Binary - activecyber.us](https://www.activecyber.us/activelabs/windows-uac-bypass)
+			* [Fileless_UAC_bypass_WSReset](https://github.com/sailay1996/Fileless_UAC_bypass_WSReset)
+		* **Talks & Presentations**
+			* [Not a Security Boundary: Bypassing User Account Control - Matt Nelson(Derbycon7)](https://www.youtube.com/watch?v=c8LgqtATAnE&index=21&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
+		* **Tools**
+			* [UACME](https://github.com/hfiref0x/UACME)
+				* Defeating Windows User Account Control by abusing built-in Windows AutoElevate backdoor.
+			* [DccwBypassUAC](https://github.com/L3cr0f/DccwBypassUAC)
+				* This exploit abuses the way "WinSxS" is managed by "dccw.exe" by means of a derivative Leo's Davidson "Bypass UAC" method so as to obtain an administrator shell without prompting for consent. It supports "x86" and "x64" architectures. Moreover, it has been successfully tested on Windows 8.1 9600, Windows 10 14393, Windows 10 15031 and Windows 10 15062.
+			* [Bypass-UAC](https://github.com/FuzzySecurity/PowerShell-Suite/tree/master/Bypass-UAC)
+				* Bypass-UAC provides a framework to perform UAC bypasses based on auto elevating IFileOperation COM object method calls. This is not a new technique, traditionally, this is accomplished by injecting a DLL into "explorer.exe". This is not desirable because injecting into explorer may trigger security alerts and working with unmanaged DLL's makes for an inflexible work-flow. To get around this, Bypass-UAC implements a function which rewrites PowerShell's PEB to give it the appearance of "explorer.exe". This provides the same effect because COM objects exclusively rely on Windows's Process Status API (PSAPI) which reads the process PEB.
+			* [Bypass-UAC](https://github.com/FuzzySecurity/PowerShell-Suite/tree/master/Bypass-UAC)
 * **Credential Access**<a name="wincredac"></a>
 	* **101**
 		* [An Overview of KB2871997 - msrc-blog.ms](https://msrc-blog.microsoft.com/2014/06/05/an-overview-of-kb2871997/)
@@ -3272,34 +3509,34 @@
 	* **Collection**<a name="adcollect"></a>
 		* [Accessing Internal Fileshares through Exchange ActiveSync - Adam Rutherford and David Chismon](https://labs.mwrinfosecurity.com/blog/accessing-internal-fileshares-through-exchange-activesync)
 	* **Credential Access**<a name="adcred"></a>
-			* **Articles/Blogposts/Writeups**
-				* [Remotely dump "Active Directory Domain Controller" machine user database using web shell - Indishell](http://www.mannulinux.org/2018/12/remotely-dump-active-directory-domain.html)
-				* [Auto-Dumping Domain Credentials using SPNs, PowerShell Remoting, and Mimikatz - Scott Sutherland](https://blog.netspi.com/auto-dumping-domain-credentials-using-spns-powershell-remoting-and-mimikatz/)
-				* [How Attackers Dump Active Directory Database Credentials - adsecurity.org](https://adsecurity.org/?p=2398)
-				* [Places of Interest in Stealing NetNTLM Hashes - osandamalith.com](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
-				* [Multi-Factor Mixup: Who Were You Again? - Okta](https://www.okta.com/security-blog/2018/08/multi-factor-authentication-microsoft-adfs-vulnerability/)
-					* A weakness in the Microsoft ADFS protocol for integration with MFA products allows a second factor for one account to be used for second-factor authentication to all other accounts in an organization.
-				* [Playing with Relayed Credentials - SecureAuth](https://www.secureauth.com/blog/playing-relayed-credentials)
-				* [When Everyone's Dog is Named Fluffy: Abusing the Brand New Security Questions in Windows 10 to Gain Domain-Wide Persistence - Magal Baz, Tom Sela](https://www.blackhat.com/eu-18/briefings/schedule/index.html#when-everyone39s-dog-is-named-fluffy-abusing-the-brand-new-security-questions-in-windows-10-to-gain-domain-wide-persistence-12863)
-					* [Slides](https://i.blackhat.com/eu-18/Wed-Dec-5/eu-18-Baz-When-Everyones-Dog-Is-Named-Fluffy.pdf)
-				* [Active Directory Enumeration with PowerShell - Haboob](https://www.exploit-db.com/docs/english/46990-active-directory-enumeration-with-powershell.pdf)
-					* Nowadays, most of the environments are using Active Directory to manage their networks and resources. And over the past years, the attackers have been focused to abuse and attack the Active Directory environments using different techniques and methodologies. So in this research paper, we are going to use the power of the PowerShell to enumerate the resources of the Active Directory, like enumerating the domains, users, groups, ACL, GPOs, domain trusts also hunting the users and the domain admins. With this valuable information, we can increase our attack surface to abuse the AD like Privilege escalation, lateral movements and persistence and so on.
-				* [Cached Credentials: Important Facts That You Cannot Miss - CQURE](https://cqureacademy.com/blog/windows-internals/cached-credentials-important-facts)
-				* [Protect derived domain credentials with Windows Defender Credential Guard - docs.ms](https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard)
-				* [KB2871997 and Wdigest - Part 1 - docs.ms](https://docs.microsoft.com/en-us/archive/blogs/kfalde/kb2871997-and-wdigest-part-1)
-				* [Clearing cached/saved Windows credentials - University of Waterloo](https://uwaterloo.teamdynamix.com/TDClient/1804/Portal/KB/ArticleDet?ID=69756)
-				* [Cached domain logon information - support.ms](https://support.microsoft.com/en-us/help/172931/cached-domain-logon-information)
-				* [Interactive logon: Number of previous logons to cache (in case domain controller is not available) - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/interactive-logon-number-of-previous-logons-to-cache-in-case-domain-controller-is-not-available)
-				* [Interactive logon: Number of previous logons to cache (in case domain controller is not available - UltimateWindowsSecurity](https://www.ultimatewindowssecurity.com/wiki/page.aspx?spid=ILNumPrev)
-				* [Using Domain Controller Account Passwords To HashDump Domains - Mubix](https://room362.blogspot.com/2015/09/using-domain-controller-account.html)
-			* **Presentations/Talks/Videos**
-			* **Tools**
-				* [DomainPasswordTest](https://github.com/rvazarkar/DomainPasswordTest)
-					* Tests AD passwords while respecting Bad Password Count
-				* [serviceFu](https://github.com/securifera/serviceFu)
-					* Automates credential skimming from service accounts in Windows Registry using Mimikatz lsadump::secrets. The use case for this tool is when you have administrative rights across certain computers in a domain but do not have any clear-text credentials. ServiceFu will remotely connect to target computers, check if any credentialed services are present, download the system and security registry hive, and decrypt clear-text credentials for the domain service account.
-				* [Credential Assessment: Mapping Privilege Escalation at Scale - Matt Weeks(Hack.lu 2016)](https://www.youtube.com/watch?v=tXx6RB0raEY)
-					* In countless intrusions from large retail giants to oil companies, attackers have progressed from initial access to complete network compromise. In the aftermath, much ink is spilt and products are sold on how the attackers first obtained access and how the malware they used could or could not have been detected, while little attention is given to the credentials they found that turned their access on a single-system into thousands more. This process, while critical for offensive operations, is often complex, involving many links in the escalation chain composed of obtaining credentials on system A that grant access to system B and credentials later used on system B that grant further access, etc. We’ll show how to identify and combat such credential exposure at scale with the framework we developed. We comprehensively identify exposed credentials and automatically construct the compromise chains to identify maximal access and privileges gained, useful for either offensive or defensive purposes.
+		* **Articles/Blogposts/Writeups**
+			* [Remotely dump "Active Directory Domain Controller" machine user database using web shell - Indishell](http://www.mannulinux.org/2018/12/remotely-dump-active-directory-domain.html)
+			* [Auto-Dumping Domain Credentials using SPNs, PowerShell Remoting, and Mimikatz - Scott Sutherland](https://blog.netspi.com/auto-dumping-domain-credentials-using-spns-powershell-remoting-and-mimikatz/)
+			* [How Attackers Dump Active Directory Database Credentials - adsecurity.org](https://adsecurity.org/?p=2398)
+			* [Places of Interest in Stealing NetNTLM Hashes - osandamalith.com](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
+			* [Multi-Factor Mixup: Who Were You Again? - Okta](https://www.okta.com/security-blog/2018/08/multi-factor-authentication-microsoft-adfs-vulnerability/)
+				* A weakness in the Microsoft ADFS protocol for integration with MFA products allows a second factor for one account to be used for second-factor authentication to all other accounts in an organization.
+			* [Playing with Relayed Credentials - SecureAuth](https://www.secureauth.com/blog/playing-relayed-credentials)
+			* [When Everyone's Dog is Named Fluffy: Abusing the Brand New Security Questions in Windows 10 to Gain Domain-Wide Persistence - Magal Baz, Tom Sela](https://www.blackhat.com/eu-18/briefings/schedule/index.html#when-everyone39s-dog-is-named-fluffy-abusing-the-brand-new-security-questions-in-windows-10-to-gain-domain-wide-persistence-12863)
+				* [Slides](https://i.blackhat.com/eu-18/Wed-Dec-5/eu-18-Baz-When-Everyones-Dog-Is-Named-Fluffy.pdf)
+			* [Active Directory Enumeration with PowerShell - Haboob](https://www.exploit-db.com/docs/english/46990-active-directory-enumeration-with-powershell.pdf)
+				* Nowadays, most of the environments are using Active Directory to manage their networks and resources. And over the past years, the attackers have been focused to abuse and attack the Active Directory environments using different techniques and methodologies. So in this research paper, we are going to use the power of the PowerShell to enumerate the resources of the Active Directory, like enumerating the domains, users, groups, ACL, GPOs, domain trusts also hunting the users and the domain admins. With this valuable information, we can increase our attack surface to abuse the AD like Privilege escalation, lateral movements and persistence and so on.
+			* [Cached Credentials: Important Facts That You Cannot Miss - CQURE](https://cqureacademy.com/blog/windows-internals/cached-credentials-important-facts)
+			* [Protect derived domain credentials with Windows Defender Credential Guard - docs.ms](https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard)
+			* [KB2871997 and Wdigest - Part 1 - docs.ms](https://docs.microsoft.com/en-us/archive/blogs/kfalde/kb2871997-and-wdigest-part-1)
+			* [Clearing cached/saved Windows credentials - University of Waterloo](https://uwaterloo.teamdynamix.com/TDClient/1804/Portal/KB/ArticleDet?ID=69756)
+			* [Cached domain logon information - support.ms](https://support.microsoft.com/en-us/help/172931/cached-domain-logon-information)
+			* [Interactive logon: Number of previous logons to cache (in case domain controller is not available) - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/interactive-logon-number-of-previous-logons-to-cache-in-case-domain-controller-is-not-available)
+			* [Interactive logon: Number of previous logons to cache (in case domain controller is not available - UltimateWindowsSecurity](https://www.ultimatewindowssecurity.com/wiki/page.aspx?spid=ILNumPrev)
+			* [Using Domain Controller Account Passwords To HashDump Domains - Mubix](https://room362.blogspot.com/2015/09/using-domain-controller-account.html)
+		* **Presentations/Talks/Videos**
+		* **Tools**
+			* [DomainPasswordTest](https://github.com/rvazarkar/DomainPasswordTest)
+				* Tests AD passwords while respecting Bad Password Count
+			* [serviceFu](https://github.com/securifera/serviceFu)
+				* Automates credential skimming from service accounts in Windows Registry using Mimikatz lsadump::secrets. The use case for this tool is when you have administrative rights across certain computers in a domain but do not have any clear-text credentials. ServiceFu will remotely connect to target computers, check if any credentialed services are present, download the system and security registry hive, and decrypt clear-text credentials for the domain service account.
+			* [Credential Assessment: Mapping Privilege Escalation at Scale - Matt Weeks(Hack.lu 2016)](https://www.youtube.com/watch?v=tXx6RB0raEY)
+				* In countless intrusions from large retail giants to oil companies, attackers have progressed from initial access to complete network compromise. In the aftermath, much ink is spilt and products are sold on how the attackers first obtained access and how the malware they used could or could not have been detected, while little attention is given to the credentials they found that turned their access on a single-system into thousands more. This process, while critical for offensive operations, is often complex, involving many links in the escalation chain composed of obtaining credentials on system A that grant access to system B and credentials later used on system B that grant further access, etc. We’ll show how to identify and combat such credential exposure at scale with the framework we developed. We comprehensively identify exposed credentials and automatically construct the compromise chains to identify maximal access and privileges gained, useful for either offensive or defensive purposes.
 	* **Persistence**<a name="adpersist"></a>
 		* [The Active Directory Botnet - Ty Miller, Paul Kalinin(BHUSA 17)](https://www.blackhat.com/docs/us-17/wednesday/us-17-Miller-The-Active-Directory-Botnet.pdf)
 		* [Command and Control Using Active Directory - harmj0y](http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/)
@@ -3677,7 +3914,6 @@
 			* Execute Shellcode And Other Goodies From MMC
 * **Anti-Virus**
 	* **Articles/Writeups**
-		* [Untangling the “Windows Defender” Naming Mess - Lenny Zeltser](https://blog.minerva-labs.com/untangling-the-windows-defender-naming-mess)
 		* [pecloak.py - An Experiment in AV evasion](http://www.securitysift.com/pecloak-py-an-experiment-in-av-evasion/)
 		* [How to Bypass Anti-Virus to Run Mimikatz](http://www.blackhillsinfosec.com/?p=5555)
 		* [Practical Anti-virus Evasion - Daniel Sauder](https://govolutionde.files.wordpress.com/2014/05/avevasion_pentestmag.pdf)
@@ -3692,65 +3928,6 @@
 	    * [Executing Meterpreter in Memory on Windows 10 and Bypassing AntiVirus (Part 2) - noopy.io](https://www.n00py.io/2018/06/executing-meterpreter-in-memory-on-windows-10-and-bypassing-antivirus-part-2/)
 	    * [Bypassing Kaspersky 2017 AV by XOR encoding known malware with a twist - monoc.com](https://blog.m0noc.com/2017/08/bypassing-kaspersky-2017-av-by-xor.html)
 		* [Bypassing Static Antivirus With Ten Lines of Code - Attactics](https://attactics.org/2016/03/bypassing-static-antivirus-with-ten-lines-of-code/)
-	* **Bypassing**
-		 * **OS X**
-			* **AV**
-				* [Bypassing antivirus on OSX 10.11 with Metasploit – Avast - astr0baby](https://astr0baby.wordpress.com/2017/07/13/bypassing-antivirus-on-osx-10-11-with-metasploit-avast/)
-			* **Whitelisting**
-				* [Bypassing Google's Santa Application Whitelisting on macOS (Part 1 of 2) - Adam Crosser](https://www.praetorian.com/blog/bypassing-google-santa-application-whitelisting-on-macos-part-1)
-				* [Bypassing Google's Santa Application Whitelisting on macOS (Part 2 of 2) - Adam Crosser](https://www.praetorian.com/blog/bypassing-google-santa-application-whitelisting-on-macos-part-2)
-		 * **Windows**
-		 	* **Defender**
-		 		* **Articles/Blogposts/Writeups**
-		 			* [Bypass Windows Defender Attack Surface Reduction - Emeric Nasi](https://blog.sevagas.com/IMG/pdf/bypass_windows_defender_attack_surface_reduction.pdf)
-					* [Documenting and Attacking a Windows Defender Application Control Feature the Hard Way — A Case Study in Security Research Methodology - Matt Graeber](https://posts.specterops.io/documenting-and-attacking-a-windows-defender-application-control-feature-the-hard-way-a-case-73dd1e11be3a)
-					* [Reverse Engineering Windows Defender’s JavaScript Engine - Alexei Bulazel(REcon Brussels18)](https://recon.cx/2018/brussels/resources/slides/RECON-BRX-2018-Reverse-Engineering-Windows-Defender-s-JavaScript-Engine.pdf)
-						* [Defcon Videos](https://media.defcon.org/DEF%20CON%2026/DEF%20CON%2026%20presentations/Alexei%20Bulazel/Alexei-Bulazel-Reverse-Engineering-Windows-Defender-Demo-Videos/)
-						* [Blackhat2018 Slides](https://i.blackhat.com/us-18/Thu-August-9/us-18-Bulazel-Windows-Offender-Reverse-Engineering-Windows-Defenders-Antivirus-Emulator.pdf)
-						* [Tools](https://github.com/0xAlexei/WindowsDefenderTools)
-					* [Bypassing AV (Windows Defender) … the tedious way. - CB Hue](https://www.cyberguider.com/bypassing-windows-defender-the-tedious-way/)
-					* [Dear Windows Defender, please tell me where I can drop my malicious code. - Simone Aonzo](https://medium.com/@simone.aonzo/dear-windows-defender-please-tell-me-where-i-can-drop-my-malicious-code-9c4f50f417a1)
-						* 'The Get-MpPreference cmdlet exposes the field ExclusionPath without administrator privilege.'
-				* **Tools**
-			 		* [Windows Defender Emulator Tools](https://github.com/0xAlexei/WindowsDefenderTools)
-						* Tools for instrumenting Windows Defender's mpengine.dll
-						* [Slides](https://i.blackhat.com/us-18/Thu-August-9/us-18-Bulazel-Windows-Offender-Reverse-Engineering-Windows-Defenders-Antivirus-Emulator.pdf)
-						* [Video](https://www.youtube.com/watch?v=xbu0ARqmZDc)
-					* [ExpandDefenderSig.ps1](https://gist.github.com/mattifestation/3af5a472e11b7e135273e71cb5fed866)
-						* Decompresses Windows Defender AV signatures for exploration purposes
-			* **Microsoft ATA & ATP**
-				* [Red Team Techniques for Evading, Bypassing, and Disabling MS Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.com/docs/eu-17/materials/eu-17-Thompson-Red-Team-Techniques-For-Evading-Bypassing-And-Disabling-MS-Advanced-Threat-Protection-And-Advanced-Threat-Analytics.pdf)
-				* [Red Team Revenge - Attacking Microsoft ATA](https://www.slideshare.net/nikhil_mittal/red-team-revenge-attacking-microsoft-ata)
-				* [Evading Microsoft ATA for Active Directory Domination](https://www.slideshare.net/nikhil_mittal/evading-microsoft-ata-for-active-directory-domination)
-				* [Week of Evading Microsoft ATA - Announcement and Day 1 - Nikhil Mittal(Aug 2017)](http://www.labofapenetrationtester.com/2017/08/week-of-evading-microsoft-ata-day1.html)
-				* [Week of Evading Microsoft ATA - Day 2 - Overpass-the-hash and Golden Ticket - Nikhil Mittal](http://www.labofapenetrationtester.com/2017/08/week-of-evading-microsoft-ata-day2.html)
-				* [Week of Evading Microsoft ATA - Day 3 - Constrained Delegation, Attacks across trusts, DCSync and DNSAdmins - Nikhil Mittal](http://www.labofapenetrationtester.com/2017/08/week-of-evading-microsoft-ata-day3.html)
-				* [Week of Evading Microsoft ATA - Day 4 - Silver ticket, Kerberoast and SQL Servers - Nikhil Mittal](http://www.labofapenetrationtester.com/2017/08/week-of-evading-microsoft-ata-day4.html)
-				* [Week of Evading Microsoft ATA - Day 5 - Attacking ATA, Closing thoughts and Microsoft's response - Nikhil MIttal](http://www.labofapenetrationtester.com/2017/08/week-of-evading-microsoft-ata-day5.html)
-				* [Evading Microsoft ATA for Active Directory Domination - Nikhil Mittal(BH USA17)](https://www.youtube.com/watch?v=bHkv63-1GBY)
-					* [Slides](https://www.blackhat.com/docs/us-17/thursday/us-17-Mittal-Evading-MicrosoftATA-for-ActiveDirectory-Domination.pdf)
-				* [BruCON 0x09 Talk](https://www.youtube.com/watch?v=5gu4r-IDDwU)
-				* [Microsoft Advanced Threat Analytics – My best practices - Oddvar Moe](https://msitpros.com/?p=3509)
-				* [Evading WinDefender ATP credential-theft: kernel version - B4rtik](https://b4rtik.github.io/posts/evading-windefender-atp-credential-theft-kernel-version/)
-			* **Articles/Blogposts/Writeups**
-				* [In-Memory Managed Dll Loading With PowerShell - 2012](http://www.exploit-monday.com/2012/12/in-memory-dll-loading.html)
-				* [Customising Meterpreter Loader DLL part. 2](https://astr0baby.wordpress.com/2014/02/13/customising-meterpreter-loader-dll-part-2/)
-				* [Execute ShellCode Using Python](http://www.debasish.in/2012/04/execute-shellcode-using-python.html)
-					* In this article I am going to show you, how can we use python and its "ctypes" library to execute a "calc.exe" shell code or any other shell code.
-				* [Generic bypass of next-gen intrusion / threat / breach detection systems](https://blog.mrg-effitas.com/generic-bypass-of-next-gen-intrusion-threat-breach-detection-systems/)
-					* The focus of this blog post is to bypass network monitoring tools, e.g. good-old IDS or next-generation threat detection systems in a generic way. The focus is on the exploit delivery.
-				* [Meterpreter stage AV/IDS evasion with powershell](https://arno0x0x.wordpress.com/2016/04/13/meterpreter-av-ids-evasion-powershell/)
-				* [Facts and myths about antivirus evasion with Metasploit - mihi - 2011](http://schierlm.users.sourceforge.net/avevasion.html)
-					* This article tries to given an overview about the current executable generation scheme of Metasploit, how AV detects them, and how to evade them. Note that this document only covers standalone EXE files (for Windows) that replace an EXE template's functionality, and not other payloads for exploits, service executables (like for the windows/psexec exploit) or executables that merely add to the original template's functionality (like the -k option of msfpayload).
-				* [Hiding Metasploit Shellcode to Evade Windows Defender - Rapid7](https://blog.rapid7.com/2018/05/03/hiding-metasploit-shellcode-to-evade-windows-defender/)
-			* **Whitelisting**
-				* [Escaping the Microsoft Office Sandbox: a faulty regex, allows malicious code to escape and persist - Adam Chester](https://objective-see.com/blog/blog_0x35.html)
-				* [Fantastic Red-Team Attacks and How to Find Them - Casey Smith, Ross Wolf(BHUSA 2019)](https://www.blackhat.com/us-19/briefings/schedule/index.html#fantastic-red-team-attacks-and-how-to-find-them-16540)
-					* This talk summarizes prevalent and ongoing gaps across organizations uncovered by testing their defenses against a broad spectrum of attacks via Atomic Red Team. Many of these adversary behaviors are not atomic, but span multiple events in an event stream that may be arbitrarily and inconsistently separated in time by nuisance events.
-					* [Slides](https://i.blackhat.com/USA-19/Thursday/us-19-Smith-Fantastic-Red-Team-Attacks-And-How-To-Find-Them.pdf)
-				* [Microsoft Applications and Blocklist - FortyNorthSecurity](https://www.fortynorthsecurity.com/how-to-bypass-wdac-with-dbgsrv-exe/)
-				* [Technical Advisory: Bypassing Workflows Protection Mechanisms - Remote Code Execution on SharePoint - Soroush Dalilil](https://www.nccgroup.trust/uk/our-research/technical-advisory-bypassing-workflows-protection-mechanisms-remote-code-execution-on-sharepoint/)
-				* [Bypassing Application Whitelisting with BGInfo - Oddvar Moe](https://msitpros.com/?p=3831)
 	* **Sandbox Detection**
 		* [CheckPlease](https://github.com/Arvanaghi/CheckPlease)
 	* **Tools**
@@ -3795,152 +3972,6 @@
 			* Randomly changes Win32/64 PE Files for 'safer' uploading to malware and sandbox sites.
 		* [Phantom-Evasion](https://github.com/oddcod3/Phantom-Evasion)
 			* Phantom-Evasion is an interactive antivirus evasion tool written in python capable to generate (almost) FUD executable even with the most common 32 bit msfvenom payload (lower detection ratio with 64 bit payloads). The aim of this tool is to make antivirus evasion an easy task for pentesters through the use of modules focused on polymorphic code and antivirus sandbox detection techniques. Since version 1.0 Phantom-Evasion also include a post-exploitation section dedicated to persistence and auxiliary modules.
-* **Application Whitelisting**
-	* **101**
-		* [Whitelist Evasion revisited](https://khr0x40sh.wordpress.com/2015/05/27/whitelist-evasion-revisited/)
-		* [Shackles, Shims, and Shivs - Understanding Bypass Techniques](http://www.irongeek.com/i.php?page=videos/derbycon6/535-shackles-shims-and-shivs-understanding-bypass-techniques-mirovengi)
-		* [$@|sh – Or: Getting a shell environment from Runtime.exec](https://codewhitesec.blogspot.ro/2015/03/sh-or-getting-shell-environment-from.html)
-		* [WSH Injection: A Case Study - enigma0x3](https://enigma0x3.net/2017/08/03/wsh-injection-a-case-study/)
-	* **Bypasses**
-		* [Bypassing Application Whitelisting by using WinDbg/CDB as a Shellcode Runner - exploit-monday.com](http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html)
-		* [Bypass Application Whitelisting Script Protections - Regsvr32.exe & COM Scriptlets (.sct files)](https://web.archive.org/web/20160424110035/http://subt0x10.blogspot.com:80/2016/04/bypass-application-whitelisting-script.html)
-		* [How to Evade Application Whitelisting Using REGSVR32 - Joff Thyer](https://www.blackhillsinfosec.com/evade-application-whitelisting-using-regsvr32/)
-		* [Bypassing Application Whitelisting with runscripthelper.exe - Matt Graeber](https://posts.specterops.io/bypassing-application-whitelisting-with-runscripthelper-exe-1906923658fc)
-		* [Using Application Compatibility Shims - subTee](https://web.archive.org/web/20170815050734/http://subt0x10.blogspot.com/2017/05/using-application-compatibility-shims.html)
-		* [Consider Application Whitelisting with Device Guard - subTee](https://web.archive.org/web/20170517232357/http://subt0x10.blogspot.com:80/2017/04/consider-application-whitelisting-with.html)
-		* [Bypassing Application Whitelisting using MSBuild.exe - Device Guard Example and Mitigations - subTee](https://web.archive.org/web/20170714075746/http://subt0x10.blogspot.com:80/2017/04/bypassing-application-whitelisting.html)
-		* [Setting Up A Homestead In the Enterprise with JavaScript - subTee](https://web.archive.org/web/20160908140124/https://subt0x10.blogspot.in/2016/04/setting-up-homestead-in-enterprise-with.html)
-		* [Bypass Application Whitelisting Script Protections - Regsvr32.exe & COM Scriptlets (.sct files)](http://subt0x10.blogspot.sg/2017/04/bypass-application-whitelisting-script.html)
-		* [Application Whitelist Bypass Techniques](https://web.archive.org/web/20170430065331/https://github.com/subTee/ApplicationWhitelistBypassTechniques/blob/master/TheList.txt)
-			* A Catalog of Application Whitelisting Bypass Techniques - SubTee
-		* [Bypassing Application Whitelisting by using WinDbg/CDB as a Shellcode Runner](http://www.exploit-monday.com/2016/08/windbg-cdb-shellcode-runner.html)
-		* [MS Signed mimikatz in just 3 steps](https://github.com/secretsquirrel/SigThief)
-		* [BinariesThatDoesOtherStuff.txt - api0cradle](https://gist.github.com/api0cradle/8cdc53e2a80de079709d28a2d96458c2)
-		* [GreatSCT](https://github.com/GreatSCT/GreatSCT)
-			* The project is called Great SCT (Great Scott). Great SCT is an open source project to generate application white list bypasses. This tool is intended for BOTH red and blue team.
-		* [RunMe.c](https://gist.github.com/hugsy/e5c4ce99cd7821744f95)
-			* Trick to run arbitrary command when code execution policy is enforced (i.e. AppLocker or equivalent). Works on Win98 (lol) and up - tested on 7/8
-		* [Window Signed Binary](https://github.com/vysec/Windows-SignedBinary)
-		* [VBA RunPE - Breaking Out of Highly Constrained Desktop Environments - Part 1/2 - itm4n](https://itm4n.github.io/vba-runpe-part1/)
-			* [Part 2](https://itm4n.github.io/vba-runpe-part2/)
-		* [VBA-RunPE](https://github.com/itm4n/VBA-RunPE)
-			* A VBA implementation of the RunPE technique or how to bypass application whitelisting.	
-	* **Talks**
-		* [Modern Evasion Techniques Jason Lang - Derbycon7](https://www.youtube.com/watch?v=xcA2riLyHtQ&index=6&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
-		* [Whitelisting Evasion - subTee - Shmoocon 2015](https://www.youtube.com/watch?v=85M1Rw6mh4U)
-	* **Applocker**
-		* [Ultimate AppLocker ByPass List](https://github.com/api0cradle/UltimateAppLockerByPassList)
-			* "The goal of this repository is to document the most common and known techniques to bypass AppLocker. Since AppLocker can be configured in different ways I maintain a verified list of bypasses (that works against the default AppLocker rules) and a list with possible bypass technique (depending on configuration) or claimed to be a bypass by someone. I also have a list of generic bypass techniques as well as a legacy list of methods to execute through DLLs."
-		* [AppLocker Bypass Checklist - netbiosX](https://github.com/netbiosX/Checklists/blob/master/AppLocker.md)
-		* [AppLocker Case study: How insecure is it really? Part 1 oddvar.moe](https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-1/)
-		* AppLocker Case study: How insecure is it really? Part 2](https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/)
-		* [Backdoor-Minimalist.sct](https://gist.github.com/subTee/24c7d8e1ff0f5602092f58cbb3f7d302)
-			* Applocker bypass
-		* [AppLocker Bypass – Weak Path Rules](https://pentestlab.blog/2017/05/22/applocker-bypass-weak-path-rules/)
-		* [Applocker Bypass via Registry Key Manipulation](https://www.contextis.com/resources/blog/applocker-bypass-registry-key-manipulation/)
-		* [Bypassing AppLocker Custom Rules - 0x09AL Security Blog](https://0x09al.github.io/security/applocker/bypass/custom/rules/windows/2018/09/13/applocker-custom-rules-bypass.html)
-		* [AppLocker Bypass – CMSTP - netbiosX](https://pentestlab.blog/2018/05/10/applocker-bypass-cmstp/)
-		* [Bypassing AppLocker Custom Rules](https://0x09al.github.io/security/applocker/bypass/custom/rules/windows/2018/09/13/applocker-custom-rules-bypass.html)
-		* [A small discovery about AppLocker - oddvar.moe](https://oddvar.moe/2019/05/29/a-small-discovery-about-applocker/)
-			* 'While I was prepping for a session a while back I made a a little special discovery about AppLocker. Turns out that the files that AppLocker uses under C:\Windows\System32\AppLocker can be used in many cases to bypass a Default AppLocker ruleset.'
-		* [Applocker Bypass via Registry Key Manipulation - Francesco Mifsud](https://www.contextis.com/en/blog/applocker-bypass-via-registry-key-manipulation)
-		* [Bypassing AppLocker Custom Rules - 0x09AL](https://0x09al.github.io/security/applocker/bypass/custom/rules/windows/2018/09/13/applocker-custom-rules-bypass.html)
-	* [myAPPLockerBypassSummary](https://github.com/0xVIC/myAPPLockerBypassSummary)
-		* Simple APPLocker bypass summary based on the extensive work of @api0cradle
-* **AMSI**
-	* **101**
-		* [AMSI Bypass - Paul Laine](https://www.contextis.com/en/blog/amsi-bypass)
-		* [Exploring PowerShell AMSI and Logging Evasion - Adam Chester](https://www.mdsec.co.uk/2018/06/exploring-powershell-amsi-and-logging-evasion/)
-		* [AMSI: How Windows 10 Plans to Stop Script-Based Attacks and How Well It Does It - Blogpost](http://www.labofapenetrationtester.com/2016/09/amsi.html)
-		* [AMSI: How Windows 10 Plans to Stop Script-Based Attaacks and How Well It Does It - BH US16](https://www.blackhat.com/docs/us-16/materials/us-16-Mittal-AMSI-How-Windows-10-Plans-To-Stop-Script-Based-Attacks-And-How-Well-It-Does-It.pdf)
-	* **AMSI Internals**
-		* [The Rise and Fall of AMSI - Tal Liberman(BHAsia 2018)](https://i.blackhat.com/briefings/asia/2018/asia-18-Tal-Liberman-Documenting-the-Undocumented-The-Rise-and-Fall-of-AMSI.pdf)
-		* [IAmsiStream interface sample - MS Github](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/AmsiStream)
-			* Demonstrates how to use the Antimalware Scan Interface to scan a stream.
-		* [Antimalware Scan Interface (AMSI) - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal)
-		* [Developer audience, and sample code - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/dev-audience)
-		* [Antimalware Scan Interface (AMSI) functions - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-functions)
-		* [MS Office file format sorcery - Stan Hegt, Pieter Ceelen(Troopers19)](https://www.youtube.com/watch?v=iXvvQ5XML7g)
-			* [Slides](https://github.com/outflanknl/Presentations/raw/master/Troopers19_MS_Office_file_format_sorcery.pdf)
-			* A deep dive into file formats used in MS Office and how we can leverage these for offensive purposes. We will show how to fully weaponize ‘p-code’ across all MS Office versions in order to create malicious documents without using VBA code, successfully bypassing antivirus and other defensive measures. In this talk Stan and Pieter will do a deep dive into the file formats used in MS Office, demonstrating many features that can be used offensively. They will present attacks that apply to both the legacy formats (OLE streams) and the newer XML based documents. Specific focus is around the internal representation of VBA macros and pseudo code (p-code, execodes) and how these can be weaponized. We will detail the inner logic of Word and Excel regarding VBA and p-code, and release scripts and tools for creating malicious Office documents that bypass anti-virus, YARA rules, AMSI for VBA and various MS Office document analyzers.
-	* **Bypass Blogposts**
-		* [Antimalware Scan Interface (AMSI) — A Red Team Analysis on Evasion - iwantmore.pizza](https://iwantmore.pizza/posts/amsi.html)
-		* [How Red Teams Bypass AMSI and WLDP for .NET Dynamic Code - modexp](https://modexp.wordpress.com/2019/06/03/disable-amsi-wldp-dotnet/)
-		* [PowerShell ScriptBlock Logging Bypass - cobbr.io](https://cobbr.io/ScriptBlock-Logging-Bypass.html)
-		* [Bypassing Amsi using PowerShell 5 DLL Hijacking - cn33liz](https://cn33liz.blogspot.com/2016/05/bypassing-amsi-using-powershell-5-dll.html)
-		* [Bypass for PowerShell ScriptBlock Warning Logging of Suspicious Commands - cobbr.io](https://cobbr.io/ScriptBlock-Warning-Event-Logging-Bypass.html)
-		* [Alternative AMSI bypass - Benoit Sevens](https://medium.com/@benoit.sevens/alternative-amsi-bypass-554dc61d70b1)
-		* [AMSI Bypass With a Null Character - satoshi's note](http://standa-note.blogspot.com/2018/02/amsi-bypass-with-null-character.html)
-		* [Disabling AMSI in JScript with One Simple Trick - James Forshaw](https://tyranidslair.blogspot.com/2018/06/disabling-amsi-in-jscript-with-one.html)
-		* [AMSI Bypass: Patching Technique - Avi Gimpel & Zeev Ben Porat](https://www.cyberark.com/threat-research-blog/amsi-bypass-patching-technique/)
-		* [AMSI Bypass Redux - Avi Gimpel](https://www.cyberark.com/threat-research-blog/amsi-bypass-redux/)
-		* [Bypassing AMSI via COM Server Hijacking - Enigma0x3](https://enigma0x3.net/2017/07/19/bypassing-amsi-via-com-server-hijacking/)
-			*  This post will highlight a way to bypass AMSI by hijacking the AMSI COM server, analyze how Microsoft fixed it in build #16232 and then how to bypass that fix. This issue was reported to Microsoft on May 3rd, and has been fixed as a Defense in Depth patch in build #16232.
-		* [Sneaking Past Device Guard - Philip Tsukerman](https://conference.hitb.org/hitbsecconf2019ams/materials/D2T1%20-%20Sneaking%20Past%20Device%20Guard%20-%20Philip%20Tsukerman.pdf)
-		* [Red Team TTPs Part 1: AMSI Evasion - 0xDarkVortex.dev](https://0xdarkvortex.dev/index.php/2019/07/17/red-team-ttps-part-1-amsi-evasion/)
-		* RastaMouse AmsiScanBuffer Bypass Series
-			* [Part 1](https://rastamouse.me/2018/10/amsiscanbuffer-bypass---part-1/)
-			* [Part 2](https://rastamouse.me/2018/10/amsiscanbuffer-bypass---part-2/)
-			* [Part 3](https://rastamouse.me/2018/11/amsiscanbuffer-bypass-part-3/)
-			* [Part 4](https://rastamouse.me/2018/12/amsiscanbuffer-bypass-part-4/)
-		* [How to bypass AMSI and execute ANY malicious Powershell code - zc00l](https://0x00-0x00.github.io/research/2018/10/28/How-to-bypass-AMSI-and-Execute-ANY-malicious-powershell-code.html)
-		* [Weaponizing AMSI bypass with PowerShell - @0xB455](http://ha.cker.info/weaponizing-amsi-bypass-with-powershell/)
-		* [How to Bypass AMSI with an Unconventional Powershell Cradle - Mohammed Danish](https://medium.com/@gamer.skullie/bypassing-amsi-with-an-unconventional-powershell-cradle-6bd15a17d8b9)
-		* [Bypassing AMSI via COM Server Hijacking - Matt Nelson](https://posts.specterops.io/bypassing-amsi-via-com-server-hijacking-b8a3354d1aff)
-			* fixed as a Defense in Depth patch in build #16232.
-		* [Adventures in the Wonderful World of AMSI. - byte_st0rm](https://medium.com/@byte_St0rm/adventures-in-the-wonderful-world-of-amsi-25d235eb749c)
-		* [How to bypass AMSI and execute ANY malicious Powershell code - zc00l](https://0x00-0x00.github.io/research/2018/10/28/How-to-bypass-AMSI-and-Execute-ANY-malicious-powershell-code.html)
-	* **Bypass Talks**
-		* [Antimalware Scan Interface (AMSI) - Dave Kennedy(WWHF2018)](https://www.youtube.com/watch?v=wBK1fTg6xuU)
-			* This talk will dive into the Antimalware Scan Interface (AMSI) as well as other alternatives in the “NextGen” series of preventative measures and show how trivial it is to write code that doesn’t get snagged.  The security market is focusing on open source data collection sources and security researchers as the main method to write signatures to detect attacks, much like what we saw in the 90s with traditional anti-virus tech. Not much has changed, let’s dive into the reality in security and how little these protective measures really do in the grand scheme of things. We’ll also be covering solid practices in defending against attacks, and what we should be focusing on.
-		* [PSAmsi An offensive PowerShell module for interacting with the Anti Malware Scan Interface in Windows - Ryan Cobb(Derbycon7)](https://www.youtube.com/watch?v=rEFyalXfQWk)
-		* [The Rise and Fall of AMSI - Tal Liberman(BH Asia18)]https://i.blackhat.com/briefings/asia/2018/asia-18-Tal-Liberman-Documenting-the-Undocumented-The-Rise-and-Fall-of-AMSI.pdf)
-		* [Red Team TTPs Part 1: AMSI Evasion - paranoidninja](https://0xdarkvortex.dev/index.php/2019/07/17/red-team-ttps-part-1-amsi-evasion/)
-		* [AMSI: How Windows 10 Plans To Stop Script Based Attacks And How Well It Does It - Nikhil Mittal(BHUSA16)](https://www.blackhat.com/docs/us-16/materials/us-16-Mittal-AMSI-How-Windows-10-Plans-To-Stop-Script-Based-Attacks-And-How-Well-It-Does-It.pdf)
-		* [Goodbye Obfuscation, Hello Invisi-Shell: Hiding Your Powershell Script in Plain Sight - Omer Yair(Derbycon2018)](http://www.irongeek.com/i.php?page=videos/derbycon8/track-3-15-goodbye-obfuscation-hello-invisi-shell-hiding-your-powershell-script-in-plain-sight-omer-yair)
-			* “The very concept of objective truth is fading out of the world. Lies will pass into history.” George Orwell. Objective truth is essential for security. Logs, notifications and saved data must reflect the actual events for security tools, forensic teams and IT managers to perform their job correctly. Powershell is a prime example of the constant cat and mouse game hackers and security personnel play every day to either reveal or hide the “objective truth” of a running script. Powershell’s auto logging, obfuscation techniques, AMSI and more are all participants of the same game playing by the same rules. We don’t like rules, so we broke them. As a result, Babel-Shellfish and Invisi-Shelltwo new tools that both expose and disguise powershell scripts were born. Babel-Shellfish reveals the inner hidden code of any obfuscated script while Invisi-Shell offers a new method of hiding malicious scripts, even from the Powershell process running it. Join us as we present a new way to think about scripts.
-	* **Bypass Tools**
-		* [Invisi-Shell](https://github.com/OmerYa/Invisi-Shell)
-		* [AmsiScanBufferBypass](https://github.com/rasta-mouse/AmsiScanBufferBypass)
-			* Circumvent AMSI by patching AmsiScanBuffer
-		* [CorruptCLRGlobal.ps1](https://gist.github.com/mattifestation/ef0132ba4ae3cc136914da32a88106b9)
-			* A PoC function to corrupt the g_amsiContext global variable in clr.dll in .NET Framework Early Access build 3694 Raw
-		* [AMSI Bypass Code Snippet Examples](https://github.com/SecureThisShit/Amsi-Bypass-Powershell#Using-Cornelis-de-Plaas-DLL-hijack-method)
-			* "This repo contains some Amsi Bypass methods i found on different Blog Posts."
-		* [PSAmsi](https://github.com/cobbr/PSAmsi)
-			* PSAmsi is a tool for auditing and defeating AMSI signatures. It's best utilized in a test environment to quickly create payloads you know will not be detected by a particular AntiMalware Provider, although it can be useful in certain situations outside of a test environment. When using outside of a test environment, be sure to understand how PSAmsi works, as it can generate AMSI alerts.
-		* [powershellveryless](https://github.com/decoder-it/powershellveryless)
-			* Constrained Language Mode + AMSI bypass all in one
-		* [AmsiBypass](https://github.com/0xb455/AmsiBypass/)
-			* C# PoC implementation for bypassing AMSI via in memory patching
-		* [NoAmci](https://github.com/med0x2e/NoAmci)
-			* A PoC for using DInvoke to patch AMSI.dll in order to bypass AMSI detections triggered when loading .NET tradecraft via Assembly.Load(). .Net tradecraft can be compressed, encoded (encrypted if required) in order to keep the assembly size less than 1MB, then embedded as a resource to be loaded after patching amsi.dll memory.
-	* **VBA Specific**
-		* **101**	
-			* [Office VBA + AMSI: Parting the veil on malicious macros - MS Security Team](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/)
-		* **Blogposts**
-			* [Dynamic Microsoft Office 365 AMSI In Memory Bypass Using VBA - Richard Davy, Gary Nield](https://secureyourit.co.uk/wp/2019/05/10/dynamic-microsoft-office-365-amsi-in-memory-bypass-using-vba/)
-			* [The Document that Eluded AppLocker and AMSI - ZLAB-YOROI](https://blog.yoroi.company/research/the-document-that-eluded-applocker-and-amsi/)
-			* [Office 365 AMSI Bypass (fixed) - Ring0x00](https://idafchev.github.io/research/2019/03/23/office365_amsi_bypass.html)
-		* **Talks & Presentations**
-			* [Bypassing AMSI for VBA - Pieter Ceelen](https://outflank.nl/blog/2019/04/17/bypassing-amsi-for-vba/)
-				* This blog is a writeup of the various AMSI weaknesses presented at [the Troopers talk ‘MS Office File Format Sorcery‘](https://github.com/outflanknl/Presentations/raw/master/Troopers19_MS_Office_file_format_sorcery.pdf) and [the Blackhat Asia presentation ‘Office in Wonderland’](https://i.blackhat.com/asia-19/Thu-March-28/bh-asia-Hegt-MS-Office-in-Wonderland.pdf).
-* **Windows Defender**
-	* [DefenderCheck](https://github.com/matterpreter/DefenderCheck)
-		* Takes a binary as input and splits it until it pinpoints that exact byte that Microsoft Defender will flag on, and then prints those offending bytes to the screen.
-* **DeviceGuard Bypass**
-	* **Articles/Blogposts/Talks/Writeups**
-		* [Defeating Device Guard: A look into CVE-2017-0007](https://enigma0x3.net/2017/04/03/defeating-device-guard-a-look-into-cve-2017-0007/)
-		* [DeviceGuard Bypasses - James Forshaw](https://github.com/tyranid/DeviceGuardBypasses)
-			* This solution contains some of my UMCI/Device Guard bypasses. They're are designed to allow you to analyze a system, such as Windows 10 S which comes pre-configured with a restrictive UMCI policy.
-		* [Consider Application Whitelisting with Device Guard](https://web.archive.org/web/20170517232357/http://subt0x10.blogspot.com:80/2017/04/consider-application-whitelisting-with.html)
-		* [Bypassing Application Whitelisting using MSBuild.exe - Device guard Example and Mitigations](https://web.archive.org/web/20170714075746/http://subt0x10.blogspot.com:80/2017/04/bypassing-application-whitelisting.html)
-		* [Defeating Device Guard: A look into CVE-2017–0007 - Matt Nelson](https://posts.specterops.io/defeating-device-guard-a-look-into-cve-2017-0007-25c77c155767)
-		* [UMCI vs Internet Explorer: Exploring CVE-2017–8625 - Matt Nelson](https://posts.specterops.io/umci-vs-internet-explorer-exploring-cve-2017-8625-3946536c6442)
-		* [Sneaking Past Device Guard - Philip Tsukerman(Troopers19)](https://www.youtube.com/watch?v=VJqr_UIwB_M&list=PL1eoQr97VfJlV65VBem99gRd6r4ih9GQE&index=6)
-		* [Windows: LUAFV NtSetCachedSigningLevel Device Guard Bypass - Google](https://www.exploit-db.com/exploits/46716)
-	* **Tools**
-		* [Window 10 Device Guard Bypass](https://github.com/tyranid/DeviceGuardBypasses)
 * **EDR**
 	* **Articles/Blogposts/Writeups**
 		* [Red Team Tactics: Combining Direct System Calls and sRDI to bypass AV/EDR - Cornelis de Plaa](https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/)
@@ -3997,52 +4028,6 @@
 		* [Exploiting the Hyper-V IDE Emulator to Escape the Virtual Machine - Joe Bialek](https://github.com/microsoft/MSRC-Security-Research/blob/master/presentations/2019_08_BlackHatUSA/BHUSA19_Exploiting_the_Hyper-V_IDE_Emulator_to_Escape_the_Virtual_Machine.pdf)
 		* [L1TF (Foreshadow) VM guest to host memory read PoC](https://github.com/gregvish/l1tf-poc)
 			* This is a PoC for CVE-2018-3646. This is a vulnerability that enables malicious/compromised VM guests to read host machine physical memory. The vulnerability is exploitable on most Intel CPUs that support VT-x and EPT (extended page tables). This includes all Intel Core iX CPUs. This PoC works only on 64 bit x86-64 systems (host and guest).
-* **Sysmon**
-	* [Shhmon - Neuter Sysmon by unloading its driver](https://github.com/matterpreter/Shhmon)
-	* [Subverting Sysmon materials](https://github.com/mattifestation/BHUSA2018_Sysmon)
-	* [Sysmon configuration bypass finder](https://github.com/mkorman90/sysmon-config-bypass-finder)
-		* Detect possible sysmon logging bypasses given a specific configuration
-* **Windows User Account Control(UAC)**
-	* **101**
-		* [User Account Control - docs.ms](https://docs.microsoft.com/en-us/windows/win32/secauthz/user-account-control)
-		* [User Account Control Step-by-Step Guide - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc709691(v=ws.10))
-		* User Account Control - Steven Sinofsky(blogs.msdn)](https://blogs.msdn.microsoft.com/e7/2008/10/08/user-account-control/)
-		* [Inside Windows Vista User Account Control - docs.ms](https://docs.microsoft.com/en-us/previous-versions/technet-magazine/cc138019(v=msdn.10)?redirectedfrom=MSDN)
-		* [Inside Windows 7 User Account Control - docs.ms](https://docs.microsoft.com/en-us/previous-versions/technet-magazine/dd822916(v=msdn.10)?redirectedfrom=MSDN)
-	* **Articles/Blogposts/Writeups**
-		* [Anatomy of UAC Attacks - b33f](https://www.fuzzysecurity.com/tutorials/27.html)
-		* [Farewell to the Token Stealing UAC Bypass - tyranidslair.blogspot](https://tyranidslair.blogspot.com/2018/10/farewell-to-token-stealing-uac-bypass.html)
-		* [Testing UAC on Windows 10 - Ernesto Fernandez](https://www.researchgate.net/publication/319454675_Testing_UAC_on_Windows_10)
-			* User Account Control (UAC) is a mechanism implemented in Windows systems from Vista to prevent malicious software from executing with administrative privileges without user consent. However, this mechanism does not provide a secure solution to that problem, since can be easily bypassed in some ways, something we will show by means of different methods such as DLL hijacking, token impersonation or COM interface elevation, also we will show a new method which we have developed based on a previous one. Moreover, this new Proof of Concept has been ported to the Metasploit Framework as a new module, which indeed is the only UAC bypass module that works in the latest Windows 10 build version.
-		* [Reading Your Way Around UAC (Part 1)](https://tyranidslair.blogspot.no/2017/05/reading-your-way-around-uac-part-1.html)
-			* [Reading Your Way Around UAC (Part 2)](https://tyranidslair.blogspot.no/2017/05/reading-your-way-around-uac-part-2.html)
-			* [Reading Your Way Around UAC (Part 3)](https://tyranidslair.blogspot.no/2017/05/reading-your-way-around-uac-part-3.html)
-		* [Testing User Account Control (UAC) on  Windows 10 - Ernesto Fernández Provecho](https://www.researchgate.net/publication/319454675_Testing_UAC_on_Windows_10)
-	* **Bypasses**
-		* [Bypassing Windows User Account Control (UAC) and ways of mitigation](https://www.greyhathacker.net/?p=796)
-		* [Bypassing User Account Control (UAC) using TpmInit.exe - uacmeltdown.blogspot](https://uacmeltdown.blogspot.com/)
-		* [UAC Bypass in System Reset Binary via DLL Hijacking - activecyber.us](https://www.activecyber.us/activelabs/uac-bypass-in-system-reset-binary-via-dll-hijacking)
-		* [Bypassing UAC using App Paths - Matt Nelson](https://posts.specterops.io/bypassing-uac-using-app-paths-9249d8cbe9c9)
-		* [Bypassing UAC on Windows 10 using Disk Cleanup](https://enigma0x3.net/2016/07/22/bypassing-uac-on-windows-10-using-disk-cleanup/)
-		* [Research on CMSTP.exe](https://msitpros.com/?p=3960)
-			* Methods to bypass UAC and load a DLL over webdav 
-		* [Bypassing UAC using App Paths](https://enigma0x3.net/2017/03/14/bypassing-uac-using-app-paths/)
-		* [“Fileless” UAC Bypass Using eventvwr.exe and Registry Hijacking](https://enigma0x3.net/2016/08/15/fileless-uac-bypass-using-eventvwr-exe-and-registry-hijacking/)
-		* [Fileless UAC Bypass using sdclt](https://posts.specterops.io/fileless-uac-bypass-using-sdclt-exe-3e9f9ad4e2b3)
-		* [Eventvwr File-less UAC Bypass CNA](https://www.mdsec.co.uk/2016/12/cna-eventvwr-uac-bypass/)
-		* [How to bypass UAC in newer Windows versions - zcool(Oct2018)](https://0x00-0x00.github.io/research/2018/10/31/How-to-bypass-UAC-in-newer-Windows-versions.html)
-		* [Fileless UAC Bypass in Windows Store Binary - activecyber.us](https://www.activecyber.us/activelabs/windows-uac-bypass)
-		* [Fileless_UAC_bypass_WSReset](https://github.com/sailay1996/Fileless_UAC_bypass_WSReset)
-	* **Talks & Presentations**
-		* [Not a Security Boundary: Bypassing User Account Control - Matt Nelson](Derbycon7)](https://www.youtube.com/watch?v=c8LgqtATAnE&index=21&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
-	* **Tools**
-		* [UACME](https://github.com/hfiref0x/UACME)
-			* Defeating Windows User Account Control by abusing built-in Windows AutoElevate backdoor.
-		* [DccwBypassUAC](https://github.com/L3cr0f/DccwBypassUAC)
-			* This exploit abuses the way "WinSxS" is managed by "dccw.exe" by means of a derivative Leo's Davidson "Bypass UAC" method so as to obtain an administrator shell without prompting for consent. It supports "x86" and "x64" architectures. Moreover, it has been successfully tested on Windows 8.1 9600, Windows 10 14393, Windows 10 15031 and Windows 10 15062.
-		* [Bypass-UAC](https://github.com/FuzzySecurity/PowerShell-Suite/tree/master/Bypass-UAC)
-			* Bypass-UAC provides a framework to perform UAC bypasses based on auto elevating IFileOperation COM object method calls. This is not a new technique, traditionally, this is accomplished by injecting a DLL into "explorer.exe". This is not desirable because injecting into explorer may trigger security alerts and working with unmanaged DLL's makes for an inflexible work-flow. To get around this, Bypass-UAC implements a function which rewrites PowerShell's PEB to give it the appearance of "explorer.exe". This provides the same effect because COM objects exclusively rely on Windows's Process Status API (PSAPI) which reads the process PEB.
-		* [Bypass-UAC](https://github.com/FuzzySecurity/PowerShell-Suite/tree/master/Bypass-UAC)
 
 
 
@@ -4200,4 +4185,6 @@
 			* Using this tool you can inject x-code/shellcode into PE file. InjectPE works only with 32-bit executable files.
 		* [PowerLoaderEX](https://github.com/BreakingMalware/PowerLoaderEx)
 			* Advanced Code Injection Technique for x32 / x64
+
+
 

@@ -268,6 +268,8 @@
 	* [And That's How I Lost My Other Eye...Explorations in Data Destruction](https://www.youtube.com/watch?v=-bpX8YvNg6Y)
 	* [An Anti-Forensics Primer - Jason Andress](http://www.irongeek.com/i.php?page=videos/derbycon3/s216-an-anti-forensics-primer-jason-andress)
 	* This talk will cover the basics of anti-forensics, the tools and techniques that can be used to make life harder for computer forensic examiners. We will cover some of the basic methods that are used (disk wiping, time stomping, encryption, etc…) and talk about which of these methods might actually work and which are easily surmounted with common forensic tools.
+	* [Anti-Forensics for Fun and Privacy - Alissa Gilbert(Shmoocon 2020)](https://www.youtube.com/watch?v=eSmsiSvvAQs)
+		* Want to learn how to avoid surveillance and investigators? Anti-forensics is the practice of modifying or removing data so that others cannot find it later during an investigation. While annoying to forensic practitioners and law enforcement, it is unavoidable to help maintain privacy in a world of shady ToS, snooping partners, and potential search and seizures. How far do you need to go to maintain your privacy? This talk will break down anti-forensics techniques that you can use to protect yourself from audiences like your mom to an extreme nation-state level actor. The only thing more fun than forensics is anti-forensics.
 * **Tools**
 	* [usbkill](https://github.com/stemid/usbkill)
 		* A tool that shuts down your computer if USB devices change, for example if you unplug or plug-in a device. 
@@ -856,3 +858,17 @@
 
 
 
+
+
+
+
+
+--------------
+#### Bootkit Disk Forensics
+* **101**
+* **Articles/Papers/Talks/Writeups**
+	* [Bootkit Disk Forensics – Part 1 - MalwareTech](http://www.malwaretech.com/2015/02/bootkit-disk-forensics-part-1.html)
+		* [Part 2](http://www.malwaretech.com/2015/03/bootkit-disk-forensics-part-2.html)
+* **General**
+* **Tools**
+* **Miscellaneous**

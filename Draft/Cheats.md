@@ -3,6 +3,8 @@
 
 
 
+
+
 	
 ### Cheat Sheets
 * **General Cheat Sheets**
@@ -67,6 +69,9 @@
 	* [Windows Privilege Escalation Cheat Sheet/Tricks](http://it-ovid.blogspot.fr/2012/02/windows-privilege-escalation.html)
 	* [Attack Surface Analysis Cheat Sheet](https://www.owasp.org/index.php/Attack_Surface_Analysis_Cheat_Sheet)
 	* [Web Application Penetration Testing Cheat Sheet - jdow.io](https://jdow.io/blog/2018/03/18/web-application-penetration-testing-methodology/)
+	* [Pentesting CheatSheets - @spotheplanet](https://ired.team/offensive-security-experiments/offensive-security-cheetsheets)
+	* [Active Directory Cheat Sheet](https://github.com/Integration-IT/Active-Directory-Exploitation-Cheat-Sheet)
+		* This repository contains a general methodology in the Active Directory environment. It is offered with a selection of quick commands from the most efficient tools based on Powershell, C, .Net 3.5 and .Net 4.5.
 * **PowerShell**
 	* [PowerShell Remoting Cheatsheet - Scott Sutherland](https://blog.netspi.com/powershell-remoting-cheatsheet/)
 * **RE Cheat Sheets**<a name="re"></a>

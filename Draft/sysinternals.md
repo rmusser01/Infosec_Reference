@@ -1,16 +1,15 @@
-
 # System Internals of Windows; OS X; Linux; ARM
 
+---------------------------------
 ## Table of Contents
-
-* [General Internals](#general)
-* [Windows Internals](#winternals)
-* [Kerberos / Related](#kerberos)
-* [Linux Internals](#linux)
-* [Windows Reference](#windowsref)
-* [Linux Reference](#linuxref)
-* [OS X Reference](#osx)
-* [ARM Reference](#ARM)
+- [General Internals](#general)
+- [Windows Internals](#winternals)
+- [Kerberos / Related](#kerberos)
+- [Linux Internals](#linux)
+- [Windows Reference](#windowsref)
+- [Linux Reference](#linuxref)
+- [OS X Reference](#osx)
+- [ARM Reference](#ARM)
 
 
 
@@ -21,18 +20,6 @@
 * Fix ToC so its accurate
 * Split sections into reference material and writeup material(quick vs long reference)
 * Further categorize sections (network vs memory vs exploit mitigations vs feature)
-
----------------------
-## <a name="general">General Internals</a>
-* [C Function Call Conventions and the Stack](https://archive.is/o2nD5)
-* [The Anatomy of an Executable](https://github.com/mewrev/dissection)
-* [What a C programmer should know about memory](http://marek.vavrusa.com/c/memory/2015/02/20/memory/)
-* [Linux kernel development(walkthrough)](https://github.com/0xAX/linux-insides/blob/master/Misc/contribute.md)
-* [Event log explanations for various systems(not just windows)](http://eventopedia.cloudapp.net/Events/?/Operating+System)
-* [duartes.org - internals](http://duartes.org/gustavo/blog/category/internals/)
-* [The little book about OS development](https://littleosbook.github.io/)
-* [How to Make a Computer Operating System in C++](https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System)
-* [Introduction to Paging - Philipp Oppermann](https://os.phil-opp.com/paging-introduction/)
 
 ---------------------
 ## <a name="winref">Windows Reference</a>
@@ -125,6 +112,8 @@ Windows Authentication
 	* [[MS-DCOM]: Distributed Component Object Model (DCOM) Remote Protocol - msdn.ms](https://msdn.microsoft.com/en-us/library/cc226801.aspx)
 	* [DCOM Overview - active-undelete.com](http://active-undelete.com/dcom-overview.htm)
 	* [Active Directory Service Interfaces - docs.ms](https://docs.microsoft.com/en-us/windows/win32/adsi/active-directory-service-interfaces-adsi)
+* **Credential Storage**
+	* [Cached and Stored Credentials Technical Overview(2016) - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh994565(v%3Dws.11))
 * **Credential Provider**
 	* [Credential Providers in Windows 10 - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/mt158211(v=vs.85).aspx)
 	* [ICredentialProvider interface - msdn](https://msdn.microsoft.com/en-us/library/bb776042(v=vs.85).aspx)
@@ -143,7 +132,14 @@ Windows Authentication
 * **Digest Authentication**
 	* [What is Digest Authentication? - technet.ms](https://technet.microsoft.com/en-us/library/cc778868%28v=ws.10%29.aspx)
 * **DLLs**
+	* [Dynamic-Link Library Security - docs.ms(2018)](https://docs.microsoft.com/en-us/windows/win32/dlls/dynamic-link-library-security?redirectedfrom=MSDN)
 	* [Everything You Never Wanted To Know About DLLs](http://blog.omega-prime.co.uk/2011/07/04/everything-you-never-wanted-to-know-about-dlls/)
+	* [Everything You Ever Wanted to Know about DLLs” - James McNellis(CppCon 2017)](https://www.youtube.com/watch?v=JPQWQfDhICA)
+		* [Slides](https://github.com/CppCon/CppCon2017/blob/master/Presentations/Everything%20You%20Ever%20Wanted%20to%20Know%20about%20DLLs/Everything%20You%20Ever%20Wanted%20to%20Know%20about%20DLLs%20-%20James%20McNellis%20-%20CppCon%202017.pdf)
+		* If you build software for Windows, you use DLLs, and it’s likely that you may build DLLs of your own. DLLs are the primary mechanism for packaging and encapsulating code on the Windows platform. But have you ever stopped to think about how DLLs work? What goes into a DLL when you build it, what happens when you link your program with a DLL, or how do DLLs get located and loaded at runtime? Many of us build and use DLLs without fully understanding them. In this session, we’ll give an in-depth introduction to DLLs and how they work.  We’ll begin by looking at what’s in a DLL—the kinds of things a DLL can contain and the basic data structures that are used—and the benefits and drawbacks of packaging code in a DLL. We’ll look at how DLLs are loaded, including the details of how the loader locates DLLs and maps them into the process; how dependencies are resolved among DLLs; and DLL lifetime and how DLLs get unloaded. We’ll also look at how DLLs get built, including what makes DLLs “special,” what goes into an import library, and how the linker uses import libraries. Finally, we’ll look at several other miscellaneous topics, including how DLLs interact with threads and thread-local storage, and mechanisms for solving or mitigating the dreaded “DLL hell.” 
+* **DNS**
+	* [[MS-DNSP]: Domain Name Service (DNS) Server Management Protocol - docs.ms(2019)](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dnsp/f97756c9-3783-428b-9451-b376f877319a)
+		* Specifies the Domain Name Service (DNS) Server Management Protocol, which defines the RPC interfaces that provide methods for remotely accessing and administering a DNS server. It is a client and server protocol based on RPC that is used in the configuration, management, and monitoring of a DNS server.
 * **Dynamic Data Exchange**
 	* [Dynamic Data Exchange - msdn.ms](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648711(v=vs.85).aspx)
 		* This section provides guidelines for implementing dynamic data exchange for applications that cannot use the Dynamic Data Exchange Management Library (DDEML).
@@ -268,6 +264,12 @@ Windows Authentication
 	* [What registry entries are needed to register a COM object.](https://blogs.msdn.microsoft.com/larryosterman/2006/01/11/what-registry-entries-are-needed-to-register-a-com-object/)
 	* [Authentication Registry Keys - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa374737(v=vs.85).aspx)
 		* When it installs a network provider, your application should create the registry keys and values described in this topic. These keys and values provide information to the MPR about the network providers installed on the system. The MPR checks these keys when it starts and loads the network provider DLLs that it finds.
+* **Remote Desktop**
+	* [Remote Desktop Services virtual channels - docs.ms](https://docs.microsoft.com/en-us/windows/win32/termserv/terminal-services-virtual-channels)
+	* [UniversalDVC](https://github.com/earthquake/UniversalDVC)
+		* Universal Dynamic Virtual Channel connector for Remote Desktop Services
+* **User Rights**
+	* [User Rights Assignment(Win10) - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/user-rights-assignment)
 * **RPC**
 	* [Remote Procedure Call - IBM Knowledgebase](https://www.ibm.com/support/knowledgecenter/en/ssw_aix_71/com.ibm.aix.progcomc/ch8_rpc.htm)
 	* [Remote Procedure Calls (RPC) - users.cs.cf.ac.uk](https://users.cs.cf.ac.uk/Dave.Marshall/C/node33.html)
@@ -298,11 +300,15 @@ Windows Authentication
 		* Microsoft Digest is a security support provider (SSP) that implements the Digest Access protocol, a lightweight authentication protocol for parties involved in Hypertext Transfer Protocol (HTTP) or Simple Authentication Security Layer (SASL) based communications. Microsoft Digest provides a simple challenge response mechanism for authenticating clients. This SSP is intended for use by client/server applications using HTTP or SASL based communications.
 * **Services**
 	* [Creating a service using sc.exe](https://support.microsoft.com/en-us/help/251192/how-to-create-a-windows-service-by-using-sc-exe)
+	* [Services: Windows 10 Services(ss64)](https://ss64.com/nt/syntax-services.html)
+		* A list of the default services in Windows 10 (build 1903).
 * **Service Accounts**
 	* [Service Account best practices Part 1: Choosing a Service Account](https://4sysops.com/archives/service-account-best-practices-part-1-choosing-a-service-account/)
 		* In this article you will learn the fundamentals of Windows service accounts. Specifically, we discover the options and best practices concerning the selection of a service account for a particular service application.
 * **Server Message Block(SMB)**
 	* [Server Message Block Overview - msdn.ms](https://msdn.microsoft.com/fr-fr/library/hh831795%28v=ws.11%29.aspx)
+* **Subsystems**
+	* [Security Subsystem Architecture - docs.ms(2012)](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc961760(v=technet.10)?redirectedfrom=MSDN)
 * **Symbol Files**
 	* [Process Security and Access Rights - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/ms684880%28v=vs.85%29.aspx)
 	* [OpenProcessToken function - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa379295%28v=vs.85%29.aspx)
@@ -322,6 +328,25 @@ Windows Authentication
 	* [How Do Windows NT System Calls REALLY Work?](http://www.codeguru.com/cpp/w-p/system/devicedriverdevelopment/article.php/c8035/How-Do-Windows-NT-System-Calls-REALLY-Work.htm)
 	* [Debugging Functions - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/ms679303.aspx)
 	* [Intercepting System Calls on x86_64 Windows](http://jbremer.org/intercepting-system-calls-on-x86_64-windows/)
+* **Tokens**
+	* [DuplicateTokenEx function - docs.ms](https://docs.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-duplicatetokenex?redirectedfrom=MSDN)
+		* The DuplicateTokenEx function creates a new access token that duplicates an existing token. This function can create either a primary token or an impersonation token.
+	* [ImpersonateLoggedOnUser function - docs.ms](https://docs.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-impersonateloggedonuser?redirectedfrom=MSDN)
+		* The ImpersonateLoggedOnUser function lets the calling thread impersonate the security context of a logged-on user. The user is represented by a token handle.
+	* [SetThreadToken function - docs.ms](https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-setthreadtoken?redirectedfrom=MSDN)
+		* The SetThreadToken function assigns an impersonation token to a thread. The function can also cause a thread to stop using an impersonation token.
+	* [CreateProcessWithTokenW function - docs.ms](https://docs.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-createprocesswithtokenw?redirectedfrom=MSDN)
+		* Creates a new process and its primary thread. The new process runs in the security context of the specified token. It can optionally load the user profile for the specified user.
+	* [OpenProcess function - docs.ms](https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocess?redirectedfrom=MSDN)
+		* Opens an existing local process object.
+	* [OpenProcessToken function - docs.ms](https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocesstoken?redirectedfrom=MSDN)
+		* The OpenProcessToken function opens the access token associated with a process.
+	* [OpenThread function - docs.ms](https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-openthread?redirectedfrom=MSDN)
+		* Opens an existing thread object.
+	* [OpenThreadToken function - docs.ms](https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-openthreadtoken?redirectedfrom=MSDN)
+		* The OpenThreadToken function opens the access token associated with a thread.
+	* [GetTokenInformation function - docs.ms](https://docs.microsoft.com/en-us/windows/win32/api/securitybaseapi/nf-securitybaseapi-gettokeninformation?redirectedfrom=MSDN)
+		* The GetTokenInformation function retrieves a specified type of information about an access token. The calling process must have appropriate access rights to obtain the information.
 * **User Account Control(UAC)**
 	* [Protecting Windows Networks – UAC - dfirblog.wordpress.com](https://dfirblog.wordpress.com/2015/10/24/protecting-windows-networks-uac/) 
 	* User Account Control - Steven Sinofsky(blogs.msdn)](https://blogs.msdn.microsoft.com/e7/2008/10/08/user-account-control/)
@@ -454,7 +479,7 @@ Windows Authentication
 ---------------------
 ### Other 
 * [Intel SGX Explained](https://eprint.iacr.org/2016/086.pdf)
-	* This paper analyzes Intel SGX, based on the 3 pa- pers [ 14 , 78 , 137 ] that introduced it, on the Intel Software Developer’s Manual [ 100 ] (which supersedes the SGX manuals [ 94 , 98 ]), on an ISCA 2015 tutorial [ 102 ], and on two patents [ 108 , 136 ]. We use the papers, reference manuals, and tutorial as primary data sources, and only draw on the patents to fill in missing information. This  paper’s  contributions  are  a  summary  of  the Intel-specific architectural and micro-architectural details needed to understand SGX, a detailed and structured pre- sentation of the publicly available information on SGX, a series of intelligent guesses about some important but undocumented aspects of SGX, and an analysis of SGX’s security properties.
+	* This paper analyzes Intel SGX, based on the 3 papers that introduced it, on the Intel Software Developer’s Manual(which supersedes the SGX manuals ), on an ISCA 2015 tutorial, and on two patents. We use the papers, reference manuals, and tutorial as primary data sources, and only draw on the patents to fill in missing information. This paper’s contributions are a summary of the Intel-specific architectural and micro-architectural details needed to understand SGX, a detailed and structured pre- sentation of the publicly available information on SGX, a series of intelligent guesses about some important but undocumented aspects of SGX, and an analysis of SGX’s security properties.
 
 
 

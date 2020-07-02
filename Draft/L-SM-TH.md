@@ -14,7 +14,7 @@
 	- [Breach Detection/Response](#brdp)
 	- [Infrastructure Monitoring](#inframon)
 	- [Network-based](#netmon)
-		- [IDS/IPS](ips)
+		- [IDS/IPS](#ips)
 		- [IDS/IPS Monitoring tools](#ipsmon)
 	- [Linux](#linmon)
 	- [macOS/OS X](#macmon)
@@ -31,6 +31,10 @@
 	- [Linux](#thlin)
 	- [macOS](#thmac)
 	- [Windows](#thwin)
+	- [Cloud](#cloud)
+		- [AWS](#aws)
+		- [Azure](#azure)
+		- [GCP](#gcp)
 	- [Simulation & Testing](#simulation)
 - [Data Storage & Analysis](#stacks	)
 	- [ELK](#elk)
@@ -352,6 +356,9 @@
 			* Configure Searches to periodically run against a variety of data sources. You can define a custom pipeline of Filters to manipulate any generated Alerts and forward them to multiple Targets.
 		* [Pattern](https://github.com/clips/pattern/blob/master/README.md)
 			* Pattern is a web mining module for Python. It has tools for: Data Mining: web services (Google,; Twitter, Wikipedia), web crawler, HTML DOM parser; Natural Language Processing: part-of-speech taggers, n-gram search, sentiment analysis, WordNet; Machine Learning: vector space model, clustering, classification (KNN, SVM, Perceptron); Network Analysis: graph centrality and visualization.
+* **File Analysis**
+	* [BinaryAlert](https://github.com/airbnb/binaryalert)
+		* BinaryAlert is an open-source serverless AWS pipeline where any file uploaded to an S3 bucket is immediately scanned with a configurable set of YARA rules. An alert will fire as soon as any match is found, giving an incident response team the ability to quickly contain the threat before it spreads.
 * **Infrastructure Monitoring**<a name="inframon"></a>
 	* [Ninja Level Infrastructure Monitoring Workshop - Defcon24](https://github.com/appsecco/defcon24-infra-monitoring-workshop)
 		* This repository contains all the presentation, documentation and the configuration, sample logs, ansible playbook, customized dashboards and more.
@@ -695,6 +702,7 @@
 * **Data Analysis**<a name="data"></a>
 	* **Articles/Blogposts/Writeups**
 		* [An In-Depth Look Into Data Stacking - M-Labs](https://www.fireeye.com/blog/threat-research/2012/11/indepth-data-stacking.html)
+			* Data stacking is the application of frequency analysis to large volumes of similar data in an effort to isolate and identify anomalies. In short, data stacking is an investigative technique that can be used to find a needle in a digital haystack. It involves an iterative process of reducing large amounts of data into manageable chunks that can be consumed and investigated.	
 	* **Labs**
 		* HELK
 			* [HELK - The Hunting ELK](https://github.com/Cyb3rWard0g/HELK)
@@ -774,8 +782,6 @@
 		* **Articles/Writeups**
 			* [Hunting Your DNS Dragons - Derek King(2018)](https://www.splunk.com/en_us/blog/security/hunting-your-dns-dragons.html)
 			* [Threat hunting using DNS firewalls and data enrichment - Adam Ziaja](https://blog.redteam.pl/2019/08/threat-hunting-dns-firewall.html)
-
-
 * **Traffic Analysis**<a name="traffic"></a>
 	* [Behavioral Analysis using DNS, Network Traffic and Logs, Josh Pyorre (@joshpyorre)](https://www.youtube.com/watch?v=oLemvzZjDOs&index=13&list=PLwZycuzv10iLBFwRIWNAR-s4iuuUMRuEB)
 		* Multiple methods exist for detecting malicious activity in a network, including intrusion detection, anti-virus, and log analysis. However, the majority of these use signatures, looking for already known events and they typically require some level of human intervention and maintenance. Using behavioral analysis methods, it may be possible to observe and create a baseline of average behavior on a network, enabling intelligent notification of anomalous activity. This talk will demonstrate methods of performing this activity in different environments. Attendees will learn new methods which they can apply to further monitor and secure their networks
@@ -881,6 +887,8 @@
 		* **Articles/Writeups**
 			* [Hunting COM Objects - Charles Hamilton](https://www.fireeye.com/blog/threat-research/2019/06/hunting-com-objects.html)
 			* [Hunting COM Objects (Part Two) - Brett Hawkins](https://www.fireeye.com/blog/threat-research/2019/06/hunting-com-objects-part-two.html)
+	* **CSharp**
+		* [Interesting DFIR traces of .NET CLR Usage Logs - menasec.net](https://blog.menasec.net/2019/07/interesting-difr-traces-of-net-clr.html)
 	* **Event Logs**
 		* **Articles/Writeups**
 		* **Talks/Presentations/Videos**
@@ -931,17 +939,16 @@
 	* **Processes**
 		* **Articles/Writeups**
 			* [Verifying Running Processes against VirusTotal - Domain-Wide - Rob VandenBrink(isc.sans 2019)](https://isc.sans.edu/diary/Verifying+Running+Processes+against+VirusTotal+-+Domain-Wide/25078)
+			* [Engineering Process Injection Detections - Part 1: Research - Jonathan Johnson(2020)](https://posts.specterops.io/engineering-process-injection-detections-part-1-research-951e96ad3c85)
+				* [Code](https://github.com/jsecurity101/Detecting-Process-Injection-Techniques)
 		* **Talks/Presentations/Videos**
 			* [Tricking modern endpoint security products - Michel Coene(SANS2020)](https://www.youtube.com/watch?v=xmNpS9mbwEc)
 				* The current endpoint monitoring capabilities we have available to us are unprecedented. Many tools and our self/community-built detection rules rely on parent-child relationships and command-line arguments to detect malicious activity taking place on a system. There are, however, ways the adversaries can get around these detections. During this presentation, we'll talk about the following techniques and how we can detect them: Parent-child relationships spoofing; Command-line arguments spoofing; Process injection; Process hollowing
 		* **Tools**
 			* [PE-Sieve](https://github.com/hasherezade/pe-sieve)
 				* [..]tool that helps to detect malware running on the system, as well as to collect the potentially malicious material for further analysis. Recognizes and dumps variety of implants within the scanned process: replaced/injected PEs, shellcodes, hooks, and other in-memory patches. Detects inline hooks, Process Hollowing, Process Doppelgänging, Reflective DLL Injection, etc.
-	* **Process Injection**
-		* **Articles/Writeups**
-			* [Engineering Process Injection Detections - Part 1: Research - Jonathan Johnson(2020)](https://posts.specterops.io/engineering-process-injection-detections-part-1-research-951e96ad3c85)
-				* [Code](https://github.com/jsecurity101/Detecting-Process-Injection-Techniques)
-		* **Tools**
+			* [hollows_hunter](https://github.com/hasherezade/hollows_hunter)
+				* Scans all running processes. Recognizes and dumps a variety of potentially malicious implants (replaced/implanted PEs, shellcodes, hooks, in-memory patches).
 			* [Get-InjectedThread.ps1](https://gist.github.com/jaredcatkinson/23905d34537ce4b5b1818c3e6405c1d2)
 				* Looks for threads that were created as a result of code injection.
 	* **PowerShell**
@@ -1009,6 +1016,17 @@
 	* **Tools**
 		* [BLUESPAWN](https://github.com/ION28/BLUESPAWN)
 			* BLUESPAWN is an active defense and endpoint detection and response tool which means it can be used by defenders to quickly detect, identify, and eliminate malicious activity and malware across a network.
+		* [CimSweep](https://github.com/PowerShellMafia/CimSweep)
+			* CimSweep is a suite of CIM/WMI-based tools that enable the ability to perform incident response and hunting operations remotely across all versions of Windows. CimSweep may also be used to engage in offensive reconnaisance without the need to drop any payload to disk. 
+* **Cloud**<a name='cloud'></a>
+	* **AWS**<a name="aws"></a>
+		* **Articles/Writeups**
+		* **Talks & Presentations**
+			* [Actionable threat hunting in AWS (SEC339) - Chris Farris, Suman Koduri(AWS re:Invent 2019)](https://www.youtube.com/watch?v=kNtiskRtfeY)
+				* Learn how WarnerMedia leveraged Amazon GuardDuty, AWS CloudTrail, and its own serverless inventory tool (Antiope) to root out cloud vulnerabilities, insecure behavior, and potential account compromise activities across a large number of accounts. We cover how WarnerMedia centralizes and automates its security tooling, offer detailed Splunk queries for GuardDuty and CloudTrail, and discuss how Antiope is used for vulnerability hunting. We cover the scaling issues incurred during a large enterprise merger. Leave this session with a strategy and an actionable set of detections for finding potential data breaches and account compromises.
+				* [Blogpost](https://www.chrisfarris.com/post/reinvent2019-sec339/)
+	* **Azure**<a name="azure"></a>
+	* **GCP**<a name="gcp"></a>
 * **Simulation & Testing**<a name='simulation'></a>
 	* **Articles/Blogposts/Writeups**
 	* **Talks/Presentations/Videos**

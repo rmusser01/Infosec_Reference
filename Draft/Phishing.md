@@ -78,7 +78,6 @@
 	- [Temporary File Drop](#tnf)
 	- [Word Fields](#mwf)
 - [Setting up a Server](#settingup)
-- [Local Phishing](#localphish)
 ------------------------------------------------------
 
 To Do:

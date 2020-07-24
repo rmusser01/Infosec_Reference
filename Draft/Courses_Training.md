@@ -11,6 +11,7 @@
 	- [AWS](#aws)
 	- [Azure](#azure)
 	- [GCP](#gcp)
+- [Computer Science](#cs)
 - [Containers](#containers)
 - [Cryptography](#crypto)
 - [Data Science](#ds)
@@ -35,6 +36,7 @@
 - [Web Security Focused Training](#web)
 - [Wireless](#wireless)
 - [Resources for instructors/Trainers](#resource)
+
 
 
 
@@ -88,11 +90,12 @@
 		* A free, self-paced curriculum that builds a base of knowledge in computers and networking prior to moving on to the fundamentals of security and defense. The course is intended to build up a student with no prior technical knowledge to be confident in their ability to learn anything and continue their security education. 
 	* [Hopper's Roppers Security Fundamentals](https://www.hoppersroppers.org/courseSecurity.html)
 		* A free, self-paced curriculum that teaches a beginner how security works in the real world. Learn security theory and execute defensive measures so that you are better prepared against threats online and in the physical world.
-* **Cloud**
-	* **AWS**
+* **Cloud**<a name="cloud"></a>
+	* **AWS**<a name="aws"></a>
 	* **Azure**
 		* [So you want to learn Azure Security? - Michael Howard(2020)](https://michaelhowardsecure.blog/2020/02/14/so-you-want-to-learn-azure-security/)
 	* **GCP**
+- **Computer Science**<a name="cs"></a>
 * **Containers**<a name="containers"></a>
 	* [Attacking and Auditing Docker Containers and Kubernetes Clusters](https://github.com/appsecco/attacking-and-auditing-docker-containers-and-kubernetes-clusters)
 		* This course will set the base for security testers and DevOps teams to test for common security vulnerabilities and configuration weaknesses across containerised environments and distributed systems. It also helps to understand approach and process to audit the Kubernetes environment for security posture. The courseware is meant to introduce participants to container and cluster management with Kubernetes.
@@ -169,13 +172,20 @@
 		* Florida State University Offensive Security 2013 Class materials
 	* [HackSplaining](https://www.hacksplaining.com/faq)
 		* Security training aimed towards developers. Free.
-	* [Beginner Network Pentesting - The Cyber Mentor](https://github.com/hmaverickadams/Beginner-Network-Pentesting)
-		* Welcome to the Beginner Network Pentesting course. Previously, the course was delivered weekly on Twitch and built from lessons learned in the previous week. The course provides an opportunity for those interested in becoming an ethical hacker / penetration tester the chance to learn the practical skills necessary to work in the field. Throughout the course, we will develop our own Active Directory lab in Windows, make it vulnerable, hack it, and patch it. We'll cover the red and blue sides. We'll also cover some of the boring stuff like report writing :).
-	* [Penetration Test Guide based on the OWASP + Extra](https://github.com/Voorivex/pentest-guide)
-		* This guid[e] is for the penetration testers seeking for the appropriate test cases required during a penetration test project. I rearranged the OWASP Testing Guide v4 from my point of view including 9 Test Classes and each class has several Test Cases to conduct against the target. Each Test Case covers several OWASP tests which also is useful for the report document. I've also added 14 extra Tests Cases marked by the EXTRA-TEST. I hope it will be useful in both penetration test projects and bug-bounty.
-	* [SpecterOps Adversary Tactics: PowerShell Course](https://github.com/specterops/at-ps)
-	* [Powershell-Attack-Guide](https://github.com/rootclay/Powershell-Attack-Guide)
-		* Learning PowerShell for internal Pentesting
+	* **Cloud**
+		* [Breaking and Pwning Apps and Servers on AWS and Azure - Appsecco](https://github.com/appsecco/breaking-and-pwning-apps-and-servers-aws-azure-training)
+			* The training covers a multitude of scenarios taken from our vulnerability assessment, penetration testing and OSINT engagements which take the student through the journey of discovery, identification and exploitation of security weaknesses, misconfigurations and poor programming practices that can lead to complete compromise of the cloud infrastructure. The training is meant to be a hands-on training with guided walkthroughs, scenario based attacks, coverage of tool that can be used for attacking and auditing. Due to the attack, focused nature of the training, not a lot of documentation is around security architecture, defence in depth etc. Additional references are provided in case further reading is required.
+	* **'Network' Pentesting**
+		* [Beginner Network Pentesting - The Cyber Mentor](https://github.com/hmaverickadams/Beginner-Network-Pentesting)
+			* Welcome to the Beginner Network Pentesting course. Previously, the course was delivered weekly on Twitch and built from lessons learned in the previous week. The course provides an opportunity for those interested in becoming an ethical hacker / penetration tester the chance to learn the practical skills necessary to work in the field. Throughout the course, we will develop our own Active Directory lab in Windows, make it vulnerable, hack it, and patch it. We'll cover the red and blue sides. We'll also cover some of the boring stuff like report writing :).
+	* **PowerShell**
+		* [Fundamentals of Leveraging PowerShell - Carlos Perez(Defcon25)](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20workshops/DEF%20CON%2025%20-%20Carlos-Perez-Leveraging-PowerShell.pdf)
+		* [SpecterOps Adversary Tactics: PowerShell Course](https://github.com/specterops/at-ps)
+		* [Powershell-Attack-Guide](https://github.com/rootclay/Powershell-Attack-Guide)
+			* Learning PowerShell for internal Pentesting
+	* **Web**
+		* [Penetration Test Guide based on the OWASP + Extra](https://github.com/Voorivex/pentest-guide)
+			* This guid[e] is for the penetration testers seeking for the appropriate test cases required during a penetration test project. I rearranged the OWASP Testing Guide v4 from my point of view including 9 Test Classes and each class has several Test Cases to conduct against the target. Each Test Case covers several OWASP tests which also is useful for the report document. I've also added 14 extra Tests Cases marked by the EXTRA-TEST. I hope it will be useful in both penetration test projects and bug-bounty.
 * **Product Management**<a name="pm"></a>
 	* [Software Product Management Specialization - University of Alabama(Coursera)](https://www.coursera.org/specializations/product-management)
 		* In this Software Product Management Specialization, you will master Agile software management practices to lead a team of developers and interact with clients. In the final Capstone Project, you will practice and apply management techniques to realistic scenarios that you will face as a Software Product Manager. You will have the opportunity to share your experiences and learn from the insights of others as part of a Software Product Management
@@ -326,6 +336,8 @@
 		* [The case for case studies of programming problems - Marcia C. Linn, Michael J Clancy](https://dl.acm.org/doi/10.1145/131295.131301)
 		* [The Effect of Reading Code Aloud on Comprehension: An Empirical Study with School Students - Alaaeddin  Swidan, Felienne Hermans](https://dl.acm.org/doi/10.1145/3300115.3309504)
 		* [Constructivism in computer science education - Mordechai Ben-Ari](https://dl.acm.org/doi/10.1145/274790.274308)
-
+	* **Problem Based Learning**
+		* [Problem-based learning - Wikipedia](https://en.wikipedia.org/wiki/Problem-based_learning)
+			* "[..] a student-centered pedagogy in which students learn about a subject through the experience of solving an open-ended problem found in trigger material. The PBL process does not focus on problem solving with a defined solution, but it allows for the development of other desirable skills and attributes."
 
 

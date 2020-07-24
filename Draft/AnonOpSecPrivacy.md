@@ -2,23 +2,23 @@
 
 ### Table of Contents
 - [General](#general)
-- [Android/iOS/Mobile](#mobile)
-- [Browser Related](#browser)
-- [Communications Security](#comsec)
-- [Data Collection](#dcollect)
-- [De-anonymization](#de-anon)
-- [Documents/Writing](#writing)
-- [Facial Identification](#face)
-- [Informative/Educational](#informative)
-- [Journalism & Media Publishing](#media)
-- [Network Obfuscation](#obfuscation)
-- [Operational Security - OPSEC](#opsec)
-- [References/Resources](#ref)
-- [Wireless Radios](#)
-- [Tor](#tor)
-- [Traveling](#travel)
-- [Miscellaneous Stuff](#misc)
-- [Miscellaneous Tools](#misc-tools)
+	- [Android/iOS/Mobile](#mobile)
+	- [Browser Related](#browser)
+	- [Communications Security](#comsec)
+	- [Data Collection](#dcollect)
+	- [De-anonymization](#de-anon)
+	- [Documents/Writing](#writing)
+	- [Facial Identification](#face)
+	- [Informative/Educational](#informative)
+	- [Journalism & Media Publishing](#media)
+	- [Network Obfuscation](#obfuscation)
+	- [Operational Security - OPSEC](#opsec)
+	- [References/Resources](#ref)
+	- [Wireless Radios](#)
+	- [Tor](#tor)
+	- [Traveling](#travel)
+	- [Miscellaneous Stuff](#misc)
+	- [Miscellaneous Tools](#misc-tools)
 - [Counter-Surveillance](#counter)
 	- [Writeups](#cwriteup)
 	- [Videos/Talks](#cvideos)
@@ -383,7 +383,7 @@
 		* [Counterintelligence, False Flags, Disinformation, and Network Defense - krypt3ia](https://krypt3ia.wordpress.com/2012/10/17/counterintelligence-false-flags-disinformation-and-network-defense/)
 		* [Attribution As A Weapon & Marketing Tool: Hubris In INFOSEC & NATSEC](https://krypt3ia.wordpress.com/2014/12/30/attribution-as-a-weapon-marketing-tool-hubris-in-infosec-natsec/)
 		* [SyTech’s FSB Document Dump: Owning The Information Space and Disconnecting It - Krytp3ia](https://krypt3ia.wordpress.com/2019/08/03/sytechs-fsb-document-dump-owning-the-information-space-and-disconnecting-it/)
-		* [The Gentleperson’s Guide to Forum Spies](cryptome.org/2012/07/gent-forum-spies.htm)
+		* [The Gentleperson’s Guide to Forum Spies](http://www.cryptome.org/2012/07/gent-forum-spies.htm)
 		* [A Digital World Full of Ghost Armies](http://www.cigtr.info/2015/02/a-digital-world-full-of-ghost-armies.html)
 		* [Disinformation demystified - icyphox](https://icyphox.sh/blog/disinfo/)
 		* [PsyOps and Socialbots](http://resources.infosecinstitute.com/psyops-and-socialbots/)
@@ -541,14 +541,11 @@
 	* Scuttlebutt is a protocol for building decentralized applications that work well offline and that no one person can control. Because there is no central server, Scuttlebutt clients connect to their peers to exchange information. This guide describes the protocols used to communicate within the Scuttlebutt network. Scuttlebutt is a flexible protocol, capable of supporting many different types of applications. One of its first applications was as a social network, and it has also become one of the most compelling because the people who hang out there are not jerks. This guide has a slight focus on how to use Scuttlebutt for social networking, but many of the explanations will still be useful if want to use it for something completely different, or are just curious how it works.
 * [Serval](http://www.servalproject.org)
 	* Serval is a telecommunications system comprised of at least two mobile phones that are able to work outside of regular mobile phone tower range due thanks to the Serval App and Serval Mesh.
-
-
-
 * [VSCodium](https://github.com/VSCodium/vscodium/)
 	* This is not a fork. This is a repository of scripts to automatically build Microsoft's vscode repository into freely-licensed binaries with a community-driven default configuration.
 * [ungoogled-chromium](https://github.com/Eloston/ungoogled-chromium)
 	* ungoogled-chromium is Google Chromium, sans dependency on Google web services. It also features some tweaks to enhance privacy, control, and transparency (almost all of which require manual activation or enabling).
-* [Attacks on applications of k-anonymity for password retrieval - Jack Cable](https://cablej.io/blog/k-anonymity/)
+
 
 
 
@@ -556,6 +553,13 @@
 ### <a name="anonymity"></a>Anonymity
 * **Articles**	
 	* [Opting Out Like A Boss - The OSINT Way (Part 1) - learnallthethings.net](https://www.learnallthethings.net/blog/2018/1/23/opting-out-like-a-boss-the-osint-way)
+
+
+
+
+
+
+
 
 
 

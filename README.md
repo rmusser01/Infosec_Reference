@@ -26,6 +26,7 @@ An Information Security Reference That Doesn't Suck
 
 * [Pre-ATT&CK](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/ATT%26CK-Stuff/Pre-ATT%26CK)
 * [ATT&CK Stuff](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/ATT%26CK-Stuff/ATT%26CK)
+* [Attacking & Securing Active Directory](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Active_Directory.md)
 * [Anonymity/OpSec/Privacy](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/AnonOpSecPrivacy.md)
 * [:beginner: Basic Security Information :beginner:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Basic.md)
 * [BIOS/UEFI/Firmware Attacks/Defense](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/bios_uefi.md)

@@ -34,6 +34,7 @@ An Information Security Reference That Doesn't Suck
 * [:car: Car hacking :car:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Cars.md)
 * [:money_with_wings:Career:money_with_wings:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Career.md)
 * [Cheat Sheets](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Cheats.md)
+* [Cloud](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Cloud.md)
 * [:video\_camera:Conferences/Recordings:video\_camera:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Conferences.md)
 * [:bento:Containers:bento:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Containers.md)
 * [:star:Courses & Training:star:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Courses_Training.md)

@@ -71,6 +71,11 @@
 	* [The Innovation Equation - Safi Bahcall](https://hbr.org/2019/03/the-innovation-equation)
 	* [The story of Totlol](https://web.archive.org/web/20100113220844/http://www.totlol.com/t/story)
 		* Example/reminder of why you don't build your product on someone else's API.
+	* [Benchmarking - Wikipedia](https://en.m.wikipedia.org/wiki/Benchmarking)
+		* Benchmarking is the practice of comparing business processes and performance metrics to industry bests and best practices from other companies. Dimensions typically measured are quality, time and cost. 
+	* [Capability Immaturity Model - Wikipedia](https://en.m.wikipedia.org/wiki/Capability_Immaturity_Model)
+		* Capability Immaturity Model (CIMM) in software engineering is a parody acronym, a semi-serious effort to provide a contrast to the Capability Maturity Model (CMM). The Capability Maturity Model is a five point scale of capability in an organization, ranging from random processes at level 1 to fully defined, managed and optimized processes at level 5. The ability of an organization to carry out its mission on time and within budget is claimed to improve as the CMM level increases.
+	* [Explain Security To Business People - wiki.c2](http://wiki.c2.com/?ExplainSecurityToBusinessPeople)
 * **Career Growth/Progression**<a name="growth"></a>
 	* [How Developers Stop Learning: Rise of the Expert Beginner - Erik Dietrich](https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/)
 	* [Your Job Title of Tomorrow: Efficiencer - Erik Dietrich](https://daedtech.com/your-job-title-of-tomorrow-efficiencer/)
@@ -182,6 +187,8 @@
 	* [Successful Infosec Consulting: Lessons from Three Decades in The Field - Ted Demopoulos](https://www.sans.org/webcasts/successful-infosec-consulting-lessons-decades-field-111890)
 	* [Managing Client Relationships as an Investment Banker, Lawyer or Consultant - Jim Donovan(2015)](https://www.youtube.com/watch?v=z8kqCIxXTEw)
 		* Goldman Sachs managing director and Law School adjunct professor Jim Donovan shares his insights on the skills necessary to manage and cultivate client relationships. Donovan is responsible for advising many of the largest corporate and individual clients of Goldman Sachs. (University of Virginia School of Law, Nov. 6, 2015)
+* **Culture**
+	* [How to Discourage Secretive Behavior From Members of Your Family/Team - kletische.com](https://kletische.com/discourage-secretive-behavior/)
 * **Difficult Conversations**<a name="difficult"></a>
 	* [Our 6 Must Reads for Cutting Through Conflict and Tough Conversations - firstround.com](https://firstround.com/review/our-6-must-reads-for-cutting-through-conflict-and-tough-conversations/)
 	* [7 Tips for Difficult Conversations - Daisy Wademan Dowling(HBR)](https://hbr.org/2009/03/7-tips-for-difficult-conversat)
@@ -191,6 +198,7 @@
 		* [Difficult Conversations How to Discuss What Matters Most By Douglas Stone, Bruce Patton and Sheila Heen](https://www.penguinrandomhouse.com/books/331191/difficult-conversations-by-douglas-stone-bruce-patton-and-sheila-heen/9780143118442/)
 * **Employee Attrition**<a name="attrition">
 	* [How To Keep Your Best Programmers - Erik Dietrich](https://daedtech.com/how-to-keep-your-best-programmers/)
+	* [The Wetware Crisis: TEPES - Bruce Webster(2008)](http://brucefwebster.com/2008/01/10/the-wetware-crisis-tepes/)
 	* [The Wetware Crisis: the Dead Sea effect - Bruce Webster](http://brucefwebster.com/2008/04/11/the-wetware-crisis-the-dead-sea-effect/)
 	* [The Elves Leave Middle Earth – Sodas Are No Longer Free - Steve Blank](https://steveblank.com/2009/12/21/the-elves-leave-middle-earth-%E2%80%93-soda%E2%80%99s-are-no-longer-free/)
 * **Employer References**
@@ -289,6 +297,16 @@
 		* Sharing for context.
 	* [Reverse interview](https://github.com/viraptor/reverse-interview)
 		* This is a list of questions which may be interesting to a tech job applicant. The points are not ordered and many may not apply to a given position, or work type. It was started as my personal list of questions, which grew over time to include both things I'd like to see more of and red flags which I'd like to avoid. I've also noticed how few questions were asked by people I interviewed and I think those were missed opportunities.
+	* **Interview Questions**
+		* 4 categories of questions: Connect, Culture, Challenges, Close
+			1. How did you come to work here? 
+			2. What do you love most about working here?
+			3. Tell me about the most successful hire and why?
+			4. Who didn't succeed as a new hire and why?
+			5. Tell me about the company's biggest challenge this year and how will this job help to solve it?
+			6. How will I measure my performance so I know I'm having a positive impact?
+			7. If there were some skills or experience that you wish I had, what would they be?
+			8. What are the next steps in the process?
 * **Loyalty**
 	* [Loyalty and Layoffs - David Brady](https://whydavewhy.com/2013/08/16/loyalty-and-layoffs/)
 * **Management**<a name="mgmt"></a>
@@ -393,6 +411,8 @@
 		* This topic gives you step-by-step instructions to make your PowerPoint presentations accessible to people with disabilities.
 * **Post-Mortems**<a name="postmort"></a>
 	* [A List of Post-mortems! - Dan Luu](https://github.com/danluu/post-mortems)
+* **Product Managemnt**
+	* [Product Management 101: The Product Lifecycle - Anand Subramani, Jiaona Zhang(Stanford)](http://learn.stanford.edu/Product-Mngmt-WBN-On-Demand.html)
 * **Project Management**<a name="projm"></a>
 	* [Anatomy of a runaway IT project - Bruce F. Webster](http://brucefwebster.com/2008/06/16/anatomy-of-a-runaway-it-project/)
 	* [Why “Agile” and especially Scrum are terrible - Michael O. Church](https://michaelochurch.wordpress.com/2015/06/)
@@ -454,14 +474,20 @@
 	* **History**
 		* [If I Told You I’d Have to Kill You: The Story Behind “The Secret History of Silicon Valley” - Steve Blank](https://steveblank.com/2009/03/23/if-i-told-you-i%e2%80%99d-have-to-kill-you-the-story-behind-the-secret-history-of-silicon-valley/)
 	* **Shady things**
-		* [Google Forfeits $500 Million Generated by Online Ads & Prescription Drug Sales by Canadian Online Pharmacies - US Department of Justice(2011)](https://www.justice.gov/opa/pr/google-forfeits-500-million-generated-online-ads-prescription-drug-sales-canadian-online)
-		* [How Google Protected Andy Rubin, the ‘Father of Android’ - Daisuke Wakabayashi and Katie Benner(NYT)](https://www.nytimes.com/2018/10/25/technology/google-sexual-harassment-andy-rubin.html)
-		* [Google Urged the U.S. to Limit Protection For Activist Workers - Josh Eidelson, Hassan Kanu, Mark Bergen](https://www.bloomberg.com/news/articles/2019-01-24/google-urged-the-u-s-to-limit-protection-for-activist-workers)
-			* While Google publicly supported employees who protested company policies, it quietly asked the government to narrow the right to organize over work email
-		* [Three Years of Misery Inside Google, the Happiest Company in Tech - Nitasha Tiku](https://www.wired.com/story/inside-google-three-years-misery-happiest-company-tech/)
-		* [When Elon Musk Tried to Destroy a Tesla Whistleblower - Matt Robinson, Zeke Faux](https://www.bloomberg.com/news/features/2019-03-13/when-elon-musk-tried-to-destroy-tesla-whistleblower-martin-tripp)
-		* [Uber Criminal Probe Shines Light on Vanishing Message System - Joel Rosenblatt](https://www.bloomberg.com/news/articles/2017-11-28/waymo-trial-delayed-again-with-sharp-words-for-uber-from-judge)
-		* [Inside The Culture Of Sexism At Riot Games - Cecilia D'Anastasio](https://kotaku.com/inside-the-culture-of-sexism-at-riot-games-1828165483)
+			* [Amazon Scooped Up Data From Its Own Sellers to Launch Competing Products - Angela Owens(2020)](https://www.wsj.com/amp/articles/amazon-scooped-up-data-from-its-own-sellers-to-launch-competing-products-11587650015)
+			* [Amazon Met With Startups About Investing, Then Launched Competing Products - Dana Mattioloi, Cara Lombardo(2020)](https://www.wsj.com/articles/amazon-tech-startup-echo-bezos-alexa-investment-fund-11595520249)
+			* [What Does It Mean When Apple “Sherlocks” an App? - Justin Pot(2017)](https://www.google.com/amp/s/www.howtogeek.com/297651/what-does-it-mean-when-a-company-sherlocks-an-app)
+			* [Halloween documents - Wikipedia](https://en.m.wikipedia.org/wiki/Halloween_documents)
+				* The Halloween documents comprise a series of confidential Microsoft memoranda on potential strategies relating to free software, open-source software, and to Linux in particular, and a series of media responses to these memoranda. Both the leaked documents and the responses were published by Eric S. Raymond in 1998.
+			* [The IRS Decided to Get Tough Against Microsoft. Microsoft Got Tougher. - ProPublica(2020)](https://www.propublica.org/article/the-irs-decided-to-get-tough-against-microsoft-microsoft-got-tougher)
+			* [Google Forfeits $500 Million Generated by Online Ads & Prescription Drug Sales by Canadian Online Pharmacies - US Department of Justice(2011)](https://www.justice.gov/opa/pr/google-forfeits-500-million-generated-online-ads-prescription-drug-sales-canadian-online)
+			* [How Google Protected Andy Rubin, the ‘Father of Android’ - Daisuke Wakabayashi and Katie Benner(NYT)](https://www.nytimes.com/2018/10/25/technology/google-sexual-harassment-andy-rubin.html)
+			* [Google Urged the U.S. to Limit Protection For Activist Workers - Josh Eidelson, Hassan Kanu, Mark Bergen](https://www.bloomberg.com/news/articles/2019-01-24/google-urged-the-u-s-to-limit-protection-for-activist-workers)
+				* While Google publicly supported employees who protested company policies, it quietly asked the government to narrow the right to organize over work email
+			* [Three Years of Misery Inside Google, the Happiest Company in Tech - Nitasha Tiku](https://www.wired.com/story/inside-google-three-years-misery-happiest-company-tech/)
+			* [When Elon Musk Tried to Destroy a Tesla Whistleblower - Matt Robinson, Zeke Faux](https://www.bloomberg.com/news/features/2019-03-13/when-elon-musk-tried-to-destroy-tesla-whistleblower-martin-tripp)
+			* [Uber Criminal Probe Shines Light on Vanishing Message System - Joel Rosenblatt](https://www.bloomberg.com/news/articles/2017-11-28/waymo-trial-delayed-again-with-sharp-words-for-uber-from-judge)
+			* [Inside The Culture Of Sexism At Riot Games - Cecilia D'Anastasio](https://kotaku.com/inside-the-culture-of-sexism-at-riot-games-1828165483)
 	* **Stack Ranking**
 		* [Vitality curve - Wikipedia](https://en.wikipedia.org/wiki/Vitality_curve)
 		* [How stack ranking corrupts culture, at Uber and Beyond - Rob Davies(Perdoo)](https://www.perdoo.com/blog/stack-ranking/)
@@ -477,6 +503,5 @@
 	* **Other**
 		* [Attrition.org](http://attrition.org/attrition/)
 			* Attrition.org (http://attrition.org/) is a computer security web site dedicated to the collection, dissemination and distribution of information about the security industry for anyone interested in the subject. They maintain one of the only open and honest grim look at the industry, reminding everyone that we must strive to be better than we have been historically. The crusade to expose industry frauds and inform the public about incorrect information in computer security articles is a primary goal of the site. Previously, Attrition.org maintained the largest catalogs of security advisories, text files, and humorous image galleries. They are also known for maintaining the largest mirror of Web site defacements and the creation of the Data Loss Database (Open Source), which eventually became DatalossDB (http://datalossdb.org/).
-
-
-
+* **Other**
+	* [Microservices - KRAZAM](https://www.youtube.com/watch?v=y8OnoxKotPQ&app=desktop)

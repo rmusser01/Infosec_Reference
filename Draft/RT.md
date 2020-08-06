@@ -71,6 +71,7 @@
 - [Pen Testing X](#unusual)
 	- [AIX](#aix)
 	- [Embedded](#embedded)
+	- [Faxes, Printers, Other](#faxesprint)
 	- [MainFrames](#main)
 	- [SCADA/PLCs](#scada)
 	- [Virtual Appliances](#va)
@@ -938,7 +939,8 @@
 	* [StarKiller](https://github.com/BC-SECURITY/Starkiller)
 		* Starkiller is a Frontend for Powershell Empire. It is an Electron application written in VueJS.
 		* [An Introduction to Starkiller - CX01N](https://www.bc-security.org/post/an-introduction-to-starkiller)
-
+	* [PrintDemon](https://github.com/BC-SECURITY/Invoke-PrintDemon)
+		* This is an PowerShell Empire launcher PoC using PrintDemon and Faxhell. The module has the Faxhell dll already embedded which levages CVE-2020-1048 for privilege escalation. The vulnerability allows an unprivileged user to gain system-level privileges and is based on @ionescu007 PoC.
 
 
 
@@ -1297,7 +1299,7 @@
 		* [Mark-of-the-Web from a red team's perspective - Stan Hegt](https://outflank.nl/blog/2020/03/30/mark-of-the-web-from-a-red-teams-perspective/)
 	* **Tools**
 		* [DNSlivery](https://github.com/no0be/DNSlivery)
-		* Easy files and payloads delivery over DNS.
+			* Easy files and payloads delivery over DNS.
 		* [go-deliver](https://github.com/0x09AL/go-deliver)
 			* Go-deliver is a payload delivery tool coded in Go.
 		* [Pwndrop](https://github.com/kgretzky/pwndrop)
@@ -1306,29 +1308,70 @@
 		* [Satellite](https://github.com/t94j0/satellite)
 			* Satellite is an web payload hosting service which filters requests to ensure the correct target is getting a payload. This can also be a useful service for hosting files that should be only accessed in very specific circumstances.
 			* [Blogpost](https://posts.specterops.io/satellite-a-payload-and-proxy-service-for-red-team-operations-aa4500d3d970)
+	* **File smuggling**<a name="fsm"></a>
+		* **Articles/Blogposts/Writeups**
+			* [Generic bypass of next-gen intrusion / threat / breach detection systems - Zoltan Balazs(2015)](https://www.mrg-effitas.com/research/generic-bypass-of-next-gen-intrusion-threat-breach-detection-systems/)
+			* [HTML smuggling explained - Stan Hegt(2018)](https://outflank.nl/blog/2018/08/14/html-smuggling-explained/)
+			* [Smuggling HTA files in Internet Explorer/Edge - Richard Warren(2017)](https://www.nccgroup.com/us/about-us/newsroom-and-events/blog/2017/august/smuggling-hta-files-in-internet-exploreredge/)
+			* [File Smuggling with HTML and JavaScript - @spottheplanet](https://ired.team/offensive-security/defense-evasion/file-smuggling-with-html-and-javascript)
+			* [Strange Bits: HTML Smuggling and GitHub Hosted Malware - Karsten Hahn(2019)](https://www.gdatasoftware.com/blog/2019/05/31695-strange-bits-smuggling-malware-github)
+		* **Tools**	
+			* [IronSquirrel](https://github.com/MRGEffitas/Ironsquirrel)
+				* https://github.com/MRGEffitas/Ironsquirrel
+			* [EmbedInHTML](https://github.com/Arno0x/EmbedInHTML)
+				* What this tool does is taking a file (any type of file), encrypt it, and embed it into an HTML file as resource, along with an automatic download routine simulating a user clicking on the embedded ressource. Then, when the user browses the HTML file, the embedded file is decrypted on the fly, saved in a temporary folder, and the file is then presented to the user as if it was being downloaded from the remote site. Depending on the user's browser and the file type presented, the file can be automatically opened by the browser.
 * **Keying**<a name="keying"></a>
-	* **Articles/Blogposts/Writeups**
-		* [Context-keyed Payload Encoding](http://uninformed.org/?v=all&a=42&t=sumry)
-			* A common goal of payload encoders is to evade a third-party detection mechanism which is actively observing attack traffic somewhere along the route from an attacker to their target, filtering on commonly used payload instructions. The use of a payload encoder may be easily detected and blocked as well as opening up the opportunity for the payload to be decoded for further analysis. Even so-called keyed encoders utilize easily observable, recoverable, or guessable key values in their encoding algorithm, thus making decoding on-the-fly trivial once the encoding algorithm is identified. It is feasible that an active observer may make use of the inherent functionality of the decoder stub to decode the payload of a suspected exploit in order to inspect the contents of that payload and make a control decision about the network traffic. This paper presents a new method of keying an encoder which is based entirely on contextual information that is predictable or known about the target by the attacker and constructible or recoverable by the decoder stub when executed at the target. An active observer of the attack traffic however should be unable to decode the payload due to lack of the contextual keying information.
-		* [Veil-Evasion AES Encrypted HTTPKEY Request: Sand-Box Evasion - Alex Rymdeko-Harvey(2015)](https://web.archive.org/web/20161001104512/http://cybersyndicates.com/2015/06/veil-evasion-aes-encrypted-httpkey-request-module/)
-		* [Keying Payloads for Scripting Languages - adapt-and-attack.com(2017)](https://web.archive.org/web/20190319122630/https://adapt-and-attack.com/2017/11/15/keying-payloads-for-scripting-languages/)
-	* **Talks/Presentations/Videos**
-		* [Genetic Malware - Travis Morrow, Josh Pitts(INFILTRATE 2016)](https://vimeo.com/181069184)
-			* [Slides](https://github.com/Genetic-Malware/Ebowla/blob/master/Infiltrate_2016_Morrow_Pitts_Genetic_Malware.pdf)
-		* [Genetic Malware: Designing Payloads for Specific Targets - Travis Morrow, Josh PItts(Ekoparty)](https://www.youtube.com/watch?v=WI8Y24jTTlw)
-			* [Slides](https://github.com/Genetic-Malware/Ebowla/blob/master/Eko_2016_Morrow_Pitts_Master.pdf)
-		* [Protect Your Payloads Modern Keying Techniques - Leo Loobeek(Derbycon2018)](https://www.youtube.com/watch?v=MHc3XP3XC4I)
-			* [Slides](https://www.slideshare.net/LeoLoobeek1/protect-your-payloads-modern-keying-techniques)
-			* Throughout this talk I will present modern keying techniques and demo some tools to help along the way. I will start with showing how easy it is to discover attacker infrastructure or techniques in the payloads we commonly use every day. I will then quickly review how keying helps and the considerations when generating keyed payloads. Throughout the presentation many practical examples of keying techniques will be provided which can be used for typical pentests or full red team operations. Finally I will introduce KeyServer, a new piece to add to your red team infrastructure which handles advanced HTTP and DNS keying. Using unprotected payloads during ops should be a thing of the past. Let’s regain control of our malicious code and make it harder on defenders! This talk is based on the original research of environmental keying by Josh Pitts and Travis Morrow.
-	* **Tools**
-		* [Ebowla](https://github.com/Genetic-Malware/Ebowla)
-			* Framework for Making Environmental Keyed Payloads
-		* [GoGreen](https://github.com/leoloobeek/GoGreen)
-			* Environmental (and http) keying for scripting languages 
-		* [keyring](https://github.com/leoloobeek/keyring)
-			* KeyRing was written to make key derivation functions (keying) more approachable and easier to quickly develop during pentesting and red team operations. Keying is the idea of encrypting your original payload with local and remote resources, so it will only decrypt on the target system or under other situations. This tool was developed to easily provide encryption/decryption code and other techniques for keying. The tool will output raw C#, JScript, or PowerShell that you can then build into your stage0/launcher payloads (e.g. MSBuild.exe). It should be expected that the raw output from these tools can and will be easily signatured. I find value in tools that don't do too much and give you the basics to allow for you to be creative when crafting your payloads.
-		* [Keyserver](https://github.com/leoloobeek/keyserver)
-			* Easily serve HTTP and DNS keys for proper payload protection
+	* **Keying**
+		* **Articles**
+			* [Mesh design pattern: hash-and-decrypt - rdist(2007)](https://web.archive.org/web/20200727221946/https://rdist.root.org/2007/04/09/mesh-design-pattern-hash-and-decrypt/)
+			* [Bradley, hash-and-decrypt, Gauss ... a brief history of armored malware and malicious crypto - Fred Raynal(2012)](https://blog.quarkslab.com/bradley-hash-and-decrypt-gauss-a-brief-history-of-armored-malware-and-malicious-crypto.html)
+			* [Keying Payloads for Scripting Languages - @leoloobeek(2017)](https://adapt-and-attack.com/2017/11/15/keying-payloads-for-scripting-languages/)
+		* **Talks/Presentations/Videos**
+			* [Context-Keyed Payload Encoding: Fighting The Next Generation of IDS - Dimitris Glynos(AthCon2010)](https://www.youtube.com/watch?v=mHMULvGynSU)
+				* [Slides](https://census-labs.com/media/context-keying-slides.pdf)
+				* [Paper](http://census.gr/media/context-keying-whitepaper.pdf)
+				* Exploit payload encoding allows hiding maliciouspayloads from modern Intrusion Detection Systems (IDS). Although metamorphic and polymorphic encoding allow such payloads to be hidden from signature-based and anomaly-based IDS,these techniques fall short when the payload is being examined by IDS that can trace the execution of malicious code. Context-keyed encodingis a technique that allows the attacker to encrypt the malicious payload in such a way, that it canonly be executed in an environment (context) withspecific characteristics. By selecting an environment characteristic that will not be present during the IDS trace (but will be present on the target host), the attacker may evade detection by advanced IDS. This paper focuses on the current research in context-keyed payload encoding and proposes a novel encoder that surpasses many of the limitations found in its predecessors.
+			* [Advanced Payload Strategies: “What is new, what works and what is hoax?”](https://www.troopers.de/events/troopers09/220_advanced_payload_strategies_what_is_new_what_works_and_what_is_hoax/)
+				* This talk focuses on the shellcode perspective and it’s evolution. From the simplest {shell}code to the polymorphism to bypass filters and I{D|P}S (which has lots of new ideas, like application-specific decoders, decoders based on architecture-instructions, and many others), passing through syscall proxying and injection, this talk will explain how it works and how effective they are against the new evolving technologies like network code emulation, with live demonstrations. There is long time since the first paper was released about shellcoding. Most of modern text just tries to explain the assembly structure and many new ideas have just been released as code, never been detailed or explained. The talk will try to fix this gap, also showing some new ideas and considering different architectures.
+			* [Genetic Malware: Designing Payloads for Specific Targets - Travis Morrow, Josh Pitts(2016)](https://www.youtube.com/watch?v=WI8Y24jTTlw)
+				* [Slides](https://raw.githubusercontent.com/Genetic-Malware/Ebowla/master/Eko_2016_Morrow_Pitts_Master.pdf)
+				* [Ebowla @ Infiltrate](https://downloads.immunityinc.com/infiltrate-archives/Genetic_Malware_Travis_Morrow_Josh_Pitts.pdf)
+			* [Protect Your Payloads Modern Keying Techniques - Leo Loobeek(Derybcon2018)](https://www.youtube.com/watch?v=MHc3XP3XC4I)
+				* Our payloads are at risk! Incident responders, threat hunters, and automated software solutions are eager to pick apart your new custom dropper and send you back to square one. One answer to this problem is encrypting your payload with key derivation functions ("keying") which leverages a variety of local and remote resources to build the decryption key. Throughout this talk I will present modern keying techniques and demo some tools to help along the way. I will start with showing how easy it is to discover attacker infrastructure or techniques in the payloads we commonly use every day. I will then quickly review how keying helps and the considerations when generating keyed payloads. Throughout the presentation many practical examples of keying techniques will be provided which can be used for typical pentests or full red team operations. Finally I will introduce KeyServer, a new piece to add to your red team infrastructure which handles advanced HTTP and DNS keying. Using unprotected payloads during ops should be a thing of the past. Let’s regain control of our malicious code and make it harder on defenders! This talk is based on the original research of environmental keying by Josh Pitts and Travis Morrow.
+		* **Papers**
+			* [Environmental Key Generation towards Clueless Agents - J. Riordan and B. Schneier(1998)](https://www.schneier.com/academic/archives/1998/06/environmental_key_ge.html)
+				* In this paper, we introduce a collection of cryptographic key constructions built from environmental data that are resistant to adversarial analysis and deceit. We expound upon their properties and discuss some possible applications; the primary envisioned use of these constructions is in the creation of mobile agents whose analysis does not reveal their exact purpose.
+			* [Strong Cryptography Armoured Computer VirusesForbidding Code Analysis: the bradley virusEric Filiol(2004)](https://hal.inria.fr/inria-00070748/document)
+				* Imagining what the nature of future viral attacks might look like is the key to successfully protecting against them. This paper discusses how cryptography and key management techniques may definitively checkmate antiviral analysis and mechanisms. We present a generic virus, denoted bradley which protects its code with a very secure, ultra-fast symmetric encryption. Since the main drawback of using encryption in that case lies on the existence of the secret key or information about it within the viral code, we show how to bypass this limitation by using suitable key management techniques. Finally, we show that the complexity of the bradley code analysis is at least as high as that of the cryptanalysis of its underlying encryption algorithm.
+			* [Foundations and applications for secure triggers - Ariel Futoransky, Emiliano  Kargieman, Carlos Sarraute, Ariel  Waissbein(2006)](https://dl.acm.org/doi/10.1145/1127345.1127349)
+				* Imagine there is certain content we want to maintain private until some particular event occurs, when we want to have it automatically disclosed. Suppose, furthermore, that we want this done in a (possibly) malicious host. Say the confidential content is a piece of code belonging to a computer program that should remain ciphered and then “be triggered” (i.e., deciphered and executed) when the underlying system satisfies a preselected condition, which must remain secret after code inspection. In this work we present different solutions for problems of this sort, using different “declassification” criteria, based on a primitive we call secure triggers. We establish the notion of secure triggers in the universally composable security framework of Canetti [2001] and introduce several examples. Our examples demonstrate that a new sort of obfuscation is possible. Finally, we motivate its use with applications in realistic scenarios.
+			* [Context-keyed Payload Encoding: Preventing Payload Disclosure via Context - 	druid@caughq.org(2008)](http://www.uninformed.org/?v=9&a=3)
+			* [Malicious cryptography. . . reloaded - Eric Filiol, Fr'ed'eric Raynal(CanSecWest2008)](https://cansecwest.com/csw08/csw08-raynal.pdf)
+			* [Context-keyed Payload Encoding:Fighting the Next Generation of IDS - Dimitrios A. Glynos(2010)](http://census.gr/media/context-keying-whitepaper.pdf)
+			* [Impeding Automated Malware Analysis with Environment-sensitive Malware - Chengyu Song, Paul Royal, Wenke Lee(2012)](https://www.usenix.org/conference/hotsec12/workshop-program/presentation/song)
+				* To solve the scalability problem introduced by the exponential growth of malware, numerous automated malware analysis techniques have been developed. Unfortunately, all of these approaches make previously unaddressed assumptions that manifest as weaknesses to the tenability of the automated malware analysis process. To highlight this concern, we developed two obfuscation techniques that make the successful execution of a malware sample dependent on the unique properties of the original host it infects. To reinforce the potential for malware authors to leverage this type of analysis resistance, we discuss the Flashback botnet’s use of a similar technique to prevent the automated analysis of its samples.
+			* [Sleeping Your Way out of theSandbox - Hassan  Mourad(2015)](https://www.sans.org/reading-room/whitepapers/malicious/sleeping-sandbox-35797)
+				* In recent years,the security landscape has witnessed the rise of a new breed of malware, Advanced  Persistence  Threat,  or  APT  for  short.  With  all  traditional  security  solutions failing  to  address  this  new  threat,  a  demand  was  created  for  new  solutions  that  are capable of addressing the advanced capabilities of APT. One of the offeredsolutions was file-based  sandboxes,asolution  that  dynamically  analyzes  files  and  judgestheir  threat levelsbased  on  their  behavior  in  an  emulated/virtual  environment.  But  security  is  a  cat and mouse game, and malware authors are always trying to detect/bypass such measures. Some of the common techniques used by malware for sandbox evasionwill be discussed in  this  paper. This  paperwill  also  analyze  how  to  turn somecountermeasuresused  by sandboxes against it. Finally, itwill introduce some new ideas for sandbox evasion along with recommendationsto address them.
+			* [Hot Knives Through Butter: Evading File-based Sandboxes - Abhishek Singh, Zheng Bu(2014)](https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf)
+		* **Tools**
+			* **Metasploit**
+				* [Hostname-based Context Keyed Payload Encoder - Metasploit Module](https://github.com/rapid7/metasploit-framework/blob/master//modules/encoders/x64/xor_context.rb)
+					* 'Context-Keyed Payload Encoder based on hostname and x64 XOR encoder.'	
+			* [EBOWLA](https://github.com/Genetic-Malware/Ebowla)
+				* Framework for Making Environmental Keyed Payloads
+			* [keyring](https://github.com/leoloobeek/keyring)
+				* KeyRing was written to make key derivation functions (keying) more approachable and easier to quickly develop during pentesting and red team operations. Keying is the idea of encrypting your original payload with local and remote resources, so it will only decrypt on the target system or under other situations.
+			* [satellite](https://github.com/t94j0/satellite)
+				* [Satellite: A Payload and Proxy Service for Red Team Operations - Max Harley](https://posts.specterops.io/satellite-a-payload-and-proxy-service-for-red-team-operations-aa4500d3d970)
+				* Satellite is an web payload hosting service which filters requests to ensure the correct target is getting a payload. This can also be a useful service for hosting files that should be only accessed in very specific circumstances.
+			* [GoGreen](https://github.com/leoloobeek/GoGreen)
+				* This project was created to bring environmental (and HTTP) keying to scripting languages. As its common place to use PowerShell/JScript/VBScript as an initial vector of code execution, as a result of phishing or lateral movement, I see value of the techniques for these languages.
+			* [keyserver](keyserver)
+				* Easily serve HTTP and DNS keys for proper payload protection
+			* [Keyring](https://github.com/leoloobeek/keyring)
+				* Proper Payload Protection Prevents Poor Performance. KeyRing was written to make key derivation functions (keying) more approachable and easier to quickly develop during pentesting and red team operations. Keying is the idea of encrypting your original payload with local and remote resources, so it will only decrypt on the target system or under other situations.
+			* [Spotter](https://github.com/matterpreter/spotter)
+				* Spotter is a tool to wrap payloads in environmentally-keyed, AES256-encrypted launchers. These keyed launchers provide a way to ensure your payload is running on its intended target, as well as provide a level of protection for the launcher itself.
 * **Storage**<a name="pstorage"></a>
 	* [Cross-Site Phishing - ](https://blog.obscuritylabs.com/merging-web-apps-and-red-teams/)
 	* [Windows Event Log to the Dark Side — Storing Payloads and Configurations - Mustafa(2018)](https://medium.com/@5yx/windows-event-log-to-the-dark-side-storing-payloads-and-configurations-9c8ad92637f2)
@@ -1367,6 +1410,8 @@
 			* A PowerShell script to induce a Blue Screen of Death (BSOD) without admin privileges. Also enumerates Windows crash dump settings. This is a standalone script, it does not depend on any other files.
 		* [PowerDropper](https://github.com/gigajew/PowerDropper)
 			* App that generates PowerShell dropper scripts for .NET executables
+		* [PowerStager](https://github.com/z0noxz/powerstager)
+			* This script creates an executable stager that downloads a selected powershell payload, loads it into memory and executes it using obfuscated EC methods. The script will also encrypt the stager for dynamic signatures and some additional obfuscation. This enables the actual payload to be executed indirectly without the victim downloading it, only by executing the stager. The attacker can then for example implement evasion techniques on the web server, hosting the payload, instead of in the stager itself.
 	* **Python**
 		* [Pupy](https://github.com/n1nj4sec/pupy)
 			* Pupy is an opensource, multi-platform Remote Administration Tool with an embedded Python interpreter. Pupy can load python packages from memory and transparently access remote python objects. Pupy can communicate using different transports and have a bunch of cool features & modules. On Windows, Pupy is a reflective DLL and leaves no traces on disk.
@@ -1488,6 +1533,10 @@
 * **Embedded<a name="embedded"></a>
 	* **General**
 		* [War Stories on Embedded Security Pentesting IoT Building Managers and how to do Better Dr Jared - Derbycon7](https://www.youtube.com/watch?v=bnTWysHT0I4&index=8&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
+* **Faxes, Printers, Other**
+	* **Talks/Presentations/Videos**
+		* [Why You Should Fear Your "mundane" Office Equipment - Daniel Romero, Mario Rivas(Defcon27)](https://www.youtube.com/watch?v=3X-ZnlyGuWc)
+			*  In this talk we walk through the entire research engagement, from initial phases such as threat modelling to understand printer attack surfaces to the development of attack methodologies and fuzzing tools used to target printer-specific protocols and functions. Besides of remarking important vulnerabilities found and their respective CVE’s, proof of concept exploits showing how it is possible to gain full control of printers and all of the data they manage will be presented. This will show how to use enterprise printers as a method of persistence on a network, perhaps to exfiltrate sensitive data or support C2 persistence on Red Team engagements. We also address a number of challenges that researchers can face when performing vulnerability research on devices such as printers and how we used different techniques to overcome these challenges, working with limited to no debugging and triage capabilities. We also present mitigations that printer manufacturers can implement in order to reduce printer attack surfaces and render exploitation more difficult.
 * **IBM Lotus**
 	* [Domi-Owned](https://github.com/coldfusion39/domi-owned)
 		* Domi-Owned is a tool used for compromising IBM/Lotus Domino servers.

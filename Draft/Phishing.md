@@ -16,8 +16,14 @@
 	- [Dynamic Data Exchange(DDE)](#ddde)
 	- [DomainKeys Identified Mail](#ddkim)
 	- [Domain Message Authentication, Reporting, and Conformance - DMARC](#ddmarc)
+	- [Excel File Formats](#eff)
+	- [Extensible Stylesheet Language(XSL/XSL Transformations)](#xlstd)
+	- [Excel Macros](#excelm)
+	- [Excel PowerQuery](#epq)
 	- [Factur-X](#dfx)
-	- [Html Application (HTA)](#hata)	
+	- [Html Application (HTA)](#mhta)
+	- [MS Word Field Codes](#msfcd)
+	* [MS Office File Formats](#msoff)
 	- [Object Linking and Embedding](#dole)
 	- [Office Open XML Format](#doxml)
 	- [Office URI Schemes](#douri)
@@ -44,6 +50,7 @@
 	- [OLE+LNK / Embedded Objects](#olelnk)
 	- [PDF](#pdf)
 	- [.SettingContent-ms](#scms)
+	- [SYLK](#sylk)
 	- [UNC](#unc)	
 - [Tools](#tools)
 - [Microsoft Outlook/Exchange Stuff/Office 365](#msoutlook)
@@ -77,7 +84,9 @@
 	- [subdDoc](#msubdoc)
 	- [Temporary File Drop](#tnf)
 	- [Word Fields](#mwf)
+- [OpenOffice/LibreOffice](#ooffice)
 - [Setting up a Server](#settingup)
+- [Local Phishing](#localphish)
 ------------------------------------------------------
 
 To Do:
@@ -128,18 +137,19 @@ To Do:
 	* [Hiding in Plain Sight - Obfuscation Techniques in Phishing Attacks - ProofPoint](https://www.proofpoint.com/sites/default/files/proofpoint-obfuscation-techniques-phishing-attacks-threat-insight-en-v1.pdf)
 	* [Code Obfuscation `10**2+(2*a+3)%2` - Gaetan Ferry(JSecIn 2018)](https://www.synacktiv.com/ressources/jsecin_code_obfu.pdf)
 	* [Spear-phishing campaign tricks users to transfer money (TTPs & IOC) - readteam.pl(2020)](https://blog.redteam.pl/2020/06/spear-phishing-muhammad-appleseed1-mail-ru.html)
+	* [An Approach to Bypassing Mail Filters - Will Pearce(2018)](https://silentbreaksecurity.com/bypassing-mail-filters/)
 	* [Low-tech EDR bypass - dumpco.re(2020)](http://dumpco.re/blog/low-tech-edr-bypass)
 		* "TL;DR: I designed a piece of super simple malware/implant that evaded everything that I threw against it."
 	* **Abusing 3rd Party Service Providers**<a name="3rdparty"></a>
 		* [Abusing Misconfigured Cloud Email Providers for Enhanced Phishing Campaigns - und3rf10w.blogspot](https://und3rf10w.blogspot.com/2017/07/abusing-misconfigured-cloud-email.html)
 		* [Next Gen Phishing - Leveraging Azure Information Protection - Oddvar Moe](https://www.trustedsec.com/2019/04/next-gen-phishing-leveraging-azure-information-protection/)
-			* In this blog post, I will go over how to use Azure Information Protection (AIP) to improve phishing campaigns from the perspective of an attacker. The idea came during an engagement where I was having trouble getting phishing emails into usersâ€™ inboxes without being caught by a sandbox on the way. During this engagement, it struck me like a bolt of lightning that I could use AIP (also known as Rights Management Service) to protect the attachments and even the email so that only the designated recipient could open it. That way, it would not matter if the sandbox got the file since it will not be possible for it to read the contents.
+			* In this blog post, I will go over how to use Azure Information Protection (AIP) to improve phishing campaigns from the perspective of an attacker. The idea came during an engagement where I was having trouble getting phishing emails into usersÃ¢â‚¬â„¢ inboxes without being caught by a sandbox on the way. During this engagement, it struck me like a bolt of lightning that I could use AIP (also known as Rights Management Service) to protect the attachments and even the email so that only the designated recipient could open it. That way, it would not matter if the sandbox got the file since it will not be possible for it to read the contents.
 		* [Using SharePoint as a Phishing Platform - David Cash(2020)](https://research.nccgroup.com/2020/05/14/using-sharepoint-as-a-phishing-platform/)
 	* **Campaign Writeups**
 		* [Guccifer Rising? Months-Long Phishing Campaign on ProtonMail Targets Dozens of Russia-Focused Journalists and NGOs - Bellingcat](https://www.bellingcat.com/news/uk-and-europe/2019/08/10/guccifer-rising-months-long-phishing-campaign-on-protonmail-targets-dozens-of-russia-focused-journalists-and-ngos/)
 * **Papers**<a name="papers"></a>
 	* [Tab Napping - Phishing](http://www.exploit-db.com/papers/13950/)
-	* [Skeleton in the closet. MS Office vulnerability you didnÃ¢â‚¬â„¢t know about](https://embedi.com/blog/skeleton-closet-ms-office-vulnerability-you-didnt-know-about)
+	* [Skeleton in the closet. MS Office vulnerability you didnÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢t know about](https://embedi.com/blog/skeleton-closet-ms-office-vulnerability-you-didnt-know-about)
 		* Microsoft Equation Editor Exploit writeup
 	* [MetaPhish Paper](https://www.blackhat.com/presentations/bh-usa-09/SMITH_VAL/BHUSA09-Smith-MetaPhish-PAPER.pdf)
 	* [MetaPhish - Defcon17](https://www.defcon.org/images/defcon-17/dc-17-presentations/Valsmith/defcon-17-valsmith-metaphish-wp.pdf)
@@ -163,7 +173,7 @@ To Do:
 		* Business Email Compromise (aka CEO fraud) is a rapidly expanding cybercrime in which reported cases jumped 1300% from 2015 to 2016. This financial fraud scheme can target any market segment or organization regardless of size. Thousands of organizations from more than 100 countries have reported losses. The reasons for this surge is simple - it makes money. 
 	* [Defeating The Latest Advances in Script Obfuscation - Mark Mager(Derbycon2016)](https://www.irongeek.com/i.php?page=videos/derbycon6/109-defeating-the-latest-advances-in-script-obfuscation-mark-mager)
 		* This talk will cover some of the most recently seen advanced obfuscation techniques employed by APTs, exploit kits, and other malware authors along with proven methods for circumventing and decoding these techniques. I will then apply these methods to guide the audience through the deobfuscation of a fully obfuscated script. Audience members will walk away with a solid understanding of how common obfuscation techniques are employed in scripting languages along with how they can be defeated.
-	* [Phishing 2020 – Part 1 - hacktheplanet.io](https://hackplanet.io/aiovg_videos/phishing-2020-part-1-2020-01-30/)
+	* [Phishing 2020 â€“ Part 1 - hacktheplanet.io](https://hackplanet.io/aiovg_videos/phishing-2020-part-1-2020-01-30/)
 		* [Part 2](https://hackplanet.io/aiovg_videos/phishing-2020-part-2-2020-02-07/)
 		* [Part 3](https://hackplanet.io/aiovg_videos/phishing-2020-part-3-2020-02-14/)
 	* [You've Got Pwned: Exploiting E-Mail Systems by @securinti #NahamCon2020](https://www.youtube.com/watch?v=cThFNXrBYQU&list=PLKAaMVNxvLmAD0ZVUJ2IGFFC0APFZ5gzy&index=3)
@@ -185,7 +195,7 @@ To Do:
 	* **Articles/Blogposts**
 		* [Internal Phishing Exercise Difficulty Scoring Tool - Cedric Owens(2018)](https://medium.com/red-teaming-with-a-blue-team-mentaility/internal-phishing-exercise-difficulty-scoring-e5a0979116d9)
 		* [Introducing the Phishing Difficulty Calculator: How Hard Are Your Phishing Tests? - Masha Sedova(2018)](https://elevatesecurity.com/blog/introducing-the-phishing-difficulty-calculator-how-hard-are-your-phishing-tests/)
-		* [37+ Stunningly Scary Phishing Statistics – An Ever-Growing Threat - hostingtribunal.com(2020)](https://hostingtribunal.com/blog/phishing-statistics/)
+		* [37+ Stunningly Scary Phishing Statistics â€“ An Ever-Growing Threat - hostingtribunal.com(2020)](https://hostingtribunal.com/blog/phishing-statistics/)
 	* **Talks & Presentations**
 	* **Tools**
 		* [PhishDifficultyScorer](https://github.com/cedowens/PhishDifficultyScorer)
@@ -193,10 +203,10 @@ To Do:
 * **Phishing Pre-texts**<a name="pretxt"></a>
 	* **Articles/Blogposts**
 		* [This Phish Uses DocuSign to Slip Past Symantec Gateway and Target Email Credentials - Tej Tulachan(2019)](https://cofense.com/phish-uses-docusign-slip-past-symantec-gateway-target-email-credentials/)
-		* [9 Things I’ve Learned Writing Phishing Emails - Craig Hays(2019)](https://craighays.com/9-things-ive-learned-writing-phishing-emails/)
+		* [9 Things Iâ€™ve Learned Writing Phishing Emails - Craig Hays(2019)](https://craighays.com/9-things-ive-learned-writing-phishing-emails/)
 	* **Talks & Presentations**
 		* [Phishy Little Liars - Pretexts That Kill (Alethe Denis(BSidesSF2020)](https://www.youtube.com/watch?v=JFAuHEOc77M&list=PLbZzXF2qC3RvlcHIxrqrsN1XhwHX8SQ-g)
-			* The 'IT Guy' is the Nigerian Prince of Pretexts. As bad actors begin to use more specialized pretexts, so too should Pentesters use more specialized, custom pretexts during assessments. Learn to make custom pretexts that fly under the radar and wonâ€™t raise any red flags using target specific data.
+			* The 'IT Guy' is the Nigerian Prince of Pretexts. As bad actors begin to use more specialized pretexts, so too should Pentesters use more specialized, custom pretexts during assessments. Learn to make custom pretexts that fly under the radar and wonÃ¢â‚¬â„¢t raise any red flags using target specific data.
 		* [Phishing Pretexts](https://github.com/L4bF0x/PhishingPretexts)
 			* A library of pretexts to use on offensive phishing engagements. Orginially presented at Layer8 by @L4bF0x and @RizzyRong.
 			* [Video Presentation](https://www.youtube.com/watch?v=D21E_2sXqmo)
@@ -215,12 +225,12 @@ To Do:
 * **Homoglyphs/Punicode/Unicode**<a name="puni"></a>
 	* **101**
 		* [IDN homograph attack - Wikipedia](https://en.wikipedia.org/wiki/IDN_homograph_attack)
-			* "The internationalized domain name (IDN) homograph attack is a way a malicious party may deceive computer users about what remote system they are communicating with, by exploiting the fact that many different characters look alike (i.e., they are homographs, hence the term for the attack, although technically homoglyph is the more accurate term for different characters that look alike). For example, a regular user of example.com may be lured to click a link where the Latin character "a" is replaced with the Cyrillic character "а"."
+			* "The internationalized domain name (IDN) homograph attack is a way a malicious party may deceive computer users about what remote system they are communicating with, by exploiting the fact that many different characters look alike (i.e., they are homographs, hence the term for the attack, although technically homoglyph is the more accurate term for different characters that look alike). For example, a regular user of example.com may be lured to click a link where the Latin character "a" is replaced with the Cyrillic character "Ð°"."
 	* **Articles/Blogposts**
-		* [Olc: Ruin someone’s day with homoglyphs - Teamwork Engineering]](https://engineroom.teamwork.com/olc-ruin-someones-day-with-homoglyphs-b14e9a1a05a4?gi=81bb0f02b356)
+		* [Olc: Ruin someoneâ€™s day with homoglyphs - Teamwork Engineering]](https://engineroom.teamwork.com/olc-ruin-someones-day-with-homoglyphs-b14e9a1a05a4?gi=81bb0f02b356)
 		* [Out of Character: Use of Punycode and Homoglyph Attacks to Obfuscate URLs for Phishing - Adrian Crenshaw()](https://www.irongeek.com/i.php?page=security/out-of-character-use-of-punycode-and-homoglyph-attacks-to-obfuscate-urls-for-phishing)
 		* [Domain hacks with unusual Unicode characters - @edent(2018)](https://shkspr.mobi/blog/2018/11/domain-hacks-with-unusual-unicode-characters/)
-		* [É¢oogle.news is not google.news: POC For Google Phishing with SSL - Avi Lumelsky(2020)](https://medium.com/@avi_59283/poc-for-google-phishing-in-10-minutes-%C9%A2oogletranslate-com-dcd0d2c32d91)
+		* [Ã‰Â¢oogle.news is not google.news: POC For Google Phishing with SSL - Avi Lumelsky(2020)](https://medium.com/@avi_59283/poc-for-google-phishing-in-10-minutes-%C9%A2oogletranslate-com-dcd0d2c32d91)
 		* [Out of character: Homograph attacks explained  - Jovi Umawing(2018)](https://blog.malwarebytes.com/101/2017/10/out-of-character-homograph-attacks-explained/)
 		* [Emoji to Zero-Day: Latin Homoglyphs in Domains and Subdomains - Matt Hamilton(2020)](https://www.soluble.ai/blog/public-disclosure-emoji-to-zero-day)
 		* [Homoglyph attack prevention with OCR. - Aaron (Ari) Bornstein(2019)](https://towardsdatascience.com/homoglyph-attack-prevention-with-ocr-a6741ee7c9cd?gi=e0f9221f2806)
@@ -257,9 +267,10 @@ To Do:
 * **Domain Message Authentication, Reporting, and Conformance - DMARC**<a name="ddmarc"></a>
 	* [DMARC - Wikipedia](https://en.wikipedia.org/wiki/DMARC)
 	* [Domain-based Message Authentication, Reporting, and Conformance (DMARC) - RFC7489](https://tools.ietf.org/html/rfc7489)
-* **Excel**
+* **Excel File Formats**<a name="eff"></a>
+	* [Microsoft Office EXCEL97-2007BINARY File Format Specification[`*.xls` (97-2007) format]](https://web.archive.org/web/20200717013620/https://download.microsoft.com/download/1/A/9/1A96F918-793B-4A55-8B36-84113F275ADD/Excel97-2007BinaryFileFormat%28xls%29Specification.pdf)
 	* [Insert an object in your Excel spreadsheet - support.office](https://support.office.com/en-us/article/Insert-an-object-in-your-Excel-spreadsheet-e73867b2-2988-4116-8d85-f5769ea435ba)
-* **Extensible Stylesheet Language(XSL/XSL Transformations)**
+* **Extensible Stylesheet Language(XSL/XSL Transformations)**<a name="xlstd"></a>
 	* [What Is XSLT - G. Ken Holman(2000)](https://www.xml.com/pub/a/2000/08/holman/)
 	* [Hello, World! (XSLT) - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms765388(v=vs.85))
 		* The following example shows a simple but complete XML document transformed by an XSLT style sheet. The source XML document, hello.xml, contains a "Hello, World!" greeting from "An XSLT Programmer".
@@ -269,7 +280,7 @@ To Do:
 * **Excel Macros**<a name="excelm"></a>
 	* [Application.ExecuteExcel4Macro method (Excel) - docs.ms(2019)](https://docs.microsoft.com/en-us/office/vba/api/excel.application.executeexcel4macro)
 	* [Excel 4.0 Macro Functions Reference - Philip Treacy](https://d13ot9o61jdzpp.cloudfront.net/files/Excel%204.0%20Macro%20Functions%20Reference.pdf)
-* **Excel PowerQuery**
+* **Excel PowerQuery**<a name="epq"></a>
 	* [Introduction to Microsoft Power Query for Excel - support.ms](https://support.microsoft.com/en-us/office/introduction-to-microsoft-power-query-for-excel-6e92e2f4-2079-4e1f-bad5-89f6269cd605)
 	* [Power Query - Overview and Learning - support.ms](https://support.microsoft.com/en-us/office/power-query-overview-and-learning-ed614c81-4b00-4291-bd3a-55d80767f81d?ui=en-us&rs=en-us&ad=us)
 * **Factur-X**<a name="dfx"></a>
@@ -278,14 +289,11 @@ To Do:
 		* Factur-X is at the same time a full readable invoice in a PDF A/3 format, containing all information useful for its treatment, especially in case of discrepancy or absence of automatic matching with orders and / or receptions, and a set of invoice data presented in an XML structured file conformant to EN16931 (syntax CII D16B), complete or not, allowing invoice process automation.
 	* [Factur-X Python library - github](https://github.com/invoice-x/factur-x-ng)
 		* Factur-X is a EU standard for embedding XML representations of invoices in PDF files. This library provides an interface for reading, editing and saving the this metadata.
-* **Microsoft HTA**
-	* [Introduction to HTML Applications (HTAs) - docs.ms(2013)](https://web.archive.org/web/20200711161356/https://docs.microsoft.com/en-us/previous-versions//ms536496(v=vs.85))
-	* [HTML Applications Reference - docs.ms(2013)]()
-* **MS Word Field Codes**
+* **MS Word Field Codes**<a name="msfcd"></a>
 	* [Insert, edit, and view fields in Word - support.ms](https://support.microsoft.com/en-us/office/insert-edit-and-view-fields-in-word-c429bbb0-8669-48a7-bd24-bab6ba6b06bb?ui=en-US&rs=en-US&ad=US)
     	* Fields codes are useful as placeholders for data that might change in your document, and you can use them to automate certain aspects of your document. Field codes are inserted for you when you use Word features like page numbers or a table of contents, but you can insert field codes manually for other tasks like performing calculations or filling in document content from a data source.
 	* [List of field codes in Word - support.ms](https://support.microsoft.com/en-us/office/list-of-field-codes-in-word-1ad6d91a-55a7-4a8d-b535-cf7888659a51)
-* **MS Office File Formats**
+* **MS Office File Formats**<a name="msoff"></a>
 	* [File format reference for Word, Excel, and PowerPoint - docs.ms(2020)](https://docs.microsoft.com/en-us/deployoffice/compat/office-file-format-reference)
     	* Supported file formats and their extensions are listed in the following tables for Word, Excel, and PowerPoint.
     * [[MS-CFB]: Compound File Binary File Format - docs.ms(2020)](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-cfb/53989ce4-7b05-4f8d-829b-d08d6148375b)
@@ -300,18 +308,22 @@ To Do:
     * [[MS-XLSX]: Excel (.xlsx) Extensions to the Office Open XML SpreadsheetML File Format - docs.ms(2020)](https://docs.microsoft.com/en-us/openspecs/office_standards/ms-xlsx/2c5dee00-eff2-4b22-92b6-0738acd4475e)
     	* Specifies the Excel (.xlsx) Extensions to the Office Open XML SpreadsheetML File Format, which are extensions to the Office Open XML file formats as described in [ISO/IEC-29500-1]. The extensions are specified using conventions provided by the Office Open XML file formats as described in [ISO/IEC-29500-3].
     * [OpenOffice.org's Documentation of the Microsoft Excel File Format - Daniel Rentz](https://www.openoffice.org/sc/excelfileformat.pdf)
+	* [Office VBA Reference - docs.ms(2019)](https://docs.microsoft.com/en-us/office/vba/api/overview/)
+		* Office Visual Basic for Applications (VBA) is an event-driven programming language that enables you to extend Office applications.
 * **HTA**<a name="hata"></a>
 	* **101**
 		* [HTML Application - Wikipedia](https://en.wikipedia.org/wiki/HTML_Application)
 		* [HTML Applications - docs.ms(2013)](https://docs.microsoft.com/en-us/previous-versions//ms536471(v=vs.85)?redirectedfrom=MSDN)
-			* HTML Applications (HTAs) are full-fledged applications. These applications are trusted and display only the menus, icons, toolbars, and title information that the Web developer creates. In short, HTAs pack all the power of Windows Internet Explorer—its object model, performance, rendering power, protocol support, and channel–download technology—without enforcing the strict security model and user interface of the browser. HTAs can be created using the HTML and Dynamic HTML (DHTML) that you already know.
+			* HTML Applications (HTAs) are full-fledged applications. These applications are trusted and display only the menus, icons, toolbars, and title information that the Web developer creates. In short, HTAs pack all the power of Windows Internet Explorerâ€”its object model, performance, rendering power, protocol support, and channelâ€“download technologyâ€”without enforcing the strict security model and user interface of the browser. HTAs can be created using the HTML and Dynamic HTML (DHTML) that you already know.
 		* [Learn About Scripting for HTML Applications (HTAs) - technet.ms](https://technet.microsoft.com/en-us/scriptcenter/dd742317.aspx)
+	* [Introduction to HTML Applications (HTAs) - docs.ms(2013)](https://web.archive.org/web/20200711161356/https://docs.microsoft.com/en-us/previous-versions//ms536496(v=vs.85))
+	* [HTML Applications Reference - docs.ms(2013)]()
 	* **Articles/Blogposts/Writeups**
 		* [Extreme Makeover: Wrap Your Scripts Up in a GUI Interface - technet.ms](https://technet.microsoft.com/en-us/library/ee692768.aspx)
-	* **Tools**
 * **Object Linking and Embedding**<a name="dole"></a>
 	* [Object Linking and Embedding - Wikipedia](https://en.wikipedia.org/wiki/Object_Linking_and_Embedding)
 	* [OLE - msdn.ms](https://msdn.microsoft.com/en-us/library/df267wkc.aspx)
+	* [OLE Background - docs.ms](https://docs.microsoft.com/en-us/cpp/mfc/ole-background])
 	* [[MS-OLEDS]: Object Linking and Embedding (OLE) Data Structures - msdn.ms](https://msdn.microsoft.com/en-us/library/dd942265.aspx)
 	* [Insert an object in your Excel spreadsheet - support.office](https://support.office.com/en-us/article/Insert-an-object-in-your-Excel-spreadsheet-e73867b2-2988-4116-8d85-f5769ea435ba)
 * **Office Open XML Format**<a name="doxml"></a>
@@ -434,6 +446,8 @@ To Do:
 		* otu-plz is an open-source phishing campaign toolkit that makes setting up phishing infrastructure, sending emails with one-time use tokens, and evading blue teams a breeze. It also stores all information within a database to keep track of clicks and other data.
 	* [WifiPhisher](https://github.com/wifiphisher/wifiphisher)
     	* Wifiphisher is a rogue Access Point framework for conducting red team engagements or Wi-Fi security testing. Using Wifiphisher, penetration testers can easily achieve a man-in-the-middle position against wireless clients by performing targeted Wi-Fi association attacks. Wifiphisher can be further used to mount victim-customized web phishing attacks against the connected clients in order to capture credentials (e.g. from third party login pages or WPA/WPA2 Pre-Shared Keys) or infect the victim stations with malwares.
+	* [pompa](https://github.com/m1nl/pompa-docker)
+		* Fully-featured spear-phishing toolkit - sample docker setup (Linux-compatible)
 * **Templates**
 	* [SimplyTemplate](https://github.com/killswitch-GUI/SimplyTemplate)
 		* Phishing Template Generation Made Easy. The goal of this project was to hopefully speed up Phishing Template Gen as well as an easy way to ensure accuracy of your templates. Currently my standard Method of delivering emails is the Spear Phish in Cobalt strike so you will see proper settings for that by defaul
@@ -457,11 +471,14 @@ To Do:
 * **Delivery**<a name="delivery"></a>
 	* **File smuggling**
 		* **Articles/Blogposts/Writeups**
+			* [Generic bypass of next-gen intrusion / threat / breach detection systems - Zoltan Balazs(2015)](https://www.mrg-effitas.com/research/generic-bypass-of-next-gen-intrusion-threat-breach-detection-systems/)
 			* [HTML smuggling explained - Stan Hegt(2018)](https://outflank.nl/blog/2018/08/14/html-smuggling-explained/)
 			* [Smuggling HTA files in Internet Explorer/Edge - Richard Warren(2017)](https://www.nccgroup.com/us/about-us/newsroom-and-events/blog/2017/august/smuggling-hta-files-in-internet-exploreredge/)
 			* [File Smuggling with HTML and JavaScript - @spottheplanet](https://ired.team/offensive-security/defense-evasion/file-smuggling-with-html-and-javascript)
 			* [Strange Bits: HTML Smuggling and GitHub Hosted Malware - Karsten Hahn(2019)](https://www.gdatasoftware.com/blog/2019/05/31695-strange-bits-smuggling-malware-github)
 		* **Tools**	
+			* [IronSquirrel](https://github.com/MRGEffitas/Ironsquirrel)
+				* https://github.com/MRGEffitas/Ironsquirrel
 			* [EmbedInHTML](https://github.com/Arno0x/EmbedInHTML)
 				* What this tool does is taking a file (any type of file), encrypt it, and embed it into an HTML file as resource, along with an automatic download routine simulating a user clicking on the embedded ressource. Then, when the user browses the HTML file, the embedded file is decrypted on the fly, saved in a temporary folder, and the file is then presented to the user as if it was being downloaded from the remote site. Depending on the user's browser and the file type presented, the file can be automatically opened by the browser.
 * **CHM File**<a name="chm"></a>
@@ -506,10 +523,10 @@ To Do:
 		* [ Disabling AMSI in JScript with One Simple Trick - James Forshaw(2018)](https://www.tiraniddo.dev/2018/06/disabling-amsi-in-jscript-with-one.html)
 		* [CSharp, DotNetToJScript, XSL - Rastamouse(2018)](https://rastamouse.me/2018/05/csharp-dotnettojscript-xsl/)
 		* [Executing C# Assemblies from Jscript and wscript with DotNetToJscript - @spottheplanet](https://ired.team/offensive-security/defense-evasion/executing-csharp-assemblies-from-jscript-and-wscript-with-dotnettojscript)
-		* [Advanced TTPs – DotNetToJScript (Part 1) - Jerry Odegaard(2020)](https://whiteoaksecurity.com/blog/2020/1/16/advanced-ttps-dotnettojscript-part-1)
-			* "We’ve covered the basics on what DotNetToJScript is, and why you should still care about it. We’ve also seen that it’s pretty easy to get DotNetToJScript downloaded, built and tested. In the next blog on this topic we’ll modify the UnmanagedPowerShell project’s PowerShellRunner to use with DotNetToJScript. Stay tuned!"
+		* [Advanced TTPs â€“ DotNetToJScript (Part 1) - Jerry Odegaard(2020)](https://whiteoaksecurity.com/blog/2020/1/16/advanced-ttps-dotnettojscript-part-1)
+			* "Weâ€™ve covered the basics on what DotNetToJScript is, and why you should still care about it. Weâ€™ve also seen that itâ€™s pretty easy to get DotNetToJScript downloaded, built and tested. In the next blog on this topic weâ€™ll modify the UnmanagedPowerShell projectâ€™s PowerShellRunner to use with DotNetToJScript. Stay tuned!"
 		* [Part 2](https://whiteoaksecurity.com/blog/2020/1/23/advanced-ttps-dotnettojscript-part-2)
-			* "We’ve made some progress in weaponizing a DotNetToJScript payload. We repurposed the PowerShellRunner component from the UnmanagedPowerShell project to execute PowerShell commands directly from client-side JavaScript. Our payload completely avoids sophisticated PowerShell logging in environments that still have .NET 2.0 installed, which in our experience is most environments. In the next blog, we’ll take a look at further weaponizing DotNetToJScript by manually building a malicious document (maldoc) to execute our payload!"
+			* "Weâ€™ve made some progress in weaponizing a DotNetToJScript payload. We repurposed the PowerShellRunner component from the UnmanagedPowerShell project to execute PowerShell commands directly from client-side JavaScript. Our payload completely avoids sophisticated PowerShell logging in environments that still have .NET 2.0 installed, which in our experience is most environments. In the next blog, weâ€™ll take a look at further weaponizing DotNetToJScript by manually building a malicious document (maldoc) to execute our payload!"
 		* [Part 3](https://whiteoaksecurity.com/blog/2020/2/3/advanced-ttps-dotnettojscript-part-3)
 * **GadgetToJScript**<a name="gtjs"></a>
 	* **101**
@@ -528,6 +545,7 @@ To Do:
 		* [Pentesting and .hta (bypass PowerShell Constrained Language Mode) - Josh Graham(2018)](https://medium.com/tsscyber/pentesting-and-hta-bypassing-powershell-constrained-language-mode-53a42856c997)
 		* [pentesting .hta files](https://github.com/jpginc/pentesting-hta)
 		* [Malicious HTAs - trustedsec](https://www.trustedsec.com/2015/07/malicious-htas/)
+		* [Analysis of an Interesting Malicious HTA File - Amir Niakanlahiji](https://inquest.net/Interesting-Analysis-of-a-Malicious-HTA-File)
 	* **Tools**
 		* [WeirdHTA](https://github.com/felamos/weirdhta)
 			* A python tool to create obfuscated HTA script.
@@ -543,7 +561,7 @@ To Do:
 	* [Phishing: Embedded Internet Explorer - @spottheplanet](https://ired.team/offensive-security/initial-access/phishing-with-ms-office/phishing-embedded-internet-explorer)
 * **PDF**<a name="ppdf"></a>
 	* **Articles/Blogposts/Writeups**
-		* [PDF – NTLM Hashes - pentestlab.blog](https://pentestlab.blog/2018/05/09/pdf-ntlm-hashes/)
+		* [PDF â€“ NTLM Hashes - pentestlab.blog](https://pentestlab.blog/2018/05/09/pdf-ntlm-hashes/)
 	* **Tools**
 		* [JS2PDFInjector](https://github.com/cornerpirate/JS2PDFInjector)
 			* Use this tool to Inject a JavaScript file into a PDF file.
@@ -556,7 +574,9 @@ To Do:
 		* [peepdf](https://github.com/jesparza/peepdf)
 			* peepdf is a Python tool to explore PDF files in order to find out if the file can be harmful or not. The aim of this tool is to provide all the necessary components that a security researcher could need in a PDF analysis without using 3 or 4 tools to make all the tasks. With peepdf it's possible to see all the objects in the document showing the suspicious elements, supports all the most used filters and encodings, it can parse different versions of a file, object streams and encrypted files. With the installation of PyV8 and Pylibemu it provides Javascript and shellcode analysis wrappers too. Apart of this it's able to create new PDF files and to modify/obfuscate existent ones.
 * **.SettingContent-ms**<a name="scms"></a>
+	* **101**
 		* [The Tale of SettingContent-ms Files - Matt Nelson(2018)](https://posts.specterops.io/the-tale-of-settingcontent-ms-files-f1ea253e4d39)
+	* **Articles/Blogposts/Writeups**
 		* [Defending Against SettingContent-MS being used in MS Office and PDF Files - Taeil Goh](https://www.opswat.com/blog/defending-against-setting-content-ms-being-used-in-ms-office-and-pdf-files)
 		* [TA505 Abusing SettingContent-ms within PDF files to Distribute FlawedAmmyy RAT - ProofPoint](https://www.proofpoint.com/us/threat-insight/post/ta505-abusing-settingcontent-ms-within-pdf-files-distribute-flawedammyy-rat)
 		* [Analysis - .SettingContent-ms Exploit - ](https://rinseandrepeatanalysis.blogspot.com/2018/10/analysis-settingcontent-ms-exploit.html)
@@ -568,6 +588,13 @@ To Do:
 			* This is a quick POC for using the Matt Nelson (enigma0x3) technique for generating a malicious .SettingContent-ms extension type for remote code execution. This automates generating an HTA downloader and embeds it in the SettingContent-ms file for you and starts Apache. 
 		* [SettingContent-MS-File-Execution](https://github.com/bvoris/SettingContent-MS-File-Execution)
 			*  SettingContent-MS File Execution vulnerability in Windows 10 PoC
+* **Symbolic Link(Sylk) Files**<a name="sylk"></a>
+	* [SYmbolic Link - Wikipedia](https://en.wikipedia.org/wiki/SYmbolic_LinK_(SYLK))
+	* [sylksum.doc](https://outflank.nl/upload/sylksum.txt)
+	* [Sylk + XLM = Code execution on Office 2011 for Mac - Pieter Ceelen(2018)](https://outflank.nl/blog/2018/10/12/sylk-xlm-code-execution-on-office-2011-for-mac/)
+	* [Abusing the SYLK file format - Stan Hegt(2019)](https://outflank.nl/blog/2019/10/30/abusing-the-sylk-file-format/)
+	* [Abusing XLM Macros in SYLK Files - Patrick Wardle(2019)](https://objective-see.com/blog/blog_0x50.html)
+	* [Phishing: .SLK Excel - @spottheplanet](https://ired.team/offensive-security/initial-access/phishing-with-ms-office/phishing-.slk-excel)
 * **UNC**<a name="uncp"></a>
 	* **Articles/Blogposts/Writeups**
 	* **Tools**
@@ -722,17 +749,20 @@ To Do:
 			* I collect some office vuln recent years.Many samples are malware used in the real world,please study them in virtual machine.Take responsibility yourself if you use them for illegal purposes. Samples should match hash in corresponding paper if mentioned.
 			* [Next Gen Office Malware v2.0 - Greg Linares Dagmar Knechtel - Hushcon17](https://prezi.com/view/eZ3CSNMxPMOfIWEHwTje/)
 			* [Next Gen Office Malware Repo](https://github.com/glinares/OfficeMalware)
+	* **Papers**
+		* [OpenDocument and Open XML security (OpenOffice.org and MS Office 2007) - Philippe Lagadec](http://www.decalage.info/files/JCV07_Lagadec_OpenDocument_OpenXML_v4_decalage.pdf)
+			* Abstract: OpenDocument and Open XML are both new open file formats for office documents. OpenDocument is anISO standard, promoted by OpenOffice.org and Sun StarOffice.Open XML is the new format for Microsoft Office 2007 documents, an ECMA standard. These two formats share the same basic principles: XML files within a ZIP archive, with an open schema, in contrast to good-old proprietary formats (MS Word, Excel, PowerPoint, ...). However, both of them sufferfrom many security issues, similar to previous Office formats: malicious people can still embed and hide malware (Trojanhorses and viruses) thanks to macros, scripts, OLE objects and similar features. This paper shows the security issues with technical details, including XML and ZIP obfuscation techniques that may be used to bypass antiviruses, and describes howto design a filter to get rid of unwanted parts in a safe way
 	* **Inbuilt Functions**
 		* [Variable Object (Word) - msdn.ms](https://msdn.microsoft.com/en-us/VBA/Word-VBA/articles/variable-object-word)
 		* [Using ScriptControl Methods - docs.ms](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-6.0/aa227637(v=vs.60))
 			* The ScriptControl contains methods to execute code, add code and objects to the scripting engine, and reset the scripting engine to its initial state.
 	* **Access**
-		* [Phishing for â€œAccessâ€ - Changing Phishing Tactics Require Closer User and Defender Attention - Steve Borosh](https://medium.com/rvrsh3ll/phishing-for-access-554105b0901e)
+		* [Phishing for Ã¢â‚¬Å“AccessÃ¢â‚¬Â - Changing Phishing Tactics Require Closer User and Defender Attention - Steve Borosh](https://medium.com/rvrsh3ll/phishing-for-access-554105b0901e)
 		* [MAccess - Bypassing Office macro warnings - kaiosec](https://kaiosec.com/blog/maccess.html)
 		* [Changing Phishing Tactics Require Closer User and Defender Attention - nuix.com](https://www.nuix.com/blog/changing-phishing-tactics-require-closer-user-and-defender-attention)
 	* **Excel**
 		* **Articles/Blogposts/Writeups**
-			* [When Scriptlets Attack: Excelâ€™s Alternative to DDE Code Execution - David Wells](https://www.lastline.com/labsblog/when-scriptlets-attack-excels-alternative-to-dde-code-execution/)
+			* [When Scriptlets Attack: ExcelÃ¢â‚¬â„¢s Alternative to DDE Code Execution - David Wells](https://www.lastline.com/labsblog/when-scriptlets-attack-excels-alternative-to-dde-code-execution/)
 			* [Malicious Excel DDE Execution with ML AV Bypass and Persistence - hyperiongray](https://blog.hyperiongray.com/excel-dde-exploitation-and-ml-av-bypass/)
 			* [Insert an object in your Excel spreadsheet - support.office](https://support.office.com/en-us/article/Insert-an-object-in-your-Excel-spreadsheet-e73867b2-2988-4116-8d85-f5769ea435ba)
 		* **Talks & Presentations**
@@ -746,20 +776,23 @@ To Do:
 		* [EXD: An attack surface for Microsoft Office](https://www.fortinet.com/blog/threat-research/exd-an-attack-surface-for-microsoft-office.html)
 			* Fortinet has discovered a potential attack surface for Microsoft office via EXD file. After a malformed or specifically crafted EXD file was placed in an expected location, it could trigger a remote code execution when a document with ActiveX is opened with office applications.
 	* **NTLM Hashes**
-		* [ Microsoft Office - NTLM Hashes via Frameset - pentestlab.blog(2017)](https://pentestlab.blog/2017/12/18/microsoft-office-ntlm-hashes-via-frameset/)
-		* [UNC Path Injection with Microsoft Access - Stephan Borosh](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/unc-path-injection-with-microsoft-access/)
-		* [10 Places to Stick Your UNC Path - Karl Fossan](https://blog.netspi.com/10-places-to-stick-your-unc-path/)
-		* [NTLM Credential Theft via malicious ODT Files - rmdavy.uk(2018)](https://secureyourit.co.uk/wp/2018/05/01/creating-malicious-odt-files/)
-		* [Leaking Windows Creds Externally Via MS Office - Tradecraft Security Weekly #21](https://www.youtube.com/watch?v=40Ume_kbsIE)
-			* In this episode of Tradecraft Security Weekly, Mike Felch discusses with Beau Bullock about the possibilities of using framesets in MS Office documents to send Windows password hashes remotely across the Internet. This technique has the ability to bypass many common security controls so add it to your red team toolboxes.
-		* [WordSteal](https://github.com/0x09AL/WordSteal)
-			* This script will create a POC that will steal NTML hashes from a remote computer. Do not use this for illegal purposes.The author does not keep responsibility for any illegal action you do. Microsoft Word has the ability to include images from remote locations.This is an undocumented feature but was found used by malware creators to include images through http for statistics.We can also include remote files to a SMB server and the victim will authenticate with his logins credentials.
+		* **101**
+		* **Articles/Blogposts/Writeups**
+			* [Microsoft Office - NTLM Hashes via Frameset - pentestlab.blog(2017)](https://pentestlab.blog/2017/12/18/microsoft-office-ntlm-hashes-via-frameset/)
+			* [UNC Path Injection with Microsoft Access - Stephan Borosh](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/unc-path-injection-with-microsoft-access/)
+			* [10 Places to Stick Your UNC Path - Karl Fossan](https://blog.netspi.com/10-places-to-stick-your-unc-path/)
+			* [NTLM Credential Theft via malicious ODT Files - rmdavy.uk(2018)](https://secureyourit.co.uk/wp/2018/05/01/creating-malicious-odt-files/)
+		* **Talks/Presentations/Videos**
+			* [Leaking Windows Creds Externally Via MS Office - Tradecraft Security Weekly #21(2017)](https://www.youtube.com/watch?time_continue=2&v=40Ume_kbsIE&feature=emb_title)
+				* In this episode of Tradecraft Security Weekly, Mike Felch discusses with Beau Bullock about the possibilities of using framesets in MS Office documents to send Windows password hashes remotely across the Internet. This technique has the ability to bypass many common security controls so add it to your red team toolboxes.
+		* **Tools**
+			* [WordSteal](https://github.com/0x09AL/WordSteal)
+				* This script will create a POC that will steal NTML hashes from a remote computer. Do not use this for illegal purposes.The author does not keep responsibility for any illegal action you do. Microsoft Word has the ability to include images from remote locations.This is an undocumented feature but was found used by malware creators to include images through http for statistics.We can also include remote files to a SMB server and the victim will authenticate with his logins credentials.
 	* **PowerPoint**
 		* [Phishing with PowerPoint - BHIS](https://www.blackhillsinfosec.com/phishing-with-powerpoint/)
 		* [PowerPoint and Custom Actions - Sean Wilson](https://cofense.com/powerpoint-and-custom-actions/)
 	* **OSX**
 		* [Sylk + XLM = Code execution on Office 2011 for Mac - Pieter Celeen](https://outflank.nl/blog/2018/10/12/sylk-xlm-code-execution-on-office-2011-for-mac/)
-		* [Phishing: .SLK Excel - @spottheplanet](https://ired.team/offensive-security/initial-access/phishing-with-ms-office/phishing-.slk-excel)
 * **DDE**<a name="gdde"></a>
 	* **101**
 		* [Disable DDEAUTO for Outlook, Word, OneNote, and Excel versions 2010, 2013, 2016](https://gist.github.com/wdormann/732bb88d9b5dd5a66c9f1e1498f31a1b)
@@ -769,7 +802,7 @@ To Do:
 		* [Macro-less Code Exec in MSWord -  Etienne Stalmans, Saif El-Sherei](https://sensepost.com/blog/2017/macro-less-code-exec-in-msword/)
 		* [The Current State of DDE - Office DDE Attacks from an Offensive and Defensive Perspective - @0xdeadbeefJERKY](https://medium.com/@0xdeadbeefJERKY/the-current-state-of-dde-a62fd3277e9)
 		* [ Microsoft Office - DDE Attacks - pentestlab.blog](https://pentestlab.blog/2018/01/16/microsoft-office-dde-attacks/)
-		* [ Microsoft Office Ã¢â‚¬â€œ DDE Attacks - pentestlab.blog](https://pentestlab.blog/2018/01/16/microsoft-office-dde-attacks/)
+		* [ Microsoft Office ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ DDE Attacks - pentestlab.blog](https://pentestlab.blog/2018/01/16/microsoft-office-dde-attacks/)
 		* [Abusing Microsoft Office DDE - SecuritySift](https://www.securitysift.com/abusing-microsoft-office-dde/)
 		* [PowerShell, C-Sharp and DDE The Power Within](https://sensepost.com/blog/2016/powershell-c-sharp-and-dde-the-power-within/)
 			* aka Exploiting MS16-032 via Excel DDE without macros.
@@ -816,10 +849,26 @@ To Do:
 		* [webdav_exec CVE-2017-11882](https://github.com/embedi/CVE-2017-11882)
 		* [Skeleton in the closet. MS Office vulnerability you didn't know about - Embedi](https://embedi.org/blog/skeleton-closet-ms-office-vulnerability-you-didnt-know-about/)
 * **Excel**
+	* **Javascript**
+    	* **101**
+    		* [Fundamental programming concepts with the Excel JavaScript API - docs.ms(2020)](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-core-concepts)
+        		* This article describes how to use the Excel JavaScript API to build add-ins for Excel 2016 or later. It introduces core concepts that are fundamental to using the API and provides guidance for performing specific tasks such as reading or writing to a large range, updating all cells in range, and more.
+	    	* [Excel JavaScript API overview - docs.ms(2020)](https://docs.microsoft.com/en-us/office/dev/add-ins/reference/overview/excel-add-ins-reference-overview)
+	    	* [Work with worksheets using the Excel JavaScript API - docs.ms(2020)](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/excel-add-ins-worksheets)
+    	    	* This article provides code samples that show how to perform common tasks with worksheets using the Excel JavaScript API. 
+        	* [Create custom functions in Excel - docs.ms(2020)](https://docs.microsoft.com/en-us/office/dev/add-ins/excel/custom-functions-overview)
+	        	* Custom functions enable developers to add new functions to Excel by defining those functions in JavaScript as part of an add-in. Users within Excel can access custom functions just as they would any native function in Excel, such as `SUM()`.
+    	* **Talks/Presentations/Videos**
+    		* [End-to-End Walkthrough of Excel JavaScript Add-in Development - Michael Zlatkovsky(2016)](https://channel9.msdn.com/series/officejs/End-to-End-Walkthrough-of-Excel-JavaScript-Add-in-Development)
+    			* In this webcast, I walk through the end-to-end process of building an Office Add-in for Excel:  from launching Visual Studio, to writing a bit of JavaScript code that uses the new Excel 2016 APIs, to adding some basic UI tweaks, to talking through the publishing options, debugging, and more.
+    	* **Tools**
+        	* [Excel-Custom-Functions](https://github.com/OfficeDev/Excel-Custom-Functions)
+	        	* This repository contains the source code used by the Yo Office generator when you create a new custom functions project. You can also use this repository as a sample to base your own custom functions project from if you choose not to use the generator. For more detailed information about custom functions in Excel, see the Custom functions overview article in the Office Add-ins documentation or see the additional resources section of this repository.
+	    	* [SheetJSjs-xlsx](https://github.com/SheetJS/sheetjs)
+	    		* Parser and writer for various spreadsheet formats. Pure-JS cleanroom implementation from official specifications, related documents, and test files. Emphasis on parsing and writing robustness, cross-format feature compatibility with a unified JS representation, and ES3/ES5 browser compatibility back to IE6.
 * **Excel DDE PowerQuery**<a name="gpq"></a>
 	* [The Complete Guide to Power Query - howtoexcel.com](https://www.howtoexcel.org/power-query/the-complete-guide-to-power-query/)
 	* [Exploit Using Microsoft Excel Power Query for Remote DDE Execution Discovered - Doron Attias](https://www.mimecast.com/blog/2019/06/exploit-using-microsoft-excel-power-query-for-remote-dde-execution-discovered/)
-	* [More Excel 4.0 Macro MalSpam Campaigns - Diana Lopera(2020](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/more-excel-4-0-macro-malspam-campaigns/)more-excel-4-0-macro-malspam-campaigns/
 * **Field Codes**<a name="gfield"></a>
 	* [MSWord - Obfuscation with Field Codes - Staaldraad](https://staaldraad.github.io/2017/10/23/msword-field-codes/)
 	* [MS Office In Wonderland - Stan Hegt & Pieter Ceelen(BH Asia2019)](https://i.blackhat.com/asia-19/Thu-March-28/bh-asia-Hegt-MS-Office-in-Wonderland.pdf)
@@ -853,7 +902,7 @@ To Do:
 		* [Multi-Platform Macro Phishing Payloads](https://medium.com/@malcomvetter/multi-platform-macro-phishing-payloads-3b688e8eff68)
 		* [Abusing native Windows functions for shellcode execution - ropgadget](http://ropgadget.com/posts/abusing_win_functions.html)
 		* [Microsoft Office - Payloads in Document Properties - pentestlab.blog](https://pentestlab.blog/2017/12/15/microsoft-office-payloads-in-document-properties/)
-		* [Pesky Old-Style Macro Popups — Advanced Maldoc Techniques - Carrie Roberts(2019)](https://medium.com/walmartlabs/pesky-old-style-macro-popups-advanced-maldoc-techniques-8868ed02d845)
+		* [Pesky Old-Style Macro Popups â€” Advanced Maldoc Techniques - Carrie Roberts(2019)](https://medium.com/walmartlabs/pesky-old-style-macro-popups-advanced-maldoc-techniques-8868ed02d845)
 		* [MAccess: Bypassing Office macro warnings - kaiosec](https://kaiosec.com/blog/maccess.html)
 		* [Powershell Empire Stagers 1: Phishing with an Office Macro and Evading AVs - fzuckerman](https://fzuckerman.wordpress.com/2016/10/06/powershell-empire-stagers-1-phishing-with-an-office-macro-and-evading-avs/)
 		* [Zero2Auto - Initial Stagers - From one Email to a Trojan - Danus(2020)](https://web.archive.org/web/20200628032136/https://0x00sec.org/t/zero2auto-initial-stagers-from-one-email-to-a-trojan/21722)
@@ -863,15 +912,17 @@ To Do:
 			* Document properties in Microsoft office usually contain information related to the document and various other metadata details. However this location can be used to store commands that will execute payloads that are hosted on an SMB or HTTP server.
 		* [VBA RunPE - Breaking Out of Highly Constrained Desktop Environments - Part 1/2 - itm4n(2018)](https://itm4n.github.io/vba-runpe-part1/)
 			* [Part 2](https://itm4n.github.io/vba-runpe-part2/)
+		* [Monster Lurking in Hidden Excel Worksheet - Rodel Mendez(2020)](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/monster-lurking-in-hidden-excel-worksheet/)
+		* [Microsoft Windows LNK Remote Code Execution Vulnerability â€” CVE-2020-1299 - vincss](https://movaxbx.ru/2020/06/26/microsoft-windows-lnk-remote-code-execution-vulnerability-cve-2020-1299/)
 	* **ActiveX**<a name="max"></a>
 		* [Having Fun with ActiveX Controls in Microsoft Word - Marcello Salvati](https://www.blackhillsinfosec.com/having-fun-with-activex-controls-in-microsoft-word/)
 		* [Running Macros via ActiveX Controls - Parvez](https://www.greyhathacker.net/?p=948)
 		* [Alternative Execution: A Macro Saga (part 1) - Jerry Odegaard(2020)](https://whiteoaksecurity.com/blog/2020/3/11/alternative-execution-a-macro-saga-part-1)
-    		* "In this blog post we examined a non-standard Office event trigger to execute VBA macro code by usage of an embedded ActiveX control: InkPicture. Originally the InkPicture.Painted() event handler was used by cyber criminals to evade antivirus prevention of the more common Document_Open() and Workbook_Open() event handlers associated with Microsoft Word and Excel. We’ve repurposed it for demonstration and went further to identify an additional InkPicture event handler that could be used as an alternative: InkPicture.Painting()."
+    		* "In this blog post we examined a non-standard Office event trigger to execute VBA macro code by usage of an embedded ActiveX control: InkPicture. Originally the InkPicture.Painted() event handler was used by cyber criminals to evade antivirus prevention of the more common Document_Open() and Workbook_Open() event handlers associated with Microsoft Word and Excel. Weâ€™ve repurposed it for demonstration and went further to identify an additional InkPicture event handler that could be used as an alternative: InkPicture.Painting()."
 		* [Part 2](https://whiteoaksecurity.com/blog/2020/3/17/alternative-execution-a-macro-saga-part-2)
 			* "In this blog we covered abuse of the Windows Media Player ActiveX control to trigger macro execution at the point in which a maldoc is opened. We identified and implemented reference code for three event handlers that can be used without specifying a valid media file for Windows Media Player to load. These methods of executing malicious VBA code do not depend on the Document_Open() or Workbook_Open() event handlers that are more commonly utilized by malicious actors to obtain code execution."
 		* [Part 3](https://whiteoaksecurity.com/blog/2020/3/26/alternative-execution-a-macro-saga-part-3)
-			* "In this blog we spent the time and energy to craft another maldoc making use of an unconventional automatic execution method: The System Monitor ActiveX control. We also worked through the process I had used initially with both Windows Media Player and System Monitor by making use of the oleviewdotnet tool to enumerate and research the COM classes associated with these controls. Again, we’ve been able to demonstrate executing VBA code that doesn’t depend on Document_Open() or Workbook_Open() event handlers that are common with maldocs to obtain automatic execution on target systems."
+			* "In this blog we spent the time and energy to craft another maldoc making use of an unconventional automatic execution method: The System Monitor ActiveX control. We also worked through the process I had used initially with both Windows Media Player and System Monitor by making use of the oleviewdotnet tool to enumerate and research the COM classes associated with these controls. Again, weâ€™ve been able to demonstrate executing VBA code that doesnâ€™t depend on Document_Open() or Workbook_Open() event handlers that are common with maldocs to obtain automatic execution on target systems."
 	* **Execution**<a name="mex"></a>
 		* [CallByName Function - docs.ms](https://docs.microsoft.com/en-us/office/vba/Language/Reference/User-Interface-Help/callbyname-function)
 		* [CallByName Function - msdn.ms](https://msdn.microsoft.com/en-us/VBA/Language-Reference-VBA/articles/callbyname-function)
@@ -891,15 +942,24 @@ To Do:
 			* [Playing Cat and Mouse: Three Techniques Abused to Avoid Detection - ZLAB-YOROI](https://blog.yoroi.company/research/playing-cat-and-mouse-three-techniques-abused-to-avoid-detection/)
 			* [Phishing template uses fake fonts to decode content and evade detection - ProofPoint(2019)](https://www.proofpoint.com/us/threat-insight/post/phishing-template-uses-fake-fonts-decode-content-and-evade-detection)
 			* [Bypassing Parent Child / Ancestry Detections - @spottheplanet](https://ired.team/offensive-security/initial-access/phishing-with-ms-office/bypassing-malicious-macro-detections-by-defeating-child-parent-process-relationships)
-			* [Dechaining Macros and Evading EDR - Noora Hyvärinen(2019)](https://blog.f-secure.com/dechaining-macros-and-evading-edr/)
+			* [It All Swings Round-- Malicious Macros - SketchyMoose(2015)](https://sketchymoose.blogspot.com/2015/02/it-all-swings-round-malicious-macros.html)
+			* [Dechaining Macros and Evading EDR - Noora HyvÃ¤rinen(2019)](https://blog.f-secure.com/dechaining-macros-and-evading-edr/)
+			* [Yet another update to bypass AMSI in VBA - khr0x40sh (2019)](https://khr0x40sh.wordpress.com/2019/11/19/yet-another-update-to-bypass-amsi-in-vba/)
 			* [Advanced VBA macros: bypassing olevba static analyses with 0 hits - Gabriele Pippi](https://www.certego.net/en/news/advanced-vba-macros/)
+			* [Multi-Stage Email Word Attack Without Macros - Homer Pacag(2018)](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/multi-stage-email-word-attack-without-macros/)
+			* [My VBA Bot: Writing Office Macro FUD encoder and other stuff - Emeric Nasi(2016)](http://blog.sevagas.com/IMG/pdf/my_vba_bot.pdf)
+			* [Malicious Shapes In Office ? Part 1 - Laughing Mantis(2020)](https://medium.com/@laughing_mantis/malicious-shapes-in-office-part-1-8a4efca74358)
+				* [Part 2](https://medium.com/@laughing_mantis/malicious-shapes-in-office-part-2-910375cd05f3)
+			* [New Multi-Stage Word Phishing Attack Infects Users Without Using Macros - Stu Sjouwerman(2020)](https://blog.knowbe4.com/new-multi-stage-word-attack-infects-users-without-using-macros)
+				* Execution chain
+			* [How to REALLY protect your code ? making VBA project unviewable - Ratexcel(2017)](https://ratexcel.wordpress.com/2017/03/22/how-to-really-protect-your-code-making-vba-project-unviewable/)
 		* **Tools**
 			* [spoofing-office-macro](https://github.com/christophetd/spoofing-office-macro)
 				* PoC of a VBA macro spawning a process with a spoofed parent and command line. 
 				* [Blogpost](https://blog.christophetd.fr/building-an-office-macro-to-spoof-process-parent-and-command-line)
 			* [OfficeMacro64](https://github.com/py7hagoras/OfficeMacro64)
 				* This is a 64 bit VBA implementation of Christophe Tafani-Dereeper's original VBA code described in his blog @ https://blog.christophetd.fr/building-an-office-macro-to-spoof-process-parent-and-command-line/
-	* **Excel Specific / 4.0 Macros**<a name="excel"></a>
+	* **Excel Specific/Excel 4.0 Macros**<a name="excel"></a>
 		* **101**
 			* [Working with Excel 4.0 macros - support.ms](https://support.microsoft.com/en-us/office/working-with-excel-4-0-macros-ba8924d4-e157-4bb2-8d76-2c07ff02e0b8?ui=en-us&rs=en-us&ad=us)
 			* [Old school: evil Excel 4.0 macros (XLM) - Stan Hegt(2018)](https://outflank.nl/blog/2018/10/06/old-school-evil-excel-4-0-macros-xlm/)
@@ -912,17 +972,23 @@ To Do:
 			* [Evolution of Excel 4.0 Macro Weaponization - James Haughom and Stefano Ortolani(2020)](https://www.lastline.com/labsblog/evolution-of-excel-4-0-macro-weaponization/)
 			* [Macros and More with SharpShooter v2.0 - MDSec](https://www.mdsec.co.uk/2019/02/macros-and-more-with-sharpshooter-v2-0/)
 			* [XLS -> VBS -> .NET - James Haughom(2020)](https://malwaredisciple.com/part-i-xls-vbs-net/)
-			* [ZLoader 4.0 Macrosheets Evolution - William MacArthur, Amirreza Niakanlahiji, Pedram Amini](https://inquest.net/blog/2020/05/06/ZLoader-4.0-Macrosheets-)
 			* [Extracting "Sneaky" Excel XLM Macros - Amirreza Niakanlahiji, Pedram Amini(2019)](https://inquest.net/blog/2019/01/29/Carving-Sneaky-XLM-Files)
 			* [Getting Sneakier: Hidden Sheets, Data Connections, and XLM Macros - Amirreza Niakanlahiji, Pedram Amini(2020)](https://inquest.net/blog/2020/03/18/Getting-Sneakier-Hidden-Sheets-Data-Connections-and-XLM-Macros)
+			* [ZLoader 4.0 Macrosheets Evolution - William MacArthur, Amirreza Niakanlahiji, Pedram Amini](https://inquest.net/blog/2020/05/06/ZLoader-4.0-Macrosheets-)
 			* [More Excel 4.0 Macro MalSpam Campaigns - Diana Lopera(2020)](https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/more-excel-4-0-macro-malspam-campaigns/)
+			* [Excel 4 Macro Generator (x86/x64) - Bytecod3r(2019)](https://bytecod3r.io/excel-4-macro-generator-x86-x64/)
 			* [Sylk + XLM = Code execution on Office 2011 for Mac - Pieter Ceelen(2018)](https://outflank.nl/blog/2018/10/12/sylk-xlm-code-execution-on-office-2011-for-mac/)
 			* [bypass endpoint with XLM weaponization - 0xsp](https://0xsp.com/offensive/bypass-endpoint-with-xlm-weaponization)
 			* [Excel 4.0 Macro, Old but New! - Hoang Bui(2019)](https://medium.com/@fsx30/excel-4-0-macro-old-but-new-967071106be9)
 			* [FlawedAmmyy RAT & Excel 4.0 Macros - Ryan Campbell](https://security-soup.net/flawedammyy-rat-excel-4-0-macros/)
 			* [Phishing AMSI Bypass - christopherja.rocks(2020)](https://christopherja.rocks/posts/2020/02/phishing-amsi-bypass/)
+			* [Social Engineering Using "Hidden" Macros In Excel - 1d8](https://github.com/1d8/macros)
+			* [JavaScript Coinhive in Excel - Charles Dardaman(2018)](https://charles.dardaman.com/js_coinhive_in_excel)
+			* [Maldoc: Excel 4 Macros in OOXML Format - Didier Stevens(2020)](https://isc.sans.edu/forums/diary/Maldoc+Excel+4+Macros+in+OOXML+Format/25830/)
 		* **Talks/Presentations/Videos**
 			* [Dynamic Analysis of Obfuscated Excel 4 Macros - mattifestation(2020)](https://www.youtube.com/watch?v=7FH6Gzm2dAQ)
+			* [Malware Analysis in Action - Episode 3 - DissectMalware](https://www.youtube.com/watch?v=LA6u90xIp4E)
+				* In this video, I analyze a malicious Excel document containing obfuscated XLM macro. It is part of a campaign that downloads and runs zloader on victims' machines.
 		* **Tools**
 			* [EXCELntDonut](https://github.com/FortyNorthSecurity/EXCELntDonut/)
 				* EXCELntDonut is a XLM (Excel 4.0) macro generator. Start with C# source code (DLL or EXE) and end with a XLM (Excel 4.0) macro that will execute your code in memory. XLM (Excel 4.0) macros can be saved in .XLS files.
@@ -944,7 +1010,7 @@ To Do:
 	* **macOS Specific**<a name="mmosx"></a>
 		* [Escaping the Microsoft Office Sandbox: a faulty regex, allows malicious code to escape and persist](https://objective-see.com/blog/blog_0x35.html)
 		* [Word to Your Mac - analyzing a malicious word document targeting macOS users - Patrick Wardle](https://objective-see.com/blog/blog_0x3A.html)
-		* [New Attack, Old Tricksâ€º analyzing a malicious document with a mac-specific payload - Patrick Wardle](https://objective-see.com/blog/blog_0x17.html)
+		* [New Attack, Old TricksÃ¢â‚¬Âº analyzing a malicious document with a mac-specific payload - Patrick Wardle](https://objective-see.com/blog/blog_0x17.html)
 	* **Remote Template Injection**<a name="mrti"></a>
 		* **101**
 			* [Executing Macros From a DOCX With Remote Template Injection - redxorblue(2018)](http://blog.redxorblue.com/2018/07/executing-macros-from-docx-with-remote.html)
@@ -964,7 +1030,7 @@ To Do:
 		* **Articles/Blogposts/Writeups**
 			* [VBA and P-code - Didier Stevens(2016)](https://isc.sans.edu/forums/diary/VBA+and+Pcode/21521/)
 			* [Malicious VBA Office Document Without Source Code - Didier Stevens(2019)](https://isc.sans.edu/diary/Malicious+VBA+Office+Document+Without+Source+Code/24870)
-			* [MS Office File Formats â€” Advanced Malicious Document (Maldoc) Techniques - Kirk Sayre, Harold Ogden, Carrie Roberts(2018)](https://medium.com/walmartlabs/ms-office-file-formats-advanced-malicious-document-maldoc-techniques-b5f948950fdf)
+			* [MS Office File Formats Ã¢â‚¬â€ Advanced Malicious Document (Maldoc) Techniques - Kirk Sayre, Harold Ogden, Carrie Roberts(2018)](https://medium.com/walmartlabs/ms-office-file-formats-advanced-malicious-document-maldoc-techniques-b5f948950fdf)
 				* This post will discuss basic file formats used by MS Office and some of their implications. 
 			* [Evasive VBA - Advanced Maldoc Techniques - Kirk Sayre, Harold Ogden, Carrie Roberts(2018)](https://medium.com/walmartlabs/evasive-vba-advanced-maldoc-techniques-1365e9373f80)
 			* [VBA Stomping - Advanced Maldoc Techniques - Kirk Sayre, Harold Ogden, Carrie Roberts](https://medium.com/walmartlabs/vba-stomping-advanced-maldoc-techniques-612c484ab278)
@@ -972,17 +1038,17 @@ To Do:
 			* [STOMP 2 DIS: Brilliance in the (Visual) Basics - Rick Cole, Andrew Moore, Genevieve Stark, Blaine Stancill](https://www.fireeye.com/blog/threat-research/2020/01/stomp-2-dis-brilliance-in-the-visual-basics.html)
 			& 
 			* [Evidence of VBA Purging Found in Malicious Documents](https://blog.nviso.eu/2020/02/25/evidence-of-vba-purging-found-in-malicious-documents/)
-				* TL;DR We have found malicious Office documents containing VBA source code only, and no compiled code. Documents like these are more likely to evade anti-virus detection due to a technique we dubbed “VBA Purging”.
+				* TL;DR We have found malicious Office documents containing VBA source code only, and no compiled code. Documents like these are more likely to evade anti-virus detection due to a technique we dubbed â€œVBA Purgingâ€.
 		* **Talks/Presentations/Videos**
 			* [ VBA Stomping - Advanced Malware Techniques - Carrie Roberts, Kirk Sayre, Harold Ogden(Derbycon2018)](https://www.irongeek.com/i.php?page=videos/derbycon8/track-3-06-vba-stomping-advanced-malware-techniques-carrie-roberts-kirk-sayre-harold-ogden-)
 				* [Slides](https://github.com/clr2of8/Presentations/blob/master/DerbyCon2018-VBAstomp-Final-WalmartRedact.pdf)
 				* There are powerful malicious document generation techniques that are effective at bypassing anti-virus detection. A technique which we refer to as VBA stomping refers to destroying the VBA source code in a Microsoft Office document, leaving only a compiled version of the macro code known as p-code in the document file. Maldoc detection based only on the VBA source code fails in this scenario. Reverse engineering these documents presents significant challenges as well. In this talk we will demonstrate detailed examples of VBA stomping as well as introduce some additional techniques. Reverse engineering and defense tips will also be provided. 
 			* [MS Office file format sorcery - Stan Hegt, Pieter Ceelen(TR19)](https://www.youtube.com/watch?v=iXvvQ5XML7g)
 				* [Slides](https://github.com/outflanknl/Presentations/blob/master/Troopers19_MS_Office_file_format_sorcery.pdf)
-				* A deep dive into file formats used in MS Office and how we can leverage these for offensive purposes. We will show how to fully weaponize ‘p-code’ across all MS Office versions in order to create malicious documents without using VBA code, successfully bypassing antivirus and other defensive measures.
+				* A deep dive into file formats used in MS Office and how we can leverage these for offensive purposes. We will show how to fully weaponize â€˜p-codeâ€™ across all MS Office versions in order to create malicious documents without using VBA code, successfully bypassing antivirus and other defensive measures.
 			* [Advanced Malware VBA Stomping - presented by Carrie Roberts & Kirk Sayre(Sp4kCon2019)](https://www.youtube.com/watch?v=9hIWYtyO-eM)
 				* [Slides](https://github.com/clr2of8/Presentations/blob/master/Sp4rkCon2019-VBAstomp.pdf)
-				* There are powerful malicious document generation techniques that are effective at bypassing anti-virus detection. A technique which we call “VBA stomping” refers to destroying the VBA source code in a Microsoft Office document, leaving only a compiled version of the macro code known as p-code in the document file. Maldoc detection based only on the VBA source code fails in this scenario. Reverse engineering these documents presents significant challenges as well. Come find out what is new with VBA Stomping since our presentation on the topic last year.
+				* There are powerful malicious document generation techniques that are effective at bypassing anti-virus detection. A technique which we call â€œVBA stompingâ€ refers to destroying the VBA source code in a Microsoft Office document, leaving only a compiled version of the macro code known as p-code in the document file. Maldoc detection based only on the VBA source code fails in this scenario. Reverse engineering these documents presents significant challenges as well. Come find out what is new with VBA Stomping since our presentation on the topic last year.
 			* [Advanced VBA Macros - Attack & Defense - Philippe Lagadec(BHEU2019](https://www.decalage.info/files/eu-19-Lagadec-Advanced-VBA-Macros-Attack-And-Defence.pdf)
 		* **Tools**
 			* [Example VBA Stomped Documents Repository](https://github.com/clr2of8/VBAstomp)
@@ -1037,14 +1103,14 @@ To Do:
 	* [Attacking Interoperability: An OLE Edition](https://www.blackhat.com/docs/us-15/materials/us-15-Li-Attacking-Interoperability-An-OLE-Edition.pdf)
 	* [Microsoft Powerpoint as Malware Dropper - Marco Ramilli](https://marcoramilli.blogspot.com/2018/11/microsoft-powerpoint-as-malware-dropper.html)
 	* [Office Document Macros, OLE, Actions, DDE Payloads and Filter Bypass - pwndizzle](http://pwndizzle.blogspot.com.es/2017/03/office-document-macros-ole-actions-dde.html)
-	* [#OLEOutlook - bypass almost every Corporate security control with a pointâ€™nâ€™click GUI - Kevin Beaumont](https://doublepulsar.com/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0?gi=18b1f4a3ca13)
+	* [#OLEOutlook - bypass almost every Corporate security control with a pointÃ¢â‚¬â„¢nÃ¢â‚¬â„¢click GUI - Kevin Beaumont](https://doublepulsar.com/oleoutlook-bypass-almost-every-corporate-security-control-with-a-point-n-click-gui-37f4cbc107d0?gi=18b1f4a3ca13)
 * **Online Video in MS Word**<a name="mov"></a>
 	* [Abusing Microsoft Office Online Video - Avihai Ben-Yossef(2018)](https://blog.cymulate.com/abusing-microsoft-office-online-video)
 	* [Phishing: Replacing Embedded Video with Bogus Payload - @spottheplanet](https://ired.team/offensive-security/initial-access/phishing-with-ms-office/phishing-replacing-embedded-video-with-bogus-payload)
 * **PowerPoint Mouseover**<a name="ppm"></a>
-	* [New PowerPoint Mouseover Based Downloader – Analysis Results - dodgethissecurity_1ooun4(2017)](https://www.dodgethissecurity.com/2017/06/02/new-powerpoint-mouseover-based-downloader-analysis-results/)
+	* [New PowerPoint Mouseover Based Downloader â€“ Analysis Results - dodgethissecurity_1ooun4(2017)](https://www.dodgethissecurity.com/2017/06/02/new-powerpoint-mouseover-based-downloader-analysis-results/)
 	* [PowerPoint File Downloads Malware When You Hover a Link, No Macros Required(2017)](https://www.bleepingcomputer.com/news/security/powerpoint-file-downloads-malware-when-you-hover-a-link-no-macros-required/)
-	* [“Zusy” PowerPoint Malware Spreads Without Needing Macros - SentinelOne(2017](https://www.sentinelone.com/blog/zusy-powerpoint-malware-spreads-without-needing-macros/)
+	* [â€œZusyâ€ PowerPoint Malware Spreads Without Needing Macros - SentinelOne(2017](https://www.sentinelone.com/blog/zusy-powerpoint-malware-spreads-without-needing-macros/)
 	* [Hover_with_Power - Mandar Satam](https://github.com/ethanhunnt/Hover_with_Power)
 * **Protected View**<a name="mpv"></a>
 	* **101**
@@ -1072,11 +1138,18 @@ To Do:
 
 
 
-
-
-
-
-
+------------------------------------
+### <a name="ooffice"></a> OpenOffice/LibreOffice
+* **Attacking**
+	* [Exploit Remote PC with Apache OpenOffice Text Document Malicious Macro Execution - Raj Chandel(2017)](https://www.hackingarticles.in/exploit-remote-pc-with-apache-openoffice-text-document-malicious-macro-execution/)
+* **Exploits**
+	* **CVE-2019-17400**
+		* [A Tale of Exploitation in Spreadsheet File Conversions - Brett Buerhaus(2019)](https://buer.haus/2019/10/18/a-tale-of-exploitation-in-spreadsheet-file-conversions/)
+		* [CVE-2019-17400](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-17400)
+	* **CVE-2019-9848/9**
+		* [LibreOffice â€“ A Python Interpreter (code execution vulnerability CVE-2019-9848)](https://insinuator.net/2019/07/libreoffice-a-python-interpreter-code-execution-vulnerability-cve-2019-9848/)
+		* [CVE-2019-9848 LibreLogo arbitrary script execution - libreoffice.org](https://www.libreoffice.org/about-us/security/advisories/cve-2019-9848)
+		* [CVE-2019-9849 - Tenable](https://www.tenable.com/cve/CVE-2019-9849)
 
 ------------------
 ### Setting up a Server

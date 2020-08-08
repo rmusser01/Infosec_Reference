@@ -146,6 +146,8 @@ To Do:
 			* [codimd](https://github.com/hackmdio/codimd)
 				* CodiMD lets you collaborate in real-time with markdown. Built on HackMD source code, CodiMD lets you host and control your team's content with speed and ease.
 		* **Pastes**
+			* [PrivateBin](https://privatebin.info/)
+				* PrivateBin is a minimalist, open source online pastebin where the server has zero knowledge of pasted data.
 	* **Diagramming Tools**<a name="diag"></a>
 		* [Mermaid](https://github.com/mermaid-js/mermaid)
 			* Generation of diagram and flowchart from text in a similar manner as markdown 

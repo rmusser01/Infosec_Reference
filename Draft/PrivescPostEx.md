@@ -59,6 +59,7 @@
 ----------------------------------------------------------------------
 
 
+------------------------------------------------------------------------------------------------------------------------
 ## <a name="privesc"></a>Privilege Escalation 
 
 ---------------
@@ -1441,8 +1442,9 @@
 			* [SeEnableDelegationPrivilege Active Directory Backdoor](https://www.youtube.com/watch?v=OiqaO9RHskU)
 		* **SID History**
 			* [Sneaky Active Directory Persistence #14: SID History](https://adsecurity.org/?p=1772)
-* **Alternate Data Streams**
+	* **Alternate Data Streams**
 		* **Articles/Blogposts/Writeups**
+			* [Stealth Alternate Data Streams and Other ADS Weirdness - @mattifestation(2011)](http://www.exploit-monday.com/2011/09/stealth-alternate-data-streams-and.html)
 			* [Putting data in Alternate data streams and how to execute it - oddvar.moe](https://oddvar.moe/2018/01/14/putting-data-in-alternate-data-streams-and-how-to-execute-it/)
 				* [Part 2](https://oddvar.moe/2018/04/11/putting-data-in-alternate-data-streams-and-how-to-execute-it-part-2/)
 			* [Kurt Seifried Security Advisory 003 (KSSA-003)](https://seifried.org/security/advisories/kssa-003.html)
@@ -1724,6 +1726,10 @@
 		* [waitfor - docs.ms](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/waitfor)
 		* [Persistence – WaitFor - NetbiosX(2020)](https://pentestlab.blog/2020/02/04/persistence-waitfor/)
 			* "Waitfor is a Microsoft binary which is typically used to synchronize computers across a network by sending signals. This communication mechanism can be used in a red team operation in order to download and execution arbitrary code and for persistence. The binary is stored in C:\Windows\System32 folder which means that local administrator privileges are required to perform this activity and both hosts (sender and receiver) needs to be on the same network segment. "
+	* **WMI**
+		* [Playing with MOF files on Windows, for fun & profit - xst3nz(2016)](https://poppopret.blogspot.com/2011/09/playing-with-mof-files-on-windows-for.html)
+		* [Windows Management Instrumentation (WMI) Offense, Defense, and Forensics - William Ballenthin, Matt Graeber, Claudiu Teodorescu](https://www.fireeye.com/content/dam/fireeye-www/global/en/current-threats/pdfs/wp-windows-management-instrumentation.pdf)
+		* [WMI Persistence using wmic.exe - @mattifestation(2016)](http://www.exploit-monday.com/2016/08/wmi-persistence-using-wmic.html)
 	* **WPAD**
 		* [WPAD Persistence](http://room362.com/post/2016/wpad-persistence/)
 * **Unsorted**
@@ -2376,6 +2382,7 @@
 			* [ExpandDefenderSig.ps1](https://gist.github.com/mattifestation/3af5a472e11b7e135273e71cb5fed866)
 				* Decompresses Windows Defender AV signatures for exploration purposes
 	* **Microsoft ATA & ATP**<a name="msatap"></a>
+		* **Articles/Blogposts/Talks/Writeups**
 			* [Red Team Techniques for Evading, Bypassing, and Disabling MS Advanced Threat Protection and Advanced Threat Analytics](https://www.blackhat.com/docs/eu-17/materials/eu-17-Thompson-Red-Team-Techniques-For-Evading-Bypassing-And-Disabling-MS-Advanced-Threat-Protection-And-Advanced-Threat-Analytics.pdf)
 			* [Red Team Revenge - Attacking Microsoft ATA](https://www.slideshare.net/nikhil_mittal/red-team-revenge-attacking-microsoft-ata)
 			* [Evading Microsoft ATA for Active Directory Domination](https://www.slideshare.net/nikhil_mittal/evading-microsoft-ata-for-active-directory-domination)
@@ -3149,12 +3156,6 @@
 	* [Named Pipe Security and Access Rights - docs.ms](https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipe-security-and-access-rights)
 	* [Named Pipe client](https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipe-client)
 * **PowerShell**<a name="powershell"></a>
-	* **PowerShell Code Encoding & Obfuscation**
-		* **Tools**
-			* [Powerob](https://github.com/cwolff411/powerob)
-				* An on-the-fly Powershell script obfuscator meant for red team engagements. Built out of necessity.
-			* [Powerglot](https://github.com/mindcrypt/powerglot)
-				* Powerglot encodes offensive powershell scripts using polyglots
 	* **PowerShell Logging**
 		* **101**
 		* **Articles/Blogposts/Writeups**
@@ -3241,6 +3242,7 @@
 		* [Common Language Runtime (CLR) overview - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/clr)
 		* [AppDomain Class - docs.ms](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.1)
 			* Represents an application domain, which is an isolated environment where applications execute. This class cannot be inherited.
+		* [.NET Method Internals - Common Intermediate Language (CIL) Basics - @mattifestation(2014)](http://www.exploit-monday.com/2014/07/dotNETMethodInternals.html)
 		* [.NET Malware Threat: Internals and Reversing - Alexandre Borges(Defcon2019)](http://www.blackstormsecurity.com/docs/ALEXANDREBORGES_DEFCON_2019.pdf)
 		* [What is "managed code"? - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/managed-code)
 			* When working with .NET Framework, you will often encounter the term "managed code". This document will explain what this term means and additional information around it.
@@ -3318,6 +3320,8 @@
 		* [Reflection (Visual Basic) - docs.ms](https://docs.microsoft.com/en-us/dotnet/visual-basic/programming-guide/concepts/reflection)
 		* [Reflection in .NET - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/reflection)
 		* [Application Domains - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/application-domains)
+		* [Platform Invoke (P/Invoke) - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/native-interop/pinvoke)
+		* [Mixed (native and managed) assemblies - docs.ms](https://docs.microsoft.com/en-us/cpp/dotnet/mixed-native-and-managed-assemblies?view=vs-2019)
 	* **Articles/Blogposts/Writeups**
 		* [Create a Trimmed Self-Contained Single Executable in .NET Core 3.0 - talkingdotnet.com](https://www.talkingdotnet.com/create-trimmed-self-contained-executable-in-net-core-3-0/)
 		* [The 68 things the CLR does before executing a single line of your code - mattwarren.org](https://web.archive.org/web/20170614215931/http://mattwarren.org:80/2017/02/07/The-68-things-the-CLR-does-before-executing-a-single-line-of-your-code/)
@@ -3331,6 +3335,8 @@
 	* **Tools**
 		* [SharpGen](https://github.com/cobbr/SharpGen)
 			*  SharpGen is a .NET Core console application that utilizes the Rosyln C# compiler to quickly cross-compile .NET Framework console applications or libraries.
+		* [SharpCompile](https://github.com/SpiderLabs/SharpCompile)
+			* SharpCompile is an aggressor script for Cobalt Strike which allows you to compile and execute C# in realtime. This is a more slick approach than manually compiling an .NET assembly and loading it into Cobalt Strike. The project aims to make it easier to move away from adhoc PowerShell execution instead creating a temporary assembly and executing using beacon's 'execute-assembly' in seconds.
 		* [NetLoader](https://github.com/Flangvik/NetLoader)
 			* Loads any C# binary from filepath or url, patching AMSI and bypassing Windows Defender on runtime
 		* [AppDomainExample](https://github.com/xfox64x/AppDomainExample)
@@ -3757,6 +3763,9 @@
 ---------------------------------------------------------------------------------------------------------
 ### <a name="powershell-stuff">Powershell Things</a>
 * **101**
+	* [Why I Choose PowerShell as an Attack Platform - @mattifestation(2012)](http://www.exploit-monday.com/2012/08/Why-I-Choose-PowerShell.html)
+	* [The PowerSploit Manifesto - @mattifestation(2015)](http://www.exploit-monday.com/2015/12/the-powersploit-manifesto.html)
+	* [PowerShell is Not Special - An Offensive PowerShell Retrospective - @mattifestation(2017)](http://www.exploit-monday.com/2017/01/powershell-is-not-special-offensive.html)
 	* **Learning**
 		* [PowerShell 101 - Carlos Perez](https://www.darkoperator.com/powershellbasics/)
 		* [Get-Help: An Intro to PowerShell and How to Use it for Evil - Jared Haight](https://www.psattack.com/presentations/get-help-an-intro-to-powershell-and-how-to-use-it-for-evil/)
@@ -3769,6 +3778,8 @@
 		    	* This talk will discuss how to gain greater visibility into managed program execution, especially for PowerShell, using a .NET native code hooking technique to help organizations protect themselves from such advanced attacker techniques. In this session, we will demonstrate how to enhance capabilities provided by AMSI and how to overcome its limitations, through a realistic implementation of the technique, all while analyzing the internals of .NET Framework and the PowerShell engine. 
 		    * [Defensive Coding Strategies for a High-Security Environment - Matt Graeber - PowerShell Conference EU 2017](https://www.youtube.com/watch?reload=9&v=O1lglnNTM18)
         		* How sure are you that your PowerShell code is prepared to handle anything that a user might throw at it? What if the user was an attacker attempting to circumvent security controls by exploiting a vulnerability in your script? This may sound unrealistic but this is a legitimate concern of the PowerShell team when including PowerShell code in the operating system. In a high-security environment where strict AppLocker or Device Guard rules are deployed, PowerShell exposes a large attack surface that can be used to circumvent security controls. While constrained language mode goes a long way in preventing malicious PowerShell code from executing, attackers will seek out vulnerabilities in trusted signed code in order to circumvent security controls. This talk will cover numerous different ways in which attackers can influence the execution of your code in unanticipated ways. A thorough discussion of mitigations against such attacks will then follow.
+    * **File Parsing**
+    	* [Parsing Binary File Formats with PowerShell - @mattifestation(2013)](http://www.exploit-monday.com/2013/03/ParsingBinaryFileFormatsWithPowerShell.html)
 	* **Logging**
 		* [About Eventlogs(PowerShell) - docs.ms](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_eventlogs?view=powershell-5.1)
 		* [Script Tracing and Logging - docs.ms](https://docs.microsoft.com/en-us/powershell/wmf/whats-new/script-logging)
@@ -3785,7 +3796,8 @@
 			* SessionGopher is a PowerShell tool that uses WMI to extract saved session information for remote access tools such as WinSCP, PuTTY, SuperPuTTY, FileZilla, and Microsoft Remote Desktop. It can be run remotely or locally.
 		* [CC_Checker](https://github.com/NetSPI/PS_CC_Checker)
 			* CC_Checker cracks credit card hashes with PowerShell.
-	* **Processes**
+	* **Memory & Processes**
+		* [Powershell Live-Memory Analysis Tools: Dump-Memory, Dump-Strings, Check-MemoryProtection - @mattifestation(2012)](http://www.exploit-monday.com/2012/03/powershell-live-memory-analysis-tools.html)
 		* [Invoke-ProcessScan](https://github.com/vysec/Invoke-ProcessScan)
 			* Gives context to a system. Uses EQGRP shadow broker leaked list to give some descriptions to processes.
 	* **WebBrowser**
@@ -3801,14 +3813,25 @@
 			* This script has two modes. It can reflectively load a DLL/EXE in to the PowerShell process,  or it can reflectively load a DLL in to a remote process.
     * **Constrained-Language Mode**
 		* **101**
-			* [PowerShell Constrained Language Mode - devblogs.ms](https://devblogs.microsoft.com/powershell/powershell-constrained-language-mode/)
-		* **Articles/Blogposts/Writeups**
-			* [Exploiting PowerShell Code Injection Vulnerabilities to Bypass Constrained Language Mode](http://www.exploit-monday.com/2017/08/exploiting-powershell-code-injection.html?m=1)
-			* [AppLocker CLM Bypass via COM - MDSec](https://www.mdsec.co.uk/2018/09/applocker-clm-bypass-via-com/)
-			* [Powershell CLM Bypass Using Runspaces - Shaksham Jaiswal](https://www.secjuice.com/powershell-constrainted-language-mode-bypass-using-runspaces/)
-				* [CLMBypassBlogpost](https://github.com/MinatoTW/CLMBypassBlogpost)
+	 		* [About Language Modes - docs.ms](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_language_modes?view=powershell-7)
+	 			* Explains language modes and their effect on PowerShell sessions.
+	 		* [PowerShell Constrained Language Mode - PowerShell Team(2017)](https://devblogs.microsoft.com/powershell/powershell-constrained-language-mode/)
 			* [A Comparison of Shell and Scripting Language Security - PowerShell Team](https://devblogs.microsoft.com/powershell/a-comparison-of-shell-and-scripting-language-security/)
-		* **Tools**
+		* **Articles/Blogposts/Writeups**
+
+			* [AppLocker CLM Bypass via COM - MDSec](https://www.mdsec.co.uk/2018/09/applocker-clm-bypass-via-com/)
+	 		* [Detecting and Preventing PowerShell Downgrade Attacks - Lee Holmes(2017)](https://www.leeholmes.com/blog/2017/03/17/detecting-and-preventing-powershell-downgrade-attacks/)
+	 		* [Simple Bypass for PowerShell Constrained Language Mode - DaveHardy20(2017)](https://pentestn00b.wordpress.com/2017/03/20/simple-bypass-for-powershell-constrained-language-mode/)
+	 		* [Powershell Constrained Language Mode ByPass - @spottheplanet](https://www.ired.team/offensive-security/code-execution/powershell-constrained-language-mode-bypass)
+	 		* [Exploiting PowerShell Code Injection Vulnerabilities to Bypass Constrained Language Mode - @mattifestation(2017)](http://www.exploit-monday.com/2017/08/exploiting-powershell-code-injection.html)
+	 		* [A Look at CVE-2017-8715: Bypassing CVE-2017-0218 using PowerShell Module Manifests - enigma0x3(2017)](https://enigma0x3.net/2017/11/06/a-look-at-cve-2017-8715-bypassing-cve-2017-0218-using-powershell-module-manifests/)
+	 		* [Pentesting and .hta (bypass PowerShell Constrained Language Mode) - Josh Graham(2018)](https://medium.com/tsscyber/pentesting-and-hta-bypassing-powershell-constrained-language-mode-53a42856c997)
+	 		* [Bypassing Applocker and Powershell contstrained language mode - DarthSidious](https://hunter2.gitbook.io/darthsidious/defense-evasion/bypassing-applocker-and-powershell-contstrained-language-mode)
+			* [Powershell CLM Bypass Using Runspaces - Shaksham Jaiswal(2019)](https://www.secjuice.com/powershell-constrainted-language-mode-bypass-using-runspaces/)
+				* [CLMBypassBlogpost](https://github.com/MinatoTW/CLMBypassBlogpost)
+	 	* **Talks/Presentations/Videos**
+	 		* [PowerShell Constrained Language Mode Enforcement and Bypass Deep Dive - Matt Graeber(2020)](https://www.youtube.com/watch?v=O6dtIvDfyuI)
+	 	* **Tools**
 			* [DotNetToJScript Constrained/Restricted LanguageMode Breakout](https://github.com/FuzzySecurity/DotNetToJScript-LanguageModeBreakout/blob/master/README.md)
 				* This repository is based on a post by [@xpn](https://twitter.com/_xpn_), [more details available here.](https://www.mdsec.co.uk/2018/09/applocker-clm-bypass-via-com/) Xpn's post outlines a bug of sorts where ConstrainedLanguage, when enforced through AppLocker does not prevent COM invocation. Because of this it is possible to define a custom COM object in the registry and force PowerShell to load a Dll. On load it is possible to change the LanguageMode to FullLanguage and break out of the restricted shell. This repo is a variation on this technique where a DotNetToJScript scriptlet is used to directly stage a .Net assembly into the PowerShell process.
 			* [PoSH_Bypass](https://github.com/davehardy20/PoSHBypass)
@@ -3817,15 +3840,30 @@
 				* Bypass for PowerShell Constrained Language Mode
 			* [powershellveryless](https://github.com/decoder-it/powershellveryless)
 				* Constrained Language Mode + AMSI bypass all in one(Currently Blocked without modification)
+	* **Download Cradles**
+	 	* [Dropping Executables with Powershell - @mattifestation(2011)](http://www.exploit-monday.com/2011/09/dropping-executables-with-powershell.html)
 	* **Execution Policy**
 			* [15 Ways to Bypass the PowerShell Execution Policy - NetSPI](https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/)
     	* **Tools**
     		* [Bat Armor](https://github.com/klsecservices/bat-armor)
 				* Bypass PowerShell execution policy by encoding ps script into bat file.
-    	* **Nishang**
-			* [Nishang](https://github.com/samratashok/nishang)
-				* Nishang is a framework and collection of scripts and payloads which enables usage of PowerShell for offensive security, penetration testing and red teaming. Nishang is useful during all phases of penetration testing.
-			* [Hacking In Windows Using Nishang With Windows PowerShell, Like A Boss! - serenity-networks.com](https://serenity-networks.com/hacking-in-windows-using-nishang-with-windows-powershell/)
+    * **In-Memory**
+		* **Articles/Blogposts/Writeups**
+    		* [PowerSyringe - PowerShell-based Code/DLL Injection Utility - @mattifestation(2011)](http://www.exploit-monday.com/2011/11/powersyringe-powershell-based-codedll.html)
+    		* [In-Memory Managed Dll Loading With PowerShell - @mattifestation(2012)](http://www.exploit-monday.com/2012_11_25_archive.html)
+    		* [Surgical .NET Dissection - Using PowerShell Proxy Functions to Extend Get-Member - @mattifestation]
+    		* [Deep Reflection - Defining Structs and Enums in PowerShell - @mattifestation(2012)](http://www.exploit-monday.com/2012/07/structs-and-enums-using-reflection.html)
+    		* [Accessing the Windows API in PowerShell via internal .NET methods and reflection - @mattifestation(2012)](http://www.exploit-monday.com/2012/05/accessing-native-windows-api-in.html)
+			* [In-Memory Managed Dll Loading With PowerShell - @mattifestation(2012)](http://www.exploit-monday.com/2012/12/in-memory-dll-loading.html)
+    		* [Shellcode Execution in .NET using MSIL-based JIT Overwrite - @mattifestation(2013)](http://www.exploit-monday.com/2013/04/MSILbasedShellcodeExec.html)
+    		* [Working with Unmanaged Callback Functions in PowerShell - @mattifestation(2013)](http://www.exploit-monday.com/2013/06/PowerShellCallbackFunctions.html)
+    			*  With a little bit of work, you can bind a scriptblock to an unmanaged callback function in PowerShell. The key to accomplishing this is by casting a scriptblock as a non-generic delegate that has the function signature of the desired callback function. Fortunately, creating non-generic delegates is made easy with my Get-DelegateType function.
+    		* [Simple CIL Opcode Execution in PowerShell using the DynamicMethod Class and Delegates - @mattifestation(2013)](http://www.exploit-monday.com/2013/10/powershell-cil-opcode-execution.html)
+    			* It is possible to assemble .NET methods with CIL opcodes (i.e. .NET bytecode) in PowerShell in only a few lines of code using dynamic methods and delegates.
+    * **Nishang**
+		* [Nishang](https://github.com/samratashok/nishang)
+			* Nishang is a framework and collection of scripts and payloads which enables usage of PowerShell for offensive security, penetration testing and red teaming. Nishang is useful during all phases of penetration testing.
+		* [Hacking In Windows Using Nishang With Windows PowerShell, Like A Boss! - serenity-networks.com](https://serenity-networks.com/hacking-in-windows-using-nishang-with-windows-powershell/)
 	* **Powershell without Powershell**
 		* **Articles/Blogposts/Writeups**
 			* [Empire without PowerShell.exe](https://bneg.io/2017/07/26/empire-without-powershell-exe/)
@@ -3865,22 +3903,27 @@
 				* Running into environments where the use of PowerShell is being monitored or is just flat-out disabled? Have you tried out the fantastic PowerOps framework but are wishing you could use something similar via Meterpreter, Empire, or other C2 channels? Look no further! In this talk, Brian Fehrman talks about his new PowerLine framework. He overviews the tool, walks you through how to use it, shows you how you can add additional PowerShell scripts with little effort, and demonstrates just how powerful (all pun intended) this little program can be!
 	* **WinAPI Access**
 		* **Articles/Blogposts/Writeups**
-			* [Accessing the Windows API in PowerShell via internal .NET methods and reflection](http://www.exploit-monday.com/2012/05/accessing-native-windows-api-in.html)
+			* [Accessing the Windows API in PowerShell via internal .NET methods and reflection - @mattifestation(2012)](http://www.exploit-monday.com/2012/05/accessing-native-windows-api-in.html)
 				* It is possible to invoke Windows API function calls via internal .NET native method wrappers in PowerShell without requiring P/Invoke or C# compilation. How is this useful for an attacker? You can call any Windows API function (exported or non-exported) entirely in memory. For those familiar with Metasploit internals, think of this as an analogue to railgun.
+			* [List All Win32/Native Functions Declared/Used By PowerShell - @mattifestation(2012)](http://www.exploit-monday.com/2012/12/list-all-win32native-functions.html)
+			* [Get-PEB – A Tool to Dump the Process Environment Block (PEB) of Any Process - @mattifestation(2013)](http://www.exploit-monday.com/2013/01/Get-PEB.html)
+
 			* [PowerShell and Win32 API Access - harmj0y(2014)](http://www.harmj0y.net/blog/powershell/powershell-and-win32-api-access/)
 			* [Use PowerShell to Interact with the Windows API: Part 1 - devblogs.msdn(2014)](https://devblogs.microsoft.com/scripting/use-powershell-to-interact-with-the-windows-api-part-1/)
 				* [Part2]()
 				* [Part3](https://devblogs.microsoft.com/scripting/use-powershell-to-interact-with-the-windows-api-part-3/)
-			* [Accessing the Windows API in PowerShell via internal .NET methods and reflection - Matt Graeber](http://www.exploit-monday.com/2012/05/accessing-native-windows-api-in.html)
+			* [Accessing the Windows API in PowerShell via internal .NET methods and reflection - Matt Graeber(2012)](http://www.exploit-monday.com/2012/05/accessing-native-windows-api-in.html)
 				* It is possible to invoke Windows API function calls via internal .NET native method wrappers in PowerShell without requiring P/Invoke or C# compilation. How is this useful for an attacker? You can call any Windows API function (exported or non-exported) entirely in memory. For those familiar with Metasploit internals, think of this as an analogue to railgun.
 			* [Deep Reflection - Defining Structs and Enums in PowerShell - Matt Graeber(2012)](http://www.exploit-monday.com/2012/07/structs-and-enums-using-reflection.html)
 			* [Easily Defining Enums, Structs, and Win32 Functions in Memory - Matt Graeber(2014)](https://www.powershellmagazine.com/2014/09/25/easily-defining-enums-structs-and-win32-functions-in-memory/)
+			* [Properly Retrieving Win32 API Error Codes in PowerShell - @mattifestation(2016)](http://www.exploit-monday.com/2016/01/properly-retrieving-win32-api-error.html)
 		* **Tools**
 			* [PSReflect](https://github.com/mattifestation/PSReflect)
 				* Easily define in-memory enums, structs, and Win32 functions in PowerShell
 * **Persistence**
 	* PS Profiles
 	* [Practical Persistence with PowerShell - Matt Graeber(2013)](http://www.exploit-monday.com/2013/04/PersistenceWithPowerShell.html)
+	* [Investigating Subversive PowerShell Profiles - @mattifestation(2015)](http://www.exploit-monday.com/2015/11/investigating-subversive-powershell.html)
 	* [Nothing Lasts Forever: Persistence with Empire - harmj0y(2016)](https://www.harmj0y.net/blog/empire/nothing-lasts-forever-persistence-with-empire/)
 * **Credential Attacks**
 	* **Articles/Blogposts/Writeups**
@@ -3902,7 +3945,7 @@
 	* **Mimikatz**
 		* [mimikittenz](https://github.com/putterpanda/mimikittenz/)
 			* A post-exploitation powershell tool for extracting juicy info from memory.
-	* **Responder**
+	* **Broadcast Name Resolution Poisoning (BNRP)**
 		* [Inveigh](https://github.com/Kevin-Robertson/Inveigh)
 			* Inveigh is a PowerShell LLMNR/mDNS/NBNS spoofer and man-in-the-middle tool designed to assist penetration testers/red teamers that find themselves limited to a Windows system.
 * **Privilege Escalation**
@@ -3925,6 +3968,8 @@
 			* It used to be that most people were just starting to hear about PowerShell. Over the last 3 years, this has changed dramatically. We now see Offensive and Defensive PowerShell tools, exploits specifically leveraging PowerShell and WMI, and more organizations are starting to be intentional for detection and monitoring of PowerShell scripts and commands. With this visibility, it is becoming a game of cat and mouse to leverage and detect PowerShell. In this talk, I will highlight some secrets I use to ensure my PowerShell exploits are successful and some unique tactics which will bypass common defensive controls. I will also walk you through the creation of a custom PowerShell C# DLL which you can use to compromise your target. If you want to code with me, be sure to bring a laptop with Visual Studio 2013 or later installed.
 		* [Goodbye Obfuscation, Hello Invisi Shell: Hiding Your Powershell Script in Plain Sight - Omer Yair(Derbycon2018)](https://www.youtube.com/watch?v=Y3oMEiySxcc)
 			* “The very concept of objective truth is fading out of the world. Lies will pass into history.” George Orwell. Objective truth is essential for security. Logs, notifications and saved data must reflect the actual events for security tools, forensic teams and IT managers to perform their job correctly. Powershell is a prime example of the constant cat and mouse game hackers and security personnel play every day to either reveal or hide the “objective truth” of a running script. Powershell’s auto logging, obfuscation techniques, AMSI and more are all participants of the same game playing by the same rules. We don’t like rules, so we broke them. As a result, Babel-Shellfish and Invisi-Shelltwo new tools that both expose and disguise powershell scripts were born. Babel-Shellfish reveals the inner hidden code of any obfuscated script while Invisi-Shell offers a new method of hiding malicious scripts, even from the Powershell process running it. Join us as we present a new way to think about scripts.
+	* **Constrained-Language Mode**
+		* See above.
 	* **Crypters**
 		* [Xencrypt](https://github.com/the-xentropy/xencrypt)
 			* This tool is intended as a demo for how easy it is to write your own crypter. It works for its intended purpose and I will not patch it to make it suitable for yours.
@@ -3947,6 +3992,10 @@
 			* [Invoke-CradleCrafter v1.1](https://github.com/danielbohannon/Invoke-CradleCrafter)
 			* [Invoke-Confusion.ps1](https://github.com/homjxi0e/PowerAvails/blob/master/invoke-Confusion.ps1)
 			* [PowerAvails](https://github.com/homjxi0e/PowerAvails)
+			* [Powerob](https://github.com/cwolff411/powerob)
+				* An on-the-fly Powershell script obfuscator meant for red team engagements. Built out of necessity.
+			* [Powerglot](https://github.com/mindcrypt/powerglot)
+				* Powerglot encodes offensive powershell scripts using polyglots
 		* **De-Obfuscate**
 			* [Revoke-Obfuscation](https://github.com/danielbohannon/Revoke-Obfuscation)
 				* [Blogpost](https://www.fireeye.com/blog/threat-research/2017/07/revoke-obfuscation-powershell.html)
@@ -4615,5 +4664,3 @@
 			* Advanced Code Injection Technique for x32 / x64
 		* [Inception Framework](https://github.com/two06/Inception)
 			* Inception provides In-memory compilation and reflective loading of C# apps for AV evasion. Payloads are AES encrypted before transmission and are decrypted in memory. The payload server ensures that payloads can only be fetched a pre-determined number of times. Once decrypted, Roslyn is used to build the C# payload in memory, which is then executed using reflection.
-
-

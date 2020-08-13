@@ -17,10 +17,12 @@ An Information Security Reference That Doesn't Suck
 	* I do this as a resource to learn and help others, and offer it publicly as a way of giving back to the general community.
 	* To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel might help build someone's skillset or increase their understanding of attacks/methods/defenses. This is not meant to condone illegal or malicious activities.
 * **This page**
-	* This page isn't ~~terrible~~ the best on mobile. Use [https://rmusser.net/docs](https://rmusser.net/docs)t for better mobile formatting.
+	* To see a horribly colored, but nicely formatted version(irony): use [https://rmusser.net/docs](https://rmusser.net/docs), plus it looks better on mobile.
 	* For latest content updates, check the git history.
-	* Contributions are encouraged/appreciated.
-	* If this resource has helped you in any way, please consider making a donation to [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm) or [Amnesty International](https://www.amnesty.org/en/donate/). 
+	* Could you spare a contribution? Any links or re-org is nice.
+	* If this resource has helped you in any way(and didn't increase your frustration), please consider making a donation to:
+		* [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm)
+		* [Amnesty International](https://www.amnesty.org/en/donate/). 
 
 ## Index - Table of Contents
 
@@ -57,7 +59,7 @@ An Information Security Reference That Doesn't Suck
 * [:warning:Network Attacks & Defense:warning:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Network_Attacks.md)
 * [:triangular\_flag\_on\_post:Network Security Monitoring & Logging:triangular\_flag\_on\_post:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/L-SM-TH.md)
 * [:telescope:Open Source Intelligence Gathering - OSINT:telescope:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/OSI.md)
-* [Passwords](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/passwords.md)
+* [Passwords](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Passwords.md)
 * [:fishing\_pole\_and\_fish:Phishing:fishing\_pole\_and\_fish:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Phishing.md)
 * [:door:Physical Security:door:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Physical_Security.md)
 * [Privilege Escalation and Post-Exploitation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/PrivescPostEx.md)
@@ -77,4 +79,8 @@ An Information Security Reference That Doesn't Suck
   * [Insurance Data Security Model Law](http://www.naic.org/documents/committees_ex_cybersecurity_tf_exposure_mod_draft_clean.pdf) 
   * [NIST Cyber Security Framework](https://www.nist.gov/cyberframework)
   * [PCI-DSS V3.2.1](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf)
+```
+"As the Americans learned so painfully in Earth's final century, free flow of information is the only safeguard against tyranny. The once-chained people whose leaders at last lose their grip on information flow will soon burst with freedom and vitality, but the free nation gradually constricting its grip on public discourse has begun its rapid slide into despotism. Beware of he who would deny you access to information, for in his heart he dreams himself your master."
 
+- Commissioner Pravin Lal, Peacekeeping Forces (Alpha Centauri, 1999)
+```

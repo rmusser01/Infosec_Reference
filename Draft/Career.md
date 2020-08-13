@@ -41,6 +41,7 @@
 
 
 
+
 ------------------------------------------------------
 ### Career Information<a name="career-info"></a>
 * **101**<a name="101"></a>
@@ -139,6 +140,10 @@
 		* [Reversing w/o reversing – how to become Alex in practice - hexacorn](http://www.hexacorn.com/blog/2019/04/11/reversing-w-o-reversing-how-to-become-alex-in-practice/)
 	* **Security Analyst**
 		* [Security Analyst Workshop - Florian Roth(2019/3)](https://www.slideshare.net/FlorianRoth2/security-analyst-workshop-20190314)
+	* **Security Engineer**
+		* [So you want to be a security engineer? - Niru Ragupathy](https://medium.com/@niruragu/so-you-want-to-be-a-security-engineer-d8775976afb7)
+		* [How to Secure Anything - Veeral Patel](https://github.com/veeral-patel/how-to-secure-anything)
+			* How to systematically secure anything: a repository about security engineering
 * **CEOs**
 	* [What Only the CEO Can Do - A. G. Lafley](https://hbr.org/2009/05/what-only-the-ceo-can-do)
 	* [How CEOs Manage Time - Michael E. Porter, Nitin Nohria](https://hbr.org/2018/07/the-leaders-calendar)
@@ -165,6 +170,9 @@
 	* [American Cultural Assumption - wiki.c2.com](http://wiki.c2.com/?AmericanCulturalAssumption)
 	* [Containers Will Not Fix Your Broken Culture (and Other Hard Truths) - Complex socio-technical systems are hard; film at 11. - Bridget Kromhout](https://queue.acm.org/detail.cfm?id=3185224)
 	* [The Joel Test: 12 Steps to Better Code - Joel Spolsky](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
+	* [How to Discourage Secretive Behavior From Members of Your Family/Team - kletische.com](https://kletische.com/discourage-secretive-behavior/)
+	* [This is not fine - Surviving Cynicism and Building Happy Security Teams - Chris Deibler(BlueHat v18)](https://www.youtube.com/watch?v=YUwBja45fBQ)
+		* [Slides](https://www.slideshare.net/MSbluehat/bhv18-keynote-this-is-not-fine-surviving-cynicism-and-building-happy-security-teams)
 * **Compensation/Equity**<a name="comp"></a>
 	* [The Holloway Guide to Equity Compensation](https://www.holloway.com/g/equity-compensation)
 		* Stock options, RSUs, job offers, and taxes—a detailed reference, including hundreds of resources, explained from the ground up and made to be improved over time.
@@ -176,19 +184,30 @@
 	* [How to Calculate and Communicate Your Desired Total Compensation - Danile Miessler](https://danielmiessler.com/blog/how-to-calculate-and-communicate-your-desired-compensation/)
 	* [Equifax Could Be Selling Your Salary History. Here’s How To Protect It(2017 - Joel Winston)](https://www.fastcompany.com/40508924/equifax-could-be-selling-your-salary-history-heres-how-to-protect-it)
 * **Contracting & Consulting**<a name="contract"></a>
-	* [Why A Billable Hours Model Does not Work in Consulting - firmsconsulting.com](https://www.firmsconsulting.com/quarterly/billable-hours-strategy-consulting/)
-	* [How To Build Your Own Infosec Company - Mario Heiderich (BSides Lisbon 2018: Keynote)](https://www.youtube.com/watch?reload=9&v=UE5xS7-kFjE)
-	* [Not A Full Timer: Slight difference from Pro to cattle - Mohamed Hayibor](https://mohamedhayibor.github.io/blog/post/Not-A-Full-Timer/)
-	* [Pre-Engagement Interactions - @shai_saint](https://n00bpentesting.wordpress.com/lessons/ptes-101/pre-engagement-interactions/)
-	* [How to build your own Infosec Company - Mario Heiderich(nullcon Goa2019)](https://www.youtube.com/watch?v=N2JG7qIlpi0&feature=youtu.be)
-	* [What to Expect in an Ethical Hacking Interview - TheCyberMentor](https://www.youtube.com/watch?v=nrewE1mLlaU)
-	* [How I Made $100,000 in a Month - TheCyberMentor](https://www.youtube.com/watch?v=dRTqRJsr1ss)
-	* [Successful Infosec Consulting 101 - Ted Demopoulos](https://www.sans.org/webcasts/successful-infosec-consulting-101-111885)
-	* [Successful Infosec Consulting: Lessons from Three Decades in The Field - Ted Demopoulos](https://www.sans.org/webcasts/successful-infosec-consulting-lessons-decades-field-111890)
-	* [Managing Client Relationships as an Investment Banker, Lawyer or Consultant - Jim Donovan(2015)](https://www.youtube.com/watch?v=z8kqCIxXTEw)
-		* Goldman Sachs managing director and Law School adjunct professor Jim Donovan shares his insights on the skills necessary to manage and cultivate client relationships. Donovan is responsible for advising many of the largest corporate and individual clients of Goldman Sachs. (University of Virginia School of Law, Nov. 6, 2015)
-* **Culture**
-	* [How to Discourage Secretive Behavior From Members of Your Family/Team - kletische.com](https://kletische.com/discourage-secretive-behavior/)
+	* **About**
+		* [Not A Full Timer: Slight difference from Pro to cattle - Mohamed Hayibor](https://mohamedhayibor.github.io/blog/post/Not-A-Full-Timer/)
+			* A quick litmus test: if you’re getting paid by the hour. You’re not a full time employee. You’re a contractor.
+	* **Billing**
+		* [Why A Billable Hours Model Does not Work in Consulting - firmsconsulting.com](https://www.firmsconsulting.com/quarterly/billable-hours-strategy-consulting/)
+		* [Why You Should Charge Clients More Than You Think You’re Worth - Dorie Clark(HBR)](https://hbr.org/2017/10/why-you-should-charge-clients-more-than-you-think-youre-worth)
+		* [How to Write a Statement of Work - Mary K Pratt](https://www.computerworld.com/article/2555324/how-to-write-a-statement-of-work.html)
+	* **Building**
+		* [How To Build Your Own Infosec Company - Mario Heiderich (BSides Lisbon 2018: Keynote)](https://www.youtube.com/watch?reload=9&v=UE5xS7-kFjE)
+		* [How to build your own Infosec Company - Mario Heiderich(nullcon Goa2019)](https://www.youtube.com/watch?v=N2JG7qIlpi0&feature=youtu.be)
+		* [Entrepreneurship for hackers - snyff(Christchurch CON 2019)](https://www.slideshare.net/snyff/entrepreneurship-for-hackers)
+	* **Consulting**
+		* [Successful Infosec Consulting 101 - Ted Demopoulos](https://www.sans.org/webcasts/successful-infosec-consulting-101-111885)
+		* [Successful Infosec Consulting: Lessons from Three Decades in The Field - Ted Demopoulos](https://www.sans.org/webcasts/successful-infosec-consulting-lessons-decades-field-111890)
+		* [Managing Client Relationships as an Investment Banker, Lawyer or Consultant - Jim Donovan(2015)](https://www.youtube.com/watch?v=z8kqCIxXTEw)
+			* Goldman Sachs managing director and Law School adjunct professor Jim Donovan shares his insights on the skills necessary to manage and cultivate client relationships. Donovan is responsible for advising many of the largest corporate and individual clients of Goldman Sachs. (University of Virginia School of Law, Nov. 6, 2015)
+	* **Engaging**
+		* [Pre-Engagement Interactions - Sabtu(2017)](http://pentestdiary.blogspot.com/2017/08/pre-engagement-interactions.html)
+		* [Pre-Engagement Interactions - @shai_saint](https://n00bpentesting.wordpress.com/lessons/ptes-101/pre-engagement-interactions/)
+		* [What to Expect in an Ethical Hacking Interview - TheCyberMentor](https://www.youtube.com/watch?v=nrewE1mLlaU)
+		* [How I Made $100,000 in a Month - TheCyberMentor](https://www.youtube.com/watch?v=dRTqRJsr1ss)
+	* **Policies & Regulations**
+		* [The SOC2 Starting Seven - Latacora Blog](https://latacora.micro.blog/2020/03/12/the-soc-starting.html)
+			* Sage advice about SOC2 from Latacora.
 * **Difficult Conversations**<a name="difficult"></a>
 	* [Our 6 Must Reads for Cutting Through Conflict and Tough Conversations - firstround.com](https://firstround.com/review/our-6-must-reads-for-cutting-through-conflict-and-tough-conversations/)
 	* [7 Tips for Difficult Conversations - Daisy Wademan Dowling(HBR)](https://hbr.org/2009/03/7-tips-for-difficult-conversat)
@@ -224,63 +243,61 @@
 	* [The Hiring Post - sockpuppet.org](https://sockpuppet.org/blog/2015/03/06/the-hiring-post/)
 	* [On Secretly Terrible Engineers - Danny Crichton](https://techcrunch.com/2015/03/08/on-secretly-terrible-engineers/)
 	* [Hiring and the market for lemons - Dan Luu](https://danluu.com/hiring-lemons/)
+	* [Our 6 Must Reads for Onboarding Tactics That Help New Hires Succeed (and Stay) - FirstRoundReview](https://firstround.com/review/our-6-must-reads-for-onboarding-tactics-that-help-new-hires-succeed-and-stay/)
 * **Impostor Syndrome**<a name="imposter"></a>
 	* [Would the real imposter please stand up? - Dr. Jessica Barker(SteelCon2016)](https://www.youtube.com/watch?v=tGyBFOWsFbk&feature=share)
 	* [Dark Matter Developers: The Unseen 99%(2012) - Scott Hanselman](https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx)
-* **Independent Business**<a name="Independent"></a>
-	* [Why You Should Charge Clients More Than You Think You’re Worth - Dorie Clark(HBR)](https://hbr.org/2017/10/why-you-should-charge-clients-more-than-you-think-youre-worth)	
-	* [How to Write a Statement of Work - Mary K Pratt](https://www.computerworld.com/article/2555324/how-to-write-a-statement-of-work.html)
-	* [Entrepreneurship for hackers - snyff(Christchurch CON 2019)](https://www.slideshare.net/snyff/entrepreneurship-for-hackers)
-	* [How to build your own Infosec Company - Mario Heiderich(nullcon Goa 2019)](https://www.youtube.com/watch?v=N2JG7qIlpi0)
-	* [The SOC2 Starting Seven - Latacora Blog](https://latacora.micro.blog/2020/03/12/the-soc-starting.html)
-		* Sage advice about SOC2 from Latacora.
 * **Informal Laws & Principles(and other things)**<a name="laws"></a>
-	* [The Gervais Principle - RibbonFarm](https://www.ribbonfarm.com/the-gervais-principle/)
-	* [Peter Principle - Wikipedia](https://en.wikipedia.org/wiki/Peter_principle)
-		* The Peter principle is a concept in management developed by Laurence J. Peter, which observes that people in a hierarchy tend to rise to their "level of incompetence". In other words, employees are promoted based on their success in previous jobs until they reach a level at which they are no longer competent, as skills in one job do not necessarily translate to another. The concept was enunciated in the 1969 book The Peter Principle by Peter and Raymond Hull.
-		* It was originally written as a satire.
+	* [Akin's Laws of Spacecraft Design - David L. Akin](https://spacecraft.ssl.umd.edu/akins_laws.html)
+	* [The Fallacy Of Chesterton’s Fence - Keith Lee](https://abovethelaw.com/2014/01/the-fallacy-of-chestertons-fence/)
+		* If you think you can improve a policy or procedure in your office, first ask yourself: Are you falling victim to the fallacy of Chesterton's fence?
+	* [Conway's Law - Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_law)
 	* [Dilbert Principle - Wikipedia](https://en.wikipedia.org/wiki/Dilbert_principle)
 		* The Dilbert principle refers to a 1990s theory by Dilbert cartoonist Scott Adams stating that companies tend to systematically promote their least competent employees to management (generally middle management), to limit the amount of damage they are capable of doing.
+	* [The Gervais Principle - RibbonFarm](https://www.ribbonfarm.com/the-gervais-principle/)
+	* [Golden Hammer - wiki.c2.com](http://wiki.c2.com/?GoldenHammer)
+	* [Goodhart's law - Wikipedia](https://en.wikipedia.org/wiki/Goodhart%27s_law)
+	* [Gresham’s Law: Why Bad Drives Out Good As Time Passes - Farnam Street](https://fs.blog/2009/12/mental-model-greshams-law/)
+	* [HiPPO FAQ](https://exp-platform.com/hippo/)
+		* Highest Paid Persons Opinion
+	* [Induced demand - Wikipedia](https://en.wikipedia.org/wiki/Induced_demand)
 	* [The Iron Law of Bureaucracy](https://www.jerrypournelle.com/reports/jerryp/iron.html)
 		* Pournelle's Iron Law of Bureaucracy states that in any bureaucratic organization there will be two kinds of people":
 			* `First, there will be those who are devoted to the goals of the organization. Examples are dedicated classroom teachers in an educational bureaucracy, many of the engineers and launch technicians and scientists at NASA, even some agricultural scientists and advisors in the former Soviet Union collective farming administration.`
 			* `Secondly, there will be those dedicated to the organization itself. Examples are many of the administrators in the education system, many professors of education, many teachers union officials, much of the NASA headquarters staff, etc.`
 		* The Iron Law states that in every case the second group will gain and keep control of the organization. It will write the rules, and control promotions within the organization.
-	* [Robustness Principle - Wikipedia](https://en.m.wikipedia.org/wiki/Robustness_principle)
-	* [Golden Hammer - wiki.c2.com](http://wiki.c2.com/?GoldenHammer)
-	* [The Shirky Principle - Technium](https://kk.org/thetechnium/the-shirky-prin/)
-		* “Institutions will try to preserve the problem to which they are the solution.” — Clay Shirky
 	* [Law #8: The Law of Duality - ericsink.com](https://ericsink.com/laws/Law_08.html)
 	* [No Silver Bullet - fmiljang.co.uk](http://www.fmjlang.co.uk/blog/NoSilverBullet.html)
 	* [Parkinson's Law - Wikipedia](https://en.wikipedia.org/wiki/Parkinson%27s_law)
-	* [Gresham’s Law: Why Bad Drives Out Good As Time Passes - Farnam Street](https://fs.blog/2009/12/mental-model-greshams-law/)
-	* [Akin's Laws of Spacecraft Design - David L. Akin](https://spacecraft.ssl.umd.edu/akins_laws.html)
-	* [The Fallacy Of Chesterton’s Fence - Keith Lee](https://abovethelaw.com/2014/01/the-fallacy-of-chestertons-fence/)
-		* If you think you can improve a policy or procedure in your office, first ask yourself: Are you falling victim to the fallacy of Chesterton's fence?
-	* [Simpson's paradox - Wikipedia](https://en.wikipedia.org/wiki/Simpson%27s_paradox)
-	* [HiPPO FAQ](https://exp-platform.com/hippo/)
-		* Highest Paid Persons Opinion
 	* [Parkinson’s law: how constraints can create freedom - Anne-Laure](https://nesslabs.com/parkinson-law)
-	* [Conway's Law - Wikipedia](https://en.wikipedia.org/wiki/Conway%27s_law)
-	* [Goodhart's law - Wikipedia](https://en.wikipedia.org/wiki/Goodhart%27s_law)
+	* [Peter Principle - Wikipedia](https://en.wikipedia.org/wiki/Peter_principle)
+		* The Peter principle is a concept in management developed by Laurence J. Peter, which observes that people in a hierarchy tend to rise to their "level of incompetence". In other words, employees are promoted based on their success in previous jobs until they reach a level at which they are no longer competent, as skills in one job do not necessarily translate to another. The concept was enunciated in the 1969 book The Peter Principle by Peter and Raymond Hull.
+		* It was originally written as a satire.	
+	* [Robustness Principle - Wikipedia](https://en.m.wikipedia.org/wiki/Robustness_principle)
+	* [Simpson's paradox - Wikipedia](https://en.wikipedia.org/wiki/Simpson%27s_paradox)
+	* [The Shirky Principle - Technium](https://kk.org/thetechnium/the-shirky-prin/)
+		* “Institutions will try to preserve the problem to which they are the solution.” — Clay Shirky
 	* [hacker-laws](https://github.com/dwmkerr/hacker-laws)
 		* Laws, Theories, Principles and Patterns that developers will find useful.
-	* [Induced demand - Wikipedia](https://en.wikipedia.org/wiki/Induced_demand)
 * **Interview Prep**<a name="interview"></a>
-	* [offensiveinterview - WebBreacher](https://github.com/WebBreacher/offensiveinterview)
-		* Interview questions to screen offensive (red team/pentest) candidates
-	* [The Hidden Flaw In Behavioral Interview Questions - Mark Murphy](https://www.forbes.com/sites/markmurphy/2014/12/03/the-hidden-flaw-in-behavioral-interview-questions)
-	* [test-your-admin-skills](https://github.com/trimstray/test-your-sysadmin-skills)
-		*  A collection of \*nix Sysadmin Test Questions with Answers for Interview/Exam (2018 Edition).
-	* [Linux System Administrator/DevOps Interview Questions - chassing](https://github.com/chassing/linux-sysadmin-interview-questions/blob/master/README.md)
-	* [Tech Interview Handbook - yangshun.github.io](https://yangshun.github.io/tech-interview-handbook/)
-	* [Ten Rules for Negotiating a Job Offer - Haseeb Qureshi](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
-	* [How Not to Bomb Your Offer Negotiation - Haseeb Qureshi](https://haseebq.com/farewell-app-academy-hello-airbnb-part-i/)
-	* [Deploying Guerrilla Tactics to Combat Stupid Tech Interviews - Erik Dietrch](https://daedtech.com/deploying-guerrilla-tactics-combat-stupid-tech-interviews/)
-	* [Security_Engineer_Interview_Questions - Tad Whitaker](https://github.com/tadwhitaker/Security_Engineer_Interview_Questions/blob/master/security-interview-questions)
-	* [Preparing the SRE interview - balthazar-rouberol](https://blog.balthazar-rouberol.com/preparing-the-sre-interview)
-	* [what-happens-when](https://github.com/alex/what-happens-when)
-		* An attempt to answer the age old interview question "What happens when you type google.com into your browser and press enter?"
+	* **Articles/Blogposts/Writeups**
+		* [The Hidden Flaw In Behavioral Interview Questions - Mark Murphy](https://www.forbes.com/sites/markmurphy/2014/12/03/the-hidden-flaw-in-behavioral-interview-questions)
+		* [Tech Interview Handbook - yangshun.github.io](https://yangshun.github.io/tech-interview-handbook/)
+		* [Ten Rules for Negotiating a Job Offer - Haseeb Qureshi](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
+		* [How Not to Bomb Your Offer Negotiation - Haseeb Qureshi](https://haseebq.com/farewell-app-academy-hello-airbnb-part-i/)
+		* [Deploying Guerrilla Tactics to Combat Stupid Tech Interviews - Erik Dietrch](https://daedtech.com/deploying-guerrilla-tactics-combat-stupid-tech-interviews/)
+		* [Preparing the SRE interview - balthazar-rouberol](https://blog.balthazar-rouberol.com/preparing-the-sre-interview)
+	* **Interview Questions**
+		* [test-your-admin-skills](https://github.com/trimstray/test-your-sysadmin-skills)
+			*  A collection of \*nix Sysadmin Test Questions with Answers for Interview/Exam (2018 Edition).
+		* [Linux System Administrator/DevOps Interview Questions - chassing](https://github.com/chassing/linux-sysadmin-interview-questions/blob/master/README.md)
+		* [offensiveinterview - WebBreacher](https://github.com/WebBreacher/offensiveinterview)
+			* Interview questions to screen offensive (red team/pentest) candidates
+		* [test-your-admin-skills](https://github.com/trimstray/test-your-sysadmin-skills)
+			*  A collection of \*nix Sysadmin Test Questions with Answers for Interview/Exam (2018 Edition).
+		* [Security_Engineer_Interview_Questions - Tad Whitaker](https://github.com/tadwhitaker/Security_Engineer_Interview_Questions/blob/master/security-interview-questions)
+		* [what-happens-when](https://github.com/alex/what-happens-when)
+			* An attempt to answer the age old interview question "What happens when you type google.com into your browser and press enter?"
 * **Interviewing**<a name="interviewing"></a>
 	* [STAR Method Technique Interview Questions & Answers - Christian Eilers](https://zety.com/blog/star-method-interview)
 	* [What I Learned Doing 250 Interviews at Google - Moishe Lettvin](https://www.youtube.com/watch?v=r8RxkpUvxK0)
@@ -343,6 +360,12 @@
 	* [How to Design an Agenda for an Effective Meeting - Roger Schwarz(HBR)](https://hbr.org/2015/03/how-to-design-an-agenda-for-an-effective-meeting)
 * **Mental Health**<a name="mentalh"></a>
 	* **General**
+		* [USA Mental Health First Aid](https://www.mentalhealthfirstaid.org/)
+		* [National Alliance on Mental Illness](https://www.nami.org/#)
+		* [Mental Health Hackers](https://www.mentalhealthhackers.org/)
+		* [Laziness Does Not Exist - But unseen barriers do - Devon Price](https://medium.com/@devonprice/laziness-does-not-exist-3af27e312d01)
+		* [#44CON: Establishing a Mental Health Toolbox - Dan Raywood](https://www.infosecurity-magazine.com/news/44con-mental-health-toolbox/)
+		* [Sick Systems: How to Keep Someone With You Forever - issendai](http://www.issendai.com/psychology/sick-systems.html)
 		* [Spoon theory - Wikipedia](https://en.wikipedia.org/wiki/Spoon_theory)
 		* [How to Be Kind to Yourself & Still Get Stuff Done - Leo Babauta](https://zenhabits.net/kind-done/)
 	* **Abusive Behaviour**
@@ -357,13 +380,6 @@
 	* **Depression**
 		* [Living with Depression in Tech - Jonathan Zdziarski](https://www.zdziarski.com/blog/?p=7437)
 		* [The Only Thing You Cant Fix Is Killing Yourself - notdan](https://medium.com/@notdan/the-only-thing-you-cant-fix-is-killing-yourself-da8b555a99f1)
-	* **General**
-		* [USA Mental Health First Aid](https://www.mentalhealthfirstaid.org/)
-		* [National Alliance on Mental Illness](https://www.nami.org/#)
-		* [Mental Health Hackers](https://www.mentalhealthhackers.org/)
-		* [Laziness Does Not Exist - But unseen barriers do - Devon Price](https://medium.com/@devonprice/laziness-does-not-exist-3af27e312d01)
-		* [#44CON: Establishing a Mental Health Toolbox - Dan Raywood](https://www.infosecurity-magazine.com/news/44con-mental-health-toolbox/)
-		* [Sick Systems: How to Keep Someone With You Forever - issendai](http://www.issendai.com/psychology/sick-systems.html)
 	* **Stress**
 		* [Stress management - Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/stress/art-20046037)
 		* [Understanding chronic stress - American Psychological Association](https://www.apa.org/helpcenter/understanding-chronic-stress)
@@ -391,6 +407,8 @@
 * **Non-Technical Skills**<a name="non-tech"></a>
 	* [Relearning the Art of Asking Questions - HBR](https://hbr.org/2015/03/relearning-the-art-of-asking-questions)
 	* [How To Ask Questions The Smart Way - Eric Raymond](http://www.catb.org/esr/faqs/smart-questions.html)
+* **Offices**
+	* [The History of Office Design - k2space](https://k2space.co.uk/knowledge/history-of-office-design/)
 * **Organizational Theory/Stuff about Organizations**<a name="orgtheory"></a>
 	* [Organizational Theory - Wikipedia](https://en.wikipedia.org/wiki/Organizational_theory)
 	* [Bureaucratic drift - Wikipedia](https://en.wikipedia.org/wiki/Bureaucratic_drift)
@@ -474,6 +492,7 @@
 	* **History**
 		* [If I Told You I’d Have to Kill You: The Story Behind “The Secret History of Silicon Valley” - Steve Blank](https://steveblank.com/2009/03/23/if-i-told-you-i%e2%80%99d-have-to-kill-you-the-story-behind-the-secret-history-of-silicon-valley/)
 	* **Shady things**
+		* **Articles**
 			* [Amazon Scooped Up Data From Its Own Sellers to Launch Competing Products - Angela Owens(2020)](https://www.wsj.com/amp/articles/amazon-scooped-up-data-from-its-own-sellers-to-launch-competing-products-11587650015)
 			* [Amazon Met With Startups About Investing, Then Launched Competing Products - Dana Mattioloi, Cara Lombardo(2020)](https://www.wsj.com/articles/amazon-tech-startup-echo-bezos-alexa-investment-fund-11595520249)
 			* [What Does It Mean When Apple “Sherlocks” an App? - Justin Pot(2017)](https://www.google.com/amp/s/www.howtogeek.com/297651/what-does-it-mean-when-a-company-sherlocks-an-app)
@@ -505,3 +524,7 @@
 			* Attrition.org (http://attrition.org/) is a computer security web site dedicated to the collection, dissemination and distribution of information about the security industry for anyone interested in the subject. They maintain one of the only open and honest grim look at the industry, reminding everyone that we must strive to be better than we have been historically. The crusade to expose industry frauds and inform the public about incorrect information in computer security articles is a primary goal of the site. Previously, Attrition.org maintained the largest catalogs of security advisories, text files, and humorous image galleries. They are also known for maintaining the largest mirror of Web site defacements and the creation of the Data Loss Database (Open Source), which eventually became DatalossDB (http://datalossdb.org/).
 * **Other**
 	* [Microservices - KRAZAM](https://www.youtube.com/watch?v=y8OnoxKotPQ&app=desktop)
+	* [The Expert](https://www.youtube.com/watch?v=BKorP55Aqvg)
+	* [Elon Musk Today](https://elonmusk.today/)
+		* Like Donald Trump, But For Nerds
+

@@ -101,6 +101,8 @@
 	* [Red v Blue Workshop - WOPR Summit - Taylor, Dan, Phil](https://github.com/ahhh/presentations/blob/master/Red%20V%20Blue%20Workshop.pdf)
 * **General Informative Information**<a name="gii"></a>
 	* **Articles/Blogposts/Writeups**
+		* [Offensive Tool Design and the Weaponization Dilemma - Matt Graeber(2015)](http://www.exploit-monday.com/2015/12/offensive-tool-design-and-weaponization.html)
+		* [The PowerSploit Manifesto - Matt Graeber(2015)](http://www.exploit-monday.com/2015/12/the-powersploit-manifesto.html)
 		* [Fools of Golden Gate](https://blog.silentsignal.eu/2017/05/08/fools-of-golden-gate/)
 			* How major vulnerabilities/large amounts of publicly vulnerable systems can exist without public recognition for long periods of time. (i.e. CVEs(10.0) exist, but no mapping in nessus/metasploit/etc)
 		* [Red Teaming and the Adversarial Mindset: Have a Plan, Backup Plan and Escape Plan - ITS](https://www.itstactical.com/digicom/security/red-teaming-and-the-adversarial-mindset-have-a-plan-backup-plan-and-escape-plan/)
@@ -382,8 +384,6 @@
 
 
 
-
-
 --------------------------------------------------------
 ### <a name="cobaltstrike"></a>Cobalt Strike
 * **101**<a name="cs101"></a>
@@ -412,6 +412,10 @@
 	* [The Return of Aggressor - RastaMouse](https://rastamouse.me/2019/06/the-return-of-aggressor/)
 		* I’ve previously blogged about how to combine MSBuild and TikiSpawn to execute a Cobalt Strike agent, circumventing AppLocker and Defender on Windows 10 1903. Inspired by Forty North’s Aggressor implemention I thought it would be fun to knock something similar up to leverage TikiSpawn for lateral movement via MSBuild and WMI, and this will hopefully mark the beginning of more Aggressor for common/popular TikiTorch use cases.
 		* [Code](https://github.com/rasta-mouse/TikiTorch/tree/master/Aggressor)
+	* [RemoteProcessInjection](https://github.com/Mr-Un1k0d3r/RemoteProcessInjection)
+		* C# remote process injection utility for Cobalt Strike. The idea is to perform process injection without spawning Powershell and also use a custom obfuscated shellcode payload.
+	* [SharpCompile](https://github.com/SpiderLabs/SharpCompile)
+		* SharpCompile is an aggressor script for Cobalt Strike which allows you to compile and execute C# in realtime. This is a more slick approach than manually compiling an .NET assembly and loading it into Cobalt Strike. The project aims to make it easier to move away from adhoc PowerShell execution instead creating a temporary assembly and executing using beacon's 'execute-assembly' in seconds.
 * **Beacon**<a name="csbeacon"></a>
 	* **101**
 		* [Beacon Object Files - cs.com](https://www.cobaltstrike.com/help-beacon-object-files)
@@ -636,6 +640,9 @@
 	* **ARP**
 		* [Zarp](https://github.com/hatRiot/zarp)
 			* Zarp is a network attack tool centered around the exploitation of local networks. This does not include system exploitation, but rather abusing networking protocols and stacks to take over, infiltrate, and knock out. Sessions can be managed to quickly poison and sniff multiple systems at once, dumping sensitive information automatically or to the attacker directly. Various sniffers are included to automatically parse usernames and passwords from various protocols, as well as view HTTP traffic and more. DoS attacks are included to knock out various systems and applications.
+	* **BITS**
+		* [LOLBITS](https://github.com/Kudaes/LOLBITS)
+			* LOLBITS is a C# reverse shell that uses Microsoft's Background Intelligent Transfer Service (BITS) to communicate with the Command and Control backend. The Command and Control backend is hidden behind an apparently harmless flask web application and it's only accesible when the HTTP requests received by the app contain a valid authentication header.
 	* **Browser**
 		* [Browser-C2](https://github.com/0x09AL/Browser-C2)
 			* Post Exploitation agent which uses a browser to do C2 operations.
@@ -808,6 +815,8 @@
 			* A guide to setting up domain fronting, and exploring additional quirks that StackPath can provide.
 		* [Hardening Your Azure Domain Front - Steve Borosh](https://medium.com/@rvrsh3ll/hardening-your-azure-domain-front-7423b5ab4f64)
 	* **Talks & Videos**
+		* [Domain Fronting is Dead, Long Live Domain Fronting Using TLS 1.3 - Erik Hunstad(DEF CON Safe Mode)](https://www.youtube.com/watch?v=TDg092qe50g&list=PL9fPq3eQfaaBk9DFnyJRpxPi8Lz1n7cFv&index=7)
+			* Domain fronting, the technique of circumventing internet censorship and monitoring by obfuscating the domain of an HTTPS connection was killed by major cloud providers in April of 2018. However, with the arrival of TLS 1.3, new technologies enable a new kind of domain fronting. This time, network monitoring and internet censorship tools are able to be fooled on multiple levels. This talk will give an overview of what domain fronting is, how it used to work, how TLS 1.3 enables a new form of domain fronting, and what it looks like to network monitoring. You can circumvent censorship and monitoring today without modifying your tools using an open source TCP and UDP pluggable transport tool that will be released alongside this talk.
 	* **Tools**
 		* **Finding Vulnerable Domains**
 			* [DomainFrontDiscover](https://github.com/peewpw/DomainFrontDiscover)
@@ -936,11 +945,12 @@
 		* firstorder is designed to evade Empire's C2-Agent communication from anomaly-based intrusion detection systems. It takes a traffic capture file (pcap) of the network and tries to identify normal traffic profile. According to results, it creates an Empire HTTP listener with appropriate options.
 	* [e2modrewrite](https://github.com/infosecn1nja/e2modrewrite)
 		* Convert Empire profiles to Apache mod_rewrite scripts
+	* [PrintDemon](https://github.com/BC-SECURITY/Invoke-PrintDemon)
+		* This is an PowerShell Empire launcher PoC using PrintDemon and Faxhell. The module has the Faxhell dll already embedded which levages CVE-2020-1048 for privilege escalation. The vulnerability allows an unprivileged user to gain system-level privileges and is based on @ionescu007 PoC.
+* **Multi-User GUI**
 	* [StarKiller](https://github.com/BC-SECURITY/Starkiller)
 		* Starkiller is a Frontend for Powershell Empire. It is an Electron application written in VueJS.
 		* [An Introduction to Starkiller - CX01N](https://www.bc-security.org/post/an-introduction-to-starkiller)
-	* [PrintDemon](https://github.com/BC-SECURITY/Invoke-PrintDemon)
-		* This is an PowerShell Empire launcher PoC using PrintDemon and Faxhell. The module has the Faxhell dll already embedded which levages CVE-2020-1048 for privilege escalation. The vulnerability allows an unprivileged user to gain system-level privileges and is based on @ionescu007 PoC.
 
 
 
@@ -1291,6 +1301,19 @@
 			* This repo contains samples that demonstrate the API used in Windows classic desktop applications.
 		* [WinPwnage](https://github.com/rootm0s/WinPwnage)
 			* The meaning of this repo is to study the techniques. Techniques are found online, on different blogs and repos here on GitHub. I do not take credit for any of the findings, thanks to all the researchers.
+	* **Language Specific Stuff**
+		* **.NET/C#**
+			* See [CSharp Stuff]() in PrivescPostEx
+			* [Changeling - A Feature Morphing Creature - Adam Brown](https://coffeegist.com/security/changeling-a-feature-morphing-creature/)
+				* This post will be the first post in a continuing series that aims to add new methods to your arsenal, allowing you to build more payloads with less effort on your own assessments. The feature that we’ll be taking a look at today is Embedded Resources in C# projects. This is a feature that will allow us to compile code once, and reuse it on multiple assessments
+		* **Go**
+			* **Articles/Blogposts/Writeups**
+			* **Talks/Presentations/Videos**
+				* [(P|G)Ohst Exploitation - Carl Vincent](https://archive.org/details/P-G_Ohst_Exploitation)
+					* This talk focuses on showcasing examples of the GO programming language being utilized to rapidly prototype, and ultimately maintain software designed to perform common or useful post-exploitation tasks. Source code for each feature will be provided, and is intended to exaggerate the limited amount of code and code familiarity required to construct relatively complex payloads capable of performing offensive security tasks fully either in an automated, or fully antonymous context.
+			* **Libraries**
+				* [OffensiveGoLang](https://github.com/bluesentinelsec/OffensiveGoLang)
+					* Offensive GoLang is is a collection of Go packages containing commonly used cyber adversary emulation functions. Offensive GoLang accomplishes nothing by itself; rather, it is intended to support rapid red team tool development by providing common functions in a modular format.
 * **Delivery & Staging**<a name="pds"></a>
 	* **Articles/Blogposts/Writeups**
 		* [Windows oneliners to download remote payload and execute arbitrary code](https://arno0x0x.wordpress.com/2017/11/20/windows-oneliners-to-download-remote-payload-and-execute-arbitrary-code/)
@@ -1474,8 +1497,10 @@
 
 
 --------------
-### <a name="simtools"></a> Simulation Tools
+### <a name="simtools"></a> Adversary Simulation Stuff
 * **Articles/Blogposts/Writeups**<a name="sta"></a>
+	* [Offensive Tool Design and the Weaponization Dilemma - Matt Graeber(2015)](http://www.exploit-monday.com/2015/12/offensive-tool-design-and-weaponization.html)
+	* [The PowerSploit Manifesto - Matt Graeber(2015)](http://www.exploit-monday.com/2015/12/the-powersploit-manifesto.html)
 	* [Invoke-Adversary – Simulating Adversary Operations - Moti Bani](https://blogs.technet.microsoft.com/motiba/2018/04/09/invoke-adversary-simulating-adversary-operations/)
 	* [Advanced Threat Analytics Attack Simulation Playbook - Microsoft](https://gallery.technet.microsoft.com/Advanced-Threat-Analytics-8b0a86bc)
 * **Talks/Presentations/Videos**<a name="stpv"></a>
@@ -1483,6 +1508,7 @@
 		* The security marketplace is saturated with product claims of detection coverage that have been almost impossible to evaluate, all while intrusions continue to make headlines. To help organizations better understand the detection provided by a commercial or open-source technology platform, a framework is necessary to measure depth and breadth of coverage. This presentation builds on the MITRE ATT&CK framework by explaining how to measure the coverage and quality of ATT&CK, while demonstrating open-source Red Team tools and automation that generate artifacts of post-exploitation.
 	* [Automated Adversary Emulation - David Hunt(BSidesCharm2019)](https://www.youtube.com/watch?v=gTGnHXgqZCo)
 		* CALDERA is an open-source application designed to automate adversary emulation. With CALDERA, blue teams can create adversary profiles based on ATT&CK, unleashing them on their networks to test their vulnerability to specific techniques. Learn how to use and configure CALDERA to run a variety of tests, ranging from small scoped and heavily scripted, to AI-driven fully automated operations.
+	* [RedSourcing: Cyber War Tool Development Outsourcing - Christopher Glyer, Nick Carr(Cyber June'gle Virtual Summit 2020)](https://www.youtube.com/watch?v=tA37b7kOBy8&list=PLruly0ngXhPGvyl-gOp4d_TvIiedloX1l&index=8)
 * **Adversary Simulation Tools**<a name="sast"></a>
 	* **Self-Contained**
 		* [Caldera](https://github.com/mitre/caldera)
@@ -1504,6 +1530,8 @@
 			* PurpleSpray is an adversary simulation tool that executes password spray behavior under different scenarios and conditions with the purpose of generating attack telemetry in properly monitored Windows enterprise environments. Blue teams can leverage PurpleSpray to identify gaps in visibility as well as test the resilience, improve existing and build new detection analytics for password spraying attacks.
 		* [Leonidas](https://github.com/FSecureLABS/leonidas)
 			* This is the repository containing Leonidas, a framework for executing attacker actions in the cloud. It provides a YAML-based format for defining cloud attacker tactics, techniques and procedures (TTPs) and their associated detection properties.
+		* [0xsp-Mongoose](https://github.com/lawrenceamer/0xsp-Mongoose)
+			* A unique framework for cybersecurity simulation and red teaming operations, windows auditing for newer vulnerabilities, misconfigurations and privilege escalations attacks, replicate the tactics and techniques of an advanced adversary in a network.
 	* **Tooling Automation**
 		* [AutoTTP](https://github.com/jymcheong/AutoTTP)
 			* Automated Tactics Techniques & Procedures. Re-running complex sequences manually for regression tests, product evaluations, generate data for researchers & so on can be tedious. I toyed with the idea of making it easier to script Empire (or any frameworks/products/toolkits that provide APIs like Metasploit (RPC), Cobalt-Strike & so on) using IDE like Visual Studio Code (or equivalent). So I started to design AutoTTP. This is still very much work in progress. Test with Empire 2.2.
@@ -1522,9 +1550,9 @@
 
 
 
+
 -----------------------
 ### <a name="unusual"></a> Pen Testing Specific Stuff(that doesn't fit in PrivEsc/PostEx or Network_Attacks)
-* Yes, I know how large the market share of SAP is. Thank you for the heads up.
 * **AIX<a name="aix"></a>
 	* **General**
 		* [AIX for Penetration Testers 2017 thevivi.net](https://thevivi.net/2017/03/19/aix-for-penetration-testers/)

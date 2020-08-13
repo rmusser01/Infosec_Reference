@@ -42,22 +42,36 @@
 
 | Linux Specific Technologies  | macOS Specific Technologies  | Windows Specific Technologies  |
 |:-- |:-- |:-- |
-|   |   | [ClickOnce](#clickonce)  |
-|   |   | [Code Signing](#codesign)  |
-|   |   | [(Distributed) Component-Object-Model(COM)](#dcom)  |
-|   |   | [DPAPI](#dpapi)  |
-|   |   | [ETW](#etw)  |
+|   |   | [Alternate Data Streams](#wads)  |
+|   | [Code Signing](#osxsign)  | [AppLocker](#winapplocker)  |
+|   | [Endpoint Security Framework](#osxesf) | [Application Shims](#winappshim)  |
+|   | [GateKeeper](#osxgk)  | [ClickOnce](#clickonce)  |
+|   |   | [Credential Guard](#credguard)  |
+|   | [System Integrity Protection](#osxsip)  | [Code Signing](#codesign)  |
+|   | [Transparency, Consent, and Control](#osxtcc)  | [(Distributed) Component-Object-Model(COM)](#dcom)  |
+|   | [XProtect](#osxxprotect)  | [Dynamic Link Library](#dll)  |
+|   |   | [Data Protection API(DPAPI)](#dpapi)  |
+|   |   | [Device Guard](#devguard)  |
+|   |   | [Event Tracing for Windows](#etw)  |
 |   |   | [Print & Fax](#printfax)  |
+|   |   | [File Extensions](#)  |
 |   |   | [LNK Files](#LNK)  |
 |   |   | [Windows Logging](#winlog)  |
+|   |   | [MS-SQL Server](#ms-sql-server)  |
+|   |   | [Named Pipes](#namedpipes)  |
+|   |   | [PowerShell](#powershell)  |
 |   |   | [PowerShell Desired State](#winpsc)  |
-|   |   | [Windows Communication Facility](#wcf)  |
+|   |   | [Windows Communication Foundation](#wcf)  |
 |   |   | [Windows Notification Facility](#wnf)  |
+|   |   | [Windows Remote Management](#winrm)  |
 |   |   | [Windows Scripting Host](#wsh)  |
 |   |   |   |
 
 ----------------------------------------------------------------------
 
+To Do
+* Change AV Avoidance stuff to specific OS
+* Sort AMSI stuff
 
 ------------------------------------------------------------------------------------------------------------------------
 ## <a name="privesc"></a>Privilege Escalation 
@@ -1199,8 +1213,66 @@
 	* [MacOS Red Teaming 209: macOS Frameworks for Command and Control - Action Dan](https://lockboxx.blogspot.com/2019/09/macos-red-teaming-209-macos-frameworks.html)
 	* [MacOS Red Teaming 210: Abusing Pkgs for Privilege Escalation - Action Dan](https://lockboxx.blogspot.com/2019/10/macos-red-teaming-210-abusing-pkgs-for.html)
 	* [MacOS Red Teaming 211: Dylib Hijacking - Action Dan](https://lockboxx.blogspot.com/2019/10/macos-red-teaming-211-dylib-hijacking.html)
-* **Technologies**
+
+
+---------------------------
+#### macOS Technologies<a name="osxtech"></a>
+* **Code Signing**<a name="osxsign"></a>
 	* [macOS Code Signing In Depth](https://developer.apple.com/library/content/technotes/tn2206/_index.html)
+	* [Launch Service Keys - `LSFileQuarantineEnabled`](https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/LaunchServicesKeys.html#//apple_ref/doc/uid/TP40009250-SW10)
+* **Endpoint Security Framework**<a name="osxesf"></a>
+	* [EndpointSecurity - developer.apple](https://developer.apple.com/documentation/endpointsecurity)
+		* Endpoint Security is a C API for monitoring system events for potentially malicious activity. Your client, which you can write in any language supporting native calls, registers with Endpoint Security to authorize pending events, or receive notifications of events that have already occurred. These events include process executions, mounting file systems, forking processes, and raising signals. Develop your system extension with Endpoint Security and package it in an app that uses the SystemExtensions framework to install and upgrade the extension on the user’s Mac.
+* **GateKeeper**<a name="osxgk"></a>
+	* [App security overview - support.apple](https://support.apple.com/guide/security/app-security-overview-sec35dd877d0/1/web/1)
+	* [Protecting against malware - support.apple](https://support.apple.com/guide/security/protecting-against-malware-sec469d47bd8/1/web/1)
+	* [Gatekeeper and runtime protection - support.apple](https://support.apple.com/guide/security/gatekeeper-and-runtime-protection-sec5599b66df/1/web/1)
+	* [Gatekeeper - Wikipedia](https://en.wikipedia.org/wiki/Gatekeeper_(macOS))
+    	* 'macOS includes a technology called Gatekeeper, that's designed to ensure that only trusted software runs on your Mac.'
+	* [Safely open apps on your Mac - support.apple](https://support.apple.com/en-us/HT202491)
+* **System Integrity Protection**<a name="osxsip"></a>
+	* [System Integrity Protection - Wikipedia](https://en.wikipedia.org/wiki/System_Integrity_Protection)
+	* [About System Integrity Protection on your Mac - support.apple.com](https://support.apple.com/en-us/HT204899)
+	* [Configuring System Integrity Protection - developer.apple](https://developer.apple.com/library/archive/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html#//apple_ref/doc/uid/TP40016462-CH5-SW1)
+* **Transparency, Consent, and Control**<a name="osxtcc"></a>
+	* []()
+* **XProtect**<a name="osxxprotect"></a>
+	* [XProtect Explained: How Your Mac’s Built-in Anti-malware Software Works - Chris Hoffman(2015)](https://www.howtogeek.com/217043/xprotect-explained-how-your-macs-built-in-anti-malware-works/)
+	* [How the “antimalware” XProtect for MacOS works and why it detects poorly and badly - ElevenPaths(2019)](https://business.blogthinkbig.com/antimalware-xprotect-macos/)
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1533,7 +1605,7 @@
 				* [Alternative psexec: no wmi, services or mof needed - Diablohorn](https://diablohorn.com/2013/10/19/alternative-psexec-no-wmi-services-or-mof-needed/)
 					* [Poc](https://github.com/DiabloHorn/DiabloHorn/tree/master/remote_appinitdlls)		
 		* **Application Shimming**
-			* [Windows Persistence using Application Shimming - Raj Chandel(2020)](https://www.hackingarticles.in/windows-persistence-using-application-shimming/)
+			* [Windows Persistence using Application Shimming - Kavish Tyagi(2020)](https://www.hackingarticles.in/windows-persistence-using-application-shimming/)
 			* [Post Exploitation Persistence With Application Shims (Intro)](http://blacksunhackers.club/2016/08/post-exploitation-persistence-with-application-shims-intro/)
 			* [Shimming for Post Exploitation(blog)](http://www.sdb.tools/)
 			* [Demystifying Shims – or – Using the App Compat Toolkit to make your old stuff work with your new stuff](https://web.archive.org/web/20170910104808/https://blogs.technet.microsoft.com/askperf/2011/06/17/demystifying-shims-or-using-the-app-compat-toolkit-to-make-your-old-stuff-work-with-your-new-stuff/)
@@ -1763,7 +1835,7 @@
 			* [AlwaysInstallElevated - docs.ms](https://docs.microsoft.com/en-us/windows/win32/msi/alwaysinstallelevated)
 			* [Always Install Elevated - NetbiosX](https://pentestlab.blog/2017/02/28/always-install-elevated/)
 			* [Get-RegistryAlwaysInstallElevated - PowerSploit](https://powersploit.readthedocs.io/en/latest/Privesc/Get-RegistryAlwaysInstallElevated/)
-		* **DLL Stuff** <a name="dll"></a>
+		* **DLL Stuff** <a name="dllstuff"></a>
 			* [Creating a Windows DLL with Visual Basic](http://www.windowsdevcenter.com/pub/a/windows/2005/04/26/create_dll.html)
 			* [Calling DLL Functions from Visual Basic Applications - msdn](https://msdn.microsoft.com/en-us/library/dt232c9t.aspx)
 			* **DLL Hijacking/Plant**
@@ -1946,16 +2018,21 @@
 					* [CVE-2019-1040 scanner](https://github.com/fox-it/cve-2019-1040-scanner)
 						* Checks for CVE-2019-1040 vulnerability over SMB. The script will establish a connection to the target host(s) and send an invalid NTLM authentication. If this is accepted, the host is vulnerable to CVE-2019-1040 and you can execute the MIC Remove attack with ntlmrelayx. Note that this does not generate failed login attempts as the login information itself is valid, it is just the NTLM message integrity code that is absent, which is why the authentication is refused without increasing the badpwdcount.
 			* **NTLM Relay**
-				* [NTLM Relay - Pixis](https://en.hackndo.com/ntlm-relay/)
-				* [Playing with Relayed Credentials - @agsolino](https://www.secureauth.com/blog/playing-relayed-credentials)
-				* [Server Message Block: SMB Relay Attack (Attack That Always Works) - CQURE Academy](https://cqureacademy.com/blog/penetration-testing/smb-relay-attack)
-				* [Practical guide to NTLM Relaying in 2017 (A.K.A getting a foothold in under 5 minutes) - byt3bl33d3r](https://byt3bl33d3r.github.io/practical-guide-to-ntlm-relaying-in-2017-aka-getting-a-foothold-in-under-5-minutes.html)
-				* [An SMB Relay Race – How To Exploit LLMNR and SMB Message Signing for Fun and Profit - Jordan Drysdale](https://www.blackhillsinfosec.com/an-smb-relay-race-how-to-exploit-llmnr-and-smb-message-signing-for-fun-and-profit/)
-				* [Effective NTLM / SMB Relaying - mubix](https://malicious.link/post/2014/effective-ntlm-smb-relaying/)
-				* [SMB Relay with Snarf - Jeff Dimmock](https://bluescreenofjeff.com/2016-02-19-smb-relay-with-snarfjs-making-the-most-of-your-mitm/)
-				* [Responder with NTLM relay and Empire - chryzsh](https://chryzsh.gitbooks.io/darthsidious/content/execution/responder-with-ntlm-relay-and-empire.html)
-				* [What is old is new again: The Relay Attack - @0xdeaddood, @agsolino(2020)](https://www.secureauth.com/blog/what-old-new-again-relay-attack)
-					* The purpose of this blog post is to present a new approach to ntlmrelayx.py allowing multi-relay attacks, that means, using just a single connection to attack several targets. On top of this, we added the capability of relaying connections for specific target users.
+				* **Articles/Blogposts/Writeups**
+					* [Practical guide to NTLM Relaying in 2017 (A.K.A getting a foothold in under 5 minutes) - byt3bl33d3r](https://byt3bl33d3r.github.io/practical-guide-to-ntlm-relaying-in-2017-aka-getting-a-foothold-in-under-5-minutes.html)
+					* [NTLM Relay - Pixis](https://en.hackndo.com/ntlm-relay/)
+					* [Playing with Relayed Credentials - @agsolino(2018)](https://www.secureauth.com/blog/playing-relayed-credentials)
+					* [Server Message Block: SMB Relay Attack (Attack That Always Works) - CQURE Academy](https://cqureacademy.com/blog/penetration-testing/smb-relay-attack)
+					* [An SMB Relay Race – How To Exploit LLMNR and SMB Message Signing for Fun and Profit - Jordan Drysdale](https://www.blackhillsinfosec.com/an-smb-relay-race-how-to-exploit-llmnr-and-smb-message-signing-for-fun-and-profit/)
+					* [Effective NTLM / SMB Relaying - mubix](https://malicious.link/post/2014/effective-ntlm-smb-relaying/)
+					* [SMB Relay with Snarf - Jeff Dimmock](https://bluescreenofjeff.com/2016-02-19-smb-relay-with-snarfjs-making-the-most-of-your-mitm/)
+					* [Responder with NTLM relay and Empire - chryzsh](https://chryzsh.gitbooks.io/darthsidious/content/execution/responder-with-ntlm-relay-and-empire.html)
+					* [What is old is new again: The Relay Attack - @0xdeaddood, @agsolino(2020)](https://www.secureauth.com/blog/what-old-new-again-relay-attack)
+						* The purpose of this blog post is to present a new approach to ntlmrelayx.py allowing multi-relay attacks, that means, using just a single connection to attack several targets. On top of this, we added the capability of relaying connections for specific target users.
+				* **Mitigation**
+					* Enforce SMB Signing.
+					* [How to enable SMB signing in Windows NT - support.ms](https://support.microsoft.com/en-us/help/161372/how-to-enable-smb-signing-in-windows-nt)
+					* [All You Need To Know About Windows SMB Signing - Lavanya Rathnam(2018)](http://techgenix.com/windows-smb-signing/)
 			* **Hot Potato**
 				* [Hot Potato](https://foxglovesecurity.com/2016/01/16/hot-potato/)
 					* Hot Potato (aka: Potato) takes advantage of known issues in Windows to gain local privilege escalation in default configurations, namely NTLM relay (specifically HTTP->SMB relay) and NBNS spoofing.
@@ -2488,6 +2565,7 @@
 		* [An Overview of KB2871997 - msrc-blog.ms](https://msrc-blog.microsoft.com/2014/06/05/an-overview-of-kb2871997/)
 			* Increasing complexity of retrieving clear-text creds
 		* [Cached and Stored Credentials Technical Overview - docs.ms(2016)](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh994565(v%3Dws.11))
+			* Applies To: Windows Vista, Windows Server 2008, Windows 7, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, Windows Server 2012, Windows 8
 	* **Articles/Blogposts/Writeups**
 		* [Cached and Stored Credentials - ldapwiki](https://ldapwiki.com/wiki/Cached%20and%20Stored%20Credentials)
 		* [Hunting for Credentials  Dumping in Windows  Environment - Teymur Kheirhabarov - ZeroNights](https://2017.zeronights.org/wp-content/uploads/materials/ZN17_Kheirkhabarov_Hunting_for_Credentials_Dumping_in_Windows_Environment.pdf)
@@ -2551,12 +2629,16 @@
 			* [gosecretsdump](https://github.com/C-Sto/gosecretsdump)
 				* This is a conversion of the impacket secretsdump module into golang. It's not very good, but it is quite fast. Please let me know if you find bugs, I'll try and fix where I can - bonus points if you can provide sample .dit files for me to bash against.
 	* **Internal Monologue**
-	    * [Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS](https://github.com/eladshamir/Internal-Monologue/)
-	        * In secure environments, where Mimikatz should not be executed, an adversary can perform an Internal Monologue Attack, in which they invoke a local procedure call to the NTLM authentication package (MSV1_0) from a user-mode application through SSPI to calculate a NetNTLM response in the context of the logged on user, after performing an extended NetNTLM downgrade.
-		* [Getting user credentials is not only admin’s privilege - Anton Sapozhnikov(Syscan14)](https://infocon.org/cons/SyScan/SyScan%202014%20Singapore/SyScan%202014%20presentations/SyScan2014_AntonSapozhnikov_GettingUserCredentialsisnotonlyAdminsPrivilege.pdf)
-		* [Stealing Hashes without Admin via Internal Monologue - Practical Exploitation(mubix@hak5)](https://www.youtube.com/watch?v=Q8IRcO0s-fU)
-		* [selfhash](https://github.com/snowytoxa/selfhash)
-			* Selfhash allows you to get password hashes of the current user. This tool doesn't requere high privileges i.e. SYSTEM, but on another hand it returns NTLM Challenge Response, so you could crack it later.
+		* **101**
+			* [Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS](https://github.com/eladshamir/Internal-Monologue/)
+		        * In secure environments, where Mimikatz should not be executed, an adversary can perform an Internal Monologue Attack, in which they invoke a local procedure call to the NTLM authentication package (MSV1_0) from a user-mode application through SSPI to calculate a NetNTLM response in the context of the logged on user, after performing an extended NetNTLM downgrade.
+		* **Articles/Blogposts/Writeups**
+			* [Retrieving NTLM Hashes without touching LSASS: the “Internal Monologue” Attack - Andrea Fortuna(2018)](https://www.andreafortuna.org/2018/03/26/retrieving-ntlm-hashes-without-touching-lsass-the-internal-monologue-attack/)
+			* [Getting user credentials is not only admin’s privilege - Anton Sapozhnikov(Syscan14)](https://infocon.org/cons/SyScan/SyScan%202014%20Singapore/SyScan%202014%20presentations/SyScan2014_AntonSapozhnikov_GettingUserCredentialsisnotonlyAdminsPrivilege.pdf)
+			* [Stealing Hashes without Admin via Internal Monologue - Practical Exploitation(mubix@hak5)](https://www.youtube.com/watch?v=Q8IRcO0s-fU)
+		* **Tools**
+			* [selfhash](https://github.com/snowytoxa/selfhash)
+				* Selfhash allows you to get password hashes of the current user. This tool doesn't requere high privileges i.e. SYSTEM, but on another hand it returns NTLM Challenge Response, so you could crack it later.
 	* **Keylogger**
 		* **Articles/Blogpost/Writeups**
 			* [Keylogging by Using Windows’ Built-in Mechanisms Only - Paula Januszkiewicz(2020)](https://cqureacademy.com/blog/windows-internals/keylogging)
@@ -2586,13 +2668,14 @@
 		* **Tools**
 			* [windows_sshagent_extract](https://github.com/ropnop/windows_sshagent_extract)
 				* PoC code to extract private keys from Windows 10's built in ssh-agent service
-	* **Local Security Authority Subsystem Service(LSASS&LSA)**
+	* **Local Security Authority Subsystem Service(LSA & LSASS&)**
 		* **101**
 			* [Local Security Authority Subsystem Service - Wikipedia](https://en.wikipedia.org/wiki/Local_Security_Authority_Subsystem_Service)
 			* [Local Security Authority SubSystem Service - ldapwiki](https://ldapwiki.com/wiki/Local%20Security%20Authority%20Subsystem%20Service)
 			* [Security Subsystem Architecture - 2012](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-2000-server/cc961760(v=technet.10)?redirectedfrom=MSDN)
 			* [LSA Authentication - docs.ms(2018)](https://docs.microsoft.com/en-us/windows/win32/secauthn/lsa-authentication?redirectedfrom=MSDN)
 		* **Articles/Blogposts/Writeups**
+			* [Dumping LSA Secrets - @spottheplanet(2019)](https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dumping-lsa-secrets)
 			* [Dumping Lsass.exe to Disk Without Mimikatz and Extracting Credentials - @spotheplanet](https://ired.team/offensive-security/credential-access-and-credential-dumping/dump-credentials-from-lsass-process-without-mimikatz)
 			* [Some ways to dump LSASS.exe - Mark Mo](https://medium.com/@markmotig/some-ways-to-dump-lsass-exe-c4a75fdc49bf)
 			* [Extract credentials from lsass remotely - hackndo](https://en.hackndo.com/remote-lsass-dump-passwords/)
@@ -2657,11 +2740,6 @@
 				* [Mimikatz DCSync Usage, Exploitation, and Detection - Sean Metcalf](https://adsecurity.org/?p=1729)
 			* [Mimikatz and DCSync and ExtraSids, Oh My - harmj0y](http://www.harmj0y.net/blog/redteaming/mimikatz-and-dcsync-and-extrasids-oh-my/)
 			* [Active Directory Attack - DCSync - c0d3xpl0it](https://www.c0d3xpl0it.com/2018/06/active-directory-attack-dcsync.html)
-		* **DCShadow**
-			* [DCShadow - Minimal permissions, Active Directory Deception, Shadowception and more - Nikhil Mittal](http://www.labofapenetrationtester.com/2018/04/dcshadow.html)
-			* [DCShadow](https://www.dcshadow.com/)
-				* DCShadow is a new feature in mimikatz located in the lsadump module. It simulates the behavior of a Domain Controller (using protocols like RPC used only by DC) to inject its own data, bypassing most of the common security controls and including your SIEM. It shares some similarities with the DCSync attack (already present in the lsadump module of mimikatz).
-			* [Active Directory: What can make your million dollar SIEM go blind? - Vincent Le Toux, Benjamin Delpy](https://www.dropbox.com/s/baypdb6glmvp0j9/Buehat%20IL%20v2.3.pdf)
 		* **pypykatz**
 			* [pypykatz](https://github.com/skelsec/pypykatz)
 				* Mimikatz implementation in pure Python
@@ -2674,6 +2752,8 @@
 		* [NTLMRawUnhide.py](https://github.com/mlgualtieri/NTLMRawUnHide)
 			* NTLMRawUnhide.py is a Python3 script designed to parse network packet capture files and extract NTLMv2 hashes in a crackable format. The tool was developed to extract NTLMv2 hashes from files generated by native Windows binaries like NETSH.EXE and PKTMON.EXE without conversion.
 	* **Password Filter DLL**
+		* [PasswordStealing -PSBits](https://github.com/gtworek/PSBits/tree/master/PasswordStealing)
+			* "Password stealing DLL I wrote around 1999, some time before Active Directory was announced. And of course it still works. First, it was written in 32-bit Delphi (pardon my language) and when it stopped working as everything changed into 64-bit - in (so much simpler when it comes to Win32 API) C, as I did not have 64-bit Delphi. The original implementation was a bit more complex, including broadcasting the changed password over the network etc. but now it works as a demonstration of an idea, so let's keep it as simple as possible. It works everywhere - on local machines for local accounts and on DCs for domain accounts."
 		* [Credential Access – Password Filter DLL - NetbiosX](https://pentestlab.blog/2020/02/10/credential-access-password-filter-dll/)
 	* **Password Spraying**
 		* **Linux**
@@ -2712,7 +2792,7 @@
 			* Extracts cookies from Chrome.
 			* [Blogpost](https://jmpesp.me/sharpcookiemonster/)
 	* **Wifi(saved)**
-		* [Credential Dumping: Wireless - Raj Chandel(2020)](https://www.hackingarticles.in/credential-dumping-wireless/)
+		* [Credential Dumping: Wireless - Yashika Dhir(2020)](https://www.hackingarticles.in/credential-dumping-wireless/)
 	* **Tools**
 		* [credgrap_ie_edge](https://github.com/HanseSecure/credgrap_ie_edge)
 			* Extract stored credentials from Internet Explorer and Edge
@@ -2919,7 +2999,7 @@
 		* **Articles/Blogposts/Writeups**
 			* [Windows Remote Management - dmcxblue](https://dmcxblue.gitbook.io/red-team-notes/lateral-movement/windows-remote-management)
 			* [WS-Management COM: Another Approach for WinRM Lateral Movement - bohops(2020)](https://bohops.com/2020/05/12/ws-management-com-another-approach-for-winrm-lateral-movement/)
-			* [WinRM Penetration Testing - Raj Chandel(2020)](https://www.hackingarticles.in/winrm-penetration-testing/)
+			* [WinRM Penetration Testing - Yashika Dhir(2020)](https://www.hackingarticles.in/winrm-penetration-testing/)
 			* [Lateral Movement Using WinRM and WMI - Tony Lambert(2017)](https://redcanary.com/blog/lateral-movement-winrm-wmi/)
 			* [Lateral Movement – WinRM - pentestlab.blog(2018)](https://pentestlab.blog/2018/05/15/lateral-movement-winrm/)
 			* [T1028: WinRM for Lateral Movement - @spottheplanet](https://www.ired.team/offensive-security/lateral-movement/t1028-winrm-for-lateral-movement)
@@ -2930,7 +3010,7 @@
 		* **101**
 		* **Articles/Blogposts/Writeups**
 			* [T1047: WMI for Lateral Movement - @spottheplanet](https://www.ired.team/offensive-security/lateral-movement/t1047-wmi-for-lateral-movement)
-			* [Lateral Movement: WMI - Raj Chandel(2020)](https://www.hackingarticles.in/lateral-movement-wmi/)
+			* [Lateral Movement: WMI - Pavandeep Singh(2020)](https://www.hackingarticles.in/lateral-movement-wmi/)
 			* [No Win32_Process Needed – Expanding the WMI Lateral Movement Arsenal - Philip Tsukerman](https://www.cybereason.com/blog/no-win32-process-needed-expanding-the-wmi-lateral-movement-arsenal?hs_preview=UbvcDFUZ-5764480077)
 			* [Lateral Movement in an Environment with Attack Surface Reduction - Michael Bielenberg(2019)](https://ionize.com.au/lateral-movement-in-an-environment-with-attack-surface-reduction/)
 		* **Papers**
@@ -3002,6 +3082,14 @@
 
 ---------------------------
 #### Windows Technologies<a name="wintech"></a>
+* **Alternate Data Streams**<a name="wads"></a>
+	* **101**
+		* 
+* **AppLocker**<a name="winapplocker"></a>
+	* [AppLocker - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)
+		* This topic provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.
+	* [What Is AppLocker? - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/what-is-applocker)
+		* This topic for the IT professional describes what AppLocker is and how its features differ from Software Restriction Policies.
 * **Application Shims**<a name="winappshim"></a>
 	* [Windows - Application Shims](https://technet.microsoft.com/en-us/library/dd837644%28v=ws.10%29.aspx)
 * **ClickOnce Applications**<a name="clickonce"></a>
@@ -3011,6 +3099,9 @@
 	* [ClickOnce Applications in Enterprise Environments - Remko Weijnen](https://www.remkoweijnen.nl/blog/2013/08/05/clickonce-applications-in-enterprise-environments/)
 		* ClickOnce is a Microsoft technology that enables an end user to install an application from the web without administrative permissions.
 	* [Eight Evil Things Microsoft Never Showed You in the ClickOnce Demos (and What You Can Do About Some of Them) - Chris Williams](https://www.codemag.com/Article/0902031/Eight-Evil-Things-Microsoft-Never-Showed-You-in-the-ClickOnce-Demos-and-What-You-Can-Do-About-Some-of-Them)
+* **Credential Guard**<a name="credguard"></a>
+	* **101**
+		* 
 * **Code Signing**<a name="codesign"></a>
 	* **Articles/Blogposts/Writeups**
 		* [Code Signing Certificate Cloning Attacks and Defenses - Matt Graeber](https://posts.specterops.io/code-signing-certificate-cloning-attacks-and-defenses-6f98657fc6ec)
@@ -3040,6 +3131,10 @@
 	* **Papers**
 		* [The Dangers of Per-User COM Objects - Jon Larimer](https://www.virusbulletin.com/uploads/pdf/conference_slides/2011/Larimer-VB2011.pdf)
 * **DLLs**<a name="dll"></a>
+	* **101**
+		* [What is a DLL? - support.ms](https://support.microsoft.com/en-us/help/815065/what-is-a-dll)
+		* [Dynamic-Link-Library - Wikipedia](https://en.wikipedia.org/wiki/Dynamic-link_library)
+		* [DLL Hell - Wikipedia](https://en.wikipedia.org/wiki/DLL_Hell)
 	* **Tools**
 		* [CMDLL](https://github.com/jfmaes/CMDLL)
 			* the most basic DLL ever to pop a cmd.
@@ -3082,6 +3177,9 @@
 		* [The LaZagne Project](https://github.com/AlessandroZ/LaZagneForensic)
 			* LaZagne uses an internal Windows function called CryptUnprotectData to decrypt user passwords. This API should be called on the victim user session, otherwise, it does not work. If the computer has not been started (when the analysis is realized on an offline mounted disk), or if we do not want to drop a binary on the remote host, no passwords can be retrieved. LaZagneForensic has been created to avoid this problem. This work has been mainly inspired by the awesome work done by Jean-Michel Picod and Elie Bursztein for DPAPICK and Francesco Picasso for Windows DPAPI laboratory.
 		* [DataProtectionDecryptor v1.06 - Nirsoft](https://www.nirsoft.net/utils/dpapi_data_decryptor.html)
+* **Device Guard**<a name="devguard"></a>
+	* **101**
+		* 
 * **ETW**<a name="etw"></a>
 	* **101**
 		* [Event Tracing - docs.ms](https://docs.microsoft.com/en-us/windows/win32/etw/event-tracing-portal)
@@ -3111,7 +3209,10 @@
 	* **101**
 		* [Fibers - docs.ms](https://docs.microsoft.com/en-us/windows/win32/procthread/fibers)
 	* **Articles/Blogposts/Writeups**
-* **File Extensions**
+* **File Extensions**<a name="fext"></a>
+	* [Common file name extensions in Windows - support.ms](https://support.microsoft.com/en-us/help/4479981/windows-10-common-file-name-extensions)
+	* [File Types - docs.ms](https://docs.microsoft.com/en-us/windows/win32/shell/fa-file-types)
+		* This topic explains how to create new file types and how to associate your app with your file type and other well-defined file types. Files with a shared common file name extension (.doc, .html, and so on) are of the same type. For example, if you create a new text editor, then you can use the existing .txt file type. In other cases, you might need to create a new file type.
 	* [The case of the missing file extensions - NCCGroup(2014)](https://www.nccgroup.com/uk/about-us/newsroom-and-events/blogs/2014/may/the-case-of-the-missing-file-extensions/)
 * **LNK Files**<a name="LNK"></a>
 	* **101**
@@ -3135,7 +3236,7 @@
 		* [GENE: Go Evtx sigNature Engine](https://github.com/0xrawsec/gene)
 			* The idea behind this project is to provide an efficient and standard way to look into Windows Event Logs (a.k.a EVTX files). For those who are familiar with Yara, it can be seen as a Yara engine but to look for information into Windows Events.
 			* [Documentation](https://rawsec.lu/doc/gene/1.6/)
-* **MS-SQL Server**
+* **MS-SQL Server**<a name="ms-sql-server"></a>
 	* **101**
 	* **Articles/Blogposts/Writeups**
 		* [How to Get Started with SQL Server and .NET - Artemakis Artemiou(2018)](https://www.mssqltips.com/sqlservertip/5677/how-to-get-started-with-sql-server-and-net/)
@@ -3150,11 +3251,12 @@
 			* QuickSQL is a simple MSSQL query tool that allows you to connect to MSSQL databases and does not require administrative level rights to use. 
 		* [SqlClient](https://github.com/FortyNorthSecurity/SqlClient)
 			* POC for .NET mssql client for accessing database data through beacon 
-* **Named Pipes**
-	* [Named Pipe - Wikipedia](https://en.wikipedia.org/wiki/Named_pipe)
-	* [Named Pipes - docs.ms](https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipes)
-	* [Named Pipe Security and Access Rights - docs.ms](https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipe-security-and-access-rights)
-	* [Named Pipe client](https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipe-client)
+* **Named Pipes**<a name="namedpipes"></a>
+	* **101**
+		* [Named Pipe - Wikipedia](https://en.wikipedia.org/wiki/Named_pipe)
+		* [Named Pipes - docs.ms](https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipes)
+		* [Named Pipe Security and Access Rights - docs.ms](https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipe-security-and-access-rights)
+		* [Named Pipe client](https://docs.microsoft.com/en-us/windows/win32/ipc/named-pipe-client)
 * **PowerShell**<a name="powershell"></a>
 	* **PowerShell Logging**
 		* **101**
@@ -3170,13 +3272,42 @@
 			* [Understanding different (Six and more!) PowerShell profiles - Mohit Goyal](https://mohitgoyal.co/2017/04/30/understanding-different-six-and-more-powershell-profiles/)
 			* [PowerShell for Beginners (Part 6): PowerShell Profiles and the ISE - Patrick Gruenauer](https://sid-500.com/2018/01/16/powershell-for-beginners-part-6-powershell-profiles-and-the-ise/)
 		* **Articles/Blogposts/Writeups**
+			* [Abusing PowerShell Profiles - enigma0x3(2014)(https://enigma0x3.net/2014/06/16/abusing-powershell-profiles/)
 			* [Investigating Subversive PowerShell Profiles - Matt Graeber(2015)](http://www.exploit-monday.com/2015/11/investigating-subversive-powershell.html)
+			* [Persistence – PowerShell Profile - PentestLab.blog(2019)](https://pentestlab.blog/2019/11/05/persistence-powershell-profile/)
 			* [Persistent PowerShell: The PowerShell Profile - ](https://www.red-gate.com/simple-talk/sysadmin/powershell/persistent-powershell-the-powershell-profile/)
 	* **PowerShell without PowerShell**
 		* **101**
 		* **Articles/Blogposts/Writeups**
+			* [InsecurePowerShell - PowerShell without System.Management.Automation.dll - Ryan Cobb](https://cobbr.io/InsecurePowershell-PowerShell-Without-System-Management-Automation.html)
+			* [We don’t need powershell.exe - decoder.cloud](https://decoder.cloud/2017/11/02/we-dont-need-powershell-exe/)
+				* [Part 2](https://decoder.cloud/2017/11/08/we-dont-need-powershell-exe-part-2/)
+				* [Part 3](https://decoder.cloud/2017/11/17/we-dont-need-powershell-exe-part-3/)
+		* **Custom Runspace**
+			* [Executing PowerShell scripts from C# - docs.ms](https://docs.microsoft.com/en-us/archive/blogs/kebab/executing-powershell-scripts-from-c)
+			* [Calling C# code in Powershell and vice versa - Karthik Kk](https://blog.executeautomation.com/calling-c-code-in-powershell-and-vice-versa/)
+			* [How to run PowerShell Core scripts from .NET Core applications - keithbabinec(2020)](https://keithbabinec.com/2020/02/15/how-to-run-powershell-core-scripts-from-net-core-applications/)
+				* [Code](https://github.com/keithbabinec/PowerShellHostedRunspaceStarterkits)
+			* [How to execute PowerShell script or cmdlets from C# code? - Mitesh Sureja(2018)](https://miteshsureja.blogspot.com/2018/07/how-to-execute-powershell-script-or.html)
+				* [Code](https://gist.github.com/miteshsureja/f9cbc2f09264a01277a6555a7425debc)
+			* Project: [NotPowerShell](https://github.com/Ben0xA/nps)
 		* **Tools**
-			* [InsecurePowerShell - PowerShell without System.Management.Automation.dll - cobbr](https://cobbr.io/InsecurePowershell-PowerShell-Without-System-Management-Automation.html)	
+			* [InsecurePowerShell](https://github.com/cobbr/InsecurePowerShell)
+				* InsecurePowershell is a fork of PowerShell Core v6.0.0, with key security features removed.
+			* [InsecurePowerShellHost](https://github.com/cobbr/InsecurePowerShellHost)
+				* InsecurePowerShellHost is a .NET Core host process for InsecurePowerShell, a version of PowerShell Core with key security features removed.
+			* [PowerPick](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerPick)
+				* This project focuses on allowing the execution of Powershell functionality without the use of Powershell.exe. Primarily this project uses.NET assemblies/libraries to start execution of the Powershell scripts.
+			* [UnmanagedPowerShell](https://github.com/leechristensen/UnmanagedPowerShell)
+				* Executes PowerShell from an unmanaged process.
+			* [PowerShdll](https://github.com/p3nt4/PowerShdll)
+				* Run PowerShell with dlls only.
+			* [NoPowerShell](https://github.com/bitsadmin/nopowershell)
+				* NoPowerShell is a tool implemented in C# which supports executing PowerShell-like commands while remaining invisible to any PowerShell logging mechanisms. This .NET Framework 2 compatible binary can be loaded in Cobalt Strike to execute commands in-memory. No System.Management.Automation.dll is used; only native .NET libraries. An alternative usecase for NoPowerShell is to launch it as a DLL via rundll32.exe: rundll32 NoPowerShell.dll,main.
+			* [A Powerful New Tool: PowerLine - BHIS(2017)](https://www.youtube.com/watch?v=HiAtkLa8FOc)
+				* [PowerLine](https://github.com/fullmetalcache/PowerLine)
+			* [psfire](https://github.com/curi0usJack/psfire)
+				* simple demo of using C# & System.Management.Automation.dll to run powershell code (b64 encoded) without powershell.exe
 * **PowerShell Desired State Configuration**<a name="winpsc"></a>
 	* **Documentation**
 		* [Windows PowerShell Desired State Configuration Overview - docs.ms](https://docs.microsoft.com/en-us/powershell/dsc/overview)
@@ -3199,6 +3330,9 @@
 	* **Talks/Presentations/Videos**
 * **Windows Notification Facility**<a name="wnf"></a>
 	* [Playing with the Windows Notification Facility (WNF) - Gwaby](https://blog.quarkslab.com/playing-with-the-windows-notification-facility-wnf.html)
+* **Windows Remote Management**<a name="winrm"></a>
+	* **101**
+		* F
 * **Windows Scripting Host**<a name="wsh"></a>
 	* **101**
 		* [Windows Scripting Host - Wikipedia](https://en.wikipedia.org/wiki/Windows_Script_Host)
@@ -3417,7 +3551,14 @@
 			* C# code to use CreateThread to run position independent code in the running process. This code is provided AS IS, and will not be supported.
 		* [CSharp SetThreadContext](https://github.com/djhohnstein/CSharpSetThreadContext)
 			*  C# Shellcode Runner to execute shellcode via CreateRemoteThread and SetThreadContext to evade Get-InjectedThread 
-	* **Process Injection**
+	* **MSBuild-related**
+		* [Another MSBuild Invocation (February 2020 Edition) - Joe Leon(2020)](https://fortynorthsecurity.com/blog/another-msbuild-bypass-february-2020-edition/)
+	* **MS-SQL-related**
+		* [Attacking SQL Server CLR Assemblies - Scott Sutherland](https://www.netspi.com/webinars/attacking-sql-server-clr-assemblies-on-demand/)
+			* During this webinar we’ll review how to create, import, export, and modify CLR assemblies in SQL Server with the goal of privilege escalation, OS command execution, and persistence. Scott will also share a few PowerUpSQL functions that can be used to execute the CLR attacks on a larger scale in Active Directory environments.
+	* **Process Injection/Shellcode Execution**
+		* **Articles/Blogposts/Writeups**
+			* [Shellcode Execution in .NET using MSIL-based JIT Overwrite - Matt Graeber(2013)](http://www.exploit-monday.com/2013/04/MSILbasedShellcodeExec.html)
 		* **Tools**
 			* [C# Memory Injection Examples](https://github.com/pwndizzle/c-sharp-memory-injection)
 				* A set of scripts that demonstrate how to perform memory injection.
@@ -3439,9 +3580,10 @@
 			* [ManagedInjection](https://github.com/malcomvetter/ManagedInjection)
 				* A proof of concept for injecting a pre-compiled .net assembly in memory at runtime with zero pre-knowledge of its assembly namespace or type. All that is necessary is a convention for the initial method name which will be instantiated, or just have the assembly initialize via its Constructor for a true "zero knowledge" scenario.
 	* **PS in C#**
-		* [Executing PowerShell scripts from C# - doc.ms(2014)](https://docs.microsoft.com/en-us/archive/blogs/kebab/executing-powershell-scripts-from-c)
-			* "In today’s post, I will demonstrate the basics of how to execute PowerShell scripts and code from within a C#/.NET applications. I will walk through how to setup your project prerequisites, populate the pipeline with script code and parameters, perform synchronous and asynchronous execution, capture output, and leverage shared namespaces."
-		* [Using C# for post-PowerShell attacks - John Bergbom(2018)](https://www.forcepoint.com/blog/x-labs/using-c-post-powershell-attacks)
+		* **Articles/Blogposts/Writeups**
+			* [Executing PowerShell scripts from C# - doc.ms(2014)](https://docs.microsoft.com/en-us/archive/blogs/kebab/executing-powershell-scripts-from-c)
+				* "In today’s post, I will demonstrate the basics of how to execute PowerShell scripts and code from within a C#/.NET applications. I will walk through how to setup your project prerequisites, populate the pipeline with script code and parameters, perform synchronous and asynchronous execution, capture output, and leverage shared namespaces."
+			* [Using C# for post-PowerShell attacks - John Bergbom(2018)](https://www.forcepoint.com/blog/x-labs/using-c-post-powershell-attacks)
 		* **Tools**
 			* [NoPowerShell](https://github.com/bitsadmin/nopowershell)
 				* NoPowerShell is a tool implemented in C# which supports executing PowerShell-like commands while remaining invisible to any PowerShell logging mechanisms. This .NET Framework 2 compatible binary can be loaded in Cobalt Strike to execute commands in-memory. No System.Management.Automation.dll is used; only native .NET libraries. An alternative usecase for NoPowerShell is to launch it as a DLL via rundll32.exe: rundll32 NoPowerShell.dll,main.
@@ -3453,11 +3595,12 @@
 			* [CScriptShell](https://github.com/Cn33liz/CScriptShell)
 			* [Stracciatella](https://github.com/mgeeky/Stracciatella)
 				* OpSec-safe Powershell runspace from within C# (aka SharpPick) with AMSI, CLM and Script Block Logging disabled at startup
-	* **MSBuild-related**
-		* [Another MSBuild Invocation (February 2020 Edition) - Joe Leon(2020)](https://fortynorthsecurity.com/blog/another-msbuild-bypass-february-2020-edition/)
-	* **MS-SQL-related**
-		* [Attacking SQL Server CLR Assemblies - Scott Sutherland](https://www.netspi.com/webinars/attacking-sql-server-clr-assemblies-on-demand/)
-			* During this webinar we’ll review how to create, import, export, and modify CLR assemblies in SQL Server with the goal of privilege escalation, OS command execution, and persistence. Scott will also share a few PowerUpSQL functions that can be used to execute the CLR attacks on a larger scale in Active Directory environments.
+	* **Reflection**
+	    * [Reflection (C#) - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection)
+	    	* Reflection provides objects (of type Type) that describe assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. If you are using attributes in your code, reflection enables you to access them. For more information, see Attributes.
+	    * [How C# Reflection Works With Code Examples - stackify](https://stackify.com/what-is-c-reflection/)
+	    * [Reflection in .NET - keesari_anjaiah(2010)](https://www.codeproject.com/Articles/55710/Reflection-in-NET)
+	    * [What is Reflection in C#? - geeksforgeeks(2019)](https://www.geeksforgeeks.org/what-is-reflection-in-c-sharp/)
 	* **Resource Embedding**
 		Single File Executable - https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0#single-file-executables
 		Assembly Linking - https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0#assembly-linking
@@ -3767,10 +3910,11 @@
 	* [The PowerSploit Manifesto - @mattifestation(2015)](http://www.exploit-monday.com/2015/12/the-powersploit-manifesto.html)
 	* [PowerShell is Not Special - An Offensive PowerShell Retrospective - @mattifestation(2017)](http://www.exploit-monday.com/2017/01/powershell-is-not-special-offensive.html)
 	* **Learning**
-		* [PowerShell 101 - Carlos Perez](https://www.darkoperator.com/powershellbasics/)
-		* [Get-Help: An Intro to PowerShell and How to Use it for Evil - Jared Haight](https://www.psattack.com/presentations/get-help-an-intro-to-powershell-and-how-to-use-it-for-evil/)
-		* [Brosec](https://github.com/gabemarshall/Brosec)
-			* Brosec is a terminal based reference utility designed to help us infosec bros and broettes with usefuPowershelll (yet sometimes complex) payloads and commands that are often used during work as infosec practitioners. An example of one of Brosec's most popular use cases is the ability to generate on the fly reverse shells (python, perl, powershell, etc) that get copied to the clipboard.
+		* **Articles/Blogposts/Writeups**
+			* [PowerShell 101 - Carlos Perez](https://www.darkoperator.com/powershellbasics/)
+			* [Get-Help: An Intro to PowerShell and How to Use it for Evil - Jared Haight](https://www.psattack.com/presentations/get-help-an-intro-to-powershell-and-how-to-use-it-for-evil/)
+			* [Brosec](https://github.com/gabemarshall/Brosec)
+				* Brosec is a terminal based reference utility designed to help us infosec bros and broettes with usefuPowershelll (yet sometimes complex) payloads and commands that are often used during work as infosec practitioners. An example of one of Brosec's most popular use cases is the ability to generate on the fly reverse shells (python, perl, powershell, etc) that get copied to the clipboard.
 		* **Talks/Presentations/Videos**
 		    * [PowerShell Inside Out: Applied .NET Hacking for Enhanced Visibility - Satoshi Tanda(CodeBlueTokyo2017)](https://www.youtube.com/watch?v=EzpJTeFbe8c)
 		    	* [Slides](https://www.slideshare.net/codeblue_jp/powershell-inside-out-applied-net-hacking-for-enhanced-visibility-by-satoshi-tanda)
@@ -3778,6 +3922,8 @@
 		    	* This talk will discuss how to gain greater visibility into managed program execution, especially for PowerShell, using a .NET native code hooking technique to help organizations protect themselves from such advanced attacker techniques. In this session, we will demonstrate how to enhance capabilities provided by AMSI and how to overcome its limitations, through a realistic implementation of the technique, all while analyzing the internals of .NET Framework and the PowerShell engine. 
 		    * [Defensive Coding Strategies for a High-Security Environment - Matt Graeber - PowerShell Conference EU 2017](https://www.youtube.com/watch?reload=9&v=O1lglnNTM18)
         		* How sure are you that your PowerShell code is prepared to handle anything that a user might throw at it? What if the user was an attacker attempting to circumvent security controls by exploiting a vulnerability in your script? This may sound unrealistic but this is a legitimate concern of the PowerShell team when including PowerShell code in the operating system. In a high-security environment where strict AppLocker or Device Guard rules are deployed, PowerShell exposes a large attack surface that can be used to circumvent security controls. While constrained language mode goes a long way in preventing malicious PowerShell code from executing, attackers will seek out vulnerabilities in trusted signed code in order to circumvent security controls. This talk will cover numerous different ways in which attackers can influence the execution of your code in unanticipated ways. A thorough discussion of mitigations against such attacks will then follow.
+			* [APTs LOVE PowerShell and Why You Should Too - Anthony Rose & Jake Krasnov(Defcon28RedTeamVillage)](https://www.youtube.com/watch?v=rLWySkU0U1U&list=PLruly0ngXhPHlQ0ebMbB3XuKVJPq3B0qS&index=33)
+				* "Quite often, you may have heard people mention, “Why should you bother learning PowerShell, isn’t it dead?” or “Why not just use C#?” Many individuals in the offensive security field have a common misconception that PowerShell is obsolete for red team operations. Meanwhile, it remains one of the primary attack vectors employed by Advanced Persistent Threats (APTs). APTs are known for implementing sophisticated hacking tactics, techniques, and procedures (TTPs) to gain access to a system for an extended period of time. Their actions typically focus on high-value targets, which leave potentially crippling consequences to both nation-states and corporations. It is crucial that Red Teams accurately emulate real-world threats and do not ignore viable attack options. For this talk, we will walk through how many threat actors adapt and employ PowerShell tools. Our discussion begins with examining how script block logging and AMSI are powerful anti-offensive PowerShell measures. However, the implementation of script block logging places a technical burden on organizations to conduct auditing on a substantial amount of data. While AMSI is trivial to bypass for any capable adversary. Finally, we will demonstrate APT-like PowerShell techniques that remain incredibly effective against the latest generation of network defenses.
     * **File Parsing**
     	* [Parsing Binary File Formats with PowerShell - @mattifestation(2013)](http://www.exploit-monday.com/2013/03/ParsingBinaryFileFormatsWithPowerShell.html)
 	* **Logging**
@@ -3807,10 +3953,19 @@
 			* Fileless Extraction of Sensitive Browser Information with PowerShell. This project will include various cmdlets for extracting credential, history, and cookie/session data from the top 3 most popular web browsers (Chrome, Firefox, and IE). The goal is to perform this extraction entirely in-memory, without touching the disk of the victim. Currently Chrome credential and cookie extraction is supported. 
 * **Execution**
 	* **Articles/Blogposts/Writeups**
-		* [Introducing PowerShell into your Arsenal with PS>Attack - Jared Haight](http://www.irongeek.com/i.php?page=videos/derbycon6/119-introducing-powershell-into-your-arsenal-with-psattack-jared-haight)
+		* [Meterpreter New Windows PowerShell Extension - Carlos Perez(2016)](https://www.darkoperator.com/blog/2016/4/2/meterpreter-new-windows-powershell-extension)
+		* [Introducing PowerShell into your Arsenal with PS>Attack - Jared Haight(Derbycon206)](http://www.irongeek.com/i.php?page=videos/derbycon6/119-introducing-powershell-into-your-arsenal-with-psattack-jared-haight)
+			* PS>Attack is a custom tool that was created to make it easier for Penetration Testers to incorporate PowerShell into their bag of tricks. It combines a lot of the best offensive tools from the offensive PowerShell community into a custom, encrypted console that emulates a PowerShell environment. It also includes a custom command, "Get-Attack" to act a search engine for attacks making it easy to find the right attack for any situation. In this presentation we will cover how PowerShell can be used during every part of a penetration test and how PS>Attack can help make the whole process a lot easier.
     * **Tools**
     	* [Invoke-ReflectivePEInjection.ps1](https://github.com/clymb3r/PowerShell/blob/master/Invoke-ReflectivePEInjection/Invoke-ReflectivePEInjection.ps1)
 			* This script has two modes. It can reflectively load a DLL/EXE in to the PowerShell process,  or it can reflectively load a DLL in to a remote process.
+    * **Add-Type & Reflection**
+    	* **101**
+    		* [Add-Type - docs.ms](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/add-type?view=powershell-7)
+    			* Adds a Microsoft .NET Core class to a PowerShell session.
+    		* [Add-Type - SS64](https://ss64.com/ps/add-type.html)
+    		* [Add-Type vs. [reflection.assembly] in PowerShell - Tim Curwick(2013)](https://web.archive.org/web/20200315070535/http://www.madwithpowershell.com/2013/10/add-type-vs-reflectionassembly-in.html)
+    		* [Using Add-Type in a PowerShell script that is run as a Scheduled Task - Craig Tolley(2016)](https://www.craig-tolley.co.uk/2016/02/09/using-add-type-in-a-powershell-script-that-is-run-as-a-scheduled-task/)
     * **Constrained-Language Mode**
 		* **101**
 	 		* [About Language Modes - docs.ms](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_language_modes?view=powershell-7)
@@ -3818,7 +3973,6 @@
 	 		* [PowerShell Constrained Language Mode - PowerShell Team(2017)](https://devblogs.microsoft.com/powershell/powershell-constrained-language-mode/)
 			* [A Comparison of Shell and Scripting Language Security - PowerShell Team](https://devblogs.microsoft.com/powershell/a-comparison-of-shell-and-scripting-language-security/)
 		* **Articles/Blogposts/Writeups**
-
 			* [AppLocker CLM Bypass via COM - MDSec](https://www.mdsec.co.uk/2018/09/applocker-clm-bypass-via-com/)
 	 		* [Detecting and Preventing PowerShell Downgrade Attacks - Lee Holmes(2017)](https://www.leeholmes.com/blog/2017/03/17/detecting-and-preventing-powershell-downgrade-attacks/)
 	 		* [Simple Bypass for PowerShell Constrained Language Mode - DaveHardy20(2017)](https://pentestn00b.wordpress.com/2017/03/20/simple-bypass-for-powershell-constrained-language-mode/)
@@ -3826,9 +3980,9 @@
 	 		* [Exploiting PowerShell Code Injection Vulnerabilities to Bypass Constrained Language Mode - @mattifestation(2017)](http://www.exploit-monday.com/2017/08/exploiting-powershell-code-injection.html)
 	 		* [A Look at CVE-2017-8715: Bypassing CVE-2017-0218 using PowerShell Module Manifests - enigma0x3(2017)](https://enigma0x3.net/2017/11/06/a-look-at-cve-2017-8715-bypassing-cve-2017-0218-using-powershell-module-manifests/)
 	 		* [Pentesting and .hta (bypass PowerShell Constrained Language Mode) - Josh Graham(2018)](https://medium.com/tsscyber/pentesting-and-hta-bypassing-powershell-constrained-language-mode-53a42856c997)
-	 		* [Bypassing Applocker and Powershell contstrained language mode - DarthSidious](https://hunter2.gitbook.io/darthsidious/defense-evasion/bypassing-applocker-and-powershell-contstrained-language-mode)
+	 		* [Bypassing Applocker and Powershell constrained language mode - DarthSidious](https://hunter2.gitbook.io/darthsidious/defense-evasion/bypassing-applocker-and-powershell-contstrained-language-mode)
 			* [Powershell CLM Bypass Using Runspaces - Shaksham Jaiswal(2019)](https://www.secjuice.com/powershell-constrainted-language-mode-bypass-using-runspaces/)
-				* [CLMBypassBlogpost](https://github.com/MinatoTW/CLMBypassBlogpost)
+				* [Code](https://github.com/MinatoTW/CLMBypassBlogpost)
 	 	* **Talks/Presentations/Videos**
 	 		* [PowerShell Constrained Language Mode Enforcement and Bypass Deep Dive - Matt Graeber(2020)](https://www.youtube.com/watch?v=O6dtIvDfyuI)
 	 	* **Tools**
@@ -3840,6 +3994,19 @@
 				* Bypass for PowerShell Constrained Language Mode
 			* [powershellveryless](https://github.com/decoder-it/powershellveryless)
 				* Constrained Language Mode + AMSI bypass all in one(Currently Blocked without modification)
+	* **C# in PS**
+		* **Articles/Blogposts/Writeups**
+				* [Weekend Scripter: Run C# Code from Within PowerShell - Dr Scripto(2013)](https://devblogs.microsoft.com/scripting/weekend-scripter-run-c-code-from-within-powershell/)
+				* [Using CSharp (C#) code in Powershell scripts - Stefan Gobner(2010)](https://blog.stefan-gossner.com/2010/05/07/using-csharp-c-code-in-powershell-scripts/)
+				* [PowerShell – .NET Scripting how to ? - audministrator](https://audministrator.wordpress.com/scripting/powershell/powershell-net-scripting-using-howto/)
+				* [Executing C# code using PowerShell script - Adam Furmanek(2016)](https://blog.adamfurmanek.pl/2016/03/19/executing-c-code-using-powershell-script/)
+				* [Use .Net Code (C#) and DLLs in Powershell - Hannes Hayashi(2016)](https://activedirectoryfaq.com/2016/01/use-net-code-c-and-dlls-in-powershell/)
+				* [Powershell: How do you add inline C#? - Dot Jim(2018)](https://dandraka.com/2018/11/12/powershell-how-do-you-add-inline-c/)
+    			* [Add-Type - docs.ms](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/add-type?view=powershell-7)
+    				* Adds a Microsoft .NET Core class to a PowerShell session.
+    			* [Add-Type - SS64](https://ss64.com/ps/add-type.html)
+    			* [Add-Type vs. [reflection.assembly] in PowerShell - Tim Curwick(2013)](https://web.archive.org/web/20200315070535/http://www.madwithpowershell.com/2013/10/add-type-vs-reflectionassembly-in.html)
+    			* [Using Add-Type in a PowerShell script that is run as a Scheduled Task - Craig Tolley(2016)](https://www.craig-tolley.co.uk/2016/02/09/using-add-type-in-a-powershell-script-that-is-run-as-a-scheduled-task/)
 	* **Download Cradles**
 	 	* [Dropping Executables with Powershell - @mattifestation(2011)](http://www.exploit-monday.com/2011/09/dropping-executables-with-powershell.html)
 	* **Execution Policy**
@@ -3855,11 +4022,14 @@
     		* [Deep Reflection - Defining Structs and Enums in PowerShell - @mattifestation(2012)](http://www.exploit-monday.com/2012/07/structs-and-enums-using-reflection.html)
     		* [Accessing the Windows API in PowerShell via internal .NET methods and reflection - @mattifestation(2012)](http://www.exploit-monday.com/2012/05/accessing-native-windows-api-in.html)
 			* [In-Memory Managed Dll Loading With PowerShell - @mattifestation(2012)](http://www.exploit-monday.com/2012/12/in-memory-dll-loading.html)
-    		* [Shellcode Execution in .NET using MSIL-based JIT Overwrite - @mattifestation(2013)](http://www.exploit-monday.com/2013/04/MSILbasedShellcodeExec.html)
     		* [Working with Unmanaged Callback Functions in PowerShell - @mattifestation(2013)](http://www.exploit-monday.com/2013/06/PowerShellCallbackFunctions.html)
     			*  With a little bit of work, you can bind a scriptblock to an unmanaged callback function in PowerShell. The key to accomplishing this is by casting a scriptblock as a non-generic delegate that has the function signature of the desired callback function. Fortunately, creating non-generic delegates is made easy with my Get-DelegateType function.
     		* [Simple CIL Opcode Execution in PowerShell using the DynamicMethod Class and Delegates - @mattifestation(2013)](http://www.exploit-monday.com/2013/10/powershell-cil-opcode-execution.html)
     			* It is possible to assemble .NET methods with CIL opcodes (i.e. .NET bytecode) in PowerShell in only a few lines of code using dynamic methods and delegates.
+			* [PowerShell – Run a .Net Assembly DLL from in Memory - audministrator(2014)](https://audministrator.wordpress.com/2014/09/07/powershell-run-a-net-assembly-dll-from-in-memory/)
+			* [PowerShell – Run Assembly that is not registered in the GAC - audministrator(2014)](https://audministrator.wordpress.com/2014/09/05/powershell-run-assembly-that-is-not-registered-in-the-gac/)
+    		* [PowerShell load .Net Assembly  - PsCustomObject(2019)](https://pscustomobject.github.io/powershell/howto/PowerShell-Add-Assembly/)
+    			* One common technique is loading .Net assemblies in PowerShell script or module to leverage functionalities otherwise not available natively in PowerShell. There are multiple methods we can use to add assemblies to PowerShell which we’re going to explore in the post.
     * **Nishang**
 		* [Nishang](https://github.com/samratashok/nishang)
 			* Nishang is a framework and collection of scripts and payloads which enables usage of PowerShell for offensive security, penetration testing and red teaming. Nishang is useful during all phases of penetration testing.
@@ -3901,13 +4071,37 @@
 			* [PowerLine](https://github.com/fullmetalcache/powerline)
 				* [Presentation](https://www.youtube.com/watch?v=HiAtkLa8FOc)
 				* Running into environments where the use of PowerShell is being monitored or is just flat-out disabled? Have you tried out the fantastic PowerOps framework but are wishing you could use something similar via Meterpreter, Empire, or other C2 channels? Look no further! In this talk, Brian Fehrman talks about his new PowerLine framework. He overviews the tool, walks you through how to use it, shows you how you can add additional PowerShell scripts with little effort, and demonstrates just how powerful (all pun intended) this little program can be!
+	* **Reflection**
+		* [Use PowerShell to Work with the .NET Framework Classes - devblogs.ms(2010)](https://devblogs.microsoft.com/scripting/use-powershell-to-work-with-the-net-framework-classes/)
+		* [PowerShell cmdLet add-type - renenyffenegger.ch](https://renenyffenegger.ch/notes/Windows/PowerShell/command-inventory/noun/type/add/index)
+		* [How to do .NET Reflection in PowerShell - Roger Lipscombe(2013)](https://blog.differentpla.net/blog/2013/04/17/how-to-do-net-reflection-in-powershell/)
+		* [Using Powershell and Reflection API to invoke methods from .NET Assemblies - Khai Tran(2013)](https://blog.netspi.com/using-powershell-and-reflection-api-to-invoke-methods-from-net-assemblies/)
+	* **Reflective DLL Injection**
+		* [Reflective DLL Injection with PowerShell - clymb3r(2013)](https://clymb3r.wordpress.com/2013/04/06/reflective-dll-injection-with-powershell/)
+		* [Invoke-DllInjection.ps1 - PowerSploit](https://github.com/PowerShellMafia/PowerSploit/blob/master/CodeExecution/Invoke-DllInjection.ps1)
+			* Injects a Dll into the process ID of your choosing.
+	* **Reflective PE Injection**
+		* [Invoke-ReflectivePEInjection.ps1 - PowerSploit](Invoke-ReflectivePEInjection.ps1)
+			* This script has two modes. It can reflectively load a DLL/EXE in to the PowerShell process,  or it can reflectively load a DLL in to a remote process.
+		* [Reflective PE Injection In Windows 10 1909 - HUBBL3(2020)](https://www.bc-security.org/post/reflective-pe-injection-in-windows-10-1909/)
+	* **Running Shellcode**
+		* [Invoke-Shellcode.ps1 - PowerSploit](https://github.com/PowerShellMafia/PowerSploit/blob/master/CodeExecution/Invoke-Shellcode.ps1)
+			* Inject shellcode into the process ID of your choosing or within the context of the running PowerShell process.
+	* **Token Manipulation**
+		* **101**
+			* [Use PowerShell to Duplicate Process Tokens via P/Invoke - Dr Scripto(2012)](https://devblogs.microsoft.com/scripting/use-powershell-to-duplicate-process-tokens-via-pinvoke/)
+				* "Summary: Guest blogger, Niklas Goude, shows how to use P/Invoke to duplicate process tokens from LSASS to elevate privileges."
+		* **Articles/Blogposts/Writeups**
+			* [PowerShell and Token Impersonation - clymb3r(2013)](https://clymb3r.wordpress.com/2013/11/03/powershell-and-token-impersonation/)
+		* **Tools**
+			* [Invoke-TokenManipulation.ps1 - clymb3r](https://github.com/clymb3r/PowerShell/tree/master/Invoke-TokenManipulation)
+			* [Invoke-TokenManipulation.ps1 - PowerSploit](https://github.com/PowerShellMafia/PowerSploit/blob/master/Exfiltration/Invoke-TokenManipulation.ps1)
 	* **WinAPI Access**
 		* **Articles/Blogposts/Writeups**
 			* [Accessing the Windows API in PowerShell via internal .NET methods and reflection - @mattifestation(2012)](http://www.exploit-monday.com/2012/05/accessing-native-windows-api-in.html)
 				* It is possible to invoke Windows API function calls via internal .NET native method wrappers in PowerShell without requiring P/Invoke or C# compilation. How is this useful for an attacker? You can call any Windows API function (exported or non-exported) entirely in memory. For those familiar with Metasploit internals, think of this as an analogue to railgun.
 			* [List All Win32/Native Functions Declared/Used By PowerShell - @mattifestation(2012)](http://www.exploit-monday.com/2012/12/list-all-win32native-functions.html)
 			* [Get-PEB – A Tool to Dump the Process Environment Block (PEB) of Any Process - @mattifestation(2013)](http://www.exploit-monday.com/2013/01/Get-PEB.html)
-
 			* [PowerShell and Win32 API Access - harmj0y(2014)](http://www.harmj0y.net/blog/powershell/powershell-and-win32-api-access/)
 			* [Use PowerShell to Interact with the Windows API: Part 1 - devblogs.msdn(2014)](https://devblogs.microsoft.com/scripting/use-powershell-to-interact-with-the-windows-api-part-1/)
 				* [Part2]()
@@ -3921,10 +4115,10 @@
 			* [PSReflect](https://github.com/mattifestation/PSReflect)
 				* Easily define in-memory enums, structs, and Win32 functions in PowerShell
 * **Persistence**
-	* PS Profiles
-	* [Practical Persistence with PowerShell - Matt Graeber(2013)](http://www.exploit-monday.com/2013/04/PersistenceWithPowerShell.html)
-	* [Investigating Subversive PowerShell Profiles - @mattifestation(2015)](http://www.exploit-monday.com/2015/11/investigating-subversive-powershell.html)
-	* [Nothing Lasts Forever: Persistence with Empire - harmj0y(2016)](https://www.harmj0y.net/blog/empire/nothing-lasts-forever-persistence-with-empire/)
+		* [Practical Persistence with PowerShell - Matt Graeber(2013)](http://www.exploit-monday.com/2013/04/PersistenceWithPowerShell.html)
+		* [Nothing Lasts Forever: Persistence with Empire - harmj0y(2016)](https://www.harmj0y.net/blog/empire/nothing-lasts-forever-persistence-with-empire/)
+	* **PS Profiles**
+		* [Investigating Subversive PowerShell Profiles - @mattifestation(2015)](http://www.exploit-monday.com/2015/11/investigating-subversive-powershell.html)
 * **Credential Attacks**
 	* **Articles/Blogposts/Writeups**
 		* [PowerShell and Token Impersonation](https://clymb3r.wordpress.com/2013/11/03/powershell-and-token-impersonation/)
@@ -3949,16 +4143,20 @@
 		* [Inveigh](https://github.com/Kevin-Robertson/Inveigh)
 			* Inveigh is a PowerShell LLMNR/mDNS/NBNS spoofer and man-in-the-middle tool designed to assist penetration testers/red teamers that find themselves limited to a Windows system.
 * **Privilege Escalation**
-	* [Client Side attacks using Powershell](http://www.labofapenetrationtester.com/2014/11/powershell-for-client-side-attacks.html)
-	* [PowerUp](https://github.com/HarmJ0y/PowerUp) 
-		* PowerUp is a powershell tool to assist with local privilege escalation on Windows systems. It contains several methods to identify and abuse vulnerable services, as well as DLL hijacking opportunities, vulnerable registry settings, and escalation opportunities.
-	* [Sherlock](https://github.com/rasta-mouse/Sherlock/blob/master/README.md)
-		* PowerShell script to quickly find missing software patches for local privilege escalation vulnerabilities.
-	* [Get-System-Techniques](https://github.com/S3cur3Th1sSh1t/Get-System-Techniques)
+
+		* [Client Side attacks using Powershell](http://www.labofapenetrationtester.com/2014/11/powershell-for-client-side-attacks.html)
+	* **Tools**
+		* [PowerUp](https://github.com/HarmJ0y/PowerUp) 
+			* PowerUp is a powershell tool to assist with local privilege escalation on Windows systems. It contains several methods to identify and abuse vulnerable services, as well as DLL hijacking opportunities, vulnerable registry settings, and escalation opportunities.
+		* [Sherlock](https://github.com/rasta-mouse/Sherlock/blob/master/README.md)
+			* PowerShell script to quickly find missing software patches for local privilege escalation vulnerabilities.
+		* [Get-System-Techniques](https://github.com/S3cur3Th1sSh1t/Get-System-Techniques)
 * **Lateral Movement**
 	* **DCOM**
 		* [Invoke-DCOM.ps1](https://github.com/rvrsh3ll/Misc-Powershell-Scripts/blob/master/Invoke-DCOM.ps1)
 	* **PS-Remoting**
+		* [Secrets of PowerShell Remoting -  Don Jones, Tobias Weltner(2018)](https://devops-collective-inc.gitbook.io/secrets-of-powershell-remoting/about)
+			* Introduced in Windows PowerShell 2.0, Remoting is one of PowerShell's most useful, and most important, core technologies. It enables you to run almost any command that exists on a remote computer, opening up a universe of possibilities for bulk and remote administration. Remoting underpins other technologies, including Workflow, Desired State Configuration, certain types of background jobs, and much more. This guide isn't intended to be a complete document of what Remoting is and does, although it does provide a good introduction. Instead, this guide is designed to document all the little configuration details that don't appear to be documented elsewhere.
 	* **ScheduleTask**
 		* [Invoke-CommandAs](https://github.com/mkellerman/Invoke-CommandAs)
     	   * Invoke Command as System/User on Local/Remote computer using ScheduleTask.
@@ -3968,6 +4166,10 @@
 			* It used to be that most people were just starting to hear about PowerShell. Over the last 3 years, this has changed dramatically. We now see Offensive and Defensive PowerShell tools, exploits specifically leveraging PowerShell and WMI, and more organizations are starting to be intentional for detection and monitoring of PowerShell scripts and commands. With this visibility, it is becoming a game of cat and mouse to leverage and detect PowerShell. In this talk, I will highlight some secrets I use to ensure my PowerShell exploits are successful and some unique tactics which will bypass common defensive controls. I will also walk you through the creation of a custom PowerShell C# DLL which you can use to compromise your target. If you want to code with me, be sure to bring a laptop with Visual Studio 2013 or later installed.
 		* [Goodbye Obfuscation, Hello Invisi Shell: Hiding Your Powershell Script in Plain Sight - Omer Yair(Derbycon2018)](https://www.youtube.com/watch?v=Y3oMEiySxcc)
 			* “The very concept of objective truth is fading out of the world. Lies will pass into history.” George Orwell. Objective truth is essential for security. Logs, notifications and saved data must reflect the actual events for security tools, forensic teams and IT managers to perform their job correctly. Powershell is a prime example of the constant cat and mouse game hackers and security personnel play every day to either reveal or hide the “objective truth” of a running script. Powershell’s auto logging, obfuscation techniques, AMSI and more are all participants of the same game playing by the same rules. We don’t like rules, so we broke them. As a result, Babel-Shellfish and Invisi-Shelltwo new tools that both expose and disguise powershell scripts were born. Babel-Shellfish reveals the inner hidden code of any obfuscated script while Invisi-Shell offers a new method of hiding malicious scripts, even from the Powershell process running it. Join us as we present a new way to think about scripts.
+		* [APTs <3 PowerShell and Why You Should Too - Anthony Rose, Jake Krasnov(DefconSafeMode RTV 2020)](https://raw.githubusercontent.com/BC-SECURITY/DEFCONSafeMode/master/Red%20Team%20Village%20-%20APTs%20Love%20PowerShell%20and%20You%20Should%20Too.pdf)
+	* **Tools**
+		* [HiddenPowerShellDll](https://github.com/b4rtik/HiddenPowerShellDll)
+			* This .Net class library is used to run PowerShell scripts from c #. The bypasses are executed and then the scriptblock that invokes the stager is executed. Using the DllExport package the .Net DLL exports a function that allows it to be executed via rundll32 and this results in a bypass of the default AppLocker rules
 	* **Constrained-Language Mode**
 		* See above.
 	* **Crypters**

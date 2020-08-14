@@ -15,14 +15,13 @@ An Information Security Reference That Doesn't Suck
 	* Want to read some good info.
 * **Why Do _I_ Care?**
 	* I do this as a resource to learn and help others, and offer it publicly as a way of giving back to the general community.
-	* To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel might help build someone's skillset or increase their understanding of attacks/methods/defenses. This is not meant to condone illegal or malicious activities.
+	* To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel might help build someone's skillset or increase their understanding of attacks/methods/defenses.
+	* This is not meant to condone illegal or malicious activities.
 * **This page**
 	* To see a horribly colored, but nicely formatted version(irony): use [https://rmusser.net/docs](https://rmusser.net/docs)(it looks better on mobile).
 	* For latest content updates, check the git history.
-	* Could you spare a contribution? Any links are appreciated.
-	* If this resource has helped you in any way(and didn't increase your frustration), please consider making a donation to:
-		* [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm)
-		* [Amnesty International](https://www.amnesty.org/en/donate/). 
+	* Want to contribute a link? Anything relevant that isn't already in or covered would be/is appreciated.
+	* If this resource has helped you in any way(and didn't increase your frustration), please consider making a donation to [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm) or [Amnesty International](https://www.amnesty.org/en/donate/).
 
 ## Index - Table of Contents
 
@@ -80,6 +79,6 @@ An Information Security Reference That Doesn't Suck
   * [NIST Cyber Security Framework](https://www.nist.gov/cyberframework)
   * [PCI-DSS V3.2.1](https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf)
  
-- Quote:
-	* "As the Americans learned so painfully in Earth's final century, free flow of information is the only safeguard against tyranny. The once-chained people whose leaders at last lose their grip on information flow will soon burst with freedom and vitality, but the free nation gradually constricting its grip on public discourse has begun its rapid slide into despotism. Beware of he who would deny you access to information, for in his heart he dreams himself your master."
+- A Quote:
+	* "`As the Americans learned so painfully in Earth's final century, free flow of information is the only safeguard against tyranny. The once-chained people whose leaders at last lose their grip on information flow will soon burst with freedom and vitality, but the free nation gradually constricting its grip on public discourse has begun its rapid slide into despotism. Beware of he who would deny you access to information, for in his heart he dreams himself your master.`"
 	- Commissioner Pravin Lal, Peacekeeping Forces (Alpha Centauri, 1999)

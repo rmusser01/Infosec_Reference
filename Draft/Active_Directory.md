@@ -1,6 +1,7 @@
 # Attacking & Securing Active Directory
 
-
+---------------------------------------------------------------------------------------------------------------------------------
+## Table of Contents
 - [Active Directory](#active-directory)
 - [Attacking AD 101](#adatk101)
 
@@ -10,10 +11,11 @@
 | [AdminSD](#adminsd) | [DCShadow](#dcshadow) |
 | [Advanced Threat Analytics](#ata) | [DCSync](#dcsync) |
 | [Advanced Threat Protection](#atp) | [Kerberos Delegation](#) |
-| [DACLs](#dacl) | [Kebreroasting](#kerberoasting) |
-| [DNS](#dns) | [Pass-the-`*`](#pth) |
-| [Domain Trusts](#domain-trusts) | [Shadow Admin](#shadowadmin) |
-| [Forests](#forests) | [Skeleton Key](#skeleton) |
+| [DACLs](#dacl) | [AS-REP Roasting](#asreproasting) |
+| [DNS](#dns) | [Kebreroasting](#kerberoasting) |
+| [Domain Trusts](#domain-trusts) | [Pass-the-`*`](#pth) |
+| [Forests](#forests) | [Shadow Admin](#shadowadmin) |
+| [Group Managed Service Accounts(GMSA)](#gmsa) | [Skeleton Key](#skeleton) |
 | [Group Policy](#grouppolicy) | [AD Vulnerabilities(CVEs)](#advulns) |
 | [Kerberos](#kerberos) | [Defense Evasion](#addefev) |
 | [LDAP](#ldap) | [Collection](#adcollect) |
@@ -21,22 +23,25 @@
 | [Lync](#lync) | [Persistence](#adpersist) |
 | [MS-SQL](#mssql) | [Privilege Escalation](#adprivesc) |
 | [NTLM](#ntlm) | [Reconnaissance](#adrecon) |
-| [Read-Only Domain Controllers](#rodc) |   |
-| [Red Forest](#redforest) |   	|
-| [Service Principal Names](#spn) |   	|
-| [System Center Configuration Manager](#sccm) |   	|
-| [Domain Trusts](#trusts) |   	|
-| [WSUS](#wsus) |   	|
-|   	|   	|
+| [Read-Only Domain Controllers](#rodc) | [Lateral Movement](#adlate) |
+| [Red Forest](#redforest) | |
+| [Service Principal Names](#spn) | |
+| [System Center Configuration Manager](#sccm) | |
+| [Domain Trusts](#trusts) | |
+| [WSUS](#wsus) | |
+| [MS Exchange](#msexchange) | |
+---------------------------------------------------------------------------------------------------------------------------------
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
 ### <a name="active-directory"></a>Active Directory
+* **Looking for Azure? Check the Cloud page**
 * **101**
 	* [What is Active Directory Domain Services and how does it work?](https://serverfault.com/questions/402580/what-is-active-directory-domain-services-and-how-does-it-work#)
 	* [The Most Common Active Directory Security Issues and What You Can Do to Fix Them - Sean Metcalf](https://adsecurity.org/?p=1684)
 	* [What is Active Directory Red Forest Design? - social.technet.ms](https://social.technet.microsoft.com/wiki/contents/articles/37509.what-is-active-directory-red-forest-design.aspx)
 	* [Presentations by Sean Metcalf(ADSecurity.org)](https://adsecurity.org/?page_id=1352)
+	* [Top 16 Active Directory Vulnerabilities - InfosecMatter(2020)](https://www.infosecmatter.com/top-16-active-directory-vulnerabilities/)
 	* **Paid Courses**
 		* [Attacking and Defending Active Directory - Nikhil Mittal](https://www.pentesteracademy.com/course?id=47)
 	* **Articles/Blogposts/Writeups**
@@ -57,13 +62,17 @@
 			* [Active Directory Attacks - PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Active%20Directory%20Attack.md)
 			* [Pen Testing Active Directory Series - Andy Green](https://blog.varonis.com/binge-read-pen-testing-active-directory-series/)
 		* **Talks/Videos**
-			* [Offensive Active Directory with Powershell - harmj0y(Troopers2016)](https://www.youtube.com/watch?v=cXWtu-qalSs)
 			* [Abusing Active Directory in Post-Exploitation - Carlos Perez(Derbycon4)](https://www.irongeek.com/i.php?page=videos/derbycon4/t105-abusing-active-directory-in-post-exploitation-carlos-perez)
 				* Windows APIs are often a blackbox with poor documentation, taking input and spewing output with little visibility on what actually happens in the background. By reverse engineering (and abusing) some of these seemingly benign APIs, we can effectively manipulate Windows into performing stealthy custom attacks using previously unknown persistent and injection techniques. In this talk, we’ll get Windows to play with itself nonstop while revealing 0day persistence, previously unknown DLL injection techniques, and Windows API tips and tricks. To top it all off, a custom HTTP beaconing backdoor will be released leveraging the newly released persistence and injection techniques. So much Windows abuse, so little time.
-			* [Beyond the MCSE: Red Teaming Active Directory - Sean Metcalf](https://www.youtube.com/watch?v=tEfwmReo1Hk)
 			* [Red vs Blue: Modern Active Directory Attacks & Defense - Sean Metcalf(Defcon23)](https://www.youtube.com/watch?v=rknpKIxT7NM)
+				* Kerberos “Golden Tickets” were unveiled by Alva “Skip” Duckwall & Benjamin Delpy in 2014 during their Black Hat USA presentation. Around this time, Active Directory (AD) admins all over the world felt a great disturbance in the Force. Golden Tickets are the ultimate method for persistent, forever AD admin rights to a network since they are valid Kerberos tickets and can’t be detected, right? This talk explores the latest Active Directory attack vectors and describes how Golden Ticket usage can be detected. When forged Kerberos tickets are used in AD, there are some interesting artifacts that can be identified. Yes, despite what you may have read on the internet, there are ways to detect Golden & Silver Ticket usage. Skip the fluff and dive right into the technical detail describing the latest methods for gaining and maintaining administrative access in Active Directory, including some sneaky AD persistence methods. Also covered are traditional security measures that work (and ones that don’t) as well as the mitigation strategies that disrupts the attacker’s preferred game-plan. Prepare to go beyond “Pass-the-Hash” and down the rabbit hole.
 			* [Red Vs. Blue: Modern Active Directory Attacks, Detection, And Protection - Sean Metcalf(BHUSA15)](https://www.youtube.com/watch?v=b6GUXerE9Ac)
 				* Kerberos "Golden Tickets" were unveiled by Alva "Skip" Duckwall & Benjamin Delpy in 2014 during their Black Hat USA presentation. Around this time, Active Directory (AD) admins all over the world felt a great disturbance in the Force. Golden Tickets are the ultimate method for persistent, forever AD admin rights to a network since they are valid Kerberos tickets and can't be detected, right? The news is filled with reports of breached companies and government agencies with little detail on the attack vectors and mitigation. This briefing discusses in detail the latest attack methods for gaining and maintaining administrative access in Active Directory. Also covered are traditional defensive security measures that work (and ones that don't) as well as the mitigation strategies that can keep your company's name off the front page. Prepare to go beyond "Pass-the-Hash" and down the rabbit hole. This talk explores the latest Active Directory attack vectors and describes how Golden Ticket usage can be detected. When forged Kerberos tickets are used in AD, there are some interesting artifacts that can be identified. Yes, despite what you may have read on the internet, there are ways to detect Golden & Silver Ticket usage!
+			* [Beyond the MCSE: Red Teaming Active Directory - Sean Metcalf(Defcon24)](https://www.youtube.com/watch?v=tEfwmReo1Hk)
+				* Active Directory (AD) is leveraged by 95% of the Fortune 1000 companies for its directory, authentication, and management capabilities, so why do red teams barely scratch the surface when it comes to leveraging the data it contains? This talk skips over the standard intro to Active Directory fluff and dives right into the compelling offensive information useful to a Red Teamer, such as quickly identifying target systems and accounts. AD can yield a wealth of information if you know the right questions to ask. This presentation ventures into areas many didn't know existed and leverages capability to quietly identify interesting accounts & systems, identify organizations the target company does business with regularly, build target lists without making a sound, abuse misconfigurations/existing trusts, and quickly discover the most interesting shares and their location. PowerShell examples and AD defense evasion techniques are provided throughout the talk.Let's go beyond the MCSE and take a different perspective on the standard AD recon and attack tactics.
+			* [Offensive Active Directory with Powershell - harmj0y(Troopers2016)](https://www.youtube.com/watch?v=cXWtu-qalSs)
+			* [Hacking without Domain Admin - Tim Medin, Mike Saunders(2019)](https://www.sans.org/webcasts/110998)
+				* Tim and Mike will show you tools and techniques to find vulnerabilities and demonstrate risk, without using Domain Administrator (DA) access. DA access is the goal for many penetration tests and red teams, but it is misguided. DA is a tool, not a destination. Sometimes, a penetration tester or red team will be unable to obtain this access, but it does not mean that the test is without value.
 * **Active Directory Attributes & Technologies**<a name="ADtech"></a>
 	* **Active Directory Service Interaces**
 		* **101**
@@ -165,12 +174,25 @@
 			* [Subverting Trust in Windows - Matt Graeber](https://specterops.io/assets/resources/SpecterOps_Subverting_Trust_in_Windows.pdf)
 			* [A Guide to Attacking Domain Trusts - harmj0y](https://posts.specterops.io/a-guide-to-attacking-domain-trusts-971e52cb2944)
 			* [Trust Direction: An Enabler for Active Directory Enumeration and Trust Exploitation - BOHOPS](https://bohops.com/2017/12/02/trust-direction-an-enabler-for-active-directory-enumeration-and-trust-exploitation/)
+		* **Presentations/Talks/Videos**
+			* [Auditing Domain Trust Relationships - Will Schroeder(PowerShell ConferenceEU 2018)](https://www.youtube.com/watch?v=KRqZIu9MuNk&feature=youtu.be)
 		* **Tools**
 	* **Forests**<a name="forests"></a>
 		* **101**
 			* [How Domain and Forest Trusts Work - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc773178(v=ws.10))
 		* **Articles/Blogposts/Writeups**
 			* [How NOT to use the PAM trust - Leveraging Shadow Principals for Cross Forest Attacks - Nikhil Mittal](http://www.labofapenetrationtester.com/2019/04/abusing-PAM.html)
+		* **Presentations/Talks/Videos**
+	* **Group Managed Service Accounts(GMSA)**<a name="gmsa"></a>
+		* **101**
+			* [Group Managed Service Accounts Overview - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
+		* **Articles/Blogposts/Writeups**
+			* [Attacking Active Directory Group Managed Service Accounts (GMSAs) - Sean Metcalf(2020)](https://adsecurity.org/?p=4367)
+			* [NTLM Relaying for gMSA Passwords - Cube0x0](https://cube0x0.github.io/Relaying-for-gMSA/)
+			* [Kerberoasting: AES Encryption, Protected User Group and Group MSA  - dev2null](https://dev-2null.github.io/Kerberoasting-AES-Encryption-Protected-Users-Group-and-gMSA/)
+		* **Tools**
+			* [GMSAPasswordReader](https://github.com/rvazarkar/GMSAPasswordReader)
+				* Reads the password blob from a GMSA account using LDAP, and parses the values into hashes for re-use.
 	* **Internal Monologue**<a name="ilm"></a>
 		* **101**
 			* [Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS](https://github.com/eladshamir/Internal-Monologue/)
@@ -243,6 +265,7 @@
 			* [Delegating like a boss: Abusing Kerberos Delegation in Active Directory - Kevin Murphy](https://www.guidepointsecurity.com/2019/09/04/delegating-like-a-boss-abusing-kerberos-delegation-in-active-directory/)
 			    * I wanted to write a post that could serve as a (relatively) quick reference for how to abuse the various types of Kerberos delegation that you may find in an Active Directory environment during a penetration test or red team engagement.
 			* [Kerberos Tickets on Linux Red Teams - Trevor Haskell(2020)](https://www.fireeye.com/blog/threat-research/2020/04/kerberos-tickets-on-linux-red-teams.html)   
+			* [Kerberos Double-Hop Workarounds - slayerlabs.com(2020)](https://posts.slayerlabs.com/double-hop/)
 		* **Talks & Presentations**
 			* [Attacking Microsoft Kerberos: Kicking the Guard Dog of Hades](https://www.irongeek.com/i.php?page=videos/derbycon4/t120-attacking-microsoft-kerberos-kicking-the-guard-dog-of-hades-tim-medin)
 				* Kerberos- besides having three heads and guarding the gates of hell- protects services on Microsoft Windows Domains. Its use is increasing due to the growing number of attacks targeting NTLM authentication. Attacking Kerberos to access Windows resources represents the next generation of attacks on Windows authentication.In this talk Tim will discuss his research on new attacks against Kerberos- including a way to attack the credentials of a remote service without sending traffic to the service as well as rewriting tickets to access systems.He will also examine potential countermeasures against Kerberos attacks with suggestions for mitigating the most common weaknesses in Windows Kerberos deployments.
@@ -363,6 +386,8 @@
 			* [Planting the Red Forest: Improving AD on the Road to ESAE - Katie Knowles](https://www.f-secure.com/us-en/consulting/our-thinking/planting-the-red-forest-improving-ad-on-the-road-to-esae)
 			* [What is Microsoft ESAE and Red Forest - David Rowe](https://www.secframe.com/blog/what-is-microsoft-esae-and-red-forest)
 		* **Talks/Presentations/Videos**
+			* [From Workstation to Domain Admin: Why Secure Administration Isn't Secure and How to Fix It - Sean Metcalf(BHUSA2018)]()
+				* [Slides](https://adsecurity.org/wp-content/uploads/2018/08/us-18-Metcalf-From-Workstation-To-Domain-Admin-Why-Secure-Administration-Isnt-Secure-Final.pdf)
 			* [Attack and defend Microsoft Enhanced Security Administrative Environment - Hao Wang, Yothin Rodanant(Troopers2018)](https://www.youtube.com/watch?v=0AUValgPTUs)
 				* [Slides](https://download.ernw-insight.de/troopers/tr18/slides/TR18_AD_Attack-and-Defend-Microsoft-Enhanced-Security.pdf)
 				* Microsoft Enhanced Security Administrative Environment (ESAE) known as “Red Forest” has become a very popular architecture solution to enhance the security of Active Directory. Can ESAE be used to completely prevent cyber attackers from compromising Active Directory? In this talk, we will demonstrate the commonly overlooked techniques that can be used to obtain domain dominance within ESAE.
@@ -442,6 +467,88 @@
 			* [DogWhisperer - BloodHound Cypher Cheat Sheet (v2)](https://github.com/SadProcessor/Cheats/blob/master/DogWhispererV2.md)
 			* [DomainTrustExplorer](https://github.com/sixdub/DomainTrustExplorer)
 				* Python script for analyis of the "Trust.csv" file generated by Veil PowerView. Provides graph based analysis and output.
+	* **Credential Attacks**<a name="adcred"></a>
+		* **101**
+			* [Cached and Stored Credentials Technical Overview - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh994565(v=ws.11))
+				* This topic for the IT professional describes how credentials are formed in Windows and how the operating system manages them. Applies To: Windows Vista, Windows Server 2008, Windows 7, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, Windows Server 2012, Windows 8
+			* [Credentials Processes in Windows Authentication - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/windows-authentication/credentials-processes-in-windows-authentication)
+				* This reference topic for the IT professional describes how Windows authentication processes credentials. Applies To: Windows Server (Semi-Annual Channel), Windows Server 2016
+			* [Cached Credentials: Important Facts That You Cannot Miss - CQURE](https://cqureacademy.com/blog/windows-internals/cached-credentials-important-facts)
+			* [Security Focus: Analysing 'Account is sensitive and cannot be delegated' for Privileged Accounts - Ian Farr(MSFT2015)](https://blogs.technet.microsoft.com/poshchap/2015/05/01/security-focus-analysing-account-is-sensitive-and-cannot-be-delegated-for-privileged-accounts/)
+				* There are a number of configuration options we recommend for securing high privileged accounts. One of them, enabling 'Account is sensitive and cannot be delegated', ensures that an account’s credentials cannot be forwarded to other computers or services on the network by a trusted application. 
+			* [Protected Users Security Group - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn466518(v%3Dws.11))
+			* AD DS: Fine-Grained Password Policies - docs.ms - `https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770394(v=ws.10)`
+			* [Clearing cached/saved Windows credentials - University of Waterloo](https://uwaterloo.teamdynamix.com/TDClient/1804/Portal/KB/ArticleDet?ID=69756)
+			* [Protect derived domain credentials with Windows Defender Credential Guard - docs.ms](https://docs.microsoft.com/en-us/windows/security/identity-protection/credential-guard/credential-guard)
+			* [KB2871997 and Wdigest - Part 1 - docs.ms](https://docs.microsoft.com/en-us/archive/blogs/kfalde/kb2871997-and-wdigest-part-1)
+		* **Articles/Blogposts/Writeups**
+			* [Remotely dump "Active Directory Domain Controller" machine user database using web shell - Indishell](http://www.mannulinux.org/2018/12/remotely-dump-active-directory-domain.html)
+			* [Auto-Dumping Domain Credentials using SPNs, PowerShell Remoting, and Mimikatz - Scott Sutherland](https://blog.netspi.com/auto-dumping-domain-credentials-using-spns-powershell-remoting-and-mimikatz/)
+			* [How Attackers Dump Active Directory Database Credentials - adsecurity.org](https://adsecurity.org/?p=2398)
+			* [Playing with Relayed Credentials - SecureAuth](https://www.secureauth.com/blog/playing-relayed-credentials)
+			* [Using Domain Controller Account Passwords To HashDump Domains - Mubix](https://room362.blogspot.com/2015/09/using-domain-controller-account.html)
+			* [Password Hunting with Machine Learning in Active Directory - HunniCyber](https://blog.hunniccyber.com/password-hunting-with-ml-in-active-directory/)
+				* tdlr: Situation: - Passwords embedded in files on fileshares lead to compromise. Complication: - It is hard to tell what is a password. Resolution: - Use SharpML to scan.
+			* [Credential theft without admin or touching LSASS with Kekeo by abusing CredSSP / TSPKG (RDP SSO) - Clement Notin(2019)](https://clement.notin.org/blog/2019/07/03/credential-theft-without-admin-or-touching-lsass-with-kekeo-by-abusing-credssp-tspkg-rdp-sso/)
+				* If you have compromised a Windows host, and cannot or do not want to, dump clear-text passwords using traditional techniques (e.g. mimikatz’s sekurlsa::logonpasswords, or LSASS dumping), you should check out the credential delegations settings. If enabled, it allows to obtain clear-text passwords without touching the LSASS process or even without having administrator rights (limited to the current user’s password then)!
+			* **Offline-based**
+				* [Offline Attacks on Active Directory - Michael Grafnetter](https://cqureacademy.com/cqure-labs/cqlabs-dsinternals-powershell-module)
+					* This lab will guide you through some of the most interesting features of the [DSInternals PowerShell Module](https://github.com/MichaelGrafnetter/DSInternals), which was featured at [Black Hat Europe 2019](https://www.blackhat.com/eu-19/arsenal/schedule/index.html#dsinternals-powershell-module-17807) and is also included in FireEye’s Commando VM. This open-source toolset exposes many internal and undocumented security-related features of Active Directory (AD), but we will primarily focus on its state-of-the-art offline database access capabilities. In the course of this lab, you will learn how to perform Active Directory password audits, offline password resets and group membership changes, or SID history injection.
+			* **Reversible Encryption/Fine Grained Password Policies**
+				* [Targeted Plaintext Downgrades with PowerView - harmj0y](http://www.harmj0y.net/blog/redteaming/targeted-plaintext-downgrades-with-powerview/)
+		* **Presentations/Talks/Videos**
+			* [Credential Assessment: Mapping Privilege Escalation at Scale - Matt Weeks(Hack.lu 2016)](https://www.youtube.com/watch?v=tXx6RB0raEY)
+				* In countless intrusions from large retail giants to oil companies, attackers have progressed from initial access to complete network compromise. In the aftermath, much ink is spilt and products are sold on how the attackers first obtained access and how the malware they used could or could not have been detected, while little attention is given to the credentials they found that turned their access on a single-system into thousands more. This process, while critical for offensive operations, is often complex, involving many links in the escalation chain composed of obtaining credentials on system A that grant access to system B and credentials later used on system B that grant further access, etc. We’ll show how to identify and combat such credential exposure at scale with the framework we developed. We comprehensively identify exposed credentials and automatically construct the compromise chains to identify maximal access and privileges gained, useful for either offensive or defensive purposes.
+			* [When Everyone's Dog is Named Fluffy: Abusing the Brand New Security Questions in Windows 10 to Gain Domain-Wide Persistence - Magal Baz, Tom Sela(BHEU18)](https://www.youtube.com/watch?v=hZdnIlQgPPQ)
+				* [Slides](https://i.blackhat.com/eu-18/Wed-Dec-5/eu-18-Baz-When-Everyones-Dog-Is-Named-Fluffy.pdf)
+			* [You (dis)liked mimikatz? Wait for kekeo - Benjamin Delpy(BlueHat IL 2019)](https://www.youtube.com/watch?v=sROKCsXdVDg)
+				* Slides - https://msrnd-cdn-stor.azureedge.net/bluehat/bluehatil/2019/assets/doc/You%20(dis)iked%20mimikatz%20Wait%20for%20kekeo.pdf
+				* For years, you’ve tried to fight mimikatz, first to understand it, and maybe fight it again. This little kiwi fruit shaped program has given you a hard time, extracted your password, stolen your credentials, played with your nerves and certificates... But our friends in New Zealand know it best: there are many different kiwis... and perhaps the fruit is the most lucrative, but it's not the most sadistic. The kiwi animal may not fly, and it remains complex to build it from source, its effects are not less devastating...I will introduce "kekeo", the little animal brother of mimikatz. If you enjoyed playing with Kerberos, ASN1, security providers..., then you'll love adopting this furry, sweet animal. From its birth with MS14-068 to cleartext passwords without local administrator rights, you'll know everything about this animal. This talk will embed CredSSP and TSSP with cleartext credential, explore a little bit about PKINITMustiness and the RSA-on-the-fly for Kerberos with PKI!
+		* **Tools**
+			* [DomainPasswordTest](https://github.com/rvazarkar/DomainPasswordTest)
+				* Tests AD passwords while respecting Bad Password Count
+			* [serviceFu](https://github.com/securifera/serviceFu)
+				* Automates credential skimming from service accounts in Windows Registry using Mimikatz lsadump::secrets. The use case for this tool is when you have administrative rights across certain computers in a domain but do not have any clear-text credentials. ServiceFu will remotely connect to target computers, check if any credentialed services are present, download the system and security registry hive, and decrypt clear-text credentials for the domain service account.
+		* **Brute-Force Attacks**
+			* [Security Advisory: Targeting AD FS With External Brute-Force Attacks - Yaron Zinar](https://www.preempt.com/blog/security-advisory-targeting-ad-fs-with-external-brute-force-attacks/)
+		* **Dumping NTDS.dit**<a name="ntdsdit"></a>
+			* **101**
+				* [How the Data Store Works - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc772829(v=ws.10)?redirectedfrom=MSDN#w2k3tr_adstr_how_jddq)
+			* **Articles/Blogposts/Writeups**
+				* [Dumping Domain Password Hashes - Pentestlab.blog(2018)](https://pentestlab.blog/2018/07/04/dumping-domain-password-hashes/)
+				* [Credential Dumping: NTDS.dit - Yashika Dir(2020)](https://www.hackingarticles.in/credential-dumping-ntds-dit/)
+				* [How Attackers Pull the Active Directory Database (NTDS.dit) from a Domain Controller](https://adsecurity.org/?p=451)
+				* [Extracting Password Hashes From The Ntds.dit File](https://blog.stealthbits.com/extracting-password-hashes-from-the-ntds-dit-file/)
+				* [Obtaining NTDS.Dit Using In-Built Windows Commands - Cyberis(2014)](https://www.cyberis.co.uk/2014/02/obtaining-ntdsdit-using-in-built.html)
+				* [Volume Shadow Copy NTDS.dit Domain Hashes Remotely - Part 1  - mubix](https://malicious.link/post/2013/2013-06-10-volume-shadow-copy-ntdsdit-domain-hashes-remotely-part-1/)
+				* [Getting Hashes from NTDS.dit File - swordshield.com](https://www.swordshield.com/blog/getting-hashes-from-ntds-dit-file/)
+				* [Extracting Hashes and Domain Info From ntds.dit - ropnop](https://blog.ropnop.com/extracting-hashes-and-domain-info-from-ntds-dit/)
+				* [Practice ntds.dit File Part 2: Extracting Hashes - Didier Stevens](https://blog.didierstevens.com/2016/07/13/practice-ntds-dit-file-part-2-extracting-hashes/)
+			* **Tools**
+				* [adXtract](https://github.com/LordNem/adXtract)
+				* [DIT Snapshot Viewer](https://github.com/yosqueoy/ditsnap)
+					* DIT Snapshot Viewer is an inspection tool for Active Directory database, ntds.dit. This tool connects to ESE (Extensible Storage Engine) and reads tables/records including hidden objects by low level C API. The tool can extract ntds.dit file without stopping lsass.exe. When Active Directory Service is running, lsass.exe locks the file and does not allow to access to it. The snapshot wizard copies ntds.dit using VSS (Volume Shadow Copy Service) even if the file is exclusively locked. As copying ntds.dit may cause data inconsistency in ESE DB, the wizard automatically runs esentutil /repair command to fix the inconsistency.
+				* [NTDSXtract - Active Directory Forensics Framework](http://www.ntdsxtract.com/)
+					* This framework was developed by the author in order to provide the community with a solution to extract forensically important information from the main database of Microsoft Active Directory (NTDS.DIT).
+				* [NTDSDumpEx](https://github.com/zcgonvh/NTDSDumpEx)
+					* NTDS.dit offline dumper with non-elevated
+				* [NTDS-Extraction-Tools](https://github.com/robemmerson/NTDS-Extractions-Tools)
+					* Automated scripts that use an older version of libesedb (2014-04-06) to extract large NTDS.dit files
+				* [gosecretsdump](https://github.com/C-Sto/gosecretsdump)
+					* This is a conversion of the impacket secretsdump module into golang. It's not very good, but it is quite fast. Please let me know if you find bugs, I'll try and fix where I can - bonus points if you can provide sample .dit files for me to bash against.
+		* **MFA-Related**
+			* **Articles/Blogposts/Writeups**
+				* [Multi-Factor Mixup: Who Were You Again? - Okta](https://www.okta.com/security-blog/2018/08/multi-factor-authentication-microsoft-adfs-vulnerability/)
+					* A weakness in the Microsoft ADFS protocol for integration with MFA products allows a second factor for one account to be used for second-factor authentication to all other accounts in an organization.
+		* **Net-NTLM**
+			* [Places of Interest in Stealing NetNTLM Hashes - osandamalith.com](https://osandamalith.com/2017/03/24/places-of-interest-in-stealing-netntlm-hashes/)
+		* **NetNTLMtoSilverTicket**
+			* [SpoolSample -> NetNTLMv1 -> NTLM -> Silver Ticket](https://github.com/NotMedic/NetNTLMtoSilverTicket/)
+				* This technique has been alluded to by others, but I haven't seen anything cohesive out there. Below we'll walk through the steps of obtaining NetNTLMv1 Challenge/Response authentication, cracking those to NTLM Hashes, and using that NTLM Hash to sign a Kerberos Silver ticket. This will work on networks where "LAN Manager authentication level" is set to 2 or less. This is a fairly common scenario in older, larger Windows deployments. It should not work on Windows 10 / Server 2016 or newer.
+		* **Password Spraying**
+			* **Tools**
+				* [ADFSpray](https://github.com/xFreed0m/ADFSpray/blob/master/README.md)
+					* ADFSpray is a python3 tool to perform password spray attack against Microsoft ADFS. ALWAYS VERIFY THE LOCKOUT POLICY TO PREVENT LOCKING USERS.
 	* **DCShadow**<a name="dcshadow"></a>
 		* **101**
 			* [Active Directory: What can make your million dollar SIEM go blind? - Vincent Le Toux, Benjamin Delpy](https://www.youtube.com/watch?v=KILnU4FhQbc)
@@ -479,7 +586,7 @@
 		* **Articles/Blogposts/Writeups**
 			* [Another Word on Delegation](https://www.harmj0y.net/blog/redteaming/another-word-on-delegation/)
 			* [From Kekeo to Rubeus](https://www.harmj0y.net/blog/redteaming/from-kekeo-to-rubeus/)
-			* [S4U2Pwnage](http://www.harmj0y.net/blog/activedirectory/s4u2pwnage/)
+			* [S4U2Pwnage](https://www.harmj0y.net/blog/activedirectory/s4u2pwnage/)
 			* [Kerberos Delegation, Spns And More...](https://www.secureauth.com/blog/kerberos-delegation-spns-and-more)
 			* [A Case Study in Wagging the Dog: Computer Takeover - harmj0y](http://www.harmj0y.net/blog/activedirectory/a-case-study-in-wagging-the-dog-computer-takeover/)
 			* [Wagging the Dog: Abusing Resource-Based Constrained Delegation to Attack Active Directory - Elad Shamir](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html)
@@ -520,6 +627,28 @@
 				* Kerberos unconstrained delegation abuse toolkit 
 		* **Mitigation**
 			* [ADV190006 | Guidance to mitigate unconstrained delegation vulnerabilities portal.msrc](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV190006)
+	* **AS-REP Roasting**<a name="asreproasting"></a>
+		* **101**
+			* [LayerOne2016 - Kerberos Party Tricks (Geoffrey Janjua) (No sound!)](https://www.youtube.com/watch?v=qcfdPdqbk5U)
+				* [Slides](https://static1.squarespace.com/static/557377e6e4b0976301e02e0f/t/574a0008f85082d3b6ba88a8/1464467468683/Layer1+2016+-+Janjua+-+Kerberos+Party+Tricks+-+Weaponizing+Kerberos+Protocol+Flaws.pdf)
+				* [Toolkit](http://www.exumbraops.com/s/krbtrickstar.gz)
+			* [Kerberos Party Tricks: Weaponizing Kerberos Protocol Flaws - Geoffrey Janjua(2016)](http://www.exumbraops.com/blog/2016/6/1/kerberos-party-tricks-weaponizing-kerberos-protocol-flaws)
+		* **Informational**
+			* [Roasting AS-REPs - harmj0y](https://www.harmj0y.net/blog/activedirectory/roasting-as-reps/)
+			* [IOC differences between Kerberoasting and AS-REP Roasting - Jonathan Johnson(2019)](https://medium.com/@jsecurity101/ioc-differences-between-kerberoasting-and-as-rep-roasting-4ae179cdf9ec)
+			* [AS_REP Roasting - hackndo(2020)](https://en.hackndo.com/kerberos-asrep-roasting/)
+			* [Roasting your way to DA - Build-Break-Defend-Fix - Andy Gill(2020)](https://blog.zsec.uk/path2da-pt2/)
+				* Dive into both Kerberoasting and ASREP Roasting, looking at how they work, how to introduce them into an environment and how to fix them or where possible monitor and defend against them.
+		* **How-Tos**
+			* [AS-REP Roasting - @spottheplanet](https://www.ired.team/offensive-security-experiments/active-directory-kerberos-abuse/as-rep-roasting-using-rubeus-and-hashcat)
+			* [Kerberos AD Attacks - More Roasting with AS-REP - Adam Chester(2017)](https://blog.xpnsec.com/kerberos-attacks-part-2/)
+			* [AS-REP Roasting – Cracking User Account Password - akijos(2018)](https://akijosberryblog.wordpress.com/2018/01/17/as-rep-roasting-cracking-user-account-password/)
+			* [Cracking Active Directory Passwords with AS-REP Roasting - Jeff Warren(2019)](https://blog.stealthbits.com/cracking-active-directory-passwords-with-as-rep-roasting/)
+			* [AS-REP Roasting - Pavandeep Singh(2020)](https://www.hackingarticles.in/as-rep-roasting/)
+			* [ASREP Roasting - AkimboCore(2020)](https://www.akimbocore.com/article/asrep-roasting/)
+		* **Tools**
+			* [Rubeus](https://github.com/GhostPack/Rubeus)
+				* Rubeus is a C# toolset for raw Kerberos interaction and abuses. It is heavily adapted from Benjamin Delpy's Kekeo project (CC BY-NC-SA 4.0 license) and Vincent LE TOUX's MakeMeEnterpriseAdmin project (GPL v3.0 license). Full credit goes to Benjamin and Vincent for working out the hard components of weaponization- without their prior work this project would not exist.
 	* **Kerberoast(ing)**<a name="kerberoasting"></a>
 		* **101**
 			* 
@@ -527,6 +656,7 @@
 			* [Kerberoasting - Part 1 - mubix](https://room362.com/post/2016/kerberoast-pt1/)
 			* [Kerberoasting - Part 2 - mubix](https://room362.com/post/2016/kerberoast-pt2/)
 			* [Kerberoasting - Part 3 - mubix](https://room362.com/post/2016/kerberoast-pt3/)
+			* [Kerberoasting - Pixis](https://en.hackndo.com/kerberoasting/)
 			* [Cracking Kerberos TGS Tickets Using Kerberoast – Exploiting Kerberos to Compromise the Active Directory Domain - adsecurity.org](https://adsecurity.org/?p=2293)
 			* [Kerberoasting Without Mimikatz - Will Schroeder](https://www.harmj0y.net/blog/powershell/kerberoasting-without-mimikatz/)
 			* [Mimikatz 2.0 - Brute-Forcing Service Account Passwords ](https://www.beneaththewaves.net/Projects/Mimikatz_20_-_Brute-Forcing_Service_Account_Passwords.html)
@@ -534,14 +664,13 @@
 			* [kerberos, kerberoast and golden tickets - leonjza](https://leonjza.github.io/blog/2016/01/09/kerberos-kerberoast-and-golden-tickets/)
 			* [Extracting Service Account Passwords with Kerberoasting - Jeff Warren](https://blog.stealthbits.com/extracting-service-account-passwords-with-kerberoasting/)
 			* [Cracking Service Account Passwords with Kerberoasting](https://www.cyberark.com/blog/cracking-service-account-passwords-kerberoasting/)
-			* [Targeted Kerberoasting - harmj0y](http://www.harmj0y.net/blog/activedirectory/targeted-kerberoasting/)
+			* [Targeted Kerberoasting - harmj0y](https://www.harmj0y.net/blog/activedirectory/targeted-kerberoasting/)
 			* [Kerberoast PW list for cracking passwords with complexity requirements](https://gist.github.com/edermi/f8b143b11dc020b854178d3809cf91b5)
 			* [kerberos, kerberoast and golden tickets - leonzja](https://leonjza.github.io/blog/2016/01/09/kerberos-kerberoast-and-golden-tickets/)
 			* [Kerberoast - pentestlab.blog](https://pentestlab.blog/2018/06/12/kerberoast/)
 			* [A Toast to Kerberoast - Derek Banks](https://www.blackhillsinfosec.com/a-toast-to-kerberoast/)
 			* [Kerberoasting, exploiting unpatched systems – a day in the life of a Red Teamer - Chetan Nayak](http://niiconsulting.com/checkmate/2018/05/kerberoasting-exploiting-unpatched-systems-a-day-in-the-life-of-a-red-teamer/)
 			* [Discovering Service Accounts Without Using Privileges - Jeff Warren](https://blog.stealthbits.com/discovering-service-accounts-without-using-privileges/)
-			* [Kerberoasting - Pixis](https://en.hackndo.com/kerberoasting/)
 			* [Kerberoasting and SharpRoast output parsing! - grumpy-sec](https://grumpy-sec.blogspot.com/2018/08/kerberoasting-and-sharproast-output.html)
 		* **Talks & Presentations**
 			* [Attacking Kerberos: Kicking the Guard Dog of Hades - Tim Medin](https://www.youtube.com/watch?v=HHJWfG9b0-E)
@@ -660,17 +789,61 @@
 			* Windows Defender Advanced Threat Protection is now available for all Blue Teams to utilize within Windows 10 Enterprise and Server 2012/16, which includes detection of post breach tools, tactics and techniques commonly used by Red Teams, as well as behavior analytics. 
 			* [Slides](https://www.blackhat.com/docs/eu-17/materials/eu-17-Thompson-Red-Team-Techniques-For-Evading-Bypassing-And-Disabling-MS-Advanced-Threat-Protection-And-Advanced-Threat-Analytics.pdf)
 	* **Collection**<a name="adcollect"></a>
-		* [Accessing Internal Fileshares through Exchange ActiveSync - Adam Rutherford and David Chismon](https://labs.mwrinfosecurity.com/blog/accessing-internal-fileshares-through-exchange-activesync)
-
+		* **Articles/Blogposts/Writeps**
+			* [Accessing Internal Fileshares through Exchange ActiveSync - Adam Rutherford and David Chismon](https://labs.mwrinfosecurity.com/blog/accessing-internal-fileshares-through-exchange-activesync)
+		* **Tools**
+			* [SharpML](https://github.com/HunnicCyber/SharpML)
+				* SharpML is C# and Python based tool that performs a number of operations with a view to mining file shares, querying Active Directory for users, dropping an ML model and associated rules, perfoming Active Directory authentication checks, with a view to automating the process of hunting for passwords in file shares by feeding the mined data into the ML model.
 	* **Persistence**<a name="adpersist"></a>
-		* [The Active Directory Botnet - Ty Miller, Paul Kalinin(BHUSA 17)](https://www.blackhat.com/docs/us-17/wednesday/us-17-Miller-The-Active-Directory-Botnet.pdf)
-		* [Command and Control Using Active Directory - harmj0y](http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/)
-		* [Sneaky Active Directory Persistence #12: Malicious Security Support Provider (SSP) - adsecurity.org](https://adsecurity.org/?p=1760)
+		* **Articles/Blogposts/Writeups**
+			* [Command and Control Using Active Directory - harmj0y](http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/)
+			* [Sneaky Active Directory Persistence #12: Malicious Security Support Provider (SSP) - adsecurity.org](https://adsecurity.org/?p=1760)
+		* **Presentations/Talks/Videos**
+			* [Catch Me if You Can - Eduardo Arriols(DefconSafeMode RTV2020](https://www.youtube.com/watch?v=IrX5uVCgUGM&list=PLruly0ngXhPHlQ0ebMbB3XuKVJPq3B0qS&index=24&t=0s)
+				* The presentation will show, from a technical point of view, how to deploy backdoors to guarantee access to an organization. Initially, a brief review about types of persistance, locations where it can be deploy and common aspects to be taken into account will be carried out, to then go on to describe all the details that allow a Red Team to guarantee access to the entity without the organization being able to detect it or being able to expel the attacker before the attacker re-enters using another alternative persistence.
+			* [The Active Directory Botnet - Ty Miller, Paul Kalinin(BHUSA 17)](https://www.blackhat.com/docs/us-17/wednesday/us-17-Miller-The-Active-Directory-Botnet.pdf)
+		* **ACLs & Security Descriptors**
+		* **AdminSDHolder**
+			* [Sneaky Active Directory Persistence #15: Leverage AdminSDHolder & SDProp to (Re)Gain Domain Admin Rights](https://adsecurity.org/?p=1906)
+			* [Persistence Using Adminsdholder And Sdprop](https://blog.stealthbits.com/persistence-using-adminsdholder-and-sdprop/)
+			* [Domain Persistence AdminSDHolder - Raj Chandel(2020)](https://www.hackingarticles.in/domain-persistence-adminsdholder/)
+		* **DCShadow**
+			* [Creating Persistence With Dcshadow](https://blog.stealthbits.com/creating-persistence-with-dcshadow/)
+			* [Domain Persistence: DC Shadow Attack - Raj Chandel(2020)](https://www.hackingarticles.in/domain-persistence-dc-shadow-attack/)
+		* **Directory Services Restore Mode**
+			* [Sneaky Active Directory Persistence #11: Directory Service Restore Mode (DSRM)](https://adsecurity.org/?p=1714)
+			* [Sneaky Active Directory Persistence #13: DSRM Persistence v2](https://adsecurity.org/?p=1785)
+		* **Group Policy Object**
+			* [Sneaky Active Directory Persistence #17: Group Policy](https://adsecurity.org/?p=2716)
+		* **Golden Ticket**
+			* [Golden Ticket](https://pentestlab.blog/2018/04/09/golden-ticket/)
+			* [Kerberos Golden Tickets are Now More Golden](https://adsecurity.org/?p=1640)
+			* [Domain Persistence: Golden Ticket Attack - Raj Chandel(2020)](https://www.hackingarticles.in/*domain-persistence-golden-ticket-attack/)
+		* **SeEnableDelegationPrivilege**
+			* [The Most Dangerous User Right You (Probably) Have Never Heard Of](https://www.harmj0y.net/blog/activedirectory/the-most-dangerous-user-right-you-probably-have-never-heard-of/)
+			* [SeEnableDelegationPrivilege Active Directory Backdoor](https://www.youtube.com/watch?v=OiqaO9RHskU)
+		* **Security Support Provider**
+			* [Sneaky Active Directory Persistence #12: Malicious Security Support Provider (SSP)](https://adsecurity.org/?p=1760)
+		* **SID History**
+			* [Sneaky Active Directory Persistence #14: SID History](https://adsecurity.org/?p=1772)
+		* **Silver Ticket**
+			* [How Attackers Use Kerberos Silver Tickets to Exploit Systems](https://adsecurity.org/?p=2011)
+			* [Sneaky Active Directory Persistence #16: Computer Accounts & Domain Controller Silver Tickets](https://adsecurity.org/?p=2753)
+		* **Skeleton Keys**
+			* [Unlocking All The Doors To Active Directory With The Skeleton Key Attack](https://blog.stealthbits.com/unlocking-all-the-doors-to-active-directory-with-the-skeleton-key-attack/)
+			* [Skeleton Key](https://pentestlab.blog/2018/04/10/skeleton-key/)
+			* [Attackers Can Now Use Mimikatz to Implant Skeleton Key on Domain Controllers & BackDoor Your Active Directory Forest](https://adsecurity.org/?p=1275)
+		* **SPNs/Kerberoast**
+			* [Sneaky Persistence Active Directory Trick #18: Dropping SPNs on Admin Accounts for Later Kerberoasting - Sean Metcalf(2017)](https://adsecurity.org/?p=3466)
 	* **Privilege Escalation**<a name="adprivesc"></a>
 		* **ACEs/ACLs/DACLs**
 			* [DACL Permissions Overwrite Privilege Escalation (CVE-2019-0841) - Nabeel Ahmed(2019)](https://krbtgt.pw/dacl-permissions-overwrite-privilege-escalation-cve-2019-0841/)
 				* This vulnerability allows low privileged users to hijack file that are owned by NT AUTHORITY\SYSTEM by overwriting permissions on the targeted file. Successful exploitation results in "Full Control" permissions for the low privileged user.
 			* [Microsoft Exchange – ACL - NetbiosX](https://pentestlab.blog/2019/09/12/microsoft-exchange-acl/)
+			* [RACE Minimal Rights and ACE for Active Directory Dominance - Nikhil Mittal(Defcon27)](https://www.youtube.com/watch?v=M7Z5h6reGc4)
+				* [Slides](https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Nikhil-Mittal-RACE-Minimal-Rights-and-ACE-for-Active-Directory-Dominance.pdf)
+				* [Blogpost](http://www.labofapenetrationtester.com/2019/08/race.html)
+				* 'It is possible to execute interesting persistence and on-demand privilege escalation attacks against Windows machines by only modifying ACLs of various objects. We will need administrator privileges initially. '
 		* **Aiming for DA**
 			* [Post-Exploitation in Windows: From Local Admin To Domain Admin (efficiently) - pentestmonkey](http://pentestmonkey.net/uncategorized/from-local-admin-to-domain-admin))
 			* [Scenario-based pen-testing: From zero to domain admin with no missing patches required - Georgia Weidman](https://www.computerworld.com/article/2843632/scenario-based-pen-testing-from-zero-to-domain-admin-with-no-missing-patches-required.html)
@@ -679,12 +852,15 @@
 			* [Gaining Domain Admin from Outside Active Directory - markitzeroday.com](https://markitzeroday.com/pass-the-hash/crack-map-exec/2018/03/04/da-from-outside-the-domain.html)
 		* **Group Policy**
 			* [How to own any windows network with group policy hijacking attacks](https://labs.mwrinfosecurity.com/blog/2015/04/02/how-to-own-any-windows-network-with-group-policy-hijacking-attacks/)
-		* **One-offs**
+		* **Exploits/CVEs**
 			* [Gone to the Dogs - Elad Shamir](https://shenaniganslabs.io/2019/08/08/Lock-Screen-LPE.html)
 				* Win10 PrivEsc Domain Joined
 			* [CVE-2018-8340: Multi-Factor Mixup: Who Were You Again? - Andrew Lee](https://www.okta.com/security-blog/2018/08/multi-factor-authentication-microsoft-adfs-vulnerability)
 				* A weakness in the Microsoft ADFS protocol for integration with MFA products allows a second factor for one account to be used for second-factor authentication to all other accounts in an organization.
-	* [MS CVE-2018-8340](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8340)
+			* [MS CVE-2018-8340](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2018-8340)
+			* [CVE-2020-0665 | Active Directory Elevation of Privilege Vulnerability - portal.msrc](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-0665)
+			* [CVE-2020-1472 | Netlogon Elevation of Privilege Vulnerability - msrc](https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/CVE-2020-1472)
+				* An elevation of privilege vulnerability exists when an attacker establishes a vulnerable Netlogon secure channel connection to a domain controller, using the Netlogon Remote Protocol (MS-NRPC). An attacker who successfully exploited the vulnerability could run a specially crafted application on a device on the network.
 		* **Tools**
 			* [ADAPE-Script](https://github.com/hausec/ADAPE-Script)
 			    * Active Directory Assessment and Privilege Escalation Script
@@ -701,6 +877,11 @@
 			* [AD Zone Transfers as a user - mubix](https://malicious.link/post/2013/ad-zone-transfers-as-a-user/)
 			* [Gathering AD Data with the Active Directory PowerShell Module - ADSecurity.com](https://adsecurity.org/?p=3719)
 			* [Enumerating remote access policies through GPO - William Knowles, Jon Cave](https://labs.f-secure.com/blog/enumerating-remote-access-policies-through-gpo/)
+			* [Getting around Active Directory search size limit via ldapsearch - Fabio Martelli](https://www.tirasa.net/en/blog/getting-around-active-directory-search)
+			* [Domain Goodness – How I Learned to LOVE AD Explorer - Sally Vandeven](https://www.blackhillsinfosec.com/domain-goodness-learned-love-ad-explorer/)
+			* [LDAPFragger: Bypassing network restrictions using LDAP attributes - Rindert Kramer](https://research.nccgroup.com/2020/03/19/ldapfragger-bypassing-network-restrictions-using-ldap-attributes/)
+			* [Active Directory Enumeration with PowerShell - Haboob](https://www.exploit-db.com/docs/english/46990-active-directory-enumeration-with-powershell.pdf)
+				* Nowadays, most of the environments are using Active Directory to manage their networks and resources. And over the past years, the attackers have been focused to abuse and attack the Active Directory environments using different techniques and methodologies. So in this research paper, we are going to use the power of the PowerShell to enumerate the resources of the Active Directory, like enumerating the domains, users, groups, ACL, GPOs, domain trusts also hunting the users and the domain admins. With this valuable information, we can increase our attack surface to abuse the AD like Privilege escalation, lateral movements and persistence and so on.
 		* **Tools**
 			* **BloodHound**
 				* **101**
@@ -712,6 +893,7 @@
 					* [BloodHound and the Adversary Resilience Model](https://docs.google.com/presentation/d/14tHNBCavg-HfM7aoeEbGnyhVQusfwOjOyQE1_wXVs9o/mobilepresent#slide=id.g35f391192_00)
 					* [Introducing the Adversary Resilience Methodology — Part One - Andy Robbins](https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-one-e38e06ffd604)
 					* [Introducing the Adversary Resilience Methodology — Part Two - Andy Robbins](https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-two-279a1ed7863d)
+					* [Exploring Users With Multiple Accounts In BloodHound - Alain Homewood(2020)](https://insomniasec.com/blog/bloodhound-shared-accounts)
 				* **Historical Posts**
 					* [Defenders think in lists. Attackers think in graphs. As long as this is true, attackers win. - JohnLaTwC](https://github.com/JohnLaTwC/Shared/blob/master/Defenders%20think%20in%20lists.%20Attackers%20think%20in%20graphs.%20As%20long%20as%20this%20is%20true%2C%20attackers%20win.md)
 					* [Automated Derivative Administrator Search - wald0](https://wald0.com/?p=14)
@@ -775,6 +957,9 @@
 					* PowerShell module to interact with Active Directory using ADSI and the `System.DirectoryServices` namespace (.NET Framework).
 				* [jackdaw](https://github.com/skelsec/jackdaw)
 					* Jackdaw is here to collect all information in your domain, store it in a SQL database and show you nice graphs on how your domain objects interact with each-other an how a potential attacker may exploit these interactions. It also comes with a handy feature to help you in a password-cracking project by storing/looking up/reporting hashes/passowrds/users.
+			* **LDAP-based**
+				* [go-windapsearch](https://github.com/ropnop/go-windapsearch)
+					* windapsearch is a tool to assist in Active Directory Domain enumeration through LDAP queries. It contains several modules to enumerate users, groups, computers, as well as perform searching and unauthenticated information gathering.
 			* **Local Machine**
 				* [HostEnum](https://github.com/threatexpress/red-team-scripts)
 					* A PowerShell v2.0 compatible script comprised of multiple system enumeration / situational awareness techniques collected over time. If system is a member of a Windows domain, it can also perform limited domain enumeration with the -Domain switch. However, domain enumeration is significantly limited with the intention that PowerView or BoodHound could also be used.
@@ -813,7 +998,30 @@
 			* [zBang](https://github.com/cyberark/zBang)
 				* zBang is a special risk assessment tool that detects potential privileged account threats in the scanned network.
 				* [Blogpost](https://www.cyberark.com/threat-research-blog/the-big-zbang-theory-a-new-open-source-tool/)
-
+	* **Lateral Movement**<a name="adlate"></a>
+		* **Articles/Blogposts/Writeups**
+		* **DCOM**
+		* **Internal Phishing**
+		* **GPO**
+		* **Pass-the-Ticket**
+			* [Lateral Movement: Pass the Ticket Attack - Pavandeep Singh(2020)](https://www.hackingarticles.in/lateral-movement-pass-the-ticket-attack/)
+		* **Over-Pass-the-Hash**
+			* [Lateral Movement: Over Pass the Hash - Pavandeep Singh(2020)](https://www.hackingarticles.in/lateral-movement-over-pass-the-hash/)
+		* **RDP**
+		* **RPC**
+		* **SCCM**
+		* **Scheduled Tasks**
+		* **Service Creation/Modification**
+		* **SMB**
+		* **SSH**
+		* **WinRM**
+		* **WMI**
+			* [Lateral Movement: WMI - Pavandeep Singh(2020)](https://www.hackingarticles.in/lateral-movement-wmi/)
+		* **Tools**
+			* **CrackMapExec**
+				* [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec)
+					* [Lateral Moment on Active Directory: CrackMapExec - Yashika Dhir(2020)](https://www.hackingarticles.in/lateral-moment-on-active-directory-crackmapexec/)
+		
 
 
 

@@ -7,7 +7,9 @@
 - [Post-Exploitation](#postex)
 	- [General Post Exploitation Tactics](#postex-general)
 - [Linux Specific]()
+	- [Linux Code Injection Techniques](#lcit)
 - [macOS Specific]()
+	- [macOS Code Injection Techiques](#mcit)
 - [Windows Specific]()
 	- [101](#win101)
 	- [Living_off_The_Land](#lolbins)
@@ -16,6 +18,7 @@
 	- [Code Signing](#wincodesign)
 	- [CSharp & .NET Stuff](#csharp-stuff) 
 	- [Powershell Stuff](#powershell-stuff) 
+	- [Windows Code Injection Techniques](#wcit)
 - [Pivoting](#pivot)
 - [Avoiding/Bypassing Anti-Virus/Whitelisting/Sandboxes/etc](#av)	
 - [Payloads](#payloads)
@@ -1853,6 +1856,7 @@ To Do
 					* [Windows 10 - Task Scheduler service - Privilege Escalation/Persistence through DLL planting - remoteawesomethoughts.blogspot](https://remoteawesomethoughts.blogspot.com/2019/05/windows-10-task-schedulerservice.html)
 					* [DLL Hijacking via URL files - InsertScript](https://insert-script.blogspot.com/2018/05/dll-hijacking-via-url-files.html)
 					* [DLL Hijacking - pentestlab.blog(2017)](https://pentestlab.blog/2017/03/27/dll-hijacking/)
+					* [Understanding how DLL Hijacking works - Astr0baby(2018)](https://astr0baby.wordpress.com/2018/09/08/understanding-how-dll-hijacking-works/)
 					* [DLL Hijacking - libertyshell.com(2019)](https://liberty-shell.com/sec/2019/03/12/dll-hijacking/)
 					* [Understanding how DLL Hijacking works - Astr0baby(2018)](https://astr0baby.wordpress.com/2018/09/08/understanding-how-dll-hijacking-works/)
 					* [Lateral Movement — SCM and DLL Hijacking Primer - Dwight Hohnstein(2019)](https://posts.specterops.io/lateral-movement-scm-and-dll-hijacking-primer-d2f61e8ab992)
@@ -1870,16 +1874,6 @@ To Do
 					* [Koppeling](https://github.com/monoxgas/Koppeling)
 						* This project is a demonstration of advanced DLL hijack techniques. It was released in conjunction with the ["Adaptive DLL Hijacking" blog post](https://silentbreaksecurity.com/adaptive-dll-hijacking/). I recommend you start there to contextualize this code.
 					* [TrustJack](https://github.com/jfmaes/TrustJack)
-			* **DLL Injection**
-				* [DLL Injection and Hooking](http://securityxploded.com/dll-injection-and-hooking.php)
-				* [Windows DLL Injection Basics](http://blog.opensecurityresearch.com/2013/01/windows-dll-injection-basics.html)
-				* [Crash Course in DLL Hijacking](https://blog.fortinet.com/2015/12/10/a-crash-course-in-dll-hijacking)
-				* [Windows DLL Injection Basics - OpenSecurityTraining](http://blog.opensecurityresearch.com/2013/01/windows-dll-injection-basics.html)
-				* [An Improved Reflective DLL Injection Technique - Dan Staples](https://disman.tl/2015/01/30/an-improved-reflective-dll-injection-technique.html)
-				* [Reflective DLL Injection with PowerShell - clymb3r](https://clymb3r.wordpress.com/2013/04/06/reflective-dll-injection-with-powershell/)	
-				* [Delivering custom payloads with Metasploit using DLL injection - blog.cobalstrike](https://blog.cobaltstrike.com/2012/09/17/delivering-custom-payloads-with-metasploit-using-dll-injection/)
-				* [Understanding how DLL Hijacking works - Astr0baby](https://astr0baby.wordpress.com/2018/09/08/understanding-how-dll-hijacking-works/)
-				* [DLL Injection - NetbiosX](https://pentestlab.blog/2017/04/04/dll-injection/)
 			* **DLL Tools**
 				* [rattler](https://github.com/sensepost/rattler)
 					* Rattler is a tool that automates the identification of DLL's which can be used for DLL preloading attacks.
@@ -1889,8 +1883,6 @@ To Do
 					* Pazuzu is a Python script that allows you to embed a binary within a precompiled DLL which uses reflective DLL injection. The goal is that you can run your own binary directly from memory. This can be useful in various scenarios.	
 				* [Bleak](https://github.com/Akaion/Bleak)
 					* A Windows native DLL injection library written in C# that supports several methods of injection.
-				* [Reflective DLL injection using SetThreadContext() and NtContinue(https://zerosum0x0.blogspot.com/2017/07/threadcontinue-reflective-injection.html)
-					* [Code](https://github.com/zerosum0x0/ThreadContinue)
 		* **Exploits/Missing Patches**
 			* [Windows Kernel Exploits - NetbiosX](https://pentestlab.blog/2017/04/24/windows-kernel-exploits/)
 			* [kernel-exploits - SecWiki](https://github.com/SecWiki/windows-kernel-exploits)
@@ -2282,8 +2274,12 @@ To Do
 		* **101**
 			* [AMSI Bypass - Paul Laine](https://www.contextis.com/en/blog/amsi-bypass)
 			* [Exploring PowerShell AMSI and Logging Evasion - Adam Chester](https://www.mdsec.co.uk/2018/06/exploring-powershell-amsi-and-logging-evasion/)
-			* [AMSI: How Windows 10 Plans to Stop Script-Based Attacks and How Well It Does It - Blogpost](http://www.labofapenetrationtester.com/2016/09/amsi.html)
-			* [AMSI: How Windows 10 Plans to Stop Script-Based Attaacks and How Well It Does It - BH US16](https://www.blackhat.com/docs/us-16/materials/us-16-Mittal-AMSI-How-Windows-10-Plans-To-Stop-Script-Based-Attacks-And-How-Well-It-Does-It.pdf)
+			* [Developer audience, and sample code - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/dev-audience)
+			* [Antimalware Scan Interface (AMSI) functions - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-functions)
+			* [AMSI: How Windows 10 Plans to Stop Script-Based Attacks and How Well It Does It - Nikhil Mittal(BHUS16)](https://www.youtube.com/watch?v=7A_rgu3kbvw)
+				* [Blogpost](http://www.labofapenetrationtester.com/2016/09/amsi.html)
+				* [Paper](https://www.blackhat.com/docs/us-16/materials/us-16-Mittal-AMSI-How-Windows-10-Plans-To-Stop-Script-Based-Attacks-And-How-Well-It-Does-It.pdf)
+				* In Windows 10, Microsoft introduced the AntiMalware Scan Interface (AMSI) which is designed to target script-based attacks and malware. Script-based attacks have been lethal for enterprise security and with advent of PowerShell, such attacks have become increasingly common. AMSI targets malicious scripts written in PowerShell, VBScript, JScript etc. and drastically improves detection and blocking rate of malicious scripts. When a piece of code is submitted for execution to the scripting host, AMSI steps in and the code is scanned for malicious content. What makes AMSI effective is, no matter how obfuscated the code is, it needs to be presented to the script host in clear text and unobfuscated. Moreover, since the code is submitted to AMSI just before execution, it doesn't matter if the code came from disk, memory or was entered interactively. AMSI is an open interface and MS says any application will be able to call its APIs. Currently, Windows Defender uses it on Windows 10. Has Microsoft finally killed script-based attacks? What are the ways out? The talk will be full of live demonstrations.
 		* **AMSI Internals**
 			* [The Rise and Fall of AMSI - Tal Liberman(BHAsia 2018)](https://i.blackhat.com/briefings/asia/2018/asia-18-Tal-Liberman-Documenting-the-Undocumented-The-Rise-and-Fall-of-AMSI.pdf)
 			* [IAmsiStream interface sample - MS Github](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/AmsiStream)
@@ -2880,16 +2876,18 @@ To Do
 		* [Eavesarp](https://github.com/arch4ngel/eavesarp)
 			* A reconnaissance tool that analyzes ARP requests to identify hosts that are likely communicating with one another, which is useful in those dreaded situations where LLMNR/NBNS aren't in use for name resolution.
 			* [Blogpost](https://blackhillsinfosec.com/analyzing-arp-to-discover-exploit-stale-network-address-configurations/)
+		* [hunter](https://github.com/fdiskyou/hunter/)
+			*  (l)user hunter using WinAPI calls only
 		* [NetRipper](https://github.com/NytroRST/NetRipper)
 			* NetRipper is a post exploitation tool targeting Windows systems which uses API hooking in order to intercept network traffic and encryption related functions from a low privileged user, being able to capture both plain-text traffic and encrypted traffic before encryption/after decryption.
 * **Lateral Movement**<a name="winlater"></a>
-	* [Lateral Movement – Services - pentestlab.blog(2020)](https://pentestlab.blog/2020/07/21/lateral-movement-services/)
 	* **Articles/Blogposts/Writeups**
 		* [Using Credentials to Own Windows Boxes - Part 1 (from Kali) - ropnop](https://blog.ropnop.com/using-credentials-to-own-windows-boxes/)
 		* [Authenticated Remote Code Execution Methods in Windows](https://www.scriptjunkie.us/2013/02/authenticated-remote-code-execution-methods-in-windows/)
 		* [Lateral Movement and Persistence: tactics vs techniques - hexacorn(2018)](https://www.hexacorn.com/blog/2018/10/05/lateral-movement-and-persistence-tactics-vs-techniques/)
-		 * [Offensive Lateral Movement - Hausec](https://hausec.com/2019/08/12/offensive-lateral-movement/)
+		* [Offensive Lateral Movement - Hausec](https://hausec.com/2019/08/12/offensive-lateral-movement/)
 		* [Lateral Movement - Riccardo Carrani(2019)](https://riccardoancarani.github.io/2019-10-04-lateral-movement-megaprimer/)
+		* [Description of User Account Control and remote restrictions in Windows Vista - support.ms](https://support.microsoft.com/en-us/help/951016/description-of-user-account-control-and-remote-restrictions-in-windows)	
 	* **Talks/Presentations/Videos**
 		* [The Industrial Revolution of Lateral Movement - Tal Be'ery, Tal Maor(BH USA17)](https://www.blackhat.com/docs/us-17/thursday/us-17-Beery-The-Industrial-Revolution-Of-Lateral-Movement.pdf)
 		* [Look what you could be up against soon - FX, Hadez(Offensivecon2020)](https://www.youtube.com/watch?v=fgp0KQNjrMQ)
@@ -2925,6 +2923,8 @@ To Do
 			* [Still Passing the Hash 15 Years Later: Using Keys to the Kingdom to Access Data - BH 2012](https://www.youtube.com/watch?v=O7WRojkYR00)
 			* [Still Passing the Hash 15 Years Later](http://passing-the-hash.blogspot.com/)
 			* [The Evolution of Protected Processes Part 1: Pass-the-Hash Mitigations in Windows 8.1](http://www.alex-ionescu.com/?p=97)
+			* [Pass-the-Hash in Windows 10 - Lukasz Cyra(2019)](https://www.sans.org/reading-room/whitepapers/testing/pass-the-hash-windows-10-39170)
+				* Attackers have used the Pass-the-Hash (PtH) attack for over two decades. Its effectiveness has led to several changes to the design of Windows. Those changes influenced the feasibility of the attack and the effectiveness of the tools used to execute it. At the same time, novel PtH attack strategies appeared. All this has led to confusion about what is still feasible and what configurations of Windows are vulnerable. This paper examines various methods of hash extraction and execution of the PtH attack. It identifies the prerequisites for the attack and suggests hardening options. Testing in Windows 10 v1903 supports the findings. Ultimately, this paper shows the level of risk posed by PtH to environments using the latest version of Windows 10.
 			* [Et tu Kerberos - Christopher Campbell](https://www.youtube.com/watch?v=RIRQQCM4wz8)
 				* For over a decade we have been told that Kerberos is the answer to Microsoft’s authentication woes and now we know that isn’t the case. The problems with LM and NTLM are widely known- but the problems with Kerberos have only recently surfaced. In this talk we will look back at previous failures in order to look forward. We will take a look at what recent problems in Kerberos mean to your enterprise and ways you could possibly mitigate them. Attacks such as Spoofed-PAC- Pass-the-Hash- Golden Ticket- Pass-the-Ticket and Over-Pass-the-Ticket will be explained. Unfortunately- we don’t really know what is next – only that what we have now is broken.
 			* [Battle Of SKM And IUM How Windows 10 Rewrites OS Architecture - Alex Ionescu - BHUSA2015](https://www.youtube.com/watch?v=LqaWIn4y26E&index=15&list=PLH15HpR5qRsXF78lrpWP2JKpPJs_AFnD7)
@@ -2978,6 +2978,9 @@ To Do
 		* **Articles/Blogposts/Writeups**
 			* [Lateral Movement — SCM and DLL Hijacking Primer - Dwight Hohnstein](https://posts.specterops.io/lateral-movement-scm-and-dll-hijacking-primer-d2f61e8ab992)
 		* **Tools**
+	* **Services**
+		* **Articles/Blogposts/Writeups**
+			* [Lateral Movement – Services - pentestlab.blog(2020)](https://pentestlab.blog/2020/07/21/lateral-movement-services/)
 	* **SMB**
 		* **Articles/Blogposts/Writeups**
 			* [Lateral movement: A deep look into PsExec - Daniel Munoz(2018)](https://www.contextis.com/en/blog/lateral-movement-a-deep-look-into-psexec)
@@ -3086,10 +3089,25 @@ To Do
 	* **101**
 		* 
 * **AppLocker**<a name="winapplocker"></a>
-	* [AppLocker - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)
-		* This topic provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.
-	* [What Is AppLocker? - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/what-is-applocker)
-		* This topic for the IT professional describes what AppLocker is and how its features differ from Software Restriction Policies.
+	* **101**
+		* [AppLocker - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)
+			* This topic provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.
+		* [What Is AppLocker? - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/what-is-applocker)
+		* [AppLocker design guide - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-policies-design-guide)
+		* [AppLocker deployment guide - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-policies-deployment-guide)
+		* [AppLocker technical reference - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-technical-reference)
+		* [How AppLocker works - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/how-applocker-works-techref)
+		* [Security considerations for AppLocker - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/security-considerations-for-applocker)
+	* **Articles/Blogposts/Writeups**
+		* [Getting Started With AppLocker - John Strand(2019)](https://www.blackhillsinfosec.com/getting-started-with-applocker/)
+		* [Script Rules in AppLocker - technet](https://technet.microsoft.com/en-us/library/ee460958.aspx)
+		* [DLL Rules in AppLocker](https://technet.microsoft.com/en-us/library/ee460947.aspx)
+		* [Application Whitelisting Using Microsoft AppLocker](https://www.iad.gov/iad/library/ia-guidance/tech-briefs/application-whitelisting-using-microsoft-applocker.cfm)
+		* [Harden Windows with AppLocker – based on Case study Part 1 - oddvar.moe](https://oddvar.moe/2017/12/13/harden-windows-with-applocker-based-on-case-study-part-1/)
+		* [Harden Windows with AppLocker – based on Case study part 2 - oddvar.moe](https://oddvar.moe/2017/12/21/harden-windows-with-applocker-based-on-case-study-part-2/)
+		* [AppLocker Case study: How insecure is it really? Part 1 oddvar.moe](https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-1/)
+		* AppLocker Case study: How insecure is it really? Part 2](https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/)
+	* **Talks/Presentations/Videos**
 * **Application Shims**<a name="winappshim"></a>
 	* [Windows - Application Shims](https://technet.microsoft.com/en-us/library/dd837644%28v=ws.10%29.aspx)
 * **ClickOnce Applications**<a name="clickonce"></a>
@@ -3392,6 +3410,8 @@ To Do
 			* Abstract—With the rise of attacks using PowerShell in the recent months, there has not been a comprehensive solution for monitoring or prevention. Microsoft recently released the AMSI solution for PowerShell v5, however this can also be bypassed. This paper focuses on repurposing various stealthy runtime .NET hijacking techniques implemented for PowerShell attacks for defensive monitoring of PowerShell. It begins with a brief introduction to .NET and PowerShell, followed by a deeper explanation of various attacker techniques, which is explained from the perspective of the defender, including assembly modification, class and method injection, compiler profiling, and C based function hooking. Of the four attacker techniques that are repurposed for defensive real-time monitoring of PowerShell execution, intermediate language binary modification, JIT hooking, and machine code manipulation provide the best results for stealthy run-time interfaces for PowerShell scripting analysis
 	* **Informational**
 		* [A Lesson in .NET Framework Versions - Rastamouse](https://rastamouse.me/2018/09/a-lesson-in-.net-framework-versions/)
+* **Training**
+	* [Writing custom backdoor payloads with C# - Mauricio Velazco, Olindo Verrillo(Defcon27Workshops)](https://github.com/mvelazc0/defcon27_csharp_workshop)
 * **Discovery**
 	* **Clipboard**
 		* [Clippi-B](https://github.com/jfmaes/Clippi-B)
@@ -3486,13 +3506,15 @@ To Do
 	* **Adversary Simulation**
 		* [PurpleSharp](https://github.com/mvelazc0/PurpleSharp)
 			* PurpleSharp is a C# adversary simulation tool that executes adversary techniques with the purpose of generating attack telemetry in monitored Windows environments
-	* **Assemblies**
+	* **Assemblies & AppDomains**
 		* **101**
 			* [Assemblies in .NET - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/assembly/)
 				* Assemblies form the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications. An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality. Assemblies take the form of executable (.exe) or dynamic link library (.dll) files, and are the building blocks of .NET applications. They provide the common language runtime with the information it needs to be aware of type implementations.
 			* [Strong-named assemblies - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/assembly/strong-named)
 			* [Global Assembly Cache - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/gac)
 			* [Working with Assemblies and the Global Assembly Cache - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/working-with-assemblies-and-the-gac)
+			* [Application Domains and Assemblies How-to Topics - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/app-domains/application-domains-and-assemblies-how-to-topics)
+				* The following sections contain links to all How-to topics found in the conceptual documentation for programming with application domains and assemblies.
 		* **Articles/Blogposts/Writeups**
 			* [Mixed Assemblies - Crafting Flexible C++ Reflective Stagers for .NET Assemblies - TheWover](https://thewover.github.io/Mixed-Assemblies/)
 			* [Linking dependencies together in C# - Jean Maes(2020)](https://redteamer.tips/linking-dependencies-together-in-c/)
@@ -4101,6 +4123,7 @@ To Do
 			* [Accessing the Windows API in PowerShell via internal .NET methods and reflection - @mattifestation(2012)](http://www.exploit-monday.com/2012/05/accessing-native-windows-api-in.html)
 				* It is possible to invoke Windows API function calls via internal .NET native method wrappers in PowerShell without requiring P/Invoke or C# compilation. How is this useful for an attacker? You can call any Windows API function (exported or non-exported) entirely in memory. For those familiar with Metasploit internals, think of this as an analogue to railgun.
 			* [List All Win32/Native Functions Declared/Used By PowerShell - @mattifestation(2012)](http://www.exploit-monday.com/2012/12/list-all-win32native-functions.html)
+			* [Low-Level Windows API Access From PowerShell - b33f(2013/14?)](http://www.fuzzysecurity.com/tutorials/24.html)
 			* [Get-PEB – A Tool to Dump the Process Environment Block (PEB) of Any Process - @mattifestation(2013)](http://www.exploit-monday.com/2013/01/Get-PEB.html)
 			* [PowerShell and Win32 API Access - harmj0y(2014)](http://www.harmj0y.net/blog/powershell/powershell-and-win32-api-access/)
 			* [Use PowerShell to Interact with the Windows API: Part 1 - devblogs.msdn(2014)](https://devblogs.microsoft.com/scripting/use-powershell-to-interact-with-the-windows-api-part-1/)
@@ -4117,6 +4140,8 @@ To Do
 * **Persistence**
 		* [Practical Persistence with PowerShell - Matt Graeber(2013)](http://www.exploit-monday.com/2013/04/PersistenceWithPowerShell.html)
 		* [Nothing Lasts Forever: Persistence with Empire - harmj0y(2016)](https://www.harmj0y.net/blog/empire/nothing-lasts-forever-persistence-with-empire/)
+    * **PE Backdooring**
+    	* [Powershell PE Injection: This is not the Calc you are looking for! - b33f](http://www.fuzzysecurity.com/tutorials/20.html)
 	* **PS Profiles**
 		* [Investigating Subversive PowerShell Profiles - @mattifestation(2015)](http://www.exploit-monday.com/2015/11/investigating-subversive-powershell.html)
 * **Credential Attacks**
@@ -4812,57 +4837,434 @@ To Do
 
 
 
----------------------------------
-### <a name="inject"></a>Code Injection Stuff
-* I Swear I'll get around to this soon™, and make it actually useful/document things
-* **Agnostic**
-* **Linux**
-	* **101**
-	* **Articles/Blogposts/Writeups**
-		* [Pure In-Memory (Shell)Code Injection In Linux Userland - blog.sektor7](https://blog.sektor7.net/#!res/2018/pure-in-memory-linux.md)
-	* **Talks & Presentations**
-	* **Tools**
-		* [Jugaad - Thread Injection Kit](https://github.com/aseemjakhar/jugaad)
-			* Jugaad is an attempt to create CreateRemoteThread() equivalent for `*nix` platform. The current version supports only Linux operating system. For details on what is the methodology behind jugaad and how things work under the hood visit http://null.co.in/section/projects for a detailed paper.
-		* [linux-injector](https://github.com/dismantl/linux-injector)
-			* Utility for injecting executable code into a running process on x86/x64 Linux. It uses ptrace() to attach to a process, then mmap()'s memory regions for the injected code, a new stack, and space for trampoline shellcode. Finally, the trampoline in the target process is used to create a new thread and execute the chosen shellcode, so the main thread is allowed to continue. This project borrows from a number of other projects and research, see References below.
-		* [linux-inject](https://github.com/gaffe23/linux-inject)
-			* Tool for injecting a shared object into a Linux process
-		* [injectso64](https://github.com/ice799/injectso64)
-			* This is the x86-64 rewrite of Shaun Clowes' i386/SPARC injectso which he presented at Blackhat Europe 2001.
-* **OS X**
-	* **101**
-	* **Articles/Blogposts/Writeups**
-	* **Talks & Presentations**
-	* **Tools**
-* **Python**
-	* **101**
-	* **Articles/Blogposts/Writeups**
-		* [Code injection on Windows using Python: a simple example - andreafortuna](https://www.andreafortuna.org/programming/code-injection-on-windows-using-python-a-simple-example/)
-	* **Talks & Presentations**
-	* **Tools**
-		* [pyrasite](https://github.com/lmacken/pyrasite)
-			* Tools for injecting arbitrary code into running Python processes.
-		* [Equip: python bytecode instrumentation](https://github.com/neuroo/equip)
-			* equip is a small library that helps with Python bytecode instrumentation. Its API is designed to be small and flexible to enable a wide range of possible instrumentations. The instrumentation is designed around the injection of bytecode inside the bytecode of the program to be instrumented. However, the developer does not need to know anything about the Python bytecode since the injected code is Python source.
-* **Windows**
-	* **101**
-	* **DLL**
-		* [injectAllTheThings](https://github.com/fdiskyou/injectAllTheThings/)
-			* Single Visual Studio project implementing multiple DLL injection techniques (actually 7 different techniques) that work both for 32 and 64 bits. Each technique has its own source code file to make it easy way to read and understand.
-			* [Inject All the Things - Shut up and hack](http://blog.deniable.org/blog/2017/07/16/inject-all-the-things/)
-	* **Articles/Blogposts/Writeups**
-		* [InjectProc - Process Injection Techniques](https://github.com/secrary/InjectProc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+### <a name="lict"></a>Linux Code Injection
+* **101**
+* **Articles/Blogposts/Writeups**
+	* [Pure In-Memory (Shell)Code Injection In Linux Userland - blog.sektor7](https://blog.sektor7.net/#!res/2018/pure-in-memory-linux.md)
+* **Talks & Presentations**
+* **Tools**
+	* [Jugaad - Thread Injection Kit](https://github.com/aseemjakhar/jugaad)
+		* Jugaad is an attempt to create CreateRemoteThread() equivalent for `*nix` platform. The current version supports only Linux operating system. For details on what is the methodology behind jugaad and how things work under the hood visit http://null.co.in/section/projects for a detailed paper.
+	* [linux-injector](https://github.com/dismantl/linux-injector)
+		* Utility for injecting executable code into a running process on x86/x64 Linux. It uses ptrace() to attach to a process, then mmap()'s memory regions for the injected code, a new stack, and space for trampoline shellcode. Finally, the trampoline in the target process is used to create a new thread and execute the chosen shellcode, so the main thread is allowed to continue. This project borrows from a number of other projects and research, see References below.
+	* [linux-inject](https://github.com/gaffe23/linux-inject)
+		* Tool for injecting a shared object into a Linux process
+	* [injectso64](https://github.com/ice799/injectso64)
+		* This is the x86-64 rewrite of Shaun Clowes' i386/SPARC injectso which he presented at Blackhat Europe 2001.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------------------
+### <a name="mict"></a>macOS Code Injection
+* **101**
+* **General Information**
+* **Articles/Blogposts/Writeups**
+* **Techniques**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+### <a name="wcit"></a>Windows Code Injection Techniques
+* **101**
+	* [Process Injection Techniques — Gotta Catch Them All - Itzik Kotler, Amit Klein(BHUSA19)](https://www.youtube.com/watch?v=xewv122qxnk)
+		* [Paper](https://i.blackhat.com/USA-19/Thursday/us-19-Kotler-Process-Injection-Techniques-Gotta-Catch-Them-All-wp.pdf)	
+* **3 Base Primitive Categories**
+	* **Process Spawning Techniques**
+	* **Injecting During Process Initialization**
+	* **Injecting into Running Processes**
+	* One day I'll sort the articles/techniques into each.
+* **Articles/Blogposts/Writeups that aren't about one sepcific technique**
+	* [Windows API index - docs.ms](https://docs.microsoft.com/en-us/windows/win32/apiindex/windows-api-list)
+		* The following is a list of the reference content for the Windows application programming interface (API) for desktop and server applications.
+	* [Ten process injection techniques: A technical survey of common and trending process injection techniques - Ashkan Hosseini(2017)](https://www.elastic.co/blog/ten-process-injection-techniques-technical-survey-common-and-trending-process)
+	* [Memory Injection like a Boss - Noora Hyvärinen(2018)](https://blog.f-secure.com/memory-injection-like-a-boss/)
+	* [Process Injection - Part I - 3xpl01tc0d3r(2019)](https://3xpl01tc0d3r.blogspot.com/2019/08/process-injection-part-i.html?m=1)
+	* [The state of advanced code injections - David Korczynski(2019)](https://adalogics.com/blog/the-state-of-advanced-code-injections)
+	* [Process Injection: a primer - RedCanary(2020)](https://redcanary.com/blog/process-injection-primer/)
+		* Experts from Red Canary, VMware Carbon Black, MITRE ATT&CK, and Microsoft break down the many facets of the Process Injection technique.
+	* [Hidden in plain sight? - @casheeew(BlackHoodie2018)](https://blackhoodie.re/assets/archive/hidden_in_plain_sight_blackhoodie.pdf)
+	* **Samples**
+		* [ProcessInjection - 3xpl01tc0d3r](https://github.com/3xpl01tc0d3r/ProcessInjection)
+		* [injection - theevilbit](https://github.com/theevilbit/injection)
+* **Generic**
+		* [GetEnvironmentVariable as an alternative to WriteProcessMemory in process injections - x-c3ll(2020)](https://x-c3ll.github.io/posts/GetEnvironmentVariable-Process-Injection/)
 		* [Injecting Code into Windows Protected Processes using COM - Part 1 - James Forshaw(P0)](https://googleprojectzero.blogspot.com/2018/10/injecting-code-into-windows-protected.html)
 		* [Injecting Code into Windows Protected Processes using COM - Part 2 - James Forshaw(P0)](https://googleprojectzero.blogspot.com/2018/11/injecting-code-into-windows-protected.html)
-	* **Talks & Presentations**
-		* [Injection on Steroids: Code less Code Injections and 0 Day Techniques - Paul Schofield Udi Yavo](https://www.youtube.com/watch?v=0BAaAM2wD4s)
-			* [Blogpost](https://breakingmalware.com/injection-techniques/code-less-code-injections-and-0-day-techniques/)
-		* [Less is More, Exploring Code/Process-less Techniques and Other Weird Machine Methods to Hide Code (and How to Detect Them)](https://cansecwest.com/slides/2014/less%20is%20more3.pptx)
+	* **PoCs**
+		* [demos - hasherezade](https://github.com/hasherezade/demos)
+		* [Injectopi](https://github.com/peperunas/injectopi)
+			* Injectopi is a set of tutorials that I've decided to write down in order to learn about various injection techniques in the Windows' environment.
+		* [InjectProc - Process Injection Techniques](https://github.com/secrary/InjectProc)
+		* [pinjectra](https://github.com/SafeBreach-Labs/pinjectra)
+* **CreateRemoteThread**
+	* [Demystifying Code Injection Techniques: Part 1 – Shellcode Injection - Himanshu Khokhar(2019)](https://pwnrip.com/demystifying-code-injection-techniques-part-1-shellcode-injection/)
+* **APC**
+	* **101**
+		* [Asynchronous Procedure Calls - docs.ms](https://docs.microsoft.com/en-gb/windows/win32/sync/asynchronous-procedure-calls)
+		* [Inside NT's Asynchronous Procedure Call - Albert Almeida(2002)](https://www.drdobbs.com/inside-nts-asynchronous-procedure-call/184416590)
+		* [APC Series: User APC API - repnz(2020)](https://repnz.github.io/posts/apc/user-apc/)
+		* [APC Series: User APC Internals - repnz(2020)](https://repnz.github.io/posts/apc/kernel-user-apc-api/)
+		* [Remote Windows Kernel Exploitation Step into the Ring 0 - Barnaby Jack](https://web.archive.org/web/20050512094747/http://www.eeye.com/~data/publish/whitepapers/research/OT20050205.FILE.pdf)
+		* [Windows Process Injection: Asynchronous Procedure Call (APC) - modexp(2019)](https://modexp.wordpress.com/2019/08/27/process-injection-apc/)
+		* [APC Series: User APC API - Ori Damari(2020)](https://repnz.github.io/posts/apc/user-apc/)
+		* [APC Series: User APC Internals - Ori Damari(2020)](https://repnz.github.io/posts/apc/kernel-user-apc-api/)
+	* **Informational**
+		* [Kernel to User land: APC injection - Vault7Leaks](https://wikileaks.org/ciav7p1/cms/page_7995519.html)
+		* [Examining the user-mode APC injection sensor introduced in Windows 10 build 1809 - Souhail Hammou ](https://rce4fun.blogspot.com/2019/03/examining-user-mode-apc-injection.html)
+		* [Bypassing the Microsoft-Windows-Threat-Intelligence Kernel APC Injection Sensor - Philip Tsukerman(2019)](https://medium.com/@philiptsukerman/bypassing-the-microsoft-windows-threat-intelligence-kernel-apc-injection-sensor-92266433e0b0)
+		* [The Curious Case of QueueUserAPC - Dwight Hohnstein(2019)](https://posts.specterops.io/the-curious-case-of-queueuserapc-3f62e966d2cb)
+		* [Process Injection - Part V - 3xpl01tc0d3r(2019)](https://3xpl01tc0d3r.blogspot.com/2019/12/process-injection-part-v.html)
+	* **Userland-Specific**
+	* **Kernel-Specific**
+		* [Kernel to User land: APC injection - Eureka Gallo(2019)](https://cloud.tencent.com/developer/article/1534232)
+	* **Performing**
+		* [APC Queue Code Injection - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/apc-queue-code-injection)
 	* **Tools**
-		* [InfectPE](https://github.com/secrary/InfectPE)
-			* Using this tool you can inject x-code/shellcode into PE file. InjectPE works only with 32-bit executable files.
-		* [PowerLoaderEX](https://github.com/BreakingMalware/PowerLoaderEx)
-			* Advanced Code Injection Technique for x32 / x64
-		* [Inception Framework](https://github.com/two06/Inception)
-			* Inception provides In-memory compilation and reflective loading of C# apps for AV evasion. Payloads are AES encrypted before transmission and are decrypted in memory. The payload server ensures that payloads can only be fetched a pre-determined number of times. Once decrypted, Roslyn is used to build the C# payload in memory, which is then executed using reflection.
+		* [PoC](https://github.com/odzhan/injection/tree/master/apc)
+		* [Inject-dll-by-APC](https://github.com/3gstudent/Inject-dll-by-APC)
+		* [APC Internals Research Code](https://github.com/repnz/apc-research)
+		* [injdrv](https://github.com/chaos444/APC-injection-x86-x64)
+			* injdrv is a proof-of-concept Windows Driver for injecting DLL into user-mode processes using APC.
+		* [APCInjector](https://github.com/0r13lc0ch4v1/APCInjector)
+			* Windows Kernel Driver dlls injector using APC
+		* [APC-PPID](https://github.com/hlldz/APC-PPID)
+			*  Adds a user-mode asynchronous procedure call (APC) object to the APC queue of the specified thread and spoof the Parent Process. 
+* **Atom Bombing**
+	* **101**
+		* [AtomBombing – A New Code Injection Attack - ENISA(2016)](https://www.enisa.europa.eu/publications/info-notes/atombombing-2013-a-new-code-injection-attack)
+		* [AtomBombing: Injecting Code Using Windows’ Atoms - Tal Liberman(BSidesSF(2017)](https://www.youtube.com/watch?v=9HV69QGiBAU)
+			* In this talk we present a code injection technique, dubbed AtomBombing, which exploits Windows atom tables and Async Procedure Calls (APC). At the time of its release (October 2016), AtomBombing went undetected by common security solutions that focused on preventing infiltration.  AtomBombing affects all Windows versions. In particular, we tested it against Windows 10 and Windows 7.   Unfortunately, this issue cannot be patched by Microsoft since it doesn’t rely on broken or flawed code – rather on how these operating system mechanisms are designed.
+	* **Info**
+		* [Dridex’s Cold War: Enter AtomBombing - Magal Baz, Or Safran(2017)](https://securityintelligence.com/dridexs-cold-war-enter-atombombing/)
+		* [ Detecting stealthier cross-process injection techniques with Windows Defender ATP: Process hollowing and atom bombing  - MS(2017)](https://www.microsoft.com/security/blog/2017/07/12/detecting-stealthier-cross-process-injection-techniques-with-windows-defender-atp-process-hollowing-and-atom-bombing/)
+		* [AtomBombing Evasion and Detection](https://web.archive.org/web/20161108162725/https://breakingmalware.com/injection-techniques/atombombing-brand-new-code-injection-for-windows/)
+		* [Dridex’s Bag of Tricks: An Analysis of its Masquerading and Code Injection Techniques - Ratnesh Pandey(2019)](https://www.bromium.com/dridex-threat-analysis-july-2019-variant/)
+	* **Performing**
+	* **PoC**
+		* [atom-bombing](https://github.com/BreakingMalwareResearch/atom-bombing)
+* **Breaking BaDDEr**
+	* [Windows Process Injection: Breaking BaDDEr - modexp(2019)](https://modexp.wordpress.com/2019/08/09/windows-process-injection-breaking-badder/)
+	* [PoC](https://github.com/odzhan/injection/tree/master/dde)
+* **Command Line and Environment Variables**
+	* [Windows Process Injection: Command Line and Environment Variables - modexp(2020)](https://modexp.wordpress.com/2020/07/31/wpi-cmdline-envar/)
+* **Console Window Class**
+	* [Windows Process Injection: ConsoleWindowClass - modexp(2018)](https://modexp.wordpress.com/2018/09/12/process-injection-user-data/)
+	* [PoC](https://github.com/odzhan/injection/tree/master/conhost)
+* **Ctrl Injection**
+	* [Ctrl-Inject - Rotem Kerner(2018)](https://web.archive.org/web/20190612183057/https://blog.ensilo.com/ctrl-inject)
+    * [PoC](https://github.com/theevilbit/injection/blob/master/Ctrlinject/Ctrlinject/Ctrlinject.cpp)
+* **DLL Injection**
+	* **101**
+		* [Dynamic-link library](https://en.wikipedia.org/wiki/Dynamic-link_library)
+		* [DllMain entry point - docs.ms](https://docs.microsoft.com/en-us/windows/win32/dlls/dllmain?redirectedfrom=MSDN)
+		* [Exporting from a DLL - docs.ms](https://docs.microsoft.com/en-us/cpp/build/exporting-from-a-dll?view=vs-2019)
+		* [DLL injection - Wikipedia](https://en.wikipedia.org/wiki/DLL_injection)
+		* [A More Complete DLL Injection Solution Using CreateRemoteThread - Drew_Benton(2007)](https://www.codeproject.com/Articles/20084/A-More-Complete-DLL-Injection-Solution-Using-Creat)
+		* [DLL Injection and WoW64 - corsix(2010)](http://www.corsix.org/content/dll-injection-and-wow64)
+		* [Windows DLL Injection Basics - Brad Antoniewicz(2013)](http://blog.opensecurityresearch.com/2013/01/windows-dll-injection-basics.html)
+		* [DLL/PIC Injection on Windows from Wow64 process - modexp(2015)](https://modexp.wordpress.com/2015/11/19/dllpic-injection-on-windows-from-wow64-process/)
+	* **Articles/Blogposts/Writeups**
+		* **Informational**
+			* [Remote Thread Execution in System Process using NtCreateThreadEx for Vista & Windows7 - securityxploded](https://web.archive.org/web/20180803004004/https://securityxploded.com/ntcreatethreadex.php)
+			* [DLL Injection and Windows 8 - nagareshwar.securityxploded(2012)](https://web.archive.org/web/20180313152339/http://nagareshwar.securityxploded.com/2012/09/07/dll-injection-and-windows-8/)
+			* [Using SetWindowsHookEx for DLL Injection on Windows - Dejan Lukan(2013)](https://web.archive.org/web/20150214173649/http://resources.infosecinstitute.com/using-setwindowshookex-for-dll-injection-on-windows/)
+			* [MapViewOfFile or NTmapViewOfSection ?](http://www.rohitab.com/discuss/topic/42777-mapviewoffile-or-ntmapviewofsection/)
+				* "NtmapViewOfSection is a low level function in ntdll. All what MapViewOfSection does is just some small extra, like security checks, sanitizing, etc. Or it might be a simple wrapper. The point is that there isn't any special case where you should use this or that. They both do the same thing. - Unc3nZureD"
+		* **Performing**
+			* [Process Injection - Part II - 3xpl01tc0d3r(2019)](https://3xpl01tc0d3r.blogspot.com/2019/09/process-injection-part-ii.html)
+			* [Inject All the Things - Shut up and hack - deniable.org(2017)](http://blog.deniable.org/blog/2017/07/16/inject-all-the-things/)
+			* [DLL Injection Part 0: Understanding DLL Usage - Mark Wolters(2015(https://warroom.rsmus.com/dll-injection-part-0-understanding-dll-usage/)
+			* [DLL Injection Part 1: SetWindowsHookEx - malarkey(2015)](https://web.archive.org/web/20170714045033/https://warroom.securestate.com/dll-injection-part-1-setwindowshookex/)
+			* [DLL Injection Part 2: CreateRemoteThread and More - malarkey(2015)](https://web.archive.org/web/20170714043336/https://warroom.securestate.com/dll-injection-part-2-createremotethread-and-more/)
+			* [DLL Injection - pentestlab.blog(2017)](https://pentestlab.blog/2017/04/04/dll-injection/)
+			* [DLL Injection and Hooking](http://securityxploded.com/dll-injection-and-hooking.php)
+			* [Delivering custom payloads with Metasploit using DLL injection - blog.cobalstrike](https://blog.cobaltstrike.com/2012/09/17/delivering-custom-payloads-with-metasploit-using-dll-injection/)
+			* [DLL Injection via a Custom .NET Garbage Collector - @spottheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/injecting-dll-via-custom-.net-garbage-collector-environment-variable-complus_gcname)
+	* **Tools**
+		* [DLL-Injection - mwwolters](https://github.com/mwwolters/DLL-Injection)
+		* [dll_inject_test](https://github.com/daanraman/dll_inject_test)
+		* [dllinjector](https://github.com/OpenSecurityResearch/dllinjector)
+			* dll injection tool that implements various methods
+		* [Bleak](https://github.com/Akaion/Bleak)
+			* A Windows native DLL injection library that supports several methods of injection. 
+		* [Lunar](https://github.com/Dewera/Lunar)
+			*  A lightweight native DLL mapping library that supports mapping directly from memory 
+		* [injectAllTheThings](https://github.com/fdiskyou/injectAllTheThings/)
+			* Single Visual Studio project implementing multiple DLL injection techniques (actually 7 different techniques) that work both for 32 and 64 bits. Each technique has its own source code file to make it easy way to read and understand.
+		* [MemJect](https://github.com/danielkrupinski/MemJect)
+			*  Simple Dll injector loading from memory. Supports PE header and entry point erasure. Written in C99. 
+		* [Windows-DLL-Injector](https://github.com/KooroshRZ/Windows-DLL-Injector)
+* **Reflective Dll Injection**
+	* **101**
+		* [Reflection (computer programming) - Wikipedia](https://en.wikipedia.org/wiki/Reflection_(computer_programming))
+		* [HS-P005_ReflectiveDllInjection.pdf - Stephen Fewer(2008)](https://packetstormsecurity.com/files/71410/HS-P005_ReflectiveDllInjection.pdf.html)
+			* Whitepaper on reflective DLL injection. Reflective DLL injection is a library injection technique in which the concept of reflective programming is employed to perform the loading of a library from memory into a host process. As such the library is responsible for loading itself by implementing a minimal Portable Executable (PE) loader.
+		* [Reflective DLL Injection - Stephen Fewer(2008)](https://www.exploit-db.com/docs/english/13007-reflective-dll-injection.pdf)
+			* Alternate hosting of paper
+		* [Loading a DLL from memory - Joachim Bauch(2010)](https://www.joachim-bauch.de/tutorials/loading-a-dll-from-memory/)
+	* **Info**
+		* [Reflective DLL Injection with PowerShell - clymb3r(2013)](https://clymb3r.wordpress.com/2013/04/06/reflective-dll-injection-with-powershell/)
+		* [Upgrade your DLL to Reflective DLL - Ionut Popescu(2015)](https://securitycafe.ro/2015/02/26/upgrade-your-dll-to-reflective-dll/)
+		* [An Improved Reflective DLL Injection Technique - Dan Staples(2015)](https://disman.tl/2015/01/30/an-improved-reflective-dll-injection-technique.html)
+		* [Cross-Architecture Reflective DLL Injection - Dan Staples(2015)](https://disman.tl/2015/03/16/cross-architecture-reflective-dll-inection.html)
+		* [ThreadContinue - Reflective DLL Injection Using SetThreadContext() and NtContinue(2017)](https://zerosum0x0.blogspot.com/2017/07/threadcontinue-reflective-injection.html)
+			* [Code](https://github.com/zerosum0x0/ThreadContinue)
+		* [DLL Injection - Pentestlab.blog(2017)](https://pentestlab.blog/2017/04/04/dll-injection/)
+		* [Inject Dll From Memory Into A Remote Process (InjectLibraryFromMemory_HYPD - Hypodermic) - Vault7Leaks](https://wikileaks.org/ciav7p1/cms/page_14588718.html)
+		* [ DoublePulsar Initial SMB Backdoor Ring 0 Shellcode Analysis - zerosum0x0(2017)](https://zerosum0x0.blogspot.com/2017/04/doublepulsar-initial-smb-backdoor-ring.html)
+		* [Reflective DLL Injection - dtm(2017)](https://0x00sec.org/t/reflective-dll-injection/3080)
+		* [sRDI – Shellcode Reflective DLL Injection - Nick Landers(2017)](https://silentbreaksecurity.com/srdi-shellcode-reflective-dll-injection/)
+	* **Performing**
+		* [Portable Executable (P.E.) Code Injection: Injecting an Entire C Compiled Application - Ciro Sisman Pereira(2008)](https://www.codeproject.com/Articles/24417/Portable-Executable-P-E-Code-Injection-Injecting-a)
+		* [Loading Win32/64 DLLs "manually" without LoadLibrary() - xenotron(2014)](https://www.codeproject.com/Tips/430684/Loading-Win-DLLs-manually-without-LoadLibrary)
+			* How to load DLLs by allocating memory and loading the DLL from file/memory and then relocating/importing.
+		* [Reflective DLL Injection - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/reflective-dll-injection)
+		* [Exploit Development 5: Reflective DLL Injection - Thomas(2017)]
+		* [Reflective DLLs and You - cplsec(2018)](https://ijustwannared.team/2018/02/13/reflective-dlls-and-you/)
+			* "This post is about reflective dynamic link libraries (DLL) and will do a simple walk-through on how to write one.  This is a technique developed by Stephen Fewer and will use his code to make the magic happen. I realize this is a topic that has been discussed several times so I’m going to keep this post simple and tight."
+		* [Windows - Process Injection Technique: Reflective DLL Injection - t0rchwo0d(2019)](https://t0rchwo0d.github.io/windows/Windows-Process-Injection-Technique-Reflective-DLL-Injection/)
+	* **Detection**
+    	* [Detecting Reflective Injection - Andrew King(DEFCON 20)](https://www.youtube.com/watch?v=ZB1yD8LlFns)
+	        * This talk will focus on detecting reflective injection with some mildly humorous notes and bypassing said protections until vendors start actually working on this problem. It seems amazing that reflective injection still works. Why is that? Because programmers are lazy. They don't want to write new engines, they want to write definitions for an engine that already exists. So what do we do about it? Release a $5 tool that does what $50 AV has failed epically at for several years now...oh and it took me a week or so...Alternately, you could license it to vendors since their programmers are lazy. 
+		* [What is Reflective DLL Injection and how can be detected? - Andrea Fortuna(2017)](https://www.andreafortuna.org/2017/12/08/what-is-reflective-dll-injection-and-how-can-be-detected/)
+	* **PoCs**
+	* **Tools**
+		* [ReflectiveDLLInjection - Stephen Fewer](https://github.com/stephenfewer/ReflectiveDLLInjection)
+			* Reflective DLL injection is a library injection technique in which the concept of reflective programming is employed to perform the loading of a library from memory into a host process. As such the library is responsible for loading itself by implementing a minimal Portable Executable (PE) file loader. It can then govern, with minimal interaction with the host system and process, how it will load and interact with the host.
+		* [MemJect](https://github.com/danielkrupinski/MemJect)
+			*  Simple Dll injector loading from memory. Supports PE header and entry point erasure. Written in C99. 
+		* [doublepulsar-usermode-injector](https://github.com/countercept/doublepulsar-usermode-injector)
+			* A utility to use the usermode shellcode from the DOUBLEPULSAR payload to reflectively load an arbitrary DLL into another process, for use in testing detection techniques or other security research. 
+		* [RemoteFunctions](https://github.com/thereals0beit/RemoteFunctions)
+			*  LoadLibrary, GetModuleHandle and GetProcAddress calls for remote processes
+		* [ReflectiveDLLInjection - apriorit](https://github.com/apriorit/ReflectiveDLLInjection)
+			* This tool demonstrates various remote dll injection methods.
+		* [ImprovedReflectiveDLLInjection](https://github.com/dismantl/ImprovedReflectiveDLLInjection)
+			* An improvement of the original reflective DLL injection technique by Stephen Fewer of Harmony Security 
+		* [injectAllTheThings](https://github.com/fdiskyou/injectAllTheThings/)
+			* Single Visual Studio project implementing multiple DLL injection techniques (actually 7 different techniques) that work both for 32 and 64 bits. Each technique has its own source code file to make it easy way to read and understand.
+		* [ReflectCmd](https://github.com/jaredhaight/ReflectCmd)
+			* A simple reflective dll example 
+		* [Pazuzu](https://github.com/BorjaMerino/Pazuzu)
+			* Pazuzu is a Python script that allows you to embed a binary within a precompiled DLL which uses reflective DLL injection. The goal is that you can run your own binary directly from memory. This can be useful in various scenarios.
+		* [Injectora](https://github.com/uItra/Injectora)
+			*  x86/x64 manual mapping injector using the JUCE library 
+		* [ReflectCmd](https://github.com/jaredhaight/ReflectCmd)
+			* A simple reflective dll example 
+		* [MemoryModule](https://github.com/fancycode/MemoryModule)
+			* MemoryModule is a library that can be used to load a DLL completely from memory - without storing on the disk first.
+		* [Windows Manage Reflective DLL Injection Module - Metasploit](https://www.rapid7.com/db/modules/post/windows/manage/reflective_dll_inject)
+		* [sRDI - Shellcode Reflective DLL Injection](https://github.com/monoxgas/sRDI)
+			* sRDI allows for the conversion of DLL files to position independent shellcode. It attempts to be a fully functional PE loader supporting proper section permissions, TLS callbacks, and sanity checks. It can be thought of as a shellcode PE loader strapped to a packed DLL.
+		* [ReflectivePELoader - BenjaminSoelberg](https://github.com/BenjaminSoelberg/ReflectivePELoader)
+* **DNS Client API**
+	* [Code Execution via surgical callback overwrites (e.g. DNS memory functions) - hexacorn(2019)](http://www.hexacorn.com/blog/2019/06/12/code-execution-via-surgical-callback-overwrites-e-g-dns-memory-functions/)
+	* [Windows Process Injection: DNS Client API - modexp(2019)](https://modexp.wordpress.com/2019/08/08/windows-process-injection-dnsapi/)
+	* [Poc](https://github.com/odzhan/injection/tree/master/dns)
+* **Process Doppelganging**
+* **DoubleAgent**
+	https://cybellum.com/doubleagentzero-day-code-injection-and-persistence-technique/
+	* [Masquerading Windows processes like a DoubleAgent. - Philippe Vogler(2020)](https://sensepost.com/blog/2020/masquerading-windows-processes-like-a-doubleagent./)
+* **Earlybird Injection**
+* **Extra Window Bytes**
+	https://modexp.wordpress.com/2018/08/26/process-injection-ctray/
+	https://github.com/odzhan/injection/tree/master/extrabytes
+* **Gargoyle**
+* **GhostWriting Injection**
+	http://blog.txipinet.com/2007/04/05/69-a-paradox-writing-to-another-process-without-openning-it-nor-actually-writing-to-it/
+* **Process Hollowing**
+* **(Un-)Hooking**
+* **Inject-Me**
+* **KernelControlTable** - ehhhhhhhhhhh
+* **KnownDLLs Cache Poisoning**
+* **Mapping Injection**
+* **Multiple Provider Router (MPR) DLL and Shell Notifications**
+* **NINA**
+	* **101**
+		* [NINA: x64 Process Injection (NINA: No Injection, No Allocation x64 Process Injection Technique.) - NtRaiseHardError(2020)]
+			* [Code](https://github.com/NtRaiseHardError/NINA)
+* **NtCreate**
+* **.NET/C#**
+	* [.NET Internals and Code Injection](https://ntcore.com/files/netint_injection.htm)
+		 * This article is the obvious culmination of the previous effort of writing the Rebel.NET application and the first of a two series of articles about the .NET framework internals and the protections available for .NET assemblies. The next article will be about .NET native compiling. As the JIT inner workings haven't been analyzed yet, .NET protections are quite naļf nowadays. This situation will rapidly change as soon as the reverse engineering community will focus its attention on this technology. These two articles are aimed to raise the consiousness about the current state of .NET protections and what is possible to achieve but hasn't been done yet. In particular, the current article about .NET code injection represents, let's say, the present, whereas the next one about .NET native compiling represents the future. What I'm presenting in these two articles is new at the time I'm writing it, but I expect it to become obsolete in less than a year. Of course, this is obvious as I'm moving the first steps out from current .NET protections in the direction of better ones. But this article isn't really about protections: exploring the .NET framework internals can be useful for many purposes. So, talking about protections is just a means to an end.		
+* **PE Injection**
+	* **101**
+		* [PE Format - docs.ms](https://docs.microsoft.com/en-us/windows/win32/debug/pe-format?redirectedfrom=MSDN)
+		* [PE Format notes - corkami](https://github.com/corkami/docs/blob/master/PE/PE.md)
+		* [Portable Executable File Format - Johannes Plachy](https://blog.kowalczyk.info/articles/pefileformat.html)
+		* [CONSTANT INSECURITY: (PECOFF) Portable Executable FIle Format - Mario Vuksan, Tomislav Pericin(BHUSA2011)](https://www.youtube.com/watch?v=uoQL3CE24ls)
+		* [Injecting code into executables with C - Michal Strehovsky(2007)](https://migeel.sk/blog/2007/07/30/injecting-code-into-executables-with-c/)
+		* [Portable Executable Injection For Beginners - MalwareTech(2013)](https://www.malwaretech.com/2013/11/portable-executable-injection-for.html)
+		* [PE injection explained - Advanced memory code injection technique - Emeric Nasi(2014)](https://blog.sevagas.com/PE-injection-explained)
+		* [Some thoughts about PE Injection - Andrea Fortuna(2018)](https://www.andreafortuna.org/2018/09/24/some-thoughts-about-pe-injection/)
+		* [Code Injection - Process PE Injection Basics - Emeric Nasi(2019)](https://blog.sevagas.com/?Process-PE-Injection-Basics)
+		* [Powershell PE Injection: This is not the Calc you are looking for! - b33f](https://www.fuzzysecurity.com/tutorials/20.html)
+	* **Info**
+		* [Process Injection and Manipulation - David Krivobokov(2019)](https://www.deepinstinct.com/2019/09/15/malware-evasion-techniques-part-1-process-injection-and-manipulation/)
+		* [PE Injection: Executing PEs inside Remote Processes - @spottheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/pe-injection-executing-pes-inside-remote-processes)
+	* **Performing**
+		* [PE Section Header Injection using Code Cave - ]
+		* [Reflective PE Injection in Windows 10 1909 - HUBBL3](https://www.bc-security.org/post/reflective-pe-injection-in-windows-10-1909/)
+		* [[RedDev Series #1] PE Injection Trick - Chiam Yj(2020)](https://medium.com/@cyjien/pe-injection-trick-d044977f4791)
+	* **Detection**
+		* See the [Logging, System Monitoring and Threat Hunting](./L-SM-TH.md) Page.
+	* **PoCs**
+		* [ PE-Inject - DelphiBasics(2010)](http://www.delphibasics.info/home/delphibasicscounterstrikewireleases/pe-inject)
+		* [PE-inject - Michal Strehovsky](https://migeel.sk/programming/pe-inject/)
+			* [Documentation](http://docs.migeel.sk/PE-inject/)
+		* [ReflectivePELoader](https://github.com/BenjaminSoelberg/ReflectivePELoader)
+			* POC Reflective PE loader for DLL injection.
+		* [SimplePELoader](https://github.com/nettitude/SimplePELoader/)
+			* A very simple PE loader for loading DLL's into memory without using LoadLibrary
+		* [Mandark](https://github.com/gigajew/Mandark)
+			* Tiny 64-bit RunPE written in C#
+		* [Loader](https://github.com/Galenika/Loader)
+			* C# Loader with BlackBone
+		* [RunPE](https://github.com/Zer0Mem0ry/RunPE)
+			* Code that allows running another windows PE in the same address space as the host process.
+		* [loadlibrayy](https://github.com/vmcall/loadlibrayy)
+			* x64 PE injector with kernel handle elevation and thread hijacking capabilities
+		* [Invoke-ReflectivePEInjection - PowerSploit](https://github.com/PowerShellMafia/PowerSploit/blob/master/CodeExecution/Invoke-ReflectivePEInjection.ps1)
+			* [Documentation](https://powersploit.readthedocs.io/en/latest/CodeExecution/Invoke-ReflectivePEInjection/)
+		* [Invoke-ReflectivePEInjection.ps1 - empire](https://github.com/BC-SECURITY/Empire/blob/master/data/module_source/management/Invoke-ReflectivePEInjection.ps1)
+* **PowerLoader(Ex)**
+	* **101**
+		* [PowerLoader Injection – Something truly amazing - malwaretech(2013)](https://www.malwaretech.com/2013/08/powerloader-injection-something-truly.html)
+	* **PoC**
+		* [PowerLoaderEx](https://github.com/BreakingMalware/PowerLoaderEx)
+* **Print Spooler**
+* **PROPagate**
+* **Service Control Handler**
+* **Shatter**
+* **Shellcode Injection**
+* **Stack Bomber**
+* **Thread Execution Hijacking**
+* **ThreadLocal Storage Injection**
+* **Tooltips/Common Controls**
+* **Windows Notification Facility**
+* **WinSock Helper Functions(WSHX)**
+
+

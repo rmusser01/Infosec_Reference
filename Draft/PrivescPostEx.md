@@ -5186,15 +5186,29 @@ To Do
 	* [Poc](https://github.com/odzhan/injection/tree/master/dns)
 * **Process Doppelganging**
 * **DoubleAgent**
-	https://cybellum.com/doubleagentzero-day-code-injection-and-persistence-technique/
+	* [DOUBLEAGENT: Zero-Day Code Injection AND Persistence Technique - Cybellum(2017)](https://cybellum.com/doubleagentzero-day-code-injection-and-persistence-technique/)
 	* [Masquerading Windows processes like a DoubleAgent. - Philippe Vogler(2020)](https://sensepost.com/blog/2020/masquerading-windows-processes-like-a-doubleagent./)
 * **Earlybird Injection**
 * **Extra Window Bytes**
-	https://modexp.wordpress.com/2018/08/26/process-injection-ctray/
-	https://github.com/odzhan/injection/tree/master/extrabytes
+	* **101**
+		* [Process Injection: Extra Window Memory Injection - MITRE ATT&CK(2020)](https://attack.mitre.org/techniques/T1055/011/)
+		* [Windows Process Injection: Extra Window Bytes - modexp(2018)](https://modexp.wordpress.com/2018/08/26/process-injection-ctray/)
+	* **Informational**
+		* [Win32/Gapz: steps of evolution - Aleksandr Matrosov(2012)](https://www.welivesecurity.com/2012/12/27/win32gapz-steps-of-evolution/)
+		* [Through the Window: Creative Code Invocation - Chris Dietrich(2014)](https://www.crowdstrike.com/blog/through-window-creative-code-invocation/)
+	* **PoCs**
+		* [Poc](https://github.com/odzhan/injection/tree/master/extrabytes)
 * **Gargoyle**
 * **GhostWriting Injection**
-	http://blog.txipinet.com/2007/04/05/69-a-paradox-writing-to-another-process-without-openning-it-nor-actually-writing-to-it/
+	* **101**
+		* [A paradox: Writing to another process without openning it nor actually writing to it - txipi(2007)](http://blog.txipinet.com/2007/04/05/69-a-paradox-writing-to-another-process-without-openning-it-nor-actually-writing-to-it/)
+			* A paradox: Writing to another process without openning it nor actually writing to it
+	* **Informational**
+		* [Using METASM To Avoid Antivirus Detection (Ghost Writing ASM) - Royce Davis(2012)](https://www.pentestgeek.com/penetration-testing/using-metasm-to-avoid-antivirus-detection-ghost-writing-asm)
+		* [Ghost Writing METASM - Vanshit Malhotra(2015)](https://screwnomore.wordpress.com/2015/05/26/ghost-writing-metasm/)
+	* **Performing**	
+	* **PoCs**
+		* [GhostWriting](https://github.com/c0de90e7/GhostWriting)
 * **Process Hollowing**
 * **(Un-)Hooking**
 * **Inject-Me**

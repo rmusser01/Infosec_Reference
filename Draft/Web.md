@@ -35,8 +35,8 @@
 	- [Burp Stuff/Plugins](#burp)
 	- [BugBounty Writeups](#bugbounty)
 
-| [Technologies](#technologies) | [Different Types of Attacks](#difatk) |
-|---	|---	|
+| [Technologies](#technologies)  | [Different Types of Attacks](#difatk)  |
+|---  |---  |
 | [APIs](#api) | [Abuse of Functionality](#abuse) |
 | [Browser Security](#browsersec) | [Brute Force/Fuzzing/Directory Discovery](#brute) |
 | [Browser Extensions](#be) | [Attacking Continous Integration Systems](#ci) |
@@ -3418,7 +3418,6 @@ IDN
 ### <a name="xml"></a>XML
 * **101**
 	* [XML Schema, DTD, and Entity Attacks A Compendium of Known Techniques - Timothy D. Morgan, Omar Al Ibrahim]
-	* [XML Schema, DTD, and Entity Attacks: A Compendium of Known Techniques - Timothy D. Morgan, Omar Al Ibrahim(2014)](www.vsecurity.com/download/papers/XMLDTDEntityAttacks.pdf)
 * **DOS**
 	* **Articles/Papers/Talks/Writeups**
 		* [Security Briefs - XML Denial of Service Attacks and Defenses(2009)](https://msdn.microsoft.com/en-us/magazine/ee335713.aspx)

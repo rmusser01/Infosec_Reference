@@ -6,8 +6,8 @@
 - [Attacking AD 101](#adatk101)
 - [Securing & Hardening Active Directory](#secureAD)
 
-| [Active Directory Technologies](#ADtech) | [Attacking AD](#adattack) |
-|---	|---	|
+| [Active Directory Technologies](#ADtech)  | [Attacking AD](#adattack)  |
+|---  |---  |
 | [ADFS](#adfs) | [Hunting Users](#huntingusers) |
 | [AdminSD](#adminsd) | [DCShadow](#dcshadow) |
 | [Advanced Threat Analytics](#ata) | [DCSync](#dcsync) |

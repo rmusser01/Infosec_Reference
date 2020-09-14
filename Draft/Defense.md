@@ -5,7 +5,7 @@
 - [Defense & Hardening](#dfh)
 	- [Access Control](#acl)
 	- [AWS](#aws)
-	-[Blue Team Tactics & Strategies](antired)
+	-[Blue Team Tactics & Strategies](#antired)
 	- [Application Whitelisting](#whitelist)
 	- [Attack Surface Analysis/Reduction](#asa)
 	- [General Hardening](#hardening)

@@ -1056,7 +1056,7 @@
         * WPADblock initiative: monitoring and blocking WPAD traffic since 2007.
     * [aPAColypse now: Exploiting Windows 10 in a Local Network with WPAD/PAC and JScript - Ivan Fratric, Thomas Dullien, James Forshaw and Steven Vittitoe](https://googleprojectzero.blogspot.com/2017/12/apacolypse-now-exploiting-windows-10-in_18.html)
     * [WPAD Man In The Middle (Clear Text Passwords) - Larry Spohn](https://www.trustedsec.com/blog/wpad-man-in-the-middle-clear-text-passwords/)
-    * [WPAD Man in the Middle - Erik Hjelmvik](netresec.com/?page=Blog&month=2012-07&post=WPAD-Man-in-the-Middle)
+    * [WPAD Man in the Middle - Erik Hjelmvik](http://netresec.com/?page=Blog&month=2012-07&post=WPAD-Man-in-the-Middle)
     * [WPAD: instruction manual - cdump(Russian text)](https://habr.com/en/company/mailru/blog/259521/)
 * **Presentations/Talks/Videos**
     * [aPAColypse now: Exploiting Windows 10 in a Local Network with WPAD/PAC and JScript](https://googleprojectzero.blogspot.com/2017/12/apacolypse-now-exploiting-windows-10-in_18.html?m=1)

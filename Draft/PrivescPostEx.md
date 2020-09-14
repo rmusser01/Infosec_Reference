@@ -1910,7 +1910,7 @@ To Do
 				* [I'm SMBGhost, daba dee daba da - Lucas Georges(2020)](https://www.synacktiv.com/en/publications/im-smbghost-daba-dee-daba-da.html)
 				* [CVE-2020-0796 Memory Corruption Vulnerability in Windows 10 SMB Server - Yije Wang(2020)](https://www.fortinet.com/blog/threat-research/cve-2020-0796-memory-corruption-vulnerability-in-windows-10-smb-server#.Xndfn0lv150.twitter)
 				* [SMBGhost – Analysis of CVE-2020-0796 - Eoin Carroll, Philippe Laulheret, Kevin McGrath, Steve Povolny(2020)](https://www.mcafee.com/blogs/other-blogs/mcafee-labs/smbghost-analysis-of-cve-2020-0796/)
-				* [微软SMBv3客户端/服务端远程代码执行漏洞（CVE-2020-0796）技术分析 - blogs.360.cn](微软SMBv3客户端/服务端远程代码执行漏洞（CVE-2020-0796）技术分析https://blogs.360.cn/post/CVE-2020-0796.html)
+				* [微软SMBv3客户端/服务端远程代码执行漏洞（CVE-2020-0796）技术分析](https://blogs.360.cn/post/CVE-2020-0796.html)
 				* [Vulnerability Reproduction: CVE-2020-0796 POC - Zecops](https://blog.zecops.com/vulnerabilities/vulnerability-reproduction-cve-2020-0796-poc/)
 			* **CVE-2020-1362**	
 				* [Exploiting an Elevation of Privilege bug in Windows 10 (CVE-2020-1362)](https://github.com/Q4n/CVE-2020-1362)
@@ -3979,7 +3979,7 @@ To Do
 		* [Introducing PowerShell into your Arsenal with PS>Attack - Jared Haight(Derbycon206)](http://www.irongeek.com/i.php?page=videos/derbycon6/119-introducing-powershell-into-your-arsenal-with-psattack-jared-haight)
 			* PS>Attack is a custom tool that was created to make it easier for Penetration Testers to incorporate PowerShell into their bag of tricks. It combines a lot of the best offensive tools from the offensive PowerShell community into a custom, encrypted console that emulates a PowerShell environment. It also includes a custom command, "Get-Attack" to act a search engine for attacks making it easy to find the right attack for any situation. In this presentation we will cover how PowerShell can be used during every part of a penetration test and how PS>Attack can help make the whole process a lot easier.
     * **Tools**
-    	* [Invoke-ReflectivePEInjection.ps1](https://github.com/clymb3r/PowerShell/blob/master/Invoke-ReflectivePEInjection/Invoke-ReflectivePEInjection.ps1)
+    	* Invoke-ReflectivePEInjection.ps1 - https://github.com/clymb3r/PowerShell/blob/master/Invoke-ReflectivePEInjection/Invoke-ReflectivePEInjection.ps1
 			* This script has two modes. It can reflectively load a DLL/EXE in to the PowerShell process,  or it can reflectively load a DLL in to a remote process.
     * **Add-Type & Reflection**
     	* **101**
@@ -4103,7 +4103,7 @@ To Do
 		* [Invoke-DllInjection.ps1 - PowerSploit](https://github.com/PowerShellMafia/PowerSploit/blob/master/CodeExecution/Invoke-DllInjection.ps1)
 			* Injects a Dll into the process ID of your choosing.
 	* **Reflective PE Injection**
-		* [Invoke-ReflectivePEInjection.ps1 - PowerSploit](Invoke-ReflectivePEInjection.ps1)
+		* Invoke-ReflectivePEInjection.ps1 - PowerSploit Invoke-ReflectivePEInjection.ps1)
 			* This script has two modes. It can reflectively load a DLL/EXE in to the PowerShell process,  or it can reflectively load a DLL in to a remote process.
 		* [Reflective PE Injection In Windows 10 1909 - HUBBL3(2020)](https://www.bc-security.org/post/reflective-pe-injection-in-windows-10-1909/)
 	* **Running Shellcode**
@@ -5261,9 +5261,9 @@ To Do
 			* Code that allows running another windows PE in the same address space as the host process.
 		* [loadlibrayy](https://github.com/vmcall/loadlibrayy)
 			* x64 PE injector with kernel handle elevation and thread hijacking capabilities
-		* [Invoke-ReflectivePEInjection - PowerSploit](https://github.com/PowerShellMafia/PowerSploit/blob/master/CodeExecution/Invoke-ReflectivePEInjection.ps1)
-			* [Documentation](https://powersploit.readthedocs.io/en/latest/CodeExecution/Invoke-ReflectivePEInjection/)
-		* [Invoke-ReflectivePEInjection.ps1 - empire](https://github.com/BC-SECURITY/Empire/blob/master/data/module_source/management/Invoke-ReflectivePEInjection.ps1)
+		* Invoke-ReflectivePEInjection - PowerSploit https://github.com/PowerShellMafia/PowerSploit/blob/master/CodeExecution/Invoke-ReflectivePEInjection.ps1)
+			* [Documentation](https://powersploit.readthedocs.io/en/latest/CodeExecution/Invoke-ReflectivePEInjection/
+		* Invoke-ReflectivePEInjection.ps1 - empire https://github.com/BC-SECURITY/Empire/blob/master/data/module_source/management/Invoke-ReflectivePEInjection.ps1
 * **PowerLoader(Ex)**
 	* **101**
 		* [PowerLoader Injection – Something truly amazing - malwaretech(2013)](https://www.malwaretech.com/2013/08/powerloader-injection-something-truly.html)

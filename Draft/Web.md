@@ -2278,7 +2278,7 @@ https://github.com/chris408/ct-exposer
 	* [Ruby ERB Template Injection](https://www.trustedsec.com/2017/09/rubyerb-template-injection/)
 	* [Remote Code Execution via Server Side Template Injection at OFBiz 13.07.03 (CVE-2016-4462)](https://insinuator.net/2016/07/dilligent-bug/)
 	* [Injecting Flask - Nvisium](https://nvisium.com/blog/2015/12/07/injecting-flask/)
-	* [Spring Boot RCE](deadpool.sh/2017/RCE-Springs/)
+	* [Spring Boot RCE](http://www.deadpool.sh/2017/RCE-Springs/)
 	* [Fuzzing `{{7*7}} Till {{P1}}` - err0rr](http://verneet.com/fuzzing-77-till-p1/)
 * **Tools**
 	* [tplmap](https://github.com/epinna/tplmap)

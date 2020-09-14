@@ -746,7 +746,7 @@
 			* [Salus](https://github.com/coinbase/salus)
 				* Salus (Security Automation as a Lightweight Universal Scanner), named after the Roman goddess of protection, is a tool for coordinating the execution of security scanners. You can run Salus on a repository via the Docker daemon and it will determine which scanners are relevant, run them and provide the output. Most scanners are other mature open source projects which we include directly in the container.
 * **Dynamic Analysis - Continuous Scanning**<a name="dynscan"></a>
-	* See the [Fuzzing](./fuzzing.html) page.
+	* See the Fuzzing - ./fuzzing.html page.
 	* **Articles/Blogposts/Writeups**
 	* **Talks & Presentations**
 		* [Differences Between Web Application Scanning Tools when Scanning for XSS and SQLi - Robert Feeney(AppSecUSA 2017)](https://www.youtube.com/watch?v=VO2uBSfXZso)

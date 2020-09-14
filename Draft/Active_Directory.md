@@ -4,6 +4,7 @@
 ## Table of Contents
 - [Active Directory](#active-directory)
 - [Attacking AD 101](#adatk101)
+- [Securing & Hardening Active Directory](#secureAD)
 
 | [Active Directory Technologies](#ADtech) | [Attacking AD](#adattack) |
 |---	|---	|
@@ -30,6 +31,7 @@
 | [Domain Trusts](#trusts) | |
 | [WSUS](#wsus) | |
 | [MS Exchange](#msexchange) | |
+
 ---------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -256,6 +258,7 @@
 			* [Kerberos Attacks Questions - social.technet.ms](https://social.technet.microsoft.com/Forums/en-US/d8e19263-e4f9-49d5-b940-026b0769420a/kerberos-attacks-questions?forum=winserversecurity)
 			* [Kerberos and Attacks 101 - Tim Medin(WWHF2019)](https://www.youtube.com/watch?v=9lOFpUA25Nk)
 				* Want to understand how Kerberos works? Would you like to understand modern Kerberos attacks? If so, then join Tim Medin as he walks you through how to attack Kerberos with ticket attacks and Kerberoasting. We'll cover the basics of Kerberos authentication and then show you how the trust model can be exploited for persistence, pivoting, and privilege escalation.
+				* [Kerberos & Attacks 101 - Tim Medin & BHIS(2020)](https://www.youtube.com/watch?v=IBeUz7zMN24)
 		* **Articles/Writeups**
 			* [How To Attack Kerberos 101 - m0chan](https://m0chan.github.io/2019/07/31/How-To-Attack-Kerberos-101.html)
 			* [Kerberos, Active Directory’s Secret Decoder Ring - Sean Metcalf](https://adsecurity.org/?p=227)
@@ -409,6 +412,7 @@
 		* [Using SCCM to violate best practices - cr0n1c](https://cr0n1c.wordpress.com/2016/01/27/using-sccm-to-violate-best-practices/)
 	* **Trusts**<a name="trusts"></a>
 		* **101**
+			* [Primary and Trusted Domains - docs.ms](https://docs.microsoft.com/en-us/windows/win32/secmgmt/primary-and-trusted-domains)
 		* **Articles/Blogposts/Writeups** 
 			* [A Guide to Attacking Domain Trusts](http://www.harmj0y.net/blog/redteaming/a-guide-to-attacking-domain-trusts/)
 			* [It's All About Trust – Forging Kerberos Trust Tickets to Spoof Access across Active Directory Trusts](https://adsecurity.org/?p=1588)
@@ -420,12 +424,19 @@
 			* [Pentesting Active Directory Forests](https://www.dropbox.com/s/ilzjtlo0vbyu1u0/Carlos%20Garcia%20-%20Rooted2019%20-%20Pentesting%20Active%20Directory%20Forests%20public.pdf?dl=0)
 			* [Active Directory forest trusts part 1 - How does SID filtering work? - Dirk-jan Mollema](https://dirkjanm.io/active-directory-forest-trusts-part-one-how-does-sid-filtering-work/)
 			* [The Trustpocalypse](http://www.harmj0y.net/blog/redteaming/the-trustpocalypse/)
-		* **WSUS**<a name="wsus"></a>
+	* **WSUS**<a name="wsus"></a>
+		* **WSUSPect**
 			* [WSUSPect - Compromising the Windows Enterprise via Windows Update - Paul Stone, Alex Chapman - BHUS15](https://www.blackhat.com/docs/us-15/materials/us-15-Stone-WSUSpect-Compromising-Windows-Enterprise-Via-Windows-Update.pdf)
 				* [Blogpost](https://www.contextis.com/en/resources/white-papers/wsuspect-compromising-the-windows-enterprise-via-windows-update))
 				* [Slides](https://www.contextis.com/media/downloads/WSUSuspect_Presentation.pdf)
 			* [WSuspect Proxy](https://github.com/ctxis/wsuspect-proxy)
 				* WSUSpect Proxy - a tool for MITM'ing insecure WSUS connections
+		* **WSUSpendu**
+			* [WSUSpendu: How to Hang WSUS Clients - Romain Coltel & Yves Le Provost(BHUSA2017)](https://www.youtube.com/watch?v=2M8ux6ESIAs)
+				* [Slides](https://www.blackhat.com/docs/us-17/wednesday/us-17-Coltel-WSUSpendu-Use-WSUS-To-Hang-Its-Clients.pdf)
+				* [Paper](https://www.blackhat.com/docs/us-17/wednesday/us-17-Coltel-WSUSpendu-Use-WSUS-To-Hang-Its-Clients-wp.pdf)
+				* [SSTIC 2017 Version of the Talk](https://www.youtube.com/watch?v=2M8ux6ESIAs)
+				* We will present a new approach, allowing you to circumvent limitations and control the targeted network from the very WSUS server you own. By extension, this approach may serve as a basis for an air gap attack for disconnected networks. 
 			* [WSUSpendu](https://github.com/AlsidOfficial/WSUSpendu)
 				* Implement WSUSpendu attack
 * **Attack(s/ing)**<a name="adattack"></a>a
@@ -1040,7 +1051,7 @@
 
 
 
--------------
+----------------------------------------------------------------------------------------------------------------------------------
 ### <a name="email"></a>Email/Microsoft Exchange
 * **Look at the phishing page**
 	* [Link to the Phishing page - Markdown](./Phishing.md)
@@ -1064,3 +1075,432 @@
 		* A powershell implementation of PrivExchange by `@_dirkjan` (original code found here: https://github.com/dirkjanm/PrivExchange/blob/master/privexchange.py) Useful for environments on which you cannot run python-based applications, have user credentials, or do not want to drop files to disk. Will cause the target exchange server system account to attempt to authenticate to a system of your choice.
 	* [exchange_hunter2](https://github.com/aslarchergore/exchange_hunter2)
 		* This script uses a valid credential, a DC IP and Hostname to log into the DC over LDAP and query the LDAP server for the wherabouts of the Microsoft Exchange servers in the environment.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<Fixme> properly sort out
+----------------------------------------------------------------------------------------------------------------------------------
+### <a name="ADsecure"></a>Hardening & Securing Active Directory
+* **101**
+	* [Ping Castle Methodology](https://www.pingcastle.com/methodology/)
+		* Here is exposed the 4 steps of the PingCastle methodology which has been designed based on our experience putting hundreds of domains under control.
+	* [What would a real hacker do to your Active Directory](https://www.youtube.com/watch?v=DH3v8bO-NCs)
+	* [Securing Microsoft Active Directory Federation Server (ADFS)](https://adsecurity.org/?p=3782)
+	* [Awesome Windows Domain Hardening](https://github.com/PaulSec/awesome-windows-domain-hardening/blob/master/README.md)
+	* [The Most Common Active Directory Security Issues and What You Can Do to Fix Them - adsecurity](https://adsecurity.org/?p=1684)
+	* [Beyond Domain Admins – Domain Controller & AD Administration - ADSecurity.org](https://adsecurity.org/?p=3700)
+		* This post provides information on how Active Directory is typically administered and the associated roles & rights.
+* **Adversary Resilience Methodology**<a name=""></a>
+	* [Introducing the Adversary Resilience Methodology — Part One - specterops](https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-one-e38e06ffd604)
+	* [Introducing the Adversary Resilience Methodology — Part Two](https://posts.specterops.io/introducing-the-adversary-resilience-methodology-part-two-279a1ed7863d)
+	* [BloodHound and the Adversary Resilience Model](https://docs.google.com/presentation/d/14tHNBCavg-HfM7aoeEbGnyhVQusfwOjOyQE1_wXVs9o/mobilepresent#slide=id.g35f391192_00)
+* **Awareness**<a name=""></a>
+	* [NtdsAudit](https://github.com/Dionach/NtdsAudit)
+		* NtdsAudit is an application to assist in auditing Active Directory databases. It provides some useful statistics relating to accounts and passwords. It can also be used to dump password hashes for later cracking.
+	* [Grouper](https://github.com/l0ss/Grouper)
+		* Grouper is a slightly wobbly PowerShell module designed for pentesters and redteamers (although probably also useful for sysadmins) which sifts through the (usually very noisy) XML output from the Get-GPOReport cmdlet (part of Microsoft's Group Policy module) and identifies all the settings defined in Group Policy Objects (GPOs) that might prove useful to someone trying to do something fun/evil.
+* **Bloodhound**<a name=""></a>
+	* **101**
+		* [A walkthrough on how to set up and use BloodHound - Andy Gill(2019)](https://www.pentestpartners.com/security-blog/bloodhound-walkthrough-a-tool-for-many-tradecrafts/)
+	* **Articles/Blogposts/Writeups**
+		* [Blue Hands On Bloodhound - SadProcessor](https://insinuator.net/2019/10/blue-hands-on-bloodhound/)
+	* **Talks/Presentations/Videos**
+		* [BloodHound From Red to Blue - Mathieu Saulnier(BSides Charm2019)](https://www.youtube.com/watch?v=UWY772iIq_Y)
+	* **Tools**
+		* [Cypheroth](https://github.com/seajaysec/cypheroth)
+			* Automated, extensible toolset that runs cypher queries against Bloodhound's Neo4j backend and saves output to spreadsheets.
+* **Building/Designing Infrastructure**<a name=""></a>
+	* [How to Build Super Secure Active Directory Infrastructur* - BlackHills](https://www.blackhillsinfosec.com/build-super-secure-active-directory-infrastructure/)
+	* [Active Directory Design Best Practices](https://krva.blogspot.com/2008/04/ad-design-best-practices.html)
+* **Deceiving Attackers**<a name=""></a>
+	* [Weaponizing Active Directory - David Fletcher](https://www.youtube.com/watch?v=vLWGJ3f3-gI&feature=youtu.be)
+		* This webcast covers basic techniques to catch attackers attempting lateral movement and privilege escalation within your environment with the goal of reducing that Mean Time to Detect (MTTD) metric. Using tactical deception, we will lay out strategies to increase the odds that an attacker will give away their presence early after initial compromise.
+		* [Creating Honey Credentials with LSA Secrets - Scot Berner](https://www.trustedsec.com/blog/creating-honey-credentials-with-lsa-secrets/)	
+* **Domain Controllers/Admins**<a name=""></a>
+	* [Securing Domain Controllers to Improve Active Directory Security - adsecurity.org](https://adsecurity.org/?p=3377)
+	* [Protecting Privileged Domain Accounts: Network Authentication In-Depth](https://digital-forensics.sans.org/blog/2012/09/18/protecting-privileged-domain-accounts-network-authentication-in-depth)
+	* [Active Directory: Real Defense for Domain Admins](https://www.irongeek.com/i.php?page=videos/derbycon4/t213-active-directory-real-defense-for-domain-admins-jason-lang)
+		* Did your AD recently get owned on a pentest? It’s always fun to see an unknown entry show up in your Domain Admins group (#fail). Come learn how to truly protect your organization’s IT crown jewels from some of the most popular AD attacks. If you’re stuck trying to figure out what to do with null sessions, pass the hash techniques, or protecting your Domain Admins, then you will want to be here.
+	* [Security WatchLock Up Your Domain Controllers - Steve Riley - docs.ms](https://docs.microsoft.com/en-us/previous-versions/technet-magazine/cc160936(v=msdn.10))
+	* [Securing Active Directory Administrative Groups and Accounts - docs.ms(2009)](https://docs.microsoft.com/en-us/previous-versions/tn-archive/cc700835(v%3dtechnet.10))
+	* [Designing RODCs in the Perimeter Network - docs.ms(2012)](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd728028(v%3dws.10))
+* **Enhanced Security Administrative Environment(ESAE)/Red Foreset**<a name=""></a>
+	* **ESAE**
+		* [Understanding “Red Forest”: The 3-Tier Enhanced Security Admin Environment (ESAE) and Alternative Ways to Protect Privileged Credentials - ultimatewindowsecurity](https://www.ultimatewindowssecurity.com/webinars/register.aspx?id=1409)
+		* [Active Directory - ESAE Model - Huy Kha](https://www.slideshare.net/HuyKha2/active-directory-esae-model-149736364)
+	* **Red Forest**
+		* [What is Active Directory Red Forest Design? - social.technet.ms](https://social.technet.microsoft.com/wiki/contents/articles/37509.what-is-active-directory-red-forest-design.aspx)
+		* [Planting the Red Forest: Improving AD on the Road to ESAE - Jacques Louw and Katie Knowles](https://www.mwrinfosecurity.com/our-thinking/planting-the-red-forest-improving-ad-on-the-road-to-esae/)
+		* [How Microsoft Red Forest improves Active Directory Security - Bryan Patton](https://www.quest.com/community/quest/microsoft-platform-management/b/microsoft-platform-management-blog/posts/how-microsoft-red-forest-improves-active-directory-security)
+* **AppLocker**<a name=""></a>
+	* **101**
+		* [AppLocker - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview)
+			* This topic provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.
+		* [What Is AppLocker? - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/what-is-applocker)
+		* [AppLocker design guide - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-policies-design-guide)
+		* [AppLocker deployment guide - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-policies-deployment-guide)
+		* [AppLocker technical reference - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-technical-reference)
+		* [Security considerations for AppLocker - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/security-considerations-for-applocker)
+		* [Requirements to use AppLocker - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker)
+		* [Administer AppLocker - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/administer-applocker)
+		* [How AppLocker works - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/applocker/how-applocker-works-techref)
+	* **Articles/Blogposts/Writeups**
+		* [Getting Started With AppLocker - John Strand(2019)](https://www.blackhillsinfosec.com/getting-started-with-applocker/)
+		* [Script Rules in AppLocker - technet](https://technet.microsoft.com/en-us/library/ee460958.aspx)
+		* [DLL Rules in AppLocker](https://technet.microsoft.com/en-us/library/ee460947.aspx)
+		* [Application Whitelisting Using Microsoft AppLocker](https://www.iad.gov/iad/library/ia-guidance/tech-briefs/application-whitelisting-using-microsoft-applocker.cfm)
+		* [Harden Windows with AppLocker – based on Case study Part 1 - oddvar.moe](https://oddvar.moe/2017/12/13/harden-windows-with-applocker-based-on-case-study-part-1/)
+		* [Harden Windows with AppLocker – based on Case study part 2 - oddvar.moe](https://oddvar.moe/2017/12/21/harden-windows-with-applocker-based-on-case-study-part-2/)
+		* [AppLocker Case study: How insecure is it really? Part 1 oddvar.moe](https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-1/)
+		* AppLocker Case study: How insecure is it really? Part 2](https://oddvar.moe/2017/12/21/applocker-case-study-how-insecure-is-it-really-part-2/)
+	* **Talks/Presentations/Videos**
+		* [Implementing Sysmon and Applocker - BHIS(2019)](https://www.youtube.com/watch?v=9qsP5h033Qk)
+		* [How, Why, and Best Reasons to implement AppLocker - BHIS(2019)](https://www.youtube.com/watch?v=vV7oh_B9f1U)
+		* [SteelCon 2019: Built-In Appl. Whitelisting With Windows Defender Application Control - Chris Truncer(SteelCon19)](https://www.youtube.com/watch?v=DQth-gVXRS0&list=PLmfJypsykTLXk1QHj6PqiD7q7Z-WEj31U&index=20)	
+* **Auditing Account Passwords/Privileges**<a name=""></a>
+	* [Account lockout threshold - technet](https://technet.microsoft.com/en-us/library/hh994574.aspx)
+	* [Password Policy - technet](https://technet.microsoft.com/en-us/library/hh994572.aspx)
+	* [AccessChk](https://docs.microsoft.com/en-us/sysinternals/downloads/accesschk)
+		* As a part of ensuring that they've created a secure environment Windows administrators often need to know what kind of accesses specific users or groups have to resources including files, directories, Registry keys, global objects and Windows services. AccessChk quickly answers these questions with an intuitive interface and output.
+* **Guarded Fabric/Shielded VMs**<a name=""></a>
+	* [Guarded fabric and shielded VMs](https://docs.microsoft.com/en-us/windows-server/virtualization/guarded-fabric-shielded-vm/guarded-fabric-and-shielded-vms-top-node)
+	* [Shielded VMs – additional considerations when running a guarded fabric - blogs.technet](https://blogs.technet.microsoft.com/datacentersecurity/2017/04/21/shielded-vms-additional-considerations-when-running-a-guarded-fabric/)
+	* [Shielded VMs: A conceptual review of the components and steps necessary to deploy a guarded fabric](https://blogs.technet.microsoft.com/datacentersecurity/2017/03/14/shielded-vms-a-conceptual-review-of-the-components-and-steps-necessary-to-deploy-a-guarded-fabric/)
+	* [Step-by-step: Quick reference guide to deploying guarded hosts](https://blogs.technet.microsoft.com/datacentersecurity/2016/06/08/step-by-step-quick-reference-guide-to-deploying-guarded-hosts/)
+	* [Step by Step – Configuring Guarded Hosts with Virtual Machine Manager 2016 - blogs.technet](https://blogs.technet.microsoft.com/datacentersecurity/2016/03/21/configuring-guarded-hosts-with-virtual-machine-manager-2016/)
+	* [Guarded Fabric Deployment Guide for Windows Server 2016](https://gallery.technet.microsoft.com/Shielded-VMs-and-Guarded-98d2b045)
+	* [Step by Step – Configuring Key Protection for the Host Guardian Service in Windows Server 2016](https://blogs.technet.microsoft.com/datacentersecurity/2016/03/28/configuring-key-protection-service-for-host-guardian-service-in-windows-server-2016/)
+	* [Why use shielded VMs for your privileged access workstation (PAW) solution?](https://blogs.technet.microsoft.com/datacentersecurity/2017/11/29/why-use-shielded-vms-for-your-privileged-access-workstation-paw-solution/)
+	* [Frequently Asked Questions About HGS Certificates](https://blogs.technet.microsoft.com/datacentersecurity/2017/10/09/frequently-asked-questions-about-hgs-certificates/)
+	* [Join Host Guardian Servers to an existing bastion forest](https://blogs.technet.microsoft.com/datacentersecurity/2017/03/07/join-host-guardian-servers-to-an-existing-bastion-forest/)
+	* [Step by Step: Shielding existing VMs without VMM - blogs.technet](https://blogs.technet.microsoft.com/datacentersecurity/2016/09/01/step-by-step-shielding-existing-vms-without-vmm/)
+	* [Step-by-step: Quick reference guide to deploying guarded hosts](https://blogs.technet.microsoft.com/datacentersecurity/2016/06/08/step-by-step-quick-reference-guide-to-deploying-guarded-hosts/)
+	* [Step by Step – Shielded VM Recovery - blogs.technet](https://blogs.technet.microsoft.com/datacentersecurity/2016/06/07/step-by-step-shielded-vm-recovery/)
+* **Group Policy**<a name=""></a>
+	* [The 10 Windows group policy settings you need to get right](http://www.infoworld.com/article/2609578/security/the-10-windows-group-policy-settings-you-need-to-get-right.html?page=2)
+	* [Group Policy for WSUS - grouppolicy.biz](http://www.grouppolicy.biz/2011/06/best-practices-group-policy-for-wsus/)
+	* [GPO Best Policies - grouppolicy.biz](http://www.grouppolicy.biz/best-practices/)
+	* [Securing Windows with Group Policy Josh - Rickard - Derbycon7](https://www.youtube.com/watch?v=Upeaa2rgozk&index=66&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
+	* [Guidance on Deployment of MS15-011 and MS15-014 - blogs.technet](https://blogs.technet.microsoft.com/askpfeplat/2015/02/22/guidance-on-deployment-of-ms15-011-and-ms15-014/)
+	* [MS15-011 & MS15-014: Hardening Group Policy - blogs.technet](https://blogs.technet.microsoft.com/srd/2015/02/10/ms15-011-ms15-014-hardening-group-policy/)
+* **Hardening**<a name=""></a>
+	* [Awesome Windows Domain Hardening](https://github.com/PaulSec/awesome-windows-domain-hardening)
+		*  A curated list of awesome Security Hardening techniques for Windows.
+	* [Threats and Countermeasures Guide: Security Settings in Windows Server 2008 R2 and Windows 7 - technet](https://technet.microsoft.com/en-us/library/hh125921.aspx)
+	* [Harden windows IP Stack](https://www.reddit.com/r/netsec/comments/2sg80a/how_to_harden_windowsiis_ssltls_configuration/)
+	* [Secure Host Baseline](https://github.com/iadgov/Secure-Host-Baseline)
+		* Configuration guidance for implementing the Windows 10 and Windows Server 2016 DoD Secure Host Baseline settings. iadgov
+	* [Second section good resource for hardening windows](http://labs.bitdefender.com/2014/11/do-your-bit-to-limit-cryptowall/)
+	* [Secure-Host-Baseline](https://github.com/iadgov/Secure-Host-Baseline)
+		* Configuration guidance for implementing the Windows 10 and Windows Server 2016 DoD Secure Host Baseline settings. iadgov
+	* [Network access: Restrict clients allowed to make remote calls to SAM - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/network-access-restrict-clients-allowed-to-make-remote-sam-calls)
+		* The Network access: Restrict clients allowed to make remote calls to SAM security policy setting controls which users can enumerate users and groups in the local Security Accounts Manager (SAM) database and Active Directory. The setting was first supported by Windows 10 version 1607 and Windows Server 2016 (RTM) and can be configured on earlier Windows client and server operating systems by installing updates from the KB articles listed in Applies to section of this topic.
+	* [SAMRi10 - Hardening SAM Remote Access in Windows 10/Server 2016](https://gallery.technet.microsoft.com/SAMRi10-Hardening-Remote-48d94b5b#content)
+		* "SAMRi10" tool is a short PowerShell (PS) script which alters remote SAM access default permissions on Windows 10 & Windows Server 2016. This hardening process prevents attackers from easily getting some valuable recon information to move laterally within their victim's network.
+	* [Enable Attack surface reduction - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction)
+		* Attack surface reduction is a feature that is part of Windows Defender Exploit Guard. It helps prevent actions and apps that are typically used by exploit-seeking malware to infect machines.
+	* [Windows Defender Exploit Guard: Reduce the attack surface against next-generation malware](https://cloudblogs.microsoft.com/microsoftsecure/2017/10/23/windows-defender-exploit-guard-reduce-the-attack-surface-against-next-generation-malware/?source=mmpc)
+	* [LogonTracer](https://github.com/JPCERTCC/LogonTracer)
+		* Investigate malicious Windows logon by visualizing and analyzing Windows event log
+	* [Software Restriction Policies - docs.ms](https://docs.microsoft.com/en-us/windows-server/identity/software-restriction-policies/software-restriction-policies)
+		* This topic for the IT professional describes Software Restriction Policies (SRP) in Windows Server 2012 and Windows 8, and provides links to technical information about SRP beginning with Windows Server 2003.
+	* [Detecting Lateral Movement through Tracking Event Logs - JPCERTCC](https://www.jpcert.or.jp/english/pub/sr/ir_research.html)
+	* [Detecting Lateral Movements in Windows Infrastructure - CERT-EU](http://cert.europa.eu/static/WhitePapers/CERT-EU_SWP_17-002_Lateral_Movements.pdf)
+	* [Designing a Multilayered, In-Depth Defense Approach to AD Security - Quest.com](https://www.quest.com/docs/designing-a-multilayered-in-depth-defense-approach-to-ad-security-white-paper-22453.pdf)
+		* There are a number of configuration options we recommend for securing high privileged accounts. One of them, enabling 'Account is sensitive and cannot be delegated', ensures that an account’s credentials cannot be forwarded to other computers or services on the network by a trusted application.
+	* [New features in Active Directory Domain Services in Windows Server 2012, Part 11: Kerberos Armoring (FAST) - Sander Berkouwer](https://dirteam.com/sander/2012/09/05/new-features-in-active-directory-domain-services-in-windows-server-2012-part-11-kerberos-armoring-fast/)
+	* [Protect your enterprise data using Windows Information Protection (WIP) - docs.ms](https://docs.microsoft.com/en-us/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip)
+* **Just Enough Administration (JEA)**<a name=""></a>
+	* [Just Enough Administration - docs.ms](https://docs.microsoft.com/en-us/powershell/jea/overview)
+	* [Just Enough Administration: Windows PowerShell security controls help protect enterprise data - msdn](https://msdn.microsoft.com/en-us/library/dn896648.aspx)
+	* [JEA Pre-requisites](https://docs.microsoft.com/en-us/powershell/jea/prerequisites)
+	* [JEA Role Capabilities](https://docs.microsoft.com/en-us/powershell/jea/role-capabilities)
+	* [JEA Session Configurations](https://docs.microsoft.com/en-us/powershell/jea/session-configurations)
+	* [Registering JEA Configurations](https://docs.microsoft.com/en-us/powershell/jea/register-jea)
+	* [Using JEA](https://docs.microsoft.com/en-us/powershell/jea/using-jea)
+	* [JEA Security Considerations](https://docs.microsoft.com/en-us/powershell/jea/security-considerations)
+	* [Auditing and Reporting on JEA](https://docs.microsoft.com/en-us/powershell/jea/audit-and-report)
+	* [Just Enough Administration Samples and Resources](https://github.com/PowerShell/JEA)
+		* Just Enough Administration (JEA) is a PowerShell security technology that provides a role based access control platform for anything that can be managed with PowerShell. It enables authorized users to run specific commands in an elevated context on a remote machine, complete with full PowerShell transcription and logging. JEA is included in PowerShell version 5 and higher on Windows 10 and Windows Server 2016, and older OSes with the Windows Management Framework updates.
+* **KRBTGT**<a name=""></a>
+	* [Kerberos & KRBTGT: Active Directory’s Domain Kerberos Service Account - adsecurity.org](https://adsecurity.org/?p=483)
+	* [KRBTGT Account Password Reset Scripts now available for customers - Tim Rains(Ms.com)](https://www.microsoft.com/security/blog/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/)
+	* [AD Forest Recovery - Resetting the krbtgt password - docs.ms](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/ad-forest-recovery-resetting-the-krbtgt-password)
+	* [PowerShell Script To Reset The KrbTgt Account Password/Keys For Both RWDCs And RODCs - Jorge](https://jorgequestforknowledge.wordpress.com/2020/04/06/powershell-script-to-reset-the-krbtgt-account-password-keys-for-both-rwdcs-and-rodcs-update-5/)
+* **LLMNR/NBNS**<a name=""></a>
+	* [Conveigh](https://github.com/Kevin-Robertson/Conveigh)
+		* Conveigh is a Windows PowerShell LLMNR/NBNS spoofer detection tool. LLMNR/NBNS requests sent by Conveigh are not legitimate requests to any enabled LLMNR/NBNS services. The requests will not result in name resolution in the event that a spoofer is present.
+	* [Respounder](https://github.com/codeexpress/respounder)
+		* Respounder sends LLMNR name resolution requests for made-up hostnames that do not exist. In a normal non-adversarial network we do not expect such names to resolve. However, a responder, if present in the network, will resolve such queries and therefore will be forced to reveal itself.
+	* [asker](https://github.com/eavalenzuela/asker)
+		* This tool takes a list of known-bogus local hostnames, and sends out LLMNR requests for them every 5-25 legitimate LLMNR requests from other hosts. This is intended for use by a blue team who wants to catch a red team or attacker using Responder, who either does not target-select carefully enough, or falls for the bogus hostnames which should be tailored to the environment (e.g. if there is a DC named "addc1", you might want to add "adddc1" to the list.
+* **Local Administrator Password Solution**<a name=""></a>
+	* **101**
+		* [Local Administrator Password Solution - technet](https://technet.microsoft.com/en-us/mt227395.aspx)
+			* The "Local Administrator Password Solution" (LAPS) provides a centralized storage of secrets/passwords in Active Directory (AD) - without additional computers. Each organization’s domain administrators determine which users, such as helpdesk admins, are authorized to read the passwords.
+		* [Introduction to Microsoft LAPS (Local Administrator Password Solution) - 4sysops)](https://4sysops.com/archives/introduction-to-microsoft-laps-local-administrator-password-solution/)
+	* **Articles/Blogposts/Writeups**
+		* [Auditing Access to LAPS Passwords in Active Directory - Russell Smith](https://www.petri.com/auditing-access-to-laps-passwords-in-active-directory)
+		* [Microsoft security advisory: Local Administrator Password Solution](https://support.microsoft.com/en-us/help/3062591/microsoft-security-advisory-local-administrator-password-solution-laps)
+		* [Set up Microsoft LAPS (Local Administrator Password Solution) in Active Directory]((https://4sysops.com/archives/set-up-microsoft-laps-local-administrator-password-solution-in-active-directory/)
+		* [FAQs for Microsoft Local Administrator Password Solution (LAPS) - Part 1 - 4sysops](https://4sysops.com/archives/faqs-for-microsoft-local-administrator-password-solution-laps/)
+			* [Part 2](https://4sysops.com/archives/part-2-faqs-for-microsoft-local-administrator-password-solution-laps/)
+	* **Talks/Presentations/Videos**
+* **NTLM**<a name="ntlm"></a>
+	* [Using security policies to restrict NTLM traffic - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/jj865668(v=ws.10))
+* **Office Documents/Macros/DDE/Flavor-of-the-week**<a name="macros"></a>
+	* [Securely opening Microsoft Office documents that contain Dynamic Data Exchange (DDE) fields](https://technet.microsoft.com/library/security/4053440)
+	* [Disable DDEAUTO for Outlook, Word, OneNote, and Excel versions 2010, 2013, 2016](https://gist.github.com/wdormann/732bb88d9b5dd5a66c9f1e1498f31a1b)
+	* [New feature in Office 2016 can block macros and help prevent infection (2016)](https://cloudblogs.microsoft.com/microsoftsecure/2016/03/22/new-feature-in-office-2016-can-block-macros-and-help-prevent-infection/?source=mmpc)
+	* [Block or unblock external content in Office documents - support.office](https://support.office.com/en-us/article/block-or-unblock-external-content-in-office-documents-10204ae0-0621-411f-b0d6-575b0847a795)
+	* [CIRClean](http://circl.lu/projects/CIRCLean/#technical-details)
+		* CIRCLean is an independent hardware solution to clean documents from untrusted (obtained) USB keys / USB sticks. The device automatically converts untrusted documents into a readable but disarmed format and stores these clean files on a trusted (user owned) USB key/stick.
+		* [Github](https://github.com/CIRCL/Circlean)
+	* [Securely opening Microsoft Office documents that contain Dynamic Data Exchange (DDE) fields - docs.ms](https://docs.microsoft.com/en-us/security-updates/securityadvisories/2017/4053440)
+* **Passwords**<a name="adpasswords"></a>
+	* **Articles/Blogposts/Writeups**
+		* [Active Directory Password Blacklisting - Leeren Chang(2018)](https://engineeringblog.yelp.com/2018/04/ad-password-blacklisting.html)
+		* [Azure AD and ADFS best practices: Defending against password spray attacks](https://cloudblogs.microsoft.com/enterprisemobility/2018/03/05/azure-ad-and-adfs-best-practices-defending-against-password-spray-attacks/)
+		* [Detect Password Spraying With Windows Event Log Correlation](https://www.ziemba.ninja/?p=66)
+		* [Managing Domain Password Policy in the Active Directory - WindowsOSHub](http://woshub.com/password-policy-active-directory/)
+		* [Configuring Password Policies with Windows Server 2016 - Mukhatar Jafari](https://www.wikigain.com/configuring-password-policies-with-windows-server-2016/)
+		* [Password Policy - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/security-policy-settings/password-policy)
+	* **Talks/Presentations/Videos**
+	* **Tools**
+		* [Domain Password Audit Tool (DPAT)](https://github.com/clr2of8/DPAT)
+			* This is a python script that will generate password use statistics from password hashes dumped from a domain controller and a password crack file such as hashcat.potfile generated from the Hashcat tool during password cracking. The report is an HTML report with clickable links.
+			* [Tutorial Video & Demo](https://www.blackhillsinfosec.com/webcast-demo-domain-password-audit-tool/)
+* **Privileged Access Workstation**<a name="paw"></a>
+	* **What Is**
+		* [Privileged Access Workstation(PAW) - blogs.technet](https://blogs.technet.microsoft.com/datacentersecurity/2017/10/13/privileged-access-workstationpaw/)
+		* [How Microsoft IT used Windows 10 and Windows Server 2016 to implement privileged access workstations](https://myignite.microsoft.com/sessions/54896)
+			* As part of the security strategy to protect administrative privilege, Microsoft recommends using a dedicated machine, referred to as PAW (privileged access workstation), for administrative tasks; and using a separate device for the usual productivity tasks such as Outlook and Internet browsing. This can be costly for the company to acquire machines just for server administrative tasks, and inconvenient for the admins to carry multiple machines. In this session, we show you how MSIT uses shielded VMs on the new release of Windows client to implement a PAW.
+	* **Documentation**
+		* [The Active Directory 2016 PAM Trust: how it works, and why it should come with a safety advisory](https://blogs.technet.microsoft.com/389thoughts/2017/06/19/ad-2016-pam-trust-how-it-works-and-safety-advisory/)
+	* **Setup**
+		* [PAW host buildout - blogs.technet](https://blogs.technet.microsoft.com/datacentersecurity/2017/10/17/paw-host-buildout/)
+		* [How to deploy a VM template for PAW - blogs.technet](https://blogs.technet.microsoft.com/datacentersecurity/2017/11/01/how-to-create-a-vm-template-for-paw/)
+		* [Windows Server 2016: Set Up Privileged Access Management](https://www.petri.com/windows-server-2016-set-privileged-access-management)
+	* **Reference**
+		* [Securing Privileged Access Reference Material - docs.ms](https://docs.microsoft.com/en-us/windows-server/identity/securing-privileged-access/securing-privileged-access-reference-material)	
+		* [Securing Privileged Access Reference Material - MS(github)](https://github.com/MicrosoftDocs/windowsserverdocs/blob/master/WindowsServerDocs/identity/securing-privileged-access/securing-privileged-access-reference-material.md)
+* **PowerShell**<a name="PowerShell"></a>
+	* **Articles/Blogposts/Writeups**
+		* [PowerShell ♥ the Blue Team](https://blogs.msdn.microsoft.com/powershell/2015/06/09/powershell-the-blue-team/)
+		* [Powershell Security at Enterprise Customers - blogs.msdn](https://blogs.msdn.microsoft.com/daviddasneves/2017/05/25/powershell-security-at-enterprise-customers/)
+		* [More Detecting Obfuscated PowerShell](http://www.leeholmes.com/blog/2016/10/22/more-detecting-obfuscated-powershell/)
+		* [Detecting and Preventing PowerShell Downgrade Attacks - leeholmes](http://www.leeholmes.com/blog/2017/03/17/detecting-and-preventing-powershell-downgrade-attacks/)
+		* [Creating a Secure Environment using PowerShell Desired State Configuration - blogs.ms](https://blogs.msdn.microsoft.com/powershell/2014/07/21/creating-a-secure-environment-using-powershell-desired-state-configuration/)
+		* [Securing PowerShell in the Enterprise - Australian Cyber Security Center(2020)](https://www.cyber.gov.au/publications/securing-powershell-in-the-enterprise)
+			* This document describes a maturity framework for PowerShell in a way that balances the security and business requirements of organisations. This maturity framework will enable organisations to take incremental steps towards securing PowerShell across their environment.
+	* **Talks & Presentations**
+		* [Hijacking .NET to Defend PowerShell - Amanda Rousseau(BSidesSF 2017)](https://www.youtube.com/watch?v=YXjIVuX6zQk)
+		* [Automating security with PowerShell, Jaap Brasser (@Jaap_Brasser)](https://www.youtube.com/watch?v=WOC8vC2KoNs&index=12&list=PLwZycuzv10iLBFwRIWNAR-s4iuuUMRuEB)
+			* There is no doubt that security has been in the spotlight over the last few years, recent events have been responsible for the increased demand for better and more secure systems. Security was often treated as an afterthought or something that could be implemented ‘later’. In this session, we will go over some best practices, using existing tools and frameworks to help you set up a more secure environment and to get a grasp of what is happening in your environment. We will leverage your existing automation skills to secure and automate these workflows. Expect a session with a lot of demos and resources that can directly be implemented.
+	* **Tools**
+		* [Revoke-Obfuscation - tool](https://github.com/danielbohannon/Revoke-Obfuscation)
+			* PowerShell v3.0+ compatible PowerShell obfuscation detection framework.
+		* [Revoke Obfuscation PowerShell Obfuscation Detection And Evasion Using Science Lee Holmes Daniel - Derbycon7 - talk](https://www.youtube.com/watch?v=7XnkDsOZM3Y&index=16&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
+		* [PSRecon](https://github.com/gfoss/PSRecon/)
+			* PSRecon gathers data from a remote Windows host using PowerShell (v2 or later), organizes the data into folders, hashes all extracted data, hashes PowerShell and various system properties, and sends the data off to the security team. The data can be pushed to a share, sent over email, or retained locally.
+* **Services**<a name=""></a>
+	* [How to Allow Non-Admin Users to Start/Stop Windows Service - woshub.com](http://woshub.com/set-permissions-on-windows-service/)
+* **SMB**<a name="smb"></a>
+	* [SMB Security Best Practices - US CERT](https://www.us-cert.gov/ncas/current-activity/2017/01/16/SMB-Security-Best-Practices)
+	* [SMB Packet Signing](https://technet.microsoft.com/en-us/library/cc180803.aspx)
+	* [Secure SMB Connections](http://techgenix.com/secure-smb-connections/)
+	* [Microsoft Security Advisory: Update to improve credentials protection and management: May 13, 2014](https://support.microsoft.com/en-us/help/2871997/microsoft-security-advisory-update-to-improve-credentials-protection-a)		* [Require SMB Security Signatures - technet.ms](https://technet.microsoft.com/en-us/library/cc731957.aspx)
+	* [SMB 3.0 (Because 3 > 2) - David Kruse](http://www.snia.org/sites/default/orig/SDC2012/presentations/Revisions/DavidKruse-SMB_3_0_Because_3-2_v2_Revision.pdf)
+* **Unwanted Admins**<a name=""></a>
+	* [Where have all the Domain Admins gone? Rooting out Unwanted Domain Administrators - Rob VandenBrink](https://isc.sans.edu/diary/Where+have+all+the+Domain+Admins+gone%3F++Rooting+out+Unwanted+Domain+Administrators/24874)
+* **USB Detection**<a name=""></a>
+	* [BEAMGUN](https://github.com/JLospinoso/beamgun)
+		* A rogue-USB-device defeat program for Windows.
+	* [How to Analyze USB Device History in Windows - magnetforensics.com](https://www.magnetforensics.com/computer-forensics/how-to-analyze-usb-device-history-in-windows/)
+	* [How to track down USB flash drive usage with Windows 10's Event Viewer - techrepublic](https://www.techrepublic.com/article/how-to-track-down-usb-flash-drive-usage-in-windows-10s-event-viewer/)
+* **Tools**<a name=""></a>
+	* [Artillery](https://github.com/BinaryDefense/artillery)
+		* Artillery is a combination of a honeypot, monitoring tool, and alerting system. Eventually this will evolve into a hardening monitoring platform as well to detect insecure configurations from nix systems.
+	* [zBang](https://github.com/cyberark/zBang)
+		* zBang is a special risk assessment tool that detects potential privileged account threats in the scanned network.
+		* [Blogpost](https://www.cyberark.com/threat-research-blog/the-big-zbang-theory-a-new-open-source-tool/)
+* **Visualization/Tracking/Reporting**<a name=""></a>
+	* General
+		* [Userline](https://github.com/THIBER-ORG/userline)
+			* This tool automates the process of creating logon relations from MS Windows Security Events by showing a graphical relation among users domains, source and destination logons as well as session duration.
+		* [VOYEUR](https://github.com/silverhack/voyeur)
+			* VOYEUR's main purpose is to automate several tasks of an Active Directory build review or security assessment. Also, the tool is able to create a fast (and pretty) Active Directory report. The tool is developed entirely in PowerShell (a powerful scripting language) without dependencies like Microsoft Remote Administration tools. (Just .Net Framework 2.0 and Office Excel if you want a useful and pretty report). The generated report is a perfect starting point for well-established forensic, incident response team, security consultants or security researchers who want to quickly analyze threats in Active Directory Services.
+* **WMI**<a name=""></a>
+	* **General**
+		* [Managing WMI security - technet](https://technet.microsoft.com/en-us/library/cc731011(v=ws.11).aspx)
+		* [Maintaining WMI Security - msdn](https://msdn.microsoft.com/en-us/library/aa392291(v=vs.85).aspx)
+		* [Simple WMI Trace Viewer in PowerShell](https://chentiangemalc.wordpress.com/2017/03/24/simple-wmi-trace-viewer-in-powershell/)
+		* [An Insider’s Guide to Using WMI Events and PowerShell](https://blogs.technet.microsoft.com/heyscriptingguy/2012/06/08/an-insiders-guide-to-using-wmi-events-and-powershell/)
+	* **Tools**
+		* [Uproot](https://github.com/Invoke-IR/Uproot)
+			* Uproot is a Host Based Intrusion Detection System (HIDS) that leverages Permanent Windows Management Instrumentation (WMI) Event Susbcriptions to detect malicious activity on a network. For more details on WMI Event Subscriptions please see the WMIEventing Module
+		* [WMIEvent](https://github.com/Invoke-IR/WMIEvent)
+			* A PowerShell module to abstract the complexities of Permanent WMI Event Subscriptions
+* **Advanced Threat Analytics**<a name=""></a>
+	* **101**
+		* [ATA Architecture - docs.ms(2019)](https://docs.microsoft.com/en-us/advanced-threat-analytics/ata-architecture)
+		* [ATA readiness roadmap - docs.ms](https://docs.microsoft.com/en-us/advanced-threat-analytics/ata-resources)
+	* **Articles/Blogposts/Writeups**
+		* [Working with Suspicious Activities - docs.ms(2018)](https://docs.microsoft.com/en-us/advanced-threat-analytics/working-with-suspicious-activities)
+			* This article explains the basics of how to work with Advanced Threat Analytics.
+		* [Advanced Threat Analytics suspicious activity guide - docs.ms(2019)](https://docs.microsoft.com/en-us/advanced-threat-analytics/suspicious-activity-guide)
+		* [ATA Console: Sensitive Groups ](https://docs.microsoft.com/en-us/advanced-threat-analytics/working-with-ata-console#sensitive-groups)
+			* The following list of groups are considered Sensitive by ATA. Any entity that is a member of these groups is considered sensitive:
+		* [Best Practices for Securing Advanced Threat Analytics - techcommunity.ms](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Best-Practices-for-Securing-Advanced-Threat-Analytics/ba-p/249848)
+		* [Microsoft Advanced Threat Analytics – My best practices - Oddvar Moe](https://msitpros.com/?p=3509)
+	* **Talks/Presentations/Videos**
+* **Advanced Threat Protection**<a name=""></a>
+	* **101**
+		* [What's new in Windows Server 2019 - docs.ms](https://docs.microsoft.com/en-us/windows-server/get-started-19/whats-new-19)
+		* [Microsoft Defender Advanced Threat Protection - ms](https://www.microsoft.com/en-us/microsoft-365/windows/microsoft-defender-atp)
+			* Microsoft Defender Advanced Threat Protection (ATP) is a unified platform for preventative protection, post-breach detection, automated investigation, and response.
+	* **Articles/Blogposts/Writeups**
+		* [Detecting reflective DLL loading with Windows Defender ATP - cloudblogs.ms](https://cloudblogs.microsoft.com/microsoftsecure/2017/11/13/detecting-reflective-dll-loading-with-windows-defender-atp/)
+		* [WindowsDefenderATP-Hunting-Queries - MS's Github](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries)
+		* Sample queries for Advanced hunting in Windows Defender ATP
+		* [WindowsDefenderATP-Hunting-Queries](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries)
+			* This repo contains sample queries for Advanced hunting on Windows Defender Advanced Threat Protection. With these sample queries, you can start to experience Advanced hunting, including the types of data that it covers and the query language it supports. You can also explore a variety of attack techniques and how they may be surfaced through Advanced hunting.
+		* [Onboard non-Windows machines(ATP) - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-atp/configure-endpoints-non-windows-windows-defender-advanced-threat-protection)
+	* **Talks/Presentations/Videos**
+* **Auditing Processes**<a name=""></a>
+	* [Know your Windows Processes or Die Trying - sysforensics](https://sysforensics.org/2014/01/know-your-windows-processes/)
+	* [TaskExplorer](https://objective-see.com/products/taskexplorer.html)
+		* Explore all the tasks (processes) running on your Mac with TaskExplorer.
+* **Baselining**<a name=""></a>
+	* [Measure Boot Performance with the Windows Assessment and Deployment Toolkit](https://blogs.technet.microsoft.com/mspfe/2012/09/19/measure-boot-performance-with-the-windows-assessment-and-deployment-toolkit/)
+	* [Securing Windows Workstations: Developing a Secure Baseline](https://adsecurity.org/?p=3299)
+	* [Evaluate Fast Startup Using the Assessment Toolkit](https://docs.microsoft.com/en-us/windows-hardware/test/wpt/optimizing-performance-and-responsiveness-exercise-1)
+	* [Windows Performance Toolkit Reference](http://msdn.microsoft.com/en-us/library/windows/hardware/hh162945.aspx)
+	* [The Malware Management Framework](https://www.malwarearchaeology.com/mmf/)
+	* [Securing Windows Workstations: Developing a Secure Baselineadsecurity.org](https://adsecurity.org/?p=3299)
+	* [ADRecon](https://github.com/sense-of-security/ADRecon)
+		* ADRecon is a tool which extracts various artifacts (as highlighted below) out of an AD environment in a specially formatted Microsoft Excel report that includes summary views with metrics to facilitate analysis. The report can provide a holistic picture of the current state of the target AD environment.  It can be run from any workstation that is connected to the environment, even hosts that are not domain members. Furthermore, the tool can be executed in the context of a non-privileged (i.e. standard domain user) accounts. Fine Grained Password Policy, LAPS and BitLocker may require Privileged user accounts. The tool will use Microsoft Remote Server Administration Tools (RSAT) if available, otherwise it will communicate with the Domain Controller using LDAP. 
+* **CMD.exe Analysis**<a name=""></a>
+	* [Invoke-DOSfuscation](https://github.com/danielbohannon/Invoke-DOSfuscation)
+		* Cmd.exe Command Obfuscation Generator & Detection Test Harness
+* **Credential Guard**<a name=""></a>
+	* [Protect derived domain credentials with Windows Defender Credential Guard](https://docs.microsoft.com/en-us/windows/access-protection/credential-guard/credential-guard)
+	* [Using a hypervisor to secure your desktop – Credential Guard in Windows 10 - blogs.msdn](https://blogs.msdn.microsoft.com/virtual_pc_guy/2015/10/26/using-a-hypervisor-to-secure-your-desktop-credential-guard-in-windows-10/)
+	* [Credential Guard lab companion - blogs.technet](https://blogs.technet.microsoft.com/datacentersecurity/2017/05/15/credential-guard-lab-companion/)
+* **Device Guard**<a name=""></a>
+	* [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/en-us/download/details.aspx?id=53337)
+	* [Introduction to Windows Defender Device Guard: virtualization-based security and Windows Defender Application Control - docs.ms](https://docs.microsoft.com/en-us/windows/device-security/device-guard/introduction-to-device-guard-virtualization-based-security-and-code-integrity-policies)
+	* [Requirements and deployment planning guidelines for Windows Defender Device Guard - docs.ms](https://docs.microsoft.com/en-us/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#hardware-firmware-and-software-requirements-for-device-guard)
+	* [Driver compatibility with Device Guard in Windows 10 - docs.ms](https://blogs.msdn.microsoft.com/windows_hardware_certification/2015/05/22/driver-compatibility-with-device-guard-in-windows-10/)
+* **Defender Application Control**<a name=""></a>
+	* [Planning and getting started on the Windows Defender Application Control deployment process - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)
+		* This topic provides a roadmap for planning and getting started on the Windows Defender Application Control (WDAC) deployment process, with links to topics that provide additional detail. Planning for WDAC deployment involves looking at both the end-user and the IT pro impact of your choices.
+* **Event Log & Monitoring**<a name=""></a>
+	* **General**
+		* [Windows Security Log Events - ultimatewindowssecurity.com](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/)
+		* [Windows Event Logs Zero to Hero Nate Guagenti Adam Swan - Bloomcon2017](https://www.youtube.com/watch?v=H3t_kHQG1Js)
+		* [Auditing Security Events - WCF - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/auditing-security-events)
+		* [PowerShell – Everything you wanted to know about Event Logs and then some - Przemyslaw Klys](https://evotec.xyz/powershell-everything-you-wanted-to-know-about-event-logs/)
+	* **Event Forwarding**
+		* [Windows Event Forwarding Guidance](https://github.com/palantir/windows-event-forwarding) 
+			* Over the past few years, Palantir has a maintained an internal Windows Event Forwarding (WEF) pipeline for generating and centrally collecting logs of forensic and security value from Microsoft Windows hosts. Once these events are collected and indexed, alerting and detection strategies (ADS) can be constructed not only on high-fidelity security events (e.g. log deletion), but also for deviations from normalcy, such as unusual service account access, access to sensitive filesystem or registry locations, or installation of malware persistence. The goal of this project is to provide the necessary building blocks for organizations to rapidly evaluate and deploy WEF to a production environment, and centralize public efforts to improve WEF subscriptions and encourage adoption. While WEF has become more popular in recent years, it is still dramatically underrepresented in the community, and it is our hope that this project may encourage others to adopt it for incident detection and response purposes. We acknowledge the efforts that Microsoft, IAD, and other contributors have made to this space and wish to thank them for providing many of the subscriptions, ideas, and techniques that will be covered in this post.
+	* **Tools**
+		* [DCSYNCMonitor](https://github.com/shellster/DCSYNCMonitor)
+			* Monitors for DCSYNC and DCSHADOW attacks and create custom Windows Events for these events.
+		* [EventLogParser](https://github.com/djhohnstein/EventLogParser)
+			* Parse PowerShell and Security event logs for sensitive information.
+* **Firewall**<a name=""></a>
+	* **Articles/Blogposts/Writeups**
+		* [Endpoint Isolation with the Windows Firewall - Dane Stuckey](https://medium.com/@cryps1s/endpoint-isolation-with-the-windows-firewall-462a795f4cfb)
+	* **Talks/Presentations/Videos**
+		* [Demystifying the Windows Firewall – Learn how to irritate attackers without crippling your network - Jessica Payne(MSDN)](https://channel9.msdn.com/Events/Ignite/New-Zealand-2016/M377)
+* **General Hardening**<a name=""></a>
+	* **General**
+		* [Awesome Windows Domain Hardening](https://github.com/PaulSec/awesome-windows-domain-hardening)
+			* A curated list of awesome Security Hardening techniques for Windows.
+	* **Documentation**
+		* [Introducing the security configuration framework: A prioritized guide to hardening Windows 10 - Chris Jackson(MS)](https://www.microsoft.com/security/blog/2019/04/11/introducing-the-security-configuration-framework-a-prioritized-guide-to-hardening-windows-10/)
+		* [Windows security baselines - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-security-baselines)
+	* **Guides**
+		* [Enable Attack surface reduction(Win10)- docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction)
+		* [Harden windows IP Stack](https://www.reddit.com/r/netsec/comments/2sg80a/how_to_harden_windowsiis_ssltls_configuration/)
+		* [Secure Host Baseline](https://github.com/iadgov/Secure-Host-Baseline)
+			* Configuration guidance for implementing the Windows 10 and Windows Server 2016 DoD Secure Host Baseline settings. iadgov
+		* [Windows Server guidance to protect against speculative execution side-channel vulnerabilities](https://support.microsoft.com/en-us/help/4072698/windows-server-guidance-to-protect-against-the-speculative-execution?t=1&cn=ZmxleGlibGVfcmVjc18y&refsrc=email&iid=149b9032665345ba890ba51d3bf0d519&fl=4&uid=150127534&nid=244%20281088008)
+		* [End user device (EUD) security guidance - NCSC.gov.uk](https://www.ncsc.gov.uk/collection/end-user-device-security/platform-specific-guidance/eud-security-guidance-windows-10-1809)
+			* Guidance for organisations deploying a range of end user device platforms as part of a remote working solution
+	* **Educational/Informative**
+		* [The Evolution of Protected Processes – Part 1: Pass-the-Hash Mitigations in Windows 8.1](https://www.crowdstrike.com/blog/evolution-protected-processes-part-1-pass-hash-mitigations-windows-81/)
+		* [The Evolution of Protected Processes Part 2: Exploit/Jailbreak Mitigations, Unkillable Processes and Protected Services](https://www.crowdstrike.com/blog/evolution-protected-processes-part-2-exploitjailbreak-mitigations-unkillable-processes-and/) 
+		* [Protected Processes Part 3: Windows PKI Internals (Signing Levels, Scenarios, Signers, Root Keys, EKUs & Runtime Signers)](https://www.crowdstrike.com/blog/protected-processes-part-3-windows-pki-internals-signing-levels-scenarios-signers-root-keys/)
+		* [Mitigate threats by using Windows 10 security features](https://docs.microsoft.com/en-us/windows/threat-protection/overview-of-threat-mitigations-in-windows-10)
+* **.NET Instrumentation**<a name=""></a>
+	* [ClrGuard](https://github.com/endgameinc/ClrGuard)
+		* ClrGuard is a proof of concept project to explore instrumenting the Common Language Runtime (CLR) for security purposes. ClrGuard leverages a simple appInit DLL (ClrHook32/64.dll) in order to load into all CLR/.NET processes. From there, it performs an in-line hook of security critical functions. Currently, the only implemented hook is on the native LoadImage() function. When events are observed, they are sent over a named pipe to a monitoring process for further introspection and mitigation decision.
+* **Powershell**<a name=""></a>
+	* **Analysis**
+		* [Powershell Download Cradles - Matthew Green](https://mgreen27.github.io/posts/2018/04/02/DownloadCradle.html)
+		* [pOWershell obFUsCation - N1CFURY](https://n1cfury.com/ps-obfuscation/)
+		* [PowerShell Injection Hunter: Security Auditing for PowerShell Scripts - blogs.msdn](https://blogs.msdn.microsoft.com/powershell/2018/08/03/powershell-injection-hunter-security-auditing-for-powershell-scripts/)
+	* **Logging**
+	* **Talks/Presentations**
+		* [Defending against PowerShell attacks - in theory, and in practice by Lee holmes](https://www.youtube.com/watch?v=M5bkHUQy-JA&feature=youtu.be)
+* **Service Accounts**<a name=""></a>
+	* [Service Account best practices Part 1: Choosing a Service Account](https://4sysops.com/archives/service-account-best-practices-part-1-choosing-a-service-account/)
+		* In this article you will learn the fundamentals of Windows service accounts. Specifically, we discover the options and best practices concerning the selection of a service account for a particular service application.
+	* [Service Account best practices - Part 2: Least Privilege implementation](https://4sysops.com/archives/service-account-best-practices-part-2-least-privilege-implementation/)
+		* In this article you will learn some best-practice suggestions for using service applications according to the IT security rule of least privilege.
+	* [Best Practice: Securing Windows Service Accounts and Privileged Access – Part 1 - SecurIT360](https://www.securit360.com/blog/best-practice-service-accounts/)
+	* [Best Practice: Securing Windows Service Accounts and Privileged Access – Part 2 - SecurIT360](https://www.securit360.com/blog/best-practice-service-accounts-p2/)
+	* [Securing Windows Service Accounts (Part 1) - Derek Meiber(2013)](http://techgenix.com/securing-windows-service-accounts-part1/)

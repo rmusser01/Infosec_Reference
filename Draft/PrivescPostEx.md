@@ -75,6 +75,7 @@
 To Do
 * Change AV Avoidance stuff to specific OS
 * Sort AMSI stuff
+* ATA Section - Consolidate
 
 ------------------------------------------------------------------------------------------------------------------------
 ## <a name="privesc"></a>Privilege Escalation 
@@ -1693,7 +1694,6 @@ To Do
 			* [CLR-Persistence](https://github.com/3gstudent/CLR-Injection)
 				* Use CLR to inject all the .NET apps
 			* [Using CLR to maintain Persistence](https://3gstudent.github.io/3gstudent.github.io/Use-CLR-to-maintain-persistence/)
-			* [Common Language Runtime Hook for Persistence - Paul Laine](https://www.contextis.com/en/blog/common-language-runtime-hook-for-persistence#When:10:30:00Z)
 			* [SharPersist: Windows Persistence Toolkit in C# - Brett Hawkins](https://www.fireeye.com/blog/threat-research/2019/09/sharpersist-windows-persistence-toolkit.html)
 		* **Tools**
 			* [SharPersist](https://github.com/fireeye/SharPersist)
@@ -2272,57 +2272,91 @@ To Do
 			* [Evading Autoruns - DerbyCon 7.0](https://github.com/huntresslabs/evading-autoruns)
 	* **AMSI**<a name="amsi"></a>
 		* **101**
-			* [AMSI Bypass - Paul Laine](https://www.contextis.com/en/blog/amsi-bypass)
-			* [Exploring PowerShell AMSI and Logging Evasion - Adam Chester](https://www.mdsec.co.uk/2018/06/exploring-powershell-amsi-and-logging-evasion/)
+			* Remember kids, it's not a security boundary according to MS. Just like UAC. And AppLocker. Just something they threw in there. Totally not about security. Nope. No way. Nuh uh. Never in a _million years_.
+			* [Antimalware Scan Interface (AMSI) - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal)
 			* [Developer audience, and sample code - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/dev-audience)
 			* [Antimalware Scan Interface (AMSI) functions - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-functions)
 			* [AMSI: How Windows 10 Plans to Stop Script-Based Attacks and How Well It Does It - Nikhil Mittal(BHUS16)](https://www.youtube.com/watch?v=7A_rgu3kbvw)
 				* [Blogpost](http://www.labofapenetrationtester.com/2016/09/amsi.html)
 				* [Paper](https://www.blackhat.com/docs/us-16/materials/us-16-Mittal-AMSI-How-Windows-10-Plans-To-Stop-Script-Based-Attacks-And-How-Well-It-Does-It.pdf)
 				* In Windows 10, Microsoft introduced the AntiMalware Scan Interface (AMSI) which is designed to target script-based attacks and malware. Script-based attacks have been lethal for enterprise security and with advent of PowerShell, such attacks have become increasingly common. AMSI targets malicious scripts written in PowerShell, VBScript, JScript etc. and drastically improves detection and blocking rate of malicious scripts. When a piece of code is submitted for execution to the scripting host, AMSI steps in and the code is scanned for malicious content. What makes AMSI effective is, no matter how obfuscated the code is, it needs to be presented to the script host in clear text and unobfuscated. Moreover, since the code is submitted to AMSI just before execution, it doesn't matter if the code came from disk, memory or was entered interactively. AMSI is an open interface and MS says any application will be able to call its APIs. Currently, Windows Defender uses it on Windows 10. Has Microsoft finally killed script-based attacks? What are the ways out? The talk will be full of live demonstrations.
+			* [Announcing the .NET Framework 4.8 - devblogs.ms](https://devblogs.microsoft.com/dotnet/announcing-the-net-framework-4-8/)
 		* **AMSI Internals**
 			* [The Rise and Fall of AMSI - Tal Liberman(BHAsia 2018)](https://i.blackhat.com/briefings/asia/2018/asia-18-Tal-Liberman-Documenting-the-Undocumented-The-Rise-and-Fall-of-AMSI.pdf)
 			* [IAmsiStream interface sample - MS Github](https://github.com/Microsoft/Windows-classic-samples/tree/master/Samples/AmsiStream)
 				* Demonstrates how to use the Antimalware Scan Interface to scan a stream.
-			* [Antimalware Scan Interface (AMSI) - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-portal)
-			* [Developer audience, and sample code - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/dev-audience)
 			* [Antimalware Scan Interface (AMSI) functions - docs.ms](https://docs.microsoft.com/en-us/windows/win32/amsi/antimalware-scan-interface-functions)
+			* [AMSI Bypass - Paul Laine(2019)](https://www.contextis.com/en/blog/amsi-bypass)
+				* This blog post explains the inner workings of AMSI, and describes a new bypass technique.(related to AmsiScanBuffer)
+			* [AMSI Module Remote In-Memory Patch - Paul Laine(2020)](https://ntamonsec.blogspot.com/2020/05/amsi-module-remote-in-memory-patch.html)
 			* [MS Office file format sorcery - Stan Hegt, Pieter Ceelen(Troopers19)](https://www.youtube.com/watch?v=iXvvQ5XML7g)
 				* [Slides](https://github.com/outflanknl/Presentations/raw/master/Troopers19_MS_Office_file_format_sorcery.pdf)
 				* A deep dive into file formats used in MS Office and how we can leverage these for offensive purposes. We will show how to fully weaponize ‘p-code’ across all MS Office versions in order to create malicious documents without using VBA code, successfully bypassing antivirus and other defensive measures. In this talk Stan and Pieter will do a deep dive into the file formats used in MS Office, demonstrating many features that can be used offensively. They will present attacks that apply to both the legacy formats (OLE streams) and the newer XML based documents. Specific focus is around the internal representation of VBA macros and pseudo code (p-code, execodes) and how these can be weaponized. We will detail the inner logic of Word and Excel regarding VBA and p-code, and release scripts and tools for creating malicious Office documents that bypass anti-virus, YARA rules, AMSI for VBA and various MS Office document analyzers.
-		* **Bypass Blogposts**
-			* [Antimalware Scan Interface (AMSI) — A Red Team Analysis on Evasion - iwantmore.pizza](https://iwantmore.pizza/posts/amsi.html)
-			* [How Red Teams Bypass AMSI and WLDP for .NET Dynamic Code - modexp](https://modexp.wordpress.com/2019/06/03/disable-amsi-wldp-dotnet/)
-			* [Bypassing Amsi using PowerShell 5 DLL Hijacking - cn33liz](https://cn33liz.blogspot.com/2016/05/bypassing-amsi-using-powershell-5-dll.html)
-			* [Alternative AMSI bypass - Benoit Sevens](https://medium.com/@benoit.sevens/alternative-amsi-bypass-554dc61d70b1)
-			* [AMSI Bypass With a Null Character - satoshi's note](http://standa-note.blogspot.com/2018/02/amsi-bypass-with-null-character.html)
-			* [Disabling AMSI in JScript with One Simple Trick - James Forshaw](https://tyranidslair.blogspot.com/2018/06/disabling-amsi-in-jscript-with-one.html)
-			* [AMSI Bypass: Patching Technique - Avi Gimpel & Zeev Ben Porat](https://www.cyberark.com/threat-research-blog/amsi-bypass-patching-technique/)
-			* [AMSI Bypass Redux - Avi Gimpel](https://www.cyberark.com/threat-research-blog/amsi-bypass-redux/)
-			* [Bypassing AMSI via COM Server Hijacking - Enigma0x3](https://enigma0x3.net/2017/07/19/bypassing-amsi-via-com-server-hijacking/)
-				*  This post will highlight a way to bypass AMSI by hijacking the AMSI COM server, analyze how Microsoft fixed it in build #16232 and then how to bypass that fix. This issue was reported to Microsoft on May 3rd, and has been fixed as a Defense in Depth patch in build #16232.
-			* [Sneaking Past Device Guard - Philip Tsukerman](https://conference.hitb.org/hitbsecconf2019ams/materials/D2T1%20-%20Sneaking%20Past%20Device%20Guard%20-%20Philip%20Tsukerman.pdf)
-			* [Red Team TTPs Part 1: AMSI Evasion - 0xDarkVortex.dev](https://0xdarkvortex.dev/index.php/2019/07/17/red-team-ttps-part-1-amsi-evasion/)
-			* RastaMouse AmsiScanBuffer Bypass Series
-				* [Part 1](https://rastamouse.me/2018/10/amsiscanbuffer-bypass---part-1/)
-				* [Part 2](https://rastamouse.me/2018/10/amsiscanbuffer-bypass---part-2/)
-				* [Part 3](https://rastamouse.me/2018/11/amsiscanbuffer-bypass-part-3/)
-				* [Part 4](https://rastamouse.me/2018/12/amsiscanbuffer-bypass-part-4/)
-			* [How to bypass AMSI and execute ANY malicious Powershell code - zc00l](https://0x00-0x00.github.io/research/2018/10/28/How-to-bypass-AMSI-and-Execute-ANY-malicious-powershell-code.html)
-			* [Weaponizing AMSI bypass with PowerShell - @0xB455](http://ha.cker.info/weaponizing-amsi-bypass-with-powershell/)
-			* [How to Bypass AMSI with an Unconventional Powershell Cradle - Mohammed Danish](https://medium.com/@gamer.skullie/bypassing-amsi-with-an-unconventional-powershell-cradle-6bd15a17d8b9)
-			* [Bypassing AMSI via COM Server Hijacking - Matt Nelson](https://posts.specterops.io/bypassing-amsi-via-com-server-hijacking-b8a3354d1aff)
-			* fixed as a Defense in Depth patch in build #16232.
-			* [Adventures in the Wonderful World of AMSI. - byte_st0rm](https://medium.com/@byte_St0rm/adventures-in-the-wonderful-world-of-amsi-25d235eb749c)
-			* [How to bypass AMSI and execute ANY malicious Powershell code - zc00l](https://0x00-0x00.github.io/research/2018/10/28/How-to-bypass-AMSI-and-Execute-ANY-malicious-powershell-code.html)
-			* [Understanding and Bypassing AMSI - Tom Carver(2020)](https://x64sec.sh/understanding-and-bypassing-amsi/)
-			* [Resurrecting an old AMSI Bypass - Philippe Vogler(2020)](https://sensepost.com/blog/2020/resurrecting-an-old-amsi-bypass/)
-				* Before the latest Windows Defender update, and possibly with other endpoint security products, regardless of access rights on a host, users can bypass AMSI for PowerShell. Other scripting engines such as jscript or cscript do not suffer from this DLL hijack and directly load AMSI from the System32 folder.
+		* **Bypasses**
+			* **Compilations**
+				* [Amsi-Bypass-PowerShell - S3cur3Th1sSh1t](https://github.com/S3cur3Th1sSh1t/Amsi-Bypass-Powershell)
+					* List of Bypasses
+				* [Antimalware Scan Interface (AMSI) — A Red Team Analysis on Evasion - iwantmore.pizza](https://iwantmore.pizza/posts/amsi.html)
+				* [Exploring PowerShell AMSI and Logging Evasion - Adam Chester(2018)](https://www.mdsec.co.uk/2018/06/exploring-powershell-amsi-and-logging-evasion/)
+				* [Adventures in the Wonderful World of AMSI. - byte_st0rm(2019)](https://medium.com/@byte_St0rm/adventures-in-the-wonderful-world-of-amsi-25d235eb749c)
+					* Overview + Rather then use “LoadLibrary” and “GetProcAddress” to locate the memory addresses of “amsi.dll” and “amsiScanBuffer”, walk the “PEB” of the process and the export directory of “amsi.dll”.
+				* [How Red Teams Bypass AMSI and WLDP for .NET Dynamic Code - modexp(2019)](https://modexp.wordpress.com/2019/06/03/disable-amsi-wldp-dotnet/)
+			* **General Stuff**
+				* [How to bypass AMSI and execute ANY malicious Powershell code - zc00l](https://0x00-0x00.github.io/research/2018/10/28/How-to-bypass-AMSI-and-Execute-ANY-malicious-powershell-code.html)
+				* [Weaponizing AMSI bypass with PowerShell - @0xB455(2019)](http://ha.cker.info/weaponizing-amsi-bypass-with-powershell/)
+			* **Use PSv2**
+			* **Obfuscation**
+				* [Red Team TTPs Part 1: AMSI Evasion - paranoidninja(2019)](https://0xdarkvortex.dev/index.php/2019/07/17/red-team-ttps-part-1-amsi-evasion/)
+				* [Bypass AMSI by manual modification - s3cur3th1ssh1t(2020)](https://s3cur3th1ssh1t.github.io/Bypass_AMSI_by_manual_modification/)
+			* **DLL Hijack**
+				* [Bypassing Amsi using PowerShell 5 DLL Hijacking - cn33liz(2016)](https://cn33liz.blogspot.com/2016/05/bypassing-amsi-using-powershell-5-dll.html)
+				* [Disabling AMSI in JScript with One Simple Trick - James Forshaw(2018)](https://www.tiraniddo.dev/2018/06/disabling-amsi-in-jscript-with-one.html)
+				* [Resurrecting an old AMSI Bypass - Philippe Vogler(2020)](https://sensepost.com/blog/2020/resurrecting-an-old-amsi-bypass/)
+					* Before the latest Windows Defender update, and possibly with other endpoint security products, regardless of access rights on a host, users can bypass AMSI for PowerShell. Other scripting engines such as jscript or cscript do not suffer from this DLL hijack and directly load AMSI from the System32 folder.
+			* **COM Server Hijack**
+				* [Bypassing AMSI via COM Server Hijacking - Enigma0x3](https://enigma0x3.net/2017/07/19/bypassing-amsi-via-com-server-hijacking/)
+					*  This post will highlight a way to bypass AMSI by hijacking the AMSI COM server, analyze how Microsoft fixed it in build #16232 and then how to bypass that fix. This issue was reported to Microsoft on May 3rd, and has been fixed as a Defense in Depth patch in build #16232.
+			* **Null Character**
+				* [AMSI Bypass With a Null Character - Satoshi Tanda(2018)](https://standa-note.blogspot.com/2018/02/amsi-bypass-with-null-character.html)
+			* **Registry Key**
+				* [The Rise and Fall of AMSI - Tal Liberman(BH Asia18)]https://i.blackhat.com/briefings/asia/2018/asia-18-Tal-Liberman-Documenting-the-Undocumented-The-Rise-and-Fall-of-AMSI.pdf)
+			* **Patching AmsiScanString**
+				* [AMSI Bypass: Patching Technique - Avi Gimpel & Zeev Ben Porat(2018)](https://www.cyberark.com/threat-research-blog/amsi-bypass-patching-technique/)
+			* **Patching AmsiScanBuffer**
+				* RastaMouse AmsiScanBuffer Bypass Series(2018)
+					* [Part 1](https://rastamouse.me/2018/10/amsiscanbuffer-bypass---part-1/)
+					* [Part 2](https://rastamouse.me/2018/10/amsiscanbuffer-bypass---part-2/)
+					* [Part 3](https://rastamouse.me/2018/11/amsiscanbuffer-bypass-part-3/)
+					* [Part 4](https://rastamouse.me/2018/12/amsiscanbuffer-bypass-part-4/)
+				* [How to bypass AMSI and execute ANY malicious Powershell code - zc00l(2018)](https://0x00-0x00.github.io/research/2018/10/28/How-to-bypass-AMSI-and-Execute-ANY-malicious-powershell-code.html)
+				* [AMSI Bypass Redux - Avi Gimpel(2018)](https://www.cyberark.com/threat-research-blog/amsi-bypass-redux/)
+				* [Alternative AMSI bypass - Benoit Sevens(2018)](https://medium.com/@benoit.sevens/alternative-amsi-bypass-554dc61d70b1)
+				* [Yet another update to bypass AMSI in VBA - Khris Tolbert(2019)](https://medium.com/maverislabs/yet-another-update-to-bypass-amsi-in-vba-19ddf9065c04)
+				* [Hunting for AMSI bypasses - Wee-Jing Chung(2019)](https://blog.f-secure.com/hunting-for-amsi-bypasses/)
+				* [Execute any "evil" Powershell code by bypassing AMSI - Dec0ne(2019)](https://dec0ne.github.io/research/2019-11-08-Amsi-bypass-post/)
+				* [Understanding and Bypassing AMSI - Tom Carver(2020)](https://x64sec.sh/understanding-and-bypassing-amsi/)
+					* [AmsiHook](https://github.com/tomcarver16/AmsiHook)
+						* AmsiHook is a DLL that when injected to a process containing AMSI logging, will hook the AMSI functions and allow them to execute with dummy parameters.
+			* **AmsiInitialize**
+				* [Patchless AMSI bypass using SharpBlock - Ceri Coburn(2020)](https://www.pentestpartners.com/security-blog/patchless-amsi-bypass-using-sharpblock/)
+				* [SharpBlock](https://github.com/CCob/SharpBlock)
+					 * A method of bypassing EDR's active projection DLL's by preventing entry point execution.
+			* **Forcing an Error**
+			* **Manually set the `amsiInitFailed` field to `$true`**
+				* [First(Public) Example by Matt Graeber(2016)](https://twitter.com/mattifestation/status/735261120487772160)
+				* [Exploring PowerShell AMSI and Logging Evasion - Adam Chester(2018)](https://www.mdsec.co.uk/2018/06/exploring-powershell-amsi-and-logging-evasion/)
+			* **Jscript9.dll**
+				* [Sneaking Past Device Guard - Philip Tsukerman](https://conference.hitb.org/hitbsecconf2019ams/materials/D2T1%20-%20Sneaking%20Past%20Device%20Guard%20-%20Philip%20Tsukerman.pdf)
+			* **Heap-based**
+				* [How Red Teams Bypass AMSI and WLDP for .NET Dynamic Code - modexp(2019)](https://modexp.wordpress.com/2019/06/03/disable-amsi-wldp-dotnet/)
+				* [Heap-based AMSI bypass for MS Excel VBA and others  - Dan@CodeWhite(2019)](https://codewhitesec.blogspot.com/2019/07/heap-based-amsi-bypass-in-vba.html)
+					* This blog post describes how to bypass Microsoft's AMSI (Antimalware Scan Interface) in Excel using VBA (Visual Basic for Applications). In contrast to other bypasses this approach does not use hardcoded offsets or opcodes but identifies crucial data on the heap and modifies it. The idea of an heap-based bypass has been mentioned by other researchers before but at the time of writing this article no public PoC was available. This blog post will provide the reader with some insights into the AMSI implementation and a generic way to bypass it.
+			* **...**
+				* [How to Bypass AMSI with an Unconventional Powershell Cradle - Mohammed Danish(2019)](https://medium.com/@gamer.skullie/bypassing-amsi-with-an-unconventional-powershell-cradle-6bd15a17d8b9)
 		* **Bypass Talks**
 			* [Antimalware Scan Interface (AMSI) - Dave Kennedy(WWHF2018)](https://www.youtube.com/watch?v=wBK1fTg6xuU)
 				* This talk will dive into the Antimalware Scan Interface (AMSI) as well as other alternatives in the “NextGen” series of preventative measures and show how trivial it is to write code that doesn’t get snagged.  The security market is focusing on open source data collection sources and security researchers as the main method to write signatures to detect attacks, much like what we saw in the 90s with traditional anti-virus tech. Not much has changed, let’s dive into the reality in security and how little these protective measures really do in the grand scheme of things. We’ll also be covering solid practices in defending against attacks, and what we should be focusing on.
 			* [PSAmsi An offensive PowerShell module for interacting with the Anti Malware Scan Interface in Windows - Ryan Cobb(Derbycon7)](https://www.youtube.com/watch?v=rEFyalXfQWk)
-			* [The Rise and Fall of AMSI - Tal Liberman(BH Asia18)]https://i.blackhat.com/briefings/asia/2018/asia-18-Tal-Liberman-Documenting-the-Undocumented-The-Rise-and-Fall-of-AMSI.pdf)
 			* [Red Team TTPs Part 1: AMSI Evasion - paranoidninja](https://0xdarkvortex.dev/index.php/2019/07/17/red-team-ttps-part-1-amsi-evasion/)
 			* [AMSI: How Windows 10 Plans To Stop Script Based Attacks And How Well It Does It - Nikhil Mittal(BHUSA16)](https://www.blackhat.com/docs/us-16/materials/us-16-Mittal-AMSI-How-Windows-10-Plans-To-Stop-Script-Based-Attacks-And-How-Well-It-Does-It.pdf)
 			* [Goodbye Obfuscation, Hello Invisi-Shell: Hiding Your Powershell Script in Plain Sight - Omer Yair(Derbycon2018)](http://www.irongeek.com/i.php?page=videos/derbycon8/track-3-15-goodbye-obfuscation-hello-invisi-shell-hiding-your-powershell-script-in-plain-sight-omer-yair)
@@ -2347,12 +2381,13 @@ To Do
 			* **101**	
 				* [Office VBA + AMSI: Parting the veil on malicious macros - MS Security Team](https://www.microsoft.com/security/blog/2018/09/12/office-vba-amsi-parting-the-veil-on-malicious-macros/)
 			* **Blogposts**
-				* [Dynamic Microsoft Office 365 AMSI In Memory Bypass Using VBA - Richard Davy, Gary Nield](https://secureyourit.co.uk/wp/2019/05/10/dynamic-microsoft-office-365-amsi-in-memory-bypass-using-vba/)
+				* [Dynamic Microsoft Office 365 AMSI In Memory Bypass Using VBA - Richard Davy, Gary Nield(2019)](https://secureyourit.co.uk/wp/2019/05/10/dynamic-microsoft-office-365-amsi-in-memory-bypass-using-vba/)
 				* [The Document that Eluded AppLocker and AMSI - ZLAB-YOROI](https://blog.yoroi.company/research/the-document-that-eluded-applocker-and-amsi/)
-				* [Office 365 AMSI Bypass (fixed) - Ring0x00](https://idafchev.github.io/research/2019/03/23/office365_amsi_bypass.html)
-			* **Talks & Presentations**
+				* [Office 365 AMSI Bypass (fixed) - Iliya Dafchev(2019)](https://idafchev.github.io/research/2019/03/23/office365_amsi_bypass.html)
 				* [Bypassing AMSI for VBA - Pieter Ceelen](https://outflank.nl/blog/2019/04/17/bypassing-amsi-for-vba/)
 					* This blog is a writeup of the various AMSI weaknesses presented at [the Troopers talk ‘MS Office File Format Sorcery‘](https://github.com/outflanknl/Presentations/raw/master/Troopers19_MS_Office_file_format_sorcery.pdf) and [the Blackhat Asia presentation ‘Office in Wonderland’](https://i.blackhat.com/asia-19/Thu-March-28/bh-asia-Hegt-MS-Office-in-Wonderland.pdf).
+				* [Adventures in the Wonderful World of AMSI. - byte_st0rm(2019)](https://medium.com/@byte_St0rm/adventures-in-the-wonderful-world-of-amsi-25d235eb749c)
+					* Overview + Rather then use “LoadLibrary” and “GetProcAddress” to locate the memory addresses of “amsi.dll” and “amsiScanBuffer”, walk the “PEB” of the process and the export directory of “amsi.dll”.
 	* **Application Whitelisting**<a name="appwhitelist"></a>
 		* **101**
 			* [Whitelist Evasion revisited](https://khr0x40sh.wordpress.com/2015/05/27/whitelist-evasion-revisited/)
@@ -2501,6 +2536,9 @@ To Do
 			* [A Critique of Logging Capabilities in PowerShell v6](http://www.labofapenetrationtester.com/2018/01/powershell6.html)
 				* Introduces 'PowerShell Upgrade Attack'
 		* **Talks/Presentations/Videos**
+			* [Isolated to Constrained Language Mode - Living within the Confines - Christopher Truncer(BSidesDC2018)](https://www.youtube.com/watch?v=d_1P0rLb8gM)
+				* This talk will cover what constrained language mode is, what works, and what doesn’t compared with the tools you are likely used to using. I’ll talk about building out tools in constrained language mode, the frustrations, and tips to make it easier. I’ll also cover existing tools for operating within a constrained language mode environment, and add a new update to WMImplant based on my approach to building out constrained language mode capabilities.
+			* [PowerShell Constrained Language Mode Enforcement and Bypass Deep Dive - Matt Graeber(2020)](https://www.youtube.com/watch?v=O6dtIvDfyuI&t=253s)
 		* **Tools**
 	* **Sysmon**
 		* **Articles/Blogposts/Writeups**
@@ -3138,16 +3176,40 @@ To Do
 			* This is the code relating to a project to simplify the act of creating a CA, signing a binary with the CA and then installing the CA on the target machine. It investigates the extent to which this can be achieved without the benefit of a GUI and shows how this can be modified to generate valid EV certificates which are trusted by Windows. It is intended for penetration testers who are looking to install an implant binary which looks as legitimate as possible. None of these techniques are new, but it is hoped that this tool and project will make them easier and more accessible.
 * **(Distributed) Component-Object-Model(COM)**<a name="dcom"></a>
 	* **101**
-		* [Component Object Model (COM) - docs.ms](https://docs.microsoft.com/en-us/windows/win32/com/component-object-model--com--portal?redirectedfrom=MSDN)
+		* [Component Object Model - Wikipedia](https://en.wikipedia.org/wiki/Component_Object_Model)
+		* [Distributed Component Object Model - Wikipedia](https://en.wikipedia.org/wiki/Distributed_Component_Object_Model)
+		* [The Component Object Model - docs.ms](https://docs.microsoft.com/en-us/windows/win32/com/the-component-object-model)
 			* COM is a platform-independent, distributed, object-oriented system for creating binary software components that can interact. COM is the foundation technology for Microsoft's OLE (compound documents) and ActiveX (Internet-enabled components) technologies.
 		* [[MS-DCOM]: Distributed Component Object Model (DCOM) Remote Protocol - docs.ms](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-dcom/4a893f3d-bd29-48cd-9f43-d9777a4415b0)
 			* Specifies the Distributed Component Object Model (DCOM) Remote Protocol, which exposes application objects via remote procedure calls (RPCs) and consists of a set of extensions layered on the Microsoft Remote Procedure Call Extensions.
-	* **Articles/Blogposts/WRiteups**
+		* [[MS-RPCE]: Remote Procedure Call Protocol Extensions - msdn.ms](https://msdn.microsoft.com/en-us/library/cc243560.aspx)
+		* [Guide(to COM) - docs.ms](https://docs.microsoft.com/en-us/windows/win32/com/guide)
+			* This guide introduces the Microsoft Component Object Model (COM).
+		* [COM Fundamentals - docs.ms](https://docs.microsoft.com/en-us/windows/win32/com/com-fundamentals)
+		* [COM Objects and Interfaces - docs.ms](https://docs.microsoft.com/en-us/windows/win32/com/com-objects-and-interfaces)
+			* COM is a technology that allows objects to interact across process and computer boundaries as easily as within a single process. COM enables this by specifying that the only way to manipulate the data associated with an object is through an interface on the object. When this term is used in this documentation, it refers to an implementation in code of a COM binary-compliant interface that is associated with an object.
+		* [COM Reference - docs.ms](https://docs.microsoft.com/en-us/windows/win32/com/reference)
+		* [COM Glossary](https://docs.microsoft.com/en-us/windows/win32/com/com-glossary)
+	* **Articles/Blogposts/Writeups**
+		* [Component Object Model Technical Overview -  The ActiveX Core Technology Reference(1999)](https://pubs.opengroup.org/onlinepubs/009899899/CHP03CHP.HTM)
+		* [Mike Panitz's Introduction to COM](https://faculty.cascadia.edu/mpanitz/COM_Tutorial/index.htm)
+		* [The Component Object Model: Technical Overview(1994)](https://www.cs.umd.edu/~pugh/com/)
+			* This paper is adapted from an article appearing in Dr. Dobbs Journal, December 1994. 
 		* [Exploiting .NET Managed DCOM - James Forshaw](https://googleprojectzero.blogspot.com/2017/04/exploiting-net-managed-dcom.html)
 			* One of the more interesting classes of security vulnerabilities are those affecting interoperability technology. This is because these vulnerabilities typically affect any application using the technology, regardless of what the application actually does. Also in many cases they’re difficult for a developer to mitigate outside of not using that technology, something which isn’t always possible. I discovered one such vulnerability class in the Component Object Model (COM) interoperability layers of .NET which make the use of .NET for Distributed COM (DCOM) across privilege boundaries inherently insecure. This blog post will describe a couple of ways this could be abused, first to gain elevated privileges and then as a remote code execution vulnerability.
 		* [COM Hijacking – Windows Overlooked Security Vulnerability - Yaniv Assor](https://www.cyberbit.com/blog/endpoint-security/com-hijacking-windows-overlooked-security-vulnerability/)
+		* [Abusing COM objects - 0xpat](https://0xpat.github.io/Abusing_COM_Objects/)
+	* **Talks/Presentations/videos**
+		* [Exploiting DCOM - Yoshiaki Komoriya, Hidenobu Seki(2002)](https://web.archive.org/web/20071215152948/http://www.blackhat.com/html/win-usa-03/win-usa-03-speakers.html#Yoshiaki%20Komoriya)
 	* **Papers**
 		* [The Dangers of Per-User COM Objects - Jon Larimer](https://www.virusbulletin.com/uploads/pdf/conference_slides/2011/Larimer-VB2011.pdf)
+	* **Programming with**
+		* **C#**
+		* **C/C++**
+		* **Python**
+		* **VBA**
+			* [VB Programmers are COM Programmers - James Cleverley()](http://www1.idc.ac.il/ed/An%20introduction%20to%20COM%20for%20VB%20programmers.htm)
+
 * **DLLs**<a name="dll"></a>
 	* **101**
 		* [What is a DLL? - support.ms](https://support.microsoft.com/en-us/help/815065/what-is-a-dll)
@@ -3309,12 +3371,14 @@ To Do
 			* [How to execute PowerShell script or cmdlets from C# code? - Mitesh Sureja(2018)](https://miteshsureja.blogspot.com/2018/07/how-to-execute-powershell-script-or.html)
 				* [Code](https://gist.github.com/miteshsureja/f9cbc2f09264a01277a6555a7425debc)
 			* Project: [NotPowerShell](https://github.com/Ben0xA/nps)
+			* [We don’t need powershell.exe - decoder.cloud(2017)](https://decoder.cloud/2017/11/02/we-dont-need-powershell-exe/)
+			* [Powershell CLM Bypass Using Runspaces - Shaksham Jaiswal(2019)](https://www.secjuice.com/powershell-constrainted-language-mode-bypass-using-runspaces/)
 		* **Tools**
 			* [InsecurePowerShell](https://github.com/cobbr/InsecurePowerShell)
 				* InsecurePowershell is a fork of PowerShell Core v6.0.0, with key security features removed.
 			* [InsecurePowerShellHost](https://github.com/cobbr/InsecurePowerShellHost)
 				* InsecurePowerShellHost is a .NET Core host process for InsecurePowerShell, a version of PowerShell Core with key security features removed.
-			* [PowerPick](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerPick)
+			* [PowerTools](https://github.com/PowerShellEmpire/PowerTools/tree/master/PowerPick)
 				* This project focuses on allowing the execution of Powershell functionality without the use of Powershell.exe. Primarily this project uses.NET assemblies/libraries to start execution of the Powershell scripts.
 			* [UnmanagedPowerShell](https://github.com/leechristensen/UnmanagedPowerShell)
 				* Executes PowerShell from an unmanaged process.
@@ -3324,6 +3388,7 @@ To Do
 				* NoPowerShell is a tool implemented in C# which supports executing PowerShell-like commands while remaining invisible to any PowerShell logging mechanisms. This .NET Framework 2 compatible binary can be loaded in Cobalt Strike to execute commands in-memory. No System.Management.Automation.dll is used; only native .NET libraries. An alternative usecase for NoPowerShell is to launch it as a DLL via rundll32.exe: rundll32 NoPowerShell.dll,main.
 			* [A Powerful New Tool: PowerLine - BHIS(2017)](https://www.youtube.com/watch?v=HiAtkLa8FOc)
 				* [PowerLine](https://github.com/fullmetalcache/PowerLine)
+				* Running into environments where the use of PowerShell is being monitored or is just flat-out disabled?  Have you tried out the fantastic PowerOps framework but are wishing you could use something similar via Meterpreter, Empire, or other C2 channels?  Look no further! In this talk, Brian Fehrman talks about his new PowerLine framework. He overviews the tool, walks you through how to use it, shows you how you can add additional PowerShell scripts with little effort, and demonstrates just how powerful (all pun intended) this little program can be!
 			* [psfire](https://github.com/curi0usJack/psfire)
 				* simple demo of using C# & System.Management.Automation.dll to run powershell code (b64 encoded) without powershell.exe
 * **PowerShell Desired State Configuration**<a name="winpsc"></a>
@@ -3365,6 +3430,8 @@ To Do
 		* [WSH - Windows Script Host - Rob Van der Woude](https://www.robvanderwoude.com/wsh.php)
 		* [Windows Script Host (jscript): how do i download a binary file? - StackOverflow](https://stackoverflow.com/questions/4164400/windows-script-host-jscript-how-do-i-download-a-binary-file)
 		* [WSH - Windows Script Host - renenyffenegger.ch](https://renenyffenegger.ch/notes/development/languages/WSH/index)
+		* [The wscript.Shell + Shell.Application objects - SS64](https://ss64.com/vb/shell.html)
+		* [WScript - devguru.com](https://www.devguru.com/content/technologies/wsh/objects-wscript.html)
 * **Malicious Butler**
 	* [The Remote Malicious Butler Did It! - Tal Be'ery, Chaim Hoch(BHUSA 2015)](https://www.youtube.com/watch?v=xujWesUS1ZQ)
 		* An Evil Maid attack is a security exploit that targets a computing device that has been left unattended. An evil maid attack is characterized by the attacker's ability to physically access the target multiple times without the owner's knowledge. On BlackHat Europe 2015, Ian Haken in his talk "Bypassing Local Windows Authentication to Defeat Full Disk Encryption" had demonstrated a smart Evil Maid attack which allows the attacker to bypass Bitlocker disk encryption in an enterprise's domain environment. The attacker can do so by connecting the unattended computer into a rogue Domain Controller and abusing a client side authentication vulnerability. As a result, Microsoft had released a patch to fix this vulnerability and mitigate the attack. While being a clever attack, the physical access requirement for the attack seems to be prohibitive and would prevent it from being used on most APT campaigns. As a result, defenders might not correctly prioritize the importance of patching it. In our talk, we reveal the "Remote Malicious Butler" attack, which shows how attackers can perform such an attack, remotely, to take a complete control over the remote computer. We will dive into the technical details of the attack including the rogue Domain Controller, the client-side vulnerability and the Kerberos authentication protocol network traffic that ties them. We would explore some other attack avenues, all leveraging on the rogue Domain Controller concept. We would conclude with the analysis of some practical generic detection and prevention methods against rogue Domain Controllers.
@@ -3383,27 +3450,40 @@ To Do
 #### <a name="csharp-stuff">C# & .NET Stuff</a>
 * **101**
 	* **.NET & .NET Core**
-		* [Overview of .NET Framework - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/get-started/overview)
-		* [Introduction to .NET Core - docs.ms](https://docs.microsoft.com/en-us/dotnet/core/introduction)
-		* [.NET Core CLI overview - docs.ms](https://docs.microsoft.com/en-us/dotnet/core/tools/)
-		* [.NET Standard - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
-		* [Tour of .NET - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/tour)
-			* This article offers a guided tour through some of the key features of the .NET.
-		* [.NET architectural components - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/components)
-			* A .NET app is developed for and runs in one or more implementations of .NET. Implementations of .NET include the .NET Framework, .NET Core, and Mono. There is an API specification common to all implementations of .NET that's called the .NET Standard. This article gives a brief introduction to each of these concepts.
-		* [Common Language Runtime (CLR) overview - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/clr)
-		* [AppDomain Class - docs.ms](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.1)
-			* Represents an application domain, which is an isolated environment where applications execute. This class cannot be inherited.
-		* [.NET Method Internals - Common Intermediate Language (CIL) Basics - @mattifestation(2014)](http://www.exploit-monday.com/2014/07/dotNETMethodInternals.html)
-		* [.NET Malware Threat: Internals and Reversing - Alexandre Borges(Defcon2019)](http://www.blackstormsecurity.com/docs/ALEXANDREBORGES_DEFCON_2019.pdf)
-		* [What is "managed code"? - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/managed-code)
-			* When working with .NET Framework, you will often encounter the term "managed code". This document will explain what this term means and additional information around it.
+		* **101**
+			* [Overview of .NET Framework - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/get-started/overview)
+			* [Introduction to .NET Core - docs.ms](https://docs.microsoft.com/en-us/dotnet/core/introduction)
+			* [.NET Core CLI overview - docs.ms](https://docs.microsoft.com/en-us/dotnet/core/tools/)
+			* [.NET Standard - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/net-standard)
+			* [Tour of .NET - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/tour)
+				* This article offers a guided tour through some of the key features of the .NET.
+			* [.NET architectural components - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/components)
+				* A .NET app is developed for and runs in one or more implementations of .NET. Implementations of .NET include the .NET Framework, .NET Core, and Mono. There is an API specification common to all implementations of .NET that's called the .NET Standard. This article gives a brief introduction to each of these concepts.
+			* [Common Language Runtime (CLR) overview - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/clr)
+		* **Application Domains**
+			* [AppDomain Class - docs.ms](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.1)
+				* Represents an application domain, which is an isolated environment where applications execute. This class cannot be inherited.
+		* **Internals**
+			* [.NET Method Internals - Common Intermediate Language (CIL) Basics - @mattifestation(2014)](http://www.exploit-monday.com/2014/07/dotNETMethodInternals.html)
+			* [.NET Malware Threat: Internals and Reversing - Alexandre Borges(Defcon2019)](http://www.blackstormsecurity.com/docs/ALEXANDREBORGES_DEFCON_2019.pdf)
+			* [Hijacking .NET to Defend PowerShell - Amanda Rosseau](https://arxiv.org/pdf/1709.07508.pdf)
+				* Abstract—With the rise of attacks using PowerShell in the recent months, there has not been a comprehensive solution for monitoring or prevention. Microsoft recently released the AMSI solution for PowerShell v5, however this can also be bypassed. This paper focuses on repurposing various stealthy runtime .NET hijacking techniques implemented for PowerShell attacks for defensive monitoring of PowerShell. It begins with a brief introduction to .NET and PowerShell, followed by a deeper explanation of various attacker techniques, which is explained from the perspective of the defender, including assembly modification, class and method injection, compiler profiling, and C based function hooking. Of the four attacker techniques that are repurposed for defensive real-time monitoring of PowerShell execution, intermediate language binary modification, JIT hooking, and machine code manipulation provide the best results for stealthy run-time interfaces for PowerShell scripting analysis		
+		* **Managed vs Unmanaged code**
+			* [What is "managed code"? - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/managed-code)
+				* When working with .NET Framework, you will often encounter the term "managed code". This document will explain what this term means and additional information around it.
 	* **C#**
-		* [A tour of the C# language - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
-			* C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. 
-		* [Get started with C# - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/)
-		* [Inside a C# program - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/)
-			* The section discusses the general structure of a C# program, and includes the standard "Hello, World!" example.
+		* **101**
+			* [A tour of the C# language - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
+				* C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. 
+		* **Learning**
+			* [Get started with C# - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/)
+			* [Inside a C# program - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/)
+				* The section discusses the general structure of a C# program, and includes the standard "Hello, World!" example.
+			* [C# 101 - Channel9 MSDN](https://channel9.msdn.com/Series/CSharp-101)
+		* **Reflection**
+			* [Security Considerations for Reflection - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/security-considerations-for-reflection)
+			* [Securing the loading of dynamic code - F-Secure(2016)](https://labs.f-secure.com/archive/securing-the-loading-of-dynamic-code/)
+			* [Use reflection to list a class’s properties in C# - Rod Stephens(2018)](http://csharphelper.com/blog/2018/02/use-reflection-to-list-a-classs-properties-in-c/)	
 	* **Detection**
 		* [Interesting DFIR traces of .NET CLR Usage Logs - MenaSec(2019)](https://blog.menasec.net/2019/07/interesting-difr-traces-of-net-clr.html)
 		* [Hijacking .NET to Defend PowerShell - Amanda Rosseau](https://arxiv.org/pdf/1709.07508.pdf)
@@ -4029,8 +4109,21 @@ To Do
     			* [Add-Type - SS64](https://ss64.com/ps/add-type.html)
     			* [Add-Type vs. [reflection.assembly] in PowerShell - Tim Curwick(2013)](https://web.archive.org/web/20200315070535/http://www.madwithpowershell.com/2013/10/add-type-vs-reflectionassembly-in.html)
     			* [Using Add-Type in a PowerShell script that is run as a Scheduled Task - Craig Tolley(2016)](https://www.craig-tolley.co.uk/2016/02/09/using-add-type-in-a-powershell-script-that-is-run-as-a-scheduled-task/)
+	* **Access Managed Code from Unmanaged Code**
+		* [Native interoperability - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/native-interop/)
+			* "The following articles show the various ways of doing "native interoperability" in .NET."
+		* [Platform Invoke (P/Invoke) - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/native-interop/pinvoke)
+		* [Platform Invocation Services - Wikipedia](https://en.wikipedia.org/wiki/Platform_Invocation_Services)
+		* [How to: Call Native DLLs from Managed Code Using PInvoke - docs.ms](https://docs.microsoft.com/en-us/cpp/dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke?view=vs-2019)
+			* Functions that are implemented in unmanaged DLLs can be called from managed code using Platform Invoke (P/Invoke) functionality. If the source code for the DLL is not available, P/Invoke is the only option for interoperating. However, unlike other .NET languages, Visual C++ provides an alternative to P/Invoke. For more information, see [Using C++ Interop (Implicit PInvoke)](https://docs.microsoft.com/en-us/cpp/dotnet/using-cpp-interop-implicit-pinvoke?view=vs-2019).
+		* [pinvoke](https://github.com/dotnet/pinvoke)
+			* A library containing all P/Invoke code so you don't have to import it every time. Maintained and updated to support the latest Windows OS.
 	* **Download Cradles**
 	 	* [Dropping Executables with Powershell - @mattifestation(2011)](http://www.exploit-monday.com/2011/09/dropping-executables-with-powershell.html)
+		* [PowerShell: In-Memory Injection Using CertUtil.exe - mov a, xbx(2018)](https://movaxbx.ru/2018/06/01/powershell-in-memory-injection-using-certutil-exe/)
+			* In this blog post I will discuss the steps to use PowerShell, Invoke-CradleCrafter and Microsoft’s Certutil.exe to craft a payload and one-liner that can be used to evade the latest version of Windows Defender (as of this writing), as well as tips for not getting caught by Intrusion Detection Systems and behavior analysis.
+		* [Invoke-Cradlecrafter - Daniel Bohannon](https://github.com/danielbohannon/Invoke-CradleCrafter)
+			* PowerShell Remote Download Cradle Generator & Obfuscator
 	* **Execution Policy**
 			* [15 Ways to Bypass the PowerShell Execution Policy - NetSPI](https://blog.netspi.com/15-ways-to-bypass-the-powershell-execution-policy/)
     	* **Tools**
@@ -4109,6 +4202,9 @@ To Do
 	* **Running Shellcode**
 		* [Invoke-Shellcode.ps1 - PowerSploit](https://github.com/PowerShellMafia/PowerSploit/blob/master/CodeExecution/Invoke-Shellcode.ps1)
 			* Inject shellcode into the process ID of your choosing or within the context of the running PowerShell process.
+	* **Runspaces**
+		* [Beginning Use of PowerShell Runspaces: Part 1 - Dr Scripto(2015)](https://devblogs.microsoft.com/scripting/beginning-use-of-powershell-runspaces-part-1/)
+		* [Creating Runspaces - docs.ms](https://docs.microsoft.com/en-us/powershell/scripting/developer/hosting/creating-runspaces?view=powershell-7)
 	* **Token Manipulation**
 		* **101**
 			* [Use PowerShell to Duplicate Process Tokens via P/Invoke - Dr Scripto(2012)](https://devblogs.microsoft.com/scripting/use-powershell-to-duplicate-process-tokens-via-pinvoke/)
@@ -4133,7 +4229,9 @@ To Do
 				* It is possible to invoke Windows API function calls via internal .NET native method wrappers in PowerShell without requiring P/Invoke or C# compilation. How is this useful for an attacker? You can call any Windows API function (exported or non-exported) entirely in memory. For those familiar with Metasploit internals, think of this as an analogue to railgun.
 			* [Deep Reflection - Defining Structs and Enums in PowerShell - Matt Graeber(2012)](http://www.exploit-monday.com/2012/07/structs-and-enums-using-reflection.html)
 			* [Easily Defining Enums, Structs, and Win32 Functions in Memory - Matt Graeber(2014)](https://www.powershellmagazine.com/2014/09/25/easily-defining-enums-structs-and-win32-functions-in-memory/)
+			* [Low-Level Windows API Access From PowerShell - b33f(2016)](https://www.fuzzysecurity.com/tutorials/24.html)
 			* [Properly Retrieving Win32 API Error Codes in PowerShell - @mattifestation(2016)](http://www.exploit-monday.com/2016/01/properly-retrieving-win32-api-error.html)
+			* [Writing about Windows API functions in Powershell - Dmitriy Kim(2020)](https://medium.com/@dmitriykim/writing-about-windows-api-functions-in-powershell-b03d3abb0862)
 		* **Tools**
 			* [PSReflect](https://github.com/mattifestation/PSReflect)
 				* Easily define in-memory enums, structs, and Win32 functions in PowerShell
@@ -4186,6 +4284,8 @@ To Do
 		* [Invoke-CommandAs](https://github.com/mkellerman/Invoke-CommandAs)
     	   * Invoke Command as System/User on Local/Remote computer using ScheduleTask.
 * **Evasion**
+	* **Articles/Blogposts/Writeups**
+		* [PowerShell Logging: Obfuscation and Some New(ish) Bypasses Part 1 - Hubbl3(2020)](https://www.bc-security.org/post/powershell-logging-obfuscation-and-some-newish-bypasses-part-1/)
 	* **Talks/Presentations/Videos**
 		* [PowerShell Secrets and Tactics - Ben0xA(Derbycon2016)](https://www.youtube.com/watch?v=mPPv6_adTyg)
 			* It used to be that most people were just starting to hear about PowerShell. Over the last 3 years, this has changed dramatically. We now see Offensive and Defensive PowerShell tools, exploits specifically leveraging PowerShell and WMI, and more organizations are starting to be intentional for detection and monitoring of PowerShell scripts and commands. With this visibility, it is becoming a game of cat and mouse to leverage and detect PowerShell. In this talk, I will highlight some secrets I use to ensure my PowerShell exploits are successful and some unique tactics which will bypass common defensive controls. I will also walk you through the creation of a custom PowerShell C# DLL which you can use to compromise your target. If you want to code with me, be sure to bring a laptop with Visual Studio 2013 or later installed.
@@ -4203,8 +4303,8 @@ To Do
 	* **Obfuscation**
 		* [Invoke-Obfuscation](https://github.com/danielbohannon/Invoke-Obfuscation)
 			* Invoke-Obfuscation is a PowerShell v2.0+ compatible PowerShell command and script obfuscator.
-			* [Presentation](https://www.youtube.com/watch?v=P1lkflnWb0I)
-			* [Invoke-Obfuscation: PowerShell obFUsk8tion Techniques & How To (Try To) D""e`Tec`T 'Th'+'em'](http://www.irongeek.com/i.php?page=videos/derbycon6/121-invoke-obfuscation-powershell-obfusk8tion-techniques-how-to-try-to-detect-them-daniel-bohannon)
+				* [Presentation](https://www.youtube.com/watch?v=P1lkflnWb0I)
+				* [Invoke-Obfuscation: PowerShell obFUsk8tion Techniques & How To (Try To) D""e`Tec`T 'Th'+'em'](http://www.irongeek.com/i.php?page=videos/derbycon6/121-invoke-obfuscation-powershell-obfusk8tion-techniques-how-to-try-to-detect-them-daniel-bohannon)
 		* **Articles/Blogposts/Writeups**
 			* [argfuscator - Obfuscating and randomizing PowerShell arguments - Jeff White(2017)](http://ropgadget.com/posts/intro_argfuscator.html)
 			* [Pulling Back the Curtains on EncodedCommand PowerShell Attacks - Jeff White(2017)](https://researchcenter.paloaltonetworks.com/2017/03/unit42-pulling-back-the-curtains-on-encodedcommand-powershell-attacks/)
@@ -4212,6 +4312,8 @@ To Do
 				* TL;DR - PowerShell has built-in functionality to save sensitive plaintext data to an encrypted object called `SecureString`. Malicious actors have exploited this functionality as a means to obfuscate PowerShell commands. This blog post discusses `SecureString`, examples seen in the wild, and [presents a tool](https://wietze.github.io/powershell-securestring-decoder/) that helps analyse SecureString obfuscated commands.
 			* [pOWershell obFUsCation - N1CFURY](https://n1cfury.com/ps-obfuscation/)
 		* **Talks/Presentations/Videos**
+			* [Defeating The Latest Advances in Script Obfuscation - Mark Mager(Derbycon2016)](https://www.youtube.com/watch?v=BGWy1R7NyOk&app=desktop)
+				* Defeating The Latest Advances in Script Obfuscation Mark Mager Mark Mager - @magerbomb In this age of increasingly sophisticated and devastating malware, adversaries still rely on a multitude of scripting languages and frameworks (e.g. JavaScript, VBA, PowerShell, VBScript) as key components of an attack scenario. These scripts tend to employ obfuscation techniques in order to obscure their true intent and avoid detection by endpoint protection products. Though significant advances have been made in recent years in packing and obfuscating compiled binaries, script obfuscation can still be defeated with time and a determined analyst. This talk will cover some of the most recently seen advanced obfuscation techniques employed by APTs, exploit kits, and other malware authors along with proven methods for circumventing and decoding these techniques. I will then apply these methods to guide the audience through the deobfuscation of a fully obfuscated script. Audience members will walk away with a solid understanding of how common obfuscation techniques are employed in scripting languages along with how they can be defeated.
 			* [Invoke-CradleCrafter: Moar PowerShell obFUsk8tion by Daniel Bohannon](https://www.youtube.com/watch?feature=youtu.be&v=Nn9yJjFGXU0&app=desktop)
 		* **Tools**
 			* [PyFuscation](https://github.com/CBHue/PyFuscation)
@@ -4228,6 +4330,7 @@ To Do
 				* [Blogpost](https://www.fireeye.com/blog/threat-research/2017/07/revoke-obfuscation-powershell.html)
 				* [Paper](https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf)
 				* [Talk](https://www.youtube.com/watch?v=UVbbpZiYnTs)
+					* [Talk Paper](https://www.blackhat.com/docs/us-17/thursday/us-17-Bohannon-Revoke-Obfuscation-PowerShell-Obfuscation-Detection-And%20Evasion-Using-Science-wp.pdf)
 				* Revoke-Obfuscation is a PowerShell v3.0+ compatible PowerShell obfuscation detection framework.
 			* **Articles/Blogposts/Writeups**
 				* [PowerShell: ConvertFrom-SecureString decoder - wietzebeukema.nl](https://www.wietzebeukema.nl/powershell-securestring-decoder/)
@@ -4453,10 +4556,16 @@ To Do
 
 ----------------
 ### <a name="av">Avoiding/Bypassing AV(Anti-Virus)/UAC/Whitelisting/Sandboxes/Logging/etc - General Evasion Tactics & Techniques</a>
-
 * **101**
 	* [Noob 101: Practical Techniques for AV Bypass - Jared Hoffman - ANYCON 2017](http://www.irongeek.com/i.php?page=videos/anycon2017/103-noob-101-practical-techniques-for-av-bypass-jared-hoffman)
 		* The shortcomings of anti-virus (AV) solutions have been well known for some time. Nevertheless, both public and private organizations continue to rely on AV software as a critical component of their information security programs, acting as a key protection mechanism over endpoints and other information systems within their networks. As a result, the security posture of these organizations is significantly jeopardized by relying only on this weakened control.
+* **Tactics & Tecniques**
+	* String Replacement & Obfuscation
+	* Runtime modification(Polymorphism)
+	* Sandbox detection & Avoidance
+	* Log Avoidance & Deletion
+
+
 * **Educational**
 	* [Bypass Antivirus Dynamic Analysis: Limitations of the AV model and how to exploit them - Emeric Nasi(2014)](https://wikileaks.org/ciav7p1/cms/files/BypassAVDynamics.pdf)
 	* [Learn how to hide your trojans, backdoors, etc from anti virus.](https://www.hellboundhackers.org/articles/read-article.php?article_id=842)
@@ -4483,7 +4592,7 @@ To Do
 		* [Slides](https://github.com/mattifestation/BHUSA2018_Sysmon/blob/master/Slides_Subverting_Sysmon.pdf)
 		* [Code](https://github.com/mattifestation/BHUSA2018_Sysmon)
 * **Articles/Blogposts/Writeups**
-	* [Distribution of malicious JAR appended to MSI files signed by third parties](https://blog.virustotal.com/2019/01/distribution-of-malicious-jar-appended.html)
+	* **String Modfiication* [Distribution of malicious JAR appended to MSI files signed by third parties](https://blog.virustotal.com/2019/01/distribution-of-malicious-jar-appended.html)
 	* [Bypass Cylance Memory Exploitation Defense & Script Cntrl](https://www.xorrior.com/You-Have-The-Right-to-Remain-Cylance/)
 	* [Three Simple Disguises for Evading Antivirus - BHIS](https://www.blackhillsinfosec.com/three-simple-disguises-for-evading-antivirus/)
 	* [AVLeak: Fingerprinting Antivirus Emulators Through Black-Box Testing](https://www.usenix.org/system/files/conference/woot16/woot16-paper-blackthorne_update.pdf)
@@ -4516,7 +4625,6 @@ To Do
 	* [Tricking modern endpoint security products - Michel Coene(SANS2020)](https://www.youtube.com/watch?v=xmNpS9mbwEc)
 		* The current endpoint monitoring capabilities we have available to us are unprecedented. Many tools and our self/community-built detection rules rely on parent-child relationships and command-line arguments to detect malicious activity taking place on a system. There are, however, ways the adversaries can get around these detections. During this presentation, we'll talk about the following techniques and how we can detect them: Parent-child relationships spoofing; Command-line arguments spoofing; Process injection; Process hollowing
 * **Techniques**
-	* **Code Injection**
 	* **Debuggers**
 		* [Batch, attach and patch: using windbg’s local kernel debugger to execute code in windows kernel](https://vallejo.cc/2015/06/07/batch-attach-and-patch-using-windbgs-local-kernel-debugger-to-execute-code-in-windows-kernel/)
 			* In this article I am going to describe a way to execute code in windows kernel by using windbg local kernel debugging. It’s not a vulnerability, I am going to use only windbg’s legal functionality, and I am going to use only a batch file (not powershell, or vbs, an old style batch only) and some Microsoft’s signed executables (some of them that are already in the system and windbg, that we will be dumped from the batch file). With this method it is not necessary to launch executables at user mode (only Microsoft signed executables) or load signed drivers. PatchGuard and other protections don’t stop us. We put our code directly into kernel memory space and we hook some point to get a thread executing it. As we will demonstrate, a malware consisting of a simple batch file would be able to jump to kernel, enabling local kernel debugging and using windbg to get its code being executed in kernel.
@@ -4828,6 +4936,7 @@ To Do
 	* **VBA**
 		* [VBad](https://github.com/Pepitoh/VBad)
 			* VBad is fully customizable VBA Obfuscation Tool combined with an MS Office document generator. It aims to help Red & Blue team for attack or defense.
+
 
 
 

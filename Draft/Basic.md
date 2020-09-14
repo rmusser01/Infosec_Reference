@@ -1,6 +1,6 @@
 # Basic Security Principles/Information
 
-----------------------------------
+------------------------------------------------------------------------------------------------------
 ## Table of Contents
 - [101](#101)
 - [Classes/Types of Vulnerabilities](#classes)
@@ -29,23 +29,35 @@
 - [Problem Solving](#ps)
 - [Regular Expressions](#rex)
 - [Research](#research)
+- [Request for Proposal/Service](#rfp)
 - [Risk](#risk)
 - [Securing yourself](#secself)
 - [System Design](#systemdesign)
 - [Task Automation](#automation)
 - [The Web](#web)
 - [Zero Trust](#zerotrust)
-
-
-
-* **To Do:**
-	* Make things better
-
+------------------------------------------------------------------------------------------------------
 
 -------------------------
 ### General Information
 * **101**<a name="101"></a>
+	* **101**
+		* The ""I don't know what I'm doing but I want to learn 'security'" portion:
+			* Security imo is a field like philosophy. On its own, it has limited application in the immediate. However, when applied ot other subjects, its value/usefulness becomes more apparent.
+			* You can learn security as a discipline, or you can learn general basic concepts and then apply that to a line of code/function/program/Architecture/Design/etc.
+			* There isn't a single path to take, and not all paths go straight forward, you may go down one path only to find you end up reading about the basics for something you considered ignorable/not worth your time, because in a new perspective, you've seen the 'hidden' value.
+		* The "I wanna be a hacker!" advice:
+			0. Learn basic security concepts, check out the Security+ syllabus by Comptia for ideas.
+			00. Learn Basic CS concepts: [Computer Science Distilled: Learn the Art of Solving Computational Problems - Wladston Ferreira Filho](https://www.goodreads.com/book/show/34189798-computer-science-distilled), Plus plenty of reading on Wikipedia: [Computer Science - Wikipedia](https://en.wikipedia.org/wiki/Computer_science)
+			1. Learn x86(-64) or ARM ASM. - I recommend [Programming from the Ground Up](https://programminggroundup.blogspot.com/), [Azeria's series on writing ARM ASM](https://azeria-labs.com/writing-arm-assembly-part-1/), and the [Intel® 64 and IA-32 Architectures Software Developer Manuals](https://software.intel.com/content/www/us/en/develop/articles/intel-sdm.html)
+			2. Learn C. Read [The C Programming Language(K&R)](https://en.wikipedia.org/wiki/The_C_Programming_Language), but learn C elsewhere.
+			3. Congratulations! You now have the skills and abilities(at least the basics) to start doing your own research and identifiying where you want to further develop your skills. 
+			* Further reading I could recommend:
+				* Linux([Understanding the Linux Kernel - Daniel P. Bovet, Marco Cesati](https://www.oreilly.com/library/view/understanding-the-linux/0596005652/))
+				* macOS([MacOS and `*`OS Internals - Jonathan Levin](http://newosxbook.com/index.php))
+				* Windows([Windows Internals Book series](https://docs.microsoft.com/en-us/sysinternals/learn/windows-internals)) & [Windows Via C/C++](https://www.goodreads.com/book/show/1922137.Windows_via_C_C_PRO_Developer_).
 	* **General**
+		* [Alice and Bob - Wikipedia](https://en.wikipedia.org/wiki/Alice_and_Bob)
 		* [Security Engineering (3rd ed) - Ross Anderson](https://www.cl.cam.ac.uk/~rja14/book.html)
 		* [10 Immutable Laws of Security Administration - Scott Culp(docs.ms)](https://docs.microsoft.com/en-us/previous-versions//cc722488(v=technet.10)?redirectedfrom=MSDN)
 		* [Learning the Ropes 101: Introduction - zsec.uk](https://blog.zsec.uk/101-intro/)
@@ -54,6 +66,9 @@
 			* A collection of resources/documentation/links/etc to help people learn about Infosec and break into the field.
 		* [Brandolini's Law - Wikipedia](https://en.wikipedia.org/wiki/Brandolini%27s_law)
 			* Brandolini's law, also known as the bullshit asymmetry principle, is an internet adage which emphasizes the difficulty of debunking bullshit: "The amount of energy needed to refute bullshit is an order of magnitude bigger than to produce it."
+		* [Maslow’s Hierarchy of Security Controls - Lee Holmes(2014)](https://www.leeholmes.com/blog/2014/12/08/maslows-hierarchy-of-security-controls/)
+		* [How to Secure Anything - Veeral Patel](https://github.com/veeral-patel/how-to-secure-anything)
+			* How to systematically secure anything: a repository about security engineering 
 	* **Computer Science**
 		* [40 Key Computer Science Concepts Explained In Layman’s Terms - carlcheo.com](http://carlcheo.com/compsci)
 		* [Software Engineering Body of Knowledge (SWEBOK) - IEEE](https://www.computer.org/education/bodies-of-knowledge/software-engineering)
@@ -172,6 +187,7 @@
 		* [Jumpstarting Your Appsec Program - Julia Knecht & Jacob Lords(BSidesSLC 2020)](https://www.youtube.com/watch?v=Wgob-wbQ26w&list=PLqVzh0_XpLfSJ2Okt38acDdO_xu2zKYmK&index=17&t=0s)
 * **Building a Security Team**<a name="buildteam"></a>
 	* [How to Build a Security Team and Program - Coleen Coolidge(BSidesSF2017)](https://www.youtube.com/watch?v=b0r5vc_eCoU&feature=youtu.be)
+	* [This is not fine - Surviving Cynicism and Building Happy Security Teams - Chris Deibler(BlueHat v18 2018)](https://www.youtube.com/watch?v=YUwBja45fBQ&feature=youtu.be)
 * **Red Team, Blue Team, Purple Team, Green Team**<a name='team'></a>
 	* See [RedTeam Page](./RT.md)
 	* [The Difference Between Red, Blue, and Purple Teams - Daniel Miessler](https://danielmiessler.com/study/red-blue-purple-teams/)
@@ -196,12 +212,16 @@
 	* [Spotlight effect - Wikipedia](https://en.wikipedia.org/wiki/Spotlight_effect)
 	* [Curse of knowledge - Wikipedia](https://en.wikipedia.org/wiki/Curse_of_knowledge)
 		* The curse of knowledge is a cognitive bias that occurs when an individual, communicating with other individuals, unknowingly assumes that the others have the background to understand. This bias is also called by some authors the curse of expertise, although that term is also used to refer to various other phenomena.
+	* [Kuleshov effect](https://en.wikipedia.org/wiki/Kuleshov_effect)
+		* The Kuleshov effect is a film editing (montage) effect demonstrated by Soviet filmmaker Lev Kuleshov in the 1910s and 1920s. It is a mental phenomenon by which viewers derive more meaning from the interaction of two sequential shots than from a single shot in isolation.
 * **Mental Models**<a name="mm"></a>
 	* [The Map Is Not the Territory - Farnam Street](https://fs.blog/2015/11/map-and-territory/)
 		* The map of reality is not reality. Even the best maps are imperfect. That’s because they are reductions of what they represent. If a map were to represent the territory with perfect fidelity, it would no longer be a reduction and thus would no longer be useful to us. A map can also be a snapshot of a point in time, representing something that no longer exists. This is important to keep in mind as we think through problems and make better decisions.
 	* [Coastline paradox - Wikipedia](https://en.wikipedia.org/wiki/Coastline_paradox)
 		* The coastline paradox is the counterintuitive observation that the coastline of a landmass does not have a well-defined length. This results from the fractal curve-like properties of coastlines, i.e., the fact that a coastline typically has a fractal dimension (which in fact makes the notion of length inapplicable).
 	* [Information Security Mental Models - Chris Sanders](https://chrissanders.org/2019/05/infosec-mental-models/)
+	* [The Mechanics of Modern Thievery (Part 1 of 3) - Greg Johnson(2020)](https://gitlab.com/gitlab-com/gl-security/gl-redteam/red-team-tech-notes/-/blob/master/mechanics-of-modern-thievery/part-1.md)
+		* Specifically the metaphor the preface provides. If you look at credentials stored within repositories as similar to keys dropped on the street, it becomes easier to understand how and why passwords & credentials are left in code, beyond 'Developers are lazy/stupid'.
 * **Comedy**<a name="comedy"></a>
 	* [The Website is Down #1: Sales Guy vs. Web Dude](https://www.youtube.com/watch?v=uRGljemfwUE)
 	* [BOFH Index](https://bearbin.net/bofh)
@@ -393,6 +413,8 @@
 * **Research**<a name="research"></a>
 	* [Research Debt - Chris Olah, Shan Carter](https://distill.pub/2017/research-debt/)
 	* [Ten Simple Rules for Doing Your Best Research, According to Hamming](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2041981/)
+* **Request for Service/Product**
+	* [Information Security Assessment RFP Cheat Sheet - Lenny Zeltser](https://zeltser.com/security-assessment-rfp-cheat-sheet/)
 * **Risk**<a name="risk"></a>
 	* **FAIR**
 		* [Factor analysis of information risk - Wikipedia](https://en.wikipedia.org/wiki/Factor_analysis_of_information_risk)
@@ -411,6 +433,8 @@
 	* [WALKOFF](https://github.com/nsacyber/WALKOFF)
 		* WALKOFF is a flexible, easy to use, automation framework allowing users to integrate their capabilities and devices to cut through the repetitive, tedious tasks slowing them down,
 	* [StackStorm](https://stackstorm.com/)
+	* [Robot Framework](https://github.com/robotframework/robotframework)
+		* Robot Framework is a generic open source automation framework for acceptance testing, acceptance test driven development (ATDD), and robotic process automation (RPA). It has simple plain text syntax and it can be extended easily with libraries implemented using Python or Java. Robot Framework is operating system and application independent. The core framework is implemented using Python, supports both Python 2 and Python 3, and runs also on Jython (JVM), IronPython (.NET) and PyPy. The framework has a rich ecosystem around it consisting of various generic libraries and tools that are developed as separate projects. For more information about Robot Framework and the ecosystem, see http://robotframework.org.
 * **Vendor Security**<a name="vensec"></a>
 	* [UC Berkely Vendor Security Assessment Program](https://security.berkeley.edu/services/vendor-security-assessment-program/details-vendor-security-assessment-program)
 	* [VSAQ: Vendor Security Assessment Questionnaire](https://github.com/google/vsaq)

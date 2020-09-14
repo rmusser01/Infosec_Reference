@@ -59,19 +59,20 @@
     - [NAT](#nat)
     - [Printers](#printers)
     - [Proxies](#proxy)
+    - [PXE](#pxe)
     - [Redis](#redis)
     - [Preboot Execution Environment (PXE)](#pxe)
     - [Software Defined Networking(SDN)](#sdn)
-    - [SQL](#sql)
     - [Switches](#switches)
     - [VLANs](#vlan)
-    - [Web](#web)
     - [WebDAV](#webdav)
     - [Vendor Specific Stuff](#vendor)
 - [Miscellaneous Stuff](#misc)
     - [Talks/Videos](#videos)
     - [Other](#other)
     - [MISC](#misc2)
+
+
 
 
 * Need to Add 
@@ -93,47 +94,6 @@
     * WebDAV
 
 
-
-------------------------------------------------------------------------------------------------------------------------------------------------
-### <a name="general"></a>General
-* **101**
-    * [Fundamentals That Time Forgot - Jup1t3r  - BSides SLC](https://www.youtube.com/watch?v=PQvUWImljOw)
-    * [TCPDump Primer](http://danielmiessler.com/study/tcpdump/)
-    * [IANA Complete list of assigned ports](http://www.vulnerabilityassessment.co.uk/port-numbers.txt)
-    * [RFC 2827 -  Network Ingress Filtering: Defeating Denial of Service Attacks which employ IP Source Address Spoofing](https://tools.ietf.org/html/rfc2827)
-    * [RFC 5246 - The Transport Layer Security (TLS) Protocol Version 1.2](https://tools.ietf.org/html/rfc5246)
-    * [TCPDump Command Examples](http://www.thegeekstuff.com/2010/08/tcpdump-command-examples/)
-* **Educational/History**
-    * [Ethernet Briefings in April 1978 by Bob Metcalfe](https://www.youtube.com/watch?v=Fj7r3vYAjGY)
-* **General/Articles/Writeups**
-    * [Examples](http://www.hackwhackandsmack.com/?p=422)
-    * [The Eavesdropper’s Dillemma](http://www.crypto.com/papers/internet-tap.pdf)
-    * [Strange Attractors and TCP/IP Sequence Number Analysis  - Michal Zalewski](http://lcamtuf.coredump.cx/oldtcp/tcpseq.html)
-    * [Signaling vulnerabilities in wiretapping systems](http://www.crypto.com/papers/wiretap.pdf)
-* **Tools**
-    * [pynessus](https://github.com/rmusser01/pynessus)
-        * Python Parser for Nessus Output
-    * [which-cloud](https://github.com/bcoe/which-cloud)
-        * Given an ip address, return which cloud provider it belongs to (AWS, GCE, etc)  
-    * [Zarp](https://github.com/hatRiot/zarp)
-        * Zarp is a network attack tool centered around the exploitation of local networks. This does not include system exploitation, but rather abusing networking protocols and stacks to take over, infiltrate, and knock out. Sessions can be managed to quickly poison and sniff multiple systems at once, dumping sensitive information automatically or to the attacker directly. Various sniffers are included to automatically parse usernames and passwords from various protocols, as well as view HTTP traffic and more. DoS attacks are included to knock out various systems and applications. These tools open up the possibility for very complex attack scenarios on live networks quickly, cleanly, and quietly.
-    * [Yersinia](http://www.yersinia.net/)
-        * Yersinia is a network tool designed to take advantage of some weakeness in different network protocols. It pretends to be a solid framework for analyzing and testing the deployed networks and systems. 
-        * [Attacks Supported](http://www.yersinia.net/attacks.htm)
-    * [comcast](https://github.com/tylertreat/comcast)
-        * Simulating shitty network connections so you can build better systems.
-    * [TCPCopy](https://github.com/session-replay-tools/tcpcopy)
-        * TCPCopy is a TCP stream replay tool to support real testing of Internet server applications.
-    * [nessusporter](https://github.com/Tw1sm/nessporter)
-        * Easily download entire folders of Nessus scans in the format(s) of your choosing. This script uses provided credentials to connect to a Nessus server and store a session token, which is then used for all subsquent requests.
-    * [nessaws](https://github.com/TerbiumLabs/nessaws?files=1)
-        * Automate Nessus scans against AWS EC2/RDS endpoints.
-
-
-
-
-
-------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
 ## <a name="protocols"></a>Protocols
@@ -796,8 +756,12 @@
         * **Talks/Presentations/Videos**
             * [Ntlm Relay Reloaded: Attack methods you do not know - Jianing Wang, Junyu Zhou - zeronights18](https://www.youtube.com/watch?v=BrSS_0a0vzQ)
         * **Tools**
+            * [Responder](https://github.com/lgandx/Responder)
+                * Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication.            
             * [Relayer - SMB Relay Attack Script.](https://github.com/Jsitech/relayer)
                 * Relayer is an SMB relay Attack Script that automates all the necessary steps to scan for systems with SMB signing disabled and relaying authentication request to these systems with the objective of gaining a shell. Great when performing Penetration testing.
+            * [Chuckle](https://github.com/nccgroup/chuckle)
+                * An automated SMB Relay Script
     * **Potatoes**
         * [Hot Potato](https://foxglovesecurity.com/2016/01/16/hot-potato/)
             * Hot Potato (aka: Potato) takes advantage of known issues in Windows to gain local privilege escalation in default configurations, namely NTLM relay (specifically HTTP->SMB relay) and NBNS spoofing.
@@ -809,23 +773,25 @@
         * [SmashedPotato](https://github.com/Cn33liz/SmashedPotato)
         * [Ghost Potato - Danyal Drew(2019)](https://shenaniganslabs.io/2019/11/12/Ghost-Potato.html)
 * **Tools**
-    * [Responder](https://github.com/lgandx/Responder)
-        * Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication.
+    * **File Discovery**
+        * [SMB Spider](https://github.com/T-S-A/smbspider)
+            * SMB Spider is a lightweight utility for searching SMB/CIFS/Samba file shares. This project was born during a penetration test, via the need to search hundreds of hosts quickly for sensitive password files. Simply run "python smbspider.py -h" to get started.
+        * [Snaffler](https://github.com/SnaffCon/Snaffler/)
+            * Snaffler is a tool for pentesters to help find delicious candy needles (creds mostly, but it's flexible) in a bunch of horrible boring haystacks (a massive Windows/AD environment).
+        * [sharesniffer](https://github.com/shirosaidev/sharesniffer)
+            * sharesniffer is a network analysis tool for finding open and closed file shares on your local network. It includes auto-network discovery and auto-mounting of any open cifs and nfs shares.
+        * [SMBCrunch](https://github.com/Raikia/SMBCrunch)
+            * 3 tools that work together to simplify reconaissance of Windows File Shares 
+        * [winsharecrawler](https://github.com/peacand/winsharecrawler)
+            * Python crawler for remote Windows shares
     * [Gladius](https://github.com/praetorian-inc/gladius)
         * Gladius provides an automated method for cracking credentials from various sources during an engagement. We currently crack hashes from Responder, secretsdump.py, and smart_hashdump.
-    * [Chuckle](https://github.com/nccgroup/chuckle)
-        * An automated SMB Relay Script
-    * [SMB Spider](https://github.com/T-S-A/smbspider)
-        * SMB Spider is a lightweight utility for searching SMB/CIFS/Samba file shares. This project was born during a penetration test, via the need to search hundreds of hosts quickly for sensitive password files. Simply run "python smbspider.py -h" to get started.
     * [SMBrute](https://github.com/m4ll0k/SMBrute)
         * SMBrute is a program that can be used to bruteforce username and passwords of servers that are using SMB (Samba).
     * [smbmap](https://github.com/ShawnDEvans/smbmap)
         * SMBMap allows users to enumerate samba share drives across an entire domain. List share drives, drive permissions, share contents, upload/download functionality, file name auto-download pattern matching, and even execute remote commands. This tool was designed with pen testing in mind, and is intended to simplify searching for potentially sensitive data across large networks.
     * [nullinux](https://github.com/m8r0wn/nullinux)
         * nullinux is an internal penetration testing tool for Linux that can be used to enumerate OS information, domain information, shares, directories, and users through SMB. If no username and password are provided, nullinux will attempt to connect to the target using an SMB null session. Unlike many of the enumeration tools out there already, nullinux can enumerate multiple targets at once and when finished, creates a users.txt file of all users found on the host(s). This file is formatted for direct implementation and further exploitation.This script uses Python 2.7 and the smbclient package, run the setup.sh script to get started.
-        * [smbspider](https://github.com/T-S-A/smbspider)
-            * SMB Spider is a lightweight python utility for searching SMB/CIFS/Samba file shares. While performing a penetration test, the need to search hundreds of hosts for sensitive password files resulted in this project.
-
 
 
 
@@ -1602,6 +1568,9 @@
             * [nse - aerissecure](https://github.com/aerissecure/nse)
             * [Nmap Elasticsearch NSE - theMiddleBlue](https://github.com/theMiddleBlue/nmap-elasticsearch-nse)
                 * Nmap NSE script for enumerate indices, plugins and cluster nodes on an elasticsearch target
+            * [hassh-utils](https://github.com/0x4D31/hassh-utils)
+                * Nmap NSE Script and Docker image for HASSH - the SSH client/server fingerprinting method
+                * [Relevant Blogpost](https://dmfrsecurity.com/2019/10/29/nmap-hassh-3/)
         * **Manipulating the Scan Data**
             * [nmapdb - Parse nmap's XML output files and insert them into an SQLite database](https://census.gr/research/sw/nmapdb/)
                 * nmapdb parses nmap's XML output files and inserts them into an SQLite database.
@@ -1614,10 +1583,9 @@
                 * Gnmap-Parser takes multiple Nmap scans exported in greppable (.gnmap) format and parses them into various types of plain-text files for easy analysis.
         * **Storing/Parsing the scan data**
             * [Offensive ELK: Elasticsearch for Offensive Security - Marco Lancini](https://www.marcolancini.it/2018/blog-elk-for-nmap/)
-            * [Using Nmap + Logstash to Gain Insight Into Your Network - Andrew Cholakian](https://www.elastic.co/blog/using-nmap-logstash-to-gain-insight-into-your-network)
+            * [Using Nmap + Logstash to Gain Insight Into Your Network - Andrew Cholakian(2016)](https://www.elastic.co/blog/using-nmap-logstash-to-gain-insight-into-your-network)
                 * In this post we'll look at a brand new logstash codec plugin: logstash-codec-nmap. This plugin lets you directly import Nmap scan results into Elasticsearch where you can then visualize them with Kibana. Nmap is somewhat hard to describe because its a sort of swiss army knife of network tools. It crams many different features into a single small executable. I've put together a small list of things you can do with Nmap below, though it is by no means complete!
             * [How to Index NMAP Port Scan Results into Elasticsearch - Adam Vanderbush](https://qbox.io/blog/how-to-index-nmap-port-scan-results-into-elasticsearch)
-            * [Using Nmap + Logstash to Gain Insight Into Your Network - Andrew Cholakian(2016)](https://www.elastic.co/blog/using-nmap-logstash-to-gain-insight-into-your-network)
         * **Helpful Tools**
             * [pentest-machine](https://github.com/DanMcInerney/pentest-machine)
                 * Automates some pentest jobs via nmap xml file
@@ -1997,7 +1965,7 @@
 
 
 ------------
-#### <a name=f"></a>VLANs
+#### <a name="vlan"></a>VLANs
 * **101**
     * [Virtual LAN](https://en.wikipedia.org/wiki/Virtual_LAN)
     * [Virtual Local Area Networks](https://www.cse.wustl.edu/~jain/cis788-97/ftp/virtual_lans/index.html)
@@ -2006,3 +1974,9 @@
         * Cloud service providers and data centers offer their customers the ability to deploy virtual machines within multi-tenant environments. These virtual machines are typically connected to the physical network via a virtualized network configuration. This could be as simple as a bridged interface to each virtual machine or as complicated as a virtual switch providing more robust networking features such as VLANs, QoS, and monitoring. In this talk I will demonstrate the effects of VLAN hopping, ARP poisoning and Man-in-the-Middle attacks across every major hypervisor platform, including results of attacks originating from the physically connected network as well as within the virtual networks themselves. Each attack category that is discussed will be accompanied by a detailed proof of concept demonstration of the attack.
     * [Frogger2 - VLAN Hopping](https://github.com/commonexploits/vlan-hopping)
         * Simple VLAN enumeration and hopping script. Developed by Daniel Compton
+
+
+
+
+
+

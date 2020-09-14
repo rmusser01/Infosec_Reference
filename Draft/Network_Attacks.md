@@ -94,6 +94,46 @@
     * WebDAV
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------
+### <a name="general"></a>General
+* **101**
+    * [Fundamentals That Time Forgot - Jup1t3r  - BSides SLC](https://www.youtube.com/watch?v=PQvUWImljOw)
+    * [TCPDump Primer](http://danielmiessler.com/study/tcpdump/)
+    * [IANA Complete list of assigned ports](http://www.vulnerabilityassessment.co.uk/port-numbers.txt)
+    * [RFC 2827 -  Network Ingress Filtering: Defeating Denial of Service Attacks which employ IP Source Address Spoofing](https://tools.ietf.org/html/rfc2827)
+    * [RFC 5246 - The Transport Layer Security (TLS) Protocol Version 1.2](https://tools.ietf.org/html/rfc5246)
+    * [TCPDump Command Examples](http://www.thegeekstuff.com/2010/08/tcpdump-command-examples/)
+* **Educational/History**
+    * [Ethernet Briefings in April 1978 by Bob Metcalfe](https://www.youtube.com/watch?v=Fj7r3vYAjGY)
+* **General/Articles/Writeups**
+    * [Examples](http://www.hackwhackandsmack.com/?p=422)
+    * [The Eavesdropper’s Dillemma](http://www.crypto.com/papers/internet-tap.pdf)
+    * [Strange Attractors and TCP/IP Sequence Number Analysis  - Michal Zalewski](http://lcamtuf.coredump.cx/oldtcp/tcpseq.html)
+    * [Signaling vulnerabilities in wiretapping systems](http://www.crypto.com/papers/wiretap.pdf)
+* **Tools**
+    * [pynessus](https://github.com/rmusser01/pynessus)
+        * Python Parser for Nessus Output
+    * [which-cloud](https://github.com/bcoe/which-cloud)
+        * Given an ip address, return which cloud provider it belongs to (AWS, GCE, etc)  
+    * [Zarp](https://github.com/hatRiot/zarp)
+        * Zarp is a network attack tool centered around the exploitation of local networks. This does not include system exploitation, but rather abusing networking protocols and stacks to take over, infiltrate, and knock out. Sessions can be managed to quickly poison and sniff multiple systems at once, dumping sensitive information automatically or to the attacker directly. Various sniffers are included to automatically parse usernames and passwords from various protocols, as well as view HTTP traffic and more. DoS attacks are included to knock out various systems and applications. These tools open up the possibility for very complex attack scenarios on live networks quickly, cleanly, and quietly.
+    * [Yersinia](http://www.yersinia.net/)
+        * Yersinia is a network tool designed to take advantage of some weakeness in different network protocols. It pretends to be a solid framework for analyzing and testing the deployed networks and systems. 
+        * [Attacks Supported](http://www.yersinia.net/attacks.htm)
+    * [comcast](https://github.com/tylertreat/comcast)
+        * Simulating shitty network connections so you can build better systems.
+    * [TCPCopy](https://github.com/session-replay-tools/tcpcopy)
+        * TCPCopy is a TCP stream replay tool to support real testing of Internet server applications.
+    * [nessusporter](https://github.com/Tw1sm/nessporter)
+        * Easily download entire folders of Nessus scans in the format(s) of your choosing. This script uses provided credentials to connect to a Nessus server and store a session token, which is then used for all subsquent requests.
+    * [nessaws](https://github.com/TerbiumLabs/nessaws?files=1)
+        * Automate Nessus scans against AWS EC2/RDS endpoints.
+
+
+
+
+
+
 
 ------------------------------------------------------------------------------------------------------------------------------------
 ## <a name="protocols"></a>Protocols

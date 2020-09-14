@@ -59,19 +59,20 @@
     - [NAT](#nat)
     - [Printers](#printers)
     - [Proxies](#proxy)
+    - [PXE](#pxe)
     - [Redis](#redis)
     - [Preboot Execution Environment (PXE)](#pxe)
     - [Software Defined Networking(SDN)](#sdn)
-    - [SQL](#sql)
     - [Switches](#switches)
     - [VLANs](#vlan)
-    - [Web](#web)
     - [WebDAV](#webdav)
     - [Vendor Specific Stuff](#vendor)
 - [Miscellaneous Stuff](#misc)
     - [Talks/Videos](#videos)
     - [Other](#other)
     - [MISC](#misc2)
+
+
 
 
 * Need to Add 
@@ -91,7 +92,6 @@
     * r* protocols
     * STUN
     * WebDAV
-
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
@@ -133,7 +133,7 @@
 
 
 
-------------------------------------------------------------------------------------------------------------------------------------
+
 
 ------------------------------------------------------------------------------------------------------------------------------------
 ## <a name="protocols"></a>Protocols
@@ -796,8 +796,12 @@
         * **Talks/Presentations/Videos**
             * [Ntlm Relay Reloaded: Attack methods you do not know - Jianing Wang, Junyu Zhou - zeronights18](https://www.youtube.com/watch?v=BrSS_0a0vzQ)
         * **Tools**
+            * [Responder](https://github.com/lgandx/Responder)
+                * Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication.            
             * [Relayer - SMB Relay Attack Script.](https://github.com/Jsitech/relayer)
                 * Relayer is an SMB relay Attack Script that automates all the necessary steps to scan for systems with SMB signing disabled and relaying authentication request to these systems with the objective of gaining a shell. Great when performing Penetration testing.
+            * [Chuckle](https://github.com/nccgroup/chuckle)
+                * An automated SMB Relay Script
     * **Potatoes**
         * [Hot Potato](https://foxglovesecurity.com/2016/01/16/hot-potato/)
             * Hot Potato (aka: Potato) takes advantage of known issues in Windows to gain local privilege escalation in default configurations, namely NTLM relay (specifically HTTP->SMB relay) and NBNS spoofing.
@@ -809,23 +813,25 @@
         * [SmashedPotato](https://github.com/Cn33liz/SmashedPotato)
         * [Ghost Potato - Danyal Drew(2019)](https://shenaniganslabs.io/2019/11/12/Ghost-Potato.html)
 * **Tools**
-    * [Responder](https://github.com/lgandx/Responder)
-        * Responder is a LLMNR, NBT-NS and MDNS poisoner, with built-in HTTP/SMB/MSSQL/FTP/LDAP rogue authentication server supporting NTLMv1/NTLMv2/LMv2, Extended Security NTLMSSP and Basic HTTP authentication.
+    * **File Discovery**
+        * [SMB Spider](https://github.com/T-S-A/smbspider)
+            * SMB Spider is a lightweight utility for searching SMB/CIFS/Samba file shares. This project was born during a penetration test, via the need to search hundreds of hosts quickly for sensitive password files. Simply run "python smbspider.py -h" to get started.
+        * [Snaffler](https://github.com/SnaffCon/Snaffler/)
+            * Snaffler is a tool for pentesters to help find delicious candy needles (creds mostly, but it's flexible) in a bunch of horrible boring haystacks (a massive Windows/AD environment).
+        * [sharesniffer](https://github.com/shirosaidev/sharesniffer)
+            * sharesniffer is a network analysis tool for finding open and closed file shares on your local network. It includes auto-network discovery and auto-mounting of any open cifs and nfs shares.
+        * [SMBCrunch](https://github.com/Raikia/SMBCrunch)
+            * 3 tools that work together to simplify reconaissance of Windows File Shares 
+        * [winsharecrawler](https://github.com/peacand/winsharecrawler)
+            * Python crawler for remote Windows shares
     * [Gladius](https://github.com/praetorian-inc/gladius)
         * Gladius provides an automated method for cracking credentials from various sources during an engagement. We currently crack hashes from Responder, secretsdump.py, and smart_hashdump.
-    * [Chuckle](https://github.com/nccgroup/chuckle)
-        * An automated SMB Relay Script
-    * [SMB Spider](https://github.com/T-S-A/smbspider)
-        * SMB Spider is a lightweight utility for searching SMB/CIFS/Samba file shares. This project was born during a penetration test, via the need to search hundreds of hosts quickly for sensitive password files. Simply run "python smbspider.py -h" to get started.
     * [SMBrute](https://github.com/m4ll0k/SMBrute)
         * SMBrute is a program that can be used to bruteforce username and passwords of servers that are using SMB (Samba).
     * [smbmap](https://github.com/ShawnDEvans/smbmap)
         * SMBMap allows users to enumerate samba share drives across an entire domain. List share drives, drive permissions, share contents, upload/download functionality, file name auto-download pattern matching, and even execute remote commands. This tool was designed with pen testing in mind, and is intended to simplify searching for potentially sensitive data across large networks.
     * [nullinux](https://github.com/m8r0wn/nullinux)
         * nullinux is an internal penetration testing tool for Linux that can be used to enumerate OS information, domain information, shares, directories, and users through SMB. If no username and password are provided, nullinux will attempt to connect to the target using an SMB null session. Unlike many of the enumeration tools out there already, nullinux can enumerate multiple targets at once and when finished, creates a users.txt file of all users found on the host(s). This file is formatted for direct implementation and further exploitation.This script uses Python 2.7 and the smbclient package, run the setup.sh script to get started.
-        * [smbspider](https://github.com/T-S-A/smbspider)
-            * SMB Spider is a lightweight python utility for searching SMB/CIFS/Samba file shares. While performing a penetration test, the need to search hundreds of hosts for sensitive password files resulted in this project.
-
 
 
 
@@ -1602,6 +1608,9 @@
             * [nse - aerissecure](https://github.com/aerissecure/nse)
             * [Nmap Elasticsearch NSE - theMiddleBlue](https://github.com/theMiddleBlue/nmap-elasticsearch-nse)
                 * Nmap NSE script for enumerate indices, plugins and cluster nodes on an elasticsearch target
+            * [hassh-utils](https://github.com/0x4D31/hassh-utils)
+                * Nmap NSE Script and Docker image for HASSH - the SSH client/server fingerprinting method
+                * [Relevant Blogpost](https://dmfrsecurity.com/2019/10/29/nmap-hassh-3/)
         * **Manipulating the Scan Data**
             * [nmapdb - Parse nmap's XML output files and insert them into an SQLite database](https://census.gr/research/sw/nmapdb/)
                 * nmapdb parses nmap's XML output files and inserts them into an SQLite database.
@@ -1614,10 +1623,9 @@
                 * Gnmap-Parser takes multiple Nmap scans exported in greppable (.gnmap) format and parses them into various types of plain-text files for easy analysis.
         * **Storing/Parsing the scan data**
             * [Offensive ELK: Elasticsearch for Offensive Security - Marco Lancini](https://www.marcolancini.it/2018/blog-elk-for-nmap/)
-            * [Using Nmap + Logstash to Gain Insight Into Your Network - Andrew Cholakian](https://www.elastic.co/blog/using-nmap-logstash-to-gain-insight-into-your-network)
+            * [Using Nmap + Logstash to Gain Insight Into Your Network - Andrew Cholakian(2016)](https://www.elastic.co/blog/using-nmap-logstash-to-gain-insight-into-your-network)
                 * In this post we'll look at a brand new logstash codec plugin: logstash-codec-nmap. This plugin lets you directly import Nmap scan results into Elasticsearch where you can then visualize them with Kibana. Nmap is somewhat hard to describe because its a sort of swiss army knife of network tools. It crams many different features into a single small executable. I've put together a small list of things you can do with Nmap below, though it is by no means complete!
             * [How to Index NMAP Port Scan Results into Elasticsearch - Adam Vanderbush](https://qbox.io/blog/how-to-index-nmap-port-scan-results-into-elasticsearch)
-            * [Using Nmap + Logstash to Gain Insight Into Your Network - Andrew Cholakian(2016)](https://www.elastic.co/blog/using-nmap-logstash-to-gain-insight-into-your-network)
         * **Helpful Tools**
             * [pentest-machine](https://github.com/DanMcInerney/pentest-machine)
                 * Automates some pentest jobs via nmap xml file
@@ -1997,7 +2005,7 @@
 
 
 ------------
-#### <a name=f"></a>VLANs
+#### <a name="vlan"></a>VLANs
 * **101**
     * [Virtual LAN](https://en.wikipedia.org/wiki/Virtual_LAN)
     * [Virtual Local Area Networks](https://www.cse.wustl.edu/~jain/cis788-97/ftp/virtual_lans/index.html)

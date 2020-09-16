@@ -91,10 +91,13 @@
 * **Careers in Information Security**<a name="infosec-careers"></a>
 	* **101/General**
 		* [NICE Cybersecurity Workforce Framework - NICCS.us-cert.gov](https://niccs.us-cert.gov/workforce-development/cyber-security-workforce-framework)
+		* [Cyber Career Pathways Tool - National Initiative For CyberSecurity Careers and Studies](https://niccs.us-cert.gov/workforce-development/cyber-career-pathways)
+			* This tool presents a new and interactive way to explore work roles within the NICE Cybersecurity Workforce Framework. It depicts the Cyber Workforce according to five distinct, yet complementary, skill communities. It also highlights core attributes among each of the 52 work roles and offers actionable insights for employers, professionals, and those considering a career in Cyber.
 		* [Q: Why Do Keynote Speakers Keep Suggesting That Improving Security Is Possible? A: Because Keynote Speakers Make Bad Life Decisions and Are Poor Role Models](https://www.usenix.org/conference/usenixsecurity18/presentation/mickens)
 			* Some people enter the technology industry to build newer, more exciting kinds of technology as quickly as possible. My keynote will savage these people and will burn important professional bridges, likely forcing me to join a monastery or another penance-focused organization. In my keynote, I will explain why the proliferation of ubiquitous technology is good in the same sense that ubiquitous Venus weather would be good, i.e., not good at all. Using case studies involving machine learning and other hastily-executed figments of Silicon Valley’s imagination, I will explain why computer security (and larger notions of ethical computing) are difficult to achieve if developers insist on literally not questioning anything that they do since even brief introspection would reduce the frequency of git commits. At some point, my microphone will be cut off, possibly by hotel management, but possibly by myself, because microphones are technology and we need to reclaim the stark purity that emerges from amplifying our voices using rams’ horns and sheets of papyrus rolled into cone shapes. I will explain why papyrus cones are not vulnerable to buffer overflow attacks, and then I will conclude by observing that my new start-up papyr.us is looking for talented full-stack developers who are comfortable executing computational tasks on an abacus or several nearby sticks.
 		* [How to Start in InfoSec - Mubix](https://gist.github.com/mubix/5737a066c8845d25721ec4bf3139fd31)
 		* ["Firemen vs Safety Matches" - Amélie Koran(ShmooCon XV 2019)](https://www.youtube.com/watch?v=_pej1oHN-pE)
+		* [So, you want to work in security? - Parisa Tabriz(2016)](https://www.freecodecamp.org/news/so-you-want-to-work-in-security-bc6c10157d23/)
 	* **Educational/Informational**
 		* [Navigating Career Choices in InfoSec - Fernando Montenegro - BSides Detroit2017](https://www.youtube.com/watch?v=yM2xCjrQSY4)
 			* Making career choices can be intimidating and stressful. Perhaps this presentation can help. The tidal forces affecting technology impact our careers as well. If we're not actively managing them, we're leaving decisions to chance (or to others), and may not like the outcomes. This presentation describes a framework I've used over the past few years to evaluate both ongoing job satisfaction as well as new opportunities as they appear. I'm happy with the outcomes I've obtained with it, and have used this same framework when providing advice to others, and it has been well received. Hopefully it can help others as well.
@@ -105,11 +108,19 @@
 		* [Getting Hired: A Few Tips - Mubix](https://malicious.link/post/2018/getting-hired-a-few-tips/)
 		* [Day-1 Skills That Cybersecurity Hiring Managers Are Looking For - Daniel Messler](https://danielmiessler.com/blog/day-1-skills-required-to-land-an-entry-level-cybersecurity-job/)
 		* [What is the difference amongst a TPM, PM, and EM in a technology company? How do they typically work together? - Quora](https://www.quora.com/What-is-the-difference-amongst-a-TPM-PM-and-EM-in-a-technology-company-How-do-they-typically-work-together)
+		* [Hack Apart Your Career: How to Fund Doing What You Love - John Grigg(WWHF2019)](https://www.youtube.com/watch?v=6yaVmcPrhkA)
+			* Our field is full of extremely creative people who have a lot to offer the industry. But often we lose focus because we are working for a company that has their own goals and competing priorities. This leads to long hours of work, a declining quality of life, and various other troubles. In this talk I focus on the tidal wave of DOD-related opportunities that exist to fund novel research and cutting edge technology, all while allowing autonomy of the individual. I've personally used these sources to transition to running my own company and have helped a lot of folks in the industry do the same. I'll discuss why people should consider this as a career path, where to find these resources, and walk through exactly how to apply.
+		* [From Barista to Cyber Security Pro - Alyssa Miller(DEF CON Safe Mode Career Hacking Village)](https://www.youtube.com/watch?v=dGpHdExqu0k)
+		* [How to Social Engineer your way into your dream job - Jason Blanchard(Derbycon2016)](https://www.youtube.com/watch?v=__lvS2pjuSg)
+		* [How to Hunt for Jobs like a Hacker - Jason Blanchard(2020)](https://www.youtube.com/watch?v=Air1c697tjw&feature=youtu.be)
+			* Job hunting? Looking for a career change? Still in college and want to know how to get started now in your career? Have an hour free on a Thursday afternoon? If you answered yes to any of these questions, this might be the BHIS webcast for you.  This webcast is an update to Jason's popular recorded DerbyCon 2016 talk -- How to Social Engineer Your Way Into Your Dream Job. If you don't want to wait, you can watch that now. https://youtu.be/__lvS2pjuSg  What will be covered? * How to combine OSINT, marketing technology, and a hacker/social engineer mindset to job hunting; How to be a hunter of jobs... not just a seeker of jobs; How to write your resume during the job hunt; You might already have your dream job  The hope of this webcast is that you'll look at job hunting differently and apply the skills and techniques in an effective way to help you get the career of your dreams... or at least a job for now that will help you get to the career of your dreams in the next 5 years.
 	* **Interview Preparation**
 		* [How to prepare for an infosec interview - Timothy DeBlock](http://www.timothydeblock.com/eis/135)
 	* **Relevant Standards**
 		* [NICE Cybersecurity Workforce Framework](https://www.nist.gov/itl/applied-cybersecurity/national-initiative-cybersecurity-education-nice/nice-cybersecurity)
 			* The NICE Framework, NIST Special Publication 800-181, establishes taxonomy and common lexicon that is to be used to describe all cybersecurity work and workers irrespective of where or for whom the work is performed. The NICE Framework is intended to be applied in the public, private, and academic sectors. (USA Focused)
+	* **Switching Jobs**
+		* [The Difficult Decision to Switch Jobs - Katie Nickels(2020)](https://medium.com/katies-five-cents/the-difficult-decision-to-switch-jobs-25955949bd5b)
 	* **Application Security**
 		* [Pushing Left, Like a Boss: Table of Contents - SheHacksPurple](https://medium.com/bugbountywriteup/pushing-left-like-a-boss-table-of-contents-42fd063a75bb)
 			* The following is a table of contents for my modern-day book, based off of a talk I wrote in 2016 entitled “Pushing Left, Like a Boss”. It serves as a foundational lesson on what “Application Security” is, and how to get started. I hope you find the series helpful.
@@ -128,6 +139,8 @@
 			* [So You Want To Be a Pentester? - Jack Halon](https://jhalon.github.io/becoming-a-pentester/)
 			* [World's Worst Penetration Test Report - rant](https://it.toolbox.com/blogs/chiefmonkey/the-worlds-worst-penetration-test-report-by-scumbagpentester-012814)
 			* [Make It Count: Progressing through Pentesting - Bálint Varga-Perke -Silent Signal](https://silentsignal.hu/docs/Make_It_Count_-_Progressing_through_Pentesting_Balint_Varga-Perke_Silent_Signal.pdf)
+		* **On-The-Job Experiences**
+			* [A Pentester’s Voyage – The First Few Hours - Jordan Drysdale(2020)](https://www.blackhillsinfosec.com/a-pentesters-voyage-the-first-few-hours/)
 		* **Talks & Presentations**
 			* [So you think you want to be a penetration tester - Defcon24](https://www.youtube.com/watch?v=be7bvZkgFmY)
 				* So, you think you want to be a penetration tester, or you already are and don't understand what the difference between you and all the other "so called" penetration testers out there. Think you know the difference between a Red Team, Penetration Test and a Vulnerability assessment? Know how to write a report your clients will actually read and understand? Can you leverage the strengths of your team mates to get through tough roadblocks, migrate, pivot, pwn and pillage? No? well this talk is probably for you then! We will go through the fascinating, intense and often crazily boring on-site assessment process. Talk about planning and performing Red Teams, how they are different, and why they can be super effective and have some fun along the way. I'll tell you stories that will melt your face, brain and everything in between. Give you the answers to all of your questions you never knew you had, and probably make you question your life choices. By the end of this session you will be ready to take your next steps into the job you've always wanted, or know deep inside that you should probably look for something else. There will be no judgment or shame, only information, laughter and fun.
@@ -136,19 +149,27 @@
 			* [Certification? College?: How do you get into Cybersec really? - Doug White(WWHF2018)](https://www.youtube.com/watch?v=eljymhtIsDs)
 				* Doug White talks about College options, Certifications, and what you need to do to break into the Cybersec field. How to start and move your career if you want to make a living, legally.
 			* [Hold my Red Bull Undergraduate Red Teaming Jonathan Gaines](https://www.youtube.com/watch?v=9vgpqRzuvLk)
+			* [What to Expect in an Ethical Hacking Interview - TheCyberMentor](https://www.youtube.com/watch?v=nrewE1mLlaU)
 	* **Reverse Engineering**
 		* [Reversing w/o reversing – how to become Alex in practice - hexacorn](http://www.hexacorn.com/blog/2019/04/11/reversing-w-o-reversing-how-to-become-alex-in-practice/)
+		* [How to start RE/malware analysis? - hasherezade(2018)](https://hshrzd.wordpress.com/how-to-start/)
 	* **Security Analyst**
 		* [Security Analyst Workshop - Florian Roth(2019/3)](https://www.slideshare.net/FlorianRoth2/security-analyst-workshop-20190314)
 	* **Security Engineer**
 		* [So you want to be a security engineer? - Niru Ragupathy](https://medium.com/@niruragu/so-you-want-to-be-a-security-engineer-d8775976afb7)
 		* [How to Secure Anything - Veeral Patel](https://github.com/veeral-patel/how-to-secure-anything)
 			* How to systematically secure anything: a repository about security engineering
+	* **SRE**
+		* [Google SRE Book - HTML version](https://landing.google.com/sre/sre-book/chapters/part1/)
+		* [Do you have an SRE team yet? How to start and assess your journey - Google](https://cloud.google.com/blog/products/devops-sre/how-to-start-and-assess-your-sre-journey)
+	* **(Technical) Product & Project Managers**
+		* [Technical Program Managers vs Product Managers vs Product Managers – Technical vs Engineering Managers - Mario Gerard(2018)](https://www.mariogerard.com/technical-program-managers-vs-product-managers-vs-product-managers-technical-vs-engineering-managers/)
 * **CEOs**
 	* [What Only the CEO Can Do - A. G. Lafley](https://hbr.org/2009/05/what-only-the-ceo-can-do)
 	* [How CEOs Manage Time - Michael E. Porter, Nitin Nohria](https://hbr.org/2018/07/the-leaders-calendar)
 	* [The CEO’s most important operational responsibility - Gokul Rajaram](https://medium.com/@gokulrajaram/designing-a-communication-architecture-the-ceos-most-important-operational-responsibility-28937bd291e8)
 	* [Control fraud - Wikipedia](https://en.wikipedia.org/wiki/Control_fraud)
+	* [How CEOs think - Robert Graham(2020)](https://blog.erratasec.com/2020/07/how-ceos-think.html)
 * **Choosing a Job/Looking for Work**<a name="looking"></a>
 	* [How to Get Any Job You Want (even if you’re unqualified) - Raghav Haran](https://www.huffpost.com/entry/how-to-get-any-job-you-want-even-if-youre-unqualified_b_5850fb7ee4b0b662c2fddeea)
 	* [80+ Back Doors Into Cyber Careers - keirstenbrager](https://keirstenbrager.tech/80-back-doors-into-cyber-careers/)
@@ -167,26 +188,39 @@
 	* [SBAR - Wikipedia](https://en.wikipedia.org/wiki/SBAR)
 		* SBAR is an acronym for Situation, Background, Assessment, Recommendation; a technique that can be used to facilitate prompt and appropriate communication.
 * **Company Culture**<a name="culture"></a>
-	* [American Cultural Assumption - wiki.c2.com](http://wiki.c2.com/?AmericanCulturalAssumption)
-	* [Containers Will Not Fix Your Broken Culture (and Other Hard Truths) - Complex socio-technical systems are hard; film at 11. - Bridget Kromhout](https://queue.acm.org/detail.cfm?id=3185224)
-	* [The Joel Test: 12 Steps to Better Code - Joel Spolsky](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
-	* [How to Discourage Secretive Behavior From Members of Your Family/Team - kletische.com](https://kletische.com/discourage-secretive-behavior/)
-	* [This is not fine - Surviving Cynicism and Building Happy Security Teams - Chris Deibler(BlueHat v18)](https://www.youtube.com/watch?v=YUwBja45fBQ)
-		* [Slides](https://www.slideshare.net/MSbluehat/bhv18-keynote-this-is-not-fine-surviving-cynicism-and-building-happy-security-teams)
+	* **101**
+		* [The Holloway Syllabus on Company Culture - Haley S. Anderson(2019)](https://www.holloway.com/s/syllabus-company-culture)
+		* [American Cultural Assumption - wiki.c2.com](http://wiki.c2.com/?AmericanCulturalAssumption)
+	* **Articles/Blogposts/Writeups**
+		* [The Joel Test: 12 Steps to Better Code - Joel Spolsky](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
+		* [Containers Will Not Fix Your Broken Culture (and Other Hard Truths) - Complex socio-technical systems are hard; film at 11. - Bridget Kromhout](https://queue.acm.org/detail.cfm?id=3185224)
+		* [How to Discourage Secretive Behavior From Members of Your Family/Team - kletische.com](https://kletische.com/discourage-secretive-behavior/)
+		* [Developers don't need ping-pong tables - Koh Samui(2020)](https://sizovs.net/2020/03/26/developers-dont-need-ping-pong-tables/)
+		* [Operational Thoughts in Trying Times - Carlos Perez(2020)](https://www.darkoperator.com/blog/2020/5/6/operational-thoughts-in-trying-times)
+		* [How to handle Brent in The Phoenix Project - Allen Geer](allengeer.com/how-to-handle-brent-in-the-phoenix-project/)
+		* [Geeks, MOPs, and sociopaths in subculture evolution - meaningness.com](https://meaningness.com/geeks-mops-sociopaths)
+			* Also see [Entryism - Wikipedia](https://en.wikipedia.org/wiki/Entryism)
+		* [Why Netflix CEO Reed Hastings once fired his co-founder via a PowerPoint - Zack Guzman](https://finance.yahoo.com/news/why-netflix-ceo-reed-hastings-once-fired-his-cofounder-with-a-power-point-125537309.html)
+	* **Talks/Presentations/Videos**
+		* [This is not fine - Surviving Cynicism and Building Happy Security Teams - Chris Deibler(BlueHat v18)](https://www.youtube.com/watch?v=YUwBja45fBQ)
+			* [Slides](https://www.slideshare.net/MSbluehat/bhv18-keynote-this-is-not-fine-surviving-cynicism-and-building-happy-security-teams)
+		* [Engineering Empathy: Adapting Software Engineering Principles and Process to Security - Craig Ingram, Camille Mackinnon](https://www.blackhat.com/us-20/briefings/schedule/index.html#engineering-empathy-adapting-software-engineering-principles-and-process-to-security-19659)
+			* [Slides](http://i.blackhat.com/USA-20/Wednesday/us-20-Mackinnon-Engineering-Empathy-Adapting-Software-Engineering-Principles-And-Process-To-Security-2.pdf)
 * **Compensation/Equity**<a name="comp"></a>
-	* [The Holloway Guide to Equity Compensation](https://www.holloway.com/g/equity-compensation)
-		* Stock options, RSUs, job offers, and taxes—a detailed reference, including hundreds of resources, explained from the ground up and made to be improved over time.
-	* [Salary strategies everyone in tech already knows — but you don't - Candor](https://teamcandor.com/salary/guide/)
+	* See 'Salary Negotiations' under interviewing
 	* [H1B Salary Database - h1bdata.info](https://h1bdata.info/index.php)
 	* [Compensation in 2019 New Grad Tech Offers - Jon Luca](https://blog.jonlu.ca/posts/tech-offers)
-	* [Ten Rules for Negotiating a Job Offer - Haseeb Qureshi](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
-	* [Negotiating Pattern Language - wiki.c2.com](http://wiki.c2.com/?NegotiatingPatternLanguage)
 	* [How to Calculate and Communicate Your Desired Total Compensation - Danile Miessler](https://danielmiessler.com/blog/how-to-calculate-and-communicate-your-desired-compensation/)
 	* [Equifax Could Be Selling Your Salary History. Here’s How To Protect It(2017 - Joel Winston)](https://www.fastcompany.com/40508924/equifax-could-be-selling-your-salary-history-heres-how-to-protect-it)
-* **Contracting & Consulting**<a name="contract"></a>
+* **Conflict Resolution**
+	* [Why We Can't Have Nice Things: Original Research on Conflict Resolution Styles in Information Security & Risk Management - Rachael Lininger(BSides LV2015)](https://www.irongeek.com/i.php?page=videos/bsideslasvegas2015/pg22-why-we-cant-have-nice-things-original-research-on-conflict-resolution-styles-in-information-security-risk-management-rachael-lininger)
+		* Conflict can be a good thing, really. Without it, we get groupthink and dumbass decisions. But how we approach and resolve conflicts can make the difference between healthy conflict and an unproductive, frustrating fight. Why do we have so much of the latter? My graduate research on the conflict resolution style preferences of information security professionals sheds light on the “culture of no”: why infosec conflict so often results in fights, why we keep burning bridges to make a point, and why people can be unwilling to talk to us. More importantly, this research gives us ideas on how we can resolve conflicts without burning all the bridges" in other words, how we can begin to have nice things. (No hackers or statistics were harmed in this research.)
+* **Consulting & Contracting(Independent Business)**<a name="contract"></a>
 	* **About**
 		* [Not A Full Timer: Slight difference from Pro to cattle - Mohamed Hayibor](https://mohamedhayibor.github.io/blog/post/Not-A-Full-Timer/)
 			* A quick litmus test: if you’re getting paid by the hour. You’re not a full time employee. You’re a contractor.
+		* [Entrepreneurial Adventures - Bryson Bort(DEF CON 28 Safe Mode Career Hacking Village )](https://www.youtube.com/watch?v=xyEEvxJKd5E)
+			* So you’re not crazy, you just want to start your own company. Which kinda takes a level of crazy to pull it off. We’ll talk through what it takes to be an entrepreneur, ideation and the phases of startup, different kinds of companies (service, product, non-profit), how and why (or why not) to raise capital, types of investors, legal requirements, working (or not) with friends, challenges, building total/service addressable market size, back-office administration, employee benefits, equity, pricing, Intellectual Property Rights, economics, and resources for more information and networking. Will include anecdotes and insights of my experiences starting several companies and from multiple founders across the spectrum.
 	* **Billing**
 		* [Why A Billable Hours Model Does not Work in Consulting - firmsconsulting.com](https://www.firmsconsulting.com/quarterly/billable-hours-strategy-consulting/)
 		* [Why You Should Charge Clients More Than You Think You’re Worth - Dorie Clark(HBR)](https://hbr.org/2017/10/why-you-should-charge-clients-more-than-you-think-youre-worth)
@@ -195,27 +229,42 @@
 		* [How To Build Your Own Infosec Company - Mario Heiderich (BSides Lisbon 2018: Keynote)](https://www.youtube.com/watch?reload=9&v=UE5xS7-kFjE)
 		* [How to build your own Infosec Company - Mario Heiderich(nullcon Goa2019)](https://www.youtube.com/watch?v=N2JG7qIlpi0&feature=youtu.be)
 		* [Entrepreneurship for hackers - snyff(Christchurch CON 2019)](https://www.slideshare.net/snyff/entrepreneurship-for-hackers)
+		* [How I Made $100,000 in a Month - TheCyberMentor](https://www.youtube.com/watch?v=dRTqRJsr1ss)
 	* **Consulting**
 		* [Successful Infosec Consulting 101 - Ted Demopoulos](https://www.sans.org/webcasts/successful-infosec-consulting-101-111885)
 		* [Successful Infosec Consulting: Lessons from Three Decades in The Field - Ted Demopoulos](https://www.sans.org/webcasts/successful-infosec-consulting-lessons-decades-field-111890)
 		* [Managing Client Relationships as an Investment Banker, Lawyer or Consultant - Jim Donovan(2015)](https://www.youtube.com/watch?v=z8kqCIxXTEw)
 			* Goldman Sachs managing director and Law School adjunct professor Jim Donovan shares his insights on the skills necessary to manage and cultivate client relationships. Donovan is responsible for advising many of the largest corporate and individual clients of Goldman Sachs. (University of Virginia School of Law, Nov. 6, 2015)
-	* **Engaging**
+	* **Contracts**
+		* [Contract drafting for an engagement - Craig Wright(pen-test mailing list 2006)](https://seclists.org/pen-test/2006/May/246)
+	* **Engaging Clients**
 		* [Pre-Engagement Interactions - Sabtu(2017)](http://pentestdiary.blogspot.com/2017/08/pre-engagement-interactions.html)
 		* [Pre-Engagement Interactions - @shai_saint](https://n00bpentesting.wordpress.com/lessons/ptes-101/pre-engagement-interactions/)
-		* [What to Expect in an Ethical Hacking Interview - TheCyberMentor](https://www.youtube.com/watch?v=nrewE1mLlaU)
-		* [How I Made $100,000 in a Month - TheCyberMentor](https://www.youtube.com/watch?v=dRTqRJsr1ss)
+		* [Why Creators Should Move to Direct Support Monetization - Daniel Miessler(2020)](https://danielmiessler.com/blog/why-infosec-creators-should-move-to-direct-support-monetization/)
 	* **Policies & Regulations**
 		* [The SOC2 Starting Seven - Latacora Blog](https://latacora.micro.blog/2020/03/12/the-soc-starting.html)
 			* Sage advice about SOC2 from Latacora.
+	* **Scoping**
+		* [Hacking Techniques & Intrusion Detection - Ali Al-Shemery](https://web.archive.org/web/20180613152827/http://opensecuritytraining.info/HTID_files/Day04-Scoping.pdf)
+			* Guidance on preparing for an engagement.
+* **Decision Making**
+	* [Square Defangs Difficult Decisions with this System — Here’s How - Gokul Rajaram](https://firstround.com/review/square-defangs-difficult-decisions-with-this-system-heres-how/)
+	* [$how Me the Money! (Getting Business Buy-in) - Carlota Sage(BSidesSLC 2020)](https://www.youtube.com/watch?v=kEWZXUpkn-Y&list=PLqVzh0_XpLfSJ2Okt38acDdO_xu2zKYmK&index=14&t=0s)
+	* [Architecture decision record (ADR)](https://github.com/joelparkerhenderson/architecture_decision_record)
+		*  Architecture decision record (ADR) examples for software planning, IT leadership, and template documentation 
 * **Difficult Conversations**<a name="difficult"></a>
 	* [Our 6 Must Reads for Cutting Through Conflict and Tough Conversations - firstround.com](https://firstround.com/review/our-6-must-reads-for-cutting-through-conflict-and-tough-conversations/)
 	* [7 Tips for Difficult Conversations - Daisy Wademan Dowling(HBR)](https://hbr.org/2009/03/7-tips-for-difficult-conversat)
 	* [How to Have Difficult Conversations When You Don’t Like Conflict - Joel Garfinkle(HBR)](https://hbr.org/2017/05/how-to-have-difficult-conversations-when-you-dont-like-conflict)
 	* [Civilized Discourse… But How? - Jeff Atwood](https://www.heavybit.com/library/video/civilized-discourse-but-how/)
-	* [My Twitter-Discussion-Deescalation Policy - Halvar Flake(2020)](https://addxorrol.blogspot.com/2020/08/my-twitter-discussion-deescalation.html)
 	* **Books**
 		* [Difficult Conversations How to Discuss What Matters Most By Douglas Stone, Bruce Patton and Sheila Heen](https://www.penguinrandomhouse.com/books/331191/difficult-conversations-by-douglas-stone-bruce-patton-and-sheila-heen/9780143118442/)
+* **Disagreement**
+	* [How to Disagree - Paul Graham(2008)](http://www.paulgraham.com/disagree.html)
+	* [My Twitter-Discussion-Deescalation Policy - Halvar Flake(2020)](https://addxorrol.blogspot.com/2020/08/my-twitter-discussion-deescalation.html)
+	* [How to Fix the Co-Founder Fights You’re Sick of Having — Lessons from Couples Therapist Esther Perel](https://firstround.com/review/how-to-fix-the-co-founder-fights-youre-sick-of-having-lessons-from-couples-therapist-esther-perel/)
+	* [Disagree and Commit: The Importance of disagreement in decision making - Simón Muñoz(2019)](https://hackernoon.com/disagree-and-commit-the-importance-of-disagreement-in-decision-making-b31d1b5f1bdc)
+	* [Imago therapy - Wikipedia](https://en.wikipedia.org/wiki/Imago_therapy)
 * **Employee Attrition**<a name="attrition">
 	* [How To Keep Your Best Programmers - Erik Dietrich](https://daedtech.com/how-to-keep-your-best-programmers/)
 	* [The Wetware Crisis: TEPES - Bruce Webster(2008)](http://brucefwebster.com/2008/01/10/the-wetware-crisis-tepes/)
@@ -223,6 +272,9 @@
 	* [The Elves Leave Middle Earth – Sodas Are No Longer Free - Steve Blank](https://steveblank.com/2009/12/21/the-elves-leave-middle-earth-%E2%80%93-soda%E2%80%99s-are-no-longer-free/)
 * **Employer References**
 	* [State Laws on References and Statements By Former Employers - Barbara Kate Repa(Nolo.com)](https://www.nolo.com/legal-encyclopedia/free-books/employee-rights-book/chapter9-6.html)
+* **Finance**
+	* [Unit: Accounting and financial statements - Khan Academy](https://www.khanacademy.org/economics-finance-domain/core-finance/accounting-and-financial-stateme)
+	* [Financial Statements: A Beginner's Guide - Tamiur Abdaal(2020)](https://www.causal.app/blog/whats-a-financial-statement)
 * **General**<a name="general"></a>
 	* [Mozilla Enterprise Information Security](https://infosec.mozilla.org/)
 	* [Rating Infosec Relevant Masters Programs - netsecfocus](https://netsecfocus.com/training/development/certifications/2017/03/08/rating_infosec_masters.html)
@@ -245,6 +297,7 @@
 	* [On Secretly Terrible Engineers - Danny Crichton](https://techcrunch.com/2015/03/08/on-secretly-terrible-engineers/)
 	* [Hiring and the market for lemons - Dan Luu](https://danluu.com/hiring-lemons/)
 	* [Our 6 Must Reads for Onboarding Tactics That Help New Hires Succeed (and Stay) - FirstRoundReview](https://firstround.com/review/our-6-must-reads-for-onboarding-tactics-that-help-new-hires-succeed-and-stay/)
+	* [Engineering Hiring - obvious.in](https://playbook.obvious.in/hiring/hiring-process/engineering-hiring)
 * **Impostor Syndrome**<a name="imposter"></a>
 	* [Would the real imposter please stand up? - Dr. Jessica Barker(SteelCon2016)](https://www.youtube.com/watch?v=tGyBFOWsFbk&feature=share)
 	* [Dark Matter Developers: The Unseen 99%(2012) - Scott Hanselman](https://www.hanselman.com/blog/DarkMatterDevelopersTheUnseen99.aspx)
@@ -256,6 +309,7 @@
 	* [Dilbert Principle - Wikipedia](https://en.wikipedia.org/wiki/Dilbert_principle)
 		* The Dilbert principle refers to a 1990s theory by Dilbert cartoonist Scott Adams stating that companies tend to systematically promote their least competent employees to management (generally middle management), to limit the amount of damage they are capable of doing.
 	* [The Gervais Principle - RibbonFarm](https://www.ribbonfarm.com/the-gervais-principle/)
+	* [Gervais Principle questioned: MacLeod’s hierarchy, the Technocrat, and VC startups - Michael O Church(2013)](http://sasamat.xen.prgmr.com/michaelochurch/wp/2013/02/19/gervais-principle-questioned-macleods-hierarchy-the-technocrat-and-vc-startups/)
 	* [Golden Hammer - wiki.c2.com](http://wiki.c2.com/?GoldenHammer)
 	* [Goodhart's law - Wikipedia](https://en.wikipedia.org/wiki/Goodhart%27s_law)
 	* [Gresham’s Law: Why Bad Drives Out Good As Time Passes - Farnam Street](https://fs.blog/2009/12/mental-model-greshams-law/)
@@ -299,23 +353,10 @@
 		* [Security_Engineer_Interview_Questions - Tad Whitaker](https://github.com/tadwhitaker/Security_Engineer_Interview_Questions/blob/master/security-interview-questions)
 		* [what-happens-when](https://github.com/alex/what-happens-when)
 			* An attempt to answer the age old interview question "What happens when you type google.com into your browser and press enter?"
-* **Interviewing**<a name="interviewing"></a>
-	* [STAR Method Technique Interview Questions & Answers - Christian Eilers](https://zety.com/blog/star-method-interview)
-	* [What I Learned Doing 250 Interviews at Google - Moishe Lettvin](https://www.youtube.com/watch?v=r8RxkpUvxK0)
-	* [Raising the Bar - The Unconventional Interview Method That Really Works - socialtalent](https://www.socialtalent.com/blog/recruitment/raising-the-bar-unconventional-interview-method-really-works)
-	* [The Trouble With "Culture Fit" - Rich Moy](https://www.stackoverflowbusiness.com/blog/the-trouble-with-culture-fit)
-	* [Salary Negotiations: Win by Losing - Erik Dietrich](https://daedtech.com/salary-negotiations-win-by-losing/)
-	* [Guide to Guerilla Interviewing Discussion - C2](http://wiki.c2.com/?GuerrillaGuideToInterviewing)
-	* [What I Learned From Conducting 500 Technical Interviews, Pt. 1: The Interviewer Skills Ladder - Alex Allain](https://www.holloway.com/s/trh-what-i-learned-from-conducting-500-technical-interviews-part-1)
-	* [After a lot more data, technical interview performance really is kind of arbitrary. - Aline Lerner](http://blog.interviewing.io/after-a-lot-more-data-technical-interview-performance-really-is-kind-of-arbitrary/)
-	* [The Joel Test: 12 Steps to Better Code - Joel Spolsky](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
-	* [The Rands Test - RandsinRepose](https://randsinrepose.com/archives/the-rands-test/)
-		* It’s hard to pick a single best work by Joel Spolsky, but if I was forced to, I’d pick The Joel Test. It’s his own, highly irresponsible, sloppy test to rate the quality of software, and when anyone asks me what is wrong with their team I usually start by pointing the questioner at the test. Start here.  It’s a test with 12 points and as Joel says, “A score of 12 is perfect, 11 is tolerable, but a 10 or lower and you’ve got serious problems”. More important than the points, his test clearly documents what I consider to be healthy aspects of an engineering team, but there are other points to be made. So it is completely an homage to Joel that I offer The Rands Test.
-	* [Get that job at Google - Steve Yegge(2008)](https://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html)
-		* Sharing for context.
-	* [Reverse interview](https://github.com/viraptor/reverse-interview)
-		* This is a list of questions which may be interesting to a tech job applicant. The points are not ordered and many may not apply to a given position, or work type. It was started as my personal list of questions, which grew over time to include both things I'd like to see more of and red flags which I'd like to avoid. I've also noticed how few questions were asked by people I interviewed and I think those were missed opportunities.
+		* [Interview Tips (Information Security) - jigerjain](https://github.com/jigerjain/Interview_Tips)
 	* **Interview Questions**
+		* [Reverse interview](https://github.com/viraptor/reverse-interview)
+			* This is a list of questions which may be interesting to a tech job applicant. The points are not ordered and many may not apply to a given position, or work type. It was started as my personal list of questions, which grew over time to include both things I'd like to see more of and red flags which I'd like to avoid. I've also noticed how few questions were asked by people I interviewed and I think those were missed opportunities.
 		* 4 categories of questions: Connect, Culture, Challenges, Close
 			1. How did you come to work here? 
 			2. What do you love most about working here?
@@ -325,6 +366,39 @@
 			6. How will I measure my performance so I know I'm having a positive impact?
 			7. If there were some skills or experience that you wish I had, what would they be?
 			8. What are the next steps in the process?
+* **Interviewing**<a name="interviewing"></a>
+	* **101**
+		* [STAR Method Technique Interview Questions & Answers - Christian Eilers](https://zety.com/blog/star-method-interview)
+	* **Experiences/Lessons Learned**
+		* [What I Learned Doing 250 Interviews at Google - Moishe Lettvin](https://www.youtube.com/watch?v=r8RxkpUvxK0)
+		* [What I Learned From Conducting 500 Technical Interviews, Pt. 1: The Interviewer Skills Ladder - Alex Allain](https://www.holloway.com/s/trh-what-i-learned-from-conducting-500-technical-interviews-part-1)
+		* [After a lot more data, technical interview performance really is kind of arbitrary. - Aline Lerner](http://blog.interviewing.io/after-a-lot-more-data-technical-interview-performance-really-is-kind-of-arbitrary/)
+		* [Get that job at Google - Steve Yegge(2008)](https://steve-yegge.blogspot.com/2008/03/get-that-job-at-google.html)
+			* Sharing for context.
+	* **'Culture Fit'**
+		* [Raising the Bar - The Unconventional Interview Method That Really Works - socialtalent](https://www.socialtalent.com/blog/recruitment/raising-the-bar-unconventional-interview-method-really-works)
+		* [The Trouble With "Culture Fit" - Rich Moy](https://www.stackoverflowbusiness.com/blog/the-trouble-with-culture-fit)
+	* **Articles/Blogposts/Writeups**
+		* [Guide to Guerilla Interviewing Discussion - C2](http://wiki.c2.com/?GuerrillaGuideToInterviewing)
+		* [The Technical Interview is an Ego Trip - Kowsheek(2020)](https://blog.kowsheek.com/the-technical-interview-is-an-ego-trip/)
+		* [The Horrifically Dystopian World of Software Engineering Interviews - jarednelsen.dev(2020)](https://www.jarednelsen.dev/posts/the-horrifically-dystopian-world-of-software-engineering-interviews/)
+		* [The Joel Test: 12 Steps to Better Code - Joel Spolsky](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/)
+		* [The Rands Test - RandsinRepose](https://randsinrepose.com/archives/the-rands-test/)
+			* It’s hard to pick a single best work by Joel Spolsky, but if I was forced to, I’d pick The Joel Test. It’s his own, highly irresponsible, sloppy test to rate the quality of software, and when anyone asks me what is wrong with their team I usually start by pointing the questioner at the test. Start here.  It’s a test with 12 points and as Joel says, “A score of 12 is perfect, 11 is tolerable, but a 10 or lower and you’ve got serious problems”. More important than the points, his test clearly documents what I consider to be healthy aspects of an engineering team, but there are other points to be made. So it is completely an homage to Joel that I offer The Rands Test.
+	* **Salary Negeotiation**
+		* [Salary Negotiation: Make More Money, Be More Valued - Patrick McKenzie](https://www.kalzumeus.com/2012/01/23/salary-negotiation/)
+		* [The Holloway Guide to Equity Compensation](https://www.holloway.com/g/equity-compensation)
+			* Stock options, RSUs, job offers, and taxes—a detailed reference, including hundreds of resources, explained from the ground up and made to be improved over time.
+		* [Salary strategies everyone in tech already knows — but you don't - Candor](https://teamcandor.com/salary/guide/)
+		* [Ten Rules for Negotiating a Job Offer - Haseeb Qureshi](https://haseebq.com/my-ten-rules-for-negotiating-a-job-offer/)
+		* [Negotiating Pattern Language - wiki.c2.com](http://wiki.c2.com/?NegotiatingPatternLanguage)
+		* [Salary Negotiations: Win by Losing - Erik Dietrich](https://daedtech.com/salary-negotiations-win-by-losing/)
+		* [10 essential negotiation tactics CISOs should know - Mary K Pratt](https://www.csoonline.com/article/3564515/10-essential-negotiation-tactics-cisos-should-know.html)	
+	* **Talks**
+		* [Nose Breathing 101: A Guide to Infosec Interviewing - Wartortell, Aaron Bayles](https://www.irongeek.com/i.php?page=videos/derbycon6/504-nose-breathing-101-a-guide-to-infosec-interviewing-wartortell-and-aaron-bayles)
+			* The Information Security sector is a special place filled with special snowflakes. For a special snowflake, interviewing for a job can sometimes be a daunting or awkward task. There is a thin line when talking to humans between looking cocky and potato. On the other side, the interviewer must understand that there's a limited pool of special snowflakes. There's a sweet spot between auto-hiring someone and telling them you'll need three months to make a decision. Each snowflake must be nurtured into a beautiful snowerfly, or whatever their final form may be. For this talk I plan to start a conversation about how to interview and be interviewed in the information security space. Good interviews combine a mix of targeted questions, appropriate information sharing, and a goal of what you'd like to learn from a person and vice versa. Bad interviews... don't. This leads to bad hires, good snowflakes being pushed aside, stupid questions being asked, people being sad pandas, poor team cohesion, and a general overwhelming feeling of meh. Do not despair, this is a solvable situation. Come join me on the journey to being less meh at hiring!
+* **Letter of Recommendation**
+	* [“Model of a Letter of Recommendation of a Person You Are Unacquainted with.” - Benjamin Franklin(1777)](https://founders.archives.gov/documents/Franklin/01-23-02-0365)
 * **Loyalty**
 	* [Loyalty and Layoffs - David Brady](https://whydavewhy.com/2013/08/16/loyalty-and-layoffs/)
 * **Management**<a name="mgmt"></a>
@@ -352,6 +426,9 @@
 	* [31 Core Competencies Explained - Edward J. Cripe](https://www.workforce.com/2002/09/03/31-core-competencies-explained/)
 	* [Radical Candor — The Surprising Secret to Being a Good Boss - FirstRoundReview](https://firstround.com/review/radical-candor-the-surprising-secret-to-being-a-good-boss/)
 	* [The Power of Performance Reviews: Use This System to Become a Better Manager - Lenny Rachitsky](https://firstround.com/review/the-power-of-performance-reviews-use-this-system-to-become-a-better-manager/)
+	* [The Indispensable Document for the Modern Manager - FirstRoundReview](https://firstround.com/review/the-indispensable-document-for-the-modern-manager/)
+	* [The Eng Team Handbook (eng-handbook)](https://github.com/raylene/eng-handbook)
+		* A developer's guide to management: an open-sourced handbook for leading engineering teams
 * **Marketing**
 	* [Marketing-for-Engineers](https://github.com/LisaDziuba/Marketing-for-Engineers)
 		* A curated collection of marketing articles & tools to grow your product.
@@ -359,6 +436,7 @@
 	* [Reaching Peak Meeting Efficiency: Meetings are a critical tool for building a diverse, high-performance team with shared values - Steven Sinofsky](https://medium.learningbyshipping.com/reaching-peak-meeting-efficiency-f8e47c93317a)
 	* [Maker's Schedule, Manager's Schedule - Paul Graham(2009)](http://www.paulgraham.com/makersschedule.html)
 	* [How to Design an Agenda for an Effective Meeting - Roger Schwarz(HBR)](https://hbr.org/2015/03/how-to-design-an-agenda-for-an-effective-meeting)
+	* [How To Run EPIC Meetings - Julia Felton(2020)](https://leadchangegroup.com/how-to-run-epic-meetings/)
 * **Mental Health**<a name="mentalh"></a>
 	* **General**
 		* [USA Mental Health First Aid](https://www.mentalhealthfirstaid.org/)
@@ -369,6 +447,7 @@
 		* [Sick Systems: How to Keep Someone With You Forever - issendai](http://www.issendai.com/psychology/sick-systems.html)
 		* [Spoon theory - Wikipedia](https://en.wikipedia.org/wiki/Spoon_theory)
 		* [How to Be Kind to Yourself & Still Get Stuff Done - Leo Babauta](https://zenhabits.net/kind-done/)
+		* [Morale, Mental Health, and Burnout in Remote Teams - Holloway](https://www.holloway.com/g/remote-work/sections/morale-mental-health-and-burnout-in-remote-teams)
 	* **Abusive Behaviour**
 		* [Sick systems: How to keep someone with you forever - Issendai](https://issendai.livejournal.com/572510.html)
 	* **Burnout**
@@ -381,11 +460,15 @@
 	* **Depression**
 		* [Living with Depression in Tech - Jonathan Zdziarski](https://www.zdziarski.com/blog/?p=7437)
 		* [The Only Thing You Cant Fix Is Killing Yourself - notdan](https://medium.com/@notdan/the-only-thing-you-cant-fix-is-killing-yourself-da8b555a99f1)
+	* **Suicide**
+		* [Suicide Risk Assessment and Intervention Tactics - Amber Baldet(Defcon21)](https://media.defcon.org/DEF%20CON%2021/DEF%20CON%2021%20video%20and%20slides/DEF%20CON%2021%20Hacking%20Conference%20Presentation%20By%20Amber%20Baldet%20-%20Suicide%20Risk%20Assessment%20and%20Intervention%20Tactics%20-%20Video%20and%20Slides.m4v)
+			* [Slides](https://www.defcon.org/images/defcon-21/dc-21-presentations/Baldet/DEFCON-21-Baldet-Suicide-Intervention-Risk-Assessment-Tactics-Updated.pdf)
 	* **Stress**
 		* [Stress management - Mayo Clinic](https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/stress/art-20046037)
 		* [Understanding chronic stress - American Psychological Association](https://www.apa.org/helpcenter/understanding-chronic-stress)
 		* [Chronic Stress and a Life: How Stress Almost Killed Me - Sergio Caltagirone](http://www.activeresponse.org/chronic-stress-and-a-life-how-stress-almost-killed-me/)
 	* **Talks**
+		* [Hackers, Hugs, & Drugs: Mental Health in Infosec - Amanda Berlin(Derbycon2018)](https://www.irongeek.com/i.php?page=videos/derbycon8/track-1-03-hackers-hugs-drugs-mental-health-in-infosec-amanda-berlin)
 		* [Playing Through Pain: The Impact of Secrets and Dark Knowledge - Richard Thieme(Defcon24)](https://www.youtube.com/watch?v=yGrcHhfUZDk)
 			* Dismissing or laughing off concerns about what it does to a person to know critical secrets does not lessen the impact when those secrets build a different map of reality than "normals" use and one has to calibrate narratives to what another believes. The cognitive dissonance that inevitably causes is managed by some with denial who live as if refusing to feel the pain makes it disappear. But as Philip K. Dick said, reality is that which, when you no longer believe in it, refuses to go away. And when cognitive dissonance evolves into symptoms of traumatic stress, one ignores those symptoms at one's peril. But the constraints of one's work often make it impossible to speak aloud about those symptoms, because that might threaten one's clearances, work, and career. The real cost of security work and professional intelligence goes beyond dollars. It is measured in family life, relationships, and mental and physical well-being. The divorce rate is as high among intelligence professionals as it is among medical professionals, for good reason - how can relationships be based on openness and trust when one's primary commitments make truth-telling and disclosure impossible? Richard Thieme has been around that space for years. He has listened to people in pain because of the compelling necessities of their work, the consequences of their actions, the misfiring of imperfect plans, and the burdens of - for example - listening to terrorists slit someone's throat in real time, then having to act as if they had a normal day at the office. Thieme touched on some of this impact in his story, "Northward into the Night," published in the Ranfurly Review, Big City Lit, Wanderings and Bewildering Stories before collection in "Mind Games." The story illuminates the emotional toll of managing multiple personas and ultimately forgetting who you are in the first place. The bottom line is, trauma and secondary trauma have identifiable symptoms and they are everywhere in the "industry." The "hyper-real" space which the national security state creates by its very nature extends to normals, too, now, but it's more intense for professionals. Living as "social engineers," always trying to understand the other's POV so one can manipulate and exploit it, erodes the core self. The challenge is not abstract or philosophical, it's existential, fired into our faces every day at point blank range, and it constitutes an assault on authenticity and integrity. Sometimes sanity is at stake, too, and sometimes, life itself. In one week, two different people linked to the CIA told Thieme that going into that agency was like becoming a scientologist. Think about what that analogy means. For his own sake and sanity, Thieme has thought about it a lot and that's what this talk is about - the real facts of the matter and strategies for effective life-serving responses.
 		* [The Road to Resilience How Real Hacking Redeems a Damnable Profession - Richard Thieme(Defcon26)](https://www.youtube.com/watch?v=WHpFSIYlVoc)
@@ -393,12 +476,18 @@
 * **Mentoring**<a name="mentor"></a>
 	* [How to get coaching, mentoring, and attention - Jake Seliger](https://jakeseliger.com/2010/10/02/how-to-get-your-professors%E2%80%99-attention-or-how-to-get-the-coaching-and-mentorship-you-need/)
 	* [How to Be a Career-Changing Mentor — 25 Tips From The Best Mentors We Know - FirstRoundReview](https://firstround.com/review/how-to-be-a-career-changing-mentor-25-tips-from-the-best-mentors-we-know/)
+	* [How to Initiate Contact With a Mentor - Daniel Miessler(2020)](https://danielmiessler.com/blog/how-to-initiate-first-contact-with-a-mentor/)
+	* [Learning through Mentorship -  Michael Ortega, Magen Wu(Derbycon2015)](https://www.irongeek.com/i.php?page=videos/derbycon5/teach-me04-learning-through-mentorship-michael-ortega-magen-wu)
+		* 'Try Harder', 'Lurk Moar', 'You're doing it wrong'. In the InfoSec community, we pride ourselves on being able to learn on our own and believe going through a 'trial by fire' is necessary in order to be a respected and established in the community. What we don't realize is, we have many opportunities to better guide each other and learn from one another in order to improve...but are we making the best use of those opportunities? In this talk, we will explore the benefits of mentoring based on research we gathered and using data collected from within our industry. We will also discuss what makes a good mentor/mentee and how to get the most out of the relationship to help one another-and the community-grow.
+	* [ How to Give the Gift That Keeps on Giving - Your Knowledge - Jason Blanchard(Derbycon 2019)](https://www.irongeek.com/i.php?page=videos/derbycon9/2-15-how-to-give-the-gift-that-keeps-on-giving-your-knowledge-jason-blanchard)
+		* Do you attend InfoSec talks, watch InfoSec webcasts, read InfoSec blogs, and follow your favorite InfoSec knowledge-sharers on Twitter? Do you want to learn how to share the knowledge in your brain in ways people want to hear it? Yes! Then this is the talk for you. Jason will give you the knowledge to confidently share what you know with people who don't know it. This talk will inspire you to create your own blog, give your own webcasts and presentations, or launch a podcast so that the next generation will be prepare for the what's to come. There will be demos and actionable content, so you'll know what to do to get started.
 * **Metrics**<a name="metrics"></a>
 	* [Be Careful What You Measure - Mark Graham Brown](https://corporater.com/en/the-chicken-kpi-be-careful-of-what-you-measure/)
 	* [How to Use Metrics - George K. Campbell(2006)](https://www.csoonline.com/article/2120344/how-to-use-metrics.html)
 	* [Security metric techniques: How to answer the 'so what?' - Bill Brenner](https://www.csoonline.com/article/2125789/security-metric-techniques--how-to-answer-the--so-what--.html)
 	* [Security Value Made Visible: How American Water's Bruce Larson uses a simple metric to build bridges with business partners and justify security spending at the same time - Scott Berinato](https://www.csoonline.com/article/2120656/security-value-made-visible.html)
 	* [A key performance indicator for infosec organizations: Using probabilistic risk KPIs to direct complex risk engineering efforts - Ryan McGeehan(2019)](https://medium.com/starting-up-security/a-key-performance-indicator-for-infosec-organizations-7f654b7cd256)
+	* [Security Metrics: Critical Issues - Derek Slater(2012)](https://www.csoonline.com/article/2123361/security-metrics--critical-issues.html)
 * **Networking**<a name="network"></a>
 	* [That’s still not my RJ 45 Jack - IRL Networking for Humans Pt 2 - Johnny Xmas](https://www.irongeek.com/i.php?page=videos/converge2015/%22track112-how-to-dress-like-a-human-being-irl-networking-for-humans-pt-2-johnny-xmas%22)
 		* We're smart. We're incredibly tech savvy. We can rock some mad OSINT with our Google-Fu. We're 85% +-10% sure which part of the body a hat goes on. We think you can never have enough beard. WE THINK THAT'S ACCEPTABLE. The second in his multi-part series on building social prowess, this talk will focus on the inconvenient truth of your book always, always, always being judged by its cover, and how to deal with that with minimal effort so you can get back to sewing more pockets on your utilikilt. This talk covers both male and female situations, though it is primarily unisex. We'll get you set up with a core wardrobe and hygenic skillset so you'll be able to roll out of bed, spend minimal time "getting ready," rock the dreaded client-facing meeting or industry meetup, and get you back home where you can safely take your pants off.
@@ -425,8 +514,15 @@
 	* [Images of Organization - Wikipedia](https://en.wikipedia.org/wiki/Images_of_Organization)
 	* [Theory of the firm: Managerial behavior, agency costs and ownership structure - Michael C.Jensen, William H.Meckling](https://www.sciencedirect.com/science/article/pii/0304405X7690026X)
 	* [The Tyranny of Structurelessness - Jo Freeman](https://www.jofreeman.com/joreen/tyranny.htm)
+	* [The Eight Metaphors of Organization - Venkatesh Rao(2010)](https://www.ribbonfarm.com/2010/07/13/the-eight-metaphors-of-organization/)
+		* "Gareth Morgan’s Images of Organization is a must-read for those who want to develop a deeper understanding of a lot of the stuff I talk about here. Though I’ve cited the book lots of times, it is one of those dense, complex books that I am never going to attempt to review or summarize. You’ll just have to read it. But I figured since I refer to it so much, I need at least a simple anchor post about it. So I thought I’d summarize the main idea with a picture, and point out some quick connections to things I have written/plan to write."
+	* [Inverse Conway Maneuver - thoughtworks.com](https://www.thoughtworks.com/radar/techniques/inverse-conway-maneuver)
+		* The 'Inverse Conway Maneuver' recommends evolving your team and organizational structure to promote your desired architecture. Ideally your technology architecture will display isomorphism with your business architecture.
 * **Performance Reviews**<a name="perf-review"></a>
 	* [A Beginner’s Guide to Giving Performance Reviews - Advice for new managers on the most effective way to deliver feedback(Rebecca Fishbein)](https://medium.com/s/story/a-beginners-guide-to-giving-performance-reviews-963aba23bd)
+* **Personal Safety**
+	* [Top Warning Signs of Domestic Abuse - Buddy-T(2020)](https://www.verywellmind.com/signs-someone-is-being-abused-66535)
+	* [Signs of a Stalker: Are You Being Followed? - Brianne Sandorf(2019)](https://www.asecurelife.com/signs-of-a-stalker/)
 * **Presenting**
 	* [Presentation and Social Media tips with SheHacksPurple](https://www.youtube.com/watch?v=wDHliJ2qH_c)
 	* [More Tips for Social Media and Presenting - SheHacksPurple](https://medium.com/@shehackspurple/more-tips-for-social-media-and-presenting-a887062eda57)
@@ -443,6 +539,10 @@
 		* [Article Comments](https://michaelochurch.wordpress.com/2015/06/06/why-agile-and-especially-scrum-are-terrible/#comments)
 	* [Minimal Project Management - Hilton Lipschitz](https://hiltmon.com/blog/2016/03/05/minimal-project-management/)
 	* [Multiply by Pi - David Strom](https://strom.wordpress.com/2008/03/26/multiply-by-pi/)
+	* [Project Management Tips and Tricks - Quang Truong(2020)](https://knowledgevault-sharing.blogspot.com/2020/05/project-management-tips-and-tricks.html)
+	* [5 Ways to Manage Scope Creep - marketingmatters.net(2013)](https://marketingmatters.net/increase-productivity-by-decreasing-scope-creep/)
+	* [Shape Up: Stop Running in Circles and Ship Work that Matters - Basecamp](https://basecamp.com/shapeup)
+		* Shape Up is for product development teams who struggle to ship. Full of eye-opening insights, Shape Up will help you break free of "best practices" that aren't working, think deeper about the right problems, and start shipping meaningful projects.
 * **Remote Work**
 	* [awesome-remote-job](https://github.com/lukasz-madon/awesome-remote-job)
 		* A curated list of awesome remote jobs and resources.
@@ -457,6 +557,7 @@
 	* [Remote Work - Zapier](https://zapier.com/learn/remote-work/)
 		* Beginning as a series of posts on the Zapier blog, this book is an ongoing work about our experiences as a remote team, with much of the book written by Zapier CEO Wade Foster along with chapters from our team members and other remote employees. We'll update it periodically so you can learn how our thinking and processes change as we've grown from three to 200+ people and beyond, and we'll keep the older versions of each chapter archived so you can learn with us over time.
 	* [How Remote Workers Make Work Friends - Beth SchinoffBlake E. AshforthKevin Corley(HBR)](https://hbr.org/2019/11/how-remote-workers-make-work-friends)
+	* [The tools and tricks that let Ars Technica function without a physical office - Lee Hutchinson(2020)](https://arstechnica.com/information-technology/2020/01/no-office-no-problem-how-ars-technicas-remote-workers-work/)
 * **Resume**<a name="resume"></a>
 	* [17 things that make this the perfect résumé - Áine Cain and Shayanne Gal(BusinessInsider)](https://www.businessinsider.com/why-this-is-an-excellent-resume-2013-11)
 	* [résumés - PracticalTypography](https://practicaltypography.com/resumes.html)
@@ -464,11 +565,25 @@
 	* [How to Prepare Your Resume (Your Resume Stinks!) (Hall Of Fame Guidance) - ManagerTools](https://www.manager-tools.com/2005/10/your-resume-stinks)
 	* [Resume Update 2019 - Part 1 - ManagerTools](https://www.manager-tools.com/2019/06/resume-update-2019-part-1)
 	* [Impossible is Nothing - Resume](https://en.m.wikipedia.org/wiki/Impossible_Is_Nothing_(video_r%C3%A9sum%C3%A9))
+	* [How to document your knowledge (in a CV/resume) - Gynvael Coldwind(20202)](https://gynvael.coldwind.pl/?id=728)
+	* [JSON Resume](https://github.com/jsonresume)
+		* A community driven open source initiative to create a JSON based standard for resumes
+	* [Cybersecurity engineer resume tips - Frank Siemons](https://resources.infosecinstitute.com/category/cybersecurity-careers/how-to-become-a-cybersecurity-engineer/cybersecurity-engineer-resume-tips/)
+* **Skill Development**
+	* [Expiring vs. Permanent Skills - Morgan Housel(2020)](https://www.collaborativefund.com/blog/expiring-vs-permanent-skills/)
 * **Social Skills**
 	* [Basic Guide to Social Skills](https://www.improveyoursocialskills.com/basic-social-skills-guide)
+* **Sr/Staff Engineers**
+	* [What senior engineers do: fix knowledge holes - Dan Moore](http://www.mooreds.com/wordpress/archives/3232)
+		* Worthwhile for the first comment in response to the article: "I don’t see anything “senior” about it, or even “engineer”.  Seeing problems and solving them is what everyone does.  Documenting the solution is one part of solving a problem.  An apprentice carpenter does these things, too, and so does a farmer, and a waiter.  Unfortunately, it’s not what most software companies reward, or how they operate.  Whenever I did this, my manager, at every software company I’ve worked for, would say:  “That’s cool, but you’re supposed to add the FooBar feature, and it needs to be done this Friday.  Don’t waste time with reverse-engineering, or documentation.  Just add one new field to the protocol somewhere.  We can clean it up Later(TM).”  This is Conway’s Law at work.  What sort of company encourages the creation of two critical components which are completely undocumented?  The sort of company which doesn’t reward documentation of critical components.  That’s not likely to change because the engineer that created them happened to leave.  (It took more time to reverse-engineer the protocol than it would have to document it when the knowledge was fresh.)  The PM and QA who allowed this to happen are still there, right?  What “Senior Engineer” really means is someone who’s spent enough time in the trenches to have earned a job title that allows them the latitude to make these sorts of improvements, and not have a PM question why they aren’t, instead, doing exactly what they were assigned.  Look back at the story.  Did the “senior engineer” go through proper channels to schedule a “reverse-engineer and document network protocol” task?  No, he clearly didn’t trust that it would happen.  Or maybe it was already there, but lowest priority (way below “fix CSS on IE”, of course).  What was his actual responsibility that week?  The story doesn’t say, but I don’t see any remarks about a PM breathing down his neck asking about the CSS fix he asked for (because that PM is the only user of the system, anywhere, of course, who uses IE and sees that particular bug).  Documentation is not on this week’s “Sprint”!  The process is fundamentally broken.  We hear fables like this about how life would be better if we all did something one way (you’ll get promoted to Senior Engineer!), while in practice we’re punished for doing so." 
+	* [StaffEng](https://staffeng.com/stories/)
+		* Folks who have shared their stories of reaching Staff-plus engineer roles:
+	* [Being Glue - Tanya Reilly](https://noidea.dog/glue)
+	* [What's it like as a Senior Engineer at Google? - Zain Rizvi](https://www.zainrizvi.io/blog/whats-it-like-as-a-senior-engineer/)
 * **Strategy**
 	* **101**
 	* **Books**
+		* [The Art of War - Internet Archive](https://archive.org/details/TheArtOfWarBySunTzu)
 		* Good Strategy/Bad Strategy
 		* Playing to Win
 	* **Articles/Blogposts/Writeups**
@@ -476,6 +591,22 @@
 	* **Talks/Presentations/Videos**
 		* [Good Strategy/Bad Strategy: the difference and why it matters - Prof. Richard Rumelt(LSE Events)(2011)](https://www.youtube.com/watch?v=UZrTl16hZdk)
 			* Developing and implementing a strategy is the central task of any leader. Richard Rumelt shows that there has been a growing and unfortunate tendency to equate motherhood and apple-pie values and fluffy packages of buzzwords with "strategy."
+* **Teams**
+	* **Books**
+		* Five Dysfunctions of a Team
+		* [The Goal](https://en.wikipedia.org/wiki/The_Goal_(novel))
+			* The Phoenix Project & The Unicorn Project
+		* I think should b read anyways despite whatever personal opinions on them(Better to know than not)
+			* 48 Laws of Power
+			* The Prince - Machiavelli
+	* **Articles/Blogposts/Writeups**
+		* [Don’t Serve Burnt Pizza (And Other Lessons in Building Minimum Lovable Products) - FirstRoundReview](https://firstround.com/review/dont-serve-burnt-pizza-and-other-lessons-in-building-minimum-lovable-products/)
+		* [This Is What Impactful Engineering Leadership Looks Like - FirstRoundReview](https://firstround.com/review/this-is-what-impactful-engineering-leadership-looks-like/)
+		* [How to Become Insanely Well-Connected - FirstRoundReview](https://firstround.com/review/how-to-become-insanely-well-connected/)
+		* [What are the core team types in Team Topologies? - Matthew Skelton, Manuel Pais(2019)](https://teamtopologies.com/key-concepts-content/what-are-the-core-team-types-in-team-topologies)
+		* [How to Size and Assess Teams From an Eng Lead at Stripe, Uber and Digg - FirstRoundReview](https://firstround.com/review/how-to-size-and-assess-teams-from-an-eng-lead-at-stripe-uber-and-digg/)
+		* [Scaling engineering organizations - Raylene Yung(Stripe)](https://stripe.com/atlas/guides/scaling-eng)
+			* Lessons learned from scaling Stripe's engineering team.
 * **Testing(Certifications/Exams)**<a name="testing"></a>
 	* [Better GIAC Testing with Pancakes - H4cks4panckakes](https://tisiphone.net/2015/08/18/giac-testing/)
 	* [Self-Study SANS SEC503 GCIA - Gary Hoffman](https://www.linkedin.com/pulse/self-study-sans-sec503-gcia-gary-hoffman/)
@@ -484,8 +615,6 @@
 	* [Does My Employer Have to Pay Me for Training? - Lisa Guerin](https://www.lawyers.com/legal-info/labor-employment-law/wage-and-hour-law/employer-paid-training-may-really-be-employee-paid.html)
 	* [Are Employers Required to Pay Employees for Training Courses? - Jules Halpern Associates](https://www.halpernadvisors.com/employers-required-pay-employees-training-courses/)
 * **Other**<a name="other"></a>
-	* [What senior engineers do: fix knowledge holes - Dan Moore](http://www.mooreds.com/wordpress/archives/3232)
-		* Worthwhile for the first comment in response to the article: "I don’t see anything “senior” about it, or even “engineer”.  Seeing problems and solving them is what everyone does.  Documenting the solution is one part of solving a problem.  An apprentice carpenter does these things, too, and so does a farmer, and a waiter.  Unfortunately, it’s not what most software companies reward, or how they operate.  Whenever I did this, my manager, at every software company I’ve worked for, would say:  “That’s cool, but you’re supposed to add the FooBar feature, and it needs to be done this Friday.  Don’t waste time with reverse-engineering, or documentation.  Just add one new field to the protocol somewhere.  We can clean it up Later(TM).”  This is Conway’s Law at work.  What sort of company encourages the creation of two critical components which are completely undocumented?  The sort of company which doesn’t reward documentation of critical components.  That’s not likely to change because the engineer that created them happened to leave.  (It took more time to reverse-engineer the protocol than it would have to document it when the knowledge was fresh.)  The PM and QA who allowed this to happen are still there, right?  What “Senior Engineer” really means is someone who’s spent enough time in the trenches to have earned a job title that allows them the latitude to make these sorts of improvements, and not have a PM question why they aren’t, instead, doing exactly what they were assigned.  Look back at the story.  Did the “senior engineer” go through proper channels to schedule a “reverse-engineer and document network protocol” task?  No, he clearly didn’t trust that it would happen.  Or maybe it was already there, but lowest priority (way below “fix CSS on IE”, of course).  What was his actual responsibility that week?  The story doesn’t say, but I don’t see any remarks about a PM breathing down his neck asking about the CSS fix he asked for (because that PM is the only user of the system, anywhere, of course, who uses IE and sees that particular bug).  Documentation is not on this week’s “Sprint”!  The process is fundamentally broken.  We hear fables like this about how life would be better if we all did something one way (you’ll get promoted to Senior Engineer!), while in practice we’re punished for doing so." 
 	* [Revisiting L0pht testimony – 20yrs later -Space Rogue](https://www.spacerogue.net/wordpress/?p=709)
 	* [My Canons on (ISC)² Ethics - Such as They Are(2011)](http://infosecisland.com/blogview/15450-My-Canons-on-ISC-Ethics-Such-as-They-Are.html)
 	* [Apple’s Software “Problem” and “Fixing” It (via twitter)](https://medium.learningbyshipping.com/apples-software-problem-and-fixing-it-via-twitter-c941a905ba20)
@@ -521,10 +650,13 @@
 		* [Microsoft's Lost Decade - Kurt Eichenwald(Vanitfair)](https://www.vanityfair.com/news/business/2012/08/microsoft-lost-mojo-steve-ballmer)
 		* [Microsoft Abandons 'Stack Ranking' of Employees - Shira Ovide, Rachel Feintzeig(WallStreetJournal)](https://www.wsj.com/articles/microsoft-abandons-8216stack-ranking8217-of-employees-1384279446)
 		* [ Amazon to drop dreaded stack-ranking performance reviews - Ángel González, Matt Day(SeattleTimes)](https://www.seattletimes.com/business/amazon/amazon-says-it-will-change-performance-reviews-focus-on-staffers-strengths/)
+	* **Unions/Labor Organization**
+		* [Workers can be barred from using company email for union organizing - NLRB - Daniel Wiessner()](https://www.reuters.com/article/labor-disclosure/workers-can-be-barred-from-using-company-email-for-union-organizing-nlrb-idUSL1N28R25I)
 	* **Wages**
 		* [Techtopus - Pando](https://pando.com/tag/techtopus/)
 		* [Newly unsealed documents show Steve Jobs' brutal response after getting a Google employee fired - Mark Ames](https://pando.com/2014/03/25/newly-unsealed-documents-show-steve-jobs-brutally-callous-response-after-getting-a-google-employee-fired/)
 		* [Revealed: Apple and Google's wage-fixing cartel involved dozens more companies, over one million employees - Mark Ames(Pando)](https://pando.com/2014/03/22/revealed-apple-and-googles-wage-fixing-cartel-involved-dozens-more-companies-over-one-million-employees/)
+		* [Is Your Employer Stealing From You? - Luke Darby(GQ2019)](https://www.gq.com/story/wage-theft)
 	* **Other**
 		* [Attrition.org](http://attrition.org/attrition/)
 			* Attrition.org (http://attrition.org/) is a computer security web site dedicated to the collection, dissemination and distribution of information about the security industry for anyone interested in the subject. They maintain one of the only open and honest grim look at the industry, reminding everyone that we must strive to be better than we have been historically. The crusade to expose industry frauds and inform the public about incorrect information in computer security articles is a primary goal of the site. Previously, Attrition.org maintained the largest catalogs of security advisories, text files, and humorous image galleries. They are also known for maintaining the largest mirror of Web site defacements and the creation of the Data Loss Database (Open Source), which eventually became DatalossDB (http://datalossdb.org/).

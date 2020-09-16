@@ -5371,8 +5371,8 @@ To Do
 		* [loadlibrayy](https://github.com/vmcall/loadlibrayy)
 			* x64 PE injector with kernel handle elevation and thread hijacking capabilities
 		* Invoke-ReflectivePEInjection - PowerSploit https://github.com/PowerShellMafia/PowerSploit/blob/master/CodeExecution/Invoke-ReflectivePEInjection.ps1)
-			* [Documentation](https://powersploit.readthedocs.io/en/latest/CodeExecution/Invoke-ReflectivePEInjection/
-		* Invoke-ReflectivePEInjection.ps1 - empire https://github.com/BC-SECURITY/Empire/blob/master/data/module_source/management/Invoke-ReflectivePEInjection.ps1
+			* [Documentation](https://powersploit.readthedocs.io/en/latest/CodeExecution/Invoke-ReflectivePEInjection/)
+		* Invoke-ReflectivePEInjection.ps1 - empire](https://github.com/BC-SECURITY/Empire/blob/master/data/module_source/management/Invoke-ReflectivePEInjection.ps1)
 * **PowerLoader(Ex)**
 	* **101**
 		* [PowerLoader Injection – Something truly amazing - malwaretech(2013)](https://www.malwaretech.com/2013/08/powerloader-injection-something-truly.html)

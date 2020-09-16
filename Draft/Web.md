@@ -112,6 +112,7 @@
 	* [Browser-2020](https://github.com/luruke/browser-2020)
 		* Things you can do with a browser in 2020
 		* It's like, did no one read 'The Tangled Web: A Guide to Securing Modern Web Applications'? Or did they, and their take away was, 'Man, what a bunch of great ideas! Blinking text with no user control? Woah. I'm so on this.'
+		* My point is that it is 2020, and there is no equivalent to NoScript or UBlock Origin in any major browser. Despite this, I can have picture in picture video chats, while also connecting by bluetooth and USB, devices to the browser and having each tab color coded, along with the browser knowing my power level of my device, all according to standards.
 * **Cheat Sheets**
 	* See 'Cheats.md' for cheatsheets
 * **Tools**

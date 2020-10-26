@@ -2692,18 +2692,20 @@
 ----------------------------------------------------------------------------------------------------------------
 #### <a name="esii">Edge Side Include Injection</a>
 * **101**
+	* [Edge Side Includes - Wikipedia](https://en.wikipedia.org/wiki/Edge_Side_Includes)
 * **Articles/Blogposts/Writeups**
+	* [Beyond XSS: Edge Side Include Injection - Louis Dion-Marcil(2018)](https://www.gosecure.net/blog/2018/04/03/beyond-xss-edge-side-include-injection/)
+	* [ESI Injection Part 2: Abusing specific implementations - Philippe Arteau(2019)](https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations/)
+	* [Edge Side Includes abused to enable RCE - Catherine Chapman(2019)](https://portswigger.net/daily-swig/edge-side-includes-abused-to-enable-rce)
 * **Talks/Presentations/Videos**
+	* [Cache Me If You Can - Philippe Arteau](https://gosecure.github.io/presentations/2019-02-26-confoo_mtl/Cache_Me_If_You_Can.pdf)
+	* [Edge Side Include Injection: Abusing Caching Servers into SSRF and Transparent Session Hijacking - Louis Dion-Marcil(BHUSA2018)](https://www.youtube.com/watch?v=6t50uRAxFT8)
+		* [Slides](https://i.blackhat.com/us-18/Wed-August-8/us-18-Dion_Marcil-Edge-Side-Include-Injection-Abusing-Caching-Servers-into-SSRF-and-Transparent-Session-Hijacking.pdf)
+		* When caching servers and load balancers became an integral part of the Internet's infrastructure, vendors introduced what is called "Edge Side Includes" (ESI), a technology allowing malleability in caching systems. This legacy technology, still implemented in nearly all popular HTTP surrogates (caching/load balancing services), is dangerous by design and brings a yet unexplored vector for web-based attacks.
 * **Tools**
 
 
-https://en.wikipedia.org/wiki/Edge_Side_Includes
-https://www.gosecure.net/blog/2018/04/03/beyond-xss-edge-side-include-injection/
-https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations/
-https://i.blackhat.com/us-18/Wed-August-8/us-18-Dion_Marcil-Edge-Side-Include-Injection-Abusing-Caching-Servers-into-SSRF-and-Transparent-Session-Hijacking.pdf
-https://gosecure.github.io/presentations/2019-02-26-confoo_mtl/Cache_Me_If_You_Can.pdf
-https://www.slideshare.net/cisoplatform7/edge-side-include-injection-abusing-caching-servers-into-ssrf-and-transparent-session-hijacking
-https://portswigger.net/daily-swig/edge-side-includes-abused-to-enable-rce
+
 
 
 
@@ -3599,32 +3601,17 @@ IDN
 
 
 	
-	https://www.blackhat.com/presentations/bh-federal-06/BH-Fed-06-Schoenefeld-up.pdf
-	https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/
-	https://www.youtube.com/watch?v=KSA7vUkXGSg
-	https://www.ikkisoft.com/stuff/Defending_against_Java_Deserialization_Vulnerabilities.pdf
+	
+
+
+	
+	
 
 	https://owasp.org/www-community/vulnerabilities/Deserialization_of_untrusted_data
 	https://i.blackhat.com/eu-19/Thursday/eu-19-Zhang-New-Exploit-Technique-In-Java-Deserialization-Attack.pdf
-	https://www.youtube.com/watch?v=uur5B0rFMkQ
-	https://www.youtube.com/watch?v=t-zVC-CxYjw
-	https://www.youtube.com/watch?v=VviY3O-euVQ
-	https://www.youtube.com/watch?v=oZPZLiY2PeA
-	https://securitylab.github.com/research/in-memory-data-grid-vulnerabilities
-	https://www.youtube.com/watch?v=NqHsaVhlxAQ
-	https://www.youtube.com/watch?v=wPbW6zQ52w8
-	https://www.youtube.com/watch?v=Lv9BC_bYaI8
-	
-	
-https://www.youtube.com/watch?v=qDoBlLwREYk&list=PLwvifWoWyqwqkmJ3ieTG6uXUSuid95L33&index=9
-
-* [ - Alexei Kojenov(OWASP)](https://www.youtube.com/watch?v=t-zVC-CxYjw)
-	* [Slides](https://drive.google.com/file/d/1o8VPE4nwNLb9cAYfG-3gM4WR4CY7FwoT/view)
-	* [Code](https://github.com/kojenov/serial)
 
 
-	* [Automated Discovery of Deserialization Gadget Chains - Ian Haken(Defcon26)](https://www.youtube.com/watch?v=wPbW6zQ52w8)
-		* [Slides](https://i.blackhat.com/us-18/Thu-August-9/us-18-Haken-Automated-Discovery-of-Deserialization-Gadget-Chains.pdf)
+
 
 ----------------------------------------------------------------------------
 ### <a name="serialization">(De-)Serialization Attacks</a>
@@ -3661,9 +3648,30 @@ https://www.youtube.com/watch?v=qDoBlLwREYk&list=PLwvifWoWyqwqkmJ3ieTG6uXUSuid95
 		* [Marshalling Pickles - Chris Frohoff, Gabe Lawrence(AppSecCali 2015)](https://frohoff.github.io/appseccali-marshalling-pickles/)
 			* [Slides](https://github.com/frohoff/appseccali-marshalling-pickles)
 			* Object serialization technologies allow programs to easily convert in-memory objects to and from various binary and textual data formats for storage or transfer – but with great power comes great responsibility, because deserializing objects from untrusted data can ruin your day. We will look at historical and modern vulnerabilities across different languages and serialization technologies, including Python, Ruby, and Java, and show how to exploit these issues to achieve code execution. We will also cover some strategies to protect applications from these types of attacks.
+		* [Exploiting Deserialization Vulnerabilities in Java - Matthis Kaiser(2015)](https://www.youtube.com/watch?v=VviY3O-euVQ)
+			* Deserialization vulnerabilities in Java are lesser known and exploited (compared to unserialize() in PHP). This talk will give insights how this bug class can be turned into serverside Remote Code Execution. Details and a demo will be given for one of my patched vulnerabilities (CVE-2015-6576, Atlassian Bamboo RCE).
 		* [Deserialize My Shorts Or How I Learned to Start Worrying and Hate Java Object Deserialization - Chris Frohoff, Gabe Lawrence](https://frohoff.github.io/owaspsd-deserialize-my-shorts/)
 			* [Slides](https://www.slideshare.net/frohoff1/deserialize-my-shorts-or-how-i-learned-to-start-worrying-and-hate-java-object-deserialization)
 			* Object deserialization is an established but poorly understood attack vector in applications that is disturbingly prevalent across many languages, platforms, formats, and libraries. In January 2015 at AppSec California, Chris Frohoff and Gabe Lawrence gave a talk on this topic, covering deserialization vulnerabilities across platforms, the many forms they take, and places they can be found. It covered, among other things, somewhat novel techniques using classes in commonly used libraries for attacking Java serialization that were subsequently released in the form of the ysoserial tool. Few people noticed until late 2015, when other researchers used these techniques/tools to exploit well known products such as Bamboo, WebLogic, WebSphere, ApacheMQ, and Jenkins, and then services such as PayPal. Since then, the topic has gotten some long-overdue attention and great work is being done by many to improve our understanding and developer awareness on the subject. This talk will review the details of Java deserialization exploit techniques and mitigations, as well as report on some of the recent (and future) activity in this area.
+		* [Automated Discovery of Deserialization Gadget Chains - Ian Haken(Defcon26)](https://www.youtube.com/watch?v=wPbW6zQ52w8)
+		* [In-Memory Data Grid Applications: Finding Common Java Deserialization Vulnerabilities with CodeQL - Man Yue Mo(2019)](https://securitylab.github.com/research/in-memory-data-grid-vulnerabilities)
+		* [Oracle Java Deserialization Vulnerabilities - Stephen Kost, Phil Reimann(2016)](https://www.youtube.com/watch?v=oZPZLiY2PeA)
+			* Java deserialization is a class of security vulnerabilities that can result in server-side remote code execution (RCE). As many Oracle products are based on Java, deserialization bugs are found in many Oracle environments especially those using Oracle WebLogic, Oracle Fusion Middleware, and Oracle E-Business Suite. As an example, in November 2015 Oracle released an out-of-cycle security fix (CVE-2015-4852) in order to fix a deserialization bug in Oracle WebLogic. This education webinar provides an understanding of Java deserialization vulnerabilities, the potential impact for Oracle environments, and strategies to protect an Oracle environment from this class of security vulnerabilities.
+		* [Defending against Java Deserialization Vulnerabilities - Luca Carettoni(2016)](https://www.ikkisoft.com/stuff/Defending_against_Java_Deserialization_Vulnerabilities.pdf)
+		* [Deserialization: what, how and why [not] - Alexei Kojenov(AppSecUSA2018)](https://www.youtube.com/watch?v=t-zVC-CxYjw)
+			* Insecure deserialization was recently added to OWASP's list of the top 10 most critical web application security risks, yet it is by no means a new vulnerability category. For years, data serialization and deserialization have been used in applications, services and frameworks, with many programming languages supporting them natively. Deserialization got more attention recently as a potential vehicle to conduct several types of attacks: data tampering, authentication bypass, privilege escalation, various injections and, ultimately, remote code execution. Two prominent vulnerabilities in Apache Commons and Apache Struts, both allowing remote code execution, also contributed to raising awareness of this risk. We will discuss how data serialization and deserialization are used in software, the dangers of deserializing untrusted input, and how to avoid insecure deserialization vulnerabilities. The presentation will contain several code examples with live demos of bypassing security controls due to incorrect deserialization. The examples and demos will use Java and its native serialization, but the techniques can be extrapolated to other languages and formats.
+		* [Java Serialization security issues - Erno Jeges - OWASP Bay Area(2018)](https://www.youtube.com/watch?v=uur5B0rFMkQ)
+			* In this short talk, we'll take a look at the various security issues coming from deserializing untrusted data in Java: information disclosure, denial of service, and even code execution. We'll examine these issues through live demonstrations with step-by-step explanations of what can go wrong – and how. Most importantly, we'll discuss several best practices and countermeasures you can use as a developer to protect yourself from these issues – or prevent them from affecting you in the first place.	
+		* [Deserialization: what, how and why [not] - Alexei Kojenov(AppSec USA2018)](https://www.youtube.com/watch?v=t-zVC-CxYjw)
+			* [Slides](https://drive.google.com/file/d/1o8VPE4nwNLb9cAYfG-3gM4WR4CY7FwoT/view)
+			* [Code](https://github.com/kojenov/serial)
+			* Insecure deserialization was recently added to OWASP's list of the top 10 most critical web application security risks, yet it is by no means a new vulnerability category. For years, data serialization and deserialization have been used in applications, services and frameworks, with many programming languages supporting them natively. Deserialization got more attention recently as a potential vehicle to conduct several types of attacks: data tampering, authentication bypass, privilege escalation, various injections and, ultimately, remote code execution. Two prominent vulnerabilities in Apache Commons and Apache Struts, both allowing remote code execution, also contributed to raising awareness of this risk. We will discuss how data serialization and deserialization are used in software, the dangers of deserializing untrusted input, and how to avoid insecure deserialization vulnerabilities. The presentation will contain several code examples with live demos of bypassing security controls due to incorrect deserialization. The examples and demos will use Java and its native serialization, but the techniques can be extrapolated to other languages and formats.
+		* [Marshalling Pickles - Chris Frohoff & Gabriel Lawrence(OWASPAppSec California2015)](https://www.youtube.com/watch?v=KSA7vUkXGSg)
+			* Object serialization technologies allow programs to easily convert in-memory objects to and from various binary and textual data formats for storage or transfer – but with great power comes great responsibility, because deserializing objects from untrusted data can ruin your day. We will look at historical and modern vulnerabilities across different languages and serialization technologies, including Python, Ruby, and Java, and show how to exploit these issues to achieve code execution. We will also cover some strategies to protect applications from these types of attacks.
+		* [Automated Discovery of Deserialization Gadget Chains - Ian Haken(Defcon26)](https://www.youtube.com/watch?v=wPbW6zQ52w8)
+			* [Slides](https://i.blackhat.com/us-18/Thu-August-9/us-18-Haken-Automated-Discovery-of-Deserialization-Gadget-Chains.pdf)
+		* [New Exploit Technique In Java Deserialization Attack - Yang Zhang, Yongtao Wang, Keyi Li, Kunzhe Chai(BHEU2019)](https://www.youtube.com/watch?v=Lv9BC_bYaI8)
+			* In our depth research, we analyzed more than 10000+ Java third-party libraries and found many cases which can be exploited in real-world attack scenarios. In this talk, we will bat around the principle and exploit technique of these vulnerabilities. Also, we will present how to pwn target server by our new exploit technique. It can not only improve the effect of java deserialization vulnerability but also enhance other Java security issues impact, and we will discuss profound impacts of the attack vector in the java security field.
 	* **Papers**
 		* [Java Unmarshaller Security - Turning your data into code execution](https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true)
 			* This paper presents an analysis, including exploitation details, of various Java open-source marshalling libraries that allow(ed) for unmarshalling of arbitrary, attacker supplied, types and shows that no matter how this process is performed and what implicit constraints are in place it is prone to similar exploitation techniques.
@@ -3688,6 +3696,11 @@ https://www.youtube.com/watch?v=qDoBlLwREYk&list=PLwvifWoWyqwqkmJ3ieTG6uXUSuid95
 			* A collection of Java Deserialization Exploits
 		* [Java Deserialization Exploits](https://github.com/Coalfire-Research/java-deserialization-exploits)
 			* A collection of curated Java Deserialization Exploits
+* **.NET**
+		* [.NET Serialization: Detecting and defending vulnerable endpoints - Alvaro Munez(LocoMocoSec2018)](https://www.youtube.com/watch?v=qDoBlLwREYk&list=PLwvifWoWyqwqkmJ3ieTG6uXUSuid95L33&index=9)
+			* 2016 was the year of Java deserialization apocalypse. Although Java Deserialization attacks were known for years, the publication of the Apache Commons Collection Remote Code Execution gadget (RCE from now on) finally brought this forgotten vulnerability to the spotlight and motivated the community to start finding and fixing these issues. .NET is next in line; formatters such as BinaryFormatter and NetDataContractSerializer are known to share similar mechanics which make them potentially vulnerable to similar RCE attacks. However, as we saw with Java before, the lack of RCE gadgets led some software vendors to not take this issue seriously. In this talk, we will analyze .NET serializers including third party JSON parsers for potential RCE vectors. We will provide real-world examples of vulnerable code and more importantly, we will review how these vulnerabilities were detected and fixed in each case.
+		* [Friday the 13th: Attacking JSON - Alvaro Muñoz & Oleksandr Mirosh(AppSecUSA 2017)](https://www.youtube.com/watch?v=NqHsaVhlxAQ)
+			* 2016 was the year of Java deserialization apocalypse. Although Java Deserialization attacks were known for years, the publication of the Apache Commons Collection Remote Code Execution (RCE from now on) gadget finally brought this forgotten vulnerability to the spotlight and motivated the community to start finding and fixing these issues. One of the most suggested solutions for avoiding Java deserialization issues was to move away from Java Deserialization altogether and use safer formats such as JSON. In this talk, we will analyze the most popular JSON parsers in both .NET and Java for potential RCE vectors. We will demonstrate that RCE is also possible in these libraries and present details about the ones that are vulnerable to RCE by default. We will also discuss common configurations that make other libraries vulnerable. In addition to focusing on JSON format, we will generalize the attack techniques to other serialization formats. In particular, we will pay close attention to several serialization formats in .NET. These formats have also been known to be vulnerable since 2012 but the lack of known RCE gadgets led some software vendors to not take this issue seriously. We hope this talk will change this. With the intention of bringing the due attention to this vulnerability class in .NET, we will review the known vulnerable formats, present other formats which we found to be vulnerable as well and conclude presenting several gadgets from system libraries that may be used to achieve RCE in a stable way: no memory corruption -- just simple process invocation. Finally, we will provide recommendations on how to determine if your code is vulnerable, provide remediation advice, and discuss alternative approaches.
 * **PHP**
 	* See [the PHP section for PHP Specific attacks](#php)
 	* **Articles/Blogposts/Writeups**
@@ -3702,11 +3715,16 @@ https://www.youtube.com/watch?v=qDoBlLwREYk&list=PLwvifWoWyqwqkmJ3ieTG6uXUSuid95
 		* [Exploiting misuse of Python's "pickle"](https://blog.nelhage.com/2011/03/exploiting-pickle/)
 		* [What Do WebLogic, WebSphere, JBoss, Jenkins, OpenNMS, and Your Application Have in Common? This Vulnerability. - breenmachine](https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/)
 		* [Python web frameworks and pickles - Nicolas Oberli](https://www.balda.ch/posts/2013/Jun/23/python-web-frameworks-pickle/)
+	* **Talks**
+			* [Marshalling Pickles - Chris Frohoff & Gabriel Lawrence(OWASPAppSec California2015)](https://www.youtube.com/watch?v=KSA7vUkXGSg)
+				* Object serialization technologies allow programs to easily convert in-memory objects to and from various binary and textual data formats for storage or transfer – but with great power comes great responsibility, because deserializing objects from untrusted data can ruin your day. We will look at historical and modern vulnerabilities across different languages and serialization technologies, including Python, Ruby, and Java, and show how to exploit these issues to achieve code execution. We will also cover some strategies to protect applications from these types of attacks.
 * **Ruby**
 	* See [the PHP section for PHP Specific attacks](#ruby)
 	* **Articles/Blogposts/Writeups**
 		* [Ruby 2.x Universal RCE Deserialization Gadget Chain - Luke Jahnke(2018)](https://www.elttam.com/blog/ruby-deserialization/)
-
+	* **Talks**
+		* [Marshalling Pickles - Chris Frohoff & Gabriel Lawrence(OWASPAppSec California2015)](https://www.youtube.com/watch?v=KSA7vUkXGSg)
+			* Object serialization technologies allow programs to easily convert in-memory objects to and from various binary and textual data formats for storage or transfer – but with great power comes great responsibility, because deserializing objects from untrusted data can ruin your day. We will look at historical and modern vulnerabilities across different languages and serialization technologies, including Python, Ruby, and Java, and show how to exploit these issues to achieve code execution. We will also cover some strategies to protect applications from these types of attacks.
 
 
 

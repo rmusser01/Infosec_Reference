@@ -974,24 +974,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ------------------------------------------------------------------------------------------------------------------------------
 ### <a name="harden"></a>General Hardening
 * **101**
@@ -1025,8 +1007,7 @@
 		* [Behind the scenes of iOS and Mac Security - Ivan Krstić(BHUSA 19)](https://www.youtube.com/watch?v=3byNNUReyvE)
 			* The Find My feature in iOS 13 and macOS Catalina enables users to receive help from other nearby Apple devices in finding their lost Macs, while rigorously protecting the privacy of all participants. We will discuss our efficient elliptic curve key diversification system that derives short non-linkable public keys from a user’s keypair, and allows users to find their offline devices without divulging sensitive information to Apple.
 		* [OS X Hardening: Securing a Large Global Mac Fleet - Greg Castle](https://www.usenix.org/conference/lisa13/os-x-hardening-securing-large-global-mac-fleet)
-
-	* **Firewall**
+	* **Firewalls**
 		* [LuLu](https://github.com/objective-see/LuLu)
 			* LuLu is the free open-source macOS firewall that aims to block unauthorized (outgoing) network traffic
 	* **Tools**
@@ -1036,9 +1017,7 @@
 			* A kernel network manager with monitoring and limiting capabilities for macOS.
 		* [OverSight](https://objective-see.com/products/oversight.html)
 			* OverSight monitors a mac's mic and webcam, alerting the user when the internal mic is activated, or whenever a process accesses the webcam.
-
 * **Hardening Windows**<a name="hardwin"></a>
-<fixme>
 	* **101**
 	* **Guides**
 		* [Windows 10 Hardening Checklist](https://github.com/0x6d69636b/windows_hardening)
@@ -1141,65 +1120,6 @@
 	* **ModSecurity**
 		* [ModSecurity](https://www.modsecurity.org/)
 		* [ModSecurity Reference Manual](https://github.com/SpiderLabs/ModSecurity/wiki/Reference-Manual)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,11 +1,11 @@
 # Cheat Sheets & Reference Pages
 
+------------------------------------------------------------------------
+## Table of Contents
+- []()
+------------------------------------------------------------------------
 
 
-
-
-
-	
 ### Cheat Sheets
 * **General Cheat Sheets**
 	* [How to Suck at Information Security](https://zeltser.com/suck-at-security-cheat-sheet/)
@@ -14,10 +14,25 @@
 	* [exp](https://github.com/troydm/exp)
 		* a command line client for explainshell.com
 	* [Malware Archaeology Cheatsheets](https://www.malwarearchaeology.com/cheat-sheets)
-	* [cheat](https://github.com/cheat/cheat)
-		* cheat allows you to create and view interactive cheatsheets on the command-line. It was designed to help remind nix system administrators of options for commands that they use frequently, but not frequently enough to remember.
+	* [Out of Band Exploitation (OOB) CheatSheet - NotSoSecure(2018)]
+	* **Tools**
+		* [cheat](https://github.com/cheat/cheat)
+			* cheat allows you to create and view interactive cheatsheets on the command-line. It was designed to help remind nix system administrators of options for commands that they use frequently, but not frequently enough to remember.
+* **Collection of Multiple**
+	* [Aman Hardikar's Mindmaps](http://www.amanhardikar.com/mindmaps.html)
+	* [Hack3rScroll Mindmaps](https://github.com/hackerscrolls/SecurityTips/tree/master/MindMaps)
+		* Mindmaps for Bugbounties, SSRF, OAUTH 2.0, and iOS Vuln assessment.
+	* [Mobile Application Penetration Testing Cheat Sheet](https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet)
+		* The Mobile App Pentest cheat sheet was created to provide concise collection of high value information on specific mobile application penetration testing topics. 
+	* [Templates and Checklists - Strategic Environmental Research and Development Program/US DoD](https://www.serdp-estcp.org/Tools-and-Training/Installation-Energy-and-Water/Cybersecurity/Templates-and-Checklists)
+		* The Templates and Checklists are the various forms needed to create an RMF package and artifacts that support the completion of the eMASS registration. In addition to the Templates and Checklists, refer to the Cyber Commissioning and the Resources and Tools pages to review and download the Unified Facility Criteria and the Unified Facility Guide Specifications. While the templates and checklists are labeled DoD, ESTCP or Navy, they are fairly organization agnostic and any organization can modify them to suit their own use.
 * **Communication**
 	* [Tips for Troubleshooting Human Communications](https://zeltser.com/human-communications-cheat-sheet/)
+* **Active Directory**
+	* [Active Directory Cheat Sheet](https://github.com/punishell/ADCheatSheet)
+		* Domain Demolition with Frank Castle and Powershell.
+	* [Active Directory Exploitation Cheat Sheet - buftas](https://github.com/buftas/Active-Directory-Exploitation-Cheat-Sheet)
+		* A cheat sheet that contains common enumeration and attack methods for Windows Active Directory.
 * **ARM**
 	* [ARM Assembly Basics Cheatsheet - AzeriaLabs](https://azeria-labs.com/assembly-basics-cheatsheet/)
 	* [ARMwiki - hehyrick.co.uk](https://www.heyrick.co.uk/armwiki/Category:Introduction)
@@ -31,6 +46,10 @@
 	* [Android ADB cheat sheet](https://github.com/maldroid/adb_cheatsheet/blob/master/cheatsheet.pdf?raw=true)
 * **iOS Cheat Sheets**<a name="ios">iOS Cheat Sheets</a>
 	* [OWASP IOS Application Security Testing Cheat Sheet](https://www.owasp.org/index.php/IOS_Application_Security_Testing_Cheat_Sheet#Insecure_data_storage)
+* **Credential Attacks**
+	* Windows
+		* [Credential Dumping Cheatsheet - Ignitetechnologies](https://github.com/Ignitetechnologies/Credential-Dumping)
+			* This cheatsheet is aimed at the Red Teamers to help them understand the fundamentals of Credential Dumping (Sub Technique of Credential Access) with examples.
 * **Exploitation Development Cheat Sheets**<a name="exploitation"></a>
 	* [x86 opcode structure and instruction overview](http://pnx.tf/files/x86_opcode_structure_and_instruction_overview.pdf)
 	* [Nasm x86 reference](https://www.cs.uaf.edu/2006/fall/cs301/support/x86/)
@@ -57,6 +76,8 @@
 	* [Tips & Tricks](https://en.wikibooks.org/wiki/Metasploit/Tips_and_Tricks)
 	* [Meterpreter Paranoid Mode - rapid7](https://github.com/rapid7/metasploit-framework/wiki/Meterpreter-Paranoid-Mode)
 	* [Using the Database in Metasploit](https://www.offensive-security.com/metasploit-unleashed/using-databases/)
+* **Network Monitoring**
+	* [SiLK Toolsuite Quick Reference Guide](https://tools.netsa.cert.org/silk/silk-quickref.pdf)
 * **Network Scanning**
 	* [Nmap](https://highon.coffee/docs/nmap/)
 * **Penetration Testing Related**<a name="pentest"></a>
@@ -75,7 +96,7 @@
 * **PowerShell**
 	* [PowerShell Remoting Cheatsheet - Scott Sutherland](https://blog.netspi.com/powershell-remoting-cheatsheet/)
 * **RE Cheat Sheets**<a name="re"></a>
-	* [Radare2 Cheat-Sheet](https://github.com/pwntester/cheatsheets/blob/master/radare2.md)
+	* [Radare2 Cheat-Sheet](https://github.com/radareorg/radare2/blob/master/doc/intro.md)
 	* [WinDbg Cheat Sheet/mindmap](http://tylerhalfpop.com/2014/08/16/windbg-cheatsheet/)
 	* [Pdf of all WinDbg commands](http://windbg.info/download/doc/pdf/WinDbg_cmds.pdf)
 	* [Arm instruction set](http://simplemachines.it/doc/arm_inst.pdf)
@@ -105,12 +126,15 @@
 	* [OWASP Transport Layer Protection Cheat Sheet](https://www.owasp.org/index.php/Transport_Layer_Protection_Cheat_Sheet)
 	* [OWASP Pinning Cheat Sheet](https://www.owasp.org/index.php/Pinning_Cheat_Sheet)
 	* [OWASP Cryptographic Storage Cheat Sheet](https://www.owasp.org/index.php/Cryptographic_Storage_Cheat_Sheet)
+	* [Web Application Cheatsheet (Vulnhub)](https://github.com/Ignitetechnologies/Web-Application-Cheatsheet)
+		* This cheatsheet is aimed at the CTF Players and Beginners to help them understand Web Application Vulnerablity with examples. 
 * **Windows Cheat Sheets**<a name="windows"></a>
 	* [Windows Startup Application Database](http://www.pacs-portal.co.uk/startup_content.php)
 	* [Windows CMD Reference - ms](https://www.microsoft.com/en-us/download/details.aspx?id=56846)
 	* [Windows Command Line cheatsheet (part 2): WMIC - andreafortuna](https://www.andreafortuna.org/dfir/windows-command-line-cheatsheet-part-2-wmic/)
 	* [Windows CLI gems. Tweets of @wincmdfu](https://github.com/madhuakula/wincmdfu#list-missing-updates)
 		* Windows one line commands that make life easier, shortcuts and command line fu.
+	* [MS "reg" commandreference](http://www.computerhope.com/reg.htm)
 * **Wireless Cheat Sheets**<a name="wifi"></a>
 	* [Management Frames Reference Sheet](http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf)
 * **DB Cheat Sheets**<a name="db"></a>
@@ -120,11 +144,3 @@
 
 
 
-#### Sort
-
-[SiLK Toolsuite Quick Reference Guide](https://tools.netsa.cert.org/silk/silk-quickref.pdf)
-* [MS "reg" commandreference](http://www.computerhope.com/reg.htm)
-http://www.amanhardikar.com/mindmaps.html
-http://www.amanhardikar.com/mindmaps/Practice.html
-
-#### end sort

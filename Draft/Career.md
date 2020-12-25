@@ -33,10 +33,12 @@
 - [Project Management](#projm)
 - [Resume](#resume)
 - [Strategy](#strategy)
+- [Teams](#teams)
 - [Testing](#testing)
 - [Other](#other)
 - [Industry](#industry)
 ---------------------------------------------------------------------------------------------------------
+
 
 
 
@@ -63,6 +65,10 @@
 		* Software engineering as it's taught in universities simply doesn't work. It doesn't produce software systems of high quality, and it doesn't produce them for low cost. Sometimes, even when practiced rigorously, it doesn't produce systems at all.  That's odd, because in every other field, the term "engineering" is reserved for methods that work.  What then, does real software engineering look like? How can we consistently deliver high-quality systems to our customers and employers in a timely fashion and for a reasonable cost? In this session, we'll discuss where software engineering went wrong, and build the case that disciplined Agile methods, far from being "anti-engineering" (as they are often described), actually represent the best of engineering principles applied to the task of software development.
 	* [The Rise of the Meritocracy - Wikipedia](https://en.wikipedia.org/wiki/The_Rise_of_the_Meritocracy)
 		* [...] a book by British sociologist and politician Michael Dunlop Young which was first published in 1958. It describes a dystopian society in a future United Kingdom in which intelligence and merit have become the central tenet of society, replacing previous divisions of social class and creating a society stratified between a merited power-holding elite and a disenfranchised underclass of the less merited. The essay satirised the Tripartite System of education that was being practised at the time.
+	* [Operator: The Well-Rounded Hacker - Matthew Curtin(CircleCityCon2018)](https://www.irongeek.com/i.php?page=videos/circlecitycon2018/circle-city-con-50-209-operator-the-well-rounded-hacker-matthew-curtin)
+		* Technical skills are of little value if they cannot be put to work, which is to say, put in context. While specialization, and even hyperspecialization can provide certain advantages, it comes at a cost: the inability to adjust to changes outside of one's field of expertise. It is no secret that demand for "security professionals" is high, that barriers to entry are great, and that rate of burnout is high. What starts as specialization ends with pigeonholed: trapped in a position that is unrewarding. We introduce the `*Operator*`: a hacker with not only depth of knowledge, but important breadth, and the ability to apply the combination of skills to problems and opportunities encountered over a lifetime.
+* **Attention**
+	* [Attention is your scarcest resource - benkuhn.net](https://www.benkuhn.net/attention/)
 * **Business**<a name="business"></a>
 	* [When Everything That Counts Can’t Be Counted - Joshua M. Brown](https://thereformedbroker.com/2019/06/13/when-everything-that-counts-cant-be-counted/)
 	* [The Trillion-Dollar Vision of Dee Hock - Mitchell Waldrop(FastCompany)](https://www.fastcompany.com/27333/trillion-dollar-vision-dee-hock)
@@ -77,6 +83,8 @@
 	* [Capability Immaturity Model - Wikipedia](https://en.m.wikipedia.org/wiki/Capability_Immaturity_Model)
 		* Capability Immaturity Model (CIMM) in software engineering is a parody acronym, a semi-serious effort to provide a contrast to the Capability Maturity Model (CMM). The Capability Maturity Model is a five point scale of capability in an organization, ranging from random processes at level 1 to fully defined, managed and optimized processes at level 5. The ability of an organization to carry out its mission on time and within budget is claimed to improve as the CMM level increases.
 	* [Explain Security To Business People - wiki.c2](http://wiki.c2.com/?ExplainSecurityToBusinessPeople)
+	* [Sharpe ratio - Wikipedia](https://en.wikipedia.org/wiki/Sharpe_ratio)
+		* In finance, the Sharpe ratio (also known as the Sharpe index, the Sharpe measure, and the reward-to-variability ratio) measures the performance of an investment (e.g., a security or portfolio) compared to a risk-free asset, after adjusting for its risk. It is defined as the difference between the returns of the investment and the risk-free return, divided by the standard deviation of the investment (i.e., its volatility). It represents the additional amount of return that an investor receives per unit of increase in risk. 
 * **Career Growth/Progression**<a name="growth"></a>
 	* [How Developers Stop Learning: Rise of the Expert Beginner - Erik Dietrich](https://daedtech.com/how-developers-stop-learning-rise-of-the-expert-beginner/)
 	* [Your Job Title of Tomorrow: Efficiencer - Erik Dietrich](https://daedtech.com/your-job-title-of-tomorrow-efficiencer/)
@@ -95,6 +103,8 @@
 			* This tool presents a new and interactive way to explore work roles within the NICE Cybersecurity Workforce Framework. It depicts the Cyber Workforce according to five distinct, yet complementary, skill communities. It also highlights core attributes among each of the 52 work roles and offers actionable insights for employers, professionals, and those considering a career in Cyber.
 		* [Q: Why Do Keynote Speakers Keep Suggesting That Improving Security Is Possible? A: Because Keynote Speakers Make Bad Life Decisions and Are Poor Role Models](https://www.usenix.org/conference/usenixsecurity18/presentation/mickens)
 			* Some people enter the technology industry to build newer, more exciting kinds of technology as quickly as possible. My keynote will savage these people and will burn important professional bridges, likely forcing me to join a monastery or another penance-focused organization. In my keynote, I will explain why the proliferation of ubiquitous technology is good in the same sense that ubiquitous Venus weather would be good, i.e., not good at all. Using case studies involving machine learning and other hastily-executed figments of Silicon Valley’s imagination, I will explain why computer security (and larger notions of ethical computing) are difficult to achieve if developers insist on literally not questioning anything that they do since even brief introspection would reduce the frequency of git commits. At some point, my microphone will be cut off, possibly by hotel management, but possibly by myself, because microphones are technology and we need to reclaim the stark purity that emerges from amplifying our voices using rams’ horns and sheets of papyrus rolled into cone shapes. I will explain why papyrus cones are not vulnerable to buffer overflow attacks, and then I will conclude by observing that my new start-up papyr.us is looking for talented full-stack developers who are comfortable executing computational tasks on an abacus or several nearby sticks.
+		* [VB 2019 London Keynote address: The security products we deserve](https://www.youtube.com/watch?v=GHuQC1qLnJ4)
+			* Everybody decries the state of the industry. Everyone hates the over-hyped headlines, the obvious FUD and the shameless snake-oil. So why do we have so much of it? This talk aims to examine several of the dark-patterns that have become perfectly acceptable in infosec and then aims to drill down to their root causes. With any luck, we will also get to discuss some options to chart our way out of this mess.
 		* [How to Start in InfoSec - Mubix](https://gist.github.com/mubix/5737a066c8845d25721ec4bf3139fd31)
 		* ["Firemen vs Safety Matches" - Amélie Koran(ShmooCon XV 2019)](https://www.youtube.com/watch?v=_pej1oHN-pE)
 		* [So, you want to work in security? - Parisa Tabriz(2016)](https://www.freecodecamp.org/news/so-you-want-to-work-in-security-bc6c10157d23/)
@@ -131,12 +141,11 @@
 		* [How to Become a Data Scientist - On your own - Zeeshan Usmani](https://www.datasciencecentral.com/profiles/blogs/how-to-become-a-data-scientist-for-free)
 	* **Penetration Tester**
 		* **Articles & Writeups**
-			* [How to become a pentester - Corelan](https://www.corelan.be/index.php/2015/10/13/how-to-become-a-pentester/)
+			* [How to become a pentester - Corelan(2015)](https://www.corelan.be/index.php/2015/10/13/how-to-become-a-pentester/)
 			* [Attacking Big Business](https://www.cyberis.co.uk/blog/attacking-big-business)	
 			* [10 common mistakes aspiring/new pentesters make - PentesterLab](https://blog.pentesterlab.com/10-common-mistakes-aspiring-new-pentesters-make-b74a81e58934)
 			* [So You Want To Be a Pentester? - Jack Halon](https://jhalon.github.io/becoming-a-pentester/)
 			* [And THIS is Why Penetration Testing Sucks - Ronin Chang](https://www.linkedin.com/pulse/why-penetration-testing-sucks-ronin-chang/)
-			* [So You Want To Be a Pentester? - Jack Halon](https://jhalon.github.io/becoming-a-pentester/)
 			* [World's Worst Penetration Test Report - rant](https://it.toolbox.com/blogs/chiefmonkey/the-worlds-worst-penetration-test-report-by-scumbagpentester-012814)
 			* [Make It Count: Progressing through Pentesting - Bálint Varga-Perke -Silent Signal](https://silentsignal.hu/docs/Make_It_Count_-_Progressing_through_Pentesting_Balint_Varga-Perke_Silent_Signal.pdf)
 		* **On-The-Job Experiences**
@@ -159,9 +168,13 @@
 		* [So you want to be a security engineer? - Niru Ragupathy](https://medium.com/@niruragu/so-you-want-to-be-a-security-engineer-d8775976afb7)
 		* [How to Secure Anything - Veeral Patel](https://github.com/veeral-patel/how-to-secure-anything)
 			* How to systematically secure anything: a repository about security engineering
+	* **Security Researcher**
+		* [So you want to be a web security researcher? - James Kettle(2020)](https://portswigger.net/research/so-you-want-to-be-a-web-security-researcher)
 	* **SRE**
 		* [Google SRE Book - HTML version](https://landing.google.com/sre/sre-book/chapters/part1/)
 		* [Do you have an SRE team yet? How to start and assess your journey - Google](https://cloud.google.com/blog/products/devops-sre/how-to-start-and-assess-your-sre-journey)
+	* **Threat Intel**
+		* [A Top 10 Reading List if You’re Getting Started in Cyber Threat Intelligence - Katie Nickels(2019)](https://medium.com/katies-five-cents/a-top-10-reading-list-if-youre-getting-started-in-cyber-threat-intelligence-c11a18fc9798)
 	* **(Technical) Product & Project Managers**
 		* [Technical Program Managers vs Product Managers vs Product Managers – Technical vs Engineering Managers - Mario Gerard(2018)](https://www.mariogerard.com/technical-program-managers-vs-product-managers-vs-product-managers-technical-vs-engineering-managers/)
 * **CEOs**
@@ -187,7 +200,7 @@
 * **Communication**
 	* [SBAR - Wikipedia](https://en.wikipedia.org/wiki/SBAR)
 		* SBAR is an acronym for Situation, Background, Assessment, Recommendation; a technique that can be used to facilitate prompt and appropriate communication.
-* **Company Culture**<a name="culture"></a>
+* **Company/Org Culture**<a name="culture"></a>
 	* **101**
 		* [The Holloway Syllabus on Company Culture - Haley S. Anderson(2019)](https://www.holloway.com/s/syllabus-company-culture)
 		* [American Cultural Assumption - wiki.c2.com](http://wiki.c2.com/?AmericanCulturalAssumption)
@@ -206,6 +219,8 @@
 			* [Slides](https://www.slideshare.net/MSbluehat/bhv18-keynote-this-is-not-fine-surviving-cynicism-and-building-happy-security-teams)
 		* [Engineering Empathy: Adapting Software Engineering Principles and Process to Security - Craig Ingram, Camille Mackinnon](https://www.blackhat.com/us-20/briefings/schedule/index.html#engineering-empathy-adapting-software-engineering-principles-and-process-to-security-19659)
 			* [Slides](http://i.blackhat.com/USA-20/Wednesday/us-20-Mackinnon-Engineering-Empathy-Adapting-Software-Engineering-Principles-And-Process-To-Security-2.pdf)
+		* ["The Hard Parts of Open Source" by Evan Czaplicki(StrangeLoop2018)](https://www.youtube.com/watch?v=o_4EX4dPppA)
+			* As more people enter /r/elm and the Elm discourse, I have thought a lot about how "online communities" work. Patterns of conflict. Why those patterns exist. Structures that would diffuse that conflict in healthy ways. Initially I just wanted to get yelled at less, but I instead stumbled upon "a cultural history of open source" that may reveal a path to more civil and productive online communication in general. Attendees will leave with (1) an inside perspective on open source projects, (2) a historical and cultural framework that I think can improve online communities right now, and (3) some interesting references and ideas to explore further in their own projects and interactions.
 * **Compensation/Equity**<a name="comp"></a>
 	* See 'Salary Negotiations' under interviewing
 	* [H1B Salary Database - h1bdata.info](https://h1bdata.info/index.php)
@@ -343,6 +358,7 @@
 		* [Deploying Guerrilla Tactics to Combat Stupid Tech Interviews - Erik Dietrch](https://daedtech.com/deploying-guerrilla-tactics-combat-stupid-tech-interviews/)
 		* [Preparing the SRE interview - balthazar-rouberol](https://blog.balthazar-rouberol.com/preparing-the-sre-interview)
 	* **Interview Questions**
+		* [Ask Me This Instead - Kendra Haberkorn](https://www.holloway.com/g/ask-me-this-instead/preview)
 		* [test-your-admin-skills](https://github.com/trimstray/test-your-sysadmin-skills)
 			*  A collection of \*nix Sysadmin Test Questions with Answers for Interview/Exam (2018 Edition).
 		* [Linux System Administrator/DevOps Interview Questions - chassing](https://github.com/chassing/linux-sysadmin-interview-questions/blob/master/README.md)
@@ -351,9 +367,15 @@
 		* [test-your-admin-skills](https://github.com/trimstray/test-your-sysadmin-skills)
 			*  A collection of \*nix Sysadmin Test Questions with Answers for Interview/Exam (2018 Edition).
 		* [Security_Engineer_Interview_Questions - Tad Whitaker](https://github.com/tadwhitaker/Security_Engineer_Interview_Questions/blob/master/security-interview-questions)
+		* [Application Security Engineer Interview Questions](https://github.com/security-prince/Application-Security-Engineer-Interview-Questions)
+		* [Cyber Security and DFIR Interview Questions - kunwar-atul-hax0r.blogspot](https://kunwar-atul-hax0r.blogspot.com/2017/12/cyber-security-and-dfir-interview.html)
+		* [web-sec-interview](https://github.com/zhaoweiho/web-sec-interview)
+			*  Information Security (Web Security/Penetration Testing Direction) Interview Questions/Solutions 信息安全(Web安全/渗透测试方向)面试题/解题思路
+		* [Network Security Engineer Interview Questions - jobinterviewquestions.com](https://www.jobinterviewquestions.com/information-security/network-security-engineer/page/2)
 		* [what-happens-when](https://github.com/alex/what-happens-when)
 			* An attempt to answer the age old interview question "What happens when you type google.com into your browser and press enter?"
 		* [Interview Tips (Information Security) - jigerjain](https://github.com/jigerjain/Interview_Tips)
+		* [fuck-coding-interviews](https://github.com/vinta/fuck-coding-interviews)
 	* **Interview Questions**
 		* [Reverse interview](https://github.com/viraptor/reverse-interview)
 			* This is a list of questions which may be interesting to a tech job applicant. The points are not ordered and many may not apply to a given position, or work type. It was started as my personal list of questions, which grew over time to include both things I'd like to see more of and red flags which I'd like to avoid. I've also noticed how few questions were asked by people I interviewed and I think those were missed opportunities.
@@ -402,24 +424,33 @@
 * **Loyalty**
 	* [Loyalty and Layoffs - David Brady](https://whydavewhy.com/2013/08/16/loyalty-and-layoffs/)
 * **Management**<a name="mgmt"></a>
-	* [Up Or Out: Solving The IT Turnover Crisis - Alex Papadimoulis](http://thedailywtf.com/articles/Up-or-Out-Solving-the-IT-Turnover-Crisis)
-	* [The Wetware Crisis: the Dead Sea effect - Bruce F. Webster](http://brucefwebster.com/2008/04/11/the-wetware-crisis-the-dead-sea-effect/)
-	* [The Tyranny of Structurelessness - Jo freeman](https://www.jofreeman.com/joreen/tyranny.htm)
-	* [Vitality Curve](https://en.m.wikipedia.org/wiki/Vitality_curve)
-	* [Servant leadership - Wikipedia](https://en.wikipedia.org/wiki/Servant_leadership)
-	* ["The Loser" - Warning Signs You're Dating a Loser - Joseph M. Carver](https://www.drjoecarver.com/clients/49355/File/IdentifyingLosers.html)
-	* [Objectives and Key Results(OKR) - Wikipedia](https://en.wikipedia.org/wiki/OKR)
-	* [OKRs: The Fundamentals - niket](https://medium.com/startup-tools/okrs-5afdc298bc28)
-	* [Management by objectives - Wikipedia](https://en.wikipedia.org/wiki/Management_by_objectives)
-	* [Objectives, Goals, Strategies, and Measures - Wikipedia](https://en.wikipedia.org/wiki/OGSM)
-	* [SMART criteria - Wikipedia](https://en.wikipedia.org/wiki/SMART_criteria)
-	* [The Beginner's Guide to OKRs - Felipe Castro](https://felipecastro.com/en/okr/what-is-okr/)
-	* [HN Comment by walterbell on understanding managment](https://news.ycombinator.com/item?id=8881752)
-	* [Sick Systems: How to Keep Someone With You Forever - issendai](http://www.issendai.com/psychology/sick-systems.html)
-		* Things to look out for/be aware of.
-	* [The Manager FAQ - Peter Seebach](http://www.seebs.net/faqs/manager.html)
-	* [Cybersecurity, The C-Suite, & The Boardroom: The Rising Specter Of Director & Officer Liability - Tom Kulik](https://abovethelaw.com/2019/10/cybersecurity-the-c-suite-the-boardroom-the-rising-specter-of-director-officer-liability/)
-	* [re:Work - Management@Google](https://rework.withgoogle.com/subjects/managers/)
+	* **101**
+		* [HN Comment by walterbell on understanding managment](https://news.ycombinator.com/item?id=8881752)
+		* [The Manager FAQ - Peter Seebach](http://www.seebs.net/faqs/manager.html)
+			* The following list is an attempt to cover some of the issues that will invariably come up when hackers without previous experience of the business community first start working in it. Other workers may also find it informative.
+		* [Choosing the Management Track - blog.danielna.com](https://blog.danielna.com/choosing-the-management-track/)
+	* **Getting Better**
+		* ManagerTools
+		* [re:Work - Management@Google](https://rework.withgoogle.com/subjects/managers/)
+	* **Metrics**
+		* [Objectives and Key Results(OKR) - Wikipedia](https://en.wikipedia.org/wiki/OKR)
+		* [OKRs: The Fundamentals - niket](https://medium.com/startup-tools/okrs-5afdc298bc28)
+		* [Management by objectives - Wikipedia](https://en.wikipedia.org/wiki/Management_by_objectives)
+		* [Objectives, Goals, Strategies, and Measures - Wikipedia](https://en.wikipedia.org/wiki/OGSM)
+		* [SMART criteria - Wikipedia](https://en.wikipedia.org/wiki/SMART_criteria)
+		* [The Beginner's Guide to OKRs - Felipe Castro](https://felipecastro.com/en/okr/what-is-okr/)
+	* **Things to know/be aware of**
+		* [Up Or Out: Solving The IT Turnover Crisis - Alex Papadimoulis](http://thedailywtf.com/articles/Up-or-Out-Solving-the-IT-Turnover-Crisis)
+		* [The Wetware Crisis: the Dead Sea effect - Bruce F. Webster](http://brucefwebster.com/2008/04/11/the-wetware-crisis-the-dead-sea-effect/)
+		* [The Tyranny of Structurelessness - Jo freeman](https://www.jofreeman.com/joreen/tyranny.htm)
+		* [Vitality Curve](https://en.m.wikipedia.org/wiki/Vitality_curve)
+		* [Servant leadership - Wikipedia](https://en.wikipedia.org/wiki/Servant_leadership)
+		* ["The Loser" - Warning Signs You're Dating a Loser - Joseph M. Carver](https://www.drjoecarver.com/clients/49355/File/IdentifyingLosers.html)
+		* [Sick Systems: How to Keep Someone With You Forever - issendai](http://www.issendai.com/psychology/sick-systems.html)
+			* Things to look out for/be aware of.
+	* **Industry**
+		* [Cybersecurity, The C-Suite, & The Boardroom: The Rising Specter Of Director & Officer Liability - Tom Kulik](https://abovethelaw.com/2019/10/cybersecurity-the-c-suite-the-boardroom-the-rising-specter-of-director-officer-liability/)
+		* [About Cybersecurity Management and Expectations - Leslie Carhart(2020)](https://tisiphone.net/2020/10/27/about-cybersecurity-management-and-expectations/)
 * **Management Skills**<a name="mgmt"></a>
 	* [Managers - rework.withgoogle.com](https://rework.withgoogle.com/subjects/managers/)
 	* [Manager Tools](https://www.manager-tools.com/)
@@ -450,6 +481,7 @@
 		* [Morale, Mental Health, and Burnout in Remote Teams - Holloway](https://www.holloway.com/g/remote-work/sections/morale-mental-health-and-burnout-in-remote-teams)
 	* **Abusive Behaviour**
 		* [Sick systems: How to keep someone with you forever - Issendai](https://issendai.livejournal.com/572510.html)
+		* [14 Thought-Control Tactics Narcissists Use to Confuse and Dominate You -  Dan Neuharth(2017)](https://www.psychcentral.com/blog/narcissism-decoded/2017/09/14-thought-control-tactics-narcissists-use-to-confuse-and-dominate-you)
 	* **Burnout**
 		* [13 Surprising Signs of Burnout You May Be Missing - thriveglobal](https://thriveglobal.com/stories/13-surprising-signs-of-burnout-you-may-be-missing/)
 		* [Burnout and the Brain - Alexandra Michel(psychologicalscience.org)](https://www.psychologicalscience.org/observer/burnout-and-the-brain)
@@ -591,22 +623,26 @@
 	* **Talks/Presentations/Videos**
 		* [Good Strategy/Bad Strategy: the difference and why it matters - Prof. Richard Rumelt(LSE Events)(2011)](https://www.youtube.com/watch?v=UZrTl16hZdk)
 			* Developing and implementing a strategy is the central task of any leader. Richard Rumelt shows that there has been a growing and unfortunate tendency to equate motherhood and apple-pie values and fluffy packages of buzzwords with "strategy."
-* **Teams**
-	* **Books**
-		* Five Dysfunctions of a Team
-		* [The Goal](https://en.wikipedia.org/wiki/The_Goal_(novel))
-			* The Phoenix Project & The Unicorn Project
-		* I think should b read anyways despite whatever personal opinions on them(Better to know than not)
-			* 48 Laws of Power
-			* The Prince - Machiavelli
+* **Teams**<a name="teams"></a>
+	* **Building a Team**
+		* [How to Size and Assess Teams From an Eng Lead at Stripe, Uber and Digg - FirstRoundReview](https://firstround.com/review/how-to-size-and-assess-teams-from-an-eng-lead-at-stripe-uber-and-digg/)
+		* [Scaling engineering organizations - Raylene Yung(Stripe)](https://stripe.com/atlas/guides/scaling-eng)
+			* Lessons learned from scaling Stripe's engineering team.
+	* **Leading a Team**
+	* **Operating in a Team**
+	* **Understanding Teams**
+		* **Books**
+			* Five Dysfunctions of a Team
+			* [The Goal](https://en.wikipedia.org/wiki/The_Goal_(novel))
+				* The Phoenix Project & The Unicorn Project
+			* I think should b read anyways despite whatever personal opinions on them(Better to know than not)
+				* 48 Laws of Power
+				* The Prince - Machiavelli
 	* **Articles/Blogposts/Writeups**
 		* [Don’t Serve Burnt Pizza (And Other Lessons in Building Minimum Lovable Products) - FirstRoundReview](https://firstround.com/review/dont-serve-burnt-pizza-and-other-lessons-in-building-minimum-lovable-products/)
 		* [This Is What Impactful Engineering Leadership Looks Like - FirstRoundReview](https://firstround.com/review/this-is-what-impactful-engineering-leadership-looks-like/)
 		* [How to Become Insanely Well-Connected - FirstRoundReview](https://firstround.com/review/how-to-become-insanely-well-connected/)
 		* [What are the core team types in Team Topologies? - Matthew Skelton, Manuel Pais(2019)](https://teamtopologies.com/key-concepts-content/what-are-the-core-team-types-in-team-topologies)
-		* [How to Size and Assess Teams From an Eng Lead at Stripe, Uber and Digg - FirstRoundReview](https://firstround.com/review/how-to-size-and-assess-teams-from-an-eng-lead-at-stripe-uber-and-digg/)
-		* [Scaling engineering organizations - Raylene Yung(Stripe)](https://stripe.com/atlas/guides/scaling-eng)
-			* Lessons learned from scaling Stripe's engineering team.
 * **Testing(Certifications/Exams)**<a name="testing"></a>
 	* [Better GIAC Testing with Pancakes - H4cks4panckakes](https://tisiphone.net/2015/08/18/giac-testing/)
 	* [Self-Study SANS SEC503 GCIA - Gary Hoffman](https://www.linkedin.com/pulse/self-study-sans-sec503-gcia-gary-hoffman/)
@@ -621,27 +657,81 @@
 	* **Job Hunting Experiences**
 		* [Farewell, App Academy. Hello, Airbnb. (Part I) - Haseeb Qureshi](https://haseebq.com/farewell-app-academy-hello-airbnb-part-i/)
 * **Industry**<a name="Industry"></a>
+	* **Android**
+		* [Google’s iron grip on Android: Controlling open source by any means necessary - Ron Amadeo(2018)](https://arstechnica.com/gadgets/2018/07/googles-iron-grip-on-android-controlling-open-source-by-any-means-necessary/)
+		* [Internal Google Program Taps Data on Rival Android Apps - Alex Heath, Nick Bastone, Amir Efrati(2020)](https://www.theinformation.com/articles/internal-google-program-taps-data-on-rival-android-apps)
 	* **Ageism in Tech**
 		* [REID v. GOOGLE INC - findlaw](https://caselaw.findlaw.com/ca-supreme-court/1534156.html)
 		* [The Apple engineer who moved Mac to Intel applied to work at the Genius Bar in an Apple store and was rejected - BuisinessInsider](https://www.businessinsider.com/jk-scheinberg-apple-engineer-rejected-job-apple-store-genius-bar-2016-9)
+		* [Lawsuit klaxon: HP, HPE accused of coordinated plan to oust older staff in favor of cheaper, compliant youngsters - Thomas Claburn(2020)](https://www.theregister.com/2020/05/22/hp_hpe_accused_of_coordinated/)
+		* [Cutting ‘Old Heads’ at IBM - Peter Gosselin, Ariana Tobin(2018)](https://features.propublica.org/ibm/ibm-age-discrimination-american-workers/)
+			* As it scrambled to compete in the internet world, the once-dominant tech company cut tens of thousands of U.S. workers, hitting its most senior employees hardest and flouting rules against age bias.
+	* **Anti-Union**
+		* [Amazon's Aggressive Anti-Union Tactics Revealed in Leaked 45-Minute Video - Bryan Menegus(2018)](https://gizmodo.com/amazons-aggressive-anti-union-tactics-revealed-in-leake-1829305201)
+		* [Leaked Amazon Memo Details Plan to Smear Fired Warehouse Organizer: ‘He’s Not Smart or Articulate’ - Paul Blest(2020)]
+		* [Google Urged the U.S. to Limit Protection For Activist Workers - Josh Eidelson, Hassan Kanu, Mark Bergen](https://www.bloomberg.com/news/articles/2019-01-24/google-urged-the-u-s-to-limit-protection-for-activist-workers)
+			* While Google publicly supported employees who protested company policies, it quietly asked the government to narrow the right to organize over work email
+	* **Bribes**
+		* [Former Uber Executive Charged With Paying 'Hush Money' To Conceal Massive Breach - Shannon Bond(2020)](https://www.npr.org/2020/08/20/904113981/former-uber-executive-charged-with-paying-hush-money-to-conceal-massive-breach)
+	* **Censorship/Propaganda**
+		* [A Genocide Incited on Facebook, With Posts From Myanmar’s Military - Paul Mozur(2018)](https://www.nytimes.com/2018/10/15/technology/myanmar-facebook-genocide.html)
+		* [Invisible Censorship: TikTok Told Moderators to Suppress Posts by “Ugly” People and the Poor to Attract New Users - Sam Biddle, Paulo Victor Ribeiro, Tatiana Dias(2020)](https://theintercept.com/2020/03/16/tiktok-app-moderators-users-discrimination/)
+		* [China-Based Executive at U.S. Telecommunications Company Charged with Disrupting Video Meetings Commemorating Tiananmen Square Massacre - Department of Justice(USA - 2020)](https://www.justice.gov/opa/pr/china-based-executive-us-telecommunications-company-charged-disrupting-video-meetings)
+		* [Facebook Fired An Employee Who Collected Evidence Of Right-Wing Pages Getting Preferential Treatment - Craig Silverman, Ryan Mac(2020)](https://www.buzzfeednews.com/article/craigsilverman/facebook-zuckerberg-what-if-trump-disputes-election-results)
+	* **Content Moderators**
+		* [Facebook will pay $52 million in settlement with moderators who developed PTSD on the job - Casey Newton(2020)](https://www.theverge.com/2020/5/12/21255870/facebook-content-moderator-settlement-scola-ptsd-mental-health)
+	* **Dissapearing Messages**
+		* [Uber Criminal Probe Shines Light on Vanishing Message System - Joel Rosenblatt](https://www.bloomberg.com/news/articles/2017-11-28/waymo-trial-delayed-again-with-sharp-words-for-uber-from-judge)
+			* I have this listed here as a thought piece rather than commentary; i.e. Is it better to archive all messages or to have them deleted after so long? If the latter, how long? etc.
+	* **Google Searches**
+		* [An Interview With A Google Search Quality Rater - Matt McGee(2012)](https://searchengineland.com/interview-google-search-quality-rater-108702)
+			* Since at least 2005, Google has been using a large, worldwide focus group to help review its search results and the quality of the web pages that rank well in its algorithm. The people in this program are called Quality Raters and, as you can imagine, the work they do is important to search marketers […]
 	* **History**
 		* [If I Told You I’d Have to Kill You: The Story Behind “The Secret History of Silicon Valley” - Steve Blank](https://steveblank.com/2009/03/23/if-i-told-you-i%e2%80%99d-have-to-kill-you-the-story-behind-the-secret-history-of-silicon-valley/)
-	* **Shady things**
-		* **Articles**
-			* [Amazon Scooped Up Data From Its Own Sellers to Launch Competing Products - Angela Owens(2020)](https://www.wsj.com/amp/articles/amazon-scooped-up-data-from-its-own-sellers-to-launch-competing-products-11587650015)
-			* [Amazon Met With Startups About Investing, Then Launched Competing Products - Dana Mattioloi, Cara Lombardo(2020)](https://www.wsj.com/articles/amazon-tech-startup-echo-bezos-alexa-investment-fund-11595520249)
-			* [What Does It Mean When Apple “Sherlocks” an App? - Justin Pot(2017)](https://www.google.com/amp/s/www.howtogeek.com/297651/what-does-it-mean-when-a-company-sherlocks-an-app)
-			* [Halloween documents - Wikipedia](https://en.m.wikipedia.org/wiki/Halloween_documents)
-				* The Halloween documents comprise a series of confidential Microsoft memoranda on potential strategies relating to free software, open-source software, and to Linux in particular, and a series of media responses to these memoranda. Both the leaked documents and the responses were published by Eric S. Raymond in 1998.
-			* [The IRS Decided to Get Tough Against Microsoft. Microsoft Got Tougher. - ProPublica(2020)](https://www.propublica.org/article/the-irs-decided-to-get-tough-against-microsoft-microsoft-got-tougher)
-			* [Google Forfeits $500 Million Generated by Online Ads & Prescription Drug Sales by Canadian Online Pharmacies - US Department of Justice(2011)](https://www.justice.gov/opa/pr/google-forfeits-500-million-generated-online-ads-prescription-drug-sales-canadian-online)
-			* [How Google Protected Andy Rubin, the ‘Father of Android’ - Daisuke Wakabayashi and Katie Benner(NYT)](https://www.nytimes.com/2018/10/25/technology/google-sexual-harassment-andy-rubin.html)
-			* [Google Urged the U.S. to Limit Protection For Activist Workers - Josh Eidelson, Hassan Kanu, Mark Bergen](https://www.bloomberg.com/news/articles/2019-01-24/google-urged-the-u-s-to-limit-protection-for-activist-workers)
-				* While Google publicly supported employees who protested company policies, it quietly asked the government to narrow the right to organize over work email
-			* [Three Years of Misery Inside Google, the Happiest Company in Tech - Nitasha Tiku](https://www.wired.com/story/inside-google-three-years-misery-happiest-company-tech/)
-			* [When Elon Musk Tried to Destroy a Tesla Whistleblower - Matt Robinson, Zeke Faux](https://www.bloomberg.com/news/features/2019-03-13/when-elon-musk-tried-to-destroy-tesla-whistleblower-martin-tripp)
-			* [Uber Criminal Probe Shines Light on Vanishing Message System - Joel Rosenblatt](https://www.bloomberg.com/news/articles/2017-11-28/waymo-trial-delayed-again-with-sharp-words-for-uber-from-judge)
-			* [Inside The Culture Of Sexism At Riot Games - Cecilia D'Anastasio](https://kotaku.com/inside-the-culture-of-sexism-at-riot-games-1828165483)
+	* **Monopolies/Trusts**
+		* [United States v. Microsoft Corp.(2001) - Wikipedia](https://en.wikipedia.org/wiki/United_States_v._Microsoft_Corp.)
+		* [Halloween documents - Wikipedia](https://en.m.wikipedia.org/wiki/Halloween_documents)
+			* The Halloween documents comprise a series of confidential Microsoft memoranda on potential strategies relating to free software, open-source software, and to Linux in particular, and a series of media responses to these memoranda. Both the leaked documents and the responses were published by Eric S. Raymond in 1998.
+		* [Amazon Scooped Up Data From Its Own Sellers to Launch Competing Products - Angela Owens(2020)](https://www.wsj.com/amp/articles/amazon-scooped-up-data-from-its-own-sellers-to-launch-competing-products-11587650015)
+		* [Amazon Met With Startups About Investing, Then Launched Competing Products - Dana Mattioloi, Cara Lombardo(2020)](https://www.wsj.com/articles/amazon-tech-startup-echo-bezos-alexa-investment-fund-11595520249)
+		* [Former App Store exec testifies Apple's rules are "a weapon against competitors" - Cal Jeffery(2020)](https://www.techspot.com/news/87038-former-app-store-exec-testifies-apple-rules-weapon.html)
+		* [What Does It Mean When Apple “Sherlocks” an App? - Justin Pot(2017)](https://www.google.com/amp/s/www.howtogeek.com/297651/what-does-it-mean-when-a-company-sherlocks-an-app)
+	* **Palantir**
+		* [Inside Palantir, Silicon Valley's Most Secretive Company - William Alden(2016)](https://www.buzzfeednews.com/article/williamalden/inside-palantir-silicon-valleys-most-secretive-company)
+	* **Patent Trolling**
+		* [How much is Microsoft earning from its Android taxes again? - Andrew Orlowski(2014)](https://www.theregister.com/2014/10/07/how_much_is_that_microsoft_android_tax_again/)
+		* [Report: Microsoft making patents royalty-free for Android OEMs - Ryne Hager(201)](https://www.androidpolice.com/2018/10/10/report-microsoft-making-patents-royalty-free-android-oems/)
+	* **Pharmacy Sales**
+		* [Google Forfeits $500 Million Generated by Online Ads & Prescription Drug Sales by Canadian Online Pharmacies - US Department of Justice(2011)](https://www.justice.gov/opa/pr/google-forfeits-500-million-generated-online-ads-prescription-drug-sales-canadian-online)
+	* **Privacy Violations/Spying on the Customer**
+		* [Facebook will pay $550 million to settle class action lawsuit over privacy violations - Devin Coldewey(2020)](https://techcrunch.com/2020/01/29/facebook-will-pay-550-million-to-settle-class-action-lawsuit-over-privacy-violations/)
+		* [ ‘Crush This Lady.’ Inside eBay’s Bizarre Campaign Against a Blog Critic. - Kirsten Grind, Sebastian Herrera(2020)](https://www.wsj.com/articles/ebay-harassment-campaign-pig-cockroach-blog-11593009038)
+	* **Public Monitoring**
+		* [Police Surveilled George Floyd Protests With Help From Twitter-Affiliated Startup Dataminr - Sam Biddle(2020)](https://theintercept.com/2020/07/09/twitter-dataminr-police-spy-surveillance-black-lives-matter-protests/)
+	* **Racism**
+		* [‘Tokenized’: Inside Black Workers’ Struggles at the King of Crypto Start-Ups - Nathaniel Popper(2020)](https://www.nytimes.com/2020/11/27/technology/coinbase-cryptocurrency-black-employees.html?smid=tw-nytimesbusiness&smtyp=cur)
+	* **Sex-related**
+		* [Google reportedly paid Andy Rubin $90 million after he allegedly coerced sex from employee - Chris Welch(2018)](https://www.theverge.com/2018/10/25/18023364/google-andy-rubin-payoff-90-million-sexual-misconduct-harassment)
+			* [How Google Protected Andy Rubin, the ‘Father of Android’ - Daisuke Wakabayashi and Katie Benner(NYT)(2018)](https://www.nytimes.com/2018/10/25/technology/google-sexual-harassment-andy-rubin.html)
+		* [Alphabet Settles Shareholder Suits Over Sexual Harassment Claims - Daisuke Wakabayashi(2020)](https://www.nytimes.com/2020/09/25/technology/google-sexual-harassment-lawsuit-settlement.html)
+		* [Inside The Culture Of Sexism At Riot Games - Cecilia D'Anastasio](https://kotaku.com/inside-the-culture-of-sexism-at-riot-games-1828165483)
+	* **Surveillance of Workers**
+		* [Secret Amazon Reports Expose the Company’s Surveillance of Labor and Environmental Groups - Lauren Kaori Gurley(2020)](https://www.vice.com/en/article/5dp3yn/amazon-leaked-reports-expose-spying-warehouse-workers-labor-union-environmental-groups-social-movements)
+		* [Amazon Is Hiring an Intelligence Analyst to Track 'Labor Organizing Threats' - Lorenzo Franceschi-Bicchierai(2020)](https://www.vice.com/en/article/qj4aqw/amazon-hiring-intelligence-analyst-to-track-labor-organizing-threats)
+		* [Inside Amazon’s Secret Program to Spy On Workers’ Private Facebook Groups -  Lauren Kaori Gurley, Joseph Cox(2020)](https://www.vice.com/en/article/3azegw/amazon-is-spying-on-its-workers-in-closed-facebook-groups-internal-reports-show)
+		* [Google illegally spied on workers before firing them, US labor board alleges - Zoe Schiffer(2020)](https://www.theverge.com/2020/12/2/22047383/google-spied-workers-before-firing-labor-complaint)		
+	**Tax Avoidance/Fraud**
+		* [Google Agrees to Pay Italy $334 Million in Back Taxes - New York Times(2017)](https://www.nytimes.com/2017/05/04/technology/google-italy-tax.html)
+		* [Google shifted $23 billion to tax haven Bermuda in 2017: filing - Reuters](https://www.reuters.com/article/us-google-taxes-netherlands/google-shifted-23-billion-to-tax-haven-bermuda-in-2017-filing-idUSKCN1OX1G9)
+		* [Google will finally stop using controversial Irish and Dutch tax loopholes - Zoe Schiffer(2019)](https://www.theverge.com/2019/12/31/21044662/google-end-tax-loophole-double-irish-dutch-sandwich-2020)
+		* [Google to pay $1 billion in France to settle fiscal fraud probe - Reuters](https://www.reuters.com/article/us-france-tech-google-tax/google-to-pay-1-billion-in-france-to-settle-fiscal-fraud-probe-idUSKCN1VX1SM)
+		* [The IRS Decided to Get Tough Against Microsoft. Microsoft Got Tougher. - ProPublica(2020)](https://www.propublica.org/article/the-irs-decided-to-get-tough-against-microsoft-microsoft-got-tougher)
+	**Tesla**
+		* [When Elon Musk Tried to Destroy a Tesla Whistleblower - Matt Robinson, Zeke Faux(2019)](https://www.bloomberg.com/news/features/2019-03-13/when-elon-musk-tried-to-destroy-tesla-whistleblower-martin-tripp)
+		* [Musk Misses: The Stories You Don’t Hear About Tesla Anymore - Niya Tishan White(2019)](https://medium.com/@windycityn0velist/musk-misses-the-stories-you-dont-hear-about-tesla-anymore-8dfce1d803d2)
+		* [Tesla says its factory is safer. But it left injuries off the books - Will Evans, Alyssa Jeong Perry(2018)](https://revealnews.org/article/tesla-says-its-factory-is-safer-but-it-left-injuries-off-the-books/)
+		* [Tesla Had 3 Times as Many OSHA Violations as the 10 Largest US Plants Combined - Rob Stumpf(2019)](https://www.thedrive.com/news/26727/tesla-had-3-times-as-many-osha-violations-as-the-10-largest-us-plants-combined)
+		* [The Big Tesla Hack: A hacker gained control over the entire fleet, but fortunately he’s a good guy - Fred Lambert(2020)](https://electrek.co/2020/08/27/tesla-hack-control-over-entire-fleet/)
 	* **Stack Ranking**
 		* [Vitality curve - Wikipedia](https://en.wikipedia.org/wiki/Vitality_curve)
 		* [How stack ranking corrupts culture, at Uber and Beyond - Rob Davies(Perdoo)](https://www.perdoo.com/blog/stack-ranking/)
@@ -652,6 +742,7 @@
 		* [ Amazon to drop dreaded stack-ranking performance reviews - Ángel González, Matt Day(SeattleTimes)](https://www.seattletimes.com/business/amazon/amazon-says-it-will-change-performance-reviews-focus-on-staffers-strengths/)
 	* **Unions/Labor Organization**
 		* [Workers can be barred from using company email for union organizing - NLRB - Daniel Wiessner()](https://www.reuters.com/article/labor-disclosure/workers-can-be-barred-from-using-company-email-for-union-organizing-nlrb-idUSL1N28R25I)
+		* [Amazon Is Hiring an Intelligence Analyst to Track 'Labor Organizing Threats' - Lorenzo Franceschi-Bicchierai(2020)](https://www.vice.com/en_us/article/qj4aqw/amazon-hiring-intelligence-analyst-to-track-labor-organizing-threats)
 	* **Wages**
 		* [Techtopus - Pando](https://pando.com/tag/techtopus/)
 		* [Newly unsealed documents show Steve Jobs' brutal response after getting a Google employee fired - Mark Ames](https://pando.com/2014/03/25/newly-unsealed-documents-show-steve-jobs-brutally-callous-response-after-getting-a-google-employee-fired/)

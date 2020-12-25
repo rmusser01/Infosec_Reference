@@ -84,18 +84,5 @@ An Information Security Reference That Doesn't Suck
 	- Commissioner Pravin Lal, Peacekeeping Forces (Alpha Centauri, 1999)
 
 - Another Quote:
-
-	"Nowhere does Bokonon warn against a person’s trying to discover the limits of his karass and the nature of the work God Almighty has had it do. Bokonon simply observes that such investigations are bound to be incomplete. 
-    
-    In the autobiographical section of The Books of Bokanon he writes a parable on the folly of pretending to discover, to understand:
-    
-    I once knew an Episcopalian lady in Newport, Rhode Island, who asked me to design and build a doghouse for her Great Dane. The lady claimed to understand God and His Ways of Working perfectly. She could not understand why anyone should be puzzled about what had been or about what was going to be.
-    
-    And yet, when I showed her a blueprint of the doghouse I proposed to build, she said to me, “I’m sorry, but I never could read one of those things.”
-    
-    “Give it to your husband or your minister to pass on to God,” I said, “and, when God finds a minute, I’m sure he’ll explain this doghouse of mine in a way that even you can understand.”
-    
-    She fired me. I shall never forget her. She believed that God liked people in sailboats much better than He liked people in motorboats. She could not bear to look at a worm. When she saw a worm, she screamed.
-    
-    She was a fool, and so am I, and so is anyone who thinks he sees what God is Doing, [writes Bokonon].
-    - Cat's Cradle(The Books of Bokonon), Kurt Vonnegut
+	* `"Nowhere does Bokonon warn against a person’s trying to discover the limits of his karass and the nature of the work God Almighty has had it do. Bokonon simply observes that such investigations are bound to be incomplete. In the autobiographical section of The Books of Bokanon he writes a parable on the folly of pretending to discover, to understand: I once knew an Episcopalian lady in Newport, Rhode Island, who asked me to design and build a doghouse for her Great Dane. The lady claimed to understand God and His Ways of Working perfectly. She could not understand why anyone should be puzzled about what had been or about what was going to be. And yet, when I showed her a blueprint of the doghouse I proposed to build, she said to me, “I’m sorry, but I never could read one of those things.” “Give it to your husband or your minister to pass on to God,” I said, “and, when God finds a minute, I’m sure he’ll explain this doghouse of mine in a way that even you can understand.” She fired me. I shall never forget her. She believed that God liked people in sailboats much better than He liked people in motorboats. She could not bear to look at a worm. When she saw a worm, she screamed. She was a fool, and so am I, and so is anyone who thinks he sees what God is Doing, [writes Bokonon].`
+	- Cat's Cradle(The Books of Bokonon), Kurt Vonnegut

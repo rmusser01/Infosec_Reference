@@ -1,6 +1,6 @@
 # Building a Lab
 
--------------------------
+-----------------------------------------------------------------------------------------------------------------------------
 ## Table of Contents
 - [General Info](#general)
 	- [101](#101)
@@ -34,10 +34,13 @@
 - [Other Labs](#other)
 	- [Access Methods](#oam)
 	- [Containers/Related](#ocr)
+	- [Defensive CI/CD](#dcicd)
+	- [Offensive CI/CD](#ocicd)
+- [Building a VM/Machine for Remote Testing](#remote)
 - [Infrastructure Automation](#infra)
 	- [101](#i101)
 	- [Tooling](#infrauto)
-
+-----------------------------------------------------------------------------------------------------------------------------
 
 
 * **To Do**

@@ -69,7 +69,7 @@
 		* [Deployment](https://github.com/mozilla/send/blob/master/docs/deployment.md)
 			* This document describes how to do a full deployment of Firefox Send on your own Linux server.
 		* [ffsend](https://github.com/timvisee/ffsend)
-			* Easily and securely share files from the command line. A fully featured Firefox Send client. 
+			* Easily and securely share files from the command line. A fully featured Firefox Send client.
 
 
 
@@ -103,7 +103,7 @@
 		* [Proxmox - free](https://www.proxmox.com/en/)
 		* [VMware vSphere - free](https://www.vmware.com/products/vsphere-hypervisor.html)
 		* [Xen - free](https://www.xenproject.org/)
-* **VirtualBox
+* **VirtualBox**
 * **VMware(Workstation/vSphere/ESXi)**
 	* **VM Snapshots**
 		* [Understanding VM snapshots in ESXi (1015180) - vmware.com](https://kb.vmware.com/s/article/1015180)
@@ -144,7 +144,7 @@
 		* [Detection Lab](https://github.com/clong/DetectionLab)
 			* Vagrant & Packer scripts to build a lab environment complete with security tooling and logging best practices. This lab has been designed with defenders in mind. Its primary purpose is to allow the user to quickly build a Windows domain that comes pre-loaded with security tooling and some best practices when it comes to system logging configurations. It can easily be modified to fit most needs or expanded to include additional hosts.
 		* [DetectionLabELK](https://github.com/cyberdefenders/DetectionLabELK)
-			* DetectionLabELK is a fork from DetectionLab with ELK stack instead of Splunk. 
+			* DetectionLabELK is a fork from DetectionLab with ELK stack instead of Splunk.
 * **VMs/Apps Designed to be Attacked**
 	* [List of VMs that are preconfigured virtual machines](http://www.amanhardikar.com/mindmaps/PracticeUrls.html)
 	* [The Hacker Games - Hack the VM before it hacks you](http://www.scriptjunkie.us/2012/04/the-hacker-games/)
@@ -165,10 +165,10 @@
 			* [lambhack](https://github.com/wickett/lambhack)
 				* A vulnerable serverless lambda application. This is certainly a bad idea to base any coding patterns of what you see here. lambhack allows you to take advantage of our tried and true application security problems, namely arbitrary code execution, XSS, injection attacks aand more. This first release only contains arbitrary code execution through the query string. Please feel free to contribute new vulnerabilities.
 	* **Docker**
-		* [Down by the Docker](https://www.notsosecure.com/vulnerable-docker-vm/)
-			* Ever fantasized about playing with docker misconfigurations, privilege escalation, etc. within a container? Download this VM, pull out your pentest hats and get started 
-		* [Vulhub - Some Docker-Compose files for vulnerabilities environment](https://github.com/vulhub/vulhub)
 		* [Vulnerable Docker VM - notsosecure](https://www.notsosecure.com/vulnerable-docker-vm/)
+			* Ever fantasized about playing with docker misconfigurations, privilege escalation, etc. within a container? Download this VM, pull out your pentest hats and get started
+		* [Vulhub - Some Docker-Compose files for vulnerabilities environment](https://github.com/vulhub/vulhub)
+
 	* **Exploit Development**
 		* [exploit_me](https://github.com/bkerler/exploit_me)
 			* Very vulnerable ARM application (CTF style exploitation tutorial for ARM, but portable to other platforms)
@@ -177,9 +177,9 @@
 	* **Router**
 		* [iv-wrt](https://github.com/iv-wrt/iv-wrt)
 			* An Intentionally Vulnerable Router Firmware Distribution
-	* **'Serverless'**
+	* **Serverless**
 		* [ServerlessGoat](https://github.com/OWASP/Serverless-Goat)
-			* This serverless application demonstrates common serverless security flaws as described in the Serverless Security Top 10 Weaknesses guide https://github.com/puresec/sas-top-10. 
+			* This serverless application demonstrates common serverless security flaws as described in the Serverless Security Top 10 Weaknesses guide https://github.com/puresec/sas-top-10.
 	* **Terraform**
 		* [TerraGoat](https://github.com/bridgecrewio/terragoat)
 			* TerraGoat is Bridgecrew's "Vulnerable by Design" Terraform repository. TerraGoat is a learning and training project that demonstrates how common configuration errors can find their way into production cloud environments.
@@ -336,7 +336,7 @@
 			* I'm a big fan of automation with tools such as Ansible, Vagrant and Terrorm now being put to regular use by me. Also, as a Red Team Operator I spend a lot of time modelling attacks up, trying new ideas out and generally keeping myself 'sharp'. I wanted to create something that help me to scratch all of these itches. The research and development culminated in my [BSides Belfast 2019 presentation: Offensive Ansible for Red Teams (Attack, Build, Learn)](https://github.com/jckhmr/presentations/blob/master/BSidesBelfast2019_Final_Optimized.pptx?raw=true).
 		* [How to Build an Active Directory Hacking Lab - TheCyberMentor](https://www.youtube.com/watch?v=xftEuVQ7kY0)
 		* [PAW deployment guide - Jian Yan(2018)](https://blogs.technet.microsoft.com/datacentersecurity/2018/04/30/paw-deployment-guide/)
-		* This blogpost only focusses on one aspect, which is the PAW deployment, including the backend servers. 
+		* This blogpost only focusses on one aspect, which is the PAW deployment, including the backend servers.
 		* [Step-by-Step Guide to install Active Directory in Windows Server 2019 (PowerShell Guide) - Disham M. Francis(2018)](http://www.rebeladmin.com/2018/10/step-step-guide-install-active-directory-windows-server-2019-powershell-guide/)
 		* [Lab Building Guide: Virtual Active Directory - Vartai Security(2020)](https://medium.com/@vartaisecurity/lab-building-guide-virtual-active-directory-5f0d0c8eb907)
 		* [Building a lab with Server 2019 Server Core and PowerShell …then attacking it! - Neil Lines(2020)](https://www.pentestpartners.com/security-blog/building-a-lab-with-server-2019-server-core-and-powershell-then-attacking-it/)
@@ -435,7 +435,7 @@
 
 
 -------------------------
-### <a name="pentest"></a> Building a Pentest lab
+### Building a Pentest Lab<a name="pentest"></a>
 * **Building a Lab Basics**<a name="blb"></a>
 	* **Articles/Blogposts/Writeups**
 		* [DarthSidious](https://chryzsh.gitbooks.io/darthsidious/content/)
@@ -523,7 +523,7 @@
 	* [Webcast: Implementing Sysmon and Applocker - BHIS(2019)](https://www.blackhillsinfosec.com/webcast-implementing-sysmon-and-applocker/)
 	* [Webcast: Windows logging, Sysmon, and ELK - BHIS(2019)](https://www.blackhillsinfosec.com/webcast-windows-logging-sysmon-and-elk/)
 	* [Webcast: Let’s Talk About ELK Baby, Let’s Talk About You and AD - BHIS(2020)](https://www.blackhillsinfosec.com/webcast-lets-talk-about-elk-baby-lets-talk-about-you-and-ad/)
-		* This webcast is going to demonstrate an integration between our ongoing Windows baseline best practices configuration and improving your endpoint optics. But first, we’re going to summarize some previous webcasts, their content, and the order in which they should be reviewed to tie all of these things together. Then, with all the baseline content and configuration options summarized, we are going to help you put a bow on all that, just in time for the Holidays. 
+		* This webcast is going to demonstrate an integration between our ongoing Windows baseline best practices configuration and improving your endpoint optics. But first, we’re going to summarize some previous webcasts, their content, and the order in which they should be reviewed to tie all of these things together. Then, with all the baseline content and configuration options summarized, we are going to help you put a bow on all that, just in time for the Holidays.
 	* [Virtual Smart Cards for Lab Environments - Eddie David(Derbycon2019)](https://www.irongeek.com/i.php?page=videos/derbycon9/stable-40-virtual-smart-cards-for-lab-environments-eddie-david)
 		* Have you ever wanted to learn what a virtual smart card is? How to set them up? Are you running gear in your lab with no TPM security chips? This is something unique that I do for my lab environments with Hyper-V. It's very real world as there are high security organizations out there that do use smart cards.This talk will dive into what is minimally involved to set this environment up so you can run your labs in a password less way.
 * **Application Whitelisting**
@@ -610,14 +610,10 @@
 
 
 
-
-
-
-
-
-
-
-
+-------------------------------------------------------
+### Building a VM/Machine for Remote Testing <a name="remote"></a>
+* **Remote Access**
+	* [Creating an Internal Pen Test VM with Ngrok - FortyNorthSecurity(2020)](https://fortynorthsecurity.com/blog/ngrok-internal-pen-test-vm/)
 
 
 
@@ -686,7 +682,7 @@
 			* MicroMDM is a project which provides an open source Mobile Device Management server for Apple devices. Our goal is to create a performant and extensible device management solution for enterprise and education.
 * **Defensive CI/CD**<a name="dcicd"></a>
 	* **F**
-		*  See [Programming/Appsec.md](#./Programming_Language_Security.md)
+		*  See [AppSec/Programming Stuff](Programming_Language_Security.md)
 * **Offensive CI/CD**<a name="ocicd"></a>
 	* **Agnostic(not really) Talks**
 		* [Offensive Development: How To DevOps Your Red Team - Dominic Chell(BSidesMCR2019)](https://www.youtube.com/watch?v=n5_V61NI0tA)
@@ -734,14 +730,6 @@
 	* **Policy Enforcement**
 		* [Leveraging DevSecOps Practices to Secure Red Team Infrastructure - Jesse Somerville(2020)](https://www.praetorian.com/blog/leveraging-devsecops-practices-to-manage-red-team-infrastructure)
 
-
-
-
-
--------------------------------------------------------
-### Infrastructure Automation <a name="remote"></a>
-* **Remote Access**
-	* [Creating an Internal Pen Test VM with Ngrok - FortyNorthSecurity(2020)](https://fortynorthsecurity.com/blog/ngrok-internal-pen-test-vm/)
 
 
 
@@ -795,7 +783,7 @@
 			* Project Axiom is a set of utilities for managing a small dynamic infrastructure setup for bug bounty and pentesting.
 	* **Package Management**
 		* [fpm](https://github.com/jordansissel/fpm)
-			*  Effing package management! Build packages for multiple platforms (deb, rpm, etc) with great ease and sanity. 
+			*  Effing package management! Build packages for multiple platforms (deb, rpm, etc) with great ease and sanity.
 * **Sort**
 	* [Imaginary C2](https://github.com/felixweyne/imaginaryC2)
 		* A python tool which aims to help in the behavioral (network) analysis of malware. Imaginary C2 hosts a HTTP server which captures HTTP requests towards selectively chosen domains/IPs. Additionally, the tool aims to make it easy to replay captured Command-and-Control responses/served payloads.

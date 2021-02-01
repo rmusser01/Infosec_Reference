@@ -1,6 +1,5 @@
 # Attacking & Securing Active Directory
 
----------------------------------------------------------------------------------------------------------------------------------
 ## Table of Contents
 - [Active Directory](#active-directory)
 - [Attacking AD 101](#adatk101)
@@ -32,12 +31,9 @@
 | [WSUS](#wsus) | |
 | [MS Exchange](#msexchange) | |
 
----------------------------------------------------------------------------------------------------------------------------------
 
-
----------------------------------------------------------------------------------------------------------------------------------
-### <a name="active-directory"></a>Active Directory
-* **Looking for Azure? Check the Cloud page**
+## <a name="active-directory"></a>Active Directory
+* **Looking for Azure? Check the [Cloud](Cloud.md) page**
 * **101**
 	* [What is Active Directory Domain Services and how does it work?](https://serverfault.com/questions/402580/what-is-active-directory-domain-services-and-how-does-it-work#)
 	* [The Most Common Active Directory Security Issues and What You Can Do to Fix Them - Sean Metcalf](https://adsecurity.org/?p=1684)
@@ -267,7 +263,7 @@
 			* [Security Focus: Analysing 'Account is sensitive and cannot be delegated' for Privileged Accounts - Ian Fann(2015)](https://blogs.technet.microsoft.com/poshchap/2015/05/01/security-focus-analysing-account-is-sensitive-and-cannot-be-delegated-for-privileged-accounts/)
 			* [Delegating like a boss: Abusing Kerberos Delegation in Active Directory - Kevin Murphy](https://www.guidepointsecurity.com/2019/09/04/delegating-like-a-boss-abusing-kerberos-delegation-in-active-directory/)
 			    * I wanted to write a post that could serve as a (relatively) quick reference for how to abuse the various types of Kerberos delegation that you may find in an Active Directory environment during a penetration test or red team engagement.
-			* [Kerberos Tickets on Linux Red Teams - Trevor Haskell(2020)](https://www.fireeye.com/blog/threat-research/2020/04/kerberos-tickets-on-linux-red-teams.html)   
+			* [Kerberos Tickets on Linux Red Teams - Trevor Haskell(2020)](https://www.fireeye.com/blog/threat-research/2020/04/kerberos-tickets-on-linux-red-teams.html)
 			* [Kerberos Double-Hop Workarounds - slayerlabs.com(2020)](https://posts.slayerlabs.com/double-hop/)
 		* **Talks & Presentations**
 			* [Attacking Microsoft Kerberos: Kicking the Guard Dog of Hades](https://www.irongeek.com/i.php?page=videos/derbycon4/t120-attacking-microsoft-kerberos-kicking-the-guard-dog-of-hades-tim-medin)
@@ -343,11 +339,11 @@
 			* PowerShell MachineAccountQuota and DNS exploit tools
 			* [Blogpost](https://blog.netspi.com/exploiting-adidns/)
 	* **MS SQL Server**<a name="mssql"></a>
-			* [Hacking SQL Server on Scale with PowerShell - Secure360 2017](https://www.slideshare.net/nullbind/2017-secure360-hacking-sql-server-on-scale-with-powershell)
-			* [Using SQL Server for attacking a Forest Trust](http://www.labofapenetrationtester.com/2017/03/using-sql-server-for-attacking-forest-trust.html)
-			* [PowerUpSQL](https://github.com/NetSPI/PowerUpSQL/wiki)
-				* [2018 Blackhat USA Arsenal Presentation](https://www.youtube.com/watch?reload=9&v=UX_tBJQtqW0&feature=youtu.be)
-			* [SQL Server – Link… Link… Link… and Shell: How to Hack Database Links in SQL Server! - Annti Rantasaari(2013)](https://blog.netspi.com/how-to-hack-database-links-in-sql-server/)
+		* [Hacking SQL Server on Scale with PowerShell - Secure360 2017](https://www.slideshare.net/nullbind/2017-secure360-hacking-sql-server-on-scale-with-powershell)
+		* [Using SQL Server for attacking a Forest Trust](http://www.labofapenetrationtester.com/2017/03/using-sql-server-for-attacking-forest-trust.html)
+		* [PowerUpSQL](https://github.com/NetSPI/PowerUpSQL/wiki)
+			* [2018 Blackhat USA Arsenal Presentation](https://www.youtube.com/watch?reload=9&v=UX_tBJQtqW0&feature=youtu.be)
+		* [SQL Server – Link… Link… Link… and Shell: How to Hack Database Links in SQL Server! - Annti Rantasaari(2013)](https://blog.netspi.com/how-to-hack-database-links-in-sql-server/)
 	* **NTLM Reflection**
 		* **101**
 			* [Windows: DCOM DCE/RPC Local NTLM Reflection Elevation of Privilege](https://bugs.chromium.org/p/project-zero/issues/detail?id=325&redir=1)
@@ -413,7 +409,7 @@
 	* **Trusts**<a name="trusts"></a>
 		* **101**
 			* [Primary and Trusted Domains - docs.ms](https://docs.microsoft.com/en-us/windows/win32/secmgmt/primary-and-trusted-domains)
-		* **Articles/Blogposts/Writeups** 
+		* **Articles/Blogposts/Writeups**
 			* [A Guide to Attacking Domain Trusts](http://www.harmj0y.net/blog/redteaming/a-guide-to-attacking-domain-trusts/)
 			* [It's All About Trust – Forging Kerberos Trust Tickets to Spoof Access across Active Directory Trusts](https://adsecurity.org/?p=1588)
 			* [Active Directory forest trusts part 1 - How does SID filtering work?](https://dirkjanm.io/active-directory-forest-trusts-part-one-how-does-sid-filtering-work)
@@ -436,7 +432,7 @@
 				* [Slides](https://www.blackhat.com/docs/us-17/wednesday/us-17-Coltel-WSUSpendu-Use-WSUS-To-Hang-Its-Clients.pdf)
 				* [Paper](https://www.blackhat.com/docs/us-17/wednesday/us-17-Coltel-WSUSpendu-Use-WSUS-To-Hang-Its-Clients-wp.pdf)
 				* [SSTIC 2017 Version of the Talk](https://www.youtube.com/watch?v=2M8ux6ESIAs)
-				* We will present a new approach, allowing you to circumvent limitations and control the targeted network from the very WSUS server you own. By extension, this approach may serve as a basis for an air gap attack for disconnected networks. 
+				* We will present a new approach, allowing you to circumvent limitations and control the targeted network from the very WSUS server you own. By extension, this approach may serve as a basis for an air gap attack for disconnected networks.
 			* [WSUSpendu](https://github.com/AlsidOfficial/WSUSpendu)
 				* Implement WSUSpendu attack
 * **Attack(s/ing)**<a name="adattack"></a>a
@@ -486,7 +482,7 @@
 				* This reference topic for the IT professional describes how Windows authentication processes credentials. Applies To: Windows Server (Semi-Annual Channel), Windows Server 2016
 			* [Cached Credentials: Important Facts That You Cannot Miss - CQURE](https://cqureacademy.com/blog/windows-internals/cached-credentials-important-facts)
 			* [Security Focus: Analysing 'Account is sensitive and cannot be delegated' for Privileged Accounts - Ian Farr(MSFT2015)](https://blogs.technet.microsoft.com/poshchap/2015/05/01/security-focus-analysing-account-is-sensitive-and-cannot-be-delegated-for-privileged-accounts/)
-				* There are a number of configuration options we recommend for securing high privileged accounts. One of them, enabling 'Account is sensitive and cannot be delegated', ensures that an account’s credentials cannot be forwarded to other computers or services on the network by a trusted application. 
+				* There are a number of configuration options we recommend for securing high privileged accounts. One of them, enabling 'Account is sensitive and cannot be delegated', ensures that an account’s credentials cannot be forwarded to other computers or services on the network by a trusted application.
 			* [Protected Users Security Group - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn466518(v%3Dws.11))
 			* AD DS: Fine-Grained Password Policies - docs.ms - `https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770394(v=ws.10)`
 			* [Clearing cached/saved Windows credentials - University of Waterloo](https://uwaterloo.teamdynamix.com/TDClient/1804/Portal/KB/ArticleDet?ID=69756)
@@ -635,7 +631,7 @@
 			* [SpoolSample](https://github.com/leechristensen/SpoolSample)
 			    * PoC tool to coerce Windows hosts authenticate to other machines via the MS-RPRN RPC interface. This is possible via other protocols as well.
 			* [krbrelayx](https://github.com/dirkjanm/krbrelayx)
-				* Kerberos unconstrained delegation abuse toolkit 
+				* Kerberos unconstrained delegation abuse toolkit
 		* **Mitigation**
 			* [ADV190006 | Guidance to mitigate unconstrained delegation vulnerabilities portal.msrc](https://portal.msrc.microsoft.com/en-us/security-guidance/advisory/ADV190006)
 	* **AS-REP Roasting**<a name="asreproasting"></a>
@@ -661,8 +657,6 @@
 			* [Rubeus](https://github.com/GhostPack/Rubeus)
 				* Rubeus is a C# toolset for raw Kerberos interaction and abuses. It is heavily adapted from Benjamin Delpy's Kekeo project (CC BY-NC-SA 4.0 license) and Vincent LE TOUX's MakeMeEnterpriseAdmin project (GPL v3.0 license). Full credit goes to Benjamin and Vincent for working out the hard components of weaponization- without their prior work this project would not exist.
 	* **Kerberoast(ing)**<a name="kerberoasting"></a>
-		* **101**
-			* 
 		* **Articles/Blogposts/Writueps**
 			* [Kerberoasting - Part 1 - mubix](https://room362.com/post/2016/kerberoast-pt1/)
 			* [Kerberoasting - Part 2 - mubix](https://room362.com/post/2016/kerberoast-pt2/)
@@ -671,7 +665,7 @@
 			* [Cracking Kerberos TGS Tickets Using Kerberoast – Exploiting Kerberos to Compromise the Active Directory Domain - adsecurity.org](https://adsecurity.org/?p=2293)
 			* [Kerberoasting Without Mimikatz - Will Schroeder](https://www.harmj0y.net/blog/powershell/kerberoasting-without-mimikatz/)
 			* [Mimikatz 2.0 - Brute-Forcing Service Account Passwords ](https://www.beneaththewaves.net/Projects/Mimikatz_20_-_Brute-Forcing_Service_Account_Passwords.html)
-				* If everything about that ticket-generation operation is valid except for the NTLM hash, then accessing the web application will result in a failure. However, this will not cause a failed logon to appear in the Windows® event log. It will also not increment the count of failed logon attempts for the service account. Therefore, the result is an ability to perform brute-force (or, more realistically, dictionary-based) password checks for such a service account, without locking it out or generating suspicious event log entries. 
+				* If everything about that ticket-generation operation is valid except for the NTLM hash, then accessing the web application will result in a failure. However, this will not cause a failed logon to appear in the Windows® event log. It will also not increment the count of failed logon attempts for the service account. Therefore, the result is an ability to perform brute-force (or, more realistically, dictionary-based) password checks for such a service account, without locking it out or generating suspicious event log entries.
 			* [kerberos, kerberoast and golden tickets - leonjza](https://leonjza.github.io/blog/2016/01/09/kerberos-kerberoast-and-golden-tickets/)
 			* [Extracting Service Account Passwords with Kerberoasting - Jeff Warren](https://blog.stealthbits.com/extracting-service-account-passwords-with-kerberoasting/)
 			* [Cracking Service Account Passwords with Kerberoasting](https://www.cyberark.com/blog/cracking-service-account-passwords-kerberoasting/)
@@ -795,9 +789,9 @@
 * **WIP**
 	* **Defense Evasion**<a name="addefev"></a>
 		* [Evading Microsoft ATA for Active Directory Domination - Nikhil Mittal](https://www.youtube.com/watch?v=bHkv63-1GBY)
-			* Microsoft Advanced Threat Analytics (ATA) is a defense platform which reads information from multiple sources like traffic for certain protocols to the Domain Controller, Windows Event Logs and SIEM events. The information thus collected is used to detect Reconnaissance, Credentials replay, Lateral movement, Persistence attacks etc. Well known attacks like Pass-the-Hash, Pass-the-Ticket, Overpass-the-Hash, Golden Ticket, Directory services replication, Brute-force, Skeleton key etc. can be detected using ATA. 
+			* Microsoft Advanced Threat Analytics (ATA) is a defense platform which reads information from multiple sources like traffic for certain protocols to the Domain Controller, Windows Event Logs and SIEM events. The information thus collected is used to detect Reconnaissance, Credentials replay, Lateral movement, Persistence attacks etc. Well known attacks like Pass-the-Hash, Pass-the-Ticket, Overpass-the-Hash, Golden Ticket, Directory services replication, Brute-force, Skeleton key etc. can be detected using ATA.
 		* [Red Team Techniques for Evading, Bypassing & Disabling MS - Chris Thompson]
-			* Windows Defender Advanced Threat Protection is now available for all Blue Teams to utilize within Windows 10 Enterprise and Server 2012/16, which includes detection of post breach tools, tactics and techniques commonly used by Red Teams, as well as behavior analytics. 
+			* Windows Defender Advanced Threat Protection is now available for all Blue Teams to utilize within Windows 10 Enterprise and Server 2012/16, which includes detection of post breach tools, tactics and techniques commonly used by Red Teams, as well as behavior analytics.
 			* [Slides](https://www.blackhat.com/docs/eu-17/materials/eu-17-Thompson-Red-Team-Techniques-For-Evading-Bypassing-And-Disabling-MS-Advanced-Threat-Protection-And-Advanced-Threat-Analytics.pdf)
 	* **Collection**<a name="adcollect"></a>
 		* **Articles/Blogposts/Writeps**
@@ -1430,7 +1424,7 @@
 	* [The Malware Management Framework](https://www.malwarearchaeology.com/mmf/)
 	* [Securing Windows Workstations: Developing a Secure Baselineadsecurity.org](https://adsecurity.org/?p=3299)
 	* [ADRecon](https://github.com/sense-of-security/ADRecon)
-		* ADRecon is a tool which extracts various artifacts (as highlighted below) out of an AD environment in a specially formatted Microsoft Excel report that includes summary views with metrics to facilitate analysis. The report can provide a holistic picture of the current state of the target AD environment.  It can be run from any workstation that is connected to the environment, even hosts that are not domain members. Furthermore, the tool can be executed in the context of a non-privileged (i.e. standard domain user) accounts. Fine Grained Password Policy, LAPS and BitLocker may require Privileged user accounts. The tool will use Microsoft Remote Server Administration Tools (RSAT) if available, otherwise it will communicate with the Domain Controller using LDAP. 
+		* ADRecon is a tool which extracts various artifacts (as highlighted below) out of an AD environment in a specially formatted Microsoft Excel report that includes summary views with metrics to facilitate analysis. The report can provide a holistic picture of the current state of the target AD environment.  It can be run from any workstation that is connected to the environment, even hosts that are not domain members. Furthermore, the tool can be executed in the context of a non-privileged (i.e. standard domain user) accounts. Fine Grained Password Policy, LAPS and BitLocker may require Privileged user accounts. The tool will use Microsoft Remote Server Administration Tools (RSAT) if available, otherwise it will communicate with the Domain Controller using LDAP.
 * **CMD.exe Analysis**<a name=""></a>
 	* [Invoke-DOSfuscation](https://github.com/danielbohannon/Invoke-DOSfuscation)
 		* Cmd.exe Command Obfuscation Generator & Detection Test Harness
@@ -1453,7 +1447,7 @@
 		* [Auditing Security Events - WCF - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/auditing-security-events)
 		* [PowerShell – Everything you wanted to know about Event Logs and then some - Przemyslaw Klys](https://evotec.xyz/powershell-everything-you-wanted-to-know-about-event-logs/)
 	* **Event Forwarding**
-		* [Windows Event Forwarding Guidance](https://github.com/palantir/windows-event-forwarding) 
+		* [Windows Event Forwarding Guidance](https://github.com/palantir/windows-event-forwarding)
 			* Over the past few years, Palantir has a maintained an internal Windows Event Forwarding (WEF) pipeline for generating and centrally collecting logs of forensic and security value from Microsoft Windows hosts. Once these events are collected and indexed, alerting and detection strategies (ADS) can be constructed not only on high-fidelity security events (e.g. log deletion), but also for deviations from normalcy, such as unusual service account access, access to sensitive filesystem or registry locations, or installation of malware persistence. The goal of this project is to provide the necessary building blocks for organizations to rapidly evaluate and deploy WEF to a production environment, and centralize public efforts to improve WEF subscriptions and encourage adoption. While WEF has become more popular in recent years, it is still dramatically underrepresented in the community, and it is our hope that this project may encourage others to adopt it for incident detection and response purposes. We acknowledge the efforts that Microsoft, IAD, and other contributors have made to this space and wish to thank them for providing many of the subscriptions, ideas, and techniques that will be covered in this post.
 	* **Tools**
 		* [DCSYNCMonitor](https://github.com/shellster/DCSYNCMonitor)
@@ -1482,7 +1476,7 @@
 			* Guidance for organisations deploying a range of end user device platforms as part of a remote working solution
 	* **Educational/Informative**
 		* [The Evolution of Protected Processes – Part 1: Pass-the-Hash Mitigations in Windows 8.1](https://www.crowdstrike.com/blog/evolution-protected-processes-part-1-pass-hash-mitigations-windows-81/)
-		* [The Evolution of Protected Processes Part 2: Exploit/Jailbreak Mitigations, Unkillable Processes and Protected Services](https://www.crowdstrike.com/blog/evolution-protected-processes-part-2-exploitjailbreak-mitigations-unkillable-processes-and/) 
+		* [The Evolution of Protected Processes Part 2: Exploit/Jailbreak Mitigations, Unkillable Processes and Protected Services](https://www.crowdstrike.com/blog/evolution-protected-processes-part-2-exploitjailbreak-mitigations-unkillable-processes-and/)
 		* [Protected Processes Part 3: Windows PKI Internals (Signing Levels, Scenarios, Signers, Root Keys, EKUs & Runtime Signers)](https://www.crowdstrike.com/blog/protected-processes-part-3-windows-pki-internals-signing-levels-scenarios-signers-root-keys/)
 		* [Mitigate threats by using Windows 10 security features](https://docs.microsoft.com/en-us/windows/threat-protection/overview-of-threat-mitigations-in-windows-10)
 * **.NET Instrumentation**<a name=""></a>

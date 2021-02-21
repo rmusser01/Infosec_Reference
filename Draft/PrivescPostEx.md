@@ -3414,9 +3414,10 @@
 				* In this article I give a variety of examples of how to refer to the notepad.exe executable from the C:\Windows\System32 directory using various path notations. I also discuss how some of these tricks can be used to annoy or fool system administrators and information security analysts.
 		* **Polymorphism**
 			* **101**
+				* [Polymorphism - A Discussion Of Methodology And Implementation - Buz(1999)](https://vxug.fakedoma.in/archive/VxHeaven/lib/vbu01.html)
 			* **Articles/Blogposts/Writeups**
-				https://blog.scrt.ch/2020/06/19/engineering-antivirus-evasion/
-				https://blog.scrt.ch/2020/07/15/engineering-antivirus-evasion-part-ii/
+				* [Engineering antivirus evasion - Vladimir Meier(2020)](https://blog.scrt.ch/2020/06/19/engineering-antivirus-evasion/)
+				* [Engineering antivirus evasion (Part II) - Vladimir Meier(2020)](https://blog.scrt.ch/2020/07/15/engineering-antivirus-evasion-part-ii/)
 			* **Talks/Presentations/Videos**
 				* [Antivirus Evasion through Antigenic Variation (Why the Blacklisting Approach to AV is Broken) - Trenton Ivey, Neal Bridges(Derbycon 2013)](https://www.irongeek.com/i.php?page=videos/derbycon3/4108-antivirus-evasion-through-antigenic-variation-why-the-blacklisting-approach-to-av-is-broken-trenton-iveyneal-bridges)
 					* Description: Think of the last time you got sick. Your immune system is an amazing piece of machinery, but every now and then, something gets past it. Antivirus evasion techniques can become more effective when modeled after infectious diseases. This talk highlights many of the antivirus evasion techniques in use today. Going further, this talk shows how genetic algorithms can quickly and repeatedly “evolve” code to evade many malicious code detection techniques in use today.
@@ -3433,8 +3434,8 @@
 		* **Process Un-Linking**
 			* [Manipulating ActiveProcessLinks to Hide Processes in Userland - @spotheplanet](https://www.ired.team/miscellaneous-reversing-forensics/windows-kernel-internals/manipulating-activeprocesslinks-to-unlink-processes-in-userland)
 		* **Process 'Hardening'**
-			https://offensivedefence.co.uk/posts/ppidspoof-blockdlls-dinvoke/
-			https://www.youtube.com/watch?v=i5po8REiFXw
+			* [D/Invokify PPID Spoofy & BlockDLLs - RastaMouse(2020)](https://offensivedefence.co.uk/posts/ppidspoof-blockdlls-dinvoke/)
+			* [Hiding Process Memory via Anti Forensic Techniques - Ralph Palutke, Frank Block, Patrick Reichenberger, Dominik Stripeika(DFRWS USA2020)](https://www.youtube.com/watch?v=i5po8REiFXw)
 			* [Bypassing VirtualBox Process Hardening on Windows - James Forshaw(2017)](https://googleprojectzero.blogspot.com/2017/08/bypassing-virtualbox-process-hardening.html)
 				* This blog post will describe the implementation of Oracle’s VirtualBox protected process and detail three different, but now fixed, ways of bypassing the protection and injecting arbitrary code into the process. The techniques I’ll present can equally be applied to similar implementations of “protected” processes in other applications.)
 		* **REPL**

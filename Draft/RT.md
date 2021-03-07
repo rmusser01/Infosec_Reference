@@ -1573,6 +1573,7 @@
 	* **Anti-RE/Debug**
 		* **Articles/Blogposts/Writeups**
 			* [Tricks used by malware authors to protect their malicious code from detection - Avi Lamay(2018)](https://deceptivebytes.com/2018/07/09/tricks-used-by-malware-authors-to-protect-their-malicious-code-from-detection/)
+			* [Evasion Techniques - CheckPoint Research](https://evasions.checkpoint.com/)
 		* **Papers**
 			* [Antiforensic techniques deployed by custom developed malware in evading anti-virus detection - Ivica Stipovic(2019)](https://arxiv.org/abs/1906.10625)
 		* **Presentations/Talks/Videos**

@@ -1,16 +1,12 @@
 # Red Teaming/Adversary (Emu/)Simulation/Explicitly Pen testing stuff
 
-
 ------------------------------------------------------------------------------------------------------------------------------
 ## Table of Contents
 - [General](#general)
 	- [101](#101)
 	- [Courses](#gcourses)
 	- [General Informative Information](#gii)
-	- [Building a Red Team](#bart)
 	- [Generally Relevant/Useful Information](#grui)
-	- [Facilitating a Red Team Engagement](#farte)
-	- [Metrics & models](#gmm)
 	- [Red Team Experiencs](#rte)
 	- [Papers](#gpapers)
 	- [Other](#rother)
@@ -20,8 +16,8 @@
 | [Adversary Simulation &Or Emulation](#advsim) | [Building(and Growing) a (Red) Team](#dreamteam) | [Organizing a Red Team Engagement](#engagered) |
 | [Articles/Blogposts/Writeups](#advart) | [101](#team101) | [Frameworks & Methodologies](#methods) |
 | [Talks/Presentations/Videos](#advvid) | [Articles/Blogposts/Writeups](#teamart) | [Facilitating a Red Team Engagement](#farte) |
-| [Simulation Plans](#advplans) | [Talks/Presentations/Videos](#teamtalks) | [Purple Teaming](#purple) |
-| [Tools](#advtools) | | |
+| [Simulation Plans](#advplans) | [Talks/Presentations/Videos](#teamtalks) | [Metrics & models](#gmm) |
+| [Tools](#advtools) | | [Purple Teaming](#purple) |
 | | | |
 
 - [Simulation Tools](#simtools)
@@ -42,13 +38,24 @@
 | | [Automation Tooling](#iat) |
 | | |
 
-- [Domains and Domain Related Things](#domains)
-	- [General](#dg)
-	- [Domain Fronting](#df)
-	- [Tools](#dt)
-	- [Domain reputation](#dr)
-- [Egress & Exfiltration](#egress)
-- [External Attack Surface](#external)
+|   	|   	|
+|---	|---	|
+| [Cobalt Strike](#cobaltstrike) | [Empire](#empire) |
+| [101](#cs101) | [Articles](#articles) |
+| [Agressor Scripts](#csas) | [Customizing](#ecustom) |
+| [Beacon](#csbeacon) | [Manual](#edoc) |
+| [C2](#csc2) | [Modules & Additions/Extensions](#emods) |
+| [Documentation](#csdoc) | [Modules & Additions/Extensions](#emods) |
+
+|   	|   	|
+|---	|---	|
+| [Domains and Domain Related Things](#domains) | [Egress & Exfiltration](#egress) | [External Attack Surface](#external) |
+| [General](#dg) | | |
+| [Domain Fronting](#df) | | |
+| [Tools](#dt) | | |
+| [Domain reputation](#dr) | | |
+| | | |
+
 
 |   	|   	|
 |---	|---	|
@@ -64,34 +71,18 @@
 	- [Strategies](#tstrats)
 	- [Methodologies](#tmethods)
 	- [Skills Improvement](#vskill)
-- [Cobalt Strike](#cobalt)
-	- [101](#cs101)
-	- [Agressor Scripts](#csas)
-	- [Beacon](#csbeacon)
-	- [C2](#csc2)
-	- [Documentation](#csdoc)
-	- [General](#csg)
-	- [Logging](#csl)
-	- [Phishing](#csp)
-	- [Redirector](#csr)
-	- [Tool Extension/Integration](#cstei)
-	- [Other](#cso)
-- [Empire](#empire)
-	- [Articles](#articles)
-	- [Customizing](#ecustom)
-	- [Manual](#edoc)
-	- [Modules & Additions/Extensions](#emods)
+
 - [Penetration Testing](#pentest)
 	- [Culture](#culture)
 	- [Workflows](#penworkflows)
 	- [Enagement Types](#pentypes)
-	- [PenTesting X](#pentest-x)
-		- [AIX](#aix)
-		- [Embedded](#embedded)
-		- [Faxes, Printers, Other](#faxesprint)
-		- [MainFrames](#main)
-		- [SCADA/PLCs](#scada)
-		- [Virtual Appliances](#va)
+- [PenTesting X](#penx)
+	- [AIX](#aix)
+	- [Embedded](#embedded)
+	- [Faxes, Printers, Other](#faxesprint)
+	- [MainFrames](#main)
+	- [SCADA/PLCs](#scada)
+	- [Virtual Appliances](#va)
 ------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -133,9 +124,6 @@
 		* [3 Principles of Red Teaming - Action Dan(2020)](https://lockboxx.blogspot.com/2020/01/3-principles-of-red-teaming.html)
 	* **Talks/Presentations/Videos**
 		* [Why I Love Offensive Work, Why I don't Love Offensive Work - Halvar Flake(OffensiveCon20)](https://www.youtube.com/watch?v=8QRnOpjmneo)
-		* [Planning Effective Red Team Exercises - Sean T Malone - BSidesSF2016](https://www.youtube.com/watch?v=cD-jKBfSKP4)
-			* An effective red team exercise is substantially different from a penetration test, and it should be chartered differently as well. The scenario, objective, scope, and rules of engagement all need to be positioned correctly at the beginning in order to most closely simulate a real adversary and provide maximum value to the client.In this presentation, we'll review best practices in each of these areas, distilled from conducting dozens of successful red team exercises - along with some war stories highlighting why each element matters. Those in offensive security will gain an understanding of how to manage the client's expectations for this process, and how to guide them towards an engagement that provides a realistic measurement of their ability to prevent, detect, and respond to real attacks. Those in enterprise security will gain a deeper understanding of this style of assessment, and how to work with a red team to drive real improvement in their security programs.
-		* [Let's Create A Redteam Mission - Alex Kouzmine - BlackAlps 2018](https://www.youtube.com/watch?v=-kK8K-UVhWY)
 	* **Resources**
 		* [Red Team Infrastructure Wiki](https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki)
 			* Wiki to collect Red Team infrastructure hardening resources
@@ -144,11 +132,6 @@
 		* [Red Teaming Quick Reference Sheet - Sandia Labs(USGov)](https://idart.sandia.gov/_assets/documents/2017-09-13_RT4PM_QRS-Paper-Size.pdf)
 			* This quick reference sheet is a component of Sandia'sRed Teaming for Program Managers class.
 		* [IDART Quick Reference Sheet - Sandia Labs(USGov)](https://idart.sandia.gov/_assets/documents/2017-09-13_IDART_QRS-Paper-Size.pdf)
-* **Building a Red Team**<a name="bart"></a>
-	* [Building A Successful Internal Adversarial Simulation Team - C. Gates & C. Nickerson - BruCON 0x08](https://www.youtube.com/watch?v=Q5Fu6AvXi_A&list=PLtb1FJdVWjUfCe1Vcj67PG5Px8u1VY3YD&index=1)
-	* [Zero to Hero – Building a Red Team - Robert Neel & David Thompson](http://penconsultants.com/blog/presentation-zero-to-hero-building-a-red-team/)
-	* [Some Lessons Learned from Building Red Agents in the RAND Strategy Assessment System (RSAS) - Paul K Davis(1989)](https://www.rand.org/content/dam/rand/pubs/notes/2007/N3003.pdf)
-		* This Note contains the text of an oral presentation delivered to the third "Thinking Red in War Games" workshop held at the National Defense University in June 1988. The work underlying the presentation was accomplished in the RAND Strategy Assesment Center (RSAC), which the author directs.
 * **Generally Relevant/Useful Information**<a name="grui"></a>
 	* [The ‘Laws’ of Red Teaming - RedTeam Journal](https://redteamjournal.com/red-teaming-laws/)
 		* Red teaming is governed by informal and wholly unscientific “laws” based largely on human nature. These laws are driven by paradox and, in many cases, a healthy dose of humor. We state some from a general perspective, some from the perspective of the customer or sponsor, and some from the perspective of the red team. Enjoy. We add to these as the mood strikes. (For an alternative list of rules, try the one at redteams.net.)
@@ -400,6 +383,7 @@
 	
 	
 
+
 -----------------------------------------------------------------------------------------------------------------------------
 ### Building a (Red) Team<a name="dreamteam"></a>
 * **101**<a name="team101"></a>
@@ -421,15 +405,24 @@
 	* [Embracing the Kobayashi Maru:  Why You Should Teach Your Students to Cheat - Gregory Conti and James Caroland](http://www.rumint.org/gregconti/publications/KobayashiMaru_PrePub.pdf?fbclid=IwAR0SSUwpxCwxw25bHyL4GfXpRPCr6fcneJGigjMpfx3S4iFdhIa26-eiqLc)
 		* This article describes our experiences in helping students develop an adversary mindset byadopting the Kobayashi Maru training exercise employed in the fictional Star Trek universe.  Inthe Kobayashi Maru exercise, Starfleet cadets were faced with a no-win scenario -- attempt torescue the crew of a disabled civilian vessel, and be destroyed in the effort, or avoidconfrontation and leave the disabled ship and its crew to be captured or destroyed.  Famously,Captain Kirk won the scenario by, and this is important, stepping outside the game and alteringits rules to his benefit.  By deciding to cheat and altering the programming of the ArtificialIntelligence driving the exercise, he won the contest. Lest there be any misunderstanding, our purpose with this article is not to encourage or teachstudents to cheat in general, but to learn to think creatively when considering adversarybehavior.
 	* [How to Create an Internal/Corporate Red Team - Tim MalcomVetter(20202)](https://malcomvetter.medium.com/how-to-create-an-internal-corporate-red-team-1023027ea1e3)
+	* [Zero to Hero – Building a Red Team - Robert Neel & David Thompson](http://penconsultants.com/blog/presentation-zero-to-hero-building-a-red-team/)
+	* [Some Lessons Learned from Building Red Agents in the RAND Strategy Assessment System (RSAS) - Paul K Davis(1989)](https://www.rand.org/content/dam/rand/pubs/notes/2007/N3003.pdf)
+		* This Note contains the text of an oral presentation delivered to the third "Thinking Red in War Games" workshop held at the National Defense University in June 1988. The work underlying the presentation was accomplished in the RAND Strategy Assesment Center (RSAC), which the author directs.
 * **Talks/Presentations/Videos**<a name="teamtalks"></a>
+	* [Red white and blue. Making sense of Red Teaming for good. - Ian Amit(Derbycon2014)](https://www.irongeek.com/i.php?page=videos/derbycon4/t209-red-white-and-blue-making-sense-of-red-teaming-for-good-ian-amit)
+		* Say red team one more time. I dare you. I double dare you. The term red team has been recently more abused than cyber. And it’s making us all hurt in ways we need dolls to point where the bad man touched us. Time to get back to business: In this talk we’ll get down and dirty on how a company can actually see a benefit from red teaming. Beyond the red team having fun and bragging rights. Actual ROI. Dirty business speak... We’ll explore some recent examples of implementing red team engagements along with good ol’e blue work, cutting the fat in the security practice of companies, and getting actionable work done.
 	* [Spy Vs. Spy: How to Use Breakable Dependencies to Your Advantage - Stacey Banks, Anne Henmi(Derbycon2015)](https://www.irongeek.com/i.php?page=videos/derbycon5/stable35-spy-vs-spy-how-to-use-breakable-dependencies-to-your-advantage-stacey-banks-anne-henmi)
 		* When a dependency comes along can you break it? Break it good? The reliance on third-party applications can unleash a dependency hell upon your network. How well do you trust the integrity of third party integrations that affect your code, your systems, and any COTS/GOTS you purchase? We will take a look at vulnerabilities that have been exploited and how they broke the perceived security of the network. Looking at the flaws in the trust chain we can see where the weaknesses are introduced and begin to devise ways to exploit them. When you're leveraging third party applications, and everyone is, you have to ask yourself `‰ÛÏDo I feel lucky?‰Û. Well, do ya, punk?`
 	* [Embrace the Bogeyman: Tactical Fear Mongering for Those Who Penetrate - FuzzyNop(Derbycon2016)](https://www.irongeek.com/i.php?page=videos/derbycon6/114-embrace-the-bogeyman-tactical-fear-mongering-for-those-who-penetrate-fuzzynop)
 		* When it comes to cyber penetration, evolving threat landscapes mandate advanced persistent tac. ha ha, just kidding. Look, let's be real, as an internal red team things can get really weird. A day job carrying out a company?s most apocalyptic self-destructive fantasies presents a strange duality of helping and hurting. General public and corporate fear of 'hackers' has been both a blessing and a curse. You might say it?s a gray area, but is it really that simple? In this talk i'll share the ups, downs, and lessons learned during my adventures as the corporate bogeyman.
 	* [The Art of War, Attacking the Organization and Raising the Defense - Jeremy Mio, David Lauer, Mike Woolard(Derbycon2016)](https://www.irongeek.com/i.php?page=videos/derbycon6/408-the-art-of-war-attacking-the-organization-and-raising-the-defense-jeremy-mio-david-lauer-mike-woolard)
 		* The most effective way into an organization, cute cat pictures and free tickets to DerbyCon... the easiest and quickest way into an organization, attacking the weakest link, humans. There are many campaigns in the wild conveying "Cyber Security" being a shared responsibility across the organization, but how can we expect that when we do not prepare our fellow employees? We need to properly prepare our employees, managers, technical folk, and even the Executives for the security battle ground. Militaries do not train their generals, sergeants, and ground soldiers with the same material and techniques, and neither should we for security awareness training. Join us and an old friend, Sun Tzu, to prepare the war and battles we are facing from all sides of our organization.
+	* [Planning Effective Red Team Exercises - Sean T Malone - BSidesSF2016](https://www.youtube.com/watch?v=cD-jKBfSKP4)
+		* An effective red team exercise is substantially different from a penetration test, and it should be chartered differently as well. The scenario, objective, scope, and rules of engagement all need to be positioned correctly at the beginning in order to most closely simulate a real adversary and provide maximum value to the client.In this presentation, we'll review best practices in each of these areas, distilled from conducting dozens of successful red team exercises - along with some war stories highlighting why each element matters. Those in offensive security will gain an understanding of how to manage the client's expectations for this process, and how to guide them towards an engagement that provides a realistic measurement of their ability to prevent, detect, and respond to real attacks. Those in enterprise security will gain a deeper understanding of this style of assessment, and how to work with a red team to drive real improvement in their security programs.
+	* [Building A Successful Internal Adversarial Simulation Team - C. Gates & C. Nickerson - BruCON 0x08(2016)](https://www.youtube.com/watch?v=Q5Fu6AvXi_A&list=PLtb1FJdVWjUfCe1Vcj67PG5Px8u1VY3YD&index=1)
 	* [Some Teams Are Red, Others Are Blue, But Purple Ones Are the Best Value Prajakta Jagda(SHELLCON 2017)](https://www.youtube.com/watch?v=115w1Z9MMA4&list=PL7D3STHEa66R0nWbixrTo3O7haiMmA71T&index=6)
 		* How does one build an enterprise red team from scratch? That was the question I faced a year ago when I accepted the lead red team engineer role at Palo Alto Networks. The most apparent lesson for me has been that red teaming as an internal enterprise function draws an interpretation that is quite different from the one generally accepted by the industry. Over the last year, I have had to set aside everything I thought I knew about red teaming and build an approach that offered the value proposition an enterprise is looking for from such a function. In the first part of this session, I want to touch upon the lessons I have learned during my journey to build a red team program. I want to share my thoughts on the philosophy and approach that is most likely to benefit an enterprise program like this. While this might seem very academic, this has governed every single tactical piece the team has had to implement to make the program a success. Not only has the team composition and interactions been heavily governed by the approach, we have also built custom tools and frameworks to operationalize it. The success we have seen so far is what has prompted me to share highlights of the program with a wider audience. Hopefully, I can help someone else struggling with the same question I faced above. The story, however, doesn’t end there, because building a red team program was only half the battle. I’m sure at least some of the attendees have read (with or without scoffing) about the purple teaming movement. While, in theory, it absolutely should resonate with any enterprise security engineer, putting it in practice is a different matter. The second part of the session will focus on approaches and mechanisms to adopt purple teaming. By the end of this session, the audience should expect to walk away with concrete ideas on approaches to implementing enterprise red team and purple team programs.
+	* [Let's Create A Redteam Mission - Alex Kouzmine - BlackAlps 2018](https://www.youtube.com/watch?v=-kK8K-UVhWY)
 	* [Red Teaming gaps and musings - Samuel Sayan(Derbycon2018)](https://www.irongeek.com/i.php?page=videos/derbycon8/stable-00-red-teaming-gaps-and-musings-samuel-sayen)
 		* Red Teaming is currently the closest most companies get to adversary emulation. While Red Teaming can do a good job pointing out security gaps, blind spots, and human weaknesses within an organization, there are also limitations. Engagement SOW’s, timelines, and laws impose limitations which can unwittingly push a Red Team engagement far from adversary emulation. Some thoughts on the current status quo, and ways to mix it up.
 	* [Red vs Blue and why We are doing it wrong - Chris Roberts(BSides Chattanooga 2018)](https://www.irongeek.com/i.php?page=videos/bsideschattanooga2018/100-red-vs-blue-and-why-we-are-doing-it-wrong-chris-roberts)
@@ -443,6 +436,8 @@
 	* [Five phases of IRTOF: Kickstarting your organization's Red Team Operations programme - Abhijith B R(BSides Delhi 2020)](https://www.youtube.com/watch?v=AThBgIE3cEI)
 		* [Slides](https://tacticaladversary.io/slides/Internal-Red-Team-BSides-Delhi-2020-Abhijith-b-r.pdf)
 		* This talk is about building a practical internal #redteam​. This is not an easy task. For organizations, it is essential to have an internal offensive team to continuously perform adversarial simulation to strengthen the security posture and enhance blue team capabilities. Many variables needs to be taken care of before going forward with such an initiative. Most important thing would be assessing the progress and maturity of the red team building process. Explains various steps to create an internal offensive team/red team from scratch and increasing the capabilities gradually on different phases. This talk introduces a proven way of building internal offensive teams, Internal Red Team Operations Framework. (IRTOF)
+	* [How To Build A High-Performing Red Team - Tom Porter & Patrick Fussell(WWHF 2020 Virtual)](https://www.youtube.com/watch?v=fSLxkDQiVsc)
+		* What are the habits of a highly successful red team? How much do TTPs or a team’s talent level contribute to their overall effectiveness? This talk will examine the actions that separate high-performing red teams from the competition. The speakers will share practical red team methods developed through their careers as offensive security consultants, along with insights from leaders in the infosec industry. They’ll connect observations from recent publications on the topic with the lessons learned from their previous careers on other high-performing, high-stress teams -- one as a Marine and the other as a professional baseball player.  This talk will highlight how effective teams are architected, the challenges of remote work, engagement planning and execution, practical tips for effective communication, and the importance of team cohesion when pursuing a mission. Attendees will walk away with action items they can take back to their organizations and start implementing immediately.
 * **Increasing the Size/Maturity Of**
 	* **Talks/Presentations/Videos**
 		* [Illusion of Control: Capability Maturity Models and Red Teaming - Johann Rehberger(2020)](https://embracethered.com/blog/posts/2020/capability-maturity-model-test-red-teaming/)
@@ -1023,6 +1018,10 @@
 		* [liniaal](https://github.com/sensepost/liniaal)
 			* [Article](https://sensepost.com/blog/2017/liniaal-empire-through-exchange/)
 			* Liniaal allows for the creation of a C2 channel for Empire agents, through an Exchange server. All communication is done through MAPI/HTTP or RPC/HTTP and directly between the Liniaal agent and the Exchange server. No traffic traverses the traditional network boundary as plain HTTP, bypassing most network based detection and blocking.
+		* [PrintDemon](https://github.com/BC-SECURITY/Invoke-PrintDemon)
+			* This is an PowerShell Empire launcher PoC using PrintDemon and Faxhell. The module has the Faxhell dll already embedded which levages CVE-2020-1048 for privilege escalation. The vulnerability allows an unprivileged user to gain system-level privileges and is based on @ionescu007 PoC.
+			* [PrintDemon](https://github.com/ionescu007/PrintDemon)
+			* [faxhell](https://github.com/ionescu007/faxhell)
 	* **Multi-User GUI**
 		* [StarKiller](https://github.com/BC-SECURITY/Starkiller)
 			* Starkiller is a Frontend for Powershell Empire. It is an Electron application written in VueJS.
@@ -1209,6 +1208,7 @@
 			* thumbscr-ews is a small Python utility used with Exchange Web Services. Using thumbscr-ews, it is possible to read and search through mail, retrieve the Global Address List, and download attachments. A lot of inspiration taken from MailSniper
 * **Monitoring**
 	* **Articles/Blogposts/Writeups**
+		* [SCANdalous! (External Detection Using Network Scan Data and Automation) - Aaron Stephens, Andrew Thompson(2020)](https://www.fireeye.com/blog/threat-research/2020/07/scandalous-external-detection-using-network-scan-data-and-automation.html)
 	* **Talks/Presentations/Videos**
 		* [Scant Touch This - Aaron Stephens(2019)](https://www.youtube.com/watch?v=x1tEOkY-7JE)
 * **NTLM Hashes**
@@ -1556,24 +1556,25 @@
 		* [Writing malware while the blue team is staring at you - Mubix "Rob" Fuller(Derbycon2016)](https://www.irongeek.com/i.php?page=videos/derbycon6/103-writing-malware-while-the-blue-team-is-staring-at-you-mubix-rob-fuller)
 		* [Pages from a sword-maker’s notebook - Vyrus(SHELLCON 2017)](https://www.youtube.com/watch?v=2-zos1EAvNY&list=PL7D3STHEa66R0nWbixrTo3O7haiMmA71T&index=4&t=0s)
 			* This talk is an encapsulation of implemented solutions for achieving common requirements when constructing software designed to perform long term covert intelligence gathering. It is a “grab bag” of “tips and tricks” developed and or abstracted from previous works by the presenter in a variety of intelligence gathering operations, none of which will be specifically disclosed. Full source code (almost all of it written in Golang) will be provided for tactic snippets, as well as several publicly available practical examples of solutions to various covert intelligence gathering roadblocks.  The technical details of this presentation will be prefaced by a small summery of “which tactics work from a methodical perspective and why” from a human perspective. Beyond this, specific mappings will be drawn from these methods to the specific technical capabilities disclosed in the latter portion of the presentation. The technical subjects in question will include but not be limited to. – anti virus evasion (with special emphasis on modern machine learning based solutions) – anti attribution techniques – covert channel methods – C2 “castle guarding” – covert administration & devops – solution scaling – persistence – future proofing – counter intelligence / anti reverse engineering.
-		* [C++ for Hackers - Josh Lospinoso(2020)](https://vimeo.com/384348826)
-			* Shift5 co-founder, Josh Lospinoso, talks about how C++ can be a vital tool for infosec developers. In this talk, he presents a simple Stage 0 Implant written in modern C++ to tool developers from Army Cyber Command. Along the way, he illuminates many features of C++, the C++ Standard Library, and the Boost Libraries that are highly useful when developing cybersecurity tools.
-			* [Code](https://github.com/jlospinoso/cpp-implant)
 		* [Practical Implants for Windows in PowerShell - Chris Bad2Beef(SHELLCON2017)](https://www.youtube.com/watch?index=8&list=PL7D3STHEa66R0nWbixrTo3O7haiMmA71T&t=0s&v=-HRLMfYfWTM&app=desktop)
 			* Chances are there are a few things we all know about PowerShell. It’s great, it’s nearly ubiquitous on Windows, and we can get up to some crazy red team shenaniganry with it. One shouldn’t necessarily be judged if their knowledge of PowerShell ends there. After all, the information security space is far too vast for everyone to know everything. That said, we’re in a dangerous spot. So much thought space seems to be dedicated to matching pre-fabricated tools with pre-defined scenarios akin to the script kiddie methodology of yesteryear. We don’t need to be an expert on everything, but something that has become as core as PowerShell should at least warrant a little bit of study. To that end, we’ll walk through creation, execution, and persistence of a few basic implant prototypes written in PowerShell for Windows. Along the way we’ll look at a few different notes and techniques for coding, packaging, and execution within the contexts of detectability and mitigation. The talk will focus on practical instruction and key gimmies and gotchas. By the end of the discussion, the audience is expected to have a better understanding about how PowerShell tools are written an executed, leading to a greater command over existing tools and techniques. With a bit of additional study, the audience should be able to author tools of their own.
-		* [RATs Without Borders - Moving Your Chesse - ](https://www.youtube.com/watch?v=ZubIQfHEUzA)
+		* [Malproxying: Leave Your Malware at Home - Hila Cohen, Amit Waisel(Defcon27)](https://www.youtube.com/watch?v=GYZx0oJU1nI)
+			* During a classic cyber attack, one of the major offensive goals is to execute code remotely on valuable machines. The purpose of that code varies on the spectrum from information extraction to physical damage. As defenders, our goal is to detect and eliminate any malicious code activity, while hackers continuously find ways to bypass the most advanced detection mechanisms. It’s an endless cat-and-mouse game where new mitigations and features are continuously added to the endpoint protection solutions and even the OS itself in order to protect the users against newly discovered attack techniques. In this talk, we present a new approach for malicious code to bypass most of endpoint protection measures. Our approach covertly proxies the malicious code operations over the network, never deploying the actual malicious code on the victim side. We are going to execute code on an endpoint, without really storing the code on disk or loading it to memory. This technique potentially allows attackers to run malicious code on remote victims, in such a way that the code is undetected by the victim’s security solutions. We denote this technique as “malproxying”.
+		* [RATs Without Borders - Moving Your Chesse - Robert Neel(BsidesATX2019)](https://www.youtube.com/watch?v=ZubIQfHEUzA)
 			* [Slides](https://penconsultants.com/home/wp-content/uploads/2019/03/BSides_ATX_2019.pdf)
 			* [Code](https://gitlab.com/J35u5633k/RATsWithoutBorders_public)
 		* [Offensive Tradecraft: Defence Evasion - Paul Laîné(Securi-Tay 2020)](https://www.youtube.com/watch?v=CUqKAaHQa14)
 			* Over the last years, the cyber security posture of companies is improving, and, despite the general opinion, anti-viruses and endpoint protections are more and more sophisticated against “day-to-day threats”. Additionally, defenders are better trained and more aware of the techniques, tactics and procedures (TTPs) used by the bad guys, which subsequently make them readier to detect and respond to incoming threats. The two objectives of this presentation are (i) to define the numerous challenges faced while building and deploying malwares nowadays, and (ii) to provide a non-exhaustive list of techniques and tactics that can be implement in order to bypass defence mechanisms.
 		* [Malware techniques from aggressor's perspective - Pawel Kordos, Patryk Czeczko(x33fcon2020)](https://www.youtube.com/watch?v=nTWJ0KtoGwI&list=PL7ZDZo2Xu330gMHAoeGvH9QkCJMC-qgeK&index=14)
 			* We will demonstrate common techniques used by malicious software and leveraged by our team during adversary simulations, including: AV&sandbox evasion, code injection, persistence, C2 channels, polymorphic malware, environmental keying, obfuscation by API hashing and more… Sounds familiar? :) We will discuss techniques mentioned above. Code samples and working examples will be presented, including reverse engineer / malware analyst perspective. No boring slides, just working examples.
+		* [C++ for Hackers - Josh Lospinoso(2020)](https://vimeo.com/384348826)
+			* Shift5 co-founder, Josh Lospinoso, talks about how C++ can be a vital tool for infosec developers. In this talk, he presents a simple Stage 0 Implant written in modern C++ to tool developers from Army Cyber Command. Along the way, he illuminates many features of C++, the C++ Standard Library, and the Boost Libraries that are highly useful when developing cybersecurity tools.
+			* [Code](https://github.com/jlospinoso/cpp-implant)
 	* **Simple Samples**
 		* [TCP Bind Shell Shellcode - Metasploit Framework](https://github.com/rapid7/metasploit-framework/blob/master/external/source/shellcode/windows/x86/src/block/block_bind_tcp.asm)
-	* **Anti-RE/Debug**
+	* **Anti-RE/Debug**<a name="antire"></a>
 		* **Articles/Blogposts/Writeups**
 			* [Tricks used by malware authors to protect their malicious code from detection - Avi Lamay(2018)](https://deceptivebytes.com/2018/07/09/tricks-used-by-malware-authors-to-protect-their-malicious-code-from-detection/)
-			* [Evasion Techniques - CheckPoint Research](https://evasions.checkpoint.com/)
 		* **Papers**
 			* [Antiforensic techniques deployed by custom developed malware in evading anti-virus detection - Ivica Stipovic(2019)](https://arxiv.org/abs/1906.10625)
 		* **Presentations/Talks/Videos**
@@ -1586,6 +1587,22 @@
 				* This script allows you to create various artifacts on a bare-metal Windows computer in an attempt to trick malwares that looks for VM or analysis tools
 			* [Pufferfish](https://github.com/dsnezhkov/pufferfish)
 				* The goal of this project is to create a way to utilize (userland) Sandbox checks into offensive workflow in a flexible, robust and opsec safe manner. Mainly, to address the decision making process of payload detonation in destination environment.
+		* **Sandbox Detection**<a name="sandbox"></a>
+			* **Articles/Blogposts/Writeups**
+				* [Sandbox evasion: Identifying Blue Teams - Víctor Calvo(2020)](https://www.securityartwork.es/2020/10/12/sandbox-evasion-identifying-blue-teams/)
+				* [Detecting VMware on 64-bit systems - Matteo Malvica(2021)](https://www.matteomalvica.com/blog/2018/12/05/detecting-vmware-on-64-bit-systems/)
+				* [Playing with GuLoader Anti-VM techniques - Carlos Rubio, Blueliv labs(2020)](https://www.blueliv.com/cyber-security-and-cyber-threat-intelligence-blog-blueliv/research/playing-with-guloader-anti-vm-techniques-malware/)
+			* **Papers**
+				* [Spotless Sandboxes: Evading Malware AnalysisSystems using Wear-and-Tear Artifacts - Najmeh Miramirkhani, Mahathi Priya Appini, Nick Nikiforakis, Michalis Polychronakis(2017)](https://www3.cs.stonybrook.edu/~mikepo/papers/wearntear.sp17.pdf)
+					* We observe that as the fidelity and transparency of dynamicmalware analysis systems improves, malware authors can resortto other system characteristics that are indicative of artificialenvironments. We present a novel class of sandbox evasiontechniques that exploit the “wear and tear” that inevitably occurson real systems as a result of normal use. By moving beyond howrealistic a system looks like, to how realisticits past uselooks like,malware can effectively evade even sandboxes that do not exposeany instrumentation indicators, including bare-metal systems. Weinvestigate the feasibility of this evasion strategy by conductinga large-scale study of wear-and-tear artifacts collected from realuser devices and publicly available malware analysis services. Theresults of our evaluation are alarming: using simple decision treesderived from the analyzed data, malware can determine that asystem is an artificial environment and not a real user devicewith an accuracy of 92.86%. As a step towards defending againstwear-and-tear malware evasion, we develop statistical models thatcapture a system’s age and degree of use, which can be used toaid sandbox operators in creating system images that exhibit arealistic wear-and-tear state.
+			* **Presentations/Talks/Videos**
+				* [Operating System Fingerprinting for Virtual Machines - Nguyen Anh Quynh(Defcon18)](https://www.youtube.com/watch?v=wQvyu8oR14c)
+					* [Slides](https://www.defcon.org/images/defcon-18/dc-18-presentations/Quynh/DEFCON-18-Quynh-OS-Fingerprinting-VM.pdf)
+					* This paper analyzes the drawbacks of current OSF approaches against VM in the cloud, then introduces a novel method, named UFO, to fingerprint OS running inside VM. Our solution fixes all the above problems: Firstly, it can recognize all the available OS variants and (in lots of cases) exact OS versions with excellent accuracy, regardless of OS tweaking. Secondly, UFO is extremely fast. Last but not least, it is hypervisor-independent: we proved that by implementing UFO for Xen and Hyper-V.
+				* [Sandbox fingerprinting: Evadiendo entornos de análisis - Roberto Amado & Victor Calvo(RootedCon2020)](https://www.youtube.com/watch?v=AyVgIttiUpQ)
+			* **Tools**
+				* [wsb-detect](https://github.com/LloydLabs/wsb-detect)
+					* "wsb-detect enables you to detect if you are running in Windows Sandbox ("WSB"). The sandbox is used by Windows Defender for dynamic analysis, and commonly manually by security analysts and alike. At the tail end of 2019, Microsoft introduced a new feature named Windows Sandbox (WSB for short). The techniques used to fingerprint WSB are outlined below, in the techniques section."
 	* **Bring-Your-Own-`*`**
 		* **Land(Compiler/Interpreter)**
 			* **Articles/Blogposts/Writeups**
@@ -1625,6 +1642,9 @@
 				* In this post we will briefly present LLVM, discuss popular obfuscation approaches and their shortcomings and build our own epic LLVM-based string obfuscator.
 				* [Code](https://github.com/tsarpaul/llvm-string-obfuscator)
 		* **Talks/Presentations/Videos**
+			* [Binary Obfuscation from the Top-Down: Obfuscating Executables Without Writing Assembly - Sean "Frank^2(Defcon17)](https://www.youtube.com/watch?v=iva16Bg5imQ)
+				* [Slides](https://www.defcon.org/images/defcon-17/dc-17-presentations/defcon-17-sean_taylor-binary_obfuscation.pdf)
+				* Binary obfuscation is commonly applied in malware and by software vendors in order to frustrate the efforts of reverse engineers to understand the underlying code. A common misconception is one must be a master of assembly in order to properly obfuscate a binary. However, with knowledge of compiler optimizations and certain keywords, one can frustratingly obfuscate their binary simply by writing specifically crafted high-level code. This talk will attempt to teach an array of methods that can be employed to obfuscate a binary as it is compiled rather than afterward. Knowledge of C/C++ is the only prerequisite for this talk.
 			* [Data Obfuscation: How to hide data and payloads to make them "not exist" (in a mathematically optimal way) - Parker Schmitt(Derbycon2016)](https://www.irongeek.com/i.php?page=videos/derbycon6/400-data-obfuscation-how-to-hide-data-and-payloads-to-make-them-not-exist-in-a-mathematically-optimal-way-parker-schmitt)
 				* Many times the answer to any question about cryptography is: "never roll your own crypto". While the logic behind this is understandable it has become a bit of a lost art. Despite the fact that for the most part standard crypto used in normal situations works; when trying to hide the existence of encrypted data alltogether it is far from an optimal solution. Most modern crypto is designed with the fact that the evesdropper knows that an encrypted message exists. However these days with ssl proxys, reversing antivirus, and "anti-crypto" law proposals the assumption that having an evesdropper knowing the existence of said crypto is no longer an easy concession. Despite the fact of many "next-gen" antiviruses failing to detect many obfuscation methods using algorithms such as AES for encrypting a payload is the WRONG way. The reason they are not detected is such an antivirus is just not looking for traces of such an algorithm. From a forensics standpoint, if you're using AES the private key is on the victim's machine for example. In addition, the permutations or S-Boxes are well known permutations and easy to spot in your algorithm. This talk will be on how to design algorithms to make the existence of the cryptography unknown. We will keep some of it high level but also show how to properly implement your own cryptography and/or steganography in such a way that the evesdropper doesn't know it exists. We will talk about side channels and how to keep out of band and/or homemade crypto "cryptographically strong" but also how to generate it on the fly so that no only can you encrypt data in side channels, you can generate a new algorithm on the fly. We want to make it so the randomness of the algorithm itself is "cryptographically strong" Even though many next-gen antivirus fails at such detection as it inproves we need to study obfuscation as much as the mathematics and/or science of standard cryptography.
 			* [An Effective Approach to Software Obfuscation - Yu-Jye Tung(BSidesSF2020)](https://www.youtube.com/watch?v=ExiXtdjNGlg&feature=share)
@@ -1761,16 +1781,17 @@
 				* [Devirtualization in C++, part 1 -Honza Hubička(2014)](https://hubicka.blogspot.com/2014/01/devirtualization-in-c-part-1.html)
 		* **C#**
 			* See [CSharp Stuff](#csharp-stuff) or .NET
-			* [Staying # and Bringing Covert Injection Tradecraft to .NET - Ruben Boonen, The Wover(2020)](https://raw.githubusercontent.com/FuzzySecurity/BlueHatIL-2020/master/Ruben%20Boonen%20%26%20TheWover%20-%20BHIL2020_Staying%23_v0.4.pdf)
 			* **Articles/Blogposts/Writeups**
 				* [An Introduction to Writing .NET Executables for Pentesters](https://www.peew.pw/blog/2017/11/24/an-introduction-to-writing-net-executables-for-pentesters)
 				* [Changeling - A Feature Morphing Creature - Adam Brown](https://coffeegist.com/security/changeling-a-feature-morphing-creature/)
 					* The feature that we’ll be taking a look at today is Embedded Resources in C# projects. This is a feature that will allow us to compile code once, and reuse it on multiple assessments			
 				* [How to Execute a Command in C# ? - Sandeep Aparajit(2008)](https://www.codeproject.com/Articles/25983/How-to-Execute-a-Command-in-C)
 			* **Talks/Presentations/Videos**
+				* [Staying # and Bringing Covert Injection Tradecraft to .NET - Ruben Boonen, The Wover(2020)](https://raw.githubusercontent.com/FuzzySecurity/BlueHatIL-2020/master/Ruben%20Boonen%20%26%20TheWover%20-%20BHIL2020_Staying%23_v0.4.pdf)
 				* [.NET Core for Malware – Ryan Cobb (SO-CON 2020)](https://www.youtube.com/watch?v=woRfx5D2Y9Y&list=PLJK0fZNGiFU-2vFpjnt96j_VSuQVTkAnO&index=10)
 					* .NET Core is the future of .NET. The Windows-only .NET Framework is on it's way out, and the cross-platform .NET Core is Microsoft's new flagship framework for building software. As red teamers, it's time to go back to the well of .NET as a host for implants and post-exploitation. In this talk, we will analyze the opportunities presented by the new .NET Core platform and practical examples to take advantage of them.
 			* **Examples/Samples**
+				* [Writing custom backdoor payloads using C# - Mauricio Velazco, Olindo Verrillo(Defcon27)](https://github.com/mvelazc0/defcon27_csharp_workshop)
 				* [Vayne-RaT](https://github.com/TheM4hd1/Vayne-RaT)
 					* An Advanced C# .NET Rat, It’s Stable and Contains Many Features.
 				* [CIMplant](https://github.com/FortyNorthSecurity/CIMplant)
@@ -1907,6 +1928,9 @@
 			* **Other**
 				* [Unstoppable Service](https://github.com/malcomvetter/UnstoppableService)
 					* A pattern for a self-installing Windows service in C# with the unstoppable attributes in C#.		
+			* **Talks/Presentations/Videos**
+				* [.NET Malware Threats: Internals And Reversing - Alexandre Borges(Defcon27)](https://www.youtube.com/watch?v=UB3pVTO5izU)
+					* .NET malware is well-known by security analysts, but even existing many tools such as dnSpy,.NET Reflector, de4dot and so on to make the analysis easier, most professionals have used them as a black box tool, without concerning to .NET internals, structures, MSIL coding and details. In critical cases, it is necessary have enough knowledge about internal mechanisms and to debug these .NET threats using WinDbg.  Unfortunately, .NET malware samples have become very challenger because it is so complicated to deobfuscated associated resources, as unpacking and dumping them from memory. Furthermore, most GUI debugging tools does an inside view of mechanisms such as CRL Loader, Managed Heap, Synchronization issues and Garbage Collection.  In the other side, .NET malware threats are incredibly interesting when analyzed from the MSIL instruction code, which allows to see code injections using .MSIL and attempts to compromise .NET Runtime keep being a real concern.  The purpose of this presentation is to help professionals to understand .NET malware threats and techniques by explaining concepts about .NET internals, mechanisms and few reversing techniques.
 		* **Nim**<a name="nimlang"></a>
 			* **Articles/Blogposts**
 				* [Bypassing Windows protection mechanisms & Playing with OffensiveNim - s3cur3th1ssh1t(2020)](https://s3cur3th1ssh1t.github.io/Playing-with-OffensiveNim/)
@@ -2051,13 +2075,20 @@
 	* **Linux Specific**
 		* **ELF Injection**
 			* [ELFun File Injector - pico(2016)](https://0x00sec.org/t/elfun-file-injector/410)
+		* **Unsorted**
+			* [Zombie Ant Farm: Practical Tips for Playing Hide and Seek with Linux EDRs.](https://github.com/dsnezhkov/zombieant)
+				* Zombie Ant Farm: Primitives and Offensive Tooling for Linux EDR evasion
 	* **macOS Specific**
 		* **Articles/Blogposts**
 			* [My Journey Writing A Post Exploitation Tool for macOS - Cedric Owens(2019)](https://medium.com/red-teaming-with-a-blue-team-mentaility/my-journey-writing-a-post-exploitation-tool-for-macos-d8293d51244f)
 	* **Windows Specific**
+		* [awesome-windows-kernel-security-development](https://github.com/ExpLife0011/awesome-windows-kernel-security-development)
 		* **Hooking**
 			* [Hook_API](https://github.com/EgeBalci/Hook_API)
 				* Assembly block for hooking windows API functions. 
+		* **IAT**
+			* [IAT_API](https://github.com/EgeBalci/IAT_API)
+				* Assembly block for finding and calling the windows API functions inside import address table(IAT) of the running PE file.
 		* **In-Memory**
 			* [Memory Resident Implants Code injection is alive and well - Luke Jennings(BlueHatv18)](https://www.youtube.com/watch?v=02fL2xpR7IM)
 			* [Hunting for Memory Resident Malware - Joe Desimone(Derbycon7)](https://archive.org/details/DerbyCon7/S21-Hunting-for-Memory-Resident-Malware-Joe-Desimone.mp4)
@@ -2357,7 +2388,6 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 ### <a name="tacticsandstats"></a> Tactics/Strategies/Methodologies
 * **101**
-
 * **Lessons Learned**<a name="vll"></a>
 	* [Hillbilly Storytime - Pentest Fails - Adam Compton](https://www.youtube.com/watch?v=GSbKeTPv2TU)
 		* Whether or not you are just starting in InfoSec, it is always important to remember that mistakes happen, even to the best and most seasoned of analysts. The key is to learn from your mistakes and keep going. So, if you have a few minutes and want to talk a load off for a bit, come and join in as a hillbilly spins a yarn about a group unfortunate pentesters and their misadventures. All stories and events are true (but the names have been be changed to prevent embarrassment).
@@ -2375,7 +2405,12 @@
 * **Tactics**<a name="ttactics"></a>
 	* **Articles/Blogposts/Writeups**
 		* [Left and Right of Boom - Tim Malcomvetter(2019)](https://malcomvetter.medium.com/left-and-right-of-boom-ef230ed3eae3)
+		* [Buying Internal Domain Access Again - Scot Berner(2019)](https://www.trustedsec.com/blog/buying-internal-domain-access-again/)
+		* [Summary of Tactics, Techniques and Procedures Used to Target Australian Networks - Australian Cyber Security Center(ACSC)](https://www.cyber.gov.au/acsc/view-all-content/advisories/summary-tactics-techniques-and-procedures-used-target-australian-networks)
+			* Summary of Tradecraft Trends for 2019-20 The Australian Cyber Security Centre (ACSC) investigated and responded to numerous cyber security incidents during 2019 and 2020 so far.
 	* **Talks/Presentations/Videos**
+		* [Meta-Post Exploitation: Using Old, Lost, Forgotten Knowledge - Val Smith, Colin Ames(Defcon16)](https://www.youtube.com/watch?v=swCNI1qWVCQ)
+	* [Slides](https://www.defcon.org/images/defcon-16/dc16-presentations/defcon-16-valsmith_ames.pdf)
 		* [Stupid RedTeamer Tricks - Laurent Desaulniers](https://www.youtube.com/watch?v=2g_8oHM0nwA&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=11)
 		* [Game On! Using Red Team to Rapidly Evolve Your Defenses - Joff Thyer, Pete Petersen](https://www.irongeek.com/i.php?page=videos/derbycon7/t315-game-on-using-red-team-to-rapidly-evolve-your-defenses-joff-thyer-pete-petersen)
 			* This talk will be an enjoyable conversation with good beer, great bourbon, and terrific friends who are reliving the journey of infosec maturity from the perspective of both a penetration testing company and their client over a three year period. Details of various engagements will be discussed along with post-mortem analysis, lessons learned, as well as resulting mitigation tactics and defensive strategies. We will discuss the outcomes at each stage of rendered service and how both client and vendor adjusted their approach to re-engage again and again. The engagement culminates in Red Team exercises that clearly demonstrate the infosec evolution of the client. The talk will leave the defensive audience with a sense of hope, a list of achievable goals, and several tactics. The red team with get a glimpse into the maw of the blue future and the value of their tradecraft. Special brief guest appearances and commentary are expected from others in the community that assisted the client along the way as well.
@@ -2406,13 +2441,34 @@
 		* [Detect Me If You Can Ben Ten - Derbycon7](https://www.youtube.com/watch?v=AF3arWoKfKg&index=23&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3)
 		* [Modern Evasion Techniques Jason Lang - Derbycon7](https://www.irongeek.com/i.php?page=videos/derbycon7/t110-modern-evasion-techniques-jason-lang)
 			* As pentesters, we are often in need of working around security controls. In this talk, we will reveal ways that we bypass in-line network defenses, spam filters (in line and cloud based), as well as current endpoint solutions. Some techniques are old, some are new, but all work in helping to get a foothold established. Defenders: might want to come to this one.
+		* [Your Voice is My Passport - delta zero, Azeem Aqil(Defcon26)](https://www.youtube.com/watch?v=2uoOkIUB43Q)
+			* Financial institutions, home automation products, and offices near universal cryptographic decoders have increasingly used voice fingerprinting as a method for authentication. Recent advances in machine learning and text-to-speech have shown that synthetic, high-quality audio of subjects can be generated using transcripted speech from the target. Are current techniques for audio generation enough to spoof voice authentication algorithms? We demonstrate, using freely available machine learning models and limited budget, that standard speaker recognition and voice authentication systems are indeed fooled by targeted text-to-speech attacks. We further show a method which reduces data required to perform such an attack, demonstrating that more people are at risk for voice impersonation than previously thought.
+		* [Detecting Blue Team Research Through Targeted Ads - 0x200b(Defcon26)](https://www.youtube.com/watch?v=wlKqyuefE1E)
+			* When my implant gets discovered how will I know? Did the implant stop responding for some benign reason or is the IR team responding? With any luck they'll upload the sample somewhere public so I can find it, but what if I can find out if they start looking for specific bread crumbles in public data sources? At some point without any internal data all blue teams turn to OSINT which puts their searches within view of the advertising industry. In this talk I will detail how I was able to use online advertising to detect when a blue team is hot on my trail.
 		* [Red Team Techniques for Evading, Bypassing, and Disabling MS Advanced Threat Protection and Advanced Threat Analytics - Chris Thompson](https://www.youtube.com/watch?v=2HNuzUuVyv0&app=desktop)
 		* [Slides](https://www.blackhat.com/docs/eu-17/materials/eu-17-Thompson-Red-Team-Techniques-For-Evading-Bypassing-And-Disabling-MS-Advanced-Threat-Protection-And-Advanced-Threat-Analytics.pdf)
 			* Windows Defender Advanced Threat Protection is now available for all Blue Teams to utilize within Windows 10 Enterprise and Server 2012/16, which includes detection of post breach tools, tactics and techniques commonly used by Red Teams, as well as behavior analytics.
 		* [Modern Red Team Tradecraft - Sajal Thomas(RedTeam VillageDefcon28)](https://www.youtube.com/watch?v=-f7B-N7yHm8)
 			* "Modern attacks against complex network infrastructure highlight a massive gap between state-affiliated cyber espionage attacks and Red Teams. As Red Teams face challenges that real-world attackers do not, replicating the sophisticated threat groups becomes all the more challenging with tight engagement deadlines and report submissions. The talk aims to bridge this gap by providing insights into modern tradecraft employed by the apex predators as well as the coin-miners and ransomware authors. The talk will also discuss the unique relationship between speed and stealth during Red Team operations. Sometimes ""speed is the new stealth"" but with evolved defensive technologies that baseline behaviour of endpoints on the host and network level, slow and steady may be the way to go instead. Additionally, the talk will walk through publicly-known implant design considerations to defeat mature host and network defenses. Bleeding-edge credential harvesting techniques and the evolution of running Invoke-Mimikatz.ps1 to digging deep into C/C++ and Win32 API programming will be featured. Lastly, the evolution of a modern Red Team operator/developer/both will be discussed. The skills and mindset required to successfully complete objectives and evade defenses have changed over time. A Red Teamer must evolve to be able to inform defense better."
+		* [Staying Off the Land: A Threat Actor Methodology - CrowdStrike(2020)](https://www.crowdstrike.com/blog/staying-off-the-land-methodology/)
+		* [Attack Tactics 5: Zero to Hero Attack - Jordan Drysdale, Kent Ickler, John Strand(2019)](https://www.youtube.com/watch?v=kiMD0JFFheI)
+			* Ever want to see a full attack from no access on the outside to domain takeover? Ever want to see that in under an hour? OWA? Password Sprays? Yup! VPNs? Remote account takeover? Yup! Fully documented command and tool usage? Yup! MailSniper? Absolutely! Nmap? Obviously! Crackmapexec? Definitely! Cobalt Strike HTA phishing? This is the one I am most worried about :D - but we'll try anyway. So what? What's different about this webcast? We'll cover the zero (external, no access) to hero (internal, domain admin). Then, in the next webcast we will cover all the points where it could have been detected and stoped.
+		* [Hacking Dumberly Redux - More Dumberer - Tim Medin(WWHF Hackin' Cast 2020)](https://www.youtube.com/watch?v=PYTm4F5AT38)
+			* Tim Medin discusses the dumbest red team tricks and hacks encountered over the years. We are going to take the A out of APT (again), because so few attackers really need to use advanced techniques. We'll also discuss the simple defenses that make an attacker's life much more difficult.
+		* [The 10 (Unexpected) Ways I Pwned You! - Steve Campbell(DEFCon401 2020)](https://www.youtube.com/watch?v=MYII6Zyds-c)
+			* This presentation is about my experiences finding vulnerabilities on client pentests which were typically not found by vulnerability scanners and other pentesters, or were not remediated from previous assessments due to a lack of understanding the potential impact.
+	* **Papers**
+		* [ShadowMove: A Stealthy Lateral Movement Strategy - Amirreza Niakanlahiji, Jinpeng Wei, Rabbi Alam, Qingyang Wang, Bei-Tsei Chu(2020)](https://www.usenix.org/system/files/sec20summer_niakanlahiji_prepub.pdf)
+			* Advanced Persistence Threat (APT) attacks use variousstrategies and techniques to move laterally within an enter-prise environment; however, the existing strategies and tech-niques have limitations such as requiring elevated permissions,creating new connections, performing new authentications, orrequiring process injections. Based on these characteristics,many host and network-based solutions have been proposedto prevent or detect such lateral movement attempts. In thispaper, we present a novel stealthy lateral movement strategy,ShadowMove, in which only established connections betweensystems in an enterprise network are misused for lateral move-ments. It has a set of unique features such as requiring noelevated privilege, no new connection, no extra authentication,and no process injection, which makes it stealthy against state-of-the-art detection mechanisms. ShadowMove is enabled bya novelsocket duplicationapproach that allows a maliciousprocess to silently abuse TCP connections established by be-nign processes. We design and implementShadowMoveforcurrent Windows and Linux operating systems. To validatethe feasibility of ShadowMove, we build several prototypesthat successfully hijack three kinds of enterprise protocols,FTP, Microsoft SQL, and Window Remote Management, toperform lateral movement actions such as copying malware tothe next target machine and launching malware on the targetmachine. We also confirm that our prototypes cannot be de-tected by existing host and network-based solutions, such asfive top-notch anti-virus products (McAfee, Norton, Webroot,Bitdefender, and Windows Defender), four IDSes (Snort, OS-SEC, Osquery, and Wazuh), and two Endpoint Detection andResponse systems (CrowdStrike Falcon Prevent and CiscoAMP).
 * **Strategies**<a name="tstrats"></a>
-	* [Tactical Exploiation - H.D. Moore, Valsmith(Defcon15)](https://www.youtube.com/watch?v=DPwY5FylZfQ)
+	* **Articles/Blogposts/Writeups**
+		* [Why Nation-State Malwares Target Telco Networks: Dissecting Technical Capabilities of Regin and Its Counterparts – Ömer Coşkun(Infiltrate2016)](https://infocon.org/cons/Infiltrate/Infiltrate%202016/slides/InfiltrateCon16-Why_NationState_Malware_Target_Telco_OmerCoskun.pdf)
+	* **Talks/Presentations/Videos**
+		* [Tactical Exploiation - H.D. Moore, Valsmith(Defcon15)](https://www.youtube.com/watch?v=DPwY5FylZfQ)
+		* [Meta-Post Exploitation: Using Old, Lost, Forgotten Knowledge - Val Smith, Colin Ames(Defcon16)](https://www.youtube.com/watch?v=swCNI1qWVCQ)
+			* [Slides](https://www.defcon.org/images/defcon-16/dc16-presentations/defcon-16-valsmith_ames.pdf)
+		* [Breaking Extreme Networks WingOS: How to own millions of devices running on Aircrafts, Government, Smart cities and more - Josep Pi Rodriguez](https://www.youtube.com/watch?v=fo88O1i-Z3M)
+			* Extreme network's embedded WingOS (Originally created by Motorola) is an operating system used in several wireless devices such as access points and controllers. This OS is being used in Motorola devices, Zebra devices and Extreme network's devices. This research started focusing in an access point widely used in many Aircrafts by several worldwide airlines but ended up in something bigger in terms of devices affected as this embedded operating system is not only used in AP's for Aircrafts but also in Healthcare, Government, Transportation, Smart cities, small to big enterprises... and more. Based on public information, we will see how vulnerable devices are actively used (outdoors) in big cities around the world. But also in Universities, Hotels,Casinos, Big companies, Mines, Hospitals and provides the Wi-Fi access for places such as the New york City Subway. In this presentation we will show with technical details how several critical vulnerabilities were found in this embedded OS. First we will introduce some internals and details about the OS and then we will show the techniques used to reverse engineering the mipsN32 ABI code for the Cavium Octeon processor. It will be discussed how some code was emulated to detect how a dynamic password is generated with a cryptographic algorithm for a root shell backdoor. Besides, it will be shown how some protocols used by some services were reverse engineered to find unauthenticated heap and stack overflow vulnerabilities that could be exploitable trough Wireless or Ethernet connection.
 	* **Breaching the Perimeter**
 		* **Talks/Presentations/Videos**
 			* [Cracking The Perimeter: How Red Teams Penetrate - Dominic Chell(BSidesMCR 2018)](https://www.youtube.com/watch?v=u-MHX9-O890)
@@ -2455,21 +2511,25 @@
 
 
 
-
-Pen Testing
-
+-------------------------------------------------------------------------------------------------------------------
+### <a name="pentest"></a> Penetration Testing
+* **Penetration Testing Engagements**
 	* **Assumed Breach**
-		* [Assumed Breach: A Better Model for Penetration Testing - Mike Saunders(Derbycon2019)](https://www.irongeek.com/i.php?page=videos/derbycon9/3-08-assumed-breach-a-better-model-for-penetration-testing-mike-saunders)
-			* The current model for penetration testing is broken. The typical scan and exploit model doesn?t reflect how real attackers operate after establishing a foothold. At the same time, most organizations aren?t mature enough to need a proper red team assessment. It?s time to start adopting the assumed breach model. In this talk, I?ll discuss techniques for assumed breach assessments that provide a better model for emulating the techniques attackers use once they?re they?ve established a foothold inside a typical network.
-		* [Assumed Breach:A Better Model for Pen Testing - Mike Saunders(2019)](https://www.redsiege.com/wp-content/uploads/2019/12/AssumedBreach-ABMv1.1-1.pdf)
+		* **Talks/Presentations/Videos**
+			* [Assumed Breach: A Better Model for Penetration Testing - Mike Saunders(Derbycon2019)](https://www.irongeek.com/i.php?page=videos/derbycon9/3-08-assumed-breach-a-better-model-for-penetration-testing-mike-saunders)
+				* The current model for penetration testing is broken. The typical scan and exploit model doesn?t reflect how real attackers operate after establishing a foothold. At the same time, most organizations aren?t mature enough to need a proper red team assessment. It?s time to start adopting the assumed breach model. In this talk, I?ll discuss techniques for assumed breach assessments that provide a better model for emulating the techniques attackers use once they?re they?ve established a foothold inside a typical network.
+			* [Assumed Breach Testing - Brendan Oconnor(BSides Columbus Ohio2019)](https://www.irongeek.com/i.php?page=videos/bsidescolumbus2019/bsidescmh2019-2-04-assumed-breach-testing-brendan-oconnor)
+				* OPM, Marriot, Equifax - horrible breaches made that much worse due to dwell time. Bad actors spending months or years on an organizations network without anyone noticing a thing. The controls at some of these organizations were in place, defense in depth, layered security, security awareness training - and they still to failed to protect them. The modern wisdom seems to be, despite the fact that you have a responsibility to try your best, the bad guys will always win.
+			* [Assumed Breach: The Better Pen Test w/ Tim Medin - SANS HackFest & Ranges Summit 2020](https://www.youtube.com/watch?v=rgkjDHgAOVo&list=PLdVJWiil7RxoW8rBeKc0flY8bRuD3M68L&index=16)
+				* Traditional penetration testing often concedes internal access to the tester, but then the tester does a lot of scanning and poking around. This is not representative of most breaches. Most breaches start with a phish and adversary effectively starts with access as one of your users on one of your systems. Are you prepared to defend? In this talk, Tim Medin will discuss the shortcomings of the traditional penetration test, and talk you through ways to deliver (and receive) a higher value penetration test.
+			* [Assumed Breach:A Better Model for Pen Testing - Mike Saunders(2019)](https://www.redsiege.com/wp-content/uploads/2019/12/AssumedBreach-ABMv1.1-1.pdf)
+-------------------------------------------------------------------------------------------------------------------
 
 
 
 
-
-
------------------------
-### <a name="unusual"></a> 
+-------------------------------------------------------------------------------------------------------------------
+### <a name="penx"></a> Pentesting X
 * **AIX<a name="aix"></a>
 	* **General**
 		* [AIX for Penetration Testers 2017 thevivi.net](https://thevivi.net/2017/03/19/aix-for-penetration-testers/)
@@ -2509,19 +2569,29 @@ Pen Testing
 	* **Talks/Videos/Slides**
 		* [Hacking Mainframes; Vulnerabilities in applications exposed over TN3270 - Dominic White](http://www.irongeek.com/i.php?page=videos/derbycon4/t217-hacking-mainframes-vulnerabilities-in-applications-exposed-over-tn3270-dominic-white)
 			* IBM System Z Mainframes are in regular use in Fortune 500 companies. Far from being legacy these systems are running an actively maintained operating system (z/OS). Applications on these often occupy roles critical to the business processes they underpin, with much of the later technology built around them, rather than replacing them. However, these systems are often bypassed by security testing due to worried of availability or assumptions about legacy. This talk will introduce you to assessing mainframe applications, which turn out to be quite similar to web applications. For this purpose we built a tool, Big Iron Recon & Pwnage (BIRP), to assist with performing such assessments. Importantly, our research uncovered a family of mainframe application vulnerabilities introduced by the TN3270 protocol. We found numerous applications, but not all, vulnerable to these flaws. Applications running within the two most popular transaction managers (CICS and IMS) as well as one of IBM’s own applications. The tool released assists with the exploitation of these flaws.
-		* [Learning Mainframe Hacking: Where the hell did all my free time go? - Chad Rikansrud - Derbycon5](https://www.irongeek.com/i.php?page=videos/derbycon5/stable31-learning-mainframe-hacking-where-the-hell-did-all-my-free-time-go-chad-rikansrud)
-		* [Security Necromancy : Further Adventures in Mainframe Hacking - Phillip Young/Chad Rikansrud - Defcon23](https://www.youtube.com/watch?v=LgmqiugpVyU&feature=youtu.be)
+		* [From root to SPECIAL: Pwning IBM Mainframes - Philip “Soldier of Fortran” Young(Defcon22)](https://www.youtube.com/watch?v=Xfl4spvM5DI)
+			* [Slides](https://www.defcon.org/images/defcon-22/dc-22-presentations/Young/DEFCON-22-Philip-Young-From-root-to-SPECIAL-Hacking-IBM-Mainframes-Updated.pdf)
+			* This talk will demonstrate how to go from meeting an IBM, zSeries z/OS mainframe, getting root and eventually getting system SPECIAL, using tools that exist currently and newly written scripts. It will also show you how you can get access to a mainframe to help develop your own tools and techniques. This talk will teach you the ‘now what’ after you've encountered a mainframe, returning the balance from the ‘computing mystics’ who run the mainframe back to the community.
+		* [Security Necromancy: Further Adventures in Mainframe Hacking - Soldier of Fortran and BigEndianSmalls((Defcon23))](https://www.youtube.com/watch?v=LgmqiugpVyU&feature=youtu.be)
 			* [Slides](https://www.slideshare.net/bigendiansmalls/security-necromancy-publish)
+			* You thought they were dead didn't you? You thought "I haven't seen a mainframe since the 90s, no one uses those anymore." Well you're wrong. Dead wrong. If you flew or drove to DEF CON your information was hitting a mainframe. Did you use credit or cash at the hotel? Doesn't matter, still a mainframe. Did you pay taxes, or perhaps call 911? What about going to the doctor? All using mainframes. At multiple points throughout the day, even if you don't do anything, your data is going through some mainframe, somewhere. 1984? Yeah right, man. That's a typo. Orwell is here now. He's livin' large. So why is no one talking about them?  SoF & Bigendian Smalls, aka 'the insane chown posse', will dazzle and amaze with feats of hackery never before seen on the mainframe. From fully breaking network job entry (NJE) and their concept of trusted nodes, to showing you what happens when you design security in the 80s and never update your frameworks. We'll demonstrate that, yes Charlie Brown, you can in fact overflow a buffer on the mainframe. New tools will be released! Things like SET'n'3270 (SET, but for mainframes!) and VTAM walker (profiling VTAM applications). Updates to current tools will be released (nmap script galore!) everything from accurate version profiling to application ID brute forcing and beyond. You'll also learn how to navigate IBM so you can get access to your very own mainframe and help continue the research that we've started!  All of your paychecks rely on mainframes in one form or another, so maybe we should be talking about it.
 		* [Smashing the Mainframe for Fun and Prison Time - Phillip Young - Hacktivity2014](https://www.youtube.com/watch?v=SjtyifWTqmc)
 		* [How to Embrace Hacker Culture For z/OS | Phil Young at SHARE in Seattle2015](https://www.youtube.com/watch?v=5Ra4Ehmifh4)
 		* [Hacking Mainframes Vulnerabilities in applications exposed over TN3270 - Dominic White - Derbycon4](https://www.youtube.com/watch?v=3HFiv7NvWrM)
+		* [Mainframes - Mopeds and Mischief; A PenTesters Year in Review - Tyler Wrightson(Derbycon4)](http://www.irongeek.com/i.php?page=videos/derbycon4/t203-mainframes-mopeds-and-mischief-a-pentesters-year-in-review-tyler-wrightson)
+			* In this talk Tyler discusses the highlights from another year of penetration testing. This includes the most direct challenge he has ever received when a CSO told him ‘You wont be able to hack our mainframe’ and the steps he took to gain root access to said mainframe. Tyler will discuss several tools written during the year as well as make public releases of the unpublished tools. Tyler will also discuss the surprising failures he had and what can be learned from those failures. Filled with war stories of social engineering, physical infiltration, internal and external network penetration tests and more this talk will not only be educational but very entertaining.
+		* [Learning Mainframe Hacking: Where the hell did all my free time go? - Chad Rikansrud - Derbycon5](https://www.irongeek.com/i.php?page=videos/derbycon5/stable31-learning-mainframe-hacking-where-the-hell-did-all-my-free-time-go-chad-rikansrud)
 		* [Why You Should (But Don't) Care About Mainframe Security - Northsec2015 - Phillip Young](https://www.youtube.com/watch?v=YLxvrklh2tM)
-		* [Hack the Legacy: IBM I aka AS400 Revealed - Bart Kulach - Defcon23](https://www.youtube.com/watch?v=JsqUZ3xGdLc)
 		* [From root to SPECIAL - Pwning IBM Mainframes - Defcon22 - Philip Young](https://www.youtube.com/watch?v=MZDIblU9pBw)
-		* [Mainframed: The Secrets Inside that Black Box [Shmoocon 2013] - Philip Young](https://www.youtube.com/watch?v=KIavTQeQqSw)
 		* [Mainframed - The Forgotten Fortress - Philip Young - BSidesLV2012](https://www.youtube.com/watch?v=tjYlXW2Dldc)
-		* [we hacked the gibson now what - Philip Young - BSidesLV2014](https://www.youtube.com/watch?v=n_sXG0Ff2oM)
-		* [Mainframes - Mopeds and Mischief; A PenTesters Year in Review](http://www.irongeek.com/i.php?page=videos/derbycon4/t203-mainframes-mopeds-and-mischief-a-pentesters-year-in-review-tyler-wrightson)
+		* [Mainframed: The Secrets Inside that Black Box [Shmoocon 2013] - Philip Young](https://www.youtube.com/watch?v=KIavTQeQqSw)
+		* [We hacked the gibson now what - Philip Young - Philip Young(BSidesLV2014)](https://www.youtube.com/watch?v=n_sXG0Ff2oM)
+			* IBM has been touting the security of the mainframe for over 30 years. So much so, that the cult of mainframers believes that the platform is impenetrable. Just try showing how your new attack vector works and you'll be met with 101 reasons why it wouldn't work (until you prove them wrong of course). This talk will take direct aim at the cultist! Previous talks about mainframe security only got you to the front door. Leaving many asking 'great, I got a userid/password, now what?!'. That's what this talk is about: the ‘Now what’. You'll learn a few new techniques to penetrate the mainframe (without a userid/password) and then a bunch of attacks, tricks and mischief you can do to further maintain that access, find important files and really go after the mainframe. During this very Demo Heavy talk you'll learn how to take advantage of APF files, SSL key management, cgi-bin in TYooL 2014, what NJE is and why it's bad, why REXX and SETUID are dangerous and how simple backdoors still work (and will likely go undetected). 
+		* [Hack the Legacy: IBM I aka AS400 Revealed - Bart Kulach(Defcon23)](https://www.youtube.com/watch?v=JsqUZ3xGdLc)
+			* [Slides](https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEF%20CON%2023%20-%20Bart-Kulach-Hack-the-Legacy-IBMi-revealed.pdf)
+			* Have you ever heard about the famous "green screen"? No, it's not a screensaver... Believe me, it still does exist! In many industries, although the front-end systems are all new and shiny, in the back-end they still rely on well-known, proven IBM i (aka AS/400) technology for their back-office, core systems. Surprisingly, nobody truly seems to care about the security. Even if these nice IBM heavy black boxes are directly connected to the Internet... The aim of the talk is to give you more insight in a number of techniques for performing a security test of / securing an IBM i system from perspective of an external and internal intruder. Methods like privilege escalation by nested user switching, getting full system access via JDBC or bypassing the "green screen" (5250) limitations will be presented.
+		* [Not Just Evil: Hacking Mainframes with Network Job Entry - Philip Young(WWHF 2020 Virtual)](https://www.youtube.com/watch?v=gKjH7LK_rBo&list=PLXF21PFPPXTPwX8mccVIQB5THhU_paWmN&index=8)
+			* The year was 2015 and i just watched a developer submit a job on a test LPAR and run the job in production. I was flabbergasted, how could one submit a job and have it run on another mainframe with out authentication? I was informed it was Network Job Entry and since that moment I made it my mission to completely understand this protocol and how you can use it to break mainframes.  Network Job Entry is how mainframes talk to one another and submit jobs between each other. You can use to manage other mainframes or submit jobs and transfer files. But what if we can pretend to be a mainframe with python? This talk will go in to a deep dive about the protocol, vulnerabilities within it, how you can use it to attack your own mainframes and how IBM is a bunch of tricky tricksters who change protocols silently so your nmap script stop working (true story). This talk will cover JES2, JCL, SNA, Network Job Entry, vulnerabilities, and how you can secure your setup. A python library will be discussed and multiple new tools using that library will be released.
 	* **Tools**
 		* [The Hercules System/370, ESA/390, and z/Architecture Emulator](http://www.hercules-390.org/)
 			* Hercules is an open source software implementation of the mainframe System/370 and ESA/390 architectures, in addition to the new 64-bit z/Architecture
@@ -2572,6 +2642,12 @@ Pen Testing
 		* [External Enumeration and Exploitation of Email and Web Security Solutions - Ben Williams](https://www.blackhat.com/docs/us-14/materials/us-14-Williams-I-Know-Your-Filtering-Policy-Better-Than-You-Do.pdf)
 		* [Hacking Appliances: Ironic Exploitation Of Security Products - Ben Williams - BHEU 2013](https://www.youtube.com/watch?v=rrjSEkSwwOQ)
 			* [Slides](https://www.blackhat.com/docs/webcast/07182013-Hacking-Appliances-Ironic-exploits-in-security-products.pdf)
+* **Misc Tools**
+	* [WinPwn](https://github.com/S3cur3Th1sSh1t/WinPwn)
+		* Automation for internal Windows Penetrationtest / AD-Security 
+	* [Portia](https://github.com/milo2012/portia)
+		* Portia aims to automate a number of techniques commonly performed on internal network penetration tests after a low privileged account has been compromised. Portia performs privilege escalation as well as lateral movement automatically in the network
+
 * **Sort**
 	* **Routers**
 		* [ASUS Router infosvr UDP Broadcast root Command Execution](https://github.com/jduck/asus-cmd)
@@ -2580,16 +2656,26 @@ Pen Testing
 
 
 ### Unsorted
+- 
+	* [You’re Probably Not Red Teaming... And Usually I’m Not, Either [SANS ICS 2018] - Deviant Ollam](https://www.youtube.com/watch?v=mj2iSdBw4-0&feature=youtu.be)
+* **Nation-State**
+	* [Cyber crime and warfare charting dangerous waters - ifach lan amit(Defcon18)](https://www.youtube.com/watch?v=fP96-jzslco&list=UUhGDEluRG9r5kCecRAQTx_Q&index=2301)
+		* [Slides](https://www.defcon.org/images/defcon-18/dc-18-presentations/Amit/DEFCON-18-Amit-Cyber-Crime.pdf)
+		* [Paper](https://www.defcon.org/images/defcon-18/dc-18-presentations/Amit/DEFCON-18-Amit-Cyber-Crime-WP.pdf)
+	* ["I Am Walking Through a City Made of Glass and I Have a Bag Full of Rocks" (Dispelling the Myths and Discussing the Facts of Global Cyber-Warfare) - Brucon(2009)](http://2009.brucon.org/material/infowar_Brucon09.pdf)
+		* [Defcon17 Slides](https://www.defcon.org/images/defcon-17/dc-17-presentations/defcon-17-jayson_e_street-dispelling_myths_cyber-warfare.pdf)
+		* There is a war being raged right now. It is being fought in your living room, in your dorm room even in your board room. The weapons are your network and computers and even though it is bytes not bullets whizzing by that does not make the casualties less real. We will follow the time line of Informational Warfare and its impact today. We will go deeper past the media hype and common misconceptions to the true facts of whats happening on the Internet landscape. You will learn how the war is fought and who is fighting and who is waiting on the sidelines for the dust to settle before they attack.
+	* [Kim Jong-il and Me: How to Build a Cyber Army to Defeat the U.S. - Charlie Miller(Defcon18)](https://www.youtube.com/watch?v=IxSrn4wmjxM)
+		* [Slides](https://www.defcon.org/images/defcon-18/dc-18-presentations/Miller/DEFCON-18-Miller-Cyberwar.pdf)
 	* [Victor or Victim Strategies for Avoiding an InfoSec Cold War - Jason Lang, Stuart McIntosh(Derbycon 2018)](https://www.youtube.com/watch?v=9_cZ5xn-huc)
 	* [Hacks Lies Nation States - Mario DiNatale](https://www.youtube.com/watch?v=nyh_ORq1Qwk)
-	* [You’re Probably Not Red Teaming... And Usually I’m Not, Either [SANS ICS 2018] - Deviant Ollam](https://www.youtube.com/watch?v=mj2iSdBw4-0&feature=youtu.be)
-
-
+	* [How to overthrow a Government - Chris Rock(Defcon24)](https://www.youtube.com/watch?v=m1lhGqNCZlA)
+		* Direct from the mind of the guy who bought you the "I will kill you" presentation at DEF CON 23, is another mind bending, entertaining talk. This time it’s bigger and badder than before. Are you sick and tired of your government? Can’t wait another 4 years for an election? Or do you want to be like the CIA and overthrow a government overseas for profit or fun? If you answered yes to one or more of these questions than this talk is for you! Why not create your own cyber mercenary unit and invoke a regime change to get the government you want installed? After all, if you want the job done right, sometimes you have to do it yourself. Find out how over the last 60 years, governments and resource companies have been directly involved in architecting regime changes around world using clandestine mercenaries to ensure deniability. This has been achieved by destabilizing the ruling government, providing military equipment, assassinations, financing, training rebel groups and using government agencies like the CIA, Mossad and MI-5 or using foreign private mercenaries such as Executive Order and Sandline. Working with Simon Mann an elite ex SAS soldier turned coup architect who overthrew governments in Africa, Chris Rock will show you how mercenary coup tactics directly applied to digital mercenaries to cause regime changes as the next generation of "Cyber Dogs of War".
+* **Supply Chain**
+	* [Infecting The Embedded Supply Chain - Zach Miller, Alex Kissinger(Defcon26)](https://www.youtube.com/watch?v=XeiET4FuGjE)
+		* With a surge in the production of internet of things (IoT) devices, embedded development tools are becoming commonplace and the software they run on is often trusted to run in escalated modes. However, some of the embedded development tools on the market contain serious vulnerabilities that put users at risk. In this talk we discuss the various attack vectors that these embedded development tools expose users to, and why users should not blindly trust their tools. This talk will detail a variety reverse engineering, fuzzing, exploit development and protocol analysis techniques that we used to analyze and exploit the security of a common embedded debugger.
 * **Educational**<a name="vedu"></a>
-
-	* [The Impact of Dark Knowledge and Secrets on Security and Intelligence Professionals - Richard Thieme](https://www.youtube.com/watch?v=0MzcPBAj88A&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
+	* [Playing Through the Pain? - The Impact of Secrets and Dark Knowledge - Richard Thieme(Defcon24)](https://www.youtube.com/watch?v=yGrcHhfUZDk)
+		* Dismissing or laughing off concerns about what it does to a person to know critical secrets does not lessen the impact when those secrets build a different map of reality than "normals" use and one has to calibrate narratives to what another believes. The cognitive dissonance that inevitably causes is managed by some with denial who live as if refusing to feel the pain makes it disappear. But as Philip K. Dick said, reality is that which, when you no longer believe in it, refuses to go away. And when cognitive dissonance evolves into symptoms of traumatic stress, one ignores those symptoms at one's peril. But the constraints of one's work often make it impossible to speak aloud about those symptoms, because that might threaten one's clearances, work, and career. The real cost of security work and professional intelligence goes beyond dollars. It is measured in family life, relationships, and mental and physical well-being.   The divorce rate is as high among intelligence professionals as it is among medical professionals, for good reason - how can relationships be based on openness and trust when one's primary commitments make truth-telling and disclosure impossible?
+	* [The Impact of Dark Knowledge and Secrets on Security and Intelligence Professionals - Richard Thieme(NSEC2017)](https://www.youtube.com/watch?v=0MzcPBAj88A&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe)
 		* Dismissing or laughing off concerns about what it does to a person to know critical secrets does not lessen the impact on life, work, and relationships of building a different map of reality than “normal people” use. One has to calibrate narratives to what another believes. One has to live defensively, warily. This causes at the least cognitive dissonance which some manage by denial. But refusing to feel the pain does not make it go away. It just intensifies the consequences when they erupt. Philip K. Dick said, reality is that which, when you no longer believe in it, does not go away. When cognitive dissonance evolves into symptoms of traumatic stress, one ignores those symptoms at one’s peril. But the very constraints of one’s work often make it impossible to speak aloud about those symptoms, because that might threaten one’s clearances, work, and career. And whistle blower protection is often non-existent.
-	
-	
-	
-

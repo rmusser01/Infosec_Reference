@@ -1186,7 +1186,7 @@
 * **MacOS Red Teaming Blogpost Series by Action Dan(2019)**
 	* [MacOS Red Teaming 201: Introduction - Action Dan](https://lockboxx.blogspot.com/2019/03/macos-red-teaming-201-introduction.html)
 	* [MacOS Red Teaming 202: Profiles - Action Dan](https://lockboxx.blogspot.com/2019/03/macos-red-teaming-202-profiles.html)
-	* [MacOS Red Teaming 203: MDM (Mobile Device Managment - Action Dan)](https://lockboxx.blogspot.com/2019/04/macos-red-teaming-203-mdm-mobile-device.html)
+	* [MacOS Red Teaming 203: MDM (Mobile Device Management - Action Dan)](https://lockboxx.blogspot.com/2019/04/macos-red-teaming-203-mdm-mobile-device.html)
 	* [MacOS Red Teaming 204: Munki Business - Action Dan](https://lockboxx.blogspot.com/2019/04/macos-red-teaming-204-munki-business.html)
 	* [MacOS Red Teaming 205: TCC (Transparency, Consent, and Control - Action Dan)](https://lockboxx.blogspot.com/2019/04/macos-red-teaming-205-tcc-transparency.html)
 	* [MacOS Red Teaming 206: ARD (Apple Remote Desktop Protocol - Action Dan)](https://lockboxx.blogspot.com/2019/07/macos-red-teaming-206-ard-apple-remote.html)

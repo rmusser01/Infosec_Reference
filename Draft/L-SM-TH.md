@@ -1017,7 +1017,7 @@
 		* [BLUESPAWN](https://github.com/ION28/BLUESPAWN)
 			* BLUESPAWN is an active defense and endpoint detection and response tool which means it can be used by defenders to quickly detect, identify, and eliminate malicious activity and malware across a network.
 		* [CimSweep](https://github.com/PowerShellMafia/CimSweep)
-			* CimSweep is a suite of CIM/WMI-based tools that enable the ability to perform incident response and hunting operations remotely across all versions of Windows. CimSweep may also be used to engage in offensive reconnaisance without the need to drop any payload to disk. 
+			* CimSweep is a suite of CIM/WMI-based tools that enable the ability to perform incident response and hunting operations remotely across all versions of Windows. CimSweep may also be used to engage in offensive reconnaissance without the need to drop any payload to disk. 
 * **Cloud**<a name='cloud'></a>
 	* **AWS**<a name="aws"></a>
 		* **Articles/Writeups**

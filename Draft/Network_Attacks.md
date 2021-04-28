@@ -411,7 +411,7 @@
 ------------
 ### <a name="ipmi"></a>BMCs/IPMI/iDRAC/Similar
 * **101**
-    * [Intelligent Platform Managment Interface Documentation - Intel](https://www.intel.com/content/www/us/en/servers/ipmi/ipmi-home.html)
+    * [Intelligent Platform Management Interface Documentation - Intel](https://www.intel.com/content/www/us/en/servers/ipmi/ipmi-home.html)
     * [IPMI Basics](https://www.thomas-krenn.com/en/wiki/IPMI_Basics)
     * [Intelligent Platform Management Interface - Wikipedia](https://en.wikipedia.org/wiki/Intelligent_Platform_Management_Interface)
     * [Redfish](https://www.dmtf.org/standards/redfish)

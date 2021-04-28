@@ -772,7 +772,7 @@
 		* [Kansa -A Powershell incident response framework ](https://github.com/davehull/Kansa)
 			* A modular incident response framework in Powershell. Note there's a bug that's currently cropping up in PowerShell version 2 systems, but version 3 and later should be fine
 		* [Meerkat](https://github.com/TonyPhipps/Meerkat)
-			* Meerkat is collection of PowerShell modules designed for artifact gathering and reconnaisance of Windows-based endpoints. Use cases include incident response triage, threat hunting, baseline monitoring, snapshot comparisons, and more.
+			* Meerkat is collection of PowerShell modules designed for artifact gathering and reconnaissance of Windows-based endpoints. Use cases include incident response triage, threat hunting, baseline monitoring, snapshot comparisons, and more.
 	* **Processes**
 		* [PE-sieve](https://github.com/hasherezade/pe-sieve)
 			* PE-sieve is a tool that helps to detect malware running on the system, as well as to collect the potentially malicious material for further analysis. Recognizes and dumps variety of implants within the scanned process: replaced/injected PEs, shellcodes, hooks, and other in-memory patches.

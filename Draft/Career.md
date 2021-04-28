@@ -425,7 +425,7 @@
 	* [Loyalty and Layoffs - David Brady](https://whydavewhy.com/2013/08/16/loyalty-and-layoffs/)
 * **Management**<a name="mgmt"></a>
 	* **101**
-		* [HN Comment by walterbell on understanding managment](https://news.ycombinator.com/item?id=8881752)
+		* [HN Comment by walterbell on understanding management](https://news.ycombinator.com/item?id=8881752)
 		* [The Manager FAQ - Peter Seebach](http://www.seebs.net/faqs/manager.html)
 			* The following list is an attempt to cover some of the issues that will invariably come up when hackers without previous experience of the business community first start working in it. Other workers may also find it informative.
 		* [Choosing the Management Track - blog.danielna.com](https://blog.danielna.com/choosing-the-management-track/)

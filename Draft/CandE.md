@@ -294,7 +294,7 @@ From: https://www.reddit.com/r/securityengineering/comments/7o2uzy/a_collection_
 * **Encryption Software**
     * [VeraCrypt](https://www.veracrypt.fr/en/Home.html)
         * VeraCrypt is a free open source disk encryption software for Windows, Mac OSX and Linux. Brought to you by IDRIX (https://www.idrix.fr) and based on TrueCrypt 7.1a.
-* **Key Managment**
+* **Key Management**
     * [CONIKS](https://coniks.cs.princeton.edu/)
         * CONIKS is a key management system for end users capable of integration in end-to-end secure communication services. The main idea is that users should not have to worry about managing encryption keys when they want to communicate securely, but they also should not have to trust their secure communication service providers to act in their interest.
 * **Hash Identification**

@@ -6432,6 +6432,7 @@
 * **101**
 	* [Process Injection Techniques — Gotta Catch Them All - Itzik Kotler, Amit Klein(BHUSA19)](https://www.youtube.com/watch?v=xewv122qxnk)
 		* [Paper](https://i.blackhat.com/USA-19/Thursday/us-19-Kotler-Process-Injection-Techniques-Gotta-Catch-Them-All-wp.pdf)	
+	* [‘Plata o plomo’ code injections/execution tricks - Hexacorn](https://www.hexacorn.com/blog/2019/05/26/plata-o-plomo-code-injections-execution-tricks/)
 * **3 Base Primitive Categories**
 	* **Process Spawning Techniques**
 	* **Injecting During Process Initialization**
@@ -6631,10 +6632,49 @@
 	* [Windows Process Injection: DNS Client API - modexp(2019)](https://modexp.wordpress.com/2019/08/08/windows-process-injection-dnsapi/)
 	* [Poc](https://github.com/odzhan/injection/tree/master/dns)
 * **Process Doppelganging**
+	* **101**
+		* [Lost in Transaction: Process Doppelgänging - Tal Liberman, Eugene Kogan(BHEU 2017)](https://www.youtube.com/watch?v=XmWOj-cfixs)
+			* [Slides](https://www.blackhat.com/docs/eu-17/materials/eu-17-Liberman-Lost-In-Transaction-Process-Doppelganging.pdf)
+			* Process Hollowing is a technique first introduced years ago by attackers to thwart the mitigation capabilities of security products. However, most of today's solutions are able to detect and prevent such notorious attacks. In this talk, we will present a new technique, dubbed Process Doppelgänging, which has similar advantages but is much harder to detect - let alone prevent. 
+		* [What is Process Doppelganging & How is it Executed? - Suvarna Trigune(2018)](https://www.reveantivirus.com/blog/en/process-doppelganging)
+		* [TAU-TIN - Process Doppelgang Evasion Technique - esullivan(2017)](https://community.carbonblack.com/t5/Threat-Advisories-Documents/TAU-TIN-Process-Doppelgang-Evasion-Technique/ta-p/62305)
+	* **Information**
+		* [Process Doppelgänging – a new way to impersonate a process - hasherezade(2017)](https://hshrzd.wordpress.com/2017/12/18/process-doppelganging-a-new-way-to-impersonate-a-process/)
+		* [Process Doppelgänging: New Malware Evasion Technique Works On All Windows Versions - Mohit Kumar(2017)](https://thehackernews.com/2017/12/malware-process-doppelganging.html)
+		* [Process Doppelgänging meets Process Hollowing in Osiris dropper - hasherezade(2018)](https://blog.malwarebytes.com/threat-analysis/2018/08/process-doppelganging-meets-process-hollowing_osiris/)
+		* [On Process Doppelganging and developing an unpacker for it - KrabsOnSecurity(2018)](https://krabsonsecurity.com/2018/01/17/on-process-doppelganging-and-developing-an-unpacker-for-it/)
+		* [In NTDLL I Trust – Process Reimaging and Endpoint Security Solution Bypass - Eoin Carroll, Cedric Cochin, Steve Povolny, Steve Hearnden(2019)](https://www.mcafee.com/blogs/other-blogs/mcafee-labs/in-ntdll-i-trust-process-reimaging-and-endpoint-security-solution-bypass/)
+		* [Process Doppelganging Notes - hyp3rv3locity(2020)](https://hyp3rv3locity.blogspot.com/2019/10/process-doppelganging-notes.html)
+		* [Process Doppelganging - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/process-doppelganging)
+	* **Performing**
+	* **PoCs**
+		* [process_doppelganging](https://github.com/hasherezade/process_doppelganging)
+			* "My implementation of enSilo's Process Doppelganging (PE injection technique)"
+		* [Start-Eidolon.ps1](https://github.com/FuzzySecurity/PowerShell-Suite/blob/master/Start-Eidolon.ps1)
+	* **Detection**
+		* [Threat Hunting #20 - Detecting Process Doppelgänging using event 4985 - menasec(2019)](https://blog.menasec.net/2019/02/threat-hunting-24-detecting-process.html)
+* **DoppelGate**
+	* **101**
+	* **Info**
+	* **Performing**
+	* **Detection**
+	* **PoC**
+		* [DoppelGate](https://github.com/asaurusrex/DoppelGate)
+			*  DoppelGate relies on reading ntdll on disk to grab syscall stubs, and patches these syscall stubs into desired functions to bypass Userland Hooking. 
 * **DoubleAgent**
 	* [DOUBLEAGENT: Zero-Day Code Injection AND Persistence Technique - Cybellum(2017)](https://cybellum.com/doubleagentzero-day-code-injection-and-persistence-technique/)
 	* [Masquerading Windows processes like a DoubleAgent. - Philippe Vogler(2020)](https://sensepost.com/blog/2020/masquerading-windows-processes-like-a-doubleagent./)
 * **Earlybird Injection**
+	* **101**
+		* [New ‘Early Bird’ Code Injection Technique Discovered - Hod Gavriel, Boris Erbesfeld(2018)](https://www.cyberbit.com/blog/endpoint-security/new-early-bird-code-injection-technique-discovered/)
+	* **Info**
+		* [Hackers Found Using A New Code Injection Technique to Evade Detection - Mohit Kumar(2018)](https://thehackernews.com/2018/04/early-bird-code-injection.html)
+		* [DorkBot: An Investigation - Mark Lechtik(2018)](https://research.checkpoint.com/2018/dorkbot-an-investigation/)
+		* [The “Early Bird Special” – a new twist on the “Early Bird” injection technique - Avi Lamay(2019)]
+	* **Performing**
+		* [Early Bird APC Queue Code Injection - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/early-bird-apc-queue-code-injection)
+	* **Detection**
+	* **PoC**	
 * **Extra Window Bytes**
 	* **101**
 		* [Process Injection: Extra Window Memory Injection - MITRE ATT&CK(2020)](https://attack.mitre.org/techniques/T1055/011/)
@@ -6645,6 +6685,23 @@
 	* **PoCs**
 		* [Poc](https://github.com/odzhan/injection/tree/master/extrabytes)
 * **Gargoyle**
+	* **101**
+		* [gargoyle, a memory scanning evasion technique - Josh Lospinoso(2017)](https://lospi.net/security/assembly/c/cpp/developing/software/2017/03/04/gargoyle-memory-analysis-evasion.html)
+	* **Info**
+		* [Cobalt Strike 3.12 – Blink and you’ll miss it - CobaltStrike(2018)](https://blog.cobaltstrike.com/2018/09/06/cobalt-strike-3-12-blink-and-youll-miss-it/)
+	* **Performing**
+		* [Bypassing Memory Scanners with Cobalt Strike and Gargoyle - FSecure Labs(2018)](https://labs.f-secure.com/blog/experimenting-bypassing-memory-scanners-with-cobalt-strike-and-gargoyle/)
+	* **Detection**
+		* [Hunting for Gargoyle Memory Scanning Evasion - Aliz Hammond(2018)](https://blog.f-secure.com/hunting-for-gargoyle-memory-scanning-evasion/)
+		* [Gargoyle Hunting In-Depth — Presented by Aliz Hammond(InfoSec in the City2020)](https://www.youtube.com/watch?v=T73GK1Y8jLU)
+			* Detecting certain user-mode code-hiding techniques, such as Josh Lospinoso's 'Gargoyle', is almost impossible from user-space. In this talk, I will examine Gargoyle, and explain how it can be detected from kernel mode. I will first walk through using WinDbg to locate hidden code and then write a Volatility plugin to turn this process into a practical method of detecting real-world attacks — in the process, adding a reliable method of differentiating these from legitimate behavior. No prior kernel knowledge is needed, but those with a background in WinDbg, Windows internals, forensics, and/or Volatility will get the most from this talk.
+		* [HookTracer: A System for Automated and Accessible API Hooks Analysis - Andrew Case, Mohammad M.Jalalzai, Md Firoz-Ul-Amin, Ryan D.Maggio, Aisha Ali-Gombe, Mingxuan Sun, Golden G.Richard III(2019)]
+			* The use of memory forensics is becoming commonplace in digital investigation and incident response, as it provides critically important capabilities for detecting sophisticated malware attacks, including memory-only malware components. In this paper, we concentrate on improving analysis of API hooks, a technique commonly employed by malware to hijack the execution flow of legitimate functions. These hooks allow the malware to gain control at critical times and to exercise complete control over function arguments and return values. Existing techniques for detecting hooks, such the Volatility plugin apihooks, do a credible job, but generate numerous false positives related to non-malicious use of API hooking. Furthermore, deeper analysis to determine the nature of hooks detected by apihooks typically requires substantial skill in reverse engineering and an extensive knowledge of operating systems internals. In this paper, we present a new, highly configurable tool called hooktracer, which eliminates false positives, provides valuable insight into the operation of detected hooks, and generates portable signatures called hook traces, which can be used to rapidly investigate large numbers of machines for signs of malware infection.
+		* [Hunting for Ghosts in Fileless Attacks - Buddy Tancio(2019)](https://www.sans.org/reading-room/whitepapers/malicious/paper/38960)
+			* Hunting for a fileless threat can be a tedious and labor-intensive task for any analyst. It is, most often than not, extremely time-consuming and requires a significant amount of data gathering. On top of that, the traditional tools, methods, and defenses seem to be less effective when dealing with these almost invisible threats. Threat actors are frequently using attack techniques that work directly from the memory or using legitimate tools or services pre-installed in the system to achieve their goals (Trend Micro, 2017). It is a popular technique among targeted attacks and advanced persistent threats (APT), and now it has been adopted by conventional malware such as trojans, ransomwares, and even the most recent emerging threat – cryptocurrency miners. In some incidents, searching for a malicious file that resides in the hard drive seems to be insufficient. This study explores the different variations of fileless attacks that targeted the Windows operating system and what kind of artifacts or tools can provide clues for forensic investigation. 
+	* **PoC**	   	
+      	* [dotnet-gargoyle](https://github.com/countercept/dotnet-gargoyle)
+    		* A spiritual .NET equivalent to the Gargoyle memory scanning evasion technique
 * **GhostWriting Injection**
 	* **101**
 		* [A paradox: Writing to another process without openning it nor actually writing to it - txipi(2007)](http://blog.txipinet.com/2007/04/05/69-a-paradox-writing-to-another-process-without-openning-it-nor-actually-writing-to-it/)
@@ -6655,21 +6712,141 @@
 	* **Performing**	
 	* **PoCs**
 		* [GhostWriting](https://github.com/c0de90e7/GhostWriting)
+* **Process Herpaderping**
+	* **101**
+	* **Info**
+		* [Process Herpaderping](https://jxy-s.github.io/herpaderping/)
+			* Process Herpaderping is a method of obscuring the intentions of a process by modifying the content on disk after the image has been mapped.
+	* **Performing**
+	* **Detection**
+	* **PoC**
 * **Process Hollowing**
+	* **101**
+		* [Process Hollowing - John Leitch](https://www.autosectools.com/process-hollowing.pdf)
+		* [Process Hollowing](https://github.com/m0n0ph1/Process-Hollowing)
+			* Process hollowing is yet another tool in the kit of those who seek to hide the presence of a process. The idea is rather straight forward: a bootstrap application creates a seemingly innocent process in a suspended state. The legitimate image is then unmapped and replaced with the image that is to be hidden. If the preferred image base of the new image does not match that of the old image, the new image must be rebased. Once the new image is loaded in memory the EAX register of the suspended thread is set to the entry point. The process is then resumed and the entry point of the new image is executed.
+	* **Information**
+		* [Analyzing Malware Hollow Processes - Eric Monti(2011)(https://www.trustwave.com/en-us/resources/blogs/spiderlabs-blog/analyzing-malware-hollow-processes/)
+		* [Understanding Process Hollowing - Andrea Fortuna(2017)](https://www.andreafortuna.org/2017/10/09/understanding-process-hollowing/)
+		* [RunPE: a practical example of Process Hollowing technique - Andrea Fortuna(2017)](https://www.andreafortuna.org/2017/11/22/runpe-a-practical-example-of-process-hollowing-technique/)
+		* [7th Meetup – Reversing and Investigating Malware Evasive Tactics – Hollow Process Injection - Monnappa(2017)](https://cysinfo.com/7th-meetup-reversing-and-investigating-malware-evasive-tactics-hollow-process-injection/)
+		* [New Wave of Hancitor Comes with New Evasive Techniques - Roy Moshailov(2016)](https://blog.morphisec.com/hancitor-macro-malware-with-process-hollowing)
+		* [What Malware Authors Don't Want You to Know - Evasive Hollow Process Injection - Monnappa K A(BlackHatUSA2017)](https://www.youtube.com/watch?v=9L9I1T5QDg4)
+			* [Paper](https://www.blackhat.com/docs/asia-17/materials/asia-17-KA-What-Malware-Authors-Don%27t-Want-You-To-Know-Evasive-Hollow-Process-Injection-wp.pdf)
+			* Hollow process injection is a code injection technique used by the malware authors to blend in with legitimate processes on the system and remain undetected; there are documented procedures to detect hollow process injection. This presentation focuses on undocumented hollow process injection techniques.
+	* **Performing**
+		* [Process Hollowing and Portable Executable Relocations - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/process-hollowing-and-pe-image-relocations)
+		* [](https://www.andreafortuna.org/2017/11/22/runpe-a-practical-example-of-process-hollowing-technique/)
+		* [Process Injection Techniques andDetection using the Volatility Framework - Sotiria Balaoura(2018)](http://dione.lib.unipi.gr/xmlui/bitstream/handle/unipi/11578/Balaoura_MTE1623.pdf?sequence=1&isAllowed=y)
+		* [Process Injection - Part III - 3xpl01tc0d3r(2019)](https://3xpl01tc0d3r.blogspot.com/2019/10/process-injection-part-iii.html)
+		* [Parent PID Spoofing - Renos Nikolaou(2019)](https://medium.com/@r3n_hat/parent-pid-spoofing-b0b17317168e)
+		* [Process hollowing - unprotect]()
+	* **PoCs**
+		* [EvasiveProcessHollowing](https://github.com/reevesrs24/EvasiveProcessHollowing)
+			* Proof of concept code which demonstrate a few of the "evasive process hollowing" techniques analyzed in the white paper "What Malware Authors Don't want you to know - Evasive Hollow Process Injection" written by Monnappa K A. The PoC code can be used as a testbed to replicate the memory forensics findings discussed in the white paper.
+		* [ProcessHollowing](https://github.com/ambray/ProcessHollowing)
+			* Simple Process Hollowing in C#
+	* **Malware**
+		* [Malware Analysis – Dridex & Process Hollowing - Luis Rocha(2015)](https://countuponsecurity.com/2015/12/07/malware-analysis-dridex-process-hollowing/)
+		* [Dridex’s Bag of Tricks: An Analysis of its Masquerading and Code Injection Techniques - Ratnesh Pandey(2019)](https://www.bromium.com/dridex-threat-analysis-july-2019-variant/)
+	* **Tools**
+		* [TikiTorch](https://github.com/rasta-mouse/TikiTorch)
+			* TikiTorch was named in homage to CACTUSTORCH by Vincent Yiu. The basic concept of CACTUSTORCH is that it spawns a new process, allocates a region of memory, then uses CreateRemoteThread to run the desired shellcode within that target process. Both the process and shellcode are specified by the user.
 * **(Un-)Hooking**
+	* **Un-Hooking**
+		* **101**
+			* 'Modifying memory ‘inline’ to ‘hook’ functions and redirect execution'
+		* **Info**
+		* **Performing**
+		* **Links**
+	* **SetWindowsHookEx**
 * **Inject-Me**
-* **KernelControlTable** - ehhhhhhhhhhh
+	* **101**
+		* [Inject Me x64 Injection-less Code Injection - DeepInstinct(2019)](https://www.deepinstinct.com/2019/07/24/inject-me-x64-injection-less-code-injection/)
+			* Malware authors are always looking for new ways to achieve code injection, as it enables them to run their code in remote processes. Code Injection allows hackers to better hide their presence, gain persistence and leverage other processes’ data and privileges. Finding and implementing new, stable methods for code injection is becoming more and more challenging as traditional techniques are now widely detected by various security solutions or limited by native OS protections.  Inject-Me is a new method to inject code into a remote process in x64. Inject-Me is in fact “injection-less”, meaning that the remote (target) process is manipulated to read data from the injecting process, copy and execute it. The manipulation is mainly based on abusing ReadProcessMemory and calling conventions in X64. In addition to presenting Inject-Me, we mention a generalized approach to copying data in remote processes to recreate shellcode from the injecting process.
+		* [Please Inject me, a X64 code injection - Alon Weinberg(2019)](https://www.youtube.com/watch?v=8-TcLgkPeLc)
+		* [Please Inject me, a X64 code injection - Alon Weinberg(Defcon27)](https://www.youtube.com/watch?v=dKrNJhbGgHY)
+	* **Info**
+	* **Performing**
+	* **Detection**
+	* **PoC**	
+* **Kernel Callback Table**
+	* **101**
+		* [Windows Process Injection: KernelCallbackTable used by FinFisher / FinSpy - odzhan(2019)](https://modexp.wordpress.com/2019/05/25/windows-injection-finspy/)
+		* [Windows Process Injection: Multiple Provider Router (MPR) DLL and Shell Notifications - odzhan(2019)](https://modexp.wordpress.com/2019/08/05/windows-process-injection-scn/)
+	* **Info**
+		* [FinFisher exposed: A researcher’s tale of defeating traps, tricks, and complex virtual machines - Andrea Allievi, Elia Florio](https://www.microsoft.com/security/blog/2018/03/01/finfisher-exposed-a-researchers-tale-of-defeating-traps-tricks-and-complex-virtual-machines/)
+		* [You Failed ! - ivanlef0u.tuxfamily.org(2007)](http://www.ivanlef0u.tuxfamily.org/?p=68)
+		* [Kernel exploitation – r0 to r3 transitions via KeUserModeCallback - j00ru(2010)](https://j00ru.vexillium.org/2010/09/kernel-exploitation-r0-to-r3-transitions-via-keusermodecallback/)
+		* [Callgate to user : nt!KeUserModeCallback & ROP / MDL - zer0mem(2013)](http://www.zer0mem.sk/?p=410)
+		* [How to run userland code from the kernel on Windows - Thierry Franzetti(2014)](https://thisissecurity.stormshield.com/2014/04/08/how-to-run-userland-code-from-the-kernel-on-windows/)
+		* [How to run userland code from the kernel on Windows – Version 2.0 - Edouard S(2016)](https://thisissecurity.stormshield.com/2016/10/19/how-to-run-userland-code-from-the-kernel-on-windows-version-2-0/)
+	* **Performing**
+	* **Detection**
+	* **PoC**
+		* [kct](https://github.com/odzhan/injection/tree/master/kct)
 * **KnownDLLs Cache Poisoning**
+	* **101**
+		* [Windows Code Injection: Bypassing CIG Through KnownDlls - James Forshaw(2019)](https://www.tiraniddo.dev/2019/08/windows-code-injection-bypassing-cig.html)
+			* TL;DR; This blog post describes a technique to inject a DLL into a process using only Duplicate Handle process access (caveats apply) which will also bypass Code Integrity Guard.
+		* [Windows Process Injection: KnownDlls Cache Poisoning - odzhan(2019)](https://modexp.wordpress.com/2019/08/12/windows-process-injection-knowndlls/)
+	* **Info**
+		* [Hotpatchingthe Hotpatcher - Alex Ionescu(Syscan2013)](https://infocondb.org/con/recon/recon-2018/unknown-known-dlls-and-other-code-integrity-trust-violations-breaking-signature-guarantees-in-windows)
+	* **Performing**
+		* [Injection into a Process Using KnownDlls - Kotik Anton(2012)](https://www.codeproject.com/Articles/325603/Injection-into-a-Process-Using-KnownDlls)
+			* In his article, we will consider an interesting, universal and rarely used method of code injection into a Windows process using KnownDlls sections. To demonstrate the method work we will develop a sample project to inject into all running processes and intercept some calls from ws2_32.dll.
+	* **Detection**
+	* **PoC**
+		* [knowndlls](https://github.com/odzhan/injection/tree/master/knowndlls)	
 * **Mapping Injection**
+	* **101**
+		* [Mapping-Injection - Antonio Coco(2020)](https://github.com/antonioCoco/Mapping-Injection/tree/1.1)
+	* **Info**
+	* **Performing**
+		* [Weaponizing Mapping Injection with Instrumentation Callback for stealthier process injection - splinter_code(2020)](https://splintercod3.blogspot.com/p/weaponizing-mapping-injection-with.html)
+	* **Detection**
+	* **PoC**
+		* [Mapping-Injection](https://github.com/antonioCoco/Mapping-Injection/tree/1.1)
 * **Multiple Provider Router (MPR) DLL and Shell Notifications**
+	* **101**
+		* [Windows Process Injection: Multiple Provider Router (MPR) DLL and Shell Notifications - odzhan(2019)](https://modexp.wordpress.com/2019/08/05/windows-process-injection-scn/)
+	* **Info**
+	* **Performing**
+	* **Detection**
+	* **PoC**
+		* [mpr](https://github.com/odzhan/injection/tree/master/mpr)
 * **NINA**
 	* **101**
 		* [NINA: x64 Process Injection (NINA: No Injection, No Allocation x64 Process Injection Technique.) - NtRaiseHardError(2020)]
 			* [Code](https://github.com/NtRaiseHardError/NINA)
 * **NtCreate**
+	* **101**
+		* [NtCreateSection - Undocumented functions of NTDLL](http://undocumented.ntinternals.net/index.html?page=UserMode%2FUndocumented%20Functions%2FNT%20Objects%2FSection%2FNtCreateSection.html)
+		* [RtlCreateUserThread - Undocumented functions of NTDLL](https://undocumented.ntinternals.net/index.html?page=UserMode%2FUndocumented%20Functions%2FExecutable%20Images%2FRtlCreateUserThread.html)
+		* [Section Objects and Views - docs.ms](https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/section-objects-and-views)
+	* **Performing**
+		* [NtCreateSection + NtMapViewOfSection Code Injection - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/ntcreatesection-+-ntmapviewofsection-code-injection)
 * **.NET/C#**
-	* [.NET Internals and Code Injection](https://ntcore.com/files/netint_injection.htm)
-		 * This article is the obvious culmination of the previous effort of writing the Rebel.NET application and the first of a two series of articles about the .NET framework internals and the protections available for .NET assemblies. The next article will be about .NET native compiling. As the JIT inner workings haven't been analyzed yet, .NET protections are quite naļf nowadays. This situation will rapidly change as soon as the reverse engineering community will focus its attention on this technology. These two articles are aimed to raise the consiousness about the current state of .NET protections and what is possible to achieve but hasn't been done yet. In particular, the current article about .NET code injection represents, let's say, the present, whereas the next one about .NET native compiling represents the future. What I'm presenting in these two articles is new at the time I'm writing it, but I expect it to become obsolete in less than a year. Of course, this is obvious as I'm moving the first steps out from current .NET protections in the direction of better ones. But this article isn't really about protections: exploring the .NET framework internals can be useful for many purposes. So, talking about protections is just a means to an end.		
+	* **101**
+	* **Info**
+		* [.NET Internals and Code Injection](https://ntcore.com/files/netint_injection.htm)
+			* This article is the obvious culmination of the previous effort of writing the Rebel.NET application and the first of a two series of articles about the .NET framework internals and the protections available for .NET assemblies. The next article will be about .NET native compiling. As the JIT inner workings haven't been analyzed yet, .NET protections are quite naļf nowadays. This situation will rapidly change as soon as the reverse engineering community will focus its attention on this technology. These two articles are aimed to raise the consiousness about the current state of .NET protections and what is possible to achieve but hasn't been done yet. In particular, the current article about .NET code injection represents, let's say, the present, whereas the next one about .NET native compiling represents the future. What I'm presenting in these two articles is new at the time I'm writing it, but I expect it to become obsolete in less than a year. Of course, this is obvious as I'm moving the first steps out from current .NET protections in the direction of better ones. But this article isn't really about protections: exploring the .NET framework internals can be useful for many purposes. So, talking about protections is just a means to an end.		
+		* [Process Injection using DInvoke - RastaMouse](https://rastamouse.me/blog/process-injection-dinvoke/)
+	* **Performing**
+		* [DLL Injection via a Custom .NET Garbage Collector - @spotheplanet](https://ired.team/offensive-security/code-injection-process-injection/injecting-dll-via-custom-.net-garbage-collector-environment-variable-complus_gcname)
+		* [Injecting .NET Assembly to an Unmanaged Process - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/injecting-and-executing-.net-assemblies-to-unmanaged-process)
+	* **PoCs**
+		* [clrinject](https://github.com/jonatan1024/clrinject)
+			* Injects C# EXE or DLL Assembly into any CLR runtime and AppDomain of another process. The injected assembly can then access static instances of the injectee process's classes and therefore affect it's internal state.
+		* [native-dotnet-code-injection](https://github.com/sunsided/native-dotnet-code-injection)
+			* Injects a native bootstrap DLL into the target process by calling LoadLibrary as a remote thread and then calls the initialization method of the .NET runtime (hosting API). After that, a .NET assembly is loaded into the default application domain and executed.
+		* [SharpNeedle](https://github.com/ChadSki/SharpNeedle)
+			* A project for properly injecting C# dlls into other processes.(...but also walking the export address table and calling a method on your dll.)
+		* [GhostLoader](https://github.com/TheWover/GhostLoader)
+			* GhostLoader - AppDomainManager - Injection - 攻壳机动队
+		* [Malwaria](https://github.com/nicholasmckinney/Malwaria)
+		* [C# Memory Injection Examples](https://github.com/pwndizzle/c-sharp-memory-injection)
+			* A set of scripts that demonstrate how to perform memory injection.
 * **PE Injection**
 	* **101**
 		* [PE Format - docs.ms](https://docs.microsoft.com/en-us/windows/win32/debug/pe-format?redirectedfrom=MSDN)
@@ -6689,10 +6866,11 @@
 		* [PE Section Header Injection using Code Cave - ]
 		* [Reflective PE Injection in Windows 10 1909 - HUBBL3](https://www.bc-security.org/post/reflective-pe-injection-in-windows-10-1909/)
 		* [[RedDev Series #1] PE Injection Trick - Chiam Yj(2020)](https://medium.com/@cyjien/pe-injection-trick-d044977f4791)
+		* [Bypassing AV via in-memory PE execution - bats3c(2020)](https://blog.dylan.codes/bypassing-av-via/)
 	* **Detection**
 		* See the [Logging, System Monitoring and Threat Hunting](./L-SM-TH.md) Page.
 	* **PoCs**
-		* [ PE-Inject - DelphiBasics(2010)](http://www.delphibasics.info/home/delphibasicscounterstrikewireleases/pe-inject)
+		* [PE-Inject - DelphiBasics(2010)](http://www.delphibasics.info/home/delphibasicscounterstrikewireleases/pe-inject)
 		* [PE-inject - Michal Strehovsky](https://migeel.sk/programming/pe-inject/)
 			* [Documentation](http://docs.migeel.sk/PE-inject/)
 		* [ReflectivePELoader](https://github.com/BenjaminSoelberg/ReflectivePELoader)
@@ -6707,19 +6885,75 @@
 			* Code that allows running another windows PE in the same address space as the host process.
 		* [loadlibrayy](https://github.com/vmcall/loadlibrayy)
 			* x64 PE injector with kernel handle elevation and thread hijacking capabilities
-		* Invoke-ReflectivePEInjection - PowerSploit https://github.com/PowerShellMafia/PowerSploit/blob/master/CodeExecution/Invoke-ReflectivePEInjection.ps1)
+		* [Invoke-ReflectivePEInjection - PowerSploit](https://github.com/PowerShellMafia/PowerSploit/blob/master/CodeExecution/Invoke-ReflectivePEInjection.ps1)
 			* [Documentation](https://powersploit.readthedocs.io/en/latest/CodeExecution/Invoke-ReflectivePEInjection/)
-		* Invoke-ReflectivePEInjection.ps1 - empire](https://github.com/BC-SECURITY/Empire/blob/master/data/module_source/management/Invoke-ReflectivePEInjection.ps1)
+		* [Invoke-ReflectivePEInjection.ps1 - empire](https://github.com/BC-SECURITY/Empire/blob/master/data/module_source/management/Invoke-ReflectivePEInjection.ps1)
+		* [darkarmour](https://github.com/bats3c/darkarmour)
 * **PowerLoader(Ex)**
 	* **101**
 		* [PowerLoader Injection – Something truly amazing - malwaretech(2013)](https://www.malwaretech.com/2013/08/powerloader-injection-something-truly.html)
 	* **PoC**
 		* [PowerLoaderEx](https://github.com/BreakingMalware/PowerLoaderEx)
 * **Print Spooler**
+	* **101**
+		* [Windows Process Injection: Print Spooler - odzhan(2019)](https://modexp.wordpress.com/2019/03/07/process-injection-print-spooler/)
+	* **Performing**
+	* **Detection**
+	* **PoC**
+		* [PoC](https://github.com/odzhan/injection/tree/master/spooler)	
 * **PROPagate**
+	* **101**
+		* [PROPagate – a new code injection trick - Hexacorn(2017)](http://www.hexacorn.com/blog/2017/10/26/propagate-a-new-code-injection-trick/)
+		* [Propagate – yet another follow-up (hypothetical clipboard execution version) - Hexacorn(2018)](https://www.hexacorn.com/blog/2018/11/19/propagate-yet-another-follow-up-hypothetical-clipboard-execution-version/)
+		* [PROPagate – a new code injection trick – 64-bit and 32-bit - Hexacorn(2017)](https://www.hexacorn.com/blog/2017/11/03/propagate-a-new-code-injection-trick-64-bit-and-32-bit/)
+		* [PROPagate follow-up #2 – Some more Shattering Attack Potentials - Hexacorn(2018)](https://www.hexacorn.com/blog/2018/02/04/propagate-follow-up-2-some-more-shattering-attack-potentials/)
+	* **Info**
+		* [Windows Process Injection: PROPagate - odzhan(2018)](https://modexp.wordpress.com/2018/08/23/process-injection-propagate/)	
+		* [RIG Exploit Kit Delivering Monero Miner Via PROPagate Injection Technique - Sudhanshu Dubey, Dileep Kumar Jallepalli(2018)](https://www.fireeye.com/blog/threat-research/2018/06/rig-ek-delivering-monero-miner-via-propagate-injection-technique.html)
+	* **Performing**
+	* **Detection**
+	* **PoC**
+		* [propagate](https://github.com/odzhan/injection/tree/master/propagate	)
+	* **CLIPBRDWNDCLASS**
+		* [Propagate – yet another follow-up (hypothetical clipboard execution version) - hexacorn](http://www.hexacorn.com/blog/2018/11/19/propagate-yet-another-follow-up-hypothetical-clipboard-execution-version/)
+		* [Windows Process Injection: CLIPBRDWNDCLASS - modexp(2019)](https://modexp.wordpress.com/2019/05/24/4066/)
+		* [PoC](https://github.com/odzhan/injection/tree/master/clipboard)
 * **Service Control Handler**
+	* **101**
+		* [Windows Process Injection: Service Control Handler - odzhan(2018)](https://modexp.wordpress.com/2018/08/30/windows-process-injection-control-handler/)
+	* **Info**
+	* **Performing**
+	* **Detection**
+	* **PoC**
+		* [svcctrl](https://github.com/odzhan/injection/tree/master/svcctrl)
 * **Shatter**
+	https://web.archive.org/web/20060904080018/http://security.tombom.co.uk/shatter.html - 2002
+	https://www.blackhat.com/presentations/bh-usa-04/bh-us-04-moore/bh-us-04-moore-whitepaper.pdf 2004
+	https://www.virusbulletin.com/virusbulletin/2012/10/code-injection-return-oriented-programming - 2012
+	https://modexp.wordpress.com/2019/04/25/seven-window-injection-methods/
+	https://modexp.wordpress.com/2020/07/07/wpi-wm-paste/
+	* **101**
+		* [Shattering By Example - Brett Moore(BHUSA2004)](https://www.blackhat.com/presentations/bh-usa-04/bh-us-04-moore/bh-us-04-moore-whitepaper.pdf)
+	* **List of**
+		* WordWarping
+			https://www.hexacorn.com/blog/2019/04/23/wordwarper-new-code-injection-trick/
+		* Hyphentension
+		* AutoCourgette
+		* Streamception
+		* Oleum
+		* ListPlanting
+		* Treepoline
 * **Shellcode Injection**
+	* **101**
+	* **Information**
+	* **Performing**
+		* [Process Injection - Part I - 3xpl01tc0d3r(2019)](https://3xpl01tc0d3r.blogspot.com/2019/08/process-injection-part-i.html)
+		* [AddressOfEntryPoint Code Injection without VirtualAllocEx RWX - @spottheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/addressofentrypoint-code-injection-without-virtualallocex-rwx)
+		* [inmem_pe.c](https://github.com/TheWover/donut/blob/master/loader/inmem_pe.c)
+			* In-Memory execution of unmanaged DLL file. YMMV with EXE files requiring subsystem..
+	* **Fibers**
+		* [Code Execution via Fiber Local Storage - dronesec(2019)](http://dronesec.pw/blog/2019/08/12/code-execution-via-fiber-local-storage/)
+		* [Shellcode Execution through Fibers - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/executing-shellcode-with-createfiber)
 * **Stack Bomber**
 	* **101**
 	* **Info**
@@ -6747,8 +6981,44 @@
 		* [cThreadHijack](https://github.com/connormcgarr/cThreadHijack)
 			* Beacon Object File (BOF) for remote process injection via thread hijacking
 * **ThreadLocal Storage Injection**
+	* **101**
+	* **Info**
+	* **Performing**
+	* **Detection**
+	* **PoC**
 * **Tooltips/Common Controls**
+	* **101**
+		* [Windows Process Injection: Tooltip or Common Controls - odzhan(2019)](https://modexp.wordpress.com/2019/08/10/windows-process-injection-tooltip-controls/)
+	* **Info**
+	* **Performing**
+	* **Detection**
+	* **PoC**
+		* [tooltip](https://github.com/odzhan/injection/tree/master/tooltip)
 * **Windows Notification Facility**
+	* **101**
+	* **Info**
+		* [Windows Process Injection : Windows Notification Facility - odzhan(2019)](https://modexp.wordpress.com/2019/06/15/4083/)
+	* **Performing**
+		* [Exploit WNF Callback - Emeric Nasi(2020)](https://dl.packetstormsecurity.net/papers/general/code_injection_series_part3.pdf)
+	* **Detection**
+	* **PoC**
+		* [wnf](https://github.com/odzhan/injection/tree/master/wnf)
 * **WinSock Helper Functions(WSHX)**
+	* **101**
+		* [Windows Process Injection: Winsock Helper Functions (WSHX) - odzhan(2019)](https://modexp.wordpress.com/2019/07/27/process-injection-winsock/)
+	* **Info**
+	* **Performing**
+	* **Detection**
+	* **PoC**
+		* [wsh](https://github.com/odzhan/injection/tree/master/wsh)
+* **Zombify** - herpaderping?
+	* [Zombie Processes as a HIPS Bypass - Malwaretech(2014)](https://www.malwaretech.com/2014/12/zombie-processes-as-hips-bypass.html)
+	* [ZombifyProcess](https://github.com/MalwareTech/ZombifyProcess)
+		* create a standard Windows process in a suspended state, write our malicious code to the processes’ memory; the PEB and the EPROCESS structures will still be that of the original process, causing the HIPS to see the now malicious process as a legitimate signed executable (this is not RunPE or dynamic forking, because we don’t unmap the original executable and replacing it with our malicious one, as thos can be detected in multiple ways).
+* **Tradecraft Tips**
+	* [Windows Process Injection: Sharing the payload - odzhan](https://modexp.wordpress.com/2018/07/15/process-injection-sharing-payload/)
+* **Unsorted**
+	* [New method of injection - w4kfu(2011)](http://blog.w4kfu.com/post/new_method_of_injection)
+		* "I disovered a new method of injection (I don't know if it is really new) in a malware dropped by duqu. So I want to share it with you and as usual write a p0c. Edit : This method is not new, apparently it have been using by game cheats for years, but instead of using ZwUnmapViewOfSection they use FreeLibrary."
 
 

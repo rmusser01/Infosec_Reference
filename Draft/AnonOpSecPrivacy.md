@@ -8,13 +8,11 @@
 	- [Data Collection](#dcollect)
 	- [De-anonymization](#de-anon)
 	- [Documents/Writing](#writing)
-	- [Facial Identification](#face)
+	- [Facial Identification](#facial)
 	- [Informative/Educational](#informative)
 	- [Journalism & Media Publishing](#media)
 	- [Network Obfuscation](#obfuscation)
-	- [Operational Security - OPSEC](#opsec)
 	- [References/Resources](#ref)
-	- [Wireless Radios](#)
 	- [Tor](#tor)
 	- [Traveling](#travel)
 	- [Miscellaneous Stuff](#misc)
@@ -23,16 +21,16 @@
 	- [Writeups](#cwriteup)
 	- [Videos/Talks](#cvideos)
 	- [Papers](#cpapers)
-- [Disinformation](#disinfo)
+- [Disinformation & Propaganda](#disinfo)
 - [Emissions Security](#emissions)
 	- [Papers](#papers)
-- [Mobile Device Surveillane](#mobile)
 - [Modern Surveillance](#modern)
 	- [China](#china)
 	- [United States](#usa)
+- [Commercial Surveillance](#commercial)
+- [Mobile Device Surveillane](#mobile)
 - [Web-based Surveillance](#web)
-- [Disinformation](#disinfo)
-
+- [OPSEC(Specifically)](#opsec)
 
 -----------------------------------------------------------------------------------------------------------------------------
 ### <a name="general"></a>General
@@ -369,28 +367,6 @@
 	* [Propaganda(The Book) - Wikipedia](https://en.wikipedia.org/wiki/Propaganda_(book))
 		* Propaganda, an influential book written by Edward L. Bernays in 1928, incorporated the literature from social science and psychological manipulation into an examination of the techniques of public communication. Bernays wrote the book in response to the success of some of his earlier works such as Crystallizing Public Opinion (1923) and A Public Relations Counsel (1927). Propaganda explored the psychology behind manipulating masses and the ability to use symbolic action and propaganda to influence politics, effect social change, and lobby for gender and racial equality.[1] Walter Lippman was Bernays' unacknowledged American mentor and his work The Phantom Public greatly influenced the ideas expressed in Propaganda a year later.[2] The work propelled Bernays into media historians' view of him as the "father of public relations."[3]
 	* [Toward an Information Operations Kill Chain - Bruce Schneier](https://www.lawfareblog.com/toward-information-operations-kill-chain)
-* **Articles/Blogposts/Writeups**
-	* **Disinformation**
-		* [A DC Think Tank Used Fake Social Media Accounts, A Bogus Expert, And Fancy Events To Reach The NSA, FBI, And White House - Craig Silverman(BuzzFeed News)](https://www.buzzfeednews.com/article/craigsilverman/icit-james-scott-think-tank-fake-twitter-youtube#.dnqv2lQJr)
-		* [Dezinformatsiya - John Barron](http://www.heretical.com/miscella/dinform.html)
-			* John Barron, KGB, Hodder & Stoughton, 1974. In The Penguin Book of Lies, pp. 420-423
-		* [25 Rules of Disinformation](http://vigilantcitizen.com/latestnews/the-25-rules-of-disinformation/)
-		* [8 Traits of the Disinformationalist](https://calloutjoe.wordpress.com/psyop/eight-traits-of-the-disinformationalist/)
-		* [Disinformation of Charlie Hebdo and The Fake BBC Website](http://thetrendythings.com/read/18256)
-		* [Counterintelligence, False Flags, Disinformation, and Network Defense - krypt3ia](https://krypt3ia.wordpress.com/2012/10/17/counterintelligence-false-flags-disinformation-and-network-defense/)
-		* [Attribution As A Weapon & Marketing Tool: Hubris In INFOSEC & NATSEC](https://krypt3ia.wordpress.com/2014/12/30/attribution-as-a-weapon-marketing-tool-hubris-in-infosec-natsec/)
-		* [SyTech’s FSB Document Dump: Owning The Information Space and Disconnecting It - Krytp3ia](https://krypt3ia.wordpress.com/2019/08/03/sytechs-fsb-document-dump-owning-the-information-space-and-disconnecting-it/)
-		* [The Gentleperson’s Guide to Forum Spies](http://www.cryptome.org/2012/07/gent-forum-spies.htm)
-		* [A Digital World Full of Ghost Armies](http://www.cigtr.info/2015/02/a-digital-world-full-of-ghost-armies.html)
-		* [Disinformation demystified - icyphox](https://icyphox.sh/blog/disinfo/)
-		* [PsyOps and Socialbots](http://resources.infosecinstitute.com/psyops-and-socialbots/)
-		* [Down the Memory Hole: NYT Erases CIA’s Efforts to Overthrow Syria’s Government](https://web.archive.org/web/20150921054800id_/http://fair.org/home/down-the-memory-hole-nyt-erases-cias-efforts-to-overthrow-syrias-government/)
-		* [IRA Code Words Spell Real Threat - William Montalbano(LA Times 1997)](https://articles.latimes.com/1997-04-19/news/mn-50393_1_code-words)
-		* [‘A man who’s seen society's black underbelly’ Meduza meets ‘Anonymous International’](https://meduza.io/en/feature/2015/02/02/a-man-who-s-seen-society-s-black-underbelly)
-		* [The men behind QAnon - Chris Francescani(2020)](https://abcnews.go.com/Politics/men-qanon/story?id=73046374)
-		* [How the 1% Scrubs Its Image Online - Rachael Levy(2019)](https://www.wsj.com/articles/how-the-1-scrubs-its-image-online-11576233000)
-			* "Prominent figures from Jacob Gottlieb to Betsy DeVos got help from a reputation management firm that can bury image-sensitive Google results by placing flattering content on websites that masquerade as news outlets"
-		* [A Global Guide to State-Sponsored Trolling - Michael Riley, Lauren Etter, Bibhudatta Pradhan(2018)](https://www.bloomberg.com/features/2018-government-sponsored-cyber-militia-cookbook/)
 * **Concision**
 	* [Concision (media studies) - Wikipedia](https://en.wikipedia.org/wiki/Concision_(media_studies))
 		* In media studies, concision is a form of broadcast media censorship by limiting debate and discussion of important topics on the rationale of time allotment.
@@ -416,6 +392,27 @@
 	* **Papers**
 		* [Wait, There's Torture in Zootopia?: Examining the Prevalence of Torture in Popular Movies - Casey Delehanty, Erin Kearns(2019)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3342908)
 * **Disinformation**
+	* **Articles/Blogposts/Writeups**
+		* [A DC Think Tank Used Fake Social Media Accounts, A Bogus Expert, And Fancy Events To Reach The NSA, FBI, And White House - Craig Silverman(BuzzFeed News)](https://www.buzzfeednews.com/article/craigsilverman/icit-james-scott-think-tank-fake-twitter-youtube#.dnqv2lQJr)
+		* [Dezinformatsiya - John Barron](http://www.heretical.com/miscella/dinform.html)
+			* John Barron, KGB, Hodder & Stoughton, 1974. In The Penguin Book of Lies, pp. 420-423
+		* [25 Rules of Disinformation](http://vigilantcitizen.com/latestnews/the-25-rules-of-disinformation/)
+		* [8 Traits of the Disinformationalist](https://calloutjoe.wordpress.com/psyop/eight-traits-of-the-disinformationalist/)
+		* [Disinformation of Charlie Hebdo and The Fake BBC Website](http://thetrendythings.com/read/18256)
+		* [Counterintelligence, False Flags, Disinformation, and Network Defense - krypt3ia](https://krypt3ia.wordpress.com/2012/10/17/counterintelligence-false-flags-disinformation-and-network-defense/)
+		* [Attribution As A Weapon & Marketing Tool: Hubris In INFOSEC & NATSEC](https://krypt3ia.wordpress.com/2014/12/30/attribution-as-a-weapon-marketing-tool-hubris-in-infosec-natsec/)
+		* [SyTech’s FSB Document Dump: Owning The Information Space and Disconnecting It - Krytp3ia](https://krypt3ia.wordpress.com/2019/08/03/sytechs-fsb-document-dump-owning-the-information-space-and-disconnecting-it/)
+		* [The Gentleperson’s Guide to Forum Spies](http://www.cryptome.org/2012/07/gent-forum-spies.htm)
+		* [A Digital World Full of Ghost Armies](http://www.cigtr.info/2015/02/a-digital-world-full-of-ghost-armies.html)
+		* [Disinformation demystified - icyphox](https://icyphox.sh/blog/disinfo/)
+		* [PsyOps and Socialbots](http://resources.infosecinstitute.com/psyops-and-socialbots/)
+		* [Down the Memory Hole: NYT Erases CIA’s Efforts to Overthrow Syria’s Government](https://web.archive.org/web/20150921054800id_/http://fair.org/home/down-the-memory-hole-nyt-erases-cias-efforts-to-overthrow-syrias-government/)
+		* [IRA Code Words Spell Real Threat - William Montalbano(LA Times 1997)](https://articles.latimes.com/1997-04-19/news/mn-50393_1_code-words)
+		* [‘A man who’s seen society's black underbelly’ Meduza meets ‘Anonymous International’](https://meduza.io/en/feature/2015/02/02/a-man-who-s-seen-society-s-black-underbelly)
+		* [The men behind QAnon - Chris Francescani(2020)](https://abcnews.go.com/Politics/men-qanon/story?id=73046374)
+		* [How the 1% Scrubs Its Image Online - Rachael Levy(2019)](https://www.wsj.com/articles/how-the-1-scrubs-its-image-online-11576233000)
+			* "Prominent figures from Jacob Gottlieb to Betsy DeVos got help from a reputation management firm that can bury image-sensitive Google results by placing flattering content on websites that masquerade as news outlets"
+		* [A Global Guide to State-Sponsored Trolling - Michael Riley, Lauren Etter, Bibhudatta Pradhan(2018)](https://www.bloomberg.com/features/2018-government-sponsored-cyber-militia-cookbook/)
 	* **General**
 		* [A Syllabus of Psychological Warfare - US Gov(1946)](https://collections.nlm.nih.gov/ext/dw/01130770R/PDF/01130770R.pdf)
 		* [Information Operations in and around EVE Online - Paul Chamberlain(2009)](https://memeover.arkem.org/2009/12/information-operations-in-and-around.html)
@@ -434,12 +431,12 @@
 		* [Fake News at 11 - A Brief Look at Astroturfing - Dan Borges(2020)](https://www.youtube.com/watch?v=50MI6GYIEfI)
 		* [Evaluating the fake news problem at the scale of the information ecosystem - Jennifer Allen, Baird Howland, Markus Mobius, David Rothschild, Duncan J. Watts](https://advances.sciencemag.org/content/6/14/eaay3539)
 			* “Fake news,” broadly defined as false or misleading information masquerading as legitimate news, is frequently asserted to be pervasive online with serious consequences for democracy. Using a unique multimode dataset that comprises a nationally representative sample of mobile, desktop, and television consumption, we refute this conventional wisdom on three levels. First, news consumption of any sort is heavily outweighed by other forms of media consumption, comprising at most 14.2% of Americans’ daily media diets. Second, to the extent that Americans do consume news, it is overwhelmingly from television, which accounts for roughly five times as much as news consumption as online. Third, fake news comprises only 0.15% of Americans’ daily media diet. Our results suggest that the origins of public misinformedness and polarization are more likely to lie in the content of ordinary news or the avoidance of news altogether as they are in overt fakery.
-    * **Facebook-related**
-    	* ["I Have Blood on My Hands”: A Whistleblower Says Facebook Ignored Global Political Manipulation - Craig Silverman, Ryan Mac, Pranav Dixit(2020)](https://www.buzzfeednews.com/article/craigsilverman/facebook-ignore-political-manipulation-whistleblower-memo)
-    		* "A 6,600-word internal memo from a fired Facebook data scientist details how the social network knew leaders of countries around the world were using their site to manipulate voters — and failed to act."
-    * **Twitter**
-    	* [Twitter as a Vector for Disinformation - Paul Chamberlain(2009)](https://memeover.arkem.org/2009/12/twitter-as-vector-for-disinformation.html)
-    		* " Twitter is a social network that represents a powerful information channel with the potential to be a useful vector for disinformation. This paper examines the structure of the Twitter social network and how this structure has facilitated the passing of disinformation both accidental and deliberate. Examples of the use of Twitter as an information channel are examined from recent events. The possible effects of Twitter disinformation on the information sphere are explored as well as the defensive responses users are developing to protect against tainted information."
+	* **Facebook-related**
+    		* ["I Have Blood on My Hands”: A Whistleblower Says Facebook Ignored Global Political Manipulation - Craig Silverman, Ryan Mac, Pranav Dixit(2020)](https://www.buzzfeednews.com/article/craigsilverman/facebook-ignore-political-manipulation-whistleblower-memo)
+    			* "A 6,600-word internal memo from a fired Facebook data scientist details how the social network knew leaders of countries around the world were using their site to manipulate voters — and failed to act."
+	* **Twitter**
+    		* [Twitter as a Vector for Disinformation - Paul Chamberlain(2009)](https://memeover.arkem.org/2009/12/twitter-as-vector-for-disinformation.html)
+    			* " Twitter is a social network that represents a powerful information channel with the potential to be a useful vector for disinformation. This paper examines the structure of the Twitter social network and how this structure has facilitated the passing of disinformation both accidental and deliberate. Examples of the use of Twitter as an information channel are examined from recent events. The possible effects of Twitter disinformation on the information sphere are explored as well as the defensive responses users are developing to protect against tainted information."
 		* [Former Twitter employees charged with spying for Saudi Arabia by digging into the accounts of kingdom critics - Ellen Nakashima, Greg Bensinger(2019)](https://www.washingtonpost.com/national-security/former-twitter-employees-charged-with-spying-for-saudi-arabia-by-digging-into-the-accounts-of-kingdom-critics/2019/11/06/2e9593da-00a0-11ea-8bab-0fc209e065a8_story.html)
 			* "The Justice Department has charged two former Twitter employees with spying for Saudi Arabia by accessing the company’s information on dissidents who use the platform, marking the first time federal prosecutors have publicly accused the kingdom of running agents in the United States."
 	* **Russian**
@@ -776,7 +773,7 @@
 			* [NSA documents and cover names from the book Dark Mirror - Electrospaces(2020)](https://www.electrospaces.net/2020/06/nsa-documents-and-cover-names-from-book.html)
 			* [Inside the NSA’s Secret Tool for Mapping Your Social Network - Barton Gellman(2020)](https://www.wired.com/story/inside-the-nsas-secret-tool-for-mapping-your-social-network/)
 				* "Edward Snowden revealed the agency’s phone-record tracking program. But thanks to “precomputed contact chaining,” that database was much more powerful than anyone knew."
-		* **Secret SErvice**
+		* **Secret Service**
 			* [Secret Service bought location data pulled from common apps - Christine Fisher(2020)](https://www.engadget.com/secret-service-bought-location-data-locate-x-165531624.html)
 				* "Normally, law enforcement would need a warrant or court order to access that data."
 			* [Secret Service Paid to Get Americans' Location Data Without a Warrant, Documents Show - Rhett Jones(2020)](https://gizmodo.com/secret-service-bought-access-to-americans-location-data-1844752501)
@@ -786,7 +783,6 @@
 		* **USPS**
 			* [Outcry over US Postal Service reportedly tracking social media posts - Coral Murphy Marcos(2021)](https://www.theguardian.com/business/2021/apr/23/usps-covert-program-postal-service-social-media)
 			* "Report obtained by Yahoo says USPS surveilling via covert program social media activity it describes as ‘inflammatory’"
-
 		* [Indoor Location Accuracy Benchmarks - FCC](https://www.fcc.gov/public-safety-and-homeland-security/policy-and-licensing-division/911-services/general/location-accuracy-indoor-benchmarks)
 			* In January 2015, the Commission adopted new Enhanced 911 (E911) location accuracy rules and information collection requirements in the Fourth Report and Order in PS Docket No. 07-114.  The new rules became effective on April 3, 2015, except for rules containing information collection provisions, which became effective on August 3, 2015 upon approval by the Office of Management and Budget. Below is a summary timeline of compliance deadlines for Commercial Mobile Radio Service (CMRS) providers established by the Fourth Report and Order.
 	* **UAE**

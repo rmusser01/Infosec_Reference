@@ -1524,40 +1524,49 @@
 	* **Native API**(Syscalls & WinAPI)
 		* **101**
 			* [Windows API - Wikipedia](https://en.wikipedia.org/wiki/Windows_API)
+			* [How Do Windows NT System Calls REALLY Work? - John Gulbrandsen](https://www.codeguru.com/cpp/w-p/system/devicedriverdevelopment/article.php/c8035/How-Do-Windows-NT-System-Calls-REALLY-Work.htm)
+			* [FreshyCalls: Syscalls Freshly Squeezed! - ElephantSe4l(2020)](https://www.crummie5.club/freshycalls/)
+		* **(Un)Official Documentation**
 			* [Windows API index - docs.ms](https://docs.microsoft.com/en-us/windows/win32/apiindex/windows-api-list)
 				* The following is a list of the reference content for the Windows application programming interface (API) for desktop and server applications. Using the Windows API, you can develop applications that run successfully on all versions of Windows while taking advantage of the features and capabilities unique to each version. (Note that this was formerly called the Win32 API. The name Windows API more accurately reflects its roots in 16-bit Windows and its support on 64-bit Windows.)
-			* [System calls: What are system calls and why are they necessary? - ](https://www.ionos.com/digitalguide/server/know-how/what-are-system-calls/)
+			* [System calls: What are system calls and why are they necessary? - ionos.com](https://www.ionos.com/digitalguide/server/know-how/what-are-system-calls/)
 			* [System Calls - docs.ms](https://docs.microsoft.com/en-us/cpp/c-runtime-library/system-calls?view=msvc-160&viewFallbackFrom=vs-2019)
-			* [How Do Windows NT System Calls REALLY Work? - John Gulbrandsen](https://www.codeguru.com/cpp/w-p/system/devicedriverdevelopment/article.php/c8035/How-Do-Windows-NT-System-Calls-REALLY-Work.htm)
-			* [Windows X86-64 System Call Table (XP/2003/Vista/2008/7/2012/8/10) - Mateusz "j00ru" Jurczyk](https://j00ru.vexillium.org/syscalls/nt/64/)
-			* [FreshyCalls: Syscalls Freshly Squeezed! - ElephantSe4l(2020)](https://www.crummie5.club/freshycalls/)
-			* [Syscalls with D/Invoke - RastaMouse2021](https://offensivedefence.co.uk/posts/dinvoke-syscalls/)
-			* [Bypassing User-Mode Hooks and Direct Invocation of System Calls for Red Teams - @modexpblog(2020)](https://www.mdsec.co.uk/2020/12/bypassing-user-mode-hooks-and-direct-invocation-of-system-calls-for-red-teams/)
-		* **Learning**
-			* [Introduction to Windows API - ZetCode(2020)](https://zetcode.com/gui/winapi/introduction/)
-		* **Articles/Blogposts/Writeups**
-			* [Struggling between syscall or sysenter (Windows) - StackOverflow](https://reverseengineering.stackexchange.com/questions/16454/struggling-between-syscall-or-sysenter-windows/16511#16511)
-			* [Intercepting System Calls on x86_64 Windows - Jurriaan Bremer(2012)](http://jbremer.org/intercepting-system-calls-on-x86_64-windows/)
-			* [On Windows Syscall Mechanism and Syscall Numbers Extraction Methods  - Simone Margaritelli(2014)](https://www.evilsocket.net/2014/02/11/on-windows-syscall-mechanism-and-syscall-numbers-extraction-methods/)
-			* [Accessing the Windows API Directly - Osanda Malith(2015](https://osandamalith.com/2015/02/19/accessing-the-windows-api-directly/)
 			* [WinAPI Documentation - Steve Donovan](https://stevedonovan.github.io/winapi/api.html)
+		* **Learning**
+			* [Struggling between syscall or sysenter (Windows) - StackOverflow](https://reverseengineering.stackexchange.com/questions/16454/struggling-between-syscall-or-sysenter-windows/16511#16511)
+			* [System calls on Windows x64 - n4r1b(2019)](https://www.n4r1b.com/posts/2019/03/system-calls-on-windows-x64/)
+			* [Introduction to Windows API - ZetCode(2020)](https://zetcode.com/gui/winapi/introduction/)
+			* [Tutorial Understanding Windows SysCalls - SysCall Dumper - Timb3r](https://guidedhacking.com/threads/understanding-windows-syscalls-syscall-dumper.14470/)
+			* [Undocumented Windows API Functions & Structures - Rake(2020)](https://guidedhacking.com/threads/undocumented-windows-functions-structures.14438/)
+		* **Syscall Numbers**
+			* [Windows X86-64 System Call Table (XP/2003/Vista/2008/7/2012/8/10) - Mateusz "j00ru" Jurczyk](https://j00ru.vexillium.org/syscalls/nt/64/)
+			* [On Windows Syscall Mechanism and Syscall Numbers Extraction Methods  - Simone Margaritelli(2014)](https://www.evilsocket.net/2014/02/11/on-windows-syscall-mechanism-and-syscall-numbers-extraction-methods/)
+		* **Using Them**
+			* [SharedUserData SystemCall Hook - bugcheck, skape(2005)](http://uninformed.org/index.cgi?v=3&a=4&p=22)
 			* [Making Raw Syscalls on Windows From Python - Spencer(2017)](https://warroom.rsmus.com/making-syscalls-python/)
-			* [Win32k System Call Filtering Deep Dive - Morten Schenk(2017)](https://improsec.com/tech-blog/win32k-system-call-filtering-deep-dive)
-			* [The Windows 10 TH2 INT 2E mystery - Adrien Chevalier(2018)](https://blog.amossys.fr/windows10_TH2_int2E_mystery.html)
-			* [Malware Mitigation when Direct System Calls are Used - Hod Gavriel(2018)](https://www.cyberbit.com/blog/endpoint-security/malware-mitigation-when-direct-system-calls-are-used/)		
-			* [SharedUserData SystemCall Hook - uninformed Vol.3](http://uninformed.org/index.cgi?v=3&a=4&p=22)
-			* [Malware Mitigation when Direct System Calls are Used - Hod Gavriel(2018)](https://www.cyberbit.com/blog/endpoint-security/malware-mitigation-when-direct-system-calls-are-used/)
-			* [Red Team Tactics: Combining Direct System Calls and sRDI to bypass AV/EDR - Cornelis de Plaa(2019)](https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/)
-				* In this blog post we will explore the use of direct system calls, restore hooked API calls and ultimately combine this with a shellcode injection technique called sRDI. We will combine these techniques in proof of concept code which can be used to create a LSASS memory dump using Cobalt Strike, while not touching disk and evading AV/EDR monitored user-mode API calls.
 			* [Calling Syscalls Directly from Visual Studio to Bypass AVs/EDRs - @spottheplanet](https://www.ired.team/offensive-security/defense-evasion/using-syscalls-directly-from-visual-studio-to-bypass-avs-edrs)
 			* [Retrieving ntdll Syscall Stubs from Disk at Run-time - @spottheplanet](https://www.ired.team/offensive-security/defense-evasion/retrieving-ntdll-syscall-stubs-at-run-time)
-			* [System calls on Windows x64 - n4r1b(2019)](https://www.n4r1b.com/posts/2019/03/system-calls-on-windows-x64/)
+			* [Red Team Tactics: Combining Direct System Calls and sRDI to bypass AV/EDR - Cornelis de Plaa(2019)](https://outflank.nl/blog/2019/06/19/red-team-tactics-combining-direct-system-calls-and-srdi-to-bypass-av-edr/)
+				* In this blog post we will explore the use of direct system calls, restore hooked API calls and ultimately combine this with a shellcode injection technique called sRDI. We will combine these techniques in proof of concept code which can be used to create a LSASS memory dump using Cobalt Strike, while not touching disk and evading AV/EDR monitored user-mode API calls.
+			* [Bypassing User-Mode Hooks and Direct Invocation of System Calls for Red Teams - @modexpblog(2020)](https://www.mdsec.co.uk/2020/12/bypassing-user-mode-hooks-and-direct-invocation-of-system-calls-for-red-teams/)
+			* [Implementing Direct Syscalls Using Hell’s Gate - N4kedTurtle(2020)](https://teamhydra.blog/2020/09/18/implementing-direct-syscalls-using-hells-gate/)
+			* [Syscalls with D/Invoke - RastaMouse2021](https://offensivedefence.co.uk/posts/dinvoke-syscalls/)
+			* [Hiding your syscalls - passthehashbrowns(2021](https://passthehashbrowns.github.io/hiding-your-syscalls)
+				* [Code](https://github.com/passthehashbrowns/hiding-your-syscalls)
+		* **Syscall Filtering**
+			* [Rainbow Over the Windows: More Colors Than You Could Expect - @zer0mem, @long123king(2016)](https://www.slideshare.net/PeterHlavaty/rainbow-over-the-windows-more-colors-than-you-could-expect)
+			* [Win32k System Call Filtering Deep Dive - Morten Schenk(2017)](https://improsec.com/tech-blog/win32k-system-call-filtering-deep-dive)
+		* **Articles/Blogposts/Writeups**
+			* [Accessing the Windows API Directly - Osanda Malith(2015](https://osandamalith.com/2015/02/19/accessing-the-windows-api-directly/)
+			* [I Like Syscalls (And I Cannot Lie) - Steiner(2015)](https://warroom.rsmus.com/i-like-syscalls-and-i-cannot-lie/)
 			* [Using Syscalls to Inject Shellcode on Windows - Solomon Sklash(2020)](https://www.solomonsklash.io/syscalls-for-shellcode-injection.html)
-			* [Undocumented Windows API Functions & Structures - Rake](https://guidedhacking.com/threads/undocumented-windows-functions-structures.14438/)
 			* [Red Team Tactics: Utilizing Syscalls in C# - Prerequisite Knowledge - Jack Halon](https://jhalon.github.io/utilizing-syscalls-in-csharp-1/)
 			* [Red Team Tactics: Utilizing Syscalls in C# - Writing The Code - Jack Halon](https://jhalon.github.io/utilizing-syscalls-in-csharp-2/)
-			* [Tutorial Understanding Windows SysCalls - SysCall Dumper - Timb3r](https://guidedhacking.com/threads/understanding-windows-syscalls-syscall-dumper.14470/)
+			* [The Windows 10 TH2 INT 2E mystery - Adrien Chevalier(2018)](https://blog.amossys.fr/windows10_TH2_int2E_mystery.html)
+			* [Malware Mitigation when Direct System Calls are Used - Hod Gavriel(2018)](https://www.cyberbit.com/blog/endpoint-security/malware-mitigation-when-direct-system-calls-are-used/)
+			* [SharedUserData SystemCall Hook - uninformed Vol.3](http://uninformed.org/index.cgi?v=3&a=4&p=22)
 			* [Fuzzing the Windows API for AV Evasion - Winternl(2020)](https://winternl.com/fuzzing-the-windows-api-for-av-evasion/)
+			* [Detecting Manual Syscalls from User Mode - jackullrich(2021](https://winternl.com/detecting-manual-syscalls-from-user-mode/)
 		* **Talks/Presentations/Videos**
 			* [Getting Windows to Play with Itself: A Pen Testers Guide to Windows API Abuse - Brady Bloxham(Derbycon2014)](https://www.irongeek.com/i.php?page=videos/derbycon4/t122-getting-windows-to-play-with-itself-a-pen-testers-guide-to-windows-api-abuse-brady-bloxham)
 				* Windows APIs are often a blackbox with poor documentation, taking input and spewing output with little visibility on what actually happens in the background. By reverse engineering (and abusing) some of these seemingly benign APIs, we can effectively manipulate Windows into performing stealthy custom attacks using previously unknown persistent and injection techniques. In this talk, we’ll get Windows to play with itself nonstop while revealing 0day persistence, previously unknown DLL injection techniques, and Windows API tips and tricks. To top it all off, a custom HTTP beaconing backdoor will be released leveraging the newly released persistence and injection techniques. So much Windows abuse, so little time.
@@ -1584,6 +1593,8 @@
 				* A simple dumper as FreshyCalls' PoC. That's what's trendy, isn't it? `¯\_(ツ)_/¯`		
 			* [inline_syscall](https://github.com/JustasMasiulis/inline_syscall)
 				* Header only library that allows you to generate direct syscall instructions in an optimized, inlineable and easy to use manner.
+			* [Syscall Monitor]()https://github.com/hzqst/Syscall-Monitor)
+				* This is a process monitoring tool (like Sysinternal's Process Monitor) implemented with Intel VT-X/EPT for Windows 7+.
 	* **Power API**
 		* [Deus Somnum](https://github.com/am0nsec/vx/tree/master/Virus.Win64.DeusSomnum)
 			* Leverage the Windows Power Management API for code execution and defense evasion.

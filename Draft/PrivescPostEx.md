@@ -1608,82 +1608,385 @@
 		* **Tools**
 			* [DueDLLigence](https://github.com/fireeye/DueDLLigence)
 				* Shellcode runner framework for application whitelisting bypasses and DLL side-loading. The shellcode included in this project spawns calc.exe.
-	* **Shellcode Execution, Injection & Runners**<a name="winshellcodeexec"></a>
+	* **Shellcode Stuff**<a name="winshellcode"></a>
 		* **101**
 			* [Shellcode - Wikipedia](https://en.wikipedia.org/wiki/Shellcode)
-		* **Learning Shellcoding**
-			* **Win32**
+			* [Shellcoding for Linux and Windows Tutorial - Steve Hanna(2007)](https://vividmachines.com/shellcode/shellcode.html)
+			* [shellcode-resources](https://github.com/alphaSeclab/shellcode-resources#b79d65effe22d7dfa216cdfaaede7abd)
+				* Resources About Shellcode
+		* **Analysis**
+			* **How-Tos**
+				* [Analyzing Windows shellcode - triage, disassemble, debug. - @malwaredisciple(2018](https://rinseandrepeatanalysis.blogspot.com/2018/12/analyzing-windows-shellcode-triage.html)
+				* [Building A Custom Tool For Shellcode Analysis - MalBot(2019)](https://malware.news/t/building-a-custom-tool-for-shellcode-analysis/34358)
+			* **Writeups**
+				* [How To Build A Kernel Shellcode Design and Testing Platform For Windows 8 By Using Windbg - cawanblog(2012)](https://cawanblog.blogspot.com/2012/11/how-to-build-kernel-shellcode-design_5.html)
+				* [Network detection of x86 buffer overflow shellcode - Gary Golomb(2012)](https://community.rsa.com/t5/netwitness-blog/network-detection-of-x86-buffer-overflow-shellcode/ba-p/518621)
+				* [Phishing with obfuscated javascript, shellcode and malware - Manuel Pelaacuteez(2012)](https://isc.sans.edu/forums/diary/Phishing+with+obfuscated+javascript+shellcode+and+malware/12700/)
+				* [Shellcode Detection with XORSearch - Didier Stevens(2014)](https://isc.sans.edu/forums/diary/Guest+Diary+Didier+Stevens+Shellcode+Detection+with+XORSearch/18929/)
+				* [Obfuscated shellcode inside a malicious RTF document - zairon(2014)](https://zairon.wordpress.com/2014/03/06/obfuscated-shellcode-inside-a-malicious-rtf-document/)
+				* [Converting Shellcode to Portable Executable (32- and 64- bit) - hexacorn(2015)](https://www.hexacorn.com/blog/2015/12/10/converting-shellcode-to-portable-executable-32-and-64-bit/)
+				* [VB Dropper and Shellcode for Hancitor Reveal New Techniques Behind Uptick - Jeff White(2016)](https://unit42.paloaltonetworks.com/unit42-vb-dropper-and-shellcode-for-hancitor-reveal-new-techniques-behind-uptick/)
+				* [VBA Shellcode and EMET - Didier Stevens(2016)](https://isc.sans.edu/forums/diary/VBA+Shellcode+and+EMET/21705/)
+				* [Threat Actors Employ COM Technology in Shellcode to Evade Detection - Haifei Li(2016)](https://www.mcafee.com/blogs/other-blogs/mcafee-labs/threat-actors-employ-com-technology-shellcode-evade-detection/)
+				* [UAF Bug Affects Internet Explorer, Runs Shellcode - Elliot Cao(2018)](https://www.trendmicro.com/en_us/research/18/h/use-after-free-uaf-vulnerability-cve-2018-8373-in-vbscript-engine-affects-internet-explorer-to-run-shellcode.html)
+					* [runsc.c](https://github.com/odzhan/shellcode/blob/master/runsc.c)
+				* [Malicious Excel documents with macros running shellcodes - Angel Alonso-Parrizas(2016)](https://blog.angelalonso.es/2016/05/malicious-excel-documents-vba-running.html)
+				* [Reversing shellcode using blobrunner and Olly - @malwarenailed(2018)](https://malwarenailed.blogspot.com/2018/09/reversing-shellcode-using-blobrunner.html)		
+				* [Those Pesky Powershell Shellcode’s And How To Understand Them - pcsxcetrasupport3(2019)](https://pcsxcetrasupport3.wordpress.com/2019/07/07/those-pesky-powershell-shellcodes-and-how-to-understand-them/)
+				* [Shellcode Tester](https://github.com/tophertimzen/shellcodetester)
+					* GUI Application in C# to run and disassemble shellcode
+				* [A look at a bmp file with embedded shellcode - pcsxcetrasupport3(2019)](https://pcsxcetrasupport3.wordpress.com/2019/03/02/a-look-at-a-bmp-file-with-embedded-shellcode/)
+				* [Solving MalwareTech Shellcode challenges with some radare2 magic! - Alan Vivona(2019)](https://medium.com/syscall59/solving-malwaretech-shellcode-challenges-with-some-radare2-magic-b91c85babe4b)
+				* [ShellCodeEmulator](https://github.com/ohjeongwook/shellcodeemulator)
+					* ShellcodeEmulator emulates Windows shellcode with the help of windbg process memory dumps. You can provide shellcode to analyze with any Windows process dump image. The tool will emulate as much as of the userland code using the shellcode bytes and the provided dump image.		
+				* [Let's Learn: Dissecting Operation ShadowHammer Shellcode Internals in crt_ExitProcess - Vitali Kremez(2019)](https://www.vkremez.com/2019/03/lets-learn-dissecting-operation.html)
+				* [Maldoc with Nonfunctional Shellcode - Didier Stevens(2019)](https://isc.sans.edu/forums/diary/Maldoc+with+Nonfunctional+Shellcode/24478/)
+				* [RIFT: Analysing a Lazarus Shellcode Execution Method - Research and Intelligence Fusion Team(RIFT)(2021](https://research.nccgroup.com/2021/01/23/rift-analysing-a-lazarus-shellcode-execution-method/)
+				* [A Look at Metasploit’s Shellcodes - Hido Cohen(2021)](https://blog.usejournal.com/a-look-at-metasploits-shellcodes-4c21de5e4580?gi=6bb06e6f2f82)
+				* [Reversing a shellcode with import by hash - jeremy@bidouillesecurity](https://bidouillesecurity.com/reversing-a-shellcode-with-hash-import/)
+			* **Videos**
+				* [Shellcode detection techniques - Svetlana Gaivoronski(2014)](https://www.youtube.com/watch?v=bbzH-y93hq0)
+				* [Debugging shellcode using BlobRunner and IDA Pro - OALabs(2017](https://www.youtube.com/watch?v=q9q8dy-2Jeg)
+				* [Extract Shellcode from Fileless Malware like a Pro - ](https://www.youtube.com/watch?v=jbieGfML0Bs)
+					* Here I demonstrate how to extract shellcode from the context of a malicious Word doc which uses VBA to inject shellcode into the memory space of a victim process.
+				* [Beginner Reversing #2 (Shellcode1 & MEMZ Malware) - Marcus Hutchins(2018](https://www.youtube.com/watch?v=b0WQwCQGjv4)
+					* Walkthrough of static analysis challenge Shellcode1 from https://www.malwaretech.com/beginner-malware-reversing-challenges, some live reversing of the MEMZ trojan, and viewer Q&A.
+				* [Beginner Reversing #3 (Shellcode2 & Lab Overview) - Marcus Hutchins(2018)](https://www.youtube.com/watch?v=jm4DmdygLvw)
+					* Walkthrough of static analysis challenge Shellcode2 from https://www.malwaretech.com/beginner-malware-reversing-challenges, some overview of my home malware analysis lab, and viewer Q&A.
+				* [Excel 4.0 Macros Analysis - Cobalt Strike Shellcode Injection - Colin Hardy(2019)](https://www.youtube.com/watch?v=XnN_UWfHlNM)
+					* Here I describe how you can analyse a very stealthy technique to execute shellcode via Process Injection from an old-skool Excel Macro technique, known as Excel 4.0 Macros. This seems to be a technique favoured by many APT's and Red Teams given the lack of detection by lots of anti-malware technology. The sample attempts to inject shellcode which transpires to be a Cobalt Strike beacon which uses Domain Fronting to access its C2. 
+			* **Tools**
+				* [Shellcode2Exe](https://edge-security.blogspot.com/2008/12/shellcode2exe.html)
+				* [Shellcode Analysis - Rolf Rolles(2007)](https://www.msreverseengineering.com/blog/tag/shellcode)
+					* "My solution to this is a small python script, based upon Ero's pefile, that creates an IDC declaration of an IDA enumeration for each DLL. The enum serves as a mapping between each exported name and its hash. Since the API hashing function may change, the Python function to do this is extensible via a function pointer which defaults to the standard hash presented above."
+				* [BlobRunner](https://github.com/OALabs/BlobRunner)
+					* BlobRunner is a simple tool to quickly debug shellcode extracted during malware analysis. BlobRunner allocates memory for the target file and jumps to the base (or offset) of the allocated memory. This allows an analyst to quickly debug into extracted artifacts with minimal overhead and effort.
+		**Writing Shellcode**
+			* **Multi-Platform**
+				* [Architecture Spanning Shellcode - eugene(2002)](https://web.archive.org/web/20100805034535/http://www.groar.org/expl/intermediate/p57-0x0e.txt)
+					* The general idea behind an architecture spanning shellcode is trying to come up with a sequence of bytes that would execute a jump instruction on one architecture while executing a nop-like instruction on another architecture. That way we can branch to architecture specific code depending on the platform our code is running on.
+				* [isX64 Gem - ragestorm.net(2012)](https://web.archive.org/web/20160406173335/http://www.ragestorm.net/blogs/?p=376)
+				* [Building multi-architecture shellcode with shellcodecs - chokepoint.net(2013)](https://web.archive.org/web/20160312145414/http://www.chokepoint.net/2013/08/building-multi-architecture-shellcode.html)
+				* [Building a multiplatform shellcode header - chokepoint.net(2013)](https://web.archive.org/web/20160312145320/http://www.chokepoint.net/2013/09/building-multiplatform-shellcode-header.html)
+				* [Shellcode: Detection between Windows/Linux/BSD on x86 architecture - odzhan(2016)](https://modexp.wordpress.com/2016/06/02/shellcode-detection/)
+				* [Shellcode: Execute command for x32/x64 Linux / Windows / BSD - odzhan(2016)](https://modexp.wordpress.com/2016/06/04/winux/)
+			* **Agnostic**
+				* [Not all shellcode locations are made equal - seanhn(2009)](https://sean.heelan.io/2009/05/13/not-all-shellcode-locations-are-made-equal/)
+				* [Morphing shellcode using CFGs and SAT - seanhn(2009)](https://sean.heelan.io/2009/06/02/model-checking-smt-solving-and-morphing-shellcode/)
+			**(De/En)coders**
+				 * [Writing Custom Shellcode Encoders and Decoders - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/writing-custom-shellcode-encoders-and-decoders)
+				 * [Synesthesia: Modern Shellcode Synthesis (Ekoparty 2016 Talk) - Rolf Rolles(2016)](https://www.msreverseengineering.com/blog/2016/11/8/synesthesia-modern-shellcode-synthesis-ekoparty-2016-talk)
+				 	* Here are the slides and code for my recent presentation at Ekoparty 2016. The full abstract can be found below. In brief, this research involved automatically generating shellcodes when there are restrictions on legal encodings. We explore examples ranging from well-known ones (no NULL bytes, no '%' character, printable, alphanumeric, all letters uppercase, etc.) to weird and challenging ones (bytes must alternate even and odd, no duplicate bytes, all words are prime numbers, etc). We also explore automated encoding and decoder generation: e.g., given some existing shellcode, transform it into (for example) alphanumeric bytes, and generate a decoder to revert the encoding at run-time. We also explore tasks like finding the shortest or longest solutions, re-writing existing shellcodes into a given encoding, exploiting known facts about the input state, and integration with automated exploit generation.
+				 * [Creating a Custom shellcode encoder - Dhayalan(2017)](https://d3fa1t.ninja/2017/07/18/creating-an-custom-shellcode-encoder/)
+				 * [Custom shellcode encoder - Snowscan(2018)](https://snowscan.io/custom-encoder/)
+				 * [Creating a Custom Shellcode Encoder - rastating(2018)](https://rastating.github.io/creating-a-custom-shellcode-encoder/)
+				 * [Shikata Ga Nai Encoder Still Going Strong - Steve Miller, Evan Reese, Nick Carr(2019)](https://www.fireeye.com/blog/threat-research/2019/10/shikata-ga-nai-encoder-still-going-strong.html)
+				 * [The Lost Art of Shellcode Encoder/Decoders - Dave Aitel(2019](https://cybersecpolitics.blogspot.com/2019/03/the-lost-art-of-shellcode.html)
+				 * [In-Memory shellcode decoding to evade AVs/EDRs - Askar(2020)](https://shells.systems/in-memory-shellcode-decoding-to-evade-avs/)
+				 * [x86 ASCII AND-SUB Encoder - phra(2019)](https://iwantmore.pizza/posts/and-sub-encoder.html)
+				 * [Shellcode: Encoding Null Bytes Faster With Escape Sequences - odzhan(2020](https://modexp.wordpress.com/2020/06/26/shellcode-encoding-null-bytes-faster/)
+				 * [The Shikata Ga Nai Encoder - Nick Hoffman, Jeremy Humble, and Toby Taylor](https://www.boozallen.com/c/insight/blog/the-shikata-ga-nai-encoder.html)
+				 	* [The x86 Countdown Encoder, Explained](https://www.boozallen.com/c/insight/blog/the-x86-countdown-encoder-explained.html)
+				 * [Modifying Metasploit Shellcode Decoders to Bypass Static Analysis - Alexander Bode, Jelle Ermerins(2020)](https://ermerins.com/assets/docs/shikataganai.pdf)
+			* **Obfuscators**
 				* **Articles/Blogposts/Writeups**
-					* https://web.archive.org/web/20150522211938/http://expdev.byethost7.com/2015/05/22/shellcode/
-					* https://vividmachines.com/shellcode/shellcode.html
+					* [X86 Shellcode Obfuscation - Part 1 - Kuba Gretzky(2016)](https://breakdev.org/x86-shellcode-obfuscation-part-1/)
+						* [Part 2](https://breakdev.org/x86-shellcode-obfuscation-part-2/)
+						* [Part 3](https://breakdev.org/x86-shellcode-obfuscation-part-3/)
+					* [Explained polymorphic obfuscation using the difference within two asm codes - Stackoverflow(2018)](https://stackoverflow.com/questions/49166509/explained-polymorphic-obfuscation-using-the-difference-within-two-asm-codes)
+					* [Revisiting the Art of Encoder-Fu for novel shellcode obfuscation techniques - Harpreet Singh, Yashdeep Saini(2021](https://passthesalt.ubicast.tv/videos/2021-revisiting-the-art-of-encoder-fu-for-novel-shellcode-obfuscation-techniques/)
+				* **Papers**
+					* [PMASCE-Polymorphic and Metamorphic Shellcode Creation Engine - Navneet Kaur Popli, Dr. Anup Girdhar(2019](http://meri.edu.in/journal/wp-content/uploads/2019/01/Paper-4-OCT-17.pdf)
+				* **Tools**
+			   	* [OWASP ZSC](https://github.com/OWASP/ZSC)
+			   		* OWASP ZSC is open source software written in python which lets you generate customized shellcode and convert scripts to an obfuscated script. This software can be run on Windows/Linux/OSX with python.				
+					* [Shellcoding(Mr-Un1k0d3r)](https://github.com/Mr-Un1k0d3r/Shellcoding)
+						* Shellcoding Utilities and shellcode obfuscator generator.					
+					* [Obfuscator](https://github.com/3xpl01tc0d3r/Obfuscator)
+						* [Blogpost](https://3xpl01tc0d3r.blogspot.com/2020/08/introduction-to-obfuscator.html)
+					* [UniByAv](https://github.com/Mr-Un1k0d3r/UniByAv)
+					* [Simple x64 XOR Shellcode Obfuscation - Entropy(2011](https://www.exploit-db.com/papers/17775)
+					* [Obfusion](https://github.com/kgretzky/obfusion)
+						* This library handles obfuscation of assembled X86 machine code in order to make it harder to read and analyze during the reverse engineering process.
+					* [PythonAESObfuscate](https://github.com/offsecginger/pythonaesobfuscate)
+					* [ADDMutate](https://github.com/k2/admmutate)
+						* A shellcode mutation engine, can evade NIDS.
+			* **ARM**(todo)
+				* [Running Shellcode in your Raspberry Pi - Osanda Malith(2015)](https://osandamalith.com/2015/03/05/running-shellcode-in-your-rasbperry-pi/)
+			**Linux**(todo)
+				* **101**
+				* **Techniques**
+					* **Syscalls**
+						* [Sysenter shellcode - Chris Rohlf(2006)](https://em386.blogspot.com/2006/11/sysenter-shellcode.html)
+				* **Talks/Presentations/Videos**
+				* **Tools**
+					* [Shellcode Compiler](https://github.com/NytroRST/ShellcodeCompiler)
+						* Shellcode Compiler is a program that compiles C/C++ style code into a small, position-independent and NULL-free shellcode for Windows (x86 and x64) and Linux (x86 and x64). It is possible to call any Windows API function or Linux syscall in a user-friendly way.
+				* **Samples**
+			* **Mac**
+				* **101**
+					* [Creating OSX shellcodes  - theevilbit(2015)](https://theevilbit.blogspot.com/2015/09/creating-osx-shellcodes.html)
+					* [Shellcode: Mac OSX amd64 - odzhan(2017)](https://modexp.wordpress.com/2017/01/21/shellcode-osx/)
+				* **Techniques**
+				* **Talks/Presentations/Videos**
+				* **Tools**
+				* **Samples**
+					* [OSX/x64 - execve(/bin/sh) + Null-Free Shellcode (34 bytes)](https://www.exploit-db.com/exploits/38065)
+					* [OSX/x64 - Bind (4444/TCP) Shell (/bin/sh) + Null-Free Shellcode (144 bytes)](https://www.exploit-db.com/exploits/38126)
+			* **Solaris**
+				* **101**
+				* **Articles/Blogposts/Writeups**
+					* [Shellcode: Solaris x86 - odzhan(2017)](https://modexp.wordpress.com/2017/01/23/shellcode-solaris/)
+				* **Talks/Presentations/Videos**
+				* **Tools**
+				* **Samples**
+					* [Solaris/SPARC - Bind (6789/TCP) Shell (/bin/sh) Shellcode (228 bytes)](https://www.exploit-db.com/exploits/13495)
+					* [Exploit writing tutorial part 9 : Introduction to Win32 shellcoding - corelan(2010](https://web.archive.org/web/20210414063809/https://www.corelan.be/index.php/2010/02/25/exploit-writing-tutorial-part-9-introduction-to-win32-shellcoding/)
+			* **Windows**
+				* **101/&Stuff**
 					* [Understanding Windows Shellcode - Skape(2003)](http://hick.org/code/skape/papers/win32-shellcode.pdf)
-					* [Win32 Shellcode - Intro - bolo(2019)](https://blackcloud.me/Win32-shellcode-1/)
+					* [Understanding the PEB Loader - dzzie](https://web.archive.org/web/20160328043604/http://sandsprite.com/CodeStuff/Understanding_the_Peb_Loader_Data_List.html)
+					* [High Level Windows Shellcode Development Methods - Stephen Bradhshaw(2011)](https://thegreycorner.com/2011/04/24/high-level-windows-shellcode.html)
 					* [The Art of Win32 Shellcoding - AmrThabet(2012)](https://www.codeproject.com/Articles/325776/The-Art-of-Win32-Shellcoding)
-					* [Finding Kernel32 Base and Function Addresses in Shellcode - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/finding-kernel32-base-and-function-addresses-in-shellcode)
-					* [Windows Shellcoding x86 – Hunting Kernel32.dll – Part 1 - paranoidninja(2018)](https://0xdarkvortex.dev/index.php/2019/03/18/windows-shellcoding-x86-hunting-kernel32-dll-part-1/)
+					* [Create a custom shellcode using System() function - Peru@gosecure.it(2014)](http://www.gosecure.it/blog/art/452/sec/create-a-custom-shellcode-using-system-function/)
+					* [Part 6: Writing W32 shellcode - b33f](http://fuzzysecurity.com/tutorials/expDev/6.html)
+					* [Shellcode - Massimiliano Tomassoli(2015)](https://web.archive.org/web/20150522211938/http://expdev.byethost7.com/2015/05/22/shellcode/)
+					* [How to write a Windows Shellcode... (beginners)  - Abdel Harbi(2016)](https://www.linkedin.com/pulse/how-write-windows-shellcode-beginners-abdel-harbi)
+					* [Basics of Windows shellcode writing - Iliya Dafchev(2017)](https://idafchev.github.io/exploit/2017/09/26/writing_windows_shellcode.html)
+					* [Win32 Shellcode - Intro - bolo(2019)](https://blackcloud.me/Win32-shellcode-1/)
+					* [(Windows 32-bit) Shellcoding 101 - ivanitlearning.wordpress.com(2018)](https://ivanitlearning.wordpress.com/2018/10/13/windows-32-bit-shellcoding-101/)
+					* [Introduction to Windows shellcode development – Part 1 - Ionut Popescu(2015)](https://securitycafe.ro/2015/10/30/introduction-to-windows-shellcode-development-part1/)
+						* [Part 2](https://securitycafe.ro/2015/12/14/introduction-to-windows-shellcode-development-part-2/)
+						* [Part 3](https://securitycafe.ro/2016/02/15/introduction-to-windows-shellcode-development-part-3/)
+					* [Writing Shellcode in Visual Studio - UserExistsError(2018)](https://userexistserror.blogspot.com/2018/11/writing-shellcode-in-visual-studio.html)
+					* [Windows x86 Manual Shellcode - Part 1 - bugtree(2018)](https://marcosvalle.github.io/re/exploit/2018/10/20/windows-manual-shellcode-part1.html)
+						* In this series we are going to write a Reverse Shell shellcode for Win32 from scratch while trying to reduce its size.
+						* [Part 2](https://marcosvalle.github.io/re/exploit/2018/10/21/windows-manual-shellcode-part2.html)
+						* [Part 3](https://marcosvalle.github.io/re/exploit/2018/10/21/windows-manual-shellcode-part3.html)
+					* [Dynamic Shellcode Execution - Noora Hyvärinen(2019](https://blog.f-secure.com/dynamic-shellcode-execution/)
+					* [Weaponizing dnscat with shellcode and Metasploit - skullsecurity(2010)](https://blog.skullsecurity.org/2010/weaponizing-dnscat-with-shellcode-and-metasploit)
+					* [masm_shc](https://github.com/hasherezade/masm_shc)
+						* A helper utility for creating shellcodes. Cleans MASM file generated by MSVC, gives refactoring hints.
+					* [Binary to shellcode - superkojiman(2013)](https://blog.techorganic.com/2013/03/02/binary-to-shellcode/)
+				* **Techniques**
+					* **x86 vs x64**
+						* [Windows x64 Shellcode - Topher Timzen(2014)](https://www.tophertimzen.com/blog/windowsx64Shellcode/)
+							* I will go over the differences between 32 and 64 bit assembly that I have noticed and how to work with them as well as some of the structures windows uses that are useful to know about for shellcode in the 64bit environment. I will also introduce two tools that I have created in helping my exploit development process.
+						* [Asmcodes: Platform Independent PIC for Loading DLL and Executing Commands - odzhan(2015)](https://modexp.wordpress.com/2015/11/17/asmcodes-pic/)
+						* [Shellcode: Dual mode PIC for x86 (Reverse and Bind Shells for Windows) - odzhan(2017)](https://modexp.wordpress.com/2017/01/24/shellcode-x84/)
+						* [Writing shellcodes for Windows x64 - nytrosecurity(2019)](https://nytrosecurity.com/2019/06/30/writing-shellcodes-for-windows-x64/)
+					* **Dumping LSASS**
+						* [Shellcode to Dump the Lsass Process - Osanda Malith(2019)](https://osandamalith.com/2019/05/11/shellcode-to-dump-the-lsass-process/)
+					* **Encryption**
+						* [Shellcode: Encrypting traffic - odzhan(2018)](https://modexp.wordpress.com/2018/08/17/shellcode-encrypting-traffic/)
+					* **HTA->ActiveX**
+						* [Office Shellcode Execution - subTee(2016)](https://evi1cg.me/archives/Office_Shellcode_Execution.html)
+					* **Kernel-related**
+						* [Win32 Reverse Shell Shellcode - h0mbre(2019)](https://h0mbre.github.io/Win32_Reverse_Shellcode/#)
+						* [Returning to usermode shellcode from windows kernel (Win10) - StackExchange(2019)](https://reverseengineering.stackexchange.com/questions/20768/returning-to-usermode-shellcode-from-windows-kernel-win10)
+					* **Resolving Function Addresses Statically**
+						* [Tutorial - Writing Hardcoded Windows Shellcodes (32bit) - Daniel Solstad(2020)](https://dsolstad.com/shellcode/2020/02/02/Tutorial-Hardcoded-Windows-Shellcodes-32bit.html)
+					* **Resolving Function Addresses Dynamically**
+						* [PE infection under Win32 - Mister Sandman, Jack Qwerty, GriYo(](https://raw.githubusercontent.com/odzhan/shellcode/master/os/win/docs/29A-4.227)
+						* [Impersonation, your friend - Ratter/29A](https://raw.githubusercontent.com/odzhan/shellcode/master/os/win/docs/29A-6.024)
+						* [GetProcAddress-alike utility - Jack Qwerty](https://raw.githubusercontent.com/odzhan/shellcode/master/os/win/docs/29A%232.3_5)
+						* [RETRIEVING API'S ADRESSES - LethalMind](https://raw.githubusercontent.com/odzhan/shellcode/master/os/win/docs/29A-4.227)
+						* [Retrieving Kernel32's Base Address - Stephen Fewer(2009)](https://web.archive.org/web/20171021140810/http://blog.harmonysecurity.com/2009_06_01_archive.html)
+						* [Customizing the GetProcAddress  - Marc Kranz(2011)](https://web.archive.org/web/20150816171303/https://sites.google.com/site/x64lab/home/notes-on-x64-windows-gui-programming/customizing-the-getprocaddress)
+						* [Finding Kernel32 Base Address Shellcode - ragestorm.net(2016)](https://web.archive.org/web/20160406171827/http://www.ragestorm.net/blogs/?p=369)
+						* [Shellcode: Fido and how it resolves GetProcAddress and LoadLibraryA - odzhan(2017)](https://modexp.wordpress.com/2017/02/03/shellcode-iat/)
+						* [Shellcode: Using the Exception Directory to find GetProcAddress - odzhan(2019)](https://modexp.wordpress.com/2019/05/19/shellcode-getprocaddress/)
+						* [Shellcode: Resolving API addresses in memory - Odzhan(2017)](https://modexp.wordpress.com/2017/01/15/shellcode-resolving-api-addresses/)
+						* [Finding Kernel32 Base and Function Addresses in Shellcode - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/finding-kernel32-base-and-function-addresses-in-shellcode)
+						* [Windows Shellcoding x86 – Hunting Kernel32.dll – Part 1 - paranoidninja(2018)](https://0xdarkvortex.dev/index.php/2019/03/18/windows-shellcoding-x86-hunting-kernel32-dll-part-1/)
+							* [Part 2](https://0xdarkvortex.dev/windows-shellcoding-x86-calling-functions-in-kernel32-dll-part-2/)
+						* [How to implement GetProcAddress in shellcode using x86-64 and x86 assembly language. - Dennis A. Babkin(2020](https://dennisbabkin.com/blog/?t=how-to-implement-getprocaddress-in-shellcode)
+					* **Writing Minimized Shellcode**
+						* [Writing Small Shellcode - Dafydd Stuttard(2005)](http://index-of.es/Exploit/Writing%20Small%20Shellcode.pdf)
+							* This paper describes an attempt to write Win32 shellcode that is as small as possible, to perform a common task subject to reasonable constraints. The solution presented implements a bindshell in 191 bytes of null-free code, and outlines some general ideas for writing small shellcode.
+						* [Shellcode Golf: Every Byte is Sacred - egypt(2014)](https://www.rapid7.com/blog/post/2014/02/14/shellcode-golf/)
+						* [Shellcode reduction tips (x86) - abatchy(2017)](https://www.abatchy.com/2017/04/shellcode-reduction-tips-x86)
+						* [Shellcode: x86 optimizations part 1 - odzhan(2017)](https://modexp.wordpress.com/2017/06/07/x86-trix-one/)
+						* [Shellcode: Data Compression - odzhan(2019)](https://modexp.wordpress.com/2019/12/08/shellcode-compression/)
+						* [Shellcode: Recycling Compression Algorithms for the Z80, 8088, 6502, 8086, and 68K Architectures. - odzhan(2020)](https://modexp.wordpress.com/2020/05/27/komposite-shellcode/)
+					* **Writing Using a Compiler**
+						* [Writing WIN32 Shellcode With a C-compiler - Didier Stevens(2010)](https://blog.didierstevens.com/2010/05/04/writing-win32-shellcode-with-a-c-compiler/)
+						* [Writing Shellcode with a C Compiler - Nick Harbour(2010)](https://nickharbour.wordpress.com/)
+						* [Writing Optimized Windows Shellcode in C - Matt Graeber(2013)](https://web.archive.org/web/20210305190309/http://www.exploit-monday.com/2013/08/writing-optimized-windows-shellcode-in-c.html)
+						* [Writing shellcode in C++ - zwclose7(2014)](http://www.rohitab.com/discuss/topic/40820-writing-shellcode-in-c/)
+						* [Shellcode Techniques in C++ - Topher Timzen(2015)](https://www.tophertimzen.com/blog/shellcodeTechniquesCPP/)
+						* [Shellcode: A Windows PIC using RSA-2048 key exchange, AES-256, SHA-3 - odzhan(2016](https://modexp.wordpress.com/2016/12/26/windows-pic/)
+						* [Writing and Compiling Shellcode in C - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/writing-and-compiling-shellcode-in-c)
+						* [Write Windows Shellcode in Rust](https://github.com/b1tg/rust-windows-shellcode)
 				* **Talks/Presentations/Videos**
 					* [POP POP RETN An Introduction to Writing Win32 Shellcode - Christopher Maddalena(Derbycon2017)](https://www.youtube.com/watch?v=UstWmavrWwk)
 						* [Slides](https://github.com/chrismaddalena/Presentations/tree/master/2017%20DerbyCon)
 						* If you have ever worked with an exploit or Metasploit, you have probably used shellcode, but do you know how it is made? This talk has been designed to walk you through the ins and outs of basic shellcode, with a focus on Windows and the x86 architecture. There will be a review of the basic computer science behind shellcode, a look under the hood of msfvenom works and how you can recreate msfvenom’s shellcode in Assembly, and then a walkthrough and a demo of how you can create a custom connectback stager using Assembly.
-				* **Samples of**
-					* [Windows Kernel Shellcodes - a compendium - Matteo Malvica](https://www.matteomalvica.com/blog/2019/07/06/windows-kernel-shellcode/)
-			* **x64**
-				* **101**
-					* [Windows x64 Shellcode - Topher Timzen(2014)](https://www.tophertimzen.com/blog/windowsx64Shellcode/)
-						* I will go over the differences between 32 and 64 bit assembly that I have noticed and how to work with them as well as some of the structures windows uses that are useful to know about for shellcode in the 64bit environment. I will also introduce two tools that I have created in helping my exploit development process.
-				* **Learning**
-					* https://nytrosecurity.com/2019/06/30/writing-shellcodes-for-windows-x64/
-				* **Samples of**
+				* **Tools**
+					* [Venom](https://github.com/r00t-3xp10it/venom)
+						* The script will use msfvenom (metasploit) to generate shellcode in diferent formats ( `C# | python | ruby | dll | msi | hta-psh | docm | apk | macho | elf | deb | mp4 | etc` ) injects the shellcode generated into one template (example: python) "the python funtion will execute the shellcode into ram" and uses compilers like gcc (gnu cross compiler) or mingw32 or pyinstaller to build the executable file. It also starts a multi-handler to recive the remote connection (shell or meterpreter session). 'venom generator' reproduces some of the technics used by Veil-Evasion.py, unicorn.py, powersploit.py, etc..
+					* [Cross Arch Shellcode Compiler](https://github.com/ixty/xarch_shellcode)
+						* Cross Architecture Shellcode in C
+					* [shellcode](https://github.com/binject/shellcode)
+						* Shellcode library as a Go package.
+					* [Shellsploit](https://github.com/vasco2016/shellsploit-framework)
+						* Shellsploit let's you generate customized shellcodes, backdoors, injectors for various operating system. And let's you obfuscation every byte via encoders.
+					* [Shellcode Compiler](https://github.com/NytroRST/ShellcodeCompiler)
+						* Shellcode Compiler is a program that compiles C/C++ style code into a small, position-independent and NULL-free shellcode for Windows (x86 and x64) and Linux (x86 and x64). It is possible to call any Windows API function or Linux syscall in a user-friendly way.
+				* **Samples**
 					* [Windows x64 Shellcode - mcdermottcybersecurity(2011)](https://mcdermottcybersecurity.com/articles/windows-x64-shellcode)
-		* **Execution**
-			* **101**
-				* [A Beginner’s Guide to Windows Shellcode Execution Techniques - Carsten Sandker(2019)](https://www.contextis.com/en/blog/a-beginners-guide-to-windows-shellcode-execution-techniques)
-					* [Code](https://github.com/csandker/inMemoryShellcode)
-					* This blog post is aimed to cover basic techniques of how to execute shellcode within the memory space of a process.
-			* **Articles/Blogposts/Writeups**
-				* [Abusing native Windows functions for shellcode execution - Jeff White(2017)](http://ropgadget.com/posts/abusing_win_functions.html)
-					* "I've been doing a lot of analysis on malicious docs (maldocs) lately and, among a popular variant circulating right now, is a technique that I found particularly interesting. Effectively, it abuses native Windows function calls to transfer execution to shellcode that it loads into memory. I thought it was cool in this context, and not something that I was super familiar with, even though I've since learned it's a very old technique, so I set out to do some research in identifying additional functions that could be abused in a similar way and how to leverage them
-				* [GOing 4 A Run - Leo Pitt(2020)](https://posts.specterops.io/going-4-a-run-eb263838b944)
-				* [A Fundamental Tool in the Toolkit: Evasive Shellcode Launchers – Part 1 - Nichoali Wang(2020)](https://www.nagarrosecurity.com/blog/evasive-shellcode-launchers)			 	
-			 	* [C_Shot - Just What The Doctor Ordered - redxorblue(2020)](http://blog.redxorblue.com/2020/07/cshot-just-what-doctor-ordered.html)
-			 	* [In-Memory shellcode decoding to evade AVs/EDRs - Askar(2020)](https://shells.systems/in-memory-shellcode-decoding-to-evade-avs/)
-				* [Executing shellcode with Unsafe Native Methods in PowerShell - mez0(2020)](https://mez0.cc/posts/cobaltstrike-powershell-exec/)
-		* **Injection**
-			* **101**
-			* **Articles/Blogposts/Writeups**
-				* [Using Syscalls to Inject Shellcode on Windows - Solomon Sklash(2020)](https://www.solomonsklash.io/syscalls-for-shellcode-injection.html)
-			* **Tools**
-				* [shellcode-process-injection](https://github.com/mhaskar/shellcode-process-injection)
-					* Simple C implementation to perform shellcode process injection via win32 APIs
-				* [fido](https://github.com/secretsquirrel/fido)
-		* **Tools**
-			* **Generators**
-			* [Venom](https://github.com/r00t-3xp10it/venom)
-				* The script will use msfvenom (metasploit) to generate shellcode in diferent formats ( C# | python | ruby | dll | msi | hta-psh | docm | apk | macho | elf | deb | mp4 | etc ) injects the shellcode generated into one template (example: python) "the python funtion will execute the shellcode into ram" and uses compilers like gcc (gnu cross compiler) or mingw32 or pyinstaller to build the executable file. It also starts a multi-handler to recive the remote connection (shell or meterpreter session). 'venom generator' reproduces some of the technics used by Veil-Evasion.py, unicorn.py, powersploit.py, etc..
-			* **Repo**
-				* [go-shellcode(Ne0nd0g)](https://github.com/Ne0nd0g/go-shellcode)
-					* A repository of Windows Shellcode runners and supporting utilities. The applications load and execute Shellcode using various API calls or techniques.
-			* **Runners**
-				* [C_Shot](https://github.com/anthemtotheego/C_Shot)
-					* C_Shot is an offensive security tool written in C which is designed to download, inject, and execute shellcode in memory.
-				* [go-shellcode](https://github.com/brimstone/go-shellcode)
-					* This is a program to run shellcode as its own process, all from memory. This was written to defeat anti-virus detection.
-				* [Go4aRun](https://github.com/D00MFist/Go4aRun)
-					* Shellcode runner in GO that incorporates shellcode encryption, remote process injection, block dlls, and spoofed parent process
-				* [UrbanBishopLocal](https://github.com/slyd0g/UrbanBishopLocal)
-					* A port of FuzzySecurity's UrbanBishop project for inline shellcode execution 
-				* [DueDLLigence](https://github.com/fireeye/DueDLLigence)
-					* Shellcode runner framework for application whitelisting bypasses and DLL side-loading. The shellcode included in this project spawns calc.exe.
-				* [ShellcodeCompiler](https://github.com/NytroRST/ShellcodeCompiler)
-					* Shellcode Compiler is a program that compiles C/C++ style code into a small, position-independent and NULL-free shellcode for Windows (x86 and x64) and Linux (x86 and x64). It is possible to call any Windows API function or Linux syscall in a user-friendly way.
-				* [Crab-Runner](https://github.com/cdong1012/Crab-Runner)
-			* **Utilities**
-				* [pe_to_shellcode](https://github.com/hasherezade/pe_to_shellcode)
-					* Converts PE so that it can be then injected just like a normal shellcode. (At the same time, the output file remains to be a valid PE). Supports both 32 and 64 bit PEs  Authors: @hasherezade & @hh86
-				* [Shellcoding(Mr-Un1k0d3r)](https://github.com/Mr-Un1k0d3r/Shellcoding)
-					* Shellcoding Utilities and shellcode obfuscator generator.
-				* [ShellcodeWrapper](https://github.com/Arno0x/ShellcodeWrapper)
-					*  Shellcode wrapper with encryption for multiple target languages 
+					* [Windows Kernel Shellcodes - a compendium - Matteo Malvica](https://www.matteomalvica.com/blog/2019/07/06/windows-kernel-shellcode/)
+					* [Shellcode - Didier Stevens](https://blog.didierstevens.com/programs/shellcode/)
+					* [SelfDefense](https://github.com/EgeBalci/SelfDefense)
+						* Several self defense shellcodes
+					* [x86_shellcode_tutorial](https://github.com/bruce30262/x86_shellcode_tutorial)
+					* [ShellcodeOfDeath](https://github.com/hacksysteam/shellcodeofdeath)
+					* [In-Memory Shellcode](https://github.com/csandker/inmemoryshellcode)
+					* [PIC_Bindshell](https://github.com/mattifestation/pic_bindshell)
+						* Position Independent Windows Shellcode Written in C
+					* [Windows Reverse Shell Shellcode I. - elcapitan(2015)](http://sh3llc0d3r.com/windows-reverse-shell-shellcode-i/)
+					* [Shellcode to Invert Colors - Osanda Malith(2017)](https://osandamalith.com/2017/02/28/shellcode-to-invert-colors/)
+					* [Shellcode to Scroll Your Desktop Horizontally - Osanda Malith(2017)](https://osandamalith.com/2017/02/28/shellcode-to-scroll-your-desktop-horizontally/)
+					* [Shellcode to Scroll your Desktop Vertically and Horizontally - Osanda Malith(2017)](https://osandamalith.com/2017/03/02/shellcode-to-scroll-your-desktop-vertically-and-horizontally/)
+					* [Windows XP PRO SP3 - Full ROP calc shellcode - b33f](http://fuzzysecurity.com/exploits/ropshell2.html)
+					* [FreeFloat FTP (custom shellcode) - b33f](http://fuzzysecurity.com/exploits/12.html)
+					* [ProfessionallyEvil x86 ASM](https://github.com/ProfessionallyEvil/x86_asm)
+					* [Expiring Shellcode update - averagejoe(2019)](https://www.gironsec.com/blog/2019/06/expiring-shellcode-update/)
+					* [A Shellcode Idea - averagejoe(2019)](https://www.gironsec.com/blog/2019/07/a-shellcode-idea/)
+					* [Shellcode: A Tweetable Reverse Shell for x86 Windows - odzhan(2017)](https://modexp.wordpress.com/2017/11/16/tweetable-shellcode-windows/)
+					* [Windows/x86 - Download File (http://127.0.0.1/file.exe) + Execute Shellcode (124 bytes) - weiss](https://www.exploit-db.com/exploits/13517)
+					* [rev_overlap32.asm](https://packetstormsecurity.com/files/71775/rev_overlap32.asm.html)
+						* ASM that provides a win32 reverse connect shell with no null bytes.
+					* [block_api.asm - Stephen Fewer](https://github.com/rapid7/metasploit-framework/blob/master/external/source/shellcode/windows/x86/src/block/block_api.asm)
+						* Input: The hash of the API to call and all its parameters must be pushed onto stack. Output: The return value from the API call will be in EAX.
+					* [Download and Execute Payload Using MSIEXEC - Kartik Durg(2019)](https://iamroot.blog/2019/01/28/windows-shellcode-download-and-execute-payload-using-msiexec.html)
+						* [win-exec-calc-shellcode](https://github.com/peterferrie/win-exec-calc-shellcode)
+							* Small null-free shellcode that execute calc.exe. Runs on x86 and x64 versions of Windows 5.0-6.3 (2000, XP, 2003, 2008, 7, 8, 8.1), all service packs.
+		* **Execution of Shellcode**
+			* **Linux**
+			* **Windows**
+				* **Dyna-legacy**
+					* [IActiveScript - MSDN](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/windows-scripting/reference/iactivescript)
+						* Provides the methods necessary to initialize the scripting engine. The scripting engine must implement the `IActiveScript` interface.
+					* [Last-minute presentation: Novel code obfuscation with COM - Robert Freeman(VB2007)](https://www.virusbulletin.com/conference/vb2007/abstracts/last-minute-presentation-novel-code-obfuscation-com/)
+					* [A DynaCall() Function for Win32 - Ton Plooy(1998)](https://www.drdobbs.com/a-dynacall-function-for-win32/184416502)
+					* [An Automation Object for Dynamic DLL Calls - Jeff Strong(1998)](https://www.drdobbs.com/windows/an-automation-object-for-dynamic-dll-cal/210200078)
+						* "Here's an OLE automation object for dynamically declaring and accessing functions in external DLLs"
+					* [Additional exe encoder option "vbsmem" - Metasploit(2011)](https://web.archive.org/web/20110921221342/http://dev.metasploit.com/redmine/issues/3894)
+					* [Shellcode Via JScript / VBScript - Happening Now! - Casey Smith(2016)](https://web.archive.org/web/20160913080156/http://subt0x10.blogspot.com/2016/09/shellcode-via-jscript-vbscript.html)
+					* [Shellcode: In-Memory Execution of JavaScript, VBScript, JScript and XSL - Osanda Malith(2019)](https://modexp.wordpress.com/2019/07/21/inmem-exec-script/)
+					* [DynamicWrapper](http://www.borncity.com/web/WSHBazaar1/WSHDynaCall.htm)
+					* [DynamicWrapperX](http://dynwrapx.script-coding.com/dwx/pages/dynwrapx.php?lang=en)
+					* [DynamicWrapperEx – Registration-Free In-Process COM Automation Server - Paul Laîné(2020)](https://www.youtube.com/watch?v=JbQyIcIyOvI)
+					* DynamicWrapperEx – Windows API Invocation from Windows Script Host - Paul Laine(2021)](https://www.contextis.com/en/blog/dynamicwrapperex-windows-api-invocation-from-windows-script-host)
+			  	* **Runners**
+			  		* **Articles**
+				   	* [Syringe utility provides ability to inject shellcode into processes - firebits(2011)](https://firebitsbr.wordpress.com/2011/07/08/syringe-utility-provides-ability-to-inject-shellcode-into-processes/)
+						* [Making your Shellcode Undetectable using .NET - Osanda Malith(2016](https://osandamalith.com/2016/08/01/making-your-shellcode-undetectable-using-net/)
+							* [code](https://github.com/osandamalith/vbshellcode)
+				   	* [A patch for PowerSploit’s Invoke-Shellcode.ps1 - Marco Ivaldi(2017)](https://techblog.mediaservice.net/2017/11/a-patch-for-powersploits-invoke-shellcode-ps1/)
+						* [Using native code/shellcode and assembly language with C# - Fergo(2019)](https://www.fergonez.net/post/shellcode-csharp)				   	
+			   		* [C_Shot - Just What The Doctor Ordered - redxorblue(2020)](http://blog.redxorblue.com/2020/07/cshot-just-what-doctor-ordered.html)
+						* [Executing shellcode with Unsafe Native Methods in PowerShell - mez0(2020)](https://mez0.cc/posts/cobaltstrike-powershell-exec/)
+				   	* [Alaris](https://github.com/cribdragg3r/Alaris)
+							* [Blogpost](https://sevrosecurity.com/2020/10/14/alaris-a-protective-loader/)
+			   		* [A Fundamental Tool in the Toolkit: Evasive Shellcode Launchers – Part 1 - Nichoali Wang(2020)](https://www.nagarrosecurity.com/blog/evasive-shellcode-launchers)
+			   		* [ScatterBrain](https://github.com/djhohnstein/ScatterBrain)
+							* ScatterBrain is a shell code runner with a variety of execution and elevation options. Given unencoded shellcode, it will then be encoded with the XOR key SecretKey (found in Cryptor/Program.cs and ScatterBrain/Headers/RawData.h) using the Cryptor binary. Cryptor.exe generates an encrypted.bin, which can be copied into ScatterBrain/Headers/RawData.h. You can then build ScatterBrain as a DLL which can be leveraged in one of the templates. Additionally, this will build the .NET Profiler UAC Bypass to use in your operations.
+				   	* [Bypassing EDR real-time injection detection logic - @_lpvoid(2021)](https://blog.redbluepurple.io/offensive-research/bypassing-injection-detection)	
+			   * **Techniques**
+			   	**101**
+			   		* [A Beginner’s Guide to Windows Shellcode Execution Techniques - Carsten Sandker(2019)](https://csandker.io/2019/07/24/ABeginnersGuideToWindowsShellcodeExecutionTechniques.html)
+							* [Code](https://github.com/csandker/inMemoryShellcode)
+							* This blog post is aimed to cover basic techniques of how to execute shellcode within the memory space of a process.
+						* [Execute Shellcode, Bypassing Anti-Virus… - dusty(2014)](https://penturalabs.wordpress.com/2014/07/18/execute-shellcode-bypassing-anti-virus/)
+						* [Bypass Windows Defender with A Simple Shell Loader - Joshua(2019)](https://sevrosecurity.com/2019/05/25/bypass-windows-defender-with-a-simple-shell-loader/)
+							* [code](https://github.com/cribdragg3r/Simple-Loader)
+					* **Syscalls**
+						* [Using Syscalls to Inject Shellcode on Windows - Solomon Sklash(2020)](https://www.solomonsklash.io/syscalls-for-shellcode-injection.html)
+						* [Invoking System Calls and Windows Debugger Engine - odzhan(2020](https://modexp.wordpress.com/2020/06/01/syscalls-disassembler/)
+				   * **Callbacks**
+			    		* **Articles/Blogposts/Writeups**
+			    			* [Shellcode. I’ll Call you back. - hexacorn(2016](http://www.hexacorn.com/blog/2016/12/17/shellcode-ill-call-you-back/)
+			    			* [Abusing native Windows functions for shellcode execution - Jeff White(2017)](http://ropgadget.com/posts/abusing_win_functions.html)
+								* "I've been doing a lot of analysis on malicious docs (maldocs) lately and, among a popular variant circulating right now, is a technique that I found particularly interesting. Effectively, it abuses native Windows function calls to transfer execution to shellcode that it loads into memory. I thought it was cool in this context, and not something that I was super familiar with, even though I've since learned it's a very old technique, so I set out to do some research in identifying additional functions that could be abused in a similar way and how to leverage them
+			    			* [Executing Shellcode via Callbacks - Osanda Malith(2021](https://osandamalith.com/2021/04/01/executing-shellcode-via-callbacks/)
+			    			* [Shellcode Execution via CreateThreadpoolWait - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/shellcode-execution-via-createthreadpoolwait)
+			    			* [TLS Injector: running shellcodes through TLS callbacks - Borja Merino(2015)](https://www.shelliscoming.com/2015/06/tls-injector-running-shellcodes-through.html)
+			    			* [Windows Data Structures and Callbacks, Part 1 - odzhan(2020](https://modexp.wordpress.com/2020/08/06/windows-data-structures-and-callbacks-part-1/)
+			    		* **Samples**
+			    			* [Alternative Code Execution](https://github.com/S4R1N/AlternativeShellcodeExec)
+			    				* According to Microsoft, a callback function is code within a managed application that helps an unmanaged DLL function complete a task. Calls to a callback function pass indirectly from a managed application, through a DLL function, and back to the managed implementation. This repository contains a list of callback functions that can be used to execute position independent shellcode so that CreateThread would be a thing of the past :P.
+			    	* **Debugging APIs**
+			    		* **Articles/Blogposts/Writeups**
+			    			* [debug_inject](https://github.com/conix-security/debug_inject)
+			    				* Shellcode injection using debugging APIs
+			    	* **Embedded within a File**
+			    		* [Punk Ode - Hiding shellcode in plain sight - Michael Sutton, Greg MacManus(BHUSA2006)](https://archive.org/details/podcast_black-hat-briefings-las-vegas_michael-sutton-greg-macmanus_1000013270989)
+							* [Slides](https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Sutton.pdf)
+							* "Injecting shellcode into a vulnerable program so you can find it reliably can be tricky. With image format vulnerabilities, sometimes the only place you can put your code is in the image itself. If a file attempting to exploit one of these vulnerabilities was rendered using a non-vulnerable application, the ‘strange’ files might raise some suspicion; a file containing a NOP-sled and shellcode does not tend to look like any normal photo. What if shellcode could be injected in this way without significantly altering the appearance of the file? What if the entire file could be transformed into executable code but the original image or sound could still be rendered? In this presentation we will present Punk Ode, which combines concepts from steganography, psychophysics and restricted character-set shellcode encoding to hide shellcode in plain sight. We will discuss how to convert a media file into a stream of valid instructions while leaving the initial images/sounds intact so as not to raise suspicion. We will also release a series of tools designed to automate the generation of such files.
+					* **'Empty' PE**
+						* [PE Trick #1: A Codeless PE Binary File That Runs - Alex Ionescu(2014)](http://www.alex-ionescu.com/?p=211)
+						* [Executing Shellcode Directly - Osanda Malith(2017)](https://osandamalith.com/2017/04/11/executing-shellcode-directly/)
+			    	* **File Installers**
+			    		* **Articles/Blogposts/Writeups**
+			    			* [InnoSetup Execute Shellcode PoC](https://github.com/DarkCoderSc/inno-shellcode-example/)
+			    				* Run shellcode through InnoSetup code engine.	
+			    	* **In-Line Assembly**
+			    		* **Articles/Blogposts/Writeups**
+			    			* [Executing Shellcode with Inline Assembly in C/C++ - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/executing-shellcode-with-inline-assembly-in-c-c++)
+			    	* **.NET**
+			    		* [Shellcode in .NET - How the PEB Changes - Topher Timzen(2015](https://www.tophertimzen.com/blog/shellcodeDotNetPEB/)
+			    	* **PE Resources**
+			    		* **Articles/Blogposts/Writeups**
+			    			* [Embedding a shellcode in a PE file - Joxean Koret(2012)](http://joxeankoret.com/blog/2012/05/06/embedding-a-shellcode-in-a-pe-file/)
+			    			* [Loading and Executing Shellcode From PE Resources - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/loading-and-executing-shellcode-from-portable-executable-resources)
+			    	* **PIC in C**
+			    		* [Running Shellcode Directly in C - Osanda Malith(2019)](https://osandamalith.com/2019/08/27/running-shellcode-directly-in-c/)
+			    	* **sRDI**
+			    		* [sRDI – Shellcode Reflective DLL Injection - Nick Landers(2017)](https://www.netspi.com/blog/technical/adversary-simulation/srdi-shellcode-reflective-dll-injection/)
+						* [sRDI - Shellcode Reflective DLL Injection](https://github.com/monoxgas/sRDI)
+							* sRDI allows for the conversion of DLL files to position independent shellcode. It attempts to be a fully functional PE loader supporting proper section permissions, TLS callbacks, and sanity checks. It can be thought of as a shellcode PE loader strapped to a packed DLL.
+						* [Shellcode Reflective DLL Injection - @spotheplanet](https://www.ired.team/offensive-security/code-injection-process-injection/reflective-shellcode-dll-injection)
+			    	* **UUid**
+			    		* **Articles/Blogposts/Writeups**
+			   * **Tools**
+					* [go-shellcode(Ne0nd0g)](https://github.com/Ne0nd0g/go-shellcode)
+						* A repository of Windows Shellcode runners and supporting utilities. The applications load and execute Shellcode using various API calls or techniques.
+					* [C_Shot](https://github.com/anthemtotheego/C_Shot)
+						* C_Shot is an offensive security tool written in C which is designed to download, inject, and execute shellcode in memory.
+					* [go-shellcode](https://github.com/brimstone/go-shellcode)
+						* This is a program to run shellcode as its own process, all from memory. This was written to defeat anti-virus detection.
+					* [Go4aRun](https://github.com/D00MFist/Go4aRun)
+						* [GOing 4 A Run - Leo Pitt(2020)](https://posts.specterops.io/going-4-a-run-eb263838b944)
+						* Shellcode runner in GO that incorporates shellcode encryption, remote process injection, block dlls, and spoofed parent process
+					* [UrbanBishopLocal](https://github.com/slyd0g/UrbanBishopLocal)
+						* A port of FuzzySecurity's UrbanBishop project for inline shellcode execution 
+					* [DueDLLigence](https://github.com/fireeye/DueDLLigence)
+						* Shellcode runner framework for application whitelisting bypasses and DLL side-loading. The shellcode included in this project spawns calc.exe.
+					* [Crab-Runner](https://github.com/cdong1012/Crab-Runner)
+					* [shellcode-process-injection](https://github.com/mhaskar/shellcode-process-injection)
+						* Simple C implementation to perform shellcode process injection via win32 APIs
+					* [fido](https://github.com/secretsquirrel/fido)
+					* [pe_to_shellcode](https://github.com/hasherezade/pe_to_shellcode)
+						* Converts PE so that it can be then injected just like a normal shellcode. (At the same time, the output file remains to be a valid PE). Supports both 32 and 64 bit PEs  Authors: @hasherezade & @hh86
+					* [ShellcodeWrapper](https://github.com/Arno0x/ShellcodeWrapper)
+						*  Shellcode wrapper with encryption for multiple target languages
+			   	* [Ridgway](https://github.com/m0rv4i/ridgway)
+			   		* A quick tool for hiding a new process running shellcode.
+			    	* [go-shellcode](https://github.com/Ne0nd0g/go-shellcode)
+			    		* A repository of Windows Shellcode runners and supporting utilities. The applications load and execute Shellcode using various API calls or techniques.
+			    	* [RemoteCryptoShellcodeLoader](https://github.com/uknowsec/RemoteCryptoShellcodeLoader)
+			    	* Doge-Loader](https://github.com/timwhitez/Doge-Loader)
+			    	* [ShellcodeLoader](https://github.com/knownsec/shellcodeloader)
+			    		* ShellcodeLoader of windows can bypass AV.
+			    	* [SimpleShellcodeInjector (SSI)](https://github.com/DimopoulosElias/SimpleShellcodeInjector)
+			    		* SimpleShellcodeInjector receives as an argument a shellcode in hex and executes it. It DOES NOT inject the shellcode in a third party application.
+			    	* [SharpZipRunner](https://github.com/jfmaes/SharpZipRunner)
+			    		* Executes position independent shellcode from an encrypted zip Get PIC code from your assembly either by using donut or metasploit or cobaltstrike RAW format.
+			    	* [RedTeamFSharp](https://github.com/Mr-Un1k0d3r/RedTeamFSharp)
+			    		* Red Team Toolset written in F# (Experimental)
+			    	* [DripLoader](https://github.com/xinbailu/DripLoader)
 	* **Software Deployment Tools**<a name="sdtexec"></a>
 	* **System Services**<a name="winserviceexec"></a>
 		* **Service Execution**
@@ -4997,6 +5300,7 @@
 
 
 
+
 #### <a name="csharp-stuff">C# & .NET Stuff</a>
 * **101**
 	* **.NET & .NET Core**
@@ -5010,6 +5314,8 @@
 			* [.NET architectural components - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/components)
 				* A .NET app is developed for and runs in one or more implementations of .NET. Implementations of .NET include the .NET Framework, .NET Core, and Mono. There is an API specification common to all implementations of .NET that's called the .NET Standard. This article gives a brief introduction to each of these concepts.
 			* [Common Language Runtime (CLR) overview - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/clr)
+			* [An Introduction to Writing .NET Executables for Pentesters - Peew.pw(2017](https://www.peew.pw/blog/2017/11/24/an-introduction-to-writing-net-executables-for-pentesters)
+				* [Part 2](https://www.peew.pw/blog/2017/12/4/writing-net-executables-for-penteters-part-2)
 		* **Application Domains**
 			* [AppDomain Class - docs.ms](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.1)
 				* Represents an application domain, which is an isolated environment where applications execute. This class cannot be inherited.
@@ -5028,6 +5334,9 @@
 			* [.NET Malware Threat: Internals and Reversing - Alexandre Borges(Defcon2019)](http://www.blackstormsecurity.com/docs/ALEXANDREBORGES_DEFCON_2019.pdf)
 			* [Hijacking .NET to Defend PowerShell - Amanda Rosseau](https://arxiv.org/pdf/1709.07508.pdf)
 				* Abstract—With the rise of attacks using PowerShell in the recent months, there has not been a comprehensive solution for monitoring or prevention. Microsoft recently released the AMSI solution for PowerShell v5, however this can also be bypassed. This paper focuses on repurposing various stealthy runtime .NET hijacking techniques implemented for PowerShell attacks for defensive monitoring of PowerShell. It begins with a brief introduction to .NET and PowerShell, followed by a deeper explanation of various attacker techniques, which is explained from the perspective of the defender, including assembly modification, class and method injection, compiler profiling, and C based function hooking. Of the four attacker techniques that are repurposed for defensive real-time monitoring of PowerShell execution, intermediate language binary modification, JIT hooking, and machine code manipulation provide the best results for stealthy run-time interfaces for PowerShell scripting analysis		
+			* [How .NET executables are loaded - repnz(2019)](https://repnz.github.io/posts/dotnet-executable-load/)
+			* [Common Language Runtime: Who? why? how? - Mez0](https://mez0.cc/posts/common-language-runtime-1/)
+			* [Common Language Runtime 2: In memory execution - Mez0](https://mez0.cc/posts/common-language-runtime-2/)
 		* **Managed vs Unmanaged code**
 			* [What is "managed code"? - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/managed-code)
 				* When working with .NET Framework, you will often encounter the term "managed code". This document will explain what this term means and additional information around it.
@@ -5058,6 +5367,7 @@
 		* [Interesting DFIR traces of .NET CLR Usage Logs - MenaSec(2019)](https://blog.menasec.net/2019/07/interesting-difr-traces-of-net-clr.html)
 		* [Hijacking .NET to Defend PowerShell - Amanda Rosseau](https://arxiv.org/pdf/1709.07508.pdf)
 			* Abstract—With the rise of attacks using PowerShell in the recent months, there has not been a comprehensive solution for monitoring or prevention. Microsoft recently released the AMSI solution for PowerShell v5, however this can also be bypassed. This paper focuses on repurposing various stealthy runtime .NET hijacking techniques implemented for PowerShell attacks for defensive monitoring of PowerShell. It begins with a brief introduction to .NET and PowerShell, followed by a deeper explanation of various attacker techniques, which is explained from the perspective of the defender, including assembly modification, class and method injection, compiler profiling, and C based function hooking. Of the four attacker techniques that are repurposed for defensive real-time monitoring of PowerShell execution, intermediate language binary modification, JIT hooking, and machine code manipulation provide the best results for stealthy run-time interfaces for PowerShell scripting analysis
+		* [Sniper](https://github.com/dmchell/Sniper)
 	* **Informational**
 		* [A Lesson in .NET Framework Versions - Rastamouse](https://rastamouse.me/2018/09/a-lesson-in-.net-framework-versions/)
 * **Training**
@@ -5129,9 +5439,11 @@
 	* **Articles/Blogposts/Writeups**
 		* [Create a Trimmed Self-Contained Single Executable in .NET Core 3.0 - talkingdotnet.com](https://www.talkingdotnet.com/create-trimmed-self-contained-executable-in-net-core-3-0/)
 		* [The 68 things the CLR does before executing a single line of your code - mattwarren.org](https://web.archive.org/web/20170614215931/http://mattwarren.org:80/2017/02/07/The-68-things-the-CLR-does-before-executing-a-single-line-of-your-code/)
+		* [In Process Execute Assembly and Mail Slots - N4kedTurtle(2020)](https://teamhydra.blog/2020/10/12/in-process-execute-assembly-and-mail-slots/)
+			* [Poc](https://github.com/N4kedTurtle/ExecuteAssembly_Mailslot)
 		* [SharpNado - Teaching an old dog evil tricks using .NET Remoting or WCF to host smarter and dynamic payloads - redxorblue](http://blog.redxorblue.com/2018/12/sharpnado-teaching-old-dog-evil-tricks.html)
 			* SharpNado is proof of concept tool that demonstrates how one could use .Net Remoting or Windows Communication Foundation (WCF) to host smarter and dynamic .NET payloads.  SharpNado is not meant to be a full functioning, robust, payload delivery system nor is it anything groundbreaking. It's merely something to get the creative juices flowing on how one could use these technologies or others to create dynamic and hopefully smarter payloads. I have provided a few simple examples of how this could be used to either dynamically execute base64 assemblies in memory or dynamically compile source code and execute it in memory.  This, however, could be expanded upon to include different kinds of stagers, payloads, protocols, etc.
-		* [Detecting and Advancing In-Memory .NET Tradecraft - Dominic Chell(2020)](https://www.mdsec.co.uk/2020/06/detecting-and-advancing-in-memory-net-tradecraft/)
+		* [Detecting and Advancing In-Memory .NET Tradecraft - Dominic Chell(2020)](https://www.mdsec.co.uk/2020/06/detecting-and-advancing-in-memory-net-tradecraft/)	
 	* **Talks/Presentations/Videos**
 		* [.NET Manifesto - Win Friends and Influence the Loader - Casey Smith(Derbycon2019)](https://www.irongeek.com/i.php?page=videos/derbycon9/stable-28-net-manifesto-win-friends-and-influence-the-loader-casey-smith)
 			* Everything you never wanted to know about .NET manifests and influencing binary loading. A growing number of security tools, both offensive and defensive rely on the .NET Framework. This talk will focus on a narrow but important aspect. We will cover Application and Machine configuration files, as well as Registration-Free and Side-By-Side Assembly loading. What do all these have in common?Manifests. XML manifest can influence how the Operating System locates and executes binaries. We will explore additional concepts around influencing assembly loads. This talk will provide excellent insight into how these mechanisms work. How they can be subverted, and how they can be instrumented to aid defenders.
@@ -5140,6 +5452,8 @@
 	* **Papers**
 		* [.NET Instrumentation via MSIL bytecode injection - Antonio "s4tan" Parata(2018)](http://phrack.org/papers/dotnet_instrumentation.html)
 	* **Tools**
+		* [SharpCollection - Flangvik](https://github.com/Flangvik/SharpCollection)
+			* Nightly builds of common C# offensive tools, fresh from their respective master branches built and released in a CDI fashion using Azure DevOps release pipelines.
 		* [SharpGen](https://github.com/cobbr/SharpGen)
 			*  SharpGen is a .NET Core console application that utilizes the Rosyln C# compiler to quickly cross-compile .NET Framework console applications or libraries.
 		* [SharpCompile](https://github.com/SpiderLabs/SharpCompile)
@@ -5158,6 +5472,50 @@
 			* Simple program that allows you to run commands as another user without being prompted for their password. This is useful in cases where you don't always get feedback from a prompt, such as the case with some remote shells.
 		* [GrayFrost](https://github.com/graykernel/GrayFrost)
 			* GrayFrost is a C++ DLL delivery system for C# payloads. Once compiled, GrayFrost can be injected into .NET applications using any DLL injection technique you wish!
+			* [RunPE](https://github.com/nettitude/RunPE)
+				* C# Reflective loader for unmanaged binaries.
+			* [RunasCs](https://github.com/antonioCoco/RunasCs)
+				* RunasCs is an utility to run specific processes with different permissions than the user's current logon provides using explicit credentials.
+			* [RunDLL.Net](https://github.com/p3nt4/RunDLL.Net)
+				* Execute .Net assemblies using Rundll32.exe
+			* [Fork-n-Run](https://github.com/rasta-mouse/Fork-n-Run)
+				* Experimenting with reusable components for fork n' run operations.
+			* [ExecuteAssembly](https://github.com/med0x2e/ExecuteAssembly)
+				* ExecuteAssembly is an alternative of CS execute-assembly, built with C/C++ and it can be used to Load/Inject .NET assemblies by; reusing the host (spawnto) process loaded CLR Modules/AppDomainManager, Stomping Loader/.NET assembly PE DOS headers, Unlinking .NET related modules, bypassing ETW+AMSI, avoiding EDR hooks via NT static syscalls (x64) and hiding imports by dynamically resolving APIs via superfasthash hashing algorithm.
+			* [SharpZipRunner](https://github.com/jfmaes/SharpZipRunner)
+				* Executes position independent shellcode from an encrypted zip. Get PIC code from your assembly either by using donut or metasploit or cobaltstrike RAW format.
+			* [RunDllMShim](https://github.com/dsnezhkov/RunDllMShim)
+				* A bridge DLL to make calling a managed assembly/type/method from an unmanaged dll invoker rundll32.exe easier)
+			* [Marauders Map](https://github.com/NVISOsecurity/blogposts/tree/master/MaraudersMap)
+				* The internal attacker toolkit heavily inspired by the folks of MDSec and their SharpPack, highly recommend checking that post out. The Marauders Map is meant to be used on assessments where you have gained GUI access to an enviornment. The Marauders Map is a DLL written in C#, enriched by the DllExport project to export functions that can serve as an entrypoint of invocation for unmanaged code such as rundll32.
+			* [CSharpExec](https://github.com/mez-0/CSharpExec)
+				* This project can use both the current context and credentials to connect to a remote host, copy the payload, and then create and start a service. Once the service is running, it will then remove it.
+			* [CSharpRunAs](https://github.com/mez-0/CSharpRunAs)
+				* Run As... In C#...
+			* [DInvoke](https://github.com/TheWover/DInvoke)
+				* Dynamically invoke arbitrary unmanaged code from managed code without PInvoke. 
+			* [InMemoryNET](https://github.com/mez-0/InMemoryNET)
+				*  Exploring in-memory execution of .NET 
+			* [CoreSploit](https://github.com/checkymander/CoreSploit)
+				* A Post-Exploitation Framework written for .NET 5.0 (Previously known as .NET Core)
+			* [SharpMapExec](https://github.com/cube0x0/SharpMapExec)
+				* A sharpen version of CrackMapExec. This tool is made to simplify penetration testing of networks and to create a swiss army knife that is made for running on Windows which is often a requirement during insider threat simulation engagements.
+			* [ExecutionTesting.cs](https://github.com/leoloobeek/csharp)
+				* Execute process under a different PID and retrieve the output.
+			* [metasploit-execute-assembly](https://github.com/b4rtik/metasploit-execute-assembly)
+				* Custom Metasploit post module to executing a .NET Assembly from Meterpreter session 
+			* [Vanara](https://github.com/dahall/Vanara)
+				* A set of .NET libraries for Windows implementing PInvoke calls to many native Windows APIs with supporting wrappers.
+			* [AggressiveGadgetToJScript](https://github.com/EncodeGroup/AggressiveGadgetToJScript)
+				* A Cobalt Strike Aggressor script to generate GadgetToJScript payloads
+			* [Emulating Covert Operations - Dynamic Invocation (Avoiding PInvoke & API Hooks) - TheWover](https://thewover.github.io/Dynamic-Invoke/)
+			* [go-dotnet](https://github.com/matiasinsaurralde/go-dotnet)
+				* Go wrapper for the .NET Core Runtime. 
+			* [go-execute-assembly](https://github.com/lesnuages/go-execute-assembly)
+				* Allow a Go process to dynamically load .NET assemblies 
+			* [SharpDllProxy](https://github.com/Flangvik/SharpDllProxy)
+				* Retrieves exported functions from a legitimate DLL and generates a proxy DLL source code/template for DLL proxy loading or sideloading
+			* [Massaging your CLR: Preventing Environment.Exit in In-Process .NET Assemblies - Peter Winter-Smith(2020](https://www.mdsec.co.uk/2020/08/massaging-your-clr-preventing-environment-exit-in-in-process-net-assemblies/)
 	* **Adversary Simulation**
 		* [PurpleSharp](https://github.com/mvelazc0/PurpleSharp)
 			* PurpleSharp is a C# adversary simulation tool that executes adversary techniques with the purpose of generating attack telemetry in monitored Windows environments
@@ -5175,7 +5533,6 @@
 			* [Linking dependencies together in C# - Jean Maes(2020)](https://redteamer.tips/linking-dependencies-together-in-c/)
 			* [Jeffrey Richter: Excerpt #2 from CLR via C#, Third Edition - docs.ms](https://docs.microsoft.com/en-us/archive/blogs/microsoft_press/jeffrey-richter-excerpt-2-from-clr-via-c-third-edition)
 			* [.Net over .net – Breaking the Boundaries of the .Net Framework - Jim Shaver(2018)](https://jimshaver.net/2018/02/22/net-over-net-breaking-the-boundaries-of-the-net-framework/)
-			* [Shellcode: Loading .NET Assemblies From Memory(2019)](https://modexp.wordpress.com/2019/05/10/dotnet-loader-shellcode/)
 		* **Tools**
 			* [dnlib](https://github.com/0xd4d/dnlib)
 				* .NET module/assembly reader/writer library
@@ -5188,7 +5545,7 @@
 				* [RunDLL32 your .NET (AKA DLL exports from .NET) - Adam Chester](https://blog.xpnsec.com/rundll32-your-dotnet/)
 					* In this post I wanted to look at a technique which is by no means new to .NET developers, but may prove useful to redteamers crafting their tools... exporting .NET static methods within a DLL... AKA using RunDLL32 to launch your .NET assembly.
 				* [Running a .NET Assembly in Memory with Meterpreter - Thomas Hendrickson](https://www.praetorian.com/blog/running-a-net-assembly-in-memory-with-meterpreter)
-				* [Shellcode: Loading .NET Assemblies From Memory - modexp](https://modexp.wordpress.com/2019/05/10/dotnet-loader-shellcode/)
+				* [Shellcode: Loading .NET Assemblies From Memory(2019)](https://modexp.wordpress.com/2019/05/10/dotnet-loader-shellcode/)
 			* **Tools**
 			* **DotNetToJScript**
 				* **Articles/Blogposts/Writeups**
@@ -5238,6 +5595,9 @@
 			* C# code to use CreateThread to run position independent code in the running process. This code is provided AS IS, and will not be supported.
 		* [CSharp SetThreadContext](https://github.com/djhohnstein/CSharpSetThreadContext)
 			*  C# Shellcode Runner to execute shellcode via CreateRemoteThread and SetThreadContext to evade Get-InjectedThread 
+	* **COM**
+		* [COM Interop](https://github.com/AaronRobinsonMSFT/COMInterop)
+			* This project is an example on how to manually consume a COM server from C# or a C# server from COM client. It also contains projects for less common scenarios involving .NET and COM.
 	* **Language Embeds**
 		* **Tools**
 			* [Zolom](https://github.com/checkymander/Zolom)
@@ -5250,6 +5610,17 @@
 	* **Process Injection/Shellcode Execution**
 		* **Articles/Blogposts/Writeups**
 			* [Shellcode Execution in .NET using MSIL-based JIT Overwrite - Matt Graeber(2013)](http://www.exploit-monday.com/2013/04/MSILbasedShellcodeExec.html)
+			* [Module Stomping in C# - Rastamouse(2020)](https://offensivedefence.co.uk/posts/module-stomping/)
+			* [Process Injection using DInvoke - Rastamouse(2020)](https://web.archive.org/web/20210601171512/https://rastamouse.me/blog/process-injection-dinvoke/)
+			* [NET-Assembly-Inject-Remote](https://github.com/med0x2e/NET-Assembly-Inject-Remote)
+				* PoC demonstrating some methods for .NET assembly local/remote loading/injection into memory using System.AppDomain.ExecuteAssembly() and System.Reflection.Assembly.LoadFrom() method (check "NetAssembly-Injection/AssemblyLoader.cs" methods documentation).
+			* [RuralBishop](https://github.com/rasta-mouse/RuralBishop)
+				* RuralBishop is practically a carbon copy of UrbanBishop by b33f, but all P/Invoke calls have been replaced with D/Invoke. This creates a local RW section in RuralBishop and then maps that section as RX into a remote process. Once the shared section has been established the shellcode is written to the local section which then automatically propagates to the remote process. For execution RuralBishop creates a remote suspended thread (start address is set to ntdll!RtlExitUserThread) and queues an APC on that thread. Once resumed with NtAlertResumeThread, the shellcode executes and the thread exits gracefully on completion.
+			* [The Curious Case of QueueUserAPC - Dwight Hohnstein(2019)](https://posts.specterops.io/the-curious-case-of-queueuserapc-3f62e966d2cb)
+			* [Staying # & Bringing Covert Injection Tradecraft to .NET - The Wover & Ruben Boonen(BlueHat IL 2020)](https://www.youtube.com/watch?v=FuxpMXTgV9s)
+				* [Slides](https://raw.githubusercontent.com/FuzzySecurity/BlueHatIL-2020/master/Ruben%20Boonen%20%26%20TheWover%20-%20BHIL2020_Staying%23_v0.4.pdf)
+				* [Code](https://github.com/FuzzySecurity/BlueHatIL-2020)
+				* In our talk we will focus on explaining the fundamental tradecraft behind these new developments, the challenges and requirements associated with them, and how they can be adapted to suit your needs. Additionally, we will discuss how SharpSploit can be combined with other open-source projects to be integrated into a red team's tooling. As much as possible, we will also discuss how to counter and detect the techniques that we have developed. Finally, we will explain the community-focused development of these projects and how you too can contribute to advance open-source .NET tradecraft.
 		* **Tools**
 			* [C# Memory Injection Examples](https://github.com/pwndizzle/c-sharp-memory-injection)
 				* A set of scripts that demonstrate how to perform memory injection.
@@ -5270,6 +5641,10 @@
 				* A project for properly injecting C# dlls into other processes.
 			* [ManagedInjection](https://github.com/malcomvetter/ManagedInjection)
 				* A proof of concept for injecting a pre-compiled .net assembly in memory at runtime with zero pre-knowledge of its assembly namespace or type. All that is necessary is a convention for the initial method name which will be instantiated, or just have the assembly initialize via its Constructor for a true "zero knowledge" scenario.
+			* [Remote AppDomainManager Injection - byt3bl33d3r](https://gist.github.com/byt3bl33d3r/de10408a2ac9e9ae6f76ffbe565456c3)
+			* [DotNetDebug](https://github.com/xpn/DotNetDebug)
+			* [DNCI - Dot Net Code Injector](https://github.com/guibacellar/DNCI)
+				* DNCI allows the injection of .Net code (.exe or .dll) remotely in unmanaged processes in windows.	
 	* **PS in C#**
 		* **Articles/Blogposts/Writeups**
 			* [Executing PowerShell scripts from C# - doc.ms(2014)](https://docs.microsoft.com/en-us/archive/blogs/kebab/executing-powershell-scripts-from-c)
@@ -5324,8 +5699,6 @@
 			* [Offensive P/Invoke: Leveraging the Win32 API from Managed Code - Matt Hand](https://posts.specterops.io/offensive-p-invoke-leveraging-the-win32-api-from-managed-code-7eef4fdef16d)
 			* [Red Team Tactics: Utilizing Syscalls in C# - Prerequisite Knowledge - Jack Halon(2020)](https://jhalon.github.io/utilizing-syscalls-in-csharp-1/)
 				* [Part2: Writing The Code](https://jhalon.github.io/utilizing-syscalls-in-csharp-2/)
-			* [Red Team Tactics: Utilizing Syscalls in C# - Prerequisite Knowledge - Jack Halon](https://jhalon.github.io/utilizing-syscalls-in-csharp-1/)
-			* [Red Team Tactics: Utilizing Syscalls in C# - Writing The Code - Jack Halon](https://jhalon.github.io/utilizing-syscalls-in-csharp-2/)
 			* [SharpSploit.Execution.DynamicInvoke](https://github.com/cobbr/SharpSploit/blob/master/SharpSploit/SharpSploit%20-%20Quick%20Command%20Reference.md#sharpsploitexecutiondynamicinvoke)
 		* **Tools**
 			* [SysCallTables](https://github.com/hfiref0x/SyscallTables)		
@@ -5518,8 +5891,26 @@
 	* **Articles/Blogposts/Writeups**
 		* [DotNet Core: A Vector For AWL Bypass & Defense Evasion - bohops](https://bohops.com/2019/08/19/dotnet-core-a-vector-for-awl-bypass-defense-evasion/)
 		* [AppLocker Bypass – Assembly Load - pentestlab.blog](https://pentestlab.blog/2017/06/06/applocker-bypass-assembly-load/)
+		* [Hiding Your .NET – ETW - Adam Chester(2020)](https://www.mdsec.co.uk/2020/03/hiding-your-net-etw/)
+		* [Red Team Tradecraft: Loading Encrypted C# Assemblies In Memory - Mike Gualtieri(2020](https://www.mike-gualtieri.com/posts/red-team-tradecraft-loading-encrypted-c-sharp-assemblies-in-memory)
+		* [Bring your own .NET Core Garbage Collector - Paul Laine(2020)](https://www.contextis.com/us/blog/bring-your-own-.net-core-garbage-collector)
+			* [Code](https://github.com/am0nsec/MCGC)
+		* [Dynamic Invocation in .NET to bypass hooks - Jean-Francois Maes(2020](https://blog.nviso.eu/2020/11/20/dynamic-invocation-in-net-to-bypass-hooks/)
+			* TLDR: This blogpost showcases several methods of dynamic invocation that can be leveraged to bypass inline and IAT hooks. A proof of concept can be found here: [DInvisibleRegistry](https://github.com/NVISO-BE/DInvisibleRegistry)
+		* [Abusing .NET Core – Evasion - pentestlaboratories.com](https://pentestlaboratories.com/2020/06/23/abusing-net-core-application-whitelisting/)
+		* [Defeating EDRs using Dynamic invocation - Jean-Francois Maes(Mayhem2021 RTV)](https://www.youtube.com/watch?v=LXfhyTpQ7TM&list=PLruly0ngXhPEOYACFCsUfoGehbjNflUfu&index=3)
+			* Abstract: How can red team operators emulate covert operations and operate at the same level as a real threat group? EDR solutions can make the life of a red team operator significantly harder. Dynamic invocation (also known as D/Invoke) – a sub branch of the popular “Sharpsploit” project, can help with evading those pesky EDR’s and execute your payloads successfully. In this presentation, we will go over D/Invokes capabilities and how to leverage them in your red team operations.
+			https://www.virusbulletin.com/virusbulletin/2016/07/journey-evasion-enters-behavioural-phase/
+		* [Bypassing Anti-Viruses by C#.NET Programming - Damon Mohammadbagher](https://damonmohammadbagher.github.io/Posts/ebookBypassingAVsByCsharpProgramming/index.htm)
+		* [Crimson Forge](https://github.com/zeroSteiner/crimson-forge)
+			* Crimson Forge intends to provide sustainable evasion capabilities for native code on the x86 and AMD64 architectures. It achieves this by rewriting the input code utilizing the following two techniques: Shuffling: Instructions are shuffled into a new order at the basic block level. This is a reliable technique and does not modify the size of resulting binary; Alterations: Instructions are swapped with functional equivalents, effectively de-optimizing them. New instructions are inserted into the same graph used by the Shuffling technique, allowing them to be reordered as well.
+		* [LoGiC .NET](https://github.com/AnErrupTion/LoGiC.NET)
+			* LoGiC.NET is a free and open-source .NET obfuscator that uses dnlib for folks that want to see how obfuscation works with more complex obfuscations than Goldfuscator for example.
+		* [Assembly.Lie – Using Transactional NTFS and API Hooking to Trick the CLR into Loading Your Code “From Disk” - redxorblue.com](https://blog.redxorblue.com/2021/05/assemblylie-using-transactional-ntfs.html)
 	* **Talks/Presentations/Videos**
 		* [Simple Windows Application Whitelisting Evasion - Casey Smith(ShmooCon 2015)](https://www.youtube.com/watch?v=XVuboBH5TYo)
+		* [Quick Retooling in .Net for Red Teams - Dimitry Snezhkov(CircleCityCon2018](https://www.irongeek.com/i.php?page=videos/circlecitycon2018/circle-city-con-50-112-quick-retooling-in-net-for-red-teams-dimitry-snezhkov)
+			* Quick Retooling in .Net for Red Teams PowerShell gave us a super-highway of convenient building blocks for offensive toolkits and operational automation. However, use of standalone .Net implants may be a desirable option in cases where PowerShell is heavily inspected and logged. While there are great toolkits to invoke unmanaged PowerShell or directly interface with .Net CLR - they are also statically compiled, and therefore easier identified by the defense. Red Teams are faced with specific challenges when they need to retool quickly in the field with .Net payloads. Can .Net toolkits accomplish their goals while maintaining flexibility, quick in-field retooling and operational security in the face of current detection mechanisms? We think so. This talk walks through some of the options present to the operators for .Net code compilation and presents ideas for extensibility of .Net tools at runtime, with the help of Dynamic Language Runtime (DLR). We will dive deeper into operational security lessons learned from dynamic code compilation. We will attempt to move beyond static nature of .Net assemblies into reflective DLR, achieving on-the-fly access to native Windows API. We will also discuss some methods of hiding sensitive aspects of execution in managed code memory. We will also touch on ways to help Defense fingerprint the attacks involving dynamic compilation of .Net assemblies, use of DLR and building blocks of offensive tooling involved in the process. A concept tool built on these ideas will be presented and released. It will be used as basis for our discussion.
 	* **Tools**
 		* [tvasion](https://github.com/loadenmb/tvasion)
 			* Anti virus evasion based on file signature change via AES encryption with Powershell and C# AV evasion templates which support executable and Powershell payloads with Windows executable, Powershell or batch output. Developed with Powershell on Linux for Windows targets :)
@@ -5571,7 +5962,6 @@
 		* [Creating a Task Using NewWorkItem Example - docs.ms](https://docs.microsoft.com/en-us/windows/win32/taskschd/creating-a-task-using-newworkitem-example)
 		* [SharpTask](https://github.com/jnqpblc/SharpTask)
 			* SharpTask is a simple code set to interact with the Task Scheduler service API using the same DCERPC process as schtasks.exe, which open with TCP port 135 and is followed by the use of an ephemeral TCP port. This code is compatible with Cobalt Strike.
-
 
 
 

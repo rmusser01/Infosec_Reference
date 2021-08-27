@@ -48,7 +48,7 @@ Information Architecture: For the Web and Beyond
 	* Emotional Design
 	* Don't Make me think
 	* [The Visual Display of Quantitative Information](https://www.edwardtufte.com/tufte/books_vdqi)
-	* [Field Guide for Designing Human Interaction With Intelligent Systems - Carroll G. Thronesbery and Jane T. Malin - NASA](https://ston.jsc.nasa.gov/collections/trs/_techrep/TM-1998-208470.pdf)
+	* [Field Guide for Designing Human Interaction With Intelligent Systems - Carroll G. Thronesbery and Jane T. Malin - NASA](https://ntrs.nasa.gov/api/citations/19980210012/downloads/19980210012.pdf)
 * **Talks & Presentations**
 	* [UI Fundamentals for Programmers by Ryan Singer](https://vimeo.com/6702766)
 * **Websites/Organizations**

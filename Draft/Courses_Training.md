@@ -89,7 +89,7 @@
 	* [Whirlwind Tour of ARM Assembly - ](https://www.coranac.com/tonc/text/asm.htm)
 * **Basic Security**<a name='basic'></a>
 	* [Roppers Academy Computing Fundamentals](https://hoppersroppers.org/course.html)
-		* Free, self-paced curriculum that builds a base of knowledge in computers and networking prior. The course is intended to build up a student with no prior technical knowledge to be confident in their ability to learn anything and continue their security education. Full text available as a [gitbook](https://www.hoppersroppers.org/fundamentals/).
+		* Free, self-paced curriculum that builds a base of knowledge in computers and networking. Intended to build up a student with no prior technical knowledge to be confident in their ability to learn anything and continue their security education. Full text available as a [gitbook](https://www.hoppersroppers.org/fundamentals/).(https://www.hoppersroppers.org/fundamentals/).
 	* [Roppers Academy CTF Fundamentals](https://www.hoppersroppers.org/courseCTF.html)
 		* Free course designed to get a student crushing CTFs as quickly as possible. Teaches the mentality and skills required for crypto, forensics, and more. Full text available as a [gitbook](https://www.hoppersroppers.org/ctf/).
 	* [Roppers Academy Security Fundamentals](https://www.hoppersroppers.org/courseSecurity.html)

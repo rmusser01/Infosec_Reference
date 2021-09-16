@@ -54,6 +54,8 @@
 		* Share and discover the best programming tutorials and courses online.
 	* [Class Central](https://www.class-central.com/)
 		* Search engine for MooCs
+	* [Roppers Academy](https://www.hoppersroppers.org/training.html)
+	
 * **Learning**<a name="learning"></a>
 	* [Learning How to Learn](https://www.coursera.org/learn/learning-how-to-learn)
 		* Free Coursera Course
@@ -86,10 +88,12 @@
 	* [ARM Exploit Development - Azeria](https://azeria-labs.com/writing-arm-shellcode/)
 	* [Whirlwind Tour of ARM Assembly - ](https://www.coranac.com/tonc/text/asm.htm)
 * **Basic Security**<a name='basic'></a>
-	* [Hopper's Roppers Computing Fundamentals](https://hoppersroppers.org/course.html)
-		* A free, self-paced curriculum that builds a base of knowledge in computers and networking prior to moving on to the fundamentals of security and defense. The course is intended to build up a student with no prior technical knowledge to be confident in their ability to learn anything and continue their security education. 
-	* [Hopper's Roppers Security Fundamentals](https://www.hoppersroppers.org/courseSecurity.html)
-		* A free, self-paced curriculum that teaches a beginner how security works in the real world. Learn security theory and execute defensive measures so that you are better prepared against threats online and in the physical world.
+	* [Roppers Academy Computing Fundamentals](https://hoppersroppers.org/course.html)
+		* Free, self-paced curriculum that builds a base of knowledge in computers and networking. Intended to build up a student with no prior technical knowledge to be confident in their ability to learn anything and continue their security education. Full text available as a [gitbook](https://www.hoppersroppers.org/fundamentals/).
+	* [Roppers Academy CTF Fundamentals](https://www.hoppersroppers.org/courseCTF.html)
+		* Free course designed to get a student crushing CTFs as quickly as possible. Teaches the mentality and skills required for crypto, forensics, and more. Full text available as a [gitbook](https://www.hoppersroppers.org/ctf/).
+	* [Roppers Academy Security Fundamentals](https://www.hoppersroppers.org/courseSecurity.html)
+		* Free course that teaches a beginner how security works in the real world. Learn security theory and execute defensive measures so that you are better prepared against threats online and in the physical world. Full text available as a [gitbook](https://www.hoppersroppers.org/security/).
 * **Cloud**<a name="cloud"></a>
 	* **AWS**<a name="aws"></a>
 	* **Azure**

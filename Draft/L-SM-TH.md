@@ -50,6 +50,7 @@
 	- [Graylog](#gray)
 	- [Splunk](#splunk)
 ------------------------------------------------------------------------------------------------------------------------
+
 * To Add:
 	* OSQuery
 	* Auditpol
@@ -63,6 +64,10 @@
 	* Hunter's Forge
 	* HELK Lab
 	* In-Memory Hunting
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------
 
 ### Logging <a name="logging"></a>
 * **101**<a name="101"></a>
@@ -957,14 +962,22 @@
 ------------------------------------------------------------------------------------------------------------------------------------------
 ### Threat Hunting <a name="th"></a>
 * **101**<a name="th101"></a>
+	* **101**
+		* [The Alexiou Principle - cepogue(2009)](https://thedigitalstandard.blogspot.com/2009/06/alexiou-principle.html)
+		* [Cyber Threat Hunting | Chris Brenton | October 2020 | 4 Hours](https://www.youtube.com/watch?v=FzYPT1xTVHY)
+			* Chris Brenton from Active Countermeasures is conducting another free, one-day, Cyber Threat Hunting Training online course! One of the biggest challenges in security today is identifying when our protection tools have failed and a threat actor has made it onto our network. In this free, 4-hour course, we will cover how to leverage network and host data to perform a cyber threat hunt. The course includes hands-on labs using packet captures of various command and control channels. We also discuss how you can use our new Sysmon tool BeaKer to detect attacks on the host with Sysmon... for free! The labs enable you to apply what you've learned using various open-source tools. By the end of the course, you’ll understand the tools and techniques needed to perform compromise assessments within your own environment. While the course will be available later for download, live attendees will receive a "Cyber Security Threat Hunter Level-1" certificate.
+		* [attack-coverage](https://github.com/RealityNet/attack-coverage)
+			* An excel-centric approach for managing the MITRE ATT&CK® tactics and techniques. The Excel file AttackCoverage.xlsx can be used to get a coverage measure of MITRE ATT&CK® tactics and techniques, in terms of detections rules. Working as DFIR consultants for different companies, with different SOCs and technologies in place, it was needed a simple and portable way to get a sort of awareness about which attackers' tactics/techniques a customer is able to detect and, more important, what is missing.			
 	* **Articles/Writeups**
-		* [The Origin of Threat Hunting - TaoSecurity](https://taosecurity.blogspot.com/2017/03/the-origin-of-threat-hunting.html?m=1)
-		* [The Cyber Hunting Maturity Model - Sqrrl(2015)](https://medium.com/@sqrrldata/the-cyber-hunting-maturity-model-6d506faa8ad5)
-		* [The ThreatHunting Project Annotated Reading List](https://www.threathunting.net/reading-list)
 		* [Incident Response is Dead… Long Live Incident Response - Scott J Roberts(2015)](https://medium.com/@sroberts/incident-response-is-dead-long-live-incident-response-5ba1de664b95)
-		* [Demystifying Threat Hunting Concepts - Josh Liburdi(2017)](https://medium.com/@jshlbrd/demystifying-threat-hunting-concepts-9de5bad2d818)
-			* This post is about demystifying threat hunting concepts that seem to trip up practitioners and outsiders. 
-		* [A Simple Hunting Maturity Model - detect-respond.blogspot (2015)](https://detect-respond.blogspot.com/2015/10/a-simple-hunting-maturity-model.html)
+		* [A Simple Hunting Maturity Model - detect-respond.blogspot (2015)](https://detect-respond.blogspot.com/2015/10/a-simple-hunting-maturity-model.html)		
+		* [The Origin of Threat Hunting - TaoSecurity(2017)](https://taosecurity.blogspot.com/2017/03/the-origin-of-threat-hunting.html)
+		* [The Pyramid of Pain - David Bianco(2014)](https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html)
+		* [Expanding on Pyramid of Pain - limbenjamin(2020)](https://limbenjamin.com/articles/expanding-on-pyramid-of-pain.html)
+		* [The Cyber Hunting Maturity Model - Sqrrl(2015)](https://medium.com/@sqrrldata/the-cyber-hunting-maturity-model-6d506faa8ad5)
+		* [Threat Hunting - Getting Closer to Anomalous Behavior - Jack Crook(2016)](https://findingbad.blogspot.com/2016/10/threat-hunting-getting-closer-to.html)
+		* [The ThreatHunting Project Annotated Reading List](https://www.threathunting.net/reading-list)
+		* "I hereby declare the Law Of A Threat Hunter (LOATH): `𝘍𝘰𝘳 𝘦𝘷𝘦𝘳𝘺 𝘵𝘸𝘰 𝘮𝘰𝘴𝘵 𝘥𝘪𝘴𝘵𝘢𝘯𝘵 𝘵𝘦𝘤𝘩𝘯𝘰𝘭𝘰𝘨𝘪𝘦𝘴 𝘵𝘩𝘦𝘳𝘦 𝘦𝘹𝘪𝘴𝘵 𝘢 𝘥𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘳 𝘵𝘩𝘢𝘵 𝘸𝘪𝘭𝘭 𝘣𝘳𝘪𝘯𝘨 𝘵𝘩𝘦𝘮 𝘵𝘰𝘨𝘦𝘵𝘩𝘦𝘳.`" - Hexacorn[Tweet](https://mobile.twitter.com/hexacorn/status/1108726593848049664)		
 		* [The Threat Hunting Reference Model Part 2: The Hunting Loop - Sqrrl](https://www.threathunting.net/files/The%20Threat%20Hunting%20Reference%20Model%20Part%202_%20The%20Hunting%20Loop%20_%20Sqrrl.pdf)
 		* [The Who, What, Where, When, Why and How of Effective Threat Hunting - Robert Lee, Rob Lee(2016)](https://www.sans.org/reading-room/whitepapers/analyst/membership/36785)
 		* [Building Threat Hunting Strategies with the Diamond Model - Sergio Caltagirone(2016)](http://www.activeresponse.org/building-threat-hunting-strategy-with-the-diamond-model/)
@@ -973,30 +986,60 @@
 			* [Part 3: Hunting in the perimeter](https://cyber-ir.com/2016/03/01/cyber-threat-hunting-3-hunting-in-the-perimeter/)
 		* [Cyber Hunting: 5 Tips To Bag Your Prey - David J. Bianco](https://www.darkreading.com/risk/cyber-hunting-5-tips-to-bag-your-prey/a/d-id/1319634)
 		* [Data Science Hunting Funnel - Austin Taylor(2017)](http://www.austintaylor.io/network/traffic/threat/data/science/hunting/funnel/machine/learning/domain/expertise/2017/07/11/data-science-hunting-funnel/)
-		* [DeTT&CT: Mapping your Blue Team to MITRE ATT&CK™ - Marcus Bakker](https://www.mbsecure.nl/blog/2019/5/dettact-mapping-your-blue-team-to-mitre-attack)
+		* [Demystifying Threat Hunting Concepts - Josh Liburdi(2017)](https://medium.com/@jshlbrd/demystifying-threat-hunting-concepts-9de5bad2d818)
+			* This post is about demystifying threat hunting concepts that seem to trip up practitioners and outsiders.
+		* [The Role of Evidence Intention - Chris Sanders(2018)](https://chrissanders.org/2018/10/the-role-of-evidence-intention/)
+		* [DeTT&CT: Mapping your Blue Team to MITRE ATT&CK™ - Marcus Bakker(2019)](https://www.mbsecure.nl/blog/2019/5/dettact-mapping-your-blue-team-to-mitre-attack)
 			* [DeTTECT - Detect Tactics, Techniques & Combat Threats](https://github.com/rabobank-cdc/DeTTECT)
-		* [The Role of Evidence Intention - Chris Sanders](https://chrissanders.org/2018/10/the-role-of-evidence-intention/)
-		* [Threat Hunting - Getting Closer to Anomalous Behavior - findingbad.blogspot](https://findingbad.blogspot.com/2016/10/threat-hunting-getting-closer-to.html)
-		* [On TTPs - Ryan Stillions](https://web.archive.org/web/20200501220419/http://ryanstillions.blogspot.com/web/20191003131313/http://ryanstillions.blogspot.com/2014/04/on-ttps.html)
+		* [A Deep Drive on Proactive Threat Hunting - Nisha Sharma(2020)](https://www.hackingarticles.in/a-deep-drive-on-proactive-threat-hunting/)
+		* [On TTPs - Ryan Stillions(2020)](https://web.archive.org/web/20200501220419/http://ryanstillions.blogspot.com/web/20191003131313/http://ryanstillions.blogspot.com/2014/04/on-ttps.html)
 			* [...]I set off a few months ago on a personal quest.  I wanted to see if I could locate any official citations that attempted to clearly define, compare or contrast "TTPs" in a cyber context, and show how they could be used both individually and jointly with other models to further advance our work in the context of things above and beyond atomic Indicators of Compromise (IOCs).  In this blog post I'll share with you what I found regarding the definitions of "TTPs", and then transition into how I believe they apply to incident detection and response.
+		* [Hunting mindmaps - sbousseaden](https://github.com/sbousseaden/Slides/tree/master/Hunting%20MindMaps)
+			* Summarized Overview of different hunting paths an Analyst can take per EventId or technique.
+		* [Threat Hunting - Zero to Hero - Slavi Parpulev(2020)](https://improsec.com/tech-blog/threat-hunting-zero-to-hero)
 		* [The PARIS Model](http://threathunter.guru/blog/the-paris-model/)
 	* **Resources**
 		* [awesome-threat-detection](https://github.com/0x4D31/awesome-threat-detection)
 	* **Talks & Presentations**
 		* [Threat Hunting Workshop - Methodologies for Threat Analysis - RiskIQ](https://www.youtube.com/playlist?list=PLgLzPE5LJevb_PcjMYMF2ypjnVcKf8rjY)
-		* [ A Process is No One: Hunting for Token Manipulation - Jared Atkinson, Robby Winchester(Derbycon2018)](https://www.irongeek.com/i.php?page=videos/derbycon8/stable-01-a-process-is-no-one-hunting-for-token-manipulation-jared-atkinson-robby-winchester)
+		* [Threat Hunting 101: Become The Hunter - Hamza Beghal(HITBGSEC 2017)](https://www.youtube.com/watch?v=vmVE2PCVwHU)
+		* [Threat Hunting, The New Way - In Ming, Wei Chea(HITCon Pacific2017)](https://hitcon.org/2017/pacific/0composition/pdf/Day1/R1/R1-5.12.7.pdf)
+		* [A Process is No One: Hunting for Token Manipulation - Jared Atkinson, Robby Winchester(Derbycon2018)](https://www.irongeek.com/i.php?page=videos/derbycon8/stable-01-a-process-is-no-one-hunting-for-token-manipulation-jared-atkinson-robby-winchester)
 			* Does your organization want to start Threat Hunting, but you’re not sure how to begin? Most people start with collecting ALL THE DATA, but data means nothing if you’re not able to analyze it properly. This talk begins with the often overlooked first step of hunt hypothesis generation which can help guide targeted collection and analysis of forensic artifacts. We will demonstrate how to use the MITRE ATTACK Framework and our five-phase Hypothesis Generation Process to develop actionable hunt processes, narrowing the scope of your Hunt operation and avoiding “analysis paralysis.” We will then walk through a detailed case study of detecting access token impersonation/manipulation from concept to technical execution by way of the Hypothesis Generation Process.
 		* [On the Hunt: Hacking the Hunt Group - Chris Silvers, Taylor Banks(NolaCon2018](https://www.irongeek.com/i.php?page=videos/nolacon2018/nolacon-2018-204-on-the-hunt-hacking-the-hunt-group-chris-silvers-taylor-banks)
 			* Goal is to motivate listeners to be better cyber practitioners, employees, and patients and end result will be better patient medical record security for all of society. In theory
 		* [Find_Evil - Threat Hunting Anurag Khanna(SANS2020)](https://www.youtube.com/watch?v=GrhVz1Sjd_0)
 			* Today, organizations are constantly under attack. While security teams are getting good at monitoring and incident response, the frontier to conquer is proactively looking for evil in the environment. Threat hunting is one of the ways in which organizations can proactively look for threats. This talk would discuss the fundamentals of threat hunting, what the hunting teams should look for and how to collect and analyze relevant data. We will discuss some of the recipes to perform threat hunting.
 	* **Papers**
-		* [Generating Hypotheses for Successful Threat Hunting - Robert M. Lee, David Bianco](https://www.sans.org/reading-room/whitepapers/threats/paper/37172)
-			* Threat hunting is a proactive and iterative approach to detecting threats. Although threat hunters should rely heavily on automation and machine assistance, the process itself cannot be fully automated. One of the human’s key contributions to a hunt is the formulation of a hypotheses to guide the hunt. This paper explores three types of hypotheses and outlines how and when to formulate each of them.
 		* [Hunt Evil: Your Practical Guide to Threat Hunting - threathunting.net](https://www.threathunting.net/files/hunt-evil-practical-guide-threat-hunting.pdf)
 		* [Huntpedia - Sqrrl](https://www.threathunting.net/files/huntpedia.pdf)
 		* [Threat Hunting: Open Season on the Adversary - Eric Cole(2016)](https://www.sans.org/reading-room/whitepapers/analyst/membership/36882)
 		* [Mental Models for Effective Searching - Chris Sanders](https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1555082140.pdf)
+		* [A Practical Model for Conducting Cyber Threat Hunting - Dan Gunter, Marc Seitz(2018)](https://www.sans.org/white-papers/38710/)
+			* There remains a lack of definition and a formal model from which to base threat hunting operations and quantifying the success of said operations from the beginning of a threat hunt engagement to the end that also allows analysis of analytic rigor and completeness. The formal practice of threat hunting seeks to uncover the presence of attacker tactics, techniques, and procedures (TTP) within an environment not already discovered by existing detection technologies. This research outlines a practical and rigorous model to conduct a threat hunt to discover attacker presence by using six stages: purpose, scope, equip, plan review, execute, and feedback. This research defines threat hunting as the proactive, analyst-driven process to search for attacker TTP within an environment. The model was tested using a series of threat hunts with real-world datasets. Threat hunts conducted with and without the model observed the effectiveness and practicality of this research. Furthermore, this paper contains a walkthrough of the threat hunt model based on the information from the Ukraine 2016 electrical grid attacks in a simulated environment to demonstrate the model’s impact on the threat hunt process. The outcome of this research provides an effective and repeatable process for threat hunting as well as quantifying the overall integrity, coverage, and rigor of the hunt.
+		* [Generating Hypotheses for Successful Threat Hunting - Robert M. Lee, David Bianco](https://www.sans.org/reading-room/whitepapers/threats/paper/37172)
+			* Threat hunting is a proactive and iterative approach to detecting threats. Although threat hunters should rely heavily on automation and machine assistance, the process itself cannot be fully automated. One of the human’s key contributions to a hunt is the formulation of a hypotheses to guide the hunt. This paper explores three types of hypotheses and outlines how and when to formulate each of them.
+		* **TaHiTI**
+			* [TaHiTI Threat Hunting Methodology](https://www.betaalvereniging.nl/wp-content/uploads/DEF-TaHiTI-Threat-Hunting-Methodology.pdf)
+			* [TaHiTI: a threat hunting methodology (whitepaper)](https://www.betaalvereniging.nl/wp-content/uploads/TaHiTI-Threat-Hunting-Methodology-whitepaper.pdf)
+* **Non-101 General**
+	* **Articles/Blogposts/Writeups**
+		* [Hunting From The Top - Jack Crook(2016)](https://findingbad.blogspot.com/2016/08/hunting-from-top.html)
+		* [Categories of Abnormal - Jack Crook(2016)](https://findingbad.blogspot.com/2016/09/categories-of-abnormal.html)
+		* [My Thoughts on Threat Hunting - Jack Crook(2016)](https://findingbad.blogspot.com/2016/07/my-thoughts-on-threat-hunting.html)		
+		* [Don't wait for an intrusion to find you - Jack Crook(2016)](https://findingbad.blogspot.com/2016/09/dont-wait-for-intrusion-to-find-you.html)
+		* [A Few Of My Favorite Things - Jack Crook(2017)](https://findingbad.blogspot.com/2017/11/a-few-of-my-favorite-things.html)
+		* [A Few of My Favorite Things - Continued - Jack Crook(2017)](https://findingbad.blogspot.com/2017/12/a-few-of-my-favorite-things-continued.html)
+		* [Patterns of Behavior - Jack Crook(2017)](https://findingbad.blogspot.com/2017/02/patterns-of-behavior.html)
+		* [Hunting for Chains  - Jack Crook(2017)](https://findingbad.blogspot.com/2017/02/hunting-for-chains.html)	
+		* [Dynamic Correlation, ML and Hunting - Jack Crook(2020)](https://findingbad.blogspot.com/2020/06/dynamic-correlation-ml-and-hunting.html)
+		* [Blue Team: System Live Analysis [Part 1]- A Proactive Hunt! - Meisam Eslahi(2020)](https://sechub.medium.com/blue-team-system-live-analysis-part-1-a-proactive-hunt-8258feb7cb14)
+			* [[Part 2]- Windows: Rules and Tools](https://sechub.medium.com/blue-team-system-live-analysis-part-2-windows-rules-and-tools-fc42be6c060d)
+			* [[Part 3]- Windows: Technical Checklist](https://sechub.medium.com/blue-team-system-live-analysis-part-3-windows-technical-checklist-1ef79284cbdc)
+			* [[Part 4] - Windows: System Information and Configurations](https://sechub.medium.com/blue-team-system-live-analysis-part-4-windows-system-information-and-configurations-8d87211164d1)
+			* [[Part 5] - Windows: Users, Groups, and Privileges](https://sechub.medium.com/blue-team-system-live-analysis-part-5-windows-users-groups-and-privileges-eba13a5a4615)
+		* [Spotting the Red Team on VirusTotal! - Xavier Mertens(2021)](https://isc.sans.edu/forums/diary/Spotting+the+Red+Team+on+VirusTotal/27174/)
+		* [The Myth of Part-time Hunting, Part 1: The Race Against Ever-diminishing Breakout Times - Falcon OverWatch Team(2021)](https://www.crowdstrike.com/blog/the-myth-of-part-time-threat-hunting-part-1/)
 * **Data Analysis**<a name="data"></a>
 	* **Articles/Blogposts/Writeups**
 		* [An In-Depth Look Into Data Stacking - M-Labs](https://www.fireeye.com/blog/threat-research/2012/11/indepth-data-stacking.html)
@@ -1062,8 +1105,48 @@
 				* The Event Query Language Analytics Library (eqllib) is a library of event based analytics, written in EQL to detect adversary behaviors identified in MITRE ATT&CK™.
 			* [Varna](https://github.com/endgameinc/varna)
 				* Varna is an AWS serverless cloud security tool that parses and alerts on CloudTrail logs using Event Query Language (EQL). Varna is deployed as a lambda function, for scanning and serving web requests, and a dynamodb table, for keeping track of seen alerts. Varna is cheap & efficient to run, costing less than 15 dollars a month with proper configuration and ingesting alerts as soon as CloudTrail stores them in S3.
+* **APT Hunts**
+	* **Articles/Blogposts/Writeups**
+		* [Light in the Dark: Hunting for SUNBURST - Matt Bromiley, Andrew Rector, Robert Wallace(2021)](https://www.fireeye.com/blog/products-and-services/2021/02/light-in-the-dark-hunting-for-sunburst.html)
+		* [Threat Hunting. Why might you need it - CyberPolygon](https://cyberpolygon.com/materials/threat-hunting-why-might-you-need-it/)
+		* [Threat Hunting in action - CyberPolygon](https://cyberpolygon.com/materials/threat-hunting-in-action/)
+		* [Hunting for advanced Tactics, Techniques and Procedures (TTPs) - CyberPolygon](https://cyberpolygon.com/materials/hunting-for-advanced-tactics-techniques-and-procedures-ttps/)
+		* [Hunting Red Team Activities with Forensic Artifacts - Haboob Team(2020)](https://dl.packetstormsecurity.net/papers/general/hunting-redteamactivities.pdf)
+		* [Let’s set ice on fire: Hunting and detecting IcedID infections - Thomas Barabosch(2021)](https://www.telekom.com/en/blog/group/article/let-s-set-ice-on-fire-hunting-and-detecting-icedid-infections-627240)
+		* [Breaking down NOBELIUM’s latest early-stage toolset - Microsoft Threat Intelligence Center(2021)](https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/)
 * **Browser-Plugins**
 	* [FalconFriday — Detecting Malicious Browser Extensions and code signing- 0xFF01 - Olaf Hartong(2020)](https://medium.com/falconforce/falcon-friday-detecting-malicious-browser-extensions-and-code-signing-0xff01-db622e6a6519)
+* **C2 Hunting**
+	* **Articles/Blogposts/Writeups**
+		* [C2 Hunting - Jack Crook(2018)](https://findingbad.blogspot.com/2018/03/c2-hunting.html)
+		* [Let’s Go Hunting! How to Hunt Command & Control Channels Using Bro IDS and RITA - Logan Lembke(2017)](https://www.blackhillsinfosec.com/how-to-hunt-command-and-control-channels-using-bro-ids-and-rita/)
+		* [Detect Beaconing with Flare, Elastic Stack, and Intrusion Detection Systems - Austin Taylor(2017)](http://www.austintaylor.io/detect/beaconing/intrusion/detection/system/command/control/flare/elastic/stack/2017/06/10/detect-beaconing-with-flare-elasticsearch-and-intrusion-detection-systems/)
+		* [Hunting for Anomalous Usage of MSBuild and Covenant - Riccardo Ancarani(2019)](https://riccardoancarani.github.io/2019-10-19-hunting-covenant-msbuild/)
+		* [Hunting for SILENTTRINITY - Wee-Jing Chung(2019)](https://blog.f-secure.com/hunting-for-silenttrinity/)
+		* [C2-JARM](https://github.com/cedowens/C2-JARM)
+			* A list of JARM hashes for different ssl implementations used by some C2 tools. 
+		* [Hunting for Beacons - Jack Crook(2020)](https://findingbad.blogspot.com/2020/05/hunting-for-beacons.html)
+			* [Part 2](http://findingbad.blogspot.com/2020/05/hunting-for-beacons-part-2.html)
+		* [Do You C2? If You Do, ICU. - Jonathan Ham(WWHF 2020)](https://www.youtube.com/watch?v=d5W7TgGmgIg&list=PLXF21PFPPXTPwX8mccVIQB5THhU_paWmN&index=18)
+		* [From The Hunter Diaries - Detecting C2 Servers - Oded Awaskar(2021)](https://www.paloaltonetworks.com/blog/security-operations/from-the-hunter-diaries-detecting-c2-servers/)
+		* [C2 Traffic Patterns: Personal Notes - marcoramilli(2021)](https://marcoramilli.com/2021/01/09/c2-traffic-patterns-personal-notes/)
+		* [Understanding & Detecting C2 Frameworks — BabyShark - Nasreddine Bencherchali(2021)](https://nasbench.medium.com/understanding-detecting-c2-frameworks-babyshark-641be4595845)
+			* [TrevorC2 - Nasreddine Bencherchali(2021)](https://nasbench.medium.com/understanding-detecting-c2-frameworks-trevorc2-2a9ce6f1f425)
+			* [Ares - Nasreddine Bencherchali(2021)](https://nasbench.medium.com/understanding-detecting-c2-frameworks-ares-8c96aa47e50d)
+			* [HARS (HTTP/S Asynchronous Reverse Shell) - Nasreddine Bencherchali(2021)](https://nasbench.medium.com/understanding-detecting-c2-frameworks-hars-682b30f0505c)
+	* **Talks/Presentations/Videos**
+		* [Threat Hunting Beacon Analysis - Chris Brenton(2018)](https://www.youtube.com/watch?v=FzGbVMntLT0)
+			* Join Chris Brenton, COO of Active Countermeasures, as he discusses the anatomy of beacons and why you need to be looking for them during a threat hunt. He also talks through the challenges of detecting beacons, and some tricks you can use.
+* **Cloud-Based**
+	* **AWS**
+		* [Quick and Dirty CloudTrail Threat Hunting Log Analysis - George Fekkas(2021)](https://medium.com/@george.fekkas/quick-and-dirty-cloudtrail-threat-hunting-log-analysis-b64af10ef923)
+* **Email-Logs**
+	* **Articles/Blogposts/Writeups**
+		* [Threat Hunting and Detection with Email Logs - Mehmet Ergene(2020)](https://medium.com/@mergene/threat-hunting-and-detection-with-email-logs-4b1e37f5d035)
+* **Execution**
+	* **Articles/Blogposts/Writeups**
+	* **Tools**
+		* [GOing 4 a Hunt](https://posts.specterops.io/going-4-a-hunt-66c9f0d7f32c)
 * **Hunt Experiences/Demonstrations of**
 	* **Articles/Blogposts/Writeups**
 		* [Threat Hunting with Python: Prologue and Basic HTTP Hunting - Dan Gunter(2017)](https://dgunter.com/2017/09/17/threat-hunting-with-python-prologue-and-basic-http-hunting/)
@@ -1074,10 +1157,33 @@
 			* [Part 2: Hunting on ICS Networks](https://dgunter.com/2017/10/03/threat-hunting-part-2-hunting-on-ics-networks/)
 		* [Active Defense and the Hunting Maturity Model - Jamie Buening](https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1492176467.pdf)
 		* [Hunting Red Team Empire C2 Infrastructure  - Chokepoint](https://web.archive.org/web/20190521071950/http://www.chokepoint.net/2017/04/hunting-red-team-empire-c2.html)
+		* [Threat Hunting for Ransomware with CarbonBlack Response and AnyRun - Manfred Chang(2021)](https://threat.tevora.com/threat-hunting-for-ransomware-with-carbonblack-response-and-anyrun/)
 	* **Talks/Presentations/Papers**
 		* [License to Kill: Malware Hunting with the Sysinternals Tools](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/ATC-B308)
 		* [Advanced Attack Detection - William Burgess, Matt Watkins(Securi-Tay2017)](https://www.youtube.com/watch?v=ihElrBBJQo8)
 			* In this talk, we’ll explain some of the technical concepts of threat hunting. We will be looking at what is beyond traditional signature detection – the likes of AV, IPS/IDS and SIEMs, which in our experience are ineffective – and detailing some of the ways you can catch real attackers in the act. As a case study, we’ll look at some of the specifics of common attack frameworks - the likes of Metasploit and Powershell Empire - walking through an example attack, and showing how they can be detected. From large-scale process monitoring to live memory analysis and anomaly detection techniques, we will cover some of the technical quirks when it comes to effective attack detection.
+* **Hunt Stuff/Supporting Info**
+	* **Tools**
+		* [threathunting](https://github.com/bradleyjkemp/threathunting)
+			* Assorted, MIT licensed, threat hunting rules from `@bradleyjkemp`
+		* [TheThreatHuntLibrary](https://github.com/svch0stz/TheThreatHuntLibrary)
+			* A collection of organised hunts based of yaml files to create markdown pages for analyst use.
+		* [AutonomousThreatSweep](https://github.com/Securonix/AutonomousThreatSweep)
+			* The repository provides threat hunting queries for various threats/attacks that can be leveraged directly within the Securonix Snypr platform. 
+		* [Wild Hunt](https://github.com/RiccardoAncarani/wild-hunt)
+			* A collection of tools and offensive techniques aimed at actively finding adversaries 
+		* [Advanced hunting queries for Microsoft 365 Defender](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries)
+			* This repo contains sample queries for advanced hunting in Microsoft 365 Defender. With these sample queries, you can start to experience advanced hunting, including the types of data that it covers and the query language it supports. You can also explore a variety of attack techniques and how they may be surfaced through advanced hunting.
+		* [Hunts - Threat Hunting Project](https://github.com/ThreatHuntingProject/ThreatHunting/tree/master/hunts)
+* **ICS**
+	* **Articles/Blogposts/Writeups**
+	* **Talks/Presentations/Papers**
+		* [Hunting for Threats in Industrial Environments and Other Scary Places - Nick Tsamis(BSides Charm2019)](https://www.youtube.com/watch?v=BbE_op7xhcI)
+			* Threat hunting in Industrial Control Systems is a proactive tactic that can be employed by network defenders to gain familiarity with network terrain and to seek out malicious behavior, presence of vulnerabilities, or otherwise unknown activity. Unique constraints in operational technology environments present significantly different challenges than more standard computing environments. This presentation provides the audience with an inside look into challenges that ICS threat hunters face.
+* **Insider(Malicious) Hunting**
+	* **Articles/Blogposts/Writeups**
+		* [More Behavioral Hunting and Insider Data Theft - Jack Crook(2021)](https://findingbad.blogspot.com/2021/02/more-behavioral-hunting-and-insider.html)
+	* **Talks/Presentations/Papers**
 * **In Memory**<a name="inmem"></a>
 	* **101**
 	* **Articles/Blogposts/Writeups**
@@ -1104,6 +1210,7 @@
 	* **101**
 	* **Articles/Writeups**
 		* [Part 1: Threat hunting with BRO/Zeek and EQL - Spartan2194(2019)](https://holdmybeersecurity.com/2019/02/20/part-1-threat-hunting-with-bro-zeek-and-eql/)
+		* [ Part 2: Intro to Threat Hunting – Understanding the attacker mindset with Powershell Empire and the Mandiant Attack Lifecycle - Spartan2194(2020)](https://holdmybeersecurity.com/2020/01/23/part-2-intro-to-threat-hunting-understanding-the-attacker-mindset-with-powershell-empire-and-the-mandiant-attack-lifecycle/)
 		* [DNS based threat hunting and DoH (DNS over HTTPS) - blog.redteam.pl](https://blog.redteam.pl/2019/04/dns-based-threat-hunting-and-doh.html)
 	* **Talks & Presentations**
 		* [Tales from the Network Threat Hunting Trenches - BHIS](https://www.blackhillsinfosec.com/webcast-tales-network-threat-hunting-trenches/)
@@ -1146,8 +1253,9 @@
 				* Malcom is a tool designed to analyze a system's network communication using graphical representations of network traffic, and cross-reference them with known malware sources. This comes handy when analyzing how certain malware species try to communicate with the outside world.
 			* [BeaconBits](https://github.com/bez0r/BeaconBits)
 				* Beacon Bits is comprised of analytical scripts combined with a custom database that evaluate flow traffic for statistical uniformity over a given period of time. The tool relies on some of the most common characteristics of infected host persisting in connection attempts to establish a connection, either to a remote host or set of host over a TCP network connection. Useful to also identify automation, host behavior that is not driven by humans.
-
 * **Linux**<a name="thlin"></a>
+	* **Hunting Privilege Escalation**
+		* [Detecting MITRE ATT&CK: Privilege escalation with Falco - Stefano Chierici(2021)](https://sysdig.com/blog/mitre-privilege-escalation-falco/)
 * **macOS**<a name="thmac"></a>
 	* [Making your own logarchive from a backup - hoakley](https://eclecticlight.co/2020/02/07/making-your-own-logarchive-from-a-backup/)
 	* [Creating Privacy Preferences Policy Control profiles for macOS - rtrouton(2018)](https://derflounder.wordpress.com/2018/08/31/creating-privacy-preferences-policy-control-profiles-for-macos/)
@@ -1157,20 +1265,23 @@
 		* [Capturing the moment in your log: how to identify a problem - hoakley(2019)](https://eclecticlight.co/2019/09/17/capturing-the-moment-in-your-log-how-to-identify-a-problem/)
 		* [A Guide to macOS Threat Hunting and Incident Response - Phil Stokes](https://assets.sentinelone.com/c/sentinal-one-mac-os-?)
 	* **Articles/Writeups**
+		* [Working with TrustedBSD in Mac OS X - Alexander Stavonin(2013)](https://sysdev.me/trusted-bsd-in-osx/)
+		* [Hunting for Bad Apples – Part 1 - Richie Cyrus(2018)](https://securityneversleeps.net/2018/06/25/hunting-for-bad-apples-part-1/)
+		* [Malware Hunting on macOS | A Practical Guide - PHil Stokes(2019)](https://www.sentinelone.com/blog/malware-hunting-macos-practical-guide/)
 		* [macOS Post Summary - Action Dan(2020)](https://lockboxx.blogspot.com/2020/06/macos-post-summary.html)
 			* " This post is going to be a collection of my previous individual posts researching macOS security specifics. I realized I did a bunch of these posts over the span of several years and hadn't tagged them all the same, so I wanted to collect them for new readers in a summary of sorts. For those new readers, this is mostly a collection of my 100-level forensics series, my 200-level red team series, and a few one-off posts around the OS. Those two series were essentially month long deep dives where I approached the macOS operating system from different perspectives. Those series had a few years in between them, so some of the information may be dated, but I hope people find this helpful!"
 		* [Mac system extensions for threat detection: Part 1 - Will Yu](https://www.elastic.co/blog/mac-system-extensions-for-threat-detection-part-1)
 			* [Part 2](https://www.elastic.co/blog/mac-system-extensions-for-threat-detection-part-2)
 			* [Part 3](https://www.elastic.co/blog/mac-system-extensions-for-threat-detection-part-3)
 			* In part 1 of this series, we’ll go over some of the frameworks accessible by kernel extensions that provide information about file system, process, and network events. These frameworks include the Mandatory Access Control Framework, the KAuth framework, and the IP/socket filter frameworks. We won't do a deep dive into each one of these frameworks specifically, as there have been many other posts and guides [0](https://www.synack.com/blog/monitoring-process-creation-via-the-kernel-part-i/) [1](https://www.apriorit.com/dev-blog/411-mac-os-x-kauth-listeners) [2](https://reverse.put.as/2014/10/03/can-i-suid-a-trustedbsd-policy-module-to-control-suid-binaries-execution/) [3](https://developer.apple.com/library/archive/technotes/tn2127/_index.html) [4](https://developer.apple.com/library/archive/technotes/tn2459/_index.html) regarding how to use these frameworks. Instead, we’ll recap and review each of these frameworks, then in [part 2](https://www.elastic.co/blog/mac-system-extensions-for-threat-detection-part-2) we’ll cover some valuable tips and tricks we can use inside the kernel extensions framework that will no longer be available in the new SystemExtensions framework starting in macOS 10.15. And finally, in [part 3](https://www.elastic.co/blog/mac-system-extensions-for-threat-detection-part-3) of the series, we’ll cover the new SystemExtensions framework and the features it provides to third-party developers.
-		* [Hunting for Bad Apples – Part 1 - Richie Cyrus](https://securityneversleeps.net/2018/06/25/hunting-for-bad-apples-part-1/)
-		* [Investigating Macs at the Speed of Compromise - Tim Crothers(BSides Augusta2019)](https://www.youtube.com/watch?v=o88k_0tDINo&list=PLEJJRQNh3v_PF6cecq0ES2w25JtoG631g&index=12)
-		* [Logs Unite! Forensic Analysis Of Apple Unified Logs - Sarah Edwards(2017)](https://papers.put.as/papers/macosx/2017/LogsUnite.pdf)
 		* [Job(s) Bless Us!Privileged Operations on macOS - Julia Vaschenko(OBTSv3.0)](https://objectivebythesea.com/v3/talks/OBTS_v3_jVashchenko.pdf)
-		* [Working with TrustedBSD in Mac OS X - Alexander Stavonin(2013)](https://sysdev.me/trusted-bsd-in-osx/)
 		* [Low-Level Process Hunting on macos - themittenmac](https://themittenmac.com/low-level-process-hunting-on-macos/)
 		* [The TrueTree Concept - Jaron Bradley](https://themittenmac.com/the-truetree-concept/)
+		* [Low-Level Process Hunting on macOS - Jaron Bradley(2020)](https://objective-see.com/blog/blog_0x4A.html)
+		* [Hypothesis-driven MacOS Threat Hunting - Plug(Derpcon2020)](https://www.youtube.com/watch?v=o1rQfLI1pWo&list=PLCXnHhr5mRLzgWG8852x2E_ihkBM3pvxf&index=9)
+			* "MacOS is a popular operating system deployed across many organizations. Few commercial tools exist that provide proper event visibility in MacOS. Often, these tools are expensive and some lack important monitoring features. However, open-source offers a great selection of tools that can be deployed to kick start a MacOS Threat Hunting Program. In this talk, we will simplify threat hunting and present a technique to create a reliable and useful hunt hypothesis. With only a few open-source tools we will provide and guide the audience on a repeatable methodology to hunt for threats in MacOs or any other OS."
 		* [20 Common Tools & Techniques Used by macOS Threat Actors & Malware - Phil Stokes(2021)](https://labs.sentinelone.com/20-common-tools-techniques-used-by-macos-threat-actors-malware/)
+		* [Threat Hunting and Mitigation in `*Nix`/macOS Environments. (Please comment and tell me what I'm missing. This is initial work) - hartescout(2021)](https://0x00sec.org/t/threat-hunting-and-mitigation-in-nix-macos-environments-please-comment-and-tell-me-what-im-missing-this-is-initial-work/25446)
 	* **Talks & Presentations**
 		* ["MacDoored" Bradley, OBTS v1.0](https://www.youtube.com/watch?v=ObiSt_RYOOM)
 			* [Slides](https://themittenmac.com/publication_docs/OBTS_v1_Bradley.pdf)
@@ -1179,9 +1290,12 @@
 		* [Comparing apples to Apple - Adam Mathis(Derbycon2018)](https://www.irongeek.com/i.php?page=videos/derbycon8/stable-37-comparing-apples-to-apple-adam-mathis)
 			* Many defenders have hard fought experience finding evil on Windows systems, but stare blankly when handed a Mac. You know all the ways PowerShell can own a box, but how about AppleScript? This practical talk will give defenders a primer in finding adversarial activity on macOS using the TTPs they know and love from other platforms as a reference point.
 		* [When Macs Come Under ATT&CK - Richie Cyrus(Derbycon2018)](http://www.irongeek.com/i.php?page=videos/derbycon8/track-3-01-when-macs-come-under-attck-richie-cyrus)
+		* [Investigating Macs at the Speed of Compromise - Tim Crothers(BSides Augusta2019)](https://www.youtube.com/watch?v=o88k_0tDINo&list=PLEJJRQNh3v_PF6cecq0ES2w25JtoG631g&index=12)
 		* [Grafting Apple Tree’s: Building a useful process tree - Jaron Bradley(ObjectiveByTheSea v3 2020)](https://themittenmac.com/wp-content/uploads/2020/03/OBTS_V3_Bradley.pdf)
 		* [Post Infection Analysis on macOS Hosts - Cedric Owens(A Conference for Defense/ACoD(2020))](https://www.youtube.com/watch?v=u2bvLyuF0HQ)
 			* This talk covers post infection analysis as well as some simple yet effective detections for macOS hosts in an enterprise. I will discuss different macOS system artifacts that are useful for investigators, how to query these artifacts, common persistence locations, browser history/ data, log data, network information, process information, and other important pieces of information that defenders can leverage to aid during investigations.
+	* **Papers**
+		* [Logs Unite! Forensic Analysis Of Apple Unified Logs - Sarah Edwards(2017)](https://papers.put.as/papers/macosx/2017/LogsUnite.pdf)
 	* **Tools**
 		* [Venator](https://github.com/richiercyrus/Venator)
 			* Venator is a python tool used to gather data for proactive detection of malicious activity on macOS devices.
@@ -1223,9 +1337,16 @@
 			* [Appendix L: Events to Monitor - docs.ms](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/appendix-l--events-to-monitor)
 				* The following table lists events that you should monitor in your environment, according to the recommendations provided in [Monitoring Active Directory for Signs of Compromise](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/monitoring-active-directory-for-signs-of-compromise).
 		* **Articles/Writeups**
-			* [Detecting Kerberoasting activity using Azure Security Center - Moti Bani](https://blogs.technet.microsoft.com/motiba/2018/02/23/detecting-kerberoasting-activity-using-azure-security-center/)
-			* [The only PowerShell Command you will ever need to find out who did what in Active Directory - Przemyslaw Klys(2019)](https://evotec.xyz/the-only-powershell-command-you-will-ever-need-to-find-out-who-did-what-in-active-directory/)
+			* [Domain controllers required ports: Use PowerShell to check if they are listening - Nirmal Sharma(2017)](https://techgenix.com/domain-controllers-required-ports/)
+			* [Detecting Kerberoasting activity using Azure Security Center - Moti Bani(2018)](https://blogs.technet.microsoft.com/motiba/2018/02/23/detecting-kerberoasting-activity-using-azure-security-center/)
 			* [Detecting Attackers in a Windows Active Directory Network - Mark Gamache(2017)](https://markgamache.blogspot.com/2017/08/detecting-attackers-in-windows-active.html)
+			* [Hunting in Active Directory: Unconstrained Delegation & Forests Trusts - Roberto Rodriguez(2018)](https://posts.specterops.io/hunting-in-active-directory-unconstrained-delegation-forests-trusts-71f2b33688e1)
+			* [The only PowerShell Command you will ever need to find out who did what in Active Directory - Przemyslaw Klys(2019)](https://evotec.xyz/the-only-powershell-command-you-will-ever-need-to-find-out-who-did-what-in-active-directory/)
+			* [Using Active Directory Replication Metadata for hunting purposes - Huy(2020)](https://web.archive.org/web/20210301212444/https://security-tzu.com/2020/11/09/active-directory-replication-metadata-for-forensics-purposes/)
+			* [ Inside Microsoft Threat Protection: Solving cross-domain security incidents through the power of correlation analytics - Defender365 Team(2020)](https://www.microsoft.com/security/blog/2020/07/29/inside-microsoft-threat-protection-solving-cross-domain-security-incidents-through-the-power-of-correlation-analytics/)
+			* [Hunting for Skeleton Key Implants - Riccardo Ancarani(2021](https://riccardoancarani.github.io/2020-08-08-hunting-for-skeleton-keys/)
+			* [Velociraptor vs. PrintNightmare - Matthew Green, Mike Cohen(2021)](https://velociraptor.velocidex.com/velociraptor-vs-printnightmare-6cc38c5b3d14?gi=2365674c61a2)
+			* [Detecting PetitPotam AD CS and other Domain Controller Account Takeovers - Mehmet Ergene(2021)](https://posts.bluraven.io/detecting-petitpotam-and-other-domain-controller-account-takeovers-d3364bd9ee0a)
 		* **Talks/Presentations/Videos**
 			* [Detecting the Elusive Active Directory Threat Hunting - Sean Metcalf(BSidesCharm2017)](https://www.youtube.com/watch?v=9Uo7V9OUaUw)
 				* Attacks are rarely detected even after months of activity. What are defenders missing and how could an attack by detected? This talk covers effective methods to detect attacker activity using the features built into Windows and how to optimize a detection strategy. The primary focus is on what knobs can be turned and what buttons can be pushed to better detect attacks. One of the latest tools in the offensive toolkit is ""Kerberoast"" which involves cracking service account passwords offline without admin rights. This attack technique is covered at length including the latest methods to extract and crack the passwords. Furthermore, this talk describes a new detection method the presenter developed. The attacker's playbook evolves quickly, defenders need to stay up to speed on the latest attack methods and ways to detect them. This presentation will help you better understand what events really matter and how to better leverage Windows features to track, limit, and detect attacks.
@@ -1233,11 +1354,21 @@
 		* **Tools**
 			* [WatchAD](https://github.com/0Kee-Team/WatchAD)
 				* After Collecting event logs and kerberos traffic on all domain controllers, WatchAD can detect a variety of known or unknown threats through features matching, Kerberos protocol analysis, historical behaviors, sensitive operations, honeypot accounts and so on. The WatchAD rules cover the many common AD attacks.
+		* **AMSI**
+			* [Antimalware Scan Interface Detection Optics Analysis Methodology: Identification and Analysis of AMSI for WMI - Matt Graeber(2019)](https://posts.specterops.io/antimalware-scan-interface-detection-optics-analysis-methodology-858c37c38383?gi=cb4c7a775a96)
 	* **Audit Policy**
 		* **Articles/Writeup**
+			* [Audit User/Device Claims - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/audit-user-device-claims)
+				* "Audit User/Device Claims allows you to audit user and device claims information in the account’s logon token. Events in this subcategory are generated on the computer on which a logon session is created. For an interactive logon, the security audit event is generated on the computer that the user logged on to. For a network logon, such as accessing a shared folder on the network, the security audit event is generated on the computer hosting the resource."
 		* **Tools**
 			* [Audix](https://github.com/littl3field/Audix)
 				* Audix is a PowerShell tool to quickly configure the Windows Event Audit Policies for security monitoring 
+			* [PSGumshoe](https://github.com/PSGumshoe/PSGumshoe)
+				* PSGumshoe is a Windows PowerShell module for the collection of OS and domain artifacts for the purposes of performing live response, hunt, and forensics. The module focuses on being as forensically sound as possible using existing Windows APIs to achieve the collection of information from the target host.
+			* [Windows-auditing-mindmap](https://github.com/mdecrevoisier/Windows-auditing-mindmap)
+				* Set of Mindmaps providing a detailed overview of the different #Windows auditing capacities and event log files.
+	* **Autoruns**
+		* [How to Use Autoruns to Detect and Remove Malware on Windows - Neil Fox(2021)](https://www.varonis.com/blog/how-to-use-autoruns/)
 	* **Azure**
 		* **Articles/Writeups**
 			* [Identifying Threat Hunting opportunities in your data - shainw](https://techcommunity.microsoft.com/t5/azure-sentinel/identifying-threat-hunting-opportunities-in-your-data/ba-p/915721)
@@ -1254,10 +1385,16 @@
 				* Hunting Chrome extensions in Win AD environment with Sysmon and ELK.
 	* **cmd.exe**
 		* [Windows Command-Line Obfuscation - @Wietze(2021)](https://www.wietzebeukema.nl/blog/windows-command-line-obfuscation)
+	* **Camera & Mic**
+		* [Can You Track Processes Accessing the Camera and Microphone on Windows 10? - Zachary Stanford(2020)](https://dfir.pubpub.org/pub/nm5b39ae/release/1)
 	* **Credential Access**
 		* **Articles/Writeups**
 			* [How to Detect Overpass-The-Hash Attacks - Jeff Warren](https://blog.stealthbits.com/how-to-detect-overpass-the-hash-attacks/)
 			* [Hunting for Credentials Dumping in Windows Environment - Teymur Kheirhabaro(ZeroNights2017)](https://2017.zeronights.org/wp-content/uploads/materials/ZN17_Kheirkhabarov_Hunting_for_Credentials_Dumping_in_Windows_Environment.pdf)
+			* [Tales of a Threat Hunter 1: Detecting Mimikatz & other Suspicious LSASS Access - Part 1 - @darkQuassar(2017)(https://www.eideon.com/2017-09-09-THL01-Mimikatz/)
+			* [Deception in Depth - LSASS Injection - spookysec(2021)](https://blog.spookysec.net/DnD-LSASS-Injection/)
+			https://risksense.com/blog/hidden-gems-in-windows-the-hunt-is-on/
+			* [Fantastic Windows Logon types and Where to Find Credentials in Them - Chirag Salva, Anas Jamal(2021)](https://www.alteredsecurity.com/post/fantastic-windows-logon-types-and-where-to-find-credentials-in-them)
 		* **Papers**
 			* [A Process is No One: Hunting for Token Manipulation - Jared Atkinson, Robby Winchester(2017)](https://www.blackhat.com/docs/eu-17/materials/eu-17-Atkinson-A-Process-Is-No-One-Hunting-For-Token-Manipulation-wp.pdf)
 				*  In this paper, we will outline how we view hunting through our five step approach to perform hypothesis driven hunting. In addition, we will walk through a case study detecting Access Token Manipulation, highlighting the actions performed at each step of the process. At the conclusion of the paper, the reader should better understand hunting, our five-step hypothesis process, and how to apply it to real world scenarios.
@@ -1270,14 +1407,33 @@
 		* [Interesting DFIR traces of .NET CLR Usage Logs - menasec.net](https://blog.menasec.net/2019/07/interesting-difr-traces-of-net-clr.html)
 	* **DLLs**
 		* [What is normal? Profiling System32 binaries to detect DLL Search Order Hijacking - Michael Haag, Shane Welcher(2021)](https://redcanary.com/blog/system32-binaries/)
+		* [Hunting for Evidence of DLL Side-Loading With PowerShell and Sysmon - John Dwyer(2021)](https://securityintelligence.com/posts/hunting-evidence-dll-side-loading-powershell-sysmon/)
+			* [Windows Feature Hunter](https://github.com/xforcered/WFH)
+	* **Drivers**
+		* [Detecting and Hunting for the Malicious NetFilter Driver - Michael Gough(2021)](https://research.nccgroup.com/2021/07/16/detecting-and-hunting-for-the-malicious-netfilter-driver/)
 	* **Event Logs**
 		* **Articles/Writeups**
+			* [Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields - docs.ms](https://docs.microsoft.com/en-gb/windows/privacy/required-windows-diagnostic-data-events-and-fields-2004)
+				* `It's just a little bit of telemetry to help them diagnose Windows...`
+			
+			* [Linking Event Messages and Resource DLLs - Andreas Schuster(2010)](https://computer.forensikblog.de/en/2010/10/linking-event-messages-and-resource-dlls.html)
 			* [Maintaining Persistence and Password Hash Dumping using Meterpreter and Mimikatz - ](https://tranquilsec.com/meterpreter-mimikatz/)
+			* [How to Recover Corrupted EVTX Log Files and Extract Information - Paula Januszkiewicz(2020)](https://cqureacademy.com/blog/hacks/how-to-recover-corrupted-evtx-log-files-and-extract-information)
 		* **Talks/Presentations/Videos**
 			* [What Event Logs? Part 1: Attacker Tricks to Remove Event Logs - Matt Bromiley(SANS DFIR 2018)](https://www.youtube.com/watch?v=7JIftAw8wQY)
 				* In part 1 of this series, SANS instructor and incident responder Matt Bromiley focuses on techniques, old and new, that attackers are using to neutralize event logs as a recording mechanism. Ranging from clearing of logs to surgical, specific event removal, in this webcast we will discuss how the attackers are doing what they're doing, and the forensic techniques we can use to detect their methods. There has been a lot of discussions lately about attackers' ability to fool the system into not writing event logs - but are our attackers truly staying hidden when they do this? Let's find out!
 			* [What Event Logs Part 2 Lateral Movement without Event Logs - Matt Bromiley(SANS DFIR 2018)](https://www.youtube.com/watch?v=H8ybADELHzk)
 				* In part 2 of this series, SANS instructor and incident responder Matt Bromiley will discuss techniques to identify lateral movement when Windows Event Logs are not present. Sometimes logs roll without preservation, and sometimes attackers remove them from infected systems. Despite this, there are still multiple artifacts we can rely on to identify where our attackers came from, and where they went. In this webcast, we'll discuss the techniques and artifacts to identify this activity.
+		* **Tools**
+			* [Search-Event.ps1](https://github.com/Ben0xA/PowerShellScripts/blob/main/Search-Event.ps1)
+			* [windows-basic-event-logs Mindmap](https://github.com/christophetd/hunting-mindmaps/blob/master/pdf/windows-basic-event-logs.pdf)
+	* **Execution & Executables**
+		* **Articles/Blogposts/Writeups**
+			* [Did It Execute? - Mary Singh(2013)](https://www.fireeye.com/blog/threat-research/2013/08/execute.html)
+			* [Case studies in Rich Header analysis and hunting - Jeff White(2018)](http://ropgadget.com/posts/richheader_hunting.html)
+			* [Wanted: Process Command Lines - Oddvar Moe(2020)](https://www.trustedsec.com/blog/wanted-process-command-lines/)
+			* [Static Detection of Portable Executable Files - Winternl(2020)](https://winternl.com/static-detection-of-portable-executable-files/)
+		* **Talks/Presentations/Videos**
 	* **FileSystem**
 		* OSQuery
 		* **Articles/Blogposts/Writeups**
@@ -1292,10 +1448,46 @@
 		* **Articles/Blogposts/Writeups**
 			* [Detecting HTML smuggling attacks using Sysmon and Zone.Identifier files - @securityjosh(2021)](https://securityjosh.github.io/2021/01/27/Detect-HTML-Smuggling-Sysmon.html)
 			* [Detecting Initial Access: HTML Smuggling and ISO Images — Part 2 - Mehmet Ergene(2021)](https://posts.bluraven.io/detecting-initial-access-html-smuggling-and-iso-images-part-2-f8dd600430e2)
+	* **In-Memory**
+		* **101**
+			* [memory-hunting Mindmap](https://github.com/christophetd/hunting-mindmaps/blob/master/pdf/memory-hunting.pdf)
+		* **Articles/Blogposts/Writeups**
+			* [HeapWalk function - docs.ms](https://docs.microsoft.com/en-us/windows/win32/api/heapapi/nf-heapapi-heapwalk)
+				* Enumerates the memory blocks in the specified heap.			
+			* [Understanding and Evading Get-InjectedThread - XPNSec(2018)](https://blog.xpnsec.com/undersanding-and-evading-get-injectedthread/)
+			* [Hook Heaps and Live Free - Arash Parsa(2021)](https://www.arashparsa.com/hook-heaps-and-live-free/)
+		* **Talks/Presentations/Videos**
+			* [Hunting for Memory-Resident Malware - Joe Desimone(Derbycon2017)](https://archive.org/details/DerbyCon7/S21-Hunting-for-Memory-Resident-Malware-Joe-Desimone.mp4)
+				* Once a staple of nation state level adversaries, memory-resident malware techniques have become ubiquitous even for lowly criminal activity. With their ability to evade endpoint protection products, it is critical for defenders to understand and defend against these techniques. In this talk, I will describe both common and advanced stealth malware techniques which evade today's hunt tools and methodologies. Attendees will learn about adversary stealth and understand ways to detect some of these methods. New code for rapidly hunting for these techniques across your enterprise will be released.
+			* [Gargoyle Hunting In-Depth — Aliz Hammond(Infosec In the City(2020)](https://www.youtube.com/watch?v=T73GK1Y8jLU)
+				* Detecting certain user-mode code-hiding techniques, such as Josh Lospinoso's 'Gargoyle', is almost impossible from user-space. In this talk, I will examine Gargoyle, and explain how it can be detected from kernel mode. I will first walk through using WinDbg to locate hidden code and then write a Volatility plugin to turn this process into a practical method of detecting real-world attacks — in the process, adding a reliable method of differentiating these from legitimate behavior.
+		* **Tools**
+			* [GetInjectedThreads.cs](https://github.com/Apr4h/GetInjectedThreads)
+				* C# Implementation of Jared Atkinson's Get-InjectedThread.ps1
+			* [Memhunter](https://github.com/marcosd4h/memhunter)
+				* "The tool is a standalone binary that, upon execution, deploys itself as a windows service. Once running as a service, memhunter starts the collection of ETW events that might indicate code injection attacks. The live stream of collected data events is feed into memory inspection scanners that use detection heuristics to down select the potential attacks. The entire detection process does not require human intervention, neither memory dumps, and it can be performed by the tool itself at scale."
+			* [Moneta](https://github.com/forrest-orr/moneta)
+				* Moneta is a live usermode memory analysis tool for Windows with the capability to detect malware IOCs 
+			* [PE-sieve](https://github.com/hasherezade/pe-sieve)
+				*  PE-sieve is a tool that helps to detect malware running on the system, as well as to collect the potentially malicious material for further analysis. Recognizes and dumps variety of implants within the scanned process: replaced/injected PEs, shellcodes, hooks, and other in-memory patches. Detects inline hooks, Process Hollowing, Process Doppelgänging, Reflective DLL Injection, etc.
+			* [hollows_hunter](https://github.com/hasherezade/hollows_hunter)
+				* Scans all running processes. Recognizes and dumps a variety of potentially malicious implants (replaced/implanted PEs, shellcodes, hooks, in-memory patches).
+	* **ISO Files**
+		* **Articles/Writeups**
+			* [Threat Thursday - Evading Defenses with ISO files like NOBELIUM - Jorge Orchilles(2021)](https://www.scythe.io/library/threat-thursday-evading-defenses-with-iso-files-like-nobelium)
+	* **Kernel-related**
+		* **101**
+			* [4656(S, F): A handle to an object was requested. - docs.ms](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4656)
+				* "This event indicates that specific access was requested for an object. The object could be a file system, kernel, or registry object, or a file system object on removable storage or a device.  If access was declined, a Failure event is generated.  This event generates only if the object’s SACL has the required ACE to handle the use of specific access rights.  This event shows that access was requested, and the results of the request, but it doesn’t show that the operation was performed. To see that the operation was performed, check “4663(S): An attempt was made to access an object.”"
+		* **Articles/Writeups**
+			* [Shellcode Detection Using Real-Time Kernel Monitoring - Alonso Candado()](https://www.countercraftsec.com/blog/post/shellcode-detection-using-realtime-kernel-monitoring/)
+			* [Detecting EDR Bypass: Malicious Drivers(Kernel Callbacks) - Mehmet Ergene(2021)](https://posts.bluraven.io/detecting-edr-bypass-malicious-drivers-kernel-callbacks-f5e6bf8f7481)
 	* **Lateral Movement**
 		* **Articles/Writeups**
 			* [Threat Hunting for PsExec, Open-Source Clones, and Other Lateral Movement Tools - Tony Lambert(2018)](https://redcanary.com/blog/threat-hunting-psexec-lateral-movement/)
 			* [Digging Into Sysinternals: PsExec - Matt B(2016)](https://medium.com/@bromiley/digging-into-sysinternals-psexec-64c783bace2b#.htmvaklhy)
+		* **Talks/Presentations/Videos**
+			* [Spotting Lateral Movement with Endpoint Data - Tony Lambert(BSides Augusta2019)](https://www.youtube.com/watch?v=rqMBMA5W_OM&list=PLEJJRQNh3v_PF6cecq0ES2w25JtoG631g&index=26)
 		* **Tools**
 			* [kethash](https://github.com/cyberark/ketshash)
 				* A little tool for detecting suspicious privileged NTLM connections, in particular Pass-The-Hash attack, based on event viewer logs.

@@ -3877,6 +3877,9 @@
 		* [Cached and Stored Credentials - ldapwiki](https://ldapwiki.com/wiki/Cached%20and%20Stored%20Credentials)
 		* [Windows Credential Management, Logon Sessions and the Double Hop Problem - Acebond(2019)](https://shellz.club/windows-credential-management/)
 			* "I wanted to provide a quick overview on Windows credential management in relation to penetration testing, why passwords are not always stored in memory and the Double Hop problem."
+			* [Fantastic Windows Logon types and Where to Find Credentials in Them - Chirag Salva, Anas Jamal(2021)](https://www.alteredsecurity.com/post/fantastic-windows-logon-types-and-where-to-find-credentials-in-them)
+			* [Hunting for credentials and building a credential type reference catalog - wunderwuzzi(2020)](https://embracethered.com/blog/posts/2020/hunting-for-credentials/)			
+			* [Using built-in OS indexing features for credential hunting - wunderwuzzi(2020)](https://embracethered.com/blog/posts/2020/invoke-windowssearch-credential-hunt/)
 	* **Articles/Blogposts/Writeups**
 		* **Collection/Overview of techniques**
 			* [Dump Windows password hashes efficiently - Part 1(2011)](http://www.bernardodamele.blogspot.com/2011/12/dump-windows-password-hashes.html)
@@ -3902,12 +3905,18 @@
 			* [Password Managers: Under the Hood of Secrets Management - ISE](https://www.securityevaluators.com/casestudies/password-manager-hacking/)
 				* Password managers allow the storage and retrieval of sensitive information from an encrypted database. Users rely on them to provide better security guarantees against trivial exfiltration than alternative ways of storing passwords, such as an unsecured flat text file. In this paper we propose security guarantees password managers should offer and examine the underlying workings of five popular password managers targeting the Windows 10 platform: 1Password 7, 1Password 4, Dashlane, KeePass, and LastPass. We anticipated that password managers would employ basic security best practices, such as scrubbing secrets from memory when they are not in use and sanitization of memory once a password manager was logged out and placed into a locked state. However, we found that in all password managers we examined, trivial secrets extraction was possible from a locked password manager, including the master password in some cases, exposing up to 60 million users that use the password managers in this study to secrets retrieval from an assumed secure locked state.
 	* **3rd Party**
+		* Erlang Portmapper Daemon
+			* [Erlang Authenticated Remote Code Execution - mubix](https://malicious.link/post/2018/erlang-arce/)
 		* PulseSecure
 			* [Reversing Pulse Secure Client Credentials Store - qkaiser(2020)](https://quentinkaiser.be/reversing/2020/10/27/pule-secure-credentials/)
 		* Solarwinds Orion
 			* [SolarFlare Release: Password Dumper for SolarWinds Orion - mubix(2020)](https://malicious.link/post/2020/solarflare-release-password-dumper-for-solarwinds-orion/)
 			* [solarflare](https://github.com/mubix/solarflare)
 				* Credential Dumping Tool for SolarWinds Orion
+			* [Exploitation of Remote WCF Vulnerabilities](https://versprite.com/blog/security-research/exploitation-of-remote-services/)
+			* [Fun with SolarWinds Orion Cryptography - HD Moore(2018)](https://www.atredis.com/blog/2018/10/24/fun-with-the-solarwinds-orion-platform)
+			* [SolarWinds Orion Cryptography](https://github.com/atredispartners/solarwinds-orion-cryptography)
+				* Utilities for decrypting and hashing SolarWinds Orion credentials
 	* **Active Directory Environment**
 		* **Articles/Blogposts/Writeups**
 			* [Dumping Domain Password Hashes - pentestlab.blog](https://pentestlab.blog/2018/07/04/dumping-domain-password-hashes/)
@@ -3916,6 +3925,8 @@
 			* [Safely Dumping Domain Hashes, with Meterpreter - Rapid7](https://blog.rapid7.com/2015/07/01/safely-dumping-domain-hashes-with-meterpreter/)
 			* [Active Directory Domain Services Database Mounting Tool (Snapshot Viewer or Snapshot Browser) Step-by-Step Guide](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753609(v=ws.10))
 				* This guide shows how you can use an improved version of Ntdsutil and a new Active Directory® database mounting tool in Windows Server® 2008 to create and view snapshots of data that is stored in Active Directory Domain Services (AD DS) or Active Directory Lightweight Directory Services (AD LDS), without restarting the domain controller or AD LDS server. A snapshot is a shadow copy—created by the Volume Shadow Copy Service (VSS)—of the volumes that contain the Active Directory database and log files.
+			* [Pwning with Portals: How Rick Sanchez Dumps DITs - deadjakk](https://deadjakk.github.io/pivoting.html)
+			* [How To Export LAPS Passwords from Active Directory with Powershell - Danny(2021)](https://smarthomepursuits.com/export-laps-passwords-powershell/)
 	* **AWS**
 		* **Articles/Blogposts/Writeups**
 			* [CloudCopy — Stealing hashes from Domain Controllers in the Cloud - Tanner Barnes](https://medium.com/@_StaticFlow_/cloudcopy-stealing-hashes-from-domain-controllers-in-the-cloud-c55747f0913)
@@ -3974,6 +3985,16 @@
 			* [SassyKitdi: Kernel Mode TCP Sockets + LSASS Dump - @zerosum0x0(2020)](https://zerosum0x0.blogspot.com/2020/08/sassykitdi-kernel-mode-tcp-sockets.html)
 				* This post describes a kernel mode payload for Windows NT called "SassyKitdi" (LSASS + Rootkit + TDI). This payload is of a nature that can be deployed via remote kernel exploits such as EternalBlue, BlueKeep, and SMBGhost, as well as from local kernel exploits, i.e. bad drivers.
 			* [How to Capture a Minidump: Let Me Count the Ways - John Robbins(2020)](https://www.wintellect.com/how-to-capture-a-minidump-let-me-count-the-ways/)
+			* [The curious case of Realtek and LSASS - Henri Hambartsumyan(2020)](https://medium.com/falconforce/the-curious-case-of-realtek-and-lsass-33fc0c8482ff)
+			* [Code Note 0x2: ATPMiniDump - P. Boonyakarn(2020)](https://pandora.sh/posts/code-note-0x2-atpminidump/)
+			* [Mimikatz Under The Hood - Magnus Stubman(2021)](https://improsec.com/tech-blog/mimikatz-under-the-hood)
+			* [Deception in Depth - LSASS Injection - spookysec(2021)](https://blog.spookysec.net/DnD-LSASS-Injection/)
+			* [Dumping LSASS in memory undetected using MirrorDump - Ceri Coburn(2021)](https://www.pentestpartners.com/security-blog/dumping-lsass-in-memory-undetected-using-mirrordump/)
+				* [Code](https://github.com/CCob/MirrorDump)
+			* [Lsass Memory Dumps are Stealthier than Ever Before - Asaf Gilboa(2021)](https://www.deepinstinct.com/2021/01/24/lsass-memory-dumps-are-stealthier-than-ever-before/)
+				* [Part 2](https://www.deepinstinct.com/2021/02/16/lsass-memory-dumps-are-stealthier-than-ever-before-part-2/)
+			* [Dumping LSASS with SharpShere - James Coote(2021)](https://jamescoote.co.uk/Dumping-LSASS-with-SharpShere/)
+			* [A physical graffiti of LSASS: getting credentials from physical memory for fun and learning - @AdeptsOf0xCC](https://adepts.of0x.cc/physical-graffiti-lsass/)
 		* **Tools**
 			* [KsDumper](https://github.com/EquiFox/KsDumper)
 				* Dumping processes using the power of kernel space!
@@ -3981,6 +4002,28 @@
 				* PykDumper is mimimkatz inspired PyKD based script that retrieves and decrypt usernames,logonservers and credentials from the lsass process.
 			* [SassyKitdi](https://github.com/zerosum0x0/SassyKitdi)
 				* Kernel Mode TCP Sockets + LSASS Dump (Rust Shellcode) 
+			* [MiniDumpWriteDump BOF](https://github.com/rookuu/BOFs/tree/main/MiniDumpWriteDump)
+			* [MiniDump](https://github.com/cube0x0/MiniDump)
+				* C# implementation of mimikatz/pypykatz minidump functionality to get credentials from LSASS dumps.
+			* [MiniDumpWriteDumpPoC](https://github.com/Adepts-Of-0xCC/MiniDumpWriteDumpPoC)
+				* This is a function hook that allows to access the buffer generated by MiniDumpWriteDump before it gets to disk. Once accessed, it will encrypt the buffer and send it through a socket to a given host.
+			* [minidump](https://github.com/w1u0u1/minidump)
+				* Custom implementation of DbgHelp's MiniDumpWriteDump function. Uses static syscalls to replace low-level functions like NtReadVirtualMemory.
+			* [TransactedSharpMiniDump](https://github.com/PorLaCola25/TransactedSharpMiniDump)
+				* Implementation of b4rtiks's SharpMiniDump using NTFS transactions to avoid writting the minidump to disk and exfiltrating it via HTTPS using sockets.
+			* [LsassSilentProcessExit](https://github.com/deepinstinct/LsassSilentProcessExit)
+				*  Command line interface to dump LSASS memory to disk via SilentProcessExit 
+			* [PPLdump](https://github.com/itm4n/PPLdump)
+				* This tool implements a userland exploit that was initially discussed by James Forshaw (a.k.a. @tiraniddo) - in this [blog post](https://googleprojectzero.blogspot.com/2018/08/windows-exploitation-tricks-exploiting.html) - for dumping the memory of any PPL as an administrator.
+			* [AndrewSpecial](https://github.com/hoangprod/AndrewSpecial/tree/master)
+				* AndrewSpecial, dumping lsass' memory stealthily and bypassing "Cylance" since 2019.
+			* [SnoopyOwl](https://github.com/Adepts-Of-0xCC/SnoopyOwl)
+			* [ntfsDump](https://github.com/3gstudent/ntfsDump)
+				* Use to copy a file from an NTFS partitioned volume by reading the raw volume and parsing the NTFS structures.
+			* [Chalumeau](https://github.com/cyberstruggle/chalumeau)
+				* Chalumeau is automated,extendable and customizable credential dumping tool based on powershell and python.
+			* [CredBandit](https://github.com/xforcered/CredBandit)
+				* Proof of concept Beacon Object File (BOF) that uses static x64 syscalls to perform a complete in memory dump of a process and send that back through your already existing Beacon communication channel
 	* **Internal Monologue**
 		* **101**
 			* [Internal Monologue Attack: Retrieving NTLM Hashes without Touching LSASS](https://github.com/eladshamir/Internal-Monologue/)
@@ -4010,10 +4053,14 @@
 			* [Post exploitation trick - Phish users for creds on domains, from their own box](https://enigma0x3.wordpress.com/2015/01/21/phishing-for-credentials-if-you-want-it-just-ask/)
 		* **Tools**
 			* [Pickl3](https://github.com/hlldz/pickl3)
-				* Pickl3 is Windows active user credential phishing tool. You can execute the Pickl3 and phish the target user credential. 
+				* Pickl3 is Windows active user credential phishing tool. You can execute the Pickl3 and phish the target user credential.
+			* [FakeLogonScreen](https://github.com/bitsadmin/fakelogonscreen)
+				* FakeLogonScreen is a utility to fake the Windows logon screen in order to obtain the user's password. The password entered is validated against the Active Directory or local machine to make sure it is correct and is then displayed to the console or saved to disk.
 	* **Logon**
 		* [Capturing Windows 7 Credentials at Logon Using Custom Credential Provider](https://blog.leetsys.com/2012/01/02/capturing-windows-7-credentials-at-logon-using-custom-credential-provider/)
 			* The quick lowdown: I wrote a DLL capable of logging the credentials entered at logon for Windows Vista, 7 and future versions which you can download at http://www.leetsys.com/programs/credentialprovider/cp.zip. The credentials are logged to a file located at c:\cplog.txt. Simply copy the dll to the system32 directory and run the included register.reg script to create the necessary registry settings.
+		* [LogonCredentialsSteal](https://github.com/oxfemale/LogonCredentialsSteal)
+				* Hook msv1_0!SpAcceptCredentials from LSASS.exe and dump [...] in cleartext to text file. 
 	* **Local Files**
 		* **Articles/Blogposts/Writeups**
 			* [Extracting SSH Private Keys from Windows 10 ssh-agent - ropnop](https://blog.ropnop.com/extracting-ssh-private-keys-from-windows-10-ssh-agent/)
@@ -4039,6 +4086,8 @@
 			* [Dumping LSASS without Mimikatz with MiniDumpWriteDump == Reduced Chances of Getting Flagged by AVs - @spotheplanet](https://www.ired.team/offensive-security/credential-access-and-credential-dumping/dumping-lsass-passwords-without-mimikatz-minidumpwritedump-av-signature-bypass)
 			* [Protecting the LSASS.EXE process with RunAsPPL - adamcouch.co.uk](https://www.adamcouch.co.uk/protecting-the-lsass-exe-process-with-runasppl/)
 			* [Credential Dumping: Local Security Authority (LSA|LSASS.EXE) - Yashika Dhir(2020)](https://www.hackingarticles.in/credential-dumping-local-security-authority-lsalsass-exe/)
+			* [Mimikatz Under The Hood - Magnus Stubman(2021)](https://improsec.com/tech-blog/mimikatz-under-the-hood)
+				* [MagnuzKatz](https://github.com/magnusstubman/MagnusKatz)
 		* **Tools**
 			* [Dumpert](https://github.com/outflanknl/Dumpert)
 				* Recent malware research shows that there is an increase in malware that is using direct system calls to evade user-mode API hooks used by security products. This tool demonstrates the use of direct System Calls and API unhooking and combine these techniques in a proof of concept code which can be used to create a LSASS memory dump using Cobalt Strike, while not touching disk and evading AV/EDR monitored user-mode API calls.
@@ -4126,11 +4175,21 @@
 		* [NPPSpy](https://github.com/gtworek/PSBits/tree/master/PasswordStealing/NPPSpy)
 			* Simple (but fully working) code for NPLogonNotify(). The function obtains logon data, including cleartext password.
 	* **NTLM-related**
-		* [The NTLM Authentication Protocol and Security Support Provider - davenport.sourceforge](http://davenport.sourceforge.net/ntlm.html)
-		* [Live off the Land and Crack the NTLMSSP Protocol](https://www.mike-gualtieri.com/posts/live-off-the-land-and-crack-the-ntlmssp-protocol)
-			* Last month Bleeping Computer published an article about PKTMON.EXE, a little known utility in Windows 10 that provides the ability to sniff and monitor network traffic.  I quickly wondered if it would be feasible to use this utility, and other native tools within Windows, to capture NTLMv2 network authentication handshakes. TL;DR: Yes it is possible and I wrote a Python3 script called NTLMRawUnHide that can extract NTLMv2 password hashes from packet dumps of many formats!
-		* [NTLMRawUnhide.py](https://github.com/mlgualtieri/NTLMRawUnHide)
-			* NTLMRawUnhide.py is a Python3 script designed to parse network packet capture files and extract NTLMv2 hashes in a crackable format. The tool was developed to extract NTLMv2 hashes from files generated by native Windows binaries like NETSH.EXE and PKTMON.EXE without conversion.
+		* **Info**
+			* [The NTLM Authentication Protocol and Security Support Provider - davenport.sourceforge](http://davenport.sourceforge.net/ntlm.html)
+		* **Cracking**
+			* **Articles/Blogposts/Writeups**
+				* [Live off the Land and Crack the NTLMSSP Protocol](https://www.mike-gualtieri.com/posts/live-off-the-land-and-crack-the-ntlmssp-protocol)
+					* Last month Bleeping Computer published an article about PKTMON.EXE, a little known utility in Windows 10 that provides the ability to sniff and monitor network traffic.  I quickly wondered if it would be feasible to use this utility, and other native tools within Windows, to capture NTLMv2 network authentication handshakes. TL;DR: Yes it is possible and I wrote a Python3 script called NTLMRawUnHide that can extract NTLMv2 password hashes from packet dumps of many formats!
+			* **Tools**
+				* [NTLMRawUnhide.py](https://github.com/mlgualtieri/NTLMRawUnHide)
+					* NTLMRawUnhide.py is a Python3 script designed to parse network packet capture files and extract NTLMv2 hashes in a crackable format. The tool was developed to extract NTLMv2 hashes from files generated by native Windows binaries like NETSH.EXE and PKTMON.EXE without conversion.
+		* **Leaking**
+			* **Articles/Blogposts/Writeups**
+				* [Abusing Microsoft Outlook 365 to Capture NTLM - Raj Chandel(2020)](https://www.hackingarticles.in/abusing-microsoft-outlook-365-to-capture-ntlm/)
+				* [How to steal NTLMv2 hashes using file download vulnerability in web application - Mannu Linux(2018)](http://www.mannulinux.org/2018/12/how-to-steal-ntlmv2-hashes-using-file.html)
+				* [SMB hash hijacking & user tracking in MS Outlook - Soroush Dalili(2018)](https://www.nccgroup.com/uk/about-us/newsroom-and-events/blogs/2018/may/smb-hash-hijacking-and-user-tracking-in-ms-outlook/)			
+			* **Tools**
 	* **Password Filter DLL**
 		* [PasswordStealing -PSBits](https://github.com/gtworek/PSBits/tree/master/PasswordStealing)
 			* "Password stealing DLL I wrote around 1999, some time before Active Directory was announced. And of course it still works. First, it was written in 32-bit Delphi (pardon my language) and when it stopped working as everything changed into 64-bit - in (so much simpler when it comes to Win32 API) C, as I did not have 64-bit Delphi. The original implementation was a bit more complex, including broadcasting the changed password over the network etc. but now it works as a demonstration of an idea, so let's keep it as simple as possible. It works everywhere - on local machines for local accounts and on DCs for domain accounts."
@@ -4140,8 +4199,10 @@
 			* [Raining shells on Linux environments with Hwacha](https://www.n00py.io/2017/12/raining-shells-on-linux-environments-with-hwacha/)
 			* [Hwacha](https://github.com/n00py/Hwacha)
 				* Hwacha is a tool to quickly execute payloads on `*`Nix based systems. Easily collect artifacts or execute shellcode on an entire subnet of systems for which credentials are obtained.
-		* **Windows**
+		* **Articles/Blogposts/Writeups**
+			* [Comprehensive Guide on Password Spraying Attack - Pavandeep Singh(2020)](https://www.hackingarticles.in/comprehensive-guide-on-password-spraying-attack/)
 			* [Use PowerShell to Get Account Lockout and Password Policy](https://blogs.technet.microsoft.com/heyscriptingguy/2014/01/09/use-powershell-to-get-account-lockout-and-password-policy/)
+		* **Tools**
 			* [DomainPasswordSpray](https://github.com/dafthack/DomainPasswordSpray)
 				* DomainPasswordSpray is a tool written in PowerShell to perform a password spray attack against users of a domain. By default it will automatically generate the userlist from the domain. DomainPasswordSpray is a tool written in PowerShell to perform a password spray attack against users of a domain. By default it will automatically generate the userlist from the domain.
 			* [DomainPasswordSpray](https://github.com/mdavis332/DomainPasswordSpray)
@@ -4156,13 +4217,39 @@
 				* A Password Spraying tool for Active Directory Credentials by Jacob Wilkin(Greenwolf)
 			* [Sharphose](https://github.com/ustayready/SharpHose)
 				* SharpHose is a C# password spraying tool designed to be fast, safe, and usable over Cobalt Strike's execute-assembly. It provides a flexible way to interact with Active Directory using domain-joined and non-joined contexts, while also being able to target specific domains and domain controllers. SharpHose takes into consideration the domain password policy, including fine grained password policies, in an attempt to avoid account lockouts. Fine grained password policies are enumerated for the users and groups that that the policy applies to. If the policy applied also to groups, the group users are captured. All enabled domain users are then classified according to their password policies, in order of precedence, and marked as safe or unsafe. The remaining users are filtered against an optional user-supplied exclude list. Besides just spraying, red team operators can view all of the password policies for a domain, all the users affected by the policy, or just view the enabled domain users. Output can be sent directly to the console or to a user-supplied output folder.
+	* **Physical Memory**
+		* **Tools**
+			* [VirtToPhys](https://github.com/FuzzySecurity/Sharp-Suite#virttophys)
+				* VirtToPhys is a small POC to demonstrate how you can calculate the physical address for a kernel virtual address when exploiting driver bugs that allow you to map physical memory. VirtToPhys uses MsIo.sys, a WHQL signed driver that gives you colorful lights on your RAM (?lolwut), CVE-2019-18845. Hat tips and full credits to @UlfFrisk for his very insightful MemProcFS project and @hFireF0X for KDU.
+			* [physmem2profit](https://github.com/FSecureLABS/physmem2profit)
+				* [Blogpost](https://labs.f-secure.com/blog/rethinking-credential-theft/)
+				* Physmem2profit can be used to create a minidump of a target host's LSASS process by analysing physical memory remotely. The intention of this research is to propose an alternative approach to credential theft and create a modular framework that can be extended to support other drivers that can access physical memory. Physmem2profit generates a minidump (.dmp) of LSASS that can be further analyzed with Mimikatz. The tool does not require Cobalt Strike but should work fine over beacon with a SOCKS proxy.
 	* **RDP**
-		* [Vol de session RDP - Gentil Kiwi](http://blog.gentilkiwi.com/securite/vol-de-session-rdp)
-		* [Passwordless RDP Session Hijacking Feature All Windows versions - Alexander Korznikov](http://www.korznikov.com/2017/03/0-day-or-feature-privilege-escalation.html)
+		* **Articles/Blogposts/Writeups**
+			* [Vol de session RDP - Gentil Kiwi](http://blog.gentilkiwi.com/securite/vol-de-session-rdp)
+			* [Passwordless RDP Session Hijacking Feature All Windows versions - Alexander Korznikov](http://www.korznikov.com/2017/03/0-day-or-feature-privilege-escalation.html)
+			* [Dumping RDP Credentials - NetbiosX](https://pentestlab.blog/2021/05/24/dumping-rdp-credentials)
+			* [Dumping Plaintext RDP credentials from svchost.exe - n00py(2021)](https://www.n00py.io/2021/05/dumping-plaintext-rdp-credentials-from-svchost-exe/)
+			* [RdpThief – Extracting Clear Text Passwords from mstsc.exe using API Hooking - Stella Sebastian(2021)](https://reconshell.com/rdpthief-extracting-clear-text-passwords-from-mstsc-exe-using-api-hooking/)
+		* **Tools**
+			* [SharpRDPDump](https://github.com/jfmaes/SharpRDPDump)
+				* Create a minidump of TermService for clear text pw extraction
+	* **SeTrustedCredManaAccess**
+		* **Articles/Blogposts/Writeups**
+			* [Dumping Stored Credentials with SeTrustedCredmanAccessPrivilege - James Forshaw(2021)](https://www.tiraniddo.dev/2021/05/dumping-stored-credentials-with.html)
+		* **Tools**
+			* [forkatz](https://github.com/Barbarisch/forkatz)
+				* Credential dump using foreshaw technique using SeTrustedCredmanAccessPrivilege
 	* **Service Accounts**
 		* **Tools**
 			* [serviceFu](https://github.com/securifera/serviceFu)
 				* Automates credential skimming from service accounts in Windows Registry 
+	* **Tokens**
+		* **Articles/Blogposts/Writeups**
+			* [Another alternative to LSASS dumping - Magnus Stubman(2021)](https://improsec.com/tech-blog/another-alternative-to-lsass-dumping)
+		* **Tools**
+			* [tokenduplicator](https://github.com/magnusstubman/tokenduplicator/)
+				* Tool to start processes as SYSTEM using token duplication
 	* **Volume Shadow Copy Service**
 		* [Shadow Copy - Wikipedia](https://en.wikipedia.org/wiki/Shadow_Copy)
 		* [Manage Volume Shadow Copy Service from the Vssadmin Command-Line - technet.ms](https://technet.microsoft.com/en-us/library/dd348398.aspx)

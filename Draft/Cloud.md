@@ -8,7 +8,7 @@
 	- [Attacking](#atkws)
 	- [IAM](#awsiam)
 - [Google Cloud Platform](#gcp)
-- [MS Azure](#azure)
+- [MS Azure](#ms-azure)
 
 
 
@@ -389,7 +389,7 @@
 
 
 ------------------
-### <a name="gcloud"></a>Google Cloud
+### <a name="gcp"></a>Google Cloud
 * **101**<a name="g101"></a>
 * **Articles/Writeups**
 	* [Abusing Google App Scripting Through Social Engineering](http://www.redblue.team/2017/02/abusing-google-app-scripting-through.html)

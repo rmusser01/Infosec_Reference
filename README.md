@@ -1,4 +1,11 @@
-# InfoSec\_Reference
+# InfoSec Reference
+
+
+<div align="center">
+<img src="images/Markdown-000000.svg">
+<img src="./images/v1.svg">
+</div>
+
 
 An Information Security Reference That Doesn't Suck
 

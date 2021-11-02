@@ -6,7 +6,7 @@
 <img src="./images/v1.svg">
 </div>
 <div align = "center">
-	<img src="images/10k-xkcd.png">
+	<img src="images/10k-xkcd.png" width="600" height="411">
 </div>
 An Information Security Reference That Doesn't Suck
 

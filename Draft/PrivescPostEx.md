@@ -9,11 +9,12 @@
 	- [General Post Exploitation Tactics](#postex-general)
 	- [Agnostic Defense Evasion](#defevgen)
 - [Pivoting & Tunneling](#pivot)
+----------------------------------------------------------------------
+
+#### The content from this page has been moved to the following three pages:
 - [Linux Post-Exploitation & Privilege Escalation](./PrivescPostExLin.md)
 - [macOS Post-Exploitation & Privilege Escalation](./PrivescPostExmac.md)
 - [Windows Post-Exploitation & Privilege Escalation](./PrivEscPostExWin.md)
-----------------------------------------------------------------------
-
 
 
 

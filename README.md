@@ -5,33 +5,26 @@
 <img src="images/Markdown-000000.svg">
 <img src="./images/v1.svg">
 </div>
-
+<div align = "center">
+	<img src="images/10k-xkcd.png">
 
 An Information Security Reference That Doesn't Suck
 
 ### Goal:
-* **Be an awesome Information Security Reference**
-* **List of techinques, tools and tactics to learn from/reference.**
-	* Rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches OR as a reference/recall method for stuff. 
-	* Something like a "Yellow Pages" in the sense of you know something exists, but what was it called....
+- The goal of this project is to act as a free resource for anyone interested in learning more about Information Security.
+	-	A list of techinques, tools and tactics to learn from or reference.
+	- Rich resource of infosec knowledge for anyone to browse through as a jumping off point for various niches OR as a reference/recall method for stuff. 
+	- Something like a "Yellow Pages" in the sense of you know something exists, but what was it called....
   		* 'If you give a man a fish, he is hungry again in an hour. If you teach him to catch a fish, you do him a good turn.'
-* **Always accepting more links/stuff. Feel free to make a pull request or a complaint through a pull request or filing a bug**
-* **Why Do _You_ Care?**
-	* Don't have to constantly google for tools/reminder. 
-	* Easily browsable list of tools, techniques, papers, and research in all sorts of areas.
-	* Want to read some good info.
-* **Why Do _I_ Care?**
-	* I do this as a resource to learn and help others, and offer it publicly as a way of giving back to the general community.
-	* To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel might help build someone's skillset or increase their understanding of attacks/methods/defenses.
-	* This is not meant to condone illegal or malicious activities.
-* **This page**
-	* To see a better looking version on mobile: use [https://rmusser.net/docs](https://rmusser.net/docs)(horribly colored, but nicely formatted version).
-	* For latest content updates, check the git history.
-	* Want to contribute a link? Anything relevant that isn't already in or covered would be/is appreciated.
-	* If this resource has helped you in any way(and didn't increase your frustration), please consider making a donation to [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm) or [Amnesty International](https://www.amnesty.org/en/donate/).
+	- To be clear, these aren't personal notes. I keep this repo maintained as a way of having pointers to information that I feel might help build someone's skillset or increase their understanding of attacks/methods/defenses.
+- This project is not meant to condone illegal or malicious activities.
+- For a HTML version of this reference, check out: [https://rmusser.net/docs](https://rmusser.net/docs)(I'm not a webdev. Can you tell?).
+- For latest content updates, check the git history.
+- Want to contribute a link? 
+	* Anything relevant that isn't already in or covered would be/is appreciated.
+- **If this resource has helped you in any way(and didn't increase your frustration), please consider making a donation to [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm) or [Amnesty International](https://www.amnesty.org/en/donate/).**
 
 ## Index - Table of Contents
-
 * [Pre-ATT&CK](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/ATT%26CK-Stuff/Pre-ATT%26CK)
 * [ATT&CK Stuff](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/ATT%26CK-Stuff/ATT%26CK)
 * [Attacking & Securing Active Directory](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Active_Directory.md)

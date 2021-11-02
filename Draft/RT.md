@@ -2,7 +2,8 @@
 
 ------------------------------------------------------------------------------------------------------------------------------
 ## Table of Contents
-- [General](#general)
+- Stuff is sorted into various categories, use the following top-level ToCs for quick access to the appropriate ToC
+- [General Stuff](#general)
 	- [101](#101)
 	- [Courses](#gcourses)
 	- [General Informative Information](#gii)
@@ -10,70 +11,21 @@
 	- [Red Team Experiencs](#rte)
 	- [Papers](#gpapers)
 	- [Other](#rother)
-
-|   	|   	|   	|   	|
-|---	|---	|---	|---	|
-| [Adversary Simulation &Or Emulation](#advsim) | [Building(and Growing) a (Red) Team](#dreamteam) | [Organizing a Red Team Engagement](#engagered) |
-| [Articles/Blogposts/Writeups](#advart) | [101](#team101) | [Frameworks & Methodologies](#methods) |
-| [Talks/Presentations/Videos](#advvid) | [Articles/Blogposts/Writeups](#teamart) | [Facilitating a Red Team Engagement](#farte) |
-| [Simulation Plans](#advplans) | [Talks/Presentations/Videos](#teamtalks) | [Metrics & models](#gmm) |
-| [Tools](#advtools) | | [Purple Teaming](#purple) |
-| | | |
-
+- [Adversary Emu/Simu ; Building(and growing) a Red Team ; Organizing a Red Team Engagement](#first)
+- [C2s & Infrastructure](#c2ss)
 - [Simulation Tools](#simtools)
 	- [Articles/Blogposts/Writeups](#sta)
 	- [Talks/Presentations/Videos](#stpv)
 	- [Adversary Simulation Tools](#sast)
+- [Implants & Payload Development](#implants)
 - [Advanced Persistent Threat Actors & Campaigns](#aptdata)
 	- [Campaigns](#aptcamp)
-
-|   	|   	|
-|---	|---	|
-| [Command, Control, Communicate (or just CnC, or C3)](#c2s) | [Infrastructure](#infra) |
-| [General stuff](#c2gs) | [101](#i101) |
-| [C2 Development](#c2d) | [Articles/Blogposts/Writeups](#iarticles) |
-| [C2 Frameworks](#c2-frames) | [HW/SW for Remote Testing](#remote-testing) |
-| [Communication Channel Example PoCs](#c2cc) | [Logging & Monitoring](#ilm) |
-| [Papers about C2s](#c2papers) | [Web Server](#iws) |
-| | [Automation Tooling](#iat) |
-| | |
-
-|   	|   	|
-|---	|---	|
-| [Cobalt Strike](#cobaltstrike) | [Empire](#empire) |
-| [101](#cs101) | [Articles](#articles) |
-| [Agressor Scripts](#csas) | [Customizing](#ecustom) |
-| [Beacon](#csbeacon) | [Manual](#edoc) |
-| [C2](#csc2) | [Modules & Additions/Extensions](#emods) |
-| [Documentation](#csdoc) | [Modules & Additions/Extensions](#emods) |
-
-|   	|   	|
-|---	|---	|
-| [Domains and Domain Related Things](#domains) | [Egress & Exfiltration](#egress) | [External Attack Surface](#external) |
-| [General](#dg) | | |
-| [Domain Fronting](#df) | | |
-| [Tools](#dt) | | |
-| [Domain reputation](#dr) | | |
-| | | |
-
-
-|   	|   	|
-|---	|---	|
-| [HW Related/Physical Devices](#hw) | [Implant & Payload Development](#implantdev) |
-| [Access Methods/Tools](#access) | [Creation & Development](#pcd) |
-| [Dropboxes](#dropboxes) | [Language Specific](#langspec) |
-| [Physical Implants](#implants) | [Delivery & Staging](#pds) |
-| | |
-
-
-- [Implant Development Dev](#paydev)
-	- [Lang Agnostic](#langag)
-	- [Lang Specific](#langpsec)
-		- [C](#cpay)
-		- [C++](#cpppay)
-		- [CSharp](#csharppay)
-
-
+- [Tactics/Strategies/Methodologies](#tacticsandstats)
+	- [Lessons Learned](#vll)
+	- [Tactics](#ttactics)
+	- [Strategies](#tstrats)
+	- [Methodologies](#tmethods)
+	- [Skills Improvement](#vskill)
 - [Penetration Testing](#pentest)
 	- [Culture](#culture)
 	- [Workflows](#penworkflows)
@@ -85,6 +37,116 @@
 	- [MainFrames](#main)
 	- [SCADA/PLCs](#scada)
 	- [Virtual Appliances](#va)
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+### Adversary Emu/Simu ; Building(and growing) a Red Team ; Organizing a Red Team Engagement<a name="first"></a>
+- [Adversary Simulation &Or Emulation](#advsim)
+	- [Articles/Blogposts/Writeups](#advart)
+	- [Talks/Presentations/Videos](#advvid)
+	- [Simulation Plans](#advplans)
+	- [Tools](#advtools)
+- [Building(and Growing) a (Red) Team](#dreamteam)
+	- [101](#team101)
+	- [Articles/Blogposts/Writeups](#teamart)
+	- [Talks/Presentations/Videos](#teamtalks)
+- [Organizing a Red Team Engagement](#engagered)
+	- [Frameworks & Methodologies](#methods)
+	- [Facilitating a Red Team Engagement](#farte)
+	- [Metrics & models](#gmm)
+	- [Purple Teaming](#purple)
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+### C2s & Infrastructure<a name="c2ss"></a>
+- [Command, Control, Communicate (or just CnC, or C3)](#c2s)
+	- [General stuff](#c2gs)
+	- [C2 Development](#c2d)
+	- [C2 Frameworks](#c2-frames)
+	- [Communication Channel Example PoCs](#c2cc)
+	- [Papers about C2s](#c2papers)
+- [Infrastructure](#infra)
+	- [101](#i101)
+	- [Articles/Blogposts/Writeups](#iarticles)
+	- [HW/SW for Remote Testing](#remote-testing)
+	- [Logging & Monitoring](#ilm)
+	- [Web Server](#iws)
+	- [Automation Tooling](#iat)
+- [Cobalt Strike](#cobaltstrike)
+	- [101](#cs101)
+	- [Agressor Scripts](#csas)
+	- [Beacon](#csbeacon)
+	- [C2](#csc2)
+	- [Documentation](#csdoc)
+- [Empire](#empire)
+	- [Articles](#articles)
+	- [Customizing](#ecustom)
+	- [Manual](#edoc)
+	- [Modules & Additions/Extensions](#emods)
+	- [Modules & Additions/Extensions](#emods)
+	- 
+- [Domains and Domain Related Things](#domains) 
+	- [General](#dg)
+	- [Domain Fronting](#df)
+	- [Tools](#dt)
+	- [Domain reputation](#dr)
+- [Egress & Exfiltration](#egress)
+	- 
+- [External Attack Surface](#external)
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+### Implants & Payload Development<a name="implants"></a>
+- [Implant & Payload Development](#implantdev)
+- [Creation & Development](#pcd)
+- [Language Specific](#langspec)
+	- [Lang Agnostic](#langag)
+	- [C](#cpay)
+	- [C _Other_ stuff](#cpay)
+	- [C++](#cpppay)
+	- [C++ _Other_ stuff](#cpppay)
+	- [CSharp](#csharppay)
+	- [CSharp _Other_ stuff](#csharpother)
+	- 
+	- _Other_ stuff = I'm too lazy to make links
+- [Delivery & Staging](#pds)
+- [Access Methods/Tools](#access)
+- [Physical Implants](#physimplant)
+	- [HW Related/Physical Devices](#hw)
+	- [Dropboxes](#dropboxes)
+	- [Physical Implants](#implants)
+	- []()
+	- []()
+	- []()
+	- []()
+	- []()
 ------------------------------------------------------------------------------------------------------------------------------
 
 

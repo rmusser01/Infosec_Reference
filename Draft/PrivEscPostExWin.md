@@ -2,16 +2,16 @@
 ----------------------------------------------------------------------
 ## Table of Contents
 - Quick Jump List:
-	- [Windows Post Exploitation](#winpost)
-		- [Execution](#winexec)
-		- [Persistence](#winpersist)
-		- [Privilege Escalation](#winprivesc)
-		- [Windows Defense Evasion](#windefev)
-		- [Credential Access](#wincredac)
-		- [Discovery](#windisco)
-		- [Lateral Movement](#winlater)
-		- [Collection](#wincollect)
-	- [Windows Specific Technologies](#wintech)
+	- [Windows Post Exploitation](#winpost1)
+		- [Execution](#winexec1)
+		- [Persistence](#winpersist1)
+		- [Privilege Escalation](#winprivesc1)
+		- [Windows Defense Evasion](#windefev1)
+		- [Credential Access](#wincredac1)
+		- [Discovery](#windisco1)
+		- [Lateral Movement](#winlater1)
+		- [Collection](#wincollect1)
+	- [Windows Specific Technologies](#wintech1)
 - [101](#win101)
 - [Living_off_The_Land](#lolbins-win)
 - [CSharp & .NET Stuff](#csharp-stuff)
@@ -57,7 +57,7 @@
 	- [Windows Notification Facility](#wnfi)
 	- [WinSock Helper Functions(WSHX)](#wshx)
 - [Windows Post Exploitation](#winpost)
-	- [Execution](#winexec)
+	- [Execution](#winexec)<a name="winexec1"></a>
 		- [lolbins](#winlolexec)
 		- [Command and Scripting Interpreter](#wincmdexec)
 		- [Compiled HTML Files](#winchmexec)
@@ -84,7 +84,7 @@
 		- [Windows Remote Management(WinRM)](#winrmexec)
 		- [Windows Trouble shooting Packs](#wtspexec)
 		- 
-	- [Persistence](#winpersist)
+	- [Persistence](#winpersist)<a name="winpersist1"></a>
 		- [101](#p101)
 		- [Tactics](#ptactics)
 		- [3rd Part Applications](#p3rd)
@@ -136,7 +136,7 @@
 		- [Windows Subsystem for Linux](#pwsl)
 		- [WMI](#pwmi)
 		- 
-	- [Privilege Escalation](#winprivesc)
+	- [Privilege Escalation](#winprivesc)<a name="winprivesc1"></a>
 		- [101](#pe101)
 		- [DLL Stuff](#dllstuff)
 		- [Exploits/Missing Patches](#peemp)
@@ -167,7 +167,7 @@
 		- [VirtualMachines](#pevm)
 		- [VMWare](#pemvw)
 		- 
-	- [Windows Defense Evasion](#windefev)
+	- [Windows Defense Evasion](#windefev)<a name="windefev1"></a>
 		- [Anti-Malware Scan Interface](#amsi)
 		- [Anti-Virus](#winav)
 		- [Application Whitelisting](#appwhitelist)
@@ -178,7 +178,7 @@
 		- [Event Tracing](#evtevade) - FIX
 		- [Event Log](#eventlogevade) - FIX
 		- 
-	- [Credential Access](#wincredac)
+	- [Credential Access](#wincredac)<a name="wincredac1"></a>
 		- [101](#wc101)
 		- [Articles/Blogposts/Writeups](#wcabw)
 		- [3rd Party](#wc3rd)
@@ -214,7 +214,7 @@
 		- [Wifi](#wcwifi)
 		- [Tools](#wctools)
 		- 
-	- [Discovery](#windisco)
+	- [Discovery](#windisco)<a name="windisco1"></a>
 		- [101](#d101)
 		- [AD](#dad)
 		- [AppLocker](#dapp)
@@ -231,7 +231,7 @@
 		- [User Awareness](#dua)
 		- [General Tools](#dgt)
 		- 
-	- [Lateral Movement](#winlater)
+	- [Lateral Movement](#winlater)<a name="winlater1"></a>
 		- [Articles/Blogposts/Writeups](#lmab)
 		- [AppInit.dlls](#lappinit)
 		- [BGInfo](#latbg)
@@ -256,7 +256,7 @@
 		- [WSH](#latwsh)
 		- [Abusing Already Installed Applications](#latabuse)
 		- 
-	- [Collection](#wincollect)
+	- [Collection](#wincollect)<a name="wincollect1"></a>
 		- [Articles/Blogposts/Writeups](#cabw)
 		- [Browser](#cb)
 		- [CC](#ccc)
@@ -267,7 +267,7 @@
 		- [Skype](#cskype)
 		- [Video](#cvideo)
 		-	
-- [Windows Specific Technologies](#wintech)
+- [Windows Specific Technologies](#wintech)<a name="wintech1"></a>
 	- [Alternate Data Streams](#wads)
 	- [AppLocker](#winapplocker)
 	- [Application Shims](#winappshim)

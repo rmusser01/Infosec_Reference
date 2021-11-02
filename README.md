@@ -7,7 +7,7 @@
 </div>
 <div align = "center">
 	<img src="images/10k-xkcd.png">
-
+</div>
 An Information Security Reference That Doesn't Suck
 
 ### Goal:

@@ -6,6 +6,7 @@
 <img src="./images/v1.svg">
 </div>
 <div align = "center">
+- **If this resource has helped you in any way(and didn't increase your frustration), please consider making a donation to [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm) or [Amnesty International](https://www.amnesty.org/en/donate/).**
 	<img src="images/10k-xkcd.png" width="600" height="411">
 </div>
 An Information Security Reference That Doesn't Suck
@@ -22,7 +23,7 @@ An Information Security Reference That Doesn't Suck
 - For latest content updates, check the git history.
 - Want to contribute a link? 
 	* Anything relevant that isn't already in or covered would be/is appreciated.
-- **If this resource has helped you in any way(and didn't increase your frustration), please consider making a donation to [Doctors Without Borders](https://donate.doctorswithoutborders.org/onetime.cfm) or [Amnesty International](https://www.amnesty.org/en/donate/).**
+
 
 ## Index - Table of Contents
 * [Pre-ATT&CK](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/ATT%26CK-Stuff/Pre-ATT%26CK)

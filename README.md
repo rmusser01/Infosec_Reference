@@ -60,7 +60,7 @@ An Information Security Reference That Doesn't Suck
 * [:skull:Malware:skull:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Malware.md)
 * [:warning:Network Attacks & Defense:warning:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Network_Attacks.md)
 * [:triangular\_flag\_on\_post:Network Security Monitoring & Logging:triangular\_flag\_on\_post:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/L-SM-TH.md)
-* [:telescope:Open Source Intelligence Gathering - OSINT:telescope:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/OSI.md)
+* [:telescope:Open Source Intelligence Gathering - OSINT:telescope:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Osint.md)
 * [Passwords](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Passwords.md)
 * [:fishing\_pole\_and\_fish:Phishing:fishing\_pole\_and\_fish:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Phishing.md)
 * [:door:Physical Security:door:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Physical_Security.md)

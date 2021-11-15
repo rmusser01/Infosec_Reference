@@ -124,30 +124,43 @@
 
 ------------------------------------------------------------------------------------------------------------------------
 ### Implants & Payload Development<a name="implants"></a>
-- [Implant & Payload Development](#implantdev)
+- [Start of this Section](#implantdev)
 - [Creation & Development](#pcd)
+- [Anti-Tricks](#antitricks)
+	- [Anti-Dbg](#antidbg)
+	- [Anti-RE](#antire)
+	- [Anti-Sandbox](#antisandbox)
+	- [Bring-Your-Own ...](#byoc)
+	- [Crypters](#crypter)
+	- [Meta/Poly-Morphism](#metapoly)
+	- [Obfuscation](#obfuscation)
+- [Evasion](#evasion)
 - [Language Specific](#langspec)
-	- [Lang Agnostic](#langag)
-	- [C](#cpay)
-	- [C _Other_ stuff](#cpay)
-	- [C++](#cpppay)
-	- [C++ _Other_ stuff](#cpppay)
+	- [Basic](#basiclang)
+	- [C](#clang)
+	- [C++](#cppp)
 	- [CSharp](#csharppay)
 	- [CSharp _Other_ stuff](#csharpother)
-	- 
-	- _Other_ stuff = I'm too lazy to make links
+	- [Go](#gopay)
+	- [Haskell](#haskell)
+	- [Janet](#janet)
+	- [Java](#java)
+	- [.NET](#.net)
+	- [Nim](#nim)
+	- [PowerShell](#powershell)
+	- [Python](#python)
+	- [Rust](#rust)
+- [Linux Specific](#linspec)
+- [macOS Specific](#macspec)
+- [Windows Specific](#winspec)
 - [Delivery & Staging](#pds)
 - [Access Methods/Tools](#access)
-- [Physical Implants](#physimplant)
+- [Physical Implants](#pimplant)
 	- [HW Related/Physical Devices](#hw)
 	- [Dropboxes](#dropboxes)
 	- [Physical Implants](#implants)
-	- []()
-	- []()
-	- []()
-	- []()
-	- []()
-------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -1617,6 +1630,8 @@
 		* [Multi-Stage Delivery of Malware - Marco Ramilli, Matt Bishop](http://nob.cs.ucdavis.edu/bishop/papers/2010-malware/msmalware.pdf)
 			* Malware signature detectors use patterns of bytes, orvariations of patterns of bytes, to detect malware attemptingto enter a systems. This approach assumes the signaturesare both or sufficient length to identify the malware, andto distinguish it from non-malware objects entering the sys-tem. We describe a technique that can increase the difficultyof both to an arbitrary degree. This technique can exploitan optimization that many anti-virus systems use to makeinserting the malware simple; fortunately, this particularexploit is easy to detect, provided the optimization is notpresent. We describe some experiments to test the effective-ness of this technique in evading existing signature-basedmalware detectors.
 	* **Talks/Presentations/Videos**
+		* [Hacking Malware: Offense Is the New Defense - Valsmith, Quist(2014)](https://www.youtube.com/watch?v=WEgxe85Pvc4&list=PL9fPq3eQfaaAxDI0xo83ZFzDAZgXO3Yhy&index=77)
+			* The proliferation of malware is a serious problem, which grows in sophistication and complexity every day, but with this growth, comes a price. The price that malware pays for advanced features and sophistication is increased vulnerability to attack. Malware is a system, just like an OS or application. Systems employ security mechanisms to defend themselves and also suffer from vulnerabilities which can be exploited. Malware is no different. Malware authors are employing constantly evolving techniques including binary obfuscation, anti-debugging and anti-analysis, and built in attacks against protection systems such as anti-virus software and firewalls. This presentation will dig into these techniques and explain the basics. The idea of an open source malware analysis and research community will be explored. All the things the Anti-Virus vendors don't want you to know will be discussed. Methods for bypassing malware's security systems will be presented. These methods include detecting and defeating packers/encoders, hiding the debugger from the malware, and protecting analysis virtual machines. We will hack the malware. 
 		* [Writing malware while the blue team is staring at you - Mubix "Rob" Fuller(Derbycon2016)](https://www.irongeek.com/i.php?page=videos/derbycon6/103-writing-malware-while-the-blue-team-is-staring-at-you-mubix-rob-fuller)
 		* [Pages from a sword-maker’s notebook - Vyrus(SHELLCON 2017)](https://www.youtube.com/watch?v=2-zos1EAvNY&list=PL7D3STHEa66R0nWbixrTo3O7haiMmA71T&index=4&t=0s)
 			* This talk is an encapsulation of implemented solutions for achieving common requirements when constructing software designed to perform long term covert intelligence gathering. It is a “grab bag” of “tips and tricks” developed and or abstracted from previous works by the presenter in a variety of intelligence gathering operations, none of which will be specifically disclosed. Full source code (almost all of it written in Golang) will be provided for tactic snippets, as well as several publicly available practical examples of solutions to various covert intelligence gathering roadblocks.  The technical details of this presentation will be prefaced by a small summery of “which tactics work from a methodical perspective and why” from a human perspective. Beyond this, specific mappings will be drawn from these methods to the specific technical capabilities disclosed in the latter portion of the presentation. The technical subjects in question will include but not be limited to. – anti virus evasion (with special emphasis on modern machine learning based solutions) – anti attribution techniques – covert channel methods – C2 “castle guarding” – covert administration & devops – solution scaling – persistence – future proofing – counter intelligence / anti reverse engineering.
@@ -1636,37 +1651,97 @@
 			* [Code](https://github.com/jlospinoso/cpp-implant)
 	* **Simple Samples**
 		* [TCP Bind Shell Shellcode - Metasploit Framework](https://github.com/rapid7/metasploit-framework/blob/master/external/source/shellcode/windows/x86/src/block/block_bind_tcp.asm)
-	* **Anti-RE/Debug**<a name="antire"></a>
+* **Anti-Tricks**<a name="antitricks"></a>
+	* **Anti-Debug**<a name="antidbg"></a>
 		* **Articles/Blogposts/Writeups**
+			* [Windows Anti-Debug Reference - Nicholas Falliere(2007)](https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=230d68b2-c80f-4436-9c09-ff84d049da33&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments)
 			* [Tricks used by malware authors to protect their malicious code from detection - Avi Lamay(2018)](https://deceptivebytes.com/2018/07/09/tricks-used-by-malware-authors-to-protect-their-malicious-code-from-detection/)
+			* [Anti Debugging Protection Techniques with Examples - Oleg Kulchytskyy, Anton Kukoba(2021)](https://www.apriorit.com/dev-blog/367-anti-reverse-engineering-protection-techniques-to-use-before-releasing-software)
 		* **Papers**
+			* [The "Ultimate" Anti-Debugging Reference - Peter Ferrie(2011)](http://pferrie.epizy.com/papers/antidebug.pdf?i=1)
+				* [Archive Link](https://web.archive.org/web/20191114080821/http://pferrie.host22.com/papers/antidebug.pdf)
 			* [Antiforensic techniques deployed by custom developed malware in evading anti-virus detection - Ivica Stipovic(2019)](https://arxiv.org/abs/1906.10625)
 		* **Presentations/Talks/Videos**
 			* [Introduction to Sandbox Evasion and AMSI Bypasses - BC-Security(2019)](https://github.com/BC-SECURITY/DEFCON27)
 		* **Tools**
+			* [Anti-Debug Tricks](https://github.com/CheckPointSW/Anti-Debug-DB)
+				* [Anti-Debug Tricks](https://anti-debug.checkpoint.com/)
+				* Anti-Debug encyclopedia contains methods used by malware to verify if they are executed under debugging. It includes the description of various anti-debug tricks, their implementation, and recommendations of how to mitigate the each trick.
 			* [CheckPlease](https://github.com/Arvanaghi/CheckPlease)
 			* [aegis](https://github.com/rafael-santiago/aegis)
 				* Aegis is a library that allows you detect if your software is being debugged or not on Linux, FreeBSD, NetBSD, OpenBSD and Windows. You can use it natively from C or use the Go bind.
 			* [Fake Sandbox Artifacts (FSA)](https://github.com/NavyTitanium/Fake-Sandbox-Artifacts)
 				* This script allows you to create various artifacts on a bare-metal Windows computer in an attempt to trick malwares that looks for VM or analysis tools
-			* [Pufferfish](https://github.com/dsnezhkov/pufferfish)
-				* The goal of this project is to create a way to utilize (userland) Sandbox checks into offensive workflow in a flexible, robust and opsec safe manner. Mainly, to address the decision making process of payload detonation in destination environment.
-		* **Sandbox Detection**<a name="sandbox"></a>
+			* [simpliFiRE.AntiRE - An Executable Collection of Anti-Reversing Techniques](https://bitbucket.org/fkie_cd_dare/simplifire.antire/src/master/)
+				* AntiRE is a collection of such anti analysis approaches, gathered from various sources like Peter Ferrie's The "Ultimate" Anti-Debugging Reference and Ange Albertini's corkami. While these techniques by themselves are nothing new, we believe that the integration of these tests in a single, executable file provides a comprehensive overview on these, suitable for directly studying their behaviour in a harmless context without additional efforts. AntiRE includes different techniques to detect or circumvent debuggers, fool execution tracing, and disable memory dumping. Furthermore, it can detect the presence of different virtualization environments and gives examples of techniques used to twarth static analysis.
+			* [Corkami](https://github.com/corkami)
+			* [Anti-DBG](https://github.com/HackOvert/AntiDBG)
+				* AntiDBG is a collection of Windows Anti Debugging techniques. The techniques are categorized by the methods they use to find a debugger.
+			* [Unprotect_Submission](https://github.com/fr0gger/Unprotect_Submission)
+			* [Anti-Debugging](https://github.com/ThomasThelen/Anti-Debugging)
+				* A collection of c++ programs that demonstrate common ways to detect the presence of an attached debugger.
+			* [antidebug](https://github.com/waleedassar/antidebug)
+				* Collection Of Anti-Debugging Tricks
+	* **Anti-RE**<a name="anti-re"></a>
+			* **Articles/Blogposts/Writeups**
+			* **Presentations/Talks/Videos**
+			* **Papers**
+				* ["Smart" trash: building of logic - pr0mix(2011)](https://vxug.fakedoma.in/archive/VxHeaven/lib/vpo01.html)
+					* "The main goal of garbage instructions - a hiding/protection of useful code (from av'ers, a watchful eye reverser and other curious). However, the "wrong" trash can lead to detection of viral code, thereby undermining all our efforts.  This text is about how to improve the quality of the generated garbage."
+			* **Tools**
+	* **Anti-Sandbox**<a name="antisandbox"></a>
+		* **Sandbox Detection**<a name="anti-sandbox"></a>
 			* **Articles/Blogposts/Writeups**
 				* [Sandbox evasion: Identifying Blue Teams - Víctor Calvo(2020)](https://www.securityartwork.es/2020/10/12/sandbox-evasion-identifying-blue-teams/)
 				* [Detecting VMware on 64-bit systems - Matteo Malvica(2021)](https://www.matteomalvica.com/blog/2018/12/05/detecting-vmware-on-64-bit-systems/)
 				* [Playing with GuLoader Anti-VM techniques - Carlos Rubio, Blueliv labs(2020)](https://www.blueliv.com/cyber-security-and-cyber-threat-intelligence-blog-blueliv/research/playing-with-guloader-anti-vm-techniques-malware/)
+			* [Evasion techniques - CheckPoint Research](https://evasions.checkpoint.com/)
+				* [Evasions Github](https://github.com/CheckPointSW/Evasions)
+				* "In this encyclopedia we have attempted to gather all the known ways to detect virtualized environment grouping them into big categories. Some categories are inactive on main page: it means that content will be added later. If it isn’t stated explicitly which operating system is described, Windows is meant by default."
 			* **Papers**
+				* [Sleeping Your Way out of the Sandbox - Hassan Mourad(2015)](https://www.sans.org/white-papers/35797/)
 				* [Spotless Sandboxes: Evading Malware AnalysisSystems using Wear-and-Tear Artifacts - Najmeh Miramirkhani, Mahathi Priya Appini, Nick Nikiforakis, Michalis Polychronakis(2017)](https://www3.cs.stonybrook.edu/~mikepo/papers/wearntear.sp17.pdf)
 					* We observe that as the fidelity and transparency of dynamicmalware analysis systems improves, malware authors can resortto other system characteristics that are indicative of artificialenvironments. We present a novel class of sandbox evasiontechniques that exploit the “wear and tear” that inevitably occurson real systems as a result of normal use. By moving beyond howrealistic a system looks like, to how realisticits past uselooks like,malware can effectively evade even sandboxes that do not exposeany instrumentation indicators, including bare-metal systems. Weinvestigate the feasibility of this evasion strategy by conductinga large-scale study of wear-and-tear artifacts collected from realuser devices and publicly available malware analysis services. Theresults of our evaluation are alarming: using simple decision treesderived from the analyzed data, malware can determine that asystem is an artificial environment and not a real user devicewith an accuracy of 92.86%. As a step towards defending againstwear-and-tear malware evasion, we develop statistical models thatcapture a system’s age and degree of use, which can be used toaid sandbox operators in creating system images that exhibit arealistic wear-and-tear state.
+				* [Stealthy and in-depth behavioral malware analysis with Zandbak - Tim van Dijk(2019)](https://www.ru.nl/publish/pages/769526/z6_timvandijk_masterthesis.pdf)
+					* "In this thesis, we present Zandbak: a malware analysis sandbox with in-depth analytical capabilities that defends against evasive techniques. Zandbak resides purely in kernel space, making it nearly undetectable to user space malware which does not have the necessary privileges to detect the presence of Zandbak. Furthermore, Zandbak has novel approaches and techniques to performing real-time stack walking, snapshotting and infection scope tracking. We describe the implementation of Zandbak in detail. We perform a series of experiments and a case study where we analyze an implant of the PlugX malware. With this, we demonstrate that Zandbak indeed bypasses anti-analysis techniques used in the wild and has the ability to perform in-depth analysis."
 			* **Presentations/Talks/Videos**
+				* [Countering Innovative Sandbox Evasion Techniques Used by Malware - Frederic Besler, Carsten Willems, and Ralf Hund(FIRST2017)]()
+					* [Slides](https://www.first.org/resources/papers/conf2017/Countering-Innovative-Sandbox-Evasion-Techniques-Used-by-Malware.pdf)
 				* [Operating System Fingerprinting for Virtual Machines - Nguyen Anh Quynh(Defcon18)](https://www.youtube.com/watch?v=wQvyu8oR14c)
 					* [Slides](https://www.defcon.org/images/defcon-18/dc-18-presentations/Quynh/DEFCON-18-Quynh-OS-Fingerprinting-VM.pdf)
 					* This paper analyzes the drawbacks of current OSF approaches against VM in the cloud, then introduces a novel method, named UFO, to fingerprint OS running inside VM. Our solution fixes all the above problems: Firstly, it can recognize all the available OS variants and (in lots of cases) exact OS versions with excellent accuracy, regardless of OS tweaking. Secondly, UFO is extremely fast. Last but not least, it is hypervisor-independent: we proved that by implementing UFO for Xen and Hyper-V.
 				* [Sandbox fingerprinting: Evadiendo entornos de análisis - Roberto Amado & Victor Calvo(RootedCon2020)](https://www.youtube.com/watch?v=AyVgIttiUpQ)
+					* This talk will therefore present the results of the study of the operation of different online automatic file analysis services in order to avoid them. In addition, this study is completed with different factors that try to identify which service is performing the analysis in order to better understand the tools of the defenders. In a complementary way, the possibility of identifying / attacking the analysts in charge of studying the threats will be exposed through vulnerabilities identified in the management panels of some sandboxes such as Virustotal and which were reported to the Google team. This last technique allows identifying which analyst or entity is analyzing the malicious sample. The audience will be able, from a Blue team point of view, to identify which aspects of their sandbox solutions should improve to avoid their evasion and, on the other hand, from a Red Team point of view, which control elements should be applied to their attack tools to avoid the greater part of these security solutions.
 			* **Tools**
 				* [wsb-detect](https://github.com/LloydLabs/wsb-detect)
 					* "wsb-detect enables you to detect if you are running in Windows Sandbox ("WSB"). The sandbox is used by Windows Defender for dynamic analysis, and commonly manually by security analysts and alike. At the tail end of 2019, Microsoft introduced a new feature named Windows Sandbox (WSB for short). The techniques used to fingerprint WSB are outlined below, in the techniques section."
+				* [Pufferfish](https://github.com/dsnezhkov/pufferfish)
+					* The goal of this project is to create a way to utilize (userland) Sandbox checks into offensive workflow in a flexible, robust and opsec safe manner. Mainly, to address the decision making process of payload detonation in destination environment.
+				* [Fake Sandbox Artifacts (FSA)](https://github.com/NavyTitanium/Fake-Sandbox-Artifacts)
+					* This script allows you to create various artifacts on a bare-metal Windows computer in an attempt to trick malwares that looks for VM or analysis tools
+				* [anti-analysis-tricks](https://github.com/ricardojrdez/anti-analysis-tricks)
+					* Bunch of techniques potentially used by malware to detect analysis environments
+				* [No_Sandboxes](https://github.com/Th4nat0s/No_Sandboxes)
+					* Test suite for bypassing Malware sandboxes.
+				* [anticuckoo](https://github.com/David-Reguera-Garcia-Dreg/anticuckoo)
+				* [al-khaser](https://github.com/LordNoteworthy/al-khaser)
+					* Public malware techniques used in the wild: Virtual Machine, Emulation, Debuggers, Sandbox detection.
+				* [InviZzzible](https://github.com/CheckPointSW/InviZzzible)
+					* "InviZzzible is a tool for assessment of your virtual environments in an easy and reliable way. It contains the most recent and up to date detection and evasion techniques as well as fixes for them."
+	* **Anti-VM**<a name="anti-vm"></a>
+		* **101**
+			* [Evasions](https://github.com/CheckPointSW/Evasions)
+				* "Evasions encyclopedia gathers methods used by malware to evade detection when run in virtualized environment. Methods are grouped into categories for ease of searching and understanding. Also provided are code samples, signature recommendations and countermeasures within each category for the described techniques."
+		* **Articles/Blogposts/Writeups**
+		* **Presentations/Talks/Videos**
+		* **Tools**
+		* **Tools**
+			* [Pafish](https://github.com/a0rtega/pafish)
+				* Pafish is a testing tool that uses different techniques to detect virtual machines and malware analysis environments in the same way that malware families do 
+			* [Detect-VM-and-Hypervisor](https://github.com/LazyAhora/Detect-VM-and-Hypervisor)
+				* Detect VM and Hypervisor
+			* [Virtual Machines Detection Enhanced](https://github.com/hfiref0x/VMDE)
+				* "Source from VMDE paper, adapted to 2015" + Pdf of paper
 	* **Bring-Your-Own-`*`**
 		* **Land(Compiler/Interpreter)**
 			* **Articles/Blogposts/Writeups**
@@ -1690,21 +1765,38 @@
 					* [Talk](https://www.youtube.com/embed/55234oZ0EDU)
 				* [WheresMyImplant](https://github.com/0xbadjuju/WheresMyImplant)
 					* A Bring Your Own Land Toolkit that Doubles as a WMI Provider 
-	* **Crypters**
+	* **Crypters**<a name="crypter"></a>
 		* **Articles/Blogposts/Writeups**
 			* [100% evasion - Write a crypter in any language to bypass AV - Xentropy(2020)](https://netsec.expert/2020/02/06/write-a-crypter-in-any-language.html)
+			* [Windows PE run-time encryption with Hyperion - Andrea Fortuna(2018)](https://www.andreafortuna.org/2018/01/26/windows-pe-run-time-encryption-with-hyperion/)
+			* [100% evasion - Write a crypter in any language to bypass AV - xentropy(2020)](https://netsec.expert/2020/02/06/write-a-crypter-in-any-language.html)
+		* **Papers**
+			* [Hyperion: Implementation of a PE-Crypter - Christian Ammann(2012)](https://raw.githubusercontent.com/nullsecuritynet/papers/master/nullsec-pe-crypter/nullsec-pe-crypter.pdf)
+				* "This paper reveals the theoretic aspects behind run-time crypters and describes a reference implementation for Portable Executables (PE) which is the windows file format for dynamic-link libraries (DLLs), object files and regular executables."
 		* **Samples**
 			* [Xencrypt](https://github.com/the-xentropy/xencrypt)
 				* A PowerShell script anti-virus evasion tool
+			* [hyperion](https://github.com/nullsecuritynet/tools/tree/master/binary/hyperion)
+				* Hyperion is a runtime encrypter for 32/64 bit portable executables. It is a reference implementation and bases on the paper "Hyperion: Implementation of a PE-Crypter".
 		* **Examples**
 			* [aes_dust](https://github.com/odzhan/aes_dust)
 				* Unlicensed tiny / small portable implementation of 128/256-bit AES encryption in C, x86, AMD64, ARM32 and ARM64 assembly
-	* **Obfuscation**
+	* **Cryptography**<a name="crypto"></a>
+		* **Tools**
+			* [aes_dust](https://github.com/odzhan/aes_dust)
+				* Unlicensed tiny / small portable implementation of 128/256-bit AES encryption in C, x86, AMD64, ARM32 and ARM64 assembly
+			* [Secure Compatible Encryption Examples](https://github.com/luke-park/SecureCompatibleEncryptionExamples)
+				* A collection of secure encryption examples for encrypting strings and binary data. 
+			* [Themis](https://github.com/cossacklabs/themis)
+				* Easy to use cryptographic framework for data protection: secure messaging with forward secrecy and secure data storage. Has unified APIs across 14 platforms.
+	* **Obfuscation**<a name="obfuscation"></a>
 		* **Articles/Blogposts/Writeups**
 			* [Building an Obfuscator to Evade Windows Defender - Samuel Wong(2020)](https://www.xanthus.io/post/building-an-obfuscator-to-evade-windows-defender)
 			* [Build your first LLVM Obfuscator - polarply(2020)](https://medium.com/@polarply/build-your-first-llvm-obfuscator-80d16583392b)
 				* In this post we will briefly present LLVM, discuss popular obfuscation approaches and their shortcomings and build our own epic LLVM-based string obfuscator.
 				* [Code](https://github.com/tsarpaul/llvm-string-obfuscator)
+			* [Evading Detection: A Beginner's Guide to Obfuscation](https://github.com/BC-SECURITY/Beginners-Guide-to-Obfuscation)
+				* "This is a hands-on class to learn the methodology behind malware delivery and avoiding detection. This workshop explores the inner workings of Microsoft's Antimalware Scan Interface (AMSI), Windows Defender, and Event Tracing for Windows (ETW). We will learn how to employ obfuscated malware using Visual Basic (VB), PowerShell, and C# to avoid Microsoft's defenses. Students will learn to build AMSI bypass techniques, obfuscate payloads from dynamic and static signature detection methods, and learn about alternative network evasion methods."
 		* **Talks/Presentations/Videos**
 			* [Binary Obfuscation from the Top-Down: Obfuscating Executables Without Writing Assembly - Sean "Frank^2(Defcon17)](https://www.youtube.com/watch?v=iva16Bg5imQ)
 				* [Slides](https://www.defcon.org/images/defcon-17/dc-17-presentations/defcon-17-sean_taylor-binary_obfuscation.pdf)
@@ -1724,269 +1816,302 @@
 			* [GG-AESY](https://github.com/jfmaes/GG-AESY)
 				* [Article](https://redteamer.tips/introducing-gg-aesy-a-stegocryptor/)
 				* Hide cool stuff in images :)
+	* **Meta/Poly-Morphism**<a name="metapoly"></a>
+		* **101**
+			* [Metamorphism and permutation: feel the difference - Z0mbie](https://vxug.fakedoma.in/archive/VxHeaven/lib/vzo24.html)
+		* **Articles/Blogposts/Writeups**
+			* [Metamorphism in practice or "How I made MetaPHOR and what I've learnt" - The Mental Driller(2002)](https://vxug.fakedoma.in/archive/VxHeaven/lib/vmd01.html)
+			* [Whitecomet-Research](https://github.com/PoCInnovation/Whitecomet-Research)
+				* Research on malware creation and protection
+			* [BMP / x86 Polyglot - Spencer(2016)](https://warroom.rsmus.com/bmp-x86-polyglot/)
+		* **Talks/Presentations/Videos**
+			* [Antivirus Evasion through Antigenic Variation (Why the Blacklisting Approach to AV is Broken) - Trenton Ivey, Neal Bridges(Derbycon 2013)](https://www.irongeek.com/i.php?page=videos/derbycon3/4108-antivirus-evasion-through-antigenic-variation-why-the-blacklisting-approach-to-av-is-broken-trenton-iveyneal-bridges)
+				* Think of the last time you got sick. Your immune system is an amazing piece of machinery, but every now and then, something gets past it. Antivirus evasion techniques can become more effective when modeled after infectious diseases. This talk highlights many of the antivirus evasion techniques in use today. Going further, this talk shows how genetic algorithms can quickly and repeatedly “evolve” code to evade many malicious code detection techniques in use today.
+			* **Papers**
+			* **Tools**
+				* [Enneos](https://github.com/hoodoer/ENNEoS)
+					* Evolutionary Neural Network Encoder of Shenanigans. Obfuscating shellcode with an encoder that uses genetic algorithms to evolve neural networks to contain and output the shellcode on demand.
+				* [MorphAES](https://github.com/cryptolok/MorphAES)
+					* MorphAES is the world's first polymorphic shellcode engine, with metamorphic properties and capability to bypass sandboxes, which makes it undetectable for an IDPS, it's cross-platform as well and library-independent.
+				* [Fetch-n-Exec](https://github.com/x0reaxeax/Fetch-n-Exec)
+					* The idea behind this one is to fetch opcodes and data from a remote server to rewrite the binary with during runtime. Except this time, we go x64 and -nostdlib, so everything will be done using syscalls and a few helper buddies from x0lib.
 	* **USB**
 		* [libusb](https://github.com/libusb/libusb)
 			* libusb is a library for USB device access from Linux, macOS, Windows, OpenBSD/NetBSD, Haiku and Solaris userspace.
-	* **Publishing**
-		* **Linux**
-			* [fpm](https://github.com/jordansissel/fpm)
-				*  Effing package management! Build packages for multiple platforms (deb, rpm, etc) with great ease and sanity. 
-		* **Windows**
-			* **Converting an .exe to an .msi**
-				* [Exe to MSI Converter](http://www.exetomsi.com/)
-				* [EMCO MSI Package Builder](https://emcosoftware.com/msi-package-builder)
-	* **Language Specific**
-		* **Basic**
-		* **C**
-			* **Binary Files**
-				* [LIEF](https://github.com/lief-project/LIEF)
-					* LIEF - Library to Instrument Executable Formats. The purpose of this project is to provide a cross platform library which can parse, modify and abstract ELF, PE and MachO formats.
-				* [Binary Loaders(C)](https://github.com/malisal/loaders)
-					* This repo is about small, self-contained implementations of various binary formats loaders (Macho on OSX, ELF on Linux/`*BSD` and PE on Windows). The rationale for these libraries is the following: You wrote an exploit and achieved arbitrary code execution. Now what? These loaders enable you to load and execute an arbitrary binary in your exploited process. The loaders are coded in a way that it's all done in memory, and they do not require access to system libraries/methods - it's all resolved on the fly. The Macho loader enables you to run bundle files, the ELF loader standard ELF files (no shared objects), and the PE loader enables you to run both DLLs and PE files alike.
-			* **Crypter/Obfuscator**
+* **General Evasion Stuff**<a name="evasion"></a>
+	* **Articles/Blogposts/Writeups**
+		* [How “Encrypted and Authenticated” Payload is Constructed - secfu.net](https://www.secfu.net/2020/06/28/how-encrypted-and-authenticated-payload-is-constructed/)
+		* [Hindering Threat Hunting, a tale of evasion in a restricted environment - Borja Merino(2020)](https://www.blackarrow.net/hindering-threat-hunting-a-tale-of-evasion-in-a-restricted-environment/)
+		* [Evadere Classifications - Jonathan Johnson(2021)](https://posts.specterops.io/evadere-classifications-8851a429c94b?gi=b4339934bff4)
+	* **Talks/Presentations/Videos**
+		* [Adventures in Asymmetric Warfare - Will Schroeder(BSides Augusta2014)](https://www.youtube.com/watch?v=53qQfCkVM_o)
+			* As a co-founder and principal developer of the Veil-Framework, the speaker has spent a considerable amount of time over the past year and a half researching AV-evasion techniques. This talk will briefly cover the problem space of antivirus detection, as well as the reaction to the initial release of Veil-Evasion, a tool for generating AV-evading executables that implements much of the speaker’s research. We will trace through the evolution of the obfuscation techniques utilized by Veil-Evasion’s generation methods, culminating in the release of an entirely new payload language class, as well as the release of a new ..NET encryptor. The talk will conclude with some basic static analysis of several Veil-Evasion payload families, showing once and for all that antivirus static signature detection is dead.
+	* **Tools**
+		* [HashDB](https://github.com/OALabs/hashdb)
+			* HashDB can be used as a stand alone hashing library, but it also feeds the HashDB Lookup Service run by OALabs. This service allows analysts to reverse hashes and retrieve hashed API names and string values.
+* **Publishing**<a name="ipub"></a>
+	* **Linux**
+		* [fpm](https://github.com/jordansissel/fpm)
+			*  Effing package management! Build packages for multiple platforms (deb, rpm, etc) with great ease and sanity. 
+	* **Windows**
+		* **Converting an .exe to an .msi**
+			* [Exe to MSI Converter](http://www.exetomsi.com/)
+			* [EMCO MSI Package Builder](https://emcosoftware.com/msi-package-builder)
+* **Language Specific**<a name="langspec"></a>
+	* **Basic**<a name="basiclang"></a>
+	* **C**<a name="clang"></a>
+		* **Binary Files**
+			* [LIEF](https://github.com/lief-project/LIEF)
+				* LIEF - Library to Instrument Executable Formats. The purpose of this project is to provide a cross platform library which can parse, modify and abstract ELF, PE and MachO formats.
+			* [Binary Loaders(C)](https://github.com/malisal/loaders)
+				* This repo is about small, self-contained implementations of various binary formats loaders (Macho on OSX, ELF on Linux/`*BSD` and PE on Windows). The rationale for these libraries is the following: You wrote an exploit and achieved arbitrary code execution. Now what? These loaders enable you to load and execute an arbitrary binary in your exploited process. The loaders are coded in a way that it's all done in memory, and they do not require access to system libraries/methods - it's all resolved on the fly. The Macho loader enables you to run bundle files, the ELF loader standard ELF files (no shared objects), and the PE loader enables you to run both DLLs and PE files alike.
+		* **Collection**
+			* [wcap](https://github.com/mmozeiko/wcap)
+				* Simple and efficient screen recording utility for Windows.
+		* **Crypter/Obfuscator**
+			* [avcleaner](https://github.com/scrt/avcleaner)
+				* C/C++ source obfuscator for antivirus bypass
+			* [tiny-AES-c](https://github.com/kokke/tiny-AES-c)
+				* Small portable AES128/192/256 in C
+		* **GUI**
+			* [LCUI](https://github.com/lc-soft/LCUI)
+				* A small C library for building user interfaces with C, XML and CSS.
+		* **Injection/Shellcode**
+			* [C-S1lentProcess1njector](https://github.com/s1egesystems/C-S1lentProcess1njector)
+				* Process Injector written in C that scans for target processes, once found decrypts RC4 encrypted shellcode and injects/executes in target process' space with little CPU & Memory usage. 
+		* **Networking**
+			* [c-ares](https://github.com/c-ares/c-ares)
+				* A C library for asynchronous DNS requests
+		* **Publishing**
+			* [tcc - Tiny C Compiler](https://bellard.org/tcc/)
+			* [cosmopolitan libc](https://justine.lol/cosmopolitan/index.html)
+				*  Cosmopolitan makes C a build-once run-anywhere language, similar to Java, except it doesn't require interpreters or virtual machines be installed beforehand. Cosmo provides the same portability benefits as high-level languages like Go and Rust, but it doesn't invent a new language and you won't need to configure a CI system to build separate binaries for each operating system. What Cosmopolitan focuses on is fixing C by decoupling it from platforms, so it can be pleasant to use for writing small unix programs that are easily distributed to a much broader audience.
+				* [Code](https://github.com/jart/cosmopolitan)
+		* **Samples/Examples**
+			* [PersistentCReverseShell](https://github.com/1captainnemo1/PersistentCReverseShell/blob/master/creverse.c)
+				*  A PERSISTENT FUD Backdoor ReverseShell coded in C for any Windows distro, that will make itself persistent on every BOOT and fire a decoy app in the foreground while connecting back to the attacker machine as a silent background process , spawning a POWERSHELL on the attacker machine. 
+			* [AQUARMOURY](https://github.com/slaeryan/AQUARMOURY)
+				* This is a tool suite consisting of miscellaneous offensive tooling aimed at red teamers/penetration testers to primarily aid in Defense Evasion TA0005;
+			* [revsh](https://github.com/emptymonkey/revsh)
+				* A reverse shell with terminal support, data tunneling, and advanced pivoting capabilities.
+		* **WebServer**
+		* **Other**
+	* **C++**<a name="cpp"></a>
+		* **Tradecraft**
+			* [Building C2 Implants in C++: A Primer - shogunlab(2020)](https://shogunlab.gitbook.io/building-c2-implants-in-cpp-a-primer/)
+		* **Binaries**
+			* [LIEF](https://github.com/lief-project/LIEF)
+				* LIEF - Library to Instrument Executable Formats. The purpose of this project is to provide a cross platform library which can parse, modify and abstract ELF, PE and MachO formats.
+		* **Examples/Samples**
+			* [serpentine](https://github.com/jafarlihi/serpentine)
+				* C++/Win32/Boost Windows RAT (Remote Administration Tool) with a multiplatform Java/Spring RESTful C2 server and Go, C++/Qt5 frontends
+			* [ghost](https://github.com/AHXR/ghost)
+			* [Source Code Files for Building C2 Implants in C++: A Primer](https://github.com/shogunlab/building-c2-implants-in-cpp)
+			* [UBoat HTTP](https://github.com/UBoat-Botnet/UBoat)
+				* A proof-of-concept HTTP Botnet designed to replicate a full weaponized commercial botnet.				* [cpp-implant](https://github.com/JLospinoso/cpp-implant)
+				*  A simple implant showcasing modern C++ 
+			* [revp](https://github.com/jafarlihi/revp)
+				* Reverse HTTP proxy that works on Linux, Windows, and macOS. Made with C++ and Boost. 
+			* [WSAAcceptBackdoor](https://github.com/EgeBalci/WSAAcceptBackdoor)
+				* This project is a POC implementation for a DLL implant that acts as a backdoor for accept Winsock API calls. Once the DLL is injected into the target process, every accept call is intercepted using the Microsoft's detour library and redirected into the BackdooredAccept function. When a socket connection with a pre-defined special source port is establised, BackdooredAccept function launches a cmd.exe process and binds the accepted socket to the process STD(OUT/IN) using a named pipe.
+			* [RTO-Implant](https://github.com/jhackz/RTO-Implant)
+				* This is an overview of my RTO-Implant from the Malware Development Essentials Course by @Sektor7Net
+			* [TinyNuke](https://github.com/rossja/TinyNuke)
+				*  zeus-style banking trojan 
+			* [Keylogger](https://github.com/EgeBalci/Keylogger)
+				* Simple C++ Keylogger...
+			* [Callidus](https://github.com/3xpl01tc0d3r/Callidus)
+				* [Blogpost](https://3xpl01tc0d3r.blogspot.com/2020/03/introduction-to-callidus.html)
+				* Latin word for “sneaky” is called “Callidus”. It is developed for learning and improving my knowledge about developing custom toolset in C# and learning how to leverage cloud services for the benefit of the user. It is developed using .net core framework in C# language. Allows operators to leverage O365 services for establishing command & control communication channel. It usages Microsoft Graph APIs for communicating with O365 services.
+		* **Crypter/Obfuscator**
+			* **Articles**
+				* [C++ Runtime Crypter - ConnorPatterson(2017)](https://www.codeproject.com/Articles/1174823/Cplusplus-Runtime-Crypter)
+					* Tutorial on the structure of writing a runtime crypter in C++
+				* [Code segment encryption - Emeric Nasi(2014)](http://blog.sevagas.com/?Code-segment-encryption)
+			* **Tools/Libraries**
 				* [avcleaner](https://github.com/scrt/avcleaner)
 					* C/C++ source obfuscator for antivirus bypass
-				* [tiny-AES-c](https://github.com/kokke/tiny-AES-c)
-					* Small portable AES128/192/256 in C
-			* **GUI**
-				* [LCUI](https://github.com/lc-soft/LCUI)
-					* A small C library for building user interfaces with C, XML and CSS.
-			* **Injection/Shellcode**
-				* [C-S1lentProcess1njector](https://github.com/s1egesystems/C-S1lentProcess1njector)
-					* Process Injector written in C that scans for target processes, once found decrypts RC4 encrypted shellcode and injects/executes in target process' space with little CPU & Memory usage. 
-			* **Networking**
-				* [c-ares](https://github.com/c-ares/c-ares)
-					* A C library for asynchronous DNS requests
-			* **Publishing**
-				* [tcc - Tiny C Compiler](https://bellard.org/tcc/)
-				* [cosmopolitan libc](https://justine.lol/cosmopolitan/index.html)
-					*  Cosmopolitan makes C a build-once run-anywhere language, similar to Java, except it doesn't require interpreters or virtual machines be installed beforehand. Cosmo provides the same portability benefits as high-level languages like Go and Rust, but it doesn't invent a new language and you won't need to configure a CI system to build separate binaries for each operating system. What Cosmopolitan focuses on is fixing C by decoupling it from platforms, so it can be pleasant to use for writing small unix programs that are easily distributed to a much broader audience.
-					* [Code](https://github.com/jart/cosmopolitan)
-			* **Samples/Examples**
-				* [PersistentCReverseShell](https://github.com/1captainnemo1/PersistentCReverseShell/blob/master/creverse.c)
-					*  A PERSISTENT FUD Backdoor ReverseShell coded in C for any Windows distro, that will make itself persistent on every BOOT and fire a decoy app in the foreground while connecting back to the attacker machine as a silent background process , spawning a POWERSHELL on the attacker machine. 
-				* [AQUARMOURY](https://github.com/slaeryan/AQUARMOURY)
-					* This is a tool suite consisting of miscellaneous offensive tooling aimed at red teamers/penetration testers to primarily aid in Defense Evasion TA0005;
-				* [revsh](https://github.com/emptymonkey/revsh)
-					* A reverse shell with terminal support, data tunneling, and advanced pivoting capabilities.
-			* **WebServer**
-			* **Other**
-		* **C++**
-			* **Tradecraft**
-				* [Building C2 Implants in C++: A Primer - shogunlab(2020)](https://shogunlab.gitbook.io/building-c2-implants-in-cpp-a-primer/)
-			* **Binaries**
-				* [LIEF](https://github.com/lief-project/LIEF)
-					* LIEF - Library to Instrument Executable Formats. The purpose of this project is to provide a cross platform library which can parse, modify and abstract ELF, PE and MachO formats.
-			* **Examples/Samples**
-				* [serpentine](https://github.com/jafarlihi/serpentine)
-					* C++/Win32/Boost Windows RAT (Remote Administration Tool) with a multiplatform Java/Spring RESTful C2 server and Go, C++/Qt5 frontends
-				* [ghost](https://github.com/AHXR/ghost)
-				* [Source Code Files for Building C2 Implants in C++: A Primer](https://github.com/shogunlab/building-c2-implants-in-cpp)
-				* [UBoat HTTP](https://github.com/UBoat-Botnet/UBoat)
-					* A proof-of-concept HTTP Botnet designed to replicate a full weaponized commercial botnet.
-				* [cpp-implant](https://github.com/JLospinoso/cpp-implant)
-					*  A simple implant showcasing modern C++ 
-				* [revp](https://github.com/jafarlihi/revp)
-					* Reverse HTTP proxy that works on Linux, Windows, and macOS. Made with C++ and Boost. 
-				* [WSAAcceptBackdoor](https://github.com/EgeBalci/WSAAcceptBackdoor)
-					* This project is a POC implementation for a DLL implant that acts as a backdoor for accept Winsock API calls. Once the DLL is injected into the target process, every accept call is intercepted using the Microsoft's detour library and redirected into the BackdooredAccept function. When a socket connection with a pre-defined special source port is establised, BackdooredAccept function launches a cmd.exe process and binds the accepted socket to the process STD(OUT/IN) using a named pipe.
-				* [RTO-Implant](https://github.com/jhackz/RTO-Implant)
-					* This is an overview of my RTO-Implant from the Malware Development Essentials Course by @Sektor7Net
-				* [TinyNuke](https://github.com/rossja/TinyNuke)
-					*  zeus-style banking trojan 
-				* [Keylogger](https://github.com/EgeBalci/Keylogger)
-					* Simple C++ Keylogger...
-				* [Callidus](https://github.com/3xpl01tc0d3r/Callidus)
-					* [Blogpost](https://3xpl01tc0d3r.blogspot.com/2020/03/introduction-to-callidus.html)
-					* Latin word for “sneaky” is called “Callidus”. It is developed for learning and improving my knowledge about developing custom toolset in C# and learning how to leverage cloud services for the benefit of the user. It is developed using .net core framework in C# language. Allows operators to leverage O365 services for establishing command & control communication channel. It usages Microsoft Graph APIs for communicating with O365 services.
-			* **Crypter/Obfuscator**
-				* **Articles**
-					* [C++ Runtime Crypter - ConnorPatterson(2017)](https://www.codeproject.com/Articles/1174823/Cplusplus-Runtime-Crypter)
-						* Tutorial on the structure of writing a runtime crypter in C++
-					* [Code segment encryption - Emeric Nasi(2014)](http://blog.sevagas.com/?Code-segment-encryption)
-				* **Tools/Libraries**
-					* [avcleaner](https://github.com/scrt/avcleaner)
-						* C/C++ source obfuscator for antivirus bypass
-					* [Simple-XTEA-Crypter](https://github.com/NateBrune/Simple-XTEA-Crypter)
-						* Simple runtime crypter in C++.
-					* [ADVobfuscator](https://github.com/andrivet/ADVobfuscator)
-						* ADVobfuscator demonstates how to use C++11/14 language to generate, at compile time, obfuscated code without using any external tool and without modifying the compiler. The technics presented rely only on C++11/14, as standardized by ISO. It shows also how to introduce some form of randomness to generate polymorphic code and it gives some concrete examples like the encryption of strings literals and the obfuscation of calls using finite state machines.
-					* [Obfuscate](https://github.com/adamyaxley/Obfuscate)
-						* Guaranteed compile-time string literal obfuscation header-only library for C++14.
-			* **Networking**
-				* [liblacewing](https://github.com/udp/lacewing)
-					* liblacewing is a library for writing cross-platform, networked applications in C/C++.
-			* **PE32**
-				* [libpebliss](https://github.com/imag0r/libpebliss)
-					* Cross-Platform PE(Portable Executable) Manipulating Library
-			* **Shellcode/Injection**
-				* **Articles**
-					* [Shellcode Techniques in C++ - Topher Timzen(2015)](https://www.tophertimzen.com/blog/shellcodeTechniquesCPP/)
-				* **Tools/Libraries**
-					* [netstub](https://github.com/freesoul/netstub)
-						* Create a C++ PE which loads an XTEA-crypted .NET PE shellcode in memory.
-					* [Shellcode Compiler](https://github.com/nytrorst/shellcodecompiler)
-						* Shellcode Compiler is a program that compiles C/C++ style code into a small, position-independent and NULL-free shellcode for Windows (x86 and x64) and Linux (x86 and x64). It is possible to call any Windows API function or Linux syscall in a user-friendly way.
-					* [CodeInjection](https://github.com/revsic/CodeInjection)
-						* Code Injection technique written in cpp language
-			* **Unhooking**
-				* [Firewalker](https://github.com/mdsecactivebreach/firewalker)
-					* This repo contains a simple library which can be used to add FireWalker hook bypass capabilities to existing code;
-			* **WebServer**
-				* [civeweb](https://github.com/civetweb/civetweb)
-					* Embedded C/C++ web server
-			* **Other**
-				* [cpp_vs_payload_template](https://github.com/0xC0D1F1ED/cpp_vs_payload_template)
-					* Visual Studio (C++) Solution Template for Payloads
-			* **Windows**
-				* [Windows Process Hacking Library](https://github.com/0xZ0F/CPPMemory)
-					* Code that can be used as a reference, library, or inspiration for hacking Windows memory.
-			* **Virtual calls**
-				* [Devirtualization in C++, part 1 -Honza Hubička(2014)](https://hubicka.blogspot.com/2014/01/devirtualization-in-c-part-1.html)
-		* **C#**<a name="csharppay"></a>
-			* **101**
-				* [A tour of the C# language - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
-					* C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. 
-			* **Learning**
-				* [Get started with C# - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/)
-				* [Inside a C# program - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/)
-					* The section discusses the general structure of a C# program, and includes the standard "Hello, World!" example.
-				* [C# 101 - Channel9 MSDN](https://channel9.msdn.com/Series/CSharp-101)
-			* **Reflection**
-				* [Security Considerations for Reflection - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/security-considerations-for-reflection)
-				* [Securing the loading of dynamic code - F-Secure(2016)](https://labs.f-secure.com/archive/securing-the-loading-of-dynamic-code/)
-				* [Use reflection to list a class’s properties in C# - Rod Stephens(2018)](http://csharphelper.com/blog/2018/02/use-reflection-to-list-a-classs-properties-in-c/)	
-				* [.NET Reflection and Disposable AppDomains - Rasta Mouse(2021)](https://rastamouse.me/net-reflection-and-disposable-appdomains/)
-			* **Scripting/ClearScript**
-				* [ClearScript](https://github.com/microsoft/ClearScript)
-					* A library for adding scripting to .NET applications. Supports V8 (Windows, Linux, macOS) and JScript/VBScript (Windows). 
-				* [ClearScript FAQtorial](https://microsoft.github.io/ClearScript/Tutorial/FAQtorial)
-				* [Cutting Edge : A Look at ClearScript - Dino Esposito(2014 docs.ms)](https://docs.microsoft.com/en-us/archive/msdn-magazine/2014/september/cutting-edge-a-look-at-clearscript)
-			* **Internals**
-				* [Ninja Patching .NET - Jon McCoy(Dojocon2010)](https://web.archive.org/web/20170321162306/http://www.irongeek.com/i.php?page=videos/dojocon-2010-videos#Ninja%20Patching%20.NET)
-					* [Youtube](https://www.youtube.com/watch?v=3jit5unJzys)
-				* [Hacking .NET Applications at Runtime: A Dynamic Attack - Jon McCoy(Defcon18)](https://web.archive.org/web/20191203175515/https://www.defcon.org/html/defcon-18/dc-18-speakers.html#McCoy)
-					* [Slides](https://www.defcon.org/images/defcon-19/dc-19-presentations/McCoy/DEFCON-19-McCoy-Hacking-Net.pdf)
-				* [Attacking .Net at Runtime - Jonathan McCoy(2013)](https://web.archive.org/web/20181028060806/http://www.digitalbodyguard.com/Papers/Attacking%20.Net%20at%20Runtime.pdf)
-					* This paper will introduce methodology forattacking  .NET programs at runtime. Thisattack will grant control over the targetsvariables, core logic, and the GUI. Thisattack is implemented with .NET code,and is heavily based on reflection. 
-				* [.NET Method Internals - Common Intermediate Language (CIL) Basics - @mattifestation(2014)](http://www.exploit-monday.com/2014/07/dotNETMethodInternals.html)
-				* [Acquiring .NET Objects from the Managed Heap - Topher Timzen(2015)](https://www.tophertimzen.com/resources/grayStorm/AcquiringDotNetObjectsFromTheManagedHeap.pdf)
-					* This paper will describe how to use any instantiated objectin the .NET CLR managed heap as if it were declared locally.It will be shown that by referencing object pointers fromthe managed heap, an attacker control objects being used inan application. Reflective techniques will be discussed and asignature will be introduced to find any object on the managedheap
-				* [Attacking Microsoft’s .NET Framework Through CLR - Yu Hong, Shikang Xing(HITB2018AMS)](https://conference.hitb.org/hitbsecconf2018ams/sessions/attacking-microsofts-net-framework-through-clr/)
-					* In this talk, we first introduce managed execution environment and managed code under .NET Framework and discuss the security weaknesses of this code execution method . After that, we show a exploit for SQL Server through CLR and our automated tools for this exploitation. We will introduce a backdoor with administrator privilege based on CLR hijacking arbitrary .NET Applications.
-				* [.NET Malware Threat: Internals and Reversing - Alexandre Borges(Defcon2019)](http://www.blackstormsecurity.com/docs/ALEXANDREBORGES_DEFCON_2019.pdf)
-				* [Hijacking .NET to Defend PowerShell - Amanda Rosseau](https://arxiv.org/pdf/1709.07508.pdf)
-					* Abstract—With the rise of attacks using PowerShell in the recent months, there has not been a comprehensive solution for monitoring or prevention. Microsoft recently released the AMSI solution for PowerShell v5, however this can also be bypassed. This paper focuses on repurposing various stealthy runtime .NET hijacking techniques implemented for PowerShell attacks for defensive monitoring of PowerShell. It begins with a brief introduction to .NET and PowerShell, followed by a deeper explanation of various attacker techniques, which is explained from the perspective of the defender, including assembly modification, class and method injection, compiler profiling, and C based function hooking. Of the four attacker techniques that are repurposed for defensive real-time monitoring of PowerShell execution, intermediate language binary modification, JIT hooking, and machine code manipulation provide the best results for stealthy run-time interfaces for PowerShell scripting analysis		
-				* [How .NET executables are loaded - repnz(2019)](https://repnz.github.io/posts/dotnet-executable-load/)
-				* [Common Language Runtime: Who? why? how? - Mez0](https://mez0.cc/posts/common-language-runtime-1/)
-				* [Common Language Runtime 2: In memory execution - Mez0](https://mez0.cc/posts/common-language-runtime-2/)
-			* **Managed vs Unmanaged code**
-				* [What is "managed code"? - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/managed-code)
-					* When working with .NET Framework, you will often encounter the term "managed code". This document will explain what this term means and additional information around it.
-			* **Papers**
-				* [Reflection’s Hidden Power: “Modifying Programs at Run-Time”](https://web.archive.org/web/20171208224139/http://www.digitalbodyguard.com/Papers/ReflectionsHiddenPower.pdf)
-					* This paper will demonstrate using Reflection to take control over a DotNet (.Net)compiled code. The focus of this paper will be on how to use Reflection to navigate and gainaccess to values and functionality that would normally be off limits. This paper will be gearedfor any DotNet programmer (focus will be in C#). No special knowledge of Reflection isnecessary. The basic concept of Reflection and DotNet will be given, along with some lighttraining on using reflection. This paper is written for the DotNet v2.0 and v3.5 versions ofDotNet. Examples will be given on attacks, like forcing a program to change values and executefunctionality
-				* [ASM in .NET: The old is new again - Jon McCoy(2015)](https://web.archive.org/web/20170829012346/http://www.digitalbodyguard.com/Papers/ASM%20in%20.NET-The%20old%20is%20new%20again.pdf)
-					* This paper will cover running raw Machine Code(ASM) from within .NET. As we all know .NET runson IL(Intermediate Language) also known as “Managed byte code”. A program can declare an unsafesection of code and drop out from the managed area to run something like unmanaged C++ or the like.This paper will show how to run raw/unmanaged ASM in a normal safe C# application.
-			* **Articles/Blogposts/Writeups**
-				* [An Introduction to Writing .NET Executables for Pentesters](https://www.peew.pw/blog/2017/11/24/an-introduction-to-writing-net-executables-for-pentesters)
-				* [Changeling - A Feature Morphing Creature - Adam Brown](https://coffeegist.com/security/changeling-a-feature-morphing-creature/)
-					* The feature that we’ll be taking a look at today is Embedded Resources in C# projects. This is a feature that will allow us to compile code once, and reuse it on multiple assessments			
-				* [How to Execute a Command in C# ? - Sandeep Aparajit(2008)](https://www.codeproject.com/Articles/25983/How-to-Execute-a-Command-in-C)
-			* **Talks/Presentations/Videos**
-				* [Quick Retooling in .Net for Red Teams - Dimitry Snezhkov(CircleCityCon2018](https://www.irongeek.com/i.php?page=videos/circlecitycon2018/circle-city-con-50-112-quick-retooling-in-net-for-red-teams-dimitry-snezhkov)
-					* Quick Retooling in .Net for Red Teams PowerShell gave us a super-highway of convenient building blocks for offensive toolkits and operational automation. However, use of standalone .Net implants may be a desirable option in cases where PowerShell is heavily inspected and logged. While there are great toolkits to invoke unmanaged PowerShell or directly interface with .Net CLR - they are also statically compiled, and therefore easier identified by the defense. Red Teams are faced with specific challenges when they need to retool quickly in the field with .Net payloads. Can .Net toolkits accomplish their goals while maintaining flexibility, quick in-field retooling and operational security in the face of current detection mechanisms? We think so. This talk walks through some of the options present to the operators for .Net code compilation and presents ideas for extensibility of .Net tools at runtime, with the help of Dynamic Language Runtime (DLR). We will dive deeper into operational security lessons learned from dynamic code compilation. We will attempt to move beyond static nature of .Net assemblies into reflective DLR, achieving on-the-fly access to native Windows API. We will also discuss some methods of hiding sensitive aspects of execution in managed code memory. We will also touch on ways to help Defense fingerprint the attacks involving dynamic compilation of .Net assemblies, use of DLR and building blocks of offensive tooling involved in the process. A concept tool built on these ideas will be presented and released. It will be used as basis for our discussion.
-				* [Building an Empire with (Iron)Python - Jim Shaver(Derbycon2018)](https://www.irongeek.com/i.php?page=videos/derbycon8/track-1-06-building-an-empire-with-ironpython-jim-shaver)
-					* This talk discusses porting Python payloads to Windows using a little known, former Microsoft project. It explores offensive uses of .Net and how to reduce attack surface on .Net payloads.
-				* [Staying # and Bringing Covert Injection Tradecraft to .NET - Ruben Boonen, The Wover(2020)](https://raw.githubusercontent.com/FuzzySecurity/BlueHatIL-2020/master/Ruben%20Boonen%20%26%20TheWover%20-%20BHIL2020_Staying%23_v0.4.pdf)
-				* [.NET Core for Malware – Ryan Cobb (SO-CON 2020)](https://www.youtube.com/watch?v=woRfx5D2Y9Y&list=PLJK0fZNGiFU-2vFpjnt96j_VSuQVTkAnO&index=10)
-					* .NET Core is the future of .NET. The Windows-only .NET Framework is on it's way out, and the cross-platform .NET Core is Microsoft's new flagship framework for building software. As red teamers, it's time to go back to the well of .NET as a host for implants and post-exploitation. In this talk, we will analyze the opportunities presented by the new .NET Core platform and practical examples to take advantage of them.
-				* [Modern Red Team Weaponization - Mike Felch(WWHF Deadwood 2020)](https://www.youtube.com/watch?v=5W-Nlkh6nhg)
-					* In an effort to seamlessly equip operators and reduce leaving breadcrumbs, this presentation will walk through methods for modern red team weaponization of offsec tooling. First we will step through the build process which will include automated builds, continuous integration/deployment, and C2 framework integration. Next, we will step through OPSEC considerations for payloads and tooling in an effort to reduce the breadcrumbs being left behind from assemblies. Finally, we will take a look at payload tradecraft for calling managed code (C# tooling) from unmanaged C++ (stub/launchers), low-level syscalls using C#, and code execution leveraging the Windows kernel.
-				* [Getting Started in Covert .NET Tradecraft for Post-Exploitation – Kyle Avery(2021)](https://www.youtube.com/watch?v=g27DorVva3M)
-					* This Black Hills Information Security (BHIS) webcast will cover OPSEC safe fork-n-run execution with Cobalt Strike, .NET log sources available to network defenders and security vendors, and obfuscation of public C# tools to evade EDR products consistently. If you're curious why penetration testers, red teamers, and even real threat actors prefer C# over PowerShell for post-exploitation, come find out how you can more effectively use these tools in secure environments.
-				* [WWHF (Virtual): DOT NET Advanced Malware Development - Joff Thyer(2020)](https://www.youtube.com/watch?v=8lk6VhmlhoI&list=PLXF21PFPPXTPwX8mccVIQB5THhU_paWmN&index=29)
-					* This talk will walk through how a penetration tester can use the C# language to develop a DOT NET assembly (DLL) designed to deliver shellcode into memory on a Windows system.  The talk will cover aspects of the necessary API calls into kernel32.dll, and describe how to build an MSBUILD XML file in order to evade whitelisting solutions.  Attendees of the talk should preferably have some familiarity with the C# programming language.  Techniques mentioned will include shellcode residing in the same thread, versus injecting into a remote process.
-			* **Examples/Samples**
-				* [Writing custom backdoor payloads using C# - Mauricio Velazco, Olindo Verrillo(Defcon27)](https://github.com/mvelazc0/defcon27_csharp_workshop)
-				* [Vayne-RaT](https://github.com/TheM4hd1/Vayne-RaT)
-					* An Advanced C# .NET Rat, It’s Stable and Contains Many Features.
-				* [CIMplant](https://github.com/FortyNorthSecurity/CIMplant)
-					* C# port of WMImplant which uses either CIM or WMI to query remote systems. It can use provided credentials or the current user's session.
-				* [MonkeyWorks](https://github.com/NetSPI/MonkeyWorks)
-					* A C# library to facilitate the development of offensive tools against Windows systems.
-				* [QuasarRAT](https://github.com/quasar/QuasarRAT)
-					* Quasar is a fast and light-weight remote administration tool coded in C#. Providing high stability and an easy-to-use user interface, Quasar is the perfect remote administration solution for you.
-				* [RedPeanut](https://github.com/b4rtik/RedPeanut)
-					* RedPeanut is a small RAT developed in .Net Core 2 and its agent in .Net 3.5 / 4.0.
-			* **_Other_ Stuff**<a name="csharpother"></a>
-			* **General**
-				* [SharpSploit](https://github.com/cobbr/SharpSploit)
-					* SharpSploit is a .NET post-exploitation library written in C# that aims to highlight the attack surface of .NET and make the use of offensive .NET easier for red teamers.
-				* [SharpUtils](https://github.com/IllidanS4/SharpUtils)
-				* [GhostPack](https://github.com/GhostPack)
-				* [Sharp-Suite](https://github.com/FuzzySecurity/Sharp-Suite)
-					* FuzzySecurity: 'My musings with C#'
-				* [OffensiveCSharp-matterpreter](https://github.com/matterpreter/OffensiveCSharp)
-					* This is a collection of C# tooling and POCs I've created for use on operations. Each project is designed to use no external libraries. Open each project's .SLN in Visual Studio and compile as "Release".
-				* [bytecode-api](https://github.com/bytecode77/bytecode-api)
-					* C# library with common classes, extensions and additional features in addition to the .NET Framework. BytecodeApi implements lots of extensions and classes for general purpose use. In addition, specific classes implement more complex logic for both general app development as well as for WPF apps. Especially, boilerplate code that is known to be part of any Core DLL in a C# project is likely to be already here. In fact, I use this library in many of my own projects. For this reason, each class and method has been reviewed numerous times. BytecodeApi is highly consistent, particularly in terms of structure, naming conventions, patterns, etc. The entire code style resembles the patterns used in the .NET Framework itself. You will find it intuitive to understand.
-				* [OutlookToolbox](https://github.com/ThunderGunExpress/OutlookToolbox)
-					* OutlookToolbox is a C# DLL that uses COM to do stuff with Outlook. Also included is a Cobalt Strike aggressor script that uses Outlooktoolbox.dll to give it a graphical and control interface.
-					* [Blogpost](https://ijustwannared.team/2017/10/28/outlooktoolbox/)
-				* [OffensiveDLR](https://github.com/byt3bl33d3r/OffensiveDLR)
-					* Toolbox containing research notes & PoC code for weaponizing .NET's DLR
-				* [RedTeamCSharpScripts -  Mr-Un1k0d3r](https://github.com/Mr-Un1k0d3r/RedTeamCSharpScripts)
-				* [CSharpScripts - Arno0x](https://github.com/Arno0x/CSharpScripts)
-			* **AD**
-				* [SharpSystemTriggers](https://github.com/cube0x0/SharpSystemTriggers)
-					* Collection of remote authentication triggers coded in C# using MIDL compiler for avoiding 3rd party dependencies.
-			* **Assembly Merge**
-				* [Merging C# Assemblies using dnMerge - ethicalchaos.dev(2021)](https://ethicalchaos.dev/2021/07/04/merging-c-assemblies-using-dnmerge/)
-				* [dnMerge](https://github.com/CCob/dnMerge)
-					* dnMerge is an MSBuild plugin that will merge multiple .NET reference assemblies into a single .NET executable or DLL. dnMerge can be included within your .NET project using the NuGet package available from the central repo.  Merged assembiles are compressed with 7-Zip's LZMA SDK which has the added benefit of smaller executables in comparison with other .NET assembly mergers. No additional .NET references are including during merging, making dnMerge suitable for cross-compiling on Linux without pulling in .NET Core assembly references into the final merged assembly.
-			* **Backdooring Binaries**
-				* [Backdoor .NET assemblies with… dnSpy 🤔 - Rasta Mouse(2021)](https://rastamouse.me/backdoor-net-assemblies-with-dnspy-%f0%9f%a4%94/)
-			* **Browsers**
-				* [Canary](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/Canary)
-					* Canary is a small DIY extension to SharpChrome. It lets you pull browser history for Chrome or the new Chromium Edge. Results are orderd by visit_count and you can pull all data or use the "-l" flag to pull only the last X days. Most of the boilerplate is ripped out of SharpChrome and can be added there easily if someone wants to make a PR for that.
-				* [SharpWeb](https://github.com/djhohnstein/SharpWeb)
-					* SharpWeb is a .NET 2.0 CLR compliant project that can retrieve saved logins from Google Chrome, Firefox, Internet Explorer and Microsoft Edge. In the future, this project will be expanded upon to retrieve Cookies and History items from these browsers.
-			* **Collection**
-				* [1Password Secret Retrieval — Methodology and Implementation - Dwight Hohnstein(2021)](https://posts.specterops.io/1password-secret-retrieval-methodology-and-implementation-6a9db3f3c709)
-	    		* [WireTap](https://github.com/djhohnstein/WireTap)
-					* .NET 4.0 Project to interact with video, audio and keyboard hardware.
-				* [SharpLogger](https://github.com/djhohnstein/SharpLogger)
-					* Keylogger written in C# 
-			* **COM**
-				* [COM Interop](https://github.com/AaronRobinsonMSFT/COMInterop)
-					* This project is an example on how to manually consume a COM server from C# or a C# server from COM client. It also contains projects for less common scenarios involving .NET and COM.			
-			* **Credentials**
-				* [SharpHandler](https://github.com/jfmaes/SharpHandler)
-					* This project reuses open handles to lsass to parse or minidump lsass, therefore you don't need to use your own lsass handle to interact with it.
-				* [SharpLoginPrompt](https://github.com/shantanu561993/SharpLoginPrompt)
-					* This Program creates a login prompt to gather username and password of the current user. This project allows red team to phish username and password of the current user without touching lsass and having adminitrator credentials on the system.
-				* [ICU](https://github.com/WingsOfDoom/ICU)
-					* Cred Prompt Phishing
-				* [CloneVault](https://github.com/mdsecactivebreach/CloneVault)
-					* CloneVault allows a red team operator to export and import entries including attributes from Windows Credential Manager. This allows for more complex stored credentials to be exfiltrated and used on an operator system. It is aimed at making it possible to port credentials that store credential material in binary blobs or those applications that store data in custom attributes. There are many use cases, please see our demonstration of cloning access to Microsoft OneDrive on the [MDSec Blog](https://www.mdsec.co.uk/knowledge-centre/insights/)
-				* [SharpRelay](https://github.com/pkb1s/SharpRelay)
-				* **Clipboard**
-					* [SharpClipboard](https://github.com/slyd0g/SharpClipboard)
-						* C# Clipboard Monitor
-						* [Blogpost](https://grumpy-sec.blogspot.com/2018/12/i-csharp-your-clipboard-contents.html)
-					* [SharpClipHistory](https://github.com/FSecureLABS/SharpClipHistory)
-						* SharpClipHistory is a .NET application written in C# that can be used to read the contents of a user's clipboard history in Windows 10 starting from the 1809 Build.
-				* **DPAPI**
-					* [DonPAPI ](https://github.com/login-securite/DonPAPI)
-						* Dumping DPAPI credz remotely
-				* **Hooking**
-					* [SharpHook](https://github.com/IlanKalendarov/SharpHook)
-						* SharpHook is inspired by the SharpRDPThief project, It uses various API hooks in order to give us the desired credentials. In the background it uses the EasyHook project, Once the desired process is up and running SharpHook will automatically inject its dependencies into the target process and then, It will send us the credentials through EasyHook's IPC server.
-				* **Password Spraying**
-					* [SharpSMBSpray](https://github.com/rvrsh3ll/SharpSMBSpray)
-						* Spray a hash via smb to check for local administrator access
-				* **Process Memory**
+				* [Simple-XTEA-Crypter](https://github.com/NateBrune/Simple-XTEA-Crypter)
+					* Simple runtime crypter in C++.
+				* [ADVobfuscator](https://github.com/andrivet/ADVobfuscator)
+					* ADVobfuscator demonstates how to use C++11/14 language to generate, at compile time, obfuscated code without using any external tool and without modifying the compiler. The technics presented rely only on C++11/14, as standardized by ISO. It shows also how to introduce some form of randomness to generate polymorphic code and it gives some concrete examples like the encryption of strings literals and the obfuscation of calls using finite state machines.
+				* [Obfuscate](https://github.com/adamyaxley/Obfuscate)
+					* Guaranteed compile-time string literal obfuscation header-only library for C++14.
+		* **Networking**
+			* [liblacewing](https://github.com/udp/lacewing)
+				* liblacewing is a library for writing cross-platform, networked applications in C/C++.
+		* **PE32**
+			* [libpebliss](https://github.com/imag0r/libpebliss)
+				* Cross-Platform PE(Portable Executable) Manipulating Library
+		* **Shellcode/Injection**
+			* **Articles**
+				* [Shellcode Techniques in C++ - Topher Timzen(2015)](https://www.tophertimzen.com/blog/shellcodeTechniquesCPP/)
+			* **Tools/Libraries**
+				* [netstub](https://github.com/freesoul/netstub)
+					* Create a C++ PE which loads an XTEA-crypted .NET PE shellcode in memory.
+				* [Shellcode Compiler](https://github.com/nytrorst/shellcodecompiler)
+					* Shellcode Compiler is a program that compiles C/C++ style code into a small, position-independent and NULL-free shellcode for Windows (x86 and x64) and Linux (x86 and x64). It is possible to call any Windows API function or Linux syscall in a user-friendly way.
+				* [CodeInjection](https://github.com/revsic/CodeInjection)
+					* Code Injection technique written in cpp language
+		* **Unhooking**
+			* [Firewalker](https://github.com/mdsecactivebreach/firewalker)
+				* This repo contains a simple library which can be used to add FireWalker hook bypass capabilities to existing code;
+		* **WebServer**
+			* [civeweb](https://github.com/civetweb/civetweb)
+				* Embedded C/C++ web server
+		* **Other**
+			* [cpp_vs_payload_template](https://github.com/0xC0D1F1ED/cpp_vs_payload_template)
+				* Visual Studio (C++) Solution Template for Payloads
+		* **Windows**
+			* [Windows Process Hacking Library](https://github.com/0xZ0F/CPPMemory)
+				* Code that can be used as a reference, library, or inspiration for hacking Windows memory.
+		* **Virtual calls**
+			* [Devirtualization in C++, part 1 -Honza Hubička(2014)](https://hubicka.blogspot.com/2014/01/devirtualization-in-c-part-1.html)
+	* **C#**<a name="csharppay"></a>
+		* **101**
+			* [A tour of the C# language - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
+				* C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. 
+		* **Learning**
+			* [Get started with C# - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/)
+			* [Inside a C# program - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/)
+				* The section discusses the general structure of a C# program, and includes the standard "Hello, World!" example.
+			* [C# 101 - Channel9 MSDN](https://channel9.msdn.com/Series/CSharp-101)
+		* **Reflection**
+			* [Security Considerations for Reflection - docs.ms](https://docs.microsoft.com/en-us/dotnet/framework/reflection-and-codedom/security-considerations-for-reflection)
+			* [Securing the loading of dynamic code - F-Secure(2016)](https://labs.f-secure.com/archive/securing-the-loading-of-dynamic-code/)
+			* [Use reflection to list a class’s properties in C# - Rod Stephens(2018)](http://csharphelper.com/blog/2018/02/use-reflection-to-list-a-classs-properties-in-c/)	
+			* [.NET Reflection and Disposable AppDomains - Rasta Mouse(2021)](https://rastamouse.me/net-reflection-and-disposable-appdomains/)
+		* **Scripting/ClearScript**
+			* [ClearScript](https://github.com/microsoft/ClearScript)
+				* A library for adding scripting to .NET applications. Supports V8 (Windows, Linux, macOS) and JScript/VBScript (Windows). 
+			* [ClearScript FAQtorial](https://microsoft.github.io/ClearScript/Tutorial/FAQtorial)
+			* [Cutting Edge : A Look at ClearScript - Dino Esposito(2014 docs.ms)](https://docs.microsoft.com/en-us/archive/msdn-magazine/2014/september/cutting-edge-a-look-at-clearscript)
+		* **Internals**
+			* [Ninja Patching .NET - Jon McCoy(Dojocon2010)](https://web.archive.org/web/20170321162306/http://www.irongeek.com/i.php?page=videos/dojocon-2010-videos#Ninja%20Patching%20.NET)
+				* [Youtube](https://www.youtube.com/watch?v=3jit5unJzys)
+			* [Hacking .NET Applications at Runtime: A Dynamic Attack - Jon McCoy(Defcon18)](https://web.archive.org/web/20191203175515/https://www.defcon.org/html/defcon-18/dc-18-speakers.html#McCoy)
+				* [Slides](https://www.defcon.org/images/defcon-19/dc-19-presentations/McCoy/DEFCON-19-McCoy-Hacking-Net.pdf)
+			* [Attacking .Net at Runtime - Jonathan McCoy(2013)](https://web.archive.org/web/20181028060806/http://www.digitalbodyguard.com/Papers/Attacking%20.Net%20at%20Runtime.pdf)
+				* This paper will introduce methodology forattacking  .NET programs at runtime. Thisattack will grant control over the targetsvariables, core logic, and the GUI. Thisattack is implemented with .NET code,and is heavily based on reflection. 
+			* [.NET Method Internals - Common Intermediate Language (CIL) Basics - @mattifestation(2014)](http://www.exploit-monday.com/2014/07/dotNETMethodInternals.html)
+			* [Acquiring .NET Objects from the Managed Heap - Topher Timzen(2015)](https://www.tophertimzen.com/resources/grayStorm/AcquiringDotNetObjectsFromTheManagedHeap.pdf)
+				* This paper will describe how to use any instantiated objectin the .NET CLR managed heap as if it were declared locally.It will be shown that by referencing object pointers fromthe managed heap, an attacker control objects being used inan application. Reflective techniques will be discussed and asignature will be introduced to find any object on the managedheap
+			* [Attacking Microsoft’s .NET Framework Through CLR - Yu Hong, Shikang Xing(HITB2018AMS)](https://conference.hitb.org/hitbsecconf2018ams/sessions/attacking-microsofts-net-framework-through-clr/)
+				* In this talk, we first introduce managed execution environment and managed code under .NET Framework and discuss the security weaknesses of this code execution method . After that, we show a exploit for SQL Server through CLR and our automated tools for this exploitation. We will introduce a backdoor with administrator privilege based on CLR hijacking arbitrary .NET Applications.
+			* [.NET Malware Threat: Internals and Reversing - Alexandre Borges(Defcon2019)](http://www.blackstormsecurity.com/docs/ALEXANDREBORGES_DEFCON_2019.pdf)
+			* [Hijacking .NET to Defend PowerShell - Amanda Rosseau](https://arxiv.org/pdf/1709.07508.pdf)
+				* Abstract—With the rise of attacks using PowerShell in the recent months, there has not been a comprehensive solution for monitoring or prevention. Microsoft recently released the AMSI solution for PowerShell v5, however this can also be bypassed. This paper focuses on repurposing various stealthy runtime .NET hijacking techniques implemented for PowerShell attacks for defensive monitoring of PowerShell. It begins with a brief introduction to .NET and PowerShell, followed by a deeper explanation of various attacker techniques, which is explained from the perspective of the defender, including assembly modification, class and method injection, compiler profiling, and C based function hooking. Of the four attacker techniques that are repurposed for defensive real-time monitoring of PowerShell execution, intermediate language binary modification, JIT hooking, and machine code manipulation provide the best results for stealthy run-time interfaces for PowerShell scripting analysis		
+			* [How .NET executables are loaded - repnz(2019)](https://repnz.github.io/posts/dotnet-executable-load/)
+			* [Common Language Runtime: Who? why? how? - Mez0](https://mez0.cc/posts/common-language-runtime-1/)
+			* [Common Language Runtime 2: In memory execution - Mez0](https://mez0.cc/posts/common-language-runtime-2/)
+		* **Managed vs Unmanaged code**
+			* [What is "managed code"? - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/managed-code)
+				* When working with .NET Framework, you will often encounter the term "managed code". This document will explain what this term means and additional information around it.
+		* **Papers**
+			* [Reflection’s Hidden Power: “Modifying Programs at Run-Time”](https://web.archive.org/web/20171208224139/http://www.digitalbodyguard.com/Papers/ReflectionsHiddenPower.pdf)
+				* This paper will demonstrate using Reflection to take control over a DotNet (.Net)compiled code. The focus of this paper will be on how to use Reflection to navigate and gainaccess to values and functionality that would normally be off limits. This paper will be gearedfor any DotNet programmer (focus will be in C#). No special knowledge of Reflection isnecessary. The basic concept of Reflection and DotNet will be given, along with some lighttraining on using reflection. This paper is written for the DotNet v2.0 and v3.5 versions ofDotNet. Examples will be given on attacks, like forcing a program to change values and executefunctionality
+			* [ASM in .NET: The old is new again - Jon McCoy(2015)](https://web.archive.org/web/20170829012346/http://www.digitalbodyguard.com/Papers/ASM%20in%20.NET-The%20old%20is%20new%20again.pdf)
+				* This paper will cover running raw Machine Code(ASM) from within .NET. As we all know .NET runson IL(Intermediate Language) also known as “Managed byte code”. A program can declare an unsafesection of code and drop out from the managed area to run something like unmanaged C++ or the like.This paper will show how to run raw/unmanaged ASM in a normal safe C# application.
+		* **Articles/Blogposts/Writeups**
+			* [An Introduction to Writing .NET Executables for Pentesters](https://www.peew.pw/blog/2017/11/24/an-introduction-to-writing-net-executables-for-pentesters)
+			* [Changeling - A Feature Morphing Creature - Adam Brown](https://coffeegist.com/security/changeling-a-feature-morphing-creature/)
+				* The feature that we’ll be taking a look at today is Embedded Resources in C# projects. This is a feature that will allow us to compile code once, and reuse it on multiple assessments			
+			* [How to Execute a Command in C# ? - Sandeep Aparajit(2008)](https://www.codeproject.com/Articles/25983/How-to-Execute-a-Command-in-C)
+		* **Talks/Presentations/Videos**
+			* [Quick Retooling in .Net for Red Teams - Dimitry Snezhkov(CircleCityCon2018](https://www.irongeek.com/i.php?page=videos/circlecitycon2018/circle-city-con-50-112-quick-retooling-in-net-for-red-teams-dimitry-snezhkov)
+				* Quick Retooling in .Net for Red Teams PowerShell gave us a super-highway of convenient building blocks for offensive toolkits and operational automation. However, use of standalone .Net implants may be a desirable option in cases where PowerShell is heavily inspected and logged. While there are great toolkits to invoke unmanaged PowerShell or directly interface with .Net CLR - they are also statically compiled, and therefore easier identified by the defense. Red Teams are faced with specific challenges when they need to retool quickly in the field with .Net payloads. Can .Net toolkits accomplish their goals while maintaining flexibility, quick in-field retooling and operational security in the face of current detection mechanisms? We think so. This talk walks through some of the options present to the operators for .Net code compilation and presents ideas for extensibility of .Net tools at runtime, with the help of Dynamic Language Runtime (DLR). We will dive deeper into operational security lessons learned from dynamic code compilation. We will attempt to move beyond static nature of .Net assemblies into reflective DLR, achieving on-the-fly access to native Windows API. We will also discuss some methods of hiding sensitive aspects of execution in managed code memory. We will also touch on ways to help Defense fingerprint the attacks involving dynamic compilation of .Net assemblies, use of DLR and building blocks of offensive tooling involved in the process. A concept tool built on these ideas will be presented and released. It will be used as basis for our discussion.
+			* [Building an Empire with (Iron)Python - Jim Shaver(Derbycon2018)](https://www.irongeek.com/i.php?page=videos/derbycon8/track-1-06-building-an-empire-with-ironpython-jim-shaver)
+				* This talk discusses porting Python payloads to Windows using a little known, former Microsoft project. It explores offensive uses of .Net and how to reduce attack surface on .Net payloads.
+			* [Staying # and Bringing Covert Injection Tradecraft to .NET - Ruben Boonen, The Wover(2020)](https://raw.githubusercontent.com/FuzzySecurity/BlueHatIL-2020/master/Ruben%20Boonen%20%26%20TheWover%20-%20BHIL2020_Staying%23_v0.4.pdf)
+			* [.NET Core for Malware – Ryan Cobb (SO-CON 2020)](https://www.youtube.com/watch?v=woRfx5D2Y9Y&list=PLJK0fZNGiFU-2vFpjnt96j_VSuQVTkAnO&index=10)
+				* .NET Core is the future of .NET. The Windows-only .NET Framework is on it's way out, and the cross-platform .NET Core is Microsoft's new flagship framework for building software. As red teamers, it's time to go back to the well of .NET as a host for implants and post-exploitation. In this talk, we will analyze the opportunities presented by the new .NET Core platform and practical examples to take advantage of them.
+			* [Modern Red Team Weaponization - Mike Felch(WWHF Deadwood 2020)](https://www.youtube.com/watch?v=5W-Nlkh6nhg)
+				* In an effort to seamlessly equip operators and reduce leaving breadcrumbs, this presentation will walk through methods for modern red team weaponization of offsec tooling. First we will step through the build process which will include automated builds, continuous integration/deployment, and C2 framework integration. Next, we will step through OPSEC considerations for payloads and tooling in an effort to reduce the breadcrumbs being left behind from assemblies. Finally, we will take a look at payload tradecraft for calling managed code (C# tooling) from unmanaged C++ (stub/launchers), low-level syscalls using C#, and code execution leveraging the Windows kernel.
+			* [Getting Started in Covert .NET Tradecraft for Post-Exploitation – Kyle Avery(2021)](https://www.youtube.com/watch?v=g27DorVva3M)
+				* This Black Hills Information Security (BHIS) webcast will cover OPSEC safe fork-n-run execution with Cobalt Strike, .NET log sources available to network defenders and security vendors, and obfuscation of public C# tools to evade EDR products consistently. If you're curious why penetration testers, red teamers, and even real threat actors prefer C# over PowerShell for post-exploitation, come find out how you can more effectively use these tools in secure environments.
+			* [WWHF (Virtual): DOT NET Advanced Malware Development - Joff Thyer(2020)](https://www.youtube.com/watch?v=8lk6VhmlhoI&list=PLXF21PFPPXTPwX8mccVIQB5THhU_paWmN&index=29)
+				* This talk will walk through how a penetration tester can use the C# language to develop a DOT NET assembly (DLL) designed to deliver shellcode into memory on a Windows system.  The talk will cover aspects of the necessary API calls into kernel32.dll, and describe how to build an MSBUILD XML file in order to evade whitelisting solutions.  Attendees of the talk should preferably have some familiarity with the C# programming language.  Techniques mentioned will include shellcode residing in the same thread, versus injecting into a remote process.
+		* **Examples/Samples**
+			* [Writing custom backdoor payloads using C# - Mauricio Velazco, Olindo Verrillo(Defcon27)](https://github.com/mvelazc0/defcon27_csharp_workshop)
+			* [Vayne-RaT](https://github.com/TheM4hd1/Vayne-RaT)
+				* An Advanced C# .NET Rat, It’s Stable and Contains Many Features.
+			* [CIMplant](https://github.com/FortyNorthSecurity/CIMplant)
+				* C# port of WMImplant which uses either CIM or WMI to query remote systems. It can use provided credentials or the current user's session.
+			* [MonkeyWorks](https://github.com/NetSPI/MonkeyWorks)
+				* A C# library to facilitate the development of offensive tools against Windows systems.
+			* [QuasarRAT](https://github.com/quasar/QuasarRAT)
+				* Quasar is a fast and light-weight remote administration tool coded in C#. Providing high stability and an easy-to-use user interface, Quasar is the perfect remote administration solution for you.
+			* [RedPeanut](https://github.com/b4rtik/RedPeanut)
+				* RedPeanut is a small RAT developed in .Net Core 2 and its agent in .Net 3.5 / 4.0.
+		* **General**
+			* [SharpSploit](https://github.com/cobbr/SharpSploit)
+				* SharpSploit is a .NET post-exploitation library written in C# that aims to highlight the attack surface of .NET and make the use of offensive .NET easier for red teamers.
+			* [SharpUtils](https://github.com/IllidanS4/SharpUtils)
+			* [GhostPack](https://github.com/GhostPack)
+			* [Sharp-Suite](https://github.com/FuzzySecurity/Sharp-Suite)
+				* FuzzySecurity: 'My musings with C#'
+			* [OffensiveCSharp-matterpreter](https://github.com/matterpreter/OffensiveCSharp)
+				* This is a collection of C# tooling and POCs I've created for use on operations. Each project is designed to use no external libraries. Open each project's .SLN in Visual Studio and compile as "Release".
+			* [bytecode-api](https://github.com/bytecode77/bytecode-api)
+				* C# library with common classes, extensions and additional features in addition to the .NET Framework. BytecodeApi implements lots of extensions and classes for general purpose use. In addition, specific classes implement more complex logic for both general app development as well as for WPF apps. Especially, boilerplate code that is known to be part of any Core DLL in a C# project is likely to be already here. In fact, I use this library in many of my own projects. For this reason, each class and method has been reviewed numerous times. BytecodeApi is highly consistent, particularly in terms of structure, naming conventions, patterns, etc. The entire code style resembles the patterns used in the .NET Framework itself. You will find it intuitive to understand.
+			* [OutlookToolbox](https://github.com/ThunderGunExpress/OutlookToolbox)
+				* OutlookToolbox is a C# DLL that uses COM to do stuff with Outlook. Also included is a Cobalt Strike aggressor script that uses Outlooktoolbox.dll to give it a graphical and control interface.
+				* [Blogpost](https://ijustwannared.team/2017/10/28/outlooktoolbox/)
+			* [OffensiveDLR](https://github.com/byt3bl33d3r/OffensiveDLR)
+				* Toolbox containing research notes & PoC code for weaponizing .NET's DLR
+			* [RedTeamCSharpScripts -  Mr-Un1k0d3r](https://github.com/Mr-Un1k0d3r/RedTeamCSharpScripts)
+			* [CSharpScripts - Arno0x](https://github.com/Arno0x/CSharpScripts)
+			* [StandIn](https://github.com/xforcered/StandIn)
+				* "StandIn is a small .NET35/45 AD post-exploitation toolkit"
+		* **AD**
+			* [SharpSystemTriggers](https://github.com/cube0x0/SharpSystemTriggers)
+				* Collection of remote authentication triggers coded in C# using MIDL compiler for avoiding 3rd party dependencies.
+		* **Assembly Merge**
+			* [Merging C# Assemblies using dnMerge - ethicalchaos.dev(2021)](https://ethicalchaos.dev/2021/07/04/merging-c-assemblies-using-dnmerge/)
+			* [dnMerge](https://github.com/CCob/dnMerge)
+				* dnMerge is an MSBuild plugin that will merge multiple .NET reference assemblies into a single .NET executable or DLL. dnMerge can be included within your .NET project using the NuGet package available from the central repo.  Merged assembiles are compressed with 7-Zip's LZMA SDK which has the added benefit of smaller executables in comparison with other .NET assembly mergers. No additional .NET references are including during merging, making dnMerge suitable for cross-compiling on Linux without pulling in .NET Core assembly references into the final merged assembly.
+		* **Backdooring Binaries**
+			* [Backdoor .NET assemblies with… dnSpy 🤔 - Rasta Mouse(2021)](https://rastamouse.me/backdoor-net-assemblies-with-dnspy-%f0%9f%a4%94/)
+		* **Browsers**
+			* [Canary](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/Canary)
+				* Canary is a small DIY extension to SharpChrome. It lets you pull browser history for Chrome or the new Chromium Edge. Results are orderd by visit_count and you can pull all data or use the "-l" flag to pull only the last X days. Most of the boilerplate is ripped out of SharpChrome and can be added there easily if someone wants to make a PR for that.
+			* [SharpWeb](https://github.com/djhohnstein/SharpWeb)
+				* SharpWeb is a .NET 2.0 CLR compliant project that can retrieve saved logins from Google Chrome, Firefox, Internet Explorer and Microsoft Edge. In the future, this project will be expanded upon to retrieve Cookies and History items from these browsers.
+		* **Collection**
+			* [1Password Secret Retrieval — Methodology and Implementation - Dwight Hohnstein(2021)](https://posts.specterops.io/1password-secret-retrieval-methodology-and-implementation-6a9db3f3c709)
+	    	* [WireTap](https://github.com/djhohnstein/WireTap)
+				* .NET 4.0 Project to interact with video, audio and keyboard hardware.
+			* [SharpLogger](https://github.com/djhohnstein/SharpLogger)
+				* Keylogger written in C# 
+		* **COM**
+			* [COM Interop](https://github.com/AaronRobinsonMSFT/COMInterop)
+				* This project is an example on how to manually consume a COM server from C# or a C# server from COM client. It also contains projects for less common scenarios involving .NET and COM.			
+		* **Credentials**
+			* [SharpHandler](https://github.com/jfmaes/SharpHandler)
+				* This project reuses open handles to lsass to parse or minidump lsass, therefore you don't need to use your own lsass handle to interact with it.
+			* [SharpLoginPrompt](https://github.com/shantanu561993/SharpLoginPrompt)
+				* This Program creates a login prompt to gather username and password of the current user. This project allows red team to phish username and password of the current user without touching lsass and having adminitrator credentials on the system.
+			* [ICU](https://github.com/WingsOfDoom/ICU)
+				* Cred Prompt Phishing
+			* [CloneVault](https://github.com/mdsecactivebreach/CloneVault)
+				* CloneVault allows a red team operator to export and import entries including attributes from Windows Credential Manager. This allows for more complex stored credentials to be exfiltrated and used on an operator system. It is aimed at making it possible to port credentials that store credential material in binary blobs or those applications that store data in custom attributes. There are many use cases, please see our demonstration of cloning access to Microsoft OneDrive on the [MDSec Blog](https://www.mdsec.co.uk/knowledge-centre/insights/)
+			* [SharpRelay](https://github.com/pkb1s/SharpRelay)
+			* **Clipboard**
+				* [SharpClipboard](https://github.com/slyd0g/SharpClipboard)
+					* C# Clipboard Monitor
+					* [Blogpost](https://grumpy-sec.blogspot.com/2018/12/i-csharp-your-clipboard-contents.html)
+				* [SharpClipHistory](https://github.com/FSecureLABS/SharpClipHistory)
+					* SharpClipHistory is a .NET application written in C# that can be used to read the contents of a user's clipboard history in Windows 10 starting from the 1809 Build.
+			* **DPAPI**
+				* [DonPAPI ](https://github.com/login-securite/DonPAPI)
+					* Dumping DPAPI credz remotely
+			* **Hooking**
+				* [SharpHook](https://github.com/IlanKalendarov/SharpHook)
+					* SharpHook is inspired by the SharpRDPThief project, It uses various API hooks in order to give us the desired credentials. In the background it uses the EasyHook project, Once the desired process is up and running SharpHook will automatically inject its dependencies into the target process and then, It will send us the credentials through EasyHook's IPC server.
+			* **Password Spraying**
+				* [SharpSMBSpray](https://github.com/rvrsh3ll/SharpSMBSpray)
+					* Spray a hash via smb to check for local administrator access
+			* **Process Memory**
 					* [Writing Minidumps in C# - docs.ms](https://docs.microsoft.com/en-us/archive/blogs/dondu/writing-minidumps-in-c)
 					* [Dumping Process Memory with Custom C# Code - 3xplo1tcod3r](https://3xpl01tc0d3r.blogspot.com/2019/07/dumping-process-memory-with-custom-c-sharp.html)
 					* [SharpDump](https://github.com/GhostPack/SharpDump)
@@ -2001,468 +2126,248 @@
 				* **RDP**
 					* [RemoteViewing](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/RemoteViewing)
 						* RemoteViewing, is quick POC to demo RDP credential theft through API hooking using EasyHook for .Net payloads combined with Costura to pack resources into a single module. 
-			* **D/Invoke**
-				* [Primer to DInvokes Injection API and a tale of token duplication and command-line spoofing on the cheap - Jean Maes(2021)](https://redteamer.tips/primer-to-dinvokes-injection-api-and-a-tale-of-token-duplication-and-command-line-spoofing-on-the-cheap/)
-					* [DinvokeDupetokenAndThreadSwitcheroo](https://github.com/redteamertips/DinvokeDupetokenAndThreadSwitcheroo)
-			* **Discovery (Local)**
-				* [SharpDirLister](https://github.com/EncodeGroup/SharpDirLister)
-					* A .NET 4.0 application that uses an optimized file search algorithm that will output a full directory / file listing of a drive in a matter of seconds and at the end it will compress it to a .gz
-				* [SharpProcEnum](https://github.com/antman1p/SharpProcEnum)
-					* .NET tool for enumeration processes and dumping memory.
-				* [SharpSearch](https://github.com/djhohnstein/SharpSearch)
-					* Search files for extensions as well as text within.
-				* [EventLog Searcher - benpturner(2021)](https://redteaming.co.uk/2021/03/15/eventlog-searcher/)
-				* [GetNetworkInterfaces](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/GetNetworkInterfaces)
-					* "GetNetworkInterfaces is a small .Net45 utility to pull local network adapter information. It mostly has feature parity with "ipconfig /all" and can be useful for some fast enumeration."
-				* [SharpMapModules](https://github.com/cube0x0/SharpMapModules)
-					* C# modules made for easy recon with SharpMapExec execute assembly function
-			* **Discovery (Network)**
-				* [SharpStrike](https://github.com/iomoath/SharpStrike)
-					* SharpStrike is a post-exploitation tool written in C# that uses either CIM or WMI to query remote systems. It can use provided credentials or the current user's session.
-				* [SharpShares](https://github.com/mez-0/SharpShares)
-					* The goal of SharpShares is to be able to parse different input types and run across a network(s) to find SMB services, authenticate, and pull the ACLs for each share.
-			* **DLLs**
-				* [Unmanaged Exports - Robert Giesecke(2009)](https://sites.google.com/site/robertgiesecke/Home/uploads/unmanagedexports)
-				* [Is is possible to export functions from a C# DLL like in VS C++? - Stackoverflow](https://stackoverflow.com/questions/4818850/is-is-possible-to-export-functions-from-a-c-sharp-dll-like-in-vs-c)		
-				* [DllExport](https://github.com/3F/DllExport)
+		* **D/Invoke**
+			* [DInvoke](https://github.com/TheWover/DInvoke)
+				* Dynamically invoke arbitrary unmanaged code from managed code without PInvoke.
+			* [Primer to DInvokes Injection API and a tale of token duplication and command-line spoofing on the cheap - Jean Maes(2021)](https://redteamer.tips/primer-to-dinvokes-injection-api-and-a-tale-of-token-duplication-and-command-line-spoofing-on-the-cheap/)
+				* [DinvokeDupetokenAndThreadSwitcheroo](https://github.com/redteamertips/DinvokeDupetokenAndThreadSwitcheroo)
+			* [D/Invokify PPID Spoofy & BlockDLLs - Rasta Mouse(2020)](https://offensivedefence.co.uk/posts/ppidspoof-blockdlls-dinvoke/)
+			* [Process Injection using DInvoke - Rasta Mouse](https://web.archive.org/web/20210601171512/https://rastamouse.me/blog/process-injection-dinvoke/)
+			* [Syscalls with D/Invoke - RastaMouse2021](https://offensivedefence.co.uk/posts/dinvoke-syscalls/)
+			* [Primer to DInvokes Injection API and a tale of token duplication and command-line spoofing on the cheap - Jean Maes(2021)](https://redteamer.tips/primer-to-dinvokes-injection-api-and-a-tale-of-token-duplication-and-command-line-spoofing-on-the-cheap/)
+				* [DinvokeDupetokenAndThreadSwitcheroo](https://github.com/redteamertips/DinvokeDupetokenAndThreadSwitcheroo)
+			* [DInjector](https://github.com/snovvcrash/DInjector)
+				* Collection of shellcode injection techniques packed in a D/Invoke weaponized DLL
+			* [DInvokeProcessHollowing](https://github.com/passthehashbrowns/DInvokeProcessHollowing)
+			* [BetterSafetyKatz](https://github.com/Flangvik/BetterSafetyKatz)
+				*  Fork of SafetyKatz that dynamically fetches the latest pre-compiled release of Mimikatz directly from gentilkiwi GitHub repo, runtime patches signatures and uses SharpSploit DInvoke to PE-Load into memory.
+			* [NoAmci](https://github.com/med0x2e/NoAmci)
+				* A PoC for using DInvoke to patch AMSI.dll in order to bypass AMSI detections triggered when loading .NET tradecraft via Assembly.Load(). .Net tradecraft can be compressed, encoded (encrypted if required) in order to keep the assembly size less than 1MB, then embedded as a resource to be loaded after patching amsi.dll memory.
+		* **Discovery (Local)**
+			* [SharpDirLister](https://github.com/EncodeGroup/SharpDirLister)
+				* A .NET 4.0 application that uses an optimized file search algorithm that will output a full directory / file listing of a drive in a matter of seconds and at the end it will compress it to a .gz
+			* [SharpProcEnum](https://github.com/antman1p/SharpProcEnum)
+				* .NET tool for enumeration processes and dumping memory.
+			* [SharpSearch](https://github.com/djhohnstein/SharpSearch)
+				* Search files for extensions as well as text within.
+			* [EventLog Searcher - benpturner(2021)](https://redteaming.co.uk/2021/03/15/eventlog-searcher/)
+			* [GetNetworkInterfaces](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/GetNetworkInterfaces)
+				* "GetNetworkInterfaces is a small .Net45 utility to pull local network adapter information. It mostly has feature parity with "ipconfig /all" and can be useful for some fast enumeration."
+			* [SharpMapModules](https://github.com/cube0x0/SharpMapModules)
+				* C# modules made for easy recon with SharpMapExec execute assembly function
+			* [SharpEDRChecker](https://github.com/PwnDexter/SharpEDRChecker)
+				* Checks running processes, process metadata, Dlls loaded into your current process and the each DLLs metadata, common install directories, installed services and each service binaries metadata, installed drivers and each drivers metadata, all for the presence of known defensive products such as AV's, EDR's and logging tools.
+		* **Discovery (Network)**
+			* [SharpStrike](https://github.com/iomoath/SharpStrike)
+				* SharpStrike is a post-exploitation tool written in C# that uses either CIM or WMI to query remote systems. It can use provided credentials or the current user's session.
+			* [SharpShares](https://github.com/mez-0/SharpShares)
+				* The goal of SharpShares is to be able to parse different input types and run across a network(s) to find SMB services, authenticate, and pull the ACLs for each share.
+		* **DLLs**
+			* [Unmanaged Exports - Robert Giesecke(2009)](https://sites.google.com/site/robertgiesecke/Home/uploads/unmanagedexports)
+			* [Is is possible to export functions from a C# DLL like in VS C++? - Stackoverflow](https://stackoverflow.com/questions/4818850/is-is-possible-to-export-functions-from-a-c-sharp-dll-like-in-vs-c)		
+			* [DllExport](https://github.com/3F/DllExport)
+			* [Lunar](https://github.com/Dewera/Lunar)
+				* A lightweight native DLL mapping library that supports mapping directly from memory
+		* **Embedding**
+			* [Resource-Reflector](https://github.com/Latency/Resource-Reflector)
+				* A .NET application written in C# for viewing and extracting assembly resources.
+		* **Evasion**
+			* **Articles**
+				* [Module Stomping in C# - RastaMouse(2020)](https://offensivedefence.co.uk/posts/module-stomping/)
+				* [Ordinal Values, Windows Functions, and C# - FortyNorthSecurity(2021)](https://fortynorthsecurity.com/blog/ordinal-values-and-c/)
+				* [Detection evasion in CLR and tips on how to detect such attacks - Alexander Rodchenko(2021)](https://securelist.com/detection-evasion-in-clr-and-tips-on-how-to-detect-such-attacks/104226/)
+				* [Using a C# Shellcode Runner and ConfuserEx to Bypass UAC - Hausec(2020)](https://hausec.com/2020/10/30/using-a-c-shellcode-runner-and-confuserex-to-bypass-uac-while-evading-av/)
+			* **Tools**
+				* [amsi-tracer](https://github.com/manyfacedllama/amsi-tracer)
+					* Leverage AMSI (Antimalware Scan Interface) technology to aid your analysis. This tool saves all buffers (scripts, .NET assemblies, etc) passed into AMSI during dynamic execution.
+				* [SharpSelfDelete](https://github.com/klezVirus/SharpSelfDelete)
+				* [SharpNukeEventLog](https://github.com/jfmaes/SharpNukeEventLog)	
+					* nuke that event log using some epic dinvoke fu
+				* [SyscallAmsiScanBufferBypass](https://github.com/S3cur3Th1sSh1t/SyscallAmsiScanBufferBypass)
+					* AmsiScanBuffer Patch using D/Invoke.
+				* [SwampThing](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/SwampThing)
+					* "SwampThing lets you to spoof process command line args (x32/64). Essentially you create a process in a suspended state, rewrite the PEB, resume and finally revert the PEB. The end result is that logging infrastructure will record the fake command line args instead of the real ones."
+				* [MaceTrap](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/MaceTrap)
+					* MaceTrap is a proof-of-concept for time stomping using SetFileTime. MaceTrap allows you to set the CreationTime / LastAccessTime / LastWriteTime for arbitrary files and folders. 
+				* [SharpLoadImage](https://github.com/b4rtik/SharpLoadImage)
+					* Hide .Net assembly into png images
+				* [BlockETW](https://github.com/Soledge/BlockEtw)
+					* .Net Assembly to block ETW telemetry in current process
+		* **Execution**
+			* **Articles**
+				* [Callback Function Techniques & Native Code Execution - DamonMohammadbagher(2021)](https://damonmohammadbagher.github.io/Posts/24_1mar2021x.html)
+				* [Call/Invoke Async C# Method via Callback Function APIs - DamonMohammadbagher(2021)](https://damonmohammadbagher.github.io/Posts/29mar2021x.html)
+				* [Remote Thread Injection + C# Async Method + CallBack Functions Technique (Changing Code Behavior) - DamonMohammadbagher(2021)](https://damonmohammadbagher.github.io/Posts/05may2021x.html)
+			* **Tools**
+				* [RunDotNetDll](https://github.com/enkomio/RunDotNetDll)
+					* RunDotNetDll allows to introspect a given .NET Assembly in order to list all the methods which are implemented in the Assembly and to invoke them. All this is done via pure Reflection using dnlib library.
 				* [Lunar](https://github.com/Dewera/Lunar)
 					* A lightweight native DLL mapping library that supports mapping directly from memory
-			* **Embedding**
-				* [Resource-Reflector](https://github.com/Latency/Resource-Reflector)
-					* A .NET application written in C# for viewing and extracting assembly resources.
-			* **Evasion**
-				* **Articles**
-					* [Module Stomping in C# - RastaMouse(2020)](https://offensivedefence.co.uk/posts/module-stomping/)
-					* [Ordinal Values, Windows Functions, and C# - FortyNorthSecurity(2021)](https://fortynorthsecurity.com/blog/ordinal-values-and-c/)
-					* [Detection evasion in CLR and tips on how to detect such attacks - Alexander Rodchenko(2021)](https://securelist.com/detection-evasion-in-clr-and-tips-on-how-to-detect-such-attacks/104226/)
-					* [Using a C# Shellcode Runner and ConfuserEx to Bypass UAC - Hausec(2020)](https://hausec.com/2020/10/30/using-a-c-shellcode-runner-and-confuserex-to-bypass-uac-while-evading-av/)
-				* **Tools**
-					* [SharpSelfDelete](https://github.com/klezVirus/SharpSelfDelete)
-					* [SharpNukeEventLog](https://github.com/jfmaes/SharpNukeEventLog)	
-						* nuke that event log using some epic dinvoke fu
-					* [SyscallAmsiScanBufferBypass](https://github.com/S3cur3Th1sSh1t/SyscallAmsiScanBufferBypass)
-						* AmsiScanBuffer Patch using D/Invoke.
-					* [SwampThing](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/SwampThing)
-						* "SwampThing lets you to spoof process command line args (x32/64). Essentially you create a process in a suspended state, rewrite the PEB, resume and finally revert the PEB. The end result is that logging infrastructure will record the fake command line args instead of the real ones."
-					* [MaceTrap](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/MaceTrap)
-						* MaceTrap is a proof-of-concept for time stomping using SetFileTime. MaceTrap allows you to set the CreationTime / LastAccessTime / LastWriteTime for arbitrary files and folders. 
-					* [SharpLoadImage](https://github.com/b4rtik/SharpLoadImage)
-						* Hide .Net assembly into png images
-					* [BlockETW](https://github.com/Soledge/BlockEtw)
-						* .Net Assembly to block ETW telemetry in current process
-			* **Execution**
-				* **Articles**
-				* **Tools**
-					* [RunDotNetDll](https://github.com/enkomio/RunDotNetDll)
-						* RunDotNetDll allows to introspect a given .NET Assembly in order to list all the methods which are implemented in the Assembly and to invoke them. All this is done via pure Reflection using dnlib library.
-					* [Lunar](https://github.com/Dewera/Lunar)
-						* A lightweight native DLL mapping library that supports mapping directly from memory
-			* **Exfiltration**
-				* [SharpExfiltrate](https://github.com/Flangvik/SharpExfiltrate)
-					* SharpExfiltrate is a tiny but modular C# framework to exfiltrate loot over secure and trusted channels. It supports both single-files and full-directory paths (recursively), file extension filtering, and file size filtering. Exfiltrated data will be compressed and encrypted before being uploaded. While exfiltrating a large amount of data will require the output stream to be cached on disk, smaller exfiltration operations can be done all in memory with the "memoryonly" option.
-				* [SharpBox](https://github.com/P1CKLES/SharpBox)
-			* **Firewall**
-				* [FireEater](https://github.com/jamcut/FireEater)
-					* FireEater allows a user to interact with the Windows firewall through .NET APIs. Requires Admin privs.
-				* [WindowsFirewallHelper](https://github.com/falahati/WindowsFirewallHelper)
-					* A class library to manage the Windows Firewall as well as adding your program to the Windows Firewall Exception list.
-				* [sharpbysentinel](https://github.com/jfmaes/sharpbysentinel)
-			* **Hooking**
-				* [SharpUnhooker](https://github.com/GetRektBoy724/SharpUnhooker)
-					* C# Based Universal API Unhooker - Automatically Unhook API Hives (ntdll.dll, kernel32.dll, advapi32.dll, and kernelbase.dll). SharpUnhooker helps you to evades user-land monitoring done by AVs and/or EDRs by cleansing/refreshing API DLLs that loaded on the process (Offensive Side) or remove API hooks from user-land rootkit (Defensive Side). There is 3 technique of user-land API hooking that i know, Inline/hot-patch hooking, IAT hooking, and EAT hooking. For now, SharpUnhooker only unhooks inline/hot-patch hooks and EAT hooks. 
-				* [AtomicBird](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/AtomicBird)
-					* "AtmoicBird, is a crude POC to demo the use of EasyHook in .Net payloads combined with Costura to pack resources into a single module. AtomicBird has two functions, (1) Hook MessageBoxA => print to console / modify parameters => unhook and (2) Hook NtQuerySystemInformation->SystemProcessInformation, search the linked list of SYSTEM_PROCESS_INFORMATION Structs to find powershell processes and unlink them. The second function requires that you inject the .Net PE into a process that uses NtQuerySystemInformation (Process Explorer was used for testing), you can do that with execute-assembly or with donut by generating shellcode. AtmoicBird was only tested on x64 Win10."
-				* [Dendrobate](https://github.com/xforcered/Dendrobate)
-					* Managed code hooking template.
-				* [MinHook.NET](https://github.com/CCob/MinHook.NET)
-					* MinHook.NET is a pure managed C# port of the brilliant MinHook library by Tsuda Kageyu (https://github.com/TsudaKageyu/minhook). The library has the capability of inline hooking native API calls, utilising .NET delegates for both the detoured and original function that is commonly called with the detour.
-			* **Injection**
-				* [MappingInjection_CSharp](https://github.com/Kara-4search/MappingInjection_CSharp)
-				* [DesertNut](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/DesertNut)
-					* DesertNut is a proof-of-concept for code injection using subclassed window callbacks (more commonly known as PROPagate).
-				* [WindfarmDynamite](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/WindfarmDynamite)
-					* WindfarmDynamite is a proof-of-concept for code injection using the Windows Notification Facility (WNF).
-				* [UrbanBishop](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/UrbanBishop)
-					* This POC creates a local RW section in UrbanBishop and then maps that section as RX into a remote process. Once the shared section has been established the shellcode is written to the local section which then automatically propagates to the remote process. For execution UrbanBishop creates a remote suspended thread (start address is set to ntdll!RtlExitUserThread) and queues and APC on that thread, once resumed with NtAlertResumeThread the shellcode executes and the thread exits gracefully on completion.
-			* **Language Embeds**
-				* **Tools**
-					* [Zolom](https://github.com/checkymander/Zolom)
-    					* C# Executable with embedded Python that can be used reflectively to run python code on systems without Python installed
-			* **Loaders/Stage0_or_1**
-				* [Welcome to the From zero to hero: creating a reflective loader in C#  workshop! - Jean Maes(2021)](https://jfmaes-1.gitbook.io/reflection-workshop/lab-0-setup)
-					* [Video Presentation](https://www.youtube.com/watch?v=E6LOQQiNjj0)
-				* [Sharperner](https://github.com/aniqfakhrul/Sharperner)
-					* "Sharperner is a tool written in CSharp that generate .NET dropper with AES and XOR obfuscated shellcode."
-				* [SharpTransactedLoad](https://github.com/G0ldenGunSec/SharpTransactedLoad)
-					* Load .net assemblies from memory while having them appear to be loaded from an on-disk location. Bypasses AMSI and expands the number of methods available for use in loading arbitrary assemblies while still avoiding dropping files to disk - some of which provide additional functionality over the traditional Assembly.Load call. Currently built for .net 4.5, but should be compatible with other versions.
-				* [HellgateLoader_CSharp](https://github.com/Kara-4search/HellgateLoader_CSharp)
-					* Load shelcode via HELLGATE, rewrite hellgate for learning purpose.
-				* [DarkMelkor](https://github.com/thiagomayllart/DarkMelkor)
-					* Modified Version of Melkor @FuzzySecurity capable of creating disposable AppDomains in injected processes. 
-				* [ThirdEye](https://github.com/kyleavery/ThirdEye)
-					* Weaponizing CLRvoyance for Post-Ex .NET Execution 
-				* [DLLFromMemory.Net](https://github.com/schellingb/DLLFromMemory-net)
-					* C# library to load a native DLL from memory without the need to allow unsafe code 
-				* [dnLauncher](https://github.com/aaaddress1/dnLauncher)
-					* "Automatically select .NET Framework to load .NET programs + dynamic instrumentation to hijack the compileMethod of the JIT engine to intercept MSIL codes" - autotranslated
-				* [Mimikore](https://github.com/secdev-01/Mimikore)
-					* .NET 5 Single file Application . Mimikatz or any Base64 PE Loader.
-				* [RunPE](https://github.com/nettitude/RunPE)
-					* C# Reflective loader for unmanaged binaries.
-				* [MemoryLoader](https://github.com/reznok/MemoryLoader)
-					* A .NET binary loader that bypasses AMSI checks. It will patch AMSI, download a remote binary, and execute it in memory without the binary ever hitting disk.
-				* [DiscerningFinch](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/DiscerningFinch)
-					* "DiscerningFinch is ... discerning! FinchGen lets you create an encrypted templated which you can copy/paste into DiscerningFinch. At runtime DiscerningFinch collects an array of OS specific string constants and then attempts to use those to brute-force decrypt the inner binary. If it succeeds it loads the inner binary into memory passing along any command line arguments that may exists. If it fails, it prints out a .NET-looking error message as feedback."
-				* [OffensivePipeline](https://github.com/Aetsu/OffensivePipeline)
-				* [SharpCradle](https://github.com/anthemtotheego/SharpCradle)
-					* SharpCradle is a tool designed to help penetration testers or red teams download and execute .NET binaries into memory.
-				* [RunShellcode](https://github.com/zerosum0x0/RunShellcode)
-					* Simple GUI program when you just want to run some shellcode.
-				* [CreateThread Example](https://github.com/djhohnstein/CSharpCreateThreadExample)
-					* C# code to use CreateThread to run position independent code in the running process. This code is provided AS IS, and will not be supported.
-				* [CSharp SetThreadContext](https://github.com/djhohnstein/CSharpSetThreadContext)
-					* C# Shellcode Runner to execute shellcode via CreateRemoteThread and SetThreadContext to evade Get-InjectedThread
-				* [EAPrimer](https://github.com/m8r0wn/EAPrimer)
-					* EAPrimer can be used to load .Net assemblies from a filepath or URL. On startup, it will attempt to perform in-memory patching of AMSI to bypass detection. By default, output is written to the console, however, this can be directed to a file or even sent via HTTP POST request to a remote server.
-			* **Managed in UnManaged Code**
-				* **Articles/Blogposts/Writeups**
-					* [The .NET Inter-Operability Operation - James Forshaw(Derbycon2017)](https://www.irongeek.com/i.php?page=videos/derbycon7/s13-the-net-inter-operability-operation-james-forshaw)
-						* One of the best features of the .NET runtime is its in-built ability to call native code, whether that's APIs exposed from dynamic libraries or remote COM objects. Adding this in-built functionality to an "type-safe" runtime has its drawbacks, not the least the introduction of security issues due to misuse. This presentation will go into depth on how the .NET runtime implements its various interop features, where the bodies are buried and how to use that to find issues ranging from novel code execution mechanisms, elevation of privilege up to remote code execution. The presentation will assume the attendee has some familiarity with .NET and how the runtime executes code.
-					* [CLRvoyance: Loading managed code into unmanaged processes - Bryan Alexander, Josh Stone(2020)](https://www.accenture.com/us-en/blogs/cyber-defense/clrvoyance-loading-managed-code-into-unmanaged-processes)
-					* [Weird Ways to Run Unmanaged Code in .NET - Adam Chester(2021)](https://blog.xpnsec.com/weird-ways-to-execute-dotnet/)
-				* **Tools**
-					* [CLRvoyance](https://github.com/Accenture/CLRvoyance)
-						* CLRvoyance is a shellcode kit that supports bootstrapping managed assemblies into unmanaged (or managed) processes. It provides three different implementations of position independent shellcode for CLR hosting, as well as a generator script for quickly embedding a managed assembly in position independent shellcode.
-					* [Nautilus Project](https://github.com/xpn/NautilusProject)
-						* A collection of weird ways to execute unmanaged code in .NET
-					* [HostingCLR](https://github.com/etormadiv/HostingCLR)
-						* Executing a .NET Assembly from C++ in Memory (CLR Hosting)
-			* **Unmanaged in Managed**
-				* [native-loader](https://github.com/netcore-jroger/native-loader)
-					* A class library that loads unmanaged library.
-				* [MemoryModule.net](https://github.com/Scavanger/MemoryModule.net)
-					* Loading a native DLL in the memory.
-			* **Network**
-				https://github.com/rasta-mouse/AsyncSockets
-				* [SharpRelay](https://github.com/pkb1s/SharpRelay)
-			* **Obfuscation**
-				* [Building an Obfuscator to Evade Windows Defender - Samuel Wong(2020)](https://www.xanthus.io/building-an-obfuscator-to-evade-windows-defender/)
-				* [RosFuscator](https://github.com/Flangvik/RosFuscator)
-					* YouTube/Livestream project for obfuscating C# source code using Roslyn
-				* [Applying the Invisibility Cloak: Obfuscate C# Tools to Evade Signature-Based Detection - Brett Hawkins(2021)](https://securityintelligence.com/posts/invisibility-cloak-obfuscate-c-tools-evade-signature-based-detection/)
-				* [LoGiC.NET](https://github.com/AnErrupTion/LoGiC.NET)
-					* A more advanced free and open .NET obfuscator using dnlib. 
-				* [AsStrongAsFuck](https://github.com/Charterino/AsStrongAsFuck)
-					* A console obfuscator for .NET assemblies. 
-				* [ConfuserEx2](https://github.com/mkaring/ConfuserEx)
-					* ConfuserEx 2 is a open-source protector for .NET applications. It is the successor of Confuser project and the ConfuserEx project.
-				* [NeoConfuserEx](https://github.com/XenocodeRCE/neo-ConfuserEx)
-					* Neo ConfuserEx is the successor of ConfuserEx project, an open source C# obfuscator which uses its own fork of dnlib for assembly manipulation. Neo ConfuserEx handles most of the dotnet app, supports all elligible .NET Frameworks and provide decent obfuscation on your file.
-				* [.NET Obfuscator Lists](https://github.com/NotPrab/.NET-Obfuscator)
-				* [Lists of .NET Deobfuscator / Unpacker (Open Source)](https://github.com/NotPrab/.NET-Deobfuscator)
-				* [MindLated](https://github.com/Sato-Isolated/MindLated)
-					* .net obfuscator
-			* **Packers**
-				* [DotNetCompressor](https://github.com/TotalTechGeek/DotNetCompressor)
-					* Compresses .NET executables and merges dlls into a standalone, smaller executable.
-			* **Payload Sample**
-				* **Articles/Blogposts/Writeups**
-				* **Talks/Presentations/Videos**
-					* [New Livestream Series (Creating a Metasploit Implant in C# from scratch) - OJ Reeves(2019)](https://buffered.io/posts/new-livestream-series/)
-						* "We’re going to build a .NET implementation of Meterpreter live on stream. Together. From scratch. Read on for all the details!"
-				* **Tools/PoCs**
-					* [clr-meterpreter](https://github.com/OJ/clr-meterpreter)
-						* The full story of the CLR implementation of Meterpreter
-					* [DcRat](https://github.com/qwqdanchun/DcRat)
-						* DcRat is a simple remote tool written in C#
-			* **Persistence**
-				* [SharPersist](https://github.com/mandiant/SharPersist)
-				* [SharPersist: Windows Persistence Toolkit in C# - Brett Hawkins(Derbycon2019](https://www.irongeek.com/i.php?page=videos/derbycon9/stable-25-sharpersist-windows-persistence-toolkit-in-c-brett-hawkins)
-					* PowerShell has been used by the offensive community for several years now. However, recent advances in the defensive security industry are causing offensive toolkits to migrate from PowerShell to reflective C# to evade modern security products. Some of these advancements include Script Block Logging, Antimalware Scripting Interface (AMSI) and the development of signatures for malicious PowerShell activity by third-party security vendors. Several public C# toolkits such as Seatbelt, SharpUp and SharpView have been released to assist with tasks in various phases of the attack lifecycle. One phase of the attack lifecycle that has been missing a C# toolkit is persistence. This talk will be on the public release of a Windows persistence toolkit written in C# called SharPersist.
-				* [SharpStay](https://github.com/0xthirteen/SharpStay)
-					* .NET project for installing Persistence
-				* [SharpHide](https://github.com/outflanknl/SharpHide)
-					* [Technique Whitepaper](https://github.com/ewhitehats/InvisiblePersistence/blob/master/InvisibleRegValues_Whitepaper.pdf)
-					* Just a nice persistence trick to confuse DFIR investigation. Uses NtSetValueKey native API to create a hidden (null terminated) registry key. This works by adding a null byte in front of the UNICODE_STRING key valuename.
-				* [Reg_Built](https://github.com/P1CKLES/Reg_Built)
-					* C# Userland Registry RunKey persistence
-			* **Polymorphism**
-				* [Self-Morphing C# Binary](https://github.com/bytecode77/self-morphing-csharp-binary)
-			* **Privilege Escalation**
-				* [SharpUp](https://github.com/GhostPack/SharpUp)
-					* SharpUp is a C# port of various PowerUp functionality. Currently, only the most common checks have been ported; no weaponization functions have yet been implemented.
-				* [Watson](https://github.com/rasta-mouse/Watson)
-					* Enumerate missing KBs and suggest exploits for useful Privilege Escalation vulnerabilities
-				* [Net-GPPPassword](https://github.com/outflanknl/Net-GPPPassword)
-					* .NET/C# implementation of Get-GPPPassword. Retrieves the plaintext password and other information for accounts pushed through Group Policy Preferences.
-			* **Processes**
-				* [C# Process Class Primer - Rastamouse(2021)](https://offensivedefence.co.uk/posts/csharp-process-class/)
-			* **Process Injection/Shellcode Execution**
-				* **Articles/Blogposts/Writeups**
-					* [Shellcode Execution in .NET using MSIL-based JIT Overwrite - Matt Graeber(2013)](http://www.exploit-monday.com/2013/04/MSILbasedShellcodeExec.html)
-					* [Module Stomping in C# - Rastamouse(2020)](https://offensivedefence.co.uk/posts/module-stomping/)
-					* [Process Injection using DInvoke - Rastamouse(2020)](https://web.archive.org/web/20210601171512/https://rastamouse.me/blog/process-injection-dinvoke/)
-					* [NET-Assembly-Inject-Remote](https://github.com/med0x2e/NET-Assembly-Inject-Remote)
-						* PoC demonstrating some methods for .NET assembly local/remote loading/injection into memory using System.AppDomain.ExecuteAssembly() and System.Reflection.Assembly.LoadFrom() method (check "NetAssembly-Injection/AssemblyLoader.cs" methods documentation).
-					* [RuralBishop](https://github.com/rasta-mouse/RuralBishop)
-						* RuralBishop is practically a carbon copy of UrbanBishop by b33f, but all P/Invoke calls have been replaced with D/Invoke. This creates a local RW section in RuralBishop and then maps that section as RX into a remote process. Once the shared section has been established the shellcode is written to the local section which then automatically propagates to the remote process. For execution RuralBishop creates a remote suspended thread (start address is set to ntdll!RtlExitUserThread) and queues an APC on that thread. Once resumed with NtAlertResumeThread, the shellcode executes and the thread exits gracefully on completion.
-					* [The Curious Case of QueueUserAPC - Dwight Hohnstein(2019)](https://posts.specterops.io/the-curious-case-of-queueuserapc-3f62e966d2cb)
-					* [Staying # & Bringing Covert Injection Tradecraft to .NET - The Wover & Ruben Boonen(BlueHat IL 2020)](https://www.youtube.com/watch?v=FuxpMXTgV9s)
-						* [Slides](https://raw.githubusercontent.com/FuzzySecurity/BlueHatIL-2020/master/Ruben%20Boonen%20%26%20TheWover%20-%20BHIL2020_Staying%23_v0.4.pdf)
-						* [Code](https://github.com/FuzzySecurity/BlueHatIL-2020)
-						* In our talk we will focus on explaining the fundamental tradecraft behind these new developments, the challenges and requirements associated with them, and how they can be adapted to suit your needs. Additionally, we will discuss how SharpSploit can be combined with other open-source projects to be integrated into a red team's tooling. As much as possible, we will also discuss how to counter and detect the techniques that we have developed. Finally, we will explain the community-focused development of these projects and how you too can contribute to advance open-source .NET tradecraft.
-				* **Tools**
-					* [Donut](https://github.com/TheWover/donut)
-						* Generates x86, x64, or AMD64+x86 position-independent shellcode that loads .NET Assemblies, PE files, and other Windows payloads from memory and runs them with parameters 
-					* [C# Memory Injection Examples](https://github.com/pwndizzle/c-sharp-memory-injection)
-						* A set of scripts that demonstrate how to perform memory injection.
-					* [Execute assembly via Meterpreter session](https://github.com/b4rtik/metasploit-execute-assembly)
-						* Custom Metasploit post module to executing a .NET Assembly from Meterpreter session 
-					* [TikiTorch](https://github.com/rasta-mouse/TikiTorch)
-						* TikiTorch was named in homage to CACTUSTORCH by Vincent Yiu. The basic concept of CACTUSTORCH is that it spawns a new process, allocates a region of memory, then uses CreateRemoteThread to run the desired shellcode within that target process. Both the process and shellcode are specified by the user.
-						* [TikiTorch - Rastamouse](https://rastamouse.me/blog/tikitorch/)
-						* [TikiVader - Rastamouse](https://rastamouse.me/blog/tikivader/)
-						* [The Return of Aggressor - Rastamouse](https://rastamouse.me/blog/tikigressor/)
-						* [TikiService - Rastamouse](https://rastamouse.me/blog/tikiservice/)
-						* [Lighting the path through EDRs using TikiTorch - RhythmStick(2019)](https://www.rythmstick.net/posts/tikitorch/)
-					* [Managed Injector](https://github.com/enkomio/ManagedInjector)
-						* This project implements a .NET Assembly injection library (it is inspired by the snoopwpf project). The remote process can be a managed or unmanaged one.
-					* [MemorySharp](https://github.com/ZenLulz/MemorySharp)
-						* MemorySharp is a C# based memory editing library targeting Windows applications, offering various functions to extract and inject data and codes into remote processes to allow interoperability.
-					* [ManagedInjection](https://github.com/malcomvetter/ManagedInjection)
-						* A proof of concept for dynamically loading .net assemblies at runtime with only a minimal convention pre-knowledge
-					* [SharpNeedle](https://github.com/ChadSki/SharpNeedle)
-						* A project for properly injecting C# dlls into other processes.
-					* [ManagedInjection](https://github.com/malcomvetter/ManagedInjection)
-						* A proof of concept for injecting a pre-compiled .net assembly in memory at runtime with zero pre-knowledge of its assembly namespace or type. All that is necessary is a convention for the initial method name which will be instantiated, or just have the assembly initialize via its Constructor for a true "zero knowledge" scenario.
-					* [Remote AppDomainManager Injection - byt3bl33d3r](https://gist.github.com/byt3bl33d3r/de10408a2ac9e9ae6f76ffbe565456c3)
-					* [DotNetDebug](https://github.com/xpn/DotNetDebug)
-					* [DNCI - Dot Net Code Injector](https://github.com/guibacellar/DNCI)
-						* DNCI allows the injection of .Net code (.exe or .dll) remotely in unmanaged processes in windows.	
-					* [UrbanBishopLocal](https://github.com/slyd0g/UrbanBishopLocal)
-						*  A port of FuzzySecurity's UrbanBishop project for inline shellcode execution 
-					* [ProcessInjection](https://github.com/3xpl01tc0d3r/ProcessInjection)
-						* The program is designed to perform process injection. Currently the tool supports 4 process injection techniques.
-			* **PS in C#**
-				* **Articles/Blogposts/Writeups**
-					* [Executing PowerShell scripts from C# - doc.ms(2014)](https://docs.microsoft.com/en-us/archive/blogs/kebab/executing-powershell-scripts-from-c)
-						* "In today’s post, I will demonstrate the basics of how to execute PowerShell scripts and code from within a C#/.NET applications. I will walk through how to setup your project prerequisites, populate the pipeline with script code and parameters, perform synchronous and asynchronous execution, capture output, and leverage shared namespaces."
-					* [Using C# for post-PowerShell attacks - John Bergbom(2018)](https://www.forcepoint.com/blog/x-labs/using-c-post-powershell-attacks)
-				* **Tools**
-					* [NoPowerShell](https://github.com/bitsadmin/nopowershell)
-						* NoPowerShell is a tool implemented in C# which supports executing PowerShell-like commands while remaining invisible to any PowerShell logging mechanisms. This .NET Framework 2 compatible binary can be loaded in Cobalt Strike to execute commands in-memory. No System.Management.Automation.dll is used; only native .NET libraries. An alternative usecase for NoPowerShell is to launch it as a DLL via rundll32.exe: rundll32 NoPowerShell.dll,main.
-					* [p0wnedShell](https://github.com/Cn33liz/p0wnedShell)
-						* PowerShell Runspace Post Exploitation Toolkit 
-					* [p0wnedLoader](https://github.com/Cn33liz/p0wnedLoader)
-					* [Smallp0wnedShell](https://github.com/3gstudent/Smallp0wnedShell)
-						* Small modification version of PowerShell Runspace Post Exploitation Toolkit (p0wnedShell)
-					* [CScriptShell](https://github.com/Cn33liz/CScriptShell)
-					* [Stracciatella](https://github.com/mgeeky/Stracciatella)
-						* OpSec-safe Powershell runspace from within C# (aka SharpPick) with AMSI, CLM and Script Block Logging disabled at startup
-					* [SpaceRunner](https://github.com/Mr-B0b/SpaceRunner)
-						* This tool enables the compilation of a C# program that will execute arbitrary PowerShell code, without launching PowerShell processes through the use of runspace.
-			* **Recon (Host)**
-				* [SeatBelt](https://github.com/GhostPack/Seatbelt)
-					* Seatbelt is a C# project that performs a number of security oriented host-survey "safety checks" relevant from both offensive and defensive security perspectives. 
-			* **Recon (Network)**
-				* [SharpShares](https://github.com/mitchmoser/SharpShares)
-					* Multithreaded C# .NET Assembly to enumerate accessible network shares in a domain
-				* [Scout](https://github.com/jaredhaight/scout)
-					* Scout is a .NET assembly used to perform recon on hosts during a pentest. Specifically, this was created as a way to check a host before laterally moving to it.
-			* **Reflection**
-			    * [Reflection (C#) - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection)
-	    			* Reflection provides objects (of type Type) that describe assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. If you are using attributes in your code, reflection enables you to access them. For more information, see Attributes.
-	    		* [How C# Reflection Works With Code Examples - stackify](https://stackify.com/what-is-c-reflection/)
-	    		* [Reflection in .NET - keesari_anjaiah(2010)](https://www.codeproject.com/Articles/55710/Reflection-in-NET)
-	    		* [What is Reflection in C#? - geeksforgeeks(2019)](https://www.geeksforgeeks.org/what-is-reflection-in-c-sharp/)
-			* **Registry (Windows)**
-				* [RegistryStrikesBack](https://github.com/mdsecactivebreach/RegistryStrikesBack)
-					* RegistryStrikesBack allows a red team operator to export valid .reg files for portions of the Windows Registry via a .NET assembly that should run as a standard user.
-				* [Registry](https://github.com/EricZimmerman/Registry)
-					* Full featured, offline Registry parser in C#.
-			* **Resource Embedding**
-				* [Single File Executable - docs.ms](https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0#single-file-executables)
-				* [Assembly Linking - docs.ms](https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0#assembly-linking)
-				* [Embedding .NET Assemblies inside .NET Assemblies - Denham Coder(2018)](https://denhamcoder.net/2018/08/25/embedding-net-assemblies-inside-net-assemblies/)
-				* [Fody](https://github.com/Fody/Home/#endofbacking)
-					* The Home repository is the starting point for people to learn about Fody, the project.
-				* [Fody Engine](https://github.com/Fody/Fody)
-					* Extensible tool for weaving .net assemblies. Manipulating the IL of an assembly as part of a build requires a significant amount of plumbing code. This plumbing code involves knowledge of both the MSBuild and Visual Studio APIs. Fody attempts to eliminate that plumbing code through an extensible add-in model.
-				* [Costura](https://github.com/Fody/Costura)
-					* Embed references as resources
-			* **Scheduled Tasks**
-				* **Articles/Blogposts/Writeups**
-					* [Creating Scheduled Tasks(C#) - StackOverflow](https://stackoverflow.com/questions/7394806/creating-scheduled-tasks)
-					* [Creating a Task Using NewWorkItem Example - docs.ms](https://docs.microsoft.com/en-us/windows/win32/taskschd/creating-a-task-using-newworkitem-example)
-				* **Tools**
-					* [Task Scheduler](https://github.com/dahall/taskscheduler)
-						* Provides a .NET wrapper for the Windows Task Scheduler. It aggregates the multiple versions, provides an editor and allows for localization.
-					* [ScheduleRunner](https://github.com/netero1010/ScheduleRunner)
-						* A C# tool with more flexibility to customize scheduled task for both persistence and lateral movement in red team operation
-			* **Symbolic Links**
-				* [SharpLink](https://github.com/usdAG/SharpLink)
-					* Create file system symbolic links from low privileged user accounts within PowerShell
-			* **Serialization**
-				* **Gadget2Jscript**
-					* [GadgetToJScript - RastaMouse(2020)](https://rastamouse.me/blog/gadgettojscript/)
-						* [Github](https://github.com/rasta-mouse/GadgetToJScript)
-					* [GadgetToJScript - 3gstudent](https://3gstudent.github.io/3gstudent.github.io/GadgetToJScript%E5%88%A9%E7%94%A8%E5%88%86%E6%9E%90/)
-					* [GadgetToJScript](https://github.com/med0x2e/GadgetToJScript)
-						* A tool for generating .NET serialized gadgets that can trigger .NET assembly load/execution when deserialized using BinaryFormatter from JS/VBS based scripts. The gadget being used triggers a call to Assembly.Load when deserialized via jscript/vbscript, this means it can be used in the same way to trigger in-memory load of your own shellcode loader at runtime. Lastly, the tool was created mainly for automating WSH scripts weaponization for RT engagements (LT, Persistence, Initial Compromise), the shellcode loader which was used for PoC is removed and replaced by an example assembly implemented in the "TestAssemblyLoader.cs" class for PoC purpose.
-					* [GadgetToJScript, Covenant, Donut - 3xpl01tc0d3r](https://3xpl01tc0d3r.blogspot.com/2020/02/gadgettojscript-covenant-donut.html)
-				* **Tools**
-					* [DotNetDeserializationScanner](https://github.com/leechristensen/DotNetDeserializationScanner)
-						* Scans for .NET Deserialization Bugs in .NET Assemblies 
-			* **Syscalls**
-				* [Red Team Tactics: Utilizing Syscalls in C# - Prerequisite Knowledge - Jack Halon(2020)](https://jhalon.github.io/utilizing-syscalls-in-csharp-1/)
-					* [Part2: Writing The Code](https://jhalon.github.io/utilizing-syscalls-in-csharp-2/)
-				* **Tools**
-					* [An example of using Syscalls in C# to get a meterpreter shell.](https://github.com/plackyhacker/Sys-Calls)					
-					* [TripleS - Extracting Syscall Stub, Modernized](https://github.com/GetRektBoy724/TripleS)
-						* "TripleS or 3S is short for Syscall Stub Stealer. It freshly "steal" syscall stub straight from the disk. You can use TripleS for evading userland hooks from EDRs/AVs.TripleS doesnt invoke any unmanaged API, its all .NET's managed function. I cant say that its better than D/Invoke's GetSyscallStub, but in my opinion, its better. Anyway, I suck at making description, so if you have any question,you can DM me on Discord."
-					* [SysCallTables](https://github.com/hfiref0x/SyscallTables)		
-					* [SharpCall](https://github.com/jhalon/SharpCall)
-						* Simple proof of concept code that allows you to execute direct system calls in C# by utilizing unmanaged code to bypass EDR and API Hooking.
-			* **User Simulation**
-				* [Sim](https://github.com/IceMoonHSV/Sim)
-					* Sim is a C# application that ingests an XML file and performs tasks based on the provided XML. It is meant to resemble user actions on a system. The goal of this is to help facilitate training and education by providing a more realistic environment to practice.
-			* **Web Server**
-				* [SharpWebServer](https://github.com/mgeeky/SharpWebServer)
-					* A Red Team oriented simple HTTP & WebDAV server written in C# with functionality to capture Net-NTLM hashes. To be used for serving payloads on compromised machines for lateral movement purposes.
-			* **Windows Services**
-				* [Using Parameters With InstallUtil - ip3lee](https://diaryofadeveloper.wordpress.com/2012/04/26/using-paramters-with-installutil/)
-				* [SharpSC](https://github.com/djhohnstein/SharpSC)
-					* Simple .NET assembly to interact with services.
-			* **WinAPI Access**
-				* **Articles/Blogposts/Writeups**
-					* [Offensive P/Invoke: Leveraging the Win32 API from Managed Code - Matt Hand](https://posts.specterops.io/offensive-p-invoke-leveraging-the-win32-api-from-managed-code-7eef4fdef16d)
-					* [SharpSploit.Execution.DynamicInvoke](https://github.com/cobbr/SharpSploit/blob/master/SharpSploit/SharpSploit%20-%20Quick%20Command%20Reference.md#sharpsploitexecutiondynamicinvoke)
-				* **DInvoke**
-					* **Articles/Blogposts/Writeups**
-						* [Emulating Covert Operations - Dynamic Invocation (Avoiding PInvoke & API Hooks) - thewover(2020)](https://thewover.github.io/Dynamic-Invoke/)
-						* [D/Invoke & GadgetToJScript - Rasta Mouse(2021)](https://rastamouse.me/d-invoke-gadgettojscript/)
-					* **Tools**
-						* [DInvoke](https://github.com/TheWover/DInvoke)
-							* Dynamic replacement for PInvoke on Windows. DInvoke contains powerful primitives that may be combined intelligently to dynamically invoke unmanaged code from disk or from memory with careful precision. This may be used for many purposes such as PE parsing, intelligent dynamic API resolution, dynamically loading PE plugins at runtime, process injection, and avoiding API hooks.
-						* [Reprobate](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/Reprobate)
-							* "Reprobate consists of two cs files which contain all of the DynamicInvoke functionality and are meant to be plug-and-play for your C# projects. This can be preferable to using a nuget package or whole-sale including SharpSploit. Eventually I will integrate bubble-sort Syscall ID identification as well to avoid manual ntdll mapping/enumeration."
-				* **PInvoke**
-					* **Articles/Blogposts/Writeups**
-						* [Platform Invoke (P/Invoke) - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/native-interop/pinvoke)
-						* [How to: Call Native DLLs from Managed Code Using PInvoke - docs.ms](https://docs.microsoft.com/en-us/cpp/dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke?view=msvc-160)
-						* [pinvoke](https://github.com/dotnet/pinvoke)
-							* A library containing all P/Invoke code so you don't have to import it every time. Maintained and updated to support the latest Windows OS. 
-						* [pinvoke.net](https://www.pinvoke.net/)
-					* **Tools**
-				* **Tools**
-					* [Vanara](https://github.com/dahall/Vanara)
-						* This project contains various .NET assemblies that contain P/Invoke functions, interfaces, enums and structures from Windows libraries. Each assembly is associated with one or a few tightly related libraries. For example, Shlwapi.dll has all the exported functions from shlwapi.lib; Kernel32.dll has all for both kernel32.lib and kernelbase.lib.
-					* [ManagedWindows](https://github.com/zodiacon/ManagedWindows)
-						* Managed wrappers around the Windows API and some Native API
-					* [taskkill](https://github.com/malcomvetter/taskkill)
-						* This is a reference example for how to call the Windows API to enumerate and kill a process similar to taskkill.exe. This is based on (incomplete) MSDN example code. Proof of concept or pattern only.
-					* [DnsCache](https://github.com/malcomvetter/DnsCache)
-						* This is a reference example for how to call the Windows API to enumerate cached DNS records in the Windows resolver. Proof of concept or pattern only.
-					* [GetAPISetMapping](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/GetAPISetMapping)
-						* This project parses the PEB to match Windows API Set DLL's to their host DLL.
-					* [SystemProcessAndThreadsInformation](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/SystemProcessAndThreadsInformation)
-		* **Go**
-			* **Articles/Blogposts**
-				* [Antidebug Golang binary on Windoze ☯ - @lfm3773](https://acmpxyz.com/go_antidebug.html)
-			* **Talks/Presentations**
-				* [Concurrency is not parallelism - Andrew Gerrand(2013)](https://blog.golang.org/waza-talk)
-				* [Hack like a Gopher - Kent Gruber(BSides Detroit2018)](https://www.irongeek.com/i.php?page=videos/bsidesdetroit2018/bsides-detroit-2018-104-hack-like-a-gohper-kent-gruber)
-					* The Go programming language is fast, statically typed, and compiled but it feels that feels like a dynamically typed, interpreted language. What does that mean; and what does that do for you? Demonstrating the qualities of Golang from an attack and defense perspective we will explore some of the benefits of using Go to build fast, cross-platform applications.
-			* **Crypter/Obfuscation**
-				* **Articles/Blogposts**
-					* [Encrypt And Decrypt Data In A Golang Application With The Crypto Packages - Nic Raboy(2019)](https://www.thepolyglotdeveloper.com/2018/02/encrypt-decrypt-data-golang-application-crypto-packages/)
-					* [A Trinity of Shellcode, AES & Golang - Syscall59 — Alan Vivona(2019)](https://medium.com/syscall59/a-trinity-of-shellcode-aes-go-f6cec854f992)
-				* **Tools/Libraries**
-					* [gobfuscate](https://github.com/unixpickle/gobfuscate)
-						* Currently, gobfuscate manipulates package names, global variable and function names, type names, method names, and strings.
-			* **Libraries**
-				* [Coldfire](https://github.com/redcode-labs/Coldfire)
-					* Golang malware development framework
-				* [SSDEEP](https://github.com/glaslos/ssdeep)
-					* SSDEEP hash lib in Golang
-				* [Robotgo](https://github.com/go-vgo/robotgo)
-					* Golang Desktop Automation. Control the mouse, keyboard, bitmap, read the screen, Window Handle and global event listener.
-				* [The Universal Loader](https://github.com/Binject/universal)
-					* This loader provides a unified Go interface for loading shared libraries from memory on Windows, OSX, and Linux. Also included is a cross-platform `Call()` implementation that lets you call into exported symbols from those libraries without stress.
-			* **Samples/Examples**
-				* [RendevousRat](https://github.com/rvrsh3ll/RendezvousRAT)
-					* This repository contains two minimal proof-of-concept RAT's utilizing GO, based on the examples found at go-libp2p-examples
-				* [Doge-Loader](https://github.com/timwhitez/Doge-Loader)
-					* Cobalt Strike Shellcode Loader by Golang 
-				* [C2](https://github.com/averagesecurityguy/c2)
-					* The C2 repository seeks to provide a practical implementation of the ideas contained in the Red Team Infrastructure Wike at https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki. In particular, this repository provides two Go packages one for beaconers and another for downloaders. In addition, the repository provides sample implants that use these beaconers and downloaders. Finally, the repository contains backend DNS and HTTP servers for C2 and configuration information for building front-end redirector servers.
-				* [GrayStorm](https://github.com/GrayKernel/GrayStorm)
-					* GrayStorm is an in memory attack platform that targets the .NET Framework and is injectable by utilizing GrayFrost.
-				* [GrayFrost](https://github.com/graykernel/GrayFrost)
-					* GrayFrost is a C++ DLL delivery system for C# payloads. Once compiled, GrayFrost can be injected into .NET applications using any DLL injection technique you wish!
-				* [CHAOS](https://github.com/tiagorlampert/CHAOS)
-					* Windows payload generator in go
-				* [gscript](https://github.com/gen0cide/gscript)
-					* Gscript is a framework for building multi-tenant executors for several implants in a stager. The engine works by embedding runtime logic (powered by the V8 Javascript Virtual Machine) for each persistence technique. This logic gets run at deploy time on the victim machine, in parallel for every implant contained with the stager. The Gscript engine leverages the multi-platform support of Golang to produce final stage one binaries for Windows, Mac, and Linux.
-					* [Payload Delivery for DevOps : Building a Cross-Platform Dropper Using the Genesis Framework, Metasploit and Docker - khastex(2020)](https://khast3x.club/posts/2020-06-27-Cross-Platform-Dropper/)
-			* **Shellcode**
-				* [go-shellcode](https://github.com/brimstone/go-shellcode)
-					* This is a program to run shellcode as its own process, all from memory. This was written to defeat anti-virus detection.
-			* **Tradecraft**
-				* **Articles/Blogposts**
-					* [Malware Development Pt. 1: Dynamic Module Loading in Go - Dwight Hohnstein(2020)](https://posts.specterops.io/malware-development-pt-1-dynamic-module-loading-in-go-1121f07f3a5a)
-					* [Trimming the fat from a Golang binary - Ben E C Boyter(2020)](https://web.archive.org/web/20210214140418/https://boyter.org/posts/trimming-golang-binary-fat/)
-					* [Shrink your Go binaries with this one weird trick - Filippo Valsorda(2016)](https://blog.filippo.io/shrink-your-go-binaries-with-this-one-weird-trick/)
-					* [Golang Offensive Tools with C-Sto and capnspacehook - awgh(2019)](https://www.symbolcrash.com/podcast/golang-offensive-tools-with-c-sto-and-capnspacehook/)
-					* [Encrypted-at-Rest Virtual File-System in Go - awgh(2019)](https://www.symbolcrash.com/2019/07/22/encrypted-at-rest-virtual-file-system-in-go/)
-				* **Talks/Presentations/Videos**
-					* [(P|G)Ohst Exploitation - Carl Vincent(2016)](https://archive.org/details/P-G_Ohst_Exploitation)
-						* This talk focuses on showcasing examples of the GO programming language being utilized to rapidly prototype, and ultimately maintain software designed to perform common or useful post-exploitation tasks. Source code for each feature will be provided, and is intended to exaggerate the limited amount of code and code familiarity required to construct relatively complex payloads capable of performing offensive security tasks fully either in an automated, or fully antonymous context.
+				* [NativePayload_TiACBT](https://github.com/DamonMohammadbagher/NativePayload_TiACBT)
+					* NativePayload_TiACBT (Remote Thread Injection + C# Async Method + CallBack Functions Technique)
+		* **Exfiltration**
+			* [SharpExfiltrate](https://github.com/Flangvik/SharpExfiltrate)
+				* SharpExfiltrate is a tiny but modular C# framework to exfiltrate loot over secure and trusted channels. It supports both single-files and full-directory paths (recursively), file extension filtering, and file size filtering. Exfiltrated data will be compressed and encrypted before being uploaded. While exfiltrating a large amount of data will require the output stream to be cached on disk, smaller exfiltration operations can be done all in memory with the "memoryonly" option.
+			* [SharpBox](https://github.com/P1CKLES/SharpBox)
+		* **Firewall**
+			* [FireEater](https://github.com/jamcut/FireEater)
+				* FireEater allows a user to interact with the Windows firewall through .NET APIs. Requires Admin privs.
+			* [WindowsFirewallHelper](https://github.com/falahati/WindowsFirewallHelper)
+				* A class library to manage the Windows Firewall as well as adding your program to the Windows Firewall Exception list.
+			* [sharpbysentinel](https://github.com/jfmaes/sharpbysentinel)
+		* **Hooking**
+			* [SharpUnhooker](https://github.com/GetRektBoy724/SharpUnhooker)
+				* C# Based Universal API Unhooker - Automatically Unhook API Hives (ntdll.dll, kernel32.dll, advapi32.dll, and kernelbase.dll). SharpUnhooker helps you to evades user-land monitoring done by AVs and/or EDRs by cleansing/refreshing API DLLs that loaded on the process (Offensive Side) or remove API hooks from user-land rootkit (Defensive Side). There is 3 technique of user-land API hooking that i know, Inline/hot-patch hooking, IAT hooking, and EAT hooking. For now, SharpUnhooker only unhooks inline/hot-patch hooks and EAT hooks. 
+			* [AtomicBird](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/AtomicBird)
+				* "AtmoicBird, is a crude POC to demo the use of EasyHook in .Net payloads combined with Costura to pack resources into a single module. AtomicBird has two functions, (1) Hook MessageBoxA => print to console / modify parameters => unhook and (2) Hook NtQuerySystemInformation->SystemProcessInformation, search the linked list of SYSTEM_PROCESS_INFORMATION Structs to find powershell processes and unlink them. The second function requires that you inject the .Net PE into a process that uses NtQuerySystemInformation (Process Explorer was used for testing), you can do that with execute-assembly or with donut by generating shellcode. AtmoicBird was only tested on x64 Win10."
+			* [Dendrobate](https://github.com/xforcered/Dendrobate)
+				* Managed code hooking template.
+			* [MinHook.NET](https://github.com/CCob/MinHook.NET)
+				* MinHook.NET is a pure managed C# port of the brilliant MinHook library by Tsuda Kageyu (https://github.com/TsudaKageyu/minhook). The library has the capability of inline hooking native API calls, utilising .NET delegates for both the detoured and original function that is commonly called with the detour.
+		* **Injection**
+			* [MappingInjection_CSharp](https://github.com/Kara-4search/MappingInjection_CSharp)
+			* [DesertNut](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/DesertNut)
+				* DesertNut is a proof-of-concept for code injection using subclassed window callbacks (more commonly known as PROPagate).
+			* [WindfarmDynamite](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/WindfarmDynamite)
+				* WindfarmDynamite is a proof-of-concept for code injection using the Windows Notification Facility (WNF).
+			* [UrbanBishop](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/UrbanBishop)
+				* This POC creates a local RW section in UrbanBishop and then maps that section as RX into a remote process. Once the shared section has been established the shellcode is written to the local section which then automatically propagates to the remote process. For execution UrbanBishop creates a remote suspended thread (start address is set to ntdll!RtlExitUserThread) and queues and APC on that thread, once resumed with NtAlertResumeThread the shellcode executes and the thread exits gracefully on completion.
+		* **Language Embeds**
 			* **Tools**
-				* [Geacon](https://github.com/darkr4y/geacon)
-					* Using Go to implement CobaltStrike's Beacon
-		* **Haskell**
-			* [Hacking with Haskell - Max Harley(2021)](https://itnext.io/hacking-with-haskell-28887c1f2d06)
-		* **Janet**
-			* [Janet](https://github.com/janet-lang/janet)
-				* Janet is a functional and imperative programming language and bytecode interpreter. It is a lisp-like language, but lists are replaced by other data structures (arrays, tables (hash table), struct (immutable hash table), tuples). The language also supports bridging to native code written in C, meta-programming with macros, and bytecode assembly.
-		* **Java**
-			* [Java RATS: Not even your Macs are safe - Anthony Kasza(Derbycon2016)](https://www.irongeek.com/i.php?page=videos/derbycon6/318-java-rats-not-even-your-macs-are-safe-anthony-kasza)
-				* Java's 'write once, run anywhere' features make it a popular cross-platform vector for attackers of all skill levels. This talk will perform a deep examination of historic and trending Java malware families, their capabilities and indicators, and will reveal uncommon analysis techniques to immediately help you with investigations.
-		* **.NET**
-			* **101**
-				* [A tour of the C# language - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
-					* C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. 
-				* [Inside a C# program - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/)
-					* The section discusses the general structure of a C# program, and includes the standard "Hello, World!" example.
-				* [AppDomain Class - docs.ms](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.1)
-					* Represents an application domain, which is an isolated environment where applications execute. This class cannot be inherited.
-				* [Assemblies in .NET - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/assembly/)
-					* Assemblies form the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications. An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality. Assemblies take the form of executable (.exe) or dynamic link library (.dll) files, and are the building blocks of .NET applications. They provide the common language runtime with the information it needs to be aware of type implementations.
-				* [An Introduction to Writing .NET Executables for Pentesters - PEEW.PW](https://www.peew.pw/blog/2017/11/24/an-introduction-to-writing-net-executables-for-pentesters)
-			* **Non-101**
-				* [.NET Malware Threat: Internals and Reversing - Alexandre Borges(Defcon2019)](http://www.blackstormsecurity.com/docs/ALEXANDREBORGES_DEFCON_2019.pdf)
-				* [Hiding your .NET - COMPlus_ETWEnabled - Adam Chester(2020)](https://blog.xpnsec.com/hiding-your-dotnet-complus-etwenabled/)
-				* [Building the CLR Meterpreter - OJ Reeves(2020)](https://www.youtube.com/playlist?list=PLYovnhafVaw-wGlLtQw1N0dHjxkkvc62o)
-				* [clr-meterpreter](https://github.com/OJ/clr-meterpreter)
-					* The full story of the CLR implementation of Meterpreter
-				* [SharpC2 Development Series - Rastamouse](https://www.youtube.com/playlist?list=PLFeVmEN0T_KeOxXfCAtJ14TZ_Nk2qa9Ll)
-				* [.NET Core for Malware – Ryan Cobb (SO-CON 2020)](https://www.youtube.com/watch?v=woRfx5D2Y9Y&list=PLJK0fZNGiFU-2vFpjnt96j_VSuQVTkAnO&index=11)
-					* .NET Core is the future of .NET. The Windows-only .NET Framework is on it's way out, and the cross-platform .NET Core is Microsoft's new flagship framework for building software. As red teamers, it's time to go back to the well of .NET as a host for implants and post-exploitation. In this talk, we will analyze the opportunities presented by the new .NET Core platform and practical examples to take advantage of them.
-			* **Bring-Your-Own-Compiler/Compiler Stacking**
-				* [Red Team Level over 9000! Fusing the powah of .NET with a scripting language of your choosing: introducing BYOI (Bring Your own Interpreter) payloads. - Marcello Salvati(Derbycon2019)](https://www.irongeek.com/i.php?page=videos/derbycon9/1-17-red-team-level-over-9000-fusing-the-powah-of-net-with-a-scripting-language-of-your-choosing-introducing-byoi-bring-your-own-interpreter-payloads-marcello-salvati)
-					* With all of the defenses Microsoft has implemented in the PowerShell run-time over the past few years Red Teamers & APT groups have started too shy away from using PowerShell based payloads/delivery mechanisms and migrate over to C#. However, C# is a compiled language, operationally this has a few major downsides: we can?t be as ?flexible? as we could be with scripting languages, setting up a proper development environment has overhead, things need to be compiled etc... in this talk, I will be covering my approach to solving these operational problems by using some of the (possibly?) lesser known features of the .NET framework and introducing BYOI (Bring Your Own Interpreter) payloads which allow you to embed a scripting language of your choosing into any .NET language!
 				* [Zolom](https://github.com/checkymander/Zolom)
     				* C# Executable with embedded Python that can be used reflectively to run python code on systems without Python installed
-				* [Inception-Framework](https://github.com/two06/Inception)
-					* Inception provides In-memory compilation and reflective loading of C# apps for AV evasion. Payloads are AES encrypted before transmission and are decrypted in memory. The payload server ensures that payloads can only be fetched a pre-determined number of times. Once decrypted, Roslyn is used to build the C# payload in memory, which is then executed using reflection.
-			* **Crypter/Obfuscation**
-				* [NET-Obfuscate](https://github.com/BinaryScary/NET-Obfuscate)
-					* Obfuscate ECMA CIL (.NET IL) assemblies to evade Windows Defender AMSI.
-			* **Injection/Shellcode/In-Memory**
-				* [Red Team Tradecraft: Loading Encrypted C# Assemblies In Memory - mike gualtieri(2020)](https://www.mike-gualtieri.com/posts/red-team-tradecraft-loading-encrypted-c-sharp-assemblies-in-memory)
-				* [ManagedInjection](https://github.com/malcomvetter/ManagedInjection)
-					* A proof of concept for injecting a pre-compiled .net assembly in memory at runtime with zero pre-knowledge of its assembly namespace or type. All that is necessary is a convention for the initial method name which will be instantiated, or just have the assembly initialize via its Constructor for a true "zero knowledge" scenario.
+		* **Loaders/Stage0_or_1**
+			* [Welcome to the From zero to hero: creating a reflective loader in C#  workshop! - Jean Maes(2021)](https://jfmaes-1.gitbook.io/reflection-workshop/lab-0-setup)
+				* [Video Presentation](https://www.youtube.com/watch?v=E6LOQQiNjj0)
+			* [Sharperner](https://github.com/aniqfakhrul/Sharperner)
+				* "Sharperner is a tool written in CSharp that generate .NET dropper with AES and XOR obfuscated shellcode."
+			* [SharpTransactedLoad](https://github.com/G0ldenGunSec/SharpTransactedLoad)
+				* Load .net assemblies from memory while having them appear to be loaded from an on-disk location. Bypasses AMSI and expands the number of methods available for use in loading arbitrary assemblies while still avoiding dropping files to disk - some of which provide additional functionality over the traditional Assembly.Load call. Currently built for .net 4.5, but should be compatible with other versions.
+			* [HellgateLoader_CSharp](https://github.com/Kara-4search/HellgateLoader_CSharp)
+				* Load shelcode via HELLGATE, rewrite hellgate for learning purpose.
+			* [DarkMelkor](https://github.com/thiagomayllart/DarkMelkor)
+				* Modified Version of Melkor @FuzzySecurity capable of creating disposable AppDomains in injected processes. 
+			* [ThirdEye](https://github.com/kyleavery/ThirdEye)
+				* Weaponizing CLRvoyance for Post-Ex .NET Execution 
+			* [DLLFromMemory.Net](https://github.com/schellingb/DLLFromMemory-net)
+				* C# library to load a native DLL from memory without the need to allow unsafe code 
+			* [dnLauncher](https://github.com/aaaddress1/dnLauncher)
+				* "Automatically select .NET Framework to load .NET programs + dynamic instrumentation to hijack the compileMethod of the JIT engine to intercept MSIL codes" - autotranslated
+			* [Mimikore](https://github.com/secdev-01/Mimikore)
+				* .NET 5 Single file Application . Mimikatz or any Base64 PE Loader.
+			* [RunPE](https://github.com/nettitude/RunPE)
+				* C# Reflective loader for unmanaged binaries.
+			* [MemoryLoader](https://github.com/reznok/MemoryLoader)
+				* A .NET binary loader that bypasses AMSI checks. It will patch AMSI, download a remote binary, and execute it in memory without the binary ever hitting disk.
+			* [DiscerningFinch](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/DiscerningFinch)
+				* "DiscerningFinch is ... discerning! FinchGen lets you create an encrypted templated which you can copy/paste into DiscerningFinch. At runtime DiscerningFinch collects an array of OS specific string constants and then attempts to use those to brute-force decrypt the inner binary. If it succeeds it loads the inner binary into memory passing along any command line arguments that may exists. If it fails, it prints out a .NET-looking error message as feedback."
+			* [OffensivePipeline](https://github.com/Aetsu/OffensivePipeline)
+			* [SharpCradle](https://github.com/anthemtotheego/SharpCradle)
+				* SharpCradle is a tool designed to help penetration testers or red teams download and execute .NET binaries into memory.
+			* [RunShellcode](https://github.com/zerosum0x0/RunShellcode)
+				* Simple GUI program when you just want to run some shellcode.
+			* [CreateThread Example](https://github.com/djhohnstein/CSharpCreateThreadExample)
+				* C# code to use CreateThread to run position independent code in the running process. This code is provided AS IS, and will not be supported.
+			* [CSharp SetThreadContext](https://github.com/djhohnstein/CSharpSetThreadContext)
+				* C# Shellcode Runner to execute shellcode via CreateRemoteThread and SetThreadContext to evade Get-InjectedThread
+			* [EAPrimer](https://github.com/m8r0wn/EAPrimer)
+				* EAPrimer can be used to load .Net assemblies from a filepath or URL. On startup, it will attempt to perform in-memory patching of AMSI to bypass detection. By default, output is written to the console, however, this can be directed to a file or even sent via HTTP POST request to a remote server.
+		* **Managed in UnManaged Code**
+			* **Articles/Blogposts/Writeups**
+				* [The .NET Inter-Operability Operation - James Forshaw(Derbycon2017)](https://www.irongeek.com/i.php?page=videos/derbycon7/s13-the-net-inter-operability-operation-james-forshaw)
+					* One of the best features of the .NET runtime is its in-built ability to call native code, whether that's APIs exposed from dynamic libraries or remote COM objects. Adding this in-built functionality to an "type-safe" runtime has its drawbacks, not the least the introduction of security issues due to misuse. This presentation will go into depth on how the .NET runtime implements its various interop features, where the bodies are buried and how to use that to find issues ranging from novel code execution mechanisms, elevation of privilege up to remote code execution. The presentation will assume the attendee has some familiarity with .NET and how the runtime executes code.
+				* [CLRvoyance: Loading managed code into unmanaged processes - Bryan Alexander, Josh Stone(2020)](https://www.accenture.com/us-en/blogs/cyber-defense/clrvoyance-loading-managed-code-into-unmanaged-processes)
+				* [Weird Ways to Run Unmanaged Code in .NET - Adam Chester(2021)](https://blog.xpnsec.com/weird-ways-to-execute-dotnet/)
+			* **Tools**
+				* [CLRvoyance](https://github.com/Accenture/CLRvoyance)
+					* CLRvoyance is a shellcode kit that supports bootstrapping managed assemblies into unmanaged (or managed) processes. It provides three different implementations of position independent shellcode for CLR hosting, as well as a generator script for quickly embedding a managed assembly in position independent shellcode.
+				* [Nautilus Project](https://github.com/xpn/NautilusProject)
+					* A collection of weird ways to execute unmanaged code in .NET
+				* [HostingCLR](https://github.com/etormadiv/HostingCLR)
+					* Executing a .NET Assembly from C++ in Memory (CLR Hosting)
+		* **Unmanaged in Managed**
+			* [native-loader](https://github.com/netcore-jroger/native-loader)
+				* A class library that loads unmanaged library.
+			* [MemoryModule.net](https://github.com/Scavanger/MemoryModule.net)
+				* Loading a native DLL in the memory.
+		* **Network**
+			* [AsyncSockets](https://github.com/rasta-mouse/AsyncSockets)
+			* [SharpRelay](https://github.com/pkb1s/SharpRelay)
+		* **Obfuscation**
+			* [Building an Obfuscator to Evade Windows Defender - Samuel Wong(2020)](https://www.xanthus.io/building-an-obfuscator-to-evade-windows-defender/)
+			* [RosFuscator](https://github.com/Flangvik/RosFuscator)
+				* YouTube/Livestream project for obfuscating C# source code using Roslyn
+			* [Applying the Invisibility Cloak: Obfuscate C# Tools to Evade Signature-Based Detection - Brett Hawkins(2021)](https://securityintelligence.com/posts/invisibility-cloak-obfuscate-c-tools-evade-signature-based-detection/)
+			* [LoGiC.NET](https://github.com/AnErrupTion/LoGiC.NET)
+				* A more advanced free and open .NET obfuscator using dnlib. 
+			* [AsStrongAsFuck](https://github.com/Charterino/AsStrongAsFuck)
+				* A console obfuscator for .NET assemblies. 
+			* [ConfuserEx2](https://github.com/mkaring/ConfuserEx)
+				* ConfuserEx 2 is a open-source protector for .NET applications. It is the successor of Confuser project and the ConfuserEx project.
+			* [NeoConfuserEx](https://github.com/XenocodeRCE/neo-ConfuserEx)
+				* Neo ConfuserEx is the successor of ConfuserEx project, an open source C# obfuscator which uses its own fork of dnlib for assembly manipulation. Neo ConfuserEx handles most of the dotnet app, supports all elligible .NET Frameworks and provide decent obfuscation on your file.
+			* [.NET Obfuscator Lists](https://github.com/NotPrab/.NET-Obfuscator)
+			* [Lists of .NET Deobfuscator / Unpacker (Open Source)](https://github.com/NotPrab/.NET-Deobfuscator)
+			* [MindLated](https://github.com/Sato-Isolated/MindLated)
+				* .net obfuscator
+		* **Packers**
+			* [DotNetCompressor](https://github.com/TotalTechGeek/DotNetCompressor)
+				* Compresses .NET executables and merges dlls into a standalone, smaller executable.
+		* **Payload Sample**
+			* **Articles/Blogposts/Writeups**
+			* **Talks/Presentations/Videos**
+				* [New Livestream Series (Creating a Metasploit Implant in C# from scratch) - OJ Reeves(2019)](https://buffered.io/posts/new-livestream-series/)
+					* "We’re going to build a .NET implementation of Meterpreter live on stream. Together. From scratch. Read on for all the details!"
+		* **Tools/PoCs**
+			* [clr-meterpreter](https://github.com/OJ/clr-meterpreter)
+				* The full story of the CLR implementation of Meterpreter
+			* [DcRat](https://github.com/qwqdanchun/DcRat)
+				* DcRat is a simple remote tool written in C#
+		* **Persistence**
+			* [SharPersist](https://github.com/mandiant/SharPersist)
+			* [SharPersist: Windows Persistence Toolkit in C# - Brett Hawkins(Derbycon2019](https://www.irongeek.com/i.php?page=videos/derbycon9/stable-25-sharpersist-windows-persistence-toolkit-in-c-brett-hawkins)
+				* PowerShell has been used by the offensive community for several years now. However, recent advances in the defensive security industry are causing offensive toolkits to migrate from PowerShell to reflective C# to evade modern security products. Some of these advancements include Script Block Logging, Antimalware Scripting Interface (AMSI) and the development of signatures for malicious PowerShell activity by third-party security vendors. Several public C# toolkits such as Seatbelt, SharpUp and SharpView have been released to assist with tasks in various phases of the attack lifecycle. One phase of the attack lifecycle that has been missing a C# toolkit is persistence. This talk will be on the public release of a Windows persistence toolkit written in C# called SharPersist.
+			* [SharpStay](https://github.com/0xthirteen/SharpStay)
+				* .NET project for installing Persistence
+			* [SharpHide](https://github.com/outflanknl/SharpHide)
+				* [Technique Whitepaper](https://github.com/ewhitehats/InvisiblePersistence/blob/master/InvisibleRegValues_Whitepaper.pdf)
+				* Just a nice persistence trick to confuse DFIR investigation. Uses NtSetValueKey native API to create a hidden (null terminated) registry key. This works by adding a null byte in front of the UNICODE_STRING key valuename.
+			* [Reg_Built](https://github.com/P1CKLES/Reg_Built)
+			* C# Userland Registry RunKey persistence
+		* **Polymorphism**
+			* [Self-Morphing C# Binary](https://github.com/bytecode77/self-morphing-csharp-binary)
+		* **Privilege Escalation**
+			* [SharpUp](https://github.com/GhostPack/SharpUp)
+				* SharpUp is a C# port of various PowerUp functionality. Currently, only the most common checks have been ported; no weaponization functions have yet been implemented.
+			* [Watson](https://github.com/rasta-mouse/Watson)
+				* Enumerate missing KBs and suggest exploits for useful Privilege Escalation vulnerabilities
+			* [Net-GPPPassword](https://github.com/outflanknl/Net-GPPPassword)
+				* .NET/C# implementation of Get-GPPPassword. Retrieves the plaintext password and other information for accounts pushed through Group Policy Preferences.
+		* **Processes**
+			* [C# Process Class Primer - Rastamouse(2021)](https://offensivedefence.co.uk/posts/csharp-process-class/)
+		* **Process Injection/Shellcode Execution**
+			* **Articles/Blogposts/Writeups**
+				* [Shellcode Execution in .NET using MSIL-based JIT Overwrite - Matt Graeber(2013)](http://www.exploit-monday.com/2013/04/MSILbasedShellcodeExec.html)
+				* [Module Stomping in C# - Rastamouse(2020)](https://offensivedefence.co.uk/posts/module-stomping/)
+				* [Process Injection using DInvoke - Rastamouse(2020)](https://web.archive.org/web/20210601171512/https://rastamouse.me/blog/process-injection-dinvoke/)
+				* [NET-Assembly-Inject-Remote](https://github.com/med0x2e/NET-Assembly-Inject-Remote)
+					* PoC demonstrating some methods for .NET assembly local/remote loading/injection into memory using System.AppDomain.ExecuteAssembly() and System.Reflection.Assembly.LoadFrom() method (check "NetAssembly-Injection/AssemblyLoader.cs" methods documentation).
+				* [RuralBishop](https://github.com/rasta-mouse/RuralBishop)
+					* RuralBishop is practically a carbon copy of UrbanBishop by b33f, but all P/Invoke calls have been replaced with D/Invoke. This creates a local RW section in RuralBishop and then maps that section as RX into a remote process. Once the shared section has been established the shellcode is written to the local section which then automatically propagates to the remote process. For execution RuralBishop creates a remote suspended thread (start address is set to ntdll!RtlExitUserThread) and queues an APC on that thread. Once resumed with NtAlertResumeThread, the shellcode executes and the thread exits gracefully on completion.
+				* [The Curious Case of QueueUserAPC - Dwight Hohnstein(2019)](https://posts.specterops.io/the-curious-case-of-queueuserapc-3f62e966d2cb)
+				* [Staying # & Bringing Covert Injection Tradecraft to .NET - The Wover & Ruben Boonen(BlueHat IL 2020)](https://www.youtube.com/watch?v=FuxpMXTgV9s)
+					* [Slides](https://raw.githubusercontent.com/FuzzySecurity/BlueHatIL-2020/master/Ruben%20Boonen%20%26%20TheWover%20-%20BHIL2020_Staying%23_v0.4.pdf)
+					* [Code](https://github.com/FuzzySecurity/BlueHatIL-2020)
+					* In our talk we will focus on explaining the fundamental tradecraft behind these new developments, the challenges and requirements associated with them, and how they can be adapted to suit your needs. Additionally, we will discuss how SharpSploit can be combined with other open-source projects to be integrated into a red team's tooling. As much as possible, we will also discuss how to counter and detect the techniques that we have developed. Finally, we will explain the community-focused development of these projects and how you too can contribute to advance open-source .NET tradecraft.
+			* **Tools**
+				* [Donut](https://github.com/TheWover/donut)
+					* Generates x86, x64, or AMD64+x86 position-independent shellcode that loads .NET Assemblies, PE files, and other Windows payloads from memory and runs them with parameters 
+				* [donutCS](https://github.com/n1xbyte/donutCS)
+					* .NET Core version of donut shellcode generator.
+				* [C# Memory Injection Examples](https://github.com/pwndizzle/c-sharp-memory-injection)
+					* A set of scripts that demonstrate how to perform memory injection.
+				* [Execute assembly via Meterpreter session](https://github.com/b4rtik/metasploit-execute-assembly)
+					* Custom Metasploit post module to executing a .NET Assembly from Meterpreter session 
 				* [TikiTorch](https://github.com/rasta-mouse/TikiTorch)
 					* TikiTorch was named in homage to CACTUSTORCH by Vincent Yiu. The basic concept of CACTUSTORCH is that it spawns a new process, allocates a region of memory, then uses CreateRemoteThread to run the desired shellcode within that target process. Both the process and shellcode are specified by the user.
 					* [TikiTorch - Rastamouse](https://rastamouse.me/blog/tikitorch/)
@@ -2470,253 +2375,498 @@
 					* [The Return of Aggressor - Rastamouse](https://rastamouse.me/blog/tikigressor/)
 					* [TikiService - Rastamouse](https://rastamouse.me/blog/tikiservice/)
 					* [Lighting the path through EDRs using TikiTorch - RhythmStick(2019)](https://www.rythmstick.net/posts/tikitorch/)
-				* [Red Team Tradecraft: Loading Encrypted C# Assemblies In Memory - mike gualtieri(2020)](https://www.mike-gualtieri.com/posts/red-team-tradecraft-loading-encrypted-c-sharp-assemblies-in-memory)
-			* **Networking**
-			* **PE32**
-				* [Conari](https://github.com/3F/Conari)
-					* Conari engine represents powerful platform for work with unmanaged memory, pe-modules, related PInvoke features, and more for: Libraries, Executable Modules, enjoying of the unmanaged native C/C++ in .NET world, and other raw binary data. Even accessing to complex types like structures without their declaration at all.
-				* [LuNari](https://github.com/3F/LuNari)
-					* LuNari is Lua for .NET on Conari engine
-				* [.NET DllExport](https://github.com/3F/DllExport)
-					* .NET DllExport with .NET Core support (aka 3F/DllExport)
-			* **Publishing**
-			* **Examples/Samples**
-				* [AsyncRAT-VB.NET](https://github.com/TheWover/AsyncRAT-VB.NET)
-					* Remote Administration Tool For Windows VB.NET 
-				* [OffensiveDLR](https://github.com/byt3bl33d3r/OffensiveDLR)
-					* Toolbox containing research notes & PoC code for weaponizing .NET's DLR
-			* **WebServer**
-			* **Other**
-				* [Unstoppable Service](https://github.com/malcomvetter/UnstoppableService)
-					* A pattern for a self-installing Windows service in C# with the unstoppable attributes in C#.		
-			* **Talks/Presentations/Videos**
-				* [.NET Malware Threats: Internals And Reversing - Alexandre Borges(Defcon27)](https://www.youtube.com/watch?v=UB3pVTO5izU)
-					* .NET malware is well-known by security analysts, but even existing many tools such as dnSpy,.NET Reflector, de4dot and so on to make the analysis easier, most professionals have used them as a black box tool, without concerning to .NET internals, structures, MSIL coding and details. In critical cases, it is necessary have enough knowledge about internal mechanisms and to debug these .NET threats using WinDbg.  Unfortunately, .NET malware samples have become very challenger because it is so complicated to deobfuscated associated resources, as unpacking and dumping them from memory. Furthermore, most GUI debugging tools does an inside view of mechanisms such as CRL Loader, Managed Heap, Synchronization issues and Garbage Collection.  In the other side, .NET malware threats are incredibly interesting when analyzed from the MSIL instruction code, which allows to see code injections using .MSIL and attempts to compromise .NET Runtime keep being a real concern.  The purpose of this presentation is to help professionals to understand .NET malware threats and techniques by explaining concepts about .NET internals, mechanisms and few reversing techniques.
-		* **Nim**<a name="nimlang"></a>
-			* **Articles/Blogposts**
-				* [Bypassing Windows protection mechanisms & Playing with OffensiveNim - s3cur3th1ssh1t(2020)](https://s3cur3th1ssh1t.github.io/Playing-with-OffensiveNim/)
-				* [Implant Roulette Part 1: Nimplant - NotoriousRebel(2020)](https://secbytes.net/implant-roulette-part-1:-nimplant/)
-				* [Мета-программирование Nim и обфускация - Rel(2020)](https://wasm.in/blogs/meta-programmirovanie-nim-i-obfuskacija.706)
-			* **Malware/APT Samples**
-				* [Linux.Cephei: a Nim virus - Guilherme Thomazi(2017)](https://www.guitmz.com/linux-cephei-a-nim-virus/)
-				* [Zebrocy’s Multilanguage Malware Salad - Global Research & Analysis Team, Kaspersky Lab(2019)](https://securelist.com/zebrocys-multilanguage-malware-salad/90680/)
-				* [Nimar Loader - https://medium.com/walmartglobaltech/nimar-loader-4f61c090c49e(2021)](https://medium.com/walmartglobaltech/nimar-loader-4f61c090c49e)
-				* [Investigation into the state of Nim malware - Jason Reaves, Joshua Platt(2021)](https://medium.com/walmartglobaltech/investigation-into-the-state-of-nim-malware-14cc543af811)
-			* **Config**
-				* [Using NimScript as a configuration language (Embedding NimScript pt. 1) - peterme.net](https://peterme.net/using-nimscript-as-a-configuration-language-embedding-nimscript-pt-1.html)
-			* **Crypter/Obfuscation**
-				* [denim](https://github.com/moloch--/denim)
-					* Automated compiler obfuscation for nim 
-				* [steganography](https://github.com/treeform/steganography)
-					* Image stego library
-			* **Examples**
-				* [Nimplant](https://github.com/MythicAgents/Nimplant)
-					* Nimplant is a cross-platform (Linux & Windows) implant written in Nim as a fun project to learn about Nim and see what it can bring to the table for red team tool development. Currently, Nimplant lacks extensive evasive tradecraft; however, overtime Nimplant will become much more sophisticated.
-				* [NimExamples](https://github.com/ajpc500/NimExamples)
-				* [Linux.Cephei](https://github.com/guitmz/nim-cephei)
-					* Probably the first ELF binary infector ever created in Nim.
-			* **Injection**
-			* **Libraries**
-				* 
-			* **Networking**
-				* [nim-libp2p](https://github.com/status-im/nim-libp2p)
-					* libp2p implementation in Nim
-				* [Nim-SMBExec](https://github.com/elddy/Nim-SMBExec)
-					* SMBExec implementation in Nim - SMBv2 using NTLM Authentication with Pass-The-Hash technique
-				* [NimScan](https://github.com/elddy/NimScan)
-					* Really fast port scanner (With filtered option - Windows support only)
-				* [iputils](https://github.com/rockcavera/nim-iputils)
-					* Utilities for use with IP. It has functions for IPv4, IPv6 and CIDR.
-				* [nim-socks5](https://github.com/FedericoCeratto/nim-socks5)
-					* Nim Socks5 library
-				* [backoff](https://github.com/CORDEA/backoff)
-					* Implementation of exponential backoff for nim. 
-			* **PE32**
-			* **Publishing**
-			* **Injection/Shellcode**
-				* [Shellcode Injection using Nim and Syscalls - ajpc500](https://ajpc500.github.io/nim/Shellcode-Injection-using-Nim-and-Syscalls/)
-			* **Syscalls**
-				* [nim-syscall](https://github.com/def-/nim-syscall)
-					* Raw system calls for Nim [Linux]
-				* [NimlineWhispers](https://github.com/ajpc500/NimlineWhispers)
-					* A very proof-of-concept port of InlineWhispers for using syscalls in Nim projects. 
-			* **Tradecraft**
-				* [OffensiveNim](https://github.com/byt3bl33d3r/OffensiveNim)
-					* "My experiments in weaponizing Nim for implant development and general offensive operations."
-				* [c2nim](https://github.com/nim-lang/c2nim)
-					*  c2nim is a tool to translate Ansi C code to Nim. The output is human-readable Nim code that is meant to be tweaked by hand before and after the translation process.
-			* **Utilities**
-				* [zippy](https://github.com/guzba/zippy)
-					* Pure Nim implementation of deflate, zlib, gzip and zip. 
-				* [nim-registry](https://github.com/miere43/nim-registry)
-					* Deal with Windows Registry from Nim.
-				* [nim-daemon](https://github.com/status-im/nim-daemon)
-					* This closs-platform library is used to daemonize processes: that is, make them run in the background and independently of the terminal. The library is used to develop Unix daemons and background processes on Windows.
-			* **Web(Server)**
-				* [jester](https://github.com/dom96/jester)
-					* A sinatra-like web framework for Nim.
-				* [Karax](https://github.com/pragmagic/karax)
-					* Single page applications for Nim.
-				* [Neel](https://github.com/Niminem/Neel)
-					* A Nim library for making Electron-like HTML/JS GUI apps, with full access to Nim capabilities. 
-				* [ws](https://github.com/treeform/ws)
-					* Simple WebSocket library for nim.
-			* **Other**				
-				* [libkeepass](https://github.com/PMunch/libkeepass)
-					* Library for reading KeePass files and decrypt the passwords within it 
-		* **PowerShell**
-			* [Invoke-BSOD](https://github.com/peewpw/Invoke-BSOD)
-				* A PowerShell script to induce a Blue Screen of Death (BSOD) without admin privileges. Also enumerates Windows crash 	dump settings. This is a standalone script, it does not depend on any other files.
-			* [PowerDropper](https://github.com/gigajew/PowerDropper)
-				* App that generates PowerShell dropper scripts for .NET executables
-			* [PowerStager](https://github.com/z0noxz/powerstager)
-				* This script creates an executable stager that downloads a selected powershell payload, loads it into memory and executes it using obfuscated EC methods. The script will also encrypt the stager for dynamic signatures and some additional obfuscation. This enables the actual payload to be executed indirectly without the victim downloading it, only by executing the stager. The attacker can then for example implement evasion techniques on the web server, hosting the payload, instead of in the stager itself.
-		* **Python**
-			* **Binaries**
-				* [LIEF](https://github.com/lief-project/LIEF)
-					* LIEF - Library to Instrument Executable Formats. The purpose of this project is to provide a cross platform library which can parse, modify and abstract ELF, PE and MachO formats.
-			* **Crypter/Obfuscator**
-			* **Embedding into Other Langs**
-				* [Random thoughts about embedding python into your application - rewolf(2011)](http://blog.rewolf.pl/blog/?p=259)
-					* In this post I want to share some of my thoughts about embedding python into C/C++ applications. It will not be yet another python tutorial, but just my personal feelings about some of the mechanisms that I’ve encountered during my work on dirtyJOE.
-			* **GUI**
-				* [Gooey](https://github.com/chriskiehl/Gooey)
-					* Turn (almost) any Python 2 or 3 Console Program into a GUI application with one line
-			* **Injection/Shellcode**
-			* **Networking**
-			* **PE32**
-			* **Publishing**
-			* **WebServer**
-			* **Other**
-				* [Inline C](https://github.com/georgek42/inlinec)
-					* Effortlessly write inline C functions in Python
-				* [Making Raw Syscalls on Windows From Python - Spencer(2017)](https://warroom.rsmus.com/making-syscalls-python/)
-			* **Examples**
-				* [Ares](https://github.com/sweetsoftware/Ares)
-					* Ares is a Python Remote Access Tool.
-				* [Pupy](https://github.com/n1nj4sec/pupy)
-					* Pupy is an opensource, cross-platform (Windows, Linux, OSX, Android) remote administration and post-exploitation tool mainly written in python
-				* [covertutils - A framework for Backdoor development!](https://github.com/operatorequals/covertutils)
-					* This Python package is used to create Agent/Handler backdoors, like metasploit's meterpreter, empire's empire agent, cobalt strike's beacon and so on... It automatically handles all communication channel options, like encryption, chunking, steganography, sessions, etc. With a recent package addition (httpimport), staging from pure Python2/3 is finally possible! With all those set with a few lines of code, a programmer can spend time creating the actual payloads, persistense mechanisms, shellcodes and generally more creative stuff!! The security programmers can stop re-inventing the wheel by implementing encryption mechanisms both Agent-side and Handler-side to spend their time developing more versatile Agents, and generally feature-rich shells!
-				* [RedSails](https://github.com/BeetleChunks/redsails)
-					* Python based post-exploitation project aimed at bypassing host based security monitoring and logging. [DerbyCon 2017 Talk](https://www.youtube.com/watch?v=Ul8uPvlOsug)
-				* [stupid_malware](https://github.com/andrew-morris/stupid_malware)
-					* Python malware for pentesters that bypasses most antivirus (signature and heuristics) and IPS using sheer stupidity
-				* [Stitch](https://github.com/nathanlopez/Stitch)
-					* This is a cross platform python framework which allows you to build custom payloads for Windows, Mac OSX and Linux as well. You are able to select whether the payload binds to a specific IP and port, listens for a connection on a port, option to send an email of system info when the system boots, and option to start keylogger on boot. Payloads created can only run on the OS that they were created on.
-				* [Ares](https://github.com/sweetsoftware/Ares)
-					* Ares is a Python Remote Access Tool.
-				* [WEASEL](https://github.com/facebookincubator/WEASEL)
-					* WEASEL is a small in-memory implant using Python 3 with no dependencies. The beacon client sends a small amount of identifying information about its host to a DNS zone you control. WEASEL server can task clients to execute pre-baked or arbitrary commands. WEASEL is a stage 1 payload, meant to be difficult to detect and useful for regaining access when your noisy full-featured stages are caught.
-		* **Rust**<a name="rust"></a>
-			* **Tradecraft**
-			* **Crypter/Obfuscator**
-			* **Injection/Shellcode**
-				* [asm - The Rust RFC Book](https://rust-lang.github.io/rfcs/2873-inline-asm.html)
-					* "This RFC specifies a new syntax for inline assembly which is suitable for eventual stabilization."
-			* **Networking**
-			* **PE32**
-				* [goblin](https://github.com/m4b/goblin)
-					* An impish, cross-platform binary parsing crate, written in Rust
-			* **Publishing**
- 				* [Minimizing Rust Binary Size](https://github.com/johnthagen/min-sized-rust)
-					* This repository demonstrates how to minimize the size of a Rust binary.
-			* **WebServer**
-			* **Other**
-			* **Examples**
-			* **macOS Specific**
-				* [core-foundation-rs](https://github.com/servo/core-foundation-rs)
-					* Rust bindings to Core Foundation and other low level libraries on Mac OS X and iOS 
-			* **Windows-Specific**
-				* [Rust for Windows - Kenny Kerr(2021)](https://kennykerr.ca/2021/01/21/rust-for-windows/)
-				* [Rust for Windows](https://github.com/microsoft/windows-rs)
-					* The windows crate lets you call any Windows API past, present, and future using code generated on the fly directly from the metadata describing the API and right into your Rust package where you can call them as if they were just another Rust module.
-				* [tinywin](https://github.com/janiorca/tinywin)
-					* A very small but functional Win32 apps in Rust using no_std
-	* **Linux Specific**
-		* **ELF Injection**
-			* [ELFun File Injector - pico(2016)](https://0x00sec.org/t/elfun-file-injector/410)
-		* **Unsorted**
-			* [Zombie Ant Farm: Practical Tips for Playing Hide and Seek with Linux EDRs.](https://github.com/dsnezhkov/zombieant)
-				* Zombie Ant Farm: Primitives and Offensive Tooling for Linux EDR evasion
-	* **macOS Specific**
-		* **Articles/Blogposts**
-			* [My Journey Writing A Post Exploitation Tool for macOS - Cedric Owens(2019)](https://medium.com/red-teaming-with-a-blue-team-mentaility/my-journey-writing-a-post-exploitation-tool-for-macos-d8293d51244f)
-	* **Windows Specific**
-		* [awesome-windows-kernel-security-development](https://github.com/ExpLife0011/awesome-windows-kernel-security-development)
-		* **Hooking**
-			* [Hook_API](https://github.com/EgeBalci/Hook_API)
-				* Assembly block for hooking windows API functions. 
-		* **IAT**
-			* [IAT_API](https://github.com/EgeBalci/IAT_API)
-				* Assembly block for finding and calling the windows API functions inside import address table(IAT) of the running PE file.
-		* **In-Memory**
-			* [Memory Resident Implants Code injection is alive and well - Luke Jennings(BlueHatv18)](https://www.youtube.com/watch?v=02fL2xpR7IM)
-			* [Hunting for Memory Resident Malware - Joe Desimone(Derbycon7)](https://archive.org/details/DerbyCon7/S21-Hunting-for-Memory-Resident-Malware-Joe-Desimone.mp4)
-			* [Masking Malicious Memory Artifacts – Part I: Phantom DLL Hollowing - Forrest Orr(2019)](https://www.forrest-orr.net/post/malicious-memory-artifacts-part-i-dll-hollowing)
-				* [Part 2](https://www.forrest-orr.net/post/masking-malicious-memory-artifacts-part-ii-insights-from-moneta)
-			* [Moneta](https://github.com/forrest-orr/moneta)
-				* Moneta is a live usermode memory analysis tool for Windows with the capability to detect malware IOCs 
-		* **Installation & Update**
-			* [Squirrel](https://github.com/Squirrel/Squirrel.Windows)
-				* Squirrel is both a set of tools and a library, to completely manage both installation and updating your Desktop Windows application, written in either C# or any other language (i.e., Squirrel can manage native C++ applications).
-		* **PE32**
-			* [tinyPE](https://github.com/rcx/tinyPE)
-				* Smallest possible PE files. Artisanal, hand-crafted with love and care.
-			* [PE-Packer](https://github.com/czs108/PE-Packer)
-				* A simple Windows x86 PE file packer written in C & Microsoft Assembly.
-			* [αcτµαlly pδrταblε εxεcµταblε - Justine Alexandra Roberts Tunney(2020)](https://raw.githubusercontent.com/jart/cosmopolitan/37a4c70c3634862d8d005955c032b5a2fa8737c5/ape/ape.S)
-				* [Link](https://justine.lol/ape.html)
-			* [Generating Custom Cobalt Strike Artifacts with PEzor - phra(2021)](https://iwantmore.pizza/posts/PEzor3.html)
-		* **Shellcode**
-			* [Write Windows Shellcode in Rust](https://github.com/b1tg/rust-windows-shellcode)
-				* Windows shellcode development in Rust 
-			* [Writing Optimized Windows Shellcode in C - Matt Graeber(2013)](http://www.exploit-monday.com/2013/08/writing-optimized-windows-shellcode-in-c.html)
-		* **Tradecraft**
-			* [DLL Proxy Loading Your Favourite C# Implant - Flangvik(2020)](https://redteaming.co.uk/2020/07/12/dll-proxy-loading-your-favorite-c-implant/)
-			* [Red Team Tactics: Hiding Windows Services - Joshua Wright(2020)](https://www.sans.org/blog/red-team-tactics-hiding-windows-services/)
-			* [Runtime symbol resolution - Federico Lagrasta(2020)](https://offnotes.notso.pro/malware-development/function-call-obfuscation/runtime-symbol-resolution)
-				* Using LoadLibraryW and GetProcAddress to avoid suspicious imports
-			* [Preventing 3rd Party DLLs from Injecting into your Malware - @spottheplanet](https://www.ired.team/offensive-security/defense-evasion/preventing-3rd-party-dlls-from-injecting-into-your-processes)
-			* [Hindering Threat Hunting, a tale of evasion in a restricted environment - Borja Merino(2020)](https://www.blackarrow.net/hindering-threat-hunting-a-tale-of-evasion-in-a-restricted-environment/)
-			* [Fat Free Guide To Process Hollowing and Droppers - Sneakidia(2020)](https://sneakidia.blogspot.com/2020/10/fat-free-guide-to-process-hollowing-and.html)
-			* [Hiding execution of unsigned code in system threads - drew(2021)](https://secret.club/2021/01/12/callout.html)
-			* [dearg-thread-ipc-stealth](https://github.com/LloydLabs/dearg-thread-ipc-stealth)
-				* A novel technique to communicate between threads using the standard ETHREAD structure
-			* [Hiding your process from sysinternals](https://riscybusiness.wordpress.com/2017/10/07/hiding-your-process-from-sysinternals/)
-			* [Universal Unhooking: Blinding Security Software - Jeffrey Tang](https://threatvector.cylance.com/en_us/home/universal-unhooking-blinding-security-software.html)
-			* [You're Off the Hook: Blinding Security Software - Alex Matrosov, Jeff Tang](https://www.slideshare.net/cylance_inc/youre-off-the-hook-blinding-security-software)
-			* [hide-and-seek](https://github.com/reversinghub/hide-and-seek)
-				* PoC for hiding processes from Windows Task Manager by manipulating the graphic interface
-		* **WinAPI**
-			* **Articles/Blogposts**
-				* [The Inner Workings Of Railgun - Spencer](https://warroom.rsmus.com/inner-workings-railgun/)
-			* **Talks/Presentations/Videos**
-				* [How Malware Can Resolve APIs By Hash - AGDC Services](https://www.youtube.com/watch?v=q8of74upT_g)
-					* In this video, we will learn how to recognize a common obfuscation technique malware uses; resolving APIs by hash at run time. This technique is often used in shellcode, packers, and to thwart AV vendors. Learning to quickly recognize the technique and understand how to deal with it is an important technique to know to advance your malware analysis skills.
+				* [Managed Injector](https://github.com/enkomio/ManagedInjector)
+					* This project implements a .NET Assembly injection library (it is inspired by the snoopwpf project). The remote process can be a managed or unmanaged one.
+				* [MemorySharp](https://github.com/ZenLulz/MemorySharp)
+					* MemorySharp is a C# based memory editing library targeting Windows applications, offering various functions to extract and inject data and codes into remote processes to allow interoperability.
+				* [ManagedInjection](https://github.com/malcomvetter/ManagedInjection)
+					* A proof of concept for dynamically loading .net assemblies at runtime with only a minimal convention pre-knowledge
+				* [SharpNeedle](https://github.com/ChadSki/SharpNeedle)
+					* A project for properly injecting C# dlls into other processes.
+				* [ManagedInjection](https://github.com/malcomvetter/ManagedInjection)
+					* A proof of concept for injecting a pre-compiled .net assembly in memory at runtime with zero pre-knowledge of its assembly namespace or type. All that is necessary is a convention for the initial method name which will be instantiated, or just have the assembly initialize via its Constructor for a true "zero knowledge" scenario.
+				* [Remote AppDomainManager Injection - byt3bl33d3r](https://gist.github.com/byt3bl33d3r/de10408a2ac9e9ae6f76ffbe565456c3)
+				* [DotNetDebug](https://github.com/xpn/DotNetDebug)
+				* [DNCI - Dot Net Code Injector](https://github.com/guibacellar/DNCI)
+					* DNCI allows the injection of .Net code (.exe or .dll) remotely in unmanaged processes in windows.	
+				* [UrbanBishopLocal](https://github.com/slyd0g/UrbanBishopLocal)
+					*  A port of FuzzySecurity's UrbanBishop project for inline shellcode execution 
+				* [ProcessInjection](https://github.com/3xpl01tc0d3r/ProcessInjection)
+					* The program is designed to perform process injection. Currently the tool supports 4 process injection techniques.
+		* **PS in C#**
+			* **Articles/Blogposts/Writeups**
+				* [Executing PowerShell scripts from C# - doc.ms(2014)](https://docs.microsoft.com/en-us/archive/blogs/kebab/executing-powershell-scripts-from-c)
+					* "In today’s post, I will demonstrate the basics of how to execute PowerShell scripts and code from within a C#/.NET applications. I will walk through how to setup your project prerequisites, populate the pipeline with script code and parameters, perform synchronous and asynchronous execution, capture output, and leverage shared namespaces."
+				* [Using C# for post-PowerShell attacks - John Bergbom(2018)](https://www.forcepoint.com/blog/x-labs/using-c-post-powershell-attacks)
 			* **Tools**
-				* [CsWin32](https://github.com/microsoft/CsWin32)
-					* A source generator to add a user-defined set of Win32 P/Invoke methods and supporting types to a C# project. 
-				* [cppwin32](https://github.com/microsoft/cppwin32)
-					* A modern C++ projection for the Win32 SDK	
-				* [Windows-API-Hashing](https://github.com/LloydLabs/Windows-API-Hashing)
-					* Windows API resolution via hashing
-				* [IAT API](https://github.com/EgeBalci/IAT_API)
-					* Assembly block for finding and calling the windows API functions inside import address table(IAT) of the running PE file.
-				* [WinAPI-Tricks](https://github.com/vxunderground/WinAPI-Tricks)
-					* Collection of various WINAPI tricks / features used or abused by Malware 			
-				* [Modular Windows.h Header File](https://github.com/Leandros/WindowsHModular)
-					* The Windows.h header file for the Win32 API is a behemoth of include file, adding hundreds of thousands of new macros, structs and functions. This project aims to modularize the Windows.h file, to only include what you require.
-		* **Samples of**
-			* [delete-self-poc](https://github.com/LloydLabs/delete-self-poc)
-				* (Windows)A way to delete a locked file, or current running executable, on disk.
-			* [WSAAcceptBackdoor](https://github.com/EgeBalci/WSAAcceptBackdoor)
-				* This project is a POC implementation for a DLL implant that acts as a backdoor for accept Winsock API calls. Once the DLL is injected into the target process, every accept call is intercepted using the Microsoft's detour library and redirected into the BackdooredAccept function. When a socket connection with a pre-defined special source port is establised, BackdooredAccept function launches a cmd.exe process and binds the accepted socket to the process STD(OUT/IN) using a named pipe.
+				* [NoPowerShell](https://github.com/bitsadmin/nopowershell)
+					* NoPowerShell is a tool implemented in C# which supports executing PowerShell-like commands while remaining invisible to any PowerShell logging mechanisms. This .NET Framework 2 compatible binary can be loaded in Cobalt Strike to execute commands in-memory. No System.Management.Automation.dll is used; only native .NET libraries. An alternative usecase for NoPowerShell is to launch it as a DLL via rundll32.exe: rundll32 NoPowerShell.dll,main.
+				* [p0wnedShell](https://github.com/Cn33liz/p0wnedShell)
+					* PowerShell Runspace Post Exploitation Toolkit 
+				* [p0wnedLoader](https://github.com/Cn33liz/p0wnedLoader)
+				* [Smallp0wnedShell](https://github.com/3gstudent/Smallp0wnedShell)
+					* Small modification version of PowerShell Runspace Post Exploitation Toolkit (p0wnedShell)
+				* [CScriptShell](https://github.com/Cn33liz/CScriptShell)
+				* [Stracciatella](https://github.com/mgeeky/Stracciatella)
+					* OpSec-safe Powershell runspace from within C# (aka SharpPick) with AMSI, CLM and Script Block Logging disabled at startup
+				* [SpaceRunner](https://github.com/Mr-B0b/SpaceRunner)
+					* This tool enables the compilation of a C# program that will execute arbitrary PowerShell code, without launching PowerShell processes through the use of runspace.
+		* **Recon (Host)**
+			* [SeatBelt](https://github.com/GhostPack/Seatbelt)
+				* Seatbelt is a C# project that performs a number of security oriented host-survey "safety checks" relevant from both offensive and defensive security perspectives. 
+		* **Recon (Network)**
+			* [SharpShares](https://github.com/mitchmoser/SharpShares)
+				* Multithreaded C# .NET Assembly to enumerate accessible network shares in a domain
+			* [Scout](https://github.com/jaredhaight/scout)
+				* Scout is a .NET assembly used to perform recon on hosts during a pentest. Specifically, this was created as a way to check a host before laterally moving to it.
+		* **Reflection**
+		    * [Reflection (C#) - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection)
+	    		* Reflection provides objects (of type Type) that describe assemblies, modules, and types. You can use reflection to dynamically create an instance of a type, bind the type to an existing object, or get the type from an existing object and invoke its methods or access its fields and properties. If you are using attributes in your code, reflection enables you to access them. For more information, see Attributes.
+	    	* [How C# Reflection Works With Code Examples - stackify](https://stackify.com/what-is-c-reflection/)
+	    	* [Reflection in .NET - keesari_anjaiah(2010)](https://www.codeproject.com/Articles/55710/Reflection-in-NET)
+	    	* [What is Reflection in C#? - geeksforgeeks(2019)](https://www.geeksforgeeks.org/what-is-reflection-in-c-sharp/)
+		* **Registry (Windows)**
+			* [RegistryStrikesBack](https://github.com/mdsecactivebreach/RegistryStrikesBack)
+				* RegistryStrikesBack allows a red team operator to export valid .reg files for portions of the Windows Registry via a .NET assembly that should run as a standard user.
+			* [Registry](https://github.com/EricZimmerman/Registry)
+				* Full featured, offline Registry parser in C#.
+		* **Resource Embedding**
+			* [Single File Executable - docs.ms](https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0#single-file-executables)
+			* [Assembly Linking - docs.ms](https://docs.microsoft.com/en-us/dotnet/core/whats-new/dotnet-core-3-0#assembly-linking)
+			* [Embedding .NET Assemblies inside .NET Assemblies - Denham Coder(2018)](https://denhamcoder.net/2018/08/25/embedding-net-assemblies-inside-net-assemblies/)
+			* [Fody](https://github.com/Fody/Home/#endofbacking)
+				* The Home repository is the starting point for people to learn about Fody, the project.
+			* [Fody Engine](https://github.com/Fody/Fody)
+				* Extensible tool for weaving .net assemblies. Manipulating the IL of an assembly as part of a build requires a significant amount of plumbing code. This plumbing code involves knowledge of both the MSBuild and Visual Studio APIs. Fody attempts to eliminate that plumbing code through an extensible add-in model.
+			* [Costura](https://github.com/Fody/Costura)
+				* Embed references as resources
+		* **Scheduled Tasks**
+			* **Articles/Blogposts/Writeups**
+				* [Creating Scheduled Tasks(C#) - StackOverflow](https://stackoverflow.com/questions/7394806/creating-scheduled-tasks)
+				* [Creating a Task Using NewWorkItem Example - docs.ms](https://docs.microsoft.com/en-us/windows/win32/taskschd/creating-a-task-using-newworkitem-example)
+			* **Tools**
+				* [Task Scheduler](https://github.com/dahall/taskscheduler)
+					* Provides a .NET wrapper for the Windows Task Scheduler. It aggregates the multiple versions, provides an editor and allows for localization.
+				* [ScheduleRunner](https://github.com/netero1010/ScheduleRunner)
+					* A C# tool with more flexibility to customize scheduled task for both persistence and lateral movement in red team operation
+		* **Symbolic Links**
+			* [SharpLink](https://github.com/usdAG/SharpLink)
+				* Create file system symbolic links from low privileged user accounts within PowerShell
+		* **Serialization**
+			* **Gadget2Jscript**
+				* [GadgetToJScript - RastaMouse(2020)](https://rastamouse.me/blog/gadgettojscript/)
+					* [Github](https://github.com/rasta-mouse/GadgetToJScript)
+				* [GadgetToJScript - 3gstudent](https://3gstudent.github.io/3gstudent.github.io/GadgetToJScript%E5%88%A9%E7%94%A8%E5%88%86%E6%9E%90/)
+				* [GadgetToJScript](https://github.com/med0x2e/GadgetToJScript)
+					* A tool for generating .NET serialized gadgets that can trigger .NET assembly load/execution when deserialized using BinaryFormatter from JS/VBS based scripts. The gadget being used triggers a call to Assembly.Load when deserialized via jscript/vbscript, this means it can be used in the same way to trigger in-memory load of your own shellcode loader at runtime. Lastly, the tool was created mainly for automating WSH scripts weaponization for RT engagements (LT, Persistence, Initial Compromise), the shellcode loader which was used for PoC is removed and replaced by an example assembly implemented in the "TestAssemblyLoader.cs" class for PoC purpose.
+				* [GadgetToJScript, Covenant, Donut - 3xpl01tc0d3r](https://3xpl01tc0d3r.blogspot.com/2020/02/gadgettojscript-covenant-donut.html)
+			* **Tools**
+				* [DotNetDeserializationScanner](https://github.com/leechristensen/DotNetDeserializationScanner)
+					* Scans for .NET Deserialization Bugs in .NET Assemblies 
+		* **Syscalls**
+			* [Red Team Tactics: Utilizing Syscalls in C# - Prerequisite Knowledge - Jack Halon(2020)](https://jhalon.github.io/utilizing-syscalls-in-csharp-1/)
+				* [Part2: Writing The Code](https://jhalon.github.io/utilizing-syscalls-in-csharp-2/)
+			* **Tools**
+				* [An example of using Syscalls in C# to get a meterpreter shell.](https://github.com/plackyhacker/Sys-Calls)
+				* [TripleS - Extracting Syscall Stub, Modernized](https://github.com/GetRektBoy724/TripleS)
+					* "TripleS or 3S is short for Syscall Stub Stealer. It freshly "steal" syscall stub straight from the disk. You can use TripleS for evading userland hooks from EDRs/AVs.TripleS doesnt invoke any unmanaged API, its all .NET's managed function. I cant say that its better than D/Invoke's GetSyscallStub, but in my opinion, its better. Anyway, I suck at making description, so if you have any question,you can DM me on Discord."
+				* [SysCallTables](https://github.com/hfiref0x/SyscallTables)		
+				* [SharpCall](https://github.com/jhalon/SharpCall)
+					* Simple proof of concept code that allows you to execute direct system calls in C# by utilizing unmanaged code to bypass EDR and API Hooking.
+		* **User Simulation**
+			* [Sim](https://github.com/IceMoonHSV/Sim)
+				* Sim is a C# application that ingests an XML file and performs tasks based on the provided XML. It is meant to resemble user actions on a system. The goal of this is to help facilitate training and education by providing a more realistic environment to practice.
+		* **Web Server**
+			* [SharpWebServer](https://github.com/mgeeky/SharpWebServer)
+				* A Red Team oriented simple HTTP & WebDAV server written in C# with functionality to capture Net-NTLM hashes. To be used for serving payloads on compromised machines for lateral movement purposes.
+		* **Windows Services**
+			* [Using Parameters With InstallUtil - ip3lee](https://diaryofadeveloper.wordpress.com/2012/04/26/using-paramters-with-installutil/)
+			* [SharpSC](https://github.com/djhohnstein/SharpSC)
+				* Simple .NET assembly to interact with services.
+		* **WinAPI Access**
+			* **Articles/Blogposts/Writeups**
+				* [Offensive P/Invoke: Leveraging the Win32 API from Managed Code - Matt Hand](https://posts.specterops.io/offensive-p-invoke-leveraging-the-win32-api-from-managed-code-7eef4fdef16d)
+				* [SharpSploit.Execution.DynamicInvoke](https://github.com/cobbr/SharpSploit/blob/master/SharpSploit/SharpSploit%20-%20Quick%20Command%20Reference.md#sharpsploitexecutiondynamicinvoke)
+			* **DInvoke**
+				* **Articles/Blogposts/Writeups**
+					* [Emulating Covert Operations - Dynamic Invocation (Avoiding PInvoke & API Hooks) - thewover(2020)](https://thewover.github.io/Dynamic-Invoke/)
+					* [D/Invoke & GadgetToJScript - Rasta Mouse(2021)](https://rastamouse.me/d-invoke-gadgettojscript/)
+				* **Tools**
+					* [DInvoke](https://github.com/TheWover/DInvoke)
+						* Dynamic replacement for PInvoke on Windows. DInvoke contains powerful primitives that may be combined intelligently to dynamically invoke unmanaged code from disk or from memory with careful precision. This may be used for many purposes such as PE parsing, intelligent dynamic API resolution, dynamically loading PE plugins at runtime, process injection, and avoiding API hooks.
+					* [Reprobate](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/Reprobate)
+						* "Reprobate consists of two cs files which contain all of the DynamicInvoke functionality and are meant to be plug-and-play for your C# projects. This can be preferable to using a nuget package or whole-sale including SharpSploit. Eventually I will integrate bubble-sort Syscall ID identification as well to avoid manual ntdll mapping/enumeration."
+			* **PInvoke**
+				* **Articles/Blogposts/Writeups**
+					* [Platform Invoke (P/Invoke) - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/native-interop/pinvoke)
+					* [How to: Call Native DLLs from Managed Code Using PInvoke - docs.ms](https://docs.microsoft.com/en-us/cpp/dotnet/how-to-call-native-dlls-from-managed-code-using-pinvoke?view=msvc-160)
+					* [pinvoke](https://github.com/dotnet/pinvoke)
+						* A library containing all P/Invoke code so you don't have to import it every time. Maintained and updated to support the latest Windows OS. 
+						* [pinvoke.net](https://www.pinvoke.net/)
+				* **Tools**
+			* **Tools**
+				* [Vanara](https://github.com/dahall/Vanara)
+					* This project contains various .NET assemblies that contain P/Invoke functions, interfaces, enums and structures from Windows libraries. Each assembly is associated with one or a few tightly related libraries. For example, Shlwapi.dll has all the exported functions from shlwapi.lib; Kernel32.dll has all for both kernel32.lib and kernelbase.lib.
+				* [ManagedWindows](https://github.com/zodiacon/ManagedWindows)
+					* Managed wrappers around the Windows API and some Native API
+				* [taskkill](https://github.com/malcomvetter/taskkill)
+					* This is a reference example for how to call the Windows API to enumerate and kill a process similar to taskkill.exe. This is based on (incomplete) MSDN example code. Proof of concept or pattern only.
+				* [DnsCache](https://github.com/malcomvetter/DnsCache)
+					* This is a reference example for how to call the Windows API to enumerate cached DNS records in the Windows resolver. Proof of concept or pattern only.
+				* [GetAPISetMapping](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/GetAPISetMapping)
+					* This project parses the PEB to match Windows API Set DLL's to their host DLL.
+				* [SystemProcessAndThreadsInformation](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/SystemProcessAndThreadsInformation)
+	* **Go**<a name="gopay"></a>
+		* **Articles/Blogposts**
+			* [Antidebug Golang binary on Windoze ☯ - @lfm3773](https://acmpxyz.com/go_antidebug.html)
+		* **Talks/Presentations**
+			* [Concurrency is not parallelism - Andrew Gerrand(2013)](https://blog.golang.org/waza-talk)
+			* [Hack like a Gopher - Kent Gruber(BSides Detroit2018)](https://www.irongeek.com/i.php?page=videos/bsidesdetroit2018/bsides-detroit-2018-104-hack-like-a-gohper-kent-gruber)
+				* The Go programming language is fast, statically typed, and compiled but it feels that feels like a dynamically typed, interpreted language. What does that mean; and what does that do for you? Demonstrating the qualities of Golang from an attack and defense perspective we will explore some of the benefits of using Go to build fast, cross-platform applications.
+		* **Crypter/Obfuscation**
+			* **Articles/Blogposts**
+				* [Encrypt And Decrypt Data In A Golang Application With The Crypto Packages - Nic Raboy(2019)](https://www.thepolyglotdeveloper.com/2018/02/encrypt-decrypt-data-golang-application-crypto-packages/)
+				* [A Trinity of Shellcode, AES & Golang - Syscall59 — Alan Vivona(2019)](https://medium.com/syscall59/a-trinity-of-shellcode-aes-go-f6cec854f992)
+			* **Tools/Libraries**
+				* [gobfuscate](https://github.com/unixpickle/gobfuscate)
+					* Currently, gobfuscate manipulates package names, global variable and function names, type names, method names, and strings.
+		* **Libraries**
+			* [Coldfire](https://github.com/redcode-labs/Coldfire)
+				* Golang malware development framework
+			* [SSDEEP](https://github.com/glaslos/ssdeep)
+				* SSDEEP hash lib in Golang
+			* [Robotgo](https://github.com/go-vgo/robotgo)
+				* Golang Desktop Automation. Control the mouse, keyboard, bitmap, read the screen, Window Handle and global event listener.
+			* [The Universal Loader](https://github.com/Binject/universal)
+				* This loader provides a unified Go interface for loading shared libraries from memory on Windows, OSX, and Linux. Also included is a cross-platform `Call()` implementation that lets you call into exported symbols from those libraries without stress.
+		* **OLE(Windows)**
+			* [go-ole](https://github.com/go-ole/go-ole)
+		* **Samples/Examples**
+			* [RendevousRat](https://github.com/rvrsh3ll/RendezvousRAT)
+				* This repository contains two minimal proof-of-concept RAT's utilizing GO, based on the examples found at go-libp2p-examples
+			* [Doge-Loader](https://github.com/timwhitez/Doge-Loader)
+				* Cobalt Strike Shellcode Loader by Golang 
+			* [C2](https://github.com/averagesecurityguy/c2)
+				* The C2 repository seeks to provide a practical implementation of the ideas contained in the Red Team Infrastructure Wike at https://github.com/bluscreenofjeff/Red-Team-Infrastructure-Wiki. In particular, this repository provides two Go packages one for beaconers and another for downloaders. In addition, the repository provides sample implants that use these beaconers and downloaders. Finally, the repository contains backend DNS and HTTP servers for C2 and configuration information for building front-end redirector servers.
+			* [GrayStorm](https://github.com/GrayKernel/GrayStorm)
+				* GrayStorm is an in memory attack platform that targets the .NET Framework and is injectable by utilizing GrayFrost.
+			* [GrayFrost](https://github.com/graykernel/GrayFrost)
+				* GrayFrost is a C++ DLL delivery system for C# payloads. Once compiled, GrayFrost can be injected into .NET applications using any DLL injection technique you wish!
+			* [CHAOS](https://github.com/tiagorlampert/CHAOS)
+				* Windows payload generator in go
+			* [gscript](https://github.com/gen0cide/gscript)
+				* Gscript is a framework for building multi-tenant executors for several implants in a stager. The engine works by embedding runtime logic (powered by the V8 Javascript Virtual Machine) for each persistence technique. This logic gets run at deploy time on the victim machine, in parallel for every implant contained with the stager. The Gscript engine leverages the multi-platform support of Golang to produce final stage one binaries for Windows, Mac, and Linux.
+			* [Payload Delivery for DevOps : Building a Cross-Platform Dropper Using the Genesis Framework, Metasploit and Docker - khastex(2020)](https://khast3x.club/posts/2020-06-27-Cross-Platform-Dropper/)
+		* **Shellcode**
+			* [go-shellcode](https://github.com/brimstone/go-shellcode)
+				* This is a program to run shellcode as its own process, all from memory. This was written to defeat anti-virus detection.
+		* **Tradecraft**
+			* **Articles/Blogposts**
+				* [Malware Development Pt. 1: Dynamic Module Loading in Go - Dwight Hohnstein(2020)](https://posts.specterops.io/malware-development-pt-1-dynamic-module-loading-in-go-1121f07f3a5a)
+				* [Trimming the fat from a Golang binary - Ben E C Boyter(2020)](https://web.archive.org/web/20210214140418/https://boyter.org/posts/trimming-golang-binary-fat/)
+				* [Shrink your Go binaries with this one weird trick - Filippo Valsorda(2016)](https://blog.filippo.io/shrink-your-go-binaries-with-this-one-weird-trick/)
+				* [Golang Offensive Tools with C-Sto and capnspacehook - awgh(2019)](https://www.symbolcrash.com/podcast/golang-offensive-tools-with-c-sto-and-capnspacehook/)
+				* [Encrypted-at-Rest Virtual File-System in Go - awgh(2019)](https://www.symbolcrash.com/2019/07/22/encrypted-at-rest-virtual-file-system-in-go/)
+			* **Talks/Presentations/Videos**
+				* [(P|G)Ohst Exploitation - Carl Vincent(2016)](https://archive.org/details/P-G_Ohst_Exploitation)
+					* This talk focuses on showcasing examples of the GO programming language being utilized to rapidly prototype, and ultimately maintain software designed to perform common or useful post-exploitation tasks. Source code for each feature will be provided, and is intended to exaggerate the limited amount of code and code familiarity required to construct relatively complex payloads capable of performing offensive security tasks fully either in an automated, or fully antonymous context.
+		* **Tools**
+			* [Geacon](https://github.com/darkr4y/geacon)
+				* Using Go to implement CobaltStrike's Beacon
+	* **Haskell**<a name="haskell"></a>
+		* [Hacking with Haskell - Max Harley(2021)](https://itnext.io/hacking-with-haskell-28887c1f2d06)
+	* **Janet**<a name="janet"></a>
+		* [Janet](https://github.com/janet-lang/janet)
+			* Janet is a functional and imperative programming language and bytecode interpreter. It is a lisp-like language, but lists are replaced by other data structures (arrays, tables (hash table), struct (immutable hash table), tuples). The language also supports bridging to native code written in C, meta-programming with macros, and bytecode assembly.
+	* **Java**<a name="java"></a>
+		* [Java RATS: Not even your Macs are safe - Anthony Kasza(Derbycon2016)](https://www.irongeek.com/i.php?page=videos/derbycon6/318-java-rats-not-even-your-macs-are-safe-anthony-kasza)
+			* Java's 'write once, run anywhere' features make it a popular cross-platform vector for attackers of all skill levels. This talk will perform a deep examination of historic and trending Java malware families, their capabilities and indicators, and will reveal uncommon analysis techniques to immediately help you with investigations.
+	* **.NET**<a name=".net"></a>
+		* **101**
+			* [A tour of the C# language - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/)
+				* C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. 
+			* [Inside a C# program - docs.ms](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/)
+				* The section discusses the general structure of a C# program, and includes the standard "Hello, World!" example.
+			* [AppDomain Class - docs.ms](https://docs.microsoft.com/en-us/dotnet/api/system.appdomain?view=netcore-3.1)
+				* Represents an application domain, which is an isolated environment where applications execute. This class cannot be inherited.
+			* [Assemblies in .NET - docs.ms](https://docs.microsoft.com/en-us/dotnet/standard/assembly/)
+				* Assemblies form the fundamental units of deployment, version control, reuse, activation scoping, and security permissions for .NET-based applications. An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality. Assemblies take the form of executable (.exe) or dynamic link library (.dll) files, and are the building blocks of .NET applications. They provide the common language runtime with the information it needs to be aware of type implementations.
+			* [An Introduction to Writing .NET Executables for Pentesters - PEEW.PW](https://www.peew.pw/blog/2017/11/24/an-introduction-to-writing-net-executables-for-pentesters)
+		* **Non-101**
+			* [.NET Malware Threat: Internals and Reversing - Alexandre Borges(Defcon2019)](http://www.blackstormsecurity.com/docs/ALEXANDREBORGES_DEFCON_2019.pdf)
+			* [Hiding your .NET - COMPlus_ETWEnabled - Adam Chester(2020)](https://blog.xpnsec.com/hiding-your-dotnet-complus-etwenabled/)
+			* [Building the CLR Meterpreter - OJ Reeves(2020)](https://www.youtube.com/playlist?list=PLYovnhafVaw-wGlLtQw1N0dHjxkkvc62o)
+			* [clr-meterpreter](https://github.com/OJ/clr-meterpreter)
+				* The full story of the CLR implementation of Meterpreter
+			* [SharpC2 Development Series - Rastamouse](https://www.youtube.com/playlist?list=PLFeVmEN0T_KeOxXfCAtJ14TZ_Nk2qa9Ll)
+			* [.NET Core for Malware – Ryan Cobb (SO-CON 2020)](https://www.youtube.com/watch?v=woRfx5D2Y9Y&list=PLJK0fZNGiFU-2vFpjnt96j_VSuQVTkAnO&index=11)
+				* .NET Core is the future of .NET. The Windows-only .NET Framework is on it's way out, and the cross-platform .NET Core is Microsoft's new flagship framework for building software. As red teamers, it's time to go back to the well of .NET as a host for implants and post-exploitation. In this talk, we will analyze the opportunities presented by the new .NET Core platform and practical examples to take advantage of them.
+		* **Bring-Your-Own-Compiler/Compiler Stacking**
+			* [Red Team Level over 9000! Fusing the powah of .NET with a scripting language of your choosing: introducing BYOI (Bring Your own Interpreter) payloads. - Marcello Salvati(Derbycon2019)](https://www.irongeek.com/i.php?page=videos/derbycon9/1-17-red-team-level-over-9000-fusing-the-powah-of-net-with-a-scripting-language-of-your-choosing-introducing-byoi-bring-your-own-interpreter-payloads-marcello-salvati)
+				* With all of the defenses Microsoft has implemented in the PowerShell run-time over the past few years Red Teamers & APT groups have started too shy away from using PowerShell based payloads/delivery mechanisms and migrate over to C#. However, C# is a compiled language, operationally this has a few major downsides: we can?t be as ?flexible? as we could be with scripting languages, setting up a proper development environment has overhead, things need to be compiled etc... in this talk, I will be covering my approach to solving these operational problems by using some of the (possibly?) lesser known features of the .NET framework and introducing BYOI (Bring Your Own Interpreter) payloads which allow you to embed a scripting language of your choosing into any .NET language!
+			* [Zolom](https://github.com/checkymander/Zolom)
+    			* C# Executable with embedded Python that can be used reflectively to run python code on systems without Python installed
+			* [Inception-Framework](https://github.com/two06/Inception)
+				* Inception provides In-memory compilation and reflective loading of C# apps for AV evasion. Payloads are AES encrypted before transmission and are decrypted in memory. The payload server ensures that payloads can only be fetched a pre-determined number of times. Once decrypted, Roslyn is used to build the C# payload in memory, which is then executed using reflection.
+		* **Crypter/Obfuscation**
+			* [NET-Obfuscate](https://github.com/BinaryScary/NET-Obfuscate)
+				* Obfuscate ECMA CIL (.NET IL) assemblies to evade Windows Defender AMSI.
+		* **Injection/Shellcode/In-Memory**
+			* [Red Team Tradecraft: Loading Encrypted C# Assemblies In Memory - mike gualtieri(2020)](https://www.mike-gualtieri.com/posts/red-team-tradecraft-loading-encrypted-c-sharp-assemblies-in-memory)
+			* [ManagedInjection](https://github.com/malcomvetter/ManagedInjection)
+				* A proof of concept for injecting a pre-compiled .net assembly in memory at runtime with zero pre-knowledge of its assembly namespace or type. All that is necessary is a convention for the initial method name which will be instantiated, or just have the assembly initialize via its Constructor for a true "zero knowledge" scenario.
+			* [TikiTorch](https://github.com/rasta-mouse/TikiTorch)
+				* TikiTorch was named in homage to CACTUSTORCH by Vincent Yiu. The basic concept of CACTUSTORCH is that it spawns a new process, allocates a region of memory, then uses CreateRemoteThread to run the desired shellcode within that target process. Both the process and shellcode are specified by the user.
+				* [TikiTorch - Rastamouse](https://rastamouse.me/blog/tikitorch/)
+				* [TikiVader - Rastamouse](https://rastamouse.me/blog/tikivader/)
+				* [The Return of Aggressor - Rastamouse](https://rastamouse.me/blog/tikigressor/)
+				* [TikiService - Rastamouse](https://rastamouse.me/blog/tikiservice/)
+				* [Lighting the path through EDRs using TikiTorch - RhythmStick(2019)](https://www.rythmstick.net/posts/tikitorch/)
+			* [Red Team Tradecraft: Loading Encrypted C# Assemblies In Memory - mike gualtieri(2020)](https://www.mike-gualtieri.com/posts/red-team-tradecraft-loading-encrypted-c-sharp-assemblies-in-memory)
+		* **Networking**
+		* **PE32**
+			* [Conari](https://github.com/3F/Conari)
+				* Conari engine represents powerful platform for work with unmanaged memory, pe-modules, related PInvoke features, and more for: Libraries, Executable Modules, enjoying of the unmanaged native C/C++ in .NET world, and other raw binary data. Even accessing to complex types like structures without their declaration at all.
+			* [LuNari](https://github.com/3F/LuNari)
+				* LuNari is Lua for .NET on Conari engine
+			* [.NET DllExport](https://github.com/3F/DllExport)
+				* .NET DllExport with .NET Core support (aka 3F/DllExport)
+		* **Publishing**
+		* **Examples/Samples**
+			* [AsyncRAT-VB.NET](https://github.com/TheWover/AsyncRAT-VB.NET)
+				* Remote Administration Tool For Windows VB.NET 
+			* [OffensiveDLR](https://github.com/byt3bl33d3r/OffensiveDLR)
+				* Toolbox containing research notes & PoC code for weaponizing .NET's DLR
+		* **WebServer**
+		* **Other**
+			* [Unstoppable Service](https://github.com/malcomvetter/UnstoppableService)
+				* A pattern for a self-installing Windows service in C# with the unstoppable attributes in C#.		
+		* **Talks/Presentations/Videos**
+			* [.NET Malware Threats: Internals And Reversing - Alexandre Borges(Defcon27)](https://www.youtube.com/watch?v=UB3pVTO5izU)
+				* .NET malware is well-known by security analysts, but even existing many tools such as dnSpy,.NET Reflector, de4dot and so on to make the analysis easier, most professionals have used them as a black box tool, without concerning to .NET internals, structures, MSIL coding and details. In critical cases, it is necessary have enough knowledge about internal mechanisms and to debug these .NET threats using WinDbg.  Unfortunately, .NET malware samples have become very challenger because it is so complicated to deobfuscated associated resources, as unpacking and dumping them from memory. Furthermore, most GUI debugging tools does an inside view of mechanisms such as CRL Loader, Managed Heap, Synchronization issues and Garbage Collection.  In the other side, .NET malware threats are incredibly interesting when analyzed from the MSIL instruction code, which allows to see code injections using .MSIL and attempts to compromise .NET Runtime keep being a real concern.  The purpose of this presentation is to help professionals to understand .NET malware threats and techniques by explaining concepts about .NET internals, mechanisms and few reversing techniques.
+	* **Nim**<a name="nimlang"></a>
+		* **Articles/Blogposts**
+			* [Bypassing Windows protection mechanisms & Playing with OffensiveNim - s3cur3th1ssh1t(2020)](https://s3cur3th1ssh1t.github.io/Playing-with-OffensiveNim/)
+			* [Implant Roulette Part 1: Nimplant - NotoriousRebel(2020)](https://secbytes.net/implant-roulette-part-1:-nimplant/)
+			* [Мета-программирование Nim и обфускация - Rel(2020)](https://wasm.in/blogs/meta-programmirovanie-nim-i-obfuskacija.706)
+		* **Malware/APT Samples**
+			* [Linux.Cephei: a Nim virus - Guilherme Thomazi(2017)](https://www.guitmz.com/linux-cephei-a-nim-virus/)
+			* [Zebrocy’s Multilanguage Malware Salad - Global Research & Analysis Team, Kaspersky Lab(2019)](https://securelist.com/zebrocys-multilanguage-malware-salad/90680/)
+			* [Nimar Loader - https://medium.com/walmartglobaltech/nimar-loader-4f61c090c49e(2021)](https://medium.com/walmartglobaltech/nimar-loader-4f61c090c49e)
+			* [Investigation into the state of Nim malware - Jason Reaves, Joshua Platt(2021)](https://medium.com/walmartglobaltech/investigation-into-the-state-of-nim-malware-14cc543af811)
+		* **Config**
+			* [Using NimScript as a configuration language (Embedding NimScript pt. 1) - peterme.net](https://peterme.net/using-nimscript-as-a-configuration-language-embedding-nimscript-pt-1.html)
+		* **Crypter/Obfuscation**
+			* [denim](https://github.com/moloch--/denim)
+				* Automated compiler obfuscation for nim 
+			* [steganography](https://github.com/treeform/steganography)
+				* Image stego library
 		* **Examples**
-			* [Windows classic samples](https://github.com/microsoft/Windows-classic-samples)	
-				* This repo contains samples that demonstrate the API used in Windows classic desktop applications.
-			* [WinPwnage](https://github.com/rootm0s/WinPwnage)
-				* The meaning of this repo is to study the techniques. Techniques are found online, on different blogs and repos here on GitHub. I do not take credit for any of the findings, thanks to all the researchers.
+			* [Nimplant](https://github.com/MythicAgents/Nimplant)
+				* Nimplant is a cross-platform (Linux & Windows) implant written in Nim as a fun project to learn about Nim and see what it can bring to the table for red team tool development. Currently, Nimplant lacks extensive evasive tradecraft; however, overtime Nimplant will become much more sophisticated.
+			* [NimExamples](https://github.com/ajpc500/NimExamples)
+			* [Linux.Cephei](https://github.com/guitmz/nim-cephei)
+				* Probably the first ELF binary infector ever created in Nim.
+		* **Injection**
+		* **Networking**
+			* [nim-libp2p](https://github.com/status-im/nim-libp2p)
+				* libp2p implementation in Nim
+			* [Nim-SMBExec](https://github.com/elddy/Nim-SMBExec)
+				* SMBExec implementation in Nim - SMBv2 using NTLM Authentication with Pass-The-Hash technique
+			* [NimScan](https://github.com/elddy/NimScan)
+				* Really fast port scanner (With filtered option - Windows support only)
+			* [iputils](https://github.com/rockcavera/nim-iputils)
+				* Utilities for use with IP. It has functions for IPv4, IPv6 and CIDR.
+			* [nim-socks5](https://github.com/FedericoCeratto/nim-socks5)
+				* Nim Socks5 library
+			* [backoff](https://github.com/CORDEA/backoff)
+				* Implementation of exponential backoff for nim. 
+		* **PE32**
+		* **Publishing**
+		* **Injection/Shellcode**
+			* [Shellcode Injection using Nim and Syscalls - ajpc500](https://ajpc500.github.io/nim/Shellcode-Injection-using-Nim-and-Syscalls/)
+		* **Syscalls**
+			* [nim-syscall](https://github.com/def-/nim-syscall)
+				* Raw system calls for Nim [Linux]
+			* [NimlineWhispers](https://github.com/ajpc500/NimlineWhispers)
+				* A very proof-of-concept port of InlineWhispers for using syscalls in Nim projects. 
+		* **Tradecraft**
+			* [OffensiveNim](https://github.com/byt3bl33d3r/OffensiveNim)
+				* "My experiments in weaponizing Nim for implant development and general offensive operations."
+			* [c2nim](https://github.com/nim-lang/c2nim)
+				*  c2nim is a tool to translate Ansi C code to Nim. The output is human-readable Nim code that is meant to be tweaked by hand before and after the translation process.
+		* **Utilities**
+			* [zippy](https://github.com/guzba/zippy)
+				* Pure Nim implementation of deflate, zlib, gzip and zip. 
+			* [nim-registry](https://github.com/miere43/nim-registry)
+				* Deal with Windows Registry from Nim.
+			* [nim-daemon](https://github.com/status-im/nim-daemon)
+				* This closs-platform library is used to daemonize processes: that is, make them run in the background and independently of the terminal. The library is used to develop Unix daemons and background processes on Windows.
+		* **Web(Server)**
+			* [jester](https://github.com/dom96/jester)
+				* A sinatra-like web framework for Nim.
+			* [Karax](https://github.com/pragmagic/karax)
+				* Single page applications for Nim.
+			* [Neel](https://github.com/Niminem/Neel)
+				* A Nim library for making Electron-like HTML/JS GUI apps, with full access to Nim capabilities. 
+			* [ws](https://github.com/treeform/ws)
+				* Simple WebSocket library for nim.
+		* **Other**				
+			* [libkeepass](https://github.com/PMunch/libkeepass)
+				* Library for reading KeePass files and decrypt the passwords within it 
+	* **PowerShell**<a name="powershell"></a>
+		* [Invoke-BSOD](https://github.com/peewpw/Invoke-BSOD)
+			* A PowerShell script to induce a Blue Screen of Death (BSOD) without admin privileges. Also enumerates Windows crash 	dump settings. This is a standalone script, it does not depend on any other files.
+		* [PowerDropper](https://github.com/gigajew/PowerDropper)
+			* App that generates PowerShell dropper scripts for .NET executables
+		* [PowerStager](https://github.com/z0noxz/powerstager)
+			* This script creates an executable stager that downloads a selected powershell payload, loads it into memory and executes it using obfuscated EC methods. The script will also encrypt the stager for dynamic signatures and some additional obfuscation. This enables the actual payload to be executed indirectly without the victim downloading it, only by executing the stager. The attacker can then for example implement evasion techniques on the web server, hosting the payload, instead of in the stager itself.
+	* **Python**<a name="python"></a>
+		* **Binaries**
+			* [LIEF](https://github.com/lief-project/LIEF)
+				* LIEF - Library to Instrument Executable Formats. The purpose of this project is to provide a cross platform library which can parse, modify and abstract ELF, PE and MachO formats.
+		* **Crypter/Obfuscator**
+		* **Embedding into Other Langs**
+			* [Random thoughts about embedding python into your application - rewolf(2011)](http://blog.rewolf.pl/blog/?p=259)
+				* In this post I want to share some of my thoughts about embedding python into C/C++ applications. It will not be yet another python tutorial, but just my personal feelings about some of the mechanisms that I’ve encountered during my work on dirtyJOE.
+		* **GUI**
+			* [Gooey](https://github.com/chriskiehl/Gooey)
+				* Turn (almost) any Python 2 or 3 Console Program into a GUI application with one line
+		* **Injection/Shellcode**
+		* **Networking**
+		* **PE32**
+		* **Publishing**
+		* **WebServer**
+		* **Other**
+			* [Inline C](https://github.com/georgek42/inlinec)
+				* Effortlessly write inline C functions in Python
+			* [Making Raw Syscalls on Windows From Python - Spencer(2017)](https://warroom.rsmus.com/making-syscalls-python/)
+		* **Examples**
+			* [Ares](https://github.com/sweetsoftware/Ares)
+				* Ares is a Python Remote Access Tool.
+			* [Pupy](https://github.com/n1nj4sec/pupy)
+				* Pupy is an opensource, cross-platform (Windows, Linux, OSX, Android) remote administration and post-exploitation tool mainly written in python
+			* [covertutils - A framework for Backdoor development!](https://github.com/operatorequals/covertutils)
+				* This Python package is used to create Agent/Handler backdoors, like metasploit's meterpreter, empire's empire agent, cobalt strike's beacon and so on... It automatically handles all communication channel options, like encryption, chunking, steganography, sessions, etc. With a recent package addition (httpimport), staging from pure Python2/3 is finally possible! With all those set with a few lines of code, a programmer can spend time creating the actual payloads, persistense mechanisms, shellcodes and generally more creative stuff!! The security programmers can stop re-inventing the wheel by implementing encryption mechanisms both Agent-side and Handler-side to spend their time developing more versatile Agents, and generally feature-rich shells!
+			* [RedSails](https://github.com/BeetleChunks/redsails)
+				* Python based post-exploitation project aimed at bypassing host based security monitoring and logging. [DerbyCon 2017 Talk](https://www.youtube.com/watch?v=Ul8uPvlOsug)
+			* [stupid_malware](https://github.com/andrew-morris/stupid_malware)
+				* Python malware for pentesters that bypasses most antivirus (signature and heuristics) and IPS using sheer stupidity
+			* [Stitch](https://github.com/nathanlopez/Stitch)
+				* This is a cross platform python framework which allows you to build custom payloads for Windows, Mac OSX and Linux as well. You are able to select whether the payload binds to a specific IP and port, listens for a connection on a port, option to send an email of system info when the system boots, and option to start keylogger on boot. Payloads created can only run on the OS that they were created on.
+			* [WEASEL](https://github.com/facebookincubator/WEASEL)
+				* WEASEL is a small in-memory implant using Python 3 with no dependencies. The beacon client sends a small amount of identifying information about its host to a DNS zone you control. WEASEL server can task clients to execute pre-baked or arbitrary commands. WEASEL is a stage 1 payload, meant to be difficult to detect and useful for regaining access when your noisy full-featured stages are caught.
+	* **Rust**<a name="rust"></a>
+		* **Tradecraft**
+		* **Crypter/Obfuscator**
+		* **Injection/Shellcode**
+			* [asm - The Rust RFC Book](https://rust-lang.github.io/rfcs/2873-inline-asm.html)
+				* "This RFC specifies a new syntax for inline assembly which is suitable for eventual stabilization."
+		* **Networking**
+		* **PE32**
+			* [goblin](https://github.com/m4b/goblin)
+				* An impish, cross-platform binary parsing crate, written in Rust
+		* **Publishing**
+ 			* [Minimizing Rust Binary Size](https://github.com/johnthagen/min-sized-rust)
+				* This repository demonstrates how to minimize the size of a Rust binary.
+		* **WebServer**
+		* **Other**
+		* **Examples**
+		* **macOS Specific**
+			* [core-foundation-rs](https://github.com/servo/core-foundation-rs)
+				* Rust bindings to Core Foundation and other low level libraries on Mac OS X and iOS 
+		* **Windows-Specific**
+			* [Rust for Windows - Kenny Kerr(2021)](https://kennykerr.ca/2021/01/21/rust-for-windows/)
+			* [Rust for Windows](https://github.com/microsoft/windows-rs)
+				* The windows crate lets you call any Windows API past, present, and future using code generated on the fly directly from the metadata describing the API and right into your Rust package where you can call them as if they were just another Rust module.
+			* [tinywin](https://github.com/janiorca/tinywin)
+				* A very small but functional Win32 apps in Rust using no_std
+* **Linux Specific**<a name="linspec"></a>
+	* **ELF Injection**
+		* [ELFun File Injector - pico(2016)](https://0x00sec.org/t/elfun-file-injector/410)
+	* **Unsorted**
+		* [Zombie Ant Farm: Practical Tips for Playing Hide and Seek with Linux EDRs.](https://github.com/dsnezhkov/zombieant)
+			* Zombie Ant Farm: Primitives and Offensive Tooling for Linux EDR evasion
+* **macOS Specific**<a name="macspec"></a>
+	* See the 'Lambert' Family of Malware for Nation-State opinions on how to do it.
+	* **Articles/Blogposts**
+		* [My Journey Writing A Post Exploitation Tool for macOS - Cedric Owens(2019)](https://medium.com/red-teaming-with-a-blue-team-mentaility/my-journey-writing-a-post-exploitation-tool-for-macos-d8293d51244f)
+* **Windows Specific**<a name="winspec"></a>
+	* [awesome-windows-kernel-security-development](https://github.com/ExpLife0011/awesome-windows-kernel-security-development)
+	* **Hooking**
+		* [Hook_API](https://github.com/EgeBalci/Hook_API)
+			* Assembly block for hooking windows API functions. 
+	* **IAT**
+		* [IAT_API](https://github.com/EgeBalci/IAT_API)
+			* Assembly block for finding and calling the windows API functions inside import address table(IAT) of the running PE file.
+	* **In-Memory**
+		* [Memory Resident Implants Code injection is alive and well - Luke Jennings(BlueHatv18)](https://www.youtube.com/watch?v=02fL2xpR7IM)
+			* [Slides](https://www.slideshare.net/MSbluehat/bluehat-v18-memory-resident-implants-code-injection-is-alive-and-well)
+		* [Hunting for Memory Resident Malware - Joe Desimone(Derbycon7)](https://archive.org/details/DerbyCon7/S21-Hunting-for-Memory-Resident-Malware-Joe-Desimone.mp4)
+		* [Masking Malicious Memory Artifacts – Part I: Phantom DLL Hollowing - Forrest Orr(2019)](https://www.forrest-orr.net/post/malicious-memory-artifacts-part-i-dll-hollowing)
+			* [Part 2](https://www.forrest-orr.net/post/masking-malicious-memory-artifacts-part-ii-insights-from-moneta)
+		* [Moneta](https://github.com/forrest-orr/moneta)
+			* Moneta is a live usermode memory analysis tool for Windows with the capability to detect malware IOCs 
+	* **Installation & Update**
+		* [Squirrel](https://github.com/Squirrel/Squirrel.Windows)
+			* Squirrel is both a set of tools and a library, to completely manage both installation and updating your Desktop Windows application, written in either C# or any other language (i.e., Squirrel can manage native C++ applications).
+	* **PE32**
+		* [tinyPE](https://github.com/rcx/tinyPE)
+			* Smallest possible PE files. Artisanal, hand-crafted with love and care.
+		* [PE-Packer](https://github.com/czs108/PE-Packer)
+			* A simple Windows x86 PE file packer written in C & Microsoft Assembly.
+		* [αcτµαlly pδrταblε εxεcµταblε - Justine Alexandra Roberts Tunney(2020)](https://raw.githubusercontent.com/jart/cosmopolitan/37a4c70c3634862d8d005955c032b5a2fa8737c5/ape/ape.S)
+			* [Link](https://justine.lol/ape.html)
+		* [Generating Custom Cobalt Strike Artifacts with PEzor - phra(2021)](https://iwantmore.pizza/posts/PEzor3.html)
+	* **Shellcode**
+		* [Write Windows Shellcode in Rust](https://github.com/b1tg/rust-windows-shellcode)
+			* Windows shellcode development in Rust 
+		* [Writing Optimized Windows Shellcode in C - Matt Graeber(2013)](http://www.exploit-monday.com/2013/08/writing-optimized-windows-shellcode-in-c.html)
+	* **Tradecraft**
+		* [DLL Proxy Loading Your Favourite C# Implant - Flangvik(2020)](https://redteaming.co.uk/2020/07/12/dll-proxy-loading-your-favorite-c-implant/)
+		* [Red Team Tactics: Hiding Windows Services - Joshua Wright(2020)](https://www.sans.org/blog/red-team-tactics-hiding-windows-services/)
+		* [Runtime symbol resolution - Federico Lagrasta(2020)](https://offnotes.notso.pro/malware-development/function-call-obfuscation/runtime-symbol-resolution)
+			* Using LoadLibraryW and GetProcAddress to avoid suspicious imports
+		* [Preventing 3rd Party DLLs from Injecting into your Malware - @spottheplanet](https://www.ired.team/offensive-security/defense-evasion/preventing-3rd-party-dlls-from-injecting-into-your-processes)
+		* [Hindering Threat Hunting, a tale of evasion in a restricted environment - Borja Merino(2020)](https://www.blackarrow.net/hindering-threat-hunting-a-tale-of-evasion-in-a-restricted-environment/)
+		* [Fat Free Guide To Process Hollowing and Droppers - Sneakidia(2020)](https://sneakidia.blogspot.com/2020/10/fat-free-guide-to-process-hollowing-and.html)
+		* [Hiding execution of unsigned code in system threads - drew(2021)](https://secret.club/2021/01/12/callout.html)
+		* [dearg-thread-ipc-stealth](https://github.com/LloydLabs/dearg-thread-ipc-stealth)
+			* A novel technique to communicate between threads using the standard ETHREAD structure
+		* [Hiding your process from sysinternals](https://riscybusiness.wordpress.com/2017/10/07/hiding-your-process-from-sysinternals/)
+		* [Universal Unhooking: Blinding Security Software - Jeffrey Tang](https://threatvector.cylance.com/en_us/home/universal-unhooking-blinding-security-software.html)
+		* [You're Off the Hook: Blinding Security Software - Alex Matrosov, Jeff Tang](https://www.slideshare.net/cylance_inc/youre-off-the-hook-blinding-security-software)
+		* [hide-and-seek](https://github.com/reversinghub/hide-and-seek)
+			* PoC for hiding processes from Windows Task Manager by manipulating the graphic interface
+	* **WinAPI**
+		* **Articles/Blogposts**
+			* [The Inner Workings Of Railgun - Spencer](https://warroom.rsmus.com/inner-workings-railgun/)
+		* **Talks/Presentations/Videos**
+			* [How Malware Can Resolve APIs By Hash - AGDC Services](https://www.youtube.com/watch?v=q8of74upT_g)
+				* In this video, we will learn how to recognize a common obfuscation technique malware uses; resolving APIs by hash at run time. This technique is often used in shellcode, packers, and to thwart AV vendors. Learning to quickly recognize the technique and understand how to deal with it is an important technique to know to advance your malware analysis skills.
+		* **Tools**
+			* [CsWin32](https://github.com/microsoft/CsWin32)
+				* A source generator to add a user-defined set of Win32 P/Invoke methods and supporting types to a C# project. 
+			* [cppwin32](https://github.com/microsoft/cppwin32)
+				* A modern C++ projection for the Win32 SDK	
+			* [Windows-API-Hashing](https://github.com/LloydLabs/Windows-API-Hashing)
+				* Windows API resolution via hashing
+			* [IAT API](https://github.com/EgeBalci/IAT_API)
+				* Assembly block for finding and calling the windows API functions inside import address table(IAT) of the running PE file.
+			* [WinAPI-Tricks](https://github.com/vxunderground/WinAPI-Tricks)
+				* Collection of various WINAPI tricks / features used or abused by Malware 			
+			* [Modular Windows.h Header File](https://github.com/Leandros/WindowsHModular)
+				* The Windows.h header file for the Win32 API is a behemoth of include file, adding hundreds of thousands of new macros, structs and functions. This project aims to modularize the Windows.h file, to only include what you require.
+	* **Samples of**
+		* [delete-self-poc](https://github.com/LloydLabs/delete-self-poc)
+			* (Windows)A way to delete a locked file, or current running executable, on disk.
+		* [WSAAcceptBackdoor](https://github.com/EgeBalci/WSAAcceptBackdoor)
+			* This project is a POC implementation for a DLL implant that acts as a backdoor for accept Winsock API calls. Once the DLL is injected into the target process, every accept call is intercepted using the Microsoft's detour library and redirected into the BackdooredAccept function. When a socket connection with a pre-defined special source port is establised, BackdooredAccept function launches a cmd.exe process and binds the accepted socket to the process STD(OUT/IN) using a named pipe.
+	* **Examples**
+		* [Windows classic samples](https://github.com/microsoft/Windows-classic-samples)	
+			* This repo contains samples that demonstrate the API used in Windows classic desktop applications.
+		* [WinPwnage](https://github.com/rootm0s/WinPwnage)
+			* The meaning of this repo is to study the techniques. Techniques are found online, on different blogs and repos here on GitHub. I do not take credit for any of the findings, thanks to all the researchers.
 * **Communications**<a name="c2com"></a>
 	* **Agnostic**(Unsorted)
 		* [Securing Custom Protocols With Noise - grund.me(2021)](https://grund.me/posts/securing-custom-protocols-with-noise/)
@@ -2806,7 +2956,7 @@
 			* [Impeding Automated Malware Analysis with Environment-sensitive Malware - Chengyu Song, Paul Royal, Wenke Lee(2012)](https://www.usenix.org/conference/hotsec12/workshop-program/presentation/song)
 				* To solve the scalability problem introduced by the exponential growth of malware, numerous automated malware analysis techniques have been developed. Unfortunately, all of these approaches make previously unaddressed assumptions that manifest as weaknesses to the tenability of the automated malware analysis process. To highlight this concern, we developed two obfuscation techniques that make the successful execution of a malware sample dependent on the unique properties of the original host it infects. To reinforce the potential for malware authors to leverage this type of analysis resistance, we discuss the Flashback botnet’s use of a similar technique to prevent the automated analysis of its samples.
 			* [Sleeping Your Way out of theSandbox - Hassan  Mourad(2015)](https://www.sans.org/reading-room/whitepapers/malicious/sleeping-sandbox-35797)
-				* In recent years,the security landscape has witnessed the rise of a new breed of malware, Advanced  Persistence  Threat,  or  APT  for  short.  With  all  traditional  security  solutions failing  to  address  this  new  threat,  a  demand  was  created  for  new  solutions  that  are capable of addressing the advanced capabilities of APT. One of the offeredsolutions was file-based  sandboxes,asolution  that  dynamically  analyzes  files  and  judgestheir  threat levelsbased  on  their  behavior  in  an  emulated/virtual  environment.  But  security  is  a  cat and mouse game, and malware authors are always trying to detect/bypass such measures. Some of the common techniques used by malware for sandbox evasionwill be discussed in  this  paper. This  paperwill  also  analyze  how  to  turn somecountermeasuresused  by sandboxes against it. Finally, itwill introduce some new ideas for sandbox evasion along with recommendationsto address them.
+				* In recent years,the security landscape has witnessed the rise of a new breed of malware, Advanced Persistence Threat, or APT for short. With all traditional security solutions failing to address this new threat, a demand was created for new solutions that are capable of addressing the advanced capabilities of APT. One of the offeredsolutions was file-based sandboxes,asolution that dynamically analyzes files and judgestheir threat levelsbased on their behavior in an emulated/virtual environment. But security is a cat and mouse game, and malware authors are always trying to detect/bypass such measures. Some of the common techniques used by malware for sandbox evasionwill be discussed in this paper. This paperwill also analyze how to turn somecountermeasuresused by sandboxes against it. Finally, it will introduce some new ideas for sandbox evasion along with recommendationsto address them.
 			* [Hot Knives Through Butter: Evading File-based Sandboxes - Abhishek Singh, Zheng Bu(2014)](https://www.fireeye.com/content/dam/fireeye-www/current-threats/pdfs/pf/file/fireeye-hot-knives-through-butter.pdf)
 		* **Tools**
 			* **Metasploit**
@@ -2835,6 +2985,7 @@
 * **Other(unsorted)**
 	* [Virus Exchange](https://github.com/am0nsec/vx)
 		* "This repository will contain the code associated with papers I'm release either on my blog or at VX-Underground."
+------------------------------------------------------------------------------------------------------------------------------
 
 
 

@@ -1,0 +1,105 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Infosec_Reference | An Information Security Reference That Doesn't Suck!</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Free resource for anyone interested in learning more about Information Security.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="author" content="Robert Musser">
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="icon" href="/img/facivon.png" type="image/png" />
+</head>
+<body>
+
+<!--
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      //...
+    }
+  </script>
+-->
+
+
+<!-- Below adds Link to github repo in upper right hand corner -->
+  <div id="app">Loading...</div>
+  <script>
+    window.$docsify = {
+     name: 'Infosec_Reference',
+     repo: 'rmusser01/Infosec_Reference',
+     homepage:
+    'README.md',
+     maxLevel: 3,
+     subMaxLevel: 2,
+     coverpage: false,
+     loadSidebar: true,
+    }
+  </script>
+<!-- Above adds Link to github repo in upper right hand corner -->
+
+
+
+<!-- Below adds search functionality to page -->
+<script>
+  window.$docsify = {
+    search: 'auto', // default
+
+    search : [
+      '/',            // => /README.md
+    ],
+
+    // complete configuration parameters
+    search: {
+      maxAge: 86400000, // Expiration time, the default one day
+      paths: auto, // or 'auto'
+      placeholder: 'Type to search',
+
+      // Localization
+      placeholder: {
+        '/': 'Type to search'
+      },
+
+      noData: 'No Results!',
+
+      // Localization
+      noData: {
+        '/': 'No Results'
+      },
+
+      // Headline depth, 1 - 6
+      depth: 2,
+
+      hideOtherSidebarContent: true, // whether or not to hide other sidebar content
+
+      // To avoid search index collision
+      // between multiple websites under the same domain
+      namespace: 'Infosec_Reference',
+
+      // Use different indexes for path prefixes (namespaces).
+      // NOTE: Only works in 'auto' mode.
+      //
+      // When initialiazing an index, we look for the first path from the sidebar.
+      // If it matches the prefix from the list, we switch to the corresponding index.
+      pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
+
+      // You can provide a regexp to match prefixes. In this case,
+      // the matching substring will be used to identify the index
+      pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/
+    }
+  }
+</script>
+<!-- Above does: -->
+
+
+  <script src="./css/docsify4.js"></script>
+  <script src="./css/emoji.min.js"></script>
+  <script src="./css/search.min.js"></script>
+
+
+
+</body>
+</html>

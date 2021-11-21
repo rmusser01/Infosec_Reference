@@ -1,7 +1,5 @@
 # InfoSec Reference
-
 <p align="center"> 
-<img src="images/10k-xkcd.png" width="600" height="411"><p>From https://xkcd.com/1053/</p>
 <img src="./images/mspaint.png">
 Created by <a href="https://twitter.com/r_o_b_e_r_t_1">Robert Musser</a>
 </p>

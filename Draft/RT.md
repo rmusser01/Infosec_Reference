@@ -40,14 +40,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
-
 ------------------------------------------------------------------------------------------------------------------------
 ### Adversary Emu/Simu ; Building(and growing) a Red Team ; Organizing a Red Team Engagement<a name="first"></a>
 - [Adversary Simulation &Or Emulation](#advsim)
@@ -65,14 +57,6 @@
 	- [Metrics & models](#gmm)
 	- [Purple Teaming](#purple)
 ------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -114,28 +98,40 @@
 ------------------------------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
-
 ------------------------------------------------------------------------------------------------------------------------
 ### Implants & Payload Development<a name="implants"></a>
 - [Start of this Section](#implantdev)
 - [Creation & Development](#pcd)
-- [Anti-Tricks](#antitricks)
-	- [Anti-Dbg](#antidbg)
-	- [Anti-RE](#antire)
-	- [Anti-Sandbox](#antisandbox)
+- [Anti-Tricks](#anti-tricks)
+	- [Anti-Dbg](#anti-dbg)
+	- [Anti-UnPackers](#anti-packer)
+	- [Anti-RE](#anti-re)
+	- [Anti-Sandbox](#anti-sandbox)
 	- [Bring-Your-Own ...](#byoc)
 	- [Crypters](#crypter)
 	- [Meta/Poly-Morphism](#metapoly)
 	- [Obfuscation](#obfuscation)
+	- [Packers](#packers)
 - [Evasion](#evasion)
+- [Network Communications](#netcomms) - FIX
+	- [Communication Channel Examples/Samples/PoCs](#c2commsamples)
+	- [Protocols](#protocols)
+		- [DNS](#dns1)
+		- [DNS-over-HTTPS(DoH)](#doh1)
+		- [HTTP](http1)
+		- [HTTP2](http2)
+		- [HTTP3](#http3)
+		- [QUIC](#quic)
+	- [Tricks](#tricks1)
+- [Obfuscation Techniques](#obfuscation1)
+	- []()
+	- []()
+- [Meta/Poly/Oligo-Morphism](#metapoly)
+- [Packers](#packers)
+- [Publishing](#ipub)
+- [Updates](#updates)
 - [Language Specific](#langspec)
+	- [AutoIT](#autoitlang)
 	- [Basic](#basiclang)
 	- [C](#clang)
 	- [C++](#cppp)
@@ -159,8 +155,8 @@
 	- [HW Related/Physical Devices](#hw)
 	- [Dropboxes](#dropboxes)
 	- [Physical Implants](#implants)
-----------------------------------------------------------------------------------------------------------------
-
+	- []()
+------------------------------------------------------------------------------------------------------------------------------
 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -1652,6 +1648,14 @@
 	* **Simple Samples**
 		* [TCP Bind Shell Shellcode - Metasploit Framework](https://github.com/rapid7/metasploit-framework/blob/master/external/source/shellcode/windows/x86/src/block/block_bind_tcp.asm)
 * **Anti-Tricks**<a name="antitricks"></a>
+	* **Collection Projects**
+		* [Unprotect Project](https://search.unprotect.it/map/)
+			* Malware authors spend a great deal of time and effort to develop complex code to perform malicious actions against a target system. It is crucial for malware to remain undetected and avoid sandbox analysis, antiviruses or malware analysts. With this kind of technics, malware are able to pass under the radar and stay undetected on a system. The goal of this free database is to centralize the information about malware evasion techniques. This project aims to provide Malware Analysts and Defenders with actionable insights and detection capabilities to shorten their response times.
+		* [al-khaser](https://github.com/LordNoteworthy/al-khaser)
+			* Public malware techniques used in the wild: Virtual Machine, Emulation, Debuggers, Sandbox detection.
+		* [Evasion techniques - CheckPoint Research](https://evasions.checkpoint.com/)
+			* [Evasions Github](https://github.com/CheckPointSW/Evasions)
+			* "In this encyclopedia we have attempted to gather all the known ways to detect virtualized environment grouping them into big categories. Some categories are inactive on main page: it means that content will be added later. If it isn’t stated explicitly which operating system is described, Windows is meant by default."
 	* **Anti-Debug**<a name="antidbg"></a>
 		* **Articles/Blogposts/Writeups**
 			* [Windows Anti-Debug Reference - Nicholas Falliere(2007)](https://community.broadcom.com/symantecenterprise/communities/community-home/librarydocuments/viewdocument?DocumentKey=230d68b2-c80f-4436-9c09-ff84d049da33&CommunityKey=1ecf5f55-9545-44d6-b0f4-4e4a7f5f5e68&tab=librarydocuments)
@@ -1682,13 +1686,25 @@
 				* A collection of c++ programs that demonstrate common ways to detect the presence of an attached debugger.
 			* [antidebug](https://github.com/waleedassar/antidebug)
 				* Collection Of Anti-Debugging Tricks
+	* **Anti-UnPackers**<a name="anti-pack"></a>
+		* **Articles/Blogposts/Writeups**
+		* **Presentations/Talks/Videos**
+		* **Papers**
+			* [Anti-Unpacker Tricks - Peter Ferrie](https://web.archive.org/web/20160328144423/http://pferrie.tripod.com/papers/unpackers.pdf)
+				* "Unpackers are as old as the packers themselves, but anti-unpacking tricks are a more recent development. These anti-unpacking tricks have developed quickly in number and, in some cases, complexity. In this paper, we will describe some of the most common anti-unpacking tricks, along with some countermeasures.
+		* **Tools**
 	* **Anti-RE**<a name="anti-re"></a>
-			* **Articles/Blogposts/Writeups**
-			* **Presentations/Talks/Videos**
-			* **Papers**
-				* ["Smart" trash: building of logic - pr0mix(2011)](https://vxug.fakedoma.in/archive/VxHeaven/lib/vpo01.html)
-					* "The main goal of garbage instructions - a hiding/protection of useful code (from av'ers, a watchful eye reverser and other curious). However, the "wrong" trash can lead to detection of viral code, thereby undermining all our efforts.  This text is about how to improve the quality of the generated garbage."
-			* **Tools**
+		* **Articles/Blogposts/Writeups**
+			* [RDTSCP – a recooked AntiRe trick - Hexacorn(2014)](https://www.hexacorn.com/blog/2014/06/15/rdtscp-a-recooked-antire-trick/)
+			* [Simple Anti-RE Trick - `@_qaz_qaz`(2019)](https://secrary.com/Random/anti_re_simple/)
+		* **Presentations/Talks/Videos**
+			* [Computer Security 資安實務: Windows Reversing [Dark Art] -  Sheng-Hao Ma(2018)](https://speakerdeck.com/aaaddress1/computer-security-zi-an-shi-wu-windows-reversing-dark-art)
+		* **Papers**
+			* ["Smart" trash: building of logic - pr0mix(2011)](https://vxug.fakedoma.in/archive/VxHeaven/lib/vpo01.html)
+				* "The main goal of garbage instructions - a hiding/protection of useful code (from av'ers, a watchful eye reverser and other curious). However, the "wrong" trash can lead to detection of viral code, thereby undermining all our efforts.  This text is about how to improve the quality of the generated garbage."
+		* **Tools**
+			* [ANTI](https://github.com/nihilboy/anti)
+				* Automated Integration of anti-Reversing methods in PE executables
 	* **Anti-Sandbox**<a name="antisandbox"></a>
 		* **Sandbox Detection**<a name="anti-sandbox"></a>
 			* **Articles/Blogposts/Writeups**
@@ -1789,36 +1805,92 @@
 				* A collection of secure encryption examples for encrypting strings and binary data. 
 			* [Themis](https://github.com/cossacklabs/themis)
 				* Easy to use cryptographic framework for data protection: secure messaging with forward secrecy and secure data storage. Has unified APIs across 14 platforms.
-	* **Obfuscation**<a name="obfuscation"></a>
-		* **Articles/Blogposts/Writeups**
-			* [Building an Obfuscator to Evade Windows Defender - Samuel Wong(2020)](https://www.xanthus.io/post/building-an-obfuscator-to-evade-windows-defender)
-			* [Build your first LLVM Obfuscator - polarply(2020)](https://medium.com/@polarply/build-your-first-llvm-obfuscator-80d16583392b)
-				* In this post we will briefly present LLVM, discuss popular obfuscation approaches and their shortcomings and build our own epic LLVM-based string obfuscator.
-				* [Code](https://github.com/tsarpaul/llvm-string-obfuscator)
-			* [Evading Detection: A Beginner's Guide to Obfuscation](https://github.com/BC-SECURITY/Beginners-Guide-to-Obfuscation)
-				* "This is a hands-on class to learn the methodology behind malware delivery and avoiding detection. This workshop explores the inner workings of Microsoft's Antimalware Scan Interface (AMSI), Windows Defender, and Event Tracing for Windows (ETW). We will learn how to employ obfuscated malware using Visual Basic (VB), PowerShell, and C# to avoid Microsoft's defenses. Students will learn to build AMSI bypass techniques, obfuscate payloads from dynamic and static signature detection methods, and learn about alternative network evasion methods."
-		* **Talks/Presentations/Videos**
+	- **Obfuscation Techniques**<a name="obfuscation"></a>
+		- **101**
+		- **Articles/Blogposts/Writeups**
+			* [A Look At Some Real-World Obfuscation Techniques - Nicolas Guigo(2021)](https://research.nccgroup.com/2021/10/12/a-look-at-some-real-world-obfuscation-techniques/)
+		- **Talks/Presentations/Videos**
 			* [Binary Obfuscation from the Top-Down: Obfuscating Executables Without Writing Assembly - Sean "Frank^2(Defcon17)](https://www.youtube.com/watch?v=iva16Bg5imQ)
 				* [Slides](https://www.defcon.org/images/defcon-17/dc-17-presentations/defcon-17-sean_taylor-binary_obfuscation.pdf)
 				* Binary obfuscation is commonly applied in malware and by software vendors in order to frustrate the efforts of reverse engineers to understand the underlying code. A common misconception is one must be a master of assembly in order to properly obfuscate a binary. However, with knowledge of compiler optimizations and certain keywords, one can frustratingly obfuscate their binary simply by writing specifically crafted high-level code. This talk will attempt to teach an array of methods that can be employed to obfuscate a binary as it is compiled rather than afterward. Knowledge of C/C++ is the only prerequisite for this talk.
 			* [Data Obfuscation: How to hide data and payloads to make them "not exist" (in a mathematically optimal way) - Parker Schmitt(Derbycon2016)](https://www.irongeek.com/i.php?page=videos/derbycon6/400-data-obfuscation-how-to-hide-data-and-payloads-to-make-them-not-exist-in-a-mathematically-optimal-way-parker-schmitt)
 				* Many times the answer to any question about cryptography is: "never roll your own crypto". While the logic behind this is understandable it has become a bit of a lost art. Despite the fact that for the most part standard crypto used in normal situations works; when trying to hide the existence of encrypted data alltogether it is far from an optimal solution. Most modern crypto is designed with the fact that the evesdropper knows that an encrypted message exists. However these days with ssl proxys, reversing antivirus, and "anti-crypto" law proposals the assumption that having an evesdropper knowing the existence of said crypto is no longer an easy concession. Despite the fact of many "next-gen" antiviruses failing to detect many obfuscation methods using algorithms such as AES for encrypting a payload is the WRONG way. The reason they are not detected is such an antivirus is just not looking for traces of such an algorithm. From a forensics standpoint, if you're using AES the private key is on the victim's machine for example. In addition, the permutations or S-Boxes are well known permutations and easy to spot in your algorithm. This talk will be on how to design algorithms to make the existence of the cryptography unknown. We will keep some of it high level but also show how to properly implement your own cryptography and/or steganography in such a way that the evesdropper doesn't know it exists. We will talk about side channels and how to keep out of band and/or homemade crypto "cryptographically strong" but also how to generate it on the fly so that no only can you encrypt data in side channels, you can generate a new algorithm on the fly. We want to make it so the randomness of the algorithm itself is "cryptographically strong" Even though many next-gen antivirus fails at such detection as it inproves we need to study obfuscation as much as the mathematics and/or science of standard cryptography.
 			* [An Effective Approach to Software Obfuscation - Yu-Jye Tung(BSidesSF2020)](https://www.youtube.com/watch?v=ExiXtdjNGlg&feature=share)
-				* Understanding the essential aspects that make up obfuscation allows us to see the fundamental flaw with modern obfuscation implementations and the right way to approach it. We use examples of modern obfuscation techniques to illustrate our points and demonstrate an example of the correct approach.
-		* **Papers**
+				* Understanding the essential aspects that make up obfuscation allows us to see the fundamental flaw with modern obfuscation implementations and the right way to approach it. We use examples of modern obfuscation techniques to illustrate our points and demonstrate an example of the correct approach.		
+		- **Papers**
+			* [Obfuscation for object-oriented programs: dismantling instance methods - Heh-Tyan Liaw, Shih-Chieh Wei(2013)](https://onlinelibrary.wiley.com/doi/10.1002/spe.2193)
+				* Code obfuscation can help software developers protect technological secrets. Code readability is greatly enhanced with object-oriented technology that represents dynamic binding using instance method invocation. Therefore, dismantling instance methods is proposed in this paper as a critical obfuscating technique for object-oriented programs. The interception classes are interpolated first into the project. The static images and the up forwarders are then created. For each virtual function system and each interface function system, a respective dispatching function is set up. By properly arranging the class identifiers and binding identifiers, the switch statement in the dispatching function can be compiled into constant-time low-level code. After using dispatching functions to simulate virtual function system or interface function system invocations, all original instance methods in the project will be removed. Interception functions and export functions are indispensable in supporting the operation of callback methods. A prototype of our obfuscation system was implemented and successfully tested on some practical scale applications. 
+			* [Layered obfuscation: a taxonomy of software obfuscation techniques for layered security - Hui Xu, Yangfan Zhou, Jiang Ming, Michael Lyu(2020)](https://cybersecurity.springeropen.com/articles/10.1186/s42400-020-00049-3)
+				* In the paper, we conduct a systematic review of existing obfuscation techniques based on the idea of layered obfuscation and develop a novel taxonomy of obfuscation techniques. Following our taxonomy hierarchy, the obfuscation strategies under different branches are orthogonal to each other. In this way, it can assist developers in choosing obfuscation techniques and designing layered obfuscation solutions based on their specific requirements.
 			* [malWASH: Washing Malware to Evade Dynamic Analysis - Kyriakos K. Ispoglou, Mathias Payer](https://www.usenix.org/conference/woot16/workshop-program/presentation/ispoglou)
-				* We present malWASH, a dynamic diversification engine that executes an arbitrary program without being detected by dynamic analysis tools. Target programs are chopped into small components that are then executed in the context of other processes, hiding the behavior of the original program in a stream of benign behavior of a large number of processes. A scheduler connects these components and transfers state between the different processes. The execution of the benign processes is not impacted. Furthermore, malWASH ensures that the executing program remains persistent, complicating the removal process.
-		* **Tools**
-			* [MarkovObfuscate](https://github.com/CylanceSPEAR/MarkovObfuscate)
-				* Use Markov Chains to obfuscate data as other data
-			* [Rubicon](https://github.com/asaurusrex/Rubicon)
-				* "Rubicon is designed to provide a barebones custom encryption algorithm (which I encourage you to further customize!) which will be crafted into C++ payloads for you! That's right, you won't have to write any C++ (but you will need to compile it), but you will benefit from your shellcode being custom encrypted in unmanaged code. It is a basic stream cipher which is implemented as, fundamentally, a Caesar cipher. It is NOT meant to be cryptographically secure, but to prevent automated detection/analysis from detecting malicious payloads. It calls NO crypto libraries when decrypted (except python does call the library secrets, but that isn't inherently for crypto as opposed to randomness), which is a big plus to avoiding automated detection."
-			* [GG-AESY](https://github.com/jfmaes/GG-AESY)
-				* [Article](https://redteamer.tips/introducing-gg-aesy-a-stegocryptor/)
-				* Hide cool stuff in images :)
-	* **Meta/Poly-Morphism**<a name="metapoly"></a>
+				* We present malWASH, a dynamic diversification engine that executes an arbitrary program without being detected by dynamic analysis tools. Target programs are chopped into small components that are then executed in the context of other processes, hiding the behavior of the original program in a stream of benign behavior of a large number of processes. A scheduler connects these components and transfers state between the different processes. The execution of the benign processes is not impacted. Furthermore, malWASH ensures that the executing program remains persistent, complicating the removal process.		
+		- **Tools**
+			* [Tigress_protection](https://github.com/JonathanSalwan/Tigress_protection)
+				* "Playing with the Tigress binary protection. Break some of its protections and solve some of its challenges. Automatic deobfuscation using symbolic execution, taint analysis and LLVM."
+			* [malWASH v2.0](https://github.com/HexHive/malWASH)
+				* "malWASH is a dynamic diversification engine that executes an arbitrary program without being detected by dynamic analysis tools. In other words, it is a malware engine, that can make existing malware, to evade all existing behavioral and dynamic analysis detection methods.  Note that malWASH is research project (i.e. not stable). The goal of this project is to demonstrate that this new generation of malware is possible. It needs a lot of additional work to become a tool that can be used in the wild."
+		- **Compiler-based**<a name="obfus-compiler"></a>
+			- **LLVM**
+				* **101**
+					* [Tickling VMProtect with LLVM: Part 1 - fvrmatteo(2021)](https://secret.club/2021/09/08/vmprotect-llvm-lifting-1.html)
+						* [Part 2](https://secret.club/2021/09/08/vmprotect-llvm-lifting-2.html)
+						* [Part 3](https://secret.club/2021/09/08/vmprotect-llvm-lifting-3.html)
+				* **Articles/Blogposts/Writeups**
+					* [Build your first LLVM Obfuscator - polarply(2020)](https://medium.com/@polarply/build-your-first-llvm-obfuscator-80d16583392b)
+						* In this post we will briefly present LLVM, discuss popular obfuscation approaches and their shortcomings and build our own epic LLVM-based string obfuscator.
+						* [Code](https://github.com/tsarpaul/llvm-string-obfuscator)
+				* **Tools**
+					* [Grimheart](https://github.com/Naville/Grimheart)
+						* Torture your LLVM Obfuscation
+					* [CodeObfs](https://github.com/bigBestWay/CodeObfs)
+						* LLVM based "VM" obfuscator
+					* [SheLLVM](https://github.com/SheLLVM/SheLLVM)
+						* A collection of LLVM transform and analysis passes to write shellcode in regular C
+					* [Obfuscator-LLVM](https://github.com/obfuscator-llvm/obfuscator/wiki)
+						* The aim of this project is to provide an open-source fork of the LLVM compilation suite able to provide increased software security through code obfuscation and tamper-proofing. 
+					* [llvm2019](https://github.com/mangh/llvm2019)
+					* [llvm-mingw](https://github.com/mstorsjo/llvm-mingw)
+						* An LLVM/Clang/LLD based mingw-w64 toolchain; This is a recipe for reproducibly building a LLVM/Clang/LLD based mingw-w64 toolchain.
+					* [vs-obfuscation](https://github.com/Tai7sy/vs-obfuscation)
+					* [HikariCore](https://github.com/HikariRebooted/HikariCore)
+						* Fork of the core LLVM Obfuscation Library of Hikari.
+					* [Obfuscator](https://github.com/klezVirus/obfuscator/tree/llvm-9.0.1)
+						* ollvm, based on llvm-clang 5.0.2, 6.0.1, 7.0.1, 8.0, 9.0, 9.0.1
+		- **MarkovChains**
+			* **Tools**
+				* [MarkovObfuscate](https://github.com/CylanceSPEAR/MarkovObfuscate)
+					* Use Markov Chains to obfuscate data as other data
+		- **Shellcode-based**
+			- **Tools**
+				* [Obfuscator](https://github.com/3xpl01tc0d3r/Obfuscator)
+					* The program is designed to obfuscate the shellcode.
+				* [xObf](https://github.com/d35ha/xObf)
+					* Simple x86/x86_64 instruction level obfuscator based on a basic SBI engine	
+				* [Obfuscator](https://github.com/3xpl01tc0d3r/Obfuscator)
+					* The program is designed to obfuscate the shellcode. Currently the tool supports 2 encryption.
+				* [TinyObfuscate - A small String Obfuscator - Michael Haephrati(2017)](https://www.codeproject.com/Articles/1210398/TinyObfuscate-A-small-String-Obfuscator)					
+		- **VirtualMachine-based**<a name="obfus-vm"></a>
+			- **LLVM**
+				* **101**
+				* **Articles/Blogposts/Writeups**
+				* **Tools**
+					* [x86 Code Virtualizer](https://github.com/NIKJOO/x86-Code-Virtualizer)
+						* Open-source and lite application to obfuscate binary codes and makes challenge for reverse engineers to understand code.
+					* [NoVmp](https://github.com/can1357/NoVmp)
+						* NoVmp is a project devirtualizing VMProtect x64 3.0 - 3.5 (latest) into optimized VTIL and optionally recompiling back to x64 using the Virtual-machine Translation Intermediate Language library. It is rather experimental and is mostly a PoC I wanted to release. Most things can be improved especially with the new NativeLifters repo, but it did not exist back in the time this was written.
+					* [StackVMSharp](https://github.com/japajoe/StackVMCPP)
+						* A stack and register based virtual machine which can compile and run arbitrary code in runtime.
+		- **Steganography**<a name="obfus-stego"></a>
+			* **101**
+			* **Articles/Blogposts/Writeups**
+			* **Tools**
+				* [GG-AESY](https://github.com/jfmaes/GG-AESY)
+					* [Article](https://redteamer.tips/introducing-gg-aesy-a-stegocryptor/)
+					* Hide cool stuff in images :)
+	- **Meta/Poly/Oligo-Morphism**<a name="metapoly"></a>
 		* **101**
 			* [Metamorphism and permutation: feel the difference - Z0mbie](https://vxug.fakedoma.in/archive/VxHeaven/lib/vzo24.html)
+			* [Oligomorphism vs polymorphism vs metamorphism in malware - StackExchange(2011)](https://security.stackexchange.com/questions/4619/oligomorphism-vs-polymorphism-vs-metamorphism-in-malware)
 		* **Articles/Blogposts/Writeups**
 			* [Metamorphism in practice or "How I made MetaPHOR and what I've learnt" - The Mental Driller(2002)](https://vxug.fakedoma.in/archive/VxHeaven/lib/vmd01.html)
 			* [Whitecomet-Research](https://github.com/PoCInnovation/Whitecomet-Research)
@@ -1834,59 +1906,467 @@
 				* [MorphAES](https://github.com/cryptolok/MorphAES)
 					* MorphAES is the world's first polymorphic shellcode engine, with metamorphic properties and capability to bypass sandboxes, which makes it undetectable for an IDPS, it's cross-platform as well and library-independent.
 				* [Fetch-n-Exec](https://github.com/x0reaxeax/Fetch-n-Exec)
-					* The idea behind this one is to fetch opcodes and data from a remote server to rewrite the binary with during runtime. Except this time, we go x64 and -nostdlib, so everything will be done using syscalls and a few helper buddies from x0lib.
-	* **USB**
+					* The idea behind this one is to fetch opcodes and data from a remote server to rewrite the binary with during runtime. Except this time, we go x64 and -nostdlib, so everything will be done using syscalls and a few helper buddies from x0lib.	
+	- **Packers**<a name="packers"></a>
+		- **101**
+			* [Awesome Executable Packing](https://github.com/dhondta/awesome-executable-packing)
+			* [PaaS, or how hackers evade antivirus software - (2021)](https://www.ptsecurity.com/ww-en/analytics/pt-esc-threat-intelligence/paas-or-how-hackers-evade-antivirus-software/)
+			* [Writing a PE packer – Intro - BidouilleSecurity(2021)](https://bidouillesecurity.com/tutorial-writing-a-pe-packer-intro/)
+				* [Code](https://github.com/jeremybeaume/packer-tutorial)
+				* [Part 1](https://bidouillesecurity.com/tutorial-writing-a-pe-packer-part-1/)
+				* [Part 2](https://bidouillesecurity.com/tutorial-writing-a-pe-packer-part-2/)
+				* [Part 3](https://bidouillesecurity.com/tutorial-writing-a-pe-packer-part-3/)
+				* [Part 4](https://bidouillesecurity.com/tutorial-writing-a-pe-packer-part-4/)
+				* [Part 5](https://bidouillesecurity.com/tutorial-writing-a-pe-packer-part-5/)
+		- **Articles/Blogposts/Writeups**
+		- **Tools**
+			* [Pakkero](https://github.com/89luca89/pakkero)
+				* Pakkero is a binary packer written in Go made for fun and educational purpose. Its main goal is to take in input a program file (elf binary, script, even appimage) and compress it, protect it from tampering and intrusion.
+	- **USB**
 		* [libusb](https://github.com/libusb/libusb)
 			* libusb is a library for USB device access from Linux, macOS, Windows, OpenBSD/NetBSD, Haiku and Solaris userspace.
-* **General Evasion Stuff**<a name="evasion"></a>
-	* **Articles/Blogposts/Writeups**
+- **General Evasion Stuff**<a name="evasion"></a>
+	- **Articles/Blogposts/Writeups**
 		* [How “Encrypted and Authenticated” Payload is Constructed - secfu.net](https://www.secfu.net/2020/06/28/how-encrypted-and-authenticated-payload-is-constructed/)
 		* [Hindering Threat Hunting, a tale of evasion in a restricted environment - Borja Merino(2020)](https://www.blackarrow.net/hindering-threat-hunting-a-tale-of-evasion-in-a-restricted-environment/)
 		* [Evadere Classifications - Jonathan Johnson(2021)](https://posts.specterops.io/evadere-classifications-8851a429c94b?gi=b4339934bff4)
-	* **Talks/Presentations/Videos**
+	- **Talks/Presentations/Videos**
 		* [Adventures in Asymmetric Warfare - Will Schroeder(BSides Augusta2014)](https://www.youtube.com/watch?v=53qQfCkVM_o)
 			* As a co-founder and principal developer of the Veil-Framework, the speaker has spent a considerable amount of time over the past year and a half researching AV-evasion techniques. This talk will briefly cover the problem space of antivirus detection, as well as the reaction to the initial release of Veil-Evasion, a tool for generating AV-evading executables that implements much of the speaker’s research. We will trace through the evolution of the obfuscation techniques utilized by Veil-Evasion’s generation methods, culminating in the release of an entirely new payload language class, as well as the release of a new ..NET encryptor. The talk will conclude with some basic static analysis of several Veil-Evasion payload families, showing once and for all that antivirus static signature detection is dead.
-	* **Tools**
+	- **Tools**
 		* [HashDB](https://github.com/OALabs/hashdb)
 			* HashDB can be used as a stand alone hashing library, but it also feeds the HashDB Lookup Service run by OALabs. This service allows analysts to reverse hashes and retrieve hashed API names and string values.
-* **Publishing**<a name="ipub"></a>
-	* **Linux**
+- **Updates**<a name="updates"></a>
+	- **101**
+		* [The Update Framework: A framework for securing software update systems](https://theupdateframework.io/)
+		* [The Update Framework (TUF) - code](https://github.com/theupdateframework)
+	- **Articles/Blogposts/Writeups**
+	- **Tools**
+- **Network Communications**<a name="netcomms"></a>
+	* **Agnostic**
+		* [Securing Custom Protocols With Noise - grund.me(2021)](https://grund.me/posts/securing-custom-protocols-with-noise/)	
+	- **Articles/Blogposts/Writeups**<a name="netcomart"></a>
+		* [Designing Peer-To-Peer Command and Control - cobbr(2019)](https://cobbr.io/Designing-Peer-To-Peer-C2.html)
+			* "In this post we will discuss the design and implementation of peer-to-peer command and control protocols in general, as well as the concrete example of the peer-to-peer design implemented in Covenant, an open-source command and control framework, as of v0.2 (released today), which I will refer to often."
+	- **Talks/Presentations**<a name="c2comtalks"></a>
+		* [DIY Command & Control For Fun And *No* Profit - David Schwartzberg(Derbycon2013)](https://www.irongeek.com/i.php?page=videos/derbycon3/3106-diy-command-control-for-fun-and-no-profit-david-schwartzberg)
+			* Description: Many security professionals have heard about Command & Control botnets, even more have been infected by them. Very few have had the opportunity to actually look inside the server control panel of a C&C. This mainly hands – on presentation will walk you through a very dark corner of the Internet and provide a glimpse of the daily life of a cybercriminal. Live malware will be used during this presentation so make sure you turn off your Wi-Fi.
+		* [C2 Channels - Creative Evasion - Justin Wilson(Derbycon2017)](https://www.irongeek.com/i.php?page=videos/derbycon7/s22-c2-channels-creative-evasion-justin-wilson)
+		* Shining light on new ways attackers are being creative with C2 channels.
+		* [Designing & building a stealth C2 LDAP channel - Rindert Kramer(Derbycon2019)](https://www.irongeek.com/i.php?page=videos/derbycon9/stable-04-designing-building-a-stealth-c2-ldap-channel-rindert-kramer)
+			* When organizations choose to isolate networks, they often choose to implement technologies like private VLANs, use separate hosts and hypervisors and maybe even separate physical locations in order to guarantee the isolation. But what if these separated environments share the same Active Directory environment? It's not hard to come up with ideas why this might seem like a good idea, however, it also provides an opportunity to exchange data over LDAP. After all, even in non-Windows environments LDAP is still used as a central node within the network. During this talk I will go into detail about the process of designing & building a stealth C2 LDAP channel, which makes communication between different strictly firewalled network segments possible.
+		* [Killsuit: The Equation Group's Swiss Army knife for persistence, evasion, and data exfil - Francisco Donoso(Derbycon2018)](https://www.irongeek.com/i.php?page=videos/derbycon8/track-3-17-killsuit-the-equation-groups-swiss-army-knife-for-persistence-evasion-and-data-exfil-francisco-donoso)
+			* Most researchers have focused on the Equation Group's brilliant exploits but very few researchers have focused on their extremely effective post exploitation capabilities. During this talk, we will dissect the KillSuit framework, the Equation Group's Swiss Army Knife for persistence, information gathering, defense evasion, and data exfiltration. KillSuit is a little-known part of the DanderSpritz post-exploitation toolkit, leaked by the Shadow Brokers in April 2017. KillSuit is a full featured and versatile framework used by a variety of the Equation Group's tools and implants. KillSuit provides the ability to stealthily establish persistence on machines, install keyloggers, packet capture tools, perform WiFi MITM, and other more information gathering tools. Killsuit includes many interesting ways to silently exfiltrate data and intel - including custom written IPSEC-like protocols and misuse of ""disabled"" WIFI cards and near-by open networks.
+		* [Sharing the Myth - Cody Thomas(2020)](https://posts.specterops.io/sharing-the-myth-d14eb1b4fc23)
+		* [Mythic External Agent](https://github.com/its-a-feature/Mythic_External_Agent)
+			* This repo defines the folder structure for an external Mythic agent that can be remotely "installed" into a Mythic instance. This process allows users to create their own Mythic agents and host them on their own GitHub repositories while also allowing an easy process to install agents.
+		* [LARRYCHATTER](https://github.com/slaeryan/LARRYCHATTER)
+			*  Covert C2 Framework - PoC HAMMERTOSS Revenant - C2 over Twitter
+		* [Hunting the Hunters - RCE in Covenant C2 - 0xcoastal(2020)](https://blog.null.farm/hunting-the-hunters)
+		* [Foxtrot C2: A Journey of Payload Delivery - Dimitry Snezhkov(Derbycon2018)](https://www.irongeek.com/i.php?page=videos/derbycon8/stable-11-foxtrot-c2-a-journey-of-payload-delivery-dimitry-snezhkov)
+			* [Slides](https://www.slideshare.net/dimas050/foxtrot-c2-a-journey-of-payload-delivery)
+			* Execution of an offensive payload may begin with a safe delivery of the payload to the endpoint itself. When secure connections in the enterprise are inspected, reliance only on transmission level security may not be enough to accomplish that goal. Foxtrot C2 serves one goal: safe last mile delivery of payloads and commands between the external network and the internal point of presence, traversing intercepting proxies, with the end-to-end application level encryption. While the idea of end-to-end application encryption is certainly not new, the exact mechanism of Foxtrot's delivery implementation has advantages to Red Teams as it relies on a well known third party site, enjoying elevated ranking and above average domain fronting features. Payload delivery involves several OpSec defenses: sensible protection from direct attribution, active link expiration to evade consistent interception, inspection, tracking and replay activities by the defenders. Asymmetric communication channels will also be used. And if your standalone Foxtrot agent is caught, the delivery mechanism may live on, you could still manually bring the agent back into the environment via the browser. A concept tool built on these ideas will be presented and released. It will be used as basis for our discussion.
+		* [99 Reasons Your Perimeter Is Leaking - Evolution of C&C - John Askew(Derbycon2018)](https://www.irongeek.com/i.php?page=videos/derbycon8/track-4-11-99-reasons-your-perimeter-is-leaking-evolution-of-cc-john-askew)
+			* From the venerable bind shell, to the reverse shell, the IRC bot channel, the icmp/dns/custom UDP tunnel, and the asynchronous HTTP C&C server, remote access has taken many forms since we first began remotely exploiting software. Even today, many traditional methods will still frequently bypass firewalls and detection, and additional methods continue to be devised. But as an attacker, what do I do when my favorite method is blocked? What are my options other than reusing a stale python script from github or creating my own ad-hoc, informally-specified, bug-ridden, slow implementation of a high-level messaging protocol? And as a defender, how can I measure my ability to detect the diverse C&C traffic that may be seen today, and also prepare for new and unexpected channels? In this talk, we will discuss the evolution of command and control methods, their strengths and weaknesses from an attacker's perspective, and the capabilities of a defender to detect and respond to them. We will identify what aspects a forward-thinking C&C framework might require, and then demonstrate a proof-of-concept with 99(ish) different interchangeable methods for communication. Finally, we will discuss some of the shortcomings of egress filtering in enterprise environments that should be addressed in order to mature our detection and response in kind.
+		* [Victim Machine has joined #general: Using Third Party APIs as C&C Infrastructure - Stephen Hilt, Lord Alfred Remorin(Derbycon2017)](https://www.irongeek.com/i.php?page=videos/derbycon7/t115-victim-machine-has-joined-general-using-third-party-apis-as-cc-infrastructure-stephen-hilt-lord-alfred-remorin)
+			* The popularity of third party chat applications is on the rise for both personal and enterprise use. They provide the ability to send brief messages similar to previously popular platforms such as ICQ, AIM, and even IRC. However, one of the main reasons they are being adopted is due to their functionality and cost. The challenge is that these same benefits are attracting cybercriminals to the services.   Cybercriminals are utilizing legitimate chat services as command and control channels to facilitate malicious activity. To achieve this, actors are using the platforms’ API services to integrate custom applications within the chat platforms. On most of these platforms, “bots” are automated scripts that are running on a remote machine to provide integrated information, including anything from a cat fact and meme creation, to running OS commands. The APIs allow for flexibility to listen for an action and then perform a task based on the information. Threat actors are taking notice of this and utilizing API functions for command and control. This talk will delve into the API functions, and how malware and cybercriminals are utilizing these functions as command and control capabilities. Attendees will understand how to identify, mitigate and prevent such communications from happening in their own organizations.
+		* [The Art of C2: Myths vs. Reality - Yossi Sassi, Dor Amit(BSidesTLV2020)](https://www.youtube.com/watch?v=Gy_UKIzYohY&feature=share)
+		* [Functional Cloud C2 - Chris Truncer(SANS HackFest Summit 2020)](https://www.youtube.com/watch?v=FYZWOBR3g3o&list=PLdVJWiil7RxoW8rBeKc0flY8bRuD3M68L&index=13)
+			* It’s no surprise that attackers repurpose legitimate cloud services for malicious use, such as command and control. Defenders are also aware of this shift and have spent their time researching this move to build better defenses. As such, attackers are forced to innovate.  Azure Functions is Microsoft’s entry into “server-less code”. Beyond developing code that can run anywhere in the cloud, it provides users with the ability to trigger arbitrary code execution that performs any task you’ve developed, including proxying communications. We’re going to look at how Azure Functions can be leveraged by security professionals, and attackers, for command and control.  This talk will dive into two methods for establishing command and control communications while leveraging the cloud to control compromised systems.
+	- **Data-Serialization-related**
+		- **Cap'n Proto**
+			* [Cap'n Proto](https://capnproto.org/)
+		- **FlatBuffers**
+			* [FlatBuffers](https://google.github.io/flatbuffers/)
+				* FlatBuffers is an efficient cross platform serialization library for C++, C#, C, Go, Java, Kotlin, JavaScript, Lobster, Lua, TypeScript, PHP, Python, Rust and Swift. It was originally created at Google for game development and other performance-critical applications.
+		- **Protobufs**
+			- **101**
+			- **Articles/Blogposts/Writeups**
+				* [Practical API Design at Netflix, Part 1: Using Protobuf FieldMask - Alex Borysov, Ricky Gardiner(2021)](https://netflixtechblog.com/practical-api-design-at-netflix-part-1-using-protobuf-fieldmask-35cfdc606518)
+					* [Part 2](https://netflixtechblog.com/practical-api-design-at-netflix-part-2-protobuf-fieldmask-for-mutation-operations-2e75e1d230e4?gi=d941091d8f1)
+		- **Python**
+			* [marshmallow: simplified object serialization](https://marshmallow.readthedocs.io/en/stable/)
+				* marshmallow is an ORM/ODM/framework-agnostic library for converting complex datatypes, such as objects, to and from native Python datatypes.
+	- **Authentication Methods**
+		* **OPAQUE**
+			* [opaque(rust implementation)](https://github.com/gustin/opaque)
+				* OPAQUE protocol, a secure asymmetric password authenticated key exchange (aPAKE) that supports mutual authentication in a client-server setting without reliance on PKI and with security against pre-computation attacks upon server compromise.
+	- **Tools**
+		* [Toxiproxy](https://github.com/Shopify/toxiproxy)
+			* A TCP proxy to simulate network and system conditions for chaos and resiliency testing
+- **Communication Channel Examples/Samples/PoCs**<a name="c2commsamples"></a>
+	- **Samples**
+		* [cflsh](https://github.com/dsnezhkov/cflsh)
+			* CloudFlare Worker Shell
+		* [Mistica](https://github.com/IncideDigital/Mistica)
+			* An open source swiss army knife for arbitrary communication over application protocols
+	- **404**
+		* [How to Build a 404 page not found C2](https://www.blackhillsinfosec.com/?p=5134)
+		* [404 File not found C2 PoC](https://github.com/theG3ist/404)
+	- **ActiveDirectory Features**
+		* [Command and Control Using Active Directory - harmj0y(2016)](http://www.harmj0y.net/blog/powershell/command-and-control-using-active-directory/)
+		* [Active Directory as a C2 (Command & Control) - akijos(2018)](https://akijosberryblog.wordpress.com/2018/03/17/active-directory-as-a-c2-command-control/)
+	- **ARP**
+		* [Zarp](https://github.com/hatRiot/zarp)
+			* Zarp is a network attack tool centered around the exploitation of local networks. This does not include system exploitation, but rather abusing networking protocols and stacks to take over, infiltrate, and knock out. Sessions can be managed to quickly poison and sniff multiple systems at once, dumping sensitive information automatically or to the attacker directly. Various sniffers are included to automatically parse usernames and passwords from various protocols, as well as view HTTP traffic and more. DoS attacks are included to knock out various systems and applications.
+	- **Browser**
+		* [Browser-C2](https://github.com/0x09AL/Browser-C2)
+			* Post Exploitation agent which uses a browser to do C2 operations.
+		* [Using Firefox webextensions as c2 client - Matheus Bernardes](https://mthbernardes.github.io/persistence/2019/03/07/using-firefox-webextensions-as-c2-client.html)
+		* [InternetExplorer.Application for C2 - @leoloobeek(2017)](https://adapt-and-attack.com/2017/12/19/internetexplorer-application-for-c2/)
+			* Using IE COM object for comms.
+	- **Chrome Extension**
+		* [Abusing Google Chrome extension syncing for data exfiltration and C&C - Bojan(Sans(2021))](https://isc.sans.edu/forums/diary/Abusing+Google+Chrome+extension+syncing+for+data+exfiltration+and+CC/27066/)
+	- **Cobalt Strike**
+		* [External C2](https://github.com/ryhanson/ExternalC2)
+			* A library for integrating communication channels with the Cobalt Strike External C2 server
+	- **DNS**
+		- **101**
+			* [Domain Name System - Wikipedia](https://wikipedia.org/wiki/Domain_Name_System)
+			* [Multicast DNS - Wikipedia](https://en.wikipedia.org/wiki/Multicast_DNS)
+		- **Articles/Blogposts/Writeups**
+			* [C2 with DNS - NetbiosX(2017)](https://pentestlab.blog/2017/09/06/command-and-control-dns/)
+			* [DNS for red team purposes - redteam.pl(2020)](https://blog.redteam.pl/2020/03/dns-c2-rebinding-fast-flux.html?m=1)
+				* In the following blog post I would like to demonstrate a proof-of-concept for how red teamers can build DNS command & control (DNS C2, DNS C&C), perform DNS rebinding attack and create fast flux DNS. We will focus only on the DNS server part without building a complete working platform.			
+		- **Tools**
+			* [dnscat2-powershell](https://github.com/lukebaggett/dnscat2-powershell)
+				* A Powershell client for dnscat2, an encrypted DNS command and control tool
+			* [DNS-Persist](https://github.com/0x09AL/DNS-Persist)
+				* DNS-Persist is a post-exploitation agent which uses DNS for command and control. The server-side code is in Python and the agent is coded in C++.
+			* [ddor](https://github.com/rek7/ddoor)
+				* ddor is a cross platform light weight backdoor that uses txt records to execute commands on infected machines.
+			* [DNSStager](https://github.com/mhaskar/DNSStager)
+				* "DNSStager is an open-source project based on Python used to hide and transfer your payload using DNS. DNSStager will create a malicious DNS server that handles DNS requests to your domain and return your payload as a response to specific record requests such as AAAA or TXT records after splitting it into chunks and encoding the payload using different algorithms."
+	- **DNS-over-HTTPS(DoH)**
+		* **101**
+			* [DNS over HTTPS - Wikipedia](https://en.wikipedia.org/wiki/DNS_over_HTTPS)
+			* [RFC 8484: DNS Queries over HTTPS (DoH)](https://datatracker.ietf.org/doc/html/rfc8484)
+				* "This document defines a protocol for sending DNS queries and getting DNS responses over HTTPS.  Each DNS query-response pair is mapped into an HTTP exchange."
+		* **Articles/Blogposts/Writeups**
+			* [Playing with DNS over HTTPS (DoH) - DTM(2018)](https://dtm.uk/playing-with-dns-over-https/)
+			* [DNS over HTTPS (DoH) Servers - DTM(2018)](https://dtm.uk/dns-over-https-doh-servers/)
+			* [DNS Over HTTPS for Cobalt Strike - Kyle Avery(2021)](https://www.blackhillsinfosec.com/dns-over-https-for-cobalt-strike/)
+		* **Tools**
+			* [DoH-Stager](https://github.com/APTortellini/DoH-Stager)
+				* "DoH-Stager is an expansion of the awesome DNSStager tool made by @mohammadaskar2. DoH-Stager is aimed at providing the same functionalities as the original version, but using DNS-over-HTTPS instead of classic DNS."
+			* [TitanLdr](https://github.com/SecIdiot/TitanLdr)
+				* "Titan: A crappy Reflective Loader written in C and assembly for Cobalt Strike. Redirects DNS Beacon over DoH"
+	- **Email**
+		- **Agnostic**
+			* [DicerosBicornis](https://github.com/maldevel/dicerosbicornis)
+				* A stealthy Python based Windows backdoor that uses email as a command and control server.
+		- **Gmail**
+			* [gcat](https://github.com/s1l3nt78/gcat)
+				* Command Line RAT that uses Gmail as its central C2Server. Bypassing common issues, such as the need for port forwarding or proxies.
+	- **Firefox Send**
+		* [Foxtrot C2](https://github.com/dsnezhkov/foxtrot)
+			* C&C to deliver files and shuttle command execution instructions between an external actor and an internal agent with the help of Firefox Private Encrypted File Sharing 
+	- **Google Translate**
+		* [GTRS - Google Translator Reverse Shell](https://github.com/mthbernardes/GTRS/blob/master/README.md)
+			* This tools uses Google Translator as a proxy to send arbitrary commands to an infected machine.
+		* [BabyShark](https://github.com/UnkL4b/BabyShark)
+	- **HTTP/S**
+		* **101**
+		* **Articles/Blogposts/Writeups**
+			* [C2 with https](https://pentestlab.blog/2017/10/04/command-and-control-https/)
+		* **Tools**
+			* [Galvatron](https://github.com/khr0x40sh/Galvatron)
+				* Powershell fork of Monohard by Carlos Ganoza P. This botnet/backdoor was designed to egress over unecrypted web using very little, but effective obfuscation. Egress over ICMP and DNS are planned as features. Lastly, the server code is designed to setup the C2 on a LAMP-esque server. The default creds are admin/admin.
+			* [C2 over TLS Certs - Casey Smith](https://gist.github.com/caseysmithrc/a4c4748160ff9c782d8a86723dbc7334?t=1&cn=ZmxleGlibGVfcmVjcw%3D%3D&refsrc=email&iid=6e15d70104f847a8ae7723921067fe1d&fl=4&uid=150127534&nid=244+285282312)
+			* [ThunderShell](https://github.com/Mr-Un1k0d3r/ThunderShell)
+				* ThunderShell is a Powershell based RAT that rely on HTTP request to communicate. All the network traffic is encrypted using a second layer of RC4 to avoid SSL interception and defeat network hooks.
+			* [FruityC2](https://github.com/xtr4nge/FruityC2)
+				* FruityC2 is a post-exploitation (and open source) framework based on the deployment of agents on compromised machines. Agents are managed from a web interface under the control of an operator.
+			* [PlugBot-C2C](https://github.com/redteamsecurity/PlugBot-C2C)
+				* This is the Command & Control component of the PlugBot project
+			* [EggShell](https://github.com/neoneggplant/EggShell)
+				* EggShell is an iOS and macOS post exploitation surveillance pentest tool written in Python. This tool creates 1 line multi stage payloads that give you a command line session with extra functionality. EggShell gives you the power and convenience of uploading/downloading files, taking pictures, location tracking, shell command execution, persistence, escalating privileges, password retrieval, and much more. Server communication features end to end encryption with 128 bit AES and the ability to handle multiple clients. This is a proof of concept pentest tool, intended for use on machines you own.
+			* [EggShell Blogpost](http://lucasjackson.me/dWkKX/index.php/eggshell)
+			* [A Guide to Configuring Throwback](https://silentbreaksecurity.com/throwback-thursday-a-guide-to-configuring-throwback/)
+				* [Throwback - beacon](https://github.com/silentbreaksec/Throwback)
+				* [Throwback Listener](https://github.com/silentbreaksec/ThrowbackLP)
+	- **HTTP/2**
+		* **101**
+		* **Articles/Blogposts/Writeups**
+		* **Tools**
+	- **HTTP3**
+		* **101**
+		* **Articles/Blogposts/Writeups**
+		* **Tools**
+			* [Merlin](https://github.com/Ne0nd0g/merlin)
+				* Merlin is a cross-platform post-exploitation HTTP/2 Command & Control server and agent written in golang.
+	- **ICMP**
+		* [ICMP C2](https://pentestlab.blog/2017/07/28/command-and-control-icmp/)
+		* [C2 with ICMP](https://pentestlab.blog/2017/07/28/command-and-control-icmp/)
+	- **Images/Imgur**
+		* [Dali](https://github.com/h0mbre/Dali)
+			* Dali is the server-side half of an image-based C2 channel which utilizes Imgur to host images and task agents.
+	- **Named Pipes**
+		* [AsyncNamedPipes](https://github.com/rasta-mouse/AsyncNamedPipes)
+			* Quick PoC to send and receive messages over Named Pipes asynchronously. Start Server.exe and then Client.exe.
+	- **OCR**
+		* [Implementing Proof-of-Concept C2 with Microsoft OCR - Adrian Denkiewicz(CQLabs2020)](https://cqureacademy.com/cqure-labs/implementing-proof-of-concept-c2-with-microsoft-ocr)
+	- **Office365**
+		* [Callidus](https://github.com/3xpl01tc0d3r/Callidus)
+			* Latin word for “sneaky” is called “Callidus”. It is developed for learning and improving my knowledge about developing custom toolset in C# and learning how to leverage cloud services for the benefit of the user. It is developed using .net core framework in C# language. Allows operators to leverage O365 services for establishing command & control communication channel. It usages Microsoft Graph APIs for communicating with O365 services.
+		* [Introduction to Callidus - 3xpl01tc0d3r(2020)](https://3xpl01tc0d3r.blogspot.com/2020/03/introduction-to-callidus.html)
+	- **PAC**
+		* [Pacdoor](https://github.com/SafeBreach-Labs/pacdoor)
+			* Pacdoor is a proof-of-concept JavaScript malware implemented as a Proxy Auto-Configuration (PAC) File. Pacdoor includes a 2-way communication channel, ability to exfiltrate HTTPS URLs, disable access to cherry-picked URLs etc.
+	- **Print Jobs**
+		* [Using and detecting C2 printer pivoting - Alfie Champion, James Coote(2020)](https://labs.f-secure.com/blog/print-c2/)
+			* This post introduces the novel concept of Command & Control (C2) using print jobs, and demonstrates how this can be achieved using C3's Print channel. It also explores the OPSEC considerations behind the use of this technique, and outlines the detection opportunities that it can create.
+	- **QUIC**
+		* **101**
+		* **Articles/Blogposts/Writeups**
+		* **Tools**
+	- **Reddit**
+		* [The Resilient Reddit C2](https://www.irongeek.com/i.php?page=videos/circlecitycon2019/track-2-08-the-resilient-reddit-c2-zach-zenner)
+			* Twitter is frequently utilized to issue commands to a botnet: an account creates a post that is ran by a program locally on a user’s computer. Why limit it to Twitter? Reddit is a very viable platform that can be used to perform Command and Control operations while being able to blend in with other users as well as other network traffic. By combining multiple accounts with the post structure of Reddit, a Command and Control Herder can be persistent even past account or post deletion.
+	- **SSH** 
+		* [Spidernet](https://github.com/wandering-nomad/Spidernet)
+			* Proof of Concept of SSH Botnet C&C Using Python 
+	- **Social Media-based**
+		* [JSBN](https://github.com/Plazmaz/JSBN)
+			* JSBN is a bot client which interprets commands through Twitter, requiring no hosting of servers or infected hosts from the command issuer. It is written purely in javascript as a Proof-of-Concept for javascript's botnet potentials.
+		* [C2 with twitter](https://pentestlab.blog/2017/09/26/command-and-control-twitter/)
+		* [C2 with Telegram](https://github.com/graniet/gshark-framework)
+		* [BrainDamage](https://github.com/mehulj94/BrainDamage)
+			* A fully featured backdoor that uses Telegram as a C&C server
+		* [twittor - twitter based backdoor](https://github.com/PaulSec/twittor)
+			* A stealthy Python based backdoor that uses Twitter (Direct Messages) as a command and control server This project has been inspired by Gcat which does the same but using a Gmail account.
+		* [Instegogram](https://github.com/endgameinc/instegogram)
+		* [canisrufus](https://github.com/maldevel/canisrufus)
+			* A stealthy Python based Windows backdoor that uses Github as a command and control server.
+	- **SQL Server**
+		* [Databases and Clouds: SQL Server as a C2 - Scott Sutherland](https://blog.netspi.com/databases-and-clouds-sql-server-as-a-c2/)
+	- **Trello**
+		* [TrelloC2](https://github.com/securemode/TrelloC2)
+			* Simple C2 over the Trello API
+	- **WebDAV**
+		* [C2 with webdav](https://pentestlab.blog/2017/09/12/command-and-control-webdav/)
+		* [Using WebDAV features as a covert channel](https://arno0x0x.wordpress.com/2017/09/07/using-webdav-features-as-a-covert-channel/)
+	- **Web Services**
+		* [C2 with Dropbox](https://pentestlab.blog/2017/08/29/command-and-control-dropbox/)
+		* [DBC2](https://github.com/Arno0x/DBC2)
+			* DBC2 (DropboxC2) is a modular post-exploitation tool, composed of an agent running on the victim's machine, a controler, running on any machine, powershell modules, and Dropbox servers as a means of communication.
+		* [C2 with gmail](https://pentestlab.blog/2017/08/03/command-and-control-gmail/)	
+		* [Simple domain fronting PoC with GAE C2 server](https://www.securityartwork.es/2017/01/31/simple-domain-fronting-poc-with-gae-c2-server/)
+		* [google_socks](https://github.com/lukebaggett/google_socks)
+			* A proof of concept demonstrating the use of Google Drive for command and control.
+		* [Powershell Github Shell](https://github.com/zlocal/Powershell-Github-Shell)
+		* [google_RAT](https://github.com/a-rey/google_RAT)
+			* A remote access tool for Windows systems using google apps script as the middle man
+	- **WebSockets**
+		* [WSC2](https://github.com/Arno0x/WSC2)
+			* WSC2 is a PoC of using the WebSockets and a browser process to serve as a C2 communication channel between an agent, running on the target system, and a controller acting as the actual C2 server.
+		* [Using WebSockets and IE/Edge for C2 communications](https://arno0x0x.wordpress.com/2017/11/10/https://github.com/leoloobeek/GoGreen/blob/master/README.mdusing-websockets-and-ie-edge-for-c2-communications/)
+		* [MurDock - Mutable Universal Relay Document Kit](https://github.com/themson/MurDocK)
+			* The purpose of this tool is to provide a protocol independent framework that contains a base set of features that can piggyback on top of any collaborative web platform or service. The base docClient and docServer are meant to be extended upon with Buffer classes written for individual web services. These buffer classes can be plugged into the MurDock framework in order to create a unique shell infrastructure that will always contains a base set of features, as well as the ability to tunnel over any web application traffic for which a buffer class has been constructed. The framework can be extended to operate over lower level protocols if desired.
+		* [PetaQ](https://github.com/fozavci/petaqc2)
+			* PetaQ is a malware which is being developed in .NET Core/Framework to use websockets as Command & Control (C2) channels. It's designed to provide a Proof of Concept (PoC) websocket malware to the adversary simulation exercises (Red & Purple Team exercises).
+	- **WireGuard**
+		* **101**
+		* **Articles/Blogposts/Writeups**
+		* **Tools**
+			* [onetun](https://github.com/aramperes/onetun)
+	- **WMI-based**
+		* [WMImplant](https://github.com/ChrisTruncer/WMImplant)
+			* WMImplant is a PowerShell based tool that leverages WMI to both perform actions against targeted machines, but also as the C2 channel for issuing commands and receiving results. WMImplant will likely require local administrator permissions on the targeted machine.	
+		* [WheresMyImplant](https://github.com/0xbadjuju/WheresMyImplant)
+			* A Bring Your Own Land Toolkit that Doubles as a WMI Provider 
+		* [PowerProvider](https://github.com/0xbadjuju/PowerProvider/)
+			* PowerProvider: A toolkit to manipulate WMI. Used with WheresMyImplant
+	- **Tricks**<a name="tricks1"></a>
+		- **Port Multiplexing**
+			* **101**
+				* [TCP Port Service Multiplexer - Wikipedia](https://en.wikipedia.org/wiki/TCP_Port_Service_Multiplexer)
+				* [Multiplexing and Demultiplexing in Transport Layer - GeeksforGeeks(2021)](https://www.geeksforgeeks.org/multiplexing-and-demultiplexing-in-transport-layer/)
+				* [Understanding TCP and UDP Multiplexing - Imad Daou](https://www.ccnahub.com/ip-fundamentals/understanding-tcp-and-udp-multiplexing/)
+				* [OpenSSH/Cookbook/Multiplexing](https://en.wikibooks.org/wiki/OpenSSH/Cookbook/Multiplexing)
+			* **Tools**
+				* [sslh](https://github.com/yrutschle/sslh)
+					* Applicative Protocol Multiplexer (e.g. share SSH and HTTPS on the same port)
+- **Publishing**<a name="ipub"></a>
+	- **Linux**
 		* [fpm](https://github.com/jordansissel/fpm)
 			*  Effing package management! Build packages for multiple platforms (deb, rpm, etc) with great ease and sanity. 
-	* **Windows**
+	- **Windows**
 		* **Converting an .exe to an .msi**
 			* [Exe to MSI Converter](http://www.exetomsi.com/)
 			* [EMCO MSI Package Builder](https://emcosoftware.com/msi-package-builder)
-* **Language Specific**<a name="langspec"></a>
-	* **Basic**<a name="basiclang"></a>
-	* **C**<a name="clang"></a>
-		* **Binary Files**
+- **Language Specific**<a name="langspec"></a>
+	- **AutoIT**<a name="autoitlang"></a>
+		- **101**
+			* [Auto(It)mating your .NET tradecraft - vivi(2021)](https://thevivi.net/blog/pentesting/2021-11-24-autoitmating-your-dotnet-tradecraft/)
+		- **Collection**
+			* [OffensiveAutoIT](https://github.com/V1V1/OffensiveAutoIt)
+	- **Basic**<a name="basiclang"></a>
+	- **C**<a name="clang"></a>
+		- **ASM-related**
+			* **Articles/Blogposts/Writeups**
+				* [Abusing Forced Inline in C - Jurriaan Bremer(2012)](http://jbremer.org/abusing-forced-inline-in-c/)
+					* [Part 2](http://jbremer.org/abusing-forced-inline-part-2-breakpoints/)
+			* **Tools**
+				* [Template Assembly (tasm)](https://github.com/mattbierner/Template-Assembly)
+					* Uses C++ templates to embed x86 assembly code directly in normal C++ at compile-time using a domain specific language.		
+				* [Assemblyline](https://github.com/0xADE1A1DE/AssemblyLine)
+					* A C library and binary for generating machine code of x86_64 assembly language and executing on the fly without invoking another compiler, assembler or linker.
+		- **Binary Files**
 			* [LIEF](https://github.com/lief-project/LIEF)
 				* LIEF - Library to Instrument Executable Formats. The purpose of this project is to provide a cross platform library which can parse, modify and abstract ELF, PE and MachO formats.
 			* [Binary Loaders(C)](https://github.com/malisal/loaders)
 				* This repo is about small, self-contained implementations of various binary formats loaders (Macho on OSX, ELF on Linux/`*BSD` and PE on Windows). The rationale for these libraries is the following: You wrote an exploit and achieved arbitrary code execution. Now what? These loaders enable you to load and execute an arbitrary binary in your exploited process. The loaders are coded in a way that it's all done in memory, and they do not require access to system libraries/methods - it's all resolved on the fly. The Macho loader enables you to run bundle files, the ELF loader standard ELF files (no shared objects), and the PE loader enables you to run both DLLs and PE files alike.
-		* **Collection**
+		- **Building/Compiler-related**
+			* **Articles/Blogposts/Writeups**
+				* [Getting the maximum of your C compiler, for security - airbus-seclab](https://airbus-seclab.github.io/c-compiler-security/)
+			* **Tools**
+				* [ocean](https://github.com/STBoyden/ocean)
+					* A C/C++ build system/project manager written in Rust; Ocean is a project manager, similar to Rust's Cargo, for C and C++ written with Rust - that other systems programming language. The command syntax is very similar to that of Cargo's.
+				* [Awesome CMake](https://github.com/onqtam/awesome-cmake)
+					* A curated list of awesome CMake resources, scripts, modules and examples.
+				* [CMake Examples](https://github.com/ttroy50/cmake-examples)
+					* Useful CMake Examples
+				* [VC-LTL](https://github.com/Chuyu-Team/VC-LTL5)
+					* Shared to msvcrt.dll or ucrtbase.dll and optimize the C/C++ application file size.
+				* [Cosmopolitan](https://justine.lol/cosmopolitan/)
+					* " Cosmopolitan makes C a build-once run-anywhere language, similar to Java, except it doesn't require interpreters or virtual machines be installed beforehand. Cosmo provides the same portability benefits as high-level languages like Go and Rust, but it doesn't invent a new language and you won't need to configure a CI system to build separate binaries for each operating system. What Cosmopolitan focuses on is fixing C by decoupling it from platforms, so it can be pleasant to use for writing small unix programs that are easily distributed to a much broader audience. "
+					* [Code](https://github.com/jart/cosmopolitan)
+		- **C to X Lang**
+			- **Go**
+				* [c2goasm: C to Go Assembly](https://github.com/minio/c2goasm)
+					* This is a tool to convert assembly as generated by a C/C++ compiler into Golang assembly. It is meant to be used in combination with asm2plan9s in order to automatically generate pure Go wrappers for C/C++ code (that may for instance take advantage of compiler SIMD intrinsics or template<> code).
+			- **Rust**
+				* [C2Rust](https://github.com/immunant/c2rust)
+					* "C2Rust helps you migrate C99-compliant code to Rust. The translator (or transpiler) produces unsafe Rust code that closely mirrors the input C code. The primary goal of the translator is to preserve functionality; test suites should continue to pass after translation. Generating safe and idiomatic Rust code from C ultimately requires manual effort. However, we are building a scriptable refactoring tool that reduces the tedium of doing so. You can also cross-check the translated code against the original (tutorial)."
+		- **CLI Parameters**
+			* [ParamKit](https://github.com/hasherezade/paramkit)
+				* A small library helping to parse commandline parameters (for C/C++ on Windows).
+		- **Collection**
 			* [wcap](https://github.com/mmozeiko/wcap)
 				* Simple and efficient screen recording utility for Windows.
-		* **Crypter/Obfuscator**
-			* [avcleaner](https://github.com/scrt/avcleaner)
-				* C/C++ source obfuscator for antivirus bypass
-			* [tiny-AES-c](https://github.com/kokke/tiny-AES-c)
-				* Small portable AES128/192/256 in C
-		* **GUI**
+		- **Cryptographic Operations**
+			- **Collections of**
+				* [WjCryptLib](https://github.com/WaterJuice/WjCryptLib)
+					* Public Domain C Library of Cryptographic functions. Including: MD5, SHA1, SHA256, SHA512, RC4, AES, AES-CTR, AES-OFB, AES-CBC
+			- **Encryption**
+				* **Articles/Blogposts/Writeups**
+					* [String encryption using macro and cryptor - Emeric Nasi(2014)](http://blog.sevagas.com/?String-encryption-using-macro-and)
+				* **Tools**
+					* [tiny-AES-c](https://github.com/kokke/tiny-AES-c)
+						* Small portable AES128/192/256 in C
+					* [encrypt](https://github.com/skahwah/encrypt)
+						* Pseudorandom AES-256 encryption designed to protect shellcode and arbitrary strings. C# and C/C++ compatible.
+			- **Hashing**
+				* [xxHash](https://github.com/Cyan4973/xxHash)
+					* xxHash is an Extremely fast Hash algorithm, running at RAM speed limits. It successfully completes the SMHasher test suite which evaluates collision, dispersion and randomness qualities of hash functions. Code is highly portable, and hashes are identical across all platforms (little / big endian).
+				* [K-Hash](https://github.com/Keith-Cancel/k-hash)
+					* "A simple single header 64 bit hash function using only add, sub, ror, and xor. This a just general-purpose hash function for like making hash maps and similar data-structures. It's is not a cryptographic hash function!"
+				* [sha-2](https://github.com/amosnier/sha-2)
+					* SHA-2 algorithm implementations
+		- **Data Storage**
+			- **Compression**
+				* [tinf - tiny inflate library](https://github.com/jibsen/tinf)
+					* "tinf is a small library implementing the decompression algorithm for the deflate compressed data format (called 'inflate'). Deflate compression is used in e.g. zlib, gzip, zip, and png."
+			- **Storage**
+				* [plf::colony](https://github.com/mattreecebentley/plf_colony)
+					* An unordered data container providing fast iteration/insertion/erasure while maintaining pointer/iterator/reference validity to non-erased elements. Documentation and function descriptions here: https://plflib.org/colony.htm#functions
+		- **Discovery**
+			* [LocalDllParse](https://github.com/N4kedTurtle/LocalDllParse)
+				* Checks all loaded Dlls in the current process for a version resource. Useful for identifying EDRs on a system without making calls out of the current process and avoids all commonly monitored API calls. Just a PoC.
+			* [process-enumeration-stealth](https://github.com/LloydLabs/process-enumeration-stealth)
+				* "This is a simple PoC which allows you to return a list of PIDs currently using NTFS, by querying the \ntfs\ base device (the Windows filesystem base object). Using this method circumvents the need to use typical APIs, such as NtQuerySystemInformation or the higher level EnumProcesses. Using this non-typical reconnaissance method could allow operators to evade typical monitoring on endpoints 🎉. Thank you to Jonas Lyk for originally finding this bug."
+			* [Ps-Tools](https://github.com/outflanknl/Ps-Tools)
+				* an advanced process monitoring toolkit for offensive operations.
+				* [Red Team Tactics: Advanced process monitoring techniques in offensive operations - Cornelis de Plaa(2020)](https://outflank.nl/blog/2020/03/11/red-team-tactics-advanced-process-monitoring-techniques-in-offensive-operations/)
+		- **Dissasembly**
+			* [x86_dasm](https://github.com/thejanit0r/x86_dasm)
+				* "This lightweight library aims at providing x86-64 disassembling features while being compact and simple to understand and fix. There are no dependencies other than the C standard library, which can also be avoided with slight modifications, depending on the compilation options. It does not use any dynamic memory allocation."
+		- **ELF Loaders**
+		- **Embedded Interpreters/Scripting**
+			- **JavaScript**
+				* [mujs](https://github.com/ccxvii/mujs)
+					* An embeddable Javascript interpreter in C.
+		- **Execution**
+		- **GUI**
+			* **Agnostic**
+				* [raygui](https://github.com/raysan5/raygui)
+					* raygui is a simple and easy-to-use immediate-mode-gui library.
+			* **Linux**
+			* **macOS**
+			* **Windows**	
+				* [SlimApp](https://github.com/HardCoreCodin/SlimApp)
+					* A minimalist andf platform-agnostic application layer for writing graphical applications, with a strong emphasis on simplicity and ease of use.
 			* [LCUI](https://github.com/lc-soft/LCUI)
 				* A small C library for building user interfaces with C, XML and CSS.
-		* **Injection/Shellcode**
+		- **`*`-Injection**
+			* [LoadLibrary() and GetProcAddress() replacements for x86, x64, and ARM - @zerosum0x0](https://zerosum0x0.blogspot.com/2016/02/loadlibrary-and-getprocaddress.html)
+				* [Code](https://github.com/zerosum0x0-archive/archive)
 			* [C-S1lentProcess1njector](https://github.com/s1egesystems/C-S1lentProcess1njector)
 				* Process Injector written in C that scans for target processes, once found decrypts RC4 encrypted shellcode and injects/executes in target process' space with little CPU & Memory usage. 
-		* **Networking**
-			* [c-ares](https://github.com/c-ares/c-ares)
-				* A C library for asynchronous DNS requests
-		* **Publishing**
+			* [SeasideBishop](https://github.com/SolomonSklash/SeasideBishop)
+				* A C port of b33f's UrbanBishop
+		- **JSON**
+			* **Articles/Blogposts/Writeups**
+				* [jWrite - A Really Simple JSON Writer in C - tonywilk(2018)](https://www.codeproject.com/Articles/887604/jWrite-a-really-simple-JSON-writer-in-C)
+					* [jWrite](https://github.com/jonaskgandersson/jWrite)
+			* **Tools**
+				* [cJSON](https://github.com/DaveGamble/cJSON)
+					* Ultralightweight JSON parser in ANSI C.
+		- **Loaders/Stage0/1 Samples**
+			* **Articles/Blogposts/Writeups**
+				* [Building a Custom shellcode stager with process injection to Bypass Windows Defender - 0xrob(2020)](https://lowery.tech/building-a-custom-shellcode-stager-with-process-injection-to-bypass-windows-defender/)
+				* [Building a Custom Shellcode Loader with Syswhispers to Utilise Direct Syscalls  - 0xrob(2021)](https://lowery.tech/building-a-custom-shellcode-loader-with-syswhispers-to-utilise-direct-syscalls/)
+				* [Custom C Program to Download and Inject a Sliver Stager - mr.d0x(2021)](https://mrd0x.com/download-and-execute-sliver-stager/)
+			* **Examples**
+				* [Nobelium PdfDownloadRunAesMalware](https://github.com/boku7/Nobelium-PdfDLRunAesShellcode)
+					* A recreation of the "Nobelium" malware based on Microsofts Malware analysis - Part 1: PDF2Pwn
+				* [Prism](https://github.com/andreafabrizi/prism)
+					* PRISM is an user space stealth reverse shell backdoor, written in pure C.
+				* [Ninja_UUID_Runner](https://github.com/boku7/Ninja_UUID_Runner)
+					* Module Stomping, No New Thread, HellsGate syscaller, UUID Shellcode Runner for x64 Windows 10!
+				* [TitanLdr](https://github.com/SecIdiot/TitanLdr)
+					* "Titan: A crappy Reflective Loader written in C and assembly for Cobalt Strike. Redirects DNS Beacon over DoH"
+				* [yarhLoader](https://github.com/vxunderground/VXUG-Papers/blob/main/yarhLoader/Main.c)
+					* "yarhLoader is an x86/x64 file loader, file reader, and file writer that abuses NTFS File identifiers for file accessibility."
+		- **Networking**
+			* **Articles/Blogposts/Writeups**
+				* [c-ares](https://github.com/c-ares/c-ares)
+					* A C library for asynchronous DNS requests
+			* **Tools**
+				* [HevSocks5Core](https://github.com/heiher/hev-socks5-core)
+					* A simple, lightweight socks5 library. (IPv4/IPv6/TCP/UDP/Client/Server)
+				* [EDR Sniper](https://github.com/magisterquis/EDRSniper)
+					* Windows tool to drop TCP connections as they happen, like a PCAP-based firewall
+				* [MbedTLS](https://github.com/ARMmbed/mbedtls)
+					* Mbed TLS is a C library that implements cryptographic primitives, X.509 certificate manipulation and the SSL/TLS and DTLS protocols. Its small code footprint makes it suitable for embedded systems.
+		- **Obfuscation**
+			* **Tools**
+				* [CompileTime-String-Encryption](https://github.com/stevemk14ebr/CompileTime-String-Encryption)
+					* C++ 17 compile time string encryption supporting vs2010-2019.
+		- **PE/COFF/DLL Loading**
+			* **Articles/Blogposts/Writeups**
+				* [COFFLoader: Building your own in memory loader or how to run BOFs - Kevin Haubris(2021)](https://www.trustedsec.com/blog/coffloader-building-your-own-in-memory-loader-or-how-to-run-bofs/)
+			* **Tools/Examples**
+				* [pedump](https://github.com/buaabyl/pedump)
+					* An simplest PE parser, which list all import and export entries
+				* [MemJect](https://github.com/danielkrupinski/MemJect)
+					* Simple Dll injector loading from memory. Supports PE header and entry point erasure. Written in C99.
+				* [RunPE-In-Memory](https://github.com/aaaddress1/RunPE-In-Memory)
+					* Run a Exe File (PE Module) in memory (like an Application Loader)
+				* [COFFLoader](https://github.com/trustedsec/COFFLoader)
+					* This is a quick and dirty COFF loader (AKA Beacon Object Files). Currently can run un-modified BOF's so it can be used for testing without a CS agent running it. The only exception is that the injection related beacon compatibility functions are just empty.
+		- **Polymorphism**
+			* [Reflective Polymorphism](https://github.com/zeroSteiner/reflective-polymorphism)
+				* This project provides various utilities for the self-modification of PE images with the intention that they can be incorporated into external projects.
+		- **Publishing**
 			* [tcc - Tiny C Compiler](https://bellard.org/tcc/)
 			* [cosmopolitan libc](https://justine.lol/cosmopolitan/index.html)
 				*  Cosmopolitan makes C a build-once run-anywhere language, similar to Java, except it doesn't require interpreters or virtual machines be installed beforehand. Cosmo provides the same portability benefits as high-level languages like Go and Rust, but it doesn't invent a new language and you won't need to configure a CI system to build separate binaries for each operating system. What Cosmopolitan focuses on is fixing C by decoupling it from platforms, so it can be pleasant to use for writing small unix programs that are easily distributed to a much broader audience.
 				* [Code](https://github.com/jart/cosmopolitan)
+		- **Regular Expressions**
+			* [tiny-regex-c](https://github.com/kokke/tiny-regex-c)
+				* "Small and portable Regular Expression (regex) library written in C."
 		* **Samples/Examples**
 			* [PersistentCReverseShell](https://github.com/1captainnemo1/PersistentCReverseShell/blob/master/creverse.c)
 				*  A PERSISTENT FUD Backdoor ReverseShell coded in C for any Windows distro, that will make itself persistent on every BOOT and fire a decoy app in the foreground while connecting back to the attacker machine as a silent background process , spawning a POWERSHELL on the attacker machine. 
@@ -1894,8 +2374,20 @@
 				* This is a tool suite consisting of miscellaneous offensive tooling aimed at red teamers/penetration testers to primarily aid in Defense Evasion TA0005;
 			* [revsh](https://github.com/emptymonkey/revsh)
 				* A reverse shell with terminal support, data tunneling, and advanced pivoting capabilities.
-		* **WebServer**
-		* **Other**
+		- **Source Obfuscation**
+			* [avcleaner](https://github.com/scrt/avcleaner)
+				* C/C++ source obfuscator for antivirus bypass
+		- **Testing**
+			* [Criterion](https://github.com/Snaipe/Criterion)
+				* A cross-platform C and C++ unit testing framework for the 21st century
+		- **WebServers**
+		- **OS Specific**
+			- **Linux**
+			- **macOS**
+			- **Windows**
+				* [inline_syscall](https://github.com/JustasMasiulis/inline_syscall)
+					* Header only library that allows you to generate direct syscall instructions in an optimized, inlineable and easy to use manner.
+		- **Other Stuff(unsorted/didn't fit above)**
 	* **C++**<a name="cpp"></a>
 		* **Tradecraft**
 			* [Building C2 Implants in C++: A Primer - shogunlab(2020)](https://shogunlab.gitbook.io/building-c2-implants-in-cpp-a-primer/)
@@ -1937,9 +2429,15 @@
 					* ADVobfuscator demonstates how to use C++11/14 language to generate, at compile time, obfuscated code without using any external tool and without modifying the compiler. The technics presented rely only on C++11/14, as standardized by ISO. It shows also how to introduce some form of randomness to generate polymorphic code and it gives some concrete examples like the encryption of strings literals and the obfuscation of calls using finite state machines.
 				* [Obfuscate](https://github.com/adamyaxley/Obfuscate)
 					* Guaranteed compile-time string literal obfuscation header-only library for C++14.
+				* [Rubicon](https://github.com/asaurusrex/Rubicon)
+					* "Rubicon is designed to provide a barebones custom encryption algorithm (which I encourage you to further customize!) which will be crafted into C++ payloads for you! That's right, you won't have to write any C++ (but you will need to compile it), but you will benefit from your shellcode being custom encrypted in unmanaged code. It is a basic stream cipher which is implemented as, fundamentally, a Caesar cipher. It is NOT meant to be cryptographically secure, but to prevent automated detection/analysis from detecting malicious payloads. It calls NO crypto libraries when decrypted (except python does call the library secrets, but that isn't inherently for crypto as opposed to randomness), which is a big plus to avoiding automated detection."
+				* [cpp-obfuscator](https://github.com/revsic/cpp-obfuscator)
+					* C++ implementation of compile time obfuscator
 		* **Networking**
 			* [liblacewing](https://github.com/udp/lacewing)
 				* liblacewing is a library for writing cross-platform, networked applications in C/C++.
+			* [winhttp](https://github.com/ericroy/winhttp)
+				* C++ wrapper around the WinHTTP library
 		* **PE32**
 			* [libpebliss](https://github.com/imag0r/libpebliss)
 				* Cross-Platform PE(Portable Executable) Manipulating Library
@@ -2516,7 +3014,7 @@
 				* [GetAPISetMapping](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/GetAPISetMapping)
 					* This project parses the PEB to match Windows API Set DLL's to their host DLL.
 				* [SystemProcessAndThreadsInformation](https://github.com/FuzzySecurity/Sharp-Suite/tree/master/SystemProcessAndThreadsInformation)
-	* **Go**<a name="gopay"></a>
+	- **Go**<a name="gopay"></a>
 		* **Articles/Blogposts**
 			* [Antidebug Golang binary on Windoze ☯ - @lfm3773](https://acmpxyz.com/go_antidebug.html)
 		* **Talks/Presentations**
@@ -2530,6 +3028,9 @@
 			* **Tools/Libraries**
 				* [gobfuscate](https://github.com/unixpickle/gobfuscate)
 					* Currently, gobfuscate manipulates package names, global variable and function names, type names, method names, and strings.
+		* **Fileystem**
+			* [Pandoras Box](https://github.com/capnspacehook/pandorasbox)
+				* "pandorasbox is a Go package that allows for simple use of both a host's filesystem, and a virtual filesystem."
 		* **Libraries**
 			* [Coldfire](https://github.com/redcode-labs/Coldfire)
 				* Golang malware development framework
@@ -2644,7 +3145,7 @@
 		* **Talks/Presentations/Videos**
 			* [.NET Malware Threats: Internals And Reversing - Alexandre Borges(Defcon27)](https://www.youtube.com/watch?v=UB3pVTO5izU)
 				* .NET malware is well-known by security analysts, but even existing many tools such as dnSpy,.NET Reflector, de4dot and so on to make the analysis easier, most professionals have used them as a black box tool, without concerning to .NET internals, structures, MSIL coding and details. In critical cases, it is necessary have enough knowledge about internal mechanisms and to debug these .NET threats using WinDbg.  Unfortunately, .NET malware samples have become very challenger because it is so complicated to deobfuscated associated resources, as unpacking and dumping them from memory. Furthermore, most GUI debugging tools does an inside view of mechanisms such as CRL Loader, Managed Heap, Synchronization issues and Garbage Collection.  In the other side, .NET malware threats are incredibly interesting when analyzed from the MSIL instruction code, which allows to see code injections using .MSIL and attempts to compromise .NET Runtime keep being a real concern.  The purpose of this presentation is to help professionals to understand .NET malware threats and techniques by explaining concepts about .NET internals, mechanisms and few reversing techniques.
-	* **Nim**<a name="nimlang"></a>
+	- **Nim**<a name="nimlang"></a>
 		* **Articles/Blogposts**
 			* [Bypassing Windows protection mechanisms & Playing with OffensiveNim - s3cur3th1ssh1t(2020)](https://s3cur3th1ssh1t.github.io/Playing-with-OffensiveNim/)
 			* [Implant Roulette Part 1: Nimplant - NotoriousRebel(2020)](https://secbytes.net/implant-roulette-part-1:-nimplant/)
@@ -2721,7 +3222,7 @@
 			* App that generates PowerShell dropper scripts for .NET executables
 		* [PowerStager](https://github.com/z0noxz/powerstager)
 			* This script creates an executable stager that downloads a selected powershell payload, loads it into memory and executes it using obfuscated EC methods. The script will also encrypt the stager for dynamic signatures and some additional obfuscation. This enables the actual payload to be executed indirectly without the victim downloading it, only by executing the stager. The attacker can then for example implement evasion techniques on the web server, hosting the payload, instead of in the stager itself.
-	* **Python**<a name="python"></a>
+	- **Python**<a name="python"></a>
 		* **Binaries**
 			* [LIEF](https://github.com/lief-project/LIEF)
 				* LIEF - Library to Instrument Executable Formats. The purpose of this project is to provide a cross platform library which can parse, modify and abstract ELF, PE and MachO formats.
@@ -2756,7 +3257,7 @@
 				* This is a cross platform python framework which allows you to build custom payloads for Windows, Mac OSX and Linux as well. You are able to select whether the payload binds to a specific IP and port, listens for a connection on a port, option to send an email of system info when the system boots, and option to start keylogger on boot. Payloads created can only run on the OS that they were created on.
 			* [WEASEL](https://github.com/facebookincubator/WEASEL)
 				* WEASEL is a small in-memory implant using Python 3 with no dependencies. The beacon client sends a small amount of identifying information about its host to a DNS zone you control. WEASEL server can task clients to execute pre-baked or arbitrary commands. WEASEL is a stage 1 payload, meant to be difficult to detect and useful for regaining access when your noisy full-featured stages are caught.
-	* **Rust**<a name="rust"></a>
+	- **Rust**<a name="rust"></a>
 		* **Tradecraft**
 		* **Crypter/Obfuscator**
 		* **Injection/Shellcode**
@@ -2781,17 +3282,21 @@
 				* The windows crate lets you call any Windows API past, present, and future using code generated on the fly directly from the metadata describing the API and right into your Rust package where you can call them as if they were just another Rust module.
 			* [tinywin](https://github.com/janiorca/tinywin)
 				* A very small but functional Win32 apps in Rust using no_std
-* **Linux Specific**<a name="linspec"></a>
-	* **ELF Injection**
+- **Linux Specific**<a name="linspec"></a>
+	- **ELF Injection**
 		* [ELFun File Injector - pico(2016)](https://0x00sec.org/t/elfun-file-injector/410)
-	* **Unsorted**
+	- **Unsorted**
 		* [Zombie Ant Farm: Practical Tips for Playing Hide and Seek with Linux EDRs.](https://github.com/dsnezhkov/zombieant)
 			* Zombie Ant Farm: Primitives and Offensive Tooling for Linux EDR evasion
-* **macOS Specific**<a name="macspec"></a>
-	* See the 'Lambert' Family of Malware for Nation-State opinions on how to do it.
-	* **Articles/Blogposts**
+- **macOS Specific**<a name="macspec"></a>
+	- See the 'Lambert' Family of Malware for Nation-State opinions on how to do it.
+	- **Articles/Blogposts**
 		* [My Journey Writing A Post Exploitation Tool for macOS - Cedric Owens(2019)](https://medium.com/red-teaming-with-a-blue-team-mentaility/my-journey-writing-a-post-exploitation-tool-for-macos-d8293d51244f)
-* **Windows Specific**<a name="winspec"></a>
+	- **Obfuscation**
+		- **Tools**
+			* [MachObfuscator](https://github.com/kam800/MachObfuscator)
+				* MachObfuscator is a programming-language-agnostic Mach-O apps obfuscator for Apple platforms.
+- **Windows Specific**<a name="winspec"></a>
 	* [awesome-windows-kernel-security-development](https://github.com/ExpLife0011/awesome-windows-kernel-security-development)
 	* **Hooking**
 		* [Hook_API](https://github.com/EgeBalci/Hook_API)
@@ -2810,6 +3315,13 @@
 	* **Installation & Update**
 		* [Squirrel](https://github.com/Squirrel/Squirrel.Windows)
 			* Squirrel is both a set of tools and a library, to completely manage both installation and updating your Desktop Windows application, written in either C# or any other language (i.e., Squirrel can manage native C++ applications).
+	- **Obfuscation/ors**
+		- **Articles/Blogposts/Writeups**
+			* [Building an Obfuscator to Evade Windows Defender - Samuel Wong(2020)](https://www.xanthus.io/post/building-an-obfuscator-to-evade-windows-defender)
+		- **Talks/Presentations/Videos**
+			* [Evading Detection: A Beginner's Guide to Obfuscation](https://github.com/BC-SECURITY/Beginners-Guide-to-Obfuscation)
+				* "This is a hands-on class to learn the methodology behind malware delivery and avoiding detection. This workshop explores the inner workings of Microsoft's Antimalware Scan Interface (AMSI), Windows Defender, and Event Tracing for Windows (ETW). We will learn how to employ obfuscated malware using Visual Basic (VB), PowerShell, and C# to avoid Microsoft's defenses. Students will learn to build AMSI bypass techniques, obfuscate payloads from dynamic and static signature detection methods, and learn about alternative network evasion methods."
+		- **Tools**
 	* **PE32**
 		* [tinyPE](https://github.com/rcx/tinyPE)
 			* Smallest possible PE files. Artisanal, hand-crafted with love and care.
@@ -2857,6 +3369,10 @@
 				* Collection of various WINAPI tricks / features used or abused by Malware 			
 			* [Modular Windows.h Header File](https://github.com/Leandros/WindowsHModular)
 				* The Windows.h header file for the Win32 API is a behemoth of include file, adding hundreds of thousands of new macros, structs and functions. This project aims to modularize the Windows.h file, to only include what you require.
+		* **WinAPI Sample collections**
+			* [win32api-practice](https://github.com/EddieIvan01/win32api-practice)
+				* Offensive tools written for practice purposes
+			* [Random Windows API code snippets - stmxcsr](https://stmxcsr.com/micro/winapi-snippets.html)
 	* **Samples of**
 		* [delete-self-poc](https://github.com/LloydLabs/delete-self-poc)
 			* (Windows)A way to delete a locked file, or current running executable, on disk.
@@ -2867,30 +3383,6 @@
 			* This repo contains samples that demonstrate the API used in Windows classic desktop applications.
 		* [WinPwnage](https://github.com/rootm0s/WinPwnage)
 			* The meaning of this repo is to study the techniques. Techniques are found online, on different blogs and repos here on GitHub. I do not take credit for any of the findings, thanks to all the researchers.
-* **Communications**<a name="c2com"></a>
-	* **Agnostic**(Unsorted)
-		* [Securing Custom Protocols With Noise - grund.me(2021)](https://grund.me/posts/securing-custom-protocols-with-noise/)
-	* **Data-Serialization-related**
-		* **Agnostic**
-			* [Cap'n Proto](https://capnproto.org/)
-			* [FlatBuffers](https://google.github.io/flatbuffers/)
-				* FlatBuffers is an efficient cross platform serialization library for C++, C#, C, Go, Java, Kotlin, JavaScript, Lobster, Lua, TypeScript, PHP, Python, Rust and Swift. It was originally created at Google for game development and other performance-critical applications.
-		* **Python**
-			* [marshmallow: simplified object serialization](https://marshmallow.readthedocs.io/en/stable/)
-				* marshmallow is an ORM/ODM/framework-agnostic library for converting complex datatypes, such as objects, to and from native Python datatypes.
-	* **DNS**
-		* [DNS for red team purposes - redteam.pl(2020)](https://blog.redteam.pl/2020/03/dns-c2-rebinding-fast-flux.html?m=1)
-			* In the following blog post I would like to demonstrate a proof-of-concept for how red teamers can build DNS command & control (DNS C2, DNS C&C), perform DNS rebinding attack and create fast flux DNS. We will focus only on the DNS server part without building a complete working platform.
-	* **HTTP**
-	* **Internet Explorer**
-		* [InternetExplorer.Application for C2 - @leoloobeek(2017)](https://adapt-and-attack.com/2017/12/19/internetexplorer-application-for-c2/)
-			* Using IE COM object for comms.
-	* **Named Pipes**
-		* [AsyncNamedPipes](https://github.com/rasta-mouse/AsyncNamedPipes)
-			* Quick PoC to send and receive messages over Named Pipes asynchronously. Start Server.exe and then Client.exe.
-	* **OPAQUE**
-		* [opaque(rust implementation)](https://github.com/gustin/opaque)
-			* OPAQUE protocol, a secure asymmetric password authenticated key exchange (aPAKE) that supports mutual authentication in a client-server setting without reliance on PKI and with security against pre-computation attacks upon server compromise. 
 * **Configurations**
 	* **JSON**
 		* [Jsonnet](https://jsonnet.org/)
@@ -2986,6 +3478,7 @@
 	* [Virus Exchange](https://github.com/am0nsec/vx)
 		* "This repository will contain the code associated with papers I'm release either on my blog or at VX-Underground."
 ------------------------------------------------------------------------------------------------------------------------------
+
 
 
 

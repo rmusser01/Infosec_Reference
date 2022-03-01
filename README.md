@@ -55,7 +55,7 @@
 * [:bug: Fuzzing & Bug Hunting :bug:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Fuzzing.md)
 * [:video\_game: Game Hacking :video\_game:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Games.md)
 * [:honey\_pot:Honeypots:honey\_pot:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/honeypot.md)
-* [Interesting Things & Useful Information](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Stuff.md)
+* [Interesting Things & Useful Information](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Interesting_Things.md)
 * [Logging, Monitoring, & Threat Hunting](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/L-SM-TH.md)
 * [:skull:Malware:skull:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Malware.md)
 * [:warning:Network Attacks & Defense:warning:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Network_Attacks.md)

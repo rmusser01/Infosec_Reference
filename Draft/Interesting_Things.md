@@ -145,6 +145,7 @@ https://dynamicland.org/
 	* [The Distribution of Users’ Computer Skills: Worse Than You Think](https://www.nngroup.com/articles/computer-skill-levels/)
 	* [Infosec Podcasts](http://www.getmon.com/)
 	* [The Basic Laws Of Human Stupidity - Carlo M. Cipolia](http://harmful.cat-v.org/people/basic-laws-of-human-stupidity/)
+	* [Rawsec's CyberSecurity Inventory](https://inventory.raw.pm/) - An open-source inventory of tools, resources, CTF platforms and Operating Systems about CyberSecurity. ([Source](https://gitlab.com/rawsec/rawsec-cybersecurity-list))
 * **Airplanes**
 	* [NTSB Aviation Accident Database & Synopses](https://www.ntsb.gov/_layouts/ntsb.aviation/index.aspx)
 	* [The Aviation Herald](https://avherald.com/)

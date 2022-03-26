@@ -497,8 +497,9 @@
 	* [Browser Pivoting (Get past two-factor auth) - blog.cobalstrike](https://blog.cobaltstrike.com/2013/09/26/browser-pivoting-get-past-two-factor-auth/)
 	* [Windows Domains, Pivot & Profit - Fuzzynop](http://www.fuzzysecurity.com/tutorials/25.html)
    	* Hola! In this write-up we will be looking at different ways to move laterally when compromising a Windows domain. This post is by no means exhaustive but it should cover some of the more basic techniques and thought processes.
-    * [Performing port-proxying and port-forwarding on Windows - Wunderwuzzi(2020)](https://embracethered.com/blog/posts/2020/windows-port-forward/)
+	* [Performing port-proxying and port-forwarding on Windows - Wunderwuzzi(2020)](https://embracethered.com/blog/posts/2020/windows-port-forward/)
 	* [On how to access (protected) networks - s3cur3th1ssh1t(2021)](https://s3cur3th1ssh1t.github.io/On-how-to-access-protected-networks/)
+	* [Overview of network pivoting and tunneling - Alexandre Zanni(2021)](https://blog.raw.pm/en/state-of-the-art-of-network-pivoting-in-2019/)
 	- **Bash**
 		* [More on Using Bash's Built-in /dev/tcp File (TCP/IP)](http://www.linuxjournal.com/content/more-using-bashs-built-devtcp-file-tcpip)
 	- **Metasploit**

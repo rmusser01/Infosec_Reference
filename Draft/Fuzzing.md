@@ -2,7 +2,7 @@
 
 -------------------------------------------------
 ## Table of Contents
-- [Genera](#general)
+- [General](#general)
 	* [101](#101)
 	* [Books](#books)
 	* [Bug Hunting in Source Code](#bughunt)

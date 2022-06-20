@@ -433,6 +433,16 @@
 			* [Let’s set ice on fire: Hunting and detecting IcedID infections - Thomas Barabosch(2021)](https://www.telekom.com/en/blog/group/article/let-s-set-ice-on-fire-hunting-and-detecting-icedid-infections-627240)
 			* [Breaking down NOBELIUM’s latest early-stage toolset - Microsoft Threat Intelligence Center(2021)](https://www.microsoft.com/security/blog/2021/05/28/breaking-down-nobeliums-latest-early-stage-toolset/)
 	- **Methodologies**<a name="methodologies"></a>
+		- **'Data Driven Approach'**
+			* [Threat Hunting Research Methodology: A Data Driven Approach by Roberto & Jose Luis Rodriguez(InsomniHack2019)](https://www.youtube.com/watch?v=DuUF-zXUzPs)
+				* Threat hunting as a process is still being defined for many organizations across various industries. Hence, the justification of its budget becomes even harder. Some security teams don’t have a formalized team in place, and they see threat hunting as an informal, ad-hoc procedure where it becomes the responsibility of all Cyber employees to find malicious activity. Others see threat hunting as a formalized process that requires a full-time team focused more on creating detection strategies for adversaries even when they are not in the production environment. No matter how it is defined, there is still uncertainty pertaining to the impact that threat hunting has to the security posture of an organization. In addition, organizations believe that buying more tools and hiring more people would solve their problem. However, they disregard the fact that they might not even have the right data to start with. In this presentation, we will share a threat hunting research methodology that focuses on assessing what an organization has and needs from a data perspective to validate the detection of an adversary. This talk will show organizations how they can assess the collection and quality of their data and create data analytics to set their teams up for more effective engagements in production networks.
+			* [The Threat Hunter Playbook](https://github.com/OTRF/ThreatHunter-Playbook)
+				* The Threat Hunter Playbook is a community-driven, open source project to share detection logic, adversary tradecraft and resources to make detection development more efficient. All the detection documents in this project follow the structure of MITRE ATT&CK categorizing post-compromise adversary behavior in tactical groups and are available in the form of interactive notebooks.
+		- **'Hunting Loop'**
+			* [The Hunting Loop - Sqrrl(2015)](https://medium.com/@sqrrldata/the-hunting-loop-10c7d451dec8)
+			* [A Framework for Cyber Threat Hunting - Sqrrl](https://www.threathunting.net/files/framework-for-threat-hunting-whitepaper.pdf)
+		- **'A Practical Model For Conducting Cyber Threat Hunting'**
+			* [A Practical Model for Conducting Cyber Threat Hunting - Dan Gunter, Marc Seitz(2018)](https://www.sans.org/white-papers/38710/)
 		- **TaHiTI**
 			* [TaHiTI Threat Hunting Methodology](https://www.betaalvereniging.nl/wp-content/uploads/DEF-TaHiTI-Threat-Hunting-Methodology.pdf)
 			* [TaHiTI: a threat hunting methodology (whitepaper)](https://www.betaalvereniging.nl/wp-content/uploads/TaHiTI-Threat-Hunting-Methodology-whitepaper.pdf)

@@ -357,6 +357,7 @@ To Do:
 	* [What Is VBScript, and Why Did Microsoft Just Kill It? - Chris Hoffman(2019)](https://www.howtogeek.com/437372/what-is-vbscript-and-why-did-microsoft-just-kill-it/)
 		* VBScript no longer supported in IE by default.
 	* [Rob van der Woude's VBScript Scripting Techniques](https://www.robvanderwoude.com/vbstech.php)
+	* [Top VB.Net Interview Questions and Answers](https://www.interviewbit.com/vb-net-interview-questions/)
 * **XLL**<a name="dxll"></a>
 	* [Welcome to the Excel Software Development Kit - msdn.ms](https://msdn.microsoft.com/en-us/library/office/bb687883.aspx)
 	* [Accessing XLL code in Excel - docs.ms](https://docs.microsoft.com/en-us/office/client-developer/excel/accessing-xll-code-in-excel)

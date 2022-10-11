@@ -1,19 +1,28 @@
 # Basic Security Principles/Information
 
 ------------------------------------------------------------------------------------------------------
-## Table of Contents
 - [101](#101)
+	- [General](#101g)
+	- [Basic Security Concepts](#101b)
+	- [Computer Science](#101cs)
+	- [Mentality](#101m)
+	- [Programming 101](#p101)
+	- [Things I wish someone had shown me when I was starting out](#things)
+	- [Videos](#v101)
+- [101 Principles](#101p)
 - [Advice](#advice)
 - [Classes/Types of Vulnerabilities](#classes)
 - [How to suck at infosec](#suck)
 - [Getting started with infosec](#getstart)
+- [Background](#background)
 - [Being the First Security Person/Starting a Security Program](#fps) 
 - [Briefing and Reporting](#briefing)
 - [Scaling a Security Program](#scalingsec)
 - [Building a Security Team](#buildteam)
 - [Red Team, Blue Team, Purple Team, Green Team](#team)
-- [Cognitive Biases](#bias)
 - [Mental Models](#mm)
+- [Cognitive Biases](#bias)
+- [Complexity](#complexity)
 - [Comedy](#comedy)
 - [Command Line & OS Basics](#cli)
 - [Critical Thinking](#crittihnk)
@@ -38,6 +47,8 @@
 - [Risk](#risk)
 - [Securing yourself](#secself)
 - [Security Testing](#testing)
+- [Statistics](#stats)
+- [StoryTelling](#story)
 - [System Design](#systemdesign)
 - [Table Top Exercises](#ttx)
 - [Task Automation](#automation)
@@ -45,6 +56,222 @@
 - [Tools to Know About](#ttka)
 - [Zero Trust](#zerotrust)
 ------------------------------------------------------------------------------------------------------
+
+
+
+
+
+Attention Economy
+	https://www.gwern.net/docs/culture/2019-candia.pdf
+	https://www.gwern.net/docs/sociology/1972-downs.pdf
+
+CLI
+	* [MobaXterm](https://mobaxterm.mobatek.net/)
+
+
+101
+	- Talks/Presentations/Videos
+
+Basic Windows Tools
+
+Basic Utilities
+
+- Beginner/'Starting out' Link Collections
+
+BeyondCorp
+	https://www.scaleft.com/blog/beyondcorp-outside-of-google/
+
+Budget
+	
+Building a Team
+
+Building Org/Security
+	https://www.irongeek.com/i.php?page=videos/circlecitycon2019/track-3-14-inside-out-security-building-castles-not-warehouses-alyssa-miller
+	https://www.irongeek.com/i.php?page=videos/showmecon2018/showmecon-2018-track-1-03-how-hyperbolic-discounting-is-keeping-your-security-program-from-succeeding-jon-clark
+	https://www.irongeek.com/i.php?page=videos/bsidescleveland2018/c06-go-back-to-the-basics-with-your-processes-improving-operations-without-technology-mark-abrams
+	https://www.irongeek.com/i.php?page=videos/converge2018/converge-2018-111-finding-the-money-to-run-an-effective-security-program-matt-topper
+	https://www.irongeek.com/i.php?page=videos/bsidesnashville2018/bsides-nashville-2018-red-01-security-instrumentation-be-the-hero-getting-value-from-security-brian-contos
+	https://frankmcg.com/2020/09/purchased-microsoft-365-e5-now-what/
+	* [Starting Up Security: Guides for the growing security team - Ryan McGeehan](https://medium.com/starting-up-security)
+		* Series of articles aimed at security for Startups/new companies.
+
+Business
+
+Careers
+
+CLI
+	Awk
+	Bash
+	Git
+	Grep
+	sed
+	Vim
+
+Complexity
+
+copy/paste code
+
+Culture
+
+Crypto
+
+Grep
+
+CMMI
+
+Cognitive Bias
+
+Databases
+
+Data Manipulation
+
+Decision Making
+
+Distributed Computing
+
+Enumeration
+
+First Person/Starting a Security Team
+
+Git
+
+Hiring Security Services
+
+Learning
+
+Linux
+
+Maturity
+	https://owaspsamm.org/blog/2020/10/29/comparing-bsimm-and-samm/
+	* [What steps can you take toward evolving your organization's security maturity? - Matt Atkinson(2020)](https://portswigger.net/blog/evolving-your-organizations-security-maturity)
+
+MDM
+
+MacOS
+
+Mentoring
+
+Metrics
+
+Open Source Projects - Maintaining & Running
+
+Pentest vs Redteam
+	https://tbgsecurity.com/pen-tests-and-red-teams-are-not-the-same/
+	* [Red Team Assessment and Penetration Testing - Yash.com](https://www.yash.com/blog/red-team-assessment-and-penetration-testing/)
+
+Product Sec Testing
+	
+Problem Solving
+
+Programming
+
+Questions
+
+Ransomware
+
+Recon
+	* [Recon Rundown #1 : Attack Surface Basics - sshell(2022)](https://www.sshell.co/attack-surface-basics/)
+Research
+
+Risk Analysis
+
+Scaling AppSec
+
+Scaling Ops
+
+Scaling
+
+'Scene'
+
+Scheduling
+
+Scoping
+
+Searching
+	https://www.gwern.net/Search
+
+Security 101
+
+Security Questionaires
+
+SecOps
+
+Skills improvement
+
+Statistics
+
+Storytelling/Presenting
+
+Strategy
+	https://warontherocks.com/2020/08/distilling-the-essence-of-strategy/
+	https://strategy-madlibs.herokuapp.com/
+
+TableTop
+
+Technical Debt
+
+Testing
+	https://github.com/obheda12/JupyterPen
+	https://www.youtube.com/watch?v=EY2mRlYkDBA&list=PL7D3STHEa66QvxwnM8MSf8tUq1Zkhoq4P&index=26&t=0s
+	https://www.irongeek.com/i.php?page=videos/bsidestampa2018/courtroom00-cyber-assurance-testing-for-success-col-john-burger
+	https://www.fedramp.gov/assets/resources/documents/CSP_Penetration_Test_Guidance.pdf
+	https://pen-testing.sans.org/resources/downloads#scope
+	https://twitter.com/StanTwinB/status/1336935368436797440
+	Performing a Pentest
+		https://www.youtube.com/watch?v=Fahp8U1_JGY
+		https://www.youtube.com/watch?v=23F8QKTu86U
+		https://www.youtube.com/watch?v=LrGfhQpBibk
+		https://www.youtube.com/watch?v=oyJ0atDagco
+
+Zerotrust
+	* [NIST Special Publication 800-207 - Zero Trust Architecture - Scott Rose, Oliver Borchert, Stu Mitchell, Sean Connelly(2020)](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf)
+
+IPv6 Troubleshooting
+	https://theinternetprotocolblog.wordpress.com/2019/11/04/basic-ipv6-troubleshooting-commands-i-ipv6-rosetta-stone-2019/
+
+
+* [Information Theory, Inference, and Learning Algorithms - David MacKay](http://www.inference.org.uk/mackay/itila/book.html)
+
+* [An Introduction To Offensive Security - CX01N(2020)](https://www.bc-security.org/post/an-introduction-to-offensive-security/)
+* [13 Examples of Metacognitive Strategies (2020) - Chris Drew](https://helpfulprofessor.com/metacognitive-strategies/)
+
+* [Entering the Field of Cybersecurity - SANS(2020)](https://www.sans.org/blog/entering-the-field-of-cybersecurity/)
+	* Advice for Teens Who Are Interested in Entering the Field of Cybersecurity
+
+* [Drunk Hacker History: Hacker Stories Powered by C2H6O for Fun & Profit - Panel Defcon24]()
+
+* [Workflow Improvements for Pentesters - David Boyd(2020)](https://www.trustedsec.com/blog/workflow-improvements-for-pentesters/)
+
+https://newsroom.intel.com/wp-content/uploads/sites/11/2019/07/Intel-Safety-First-for-Automated-Driving.pdf
+https://www.dia.mil/News/DIA-Directors-Reading-List/
+
+* [Getting youth interested in infosec from a youth's perspective. - Tristan Messner(BSidesCleveland2019)](https://www.irongeek.com/i.php?page=videos/bsidescleveland2019/bsides-cleveland-c-05-getting-youth-interested-in-infosec-from-a-youths-perspective-tristan-messner)
+* [Security Assessment Mindset](https://github.com/dsopas/assessment-mindset)
+
+
+
+IACD
+	https://www.iacdautomate.org/
+	https://www.iacdautomate.org/getting-ready-for-soar
+	https://static1.squarespace.com/static/5a94b67ff93fd440f0516297/t/5d41000bc8f45f0001164c17/1564540939633/IACD+quickSTART_Final_optimized.pdf
+	* [Playbooks, Workflows, & Local Instance Examples  - Integrated Adaptive Cyber Defense (IACD)](https://www.iacdautomate.org/playbook-and-workflow-examples)
+
+
+https://www.irongeek.com/i.php?page=videos/derbycon6/304-and-bad-mistakes-ive-made-a-few-jayson-e-street
+https://www.irongeek.com/i.php?page=videos/derbycon6/512-evolving-your-offices-security-culture-nancy-snoke
+https://www.irongeek.com/i.php?page=videos/derbycon4/t514-a-brief-history-of-exploitation-devin-cook
+https://www.irongeek.com/i.php?page=videos/derbycon4/t308-ethical-control-ethics-and-privacy-in-a-target-rich-environment-kevin-johnson-and-james-jardine
+https://www.irongeek.com/i.php?page=videos/derbycon4/t526-information-security-team-management-how-to-keep-your-edge-while-embracing-the-dark-side-stephen-c-gay
+https://www.irongeek.com/i.php?page=videos/derbycon4/t126-what-to-expect-when-youre-expectinga-pentest-martin-bos-and-eric-milam
+https://www.irongeek.com/i.php?page=videos/derbycon4/t534-what-dungeons-dragons-taught-me-about-infosec-joey-maresca-l0stkn0wledge
+https://www.irongeek.com/i.php?page=videos/louisvilleinfosec2019/track-2-01-common-observations-from-a-security-assessor-corey-shell%22
+https://www.irongeek.com/i.php?page=videos/derbycon2/4-2-6-kellep-charles-security-vulnerablity-assessments-process-and-best-practices
+https://www.irongeek.com/i.php?page=videos/derbycon6/308-business-developement-the-best-non-four-letter-dirty-word-in-infosec-scott-lyons-and-joshua-marpet
+https://danielmiessler.com/blog/algorithmic-vs-faith-based-learning/
+https://www.johndcook.com/blog/2020/07/25/worst-tool-for-the-job/
+https://www.folklore.org/StoryView.py?project=Macintosh&story=Creative_Think.txt
+
+
 
 
 -------------------------
@@ -72,7 +299,7 @@
 		* Also [Why Cyber Security is Hard to Learn (Tips For Success!)](https://www.youtube.com/watch?v=vI79qT4lcfA)
 		* [The Missing Semester of Your CS Education - CSAIL.MIT](https://missing.csail.mit.edu/)
 			* Classes teach you all about advanced topics within CS, from operating systems to machine learning, but there’s one critical subject that’s rarely covered, and is instead left to students to figure out on their own: proficiency with their tools. We’ll teach you how to master the command-line, use a powerful text editor, use fancy features of version control systems, and much more!
-	* **General**
+	* **General**<a name="101g"></a>
 		* [Alice and Bob - Wikipedia](https://en.wikipedia.org/wiki/Alice_and_Bob)
 		* [Security Engineering (3rd ed) - Ross Anderson](https://www.cl.cam.ac.uk/~rja14/book.html)
 		* [10 Immutable Laws of Security Administration - Scott Culp(docs.ms)](https://docs.microsoft.com/en-us/previous-versions//cc722488(v=technet.10)?redirectedfrom=MSDN)
@@ -86,30 +313,30 @@
 		* [How to Secure Anything - Veeral Patel](https://github.com/veeral-patel/how-to-secure-anything)
 			* How to systematically secure anything: a repository about security engineering
 		* [Signalling (economics) - Wikipedia](https://en.wikipedia.org/wiki/Signalling_(economics))
-	* **Basic Security Concepts**
+	* **Basic Security Concepts**<a name="101b"></a>
 		* [Information security - Wikipedia](https://en.wikipedia.org/wiki/Information_security)
 		* [Confused deputy problem - Wikipedia](https://en.wikipedia.org/wiki/Confused_deputy_problem)
 		* [Principle of least privilege - Wikipedia](https://en.wikipedia.org/wiki/Principle_of_least_privilege)
 		* [Object-capability model - Wikipedia](https://en.wikipedia.org/wiki/Object-capability_model)
 		* [Capability-based security - Wikipedia](https://en.wikipedia.org/wiki/Capability-based_security)
-	* **Computer Science**
+	* **Computer Science**<a name="101cs"></a>
 		* [40 Key Computer Science Concepts Explained In Layman’s Terms - carlcheo.com](http://carlcheo.com/compsci)
 		* [Software Engineering Body of Knowledge (SWEBOK) - IEEE](https://www.computer.org/education/bodies-of-knowledge/software-engineering)
 		* [Infra Living Standard — whatwg.org](https://infra.spec.whatwg.org/)
 			* Last Updated 30 August 2019; The Infra Standard aims to define the fundamental concepts upon which standards are built.
 		* [Big-O Notation Explained - Daniel Miessler](https://danielmiessler.com/study/big-o-notation/)
-	- **Mentality**
+	- **Mentality**<a name="101m"></a>
 		* [One week of bugs - danluu.com](http://danluu.com/everything-is-broken/)
 		* [I could do that in a weekend! - danluu.com](https://danluu.com/sounds-easy/)
 		* [Zero-One-Infinity Rule - catb.org](http://www.catb.org/jargon/html/Z/Zero-One-Infinity-Rule.html)
 		* [Improving Infosec (or any Community/Industry) in One Simple but Mindful Step - Matt Graeber](https://medium.com/@mattifestation/improving-infosec-or-any-community-industry-in-one-simple-but-mindful-step-651e18296f9)
 		* [Tacit Knowledge](https://en.wikipedia.org/wiki/Tacit_knowledge)
 			* Tacit knowledge or implicit knowledge (as opposed to formal, codified or explicit knowledge) is the kind of knowledge that is difficult to transfer to another person by means of writing it down or verbalizing it. For example, that London is in the United Kingdom is a piece of explicit knowledge that can be written down, transmitted, and understood by a recipient. However, the ability to speak a language, ride a bicycle, knead dough, play a musical instrument, or design and use complex equipment requires all sorts of knowledge which is not always known explicitly, even by expert practitioners, and which is difficult or impossible to explicitly transfer to other people.
-	- **Programming 101**
+	- **Programming 101**<a name="p101"></a>
 		* [A Byte of Python](https://python.swaroopch.com/)
 			* [Repo](https://github.com/swaroopch/byte-of-python)
 			* ""A Byte of Python" is a free book on programming using the Python language. It serves as a tutorial or guide to the Python language for a beginner audience. If all you know about computers is how to save text files, then this is the book for you."
-	- **Things I wish someone had shown me when I was starting out**
+	- **Things I wish someone had shown me when I was starting out**<a name="things"></a>
 		* [Cautionary tale - James H. Cloos Jr(1999)](https://www.netfunny.com/rhf/jokes/99/Jun/caution.html)
 		* [Things to say when you're losing a technical argument - Steve Kirsch](https://web.archive.org/web/20050131033632/http:/www.skirsch.com/humor/techarg.htm)
 		* [Trends in Cyber Security - Dan Geer(2013)](http://geer.tinho.net/geer.nro.6xi13.txt)
@@ -131,7 +358,7 @@
 			* The bathtub curve is widely used in reliability engineering. It describes a particular form of the hazard function which comprises three parts: 1. The first part is a decreasing failure rate, known as early failures. 2. The second part is a constant failure rate, known as random failures. 3. The third part is an increasing failure rate, known as wear-out failures. The name is derived from the cross-sectional shape of a bathtub: steep sides and a flat bottom.
 		* [Sprezzatura: The Art Of Making Difficult Things Look Simple - constantrenewal.com](https://constantrenewal.com/sprezzatura)
 		* [Nick Saban: Do Your Job And Trust The Process - constantrenewal.com](https://constantrenewal.com/nick-saban-the-process)
-	- **Videos**
+	- **Videos**<a name="v101"></a>
 		* [Host Unknown presents: Accepted the Risk](https://www.youtube.com/watch?v=9IG3zqvUqJY)
 		* [Security, Moore's Law, and the Anomaly of Cheap Complexity - Halvar Flake(2018)](https://www.youtube.com/watch?v=q98foLaAfX8)
 		* [VirusBulletin Keynote address 2019: The security products we deserve - Haroon Meer, Adrian Sanabria(2019)](https://www.youtube.com/watch?app=desktop&v=GHuQC1qLnJ4)
@@ -155,7 +382,7 @@
 			* Security is a challenging field - controls fail, incidents happen, and our adversaries adapt. On top of that, it can be difficult to drive change and progress when organizations have so many competing priorities. Drawing on a career in cybersecurity and his most recent experience building and leading the security team at Netflix for over a decade, Jason will provide some insight and advice on preparing yourself for the ups and downs of the industry, going with the flow, and doing meaning and impactful security work.
 		* [“Did You Miss My Comment or What?”: Understanding Toxicity in Open Source Discussions - Courtney Miller, Sophie Cohen, Daniel Klug, Bogdan Vasilescu, Christian Kästner(2022)](https://cmustrudel.github.io/papers/osstoxicity22.pdf)
 			* Online toxicity is ubiquitous across the internet and its negative impact on the people and that online communities that it effects has been well documented. However, toxicity manifests differently on various platforms and toxicity in open source communities, while frequently discussed, is not well understood. We take a first stride at understanding the characteristics of open source toxicity to better inform future work on designing effective intervention and detection methods. To this end, we curate a sample of 100 toxic GitHub issue discussions combining multiple search and sampling strategies. We then qualitatively analyze the sample to gain an understanding of the characteristics of open-source toxicity. We find that the pervasive forms of toxicity in open source differ from those observed on other platforms like Reddit or Wikipedia. In our sample, some of the most prevalent forms of toxicity are entitled, demanding, and arrogant comments from project users as well as insults arising from technical disagreements. In addition, not all toxicity was written by people external to the projects; project members were also common authors of toxicity. We also discuss the implications of our findings. Among others we hope that our findings will be useful for future detection work
-- **101 Principles**
+- **101 Principles**<a name="101p"></a>
 	* [Akin's Laws of Spacecraft Design - David L. Akin](https://spacecraft.ssl.umd.edu/akins_laws.html)
 	* [Types of Authentication](http://www.gfi.com/blog/security-101-authentication-part-2/)
 	* [Access control best practices](https://srlabs.de/acs/)
@@ -182,7 +409,7 @@
 	* [real0day References list](https://www.real0day.com/resources)
 	* [Security Resources - CompassSecurity](https://github.com/CompassSecurity/security_resources)
 		* Links to online resources & tools we use during our web application / network security courses.
-- **Background**
+- **Background**<a name="back"></a>
 	* [The Shoulders of InfoSec - Jack Daniels(BSides Tampa 2018)](https://www.irongeek.com/i.php?page=videos/bsidestampa2018/courtroom05-the-shoulders-of-infosec-jack-daniels)
 		* If I have seen further it is by standing on the shoulders of giants; Most famously attributed to Sir Isaac Newton, this quote reflects the sentiment of this project. All of us in the field of information security stand on the shoulders of giants, this project is dedicated to shining a light on those shoulders- the known and unknown. In this presentation I will tell the stories some foundation figures in our industry and communities, some famous, some infamous, some unknown.
 	* [ Lessons Learned - A 15 year Retrospective - Price McDonald(BSides Indy 2018)](https://www.irongeek.com/i.php?page=videos/bsidesindy2018/bsidesindy-2018-00-lessons-learned-a-15-year-retrospective-price-mcdonald)
@@ -724,7 +951,7 @@
 	* **Vulnerability Assesssment**
 		* [Vulnerability Assessment 2.0 - John Askew(Derbycon 2014)](https://www.irongeek.com/i.php?page=videos/derbycon4/t512-vulnerability-assessment-20-john-askew)
 			* What can you do to step up your game as a security analyst? Vulnerability scanners and other security assessment tools can be extremely useful for collecting information quickly and efficiently, but what are some good next steps for analyzing and using that information? How much value does a raw vulnerability scan report provide (hint: don’t just hand this to a client or supervisor), and how much more value can we get out of our tools with a little bit of effort? What do you do when you need data that an existing tool can’t provide? John will discuss some areas in the security asssessment process that are ripe for easy wins through custom scripting, including data aggregation, diffing, false,positive identification, and visualization. As an example, John will release a tool for slicing and dicing the results from assessment tools in interesting ways, based on various techniques used in previous consulting engagements. 
-* **Statistics**
+* **Statistics**<a name="stats"></a>
 	* [How to Lie with Statistics, Information Security Edition - Tony Martin-Vegue(Circle City Con2018)](https://www.irongeek.com/i.php?page=videos/circlecitycon2018/circle-city-con-50-303-how-to-lie-with-statistics-information-security-edition-tony-martin-vegue)
 		* Stiff statistics, prismatic pie charts, and questionable survey results drown the Information Security space in a sea of never-ending numbers that can be difficult to sift through. Have you ever finished reading a research institution's annual security report and felt your Spidey sense begin to tingle with doubt or disbelief? What you are probably sensing is a manipulation of statistics, an age-old hoodwink that has been occurring as long as numbers have been used to convey information. This critical subject was first examined over 60 years ago, when Darrell Huff first published the groundbreaking book "How to Lie with Statistics," over 60 years ago. This presentation takes the foundation Huff created and updates the core concepts for the contemporary Information Security field. Most people would be shocked to find that data is often manipulated to lead the reader to a particular conclusion. Several areas are examined: bias in vendor-sponsored security reports, data visualization misuse and common security fallacies. There is a silver lining - once you are aware of the subtle ways data is manipulated, it's easy to spot. Attendees will walk away with a new understanding of ways to identify and avoid unintentionally using some of the methods described.
 - **StoryTelling**

@@ -899,6 +899,7 @@
 	* [What a C programmer should know about memory](http://marek.vavrusa.com/c/memory/2015/02/20/memory/)
 	* [Cplusplus.com](http://www.cplusplus.com/)
 	* [C reference - cppreference.com](http://en.cppreference.com/w/c)
+	* [C++ for Beginners](https://www.scaler.com/topics/course/cpp-beginners/)
 * **Security**
 	* [SEI CERT C Coding Standard](https://www.securecoding.cert.org/confluence/display/seccode/SEI+CERT+Coding+Standards)
 	* [SEI CERT C++ Coding Standard](https://www.securecoding.cert.org/confluence/pages/viewpage.action?pageId=637)

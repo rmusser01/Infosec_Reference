@@ -1252,6 +1252,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 * [SafeSQL](https://github.com/stripe/safesql)
 	* SafeSQL is a static analysis tool for Go that protects against SQL injections.
 * [The Hitchhiker's Guide to SQL Injection prevention](https://phpdelusions.net/sql_injection)
+* [Learn SQL in Detail](https://www.scaler.com/topics/sql/)
 
 
 

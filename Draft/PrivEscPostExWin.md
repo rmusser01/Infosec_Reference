@@ -314,6 +314,9 @@
 	- [Windows Communication Foundation](#wcf)
 	- [Windows Managemet Instrumentation](#wmi)
 	- [Windows Notification Facility](#wnf)
+	- [Windows Privileges](#winprivs)
+	- [Windows Processes](#winprocs)
+	- [Windows RPC stuff](#winrpc)
 	- [Windows Remote Management](#winrm)
 	- [Windows Scripting Host](#wsh)
 	- 
@@ -3601,90 +3604,6 @@
 				* [Discovering The Anti-Virus Signature and Bypassing it - Oddvar Moe(2019)](https://www.trustedsec.com/blog/discovering-the-anti-virus-signature-and-bypassing-it/)
 				* [Building a custom Mimikatz binary - s3cur3th1ssh1t(2020)](https://s3cur3th1ssh1t.github.io/Building-a-custom-Mimikatz-binary/)
 * **Credential Access**<a name="wincredac"></a>
-
-		General
-			* [How winlogon.exe shares the cleartext password with custom DLLs - Grzegorz Tworek(2021)](https://www.youtube.com/watch?app=desktop&v=ggY3srD9dYs)
-			https://github.com/Hagrid29/DuplicateDump
-			https://emptydc.com/2022/06/08/windows-credential-dumping/#virtualization-based-security
-			https://github.com/kkent030315/Process-Dumper/tree/master/ProcessDumper
-			https://www.exandroid.dev/2021/11/20/pentest-tale-dumping-cleartext-credentials-from-antivirus/
-			https://meriemlarouim.medium.com/credentials-in-windows-and-how-to-dump-them-remotely-b5c315bb76f4
-		3rd Party
-		AD
-		Autologon 
-		Browser
-			* [DumpChromePasswords.ps1](https://github.com/gtworek/PSBits/blob/master/Misc/DumpChromePasswords.ps1)
-		Clipboard
-		Credential Guard
-		DC-Sync
-		DPAP
-			https://github.com/login-securite/DonPAPI	
-		Dumping Process Memory
-		Fake Prompt
-		GPPrefs
-		Handles
-			https://splintercod3.blogspot.com/p/the-hidden-side-of-seclogon-part-2.html
-			https://splintercod3.blogspot.com/p/the-hidden-side-of-seclogon-part-3.html
-			https://rastamouse.me/dumping-lsass-with-duplicated-handles/
-			https://rastamouse.me/duplicating-handles-in-csharp/
-			https://github.com/codewhitesec/HandleKatz
-			* [Duping AV with handles - SkelSec(2020)](https://skelsec.medium.com/duping-av-with-handles-537ef985eb03)
-		Hiberfil.sys
-			http://woshub.com/how-to-extract-windows-user-passwords-from-hiberfil-sys/
-		Kerberos Tickets
-		LAPS
-			https://www.n00py.io/2020/12/dumping-laps-passwords-from-linux/
-		Local Phishing
-		Logon
-		LSA Secrets
-			https://www.scip.ch/en/?labs.20220217
-			https://github.com/gtworek/PSBits/tree/master/LSASecretDumper
-		LSA SSP
-			https://twitter.com/JohnLaTwC/status/1417106953881497602
-				https://www.4hou.com/posts/y6jW
-				https://blog.xpnsec.com/exploring-mimikatz-part-2/
-				https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4622
-		LSASS/Dumping memory of proceses
-			https://github.com/samisecure/LsassDumpReflectiveDll
-			https://skelsec.medium.com/lsass-needs-an-iv-57b7333d50d8
-			https://www.deepinstinct.com/blog/lsass-memory-dumps-are-stealthier-than-ever-before-part-2
-			https://mrd0x.com/adplus-debugging-tool-lsass-dump/
-			https://github.com/ThottySploity/mimiRust
-			* [MalSeclogon](https://github.com/antonioCoco/MalSeclogon)
-				* A little tool to play with the Seclogon service.
-			https://www.pepperclipp.com/other-articles/dump-lsass-when-debug-privilege-is-disabled
-			https://github.com/icyguider/DumpNParse
-			https://github.com/snovvcrash/MirrorDump
-			https://github.com/post-cyberlabs/Offensive_tools/tree/main/PostDump
-			https://www.n00py.io/2022/03/manipulating-user-passwords-without-mimikatz/
-			https://github.com/Kudaes/Dumpy
-			* [Nemesis](https://github.com/not-matthias/Nemesis)
-				* A customizable process dumper.
-			https://blog.cobaltstrike.com/2021/11/17/nanodump-a-red-team-approach-to-minidumps-cobalt-strike/
-		Mimikatz
-		MsvpPasswordValidate Hooking
-		NTLM Hash
-			https://3gstudent.github.io/3gstudent.github.io/Windows%E4%B8%8B%E7%9A%84%E5%AF%86%E7%A0%81hash-NTLM-hash%E5%92%8CNet-NTLM-hash%E4%BB%8B%E7%BB%8D/
-			https://www.translatetheweb.com/?from=&to=en&ref=TVert_ct&dl=en&rr=HE&a=https%3a%2f%2f3gstudent.github.io%2f3gstudent.github.io%2fWindows%25E4%25B8%258B%25E7%259A%2584%25E5%25AF%2586%25E7%25A0%2581hash-Net-NTLMv1%25E4%25BB%258B%25E7%25BB%258D%2f
-		NTLM Leak
-		NTLM Relay
-			https://twitter.com/podalirius_/status/1539211647889420290
-		Reading Physical memory
-			https://github.com/kkent030315/anyvtop
-			https://redcursor.com.au/bypassing-lsa-protection-aka-protected-process-light-without-mimikatz-on-windows-10/
-			https://malicious.dev/0x01.html
-				https://github.com/alfarom256/UserVAtoPhysical
-		Werfault.exe
-			https://www.deepinstinct.com/blog/lsass-memory-dumps-are-stealthier-than-ever-before-part-2
-			https://github.com/deepinstinct/Lsass-Shtinkering
-				https://media.defcon.org/DEF%20CON%2030/DEF%20CON%2030%20presentations/Asaf%20Gilboa%20-%20LSASS%20Shtinkering%20Abusing%20Windows%20Error%20Reporting%20to%20Dump%20LSASS.pdf
-			https://github.com/deepinstinct/LsassSilentProcessExit
-			look at top
-
-
-
-
-
 	* **Want to learn this stuff? What should you know/study?**
     	* Windows Authentication Concepts
 		* Windows Logon Scenarios
@@ -5391,9 +5310,9 @@
 	* **101**
 		* [Privilege Constants (Authorization) - docs.ms](https://docs.microsoft.com/en-us/windows/win32/secauthz/privilege-constants)
 			* Privileges determine the type of system operations that a user account can perform. An administrator assigns privileges to user and group accounts. Each user's privileges include those granted to the user and to the groups to which the user belongs.
-- **Processes**<a name="winprivs"></a>
+- **Processes**<a name="winprocs"></a>
 	* **101**
-- **RPC**<a name="winprivs"></a>
+- **RPC**<a name="winrpc"></a>
 	- **101**
 	- **Articles/Blogposts/Writeups**
 		* [CreateSvcRpc - A custom RPC client to execute programs as the SYSTEM user - x86Matthew(2022)](https://www.x86matthew.com/view_post?id=create_svc_rpc)

@@ -94,7 +94,7 @@
 	- [Brute Force/Fuzzing/Directory Discovery](#brute)
 	- [Cache-based Attacks](#cache-based) - Fix
 		- [Cache Deception Attack](#cachedecept)
-		- [Cache Entaglement Attack](#cacheentangle)
+		- [Cache Poisoning Attack](#cachepoison)
 	- [CSV injection](#csv)
 	- [ClickJacking](#clickjack)
 	- [Cross Protocl Sripting/Request Attack](#cpr)

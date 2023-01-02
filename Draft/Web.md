@@ -100,8 +100,8 @@
 		- [PDFs](#backpdf) - fix
 	- [Brute Force/Fuzzing/Directory Discovery](#brute)
 	- [Cache-based Attacks](#cache-based) - Fix
-		- [Cache Deception Attack](#cachedecept)
-		- [Cache Entaglement Attack](#cacheentangle)
+		- [Cache-Deception Attack](#cachedecept)
+		- [Cache Poisoning Attack](#cachepoison)
 	- [CSV injection](#csv)
 	- [ClickJacking](#clickjack)
 	- [Cross Protocl Sripting/Request Attack](#cpr)

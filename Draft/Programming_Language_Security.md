@@ -1002,6 +1002,8 @@
 ---------------
 ### Javascript <a name="javascript"></a>
 * **101**
+	* [JavaScript tutorial](https://www.scaler.com/topics/javascript/)
+         
 * **Vanilla JS**
 * **Node.js**
 	* **Articles/Blogposts/Writeups**

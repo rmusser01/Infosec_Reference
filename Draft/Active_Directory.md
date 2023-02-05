@@ -133,6 +133,7 @@
 			* Domain Demolition with Frank Castle and Powershell.
 		* [Active Directory Exploitation Cheat Sheet - buftas](https://github.com/buftas/Active-Directory-Exploitation-Cheat-Sheet)
 			* A cheat sheet that contains common enumeration and attack methods for Windows Active Directory.
+		* [Orange Cyberdefense mindmaps](https://orange-cyberdefense.github.io/ocd-mindmaps/)
 	* **Articles/Blogposts/Writeups**
 		* [Beyond Domain Admins – Domain Controller & AD Administration - ADSecurity.org](https://adsecurity.org/?p=3700)
 			* This post provides information on how Active Directory is typically administered and the associated roles & rights.

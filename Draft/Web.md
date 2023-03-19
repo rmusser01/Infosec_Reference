@@ -11,21 +11,28 @@
 
 --------------------------------------------------------------------------------------------------------------------------------
 ### [Standards & Technologies](#standards)<a name="1stand"></a>
+- [101](#101)
 - [APIs](#api)
 - [(Web) Browsers](#webbrowser)
 	- [Browser Security](#browsersec)
 	- [Browser Extensions](#be)
+- [Backend X(Image/PDF/etc) Processing](#backend-process)
+	- [ImageMagick](#bp-img)
+	- [PDF/PostScript](#bp-pdf)
 - [Cascading Style Sheets](#css)
 - [Certificates & Cert Transparency](#ct)
 - [CMS Specific](#cms)
 	- [Cold Fusion](#coldfusion)
-- [Cookies](#cookies)
+- [Cookies & Tokens](#cookies)
 - [Content Security Policy(CSP)](#csp)
 - [Common Origin Resource Sharing (CORS)](#cors)
 - [Cookies](#cookies)
 - [Document Object Model(DOM)](#dom)
+- [Edge Side Include](#esi)
 - [Electron](#electron)
+- [Encoding](#encoding)
 - [FIDO2](#fido2)
+- [File System Access API](#fsapi)
 - [Flash/SWF](#swf)
 - [GhostScript](#ghosts)
 - [GraphQL](#graphql)
@@ -47,6 +54,7 @@
 - [Parsers](#parsers)
 - [PASETO](#paseto)
 - [PHP](#php)
+- [Protocol Buffers](#protobuf)
 - [Robots.txt](#robots)
 - [RPC-related](#rpc)
 - [Ruby](#ruby)
@@ -54,11 +62,13 @@
 - [Same-Origin-Policy](#sop)
 - [Security Assertion Markup Language (SAML))](#saml)
 - [Service Workers](#serviceworkers)
+- [Site Isolation](#siteisolate)
 - [SubResource Integrity](#sri)
 - [Secure Sockets Layer/Transport Layer Security](#ssltls)
 - [SSL/TLS](#ssltls)
 - [Single Sign-On](#sso)
 - [Streams](#streams)
+- [Unicode](#unicode)
 - [Uniform Resource Identifier/Locator(URIs/URLs)](#uri)
 - [Web Application Firewalls(WAFs)](#waf)
 - [Web Assembly](#webasm)
@@ -66,7 +76,7 @@
 - [WebBluetooth](#webbt)
 - [Web Hooks](#webhook)
 - [WebNFC](#webnfc)
-- [Web Proxies](#webproxy)
+- [Web Proxies & Middleware](#webproxy)
 - [WebRTC](#webrtc)
 - [Web Servers](#webservers)
 - [WebSockets](#websockets)
@@ -100,7 +110,7 @@
 		- [PDFs](#backpdf) - fix
 	- [Brute Force/Fuzzing/Directory Discovery](#brute)
 	- [Cache-based Attacks](#cache-based) - Fix
-		- [Cache-Deception Attack](#cachedecept)
+		- [Cache Deception Attack](#cachedecept)
 		- [Cache Poisoning Attack](#cachepoison)
 	- [CSV injection](#csv)
 	- [ClickJacking](#clickjack)
@@ -128,8 +138,10 @@
 		- [Command Injection](#cmdinjection)
 	- [LFI & RFI](#lrfi)
 	- [Log4J](#log4j)
+	- [Logic Flaws](#logic)
 	- [OS Command Injection](#osci)
 	- [JNDI](#jndi)
+	- [Password Bruteforcing](#passbrute)
 	- [Path Confusion Attacks](#pca)
 	- [Path Traversal Attacks](#pta)
 	- [Prototype Pollution Attack](#ppa)
@@ -162,10 +174,12 @@
 
 
 * **To Do**
-	1. cookies
 	2. backlog
 	3. TLS
 	4. HTTP2/3
+	5. XSS
+	6. XSSI
+	7. XXE
 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -193,6 +207,15 @@
 		* [Oh, the Places You’ll Go! Finding Our Way Back from the Web Platform’sIll-conceived Jaunts - Artur Janc, Mike West(2020)](https://secweb.work/papers/janc2020places.pdf)
 			* In this paper, we start from a scattered list of concrete grievances about the web platform based on informal discussions among browser and web security engineers. After reviewing the details of these issues, we work towards amodel of the root causes of the problems, categorizing them based on the type of risk they introduce to the platform. We then identify possible solutions for each class of issues, dividing them by the most effective approach to address it. In the end, we arrive at a general blueprint for backing out of these dead ends. We propose a three-pronged approach which includes changing web browser defaults, creating aslew of features for web authors to opt out of dangerous behaviors, and adding new security primitives. We then show how this approach can be practically applied to address each of the individual problems, providing a conceptual framework for solving unsafe legacy web platform behaviors.
 	* [How Browsers Work: Behind the scenes of modern web browsers - Tali Garsiel, Paul Irish(2011)](https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
+- **Authentication**
+	- **Articles**
+			* [A Dive Into Web Application Authentication - James Chiapetta(2022)](https://betterappsec.com/a-medium-dive-into-web-application-authentication-342d1d002a61)
+			* [Auth-Boss](https://github.com/teesloane/Auth-Boss)
+				* 🔒 Become an Auth Boss. Learn about different authentication methodologies on the web.
+		- **Talks/Presentations**
+			* [Authentication fundamentals: The basics - Stuart Kwan](https://www.youtube.com/watch?v=fbSVgC8nGz4)
+- **Authorization**
+	- **Articles**
 * **Session Management**
 	* [Session Management Cheat Sheet - OWASP](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
 * **Cheat Sheets**
@@ -214,6 +237,7 @@
 - **Reference**
 	* [White House Web API Standards](https://github.com/WhiteHouse/api-standards)
 		* This document provides guidelines and examples for White House Web APIs, encouraging consistency, maintainability, and best practices across applications. White House APIs aim to balance a truly RESTful API interface with a positive developer experience (DX).
+
 	- **OpenAPI**
 		* [The OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification)
 			* The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for REST APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic. When properly defined via OpenAPI, a consumer can understand and interact with the remote service with a minimal amount of implementation logic. Similar to what interface descriptions have done for lower-level programming, the OpenAPI Specification removes guesswork in calling a service.
@@ -247,6 +271,11 @@
 		* [How to Hack APIs in 2021 - Hakluke, Farah Hawa(2021)](https://labs.detectify.com/2021/08/10/how-to-hack-apis-in-2021/)
 		* [MindAPI](https://github.com/dsopas/MindAPI)
 			* "Organize your API security assessment by using MindAPI. It's free and open for community collaboration."
+		* [How to Detect the Programming Language of an API - Dana Epp(2022)](https://danaepp.com/how-to-detect-the-programming-language-of-an-api)
+		* [An API Security Testing Checklist… with a twist - Dana Epp(2023)](https://danaepp.com/an-api-security-testing-checklist-with-a-twist)
+		* [5 simple questions to make your API pentest more successful - Dana Epp(2023)](https://danaepp.com/5-simple-questions-to-make-your-api-pentest-more-successful)
+		* [How I fuzz and hack APIs? - Inderjeet Singh(2023)](https://rashahacks.com/how-i-fuzz-and-hack-api/)
+	Testing of
 	- **Talks/Presentations**
 		* [Fundamentals of Hacking Web API's - Charles Shirer](https://www.youtube.com/watch?v=v66phijsNEg)
 			* Penetration testing Web API's can be difficult without an effective approach, so Charles Shirer is here to provide you with a few tips and tricks!  Charles breaks down the fundamentals of hacking Web API's and the methodology that he has used during his career to perform successful and effective Web API penetration tests over the years.
@@ -329,6 +358,38 @@
 	* [restclient - Firefox addon](https://addons.mozilla.org/de/firefox/addon/restclient/)
 	* [Astra](https://github.com/flipkart-incubator/Astra)
 		* REST API penetration testing is complex due to continuous changes in existing APIs and newly added APIs. Astra can be used by security engineers or developers as an integral part of their process, so they can detect and patch vulnerabilities early during development cycle. Astra can automatically detect and test login & logout (Authentication API), so it's easy for anyone to integrate this into CICD pipeline. Astra can take API collection as an input so this can also be used for testing apis in standalone mode.
+	* [mitmproxy2swagger](https://github.com/alufers/mitmproxy2swagger)
+		* A tool for automatically converting mitmproxy captures to OpenAPI 3.0 specifications. This means that you can automatically reverse-engineer REST APIs by just running the apps and capturing the traffic.
+	* [REST-Attacker](https://github.com/RUB-NDS/REST-Attacker)
+		* REST-Attacker is an automated penetration testing framework for APIs following the REST architecture style. The tool's focus is on streamlining the analysis of generic REST API implementations by completely automating the testing process - including test generation, access control handling, and report generation - with minimal configuration effort. Additionally, REST-Attacker is designed to be flexible and extensible with support for both large-scale testing and fine-grained analysis.
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+### <a name="backend-process">Backend Processing Technologies</a>
+- **Images**<a name="bp-img"></a>
+	- **101**
+		* [ImageMagick](https://imagemagick.org/index.php)
+		* [ImagegMagick - Wikipedia](https://en.wikipedia.org/wiki/ImageMagick)
+	- **Articles/Blogposts/Writeups**
+		* [ImageTragick/ImageMagick Is On Fire: CVE-2016–3714](https://imagetragick.com/)
+		* [Playing with ImageTragick like it's 2016 - Alexis Danizan, Clément Amic(2021)](https://www.synacktiv.com/en/publications/playing-with-imagetragick-like-its-2016.html)
+		* [ImageTragick: A Tragick Image Conversion Tale - INE](https://ine.com/blog/imagetragick-a-tragick-image-conversion-tale)
+		* [ImageMagick - Shell injection via PDF password - Alex Infuhr(2020)](https://insert-script.blogspot.com/2020/11/imagemagick-shell-injection-via-pdf.html)
+		* [ImageMagick: The hidden vulnerability behind your online images - Bryan Gonzalez(2022)](https://www.metabaseq.com/imagemagick-zero-days/)
+	- **Papers**
+	- **Presentations/Talks/Videos**
+	* **Tools**
+		* [imagetragick](https://github.com/dorkerdevil/ImageTragick_exploit)
+			* A tool to exploit imagetragick vulnerability to gain remote code execution.
+		* [CVE-2022-44268 Arbitrary File Read PoC - PNG generator](https://github.com/voidz0r/CVE-2022-44268)
+			* This is a proof of concept of the ImageMagick bug discovered by https://www.metabaseq.com/imagemagick-zero-days/
+- **PDFs**<a name="bp-pdf"></a>
+	- **101**
+		* [GhostScript](https://www.ghostscript.com/)
+	- **Articles/Blogposts/Writeups**
+	- **Papers**
+	- **Presentations/Talks/Videos**
+	* **Tools**
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -429,6 +490,9 @@
 - **101**
 	* [Secure website certificate - Mozilla](https://support.mozilla.org/en-US/kb/secure-website-certificate)
 	* [Let's Encrypt](https://letsencrypt.org/)
+- **Certificates**
+	* [Reflections on certificates, Part 1 - Enno Rey(2023)](https://theinternetprotocolblog.wordpress.com/2023/01/17/reflections-on-certificates-part-1/)
+		* [Part 2](https://theinternetprotocolblog.wordpress.com/2023/02/12/reflections-on-certificates-part-2/)
 - **Certificate Revocation**
 	- **Articles/Blogposts**
 		* [On CRLs, OCSP, and a Short Review of Why Revocation Checking Doesn't Work (for Browsers) - bt3gl](https://github.com/bt3gl/Pentesting_Toolkit/blob/master/Web_Hacking/guide_to_certs_and_cas.md)
@@ -448,6 +512,10 @@
 - **HTTP Strict Transport Security**
 	* [RFC 6797: HTTP Strict Transport Security (HSTS) - IETF](https://tools.ietf.org/html/rfc6797)
 	* [HTTP Strict Transport Security - Wikipedia](https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security)
+- **Domain Validation**
+	* [Let's Attack Let's Encrypt - Haya Shulman](https://www.youtube.com/watch?v=jPXQcSMnosQ)
+		* [Slides](https://i.blackhat.com/USA21/Wednesday-Handouts/US-21-Shulman-Lets-Attack-Lets_Encrypt.pdf)
+		* In this work we show that two central design issues of the distributed domain validation of Let’sEncrypt make it vulnerable to downgrade attacks...
 - **Tools**
 	* [CTFR](https://github.com/UnaPibaGeek/ctfr)
 		* Do you miss AXFR technique? This tool allows to get the subdomains from a HTTPS website in a few seconds. How it works? CTFR does not use neither dictionary attack nor brute-force, it just abuses of Certificate Transparency logs.
@@ -537,7 +605,7 @@
 ----------------------------------------------------------------------------------------------------------------------------------
 
 
-### <a name="cookies"></a>Cookies
+### <a name="cookies"></a>Cookies & Tokens
 - **101**
 	* [HTTP cookie - Wikipedia](https://en.wikipedia.org/wiki/HTTP_cookie)
 	* [Using HTTP cookies - MDN(Mozilla)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
@@ -550,6 +618,7 @@
 		* [Code & Slides](https://github.com/HolyBugx/Demystifying-Cookies-and-Tokens-Security)
 	* [Firefox: How a website could steal all your cookies - Pedro Oliveira(2020)](https://infosecwriteups.com/firefox-and-how-a-website-could-steal-all-of-your-cookies-581fe4648e8d)
 	* [Pass the Cloud with a Cookie](https://misconfig.io/pass-the-cloud-with-cookie/)
+	* [API Tokens: A Tedious Survey - Thomas Ptacek(2021)](https://fly.io/blog/api-tokens-a-tedious-survey/)
 * **Talks/Presentations/Videos**
 	* [Baking Your Anomalous Cookies - Jim Allee(NolaCon2019)](https://www.irongeek.com/i.php?page=videos/nolacon2019/nolacon-2019-d-09-baking-your-anomalous-cookies-jim-allee)
 		* I hacked Fortnite! Actually it was a vulnerable cookie found on several domains owned by Epic Games that allowed me to hijack traffic of users of their websites, steal session tokens and of course, BeEF hook em'. I will describe my journey from creating a custom cookie fuzzing tool (Anomalous Cookie) to help identify vulnerable cookies, to creating a framework for 'Cookie Baking'. Cookie Baking is the technique of creating or modifying a cookie in a users' local Cookie Jar (this includes stuffing with malicious payloads, affiliate tags, fuzz-strings and more). I will also provide insight into the Bug Bounty process, how Google responded to my request for them to protect local cookies at rest, and how I created WHID-Injected Cookies! ;)
@@ -560,6 +629,32 @@
 	* [CookieMonster](https://github.com/iangcarroll/cookiemonster)
 		* [Blogpost](https://ian.sh/cookiemonster)
 		* 🍪 CookieMonster helps you detect and abuse vulnerable implementations of stateless sessions.
+- **JWTs**<a name="cjwt"></a>
+	- **101**
+		* [RFC 7519: JSON Web Token (JWT)](https://www.rfc-editor.org/rfc/rfc7519)
+		* [RFC 7515: JSON Web Signature (JWS)](https://www.rfc-editor.org/rfc/rfc7515)
+		* [RFC 8725: JSON Web Token Best Current Practices(2020)](https://www.rfc-editor.org/rfc/rfc8725.html)
+		* [RFC 7797: JSON Web Signature (JWS) Unencoded Payload Option](https://www.rfc-editor.org/rfc/rfc7797)
+	- **Articles**
+		* [JWTs? JWKs? ‘kid’s? ‘x5t’s? Oh my! - CallanHP(2017)](https://redthunder.blog/2017/06/08/jwts-jwks-kids-x5ts-oh-my/)
+		* [Abusing JWT public keys without the public key - SilentSignal(2021)](https://blog.silentsignal.eu/2021/02/08/abusing-jwt-public-keys-without-the-public-key/)
+		* [Forget SQL Injection Have you Heard of Jwt Injections? - Nikhil T Nair](https://medium.com/@BeepBoop0/forget-sql-injection-have-you-heard-of-jwt-injections-59562011c93c)
+		* [How to test for JWT attacks? - Ahmed Elsherif(2022)](https://systemweakness.com/how-to-test-for-jwt-attacks-513da89abe94)
+		* [JWT attacks - PortSwigger](https://portswigger.net/web-security/jwt)
+	- **Talks**
+	- **Tools**	
+		* [MyJWT](https://github.com/tyki6/MyJWT)
+			* A cli for cracking, testing vulnerabilities on Json Web Token(JWT) 
+		* [jwt-fuzzer](https://github.com/andresriancho/jwt-fuzzer)
+			* jwt-fuzzer is a simple command line tool that creates multiple, potentially invalid, strings from an initial JSON Web Token.
+- **PASETO**
+	- **101**
+		* [A Thorough Introduction to PASETO - Randall Degges(2019)](https://developer.okta.com/blog/2019/10/17/a-thorough-introduction-to-paseto)
+- **SameSite**
+	* [The great SameSite confusion - Julien Cretel(2021)](https://jub0bs.com/posts/2021-01-29-great-samesite-confusion/)
+	* [Bypassing SameSite cookie restrictions - PortSwigger](https://portswigger.net/web-security/csrf/bypassing-samesite-restrictions)
+- **Strict-Transport-Security**
+	* [Strict-Transport-Security - MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
 
 
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -661,9 +756,26 @@
 - **101**
 	* [DOM - Standard(spec.whatwg)](https://dom.spec.whatwg.org/)
 - **Articles/Blogposts/Presentations/Talks/Writeups**
+	* [How the Document Object Model Works in JavaScript – DOM Tutorial for Beginners - Dickson Boateng((2023)](https://www.freecodecamp.org/news/javascript-dom/)
 - **Talks & Presentations**
 	* [Securing the DOM from the Bottom Up - Mike Samuel(BSides Cleveland2019)](https://www.irongeek.com/i.php?page=videos/bsidescleveland2019/bsides-cleveland-c-01-securing-the-dom-from-the-bottom-up-mike-samuel)
 		* 18 years have passed since Cross-Site Scripting (XSS) became the single most common security problem in web applications. Since then, numerous efforts have been proposed to detect, fix or mitigate it, but these piecemeal efforts have not combined to make it easy to produce XSS-free code. This talk explains how Google's security team has achieved a high-level of safety against XSS and related problems by integrating tools to make it easier for developers to produce secure software than vulnerable, and to bound the portion of a codebase that could contribute to a vulnerability. We will show how this works in practice and end with advice on how to achieve the same results on widely-used, open-source stacks and new browser mechanisms that will make it much easier to achieve high-levels of security with good developer experience.
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+### <a name="esi"></a>Edge Side Include(esi)
+- **101**
+	* [ESI Language Specification 1.0 - w3.org](https://www.w3.org/TR/esi-lang/)
+	* [Edge Side Includes - Wikipedia](https://en.wikipedia.org/wiki/Edge_Side_Includes)
+	* [What Is Edge Side Includes (ESI)? - keycdn](https://www.keycdn.com/support/edge-side-includes)
+- **Articles/Blogposts/Presentations/Talks/Writeups**
+	* [How the Document Object Model Works in JavaScript – DOM Tutorial for Beginners - Dickson Boateng((2023)](https://www.freecodecamp.org/news/javascript-dom/)
+	* [Beyond XSS: Edge Side Include Injection - Louis Dion-Marcil(2018)](https://www.gosecure.net/blog/2018/04/03/beyond-xss-edge-side-include-injection/)
+	* [ESI Injection Part 2: Abusing specific implementations - Philippe Arteau(2019)](https://www.gosecure.net/blog/2019/05/02/esi-injection-part-2-abusing-specific-implementations/)
+	* [Exploring the World of ESI Injection - Sudhanshu Rajbhar(2022)](https://infosecwriteups.com/exploring-the-world-of-esi-injection-b86234e66f91)
+- **Talks & Presentations**
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -726,11 +838,40 @@
 --------------------------------------------------------------------------------------------------------------------------------
 
 
-#### <a name="fido2"></a>FIDO2/CTAP
+#### <a name="encoding"></a>Encoding
 - **101**
 - **Articles/Blogposts/Writeups**
-- **Documentation**
+	* [Charset Comparison Table](http://l0.cm/encodings/table/)
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+#### <a name="fido2"></a>FIDO2/CTAP
+- **101**
+	* [FIDO Alliance - Wikipedia](https://en.wikipedia.org/wiki/FIDO_Alliance)
+	* [FIDO2 - FIDO Alliance](https://fidoalliance.org/fido2/)
+	* [How FIDO Works - FIDO Alliance](https://fidoalliance.org/how-fido-works/)
+- **Articles/Blogposts/Writeups**
+	* [FIDO2: Solving the Password Problem - Nils Amiet(2019)](https://research.kudelskisecurity.com/2019/10/08/fido2-solving-the-password-problem/)
+	* [FIDO2 Deep Dive: Attestations, Trust model and Security - Nils Amiet(2020](https://research.kudelskisecurity.com/2020/02/12/fido2-deep-dive-attestations-trust-model-and-security/)
+	* [Getting Rid of Passwords with FIDO2 and W3C WebAuthn - Michael Grafnetter(2020)](https://sector.ca/sessions/getting-rid-of-passwords-with-fido2-and-w3c-webauthn/)
 - **Tools**
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+#### <a name="fsapi"></a>
+- **101**
+	* [File System Access - W3C(2023)](https://wicg.github.io/file-system-access/)
+	* [File System Access API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/File_System_Access_API)
+- **Articles/Blogposts/Writeups**
+	* [The File System Access API: simplifying access to local files - Pete LePage, Thomas Steiner(2023)](https://developer.chrome.com/articles/file-system-access/)
+- **Talks/Presentations**
+	* [Internal Affairs: Hacking File System Access from the Web - Matthew Weeks(BHUSA2021)](https://www.youtube.com/watch?v=DI2Vw-QRl_k)
+		* [Slides](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Internal-Affairs-Hacking-File-System-Access-From-The-Web.pdf)
+		* The File System Access API deployed to browsers this year is the current version of a W3C draft to give websites, with user approval, the ability to read, write, and edit files and folders the user selects on their devices, an outgrowth of an earlier proposal called Native File System. It has been released and deployed in many Chromium-based browsers. Despite a number of security features implemented in the API, this presentation will show several ways in which a hostile website may gain arbitrary code execution and slip malicious code past operating system and security product scans, or even detailed, manual inspection.
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -755,6 +896,16 @@
 	* [Testing for Cross site flashing (OTG-CLIENT-008) - OWASP](https://www.owasp.org/index.php/Testing_for_Cross_site_flashing_(OTG-CLIENT-008))
 	* [XSS and CSRF via SWF Applets (SWFUpload, Plupload) - Neal Poole](https://nealpoole.com/blog/2012/05/xss-and-csrf-via-swf-applets-swfupload-plupload/)
 	* [Getting started with AMF Flash Application Penetration Testing ! - nerdint](https://nerdint.blogspot.com/2019/10/getting-started-with-amf-flash.html)
+- **RIA**
+	* [Analyzing the Crossdomain Policies of Flash Applications - Analyzing the Crossdomain Policies of Flash Applications - Dongseok Jang, Aishwarya Venkataraman, G. Michael Sawka, Hovav Shacham(2011)](https://hovav.net/ucsd/dist/crossdomain.pdf)
+	* Adobe: “Cross-domain policy file usage recommendationsfor Flash Player” - http://www.adobe.com/devnet/flashplayer/articles/cross_domain_policy.html
+	* Oracle: “Cross-Domain XML Support” - http://www.oracle.com/technetwork/java/javase/plugin2-142482.html#CROSSDOMAINXML
+	* MSDN: “Making a Service Available Across Domain Boundaries” - http://msdn.microsoft.com/en-us/library/cc197955(v=vs.95).aspx
+	* MSDN: “Network Security Access Restrictions in Silverlight” -http://msdn.microsoft.com/en-us/library/cc645032(v=vs.95).aspx
+	* Stefan Esser: “Poking new holes with Flash Crossdomain PolicyFiles” http://www.hardened-php.net/library/poking_new_holes_with_flash_crossdomain_policy_files.html
+	* Jeremiah Grossman: “Crossdomain.xml Invites Cross-siteMayhem” http://jeremiahgrossman.blogspot.com/2008/05/crossdomainxml-invites-cross-site.html
+	* Google Doctype: “Introduction to Flash security “ - http://code.google.com/p/doctype-mirror/wiki/ArticleFlashSecurity
+	https://www.youtube.com/watch?v=RNt_e0WR1sc
 - **Securing**
 	* [HardenFlash](https://github.com/HaifeiLi/HardenFlash)
 		* Patching Flash binary to stop Flash exploits and zero-days
@@ -812,6 +963,7 @@
 	* [Practical GraphQL attack vectors - Sebastian Mihalache(2021)](https://securitycafe.ro/2021/10/01/practical-graphql-attack-vectors/)
 	* [A Primer for Testing the Security of GraphQL APIs - Alex Leahu(2021)](https://blog.forcesunseen.com/a-primer-for-testing-the-security-of-graphql-apis)
 	* [Lessons Learned While Pentesting GraphQL - Sean Verity(2022)](https://www.blackhillsinfosec.com/lessons-learned-while-pentesting-graphql/)
+	* [GraphQL exploitation – All you need to know - Theodoros Danos(2023)](https://cybervelia.com/?p=736)
 	- **Securing**
 		* [Securing GraphQL. Part 1 - wallarm](https://lab.wallarm.com/securing-and-attacking-graphql-part-1-overview/)
 - **Talks/Presentations/Videos**
@@ -853,6 +1005,8 @@
 		* A security testing tool to facilitate GraphQL technology security auditing efforts. InQL can be used as a stand-alone script or as a Burp Suite extension.
 	* [CrackQL](https://github.com/nicholasaleks/CrackQL)
 		* "CrackQL is a versatile GraphQL penetration testing tool that exploits poor rate-limit and cost analysis controls to brute-force credentials and fuzz operations."
+	* [Graphicator](https://github.com/cybervelia/graphicator)
+		* Graphicator is a GraphQL "scraper" / extractor. The tool iterates over the introspection document returned by the targeted GraphQL endpoint, and then re-structures the schema in an internal form so it can re-create the supported queries. When such queries are created is using them to send requests to the endpoint and saves the returned response to a file.Erroneous responses are not saved. By default the tool caches the correct responses and also caches the errors, thus when re-running the tool it won't go into the same queries again.
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -956,6 +1110,7 @@
 		* [HTTP/3: Everything you need to know about the next-generation web protocol - John Leyden(2020)](https://portswigger.net/daily-swig/http-3-everything-you-need-to-know-about-the-next-generation-web-protocol)
 	- **Articles/Blogposts/Writeups**
 		* [A story of leaking uninitialized memory from Fastly - Emil Lerner(2022)](https://medium.com/@emil.lerner/leaking-uninitialized-memory-from-fastly-83327bcbee1f)
+		* [HTTP/3 Prioritization Demystified - Robin Marx(2022)](https://calendar.perfplanet.com/2022/http-3-prioritization-demystified/)
 	- **Talks/Presentations/Videos**
 		* [HTTP3 Security - Robin Marx(2021)](https://www.youtube.com/watch?v=Mx8hDbQmj7I)
 			* [Slides](https://github.com/rmarx/http3-for-webdevs/blob/main/presentations/HTTP3andQUIC_OWASP_aug2021.pdf)
@@ -994,11 +1149,43 @@
 
 
 ### <a name="java"></a>Java & related
+- **Apache Struts & OGNL**
+	- **101**
+		* [Exploiting OGNL Injection in Apache Struts  - Ionut Popescu(2022)](https://pentest-tools.com/blog/exploiting-ognl-injection-in-apache-struts)
+	- **Articles/Blogposts/Presentations/Talks/Writeups**
+		* [Apache Struts 2.3.5 < 2.3.31 / 2.5 < 2.5.10 - Remote Code Execution](https://www.exploit-db.com/exploits/41570/)
+		* [OGNL Injection Decoded - SecOps Group](https://secops.group/ognl-injection-decoded/)
+		* [OGNL Apache Struts exploit: Weaponizing a sandbox bypass (CVE-2018-11776) - Man Yue Mo(2018)](https://securitylab.github.com/research/ognl-apache-struts-exploit-CVE-2018-11776/)
+		* [Exploiting Struts RCE on 2.5.26 - Chris McCown(2021)](https://mc0wn.blogspot.com/2021/04/exploiting-struts-rce-on-2526.html)
+		* [Bypassing OGNL sandboxes for fun and charities - Alvaro Munoz(2023)](https://github.blog/2023-01-27-bypassing-ognl-sandboxes-for-fun-and-charities/)
+- **JDBC**
+	- **Presentations**
+		* [Make JDBC Attacks Brilliant Again - Xu Yuanzhen & Chen Hongkun(HITBSI2021)](https://www.youtube.com/watch?v=MJWI8YXH1lg&list=PLmv8T5-GONwQhUlGN2UhOAi8YxPaiYCDQ&index=8)
+			* [Slides](https://conference.hitb.org/hitbsecconf2021sin/materials/D1T2%20-%20Make%20JDBC%20Attacks%20Brilliant%20Again%20-%20Xu%20Yuanzhen%20&%20Chen%20Hongkun.pdf)
+			* [Other Slides](https://raw.githubusercontent.com/pyn3rd/my-presentation-slide/master/Make_JDBC_Attack_Brilliant_Again.pdf)
+			* In this presentation, we will share our latest research into attacking JDBC. We will start with the derivation of JDBC attacks including the JDBC concept and root cause of vulnerability. We will then give  a more in-depth analysis of occurred implementations including the 0day we found (Weblogic RCE). Finally we will share some new ways of exploiting JDBC including XXE and RCE issues – we will also disclose some 0day vulnerabilities in DB2, JBoss Wildfly, ModeShape.
 - **<a name="jsf"></a>Java Server Faces (JSF)**
 	- **101**
 		* [Java Server Faces - Wikipedia](https://en.wikipedia.org/wiki/JavaServer_Faces)
 	- **Articles/Blogposts/Presentations/Talks/Writeups**
 		* [Misconfigured JSF ViewStates can lead to severe RCE vulnerabilities - alphabot](https://www.alphabot.com/security/blog/2017/java/Misconfigured-JSF-ViewStates-can-lead-to-severe-RCE-vulnerabilities.html)
+- **JNDI**
+	- **101**
+		* [Overview of JNDI - Oracle](https://docs.oracle.com/javase/tutorial/jndi/overview/index.html)
+		* [What is JNDI? What is its basic use? When is it used? - StackOverflow](https://stackoverflow.com/questions/4365621/what-is-jndi-what-is-its-basic-use-when-is-it-used)
+		* [Java Naming and Directory Interface - Wikipedia](https://en.wikipedia.org/wiki/Java_Naming_and_Directory_Interface)
+	- **Articles/Blogposts/Writeups**
+		* https://github.com/iSafeBlue/presentation-slides/blob/main/BCS2022-%E6%8E%A2%E7%B4%A2JNDI%E6%94%BB%E5%87%BB.pdf
+		* [The JNDI Strikes Back – Unauthenticated RCE in H2 Database Console - Andrey Polkovnychenko, Shachar Menashe(2022)](https://jfrog.com/blog/the-jndi-strikes-back-unauthenticated-rce-in-h2-database-console/)
+		* [Exploiting JNDI Injections in Java - Michael Stepankin(2019)](https://www.veracode.com/blog/research/exploiting-jndi-injections-java)
+	- **Talks/Presentations**
+		* [A Journey From JNDI/LDAP Manipulation to Remote Code Execution Dream Land - Alvaro Muñoz, Oleksandr Mirosh(BHSUA2016)](https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf)
+	- **Tools**
+		* [dnsAutoRebinding](https://github.com/Tr3jer/dnsAutoRebinding)
+		* [Rogue JNDI](https://github.com/veracode-research/rogue-jndi)
+			* A malicious LDAP server for JNDI injection attacks 
+		* [JNDI-Injection-Exploit](https://github.com/welk1n/JNDI-Injection-Exploit)
+			* JNDI注入测试工具（A tool which generates JNDI links can start several servers to exploit JNDI Injection vulnerability,like Jackson,Fastjson,etc） 
 - **<a name="jsp"></a>Java Server Pages (JSP)**
 	- **101**
 		* [Java Server Pages - Wikipedia](https://en.wikipedia.org/wiki/JavaServer_Pages)
@@ -1008,6 +1195,20 @@
 		* [Hacking with JSP Shells - NetSPI](https://blog.netspi.com/hacking-with-jsp-shells/)
 		* [A Smaller, Better JSP Web Shell - securityriskadvisors](https://securityriskadvisors.com/blog/post/a-smaller-better-jsp-web-shell/)
 			* [Code](https://github.com/SecurityRiskAdvisors/cmd.jsp)
+- **Hibernate**
+	* [Exploiting Hibernate Injections - Johannes Moritz(2020)](https://blog.ripstech.com/2020/exploiting-hibernate-injections/)
+		* Hibernate is among one of the most commonly found database libraries used in Java web applications, shipping with its own query language. This technical post will teach you how to detect and exploit Hibernates very own vulnerability: The HQL Injection.
+- **RMI**
+	- **101**
+		* [Java RMI - Oracle](https://docs.oracle.com/javase/tutorial/rmi/index.html)
+	- **Articles/Blogposts/Writeups**
+		* [Java RMI for pentesters: structure, recon and communication (non-JMX Registries). - AFINE(2020)](https://itnext.io/java-rmi-for-pentesters-structure-recon-and-communication-non-jmx-registries-a10d5c996a79?gi=74bdda3cafb9)
+		* [Java RMI for pentesters part two — reconnaissance & attack against non-JMX registries - AFINE(2020)](https://medium.com/@afinepl/java-rmi-for-pentesters-part-two-reconnaissance-attack-against-non-jmx-registries-187a6561314d)
+	- **Tools**
+		* [BaRMIe](https://github.com/NickstaDB/BaRMIe)
+			* BaRMIe is a tool for enumerating and attacking Java RMI (Remote Method Invocation) services.
+		* [RmiTaste](https://github.com/STMSolutions/RmiTaste)
+			* RmiTaste allows security professionals to detect, enumerate, interact and exploit RMI services by calling remote methods with gadgets from ysoserial. 
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -1083,18 +1284,35 @@
 - **General**
 	- **Articles/Blogposts/Writeups**
 		* [JavaScript Template Attacks](https://github.com/IAIK/jstemplate)
+		* [At Home Among Strangers: Bo0oM(2019)](https://speakerdeck.com/bo0om/at-home-among-strangers?slide=4)
+			* Bypassing IP white sheets of some web applications due to incorrect parsing of HTTP request headers.
 	- **Talks/Presentations/Videos**
 		* [JSMVCOMFG - To sternly look at JavaScript MVC and Templating Frameworks - Mario Heiderich](https://www.youtube.com/watch?v=SLH_IgaQWjs)
 			* [Slides](https://www.slideshare.net/x00mario/jsmvcomfg-to-sternly-look-at-javascript-mvc-and-templating-frameworks)
 - **Angular**
+	- **Articles/Blogposts/Writeups**
 		* [AngularJS Security Documentation](https://docs.angularjs.org/guide/security)
 		* [Adapting AngularJS payloads to exploit real world applications - Gareth Heyes](https://portswigger.net/research/adapting-angularjs-payloads-to-exploit-real-world-applications)
 		* [Angular and AngularJS for Pentesters - Part 1 - Alex Useche(2019)](https://blog.nvisium.com/angular-for-pentesters-part-1)
 			* [Part 2](https://blog.nvisium.com/angular-for-pentesters-part-2)
-- **Apache Struts**
-	* [Apache Struts 2.3.5 < 2.3.31 / 2.5 < 2.5.10 - Remote Code Execution](https://www.exploit-db.com/exploits/41570/)
+	- **Tools**
+		* [ngrev](https://github.com/mgechev/ngrev)
+			* Graphical tool for reverse engineering of Angular projects. It allows you to navigate in the structure of your application and observe the relationship between the different modules, providers, and directives. The tool performs static code analysis which means that you don't have to run your application in order to use it.
 - **Backbone.js**
+- **Django**
+	* [Be careful what you request for: Injection using the HTTP verb in Django - Grayson Hardaway(2020)](https://semgrep.dev//blog/2020/be-careful-what-you-request-for-django-method)
+	* [The Fall Of Mighty Django, Exploiting Unicode Case Transformations - 0xsha(2020)](https://0xsha.io/blog/the-fall-of-mighty-django-exploiting-unicode-case-transformations)
+	* [Disclosing information with a side-channel in Django - Dennis Brinkrolf(2022)](https://www.sonarsource.com/blog/disclosing-information-with-a-side-channel-in-django/)
+	* [The Fall Of Mighty Django, Exploiting Unicode Case Transformations - oxsha(2020)](https://0xsha.io/blog/the-fall-of-mighty-django-exploiting-unicode-case-transformations)
 - **Ember.js**
+- **Groovy**
+	* [Groovy Template Engine Exploitation – Notes from a real case scenario - Gianluca Baldi(2022)](https://security.humanativaspa.it/groovy-template-engine-exploitation-notes-from-a-real-case-scenario/)
+- **H2**
+	* [Exploiting H2 Database with native libraries and JNI - Markus Wulftange(2019)](https://codewhitesec.blogspot.com/2019/08/exploit-h2-database-native-libraries-jni.html)
+- **GWT**
+	* [GWTMap - Reverse Engineering Google Web Toolkit Applications - Oliver Simmonnet(2020)](https://labs.withsecure.com/publications/gwtmap-reverse-engineering-google-web-toolkit-applications)
+	* [GWTMap](https://github.com/FSecureLABS/GWTMap)
+		* GWTMap is a tool to help map the attack surface of Google Web Toolkit (GWT) based applications. The purpose of this tool is to facilitate the extraction of any service method endpoints buried within a modern GWT application's obfuscated client-side code, and attempt to generate example GWT-RPC requests payloads to interact with them.
 - **MeteorJS**
 	* [Hacking Meteor Applications - Remi Testa(2017)](https://medium.com/@funkyremi/hacking-meteor-applications-1c4b326e6cdc)
 	* [Pentesting Meteor Applications with Burp Suite - sean(2019)](https://www.gremwell.com/blog/pentesting-meteor-applications-with-burp-suite)
@@ -1126,14 +1344,57 @@
 		* [Discovering Hidden Properties to Attack Node js Ecosystem - Feng Xiao(DEFCON Safemode)](https://www.youtube.com/watch?v=oGeEoaplMWA)
 			* [BlackHat Slides](https://i.blackhat.com/USA-20/Wednesday/us-20-Xiao-Discovering-Hidden-Properties-To-Attack-Nodejs-Ecosystem.pdf)
 			* Node.js is widely used for developing both server-side and desktop applications. It provides a cross-platform execution environment for JavaScript programs. Due to the increasing popularity, the security of Node.js is critical to web servers and desktop clients. We present a novel attack method against the Node.js platform, called hidden property abusing (HPA). The new attack leverages the widely-used data exchanging feature of JavaScript to tamper critical program states of Node.js programs, like server-side applications. HPA entitles remote attackers to launch serious attacks, such as stealing confidential data, bypassing security checks, and launching denial of service attacks. To help developers detect the HPA issues of their Node.js applications, we develop a tool, named LYNX, that utilizes hybrid program analysis to automatically reveal HPA vulnerabilities and even synthesize exploits. We apply LYNX on a set of widely-used Node.js programs and identify 13 previously unknown vulnerabilities. LYNX successfully generates 10 severe exploits. We have reported all of our findings to the Node.js community. At the time of paper writing, we have received the confirmation of 12 vulnerabilities and got 12 CVEs assigned. Moreover, we collaborated with an authoritative public vulnerability database to help them use a new vulnerability notion and description in related security issues. The talk consists of four parts. First, we will introduce recent offensive research on Node.js. Second, we will introduce HPA by demonstrating an exploit on a widely-used web framework. Third, we will explain how to leverage program analysis techniques to automatically detect and exploit HPA. In the end, we will have a comprehensive evaluation which discusses how we identified 13 HPA 0days with the help of our detection method.
+- **phpMyAdmin**
+	* [Linux Hacking Case Studies Part 3: phpMyAdmin - Scott Sutherland(2020)](https://blog.netspi.com/linux-hacking-case-studies-part-3-phpmyadmin/)
 - **React.JS**
 	- **Articles/Blogposts/Writeups**
 		* [Exploiting Script Injection Flaws in ReactJS Apps](https://medium.com/dailyjs/exploiting-script-injection-flaws-in-reactjs-883fb1fe36c1)
 		* [Javascript for bug bounty hunters(part 1) — Ahmed Ezzat (BitTheByte)](https://medium.com/@bitthebyte/javascript-for-bug-bounty-hunters-part-1-dd08ed34b5a8)
 			* [Part 2](https://medium.com/@bitthebyte/javascript-for-bug-bounty-hunters-part-2-f82164917e7)
+		* [10 React security best practices - Ron Perris, Liran Tal(2022)](https://snyk.io/blog/10-react-security-best-practices/)
+- **Ruby-on-Rails**
+		* [Ruby on Rails Penetration Testing - 3SLabs(2014)](https://www.slideshare.net/labs3/ruby-on-rails-penetration-testing)
+		* [Going AUTH the Rails on a Crazy Train - Tomek Rabczak Jeff Jarmoc(Derbycon2015)](https://www.irongeek.com/i.php?page=videos/derbycon5/the-3-way09-going-auth-the-rails-on-a-crazy-train-tomek-rabczak-jeff-jarmoc)
+			* Rails has a strong foundation in convention over configuration. In this regard, Rails handles a lot of security related conventions for developers, keeping them safe from vulnerabilities such as SQL Injection, XSS, and CSRF out of the box. However, authentication and authorization logic is largely left up to the developer. It is here that the abilities of the framework hit the end of the track and it's up to the developers to keep themselves safe. In this talk, we take a look at patterns that we've seen across some of the largest Rails applications on the internet and cover common pitfalls that you as a security researcher and/or developer can watch out for. We will also be discussing and releasing a new dynamic analysis tool for Rails applications to help pentesters navigate through authentication and authorization solutions in Rails.
+		* [Vulnerabilities Within Ruby on Rails - Arvind Doraiswamy(2015)](https://blog.securityinnovation.com/blog/2015/05/ruby-on-rails.html)
+		* [Attacking Ruby on Rails Applications - joernchen(2016)](http://phrack.org/issues/69/12.html#article)
+		* [Zen Rails Security Checklist](https://github.com/brunofacca/zen-rails-security-checklist)
+			* This document provides a not necessarily comprehensive list of security measures to be implemented when developing a Ruby on Rails application. It is designed to serve as a quick reference and minimize vulnerabilities caused by developer forgetfulness. It does not replace developer training on secure coding principles and how they can be applied.
+- **Salesforce**
+	- **Articles**
+		* [SFDC Secure Development Cheat Sheet -  Zach Julian(2019)](https://bishopfox.com/blog/sfdc-secure-development-cheat-sheet)
+		* [Salesforce Lightning - Tinting the Windows - Aaron Costello(2020)](https://www.enumerated.de/index/salesforce-lightning-tinting-the-windows)
+		* [Features of the Browser Fingerprint - Salesforce](https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/real_time_em_threat_session_features.htm)
+		* [Salesforce Lightning - An in-depth look at exploitation vectors for the everyday community - Aaron Costello(2020)](https://www.enumerated.de/index/salesforce)
+		* [Lightning Components: A Treatise on Apex Security from an External Perspective - Aaron Costello(2021)](https://go.appomni.com/hubfs/Collateral/AppOmni_Labs_White_Paper_Apex_Security.pdf)
+		* [in simple words: Pen-Testing Salesforce SAAS Application (Part 1 - The Essentials) - Praveen Kanniah(2021](https://praveen-kanniah.medium.com/in-simple-words-pen-testing-salesforce-saas-application-part-1-the-essentials-ffae632a00e5)
+			* [Part 2](https://praveen-kanniah.medium.com/in-simple-words-pen-testing-salesforce-saas-application-part-2-fuzz-exploit-eefae11ba5ae)
+		* [Are you oversharing (in Salesforce)? Our new tool could sniff it out! - Jerome Smith(2021)](https://research.nccgroup.com/2021/06/28/are-you-oversharing-in-salesforce/)
+		* [How Salesforce Helps Protect You From Session Hijacking Threats - Regunathan Radhakrishnan(2022)](https://engineering.salesforce.com/how-salesforce-helps-protect-you-from-session-hijacking-threats-c39f4cf84cee/)
+		* [Hacking Salesforce-backed WebApps - hypn.za.net(2022)](https://www.hypn.za.net/blog/2022/11/12/Hacking-Salesforce-backed-WebApps/)
+		* [Understanding Salesforce Flows and Common Security Risks - Aaron Costello(2022)](https://appomni.com/resources/aolabs/understanding-salesforce-flows-and-common-security-risks/)
+	- **Tools**
+		* [Raccoon](https://github.com/nccgroup/raccoon)
+			* Salesforce object auditor
+		* [Salesforce Recon and Exploitation Toolkit](https://github.com/Ophion-Security/sret)
+			* Salesforce Recon and Exploitation Toolkit
 - **Spring**
 	* [How Spring Web MVC Really Works - Stackify.com](https://stackify.com/spring-mvc/)
+	* [Spring View Manipulation Vulnerability -  Michael Stepankin(2020)](https://github.com/veracode-research/spring-view-manipulation)
+		* In this article, we explain how dangerous an unrestricted view name manipulation in Spring Framework could be.
+- **Springboot**
+	- **Articles/Blogposts**
+		* [Critical Zero-Day RCE Vulnerability in Spring Core: Spring4shell (CVE-2022-22965) - Aarush Ahuja(2022)](https://fourcore.io/blogs/spring4shell-zero-day-rce-spring-framework)
+		* [Introduction to Spring Boot Related Vulnerabilities - varma(2022)](https://tutorialboy24.blogspot.com/2022/02/introduction-to-spring-boot-related.html)
+		* [Remote Code Execution in Three Acts: Chaining Exposed Actuators and H2 Database Aliases in Spring Boot 2 - spaceraccoon.dev(2020)](https://spaceraccoon.dev/remote-code-execution-in-three-acts-chaining-exposed-actuators-and-h2-database)
+	- **Tools**
+		* [Spring4Shell Exploit POC](https://github.com/FourCoreLabs/spring4shell-exploit-poc)
+		* [CVE-2022-22965](https://github.com/alt3kx/CVE-2022-22965)
+- **Symfony**
+	* [Secret fragments: Remote code execution on Symfony based websites - Charles Fol(2020)](https://www.ambionics.io/blog/symfony-secret-fragment)
 - **Vue.js**
+- **Wordpress**
+	* [Backdooring WordPress with Phpsploit - wpsec(2020)](https://blog.wpsec.com/backdooring-wordpress-with-phpsploit/)
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -1322,6 +1583,8 @@
 	* [RFC 6819: OAuth 2.0 Threat Model and Security Considerations](https://tools.ietf.org/html/rfc6819)
 	* [OAuth 2.0 Security Best Current Practice draft-ietf-oauth-security-topics-15](https://tools.ietf.org/html/draft-ietf-oauth-security-topics-15)
 	* [The Modern Guide to OAuth - Brian Pontarelli, Dan Moore(2021)](https://fusionauth.io/learn/expert-advice/oauth/modern-guide-to-oauth)
+	* [Signing in with Google - Okta](https://www.oauth.com/oauth2-servers/signing-in-with-google/)
+	* [Multi-Factor Authentication: 4 Challenges Faced by Developers - Micah Silverman(2018)](https://developer.okta.com/blog/2018/05/16/multifactor-authentication-4-challenges-faced-by-developers)
 - **Articles/Blogposts/Writeups**
 	* [Dancing with OAuth: Understanding how Authorization Works - Ashish Mathur](https://medium.com/@imashishmathur/0auth-a142656859c6)
 	* [Shining a Light on OAuth Abuse with PwnAuth - Douglas Bienstock](https://www.fireeye.com/blog/threat-research/2018/05/shining-a-light-on-oauth-abuse-with-pwnauth.html)
@@ -1345,6 +1608,9 @@
 		* An introduction to some authentication flows in OAuth 2.0 followed by a demo of some common bug types that can be found in them.
 	* [alert(‘OAuth 2.0’); // The impact of XSS on OAuth 2.0 in SPAs - Philippe De Ryck](https://pragmaticwebsecurity.com/talks/xssoauth.html)
 	* [OAuth Abuse: Think Solarwinds/Solorigate Campaign with Focus on Cloud Applications - Itir Clarke, Assaf Friedman(2021)](https://www.proofpoint.com/us/blog/cloud-security/oauth-abuse-think-solarwindssolorigate-campaign-focus-cloud-applications)
+	* [2FA Bypass via Google Identity & OAuth Login - Sharat Kaikolamthuruthil(2022)](https://medium.com/@sharp488/2fa-bypass-via-google-identity-oauth-login-6c991ac837af)
+	* [Account hijacking using "dirty dancing" in sign-in OAuth-flows - Frans Rosen(2022)](https://labs.detectify.com/2022/07/06/account-hijacking-using-dirty-dancing-in-sign-in-oauth-flows/)
+	* [How can Hackers Analyze the Attacks on OAuth 2.0? - anubhav.singh(2022)](https://payatu.com/blog/oauth-vulnerabilities/)
 - **Presentations/Talks/Videos**
 	* [OAuth2: Beyond The Specs - Daniele Timo Second - BSides Lisbon2018](https://www.youtube.com/watch?v=qBxI0bjtJvU&t=0s&list=PLbuNP88_wbNxPkglG6zLUhvzvxvDimuEc&index=7)
 		* What if you roll out OAuth, and realize there are a bunch of small things you didn’t consider? It’s what happened to us at Pipedrive, and although it’s likely not over just yet, we’re running smoothly. It’s a good time to share what we’ve learned and save others some time. While building Pipedrive’s marketplace for third-party apps, we transitioned from API token authentication to OAuth, and it’s been an interesting learning experience. In this talk, I will explain how the protocol works, discuss differences in how OAuth is implemented on different platforms, and explain how we managed the transition from API token to OAuth. I will explain how CSRF attacks work in OAuth, how the state parameter can prevent them, how to manage synchronization between server and clients, and what you can run into when you roll out OAuth for dozens of apps.
@@ -1452,7 +1718,13 @@
 			* PHPGGC is a library of unserialize() payloads along with a tool to generate them, from command line or programmatically. When encountering an unserialize on a website you don't have the code of, or simply when trying to build an exploit, this tool allows you to generate the payload without having to go through the tedious steps of finding gadgets and combining them. Currently, the tool supports: Doctrine, Guzzle, Laravel, Monolog, Slim, SwiftMailer.
 		* [File Operation Induced Unserialization via the "phar://" Stream Wrapper - secarma labs](https://github.com/s-n-t/presentations/blob/master/us-18-Thomas-It's-A-PHP-Unserialization-Vulnerability-Jim-But-Not-As-We-Know-It-wp.pdf)
 		* [PHP Object Injection Cheat Sheet - Lucian Nitescu(2018)](https://nitesculucian.github.io/2018/10/05/php-object-injection-cheat-sheet/)
+		* [Testing Methodology for Insecure Deserialization Vulnerability - SecureLayer7(2021)](https://blog.securelayer7.net/testing-methodology-for-insecure-deserialization-vulnerability/)
+		* [Insecure Deserialization - How to Trace Down a Gadget Chain - redteampentesting(2021)](https://blog.redteam-pentesting.de/2021/deserialization-gadget-chain/)
+		* [Remote code execution through unsafe unserialize in PHP - Sjoerd Langkemper(2021)](https://www.sjoerdlangkemper.nl/2021/04/04/remote-code-execution-through-unsafe-unserialize/)
+		* [Unserializable, but unreachable: Remote code execution on vBulletin - Charles Fol(2023)](https://www.ambionics.io/blog/vbulletin-unserializable-but-unreachable)
 	- **Talks/Presentations/Videos**
+		* [Intro to PHP Deserialization / Object Injection - Ippsec(2019)](https://www.youtube.com/watch?v=HaW15aMzBUM)
+		* [Advanced PHP Deserialization - Phar Files - Ippsec(2019)](https://www.youtube.com/watch?v=fHZKSCMWqF4)
 		* [Exploiting PHP7 unserialize - Yannay Livneh (33c3)](https://media.ccc.de/v/33c3-7858-exploiting_php7_unserialize)
 			* PHP-7 is a new version of the most prevalent server-side language in use today. Like previous version, this version is also vulnerable to memory corruptions. However, the language has gone through extensive changes and none of previous exploitation techniques are relevant. In this talk, we explore the new memory internals of the language from exploiters and vulnerability researchers point of view. We will explain newly found vulnerabilities in the 'unserialize' mechanism of the language and present re-usable primitives for remote exploitation of these vulnerabilities.
 	- **Pictures**
@@ -1495,6 +1767,17 @@
 		* Writeups of specific PHP vulns
 	* [Privilege Escalation in 2.3M WooCommerce Shops - Karim El Ouerghemmi, Slavco Mihajloski](https://blog.ripstech.com/2018/woocommerce-php-object-injection/)
 		* During our research we discovered a PHP Object Injection vulnerability in WooCommerce (CVE-2017-18356) that allows to escalate privileges with a unique and interesting injection technique.
+- **Tools**
+	* [The shortest non-alphanumeric reverse shell (php) script (19 bytes)](https://gist.github.com/0xSojalSec/5bee09c7035985ddc13fddb16f191075)
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+### <a name="robots"></a> robots.txt
+* **101**
+		* [Protocol Buffers - Google](https://developers.google.com/protocol-buffers)
+			* "Protocol buffers are Google's language-neutral, platform-neutral, extensible mechanism for serializing structured data – think XML, but smaller, faster, and simpler. You define how you want your data to be structured once, then you can use special generated source code to easily write and read your structured data to and from a variety of data streams and using a variety of languages."
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -1536,6 +1819,7 @@
 	* [Pentesting Django and Rails](https://es.slideshare.net/levigross/pentesting-django-and-rails)
 	* [Executing commands in ruby](http://blog.bigbinary.com/2012/10/18/backtick-system-exec-in-ruby.html)
 	* [Execution of shell code in Ruby scripts](https://makandracards.com/makandra/1243-execution-of-shell-code-in-ruby-scripts)
+	* [Pre-Auth RCE in Aspera Faspex: Case Guide for Auditing Ruby on Rails - Maxwell Garrett, Shubham Shah](https://blog.assetnote.io/2023/02/02/pre-auth-rce-aspera-faspex/)
 - **Tools**
 	* [Brakeman](https://github.com/presidentbeef/brakeman)
 		* Brakeman is an open source static analysis tool which checks Ruby on Rails applications for security vulnerabilities.
@@ -1555,6 +1839,11 @@
 - **Articles/Blogposts/Writeups**
 	* [Whitepaper: The Definitive Guide to Same-origin Policy - Alex Baker, Ziyahan Albeniz, Emre Iyidogan](https://www.netsparker.com/whitepaper-same-origin-policy/)
 	* [Same-Origin Policy: From birth until today - Alex Nikolova](https://research.aurainfosec.io/same-origin-policy/)
+	* [My hacking adventures with Safari reader mode - Nikhil Mittal(2020)](https://payatu.com/blog/my-hacking-adventures-with-safari-reader-mode/
+	* [WebSockets not Bound by SOP and CORS? Does this mean… - Drew Branch(2018)](https://blog.securityevaluators.com/websockets-not-bound-by-cors-does-this-mean-2e7819374acc?gi=75e2bd4c2043#e8bc)
+	* [The Same-Origin Policy Gone Wild - Parsia(2020)](https://parsiya.net/blog/2020-11-01-the-same-origin-policy-gone-wild/)
+- **Talks/Presentations**
+	* [The Tangled Web and Its Same Origin Policy - Pankaj](https://www.youtube.com/watch?v=xaYvpLv9pMI)
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -1614,6 +1903,18 @@
 --------------------------------------------------------------------------------------------------------------------------------
 
 
+### <a name="siteisolate"></a> Site Isolation
+- **101**
+	* [Deep Dive into Site Isolation (Part 1) - Jun Kokatsu(2020)](https://microsoftedge.github.io/edgevr/posts/deep-dive-into-site-isolation-part-1/)
+		* [Part 2](https://microsoftedge.github.io/edgevr/posts/deep-dive-into-site-isolation-part-2/)
+	* [Introducing Firefox’s new Site Isolation Security Architecture - Anny Gakhokidze(2021)](https://hacks.mozilla.org/2021/05/introducing-firefox-new-site-isolation-security-architecture/)
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
 ### <a name="sri"></a> Subresource Integrity
 - **101**
 	* [Subresource Integrity - W3.org](https://www.w3.org/TR/SRI/)
@@ -1631,14 +1932,25 @@
 
 ### <a name="ssltls"></a>Secure Sockets Layer/Transport Layer Security(SSL/TLS)
 - **101**
-	* [RFC 8446: The Transport Layer Security (TLS) Protocol Version 1.3](https://tools.ietf.org/html/rfc8446)
+	* [Transport Layer Security - Wikipedia](https://en.wikipedia.org/wiki/Transport_Layer_Security)
+	* [RFC 6101: The Secure Sockets Layer (SSL) Protocol Version 3.0 - IETF](https://www.rfc-editor.org/rfc/rfc6101)
+	* [RFC 2246: The TLS Protocol - IETF](https://www.ietf.org/rfc/rfc2246.txt)
+	* [RFC 5246: The Transport Layer Security (TLS) Protocol Version 1.2 - IETF](https://www.rfc-editor.org/rfc/rfc5246)
+	* [RFC 8446: The Transport Layer Security (TLS) Protocol Version 1.3 - IETF](https://datatracker.ietf.org/doc/rfc8446/)
+	* [RFC 8740: Using TLS 1.3 with HTTP/2 - IETF](https://httpwg.org/specs/rfc8740.html)
 - **Articles/Blogposts/Presentations/Talks/Writeups**
 	* [Transport Layer Security (TLS) Extensions](https://www.iana.org/assignments/tls-extensiontype-values/tls-extensiontype-values.xhtml)
 	* [Mixed content - w3c](https://w3c.github.io/webappsec-mixed-content/)
 		* This specification describes how a user agent should handle fetching of content over unencrypted or unauthenticated connections in the context of an encrypted and authenticated document.
+	* [Understanding SSL — Secure Socket Layer | 2023 - Karthikeyan Nagaraj(2022)](https://cyberw1ng.medium.com/understanding-ssl-secure-socket-layer-2023-a0ada4329842)
+	* [How HTTPS Works](https://blog.dnsimple.com/2017/04/how-to-write-a-comic/)
+	* [A Detailed Look at RFC 8446 (a.k.a. TLS 1.3) - Nick Sullivan(2018)](https://blog.cloudflare.com/rfc-8446-aka-tls-1-3/)
+	* [curl’s TLS fingerprint - Daniel Stenberg(2022)](https://daniel.haxx.se/blog/2022/09/02/curls-tls-fingerprint/)
 - **Attacks Against**
 	- **Articles/Blogposts/Writeups**
 		* [Downgrade Attack on TLS 1.3 and Vulnerabilities in Major TLS Libraries - David Wong](https://www.nccgroup.trust/us/about-us/newsroom-and-events/blog/2019/february/downgrade-attack-on-tls-1.3-and-vulnerabilities-in-major-tls-libraries/)
+		* [SSL, GONE IN 30 SECONDS: A BREACH beyond CRIME - Angelo Prado, Neal Harris, Yoel Gluck(BHUSA2013)](https://www.breachattack.com/resources/BREACH%20-%20BH%202013%20-%20PRESENTATION.pdf)
+		* [Playback: a TLS 1.3 story - Alfonso García Alguacil & Alejo Murillo Moya(2018)](https://labs.portcullis.co.uk/download/us-18-GarciaAlguacil_MurilloMoya-Playback_A_TLS_1.3_Story__v6.pdf)
 	- **Talks/Presentations**
 		* [SSL/TLS Interception Proxies and Transitive Trust](http://media.blackhat.com/bh-eu-12/Jarmoc/bh-eu-12-Jarmoc-SSL_TLS_Interception-WP.pdf)
 			* Secure Sockets Layer (SSL) and its successor Transport Layer Security (TLS), have become key components of the modern Internet. The privacy, integrity, and authenticity provided by these protocols are critical to allowing sensitive communications to occur. Without these systems, e-commerce, online banking, and business-to-business exchange of information would likely be far less frequent. Threat actors have also recognized the benefits of transport security, and they are increasingly turning to SSL to hide their activities. Advanced Persistent Threat (APT ) attackers, botnets, and eve n commodity web attacks can leverage SSL encryption to evade detection. To counter these tactics, organizations are increasingly deploying security controls that intercept end-to-end encrypted channels. Web proxies, data loss prevention (DLP) systems, specialized threat detection solutions, and network intrusion prevention systems (NIPS) offer functionality to intercept, inspect, and filter encrypted traffic. Similar functionality is present in lawful intercept systems and solutions enabling the broad surveillance of encrypted communications by governments. Broadly classified as “SSL/TLS interception proxies”, these solutions act as a “man-in-the-middle", violating the end-to-end security promises of SSL. This type of interception comes at a cost. Intercepting SSL-encrypted connections sacrifices a degree of privacy and integrity for the benefit of content inspection, often at the risk of authenticity and endpoint validation. Implementers and designers of SSL interception proxies should consider these risks and understand how their systems operate in unusual circumstances
@@ -1652,6 +1964,12 @@
 ### <a name="sso">Single Sign-On(SSO)</a>
 - **101**
 - **Articles/Blogposts/Writeups**
+	* [Single Sign-On Security: Security Analysis of real-life OpenID Connect Implementations - Lauritz HoltmanN(2020)](https://web-in-security.blogspot.com/2020/11/single-sign-on-security-security.html)
+	* [Improving OAuth App-to-App Security - Fabian Hauck, Joseph Heenan, Daniel Fett(2020)](https://danielfett.de/2020/11/27/improving-app2app/)
+	* [ Security and Privacy of Social Logins (I): Single Sign-On Protocols in the Wild - Louis Jannett(2021)](https://web-in-security.blogspot.com/2021/02/security-and-privacy-of-social-logins-part1.html)
+	SSO Wars: The Token Menace - Alvaro MuÒoz, Oleksandr Mirosh
+	* [Common Federated Identity Protocols: OpenID Connect vs OAuth vs SAML 2 - Security Journey](https://www.securityjourney.com/post/analysis-of-common-federated-identity-protocols-openid-connect-vs-oauth-2.0-vs-saml-2.0)
+	* [Breaking Through Single Sign On (SSO) - Alex Bainbridge](https://www.praetorian.com/blog/breaking-through-okta-single-sign-on-sso-security)
 - **Talks & Presentations**
 	* [SSO Wars: The Token Menace - Alvaro Munoz, Oleksandr Mirosh]()
 		* [Slides](https://i.blackhat.com/USA-19/Wednesday/us-19-Munoz-SSO-Wars-The-Token-Menace.pdf)
@@ -1662,6 +1980,9 @@
 			* Dupe Key Injetctor is a Burp Suite extension implementing Dupe Key Confusion, a new XML signature bypass technique presented at BSides/BlackHat/DEFCON 2019 "SSO Wars: The Token Menace" presentation. 
 			* [Slides](https://github.com/pwntester/DupeKeyInjector/blob/master/resources/slides.pdf)
 			* [Paper](https://github.com/pwntester/DupeKeyInjector/blob/master/resources/whitepaper.pdf)
+- **Tools**
+	* [PrOfESSOS](https://github.com/RUB-NDS/PrOfESSOS)
+		* PrOfESSOS is our open source implementation for fully automated Evaluation-as-a-Service for SSO. PrOfESSOS introduces a generic approach to improve the security of OpenID Connect implementations by systematically detecting vulnerabilities.
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -1671,6 +1992,23 @@
 - **101**
 	* [Streams - Dec12 2019](https://streams.spec.whatwg.org)
 		* This specification provides APIs for creating, composing, and consuming streams of data that map efficiently to low-level I/O primitives.
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+### <a name="unicode"></a>Unicode
+- **101**
+ 	* [The Absolute Minimum Every Software Developer Absolutely, Positively Must Know About Unicode and Character Sets (No Excuses!) - Joel Spolsky(2003)](https://www.joelonsoftware.com/2003/10/08/the-absolute-minimum-every-software-developer-absolutely-positively-must-know-about-unicode-and-character-sets-no-excuses/)
+- **Articles/Blogposts**
+	* [Creative usernames and Spotify account hijacking - Mikael Goldmann(2013)](https://engineering.atspotify.com/2013/06/creative-usernames/)
+	* [Unicode Normalization Vulnerabilities & the Special K Polyglot - AppCheck(2019)](https://appcheck-ng.com/unicode-normalization-vulnerabilities-the-special-k-polyglot)
+	* [/i considered harmful - PentesterLab(2020)](https://blog.pentesterlab.com/i-considered-harmful-6e20936ea65f?gi=43ab93bbb616)
+- **Talks/Presentations**
+	* [Unraveling Unicode: A Bag of Tricks for Bug Hunting - Chris Weber(BHUSA2009)](https://www.blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf)
+	* [5 Unicode Vulnerabilities that could bi/yte you - Philippe Arteau](https://www.youtube.com/watch?v=Mqg8e6lJ-E8&list=PLuUtcRxSUZUqhwo0e6j0hrqXifo8jItdl&index=12)
+		* [Slides](https://gosecure.github.io/presentations/2020-05-unicode-northsec/unicode_v3_northsec.pdf)
+		* "In this talk, you will learn about the security implications of encoding conversion. Normalizing a UTF-8 string to ASCII only character has numerous potential side effects. The latest research affecting Unicode will be summarized including the HostSplit and HostBond attacks. The HostSplit attack abuses minor characters conversion to trigger open redirect or Server-Side Request Forgery (SSRF). While HostBond is a risk affecting service provider giving subdomain to account created by users. Aside from normalization, uppercase and lowercase transformation can introduce vulnerability. Encoding can be used to circumvent security controls such as Web Application Firewalls. Punycode is the new representation to support domains with special characters outside of ASCII. This representation can be used to create visual confusion to end users."
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -1720,12 +2058,22 @@
 	* [WAF bypass techniques - Pentestit(2019)](https://medium.com/@Pentestit_ru/bypassing-waf-4cfa1aad16bf)
 	* [A Pentesters Guide - Part 5 (Unmasking WAFs and Finding the Source) - pyr0cc](https://delta.navisec.io/a-pentesters-guide-part-5-unmasking-wafs-and-finding-the-source/)
 	* [WAF Bypassing with Unicode Compatibility - Jorge Lajara(2020)](https://jlajara.gitlab.io/web/2020/02/19/Bypass_WAF_Unicode.html)
+	* [Bypassing WAF to do advanced Error-Based SQL Injection - kleiton0x7e(2020)](https://medium.com/bugbountywriteup/bypassing-waf-to-do-error-based-sql-injection-dd52773a66d3)
+	* [Bypassing CDN WAF’s with Alternate Domain Routing - Ryan Gerstenkorn(2022)](https://blog.apnic.net/2022/05/19/bypassing-cdn-wafs-with-alternate-domain-routing/)
+	* [How to Bypass Cloudflare in 2023: The 8 Best Methods - ZenRows(2023)](https://www.zenrows.com/blog/bypass-cloudflare#what-is-cloudflare-bot-management)
+	* [A guide to non-conventional WAF/IDS evasion techniques - 0xFFFFF](https://web.archive.org/web/20210731223520/https://blog.0xffff.info/2021/07/24/a-guide-to-non-conventional-waf-ids-evasion-techniques/)
+	* [Web application firewalls bypasses collection and testing tools](https://waf-bypass.com/)
+	* [{JS-ON: Security-OFF}: Abusing JSON-Based SQL to Bypass WAF - Noam Moshe(2022)](https://claroty.com/team82/research/js-on-security-off-abusing-json-based-sql-to-bypass-waf)
+	* [Bypass firewalls with of-CORs and typo-squatting - Grayson(2023)](https://trufflesecurity.com/blog/of-cors/)
 - **Talks & Presentations**
 	* [HTTP Invisibility Cloak by Soroush Dalili - SteelCon2017](https://www.youtube.com/watch?reload=9&v=sHEv_EoQJwc)
 		* This talk illustrates a number of techniques to smuggle and reshape HTTP requests using features such as HTTP Pipelining that are not normally used by testers. The strange behaviour of web servers with different technologies will be reviewed using HTTP versions 1.1, 1.0, and 0.9 before HTTP v2 becomes too popular! Some of these techniques might come in handy when dealing with a dumb WAF or load balancer that blocks your attacks.
 	* [Web Application Firewall Profiling and Evasion - Michael Ritter](https://owasp.org/www-pdf-archive/OWASP_Stammtisch_Frankfurt_WAF_Profiling_and_Evasion.pdf)
 	* [Let's Talk About WAF (Bypass) Baby - Brett Gravois(NolaCon2019)](https://www.irongeek.com/i.php?page=videos/nolacon2019/nolacon-2019-c-10-lets-talk-about-waf-bypass-baby-brett-gravois)
 		* All modern Web Application Firewalls are able to intercept (and even block) most common attacks from the web. However, what happens when an attacker uses HTTP2 to send attack traffic to a web application or service? In this talk we will cover basic attacks against web applications using HTTP2 to bypass WAFs and Proxies. Attendees will gain knowledge of how to bypass WAF and Proxies using the HTTP2 Protocol, and steps they can take to protect themselves against these kinds of attacks.
+	* [Modern WAF Bypass Scripting Techniques for Autonomous Attacks - Jonny Xmas(2019)](https://www.infoq.com/presentations/waf-scripting-techniques-autonomous-attacks/)
+	* [WAF Breakthrough in the Cloud Era - pyn3rd(2019)](https://github.com/pyn3rd/my-presentation-slide/blob/master/KCon_2019_WAF.pdf)
+	* [AutoSpear : Towards Automatically Bypassing and Inspecting Web Application Firewalls - Zhenqing Qu, Xiang Ling, Chunming Wu(BHAsia2022)](https://i.blackhat.com/Asia-22/Thursday-Materials/AS-22-Qu-AutoSpear-Towards-Automatically-Bypassing-and-Inspecting-Web-Application-Firewalls.pdf)
 - **Tools**
 	* [WhatWaf](https://github.com/Ekultek/WhatWaf)
 		* WhatWaf is an advanced firewall detection tool who's goal is to give you the idea of "There's a WAF?". WhatWaf works by detecting a firewall on a web application, and attempting to detect a bypass (or two) for said firewall, on the specified target.
@@ -1742,7 +2090,8 @@
 		* Framework for Testing WAFs (FTW!)
 	* [wafw00f](https://github.com/EnableSecurity/wafw00f)
 		*  WAFW00F allows one to identify and fingerprint Web Application Firewall (WAF) products protecting a website. 
-
+	* [cdn-proxy](https://github.com/RyanJarv/cdn-proxy)
+		* A tool that can be used by web app pentesters to create a copy of a targeted website with CDN and WAF restrictions disabled.
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -1756,10 +2105,16 @@
 	* [WebAssembly Design Documents](https://github.com/WebAssembly/design)
 		* This repository contains documents describing the design and high-level overview of WebAssembly.
 	* [WebAssembly - MDN(Mozilla)](https://developer.mozilla.org/en-US/docs/WebAssembly)
+	* [How WebAssembly changes software distribution - Max Desiatov(2020)](https://desiatov.com/why-webassembly/)
+	* [WebAssembly. Scary name, exciting applications. - Nicky Meuleman](https://nickymeuleman.netlify.app/blog/webassembly/)
+	* [wasm-fizzbuzz - Cornelius Diekmann](https://github.com/diekmann/wasm-fizzbuzz)
+		* WebAssembly from Scratch: From FizzBuzz to DooM.
 - **Articles/Papers/Talks/Writeups**
 	* [WebAssembly security: potentials and pitfalls - John Bergbom](https://www.forcepoint.com/blog/x-labs/webassembly-potentials-and-pitfalls)
 	* [WebAssembly cut Figma's load time by 3x - Evan Wallace](https://www.figma.com/blog/webassembly-cut-figmas-load-time-by-3x/)
 	* [Coding a WebAssembly CTF Challenge - Jacob Baines](https://medium.com/tenable-techblog/coding-a-webassembly-ctf-challenge-5560576e9cb7)
+	* [Pay attention to WebAssembly - Harshal Sheth(2022)](https://harshal.sheth.io/2022/01/31/webassembly.html)
+	* [Anti-Debug JS/WASM by Hand - Remy(2021)](https://remyhax.xyz/posts/javascript-wasm-anti-debug/)
 - **Papers**
 	* [Security Chasms of WASM - Brian McFadden, Tyler Lukasiewicz, Jeff Dileo, Justin Engler(2018)](https://i.blackhat.com/us-18/Thu-August-9/us-18-Lukasiewicz-WebAssembly-A-New-World-of-Native_Exploits-On-The-Web-wp.pdf)
 		* WebAssembly is a new technology that allows web developers to run native C/C++on a webpage with near-native performance. This paper provides a basic introduc-tiontoWebAssemblyandexaminesthesecurityrisksthatadevelopermaytakeonbyusing it. We cover several examples exploring the theoretical security implications ofWebAssembly. We also cover Emscripten, which is currently the most popular Web-Assembly compiler toolchain. Our assessment of Emscripten includes its implemen-tation of compiler-and-linker-level exploit mitigations as well as the internal harden-ing of itslibcimplementation, and how its augmentation of WASM introduces newattack vectors and methods of exploitation. We also provide examples of memorycorruption exploits in the Wasm environment. Under certain circumstances, theseexploits could lead to to hijacking control flow or even executing arbitrary JavaScriptwithin the context of the web page. Finally, we provide a basic outline of best prac-tices and security considerations for developers wishing to integrate WebAssemblyinto their product.
@@ -1770,6 +2125,8 @@
 		* A library able to create, read, modify, write and execute WebAssembly (WASM) files from .NET-based applications. Execution does not use an interpreter. WASM instructions are mapped to their .NET equivalents and converted to native machine language by the .NET JIT compiler.
 	* [octopus](https://github.com/pventuzelo/octopus)
 		* Security Analysis tool for WebAssembly module (wasm) and Blockchain Smart Contracts (BTC/ETH/NEO/EOS) 
+	* [WasmEdge](https://github.com/WasmEdge/WasmEdge)
+		* WasmEdge is a lightweight, high-performance, and extensible WebAssembly runtime for cloud native, edge, and decentralized applications. It powers serverless apps, embedded functions, microservices, smart contracts, and IoT devices.
 - **Reversing**
 	* [Web-(Dis)Assembly - Christophe Alladoum - Shakacon X](https://github.com/sophos/WebAssembly/blob/master/Misc/Web-(Dis)Assembly.pdf)
 		* `https://github.com/sophos/WebAssembly/blob/master/Misc/Web-(Dis)Assembly.pdf`
@@ -1823,12 +2180,22 @@
 * **101**
 * **Articles/Blogposts/Writeups**
 	* [Utilizing Reverse Proxies to Inject Malicious Code & Extract Sensitive Information - James Sibley](https://versprite.com/blog/application-security/reverse-proxy-attack/)
+	* [Weird Proxies](https://github.com/GrrrDog/weird_proxies)
+	* [How to exfiltrate internal information using web proxies. - zezadas(2019)](https://sefod.eu/posts/web_proxies/)
+- **Talks/Presentations**
+	* [Weird proxies/2 and a bit of magic  - Aleksei Tiurin(ZeroNights2021)](https://www.youtube.com/watch?v=ADdG4MapO10)
+		* Reverse proxies and their variations are used everywhere in modern web applications for routing, caching, and access differentiation. This talk is dedicated to new research results about different reverse proxies and new possibilities brought by HTTP/2. It is a collection of tricks for exploiting various misconfigurations.
 * **Tools**
 	* [Burpsuite](http://portswigger.net/burp/)
 		* Burp Suite is an integrated platform for performing security testing of web applications. Its various tools work seamlessly together to support the entire testing process, from initial mapping and analysis of an application's attack surface, through to finding and exploiting security vulnerabilities. 
-		- See burp section at bottom of page.
+		- See [burp section](#burpstuff) at bottom of page.
 	* [ZAP - Zed Attack Proxy](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
 		* The Zed Attack Proxy (ZAP) is an easy to use integrated penetration testing tool for finding vulnerabilities in web applications.  It is designed to be used by people with a wide range of security experience and as such is ideal for developers and functional testers who are new to penetration testing.  ZAP provides automated scanners as well as a set of tools that allow you to find security vulnerabilities manually.
+		* [ZAP Deep Dive Series - StackHawk](https://www.youtube.com/playlist?list=PLz_NN8o2uh8AQ7VyUEN1GCCnpzl5_FaJA)
+		* https://www.youtube.com/playlist?list=PLz_NN8o2uh8AQ7VyUEN1GCCnpzl5_FaJA
+		* https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsOpenapiOpenapi
+		* https://github.com/zaproxy/zap-extensions
+		* https://github.com/we45/ZAP-Mini-Workshop
 	* [Paros - Web Proxy](http://sourceforge.net/projects/paros/)
 		* A Java based HTTP/HTTPS proxy for assessing web application vulnerability. It supports editing/viewing HTTP messages on-the-fly. Other featuers include spiders, client certificate, proxy-chaining, intelligent scanning for XSS and SQL injections etc.
 	* [Mallory: Transparent TCP and UDP Proxy](https://intrepidusgroup.com/insight/mallory/)
@@ -1839,6 +2206,8 @@
 		* Application for capturing, modifying and sending custom WebSocket data from client to server and vice versa.
 	* [ratproxy](https://github.com/wallin/ratproxy)
 		* Ratproxy is a semi-automated, largely passive web application security audit  tool. It is meant to complement active crawlers and manual proxies more  commonly used for this task, and is optimized specifically for an accurate and  sensitive detection, and automatic annotation, of potential problems and  security-relevant design patterns based on the observation of existing,  user-initiated traffic in complex web 2.0 environments.
+	* [proxify](https://github.com/projectdiscovery/proxify)
+		* Swiss Army Knife Proxy for rapid deployments. Supports multiple operations such as request/response dump, filtering and manipulation via DSL language, upstream HTTP/Socks5 proxy. Additionally, a replay utility allows to import the dumped traffic (request/responses with correct domain name) into BurpSuite or any other proxy by simply setting the upstream proxy to proxify.
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -1849,15 +2218,20 @@
 	* [WebRTC.org](https://webrtc.org/)
 	* [WebRTC - Wikipedia](https://en.wikipedia.org/wiki/WebRTC)
 	* [WebRTC 1.0: Real-Time Communication Between Browsers W3C](https://www.w3.org/TR/webrtc/)
+	* [Webrtc.org](https://webrtc.org/)
+	* [WebRTC - Wikipedia](https://en.wikipedia.org/wiki/WebRTC)
+	* [Get started with WebRTC - Sam Dutton(2012/2020)](https://web.dev/webrtc-basics/)
+	* [MDN Web Docs: WebRTC API](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
 * **Articles/Papers/Talks/Writeups**
 	* [WebRTC API - MozillaDevNetwork](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API)
 	* [WebRTC - High Performance Browser Networking](https://hpbn.co/webrtc/)
 	* [WebRTC for the Curious: Go beyond the APIs](https://webrtcforthecurious.com/)
 		* he WebRTC book that explains everything. WebRTC is a real-time communication framework that makes it easy to build real-time interactions for web and mobile devices.  You will learn about the WebRTC specification and how all the protocols work in depth, not just a tour of the APIs. The book is completely Open Source and available at https://webrtcforthecurious.com and https://github.com/webrtc-for-the-curious/webrtc-for-the-curious Learn the full details of ICE, SCTP, DTLS, SRTP, and how they work together to make up the WebRTC stack.  Hear how WebRTC implementers debug issues with the tools of the trade. Listen to interviews with the authors of foundational WebRTC tech! Hear the motivations and design details that pre-dated WebRTC by 20 years. Explore the cutting edge of what people are building with WebRTC. Learn about interesting use cases and how real-world applications get designed, tested and implemented in production. Written by developers who have written all of this from scratch. We learned it the hard way, now we want to share it with you! This book is vendor agnostic and multiple Open Source projects and companies are involved. We would love to have you involved!
-* **General**
+	* [Exploiting CVE-2022-0778, a bug in OpenSSL vis-à-vis WebRTC platforms - Sandro Gauci(2022)](https://www.rtcsec.com/article/exploiting-cve-2022-0778-in-openssl-vs-webrtc-platforms/)
 * **Tools**
 	* [STUN IP Address requests for WebRTC](https://github.com/diafygi/webrtc-ips)
 * **Miscellaneous**
+	* [Real time communication with WebRTC - Google(2019)](https://codelabs.developers.google.com/codelabs/webrtc-web#0)
 
 
 --------------------------------------------------------------------------------------------------------------------------------
@@ -1871,28 +2245,48 @@
 	* [JetLeak Vulnerability: Remote Leakage Of Shared Buffers In Jetty Web Server [CVE-2015-2080] - Stephen Komal](https://blog.gdssecurity.com/labs/2015/2/25/jetleak-vulnerability-remote-leakage-of-shared-buffers-in-je.html)
 - **NGINX**
 
+
 --------------------------------------------------------------------------------------------------------------------------------
 
 
 
 ### <a name="websockets"></a>WebSockets
-* **101**
+- **101**
 	* [The WebSocket Protocol Standard - IETF](https://tools.ietf.org/html/rfc6455)
 	* [WebSocket Protocol - RFC Draft 17](https://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-17)
 	* [Websockets - An Introduction - subudeepak](https://gist.github.com/subudeepak/9897212)
-* **Articles/Papers/Talks/Writeups**
+	* [RFC 6455: The WebSocket Protocol - IETF](https://www.rfc-editor.org/rfc/rfc6455)
+		* The WebSocket Protocol enables two-way communication between a client running untrusted code in a controlled environment to a remote host that has opted-in to communications from that code. The security model used for this is the origin-based security model commonly used by web browsers. The protocol consists of an opening handshake followed by basic message framing, layered over TCP. The goal of this technology is to provide a mechanism for browser-based applications that need two-way communication with servers that does not rely on opening multiple HTTP connections (e.g., using XMLHttpRequest or `<iframe>`s and long polling).
+	* [How Do Websockets Work? - Kevin Sookocheff(2019)](https://sookocheff.com/post/networking/how-do-websockets-work/)
+- **Articles/Papers/Talks/Writeups**
 	* [What’s wrong with WebSocket APIs? Unveiling vulnerabilities in WebSocket APIs. - Mikhail Egorov](https://speakerdeck.com/0ang3el/whats-wrong-with-websocket-apis-unveiling-vulnerabilities-in-websocket-apis)
 	* [Hacking Web Sockets: All Web Pentest Tools Welcomed - VDALabs(2019)](https://vdalabs.com/2019/03/05/hacking-web-sockets-all-web-pentest-tools-welcomed/)
 	* [To Fuzz a WebSocket - Andreas Happe(2019)](https://snikt.net/blog/2019/05/22/to-fuzz-a-websocket/)
-* **Talks/Presentations/Videos**
+	* [Once upon a time there was a WebSocket - Jason Gillam(2020)](https://www.secureideas.com/blog/2020/03/once-upon-a-time-there-was-a-websocket.html)
+	* [WebSockets: Attack Techniques and Protection Measures - Michael Schneider(2021)](https://www.scip.ch/en/?labs.20210408)
+	* [Everything You Need to Know About Web Socket Pentesting - Saket Taneja(2021)](https://www.appknox.com/blog/everything-you-need-to-know-about-web-socket-pentesting)
+	* [HN Discussion on 'Websocket Handbook' (2022)](https://news.ycombinator.com/item?id=29893242)
+- **Talks/Presentations/Videos**
 	* [Old Tools, New Tricks: Hacking WebSockets - Michael Fowl, Nick Defoe(Derbycon2019)](https://www.irongeek.com/i.php?page=videos/derbycon9/stable-35-old-tools-new-tricks-hacking-websockets-michael-fowl-nick-defoe)
-* **Tools**
+	* [Old Tools, New Tricks: Hacking WebSockets - Michael Fowl, Nick Defoe(2019)](https://www.irongeek.com/i.php?page=videos/derbycon9/stable-35-old-tools-new-tricks-hacking-websockets-michael-fowl-nick-defoe)
+		* Many application penetration testers and developers have struggled to figure out how to assess the security of WebSocket applications. When new technologies like WebSockets are developed, often the tooling available for penetration testing takes awhile to catch up. What if you could use traditional web penetration testing tools to assess WebSockets? By leveraging concepts found in native code fuzzing, you can! We have been using a novel approach that allows traditional web security testing tools to find vulnerabilities in WebSocket applications.
+- **Tools**
 	* [WSSiP: A WebSocket Manipulation Proxy](https://github.com/nccgroup/wssip)
 		* Short for "WebSocket/Socket.io Proxy", this tool, written in Node.js, provides a user interface to capture, intercept, send custom messages and view all WebSocket and Socket.IO communications between the client and server.
 	* [Websocket Fuzzer](https://github.com/andresriancho/websocket-fuzzer)
 		* A simple websocket fuzzer for application penetration testing.;  HTML5 WebSocket message fuzzer
 	* [websocket-harness](https://github.com/VDA-Labs/websocket-harness)
 		* This python script can be placed between traditional web penetration testing tools and WebSocket connections, which does translation from HTTP to WebSocket and back. Think of it like a fuzzing harness that is used for native code.
+	* [cswsh](https://github.com/DeepakPawar95/cswsh)
+		* A command-line tool for Cross-Site WebSocket Hijacking
+	* [SockJS-client](https://github.com/sockjs/sockjs-client)
+		* SockJS is a browser JavaScript library that provides a WebSocket-like object. SockJS gives you a coherent, cross-browser, Javascript API which creates a low latency, full duplex, cross-domain communication channel between the browser and the web server.
+	* [uWebSockets](https://github.com/uNetworking/uWebSockets)
+		* "Simple, secure & standards compliant web server for the most demanding of applications"
+	* [websockets](https://github.com/aaugustin/websockets)
+		* "Library for building WebSocket servers and clients in Python"
+	* [websocat](https://github.com/vi/websocat)
+		* Command-line client for WebSockets, like netcat (or curl) for ws:// with advanced socat-like functions
 * **Miscellaneous**
 
 
@@ -1984,6 +2378,7 @@
 			* [Slides](https://raw.githubusercontent.com/romanzaikin/From-Zero-to-Hero-in-Web-Security-Research-DefCon-29-Workshop/main/slides/defcon_workshop.pdf)
 		* [KathanP19/HowToHunt](https://github.com/KathanP19/HowToHunt)
 			* "Collection of methodology and test case for various web vulnerabilities."
+		* [A Konami Code for Vuln Chaining Combos - Curtis Brazzell(2021)](https://curtbraz.medium.com/a-konami-code-for-vuln-chaining-combos-1a29d0a27c2a)
 		* [riramar/Web-Attack-Cheat-Sheet](https://github.com/riramar/Web-Attack-Cheat-Sheet)
 			* -bunch of tools and associated commands for techniques using said tools.
 		* [Golden-Guide-for-Pentesting/Web Application](https://github.com/0xCGonzalo/Golden-Guide-for-Pentesting/tree/master/Web%20Application)
@@ -1997,6 +2392,10 @@
 			* Most web applications used for complex business operations and/or employing advanced GUI frameworks have stateful functionality. Certain workflows, for example, might require completing certain steps before a transaction is committed, or a request sent by a client-side UI element might need several preceding requests that all contribute to the session state. Most automated tools focus on a request and maybe a redirection, thus completely missing the point in these cases, where resending a request gets ignored by the target application. As a result, while these tools are getting better day by day, using them for testing such execution paths are usually out of the question. Since thorough assessment is cumbersome without such tools, there's progress, but we are far from plug-and-play products. This paper focuses on the capabilities of currently available solutions, demonstrating their pros and cons, along with opportunities for improvement.
 		* [Breaking and abusing specifications and policies - Frans Rosén(SecurityFest 2018)](https://www.youtube.com/watch?v=_VsFrYAjJ8k&feature=youtu.be)
 			* Last year at Secfest, Frans Rosén talked about DNS hijacking using cloud services. This time, he approaches technologies where verification methods actually exists and how to break them. Let’s Encrypt closed down one of their three blessed verification methods due to a bug Frans found in January. Cloud storage containers already patched from being publicly exposed are still often vulnerable to full modification, extraction and deletion by abusing weak policies and application logic. Frans goes through some weak design patterns, policy structures and explains how to bypass them which have netted him over $45,000 in bug bounties.
+		* [Attacking Modern Web Technologies - Frans Rosén(NDC Oslo 2018)](https://www.youtube.com/watch?v=vRqcUS4CPFs)
+			* In this talk, top ranked white-hat hacker Frans Rosén will focus on methodologies and results of attacking modern web technologies. He will explain how he accessed private Slack tokens by using postMessage and WebSocket-reconnect, and how vulnerable configurations in both AWS and Google Cloud allow attackers to take full control of your assets.
+		* [Live Bug Bounty Recon Session w/ @FransRosen 2019](https://www.youtube.com/watch?v=jTanLdLj5dY)
+		* [Free Tools For Webapp Hacking - BB King(WWHF Deadwood2020)](https://www.youtube.com/watch?v=jC_HHwS6tCU&list=PLXF21PFPPXTMmtx0XBXqjxSMZSipIMXwX&index=8)
 - **Tactics**<a name="ttt"></a>
 	- **Writeups of techniques**
 		* [Using HTTP Pipelining to hide requests - digi.ninja](https://digi.ninja/blog/pipelining.php)
@@ -2032,6 +2431,12 @@
 		* [Ultimate Reconnaissance RoadMap for Bug Bounty Hunters & Pentesters - Ahmad Halabi(2021)](https://ahmdhalabi.medium.com/ultimate-reconnaissance-roadmap-for-bug-bounty-hunters-pentesters-507c9a5374d)
 		* [How to achieve enterprise-grade attack-surface monitoring with open source software - hakluke(2021)](https://hakluke.com/open-source-asm-spiderfoot/)
 		* [Attack Surface Management. You’re (probably) doing it wrong. - Steve Micallef(2021)](https://medium.com/@micallst/attack-surface-management-youre-probably-doing-it-wrong-608719da1cab)
+		* [Attacking the Perimeter - Miguel Martinez(2020)](https://www.tevora.com/threat-blog/attacking-the-perimeter/)
+		* [epi052/recon-pipeline](https://github.com/epi052/recon-pipeline)
+		* [How to Build an Automated Recon Pipeline with Python and Luigi - Part I (Setup and Scope) - epi052](https://epi052.gitlab.io/notes-to-self/blog/2019-09-01-how-to-build-an-automated-recon-pipeline-with-python-and-luigi/)
+		* [Application Enumeration Tips using Aquatone and Burp Suite - Ryan Wendell(2019)](https://www.ryanwendel.com/2019/09/27/application-enumeration-tips-using-aquatone-and-burp-suite/)
+		* [The Anti-Recon Recon Club (using ReconFTW) - jhaddix](https://www.jhaddix.com/post/the-anti-recon-recon-club-using-reconftw)
+		* [It's the little things - Jon Bottarini(Disobey 2018)](https://www.youtube.com/watch?v=5cIT3JN7R8w&list=PLLvAhAn5sGfhnVt1IhgrqCvBGe6AxwsjQ&index=11)
 	- **Tools that didn't fit elsewhere**
 		* [webgrep](https://github.com/dhondta/webgrep)
 			* This self-contained tool relies on the well-known grep tool for grepping Web pages. It binds nearly every option of the original tool and also provides additional features like deobfuscating Javascript or appyling OCR on images before grepping downloaded resources.
@@ -2048,7 +2453,8 @@
 		- **Articles/Blogposts/Writeups**
 			* [Asset Enumeration: Expanding a Target's Attack Surface - Capt. Meelo](https://captmeelo.com/bugbounty/2019/09/02/asset-enumeration.html)
 			* [ What's in a Domain Name? - Collin Meadows(SecureWV/Hack3rcon2018)](https://www.irongeek.com/i.php?page=videos/securewv-hack3rcon2018/speaker-16-whats-in-a-domain-name-collin-meadows)
-				* The domain name is one of the most prominent assets an organization can have. While customers can discover an organization from many sources - social media, review aggregators, advertisements, etc - the webpage is often the first direct experience a person has with a business and brand. This vital role makes the domain a target for fraud, data leakage, and cyber attack. Implementing domain monitoring and performing risk assessments is important, but only half the battle. In this talk, we will consider amount of intelligence one can gather starting from only a domain name and investigate how this sets an attacker up with an ideal blueprint for malicious action. 
+				* The domain name is one of the most prominent assets an organization can have. While customers can discover an organization from many sources - social media, review aggregators, advertisements, etc - the webpage is often the first direct experience a person has with a business and brand. This vital role makes the domain a target for fraud, data leakage, and cyber attack. Implementing domain monitoring and performing risk assessments is important, but only half the battle. In this talk, we will consider amount of intelligence one can gather starting from only a domain name and investigate how this sets an attacker up with an ideal blueprint for malicious action.
+			* [Basic Recon Using A Domain Name - Cedric Owens(2020)](https://medium.com/red-teaming-with-a-blue-team-mentality/basic-recon-starting-with-a-domain-name-17b58027c263)
 		- **Tools**
 			* [AttackSurfaceMapper](https://github.com/superhedgy/AttackSurfaceMapper)
 				* Attack Surface Mapper is a reconnaissance tool that uses a mixture of open source intellgence and active techniques to expand the attack surface of your target. You feed in a mixture of one or more domains, subdomains and IP addresses and it uses numerous techniques to find more targets. It enumerates subdomains with bruteforcing and passive lookups, Other IPs of the same network block owner, IPs that have multiple domain names pointing to them and so on. Once the target list is fully expanded it performs passive reconnaissance on them, taking screenshots of websites, generating visual maps, looking up credentials in public breaches, passive port scanning with Shodan and scraping employees from LinkedIn.
@@ -2080,6 +2486,22 @@
 				* Crossfeed is a tool that continuously enumerates and monitors an organization's public-facing attack surface in order to discover assets and flag potential security flaws. By operating in either passive or active scanning modes, Crossfeed collects data from a variety of open source tools and data feeds to provide actionable information about organization assets. Crossfeed is offered as a self-service portal and allows customers to view reports and customize scans performed.
 			* [kunyu](https://github.com/knownsec/Kunyu)
 				* Kunyu aims to make corporate asset collection more efficient and enable more security-related practitioners to understand and use cyberspace surveying and mapping technology.
+		- **Nuclei**
+			- **101**
+				* [Nuclei](https://github.com/projectdiscovery/nuclei)
+					* Nuclei is used to send requests across targets based on a template, leading to zero false positives and providing fast scanning on a large number of hosts. Nuclei offers scanning for a variety of protocols, including TCP, DNS, HTTP, SSL, File, Whois, Websocket, Headless etc. With powerful and flexible templating, Nuclei can be used to model all kinds of security checks.
+			- **Articles**
+				* [The Ultimate Guide to Finding Bugs With Nuclei - ProjectDiscovery(2022)](https://blog.projectdiscovery.io/ultimate-nuclei-guide/)
+				* [Nuclei Templating Guide - ProjectDiscovery](https://nuclei.projectdiscovery.io/templating-guide/)
+				* [Nuclei Templates](https://github.com/projectdiscovery/nuclei-templates)
+					* Community curated list of templates for the nuclei engine to find security vulnerabilities.
+				* [Creating Custom Nuclei Templates and Workflows - JTCSEC(2021)](https://www.youtube.com/watch?v=bHXkQjtBOLo)
+					* A walkthrough for how to create a Nuclei template and turn it into a workflow. This is my first piece of content, so and feedback is greatly appreciated! If you have any suggestions for new things to cover, let me know!
+				* [How-to-write-your-First-Nuclei-Template.pdf - DhiyaneshGeek](https://github.com/DhiyaneshGeek/My-Presentation-Slides/blob/main/slides/How-to-write-your-First-Nuclei-Template.pdf)
+				* [Nuclei Templates Creation – My Experience - AndySvints(2021)](https://www.andysvints.com/nuclei-templates-creation-my-experience/)
+			- **Templates**
+				* [Virtual-Host](https://github.com/0xAwali/Virtual-Host)
+					* Modified Nuclei Templates Version to FUZZ Host Header
 	- **Browser Automation**
 		* [playwright](https://github.com/microsoft/playwright)
 			* Node.js library to automate Chromium, Firefox and WebKit with a single API 
@@ -2092,6 +2514,7 @@
 			* [QCSD: A QUIC Client-Side Website-Fingerprinting Defence Framework - Jean-Pierre Smith, Luca Dolfi, Prateek Mittal, Adrian Perrig(2022)](https://www.youtube.com/watch?v=7Qe8ArVWLUs)
 				* "We observe that the rapid and wide-spread deployment of QUIC and HTTP/3 creates an exciting opportunity to build website-fingerprinting defences directly into client applications, such as browsers, without requiring any changes to web servers, VPNs, or the deployment of new network services. We therefore design and implement the QCSD framework, which leverages QUIC and HTTP/3 to emulate existing website-fingerprinting defences by bidirectionally adding cover traffic and reshaping connections solely from the client. As case studies, we emulate both the FRONT and Tamaraw defences solely from the client and collected several datasets of live-defended traffic on which we evaluated modern machine-learning based attacks. Our results demonstrate the promise of this approach in shaping connections towards client-orchestrated defences, thereby removing a primary barrier to the deployment of website-fingerprinting defences."
 		- **Papers**
+			* [JavaScript Template Attacks: Automatically Inferring Host Information for Targeted Exploits - Michael Schwarz, Florian Lackner, Daniel Gruss(2019)](https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-4_Schwarz_paper.pdf)
 		- **Tools**
 			* [CSS-Fingerprint](https://github.com/OliverBrotchie/CSS-Fingerprint)
 				* An experimental method for CSS based fingerprinting and a pure CSS 'supercookie'.
@@ -2101,11 +2524,17 @@
 				* FingerprintJS is a browser fingerprinting library that queries browser attributes and computes a hashed visitor identifier from them. Unlike cookies and local storage, a fingerprint stays the same in incognito/private mode and even when browser data is purged. FingerprintJS is 100% open-source, but its accuracy is limited because it's only a client-side library without a backend.
 			* [TorZillaPrint](https://github.com/arkenfox/TZP/)
 				* TorZillaPrint (TZP) aims to provide a comprehensive, all-in-one, fingerprinting test suite, nicely broken into suitable sections with relevant information together. Long term, the goal is to collect Gecko only fingerprint data (no PII) for analysis to see how many classifications each metric or section provides.
+	- **Browser-based Port Scan**
+		* [Exposing Intranets with reliable Browser-based Port scanning - Gareth Hayes(2018)](https://portswigger.net/research/exposing-intranets-with-reliable-browser-based-port-scanning)
 	- **DNS**
 		* See Network_Attacks.md -> DNS
 	- **Endpoint Discovery**<a name="tted"></a>
 		- **Articles/Blogposts/Writeups**
-			* [Scanning JS Files for Endpoints and Secrets - securityjunky.com](https://securityjunky.com/scanning-js-files-for-endpoint-and-secrets/)
+			* [Improving Internet Wide Scanning with Dynamic Scanning - Alexandre Dulaunoy(2021)](https://github.com/adulau/active-scanning-techniques)
+			* [HTTP Route BustingEnumerating Routes Instead of Directories - Dejan Zelic](https://dejandayoff.com/assets/files/HTTP-Route-Busting.pdf)
+			* [Offensive Recon - Bug Hunter's Playbook - Harsh Bothra(2020)](https://www.youtube.com/watch?v=UrdvDCb4Gz8)
+				* "Harsh Bothra is a security researcher and ranked as Bugcrowd Top 150 Hackers and MVP for 2020 Q1. He delivered this talk on offensive Recon."
+			* [Bypassing the Redirect filters with 7 ways - elmahdi(2020)](https://elmahdi.tistory.com/m/4)
 		- **Tools**
 			* [JSParser](https://github.com/nahamsec/JSParser)
 				* A python 2.7 script using Tornado and JSBeautifier to parse relative URLs from JavaScript files. Useful for easily discovering AJAX requests when performing security research or bug bounty hunting.
@@ -2122,6 +2551,19 @@
 				* Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.
 			* [FFUF Me - Target Practice For FFUF]()https://github.com/adamtlangley/ffufme
 				* This is a simple website to get you used to using ffuf against a live target
+			* [httpx](https://github.com/projectdiscovery/httpx)
+				* "httpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library. It is designed to maintain result reliability with an increased number of threads."
+			* [Kiterunner](https://github.com/assetnote/kiterunner)
+				* Kiterunner is a tool that is capable of not only performing traditional content discovery at lightning fast speeds, but also bruteforcing routes/endpoints in modern applications.
+			* [httploot](https://github.com/redhuntlabs/httploot)
+				* [Blogpost](https://redhuntlabs.com/blog/millions-of-secrets-exposed-via-web-application-frontend.html)
+				* An automated tool which can simultaneously crawl, fill forms, trigger error/debug pages and "loot" secrets out of the client-facing code of sites.
+			* [reconFTW](https://github.com/six2dez/reconftw)
+				*  reconFTW is a tool designed to perform automated recon on a target domain by running the best set of tools to perform scanning and finding out vulnerabilities 
+			* [redscan](https://github.com/certmichelin/Redscan)
+				* Redscan is built to discover exposed assets of a company, detect misconfigurations and compliance deviations.  Redscan was conceived with the idea to automate the recon phase and the vulnerability assertion as referred to the Bug Bounty Methodology.
+			* [page-fetch](https://github.com/detectify/page-fetch)
+				* Fetch web pages using headless Chrome, storing all fetched resources including JavaScript files. Run arbitrary JavaScript on many web pages and see the returned values
 	- **Forced Browsing**<a name="ttfb"></a>
 		- **Articles/Blogposts/Writeups**
 			* [Turbo Intruder: Embracing the billion-request attack - James Kettle](https://portswigger.net/research/turbo-intruder-embracing-the-billion-request-attack)
@@ -2183,6 +2625,8 @@
 		- **Articles/Blogposts/Writeups**
 			* [Exposing Intranets with reliable Browser-based Port scanning - Gareth Heyes](https://portswigger.net/blog/exposing-intranets-with-reliable-browser-based-port-scanning)
  				* In this blog post I describe how I created a port scanner using JavaScript.
+			* [JS-Recon detailed. Analizying the internal network with a XSS - Jorge Lajara (2018)](https://jlajara.gitlab.io/web/2018/10/18/js-recon.html)
+			* [Scanning JS Files for Endpoints and Secrets - securityjunky.com](https://securityjunky.com/scanning-js-files-for-endpoint-and-secrets/)
 		- **Tools**
 			* [lan-js](https://github.com/jvennix-r7/lan-js)
 				* Probe LAN devices from a web browser.
@@ -2192,6 +2636,8 @@
 		- **Articles/Blogposts/Writeups**
 			* [A penetration tester’s guide to subdomain enumeration - Bharath](https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6)
 			* [Subdomain Enumeration: 2019 Workflow - Patrik Hudak](https://0xpatrik.com/subdomain-enumeration-2019/)
+			* [The Art of Subdomain Enumeration - Patrick Hudak(2017)]https://blog.sweepatic.com/art-of-subdomain-enumeration/)
+			* [A penetration tester’s guide to subdomain enumeration - Bharath(2017)](https://blog.appsecco.com/a-penetration-testers-guide-to-sub-domain-enumeration-7d842d5570f6?gi=03f0c33e0552)
 		- **Domain Discovery**
 			* [Discovering Domains via a Time-Correlation Attack on Certificate Transparency - Arseniy Sharoglazov(2022)](https://swarm.ptsecurity.com/discovering-domains-via-a-time-correlation-attack/)
 			* [DRROBOT](https://github.com/sandialabs/dr_robot)
@@ -2202,6 +2648,8 @@
 				* "World’s single largest Internet domains dataset"
 			* [ripgen](https://github.com/resyncgg/ripgen/)
 				* A rust-based version of the popular dnsgen python utility.
+			* [Finddomain](https://github.com/Findomain/Findomain)
+				* The fastest and complete solution for domain recognition. Supports screenshoting, port scan, HTTP check, data import from other tools, subdomain monitoring, alerts via Discord, Slack and Telegram, multiple API Keys for sources and much more. 
 		- **Subdomain Discovery Tools**
 			* [Sudomy](https://github.com/Screetsec/Sudomy)
 				* Sudomy is a subdomain enumeration tool, created using a bash script, to analyze domains and collect subdomains in fast and comprehensive way.
@@ -2215,6 +2663,18 @@
 				* take a list of old subdomain and new subdomain and the output is the deleted subdomain and the new subdomain
 			* [OneForAll](https://github.com/shmilylty/OneForAll/)
 				* [OneForAll, A Powerful Chinese Subdomain Enumeration Tool - Daehee Park](https://www.daehee.com/oneforall/)
+			* [subscraper](https://github.com/m8sec/subscraper)
+				* Perform subdomain enumeration through various techniques and retrieve detailed output to aid in further testing.
+			* [subfinder](https://github.com/projectdiscovery/subfinder)
+				*  Subfinder is a subdomain discovery tool that discovers valid subdomains for websites. Designed as a passive framework to be useful for bug bounties and safe for penetration testing. 
+			* [Dome](https://github.com/v4d1/Dome)
+				* Fast and reliable python script that makes active and/or passive scan to obtain subdomains and search for open ports.
+	- **Javascript**
+		- **Articles/Blogposts/Writeups**
+			* [m4ll0k/JavascriptRecon.md](https://gist.github.com/m4ll0k/31ce0505270e0a022410a50c8b6311ff)
+		- **Tools**
+			* [SecretFinder](https://github.com/m4ll0k/SecretFinder)
+				* A python script for find sensitive data (apikeys, accesstoken,jwt,..) and search anything on javascript files 
 	- **Technology Identification**<a name="tttid"></a>
 		- **Articles/Blogposts/Writeups**
 		- **Tools**
@@ -2242,6 +2702,9 @@
 		- **101**
 			* [Web scraping - Wikipedia](https://en.wikipedia.org/wiki/Web_scraping)
 		- **Articles/Papers/Talks/Writeups**
+			* [So you want to Scrape like the Big Boys? 🚀 - incolumitas.com(2021)](https://incolumitas.com/2021/11/03/so-you-want-to-scrape-like-the-big-boys/)
+			* [Harden Vanilla Puppeteer](https://github.com/prescience-data/harden-puppeteer)
+				* A conceptual patch which modifies some vanilla puppeteer files to decrease detection rates. 
 		- **General**
 			* [browser-fingerprinting](https://github.com/niespodd/browser-fingerprinting)
 				* "Analysis of Bot Protection systems with available countermeasures 🚿. How to defeat anti-bot system 👻 and get around browser fingerprinting scripts 🕵️‍♂️ when scraping the web?"
@@ -2283,6 +2746,8 @@
 			* [Web Server Screenshots with a Single Command - Carrie Roberts](https://www.blackhillsinfosec.com/web-server-screenshots-single-command/)
 			* [Application Enumeration Tips using Aquatone and Burp Suite - Ryan Wendel](https://www.ryanwendel.com/2019/09/27/application-enumeration-tips-using-aquatone-and-burp-suite/)
 		- **Tools**
+			* [Snapback](https://github.com/fkasler/snapback)
+				* Snapback is a HTTP(s) screenshot tool written to take advantage of asynchronous threading in Nodejs. It's like EyeWitness, gowitness, and rawr, etc. but generally faster, and compatible with MacOS, Windows, and Linux.
 			* [PowerWebShot](https://github.com/dafthack/PowerWebShot)
 				* A PowerShell tool for taking screenshots of multiple web servers quickly.
 			* [HTTrack - Website Copier](https://www.httrack.com/)
@@ -2345,7 +2810,9 @@
 		* reNgine is an automated reconnaissance framework meant for gathering information during penetration testing of web applications. reNgine has customizable scan engines, which can be used to scan the websites, endpoints, and gather information. 
 	* [Osmodeus](https://github.com/j3ssie/Osmedeus)
 		* Fully automated offensive security framework for reconnaissance and vulnerability scanning 
-
+	- **Pocsuite**
+		* [pocsuite3](https://github.com/knownsec/pocsuite3)
+		* [Let's talk about Nuclei YAML syntax templates and Pocsuite3 compatibility ideas - fenix(2022)](https://paper.seebug.org/2016/)
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -2365,6 +2832,8 @@
 	- **Articles/Blogposts/Writeups**
 		* [Export Injection - Inon Shkedy(2018)](https://inonst.medium.com/export-injection-2eebc4f17117)
 		* [Postscript Pat and His Black and White Hat - Steven Seeley(2019)](https://srcincite.io/assets/postscript-pat-and-his-black-and-white-hat.pdf)
+		* [ How To Spoof PDF Signatures - Jens Müller, Dominik Noss, Christian Mainka, Vladislav Mladenov, Jörg Schwenk (2019)](https://web-in-security.blogspot.com/2019/02/how-to-spoof-pdf-signatures.html)
+		* [PDFex: Major Security Flaws in PDF Encryption - Jens Müller, Dominik Noss, Christian Mainka, Vladislav Mladenov, Jörg Schwenk (2019)](https://web-in-security.blogspot.com/2019/09/pdfex-major-security-flaws-in-pdf.html)
 		* [Ghostscript SAFER Sandbox Breakout (CVE-2020-15900) - Tim Goddard(2020)](https://insomniasec.com/blog/ghostscript-cve-2020-15900)
 		* [Portable Data exFiltration: XSS for PDFs - Gareth Hayes(2020)](https://portswigger.net/research/portable-data-exfiltration)
 		* [Insecure Features in PDFs  - Jens Müller, Dominik Noss, Christian Mainka, Vladislav Mladenov, Jörg Schwenk (2021)](https://web-in-security.blogspot.com/2021/01/insecure-features-in-pdfs.html)
@@ -2396,6 +2865,7 @@
 		* [Web Cache Deception Attack - Omer Gil(2017)](https://omergil.blogspot.com/2017/02/web-cache-deception-attack.html)
 		* [Understanding Our Cache and the Web Cache Deception Attack - Joshua Liebow-Feeser(2017)](https://blog.cloudflare.com/understanding-our-cache-and-the-web-cache-deception-attack/)
 		* [On Web Cache Deception Attacks - Benjamin Brown(2017)](https://blogs.akamai.com/2017/03/on-web-cache-deception-attacks.html)
+		* [How I Test For Web Cache Vulnerabilities + Tips And Tricks - bxmbn(2022)](https://bxmbn.medium.com/how-i-test-for-web-cache-vulnerabilities-tips-and-tricks-9b138da08ff9)
 	- **Papers**
 		* [Cached and Confused: Web Cache Deception in the Wild - Seyed Ali Mirheidari, Sajjad Arshad, Kaan Onarlioglu, Bruno Crispo, Engin Kirda, William Robertson(2020)](https://arxiv.org/abs/1912.10190)
 			* Web cache deception (WCD) is an attack proposed in 2017, where an attacker tricks a caching proxy into erroneously storing private information transmitted over the Internet and subsequently gains unauthorized access to that cached data. Due to the widespread use of web caches and, in particular, the use of massive networks of caching proxies deployed by content distribution network (CDN) providers as a critical component of the Internet, WCD puts a substantial population of Internet users at risk. We present the first large-scale study that quantifies the prevalence of WCD in 340 high-profile sites among the Alexa Top 5K. Our analysis reveals WCD vulnerabilities that leak private user data as well as secret authentication and authorization tokens that can be leveraged by an attacker to mount damaging web application attacks. Furthermore, we explore WCD in a scientific framework as an instance of the path confusion class of attacks, and demonstrate that variations on the path confusion technique used make it possible to exploit sites that are otherwise not impacted by the original attack. Our findings show that many popular sites remain vulnerable two years after the public disclosure of WCD. Our empirical experiments with popular CDN providers underline the fact that web caches are not plug & play technologies. In order to mitigate WCD, site operators must adopt a holistic view of their web infrastructure and carefully configure cache settings appropriate for their applications. 
@@ -2415,6 +2885,8 @@
 			* A Burp extension to test applications for vulnerability to the Web Cache Deception attack.
 - <a name="cachepoison"></a> **Web Cache Poisoining Attack**
 	- **101**
+		* [HTTP Cache Poisoning via Host Header Injection - Carlos Bueno(2007)](https://carlos.bueno.org/2008/06/host-header-injection.html)
+		* [Web Cache Poisoning - 0xn3va](https://0xn3va.gitbook.io/cheat-sheets/web-application/web-cache-poisoning)
 		* [Web cache poisoning - PortSwigger](https://portswigger.net/web-security/web-cache-poisoning)
 		* [Practical Web Cache Poisoning: Redefining 'Unexploitable' - James Kettle(BHUSA2018)](https://www.youtube.com/watch?v=j2RrmNxJZ5c)
 			* [Slides](https://i.blackhat.com/us-18/Thu-August-9/us-18-Kettle-Practical-Web-Cache-Poisoning-Redefining-Unexploitable.pdf)
@@ -2640,6 +3112,9 @@
 		* [Better Exfiltration via HTML Injection - d0nut(2019)](https://d0nut.medium.com/better-exfiltration-via-html-injection-31c72a2dae8b)
 		* [CSS Injection Primitives - x-c3ll](https://x-c3ll.github.io//posts/CSS-Injection-Primitives/)
 		* [CSS data exfiltration in Firefox via a single injection point - Michal Bentkowski(2020)](https://research.securitum.com/css-data-exfiltration-in-firefox-via-single-injection-point/)
+		* [Unleashing the power of CSS injection: The access key to an internal API(2023)](https://sanderwind.medium.com/unleashing-the-power-of-css-injection-the-access-key-to-an-internal-api-789b166d0527)
+			* "In this write-up, we will be explaining a vulnerability that was discovered in an online accounting application. The vulnerability was a CSS injection flaw that could be exploited in the application’s PDF generator. We will explain to you how we discovered the vulnerability and how we were able to exploit it to get internal API access."
+		* [Cross-origin pixel stealing: Timing attacks using CSS filters - Robert Kotcher, Yutong Pei, Pranjal Jumde, Collin Jackson](https://www.researchgate.net/publication/262292364_Cross-origin_pixel_stealing_Timing_attacks_using_CSS_filters)
 	- **Presentations/Talks/Videos**
 		* [CSS Injection Attacks or how to leak content with `<style>` - Pepe Vila(2019)](https://vwzq.net/slides/2019-s3_css_injection_attacks.pdf)
 	- **Tools**
@@ -2740,6 +3215,10 @@
 		* [REcollapse](https://github.com/0xacb/recollapse)
 			* [Blogpost](https://0xacb.com/2022/11/21/recollapse/)
 			* REcollapse is a helper tool for black-box regex fuzzing to bypass validations and discover normalizations in web applications
+	- **Talks/Presentations**
+		* [ReDoSHunter: A Combined Static and Dynamic Approach for Regular Expression DoS Detection - Yeting Li and Zixuan Chen, Jialun Cao, Zhiwu Xu, Qiancheng Peng, Haiming Chen, Liyuan Chen, Shing-Chi Cheung(Usenix2021)](https://www.usenix.org/system/files/sec21-li-yeting.pdf)
+			* [Tool](https://github.com/yetingli/ReDoSHunter)
+			* To address these two problems, we propose ReDoSHunter, a ReDoS-vulnerable regex detection framework that can ef- fectively pinpoint the multiple vulnerabilities in a vulnerable regex, and generate examples of attack-triggering strings. Re- DoSHunter is driven by five vulnerability patterns derived from massive vulnerable regexes. Besides pinpointing vulner- abilities, ReDoSHunter can assess the degree (i.e., exponential or polynomial) of the vulnerabilities detected. Our experi- ment results show that ReDoSHunter achieves 100% preci- sion and 100% recall in the detection of ReDoS-vulnerable regexes in three large-scale datasets with 37,651 regexes. It significantly outperforms seven state-of-the-art techniques. ReDoSHunter uncovered 28 new ReDoS-vulnerabilities in 26 well-maintained popular projects, resulting in 26 assigned CVEs and 2 fixes.
 	- **Tools**
 
 
@@ -2788,6 +3267,7 @@
 	* [How-To: Find IDOR (Insecure Direct Object Reference) Vulnerabilities for large bounty rewards - BugCrowd](https://www.bugcrowd.com/blog/how-to-find-idor-insecure-direct-object-reference-vulnerabilities-for-large-bounty-rewards/)
 	* [A Less Known Attack Vector, Second Order IDOR Attacks - Ozgur Alp(2020)](https://blog.usejournal.com/a-less-known-attack-vector-second-order-idor-attacks-14468009781a?gi=49aab32e1f3d)
 	* [Automated IDOR Discovery through Stateful Swagger Fuzzing - Aaron Loo(2020)](https://engineeringblog.yelp.com/2020/01/automated-idor-discovery-through-stateful-swagger-fuzzing.html)
+	* [Finding more IDORs – Tips and Tricks - Max Cobridge(2021)](https://www.aon.com/cyber-solutions/aon_cyber_labs/finding-more-idors-tips-and-tricks/)
 - **Talks/Presentations/Videos**
 - **Tools**
 
@@ -2826,6 +3306,7 @@
 	* [Bypassing file upload filter by source code review in Bolt CMS - Sivanesh Ashok](https://stazot.com/boltcms-file-upload-bypass/)
 	* [File Upload Testing tips - HolyBugx](https://github.com/HolyBugx/HolyTips/blob/main/Checklist/File%20Upload.pdf)
 	* [File upload tricks and checklist - Gus Ralph(2021)](https://www.onsecurity.io/blog/file-upload-checklist/)
+	* [A New Vector For “Dirty” Arbitrary File Write to RCE - Maxence Schmitt, Lorenzo Stella(2023)](https://blog.doyensec.com/2023/02/28/new-vector-for-dirty-arbitrary-file-write-2-rce.html)
 * **Papers**
 	* [FUSE: Finding File Upload Bugs via Penetration Testing - Taekjin Lee, Seongil Wi, Suyoung Lee, Sooel Son](https://www.ndss-symposium.org/wp-content/uploads/2020/02/23126.pdf)
 * **Presentations/Talks/Videos**
@@ -2897,7 +3378,9 @@
 		* HTTP requests are traditionally viewed as isolated, standalone entities. In this session, I'll introduce techniques for remote, unauthenticated attackers to smash through this isolation and splice their requests into others, through which I was able to play puppeteer with the web infrastructure of numerous commercial and military systems, rain exploits on their visitors, and harvest over $50k in bug bounties.  Using these targets as case studies, I’ll show you how to delicately amend victim's requests to route them into malicious territory, invoke harmful responses, and lure credentials into your open arms. I’ll also demonstrate using backend reassembly on your own requests to exploit every modicum of trust placed on the frontend, gain maximum privilege access to internal APIs, poison web caches, and compromise my favourite login page.  Although documented over a decade ago, a fearsome reputation for difficulty and collateral damage has left this attack optimistically ignored for years while the web's susceptibility grew. By applying fresh ideas and new techniques, I’ll unveil a vast expanse of vulnerable systems ranging from huge content delivery networks to bespoke backends, and ensure you leave equipped to devise your own desync techniques and tailor attacks to your target of choice.
 	* [Hiding Wookiees in HTTP: HTTP smuggling - regilero(Defcon24)](https://www.youtube.com/watch?v=dVU9i5PsMPY)
 		* HTTP is everywhere, everybody wants to write an HTTP server. So I wrote mine :-) But mine not fast, and come with an HTTP client which sends very bad HTTP queries. My tool is a stress tester for HTTP servers and proxies, and I wrote it because I found flaws in all HTTP agents that I have checked in the last year i.e. nodejs, golang, Apache httpd, FreeBSD http, Nginx, Varnish and even Haproxy. This presentation will try to explain how flaws in HTTP parsers can be exploited for bad things; we'll play with HTTP to inject unexpected content in the user browser, or perform actions in his name. If you know nothing about HTTP it should be understandable, but you'll have to trust me blindly at the end. If you think you know HTTP, you have no reason to avoid this talk. Then, the short part, I will show you this new Open Source stress tool that I wrote and hope that you will remember it when you'll write your own HTTP parser for you new f** language.
-	* [Practical Attacks using HTTP Request Smuggling - @defparam(#NahamCon2020)](https://www.youtube.com/watch?v=3tpnuzFLU8g)
+	* [Practical Attacks Using HTTP Request Smuggling - @defparam(NahamCon2020)](https://www.youtube.com/watch?v=3tpnuzFLU8g&list=PLKAaMVNxvLmAD0ZVUJ2IGFFC0APFZ5gzy&index=14)
+	* [HTTP Request Smuggling in 2020 – New Variants, New Defenses and New Challenges - Amit Klein(BHUSA2020)](https://www.youtube.com/watch?v=Zm-myHU8-RQ&list=PLH15HpR5qRsXE_4kOSy_SXwFkFQre4AV_&index=57)
+		* HTTP Request Smuggling (AKA HTTP Desyncing) is an attack technique invented in 2005 that exploits different interpretations of a stream non-standard HTTP requests among various HTTP devices between the client (attacker) and the server (including the server itself). It can be used to smuggle requests across WAFs and security solutions, poison HTTP caches, inject responses to users and hijack user requests.
 	* [HTTP Request Smuggling in 2020 – New Variants, New Defenses and New Challenges - Amit Klein(BHUSA2020)](https://www.blackhat.com/us-20/briefings/schedule/#http-request-smuggling-in---new-variants-new-defenses-and-new-challenges-20019)
 		* [Slides](https://i.blackhat.com/USA-20/Wednesday/us-20-Klein-HTTP-Request-Smuggling-In-2020-New-Variants-New-Defenses-And-New-Challenges.pdf)
 		* [Paper](https://i.blackhat.com/USA-20/Wednesday/us-20-Klein-HTTP-Request-Smuggling-In-2020-New-Variants-New-Defenses-And-New-Challenges-wp.pdf)
@@ -2950,6 +3433,8 @@
 	- **Articles/Blogposts/Writeups**
 		* [Re: Command injection with no spaces - pauldotcom@seclists](https://seclists.org/pauldotcom/2012/q2/216)
 		* [; echo “Shell Injection”  - matklad(2021)](https://matklad.github.io/2021/07/30/shell-injection.html)
+	- **Talks/Presentations**
+		* [Bash injection without letters or numbers - 33c3ctf hohoho (misc 350) - LiveOverflow(2017)](https://www.youtube.com/watch?v=6D1LnMj0Yt0)
 	- **Tools**
 	- **Resources**
 		* [FuzzDB OS Cmd Injection List](https://github.com/fuzzdb-project/fuzzdb/tree/master/attack/os-cmd-execution)
@@ -3020,6 +3505,19 @@
 ----------------------------------------------------------------------------------------------------------------
 
 
+### <a name="passbrute"></a> Password Brute Forcing/Spraying
+* **101**
+* **Articles/Papers/Writeups**
+- **Tools**
+	* [BruteLoops](https://github.com/arch4ngel/BruteLoops)
+		* A dead simple library providing the foundational logic for efficient password brute force attacks against authentication interfaces.
+	* [Big Friggin Gun (BFG)](https://github.com/arch4ngel/bl-bfg)
+		* BFG is a simple modular framework to perform brute-force attacks. It uses the BruteLoops library for the brute force and database management logic.
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
 ### <a name="pca"></a> Path Confusion Attacks
 * **101**
 * **Articles/Papers/Writeups**
@@ -3081,14 +3579,24 @@
 ----------------------------------------------------------------------------------------------------------------
 
 
+### <a name="log4j"></a>Log4j
+- **General**
+	* [The Art of Exploiting Logical Flaws in Web Applications - SaifAllah BenMassaoud(HITB2020)](https://www.youtube.com/watch?v=FBXqUDEhumA&list=PLmv8T5-GONwQq16OhfaU77KCq7UQGiZsr&index=8)
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
 ### <a name="sqli"></a>(No)SQL Injection
-* **101**
+- **101**
 	* [NT Web Technology Vulnerabilities - rain.forest.puppy](http://phrack.org/issues/54/8.html)
 	* [NT Web Technology Vulnerabilities - rain.forest.puppy](http://phrack.org/issues/54/8.html)
 		* First public writeup of SQLi 
 	* ["How I hacked PacketStorm" - rain forest puppy](http://www.ouah.org/rfp.txt)
 	* [SQL injection - PortSwigger](https://portswigger.net/web-security/sql-injection)
 	* [Basic of SQL for SQL Injection - SecurityIdiots](http://www.securityidiots.com/Web-Pentest/SQL-Injection/Part-1-Basic-of-SQL-for-SQLi.html)
+	* [How to exploit the SQL Injection Attack - sqlzoo](https://sqlzoo.net/hack/)
+	* [UNLEASH THE POWER OF SQL INJECTION! | Beginners Guide to Hacking with SQLi - SecAura](https://www.youtube.com/watch?v=_Y4MpvB6o7s)
 * **Reference**
 	* [SQL Injection Knowledge Base](http://websec.ca/kb/sql_injection#MySQL_Testing_Injection)
 	* [SQL Injection Cheat Sheet](http://ferruh.mavituna.com/sql-injection-cheatsheet-oku/)
@@ -3115,6 +3623,11 @@
 	* [kleiton0x00/Advanced SQL Injection Cheatsheet](https://github.com/kleiton0x00/Advanced-SQL-Injection-Cheatsheet)
 		* A cheat sheet that contains advanced queries for SQL Injection of all types.
 	* [SQL Injection Is Still Alive: From a Mall's Interactive Terminal to AWS WAF Bypass - Marc Olivier](https://gosecure.github.io/presentations/2021-11_sql-injection-is-still-alive/Marc_Olivier_Bergeron-SQL_Injection_Is_Still_Alive-From_a_Malls_Interactive_Terminal_to_AWS_WAF_Bypass.pdf)
+	* [Tortellini in Brodobuf: How serializing data using Google’s Protobuf is not protecting your web app. -  Oblio, MrSaighnal(2021)](https://aptw.tf/2021/10/27/exploiting-protobuf-webapps.html)
+		* "Many developers believe that serializing traffic makes a web application more secure, as well as faster. That would be easy, right? The truth is that security implications remain if the backend code does not adopt adequate defensive measures, regardless of how data is exchanged between the client and server. In this article we will show you how the serialization can’t stop an attacker if the web application is vulnerable at the root. During our activity the application was vulnerable to SQL injection, we will show how to exploit it in case the communications are serialized with Protocol Buffer and how to write a SQLMap tamper for it."
+	* [Finding an unseen SQL Injection by bypassing escape functions in mysqljs/mysql - Flatt Security(2022)](https://flattsecurity.medium.com/finding-an-unseen-sql-injection-by-bypassing-escape-functions-in-mysqljs-mysql-90b27f6542b4)
+	* [How I Found Multiple SQL Injections in 5 Minutes in Bug Bounty - Omar Hashem(2022)](https://infosecwriteups.com/how-i-found-multiple-sql-injections-in-5-minutes-in-bug-bounty-40155964c498?gi=25ae72179e1a)
+	* [SQL Injection - PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection)
 * **Papers**
 	* [SQL Injection In Insert, Update, And Delete - Osanda Malith(2014)](https://packetstormsecurity.com/files/126527/SQL-Injection-In-Insert-Update-And-Delete.html)
 * **Talks/Presentations/Videos**
@@ -3122,6 +3635,7 @@
 * **Writeups**
 	* [Use google bots to perform SQL injections on websites](http://blog.sucuri.net/2013/11/google-bots-doing-sql-injection-attacks.html)
 	* [Performing sqlmap POST request injection](https://hackertarget.com/sqlmap-post-request-injection/)
+	* https://github.com/gosirys/Posts
 * **Training**
 	* [SQLi Lab lessons](https://github.com/Audi-1/sqli-labs)
 		* SQLI-LABS is a platform to learn SQLI
@@ -3133,6 +3647,9 @@
 	* **Articles/Blogposts/Writeups**
 		* [NoSQL Injection in Modern Web Applications - petecorey.com](http://www.petecorey.com/blog/2016/03/21/nosql-injection-in-modern-web-applications/)
 		* [N1QL Injection: Kind of SQL Injection in a NoSQL Database - Krzysztof Pranczk(2020)](https://labs.f-secure.com/blog/n1ql-injection-kind-of-sql-injection-in-a-nosql-database/)
+		* [nosqli](https://github.com/Charlie-belmer/nosqli)
+			* NoSql Injection CLI tool, for finding vulnerable websites using MongoDB.
+		* [NoSql Injection Cheatsheet - Nullsweep](https://nullsweep.com/nosql-injection-cheatsheet/)
 	* **MeteorJS**
 		* [Meteor Blind NoSQL Injection - Kert Ojasoo(2019)](https://medium.com/rangeforce/meteor-blind-nosql-injection-29211775cd01)
 	* **MongoDB**
@@ -3140,6 +3657,9 @@
 		* [MongoDB: Typical Security Weaknesses in a NoSQL DB](http://blog.spiderlabs.com/2013/03/mongodb-security-weaknesses-in-a-typical-nosql-database.html)
 		* [MongoDB Pentesting for Absolute Beginners](https://github.com/nixawk/pentest-wiki/blob/master/2.Vulnerability-Assessment/Database-Assessment/mongodb/MongoDB%20Pentesting%20for%20Absolute%20Beginners.pdf)
 		* [A NoSQL Injection Primer (with Mongo) - Charlie Belmer(2020)](https://nullsweep.com/a-nosql-injection-primer-with-mongo/)
+	- **Neo4j**
+		* [Cypher Injection Cheat Sheet - pentester.land](https://pentester.land/blog/cypher-injection-cheatsheet/)
+		* [Neo4jection: Secrets, Data, and Cloud Exploits - Nitay Bachrach(2023)](https://www.varonis.com/blog/neo4jection-secrets-data-and-cloud-exploits)
 	* **Talks/Presentations/Videos**
 		* [ Making Mongo Cry-Attacking NoSQL for Pen Testers - Russell Butturrini(Derbycon2014)](https://www.irongeek.com/i.php?page=videos/derbycon4/t408-making-mongo-cry-attacking-nosql-for-pen-testers-russell-butturini)
 			* NoSQL databases continue to grow in popularity due to their scalability, dynamic data structures, ease of development and cloud readiness. As these types of databases become more prevalent, penetration testers need to understand how these databases work, how applications interact with them, and where the inherent weaknesses of NoSQL databases are. This presentation is targeted towards penetration testers and putting the theoretical attacks researchers have discussed into practice during a penetration testing engagement. It will discuss weaknesses with a particular focus on MongoDB and how to quickly and easily exploit them as well as where the high value targets in the system are post exploitation. NoSQLMap, a Python tool written for automatically stealing data from NoSQL database servers and web applications, will also be demoed. 
@@ -3203,7 +3723,8 @@
 	* [GraFScaN](https://github.com/grafscan/GraFScaN)
 	* [Albatar](https://github.com/lanjelot/albatar)
 		* Albatar is a SQLi exploitation framework in Python
-
+	* [Sample Databases](https://github.com/tjcim/sample_dbs)
+		* Databases with sample data for testing
 
 ----------------------------------------------------------------------------------------------------------------
 
@@ -3235,19 +3756,33 @@
 	* [JavaScript Prototype Pollution - Part 1 - HTTPVoid(2020)](https://www.youtube.com/watch?v=J3MIOIqvV8w)
 	* [Prototype pollution: The dangerous and underrated vulnerability impacting JavaScript applications - Ben Dickson(2021)](https://portswigger.net/daily-swig/prototype-pollution-the-dangerous-and-underrated-vulnerability-impacting-javascript-applications)
 	* [New ways to alert: prototype pollution - Sergey Bobrov, Nikita Stupin(2021)](http://archive.volgactf.ru/volgactf_2021/slides/VolgaCTF_2021_Stupin_Bobrov.pdf)
+	* [The Complete Guide to Prototype Pollution Vulnerabilities - Daniel Elkabes(2021)](https://www.mend.io/resources/blog/prototype-pollution-vulnerabilities/)
 	* [What is prototype poisoning? Prototype bugs explained! - Anton Linné, Christoffer Jerkeby(2022)](https://www.jerkeby.se/newsletter/posts/prototype-poisoning/)
-- **Articles/Blogposts/Writeups**
-	* [Prototype Pollution Affecting jquery package, versions <3.4.0 - snyk.io](https://snyk.io/vuln/SNYK-JS-JQUERY-174006)
-	* [After three years of silence, a new jQuery prototype pollution vulnerability emerges once again - Liran Tal](https://snyk.io/blog/after-three-years-of-silence-a-new-jquery-prototype-pollution-vulnerability-emerges-once-again/)
-	* [Prototype pollution attack (lodash) - holyvier](https://hackerone.com/reports/310443)
-	* [Inheritance and the prototype chain - MozillaDevNetwork](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
-	* [Prototype pollution attack through jQuery $.extend - Asger Feldthaus(HackerOne)](https://hackerone.com/reports/454365)
-	* [Analysis and Exploitation of Prototype Pollution attacks on NodeJs - Nullcon HackIM CTF web 500 writeup - Anirudh Anand](https://blog.0daylabs.com/2019/02/15/prototype-pollution-javascript/)
-	* [Prototype Pollution - Michal Bentkowski](https://slides.com/securitymb/prototype-pollution-in-kibana/#/)
-	* [Exploiting prototype pollution – RCE in Kibana (CVE-2019-7609) - Michal Bentkowski](https://research.securitum.com/prototype-pollution-rce-kibana-cve-2019-7609/)
-	* [Prototype pollution – and bypassing client-side HTML sanitizers - Michał Bentkowski(2020)](https://research.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers/)
-	* ["A tale of making internet pollution free"- Exploiting Client-Side Prototype Pollution in the wild - s1r1us](https://blog.s1r1us.ninja/research/PP)
-	* [Hunting for Prototype Pollution and it’s vulnerable code on JS libraries - kleiton0x7e(2021)](https://infosecwriteups.com/hunting-for-prototype-pollution-and-its-vulnerable-code-on-js-libraries-5bab2d6dc746)
+	* [Prototype Pollution in Python - abdulrah33m(2023)](https://blog.abdulrah33m.com/prototype-pollution-in-python/)
+- **Client-Side**
+	* [Client-Side Prototype Pollution](https://github.com/BlackFan/client-side-prototype-pollution)
+		* "In this repository, I am trying to collect examples of libraries that are vulnerable to Prototype Pollution due to document.location parsing and useful script gadgets that can be used to demonstrate the impact."
+- **JavaScript**
+	- **Articles/Blogposts/Writeups**
+		* [Prototype Pollution Affecting jquery package, versions <3.4.0 - snyk.io](https://snyk.io/vuln/SNYK-JS-JQUERY-174006)
+		* [After three years of silence, a new jQuery prototype pollution vulnerability emerges once again - Liran Tal](https://snyk.io/blog/after-three-years-of-silence-a-new-jquery-prototype-pollution-vulnerability-emerges-once-again/)
+		* [Prototype pollution attack (lodash) - holyvier](https://hackerone.com/reports/310443)
+		* [Inheritance and the prototype chain - MozillaDevNetwork](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+		* [Prototype pollution attack through jQuery $.extend - Asger Feldthaus(HackerOne)](https://hackerone.com/reports/454365)
+		* [Analysis and Exploitation of Prototype Pollution attacks on NodeJs - Nullcon HackIM CTF web 500 writeup - Anirudh Anand](https://blog.0daylabs.com/2019/02/15/prototype-pollution-javascript/)
+		* [Prototype Pollution - Michal Bentkowski](https://slides.com/securitymb/prototype-pollution-in-kibana/#/)
+		* [Exploiting prototype pollution – RCE in Kibana (CVE-2019-7609) - Michal Bentkowski](https://research.securitum.com/prototype-pollution-rce-kibana-cve-2019-7609/)
+		* [Prototype pollution – and bypassing client-side HTML sanitizers - Michał Bentkowski(2020)](https://research.securitum.com/prototype-pollution-and-bypassing-client-side-html-sanitizers/)
+		* ["A tale of making internet pollution free"- Exploiting Client-Side Prototype Pollution in the wild - s1r1us](https://blog.s1r1us.ninja/research/PP)
+		* [AST Injection, Prototype Pollution to RCE - POSIX(2020)](https://blog.p6.is/AST-Injection/)
+			* This article describes how to trigger RCE in two well-known template engines, using a new technique called AST Injection.
+		* [Hunting for Prototype Pollution and it’s vulnerable code on JS libraries - kleiton0x7e(2021)](https://infosecwriteups.com/hunting-for-prototype-pollution-and-its-vulnerable-code-on-js-libraries-5bab2d6dc746)- **Python**
+		* [Prototype Pollution in Flask - lanmaster53(2023)](https://www.lanmaster53.com/2023/02/01/prototype-polution-in-flask/)
+		* [Server side prototype pollution, how to detect and exploit - yeswehack](https://blog.yeswehack.com/talent-development/server-side-prototype-pollution-how-to-detect-and-exploit/)
+		* [Hit the Ground Running with Prototype Pollution - Isaac Burton(2023)](https://www.blackhillsinfosec.com/hit-the-ground-running-with-prototype-pollution/)
+		* [Detecting Server-Side Prototype Pollution - Daniel Thatcher(2023)](https://www.intruder.io/research/server-side-prototype-pollution)
+		* [Server-side prototype pollution: Black-box detection without the DoS - Gareth Hayes(2023)](https://portswigger.net/research/server-side-prototype-pollution)
+		* [EJS - Server Side Prototype Pollution gadgets to RCE - ](https://mizu.re/post/ejs-server-side-prototype-pollution-gadgets-to-rce)
 - **Presentations, Talks, Videos**
 	* [Prototype pollution attack - HoLyVieR](https://github.com/HoLyVieR/prototype-pollution-nsec18)
 		* "Content released at NorthSec 2018 for my talk on prototype pollution"
@@ -3256,11 +3791,21 @@
 	* [Hacking Modern Web Apps with RCE and Prototype Pollution - Abraham Aranguren(2020)](https://www.youtube.com/watch?v=0kVbvKjnGY4&list=PL7ZDZo2Xu333whl0HqUuWnooebiJNz23A&index=4)
 	* [Very creative way to turn Prototype Pollution into RCE in kibana - Bug Bounty Reports Explained - gregxsunday(2020)](https://www.youtube.com/watch?v=KVDOIFeRaPQ)
 		* This video is an explanation of prototype pollution vulnerability in kibana that, in a super cool and very creative way, was used to achieve remote code execution in kibana software.
+	* [Prototype Pollution Attack in NodeJS Application - Olivier Arteau(NorthSec18)](https://github.com/HoLyVieR/prototype-pollution-nsec18/blob/master/paper/JavaScript_prototype_pollution_attack_in_NodeJS.pdf)	
+	* [Prototype Pollution Attack Explained - CyberSecurityTV](https://www.youtube.com/watch?v=__65_GFERKs)
+		* Parameter pollution is a very old attack however I feel like it is underrated. 20+ JS libraries were vulnerable to this attack including JQuery. This is an important attack to learn for any web application pentester. Few automated tools can detect this however, it does require manual inspection.
+	* [Using Chromedp to Hunt for Prototype Pollution - @TomNomNomDotCom(NahamCon2021)](https://www.youtube.com/watch?v=Gv1nK6Wj8qM)
+		* Prototype pollution is fairly well known, but being a client-side issue it can be difficult to look for at scale. Let's write a bit of Go using the chromedp package to solve that problem!
+- **Papers**
+	* [Silent Spring: Prototype Pollution Leads to Remote Code Execution in Node.js - Mikhail Shcherbakov, Musard Balliu, Cristian-Alexandru Staicu(2022)](https://arxiv.org/pdf/2207.11171.pdf)
+		* In this paper, we set out to study the problem in a holistic way, from the detection of prototype pollution to detection of gadgets, with the ambitious goal of finding end-to-end exploits beyond DoS, in full-fledged Node.js applications. We build the first multi-staged framework that uses multi- label static taint analysis to identify prototype pollution in Node.js libraries and applications, as well as a hybrid ap- proach to detect universal gadgets, notably, by analyzing the Node.js source code. We implement our framework on top of GitHub’s static analysis framework CodeQL to find 11 universal gadgets in core Node.js APIs, leading to code exe- cution. Furthermore, we use our methodology in a study of 15 popular Node.js applications to identify prototype pollutions and gadgets. We manually exploit eight RCE vulnerabilities in three high-profile applications such as NPM CLI, Parse Server, and Rocket.Chat. Our results provide alarming evi- dence that prototype pollution in combination with powerful universal gadgets lead to RCE in Node.js.
 - **Tools**
 	* [client-side-prototype-pollution](https://github.com/BlackFan/client-side-prototype-pollution)
 		* "In this repository, I am trying to collect examples of libraries that are vulnerable to Prototype Pollution due to `document.location` parsing and useful script gadgets that can be used to demonstrate the impact."
 	* [PPScan](https://github.com/msrkp/PPScan)
 		* Client Side Prototype Pollution Scanner
+		* [protoscan](https://github.com/KathanP19/protoscan)
+			* Prototype Pollution Scanner made in Golang, it was actually made by @tomnomnom in NahamCon2021
 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -3269,6 +3814,7 @@
 ### <a name="rfd"></a>Reflected File Download
 * **101**
 * **Articles/Blogposts/Writeups**
+	* [Technique of the Week: Reflected File Download (Intro) - uid0(2021)](https://web.archive.org/web/0/https://0x80dotblog.wordpress.com/2021/07/31/technique-of-the-week-reflected-file-download-intro/)
 * **Tools**
 * **Talks/Presentations/Videos**
 	* [Reflected File Download - A New Web Attack Vector - BHEU 2014](https://www.youtube.com/watch?v=dl1BJUNk8V4)
@@ -3299,23 +3845,20 @@
 
 
 ### <a name="serialization">(De-)Serialization Attacks</a>
-* **General**
+- **101**
+	* [The Anatomy of Deserialization Attacks - Bursa Demir(2020)](https://www.cobalt.io/blog/the-anatomy-of-deserialization-attacks)
+- **General**
 	* **Articles/Blogposts/Writeups**
 	* **Talks/Presentations/Videos**
 		* [Pentesting J2EE - Marc Schönefeld(BlackHat 2006)](https://www.blackhat.com/presentations/bh-federal-06/BH-Fed-06-Schoenefeld-up.pdf)
-* **.NET**
-	* **Articles/Blogposts/Writeups**
-		* [.NET Serialization: Detecting and defending vulnerable endpoints - Alvaro Munoz](https://speakerdeck.com/pwntester/dot-net-serialization-detecting-and-defending-vulnerable-endpoints)
-		* [ASP.NET resource files (.RESX) and deserialisation issues - Soroush Dalili](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/august/aspnet-resource-files-resx-and-deserialisation-issues/)
-		* [RCEVIL.NET: A Super Serial Story - Jared McLaren(BSides Iowa2019)](https://illuminopi.com/assets/files/BSidesIowa_RCEvil.net_20190420.pdf)
-		* [HITCON 2018: Why so Serials? Write-up - cyku.tw](https://cyku.tw/ctf-hitcon-2018-why-so-serials/)
-		* [HITCON CTF 2018 - Why so Serials? Writeup - Orange](https://xz.aliyun.com/t/3019)
-	* **Talks/Presentations/Videos**
-	* **Papers**
-	* **Tools**
-		* [YSoSerial.Net](https://github.com/pwntester/ysoserial.net)
-			* ysoserial.net is a collection of utilities and property-oriented programming "gadget chains" discovered in common .NET libraries that can, under the right conditions, exploit .NET applications performing unsafe deserialization of objects. The main driver program takes a user-specified command and wraps it in the user-specified gadget chain, then serializes these objects to stdout. When an application with the required gadgets on the classpath unsafely deserializes this data, the chain will automatically be invoked and cause the command to be executed on the application host.
-* **Java**
+		* [History of Deserialization: RCE for the modern web applications - Philippe Arteau(2019)](https://gosecure.github.io/presentations/2019-04-29_atlseccon/History_of_Deserialization_v2.2.pdf)
+		* [Friday the 13th JSON Attacks - Alvaro Muñoz, Oleksandr Mirosh(BHUSA17)](https://www.blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf)
+			* "In this paper, we will focus on JSON libraries and we will analyze which ones could allow arbitrary code execution upon deserialization of untrusted data. We will also have a look at .NET world by reviewing existing research on this field and completing it with updated list of vulnerable formatters and proof of concept gadgets to attack them. To finish, we will extend the research on JSON serialization libraries and .NET formatters into any serialization format available. We will provide guidance to find out whether it could be attacked and how to attack it. Where possible, we will also provide mitigation advice to help avoid vulnerable configurations that could turn your serialization library vulnerable."
+		* [Json Deserialization Exploitation: RCE by Design - ?(2018)](https://owasp.org/www-pdf-archive/Marshaller_Deserialization_Attacks.pdf.pdf)
+- **Java**
+	- **101**
+		* [Introduction to Java Serialization - baeldung(2021)](https://www.baeldung.com/java-serialization)
+		* [Everything You Need to Know About Java Serialization Explained - Naresh Joshi(2019)](https://dzone.com/articles/what-is-serialization-everything-about-java-serial)
 	* **Articles/Blogposts/Writeups**
 		* [Java Deserialization Security FAQ - christian-schneider.net](https://christian-schneider.net/JavaDeserializationSecurityFAQ.html)
 		* [Detecting deserialization bugs with DNS exfiltration - Philippe Arteau(2017)](http://gosecure.net/2017/03/22/detecting-deserialization-bugs-with-dns-exfiltration/)
@@ -3323,10 +3866,18 @@
 		* [What Do WebLogic, WebSphere, JBoss, Jenkins, OpenNMS, and Your Application Have in Common? This Vulnerability. - breenmachine(2015)](https://foxglovesecurity.com/2015/11/06/what-do-weblogic-websphere-jboss-jenkins-opennms-and-your-application-have-in-common-this-vulnerability/)
 		* [Fastjson: exceptional deserialization vulnerabilities - Peter Stockli(2020)](https://www.alphabot.com/security/blog/2020/java/Fastjson-exceptional-deserialization-vulnerabilities.html)
 		* [Liferay Portal JSON Web Service RCE Vulnerabilities - Markus Wulftange(2020)](https://codewhitesec.blogspot.com/2020/03/liferay-portal-json-vulns.html)
-	* **General**
+		* [Deserialized Double Dirty - John Skipper(2018)](https://www.coalfire.com/the-coalfire-blog/deserialized-double-dirty)
+		* [Detecting deserialization bugs with DNS exfiltration - Philippe Arteau(2017)](https://www.gosecure.net/blog/2017/03/22/detecting-deserialization-bugs-with-dns-exfiltration/)
+		* [Testing and exploiting Java Deserialization in 2021 - AFINE(2021)](https://blog.afine.com/testing-and-exploiting-java-deserialization-in-2021-e762f3e43ca2?gi=21a57033a29d)
+		* [Jackson gadgets - Anatomy of a vulnerability - Andrea Brancaleoni(2019)](https://blog.doyensec.com/2019/07/22/jackson-gadgets.html)
+		* [Unexpected Deserialization pt.1 - JMS - SilentSignal(2021)](https://blog.silentsignal.eu/2020/08/17/unexpected-deserialization-pt-1-jms/)
+		* [Demystifying Insecure Deserialisation on JSF Application - Dhiyaneshwaran(2021)](https://dhiyaneshgeek.github.io/web/security/2021/05/08/demystifying-insecure-deserialisation-on-JSF-application/)
+		* [Finding gadgets like it's 2015: part 1 - Hugo Vincent(2021)](https://www.synacktiv.com/en/publications/finding-gadgets-like-its-2015-part-1.html)
+		* [Finding gadgets like it's 2022 - Hugo Vincent(2022)](https://www.synacktiv.com/en/publications/finding-gadgets-like-its-2022.html)
+	- **General**
 		* [Java-Deserialization-Cheat-Sheet](https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet)
 			* A cheat sheet for pentesters about Java Native Binary Deserialization vulnerabilities
-	* **Presentations/Talks/Videos**
+	- **Presentations/Talks/Videos**
 		* [Pwning Your Java Messaging With De- serialization Vulnerabilities](https://www.blackhat.com/docs/us-16/materials/us-16-Kaiser-Pwning-Your-Java-Messaging-With-Deserialization-Vulnerabilities-wp.pdf)
 		* [Marshalling Pickles - Chris Frohoff, Gabe Lawrence(AppSecCali 2015)](https://frohoff.github.io/appseccali-marshalling-pickles/)
 			* [Slides](https://github.com/frohoff/appseccali-marshalling-pickles)
@@ -3338,6 +3889,7 @@
 			* Object deserialization is an established but poorly understood attack vector in applications that is disturbingly prevalent across many languages, platforms, formats, and libraries. In January 2015 at AppSec California, Chris Frohoff and Gabe Lawrence gave a talk on this topic, covering deserialization vulnerabilities across platforms, the many forms they take, and places they can be found. It covered, among other things, somewhat novel techniques using classes in commonly used libraries for attacking Java serialization that were subsequently released in the form of the ysoserial tool. Few people noticed until late 2015, when other researchers used these techniques/tools to exploit well known products such as Bamboo, WebLogic, WebSphere, ApacheMQ, and Jenkins, and then services such as PayPal. Since then, the topic has gotten some long-overdue attention and great work is being done by many to improve our understanding and developer awareness on the subject. This talk will review the details of Java deserialization exploit techniques and mitigations, as well as report on some of the recent (and future) activity in this area.
 		* [Automated Discovery of Deserialization Gadget Chains - Ian Haken(Defcon26)](https://www.youtube.com/watch?v=wPbW6zQ52w8)
 		* [In-Memory Data Grid Applications: Finding Common Java Deserialization Vulnerabilities with CodeQL - Man Yue Mo(2019)](https://securitylab.github.com/research/in-memory-data-grid-vulnerabilities)
+		* [Pwning Your Java Messaging With Deserialization Vulnerabilities - Matthias Kaiser(BHUSA2016)](https://www.blackhat.com/docs/us-16/materials/us-16-Kaiser-Pwning-Your-Java-Messaging-With-Deserialization-Vulnerabilities.pdf
 		* [Oracle Java Deserialization Vulnerabilities - Stephen Kost, Phil Reimann(2016)](https://www.youtube.com/watch?v=oZPZLiY2PeA)
 			* Java deserialization is a class of security vulnerabilities that can result in server-side remote code execution (RCE). As many Oracle products are based on Java, deserialization bugs are found in many Oracle environments especially those using Oracle WebLogic, Oracle Fusion Middleware, and Oracle E-Business Suite. As an example, in November 2015 Oracle released an out-of-cycle security fix (CVE-2015-4852) in order to fix a deserialization bug in Oracle WebLogic. This education webinar provides an understanding of Java deserialization vulnerabilities, the potential impact for Oracle environments, and strategies to protect an Oracle environment from this class of security vulnerabilities.
 		* [Defending against Java Deserialization Vulnerabilities - Luca Carettoni(2016)](https://www.ikkisoft.com/stuff/Defending_against_Java_Deserialization_Vulnerabilities.pdf)
@@ -3370,7 +3922,11 @@
 			* [Blogpost](https://know.bishopfox.com/research/gadgetprobe)
 		* [marshalsec](https://github.com/mbechler/marshalsec)
 			* This paper presents an analysis, including exploitation details, of various Java open-source marshalling libraries that allow(ed) for unmarshalling of arbitrary, attacker supplied, types and shows that no matter how this process is performed and what implicit constraints are in place it is prone to similar exploitation techniques.
-	* **Exploits**
+		* [QLinspector](https://github.com/synacktiv/QLinspector)
+			* Finding Java gadget chains with CodeQL. 
+		* [SerializationDumper](https://github.com/NickstaDB/SerializationDumper)
+			* A tool to dump and rebuild Java serialization streams and Java RMI packet contents in a more human readable form. The tool does not deserialize the stream (i.e. objects in the stream are not instantiated), so it does not require access to the classes that were used in the stream*. This tool was developed to support research into Java deserialization vulnerabilities after spending many hours manually decoding raw serialization streams to debug code!
+	- **Exploits**
 		* [SerialKiller: Bypass Gadget Collection](https://github.com/pwntester/SerialKillerBypassGadgetCollection)
 			* Collection of Bypass Gadgets that can be used in JVM Deserialization Gadget chains to bypass "Look-Ahead ObjectInputStreams" desfensive deserialization.
 		* [Serianalyzer](https://github.com/mbechler/serianalyzer)
@@ -3379,32 +3935,48 @@
 			* A collection of Java Deserialization Exploits
 		* [Java Deserialization Exploits](https://github.com/Coalfire-Research/java-deserialization-exploits)
 			* A collection of curated Java Deserialization Exploits
-* **.NET**
+- **.NET**
+	* **Articles/Blogposts/Writeups**
+		* [.NET Serialization: Detecting and defending vulnerable endpoints - Alvaro Munoz](https://speakerdeck.com/pwntester/dot-net-serialization-detecting-and-defending-vulnerable-endpoints)
+		* [ASP.NET resource files (.RESX) and deserialisation issues - Soroush Dalili](https://www.nccgroup.trust/uk/about-us/newsroom-and-events/blogs/2018/august/aspnet-resource-files-resx-and-deserialisation-issues/)
+		* [RCEVIL.NET: A Super Serial Story - Jared McLaren(BSides Iowa2019)](https://illuminopi.com/assets/files/BSidesIowa_RCEvil.net_20190420.pdf)
+		* [HITCON 2018: Why so Serials? Write-up - cyku.tw](https://cyku.tw/ctf-hitcon-2018-why-so-serials/)
+		* [HITCON CTF 2018 - Why so Serials? Writeup - Orange](https://xz.aliyun.com/t/3019)
+	- **Talks/Presentations**
 		* [.NET Serialization: Detecting and defending vulnerable endpoints - Alvaro Munez(LocoMocoSec2018)](https://www.youtube.com/watch?v=qDoBlLwREYk&list=PLwvifWoWyqwqkmJ3ieTG6uXUSuid95L33&index=9)
 			* 2016 was the year of Java deserialization apocalypse. Although Java Deserialization attacks were known for years, the publication of the Apache Commons Collection Remote Code Execution gadget (RCE from now on) finally brought this forgotten vulnerability to the spotlight and motivated the community to start finding and fixing these issues. .NET is next in line; formatters such as BinaryFormatter and NetDataContractSerializer are known to share similar mechanics which make them potentially vulnerable to similar RCE attacks. However, as we saw with Java before, the lack of RCE gadgets led some software vendors to not take this issue seriously. In this talk, we will analyze .NET serializers including third party JSON parsers for potential RCE vectors. We will provide real-world examples of vulnerable code and more importantly, we will review how these vulnerabilities were detected and fixed in each case.
 		* [Friday the 13th: Attacking JSON - Alvaro Muñoz & Oleksandr Mirosh(AppSecUSA 2017)](https://www.youtube.com/watch?v=NqHsaVhlxAQ)
 			* 2016 was the year of Java deserialization apocalypse. Although Java Deserialization attacks were known for years, the publication of the Apache Commons Collection Remote Code Execution (RCE from now on) gadget finally brought this forgotten vulnerability to the spotlight and motivated the community to start finding and fixing these issues. One of the most suggested solutions for avoiding Java deserialization issues was to move away from Java Deserialization altogether and use safer formats such as JSON. In this talk, we will analyze the most popular JSON parsers in both .NET and Java for potential RCE vectors. We will demonstrate that RCE is also possible in these libraries and present details about the ones that are vulnerable to RCE by default. We will also discuss common configurations that make other libraries vulnerable. In addition to focusing on JSON format, we will generalize the attack techniques to other serialization formats. In particular, we will pay close attention to several serialization formats in .NET. These formats have also been known to be vulnerable since 2012 but the lack of known RCE gadgets led some software vendors to not take this issue seriously. We hope this talk will change this. With the intention of bringing the due attention to this vulnerability class in .NET, we will review the known vulnerable formats, present other formats which we found to be vulnerable as well and conclude presenting several gadgets from system libraries that may be used to achieve RCE in a stable way: no memory corruption -- just simple process invocation. Finally, we will provide recommendations on how to determine if your code is vulnerable, provide remediation advice, and discuss alternative approaches.
-* **PHP**
+		* [.NET Roulette: Exploiting Insecure Deserialization in Telerik UI - Caleb Gross(DerpCon2020)](https://www.youtube.com/watch?v=--6PiuvBGAU&list=PLCXnHhr5mRLzcvpFSj389dO7ro2spPLTe&index=7)
+			* So you're pentesting a .NET application, and you notice the server is deserializing user input—great! You know this is bad in theory, but have no idea how to actually get a shell in time for the engagement. This talk will bring you up to speed on how .NET deserialization works and how to get shells on real applications. In this presentation, we'll dig into the internals of CVE-2019-18935, a deserialization vulnerability that allows RCE on the popular web UI suite Telerik UI for ASP.NET AJAX. After demonstrating how to exploit this issue step-by-step, you'll learn a hands-on approach to debugging a locally running ASP.NET application, quickly assessing the site's attack surface, and examining possible avenues for finding and exploiting insecure uses of deserialization. This talk is intended for penetration testers and security researchers who'd like to begin testing deserialization vulnerabilities in .NET software.
+	- **Papers**
+	- **Tools**
+		* [YSoSerial.Net](https://github.com/pwntester/ysoserial.net)
+			* ysoserial.net is a collection of utilities and property-oriented programming "gadget chains" discovered in common .NET libraries that can, under the right conditions, exploit .NET applications performing unsafe deserialization of objects. The main driver program takes a user-specified command and wraps it in the user-specified gadget chain, then serializes these objects to stdout. When an application with the required gadgets on the classpath unsafely deserializes this data, the chain will automatically be invoked and cause the command to be executed on the application host.
+- **PHP**
 	* See [the PHP section for PHP Specific attacks](#php)
-	* **Articles/Blogposts/Writeups**
+	- **Articles/Blogposts/Writeups**
 		* [Diving into unserialize() - Vickie Li](https://medium.com/swlh/diving-into-unserialize-3586c1ec97e)
 		* [Diving into unserialize(): POP Chains](https://medium.com/@vickieli/diving-into-unserialize-pop-chains-35bc1141b69a)
 		* [Diving into unserialize(): Magic Methods - Vickie Li](https://medium.com/swlh/diving-into-unserialize-magic-methods-386d41c1b16a)
-	* **Tools**
+	- **Tools**
 		* [Insecure-Deserialization](https://github.com/raadfhaddad/Insecure-Deserialization/tree/master/Challenge)
-* **Python**
-	* **Articles/Blogposts/Writeups**
+- **Python**
+	- **Articles/Blogposts/Writeups**
 		* [Exploiting Python Deserialization Vulnerabilities](https://crowdshield.com/blog.php?name=exploiting-python-deserialization-vulnerabilities)
 		* [Exploiting misuse of Python's "pickle"](https://blog.nelhage.com/2011/03/exploiting-pickle/)
 		* [Python web frameworks and pickles - Nicolas Oberli](https://www.balda.ch/posts/2013/Jun/23/python-web-frameworks-pickle/)
-	* **Talks**
+		* [Remote Code Execution - Insecure Deserialization - @SecureCookie](https://secure-cookie.io/attacks/insecuredeserialization/)
+	- **Talks**
 			* [Marshalling Pickles - Chris Frohoff & Gabriel Lawrence(OWASPAppSec California2015)](https://www.youtube.com/watch?v=KSA7vUkXGSg)
 				* Object serialization technologies allow programs to easily convert in-memory objects to and from various binary and textual data formats for storage or transfer – but with great power comes great responsibility, because deserializing objects from untrusted data can ruin your day. We will look at historical and modern vulnerabilities across different languages and serialization technologies, including Python, Ruby, and Java, and show how to exploit these issues to achieve code execution. We will also cover some strategies to protect applications from these types of attacks.
-* **Ruby**
-	* See [the PHP section for PHP Specific attacks](#ruby)
-	* **Articles/Blogposts/Writeups**
+- **Ruby**
+	- **Articles/Blogposts/Writeups**
 		* [Ruby 2.x Universal RCE Deserialization Gadget Chain - Luke Jahnke(2018)](https://www.elttam.com/blog/ruby-deserialization/)
-	* **Talks**
+		* [Universal Deserialisation Gadget for Ruby 2.x-3.x - vakzz(2021)](https://devcraft.io/2021/01/07/universal-deserialisation-gadget-for-ruby-2-x-3-x.html)
+		* [Rails 3.2.10 Remote Code Execution -  Hailey Somerville(2022)](https://github.com/haileys/old-website/blob/master/posts/rails-3.2.10-remote-code-execution.md)
+		* [Ruby Deserialization - Gadget on Rails - httpvoid](https://github.com/httpvoid/writeups/blob/main/Ruby-deserialization-gadget-on-rails.md)
+	- **Talks**
 		* [Marshalling Pickles - Chris Frohoff & Gabriel Lawrence(OWASPAppSec California2015)](https://www.youtube.com/watch?v=KSA7vUkXGSg)
 			* Object serialization technologies allow programs to easily convert in-memory objects to and from various binary and textual data formats for storage or transfer – but with great power comes great responsibility, because deserializing objects from untrusted data can ruin your day. We will look at historical and modern vulnerabilities across different languages and serialization technologies, including Python, Ruby, and Java, and show how to exploit these issues to achieve code execution. We will also cover some strategies to protect applications from these types of attacks.
 
@@ -3413,15 +3985,15 @@
 
 
 ### <a name="ssrf"></a>Server Side Request Forgery (SSRF)
-* **101**
+- **101**
 	* [CWE-918: Server-Side Request Forgery (SSRF)](https://cwe.mitre.org/data/definitions/918.html)
 	* [What is Server Side Request Forgery (SSRF)?](https://www.acunetix.com/blog/articles/server-side-request-forgery-vulnerability/)
 	* [What is the Server Side Request Forgery Vulnerability & How to Prevent It? - netsparker](https://www.netsparker.com/blog/web-security/server-side-request-forgery-vulnerability-ssrf/)
 	* [Vulnerable by Design: Understanding Server-Side Request Forgery - BishopFox](https://www.bishopfox.com/blog/2015/04/vulnerable-by-design-understanding-server-side-request-forgery/)
-* **General**
+- **General**
 	* [AllThingsSSRF](https://github.com/jdonsec/AllThingsSSRF)
 		* This is a collection of writeups, cheatsheets, videos, related to SSRF in one single location
-* **Articles/Blogposts/Writeups**
+- **Articles/Blogposts/Writeups**
 	* [SSRF vs Business-Critical Applications Part 1: XXE Tunneling In SAP Net Weaver - erpscan](https://erpscan.com/wp-content/uploads/publications/SSRF-vs-Businness-critical-applications-final-edit.pdf)
 	* [A New Era of SSRF  - Exploiting URL Parser in  Trending Programming Languages! - Orange Tsai - BH USA 17](https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf)
 	* [curl Based SSRF Exploits Against Redis](https://maxchadwick.xyz/blog/ssrf-exploits-against-redis)
@@ -3430,11 +4002,25 @@
 	* [Airbnb – Chaining Third-Party Open Redirect into Server-Side Request Forgery (SSRF) via LivePerson Chat - Brett Buerhaus](https://buer.haus/2017/03/09/airbnb-chaining-third-party-open-redirect-into-server-side-request-forgery-ssrf-via-liveperson-chat/)
 	* [CVE-2020-13379 Unauthenticated Full-Read SSRF in Grafana - rhynorater(2020)](https://rhynorater.github.io/CVE-2020-13379-Write-Up)
 	* [Blind SSRF exploitation - wallarm(2020)](https://lab.wallarm.com/blind-ssrf-exploitation/)
-* **Papers**
+	* [SVG SSRF Cheatsheet](https://github.com/allanlw/svg-cheatsheet)
+	* [Finding SSRF via HTML Injection inside a PDF file on AWS EC2 - Riyaz Walikar(2020)](https://blog.appsecco.com/finding-ssrf-via-html-injection-inside-a-pdf-file-on-aws-ec2-214cc5ec5d90?gi=de959c2b96f0)
+	* [Triggering a DNS lookup using Java Deserialization - ParanoidSoftware(2021)](https://blog.paranoidsoftware.com/triggering-a-dns-lookup-using-java-deserialization/)
+	* [Bring Your Own SSRF – The Gateway Actuator - Wyatt(2021)](https://wya.pl/2021/12/20/bring-your-own-ssrf-the-gateway-actuator/)
+	* [Attacking Java RMI via SSRF - Tobias Neitzel](https://blog.tneitzel.eu/posts/01-attacking-java-rmi-via-ssrf/)
+	* [A Glossary of Blind SSRF Chains - Shubham Shah(2021)](https://blog.assetnote.io/2021/01/13/blind-ssrf-chains/)
+	* [SSRF vulnerabilities caused by SNI proxy misconfigurations - Aleksei Tiurin(2022)](https://www.invicti.com/blog/web-security/ssrf-vulnerabilities-caused-by-sni-proxy-misconfigurations/)
+	* [Exploiting URL Parsing Confusion - Noam Moshe(2022)](https://claroty.com/team82/research/exploiting-url-parsing-confusion)
+	* [SSRF vulnerabilities and where to find them - Luke Stephens(2022)](https://labs.detectify.com/2022/09/23/ssrf-vulns-and-where-to-find-them/)
+	* [What functionalities are most often vulnerable to SSRFs? Case study of 124 bug bounty reports - BBE](https://www.bugbountyexplained.com/what-functionalities-are-most-often-vulnerable-to-ssrfs-case-study-of-124-bug-bounty-reports)
+	* [Server Side Request Forgery (SSRF) and AWS EC2 instances after Instance Meta Data Service version 2(IMDSv2) - Riyaz Walikar(2022)](https://blog.appsecco.com/server-side-request-forgery-ssrf-and-aws-ec2-instances-after-instance-meta-data-service-version-38fc1ba1a28a)
+	* [Attacking Java RMI via SSRF - Tobias Neitzel(2021)](https://blog.tneitzel.eu/posts/01-attacking-java-rmi-via-ssrf/)
+	* [URL Filter Subversion - Ricardo Henrique(2021)](https://sidechannel.blog/en/url-filter-subversion/index.html)
+	* [Exploiting URL Parsing Confusion - Noam Moshe(2022)](https://claroty.com/2022/01/10/blog-research-exploiting-url-parsing-confusion/)
+- **Papers**
 	* [Cracking the Lens: Targeting HTTP's Hidden Attack Surface](https://portswigger.net/knowledgebase/papers/CrackingTheLens-whitepaper.pdf)
 	* [LAN-Based Blind SSRF Attack Primitive for Windows Systems (switcheroo) - initblog](https://initblog.com/2019/switcheroo/)
 	https://medium.com/a-bugz-life/exploiting-an-ssrf-trials-and-tribulations-14c5d8dbd69a
-* **Presentations, Talks, Videos**
+- **Presentations, Talks, Videos**
 	* [Server-Side Browsing Considered Harmful - Nicolas Gregoire(AppSec EU15)](https://www.youtube.com/watch?v=8t5-A4ASTIU)
 		* [Slides](http://www.agarri.fr/docs/AppSecEU15-Server_side_browsing_considered_harmful.pdf)
 	* [A New Era of SSRF - Exploiting URL Parser in Trending Programming Languages - Orange Tsai(BHUSA2017)](https://www.youtube.com/watch?v=R9pJ2YCXoJQ)
@@ -3443,13 +4029,42 @@
 		* With how many apps are running in the cloud, hacking these instances becomes easier with a simple vulnerability due to an unsanitized user input. In this talk, we’ll discuss a number of different methods that helped us exfil data from different applications using Server-Side Request Forgery (SSRF). Using these methods, we were able to hack some of the major transportation, hospitality, and social media companies and make $50,000 in rewards in 3 months.
 	* [Server Side Request Forgery (SSRF) All-In-One - Busra Demir(2020)](https://www.youtube.com/watch?v=kkX2TZt6y38)
 		* In this video, Busra Demir will explore how to exploit Server Side Request Forgery (SSRF) by using different attack scenarios. She will dig into how to exploit an SSRF vulnerability: ; - On a Hack the Box machine called Player (SSRF - FFMPEG Exploit); - On a Hack the Box machine called Kotarak (SSRF Filter Bypass/port scan); - By combining SQL Injection on a VulnHub machine called6Days; - Combined with HTML Injection on a VulnHub machine Gemini Inc 1
-* **Testing**
+	* [A New Era of SSRF - Exploiting URL Parser in Trending Programming Languages! - Orange Tsai(BHUSA2017)](https://www.youtube.com/watch?v=R9pJ2YCXoJQ)
+		* [Slides](https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf)
+	* [Piercing The Veil: Server Side Request Forgery Attacks On Internal Networks - Alyssa Herrera(Hack.lu2019)](https://www.youtube.com/watch?v=7J-5mTc2e8A)
+	* [Demystifying the Server Side - Rajanish Pathak, Rahul Maini & Harsh Jaiswal(EkoParty2020)](https://www.youtube.com/watch?v=gluSEBZpplQ)
+		* Some server-side mysteries, the unveiling of the lesser-known techniques, and how inconsistency in the URL parsing and treating of certain elements by the server-side components that usually go undetected and can open up big gaps are waiting to be demystified!
+	* [When TLS Hacks You - Joshua Maddux(Defcon Safemode2021)](https://www.youtube.com/watch?v=qGpAJxfADjo)
+		* [BHUSA2020 Slides](https://i.blackhat.com/USA-20/Wednesday/us-20-Maddux-When-TLS-Hacks-You.pdf)
+		* Lots of people try to attack the security of TLS. But what if we use TLS to attack other things? It's a huge standard, and it turns out that features intended to make TLS fast have also made it useful as an attack vector.  Among other things, these features provide a lot of flexibility for Server-Side Request Forgery (SSRF). While past work using HTTPS URLs in SSRF has relied upon platform-specific bugs such as SNI injection, we can go further. In this talk, I present a novel, cross-platform way of leveraging TLS to target internal services.  Uniquely, these attacks are more effective the more comprehensively a platform supports modern TLS, so won't go away with library upgrades. It is also unlikely that the TLS spec will change overnight at the whim of a random security researcher. Instead, we need to walk through scenarios and dispel common assumptions so the audience can know what to look out for. Of course, the best way to do so is with demos!
+- **Writeups**
+	* [CRLF injection & SSRF in git:// protocal lead to arbitrary code execution - chromium1337(2018)](https://hackerone.com/reports/441090)
+	* [GACTF 2020 SimpleFlask Challenge (SSTI) - Arash Parsa(2020)](https://www.arashparsa.com/gactf/)
+	* [GACTF 2020 EZ FLASK (SSRF to SSTI) - Arash Parsa(2020)](https://www.arashparsa.com/gactf/)
+	* [$10000 Facebook SSRF (Bug Bounty) - Amine Aboud(2020)](https://amineaboud.medium.com/10000-facebook-ssrf-bug-bounty-402bd21e58e5)
+	* [Top 25 Server-Side Request Forgery (SSRF) Bug Bounty Reports - Lohitaksh Nandan(2023)](https://hackerinthehouse.in/top-25-server-side-request-forgery-ssrf-bug-bounty-reports/)
+	* [31k$ SSRF in Google Cloud Monitoring led to metadata exposure - David Nechuta(2020)](https://nechudav.blogspot.com/2020/11/31k-ssrf-in-google-cloud-monitoring.html)
+	* [Turning bad SSRF to good SSRF: Websphere Portal (CVE-2021-27748) - Shubham Sha(2021)](https://blog.assetnote.io/2021/12/26/chained-ssrf-websphere/)
+	* [Piercing the Veil: Server Side Request Forgery to NIPRNet access](https://web.archive.org/web/20180410080115/https://medium.com/bugbountywriteup/piercing-the-veil-server-side-request-forgery-to-niprnet-access-171018bca2c3)
+- **Testing**
 	* [SSRF bible. Cheatsheet](https://docs.google.com/document/d/1v1TkWZtrhzRLy0bYXBcdLUedXGb9njTNIJXa3u9akHM/edit#heading=h.t4tsk5ixehdd)	
 	* [SSRF (Server Side Request Forgery) testing resources](https://github.com/cujanovic/SSRF-Testing/)	
 	* [How To: Server-Side Request Forgery (SSRF)](https://www.hackerone.com/blog-How-To-Server-Side-Request-Forgery-SSRF)
 	* [Port scanning with Server Side Request Forgery (SSRF) - acunetix](https://www.acunetix.com/blog/articles/ssrf-vulnerability-used-to-scan-the-web-servers-network/)
 	* [SVG SSRF Cheatsheet](https://github.com/allanlw/svg-cheatsheet)
 * **Tools**
+	* [SSRFmap](https://github.com/swisskyrepo/SSRFmap)
+		* Automatic SSRF fuzzer and exploitation tool
+	* [See-SURF](https://github.com/In3tinct/See-SURF)
+		* A Python based scanner to find potential SSRF parameters in a web application. See-SURF helps you detect potential SSRF parameters and validates the finding it by making a DNS/HTTP request back to your server.
+	* [oidc-ssrf](https://github.com/doyensec/oidc-ssrf)
+		* Evil OIDC server: the OpenID Configuration URL returns a 307 to cause SSRF.
+	* [LORSRF](https://github.com/knassar702/lorsrf)
+		* Fast CLI tool to find the parameters that can be used to find SSRF or Out-of-band resource load
+	* [TLS Poison](https://github.com/jmdx/TLS-poison)
+		* A tool that allows for generic SSRF via TLS, as well as CSRF via image tags in most browsers. The goals are similar to SNI injection, but this new method uses inherent behaviors of TLS, instead of depending upon bugs in a particular implementation.
+	* [SSRFIRE](https://github.com/ksharinarayanan/SSRFire)
+		* An automated SSRF finder. Just give the domain name and your server and chill! ;) Also has options to find XSS and open redirects
 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -3473,8 +4088,17 @@
 		* [Server-Side Template Injection](http://blog.portswigger.net/2015/08/server-side-template-injection.html)
 			* [Video](https://www.youtube.com/watch?v=3cT0uE7Y87s)
 			* This paper defines a methodology for detecting and exploiting template injection, and shows it being applied to craft RCE zerodays for two widely deployed enterprise web applications. Generic exploits are demonstrated for five of the most popular template engines, including escapes from sandboxes whose entire purpose is to handle user-supplied templates in a safe way.
+		* [SSTI: The Hidden Threat to Web Application Security - Pranav Khune(2022)](https://medium.com/@pranavkhune/ssti-the-hidden-threat-to-web-application-security-a6c917a8f3b0)
 	- **Articles/Writeups**
 		* [Exploiting Custom Template Engines - Dalton Campbell](https://depthsecurity.com/blog/exploiting-custom-template-engines)
+		* [Server-Side Template Injection - James Kettle(2015)](https://portswigger.net/research/server-side-template-injection)
+		* [Exploiting Jinja SSTI with limited payload size. - niebardzo(2020)](https://niebardzo.github.io/2020-11-23-exploiting-jinja-ssti/)
+		* [Jinja2 SSTI Research - Chivato(2020)](https://hackmd.io/@Chivato/HyWsJ31dI)
+		* [GitHub Pages - Multiple RCEs via insecure Kramdown configuration - $25,000 Bounty - vakzz(2020)](https://devcraft.io/2020/10/20/github-pages-multiple-rces-via-kramdown-config.html)
+		* [RCE via Server-Side Template Injection - Gaurav Mishra(2020](https://cyc10n3.medium.com/rce-via-server-side-template-injection-ad46f8e0c2ae)
+		* [Method Confusion In Go SSTIs Lead To File Read And RCE. - Gus Ralph(2021)](https://www.onsecurity.io/blog/go-ssti-method-research/)
+		* [Doing it the researcher’s way: How I Managed to Get SSTI (Server Side Template Injection) which lead to arbitrary file reading on One of the Leading Payment Systems in Asia - JzeeRx(2022)](https://medium.com/@jazdprince/doing-it-the-researchers-way-how-i-managed-to-get-ssti-server-side-template-injection-which-66b239ca0104)
+		* [Bug Writeup: RCE via SSTI on Spring Boot Error Page with Akamai WAF Bypass - h1pmnh, Dark9T(2022)](https://h1pmnh.github.io/post/writeup_spring_el_waf_bypass/)
 	- **Writeups**
 		* [Exploring SSTI in Flask/Jinja2](https://nvisium.com/blog/2016/03/09/exploring-ssti-in-flask-jinja2/)
 		* [Exploring SSTI in Flask/Jinja2, Part II](https://nvisium.com/blog/2016/03/11/exploring-ssti-in-flask-jinja2-part-ii/)
@@ -3486,6 +4110,11 @@
 	- **Talks/Presentations/Videos**
 		* [SEC642: Killing snakes for fun, Flask SSTIs and RCEs in Python - Moses Frost(SANS)](https://www.sans.org/webcasts/sec642-killing-snakes-fun-flask-sstis-rces-python-112860)
 			* Here is a word: Reflection. How many times have you read the words SSTI or even CSTI and wondered what they actually did, how they worked, or how to execute one? How can you take a file reading vulnerability like SSTI into a Remote Code Execution exploit? In this talk we will give you a glance into the SEC642 topic on Server Side Template Injection in Flask and taking that one concept a few steps further by introducing Python Method Reflection to execute code, and even backdoors. Join Moses Frost as he discusses this and other topics that are found in SEC642: Advanced Web App Penetration Testing, Ethical Hacking, and Exploitation Techniques.
+		* [Server-Side Template Injection: RCE For The Modern Web App - James Kettle(2015)](https://www.youtube.com/watch?v=3cT0uE7Y87s)
+			* In this presentation, I'll discuss techniques to recognize template injection, then show how to take template engines on a journey deeply orthogonal to their intended purpose and ultimately gain arbitrary code execution. I'll show this technique being applied to craft exploits that hijack four popular template engines, then demonstrate RCE zero-days on two corporate web applications. This presentation will also cover techniques for automated detection of template injection, and exploiting subtle, application-specific vulnerabilities that can arise in otherwise secure template systems.
+		* [Server-Side Template Injection Workshop - Tib3rius(2021)](https://www.youtube.com/watch?v=rJ-l_JSdUlE)
+		* [Room for Escape: Scribbling Outside the Lines of Template Security - Alvaro Muñoz, Oleksandr Mirosh](https://www.youtube.com/watch?v=yMDCyzSBX5U&list=PLH15HpR5qRsXE_4kOSy_SXwFkFQre4AV_&index=51)
+			* "Now more than ever, digital communication and collaboration are essential to the modern human experience. People around the globe work together online as they share information, create documents, send emails, and collaborate on spreadsheets and presentations. Shared digital content is everywhere and networked communication platforms and software play a crucial role. Content Management Systems (CMS) allow the user to design, create, modify, and visualize dynamic content. For many companies, CMS platforms are pivotal to their content pipelines and workforce collaboration."
 	- **Tools**
 		* [tplmap](https://github.com/epinna/tplmap)
 			* Code and Server-Side Template Injection Detection and Exploitation Tool
@@ -3505,6 +4134,7 @@
 		* [Angular Template Injection without Quote Characters - Aviv Yahav(2020)](https://appsec-labs.com/portal/angular-template-injection-without-quote-characters/)
 		* [Reflected XSS on Microsoft.com via Angular Js template injection - Pratik Dabhi(2020)](https://infosecwriteups.com/reflected-xss-on-microsoft-com-via-angular-template-injection-2e26d80a7fd8)
 		* [How I Stole Plunker Session Tokens with an Angular Expression - Ryan Hanson(2021)](https://royaljay.com/security/angular-expression-injections/)
+		* [Client Side Template Injection (CSTI) - Hacktricks](https://book.hacktricks.xyz/pentesting-web/client-side-template-injection-csti)
 - **Purposefully Vulnerable Webapps**
 	* [Breakable Flask](https://github.com/stephenbradshaw/breakableflask)
 		* A simple vulnerable Flask application.
@@ -3513,6 +4143,10 @@
 	* [Injecting Flask - Nvisium](https://nvisium.com/blog/2015/12/07/injecting-flask/) 
 	* [hackable - JasonHinds](https://github.com/JasonHinds13/hackable)
 		* A python flask app that is purposfully vulnerable to SQL injection and XSS attacks
+	* [Template Injection Workshop: Twig, Jinja, Freemaker and more - GoSecure(2020)](https://www.youtube.com/watch?v=I7xQZOvZzIw)
+		* [Code](https://github.com/GoSecure/template-injection-workshop)
+		* [Workshop page](https://gosecure.github.io/template-injection-workshop/#0)
+		* Welcome to this 2-hour workshop on Template Injection. Template injection, also known as Server-Side Template Injection (SSTI), is a vulnerability class that has emerged in 2015. The 2015 Black Hat talk from James Kettle established the foundations for the exploitation techniques in multiple template engines. The exploitation of this type of issue will require specific knowledge of the template library or the language being used under the hood. The workshop is divided in six labs and an introduction. First, there will be an introduction to the vulnerability. This segment is needed to get a good understanding of the attack patterns to recognize potential vulnerabilities. Then we will investigate five different template engines with unique twists. Each template engine will have an exercise which consists of a web application with a template engine being exposed.
 - **Tools**
 	* [Templates Injections - PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20injections)
 
@@ -3525,7 +4159,13 @@
 * **Articles/Blogposts/Writeups**
 	* [Hostile Subdomain Takeover using Heroku/Github/Desk + more - Detectify](https://labs.detectify.com/2014/10/21/hostile-subdomain-takeover-using-herokugithubdesk-more/)
 	* [5 Subdomain Takeover #ProTips - Patrik Hudak](https://securitytrails.com/blog/subdomain-takeover-tips)
+	* [can-i-take-over-xyz](https://github.com/EdOverflow/can-i-take-over-xyz#all-entries)
+		* "Can I take over XYZ?" — a list of services and how to claim (sub)domains with dangling DNS records.
 * **Talks/Presentations**
+	* [DNS hijacking using cloud providers - Frans Rosén - Security Fest 2017](https://www.youtube.com/watch?v=HhJv8CU-RIk)
+		* A few years ago, Frans and his team posted an article on Detectify Labs regarding domain hijacking using services like AWS, Heroku and GitHub. These issues still remains and are still affecting a lot of companies. Jonathan Claudius from Mozilla even calls “Subdomain takeover” “the new XSS”. Since then, many tools have popped up to spot these sorts of vulnerabilities. Frans will go through both the currently disclosed and the non-disclosed ways to take control over domains and will share the specific techniques involved.
+	* [Subdomain Takeovers, beyond the basics for Pentesters and Bug Bounty Hunters - Codingo(2020)](https://www.youtube.com/watch?v=q_A8aXLO1gA)
+		* Discover the tricks to subdomain takeovers that go beyond the basics, allowing you to find more impactful findings in a pentest, or on a bug bounty program.
 * **Tools**
 
 
@@ -3555,6 +4195,15 @@
 * **Papers**
 	* [Race Detection for Web Applications - Boris Petrov, Martin Vechev, Manu Sridharan, Julian Dolby](http://www.cs.columbia.edu/~junfeng/14fa-e6121/papers/js-race.pdf)
 		* We present the first formulation of a happens-before relation for common web platform features. Developing this relation was a non-trivial task, due to complex feature interactions and browser differences. We also present a logical memory access model for web applications that abstracts away browser implementation details. Based on the above, we implemented WEBRACER, the first dynamic race detector for web applications. WEBRACER is implemented atop the production-quality WebKit engine, enabling testing of full-featured web sites. WEBRACER can also simulate certain user actions, exposing more races. We evaluated WEBRACER by testing a large set of Fortune 100 company web sites. We discovered many harmful races, and also gained insights into how developers handle asynchrony in practice.
+	* [Exposing Private Information by Timing Web Applications - Andrew Bortz, Dan Boneh, Palash Nandy(2007)](https://crypto.stanford.edu/~dabo/papers/webtiming.pdf)
+		* "We show that the time web sites take to respond to HTTP requests can leak private information, using two different types of attacks. The first, direct timing, directly measures response times from a web site to expose private information such as validity of an username at a secured site or the number of private photos in a publicly viewable gallery. The second, cross-site timing, enables a malicious web site to obtain information from the user’s perspective at another site. For example, a malicious site can learn if the user is currently logged in at a victim site and, in some cases, the number of objects in the user’s shopping cart. Our experiments sug- gest that these timing vulnerabilities are wide-spread. We explain in detail how and why these attacks work, and dis- cuss methods for writing web application code that resists these attacks."
+	* [Opportunities and Limits of Remote Timing Attacks - Scott A. Crosby, Dan S. Wallach, Rudolf H. Riedi(2009)](https://www.cs.rice.edu/~dwallach/pub/crosby-timing2009.pdf)
+		* "Our work analyzes the limits of attacks based on accurately measuring network response times and jitter over a local network and across the Internet. We present the design of filters to significantly reduce the effects of jitter, allowing an attacker to measure events with 15-100μs accuracy across the Internet, and as good as 100ns over a local network. Notably, security-related algorithms on Web servers and other network servers need to be carefully engi- neered to avoid timing channel leaks at the accuracy demonstrated in this article."
+	* [Cross-origin pixel stealing: Timing attacks using CSS filters - Robert Kotcher, Yutong Pei, Pranjal Jumde, Collin Jackson(2013)](https://www.researchgate.net/publication/262292364_Cross-origin_pixel_stealing_Timing_attacks_using_CSS_filters)
+	* [The Clock is Still Ticking: Timing Attacks in the Modern Web - Tom Van Goethem, Wouter Joosen, Nick Nikiforakis(2015)](https://dl.acm.org/doi/10.1145/2810103.2813632)
+		* "In this paper, we show that modern browsers expose new side-channels that can be used to acquire accurate timing measurements, regardless of network conditions. Using several real-world examples, we introduce four novel web-based timing attacks against modern browsers and describe how an attacker can use them to obtain personal information based on a user’s state on a cross-origin website. We evaluate our proposed attacks and demonstrate that they significantly outperform current attacks in terms of speed, reliability, and accuracy. Furthermore, we show that the nature of our attacks renders traditional defenses, i.e., those based on randomly delaying responses, moot and discuss possible server-side defense mechanisms."
+	* [Timeless Timing Attacks: Exploiting Concurrency to Leak Secrets over Remote Connections - Tom Van Goethem, Christina Pöpper, Wouter Joosen, Mathy Vanhoef(2020)](https://www.usenix.org/conference/usenixsecurity20/presentation/van-goethem)
+		* "In this paper, we introduce a conceptually novel type of timing attack that leverages the coalescing of packets by network protocols and concurrent handling of requests by applications. These concurrency-based timing attacks infer a relative timing difference by analyzing the order in which responses are returned, and thus do not rely on any absolute timing information. We show how these attacks result in a 100-fold improvement over typical timing attacks performed over the Internet, and can accurately detect timing differences as small as 100ns, similar to attacks launched on a local system. We describe how these timing attacks can be successfully deployed against HTTP/2 webservers, Tor onion services, and EAP-pwd, a popular Wi-Fi authentication method."
 * **Tools**
 	* [Requests-Racer](https://github.com/nccgroup/requests-racer)
 		* Requests-Racer is a small Python library that lets you use the Requests library to submit multiple requests that will be processed by their destination servers at approximately the same time, even if the requests have different destinations or have payloads of different sizes. This can be helpful for detecting and exploiting race condition vulnerabilities in web applications. (For more information, see motivation.md.)
@@ -3564,6 +4213,10 @@
 		* Perform timing attacks against web applications
 	* [Race condition exploit](https://github.com/andresriancho/race-condition-exploit)
 		* Tool to help with the exploitation of web application race conditions
+	* [OWASP TimeGap Theory](https://owasp.org/www-project-timegap-theory/)
+		* [Repo](https://github.com/OWASP/TimeGap-Theory)
+		* [Handbook](https://raw.githubusercontent.com/OWASP/TimeGap-Theory/master/OWASP%20TimeGap%20Theory%20Handbook.pdf)
+		* OWASP TimeGap Theory is an auto-scoring capture-the-flag game that focuses entirely on TOCTOU vulnerabilities. There are seven unique challenges to be solved in TimeGap Theory. All of them can be solved just by using browser dev tools.
 * **Miscellaneous**
 
 
@@ -3992,7 +4645,31 @@
 		* [1ndiList v 1.0](https://github.com/1ndianl33t/1ndiList)
 			* Recon Custom WordList Ganerator 
 		* [Who, What, Where, When, Wordlist - TomNomNom](https://tomnomnom.com/talks/wwwww.pdf)
+		* [OneListForAll](https://github.com/six2dez/OneListForAll)
+			* Rockyou for web fuzzing
+		* [Samlists](https://github.com/the-xentropy/samlists)
+			* "Free, libre, effective, and data-driven wordlists for all!"
+		* [Payloads](https://github.com/sh377c0d3/Payloads)
+			* "Payload Arsenal for Pentration Tester and Bug Bounty Hunters"
+		* [webapp-wordlists](https://github.com/p0dalirius/webapp-wordlists/)
+			* This repository contains wordlists for each versions of common web applications and content management systems (CMS). Each version contains a wordlist of all the files directories for this version.
+		* [RFI/LFI Payload List](https://github.com/payloadbox/rfi-lfi-payload-list)
+		* [all.txt - jhaddix](https://gist.github.com/jhaddix/86a06c5dc309d08580a018c66354a056)
+			* "all wordlists from every dns enumeration tool... ever. Please excuse the lewd entries =/"
+		* [sql-injection-payload-list](https://github.com/payloadbox/sql-injection-payload-list)
+		* [xxe-injection-payload-list](https://github.com/payloadbox/xxe-injection-payload-list)
+		* [Big List of Naughty Strings](https://github.com/minimaxir/big-list-of-naughty-strings)
+			* The Big List of Naughty Strings is an evolving list of strings which have a high probability of causing issues when used as user-input data. This is intended for use in helping both automated and manual QA testing; useful for whenever your QA engineer walks into a bar.
+		* [subdirectories-discover](https://github.com/aels/subdirectories-discover)
+			* "Perfect wordlist to discover directories and files on target site with tools like ffuf."
+		* [wordlists - assetnote](https://github.com/assetnote/wordlists)
+			* Automated & Manual Wordlists provided by Assetnote
+		* [n0kovo subdomain wordlist](https://github.com/n0kovo/n0kovo_subdomains)
+			* A subdomain wordlist of 3,000,000 lines, crafted by harvesting SSL certs from the entire IPv4 space.
 	- **Creation of**
+		* [Assetnote Wordlists](https://wordlists.assetnote.io/)
+			* "This website provides you with wordlists that are up to date and effective against the most popular technologies on the internet. Wordlists are generated on the 28th of each month, using Commonspeak2 and GitHub Actions. If there's an extension or technology that you would like a wordlist for, but it's not in the table below, send us a PR and it will be included on this page after the next run."
+		* [Who, What, Where, When, Wordlist - @TomNomNom(NahamCon2020)](https://www.youtube.com/watch?v=W4_QCSIujQ4&list=PLKAaMVNxvLmAD0ZVUJ2IGFFC0APFZ5gzy&index=8)
 - **Payload Lists**
 	* [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 	* [weapons4pentester](https://github.com/merttasci/weapons4pentester)
@@ -4038,9 +4715,9 @@
 			* Secure Ideas' Tactical Burp: Next Steps is a two-hour video exploring topics related to Burp Suite and its use in a web application penetration test. This course explores the various features of Burp Suite, focusing on how we use the system during our penetration testing.
 		* [Burp Macro Auto Authentication - CyberSecurityTV(2020)](https://www.youtube.com/watch?v=Ba2EzXP4swE)
 			* Burp session handling rules are very powerful. In this episode, we have seen an example of how to configure burp to auto login or activate session after it detects session invalidity.
-* **Plugins**<a name="burpplugin"></a>
+- **Plugins**<a name="burpplugin"></a>
 	* [Collection of Burp Suite Extensions](https://apps.burpsuite.guide/)
-	* **Creating**
+	- **Creating**
 		* [Adapting Burp Extensions for Tailored Pentesting](http://blog.portswigger.net/2017/08/adapting-burp-extensions-for-tailored.html)
 		* [Developing Burp Suite Extensions - DOYENSEC](https://github.com/doyensec/burpdeveltraining)
 			* Material for the training "Developing Burp Suite Extensions – From Manual Testing to Security Automation"
@@ -4048,10 +4725,10 @@
 		* [Burp Extension Generator](https://github.com/rsrdesarrollo/generator-burp-extension)
 			* Everything you need about Burp Extension Generation
 		* [Burp Suite Extension Development - Ismail Tasdelen(2022)](https://infosecwriteups.com/burp-suite-extension-development-b177bddaa940)
-	* **API**
+	- **API**
 		* [burp-rest-api](https://github.com/vmware/burp-rest-api)
 			* A REST/JSON API to the Burp Suite security tool.  Upon successfully building the project, an executable JAR file is created with the Burp Suite Professional JAR bundled in it. When the JAR is launched, it provides a REST/JSON endpoint to access the Scanner, Spider, Proxy and other features of the Burp Suite Professional security tool.
-	* **AuthN/AuthZ-related**
+	- **AuthN/AuthZ-related**
 		* [AuthMatrix](https://github.com/SecurityInnovation/AuthMatrix)
 			* AuthMatrix is a Burp Suite extension that provides a simple way to test authorization in web applications and web services. 
 		* [Autorize](https://github.com/Quitten/Autorize)
@@ -4061,11 +4738,16 @@
 			* Burp Suite is an intercepting HTTP Proxy, and it is the defacto tool for performing web application security testing. While Burp Suite is a very useful tool, using it to perform authorization testing is often a tedious effort involving a "change request and resend" loop, which can miss vulnerabilities and slow down testing. AutoRepeater, an open source Burp Suite extension, was developed to alleviate this effort. AutoRepeater automates and streamlines web application authorization testing, and provides security researchers with an easy-to-use tool for automatically duplicating, modifying, and resending requests within Burp Suite while quickly evaluating the differences in responses.
 		* [Uniqueness plugin for Burp Suite](https://github.com/silentsignal/burp-uniqueness)
 			* Makes requests unique based on regular expressions. Handy for registration forms and any other endpoint that requires unique values upon every request.
-	* **Collaborator-related**
+	- **Code Scanning**
+		* [semgrepper](https://github.com/gand3lf/semgrepper)
+	- **Collaborator-related**
 		* [Running Your Instance of Burp Collaborator Server - blog.fabiopires.pt](https://blog.fabiopires.pt/running-your-instance-of-burp-collaborator-server/)
 		* [collaborator-everywhere](https://github.com/PortSwigger/collaborator-everywhere)
 			* A Burp Suite Pro extension which augments your proxy traffic by injecting non-invasive headers designed to reveal backend systems by causing pingbacks to Burp Collaborator
-	* **Extra-Checks/Scanners**
+	- **Diagramming**
+		* [PESD Exporter](https://github.com/doyensec/PESD-Exporter-Extension)
+			* Generate security-oriented sequence diagrams and fine-grained parsed traffic from Burp Suite Proxy history.
+	- **Extra-Checks/Scanners**
 		* [backslash-powered-scanner](https://github.com/PortSwigger/backslash-powered-scanner)
 			* This extension complements Burp's active scanner by using a novel approach capable of finding and confirming both known and unknown classes of server-side injection vulnerabilities. Evolved from classic manual techniques, this approach reaps many of the benefits of manual testing including casual WAF evasion, a tiny network footprint, and flexibility in the face of input filtering.
 		* [HUNT](https://github.com/bugcrowd/HUNT)
@@ -4239,3 +4921,130 @@
 	* [Keyhacks](https://github.com/streaak/keyhacks)
 		* Keyhacks is a repository which shows quick ways in which API keys leaked by a bug bounty program can be checked to see if they're valid.
 ----------------------------------------------------------------------------------------------------------------
+
+
+
+
+	
+	ToDo links
+```
+XSS
+	https://github.com/EgeBalci/xss-flare
+	https://medium.com/@spade.com/a-guide-to-make-your-own-serverless-blind-xss-and-blind-oob-payload-18f8f2b9c507
+	https://ysamm.com/?p=493
+	https://netsec.expert/posts/xss-in-2021/
+	https://0xmkr24.medium.com/cross-site-scripting-contexts-walkthrough-portswigger-labs-part-1-aad6cf65e49b
+	https://securitygoat.medium.com/data-exfiltration-with-some-fun-xss-tricks-49e9251f05fd
+	https://portswigger.net/research/portable-data-exfiltration
+	https://swarm.ptsecurity.com/fuzzing-for-xss-via-nested-parsers-condition/
+	https://www.rcesecurity.com/2020/11/Smuggling-an-un-exploitable-xss/
+	https://github.com/heroanswer/XSS_Cheat_Sheet_2020_Edition
+	https://liveoverflow.com/do-not-use-alert-1-in-xss/
+	https://blog.mozilla.org/attack-and-defense/2021/11/03/finding-and-fixing-dom-based-xss-with-static-analysis/
+	https://hacklido.com/blog/252-xss-filter-evasion-and-waf-bypassing
+	https://whynotsecurity.com/blog/xss-to-rce/
+	https://www.youtube.com/embed/xxKAvx4UeUg
+	https://www.volkis.com.au/blog/bypass-xss-in-wafs/
+	https://www.youtube.com/watch?v=mKAWpFdVcPY
+	https://docs.google.com/presentation/d/130n98LMDyD1xyZp5wzgmjmrZPP-nBcU9tI3NaOVfBs0/preview#slide=id.p
+	https://github.com/redcode-labs/poXSSon
+	https://www.youtube.com/watch?v=HU3np5xvioA
+	https://github.com/kleiton0x00/ppmap
+	https://www.blackhat.com/presentations/bh-europe-07/Dube-Rios/Whitepaper/bh-eu-07-rios-WP.pdf
+	https://pentestit.medium.com/hey-dude-do-you-need-script-on-your-page-d9192df990f4
+	https://twitter.com/orange_8361/status/1333458585980813333
+	https://www.trustedsec.com/events/webinar-popping-shells-instead-of-alert-boxes-weaponizing-xss-for-fun-and-profit/
+	https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot
+	https://web.archive.org/web/20190617111911/https://polyglot.innerht.ml/
+	https://dev.to/caffiendkitten/xss-javascript-polyglots-4i64
+	https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls
+	https://lutfumertceylan.com.tr/posts/acc-takeover-web-cache-xss/
+	https://medium.com/bugbountywriteup/content-security-policy-bypass-to-perform-xss-3c8dd0d40c2e
+	https://knoxss.me/?page_id=766
+	https://www.youtube.com/watch?v=TgilzlNHFz8
+	https://github.com/hakluke/weaponised-XSS-payloads
+	https://twitter.com/intigriti/status/1356245100414840833
+	https://github.com/yavolo/eventlistener-xss-recon
+	https://medium.com/@know.0nix/hunting-good-bugs-with-only-html-d8fd40d17b38	
+	https://leucosite.com/Edge-Chromium-EoP-RCE/
+	https://github.com/hahwul/dalfox
+	https://www.immersivelabs.com/resources/blog/wagtail-xss-localstorage-account-hijack/
+	https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript
+	https://r2c.dev/blog/2021/xss-cheat-sheets/
+	https://thehackerblog.com/video-download-uxss-exploit-detailed/
+	https://medium.com/realmodelabs/kindledrip-from-your-kindles-email-address-to-using-your-credit-card-bb93dbfb2a08
+	https://blog.s1r1us.ninja/bug-bounty/cookie-tossing-to-rce-on-google-cloud-jupyter-notebooks
+	https://medium.com/bugbountywriteup/intigritis-december-xss-challenge-2020-unintended-solution-8205b4a4b95b
+	https://chefsecure.com/courses/xss/recipes/polyglots-the-ultimate-xss-payloads
+	https://medium.com/cyberverse/obfuscated-polyglot-xss-payloads-simplified-with-references-157e95b1d601
+	https://security.szurek.pl/en/xss-polyglot.html
+	https://easterxss.terjanq.me/writeup.html
+	https://www.youtube.com/watch?utm_campaign=bug_bytes_99_bypassing_bots_and_wafs_jq_in_burp_smarter_json_fuzzing_and_subdomain_takeovers
+		* [AwesomeXSS - Somdev Sangwan](https://github.com/s0md3v/AwesomeXSS)
+			* Awesome XSS stuff
+	Cookies
+		https://medium.com/@agrawalsmart7/cookie-based-injection-xss-making-exploitable-with-out-exploiting-other-vulns-81132ca01d67
+		https://security.stackexchange.com/questions/36172/is-cookie-based-xss-exploitable
+		https://wesecureapp.com/2017/07/10/xss-by-tossing-cookies/
+		http://zhchbin.github.io/2017/08/30/Uber-XSS-via-Cookie/
+		https://appsecnotes.blogspot.com/2009/11/xss-via-cookie-how-severe.html
+		http://blog.k3170makan.com/2013/10/aboutme-cookie-based-xss.html
+		https://blog.jeremiahgrossman.com/2010/02/converting-unimplementable-cookie-based.html
+	DOM
+		https://enfinlay.github.io//xss/dom/burp/2021/02/23/dom-xss-is-dead.html
+		https://vovohelo.medium.com/from-svg-and-back-yet-another-mutation-xss-via-namespace-confusion-for-dompurify-2-2-2-bypass-5d9ae8b1878f
+		https://github.com/nccgroup/tracy
+		https://static.sched.com/hosted_files/njsi2019/31/Securing%20the%20DOM%20from%20the%20bottom%20up%20-%20Node%2BJS%20Interactive.pdf
+		https://www.youtube.com/watch?v=QBkLI35sxVsutm_campaign=bug_bytes_103_cookie_tossing_recon_tools_benchmarks_stealing_google_docs_with_screenshots&utm_term=2020-12-30
+		https://research.securitum.com/helping-secure-dompurify-part-1/
+		https://github.com/filedescriptor/untrusted-types
+		https://thexssrat.medium.com/digging-deep-into-dom-xss-9ed172876477
+		* [Restricted-character XSS for fun - physuru.dev(2021)](https://web.archive.org/web/20210414031135/https://physuru.dev/blog/restricted_character_xss/)
+		https://blog.mozilla.org/attack-and-defense/2021/11/03/finding-and-fixing-dom-based-xss-with-static-analysis/
+		https://portswigger.net/web-security/dom-based/cookie-manipulation
+		https://owasp.org/www-community/attacks/DOM_Based_XSS
+		https://portswigger.net/blog/introducing-dom-invader
+		https://medium.com/@shilpybanerjee/dom-based-cookie-manipulation-portswigger-lab-16ae86de26fc
+		https://medium.com/bugbountywriteup/reflected-xss-on-microsoft-com-via-angular-template-injection-2e26d80a7fd8
+		https://medium.com/@lucideus/a-definitive-guide-to-session-hijacking-lucideus-research-71165a672973
+		https://security.stackexchange.com/questions/176897/how-to-exploit-dom-xss-in-cookies-without-having-xss-on-the-page/176938
+		https://github.com/wisec/domxsswiki
+		https://hackerone.com/reports/57356
+		https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting/dom-xss
+		https://github.com/wisec/domxsswiki
+	Talks
+		* [Tracing User Input Through JavaScript is for Tools - Jake Heath, Michael Roberts(2018)](https://www.youtube.com/watch?v=3zowuWLEGsA&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN&index=21)
+			* Being able to comprehend causal relationships between sources of user input and their corresponding output is a distinguishing characteristic that separates the master web hacker from the novice script kiddy. The better a tester can grasp these relationships, the faster they can abuse lapses in input sanitization, identify dangerous programming patterns, and understand the overall attack surface of the application. However, enumerating these relationships is difficult and time intensive to do by hand, especially with JavaScript-heavy apps. Security scanning tools have tried to automate this procedure, but they face several problems in modern web applications: To solve these problems, we need a tool that augments, not automates, a manual penetration tester by helping them understand all of the inputs and outputs of a web application. To this end, we present Tracy, a tool for assisting penetration testers with enumerating every sink of output for all user input sources.
+XSSI
+	https://blog.cm2.pw/exploiting-post-based-xssi/
+	https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-lekies.pdf
+	* [XSSI and JSONP leaks](https://github.com/EdOverflow/bugbountywiki/wiki/XSSI-and-JSONP-leaks)
+	* [The Tale of a Fameless but Widespread Web Vulnerability Class - Veit Hailperin](https://www.youtube.com/watch?v=5qA0CtS6cZ4)
+		* [Blogpost](https://www.scip.ch/en/?labs.20160414)
+		* Two keys components account for finding vulnerabilities of a certain class: awareness of the vulnerability and ease of finding the vulnerability. Cross-Site Script Inclusion (XSSI) vulnerabilities are not mentioned in the de facto standard for public attention - the OWASP Top 10. Additionally there is no public tool available to facilitate finding XSSI. The impact reaches from leaking personal information stored, circumvention of token-based protection to complete compromise of accounts. XSSI vulnerabilities are fairly wide spread and the lack of detection increases the risk of each XSSI. In this talk we are going to demonstrate how to find XSSI, exploit XSSI and also how to protect against XSSI.
+XS-Leaks
+	https://arturjanc.com/visited-delenda-est.pdf
+XS-Search
+	https://www.youtube.com/watch?v=HcrQy0C-hEA
+	https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html
+	https://www.abortz.net/papers/timingweb.pdf
+	https://www.owasp.org/images/a/a7/AppSecIL2015_Cross-Site-Search-Attacks_HemiLeibowitz.pdf
+	https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549
+	https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf
+	https://sites.google.com/site/bughunteruniversity/nonvuln/xsleaks
+	https://terjanq.github.io/Bug-Bounty/Google/cache-attack-06jd2d2mz2r0/index.html
+	https://github.com/xsleaks/xsleaks/wiki/Links
+	http://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html
+XXE
+	https://www.shielder.it/blog/dont-open-that-xml-xxe-to-rce-in-xml-plugins-for-vs-code-eclipse-theia/
+	https://gosecure.github.io/xxe-workshop/#0
+	https://cinzinga.com/XXE-Case-Studies/
+	https://read.martiandefense.llc/hacking-xml-xml-injection-51bea2edd3a2?gi=5fb445391ec6
+	https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/HIP2019-Advanced_XXE_Exploitation.pdf
+		https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_1_simple.pdf
+		https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_2_external_dtd.pdf
+		https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_3_php_encoding.pdf
+		https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_4_jar_proto.pdf
+		https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_5_local_dtd.pdf
+	https://speakerdeck.com/0ang3el/a-hackers-perspective-on-aem-applications-security
+```

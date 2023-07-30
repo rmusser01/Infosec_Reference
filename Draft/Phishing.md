@@ -279,7 +279,7 @@ To Do:
 	* [XSLT for MSXML - docs.ms](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms759204(v=vs.85))
 * **Excel Macros**<a name="excelm"></a>
 	* [Application.ExecuteExcel4Macro method (Excel) - docs.ms(2019)](https://docs.microsoft.com/en-us/office/vba/api/excel.application.executeexcel4macro)
-	* [Excel 4.0 Macro Functions Reference - Philip Treacy](https://d13ot9o61jdzpp.cloudfront.net/files/Excel%204.0%20Macro%20Functions%20Reference.pdf)
+	* [Excel 4.0 Macro Functions Reference - Philip Treacy](https://www.myonlinetraininghub.com/cdn/files/Excel%204.0%20Macro%20Functions%20Reference.pdf)
 * **Excel PowerQuery**<a name="epq"></a>
 	* [Introduction to Microsoft Power Query for Excel - support.ms](https://support.microsoft.com/en-us/office/introduction-to-microsoft-power-query-for-excel-6e92e2f4-2079-4e1f-bad5-89f6269cd605)
 	* [Power Query - Overview and Learning - support.ms](https://support.microsoft.com/en-us/office/power-query-overview-and-learning-ed614c81-4b00-4291-bd3a-55d80767f81d?ui=en-us&rs=en-us&ad=us)

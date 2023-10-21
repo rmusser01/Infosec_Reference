@@ -45,7 +45,6 @@ div#app:empty::before {
 .search .search-keyword {
   color: var(--theme-color, #42b983);
   font-style: normal;
-  font-weight: bold;
 }
 html,
 body {
@@ -54,7 +53,7 @@ body {
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  color: #34495e;
+  color: #bfbfbf;
   font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   font-size: 15px;
   letter-spacing: 0;
@@ -69,7 +68,7 @@ a[disabled] {
   opacity: 0.6;
 }
 kbd {
-  border: solid 1px #ccc;
+  border: solid 1px #f3f3f3;
   border-radius: 3px;
   display: inline-block;
   font-size: 12px !important;
@@ -124,13 +123,13 @@ li input[type='checkbox'] {
   margin: 0 1rem;
   padding: 5px 0;
   position: relative;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .app-nav li ul {
-  background-color: #fff;
+  background-color: #0f0f0f;
   border: 1px solid #ddd;
-  border-bottom-color: #ccc;
-  border-radius: 4px;
+  border-bottom-color: #f3f3f3;
+  border-radius: 15px;
   box-sizing: border-box;
   display: none;
   max-height: calc(100vh - 61px);
@@ -175,7 +174,7 @@ li input[type='checkbox'] {
           animation: octocat-wave 560ms ease-in-out;
 }
 .github-corner svg {
-  color: #fff;
+  color: #0f0f0f;
   fill: var(--theme-color, #42b983);
   height: 80px;
   width: 80px;
@@ -196,13 +195,13 @@ main.hidden {
   transition: all 0.3s;
 }
 .anchor span {
-  color: #34495e;
+  color: #fff;
 }
 .anchor:hover {
   text-decoration: underline;
 }
 .sidebar {
-  border-right: 1px solid rgba(0,0,0,0.07);
+  border-right: 1px solid #909090;
   overflow-y: auto;
   padding: 40px 0 0;
   position: absolute;
@@ -216,7 +215,6 @@ main.hidden {
 .sidebar > h1 {
   margin: 0 auto 1rem;
   font-size: 1.5rem;
-  font-weight: 300;
   text-align: center;
 }
 .sidebar > h1 a {
@@ -261,23 +259,23 @@ main.hidden {
   border-radius: 4px;
 }
 .sidebar:hover::-webkit-scrollbar-thumb {
-  background: rgba(136,136,136,0.4);
+  background: rgba(150,150,150,0.4);
 }
 .sidebar:hover::-webkit-scrollbar-track {
-  background: rgba(136,136,136,0.1);
+  background: rgba(150,150,150,0.1);
 }
 .sidebar-toggle {
-  background-color: transparent;
-  background-color: rgba(255,255,255,0.8);
+  background-color: #222222;
   border: 0;
   outline: none;
-  padding: 10px;
+  padding: 20px;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 0px;
   text-align: center;
   transition: opacity 0.3s;
-  width: 284px;
+  width: 56px;
+  border-radius: 5px;
   z-index: 30;
   cursor: pointer;
 }
@@ -346,13 +344,13 @@ body.sticky .sidebar-toggle {
   padding: 6px 13px;
 }
 .markdown-section tr {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #f3f3f3;
 }
 .markdown-section tr:nth-child(2n) {
-  background-color: #f8f8f8;
+  background-color: #020202;
 }
 .markdown-section p.tip {
-  background-color: #f8f8f8;
+  background-color: #020202;
   border-bottom-right-radius: 2px;
   border-left: 4px solid #f66;
   border-top-right-radius: 2px;
@@ -363,7 +361,7 @@ body.sticky .sidebar-toggle {
 .markdown-section p.tip:before {
   background-color: #f66;
   border-radius: 100%;
-  color: #fff;
+  color: #0f0f0f;
   content: '!';
   font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
   font-size: 14px;
@@ -380,7 +378,7 @@ body.sticky .sidebar-toggle {
   background-color: #efefef;
 }
 .markdown-section p.tip em {
-  color: #34495e;
+  color: #bfbfbf;
 }
 .markdown-section p.warn {
   background: rgba(66,185,131,0.1);
@@ -503,7 +501,7 @@ section.cover.show {
   display: flex;
 }
 section.cover.has-mask .mask {
-  background-color: #fff;
+  background-color: #0f0f0f;
   opacity: 0.8;
   position: absolute;
   top: 0;
@@ -571,7 +569,7 @@ section.cover .cover-main > p:last-child a {
 }
 section.cover .cover-main > p:last-child a:last-child {
   background-color: var(--theme-color, #42b983);
-  color: #fff;
+  color: #0f0f0f;
 }
 section.cover .cover-main > p:last-child a:last-child:hover {
   color: inherit;
@@ -588,18 +586,18 @@ section.cover blockquote > p > a:hover {
   color: var(--theme-color, #42b983);
 }
 body {
-  background-color: #fff;
+  background-color: #0a0a0a;
 }
 /* sidebar */
 .sidebar {
-  background-color: #fff;
-  color: #364149;
+  background-color: #0f0f0f;
+  color: #ffffff;
 }
 .sidebar li {
   margin: 6px 0 6px 0;
 }
 .sidebar ul li a {
-  color: #505d6b;
+  color: #f0f0f0;
   font-size: 14px;
   font-weight: normal;
   overflow: hidden;
@@ -629,7 +627,7 @@ body {
 .markdown-section h3,
 .markdown-section h4,
 .markdown-section strong {
-  color: #2c3e50;
+  color: #f2f2f2;
   font-weight: 600;
 }
 .markdown-section a {
@@ -695,7 +693,7 @@ body {
 }
 .markdown-section code,
 .markdown-section pre {
-  background-color: #f8f8f8;
+  background-color: #1f1f1f;
 }
 .markdown-section pre,
 .markdown-section output {
@@ -729,7 +727,7 @@ body {
   word-wrap: normal;
 }
 .markdown-section pre > code {
-  color: #525252;
+  color: #8f8f8f;
   font-size: 0.8rem;
   padding: 2.2em 5px;
   line-height: inherit;
@@ -740,7 +738,7 @@ body {
 }
 .markdown-section output {
   padding: 1.7rem 1.4rem;
-  border: 1px dotted #ccc;
+  border: 1px dotted #f3f3f3;
 }
 .markdown-section output > :first-child {
   margin-top: 0;
@@ -756,7 +754,7 @@ body {
 }
 .markdown-section pre::after,
 .markdown-section output::after {
-  color: #ccc;
+  color: #f3f3f3;
   font-size: 0.6rem;
   font-weight: 600;
   height: 15px;
@@ -786,7 +784,7 @@ body {
   color: #c76b29;
 }
 .token.punctuation {
-  color: #525252;
+  color: #a0a0a0;
 }
 .token.property {
   color: #c08b30;

@@ -1,5 +1,6 @@
 # InfoSec Reference
-
+### Any communicaitons occuring within the United States should be viewed as compromised and no privacy guaranteed unless E2EE was used and verified(Not new). (New: The US gov now has legal authority to compel recording or monitoring by any citizen within the United States, regardless of their proximity or interaction with the supposed crime being monitored.Among the other issues made possible/enabled through passage of the legislation) I have kept this project non-political, but this is absolutely terrible. Full support by Biden and his administration as well shows that this is not some partisan issue(Those who claim so, don't be a useful idiot). I understand that people seem to think I'm a clown, so hopefully this entertainmenet will help keep this in mind when relevant. There is no other clearer sign of the corruption and ownership of state surveillance apparatus for the haves vs have-nots than this bill.
+- See https://www.reuters.com/world/us/us-senate-has-agreement-fisa-reauthorization-will-vote-friday-night-schumer-says-2024-04-20/
 
 <div align="center">
 <img src="images/Markdown-000000.svg">

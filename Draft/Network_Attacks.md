@@ -443,6 +443,7 @@
     * [A Brief History of the IPv4 Address Space - Enno Rey](https://insinuator.net/2019/08/a-brief-history-of-the-ipv4-address-space/)
 * **General**
 * **Articles/Blogposts/Writeups**
+    * [IPv4 Address](https://www.scaler.com/topics/computer-network/ipv4-address/)
 * **Talks/Videos**
 
 

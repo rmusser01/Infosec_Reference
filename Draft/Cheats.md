@@ -44,6 +44,8 @@
 	* [Aman Hardikar's Mindmaps](http://www.amanhardikar.com/mindmaps.html)
 	* [Hack3rScroll Mindmaps](https://github.com/hackerscrolls/SecurityTips/tree/master/MindMaps)
 		* Mindmaps for Bugbounties, SSRF, OAUTH 2.0, and iOS Vuln assessment.
+	* [Pentest Mindmap](https://pentestmindmap.com)
+		* Interactive mindmap with 11,600+ pentesting commands across 32 categories: Linux/Windows privilege escalation, Active Directory, web hacking, OSINT, and more. Trilingual (EN/FR/ES), searchable.
 	* [Mobile Application Penetration Testing Cheat Sheet](https://github.com/tanprathan/MobileApp-Pentest-Cheatsheet)
 		* The Mobile App Pentest cheat sheet was created to provide concise collection of high value information on specific mobile application penetration testing topics.
 	* [Templates and Checklists - Strategic Environmental Research and Development Program/US DoD](https://www.serdp-estcp.org/Tools-and-Training/Installation-Energy-and-Water/Cybersecurity/Templates-and-Checklists)

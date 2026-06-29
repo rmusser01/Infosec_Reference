@@ -354,6 +354,7 @@ https://www.blackhat.com/asia-17/arsenal.html#damn-vulnerable-ss7-network
 	* **General**
 		* [Aircrack](https://www.aircrack-ng.org/doku.php?id=links)
 		* [wifi-arsenal](https://github.com/0x90/wifi-arsenal/)
+		* [Alfa Arsenal](https://github.com/ardittirana/alfa-arsenal)
 	* **D/DOS**
 		* [wifijammer](https://github.com/DanMcInerney/wifijammer)
 			* Continuously jam all wifi clients and access points within range. The effectiveness of this script is constrained by your wireless card. Alfa cards seem to effectively jam within about a block radius with heavy access point saturation. Granularity is given in the options for more effective targeting.

@@ -74,6 +74,7 @@
 * [Privilege Escalation and Post-Exploitation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/PrivescPostEx.md)
 * [AppSec/Programming Stuff](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Programming_Language_Security.md)
 * [:lemon:Rants & Writeups:lemon:](https://github.com/rmusser01/Infosec_Reference/tree/master/Draft/Rants%26Writeups)
+- [Dark-Moon](https://github.com/ASCIT31/Dark-Moon) - Open source (GPL-3.0) autonomous AI penetration testing platform (web/API/AD/Kubernetes); self-hosted; suitable for practicing on legal labs.
 * [:izakaya\_lantern: Red Teaming/Penetration Testing Stuff :izakaya\_lantern:](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/RT.md)
 * [REMATH Reverse Engineering](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Reverse%20Engineering%20-%20REMath%20Literature.md)
 * [Reverse Engineering](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/RE.md)

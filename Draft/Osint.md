@@ -92,6 +92,7 @@ https://support.office.com/en-us/article/remove-hidden-data-and-personal-informa
 
 * [yar](https://github.com/Furduhlutur/yar)
 	* yar is an OSINT tool for reconnaissance of repositories/users/organizations on Github. Yar clones repositories of users/organizations given to it and goes through the whole commit history in order of commit time, in search for secrets/tokens/passwords, essentially anything that shouldn't be there. Whenever yar finds a secret, it will print it out for you to further assess. Yar searches either by regex, entropy or both, the choice is yours. You can think of yar as a bigger and better truffleHog, it does everything that truffleHog does and more!
+* [Xquik](https://github.com/Xquik-dev/x-twitter-scraper) - Independent X (Twitter) data API for search, follower export, monitors, and MCP.
 
 
 
@@ -262,7 +263,7 @@ https://support.office.com/en-us/article/remove-hidden-data-and-personal-informa
 		* Gitrob is a command line tool which can help organizations and security professionals find sensitive information lingering in publicly available files on GitHub. The tool will iterate over all public organization and member repositories and match filenames against a range of patterns for files that typically contain sensitive or dangerous information. Looking for sensitive information in GitHub repositories is not a new thing, it has been [known for a while](http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html) that things such as private keys and credentials can be found with GitHub's search functionality, however Gitrob makes it easier to focus the effort on a specific organization.
 	* [reposcanner](https://github.com/Dionach/reposcanner)
 		* Python script to scan Git repos for interesting strings
-	* [gitleaks](https://github.com/zricethezav/gitleaks)
+	* [gitleaks](https://github.com/gitleaks/gitleaks)
 		*  Searches full repo history for secrets and keys
 	* [Reposcanner](https://github.com/Dionach/reposcanner)
 		* Reposcanner is a python script to search through the commit history of Git repositories looking for interesting strings such as API keys, inspired by truffleHog.

@@ -262,7 +262,7 @@ https://support.office.com/en-us/article/remove-hidden-data-and-personal-informa
 		* Gitrob is a command line tool which can help organizations and security professionals find sensitive information lingering in publicly available files on GitHub. The tool will iterate over all public organization and member repositories and match filenames against a range of patterns for files that typically contain sensitive or dangerous information. Looking for sensitive information in GitHub repositories is not a new thing, it has been [known for a while](http://blog.conviso.com.br/2013/06/github-hacking-for-fun-and-sensitive.html) that things such as private keys and credentials can be found with GitHub's search functionality, however Gitrob makes it easier to focus the effort on a specific organization.
 	* [reposcanner](https://github.com/Dionach/reposcanner)
 		* Python script to scan Git repos for interesting strings
-	* [gitleaks](https://github.com/zricethezav/gitleaks)
+	* [gitleaks](https://github.com/gitleaks/gitleaks)
 		*  Searches full repo history for secrets and keys
 	* [Reposcanner](https://github.com/Dionach/reposcanner)
 		* Reposcanner is a python script to search through the commit history of Git repositories looking for interesting strings such as API keys, inspired by truffleHog.
@@ -410,6 +410,8 @@ https://support.office.com/en-us/article/remove-hidden-data-and-personal-informa
 		* [twitterBFTD](https://github.com/misterch0c/twitterBFTD)
     		* Twitter back from the death looks in a user tweets history for domain names that are available for registration.
 		    * [Blogpost](https://hackernoon.com/how-i-hijacked-top-celebrities-tweets-including-katy-perry-shakira-fca3a0e751c6)
+		* [Xquik](https://github.com/Xquik-dev/x-twitter-scraper)
+			* Independent X (Twitter) data API for search, follower export, monitors, and MCP. Not affiliated with X Corp.
 * **Social Media Search/Enumeration** <a name="social"></a>
 	* [CheckUsernames](http://checkusernames.com/)
 		* Check the use of your brand or username on 160 Social Networks

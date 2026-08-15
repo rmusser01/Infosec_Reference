@@ -92,7 +92,6 @@ https://support.office.com/en-us/article/remove-hidden-data-and-personal-informa
 
 * [yar](https://github.com/Furduhlutur/yar)
 	* yar is an OSINT tool for reconnaissance of repositories/users/organizations on Github. Yar clones repositories of users/organizations given to it and goes through the whole commit history in order of commit time, in search for secrets/tokens/passwords, essentially anything that shouldn't be there. Whenever yar finds a secret, it will print it out for you to further assess. Yar searches either by regex, entropy or both, the choice is yours. You can think of yar as a bigger and better truffleHog, it does everything that truffleHog does and more!
-* [Xquik](https://github.com/Xquik-dev/x-twitter-scraper) - Independent X (Twitter) data API for search, follower export, monitors, and MCP.
 
 
 
@@ -411,6 +410,8 @@ https://support.office.com/en-us/article/remove-hidden-data-and-personal-informa
 		* [twitterBFTD](https://github.com/misterch0c/twitterBFTD)
     		* Twitter back from the death looks in a user tweets history for domain names that are available for registration.
 		    * [Blogpost](https://hackernoon.com/how-i-hijacked-top-celebrities-tweets-including-katy-perry-shakira-fca3a0e751c6)
+		* [Xquik](https://github.com/Xquik-dev/x-twitter-scraper)
+			* Independent X (Twitter) data API for search, follower export, monitors, and MCP. Not affiliated with X Corp.
 * **Social Media Search/Enumeration** <a name="social"></a>
 	* [CheckUsernames](http://checkusernames.com/)
 		* Check the use of your brand or username on 160 Social Networks

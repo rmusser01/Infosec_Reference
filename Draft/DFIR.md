@@ -838,7 +838,8 @@
 		* The Extensible Metadata Platform (XMP) is an ISO standard, originally created by Adobe Systems Inc., for the creation, processing and interchange of standardized and custom metadata for digital documents and data sets.
 	* [jhead](http://www.sentex.net/~mwandel/jhead/)
 		* Exif Jpeg header manipulation tool
-	* [Jeffrey's Image Metadata Viewer](http://exif.regex.info/exif.cgi)
+	* [MetadataRemover.ai Metadata Viewer](https://metadataremover.ai/metadata-viewer)
+		* Browser-local EXIF, GPS, IPTC and XMP inspection; preserve the original and corroborate important values with a second parser such as ExifTool.
 * **Miscellaneous**
 
 

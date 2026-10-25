@@ -5,7 +5,9 @@ export default async function ({ page, data, crawler, seed, cdp }) {
   await crawler.loadPage(page, data, seed, cdp);
   if (process.env.ARCHIVE_STAGE === "capture") {
     await page.evaluate(() => {
-      const root = document.querySelector('article,main,[role="main"]');
+      const root = document.querySelector(
+        'article,main,[role="main"],[itemprop~="articleBody"]',
+      );
       for (const img of root?.querySelectorAll("img") ?? [])
         img.loading = "eager";
     });
@@ -14,7 +16,7 @@ export default async function ({ page, data, crawler, seed, cdp }) {
         () =>
           [
             ...document.querySelectorAll(
-              'article img,main img,[role="main"] img',
+              'article img,main img,[role="main"] img,[itemprop~="articleBody"] img',
             ),
           ].every((img) => img.complete),
         { timeout: 5000 },
@@ -24,8 +26,9 @@ export default async function ({ page, data, crawler, seed, cdp }) {
   await page
     .waitForFunction(
       () =>
-        document.querySelector('article,main,[role="main"]')?.textContent
-          .length >= 120,
+        document.querySelector(
+          'article,main,[role="main"],[itemprop~="articleBody"]',
+        )?.textContent.length >= 120,
       { timeout: 5000 },
     )
     .catch(() => {});

@@ -30,8 +30,10 @@ try {
     : [
         "article",
         "lazy",
+        "blogger",
         "javascript",
         "redirect",
+        "redirect-body",
         "challenge",
         "private",
         "mislabeled",
@@ -64,7 +66,16 @@ try {
         error: attempt.error,
       }),
     );
-    if (["article", "lazy", "javascript", "redirect"].includes(path)) {
+    if (
+      [
+        "article",
+        "lazy",
+        "blogger",
+        "javascript",
+        "redirect",
+        "redirect-body",
+      ].includes(path)
+    ) {
       assert.equal(attempt.captureState, "complete");
       assert.equal(attempt.integrityState, "verified");
       assert.equal(attempt.replayState, "verified");
@@ -95,7 +106,7 @@ try {
         ),
       );
     }
-    if (path === "redirect")
+    if (["redirect", "redirect-body"].includes(path))
       assert(
         attempt.redirectChain.some(
           (r) => r.to === "https://archive-fixture.invalid/article",

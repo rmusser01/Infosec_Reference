@@ -15,6 +15,9 @@ def request(flow):
     if path == '/redirect':
         flow.response = http.Response.make(302,b'',{'Location':'/article'})
         return
+    if path == '/redirect-body':
+        flow.response = http.Response.make(302,b'<p>Continue to article</p>',{'Location':'/article','Content-Type':'text/html'})
+        return
     if path == '/redirect-media':
         flow.response = http.Response.make(302,b'media-must-not-be-captured',{'Location':'/article','Content-Type':'video/mp4'})
         return
@@ -27,6 +30,8 @@ def request(flow):
         body='<title>Static archive fixture</title><nav><img src="/logo.png"></nav><main>'+BODY+'</main>'
     elif path == '/lazy':
         body='<title>Lazy figure fixture</title><main>'+BODY.replace('<img src="/figure.png"','<img loading="lazy" style="margin-top:5000px" src="/figure.png"')+'</main>'
+    elif path == '/blogger':
+        body='<title>Legacy Blogger fixture</title><nav><img src="/logo.png"></nav>'+BODY.replace('<article>','<div class="post-body entry-content" itemprop="description articleBody">').replace('</article>','</div>').replace('<img src="/figure.png"','<img loading="lazy" style="margin-top:5000px" src="/figure.png"')
     elif path == '/javascript':
         body='<title>JavaScript archive fixture</title><main id="root"></main><script src="/app.js"></script>'
     elif path == '/app.js':

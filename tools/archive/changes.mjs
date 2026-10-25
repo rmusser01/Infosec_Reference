@@ -83,7 +83,8 @@ export function waybackCatalog(rows) {
     // Reconstruct links from validated fields; never render a service-provided HTML/Markdown label.
     if (
       !/^\d{14}$/.test(row.timestamp) ||
-      !/^https?:\/\//.test(row.originalUrl)
+      !/^https?:\/\//.test(row.originalUrl) ||
+      !/^https?:\/\//.test(row.archivedUrl ?? row.originalUrl)
     )
       continue;
     const url = row.originalUrl
@@ -91,8 +92,13 @@ export function waybackCatalog(rows) {
       .replaceAll("<", "%3C")
       .replaceAll("\n", "%0A")
       .replaceAll("\r", "%0D");
+    const archivedUrl = (row.archivedUrl ?? row.originalUrl)
+      .replaceAll(">", "%3E")
+      .replaceAll("<", "%3C")
+      .replaceAll("\n", "%0A")
+      .replaceAll("\r", "%0D");
     lines.push(
-      `- <${url}> — [Wayback snapshot ${row.timestamp}](<https://web.archive.org/web/${row.timestamp}/${url}>)`,
+      `- <${url}> — [Wayback snapshot ${row.timestamp}](<https://web.archive.org/web/${row.timestamp}/${archivedUrl}>)`,
     );
   }
   return lines.join("\n") + "\n";
@@ -205,6 +211,7 @@ if (
     }
     const saved = await saveWayback(job.originalUrl, {
       prior,
+      finalUrl: local?.finalUrl,
       record: async (row) => {
         const entry = {
           ...row,

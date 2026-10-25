@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { saveWayback } from "../../tools/archive/wayback.mjs";
+import { waybackCatalog } from "../../tools/archive/changes.mjs";
 const url = "https://example.org/article?q=1";
 const lookupHost = async () => [{ address: "93.184.215.14" }];
 const response = (body, status = 200, headers = {}) =>
@@ -8,6 +9,37 @@ const response = (body, status = 200, headers = {}) =>
     status,
     headers,
   });
+
+test("Wayback canonical snapshot identities require an observed final URL and catalog links use that identity", async () => {
+  const originalUrl = "http://example.blogspot.fr/post";
+  const finalUrl = "https://example.blogspot.com/post";
+  const options = {
+    prior: { state: "pending", jobId: "spn2-canonical" },
+    lookupHost,
+    fetchImpl: async () =>
+      response({
+        status: "success",
+        timestamp: "20261025120000",
+        original_url: finalUrl,
+      }),
+  };
+  const result = await saveWayback(originalUrl, { ...options, finalUrl });
+  assert.equal(result.state, "saved");
+  assert.equal(result.archivedUrl, finalUrl);
+  assert.equal(
+    result.archiveUrl,
+    "https://web.archive.org/web/20261025120000/" + finalUrl,
+  );
+  assert(waybackCatalog([result]).includes("](<" + result.archiveUrl + ">)"));
+  for (const candidate of [undefined, "https://unrelated.example/post"]) {
+    const rejected = await saveWayback(originalUrl, {
+      ...options,
+      finalUrl: candidate,
+    });
+    assert.equal(rejected.state, "pending");
+    assert.equal(rejected.reason, "Unconfirmed snapshot identity");
+  }
+});
 test("Wayback requires job success, resumes saved jobs, and never mistakes a login/error page for a snapshot", async () => {
   const requests = [],
     records = [];

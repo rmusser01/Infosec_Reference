@@ -56,6 +56,20 @@ test("missing replay evidence does not turn verified capture integrity into fail
     assert.equal(result.captureState, "complete");
     assert.equal(result.replayState, "failed");
     assert.equal(result.storageState, "temporary");
+    const originalRequested = prior.requestedUrl;
+    prior.requestedUrl = "https://example.org/redirect";
+    snapshot.requestedUrl = snapshot.url;
+    await writeFile(join(directory, "attempt.json"), JSON.stringify(prior));
+    await writeFile(
+      join(directory, "capture/article.json"),
+      JSON.stringify(snapshot),
+    );
+    assert.equal(
+      (await recheckCapture(directory, { runtime })).captureState,
+      "complete",
+      "canonical capture metadata must not be overwritten by the original source URL",
+    );
+    prior.requestedUrl = originalRequested;
     const replay = {
       integrityState: "verified",
       records: [

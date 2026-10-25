@@ -20,7 +20,7 @@ export async function recheckCapture(
     snapshot = JSON.parse(
       await readFile(join(directory, "capture/article.json"), "utf8"),
     );
-    snapshot.requestedUrl = prior.requestedUrl;
+    snapshot.requestedUrl ??= prior.captureSeedUrl ?? prior.requestedUrl;
     Object.assign(attempt, verifyCapture(snapshot, integrity, null));
   } catch (error) {
     return {

@@ -171,8 +171,19 @@ export async function captureUrl(job, policy, { directory, runtime } = {}) {
         article.state === "access-wall" ? "inaccessible" : "deferred";
       attempt.contentState = article.state;
     } else {
+      const captureSeed = new URL(article.url);
+      if (
+        !["http:", "https:"].includes(captureSeed.protocol) ||
+        captureSeed.username ||
+        captureSeed.password ||
+        !["", "80", "443"].includes(captureSeed.port)
+      )
+        throw Error("Unsafe final capture URL");
+      captureSeed.hash = "";
+      attempt.captureSeedUrl = captureSeed.href;
       await runtime.configure([requested.href, article.url], article.images);
-      const capture = await runtime.run("capture", requested.href);
+      // Discovery keeps redirect provenance; direct capture avoids recorder-omitted redirect bodies.
+      const capture = await runtime.run("capture", attempt.captureSeedUrl);
       const captured = JSON.parse(
         await readFile(join(capture, "article.json"), "utf8"),
       );

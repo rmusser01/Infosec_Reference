@@ -60,3 +60,32 @@ test("HTTP-200 challenge/login pages and ambiguous body-only layouts cannot beco
     }
   }
 });
+
+test("explicit articleBody microdata identifies legacy Blogger text and figures without sidebar images", () => {
+  const dom = new JSDOM(
+    `<title>Legacy Blogger post</title><aside><img src="/profile.png"></aside>
+    <div class="post-body entry-content" itemprop="description articleBody"><p>${"Specific article text. ".repeat(12)}</p>
+    <img src="/figure.png" loading="lazy"><div class="ads"><img src="/advert.png"></div></div>
+    <div class="post-footer">Share and subscribe</div>`,
+    { url: "https://example.blogspot.com/2015/post.html" },
+  );
+  try {
+    const article = readArticle(dom.window.document);
+    assert.equal(article.state, "article");
+    assert(article.text.startsWith("Specific article text."));
+    assert(!article.text.includes("Share and subscribe"));
+    assert.deepEqual(article.images, [
+      "https://example.blogspot.com/figure.png",
+    ]);
+  } finally {
+    dom.window.close();
+  }
+  const ambiguous = new JSDOM(
+    `<div itemprop="articleBody">${"One post ".repeat(25)}</div><div itemprop="articleBody">${"Other post ".repeat(25)}</div>`,
+  );
+  try {
+    assert.equal(readArticle(ambiguous.window.document).state, "needs-review");
+  } finally {
+    ambiguous.window.close();
+  }
+});

@@ -17,8 +17,10 @@ export function readArticle(document = globalThis.document) {
       links: [],
       text: "",
     };
+  const bodies = document.querySelectorAll('[itemprop~="articleBody"]');
   const root =
     document.querySelector("article") ??
+    (bodies.length === 1 ? bodies[0] : null) ??
     document.querySelector('main,[role="main"]');
   if (!root)
     return {

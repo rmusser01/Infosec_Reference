@@ -9,6 +9,7 @@ export async function saveWayback(
   originalUrl,
   {
     prior,
+    finalUrl,
     fetchImpl = fetch,
     lookupHost = lookup,
     record = async () => {},
@@ -144,15 +145,23 @@ export async function saveWayback(
       if (data.status === "success") {
         if (
           !/^\d{14}$/.test(data.timestamp) ||
-          data.original_url?.split("#")[0] !== originalUrl.split("#")[0]
+          ![originalUrl, finalUrl]
+            .filter(Boolean)
+            .some(
+              (url) => url.split("#")[0] === data.original_url?.split("#")[0],
+            )
         )
           throw Error("Unconfirmed snapshot identity");
         return finish({
           state: "saved",
           jobId,
           timestamp: data.timestamp,
+          archivedUrl: data.original_url,
           archiveUrl:
-            "https://web.archive.org/web/" + data.timestamp + "/" + originalUrl,
+            "https://web.archive.org/web/" +
+            data.timestamp +
+            "/" +
+            data.original_url,
         });
       }
       if (data.status !== "pending")

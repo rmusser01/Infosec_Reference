@@ -1,6 +1,6 @@
 # Implementation status
 
-Branch: `codex/generated-navigation` (desktop continuation; original export: `improve-generated-navigation`). Source base: `af8b68e2194e695c542eb76fba762d2f0a19a0dc`. Repository changes remain local. Two authorized public references have confirmed Internet Archive snapshots; no Git push or site deployment has occurred.
+Branch: `codex/generated-navigation` (desktop continuation; original export: `improve-generated-navigation`). Source base: `af8b68e2194e695c542eb76fba762d2f0a19a0dc`. Repository changes remain local. Five authorized public references have confirmed Internet Archive snapshots; no Git push or site deployment has occurred.
 
 ## Implemented
 
@@ -18,7 +18,7 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 
 Initial internal errors: 334. After pilot: 305 legacy errors remained. After Cloud/Containers: 296 remained. After foundations: 274 remained. After assessment references: 260 remained. After testing/development references: 200 remained. After defense/web/red-team references: 122 remained. After systems references: 80 remained. After network references: 46 remained. After the final legacy-debt group: zero internal navigation errors remain across all 102 audited pages, and the legacy-error baseline is empty. Warnings remain separate: 15 orphan-page and 21 repeated-destination findings.
 
-Current provisional resource candidates: 1,200 PDFs, 1,458 videos, 23 other non-text; 19,057 URLs remain unknown until response/content confirmation. These are source-derived inventory counts, not verified content types or download counts.
+Current provisional resource candidates: 1,200 PDFs, 1,458 videos, 23 other non-text; 19,057 URLs have unknown source-derived type candidates. Capture-response evidence refines the archive plan separately; these inventory counts are not verified content types or download counts.
 
 Automated tests exercise the actual checked-in Docsify compiler and application in jsdom under `/docs/`, sidebar/deep routing, and distinct search phrases. Separate Chromium checks are recorded below; production deployment remains unverified.
 
@@ -26,7 +26,7 @@ Automated tests exercise the actual checked-in Docsify compiler and application 
 
 - Navigation rollout, shared heading rendering, and favicon repair are complete locally. Production deployment/cache behavior remains unverified.
 - Choose durable archive and backup destinations, verify recovery/replay from them, and calibrate the bounded engine against more layouts/figures before scaling. Remote object-store uploading and full-crawl scheduling remain unimplemented. The policy now enforces the local pilot's supported bounds; it does not establish storage durability.
-- Continue bounded new-link batches locally under the clarified retention policy; durable storage is not required to make local progress. Two public references have compact local capture/replay evidence, and two have confirmed Wayback snapshots. Broad external validation and full collection preservation have not run. Strict content checks leave the Eli reference partial for manual review. Commit CI receipts/catalog to make future snapshots discoverable; the workflow does not write to the repository.
+- Continue bounded new-link batches locally under the clarified retention policy; durable storage is not required to make local progress. Six public references have compact local archives, and five have confirmed Wayback snapshots. Broad external validation and full collection preservation have not run. Strict content checks leave the Eli reference partial for manual review. Commit CI receipts/catalog to make future snapshots discoverable; the workflow does not write to the repository.
 - Separately scoped later processing: PDF extraction/OCR, video captions/transcription, other extractors, and extracted-content search indexing. These are not prerequisites for completing navigation.
 
 ## Engineering decisions
@@ -225,3 +225,11 @@ The live Git-based batch processed the four added/corrected URLs relative to the
 One fresh review found three Important issues; all have RED→GREEN fixes for deferred-job resume, atomic compact manifests, and symlink-safe fixed paths. DNS failures also retain safe retry times. Hosted CI, independent durable storage/recovery and broad layout calibration remain pending. No repository push or site deployment occurred.
 
 Final verification: **105/105 tests**, five wrapped Python policy cases, two offline warcio corruption/truncation tests, and all eight controlled Docker cases pass. All three retained public captures pass fresh primary integrity rechecks with recorded QA outcomes; Eli remains partial. Navigation: 102 pages / 29,165 links / zero errors, with unchanged 15 orphan and 21 repeated-destination warnings. Formatting and `git diff --check` pass. No duplicate WACZ, replay archives or temporary proxy private keys remain in local output; raw captures stay ignored.
+
+## Next three-link local batch — 2026-10-25
+
+Batch `2d5228a9-5892-4a7c-8579-a07cc585fefa` processed the next three unattempted webpage candidates in inventory order: the PHP vulnerability article, command-execution article and reverse-engineering online-games article on legacy Blogger. All three now have verified local text, all 40 selected article images, WARC integrity and offline replay, plus confirmed Wayback snapshots. Two retain partial capture flags solely for blocked favicon responses; the article checks pass. Current batch output is about 2.0 MB including provenance, with redundant failed retries and temporary bundles discarded. The reader catalog now has five confirmed snapshots.
+
+The live run required narrow fixes for unique articleBody markup, observed canonical Wayback identities and canonical capture seeding that avoids recorder-omitted redirect bodies while keeping strict integrity checks. Extraction/identity/recheck regressions are RED→GREEN; Blogger and nonempty-redirect Docker fixtures pass, and the latter reproduced the original integrity failure before the fix. The full suite passes **107/107**, the two offline corruption/truncation tests pass, and navigation remains at zero errors. See `docs/archive-execution.md` for review boundaries and detailed outcomes.
+
+Current inventory: three complete local captures, three partial, three deferred, 21,729 not attempted; zero durably preserved. Six local archives have response evidence; five source URLs have confirmed Wayback snapshots. Remaining storage, deployment, broader calibration and extraction work is unchanged. No repository push occurred.

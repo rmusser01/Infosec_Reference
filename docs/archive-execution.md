@@ -100,3 +100,27 @@ Final: fixed interrupted manifest replacement — `interrupted final manifest re
 Final: fixed unsafe fixed paths — `change CLI rejects symlinked catalog and metadata paths without touching unrelated files` RED→GREEN; suite 105/105.
 
 Final verification: **105/105** Node tests pass, including five Python policy cases through the wrapper. Two actual warcio corruption/truncation/length tests pass offline. All eight real Docker fixture cases pass with payload cleanup; actual public captures exercise the final compact lifecycle. Navigation audits 102 pages / 29,165 links with zero errors and unchanged 15 orphan / 21 repeated-destination warnings. Formatting and `git diff --check` pass. Three retained public archives pass current primary-object integrity/content rechecks and retain their recorded QA outcomes; Eli remains partial.
+
+## Next local batch — 2026-10-25
+
+User authorized the next local batch with text/article figures retained and source URLs submitted to Internet Archive. Batch `2d5228a9-5892-4a7c-8579-a07cc585fefa` selects the next three unattempted webpage candidates in stable inventory order. It retains about **2.0 MB** including provenance and summaries; verified current objects total **1,457,515 bytes**, with 38,080 extracted text characters and 40 selected article images.
+
+| Original reference | Local content / integrity / offline replay | Capture flag | Article figures | Confirmed Wayback timestamp |
+|---|---|---|---|---|
+| `http://0x191unauthorized.blogspot.fr/2015/04/is-php-vulnerable-and-under-what.html` | Verified / verified / verified | Complete | 7 | `20261025223550` |
+| `http://0x90909090.blogspot.fr/2015/07/no-one-expect-command-execution.html` | Verified / verified / verified | Partial: excluded favicon requests | 1 | `20261025223614` |
+| `http://0xbaadf00dsec.blogspot.com/2016/01/reverse-engineering-online-games.html` | Verified / verified / verified | Partial: excluded favicon requests | 32 | `20261025223747` |
+
+All three confirmed links appear in `docs/archives/README.md`. The two `.fr` originals redirect to `.com` URLs; receipts preserve the original reference and use the actual confirmed canonical URL for the snapshot destination. Each source URL was submitted once; later checks resumed its existing job ID.
+
+The batch exposed three small compatibility defects, fixed with RED→GREEN evidence:
+
+- Legacy Blogger uses a single explicit `itemprop="description articleBody"` element, without article/main tags. The extractor now recognizes a unique articleBody fallback, with the existing article/figure exclusions and driver lazy-image waits. The extraction regression fails before the fix and passes after it; an actual Blogger-shaped Docker fixture passes text, figure, WARC and offline replay checks. Multiple ambiguous articleBody-only layouts remain review cases.
+- Internet Archive may report a successful job under the final redirected URL. The client accepts a different identity only when it matches the final URL observed locally, retains that identity as `archivedUrl`, and renders the canonical destination in the catalog. Tests reject unrelated or unobserved identities. Both actual redirected jobs were confirmed by ID without another POST.
+- Browsertrix can omit redirect bodies while retaining their original Content-Length headers. The strict verifier correctly rejected those recorded responses. Capture now starts at the validated final HTTP(S) URL after discovery, preserving original URLs and redirect chains in metadata. Recheck uses the recorded capture seed for text identity. The actual nonempty-redirect Docker fixture and canonical recheck regression both failed before the change and pass after it. Digest/length/truncation checks remain unchanged and their two offline corruption tests still pass.
+
+After all current captures passed fresh primary/content/recorded-QA rechecks, 295,186 bytes of redundant failed retry payloads were removed only after comparing their article text and selected image URLs exactly with verified replacements and rehashing the objects. Their local manifests identify the verified replacement and discarded-superseded storage; original execution/hash receipts remain historical. Failed/deferred provenance remains visible. No WACZ bundles, replay archives, fixture payloads or temporary proxy private keys remain.
+
+Verification: **107/107** Node tests pass, including wrapped Python policy checks. Real Docker Blogger and nonempty-redirect cases pass, including cleanup and compact-object rechecks; two offline warcio corruption/truncation tests pass. Navigation remains 102 pages / 29,165 links / zero errors, with unchanged warnings. Formatting and `git diff --check` pass. Fresh focused review of Blogger extraction/driver changes found no actionable issue; the later canonical-identity and capture-seed corrections were coordinator-verified through their failing/passing regressions, actual jobs and actual Docker fixture, rather than independently re-reviewed. The prior full eight-case sweep is historical; this batch reran the two relevant integration cases.
+
+Inventory accounting now has three complete, three partial, three deferred and 21,729 unattempted URLs, with zero durable preservation claims. Six observed HTML pages route to web capture; 19,051 remain type-confirmation jobs, alongside the unchanged non-text queues. Five total Wayback snapshots are confirmed; three older DNS failures remain deferred. No push, hosted-CI execution, full collection run or durable backup qualification occurred.

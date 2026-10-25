@@ -334,7 +334,7 @@
 - **SANS 10 Cybersecurity Writing Mistakes(Videos)**
   - URL: <https://www.youtube.com/playlist?list=PLtgaAEEmVe6As4oO81VRtC-27yWQrzWI->
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:79`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:95`; references: 1.
   - ID: `d3a8cb99c4de78d43f4c`.
 - **ZAP Deep Dive Series - StackHawk**
   - URL: <https://www.youtube.com/playlist?list=PLz_NN8o2uh8AQ7VyUEN1GCCnpzl5_FaJA>
@@ -579,7 +579,7 @@
 - **Ma­gne­tic Side- and Co­vert-Chan­nels using Smart­pho­ne Ma­gne­tic Sen­sors**
   - URL: <https://www.youtube.com/watch?v=-LZJqRXZ2OM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:51`; references: 1.
+  - Source: `Draft/Exfiltration.md:38`; references: 1.
   - ID: `039141d3ab8bdbe7a94b`.
 - **The Fundamentals of AWS Cloud Security - Becky Weiss(AWS re:Inforce 2019)**
   - URL: <https://www.youtube.com/watch?v=-ObImxw1PmI>
@@ -599,7 +599,7 @@
 - **Emanate Like A Boss: Generalized Covert Data Exfiltration With Funtenna**
   - URL: <https://www.youtube.com/watch?v=-YXkgN2-JD4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:42`; references: 1.
+  - Source: `Draft/Exfiltration.md:29`; references: 1.
   - ID: `bf7a69de27276e7f3d03`.
 - **(in)Secure Development - Why some product teams are great and others … aren’t... - Koen Hendrix(AppSecCali 2019)**
   - URL: <https://www.youtube.com/watch?v=-bZM_48Ghv0&t=0s&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=25>
@@ -619,7 +619,7 @@
 - **Data Exfiltration: Secret Chat Application Using Wi-Fi Covert Channel by Yago Hansen at the BSidesMunich 2017**
   - URL: <https://www.youtube.com/watch?v=-cSu63s4zPY>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:44`; references: 1.
+  - Source: `Draft/Exfiltration.md:31`; references: 1.
   - ID: `fcc0db58a64dc36b70a9`.
 - **Are We Really Safe? - Bypassing Access Control Systems - Dennis Maldonado(Defcon23)**
   - URL: <https://www.youtube.com/watch?v=-cZ7eDV2n5Y>
@@ -674,7 +674,7 @@
 - **Dark Arts of OSINT Skydogcon**
   - URL: <https://www.youtube.com/watch?v=062pLOoZhk8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Osint.md:165`; references: 1.
+  - Source: `Draft/Osint.md:124`; references: 1.
   - ID: `9cac3a7a2c5dab7cf013`.
 - **Fraud detection and forensics on telco networks - Hack.lu 2016**
   - URL: <https://www.youtube.com/watch?v=09EAWT_F1ZA&app=desktop>
@@ -1234,7 +1234,7 @@
 - **Global Adversarial Capability Modeling**
   - URL: <https://www.youtube.com/watch?v=56T3JN09SrY>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/threatmodel.md:43`; references: 1.
+  - Source: `Draft/threatmodel.md:30`; references: 1.
   - ID: `753d4295c81171b66470`.
 - **Talk at CCC31**
   - URL: <https://www.youtube.com/watch?v=5BrdX7VdOr0>
@@ -1899,7 +1899,7 @@
 - **How to Use Python to Spy on Your Friends: Web APIs, Recon ng, & OSINT**
   - URL: <https://www.youtube.com/watch?v=BOjz7NfsLpA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Osint.md:169`; references: 1.
+  - Source: `Draft/Osint.md:128`; references: 1.
   - ID: `bded7fc8a4f7d9059fe8`.
 - **HotPics 2021 - Emil Lerner(ZeroNights2021)**
   - URL: <https://www.youtube.com/watch?v=BQVoHLfAc8A>
@@ -1949,7 +1949,7 @@
 - **Adam Shostack - Pentesting: Lessons from Star Wars**
   - URL: <https://www.youtube.com/watch?v=BfWWryF8M7E&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=13>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/threatmodel.md:44`; references: 1.
+  - Source: `Draft/threatmodel.md:31`; references: 1.
   - ID: `e7cdf097d2788b7b7893`.
 - **STAR Webcast: Spooky RYUKy: The Return of UNC1878**
   - URL: <https://www.youtube.com/watch?v=BhjQ6zsCVSc>
@@ -2069,7 +2069,7 @@
 - **Corporate Espionage: Gathering Actionable Intelligence Via Covert Operations - Brent White - Defcon22**
   - URL: <https://www.youtube.com/watch?v=D2N6FclMMTg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Osint.md:168`; references: 1.
+  - Source: `Draft/Osint.md:127`; references: 1.
   - ID: `d14b22c92c792b2dd0d7`.
 - **How to Build a Pentest Dropbox - TheCyberMentor(2020)**
   - URL: <https://www.youtube.com/watch?v=D2t4ADQnBEk>
@@ -2129,7 +2129,7 @@
 - **Covert Timing Channels Based on HTTP Cache Headers - Video Presentation**
   - URL: <https://www.youtube.com/watch?v=DOAG3mtz7H4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:37`; references: 2.
+  - Source: `Draft/Exfiltration.md:22`; references: 2.
   - ID: `b10defc4cef3b8ef3850`.
 - **Tactical Exploiation - H.D. Moore, Valsmith(Defcon15)**
   - URL: <https://www.youtube.com/watch?v=DPwY5FylZfQ>
@@ -2279,7 +2279,7 @@
 - **Weaponizing Corporate Intel - Mike Felch and Beau Bullock(B-Sides Orlando 2019)**
   - URL: <https://www.youtube.com/watch?v=EfVXgvABkGg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Osint.md:75`; references: 1.
+  - Source: `Draft/Osint.md:477`; references: 1.
   - ID: `60f486912761d85143a4`.
 - **When to Test and How to Test It - Bruce Potter - Derbycon7**
   - URL: <https://www.youtube.com/watch?v=Ej97WyEMRkI>
@@ -2409,7 +2409,7 @@
 - **A presentation or presentations because presenting - Jason Blanchard - Derbycon7**
   - URL: <https://www.youtube.com/watch?v=FcgM7c0vzcE&app=desktop>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:275`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:341`; references: 1.
   - ID: `686ea012729416f518d5`.
 - **Ethernet Briefings in April 1978 by Bob Metcalfe**
   - URL: <https://www.youtube.com/watch?v=Fj7r3vYAjGY>
@@ -2529,7 +2529,7 @@
 - **Itzik Kotler | Goodbye Data, Hello Exfiltration - BSides Orlando**
   - URL: <https://www.youtube.com/watch?v=GwaIvm2HJKc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:45`; references: 1.
+  - Source: `Draft/Exfiltration.md:32`; references: 1.
   - ID: `bd28bd37d98ea6e50b8b`.
 - **The Art of C2: Myths vs. Reality - Yossi Sassi, Dor Amit(BSidesTLV2020)**
   - URL: <https://www.youtube.com/watch?v=Gy_UKIzYohY&feature=share>
@@ -2709,7 +2709,7 @@
 - **Boston BSides - Simple Data Exfiltration in a Secure Industry Environment - Phil Cronin**
   - URL: <https://www.youtube.com/watch?v=IofUpzYZNko>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:40`; references: 1.
+  - Source: `Draft/Exfiltration.md:27`; references: 1.
   - ID: `f8bcbda4dd27ac0d4602`.
 - **Catch Me if You Can - Eduardo Arriols(DefconSafeMode RTV2020**
   - URL: <https://www.youtube.com/watch?v=IrX5uVCgUGM&list=PLruly0ngXhPHlQ0ebMbB3XuKVJPq3B0qS&index=24&t=0s>
@@ -3074,7 +3074,7 @@
 - **How to Write Papers So People Can Read Them - Derek Dreyer**
   - URL: <https://www.youtube.com/watch?v=L_6xoMjFr70>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:54`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:64`; references: 1.
   - ID: `e34baf4583f46b5beab3`.
 - **Go With the Flow Strategies for Successful Social Engineering - Chris Silvers**
   - URL: <https://www.youtube.com/watch?v=Lfm1mBrcuhY&feature=player_embedded>
@@ -3264,7 +3264,7 @@
 - **How to Disclose or Sell an Exploit - DEF CON 21 - James Denaro**
   - URL: <https://www.youtube.com/watch?v=N1Xj3f4felg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:352`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:435`; references: 1.
   - ID: `d7372f1234e8e1314ace`.
 - **How to build your own Infosec Company - Mario Heiderich(nullcon Goa2019)**
   - URL: <https://www.youtube.com/watch?v=N2JG7qIlpi0&feature=youtu.be>
@@ -3299,7 +3299,7 @@
 - **Video Presentation**
   - URL: <https://www.youtube.com/watch?v=NUueNT1svb8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:179`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:220`; references: 1.
   - ID: `1f3753ab1acd659e0caa`.
 - **EDR Evasion and OODA Loops by Jackson T.(x33fcon2021)**
   - URL: <https://www.youtube.com/watch?v=NWEpE6_iAvE&list=PL7ZDZo2Xu330UamX3LZeOEGE_VniwyLS5&index=13>
@@ -3734,7 +3734,7 @@
 - **Inter-VM Data Exfiltration: The Art of Cache Timing Covert Channel on x86 Multi-Core - Etienne Martineau**
   - URL: <https://www.youtube.com/watch?v=SGqUGHh3UZM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:55`; references: 1.
+  - Source: `Draft/Exfiltration.md:42`; references: 1.
   - ID: `e9b018508c33020e3f7f`.
 - **Elevating your Windows Privileges Like a Boss! - Jake Williams(WWHF2019)**
   - URL: <https://www.youtube.com/watch?v=SHdM197sbIE>
@@ -3814,12 +3814,12 @@
 - **Pwning People Personally - Josh Schwartz**
   - URL: <https://www.youtube.com/watch?v=T2Ha-ZLZTz0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Osint.md:172`; references: 2.
+  - Source: `Draft/Osint.md:131`; references: 2.
   - ID: `f148c3984044614162e6`.
 - **In Plain Sight: The Perfect Exfiltration Technique - Itzik Kotler and Amit Klein - HiTB2016**
   - URL: <https://www.youtube.com/watch?v=T6PscV43C0w>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:47`; references: 2.
+  - Source: `Draft/Exfiltration.md:34`; references: 2.
   - ID: `127e420cb7a43394b825`.
 - **Gargoyle Hunting In-Depth — by Aliz Hammond(Infosec in the City 2020)**
   - URL: <https://www.youtube.com/watch?v=T73GK1Y8jLU>
@@ -3999,7 +3999,7 @@
 - **How To Speak by Patrick Winston(MIT)**
   - URL: <https://www.youtube.com/watch?v=Unzc731iCUY>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:276`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:342`; references: 1.
   - ID: `6796890a7aa056a88707`.
 - **Securing Windows with Group Policy Josh - Rickard - Derbycon7**
   - URL: <https://www.youtube.com/watch?v=Upeaa2rgozk&index=66&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3>
@@ -4349,7 +4349,7 @@
 - **How to Disclose an Exploit Without Getting in Trouble DEF CON 22 - Jim Denaro and Tod Beardsley**
   - URL: <https://www.youtube.com/watch?v=Y8Cpio6z9qA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:353`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:436`; references: 1.
   - ID: `6e65c53c2993c2d354da`.
 - **Video - A Journey From JNDI/LDAP Manipulation to Remote Code Execution Dream Land - BH USA16**
   - URL: <https://www.youtube.com/watch?v=Y8a5nB-vy78>
@@ -4489,7 +4489,7 @@
 - **Selling 0-Days to Governments and Offensive Security Companies - Maor Shwartz(BHUSA2019)**
   - URL: <https://www.youtube.com/watch?v=ZDHHGZlEfsQ&feature=emb_logo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:357`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:444`; references: 1.
   - ID: `da7765d2dabf3fa405ba`.
 - **Automating User Interaction With Sheepl: Soup To Nuts - Matt Lorentzen(44con2019)**
   - URL: <https://www.youtube.com/watch?v=ZErvmrP4UCg>
@@ -4874,7 +4874,7 @@
 - **\[DS15\] Bridging the Air Gap Data Exfiltration from Air Gap Networks - Mordechai Guri & Yisroel Mirsky**
   - URL: <https://www.youtube.com/watch?v=bThJEX4l_Ks>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:53`; references: 2.
+  - Source: `Draft/Exfiltration.md:40`; references: 2.
   - ID: `50dac5fedccacd0617c3`.
 - **How To Create An Active Directory Forest With PowerShell - Adam Bertram(2018)**
   - URL: <https://www.youtube.com/watch?v=bWF1-rhPh5E>
@@ -4969,7 +4969,7 @@
 - **Practical OSINT - Shane MacDougall**
   - URL: <https://www.youtube.com/watch?v=cLmEJLy7dv8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Osint.md:170`; references: 2.
+  - Source: `Draft/Osint.md:129`; references: 2.
   - ID: `275bbeb11cd061affce8`.
 - **Password Cracking 201: Beyond the Basics - Royce Williams(2017)**
   - URL: <https://www.youtube.com/watch?v=cSOjQI0qbuU>
@@ -4999,7 +4999,7 @@
 - **Hack for Show, Report for Dough - Brian B. King(WWHF 2018)**
   - URL: <https://www.youtube.com/watch?v=c_LBWqNDY0M>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:183`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:224`; references: 1.
   - ID: `9cced10e69ed173a2c5f`.
 - **Sysmon Monitoring Different Way - Marek Mikita(BSides Vancouver(2021)**
   - URL: <https://www.youtube.com/watch?v=cxZ8m2cBgho&list=PLWHo0G0HmBgdwICgoEOdWHkDD6C9FJuhw&index=24>
@@ -6199,7 +6199,7 @@
 - **Cognitive Bias and Critical Thinking in Open Source Intelligence - Defcamp 2014**
   - URL: <https://www.youtube.com/watch?v=pVAM21UERLU&index=24&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Osint.md:164`; references: 1.
+  - Source: `Draft/Osint.md:123`; references: 1.
   - ID: `077d2fa639b58c68b8d5`.
 - **Hunting PowerShell Attacks on The Open Internet - Paul Melson(2019)**
   - URL: <https://www.youtube.com/watch?v=pY-xTjJl-yw&list=PLEJJRQNh3v_PF6cecq0ES2w25JtoG631g&index=16>
@@ -6844,7 +6844,7 @@
 - **Can You Hear Me Now?!? Thoery of SIGTRAN Stego. BSidesPHX 2012**
   - URL: <https://www.youtube.com/watch?v=vzpzL-UlpdA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:49`; references: 1.
+  - Source: `Draft/Exfiltration.md:36`; references: 1.
   - ID: `95915d86321f9d805b60`.
 - **HTTP Desync Attacks: Smashing into the Cell Next Door - James Kettle(DEFCON27)**
   - URL: <https://www.youtube.com/watch?v=w-eJM2Pc0KI>
@@ -6979,7 +6979,7 @@
 - **Threat Modeling 101 - Dan Tentler**
   - URL: <https://www.youtube.com/watch?v=wu8SDWao_Ns>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/threatmodel.md:47`; references: 1.
+  - Source: `Draft/threatmodel.md:34`; references: 1.
   - ID: `9a185dcecbabfc00b44f`.
 - **Confidently Measuring Attack Technique Coverage by Asking Better Questions - Matt Graeber(BSides Augusta2021)**
   - URL: <https://www.youtube.com/watch?v=x03ijHF0UtQ>

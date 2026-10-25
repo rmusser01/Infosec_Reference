@@ -6,7 +6,7 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 
 - Shared Markdown parser and offline navigation audit, including explicit HTML anchors and GitHub heading fragments.
 - One manifest for 48 main topics, generated README/site topic navigation, sidebar, selective alphabetical subject index, and full reference search paths.
-- Generated ToCs and real navigable headings for nine pages: AD, DFIR, logging/monitoring/threat hunting, Cloud, Containers, Basic, Building a Lab, Career, and Classes/Training; original external URL tokens and explicit anchor names are regression-checked.
+- Generated ToCs and real navigable headings for thirteen pages: AD, DFIR, logging/monitoring/threat hunting, Cloud, Containers, Basic, Building a Lab, Career, Classes/Training, Documentation/Reporting, Threat Modeling, OSINT, and Exfiltration; original external URL tokens and explicit anchor names are regression-checked.
 - Docsify configuration repair and narrow search-plugin fixes for empty heading bodies, HTML titles, and explicit-anchor result destinations.
 - Internal navigation checks with individual legacy exemptions and stale-exemption detection; read-only CI workflow.
 - Parser-generated processing lists and a separate progress ledger that survives regeneration.
@@ -14,15 +14,15 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 
 ## Measured results
 
-Initial internal errors: 334. After pilot: 305 legacy errors remained. After Cloud/Containers: 296 remained. After the foundations group: 274 legacy error occurrences remain in other pages; managed navigation and all nine migrated pages have zero internal errors. The audit intentionally continues to report that debt.
+Initial internal errors: 334. After pilot: 305 legacy errors remained. After Cloud/Containers: 296 remained. After foundations: 274 remained. After assessment references: 260 legacy error occurrences remain in other pages; managed navigation and all thirteen migrated pages have zero internal errors. The audit intentionally continues to report that debt.
 
 Current provisional resource candidates: 1,199 PDFs, 1,458 videos, 23 other non-text; 19,066 URLs remain unknown until response/content confirmation. These are source-derived inventory counts, not verified content types or download counts.
 
-Functional tests exercise the actual checked-in Docsify compiler and application in jsdom under `/docs/`, sidebar/deep routing, and distinct search phrases. This is not native-browser visual QA or a production deployment check.
+Automated tests exercise the actual checked-in Docsify compiler and application in jsdom under `/docs/`, sidebar/deep routing, and distinct search phrases. Separate Chromium checks are recorded below; production deployment remains unverified.
 
 ## Remaining work
 
-- Continue migrating remaining pages and retiring their legacy-error entries in reviewable groups. Pilot browser review, Cloud/Containers, and the four-page foundations group are complete.
+- Continue migrating remaining pages and retiring their legacy-error entries in reviewable groups. Pilot browser review, Cloud/Containers, foundations, and the four-page assessment-reference group are complete.
 - Configure Browsertrix on the available Docker runtime and choose a durable archive destination; implement the enforced capture adapter, article-image filtering, WARC verification, offline replay, and storage/retrieval pilot. The archive policy file describes intent, not implemented enforcement.
 - Run external batches with evidence-aware capture/queue routing. No full external validation or web capture has run.
 - Implement PDF extraction/OCR, video captions/transcription, other extractors, and search indexing in later processing stages.
@@ -86,3 +86,17 @@ Starting checkpoint: `9b8f17a`; continued in the same requested checkout on `cod
 Remaining work continues in reviewable page groups. Capture tooling, durable storage, external batches, and later extraction/search processing are unchanged and pending.
 
 Foundations final verification: `npm test` passed 43/43 on Node.js 24.18.0; `npm run nav:check` passed with 274 baselined error occurrences and zero new/stale diagnostics; a repeated `npm run nav:generate` returned no changed paths. Resource inventories regenerated successfully. Actual Docsify comparisons after the editorial-note split retained all prior rendered external-link occurrences (Basic 468→468, lab 277→277, Career 465→466 with the intentional scheme repair, training 163→163) and all recorded legacy anchors. No external availability request or archive capture was run.
+
+## Assessment references group — 2026-10-25
+
+Starting checkpoint: `62e676c`; continued on `codex/generated-navigation` in the requested checkout.
+
+- Migrated `Draft/Docs_and_Reports.md`, `Draft/threatmodel.md`, `Draft/Osint.md`, and `Draft/Exfiltration.md`. Added managed document-order ToCs, stable `ref-reports-*`, `ref-threat-*`, `ref-osint-*`, and `ref-exfil-*` IDs, and 27 selected alphabetical subjects. Depth four exposes the existing nested writing topics, threat-model methodologies, and site-specific OSINT categories.
+- Replaced stale/empty manual ToCs, retained exact-case `Writingrfp`, and preserved the former Sort/End Sort destinations as aliases on the appropriate unsorted-resource sections. Corrected clear heading-label typos (Documentation Tools, Writing a Request for Proposal, LaTeX, Steganography) and the unclosed Import/Export title parenthesis.
+- Kept all unsorted resource references on their original pages, after organized material. Threat modeling's unlinked resource names remain too. Only the reporting To Do, OSINT source-list planning note, and exfiltration sorting instruction moved to `docs/maintenance-backlog.md`; no new resource was added, removed, or fetched.
+- Expanded preservation fixtures and actual-compiler coverage before migrating: the four migration tests and compiler test failed first, then passed. Raw HTTP(S) URL multisets, prior parsed external-link occurrences, and recorded legacy destinations are retained without a URL correction exception for this group.
+- Retired all 14 legacy errors for this group; the debt is now 260 occurrences / 252 keys. All thirteen migrated pages and managed navigation remain free of internal errors. Resource regeneration retains 21,746 URLs (1,199 PDF, 1,458 video, 23 other non-text candidates, 19,066 unknown); type/availability remain provisional.
+- Native Chromium under `/docs/` verified exact result hashes and destination headings for `Teach Technical Writing in Two Hours` → Technical Writing, `Guerrilla Threat Modelling` → STRIDE, `ExoneraTor` → Tor, and `Stegano` → Steganography. Deep-route reload succeeded; no console errors were observed.
+- Independent review found no blockers. Actual Docsify old/new comparisons retain all prior rendered external-link occurrences: reporting 166→166, threat modeling 29→29, OSINT 211→211, exfiltration 70→70. Raw URL hashes and all fixture aliases, including `Writingrfp`, were also checked. Inherited same-heading inline-anchor presentation issues remain deferred.
+
+Verification: `npm test` passed 47/47 on Node.js 24.18.0; `npm run nav:check` passed with 260 baselined errors and zero new/stale diagnostics; repeated `npm run nav:generate` reported no changes. Inventories regenerated successfully. Inherited trailing-space warnings remain; no whitespace-only sweep, external availability request, or archive capture was performed.

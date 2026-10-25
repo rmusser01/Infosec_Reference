@@ -40,3 +40,9 @@ Cloud and Containers now have generated ToCs and selected subject-index entries.
 Basic, Building a Lab, Career, and Classes/Training now have managed ToCs and selected index subjects. Basic's linked unsorted resources remain on its page, while resource-free editorial placeholders and the lab's To Do list are in the maintenance backlog. Existing resource occurrences/legacy anchors are retained, apart from the explicit addition of an HTTPS scheme to Career's existing Allen Geer destination. Basic's documentation/threat-model paths point to real Markdown files.
 
 All 22 group errors are retired; 274 error occurrences / 266 legacy keys remain elsewhere. Actual Docsify compiler checks and native Chromium search/deep routing cover these four pages. Inventories now have 21,746 unique URLs after the single intentional destination repair; provisional type counts are unchanged except unknown URLs increased to 19,066. External availability remains unverified.
+
+## Assessment references group
+
+Documentation/Reporting, Threat Modeling, OSINT, and Exfiltration now use generated ToCs and selected subject entries. Unsorted references remain on their respective pages; only maintenance instructions moved to the backlog. Existing URL multisets and legacy destinations are preserved, including Writingrfp and the former Sort/End Sort anchors. Native Chromium verified a search destination in each page and a deep-route reload.
+
+All 14 group errors are retired: 260 error occurrences / 252 legacy keys remain elsewhere. The compiler comparison retained reporting 166, threat modeling 29, OSINT 211, and exfiltration 70 rendered external-link occurrences. Inventories still contain 21,746 unique URLs; no external validation or archive capture ran.

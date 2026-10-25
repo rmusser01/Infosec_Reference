@@ -1042,8 +1042,84 @@
       "title": "Documentation & Reporting",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Technical Writing",
+          "fragment": "ref-reports-5",
+          "aliases": []
+        },
+        {
+          "label": "Writing RFCs",
+          "fragment": "ref-reports-6",
+          "aliases": []
+        },
+        {
+          "label": "Software Design Documentation/Functional Specifications",
+          "fragment": "ref-reports-7",
+          "aliases": []
+        },
+        {
+          "label": "Note Taking/Management Software",
+          "fragment": "ref-reports-12",
+          "aliases": []
+        },
+        {
+          "label": "Diagramming Tools",
+          "fragment": "ref-reports-14",
+          "aliases": []
+        },
+        {
+          "label": "Writing Reports",
+          "fragment": "ref-reports-16",
+          "aliases": []
+        },
+        {
+          "label": "Writing a Penetration Test Report",
+          "fragment": "ref-reports-18",
+          "aliases": []
+        },
+        {
+          "label": "Writing a Request for Proposal",
+          "fragment": "ref-reports-19",
+          "aliases": []
+        },
+        {
+          "label": "Writing Technical Documentation",
+          "fragment": "ref-reports-21",
+          "aliases": []
+        },
+        {
+          "label": "Writing a Playbook",
+          "fragment": "ref-reports-22",
+          "aliases": []
+        },
+        {
+          "label": "Markdown",
+          "fragment": "ref-reports-25",
+          "aliases": []
+        },
+        {
+          "label": "De/Briefing & Presenting",
+          "fragment": "ref-reports-30",
+          "aliases": []
+        },
+        {
+          "label": "Penetration Testing Collaboration",
+          "fragment": "ref-reports-35",
+          "aliases": []
+        },
+        {
+          "label": "Video Recording/Visual Documentation",
+          "fragment": "ref-reports-38",
+          "aliases": []
+        },
+        {
+          "label": "Disclosure",
+          "fragment": "ref-reports-40",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Embedded.md",
@@ -1058,8 +1134,14 @@
       "title": "Exfiltration",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Steganography",
+          "fragment": "ref-exfil-6",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Exploit_Dev.md",
@@ -1423,8 +1505,54 @@
       "title": "Open Source Intelligence Gathering - OSINT",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "OSINT Tools/Resources",
+          "fragment": "ref-osint-11",
+          "aliases": []
+        },
+        {
+          "label": "Company/People Searching",
+          "fragment": "ref-osint-12",
+          "aliases": []
+        },
+        {
+          "label": "Domain Recon",
+          "fragment": "ref-osint-16",
+          "aliases": []
+        },
+        {
+          "label": "Email Gathering/Reconnaissance",
+          "fragment": "ref-osint-17",
+          "aliases": []
+        },
+        {
+          "label": "General Meta Data",
+          "fragment": "ref-osint-20",
+          "aliases": []
+        },
+        {
+          "label": "General Data Scrapers",
+          "fragment": "ref-osint-21",
+          "aliases": []
+        },
+        {
+          "label": "Search Engine Dorks",
+          "fragment": "ref-osint-22",
+          "aliases": []
+        },
+        {
+          "label": "Network Information Search Engines",
+          "fragment": "ref-osint-23",
+          "aliases": []
+        },
+        {
+          "label": "Social Media Search/Enumeration",
+          "fragment": "ref-osint-31",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Passwords.md",
@@ -1527,8 +1655,19 @@
       "title": "Threat Modeling",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Threat Modeling Methodologies",
+          "fragment": "ref-threat-4",
+          "aliases": []
+        },
+        {
+          "label": "STRIDE",
+          "fragment": "ref-threat-7",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/UX.md",
@@ -1564,6 +1703,10 @@
     "Draft/Basic.md",
     "Draft/Building_A_Lab.md",
     "Draft/Career.md",
-    "Draft/Courses_Training.md"
+    "Draft/Courses_Training.md",
+    "Draft/Docs_and_Reports.md",
+    "Draft/threatmodel.md",
+    "Draft/Osint.md",
+    "Draft/Exfiltration.md"
   ]
 }

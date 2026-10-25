@@ -315,48 +315,6 @@
     "occurrences": 1
   },
   {
-    "path": "Draft/Docs_and_Reports.md",
-    "code": "missing-fragment",
-    "target": "#sdda",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Docs_and_Reports.md",
-    "code": "missing-fragment",
-    "target": "#writingrfp",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Docs_and_Reports.md",
-    "code": "missing-fragment",
-    "target": "#latex",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Docs_and_Reports.md",
-    "code": "missing-fragment",
-    "target": "#markdown",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Docs_and_Reports.md",
-    "code": "missing-fragment",
-    "target": "#mtools",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Docs_and_Reports.md",
-    "code": "missing-fragment",
-    "target": "#d101",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
     "path": "Draft/Embedded.md",
     "code": "missing-fragment",
     "target": "#esp2866",
@@ -374,34 +332,6 @@
     "path": "Draft/Embedded.md",
     "code": "duplicate-anchor",
     "target": "general",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Exfiltration.md",
-    "code": "missing-fragment",
-    "target": "#methods",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Exfiltration.md",
-    "code": "missing-fragment",
-    "target": "#writeups",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Exfiltration.md",
-    "code": "missing-fragment",
-    "target": "#tools",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Exfiltration.md",
-    "code": "missing-fragment",
-    "target": "#papers",
     "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
     "occurrences": 1
   },
@@ -871,34 +801,6 @@
     "path": "Draft/Network_Attacks.md",
     "code": "duplicate-anchor",
     "target": "vendor",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Osint.md",
-    "code": "missing-fragment",
-    "target": "#writeups",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Osint.md",
-    "code": "missing-fragment",
-    "target": "#talks",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Osint.md",
-    "code": "missing-fragment",
-    "target": "#reference",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Osint.md",
-    "code": "missing-fragment",
-    "target": "#misc",
     "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
     "occurrences": 1
   },

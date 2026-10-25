@@ -2,7 +2,7 @@
 
 Markdown content remains authoritative. Edit `navigation/topics.json` to add a main topic or an alphabetical subject/alias. Topic paths are relative to the repository root; subject fragments must exist in their target page. A page has one canonical topic record. Aliases provide alternate discovery labels.
 
-Use real headings for navigable subjects and bullets for resource entries. Keep a stable explicit `id` at each migrated heading; keep existing legacy anchors when renaming a heading. Explicit IDs are used for compatibility between GitHub and the checked-in Docsify renderer. Avoid duplicate IDs. Do not renumber the pilot's `ref-*` IDs when inserting new headings; assign a new unique ID instead.
+Use real headings for navigable subjects and bullets for resource entries. Keep a stable explicit `id` at each migrated heading; keep existing legacy anchors when renaming a heading. Explicit IDs are used for compatibility between GitHub and the checked-in Docsify renderer. Avoid duplicate IDs. Do not renumber existing `ref-*` IDs when inserting new headings; assign a new unique ID instead.
 
 Tables of contents follow document order and depth, while the subject index is alphabetical. Generic labels can remain in a local ToC but should not clutter the subject index.
 

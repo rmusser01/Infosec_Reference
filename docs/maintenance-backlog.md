@@ -168,3 +168,30 @@ TableTop
 
 Technical Debt
 ```
+
+## Draft/Docs_and_Reports.md
+
+```text
+To Do:
+    Add Note taking methods
+```
+
+## Draft/Osint.md
+
+Source-list planning note moved from the Sort preamble:
+
+```text
+* Add list of Sources:
+	* UCC - Uniform Commercial Code; 
+	* DOC - Current Industrial Patents; 
+	* DMV - Vehicle Ownership applications; 
+	* Patents - Patent DBs; 
+	* Operating Licenses/Permits; 
+	* Trade Journals;
+```
+
+## Draft/Exfiltration.md
+
+```text
+Sort tools into categories of type, i.e. physical network, wireless(types thereof) etc.
+```

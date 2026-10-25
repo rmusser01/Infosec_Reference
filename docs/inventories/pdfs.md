@@ -129,7 +129,7 @@
 - **A Survey of Covert Channels and Countermeasures in Computer Network Protocols**
   - URL: <http://caia.swin.edu.au/cv/szander/publications/szander-ieee-comst07.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:35`; references: 1.
+  - Source: `Draft/Exfiltration.md:20`; references: 1.
   - ID: `699b1387940aedae7009`.
 - **Large memory management vulnerabilities, Gael Delalleau, 2005**
   - URL: <http://cansecwest.com/core05/memory_vulns_delalleau.pdf>
@@ -244,7 +244,7 @@
 - **Insertion, Evasion, and Denial of Service: Eluding Network Intrusion Detection**
   - URL: <http://cs.unc.edu/~fabian/course_papers/PtacekNewsham98.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:121`; references: 2.
+  - Source: `Draft/Exfiltration.md:112`; references: 2.
   - ID: `92912a9285259aeb601b`.
 - **DNS Cache Snooping or Snooping the Cache for Fun and Profit - Luis Grangeia**
   - URL: <http://cs.unc.edu/~fabian/course_papers/cache_snooping.pdf>
@@ -369,7 +369,7 @@
 - **Self-Exfiltration: The Dangers of Browser-Enforced Information Flow Control**
   - URL: <http://ericchen.me/self_exfiltration.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:117`; references: 3.
+  - Source: `Draft/Exfiltration.md:108`; references: 3.
   - ID: `f7d0629c1bdc0f916e13`.
 - **http://eurosys2013.tudos.org/wp-content/uploads/2013/paper/Anand.pdf**
   - URL: <http://eurosys2013.tudos.org/wp-content/uploads/2013/paper/Anand.pdf>
@@ -424,7 +424,7 @@
 - **The Triple A Threat: Aggressive Autonomous Agents - the grugq**
   - URL: <http://grugq.github.io/presentations/comae-blackhat-year-of-the-worm.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/threatmodel.md:41`; references: 1.
+  - Source: `Draft/threatmodel.md:28`; references: 1.
   - ID: `73c93ba777fcd5cb3d67`.
 - **Cloud Security in Map/Reduce - An Analysis - Jason Schlesinger(2009)**
   - URL: <http://hackedexistence.com/downloads/Cloud_Security_in_Map_Reduce.pdf>
@@ -1214,7 +1214,7 @@
 - **Learn Technical Writing in Two Hours per Week - Norman Ramsey**
   - URL: <http://www.cs.tufts.edu/~nr/pubs/learn-two.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:75`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:91`; references: 1.
   - ID: `cce779a1394af3f47e6c`.
 - **Detecting Automation of Twitter Accounts: Are You a Human, Bot, or Cyborg**
   - URL: <http://www.cs.wm.edu/~hnw/paper/tdsc12b.pdf>
@@ -1469,7 +1469,7 @@
 - **Politics and the English Language - George Orwell**
   - URL: <http://www.npr.org/blogs/ombudsman/Politics_and_the_English_Language-1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:56`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:68`; references: 1.
   - ID: `5e6666af09e50ff98c20`.
 - **IDA Python - Ero Carrera**
   - URL: <http://www.offensivecomputing.net/papers/IDAPythonIntro.pdf>
@@ -1479,7 +1479,7 @@
 - **NATO Open Source Intelligence Handbook**
   - URL: <http://www.oss.net/dynamaster/file_archive/030201/ca5fb66734f540fbb4f8f6ef759b258c/NATO%20OSINT%20Handbook%20v1.2%20%2d%20Jan%202002.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Osint.md:120`; references: 1.
+  - Source: `Draft/Osint.md:71`; references: 1.
   - ID: `cb5b23ae24c6c517e0bc`.
 - **Making the Most of OSSEC**
   - URL: <http://www.ossec.net/files/Making_the_Most_of_OSSEC.pdf>
@@ -1489,7 +1489,7 @@
 - **OSINT toolbag guide - pdf**
   - URL: <http://www.phibetaiota.net/wp-content/uploads/2013/07/2013-07-11-OSINT-2ool-Kit-On-The-Go-Bag-O-Tradecraft.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Osint.md:121`; references: 1.
+  - Source: `Draft/Osint.md:72`; references: 1.
   - ID: `ed5c8db321343497774f`.
 - **The TRIBES Engine Networking Model or How to Make the Internet Rock for Multi­player Games**
   - URL: <http://www.pingz.com/wordpress/wp-content/uploads/2009/11/tribes_networking_model.pdf>
@@ -2324,7 +2324,7 @@
 - **Covert Channels in TCP/IP Protocol Stack - extended version-**
   - URL: <https://eprints.ugd.edu.mk/10284/1/surveyAMBPselfArc.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Exfiltration.md:34`; references: 1.
+  - Source: `Draft/Exfiltration.md:19`; references: 1.
   - ID: `b67c0c6c41898909b6d1`.
 - **Modifying Metasploit Shellcode Decoders to Bypass Static Analysis - Alexander Bode, Jelle Ermerins(2020)**
   - URL: <https://ermerins.com/assets/docs/shikataganai.pdf>
@@ -2354,7 +2354,7 @@
 - **Debriefing Facilitation Guide: Leading Groups at Etsy to Learn from Accidents - Etsy**
   - URL: <https://extfiles.etsy.com/DebriefingFacilitationGuide.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:267`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:331`; references: 1.
   - ID: `68eaad6655780166c226`.
 - **Keychain Analysis with Mac OS X Memory Forensics**
   - URL: <https://forensic.n0fate.com/wp-content/uploads/2012/07/Keychain-Analysis-with-Mac-OS-X-Memory-Forensics.pdf>
@@ -3229,7 +3229,7 @@
 - **A Hacker's Guide to Risk**
   - URL: <https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-Bruce-Potter-Hackers-Guide-to-Risk.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/threatmodel.md:42`; references: 1.
+  - Source: `Draft/threatmodel.md:29`; references: 1.
   - ID: `be47460c02579ada4f78`.
 - **Slides**
   - URL: <https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-Richo-Healey-Mike-Ryan-Hacking-Electric-Skateboards.pdf>
@@ -4064,7 +4064,7 @@
 - **https://web.archive.org/web/20141118061526/http://www.riskmanagementinsight.com/media/docs/FAIR_introduction.pdf**
   - URL: <https://web.archive.org/web/20141118061526/http://www.riskmanagementinsight.com/media/docs/FAIR_introduction.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/threatmodel.md:20`; references: 1.
+  - Source: `Draft/threatmodel.md:75`; references: 1.
   - ID: `39c1c3b521b197fdba17`.
 - **Anti-Unpacker Tricks - Peter Ferrie**
   - URL: <https://web.archive.org/web/20160328144423/http://pferrie.tripod.com/papers/unpackers.pdf>
@@ -4579,7 +4579,7 @@
 - **Google Hacking for Penetration Testers**
   - URL: <https://www.blackhat.com/presentations/bh-europe-05/BH_EU_05-Long.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Osint.md:342`; references: 1.
+  - Source: `Draft/Osint.md:325`; references: 1.
   - ID: `b71cc823e8ad8b4f8433`.
 - **https://www.blackhat.com/presentations/bh-europe-07/Butti/Presentation/bh-eu-07-Butti.pdf**
   - URL: <https://www.blackhat.com/presentations/bh-europe-07/Butti/Presentation/bh-eu-07-Butti.pdf>
@@ -4839,7 +4839,7 @@
 - **Learning Technical Writing Using the Engineering Method - Norman Ramsey(2016)**
   - URL: <https://www.cs.tufts.edu/~nr/pubs/learn.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Docs_and_Reports.md:85`; references: 1.
+  - Source: `Draft/Docs_and_Reports.md:101`; references: 1.
   - ID: `73d7dd87982f0d6c23d1`.
 - **An Empirical Study of Cryptographic Misuse in Android Applications**
   - URL: <https://www.cs.ucsb.edu/~chris/research/doc/ccs13_cryptolint.pdf>
@@ -5069,7 +5069,7 @@
 - **Statement for the Record  Worldwide Threat Assessment  of the  US Intelligence Community  Senate Select Committee on Intelligence**
   - URL: <https://www.dni.gov/files/documents/Newsroom/Testimonies/SSCI%20Unclassified%20SFR%20-%20Final.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/threatmodel.md:37`; references: 1.
+  - Source: `Draft/threatmodel.md:22`; references: 1.
   - ID: `e50b45aaad3985439dca`.
 - **Slides**
   - URL: <https://www.dropbox.com/s/baypdb6glmvp0j9/Buehat%20IL%20v2.3.pdf>

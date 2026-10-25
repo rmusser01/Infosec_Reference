@@ -38,6 +38,10 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
       "Building_A_Lab",
       "Career",
       "Courses_Training",
+      "Docs_and_Reports",
+      "threatmodel",
+      "Osint",
+      "Exfiltration",
     ]) {
       const router = {
         getBasePath: () => "/docs/",

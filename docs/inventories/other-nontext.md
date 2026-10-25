@@ -74,32 +74,32 @@
 - **Domain Name**
   - URL: <https://inteltechniques.com/data/Domain.png>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/Osint.md:149`; references: 1.
+  - Source: `Draft/Osint.md:104`; references: 1.
   - ID: `745384471e2f11dc3d63`.
 - **Email Address**
   - URL: <https://inteltechniques.com/data/Email.png>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/Osint.md:148`; references: 1.
+  - Source: `Draft/Osint.md:103`; references: 1.
   - ID: `b1459dc646c25a8f1538`.
 - **Real Name**
   - URL: <https://inteltechniques.com/data/Real%20Name.png>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/Osint.md:150`; references: 1.
+  - Source: `Draft/Osint.md:105`; references: 1.
   - ID: `1c37a5bf3c91459e1ac8`.
 - **Telephone #**
   - URL: <https://inteltechniques.com/data/Telephone.png>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/Osint.md:151`; references: 1.
+  - Source: `Draft/Osint.md:106`; references: 1.
   - ID: `dfde718f83148a999f7e`.
 - **User Name**
   - URL: <https://inteltechniques.com/data/Username.png>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/Osint.md:153`; references: 1.
+  - Source: `Draft/Osint.md:108`; references: 1.
   - ID: `8cd37eed6a5e8ddf9e08`.
 - **Location**
   - URL: <https://inteltechniques.com/data/location.png>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/Osint.md:152`; references: 1.
+  - Source: `Draft/Osint.md:107`; references: 1.
   - ID: `170f5bca1a4acab68c84`.
 - **Devour The Pie(chart)**
   - URL: <https://static1.squarespace.com/static/56713bf4dc5cb41142f28d1f/t/5694d249d82d5e959757455f/1452593763812/devourThePie3.gif?format=1500w>

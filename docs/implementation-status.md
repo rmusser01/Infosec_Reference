@@ -1,6 +1,6 @@
 # Implementation status
 
-Branch: `codex/generated-navigation` (desktop continuation; original export: `improve-generated-navigation`). Source base: `af8b68e2194e695c542eb76fba762d2f0a19a0dc`. Repository changes remain local. Seven authorized public references have confirmed Internet Archive snapshots; no Git push or site deployment has occurred.
+Branch: `codex/generated-navigation` (desktop continuation; original export: `improve-generated-navigation`). Source base: `af8b68e2194e695c542eb76fba762d2f0a19a0dc`. Repository changes remain local. Ten authorized public references have confirmed Internet Archive snapshots; no Git push or site deployment has occurred.
 
 ## Implemented
 
@@ -26,7 +26,7 @@ Automated tests exercise the actual checked-in Docsify compiler and application 
 
 - Navigation rollout, shared heading rendering, and favicon repair are complete locally. Production deployment/cache behavior remains unverified.
 - Choose durable archive and backup destinations, verify recovery/replay from them, and calibrate the bounded engine against more layouts/figures before scaling. Remote object-store uploading and full-crawl scheduling remain unimplemented. The policy now enforces the local pilot's supported bounds; it does not establish storage durability.
-- Continue bounded new-link batches locally under the clarified retention policy; durable storage is not required to make local progress. Eight public references have compact local archives, and seven have confirmed Wayback snapshots. Broad external validation and full collection preservation have not run. Strict content checks leave the Eli reference partial for manual review. Commit CI receipts/catalog to make future snapshots discoverable; the workflow does not write to the repository.
+- Continue bounded new-link batches locally under the clarified retention policy; durable storage is not required to make local progress. Ten public references have compact local archives, and ten URLs have confirmed Wayback snapshots. Broad external validation and full collection preservation have not run. Strict content checks leave the Eli reference partial for manual review. Commit CI receipts/catalog to make future snapshots discoverable; the workflow does not write to the repository.
 - Separately scoped later processing: PDF extraction/OCR, video captions/transcription, other extractors, and extracted-content search indexing. These are not prerequisites for completing navigation.
 
 ## Engineering decisions
@@ -241,3 +241,11 @@ Batch `44777173-c0df-4c7b-806d-8c23e9f0c725` processed the next three webpage ca
 A tested narrow rule now recognizes one legacy post body immediately after its titled heading container. Fresh focused review found an adjacent error-heading edge case; its regression failed before the correction and passes afterward. The full suite passes **108/108**; a real legacy-post Docker fixture and both fresh public integrity/content/recorded-QA rechecks pass. Navigation remains zero-error, and formatting/diff checks pass. Details and review boundaries are in `docs/archive-execution.md`.
 
 Latest totals: three complete local captures, five partial, four deferred, 21,726 not attempted; zero durably preserved. Eight local archives have HTML evidence, and seven source URLs have confirmed Wayback snapshots. No push, hosted CI execution or full collection run occurred; durable backup remains unconfigured.
+
+## Next three-link local batch — 2026-10-25, Blogger and conference page
+
+Batch `3debda39-b20f-4609-b28e-cb02a7987679` processed the next three webpage candidates. The Cuckoo Sandbox hardening article and temporal-persistence article have verified local text, all 20 selected article images, WARC integrity and offline replay. The conference-video page has no identifiable article body and remains deferred locally, with no video downloaded. All three source URLs have confirmed Wayback snapshots in the reader catalog. About **5.9 MB** is retained, including provenance, with temporary bundles and QA archives removed.
+
+Both local article captures retain conservative partial flags for blocked responses; their content checks and fresh primary-object/recorded-QA rechecks pass. No source code changed. Navigation and diff checks pass; the prior 108-test suite was not repeated for this execution-only batch. Details are in `docs/archive-execution.md`.
+
+Latest totals: three complete local captures, seven partial, five deferred, 21,723 not attempted; zero durably preserved. Ten local archives exist, eleven URLs have observed HTML responses, and ten source URLs have confirmed Wayback snapshots. No repository push, media acquisition or full collection run occurred. Durable backup remains unconfigured.

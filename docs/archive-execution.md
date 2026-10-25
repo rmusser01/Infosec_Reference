@@ -144,3 +144,19 @@ Both available source URLs were submitted once, then confirmed by polling their 
 Verification: **108/108** Node tests pass including wrapped Python policy cases; actual legacy-post Docker integration passes and cleans its fixture payloads. Both retained public archives pass fresh checksums, WARC integrity/content and recorded offline QA rechecks. Navigation remains 102 pages / 29,165 links / zero errors with unchanged warnings; formatting and `git diff --check` pass. Existing verifier code did not change, so its corruption suite was not repeated in this batch. Hosted CI and production deployment remain untested; durable storage/backup is still unconfigured.
 
 Current inventory accounting: three complete local captures, five partial, four deferred and 21,726 not attempted; zero durable preservation claims. Eight pages have observed HTML evidence, with 19,049 type-confirmation jobs and unchanged non-text queues. Seven Wayback snapshots are confirmed; four DNS-related submissions remain deferred. No Git push, full collection run or media extraction occurred.
+
+## Next local batch — 2026-10-25, Blogger and conference page
+
+Batch `3debda39-b20f-4609-b28e-cb02a7987679` processed the next three unattempted webpage candidates in inventory order. About **5.9 MB** is retained including provenance and summaries. Current verified article objects total **5,718,623 bytes**, with 19,085 extracted text characters and 20 selected article images. Source code did not change for this run.
+
+| Original reference | Local result | Confirmed Wayback timestamp |
+|---|---|---|
+| `http://0xmalware.blogspot.com/2013/10/cuckoo-sandbox-hardening-virtualbox.html` | Verified text, 5 images, WARC integrity and offline replay; conservative partial policy flag | `20261025233118` |
+| `http://0xthem.blogspot.com/2014/03/t-emporal-persistence-with-and-schtasks.html` | Verified text, 15 images, WARC integrity and offline replay; conservative partial policy flag | `20261025233158` |
+| `http://2014.video.sector.ca/video/110334184` | Deferred: no identifiable article body; no local video payload retained | `20261025233421` |
+
+All three source URLs were submitted once and confirmed by polling their existing Internet Archive job IDs. The reader catalog now contains ten confirmed snapshots. A saved video-page URL does not establish preservation of its underlying video. The two local articles retain partial policy flags for blocked non-text/out-of-scope responses while all selected text/images pass content checks; no partial was silently promoted.
+
+Fresh verification rehashed the retained objects, reran strict primary WARC integrity/content checks and validated their recorded offline QA results. Both articles pass with no missing selected figures. Temporary WACZ bundles, replay archives and proxy state are absent from this batch. Navigation remains 102 pages / 29,165 links / zero errors with unchanged warnings; `git diff --check` passes. The source-code test suite and synthetic Docker cases were not repeated because no implementation changed; the prior 108/108 test result remains historical. No independent code review was needed for this execution-only checkpoint.
+
+Current inventory accounting: three complete local captures, seven partial, five deferred and 21,723 not attempted; zero durably preserved. Eleven HTML response observations route to web capture, with 19,046 type-confirmation jobs and unchanged non-text queues. Ten Wayback snapshots are confirmed; four older DNS failures remain deferred. No media acquisition, full collection run, Git push, hosted CI execution or durable-backup qualification occurred.

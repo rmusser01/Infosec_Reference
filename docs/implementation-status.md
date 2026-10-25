@@ -7,7 +7,7 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 - Shared Markdown parser and offline navigation audit, including explicit HTML anchors and GitHub heading fragments.
 - One manifest for 53 main topics (the original 48, the three existing platform-specific post-exploitation pages, SCADA, and additional cryptography references), generated README/site topic navigation, sidebar, selective alphabetical subject index, and full reference search paths.
 - Generated ToCs and real navigable headings for 50 topic pages. All 53 listed topics are reviewed; the three short directory landings retain their direct links without forced ToCs. Source URL multisets, parsed resource occurrences, explicit anchors and existing code examples are regression-checked.
-- Docsify configuration repair and narrow search-plugin fixes for empty heading bodies, HTML titles, and explicit-anchor result destinations.
+- Docsify configuration repair, heading aliases outside readable permalinks with unique DOM IDs, a local SVG favicon, and narrow search-plugin fixes for empty heading bodies, HTML titles, and explicit-anchor result destinations.
 - Internal navigation checks with individual legacy exemptions and stale-exemption detection; read-only CI workflow.
 - Parser-generated processing lists and a separate progress ledger that survives regeneration.
 - Bounded external availability checks and report-only workflow; archive job planning with separate non-text queues and verified-prior-capture eligibility.
@@ -22,7 +22,7 @@ Automated tests exercise the actual checked-in Docsify compiler and application 
 
 ## Remaining work
 
-- Finish shared heading-rendering cleanup (duplicate same-subject IDs/empty permalink wrappers) and repair the missing favicon. All topic migrations and internal link repairs are complete, with compiler/browser evidence. Production deployment/cache behavior remains unverified.
+- Navigation rollout, shared heading rendering, and favicon repair are complete locally. Production deployment/cache behavior remains unverified.
 - Configure Browsertrix on the available Docker runtime and choose a durable archive destination; implement the enforced capture adapter, article-image filtering, WARC verification, offline replay, and storage/retrieval pilot. The archive policy file describes intent, not implemented enforcement.
 - Run external batches with evidence-aware capture/queue routing. No full external validation or web capture has run.
 - Separately scoped later processing: PDF extraction/OCR, video captions/transcription, other extractors, and extracted-content search indexing. These are not prerequisites for completing navigation.
@@ -46,7 +46,7 @@ Final review findings and latest verification evidence are recorded here when av
 
 The independent review identified six issues. The correction pass adds occurrence counts to the baseline; rejects unsafe/symlinked managed inputs and outputs; defers uncertain responses without replacing resource candidates with access-error MIME; aligns supported Node versions with the lockfile; preserves case in explicit search IDs despite Docsify query normalization; and applies first-definition-wins Markdown reference semantics. Each behavioral correction has a regression that failed before the fix. Production dependency audit reported zero known vulnerabilities at verification time.
 
-One non-blocking presentation issue remains: inline legacy anchors can create duplicate same-subject DOM IDs and empty Docsify heading permalink wrappers. Heading text, generated ToC destinations, and search destinations remain functional in the tested DOM. A cleaner heading renderer/anchor layout is deferred; native-browser visual review remains outstanding.
+The formerly deferred inline-anchor presentation issue is resolved in the final shared-rendering pass below: legacy aliases sit outside readable heading permalinks, duplicate same-subject IDs are removed, and native desktop/mobile review is recorded. Earlier group entries below describe the state at their historical checkpoints.
 
 Export verification (web environment): clean `npm ci --ignore-scripts` succeeded; `npm test` passed 35 tests with zero failures; `npm run nav:check` passed with no new/stale navigation diagnostics and 305 explicitly baselined legacy error occurrences. Resource lists regenerated successfully and `git diff --check` passed. No external availability batch or WARC capture was executed.
 
@@ -191,3 +191,15 @@ Starting checkpoint: `3f71956`; continued in the requested checkout on `codex/ge
 - Chromium under `/docs/` verified exact search hashes/headings for Awesome Vehicle, Linux Syscall Table, CFP Time, Pwnable.kr, ProjectX, NewsDiffs, Honeynet Project, tcpTrigger, Crackstation, Mcsema and The Social Engineering Framework. Encoded REMath filenames and deep-route reload work. The three unchanged directory landings were reviewed and clicked through to Establish & Maintain Infrastructure, Discovery and Bitcoin Hack; destination content and encoded `#`/space/ampersand routes loaded, followed by deep reload.
 
 Verification: `npm test` passed 85/85 on Node.js 24.18.0; navigation check reports zero internal errors and an empty baseline, with 15 orphan and 21 repeated-destination warnings. Repeated generation returns no changed paths. Inventories retain 21,738 URLs (1,200 PDF, 1,458 video, 23 other non-text candidates, 19,057 unknown). Shared heading-anchor rendering/favicon cleanup remains next; no external availability batch, capture, push or publication ran.
+
+## Shared rendering and final navigation verification — 2026-10-25
+
+Starting checkpoint: `c175b64`; continued in the requested checkout on `codex/generated-navigation`.
+
+- Added a narrow configured heading renderer around the existing Docsify renderer. Empty explicit aliases now sit outside the heading permalink; alias attributes duplicating its heading ID are removed. Formatted visible titles, exact-case/named legacy aliases, canonical ToC targets, original automatic routes and search metadata remain intact. No vendor compiler upgrade or new dependency was needed.
+- Actual-compiler checks first failed on duplicate IDs/empty permalink titles, then passed for all 50 managed topic pages. A focused probe protects whitespace-only aliases, exact case, emphasis and inline code. The favicon existence check failed before adding the local SVG and passed afterward; native fetch returned HTTP 200 with `image/svg+xml`.
+- Chromium at `/docs/` verified the Cloud S3 canonical destination and original permalink route. Desktop (1440×900) and mobile (390×844) screenshots show readable headings and resource links without horizontal overflow. No browser console errors were observed. Prior per-group routing/search evidence remains recorded above; production deployment is untested.
+- Scoped Impeccable checks replaced a green cover-button hover glow with a neutral shadow and removed progress-bar width animation. File-scoped detector exceptions document semantic false positives for existing warning/blockquote borders and Roboto Mono code typography. Final detection returned no findings; none were left standing. No broader redesign was performed.
+- Fresh independent review found no actionable introduced correctness/security regression. It independently verified zero internal errors, 17 focused tests, and actual compilation of all 101 Draft Markdown pages with no parser-valid internal fragment absent from rendered IDs/legacy names. Historical resource-preservation evidence was retained rather than repeated wholesale. Production routing/cache, live external availability, and archive integrity/replay/storage are outside this completed navigation verification; archive enforcement remains pending and no capture success is claimed.
+
+Final verification: Node.js 24.18.0, `npm test` 86/86 passed; `npm run nav:check` audited 102 pages / 29,164 links with zero errors, no stale output or diagnostics, and 15 orphan / 21 repeated-destination warnings. A repeated `npm run nav:generate` made no changes. All 53 main topics are reviewed, with 50 managed ToCs and three intentionally direct directory landings. Inventory counts remain 21,738 provisional URLs. No external availability batch, capture, remote push or publication ran. The next implementation phase is the enforced archive adapter and bounded replay/storage pilot; durable storage is required before the full capture run.

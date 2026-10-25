@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "Draft/css/style.css"
+        ],
+        "createdAt": "2026-10-25T18:14:45.686Z",
+        "reason": "Codex decided: the two matched borders identify Docsify warning callouts and blockquotes, not card accents."
+      },
+      {
+        "rule": "overused-font",
+        "value": "roboto",
+        "files": [
+          "Draft/css/style.css"
+        ],
+        "createdAt": "2026-10-25T18:14:45.700Z",
+        "reason": "Codex decided: this declaration uses Roboto Mono in code/pre/output blocks, not Roboto body typography."
+      }
+    ]
+  }
+}

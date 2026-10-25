@@ -22,7 +22,7 @@ npm run nav:check
 
 Do not hand-edit `Draft/_sidebar.md`, `Draft/Subject_Index.md`, `Draft/search-paths.js`, or text between `nav:*:start` and `nav:*:end` markers. Missing or duplicated markers stop all generated writes.
 
-The root README, website homepage, sidebar, and every page in `navigation/topics.json`’s `tocPages` must be free of internal navigation errors. `navigation/legacy-errors.json` records pre-existing defects in other pages, with individual reasons. New defects fail checks. Each baseline key records its allowed occurrence count. Adding another occurrence fails even for an already-exempt target. When repairing occurrences, reduce the count or remove the entry; stale exemptions also fail. Broad heading migration remains a follow-up to the pilot, not an automated destructive rewrite.
+The root README, website homepage, sidebar, and every page in `navigation/topics.json`’s `tocPages` must be free of internal navigation errors. The completed rollout has no internal errors and `navigation/legacy-errors.json` is empty. New defects fail checks. The baseline mechanism supports per-occurrence historical debt: adding an occurrence fails even for an exempt target, and stale exemptions fail too. Preserve the empty baseline rather than exempting new defects.
 
 ## Resource processing inventories
 
@@ -43,6 +43,8 @@ Allowed statuses: `pending`, `acquired`, `extracted`, `indexed`, `failed`, and `
 ## Docsify compatibility fixes
 
 The existing Docsify 4.12.1 assets remain in place. Configuration is consolidated, automatic search paths are a string value, and `Draft/search-paths.js` supplies explicit routes for all reference Markdown pages, including directory children.
+
+The configured Markdown heading renderer calls the bundled renderer first, then moves empty explicit aliases outside its permalink and removes alias attributes duplicating the heading ID. This keeps readable formatted titles, exact-case legacy destinations, and original automatic routes together. It depends on the checked-in renderer's heading markup; upgrades must pass the actual-compiler checks for unique IDs, non-empty permalinks, formatting, and legacy aliases, plus routing/search runtime tests.
 
 The bundled search plugin has local fixes: empty heading bodies no longer crash snippet generation; heading HTML is stripped from displayed search titles; explicit heading IDs are used for search destinations; and cache quota failures retain the in-memory search index. Incomplete cache entries trigger rebuilding rather than disabling search. A corpus larger than browser storage is fetched again on reload. Preserve these fixes or re-run the runtime regression tests when upgrading the plugin.
 

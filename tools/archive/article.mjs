@@ -18,10 +18,14 @@ export function readArticle(document = globalThis.document) {
       text: "",
     };
   const bodies = document.querySelectorAll('[itemprop~="articleBody"]');
+  const posts = [...document.querySelectorAll(".post-title + .post")].filter(
+    (post) => post.previousElementSibling.querySelector("h1,h2"),
+  );
   const root =
     document.querySelector("article") ??
     (bodies.length === 1 ? bodies[0] : null) ??
-    document.querySelector('main,[role="main"]');
+    document.querySelector('main,[role="main"]') ??
+    (posts.length === 1 ? posts[0] : null);
   if (!root)
     return {
       state: "needs-review",
@@ -33,6 +37,10 @@ export function readArticle(document = globalThis.document) {
     };
   const errorSignals =
     title +
+    " " +
+    (posts.includes(root)
+      ? root.previousElementSibling.querySelector("h1,h2").textContent
+      : "") +
     " " +
     (root.querySelector("h1")?.textContent ?? "") +
     " " +

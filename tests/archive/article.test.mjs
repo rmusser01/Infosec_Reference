@@ -89,3 +89,37 @@ test("explicit articleBody microdata identifies legacy Blogger text and figures 
     ambiguous.window.close();
   }
 });
+
+test("a unique legacy post body requires its adjacent heading and excludes surrounding widgets", () => {
+  const post = `<div class="post-title"><h2>Legacy article</h2><p>Published date</p></div><div class="post"><p>${"Detailed post text. ".repeat(15)}</p><img loading="lazy" src="/figure.png"><div class="ads"><img src="/advert.png"></div></div>`;
+  for (const [html, state] of [
+    [
+      `<title>Legacy article</title><nav><img src="/logo.png"></nav>${post}<footer>Subscribe</footer>`,
+      "article",
+    ],
+    [post + post, "needs-review"],
+    [
+      post.replace("<h2>Legacy article</h2>", "<span>Untitled list</span>"),
+      "needs-review",
+    ],
+    [post.replace('class="post-title"', 'class="other"'), "needs-review"],
+    [
+      "<title>Example Blog</title>" +
+        post.replace("<h2>Legacy article</h2>", "<h2>Page not found</h2>"),
+      "access-wall",
+    ],
+  ]) {
+    const dom = new JSDOM(html, { url: "https://example.org/post" });
+    try {
+      const result = readArticle(dom.window.document);
+      assert.equal(result.state, state);
+      if (state === "article") {
+        assert.deepEqual(result.images, ["https://example.org/figure.png"]);
+        assert(!result.text.includes("Subscribe"));
+        assert(result.text.includes("Detailed post text."));
+      }
+    } finally {
+      dom.window.close();
+    }
+  }
+});

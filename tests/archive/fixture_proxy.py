@@ -32,6 +32,8 @@ def request(flow):
         body='<title>Lazy figure fixture</title><main>'+BODY.replace('<img src="/figure.png"','<img loading="lazy" style="margin-top:5000px" src="/figure.png"')+'</main>'
     elif path == '/blogger':
         body='<title>Legacy Blogger fixture</title><nav><img src="/logo.png"></nav>'+BODY.replace('<article>','<div class="post-body entry-content" itemprop="description articleBody">').replace('</article>','</div>').replace('<img src="/figure.png"','<img loading="lazy" style="margin-top:5000px" src="/figure.png"')
+    elif path == '/legacy-post':
+        body='<title>Legacy titled post</title><nav><img src="/logo.png"></nav>'+BODY.replace('<article><h1>Archive fixture</h1>','<div class="post-title"><h2>Archive fixture</h2></div><div class="post">').replace('</article>','</div>').replace('<img src="/figure.png"','<img loading="lazy" style="margin-top:5000px" src="/figure.png"')
     elif path == '/javascript':
         body='<title>JavaScript archive fixture</title><main id="root"></main><script src="/app.js"></script>'
     elif path == '/app.js':

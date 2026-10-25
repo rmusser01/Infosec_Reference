@@ -361,3 +361,26 @@ To Do:
 * **To-Do**
 	* Add rowhammer related materials
 ```
+
+## Draft/DataVis.md
+
+```text
+### To Do
+* Split into Data visualization/Working with data
+* Edward Tufte Books
+```
+
+## Draft/Passwords.md
+
+```text
+* **To-Do**
+	* Crackmeifyoucan contests
+	* Other contests
+	* Other stuff
+```
+
+## Draft/Reverse Engineering - REMath Literature.md
+
+```text
+Split C Code / C++ Code into separate subjects (original heading maintenance note).
+```

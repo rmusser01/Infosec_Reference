@@ -904,8 +904,19 @@
       "title": "Car hacking",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "DMV",
+          "fragment": "ref-cars-4",
+          "aliases": []
+        },
+        {
+          "label": "QNX",
+          "fragment": "ref-cars-8",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Career.md",
@@ -976,8 +987,129 @@
       "title": "Cheat Sheets",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Collection of Multiple",
+          "fragment": "ref-cheats-3",
+          "aliases": []
+        },
+        {
+          "label": "Communication",
+          "fragment": "ref-cheats-4",
+          "aliases": []
+        },
+        {
+          "label": "Active Directory",
+          "fragment": "ref-cheats-5",
+          "aliases": []
+        },
+        {
+          "label": "ARM",
+          "fragment": "ref-cheats-6",
+          "aliases": []
+        },
+        {
+          "label": "ASM",
+          "fragment": "ref-cheats-7",
+          "aliases": []
+        },
+        {
+          "label": "Android",
+          "fragment": "ref-cheats-8",
+          "aliases": []
+        },
+        {
+          "label": "iOS",
+          "fragment": "ref-cheats-9",
+          "aliases": []
+        },
+        {
+          "label": "Credential Attacks",
+          "fragment": "ref-cheats-10",
+          "aliases": []
+        },
+        {
+          "label": "Exploitation Development",
+          "fragment": "ref-cheats-11",
+          "aliases": []
+        },
+        {
+          "label": "Forensics/IR",
+          "fragment": "ref-cheats-12",
+          "aliases": []
+        },
+        {
+          "label": "Linux",
+          "fragment": "ref-cheats-13",
+          "aliases": []
+        },
+        {
+          "label": "Malware",
+          "fragment": "ref-cheats-14",
+          "aliases": []
+        },
+        {
+          "label": "Metasploit",
+          "fragment": "ref-cheats-15",
+          "aliases": []
+        },
+        {
+          "label": "Network Monitoring",
+          "fragment": "ref-cheats-16",
+          "aliases": []
+        },
+        {
+          "label": "Network Scanning",
+          "fragment": "ref-cheats-17",
+          "aliases": []
+        },
+        {
+          "label": "Penetration Testing Related",
+          "fragment": "ref-cheats-18",
+          "aliases": []
+        },
+        {
+          "label": "PowerShell",
+          "fragment": "ref-cheats-19",
+          "aliases": []
+        },
+        {
+          "label": "RE",
+          "fragment": "ref-cheats-20",
+          "aliases": []
+        },
+        {
+          "label": "Security Design and Engineering",
+          "fragment": "ref-cheats-21",
+          "aliases": []
+        },
+        {
+          "label": "Tmux",
+          "fragment": "ref-cheats-22",
+          "aliases": []
+        },
+        {
+          "label": "Web",
+          "fragment": "ref-cheats-23",
+          "aliases": []
+        },
+        {
+          "label": "Windows",
+          "fragment": "ref-cheats-24",
+          "aliases": []
+        },
+        {
+          "label": "Wireless",
+          "fragment": "ref-cheats-25",
+          "aliases": []
+        },
+        {
+          "label": "DB",
+          "fragment": "ref-cheats-26",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Cloud.md",
@@ -1018,8 +1150,19 @@
       "title": "Conferences/Recordings",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Archives of Recorded Talks",
+          "fragment": "ref-conferences-2",
+          "aliases": []
+        },
+        {
+          "label": "Conferences/Events",
+          "fragment": "ref-conferences-3",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Containers.md",
@@ -1298,23 +1441,85 @@
       "title": "CTFs & Wargames",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Beginner Focused CTFs",
+          "fragment": "ref-ctf-4",
+          "aliases": []
+        },
+        {
+          "label": "Challenge Archives",
+          "fragment": "ref-ctf-5",
+          "aliases": []
+        },
+        {
+          "label": "Challenges (one-offs)",
+          "fragment": "ref-ctf-6",
+          "aliases": []
+        },
+        {
+          "label": "Challenge Sites",
+          "fragment": "ref-ctf-7",
+          "aliases": []
+        },
+        {
+          "label": "Handy Tools",
+          "fragment": "ref-ctf-9",
+          "aliases": []
+        },
+        {
+          "label": "Making Your Own CTF",
+          "fragment": "ref-ctf-10",
+          "aliases": []
+        },
+        {
+          "label": "Vulnerable Virtual Machines",
+          "fragment": "ref-ctf-11",
+          "aliases": []
+        },
+        {
+          "label": "Wargames",
+          "fragment": "ref-ctf-12",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Darknets.md",
       "title": "Darknets",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Darknets",
+          "fragment": "ref-darknets-3",
+          "aliases": []
+        },
+        {
+          "label": "Documentation",
+          "fragment": "ref-darknets-4",
+          "aliases": []
+        },
+        {
+          "label": "Markets",
+          "fragment": "ref-darknets-7",
+          "aliases": []
+        },
+        {
+          "label": "Wikis",
+          "fragment": "ref-darknets-9",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/DataVis.md",
       "title": "Data Analysis & Visualization",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
+      "tocDepth": 4,
       "subjects": []
     },
     {
@@ -2042,16 +2247,53 @@
       "title": "Honeypots",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Integration with Other Tools",
+          "fragment": "ref-honeypot-4",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Interesting_Things.md",
       "title": "Interesting Things & Useful Information",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "General Articles",
+          "fragment": "ref-interesting-1",
+          "aliases": []
+        },
+        {
+          "label": "Interesting Talks/Videos",
+          "fragment": "ref-interesting-26",
+          "aliases": []
+        },
+        {
+          "label": "Screen Scraping",
+          "fragment": "ref-interesting-38",
+          "aliases": []
+        },
+        {
+          "label": "Simulators/ions",
+          "fragment": "ref-interesting-42",
+          "aliases": []
+        },
+        {
+          "label": "Various Purpose Based OS's",
+          "fragment": "ref-interesting-44",
+          "aliases": []
+        },
+        {
+          "label": "Interesting Software",
+          "fragment": "ref-interesting-46",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/L-SM-TH.md",
@@ -2714,8 +2956,79 @@
       "title": "Passwords",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Building a Hash Cracking Rig",
+          "fragment": "ref-passwords-5",
+          "aliases": []
+        },
+        {
+          "label": "BruteForce",
+          "fragment": "ref-passwords-6",
+          "aliases": []
+        },
+        {
+          "label": "CAPTCHA",
+          "fragment": "ref-passwords-7",
+          "aliases": []
+        },
+        {
+          "label": "Default Credentials",
+          "fragment": "ref-passwords-8",
+          "aliases": []
+        },
+        {
+          "label": "Password Analysis/Auditing",
+          "fragment": "ref-passwords-9",
+          "aliases": []
+        },
+        {
+          "label": "Password Strength/Usage Statistics",
+          "fragment": "ref-passwords-11",
+          "aliases": []
+        },
+        {
+          "label": "Password Spraying",
+          "fragment": "ref-passwords-12",
+          "aliases": []
+        },
+        {
+          "label": "Wordlist Generation",
+          "fragment": "ref-passwords-13",
+          "aliases": []
+        },
+        {
+          "label": "Lists of Wordlists",
+          "fragment": "ref-passwords-14",
+          "aliases": []
+        },
+        {
+          "label": "Wordlist Tools",
+          "fragment": "ref-passwords-15",
+          "aliases": []
+        },
+        {
+          "label": "Cracking Hashes",
+          "fragment": "ref-passwords-17",
+          "aliases": []
+        },
+        {
+          "label": "Cracking Passwords/Hashes",
+          "fragment": "ref-passwords-18",
+          "aliases": []
+        },
+        {
+          "label": "Cracking Specific Application Passwords/Hashes",
+          "fragment": "ref-passwords-20",
+          "aliases": []
+        },
+        {
+          "label": "OCL/Hashcat",
+          "fragment": "ref-passwords-30",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Phishing.md",
@@ -3587,8 +3900,239 @@
       "title": "REMATH Reverse Engineering",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Mechanization of Exploits",
+          "fragment": "ref-remath-1",
+          "aliases": []
+        },
+        {
+          "label": "Binary Analysis",
+          "fragment": "ref-remath-2",
+          "aliases": []
+        },
+        {
+          "label": "Analysis of Communication Protocols",
+          "fragment": "ref-remath-3",
+          "aliases": []
+        },
+        {
+          "label": "Intermediate Representations",
+          "fragment": "ref-remath-4",
+          "aliases": []
+        },
+        {
+          "label": "Alias / Value Analysis",
+          "fragment": "ref-remath-5",
+          "aliases": []
+        },
+        {
+          "label": "Control Flow Recovery",
+          "fragment": "ref-remath-6",
+          "aliases": []
+        },
+        {
+          "label": "Binary Rewriting",
+          "fragment": "ref-remath-7",
+          "aliases": []
+        },
+        {
+          "label": "Abstract Interpretation",
+          "fragment": "ref-remath-8",
+          "aliases": []
+        },
+        {
+          "label": "Logical solvers",
+          "fragment": "ref-remath-9",
+          "aliases": []
+        },
+        {
+          "label": "Probabilistic Logic",
+          "fragment": "ref-remath-10",
+          "aliases": []
+        },
+        {
+          "label": "Datalog",
+          "fragment": "ref-remath-11",
+          "aliases": []
+        },
+        {
+          "label": "String Solvers",
+          "fragment": "ref-remath-12",
+          "aliases": []
+        },
+        {
+          "label": "Datasets",
+          "fragment": "ref-remath-13",
+          "aliases": []
+        },
+        {
+          "label": "Ground Truth",
+          "fragment": "ref-remath-14",
+          "aliases": []
+        },
+        {
+          "label": "Obfuscators",
+          "fragment": "ref-remath-15",
+          "aliases": []
+        },
+        {
+          "label": "Hidden Computation",
+          "fragment": "ref-remath-16",
+          "aliases": []
+        },
+        {
+          "label": "Deobfuscation",
+          "fragment": "ref-remath-17",
+          "aliases": []
+        },
+        {
+          "label": "Disassemblers",
+          "fragment": "ref-remath-18",
+          "aliases": []
+        },
+        {
+          "label": "Decompilers",
+          "fragment": "ref-remath-19",
+          "aliases": []
+        },
+        {
+          "label": "Virtual Machines",
+          "fragment": "ref-remath-20",
+          "aliases": []
+        },
+        {
+          "label": "Videos",
+          "fragment": "ref-remath-21",
+          "aliases": []
+        },
+        {
+          "label": "Model Checkers",
+          "fragment": "ref-remath-22",
+          "aliases": []
+        },
+        {
+          "label": "Reasoning About Finite-state and Pushdown Automata",
+          "fragment": "ref-remath-23",
+          "aliases": []
+        },
+        {
+          "label": "Debuggers",
+          "fragment": "ref-remath-24",
+          "aliases": []
+        },
+        {
+          "label": "Interactive Theorem Provers",
+          "fragment": "ref-remath-25",
+          "aliases": []
+        },
+        {
+          "label": "Control Flow Integrity",
+          "fragment": "ref-remath-26",
+          "aliases": []
+        },
+        {
+          "label": "C code / C++ code",
+          "fragment": "ref-remath-27",
+          "aliases": []
+        },
+        {
+          "label": "Quantitative Analysis",
+          "fragment": "ref-remath-28",
+          "aliases": []
+        },
+        {
+          "label": "Assisted Exploit Engineering",
+          "fragment": "ref-remath-29",
+          "aliases": []
+        },
+        {
+          "label": "Return-oriented Programming",
+          "fragment": "ref-remath-30",
+          "aliases": []
+        },
+        {
+          "label": "Random Testing (Fuzzing)",
+          "fragment": "ref-remath-31",
+          "aliases": []
+        },
+        {
+          "label": "Dynamic Analysis is an interpretation of the static semantics",
+          "fragment": "ref-remath-32",
+          "aliases": []
+        },
+        {
+          "label": "Unsorted references",
+          "fragment": "ref-remath-33",
+          "aliases": []
+        },
+        {
+          "label": "Disassemblers & Debuggers",
+          "fragment": "ref-remath-34",
+          "aliases": []
+        },
+        {
+          "label": "x86 only",
+          "fragment": "ref-remath-35",
+          "aliases": []
+        },
+        {
+          "label": "x64",
+          "fragment": "ref-remath-36",
+          "aliases": []
+        },
+        {
+          "label": "Multi-Architecture",
+          "fragment": "ref-remath-37",
+          "aliases": []
+        },
+        {
+          "label": "Java",
+          "fragment": "ref-remath-38",
+          "aliases": []
+        },
+        {
+          "label": "Type and Data Structure Recovering",
+          "fragment": "ref-remath-39",
+          "aliases": []
+        },
+        {
+          "label": "Miscellaneous Tools",
+          "fragment": "ref-remath-40",
+          "aliases": []
+        },
+        {
+          "label": "Binary Manipulation Frameworks",
+          "fragment": "ref-remath-41",
+          "aliases": []
+        },
+        {
+          "label": "Deobfuscation/Unpacking",
+          "fragment": "ref-remath-42",
+          "aliases": []
+        },
+        {
+          "label": "Cryptography",
+          "fragment": "ref-remath-43",
+          "aliases": []
+        },
+        {
+          "label": "Visualization",
+          "fragment": "ref-remath-44",
+          "aliases": []
+        },
+        {
+          "label": "Anti-Debugging / Anti-Reversing",
+          "fragment": "ref-remath-45",
+          "aliases": []
+        },
+        {
+          "label": "Acknowledgements",
+          "fragment": "ref-remath-46",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/RE.md",
@@ -3693,8 +4237,19 @@
       "title": "Social Engineering",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Social Engineering",
+          "fragment": "ref-social-1",
+          "aliases": []
+        },
+        {
+          "label": "Research Papers",
+          "fragment": "ref-social-14",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/sysinternals.md",
@@ -4379,6 +4934,17 @@
     "Draft/Rootkits.md",
     "Draft/SCADA.md",
     "Draft/UX.md",
-    "Draft/bios_uefi.md"
+    "Draft/bios_uefi.md",
+    "Draft/Cars.md",
+    "Draft/Cheats.md",
+    "Draft/Conferences.md",
+    "Draft/CTFs_Wargames.md",
+    "Draft/Darknets.md",
+    "Draft/DataVis.md",
+    "Draft/honeypot.md",
+    "Draft/Interesting_Things.md",
+    "Draft/Passwords.md",
+    "Draft/Reverse Engineering - REMath Literature.md",
+    "Draft/SE.md"
   ]
 }

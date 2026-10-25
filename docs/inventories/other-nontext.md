@@ -9,7 +9,7 @@
 - **http://cansecwest.com/core03/shiva.ppt**
   - URL: <http://cansecwest.com/core03/shiva.ppt>
   - Candidate type: slides; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:221`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:283`; references: 1.
   - ID: `ffd0efca032bff6f00e5`.
 - **JSON Web Token Flowchart**
   - URL: <http://cryto.net/%7Ejoepie91/blog/attachments/jwt-flowchart.png>
@@ -29,7 +29,7 @@
 - **http://www.cs.sjsu.edu/faculty/stamp/students/cs298report.doc**
   - URL: <http://www.cs.sjsu.edu/faculty/stamp/students/cs298report.doc>
   - Candidate type: document; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:110`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:164`; references: 1.
   - ID: `e54f21846bcb5a62b0e0`.
 - **Advanced Buffer Overflow Methods**
   - URL: <http://www.cs.tau.ac.il/tausec/lectures/Advanced_Buffer_Overflow_Methods.ppt>
@@ -49,7 +49,7 @@
 - **VM Download**
   - URL: <http://www.scriptjunkie.us/files/TheHackerGames.zip>
   - Candidate type: archive; status: unverified / pending.
-  - Source: `Draft/CTFs_Wargames.md:98`; references: 1.
+  - Source: `Draft/CTFs_Wargames.md:121`; references: 1.
   - ID: `27f85aa595de9ca24bc9`.
 - **Slides**
   - URL: <https://bufferoverflows.net/wp-content/uploads/2020/08/BSides-Munich-2020-presentation.pptx>

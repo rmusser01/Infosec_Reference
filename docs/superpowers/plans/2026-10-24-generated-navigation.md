@@ -17,7 +17,7 @@ The unchecked implementation steps below are the original historical plan, not a
 | Task | Current state |
 |---|---|
 | 1–5 | Restored from the patch; parser, generator, pilot, Docsify, and CI/check tooling verified locally. Desktop review found and corrected filename-case and search-cache bugs. |
-| 6 | Partial: external reporting exists; 39 of 53 listed topics have managed ToCs and browser evidence. The remaining 46 legacy errors are repaired; the full 102-page audit has zero internal errors and an empty legacy baseline. Fourteen topics still need rollout review, including three functional directory landings. No broad external validation ran. |
+| 6 | Navigation rollout complete: all 53 listed topics reviewed, with 50 managed ToCs and three short directory landings. The 102-page audit has zero internal errors and an empty legacy baseline. Shared heading-rendering/favicon cleanup remains; external reporting exists but broad validation is pending. |
 | 7 | Partial: inventory, classification, and offline archive planning exist. Browsertrix capture, enforced filtering/network scope, WARC verification, replay, and durable storage remain pending. Docker is available locally. |
 | Later processing | PDF/OCR, captions/transcription, other extraction, and search deployment remain separate future work. |
 

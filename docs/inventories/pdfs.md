@@ -29,7 +29,7 @@
 - **Broadcasting your attack: Security testing DAB radio in cars - Andy Davis**
   - URL: <http://2015.ruxcon.org.au/assets/2015/slides/Broadcasting-your-attack-Security-testing-DAB-radio-in-cars.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cars.md:32`; references: 2.
+  - Source: `Draft/Cars.md:52`; references: 2.
   - ID: `9670a78a405b68e23629`.
 - **Slides - Big problems with big data – Hadoop interfaces security - Jakub Kaluzny - ZeroNights, Moscow 2015**
   - URL: <http://2015.zeronights.org/assets/files/03-Kaluzny.pdf>
@@ -64,7 +64,7 @@
 - **http://arxiv.org/pdf/1203.0160.pdf**
   - URL: <http://arxiv.org/pdf/1203.0160.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:183`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:241`; references: 1.
   - ID: `39a7885c371276a531a7`.
 - **How Fast Can We Make Interpreted Python? - Russel Power and Alex Rubinsteyn**
   - URL: <http://arxiv.org/pdf/1306.6047v2.pdf>
@@ -74,7 +74,7 @@
 - **http://arxiv.org/pdf/1407.0455.pdf**
   - URL: <http://arxiv.org/pdf/1407.0455.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:199`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:257`; references: 1.
   - ID: `dc9b6de56fd7848bb4eb`.
 - **HORNET: High-speed Onion Routing at the Network Layer**
   - URL: <http://arxiv.org/pdf/1507.05724v1.pdf>
@@ -84,7 +84,7 @@
 - **http://bap.ece.cmu.edu/doc/bap.pdf**
   - URL: <http://bap.ece.cmu.edu/doc/bap.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:61`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:114`; references: 1.
   - ID: `1121e17e233b769351e8`.
 - **On the effectiveness of address-space randomization, , 2004**
   - URL: <http://benpfaff.org/papers/asrandom.pdf>
@@ -99,7 +99,7 @@
 - **http://bitblaze.cs.berkeley.edu/papers/vine.pdf**
   - URL: <http://bitblaze.cs.berkeley.edu/papers/vine.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:59`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:112`; references: 1.
   - ID: `11045b89d0dbd90a32f6`.
 - **VirusTotal Mining**
   - URL: <http://blog.9bplus.com/wp-content/uploads/2014/08/VirusTotal-Mining.pdf>
@@ -174,22 +174,22 @@
 - **http://cgi.di.uoa.gr/~smaragd/doop-datalog2.0.pdf**
   - URL: <http://cgi.di.uoa.gr/~smaragd/doop-datalog2.0.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:176`; references: 2.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:234`; references: 2.
   - ID: `4d3fb198eb79a3057ee2`.
 - **http://cgi.di.uoa.gr/~smaragd/doop-oopsla09prelim.pdf**
   - URL: <http://cgi.di.uoa.gr/~smaragd/doop-oopsla09prelim.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:197`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:255`; references: 1.
   - ID: `132ecdfd408d9863bc7f`.
 - **http://cgi.di.uoa.gr/~smaragd/theses/psallida.pdf**
   - URL: <http://cgi.di.uoa.gr/~smaragd/theses/psallida.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:185`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:243`; references: 1.
   - ID: `c2b2b393f74a3d570273`.
 - **Thousands of MongoDB installations on the net unprotected**
   - URL: <http://cispa.saarland/wp-content/uploads/2015/02/MongoDB_documentation.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:159`; references: 1.
+  - Source: `Draft/Interesting_Things.md:89`; references: 1.
   - ID: `75b682c9ac6c139400b2`.
 - **The Meaning of Linkfiles In Forensic Examinations - Harry Parsonage(2010)**
   - URL: <http://computerforensics.parsonage.co.uk/downloads/TheMeaningofLIFE.pdf>
@@ -199,7 +199,7 @@
 - **Weapons of Mass Distraction**
   - URL: <http://conference.hitb.org/hitbsecconf2014kul/materials/D2T1%20-%20Haroon%20Meer%20Azhar%20Desai%20and%20Marco%20Slaviero%20-%20Weapons%20of%20Mass%20Distraction.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:319`; references: 1.
+  - Source: `Draft/Interesting_Things.md:297`; references: 1.
   - ID: `7f58297a2a347477d82e`.
 - **So You Want To Hack Radios - A Primer On Wireless Reverse Engineering**
   - URL: <http://conference.hitb.org/hitbsecconf2017ams/materials/D1T4%20-%20Marc%20Newlin%20and%20Matt%20Knight%20-%20So%20You%20Want%20to%20Hack%20Radios.pdf>
@@ -219,7 +219,7 @@
 - **http://cs.au.dk/~amoeller/tapas2014/tapas2014_2.pdf**
   - URL: <http://cs.au.dk/~amoeller/tapas2014/tapas2014_2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:88`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:142`; references: 1.
   - ID: `10cbdc463b59b19a64ed`.
 - **PyTrigger: A System to Trigger & Extract User-Activated Malware Behavior**
   - URL: <http://cs.gmu.edu/~astavrou/research/PyTrigger_ARES2013.pdf>
@@ -229,7 +229,7 @@
 - **http://cs.jhu.edu/~jason/papers/eisner+filardo.datalog11-long.pdf**
   - URL: <http://cs.jhu.edu/~jason/papers/eisner+filardo.datalog11-long.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:174`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:232`; references: 1.
   - ID: `be3ab539039a8899d241`.
 - **Red Teaming of Advanced Information Assurance Concepts - Bradley Wood, Ruth Duggan**
   - URL: <http://cs.uccs.edu/~gsc/pub/master/sjelinek/doc/research/red.pdf>
@@ -254,7 +254,7 @@
 - **Reading ASM**
   - URL: <http://cseweb.ucsd.edu/classes/sp11/cse141/pdf/02/S01_x86_64.key.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cheats.md:65`; references: 2.
+  - Source: `Draft/Cheats.md:79`; references: 2.
   - ID: `ca954cebb27be127f291`.
 - **The Geometry of Innocent Flesh on the Bone: Return-into-libc without function calls, Hovav Shacham, 2007**
   - URL: <http://cseweb.ucsd.edu/~hovav/dist/geometry.pdf>
@@ -334,7 +334,7 @@
 - **Management Frames Reference Sheet**
   - URL: <http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cheats.md:161`; references: 2.
+  - Source: `Draft/Cheats.md:211`; references: 2.
   - ID: `ce75ff1b9ff254f2ad48`.
 - **Mitigating Pass-the-Hash Attacks and other credential Theft-version2**
   - URL: <http://download.microsoft.com/download/7/7/A/77ABC5BD-8320-41AF-863C-6ECFB10CB4B9/Mitigating-Pass-the-Hash-Attacks-and-Other-Credential-Theft-Version-2.pdf>
@@ -349,7 +349,7 @@
 - **http://dslab.epfl.ch/pubs/alternatingCFR.pdf**
   - URL: <http://dslab.epfl.ch/pubs/alternatingCFR.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:97`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:151`; references: 1.
   - ID: `cddfb3b64f06821c8911`.
 - **NTFS Documentation - Richard Russon, Yuval Fledel**
   - URL: <http://dubeyko.com/development/FileSystems/NTFS/ntfsdoc.pdf>
@@ -359,12 +359,12 @@
 - **http://dumas.ccsd.cnrs.fr/docs/00/63/64/45/PDF/Laporte.pdf**
   - URL: <http://dumas.ccsd.cnrs.fr/docs/00/63/64/45/PDF/Laporte.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:90`; references: 2.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:144`; references: 2.
   - ID: `d7d8e8c9fb5c4ea0a167`.
 - **Ceremony Design and Analysis**
   - URL: <http://eprint.iacr.org/2007/399.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:221`; references: 1.
+  - Source: `Draft/Interesting_Things.md:169`; references: 1.
   - ID: `2ca3276a82aac0ecb249`.
 - **Self-Exfiltration: The Dangers of Browser-Enforced Information Flow Control**
   - URL: <http://ericchen.me/self_exfiltration.pdf>
@@ -374,7 +374,7 @@
 - **http://eurosys2013.tudos.org/wp-content/uploads/2013/paper/Anand.pdf**
   - URL: <http://eurosys2013.tudos.org/wp-content/uploads/2013/paper/Anand.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:63`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:116`; references: 1.
   - ID: `c6ce96413d322312564b`.
 - **Reverse Engineering Qualcomm Baseband**
   - URL: <http://events.ccc.de/congress/2011/Fahrplan/attachments/2022_11-ccc-qcombbdbg.pdf>
@@ -414,7 +414,7 @@
 - **Mem forenics cheat sheet**
   - URL: <http://forensicmethods.com/wp-content/uploads/2012/04/Memory-Forensics-Cheat-Sheet-v1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cheats.md:81`; references: 2.
+  - Source: `Draft/Cheats.md:105`; references: 2.
   - ID: `179927983195ea7a43fb`.
 - **Outsmarting smartcards**
   - URL: <http://gerhard.dekoninggans.nl/documents/publications/dekoninggans.phd.thesis.pdf>
@@ -464,7 +464,7 @@
 - **Remote Exploitation of an  Unaltered Passenger Vehicle**
   - URL: <http://illmatics.com/Remote%20Car%20Hacking.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cars.md:26`; references: 1.
+  - Source: `Draft/Cars.md:44`; references: 1.
   - ID: `972ef9e8d72fc9495e97`.
 - **http://illmatics.com/Understanding_the_LFH_Slides.pdf**
   - URL: <http://illmatics.com/Understanding_the_LFH_Slides.pdf>
@@ -479,7 +479,7 @@
 - **VM as injection payload **
   - URL: <http://infiltratecon.com/downloads/python_deflowered.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:158`; references: 1.
+  - Source: `Draft/Interesting_Things.md:88`; references: 1.
   - ID: `9c2f49fd5603acd8f807`.
 - **SAP Penetration Testing Using Metasploit**
   - URL: <http://information.rapid7.com/rs/rapid7/images/SAP%20Penetration%20Testing%20Using%20Metasploit%20Final.pdf>
@@ -489,7 +489,7 @@
 - **http://infoscience.epfl.ch/record/149975/files/x86-llvm-translator-chipounov_2.pdf**
   - URL: <http://infoscience.epfl.ch/record/149975/files/x86-llvm-translator-chipounov_2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:63`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:116`; references: 1.
   - ID: `da255767c7edff47076c`.
 - **Introducing Ring -3 Rootkits**
   - URL: <http://invisiblethingslab.com/resources/bh09usa/Ring%20-3%20Rootkits.pdf>
@@ -499,7 +499,7 @@
 - **Pwning (sometimes) with style Dragons' notes on CTFs**
   - URL: <http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CTFs_Wargames.md:123`; references: 1.
+  - Source: `Draft/CTFs_Wargames.md:150`; references: 1.
   - ID: `884959be3304a5714bce`.
 - **Slides**
   - URL: <http://jacobtorrey.com/VMMLecture.pdf>
@@ -514,7 +514,7 @@
 - **http://lenx.100871.net/papers/FPGate-bluehat.pdf**
   - URL: <http://lenx.100871.net/papers/FPGate-bluehat.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:335`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:408`; references: 1.
   - ID: `00946f80dcd90419424e`.
 - **TAJ: Effective Taint Analysis of Web Applications - Java Webapps**
   - URL: <http://manu.sridharan.net/files/pldi153-tripp.pdf>
@@ -529,7 +529,7 @@
 - **http://mediatum.ub.tum.de/doc/1006212/1006212.pdf**
   - URL: <http://mediatum.ub.tum.de/doc/1006212/1006212.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:103`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:157`; references: 1.
   - ID: `0816f10d64035a03f00e`.
 - **Retrieval-Based Learning:An Episodic Context Account - Jeffrey D. Karpicke, Melissa Lehman, William R. Aue(2014)**
   - URL: <http://memory.psych.purdue.edu/downloads/2014_Karpicke_Lehman_Aue_PLM.pdf>
@@ -549,7 +549,7 @@
 - **http://moflow.org/ref/REIL%20-%20A%20platform-independent%20intermediate%20representation%20of%20disassembled%20code%20for%20static%20code%20analysis.pdf**
   - URL: <http://moflow.org/ref/REIL%20-%20A%20platform-independent%20intermediate%20representation%20of%20disassembled%20code%20for%20static%20code%20analysis.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:55`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:108`; references: 1.
   - ID: `125572dbb00e071dbe5a`.
 - **Multi-Stage Delivery of Malware - Marco Ramilli, Matt Bishop**
   - URL: <http://nob.cs.ucdavis.edu/bishop/papers/2010-malware/msmalware.pdf>
@@ -614,7 +614,7 @@
 - **http://os2.zemris.fer.hr/ns/malware/2010_spasojevic/diplomski_spasojevic.pdf**
   - URL: <http://os2.zemris.fer.hr/ns/malware/2010_spasojevic/diplomski_spasojevic.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:239`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:303`; references: 1.
   - ID: `6e18b13fc3cf2c58ec7f`.
 - **Peeking Behind the Curtains of Serverless Platforms - Liang Wang, Mengyuan Li, Yinqian Zhang, Thomas Ristenpart, Michael Swift**
   - URL: <http://pages.cs.wisc.edu/~liangw/pub/atc18-final298.pdf>
@@ -644,12 +644,12 @@
 - **Towards Optimization-Safe Systems: Analyzing the Impact of Undefined Behavior**
   - URL: <http://pdos.csail.mit.edu/~xi/papers/stack-sosp13.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:216`; references: 1.
+  - Source: `Draft/Interesting_Things.md:164`; references: 1.
   - ID: `b9647ab6c9f53d77ec54`.
 - **http://people.csail.mit.edu/mcarbin/papers/aplas05.pdf**
   - URL: <http://people.csail.mit.edu/mcarbin/papers/aplas05.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:179`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:237`; references: 1.
   - ID: `0a23a84682cbc5c79524`.
 - **Security Evaluation of Intel's Active Management Technology**
   - URL: <http://people.kth.se/~maguire/DEGREE-PROJECT-REPORTS/100402-Vassilios_Ververis-with-cover.pdf>
@@ -689,7 +689,7 @@
 - **x86 opcode structure and instruction overview**
   - URL: <http://pnx.tf/files/x86_opcode_structure_and_instruction_overview.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cheats.md:63`; references: 3.
+  - Source: `Draft/Cheats.md:77`; references: 3.
   - ID: `3f750e01fa402ea5acf1`.
 - **PowerDrive: Accurate De-Obfuscation and Analysis of PowerShell Malware - Denis Ugarte1, Davide Maiorca1, Fabrizio Cara1, Giorgio Giacinto(2019)**
   - URL: <http://pralab.diee.unica.it/sites/default/files/dimva19-paper76-final.pdf>
@@ -719,7 +719,7 @@
 - **http://reports-archive.adm.cs.cmu.edu/anon/anon/usr/ftp/2006/CMU-CS-06-180R.pdf**
   - URL: <http://reports-archive.adm.cs.cmu.edu/anon/anon/usr/ftp/2006/CMU-CS-06-180R.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:80`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:134`; references: 1.
   - ID: `559c2777a2fefa998d7e`.
 - **A Detailed Analysis of Contemporary ARM and x86 Architectures**
   - URL: <http://research.cs.wisc.edu/vertical/papers/2013/isa-power-struggles-tr.pdf>
@@ -729,12 +729,12 @@
 - **http://research.cs.wisc.edu/wpis/papers/CAV05-tool-demo.pdf**
   - URL: <http://research.cs.wisc.edu/wpis/papers/CAV05-tool-demo.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:299`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:369`; references: 1.
   - ID: `3935999c04e6245dd99e`.
 - **http://research.cs.wisc.edu/wpis/papers/toplas13-tsl-final.pdf**
   - URL: <http://research.cs.wisc.edu/wpis/papers/toplas13-tsl-final.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:65`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:118`; references: 1.
   - ID: `498ad0607a50cf624311`.
 - **Scientific but Not Academical Overview of Malware Anti-Debugging, Anti-Disassembly and Anti-VM Technologies**
   - URL: <http://research.dissect.pe/docs/blackhat2012-paper.pdf>
@@ -744,42 +744,42 @@
 - **http://research.microsoft.com/en-us/um/people/akenn/coq/HLSL.pdf**
   - URL: <http://research.microsoft.com/en-us/um/people/akenn/coq/HLSL.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:315`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:387`; references: 1.
   - ID: `6a0d44b169b92f756076`.
 - **http://research.microsoft.com/en-us/um/people/akenn/coq/LOLA2012.pdf**
   - URL: <http://research.microsoft.com/en-us/um/people/akenn/coq/LOLA2012.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:313`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:385`; references: 1.
   - ID: `bace7f95b45c2e6492f8`.
 - **http://research.microsoft.com/en-us/um/people/leonardo/muze.pdf**
   - URL: <http://research.microsoft.com/en-us/um/people/leonardo/muze.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:190`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:248`; references: 1.
   - ID: `793a4f8a51190a9d44f9`.
 - **http://research.microsoft.com/en-us/um/people/nick/coqasm.pdf**
   - URL: <http://research.microsoft.com/en-us/um/people/nick/coqasm.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:314`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:386`; references: 1.
   - ID: `ce0f41da1a7c67225859`.
 - **http://research.microsoft.com/en-us/um/people/pg/public_psfiles/pldi2012.pdf**
   - URL: <http://research.microsoft.com/en-us/um/people/pg/public_psfiles/pldi2012.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:72`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:125`; references: 1.
   - ID: `0cbab994da1a4c8ef667`.
 - **http://research.microsoft.com/pubs/69217/ccs05-cfi.pdf**
   - URL: <http://research.microsoft.com/pubs/69217/ccs05-cfi.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:338`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:411`; references: 1.
   - ID: `6969a7c56f9fa2ba3002`.
 - **http://research.sei.ecnu.edu.cn/~song/publications/MPiE14.pdf**
   - URL: <http://research.sei.ecnu.edu.cn/~song/publications/MPiE14.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:74`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:127`; references: 1.
   - ID: `eb2bbc8a176fe6d4f4a3`.
 - **Introduction to Resource Oriented Computing - Whitepaper**
   - URL: <http://resources.1060research.com/docs/IntroductionToResourceOrientedComputing-1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:210`; references: 1.
+  - Source: `Draft/Interesting_Things.md:158`; references: 1.
   - ID: `9f718a4db687365449f4`.
 - **Exploiting Game Engines for Fun and Profit**
   - URL: <http://revuln.com/files/Ferrante_Auriemma_Exploiting_Game_Engines.pdf>
@@ -844,7 +844,7 @@
 - **Arm instruction set**
   - URL: <http://simplemachines.it/doc/arm_inst.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cheats.md:124`; references: 1.
+  - Source: `Draft/Cheats.md:164`; references: 1.
   - ID: `d242b6ebaaf2005b6680`.
 - **Exploring Control-Flow-Guard in Windows10**
   - URL: <http://sjc1-te-ftp.trendmicro.com/assets/wp/exploring-control-flow-guard-in-windows10.pdf>
@@ -859,7 +859,7 @@
 - **A Tale of Two Kernels: Towards Ending Kernel Hardening Wars with Split Kernel**
   - URL: <http://split.kernel.build/papers/ccs14.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:212`; references: 1.
+  - Source: `Draft/Interesting_Things.md:160`; references: 1.
   - ID: `96724d0f855a1756459e`.
 - **Lua code: security overview and practical approaches to static analysis**
   - URL: <http://spw17.langsec.org/papers/costin-lua-static-analysis.pdf>
@@ -869,7 +869,7 @@
 - **http://static.usenix.org/event/woot09/tech/full_papers/rolles.pdf**
   - URL: <http://static.usenix.org/event/woot09/tech/full_papers/rolles.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:240`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:304`; references: 1.
   - ID: `1c04767be35940c7ac1a`.
 - **Applying Taint Analysis and Theorem Proving to Exploit Development - Sean Heelan - RECON2010**
   - URL: <http://static1.squarespace.com/static/507c09ede4b0954f51d59c75/t/508eb764e4b047ba54db4999/1351530340153/applying_taint_analysis_and_theorem_proving_to_xdev.pdf>
@@ -879,7 +879,7 @@
 - **Virtual Ghost: Protecting Applications from Hostile Operating Systems**
   - URL: <http://sva.cs.illinois.edu/pubs/VirtualGhost-ASPLOS-2014.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:371`; references: 1.
+  - Source: `Draft/Interesting_Things.md:359`; references: 1.
   - ID: `e879ececed60ffae254f`.
 - **Counterfeit Object-oriented Programming**
   - URL: <http://syssec.rub.de/media/emma/veroeffentlichungen/2015/03/28/COOP-Oakland15.pdf>
@@ -904,12 +904,12 @@
 - **WebAppSec Testing Checklist**
   - URL: <http://tuppad.com/blog/wp-content/uploads/2012/03/WebApp_Sec_Testing_Checklist.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cheats.md:139`; references: 2.
+  - Source: `Draft/Cheats.md:185`; references: 2.
   - ID: `29d6d7a1470f8c298164`.
 - **http://ubietylab.net/ubigraph/content/Papers/pdf/CppTuring.pdf**
   - URL: <http://ubietylab.net/ubigraph/content/Papers/pdf/CppTuring.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:235`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:298`; references: 1.
   - ID: `349735b4379f2994c1ff`.
 - **Reflections from a Red Team Leader - Susan Craig**
   - URL: <http://usacac.army.mil/CAC2/MilitaryReview/Archives/English/MilitaryReview_20070430_art011.pdf>
@@ -924,7 +924,7 @@
 - **http://users.ece.cmu.edu/~dbrumley/pdf/Brumley,%20Newsome_2006_Alias%20Analysis%20for%20Assembly%20%28Revised%29.pdf**
   - URL: <http://users.ece.cmu.edu/~dbrumley/pdf/Brumley,%20Newsome_2006_Alias%20Analysis%20for%20Assembly%20%28Revised%29.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:172`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:230`; references: 1.
   - ID: `3111cf8e63b5de491681`.
 - **All You Ever Wanted to Know About Dynamic Taint Analysis and Forward Symbolic Execution (but might have been afraid to ask)**
   - URL: <http://users.ece.cmu.edu/~ejschwar/papers/oakland10.pdf>
@@ -934,17 +934,17 @@
 - **http://users.ece.cmu.edu/~ejschwar/papers/usenix11.pdf**
   - URL: <http://users.ece.cmu.edu/~ejschwar/papers/usenix11.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:370`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:446`; references: 1.
   - ID: `eefc5329a3435984bcdd`.
 - **http://users.ece.cmu.edu/~ejschwar/papers/usenix13.pdf**
   - URL: <http://users.ece.cmu.edu/~ejschwar/papers/usenix13.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:256`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:322`; references: 1.
   - ID: `a91a07be7ea5f46dea31`.
 - **A Practical Methodology for Measuring the Side-Channel Signal Available to the Attacker for Instruction-Level Event**
   - URL: <http://users.ece.gatech.edu/~az30/Downloads/Micro14.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:267`; references: 1.
+  - Source: `Draft/Interesting_Things.md:235`; references: 1.
   - ID: `f5982227a2bee8c3f4d7`.
 - **The Devil is in the Constants: Bypassing Defenses in Browser JIT Engines**
   - URL: <http://users.ics.forth.gr/~elathan/papers/ndss15.pdf>
@@ -1004,7 +1004,7 @@
 - **Pdf of all WinDbg commands**
   - URL: <http://windbg.info/download/doc/pdf/WinDbg_cmds.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cheats.md:123`; references: 1.
+  - Source: `Draft/Cheats.md:163`; references: 1.
   - ID: `06cbf7be1fd51d93bc51`.
 - **IEEE 802.11 Tutorial**
   - URL: <http://wow.eecs.berkeley.edu/ergen/docs/ieee.pdf>
@@ -1034,7 +1034,7 @@
 - **POSTER: Dragging Attackers to Honeypots for Effective Analysis of Cyber Threats**
   - URL: <http://www.aims-conference.org/2014/POSTER-Dragging_Attackers_to_Honeypots_for_Effective_Analysis_of_Cyber_Threats.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/honeypot.md:28`; references: 2.
+  - Source: `Draft/honeypot.md:34`; references: 2.
   - ID: `ec8763aee5e2e9af658d`.
 - **Slides**
   - URL: <http://www.alex-ionescu.com/blackhat2015.pdf>
@@ -1109,12 +1109,12 @@
 - **http://www.cl.cam.ac.uk/~mom22/thesis.pdf**
   - URL: <http://www.cl.cam.ac.uk/~mom22/thesis.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:258`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:324`; references: 1.
   - ID: `72f029d63142fdb8dc3c`.
 - **Mov is turing ocmplete**
   - URL: <http://www.cl.cam.ac.uk/~sd601/papers/mov.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:215`; references: 3.
+  - Source: `Draft/Interesting_Things.md:163`; references: 3.
   - ID: `678c7bfa8ef9a3497f4c`.
 - **Glibc Adventures: The Forgotten Chunks**
   - URL: <http://www.contextis.com/documents/117/Glibc_Adventures-The_Forgotten_Chunks.pdf>
@@ -1139,12 +1139,12 @@
 - **A Verified Information-Flow Architecture**
   - URL: <http://www.crash-safe.org/assets/verified-ifc-long-draft-2013-11-10.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:83`; references: 1.
+  - Source: `Draft/Interesting_Things.md:620`; references: 1.
   - ID: `773e68f696d77e189f9c`.
 - **The Eavesdropper’s Dillemma**
   - URL: <http://www.crypto.com/papers/internet-tap.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:214`; references: 2.
+  - Source: `Draft/Interesting_Things.md:162`; references: 2.
   - ID: `b7d97a7f8c082aa6e072`.
 - **Safecracking for the computer scientist \* **
   - URL: <http://www.crypto.com/papers/safelocks.pdf>
@@ -1159,12 +1159,12 @@
 - **http://www.cs.binghamton.edu/~dima/hpca13.pdf**
   - URL: <http://www.cs.binghamton.edu/~dima/hpca13.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:300`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:370`; references: 1.
   - ID: `411f345b58b99a1b6b7d`.
 - **http://www.cs.cmu.edu/~drl/course/compilers/report.pdf**
   - URL: <http://www.cs.cmu.edu/~drl/course/compilers/report.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:178`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:236`; references: 1.
   - ID: `77fd43ff44045c07459b`.
 - **Race Detection for Web Applications - Boris Petrov, Martin Vechev, Manu Sridharan, Julian Dolby**
   - URL: <http://www.cs.columbia.edu/~junfeng/14fa-e6121/papers/js-race.pdf>
@@ -1189,22 +1189,22 @@
 - **http://www.cs.indiana.edu/l/www/classes/b621/abiall.pdf**
   - URL: <http://www.cs.indiana.edu/l/www/classes/b621/abiall.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:150`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:205`; references: 1.
   - ID: `1a9f207704122e4fb9c2`.
 - **http://www.cs.jhu.edu/~nwf/datalog20-paper.pdf**
   - URL: <http://www.cs.jhu.edu/~nwf/datalog20-paper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:174`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:232`; references: 1.
   - ID: `8013ca6b0b2474a1d71a`.
 - **http://www.cs.ox.ac.uk/people/hongseok.yang/paper/pldi14c-submitted.pdf**
   - URL: <http://www.cs.ox.ac.uk/people/hongseok.yang/paper/pldi14c-submitted.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:181`; references: 2.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:239`; references: 2.
   - ID: `38d6dd939de0da972e9d`.
 - **http://www.cs.rhul.ac.uk/home/kinder/papers/phdthesis.pdf**
   - URL: <http://www.cs.rhul.ac.uk/home/kinder/papers/phdthesis.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:69`; references: 2.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:122`; references: 2.
   - ID: `7ea3a2565b4ba41dd181`.
 - **Evil Twin vulnerabilities in Wi-Fi networks (Master Thesis, 2016)**
   - URL: <http://www.cs.ru.nl/bachelorscripties/2016/Matthias_Ghering___4395727___Evil_Twin_Vulnerabilities_in_Wi-Fi_Networks.pdf>
@@ -1219,7 +1219,7 @@
 - **Detecting Automation of Twitter Accounts: Are You a Human, Bot, or Cyborg**
   - URL: <http://www.cs.wm.edu/~hnw/paper/tdsc12b.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:211`; references: 1.
+  - Source: `Draft/Interesting_Things.md:159`; references: 1.
   - ID: `97cac5bd8d3b4c0d4d0e`.
 - **Discovering Browser Extensions via Web Accessible Resources - Chalmers security lab**
   - URL: <http://www.cse.chalmers.se/research/group/security/publications/2017/extensions/codaspy-17-full.pdf>
@@ -1229,7 +1229,7 @@
 - **http://www.cse.lehigh.edu/~gtan/paper/rocksalt.pdf**
   - URL: <http://www.cse.lehigh.edu/~gtan/paper/rocksalt.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:76`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:129`; references: 1.
   - ID: `1902f98653f7dd78a2a3`.
 - **Windows for Reverse Engineers**
   - URL: <http://www.cse.tkk.fi/fi/opinnot/T-110.6220/2014_Reverse_Engineering_Malware_AND_Mobile_Platform_Security_AND_Software_Security/luennot-files/T1106220.pdf>
@@ -1249,7 +1249,7 @@
 - **http://www.dagstuhl.de/mat/Files/12/12051/12051.SimonAxel.Slides.pdf**
   - URL: <http://www.dagstuhl.de/mat/Files/12/12051/12051.SimonAxel.Slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:67`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:120`; references: 1.
   - ID: `a126ea0d5b9be0e268aa`.
 - **OpenDocument and Open XML security (OpenOffice.org and MS Office 2007) - Philippe Lagadec**
   - URL: <http://www.decalage.info/files/JCV07_Lagadec_OpenDocument_OpenXML_v4_decalage.pdf>
@@ -1274,7 +1274,7 @@
 - **http://www.divms.uiowa.edu/ftp/tinelli/papers/LiaEtAl-CAV-14.pdf**
   - URL: <http://www.divms.uiowa.edu/ftp/tinelli/papers/LiaEtAl-CAV-14.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:206`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:265`; references: 1.
   - ID: `2245bd5e4415d7676d45`.
 - **Moving Forward with Computational Red Teaming - Scott Wheeler - Australian DoD**
   - URL: <http://www.dtic.mil/dtic/tr/fulltext/u2/a569437.pdf>
@@ -1289,7 +1289,7 @@
 - **http://www.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-173.pdf**
   - URL: <http://www.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-173.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:195`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:253`; references: 1.
   - ID: `33cff9f0853f8bdbba74`.
 - **SMM Rootkits:A New Breed of OS Independent Malware**
   - URL: <http://www.eecs.ucf.edu/~czou/research/SMM-Rootkits-Securecom08.pdf>
@@ -1319,7 +1319,7 @@
 - **Simplifying the Business Bar Coded Boarding Pass Implementation Guide**
   - URL: <http://www.iata.org/whatwedo/stb/documents/bcbp_implementation_guidev4_jun2009.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:175`; references: 1.
+  - Source: `Draft/Interesting_Things.md:109`; references: 1.
   - ID: `046b84c2d017f4fcc041`.
 - **Practical Comprehensive Bounds on Surreptitious Communication Over DNS**
   - URL: <http://www.icir.org/vern/papers/covert-dns-usec13.pdf>
@@ -1359,7 +1359,7 @@
 - **Why Qubes doesn’t work on Windows.**
   - URL: <http://www.invisiblethingslab.com/resources/2014/A%20crack%20on%20the%20glass.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:369`; references: 1.
+  - Source: `Draft/Interesting_Things.md:357`; references: 1.
   - ID: `e8d5a6e3822ecde4917c`.
 - **Paper on Manual unpacking of UPX packed executable using Ollydbg and Importrec**
   - URL: <http://www.iosrjournals.org/iosr-jce/papers/Vol16-issue1/Version-1/L016117177.pdf>
@@ -1389,7 +1389,7 @@
 - **http://www.labri.fr/perso/fleury/download/papers/binary_analysis/long-final-vmcai-11.pdf**
   - URL: <http://www.labri.fr/perso/fleury/download/papers/binary_analysis/long-final-vmcai-11.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:99`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:153`; references: 1.
   - ID: `be3d38a59501bbb5c6e2`.
 - **Flirting with MIME Types: A Browser’sPerspective - Blake Frantz**
   - URL: <http://www.leviathansecurity.com/pdf/Flirting%20with%20MIME%20Types.pdf>
@@ -1639,12 +1639,12 @@
 - **http://www2.in.tum.de/bib/files/mihaila09reconstruction.pdf**
   - URL: <http://www2.in.tum.de/bib/files/mihaila09reconstruction.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:101`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:155`; references: 1.
   - ID: `ae8f64f4442f20756fb7`.
 - **http://www2.in.tum.de/bib/files/sepp11precise.pdf**
   - URL: <http://www2.in.tum.de/bib/files/sepp11precise.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:57`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:110`; references: 1.
   - ID: `126c9c9805d06ef4bf2e`.
 - **Touching from a Distance: Website Fingerprinting Attacks and Defenses - Xiang Cai, Xin Cheng Zhang, Brijesh Joshi, Rob Johnson**
   - URL: <http://www3.cs.stonybrook.edu/~xcai/fp.pdf>
@@ -1664,7 +1664,7 @@
 - **http://yurichev.com/writings/z3_rockey.pdf**
   - URL: <http://yurichev.com/writings/z3_rockey.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:34`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:88`; references: 1.
   - ID: `fc1f240c7e840694f519`.
 - **Analysis of the Attack Surface of Microsoft Office from a User's Perspective**
   - URL: <https://0b3dcaf9-a-62cb3a1a-s-sites.googlegroups.com/site/zerodayresearch/Analysis_of_the_Attack_Surface_of_Microsoft_Office_from_User_Perspective_final.pdf>
@@ -2069,7 +2069,7 @@
 - **The Geometry of Innocent Flesh on the Bone: Return-into-libc without Function Calls (on the x86)**
   - URL: <https://cseweb.ucsd.edu/~hovav/dist/geometry.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:166`; references: 1.
+  - Source: `Draft/Interesting_Things.md:96`; references: 1.
   - ID: `0ee1f1d04d539537c9f6`.
 - **https://cseweb.ucsd.edu/~hovav/dist/sparc.pdf**
   - URL: <https://cseweb.ucsd.edu/~hovav/dist/sparc.pdf>
@@ -2204,7 +2204,7 @@
 - **A Vulnerability in Modern Automotive Standards and How We Exploited It**
   - URL: <https://documents.trendmicro.com/assets/A-Vulnerability-in-Modern-Automotive-Standards-and-How-We-Exploited-It.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cars.md:35`; references: 1.
+  - Source: `Draft/Cars.md:55`; references: 1.
   - ID: `fbda0f476bf2182f7a66`.
 - **The XCSSET Malware: Inserts Malicious Code Into Xcode Projects, Performs UXSS Backdoor Planting in Safari, and Leverages Two Zero-day Exploits - TrendMicro**
   - URL: <https://documents.trendmicro.com/assets/pdf/XCSSET_Technical_Brief.pdf>
@@ -2544,7 +2544,7 @@
 - **Drupal Security Checklist**
   - URL: <https://github.com/gfoss/attacking-drupal/blob/master/presentation/drupal-security-checklist.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cheats.md:134`; references: 2.
+  - Source: `Draft/Cheats.md:180`; references: 2.
   - ID: `d45db2292192c5051522`.
 - **https://github.com/iSafeBlue/presentation-slides/blob/main/BCS2022-%E6%8E%A2%E7%B4%A2JNDI%E6%94%BB%E5%87%BB.pdf**
   - URL: <https://github.com/iSafeBlue/presentation-slides/blob/main/BCS2022-%E6%8E%A2%E7%B4%A2JNDI%E6%94%BB%E5%87%BB.pdf>
@@ -2574,7 +2574,7 @@
 - **Android ADB cheat sheet**
   - URL: <https://github.com/maldroid/adb_cheatsheet/blob/master/cheatsheet.pdf?raw=true>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cheats.md:68`; references: 1.
+  - Source: `Draft/Cheats.md:84`; references: 1.
   - ID: `ce2b925e860f50fda776`.
 - **Slides**
   - URL: <https://github.com/mattifestation/BHUSA2018_Sysmon/blob/master/Slides_Subverting_Sysmon.pdf>
@@ -2744,7 +2744,7 @@
 - **Optimizing computation of Hash Algorithms as an attacker**
   - URL: <https://hashcat.net/events/p13/js-ocohaaaa.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Passwords.md:450`; references: 1.
+  - Source: `Draft/Passwords.md:497`; references: 1.
   - ID: `154bbf76362db35938b7`.
 - **PostgreSQL Pass The Hash protocol design weakness**
   - URL: <https://hashcat.net/misc/postgres-pth/postgres-pth.pdf>
@@ -2949,7 +2949,7 @@
 - **https://ia800300.us.archive.org/16/items/MoraleOperations/MoraleOperations.pdf**
   - URL: <https://ia800300.us.archive.org/16/items/MoraleOperations/MoraleOperations.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:38`; references: 1.
+  - Source: `Draft/Interesting_Things.md:575`; references: 1.
   - ID: `062b3b2e6ba88562d20a`.
 - **IDART Quick Reference Sheet - Sandia Labs(USGov)**
   - URL: <https://idart.sandia.gov/_assets/documents/2017-09-13_IDART_QRS-Paper-Size.pdf>
@@ -3014,7 +3014,7 @@
 - **A Look In the Mirror: Attacks on Package Managers**
   - URL: <https://isis.poly.edu/~jcappos/papers/cappos_mirror_ccs_08.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:157`; references: 1.
+  - Source: `Draft/Interesting_Things.md:87`; references: 1.
   - ID: `a078e5028ed0e1076870`.
 - **https://j00ru.vexillium.org/papers/2018/bochspwn_reloaded.pdf**
   - URL: <https://j00ru.vexillium.org/papers/2018/bochspwn_reloaded.pdf>
@@ -3084,12 +3084,12 @@
 - **QNX Security Architecture - Alex Plaskett**
   - URL: <https://labs.mwrinfosecurity.com/assets/BlogFiles/mwri-qnx-security-whitepaper-2016-03-14.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cars.md:58`; references: 1.
+  - Source: `Draft/Cars.md:82`; references: 1.
   - ID: `59145bb034abe8bf4682`.
 - **QNX: 99 Problems but a Microkernel ain’t one!**
   - URL: <https://labs.mwrinfosecurity.com/assets/BlogFiles/mwri-qnx-troopers-99-problems-but-a-microkernel-aint-one.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cars.md:57`; references: 1.
+  - Source: `Draft/Cars.md:81`; references: 1.
   - ID: `5c63ab22be7be269cac6`.
 - **Playback: a TLS 1.3 story - Alfonso García Alguacil & Alejo Murillo Moya(2018)**
   - URL: <https://labs.portcullis.co.uk/download/us-18-GarciaAlguacil_MurilloMoya-Playback_A_TLS_1.3_Story__v6.pdf>
@@ -3134,7 +3134,7 @@
 - **Seven Months’ Worth of Mistakes: A Longitudinal Study of Typosquatting Abuse**
   - URL: <https://lirias.kuleuven.be/bitstream/123456789/471369/3/typos-final.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:245`; references: 1.
+  - Source: `Draft/Interesting_Things.md:201`; references: 1.
   - ID: `0ec130db1b5531309cf9`.
 - **A Security Analysis of the WPA-TKIP and TLS Security Protocols (PhD Thesis, 2016)**
   - URL: <https://lirias.kuleuven.be/bitstream/123456789/543228/1/thesis.pdf>
@@ -3184,7 +3184,7 @@
 - **https://media.blackhat.com/us-13/US-13-Cesare-Bugalyze.com-Detecting-Bugs-Using-Decompilation-Slides.pdf**
   - URL: <https://media.blackhat.com/us-13/US-13-Cesare-Bugalyze.com-Detecting-Bugs-Using-Decompilation-Slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:180`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:238`; references: 1.
   - ID: `7536eb941147426e8235`.
 - **Pass-the-Hash II:  Admin’s Revenge - Skip Duckwall & Chris Campbell**
   - URL: <https://media.blackhat.com/us-13/US-13-Duckwall-Pass-the-Hash-Slides.pdf>
@@ -3224,7 +3224,7 @@
 - **DIY Nukeproofing: A New Dig at “Data-Mining”**
   - URL: <https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-3alarmlampscooter-DIY-Nukeproofing.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:200`; references: 1.
+  - Source: `Draft/Interesting_Things.md:144`; references: 1.
   - ID: `1040ac1f8328d952a4d8`.
 - **A Hacker's Guide to Risk**
   - URL: <https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-Bruce-Potter-Hackers-Guide-to-Risk.pdf>
@@ -3424,7 +3424,7 @@
 - **Lightweight Virtualization on Microkernel-based Systems**
   - URL: <https://os.inf.tu-dresden.de/papers_ps/liebergeld-diplom.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:223`; references: 1.
+  - Source: `Draft/Interesting_Things.md:171`; references: 1.
   - ID: `752fbe1414ced4e2b4f1`.
 - **So you thought you were safe using AngularJS. . . . Think again! - Lewis Arden(2017)**
   - URL: <https://owasp.org/www-chapter-london/assets/slides/OWASPLondon20170727_AngularJS.pdf>
@@ -3714,7 +3714,7 @@
 - **https://repository.library.georgetown.edu/bitstream/handle/10822/553096/mobleyBlake.pdf?se**
   - URL: <https://repository.library.georgetown.edu/bitstream/handle/10822/553096/mobleyBlake.pdf?se>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:39`; references: 1.
+  - Source: `Draft/Interesting_Things.md:576`; references: 1.
   - ID: `329d8da23649e3a769d6`.
 - **StegoTorus: A Camouflage Proxy for the Tor Anonymity System**
   - URL: <https://research.owlfolio.org/pubs/2012-stegotorus.pdf>
@@ -3774,7 +3774,7 @@
 - **Metasploit Meterpreter Cheat Sheet**
   - URL: <https://scadahacker.com/library/Documents/Cheat_Sheets/Hacking%20-%20Meterpreter%20Cheat%20%20Sheet.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cheats.md:97`; references: 1.
+  - Source: `Draft/Cheats.md:127`; references: 1.
   - ID: `2d12301dcfe59b0ba195`.
 - **Out of Band  XML External Entity Injection via SAML SSO - Sean Melia**
   - URL: <https://seanmelia.files.wordpress.com/2016/01/out-of-band-xml-external-entity-injection-via-saml-redacted.pdf>
@@ -3849,7 +3849,7 @@
 - **Adapting Software Fault Isolation to Contemporary CPU Architectures**
   - URL: <https://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35649.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:87`; references: 1.
+  - Source: `Draft/Interesting_Things.md:624`; references: 1.
   - ID: `1798013ea9b7c928338f`.
 - **Slides**
   - URL: <https://static.sched.com/hosted_files/appseccalifornia2019/17/AppSecCali2019-StartingStrengthForAppSec.pdf>
@@ -3899,7 +3899,7 @@
 - **Windows Registry Auditing Cheatsheet - Malware Archaeology**
   - URL: <https://static1.squarespace.com/static/552092d5e4b0661088167e5c/t/5d497aefe58b7e00011f6947/1565096688890/Windows+Registry+Auditing+Cheat+Sheet+ver+Aug+2019.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cheats.md:86`; references: 2.
+  - Source: `Draft/Cheats.md:110`; references: 2.
   - ID: `cbee888939a5407099d7`.
 - **Slides**
   - URL: <https://static1.squarespace.com/static/557377e6e4b0976301e02e0f/t/574a0008f85082d3b6ba88a8/1464467468683/Layer1+2016+-+Janjua+-+Kerberos+Party+Tricks+-+Weaponizing+Kerberos+Protocol+Flaws.pdf>
@@ -3989,7 +3989,7 @@
 - **SiLK Toolsuite Quick Reference Guide**
   - URL: <https://tools.netsa.cert.org/silk/silk-quickref.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cheats.md:102`; references: 2.
+  - Source: `Draft/Cheats.md:134`; references: 2.
   - ID: `decc5ebe69335277e75a`.
 - **https://trailofbits.files.wordpress.com/2010/04/practical-rop.pdf**
   - URL: <https://trailofbits.files.wordpress.com/2010/04/practical-rop.pdf>
@@ -4004,7 +4004,7 @@
 - **Amun Honeypot Paper**
   - URL: <https://ub-madoc.bib.uni-mannheim.de/2595/1/amunhoneypot2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/honeypot.md:56`; references: 2.
+  - Source: `Draft/honeypot.md:65`; references: 2.
   - ID: `38e863c087bd0241b239`.
 - **SANS CHEAT SHEET- Windows Artifact Analysis**
   - URL: <https://uk.sans.org/posters/windows_artifact_analysis.pdf>
@@ -4099,7 +4099,7 @@
 - **My password cracking brings all the hashes to the yard.. - Larry Pesce(Hackfest2015)**
   - URL: <https://web.archive.org/web/20190926024106/https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1493862354.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Passwords.md:247`; references: 1.
+  - Source: `Draft/Passwords.md:254`; references: 1.
   - ID: `72904b974115d9286e05`.
 - **Archive Link**
   - URL: <https://web.archive.org/web/20191114080821/http://pferrie.host22.com/papers/antidebug.pdf>
@@ -4114,7 +4114,7 @@
 - **PRINCE: modern password guessing algorithm - Jens Steube(2014)**
   - URL: <https://web.archive.org/web/20200214080638/https://hashcat.net/events/p14-trondheim/prince-attack.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Passwords.md:274`; references: 1.
+  - Source: `Draft/Passwords.md:281`; references: 1.
   - ID: `658d307f6e7d5311c846`.
 - **Paper - 2019**
   - URL: <https://web.archive.org/web/20200507235341/https://www.cyber.gov.au/sites/default/files/2019-05/PROTECT%20-%20Windows%20Event%20Logging%20and%20Forwarding%20%28April%202019%29_0.pdf>
@@ -4184,7 +4184,7 @@
 - **Medical Device Law: Compliance Issues, Best Practices and Trends - American Bar Association**
   - URL: <https://www.americanbar.org/content/dam/aba/events/cle/2015/10/ce1510mdm/ce1510mdm_interactive.authcheckdam.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:251`; references: 1.
+  - Source: `Draft/Interesting_Things.md:211`; references: 1.
   - ID: `3a08f95fb8dc6acf4142`.
 - **How do we Stop Spilling the Beans Across Origins? - A primer on web attacks via cross-origin information leaks and speculative execution - aaj@google.com, mkwst@google.com**
   - URL: <https://www.arturjanc.com/cross-origin-infoleaks.pdf>
@@ -4499,7 +4499,7 @@
 - **FREE-FALL: TESLA HACKING 2016: Hacking Tesla from Wireless to CAN Bus - Keenlab**
   - URL: <https://www.blackhat.com/docs/us-17/thursday/us-17-Nie-Free-Fall-Hacking-Tesla-From-Wireless-To-CAN-Bus.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cars.md:68`; references: 1.
+  - Source: `Draft/Cars.md:91`; references: 1.
   - ID: `b9812645f395520f639e`.
 - **A New Era of SSRF  - Exploiting URL Parser in  Trending Programming Languages! - Orange Tsai - BH USA 17**
   - URL: <https://www.blackhat.com/docs/us-17/thursday/us-17-Tsai-A-New-Era-Of-SSRF-Exploiting-URL-Parser-In-Trending-Programming-Languages.pdf>
@@ -4644,7 +4644,7 @@
 - **It’s all about the timing... - lackhat talk**
   - URL: <https://www.blackhat.com/presentations/bh-usa-07/Meer_and_Slaviero/Whitepaper/bh-usa-07-meer_and_slaviero-WP.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:155`; references: 1.
+  - Source: `Draft/Interesting_Things.md:85`; references: 1.
   - ID: `fc9282421b9be51c2dfa`.
 - **Heap Feng Shui in JavaScript**
   - URL: <https://www.blackhat.com/presentations/bh-usa-07/Sotirov/Whitepaper/bh-usa-07-sotirov-WP.pdf>
@@ -4749,7 +4749,7 @@
 - **https://www.cisuc.uc.pt/publication/showfile?fn=1357250736_metaobfv3.pdf**
   - URL: <https://www.cisuc.uc.pt/publication/showfile?fn=1357250736_metaobfv3.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:229`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:291`; references: 1.
   - ID: `8223ef8f553455ad742f`.
 - **Introduction to Trusted Execution  Environments - Steven J. Murdoch**
   - URL: <https://www.cl.cam.ac.uk/~sjm217/talks/rhul14tee.pdf>
@@ -5094,7 +5094,7 @@
 - **Reflections on Trusting Trust**
   - URL: <https://www.ece.cmu.edu/~ganger/712.fall02/papers/p761-thompson.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:220`; references: 1.
+  - Source: `Draft/Interesting_Things.md:168`; references: 1.
   - ID: `981ec4f2835cb96a5163`.
 - **Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors**
   - URL: <https://www.ece.cmu.edu/~safari/pubs/kim-isca14.pdf>
@@ -5264,7 +5264,7 @@
 - **https://www.govinfo.gov/content/pkg/FR-2018-12-27/pdf/2018-27944.pdf**
   - URL: <https://www.govinfo.gov/content/pkg/FR-2018-12-27/pdf/2018-27944.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:72`; references: 1.
+  - Source: `Draft/Interesting_Things.md:609`; references: 1.
   - ID: `2feae8b884619465dfaa`.
 - **https://www.gwern.net/docs/culture/2019-candia.pdf**
   - URL: <https://www.gwern.net/docs/culture/2019-candia.pdf>
@@ -5294,7 +5294,7 @@
 - **How They Did It: An Analysis of Emission Defeat Devices in Modern Automobiles**
   - URL: <https://www.ieee-security.org/TC/SP2017/papers/101.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:361`; references: 1.
+  - Source: `Draft/Interesting_Things.md:347`; references: 1.
   - ID: `8ff96f2fecf88607ea81`.
 - **SENSORID: Sensor Calibration Fingerprinting for Smartphones - Jiexin Zhang, Alastair R. Beresford, Ian Sheret(2019)**
   - URL: <https://www.ieee-security.org/TC/SP2019/papers/405.pdf>
@@ -5329,7 +5329,7 @@
 - **A Practical Attack to De-Anonymize Social Network Users**
   - URL: <https://www.iseclab.org/papers/sonda-TR.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:370`; references: 1.
+  - Source: `Draft/Interesting_Things.md:358`; references: 1.
   - ID: `4e8a01cc8b1a04381520`.
 - **The HTML Form Protocol Attack - Jochen Topf**
   - URL: <https://www.jochentopf.com/hfpa/hfpa.pdf>
@@ -5354,7 +5354,7 @@
 - **Tagged memory and minion cores in the lowRISC SoC**
   - URL: <https://www.lowrisc.org/downloads/lowRISC-memo-2014-001.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:124`; references: 1.
+  - Source: `Draft/Interesting_Things.md:661`; references: 1.
   - ID: `f9711c98f4a8723dd452`.
 - **A few RPO exploitation techniques - Takeshi Terada**
   - URL: <https://www.mbsd.jp/Whitepaper/rpo.pdf>
@@ -5684,7 +5684,7 @@
 - **QR Inception: Barcode-in-Barcode Attacks**
   - URL: <https://www.sba-research.org/wp-content/uploads/publications/qrinception.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Interesting_Things.md:180`; references: 1.
+  - Source: `Draft/Interesting_Things.md:114`; references: 1.
   - ID: `3efae289c0ceaea7e083`.
 - **A Messy State of the Union: Taming the Composite State Machines of TLS**
   - URL: <https://www.smacktls.com/smack.pdf>
@@ -5719,7 +5719,7 @@
 - **Building a Honeypot to Research Cyber-Attack Techniques**
   - URL: <https://www.sussex.ac.uk/webteam/gateway/file.php?name=bell-proj.pdf&site=20>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/honeypot.md:22`; references: 2.
+  - Source: `Draft/honeypot.md:28`; references: 2.
   - ID: `837f649c87dedbbafccc`.
 - **How to gain root with CVE-2018-4193 in < 10s - Eloi Benoist-Vanderbeken**
   - URL: <https://www.synacktiv.com/ressources/OffensiveCon_2019_macOS_how_to_gain_root_with_CVE-2018-4193_in_10s.pdf>
@@ -5764,7 +5764,7 @@
 - **Slides**
   - URL: <https://www.techsolvency.com/talks/2017-bsideslv/bslv17_ground1234_passwords-201-beyond-the-basics_royce-williams_2017-07-26.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Passwords.md:249`; references: 1.
+  - Source: `Draft/Passwords.md:256`; references: 1.
   - ID: `acf8aceafd9dfff3e3c3`.
 - **The Threat Hunting Reference Model Part 2: The Hunting Loop - Sqrrl**
   - URL: <https://www.threathunting.net/files/The%20Threat%20Hunting%20Reference%20Model%20Part%202_%20The%20Hunting%20Loop%20_%20Sqrrl.pdf>
@@ -5849,7 +5849,7 @@
 - **https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-tice.pdf**
   - URL: <https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-tice.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:337`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:410`; references: 1.
   - ID: `38085cce3060703e6814`.
 - **GSMem: Data Exfiltration from Air-Gapped Computers over GSM Frequencies - usenix conference**
   - URL: <https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-guri-update.pdf>

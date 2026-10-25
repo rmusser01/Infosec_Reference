@@ -68,6 +68,17 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
       "SCADA",
       "UX",
       "bios_uefi",
+      "Cars",
+      "Cheats",
+      "Conferences",
+      "CTFs_Wargames",
+      "Darknets",
+      "DataVis",
+      "honeypot",
+      "Interesting_Things",
+      "Passwords",
+      "Reverse Engineering - REMath Literature",
+      "SE",
     ]) {
       const router = {
         getBasePath: () => "/docs/",
@@ -118,7 +129,7 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
       const links = [...body.querySelectorAll("a")].filter((a) =>
         a.getAttribute("href")?.startsWith("#ref-"),
       );
-      assert(links.length > 3, `No generated ToC links rendered for ${path}`);
+      assert(links.length > 0, `No generated ToC links rendered for ${path}`);
       if (path === "Exploit_Dev") {
         for (const [id, title] of [
           ["ref-exploit-27", "Windows Specific"],

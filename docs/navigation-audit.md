@@ -91,3 +91,12 @@ Ten pages now have managed ToCs and 166 selected subjects: privacy, both cryptog
 All 46 remaining errors are repaired. Current audit: 102 pages, zero internal errors, empty legacy baseline; warnings are 15 orphan pages and 22 repeated destinations. Thirty-nine of 53 listed topics have managed ToCs; fourteen still need rollout review, including three functional directory landings. Rendered external-link counts are unchanged on all ten migrated pages, with raw URL, alias and code preservation checks. Compiler regressions protect the two moved Embedded links and clean Malware PDF heading.
 
 The 74-test suite passes; navigation check has no diagnostics or changed paths; repeated generation is deterministic. Inventories contain 21,738 URLs (1,200 PDF, 1,458 video, 23 other non-text candidates, 19,057 unknown); ten obsolete unique GitHub navigation URLs were replaced by local paths. External availability, capture and production rendering/cache behavior remain unverified.
+
+
+## Remaining topic rollout
+
+The last eleven topic pages now have managed ToCs and 109 selected subjects: Cars, Cheats, Conferences, CTFs, Darknets, DataVis, Honeypots, Interesting Things, Passwords, REMath Literature and Social Engineering. All 53 listed topics are reviewed; 50 have generated ToCs and three short directory landings keep their direct links.
+
+Raw resources, explicit aliases and code examples are preserved. Actual Docsify external-link occurrences match before/after on all eleven pages (37/89/14/68/11/45/53/286/211/324/82). Chromium covers one search destination per page and encoded REMath routes. All three directory landings were clicked through to actual content, including filenames containing `#`, spaces and ampersands; deep reload succeeded.
+
+The full 85-test suite passes. The 102-page audit remains at zero internal errors with an empty baseline; warnings are 15 orphan pages and 21 repeated destinations. Repeated navigation generation makes no changes; inventories retain 21,738 URLs. Shared heading-anchor rendering and the missing favicon remain presentation fixes; external validation/capture remain pending.

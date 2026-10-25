@@ -6,7 +6,7 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 
 - Shared Markdown parser and offline navigation audit, including explicit HTML anchors and GitHub heading fragments.
 - One manifest for 53 main topics (the original 48, the three existing platform-specific post-exploitation pages, SCADA, and additional cryptography references), generated README/site topic navigation, sidebar, selective alphabetical subject index, and full reference search paths.
-- Generated ToCs and real navigable headings for thirty-nine pages: AD, DFIR, logging/monitoring/threat hunting, Cloud, Containers, Basic, Building a Lab, Career, Classes/Training, Documentation/Reporting, Threat Modeling, OSINT, Exfiltration, Fuzzing, Exploit Development, Reverse Engineering, Programming Language Security, Defense, Web, Red Teaming, general/Windows/Linux/macOS post-exploitation, System Internals, Network Attacks, Physical Security, Phishing, Wireless, Anonymity/OpSec/Privacy, both cryptography collections, Embedded, Games, Malware, Rootkits, SCADA, UX, and BIOS/UEFI; original external URL tokens and explicit anchor names are regression-checked.
+- Generated ToCs and real navigable headings for 50 topic pages. All 53 listed topics are reviewed; the three short directory landings retain their direct links without forced ToCs. Source URL multisets, parsed resource occurrences, explicit anchors and existing code examples are regression-checked.
 - Docsify configuration repair and narrow search-plugin fixes for empty heading bodies, HTML titles, and explicit-anchor result destinations.
 - Internal navigation checks with individual legacy exemptions and stale-exemption detection; read-only CI workflow.
 - Parser-generated processing lists and a separate progress ledger that survives regeneration.
@@ -14,7 +14,7 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 
 ## Measured results
 
-Initial internal errors: 334. After pilot: 305 legacy errors remained. After Cloud/Containers: 296 remained. After foundations: 274 remained. After assessment references: 260 remained. After testing/development references: 200 remained. After defense/web/red-team references: 122 remained. After systems references: 80 remained. After network references: 46 remained. After the final legacy-debt group: zero internal navigation errors remain across all 102 audited pages, and the legacy-error baseline is empty. Warnings remain separate: 15 orphan-page and 22 repeated-destination findings.
+Initial internal errors: 334. After pilot: 305 legacy errors remained. After Cloud/Containers: 296 remained. After foundations: 274 remained. After assessment references: 260 remained. After testing/development references: 200 remained. After defense/web/red-team references: 122 remained. After systems references: 80 remained. After network references: 46 remained. After the final legacy-debt group: zero internal navigation errors remain across all 102 audited pages, and the legacy-error baseline is empty. Warnings remain separate: 15 orphan-page and 21 repeated-destination findings.
 
 Current provisional resource candidates: 1,200 PDFs, 1,458 videos, 23 other non-text; 19,057 URLs remain unknown until response/content confirmation. These are source-derived inventory counts, not verified content types or download counts.
 
@@ -22,8 +22,7 @@ Automated tests exercise the actual checked-in Docsify compiler and application 
 
 ## Remaining work
 
-- Review the remaining 14 of 53 listed topics and migrate where useful. All legacy internal errors are repaired. Three existing directory landings remain functional without forced ToCs; eleven other topics still need rollout review.
-- Complete collection-wide GitHub/Docsify navigation and search QA, and resolve inline-anchor duplicate IDs/empty heading permalinks and the missing favicon. The thirty-nine migrated pages have compiler/browser evidence; production deployment remains unverified.
+- Finish shared heading-rendering cleanup (duplicate same-subject IDs/empty permalink wrappers) and repair the missing favicon. All topic migrations and internal link repairs are complete, with compiler/browser evidence. Production deployment/cache behavior remains unverified.
 - Configure Browsertrix on the available Docker runtime and choose a durable archive destination; implement the enforced capture adapter, article-image filtering, WARC verification, offline replay, and storage/retrieval pilot. The archive policy file describes intent, not implemented enforcement.
 - Run external batches with evidence-aware capture/queue routing. No full external validation or web capture has run.
 - Separately scoped later processing: PDF extraction/OCR, video captions/transcription, other extractors, and extracted-content search indexing. These are not prerequisites for completing navigation.
@@ -178,3 +177,17 @@ Starting checkpoint: `d15b5a5`; continued on `codex/generated-navigation` in the
 - Chromium under `/docs/` verified exact result hashes/headings for Scuttlebutt Protocol Guide, Crypto 101, HTTPS in the real world, ArduPilot, TRIBES Engine Networking Model, Golem Malware, Jynx, Modbus interface tutorial, The Design of Everyday Things and CHIPSEC. Deep-route reload succeeded. The repaired portal routes for Credential Access and Priority Definition Planning reached their matching content, including encoded ampersand/space paths, and deep reload succeeded. No console errors were observed.
 
 Verification: `npm test` passed 74/74 on Node.js 24.18.0; navigation check reported zero internal errors, no new/stale diagnostics and no changed managed paths; repeated generation made no changes. Inventories regenerated. Existing inline-anchor/favicon presentation issues and inherited trailing spaces remain. No external availability batch, capture, push or publication ran.
+
+
+## Remaining topic rollout — 2026-10-25
+
+Starting checkpoint: `3f71956`; continued in the requested checkout on `codex/generated-navigation`.
+
+- Migrated Cars, Cheat Sheets, Conferences, CTFs/Wargames, Darknets, Data Visualization, Honeypots, Interesting Things, Passwords, REMath Literature and Social Engineering. Added 109 selected subjects and stable explicit content IDs. All 53 listed topics are now reviewed: 50 have managed ToCs and three existing short directory landings retain direct file links.
+- Preserved all source resources, named references and code examples. Data Visualization/Interesting Things unsorted blocks and Honeypots' linked preamble remain intact at the bottom of their pages. Only resource-free Data Visualization/Passwords notes and REMath's heading maintenance instruction moved to the backlog. Passwords' invalid legacy punctuation bytes were converted to UTF-8 while retaining valid UTF-8 text.
+- Added a document title to REMath Literature while retaining its initial section; its disassembler/debugger and miscellaneous-tool subheadings now have consistent hierarchy. Retained the renamed C/C++ heading and To be categorized destinations as explicit aliases. Honeypots keeps its original page-title alias. Cars' inline recommended resource remains a bullet rather than becoming heading text.
+- Ruling: compiler checks require a non-empty generated ToC rather than an arbitrary minimum of four entries — the complete Conferences/Data Visualization pages legitimately have three sections. Generator checks and per-destination compiler assertions still verify their full navigation; no placeholder headings were added to satisfy a test.
+- Eleven preservation cases and compiler coverage failed before migration, then passed. Actual checked-in Docsify old/new external-link comparisons show no losses: Cars 37, Cheats 89, Conferences 14, CTFs 68, Darknets 11, DataVis 45, Honeypots 53, Interesting Things 286, Passwords 211, REMath 324 and Social Engineering 82 before and after.
+- Chromium under `/docs/` verified exact search hashes/headings for Awesome Vehicle, Linux Syscall Table, CFP Time, Pwnable.kr, ProjectX, NewsDiffs, Honeynet Project, tcpTrigger, Crackstation, Mcsema and The Social Engineering Framework. Encoded REMath filenames and deep-route reload work. The three unchanged directory landings were reviewed and clicked through to Establish & Maintain Infrastructure, Discovery and Bitcoin Hack; destination content and encoded `#`/space/ampersand routes loaded, followed by deep reload.
+
+Verification: `npm test` passed 85/85 on Node.js 24.18.0; navigation check reports zero internal errors and an empty baseline, with 15 orphan and 21 repeated-destination warnings. Repeated generation returns no changed paths. Inventories retain 21,738 URLs (1,200 PDF, 1,458 video, 23 other non-text candidates, 19,057 unknown). Shared heading-anchor rendering/favicon cleanup remains next; no external availability batch, capture, push or publication ran.

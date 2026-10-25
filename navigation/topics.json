@@ -656,8 +656,59 @@
       "title": "Basic Security Information",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Being the First Security Person/Starting a Security Program/Growing it",
+          "fragment": "ref-basic-16",
+          "aliases": []
+        },
+        {
+          "label": "Briefing and Reporting",
+          "fragment": "ref-basic-17",
+          "aliases": []
+        },
+        {
+          "label": "Scaling a Security Program",
+          "fragment": "ref-basic-19",
+          "aliases": []
+        },
+        {
+          "label": "Building a Security Team",
+          "fragment": "ref-basic-20",
+          "aliases": []
+        },
+        {
+          "label": "Cognitive Bias",
+          "fragment": "ref-basic-22",
+          "aliases": []
+        },
+        {
+          "label": "Critical Thinking",
+          "fragment": "ref-basic-26",
+          "aliases": []
+        },
+        {
+          "label": "Learning:",
+          "fragment": "ref-basic-40",
+          "aliases": []
+        },
+        {
+          "label": "Mental Models",
+          "fragment": "ref-basic-42",
+          "aliases": []
+        },
+        {
+          "label": "Risk",
+          "fragment": "ref-basic-53",
+          "aliases": []
+        },
+        {
+          "label": "Zero Trust",
+          "fragment": "ref-basic-67",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/bios_uefi.md",
@@ -672,8 +723,39 @@
       "title": "Building a Testing Lab",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Virtual Labs/Machines",
+          "fragment": "ref-lab-5",
+          "aliases": []
+        },
+        {
+          "label": "Web Applications",
+          "fragment": "ref-lab-13",
+          "aliases": []
+        },
+        {
+          "label": "Setting up ActiveDirectory Focused Labs",
+          "fragment": "ref-lab-27",
+          "aliases": []
+        },
+        {
+          "label": "Building a Pentest Lab",
+          "fragment": "ref-lab-36",
+          "aliases": []
+        },
+        {
+          "label": "Building a Defensive Lab",
+          "fragment": "ref-lab-42",
+          "aliases": []
+        },
+        {
+          "label": "Infrastructure Automation",
+          "fragment": "ref-lab-63",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Cars.md",
@@ -688,8 +770,64 @@
       "title": "Career",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Career Growth/Progression",
+          "fragment": "ref-career-5",
+          "aliases": []
+        },
+        {
+          "label": "Choosing a Job/Looking for Work",
+          "fragment": "ref-career-8",
+          "aliases": []
+        },
+        {
+          "label": "Consulting & Contracting(Independent Business)",
+          "fragment": "ref-career-13",
+          "aliases": []
+        },
+        {
+          "label": "Hiring",
+          "fragment": "ref-career-21",
+          "aliases": []
+        },
+        {
+          "label": "Interview Prep",
+          "fragment": "ref-career-24",
+          "aliases": []
+        },
+        {
+          "label": "Interviewing",
+          "fragment": "ref-career-25",
+          "aliases": []
+        },
+        {
+          "label": "Management",
+          "fragment": "ref-career-28",
+          "aliases": []
+        },
+        {
+          "label": "Management Skills",
+          "fragment": "ref-career-29",
+          "aliases": []
+        },
+        {
+          "label": "Mentoring",
+          "fragment": "ref-career-33",
+          "aliases": []
+        },
+        {
+          "label": "Performance Reviews",
+          "fragment": "ref-career-41",
+          "aliases": []
+        },
+        {
+          "label": "Resume",
+          "fragment": "ref-career-48",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Cheats.md",
@@ -795,8 +933,69 @@
       "title": "Courses & Training",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "General course sources",
+          "fragment": "ref-training-2",
+          "aliases": []
+        },
+        {
+          "label": "Learning",
+          "fragment": "ref-training-3",
+          "aliases": []
+        },
+        {
+          "label": "Basic Security",
+          "fragment": "ref-training-6",
+          "aliases": []
+        },
+        {
+          "label": "Cloud",
+          "fragment": "ref-training-7",
+          "aliases": []
+        },
+        {
+          "label": "Containers",
+          "fragment": "ref-training-12",
+          "aliases": []
+        },
+        {
+          "label": "Cryptography",
+          "fragment": "ref-training-13",
+          "aliases": []
+        },
+        {
+          "label": "Exploit Development Training",
+          "fragment": "ref-training-16",
+          "aliases": []
+        },
+        {
+          "label": "Incident Response/Forensics/NSM Training",
+          "fragment": "ref-training-17",
+          "aliases": []
+        },
+        {
+          "label": "Malware Analysis",
+          "fragment": "ref-training-20",
+          "aliases": []
+        },
+        {
+          "label": "Penetration Testing",
+          "fragment": "ref-training-23",
+          "aliases": []
+        },
+        {
+          "label": "Reverse Engineering",
+          "fragment": "ref-training-28",
+          "aliases": []
+        },
+        {
+          "label": "Resources for Instructors and Trainers",
+          "fragment": "ref-training-35",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/CandE.md",
@@ -1361,6 +1560,10 @@
     "Draft/DFIR.md",
     "Draft/L-SM-TH.md",
     "Draft/Cloud.md",
-    "Draft/Containers.md"
+    "Draft/Containers.md",
+    "Draft/Basic.md",
+    "Draft/Building_A_Lab.md",
+    "Draft/Career.md",
+    "Draft/Courses_Training.md"
   ]
 }

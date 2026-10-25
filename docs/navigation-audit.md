@@ -34,3 +34,9 @@ Docsify configuration and the actual compiler were tested, followed by a local H
 The pilot received native Chromium review under `/docs/`, including sidebar/deep routes, search destinations for all three pilot phrases, and deep-route reload. This exposed browser cache quota exhaustion, now handled with an in-memory fallback and incomplete-cache recovery. The resolver also now enforces filename and ancestor-directory case on macOS, matching Linux checks.
 
 Cloud and Containers now have generated ToCs and selected subject-index entries. Their raw external URL multisets, previously parsed resource occurrences, and legacy destinations are checked. All nine group errors were retired: 296 error occurrences / 288 distinct keys remain elsewhere. Both pages' managed fragments were verified in the actual Docsify compiler and Chromium. Full repository migration and production deployment remain outstanding.
+
+## Foundations group
+
+Basic, Building a Lab, Career, and Classes/Training now have managed ToCs and selected index subjects. Basic's linked unsorted resources remain on its page, while resource-free editorial placeholders and the lab's To Do list are in the maintenance backlog. Existing resource occurrences/legacy anchors are retained, apart from the explicit addition of an HTTPS scheme to Career's existing Allen Geer destination. Basic's documentation/threat-model paths point to real Markdown files.
+
+All 22 group errors are retired; 274 error occurrences / 266 legacy keys remain elsewhere. Actual Docsify compiler checks and native Chromium search/deep routing cover these four pages. Inventories now have 21,746 unique URLs after the single intentional destination repair; provisional type counts are unchanged except unknown URLs increased to 19,066. External availability remains unverified.

@@ -6,7 +6,7 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 
 - Shared Markdown parser and offline navigation audit, including explicit HTML anchors and GitHub heading fragments.
 - One manifest for 48 main topics, generated README/site topic navigation, sidebar, selective alphabetical subject index, and full reference search paths.
-- Generated ToCs and real navigable headings for AD, DFIR, and logging/monitoring/threat hunting; original external URL tokens and explicit anchor names are regression-checked.
+- Generated ToCs and real navigable headings for nine pages: AD, DFIR, logging/monitoring/threat hunting, Cloud, Containers, Basic, Building a Lab, Career, and Classes/Training; original external URL tokens and explicit anchor names are regression-checked.
 - Docsify configuration repair and narrow search-plugin fixes for empty heading bodies, HTML titles, and explicit-anchor result destinations.
 - Internal navigation checks with individual legacy exemptions and stale-exemption detection; read-only CI workflow.
 - Parser-generated processing lists and a separate progress ledger that survives regeneration.
@@ -14,15 +14,15 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 
 ## Measured results
 
-Initial internal errors: 334. After pilot: 305 legacy errors remained. After the Cloud/Containers group: 296 legacy error occurrences remain in other pages; managed navigation and all five migrated pages have zero internal errors. The audit intentionally continues to report that debt.
+Initial internal errors: 334. After pilot: 305 legacy errors remained. After Cloud/Containers: 296 remained. After the foundations group: 274 legacy error occurrences remain in other pages; managed navigation and all nine migrated pages have zero internal errors. The audit intentionally continues to report that debt.
 
-Current provisional resource candidates: 1,199 PDFs, 1,458 videos, 23 other non-text; 19,065 URLs remain unknown until response/content confirmation. These are source-derived inventory counts, not verified content types or download counts.
+Current provisional resource candidates: 1,199 PDFs, 1,458 videos, 23 other non-text; 19,066 URLs remain unknown until response/content confirmation. These are source-derived inventory counts, not verified content types or download counts.
 
 Functional tests exercise the actual checked-in Docsify compiler and application in jsdom under `/docs/`, sidebar/deep routing, and distinct search phrases. This is not native-browser visual QA or a production deployment check.
 
 ## Remaining work
 
-- Continue migrating remaining pages and retiring their legacy-error entries in reviewable groups. Pilot browser review and the Cloud/Containers group are complete.
+- Continue migrating remaining pages and retiring their legacy-error entries in reviewable groups. Pilot browser review, Cloud/Containers, and the four-page foundations group are complete.
 - Configure Browsertrix on the available Docker runtime and choose a durable archive destination; implement the enforced capture adapter, article-image filtering, WARC verification, offline replay, and storage/retrieval pilot. The archive policy file describes intent, not implemented enforcement.
 - Run external batches with evidence-aware capture/queue routing. No full external validation or web capture has run.
 - Implement PDF extraction/OCR, video captions/transcription, other extractors, and search indexing in later processing stages.
@@ -69,3 +69,20 @@ Ruling: resume in the requested checkout on a feature branch and keep execution 
 Desktop final verification: `npm ci --ignore-scripts --no-audit --no-fund` succeeded on Node.js 24.18.0; `npm test` passed 39/39; `npm run nav:check` reported 296 explicitly baselined errors and no new/stale diagnostics; a repeated `npm run nav:generate` returned no changed paths. Resource regeneration and offline archive planning succeeded. Chromium also verified Cloud's AWS IAM route at `/` and the new group's destinations under `/docs/`. The only observed browser resource error was the inherited missing favicon.
 
 Independent review found no blockers. It identified a newly introduced S3 heading-text artifact; a rendering regression failed before correction and passed after, retaining the legacy `s3atk>` alias. The reviewer independently compared old/new Docsify output and confirmed every prior external-link occurrence and fixture legacy anchor remains rendered for Cloud/Containers. Deferred presentation issues remain the inline-anchor duplicate IDs/empty heading permalink spans and missing favicon. `git diff --check` still flags inherited trailing spaces carried through the imported patch and migrated content; no whitespace-only sweep was performed.
+
+## Foundations navigation group — 2026-10-25
+
+Starting checkpoint: `9b8f17a`; continued in the same requested checkout on `codex/generated-navigation`.
+
+- Migrated `Draft/Basic.md`, `Draft/Building_A_Lab.md`, `Draft/Career.md`, and `Draft/Courses_Training.md`. ToCs use stable `ref-basic-*`, `ref-lab-*`, `ref-career-*`, and `ref-training-*` IDs; depth four includes existing nested basics, vulnerable-web-lab subjects, and cloud training providers. Added 39 selected subjects to the alphabetical index.
+- Kept all linked resources from Basic's unsorted preamble on the Basic page under `ref-basic-notes`, after the organized content. Moved its 51 resource-free editorial blocks and the lab's resource-free To Do list to `docs/maintenance-backlog.md`. No resource acquisition or pruning was performed.
+- Closed malformed legacy anchor markup, retained exact-case `AD`/`Industry` destinations, and kept `mgmt` at the first Management section while giving Management Skills its own canonical target.
+- Repaired Basic's documentation link to `Docs_and_Reports.md` and malformed threat-model links to the existing `threatmodel.md`. Intentionally added `https://` to Career's `allengeer.com/how-to-handle-brent-in-the-phoenix-project/` destination; the existing host/path were retained, and availability remains unverified. The preservation fixture records this one exception explicitly.
+- Reused the Cloud/Containers preservation checks as `tests/navigation/migration.test.mjs` and extended the fixture to all six rollout pages. Checks retain raw HTTP(S) URL multisets (reversing only the documented scheme correction), prior parsed external-link occurrences, and all legacy anchor destinations. They reject internal errors or baseline exemptions on migrated pages. The four migration tests and compiler coverage failed before the migration and now pass.
+- Retired all 22 baseline errors for this group. The remaining debt is 274 occurrences / 266 distinct keys, with no new/stale diagnostics. Regenerated inventories contain 21,746 URLs: 1,199 PDF, 1,458 video, 23 other non-text candidates, and 19,066 unknown. The added URL is the corrected Career destination; these counts remain provisional.
+- Chromium under `/docs/` verified exact search-result URLs and destination headings for `InfoSec Newbie List` (Basic), `BadBlood` (lab building), `Manager Tools` (Career), and `Learning How to Learn` (training), followed by deep-route reload. No browser console errors were observed.
+- Independent review found no blockers, checked old/new actual Docsify output for resource occurrences and legacy anchors, and confirmed heading nesting/internal corrections. The known inherited heading-anchor/favicon presentation issues remain deferred. Trailing-space warnings inherited from the content remain; no whitespace-only rewrite was made.
+
+Remaining work continues in reviewable page groups. Capture tooling, durable storage, external batches, and later extraction/search processing are unchanged and pending.
+
+Foundations final verification: `npm test` passed 43/43 on Node.js 24.18.0; `npm run nav:check` passed with 274 baselined error occurrences and zero new/stale diagnostics; a repeated `npm run nav:generate` returned no changed paths. Resource inventories regenerated successfully. Actual Docsify comparisons after the editorial-note split retained all prior rendered external-link occurrences (Basic 468→468, lab 277→277, Career 465→466 with the intentional scheme repair, training 163→163) and all recorded legacy anchors. No external availability request or archive capture was run.

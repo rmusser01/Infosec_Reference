@@ -6,7 +6,7 @@ import { parseDocument } from "../../tools/navigation/parse.mjs";
 import { resolveInternalLink } from "../../tools/navigation/resolve.mjs";
 
 const snapshot = JSON.parse(
-  readFileSync(new URL("./fixtures/cloud-resources.json", import.meta.url)),
+  readFileSync(new URL("./fixtures/migration-resources.json", import.meta.url)),
 );
 for (const [path, original] of Object.entries(snapshot))
   test(`${path} has managed navigation without losing resources or legacy anchors`, () => {
@@ -19,10 +19,18 @@ for (const [path, original] of Object.entries(snapshot))
     assert(manifest.tocPages.includes(path));
     assert(source.includes("<!-- nav:toc:start -->"));
     assert(!baseline.some((entry) => entry.path === path));
+    let preservedSource = source;
+    for (const { from, to } of original.urlCorrections ?? []) {
+      assert(
+        doc.links.some((link) => link.url === to),
+        `Missing corrected destination ${to}`,
+      );
+      preservedSource = preservedSource.replace(to, from);
+    }
     assert.equal(
       createHash("sha256")
         .update(
-          [...source.matchAll(/https?:\/\/[^\s<>"']+/g)]
+          [...preservedSource.matchAll(/https?:\/\/[^\s<>"']+/g)]
             .map((m) => m[0])
             .sort()
             .join("\n"),

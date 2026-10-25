@@ -43,3 +43,128 @@ To Add:
 ------------------------------------------------------------------------------------------------------------------------------------------
 ```
 
+
+## Draft/Building_A_Lab.md
+
+Notes moved from the old page preamble:
+
+```text
+To Do
+    Building a defensive Lab
+    Infra Automation
+```
+
+## Draft/Basic.md
+
+Resource-free topic placeholders moved out of reader navigation. Unsorted linked resources remain on the Basic page.
+
+```text
+101
+	- Talks/Presentations/Videos
+
+Basic Windows Tools
+
+Basic Utilities
+
+- Beginner/'Starting out' Link Collections
+
+Budget
+
+Building a Team
+
+Business
+
+Careers
+
+CLI
+	Awk
+	Bash
+	Git
+	Grep
+	sed
+	Vim
+
+Complexity
+
+copy/paste code
+
+Culture
+
+Crypto
+
+Grep
+
+CMMI
+
+Cognitive Bias
+
+Databases
+
+Data Manipulation
+
+Decision Making
+
+Distributed Computing
+
+Enumeration
+
+First Person/Starting a Security Team
+
+Git
+
+Hiring Security Services
+
+Learning
+
+Linux
+
+MDM
+
+MacOS
+
+Mentoring
+
+Metrics
+
+Open Source Projects - Maintaining & Running
+
+Product Sec Testing
+
+Problem Solving
+
+Programming
+
+Questions
+
+Ransomware
+
+Risk Analysis
+
+Scaling AppSec
+
+Scaling Ops
+
+Scaling
+
+'Scene'
+
+Scheduling
+
+Scoping
+
+Security 101
+
+Security Questionaires
+
+SecOps
+
+Skills improvement
+
+Statistics
+
+Storytelling/Presenting
+
+TableTop
+
+Technical Debt
+```

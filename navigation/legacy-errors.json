@@ -105,76 +105,6 @@
     "occurrences": 1
   },
   {
-    "path": "Draft/Basic.md",
-    "code": "missing-fragment",
-    "target": "#background",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Basic.md",
-    "code": "missing-fragment",
-    "target": "#bias",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Basic.md",
-    "code": "missing-fragment",
-    "target": "#crittihnk",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Basic.md",
-    "code": "missing-fragment",
-    "target": "#rex",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Basic.md",
-    "code": "missing-fragment",
-    "target": "#rfp",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Basic.md",
-    "code": "missing-fragment",
-    "target": "#testing",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Basic.md",
-    "code": "missing-fragment",
-    "target": "#story",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Basic.md",
-    "code": "missing-file",
-    "target": "./Docs_and_Reports.html",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Basic.md",
-    "code": "missing-fragment",
-    "target": "#./Threat_Modeling.md",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Basic.md",
-    "code": "missing-fragment",
-    "target": "#./Threat_Modeling.html",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
     "path": "Draft/bios_uefi.md",
     "code": "missing-fragment",
     "target": "#stuff",
@@ -185,13 +115,6 @@
     "path": "Draft/bios_uefi.md",
     "code": "missing-fragment",
     "target": "#psp",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Building_A_Lab.md",
-    "code": "missing-fragment",
-    "target": "#bltalks",
     "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
     "occurrences": 1
   },
@@ -213,83 +136,6 @@
     "path": "Draft/CandE.md",
     "code": "duplicate-anchor",
     "target": "general",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Career.md",
-    "code": "missing-fragment",
-    "target": "#independent",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Career.md",
-    "code": "missing-fragment",
-    "target": "#networking",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Career.md",
-    "code": "missing-fragment",
-    "target": "#perf",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Career.md",
-    "code": "missing-fragment",
-    "target": "#strategy",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Career.md",
-    "code": "missing-fragment",
-    "target": "#industry",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Career.md",
-    "code": "missing-file",
-    "target": "allengeer.com/how-to-handle-brent-in-the-phoenix-project/",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Career.md",
-    "code": "duplicate-anchor",
-    "target": "mgmt",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Courses_Training.md",
-    "code": "missing-fragment",
-    "target": "#repo",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Courses_Training.md",
-    "code": "missing-fragment",
-    "target": "#azure",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Courses_Training.md",
-    "code": "missing-fragment",
-    "target": "#gcp",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Courses_Training.md",
-    "code": "missing-fragment",
-    "target": "#ds",
     "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
     "occurrences": 1
   },

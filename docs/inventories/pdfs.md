@@ -454,7 +454,7 @@
 - **Slides**
   - URL: <http://i.blackhat.com/USA-20/Wednesday/us-20-Mackinnon-Engineering-Empathy-Adapting-Software-Engineering-Principles-And-Process-To-Security-2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Career.md:221`; references: 1.
+  - Source: `Draft/Career.md:255`; references: 1.
   - ID: `83204b82c8e3544f006b`.
 - **Slides**
   - URL: <http://i.blackhat.com/eu-19/Thursday/eu-19-Noguera-Unveiling-The-Underground-World-Of-Anti-Cheats-2.pdf>
@@ -534,7 +534,7 @@
 - **Retrieval-Based Learning:An Episodic Context Account - Jeffrey D. Karpicke, Melissa Lehman, William R. Aue(2014)**
   - URL: <http://memory.psych.purdue.edu/downloads/2014_Karpicke_Lehman_Aue_PLM.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:815`; references: 1.
+  - Source: `Draft/Basic.md:692`; references: 1.
   - ID: `ea43f166ea6aaeb5c47f`.
 - **PMASCE-Polymorphic and Metamorphic Shellcode Creation Engine - Navneet Kaur Popli, Dr. Anup Girdhar(2019**
   - URL: <http://meri.edu.in/journal/wp-content/uploads/2019/01/Paper-4-OCT-17.pdf>
@@ -674,7 +674,7 @@
 - **How to Read a Book, v5.0 - Paul N. Edwards University of Michigan**
   - URL: <http://pne.people.si.umich.edu/PDF/howtoread.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:804`; references: 1.
+  - Source: `Draft/Basic.md:681`; references: 1.
   - ID: `e6de6aa277b5901e910f`.
 - **Case study of the miner botnet**
   - URL: <http://pnx.tf/files/2012_cycon-official_miner_plohmann_padilla.pdf>
@@ -819,12 +819,12 @@
 - **Program Obfuscation, Fall 2013 - CSCI**
   - URL: <http://security.cs.rpi.edu/courses/obfuscation-fall2013/syllabus.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Courses_Training.md:278`; references: 1.
+  - Source: `Draft/Courses_Training.md:325`; references: 1.
   - ID: `94cc1f854115042eb8a1`.
 - **Windows Exploitation, CSCI Spring 2014**
   - URL: <http://security.cs.rpi.edu/~gaasem/winexp/IndependentStudy.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Courses_Training.md:137`; references: 1.
+  - Source: `Draft/Courses_Training.md:160`; references: 1.
   - ID: `8b07acc333b92920a465`.
 - **Server Certificate Practices in Eduroam (2015)**
   - URL: <http://services.geant.net/cbp/Knowledge_Base/Wireless/Documents/cbp-33_server-certificate-practices-in-eduroam.pdf>
@@ -889,7 +889,7 @@
 - **Slides**
   - URL: <http://talk.jpnc.info/bash_lfnw_2017.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:618`; references: 1.
+  - Source: `Draft/Basic.md:465`; references: 1.
   - ID: `84741fca83d27eb1bd63`.
 - **Robust Defenses for Cross-Site Request Forgery**
   - URL: <http://theory.stanford.edu/people/jcm/papers/ccs2008-barth.pdf>
@@ -979,12 +979,12 @@
 - **How Complex Systems Fail - Richard I. Cook**
   - URL: <http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Career.md:76`; references: 1.
+  - Source: `Draft/Career.md:98`; references: 1.
   - ID: `a7890d6014608ac3ac89`.
 - **END-TO-END ARGUMENTS IN SYSTEM DESIGN - J.H. Saltzer, D.P. Reed and D.D. Clark**
   - URL: <http://web.mit.edu/saltzer/www/publications/endtoend/endtoend.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:726`; references: 1.
+  - Source: `Draft/Basic.md:587`; references: 1.
   - ID: `410827e8144461d17f4c`.
 - **The “Big Picture” of Insider IT Sabotage Across U.S. Critical Infrastructures**
   - URL: <http://web.stanford.edu/class/cs259d/readings/Infrastructure.pdf>
@@ -1404,7 +1404,7 @@
 - **A Mathematical Theory of Communication - Claude E. Shannon**
   - URL: <http://www.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:732`; references: 1.
+  - Source: `Draft/Basic.md:593`; references: 1.
   - ID: `df2c04ad24b3813fa363`.
 - **Traditions In Military-Strategic Thought In Germany And The Problem Of Deterrence - 1989 - Detlef Bald**
   - URL: <http://www.mgfa.de/html/einsatzunterstuetzung/downloads/ap018englisch.pdf?PHPSESSID=931748af0e86616800373655acaf2902>
@@ -1749,7 +1749,7 @@
 - **The Diamond Model of Intrusion Analysis - Sergio Caltagirone, Andrew Pendergast, Christopher Betz**
   - URL: <https://apps.dtic.mil/dtic/tr/fulltext/u2/a586960.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:733`; references: 1.
+  - Source: `Draft/Basic.md:594`; references: 1.
   - ID: `3bbf8f5ee546333ef4c2`.
 - **Command & Control: Understanding, Denying and Detecting - 2014 - Joseph Gardiner, Marco Cova, Shishir Nagaraja**
   - URL: <https://arxiv.org/ftp/arxiv/papers/1408/1408.1136.pdf>
@@ -1974,12 +1974,12 @@
 - **Epistemological Pluralism and the Revaluation of the Concrete - Sherry Turkle and Seymour Papert**
   - URL: <https://cmapspublic2.ihmc.us/rid=1N5PWLBKV-28C3D13-380S/Turkle%20and%20Papert%20epistemological%20pluralism.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Courses_Training.md:336`; references: 1.
+  - Source: `Draft/Courses_Training.md:397`; references: 1.
   - ID: `2dd51f67de36cd08df97`.
 - **“Did You Miss My Comment or What?”: Understanding Toxicity in Open Source Discussions - Courtney Miller, Sophie Cohen, Daniel Klug, Bogdan Vasilescu, Christian Kästner(2022)**
   - URL: <https://cmustrudel.github.io/papers/osstoxicity22.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:383`; references: 1.
+  - Source: `Draft/Basic.md:198`; references: 1.
   - ID: `e3466e96bce47b86bdc0`.
 - **A Syllabus of Psychological Warfare - US Gov(1946)**
   - URL: <https://collections.nlm.nih.gov/ext/dw/01130770R/PDF/01130770R.pdf>
@@ -2084,7 +2084,7 @@
 - **Slides**
   - URL: <https://ctoomey.com/mastering-the-vim-language-slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:662`; references: 1.
+  - Source: `Draft/Basic.md:509`; references: 1.
   - ID: `793052a8b67fa76f5693`.
 - **Slides - PDF**
   - URL: <https://cybergibbons.com/wp-content/uploads/2014/11/honeyimhome-131001042426-phpapp01.pdf>
@@ -2284,7 +2284,7 @@
 - **Ceremony Design and Analysis - Carl Ellison**
   - URL: <https://eprint.iacr.org/2007/399.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:728`; references: 1.
+  - Source: `Draft/Basic.md:589`; references: 1.
   - ID: `98b11a3e3ffcec809b73`.
 - **Protocol Misidentification Made Easy with Format-Transforming Encryption**
   - URL: <https://eprint.iacr.org/2012/494.pdf>
@@ -2449,7 +2449,7 @@
 - **Slides**
   - URL: <https://github.com/TryCatchHCF/DumpsterFire/raw/master/CactusCon_2017_Presentation/DumpsterFire_CactusCon_2017_Slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Building_A_Lab.md:461`; references: 2.
+  - Source: `Draft/Building_A_Lab.md:456`; references: 2.
   - ID: `78121c0f2ee8a0943ed2`.
 - **https://github.com/ZecOps/public/blob/master/CVE-2021-30714/obts4_keynote.pdf**
   - URL: <https://github.com/ZecOps/public/blob/master/CVE-2021-30714/obts4_keynote.pdf>
@@ -3269,7 +3269,7 @@
 - **Fundamentals of Leveraging PowerShell - Carlos Perez(Defcon25)**
   - URL: <https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20workshops/DEF%20CON%2025%20-%20Carlos-Perez-Leveraging-PowerShell.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Courses_Training.md:186`; references: 1.
+  - Source: `Draft/Courses_Training.md:223`; references: 1.
   - ID: `9c701a2ae52d5bfabdeb`.
 - **Slides**
   - URL: <https://media.defcon.org/DEF%20CON%2027/DEF%20CON%2027%20presentations/DEFCON-27-Nikhil-Mittal-RACE-Minimal-Rights-and-ACE-for-Active-Directory-Dominance.pdf>
@@ -3324,7 +3324,7 @@
 - **https://newsroom.intel.com/wp-content/uploads/sites/11/2019/07/Intel-Safety-First-for-Automated-Driving.pdf**
   - URL: <https://newsroom.intel.com/wp-content/uploads/sites/11/2019/07/Intel-Safety-First-for-Automated-Driving.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:245`; references: 1.
+  - Source: `Draft/Basic.md:1023`; references: 1.
   - ID: `bcdf29960c3c77120036`.
 - **Field Guide for Designing Human Interaction With Intelligent Systems - Carroll G. Thronesbery and Jane T. Malin - NASA**
   - URL: <https://ntrs.nasa.gov/api/citations/19980210012/downloads/19980210012.pdf>
@@ -3354,7 +3354,7 @@
 - **NIST Special Publication 800-207 - Zero Trust Architecture - Scott Rose, Oliver Borchert, Stu Mitchell, Sean Connelly(2020)**
   - URL: <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:227`; references: 1.
+  - Source: `Draft/Basic.md:1006`; references: 1.
   - ID: `9022f844329c86ac36de`.
 - **Get Cozy with OpenBSM Auditing...the good, the bad, & the ugly - Patrick Wardle**
   - URL: <https://objective-see.com/talks/Wardle_ShmooCon2018.pdf>
@@ -3809,7 +3809,7 @@
 - **Make It Count: Progressing through Pentesting - Bálint Varga-Perke -Silent Signal**
   - URL: <https://silentsignal.hu/docs/Make_It_Count_-_Progressing_through_Pentesting_Balint_Varga-Perke_Silent_Signal.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Career.md:150`; references: 1.
+  - Source: `Draft/Career.md:176`; references: 1.
   - ID: `d88b78cacd933d75a034`.
 - **Link**
   - URL: <https://sniperforensicstoolkit.squarespace.com/storage/logging/Windows%20Logging%20Cheat%20Sheet%20v1.1.pdf>
@@ -3854,7 +3854,7 @@
 - **Slides**
   - URL: <https://static.sched.com/hosted_files/appseccalifornia2019/17/AppSecCali2019-StartingStrengthForAppSec.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:496`; references: 1.
+  - Source: `Draft/Basic.md:325`; references: 1.
   - ID: `f8a4841195be9a492b27`.
 - **Nessus v2 File Format - Tenable**
   - URL: <https://static.tenable.com/documentation/nessus_v2_file_format.pdf>
@@ -3909,7 +3909,7 @@
 - **https://static1.squarespace.com/static/5a94b67ff93fd440f0516297/t/5d41000bc8f45f0001164c17/1564540939633/IACD+quickSTART_Final_optimized.pdf**
   - URL: <https://static1.squarespace.com/static/5a94b67ff93fd440f0516297/t/5d41000bc8f45f0001164c17/1564540939633/IACD+quickSTART_Final_optimized.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:256`; references: 1.
+  - Source: `Draft/Basic.md:1032`; references: 1.
   - ID: `85a95697dd3b019024f0`.
 - **Sigreturn Oriented Programming is a real Threat**
   - URL: <https://subs.emis.de/LNI/Proceedings/Proceedings259/2077.pdf>
@@ -4019,7 +4019,7 @@
 - **A Case Study of Toyota Unintended Acceleration and Software Safety - Phil Koopman**
   - URL: <https://users.ece.cmu.edu/~koopman/pubs/koopman14_toyota_ua_slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:772`; references: 1.
+  - Source: `Draft/Basic.md:643`; references: 1.
   - ID: `c0a2c060a62ceff506ef`.
 - **A Survey of Various Methods for Analyzing the Amazon Echo**
   - URL: <https://vanderpot.com/Clinton_Cook_Paper.pdf>
@@ -4089,7 +4089,7 @@
 - **Hacking Techniques & Intrusion Detection - Ali Al-Shemery**
   - URL: <https://web.archive.org/web/20180613152827/http://opensecuritytraining.info/HTID_files/Day04-Scoping.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Career.md:263`; references: 1.
+  - Source: `Draft/Career.md:303`; references: 1.
   - ID: `b527efc127e2e69e2d8c`.
 - **Attacking .Net at Runtime - Jonathan McCoy(2013)**
   - URL: <https://web.archive.org/web/20181028060806/http://www.digitalbodyguard.com/Papers/Attacking%20.Net%20at%20Runtime.pdf>
@@ -4149,7 +4149,7 @@
 - **How Complex Systems Fail (Being a Short Treatise on the Nature of Failure; How Failure is Evaluated; How Failure is Attributed to Proximate Cause; and the Resulting New Understanding of Patient Safety) Richard I. Cook, MD**
   - URL: <https://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:730`; references: 1.
+  - Source: `Draft/Basic.md:591`; references: 1.
   - ID: `ad51a48c5671ac29c625`.
 - **Theaters Of War: The Military-Entertainment Complex - Tim Lenoir, Henry Lowood(2003)**
   - URL: <https://web.stanford.edu/dept/HPST/TimLenoir/Publications/Lenoir-Lowood_TheatersOfWar.pdf>
@@ -5004,7 +5004,7 @@
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-21/dc-21-presentations/Baldet/DEFCON-21-Baldet-Suicide-Intervention-Risk-Assessment-Tactics-Updated.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Career.md:497`; references: 1.
+  - Source: `Draft/Career.md:575`; references: 1.
   - ID: `e8aa39bb15aaff1b4329`.
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-21/dc-21-presentations/Bialek/DEFCON-21-Bialek-PowerPwning-Post-Exploiting-by-Overpowering-Powershell.pdf>
@@ -5039,7 +5039,7 @@
 - **One Man Shop: Building an effective security program all by yourself - Tim Mcguffin(Defcon22)**
   - URL: <https://www.defcon.org/images/defcon-22/dc-22-presentations/Mcguffin/DEFCON-22-Tim-Mcguffin-One-Man-Shop.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:491`; references: 1.
+  - Source: `Draft/Basic.md:320`; references: 1.
   - ID: `1702d7f9482f4f67be9b`.
 - **Implanting a Dropcam**
   - URL: <https://www.defcon.org/images/defcon-22/dc-22-presentations/Moore-Wardle/DEFCON-22-Colby-Moore-Patrick-Wardle-Synack-DropCam-Updated.pdf>
@@ -5199,7 +5199,7 @@
 - **https://www.fedramp.gov/assets/resources/documents/CSP_Penetration_Test_Guidance.pdf**
   - URL: <https://www.fedramp.gov/assets/resources/documents/CSP_Penetration_Test_Guidance.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:217`; references: 1.
+  - Source: `Draft/Basic.md:996`; references: 1.
   - ID: `a7d124bd5aed01657a06`.
 - **FFIEC Cybersecurity Resource Guide for Financial Institutions(2018)**
   - URL: <https://www.ffiec.gov/press/pdf/FFIEC%20Cybersecurity%20Resource%20Guide%20for%20Financial%20Institutions.pdf>
@@ -5269,12 +5269,12 @@
 - **https://www.gwern.net/docs/culture/2019-candia.pdf**
   - URL: <https://www.gwern.net/docs/culture/2019-candia.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:65`; references: 1.
+  - Source: `Draft/Basic.md:954`; references: 1.
   - ID: `df79237f2c392c482f41`.
 - **https://www.gwern.net/docs/sociology/1972-downs.pdf**
   - URL: <https://www.gwern.net/docs/sociology/1972-downs.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:66`; references: 1.
+  - Source: `Draft/Basic.md:955`; references: 1.
   - ID: `c36d7fec892a200823eb`.
 - **Who is “n3td3v”? - Hacker Factor Solutions(2006)**
   - URL: <https://www.hackerfactor.com/papers/who_is_n3td3v.pdf>
@@ -5454,7 +5454,7 @@
 - **Software Problem Solving Cheat Sheet - Florian Roth**
   - URL: <https://www.nextron-systems.com/wp-content/uploads/2018/06/Software-Problem-Solving-Cheat-Sheet.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:881`; references: 1.
+  - Source: `Draft/Basic.md:772`; references: 1.
   - ID: `e1ce8eaffc3001e2c6e5`.
 - **https://www.nortonlifelock.com/sites/default/files/2021-10/OPERATION%20EXORCIST%20White%20Paper.pdf**
   - URL: <https://www.nortonlifelock.com/sites/default/files/2021-10/OPERATION%20EXORCIST%20White%20Paper.pdf>
@@ -5694,7 +5694,7 @@
 - **The Art of Powerful Questions: Catalyzing Insight, Innovation, and Action - Eric E. Vogt, Juanita Brown, David Isaacs(2020)**
   - URL: <https://www.sparc.bc.ca/wp-content/uploads/2020/11/the-art-of-powerful-questions.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:783`; references: 1.
+  - Source: `Draft/Basic.md:656`; references: 1.
   - ID: `59e5878d084e693e8046`.
 - **Paper**
   - URL: <https://www.specterops.io/assets/resources/A_Process_is_No_One.pdf>
@@ -5929,7 +5929,7 @@
 - **10 Immutable Laws of Security (Microsoft TechNet) Non-original**
   - URL: <https://www.wciapool.org/pdf/Tab_5_10_Immutable_LawsofSecurity.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Basic.md:392`; references: 1.
+  - Source: `Draft/Basic.md:209`; references: 1.
   - ID: `f1ed29d897c351f5d3c4`.
 - **LOJAX: First UEFI rootkit found in the wild, courtesy of the Sednit group**
   - URL: <https://www.welivesecurity.com/wp-content/uploads/2018/09/ESET-LoJax.pdf>
@@ -5969,7 +5969,7 @@
 - **The Structure and Interpretation of the Computer Science Curriculum - Matthias Felleisen, Robert Bruce Findler, Matthew Flatt, Shriram Krishnamurthi**
   - URL: <https://www2.ccs.neu.edu/racket/pubs/jfp2004-fffk.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Courses_Training.md:217`; references: 1.
+  - Source: `Draft/Courses_Training.md:258`; references: 1.
   - ID: `618f324855b51ae8ca16`.
 - **Spotless Sandboxes: Evading Malware AnalysisSystems using Wear-and-Tear Artifacts - Najmeh Miramirkhani, Mahathi Priya Appini, Nick Nikiforakis, Michalis Polychronakis(2017)**
   - URL: <https://www3.cs.stonybrook.edu/~mikepo/papers/wearntear.sp17.pdf>

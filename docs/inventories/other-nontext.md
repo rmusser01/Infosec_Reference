@@ -19,12 +19,12 @@
 - **Part 1**
   - URL: <http://i.imgur.com/EU6ga.jpg>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:207`; references: 1.
+  - Source: `Draft/sysinternals.md:236`; references: 1.
   - ID: `705fb89819cf96a5c1b1`.
 - **Part 2**
   - URL: <http://i.imgur.com/S5Ds2.jpg>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:208`; references: 1.
+  - Source: `Draft/sysinternals.md:237`; references: 1.
   - ID: `9076f7d4711ddfabb457`.
 - **http://www.cs.sjsu.edu/faculty/stamp/students/cs298report.doc**
   - URL: <http://www.cs.sjsu.edu/faculty/stamp/students/cs298report.doc>
@@ -54,7 +54,7 @@
 - **Slides**
   - URL: <https://bufferoverflows.net/wp-content/uploads/2020/08/BSides-Munich-2020-presentation.pptx>
   - Candidate type: slides; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2217`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2448`; references: 1.
   - ID: `203123532a876378cad3`.
 - **Less is More, Exploring Code/Process-less Techniques and Other Weird Machine Methods to Hide Code (and How to Detect Them)**
   - URL: <https://cansecwest.com/slides/2014/less%20is%20more3.pptx>
@@ -64,7 +64,7 @@
 - **Slides**
   - URL: <https://embracethered.com/blog/downloads/Shadowbunny_BSides_Singapore_2020.pptx>
   - Candidate type: slides; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:308`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:355`; references: 1.
   - ID: `da9bf133a6b12438e9e5`.
 - **BSides Belfast 2019 presentation: Offensive Ansible for Red Teams (Attack, Build, Learn)**
   - URL: <https://github.com/jckhmr/presentations/blob/master/BSidesBelfast2019_Final_Optimized.pptx?raw=true>
@@ -114,10 +114,10 @@
 - **Egress Buster Reverse Shell**
   - URL: <https://www.trustedsec.com/files/egress_buster_revshell.zip>
   - Candidate type: archive; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:401`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:465`; references: 1.
   - ID: `31c9f8441492f9372bb2`.
 - **Pybuild**
   - URL: <https://www.trustedsec.com/files/pybuild.zip>
   - Candidate type: archive; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:423`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:489`; references: 1.
   - ID: `9f029f55c326ab8d5ccf`.

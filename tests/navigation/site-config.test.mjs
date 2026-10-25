@@ -49,6 +49,11 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
       "Defense",
       "Web",
       "RT",
+      "PrivEscPostExWin",
+      "PrivescPostExLin",
+      "PrivescPostExmac",
+      "PrivescPostEx",
+      "sysinternals",
     ]) {
       const router = {
         getBasePath: () => "/docs/",
@@ -68,6 +73,15 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
       const body = dom.window.document.createElement("div");
       body.innerHTML = html;
       assert(body.querySelector("h1"));
+      if (path === "PrivEscPostExWin") {
+        const alaris = [...body.querySelectorAll("a")].find((link) =>
+          link.href.includes("alaris") && link.textContent === "Blogpost",
+        );
+        assert(alaris, "Alaris blogpost must remain a clickable resource");
+        assert(![...body.querySelectorAll("pre")].some((block) =>
+          block.textContent.includes("ScatterBrain is a shell code runner"),
+        ));
+      }
       if (path === "Cloud")
         assert.equal(
           body.querySelector("#ref-cloud-26").closest("h3").textContent,

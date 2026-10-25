@@ -19,7 +19,7 @@
 - **Windows 8 Security and ARM**
   - URL: <http://2012.ruxconbreakpoint.com/assets/Uploads/bpx/alex-breakpoint2012.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:1104`; references: 1.
+  - Source: `Draft/sysinternals.md:1292`; references: 1.
   - ID: `1c27b37f0a0e4c7e68f0`.
 - **What You Didn't Know About XML External Entities Attacks - Timothy D. Morgan**
   - URL: <http://2013.appsecusa.org/2013/wp-content/uploads/2013/12/WhatYouDidntKnowAboutXXEAttacks.pdf>
@@ -114,7 +114,7 @@
 - **PEB Structure 32/64 pdf**
   - URL: <http://blog.rewolf.pl/blog/wp-content/uploads/2013/03/PEB_Evolution.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:562`; references: 2.
+  - Source: `Draft/sysinternals.md:646`; references: 2.
   - ID: `c3366eda0fa5d55eb19f`.
 - **Exploiting capabilities: Parcel root power, the dark side of capabilities - Emeric Nasi**
   - URL: <http://blog.sevagas.com/IMG/pdf/exploiting_capabilities_the_dark_side.pdf>
@@ -194,7 +194,7 @@
 - **The Meaning of Linkfiles In Forensic Examinations - Harry Parsonage(2010)**
   - URL: <http://computerforensics.parsonage.co.uk/downloads/TheMeaningofLIFE.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5207`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5696`; references: 1.
   - ID: `a3c481f40d812716ac84`.
 - **Weapons of Mass Distraction**
   - URL: <http://conference.hitb.org/hitbsecconf2014kul/materials/D2T1%20-%20Haroon%20Meer%20Azhar%20Desai%20and%20Marco%20Slaviero%20-%20Weapons%20of%20Mass%20Distraction.pdf>
@@ -294,7 +294,7 @@
 - **Process Injection Techniques andDetection using the Volatility Framework - Sotiria Balaoura(2018)**
   - URL: <http://dione.lib.unipi.gr/xmlui/bitstream/handle/unipi/11578/Balaoura_MTE1623.pdf?sequence=1&isAllowed=y>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:6979`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:7493`; references: 1.
   - ID: `560fcf8d839bd8ddcce3`.
 - **Practical attacks against WEP and WPA (2008)**
   - URL: <http://dl.aircrack-ng.org/breakingwepandwpa.pdf>
@@ -314,7 +314,7 @@
 - **Linker and Libraries**
   - URL: <http://docs.oracle.com/cd/E19457-01/801-6737/801-6737.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:179`; references: 1.
+  - Source: `Draft/sysinternals.md:198`; references: 1.
   - ID: `ad43dd30f2d8ff0ed3c0`.
 - **Application-Specific Attacks: Leveraging the ActionScript Virtual Machine, Mark Dowd, 2008**
   - URL: <http://documents.iss.net/whitepapers/IBM_X-Force_WP_final.pdf>
@@ -354,7 +354,7 @@
 - **NTFS Documentation - Richard Russon, Yuval Fledel**
   - URL: <http://dubeyko.com/development/FileSystems/NTFS/ntfsdoc.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:703`; references: 1.
+  - Source: `Draft/sysinternals.md:824`; references: 1.
   - ID: `01b5a82189d01590e8d2`.
 - **http://dumas.ccsd.cnrs.fr/docs/00/63/64/45/PDF/Laporte.pdf**
   - URL: <http://dumas.ccsd.cnrs.fr/docs/00/63/64/45/PDF/Laporte.pdf>
@@ -444,7 +444,7 @@
 - **Understanding Windows Shellcode - Skape(2003)**
   - URL: <http://hick.org/code/skape/papers/win32-shellcode.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:912`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:984`; references: 1.
   - ID: `022b4ed897e0538f3911`.
 - **Notes on Intel Microcode Updates**
   - URL: <http://hireme.geek.nz/Intel_x86_NSA_Microcode_Updates.pdf>
@@ -459,7 +459,7 @@
 - **Slides**
   - URL: <http://i.blackhat.com/eu-19/Thursday/eu-19-Noguera-Unveiling-The-Underground-World-Of-Anti-Cheats-2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3041`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3294`; references: 1.
   - ID: `b59b840241c4246d772d`.
 - **Remote Exploitation of an  Unaltered Passenger Vehicle**
   - URL: <http://illmatics.com/Remote%20Car%20Hacking.pdf>
@@ -474,7 +474,7 @@
 - **Writing Small Shellcode - Dafydd Stuttard(2005)**
   - URL: <http://index-of.es/Exploit/Writing%20Small%20Shellcode.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:985`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:1057`; references: 1.
   - ID: `a386716355e2dd1ed290`.
 - **VM as injection payload **
   - URL: <http://infiltratecon.com/downloads/python_deflowered.pdf>
@@ -539,12 +539,12 @@
 - **PMASCE-Polymorphic and Metamorphic Shellcode Creation Engine - Navneet Kaur Popli, Dr. Anup Girdhar(2019**
   - URL: <http://meri.edu.in/journal/wp-content/uploads/2019/01/Paper-4-OCT-17.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:895`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:967`; references: 1.
   - ID: `909f44c41286bfa9671f`.
 - **Breaking Antivirus Software - Joxean Koret, COSEINC(SYSCAN2014)**
   - URL: <http://mincore.c9x.org/breaking_av_software.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2411`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2646`; references: 1.
   - ID: `e5aa7bb0536abd6c1372`.
 - **http://moflow.org/ref/REIL%20-%20A%20platform-independent%20intermediate%20representation%20of%20disassembled%20code%20for%20static%20code%20analysis.pdf**
   - URL: <http://moflow.org/ref/REIL%20-%20A%20platform-independent%20intermediate%20representation%20of%20disassembled%20code%20for%20static%20code%20analysis.pdf>
@@ -724,7 +724,7 @@
 - **A Detailed Analysis of Contemporary ARM and x86 Architectures**
   - URL: <http://research.cs.wisc.edu/vertical/papers/2013/isa-power-struggles-tr.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:1101`; references: 1.
+  - Source: `Draft/sysinternals.md:1289`; references: 1.
   - ID: `e3ebd143236022bbb18c`.
 - **http://research.cs.wisc.edu/wpis/papers/CAV05-tool-demo.pdf**
   - URL: <http://research.cs.wisc.edu/wpis/papers/CAV05-tool-demo.pdf>
@@ -1039,7 +1039,7 @@
 - **Slides**
   - URL: <http://www.alex-ionescu.com/blackhat2015.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4202`; references: 3.
+  - Source: `Draft/PrivEscPostExWin.md:4596`; references: 3.
   - ID: `1a679d03e5c75a871d62`.
 - **AMQP v1.0(2011) Protocol Document**
   - URL: <http://www.amqp.org/sites/amqp.org/files/amqp.pdf>
@@ -1074,17 +1074,17 @@
 - **.NET Malware Threat: Internals and Reversing - Alexandre Borges(Defcon2019)**
   - URL: <http://www.blackstormsecurity.com/docs/ALEXANDREBORGES_DEFCON_2019.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5607`; references: 3.
+  - Source: `Draft/PrivEscPostExWin.md:6099`; references: 3.
   - ID: `21ac76bc92646e62bdde`.
 - **Linux Vulnerabilities Windows Exploits: Escalating Privileges with WSL - BlueHat IL 2018 - Saar Amar**
   - URL: <http://www.bluehatil.com/files/Linux%20Vulnerabilities%2C%20Windows%20Exploits%20-%20Escalating%20Privileges%20with%20WSL.PDF>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2096`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:2308`; references: 2.
   - ID: `94508018ea3a178ce5a1`.
 - **Slides**
   - URL: <http://www.bluehatil.com/files/Matt%20Graeber%20BlueHat%20IL%202018.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4674`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5122`; references: 1.
   - ID: `bd934376a90bf310cd87`.
 - **Non-alphanumeric code With JavaScript & PHP - Gareth Heyes**
   - URL: <http://www.businessinfo.co.uk/labs/talk/Nonalpha.pdf>
@@ -1174,7 +1174,7 @@
 - **You Can Type, but You Can’t Hide: A Stealthy GPU-based Keylogger**
   - URL: <http://www.cs.columbia.edu/~mikepo/papers/gpukeylogger.eurosec13.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3792`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:4090`; references: 1.
   - ID: `d49485880f0b066c75ea`.
 - **Cheating the ELF - Subversive Dynamic Linking to Libraries**
   - URL: <http://www.cs.dartmouth.edu/~sergey/cs108/2010/subversiveld.pdf>
@@ -1259,12 +1259,12 @@
 - **Detecting Malware With Memory Forensics - Hal Pomeranz**
   - URL: <http://www.deer-run.com/~hal/Detect_Malware_w_Memory_Forensics.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2844`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3091`; references: 1.
   - ID: `821e4a338df4a5d9b106`.
 - **Slides**
   - URL: <http://www.defcon.org/images/defcon-15/dc15-presentations/dc-15-jennings.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5370`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5881`; references: 1.
   - ID: `955f95a533eecdcf09e0`.
 - **Stealing Windows Credentials Using Google Chrome - Bosko Stankovic**
   - URL: <http://www.defensecode.com/whitepapers/Stealing-Windows-Credentials-Using-Google-Chrome.pdf>
@@ -1334,7 +1334,7 @@
 - **I'm In Your $PYTHONPATH, Backdooring Your Python Programs**
   - URL: <http://www.ikotler.org/InYourPythonPath.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:426`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:492`; references: 1.
   - ID: `c5b3ad379e2fe4019ae0`.
 - **Defeating DEP, the Immunity Debugger way, Pablo Sole,2008**
   - URL: <http://www.immunitysec.com/downloads/DEPLIB.pdf>
@@ -1424,7 +1424,7 @@
 - **Insurance Data Security Model Law**
   - URL: <http://www.naic.org/documents/committees_ex_cybersecurity_tf_exposure_mod_draft_clean.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `README.md:97`; references: 1.
+  - Source: `README.md:100`; references: 1.
   - ID: `ec6e799d0075b1571f17`.
 - **STP MiTM Attack and L2 Mitigation Techniques on the Cisco Catalyst 6500 **
   - URL: <http://www.ndm.net/ips/pdf/cisco/Catalyst-6500/white_paper_c11_605972.pdf>
@@ -1454,7 +1454,7 @@
 - **Slides**
   - URL: <http://www.nosuchcon.org/talks/2014/D2_02_Benjamin_Delpy_Mimikatz.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3866`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:4176`; references: 1.
   - ID: `fce7fa2a013ed2733192`.
 - **Ananalysis of the Metasploit Framework relative to the Penetration Testing Execution Standard(PTES) guidance(2011) - Brandon Perry**
   - URL: <http://www.nothink.org/metasploit/documentation/metasploit_msf_analysis_ptes.pdf>
@@ -1544,7 +1544,7 @@
 - **ELF Format**
   - URL: <http://www.skyfree.org/linux/references/ELF_Format.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:192`; references: 1.
+  - Source: `Draft/sysinternals.md:217`; references: 1.
   - ID: `02df8f3fa43960bd2efc`.
 - **SMB 3.0 (Because 3 > 2) - David Kruse**
   - URL: <http://www.snia.org/sites/default/orig/SDC2012/presentations/Revisions/DavidKruse-SMB_3_0_Because_3-2_v2_Revision.pdf>
@@ -1564,7 +1564,7 @@
 - **Import Address Table Hooking - Nick Cano(**
   - URL: <http://www.stillart.ch/programming/Import_Address_Table_Hooking.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4943`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5416`; references: 1.
   - ID: `f97982fc4b041f4da8fe`.
 - **Borrowed code chunks exploitation technique, Sebastian Krahmer, 2005**
   - URL: <http://www.suse.de/~krahmer/no-nx.pdf>
@@ -1694,7 +1694,7 @@
 - **You’re Off the Hook: Blinding Security Software - Alex Matrosov, Jeff Tang(ZeroNights2016)**
   - URL: <https://2016.zeronights.ru/wp-content/uploads/2016/12/You%E2%80%99re-Off-the-Hook.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5074`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5549`; references: 1.
   - ID: `1050002e27d2e69ae5fb`.
 - **Hunting for Credentials Dumping in Windows Environment - Teymur Kheirhabaro(ZeroNights2017)**
   - URL: <https://2017.zeronights.org/wp-content/uploads/materials/ZN17_Kheirkhabarov_Hunting_for_Credentials_Dumping_in_Windows_Environment.pdf>
@@ -1739,7 +1739,7 @@
 - **AppleScriptLanguageGuide - Apple**
   - URL: <https://applescriptlibrary.files.wordpress.com/2013/11/applescriptlanguageguide-2013.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:465`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:129`; references: 1.
   - ID: `5e3c5d5ef10af6ed4e44`.
 - **https://apps.dtic.mil/dtic/tr/fulltext/u2/a516716.pdf**
   - URL: <https://apps.dtic.mil/dtic/tr/fulltext/u2/a516716.pdf>
@@ -1769,7 +1769,7 @@
 - **Hijacking .NET to Defend PowerShell - Amanda Rosseau**
   - URL: <https://arxiv.org/pdf/1709.07508.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5608`; references: 3.
+  - Source: `Draft/PrivEscPostExWin.md:6100`; references: 3.
   - ID: `53db3758fd6cad54384d`.
 - **Botnet in the Browser: Understanding Threats Caused by Malicious Browser Extensions**
   - URL: <https://arxiv.org/pdf/1709.09577.pdf>
@@ -1779,7 +1779,7 @@
 - **Issued for Abuse: Measuring the Underground Trade in Code Signing Certificates - Kristian Kozak, Bum Jun Kwon, Doowon Kim, Tudor Dimitras(2018)**
   - URL: <https://arxiv.org/pdf/1803.02931.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4678`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5126`; references: 1.
   - ID: `b7de0c18e21ec17fb397`.
 - **A Formal Analysis of 5G Authentication**
   - URL: <https://arxiv.org/pdf/1806.10360.pdf>
@@ -1854,12 +1854,12 @@
 - **Bypass Windows Defender Attack Surface Reduction - Emeric Nasi**
   - URL: <https://blog.sevagas.com/IMG/pdf/bypass_windows_defender_attack_surface_reduction.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2603`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:2840`; references: 2.
   - ID: `bbc5110d311f454e6575`.
 - **Paper**
   - URL: <https://blog.silentsignal.eu/wp-content/uploads/2018/01/S2_BareKnuckledAVBreaking_180108.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2434`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2669`; references: 1.
   - ID: `20db624aec33cc4af3ac`.
 - **Android Reverse Engineering Defenses**
   - URL: <https://bluebox.com/wp-content/uploads/2013/05/AndroidREnDefenses201305.pdf>
@@ -1884,7 +1884,7 @@
 - **Module Stomping - Aliz Hammond(BSidesSG19)**
   - URL: <https://bsidessg.org/files/2019/Module%20Stomping-bsides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2842`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3089`; references: 1.
   - ID: `08365a095db63f7765e0`.
 - **Large memory management vulnerabilities, Gael Delalleau, 2005**
   - URL: <https://cansecwest.com/core05/memory_vulns_delalleau.pdf>
@@ -1899,7 +1899,7 @@
 - **Adobe Sandbox: When the Broker is Broken - Peter Vreugdenhill**
   - URL: <https://cansecwest.com/slides/2013/Adobe%20Sandbox.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:661`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:719`; references: 1.
   - ID: `db7d815c86fcb26d475b`.
 - **Smart TV Security - #1984 in 21 st century**
   - URL: <https://cansecwest.com/slides/2013/SmartTV%20Security.pdf>
@@ -2009,32 +2009,32 @@
 - **Introduction to Logical Privilege Escalation on Windows - James Forshaw**
   - URL: <https://conference.hitb.org/hitbsecconf2017ams/materials/D2T3%20-%20James%20Forshaw%20-%20Introduction%20to%20Logical%20Privilege%20Escalation%20on%20Windows.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:1851`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2057`; references: 1.
   - ID: `478d51017c9fb0158e23`.
 - **No Win32_Process Needed – Expanding the WMI Lateral Movement Arsenal - Philip Tsukerman(2018)**
   - URL: <https://conference.hitb.org/hitbsecconf2018ams/materials/D2T1%20-%20Philip%20Tsukerman%20-%20Expanding%20Your%20WMI%20Lateral%20Movement%20Arsenal.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4318`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:4736`; references: 1.
   - ID: `aeb0f7921bf77f947a11`.
 - **Sneaking Past Device Guard - Philip Tsukerman**
   - URL: <https://conference.hitb.org/hitbsecconf2019ams/materials/D2T1%20-%20Sneaking%20Past%20Device%20Guard%20-%20Philip%20Tsukerman.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2311`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2544`; references: 1.
   - ID: `1771ff8bb891ada4e217`.
 - **Slides**
   - URL: <https://conference.hitb.org/hitbsecconf2019ams/materials/D2T2%20-%20ModJack%20-%20Hijacking%20the%20MacOS%20Kernel%20-%20Zhi%20Zhou.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:646`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:314`; references: 1.
   - ID: `4b2f7d2b43a1e73e6080`.
 - **https://conference.hitb.org/hitbsecconf2021ams/materials/D1%20COMMSEC%20-%20Exploitation%20with%20Shell%20Reverse%20and%20Infection%20with%20PowerShell%20-%20Filipi%20Pires.pdf**
   - URL: <https://conference.hitb.org/hitbsecconf2021ams/materials/D1%20COMMSEC%20-%20Exploitation%20with%20Shell%20Reverse%20and%20Infection%20with%20PowerShell%20-%20Filipi%20Pires.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3109`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:3362`; references: 2.
   - ID: `3940b82c44b9c46bd8a2`.
 - **https://conference.hitb.org/hitbsecconf2021ams/materials/D1T1%20-%20MacOS%20Local%20Security%20-%20Escaping%20the%20Sandbox%20and%20Bypassing%20TCC%20-%20Thijs%20Alkemade%20&%20Daan%20Keuper.pdf**
   - URL: <https://conference.hitb.org/hitbsecconf2021ams/materials/D1T1%20-%20MacOS%20Local%20Security%20-%20Escaping%20the%20Sandbox%20and%20Bypassing%20TCC%20-%20Thijs%20Alkemade%20&%20Daan%20Keuper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:69`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:710`; references: 1.
   - ID: `b995589d908a52a61233`.
 - **Slides**
   - URL: <https://conference.hitb.org/hitbsecconf2021sin/materials/D1T2%20-%20Make%20JDBC%20Attacks%20Brilliant%20Again%20-%20Xu%20Yuanzhen%20&%20Chen%20Hongkun.pdf>
@@ -2154,7 +2154,7 @@
 - **give me the password and I'll rule the world: dpapi, what else? - Francesco Picasso**
   - URL: <https://digital-forensics.sans.org/summit-archives/dfirprague14/Give_Me_the_Password_and_Ill_Rule_the_World_Francesco_Picasso.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4780`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5232`; references: 1.
   - ID: `4ff4335bfa0fef5f8512`.
 - **Software Distribution Malware Infection Vector**
   - URL: <https://dl.packetstormsecurity.net/papers/general/Software.Distribution.Malware.Infection.Vector.pdf>
@@ -2164,7 +2164,7 @@
 - **Abusing COM & DCOM objects - Haboob(2020)**
   - URL: <https://dl.packetstormsecurity.net/papers/general/abusing-objects.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3396`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3661`; references: 1.
   - ID: `95a9c7e584e69383810f`.
 - **Active Directory Enumeration with PowerShell - Haboob Team**
   - URL: <https://dl.packetstormsecurity.net/papers/general/activedir-enumerate.pdf>
@@ -2179,7 +2179,7 @@
 - **Exploit WNF Callback - Emeric Nasi(2020)**
   - URL: <https://dl.packetstormsecurity.net/papers/general/code_injection_series_part3.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:7204`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:7754`; references: 1.
   - ID: `67463d180d039770bbd1`.
 - **Hunting Red Team Activities with Forensic Artifacts - Haboob Team(2020)**
   - URL: <https://dl.packetstormsecurity.net/papers/general/hunting-redteamactivities.pdf>
@@ -2209,7 +2209,7 @@
 - **The XCSSET Malware: Inserts Malicious Code Into Xcode Projects, Performs UXSS Backdoor Planting in Safari, and Leverages Two Zero-day Exploits - TrendMicro**
   - URL: <https://documents.trendmicro.com/assets/pdf/XCSSET_Technical_Brief.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:436`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:98`; references: 1.
   - ID: `1546bbc2280a29223eed`.
 - **https://documents.trendmicro.com/assets/white_papers/wp-void-balaur-tracking-a-cybermercenarys-activities.pdf**
   - URL: <https://documents.trendmicro.com/assets/white_papers/wp-void-balaur-tracking-a-cybermercenarys-activities.pdf>
@@ -2229,7 +2229,7 @@
 - **Abusing WCF Endpoints for Fun and Profit**
   - URL: <https://downloads.immunityinc.com/infiltrate2019-slidepacks/christopher-anastasio-abusing-insecure-wcf-endpoints-for-profit-and-fun/abusing_wcf_endpoints.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5383`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5896`; references: 1.
   - ID: `caa53c44845ca517c6e2`.
 - **Markov Chain Fingerprinting to Classify Encrypted Traffic - Maciej Korczynski, Andrzej Duda(**
   - URL: <https://drakkar.imag.fr/IMG/pdf/1569811033.pdf>
@@ -2269,7 +2269,7 @@
 - **Decrypting DPAPI data - Jean-Michel Picod, Elie Bursztein**
   - URL: <https://elie.net/static/files/reversing-dpapi-and-stealing-windows-secrets-offline/reversing-dpapi-and-stealing-windows-secrets-offline-slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4779`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5231`; references: 1.
   - ID: `261328c3bde1bccc7fe9`.
 - **https://ep2019.europython.eu/media/conference/slides/8MGqsQG-auditing-hooks-and-security-transparency-for-cpython.pdf**
   - URL: <https://ep2019.europython.eu/media/conference/slides/8MGqsQG-auditing-hooks-and-security-transparency-for-cpython.pdf>
@@ -2304,7 +2304,7 @@
 - **Intel SGX Explained**
   - URL: <https://eprint.iacr.org/2016/086.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:1112`; references: 1.
+  - Source: `Draft/sysinternals.md:1299`; references: 1.
   - ID: `d22f5ef452e45252f67f`.
 - **A Formal Security Analysis of the Signal Messaging Protocol - Oct2016**
   - URL: <https://eprint.iacr.org/2016/1013.pdf>
@@ -2329,7 +2329,7 @@
 - **Modifying Metasploit Shellcode Decoders to Bypass Static Analysis - Alexander Bode, Jelle Ermerins(2020)**
   - URL: <https://ermerins.com/assets/docs/shikataganai.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:886`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:958`; references: 1.
   - ID: `d9fe1ff86e8b3acf0cd9`.
 - **Breaking SAP Portal**
   - URL: <https://erpscan.com/wp-content/uploads/presentations/2012-HackerHalted-Breaking-SAP-Portal.pdf>
@@ -2399,7 +2399,7 @@
 - **Slides**
   - URL: <https://github.com/CppCon/CppCon2017/blob/master/Presentations/Everything%20You%20Ever%20Wanted%20to%20Know%20about%20DLLs/Everything%20You%20Ever%20Wanted%20to%20Know%20about%20DLLs%20-%20James%20McNellis%20-%20CppCon%202017.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:501`; references: 1.
+  - Source: `Draft/sysinternals.md:566`; references: 1.
   - ID: `bee34de9e803a990834e`.
 - **How-to-write-your-First-Nuclei-Template.pdf - DhiyaneshGeek**
   - URL: <https://github.com/DhiyaneshGeek/My-Presentation-Slides/blob/main/slides/How-to-write-your-First-Nuclei-Template.pdf>
@@ -2439,12 +2439,12 @@
 - **Slides**
   - URL: <https://github.com/SafeBreach-Labs/SirepRAT/blob/master/docs/SirepRAT_RCE_as_SYSTEM_on_Windows_IoT_Core_Slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:1252`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:1343`; references: 1.
   - ID: `e96f96426eadf963b954`.
 - **Whitepaper**
   - URL: <https://github.com/SafeBreach-Labs/SirepRAT/blob/master/docs/SirepRAT_RCE_as_SYSTEM_on_Windows_IoT_Core_White_Paper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:1251`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:1342`; references: 1.
   - ID: `e2fa04c79d25e7038a42`.
 - **Slides**
   - URL: <https://github.com/TryCatchHCF/DumpsterFire/raw/master/CactusCon_2017_Presentation/DumpsterFire_CactusCon_2017_Slides.pdf>
@@ -2454,7 +2454,7 @@
 - **https://github.com/ZecOps/public/blob/master/CVE-2021-30714/obts4_keynote.pdf**
   - URL: <https://github.com/ZecOps/public/blob/master/CVE-2021-30714/obts4_keynote.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:77`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:718`; references: 1.
   - ID: `dba7be9045930b159c8c`.
 - **Slides**
   - URL: <https://github.com/ahhh/presentations/blob/master/Grimmcon0x06%20-%20Keyloggers%20Across%20Operating%20Systems.pdf>
@@ -2484,7 +2484,7 @@
 - **Slides**
   - URL: <https://github.com/cedowens/Presentations/blob/master/GrayHat2020-CedOwens.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:431`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:93`; references: 1.
   - ID: `b9d2c0bd831c26e12bff`.
 - **memory-hunting Mindmap**
   - URL: <https://github.com/christophetd/hunting-mindmaps/blob/master/pdf/memory-hunting.pdf>
@@ -2514,7 +2514,7 @@
 - **The BlackBox of DPAPI: The Gift That Keeps on Giving - Bart Inglot**
   - URL: <https://github.com/comaeio/OPCDE/blob/master/2017/The%20Blackbox%20of%20DPAPI%20the%20gift%20that%20keeps%20on%20giving%20-%20Bartosz%20Inglot/The%20Blackbox%20of%20DPAPI%20-%20Bart%20Inglot.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4774`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5226`; references: 1.
   - ID: `42017901203c05fe1506`.
 - **How to Implement Crypto Poorly - Sean Cassidy**
   - URL: <https://github.com/cxxr/talks/blob/master/2016/grrcon/How%20to%20Implement%20Crypto%20Poorly.pdf>
@@ -2534,12 +2534,12 @@
 - **c:\\whoami /priv - \[show me your privileges and I will lead you to SYSTEM\] - Andrea Pierini**
   - URL: <https://github.com/decoder-it/whoami-priv-Hackinparis2019/blob/master/whoamiprivParis_Split.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:1966`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2172`; references: 1.
   - ID: `dedb1233a7470fee49eb`.
 - **Paper**
   - URL: <https://github.com/ewhitehats/InvisiblePersistence/blob/master/InvisibleRegValues_Whitepaper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:1677`; references: 3.
+  - Source: `Draft/PrivEscPostExWin.md:1876`; references: 3.
   - ID: `09df6764c96b0b5222fb`.
 - **Drupal Security Checklist**
   - URL: <https://github.com/gfoss/attacking-drupal/blob/master/presentation/drupal-security-checklist.pdf>
@@ -2554,7 +2554,7 @@
 - **PDF**
   - URL: <https://github.com/ionescu007/HookingNirvana/blob/master/Esoteric%20Hooks.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5017`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5490`; references: 1.
   - ID: `c06a1b445b1eafb01b56`.
 - **Attacking Kubernetes - A Guide for Administrators and Penetration Testers(Atredis Partners)**
   - URL: <https://github.com/kubernetes/community/blob/master/wg-security-audit/findings/AtredisPartners_Attacking_Kubernetes-v1.0.pdf>
@@ -2579,12 +2579,12 @@
 - **Slides**
   - URL: <https://github.com/mattifestation/BHUSA2018_Sysmon/blob/master/Slides_Subverting_Sysmon.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2426`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2661`; references: 1.
   - ID: `bfeee59fde0559dfcd6b`.
 - **Whitepaper**
   - URL: <https://github.com/mattifestation/BHUSA2018_Sysmon/blob/master/Whitepaper_Subverting_Sysmon.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2425`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2660`; references: 1.
   - ID: `eaf6525dd26c3d4cd306`.
 - **Excel DDE Walkthrough**
   - URL: <https://github.com/merrillmatt011/Excel_DDE_Walkthrough/blob/master/Excel_DDE_Walkthrough.pdf>
@@ -2594,7 +2594,7 @@
 - **Exploiting the Hyper-V IDE Emulator to Escape the Virtual Machine - Joe Bialek**
   - URL: <https://github.com/microsoft/MSRC-Security-Research/blob/master/presentations/2019_08_BlackHatUSA/BHUSA19_Exploiting_the_Hyper-V_IDE_Emulator_to_Escape_the_Virtual_Machine.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:692`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:750`; references: 1.
   - ID: `d002f0f6a8f95629f54d`.
 - **MongoDB Pentesting for Absolute Beginners**
   - URL: <https://github.com/nixawk/pentest-wiki/blob/master/2.Vulnerability-Assessment/Database-Assessment/mongodb/MongoDB%20Pentesting%20for%20Absolute%20Beginners.pdf>
@@ -2614,7 +2614,7 @@
 - **Slides**
   - URL: <https://github.com/outflanknl/Presentations/blob/master/Nullcon2020_COM-promise_-_Attacking_Windows_development_environments.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4563`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5007`; references: 1.
   - ID: `3f305a1a634c80e6e3cc`.
 - **Slides**
   - URL: <https://github.com/outflanknl/Presentations/blob/master/Troopers19_MS_Office_file_format_sorcery.pdf>
@@ -2624,7 +2624,7 @@
 - **Slides**
   - URL: <https://github.com/outflanknl/Presentations/raw/master/Troopers19_MS_Office_file_format_sorcery.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2246`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:2479`; references: 2.
   - ID: `6bfb4822a672b7b34533`.
 - **https://github.com/peterfillmore/Talk-Stuff/blob/master/Syscan2015/PeterFillmore_Syscan2015.pdf**
   - URL: <https://github.com/peterfillmore/Talk-Stuff/blob/master/Syscan2015/PeterFillmore_Syscan2015.pdf>
@@ -2654,7 +2654,7 @@
 - **Slides**
   - URL: <https://github.com/r4wd3r/RID-Hijacking/blob/master/slides/derbycon-8.0/RID_HIJACKING_DERBYCON_2018.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:1286`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:1389`; references: 1.
   - ID: `f990783b53d9ddebda6d`.
 - **Slides**
   - URL: <https://github.com/rmarx/http3-for-webdevs/blob/main/presentations/HTTP3andQUIC_OWASP_aug2021.pdf>
@@ -2724,12 +2724,12 @@
 - **DEEP Hooks: Monitoring Native Execution In WOW64 Applications - Assaf Carlsbad, Yarden Shafir(2018)**
   - URL: <https://gsec.hitb.org/materials/sg2018/D2%20COMMSEC%20-%20Monitoring%20Native%20Execution%20in%20WoW64%20Applications%20-%20Assaf%20Carlsbad%20&%20Yarden%20Shafir.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3502`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3769`; references: 1.
   - ID: `94891ac7f1ab022d0fa8`.
 - **Automating the enumeration of possibleDCOM vulnerabilities - Axel Boesenach(2018)**
   - URL: <https://hackdefense.com/assets/downloads/automating-the-enumeration-of-possible-dcom-vulnerabilities-axel-boesenach-v1.0.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4569`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5013`; references: 1.
   - ID: `266aca7613933f42003e`.
 - **802.1x NAC & Bypass Techniques - Valerian Legrand(Hack in Paris 2017)**
   - URL: <https://hackinparis.com/data/slides/2017/2017_Legrand_Valerian_802.1x_Network_Access_Control_and_Bypass_Techniques.pdf>
@@ -2784,7 +2784,7 @@
 - **Slides**
   - URL: <https://i.blackhat.com/Asia-22/Friday-Materials/AS-22-Korkos-AMSI-and-Bypass.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2341`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2574`; references: 1.
   - ID: `21700381ed8c1b68bd9a`.
 - **AutoSpear : Towards Automatically Bypassing and Inspecting Web Application Firewalls - Zhenqing Qu, Xiang Ling, Chunming Wu(BHAsia2022)**
   - URL: <https://i.blackhat.com/Asia-22/Thursday-Materials/AS-22-Qu-AutoSpear-Towards-Automatically-Bypassing-and-Inspecting-Web-Application-Firewalls.pdf>
@@ -2794,7 +2794,7 @@
 - **Slides**
   - URL: <https://i.blackhat.com/EU-21/Wednesday/EU-21-Teodorescu-Veni-No-Vidi-No-Vici-Attacks-On-ETW-Blind-EDRs.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3312`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3569`; references: 1.
   - ID: `32383de9505cabba064b`.
 - **Slides**
   - URL: <https://i.blackhat.com/USA-19/Thursday/us-19-Almubayed-Practical-Approach-To-Automate-The-Discovery-And-Eradication-Of-Open-Source-Software-Vulnerabilities-At-Scale.pdf>
@@ -2804,7 +2804,7 @@
 - **Paper**
   - URL: <https://i.blackhat.com/USA-19/Thursday/us-19-Kotler-Process-Injection-Techniques-Gotta-Catch-Them-All-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:6666`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:7132`; references: 1.
   - ID: `1fb0c204933d4861051d`.
 - **Slides**
   - URL: <https://i.blackhat.com/USA-19/Thursday/us-19-Shrivastava-DevSecOps-What-Why-And-How.pdf>
@@ -2879,7 +2879,7 @@
 - **The Rise and Fall of AMSI - Tal Liberman(BHAsia 2018)**
   - URL: <https://i.blackhat.com/briefings/asia/2018/asia-18-Tal-Liberman-Documenting-the-Undocumented-The-Rise-and-Fall-of-AMSI.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2238`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:2471`; references: 2.
   - ID: `a39f6ebf1a669354bc2d`.
 - **Slides**
   - URL: <https://i.blackhat.com/eu-18/Wed-Dec-5/eu-18-Baz-When-Everyones-Dog-Is-Named-Fluffy.pdf>
@@ -2889,12 +2889,12 @@
 - **Where 2 Worlds Collide: Bringing Mimikatz et al to UNIX - Tim(-Wadha) Brown**
   - URL: <https://i.blackhat.com/eu-18/Wed-Dec-5/eu-18-Wadhwa-Brown-Where-2-Worlds-Collide-Bringing-Mimikatz-et-al-to-UNIX.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExLin.md:346`; references: 1.
+  - Source: `Draft/PrivescPostExLin.md:333`; references: 1.
   - ID: `1569773b188fa365d130`.
 - **Blackhat2018 Slides**
   - URL: <https://i.blackhat.com/us-18/Thu-August-9/us-18-Bulazel-Windows-Offender-Reverse-Engineering-Windows-Defenders-Antivirus-Emulator.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2731`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:2972`; references: 2.
   - ID: `bffc3f0be6b9caaf0be5`.
 - **Slides**
   - URL: <https://i.blackhat.com/us-18/Thu-August-9/us-18-Haken-Automated-Discovery-of-Deserialization-Gadget-Chains.pdf>
@@ -2924,7 +2924,7 @@
 - **Subverting Sysmon - Application of a Formalized Security Product Evasion Method - Matt Graeber, Lee Christensen(BHUSA18)**
   - URL: <https://i.blackhat.com/us-18/Wed-August-8/us-18-Graeber-Subverting-Sysmon-Application-Of-A-Formalized-Security-Product-Evasion-Methodology.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4675`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5123`; references: 1.
   - ID: `9e2637aaff18c43e6385`.
 - **Remotely Attacking System Firmware - Alex Bazhaniuk, Jesse Michael, Mickey Shkatov(BHUSA2018)**
   - URL: <https://i.blackhat.com/us-18/Wed-August-8/us-18-Michael-Shkatov-Remotely-Attacking-System-Firmware.pdf>
@@ -2994,7 +2994,7 @@
 - **Getting user credentials is not only admin’s privilege - Anton Sapozhnikov(Syscan14)**
   - URL: <https://infocon.org/cons/SyScan/SyScan%202014%20Singapore/SyScan%202014%20presentations/SyScan2014_AntonSapozhnikov_GettingUserCredentialsisnotonlyAdminsPrivilege.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3782`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:4078`; references: 1.
   - ID: `08fecef4c6d735079fac`.
 - **Getting user credentials is not only admin’s privilege - Anton Sapozhnikov(Syscan14)**
   - URL: <https://infocon.org/consSyScan/SyScan%202014%20Singapore/SyScan%202014%20presentations/SyScan2014_AntonSapozhnikov_GettingUserCredentialsisnotonlyAdminsPrivilege.pdf>
@@ -3054,12 +3054,12 @@
 - **Security Implications of Windows Access Tokens –  A Penetration Tester’s Guide - Luke Jennings(2008)**
   - URL: <https://labs.f-secure.com/assets/BlogFiles/mwri-security-implications-of-windows-access-tokens-2008-04-14.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5365`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5876`; references: 1.
   - ID: `7c195fe75c1cbd03b22a`.
 - **UAC 0day, all day - Ruben Boonen(Defcon25)**
   - URL: <https://labs.f-secure.com/assets/resourceFiles/DefCon25-UAC-0day-All-Day-v2.2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3437`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3702`; references: 1.
   - ID: `e4233c5a48fbc2a33f06`.
 - **Understanding The Microsft Office 2013 Protected-View Sandbox - Yong Chuan, Kho (2015)**
   - URL: <https://labs.mwrinfosecurity.com/assets/BlogFiles/UNDERSTANDING-THE-MICROSOFT-OFFICE-2013-PROTECTED-VIEW-SANDBOX-WP3.pdf>
@@ -3309,7 +3309,7 @@
 - **EDR: Efficiently Defeating Red Teamers? - Mr Un1k0d3r(2022)**
   - URL: <https://mr.un1k0d3r.world/HF22-EDR_Presentation.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3064`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3317`; references: 1.
   - ID: `d487aec7ba02181d3b2c`.
 - **https://msrnd-cdn-stor.azureedge.net/bluehat/bluehatil/2019/assets/doc/You%20(dis)iked%20mimikatz%20Wait%20for%20kekeo.pdf**
   - URL: <https://msrnd-cdn-stor.azureedge.net/bluehat/bluehatil/2019/assets/doc/You%20(dis)iked%20mimikatz%20Wait%20for%20kekeo.pdf>
@@ -3334,12 +3334,12 @@
 - **Slides**
   - URL: <https://nullcon.net/website/archives/pdf/The-Windows-Sandbox-Paradox-(Flashback)-James-Forshaw-nullcon-goa-2019.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5515`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:6036`; references: 1.
   - ID: `03225cee521c049ad73a`.
 - **Slides**
   - URL: <https://nullcon.net/website/archives/ppt/goa-15/the-windows-sandbox-paradox.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5513`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:6034`; references: 1.
   - ID: `010d33181f0eba493f6e`.
 - **Guide to LTE Security - NIST Special Publication 800-187**
   - URL: <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-187.pdf>
@@ -3364,7 +3364,7 @@
 - **Slides**
   - URL: <https://objectivebythesea.com/v2/talks/OBTS_v2_Bradley.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:705`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:390`; references: 1.
   - ID: `bdcb05a787628b62bbeb`.
 - **Slides**
   - URL: <https://objectivebythesea.com/v2/talks/OBTS_v2_Cyrus.pdf>
@@ -3379,42 +3379,42 @@
 - **Slides**
   - URL: <https://objectivebythesea.com/v2/talks/OBTS_v2_Fitzl.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:579`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:247`; references: 1.
   - ID: `a15f3aaaf3062f9a534a`.
 - **Slides**
   - URL: <https://objectivebythesea.com/v2/talks/OBTS_v2_Henze.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:776`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:465`; references: 1.
   - ID: `0acfafe90f95b629dc33`.
 - **Slides**
   - URL: <https://objectivebythesea.com/v2/talks/OBTS_v2_Keeley.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:615`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:283`; references: 1.
   - ID: `16c64c7d831094df94d7`.
 - **Slides**
   - URL: <https://objectivebythesea.com/v2/talks/OBTS_v2_Shevchenko.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:420`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:82`; references: 1.
   - ID: `b6f563ae398bfc9caa55`.
 - **Slides**
   - URL: <https://objectivebythesea.com/v2/talks/OBTS_v2_Thomas.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:481`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:145`; references: 1.
   - ID: `c01c4d8a08e6affd448e`.
 - **Slides**
   - URL: <https://objectivebythesea.com/v2/talks/OBTS_v2_Wardle.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:425`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:87`; references: 1.
   - ID: `2224afce0f56fffdf361`.
 - **Slides**
   - URL: <https://objectivebythesea.com/v2/talks/OBTS_v2_Zohar.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:417`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:79`; references: 1.
   - ID: `d29d79fea2269e399a02`.
-- **An Attacker's Perpsective on JAMF Configurations - Luke Roberts, Calum Hall(ObjectiveByTheSeav3)**
+- **here**
   - URL: <https://objectivebythesea.com/v3/talks/OBTS_v3_cHall_lRoberts.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:215`; references: 2.
+  - Source: `Draft/PrivescPostExmac.md:96`; references: 2.
   - ID: `716142518e1d1fc32325`.
 - **Job(s) Bless Us!Privileged Operations on macOS - Julia Vaschenko(OBTSv3.0)**
   - URL: <https://objectivebythesea.com/v3/talks/OBTS_v3_jVashchenko.pdf>
@@ -3444,7 +3444,7 @@
 - **Introduction to Shellcode Development - Ionut Popescu**
   - URL: <https://owasp.org/www-pdf-archive/Introduction_to_shellcode_development.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:855`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:927`; references: 1.
   - ID: `d703a990b4b66482134d`.
 - **Magic Numbers: An In-Depth Guide to the 5 Key Performance Indicators for Web Application Security**
   - URL: <https://owasp.org/www-pdf-archive/Magic_Numbers_-_5_KPIs_for_Measuring_WebAppSec_Program_Success_v3.2.pdf>
@@ -3474,12 +3474,12 @@
 - **Paper**
   - URL: <https://paper.bobylive.com/Meeting_Papers/BlackHat/USA-2011/BH_US_11_Mandt_win32k_WP.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2649`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:2888`; references: 2.
   - ID: `84520215d0b667ccba9a`.
 - **Slides**
   - URL: <https://paper.seebug.org/papers/Security%20Conf/Defcon/2017/DEFCON-25-Marina-Simakov-and-Igal-Gofman-Here-to-stay-Gaining-persistence-by-abusing-auth-mechanisms.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:1268`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:1366`; references: 1.
   - ID: `38e9bc739d52b46e3707`.
 - **the research paper**
   - URL: <https://papers.mathyvanhoef.com/ccs2017.pdf>
@@ -3554,12 +3554,12 @@
 - **Evasion Tactics in Malware from the Inside Out - Lenny Zeltser(RSA2019)**
   - URL: <https://published-prd.lanyonevents.com/published/rsaus19/sessionsFiles/13934/LAB4-W11_Evasion%20Tactics%20in%20Malware%20from%20the%20Inside%20Out.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2846`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3093`; references: 1.
   - ID: `daae6b927dd4c1c974eb`.
 - **APTs <3 PowerShell and Why You Should Too - Anthony Rose, Jake Krasnov(DefconSafeMode RTV 2020)**
   - URL: <https://raw.githubusercontent.com/BC-SECURITY/DEFCONSafeMode/master/Red%20Team%20Village%20-%20APTs%20Love%20PowerShell%20and%20You%20Should%20Too.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:6519`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:7012`; references: 1.
   - ID: `e50d89764587a314dd1b`.
 - **https://raw.githubusercontent.com/BC-SECURITY/Offensive-VBA-and-XLS-Entanglement/main/XLS_Entanglement_Whitepaper.pdf**
   - URL: <https://raw.githubusercontent.com/BC-SECURITY/Offensive-VBA-and-XLS-Entanglement/main/XLS_Entanglement_Whitepaper.pdf>
@@ -3584,17 +3584,17 @@
 - **WMI AttacksFrom Theory To Practice - **
   - URL: <https://raw.githubusercontent.com/Orange-Cyberdefense/cme-wmi/master/slides/WMI-Attacks_From_Theory2Practice.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5438`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5953`; references: 1.
   - ID: `2c1c0c80bcf6868d9d6f`.
 - **EPP/EDRUnhooking their protections - Daniel Feichter(DeepSec 2020)**
   - URL: <https://raw.githubusercontent.com/Strong-IT-IBK/Conferences-Slides/main/DeepSec2020_EPP_Unhooking.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5109`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5584`; references: 1.
   - ID: `15a600b4b9e1aa52701d`.
 - **AgentlessPost-Exploitation on Device Guarded Systems - Chris Truncer(OPCDE2017)**
   - URL: <https://raw.githubusercontent.com/comaeio/OPCDE/master/2017/Agentless%20Post%20Exploitation%20on%20Device%20Guarded%20Systems%20-%20Christopher%20Truncer/Agentless%20Post-Exploitation%20on%20Device%20Guarded%20Systems.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2773`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3014`; references: 1.
   - ID: `8c326ae4dd0c16cc6950`.
 - **Paper**
   - URL: <https://raw.githubusercontent.com/juanandresgs/papers/master/VB2019-Guerrero-Saade.pdf>
@@ -3609,7 +3609,7 @@
 - **Offensive Development: Post-Exploitation Tradecraft in an EDR World - Dominic Chell(x33fcon2020)**
   - URL: <https://raw.githubusercontent.com/mdsecresearch/Publications/master/presentations/Offensive%20Development%20-%20Post-Exploitation%20Tradecraft%20in%20an%20EDR%20World%20-%20x33fcon%202020.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3047`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3300`; references: 1.
   - ID: `d735add679b9636ef983`.
 - **https://raw.githubusercontent.com/mindcrypt/my_talks/main/Powerglot%20-%20Dr.%20Alfonso%20Mu%C3%B1oz%20-%20BH-EU2020.pdf**
   - URL: <https://raw.githubusercontent.com/mindcrypt/my_talks/main/Powerglot%20-%20Dr.%20Alfonso%20Mu%C3%B1oz%20-%20BH-EU2020.pdf>
@@ -3624,7 +3624,7 @@
 - **Lifting the veil, a look at MDE under the hood - Olaf Hartong(Troopers22**
   - URL: <https://raw.githubusercontent.com/olafhartong/Presentations/master/Lifting-the-veil-a-look-at-MDE-under-the-hood.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2695`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2936`; references: 1.
   - ID: `d3b9a071fbfcb38d8d3d`.
 - **https://raw.githubusercontent.com/prodaft/malware-ioc/master/BrunhildaProject/BrunHilda_DaaS.pdf**
   - URL: <https://raw.githubusercontent.com/prodaft/malware-ioc/master/BrunhildaProject/BrunHilda_DaaS.pdf>
@@ -3649,12 +3649,12 @@
 - **Slides**
   - URL: <https://raw.githubusercontent.com/secretsquirrel/fido/master/Defcon_25_2017.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:944`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:1016`; references: 1.
   - ID: `87d5189a9b25e9c192e1`.
 - **Bypassing Driver Signature Enforcement - Csaba Fitzl(Defcon26Workshop)**
   - URL: <https://raw.githubusercontent.com/theevilbit/workshops/master/DSE%20Bypass%20Workshop/dc26%20-%20Csaba%20Fitzl%20-%20DSE%20Bypass%20Workshop%20-%20Presentation.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2910`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3161`; references: 1.
   - ID: `b74ed1a900f4f137aa58`.
 - **Purple Maturity Model - Tim Schulz(2021)**
   - URL: <https://raw.githubusercontent.com/tim-scythe/conference-materials/master/SANS-PurpleTeamSummit-2021/Purple%20Maturity%20Model.pdf>
@@ -3669,7 +3669,7 @@
 - **https://raw.githubusercontent.com/v-p-b/kaspy_toolz/master/S2_EUSKALHACK_Self-defenseless.pdf**
   - URL: <https://raw.githubusercontent.com/v-p-b/kaspy_toolz/master/S2_EUSKALHACK_Self-defenseless.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:621`; references: 2.
+  - Source: `Draft/PrivescPostExmac.md:289`; references: 2.
   - ID: `d8417e9aa816a4e6ce28`.
 - **Pandora's Cash Box - The Ghost under your POS - RECON2015**
   - URL: <https://recon.cx/2015/slides/recon2015-17-nitay-artenstein-shift-reduce-Pandora-s-Cash-Box-The-Ghost-Under-Your-POS.pdf>
@@ -3684,12 +3684,12 @@
 - **Reverse Engineering Windows Defender’s JavaScript Engine - Alexei Bulazel(REcon Brussels18)**
   - URL: <https://recon.cx/2018/brussels/resources/slides/RECON-BRX-2018-Reverse-Engineering-Windows-Defender-s-JavaScript-Engine.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2728`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2969`; references: 1.
   - ID: `e41896c02ba60a22a6dd`.
 - **Roll for Stealth: Intro to AV/EDR Evasion - Mike@RedSiege(2022)**
   - URL: <https://redsiege.com/wp-content/uploads/2022/10/2022-WWHF-MIKE-SAUNDERS-ROLLFORSTEALH.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3014`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3267`; references: 1.
   - ID: `7d538ab560d6d540be84`.
 - **Red teaming - A Short Introduction (1.0) June 2009 - Mark Mateski**
   - URL: <https://redteamjournal.com/papers/A%20Short%20Introduction%20to%20Red%20Teaming%20(1dot0).pdf>
@@ -3744,7 +3744,7 @@
 - **Paper**
   - URL: <https://rp.os3.nl/2020-2021/p68/report.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5111`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5586`; references: 1.
   - ID: `0b0596c038cc9b202c83`.
 - **SQL Injection to MIPS Overflows: Part Deux**
   - URL: <https://s3.amazonaws.com/zcutlip_storage/SQL%20Injection%20to%20MIPS%20Overflows%20-%20Part%20Deux.pdf>
@@ -3754,7 +3754,7 @@
 - **Whitepaper**
   - URL: <https://s7d2.scene7.com/is/content/cylance/prod/cylance-web/en-us/resources/knowledge-center/resource-library/white-papers/Universal_Unhooking.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5075`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5550`; references: 1.
   - ID: `c9b5e33adb36b3193e02`.
 - **Practical Security Stories and Security Tasks for Agile Development Environments**
   - URL: <https://safecode.org/publication/SAFECode_Agile_Dev_Security0712.pdf>
@@ -3769,7 +3769,7 @@
 - **North Korea’s Lazarus APT leverages Windows Update client, GitHub in latest campaign - MalwareBytes(2022)**
   - URL: <https://samples.vx-underground.org/APTs/2022/2022.01.27(1)/Paper/blog.malwarebytes.com-North%20Koreas%20Lazarus%20APT%20leverages%20Windows%20Update%20client%20GitHub%20in%20latest%20campaign.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:7015`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:7533`; references: 1.
   - ID: `2dda2832b9dac3eae0df`.
 - **Metasploit Meterpreter Cheat Sheet**
   - URL: <https://scadahacker.com/library/Documents/Cheat_Sheets/Hacking%20-%20Meterpreter%20Cheat%20%20Sheet.pdf>
@@ -3824,7 +3824,7 @@
 - **Subverting Sysmon: Application of a Formalized Security Product Evasion Methodology - Matt Graber(BlackHatUSA2018)**
   - URL: <https://specterops.io/assets/resources/Subverting_Sysmon.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3364`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3627`; references: 1.
   - ID: `b707a1b8823336683a92`.
 - **Spectre Attacks: Exploiting Speculative Execution**
   - URL: <https://spectreattack.com/spectre.pdf>
@@ -3954,7 +3954,7 @@
 - **https://themittenmac.com/publication_docs/OBTS_v2_Bradley.pdf**
   - URL: <https://themittenmac.com/publication_docs/OBTS_v2_Bradley.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:123`; references: 2.
+  - Source: `Draft/PrivescPostExmac.md:764`; references: 2.
   - ID: `d421c6e812558c98d295`.
 - **Grafting Apple Tree’s: Building a useful process tree - Jaron Bradley(ObjectiveByTheSea v3 2020)**
   - URL: <https://themittenmac.com/wp-content/uploads/2020/03/OBTS_V3_Bradley.pdf>
@@ -3999,7 +3999,7 @@
 - **Slides**
   - URL: <https://troopers.de/downloads/troopers19/TROOPERS19_AD_Abusing_privileged_file_operations.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:1885`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2091`; references: 1.
   - ID: `c1fd257163b59981bae6`.
 - **Amun Honeypot Paper**
   - URL: <https://ub-madoc.bib.uni-mannheim.de/2595/1/amunhoneypot2.pdf>
@@ -4039,17 +4039,17 @@
 - **Paper**
   - URL: <https://vxug.fakedoma.in/papers/VXUG/Exclusive/AbusingtheWindowsPowerManagementAPI.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:783`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:847`; references: 1.
   - ID: `848a3a9a034ac48d8c6f`.
 - **Hells Gate - smelly__vx(@RtlMateusz), am0nsec(@am0nsec)**
   - URL: <https://vxug.fakedoma.in/papers/VXUG/Exclusive/HellsGate.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3517`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3784`; references: 1.
   - ID: `44cf91657541d11d0fee`.
 - **Remote Windows Kernel Exploitation Step into the Ring 0 - Barnaby Jack**
   - URL: <https://web.archive.org/web/20050512094747/http://www.eeye.com/~data/publish/whitepapers/research/OT20050205.FILE.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:6703`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:7179`; references: 1.
   - ID: `ab0d808b2d6dbd408c29`.
 - **Slides**
   - URL: <https://web.archive.org/web/20101227234436/http://www.backtrack.it/~emgent/talks/16032010_-_SecuritySummit_CAS.pdf>
@@ -4079,12 +4079,12 @@
 - **ASM in .NET: The old is new again - Jon McCoy(2015)**
   - URL: <https://web.archive.org/web/20170829012346/http://www.digitalbodyguard.com/Papers/ASM%20in%20.NET-The%20old%20is%20new%20again.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5619`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:6111`; references: 2.
   - ID: `dd8676eb4061f63457cf`.
 - **Reflection’s Hidden Power: “Modifying Programs at Run-Time”**
   - URL: <https://web.archive.org/web/20171208224139/http://www.digitalbodyguard.com/Papers/ReflectionsHiddenPower.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5617`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:6109`; references: 2.
   - ID: `40f9493121aeca412ab0`.
 - **Hacking Techniques & Intrusion Detection - Ali Al-Shemery**
   - URL: <https://web.archive.org/web/20180613152827/http://opensecuritytraining.info/HTID_files/Day04-Scoping.pdf>
@@ -4094,7 +4094,7 @@
 - **Attacking .Net at Runtime - Jonathan McCoy(2013)**
   - URL: <https://web.archive.org/web/20181028060806/http://www.digitalbodyguard.com/Papers/Attacking%20.Net%20at%20Runtime.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5600`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:6092`; references: 2.
   - ID: `8f916c413b14fc86e2d9`.
 - **My password cracking brings all the hashes to the yard.. - Larry Pesce(Hackfest2015)**
   - URL: <https://web.archive.org/web/20190926024106/https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1493862354.pdf>
@@ -4109,7 +4109,7 @@
 - **Slides**
   - URL: <https://web.archive.org/web/20200109034333/http://www.alex-ionescu.com:80/publications/BlackHat/blackhat2018.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5471`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5988`; references: 1.
   - ID: `8b8008579566eb869df0`.
 - **PRINCE: modern password guessing algorithm - Jens Steube(2014)**
   - URL: <https://web.archive.org/web/20200214080638/https://hashcat.net/events/p14-trondheim/prince-attack.pdf>
@@ -4139,12 +4139,12 @@
 - **Process Hollowing - John Leitch(2016)**
   - URL: <https://web.archive.org/web/20201112024129/http://www.autosectools.com/process-hollowing.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2845`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3092`; references: 1.
   - ID: `8ea886287eafe854622a`.
 - **An Empirical Assessment of Endpoint Security Systems Against Advanced Persistent Threats Attack Vectors - George Karantzas, Constantinos Patsakis(2021)**
   - URL: <https://web.archive.org/web/20210826080035/https://vx-underground.org/papers/VXUG/Mirrors/APT_assessment.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3070`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3323`; references: 1.
   - ID: `13d81106c217ffaab0eb`.
 - **How Complex Systems Fail (Being a Short Treatise on the Nature of Failure; How Failure is Evaluated; How Failure is Attributed to Proximate Cause; and the Resulting New Understanding of Patient Safety) Richard I. Cook, MD**
   - URL: <https://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf>
@@ -4169,7 +4169,7 @@
 - **Bypass Antivirus Dynamic Analysis: Limitations of the AV model and how to exploit them - Emeric Nasi(2014)**
   - URL: <https://wikileaks.org/ciav7p1/cms/files/BypassAVDynamics.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2401`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2636`; references: 1.
   - ID: `8502c6e5c608a02a1303`.
 - **Pitfalls of virtual machine introspection on modern hardware**
   - URL: <https://www.acsac.org/2014/workshops/mmf/Tamas%20Lengyel-Pitfalls%20of%20virtual%20machine%20introspection%20on%20modern%20hardware.pdf>
@@ -4194,7 +4194,7 @@
 - **Process Hollowing - John Leitch**
   - URL: <https://www.autosectools.com/process-hollowing.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:6964`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:7478`; references: 1.
   - ID: `5ff3484cbd28478d8a68`.
 - **TaHiTI Threat Hunting Methodology**
   - URL: <https://www.betaalvereniging.nl/wp-content/uploads/DEF-TaHiTI-Threat-Hunting-Methodology.pdf>
@@ -4219,17 +4219,17 @@
 - **DSCompromised: A Windows DSC Attack Framework - Matt Hastings, Ryan Kazanciyan - BH Asia16**
   - URL: <https://www.blackhat.com/docs/asia-16/materials/asia-16-Kazanciyan-DSCompromised-A-Windows-DSC-Attack-Framework.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5306`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5805`; references: 1.
   - ID: `cfe0eb101f15613e733a`.
 - **Hack Microsoft Using Microsoft Signed Binaries - Pierre-Alexandre Braeken**
   - URL: <https://www.blackhat.com/docs/asia-17/materials/asia-17-Braeken-Hack-Microsoft-Using-Microsoft-Signed-Binaries-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:357`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:388`; references: 2.
   - ID: `3d9e83d38aa09c226935`.
 - **Paper**
   - URL: <https://www.blackhat.com/docs/asia-17/materials/asia-17-KA-What-Malware-Authors-Don%27t-Want-You-To-Know-Evasive-Hollow-Process-Injection-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:6974`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:7488`; references: 1.
   - ID: `b8bbe42519b07a4d99e1`.
 - **All your emails belong to us: exploiting vulnerable email clients via domain name collision - Ilya Nesterov, Maxim Goncharov(BlackHatAsia2017)**
   - URL: <https://www.blackhat.com/docs/asia-17/materials/asia-17-Nesterov-All-Your-Emails-Belong-To-Us-Exploiting-Vulnerable-Email-Clients-Via-Domain-Name-Collision-wp.pdf>
@@ -4279,7 +4279,7 @@
 - **Slides**
   - URL: <https://www.blackhat.com/docs/eu-17/materials/eu-17-Liberman-Lost-In-Transaction-Process-Doppelganging.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:6869`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:7365`; references: 1.
   - ID: `6494cce562a18bb0f84e`.
 - **Passive Fingerprinting of HTTP/2 Clients - Ory Segal, Aharon Fridman, Elad Shuster(2017)**
   - URL: <https://www.blackhat.com/docs/eu-17/materials/eu-17-Shuster-Passive-Fingerprinting-Of-HTTP2-Clients-wp.pdf>
@@ -4409,7 +4409,7 @@
 - **Slides**
   - URL: <https://www.blackhat.com/docs/us-16/materials/us-16-Beery-The-Remote-Malicious-Butler-Did-It.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5537`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:6062`; references: 1.
   - ID: `593576a9bb904356984e`.
 - **badWPAD - Maxim Goncharov(BHUSA16-slides)**
   - URL: <https://www.blackhat.com/docs/us-16/materials/us-16-Goncharov-BadWpad.pdf>
@@ -4444,12 +4444,12 @@
 - **Paper**
   - URL: <https://www.blackhat.com/docs/us-16/materials/us-16-Mittal-AMSI-How-Windows-10-Plans-To-Stop-Script-Based-Attacks-And-How-Well-It-Does-It.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2232`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:2465`; references: 2.
   - ID: `680c7ab94f8b1c961ed7`.
 - **VB.NET Tutorial - Create a DLL / Class Library**
   - URL: <https://www.blackhat.com/docs/us-16/materials/us-16-Munoz-A-Journey-From-JNDI-LDAP-Manipulation-To-RCE-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:1712`; references: 3.
+  - Source: `Draft/PrivEscPostExWin.md:1918`; references: 3.
   - ID: `5d7937c691976210fd18`.
 - **https://www.blackhat.com/docs/us-16/materials/us-16-Yavo-Captain-Hook-Pirating-AVs-To-Bypass-Exploit-Mitigations-wp.pdf**
   - URL: <https://www.blackhat.com/docs/us-16/materials/us-16-Yavo-Captain-Hook-Pirating-AVs-To-Bypass-Exploit-Mitigations-wp.pdf>
@@ -4459,12 +4459,12 @@
 - **The Industrial Revolution of Lateral Movement - Tal Be'ery, Tal Maor(BH USA17)**
   - URL: <https://www.blackhat.com/docs/us-17/thursday/us-17-Beery-The-Industrial-Revolution-Of-Lateral-Movement.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4156`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:4534`; references: 1.
   - ID: `bfae9e54f269ded1abf4`.
 - **Talk Paper**
   - URL: <https://www.blackhat.com/docs/us-17/thursday/us-17-Bohannon-Revoke-Obfuscation-PowerShell-Obfuscation-Detection-And%20Evasion-Using-Science-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:6560`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:7053`; references: 1.
   - ID: `942e061a9dd99e6cf6b1`.
 - **Electron Security Checklist - A guide for developers and auditors - Luca Carettoni(2017)**
   - URL: <https://www.blackhat.com/docs/us-17/thursday/us-17-Carettoni-Electronegativity-A-Study-Of-Electron-Security-wp.pdf>
@@ -4489,7 +4489,7 @@
 - **Slides**
   - URL: <https://www.blackhat.com/docs/us-17/thursday/us-17-Mittal-Evading-MicrosoftATA-for-ActiveDirectory-Domination.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2805`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3048`; references: 1.
   - ID: `2ef1ea18b73090363b97`.
 - **Friday the 13th JSON Attacks - Alvaro Muñoz, Oleksandr Mirosh(BHUSA17)**
   - URL: <https://www.blackhat.com/docs/us-17/thursday/us-17-Munoz-Friday-The-13th-JSON-Attacks-wp.pdf>
@@ -4509,7 +4509,7 @@
 - **Slides**
   - URL: <https://www.blackhat.com/docs/us-17/wednesday/us-17-Bulygin-Fractured-Backbone-Breaking-Modern-OS-Defenses-With-Firmware-Attacks.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3563`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3830`; references: 1.
   - ID: `7763402444b3e04dfb44`.
 - **Paper**
   - URL: <https://www.blackhat.com/docs/us-17/wednesday/us-17-Coltel-WSUSpendu-Use-WSUS-To-Hang-Its-Clients-wp.pdf>
@@ -4594,7 +4594,7 @@
 - **Windows Shellcode Mastery - Benjamin Caillat(BHEU2009)**
   - URL: <https://www.blackhat.com/presentations/bh-europe-09/Caillat/BlackHat-Europe-09-Caillat-Wishmaster-slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:942`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:1014`; references: 1.
   - ID: `8ba7c274fb829ac68502`.
 - **Exploiting the random number generator to bypass ASLR**
   - URL: <https://www.blackhat.com/presentations/bh-europe-09/Fritsch/Blackhat-Europe-2009-Fritsch-Bypassing-aslr-whitepaper.pdf>
@@ -4619,7 +4619,7 @@
 - **Shattering By Example - Brett Moore(BHUSA2004)**
   - URL: <https://www.blackhat.com/presentations/bh-usa-04/bh-us-04-moore/bh-us-04-moore-whitepaper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:7144`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:7684`; references: 2.
   - ID: `b2d011c4ec842b1e6447`.
 - **Statistical Structures: Fingerprinting Malware for Classification and Analysis - Daniel Bilar**
   - URL: <https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Bilar.pdf>
@@ -4634,7 +4634,7 @@
 - **Slides**
   - URL: <https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Sutton.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:1114`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:1186`; references: 1.
   - ID: `be1ea0f9c5310a3fb003`.
 - **Understanding the heap by breaking it**
   - URL: <https://www.blackhat.com/presentations/bh-usa-07/Ferguson/Whitepaper/bh-usa-07-ferguson-WP.pdf>
@@ -4659,7 +4659,7 @@
 - **Meta-Post Exploitation - Using Old, Lost, Forgotten Knowledge**
   - URL: <https://www.blackhat.com/presentations/bh-usa-08/Smith_Ames/BH_US_08_Smith_Ames_Meta-Post_Exploitation.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:138`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:125`; references: 1.
   - ID: `c7c41e9a70dd6585d1b5`.
 - **Stoned Bootkit - BH USA09**
   - URL: <https://www.blackhat.com/presentations/bh-usa-09/KLEISSNER/BHUSA09-Kleissner-StonedBootkit-SLIDES.pdf>
@@ -4799,7 +4799,7 @@
 - **Windows SMEP Bypass: U=S - Enrique Nissim, NicolasEconomou(2015)**
   - URL: <https://www.coresecurity.com/sites/default/files/private-files/publications/2016/05/Windows%20SMEP%20bypass%20U%3DS.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2901`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3152`; references: 1.
   - ID: `02cc4c9bfadfb18519ea`.
 - **Linux ASLR Curiosities. Tavis Ormandy. Julien Tinnes**
   - URL: <https://www.cr0.org/paper/to-jt-linux-alsr-leak.pdf>
@@ -4819,7 +4819,7 @@
 - **FlexSC: Flexible System Call Scheduling with Exception-Less System Calls**
   - URL: <https://www.cs.cmu.edu/~chensm/Big_Data_reading_group/papers/flexsc-osdi10.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:244`; references: 1.
+  - Source: `Draft/sysinternals.md:286`; references: 1.
   - ID: `d3df31400918dc0e1df0`.
 - **Redaction of PDF Files Using Adobe Acrobat Professional X - NSA**
   - URL: <https://www.cs.columbia.edu/~smb/doc/Redaction-of-PDF-Files-Using-Adobe-Acrobat-Professional-X.pdf>
@@ -4864,7 +4864,7 @@
 - **AppleScript - William R. Cook(2006)**
   - URL: <https://www.cs.utexas.edu/users/wcook/Drafts/2006/ashopl.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:460`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:124`; references: 1.
   - ID: `d3351612688cb5532477`.
 - **The Unified Kill Chain: Designing a Unified Kill Chain for analyzing, comparing and defending against cyber attacks - Mr. drs. Paul Pols(2017)**
   - URL: <https://www.csacademy.nl/images/scripties/2018/Paul-Pols---The-Unified-Kill-Chain.pdf>
@@ -4929,7 +4929,7 @@
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-17/dc-17-presentations/defcon-17-ostrom-sambamoorthy-video_application_attacks.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:158`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:149`; references: 1.
   - ID: `0b6620aeacf95f09e04e`.
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-17/dc-17-presentations/defcon-17-sean_taylor-binary_obfuscation.pdf>
@@ -4959,7 +4959,7 @@
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-18/dc-18-presentations/Cerrudo/DEFCON-18-Cerrudo-Token-Kidnapping-Revenge.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5372`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5883`; references: 1.
   - ID: `0e351bcff8550dab2f5b`.
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-18/dc-18-presentations/Crenshaw/DEFCON-18-Crenshaw-PHID-USB-Device.pdf>
@@ -4969,7 +4969,7 @@
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-18/dc-18-presentations/Damato/DEFCON-18-Damato-Function-Hooking.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:208`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:849`; references: 1.
   - ID: `0ddad90525092c0cd163`.
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-18/dc-18-presentations/Elkins/DEFCON-18-Elkins-Universal-RF-Keyboard.pdf>
@@ -4989,7 +4989,7 @@
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-19/dc-19-presentations/McCoy/DEFCON-19-McCoy-Hacking-Net.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5599`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:6091`; references: 2.
   - ID: `2dc35ef064f422e76923`.
 - **Paper**
   - URL: <https://www.defcon.org/images/defcon-20/dc-20-presentations/Brossard/DEFCON-20-Brossard-Hardware-Backdooring-is-Practical-WP.pdf>
@@ -5009,7 +5009,7 @@
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-21/dc-21-presentations/Bialek/DEFCON-21-Bialek-PowerPwning-Post-Exploiting-by-Overpowering-Powershell.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:6420`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:6903`; references: 1.
   - ID: `361f9e52f940f6666301`.
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-21/dc-21-presentations/Chow/DEFCON-21-Chow-Abusing-NoSQL-Databases.pdf>
@@ -5059,7 +5059,7 @@
 - **Kerberos Credential Thiever (GNU/Linux) - Ronan Loftus, Arne Zismer**
   - URL: <https://www.delaat.net/rp/2016-2017/p97/report.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExLin.md:350`; references: 2.
+  - Source: `Draft/PrivescPostExLin.md:337`; references: 2.
   - ID: `891b2c73dc905de513a4`.
 - **TIBER - NL Guide - How to conduct the TIBER-NL test**
   - URL: <https://www.dnb.nl/binaries/TIBER-NL%20Guide%20Second%20Test%20Round%20final_tcm46-365448.pdf>
@@ -5099,7 +5099,7 @@
 - **Flipping Bits in Memory Without Accessing Them: An Experimental Study of DRAM Disturbance Errors**
   - URL: <https://www.ece.cmu.edu/~safari/pubs/kim-isca14.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:83`; references: 2.
+  - Source: `Draft/PrivescPostEx.md:99`; references: 2.
   - ID: `a3b2d215d7590406de36`.
 - **Chameleon: A Versatile Emulator for Contactless Smartcards - Paper**
   - URL: <https://www.ei.rub.de/media/crypto/veroeffentlichungen/2011/11/16/chameleon.pdf>
@@ -5144,7 +5144,7 @@
 - **Dynamic-Link Library Hijacking**
   - URL: <https://www.exploit-db.com/docs/31687.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:1710`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:1916`; references: 1.
   - ID: `eacca42f81493bb65eee`.
 - **EXPLOITING  BUFFER  OVERFLOWS ON  MIPS ARCHITECTURE**
   - URL: <https://www.exploit-db.com/docs/39658.pdf>
@@ -5174,17 +5174,17 @@
 - **Reflective DLL Injection - Stephen Fewer(2008)**
   - URL: <https://www.exploit-db.com/docs/english/13007-reflective-dll-injection.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:6803`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:7295`; references: 1.
   - ID: `4f19a444e67f55eca2d4`.
 - **Introduction to Manual Backdooring - abatchy17**
   - URL: <https://www.exploit-db.com/docs/english/42061-introduction-to-manual-backdooring.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:334`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:392`; references: 1.
   - ID: `1928bbff9717276becd2`.
 - **File transfer skills in the red team post penetration test - xax007**
   - URL: <https://www.exploit-db.com/docs/english/46515-file-transfer-skills-in-the-red-team-post-penetration-test.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:407`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:471`; references: 1.
   - ID: `cdc1699583006ed83d0d`.
 - **LDAP Swiss Army Knife - Moritz Bechler**
   - URL: <https://www.exploit-db.com/docs/english/46986-ldap-swiss-army-knife.pdf>
@@ -5244,12 +5244,12 @@
 - **Bypassing User-Mode Hooks: Analyzing Malware Evasion Trend - Omri Misgav, Udi Yavo(FIRST Tel Aviv2019)**
   - URL: <https://www.first.org/resources/papers/telaviv2019/Ensilo-Omri-Misgav-Udi-Yavo-Analyzing-Malware-Evasion-Trend-Bypassing-User-Mode-Hooks.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5108`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5583`; references: 1.
   - ID: `9cee0a169ec35500a5fc`.
 - **Backdooring Torrents - GIronSec(2019)**
   - URL: <https://www.gironsec.com/blog/wp-content/uploads/2019/06/Backdooring-Torrents.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:332`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:390`; references: 1.
   - ID: `69d68786afa60efee12b`.
 - **Java Unmarshaller Security - Turning your data into code execution**
   - URL: <https://www.github.com/mbechler/marshalsec/blob/master/marshalsec.pdf?raw=true>
@@ -5429,7 +5429,7 @@
 - **HookFinder: Identifying and Understanding Malware Hooking Behaviors - Heng Yin, Zhenkai Lian, Dawn Song(2017)**
   - URL: <https://www.ndss-symposium.org/wp-content/uploads/2017/09/yin2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5152`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5633`; references: 1.
   - ID: `774e67860ff5f34de900`.
 - **Master of Web Puppets: Abusing Web Browsersfor Persistent and Stealthy Computation - Panagiotis Papadopoulos, Panagiotis Ilia, Michalis Polychronakis, Evangelos P. Markatos, Sotiris Ioannidis, Giorgos Vasiliadis(2019)**
   - URL: <https://www.ndss-symposium.org/wp-content/uploads/2019/02/ndss2019_01B-2_Papadopoulos_paper.pdf>
@@ -5529,7 +5529,7 @@
 - **PCI-DSS V3.2.1**
   - URL: <https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `README.md:99`; references: 3.
+  - Source: `README.md:102`; references: 3.
   - ID: `840280be908de0f73b26`.
 - **PCI SSC Cloud  Computing  Guidelines - 4/2018**
   - URL: <https://www.pcisecuritystandards.org/pdfs/PCI_SSC_Cloud_Guidelines_v3.pdf>
@@ -5559,7 +5559,7 @@
 - **Where there's a JTAG, there's a way: Obtaining full system access via USB**
   - URL: <https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Where-theres-a-JTAG-theres-a-way.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:71`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:87`; references: 1.
   - ID: `c8c2df33bc4a0560dd75`.
 - **Defeating Microsoft Windows XP SP2 Heap protection and DEP bypass **
   - URL: <https://www.ptsecurity.com/upload/corporate/ww-en/download/defeating-xpsp2-heap-protection.pdf>
@@ -5614,7 +5614,7 @@
 - **Slides**
   - URL: <https://www.romhack.io/dl-2020/RH2020-slides-Salvati.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:398`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:431`; references: 1.
   - ID: `1a4f9b72633087eed311`.
 - **Detecting Advanced Threats With Sysmon, WEF, and ElasticSearch - Josh Lewis(2015)**
   - URL: <https://www.root9b.com/sites/default/files/whitepapers/R9B_blog_005_whitepaper_01.pdf>
@@ -5629,7 +5629,7 @@
 - **FromALPC to UAC-Bypass - @hakril(2017)**
   - URL: <https://www.rump.beer/2017/slides/from_alpc_to_uac_bypass.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:3400`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:3665`; references: 1.
   - ID: `e2d1c5c96b4d1e498097`.
 - **Active Defense and the Hunting Maturity Model - Jamie Buening**
   - URL: <https://www.sans.org/cyber-security-summit/archives/file/summit-archive-1492176467.pdf>
@@ -5724,7 +5724,7 @@
 - **How to gain root with CVE-2018-4193 in < 10s - Eloi Benoist-Vanderbeken**
   - URL: <https://www.synacktiv.com/ressources/OffensiveCon_2019_macOS_how_to_gain_root_with_CVE-2018-4193_in_10s.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostExmac.md:598`; references: 1.
+  - Source: `Draft/PrivescPostExmac.md:266`; references: 1.
   - ID: `ec4d286e6d7fc548299a`.
 - **Code Obfuscation 10\*\*2+(2\*a+3)%2 - Gaetan Ferry(JSecIn 2018)**
   - URL: <https://www.synacktiv.com/ressources/jsecin_code_obfu.pdf>
@@ -5734,7 +5734,7 @@
 - **DPAPI exploitation during pentest and password cracking - Jean-Christophe Delaunay**
   - URL: <https://www.synacktiv.com/ressources/univershell_2017_dpapi.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4762`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:5214`; references: 2.
   - ID: `67762cff29be430e392d`.
 - **Slides**
   - URL: <https://www.synacktiv.com/ressources/zeronights_2018_turning_your_bmc_into_a_revolving_door.pdf>
@@ -5789,7 +5789,7 @@
 - **Acquiring .NET Objects from the Managed Heap - Topher Timzen(2015)**
   - URL: <https://www.tophertimzen.com/resources/grayStorm/AcquiringDotNetObjectsFromTheManagedHeap.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:5603`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:6095`; references: 2.
   - ID: `0b7507c40496f3e8c71a`.
 - **Hijacking Arbitrary .NET Application Control Flow**
   - URL: <https://www.tophertimzen.com/resources/grayStorm/HijackingArbitraryDotnetApplicationControlFlow.pdf>
@@ -5819,7 +5819,7 @@
 - **Fundamentals of Post-Exploitation - Carlos Perez(2020)**
   - URL: <https://www.trustedsec.com/wp-content/uploads/2020/01/011519-Tradecraft-1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivescPostEx.md:141`; references: 1.
+  - Source: `Draft/PrivescPostEx.md:128`; references: 1.
   - ID: `3ed7b4ea63db557904ca`.
 - **Chipping Away at Censorship Firewalls with User-Generated Content**
   - URL: <https://www.usenix.org/legacy/event/sec10/tech/full_papers/Burnett.pdf>
@@ -5884,7 +5884,7 @@
 - **ShadowMove: A Stealthy Lateral Movement Strategy - Amirreza Niakanlahiji, Jinpeng Wei, Md Rabbi Alam, Qingyang Wang, Bei-Tseng Chu(2020)**
   - URL: <https://www.usenix.org/system/files/sec20summer_niakanlahiji_prepub.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4268`; references: 3.
+  - Source: `Draft/PrivEscPostExWin.md:4678`; references: 3.
   - ID: `a7a4538e846712c29888`.
 - **ReDoSHunter: A Combined Static and Dynamic Approach for Regular Expression DoS Detection - Yeting Li and Zixuan Chen, Jialun Cao, Zhiwu Xu, Qiancheng Peng, Haiming Chen, Liyuan Chen, Shing-Chi Cheung(Usenix2021)**
   - URL: <https://www.usenix.org/system/files/sec21-li-yeting.pdf>
@@ -5919,7 +5919,7 @@
 - **The Dangers of Per-User COM Objects - Jon Larimer(2011)**
   - URL: <https://www.virusbulletin.com/uploads/pdf/conference_slides/2011/Larimer-VB2011.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4568`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5012`; references: 1.
   - ID: `ba9056fc608326d281cb`.
 - **https://www.virusbulletin.com/uploads/pdf/magazine/2018/VB2018-Guerrero-Saade.pdf**
   - URL: <https://www.virusbulletin.com/uploads/pdf/magazine/2018/VB2018-Guerrero-Saade.pdf>
@@ -5954,17 +5954,17 @@
 - **Slides**
   - URL: <https://www.wietzebeukema.nl/literature/Beukema,%20WJB%20-%20Save%20The%20Environment%20(Variable).pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:567`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:617`; references: 1.
   - ID: `46fa8a9860cfa1eaaf99`.
 - **DynamicLinkLibraries.pdf - Winnitor**
   - URL: <https://www.winitor.com/pdf/DynamicLinkLibraries.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:4711`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:5161`; references: 1.
   - ID: `e41eaa7e65ad896f4051`.
 - **Windows Alternate Data Streams (ADS) - Marc Ochsenmeier(2021)**
   - URL: <https://www.winitor.com/pdf/NtfsAlternateDataStreams.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:1339`; references: 2.
+  - Source: `Draft/PrivEscPostExWin.md:1448`; references: 2.
   - ID: `ad73d7c76d5894219644`.
 - **Crafting Mac OS Rootkits**
   - URL: <https://www.zdziarski.com/blog/wp-content/uploads/2017/02/Crafting-macOS-Root-Kits.pdf>

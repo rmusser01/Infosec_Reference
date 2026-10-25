@@ -1846,8 +1846,336 @@
       "title": "Privilege Escalation and Post-Exploitation",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Hardware-based Privilege Escalation",
+          "fragment": "ref-postex-1",
+          "aliases": []
+        },
+        {
+          "label": "Post-Exploitation General",
+          "fragment": "ref-postex-4",
+          "aliases": []
+        },
+        {
+          "label": "Handling Shells",
+          "fragment": "ref-postex-41",
+          "aliases": []
+        },
+        {
+          "label": "Backdooring",
+          "fragment": "ref-postex-42",
+          "aliases": []
+        },
+        {
+          "label": "Exfiltration",
+          "fragment": "ref-postex-45",
+          "aliases": []
+        },
+        {
+          "label": "Pivoting & Tunneling",
+          "fragment": "ref-postex-49",
+          "aliases": []
+        },
+        {
+          "label": "Secured Environment Breakouts/Escapes",
+          "fragment": "ref-postex-66",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "path": "Draft/PrivescPostExLin.md",
+      "title": "Linux Privilege Escalation & Post-Exploitation",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Discovery (Linux)",
+          "fragment": "ref-linpost-3",
+          "aliases": []
+        },
+        {
+          "label": "Execution (Linux)",
+          "fragment": "ref-linpost-4",
+          "aliases": []
+        },
+        {
+          "label": "Persistence (Linux)",
+          "fragment": "ref-linpost-5",
+          "aliases": []
+        },
+        {
+          "label": "Privilege Escalation (Linux)",
+          "fragment": "ref-linpost-6",
+          "aliases": []
+        },
+        {
+          "label": "Defense Evasion (Linux)",
+          "fragment": "ref-linpost-7",
+          "aliases": []
+        },
+        {
+          "label": "Credential Access (Linux)",
+          "fragment": "ref-linpost-8",
+          "aliases": []
+        },
+        {
+          "label": "Lateral Movement (Linux)",
+          "fragment": "ref-linpost-9",
+          "aliases": []
+        },
+        {
+          "label": "Collection (Linux)",
+          "fragment": "ref-linpost-10",
+          "aliases": []
+        },
+        {
+          "label": "Linux Code Injection",
+          "fragment": "ref-linpost-11",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "path": "Draft/PrivescPostExmac.md",
+      "title": "macOS Privilege Escalation & Post-Exploitation",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "AppleScript, Objective-C & Swift",
+          "fragment": "ref-macpost-2",
+          "aliases": []
+        },
+        {
+          "label": "Execution (macOS)",
+          "fragment": "ref-macpost-5",
+          "aliases": []
+        },
+        {
+          "label": "Persistence (macOS)",
+          "fragment": "ref-macpost-6",
+          "aliases": []
+        },
+        {
+          "label": "Privilege Escalation (macOS)",
+          "fragment": "ref-macpost-7",
+          "aliases": []
+        },
+        {
+          "label": "Defense Evasion (macOS)",
+          "fragment": "ref-macpost-8",
+          "aliases": []
+        },
+        {
+          "label": "Credential Access (macOS)",
+          "fragment": "ref-macpost-18",
+          "aliases": []
+        },
+        {
+          "label": "Discovery (macOS)",
+          "fragment": "ref-macpost-19",
+          "aliases": []
+        },
+        {
+          "label": "Lateral Movement (macOS)",
+          "fragment": "ref-macpost-20",
+          "aliases": []
+        },
+        {
+          "label": "Collection (macOS)",
+          "fragment": "ref-macpost-21",
+          "aliases": []
+        },
+        {
+          "label": "macOS Technologies",
+          "fragment": "ref-macpost-23",
+          "aliases": []
+        },
+        {
+          "label": "Transparency, Consent, and Control (macOS)",
+          "fragment": "ref-macpost-29",
+          "aliases": []
+        },
+        {
+          "label": "macOS Code Injection",
+          "fragment": "ref-macpost-31",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "path": "Draft/PrivEscPostExWin.md",
+      "title": "Windows Privilege Escalation & Post-Exploitation",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Living_off_The_Land (Windows)",
+          "fragment": "ref-winpost-4",
+          "aliases": []
+        },
+        {
+          "label": "Bring-Your-Own-Land (Windows)",
+          "fragment": "ref-winpost-5",
+          "aliases": []
+        },
+        {
+          "label": "Bring-Your-Own-Driver (Windows)",
+          "fragment": "ref-winpost-6",
+          "aliases": []
+        },
+        {
+          "label": "Execution (Windows)",
+          "fragment": "ref-winpost-7",
+          "aliases": []
+        },
+        {
+          "label": "Persistence (Windows)",
+          "fragment": "ref-winpost-36",
+          "aliases": []
+        },
+        {
+          "label": "Privilege Escalation (Windows)",
+          "fragment": "ref-winpost-92",
+          "aliases": []
+        },
+        {
+          "label": "Defense Evasion (Windows)",
+          "fragment": "ref-winpost-105",
+          "aliases": []
+        },
+        {
+          "label": "Credential Access (Windows)",
+          "fragment": "ref-winpost-127",
+          "aliases": []
+        },
+        {
+          "label": "Discovery (Windows)",
+          "fragment": "ref-winpost-164",
+          "aliases": []
+        },
+        {
+          "label": "Lateral Movement (Windows)",
+          "fragment": "ref-winpost-181",
+          "aliases": []
+        },
+        {
+          "label": "Collection (Windows)",
+          "fragment": "ref-winpost-207",
+          "aliases": []
+        },
+        {
+          "label": "Exfiltration (Windows)",
+          "fragment": "ref-winpost-226",
+          "aliases": []
+        },
+        {
+          "label": "Windows Technologies",
+          "fragment": "ref-winpost-227",
+          "aliases": []
+        },
+        {
+          "label": "C# & .NET Stuff",
+          "fragment": "ref-winpost-278",
+          "aliases": []
+        },
+        {
+          "label": "Discovery (Windows)",
+          "fragment": "ref-winpost-281",
+          "aliases": []
+        },
+        {
+          "label": "Exfiltration (Windows)",
+          "fragment": "ref-winpost-283",
+          "aliases": []
+        },
+        {
+          "label": "Privilege Escalation (Windows)",
+          "fragment": "ref-winpost-284",
+          "aliases": []
+        },
+        {
+          "label": "Collection (Windows)",
+          "fragment": "ref-winpost-285",
+          "aliases": []
+        },
+        {
+          "label": "Persistence (Windows)",
+          "fragment": "ref-winpost-286",
+          "aliases": []
+        },
+        {
+          "label": "Lateral Movement (Windows)",
+          "fragment": "ref-winpost-288",
+          "aliases": []
+        },
+        {
+          "label": "Powershell Things",
+          "fragment": "ref-winpost-292",
+          "aliases": []
+        },
+        {
+          "label": "Discovery (Windows)",
+          "fragment": "ref-winpost-294",
+          "aliases": []
+        },
+        {
+          "label": "Execution (Windows)",
+          "fragment": "ref-winpost-295",
+          "aliases": []
+        },
+        {
+          "label": "Persistence (Windows)",
+          "fragment": "ref-winpost-296",
+          "aliases": []
+        },
+        {
+          "label": "Privilege Escalation (Windows)",
+          "fragment": "ref-winpost-298",
+          "aliases": []
+        },
+        {
+          "label": "Lateral Movement (Windows)",
+          "fragment": "ref-winpost-299",
+          "aliases": []
+        },
+        {
+          "label": "Exfiltration (Windows)",
+          "fragment": "ref-winpost-301",
+          "aliases": []
+        },
+        {
+          "label": "Windows Code Injection Techniques",
+          "fragment": "ref-winpost-306",
+          "aliases": []
+        },
+        {
+          "label": "DLL Injection (Windows)",
+          "fragment": "ref-winpost-319",
+          "aliases": []
+        },
+        {
+          "label": "Process Herpaderping (Windows)",
+          "fragment": "ref-winpost-330",
+          "aliases": []
+        },
+        {
+          "label": "Process Hollowing (Windows)",
+          "fragment": "ref-winpost-331",
+          "aliases": []
+        },
+        {
+          "label": "Thread Execution Hijacking (Windows)",
+          "fragment": "ref-winpost-346",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Programming_Language_Security.md",
@@ -2253,8 +2581,109 @@
       "title": "System Internals (Linux/Windows)",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "General OS Agnostic Internals",
+          "fragment": "ref-internals-1",
+          "aliases": []
+        },
+        {
+          "label": "File Systems (General OS Agnostic Internals)",
+          "fragment": "ref-internals-4",
+          "aliases": []
+        },
+        {
+          "label": "Memory (General OS Agnostic Internals)",
+          "fragment": "ref-internals-5",
+          "aliases": []
+        },
+        {
+          "label": "Processes (General OS Agnostic Internals)",
+          "fragment": "ref-internals-6",
+          "aliases": []
+        },
+        {
+          "label": "Linux Internals",
+          "fragment": "ref-internals-8",
+          "aliases": []
+        },
+        {
+          "label": "Linux Internals references",
+          "fragment": "ref-internals-10",
+          "aliases": []
+        },
+        {
+          "label": "Memory (Linux Internals)",
+          "fragment": "ref-internals-17",
+          "aliases": []
+        },
+        {
+          "label": "Processes (Linux Internals)",
+          "fragment": "ref-internals-21",
+          "aliases": []
+        },
+        {
+          "label": "Syscalls (Linux Internals)",
+          "fragment": "ref-internals-22",
+          "aliases": []
+        },
+        {
+          "label": "OS X Internals",
+          "fragment": "ref-internals-24",
+          "aliases": []
+        },
+        {
+          "label": "Windows Internals",
+          "fragment": "ref-internals-27",
+          "aliases": []
+        },
+        {
+          "label": "Windows Internals references",
+          "fragment": "ref-internals-28",
+          "aliases": []
+        },
+        {
+          "label": "Access Control (Windows Internals)",
+          "fragment": "ref-internals-30",
+          "aliases": []
+        },
+        {
+          "label": "Accounts (Windows Internals)",
+          "fragment": "ref-internals-31",
+          "aliases": []
+        },
+        {
+          "label": "Credentials (Windows Internals)",
+          "fragment": "ref-internals-49",
+          "aliases": []
+        },
+        {
+          "label": "Memory (Windows Internals)",
+          "fragment": "ref-internals-79",
+          "aliases": []
+        },
+        {
+          "label": "Syscalls (Windows Internals)",
+          "fragment": "ref-internals-123",
+          "aliases": []
+        },
+        {
+          "label": "Kernel(general)",
+          "fragment": "ref-internals-131",
+          "aliases": []
+        },
+        {
+          "label": "ARM References",
+          "fragment": "ref-internals-136",
+          "aliases": []
+        },
+        {
+          "label": "Emojis/Fonts/Encoding",
+          "fragment": "ref-internals-138",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/threatmodel.md",
@@ -2526,6 +2955,11 @@
     "Draft/Programming_Language_Security.md",
     "Draft/Defense.md",
     "Draft/Web.md",
-    "Draft/RT.md"
+    "Draft/RT.md",
+    "Draft/PrivEscPostExWin.md",
+    "Draft/PrivescPostExLin.md",
+    "Draft/PrivescPostExmac.md",
+    "Draft/PrivescPostEx.md",
+    "Draft/sysinternals.md"
   ]
 }

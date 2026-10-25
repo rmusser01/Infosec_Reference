@@ -64,3 +64,12 @@ Defense, Web and Red Teaming now have managed ToCs, stable canonical destination
 All 78 group errors are retired: 122 occurrences / 121 legacy keys remain across 20 other pages. Twenty main topics have managed ToCs; 28 remain to review/migrate as appropriate. Original resource occurrences, explicit aliases and code ranges are preserved. Actual Docsify external-link occurrence comparisons retain Defense 176→178, Web 2,347→2,353 and RT 1,946→1,950; extra visible links result from list indentation repairs. Native Chromium search/deep-route checks cover all three pages and corrected Web labels.
 
 The 54-test suite passes, navigation check has no new/stale diagnostics, and repeated generation makes no changes. Inventory: 21,747 URLs (1,200 PDF, 1,458 video, 23 other non-text candidates, 19,066 unknown). External validation and capture remain pending.
+
+
+## Systems references group
+
+General/Windows/Linux/macOS post-exploitation and System Internals now have managed ToCs and 83 selected subjects. The existing three platform pages are listed directly in topic/sidebar navigation, making 51 total topics and 25 migrated ToCs. Their original related links remain. macOS unsorted references moved intact to the bottom; System Internals' resource-free To Do moved to the backlog. Nine Windows mini-ToC aliases now resolve at matching content sections.
+
+Retired all 42 group errors: 80 occurrences / 79 keys remain across 15 pages. Windows' two malformed destinations were corrected using URLs already in its source, and the existing DLL-injection body link points to its actual section. Raw resource/alias preservation checks pass. Actual Docsify comparisons retain Windows 3,828→3,844, Linux 99→99, macOS 432→432, general 272→272 and System Internals 432→444 rendered external-link occurrences; repaired list indentation explains the additional visible links. Alaris/ScatterBrain have a compiler regression for the renderer-only indentation issue.
+
+The 59-test suite passes; navigation check has no new/stale diagnostics; repeated generation makes no changes. Native Chromium covers five search destinations, deep-route reload and the added platform sidebar links. Inventory: 21,748 URLs (1,200 PDF, 1,458 video, 23 other non-text candidates, 19,067 unknown). External validation and capture remain pending.

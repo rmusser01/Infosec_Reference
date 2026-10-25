@@ -12,6 +12,7 @@ import { BrowsertrixRuntime, filesBelow, directoryBytes } from "./runtime.mjs";
 import { describeObject, verifyObjects, persistCapture } from "./storage.mjs";
 import { classifyResource } from "../navigation/resources.mjs";
 import { buildArchivePlan } from "./plan.mjs";
+import { retainCapture } from "./retention.mjs";
 
 const normalized = (text) => (text ?? "").replace(/\s/g, "");
 export function processingQueues(snapshot, job) {
@@ -296,7 +297,7 @@ export async function captureUrl(job, policy, { directory, runtime } = {}) {
     JSON.stringify(attempt, null, 2) + "\n",
     { flag: "wx" },
   );
-  return attempt;
+  return retainCapture(directory, attempt);
 }
 
 if (

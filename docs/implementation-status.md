@@ -1,6 +1,6 @@
 # Implementation status
 
-Branch: `codex/generated-navigation` (desktop continuation; original export: `improve-generated-navigation`). Source base: `af8b68e2194e695c542eb76fba762d2f0a19a0dc`. Changes are local; nothing has been pushed, published, or archived externally.
+Branch: `codex/generated-navigation` (desktop continuation; original export: `improve-generated-navigation`). Source base: `af8b68e2194e695c542eb76fba762d2f0a19a0dc`. Repository changes remain local. Two authorized public references have confirmed Internet Archive snapshots; no Git push or site deployment has occurred.
 
 ## Implemented
 
@@ -12,6 +12,7 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 - Parser-generated processing lists and a separate progress ledger that survives regeneration.
 - Bounded external availability checks and report-only workflow; archive job planning with separate non-text queues and verified-prior-capture eligibility.
 - Bounded Browsertrix capture behind a public-address/MIME filtering proxy, article figure selection, WARC integrity/content verification, offline replay QA, append-only provenance, and verified immutable local copying. Local pilot evidence exists; permanent preservation remains unconfigured.
+- Compact local retention keeps original WARCs, indexes, extracted article text and recorded offline QA, discarding duplicate bundles and temporary QA archives. Added-link Git comparisons drive local capture plus anonymous Save Page Now submissions, with resumable job IDs and a confirmed Wayback catalog. A read-only PR/main workflow provides Wayback receipts; its hosted execution remains untested.
 
 ## Measured results
 
@@ -25,7 +26,7 @@ Automated tests exercise the actual checked-in Docsify compiler and application 
 
 - Navigation rollout, shared heading rendering, and favicon repair are complete locally. Production deployment/cache behavior remains unverified.
 - Choose durable archive and backup destinations, verify recovery/replay from them, and calibrate the bounded engine against more layouts/figures before scaling. Remote object-store uploading and full-crawl scheduling remain unimplemented. The policy now enforces the local pilot's supported bounds; it does not establish storage durability.
-- Run coordinated external/capture batches after durable storage is ready. Two existing public references have local capture/replay evidence; broad external validation and full collection preservation have not run. Strict content checks leave the Eli reference partial for manual review.
+- Continue bounded new-link batches locally under the clarified retention policy; durable storage is not required to make local progress. Two public references have compact local capture/replay evidence, and two have confirmed Wayback snapshots. Broad external validation and full collection preservation have not run. Strict content checks leave the Eli reference partial for manual review. Commit CI receipts/catalog to make future snapshots discoverable; the workflow does not write to the repository.
 - Separately scoped later processing: PDF extraction/OCR, video captions/transcription, other extractors, and extracted-content search indexing. These are not prerequisites for completing navigation.
 
 ## Engineering decisions
@@ -213,4 +214,14 @@ Final verification: **98/98 tests** pass; five Python policy cases and two actua
 
 Two existing public references were attempted: Dan Luu's article has verified capture/integrity/offline replay; Eli Bendersky's article has verified integrity/replay but remains partial under strict content comparison. Both are temporary local output. The fresh review's four Important issues received RED→GREEN fixes: false durable-copy status, HTTP-200 error walls, recheck promotion after filtering/budget failures, and non-text redirect bodies. No review minor remains deferred.
 
-The offline plan reuses capture response evidence and accounts for all 21,738 URLs: one complete local capture, one partial and 21,736 not attempted; **zero durably preserved**. It routes two observed HTML pages to web capture, 19,055 URLs to type confirmation, and retains the 1,200 PDF / 1,458 video / 23 other non-text queues. Navigation remains at zero internal errors. Durable destination/backup selection, recovery/replay from storage, wider content calibration, remote-upload support and full coordinated batches remain pending. No full crawl, media extraction, remote push or publication ran.
+The offline plan reuses capture response evidence and accounts for all 21,738 URLs: one complete local capture, one partial and 21,736 not attempted; **zero durably preserved**. It routes two observed HTML pages to web capture, 19,055 URLs to type confirmation, and retains the 1,200 PDF / 1,458 video / 23 other non-text queues. Navigation remains at zero internal errors. Durable destination/backup selection, recovery/replay from storage, wider content calibration, remote-upload support and full coordinated batches remain pending. No full crawl, media extraction, remote push or publication ran at that checkpoint.
+
+## Compact change-based archive workflow — 2026-10-25
+
+The user clarified that new resource links in changes/PRs should trigger local article/text/figure capture and source-URL submissions to Internet Archive. Compact retention now discards WACZ duplicates, replay archives, discovery/profiles/logs and temporary CA state after saving actual QA results bound to primary-object hashes. The two original public captures shrank from 17.1 MB to 208 KB; integrity and recorded QA rechecks pass. Temporary synthetic payloads are discarded after checks. See the [archive guide](archiving.md) for pre-PR commands and the [confirmed Wayback catalog](archives/README.md) for reader fallbacks.
+
+The live Git-based batch processed the four added/corrected URLs relative to the actual `master` base. The GitHub lab write-up has complete local text/integrity/offline replay and a confirmed Wayback snapshot; two dead domains and the separately queued PDF retain deferred outcomes. Dan Luu also has a confirmed Wayback snapshot. Current totals: two complete local captures, Eli partial, three deferred, 21,732 not attempted and zero durably preserved. The read-only CI workflow supports main/master PRs and pushes, anonymously submits up to ten URLs, and provides receipts to commit; local capture and permanent receipt storage still use the local command/repository.
+
+One fresh review found three Important issues; all have RED→GREEN fixes for deferred-job resume, atomic compact manifests, and symlink-safe fixed paths. DNS failures also retain safe retry times. Hosted CI, independent durable storage/recovery and broad layout calibration remain pending. No repository push or site deployment occurred.
+
+Final verification: **105/105 tests**, five wrapped Python policy cases, two offline warcio corruption/truncation tests, and all eight controlled Docker cases pass. All three retained public captures pass fresh primary integrity rechecks with recorded QA outcomes; Eli remains partial. Navigation: 102 pages / 29,165 links / zero errors, with unchanged 15 orphan and 21 repeated-destination warnings. Formatting and `git diff --check` pass. No duplicate WACZ, replay archives or temporary proxy private keys remain in local output; raw captures stay ignored.

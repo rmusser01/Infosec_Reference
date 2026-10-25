@@ -15,6 +15,7 @@
     "archive:plan": "node tools/archive/plan.mjs",
     "archive:pilot": "node tools/archive/capture.mjs",
     "archive:verify": "node tools/archive/recheck.mjs",
+    "archive:changes": "node tools/archive/changes.mjs",
     "archive:test-runtime": "node tests/archive/runtime.mjs"
   },
   "dependencies": {

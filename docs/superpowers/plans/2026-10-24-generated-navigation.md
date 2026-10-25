@@ -18,10 +18,12 @@ The unchecked implementation steps below are the original historical plan, not a
 |---|---|
 | 1–5 | Restored from the patch; parser, generator, pilot, Docsify, and CI/check tooling verified locally. Desktop review found and corrected filename-case and search-cache bugs. |
 | 6 | Navigation rollout complete: all 53 listed topics reviewed, with 50 managed ToCs and three short directory landings. The 102-page audit has zero internal errors and an empty legacy baseline. Shared heading rendering and favicon are repaired; 86 tests and native desktop/mobile checks pass. External reporting exists but broad validation is pending. |
-| 7 | Bounded local implementation/pilot: pinned Browsertrix plus filtering proxy, WARC integrity/content checks, offline replay, append-only provenance, and immutable verified copies exist. Durable storage/recovery validation, wider layout calibration, remote uploads and the full capture run remain pending. See `docs/archive-execution.md`. |
+| 7 | Bounded local implementation/pilot: pinned Browsertrix plus filtering proxy, compact WARC/text/figure retention with recorded offline QA, append-only provenance, verified copies, Git-added-link detection, and confirmed Wayback catalog exist. Local batches continue; CI receipts need committing and hosted execution is unverified. Durable storage/recovery validation, wider layout calibration, remote uploads and the full capture run remain pending. See `docs/archive-execution.md`. |
 | Later processing | PDF/OCR, captions/transcription, other extraction, and search deployment remain separate future work. |
 
 ## Global Constraints
+
+User amendment, 2026-10-25: continue locally; retain article text/images and original compressed WARCs/indexes, discard duplicate WACZ bundles and temporary QA archives after recording verification. Archive triggers are new resource links in repository changes/PRs against main, not browsing. Capture locally and submit source URLs to Internet Archive, record confirmed Wayback URLs in a reader-accessible catalog. Local progress does not imply durable storage. The previously disallowed external publication is now authorized specifically for these source-URL submissions; local WARC uploading remains disabled. Current implementation and limits are recorded in `docs/archive-execution.md`.
 
 - Headings identify navigable subjects; bullets contain resources.
 - ToCs follow document order; the subject index provides alphabetical discovery.

@@ -1,0 +1,54 @@
+name: Archive added reference links
+on:
+  pull_request:
+    branches: [main, master]
+    paths: ["README.md", "Draft/**"]
+  push:
+    branches: [main, master]
+    paths: ["README.md", "Draft/**"]
+  workflow_dispatch:
+    inputs:
+      base:
+        description: Compare this commit/ref with HEAD
+        default: HEAD~1
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: archive-links-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: false
+jobs:
+  wayback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Submit up to ten added URLs and retain confirmed Wayback receipts
+        env:
+          ARCHIVE_BASE: ${{ github.event.pull_request.base.sha || github.event.before || inputs.base }}
+          ARCHIVE_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          node --input-type=module - <<'JS'
+          import {spawnSync} from 'node:child_process';
+          const result=spawnSync(process.execPath,['tools/archive/changes.mjs','--base',process.env.ARCHIVE_BASE,'--head',process.env.ARCHIVE_HEAD,'--execute','--wayback-only','--resume','--limit','10','--output','archive-data/change-report'],{stdio:'inherit'});
+          process.exit(result.status??1);
+          JS
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: added-link-archive-receipts
+          path: |
+            archive-data/change-report/*.json
+            archive-data/change-report/*.md
+            navigation/wayback-captures.jsonl
+            docs/archives/README.md
+          retention-days: 30
+          if-no-files-found: error

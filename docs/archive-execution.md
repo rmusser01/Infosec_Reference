@@ -2,7 +2,7 @@
 
 Plan: `docs/superpowers/plans/2026-10-24-generated-navigation.md`, Task 7 and its non-text amendment. Starting checkpoint: `804a0d9`, branch `codex/generated-navigation`.
 
-The approved archive design is already recorded beside the plan; this continuation implements it in the requested checkout. The durable destination remains unspecified. A local bounded pilot is authorized independently; no full crawl or publication is authorized by choosing a runtime.
+The approved archive design is already recorded beside the plan; this continuation implements it in the requested checkout. The durable destination remains unspecified. A local bounded pilot is authorized independently; choosing a runtime did not authorize a full crawl or publication. The subsequent user amendment below authorizes source-URL submissions to Internet Archive.
 
 ## Implementation sequence
 
@@ -71,4 +71,32 @@ Each behavior the reviewer set aside was assessed by the coordinator:
 
 ## Remaining work
 
-No durable destination or backup was supplied; an optional storage-choice question remains pending. Finish the local pilot without assuming a permanent destination. Choose persistent storage, verify object recovery/replay, calibrate more content/layout/figure/error cases, and only then design/run wider coordinated batches. Remote object-store upload and full-run scheduling are not implemented. Separate media acquisition/extraction/indexing remains future work. No remote push or publication occurred.
+The following paragraph describes full-collection prerequisites; the user amendment below authorizes continued local change batches independently.
+
+The user chose local continuation without a durable destination or backup. Continue bounded local change batches without assuming permanent preservation. Choose persistent storage, verify object recovery/replay, calibrate more content/layout/figure/error cases, and only then design/run wider coordinated batches. Remote object-store upload and full-run scheduling are not implemented. Separate media acquisition/extraction/indexing remains future work. No remote push occurred.
+
+## Compact retention and change-triggered Wayback amendment — 2026-10-25
+
+User scope: keep text and article figures locally, discard duplicate bundles and temporary QA archives. Trigger archival from new links in repository changes/PRs against main, rather than browsing. Submit source URLs to Internet Archive and expose confirmed snapshot links for readers. Existing `master` is supported alongside `main`; no branch rename was inferred.
+
+Ruling: reuse original compressed WARCs/CDXJ, extracted article JSON text and a hashed object manifest with the actual offline QA result. WACZ remains a temporary QA input only; discovery, replay archives, profiles/logs and proxy CA state are deleted. Rechecks verify the original objects/content again and explicitly identify recorded offline QA instead of claiming a fresh browser replay. Original attempt records remain historical. Manifest publication/replacement is atomic, and the original attempt is saved before compaction.
+
+The two prior public pilots were reverified before compaction, shrinking from **17,096,264 to 207,995 bytes** including metadata. Primary WARC verification and recorded QA still pass; Dan remains complete and Eli remains partial. Twelve old synthetic/probe runs discarded **4,531,225 bytes**; final synthetic runs now remove payloads in `finally`, retaining the result summary. No duplicate WACZ, replay WARC or proxy private-key files remain in the local archive output.
+
+`archive:changes` compares shared-parser resource sets against a Git base, optionally including the working tree, preserving queries and all source references. Repeated/moved/fragment-only links, images, code examples and generated/developer docs do not produce jobs. Bounded execution reuses rehashed local captures, preserves non-text queues, saves Wayback job IDs before polling, and generates `docs/archives/README.md` from confirmed successes only. Pending jobs resume without duplicate POSTs; HTTP429 and source-DNS failures retain retry times; uncertain submissions require review. Future retry times do not consume a ready batch slot. Fixed inputs/catalog outputs use the existing repository symlink guard.
+
+The anonymous protocol was checked against Internet Archive's official extension and exercised live. Confirmed catalog entries now include Dan Luu's article and the GitHub exploit-development lab write-up. Of the four added/corrected resource URLs relative to `master`, the GitHub write-up has complete local capture/integrity/offline replay and a confirmed Wayback snapshot. AllenGeer and blogs.360.cn do not resolve and remain deferred; the VSecurity PDF remains queued rather than downloaded, and its Wayback submission is deferred on DNS failure. Original resource links remain unchanged. The inventory plan accounts for **21,738** URLs: two complete local captures, one partial, three deferred and 21,732 not yet attempted; **zero durably preserved**. Known HTML evidence routes three to web capture, with 19,054 type-confirmation / 1,200 PDF / 1,458 video / 23 other non-text jobs.
+
+The read-only workflow submits up to ten added URLs on PRs or pushes to main/master, plus manual dispatch. It has no secrets or privileged PR execution, writes a job summary and uploads receipts, and does not commit changes or retain local WARCs. Authors run the local command for compact text/image retention and commit receipts/catalog for lasting discovery; CI artifact retention is not permanent reference storage. Hosted execution remains unverified until pushed.
+
+Final review: one fresh reviewer found three Important issues, all accepted and fixed in one RED→GREEN pass: deferred-job resume/starvation, interrupted manifest replacement, and symlinked fixed catalog/metadata paths. A live DNS-failure case additionally received RED→GREEN retry coverage. No Critical or Minor finding was deferred.
+
+Final review boundaries: hosted GitHub execution was not exercised; only its configuration and local comparison/submission path were checked. The coordinator ran actual Docker QA and anonymous Wayback requests independently of the reviewer's mocked-network tests. Primary-object rechecks preserve recorded QA rather than rerunning deleted replay artifacts. No broad/full-corpus crawl, durable backup/recovery qualification, media extraction or production site deployment is claimed.
+
+Final: fixed deferred resume/starvation — `resume plans include due rate-limited receipts and do not let future jobs consume the batch` RED→GREEN; suite 105/105.
+
+Final: fixed interrupted manifest replacement — `interrupted final manifest replacement preserves the published manifest after QA cleanup` RED→GREEN; suite 105/105.
+
+Final: fixed unsafe fixed paths — `change CLI rejects symlinked catalog and metadata paths without touching unrelated files` RED→GREEN; suite 105/105.
+
+Final verification: **105/105** Node tests pass, including five Python policy cases through the wrapper. Two actual warcio corruption/truncation/length tests pass offline. All eight real Docker fixture cases pass with payload cleanup; actual public captures exercise the final compact lifecycle. Navigation audits 102 pages / 29,165 links with zero errors and unchanged 15 orphan / 21 repeated-destination warnings. Formatting and `git diff --check` pass. Three retained public archives pass current primary-object integrity/content rechecks and retain their recorded QA outcomes; Eli remains partial.

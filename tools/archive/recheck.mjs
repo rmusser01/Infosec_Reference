@@ -5,14 +5,13 @@ import { randomUUID } from "node:crypto";
 import { verifyObjects } from "./storage.mjs";
 import { BrowsertrixRuntime } from "./runtime.mjs";
 import { verifyCapture, enforceCaptureScope } from "./capture.mjs";
+import { readCapture } from "./retention.mjs";
 
 export async function recheckCapture(
   directory,
   { runtime = new BrowsertrixRuntime(directory, {}) } = {},
 ) {
-  const prior = JSON.parse(
-    await readFile(join(directory, "attempt.json"), "utf8"),
-  );
+  const prior = await readCapture(directory);
   const attempt = { ...prior, verifiedAt: new Date().toISOString() };
   let snapshot, integrity;
   try {
@@ -27,9 +26,20 @@ export async function recheckCapture(
     return {
       ...attempt,
       integrityState: "failed",
+      replayState: "not-tested",
       captureState: "partial",
       verificationError: error.message,
     };
+  }
+  if (prior.retention?.version === 1) {
+    Object.assign(
+      attempt,
+      verifyCapture(snapshot, integrity, prior.replayEvidence ?? null),
+      {
+        replayEvidenceSource: "recorded-offline-qa",
+      },
+    );
+    return enforceCaptureScope(attempt);
   }
   try {
     const replay = await runtime.verify(join(directory, "replay"));

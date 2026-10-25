@@ -28,7 +28,13 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
       if (name !== "DOMContentLoaded") add(name, ...rest);
     };
     dom.window.eval(readFileSync("Draft/css/docsify4.js", "utf8"));
-    for (const path of ["Active_Directory", "DFIR", "L-SM-TH"]) {
+    for (const path of [
+      "Active_Directory",
+      "DFIR",
+      "L-SM-TH",
+      "Cloud",
+      "Containers",
+    ]) {
       const router = {
         getBasePath: () => "/docs/",
         getCurrentPath: () => "/" + path,
@@ -47,6 +53,11 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
       const body = dom.window.document.createElement("div");
       body.innerHTML = html;
       assert(body.querySelector("h1"));
+      if (path === "Cloud")
+        assert.equal(
+          body.querySelector("#ref-cloud-26").closest("h3").textContent,
+          "S3 Buckets",
+        );
       const links = [...body.querySelectorAll("a")].filter((a) =>
         a.getAttribute("href")?.startsWith("#ref-"),
       );

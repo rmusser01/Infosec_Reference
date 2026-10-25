@@ -10,6 +10,17 @@
 
 **Spec:** `docs/superpowers/specs/2026-10-24-generated-navigation-design.md`.
 
+## Execution progress — desktop continuation, 2026-10-25
+
+The unchecked implementation steps below are the original historical plan, not a claim that all work is pending. See `docs/implementation-status.md` for verification and current decisions.
+
+| Task | Current state |
+|---|---|
+| 1–5 | Restored from the patch; parser, generator, pilot, Docsify, and CI/check tooling verified locally. Desktop review found and corrected filename-case and search-cache bugs. |
+| 6 | Partial: external reporting exists; pilot browser review and Cloud/Containers migration are complete. 296 legacy error occurrences remain for later reviewable groups. No broad external validation ran. |
+| 7 | Partial: inventory, classification, and offline archive planning exist. Browsertrix capture, enforced filtering/network scope, WARC verification, replay, and durable storage remain pending. Docker is available locally. |
+| Later processing | PDF/OCR, captions/transcription, other extraction, and search deployment remain separate future work. |
+
 ## Global Constraints
 
 - Headings identify navigable subjects; bullets contain resources.

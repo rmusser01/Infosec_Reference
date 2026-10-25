@@ -584,7 +584,7 @@
 - **The Fundamentals of AWS Cloud Security - Becky Weiss(AWS re:Inforce 2019)**
   - URL: <https://www.youtube.com/watch?v=-ObImxw1PmI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Cloud.md:104`; references: 1.
+  - Source: `Draft/Cloud.md:137`; references: 1.
   - ID: `e3eb92d92b1287071916`.
 - **SANS Webcast: Beyond Scanning Delivering Impact Driven Vulnerability Assessments - Matthew Toussain**
   - URL: <https://www.youtube.com/watch?v=-ObkJ03UcN0>
@@ -799,7 +799,7 @@
 - **Perfect Storm Taking the Helm of Kubernetes - Ian Coldwater(Derbycon2018)**
   - URL: <https://www.youtube.com/watch?v=1k-GIDXgfLw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:383`; references: 1.
+  - Source: `Draft/Containers.md:464`; references: 1.
   - ID: `2604c0f359747fd2f487`.
 - **Social Engineering: The Gentleman Thief  - Apollo Robins - Defcon21**
   - URL: <https://www.youtube.com/watch?v=1kkOKvPrdZ4>
@@ -884,7 +884,7 @@
 - **Pivoting in Amazon Clouds - Andres Riancho - BHUSA14**
   - URL: <https://www.youtube.com/watch?v=2NF4LjjwoZw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Cloud.md:127`; references: 1.
+  - Source: `Draft/Cloud.md:162`; references: 1.
   - ID: `a1ac397e60f80a113134`.
 - **Reverse Engineering Windows Defenders Emulator - Alexei Bulazel(Defcon26)**
   - URL: <https://www.youtube.com/watch?v=2NawGCUOYT4>
@@ -1204,7 +1204,7 @@
 - **Securing The Docker Containers At CI/CD Pipeline Level - Alina Radu(BSidesBCN 2019)**
   - URL: <https://www.youtube.com/watch?v=4whoQoNpu9Y&list=PLDuy2rk8e-D-foVf0ylfnHhSo2elmxRqy&index=10&t=0s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:288`; references: 1.
+  - Source: `Draft/Containers.md:352`; references: 1.
   - ID: `786bb67ee1f3acb27659`.
 - **Creating a SCCM Lab: Part 1 - Setting up AD**
   - URL: <https://www.youtube.com/watch?v=4zwQsQEtrwY&feature=share>
@@ -1404,7 +1404,7 @@
 - **Vulnerability Exploitation In Docker Container Environments - Anthony Bettini**
   - URL: <https://www.youtube.com/watch?v=77-jaeUKH7c>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:233`; references: 1.
+  - Source: `Draft/Containers.md:297`; references: 1.
   - ID: `1e51ffe2fd4ab1f20554`.
 - **Identifying Novel Malware at Scale - Pedram Amini(SANS HackFest&Ranges Summit2020)**
   - URL: <https://www.youtube.com/watch?v=77o60EvxBPI&list=PLdVJWiil7RxoW8rBeKc0flY8bRuD3M68L&index=21&t=0s>
@@ -1494,7 +1494,7 @@
 - **David Mortman - Docker, Docker Give Me The News: I Got A Bad Case Of Securing You - David Mortman(Defcon23)**
   - URL: <https://www.youtube.com/watch?v=7ouzigqFUWU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:292`; references: 1.
+  - Source: `Draft/Containers.md:356`; references: 1.
   - ID: `26e8c2432b529674acc0`.
 - **Crippling HTTPs With Unholy PAC - Itzik Kotler & Amit Klein**
   - URL: <https://www.youtube.com/watch?v=7q40RLilXKw>
@@ -3254,7 +3254,7 @@
 - **Container Forensics: What to Do When Your Cluster is a Cluster - Maya Kaczorowski & Ann Wallace(CloudNativeConEU19) **
   - URL: <https://www.youtube.com/watch?v=MyXROAqO7YI&list=PLKDRii1YwXnLmd8ngltnf9Kzvbja3DJWx&index=7&t=0s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:89`; references: 2.
+  - Source: `Draft/Containers.md:115`; references: 2.
   - ID: `4205032f0c607c8641c6`.
 - **Windows Notification Facility: Peeling the Onion of the Most Undocumented Kernel Attack Surface Yet - Alex Ionescu, Gabrielle Viala**
   - URL: <https://www.youtube.com/watch?v=MybmgE95weo>
@@ -3314,7 +3314,7 @@
 - **Attacking and Defending Kubernetes \[SeaSec East\] - Jay Beale**
   - URL: <https://www.youtube.com/watch?v=N_g0QXhJMRk&feature=share>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:382`; references: 1.
+  - Source: `Draft/Containers.md:463`; references: 1.
   - ID: `05d308711431eae514df`.
 - **Becoming a Yogi on Mac ATT&CK with OceanLotus Postures - Cat Self & Adam Pennington(OBTSv4.0/2021)**
   - URL: <https://www.youtube.com/watch?v=N_xBbDDycHo>
@@ -4019,7 +4019,7 @@
 - **Life in Containers: The Big Picture - Pankaj Mouriya**
   - URL: <https://www.youtube.com/watch?v=UwBshgfnAGA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:154`; references: 1.
+  - Source: `Draft/Containers.md:199`; references: 1.
   - ID: `347f3062e9841560e97e`.
 - **Part 2**
   - URL: <https://www.youtube.com/watch?v=V-GYPp-j-lE>
@@ -4129,12 +4129,12 @@
 - **Crafty Requests: Deep Dive Into Kubernetes CVE-2018-1002105 - Ian Coldwater(CloudNativeConEU19)**
   - URL: <https://www.youtube.com/watch?v=VjSJqc13PNk&list=PLKDRii1YwXnLmd8ngltnf9Kzvbja3DJWx&index=6&t=0s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:393`; references: 1.
+  - Source: `Draft/Containers.md:474`; references: 1.
   - ID: `54ee48285353b07fd97c`.
 - **All Your Containers Are Belong to Us - James Condon(BSidesSF 2019)**
   - URL: <https://www.youtube.com/watch?v=VqThnb-GML4&list=PLbZzXF2qC3RvGRbNQwKcf2KVaTCjzOB8o&index=6>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:135`; references: 1.
+  - Source: `Draft/Containers.md:173`; references: 1.
   - ID: `a2553827f44f181d339f`.
 - **Exploiting Deserialization Vulnerabilities in Java - Matthis Kaiser(2015)**
   - URL: <https://www.youtube.com/watch?v=VviY3O-euVQ>
@@ -4304,7 +4304,7 @@
 - **Omega: flexible, scalable schedulers for large compute clusters - Malte Schwarzkopf, Andy Konwinski, Michael Abd-El-Malek, John Wilkes**
   - URL: <https://www.youtube.com/watch?v=XsXlm4wmB6o>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:429`; references: 1.
+  - Source: `Draft/Containers.md:516`; references: 1.
   - ID: `78650b332af506898f8e`.
 - **https://www.youtube.com/watch?v=Xvg3Ve8a_BM**
   - URL: <https://www.youtube.com/watch?v=Xvg3Ve8a_BM>
@@ -4369,7 +4369,7 @@
 - **Datacenter Management with Mesos - Benjamin Hindman - UC Berkeley AmpLab 2013**
   - URL: <https://www.youtube.com/watch?v=YB1VW0LKzJ4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:428`; references: 1.
+  - Source: `Draft/Containers.md:515`; references: 1.
   - ID: `9c4e0beb23c912b0268d`.
 - **How I met your girlfriend - Samy Kamkar - Defcon18**
   - URL: <https://www.youtube.com/watch?v=YDW7kobM6Ik>
@@ -5124,7 +5124,7 @@
 - **A Hacker's Guide to Kubernetes and the Cloud - Rory McCune(Cloud Native ConEU18)**
   - URL: <https://www.youtube.com/watch?v=dxKpCO2dAy8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:385`; references: 1.
+  - Source: `Draft/Containers.md:466`; references: 1.
   - ID: `3ebda6c88d1808389b91`.
 - **Distinguishing Lockpicks: Raking vs Lifting vs Jiggling and More - Deviant Ollam**
   - URL: <https://www.youtube.com/watch?v=e07VRxJ01Fs>
@@ -5219,7 +5219,7 @@
 - **How to Lose a Container in 10 Minutes - Sarah Young(BSidesSF 2019)**
   - URL: <https://www.youtube.com/watch?v=fSj6_WgDATE&list=PLbZzXF2qC3RvGRbNQwKcf2KVaTCjzOB8o&index=4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:289`; references: 1.
+  - Source: `Draft/Containers.md:353`; references: 1.
   - ID: `77c2443fa989c80b9775`.
 - **Threat Model-as-Code - Abhay Bhargav(OWASP AppSecUSA 2018)**
   - URL: <https://www.youtube.com/watch?v=fT2-JuvK428>
@@ -5229,7 +5229,7 @@
 - **DIY Pen-Testing for Your Kubernetes Cluster - Liz Rice**
   - URL: <https://www.youtube.com/watch?v=fVqCAUJiIn0&feature=youtu.be>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:344`; references: 2.
+  - Source: `Draft/Containers.md:425`; references: 2.
   - ID: `7fc4a97d57ceae96589e`.
 - **How to Hack Local Values in Browser-Based Games with Cheat Engine**
   - URL: <https://www.youtube.com/watch?v=f_axmYpG1Lk>
@@ -5259,7 +5259,7 @@
 - **I'm in your cloud: A year of hacking Azure AD - Dirk-Jan Mollema**
   - URL: <https://www.youtube.com/watch?v=fpUZJxFK72k>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Cloud.md:373`; references: 1.
+  - Source: `Draft/Cloud.md:427`; references: 1.
   - ID: `4e02c678334ed44a6b36`.
 - **Social Engineering: When the Phone is More Dangerous than Malware**
   - URL: <https://www.youtube.com/watch?v=fui9AVpp1wo>
@@ -5354,7 +5354,7 @@
 - **Abusing AWS Metadata Service - Casey Goodrich**
   - URL: <https://www.youtube.com/watch?v=gZsmpPLZQJM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Cloud.md:130`; references: 1.
+  - Source: `Draft/Cloud.md:165`; references: 1.
   - ID: `e500883e961e2d7259b7`.
 - **Obtaining and Detecting Domain Persistence - Grant Bugher(DEF CON 23)**
   - URL: <https://www.youtube.com/watch?v=gajEuuC2-Dk>
@@ -5474,7 +5474,7 @@
 - **Linux Containers: Future or Fantasy? - Aaron Grattafiori(Defcon23)**
   - URL: <https://www.youtube.com/watch?v=iN6QbszB1R8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:74`; references: 1.
+  - Source: `Draft/Containers.md:96`; references: 1.
   - ID: `47d69fdbdc23530c7370`.
 - **Introduction To GraphQL | Penetration Test - CyberSecurityTV(2020)**
   - URL: <https://www.youtube.com/watch?v=iSZ0RrCrpf4>
@@ -5919,12 +5919,12 @@
 - **Logging in the Cloud: From Zero to (Incident Response) Hero - Jonathon Poling(2020)**
   - URL: <https://www.youtube.com/watch?v=n7ec0REBFkk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Cloud.md:51`; references: 3.
+  - Source: `Draft/Cloud.md:91`; references: 3.
   - ID: `f5f9096bb6e59b423c93`.
 - **Ship of Fools: Shoring up Kubernetes Security - Ian Coldwater(devopsdays Minneapolis 2018)**
   - URL: <https://www.youtube.com/watch?v=n9ljS-TQRQE&list=PLKDRii1YwXnLmd8ngltnf9Kzvbja3DJWx&index=2&t=0s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:391`; references: 1.
+  - Source: `Draft/Containers.md:472`; references: 1.
   - ID: `10d3e4cbbfeb7c405011`.
 - **https://www.youtube.com/watch?v=nC1U1LJQL8o**
   - URL: <https://www.youtube.com/watch?v=nC1U1LJQL8o>
@@ -6124,7 +6124,7 @@
 - **Shipping in Pirate-Infested Waters: Practical Attack and Defense in Kubernetes - Greg Castle, CJ Cullen**
   - URL: <https://www.youtube.com/watch?v=ohTq0no0ZVU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:387`; references: 1.
+  - Source: `Draft/Containers.md:468`; references: 1.
   - ID: `bf24967f4df3c09f8ff7`.
 - **Hacking Measured Boot and UEFI - Defcon20**
   - URL: <https://www.youtube.com/watch?v=oiqcog1sk2E>
@@ -6434,7 +6434,7 @@
 - **Attacking & Auditing Docker Containers Using Open Source tools - Madhu Akula**
   - URL: <https://www.youtube.com/watch?v=ru7GicI5iyI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:236`; references: 1.
+  - Source: `Draft/Containers.md:300`; references: 1.
   - ID: `886867ab55f3714e92de`.
 - **Fractured Backbone: Breaking Modern OS Defenses with Firmware Attacks - Yuriy Bulygin, Mikhail Gorobets, Andrew Furtak, Alex Bazhaniuk(BHUSA2017**
   - URL: <https://www.youtube.com/watch?v=ryKy9LvmSIs>
@@ -6664,7 +6664,7 @@
 - **Security Best Practices the Well-Architected Way - Ben Potter(AWS re:Inforce 2019)**
   - URL: <https://www.youtube.com/watch?v=u6BCVkXkPnM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Cloud.md:106`; references: 1.
+  - Source: `Draft/Cloud.md:139`; references: 1.
   - ID: `3f96a8611adaa5301cdf`.
 - **Invoke-Obfuscation: PowerShell obFUsk8tion - Daniel Bohannon(Hactivity2016)**
   - URL: <https://www.youtube.com/watch?v=uE8IAxM_BhE>
@@ -6684,7 +6684,7 @@
 - **Docker: Security Myths, Security Legends - Rory McCune**
   - URL: <https://www.youtube.com/watch?v=uQigvjSXMLw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:287`; references: 1.
+  - Source: `Draft/Containers.md:351`; references: 1.
   - ID: `b6a9a5a98ac0b77132ff`.
 - **The Website is Down #1: Sales Guy vs. Web Dude**
   - URL: <https://www.youtube.com/watch?v=uRGljemfwUE>
@@ -6784,7 +6784,7 @@
 - **Hacking and Hardening Kubernetes Clusters by Example - Brad Geesaman(KubeCon 2017)**
   - URL: <https://www.youtube.com/watch?v=vTgQLzeBfRU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:380`; references: 1.
+  - Source: `Draft/Containers.md:461`; references: 1.
   - ID: `8d5b5d25c00ece7eb5e7`.
 - **How, Why, and Best Reasons to implement AppLocker - BHIS(2019)**
   - URL: <https://www.youtube.com/watch?v=vV7oh_B9f1U>
@@ -7209,7 +7209,7 @@
 - **The Container Operator's Manual - Alice Goldfuss(Velocity NY2018)**
   - URL: <https://www.youtube.com/watch?v=zGw_xKF47T0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Containers.md:64`; references: 1.
+  - Source: `Draft/Containers.md:84`; references: 1.
   - ID: `c3fad954f79f3d1db864`.
 - **Credential Stuffing - Identifying and Fixing your Exposure - Jeff McJunkin( Wild West Hackin' Fest2020)**
   - URL: <https://www.youtube.com/watch?v=zHvHsdC2Jqo>

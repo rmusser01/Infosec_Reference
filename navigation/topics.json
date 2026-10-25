@@ -705,7 +705,33 @@
       "category": "Reference topics",
       "aliases": [],
       "tocDepth": 3,
-      "subjects": []
+      "subjects": [
+        {
+          "label": "Cloud Provider Agnostic",
+          "fragment": "ref-cloud-1",
+          "aliases": []
+        },
+        {
+          "label": "AWS",
+          "fragment": "ref-cloud-13",
+          "aliases": []
+        },
+        {
+          "label": "Microsoft Azure",
+          "fragment": "ref-cloud-30",
+          "aliases": []
+        },
+        {
+          "label": "Google Cloud",
+          "fragment": "ref-cloud-35",
+          "aliases": []
+        },
+        {
+          "label": "AWS IAM",
+          "fragment": "ref-cloud-20",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Conferences.md",
@@ -721,7 +747,48 @@
       "category": "Reference topics",
       "aliases": [],
       "tocDepth": 3,
-      "subjects": []
+      "subjects": [
+        {
+          "label": "Containers(General)",
+          "fragment": "ref-containers-3",
+          "aliases": []
+        },
+        {
+          "label": "Docker",
+          "fragment": "ref-containers-16",
+          "aliases": []
+        },
+        {
+          "label": "Jails",
+          "fragment": "ref-containers-30",
+          "aliases": []
+        },
+        {
+          "label": "LXC",
+          "fragment": "ref-containers-32",
+          "aliases": []
+        },
+        {
+          "label": "Kubernetes",
+          "fragment": "ref-containers-33",
+          "aliases": []
+        },
+        {
+          "label": "Mesos",
+          "fragment": "ref-containers-37",
+          "aliases": []
+        },
+        {
+          "label": "RunC",
+          "fragment": "ref-containers-40",
+          "aliases": []
+        },
+        {
+          "label": "Solaris Zones",
+          "fragment": "ref-containers-43",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Courses_Training.md",
@@ -1292,6 +1359,8 @@
   "tocPages": [
     "Draft/Active_Directory.md",
     "Draft/DFIR.md",
-    "Draft/L-SM-TH.md"
+    "Draft/L-SM-TH.md",
+    "Draft/Cloud.md",
+    "Draft/Containers.md"
   ]
 }

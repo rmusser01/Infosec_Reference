@@ -119,7 +119,7 @@
 - **Exploiting capabilities: Parcel root power, the dark side of capabilities - Emeric Nasi**
   - URL: <http://blog.sevagas.com/IMG/pdf/exploiting_capabilities_the_dark_side.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Containers.md:87`; references: 1.
+  - Source: `Draft/Containers.md:111`; references: 1.
   - ID: `cfbec7acf1d95b67f445`.
 - **My VBA Bot: Writing Office Macro FUD encoder and other stuff - Emeric Nasi(2016)**
   - URL: <http://blog.sevagas.com/IMG/pdf/my_vba_bot.pdf>
@@ -619,7 +619,7 @@
 - **Peeking Behind the Curtains of Serverless Platforms - Liang Wang, Mengyuan Li, Yinqian Zhang, Thomas Ristenpart, Michael Swift**
   - URL: <http://pages.cs.wisc.edu/~liangw/pub/atc18-final298.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cloud.md:75`; references: 1.
+  - Source: `Draft/Cloud.md:123`; references: 1.
   - ID: `72f0f23dc640d7ef1653`.
 - **x86 Call/Return Protocol**
   - URL: <http://pages.cs.wisc.edu/~remzi/Classes/354/Fall2012/Handouts/Handout-CallReturn.pdf>
@@ -1734,7 +1734,7 @@
 - **Paper**
   - URL: <https://andresriancho.github.io/nimbostratus/pivoting-in-amazon-clouds.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cloud.md:129`; references: 1.
+  - Source: `Draft/Cloud.md:164`; references: 1.
   - ID: `72f5d27d324dfd554d48`.
 - **AppleScriptLanguageGuide - Apple**
   - URL: <https://applescriptlibrary.files.wordpress.com/2013/11/applescriptlanguageguide-2013.pdf>
@@ -1989,7 +1989,7 @@
 - **G-Jacking AppEngine-based applications - HITB2014**
   - URL: <https://conference.hitb.org/hitbsecconf2014ams/materials/D2T1-G-Jacking-AppEngine-based-Applications.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cloud.md:403`; references: 1.
+  - Source: `Draft/Cloud.md:451`; references: 1.
   - ID: `f4c6b0fc26dd8b27ddb2`.
 - **OPSEC In the Age of The Egotistical Giraffe**
   - URL: <https://conference.hitb.org/hitbsecconf2014kul/materials/D1T1%20-%20The%20Grugq%20-%20OPSEC%20in%20the%20Age%20of%20Egotistical%20Giraffe.pdf>
@@ -2099,7 +2099,7 @@
 - **CIS Amazon Web Services Foundations**
   - URL: <https://d0.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cloud.md:299`; references: 1.
+  - Source: `Draft/Cloud.md:360`; references: 1.
   - ID: `e8b0fdb4dc1bda8cecd9`.
 - **PCI Compliance in AWS - Jordan Wiseman, Andrew Plato**
   - URL: <https://d1.awsstatic.com/whitepapers/compliance/AWS_Anitian_Workbook_PCI_Cloud_Compliance.pdf>
@@ -2559,12 +2559,12 @@
 - **Attacking Kubernetes - A Guide for Administrators and Penetration Testers(Atredis Partners)**
   - URL: <https://github.com/kubernetes/community/blob/master/wg-security-audit/findings/AtredisPartners_Attacking_Kubernetes-v1.0.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Containers.md:341`; references: 1.
+  - Source: `Draft/Containers.md:422`; references: 1.
   - ID: `d4dd81ab3ef12f05b063`.
 - **Kubernetes Security Assessment by TrailofBits(2019)**
   - URL: <https://github.com/kubernetes/community/blob/master/wg-security-audit/findings/Kubernetes%20Final%20Report.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Containers.md:330`; references: 1.
+  - Source: `Draft/Containers.md:411`; references: 1.
   - ID: `6b3e83f28a90b2b315c6`.
 - **Get-GPTrashFire**
   - URL: <https://github.com/l0ss/Get-GPTrashfire/blob/master/Get-GPTrashFire.pdf>
@@ -2914,7 +2914,7 @@
 - **An Attacker Looks at Docker: Approaching Multi-Container Applications - Wesley McGrew**
   - URL: <https://i.blackhat.com/us-18/Thu-August-9/us-18-McGrew-An-Attacker-Looks-At-Docker-Approaching-Multi-Container-Applications-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Containers.md:286`; references: 1.
+  - Source: `Draft/Containers.md:350`; references: 1.
   - ID: `18202a44b1fe4230c68e`.
 - **Slides**
   - URL: <https://i.blackhat.com/us-18/Wed-August-8/us-18-Dion_Marcil-Edge-Side-Include-Injection-Abusing-Caching-Servers-into-SSRF-and-Transparent-Session-Hijacking.pdf>
@@ -3349,7 +3349,7 @@
 - **NIST Special Publication 800-190: Application Container Security Guide**
   - URL: <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Containers.md:114`; references: 1.
+  - Source: `Draft/Containers.md:152`; references: 1.
   - ID: `2966693bf00425c8b182`.
 - **NIST Special Publication 800-207 - Zero Trust Architecture - Scott Rose, Oliver Borchert, Stu Mitchell, Sean Connelly(2020)**
   - URL: <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf>
@@ -3524,7 +3524,7 @@
 - **https://people.eecs.berkeley.edu/~alig/papers/mesos.pdf**
   - URL: <https://people.eecs.berkeley.edu/~alig/papers/mesos.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Containers.md:414`; references: 1.
+  - Source: `Draft/Containers.md:497`; references: 1.
   - ID: `56d2aba090dff4ace6e6`.
 - **Back to the Future: Omniscient Debugging**
   - URL: <https://pleiad.cl/papers/2009/pothierTanter-software2009.pdf>
@@ -3534,7 +3534,7 @@
 - **Slides**
   - URL: <https://ponderthebits.com/wp-content/uploads/2020/02/Logging-in-the-Cloud-From-Zero-to-Incident-Response-Hero-Public.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cloud.md:52`; references: 3.
+  - Source: `Draft/Cloud.md:92`; references: 3.
   - ID: `1893448e24f4f9d58bd1`.
 - **Slides**
   - URL: <https://portswigger.net/kb/papers/huntingasynchronousvulnerabilities.pdf>
@@ -3844,7 +3844,7 @@
 - **Omega: flexible, scalable schedulers for large compute clusters - Malte Schwarzkop, Andy Konwinski, Michael Abd-El-Malek, John Wilkes**
   - URL: <https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/41684.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Containers.md:416`; references: 1.
+  - Source: `Draft/Containers.md:499`; references: 1.
   - ID: `a47909f3877ceff0b044`.
 - **Adapting Software Fault Isolation to Contemporary CPU Architectures**
   - URL: <https://static.googleusercontent.com/media/research.google.com/en/us/pubs/archive/35649.pdf>
@@ -4249,7 +4249,7 @@
 - **Vulnerability Exploitation in Docker Container Environments - Anthony Bettini(BH EU 2015)**
   - URL: <https://www.blackhat.com/docs/eu-15/materials/eu-15-Bettini-Vulnerability-Exploitation-In-Docker-Container-Environments-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Containers.md:235`; references: 1.
+  - Source: `Draft/Containers.md:299`; references: 1.
   - ID: `05df4c7226dfda99ea6f`.
 - **Hiding in Plain Sight: Advances in malware covert communication channels - BH2015 Pierre-Marc Bureau, Christian Dietrich**
   - URL: <https://www.blackhat.com/docs/eu-15/materials/eu-15-Bureau-Hiding-In-Plain-Sight-Advances-In-Malware-Covert-Communication-Channels-wp.pdf>
@@ -4404,7 +4404,7 @@
 - **Account Jumping Post Infection Perstistency & Lateral Movement In AWS - Dan Amiga, Dor Knafo(BH-US16)**
   - URL: <https://www.blackhat.com/docs/us-16/materials/us-16-Amiga-Account-Jumping-Post-Infection-Persistency-And-Lateral-Movement-In-AWS-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Cloud.md:132`; references: 1.
+  - Source: `Draft/Cloud.md:167`; references: 1.
   - ID: `5094b247e895d119331d`.
 - **Slides**
   - URL: <https://www.blackhat.com/docs/us-16/materials/us-16-Beery-The-Remote-Malicious-Butler-Did-It.pdf>
@@ -4479,7 +4479,7 @@
 - **Well, That Escalated Quickly! How Abusing Docker API Led to Remote Code Execution, Same Origin Bypass and Persistence in The Hypervisor via Shadow Containers - Michael Cherny, Sagi Dulce(BH US 17)**
   - URL: <https://www.blackhat.com/docs/us-17/thursday/us-17-Cherny-Well-That-Escalated-Quickly-How-Abusing-The-Docker-API-Led-To-Remote-Code-Execution-Same-Origin-Bypass-And-Persistence_wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Containers.md:291`; references: 1.
+  - Source: `Draft/Containers.md:355`; references: 1.
   - ID: `b6f10f22961f5ef44a2a`.
 - **Slides**
   - URL: <https://www.blackhat.com/docs/us-17/thursday/us-17-Lackey-Practical%20Tips-for-Defending-Web-Applications-in-the-Age-of-DevOps.pdf>
@@ -5409,7 +5409,7 @@
 - **Understanding and Hardening Linux Containers - Aaron Grattafiori(2016)**
   - URL: <https://www.nccgroup.trust/globalassets/our-research/us/whitepapers/2016/april/ncc_group_understanding_hardening_linux_containers-1-1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Containers.md:132`; references: 1.
+  - Source: `Draft/Containers.md:170`; references: 1.
   - ID: `57899205b1a9251473a0`.
 - **Security Implications of DTD Attacks Against a Wide Range of XML Parsers**
   - URL: <https://www.nds.rub.de/media/nds/arbeiten/2015/11/04/spaeth-dtd_attacks.pdf>

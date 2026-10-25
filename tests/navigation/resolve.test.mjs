@@ -35,6 +35,14 @@ test("resolves encoded paths, same-repository GitHub URLs and exact-case fragmen
       "missing-file",
     );
     assert.equal(
+      resolveInternalLink(root, "README.md", "draft/A%20%26%20B.md").code,
+      "missing-file",
+    );
+    assert.equal(
+      resolveInternalLink(root, "README.md", "draft").code,
+      "missing-file",
+    );
+    assert.equal(
       resolveInternalLink(root, "README.md", "https://example.org/x").kind,
       "external",
     );

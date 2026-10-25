@@ -1,5 +1,11 @@
 import { resolve, relative, dirname, sep } from "node:path";
-import { existsSync, statSync, readFileSync, realpathSync } from "node:fs";
+import {
+  existsSync,
+  statSync,
+  readFileSync,
+  realpathSync,
+  readdirSync,
+} from "node:fs";
 import { parseDocument } from "./parse.mjs";
 const repo =
   /^https?:\/\/(?:www\.)?github\.com\/rmusser01\/Infosec_Reference\/(?:blob|tree)\/(?:master|main)\//i;
@@ -32,6 +38,11 @@ export function resolveInternalLink(
     const error = (code) => ({ kind: "error", code, path, fragment });
     if (path === ".." || path.startsWith("../")) return error("outside-root");
     if (!existsSync(full)) return error("missing-file");
+    let parent = resolve(root);
+    for (const part of path.split("/").filter(Boolean)) {
+      if (!readdirSync(parent).includes(part)) return error("missing-file");
+      parent = resolve(parent, part);
+    }
     if (
       !realpathSync(full).startsWith(realpathSync(root) + sep) &&
       realpathSync(full) !== realpathSync(root)

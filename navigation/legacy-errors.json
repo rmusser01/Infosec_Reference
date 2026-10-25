@@ -266,69 +266,6 @@
     "occurrences": 1
   },
   {
-    "path": "Draft/Cloud.md",
-    "code": "missing-fragment",
-    "target": "#101",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Cloud.md",
-    "code": "missing-fragment",
-    "target": "#atkws",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Containers.md",
-    "code": "missing-fragment",
-    "target": "#cps",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Containers.md",
-    "code": "missing-fragment",
-    "target": "#csec",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Containers.md",
-    "code": "missing-fragment",
-    "target": "#dps",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Containers.md",
-    "code": "missing-fragment",
-    "target": "#tools",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Containers.md",
-    "code": "missing-fragment",
-    "target": "#zones",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Containers.md",
-    "code": "duplicate-anchor",
-    "target": "containers",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
-    "path": "Draft/Containers.md",
-    "code": "duplicate-anchor",
-    "target": "c101",
-    "reason": "Pre-existing in source checkout; legacy page awaiting migration. See docs/navigation-audit.md.",
-    "occurrences": 1
-  },
-  {
     "path": "Draft/Courses_Training.md",
     "code": "missing-fragment",
     "target": "#repo",

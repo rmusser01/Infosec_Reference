@@ -11,6 +11,7 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 - Internal navigation checks with individual legacy exemptions and stale-exemption detection; read-only CI workflow.
 - Parser-generated processing lists and a separate progress ledger that survives regeneration.
 - Bounded external availability checks and report-only workflow; archive job planning with separate non-text queues and verified-prior-capture eligibility.
+- Bounded Browsertrix capture behind a public-address/MIME filtering proxy, article figure selection, WARC integrity/content verification, offline replay QA, append-only provenance, and verified immutable local copying. Local pilot evidence exists; permanent preservation remains unconfigured.
 
 ## Measured results
 
@@ -23,8 +24,8 @@ Automated tests exercise the actual checked-in Docsify compiler and application 
 ## Remaining work
 
 - Navigation rollout, shared heading rendering, and favicon repair are complete locally. Production deployment/cache behavior remains unverified.
-- Configure Browsertrix on the available Docker runtime and choose a durable archive destination; implement the enforced capture adapter, article-image filtering, WARC verification, offline replay, and storage/retrieval pilot. The archive policy file describes intent, not implemented enforcement.
-- Run external batches with evidence-aware capture/queue routing. No full external validation or web capture has run.
+- Choose durable archive and backup destinations, verify recovery/replay from them, and calibrate the bounded engine against more layouts/figures before scaling. Remote object-store uploading and full-crawl scheduling remain unimplemented. The policy now enforces the local pilot's supported bounds; it does not establish storage durability.
+- Run coordinated external/capture batches after durable storage is ready. Two existing public references have local capture/replay evidence; broad external validation and full collection preservation have not run. Strict content checks leave the Eli reference partial for manual review.
 - Separately scoped later processing: PDF extraction/OCR, video captions/transcription, other extractors, and extracted-content search indexing. These are not prerequisites for completing navigation.
 
 ## Engineering decisions
@@ -38,7 +39,7 @@ Automated tests exercise the actual checked-in Docsify compiler and application 
 - Index explicit routes for the full collection, accepting an initial corpus fetch for browser search.
 - Patch the existing search plugin narrowly, with runtime regressions; future upgrades must retain or replace those fixes.
 - Bound weekly external checks to a rotating sample, accurately labeled as a sample.
-- Deliver honest archive planning rather than claim an unimplemented or unverified capture engine.
+- Keep inventory, local capture, replay, verified copies, and durable preservation claims separate; retain partial/failure evidence rather than treating HTTP success as preservation.
 
 ## Review and verification
 
@@ -203,3 +204,13 @@ Starting checkpoint: `c175b64`; continued in the requested checkout on `codex/ge
 - Fresh independent review found no actionable introduced correctness/security regression. It independently verified zero internal errors, 17 focused tests, and actual compilation of all 101 Draft Markdown pages with no parser-valid internal fragment absent from rendered IDs/legacy names. Historical resource-preservation evidence was retained rather than repeated wholesale. Production routing/cache, live external availability, and archive integrity/replay/storage are outside this completed navigation verification; archive enforcement remains pending and no capture success is claimed.
 
 Final verification: Node.js 24.18.0, `npm test` 86/86 passed; `npm run nav:check` audited 102 pages / 29,164 links with zero errors, no stale output or diagnostics, and 15 orphan / 21 repeated-destination warnings. A repeated `npm run nav:generate` made no changes. All 53 main topics are reviewed, with 50 managed ToCs and three intentionally direct directory landings. Inventory counts remain 21,738 provisional URLs. No external availability batch, capture, remote push or publication ran. The next implementation phase is the enforced archive adapter and bounded replay/storage pilot; durable storage is required before the full capture run.
+
+## Bounded archive implementation and pilot — 2026-10-25
+
+Starting checkpoint: `804a0d9`; continued in the requested checkout. The capture phase now has a working pinned Browsertrix/proxy runtime, public-only network and response-body enforcement, article/figure scope, WARC/CDXJ/WACZ output, integrity/content checks, network-disabled QA, immutable copying, and append-only verification/provenance. See `docs/archiving.md` for commands and `docs/archive-execution.md` for the detailed record, decisions, review boundaries and remaining work.
+
+Final verification: **98/98 tests** pass; five Python policy cases and two actual warcio corruption/truncation tests pass. The actual eight-case Docker fixture pilot passes, covering static/lazy/JavaScript articles, figures versus excluded images/media, redirects, challenge pages, private destinations and MIME routing. Total fixture output was 543,222 bytes; all storage remains temporary. The private-redirect guard also passed with the final public-certificate-only browser mount. Temporary containers/networks were removed.
+
+Two existing public references were attempted: Dan Luu's article has verified capture/integrity/offline replay; Eli Bendersky's article has verified integrity/replay but remains partial under strict content comparison. Both are temporary local output. The fresh review's four Important issues received RED→GREEN fixes: false durable-copy status, HTTP-200 error walls, recheck promotion after filtering/budget failures, and non-text redirect bodies. No review minor remains deferred.
+
+The offline plan reuses capture response evidence and accounts for all 21,738 URLs: one complete local capture, one partial and 21,736 not attempted; **zero durably preserved**. It routes two observed HTML pages to web capture, 19,055 URLs to type confirmation, and retains the 1,200 PDF / 1,458 video / 23 other non-text queues. Navigation remains at zero internal errors. Durable destination/backup selection, recovery/replay from storage, wider content calibration, remote-upload support and full coordinated batches remain pending. No full crawl, media extraction, remote push or publication ran.

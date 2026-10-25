@@ -7,7 +7,12 @@ export function buildArchivePlan(
   { evidence = [], priorCaptures = [] } = {},
 ) {
   const observations = new Map(
-    evidence.map((e) => [e.originalUrl?.split("#")[0], e]),
+    [...priorCaptures.filter((c) => c.httpStatus), ...evidence]
+      .filter((e) => e.originalUrl)
+      .map((e) => [e.originalUrl.split("#")[0], e]),
+  );
+  const latestCaptures = new Map(
+    priorCaptures.map((c) => [c.originalUrl?.split("#")[0], c]),
   );
   const complete = new Set(
     priorCaptures
@@ -38,6 +43,15 @@ export function buildArchivePlan(
     };
     if (observed && observed.availabilityState !== "reachable")
       job.status = "needs-review";
+    const previous = latestCaptures.get(record.url);
+    if (previous)
+      job.captureSummary = {
+        captureId: previous.captureId,
+        captureState: previous.captureState,
+        integrityState: previous.integrityState,
+        replayState: previous.replayState,
+        storageState: previous.storageState,
+      };
     if (complete.has(record.url) && job.queue === "web_capture")
       job.status = "already-preserved";
     if (job.queue === "web_capture")
@@ -52,6 +66,11 @@ export function buildArchivePlan(
   });
   const counts = {};
   for (const job of jobs) counts[job.queue] = (counts[job.queue] ?? 0) + 1;
+  const captureStates = {};
+  for (const job of jobs) {
+    const state = job.captureSummary?.captureState ?? "not-yet-attempted";
+    captureStates[state] = (captureStates[state] ?? 0) + 1;
+  }
   return {
     version: 1,
     summary: {
@@ -59,6 +78,7 @@ export function buildArchivePlan(
       alreadyPreserved: jobs.filter((j) => j.status === "already-preserved")
         .length,
       queues: counts,
+      captureStates,
     },
     jobs,
   };

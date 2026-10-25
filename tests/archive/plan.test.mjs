@@ -96,3 +96,46 @@ test("uncertain/error/timeout evidence is reviewed without misrouting non-text r
     assert.equal(plan.jobs[0].status, "needs-review");
   }
 });
+
+test("capture response evidence routes the next plan without another availability fetch, while temporary copies remain unpreserved", () => {
+  const plan = buildArchivePlan(
+    [
+      row("https://e.org/article"),
+      row("https://e.org/blocked"),
+      row("https://e.org/new"),
+    ],
+    {
+      priorCaptures: [
+        {
+          captureId: "one",
+          originalUrl: "https://e.org/article",
+          httpStatus: 200,
+          contentType: "text/html",
+          availabilityState: "reachable",
+          captureState: "complete",
+          storageState: "copied",
+          replayState: "verified",
+          integrityState: "verified",
+        },
+        {
+          captureId: "two",
+          originalUrl: "https://e.org/blocked",
+          httpStatus: 403,
+          contentType: "text/html",
+          availabilityState: "uncertain",
+          captureState: "inaccessible",
+          storageState: "temporary",
+        },
+      ],
+    },
+  );
+  assert.equal(plan.jobs[0].queue, "web_capture");
+  assert.equal(plan.jobs[0].captureSummary.storageState, "copied");
+  assert.equal(plan.jobs[1].status, "needs-review");
+  assert.equal(plan.summary.alreadyPreserved, 0);
+  assert.deepEqual(plan.summary.captureStates, {
+    complete: 1,
+    inaccessible: 1,
+    "not-yet-attempted": 1,
+  });
+});

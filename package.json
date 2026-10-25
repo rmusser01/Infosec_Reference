@@ -12,7 +12,10 @@
     "nav:check": "node tools/navigation/cli.mjs check",
     "resources:generate": "node tools/navigation/resources.mjs",
     "external:check": "node tools/navigation/external-links.mjs",
-    "archive:plan": "node tools/archive/plan.mjs"
+    "archive:plan": "node tools/archive/plan.mjs",
+    "archive:pilot": "node tools/archive/capture.mjs",
+    "archive:verify": "node tools/archive/recheck.mjs",
+    "archive:test-runtime": "node tests/archive/runtime.mjs"
   },
   "dependencies": {
     "github-slugger": "2.0.0",

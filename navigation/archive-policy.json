@@ -5,11 +5,11 @@
   "nonTextHandling": "processing-queues",
   "publicNetworkOnly": true,
   "authenticatedCapture": false,
-  "browserWorkers": 2,
+  "browserWorkers": 1,
   "perHostConcurrency": 1,
   "pageBudgetSeconds": 120,
   "pilotStorageCeilingBytes": 1073741824,
   "durableDestination": null,
-  "captureRuntime": "browsertrix-not-configured",
+  "captureRuntime": "browsertrix-1.15.0-filtered-proxy",
   "publishCaptures": false
 }

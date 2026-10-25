@@ -1,26 +1,51 @@
 # Preservation and non-text processing
 
-Web articles belong in WARC, including article text and inline article figures. PDFs, videos, slides, audio, and other non-text resources go into separate processing queues for later acquisition/extraction. A saved video landing page is not an archived video. No media download, OCR, transcription, or search indexing has been performed by this change.
+Preserve web articles and article figures in WARC. Queue PDFs, videos, slides, audio and other non-text resources for later acquisition/extraction. Saving a video landing page does not preserve its media. No bulk media acquisition, OCR, transcription or extracted-content indexing has run.
 
-## Available now
+## Commands
 
-- `npm run resources:generate`: regenerate the resource inventory and separate non-text lists.
-- `npm run external:check -- --limit 100 --offset 0 --output external-report.json`: check a bounded batch of URLs and record response evidence. Default batch size is 100; explicit maximum is 1,000. Offset makes coverage explicit; one batch is not a full audit. External checks are independent of offline navigation CI.
-- `npm run archive:plan -- --evidence external-report.json --output archive-plan.json`: route resources to article capture, non-text processing, type confirmation, or review using the inventory and optional validation evidence. Omit `--evidence` for an offline plan. It plans jobs; it does not capture content.
+- `npm run resources:generate`: regenerate the shared inventory and separate non-text views.
+- `npm run external:check -- --limit 100 --offset 0 --output external-report.json`: bounded availability evidence; one batch is not a full audit.
+- `npm run archive:plan -- --evidence external-report.json --output archive-plan.json`: route inventory rows using optional response evidence. Planning does not capture or verify bytes.
+- `npm run archive:pilot -- --url https://danluu.com/sounds-easy/ --limit 1`: capture an existing inventory URL. Without `--url`, select rows using `--offset`; `--limit` defaults to three and permits 1–10 rows.
+- `npm run archive:verify -- archive-data/PILOT/ATTEMPT`: recheck existing objects and offline replay evidence, appending new metadata without refetching or replacing earlier records.
 
-External requests use pinned DNS resolution for each hop, reject non-public addresses and embedded credentials, revalidate redirects, and bound concurrency/time/retries. GET fallback reads headers only. A reachable URL is not proof that its article content is available; challenge/login/error pages require later content verification.
+## Capture runtime and bounds
 
-The archive planner only treats a prior snapshot as already preserved when its manifest explicitly records complete capture, verified integrity, verified durable storage, verified replay, and object checksums/lengths. Planning does not itself verify those bytes.
+Docker is required for capture, not navigation. The desktop continuation installed Browsertrix Crawler 1.15.0 and mitmproxy 12.3.0. `navigation/archive-runtime.json` pins the browser image digest; `tools/archive/Proxy.Dockerfile` pins the proxy base digest and warcio 1.8.1. Actual image IDs are recorded per attempt. Build the proxy/verifier image first:
 
-## Required before real WARC captures
+```sh
+docker build -f tools/archive/Proxy.Dockerfile -t infosec-archive-proxy:12.3.0-warcio1.8.1 tools/archive
+npm run archive:pilot -- --url https://danluu.com/sounds-easy/ --limit 1
+```
 
-At the 2026-10-25 desktop continuation, Docker client/server 29.8.1 are available, but the Browsertrix image is not installed and no durable archive destination is configured. The capture adapter, article-image request filtering, WARC record/digest checks, offline replay QA, and durable upload/retrieval pilot remain unimplemented and unverified. `navigation/archive-policy.json` records intended bounds; it is not an enforcement engine. No captures are claimed and `navigation/archive-captures.jsonl` is empty.
+Each attempt has a unique ignored `archive-data/` directory containing WARCs, CDXJ, WACZ, logs and small provenance. Metadata appends to `navigation/archive-captures.jsonl`; no capture is published. Isolated browser profiles are omitted from retrieved output. The temporary proxy CA is trusted only inside capture containers, never installed on the host. Keep the ignored state directory private: it contains that CA's private key.
 
-The navigation tooling does not need Docker or Browsertrix. The selected Browsertrix Crawler runs in Docker ([official user guide](https://crawler.docs.browsertrix.com/user-guide/)); another engine would need equivalent capture, filtering, and replay verification. A bounded local pilot can use local output before durable storage is chosen. Implement those pieces against a pinned maintained capture engine before running a crawl. Network restrictions must cover browser subresources and redirects, not just seed URLs. Determine article images from article/main content and rendered references; classify uncertain pages for review rather than capturing every image on the host. Keep screenshots, advertising/tracking images, standalone media, and unrelated galleries outside article-image scope unless separately requested.
+Crawl containers use an internal Docker network without published ports. The sole egress proxy rejects non-public/translation addresses and pins checked DNS answers while retaining upstream TLS verification. These checks cover redirects and dependencies. Only bounded unauthenticated GET/HEAD requests are admitted. MIME checks, including redirect bodies, block non-text payloads before the recorder receives them. Blocked resources retain queue/provenance evidence.
 
-Store immutable `.warc.gz` objects and CDXJ indexes outside ordinary Git history. WACZ replay packages may accompany WARCs. Keep provenance, hashes, storage references, statuses, and small metadata in the repository. Do not use expiring CI artifacts as the only archive copy; do not publish to the Internet Archive automatically.
+Discovery blocks image bodies and identifies article/main text, selected image URLs, SVG figures, figure backgrounds and media embeds. Capture admits those article images, including native lazy images, while rejecting unrelated images, frames and media. Scripts/styles/fonts/data requests are conservatively limited to the article origin; known tracking assets are blocked. Unknown third-party rendering dependencies and ambiguous layouts need review. These are DOM/signature heuristics, not a general semantic classifier.
 
-Before a full run, validate a bounded pilot: static and JavaScript articles, article images versus unrelated images, redirects, non-text queue routing, and failures. Verify WARC records/digests and offline replay, record actual stored bytes, and test retrieval from durable storage. Keep capture, availability, replay, and storage states separate; preserve earlier snapshots.
+The enforced pilot uses one sequential browser navigation, one navigation per host, at most 120 seconds per crawl/QA phase, and a 1-GiB total batch ceiling shared by discovery/capture/replay. Output uses size-limited tmpfs and explicit streaming retrieval because Docker copy omits tmpfs mounts. Response size, network bytes, request count and proxy metadata are separately bounded. Image installation bytes are outside this capture budget. The CLI is a bounded pilot, not a full-crawl launcher.
+
+## Verification and storage
+
+warcio verifies readable WARC records, recorded digests and payload lengths; gzip trailers and HTTP Content-Length are checked too. Whole objects have SHA-256 checksums. Content verification requires successful HTML, matching archived article text and every selected figure. Browsertrix QA runs with Docker networking disabled, requiring exact text replay plus successful article/figure responses. Intentionally excluded trackers may fail offline; those failures remain visible. This does not test visual fidelity. Filtering/budget failures cannot be cleared merely by rechecking.
+
+Keep availability, capture, integrity/content, replay and storage states independent. A known error/login/rate-limit page is not a complete article. Failed/partial attempts remain visible; retries create new attempts. The initial-capture CLI only skips complete, verified durable captures after rehashing their objects. Preserve original references, fragments and query distinctions. Full inventory accounting is not successful preservation.
+
+No durable destination is configured. `--primary PATH --backup PATH` verifies exclusive immutable copies and retrieval checksums, producing `copyState: verified` and `storageState: copied`; this does not qualify for preservation skips. Relative object paths preserve the CDXJ/archive layout. Durable eligibility additionally requires operator-configured `durableDestination` with `primary`, `backup` and `confirmedDurable: true`; this filesystem adapter requires distinct mounted filesystems. It verifies retrieved bytes, not physical backup independence or backup operations. Remote object-store uploads are not implemented. Never designate temporary test directories as durable.
+
+Before a full run, choose persistent destinations, verify recovery/replay from stored objects, and size storage with a representative sample. Maintain an independent second copy or recoverable backup. Expiring CI artifacts are insufficient. Current local pilots remain temporary evidence. See `docs/archive-execution.md` for results and unresolved review cases.
+
+## Tests and references
+
+`npm test` includes navigation/archive tests and requires Python 3 for the standard-library-only policy tests. It does not download images or crawl live sites. `npm run archive:test-runtime` separately exercises synthetic static/JavaScript articles, figures versus ads/media, redirects, access walls, private redirects, MIME routing and offline replay through the actual containers. Synthetic URLs are served locally before upstream resolution; private destinations receive no production-guard exception. Run real warcio corruption/truncation tests offline:
+
+```sh
+docker run --rm --network none --entrypoint python3 -v "$PWD/tools/archive:/tools:ro" -v "$PWD/tests/archive:/tests:ro" infosec-archive-proxy:12.3.0-warcio1.8.1 -B /tests/verify_test.py
+```
+
+Interfaces checked against official sources: [Browsertrix releases](https://github.com/webrecorder/browsertrix-crawler/releases/tag/v1.15.0), [proxy support](https://crawler.docs.browsertrix.com/user-guide/proxies/), [offline QA](https://crawler.docs.browsertrix.com/user-guide/qa/), [mitmproxy hooks](https://docs.mitmproxy.org/stable/api/events.html), and [warcio](https://github.com/webrecorder/warcio/releases/tag/v1.8.1).
 
 ## Later search processing
 

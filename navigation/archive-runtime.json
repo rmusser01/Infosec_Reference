@@ -1,0 +1,4 @@
+{
+  "browserImage": "webrecorder/browsertrix-crawler:1.15.0@sha256:9a0df32c1a61eb12de5d0faa19a63fbef8924257a5e4e1496803594527a69a31",
+  "proxyImage": "infosec-archive-proxy:12.3.0-warcio1.8.1"
+}

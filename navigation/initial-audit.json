@@ -1,0 +1,3117 @@
+{
+  "summary": {
+    "pages": 98,
+    "links": 27092,
+    "errors": 334,
+    "counts": {
+      "orphan-page": 48,
+      "missing-file": 22,
+      "repeated-destination": 61,
+      "missing-fragment": 290,
+      "duplicate-anchor": 22
+    }
+  },
+  "findings": [
+    {
+      "code": "orphan-page",
+      "path": "Draft/_sidebar.md",
+      "line": 1,
+      "target": "Draft/_sidebar.md",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/_sidebar.md",
+      "line": 28,
+      "target": "./Stuff.md",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/_sidebar.md",
+      "line": 32,
+      "target": "./L-SM-TH.md",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 22,
+      "target": "#faxprinter",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 27,
+      "target": "#ipv6",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 44,
+      "target": "#vsc",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 45,
+      "target": "#wsus",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 46,
+      "target": "#msexchange",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Active_Directory.md",
+      "line": 51,
+      "target": "#adattack",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 67,
+      "target": "#freeipa",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 76,
+      "target": "#mcache",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 78,
+      "target": "#ntlmdowngrade",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 79,
+      "target": "#ntlmleak",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 82,
+      "target": "#pth",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 92,
+      "target": "#macs",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 95,
+      "target": "#rdp",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 97,
+      "target": "#sharepoint",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 99,
+      "target": "#sqlservera",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 103,
+      "target": "#asreproasting",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 105,
+      "target": "#kerbdelegate",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 108,
+      "target": "#kerberoasting",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 115,
+      "target": "#advulns",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 639,
+      "target": "#kerberoasting",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Active_Directory.md",
+      "line": 1579,
+      "target": "#silver-ticket",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Active_Directory.md",
+      "line": 1581,
+      "target": "#golden-ticket",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Active_Directory.md",
+      "line": 1739,
+      "target": "#silver-ticket",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Active_Directory.md",
+      "line": 1741,
+      "target": "#golden-ticket",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Active_Directory.md",
+      "line": 1743,
+      "target": "#diamond-ticket",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Active_Directory.md",
+      "line": 1745,
+      "target": "#saphire-ticket",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 1900,
+      "target": "#fax",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Active_Directory.md",
+      "line": 1905,
+      "target": "#ntlm-relay",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Active_Directory.md",
+      "line": 1938,
+      "target": "#skey",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/Active_Directory.md",
+      "line": 2051,
+      "target": "./Phishing.html",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/AnonOpSecPrivacy.md",
+      "line": 6,
+      "target": "#browser",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/AnonOpSecPrivacy.md",
+      "line": 10,
+      "target": "#writing",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/AnonOpSecPrivacy.md",
+      "line": 26,
+      "target": "#papers",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/AnonOpSecPrivacy.md",
+      "line": 31,
+      "target": "#mobile",
+      "severity": "warning"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/AnonOpSecPrivacy.md",
+      "line": 915,
+      "target": "mobile",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/AnonOpSecPrivacy.md",
+      "line": 1076,
+      "target": "anonymity",
+      "severity": "error"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Archiving.md",
+      "line": 1,
+      "target": "Draft/Archiving.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Collection.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/ATT&CK/Collection.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Command_and_Control.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/ATT&CK/Command_and_Control.md",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Command_and_Control.md",
+      "line": 106,
+      "target": "../../Exfiltration.md",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Command_and_Control.md",
+      "line": 118,
+      "target": "../../Exfiltration.md",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Command_and_Control.md",
+      "line": 185,
+      "target": "../../Exfiltration.md",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Command_and_Control.md",
+      "line": 248,
+      "target": "../../Exfiltration.md",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Command_and_Control.md",
+      "line": 269,
+      "target": "../../Exfiltration.md",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Command_and_Control.md",
+      "line": 280,
+      "target": "../../Exfiltration.md",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Command_and_Control.md",
+      "line": 304,
+      "target": "../../Exfiltration.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Credential_Access.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/ATT&CK/Credential_Access.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Defense_Evasion.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/ATT&CK/Defense_Evasion.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Discovery.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/ATT&CK/Discovery.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Execution.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/ATT&CK/Execution.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Exfiltration.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/ATT&CK/Exfiltration.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Initial_Access.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/ATT&CK/Initial_Access.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Lateral Movement.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/ATT&CK/Lateral Movement.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Persistence.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/ATT&CK/Persistence.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/Privilege_Escalation.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/ATT&CK/Privilege_Escalation.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/# Establish & Maintain Infrastructure.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/# Establish & Maintain Infrastructure.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Adversary_OPSEC.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Adversary_OPSEC.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Build_Capabilities.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Build_Capabilities.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Organizationa_ Information_Gathering.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Organizationa_ Information_Gathering.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Organizational_Weakness.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Organizational_Weakness.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/People_Information_Gathering.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/People_Information_Gathering.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/People_Weakness_Identification.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/People_Weakness_Identification.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Persona_Development.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Persona_Development.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Priority_Definition _lanning.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Priority_Definition _lanning.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Priority_Definition_Directive.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Priority_Definition_Directive.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Stage_Capabilities.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Stage_Capabilities.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Target_Selection.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Target_Selection.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Technical_Information_Gathering.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Technical_Information_Gathering.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Technical_Weakness_Identification.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Technical_Weakness_Identification.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Test_Capabilities.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/Pre-ATT&CK/Test_Capabilities.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/ATT&CK-Stuff/README.md",
+      "line": 1,
+      "target": "Draft/ATT&CK-Stuff/README.md",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/ATT&CK-Stuff/README.md",
+      "line": 30,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Collection.md",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/ATT&CK-Stuff/README.md",
+      "line": 31,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Command_and_Control.md",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/ATT&CK-Stuff/README.md",
+      "line": 32,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Command_and_Control.md",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/ATT&CK-Stuff/README.md",
+      "line": 33,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Defense_Evasion.md",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/ATT&CK-Stuff/README.md",
+      "line": 34,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Discovery.md",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/ATT&CK-Stuff/README.md",
+      "line": 35,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Execution.md",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/ATT&CK-Stuff/README.md",
+      "line": 36,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Exfiltration.md",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/ATT&CK-Stuff/README.md",
+      "line": 37,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Initial_Access.md",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/ATT&CK-Stuff/README.md",
+      "line": 38,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Lateral%20Movement.md",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/ATT&CK-Stuff/README.md",
+      "line": 39,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Persistence.md",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/ATT&CK-Stuff/README.md",
+      "line": 40,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Privilege_Escalation.md",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Basic.md",
+      "line": 17,
+      "target": "#background",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Basic.md",
+      "line": 24,
+      "target": "#bias",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Basic.md",
+      "line": 28,
+      "target": "#crittihnk",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Basic.md",
+      "line": 44,
+      "target": "#rex",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Basic.md",
+      "line": 46,
+      "target": "#rfp",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Basic.md",
+      "line": 49,
+      "target": "#testing",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Basic.md",
+      "line": 51,
+      "target": "#story",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/Basic.md",
+      "line": 517,
+      "target": "./Docs_and_Reports.html",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Basic.md",
+      "line": 922,
+      "target": "#./Threat_Modeling.md",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Basic.md",
+      "line": 922,
+      "target": "#./Threat_Modeling.html",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/bios_uefi.md",
+      "line": 4,
+      "target": "#stuff",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/bios_uefi.md",
+      "line": 7,
+      "target": "#psp",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Building_A_Lab.md",
+      "line": 10,
+      "target": "#general",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Building_A_Lab.md",
+      "line": 30,
+      "target": "#bltalks",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/CandE.md",
+      "line": 16,
+      "target": "#general",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/CandE.md",
+      "line": 25,
+      "target": "#key-exchange",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/CandE.md",
+      "line": 33,
+      "target": "#papers",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/CandE.md",
+      "line": 132,
+      "target": "general",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Career.md",
+      "line": 18,
+      "target": "#independent",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Career.md",
+      "line": 27,
+      "target": "#networking",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Career.md",
+      "line": 31,
+      "target": "#perf",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Career.md",
+      "line": 35,
+      "target": "#strategy",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Career.md",
+      "line": 39,
+      "target": "#industry",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/Career.md",
+      "line": 213,
+      "target": "allengeer.com/how-to-handle-brent-in-the-phoenix-project/",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Career.md",
+      "line": 454,
+      "target": "mgmt",
+      "severity": "error"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Cheat sheets reference pages Checklists -/list_of_emoji.md",
+      "line": 1,
+      "target": "Draft/Cheat sheets reference pages Checklists -/list_of_emoji.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Cheat sheets reference pages Checklists -/metasploit.md",
+      "line": 1,
+      "target": "Draft/Cheat sheets reference pages Checklists -/metasploit.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Cheat sheets reference pages Checklists -/Nmap Cheat Sheet.md",
+      "line": 1,
+      "target": "Draft/Cheat sheets reference pages Checklists -/Nmap Cheat Sheet.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Cheat sheets reference pages Checklists -/Radare2.md",
+      "line": 1,
+      "target": "Draft/Cheat sheets reference pages Checklists -/Radare2.md",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Cloud.md",
+      "line": 7,
+      "target": "#101",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Cloud.md",
+      "line": 8,
+      "target": "#atkws",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Containers.md",
+      "line": 6,
+      "target": "#c101",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Containers.md",
+      "line": 9,
+      "target": "#cgen",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Containers.md",
+      "line": 11,
+      "target": "#cps",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Containers.md",
+      "line": 12,
+      "target": "#csec",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Containers.md",
+      "line": 24,
+      "target": "#dps",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Containers.md",
+      "line": 27,
+      "target": "#tools",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Containers.md",
+      "line": 34,
+      "target": "#zones",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Containers.md",
+      "line": 38,
+      "target": "containers",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Containers.md",
+      "line": 53,
+      "target": "c101",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Courses_Training.md",
+      "line": 7,
+      "target": "#repo",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Courses_Training.md",
+      "line": 12,
+      "target": "#azure",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Courses_Training.md",
+      "line": 13,
+      "target": "#gcp",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Courses_Training.md",
+      "line": 17,
+      "target": "#ds",
+      "severity": "error"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Crypto_Encrypt.md",
+      "line": 1,
+      "target": "Draft/Crypto_Encrypt.md",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Crypto_Encrypt.md",
+      "line": 16,
+      "target": "#general",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Crypto_Encrypt.md",
+      "line": 25,
+      "target": "#key-exchange",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Crypto_Encrypt.md",
+      "line": 33,
+      "target": "#papers",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Crypto_Encrypt.md",
+      "line": 107,
+      "target": "general",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 5,
+      "target": "#basics",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 6,
+      "target": "#stuff",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 7,
+      "target": "#ngh",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 9,
+      "target": "#assetinventory",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 10,
+      "target": "#assettrack",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 11,
+      "target": "#secplan",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 12,
+      "target": "#secstrat",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 14,
+      "target": "#assetinventory",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 15,
+      "target": "#assettrack",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 18,
+      "target": "#secplan",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 19,
+      "target": "#secstrat",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 20,
+      "target": "#secplanimp",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 29,
+      "target": "#phishscale",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 38,
+      "target": "#antired",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 55,
+      "target": "#phishing",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 60,
+      "target": "#hardening",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 61,
+      "target": "#101hard",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 866,
+      "target": "#dfh",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 868,
+      "target": "#aws",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 869,
+      "target": "#antired",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 870,
+      "target": "#whitelist",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Defense.md",
+      "line": 871,
+      "target": "#asa",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 872,
+      "target": "#hardening",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 873,
+      "target": "#google",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 874,
+      "target": "#journalist",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Defense.md",
+      "line": 875,
+      "target": "#leaks",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Defense.md",
+      "line": 876,
+      "target": "#linux",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 877,
+      "target": "#malusb",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 879,
+      "target": "#network",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 880,
+      "target": "#osx",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 881,
+      "target": "#phishing",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Defense.md",
+      "line": 883,
+      "target": "#",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Defense.md",
+      "line": 884,
+      "target": "#windows",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Defense.md",
+      "line": 885,
+      "target": "#active",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Defense.md",
+      "line": 886,
+      "target": "#vulnmgmt",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/DFIR.md",
+      "line": 13,
+      "target": "#mobile-f",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/DFIR.md",
+      "line": 18,
+      "target": "#photo",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/DFIR.md",
+      "line": 92,
+      "target": "#o365",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Docs_and_Reports.md",
+      "line": 10,
+      "target": "#sdda",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Docs_and_Reports.md",
+      "line": 23,
+      "target": "#writingrfp",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Docs_and_Reports.md",
+      "line": 28,
+      "target": "#latex",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Docs_and_Reports.md",
+      "line": 29,
+      "target": "#markdown",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Docs_and_Reports.md",
+      "line": 30,
+      "target": "#mtools",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Docs_and_Reports.md",
+      "line": 35,
+      "target": "#d101",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Embedded.md",
+      "line": 9,
+      "target": "#esp2866",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Embedded.md",
+      "line": 29,
+      "target": "#specific",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Embedded.md",
+      "line": 55,
+      "target": "general",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exfiltration.md",
+      "line": 6,
+      "target": "#methods",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exfiltration.md",
+      "line": 7,
+      "target": "#writeups",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exfiltration.md",
+      "line": 8,
+      "target": "#tools",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exfiltration.md",
+      "line": 9,
+      "target": "#papers",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 7,
+      "target": "#expapers",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 9,
+      "target": "#ROP",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 14,
+      "target": "#fs",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 21,
+      "target": "#other",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 26,
+      "target": "#avbypass",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 31,
+      "target": "#obfuscation",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 32,
+      "target": "#arm",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 33,
+      "target": "#linux",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 34,
+      "target": "#windows",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 35,
+      "target": "#SEH",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 49,
+      "target": "#papers",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 50,
+      "target": "#miscex",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 54,
+      "target": "#attackav",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 55,
+      "target": "#finding",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 57,
+      "target": "#lab",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 397,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Draft/Exploit%20Development/Lab%20for%20Practicing%20Exploit%20Writing.txt",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 681,
+      "target": "winspec",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Exploit_Dev.md",
+      "line": 1071,
+      "target": "practice",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 6,
+      "target": "#101",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 7,
+      "target": "#books",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 8,
+      "target": "#bughunt",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 9,
+      "target": "#edu",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 10,
+      "target": "#history",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 11,
+      "target": "#general2",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 12,
+      "target": "#pres",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 13,
+      "target": "#train",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 15,
+      "target": "#dynamic",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 16,
+      "target": "#static",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 17,
+      "target": "#android",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 18,
+      "target": "#browser",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 19,
+      "target": "#c",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 20,
+      "target": "#cell",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 21,
+      "target": "#cisco",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 22,
+      "target": "#com",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 23,
+      "target": "#embedded",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 24,
+      "target": "#file",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 26,
+      "target": "#linux",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 27,
+      "target": "#medical",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 28,
+      "target": "#osx",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 29,
+      "target": "#pdf",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 30,
+      "target": "#rtp",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 31,
+      "target": "#source",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 32,
+      "target": "#usb",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 33,
+      "target": "#virtual",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 34,
+      "target": "#web",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 35,
+      "target": "#windows",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 36,
+      "target": "#nonspecific",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 37,
+      "target": "#afl",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 38,
+      "target": "#peach",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Fuzzing.md",
+      "line": 39,
+      "target": "#misc",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Games.md",
+      "line": 6,
+      "target": "#writeups",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Games.md",
+      "line": 8,
+      "target": "#re",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Games.md",
+      "line": 9,
+      "target": "#talks",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Games.md",
+      "line": 10,
+      "target": "#tools",
+      "severity": "error"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/help.md",
+      "line": 1,
+      "target": "Draft/help.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/index.md",
+      "line": 1,
+      "target": "Draft/index.md",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/L-SM-TH.md",
+      "line": 5,
+      "target": "#101",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/L-SM-TH.md",
+      "line": 39,
+      "target": "#osquery",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/L-SM-TH.md",
+      "line": 76,
+      "target": "#windows",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/L-SM-TH.md",
+      "line": 92,
+      "target": "#tools",
+      "severity": "warning"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/L-SM-TH.md",
+      "line": 2641,
+      "target": "tools",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Malware.md",
+      "line": 5,
+      "target": "#anaylsis",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Malware.md",
+      "line": 19,
+      "target": "#network",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Malware.md",
+      "line": 23,
+      "target": "#packer\"",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Network_Attacks.md",
+      "line": 13,
+      "target": "#doh",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Network_Attacks.md",
+      "line": 14,
+      "target": "#grpc",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Network_Attacks.md",
+      "line": 45,
+      "target": "#attacks",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Network_Attacks.md",
+      "line": 59,
+      "target": "#nat",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Network_Attacks.md",
+      "line": 62,
+      "target": "#pxe",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Network_Attacks.md",
+      "line": 64,
+      "target": "#pxe",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Network_Attacks.md",
+      "line": 70,
+      "target": "#misc",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Network_Attacks.md",
+      "line": 71,
+      "target": "#videos",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Network_Attacks.md",
+      "line": 72,
+      "target": "#other",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Network_Attacks.md",
+      "line": 73,
+      "target": "#misc2",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Network_Attacks.md",
+      "line": 358,
+      "target": "hnap",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Network_Attacks.md",
+      "line": 1720,
+      "target": "pivot",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Network_Attacks.md",
+      "line": 1725,
+      "target": "vendor",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Osint.md",
+      "line": 6,
+      "target": "#writeups",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Osint.md",
+      "line": 7,
+      "target": "#talks",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Osint.md",
+      "line": 17,
+      "target": "#reference",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Osint.md",
+      "line": 18,
+      "target": "#misc",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Passwords.md",
+      "line": 15,
+      "target": "#captcha",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Phishing.md",
+      "line": 24,
+      "target": "#mhta",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Phishing.md",
+      "line": 51,
+      "target": "#pdf",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Phishing.md",
+      "line": 54,
+      "target": "#unc",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Phishing.md",
+      "line": 58,
+      "target": "#ms",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Phishing.md",
+      "line": 74,
+      "target": "#excel",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Phishing.md",
+      "line": 82,
+      "target": "#ppm",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Phishing.md",
+      "line": 86,
+      "target": "#mwf",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Phishing.md",
+      "line": 88,
+      "target": "#settingup",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Phishing.md",
+      "line": 89,
+      "target": "#localphish",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Physical_Security.md",
+      "line": 5,
+      "target": "#articles",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Physical_Security.md",
+      "line": 6,
+      "target": "#videos",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Physical_Security.md",
+      "line": 7,
+      "target": "#tools",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Physical_Security.md",
+      "line": 8,
+      "target": "#papers",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Physical_Security.md",
+      "line": 9,
+      "target": "#tamper",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Physical_Security.md",
+      "line": 11,
+      "target": "#guides",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Physical_Security.md",
+      "line": 12,
+      "target": "#talks",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Physical_Security.md",
+      "line": 13,
+      "target": "#books",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Physical_Security.md",
+      "line": 14,
+      "target": "#sites",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Physical_Security.md",
+      "line": 51,
+      "target": "lockpicking",
+      "severity": "error"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Policy_Compliance.md",
+      "line": 1,
+      "target": "Draft/Policy_Compliance.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Port_List.md",
+      "line": 1,
+      "target": "Draft/Port_List.md",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivescPostEx.md",
+      "line": 14,
+      "target": "#postex",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivescPostEx.md",
+      "line": 15,
+      "target": "#Tactics",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivescPostEx.md",
+      "line": 22,
+      "target": "#creds",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivescPostEx.md",
+      "line": 23,
+      "target": "#collect",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/PrivescPostEx.md",
+      "line": 56,
+      "target": "#pivot",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivescPostExLin.md",
+      "line": 5,
+      "target": "#lin101",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivescPostExLin.md",
+      "line": 6,
+      "target": "#lcit",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivescPostExLin.md",
+      "line": 7,
+      "target": "#lolbins-lin",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivescPostExLin.md",
+      "line": 16,
+      "target": "#linlat",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivescPostExLin.md",
+      "line": 18,
+      "target": "#lindefev",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivescPostExLin.md",
+      "line": 20,
+      "target": "#lintech",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivescPostExmac.md",
+      "line": 16,
+      "target": "#macdefev",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivescPostExmac.md",
+      "line": 23,
+      "target": "#mactech",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 6,
+      "target": "#1winpost",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 81,
+      "target": "#1stparty",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 96,
+      "target": "#pads",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 128,
+      "target": "#pss",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 164,
+      "target": "#pewriteups",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 170,
+      "target": "#pemvw",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 184,
+      "target": "#eventlogevade",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 268,
+      "target": "#latwsh",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 272,
+      "target": "#cabw",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 277,
+      "target": "#cou",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 289,
+      "target": "#codesign",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 295,
+      "target": "#eventlog",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 298,
+      "target": "#winfiber",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 300,
+      "target": "#winhook",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 310,
+      "target": "#winprocesses",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 311,
+      "target": "#rpc",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 315,
+      "target": "#wmi",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 317,
+      "target": "#winprivs",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 533,
+      "target": "#dcom",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 550,
+      "target": "#dll",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 552,
+      "target": "#dllinject",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 1320,
+      "target": "pads",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 1619,
+      "target": "pss",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 1793,
+      "target": "微软SMBv3客户端/服务端远程代码执行漏洞（CVE-2020-0796）技术分析https://blogs.360.cn/post/CVE-2020-0796.html",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 2828,
+      "target": "#dllstuff",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 3347,
+      "target": "#enapi",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 4747,
+      "target": "#dllstuff",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 6422,
+      "target": "Invoke-ReflectivePEInjection.ps1",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/PrivEscPostExWin.md",
+      "line": 7084,
+      "target": "./L-SM-TH.md",
+      "severity": "warning"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Programming_Language_Security.md",
+      "line": 926,
+      "target": "c",
+      "severity": "error"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Rants&Writeups/Bitcoin_Hack.md",
+      "line": 1,
+      "target": "Draft/Rants&Writeups/Bitcoin_Hack.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Rants&Writeups/Hacking Team Writeup.md",
+      "line": 1,
+      "target": "Draft/Rants&Writeups/Hacking Team Writeup.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Rants&Writeups/Opsec_rant-alpraking.md",
+      "line": 1,
+      "target": "Draft/Rants&Writeups/Opsec_rant-alpraking.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Rants&Writeups/Opsec_rant2-nachash.md",
+      "line": 1,
+      "target": "Draft/Rants&Writeups/Opsec_rant2-nachash.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Rants&Writeups/Writeups/Empire_and_Metasploit_101.md",
+      "line": 1,
+      "target": "Draft/Rants&Writeups/Writeups/Empire_and_Metasploit_101.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Rants&Writeups/Writeups/Lab_for_exploit_dev-basic.md",
+      "line": 1,
+      "target": "Draft/Rants&Writeups/Writeups/Lab_for_exploit_dev-basic.md",
+      "severity": "warning"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Rants&Writeups/Writeups/Maps-Models-Martial_Arts.md",
+      "line": 1,
+      "target": "Draft/Rants&Writeups/Writeups/Maps-Models-Martial_Arts.md",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RE.md",
+      "line": 7,
+      "target": "#ct",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RE.md",
+      "line": 9,
+      "target": "#lt",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RE.md",
+      "line": 10,
+      "target": "#wt",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RE.md",
+      "line": 12,
+      "target": "#ar",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RE.md",
+      "line": 13,
+      "target": "#guides",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RE.md",
+      "line": 15,
+      "target": "#pa",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RE.md",
+      "line": 17,
+      "target": "#talks",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RE.md",
+      "line": 18,
+      "target": "#papers",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RE.md",
+      "line": 19,
+      "target": "#wikis",
+      "severity": "error"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/README.md",
+      "line": 1,
+      "target": "Draft/README.md",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Rootkits.md",
+      "line": 5,
+      "target": "#101",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Rootkits.md",
+      "line": 11,
+      "target": "#uefi",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Rootkits.md",
+      "line": 14,
+      "target": "#educational",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 13,
+      "target": "#rother",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 30,
+      "target": "#culture",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 31,
+      "target": "#penworkflows",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 32,
+      "target": "#pentypes",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 36,
+      "target": "#faxesprint",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 55,
+      "target": "#methods",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 68,
+      "target": "#c2cc",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 82,
+      "target": "#csdoc",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/RT.md",
+      "line": 88,
+      "target": "#emods",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 107,
+      "target": "#anti-packer",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 110,
+      "target": "#byoc",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 118,
+      "target": "#protocols",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 119,
+      "target": "#dns1",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 120,
+      "target": "#doh1",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/RT.md",
+      "line": 121,
+      "target": "http1",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/RT.md",
+      "line": 122,
+      "target": "http2",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 123,
+      "target": "#http3",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 124,
+      "target": "#quic",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 126,
+      "target": "#obfuscation1",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/RT.md",
+      "line": 129,
+      "target": "#metapoly",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/RT.md",
+      "line": 130,
+      "target": "#packers",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 139,
+      "target": "#csharpother",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 145,
+      "target": "#nim",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 154,
+      "target": "#pimplant",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/RT.md",
+      "line": 155,
+      "target": "#hw",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/RT.md",
+      "line": 157,
+      "target": "#implants",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/RT.md",
+      "line": 757,
+      "target": "#implantdev",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/RT.md",
+      "line": 3927,
+      "target": "keyserver",
+      "severity": "error"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/SCA.md",
+      "line": 1,
+      "target": "Draft/SCA.md",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/SCADA.md",
+      "line": 8,
+      "target": "#articles",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/SCADA.md",
+      "line": 9,
+      "target": "#talks",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/SCADA.md",
+      "line": 11,
+      "target": "#sim",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/SCADA.md",
+      "line": 12,
+      "target": "#test",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/SCADA.md",
+      "line": 13,
+      "target": "#honey",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/sysinternals.md",
+      "line": 22,
+      "target": "#winternals",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/sysinternals.md",
+      "line": 36,
+      "target": "#wbits",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/sysinternals.md",
+      "line": 47,
+      "target": "#drivers",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/sysinternals.md",
+      "line": 57,
+      "target": "#whandles",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/sysinternals.md",
+      "line": 70,
+      "target": "#wlnk",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/sysinternals.md",
+      "line": 90,
+      "target": "#pfibers",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/sysinternals.md",
+      "line": 91,
+      "target": "#phtable",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/sysinternals.md",
+      "line": 118,
+      "target": "#linuxref",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/sysinternals.md",
+      "line": 119,
+      "target": "#miesc",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/sysinternals.md",
+      "line": 121,
+      "target": "#kerberos",
+      "severity": "error"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/sysinternals.md",
+      "line": 479,
+      "target": "wcreds",
+      "severity": "error"
+    },
+    {
+      "code": "orphan-page",
+      "path": "Draft/Unsorted-rt.md",
+      "line": 1,
+      "target": "Draft/Unsorted-rt.md",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/UX.md",
+      "line": 7,
+      "target": "#general",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/UX.md",
+      "line": 8,
+      "target": "#books",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/UX.md",
+      "line": 9,
+      "target": "#talks",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/UX.md",
+      "line": 10,
+      "target": "#web",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 14,
+      "target": "#101",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 16,
+      "target": "#webbrowser",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Web.md",
+      "line": 29,
+      "target": "#cookies",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 37,
+      "target": "#ghosts",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 41,
+      "target": "#magick",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 47,
+      "target": "#.netframeworks",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 57,
+      "target": "#protobuf",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Web.md",
+      "line": 63,
+      "target": "#saml",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Web.md",
+      "line": 68,
+      "target": "#ssltls",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 77,
+      "target": "#webhook",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 102,
+      "target": "#ttue",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 106,
+      "target": "#webattacks",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 109,
+      "target": "#backimage",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 110,
+      "target": "#backpdf",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 113,
+      "target": "#cachedecept",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 115,
+      "target": "#csv",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 116,
+      "target": "#clickjack",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 130,
+      "target": "#webframeworks",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 138,
+      "target": "#cmdinjection",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 141,
+      "target": "#logic",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 151,
+      "target": "#simg",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 152,
+      "target": "#sql",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Web.md",
+      "line": 161,
+      "target": "#cachepoison",
+      "severity": "warning"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 166,
+      "target": "#ttw",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 167,
+      "target": "#wordpay",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Web.md",
+      "line": 170,
+      "target": "#avspec",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Web.md",
+      "line": 308,
+      "target": "#graphql",
+      "severity": "warning"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Web.md",
+      "line": 1434,
+      "target": "#ssti",
+      "severity": "warning"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Web.md",
+      "line": 1786,
+      "target": "robots",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Web.md",
+      "line": 2191,
+      "target": "#burpstuff",
+      "severity": "warning"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Web.md",
+      "line": 3582,
+      "target": "log4j",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "Draft/Web.md",
+      "line": 3957,
+      "target": "#php",
+      "severity": "warning"
+    },
+    {
+      "code": "duplicate-anchor",
+      "path": "Draft/Web.md",
+      "line": 4248,
+      "target": "typosquatting",
+      "severity": "error"
+    },
+    {
+      "code": "missing-file",
+      "path": "Draft/Web.md",
+      "line": 4563,
+      "target": "www.vsecurity.com/download/papers/XMLDTDEntityAttacks.pdf",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Wireless.md",
+      "line": 7,
+      "target": "#generalswt",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Wireless.md",
+      "line": 8,
+      "target": "#tut",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Wireless.md",
+      "line": 9,
+      "target": "#non-tut",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Wireless.md",
+      "line": 20,
+      "target": "#gbs",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Wireless.md",
+      "line": 21,
+      "target": "#talks",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Wireless.md",
+      "line": 22,
+      "target": "#papers",
+      "severity": "error"
+    },
+    {
+      "code": "missing-fragment",
+      "path": "Draft/Wireless.md",
+      "line": 23,
+      "target": "#misc",
+      "severity": "error"
+    },
+    {
+      "code": "repeated-destination",
+      "path": "README.md",
+      "line": 69,
+      "target": "https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/L-SM-TH.md",
+      "severity": "warning"
+    }
+  ]
+}

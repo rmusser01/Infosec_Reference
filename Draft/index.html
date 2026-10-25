@@ -14,92 +14,32 @@
   <link rel="icon" href="./img/favicon.png" type="image/png" />
 </head>
 <body>
-
-<!--
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      //...
-    }
-  </script>
--->
-
-
-<!-- Below adds Link to github repo in upper right hand corner -->
   <div id="app">Loading...</div>
   <script>
     window.$docsify = {
-     name: 'Infosec_Reference',
-     repo: 'rmusser01/Infosec_Reference',
-     homepage:
-    'README.md',
-     maxLevel: 3,
-     subMaxLevel: 2,
-     coverpage: false,
-     loadSidebar: true,
-    }
+      name: 'Infosec_Reference',
+      repo: 'rmusser01/Infosec_Reference',
+      homepage: 'README.md',
+      maxLevel: 3,
+      subMaxLevel: 3,
+      coverpage: false,
+      loadSidebar: true,
+      relativePath: true,
+      alias: { '/.*/_sidebar.md': '/_sidebar.md' },
+      search: {
+        paths: 'auto',
+        depth: 4,
+        maxAge: 86400000,
+        placeholder: 'Search the reference',
+        noData: 'No results',
+        hideOtherSidebarContent: true,
+        namespace: 'Infosec_Reference'
+      }
+    };
   </script>
-<!-- Above adds Link to github repo in upper right hand corner -->
-
-
-
-<!-- Below adds search functionality to page -->
-<script>
-  window.$docsify = {
-    search: 'auto', // default
-
-    search : [
-      '/',            // => /README.md
-    ],
-
-    // complete configuration parameters
-    search: {
-      maxAge: 86400000, // Expiration time, the default one day
-      paths: auto, // or 'auto'
-      placeholder: 'Type to search',
-
-      // Localization
-      placeholder: {
-        '/': 'Type to search'
-      },
-
-      noData: 'No Results!',
-
-      // Localization
-      noData: {
-        '/': 'No Results'
-      },
-
-      // Headline depth, 1 - 6
-      depth: 2,
-
-      hideOtherSidebarContent: true, // whether or not to hide other sidebar content
-
-      // To avoid search index collision
-      // between multiple websites under the same domain
-      namespace: 'Infosec_Reference',
-
-      // Use different indexes for path prefixes (namespaces).
-      // NOTE: Only works in 'auto' mode.
-      //
-      // When initialiazing an index, we look for the first path from the sidebar.
-      // If it matches the prefix from the list, we switch to the corresponding index.
-      pathNamespaces: ['/zh-cn', '/ru-ru', '/ru-ru/v1'],
-
-      // You can provide a regexp to match prefixes. In this case,
-      // the matching substring will be used to identify the index
-      pathNamespaces: /^(\/(zh-cn|ru-ru))?(\/(v1|v2))?/
-    }
-  }
-</script>
-<!-- Above does: -->
-
-
+  <script src="./search-paths.js"></script>
   <script src="./css/docsify4.js"></script>
   <script src="./css/emoji.min.js"></script>
   <script src="./css/search.min.js"></script>
-
-
-
 </body>
 </html>

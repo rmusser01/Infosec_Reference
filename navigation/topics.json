@@ -1,0 +1,1297 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "path": "Draft/ATT&CK-Stuff/Pre-ATT&CK/README.md",
+      "title": "Pre-ATT&CK",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/ATT&CK-Stuff/ATT&CK/README.md",
+      "title": "ATT&CK Stuff",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Active_Directory.md",
+      "title": "Attacking & Securing Active Directory",
+      "category": "Reference topics",
+      "aliases": [
+        "AD"
+      ],
+      "tocDepth": 3,
+      "subjects": [
+        {
+          "label": "Attacking101",
+          "fragment": "ref-ad-2",
+          "aliases": []
+        },
+        {
+          "label": "Active Directory Attributes & Technologies",
+          "fragment": "ref-ad-3",
+          "aliases": []
+        },
+        {
+          "label": "AD Certificate Services",
+          "fragment": "ref-ad-4",
+          "aliases": []
+        },
+        {
+          "label": "ADFS",
+          "fragment": "ref-ad-5",
+          "aliases": []
+        },
+        {
+          "label": "AdminSDHolder",
+          "fragment": "ref-ad-6",
+          "aliases": []
+        },
+        {
+          "label": "ATA/ATP",
+          "fragment": "ref-ad-7",
+          "aliases": []
+        },
+        {
+          "label": "AutoDiscover",
+          "fragment": "ref-ad-8",
+          "aliases": []
+        },
+        {
+          "label": "(Discretionary)Access Control Lists",
+          "fragment": "ref-ad-9",
+          "aliases": []
+        },
+        {
+          "label": "DNS",
+          "fragment": "ref-ad-10",
+          "aliases": []
+        },
+        {
+          "label": "Domain Trusts",
+          "fragment": "ref-ad-11",
+          "aliases": []
+        },
+        {
+          "label": "Forests",
+          "fragment": "ref-ad-12",
+          "aliases": []
+        },
+        {
+          "label": "Groups",
+          "fragment": "ref-ad-13",
+          "aliases": []
+        },
+        {
+          "label": "Group Managed Service Accounts(GMSA)",
+          "fragment": "ref-ad-14",
+          "aliases": []
+        },
+        {
+          "label": "Group Policy",
+          "fragment": "ref-ad-15",
+          "aliases": []
+        },
+        {
+          "label": "Kerberos",
+          "fragment": "ref-ad-16",
+          "aliases": []
+        },
+        {
+          "label": "LDAP",
+          "fragment": "ref-ad-17",
+          "aliases": []
+        },
+        {
+          "label": "LDAP Recon",
+          "fragment": "ref-ad-19",
+          "aliases": []
+        },
+        {
+          "label": "LDAP Relaying",
+          "fragment": "ref-ad-20",
+          "aliases": []
+        },
+        {
+          "label": "Request Signing",
+          "fragment": "ref-ad-21",
+          "aliases": []
+        },
+        {
+          "label": "KMS",
+          "fragment": "ref-ad-22",
+          "aliases": []
+        },
+        {
+          "label": "LAPS",
+          "fragment": "ref-ad-23",
+          "aliases": []
+        },
+        {
+          "label": "Lync",
+          "fragment": "ref-ad-24",
+          "aliases": []
+        },
+        {
+          "label": "MachineAccountQuota",
+          "fragment": "ref-ad-25",
+          "aliases": []
+        },
+        {
+          "label": "MS-SAMR",
+          "fragment": "ref-ad-26",
+          "aliases": []
+        },
+        {
+          "label": "MS SQL Server",
+          "fragment": "ref-ad-27",
+          "aliases": []
+        },
+        {
+          "label": "Read-Only Domain Controllers",
+          "fragment": "ref-ad-28",
+          "aliases": []
+        },
+        {
+          "label": "Red Forest",
+          "fragment": "ref-ad-29",
+          "aliases": []
+        },
+        {
+          "label": "Security Identifiers",
+          "fragment": "ref-ad-30",
+          "aliases": []
+        },
+        {
+          "label": "Service Principal Names",
+          "fragment": "ref-ad-31",
+          "aliases": []
+        },
+        {
+          "label": "System Center Configuration Manager",
+          "fragment": "ref-ad-32",
+          "aliases": []
+        },
+        {
+          "label": "Attack Active Directory/Specific Techniques",
+          "fragment": "ref-ad-33",
+          "aliases": []
+        },
+        {
+          "label": "Attack Path Writeups/Samples",
+          "fragment": "ref-ad-34",
+          "aliases": []
+        },
+        {
+          "label": "Abusing ACEs & ACLs",
+          "fragment": "ref-ad-35",
+          "aliases": []
+        },
+        {
+          "label": "Across Trusts and Domains",
+          "fragment": "ref-ad-36",
+          "aliases": []
+        },
+        {
+          "label": "Certificate Services (Attacking)",
+          "fragment": "ref-ad-37",
+          "aliases": []
+        },
+        {
+          "label": "Coerced Authentication",
+          "fragment": "ref-ad-38",
+          "aliases": []
+        },
+        {
+          "label": "Credential Attacks",
+          "fragment": "ref-ad-39",
+          "aliases": []
+        },
+        {
+          "label": "Dumping NTDS.dit",
+          "fragment": "ref-ad-40",
+          "aliases": []
+        },
+        {
+          "label": "DCShadow",
+          "fragment": "ref-ad-41",
+          "aliases": []
+        },
+        {
+          "label": "DCSync Attack",
+          "fragment": "ref-ad-42",
+          "aliases": []
+        },
+        {
+          "label": "NetSync Attack",
+          "fragment": "ref-ad-43",
+          "aliases": []
+        },
+        {
+          "label": "Defense Evasion",
+          "fragment": "ref-ad-44",
+          "aliases": []
+        },
+        {
+          "label": "Discovery & Reconnaissance",
+          "fragment": "ref-ad-45",
+          "aliases": []
+        },
+        {
+          "label": "FreeIPA",
+          "fragment": "ref-ad-50",
+          "aliases": []
+        },
+        {
+          "label": "Forest Attacks",
+          "fragment": "ref-ad-51",
+          "aliases": []
+        },
+        {
+          "label": "Group Managed Service Account Attacks",
+          "fragment": "ref-ad-52",
+          "aliases": []
+        },
+        {
+          "label": "Group Membership Abuse",
+          "fragment": "ref-ad-53",
+          "aliases": []
+        },
+        {
+          "label": "Group Policies",
+          "fragment": "ref-ad-54",
+          "aliases": []
+        },
+        {
+          "label": "Internal Monologue",
+          "fragment": "ref-ad-55",
+          "aliases": []
+        },
+        {
+          "label": "Kerberos-based Attacks",
+          "fragment": "ref-ad-56",
+          "aliases": []
+        },
+        {
+          "label": "ASREPRoast",
+          "fragment": "ref-ad-57",
+          "aliases": []
+        },
+        {
+          "label": "AS-REQ Roasting",
+          "fragment": "ref-ad-58",
+          "aliases": []
+        },
+        {
+          "label": "Delegation",
+          "fragment": "ref-ad-59",
+          "aliases": []
+        },
+        {
+          "label": "Constrained-Delegation",
+          "fragment": "ref-ad-60",
+          "aliases": []
+        },
+        {
+          "label": "Resource Based Constrained-Delegation",
+          "fragment": "ref-ad-61",
+          "aliases": []
+        },
+        {
+          "label": "Unconstrained Delegation",
+          "fragment": "ref-ad-62",
+          "aliases": []
+        },
+        {
+          "label": "Encryption Downgrade",
+          "fragment": "ref-ad-63",
+          "aliases": []
+        },
+        {
+          "label": "FAST",
+          "fragment": "ref-ad-64",
+          "aliases": []
+        },
+        {
+          "label": "Kerberoasting",
+          "fragment": "ref-ad-65",
+          "aliases": []
+        },
+        {
+          "label": "Krbtgt",
+          "fragment": "ref-ad-66",
+          "aliases": []
+        },
+        {
+          "label": "noPAC",
+          "fragment": "ref-ad-67",
+          "aliases": []
+        },
+        {
+          "label": "Relaying Kerberos",
+          "fragment": "ref-ad-68",
+          "aliases": []
+        },
+        {
+          "label": "Lateral Movement",
+          "fragment": "ref-ad-73",
+          "aliases": []
+        },
+        {
+          "label": "(Attacking the) Machine-Account Quota",
+          "fragment": "ref-ad-74",
+          "aliases": []
+        },
+        {
+          "label": "MS-Cache",
+          "fragment": "ref-ad-75",
+          "aliases": []
+        },
+        {
+          "label": "NTLM-focused Attacks",
+          "fragment": "ref-ad-76",
+          "aliases": []
+        },
+        {
+          "label": "NTLM Relay",
+          "fragment": "ref-ad-77",
+          "aliases": []
+        },
+        {
+          "label": "(OUs) Attacking",
+          "fragment": "ref-ad-78",
+          "aliases": []
+        },
+        {
+          "label": "Persistence",
+          "fragment": "ref-ad-79",
+          "aliases": []
+        },
+        {
+          "label": "Printers & Faxes (Attacking)",
+          "fragment": "ref-ad-80",
+          "aliases": []
+        },
+        {
+          "label": "Privilege Escalation",
+          "fragment": "ref-ad-81",
+          "aliases": []
+        },
+        {
+          "label": "SAMAccountName Spoofing / CVE-2021-42278/2021-42287",
+          "fragment": "ref-ad-82",
+          "aliases": []
+        },
+        {
+          "label": "PKINITMustiness",
+          "fragment": "ref-ad-83",
+          "aliases": []
+        },
+        {
+          "label": "Shadow Admins(ACLs)",
+          "fragment": "ref-ad-84",
+          "aliases": []
+        },
+        {
+          "label": "Skeleton Key",
+          "fragment": "ref-ad-85",
+          "aliases": []
+        },
+        {
+          "label": "Specific Vulnerabilities",
+          "fragment": "ref-ad-86",
+          "aliases": []
+        },
+        {
+          "label": "Volume Shadow Service (Attacking)",
+          "fragment": "ref-ad-87",
+          "aliases": []
+        },
+        {
+          "label": "Skeleton Key Attack",
+          "fragment": "ref-ad-88",
+          "aliases": []
+        },
+        {
+          "label": "Trusts",
+          "fragment": "ref-ad-89",
+          "aliases": []
+        },
+        {
+          "label": "WSUS",
+          "fragment": "ref-ad-90",
+          "aliases": []
+        },
+        {
+          "label": "Email/Microsoft Exchange",
+          "fragment": "ref-ad-91",
+          "aliases": []
+        },
+        {
+          "label": "Hardening & Securing Active Directory",
+          "fragment": "ref-ad-92",
+          "aliases": []
+        },
+        {
+          "label": "Adversary Resilience Methodology",
+          "fragment": "ref-ad-93",
+          "aliases": []
+        },
+        {
+          "label": "Awareness",
+          "fragment": "ref-ad-94",
+          "aliases": []
+        },
+        {
+          "label": "Bloodhound",
+          "fragment": "ref-ad-95",
+          "aliases": []
+        },
+        {
+          "label": "Building/Designing Infrastructure",
+          "fragment": "ref-ad-96",
+          "aliases": []
+        },
+        {
+          "label": "Deceiving Attackers",
+          "fragment": "ref-ad-97",
+          "aliases": []
+        },
+        {
+          "label": "Domain Controllers/Admins",
+          "fragment": "ref-ad-98",
+          "aliases": []
+        },
+        {
+          "label": "Enhanced Security Administrative Environment(ESAE)/Red Foreset",
+          "fragment": "ref-ad-99",
+          "aliases": []
+        },
+        {
+          "label": "AppLocker",
+          "fragment": "ref-ad-100",
+          "aliases": []
+        },
+        {
+          "label": "Auditing Account Passwords/Privileges",
+          "fragment": "ref-ad-101",
+          "aliases": []
+        },
+        {
+          "label": "Guarded Fabric/Shielded VMs",
+          "fragment": "ref-ad-102",
+          "aliases": []
+        },
+        {
+          "label": "Group Policy",
+          "fragment": "ref-ad-103",
+          "aliases": []
+        },
+        {
+          "label": "Hardening",
+          "fragment": "ref-ad-104",
+          "aliases": []
+        },
+        {
+          "label": "Just Enough Administration (JEA)",
+          "fragment": "ref-ad-105",
+          "aliases": []
+        },
+        {
+          "label": "KRBTGT",
+          "fragment": "ref-ad-106",
+          "aliases": []
+        },
+        {
+          "label": "LLMNR/NBNS",
+          "fragment": "ref-ad-107",
+          "aliases": []
+        },
+        {
+          "label": "Local Administrator Password Solution",
+          "fragment": "ref-ad-108",
+          "aliases": []
+        },
+        {
+          "label": "NTLM",
+          "fragment": "ref-ad-109",
+          "aliases": []
+        },
+        {
+          "label": "Organizational Units",
+          "fragment": "ref-ad-110",
+          "aliases": []
+        },
+        {
+          "label": "Office Documents/Macros/DDE/Flavor-of-the-week",
+          "fragment": "ref-ad-111",
+          "aliases": []
+        },
+        {
+          "label": "Passwords",
+          "fragment": "ref-ad-112",
+          "aliases": []
+        },
+        {
+          "label": "Privileged Access Workstation",
+          "fragment": "ref-ad-113",
+          "aliases": []
+        },
+        {
+          "label": "PowerShell",
+          "fragment": "ref-ad-114",
+          "aliases": []
+        },
+        {
+          "label": "Services",
+          "fragment": "ref-ad-115",
+          "aliases": []
+        },
+        {
+          "label": "SMB",
+          "fragment": "ref-ad-116",
+          "aliases": []
+        },
+        {
+          "label": "Unwanted Admins",
+          "fragment": "ref-ad-117",
+          "aliases": []
+        },
+        {
+          "label": "USB Detection",
+          "fragment": "ref-ad-118",
+          "aliases": []
+        },
+        {
+          "label": "Visualization/Tracking/Reporting",
+          "fragment": "ref-ad-120",
+          "aliases": []
+        },
+        {
+          "label": "WMI",
+          "fragment": "ref-ad-121",
+          "aliases": []
+        },
+        {
+          "label": "Advanced Threat Analytics",
+          "fragment": "ref-ad-122",
+          "aliases": []
+        },
+        {
+          "label": "Advanced Threat Protection",
+          "fragment": "ref-ad-123",
+          "aliases": []
+        },
+        {
+          "label": "Auditing Processes",
+          "fragment": "ref-ad-124",
+          "aliases": []
+        },
+        {
+          "label": "Baselining",
+          "fragment": "ref-ad-125",
+          "aliases": []
+        },
+        {
+          "label": "CMD.exe Analysis",
+          "fragment": "ref-ad-126",
+          "aliases": []
+        },
+        {
+          "label": "Credential Guard",
+          "fragment": "ref-ad-127",
+          "aliases": []
+        },
+        {
+          "label": "Device Guard",
+          "fragment": "ref-ad-128",
+          "aliases": []
+        },
+        {
+          "label": "Defender Application Control",
+          "fragment": "ref-ad-129",
+          "aliases": []
+        },
+        {
+          "label": "Event Log & Monitoring",
+          "fragment": "ref-ad-130",
+          "aliases": []
+        },
+        {
+          "label": "Firewall",
+          "fragment": "ref-ad-131",
+          "aliases": []
+        },
+        {
+          "label": ".NET Instrumentation",
+          "fragment": "ref-ad-133",
+          "aliases": []
+        },
+        {
+          "label": "Powershell",
+          "fragment": "ref-ad-134",
+          "aliases": []
+        },
+        {
+          "label": "Service Accounts",
+          "fragment": "ref-ad-135",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "path": "Draft/AnonOpSecPrivacy.md",
+      "title": "Anonymity/OpSec/Privacy",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Basic.md",
+      "title": "Basic Security Information",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/bios_uefi.md",
+      "title": "BIOS/UEFI/Firmware Attacks/Defense",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Building_A_Lab.md",
+      "title": "Building a Testing Lab",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Cars.md",
+      "title": "Car hacking",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Career.md",
+      "title": "Career",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Cheats.md",
+      "title": "Cheat Sheets",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Cloud.md",
+      "title": "Cloud",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Conferences.md",
+      "title": "Conferences/Recordings",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Containers.md",
+      "title": "Containers",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Courses_Training.md",
+      "title": "Courses & Training",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/CandE.md",
+      "title": "Cryptography & Encryption",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/CTFs_Wargames.md",
+      "title": "CTFs & Wargames",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Darknets.md",
+      "title": "Darknets",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/DataVis.md",
+      "title": "Data Analysis & Visualization",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Defense.md",
+      "title": "Defense",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Docs_and_Reports.md",
+      "title": "Documentation & Reporting",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Embedded.md",
+      "title": "Embedded Device Security",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Exfiltration.md",
+      "title": "Exfiltration",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Exploit_Dev.md",
+      "title": "Exploit Development",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/DFIR.md",
+      "title": "Forensics & Incident Response",
+      "category": "Reference topics",
+      "aliases": [
+        "DFIR",
+        "Digital forensics and incident response"
+      ],
+      "tocDepth": 3,
+      "subjects": [
+        {
+          "label": "Incident Response",
+          "fragment": "ref-dfir-1",
+          "aliases": []
+        },
+        {
+          "label": "Anti-Forensics",
+          "fragment": "ref-dfir-2",
+          "aliases": []
+        },
+        {
+          "label": "Android Forensics",
+          "fragment": "ref-dfir-4",
+          "aliases": []
+        },
+        {
+          "label": "Browser Forensics",
+          "fragment": "ref-dfir-5",
+          "aliases": []
+        },
+        {
+          "label": "Firmware",
+          "fragment": "ref-dfir-6",
+          "aliases": []
+        },
+        {
+          "label": "Linux Forensics",
+          "fragment": "ref-dfir-7",
+          "aliases": []
+        },
+        {
+          "label": "Memory Forensics",
+          "fragment": "ref-dfir-8",
+          "aliases": []
+        },
+        {
+          "label": "Mobile Device(Android/iOS) Forensics",
+          "fragment": "ref-dfir-9",
+          "aliases": []
+        },
+        {
+          "label": "Network Forensics",
+          "fragment": "ref-dfir-10",
+          "aliases": []
+        },
+        {
+          "label": "OS X Forensics",
+          "fragment": "ref-dfir-11",
+          "aliases": []
+        },
+        {
+          "label": "Windows Forensics",
+          "fragment": "ref-dfir-12",
+          "aliases": []
+        },
+        {
+          "label": "PDF Forensics",
+          "fragment": "ref-dfir-13",
+          "aliases": []
+        },
+        {
+          "label": "SD card Forensics",
+          "fragment": "ref-dfir-14",
+          "aliases": []
+        },
+        {
+          "label": "Steganography",
+          "fragment": "ref-dfir-15",
+          "aliases": []
+        },
+        {
+          "label": "Bootkit Disk Forensics",
+          "fragment": "ref-dfir-16",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "path": "Draft/Fuzzing.md",
+      "title": "Fuzzing & Bug Hunting",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Games.md",
+      "title": "Game Hacking",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/honeypot.md",
+      "title": "Honeypots",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Interesting_Things.md",
+      "title": "Interesting Things & Useful Information",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/L-SM-TH.md",
+      "title": "Logging, Monitoring, & Threat Hunting",
+      "category": "Reference topics",
+      "aliases": [
+        "Detection engineering",
+        "Security monitoring",
+        "Threat hunting",
+        "Network Security Monitoring & Logging"
+      ],
+      "tocDepth": 3,
+      "subjects": [
+        {
+          "label": "Breach Detection/Response",
+          "fragment": "ref-logging-4",
+          "aliases": []
+        },
+        {
+          "label": "Infrastructure Monitoring",
+          "fragment": "ref-logging-5",
+          "aliases": []
+        },
+        {
+          "label": "Building a Program",
+          "fragment": "ref-logging-9",
+          "aliases": []
+        },
+        {
+          "label": "Non-101 General",
+          "fragment": "ref-logging-11",
+          "aliases": []
+        },
+        {
+          "label": "APT Hunts",
+          "fragment": "ref-logging-12",
+          "aliases": []
+        },
+        {
+          "label": "Methodologies",
+          "fragment": "ref-logging-13",
+          "aliases": []
+        },
+        {
+          "label": "Data Analysis",
+          "fragment": "ref-logging-14",
+          "aliases": []
+        },
+        {
+          "label": "Email-Logs",
+          "fragment": "ref-logging-15",
+          "aliases": []
+        },
+        {
+          "label": "Hunt Experiences/Demonstrations of",
+          "fragment": "ref-logging-16",
+          "aliases": []
+        },
+        {
+          "label": "(Malicious) Insider Hunting",
+          "fragment": "ref-logging-17",
+          "aliases": []
+        },
+        {
+          "label": "Metrics",
+          "fragment": "ref-logging-18",
+          "aliases": []
+        },
+        {
+          "label": "Other",
+          "fragment": "ref-logging-20",
+          "aliases": []
+        },
+        {
+          "label": "ESXi",
+          "fragment": "ref-logging-21",
+          "aliases": []
+        },
+        {
+          "label": "ICS",
+          "fragment": "ref-logging-22",
+          "aliases": []
+        },
+        {
+          "label": "Slack",
+          "fragment": "ref-logging-23",
+          "aliases": []
+        },
+        {
+          "label": "OSQuery",
+          "fragment": "ref-logging-24",
+          "aliases": []
+        },
+        {
+          "label": "IoC-Related",
+          "fragment": "ref-logging-25",
+          "aliases": []
+        },
+        {
+          "label": "Yara",
+          "fragment": "ref-logging-26",
+          "aliases": []
+        },
+        {
+          "label": "Network-based",
+          "fragment": "ref-logging-27",
+          "aliases": []
+        },
+        {
+          "label": "Flow-Data",
+          "fragment": "ref-logging-30",
+          "aliases": []
+        },
+        {
+          "label": "IDS/IPS Tools",
+          "fragment": "ref-logging-31",
+          "aliases": []
+        },
+        {
+          "label": "IDS/IPS Monitoring Tools",
+          "fragment": "ref-logging-32",
+          "aliases": []
+        },
+        {
+          "label": "PCAPs",
+          "fragment": "ref-logging-33",
+          "aliases": []
+        },
+        {
+          "label": "Traffic Analysis",
+          "fragment": "ref-logging-34",
+          "aliases": []
+        },
+        {
+          "label": "Linux-based",
+          "fragment": "ref-logging-38",
+          "aliases": []
+        },
+        {
+          "label": "Cloud-based",
+          "fragment": "ref-logging-43",
+          "aliases": []
+        },
+        {
+          "label": "macOS-based",
+          "fragment": "ref-logging-46",
+          "aliases": []
+        },
+        {
+          "label": "Windows-based",
+          "fragment": "ref-logging-51",
+          "aliases": []
+        },
+        {
+          "label": "Event Tracing for Windows",
+          "fragment": "ref-logging-53",
+          "aliases": []
+        },
+        {
+          "label": "Windows Detection Engineering",
+          "fragment": "ref-logging-55",
+          "aliases": []
+        },
+        {
+          "label": "Processes & Related",
+          "fragment": "ref-logging-57",
+          "aliases": []
+        },
+        {
+          "label": "Cobalt Strike",
+          "fragment": "ref-logging-60",
+          "aliases": []
+        },
+        {
+          "label": "Data Storage & Analysis Stacks",
+          "fragment": "ref-logging-61",
+          "aliases": []
+        },
+        {
+          "label": "ELK Stack",
+          "fragment": "ref-logging-62",
+          "aliases": []
+        },
+        {
+          "label": "ElasticSearch",
+          "fragment": "ref-logging-64",
+          "aliases": []
+        },
+        {
+          "label": "LogStash",
+          "fragment": "ref-logging-65",
+          "aliases": []
+        },
+        {
+          "label": "Kibana",
+          "fragment": "ref-logging-66",
+          "aliases": []
+        },
+        {
+          "label": "Event Query Language",
+          "fragment": "ref-logging-67",
+          "aliases": []
+        },
+        {
+          "label": "Graylog",
+          "fragment": "ref-logging-69",
+          "aliases": []
+        },
+        {
+          "label": "Splunk",
+          "fragment": "ref-logging-70",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "path": "Draft/Malware.md",
+      "title": "Malware",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Network_Attacks.md",
+      "title": "Network Attacks & Defense",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Osint.md",
+      "title": "Open Source Intelligence Gathering - OSINT",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Passwords.md",
+      "title": "Passwords",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Phishing.md",
+      "title": "Phishing",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Physical_Security.md",
+      "title": "Physical Security",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/PrivescPostEx.md",
+      "title": "Privilege Escalation and Post-Exploitation",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Programming_Language_Security.md",
+      "title": "AppSec/Programming Stuff",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Rants&Writeups/README.md",
+      "title": "Rants & Writeups",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/RT.md",
+      "title": "Red Teaming/Penetration Testing Stuff",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Reverse Engineering - REMath Literature.md",
+      "title": "REMATH Reverse Engineering",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/RE.md",
+      "title": "Reverse Engineering",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Rootkits.md",
+      "title": "Rootkits",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/SE.md",
+      "title": "Social Engineering",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/sysinternals.md",
+      "title": "System Internals (Linux/Windows)",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/threatmodel.md",
+      "title": "Threat Modeling",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/UX.md",
+      "title": "UI/UX Design",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Web.md",
+      "title": "Web",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    },
+    {
+      "path": "Draft/Wireless.md",
+      "title": "Wireless Networks and RF Devices",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 3,
+      "subjects": []
+    }
+  ],
+  "tocPages": [
+    "Draft/Active_Directory.md",
+    "Draft/DFIR.md",
+    "Draft/L-SM-TH.md"
+  ]
+}

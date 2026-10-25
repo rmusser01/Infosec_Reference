@@ -119,7 +119,7 @@
 - **Examining the Bitsquatting Attack Surface - Jaeson Schultz(Defcon21)**
   - URL: <https://media.defcon.org/DEF%20CON%2021/DEF%20CON%2021%20video%20and%20slides/DEF%20CON%2021%20Hacking%20Conference%20Presentation%20By%20Jaeson%20Schultz%20-%20Examining%20the%20Bitsquatting%20Attack%20Surface%20-%20Video%20and%20Slides.m4v>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4255`; references: 1.
+  - Source: `Draft/Web.md:4384`; references: 1.
   - ID: `70abe29920251b2f690f`.
 - **What Your Body Tells Me - Body Language for the SE**
   - URL: <https://media.defcon.org/DEF%20CON%2022/DEF%20CON%2022%20video%20and%20slides/DEF%20CON%2022%20Hacking%20Conference%20Presentation%20By%20Chris%20Hadnagy%20-%20What%20Your%20Body%20Tells%20Me%20-%20Body%20Language%20for%20the%20SE%20-%20Video%20and%20Slides.m4v>
@@ -194,7 +194,7 @@
 - **C++ for Hackers - Josh Lospinoso(2020)**
   - URL: <https://vimeo.com/384348826>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1944`; references: 1.
+  - Source: `Draft/RT.md:1908`; references: 1.
   - ID: `6e39b5992d1b3e5318b2`.
 - **https://vimeo.com/502507556**
   - URL: <https://vimeo.com/502507556>
@@ -254,7 +254,7 @@
 - **Talk**
   - URL: <https://www.youtube.com/embed/55234oZ0EDU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:2076`; references: 1.
+  - Source: `Draft/RT.md:2053`; references: 1.
   - ID: `be1ea5bc702005ee7b1e`.
 - **The Art of Explanation: Behavioral Models of InfoSec - Kelly Shortridge**
   - URL: <https://www.youtube.com/embed/UdZDlt2dlqM?>
@@ -274,7 +274,7 @@
 - **In-memory Evasion (2018) - Raphael Mudge**
   - URL: <https://www.youtube.com/playlist?list=PL9HO6M_MU2nc5Q31qd2CwpZ8J4KFMhgnK>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:947`; references: 1.
+  - Source: `Draft/RT.md:949`; references: 1.
   - ID: `1ec0107a76eef285f94f`.
 - **Red Team Operations with Cobalt Strike (2019) - Raphael Mudge**
   - URL: <https://www.youtube.com/playlist?list=PL9HO6M_MU2nfQ4kHSCzAQMqxQxH47d1no>
@@ -284,7 +284,7 @@
 - **SharpC2 Development Series - Rastamouse**
   - URL: <https://www.youtube.com/playlist?list=PLFeVmEN0T_KeOxXfCAtJ14TZ_Nk2qa9Ll>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3557`; references: 1.
+  - Source: `Draft/RT.md:3654`; references: 1.
   - ID: `e7ac6586aecab58296ce`.
 - **https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA**
   - URL: <https://www.youtube.com/playlist?list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA>
@@ -294,12 +294,12 @@
 - **Building the CLR Meterpreter - OJ Reeves(2020)**
   - URL: <https://www.youtube.com/playlist?list=PLYovnhafVaw-wGlLtQw1N0dHjxkkvc62o>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3554`; references: 1.
+  - Source: `Draft/RT.md:3651`; references: 1.
   - ID: `9bb34f70b652ae7e864d`.
 - **SANS Purple Team Summit 2021**
   - URL: <https://www.youtube.com/playlist?list=PLdVJWiil7Rxqut7ZVcrzitjorCPcJ-N9I>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:674`; references: 1.
+  - Source: `Draft/RT.md:671`; references: 1.
   - ID: `76acfcfc0168d3756ec7`.
 - **Threat Hunting with Elastic Stack - Code In Action(2021)**
   - URL: <https://www.youtube.com/playlist?list=PLeLcvrwLe184BoWZhv6Cf2kbi-bKBeDBI>
@@ -339,7 +339,7 @@
 - **ZAP Deep Dive Series - StackHawk**
   - URL: <https://www.youtube.com/playlist?list=PLz_NN8o2uh8AQ7VyUEN1GCCnpzl5_FaJA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2194`; references: 2.
+  - Source: `Draft/Web.md:2334`; references: 2.
   - ID: `7f34d0a95c7145de298d`.
 - **Slides**
   - URL: <https://www.youtube.com/redirect?event=video_description&v=BwS-FnUih7c&q=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1HyOjJVSjxxyAEmMMK6jCIdpb2sn_NtSw%2Fview&redir_token=QUFFLUhqbXZjSVJUZXhZSGlHR1Rpd0FJcVZWdXlFQXJuQXxBQ3Jtc0tuVzRYM3RJaTRNTU85bFBaZ3BkdmUwejloTkoxV3F2TXd6ZEZ5dmVIWGZJQ0tsMXRDaWhzbHR4V2JlTkVNMDFBbVgxZG1kWHpDZEd4RnNHZjFONVlUMnB5Y1hjZ1pDemcwMG90VlBxWEhVdWN4X2FpWQ%3D%3D>
@@ -359,7 +359,7 @@
 - **OAuth Bypass Technique - Sheikh Rizan(BSides Singapore2021)**
   - URL: <https://www.youtube.com/watch?app=desktop&v=2W3RlWxIBgw&list=PLUN2aSqQWw7XOPKThhTK38Q6vszsiDOcI&index=4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1628`; references: 1.
+  - Source: `Draft/Web.md:1794`; references: 1.
   - ID: `9a1707996a1db691161a`.
 - **EDR Internals From a Defenders Perspective - Olaf Hartong(FIRST2022)**
   - URL: <https://www.youtube.com/watch?app=desktop&v=6SSVOfcoVUA>
@@ -404,7 +404,7 @@
 - **OAuth 2.0 Hacking for Beginners with Farah Hawa - Farah Hawa**
   - URL: <https://www.youtube.com/watch?app=desktop&v=ZOwwA07x6Iw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1607`; references: 1.
+  - Source: `Draft/Web.md:1773`; references: 1.
   - ID: `7b1287dfc17ea766de6a`.
 - **https://www.youtube.com/watch?app=desktop&v=ZS3Rdld_Ebo&feature=emb_logo**
   - URL: <https://www.youtube.com/watch?app=desktop&v=ZS3Rdld_Ebo&feature=emb_logo>
@@ -429,7 +429,7 @@
 - **Introduction To Red Team Tooling And Opsec - Marwan El-Gendi(2022)**
   - URL: <https://www.youtube.com/watch?app=desktop&v=ijOKZznamXM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4149`; references: 1.
+  - Source: `Draft/RT.md:4217`; references: 1.
   - ID: `3c2a37fe4d9dd3ac76de`.
 - **https://www.youtube.com/watch?app=desktop&v=xCU47bJoLho**
   - URL: <https://www.youtube.com/watch?app=desktop&v=xCU47bJoLho>
@@ -444,7 +444,7 @@
 - **RESTful Services, The Web Security Blind Spot**
   - URL: <https://www.youtube.com/watch?feature=player_embedded&v=pWq4qGLAZHI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:312`; references: 1.
+  - Source: `Draft/Web.md:382`; references: 1.
   - ID: `90b48251c6860f2cabf1`.
 - **I Will Kill You - Chris Rock**
   - URL: <https://www.youtube.com/watch?feature=youtu.be&v=9FdHq3WfJgs&t=77&app=desktop>
@@ -469,7 +469,7 @@
 - **Practical Implants for Windows in PowerShell - Chris Bad2Beef(SHELLCON2017)**
   - URL: <https://www.youtube.com/watch?index=8&list=PL7D3STHEa66R0nWbixrTo3O7haiMmA71T&t=0s&v=-HRLMfYfWTM&app=desktop>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1933`; references: 1.
+  - Source: `Draft/RT.md:1897`; references: 1.
   - ID: `d37fdea0874b5c9eba26`.
 - **Every Security Team is a Software Team Now - Dino Dai Zovi(Black Hat USA 2019 Keynote)**
   - URL: <https://www.youtube.com/watch?list=PLH15HpR5qRsWrfkjwFSI256x1u2Zy49VI&v=8armE3Wz0jk>
@@ -479,7 +479,7 @@
 - **So you want to beat the Red Team - Cameron Moore - Bsides Philly 2016**
   - URL: <https://www.youtube.com/watch?list=PLNhlcxQZJSm8IHSE1JzvAH2oUty_yXQHT&v=BYazrXR_DFI&index=10&app=desktop>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:424`; references: 1.
+  - Source: `Draft/Defense.md:293`; references: 1.
   - ID: `84a8fefaba719a9e9b54`.
 - **Intro to Databases Systems(CMU) / Fall 2019)**
   - URL: <https://www.youtube.com/watch?list=PLSE8ODhjZXjbohkNBWQs_otTrBTrjyohi&v=oeYBdghaIjc&app=desktop>
@@ -494,7 +494,7 @@
 - **Skills for a Red Teamer - Brent White & Tim Roberts - NolaCon 2018**
   - URL: <https://www.youtube.com/watch?reload=9&v=Abr4HgSV9pc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4175`; references: 1.
+  - Source: `Draft/RT.md:4247`; references: 1.
   - ID: `cfbdc8768b873fd31c97`.
 - **https://www.youtube.com/watch?reload=9&v=CGvQIgoBd3Q**
   - URL: <https://www.youtube.com/watch?reload=9&v=CGvQIgoBd3Q>
@@ -534,7 +534,7 @@
 - **HTTP Invisibility Cloak by Soroush Dalili - SteelCon2017**
   - URL: <https://www.youtube.com/watch?reload=9&v=sHEv_EoQJwc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2069`; references: 1.
+  - Source: `Draft/Web.md:2214`; references: 1.
   - ID: `f8465e30eee5a52e32d8`.
 - **Continuous Skills Improvement For Everyone - Matt Scheurer(OISF19)**
   - URL: <https://www.youtube.com/watch?time_continue=1&v=Se-qPMIfLRI&feature=emb_title>
@@ -554,7 +554,7 @@
 - **.NET Roulette: Exploiting Insecure Deserialization in Telerik UI - Caleb Gross(DerpCon2020)**
   - URL: <https://www.youtube.com/watch?v=--6PiuvBGAU&list=PLCXnHhr5mRLzcvpFSj389dO7ro2spPLTe&index=7>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3950`; references: 1.
+  - Source: `Draft/Web.md:4088`; references: 1.
   - ID: `6ca881d9bf29209f375c`.
 - **DNS Dark Matter Discovery Theres Evil In Those Queries - Jim Nitterauer**
   - URL: <https://www.youtube.com/watch?v=-A2Wqagz73Y>
@@ -569,7 +569,7 @@
 - **A  Year In The Red by Dominic Chell and Vincent Yiu - BSides Manchester2017**
   - URL: <https://www.youtube.com/watch?v=-FQgWGktYtw&list=PLcgqQkap1lNrOBNCXqpPqpPAqckxv0XhP&index=23>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4062`; references: 1.
+  - Source: `Draft/RT.md:4128`; references: 1.
   - ID: `d059d865b26ac77e061f`.
 - **Anti-Forensics for the Louise - Derbycon - int0x80 (of Dual Core)**
   - URL: <https://www.youtube.com/watch?v=-HK1JHR7LIM>
@@ -589,7 +589,7 @@
 - **SANS Webcast: Beyond Scanning Delivering Impact Driven Vulnerability Assessments - Matthew Toussain**
   - URL: <https://www.youtube.com/watch?v=-ObkJ03UcN0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:246`; references: 1.
+  - Source: `Draft/Defense.md:178`; references: 1.
   - ID: `e52124503de2da3a4c9e`.
 - **Attacking and Defending Full Disk Encryption - Tom Kopchak - BSides Cleveland2014**
   - URL: <https://www.youtube.com/watch?v=-XLitSfOQ6U>
@@ -629,12 +629,12 @@
 - **Modern Red Team Tradecraft - Sajal Thomas(RedTeam VillageDefcon28)**
   - URL: <https://www.youtube.com/watch?v=-f7B-N7yHm8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4130`; references: 1.
+  - Source: `Draft/RT.md:4198`; references: 1.
   - ID: `ecad79b407c4b3f7109e`.
 - **Electron - Build cross platform desktop XSS, it’s easier than you think by Yosuke Hasegawa - \[CB16\] **
   - URL: <https://www.youtube.com/watch?v=-j1DPPf9Z4U>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:824`; references: 1.
+  - Source: `Draft/Web.md:928`; references: 1.
   - ID: `5204cad45d01c8d13375`.
 - **Linux Command Line Dojo with Hal Pomeranz(BHIS 2020)**
   - URL: <https://www.youtube.com/watch?v=-jNkjuWMFrk>
@@ -644,7 +644,7 @@
 - **Let's Create A Redteam Mission - Alex Kouzmine - BlackAlps 2018**
   - URL: <https://www.youtube.com/watch?v=-kK8K-UVhWY>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:542`; references: 1.
+  - Source: `Draft/RT.md:530`; references: 1.
   - ID: `c93ca82eb6f7ac48b44c`.
 - **Jackson Thuraisamy & Jason Tran - Hacking POS PoS Systems**
   - URL: <https://www.youtube.com/watch?v=-n7oJqmTUCo>
@@ -654,12 +654,12 @@
 - **Database Schema (Injection) - Hacksplained**
   - URL: <https://www.youtube.com/watch?v=0-D-e66U2Z0&feature=youtu.be>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3622`; references: 1.
+  - Source: `Draft/Web.md:3764`; references: 1.
   - ID: `97ffeb797b9e8a68da1f`.
 - **Memory Resident Implants Code injection is alive and well - Luke Jennings(BlueHatv18)**
   - URL: <https://www.youtube.com/watch?v=02fL2xpR7IM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3768`; references: 1.
+  - Source: `Draft/RT.md:3879`; references: 1.
   - ID: `7d7576d11afd00a91334`.
 - **Monitoring Ephemeral Infrastructure with osquery - Matt Jane(Querycon219)**
   - URL: <https://www.youtube.com/watch?v=03tCsq-vDbA>
@@ -719,7 +719,7 @@
 - **Hacking Modern Web Apps with RCE and Prototype Pollution - Abraham Aranguren(2020)**
   - URL: <https://www.youtube.com/watch?v=0kVbvKjnGY4&list=PL7ZDZo2Xu333whl0HqUuWnooebiJNz23A&index=4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3791`; references: 1.
+  - Source: `Draft/Web.md:3932`; references: 1.
   - ID: `1baa7e6f7131c85d0298`.
 - **You Suck at Excel with Joel Spolsky(2015)**
   - URL: <https://www.youtube.com/watch?v=0nbkaYsR94c&feature=youtu.be>
@@ -749,7 +749,7 @@
 - **Some Teams Are Red, Others Are Blue, But Purple Ones Are the Best Value Prajakta Jagda(SHELLCON 2017)**
   - URL: <https://www.youtube.com/watch?v=115w1Z9MMA4&list=PL7D3STHEa66R0nWbixrTo3O7haiMmA71T&index=6>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:540`; references: 1.
+  - Source: `Draft/RT.md:528`; references: 1.
   - ID: `f218d2348b8c3227652f`.
 - **Chw00t: Breaking Unixes’ Chroot Solutions**
   - URL: <https://www.youtube.com/watch?v=1A7yJxh-fyc>
@@ -759,7 +759,7 @@
 - **Using an Expanded Cyber Kill Chain Model to Increase Attack Resiliency - Sean Malone - BHUSA16**
   - URL: <https://www.youtube.com/watch?v=1Dz12M7u-S8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:427`; references: 1.
+  - Source: `Draft/Defense.md:296`; references: 1.
   - ID: `ecb172eb875cfa75861e`.
 - **Security Onions and Honey Potz - Ethan Dodge - BSidesSLC2015**
   - URL: <https://www.youtube.com/watch?v=1Jbm1zwiGTM>
@@ -794,7 +794,7 @@
 - **Abusing Webhooks for Command and Control - Dimitry Snezhkov(NorthSec2017)**
   - URL: <https://www.youtube.com/watch?v=1d3QCA2cR8o&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=12>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4109`; references: 1.
+  - Source: `Draft/RT.md:4177`; references: 1.
   - ID: `b44a236323de9e65ec7f`.
 - **Perfect Storm Taking the Helm of Kubernetes - Ian Coldwater(Derbycon2018)**
   - URL: <https://www.youtube.com/watch?v=1k-GIDXgfLw>
@@ -809,12 +809,12 @@
 - **Red Team Tales - A short adventure into some interesting techniques - Aaron Dobie(2020)**
   - URL: <https://www.youtube.com/watch?v=1p29rcq9DAE>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4136`; references: 1.
+  - Source: `Draft/RT.md:4204`; references: 1.
   - ID: `807f60b7356946c065d8`.
 - **Quickstart Guide to MITRE ATT&CK - Do’s and Don'ts - Adam Mashincho(HackFest Summit 2020)**
   - URL: <https://www.youtube.com/watch?v=1tv9hGdzEUA&list=PLdVJWiil7RxoW8rBeKc0flY8bRuD3M68L&index=11&t=0s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:661`; references: 1.
+  - Source: `Draft/RT.md:658`; references: 1.
   - ID: `540fe85a2297212027c7`.
 - **I Boot when U-Boot, Bernardo Maia Rodrigues (@bernardomr) & Vincent Ruijter (@_evict)**
   - URL: <https://www.youtube.com/watch?v=2-Y4X81QHys&index=11&list=PLwZycuzv10iLBFwRIWNAR-s4iuuUMRuEB>
@@ -824,7 +824,7 @@
 - **Pages from a sword-maker’s notebook - Vyrus(SHELLCON 2017)**
   - URL: <https://www.youtube.com/watch?v=2-zos1EAvNY&list=PL7D3STHEa66R0nWbixrTo3O7haiMmA71T&index=4&t=0s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1931`; references: 1.
+  - Source: `Draft/RT.md:1895`; references: 1.
   - ID: `90d87d457ddcb253fbc8`.
 - **https://www.youtube.com/watch?v=23F8QKTu86U**
   - URL: <https://www.youtube.com/watch?v=23F8QKTu86U>
@@ -844,7 +844,7 @@
 - **App.SetAsDefaultRCEClient - Juho Nurminen(Disobey2020)**
   - URL: <https://www.youtube.com/watch?v=27sBPwN2bn8&list=PLLvAhAn5sGfiZKg9GTUzljNmuRupA8igX&index=17>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:827`; references: 1.
+  - Source: `Draft/Web.md:931`; references: 1.
   - ID: `11b539c9365f2d41d8ef`.
 - **Mining for Bugs with Graph Database Queries \[31c3\]**
   - URL: <https://www.youtube.com/watch?v=291hpUE5-3g>
@@ -859,7 +859,7 @@
 - **Flying a False Flag: Advanced C2, Trust Conflicts, and Domain Takeover - Nick Landers(BHUSA2019)**
   - URL: <https://www.youtube.com/watch?v=2BEwqbCbQuM&feature=youtu.be>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:771`; references: 1.
+  - Source: `Draft/RT.md:766`; references: 1.
   - ID: `f199e0151da21cd9ebc2`.
 - **Serial Communication RS232 & RS485**
   - URL: <https://www.youtube.com/watch?v=2DQdEHvnqvI>
@@ -874,7 +874,7 @@
 - **Red Team Techniques for Evading, Bypassing, and Disabling MS Advanced Threat Protection and Advanced Threat Analytics - Chris Thompson(BHEU2017**
   - URL: <https://www.youtube.com/watch?v=2HNuzUuVyv0&app=desktop>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4115`; references: 1.
+  - Source: `Draft/RT.md:4183`; references: 1.
   - ID: `9a619a9c6cc3746b3161`.
 - **WSUSpendu: How to Hang WSUS Clients - Romain Coltel & Yves Le Provost(BHUSA2017)**
   - URL: <https://www.youtube.com/watch?v=2M8ux6ESIAs>
@@ -894,12 +894,12 @@
 - **Overt Command & Control: The Art of Blending In - William Knowles, Dave Hartley(BlueHat v18)**
   - URL: <https://www.youtube.com/watch?v=2O-KKLlsDgM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:779`; references: 1.
+  - Source: `Draft/RT.md:774`; references: 1.
   - ID: `9182155b9705ba1c24ab`.
 - **Securing Vendor Webapps - A Vulnerability Assessment on HELK - IppSec**
   - URL: <https://www.youtube.com/watch?v=2OWtEymBQfA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:244`; references: 1.
+  - Source: `Draft/Defense.md:176`; references: 1.
   - ID: `f3b36ec5f65d3701b6af`.
 - **MIT Lecture Series**
   - URL: <https://www.youtube.com/watch?v=2Op3QLzMgSY>
@@ -924,12 +924,12 @@
 - **Stupid RedTeamer Tricks - Laurent Desaulniers(NorthSec 2017)**
   - URL: <https://www.youtube.com/watch?v=2g_8oHM0nwA&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=11>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4101`; references: 1.
+  - Source: `Draft/RT.md:4169`; references: 1.
   - ID: `81a211f36b682bdd76d9`.
 - **Building and Leading Corporate Red Teams - Dale Pearson(x33fcon 2018)**
   - URL: <https://www.youtube.com/watch?v=2kWMIffjNXI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:547`; references: 1.
+  - Source: `Draft/RT.md:535`; references: 1.
   - ID: `2f2d6855ec0fb3b97fe1`.
 - **COVID-1984: Propaganda and Surveillance During a Pandemic - Mauro Eldritch**
   - URL: <https://www.youtube.com/watch?v=2ldvZVAQHTQ&list=PLruly0ngXhPGvyl-gOp4d_TvIiedloX1l&index=30>
@@ -949,12 +949,12 @@
 - **OWASP Top 10: Hacking Web Applications with Burp Suite - Chad Furman**
   - URL: <https://www.youtube.com/watch?v=2p6twRRXK_o>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4713`; references: 1.
+  - Source: `Draft/Web.md:4807`; references: 1.
   - ID: `c52769fe3ec2c4142d6f`.
 - **Your Voice is My Passport - delta zero, Azeem Aqil(Defcon26)**
   - URL: <https://www.youtube.com/watch?v=2uoOkIUB43Q>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4111`; references: 1.
+  - Source: `Draft/RT.md:4179`; references: 1.
   - ID: `198e6949f5c3adbf9b7b`.
 - **Seccomp for developers making your applications more secure - Alexander Reelsen(BSidesSG2020)**
   - URL: <https://www.youtube.com/watch?v=2vpsSvB71-A&list=PLUN2aSqQWw7WvcxeClRMr6VGmLIeoIO2m&index=14>
@@ -984,7 +984,7 @@
 - **Hacking Mainframes Vulnerabilities in applications exposed over TN3270 - Dominic White - Derbycon4**
   - URL: <https://www.youtube.com/watch?v=3HFiv7NvWrM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4271`; references: 1.
+  - Source: `Draft/RT.md:4345`; references: 1.
   - ID: `6b1b2022522effa543d6`.
 - **The return of detection engineering: detection development using CI/CD - Patrick Bareiß(x33fcon2020)**
   - URL: <https://www.youtube.com/watch?v=3JmHBa7q91o&list=PL7ZDZo2Xu330gMHAoeGvH9QkCJMC-qgeK&index=3>
@@ -1019,12 +1019,12 @@
 - **Free Tools! How to Use Developer Tools and Javascript in Webapp Pentests - BHIS(2020)**
   - URL: <https://www.youtube.com/watch?v=3W65ji1gc8c>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1239`; references: 1.
+  - Source: `Draft/Web.md:1378`; references: 1.
   - ID: `bf8e452035772fcf2414`.
 - **Why You Should Fear Your "mundane" Office Equipment - Daniel Romero, Mario Rivas(Defcon27)**
   - URL: <https://www.youtube.com/watch?v=3X-ZnlyGuWc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4234`; references: 1.
+  - Source: `Draft/RT.md:4304`; references: 1.
   - ID: `a7ae224f4f09793ba0e2`.
 - **Hacking Cars with Python -Eric Evenchick PyCon 2017**
   - URL: <https://www.youtube.com/watch?v=3bZNhMcv4Y8&app=desktop>
@@ -1034,12 +1034,12 @@
 - **Behind the scenes of iOS and Mac Security - Ivan Krstić(BHUSA 19)**
   - URL: <https://www.youtube.com/watch?v=3byNNUReyvE>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:1007`; references: 1.
+  - Source: `Draft/Defense.md:482`; references: 1.
   - ID: `a14cfb8316fb9f2c5392`.
 - **Video**
   - URL: <https://www.youtube.com/watch?v=3cT0uE7Y87s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4089`; references: 2.
+  - Source: `Draft/Web.md:4224`; references: 2.
   - ID: `c191cea569964623aac8`.
 - **CampZer0 // Domonkos Tomcsányi: GSM - have we overslept the last wake-up call?**
   - URL: <https://www.youtube.com/watch?v=3cnnQFP3VqE>
@@ -1064,17 +1064,17 @@
 - **Adversarial Emulation - Bryson Bort(WWHF19)**
   - URL: <https://www.youtube.com/watch?v=3lQTvQlBddw&list=PLXF21PFPPXTNXEgkUEBbRgvraxWP3c4Hr&index=4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4066`; references: 1.
+  - Source: `Draft/RT.md:4132`; references: 1.
   - ID: `94b52e441a34f080f6a5`.
 - **SiestaTime, Automation tool for Generation of Implants, Infrastructure and Reports - **
   - URL: <https://www.youtube.com/watch?v=3oAEO0eeiEI&list=PL7D3STHEa66QvxwnM8MSf8tUq1Zkhoq4P&index=21>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1813`; references: 1.
+  - Source: `Draft/RT.md:1819`; references: 1.
   - ID: `c552385977f1c3240548`.
 - **Practical Attacks Using HTTP Request Smuggling - @defparam(NahamCon2020)**
   - URL: <https://www.youtube.com/watch?v=3tpnuzFLU8g&list=PLKAaMVNxvLmAD0ZVUJ2IGFFC0APFZ5gzy&index=14>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3381`; references: 1.
+  - Source: `Draft/Web.md:3518`; references: 1.
   - ID: `8957c318b11768299aa7`.
 - **Toxic Proxies - Bypassing HTTPS - Defcon24 - Alex Chapman, Paul Stone**
   - URL: <https://www.youtube.com/watch?v=3vegxj5a1Rw&app=desktop>
@@ -1104,17 +1104,17 @@
 - **Automating API Penetration Testing using fuzzapi - AppSecUSA 2016**
   - URL: <https://www.youtube.com/watch?v=43G_nSTdxLk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:297`; references: 1.
+  - Source: `Draft/Web.md:363`; references: 1.
   - ID: `d714f66edf3bf82c7b99`.
 - **One Hundred Red Team Operations A Year - Ryan O'Horo**
   - URL: <https://www.youtube.com/watch?v=44LMdSFmmJw&list=PLEJJRQNh3v_PF6cecq0ES2w25JtoG631g&index=6&t=0s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4065`; references: 1.
+  - Source: `Draft/RT.md:4131`; references: 1.
   - ID: `ee27cf98bdd650fa021b`.
 - **Red Team Handcuffs - Caleb McGary(BSides Seattle(2020)**
   - URL: <https://www.youtube.com/watch?v=49hvmOAQwv4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4138`; references: 1.
+  - Source: `Draft/RT.md:4206`; references: 1.
   - ID: `05f0bcf5cedec64fa212`.
 - **Make Vishing Suck Less - Jonathan Stines(Layer8 2018)**
   - URL: <https://www.youtube.com/watch?v=4DphohJvnx8&index=5&list=UUynWOUeHAOflEQtJnrZpkNA>
@@ -1224,12 +1224,12 @@
 - **Adventures in Asymmetric Warfare - Will Schroeder(BSides Augusta2014)**
   - URL: <https://www.youtube.com/watch?v=53qQfCkVM_o>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:2235`; references: 1.
+  - Source: `Draft/RT.md:2226`; references: 1.
   - ID: `d6cb62a1d354718fbc59`.
 - **Waiter theres a compiler in my shellcode - Josh Stone(NolaCon2019)**
   - URL: <https://www.youtube.com/watch?v=55234oZ0EDU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:2065`; references: 1.
+  - Source: `Draft/RT.md:2042`; references: 1.
   - ID: `cc0d83091fec53644c5b`.
 - **Global Adversarial Capability Modeling**
   - URL: <https://www.youtube.com/watch?v=56T3JN09SrY>
@@ -1259,17 +1259,17 @@
 - **How to Embrace Hacker Culture For z/OS | Phil Young at SHARE in Seattle2015**
   - URL: <https://www.youtube.com/watch?v=5Ra4Ehmifh4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4270`; references: 1.
+  - Source: `Draft/RT.md:4344`; references: 1.
   - ID: `3127bad8a93fd9372e0c`.
 - **Modern Red Team Weaponization - Mike Felch(WWHF Deadwood 2020)**
   - URL: <https://www.youtube.com/watch?v=5W-Nlkh6nhg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:2836`; references: 1.
+  - Source: `Draft/RT.md:2923`; references: 1.
   - ID: `65b72e684571e8e5660c`.
 - **In the DOM - no one will hear you scream - Mario Heiderich(Garage4Hackers Ranchoddas Webcast2014)**
   - URL: <https://www.youtube.com/watch?v=5W-zGBKvLxk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4382`; references: 1.
+  - Source: `Draft/Web.md:4509`; references: 1.
   - ID: `c77f8b0fdbf77d230158`.
 - **Office 365 Incident Response - Alex Parsons(BSides Orlando2019)**
   - URL: <https://www.youtube.com/watch?v=5YfH4y5olMQ>
@@ -1279,7 +1279,7 @@
 - **It's the little things - Jon Bottarini(Disobey 2018)**
   - URL: <https://www.youtube.com/watch?v=5cIT3JN7R8w&list=PLLvAhAn5sGfhnVt1IhgrqCvBGe6AxwsjQ&index=11>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2439`; references: 1.
+  - Source: `Draft/Web.md:2558`; references: 1.
   - ID: `616a468ca4b3b4d2af25`.
 - **The NSA Playset - RF Retroreflectors - Defcon22**
   - URL: <https://www.youtube.com/watch?v=5gb3C80_wXI>
@@ -1319,7 +1319,7 @@
 - **Hacking with Hardware: Introducing the Universal RF USB Keyboard Emulation Device - URFUKED(Defcon18)**
   - URL: <https://www.youtube.com/watch?v=613BImjheoM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1588`; references: 1.
+  - Source: `Draft/RT.md:1617`; references: 1.
   - ID: `02dafa761fa6b5bd70a6`.
 - **The Art of Detection - Jay Dimartino(DEFCON27 Packet Hacking Village)**
   - URL: <https://www.youtube.com/watch?v=68-sFqv4FJE&list=PL9fPq3eQfaaButbVrT4iuAGpdLhCjEjM_&index=15>
@@ -1329,17 +1329,17 @@
 - **Purple Team War Stories - Pepijn Vissers(2021)**
   - URL: <https://www.youtube.com/watch?v=6AlZz8shw9c>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:682`; references: 1.
+  - Source: `Draft/RT.md:679`; references: 1.
   - ID: `3693bc05f2bdbc49cb9b`.
 - **Bash injection without letters or numbers - 33c3ctf hohoho (misc 350) - LiveOverflow(2017)**
   - URL: <https://www.youtube.com/watch?v=6D1LnMj0Yt0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3437`; references: 1.
+  - Source: `Draft/Web.md:3576`; references: 1.
   - ID: `36da01b37a1f3c2eb169`.
 - **BOLA, IDOR, MA, BFLA. Welcome to the OWASP API Top 10! - Adam Fisher(BSidesSLC 2020)**
   - URL: <https://www.youtube.com/watch?v=6Nu1UU2ny2I&list=PLqVzh0_XpLfSJ2Okt38acDdO_xu2zKYmK&index=11&t=0s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:262`; references: 1.
+  - Source: `Draft/Web.md:324`; references: 1.
   - ID: `eefd1709c1349490d9a1`.
 - **Understanding Modern EDR Tools: How They Work, How They Provide Value, and How to Bypass Them - Nick Landers(2021**
   - URL: <https://www.youtube.com/watch?v=6OF6lA0kCuY>
@@ -1374,7 +1374,7 @@
 - **Edge Side Include Injection: Abusing Caching Servers into SSRF and Transparent Session Hijacking - Louis Dion-Marcil(BHUSA2018)**
   - URL: <https://www.youtube.com/watch?v=6t50uRAxFT8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3168`; references: 1.
+  - Source: `Draft/Web.md:3315`; references: 1.
   - ID: `7d6f9a3e971a3d7d9edb`.
 - **Hack Apart Your Career: How to Fund Doing What You Love - John Grigg(WWHF2019)**
   - URL: <https://www.youtube.com/watch?v=6yaVmcPrhkA>
@@ -1384,7 +1384,7 @@
 - **Exploitation with Reverse Shell and Infection with PowerShell using VBS - Filipi PIres(HacktivityCon RTV2021)**
   - URL: <https://www.youtube.com/watch?v=73f6Jei3W8M>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:683`; references: 1.
+  - Source: `Draft/RT.md:680`; references: 1.
   - ID: `67da46df675e64368aaa`.
 - **20 Ways Past Secure Boot - Job de Haas - Troopers14**
   - URL: <https://www.youtube.com/watch?v=74SzIe9qiM8>
@@ -1439,7 +1439,7 @@
 - **Piercing The Veil: Server Side Request Forgery Attacks On Internal Networks - Alyssa Herrera(Hack.lu2019)**
   - URL: <https://www.youtube.com/watch?v=7J-5mTc2e8A>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4034`; references: 1.
+  - Source: `Draft/Web.md:4171`; references: 1.
   - ID: `2a6b9a55fe07540823a1`.
 - **What Event Logs? Part 1: Attacker Tricks to Remove Event Logs - Matt Bromiley(SANS DFIR 2018)**
   - URL: <https://www.youtube.com/watch?v=7JIftAw8wQY>
@@ -1454,7 +1454,7 @@
 - **QCSD: A QUIC Client-Side Website-Fingerprinting Defence Framework - Jean-Pierre Smith, Luca Dolfi, Prateek Mittal, Adrian Perrig(2022)**
   - URL: <https://www.youtube.com/watch?v=7Qe8ArVWLUs>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2514`; references: 1.
+  - Source: `Draft/Web.md:2643`; references: 1.
   - ID: `6131345ce7ec2bb93e54`.
 - **Sedating the Watchdog Abusing Security Products to Bypass Windows Protections - Tomer Bit - BSidesSF**
   - URL: <https://www.youtube.com/watch?v=7RKHux8QJfU>
@@ -1474,7 +1474,7 @@
 - **Cross-Site Request Forgery (CSRF) | Complete Guide - Rana Khalil(2021)**
   - URL: <https://www.youtube.com/watch?v=7bTNMSqCMI0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3040`; references: 1.
+  - Source: `Draft/Web.md:3191`; references: 1.
   - ID: `d38c0e441cd96be4ff40`.
 - **Threat Hunting via Sysmon - Eric Conrad(SANS Blue Team Summit 2019)**
   - URL: <https://www.youtube.com/watch?v=7dEfKn70HCI>
@@ -1504,7 +1504,7 @@
 - **The hidden horrors that 3 years of global red-teaming, Jos van der Peet**
   - URL: <https://www.youtube.com/watch?v=7z63HrEiQUY&index=10&list=PLwZycuzv10iLBFwRIWNAR-s4iuuUMRuEB>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4058`; references: 1.
+  - Source: `Draft/RT.md:4124`; references: 1.
   - ID: `a99313fff9dcb7d574eb`.
 - **Please Inject me, a X64 code injection - Alon Weinberg(DeepInstinct2019)**
   - URL: <https://www.youtube.com/watch?v=8-TcLgkPeLc>
@@ -1544,12 +1544,12 @@
 - **Embrace the Red Enhancing detection capabilities with adversary simulation - Mauricio Velazco(BSides Charm2019)**
   - URL: <https://www.youtube.com/watch?v=8JFP1wj37Vk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:670`; references: 1.
+  - Source: `Draft/RT.md:667`; references: 1.
   - ID: `78c46d0b4c7c1511bec9`.
 - **Why I Love Offensive Work, Why I don't Love Offensive Work - Halvar Flake(OffensiveCon20)**
   - URL: <https://www.youtube.com/watch?v=8QRnOpjmneo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:203`; references: 1.
+  - Source: `Draft/RT.md:264`; references: 1.
   - ID: `6df9ed64a91a68ce4b13`.
 - **Six Degrees of Infiltration - Sacha Faust(BSidesSF 2018)**
   - URL: <https://www.youtube.com/watch?v=8TV9TSNh7pA>
@@ -1559,7 +1559,7 @@
 - **Reverse engineering obfuscated JavaScript - PopUnder Chrome 59 - LiveOverflow**
   - URL: <https://www.youtube.com/watch?v=8UqHCrGdxOM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1260`; references: 1.
+  - Source: `Draft/Web.md:1399`; references: 1.
   - ID: `807c9b6df14642837bbc`.
 - **0-day streams: pdfcrack**
   - URL: <https://www.youtube.com/watch?v=8VLNPIIgKbQ&app=desktop>
@@ -1599,7 +1599,7 @@
 - **WWHF (Virtual): DOT NET Advanced Malware Development - Joff Thyer(2020)**
   - URL: <https://www.youtube.com/watch?v=8lk6VhmlhoI&list=PLXF21PFPPXTPwX8mccVIQB5THhU_paWmN&index=29>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:2840`; references: 1.
+  - Source: `Draft/RT.md:2927`; references: 1.
   - ID: `56022aa65fe5780d775c`.
 - **Detecting macOS Compromise with Venator - Richie Cyrus(Objective by the Sea v2.0)**
   - URL: <https://www.youtube.com/watch?v=8oMxegxZva8&list=PLliknDIoYszvTDaWyTh6SYiTccmwOsws8&index=6>
@@ -1609,7 +1609,7 @@
 - **Server-Side Browsing Considered Harmful - Nicolas Gregoire(AppSec EU15)**
   - URL: <https://www.youtube.com/watch?v=8t5-A4ASTIU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4024`; references: 1.
+  - Source: `Draft/Web.md:4161`; references: 1.
   - ID: `4e771a34cad76184eb04`.
 - **Dancing with COM - Deep dive into understanding Component Object Model -  DuMp-GuY TrIcKsTeR(2021)**
   - URL: <https://www.youtube.com/watch?v=8tjrFm2K30Q>
@@ -1634,12 +1634,12 @@
 - **OAuth 2.0 and OpenID Connect (in plain English) - Nate Barbettini(OktaDev)**
   - URL: <https://www.youtube.com/watch?v=996OiexHze0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1617`; references: 1.
+  - Source: `Draft/Web.md:1783`; references: 1.
   - ID: `82afe8e49ffb927a8478`.
 - **Deconstructing REST Security by David Blevins(DevoxxUSA2017)**
   - URL: <https://www.youtube.com/watch?v=9CJ_BAeOmW0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:322`; references: 1.
+  - Source: `Draft/Web.md:392`; references: 1.
   - ID: `0536988380c839e147c7`.
 - **\[TROOPERS15\] Michael Ossmann - RF Retroflectors, Emission Security and SDR**
   - URL: <https://www.youtube.com/watch?v=9DABAS-PCFM>
@@ -1704,7 +1704,7 @@
 - **Victor or Victim Strategies for Avoiding an InfoSec Cold War - Jason Lang, Stuart McIntosh(Derbycon 2018)**
   - URL: <https://www.youtube.com/watch?v=9_cZ5xn-huc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4361`; references: 1.
+  - Source: `Draft/RT.md:4444`; references: 1.
   - ID: `05202a8e09ffedbddf62`.
 - **Fantastic Red Team Attacks and How To Find Them - Casey Smith, Ross Wolf(BHUSA2019)**
   - URL: <https://www.youtube.com/watch?v=9bUrVgP8Duk>
@@ -1724,7 +1724,7 @@
 - **DIY Blue Teaming - Vyrus(ShellCon2018)**
   - URL: <https://www.youtube.com/watch?v=9i7GA4Z2vcM&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:425`; references: 1.
+  - Source: `Draft/Defense.md:294`; references: 1.
   - ID: `b69988f6ff6e8776f586`.
 - **https://www.youtube.com/watch?v=9iiQlBaGJQA&list=PL4pmLxkc7CTcukIlpD0UThT7Y_K09oxXe&index=7&t=12s**
   - URL: <https://www.youtube.com/watch?v=9iiQlBaGJQA&list=PL4pmLxkc7CTcukIlpD0UThT7Y_K09oxXe&index=7&t=12s>
@@ -1774,7 +1774,7 @@
 - **Weird proxies/2 and a bit of magic  - Aleksei Tiurin(ZeroNights2021)**
   - URL: <https://www.youtube.com/watch?v=ADdG4MapO10>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2186`; references: 1.
+  - Source: `Draft/Web.md:2326`; references: 1.
   - ID: `98dd9812b56806ac7251`.
 - **Evading Autoruns - Kyle Hanslovan, Chris Bisnett(DerbyCon7)**
   - URL: <https://www.youtube.com/watch?v=AEmuhCwFL5I&app=desktop>
@@ -1789,7 +1789,7 @@
 - **Detect Me If You Can Ben Ten - Derbycon7**
   - URL: <https://www.youtube.com/watch?v=AF3arWoKfKg&index=23&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4099`; references: 1.
+  - Source: `Draft/RT.md:4167`; references: 1.
   - ID: `d5d4f333d22c749b17b8`.
 - **Rocking the Pocket Book: Hacking Chemical Plant for Competition and Extortion - Marina Krotofil - Jason Larsen**
   - URL: <https://www.youtube.com/watch?v=AL8L76n0Q9w>
@@ -1799,12 +1799,12 @@
 - **Liar, Liar: a first-timer "red-teaming" under unusual restrictions. - Mike Loss(Kawaiicon2019)**
   - URL: <https://www.youtube.com/watch?v=ASSjkkr4OCg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4064`; references: 1.
+  - Source: `Draft/RT.md:4130`; references: 1.
   - ID: `11b6ec34a0a12c6669ea`.
 - **Five phases of IRTOF: Kickstarting your organization's Red Team Operations programme - Abhijith B R(BSides Delhi 2020)**
   - URL: <https://www.youtube.com/watch?v=AThBgIE3cEI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:553`; references: 1.
+  - Source: `Draft/RT.md:541`; references: 1.
   - ID: `66ec931921328972aca3`.
 - **Attacking SQL Server CLR Assemblies Webinar - NetSPI**
   - URL: <https://www.youtube.com/watch?v=A_hZHwisRxc>
@@ -1839,7 +1839,7 @@
 - **High Value Adversary Emulations via In Person Purple Team Exercises - Jorge Orchilles(2020)**
   - URL: <https://www.youtube.com/watch?v=Ard7c-79X84>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:588`; references: 1.
+  - Source: `Draft/RT.md:572`; references: 1.
   - ID: `d85fea247243d1e49784`.
 - **DevSecOps State of the Union - Clint Gibler(BSidesSF 2019)**
   - URL: <https://www.youtube.com/watch?v=AusPKzwNnMg>
@@ -1849,7 +1849,7 @@
 - **Sandbox fingerprinting: Evadiendo entornos de análisis - Roberto Amado & Victor Calvo(RootedCon2020)**
   - URL: <https://www.youtube.com/watch?v=AyVgIttiUpQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:2024`; references: 1.
+  - Source: `Draft/RT.md:1997`; references: 1.
   - ID: `b2c10a9cf798ae1e264b`.
 - **Classic Misdirection: Social Engineering to Counter Surveillance - Peter Clemenko III(BSidesLV2015)**
   - URL: <https://www.youtube.com/watch?v=AysOwnSUmgg>
@@ -1884,7 +1884,7 @@
 - **JavaScript Obfuscation: It's All About the P-a-c-k-e-r-s — Or Katz(InfosecInTheCity2022)**
   - URL: <https://www.youtube.com/watch?v=BKku1-ZCJKo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1243`; references: 1.
+  - Source: `Draft/Web.md:1382`; references: 1.
   - ID: `4156bf9e8b927d405de9`.
 - **The Expert**
   - URL: <https://www.youtube.com/watch?v=BKorP55Aqvg>
@@ -1894,7 +1894,7 @@
 - **'Red Team: How to Succeed By Thinking Like the Enemy' - Council on Foreign Relations - Micah Zenko(2016)**
   - URL: <https://www.youtube.com/watch?v=BM2wYbu4EFY>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4097`; references: 1.
+  - Source: `Draft/RT.md:4165`; references: 1.
   - ID: `ed382f62cba9333161c9`.
 - **How to Use Python to Spy on Your Friends: Web APIs, Recon ng, & OSINT**
   - URL: <https://www.youtube.com/watch?v=BOjz7NfsLpA>
@@ -1904,7 +1904,7 @@
 - **HotPics 2021 - Emil Lerner(ZeroNights2021)**
   - URL: <https://www.youtube.com/watch?v=BQVoHLfAc8A>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2841`; references: 1.
+  - Source: `Draft/Web.md:2999`; references: 1.
   - ID: `e5702bc0b91de688f8fe`.
 - **Rooting SIM cards**
   - URL: <https://www.youtube.com/watch?v=BR0yWjQYnhQ>
@@ -1924,7 +1924,7 @@
 - **Burp Macro Auto Authentication - CyberSecurityTV(2020)**
   - URL: <https://www.youtube.com/watch?v=Ba2EzXP4swE>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4716`; references: 1.
+  - Source: `Draft/Web.md:4810`; references: 1.
   - ID: `188f0b3d9780d33fcbf3`.
 - **Hunting for Threats in Industrial Environments and Other Scary Places - Nick Tsamis(BSides Charm2019)**
   - URL: <https://www.youtube.com/watch?v=BbE_op7xhcI>
@@ -1984,22 +1984,22 @@
 - **Quick Retooling in Net for Red Teams - Dimitry Snezhkov(CircleCityCon5.0)**
   - URL: <https://www.youtube.com/watch?v=C04TD4dVLSk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:2064`; references: 1.
+  - Source: `Draft/RT.md:2041`; references: 1.
   - ID: `f1add665c87f245959b2`.
 - **Red Teaming Windows: Building a better Windows by hacking it - MS Ignite2017**
   - URL: <https://www.youtube.com/watch?v=CClpjtgaJVI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4107`; references: 1.
+  - Source: `Draft/RT.md:4175`; references: 1.
   - ID: `264083bd754509df7a93`.
 - **Got Cookies? Exploiting Vulnerabilities in Cookie Based Authentication - Harsh Bothra(Mayhem2021 RTV)**
   - URL: <https://www.youtube.com/watch?v=CE4w8uUi0Mw&list=PLruly0ngXhPEOYACFCsUfoGehbjNflUfu&index=2>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:625`; references: 1.
+  - Source: `Draft/Web.md:723`; references: 1.
   - ID: `e21d4c79e69503e6fa5e`.
 - **Breaking Parser Logic: Take Your Path Normalization off and Pop 0days Out! - Orange Tsai(2020)**
   - URL: <https://www.youtube.com/watch?v=CIhHpkybYsY>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1658`; references: 1.
+  - Source: `Draft/Web.md:1823`; references: 1.
   - ID: `089b1b768263335109fc`.
 - **EDR Evasion Primer For Red Teamers - Jorge Gimenez & Karsten Nohl(#HITB2022SIN)**
   - URL: <https://www.youtube.com/watch?v=CKfjLnEMfvI>
@@ -2019,7 +2019,7 @@
 - **Offensive Tradecraft: Defence Evasion - Paul Laîné(Securi-Tay 2020)**
   - URL: <https://www.youtube.com/watch?v=CUqKAaHQa14>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1940`; references: 1.
+  - Source: `Draft/RT.md:1904`; references: 1.
   - ID: `0b5a6a7d94167d3b6d2c`.
 - **How to safely conduct shenanigans EvilMog Renderman - Derbycon7**
   - URL: <https://www.youtube.com/watch?v=Ca0DA9Dq1IA&index=61&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3>
@@ -2029,7 +2029,7 @@
 - **Service Cloaking and Anonymous Access; Combining Tor with Single Packet Authorization (SPA) - Michael Rash(Defcon14)**
   - URL: <https://www.youtube.com/watch?v=Cbiojmk_N9E>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1705`; references: 1.
+  - Source: `Draft/RT.md:1699`; references: 1.
   - ID: `f8ba995e21edec02fa36`.
 - **Defcon 19: DIY Non-Destructive-Entry**
   - URL: <https://www.youtube.com/watch?v=ChbyaXBKNY8>
@@ -2044,7 +2044,7 @@
 - **15 Technique to Exploit File Upload Pages - Ebrahim Hegazy(HackIT-2017)**
   - URL: <https://www.youtube.com/watch?v=CmF9sEyKZNo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3303`; references: 1.
+  - Source: `Draft/Web.md:3443`; references: 1.
   - ID: `159b5df527604a6215e0`.
 - **Getting Cozy With OpenBSM Auditing On MacOS - Patrick Wardle**
   - URL: <https://www.youtube.com/watch?v=CqlpJ7rIT6M>
@@ -2059,7 +2059,7 @@
 - **An Introduction to Red Team Assessments | Payatu | Hrushikesh Kakade(2021)**
   - URL: <https://www.youtube.com/watch?v=D0VlGr6KVeM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:295`; references: 1.
+  - Source: `Draft/RT.md:362`; references: 1.
   - ID: `2406143b051a35c6df99`.
 - **Video Presentation**
   - URL: <https://www.youtube.com/watch?v=D21E_2sXqmo>
@@ -2074,7 +2074,7 @@
 - **How to Build a Pentest Dropbox - TheCyberMentor(2020)**
   - URL: <https://www.youtube.com/watch?v=D2t4ADQnBEk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1568`; references: 1.
+  - Source: `Draft/RT.md:1595`; references: 1.
   - ID: `21bf37238835036c90d1`.
 - **The NSA: Capabilities and Countermeasures\*\* - Bruce Schneier - ShmooCon 2014**
   - URL: <https://www.youtube.com/watch?v=D5JA8Ytk9EI>
@@ -2094,7 +2094,7 @@
 - **Tactical Burp Suite: Next steps webcast - SecureIdeas(2020)**
   - URL: <https://www.youtube.com/watch?v=DFnxptySDgI&feature=youtu.be>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4714`; references: 1.
+  - Source: `Draft/Web.md:4808`; references: 1.
   - ID: `22551f3c3e0f960763a5`.
 - **What would a real hacker do to your Active Directory**
   - URL: <https://www.youtube.com/watch?v=DH3v8bO-NCs>
@@ -2104,12 +2104,12 @@
 - **Internal Affairs: Hacking File System Access from the Web - Matthew Weeks(BHUSA2021)**
   - URL: <https://www.youtube.com/watch?v=DI2Vw-QRl_k>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:872`; references: 1.
+  - Source: `Draft/Web.md:973`; references: 1.
   - ID: `f48825f8e1d51c5cd9f7`.
 - **Threat Focused Purple Team Exercises (non Active Directory Edition) - Cedric Owens(2021)**
   - URL: <https://www.youtube.com/watch?v=DK9ZonIuD0k>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:680`; references: 1.
+  - Source: `Draft/RT.md:677`; references: 1.
   - ID: `2007bc832c07787a52a2`.
 - **Securi-Tay 2017 - A Window into Ring0**
   - URL: <https://www.youtube.com/watch?v=DLND8bKv27w>
@@ -2134,7 +2134,7 @@
 - **Tactical Exploiation - H.D. Moore, Valsmith(Defcon15)**
   - URL: <https://www.youtube.com/watch?v=DPwY5FylZfQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4157`; references: 1.
+  - Source: `Draft/RT.md:4227`; references: 1.
   - ID: `df3a9cda125d044b91bb`.
 - **Explanation here**
   - URL: <https://www.youtube.com/watch?v=DQ8orIurGxw>
@@ -2154,12 +2154,12 @@
 - **Pentest / Red Team Audit Logging - Mubix**
   - URL: <https://www.youtube.com/watch?v=DYHadkG9iFg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1718`; references: 1.
+  - Source: `Draft/RT.md:1716`; references: 1.
   - ID: `29f1165208d5b4ae0d14`.
 - **Baselining Behavior Tradecraft through Simulations - Dave Kennedy(WWHF19)**
   - URL: <https://www.youtube.com/watch?v=DgxZ8ssuI_o>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:201`; references: 3.
+  - Source: `Draft/Defense.md:128`; references: 3.
   - ID: `2ff8af94fb828edf65f8`.
 - **Hacking Macs from RSA- George Kurtz and Dmitri Alperovitch, Part 2 "Privilege Escalation"**
   - URL: <https://www.youtube.com/watch?v=Dh-XMkYOdE8&feature=emb_title>
@@ -2199,7 +2199,7 @@
 - **Video Presentation**
   - URL: <https://www.youtube.com/watch?v=E6LOQQiNjj0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3188`; references: 1.
+  - Source: `Draft/RT.md:3275`; references: 1.
   - ID: `263035f2fb1f549de241`.
 - **Leveraging Osquery For Enhanced Incident Response & Threat Hunting - Dimitrios Bougioukas(2019)**
   - URL: <https://www.youtube.com/watch?v=E6vJGEXCaLM>
@@ -2229,7 +2229,7 @@
 - **Advanced Red Teaming: All Your Badges Are Belong To Us - DEF CON 22 - Eric Smith and Josh Perrymon**
   - URL: <https://www.youtube.com/watch?v=EEGxifOAk48>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4091`; references: 1.
+  - Source: `Draft/RT.md:4159`; references: 1.
   - ID: `1d82ef416133218f70ed`.
 - **Running a Better Red Team Through Understanding ICS SCADA Adversary Tactics - SANS Webcast**
   - URL: <https://www.youtube.com/watch?v=ERnPuGvH_O0>
@@ -2249,7 +2249,7 @@
 - **Damn GraphQL - Defending and Attacking APIs - Dolev Farhi(BSides Vancouver(2021)**
   - URL: <https://www.youtube.com/watch?v=EVRf708-zq4&list=PLWHo0G0HmBgdwICgoEOdWHkDD6C9FJuhw&index=17>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:980`; references: 1.
+  - Source: `Draft/Web.md:1077`; references: 1.
   - ID: `31c2e43367bc53f1472a`.
 - **Attacking Active Directory - AS-REP Roasting - Conda(2020)**
   - URL: <https://www.youtube.com/watch?v=EVdwnBFtUtQ>
@@ -2269,7 +2269,7 @@
 - **Weaponizing Unicode Homographs Beyond IDNs - The Tarquin(DEFCON 26)**
   - URL: <https://www.youtube.com/watch?v=Ec1OOiG4RMA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3240`; references: 1.
+  - Source: `Draft/Web.md:3383`; references: 1.
   - ID: `502596d6ea57b5bcfb28`.
 - **Kernel Attacks through User-Mode Callbacks - Tarjei Mandt(BHUSA2011)**
   - URL: <https://www.youtube.com/watch?v=EdJMEBiisxU>
@@ -2289,12 +2289,12 @@
 - **The Art of Vulnerability Management - Alexandra Nassar, Harshil Parikh(OWASP AppSecCali 2019)**
   - URL: <https://www.youtube.com/watch?v=EkyY1q2-JBI&list=PLpr-xdpM8wG-bXotGh7OcWk9Xrc1b4pIJ&index=44>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:253`; references: 1.
+  - Source: `Draft/Defense.md:185`; references: 1.
   - ID: `10e50a9213dc04507bd5`.
 - **Attacking GraphQL's Auto-Correct - Somdev Sangwan(Null Ahmedabad(2021)**
   - URL: <https://www.youtube.com/watch?v=ElQmEn-6dpE&t=1980s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:979`; references: 1.
+  - Source: `Draft/Web.md:1076`; references: 1.
   - ID: `d2626018e1383983dba1`.
 - **DEF CON 17: Subverting the World Of Warcraft API**
   - URL: <https://www.youtube.com/watch?v=EnmoI2dRwX4>
@@ -2314,7 +2314,7 @@
 - **An Effective Approach to Software Obfuscation - Yu-Jye Tung(BSidesSF2020)**
   - URL: <https://www.youtube.com/watch?v=ExiXtdjNGlg&feature=share>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:2113`; references: 1.
+  - Source: `Draft/RT.md:2096`; references: 1.
   - ID: `654e8e80cb8ad672014d`.
 - **Deceiving the heavens to cross the sea - Jayson E Street - Defcon18**
   - URL: <https://www.youtube.com/watch?v=EzGwO5L9oq4&feature=player_embedded>
@@ -2334,12 +2334,12 @@
 - **The Art of Exploiting Logical Flaws in Web Applications - SaifAllah BenMassaoud(HITB2020)**
   - URL: <https://www.youtube.com/watch?v=FBXqUDEhumA&list=PLmv8T5-GONwQq16OhfaU77KCq7UQGiZsr&index=8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3584`; references: 1.
+  - Source: `Draft/Web.md:3727`; references: 1.
   - ID: `74351da71e15d71f6651`.
 - **Two New Ways To Exploit A Fixed Browser Fingerprinting Flaw - Xiaoyin Liu(BSidesMunic(2019)**
   - URL: <https://www.youtube.com/watch?v=FBjlrVD5rOs>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2513`; references: 1.
+  - Source: `Draft/Web.md:2642`; references: 1.
   - ID: `6579030d1f46fe190ca0`.
 - **https://www.youtube.com/watch?v=FBuTX6brrsA**
   - URL: <https://www.youtube.com/watch?v=FBuTX6brrsA>
@@ -2384,12 +2384,12 @@
 - **https://www.youtube.com/watch?v=FTeE3OrTNoA**
   - URL: <https://www.youtube.com/watch?v=FTeE3OrTNoA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1233`; references: 1.
+  - Source: `Draft/Web.md:1372`; references: 1.
   - ID: `bc18a7d5c25c53478846`.
 - **Red Teaming Back and Forth 5ever - Fuzzynop(DerbyconIV)**
   - URL: <https://www.youtube.com/watch?v=FTiBwFJQg64>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4085`; references: 1.
+  - Source: `Draft/RT.md:4153`; references: 1.
   - ID: `4ce31f1a09cdac0d4af5`.
 - **Functional Cloud C2 - Chris Truncer(SANS HackFest Summit 2020)**
   - URL: <https://www.youtube.com/watch?v=FYZWOBR3g3o&list=PLdVJWiil7RxoW8rBeKc0flY8bRuD3M68L&index=13>
@@ -2399,7 +2399,7 @@
 - **Cuddling the Cozy Bear, Emulating APT29 - Jorge OrchillesCyber Junegle DEF CON Red Team Village2020)**
   - URL: <https://www.youtube.com/watch?v=Fa4GHF_OVVc&list=PLruly0ngXhPGvyl-gOp4d_TvIiedloX1l&index=10>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:373`; references: 1.
+  - Source: `Draft/RT.md:413`; references: 1.
   - ID: `edde4aacded8b59459aa`.
 - **https://www.youtube.com/watch?v=Fahp8U1_JGY**
   - URL: <https://www.youtube.com/watch?v=Fahp8U1_JGY>
@@ -2419,7 +2419,7 @@
 - **Staying # & Bringing Covert Injection Tradecraft to .NET - The Wover & Ruben Boonen(BlueHat IL 2020)**
   - URL: <https://www.youtube.com/watch?v=FuxpMXTgV9s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3110`; references: 1.
+  - Source: `Draft/RT.md:3197`; references: 1.
   - ID: `b9aa2c94e739357b9cf2`.
 - **Staying # & Bringing Covert Injection Tradecraft to .NET - The Wover, Ruben Boonen(BlueHat IL 2020)**
   - URL: <https://www.youtube.com/watch?v=FuxpMXTgV9s&feature=share>
@@ -2429,7 +2429,7 @@
 - **Web Cache Deception attack: A new web attack vector - **
   - URL: <https://www.youtube.com/watch?v=FwFKaXM3QJ0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2876`; references: 1.
+  - Source: `Draft/Web.md:3032`; references: 1.
   - ID: `38894b2c50a3b600bcee`.
 - **Threat Hunting Beacon Analysis - Chris Brenton(2018)**
   - URL: <https://www.youtube.com/watch?v=FzGbVMntLT0>
@@ -2469,7 +2469,7 @@
 - **Hillbilly Storytime - Pentest Fails - Adam Compton**
   - URL: <https://www.youtube.com/watch?v=GSbKeTPv2TU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4056`; references: 1.
+  - Source: `Draft/RT.md:4122`; references: 1.
   - ID: `c81c0ddc2eb9e1950777`.
 - **Auditing and Bypassing Windows Defender Application Control - Matt Graeber**
   - URL: <https://www.youtube.com/watch?v=GU5OS7UN8nY>
@@ -2484,7 +2484,7 @@
 - **Malproxying: Leave Your Malware at Home - Hila Cohen, Amit Waisel(Defcon27)**
   - URL: <https://www.youtube.com/watch?v=GYZx0oJU1nI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1935`; references: 1.
+  - Source: `Draft/RT.md:1899`; references: 1.
   - ID: `4cd444a30b5b86c1e9ed`.
 - **Switches Get Stitches - Eireann Leverett(31c3)**
   - URL: <https://www.youtube.com/watch?v=GaeLWpow-u8>
@@ -2494,7 +2494,7 @@
 - **Browser as Botnet - Brannon Dorsey - Radical Networks 2017**
   - URL: <https://www.youtube.com/watch?v=GcXfu-EAECo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:409`; references: 1.
+  - Source: `Draft/Web.md:489`; references: 1.
   - ID: `150dbf5a0603f70ee4b1`.
 - **Mobile self-defense - Karsten Nohl**
   - URL: <https://www.youtube.com/watch?v=GeCkO0fWWqc>
@@ -2509,7 +2509,7 @@
 - **Popular Approaches to Preventing Code Injection Attacks are Dangerously Wrong - AppSecUSA 2017**
   - URL: <https://www.youtube.com/watch?v=GjK0bB4K2zA&app=desktop>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3462`; references: 1.
+  - Source: `Draft/Web.md:3610`; references: 1.
   - ID: `9b19ef3597fd695cc0b2`.
 - **Part 2 - Investigation Hollow Process Injection Using Memory Forensics - Monnappa K A**
   - URL: <https://www.youtube.com/watch?v=GlwEG1oLNvg>
@@ -2524,7 +2524,7 @@
 - **Using Chromedp to Hunt for Prototype Pollution - @TomNomNomDotCom(NahamCon2021)**
   - URL: <https://www.youtube.com/watch?v=Gv1nK6Wj8qM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3797`; references: 1.
+  - Source: `Draft/Web.md:3938`; references: 1.
   - ID: `545bdf80aca7b35aebbc`.
 - **Itzik Kotler | Goodbye Data, Hello Exfiltration - BSides Orlando**
   - URL: <https://www.youtube.com/watch?v=GwaIvm2HJKc>
@@ -2544,7 +2544,7 @@
 - **OAuth: When Things Go Wrong - Aaron Parecki(2019)**
   - URL: <https://www.youtube.com/watch?v=H6MxsFMAoP8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1620`; references: 1.
+  - Source: `Draft/Web.md:1786`; references: 1.
   - ID: `bb083984555f3282222d`.
 - **What Event Logs Part 2 Lateral Movement without Event Logs - Matt Bromiley(SANS DFIR 2018)**
   - URL: <https://www.youtube.com/watch?v=H8ybADELHzk>
@@ -2594,12 +2594,12 @@
 - **Intro to PHP Deserialization / Object Injection - Ippsec(2019)**
   - URL: <https://www.youtube.com/watch?v=HaW15aMzBUM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1726`; references: 1.
+  - Source: `Draft/Web.md:1889`; references: 1.
   - ID: `274b2f9009579113433a`.
 - **How mXSS attacks change everything we believed to know so far - Mario Heiderich - OWASP AppSec EU 2013**
   - URL: <https://www.youtube.com/watch?v=Haum9UpIQzU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4420`; references: 1.
+  - Source: `Draft/Web.md:4547`; references: 1.
   - ID: `7c52f9c1cd79bf4b2933`.
 - **DNS hijacking using cloud providers - Frans Ros-n**
   - URL: <https://www.youtube.com/watch?v=HhJv8CU-RIk>
@@ -2614,7 +2614,7 @@
 - **Lin Clark: A Cartoon Intro to WebAssembly | JSConf EU 2017**
   - URL: <https://www.youtube.com/watch?v=HktWin_LPf4&app=desktop>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2104`; references: 1.
+  - Source: `Draft/Web.md:2249`; references: 1.
   - ID: `77e59901481ff34ed8c2`.
 - **Practical tips for defending web  applications in the age of agile/DevOps - Zane Lackey**
   - URL: <https://www.youtube.com/watch?v=Hmu21p9ybWs>
@@ -2624,12 +2624,12 @@
 - **Implementation Pitfalls Of OAuth 2.0 - Samit Anwer(GreHack2019)**
   - URL: <https://www.youtube.com/watch?v=HoSpCXg97Qc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1625`; references: 1.
+  - Source: `Draft/Web.md:1791`; references: 1.
   - ID: `a7c5f3cc3ba0c1abda31`.
 - **JavaScript for Pentesters. - BitsPlease**
   - URL: <https://www.youtube.com/watch?v=HptfL5WRYF8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1225`; references: 1.
+  - Source: `Draft/Web.md:1364`; references: 1.
   - ID: `b502d22f908313e232e0`.
 - **Using JA3. Asking for a friend? - Justin Warner, Ed Miles(BSides DC 2019)**
   - URL: <https://www.youtube.com/watch?v=HrP6Ep3xgQM>
@@ -2659,7 +2659,7 @@
 - **Template Injection Workshop: Twig, Jinja, Freemaker and more - GoSecure(2020)**
   - URL: <https://www.youtube.com/watch?v=I7xQZOvZzIw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4146`; references: 1.
+  - Source: `Draft/Web.md:4281`; references: 1.
   - ID: `c7bd49860c8fb864906c`.
 - **Building a Secure DevOps Pipeline - Matt Tesauro, Aaron Weaver(OWASP AppSecUSA 2017)**
   - URL: <https://www.youtube.com/watch?v=IAzPKzwY-ks>
@@ -2694,7 +2694,7 @@
 - **Finally! HOW TO solve the INTIGRITI Easter XSS challenge using only Chrome DEVTOOLS! - ST0K**
   - URL: <https://www.youtube.com/watch?v=IhPsBMBDFcg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4407`; references: 1.
+  - Source: `Draft/Web.md:4534`; references: 1.
   - ID: `5d1cab36e0e89318fde5`.
 - **Modeling Password Creation Habits with Probabilistic Context Free Grammars - Dr Matt Weir(BSidesLV2016)**
   - URL: <https://www.youtube.com/watch?v=IjqjVduCB6k>
@@ -2734,22 +2734,22 @@
 - **API Throwdown: RPC vs REST vs GraphQL - Nate Barbettini(Iterate 2018)**
   - URL: <https://www.youtube.com/watch?v=IvsANO0qZEg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:234`; references: 1.
+  - Source: `Draft/Web.md:290`; references: 1.
   - ID: `dce80e29704556870dad`.
 - **Kim Jong-il and Me: How to Build a Cyber Army to Defeat the U.S. - Charlie Miller(Defcon18)**
   - URL: <https://www.youtube.com/watch?v=IxSrn4wmjxM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4359`; references: 1.
+  - Source: `Draft/RT.md:4442`; references: 1.
   - ID: `779947489a219f8cfd17`.
 - **Presentation**
   - URL: <https://www.youtube.com/watch?v=J0otoKRh1Vk&app=desktop>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2353`; references: 1.
+  - Source: `Draft/Web.md:2463`; references: 1.
   - ID: `be5850a9ea58fb9f65a8`.
 - **JavaScript Prototype Pollution - Part 1 - HTTPVoid(2020)**
   - URL: <https://www.youtube.com/watch?v=J3MIOIqvV8w>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3756`; references: 1.
+  - Source: `Draft/Web.md:3897`; references: 1.
   - ID: `2ae932134dc521d480d3`.
 - **Anti-Forensics and Anti-Anti-Forensics Attacks - Michael Perkins**
   - URL: <https://www.youtube.com/watch?v=J4x8Hz6_hq0>
@@ -2779,7 +2779,7 @@
 - **Buckle It Up (Or Shells Die!) – Will Schroeder & Lee Christensen (SO-CON 2020)**
   - URL: <https://www.youtube.com/watch?v=JC4_JypohcI&list=PLJK0fZNGiFU-2vFpjnt96j_VSuQVTkAnO&index=8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4147`; references: 1.
+  - Source: `Draft/RT.md:4215`; references: 1.
   - ID: `acc5e03a1316819564d0`.
 - **Aligning Security Metrics With Business Initiatives - Rekha Shenoy(2014)**
   - URL: <https://www.youtube.com/watch?v=JDbwqokV2AM>
@@ -2839,7 +2839,7 @@
 - **JSON Web Tokens Suck - Randall Degges (DevNet Create 2018)**
   - URL: <https://www.youtube.com/watch?v=JdGOb7AxUo0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1485`; references: 1.
+  - Source: `Draft/Web.md:1654`; references: 1.
   - ID: `4c2b005f2413860e8ea7`.
 - **Get-GPTrashFire - Mike Loss(BSides Canberra2018)**
   - URL: <https://www.youtube.com/watch?v=JfyiWspXpQo>
@@ -2884,7 +2884,7 @@
 - **Hack the Legacy: IBM I aka AS400 Revealed - Bart Kulach(Defcon23)**
   - URL: <https://www.youtube.com/watch?v=JsqUZ3xGdLc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4281`; references: 1.
+  - Source: `Draft/RT.md:4355`; references: 1.
   - ID: `eb94f62ea148cc32fa0b`.
 - **Introduction to Lockpicking and Physical Security - DEFCON 13**
   - URL: <https://www.youtube.com/watch?v=JupQ3BpKGYg>
@@ -2899,7 +2899,7 @@
 - **Defending the Enterprise Against Network Infrastructure Attacks  - Paul Coggin - Troopers15**
   - URL: <https://www.youtube.com/watch?v=K0X3RDf5XK8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:684`; references: 1.
+  - Source: `Draft/Defense.md:346`; references: 1.
   - ID: `1a244fe4d4b315ec5748`.
 - **Active Directory: What can make your million dollar SIEM go blind? - Vincent Le Toux, Benjamin Delpy**
   - URL: <https://www.youtube.com/watch?v=KILnU4FhQbc>
@@ -2909,12 +2909,12 @@
 - **Mainframed: The Secrets Inside that Black Box \[Shmoocon 2013\] - Philip Young**
   - URL: <https://www.youtube.com/watch?v=KIavTQeQqSw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4278`; references: 1.
+  - Source: `Draft/RT.md:4352`; references: 1.
   - ID: `086f765a1a746116831a`.
 - **Tradecraft Development in Adversary Simulations - Fatih Ozavci(Defcon29 Adversary Village)**
   - URL: <https://www.youtube.com/watch?v=KJsVVEn4fFw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:381`; references: 2.
+  - Source: `Draft/RT.md:421`; references: 2.
   - ID: `880869650b0ed2f059a4`.
 - **https://www.youtube.com/watch?v=KL4R4WV9MdY**
   - URL: <https://www.youtube.com/watch?v=KL4R4WV9MdY>
@@ -2934,7 +2934,7 @@
 - **A Tale of Two Headers: A Formal Analysis of Inconsistent Click-Jacking Protection on the Web - Stefano Calzavara, Sebastian Roth, Alvise Rabitti, Venezia; Michael Backes, Ben Stock(2020)**
   - URL: <https://www.youtube.com/watch?v=KPXA6mairR0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2957`; references: 1.
+  - Source: `Draft/Web.md:3111`; references: 1.
   - ID: `fef069596734867de375`.
 - **https://www.youtube.com/watch?v=KPzhTqwf0bA&list=PLYvhPWR_XYJmwgLkZbjoEOnf2I1zkylz8&index=7**
   - URL: <https://www.youtube.com/watch?v=KPzhTqwf0bA&list=PLYvhPWR_XYJmwgLkZbjoEOnf2I1zkylz8&index=7>
@@ -2954,12 +2954,12 @@
 - **Marshalling Pickles - Chris Frohoff & Gabriel Lawrence(OWASPAppSec California2015)**
   - URL: <https://www.youtube.com/watch?v=KSA7vUkXGSg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3904`; references: 3.
+  - Source: `Draft/Web.md:4042`; references: 3.
   - ID: `b9ce077c6a219a066b25`.
 - **Very creative way to turn Prototype Pollution into RCE in kibana - Bug Bounty Reports Explained - gregxsunday(2020)**
   - URL: <https://www.youtube.com/watch?v=KVDOIFeRaPQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3792`; references: 1.
+  - Source: `Draft/Web.md:3933`; references: 1.
   - ID: `c2ce48a1f456f2593cf9`.
 - **Introduction to USB and Fuzzing - Matt DuHarte - Defcon23**
   - URL: <https://www.youtube.com/watch?v=KWOTXypBt4E>
@@ -2979,7 +2979,7 @@
 - **OPSEC Obsessed - Jake Kamieniak(x33fcon2020)**
   - URL: <https://www.youtube.com/watch?v=KdgUec9pU9U&list=PL7ZDZo2Xu330gMHAoeGvH9QkCJMC-qgeK&index=18>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:614`; references: 1.
+  - Source: `Draft/RT.md:602`; references: 1.
   - ID: `0c0397252cceb6972bfa`.
 - **Exploiting Windows COM/WinRT ServicesExploiting Windows COM/WinRT Services - Xuefeng Li, Zhiniang Peng(2021)**
   - URL: <https://www.youtube.com/watch?v=KeQ0PHrHDVs>
@@ -2994,12 +2994,12 @@
 - **GameOver Zeus: Badguys And Backends - Elliott Peterson, Michael Sandee, Tillmann Werner(BHUSA2015)**
   - URL: <https://www.youtube.com/watch?v=KkEVwswqIBs>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4092`; references: 1.
+  - Source: `Draft/RT.md:4160`; references: 1.
   - ID: `7316126b2f88902bed94`.
 - **URL validation bypass | Filedescriptor solves Intigriti's XSS challenge - Reconless(2020)**
   - URL: <https://www.youtube.com/watch?v=KpkrTUHoWsQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4526`; references: 1.
+  - Source: `Draft/Web.md:4653`; references: 1.
   - ID: `91767a57064cd49689e4`.
 - **BYOI (Bring Your Own Interpreter) payloads - Marcello Salvati(RomHack2020)**
   - URL: <https://www.youtube.com/watch?v=KvMBHNo7mZk&list=PL1UJVNzpT9Z4fWDJnVbq_gEs0udEKpat6&index=2>
@@ -3049,7 +3049,7 @@
 - **Adversary Emulation and Red Team Exercises - Jorge Orchilles(2020)**
   - URL: <https://www.youtube.com/watch?v=LOv7D384CiI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:369`; references: 1.
+  - Source: `Draft/RT.md:409`; references: 1.
   - ID: `7bfc7b31c3268b0a7bf1`.
 - **Keynote by Jayson Street at leHACK 2019 in Paris**
   - URL: <https://www.youtube.com/watch?v=LX5Xy3a2uJU>
@@ -3064,7 +3064,7 @@
 - **Exploiting XXE Vulnerabilities In File Parsing Functionality - Willis Vandevanter - BHUSA 2015**
   - URL: <https://www.youtube.com/watch?v=LZUlw8hHp44>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4590`; references: 1.
+  - Source: `Draft/Web.md:4695`; references: 1.
   - ID: `d3cf7970e4fa68df6147`.
 - **From MS08 067 To EternalBlue by Denis Isakov - BSides Manchester2017**
   - URL: <https://www.youtube.com/watch?v=LZ_G6RdqrHA&index=13&list=PLcgqQkap1lNrOBNCXqpPqpPAqckxv0XhP>
@@ -3084,7 +3084,7 @@
 - **Security Necromancy: Further Adventures in Mainframe Hacking - Soldier of Fortran and BigEndianSmalls((Defcon23))**
   - URL: <https://www.youtube.com/watch?v=LgmqiugpVyU&feature=youtu.be>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4266`; references: 1.
+  - Source: `Draft/RT.md:4340`; references: 1.
   - ID: `f683472a4a11dbb4039b`.
 - **Kerberos & Attacks 101 - Tim Medin(SANS Webcast)**
   - URL: <https://www.youtube.com/watch?v=LmbP-XD1SC8>
@@ -3114,7 +3114,7 @@
 - **New Exploit Technique In Java Deserialization Attack - Yang Zhang, Yongtao Wang, Keyi Li, Kunzhe Chai(BHEU2019)**
   - URL: <https://www.youtube.com/watch?v=Lv9BC_bYaI8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3908`; references: 1.
+  - Source: `Draft/Web.md:4046`; references: 1.
   - ID: `d2acea69e860f3627cdf`.
 - **Talk**
   - URL: <https://www.youtube.com/watch?v=LxjnI5h_kls>
@@ -3124,7 +3124,7 @@
 - **Are You Properly Using JWTs? - Dmitry Sotnikov(AppSec California2020)**
   - URL: <https://www.youtube.com/watch?v=M3jA0bGDCso>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1490`; references: 1.
+  - Source: `Draft/Web.md:1659`; references: 1.
   - ID: `b458c340964e0d18897a`.
 - **Defending against PowerShell attacks - in theory, and in practice by Lee holmes**
   - URL: <https://www.youtube.com/watch?v=M5bkHUQy-JA&feature=youtu.be>
@@ -3159,7 +3159,7 @@
 - **Protect Your Payloads Modern Keying Techniques - Leo Loobeek(Derybcon2018)**
   - URL: <https://www.youtube.com/watch?v=MHc3XP3XC4I>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3896`; references: 1.
+  - Source: `Draft/RT.md:4018`; references: 1.
   - ID: `028c26d9314b9b5610b2`.
 - **\[Attack\]tive Directory: Compromising a Network in 20 Minutes Through Active Directory - Ryan Hausnecht(2021)**
   - URL: <https://www.youtube.com/watch?v=MIt-tIjMr08>
@@ -3169,7 +3169,7 @@
 - **Make JDBC Attacks Brilliant Again - Xu Yuanzhen & Chen Hongkun(HITBSI2021)**
   - URL: <https://www.youtube.com/watch?v=MJWI8YXH1lg&list=PLmv8T5-GONwQhUlGN2UhOAi8YxPaiYCDQ&index=8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1163`; references: 1.
+  - Source: `Draft/Web.md:1293`; references: 1.
   - ID: `20998f06ab0a0506d91b`.
 - **Measuring End-to-End Security Engineering - Davit Baghdasaryan, Garret Held(AppSecUSA 2017)**
   - URL: <https://www.youtube.com/watch?v=MLmQ4uSi4EU>
@@ -3194,12 +3194,12 @@
 - **The 10 (Unexpected) Ways I Pwned You! - Steve Campbell(DEFCon401 2020)**
   - URL: <https://www.youtube.com/watch?v=MYII6Zyds-c>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4145`; references: 1.
+  - Source: `Draft/RT.md:4213`; references: 1.
   - ID: `9312d5f71857f1f7e07c`.
 - **From root to SPECIAL - Pwning IBM Mainframes - Defcon22 - Philip Young**
   - URL: <https://www.youtube.com/watch?v=MZDIblU9pBw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4276`; references: 1.
+  - Source: `Draft/RT.md:4350`; references: 1.
   - ID: `d760e017bec3a4f1ae96`.
 - **Practical tips for defending web applications - Zane Lackey - devops Amsterdam 2017**
   - URL: <https://www.youtube.com/watch?v=Mae2iXUA7a4>
@@ -3229,7 +3229,7 @@
 - **Purple Team: Exposed - Mary Sawyer(ShellCon2018)**
   - URL: <https://www.youtube.com/watch?v=Mkh5cSnunrI&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN&index=15>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:642`; references: 1.
+  - Source: `Draft/RT.md:639`; references: 1.
   - ID: `915811e5c50520852d48`.
 - **Incident Response is HARRRRRD: But It Doesn't Have to Be - Michael Gough(WWHF2019)**
   - URL: <https://www.youtube.com/watch?v=MlxCjc6V_lc>
@@ -3239,17 +3239,17 @@
 - **Hardware Backdooring is Practical - Jonathan Brossard(Defcon20)**
   - URL: <https://www.youtube.com/watch?v=MqbvxrJqrPU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1590`; references: 1.
+  - Source: `Draft/RT.md:1619`; references: 1.
   - ID: `11d81f6b6011fdd7215b`.
 - **5 Unicode Vulnerabilities that could bi/yte you - Philippe Arteau**
   - URL: <https://www.youtube.com/watch?v=Mqg8e6lJ-E8&list=PLuUtcRxSUZUqhwo0e6j0hrqXifo8jItdl&index=12>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2009`; references: 1.
+  - Source: `Draft/Web.md:2156`; references: 1.
   - ID: `d54d7453f4a39c588480`.
 - **HTTP3 Security - Robin Marx(2021)**
   - URL: <https://www.youtube.com/watch?v=Mx8hDbQmj7I>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1115`; references: 1.
+  - Source: `Draft/Web.md:1238`; references: 1.
   - ID: `141e792b3aa7693df848`.
 - **Container Forensics: What to Do When Your Cluster is a Cluster - Maya Kaczorowski & Ann Wallace(CloudNativeConEU19) **
   - URL: <https://www.youtube.com/watch?v=MyXROAqO7YI&list=PLKDRii1YwXnLmd8ngltnf9Kzvbja3DJWx&index=7&t=0s>
@@ -3279,7 +3279,7 @@
 - **Web Cache Poisoning for Beginners(2020)**
   - URL: <https://www.youtube.com/watch?v=N6F2vngktrw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2900`; references: 1.
+  - Source: `Draft/Web.md:3056`; references: 1.
   - ID: `666b7b9522519e6efe41`.
 - **https://www.youtube.com/watch?v=NEjVJsKeV5k**
   - URL: <https://www.youtube.com/watch?v=NEjVJsKeV5k>
@@ -3319,7 +3319,7 @@
 - **Becoming a Yogi on Mac ATT&CK with OceanLotus Postures - Cat Self & Adam Pennington(OBTSv4.0/2021)**
   - URL: <https://www.youtube.com/watch?v=N_xBbDDycHo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:678`; references: 1.
+  - Source: `Draft/RT.md:675`; references: 1.
   - ID: `fca824763f82d36f24ad`.
 - **Becoming a Yogi on Mac ATT&CK with OceanLotus Postures - Cat Self, Adam Pennington(OBTSv4.0 2021)**
   - URL: <https://www.youtube.com/watch?v=N_xBbDDycHo&list=PLliknDIoYszvjA1Lix-Uce7ZDxS39J2ZY&index=5>
@@ -3334,7 +3334,7 @@
 - **Making Mongo Cry Attacking NoSQL for Pen Testers Russell Butturini**
   - URL: <https://www.youtube.com/watch?v=NgsesuLpyOg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3656`; references: 1.
+  - Source: `Draft/Web.md:3798`; references: 1.
   - ID: `84a36345e62836f178b8`.
 - **DEFCON 20: Can You Track Me Now? Government And Corporate Surveillance Of Mobile Geo-Location Data**
   - URL: <https://www.youtube.com/watch?v=NjuhdKUH6U4>
@@ -3344,7 +3344,7 @@
 - **Friday the 13th: Attacking JSON - Alvaro Muñoz & Oleksandr Mirosh(AppSecUSA 2017)**
   - URL: <https://www.youtube.com/watch?v=NqHsaVhlxAQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3948`; references: 1.
+  - Source: `Draft/Web.md:4086`; references: 1.
   - ID: `a901794d94f7de2cf599`.
 - **Tracking Activity and Abuse of PowerShell - Carlos Perez(PSConEU 2019)**
   - URL: <https://www.youtube.com/watch?v=O-80e7z4THo>
@@ -3384,7 +3384,7 @@
 - **Purple Maturity Model - Timothy Schulz(2021)**
   - URL: <https://www.youtube.com/watch?v=OAIugoIvpmw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:675`; references: 1.
+  - Source: `Draft/RT.md:672`; references: 1.
   - ID: `f2f7385cd22d66bb3f9c`.
 - **PowerPwning: Post-Exploiting By Overpowering PowerShell - Joe Bialek(Defcon21)**
   - URL: <https://www.youtube.com/watch?v=OAd68_SYQc8>
@@ -3424,7 +3424,7 @@
 - **Threat-based Purple Teaming with ATT&CK - Chris and Cody from MITRE(x33fcon 2018)**
   - URL: <https://www.youtube.com/watch?v=OYEP-YAKIn0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:654`; references: 2.
+  - Source: `Draft/RT.md:651`; references: 2.
   - ID: `687c534165cf7238b259`.
 - **"MacDoored" Bradley, OBTS v1.0**
   - URL: <https://www.youtube.com/watch?v=ObiSt_RYOOM>
@@ -3449,17 +3449,17 @@
 - **Using blue team techniques in red team ops - Mark Bergman & Marc Smeets(BruCON 0x0A)**
   - URL: <https://www.youtube.com/watch?v=OjtftdPts4g>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1725`; references: 2.
+  - Source: `Draft/RT.md:1723`; references: 2.
   - ID: `cc7c8047008d9a974e75`.
 - **Finding File Upload Bugs via Penetration Testing - Taekjin Lee, Seongil Wi, Suyoung Lee, Sooel Son(2020)**
   - URL: <https://www.youtube.com/watch?v=Ot0unJErC-g>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3316`; references: 1.
+  - Source: `Draft/Web.md:3456`; references: 1.
   - ID: `8dac583590ffc8c80442`.
 - **SiegeCast "COBALT STRIKE BASICS" with Tim Medin and Joe Vest(2021)**
   - URL: <https://www.youtube.com/watch?v=OtM6iegGYAQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:966`; references: 1.
+  - Source: `Draft/RT.md:968`; references: 1.
   - ID: `51615f04e0e36e62f181`.
 - **Repurposing OnionDuke: A Single Case Study Around Reusing Nation State Malware - BH USA 15**
   - URL: <https://www.youtube.com/watch?v=OuyLzkG16Uk>
@@ -3489,7 +3489,7 @@
 - **Adversary Emulation and the C2 Matrix - Jorge Orchilles(2020)**
   - URL: <https://www.youtube.com/watch?v=PDkn_v7gomU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:752`; references: 1.
+  - Source: `Draft/RT.md:745`; references: 1.
   - ID: `ed92c64473feaa5af09c`.
 - **Resilience In Complex Adaptive Systems - Richard Cook(Velocity NY 2013)**
   - URL: <https://www.youtube.com/watch?v=PGLYEDpNu60>
@@ -3509,7 +3509,7 @@
 - **Reverse engineering PopUnder trick for Chrome 60 - LiveOverflow**
   - URL: <https://www.youtube.com/watch?v=PPzRcZLNCPY>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1261`; references: 1.
+  - Source: `Draft/Web.md:1400`; references: 1.
   - ID: `bcdc898a24b14c19a520`.
 - **Fundamentals That Time Forgot - Jup1t3r  - BSides SLC**
   - URL: <https://www.youtube.com/watch?v=PQvUWImljOw>
@@ -3564,7 +3564,7 @@
 - **Building A Successful Internal Adversarial Simulation Team - C. Gates & C. Nickerson - BruCON 0x08(2016)**
   - URL: <https://www.youtube.com/watch?v=Q5Fu6AvXi_A&list=PLtb1FJdVWjUfCe1Vcj67PG5Px8u1VY3YD&index=1>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:539`; references: 1.
+  - Source: `Draft/RT.md:527`; references: 1.
   - ID: `b336af97a544006d606d`.
 - **Pushing Left Like A Boss - Tanya Janca**
   - URL: <https://www.youtube.com/watch?v=Q5Nt8VhXg-0>
@@ -3584,7 +3584,7 @@
 - **Breaking Red - Understanding Threats through Red Teaming - Joe Vest, James Tubberville(2017)**
   - URL: <https://www.youtube.com/watch?v=QPmgV1SRTJY>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4108`; references: 1.
+  - Source: `Draft/RT.md:4176`; references: 1.
   - ID: `bea54970bc2e7a2f8f02`.
 - **Social Engineering The Windows Kernel: Finding And Exploiting Token Handling Vulnerabilities - James Forshaw - BHUSA2015**
   - URL: <https://www.youtube.com/watch?v=QRpfvmMbDMg>
@@ -3609,7 +3609,7 @@
 - **The Rise Of Evil HID Devices - Franck Bitsch and Arthur Villeneuve(GreHack 2019)**
   - URL: <https://www.youtube.com/watch?v=Qhfqr3io3uw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1603`; references: 1.
+  - Source: `Draft/RT.md:1633`; references: 1.
   - ID: `fd218155d2b8cfaaf915`.
 - **Fire Away Sinking the Next Gen Firewall - Russell Butturini - Derbycon6**
   - URL: <https://www.youtube.com/watch?v=Qpty_f0Eu7Y>
@@ -3624,7 +3624,7 @@
 - **NodeJS: Remote Code Execution as a Service - Peabnuts123 – Kiwicon 2016**
   - URL: <https://www.youtube.com/watch?v=Qvtfagwlfwg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1336`; references: 1.
+  - Source: `Draft/Web.md:1493`; references: 1.
   - ID: `1e12ebf4afb9ba5c1899`.
 - **SniffAir An Open Source Framework for Wireless Security Assessments Matthew Eidelberg - DerbyCon7**
   - URL: <https://www.youtube.com/watch?v=QxVkr-3RK94&app=desktop>
@@ -3639,12 +3639,12 @@
 - **Penetration Testing Trends John Strand - Derbycon6**
   - URL: <https://www.youtube.com/watch?v=QyxdUe1iMNk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4228`; references: 1.
+  - Source: `Draft/RT.md:4294`; references: 1.
   - ID: `485893a11f966812fb6a`.
 - **the_storm/ Unexpected Execution: Wild Ways Code Execution can Occur in Python - Graham Bleaney(PyConUS2021**
   - URL: <https://www.youtube.com/watch?v=R1KrPc1IOeE&list=PL2Uw4_HvXqvYk1Y5P8kryoyd83L_0Uk5K&index=54>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1430`; references: 1.
+  - Source: `Draft/Web.md:1602`; references: 1.
   - ID: `0905cf5d00739b8e3b8a`.
 - **Generating Personalized Wordlists by Analyzing Targets Tweets - Utku Sen(DEFCON27 ReconVillage)**
   - URL: <https://www.youtube.com/watch?v=R3XuI9JUFDA&list=PL9fPq3eQfaaCkpP6XOD4uCQB6NpGrbujo&index=4&t=0s>
@@ -3669,7 +3669,7 @@
 - **A New Era of SSRF - Exploiting URL Parser in Trending Programming Languages - Orange Tsai(BHUSA2017)**
   - URL: <https://www.youtube.com/watch?v=R9pJ2YCXoJQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4026`; references: 2.
+  - Source: `Draft/Web.md:4163`; references: 2.
   - ID: `5bf86390fdb419ed393e`.
 - **Et tu Kerberos - Christopher Campbell**
   - URL: <https://www.youtube.com/watch?v=RIRQQCM4wz8>
@@ -3689,7 +3689,7 @@
 - **https://www.youtube.com/watch?v=RNt_e0WR1sc**
   - URL: <https://www.youtube.com/watch?v=RNt_e0WR1sc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:908`; references: 2.
+  - Source: `Draft/Web.md:1008`; references: 2.
   - ID: `8471b816ecf87c045730`.
 - **I'll Let Myself In Tactics of Physical Pentesters - Deviant Ollam -B-sides Orlando 2017**
   - URL: <https://www.youtube.com/watch?v=Rctzi66kCX4>
@@ -3709,12 +3709,12 @@
 - **Looping Surveillance Cameras through Live Editing - Van Albert and Banks - Defcon23**
   - URL: <https://www.youtube.com/watch?v=RoOqznZUClI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4094`; references: 1.
+  - Source: `Draft/RT.md:4162`; references: 1.
   - ID: `57f7f0d73afcb0fc4229`.
 - **Fighting the Toolset - Mudge**
   - URL: <https://www.youtube.com/watch?v=RoqVunX_sqA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:952`; references: 1.
+  - Source: `Draft/RT.md:954`; references: 1.
   - ID: `5b5cfeca54063332b2a1`.
 - **Critical .zip vulnerabilities? - Zip Slip and ZipperDown - LiveOverflow(2018**
   - URL: <https://www.youtube.com/watch?v=Ry_yb5Oipq0>
@@ -3759,12 +3759,12 @@
 - **JSMVCOMFG - To sternly look at JavaScript MVC and Templating Frameworks - Mario Heiderich**
   - URL: <https://www.youtube.com/watch?v=SLH_IgaQWjs>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1290`; references: 1.
+  - Source: `Draft/Web.md:1429`; references: 1.
   - ID: `6c617055c3d62d9da26c`.
 - **Smashing the Mainframe for Fun and Prison Time - Phillip Young - Hacktivity2014**
   - URL: <https://www.youtube.com/watch?v=SjtyifWTqmc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4269`; references: 1.
+  - Source: `Draft/RT.md:4343`; references: 1.
   - ID: `478efa2b2212fcb970bb`.
 - **Easy Ways To Bypass Anti-Virus Systems - Attila Marosi(Troopers14)**
   - URL: <https://www.youtube.com/watch?v=Sl1Sru3OwJ4>
@@ -3774,7 +3774,7 @@
 - **Open Source Adversary Simulation Toolset Review - Ryan Voloch(BSides Pittsburg(2019)**
   - URL: <https://www.youtube.com/watch?v=Sm0-YVa5po8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:377`; references: 1.
+  - Source: `Draft/RT.md:417`; references: 1.
   - ID: `797aaa9356f0b110a377`.
 - **Part 1**
   - URL: <https://www.youtube.com/watch?v=Sm4HM0xLhvg&list=PLk-dPXV5k8SEVgW0q_pY200xscjxL_xfz&index=6>
@@ -3834,7 +3834,7 @@
 - **Domain Fronting is Dead, Long Live Domain Fronting Using TLS 1.3 - Erik Hunstad(Defcon Safemode2020)**
   - URL: <https://www.youtube.com/watch?v=TDg092qe50g>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1400`; references: 1.
+  - Source: `Draft/RT.md:1426`; references: 1.
   - ID: `03e119af2043c50e5314`.
 - **A Voyage to Uncovering RPC Telemetry – Jonathan Johnson (SO-CON 2020)**
   - URL: <https://www.youtube.com/watch?v=TEHQwgd7i7Y&list=PLJK0fZNGiFU-2vFpjnt96j_VSuQVTkAnO&index=14>
@@ -3874,7 +3874,7 @@
 - **Adversarial Emulation - Bryson Bort BSidesAugusta2019)**
   - URL: <https://www.youtube.com/watch?v=TbX7T6WmrMo&list=PLEJJRQNh3v_PF6cecq0ES2w25JtoG631g&index=21>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:669`; references: 1.
+  - Source: `Draft/RT.md:666`; references: 1.
   - ID: `dc8f84c5ca1cd3b1b537`.
 - **https://www.youtube.com/watch?v=TfG9lBYCOq8**
   - URL: <https://www.youtube.com/watch?v=TfG9lBYCOq8>
@@ -3894,7 +3894,7 @@
 - **Abusing Webhooks for Command and Control - Dimitry Snezhkov - BSides LV 2017**
   - URL: <https://www.youtube.com/watch?v=TmLoTrJuung>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2164`; references: 1.
+  - Source: `Draft/Web.md:2306`; references: 1.
   - ID: `8f381a0aff4b1967c20b`.
 - **Touring the Darkside of the Internet. An Introduction to Tor - Defcon22**
   - URL: <https://www.youtube.com/watch?v=To5yarfAg_E>
@@ -3904,7 +3904,7 @@
 - **XSS a Paste Service - Pasteurize (web) Google CTF 2020 - LiveOVerflow(2020)**
   - URL: <https://www.youtube.com/watch?v=Tw7ucd2lKBk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4525`; references: 1.
+  - Source: `Draft/Web.md:4652`; references: 1.
   - ID: `852e9f67688c41f26a4e`.
 - **Now On Stage! Deep Hooks: Monitoring Native Execution In WOW64 Applications - Assaf Carlsbad, Yarden Shafir(BSidesTLV2018)**
   - URL: <https://www.youtube.com/watch?v=TzRXIrPrtuc>
@@ -3924,7 +3924,7 @@
 - **.NET Malware Threats: Internals And Reversing - Alexandre Borges(Defcon27)**
   - URL: <https://www.youtube.com/watch?v=UB3pVTO5izU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3601`; references: 1.
+  - Source: `Draft/RT.md:3698`; references: 1.
   - ID: `c9ae2940567218816ee2`.
 - **Smart Nest Thermostat A Smart Spy in Your Home**
   - URL: <https://www.youtube.com/watch?v=UFQ9AYMee_Q>
@@ -3954,7 +3954,7 @@
 - **Mechanizing the Methodology : Automating Discovery, Testing, and Alerting using Recon/Testing Tools and Amazon SES - Daniel Miessler(Defcon Safemode RTV2020)**
   - URL: <https://www.youtube.com/watch?v=URBnM6gGODo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2446`; references: 1.
+  - Source: `Draft/Web.md:2569`; references: 1.
   - ID: `f974b1d91067a3d5ddaa`.
 - **Abusing Access Tokens for UAC Bypasses - James Forshaw(ZeroNights18)**
   - URL: <https://www.youtube.com/watch?v=UTvOfmtNVKI&feature=youtu.be>
@@ -3989,7 +3989,7 @@
 - **DerbyCon 2017 Talk**
   - URL: <https://www.youtube.com/watch?v=Ul8uPvlOsug>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3711`; references: 1.
+  - Source: `Draft/RT.md:3814`; references: 1.
   - ID: `225b34899a0f3876c591`.
 - **Windows Rootkit Development Python prototyping to kernel level - RJ McDown, Joshua Theimer(Derbycon2017)**
   - URL: <https://www.youtube.com/watch?v=Ul8uPvlOsug&index=43&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3>
@@ -4009,7 +4009,7 @@
 - **Offensive Recon - Bug Hunter's Playbook - Harsh Bothra(2020)**
   - URL: <https://www.youtube.com/watch?v=UrdvDCb4Gz8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2535`; references: 1.
+  - Source: `Draft/Web.md:2670`; references: 1.
   - ID: `7779ccc623f8095d82ee`.
 - **POP POP RETN An Introduction to Writing Win32 Shellcode - Christopher Maddalena(Derbycon2017)**
   - URL: <https://www.youtube.com/watch?v=UstWmavrWwk>
@@ -4034,7 +4034,7 @@
 - **Spear phishing with Cobalt Strike - Raphael Mudge**
   - URL: <https://www.youtube.com/watch?v=V7UJjVcq2Ao>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1246`; references: 1.
+  - Source: `Draft/RT.md:1268`; references: 1.
   - ID: `00c8e6605eb3209af3be`.
 - **The Secret Lives of Debuggers - Lance Buttars - BSides SLC15**
   - URL: <https://www.youtube.com/watch?v=V8trrmIsdb0>
@@ -4054,7 +4054,7 @@
 - **Client-side Template Injection - ANZ Coders(2018**
   - URL: <https://www.youtube.com/watch?v=VDAAGm_HUQU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4130`; references: 1.
+  - Source: `Draft/Web.md:4265`; references: 1.
   - ID: `33858d4d907c200d2e45`.
 - **Malvertising: Under The Hood by Chris Boyd - BSides Manchester2017**
   - URL: <https://www.youtube.com/watch?v=VESvOsr91_M&index=1&list=PLcgqQkap1lNrOBNCXqpPqpPAqckxv0XhP>
@@ -4114,12 +4114,12 @@
 - **\[Live\] Reverse Engineering new PopUnder for Chrome 63 on Windows - LiveOverflow**
   - URL: <https://www.youtube.com/watch?v=VcFQeimLH1c>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1263`; references: 1.
+  - Source: `Draft/Web.md:1402`; references: 1.
   - ID: `680f34cbe5a392efd0ed`.
 - **Emulating the Adversary in Post-Exploitation - Jake Williams(SANS HackFest&Ranges Summit2020)**
   - URL: <https://www.youtube.com/watch?v=VctxgiEoDUU&list=PLdVJWiil7RxoW8rBeKc0flY8bRuD3M68L&index=5>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:379`; references: 1.
+  - Source: `Draft/RT.md:419`; references: 1.
   - ID: `e2b29e71b890fea76922`.
 - **Exploitation With Shell Reverse & Infection With PowerShell - Filipi Pires(HITB2021AMS)**
   - URL: <https://www.youtube.com/watch?v=VhCY2FDTSUM>
@@ -4139,12 +4139,12 @@
 - **Exploiting Deserialization Vulnerabilities in Java - Matthis Kaiser(2015)**
   - URL: <https://www.youtube.com/watch?v=VviY3O-euVQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3885`; references: 1.
+  - Source: `Draft/Web.md:4023`; references: 1.
   - ID: `9ceb1d9b0094a498b07b`.
 - **Who, What, Where, When, Wordlist - @TomNomNom(NahamCon2020)**
   - URL: <https://www.youtube.com/watch?v=W4_QCSIujQ4&list=PLKAaMVNxvLmAD0ZVUJ2IGFFC0APFZ5gzy&index=8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4672`; references: 1.
+  - Source: `Draft/Web.md:4766`; references: 1.
   - ID: `0a02061312ddd76f6544`.
 - **Rendering Ransomware Detection and EDR Products Blind - Rene Kolga(BSidesSLC 2020)**
   - URL: <https://www.youtube.com/watch?v=W7-zTdz-ORA&list=PLqVzh0_XpLfSJ2Okt38acDdO_xu2zKYmK&index=5&t=0s>
@@ -4169,7 +4169,7 @@
 - **Hacking Malware: Offense Is the New Defense - Valsmith, Quist(2014)**
   - URL: <https://www.youtube.com/watch?v=WEgxe85Pvc4&list=PL9fPq3eQfaaAxDI0xo83ZFzDAZgXO3Yhy&index=77>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1928`; references: 1.
+  - Source: `Draft/RT.md:1892`; references: 1.
   - ID: `a0785dc14070e40ca066`.
 - **Introduction to Hacking in Car Systems - Craig Smith - Troopers15**
   - URL: <https://www.youtube.com/watch?v=WHDkf6kpE58>
@@ -4184,7 +4184,7 @@
 - **Genetic Malware: Designing Payloads for Specific Targets - Travis Morrow, Josh Pitts(2016)**
   - URL: <https://www.youtube.com/watch?v=WI8Y24jTTlw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3893`; references: 1.
+  - Source: `Draft/RT.md:4015`; references: 1.
   - ID: `10aa1c0e3f78b5dc23bb`.
 - **Adapting Exploit Frameworks to Evade Microsoft ATP - Jake Krasnov, Anthony Rose(Defcon27)**
   - URL: <https://www.youtube.com/watch?v=WJgUJLmpKho>
@@ -4224,7 +4224,7 @@
 - **Full Contact Recon int0x80 of Dual Core savant - Derbycon7**
   - URL: <https://www.youtube.com/watch?v=XBqmvpzrNfs>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4100`; references: 1.
+  - Source: `Draft/RT.md:4168`; references: 1.
   - ID: `10d2e0d2692ddcf99454`.
 - **Covert Attack Mystery Box: A few novel techniques for exploiting Microsoft "features" - Mike Felch and Beau Bullock (WWHF2018)**
   - URL: <https://www.youtube.com/watch?v=XFk-b0aT6cs>
@@ -4279,12 +4279,12 @@
 - **Infecting The Embedded Supply Chain - Zach Miller, Alex Kissinger(Defcon26)**
   - URL: <https://www.youtube.com/watch?v=XeiET4FuGjE>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4366`; references: 1.
+  - Source: `Draft/RT.md:4451`; references: 1.
   - ID: `acb510479fe2b2625411`.
 - **From root to SPECIAL: Pwning IBM Mainframes - Philip “Soldier of Fortran” Young(Defcon22)**
   - URL: <https://www.youtube.com/watch?v=Xfl4spvM5DI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4263`; references: 1.
+  - Source: `Draft/RT.md:4337`; references: 1.
   - ID: `a843a49ef852807f1892`.
 - **Lost in Transaction: Process Doppelgänging - Tal Liberman, Eugene Kogan(BHEU 2017)**
   - URL: <https://www.youtube.com/watch?v=XmWOj-cfixs>
@@ -4354,7 +4354,7 @@
 - **Video - A Journey From JNDI/LDAP Manipulation to Remote Code Execution Dream Land - BH USA16**
   - URL: <https://www.youtube.com/watch?v=Y8a5nB-vy78>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3501`; references: 1.
+  - Source: `Draft/Web.md:3649`; references: 1.
   - ID: `a808a257ba671be9ca9f`.
 - **Part 1**
   - URL: <https://www.youtube.com/watch?v=Y8kjQEGHbAU>
@@ -4379,7 +4379,7 @@
 - **Attacking Below the Surface - Adversary Emulation - Rod Soto & Jose Hernandez**
   - URL: <https://www.youtube.com/watch?v=YEnL8QfFlJI&list=PLruly0ngXhPGvyl-gOp4d_TvIiedloX1l&index=25>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:375`; references: 1.
+  - Source: `Draft/RT.md:415`; references: 1.
   - ID: `729958666243976d18f8`.
 - **$SignaturesAreDead = “Long Live RESILIENT Signatures” wide ascii nocase - Matthew Dunwoody, Daniel Bohannon(BruCON 0x0A)**
   - URL: <https://www.youtube.com/watch?v=YGJaj6_3dGA>
@@ -4399,7 +4399,7 @@
 - **Why You Should (But Don't) Care About Mainframe Security - Northsec2015 - Phillip Young**
   - URL: <https://www.youtube.com/watch?v=YLxvrklh2tM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4275`; references: 1.
+  - Source: `Draft/RT.md:4349`; references: 1.
   - ID: `21b9e343d121b384c19a`.
 - **Bypass Windows Exploit Guard ASR - Emeric Nasi(OffensiveCon2019**
   - URL: <https://www.youtube.com/watch?v=YMHsuu3qldE>
@@ -4419,7 +4419,7 @@
 - **Stress and Hacking: Understanding Cognitive Stress in Tactical Cyber Ops - Celeste Paul, Josiah Dkystra(BHUSA2018)**
   - URL: <https://www.youtube.com/watch?v=YPc05_L4vf8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4126`; references: 1.
+  - Source: `Draft/RT.md:4194`; references: 1.
   - ID: `b12d893cbe429dc16b32`.
 - **This is not fine - Surviving Cynicism and Building Happy Security Teams - Chris Deibler(BlueHat v18)**
   - URL: <https://www.youtube.com/watch?v=YUwBja45fBQ>
@@ -4444,7 +4444,7 @@
 - **King of the hill: nation-state counterintelligence for victim deconfliction - Juan Andres Guerrero-Saade(VirusBulletin2019)**
   - URL: <https://www.youtube.com/watch?v=Yg2m9Y5w4MU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4132`; references: 1.
+  - Source: `Draft/RT.md:4200`; references: 1.
   - ID: `ac48bc25ce9cadee524b`.
 - **https://www.youtube.com/watch?v=Yii6JQHyaeU&list=PLmv8T5-GONwQq16OhfaU77KCq7UQGiZsr&index=2**
   - URL: <https://www.youtube.com/watch?v=Yii6JQHyaeU&list=PLmv8T5-GONwQq16OhfaU77KCq7UQGiZsr&index=2>
@@ -4479,7 +4479,7 @@
 - **Web Application testing approach and cheating to win Jim McMurry Lee Neely Chelle Clements - Derbycon7**
   - URL: <https://www.youtube.com/watch?v=Z8ZAv_EN-9M>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2389`; references: 1.
+  - Source: `Draft/Web.md:2503`; references: 1.
   - ID: `b26054b23a7c53dd30b3`.
 - **Reflective Injection Detection – Andrew King(Defcon20)**
   - URL: <https://www.youtube.com/watch?v=ZB1yD8LlFns>
@@ -4494,7 +4494,7 @@
 - **Automating User Interaction With Sheepl: Soup To Nuts - Matt Lorentzen(44con2019)**
   - URL: <https://www.youtube.com/watch?v=ZErvmrP4UCg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:671`; references: 1.
+  - Source: `Draft/RT.md:668`; references: 1.
   - ID: `604b02ef740e60dc8f42`.
 - **Master Of Puppets: How To Tamper The EDR? - Daniel Feichter(BSidesMunich2022)**
   - URL: <https://www.youtube.com/watch?v=ZIxE_wHwA84>
@@ -4509,7 +4509,7 @@
 - **Web PenTesting Workshop Part 12 of 12 JSON injection - Jeremy Druin**
   - URL: <https://www.youtube.com/watch?v=ZLAaq7Q-5jc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3450`; references: 1.
+  - Source: `Draft/Web.md:3591`; references: 1.
   - ID: `1d9dd4319d079fb711f0`.
 - **ETW - Monitor Anything, Anytime, Anywhere - Dina Goldshtein(NDC Oslo 2017)**
   - URL: <https://www.youtube.com/watch?v=ZNdpLM4uIpw>
@@ -4524,7 +4524,7 @@
 - **Who watches the watchmen? Adventures in red team infrastructure herding and blue team OPSEC failures - Mark Bergman, Marc Smeets(HIP19)**
   - URL: <https://www.youtube.com/watch?v=ZezBCAUax6c>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1723`; references: 1.
+  - Source: `Draft/RT.md:1721`; references: 1.
   - ID: `80e5ffb3138ab707a812`.
 - **Operation Luigi: How I hacked my friend without her noticing**
   - URL: <https://www.youtube.com/watch?v=ZlNkIFipKZ4&feature=youtu.be>
@@ -4534,7 +4534,7 @@
 - **HTTP Request Smuggling in 2020 – New Variants, New Defenses and New Challenges - Amit Klein(BHUSA2020)**
   - URL: <https://www.youtube.com/watch?v=Zm-myHU8-RQ&list=PLH15HpR5qRsXE_4kOSy_SXwFkFQre4AV_&index=57>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3382`; references: 1.
+  - Source: `Draft/Web.md:3519`; references: 1.
   - ID: `82924b50e7524a8b8225`.
 - **I Got You06 ICS SCADA Threat Hunting Robert M Lee Jon Lavender**
   - URL: <https://www.youtube.com/watch?v=Zm5lDKxaaTY>
@@ -4554,12 +4554,12 @@
 - **RATs Without Borders - Moving Your Chesse - Robert Neel(BsidesATX2019)**
   - URL: <https://www.youtube.com/watch?v=ZubIQfHEUzA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1937`; references: 1.
+  - Source: `Draft/RT.md:1901`; references: 1.
   - ID: `15f762d08d01267578ef`.
 - **Lyft Cartography: Automating Security Visibility and Democratization - Sacha Faust(BSidesSF2019)**
   - URL: <https://www.youtube.com/watch?v=ZukUmZSKSek>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:230`; references: 1.
+  - Source: `Draft/Defense.md:162`; references: 1.
   - ID: `0c86444a506aa69d857f`.
 - **Stupid PCIe Tricks featuring NSA Playset: PCIe**
   - URL: <https://www.youtube.com/watch?v=Zwz61uVxiM0>
@@ -4614,12 +4614,12 @@
 - **Breaking and abusing specifications and policies - Frans Rosén(SecurityFest 2018)**
   - URL: <https://www.youtube.com/watch?v=_VsFrYAjJ8k&feature=youtu.be>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2393`; references: 1.
+  - Source: `Draft/Web.md:2507`; references: 1.
   - ID: `15ad2cb6d5cf98fe930f`.
 - **UNLEASH THE POWER OF SQL INJECTION! | Beginners Guide to Hacking with SQLi - SecAura**
   - URL: <https://www.youtube.com/watch?v=_Y4MpvB6o7s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3599`; references: 1.
+  - Source: `Draft/Web.md:3741`; references: 1.
   - ID: `d0e3c2a5d0eaed66b9a1`.
 - **Allan Cohen on Growing Influence Without Authority(2018)**
   - URL: <https://www.youtube.com/watch?v=_YZicFgn1MQ>
@@ -4634,7 +4634,7 @@
 - **Prototype Pollution Attack Explained - CyberSecurityTV**
   - URL: <https://www.youtube.com/watch?v=__65_GFERKs>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3795`; references: 1.
+  - Source: `Draft/Web.md:3936`; references: 1.
   - ID: `5708a783a6c743e4f44e`.
 - **How to Social Engineer your way into your dream job - Jason Blanchard(Derbycon2016)**
   - URL: <https://www.youtube.com/watch?v=__lvS2pjuSg>
@@ -4669,7 +4669,7 @@
 - **Cracking JWT tokens: a tale of magic, Node.JS and parallel computing - Luciano Mammino(Codemotion Milan2017)**
   - URL: <https://www.youtube.com/watch?v=_wXQW-dIyL8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1512`; references: 2.
+  - Source: `Draft/Web.md:1681`; references: 2.
   - ID: `1042216236acfc07cd01`.
 - **FM and Bluetooth and Wifi Oh My Aaron Lafferty - Derbycon7**
   - URL: <https://www.youtube.com/watch?v=_yAvPo4pVGA&index=5&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3>
@@ -4834,7 +4834,7 @@
 - **NSA TAO Chief on Disrupting Nation State Hackers - Rob Joyce(USENIX ENIGMA2016)**
   - URL: <https://www.youtube.com/watch?v=bDJb8WOJYdA&feature=youtu.be&list=PLKb9-P1fRHxhSmCy5OaYZ5spcY8v3Pbaf>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:422`; references: 1.
+  - Source: `Draft/Defense.md:291`; references: 1.
   - ID: `7660f58145c47b17e9f0`.
 - **Defeating EDRs using Dynamic Invocation in C# - Jean Francois Maes(BruCON0x0D**
   - URL: <https://www.youtube.com/watch?v=bHObB-I2Wiw&t=1311s>
@@ -4844,7 +4844,7 @@
 - **Creating Custom Nuclei Templates and Workflows - JTCSEC(2021)**
   - URL: <https://www.youtube.com/watch?v=bHXkQjtBOLo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2498`; references: 1.
+  - Source: `Draft/Web.md:2623`; references: 1.
   - ID: `7fa5ac1ae3564a1c1853`.
 - **Evading Microsoft ATA for Active Directory Domination - Nikhil Mittal**
   - URL: <https://www.youtube.com/watch?v=bHkv63-1GBY>
@@ -4854,7 +4854,7 @@
 - **The Curse of Cross-Origin Stylesheets - LiveOverflow(2018)**
   - URL: <https://www.youtube.com/watch?v=bMPAXsgWNAc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3098`; references: 1.
+  - Source: `Draft/Web.md:3248`; references: 1.
   - ID: `4b74b96975e4ba3395ac`.
 - **Command, Control, and memes: Cordyceps + ant = zombie - pr0b3r7(CC12)**
   - URL: <https://www.youtube.com/watch?v=bQfy-quoAh8>
@@ -4904,7 +4904,7 @@
 - **Guerrilla Red Team: Decentralize the Adversary - Christopher Cottrell(RedTeamVillage)**
   - URL: <https://www.youtube.com/watch?v=bgvKQF0oNoA&feature=share>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:562`; references: 1.
+  - Source: `Draft/RT.md:552`; references: 1.
   - ID: `087f1a46149dd9019ede`.
 - **Psychological Tricks of the Social Engineer - William Tarkington - GrrCON2012**
   - URL: <https://www.youtube.com/watch?v=bk-TK4MPs8s&index=10&list=PL_At9BlHdC-_764ciDVexbJL0hwsCzqLK>
@@ -4914,7 +4914,7 @@
 - **War Stories on Embedded Security Pentesting IoT Building Managers and how to do Better Dr Jared - Derbycon7**
   - URL: <https://www.youtube.com/watch?v=bnTWysHT0I4&index=8&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4231`; references: 1.
+  - Source: `Draft/RT.md:4299`; references: 1.
   - ID: `626fcf15d50134efdff5`.
 - **Hooking Nirvana: Stealthy Instrumentation Techniques for Windows 10 - Alex Ionescu(REcon2015)**
   - URL: <https://www.youtube.com/watch?v=bqU0y4FzvT0>
@@ -4944,7 +4944,7 @@
 - **XSS, CSRF, CSP, JWT, WTF? IDK ¯\\_(ツ)_/¯ - Dominik Kundel(JSConf Iceland2018)**
   - URL: <https://www.youtube.com/watch?v=c6mqdsfWdmE>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:194`; references: 1.
+  - Source: `Draft/Web.md:248`; references: 1.
   - ID: `1a5001285cf22d28b91f`.
 - **Not a Security Boundary: Bypassing User Account Control - Matt Nelson(Derbycon7)**
   - URL: <https://www.youtube.com/watch?v=c8LgqtATAnE&index=21&list=PLNhlcxQZJSm-PKUZTYe1C94ymf0omysM3>
@@ -4964,7 +4964,7 @@
 - **Planning Effective Red Team Exercises - Sean T Malone - BSidesSF2016**
   - URL: <https://www.youtube.com/watch?v=cD-jKBfSKP4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:537`; references: 1.
+  - Source: `Draft/RT.md:525`; references: 1.
   - ID: `9e957426cea7fc70c0c0`.
 - **Practical OSINT - Shane MacDougall**
   - URL: <https://www.youtube.com/watch?v=cLmEJLy7dv8>
@@ -5009,7 +5009,7 @@
 - **Cached and Confused: Web Cache Deception in the Wild - Seyed Ali Mirheidari, Sajjad "JJ" Arshad(h@ckivitycon 2020)**
   - URL: <https://www.youtube.com/watch?v=czDfMWBsIKw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2877`; references: 1.
+  - Source: `Draft/Web.md:3033`; references: 1.
   - ID: `623abcddc0d49dcfd6b7`.
 - **Don't Talk to the Police - James Duane**
   - URL: <https://www.youtube.com/watch?v=d-7o9xYp7eE>
@@ -5034,7 +5034,7 @@
 - **Inside the Magic – A Merlin Walkthrough – Russel Van Tuyl (SO-CON 2020)**
   - URL: <https://www.youtube.com/watch?v=dEPVn5MI0XA&list=PLJK0fZNGiFU-2vFpjnt96j_VSuQVTkAnO&index=5>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:862`; references: 1.
+  - Source: `Draft/RT.md:859`; references: 1.
   - ID: `d42b6d5119fee9e95d24`.
 - **From Barista to Cyber Security Pro - Alyssa Miller(DEF CON Safe Mode Career Hacking Village)**
   - URL: <https://www.youtube.com/watch?v=dGpHdExqu0k>
@@ -5054,7 +5054,7 @@
 - **Real World JavaScript Security by Amanvir Sangha(Devoxx2019)**
   - URL: <https://www.youtube.com/watch?v=dO2zXhVEEKo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1234`; references: 1.
+  - Source: `Draft/Web.md:1373`; references: 1.
   - ID: `d7389b9c12f7b006e408`.
 - **How I Made $100,000 in a Month - TheCyberMentor**
   - URL: <https://www.youtube.com/watch?v=dRTqRJsr1ss>
@@ -5069,7 +5069,7 @@
 - **Hiding Wookiees in HTTP: HTTP smuggling - regilero(Defcon24)**
   - URL: <https://www.youtube.com/watch?v=dVU9i5PsMPY>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3379`; references: 1.
+  - Source: `Draft/Web.md:3516`; references: 1.
   - ID: `b45626f78f99322f2abb`.
 - **Effective AppSec Metrics - Caroline Wong(OWASP SF 2017)**
   - URL: <https://www.youtube.com/watch?v=dY8IuQ8rUd4>
@@ -5104,7 +5104,7 @@
 - **Reflected File Download - A New Web Attack Vector - BHEU 2014**
   - URL: <https://www.youtube.com/watch?v=dl1BJUNk8V4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3820`; references: 1.
+  - Source: `Draft/Web.md:3960`; references: 1.
   - ID: `fc7448c6ce647677a003`.
 - **Hacking the Voter: Lessons from a Decade of Russian Military Operations - Nate Beach-Westmoreland(BH2020)**
   - URL: <https://www.youtube.com/watch?v=dmXJ6fWUAoM&list=PLH15HpR5qRsXE_4kOSy_SXwFkFQre4AV_&index=32>
@@ -5114,7 +5114,7 @@
 - **HTTP Desync Attack Explained With Paper - LiveUnderflow(2021)**
   - URL: <https://www.youtube.com/watch?v=dnyL7EKbRRk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3387`; references: 1.
+  - Source: `Draft/Web.md:3524`; references: 1.
   - ID: `4e123b65196c70c77eda`.
 - **Part 2**
   - URL: <https://www.youtube.com/watch?v=dtyX7XO-GSg&list=RDCMUCJ2U9Dq9NckqHMbcUupgF0A&index=2>
@@ -5139,12 +5139,12 @@
 - **Black Hat EU 2013 - XML Out-of-Band Data Retrieval**
   - URL: <https://www.youtube.com/watch?v=eBm0YhBrT_c>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4587`; references: 1.
+  - Source: `Draft/Web.md:4692`; references: 1.
   - ID: `dc1c99a105dc02914298`.
 - **Towards Zero Trust at GitLab.com - Kathy Wang, Philippe Lafoucrière(Cloud Next '19)**
   - URL: <https://www.youtube.com/watch?v=eDVHIfVSdIo&feature=youtu.be&list=PLKb9-P1fRHxhSmCy5OaYZ5spcY8v3Pbaf>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:417`; references: 1.
+  - Source: `Draft/Defense.md:282`; references: 1.
   - ID: `d4f58c551c07ac450f71`.
 - **Techniques for fast windows forensics investigations**
   - URL: <https://www.youtube.com/watch?v=eI4ceLgO_CE>
@@ -5169,7 +5169,7 @@
 - **Domain Borrowing: Catch My C2 Traffic if You Can - Tianze Ding & Junyu Zhou(BH Asia2021)**
   - URL: <https://www.youtube.com/watch?v=eVr0kKdgM2I>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1356`; references: 1.
+  - Source: `Draft/RT.md:1380`; references: 1.
   - ID: `edadddfc9b69302fb148`.
 - **\*AST In CI/CD – how to make it WORK! - Ofer Maor(DevSecCon Singapore 2018)**
   - URL: <https://www.youtube.com/watch?v=eY3RmQ_eNgA>
@@ -5199,7 +5199,7 @@
 - **Advanced PHP Deserialization - Phar Files - Ippsec(2019)**
   - URL: <https://www.youtube.com/watch?v=fHZKSCMWqF4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1727`; references: 1.
+  - Source: `Draft/Web.md:1890`; references: 1.
   - ID: `1a6ff0f846038b7f7b69`.
 - **Windows Server 2016 AutoLab Setup - Jason Helmick(2016)**
   - URL: <https://www.youtube.com/watch?v=fIXHvbgxEDk&feature=youtu.be>
@@ -5209,12 +5209,12 @@
 - **Cyber crime and warfare charting dangerous waters - ifach lan amit(Defcon18)**
   - URL: <https://www.youtube.com/watch?v=fP96-jzslco&list=UUhGDEluRG9r5kCecRAQTx_Q&index=2301>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4353`; references: 1.
+  - Source: `Draft/RT.md:4436`; references: 1.
   - ID: `1e772613c63f7e158aa5`.
 - **How To Build A High-Performing Red Team - Tom Porter & Patrick Fussell(WWHF 2020 Virtual)**
   - URL: <https://www.youtube.com/watch?v=fSLxkDQiVsc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:556`; references: 1.
+  - Source: `Draft/RT.md:544`; references: 1.
   - ID: `94e28ab3d98f67b452d0`.
 - **How to Lose a Container in 10 Minutes - Sarah Young(BSidesSF 2019)**
   - URL: <https://www.youtube.com/watch?v=fSj6_WgDATE&list=PLbZzXF2qC3RvGRbNQwKcf2KVaTCjzOB8o&index=4>
@@ -5239,7 +5239,7 @@
 - **Authentication fundamentals: The basics - Stuart Kwan**
   - URL: <https://www.youtube.com/watch?v=fbSVgC8nGz4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:216`; references: 1.
+  - Source: `Draft/Web.md:270`; references: 1.
   - ID: `9f8e4465d684fbe432f9`.
 - **Moving Fast and Securing Things - Max Feldman(AppSecUSA 2017)**
   - URL: <https://www.youtube.com/watch?v=feRypwVqcuQ>
@@ -5254,7 +5254,7 @@
 - **Breaking Extreme Networks WingOS: How to own millions of devices running on Aircrafts, Government, Smart cities and more - Josep Pi Rodriguez**
   - URL: <https://www.youtube.com/watch?v=fo88O1i-Z3M>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4160`; references: 1.
+  - Source: `Draft/RT.md:4230`; references: 1.
   - ID: `5bb9aed1367c75e8f060`.
 - **I'm in your cloud: A year of hacking Azure AD - Dirk-Jan Mollema**
   - URL: <https://www.youtube.com/watch?v=fpUZJxFK72k>
@@ -5314,7 +5314,7 @@
 - **The Bug Hunter’s Methodology - Jason Haddix @jhaddix(Defcon Safemode RedTeamVillage 2020)**
   - URL: <https://www.youtube.com/watch?v=gIz_yn0Uvb8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2387`; references: 1.
+  - Source: `Draft/Web.md:2501`; references: 1.
   - ID: `386ddae7e93269f75bf6`.
 - **BoutiqueKit: Playing WarGames with Expensive Rootkits and Malware- Defcon 21**
   - URL: <https://www.youtube.com/watch?v=gKUleWyfut0>
@@ -5324,7 +5324,7 @@
 - **Not Just Evil: Hacking Mainframes with Network Job Entry - Philip Young(WWHF 2020 Virtual)**
   - URL: <https://www.youtube.com/watch?v=gKjH7LK_rBo&list=PLXF21PFPPXTPwX8mccVIQB5THhU_paWmN&index=8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4284`; references: 1.
+  - Source: `Draft/RT.md:4358`; references: 1.
   - ID: `f2b7dbfe4bd4d4d44594`.
 - **Bootstrapping A Security Research Project Andrew Hay**
   - URL: <https://www.youtube.com/watch?v=gNU2J-IcK4E>
@@ -5339,7 +5339,7 @@
 - **Automated Adversary Emulation - David Hunt(BSidesCharm2019)**
   - URL: <https://www.youtube.com/watch?v=gTGnHXgqZCo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3996`; references: 1.
+  - Source: `Draft/RT.md:4082`; references: 1.
   - ID: `bef6ead3f0ebe9849c31`.
 - **Windows Event Forwarding and Event Collectors In-Depth - Scott Lynch, Justin Henderson(2021)**
   - URL: <https://www.youtube.com/watch?v=gUOl82434Ic>
@@ -5349,7 +5349,7 @@
 - **Hacking Oauth Applications - Pt. 1 - HackingSimplified(2021)**
   - URL: <https://www.youtube.com/watch?v=gVqrf2uUdQ0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1630`; references: 1.
+  - Source: `Draft/Web.md:1796`; references: 1.
   - ID: `4738bfedd103e5b841ea`.
 - **Abusing AWS Metadata Service - Casey Goodrich**
   - URL: <https://www.youtube.com/watch?v=gZsmpPLZQJM>
@@ -5364,17 +5364,17 @@
 - **Beacon Object Files - Luser Demo(Raphael Mudge 2020)**
   - URL: <https://www.youtube.com/watch?v=gfYswA_Ronw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1038`; references: 1.
+  - Source: `Draft/RT.md:1046`; references: 1.
   - ID: `f3222ef8bb74fa57503f`.
 - **Cold War with Javascript - Sameer Bhatt(2020)**
   - URL: <https://www.youtube.com/watch?v=gk0hBvJEL0w>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1250`; references: 1.
+  - Source: `Draft/Web.md:1389`; references: 1.
   - ID: `42c918cbd1c5e0e2d696`.
 - **Demystifying the Server Side - Rajanish Pathak, Rahul Maini & Harsh Jaiswal(EkoParty2020)**
   - URL: <https://www.youtube.com/watch?v=gluSEBZpplQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4035`; references: 1.
+  - Source: `Draft/Web.md:4172`; references: 1.
   - ID: `7aa6103c6ca130543a12`.
 - **https://www.youtube.com/watch?v=gu_i6LYuePg**
   - URL: <https://www.youtube.com/watch?v=gu_i6LYuePg>
@@ -5449,7 +5449,7 @@
 - **Building Fully Functional C2 With Azure - Chris Truncer & Matt Grandy(WWHF2020 Virtual)**
   - URL: <https://www.youtube.com/watch?v=hpiOv7RhvE8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:774`; references: 1.
+  - Source: `Draft/RT.md:769`; references: 1.
   - ID: `352dbf27ebd4fadd116c`.
 - **Hacks and Crafts: Improvised Physical Security Tools for Improvised Situations - CG**
   - URL: <https://www.youtube.com/watch?v=hrXzt2mdwl4&list=PLjpIlpOLoRNQxZXPxPUzBkzU5m0iZkPG_&index=5>
@@ -5464,7 +5464,7 @@
 - **Breaking XSS Mitigations Via Script Gadgets - Sebastian Lekies, Krzysztof Kotowicz & Eduardo Vela(BHUSA2017)**
   - URL: <https://www.youtube.com/watch?v=i6Ug8O23DMU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4386`; references: 1.
+  - Source: `Draft/Web.md:4513`; references: 1.
   - ID: `44a68f5ec87e20782393`.
 - **Game of Drones - Brown,Latimer - Defcon25**
   - URL: <https://www.youtube.com/watch?v=iG7hUE2BZZo>
@@ -5479,7 +5479,7 @@
 - **Introduction To GraphQL | Penetration Test - CyberSecurityTV(2020)**
   - URL: <https://www.youtube.com/watch?v=iSZ0RrCrpf4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:975`; references: 1.
+  - Source: `Draft/Web.md:1072`; references: 1.
   - ID: `d379c4a5569242d26751`.
 - **MS Office file format sorcery - Stan Hegt, Pieter Ceelen(TR19)**
   - URL: <https://www.youtube.com/watch?v=iXvvQ5XML7g>
@@ -5504,7 +5504,7 @@
 - **"If we win, we lose" - Malcom Vetter(BlueHat v18)**
   - URL: <https://www.youtube.com/watch?v=ifCeaYShRSU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:232`; references: 1.
+  - Source: `Draft/RT.md:295`; references: 1.
   - ID: `18fc1188ed0c77ac3a23`.
 - **Advanced Attack Detection - William Burgess, Matt Watkins(Securi-Tay2017)**
   - URL: <https://www.youtube.com/watch?v=ihElrBBJQo8>
@@ -5524,7 +5524,7 @@
 - **Binary Obfuscation from the Top-Down: Obfuscating Executables Without Writing Assembly - Sean "Frank^2(Defcon17)**
   - URL: <https://www.youtube.com/watch?v=iva16Bg5imQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:2108`; references: 1.
+  - Source: `Draft/RT.md:2091`; references: 1.
   - ID: `e7745fcec87a403a43cf`.
 - **Living Off The Land: A Minimalist's Guide To Windows Post Exploitation - Christopher Campbell, Matthew Graeber(Derbycon3)**
   - URL: <https://www.youtube.com/watch?v=j-r6UonEkUw>
@@ -5534,7 +5534,7 @@
 - **Practical Web Cache Poisoning: Redefining 'Unexploitable' - James Kettle(BHUSA2018)**
   - URL: <https://www.youtube.com/watch?v=j2RrmNxJZ5c>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2891`; references: 1.
+  - Source: `Draft/Web.md:3047`; references: 1.
   - ID: `84a410878089eef6b7c3`.
 - **"Mimikatz" - Benjamin Delpy(NoSuchCon#2)**
   - URL: <https://www.youtube.com/watch?v=j2m7x1deVRk>
@@ -5549,7 +5549,7 @@
 - **Free Tools For Webapp Hacking - BB King(WWHF Deadwood2020)**
   - URL: <https://www.youtube.com/watch?v=jC_HHwS6tCU&list=PLXF21PFPPXTMmtx0XBXqjxSMZSipIMXwX&index=8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2398`; references: 1.
+  - Source: `Draft/Web.md:2512`; references: 1.
   - ID: `304c191f62fe30b978f3`.
 - **Open Source Facial Recognition and Mass Surveillance - Ian O'Neil(2018)**
   - URL: <https://www.youtube.com/watch?v=jFa7RK9yGQk&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN&index=23>
@@ -5559,17 +5559,17 @@
 - **Let's Attack Let's Encrypt - Haya Shulman**
   - URL: <https://www.youtube.com/watch?v=jPXQcSMnosQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:516`; references: 1.
+  - Source: `Draft/Web.md:598`; references: 1.
   - ID: `6da76d71726364f1c02f`.
 - **Cons and Conjurers Lessons for Infiltration - Paul Blonsky(BSides Cleveland2016)**
   - URL: <https://www.youtube.com/watch?v=jRgOVCBg_Q4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4179`; references: 1.
+  - Source: `Draft/RT.md:4251`; references: 1.
   - ID: `975d2d5e4a2bfa6bb552`.
 - **Live Bug Bounty Recon Session w/ @FransRosen 2019**
   - URL: <https://www.youtube.com/watch?v=jTanLdLj5dY>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2397`; references: 1.
+  - Source: `Draft/Web.md:2511`; references: 1.
   - ID: `ad04d2a1b2ed3f1b85a5`.
 - **Adversarial Fashion Sartorial Hacking - Kate Rose(DEF CON 27 Crypto and Privacy Village)**
   - URL: <https://www.youtube.com/watch?v=jVcGZ_Ak4NI>
@@ -5609,7 +5609,7 @@
 - **DOM Based Angular Sandbox Escapes by Gareth Heyes - BSides Manchester2017**
   - URL: <https://www.youtube.com/watch?v=jlSI5aVTEIg&index=16&list=PLcgqQkap1lNrOBNCXqpPqpPAqckxv0XhP>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4454`; references: 1.
+  - Source: `Draft/Web.md:4581`; references: 1.
   - ID: `630028a46575481e9f5e`.
 - **Beginner Reversing #3 (Shellcode2 & Lab Overview) - Marcus Hutchins(2018)**
   - URL: <https://www.youtube.com/watch?v=jm4DmdygLvw>
@@ -5619,12 +5619,12 @@
 - **Finding Your Next Bug: GraphQL - InsiderPHD(2020)**
   - URL: <https://www.youtube.com/watch?v=jyjGneKJynk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:977`; references: 1.
+  - Source: `Draft/Web.md:1074`; references: 1.
   - ID: `61077f46694c95bf061e`.
 - **Introduction to RESTful APIs with Chris Wahl**
   - URL: <https://www.youtube.com/watch?v=k00sfolsmp0&index=1&list=PL2rC-8e38bUU7Xa5kBaw0Cceo2NoI4mK->
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:319`; references: 1.
+  - Source: `Draft/Web.md:389`; references: 1.
   - ID: `91e1ffe8b3c5a37ff165`.
 - **Malware Attribution tracking cyber spies - Greg Hoglund - BH2010**
   - URL: <https://www.youtube.com/watch?v=k4Ry1trQhDk>
@@ -5684,22 +5684,22 @@
 - **Dom Flow - Untangling The DOM For More Easy-Juicy Bugs  - BH USA 2015**
   - URL: <https://www.youtube.com/watch?v=kedmtrIEW1k&list=PLH15HpR5qRsXF78lrpWP2JKpPJs_AFnD7&index=111>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1271`; references: 1.
+  - Source: `Draft/Web.md:1410`; references: 1.
   - ID: `6aeea1fb2a4ad8e7f3c1`.
 - **Red Team Methodology A Naked Look Jason Lang(Derbycon2019)**
   - URL: <https://www.youtube.com/watch?v=kf829-tm0VM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:599`; references: 2.
+  - Source: `Draft/RT.md:585`; references: 2.
   - ID: `24868c7d67b1d333d283`.
 - **Attack Tactics 5: Zero to Hero Attack - Jordan Drysdale, Kent Ickler, John Strand(BHIS)**
   - URL: <https://www.youtube.com/watch?v=kiMD0JFFheI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4120`; references: 1.
+  - Source: `Draft/RT.md:4188`; references: 1.
   - ID: `58d0b427cb2226f258dd`.
 - **Server Side Request Forgery (SSRF) All-In-One - Busra Demir(2020)**
   - URL: <https://www.youtube.com/watch?v=kkX2TZt6y38>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4030`; references: 1.
+  - Source: `Draft/Web.md:4167`; references: 1.
   - ID: `4ad2bbd453766a04494a`.
 - **Practical Approach to Automate the Discovery & Eradication of Open-Source Software Vulnerabilities - Aladdin Almubayed(BHUSA2019)**
   - URL: <https://www.youtube.com/watch?v=ks9J0uZGMh0>
@@ -5709,7 +5709,7 @@
 - **Practical Approach to Automate the Discovery & Eradication of Open-Source Software Vulnerabilitie - Aladdin Almubayed**
   - URL: <https://www.youtube.com/watch?v=ks9J0uZGMh0&list=PLH15HpR5qRsWrfkjwFSI256x1u2Zy49VI&index=1>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:247`; references: 1.
+  - Source: `Draft/Defense.md:179`; references: 1.
   - ID: `f4919b4808815e5a78c4`.
 - **30c3**
   - URL: <https://www.youtube.com/watch?v=kvfP7StmFxY>
@@ -5734,7 +5734,7 @@
 - **Self XSS: we’re not so different you and I - Mathias Karlsson**
   - URL: <https://www.youtube.com/watch?v=l3yThCIF7e4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4315`; references: 1.
+  - Source: `Draft/Web.md:4442`; references: 1.
   - ID: `782578df4d7bbdd3bd95`.
 - **Red Teaming in the EDR age - Will Burgess(WWHF2018)**
   - URL: <https://www.youtube.com/watch?v=l8nkXCOYQC4>
@@ -5764,12 +5764,12 @@
 - **Abusing NoSQL Databases - Ming Chow**
   - URL: <https://www.youtube.com/watch?v=lcO1BTNh8r8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3666`; references: 1.
+  - Source: `Draft/Web.md:3808`; references: 1.
   - ID: `22a83ceb29185d927959`.
 - **AWS GuardDuty: Post-DNS Era Covert Channel For C&C - Sze Siong Teo(HITB2021 AMS)**
   - URL: <https://www.youtube.com/watch?v=liQjug4uFQI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:786`; references: 1.
+  - Source: `Draft/RT.md:781`; references: 1.
   - ID: `3c8c3f33b67170631869`.
 - **https://www.youtube.com/watch?v=ll-ViQT9Oew&list=PLtb1FJdVWjUcY29T0VcjWp6StdhcSXyDL&index=10**
   - URL: <https://www.youtube.com/watch?v=ll-ViQT9Oew&list=PLtb1FJdVWjUcY29T0VcjWp6StdhcSXyDL&index=10>
@@ -5799,7 +5799,7 @@
 - **How to overthrow a Government - Chris Rock(Defcon24)**
   - URL: <https://www.youtube.com/watch?v=m1lhGqNCZlA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4363`; references: 1.
+  - Source: `Draft/RT.md:4446`; references: 1.
   - ID: `6d0d497a7df33ae998f6`.
 - **\[TROOPERS15\] Andreas Lindh - Defender Economics**
   - URL: <https://www.youtube.com/watch?v=mAP38Xy52X0>
@@ -5814,7 +5814,7 @@
 - **Context-Keyed Payload Encoding: Fighting The Next Generation of IDS - Dimitris Glynos(AthCon2010)**
   - URL: <https://www.youtube.com/watch?v=mHMULvGynSU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3887`; references: 1.
+  - Source: `Draft/RT.md:4009`; references: 1.
   - ID: `0c917ba3ff371d22cc24`.
 - **Hacking Corporate Email Systems - Nate Power(BSides Columbus 2016)**
   - URL: <https://www.youtube.com/watch?v=mJ172K1dxoM>
@@ -5824,7 +5824,7 @@
 - **Offensive Browser Extension Development - Michael Weber(Derbycon7**
   - URL: <https://www.youtube.com/watch?v=mKesEr1g4j0>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:445`; references: 1.
+  - Source: `Draft/Web.md:527`; references: 1.
   - ID: `662744b8f5a4b92f67e4`.
 - **A Survey of Remote Automotive Attack Surfaces  - Black Hat USA 2014**
   - URL: <https://www.youtube.com/watch?v=mNhFGJVq2HE>
@@ -5864,7 +5864,7 @@
 - **You’re Probably Not Red Teaming... And Usually I’m Not, Either \[SANS ICS 2018\] - Deviant Ollam**
   - URL: <https://www.youtube.com/watch?v=mj2iSdBw4-0&feature=youtu.be>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4351`; references: 1.
+  - Source: `Draft/RT.md:4432`; references: 1.
   - ID: `6e6ac6a6afb8195344fd`.
 - **"Lockpicking in Real Life versus on the Screen" - The Eleventh HOPE (2016)**
   - URL: <https://www.youtube.com/watch?v=mjBSocgMCPU>
@@ -5884,12 +5884,12 @@
 - **Web Cache Deception Attack - Omer Gil(BHUSA 2017)**
   - URL: <https://www.youtube.com/watch?v=mroq9eHFOIU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2873`; references: 1.
+  - Source: `Draft/Web.md:3029`; references: 1.
   - ID: `a6f43bd92f082f1c1b75`.
 - **Modern Webapp Pentesting: How to Attack a JWT - BB King(2020)**
   - URL: <https://www.youtube.com/watch?v=muYmiEtPL8U>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1517`; references: 1.
+  - Source: `Draft/Web.md:1686`; references: 1.
   - ID: `d918dd9e61acc921916c`.
 - **How to make intelligence, hunting, and response BFFs - Kamil Bojarski(x33fcon2021**
   - URL: <https://www.youtube.com/watch?v=n0ObbSsrqGI&list=PL7ZDZo2Xu330UamX3LZeOEGE_VniwyLS5&index=10>
@@ -5959,7 +5959,7 @@
 - **Malware techniques from aggressor's perspective - Pawel Kordos, Patryk Czeczko(x33fcon2020)**
   - URL: <https://www.youtube.com/watch?v=nTWJ0KtoGwI&list=PL7ZDZo2Xu330gMHAoeGvH9QkCJMC-qgeK&index=14>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1942`; references: 1.
+  - Source: `Draft/RT.md:1906`; references: 1.
   - ID: `3a82d391712108a65b9c`.
 - **Mass Scanning the Internet: Tips, Tricks, Results - DEF CON 22 - Graham, Mcmillan, and Tentler**
   - URL: <https://www.youtube.com/watch?v=nX9JXI4l3-E>
@@ -5974,7 +5974,7 @@
 - **We hacked the gibson now what - Philip Young - Philip Young(BSidesLV2014)**
   - URL: <https://www.youtube.com/watch?v=n_sXG0Ff2oM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4279`; references: 1.
+  - Source: `Draft/RT.md:4353`; references: 1.
   - ID: `12e46c04839c3b6f915c`.
 - **Becoming a Threat Hunter: This Is One Way - Jason Wood(Texas Cyber Summit2021)**
   - URL: <https://www.youtube.com/watch?v=na1PBrWvJjY>
@@ -5989,7 +5989,7 @@
 - **MarkDoom: How I Hacked Every Major IDE in 2 Weeks - Matt Austin, LevelUp 2017**
   - URL: <https://www.youtube.com/watch?v=nnEnwJbiO-A>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:823`; references: 1.
+  - Source: `Draft/Web.md:927`; references: 1.
   - ID: `78db02df7d750d8af044`.
 - **What to Expect in an Ethical Hacking Interview - TheCyberMentor**
   - URL: <https://www.youtube.com/watch?v=nrewE1mLlaU>
@@ -5999,7 +5999,7 @@
 - **Browsers Gone Wild - Angelo Prado & Xiaoran Wang - BHAsia2015**
   - URL: <https://www.youtube.com/watch?v=nsjCQlEsgW8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:472`; references: 1.
+  - Source: `Draft/Web.md:556`; references: 1.
   - ID: `f3839d6e4715b408d2c8`.
 - **Video**
   - URL: <https://www.youtube.com/watch?v=nuruzFqMgIw>
@@ -6019,17 +6019,17 @@
 - **Hacks Lies Nation States - Mario DiNatale**
   - URL: <https://www.youtube.com/watch?v=nyh_ORq1Qwk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4362`; references: 1.
+  - Source: `Draft/RT.md:4445`; references: 1.
   - ID: `3f4ceb767db97a1c141e`.
 - **We detected a severe vulnerability, why is nobody listening? An Introduction to Product Management**
   - URL: <https://www.youtube.com/watch?v=nz9duF9JeBc&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN&index=11>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Defense.md:251`; references: 1.
+  - Source: `Draft/Defense.md:183`; references: 1.
   - ID: `414ae9ac3136c596d7d7`.
 - **Owning The Cloud Through Server-Side Request Forgery - Ben Sadeghipour, Cody Brocious (Daeken)**
   - URL: <https://www.youtube.com/watch?v=o-tL9ULF0KI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4028`; references: 1.
+  - Source: `Draft/Web.md:4165`; references: 1.
   - ID: `2c2f11dfb9beeb642e4b`.
 - **How to adapt the SDLC for DevSecOps - Zane Lackey(InsomniHack2018)**
   - URL: <https://www.youtube.com/watch?v=o1f5BU6z-Kg>
@@ -6084,7 +6084,7 @@
 - **Discovering Hidden Properties to Attack Node js Ecosystem - Feng Xiao(DEFCON Safemode)**
   - URL: <https://www.youtube.com/watch?v=oGeEoaplMWA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1344`; references: 1.
+  - Source: `Draft/Web.md:1501`; references: 1.
   - ID: `f3c4f17fbe886df87670`.
 - **Behavioral Analysis using DNS, Network Traffic and Logs, Josh Pyorre (@joshpyorre)**
   - URL: <https://www.youtube.com/watch?v=oLemvzZjDOs&index=13&list=PLwZycuzv10iLBFwRIWNAR-s4iuuUMRuEB>
@@ -6094,7 +6094,7 @@
 - **Operating with Covenant - Ryan Cobb and Justin Bui(SO-CON 2020)**
   - URL: <https://www.youtube.com/watch?v=oN_0pPI6TYU&list=PLJK0fZNGiFU-2vFpjnt96j_VSuQVTkAnO&index=20&t=6s>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:831`; references: 1.
+  - Source: `Draft/RT.md:828`; references: 1.
   - ID: `2ead7958db64b2e139f2`.
 - **Attacking ADFS Endpoints with PowerShell - Karl Fosaaen(Derbycon 2016)**
   - URL: <https://www.youtube.com/watch?v=oTyLdAUjw30>
@@ -6104,7 +6104,7 @@
 - **Oracle Java Deserialization Vulnerabilities - Stephen Kost, Phil Reimann(2016)**
   - URL: <https://www.youtube.com/watch?v=oZPZLiY2PeA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3893`; references: 1.
+  - Source: `Draft/Web.md:4031`; references: 1.
   - ID: `b19a14f81f88e8fa6736`.
 - **"The Hard Parts of Open Source" by Evan Czaplicki(StrangeLoop2018)**
   - URL: <https://www.youtube.com/watch?v=o_4EX4dPppA>
@@ -6119,7 +6119,7 @@
 - **Reflective C# Assembly loading && Reflective PE-Injection - S3cur3Th1sSh1t(2021)**
   - URL: <https://www.youtube.com/watch?v=oe11Q-3Akuk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3191`; references: 1.
+  - Source: `Draft/RT.md:3278`; references: 1.
   - ID: `b7365215f3d3643502b8`.
 - **Shipping in Pirate-Infested Waters: Practical Attack and Defense in Kubernetes - Greg Castle, CJ Cullen**
   - URL: <https://www.youtube.com/watch?v=ohTq0no0ZVU>
@@ -6154,7 +6154,7 @@
 - **Don't Trust The DOM: Bypassing XSS Mitigations Via Script Gadgets - Sebastian Lekies(AppSecEU2017)**
   - URL: <https://www.youtube.com/watch?v=p07acPBi-qw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4384`; references: 1.
+  - Source: `Draft/Web.md:4511`; references: 1.
   - ID: `ae35d8c95b1bd68a93a0`.
 - **How To Learn (And Teach) Hacking - Ruben Gonzalez(OWASP Amsterdam2019)**
   - URL: <https://www.youtube.com/watch?v=p6IC-7Nx3r4>
@@ -6169,7 +6169,7 @@
 - **How To Hack OAuth｜Øredev 2019 - Aaron Parecki(2019)**
   - URL: <https://www.youtube.com/watch?v=p9hpqT5H3Lo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1623`; references: 1.
+  - Source: `Draft/Web.md:1789`; references: 1.
   - ID: `625decac09883db9eab0`.
 - **GSuite Digital Forensics and Incident Response - Megan Roddie(BSides SanAntonio)**
   - URL: <https://www.youtube.com/watch?v=pGn95-L8_sA&feature=youtu.be>
@@ -6194,7 +6194,7 @@
 - **Game of Chromes: Owning the Web with Zombie Chrome Extensions - DEF CON 25 - Tomer Cohen**
   - URL: <https://www.youtube.com/watch?v=pR4HwDOFacY>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:428`; references: 1.
+  - Source: `Draft/Web.md:510`; references: 1.
   - ID: `29be660ecc61936139cd`.
 - **Cognitive Bias and Critical Thinking in Open Source Intelligence - Defcamp 2014**
   - URL: <https://www.youtube.com/watch?v=pVAM21UERLU&index=24&list=PLnwq8gv9MEKgSryzYIFhpmCcqnVzdUWfH>
@@ -6259,7 +6259,7 @@
 - **How Malware Can Resolve APIs By Hash - AGDC Services**
   - URL: <https://www.youtube.com/watch?v=q8of74upT_g>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3817`; references: 1.
+  - Source: `Draft/RT.md:3928`; references: 1.
   - ID: `1ad940fb8b28003d2c99`.
 - **Security, Moore's Law, and the Anomaly of Cheap Complexity - Halvar Flake(2018)**
   - URL: <https://www.youtube.com/watch?v=q98foLaAfX8>
@@ -6279,12 +6279,12 @@
 - **OAuth2: Beyond The Specs - Daniele Timo Second - BSides Lisbon2018**
   - URL: <https://www.youtube.com/watch?v=qBxI0bjtJvU&t=0s&list=PLbuNP88_wbNxPkglG6zLUhvzvxvDimuEc&index=7>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1615`; references: 1.
+  - Source: `Draft/Web.md:1781`; references: 1.
   - ID: `a7219f0f3a6ed857b02a`.
 - **.NET Serialization: Detecting and defending vulnerable endpoints - Alvaro Munez(LocoMocoSec2018)**
   - URL: <https://www.youtube.com/watch?v=qDoBlLwREYk&list=PLwvifWoWyqwqkmJ3ieTG6uXUSuid95L33&index=9>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3946`; references: 1.
+  - Source: `Draft/Web.md:4084`; references: 1.
   - ID: `4b88fd87a305c558533a`.
 - **Investigating PowerShell Attacks - Ryan Kazanciyan and Matt Hastings - DEFCON22**
   - URL: <https://www.youtube.com/watch?v=qF06PFcezLs>
@@ -6294,12 +6294,12 @@
 - **When TLS Hacks You - Joshua Maddux(Defcon Safemode2021)**
   - URL: <https://www.youtube.com/watch?v=qGpAJxfADjo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4037`; references: 1.
+  - Source: `Draft/Web.md:4174`; references: 1.
   - ID: `71a372293e7038b098c8`.
 - **Five Ways I got Caught before Lunch - RastaMouse(Mystikcon 2021)**
   - URL: <https://www.youtube.com/watch?v=qIbrozlf2wM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:294`; references: 1.
+  - Source: `Draft/RT.md:361`; references: 1.
   - ID: `ce2d50d2d460b5325ca5`.
 - **What the Fax?! - Eyal Itkin, Yaniv Balmas - DEF CON 26**
   - URL: <https://www.youtube.com/watch?v=qLCE8spVX9Q>
@@ -6309,7 +6309,7 @@
 - **Subdomain Takeovers, beyond the basics for Pentesters and Bug Bounty Hunters - Codingo(2020)**
   - URL: <https://www.youtube.com/watch?v=q_A8aXLO1gA>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4167`; references: 1.
+  - Source: `Draft/Web.md:4301`; references: 1.
   - ID: `30bbb1409ce0b417b82b`.
 - **LayerOne2016 - Kerberos Party Tricks (Geoffrey Janjua) (No sound!)**
   - URL: <https://www.youtube.com/watch?v=qcfdPdqbk5U>
@@ -6334,7 +6334,7 @@
 - **API hacking for the Actually Pretty Inexperienced hacker with Katie Paxton-Fear(OWASP DevSlop)**
   - URL: <https://www.youtube.com/watch?v=qqmyAxfGV9c>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:282`; references: 1.
+  - Source: `Draft/Web.md:346`; references: 1.
   - ID: `4441e438fc7e43528eb1`.
 - **DEF CON 20: Fuzzing Online Games**
   - URL: <https://www.youtube.com/watch?v=r0UQ6bpKOX0>
@@ -6359,7 +6359,7 @@
 - **Server-Side Template Injection Workshop - Tib3rius(2021)**
   - URL: <https://www.youtube.com/watch?v=rJ-l_JSdUlE>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4115`; references: 1.
+  - Source: `Draft/Web.md:4250`; references: 1.
   - ID: `bb8b2356ceb74d9bdf91`.
 - **APTs LOVE PowerShell and Why You Should Too - Anthony Rose & Jake Krasnov(Defcon28RedTeamVillage)**
   - URL: <https://www.youtube.com/watch?v=rLWySkU0U1U&list=PLruly0ngXhPHlQ0ebMbB3XuKVJPq3B0qS&index=33>
@@ -6399,7 +6399,7 @@
 - **Assumed Breach: The Better Pen Test w/ Tim Medin - SANS HackFest & Ranges Summit 2020**
   - URL: <https://www.youtube.com/watch?v=rgkjDHgAOVo&list=PLdVJWiil7RxoW8rBeKc0flY8bRuD3M68L&index=16>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4214`; references: 1.
+  - Source: `Draft/RT.md:4280`; references: 1.
   - ID: `c47a1de89bd2b9385a69`.
 - **Global Honeypot Trends - Elliot Brink**
   - URL: <https://www.youtube.com/watch?v=rjd-r4WA0PU>
@@ -6429,7 +6429,7 @@
 - **Hacking Appliances: Ironic Exploitation Of Security Products - Ben Williams - BHEU 2013**
   - URL: <https://www.youtube.com/watch?v=rrjSEkSwwOQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4334`; references: 1.
+  - Source: `Draft/RT.md:4414`; references: 1.
   - ID: `99ccb3e2662032902e37`.
 - **Attacking & Auditing Docker Containers Using Open Source tools - Madhu Akula**
   - URL: <https://www.youtube.com/watch?v=ru7GicI5iyI>
@@ -6449,7 +6449,7 @@
 - **Baselining Behavior Tradecraft through Simulations - Dave Kennedy(WWHF2019)**
   - URL: <https://www.youtube.com/watch?v=s19na5Iob6A&list=PLXF21PFPPXTNXEgkUEBbRgvraxWP3c4Hr&index=11>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:672`; references: 1.
+  - Source: `Draft/RT.md:669`; references: 1.
   - ID: `ec6f1cd57dcf3c105473`.
 - **Key Impressioning by Jos Weyers - Defcon 19**
   - URL: <https://www.youtube.com/watch?v=s8aQSxXoLFk>
@@ -6464,7 +6464,7 @@
 - **"JWAT.... Attacking JSON Web Tokens" - Louis Nyffenegger(BSides Canberra 2019)**
   - URL: <https://www.youtube.com/watch?v=sGvF8wS76Dk>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1516`; references: 1.
+  - Source: `Draft/Web.md:1685`; references: 1.
   - ID: `a97b9adff2498fdc3b22`.
 - **Gaining Root with Harmless AppStore Apps - Csaba Fitzi**
   - URL: <https://www.youtube.com/watch?v=sOtcM-dryF4&list=PLliknDIoYszvTDaWyTh6SYiTccmwOsws8&index=8>
@@ -6524,12 +6524,12 @@
 - **Meta-Post Exploitation: Using Old, Lost, Forgotten Knowledge - Val Smith, Colin Ames(Defcon16)**
   - URL: <https://www.youtube.com/watch?v=swCNI1qWVCQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4083`; references: 2.
+  - Source: `Draft/RT.md:4151`; references: 2.
   - ID: `efcd82d69231a67b3365`.
 - **Deserialization: what, how and why \[not\] - Alexei Kojenov(AppSecUSA2018)**
   - URL: <https://www.youtube.com/watch?v=t-zVC-CxYjw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3896`; references: 2.
+  - Source: `Draft/Web.md:4034`; references: 2.
   - ID: `30c31b3945c02ba0634d`.
 - **Reverse Engineering of Proprietary Protocols, Tools and Techniques - Rob Savoye - FOSDEM 2009 **
   - URL: <https://www.youtube.com/watch?v=t3s-mG5yUjY>
@@ -6544,7 +6544,7 @@
 - **Cross-Origin Resource Sharing (CORS) | Complete Guide - Rana Khalil(2022)**
   - URL: <https://www.youtube.com/watch?v=t5FBwq-kudw>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:718`; references: 1.
+  - Source: `Draft/Web.md:825`; references: 1.
   - ID: `e758cde242d2f13a6655`.
 - **Linux security event monitoring with osquery - Alessandro Gario(Querycon2019)**
   - URL: <https://www.youtube.com/watch?v=t5weGeLvhBY>
@@ -6559,7 +6559,7 @@
 - **HTTP/2 Magic with Merlin - Russel Van Tuyl(BSides Knoxville 2018)**
   - URL: <https://www.youtube.com/watch?v=tCK1yp5d1E8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:860`; references: 1.
+  - Source: `Draft/RT.md:857`; references: 1.
   - ID: `0b68bd79a009ff54bd78`.
 - **Beyond the MCSE: Red Teaming Active Directory - Sean Metcalf(Defcon24)**
   - URL: <https://www.youtube.com/watch?v=tEfwmReo1Hk>
@@ -6599,7 +6599,7 @@
 - **Shells on Cells - Tj McClerain(ShellCon2018)**
   - URL: <https://www.youtube.com/watch?v=tRytvE6WCyY&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN&index=4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1574`; references: 1.
+  - Source: `Draft/RT.md:1601`; references: 1.
   - ID: `1824b99a0fd8479856b3`.
 - **How to 10X Your Company’s Security (Without a Series D) - Clint Gibler(BSidesSF2020)**
   - URL: <https://www.youtube.com/watch?v=tWA_EBNsQH8&feature=emb_title>
@@ -6629,7 +6629,7 @@
 - **Mainframed - The Forgotten Fortress - Philip Young - BSidesLV2012**
   - URL: <https://www.youtube.com/watch?v=tjYlXW2Dldc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4277`; references: 1.
+  - Source: `Draft/RT.md:4351`; references: 1.
   - ID: `55387db19a2070245bbf`.
 - **NSA Playset - GSM Sniffing - Pierce&Loki - Defcon22**
   - URL: <https://www.youtube.com/watch?v=tnn_qJGh1gc>
@@ -6644,7 +6644,7 @@
 - **Cracking The Perimeter: How Red Teams Penetrate - Dominic Chell(BSidesMCR 2018)**
   - URL: <https://www.youtube.com/watch?v=u-MHX9-O890>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4164`; references: 1.
+  - Source: `Draft/RT.md:4234`; references: 1.
   - ID: `48f343e3d40b86683b2a`.
 - **Interesting Malware - No, I’m not kidding... by Marion Marschalek**
   - URL: <https://www.youtube.com/watch?v=u2Ry9HTBbZI>
@@ -6724,7 +6724,7 @@
 - **Java Serialization security issues - Erno Jeges - OWASP Bay Area(2018)**
   - URL: <https://www.youtube.com/watch?v=uur5B0rFMkQ>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3898`; references: 1.
+  - Source: `Draft/Web.md:4036`; references: 1.
   - ID: `74c256043ae7a5c877f2`.
 - **Sneaking Past Device Guard - Philip Tsukerman(HITB2019 Amsterdam)**
   - URL: <https://www.youtube.com/watch?v=uxTuHL94Rn4>
@@ -6744,12 +6744,12 @@
 - **RAT Reusing Adversary Tradecraft - Alexander Rymdeko Harvey(BSides Augusta2016)**
   - URL: <https://www.youtube.com/watch?v=v2jU8EsJMVc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4096`; references: 1.
+  - Source: `Draft/RT.md:4164`; references: 1.
   - ID: `84c967c2660424db5a26`.
 - **Fundamentals of Hacking Web API's - Charles Shirer**
   - URL: <https://www.youtube.com/watch?v=v66phijsNEg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:280`; references: 1.
+  - Source: `Draft/Web.md:344`; references: 1.
   - ID: `800d6bc52ee3a2e7270b`.
 - **Host-Hunting on a Budget - Leo Bastidas(BSidesAugusta2019)**
   - URL: <https://www.youtube.com/watch?v=vCsmrTEJTt0&list=PLEJJRQNh3v_PF6cecq0ES2w25JtoG631g&index=28>
@@ -6779,7 +6779,7 @@
 - **Attacking Modern Web Technologies - Frans Rosén(NDC Oslo 2018)**
   - URL: <https://www.youtube.com/watch?v=vRqcUS4CPFs>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2395`; references: 1.
+  - Source: `Draft/Web.md:2509`; references: 1.
   - ID: `537b660c173cde7fa12a`.
 - **Hacking and Hardening Kubernetes Clusters by Example - Brad Geesaman(KubeCon 2017)**
   - URL: <https://www.youtube.com/watch?v=vTgQLzeBfRU>
@@ -6829,7 +6829,7 @@
 - **Look at me, I'm the Adversary now: Intro to Adversary Emulation & Its Place in Security Operations - Samuel Kimmons(2021)**
   - URL: <https://www.youtube.com/watch?v=vnr0kijaK60>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:382`; references: 1.
+  - Source: `Draft/RT.md:422`; references: 1.
   - ID: `79d35289c23c4adfeb2a`.
 - **SCADA Systems - Utility 101 Session with Rusty Wiliiams**
   - URL: <https://www.youtube.com/watch?v=vv2CoTiaWPI>
@@ -6849,7 +6849,7 @@
 - **HTTP Desync Attacks: Smashing into the Cell Next Door - James Kettle(DEFCON27)**
   - URL: <https://www.youtube.com/watch?v=w-eJM2Pc0KI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3377`; references: 1.
+  - Source: `Draft/Web.md:3514`; references: 1.
   - ID: `b4667701c7bbed3b070a`.
 - **Develop Your Own RAT: EDR + AV Defense by Dobin Rutishauser(DefconSwitzerland2022)**
   - URL: <https://www.youtube.com/watch?v=w0bh7s7bVXI>
@@ -6864,7 +6864,7 @@
 - **Traversing The Kill-Chain: The New Shiny In 2018 - Vincent Yiu - HITBGSEC 2018**
   - URL: <https://www.youtube.com/watch?v=w1fNGOKkeSg&feature=youtu.be>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4167`; references: 1.
+  - Source: `Draft/RT.md:4237`; references: 1.
   - ID: `3ebdb2f2c156667e2941`.
 - **Deconstructing a secure processor - Christopher Tarnovsky**
   - URL: <https://www.youtube.com/watch?v=w7PT0nrK2BE>
@@ -6909,7 +6909,7 @@
 - **Automated Discovery of Deserialization Gadget Chains - Ian Haken(Defcon26)**
   - URL: <https://www.youtube.com/watch?v=wPbW6zQ52w8>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3890`; references: 2.
+  - Source: `Draft/Web.md:4028`; references: 2.
   - ID: `62641c3a3837d7d6af78`.
 - **OBTS v2.0 "KeySteal: A Vulnerability in Apple's Keychain" (Linus Henze)**
   - URL: <https://www.youtube.com/watch?v=wPd6rMk8-gg&list=PLliknDIoYszvTDaWyTh6SYiTccmwOsws8&index=9>
@@ -6919,7 +6919,7 @@
 - **Operating System Fingerprinting for Virtual Machines - Nguyen Anh Quynh(Defcon18)**
   - URL: <https://www.youtube.com/watch?v=wQvyu8oR14c>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:2021`; references: 1.
+  - Source: `Draft/RT.md:1994`; references: 1.
   - ID: `f0c96814ab6e56cd2f6d`.
 - **Just What The Doctor Ordered? - Scott Erven and Shawn Merdinger - DEF CON 22**
   - URL: <https://www.youtube.com/watch?v=wTEMSBXtkAc>
@@ -6939,7 +6939,7 @@
 - **Discord Hangout: Practical OAuth Attacks - Scot Berner**
   - URL: <https://www.youtube.com/watch?v=wf8apBA6CRc>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1618`; references: 1.
+  - Source: `Draft/Web.md:1784`; references: 1.
   - ID: `5f30ff21c9fa64ce37ac`.
 - **https://www.youtube.com/watch?v=wfTMGTfr8gI**
   - URL: <https://www.youtube.com/watch?v=wfTMGTfr8gI>
@@ -6949,17 +6949,17 @@
 - **Exploiting CORS Misconfigurations For Bitcoins And Bounties by James Kettle(AppSecEU 2017)**
   - URL: <https://www.youtube.com/watch?v=wgkj4ZgxI4c>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:722`; references: 1.
+  - Source: `Draft/Web.md:829`; references: 1.
   - ID: `99674513c8ab5f8bfbb3`.
 - **From Hacking Team to Hacked Team to…? - Filip Kafla(NorthSec2018)**
   - URL: <https://www.youtube.com/watch?v=wkkBcspGLUg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:454`; references: 1.
+  - Source: `Draft/RT.md:468`; references: 1.
   - ID: `1c1113f01fd1856325d6`.
 - **Detecting Blue Team Research Through Targeted Ads - 0x200b(Defcon26)**
   - URL: <https://www.youtube.com/watch?v=wlKqyuefE1E>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4113`; references: 1.
+  - Source: `Draft/RT.md:4181`; references: 1.
   - ID: `fcf9633a20ddd479c2f6`.
 - **Mastering the Vim Language - Chris Toomey**
   - URL: <https://www.youtube.com/watch?v=wlR5gYd6um0>
@@ -6969,12 +6969,12 @@
 - **.NET Core for Malware – Ryan Cobb (SO-CON 2020)**
   - URL: <https://www.youtube.com/watch?v=woRfx5D2Y9Y&list=PLJK0fZNGiFU-2vFpjnt96j_VSuQVTkAnO&index=10>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:2834`; references: 1.
+  - Source: `Draft/RT.md:2921`; references: 1.
   - ID: `8b03d06247b2eb33ef84`.
 - **.NET Core for Malware – Ryan Cobb (SO-CON 2020)**
   - URL: <https://www.youtube.com/watch?v=woRfx5D2Y9Y&list=PLJK0fZNGiFU-2vFpjnt96j_VSuQVTkAnO&index=11>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:3558`; references: 1.
+  - Source: `Draft/RT.md:3655`; references: 1.
   - ID: `26915793c5dd2a747f27`.
 - **Threat Modeling 101 - Dan Tentler**
   - URL: <https://www.youtube.com/watch?v=wu8SDWao_Ns>
@@ -6989,7 +6989,7 @@
 - **Scant Touch This - Aaron Stephens(2019)**
   - URL: <https://www.youtube.com/watch?v=x1tEOkY-7JE>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1526`; references: 1.
+  - Source: `Draft/RT.md:1546`; references: 1.
   - ID: `a9bac61c7a37e65dbc04`.
 - **Source Zero Con: Remaining Invisible in the Age of EDR - Matthew Eidelberg(2021)**
   - URL: <https://www.youtube.com/watch?v=x4wauJZPnKg&list=PLL9FY4aY7o41jSbG6WtdB1viPqiBMXGQd&index=10>
@@ -7019,7 +7019,7 @@
 - **The Tangled Web and Its Same Origin Policy - Pankaj**
   - URL: <https://www.youtube.com/watch?v=xaYvpLv9pMI>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1846`; references: 1.
+  - Source: `Draft/Web.md:2004`; references: 1.
   - ID: `f993f186ccb847fccfe4`.
 - **Differential Cryptanalysis for Dummies - Jon King**
   - URL: <https://www.youtube.com/watch?v=xav-GUO_o4s&feature=youtu.be>
@@ -7044,7 +7044,7 @@
 - **Testing stateful web application workflows - András Veres-Szentkirályi(2016)**
   - URL: <https://www.youtube.com/watch?v=xiTFKigyncg>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:2390`; references: 1.
+  - Source: `Draft/Web.md:2504`; references: 1.
   - ID: `231920dd6bc97dddd71f`.
 - **Tricking modern endpoint security products - Michel Coene(SANS2020)**
   - URL: <https://www.youtube.com/watch?v=xmNpS9mbwEc>
@@ -7054,7 +7054,7 @@
 - **An Attackers View of Serverless and GraphQL Apps - Abhay Bhargav(AppSecCali2019)**
   - URL: <https://www.youtube.com/watch?v=xr2YX5JbDbM>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:970`; references: 1.
+  - Source: `Draft/Web.md:1067`; references: 1.
   - ID: `37460b887ef82ef449a1`.
 - **Real-life experiences in avionics security assessment (A. Barisani)**
   - URL: <https://www.youtube.com/watch?v=xtSmPgXw34I&feature=youtu.be&app=desktop>
@@ -7084,7 +7084,7 @@
 - **Custom Chromium Build to Reverse Engineer Pop-Under Trick - LiveOverflow**
   - URL: <https://www.youtube.com/watch?v=y6Uzinz3DRU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1262`; references: 1.
+  - Source: `Draft/Web.md:1401`; references: 1.
   - ID: `21f063dbb10b35f3dc4d`.
 - **Securing without Slowing DevOps - Wolfgang Goerlich - Circle City Con 5.0**
   - URL: <https://www.youtube.com/watch?v=y8MopriNaMo&feature=youtu.be>
@@ -7124,7 +7124,7 @@
 - **Room for Escape: Scribbling Outside the Lines of Template Security - Alvaro Muñoz, Oleksandr Mirosh**
   - URL: <https://www.youtube.com/watch?v=yMDCyzSBX5U&list=PLH15HpR5qRsXE_4kOSy_SXwFkFQre4AV_&index=51>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:4116`; references: 1.
+  - Source: `Draft/Web.md:4251`; references: 1.
   - ID: `d9fc9eaa135a80ff4c59`.
 - **Starting a metrics program - Marcus Ranum(OWASP AppSec California 2016)**
   - URL: <https://www.youtube.com/watch?v=yW7kSVwucSk>
@@ -7199,7 +7199,7 @@
 - **Cracking the Perimeter with SharpShooter - D. Chell(HIP19)**
   - URL: <https://www.youtube.com/watch?v=z89xNXLsXLU>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:4169`; references: 1.
+  - Source: `Draft/RT.md:4239`; references: 1.
   - ID: `1a73c302c20aa9b1470d`.
 - **Managing Client Relationships as an Investment Banker, Lawyer or Consultant - Jim Donovan(2015)**
   - URL: <https://www.youtube.com/watch?v=z8kqCIxXTEw>
@@ -7214,7 +7214,7 @@
 - **Credential Stuffing - Identifying and Fixing your Exposure - Jeff McJunkin( Wild West Hackin' Fest2020)**
   - URL: <https://www.youtube.com/watch?v=zHvHsdC2Jqo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/RT.md:1489`; references: 1.
+  - Source: `Draft/RT.md:1503`; references: 1.
   - ID: `16c3194c4e9ed01d3849`.
 - **Resilient Detection Engineering - Olaf Hartong(WWHF Deadwood2020)**
   - URL: <https://www.youtube.com/watch?v=zMPouyUNX5c&list=PLXF21PFPPXTOZ9LsDnCTY0tfio0uxRz41&index=16>
@@ -7234,7 +7234,7 @@
 - **JWT Parkour - Louis Nyffenegger(AppSec California2020)**
   - URL: <https://www.youtube.com/watch?v=zWVRHK3ykfo>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1492`; references: 1.
+  - Source: `Draft/Web.md:1661`; references: 1.
   - ID: `a065931688009795e5a7`.
 - **When Cybercriminals with Good OpSec Attack - Ryan MacFarlane, Liam O'Murchu(2020)**
   - URL: <https://www.youtube.com/watch?v=zXmZnU2GdVk>
@@ -7264,7 +7264,7 @@
 - **HTTP/2 & QUIC - Teaching Good Protocols To Do Bad Things - Catherine (Kate) Pierce, Vyrus(PHV-Defcon2016)**
   - URL: <https://www.youtube.com/watch?v=zoHjVrRUFQ4>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:1105`; references: 1.
+  - Source: `Draft/Web.md:1226`; references: 1.
   - ID: `f3760755e1247ffa39ea`.
 - **The Art of bypassing endpoint protections for red teaming engagements - Eslam Reda, Jameel Nabbo(2020)**
   - URL: <https://youtu.be/2X7zktVqBaY>
@@ -7289,7 +7289,7 @@
 - **XSS. (No, the other "S") - Mike West(CSSconf.eu 2013)**
   - URL: <https://youtu.be/eb3suf4REyI?t=582>
   - Candidate type: video; status: unverified / pending.
-  - Source: `Draft/Web.md:3095`; references: 1.
+  - Source: `Draft/Web.md:3245`; references: 1.
   - ID: `1aa70d95a9b1ea20f412`.
 - **From What to How in Cybersecurity: Self Care, Culture, and Strategy - Jason Chan(BSidesRDU2021)**
   - URL: <https://youtu.be/rXG6ExQbIZo?t=540>

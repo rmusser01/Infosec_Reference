@@ -6,7 +6,7 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 
 - Shared Markdown parser and offline navigation audit, including explicit HTML anchors and GitHub heading fragments.
 - One manifest for 48 main topics, generated README/site topic navigation, sidebar, selective alphabetical subject index, and full reference search paths.
-- Generated ToCs and real navigable headings for seventeen pages: AD, DFIR, logging/monitoring/threat hunting, Cloud, Containers, Basic, Building a Lab, Career, Classes/Training, Documentation/Reporting, Threat Modeling, OSINT, Exfiltration, Fuzzing, Exploit Development, Reverse Engineering, and Programming Language Security; original external URL tokens and explicit anchor names are regression-checked.
+- Generated ToCs and real navigable headings for twenty pages: AD, DFIR, logging/monitoring/threat hunting, Cloud, Containers, Basic, Building a Lab, Career, Classes/Training, Documentation/Reporting, Threat Modeling, OSINT, Exfiltration, Fuzzing, Exploit Development, Reverse Engineering, Programming Language Security, Defense, Web, and Red Teaming; original external URL tokens and explicit anchor names are regression-checked.
 - Docsify configuration repair and narrow search-plugin fixes for empty heading bodies, HTML titles, and explicit-anchor result destinations.
 - Internal navigation checks with individual legacy exemptions and stale-exemption detection; read-only CI workflow.
 - Parser-generated processing lists and a separate progress ledger that survives regeneration.
@@ -14,16 +14,16 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 
 ## Measured results
 
-Initial internal errors: 334. After pilot: 305 legacy errors remained. After Cloud/Containers: 296 remained. After foundations: 274 remained. After assessment references: 260 remained. After testing/development references: 200 legacy error occurrences / 192 distinct keys remain across 23 other pages; managed navigation and all seventeen migrated pages have zero internal errors. The audit intentionally continues to report that debt.
+Initial internal errors: 334. After pilot: 305 legacy errors remained. After Cloud/Containers: 296 remained. After foundations: 274 remained. After assessment references: 260 remained. After testing/development references: 200 remained. After defense/web/red-team references: 122 legacy error occurrences / 121 distinct keys remain across 20 other pages; managed navigation and all twenty migrated pages have zero internal errors. The audit intentionally continues to report that debt.
 
-Current provisional resource candidates: 1,199 PDFs, 1,458 videos, 23 other non-text; 19,066 URLs remain unknown until response/content confirmation. These are source-derived inventory counts, not verified content types or download counts.
+Current provisional resource candidates: 1,200 PDFs, 1,458 videos, 23 other non-text; 19,066 URLs remain unknown until response/content confirmation. These are source-derived inventory counts, not verified content types or download counts.
 
 Automated tests exercise the actual checked-in Docsify compiler and application in jsdom under `/docs/`, sidebar/deep routing, and distinct search phrases. Separate Chromium checks are recorded below; production deployment remains unverified.
 
 ## Remaining work
 
-- Review the remaining 31 of 48 main-topic pages and migrate where useful, retiring their legacy-error entries in reviewable groups. Existing functional directory landings need review rather than forced ToCs. Secondary pages also have legacy debt. The largest remaining error groups are Defense (29), Web (26), RT (23), and Windows privilege escalation/post-exploitation (19).
-- Complete collection-wide GitHub/Docsify navigation and search QA, and resolve inline-anchor duplicate IDs/empty heading permalinks and the missing favicon. The seventeen migrated pages have compiler/browser evidence; production deployment remains unverified.
+- Review the remaining 28 of 48 main-topic pages and migrate where useful, retiring their legacy-error entries in reviewable groups. Existing functional directory landings need review rather than forced ToCs. Secondary pages also have legacy debt. The largest remaining error groups are Windows privilege escalation/post-exploitation (19), the ATT&CK collection landing page (11), Sysinternals (11), Network Attacks (10), and Physical Security (10).
+- Complete collection-wide GitHub/Docsify navigation and search QA, and resolve inline-anchor duplicate IDs/empty heading permalinks and the missing favicon. The twenty migrated pages have compiler/browser evidence; production deployment remains unverified.
 - Configure Browsertrix on the available Docker runtime and choose a durable archive destination; implement the enforced capture adapter, article-image filtering, WARC verification, offline replay, and storage/retrieval pilot. The archive policy file describes intent, not implemented enforcement.
 - Run external batches with evidence-aware capture/queue routing. No full external validation or web capture has run.
 - Separately scoped later processing: PDF extraction/OCR, video captions/transcription, other extractors, and extracted-content search indexing. These are not prerequisites for completing navigation.
@@ -115,3 +115,19 @@ Starting checkpoint: `1f2293c`; continued in the requested checkout on `codex/ge
 - Native Chromium under `/docs/` verified exact search-result hashes and headings for `american fuzzy lop` → AFL, `Rubik` → Corelan, `WinDbg` → Debuggers, and `Code Review` → Code Review. An additional `WinAPI for Hackers` search reaches `ref-exploit-27` at H4; its deep-route reload succeeds. No browser console errors were observed.
 
 Verification: `npm test` passed 51/51 on Node.js 24.18.0; `npm run nav:check` passed with 200 explicitly baselined errors and no new/stale diagnostics; repeated `npm run nav:generate` returned no changed paths. Inventories regenerated successfully. Known inherited inline-anchor/favicon issues and trailing-space warnings remain; no broad whitespace rewrite, external availability batch, capture, push or publication was performed.
+
+
+## Defense, web and red-team references group — 2026-10-25
+
+Starting checkpoint: `344da8b`; continued on `codex/generated-navigation` in the requested checkout.
+
+- Migrated `Draft/Defense.md`, `Draft/Web.md`, and `Draft/RT.md` with managed document-order ToCs and stable `ref-defense-*`, `ref-web-*`, and `ref-rt-*` IDs. Added 99 selected subject entries; asset inventories are qualified as personal/organization in the index. Headings stay within configured depth four, with complete sibling categories where needed to keep resource scope accurate.
+- Replaced stale manual/mini-ToCs and relocated their explicit aliases to corresponding content (`1stand`, `1attack`, `first`, `c2ss`, `implants`). Defense's inherited duplicate ToC/merge marker was removed. Only resource-free To Do notes moved to the maintenance backlog; linked resource bodies and original code ranges remain.
+- Corrected Web's mislabeled Protocol Buffers and Logic Flaws sections; retained `robots` at the actual robots.txt section and `log4j` at the actual Log4j section. Filled the blank File System Access API heading and qualified new titles that would otherwise collide with existing aliases. Repaired Linux/Rails resource indentation exposed by preservation tests.
+- Intentionally added HTTPS to Web's existing `www.vsecurity.com/download/papers/XMLDTDEntityAttacks.pdf` destination, recorded as the sole URL correction. RT's unusable `[keyserver](keyserver)` placeholder remains as plain text with its description and a backlog item; no destination was invented or fetched.
+- Expanded original-source snapshots and actual-compiler coverage before editing. The three migration tests and compiler check failed first, then passed. Raw external URL multisets, original parsed resource occurrences, explicit aliases, and original code blocks are preserved with the documented URL correction.
+- Retired all 78 group errors. Remaining debt: 122 occurrences / 121 keys across 20 other pages. Twenty of 48 main topics have managed ToCs; the remaining 28 need review/migration where useful. Regenerated inventories contain 21,747 unique URLs: 1,200 PDF, 1,458 video, 23 other non-text candidates, and 19,066 unknown. The extra PDF candidate is the repaired scheme; classification/availability remain provisional.
+- Independent review found no blockers. Actual Docsify comparisons retain every prior rendered external-link occurrence: Defense 176→178, Web 2,347→2,353, RT 1,946→1,950, accounting for the intended correction. Additional visible links come from repaired malformed list indentation. Code examples, legacy aliases, heading depth and relocated navigation targets were checked.
+- Native Chromium under `/docs/` verified `Inventory-BrowserExts` → security baseline, `File System Access API - MDN` → File System Access API, and `Introducing RedELK` → Logging & Monitoring, followed by deep-route reload. Further searches confirm `Protocol Buffers - Google` and `The Art of Exploiting Logical Flaws` reach their corrected sections. No console errors were observed.
+
+Verification: `npm test` passed 54/54 on Node.js 24.18.0; `npm run nav:check` passed with 122 explicitly baselined errors and no new/stale diagnostics; repeated generation reported no changed paths. Resource inventories regenerated successfully. Existing inline-anchor/favicon presentation issues and inherited trailing-space warnings remain. No external availability batch, archive capture, push or publication ran.

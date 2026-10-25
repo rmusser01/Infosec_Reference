@@ -55,3 +55,12 @@ Fuzzing, Exploit Development, Reverse Engineering and Programming Language Secur
 All 60 group errors are retired: 200 occurrences / 192 legacy keys remain across 23 other pages. Seventeen main topics have managed ToCs; 31 remain to review/migrate where useful. Compiler coverage and native Chromium search/deep routes cover all four new pages. Review caught and corrected the Windows shellcode heading depth/scope; its three original references are separate from general techniques, reference material, REPLs and tools. Corrected output retains all 531 rendered external-link occurrences on that page, with the one documented URL correction.
 
 The full 51-test suite passes; navigation check has no new/stale diagnostics, and repeated generation reports no changes. Inventories still contain 21,746 unique URLs. External validation, capture and production deployment remain unverified.
+
+
+## Defense, web and red-team references group
+
+Defense, Web and Red Teaming now have managed ToCs, stable canonical destinations and 99 selected subjects. Replaced stale manual ToCs, relocated navigation-only aliases to content and removed Defense's inherited duplicate ToC/merge marker. Web's Protocol Buffers/Logic Flaws labels match their resources; robots/Log4j aliases retain the matching topics. The only URL correction adds HTTPS to the existing VSecurity PDF destination. RT's missing keyserver destination stays a named/described backlog item rather than a broken local link.
+
+All 78 group errors are retired: 122 occurrences / 121 legacy keys remain across 20 other pages. Twenty main topics have managed ToCs; 28 remain to review/migrate as appropriate. Original resource occurrences, explicit aliases and code ranges are preserved. Actual Docsify external-link occurrence comparisons retain Defense 176→178, Web 2,347→2,353 and RT 1,946→1,950; extra visible links result from list indentation repairs. Native Chromium search/deep-route checks cover all three pages and corrected Web labels.
+
+The 54-test suite passes, navigation check has no new/stale diagnostics, and repeated generation makes no changes. Inventory: 21,747 URLs (1,200 PDF, 1,458 video, 23 other non-text candidates, 19,066 unknown). External validation and capture remain pending.

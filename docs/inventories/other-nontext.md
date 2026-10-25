@@ -14,7 +14,7 @@
 - **JSON Web Token Flowchart**
   - URL: <http://cryto.net/%7Ejoepie91/blog/attachments/jwt-flowchart.png>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/Web.md:1470`; references: 1.
+  - Source: `Draft/Web.md:1639`; references: 1.
   - ID: `7621d51524eb459a10ba`.
 - **Part 1**
   - URL: <http://i.imgur.com/EU6ga.jpg>

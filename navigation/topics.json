@@ -1034,8 +1034,119 @@
       "title": "Defense",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "I Want to...(Personal)",
+          "fragment": "ref-defense-3",
+          "aliases": []
+        },
+        {
+          "label": "Asset Inventory (Personal)",
+          "fragment": "ref-defense-4",
+          "aliases": []
+        },
+        {
+          "label": "I Want to...(Enterprise/Organization)",
+          "fragment": "ref-defense-8",
+          "aliases": []
+        },
+        {
+          "label": "Asset Inventory (Organization)",
+          "fragment": "ref-defense-9",
+          "aliases": []
+        },
+        {
+          "label": "Create a Security Baseline For My Environment",
+          "fragment": "ref-defense-17",
+          "aliases": []
+        },
+        {
+          "label": "Implement a Vulnerability Management Program Within My Organization",
+          "fragment": "ref-defense-21",
+          "aliases": []
+        },
+        {
+          "label": "Application Execution Control",
+          "fragment": "ref-defense-26",
+          "aliases": []
+        },
+        {
+          "label": "Firewalls",
+          "fragment": "ref-defense-28",
+          "aliases": []
+        },
+        {
+          "label": "Blue Team Tactics & Strategies",
+          "fragment": "ref-defense-31",
+          "aliases": []
+        },
+        {
+          "label": "Attack Surface Analysis & Reduction",
+          "fragment": "ref-defense-36",
+          "aliases": []
+        },
+        {
+          "label": "Single Packet Authorization",
+          "fragment": "ref-defense-47",
+          "aliases": []
+        },
+        {
+          "label": "SSH",
+          "fragment": "ref-defense-48",
+          "aliases": []
+        },
+        {
+          "label": "Mitigate Phishing Attacks",
+          "fragment": "ref-defense-49",
+          "aliases": []
+        },
+        {
+          "label": "Mitigate Ransomware Attacks",
+          "fragment": "ref-defense-53",
+          "aliases": []
+        },
+        {
+          "label": "For Journalists",
+          "fragment": "ref-defense-55",
+          "aliases": []
+        },
+        {
+          "label": "For Individuals Leaking Sensitive Information",
+          "fragment": "ref-defense-56",
+          "aliases": []
+        },
+        {
+          "label": "General Hardening",
+          "fragment": "ref-defense-59",
+          "aliases": []
+        },
+        {
+          "label": "Hardening Cloud Services/SaaS",
+          "fragment": "ref-defense-61",
+          "aliases": []
+        },
+        {
+          "label": "Hardening Linux",
+          "fragment": "ref-defense-65",
+          "aliases": []
+        },
+        {
+          "label": "Hardening macOS",
+          "fragment": "ref-defense-66",
+          "aliases": []
+        },
+        {
+          "label": "Hardening Windows",
+          "fragment": "ref-defense-67",
+          "aliases": []
+        },
+        {
+          "label": "Web Applications",
+          "fragment": "ref-defense-68",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Docs_and_Reports.md",
@@ -1865,8 +1976,189 @@
       "title": "Red Teaming/Penetration Testing Stuff",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Adversary Simulation &Or Emulation",
+          "fragment": "ref-rt-10",
+          "aliases": []
+        },
+        {
+          "label": "Specific Campaigns/Groups/Operations",
+          "fragment": "ref-rt-20",
+          "aliases": []
+        },
+        {
+          "label": "Building a (Red) Team",
+          "fragment": "ref-rt-21",
+          "aliases": []
+        },
+        {
+          "label": "Organizing a Red Team Engagement",
+          "fragment": "ref-rt-27",
+          "aliases": []
+        },
+        {
+          "label": "Metrics & Models",
+          "fragment": "ref-rt-31",
+          "aliases": []
+        },
+        {
+          "label": "Purple Teaming",
+          "fragment": "ref-rt-32",
+          "aliases": []
+        },
+        {
+          "label": "Command, Control, Communicate (or just CnC, or C3)",
+          "fragment": "ref-rt-38",
+          "aliases": []
+        },
+        {
+          "label": "C2 Development",
+          "fragment": "ref-rt-40",
+          "aliases": []
+        },
+        {
+          "label": "C2 Frameworks",
+          "fragment": "ref-rt-41",
+          "aliases": []
+        },
+        {
+          "label": "Cobalt Strike",
+          "fragment": "ref-rt-43",
+          "aliases": []
+        },
+        {
+          "label": "Aggressor Scripts",
+          "fragment": "ref-rt-45",
+          "aliases": []
+        },
+        {
+          "label": "Beacon",
+          "fragment": "ref-rt-46",
+          "aliases": []
+        },
+        {
+          "label": "Empire",
+          "fragment": "ref-rt-59",
+          "aliases": []
+        },
+        {
+          "label": "Domain Fronting",
+          "fragment": "ref-rt-68",
+          "aliases": []
+        },
+        {
+          "label": "External Attack Surface",
+          "fragment": "ref-rt-75",
+          "aliases": []
+        },
+        {
+          "label": "HW Related/Physical Devices/Implants",
+          "fragment": "ref-rt-83",
+          "aliases": []
+        },
+        {
+          "label": "Infrastructure",
+          "fragment": "ref-rt-88",
+          "aliases": []
+        },
+        {
+          "label": "Logging & Monitoring",
+          "fragment": "ref-rt-93",
+          "aliases": []
+        },
+        {
+          "label": "Implant & Payload Development",
+          "fragment": "ref-rt-99",
+          "aliases": []
+        },
+        {
+          "label": "Creation & Development",
+          "fragment": "ref-rt-100",
+          "aliases": []
+        },
+        {
+          "label": "Anti-Tricks",
+          "fragment": "ref-rt-101",
+          "aliases": []
+        },
+        {
+          "label": "Network Communications",
+          "fragment": "ref-rt-116",
+          "aliases": []
+        },
+        {
+          "label": "Cobalt Strike",
+          "fragment": "ref-rt-130",
+          "aliases": []
+        },
+        {
+          "label": "Language Specific",
+          "fragment": "ref-rt-159",
+          "aliases": []
+        },
+        {
+          "label": "Delivery & Staging",
+          "fragment": "ref-rt-178",
+          "aliases": []
+        },
+        {
+          "label": "Keying",
+          "fragment": "ref-rt-182",
+          "aliases": []
+        },
+        {
+          "label": "Adversary Simulation Tools",
+          "fragment": "ref-rt-188",
+          "aliases": []
+        },
+        {
+          "label": "Tactics/Strategies/Methodologies",
+          "fragment": "ref-rt-189",
+          "aliases": []
+        },
+        {
+          "label": "Skills Improvement",
+          "fragment": "ref-rt-194",
+          "aliases": []
+        },
+        {
+          "label": "Penetration Testing",
+          "fragment": "ref-rt-196",
+          "aliases": []
+        },
+        {
+          "label": "AIX",
+          "fragment": "ref-rt-199",
+          "aliases": []
+        },
+        {
+          "label": "Embedded",
+          "fragment": "ref-rt-200",
+          "aliases": []
+        },
+        {
+          "label": "MainFrames",
+          "fragment": "ref-rt-203",
+          "aliases": []
+        },
+        {
+          "label": "SAP",
+          "fragment": "ref-rt-204",
+          "aliases": []
+        },
+        {
+          "label": "SCADA/PLCs",
+          "fragment": "ref-rt-205",
+          "aliases": []
+        },
+        {
+          "label": "Virtual Appliances",
+          "fragment": "ref-rt-206",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Reverse Engineering - REMath Literature.md",
@@ -1996,8 +2288,214 @@
       "title": "Web",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "API Stuff",
+          "fragment": "ref-web-3",
+          "aliases": []
+        },
+        {
+          "label": "GraphQL APIs",
+          "fragment": "ref-web-10",
+          "aliases": []
+        },
+        {
+          "label": "Backend Processing Technologies",
+          "fragment": "ref-web-15",
+          "aliases": []
+        },
+        {
+          "label": "Browser Security",
+          "fragment": "ref-web-18",
+          "aliases": []
+        },
+        {
+          "label": "Browser Extensions",
+          "fragment": "ref-web-20",
+          "aliases": []
+        },
+        {
+          "label": "HTTPS Certificates & Certificate Transparency",
+          "fragment": "ref-web-23",
+          "aliases": []
+        },
+        {
+          "label": "Content Management Systems",
+          "fragment": "ref-web-24",
+          "aliases": []
+        },
+        {
+          "label": "Content Security Policy (CSP)",
+          "fragment": "ref-web-42",
+          "aliases": []
+        },
+        {
+          "label": "Cross-Origin Resource Sharing (CORS)",
+          "fragment": "ref-web-43",
+          "aliases": []
+        },
+        {
+          "label": "Electron",
+          "fragment": "ref-web-46",
+          "aliases": []
+        },
+        {
+          "label": "File System Access API",
+          "fragment": "ref-web-49",
+          "aliases": []
+        },
+        {
+          "label": "GraphQL",
+          "fragment": "ref-web-52",
+          "aliases": []
+        },
+        {
+          "label": "Hyper Text Transport Protocol (HTTP)",
+          "fragment": "ref-web-54",
+          "aliases": []
+        },
+        {
+          "label": "JSON Web Tokens",
+          "fragment": "ref-web-107",
+          "aliases": []
+        },
+        {
+          "label": "OAUTH",
+          "fragment": "ref-web-109",
+          "aliases": []
+        },
+        {
+          "label": "Protocol Buffers",
+          "fragment": "ref-web-113",
+          "aliases": []
+        },
+        {
+          "label": "Same-Origin Policy",
+          "fragment": "ref-web-117",
+          "aliases": []
+        },
+        {
+          "label": "Security Assertion Markup Language (SAML)",
+          "fragment": "ref-web-118",
+          "aliases": []
+        },
+        {
+          "label": "Web Application Firewalls(WAFs)",
+          "fragment": "ref-web-127",
+          "aliases": []
+        },
+        {
+          "label": "Web Assembly",
+          "fragment": "ref-web-128",
+          "aliases": []
+        },
+        {
+          "label": "WebSockets",
+          "fragment": "ref-web-136",
+          "aliases": []
+        },
+        {
+          "label": "Guides & Methodologies",
+          "fragment": "ref-web-142",
+          "aliases": []
+        },
+        {
+          "label": "General Reconnaissance Techniques",
+          "fragment": "ref-web-144",
+          "aliases": []
+        },
+        {
+          "label": "Attack Surface Reconaissance",
+          "fragment": "ref-web-148",
+          "aliases": []
+        },
+        {
+          "label": "Endpoint Discovery",
+          "fragment": "ref-web-153",
+          "aliases": []
+        },
+        {
+          "label": "Insecure Direct Object Reference",
+          "fragment": "ref-web-185",
+          "aliases": []
+        },
+        {
+          "label": "HTTP Request Smuggling",
+          "fragment": "ref-web-189",
+          "aliases": []
+        },
+        {
+          "label": "OS Command Injection",
+          "fragment": "ref-web-201",
+          "aliases": []
+        },
+        {
+          "label": "JNDI Attack Class",
+          "fragment": "ref-web-202",
+          "aliases": []
+        },
+        {
+          "label": "LFI & RFI",
+          "fragment": "ref-web-205",
+          "aliases": []
+        },
+        {
+          "label": "Log4j",
+          "fragment": "ref-web-206",
+          "aliases": []
+        },
+        {
+          "label": "Logic Flaws",
+          "fragment": "ref-web-207",
+          "aliases": []
+        },
+        {
+          "label": "(No)SQL Injection",
+          "fragment": "ref-web-208",
+          "aliases": []
+        },
+        {
+          "label": "Prototype Pollution Attack",
+          "fragment": "ref-web-210",
+          "aliases": []
+        },
+        {
+          "label": "(De-)Serialization Attacks",
+          "fragment": "ref-web-213",
+          "aliases": []
+        },
+        {
+          "label": "Server Side Request Forgery (SSRF)",
+          "fragment": "ref-web-214",
+          "aliases": []
+        },
+        {
+          "label": "Client/Server Side Template Injection",
+          "fragment": "ref-web-216",
+          "aliases": []
+        },
+        {
+          "label": "XSS",
+          "fragment": "ref-web-224",
+          "aliases": []
+        },
+        {
+          "label": "XML",
+          "fragment": "ref-web-225",
+          "aliases": []
+        },
+        {
+          "label": "Burpsuite Stuff/Plugins",
+          "fragment": "ref-web-227",
+          "aliases": []
+        },
+        {
+          "label": "Bug Bounty Writeups",
+          "fragment": "ref-web-232",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Wireless.md",
@@ -2025,6 +2523,9 @@
     "Draft/Fuzzing.md",
     "Draft/Exploit_Dev.md",
     "Draft/RE.md",
-    "Draft/Programming_Language_Security.md"
+    "Draft/Programming_Language_Security.md",
+    "Draft/Defense.md",
+    "Draft/Web.md",
+    "Draft/RT.md"
   ]
 }

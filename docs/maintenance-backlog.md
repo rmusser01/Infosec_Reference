@@ -220,3 +220,36 @@ Sort tools into categories of type, i.e. physical network, wireless(types thereo
 	* A proper ToC
 	* Sort bottom section
 ```
+
+## Draft/Defense.md
+
+```text
+* **To-Do**
+	* User Awareness training
+	* Objective-See Tools
+	* Cred defense
+	* SPA 
+	* Ransomware
+	* Fix ToC more.
+
+
+Removed obsolete duplicate manual ToC and its inherited <<<<<<< HEAD marker; its destinations are superseded by generated navigation.
+```
+
+## Draft/Web.md
+
+```text
+* **To Do**
+	2. backlog
+	3. TLS
+	4. HTTP2/3
+	5. XSS
+	6. XSSI
+	7. XXE
+```
+
+## Draft/RT.md
+
+```text
+The keyserver resource has no usable destination in the source: [keyserver](keyserver). Retain its name/description as plain text pending destination research.
+```

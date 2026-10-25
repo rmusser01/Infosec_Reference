@@ -54,6 +54,10 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
       "PrivescPostExmac",
       "PrivescPostEx",
       "sysinternals",
+      "Network_Attacks",
+      "Physical_Security",
+      "Phishing",
+      "Wireless",
     ]) {
       const router = {
         getBasePath: () => "/docs/",
@@ -73,6 +77,12 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
       const body = dom.window.document.createElement("div");
       body.innerHTML = html;
       assert(body.querySelector("h1"));
+      if (path === "Wireless") {
+        const heading = body.querySelector("#ref-wireless-63").closest("h3");
+        assert.equal(heading.textContent, "Articles/Presentations/Talks/Writeups");
+        assert(!heading.querySelector('a[href^="https:"]'));
+        assert(body.querySelector('li a[href="https://www.youtube.com/watch?v=F9kKo190_oE"]'));
+      }
       if (path === "PrivEscPostExWin") {
         const alaris = [...body.querySelectorAll("a")].find((link) =>
           link.href.includes("alaris") && link.textContent === "Blogpost",

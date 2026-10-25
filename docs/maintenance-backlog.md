@@ -262,3 +262,37 @@ The keyserver resource has no usable destination in the source: [keyserver](keys
 * clear backlog
 * add missing things
 ```
+
+## Draft/Phishing.md
+
+```text
+To Do:
+	* Other payload types
+	* File smuggling
+	* Wifi
+	* Unicode
+	* RTF
+	* OpenOffice stuff
+```
+
+## Draft/Network_Attacks.md
+
+```text
+* Need to Add 
+    * BGP
+    * Captive portals
+    * DNSSEC
+    * Fax
+    * ICE
+    * IP spoofing
+    * IPSEC Stuff
+    * memcache
+    * NAT
+    * NTLM things
+    * OCSP
+    * Packet sniffers
+    * QUIC
+    * r* protocols
+    * STUN
+    * WebDAV
+```

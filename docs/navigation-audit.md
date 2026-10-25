@@ -73,3 +73,12 @@ General/Windows/Linux/macOS post-exploitation and System Internals now have mana
 Retired all 42 group errors: 80 occurrences / 79 keys remain across 15 pages. Windows' two malformed destinations were corrected using URLs already in its source, and the existing DLL-injection body link points to its actual section. Raw resource/alias preservation checks pass. Actual Docsify comparisons retain Windows 3,828→3,844, Linux 99→99, macOS 432→432, general 272→272 and System Internals 432→444 rendered external-link occurrences; repaired list indentation explains the additional visible links. Alaris/ScatterBrain have a compiler regression for the renderer-only indentation issue.
 
 The 59-test suite passes; navigation check has no new/stale diagnostics; repeated generation makes no changes. Native Chromium covers five search destinations, deep-route reload and the added platform sidebar links. Inventory: 21,748 URLs (1,200 PDF, 1,458 video, 23 other non-text candidates, 19,067 unknown). External validation and capture remain pending.
+
+
+## Network references group
+
+Network Attacks, Physical Security, Phishing and Wireless now have managed ToCs and 111 selected subjects. gRPC/HNAP labels match their reference bodies; malformed/duplicate navigation is repaired. Wireless unsorted references and its code example remain intact at the bottom. Resource-free Phishing/Network maintenance notes moved to the backlog, and the same-line SDR resource now remains a bullet below its heading.
+
+All 34 group errors are retired: 46 occurrences / 45 keys remain across 11 pages. Twenty-nine of 51 listed topics have managed ToCs; 22 remain to review/migrate as appropriate. Actual Docsify rendered external links remain 808/62/566/302; all original legacy aliases, raw URLs and four rendered code blocks remain. Chromium covers all four pages, the corrected SDR section and deep-route reload using a fresh HTTP cache.
+
+The 63-test suite passes; final navigation check has no new/stale diagnostics, and repeated generation makes no changes. Inventories retain 21,748 unique URLs. External validation, captures and production deployment/cache behavior remain unverified.

@@ -1760,8 +1760,314 @@
       "title": "Network Attacks & Defense",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Advanced Message Query Protocol (AMQP)",
+          "fragment": "ref-network-3",
+          "aliases": []
+        },
+        {
+          "label": "ARP",
+          "fragment": "ref-network-4",
+          "aliases": []
+        },
+        {
+          "label": "BGP",
+          "fragment": "ref-network-5",
+          "aliases": []
+        },
+        {
+          "label": "Dynamic Host Configuration Protocol (DHCP)",
+          "fragment": "ref-network-6",
+          "aliases": []
+        },
+        {
+          "label": "Domain Name System(DNS)",
+          "fragment": "ref-network-7",
+          "aliases": []
+        },
+        {
+          "label": "Multicast DNS",
+          "fragment": "ref-network-8",
+          "aliases": []
+        },
+        {
+          "label": "gRPC",
+          "fragment": "ref-network-9",
+          "aliases": []
+        },
+        {
+          "label": "HNAP",
+          "fragment": "ref-network-10",
+          "aliases": []
+        },
+        {
+          "label": "ICMP",
+          "fragment": "ref-network-11",
+          "aliases": []
+        },
+        {
+          "label": "IPSEC",
+          "fragment": "ref-network-12",
+          "aliases": []
+        },
+        {
+          "label": "BMCs/IPMI/iDRAC/Similar",
+          "fragment": "ref-network-13",
+          "aliases": []
+        },
+        {
+          "label": "IPv4 Related",
+          "fragment": "ref-network-14",
+          "aliases": []
+        },
+        {
+          "label": "IPv6 Related",
+          "fragment": "ref-network-15",
+          "aliases": []
+        },
+        {
+          "label": "Kerberos",
+          "fragment": "ref-network-16",
+          "aliases": []
+        },
+        {
+          "label": "LDAP",
+          "fragment": "ref-network-17",
+          "aliases": []
+        },
+        {
+          "label": "Modbus",
+          "fragment": "ref-network-18",
+          "aliases": []
+        },
+        {
+          "label": "MQTT (Message Query Transport Protocol)",
+          "fragment": "ref-network-19",
+          "aliases": []
+        },
+        {
+          "label": "Netbios/Link-Local Multicast Name Resolution (LLMNR)",
+          "fragment": "ref-network-20",
+          "aliases": []
+        },
+        {
+          "label": "NFS",
+          "fragment": "ref-network-21",
+          "aliases": []
+        },
+        {
+          "label": "NTLM",
+          "fragment": "ref-network-22",
+          "aliases": []
+        },
+        {
+          "label": "RPC",
+          "fragment": "ref-network-23",
+          "aliases": []
+        },
+        {
+          "label": "RTSP(Real Time Streaming Protocol)",
+          "fragment": "ref-network-24",
+          "aliases": []
+        },
+        {
+          "label": "SIP/VOIP:",
+          "fragment": "ref-network-25",
+          "aliases": []
+        },
+        {
+          "label": "SMB",
+          "fragment": "ref-network-26",
+          "aliases": []
+        },
+        {
+          "label": "SMTP",
+          "fragment": "ref-network-27",
+          "aliases": []
+        },
+        {
+          "label": "SNMP:",
+          "fragment": "ref-network-28",
+          "aliases": []
+        },
+        {
+          "label": "SQL:",
+          "fragment": "ref-network-29",
+          "aliases": []
+        },
+        {
+          "label": "SSH:",
+          "fragment": "ref-network-30",
+          "aliases": []
+        },
+        {
+          "label": "SSL/TLS",
+          "fragment": "ref-network-31",
+          "aliases": []
+        },
+        {
+          "label": "STP",
+          "fragment": "ref-network-32",
+          "aliases": []
+        },
+        {
+          "label": "TFTP(Trivial File Transfer Protocol)",
+          "fragment": "ref-network-33",
+          "aliases": []
+        },
+        {
+          "label": "Telnet",
+          "fragment": "ref-network-34",
+          "aliases": []
+        },
+        {
+          "label": "TR-069",
+          "fragment": "ref-network-35",
+          "aliases": []
+        },
+        {
+          "label": "UPnP",
+          "fragment": "ref-network-36",
+          "aliases": []
+        },
+        {
+          "label": "WebDAV",
+          "fragment": "ref-network-37",
+          "aliases": []
+        },
+        {
+          "label": "PAC/WPAD",
+          "fragment": "ref-network-38",
+          "aliases": []
+        },
+        {
+          "label": "Windows Management Instrumentation(WMI)",
+          "fragment": "ref-network-39",
+          "aliases": []
+        },
+        {
+          "label": "Pivoting",
+          "fragment": "ref-network-41",
+          "aliases": []
+        },
+        {
+          "label": "Vendor Specific Stuff",
+          "fragment": "ref-network-42",
+          "aliases": []
+        },
+        {
+          "label": "Attacking Windows Networks",
+          "fragment": "ref-network-43",
+          "aliases": []
+        },
+        {
+          "label": "BitSquatting:",
+          "fragment": "ref-network-44",
+          "aliases": []
+        },
+        {
+          "label": "Cross-Application/Cross Protocol Scripting",
+          "fragment": "ref-network-45",
+          "aliases": []
+        },
+        {
+          "label": "D/DOS",
+          "fragment": "ref-network-46",
+          "aliases": []
+        },
+        {
+          "label": "IDS/IPS Evasion",
+          "fragment": "ref-network-47",
+          "aliases": []
+        },
+        {
+          "label": "IP Obfuscation",
+          "fragment": "ref-network-48",
+          "aliases": []
+        },
+        {
+          "label": "IP Spoofing",
+          "fragment": "ref-network-49",
+          "aliases": []
+        },
+        {
+          "label": "MitM Tools",
+          "fragment": "ref-network-50",
+          "aliases": []
+        },
+        {
+          "label": "Network Host Discovery/Service Discovery:",
+          "fragment": "ref-network-51",
+          "aliases": []
+        },
+        {
+          "label": "802.1x & NAC(Netork Access Control)",
+          "fragment": "ref-network-55",
+          "aliases": []
+        },
+        {
+          "label": "Captive Portals",
+          "fragment": "ref-network-56",
+          "aliases": []
+        },
+        {
+          "label": "Fax",
+          "fragment": "ref-network-57",
+          "aliases": []
+        },
+        {
+          "label": "Hadoop",
+          "fragment": "ref-network-58",
+          "aliases": []
+        },
+        {
+          "label": "Memcache",
+          "fragment": "ref-network-59",
+          "aliases": []
+        },
+        {
+          "label": "NAT(Netork Address Translation)",
+          "fragment": "ref-network-60",
+          "aliases": []
+        },
+        {
+          "label": "Printers",
+          "fragment": "ref-network-61",
+          "aliases": []
+        },
+        {
+          "label": "Proxies",
+          "fragment": "ref-network-62",
+          "aliases": []
+        },
+        {
+          "label": "PXE",
+          "fragment": "ref-network-63",
+          "aliases": []
+        },
+        {
+          "label": "Redis",
+          "fragment": "ref-network-64",
+          "aliases": []
+        },
+        {
+          "label": "Software Defined Networking (SDN)",
+          "fragment": "ref-network-65",
+          "aliases": []
+        },
+        {
+          "label": "Switches(Network Hardware)",
+          "fragment": "ref-network-66",
+          "aliases": []
+        },
+        {
+          "label": "VLANs",
+          "fragment": "ref-network-67",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Osint.md",
@@ -1830,16 +2136,218 @@
       "title": "Phishing",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Phishing Metrics",
+          "fragment": "ref-phish-9",
+          "aliases": []
+        },
+        {
+          "label": "Phishing Pre-texts",
+          "fragment": "ref-phish-10",
+          "aliases": []
+        },
+        {
+          "label": "Vishing",
+          "fragment": "ref-phish-11",
+          "aliases": []
+        },
+        {
+          "label": "Homoglyphs/Punicode/Unicode",
+          "fragment": "ref-phish-13",
+          "aliases": []
+        },
+        {
+          "label": "Dynamic Data Exchange(DDE)",
+          "fragment": "ref-phish-15",
+          "aliases": []
+        },
+        {
+          "label": "DomainKeys Identified Mail",
+          "fragment": "ref-phish-16",
+          "aliases": []
+        },
+        {
+          "label": "Domain Message Authentication, Reporting, and Conformance - DMARC",
+          "fragment": "ref-phish-17",
+          "aliases": []
+        },
+        {
+          "label": "Excel File Formats",
+          "fragment": "ref-phish-18",
+          "aliases": []
+        },
+        {
+          "label": "Excel Macros",
+          "fragment": "ref-phish-20",
+          "aliases": []
+        },
+        {
+          "label": "Excel PowerQuery",
+          "fragment": "ref-phish-21",
+          "aliases": []
+        },
+        {
+          "label": "MS Word Field Codes",
+          "fragment": "ref-phish-23",
+          "aliases": []
+        },
+        {
+          "label": "MS Office File Formats",
+          "fragment": "ref-phish-24",
+          "aliases": []
+        },
+        {
+          "label": "HTA",
+          "fragment": "ref-phish-25",
+          "aliases": []
+        },
+        {
+          "label": "Object Linking and Embedding",
+          "fragment": "ref-phish-26",
+          "aliases": []
+        },
+        {
+          "label": "Protected View",
+          "fragment": "ref-phish-29",
+          "aliases": []
+        },
+        {
+          "label": "Sender Policy Framework - SPF",
+          "fragment": "ref-phish-31",
+          "aliases": []
+        },
+        {
+          "label": "SMTP Strict Transport Security",
+          "fragment": "ref-phish-32",
+          "aliases": []
+        },
+        {
+          "label": "Visual Basic for Applications (VBA)",
+          "fragment": "ref-phish-35",
+          "aliases": []
+        },
+        {
+          "label": "Phishing Frameworks:",
+          "fragment": "ref-phish-39",
+          "aliases": []
+        },
+        {
+          "label": "Built for 2FA",
+          "fragment": "ref-phish-41",
+          "aliases": []
+        },
+        {
+          "label": "Payloads",
+          "fragment": "ref-phish-46",
+          "aliases": []
+        },
+        {
+          "label": "CHM File",
+          "fragment": "ref-phish-48",
+          "aliases": []
+        },
+        {
+          "label": "ClickOnce",
+          "fragment": "ref-phish-49",
+          "aliases": []
+        },
+        {
+          "label": "PDF",
+          "fragment": "ref-phish-54",
+          "aliases": []
+        },
+        {
+          "label": "UNC",
+          "fragment": "ref-phish-57",
+          "aliases": []
+        },
+        {
+          "label": "Defense",
+          "fragment": "ref-phish-60",
+          "aliases": []
+        },
+        {
+          "label": "Local Phishing",
+          "fragment": "ref-phish-64",
+          "aliases": []
+        },
+        {
+          "label": "Microsoft Outlook/Exchange Stuff/Office 365",
+          "fragment": "ref-phish-69",
+          "aliases": []
+        },
+        {
+          "label": "Hiding Inbox Rules in O365",
+          "fragment": "ref-phish-73",
+          "aliases": []
+        },
+        {
+          "label": "Outlook Rules",
+          "fragment": "ref-phish-74",
+          "aliases": []
+        },
+        {
+          "label": "MS Office",
+          "fragment": "ref-phish-77",
+          "aliases": []
+        },
+        {
+          "label": "Macros",
+          "fragment": "ref-phish-88",
+          "aliases": []
+        },
+        {
+          "label": "Online Video in MS Word",
+          "fragment": "ref-phish-101",
+          "aliases": []
+        },
+        {
+          "label": "PowerPoint Mouseover",
+          "fragment": "ref-phish-102",
+          "aliases": []
+        },
+        {
+          "label": "OpenOffice/LibreOffice",
+          "fragment": "ref-phish-107",
+          "aliases": []
+        },
+        {
+          "label": "Setting up a Server",
+          "fragment": "ref-phish-110",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Physical_Security.md",
       "title": "Physical Security",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Tamper Evident Related",
+          "fragment": "ref-physical-3",
+          "aliases": []
+        },
+        {
+          "label": "Lock Picking",
+          "fragment": "ref-physical-4",
+          "aliases": []
+        },
+        {
+          "label": "Alarm Systems",
+          "fragment": "ref-physical-5",
+          "aliases": []
+        },
+        {
+          "label": "Doors",
+          "fragment": "ref-physical-6",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/PrivescPostEx.md",
@@ -2931,8 +3439,59 @@
       "title": "Wireless Networks and RF Devices",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Bluetooth",
+          "fragment": "ref-wireless-10",
+          "aliases": []
+        },
+        {
+          "label": "Cellular Networks",
+          "fragment": "ref-wireless-19",
+          "aliases": []
+        },
+        {
+          "label": "Dongles",
+          "fragment": "ref-wireless-30",
+          "aliases": []
+        },
+        {
+          "label": "802.11 - WiFi",
+          "fragment": "ref-wireless-31",
+          "aliases": []
+        },
+        {
+          "label": "RFID - Radio Frequency Identification",
+          "fragment": "ref-wireless-52",
+          "aliases": []
+        },
+        {
+          "label": "RF RetroReflectors",
+          "fragment": "ref-wireless-56",
+          "aliases": []
+        },
+        {
+          "label": "Satellite Related",
+          "fragment": "ref-wireless-60",
+          "aliases": []
+        },
+        {
+          "label": "Software Defined Radio",
+          "fragment": "ref-wireless-61",
+          "aliases": []
+        },
+        {
+          "label": "Zigbee Wireless Networks",
+          "fragment": "ref-wireless-68",
+          "aliases": []
+        },
+        {
+          "label": "Z-Wave",
+          "fragment": "ref-wireless-72",
+          "aliases": []
+        }
+      ]
     }
   ],
   "tocPages": [
@@ -2960,6 +3519,10 @@
     "Draft/PrivescPostExLin.md",
     "Draft/PrivescPostExmac.md",
     "Draft/PrivescPostEx.md",
-    "Draft/sysinternals.md"
+    "Draft/sysinternals.md",
+    "Draft/Network_Attacks.md",
+    "Draft/Physical_Security.md",
+    "Draft/Phishing.md",
+    "Draft/Wireless.md"
   ]
 }

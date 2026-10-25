@@ -34,7 +34,7 @@
 - **Slides - Big problems with big data – Hadoop interfaces security - Jakub Kaluzny - ZeroNights, Moscow 2015**
   - URL: <http://2015.zeronights.org/assets/files/03-Kaluzny.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1826`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1687`; references: 1.
   - ID: `b7a7a6fb9a75eba39331`.
 - **nt!_SEP_TOKEN_PRIVILEGES - Single Write EoP Protect - Kyriakos 'kyREcon' Economou**
   - URL: <http://anti-reversing.com/Downloads/Sec_Research/ntoskrnl_v10.0.15063_nt!_SEP_TOKEN_PRIVILEGES-Single_Write_EoP_Protect.pdf>
@@ -49,7 +49,7 @@
 - **Offline bruteforce attack on wifi protected setup (Pixie dust attack, 2014)**
   - URL: <http://archive.hack.lu/2014/Hacklu2014_offline_bruteforce_attack_on_wps.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:450`; references: 1.
+  - Source: `Draft/Wireless.md:516`; references: 1.
   - ID: `249c3b4c52dc1744d06e`.
 - **Bypass CSP? No problem - Okhonko Philipp(2021)**
   - URL: <http://archive.volgactf.ru.s3.us-east-1.amazonaws.com/volgactf_2021/slides/VolgaCTF_2021_Ohonko.pdf>
@@ -124,7 +124,7 @@
 - **My VBA Bot: Writing Office Macro FUD encoder and other stuff - Emeric Nasi(2016)**
   - URL: <http://blog.sevagas.com/IMG/pdf/my_vba_bot.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:950`; references: 1.
+  - Source: `Draft/Phishing.md:1042`; references: 1.
   - ID: `26325b2956b3d2c9ce00`.
 - **A Survey of Covert Channels and Countermeasures in Computer Network Protocols**
   - URL: <http://caia.swin.edu.au/cv/szander/publications/szander-ieee-comst07.pdf>
@@ -204,7 +204,7 @@
 - **So You Want To Hack Radios - A Primer On Wireless Reverse Engineering**
   - URL: <http://conference.hitb.org/hitbsecconf2017ams/materials/D1T4%20-%20Marc%20Newlin%20and%20Matt%20Knight%20-%20So%20You%20Want%20to%20Hack%20Radios.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:113`; references: 1.
+  - Source: `Draft/Wireless.md:106`; references: 1.
   - ID: `86b1b29e24a9fb06de8d`.
 - **Exploiting format string vulnerabilities, scut / Team-TESO, 2001**
   - URL: <http://crypto.stanford.edu/cs155old/cs155-spring08/papers/formatstring-1.2.pdf>
@@ -249,7 +249,7 @@
 - **DNS Cache Snooping or Snooping the Cache for Fun and Profit - Luis Grangeia**
   - URL: <http://cs.unc.edu/~fabian/course_papers/cache_snooping.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:280`; references: 1.
+  - Source: `Draft/Network_Attacks.md:253`; references: 1.
   - ID: `2fb6451c9385dca9d390`.
 - **Reading ASM**
   - URL: <http://cseweb.ucsd.edu/classes/sp11/cse141/pdf/02/S01_x86_64.key.pdf>
@@ -274,12 +274,12 @@
 - **LTE Security - How good is it?**
   - URL: <http://csrc.nist.gov/news_events/cif_2015/research/day2_research_200-250.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:223`; references: 2.
+  - Source: `Draft/Wireless.md:241`; references: 2.
   - ID: `030539b2dc347a0ce0d6`.
 - **Establishing Wireless Robust Security Networks: A Guide to IEEE 802.11i - NIST**
   - URL: <http://csrc.nist.gov/publications/nistpubs/800-97/SP800-97.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:331`; references: 1.
+  - Source: `Draft/Wireless.md:365`; references: 1.
   - ID: `313d0acd7a282230e45b`.
 - **THE GOLDEN TICKET ATTACK- A LOOK UNDER THE HOOD**
   - URL: <http://cybersecology.com/wp-content/uploads/2016/05/Golden_Ticket-v1.13-Final.pdf>
@@ -299,12 +299,12 @@
 - **Practical attacks against WEP and WPA (2008)**
   - URL: <http://dl.aircrack-ng.org/breakingwepandwpa.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:427`; references: 1.
+  - Source: `Draft/Wireless.md:487`; references: 1.
   - ID: `0283018e0f1bfb8d3902`.
 - **WPA Migration Mode:  WEP is back to haunt you...(slides)**
   - URL: <http://dl.aircrack-ng.org/wiki-files/doc/technique_papers/Meiners,_Sor_-_WPA_Migration_Mode_WEP_is_back_to_haunt_you_-_slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:438`; references: 1.
+  - Source: `Draft/Wireless.md:500`; references: 1.
   - ID: `fca3344f9c7aacb15870`.
 - **Software Distribution Malware Infection Vector**
   - URL: <http://dl.packetstormsecurity.net/papers/general/Software.Distribution.Malware.Infection.Vector.pdf>
@@ -324,12 +324,12 @@
 - **Enhanced TKIP Michael Attacks (2010)**
   - URL: <http://download.aircrack-ng.org/wiki-files/doc/enhanced_tkip_michael.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:430`; references: 1.
+  - Source: `Draft/Wireless.md:490`; references: 1.
   - ID: `5981f4175caae94ef4fe`.
 - **Cryptanalysis of IEEE 802.11i TKIP**
   - URL: <http://download.aircrack-ng.org/wiki-files/doc/tkip_master.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:429`; references: 1.
+  - Source: `Draft/Wireless.md:489`; references: 1.
   - ID: `627f05dcee6af2815694`.
 - **Management Frames Reference Sheet**
   - URL: <http://download.aircrack-ng.org/wiki-files/other/managementframes.pdf>
@@ -394,17 +394,17 @@
 - **IPMI++ Security Best Practices  - Dan Farmer**
   - URL: <http://fish2.com/ipmi/bp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:434`; references: 1.
+  - Source: `Draft/Network_Attacks.md:396`; references: 1.
   - ID: `abcf5215cc55564cd18c`.
 - **IPMI: FREIGHT TRAIN TO HELL OR LINDA WU & THE NIGHT OF THE LEECHES - Dan Farmer**
   - URL: <http://fish2.com/ipmi/itrain.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:433`; references: 1.
+  - Source: `Draft/Network_Attacks.md:395`; references: 1.
   - ID: `ea03ea17be14b65c5f43`.
 - **Sold Down the River - Dan Farmer**
   - URL: <http://fish2.com/ipmi/river.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:432`; references: 1.
+  - Source: `Draft/Network_Attacks.md:394`; references: 1.
   - ID: `5105d4853af1d160224b`.
 - **Anatomy of a Pass-Back-Attack: Intercepting Authentication Credentials Stored in Multifunction Printers - Deral (PercX) Heiland, Michael (omi) Belton**
   - URL: <http://foofus.net/goons/percx/praeda/pass-back-attack.pdf>
@@ -429,7 +429,7 @@
 - **Cloud Security in Map/Reduce - An Analysis - Jason Schlesinger(2009)**
   - URL: <http://hackedexistence.com/downloads/Cloud_Security_in_Map_Reduce.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1820`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1681`; references: 1.
   - ID: `9a31412605277ee928ee`.
 - **On the Cutting Edge: Thwarting Virtual Machine Detection**
   - URL: <http://handlers.sans.org/tliston/ThwartingVMDetection_Liston_Skoudis.pdf>
@@ -574,7 +574,7 @@
 - **NIST Special Publication 800-121 Revision 2: Guide to Bluetooth Security**
   - URL: <http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-121r2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:169`; references: 1.
+  - Source: `Draft/Wireless.md:178`; references: 1.
   - ID: `5bb436a14cf74a43bedb`.
 - **Guide to Application Whitelisting - NIST Special Publication 800 - 167**
   - URL: <http://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-167.pdf>
@@ -599,7 +599,7 @@
 - **IPMI – A Gentle Introduction with OpenIPMI**
   - URL: <http://openipmi.sourceforge.net/IPMI.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:429`; references: 1.
+  - Source: `Draft/Network_Attacks.md:391`; references: 1.
   - ID: `043a65aecfd0df5df838`.
 - **The Adventures of a KeyStroke: An in-depth look into Keyloggers on Windows**
   - URL: <http://opensecuritytraining.info/Keylogging_files/The%20Adventures%20of%20a%20Keystroke.pdf>
@@ -629,7 +629,7 @@
 - **Predicting and Abusing WPA2/802.11 Group Keys (2016)**
   - URL: <http://papers.mathyvanhoef.com/33c3-broadkey-slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:436`; references: 1.
+  - Source: `Draft/Wireless.md:496`; references: 1.
   - ID: `d7a40d44f2e56875a61d`.
 - **Locksport Primer**
   - URL: <http://pdf.textfiles.com/security/lsiguide.pdf>
@@ -804,7 +804,7 @@
 - **IPv6—101: Introduction - F5**
   - URL: <http://securite.net.au/wp-content/uploads/2014/05/F5s-IPV6-Introduction.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:455`; references: 1.
+  - Source: `Draft/Network_Attacks.md:415`; references: 1.
   - ID: `96999a0fa55cf2ca7bd2`.
 - **Cookieless Monster: Exploring the Ecosystem of Web-based Device Fingerprinting**
   - URL: <http://securitee.org/files/cookieless_sp2013.pdf>
@@ -829,7 +829,7 @@
 - **Server Certificate Practices in Eduroam (2015)**
   - URL: <http://services.geant.net/cbp/Knowledge_Base/Wireless/Documents/cbp-33_server-certificate-practices-in-eduroam.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:386`; references: 1.
+  - Source: `Draft/Wireless.md:432`; references: 1.
   - ID: `05599ee29016283cc944`.
 - **Stealthy Dopant-Level Hardware Trojans**
   - URL: <http://sharps.org/wp-content/uploads/BECKER-CHES.pdf>
@@ -1009,12 +1009,12 @@
 - **IEEE 802.11 Tutorial**
   - URL: <http://wow.eecs.berkeley.edu/ergen/docs/ieee.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:103`; references: 2.
+  - Source: `Draft/Wireless.md:90`; references: 2.
   - ID: `cb6196748b820d87bc05`.
 - **LTEInspector : A Systematic Approach for Adversarial Testing of 4G LTE**
   - URL: <http://wp.internetsociety.org/ndss/wp-content/uploads/sites/25/2018/02/ndss2018_02A-3_Hussain_paper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:287`; references: 1.
+  - Source: `Draft/Wireless.md:315`; references: 1.
   - ID: `946f0607eee8ef0fe346`.
 - **Aslr Smack and Laugh Reference**
   - URL: <http://www-users.rwth-aachen.de/Tilo.Mueller/ASLRpaper.pdf>
@@ -1044,7 +1044,7 @@
 - **AMQP v1.0(2011) Protocol Document**
   - URL: <http://www.amqp.org/sites/amqp.org/files/amqp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:147`; references: 1.
+  - Source: `Draft/Network_Attacks.md:120`; references: 1.
   - ID: `8ffec66569a901ae8b8e`.
 - **Red Team Handbook(2012) - University of Foreign Military And Cultural studies**
   - URL: <http://www.au.af.mil/au/awc/awcgate/army/ufmcs_red_team_handbook_apr2012.pdf>
@@ -1124,12 +1124,12 @@
 - **http://www.contextis.com/documents/161/CTX_WSUSpect_White_Paper.pdf**
   - URL: <http://www.contextis.com/documents/161/CTX_WSUSpect_White_Paper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1522`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1401`; references: 1.
   - ID: `7aa84e3c81ee27fc0c26`.
 - **http://www.contextis.com/documents/162/WSUSpect_Presentation.pdf**
   - URL: <http://www.contextis.com/documents/162/WSUSpect_Presentation.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1523`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1402`; references: 1.
   - ID: `d371a0bd7085c950b6da`.
 - **Anonymous’s Guide to OpSec**
   - URL: <http://www.covert.io/research-papers/security/Anonymous%20Hacking%20Group%20--%20OpNewblood-Super-Secret-Security-Handbook.pdf>
@@ -1154,7 +1154,7 @@
 - **Signaling vulnerabilities in wiretapping systems**
   - URL: <http://www.crypto.com/papers/wiretap.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:112`; references: 1.
+  - Source: `Draft/Network_Attacks.md:89`; references: 1.
   - ID: `1d15a030e0ea181f5574`.
 - **http://www.cs.binghamton.edu/~dima/hpca13.pdf**
   - URL: <http://www.cs.binghamton.edu/~dima/hpca13.pdf>
@@ -1209,7 +1209,7 @@
 - **Evil Twin vulnerabilities in Wi-Fi networks (Master Thesis, 2016)**
   - URL: <http://www.cs.ru.nl/bachelorscripties/2016/Matthias_Ghering___4395727___Evil_Twin_Vulnerabilities_in_Wi-Fi_Networks.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:404`; references: 2.
+  - Source: `Draft/Wireless.md:454`; references: 2.
   - ID: `a092ce4edfc9b58b73b9`.
 - **Learn Technical Writing in Two Hours per Week - Norman Ramsey**
   - URL: <http://www.cs.tufts.edu/~nr/pubs/learn-two.pdf>
@@ -1254,7 +1254,7 @@
 - **OpenDocument and Open XML security (OpenOffice.org and MS Office 2007) - Philippe Lagadec**
   - URL: <http://www.decalage.info/files/JCV07_Lagadec_OpenDocument_OpenXML_v4_decalage.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:753`; references: 1.
+  - Source: `Draft/Phishing.md:816`; references: 1.
   - ID: `1f0dea81f5352cfcb5c6`.
 - **Detecting Malware With Memory Forensics - Hal Pomeranz**
   - URL: <http://www.deer-run.com/~hal/Detect_Malware_w_Memory_Forensics.pdf>
@@ -1269,7 +1269,7 @@
 - **Stealing Windows Credentials Using Google Chrome - Bosko Stankovic**
   - URL: <http://www.defensecode.com/whitepapers/Stealing-Windows-Credentials-Using-Google-Chrome.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:700`; references: 1.
+  - Source: `Draft/Network_Attacks.md:642`; references: 1.
   - ID: `143dc7d74c8f14ccc367`.
 - **http://www.divms.uiowa.edu/ftp/tinelli/papers/LiaEtAl-CAV-14.pdf**
   - URL: <http://www.divms.uiowa.edu/ftp/tinelli/papers/LiaEtAl-CAV-14.pdf>
@@ -1284,7 +1284,7 @@
 - **MITM Attack Model against eduroam (2013)**
   - URL: <http://www.eduroam.zm/Maninmiddle.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:388`; references: 1.
+  - Source: `Draft/Wireless.md:434`; references: 1.
   - ID: `a7832586bde67b92502b`.
 - **http://www.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-173.pdf**
   - URL: <http://www.eecs.berkeley.edu/Pubs/TechRpts/2009/EECS-2009-173.pdf>
@@ -1329,7 +1329,7 @@
 - **1**
   - URL: <http://www.ids.cs.columbia.edu/sites/default/files/paper-acsac.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1883`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1734`; references: 1.
   - ID: `955150db6ee36858f5e1`.
 - **I'm In Your $PYTHONPATH, Backdooring Your Python Programs**
   - URL: <http://www.ikotler.org/InYourPythonPath.pdf>
@@ -1369,7 +1369,7 @@
 - **On the security of RC4 in TLS (USENIX, 2013)**
   - URL: <http://www.isg.rhul.ac.uk/tls/RC4biases.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:433`; references: 1.
+  - Source: `Draft/Wireless.md:493`; references: 1.
   - ID: `9db00692bf0c85cd3090`.
 - **www.jodeit.org/research/DeepSec2009_USB_Device_Drivers.pdf**
   - URL: <http://www.jodeit.org/research/DeepSec2009_USB_Device_Drivers.pdf>
@@ -1429,7 +1429,7 @@
 - **STP MiTM Attack and L2 Mitigation Techniques on the Cisco Catalyst 6500 **
   - URL: <http://www.ndm.net/ips/pdf/cisco/Catalyst-6500/white_paper_c11_605972.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:986`; references: 1.
+  - Source: `Draft/Network_Attacks.md:910`; references: 1.
   - ID: `d959d0bb276a90d3fd5e`.
 - **http://www.netcomunity.com/lestertheteacher/doc/ingsocial1.pdf**
   - URL: <http://www.netcomunity.com/lestertheteacher/doc/ingsocial1.pdf>
@@ -1504,7 +1504,7 @@
 - **IDS/IPS Evasion Techniques - Alan Neville**
   - URL: <http://www.redbrick.dcu.ie/~anev/IDS_IPS_Evasion_Techniques.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1386`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1274`; references: 1.
   - ID: `06173fd3dbfa7d4b65c5`.
 - **Embracing the Kobayashi Maru:  Why You Should Teach Your Students to Cheat - Gregory Conti and James Caroland**
   - URL: <http://www.rumint.org/gregconti/publications/KobayashiMaru_PrePub.pdf?fbclid=IwAR0SSUwpxCwxw25bHyL4GfXpRPCr6fcneJGigjMpfx3S4iFdhIa26-eiqLc>
@@ -1519,7 +1519,7 @@
 - **Bitsquatting: Exploiting Bit-flips for Fun, or Profit?**
   - URL: <http://www.securitee.org/files/bitsquatting_www2013.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1332`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1222`; references: 1.
   - ID: `ead91aa9fccf6700717d`.
 - **FastIR Collector on advanced threats**
   - URL: <http://www.sekoia.fr/blog/wp-content/uploads/2015/10/FastIR-Collector-on-advanced-threats_v1.4.pdf>
@@ -1539,7 +1539,7 @@
 - **ZigBee Exploited: The good, the bad and the ugly - Tobias Zillner**
   - URL: <http://www.sicherheitsforschung-magdeburg.de/uploads/journal/MJS_045_Zillner_ZigBee.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:597`; references: 1.
+  - Source: `Draft/Wireless.md:692`; references: 1.
   - ID: `2c507626ed3aba0dd16c`.
 - **ELF Format**
   - URL: <http://www.skyfree.org/linux/references/ELF_Format.pdf>
@@ -1624,7 +1624,7 @@
 - **IEEE 802.11 Pocket Reference Guide **
   - URL: <http://www.willhackforsushi.com/papers/80211_Pocket_Reference_Guide.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:329`; references: 1.
+  - Source: `Draft/Wireless.md:361`; references: 1.
   - ID: `89ee8952c70e502c90fb`.
 - **iOS Forensic Investigative Methods Guide**
   - URL: <http://www.zdziarski.com/blog/wp-content/uploads/2013/05/iOS-Forensic-Investigative-Methods.pdf>
@@ -1634,7 +1634,7 @@
 - **US Marine Antenna Handbook**
   - URL: <http://www.zerobeat.net/r3403c.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:112`; references: 1.
+  - Source: `Draft/Wireless.md:105`; references: 1.
   - ID: `bccd09c2595b69176b2c`.
 - **http://www2.in.tum.de/bib/files/mihaila09reconstruction.pdf**
   - URL: <http://www2.in.tum.de/bib/files/mihaila09reconstruction.pdf>
@@ -1669,7 +1669,7 @@
 - **Analysis of the Attack Surface of Microsoft Office from a User's Perspective**
   - URL: <https://0b3dcaf9-a-62cb3a1a-s-sites.googlegroups.com/site/zerodayresearch/Analysis_of_the_Attack_Surface_of_Microsoft_Office_from_User_Perspective_final.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:744`; references: 1.
+  - Source: `Draft/Phishing.md:807`; references: 1.
   - ID: `cd9324ac97ecd679f81b`.
 - **Smart COM Fuzzing - Auditing IE Sandbox Bypass in COM Objects• Xiaoning Li • Haifei Li**
   - URL: <https://0b3dcaf9-a-62cb3a1a-s-sites.googlegroups.com/site/zerodayresearch/Smart_COM_Fuzzing_Auditing_IE_Sandbox_Bypass_in_COM_Objects_final.pdf>
@@ -1784,12 +1784,12 @@
 - **A Formal Analysis of 5G Authentication**
   - URL: <https://arxiv.org/pdf/1806.10360.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:58`; references: 1.
+  - Source: `Draft/Wireless.md:757`; references: 1.
   - ID: `797c8c0d49729cabc1b9`.
 - **Security and Protocol Exploit Analysis of the 5GSpecifications - Roger Jover, Vuk Marojevic**
   - URL: <https://arxiv.org/pdf/1809.06925.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:56`; references: 1.
+  - Source: `Draft/Wireless.md:755`; references: 1.
   - ID: `616a0e0093ede6239686`.
 - **https://arxiv.org/pdf/1901.01161.pdf**
   - URL: <https://arxiv.org/pdf/1901.01161.pdf>
@@ -1919,7 +1919,7 @@
 - **From baseband to bitstream and back again: What security researchers really want to do with SDR - Andy Davis - nccgroup**
   - URL: <https://cansecwest.com/slides/2015/From_Baseband_to_bitstream_Andy_Davis.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:544`; references: 1.
+  - Source: `Draft/Wireless.md:631`; references: 1.
   - ID: `b67bf99dd698af48debe`.
 - **Cyber Red Teaming  Organisational, technical and legal implications in a military context - NATO**
   - URL: <https://ccdcoe.org/sites/default/files/multimedia/pdf/Cyber_Red_Team.pdf>
@@ -1999,12 +1999,12 @@
 - **#root via SMS: 4G access level security assessment**
   - URL: <https://conference.hitb.org/hitbsecconf2015ams/materials/D1T1%20-%20T.%20Yunusov%20K.%20Nesterov%20-%20Bootkit%20via%20SMS.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:293`; references: 1.
+  - Source: `Draft/Wireless.md:323`; references: 1.
   - ID: `579b82216d714d51a476`.
 - **Practical Experiences on NFC Relay Attacks with Android: Virtual Pickpocketing Revisited**
   - URL: <https://conference.hitb.org/hitbsecconf2015ams/materials/Whitepapers/Relay%20Attacks%20in%20EMV%20Contactless%20Cards%20with%20Android%20OTS%20Devices.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:489`; references: 1.
+  - Source: `Draft/Wireless.md:561`; references: 1.
   - ID: `de10bd1475acfcb1106e`.
 - **Introduction to Logical Privilege Escalation on Windows - James Forshaw**
   - URL: <https://conference.hitb.org/hitbsecconf2017ams/materials/D2T3%20-%20James%20Forshaw%20-%20Introduction%20to%20Logical%20Privilege%20Escalation%20on%20Windows.pdf>
@@ -2079,7 +2079,7 @@
 - **https://csrc.nist.gov/csrc/media/publications/sp/800-121/rev-2/draft/documents/sp800_121_r2_draft.pdf**
   - URL: <https://csrc.nist.gov/csrc/media/publications/sp/800-121/rev-2/draft/documents/sp800_121_r2_draft.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:37`; references: 1.
+  - Source: `Draft/Wireless.md:736`; references: 1.
   - ID: `ffeb29dd5d47c3e9975d`.
 - **Slides**
   - URL: <https://ctoomey.com/mastering-the-vim-language-slides.pdf>
@@ -2089,7 +2089,7 @@
 - **Slides - PDF**
   - URL: <https://cybergibbons.com/wp-content/uploads/2014/11/honeyimhome-131001042426-phpapp01.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:616`; references: 1.
+  - Source: `Draft/Wireless.md:714`; references: 1.
   - ID: `23451583027ef10a7f2c`.
 - **Debugging Windows kernel under VMWare using IDA's GDB debugger**
   - URL: <https://cyberview.files.wordpress.com/2010/09/gdb_vmware_winkernel.pdf>
@@ -2144,7 +2144,7 @@
 - **Wireless Leakage - Robin Wood**
   - URL: <https://digi.ninja/files/Tech_for_Troops-Wi-Fi_Leakage.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:336`; references: 1.
+  - Source: `Draft/Wireless.md:372`; references: 1.
   - ID: `96e851080d7adfa7cd2b`.
 - **Sniper Forensics**
   - URL: <https://digital-forensics.sans.org/summit-archives/2010/2-newell-spiderlabs-sniper-forensics.pdf>
@@ -2294,7 +2294,7 @@
 - **Plaintext Recovery Attacks Against WPA/TKIP (2013)**
   - URL: <https://eprint.iacr.org/2013/748.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:431`; references: 1.
+  - Source: `Draft/Wireless.md:491`; references: 1.
   - ID: `13115ec7c8cff07ca33e`.
 - **Toward Robust Hidden Volumes Using Write-Only Oblivious RAM**
   - URL: <https://eprint.iacr.org/2014/344.pdf>
@@ -2319,7 +2319,7 @@
 - **New Privacy Threat on 3G, 4G, and Upcoming5G AKA Protocols - Ravishankar Borgaonkar, Lucca Hirschi∗, Shinjo Park, and Altaf Shaik**
   - URL: <https://eprint.iacr.org/2018/1175.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:53`; references: 1.
+  - Source: `Draft/Wireless.md:752`; references: 1.
   - ID: `2e1d3345e09a5c3e43ff`.
 - **Covert Channels in TCP/IP Protocol Stack - extended version-**
   - URL: <https://eprints.ugd.edu.mk/10284/1/surveyAMBPselfArc.pdf>
@@ -2409,7 +2409,7 @@
 - **Manual**
   - URL: <https://github.com/EarToEarOak/RTLSDR-Scanner/blob/master/doc/Manual.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:578`; references: 1.
+  - Source: `Draft/Wireless.md:670`; references: 1.
   - ID: `a260f3e6a43a2a07075e`.
 - **Slides**
   - URL: <https://github.com/FuzzySecurity/BH-Arsenal-2019/blob/master/Ruben%20Boonen%20-%20BHArsenal_SilkETW_v0.2.pdf>
@@ -2499,12 +2499,12 @@
 - **Slides**
   - URL: <https://github.com/clr2of8/Presentations/blob/master/DerbyCon2018-VBAstomp-Final-WalmartRedact.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:1044`; references: 1.
+  - Source: `Draft/Phishing.md:1146`; references: 1.
   - ID: `b51058da1cb8bb1d37ab`.
 - **Slides**
   - URL: <https://github.com/clr2of8/Presentations/blob/master/Sp4rkCon2019-VBAstomp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:1050`; references: 1.
+  - Source: `Draft/Phishing.md:1152`; references: 1.
   - ID: `28a30b3a4612ba5c871d`.
 - **https://github.com/code-scrap/ConferenceTalks/blob/main/%5BPDF%5D%5BFINAL%5D%20%5BPublished%5DHackers-Teaching-Hackers-Keynote%20.pdf**
   - URL: <https://github.com/code-scrap/ConferenceTalks/blob/main/%5BPDF%5D%5BFINAL%5D%20%5BPublished%5DHackers-Teaching-Hackers-Keynote%20.pdf>
@@ -2589,7 +2589,7 @@
 - **Excel DDE Walkthrough**
   - URL: <https://github.com/merrillmatt011/Excel_DDE_Walkthrough/blob/master/Excel_DDE_Walkthrough.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:801`; references: 1.
+  - Source: `Draft/Phishing.md:866`; references: 1.
   - ID: `a4c24aa80c91f1f8b864`.
 - **Exploiting the Hyper-V IDE Emulator to Escape the Virtual Machine - Joe Bialek**
   - URL: <https://github.com/microsoft/MSRC-Security-Research/blob/master/presentations/2019_08_BlackHatUSA/BHUSA19_Exploiting_the_Hyper-V_IDE_Emulator_to_Escape_the_Virtual_Machine.pdf>
@@ -2619,7 +2619,7 @@
 - **Slides**
   - URL: <https://github.com/outflanknl/Presentations/blob/master/Troopers19_MS_Office_file_format_sorcery.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:1047`; references: 1.
+  - Source: `Draft/Phishing.md:1149`; references: 1.
   - ID: `34b4599c672e4e3aa4b3`.
 - **Slides**
   - URL: <https://github.com/outflanknl/Presentations/raw/master/Troopers19_MS_Office_file_format_sorcery.pdf>
@@ -2629,7 +2629,7 @@
 - **https://github.com/peterfillmore/Talk-Stuff/blob/master/Syscan2015/PeterFillmore_Syscan2015.pdf**
   - URL: <https://github.com/peterfillmore/Talk-Stuff/blob/master/Syscan2015/PeterFillmore_Syscan2015.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:486`; references: 1.
+  - Source: `Draft/Wireless.md:558`; references: 1.
   - ID: `382104d923f8f488a45c`.
 - **Presentation: Barfing Gadgets - Ekoparty 2014**
   - URL: <https://github.com/programa-stic/barf-project/raw/master/documentation/presentations/barfing-gadgets.ekoparty2014.es.pdf>
@@ -2734,7 +2734,7 @@
 - **802.1x NAC & Bypass Techniques - Valerian Legrand(Hack in Paris 2017)**
   - URL: <https://hackinparis.com/data/slides/2017/2017_Legrand_Valerian_802.1x_Network_Access_Control_and_Bypass_Techniques.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1775`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1635`; references: 1.
   - ID: `4d80e20c1338bf543fb9`.
 - **YOU « TRY » TO DETECT MIMIKATZ ;) - Vincent Le Toux(HackInParis2019)**
   - URL: <https://hackinparis.com/data/slides/2019/talks/HIP2019-Vincent_Le_Toux-You_Try_To_Detect_Mimikatz.pdf>
@@ -2764,7 +2764,7 @@
 - **SNMP Attacks and Security - Mauno Pihelgas**
   - URL: <https://home.cyber.ee/~ahtbu/CDS2011/MaunoPihelgasSlides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:862`; references: 1.
+  - Source: `Draft/Network_Attacks.md:798`; references: 1.
   - ID: `6b739161ca98fde83b56`.
 - **Analyzing the Crossdomain Policies of Flash Applications - Analyzing the Crossdomain Policies of Flash Applications - Dongseok Jang, Aishwarya Venkataraman, G. Michael Sawka, Hovav Shacham(2011)**
   - URL: <https://hovav.net/ucsd/dist/crossdomain.pdf>
@@ -2819,7 +2819,7 @@
 - **Slides**
   - URL: <https://i.blackhat.com/USA-19/Wednesday/us-19-Burke-ClickOnce-And-Youre-In-When-Appref-Ms-Abuse-Is-Operating-As-Intended-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:514`; references: 1.
+  - Source: `Draft/Phishing.md:576`; references: 1.
   - ID: `118e20c369f2b1abd305`.
 - **Behind the Scenes of Intel Security and Manageability Engine - Shai Hasarfaty, Yanai Moyal**
   - URL: <https://i.blackhat.com/USA-19/Wednesday/us-19-Hasarfaty-Behind-The-Scenes-Of-Intel-Security-And-Manageability-Engine.pdf>
@@ -2869,7 +2869,7 @@
 - **MS Office In Wonderland - Stan Hegt & Pieter Ceelen(BH Asia2019)**
   - URL: <https://i.blackhat.com/asia-19/Thu-March-28/bh-asia-Hegt-MS-Office-in-Wonderland.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:874`; references: 2.
+  - Source: `Draft/Phishing.md:951`; references: 2.
   - ID: `39166fddca8b2a11745e`.
 - **Slides**
   - URL: <https://i.blackhat.com/asia-21/Thursday-Handouts/as-21-Ding-Domain-Borrowing-Catch-My-C2-Traffic-If-You-Can.pdf>
@@ -3009,7 +3009,7 @@
 - **A Wake-Up Call for SATCOM Security - Ruben Santamarta**
   - URL: <https://ioactive.com/pdfs/IOActive_SATCOM_Security_WhitePaper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:521`; references: 1.
+  - Source: `Draft/Wireless.md:602`; references: 1.
   - ID: `399b6fadff9c854b1526`.
 - **A Look In the Mirror: Attacks on Package Managers**
   - URL: <https://isis.poly.edu/~jcappos/papers/cappos_mirror_ccs_08.pdf>
@@ -3029,7 +3029,7 @@
 - **SPF, DKIM, and DMARC Demystified - McAfee**
   - URL: <https://jira.sakaiproject.org/secure/attachment/43722/sb-spf-dkim-dmarc-demystified.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:364`; references: 1.
+  - Source: `Draft/Phishing.md:440`; references: 1.
   - ID: `eecde5f01411d9178571`.
 - **Compromising Reflections - or - How to Read LCD Monitors Around the Corner- Michael Backes, Markus Dürmuth, Dominique Unruh**
   - URL: <https://kodu.ut.ee/~unruh/publications/reflections.pdf>
@@ -3049,7 +3049,7 @@
 - **Corrupting Memory In Microsoft Office Protected-View Sandbox - Yong Chuan Koh(MS BlueHat '17)**
   - URL: <https://labs.f-secure.com/assets/BlogFiles/mwri-corrupting-memory-in-ms-office-protected-view-v2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:1121`; references: 1.
+  - Source: `Draft/Phishing.md:1233`; references: 1.
   - ID: `cf4227c36bf06bb45788`.
 - **Security Implications of Windows Access Tokens –  A Penetration Tester’s Guide - Luke Jennings(2008)**
   - URL: <https://labs.f-secure.com/assets/BlogFiles/mwri-security-implications-of-windows-access-tokens-2008-04-14.pdf>
@@ -3064,12 +3064,12 @@
 - **Understanding The Microsft Office 2013 Protected-View Sandbox - Yong Chuan, Kho (2015)**
   - URL: <https://labs.mwrinfosecurity.com/assets/BlogFiles/UNDERSTANDING-THE-MICROSOFT-OFFICE-2013-PROTECTED-VIEW-SANDBOX-WP3.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:1120`; references: 1.
+  - Source: `Draft/Phishing.md:1232`; references: 1.
   - ID: `d7e68959b9c1af508a48`.
 - **Persisting with Microsoft Office: Abusing Extensibility Options - William Knowles**
   - URL: <https://labs.mwrinfosecurity.com/assets/BlogFiles/WilliamKnowles-MWR-44con-PersistingWithMicrosoftOffice.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:747`; references: 2.
+  - Source: `Draft/Phishing.md:810`; references: 2.
   - ID: `aa6f8f80268e5b008eb6`.
 - **Hello MS08-067, My Old Friend!**
   - URL: <https://labs.mwrinfosecurity.com/assets/BlogFiles/hello-ms08-067-my-old-friend.pdf>
@@ -3099,37 +3099,37 @@
 - **Bluetooth: With Low Energy comes Low Security - Mike Ryan**
   - URL: <https://lacklustre.net/bluetooth/Ryan_Bluetooth_Low_Energy_USENIX_WOOT.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:187`; references: 1.
+  - Source: `Draft/Wireless.md:202`; references: 1.
   - ID: `e205073618d73c67c907`.
 - **Slides**
   - URL: <https://lacklustre.net/bluetooth/bluetooth_smart_good_bad_ugly_fix-mikeryan-blackhat_2013.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:165`; references: 1.
+  - Source: `Draft/Wireless.md:172`; references: 1.
   - ID: `32a3fbfbbffc487bb5db`.
 - **Slides**
   - URL: <https://lacklustre.net/bluetooth/hacking_btle-i_am_jacks_heart_monitor-mikeryan-toorcon_2012.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:195`; references: 1.
+  - Source: `Draft/Wireless.md:210`; references: 1.
   - ID: `00e0f0a2e77be01847ef`.
 - **How Smart Is Bluetooth Smart?**
   - URL: <https://lacklustre.net/bluetooth/how_smart_is_bluetooth_smart-mikeryan-shmoocon_2013.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:166`; references: 1.
+  - Source: `Draft/Wireless.md:173`; references: 1.
   - ID: `31aa3c6d5f95131c74a8`.
 - **Slides**
   - URL: <https://lacklustre.net/bluetooth/outsmarting_bluetooth_smart-mikeryan-cansecwest_2014.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:163`; references: 1.
+  - Source: `Draft/Wireless.md:170`; references: 1.
   - ID: `3a676befb83430291726`.
 - **Case Study – NAC bypass & ARP spoofing - Lifars**
   - URL: <https://lifars.com/wp-content/uploads/2020/02/case-study-NAC-Bypass-and-ARP-Spoofing.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1770`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1630`; references: 1.
   - ID: `1f05452d36e09ad8521d`.
 - **Practical verification of WPA-TKIP vulnerabilities (2013)**
   - URL: <https://lirias.kuleuven.be/bitstream/123456789/401042/1/wpatkip.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:432`; references: 1.
+  - Source: `Draft/Wireless.md:492`; references: 1.
   - ID: `569aa8e5120d84d9c31f`.
 - **Seven Months’ Worth of Mistakes: A Longitudinal Study of Typosquatting Abuse**
   - URL: <https://lirias.kuleuven.be/bitstream/123456789/471369/3/typos-final.pdf>
@@ -3139,7 +3139,7 @@
 - **A Security Analysis of the WPA-TKIP and TLS Security Protocols (PhD Thesis, 2016)**
   - URL: <https://lirias.kuleuven.be/bitstream/123456789/543228/1/thesis.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:435`; references: 1.
+  - Source: `Draft/Wireless.md:495`; references: 1.
   - ID: `3ef2555e13b3a740bf7c`.
 - **Slides**
   - URL: <https://macadmins.psu.edu/files/2019/07/psumac2019-350-Learn-Incident-Response-for-Mac.pdf>
@@ -3159,17 +3159,17 @@
 - **Slides**
   - URL: <https://media.blackhat.com/bh-us-10/presentations/Becherer/BlackHat-USA-2010-Becherer-Andrew-Hadoop-Security-slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1829`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1690`; references: 1.
   - ID: `3e11e72b6a4fb3e56412`.
 - **Bitsquatting - DNS Hijacking without Exploitation - Artem Dinaburg**
   - URL: <https://media.blackhat.com/bh-us-11/Dinaburg/BH_US_11_Dinaburg_Bitsquatting_WP.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1330`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1220`; references: 1.
   - ID: `f7685ecb4e9ba14975b3`.
 - **Exploring NFC Attack Surface**
   - URL: <https://media.blackhat.com/bh-us-12/Briefings/C_Miller/BH_US_12_Miller_NFC_attack_surface_WP.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:485`; references: 1.
+  - Source: `Draft/Wireless.md:557`; references: 1.
   - ID: `d3c600e686018103fbb8`.
 - **Slides: XML Out-­Of-Band Data Retrieval - BHEU 2013**
   - URL: <https://media.blackhat.com/eu-13/briefings/Osipov/bh-eu-13-XML-data-osipov-slides.pdf>
@@ -3209,12 +3209,12 @@
 - **Rooting Sim Cards**
   - URL: <https://media.blackhat.com/us-13/us-13-Nohl-Rooting-SIM-cards-Slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:237`; references: 1.
+  - Source: `Draft/Wireless.md:259`; references: 1.
   - ID: `2741f9d712c06a55b0f1`.
 - **Home Insecurity: No Alarms, False Alarms, and SIGINT**
   - URL: <https://media.defcon.org/DEF%20CON%2022/DEF%20CON%2022%20presentations/Logan%20Lamb/DEFCON-22-Logan-Lamb-HOME-INSECURITY-NO-ALARMS-FALSE-ALARMS-AND-SIGINT-WP.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Physical_Security.md:33`; references: 2.
+  - Source: `Draft/Physical_Security.md:29`; references: 2.
   - ID: `a1e19a80d6e1fee9ddd7`.
 - **Slides**
   - URL: <https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEF%20CON%2023%20-%20Bart-Kulach-Hack-the-Legacy-IBMi-revealed.pdf>
@@ -3234,12 +3234,12 @@
 - **Slides**
   - URL: <https://media.defcon.org/DEF%20CON%2023/DEF%20CON%2023%20presentations/DEFCON-23-Richo-Healey-Mike-Ryan-Hacking-Electric-Skateboards.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:157`; references: 1.
+  - Source: `Draft/Wireless.md:164`; references: 1.
   - ID: `2679e5b59ffd2820f312`.
 - **Slides**
   - URL: <https://media.defcon.org/DEF%20CON%2024/DEF%20CON%2024%20presentations/DEFCON-24-Chapman-Stone-Toxic-Proxies-Bypassing-HTTPS-and-VPNs.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1075`; references: 1.
+  - Source: `Draft/Network_Attacks.md:998`; references: 1.
   - ID: `c7a2865795ed776c2d45`.
 - **Vulnerabilities 101 : How to Launch or Improve Your  Vulnerability Research Game - Joshua Drake, Steve Christey Coley**
   - URL: <https://media.defcon.org/DEF%20CON%2024/DEF%20CON%2024%20presentations/DEFCON-24-Drake-Christey-Vulnerabilities-101-UPDATED.pdf>
@@ -3344,7 +3344,7 @@
 - **Guide to LTE Security - NIST Special Publication 800-187**
   - URL: <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-187.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:220`; references: 1.
+  - Source: `Draft/Wireless.md:238`; references: 1.
   - ID: `8d7714d19be8446a6c69`.
 - **NIST Special Publication 800-190: Application Container Security Guide**
   - URL: <https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-190.pdf>
@@ -3484,12 +3484,12 @@
 - **the research paper**
   - URL: <https://papers.mathyvanhoef.com/ccs2017.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:421`; references: 1.
+  - Source: `Draft/Wireless.md:477`; references: 1.
   - ID: `3fe4b8501973a6a04537`.
 - **https://papers.mathyvanhoef.com/dragonblood.pdf**
   - URL: <https://papers.mathyvanhoef.com/dragonblood.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:47`; references: 1.
+  - Source: `Draft/Wireless.md:746`; references: 1.
   - ID: `ad01add9dcac3311f287`.
 - **Logs Unite! Forensic Analysis Of Apple Unified Logs - Sarah Edwards(2017)**
   - URL: <https://papers.put.as/papers/macosx/2017/LogsUnite.pdf>
@@ -3519,7 +3519,7 @@
 - **Component-Based Formal Analysis of 5G-AKA:Channel Assumptions and Session Confusion - Cas Cremers, Martin Dehnel-Wild**
   - URL: <https://people.cispa.io/cas.cremers/downloads/papers/CrDe2018-5G.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:59`; references: 1.
+  - Source: `Draft/Wireless.md:758`; references: 1.
   - ID: `a7afee76e20487fa3f61`.
 - **https://people.eecs.berkeley.edu/~alig/papers/mesos.pdf**
   - URL: <https://people.eecs.berkeley.edu/~alig/papers/mesos.pdf>
@@ -3704,7 +3704,7 @@
 - **Hacking D-Link Routers With HNAP**
   - URL: <https://regmedia.co.uk/2016/11/07/dlink_hnap_captcha.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:370`; references: 1.
+  - Source: `Draft/Network_Attacks.md:337`; references: 1.
   - ID: `044d55b7c71984f98a50`.
 - **Bypassing SEHOP**
   - URL: <https://repo.zenk-security.com/Reversing%20.%20cracking/Bypassing%20SEHOP.pdf>
@@ -3799,7 +3799,7 @@
 - **Securing Hadoop: Security Recommendations for Hadoop Environments - Securosis(2016)**
   - URL: <https://securosis.com/assets/library/reports/Securing_Hadoop_Final_V2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1821`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1682`; references: 1.
   - ID: `04fca35daea816fffee0`.
 - **Oh, the Places You’ll Go! Finding Our Way Back from the Web Platform’sIll-conceived Jaunts - Artur Janc, Mike West(2020)**
   - URL: <https://secweb.work/papers/janc2020places.pdf>
@@ -3919,7 +3919,7 @@
 - **Brute forcing Wi-Fi Protected Setup - Stefan Viehböck**
   - URL: <https://sviehb.files.wordpress.com/2011/12/viehboeck_wps.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:448`; references: 1.
+  - Source: `Draft/Wireless.md:514`; references: 1.
   - ID: `835965d83bc9629a2a06`.
 - **Ghostbuster: Detecting the Presence of Hidden Eavesdroppers**
   - URL: <https://synrg.csl.illinois.edu/papers/ghostbuster-mobicom18.pdf>
@@ -3939,7 +3939,7 @@
 - **Purple Haze: The SpearPhishing Experience - Jesse Nebling(Toorcon21)**
   - URL: <https://talks.toorcon.net/media/Purple_Haze__The_SpearPhishing_Experience.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:163`; references: 1.
+  - Source: `Draft/Phishing.md:189`; references: 1.
   - ID: `2414610f04de2b229e4e`.
 - **The art and science  of detecting Cobalt Strike - Nick Mavis(2020)**
   - URL: <https://talos-intelligence-site.s3.amazonaws.com/production/document_files/files/000/095/031/original/Talos_Cobalt_Strike.pdf>
@@ -3969,7 +3969,7 @@
 - **Slides**
   - URL: <https://tiny.si/slides/2020_WWHF_CastingWithThePros.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:160`; references: 1.
+  - Source: `Draft/Phishing.md:186`; references: 1.
   - ID: `5f0e3d24ad784d4a5334`.
 - **The use of TLS in Censorship Circumvention - Sergey Frolov, Eric Wustrow(2019)**
   - URL: <https://tlsfingerprint.io/static/frolov2019.pdf>
@@ -4054,7 +4054,7 @@
 - **Slides**
   - URL: <https://web.archive.org/web/20101227234436/http://www.backtrack.it/~emgent/talks/16032010_-_SecuritySummit_CAS.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1348`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1239`; references: 1.
   - ID: `876d9ef64020406f5dd9`.
 - **Active Directory Offline Hash Dump and Forensic Analysis - Csaba Barta(2011)**
   - URL: <https://web.archive.org/web/20131008171714/http://www.ntdsxtract.com/downloads/ActiveDirectoryOfflineHashDumpAndForensics.pdf>
@@ -4124,7 +4124,7 @@
 - **Microsoft Office EXCEL97-2007BINARY File Format Specification\[\*.xls (97-2007) format\]**
   - URL: <https://web.archive.org/web/20200717013620/https://download.microsoft.com/download/1/A/9/1A96F918-793B-4A55-8B36-84113F275ADD/Excel97-2007BinaryFileFormat%28xls%29Specification.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:271`; references: 1.
+  - Source: `Draft/Phishing.md:307`; references: 1.
   - ID: `95e192ae973a1583cda4`.
 - **Slides**
   - URL: <https://web.archive.org/web/20200903100811/http://phk.freebsd.dk/_downloads/FOSDEM_2014.pdf>
@@ -4239,7 +4239,7 @@
 - **Slides**
   - URL: <https://www.blackhat.com/docs/asia-17/materials/asia-17-Turpin-Phishing-For-Funds-Understanding-Business-Email-Compromise.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:112`; references: 1.
+  - Source: `Draft/Phishing.md:128`; references: 1.
   - ID: `59cc25c6b08b48ab8a78`.
 - **https://www.blackhat.com/docs/eu-14/materials/eu-14-Andrivet-C-plus-plus11-Metaprogramming-Applied-To-software-Obfuscation.pdf**
   - URL: <https://www.blackhat.com/docs/eu-14/materials/eu-14-Andrivet-C-plus-plus11-Metaprogramming-Applied-To-software-Obfuscation.pdf>
@@ -4329,12 +4329,12 @@
 - **SMBv2 - Sharing More Than Just Your Files - Hormazd Billimoria, Jonathan Brossard - BHUSA2015**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Brossard-SMBv2-Sharing-More-Than-Just-Your-Files.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:776`; references: 1.
+  - Source: `Draft/Network_Attacks.md:714`; references: 1.
   - ID: `e41fe16cf2562c52cd9c`.
 - **Funtenna - Transmitter: XYZ Embedded device + RF Funtenna Payload**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Cui-Emanate-Like-A-Boss-Generalized-Covert-Data-Exfiltration-With-Funtenna.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:69`; references: 1.
+  - Source: `Draft/Wireless.md:768`; references: 1.
   - ID: `55406dbb0315eb9f5fbc`.
 - **Commercial Spyware-Detecting the Undetectable - Fidelis Cybersecurity(BHUSA2015)**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Dalman-Commercial-Spyware-Detecting-The-Undetectable-wp.pdf>
@@ -4344,7 +4344,7 @@
 - **Abusing Windows Management Instrumentation (WMI) to Build a Persistent, Asyncronous, and Fileless Backdoor - Matt Graeber(BHUSA15)**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Graeber-Abusing-Windows-Management-Instrumentation-WMI-To-Build-A-Persistent%20Asynchronous-And-Fileless-Backdoor-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1125`; references: 5.
+  - Source: `Draft/Network_Attacks.md:1047`; references: 5.
   - ID: `0a04734083c782b7d295`.
 - **Remote Physical Damage 101 - Bread and Butter Attacks**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Larsen-Remote-Physical-Damage-101-Bread-And-Butter-Attacks.pdf>
@@ -4354,7 +4354,7 @@
 - **Attacking Interoperability: An OLE Edition**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Li-Attacking-Interoperability-An-OLE-Edition.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:1103`; references: 1.
+  - Source: `Draft/Phishing.md:1209`; references: 1.
   - ID: `a12a27c236b26aef777d`.
 - **Paper**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Metcalf-Red-Vs-Blue-Modern-Active-Directory-Attacks-Detection-And-Protection-wp.pdf>
@@ -4394,7 +4394,7 @@
 - **Small Tweaks do Not Help: Differential Power Analysis of MILENAGE Implementations in 3G/4G USIM Cards**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Yu-Cloning-3G-4G-SIM-Cards-With-A-PC-And-An-Oscilloscope-Lessons-Learned-In-Physical-Security-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:240`; references: 2.
+  - Source: `Draft/Wireless.md:262`; references: 2.
   - ID: `8537b76432f675c7855c`.
 - **BYPASS CONTROL FLOW  GUARD  COMPREHENSIVELY - Zhang Yunhai**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Zhang-Bypass-Control-Flow-Guard-Comprehensively-wp.pdf>
@@ -4414,7 +4414,7 @@
 - **badWPAD - Maxim Goncharov(BHUSA16-slides)**
   - URL: <https://www.blackhat.com/docs/us-16/materials/us-16-Goncharov-BadWpad.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1069`; references: 1.
+  - Source: `Draft/Network_Attacks.md:992`; references: 1.
   - ID: `ead5a8bf52b2254cb561`.
 - **Pwning Your Java Messaging With De- serialization Vulnerabilities**
   - URL: <https://www.blackhat.com/docs/us-16/materials/us-16-Kaiser-Pwning-Your-Java-Messaging-With-Deserialization-Vulnerabilities-wp.pdf>
@@ -4429,7 +4429,7 @@
 - **Slides**
   - URL: <https://www.blackhat.com/docs/us-16/materials/us-16-Kotler-Crippling-HTTPS-With-Unholy-PAC.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1072`; references: 1.
+  - Source: `Draft/Network_Attacks.md:995`; references: 1.
   - ID: `198063944a22d04a521d`.
 - **Hardening AWS Environments and Automating Incident Response for AWS Compromises - Andrew Krug, Alex McCormack, Joel Ferrier, Jeff Parr**
   - URL: <https://www.blackhat.com/docs/us-16/materials/us-16-Krug-Hardening-AWS-Environments-And-Automating-Incident-Response-For-AWS-Compromises-wp.pdf>
@@ -4554,7 +4554,7 @@
 - **Bypassing NAC v2.0 - Ofir Arkin(BHUSA07)**
   - URL: <https://www.blackhat.com/presentations/bh-dc-07/Arkin/Presentation/bh-dc-07-Arkin-ppt-up.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1774`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1634`; references: 1.
   - ID: `491ca311ba4aa3b74a89`.
 - **Beyond The CPU:Defeating Hardware Based RAM Acquisition**
   - URL: <https://www.blackhat.com/presentations/bh-dc-07/Rutkowska/Presentation/bh-dc-07-Rutkowska-up.pdf>
@@ -4564,7 +4564,7 @@
 - **Intercepting GSM Traffic**
   - URL: <https://www.blackhat.com/presentations/bh-dc-08/Steve-DHulton/Presentation/bh-dc-08-steve-dhulton.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:264`; references: 1.
+  - Source: `Draft/Wireless.md:290`; references: 1.
   - ID: `8e4a4f830b4f8b93cfa7`.
 - **Attacking Intel ® Trusted Execution Technology Rafal Wojtczuk and Joanna Rutkowska**
   - URL: <https://www.blackhat.com/presentations/bh-dc-09/Wojtczuk_Rutkowska/BlackHat-DC-09-Rutkowska-Attacking-Intel-TXT-slides.pdf>
@@ -4584,7 +4584,7 @@
 - **https://www.blackhat.com/presentations/bh-europe-07/Butti/Presentation/bh-eu-07-Butti.pdf**
   - URL: <https://www.blackhat.com/presentations/bh-europe-07/Butti/Presentation/bh-eu-07-Butti.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:48`; references: 1.
+  - Source: `Draft/Wireless.md:747`; references: 1.
   - ID: `618363143ffda74e2ccd`.
 - **Kicking Down the Cross Domain Door Techniques for Cross Domain Exploitation - Billy K Rios, Raghav Dube(BHEU 2007)**
   - URL: <https://www.blackhat.com/presentations/bh-europe-07/Dube-Rios/Whitepaper/bh-eu-07-rios-WP.pdf>
@@ -4614,7 +4614,7 @@
 - **BGP Vulnerability Testing: Separating Fact from FUD - Sean Covery, Matthew Franz(BHUSA03)**
   - URL: <https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-convery-franz-v2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:176`; references: 1.
+  - Source: `Draft/Network_Attacks.md:151`; references: 1.
   - ID: `dbffda7bd245e7ed0b6e`.
 - **Shattering By Example - Brett Moore(BHUSA2004)**
   - URL: <https://www.blackhat.com/presentations/bh-usa-04/bh-us-04-moore/bh-us-04-moore-whitepaper.pdf>
@@ -4674,7 +4674,7 @@
 - **MetaPhish Paper**
   - URL: <https://www.blackhat.com/presentations/bh-usa-09/SMITH_VAL/BHUSA09-Smith-MetaPhish-PAPER.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:154`; references: 1.
+  - Source: `Draft/Phishing.md:178`; references: 1.
   - ID: `b04a06253afee8ca5c7d`.
 - **Unraveling Unicode: A Bag of Tricks for Bug Hunting - Chris Weber(BHUSA2009)**
   - URL: <https://www.blackhat.com/presentations/bh-usa-09/WEBER/BHUSA09-Weber-UnicodeSecurityPreview-SLIDES.pdf>
@@ -4744,7 +4744,7 @@
 - **Home Network Administration Protocol (HNAP) Whitepaper**
   - URL: <https://www.cisco.com/web/partners/downloads/guest/hnap_protocol_whitepaper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:369`; references: 1.
+  - Source: `Draft/Network_Attacks.md:336`; references: 1.
   - ID: `c048b39f4a967b2c0262`.
 - **https://www.cisuc.uc.pt/publication/showfile?fn=1357250736_metaobfv3.pdf**
   - URL: <https://www.cisuc.uc.pt/publication/showfile?fn=1357250736_metaobfv3.pdf>
@@ -4759,7 +4759,7 @@
 - **Tamper resistance and  hardware security**
   - URL: <https://www.cl.cam.ac.uk/~sps32/PartII_030214.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Physical_Security.md:47`; references: 1.
+  - Source: `Draft/Physical_Security.md:45`; references: 1.
   - ID: `f15ede9251dc6a3c7467`.
 - **Cobalt Strike External C2 Paper**
   - URL: <https://www.cobaltstrike.com/downloads/externalc2spec.pdf>
@@ -4794,7 +4794,7 @@
 - **An Auditing Tool for Wi-Fi or Wired Ethernet Connections - Matthew Sullivan**
   - URL: <https://www.cookiecadger.com/wp-content/uploads/Cookie%20Cadger.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1460`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1339`; references: 1.
   - ID: `a699e1fc31c6435fd000`.
 - **Windows SMEP Bypass: U=S - Enrique Nissim, NicolasEconomou(2015)**
   - URL: <https://www.coresecurity.com/sites/default/files/private-files/publications/2016/05/Windows%20SMEP%20bypass%20U%3DS.pdf>
@@ -4814,7 +4814,7 @@
 - **Swiss Army Knife for RFID**
   - URL: <https://www.cs.bham.ac.uk/~garciaf/publications/Tutorial_Proxmark_the_Swiss_Army_Knife_for_RFID_Security_Research-RFIDSec12.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:500`; references: 1.
+  - Source: `Draft/Wireless.md:574`; references: 1.
   - ID: `4ae7c3ea7872ef34cdab`.
 - **FlexSC: Flexible System Call Scheduling with Exception-Less System Calls**
   - URL: <https://www.cs.cmu.edu/~chensm/Big_Data_reading_group/papers/flexsc-osdi10.pdf>
@@ -4889,12 +4889,12 @@
 - **VBA Macros Pest Control - Philippe Lagadec**
   - URL: <https://www.decalage.info/files/THC17_Lagadec_Macro_Pest_Control2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:909`; references: 1.
+  - Source: `Draft/Phishing.md:995`; references: 1.
   - ID: `2bd60425962302b4e4b8`.
 - **Advanced VBA Macros - Attack & Defense - Philippe Lagadec(BHEU2019**
   - URL: <https://www.decalage.info/files/eu-19-Lagadec-Advanced-VBA-Macros-Attack-And-Defence.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:1052`; references: 1.
+  - Source: `Draft/Phishing.md:1154`; references: 1.
   - ID: `0aa9d5aea8ff6196ace9`.
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-14/dc-14-presentations/DC-14-Rash.pdf>
@@ -4919,7 +4919,7 @@
 - **MetaPhish - Defcon17**
   - URL: <https://www.defcon.org/images/defcon-17/dc-17-presentations/Valsmith/defcon-17-valsmith-metaphish-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:155`; references: 1.
+  - Source: `Draft/Phishing.md:179`; references: 1.
   - ID: `7eae779c32769e13e278`.
 - **Defcon17 Slides**
   - URL: <https://www.defcon.org/images/defcon-17/dc-17-presentations/defcon-17-jayson_e_street-dispelling_myths_cyber-warfare.pdf>
@@ -5119,7 +5119,7 @@
 - **Penetration Testing Tools that (do not) Support**
   - URL: <https://www.ernw.de/download/newsletter/ERNW_Newsletter_45_PenTesting_Tools_that_Support_IPv6_v.1.1_en.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:469`; references: 1.
+  - Source: `Draft/Network_Attacks.md:429`; references: 1.
   - ID: `3cdccc8bcecc3f3cec85`.
 - **Bootkit Threats: In Depth Reverse Engineering & Defense- Eugene Rodionov&Aleksandr Matrosov**
   - URL: <https://www.eset.com/fileadmin/Images/US/Docs/Business/presentations/conference_papers/REcon2012.pdf>
@@ -5324,7 +5324,7 @@
 - **TR-069 – A Crash Course University of New Hampshire Interoperability Laboratory 2009**
   - URL: <https://www.iol.unh.edu/sites/default/files/knowledgebase/hnc/TR-069_Crash_Course.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1010`; references: 1.
+  - Source: `Draft/Network_Attacks.md:937`; references: 1.
   - ID: `449ce9cba6811a9995de`.
 - **A Practical Attack to De-Anonymize Social Network Users**
   - URL: <https://www.iseclab.org/papers/sonda-TR.pdf>
@@ -5334,12 +5334,12 @@
 - **The HTML Form Protocol Attack - Jochen Topf**
   - URL: <https://www.jochentopf.com/hfpa/hfpa.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1350`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1241`; references: 1.
   - ID: `eea4ef115e55377baec1`.
 - **MICROSOFT OFFICE EXCEL97-2007BINARY FILE FORMAT SPECIFICATION\[\*.xls (97-2007) format\]**
   - URL: <https://www.loc.gov/preservation/digital/formats/digformatspecs/Excel97-2007BinaryFileFormat(xls)Specification.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:306`; references: 1.
+  - Source: `Draft/Phishing.md:354`; references: 1.
   - ID: `b659eb7e33690c10eb88`.
 - **Cyber KillChain**
   - URL: <https://www.lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf>
@@ -5364,7 +5364,7 @@
 - **A Pentesters Guide to Hacking  ActiveMQ-Based JMS Applications - Gursev Singh Kalra**
   - URL: <https://www.mcafee.com/enterprise/en-us/assets/white-papers/wp-pentesters-guide-hacking-activemq-jms-applications.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:587`; references: 1.
+  - Source: `Draft/Network_Attacks.md:542`; references: 1.
   - ID: `6ce721f9b7294df45c90`.
 - **What Developers Want and Need from Program Analysis: An Empirical Study - Maria Christakis, Christian Bird(2016)**
   - URL: <https://www.microsoft.com/en-us/research/uploads/prod/2016/07/What-Developers-Want-and-Need-from-Program-Analysis-An-Empirical-Study.pdf>
@@ -5384,12 +5384,12 @@
 - **Taming Mr Hayes: Mitigating Signaling Based Attacks on Smartphones**
   - URL: <https://www.mulliner.org/collin/academic/publications/mrhayes_mulliner_dsn2012.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:225`; references: 1.
+  - Source: `Draft/Wireless.md:243`; references: 1.
   - ID: `0a5ecff83d174ac187f7`.
 - **Excel 4.0 Macro Functions Reference - Philip Treacy**
   - URL: <https://www.myonlinetraininghub.com/cdn/files/Excel%204.0%20Macro%20Functions%20Reference.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:282`; references: 1.
+  - Source: `Draft/Phishing.md:322`; references: 1.
   - ID: `b8fb72a3ce489ccb80bb`.
 - **Common Security Issues in Financially-Oriented Web Applications - Soroush Dalil(2019)**
   - URL: <https://www.nccgroup.com/globalassets/our-research/uk/images/common_security_issues_in_financially-orientated_web.pdf.pdf>
@@ -5419,7 +5419,7 @@
 - **Exploiting Network Printers: A Survey of Security Flaws in Laser Printers and Multi-Function Devices - **
   - URL: <https://www.nds.ruhr-uni-bochum.de/media/ei/arbeiten/2017/01/30/exploiting-printers.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1878`; references: 1.
+  - Source: `Draft/Network_Attacks.md:1729`; references: 1.
   - ID: `1dd173ca5bb9ab1e3f9c`.
 - **Scriptless Attacks - Stealing the Pie Without Touching the Sill - Mario Heiderich, Marcus Niemietz, Felix Schuster, Thorsten Holz, Jörg Schwenk(2012)**
   - URL: <https://www.nds.ruhr-uni-bochum.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf>
@@ -5474,7 +5474,7 @@
 - **DETECTION ENGINEERING: Passive TLS Fingerprinting - Experience from adopting JA3 - Kjell Fossbakk**
   - URL: <https://www.nsm.stat.no/globalassets/dokumenter/ncss/2019-06-05-helsecert---norcert-forum-2019.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:949`; references: 1.
+  - Source: `Draft/Network_Attacks.md:883`; references: 1.
   - ID: `d1886c30bc9832cc942d`.
 - **Breaking the links: Exploiting the linker**
   - URL: <https://www.nth-dimension.org.uk/pub/BTL.pdf>
@@ -5484,12 +5484,12 @@
 - **OpenOffice.org's Documentation of theMicrosoft Compound Document File Format - Daniel Rentz**
   - URL: <https://www.openoffice.org/sc/compdocfileformat.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:300`; references: 1.
+  - Source: `Draft/Phishing.md:348`; references: 1.
   - ID: `189731dfd682f6108eed`.
 - **OpenOffice.org's Documentation of the Microsoft Excel File Format - Daniel Rentz**
   - URL: <https://www.openoffice.org/sc/excelfileformat.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:310`; references: 1.
+  - Source: `Draft/Phishing.md:358`; references: 1.
   - ID: `61431f4a46e0f5d17628`.
 - **RequestRodeo: Client Side Protection against Session Riding - Martin Johns and Justus Winter - pdf**
   - URL: <https://www.owasp.org/images/4/42/RequestRodeo-MartinJohns.pdf>
@@ -5554,7 +5554,7 @@
 - **Hiding in Plain Sight - Obfuscation Techniques in Phishing Attacks - ProofPoint**
   - URL: <https://www.proofpoint.com/sites/default/files/proofpoint-obfuscation-techniques-phishing-attacks-threat-insight-en-v1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:137`; references: 1.
+  - Source: `Draft/Phishing.md:155`; references: 1.
   - ID: `fb52fd859504cd123a75`.
 - **Where there's a JTAG, there's a way: Obtaining full system access via USB**
   - URL: <https://www.ptsecurity.com/upload/corporate/ww-en/analytics/Where-theres-a-JTAG-theres-a-way.pdf>
@@ -5569,7 +5569,7 @@
 - **Primary Security Threats For SS7 Cellular Networks**
   - URL: <https://www.ptsecurity.com/upload/ptcom/SS7-VULNERABILITY-2016-eng.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:299`; references: 1.
+  - Source: `Draft/Wireless.md:331`; references: 1.
   - ID: `d22e32efbcf220c676b0`.
 - **https://www.qualcomm.com/media/documents/files/whitepaper-pointer-authentication-on-armv8-3.pdf**
   - URL: <https://www.qualcomm.com/media/documents/files/whitepaper-pointer-authentication-on-armv8-3.pdf>
@@ -5729,7 +5729,7 @@
 - **Code Obfuscation 10\*\*2+(2\*a+3)%2 - Gaetan Ferry(JSecIn 2018)**
   - URL: <https://www.synacktiv.com/ressources/jsecin_code_obfu.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Phishing.md:138`; references: 1.
+  - Source: `Draft/Phishing.md:156`; references: 1.
   - ID: `a267769453a6efbc5af4`.
 - **DPAPI exploitation during pentest and password cracking - Jean-Christophe Delaunay**
   - URL: <https://www.synacktiv.com/ressources/univershell_2017_dpapi.pdf>
@@ -5759,7 +5759,7 @@
 - **A Practical Investigation of Identity Theft Vulnerabilities in Eduroam (2015)**
   - URL: <https://www.syssec.rub.de/media/infsec/veroeffentlichungen/2015/05/07/eduroam_WiSec2015.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:389`; references: 1.
+  - Source: `Draft/Wireless.md:435`; references: 1.
   - ID: `ac979f0e6126874fc847`.
 - **Slides**
   - URL: <https://www.techsolvency.com/talks/2017-bsideslv/bslv17_ground1234_passwords-201-beyond-the-basics_royce-williams_2017-07-26.pdf>
@@ -5799,7 +5799,7 @@
 - **Attacking automatic Wireless network selection (2005)**
   - URL: <https://www.trailofbits.com/resources/attacking_automatic_network_selection_paper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:413`; references: 1.
+  - Source: `Draft/Wireless.md:467`; references: 1.
   - ID: `150b3a53f538175bc4ee`.
 - **https://www.trapx.com/wp-content/uploads/2021/01/A0A_Report_TrapX_Nation_State_Attack.pdf**
   - URL: <https://www.trapx.com/wp-content/uploads/2021/01/A0A_Report_TrapX_Nation_State_Attack.pdf>
@@ -5809,7 +5809,7 @@
 - **badWPAD: The Lasting Menace of a Bad Protocol - Max Goncharov**
   - URL: <https://www.trendmicro.co.uk/media/misc/wp-badwpad.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Network_Attacks.md:1070`; references: 1.
+  - Source: `Draft/Network_Attacks.md:993`; references: 1.
   - ID: `4ef4a4470cc935ae9034`.
 - **Owning One To Rule Them All - Defcon20**
   - URL: <https://www.trustedsec.com/files/Owning_One_Rule_All_v2.pdf>
@@ -5834,7 +5834,7 @@
 - **https://www.usenix.org/legacy/events/sec11/tech/full_papers/Clark.pdf**
   - URL: <https://www.usenix.org/legacy/events/sec11/tech/full_papers/Clark.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:31`; references: 1.
+  - Source: `Draft/Wireless.md:730`; references: 1.
   - ID: `879e4c5feee7ac9a72bf`.
 - **Paper**
   - URL: <https://www.usenix.org/system/files/conference/cset17/cset17-paper-dekoven.pdf>
@@ -5859,12 +5859,12 @@
 - **All Your Biases Belong to Us: Breaking RC4 in WPA-TKIP and TLS (USENIX, 2015)**
   - URL: <https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-vanhoef.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:434`; references: 1.
+  - Source: `Draft/Wireless.md:494`; references: 1.
   - ID: `aebbb128d4df062fd494`.
 - **Predicting, Decrypting, and Abusing WPA2/802.11 Group Keys Mathy Vanhoef and Frank Piessens,  Katholieke Universiteit Leuven**
   - URL: <https://www.usenix.org/system/files/conference/usenixsecurity16/sec16_paper_vanhoef.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:441`; references: 1.
+  - Source: `Draft/Wireless.md:505`; references: 1.
   - ID: `5014f91c0d96faa53bef`.
 - **Lowering the USB Fuzzing Barrier by Transparent Two-Way Emulation**
   - URL: <https://www.usenix.org/system/files/conference/woot14/woot14-vantonder.pdf>
@@ -5874,7 +5874,7 @@
 - **Scrutinizing WPA2 Password Generating Algorithms in Wireless Routers (WOOT, 2015)**
   - URL: <https://www.usenix.org/system/files/conference/woot15/woot15-paper-lorente.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Wireless.md:464`; references: 1.
+  - Source: `Draft/Wireless.md:532`; references: 1.
   - ID: `aa087897d38a7635443e`.
 - **Everything Old is New Again:Binary Security of WebAssembly - Daniel Lehmann, Johannes Kinder, Michael Pradel(2020)**
   - URL: <https://www.usenix.org/system/files/sec20-lehmann.pdf>

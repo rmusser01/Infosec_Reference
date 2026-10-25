@@ -1,101 +1,78 @@
 # Network Attacks & Defenses
 
---------------------------------------------------------
 ## Table of Contents
-- [General](#general)
-- [Protocols(Mostly)](#protocols)
-    - [Advanced Query Message Protocol](#amqp)
-    - [ARP](#arp)
-    - [BGP](#bgp)
-    - [DHCP](#dhcp)
-    - [DNS](#dns)
-        - [mDNS](#mdns)
-        - [DNS over HTTPS(DoH)](#doh)
-    - [gRPC](#grpc)
-    - [HNAP](#hnap)
-    - [ICMP](#icmp)
-    - [IPMI](#ipmi)
-    - [IPv4](#ipv4)
-    - [IPv6 Related](#ipv6)
-    - [IPSEC](#ipsec)
-    - [Kerberos](#kerberos)
-    - [LDAP](#ldap)
-    - [Modbus](#modbus)
-    - [MQTT](#mqtt)
-    - [Network Address Translation](#nat)
-    - [Netbios](#netbios)
-    - [Network Host/Service Discovery](#host)
-    - [NFS](#nfs)
-    - [NTLM](#ntlm)
-    - [PAC/WPAD](#pac)
-    - [PXE](#pxe)
-    - [RPC](#rpc)
-    - [RTSP](#rtsp)
-    - [SIP/VoIP](#sip)
-    - [SMB](#smb)
-    - [SMTP](#smtp)
-    - [SNMP](#snmp)
-    - [SSH](#ssh)
-    - [SSL/TLS](#ssl)
-    - [STP](#stp)
-    - [Telnet](#telnet)
-    - [TFTP](#tftp)
-    - [TR-069](#tr69)
-    - [UPNP](#upnp)
-- [Attacks](#attacks)
-    - [Attacking Windows Networks](#attackw)
-    - [Bitsquatting](#bitsquat)
-    - [Cross-Application/Cross Protocol Scripting](#xaps)
-    - [D/DOS](#ddos)
-    - [IDS/IPS Evasion](#evasion)
-    - [IP Spoofing](#ipspoofing)
-    - [IP Obfuscation](#ipobf)
-    - [Man-in-the-Middle Tools](#mitm)
-    - [Pivoting](#pivot)
-- [Technologies](#technologies)
-    - [802.1x & NAC](#8021x)
-    - [Captive Portals](#captive-portal)
-    - [Hadoop](#hadoop)
-    - [NAT](#nat)
-    - [Printers](#printers)
-    - [Proxies](#proxy)
-    - [PXE](#pxe)
-    - [Redis](#redis)
-    - [Preboot Execution Environment (PXE)](#pxe)
-    - [Software Defined Networking(SDN)](#sdn)
-    - [Switches](#switches)
-    - [VLANs](#vlan)
-    - [WebDAV](#webdav)
-    - [Vendor Specific Stuff](#vendor)
-- [Miscellaneous Stuff](#misc)
-    - [Talks/Videos](#videos)
-    - [Other](#other)
-    - [MISC](#misc2)
+<!-- nav:toc:start -->
+- [General](#ref-network-1)
+- [Protocols](#ref-network-2)
+  - [Advanced Message Query Protocol (AMQP)](#ref-network-3)
+  - [ARP](#ref-network-4)
+  - [BGP](#ref-network-5)
+  - [Dynamic Host Configuration Protocol (DHCP)](#ref-network-6)
+  - [Domain Name System(DNS)](#ref-network-7)
+  - [Multicast DNS](#ref-network-8)
+  - [gRPC](#ref-network-9)
+  - [HNAP](#ref-network-10)
+  - [ICMP](#ref-network-11)
+  - [IPSEC](#ref-network-12)
+  - [BMCs/IPMI/iDRAC/Similar](#ref-network-13)
+  - [IPv4 Related](#ref-network-14)
+  - [IPv6 Related](#ref-network-15)
+  - [Kerberos](#ref-network-16)
+  - [LDAP](#ref-network-17)
+  - [Modbus](#ref-network-18)
+  - [MQTT (Message Query Transport Protocol)](#ref-network-19)
+  - [Netbios/Link-Local Multicast Name Resolution (LLMNR)](#ref-network-20)
+  - [NFS](#ref-network-21)
+  - [NTLM](#ref-network-22)
+  - [RPC](#ref-network-23)
+  - [RTSP(Real Time Streaming Protocol)](#ref-network-24)
+  - [SIP/VOIP:](#ref-network-25)
+  - [SMB](#ref-network-26)
+  - [SMTP](#ref-network-27)
+  - [SNMP:](#ref-network-28)
+  - [SQL:](#ref-network-29)
+  - [SSH:](#ref-network-30)
+  - [SSL/TLS](#ref-network-31)
+  - [STP](#ref-network-32)
+  - [TFTP(Trivial File Transfer Protocol)](#ref-network-33)
+  - [Telnet](#ref-network-34)
+  - [TR-069](#ref-network-35)
+  - [UPnP](#ref-network-36)
+  - [WebDAV](#ref-network-37)
+  - [PAC/WPAD](#ref-network-38)
+  - [Windows Management Instrumentation(WMI)](#ref-network-39)
+- [Attacks & Techniques](#ref-network-40)
+  - [Pivoting](#ref-network-41)
+  - [Vendor Specific Stuff](#ref-network-42)
+  - [Attacking Windows Networks](#ref-network-43)
+  - [BitSquatting:](#ref-network-44)
+  - [Cross-Application/Cross Protocol Scripting](#ref-network-45)
+  - [D/DOS](#ref-network-46)
+  - [IDS/IPS Evasion](#ref-network-47)
+  - [IP Obfuscation](#ref-network-48)
+  - [IP Spoofing](#ref-network-49)
+  - [MitM Tools](#ref-network-50)
+  - [Network Host Discovery/Service Discovery:](#ref-network-51)
+  - [Pivoting](#ref-network-52)
+  - [Vendor Specific Stuff](#ref-network-53)
+- [Technologies](#ref-network-54)
+  - [802.1x & NAC(Netork Access Control)](#ref-network-55)
+  - [Captive Portals](#ref-network-56)
+  - [Fax](#ref-network-57)
+  - [Hadoop](#ref-network-58)
+  - [Memcache](#ref-network-59)
+  - [NAT(Netork Address Translation)](#ref-network-60)
+  - [Printers](#ref-network-61)
+  - [Proxies](#ref-network-62)
+  - [PXE](#ref-network-63)
+  - [Redis](#ref-network-64)
+  - [Software Defined Networking (SDN)](#ref-network-65)
+  - [Switches(Network Hardware)](#ref-network-66)
+  - [VLANs](#ref-network-67)
+<!-- nav:toc:end -->
 
+## <a id="ref-network-1"></a><a id="general" name="general"></a>General
 
-
-
-* Need to Add 
-    * BGP
-    * Captive portals
-    * DNSSEC
-    * Fax
-    * ICE
-    * IP spoofing
-    * IPSEC Stuff
-    * memcache
-    * NAT
-    * NTLM things
-    * OCSP
-    * Packet sniffers
-    * QUIC
-    * r* protocols
-    * STUN
-    * WebDAV
-
-
-------------------------------------------------------------------------------------------------------------------------------------------------
-### <a name="general"></a>General
 * **101**
     * [Fundamentals That Time Forgot - Jup1t3r  - BSides SLC](https://www.youtube.com/watch?v=PQvUWImljOw)
     * [TCPDump Primer](http://danielmiessler.com/study/tcpdump/)
@@ -129,18 +106,14 @@
     * [nessaws](https://github.com/TerbiumLabs/nessaws?files=1)
         * Automate Nessus scans against AWS EC2/RDS endpoints.
 
-
-
-
-
-
-
 ------------------------------------------------------------------------------------------------------------------------------------
-## <a name="protocols"></a>Protocols
 
+## <a id="ref-network-2"></a><a id="protocols" name="protocols"></a>Protocols
 
 ------------
-#### <a name="amqp"></a> Advanced Message Query Protocol (AMQP)
+
+### <a id="ref-network-3"></a><a id="amqp" name="amqp"></a>Advanced Message Query Protocol (AMQP)
+
 * **101**
     * [Advanced Message Queuing Protocol - Wikipedia](https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol)
     * [AMQP.org Homepage](https://www.amqp.org)
@@ -149,10 +122,10 @@
     * [A Quick Guide To Understanding RabbitMQ & AMQP - Luke Mwila](https://medium.com/swlh/a-quick-guide-to-understanding-rabbitmq-amqp-ba25fdfe421d)
     * [Understanding AMQP, the protocol used by RabbitMQ - Peter Ledbrook]
 
-
-
 ------------
-#### <a name="arp"></a> ARP
+
+### <a id="ref-network-4"></a><a id="arp" name="arp"></a>ARP
+
 * **101**
     * [Address Resolution Protocol - Wikipedia](https://en.wikipedia.org/wiki/Address_Resolution_Protocol)
     * [RFC 826 - An Ethernet Address Resolution Protocol or Converting Network Protocol Addresses to 48.bit Ethernet Address for Transmission on Ethernet Hardware](https://tools.ietf.org/html/rfc826)
@@ -166,7 +139,9 @@
         * [Blogpost](https://blackhillsinfosec.com/analyzing-arp-to-discover-exploit-stale-network-address-configurations/)
 
 ------------
-#### <a name="bgp"></a> BGP
+
+### <a id="ref-network-5"></a><a id="bgp" name="bgp"></a>BGP
+
 * **101**
 * **Educational**
     * [isbgpsafeyet.com](https://isbgpsafeyet.com/)
@@ -176,11 +151,10 @@
         * [BGP Vulnerability Testing: Separating Fact from FUD - Sean Covery, Matthew Franz(BHUSA03)](https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-convery-franz-v2.pdf)
 * **Tools**
 
-
-
-
 ------------
-#### <a name="dhcp"></a>Dynamic Host Configuration Protocol (DHCP)
+
+### <a id="ref-network-6"></a><a id="dhcp" name="dhcp"></a>Dynamic Host Configuration Protocol (DHCP)
+
 * **101**
     * [Dynamic Host Configuration Protocol - Wikipedia](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol)
     * [DHCPv6 - Wikipedia](https://en.wikipedia.org/wiki/DHCPv6)
@@ -195,11 +169,10 @@
     * [DHCP Discovery - Chris Dent](https://www.indented.co.uk/dhcp-discovery/)
         * A PowerShell script to send a DHCP Discover request and listen for DHCP Offer responses, it can be used for finding DHCP servers (including rogue servers), or for testing DHCP servers and relays. The output from this script is an object containing a decode of the DHCP packet and a number of options.
 
-
-
-
 ------------
-#### <a name="dns"></a>Domain Name System(DNS)
+
+### <a id="ref-network-7"></a><a id="dns" name="dns"></a>Domain Name System(DNS)
+
 * **101**
     * [DNS 101: An introduction to Domain Name Servers - Alex Callejas](https://www.redhat.com/sysadmin/dns-domain-name-servers)
     * [A Cat Explains DNS - ](https://www.youtube.com/watch?v=4ZtFk2dtqv0)
@@ -324,9 +297,8 @@
     * [Judas DNS](https://github.com/mandatoryprogrammer/JudasDNS)
         * A DNS proxy server built to be deployed in place of a taken over nameserver to perform targeted exploitation. Judas works by proxying all DNS queries to the legitimate nameservers for a domain. The magic comes with Judas's rule configurations which allow you to change DNS responses depending on source IP or DNS query type. This allows an attacker to configure a malicious nameserver to do things like selectively re-route inbound email coming from specified source IP ranges (via modified MX records), set extremely long TTLs to keep poisoned records cached, and more.
 
+### <a id="ref-network-8"></a><a id="mdns" name="mdns"></a>Multicast DNS
 
-
-#### Multicast DNS <a name="mdns"></a>
 * **101**
     * [Multicast DNS - Wikipedia](https://en.wikipedia.org/wiki/Multicast_DNS)
 * **Educational**
@@ -334,9 +306,10 @@
     * **Articles/Blogposts/Writeups**
        * [Name (mDNS) Poisoning Attacks Inside The LAN(2008)](https://www.gnucitizen.org/blog/name-mdns-poisoning-attacks-inside-the-lan/)
 
-
 ---------------------
-### <a name="hnap"></a>HNAP
+
+### <a id="ref-network-9"></a><a id="grpc" name="grpc"></a>gRPC
+
 * **101**
     * [gRPC and Protocol Buffers: an Alternative to REST APIs and JSON - Andrew Connell](http://www.andrewconnell.com/blog/grpc-and-protocol-buffers-an-alternative-to-rest-apis-and-json)
     * [Awesome gRPC](https://github.com/grpc-ecosystem/awesome-grpc)
@@ -346,16 +319,10 @@
 * **Presentations/Talks/Videos**
 * **Tools**
 
-
-
-
-
-
-
-
-
 ---------------------
-### <a name="hnap"></a>HNAP
+
+### <a id="ref-network-10"></a><a id="hnap" name="hnap"></a>HNAP
+
 * **101**
 
 * **Articles/Blogposts/Writeups
@@ -369,13 +336,10 @@
 * [Home Network Administration Protocol (HNAP) Whitepaper](https://www.cisco.com/web/partners/downloads/guest/hnap_protocol_whitepaper.pdf)
 * [Hacking D-Link Routers With HNAP](https://regmedia.co.uk/2016/11/07/dlink_hnap_captcha.pdf)
 
-
-
-
-
-
 ------------
-### <a name="icmp"></a>ICMP
+
+### <a id="ref-network-11"></a><a id="icmp" name="icmp"></a>ICMP
+
 * **101**
     * [ICMP RFC - Network Sorcery](http://www.networksorcery.com/enp/protocol/icmp.htm)
     * [RFC 792 - Internet Control Message Protocol](https://tools.ietf.org/html/rfc792)
@@ -386,12 +350,10 @@
     * [BlackNurse attack PoC](https://github.com/jedisct1/blacknurse)
         * A simple PoC for the Blacknurse attack. "Blacknurse is a low bandwidth ICMP attack that is capable of doing denial of service to well known firewalls".
 
-
-
-
-
 ------------
-### <a name="ipsec"></a>IPSEC
+
+### <a id="ref-network-12"></a><a id="ipsec" name="ipsec"></a>IPSEC
+
 * **101**
     * [IPSec - Wikipedia](https://en.wikipedia.org/wiki/IPsec)
     * [IPSec RFCs - docs.oracle](https://docs.oracle.com/cd/E19253-01/816-4554/ipsec-ov-14/index.html)
@@ -406,10 +368,10 @@
     * [Cracking IKE Mission:Improbable (Part 2) ](https://www.trustwave.com/Resources/SpiderLabs-Blog/Cracking-IKE-Mission-Improbable-(Part-2)/)
     * [Cracking IKE Mission:Improbable (Part3) ](https://www.trustwave.com/Resources/SpiderLabs-Blog/Cracking-IKE-Mission-Improbable-(Part3)/)
 
-
-
 ------------
-### <a name="ipmi"></a>BMCs/IPMI/iDRAC/Similar
+
+### <a id="ref-network-13"></a><a id="ipmi" name="ipmi"></a>BMCs/IPMI/iDRAC/Similar
+
 * **101**
     * [Intelligent Platform Management Interface Documentation - Intel](https://www.intel.com/content/www/us/en/servers/ipmi/ipmi-home.html)
     * [IPMI Basics](https://www.thomas-krenn.com/en/wiki/IPMI_Basics)
@@ -435,22 +397,20 @@
 * **Tools**
     * [OpenIPMI](http://openipmi.sourceforge.net/)
 
-
-
 -------------------------------------------------------------------------------------------------------------------------------------------------
-### <a name="ipv4">IPv4 Related</a>
+
+### <a id="ref-network-14"></a><a id="ipv4" name="ipv4"></a>IPv4 Related
+
 * **101**
     * [A Brief History of the IPv4 Address Space - Enno Rey](https://insinuator.net/2019/08/a-brief-history-of-the-ipv4-address-space/)
 * **General**
 * **Articles/Blogposts/Writeups**
 * **Talks/Videos**
 
-
-
-
-
 ------------
-### <a name="ipv6">IPv6 Related</a>
+
+### <a id="ref-network-15"></a><a id="ipv6" name="ipv6"></a>IPv6 Related
+
 * **101**
     * [IPv6—101: Introduction - F5](http://securite.net.au/wp-content/uploads/2014/05/F5s-IPV6-Introduction.pdf)
     * [Introduction to IPv6 Fundamentals - Cisco](https://www.youtube.com/watch?v=PdGLmeq-6Bg)
@@ -493,16 +453,10 @@
     * [mitm6](https://github.com/fox-it/mitm6)
         * mitm6 is a pentesting tool that exploits the default configuration of Windows to take over the default DNS server. It does this by replying to DHCPv6 messages, providing victims with a link-local IPv6 address and setting the attackers host as default DNS server. As DNS server, mitm6 will selectively reply to DNS queries of the attackers choosing and redirect the victims traffic to the attacker machine instead of the legitimate server.
 
-
-
-
-
-
-
-
-
 ------------
-#### <a name="kerberos"></a>Kerberos
+
+### <a id="ref-network-16"></a><a id="kerberos" name="kerberos"></a>Kerberos
+
 * **101**
     * [Kerberos - Wikipedia](https://en.wikipedia.org/wiki/Kerberos_(protocol))
     * [Kerberos Explained - msdn.ms](https://msdn.microsoft.com/en-us/library/bb742516.aspx)
@@ -511,7 +465,9 @@
     * [Explain like I’m 5: Kerberos](http://www.roguelynn.com/words/explain-like-im-5-kerberos/)
 
 ------------
-#### <a name="ldap"></a>LDAP
+
+### <a id="ref-network-17"></a><a id="ldap" name="ldap"></a>LDAP
+
 * **101**
     * [Lightweight Directory Access Protocol - Wikipedia](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol)
     * [Basic LDAP Concepts - ldap.com](https://www.ldap.com/basic-ldap-concepts)
@@ -532,17 +488,16 @@
     * [ad-ldap-enum](https://github.com/CroweCybersecurity/ad-ldap-enum)
         * An LDAP based Active Directory user and group enumeration tool
 
-
-
 ------------
-#### <a name="modbus"></a>Modbus
+
+### <a id="ref-network-18"></a><a id="modbus" name="modbus"></a>Modbus
+
 * See 'Modbus' under 'SCADA/Heavy Machinery'
 
-
-
-
 --------------------
-#### <a name="mqtt"></a>MQTT (Message Query Transport Protocol)
+
+### <a id="ref-network-19"></a><a id="mqtt" name="mqtt"></a>MQTT (Message Query Transport Protocol)
+
 * **101**
     * [MQTT FAQ](http://mqtt.org/faq)
     * [MQTT Official Documentation](http://mqtt.org/documentation)
@@ -602,16 +557,10 @@
         * [Enteletaor](https://github.com/cr0hn/enteletaor)
             * Message Queue & Broker Injection tool that implements attacks to Redis, RabbitMQ and ZeroMQ.
 
-
-
-
-
-
-
-
-
 ------------
-#### <a name="netbios"></a>Netbios/Link-Local Multicast Name Resolution (LLMNR)
+
+### <a id="ref-network-20"></a><a id="netbios" name="netbios"></a>Netbios/Link-Local Multicast Name Resolution (LLMNR)
+
 * **101**
     * [NetBIOS - Wikipedia](https://en.wikipedia.org/wiki/NetBIOS)
     * [NetBIOS - rhyshaden.com](http://www.rhyshaden.com/netbios.htm)
@@ -628,14 +577,10 @@
     * [Responder](https://github.com/lgandx/Responder)
         * Responder an LLMNR, NBT-NS and MDNS poisoner. It will answer to specific NBT-NS (NetBIOS Name Service) queries based on their name suffix (see: http://support.microsoft.com/kb/163409). By default, the tool will only answer to File Server Service request, which is for SMB. The concept behind this is to target our answers, and be stealthier on the network. This also helps to ensure that we don't break legitimate NBT-NS behavior. You can set the -r option via command line if you want to answer to the Workstation Service request name suffix.
 
-
-
-
-
-
-
 ------------
-### <a name="nfs"></a>NFS
+
+### <a id="ref-network-21"></a><a id="nfs" name="nfs"></a>NFS
+
 * **101**
     * [Network File System](https://en.wikipedia.org/wiki/Network_File_System)
     * [NFS - ArchWiki](https://wiki.archlinux.org/index.php/NFS)
@@ -655,13 +600,10 @@
     * [NfSpy](https://github.com/bonsaiviking/NfSpy)
         * NfSpy is a Python library for automating the falsification of NFS credentials when mounting an NFS share.
 
-
-
-
-
-
 ------------
-## <a name="ntlm"></a> NTLM
+
+### <a id="ref-network-22"></a><a id="ntlm" name="ntlm"></a>NTLM
+
 * **101**
     * [Microsoft NTLM - msdn](https://msdn.microsoft.com/en-us/library/windows/desktop/aa378749%28v=vs.85%29.aspx)
     * [The NTLM Authentication Protocol and Security Support Provider - davenport.sourceforge.net](http://davenport.sourceforge.net/ntlm.html)
@@ -711,11 +653,10 @@
     * [NTLM scanner](https://github.com/preempt/ntlm-scanner)
         * Checks for various NTLM vulnerabilities over SMB. The script will establish a connection to the target host(s) and send an invalid NTLM authentication. If this is accepted, the host is vulnerable to the applied NTLM vulnerability and you can execute the relevant NTLM attack.
 
-
-
-
 -----------------------------------------------------------------------------------------------------------------------------------------------
-### <a name="rpc"></a>RPC
+
+### <a id="ref-network-23"></a><a id="rpc" name="rpc"></a>RPC
+
 * **101**
 * **Articles/Blogposts/Writeups**
     * [More of using rpcclient to find usernames - carnal0wnage](http://carnal0wnage.attackresearch.com/2007/08/more-of-using-rpcclient-to-find.html)
@@ -723,9 +664,10 @@
 * **Talks/Videos**
 * **Papers**
 
-
 ------------------------------------------------------------------------------------------------------------------------------------------------
-### <a name="rtsp"></a> RTSP(Real Time Streaming Protocol)
+
+### <a id="ref-network-24"></a><a id="rtsp" name="rtsp"></a>RTSP(Real Time Streaming Protocol)
+
 * **101**
     * [Real Time Streaming Protocol - Wikipedia](https://en.wikipedia.org/wiki/Real_Time_Streaming_Protocol)
     * [RFC2326: Real Time Streaming Protocol (RTSP) ](https://tools.ietf.org/html/rfc2326)
@@ -737,11 +679,10 @@
     * [rtsp-url-brute.nse](https://nmap.org/nsedoc/scripts/rtsp-url-brute.html)
         *  Attempts to enumerate RTSP media URLS by testing for common paths on devices such as surveillance IP cameras. The script attempts to discover valid RTSP URLs by sending a DESCRIBE request for each URL in the dictionary. It then parses the response, based on which it determines whether the URL is valid or not.
 
-
-
-
 ------------
-#### <a name="sip"></a>SIP/VOIP:
+
+### <a id="ref-network-25"></a><a id="sip" name="sip"></a>SIP/VOIP:
+
 * **101** 
     * [A Hitchhiker's Guide to the Session Initiation Protocol (SIP)](https://tools.ietf.org/html/rfc5411)
     * [Session Initiation Protocol - Wikipedia](https://en.wikipedia.org/wiki/Session_Initiation_Protocol)
@@ -757,13 +698,10 @@
     * [Mr.SIP](https://github.com/meliht/mr.sip)
         * Mr.SIP is a tool developed to audit and simulate SIP-based attacks. Originally it was developed to be used in academic work to help developing novel SIP-based DDoS attacks and defense approaches and then as an idea to convert it to a fully functional SIP-based penetration testing tool, it has been redeveloped into the current version.
 
-
-
-
-
-
 ------------
-#### <a name="smb"></a>SMB
+
+### <a id="ref-network-26"></a><a id="smb" name="smb"></a>SMB
+
 * **101**
     * [Server Message Block - Wikipedia](https://en.wikipedia.org/wiki/Server_Message_Block)
     * [Microsoft SMB Protocol and CIFS Protocol Overview](https://msdn.microsoft.com/en-us/library/windows/desktop/aa365233(v=vs.85).aspx)
@@ -833,12 +771,10 @@
     * [nullinux](https://github.com/m8r0wn/nullinux)
         * nullinux is an internal penetration testing tool for Linux that can be used to enumerate OS information, domain information, shares, directories, and users through SMB. If no username and password are provided, nullinux will attempt to connect to the target using an SMB null session. Unlike many of the enumeration tools out there already, nullinux can enumerate multiple targets at once and when finished, creates a users.txt file of all users found on the host(s). This file is formatted for direct implementation and further exploitation.This script uses Python 2.7 and the smbclient package, run the setup.sh script to get started.
 
-
-
-
-
 ------------
-#### <a name="smtp"></a>SMTP
+
+### <a id="ref-network-27"></a><a id="smtp" name="smtp"></a>SMTP
+
 * **101**
     * [RFC 821 - SIMPLE MAIL TRANSFER PROTOCOL](https://tools.ietf.org/html/rfc821)
     * [RFC 5321 - Simple Mail Transfer Protocol](https://tools.ietf.org/html/rfc5321)
@@ -852,10 +788,10 @@
     * [Papercut](https://github.com/changemakerstudios/papercut)
         * Simple Desktop SMTP Server
 
-
-
 ------------
-#### <a name="snmp"></a>SNMP:
+
+### <a id="ref-network-28"></a><a id="snmp" name="snmp"></a>SNMP:
+
 * **101**
     * [Simple Network Management Protocol - Wikipedia](https://en.wikipedia.org/wiki/Simple_Network_Management_Protocol)
 * **General/Articles/Writeups**
@@ -873,11 +809,10 @@
     * [SNMPwn](https://github.com/hatlord/snmpwn)
         * SNMPwn is an SNMPv3 user enumerator and attack tool. It is a legitimate security tool designed to be used by security professionals and penetration testers against hosts you have permission to test. It takes advantage of the fact that SNMPv3 systems will respond with "Unknown user name" when an SNMP user does not exist, allowing us to cycle through large lists of users to find the ones that do.
 
-
-
-
 ------------
-#### <a name="sql"></a>SQL:
+
+### <a id="ref-network-29"></a><a id="sql" name="sql"></a>SQL:
+
 * See 'SQL' in the Web Section.
 * **General/Articles/Writeups**
     * [Using Metasploit to Find Vulnerable MSSQL Systems](https://www.offensive-security.com/metasploit-unleashed/hunting-mssql/)
@@ -892,9 +827,10 @@
     * [DbDat](https://github.com/foospidy/DbDat)
         * DbDat performs numerous checks on a database to evaluate security. The categories of checks performed are configuration, privileges, users, and information. Checks are performed by running queries or reading database configuration files. The goal of this tool is to highlight issues that need immediate attention and identify configuration settings that should be reviewed for appropriateness. This tool is not for identifying SQL Injection vulnerabilities in an application, there are good tools available for that already (e.g. https://github.com/sqlmapproject). Also, this tool does not attempt to determine what CVEs may impact the version of the target database (but may do so in the future - maybe). Rather, this tool can help you better understand the potential impact of a successful SQL Injection attack due to weak configuration or access controls. A majority of the checks are from the CIS (https://cisecurity.org) Security Benchmarks for databases, so thanks to the CIS! The benchmark documents can be found here: https://benchmarks.cisecurity.org/downloads/browse/index.cfm?category=benchmarks.servers.database
 
-
 ------------
-#### <a name="ssh"></a>SSH: 
+
+### <a id="ref-network-30"></a><a id="ssh" name="ssh"></a>SSH:
+
 * **101**
     * [The Secure Shell (SSH) Transport Layer Protocol](https://tools.ietf.org/html/rfc4253)
     * [OpenSSH Specs](https://www.openssh.com/specs.html)
@@ -907,12 +843,10 @@
     * [ssh-audit](https://github.com/arthepsy/ssh-audit)
         * SSH server auditing (banner, key exchange, encryption, mac, compression, compatibility, security, etc)
 
-
-
-
-
 --------------
-#### <a name="ssl"></a>SSL/TLS
+
+### <a id="ref-network-31"></a><a id="ssl" name="ssl"></a>SSL/TLS
+
 * **101**
     * [RFC 5246 The Transport Layer Security (TLS) Protocol Version 1.2](https://tools.ietf.org/html/rfc5246)
     * [Transport Layer Security - Wikipedia](https://en.wikipedia.org/wiki/Transport_Layer_Security)
@@ -965,29 +899,18 @@
     * [JA3Transport](https://github.com/CUCyber/ja3transport)
         * A Go library that makes it easy to mock JA3 signatures.
 
-
-
-
-
-
-
-
-
-
-
-
-
 ------------
-#### <a name="stp"></a>STP
+
+### <a id="ref-network-32"></a><a id="stp" name="stp"></a>STP
+
 * **101**
     * [Spanning Tree Protocol - Wikipedia](https://en.wikipedia.org/wiki/Spanning_Tree_Protocol)
     * [Spanning Tree Protocol (STP) Introduction](http://www.dummies.com/programming/networking/cisco/spanning-tree-protocol-stp-introduction/)
 * **General/Articles/Writeups**
     * [STP MiTM Attack and L2 Mitigation Techniques on the Cisco Catalyst 6500 ](http://www.ndm.net/ips/pdf/cisco/Catalyst-6500/white_paper_c11_605972.pdf)
 
+### <a id="ref-network-33"></a><a id="tftp" name="tftp"></a>TFTP(Trivial File Transfer Protocol)
 
-
-### <a name="tftp"></a> TFTP(Trivial File Transfer Protocol)
 * **101**
     * [RFC1350: THE TFTP PROTOCOL (REVISION 2)](https://tools.ietf.org/html/rfc1350)
 * **Articles/Blogposts/Writeups**
@@ -995,14 +918,18 @@
 * **Tools**
 
 ------------
-#### <a name="telnet"></a>Telnet 
+
+### <a id="ref-network-34"></a><a id="telnet" name="telnet"></a>Telnet
+
 * **101**
 * **General/Articles/Writeups**
     * [Shellshock and the Telnet USER Variable](https://digi.ninja/blog/telnet_shellshock.php)
         * `telnet 10.1.1.1 -l "() { :;}; /usr/bin/id"`
 
 ------------
-### <a name="tr69">TR-069</a>
+
+### <a id="ref-network-35"></a><a id="tr69" name="tr69"></a>TR-069
+
 * **101**
     * [TR-069 - Wikipedia](https://en.wikipedia.org/wiki/TR-069)
 * **General/Articles/Writeups**
@@ -1011,9 +938,10 @@
     * [I Hunt TR-069 Admins - Pwning ISPs Like a Boss - Defcon 22](https://media.defcon.org/DEF%20CON%2022/DEF%20CON%2022%20video%20and%20slides/DEF%20CON%2022%20Hacking%20Conference%20Presentation%20By%20Shahar%20Tal%20-%20I%20Hunt%20TR%20-%20069%20Admins%20-%20Pwning%20ISPs%20Like%20a%20Boss%20-%20Video%20and%20Slides.m4v)
     * [Brief Survey of CWMP Security](http://blog.3slabs.com/2012/12/a-brief-survey-of-cwmp-security.html)
 
-
 ------------
-### <a name="upnp">UPnP</a>
+
+### <a id="ref-network-36"></a><a id="upnp" name="upnp"></a>UPnP
+
 * **101**
     * [Universal Plug and Play (UPnP) Internet Gateway Device - Port Control Protocol Interworking Function (IGD-PCP IWF)](https://tools.ietf.org/html/rfc6970)
     * [UPnP™ Device Architecture 1.1 - upnp.org]
@@ -1031,25 +959,20 @@
     * [miranda-upnp](https://github.com/0x90/miranda-upnp)
     * [UPnP Pentest Toolkit](https://github.com/nccgroup/UPnP-Pentest-Toolkit)
 
-
-
-
-
 -----------------------
-### <a name="webdav"></a> WebDAV
+
+### <a id="ref-network-37"></a><a id="webdav" name="webdav"></a>WebDAV
+
 * **101**
 * **General/Articles/Writeups**
 * **Tools**
     * [WsgiDAV](https://github.com/mar10/wsgidav)
         * WsgiDAV is a generic WebDAV server written in Python and based on WSGI.
 
-
-
-
-
-
 ------------
-### <a name="pac"></a>PAC/WPAD
+
+### <a id="ref-network-38"></a><a id="pac" name="pac"></a>PAC/WPAD
+
 * **101/Educational**
      * [IETF: Web Proxy Auto-Discovery Protocol](https://tools.ietf.org/html/draft-ietf-wrec-wpad-01)
     * [Web Proxy Auto-Discovery Protocol - Wikipedia](https://en.wikipedia.org/wiki/Web_Proxy_Auto-Discovery_Protocol)
@@ -1076,11 +999,10 @@
         * [PAC HTTPS Leak Demos](https://github.com/ctxis/pac-leak-demo)
             * This is the code for the demos from our DEF CON 24 talk, [Toxic Proxies - Bypassing HTTPS and VPNs to Pwn Your Online Identity](https://defcon.org/html/defcon-24/dc-24-speakers.html#Chapman) The demos use the [PAC HTTPS leak](http://www.contextis.com/resources/blog/leaking-https-urls-20-year-old-vulnerability/) to steal data and do various fun things. Our demos worked in Chrome on Windows with default settings, until the issue was fixed in Chrome 52. You can use Chrome 52+ to try out these demos if you launch it with the --unsafe-pac-url flag.
 
-
-
-
 -----------------------
-### <a name="wmi"></a> Windows Management Instrumentation(WMI)
+
+### <a id="ref-network-39"></a><a id="wmi" name="wmi"></a>Windows Management Instrumentation(WMI)
+
 * **101**
     * [Windows Management Instrumentation - Wikipedia](https://en.wikipedia.org/wiki/Windows_Management_Instrumentation)
     * [Windows Management Instrumentation - docs.ms](https://docs.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page)
@@ -1136,49 +1058,20 @@
     * [WMI_Backdoor](https://github.com/mattifestation/WMI_Backdoor)
         * A PoC WMI backdoor presented at Black Hat 2015
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
-## <a name="------------
-### <a name="pivot"></a>Pivoting
+
+## <a id="ref-network-40"></a><a id="attacks" name="attacks"></a>Attacks & Techniques
+
+### <a id="ref-network-41"></a><a id="pivot" name="pivot"></a>Pivoting
+
 * Look at the Pivoting section in Post Exploitation/Privilege Escalation
 
-
 ---------------------------
-### <a name="vendor"></a> Vendor Specific Stuff
+
+### <a id="ref-network-42"></a><a id="vendor" name="vendor"></a>Vendor Specific Stuff
+
 * **Non-Specific**
     * [Vendor/Ethernet/Bluetooth MAC Address Lookup and Search - coffer.com](http://www.coffer.com/mac_find/)
     * [IP Cameras Default Passwords Directory](https://ipvm.com/reports/ip-cameras-default-passwords-directory)
@@ -1202,8 +1095,6 @@
     * [Domi-Owned](https://github.com/coldfusion39/domi-owned)
         * Domi-Owned is a tool used for compromising IBM/Lotus Domino servers. Tested on IBM/Lotus Domino 8.5.2, 8.5.3, 9.0.0, and 9.0.1 running on Windows and Linux.
 
-
-
 * **Distributed Systems**
     * [Garfield](https://github.com/tunnelshade/garfield)
         * Garfield is and open source framework for scanning and exploiting Distributed Systems. The framework currently being in it's alpha stage and is undergoing rapid development.
@@ -1213,9 +1104,10 @@
 
 ></a>Attacks
 
-
 ------------
-### <a name="attackw">Attacking Windows Networks</a>
+
+### <a id="ref-network-43"></a><a id="attackw" name="attackw"></a>Attacking Windows Networks
+
 * **General**
     * Also check out the Privilege Escalation/Post-Exploitation Document as well
     * [Introducing PowerShell into your Arsenal with PS>Attack - Jared Haight](http://www.irongeek.com/i.php?page=videos/derbycon6/119-introducing-powershell-into-your-arsenal-with-psattack-jared-haight)
@@ -1319,12 +1211,10 @@
         * [SharePwn](https://github.com/0rigen/SharePwn)
             * A tool for auditing SharePoint security settings and identifying common security holes.
 
-
-
-
-
 ------------------------------------------------------------------------------------------------------------------------------------
-#### <a name="bitsquat"></a>BitSquatting:
+
+### <a id="ref-network-44"></a><a id="bitsquat" name="bitsquat"></a>BitSquatting:
+
 * **General**
     * [DEFCON 19: Bit-squatting: DNS Hijacking Without Exploitation (w speaker)](https://www.youtube.com/watch?v=aT7mnSstKGs)
         * [Bitsquatting - DNS Hijacking without Exploitation - Artem Dinaburg](https://media.blackhat.com/bh-us-11/Dinaburg/BH_US_11_Dinaburg_Bitsquatting_WP.pdf)
@@ -1336,9 +1226,10 @@
     * [digbit](https://github.com/mnmnc/digbit/blob/master/README.md)
         * Automatic domain generation for BitSquatting
 
-
 --------------------------------------------------------------------------------------------------------------------------------------------------
-### <a name="xaps"></a> Cross-Application/Cross Protocol Scripting
+
+### <a id="ref-network-45"></a><a id="xaps" name="xaps"></a>Cross-Application/Cross Protocol Scripting
+
 * **101**
     * [Cross-application scripting - Wikipedia](https://en.wikipedia.org/wiki/Cross-application_scripting)
 * **Articles/Blogposts/Writeups**
@@ -1350,9 +1241,10 @@
     * [The HTML Form Protocol Attack - Jochen Topf](https://www.jochentopf.com/hfpa/hfpa.pdf)
         * This paper describes how some HTML browsers can be tricked through the use of HTML forms into sending more or less arbitrary data to any TCP port. This can be used to send commands to servers using ASCII based protocols like SMTP, NNTP, POP3, IMAP, IRC, and others. By sending HTML email to unsuspecting users or using a trojan HTML page, an attacker might be able to send mail or post Usenet News through servers normally not accessible to him. In special cases an attacker might be able to do other harm, e.g. deleting mail from a POP3 mailbox.
 
-
 ------------
-### <a name="ddos"></a>D/DOS
+
+### <a id="ref-network-46"></a><a id="ddos" name="ddos"></a>D/DOS
+
 * **101**
     * [Denial-of-service attack - Wikipedia](https://en.wikipedia.org/wiki/Denial-of-service_attack)
 * **General/Articles/Writeups/Talks**
@@ -1367,14 +1259,10 @@
     * [t50 - the fastest packet injector.](https://github.com/fredericopissarra/t50)
         * T50 was designed to perform -Stress Testing-  on a variety of infra-structure network devices (Version 2.45), using widely implemented protocols, and after some requests it was was re-designed to extend the tests (as of Version 5.3), covering some regular protocols (ICMP, TCP and UDP), some infra-structure specific protocols (GRE, IPSec and RSVP), and some routing protocols (RIP, EIGRP and OSPF).
 
-
-
-
-
-
-
 ------------
-### <a name="evasion">IDS/IPS Evasion</a>
+
+### <a id="ref-network-47"></a><a id="evasion" name="evasion"></a>IDS/IPS Evasion
+
 * **101**
     * [Intrusion Detection System](https://en.wikipedia.org/wiki/Intrusion_detection_system)
 * **General/Articles/Writeups/Talks**
@@ -1404,20 +1292,10 @@
     * [Fireaway](https://github.com/tcstool/Fireaway)
         * Fireaway is a tool for auditing, bypassing, and exfiltrating data against layer 7/AppID inspection rules on next generation firewalls, as well as other deep packet inspection defense mechanisms, such as data loss prevention (DLP) and application aware proxies. These tactics are based on the principle of having to allow connections to establish through the NGFW in order to see layer 7 data to filter, as well as spoofing applications to hide communication channels inside the firewall logs as normal user traffic, such as Internet surfing. In the case of bypassing data loss prevention tools, Fireaway sends data in small "chunks", which do not match regular expression triggers and other DLP rules, as well as embedding data in spoofed HTTP headers of legitimate applications which most data loss prevention technologies are not designed to inspect. The tool also has had success defeating anomaly detection and heursitics engines through its ability to spoof application headers and hide data inside them.
 
-
-
-
-
-
-
-
-
-
-
-
-
 ------------------------------------------------------------------------------------------------------------------
-### <a name="ipobf"></a>IP Obfuscation
+
+### <a id="ref-network-48"></a><a id="ipobf" name="ipobf"></a>IP Obfuscation
+
 * **Tools**
     * [IPFuscator](https://github.com/vysec/IPFuscator)
         * IPFuscation is a technique that allows for IP addresses to be represented in hexadecimal or decimal instead of the decimal encoding we are used to. IPFuscator allows us to easily convert to these alternative formats that are interpreted in the same way.
@@ -1427,15 +1305,16 @@
     * [IP Obfuscator](https://stuff.soumikghosh.com/ipobfuscator/)
         * Simple site to obfuscate IPs
 
-
 ------------
-### <a name="ipspoofing"></a>IP Spoofing
+
+### <a id="ref-network-49"></a><a id="ipspoofing" name="ipspoofing"></a>IP Spoofing
+
 * [State of IP Spoofing](https://spoofer.caida.org/summary.php)
 
-
-
 -----------------------
-### <a name="mitm"></a>MitM Tools
+
+### <a id="ref-network-50"></a><a id="mitm" name="mitm"></a>MitM Tools
+
 * **General/Suites of tools**
     * [Dsniff](http://www.monkey.org/~dugsong/dsniff/)
         * dsniff is a collection of tools for network auditing and penetration testing. dsniff, filesnarf, mailsnarf, msgsnarf, urlsnarf, and webspy passively monitor a network for interesting data (passwords, e-mail, files, etc.). arpspoof, dnsspoof, and macof facilitate the interception of network traffic normally unavailable to an attacker (e.g, due to layer-2 switching). sshmitm and webmitm implement active monkey-in-the-middle attacks against redirected SSH and HTTPS sessions by exploiting weak bindings in ad-hoc PKI. 
@@ -1522,27 +1401,10 @@
         - White paper: http://www.contextis.com/documents/161/CTX_WSUSpect_White_Paper.pdf
         - Slides: http://www.contextis.com/documents/162/WSUSpect_Presentation.pdf
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ------------
-#### <a name="host"></a>Network Host Discovery/Service Discovery:
+
+### <a id="ref-network-51"></a><a id="host" name="host"></a>Network Host Discovery/Service Discovery:
+
 * **Educational/Informational**
     * **Articles/Blogposts/Writeups**
         * [Port scanning without an IP address - DiabloHorn](https://diablohorn.com/2017/10/26/port-scanning-without-an-ip-address/)
@@ -1715,14 +1577,16 @@
         * metasploitHelper (msfHelper) communicates with Metasploit via msrpc. It uses both port and web related exploits from Metasploit. You can point msfHelper at an IP address/Nmap XML file/File containing list of Ip addresses. First, it performs a Nmap scan of the target host(s) and then attempt to find compatible and possible Metasploit modules based on 1) nmap service banner and 2) service name and run them against the targets.
         * [Slides](https://docs.google.com/presentation/d/1No9K1OsuYy5mDP0FmRzb2fNWeuyyq2R41N0p7qu8r_0/edit#slide=id.g20261039dc_2_48)
 
-
 ------------
-### <a name="pivot"></a>Pivoting
+
+### <a id="ref-network-52"></a>Pivoting
+
 * Look at the Pivoting section in Post Exploitation/Privilege Escalation
 
-
 ---------------------------
-### <a name="vendor"></a> Vendor Specific Stuff
+
+### <a id="ref-network-53"></a>Vendor Specific Stuff
+
 * **Non-Specific**
     * [Vendor/Ethernet/Bluetooth MAC Address Lookup and Search - coffer.com](http://www.coffer.com/mac_find/)
     * [IP Cameras Default Passwords Directory](https://ipvm.com/reports/ip-cameras-default-passwords-directory)
@@ -1736,8 +1600,6 @@
     * [Domi-Owned](https://github.com/coldfusion39/domi-owned)
         * Domi-Owned is a tool used for compromising IBM/Lotus Domino servers. Tested on IBM/Lotus Domino 8.5.2, 8.5.3, 9.0.0, and 9.0.1 running on Windows and Linux.
 
-
-
 * **Distributed Systems**
     * [Garfield](https://github.com/tunnelshade/garfield)
         * Garfield is and open source framework for scanning and exploiting Distributed Systems. The framework currently being in it's alpha stage and is undergoing rapid development.
@@ -1745,18 +1607,16 @@
     * IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
     http://www.pentest-standard.org/index.php/Intelligence_Gathering
 
-
-
-
-
-
 ------------------------------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------------------------------
-## <a name="tech"></a>Technologies
+
+## <a id="ref-network-54"></a><a id="tech" name="tech"></a>Technologies
 
 ------------------------------------------------------------------------------------------------------------------------------------
-### <a name="8021x"></a> 802.1x & NAC(Netork Access Control)
+
+### <a id="ref-network-55"></a><a id="8021x" name="8021x"></a>802.1x & NAC(Netork Access Control)
+
 * **101**
     * [Network Access Control - Wikipedia](https://en.wikipedia.org/wiki/Network_Access_Control)
     * [IEEE 802.1x - Wikipedia](https://en.wikipedia.org/wiki/IEEE_802.1X)
@@ -1781,10 +1641,10 @@
     * [PacketFence](https://packetfence.org/)
         * PacketFence is a fully supported, trusted, Free and Open Source network access control (NAC) solution. Boasting an impressive feature set including a captive-portal for registration and remediation, centralized wired, wireless and VPN management, industry-leading BYOD capabilities, 802.1X and RBAC support, integrated network anomaly detection with layer-2 isolation of problematic devices; PacketFence can be used to effectively secure small to very large heterogeneous networks.
 
-
-
 ------------
-### <a name="captive-portal"></a>Captive Portals
+
+### <a id="ref-network-56"></a><a id="captive-portal" name="captive-portal"></a>Captive Portals
+
 * **101**
     * [IETF RFC 7710: Captive-Portal Identification Using DHCP or Router Advertisements (RAs)](https://tools.ietf.org/html/rfc7710)
 * **Educational**
@@ -1797,16 +1657,17 @@
     * [cpscam](https://github.com/codewatchorg/cpscam)
         * Bypass captive portals by impersonating inactive users
 
-
-
 ---------------------
-### <a name="fax"></a> Fax
+
+### <a id="ref-network-57"></a><a id="fax" name="fax"></a>Fax
+
 * [What the Fax?! - Eyal Itkin, Yaniv Balmas - DEF CON 26](https://www.youtube.com/watch?v=qLCE8spVX9Q)
     * Join us as we take you through the strange world of embedded operating systems, 30-year-old protocols, museum grade compression algorithms, weird extensions and undebuggable environments. See for yourself first-hand as we give a live demonstration of the first ever full fax exploitation, leading to complete control over the entire device as well as the network, using nothing but a standard telephone line. 
 
-
 ---------------------
-### <a name="hadoop"></a>Hadoop
+
+### <a id="ref-network-58"></a><a id="hadoop" name="hadoop"></a>Hadoop
+
 * **101**
     * [Introduction to Apache Hadoop - Melissa Anderson](https://www.digitalocean.com/community/tutorials/an-introduction-to-hadoop)
     * [What is Hadoop? Introduction to Big Data & Hadoop - Shubham Sinha](https://www.edureka.co/blog/what-is-hadoop/)
@@ -1831,26 +1692,20 @@
     * [Hadoop Attack Library](https://github.com/wavestone-cdt/hadoop-attack-library)
         * A collection of pentest tools and resources targeting Hadoop environments
 
-
-
-
-
 ------------------------------------------------------------------------------------------------------------------------------------
-### <a name="memcache"></a> Memcache
+
+### <a id="ref-network-59"></a><a id="memcache" name="memcache"></a>Memcache
+
 * **101**
 * **Articles/Blogposts/Writeups**
     * [Memcache Exploit - Rohit Salecha](http://niiconsulting.com/checkmate/2013/05/memcache-exploit/)
 * **Presentations/Talks/Videos**
 * **Tools**
 
-
-
-
-
-
-
 ------------------------------------------------------------------------------------------------------------------------------------
-### <a name="nat"></a> NAT(Netork Address Translation)
+
+### <a id="ref-network-60"></a><a id="nat" name="nat"></a>NAT(Netork Address Translation)
+
 * **101**
 * **Articles/Blogposts/Writeups**
     * [A Tale From Defcon and the Fun of BNAT](https://blog.rapid7.com/2011/08/26/a-tale-from-defcon-and-the-fun-of-bnat/)
@@ -1862,14 +1717,10 @@
     * [bnat](https://github.com/claudijd/bnat)
         * "Broken NAT" - A suite of tools focused on detecting and interacting with publicly available BNAT scenerios
 
-
-
-
-
-
-
 --------------
-### <a name="printers"></a> Printers
+
+### <a id="ref-network-61"></a><a id="printers" name="printers"></a>Printers
+
 * **101**
     * [Hacking Printers Wiki](http://hacking-printers.net/wiki/index.php/Main_Page)
 * **Articles/Blogposts/Writeups**
@@ -1887,11 +1738,10 @@
     * [HPwn - HP printer security research code](https://github.com/foxglovesec/HPwn)
         * This repository contains varios scripts and projects referenced in FoxGlove security's HP printer blogpost.
 
-
-
-
 ------------
-### <a name="proxy"></a>Proxies
+
+### <a id="ref-network-62"></a><a id="proxy" name="proxy"></a>Proxies
+
 * **Tools**
     * **General(Not designed for attackers)**
         * [Squid Proxy](http://www.squid-cache.org/)
@@ -1930,17 +1780,10 @@
         * [SSLStrip](http://www.thoughtcrime.org/software/sslstrip/)
             * This tool provides a demonstration of the HTTPS stripping attacks that I presented at Black Hat DC 2009. It will transparently hijack HTTP traffic on a network, watch for HTTPS links and redirects, then map those links into either look-alike HTTP links or homograph-similar HTTPS links. It also supports modes for supplying a favicon which looks like a lock icon, selective logging, and session denial.
 
-
-
-
-
-
-
-
-
-
 -----------------------------------------------------------------------------------------------------------------------------------------------
-### <a name="pxe"></a>PXE
+
+### <a id="ref-network-63"></a><a id="pxe" name="pxe"></a>PXE
+
 * **101** 
     * [Preboot Execution Environment - Wikipedia](https://en.wikipedia.org/wiki/Preboot_Execution_Environment)
     * [NetworkBoot.org](https://networkboot.org/)
@@ -1957,12 +1800,10 @@
     * [BCD](https://github.com/mattifestation/BCD)
         * BCD is a module to interact with boot configuration data (BCD) either locally or remotely using the ROOT/WMI:Bcd* WMI classes. The functionality of the functions in this module mirror that of bcdedit.exe.
 
-
-
-
-
 -------------------------------------------------------------------------------------------------------------------------------------------------
-### <a name="redis"></a>Redis
+
+### <a id="ref-network-64"></a><a id="redis" name="redis"></a>Redis
+
 * **101** 
     * [redis - Wikipedia](https://en.wikipedia.org/wiki/Redis)
     * [Introduction to redis - redis.io](https://redis.io/topics/introduction)
@@ -1975,11 +1816,10 @@
     * [redis-dump](http://delanotes.com/redis-dump/)
     * [Script attempted to create global variable - Stackoverflow](https://stackoverflow.com/questions/19997647/script-attempted-to-create-global-variable)
 
-
-
-
 -------------
-### <a name="sdn"></a>Software Defined Networking (SDN)
+
+### <a id="ref-network-65"></a><a id="sdn" name="sdn"></a>Software Defined Networking (SDN)
+
 * **101** 
 * **Articles/Presentations/Talks/Writeups**
     * [Finding the Low-Hanging Route](https://labs.mwrinfosecurity.com/blog/routing-101/)
@@ -1987,9 +1827,10 @@
     * [DELTA: SDN SECURITY EVALUATION FRAMEWORK](https://github.com/OpenNetworkingFoundation/DELTA)
         * DELTA is a penetration testing framework that regenerates known attack scenarios for diverse test cases. This framework also provides the capability of discovering unknown security problems in SDN by employing a fuzzing technique.
 
-
 -------------
-### <a name="switches"></a>Switches(Network Hardware)
+
+### <a id="ref-network-66"></a><a id="switches" name="switches"></a>Switches(Network Hardware)
+
 * **101** 
 * **Articles/Presentations/Talks/Writeups**
     * [Switches Get Stitches (or: Switches Get DNA Helicased) - Dale Peterson](https://dale-peterson.com/2015/06/15/switches-get-stitches-or-switches-get-dna-helicased/)
@@ -2000,12 +1841,10 @@
         * This talk will introduce you to Industrial Ethernet Switches and their vulnerabilities. These are switches used in industrial environments, like substations, factories, refineries, ports, or other homes of industrial automation. In other words: DCS, PCS, ICS & SCADA switches. The researchers focus on attacking the management plane of these switches, because we all know that industrial system protocols lack authentication or cryptographic integrity. Thus, compromising any switch allows the creation of malicious firmwares for further MITM manipulation of a live process. Such MITM manipulation can lead to the plant or process shutting down (think: nuclear reactor SCRAM) or getting into a unknown and hazardous state (think: damaging a blast furnace at a steel mill). Not only will vulnerabilities be disclosed for the first time (exclusively at Black Hat), but the methods of finding those vulnerabilities will be shared. All vulnerabilities disclosed will be in the default configuration state of the devices. While these vulnerabilities have been responsibly disclosed to the vendors, SCADA/ICS patching in live environments tends to take 1-3 years. Because of this patching lag, the researchers will also be providing live mitigations that owner/operators can use immediately to protect themselves. At least four vendors switches will be examined: Siemens, GE, Garrettcom, and Opengear.
 * **Tools**
 
-
-
-
-
 ------------
-#### <a name="vlan"></a>VLANs
+
+### <a id="ref-network-67"></a><a id="vlan" name="vlan"></a>VLANs
+
 * **101**
     * [Virtual LAN](https://en.wikipedia.org/wiki/Virtual_LAN)
     * [Virtual Local Area Networks](https://www.cse.wustl.edu/~jain/cis788-97/ftp/virtual_lans/index.html)

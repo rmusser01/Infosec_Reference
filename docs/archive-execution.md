@@ -160,3 +160,19 @@ All three source URLs were submitted once and confirmed by polling their existin
 Fresh verification rehashed the retained objects, reran strict primary WARC integrity/content checks and validated their recorded offline QA results. Both articles pass with no missing selected figures. Temporary WACZ bundles, replay archives and proxy state are absent from this batch. Navigation remains 102 pages / 29,165 links / zero errors with unchanged warnings; `git diff --check` passes. The source-code test suite and synthetic Docker cases were not repeated because no implementation changed; the prior 108/108 test result remains historical. No independent code review was needed for this execution-only checkpoint.
 
 Current inventory accounting: three complete local captures, seven partial, five deferred and 21,723 not attempted; zero durably preserved. Eleven HTML response observations route to web capture, with 19,046 type-confirmation jobs and unchanged non-text queues. Ten Wayback snapshots are confirmed; four older DNS failures remain deferred. No media acquisition, full collection run, Git push, hosted CI execution or durable-backup qualification occurred.
+
+## Next local batch — 2026-10-25, conference-video landing pages
+
+Batch `85b00c7e-2a41-4bfa-8df8-ca7ceb7c12b1` processed the next three unattempted webpage candidates in inventory order. All are conference-video landing pages. Each returned HTML but no identifiable article body, so all three local captures remain deferred (`contentState: needs-review`), with zero retained payload objects. About **55 KB** of receipts/provenance and summaries remains; no video, WARC/WACZ bundle, replay archive or proxy state is retained for this batch.
+
+| Original reference | Local result | Confirmed Wayback timestamp |
+|---|---|---|
+| `http://2014.video.sector.ca/video/110383258` | Deferred: no article body | `20261025234519` |
+| `http://2014.video.sector.ca/video/110388398` | Deferred: no article body | `20261025234736` |
+| `http://2015.video.sector.ca/video/144175700` | Deferred: no article body | `20261025234900` |
+
+Each URL was submitted once, then confirmed by polling its recorded Internet Archive job ID. All three snapshot links are in the reader catalog, bringing the total to thirteen. Confirmed landing-page snapshots do not establish preservation of the underlying videos. Caption/transcript/media processing remains separate future work.
+
+Verification asserts all three local outcomes remain deferred with no payload objects, and confirms temporary bundles/replay/proxy state are absent. The generated catalog matches the latest receipts; navigation remains 102 pages / 29,165 links / zero errors with unchanged warnings, and diff checks pass. Source code is unchanged, so the full test suite, synthetic Docker fixtures and source review were not repeated. No new local article archive is claimed.
+
+Current inventory accounting: three complete local captures, seven partial, eight deferred and 21,720 not attempted; zero durably preserved. Fourteen HTML observations route to web capture and 19,043 remain type-confirmation jobs, alongside unchanged non-text queues. Thirteen Wayback snapshots are confirmed; four older DNS failures remain deferred. No Git push, hosted CI execution, video download, full collection run or durable-backup qualification occurred.

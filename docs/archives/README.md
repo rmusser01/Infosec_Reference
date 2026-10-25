@@ -12,5 +12,8 @@ Only confirmed snapshots appear below; pending/failed jobs remain in `navigation
 - <http://0xmalware.blogspot.com/2013/10/cuckoo-sandbox-hardening-virtualbox.html> — [Wayback snapshot 20261025233118](<https://web.archive.org/web/20261025233118/http://0xmalware.blogspot.com/2013/10/cuckoo-sandbox-hardening-virtualbox.html>)
 - <http://0xthem.blogspot.com/2014/03/t-emporal-persistence-with-and-schtasks.html> — [Wayback snapshot 20261025233158](<https://web.archive.org/web/20261025233158/http://0xthem.blogspot.com/2014/03/t-emporal-persistence-with-and-schtasks.html>)
 - <http://2014.video.sector.ca/video/110334184> — [Wayback snapshot 20261025233421](<https://web.archive.org/web/20261025233421/http://2014.video.sector.ca/video/110334184>)
+- <http://2014.video.sector.ca/video/110383258> — [Wayback snapshot 20261025234519](<https://web.archive.org/web/20261025234519/http://2014.video.sector.ca/video/110383258>)
+- <http://2014.video.sector.ca/video/110388398> — [Wayback snapshot 20261025234736](<https://web.archive.org/web/20261025234736/http://2014.video.sector.ca/video/110388398>)
+- <http://2015.video.sector.ca/video/144175700> — [Wayback snapshot 20261025234900](<https://web.archive.org/web/20261025234900/http://2015.video.sector.ca/video/144175700>)
 - <https://danluu.com/sounds-easy/> — [Wayback snapshot 20261025215216](<https://web.archive.org/web/20261025215216/https://danluu.com/sounds-easy/>)
 - <https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Rants%26Writeups/Writeups/Lab_for_exploit_dev-basic.md> — [Wayback snapshot 20261025220110](<https://web.archive.org/web/20261025220110/https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Rants%26Writeups/Writeups/Lab_for_exploit_dev-basic.md>)

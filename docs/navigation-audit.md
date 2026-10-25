@@ -82,3 +82,12 @@ Network Attacks, Physical Security, Phishing and Wireless now have managed ToCs 
 All 34 group errors are retired: 46 occurrences / 45 keys remain across 11 pages. Twenty-nine of 51 listed topics have managed ToCs; 22 remain to review/migrate as appropriate. Actual Docsify rendered external links remain 808/62/566/302; all original legacy aliases, raw URLs and four rendered code blocks remain. Chromium covers all four pages, the corrected SDR section and deep-route reload using a fresh HTTP cache.
 
 The 63-test suite passes; final navigation check has no new/stale diagnostics, and repeated generation makes no changes. Inventories retain 21,748 unique URLs. External validation, captures and production deployment/cache behavior remain unverified.
+
+
+## Final legacy-debt group
+
+Ten pages now have managed ToCs and 166 selected subjects: privacy, both cryptography collections, Embedded, Games, Malware, Rootkits, SCADA, UX and BIOS/UEFI. The short ATT&CK collection portal routes all thirteen pre-ATT&CK categories and eleven ATT&CK categories to matching existing files; Credential Access no longer points at Command and Control. All framework/project references remain, and encoded ampersand/space routes were verified in Chromium.
+
+All 46 remaining errors are repaired. Current audit: 102 pages, zero internal errors, empty legacy baseline; warnings are 15 orphan pages and 22 repeated destinations. Thirty-nine of 53 listed topics have managed ToCs; fourteen still need rollout review, including three functional directory landings. Rendered external-link counts are unchanged on all ten migrated pages, with raw URL, alias and code preservation checks. Compiler regressions protect the two moved Embedded links and clean Malware PDF heading.
+
+The 74-test suite passes; navigation check has no diagnostics or changed paths; repeated generation is deterministic. Inventories contain 21,738 URLs (1,200 PDF, 1,458 video, 23 other non-text candidates, 19,057 unknown); ten obsolete unique GitHub navigation URLs were replaced by local paths. External availability, capture and production rendering/cache behavior remain unverified.

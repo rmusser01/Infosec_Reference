@@ -296,3 +296,68 @@ To Do:
     * STUN
     * WebDAV
 ```
+
+## Draft/CandE.md
+
+```text
+To Do:
+* Add:
+    * List of Books
+    * Educational Materials for those interested in learning about crypto
+    * Info about Monero/Zcash
+    * List of attacks
+    * List of various Algorithms
+    * Stuff
+```
+
+## Draft/Crypto_Encrypt.md
+
+```text
+To Do:
+* Add:
+    * List of Books
+    * Educational Materials for those interested in learning about crypto
+    * Info about Monero/Zcash
+    * List of attacks
+    * List of various Algorithms
+    * History of
+```
+
+## Draft/Embedded.md
+
+```text
+* **To-Do**
+	* SIMs
+	* USB
+	* Lightning
+	* Voting machines
+	* Tokens
+	* SD Cards
+```
+
+## Draft/Malware.md
+
+```text
+* Extend 
+	* maldocs section
+	* Hooking techniques
+	* Hollowing
+* Add
+	* Stuxnet
+	* Duqu
+	* Flame
+	* Itaduke
+	* Packers
+		* mew
+		* ASPROTECT
+		* UPX
+		* FSG
+		* PESpin
+```
+
+## Draft/bios_uefi.md
+
+```text
+* **To-Do**
+	* Add rowhammer related materials
+```

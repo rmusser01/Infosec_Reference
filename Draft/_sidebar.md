@@ -56,5 +56,7 @@
 - [UI/UX Design](UX.md)
 - [Web](Web.md)
 - [Wireless Networks and RF Devices](Wireless.md)
+- [Cryptography: Additional References](Crypto_Encrypt.md)
+- [SCADA/Industrial Control Systems](SCADA.md)
 
 - [Alphabetical subject index](Subject_Index.md)

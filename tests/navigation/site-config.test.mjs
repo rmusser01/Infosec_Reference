@@ -58,6 +58,16 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
       "Physical_Security",
       "Phishing",
       "Wireless",
+      "AnonOpSecPrivacy",
+      "CandE",
+      "Crypto_Encrypt",
+      "Embedded",
+      "Games",
+      "Malware",
+      "Rootkits",
+      "SCADA",
+      "UX",
+      "bios_uefi",
     ]) {
       const router = {
         getBasePath: () => "/docs/",
@@ -77,6 +87,14 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
       const body = dom.window.document.createElement("div");
       body.innerHTML = html;
       assert(body.querySelector("h1"));
+      if (path === "Embedded")
+        for (const href of [
+          "http://www.ccc.de/en/updates/2013/ccc-breaks-apple-touchid",
+          "https://www.youtube.com/watch?v=h-hohCfo4LA",
+        ])
+          assert(body.querySelector(`li a[href="${href}"]`), `Moved resource must remain clickable: ${href}`);
+      if (path === "Malware")
+        assert.equal(body.querySelector("#pdf").closest("h3").textContent, "Portable Document Format(PDF)");
       if (path === "Wireless") {
         const heading = body.querySelector("#ref-wireless-63").closest("h3");
         assert.equal(heading.textContent, "Articles/Presentations/Talks/Writeups");

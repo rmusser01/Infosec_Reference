@@ -104,7 +104,7 @@
 - **Devour The Pie(chart)**
   - URL: <https://static1.squarespace.com/static/56713bf4dc5cb41142f28d1f/t/5694d249d82d5e959757455f/1452593763812/devourThePie3.gif?format=1500w>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/UX.md:44`; references: 1.
+  - Source: `Draft/UX.md:37`; references: 1.
   - ID: `e31d2f78c6723e6f4b58`.
 - **Application**
   - URL: <https://www.exploit-db.com/apps/396bedff015be885c1719f39f4561081-badblue.tar_.gz>

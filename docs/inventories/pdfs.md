@@ -79,7 +79,7 @@
 - **HORNET: High-speed Onion Routing at the Network Layer**
   - URL: <http://arxiv.org/pdf/1507.05724v1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:139`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:242`; references: 1.
   - ID: `615f6da6ebe7deec77c6`.
 - **http://bap.ece.cmu.edu/doc/bap.pdf**
   - URL: <http://bap.ece.cmu.edu/doc/bap.pdf>
@@ -104,7 +104,7 @@
 - **VirusTotal Mining**
   - URL: <http://blog.9bplus.com/wp-content/uploads/2014/08/VirusTotal-Mining.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:296`; references: 1.
+  - Source: `Draft/Malware.md:317`; references: 1.
   - ID: `50c80eac3f3ef5cc75c9`.
 - **The Userland Exploits of Pangu 8**
   - URL: <http://blog.pangu.io/wp-content/uploads/2015/03/CanSecWest2015_Final.pdf>
@@ -149,7 +149,7 @@
 - **Introduction to Server Side Emulation - Corilian(2006)**
   - URL: <http://cellframework.sourceforge.net/uploads/Introduction%20to%20Server%20Side%20Emulation.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Games.md:64`; references: 1.
+  - Source: `Draft/Games.md:91`; references: 1.
   - ID: `5bcc6801b34b81b5cc71`.
 - **Fuzzing Object s d’ART Digging Into the New Android L Runtime Internals**
   - URL: <http://census-labs.com/media/Fuzzing_Objects_d_ART_hitbsecconf2015ams_WP.pdf>
@@ -224,7 +224,7 @@
 - **PyTrigger: A System to Trigger & Extract User-Activated Malware Behavior**
   - URL: <http://cs.gmu.edu/~astavrou/research/PyTrigger_ARES2013.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:433`; references: 2.
+  - Source: `Draft/Malware.md:462`; references: 2.
   - ID: `5a5ae53ac321608228de`.
 - **http://cs.jhu.edu/~jason/papers/eisner+filardo.datalog11-long.pdf**
   - URL: <http://cs.jhu.edu/~jason/papers/eisner+filardo.datalog11-long.pdf>
@@ -309,7 +309,7 @@
 - **Software Distribution Malware Infection Vector**
   - URL: <http://dl.packetstormsecurity.net/papers/general/Software.Distribution.Malware.Infection.Vector.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:649`; references: 1.
+  - Source: `Draft/Malware.md:706`; references: 1.
   - ID: `3d70a89295ffca8a02f4`.
 - **Linker and Libraries**
   - URL: <http://docs.oracle.com/cd/E19457-01/801-6737/801-6737.pdf>
@@ -389,7 +389,7 @@
 - **Information Security For Journalist book - Centre for Investigative Journalism**
   - URL: <http://files.gendo.nl/Books/InfoSec_for_Journalists_V1.1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:136`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:237`; references: 1.
   - ID: `d73cccdd2ea517bdb38b`.
 - **IPMI++ Security Best Practices  - Dan Farmer**
   - URL: <http://fish2.com/ipmi/bp.pdf>
@@ -419,7 +419,7 @@
 - **Outsmarting smartcards**
   - URL: <http://gerhard.dekoninggans.nl/documents/publications/dekoninggans.phd.thesis.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:460`; references: 1.
+  - Source: `Draft/Embedded.md:670`; references: 1.
   - ID: `ef246f238a0573e407e4`.
 - **The Triple A Threat: Aggressive Autonomous Agents - the grugq**
   - URL: <http://grugq.github.io/presentations/comae-blackhat-year-of-the-worm.pdf>
@@ -434,12 +434,12 @@
 - **On the Cutting Edge: Thwarting Virtual Machine Detection**
   - URL: <http://handlers.sans.org/tliston/ThwartingVMDetection_Liston_Skoudis.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:400`; references: 1.
+  - Source: `Draft/Malware.md:431`; references: 1.
   - ID: `fe73cd0537fc6d57cb8c`.
 - **Cirripede: Circumvention Infrastructure using Router Redirection with Plausible Deniability**
   - URL: <http://hatswitch.org/~nikita/papers/cirripede-ccs11.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:347`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:485`; references: 1.
   - ID: `a4d093341c4fdfcad5dd`.
 - **Understanding Windows Shellcode - Skape(2003)**
   - URL: <http://hick.org/code/skape/papers/win32-shellcode.pdf>
@@ -449,7 +449,7 @@
 - **Notes on Intel Microcode Updates**
   - URL: <http://hireme.geek.nz/Intel_x86_NSA_Microcode_Updates.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:220`; references: 1.
+  - Source: `Draft/bios_uefi.md:271`; references: 1.
   - ID: `0e4d4dacfd7839852422`.
 - **Slides**
   - URL: <http://i.blackhat.com/USA-20/Wednesday/us-20-Mackinnon-Engineering-Empathy-Adapting-Software-Engineering-Principles-And-Process-To-Security-2.pdf>
@@ -494,7 +494,7 @@
 - **Introducing Ring -3 Rootkits**
   - URL: <http://invisiblethingslab.com/resources/bh09usa/Ring%20-3%20Rootkits.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Rootkits.md:23`; references: 1.
+  - Source: `Draft/Rootkits.md:27`; references: 1.
   - ID: `0e885dda449813e8a996`.
 - **Pwning (sometimes) with style Dragons' notes on CTFs**
   - URL: <http://j00ru.vexillium.org/blog/24_03_15/dragons_ctf.pdf>
@@ -504,12 +504,12 @@
 - **Slides**
   - URL: <http://jacobtorrey.com/VMMLecture.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Rootkits.md:116`; references: 1.
+  - Source: `Draft/Rootkits.md:137`; references: 1.
   - ID: `03ddf21e60d12d0a7674`.
 - **Unblocking the Internet: Social networks foil censors**
   - URL: <http://kscope.news.cs.nyu.edu/pub/TR-2008-918.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:343`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:481`; references: 1.
   - ID: `40af6db66e45cad617c8`.
 - **http://lenx.100871.net/papers/FPGate-bluehat.pdf**
   - URL: <http://lenx.100871.net/papers/FPGate-bluehat.pdf>
@@ -609,7 +609,7 @@
 - **Deanonymisation of Clients in Bitcoin P2P Network**
   - URL: <http://orbilu.uni.lu/bitstream/10993/18679/1/Ccsfp614s-biryukovATS.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:399`; references: 2.
+  - Source: `Draft/CandE.md:456`; references: 2.
   - ID: `ca5c41149b32ca14c587`.
 - **http://os2.zemris.fer.hr/ns/malware/2010_spasojevic/diplomski_spasojevic.pdf**
   - URL: <http://os2.zemris.fer.hr/ns/malware/2010_spasojevic/diplomski_spasojevic.pdf>
@@ -639,7 +639,7 @@
 - **Why does cryptographic software fail? A case study and open problems**
   - URL: <http://pdos.csail.mit.edu/papers/cryptobugs:apsys14.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:91`; references: 2.
+  - Source: `Draft/CandE.md:84`; references: 2.
   - ID: `90f1734f805ce039657c`.
 - **Towards Optimization-Safe Systems: Analyzing the Impact of Undefined Behavior**
   - URL: <http://pdos.csail.mit.edu/~xi/papers/stack-sosp13.pdf>
@@ -654,7 +654,7 @@
 - **Security Evaluation of Intel's Active Management Technology**
   - URL: <http://people.kth.se/~maguire/DEGREE-PROJECT-REPORTS/100402-Vassilios_Ververis-with-cover.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:41`; references: 2.
+  - Source: `Draft/bios_uefi.md:61`; references: 2.
   - ID: `72e7126eaa4bc7559d23`.
 - **The "Ultimate" Anti-Debugging Reference - Peter Ferrie(2011)**
   - URL: <http://pferrie.epizy.com/papers/antidebug.pdf?i=1>
@@ -669,7 +669,7 @@
 - **Slides**
   - URL: <http://phenoelit.org/stuff/CSLI.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:326`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:462`; references: 1.
   - ID: `3701cdd200e5d40a8041`.
 - **How to Read a Book, v5.0 - Paul N. Edwards University of Michigan**
   - URL: <http://pne.people.si.umich.edu/PDF/howtoread.pdf>
@@ -679,7 +679,7 @@
 - **Case study of the miner botnet**
   - URL: <http://pnx.tf/files/2012_cycon-official_miner_plohmann_padilla.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:180`; references: 1.
+  - Source: `Draft/Malware.md:173`; references: 1.
   - ID: `a18a1db188e86585c78f`.
 - **Anti-RE A collection of Anti-Reverse Engineering Techniques**
   - URL: <http://pnx.tf/files/spring7_antire_plohmann_kannen.pdf>
@@ -699,7 +699,7 @@
 - **Reverse Engineering Intels Management Engine**
   - URL: <http://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:44`; references: 1.
+  - Source: `Draft/bios_uefi.md:64`; references: 1.
   - ID: `f819f1b395365bf0df56`.
 - **Hiding Data in Hard-Drive's Service Areas**
   - URL: <http://recover.co.il/SA-cover/SA-cover.pdf>
@@ -709,7 +709,7 @@
 - **Concepts for the Steal the Windows Rootkit (The Chameleon Project)Joanna Rutkowska2003**
   - URL: <http://repo.hackerzvoice.net/depot_madchat/vxdevl/avtech/Concepts%20for%20the%20Stealth%20Windows%20Rootkit%20%28The%20Chameleon%20Project%29.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Rootkits.md:87`; references: 1.
+  - Source: `Draft/Rootkits.md:104`; references: 1.
   - ID: `285c2d828dc8d4626f16`.
 - **SEH Overwrites Simplified v1.01**
   - URL: <http://repo.palkeo.com/hacking/bas%20niveau/SEH%20overwrite.pdf>
@@ -739,7 +739,7 @@
 - **Scientific but Not Academical Overview of Malware Anti-Debugging, Anti-Disassembly and Anti-VM Technologies**
   - URL: <http://research.dissect.pe/docs/blackhat2012-paper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:402`; references: 1.
+  - Source: `Draft/Malware.md:433`; references: 1.
   - ID: `655d5059c164ca30ea4d`.
 - **http://research.microsoft.com/en-us/um/people/akenn/coq/HLSL.pdf**
   - URL: <http://research.microsoft.com/en-us/um/people/akenn/coq/HLSL.pdf>
@@ -784,12 +784,12 @@
 - **Exploiting Game Engines for Fun and Profit**
   - URL: <http://revuln.com/files/Ferrante_Auriemma_Exploiting_Game_Engines.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Games.md:42`; references: 1.
+  - Source: `Draft/Games.md:69`; references: 1.
   - ID: `f04fa2807016007b4794`.
 - **Paper**
   - URL: <http://rfcapture.csail.mit.edu/rfcapture-paper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:802`; references: 2.
+  - Source: `Draft/AnonOpSecPrivacy.md:1019`; references: 2.
   - ID: `00b2a85db6a1ba153c8e`.
 - **Paper**
   - URL: <http://roberto.greyhats.it/pubs/ase10.pdf>
@@ -799,7 +799,7 @@
 - **http://s3.eurecom.fr/docs/usenixsec18_corteggiani.pdf**
   - URL: <http://s3.eurecom.fr/docs/usenixsec18_corteggiani.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:526`; references: 1.
+  - Source: `Draft/Embedded.md:750`; references: 1.
   - ID: `fb0302efb0c115dcdbd0`.
 - **IPv6—101: Introduction - F5**
   - URL: <http://securite.net.au/wp-content/uploads/2014/05/F5s-IPV6-Introduction.pdf>
@@ -809,7 +809,7 @@
 - **Cookieless Monster: Exploring the Ecosystem of Web-based Device Fingerprinting**
   - URL: <http://securitee.org/files/cookieless_sp2013.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:992`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:1242`; references: 1.
   - ID: `4c5d30e0a0433d3a5a80`.
 - **Slides**
   - URL: <http://security-research.dyndns.org/pub/slides/FIRST-TC-2018/FIRST-TC-2018_Tom-Ueltschi_Sysmon_PUBLIC.pdf>
@@ -854,7 +854,7 @@
 - **Speaker Recognition in Encrypted Voice Streams - Michael Backes,Goran Doychev,Markus Durmuth,Boris Kopf**
   - URL: <http://software.imdea.org/~gdoychev/publications/esorics10.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:126`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:223`; references: 1.
   - ID: `af95bf8d774047d6763f`.
 - **A Tale of Two Kernels: Towards Ending Kernel Hardening Wars with Split Kernel**
   - URL: <http://split.kernel.build/papers/ccs14.pdf>
@@ -974,7 +974,7 @@
 - **SubVirt: Implementing malware with virtual machines**
   - URL: <http://web.eecs.umich.edu/virtual/papers/king06.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:413`; references: 1.
+  - Source: `Draft/Malware.md:444`; references: 1.
   - ID: `1c835b9dfe1d502e3438`.
 - **How Complex Systems Fail - Richard I. Cook**
   - URL: <http://web.mit.edu/2.75/resources/random/How%20Complex%20Systems%20Fail.pdf>
@@ -996,10 +996,10 @@
   - Candidate type: pdf; status: unverified / pending.
   - Source: `Draft/Policy_Compliance.md:63`; references: 1.
   - ID: `ce2275fa2b0305e33b42`.
-- **SIGMA: the ‘SIGn-and-MAc’ Approach to Authenticated Diffie-Hellman  and its Use in the IKE Protocols - Hugo Krawczyk**
+- **The SIGMA Family of Key-Exchange Protocols**
   - URL: <http://webee.technion.ac.il/~hugo/sigma-pdf.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:62`; references: 4.
+  - Source: `Draft/CandE.md:232`; references: 4.
   - ID: `f4f8cdb1ab57775f1cb5`.
 - **Pdf of all WinDbg commands**
   - URL: <http://windbg.info/download/doc/pdf/WinDbg_cmds.pdf>
@@ -1104,7 +1104,7 @@
 - **Activity Recognition using Cell Phone Accelerometers - Jennifer R. Kwapisz, Gary M. Weiss, Samuel A. Moore**
   - URL: <http://www.cis.fordham.edu/wisdm/includes/files/sensorKDD-2010.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:927`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:1162`; references: 1.
   - ID: `f96a7166ae51401e603d`.
 - **http://www.cl.cam.ac.uk/~mom22/thesis.pdf**
   - URL: <http://www.cl.cam.ac.uk/~mom22/thesis.pdf>
@@ -1134,7 +1134,7 @@
 - **Anonymous’s Guide to OpSec**
   - URL: <http://www.covert.io/research-papers/security/Anonymous%20Hacking%20Group%20--%20OpNewblood-Super-Secret-Security-Handbook.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:153`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:260`; references: 1.
   - ID: `98f8ce4adcf6e0f3578b`.
 - **A Verified Information-Flow Architecture**
   - URL: <http://www.crash-safe.org/assets/verified-ifc-long-draft-2013-11-10.pdf>
@@ -1184,7 +1184,7 @@
 - **Perimeter-Crossing Buses: a New Attack Surface for Embedded Systems**
   - URL: <http://www.cs.dartmouth.edu/~sws/pubs/bgjss12.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:494`; references: 1.
+  - Source: `Draft/Embedded.md:713`; references: 1.
   - ID: `9825eb6d929afbe9f5c8`.
 - **http://www.cs.indiana.edu/l/www/classes/b621/abiall.pdf**
   - URL: <http://www.cs.indiana.edu/l/www/classes/b621/abiall.pdf>
@@ -1224,7 +1224,7 @@
 - **Discovering Browser Extensions via Web Accessible Resources - Chalmers security lab**
   - URL: <http://www.cse.chalmers.se/research/group/security/publications/2017/extensions/codaspy-17-full.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:991`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:1241`; references: 1.
   - ID: `a6a146a071109da959cc`.
 - **http://www.cse.lehigh.edu/~gtan/paper/rocksalt.pdf**
   - URL: <http://www.cse.lehigh.edu/~gtan/paper/rocksalt.pdf>
@@ -1294,17 +1294,17 @@
 - **SMM Rootkits:A New Breed of OS Independent Malware**
   - URL: <http://www.eecs.ucf.edu/~czou/research/SMM-Rootkits-Securecom08.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:104`; references: 1.
+  - Source: `Draft/bios_uefi.md:141`; references: 1.
   - ID: `162d2bd3d014780355db`.
 - **Breaking the Sandbox - Sudeep Singh**
   - URL: <http://www.exploit-db.com/wp-content/themes/exploit/docs/34591.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:398`; references: 1.
+  - Source: `Draft/Malware.md:429`; references: 1.
   - ID: `4445703be6e17eefd5a8`.
 - **Android Packers**
   - URL: <http://www.fortiguard.com/uploads/general/Area41Public.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:142`; references: 1.
+  - Source: `Draft/Malware.md:131`; references: 1.
   - ID: `52ebe6095981645530e9`.
 - **Automated vulnerability analysis  of zero sized heap allocations**
   - URL: <http://www.hackitoergosum.org/2010/HES2010-jvanegue-Zero-Allocations.pdf>
@@ -1349,7 +1349,7 @@
 - **Attacking and Defending BIOS in 2015**
   - URL: <http://www.intelsecurity.com/advanced-threat-research/content/AttackingAndDefendingBIOS-RECon2015.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:115`; references: 1.
+  - Source: `Draft/bios_uefi.md:154`; references: 1.
   - ID: `72a7bc1c96c2d0b30ff3`.
 - **Too LeJIT to Quit: Extending JIT Spraying to ARM**
   - URL: <http://www.internetsociety.org/sites/default/files/09_3_2.pdf>
@@ -1364,7 +1364,7 @@
 - **Paper on Manual unpacking of UPX packed executable using Ollydbg and Importrec**
   - URL: <http://www.iosrjournals.org/iosr-jce/papers/Vol16-issue1/Version-1/L016117177.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:323`; references: 2.
+  - Source: `Draft/Malware.md:346`; references: 2.
   - ID: `29fe1f827c3bca3a93e0`.
 - **On the security of RC4 in TLS (USENIX, 2013)**
   - URL: <http://www.isg.rhul.ac.uk/tls/RC4biases.pdf>
@@ -1374,7 +1374,7 @@
 - **www.jodeit.org/research/DeepSec2009_USB_Device_Drivers.pdf**
   - URL: <http://www.jodeit.org/research/DeepSec2009_USB_Device_Drivers.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:405`; references: 1.
+  - Source: `Draft/Embedded.md:602`; references: 1.
   - ID: `a9e6aeaca576a67c5bdd`.
 - **Exploiting CVE-2014-4113 on Win8.1**
   - URL: <http://www.jodeit.org/research/Exploiting_CVE-2014-4113_on_Windows_8.1.pdf>
@@ -1399,7 +1399,7 @@
 - **An analysis of the vulnerabilities introduced with Java Card 3 Connected Edition**
   - URL: <http://www.ma.rhul.ac.uk/static/techrep/2013/MA-2013-04.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:459`; references: 1.
+  - Source: `Draft/Embedded.md:669`; references: 1.
   - ID: `b017a117534cf92cce5b`.
 - **A Mathematical Theory of Communication - Claude E. Shannon**
   - URL: <http://www.math.harvard.edu/~ctm/home/text/others/shannon/entropy/entropy.pdf>
@@ -1419,12 +1419,12 @@
 - **Tempest in a Teapot: Compromising Reflections Revisited**
   - URL: <http://www.mia.uni-saarland.de/Publications/backes-sp09.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:580`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:748`; references: 1.
   - ID: `4e173aa81d3ddc69dcd5`.
 - **Insurance Data Security Model Law**
   - URL: <http://www.naic.org/documents/committees_ex_cybersecurity_tf_exposure_mod_draft_clean.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `README.md:100`; references: 1.
+  - Source: `README.md:102`; references: 1.
   - ID: `ec6e799d0075b1571f17`.
 - **STP MiTM Attack and L2 Mitigation Techniques on the Cisco Catalyst 6500 **
   - URL: <http://www.ndm.net/ips/pdf/cisco/Catalyst-6500/white_paper_c11_605972.pdf>
@@ -1449,7 +1449,7 @@
 - **Hardware Hacking - Nicolas Collins**
   - URL: <http://www.nicolascollins.com/texts/originalhackingmanual.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:72`; references: 1.
+  - Source: `Draft/Embedded.md:168`; references: 1.
   - ID: `e173ceeb82b70bac68fa`.
 - **Slides**
   - URL: <http://www.nosuchcon.org/talks/2014/D2_02_Benjamin_Delpy_Mimikatz.pdf>
@@ -1464,7 +1464,7 @@
 - **Executive Summary**
   - URL: <http://www.novetta.com/files/9714/1446/8199/Executive_Summary-Final_1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:159`; references: 1.
+  - Source: `Draft/Malware.md:150`; references: 1.
   - ID: `c1de9af41b62e518ef25`.
 - **Politics and the English Language - George Orwell**
   - URL: <http://www.npr.org/blogs/ombudsman/Politics_and_the_English_Language-1.pdf>
@@ -1494,7 +1494,7 @@
 - **The TRIBES Engine Networking Model or How to Make the Internet Rock for Multi­player Games**
   - URL: <http://www.pingz.com/wordpress/wp-content/uploads/2009/11/tribes_networking_model.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Games.md:224`; references: 1.
+  - Source: `Draft/Games.md:288`; references: 1.
   - ID: `9c281d6ae9f6281b82ad`.
 - **The Red Book: A Roadmap for Systems Security Research**
   - URL: <http://www.red-book.eu/m/documents/syssec_red_book.pdf>
@@ -1554,7 +1554,7 @@
 - **Rotten Tomatoes campaign by Sophos**
   - URL: <http://www.sophos.com/en-us/medialibrary/PDFs/technical%20papers/sophos-rotten-tomato-campaign.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:636`; references: 1.
+  - Source: `Draft/Malware.md:695`; references: 1.
   - ID: `1a6086a3012c42f18999`.
 - **Practical Return-Oriented Programming, Dino A. Dai Zovi, 2010**
   - URL: <http://www.sourceconference.com/bos10pubs/Dino.pdf>
@@ -1579,7 +1579,7 @@
 - **Advanced Bootkit Techniques on Android**
   - URL: <http://www.syscan360.org/slides/2014_EN_AdvancedBootkitTechniquesOnAndroid_ChenZhangqiShendi.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Rootkits.md:32`; references: 1.
+  - Source: `Draft/Rootkits.md:39`; references: 1.
   - ID: `e3783b3bdff1fbef108c`.
 - **Scriptless Attacks – Stealing the Pie Without Touching the Sill**
   - URL: <http://www.syssec.rub.de/media/emma/veroeffentlichungen/2012/08/16/scriptlessAttacks-ccs2012.pdf>
@@ -1589,7 +1589,7 @@
 - **Debug Methodology Under UEFI**
   - URL: <http://www.uefi.org/sites/default/files/resources/UEFI_Plugfest_2011Q4_P8_PHX.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:154`; references: 1.
+  - Source: `Draft/bios_uefi.md:197`; references: 1.
   - ID: `27915b86384620162885`.
 - **Attacking x86 Windows Binaries by Jump Oriented Programming**
   - URL: <http://www.uni-obuda.hu/users/szakala/INES%202013%20pendrive/61_ines2013.pdf>
@@ -1599,12 +1599,12 @@
 - **Universal Serial Bus Device Class Specification for Device Firmware Upgrade Version 1.1 Aug 5, 2004**
   - URL: <http://www.usb.org/developers/docs/devclass_docs/DFU_1.1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:429`; references: 1.
+  - Source: `Draft/Embedded.md:636`; references: 1.
   - ID: `0064344501938489e95c`.
 - **Acoustic Side-Channel Attacks on Printers -Michael Backes,Markus Drmuth,Sebastian Gerling,Manfred Pinkal,Caroline Sporleder**
   - URL: <http://www.usenix.net/legacy/events/sec10/tech/full_papers/Backes.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:578`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:746`; references: 1.
   - ID: `2042a6c1b9e56c248206`.
 - **The Case of Return-Oriented Programming and the AVC Advantage, 2009**
   - URL: <http://www.usenix.org/event/evtwote09/tech/full_papers/checkoway.pdf>
@@ -1649,7 +1649,7 @@
 - **Touching from a Distance: Website Fingerprinting Attacks and Defenses - Xiang Cai, Xin Cheng Zhang, Brijesh Joshi, Rob Johnson**
   - URL: <http://www3.cs.stonybrook.edu/~xcai/fp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:997`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:1247`; references: 1.
   - ID: `91e36a8f33322ebe95df`.
 - **Reliable Windows Heap Exploits**
   - URL: <http://xcon.xfocus.org/XCon2004/archives/14_Reliable%20Windows%20Heap%20Exploits_BY_SHOK.pdf>
@@ -1684,7 +1684,7 @@
 - **Cloning Credit Cards: A combined pre-play and downgrade attack on EMV Contactless**
   - URL: <https://0b4af6cdc2f0c5998459-c0245c5c937c5dedcca3f1764ecc9b2f.ssl.cf2.rackcdn.com/12055-woot13-roland.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:151`; references: 1.
+  - Source: `Draft/Embedded.md:267`; references: 1.
   - ID: `78dcfb2bba05b0090d2f`.
 - **Machine-Level Representation of Programs**
   - URL: <https://2013.picoctf.com//docs/asmhandout.pdf>
@@ -1729,7 +1729,7 @@
 - **Subverting your server through its BMC: the HPE iLO4 case - Fabien Periguad, Alexandre Gazet, Joffrey Czarny**
   - URL: <https://airbus-seclab.github.io/ilo/RECONBRX2018-Slides-Subverting_your_server_through_its_BMC_the_HPE_iLO4_case-perigaud-gazet-czarny.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:253`; references: 1.
+  - Source: `Draft/bios_uefi.md:297`; references: 1.
   - ID: `becbe519ca4d392e0a45`.
 - **Paper**
   - URL: <https://andresriancho.github.io/nimbostratus/pivoting-in-amazon-clouds.pdf>
@@ -1764,7 +1764,7 @@
 - **Deep-Spying: Spying using Smartwatch and Deep Learning - Tony Beltramelli**
   - URL: <https://arxiv.org/pdf/1512.05616v1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:208`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:325`; references: 1.
   - ID: `db8505f48881e9d37831`.
 - **Hijacking .NET to Defend PowerShell - Amanda Rosseau**
   - URL: <https://arxiv.org/pdf/1709.07508.pdf>
@@ -1839,7 +1839,7 @@
 - **Bitcoin Paper**
   - URL: <https://bitcoin.org/bitcoin.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:376`; references: 2.
+  - Source: `Draft/CandE.md:423`; references: 2.
   - ID: `0e46aca4dbc5a030e188`.
 - **Hidden in plain sight? - @casheeew(BlackHoodie2018)**
   - URL: <https://blackhoodie.re/assets/archive/hidden_in_plain_sight_blackhoodie.pdf>
@@ -1874,7 +1874,7 @@
 - **Attacks on UEFI Security - Rafal Wojtczuk&Corey Kallenberg**
   - URL: <https://bromiumlabs.files.wordpress.com/2015/01/attacksonuefi_slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:114`; references: 1.
+  - Source: `Draft/bios_uefi.md:153`; references: 1.
   - ID: `d16edc32dc9d46730bba`.
 - **Browser Security White Paper - X41-dsec.de**
   - URL: <https://browser-security.x41-dsec.de/X41-Browser-Security-White-Paper.pdf>
@@ -1904,12 +1904,12 @@
 - **Smart TV Security - #1984 in 21 st century**
   - URL: <https://cansecwest.com/slides/2013/SmartTV%20Security.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:312`; references: 2.
+  - Source: `Draft/Embedded.md:480`; references: 2.
   - ID: `1c3d0d607c8993b5a909`.
 - **All Your Boot Are Belong To Us - Intel Security**
   - URL: <https://cansecwest.com/slides/2014/AllYourBoot_csw14-intel-final.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:125`; references: 1.
+  - Source: `Draft/bios_uefi.md:166`; references: 1.
   - ID: `de67738d86ca779663f7`.
 - **ROPs are for the 99% - Yang Yu**
   - URL: <https://cansecwest.com/slides/2014/ROPs_are_for_the_99_CanSecWest_2014.pdf>
@@ -1929,12 +1929,12 @@
 - **The DUQU 2.0 Technical Details - Kaspersky**
   - URL: <https://cdn.securelist.com/files/2015/06/The_Mystery_of_Duqu_2_0_a_sophisticated_cyberespionage_actor_returns.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:152`; references: 1.
+  - Source: `Draft/Malware.md:143`; references: 1.
   - ID: `8af8c8835c1071b548f5`.
 - **The Cyberlous Mrs. Maisel: A Comedic (and Slightly Terrifying) Introduction to Information Warfare - Zhanna Malekos Smith**
   - URL: <https://cdn.shopify.com/s/files/1/0177/9886/files/phv2019-zmalenkosmith.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:529`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:685`; references: 1.
   - ID: `94b60f3c8f64e1ff52a2`.
 - **https://cdn1.esetstatic.com/ESET/US/resources/white-papers/ESET_Lightneuron_WP.pdf**
   - URL: <https://cdn1.esetstatic.com/ESET/US/resources/white-papers/ESET_Lightneuron_WP.pdf>
@@ -1969,7 +1969,7 @@
 - **Defending Against Malicious USB Firmware with GoodUSB - Dave Tian, Adam Bates, Kevin Butler**
   - URL: <https://cise.ufl.edu/~butler/pubs/acsac15.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:411`; references: 1.
+  - Source: `Draft/Embedded.md:610`; references: 1.
   - ID: `62aac81a9e8d39ea7f9a`.
 - **Epistemological Pluralism and the Revaluation of the Concrete - Sherry Turkle and Seymour Papert**
   - URL: <https://cmapspublic2.ihmc.us/rid=1N5PWLBKV-28C3D13-380S/Turkle%20and%20Papert%20epistemological%20pluralism.pdf>
@@ -1984,7 +1984,7 @@
 - **A Syllabus of Psychological Warfare - US Gov(1946)**
   - URL: <https://collections.nlm.nih.gov/ext/dw/01130770R/PDF/01130770R.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:417`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:565`; references: 1.
   - ID: `4e2817bad9f8fde382b6`.
 - **G-Jacking AppEngine-based applications - HITB2014**
   - URL: <https://conference.hitb.org/hitbsecconf2014ams/materials/D2T1-G-Jacking-AppEngine-based-Applications.pdf>
@@ -1994,7 +1994,7 @@
 - **OPSEC In the Age of The Egotistical Giraffe**
   - URL: <https://conference.hitb.org/hitbsecconf2014kul/materials/D1T1%20-%20The%20Grugq%20-%20OPSEC%20in%20the%20Age%20of%20Egotistical%20Giraffe.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:1042`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:1298`; references: 1.
   - ID: `903c51450357c6d7973b`.
 - **#root via SMS: 4G access level security assessment**
   - URL: <https://conference.hitb.org/hitbsecconf2015ams/materials/D1T1%20-%20T.%20Yunusov%20K.%20Nesterov%20-%20Bootkit%20via%20SMS.pdf>
@@ -2044,7 +2044,7 @@
 - **Corkami - Packers**
   - URL: <https://corkami.googlecode.com/files/packers.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:316`; references: 1.
+  - Source: `Draft/Malware.md:339`; references: 1.
   - ID: `72dc96f93afc9b6afc8a`.
 - **Good slides on fuzzing**
   - URL: <https://courses.cs.washington.edu/courses/cse484/14au/slides/Section8.pdf>
@@ -2114,7 +2114,7 @@
 - **A Survey On Automated  Dynamic Malware Analysis  Evasion and Counter-Evasion: PC, Mobile, and Web - Alexei Bulazel & Bülent Yener**
   - URL: <https://deepsec.net/docs/Slides/2017/A_Survey_On_Automated_Dynamic_Malware_Analysis_Evasion_And_Counter-Evasion_PC_Mobile_And_Web_Alexei_Bulazel.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:435`; references: 1.
+  - Source: `Draft/Malware.md:464`; references: 1.
   - ID: `dc86ea1a63f858e70920`.
 - **PCAP Command-Line Madness! - Hal Pomeranz()**
   - URL: <https://deer-run.com/users/hal/PCAP-CL-Madness.pdf>
@@ -2239,7 +2239,7 @@
 - **DROWN: Breaking TLS using SSLv2**
   - URL: <https://drownattack.com/drown-attack-paper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:251`; references: 2.
+  - Source: `Draft/CandE.md:288`; references: 2.
   - ID: `0646f39c117f67519066`.
 - **Bug Hunting: Drilling into the Internet of Things(IoT) - DuoLabs**
   - URL: <https://duo.com/assets/ebooks/Duo-Labs-Bug-Hunting-Drilling-Into-the-Internet-of-Things-IoT.pdf>
@@ -2254,12 +2254,12 @@
 - **https://edwardsnowden.com/wp-content/uploads/2014/02/the-art-of-deception-training-for-a-new.pdf**
   - URL: <https://edwardsnowden.com/wp-content/uploads/2014/02/the-art-of-deception-training-for-a-new.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:636`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:823`; references: 1.
   - ID: `a06a384b3f03b95067a7`.
 - **Research paper on it**
   - URL: <https://eldorado.tu-dortmund.de/bitstream/2003/27336/1/BookOfAbstracts_Spring5_2010.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:446`; references: 1.
+  - Source: `Draft/Malware.md:477`; references: 1.
   - ID: `86a8c920e8285a57346c`.
 - **https://electronicbots.github.io/assets/pdf/NET_Loader_Part_1.pdf**
   - URL: <https://electronicbots.github.io/assets/pdf/NET_Loader_Part_1.pdf>
@@ -2279,7 +2279,7 @@
 - **The Sorcerer’s Apprentice Guide to Fault Attacks**
   - URL: <https://eprint.iacr.org/2004/100.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:486`; references: 1.
+  - Source: `Draft/Embedded.md:701`; references: 1.
   - ID: `e064a9415cabeb4bc6a4`.
 - **Ceremony Design and Analysis - Carl Ellison**
   - URL: <https://eprint.iacr.org/2007/399.pdf>
@@ -2289,7 +2289,7 @@
 - **Protocol Misidentification Made Easy with Format-Transforming Encryption**
   - URL: <https://eprint.iacr.org/2012/494.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:341`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:479`; references: 1.
   - ID: `90706e897b403f88b46b`.
 - **Plaintext Recovery Attacks Against WPA/TKIP (2013)**
   - URL: <https://eprint.iacr.org/2013/748.pdf>
@@ -2299,7 +2299,7 @@
 - **Toward Robust Hidden Volumes Using Write-Only Oblivious RAM**
   - URL: <https://eprint.iacr.org/2014/344.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:144`; references: 4.
+  - Source: `Draft/CandE.md:158`; references: 4.
   - ID: `9e09434fce3d52b3385e`.
 - **Intel SGX Explained**
   - URL: <https://eprint.iacr.org/2016/086.pdf>
@@ -2309,7 +2309,7 @@
 - **A Formal Security Analysis of the Signal Messaging Protocol - Oct2016**
   - URL: <https://eprint.iacr.org/2016/1013.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:89`; references: 2.
+  - Source: `Draft/CandE.md:82`; references: 2.
   - ID: `0c2c435980f734df0540`.
 - **An Inside Job: Remote Power Analysis Attacks on FPGAs**
   - URL: <https://eprint.iacr.org/2018/012.pdf>
@@ -2369,7 +2369,7 @@
 - **Attacking UEFI Boot Script**
   - URL: <https://frab.cccv.de/system/attachments/2566/original/venamis_whitepaper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:111`; references: 1.
+  - Source: `Draft/bios_uefi.md:150`; references: 1.
   - ID: `041f89e5bcb241cba98e`.
 - **Understanding Security Regulations in the Financial Services Industry - David Hoelzer**
   - URL: <https://getconga.com/wp-content/uploads/understanding-security-regulations-financial-services-industry-1.pdf>
@@ -2394,7 +2394,7 @@
 - **Slides**
   - URL: <https://github.com/BusesCanFly/HardwareHackingForTheMasses/blob/master/HardwareHackingForTheMasses.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:563`; references: 1.
+  - Source: `Draft/Embedded.md:786`; references: 1.
   - ID: `7b79121c35d519aa4af6`.
 - **Slides**
   - URL: <https://github.com/CppCon/CppCon2017/blob/master/Presentations/Everything%20You%20Ever%20Wanted%20to%20Know%20about%20DLLs/Everything%20You%20Ever%20Wanted%20to%20Know%20about%20DLLs%20-%20James%20McNellis%20-%20CppCon%202017.pdf>
@@ -2434,7 +2434,7 @@
 - **Slides(from BHASIA19**
   - URL: <https://github.com/REhints/Publications/blob/f1f305eff156267e194e941d32caf7cc2bfc053b/Conferences/Bypassing%20Hardware%20Root%20of%20Trust/BHASIA2019_matrosov_final.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:276`; references: 1.
+  - Source: `Draft/bios_uefi.md:319`; references: 1.
   - ID: `2aeee4b3d83b97fc3352`.
 - **Slides**
   - URL: <https://github.com/SafeBreach-Labs/SirepRAT/blob/master/docs/SirepRAT_RCE_as_SYSTEM_on_Windows_IoT_Core_Slides.pdf>
@@ -2519,7 +2519,7 @@
 - **How to Implement Crypto Poorly - Sean Cassidy**
   - URL: <https://github.com/cxxr/talks/blob/master/2016/grrcon/How%20to%20Implement%20Crypto%20Poorly.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:120`; references: 2.
+  - Source: `Draft/CandE.md:123`; references: 2.
   - ID: `23a3926e27c205e5069f`.
 - **Attacking Modern SaaS Companies**
   - URL: <https://github.com/cxxr/talks/blob/master/2017/nolacon/Attacking%20Modern%20SaaS%20Companies%20%E2%80%93%20NolaCon.pdf>
@@ -2684,7 +2684,7 @@
 - **How the Chinese Government Fabricates SocialMedia Posts for Strategic Distraction, not Engaged Argument - Gary King, Jennifer Pan, Margaret E. Roberts(2017)**
   - URL: <https://gking.harvard.edu/files/gking/files/50c.pdf?m=1463587807>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:496`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:650`; references: 1.
   - ID: `028032a9bb3a50767aba`.
 - **Lightning Components: A Treatise on Apex Security from an External Perspective - Aaron Costello(2021)**
   - URL: <https://go.appomni.com/hubfs/Collateral/AppOmni_Labs_White_Paper_Apex_Security.pdf>
@@ -2719,7 +2719,7 @@
 - **COMSEC Beyond Encryption**
   - URL: <https://grugq.github.io/presentations/COMSEC%20beyond%20encryption.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:69`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:162`; references: 1.
   - ID: `b751ccbfbe7d16f57da4`.
 - **DEEP Hooks: Monitoring Native Execution In WOW64 Applications - Assaf Carlsbad, Yarden Shafir(2018)**
   - URL: <https://gsec.hitb.org/materials/sg2018/D2%20COMMSEC%20-%20Monitoring%20Native%20Execution%20in%20WoW64%20Applications%20-%20Assaf%20Carlsbad%20&%20Yarden%20Shafir.pdf>
@@ -2824,7 +2824,7 @@
 - **Behind the Scenes of Intel Security and Manageability Engine - Shai Hasarfaty, Yanai Moyal**
   - URL: <https://i.blackhat.com/USA-19/Wednesday/us-19-Hasarfaty-Behind-The-Scenes-Of-Intel-Security-And-Manageability-Engine.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:244`; references: 1.
+  - Source: `Draft/bios_uefi.md:288`; references: 1.
   - ID: `65856bdef260ead1f669`.
 - **Slides**
   - URL: <https://i.blackhat.com/USA-19/Wednesday/us-19-Munoz-SSO-Wars-The-Token-Menace.pdf>
@@ -2929,7 +2929,7 @@
 - **Remotely Attacking System Firmware - Alex Bazhaniuk, Jesse Michael, Mickey Shkatov(BHUSA2018)**
   - URL: <https://i.blackhat.com/us-18/Wed-August-8/us-18-Michael-Shkatov-Remotely-Attacking-System-Firmware.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:250`; references: 1.
+  - Source: `Draft/bios_uefi.md:294`; references: 1.
   - ID: `cb0e3df39341b99d25b1`.
 - **Slides**
   - URL: <https://i.blackhat.com/us-18/Wed-August-8/us-18-Orange-Tsai-Breaking-Parser-Logic-Take-Your-Path-Normalization-Off-And-Pop-0days-Out-2.pdf>
@@ -2944,7 +2944,7 @@
 - **Detecting BadBIOS, Evil Maids, Bootkits, and Other Firmware Malware**
   - URL: <https://ia600805.us.archive.org/7/items/seagl-2017/seagl-2017.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:135`; references: 1.
+  - Source: `Draft/bios_uefi.md:176`; references: 1.
   - ID: `f5286c0db134db805147`.
 - **https://ia800300.us.archive.org/16/items/MoraleOperations/MoraleOperations.pdf**
   - URL: <https://ia800300.us.archive.org/16/items/MoraleOperations/MoraleOperations.pdf>
@@ -3004,7 +3004,7 @@
 - **Extreme Privacy: What it takes to disappear in America; Personal Data Removal Workbook & Credit Freeze Guide(Nov2019)**
   - URL: <https://inteltechniques.com/data/workbook.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:154`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:261`; references: 1.
   - ID: `50006de3984809656bc2`.
 - **A Wake-Up Call for SATCOM Security - Ruben Santamarta**
   - URL: <https://ioactive.com/pdfs/IOActive_SATCOM_Security_WhitePaper.pdf>
@@ -3024,7 +3024,7 @@
 - **TapDance: End-to-Middle Anticensorship without Flow Blocking**
   - URL: <https://jhalderm.com/pub/papers/tapdance-sec14.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:349`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:487`; references: 1.
   - ID: `8960f8577d053bcdfaf1`.
 - **SPF, DKIM, and DMARC Demystified - McAfee**
   - URL: <https://jira.sakaiproject.org/secure/attachment/43722/sb-spf-dkim-dmarc-demystified.pdf>
@@ -3034,17 +3034,17 @@
 - **Compromising Reflections - or - How to Read LCD Monitors Around the Corner- Michael Backes, Markus Dürmuth, Dominique Unruh**
   - URL: <https://kodu.ut.ee/~unruh/publications/reflections.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:576`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:744`; references: 1.
   - ID: `4a538c8d9953b5f6b0b7`.
 - **Protocol Misidentification Made Easy with Format-Transforming Encryption**
   - URL: <https://kpdyer.com/publications/ccs2013-fte.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:339`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:477`; references: 1.
   - ID: `35bc03323d66f208e495`.
 - **Slides**
   - URL: <https://krypt3ia.files.wordpress.com/2018/06/espionge-in-the-modern-age-of-information-warfare.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:319`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:455`; references: 1.
   - ID: `61e51aafd3f55ed0661d`.
 - **Corrupting Memory In Microsoft Office Protected-View Sandbox - Yong Chuan Koh(MS BlueHat '17)**
   - URL: <https://labs.f-secure.com/assets/BlogFiles/mwri-corrupting-memory-in-ms-office-protected-view-v2.pdf>
@@ -3179,7 +3179,7 @@
 - **Methodologies for Hacking Embedded Security Appliances**
   - URL: <https://media.blackhat.com/us-13/US-13-Bathurst-Methodologies-for-Hacking-Embdded-Security-Appliances-Slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:78`; references: 1.
+  - Source: `Draft/Embedded.md:174`; references: 1.
   - ID: `43b64e8c494f36f02e18`.
 - **https://media.blackhat.com/us-13/US-13-Cesare-Bugalyze.com-Detecting-Bugs-Using-Decompilation-Slides.pdf**
   - URL: <https://media.blackhat.com/us-13/US-13-Cesare-Bugalyze.com-Detecting-Bugs-Using-Decompilation-Slides.pdf>
@@ -3204,7 +3204,7 @@
 - **Embedded Devices Security and Firmware Reverse Engineering - Jonas Zaddach, Andrei Costin(BH13USA)**
   - URL: <https://media.blackhat.com/us-13/US-13-Zaddach-Workshop-on-Embedded-Devices-Security-and-Firmware-Reverse-Engineering-WP.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:519`; references: 1.
+  - Source: `Draft/Embedded.md:743`; references: 1.
   - ID: `1c43a488b9c6bc57669a`.
 - **Rooting Sim Cards**
   - URL: <https://media.blackhat.com/us-13/us-13-Nohl-Rooting-SIM-cards-Slides.pdf>
@@ -3264,7 +3264,7 @@
 - **Secure Tokin’ & Doobiekeys: How to roll your own counterfeit hardware security devices - @securelyfitz, @r00tkillah**
   - URL: <https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-r00killah-and-securelyfitz-Secure-Tokin-and-Doobiekeys.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:373`; references: 1.
+  - Source: `Draft/Embedded.md:563`; references: 1.
   - ID: `daff95be62234622abcb`.
 - **Fundamentals of Leveraging PowerShell - Carlos Perez(Defcon25)**
   - URL: <https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20workshops/DEF%20CON%2025%20-%20Carlos-Perez-Leveraging-PowerShell.pdf>
@@ -3299,7 +3299,7 @@
 - **Meltdown**
   - URL: <https://meltdownattack.com/meltdown.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:192`; references: 1.
+  - Source: `Draft/bios_uefi.md:240`; references: 1.
   - ID: `2a47912d8b7252f3f802`.
 - **NetSpectre: Read Arbitrary Memory over Network - Michael Schwarz, Martin Schwarzl, Moritz Lipp, Jon Masters, Daniel Gruss**
   - URL: <https://misc0110.net/web/files/netspectre.pdf>
@@ -3329,7 +3329,7 @@
 - **Field Guide for Designing Human Interaction With Intelligent Systems - Carroll G. Thronesbery and Jane T. Malin - NASA**
   - URL: <https://ntrs.nasa.gov/api/citations/19980210012/downloads/19980210012.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/UX.md:51`; references: 1.
+  - Source: `Draft/UX.md:46`; references: 1.
   - ID: `fd9145e877a255799087`.
 - **Slides**
   - URL: <https://nullcon.net/website/archives/pdf/The-Windows-Sandbox-Paradox-(Flashback)-James-Forshaw-nullcon-goa-2019.pdf>
@@ -3504,12 +3504,12 @@
 - **Text Authorship Verification through Watermarking - Stefano Giovanni Rizzo, Flavio Bertini, Danilo Montesi**
   - URL: <https://pdfs.semanticscholar.org/4028/f904da8e2c50672e6037168bf2bd72bc4cb9.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:544`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:705`; references: 1.
   - ID: `e533e2d4e032179253f5`.
 - **Vulnerabilities in MLC NAND Flash Memory Programming: Experimental Analysis, Exploits, and Mitigation Techniques**
   - URL: <https://pdfs.semanticscholar.org/b9bc/a3c9f531002854af48de121cdcc8e0520c7f.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:168`; references: 1.
+  - Source: `Draft/Embedded.md:291`; references: 1.
   - ID: `3765e903f453c3ca260a`.
 - **Slides**
   - URL: <https://penconsultants.com/home/wp-content/uploads/2019/03/BSides_ATX_2019.pdf>
@@ -3674,7 +3674,7 @@
 - **Pandora's Cash Box - The Ghost under your POS - RECON2015**
   - URL: <https://recon.cx/2015/slides/recon2015-17-nitay-artenstein-shift-reduce-Pandora-s-Cash-Box-The-Ghost-Under-Your-POS.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:356`; references: 1.
+  - Source: `Draft/Embedded.md:545`; references: 1.
   - ID: `bc847e539bd5eab4147f`.
 - **Reverse Engineering Windows AFD.sys**
   - URL: <https://recon.cx/2015/slides/recon2015-20-steven-vittitoe-Reverse-Engineering-Windows-AFD-sys.pdf>
@@ -3719,7 +3719,7 @@
 - **StegoTorus: A Camouflage Proxy for the Tor Anonymity System**
   - URL: <https://research.owlfolio.org/pubs/2012-stegotorus.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:193`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:306`; references: 1.
   - ID: `2c2e2124146dcf78c7e5`.
 - **Towards Improving CVSS - CMU SEI**
   - URL: <https://resources.sei.cmu.edu/asset_files/WhitePaper/2018_019_001_538372.pdf>
@@ -3789,7 +3789,7 @@
 - **Does a BEAR Leak in the Woods? The DNC Breach, Russian APTs, and the 2016 US Election - Toni Gidwani(2017)**
   - URL: <https://sector.ca/wp-content/uploads/presentations17/Toni-Gidwani-Does-a-BEAR-Leak-in-the-Woods_14-Nov.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:690`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:895`; references: 1.
   - ID: `bcd7fe52a59de24f5782`.
 - **https://securelist.com/files/2015/02/Carbanak_APT_eng.pdf**
   - URL: <https://securelist.com/files/2015/02/Carbanak_APT_eng.pdf>
@@ -3829,7 +3829,7 @@
 - **Spectre Attacks: Exploiting Speculative Execution**
   - URL: <https://spectreattack.com/spectre.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:203`; references: 1.
+  - Source: `Draft/bios_uefi.md:253`; references: 1.
   - ID: `f93adbbe077c543abb7f`.
 - **Postscript Pat and His Black and White Hat - Steven Seeley(2019)**
   - URL: <https://srcincite.io/assets/postscript-pat-and-his-black-and-white-hat.pdf>
@@ -3839,7 +3839,7 @@
 - **Slides**
   - URL: <https://srlabs.de/blog/wp-content/uploads/2014/11/SRLabs-BadUSB-Pacsec-v2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:422`; references: 1.
+  - Source: `Draft/Embedded.md:627`; references: 1.
   - ID: `2ac429c7a83ce32bdf32`.
 - **Omega: flexible, scalable schedulers for large compute clusters - Malte Schwarzkop, Andy Konwinski, Michael Abd-El-Malek, John Wilkes**
   - URL: <https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/41684.pdf>
@@ -3924,12 +3924,12 @@
 - **Ghostbuster: Detecting the Presence of Hidden Eavesdroppers**
   - URL: <https://synrg.csl.illinois.edu/papers/ghostbuster-mobicom18.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:336`; references: 2.
+  - Source: `Draft/AnonOpSecPrivacy.md:474`; references: 2.
   - ID: `465f0a0f4a1de3c66854`.
 - **Lost your "secure" HDD PIN? We can help!**
   - URL: <https://syscall.eu/pdf/2016-Lenoir_Rigo-HDD_PIN-paper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:184`; references: 1.
+  - Source: `Draft/Embedded.md:312`; references: 1.
   - ID: `5adc09473844b8e12c8d`.
 - **Slides**
   - URL: <https://tacticaladversary.io/slides/Internal-Red-Team-BSides-Delhi-2020-Abhijith-b-r.pdf>
@@ -4024,7 +4024,7 @@
 - **A Survey of Various Methods for Analyzing the Amazon Echo**
   - URL: <https://vanderpot.com/Clinton_Cook_Paper.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:209`; references: 1.
+  - Source: `Draft/Embedded.md:347`; references: 1.
   - ID: `de628afe00c8e4bc6d3b`.
 - **https://vulms.vu.edu.pk/Courses/CS410/Downloads/Charles%20Petzold%20-%20Programming%20Windows%20-%205th%20Ed.pdf**
   - URL: <https://vulms.vu.edu.pk/Courses/CS410/Downloads/Charles%20Petzold%20-%20Programming%20Windows%20-%205th%20Ed.pdf>
@@ -4129,12 +4129,12 @@
 - **Slides**
   - URL: <https://web.archive.org/web/20200903100811/http://phk.freebsd.dk/_downloads/FOSDEM_2014.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:756`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:963`; references: 1.
   - ID: `78f873708d42be9a9846`.
 - **Family Jewels - **
   - URL: <https://web.archive.org/web/20201101104822/https://www.cia.gov/open/Family%20Jewels.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:728`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:935`; references: 1.
   - ID: `20513bd5eef3c8ce3793`.
 - **Process Hollowing - John Leitch(2016)**
   - URL: <https://web.archive.org/web/20201112024129/http://www.autosectools.com/process-hollowing.pdf>
@@ -4154,17 +4154,17 @@
 - **Theaters Of War: The Military-Entertainment Complex - Tim Lenoir, Henry Lowood(2003)**
   - URL: <https://web.stanford.edu/dept/HPST/TimLenoir/Publications/Lenoir-Lowood_TheatersOfWar.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:502`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:656`; references: 1.
   - ID: `9d43ab9d698fda51396e`.
 - **Generic Attacks against MAC algorithms - Gaëtan Leurent**
   - URL: <https://who.rocq.inria.fr/Gaetan.Leurent/files/Generic_SAC15.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:63`; references: 2.
+  - Source: `Draft/CandE.md:471`; references: 2.
   - ID: `791fab11fa206311ea1b`.
 - **https://wiki.mozilla.org/images/0/0b/Thunderbird-enigmail-report.pdf**
   - URL: <https://wiki.mozilla.org/images/0/0b/Thunderbird-enigmail-report.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Crypto_Encrypt.md:449`; references: 1.
+  - Source: `Draft/Crypto_Encrypt.md:527`; references: 1.
   - ID: `f449a1e0e9fddc59f4f7`.
 - **Bypass Antivirus Dynamic Analysis: Limitations of the AV model and how to exploit them - Emeric Nasi(2014)**
   - URL: <https://wikileaks.org/ciav7p1/cms/files/BypassAVDynamics.pdf>
@@ -4174,7 +4174,7 @@
 - **Pitfalls of virtual machine introspection on modern hardware**
   - URL: <https://www.acsac.org/2014/workshops/mmf/Tamas%20Lengyel-Pitfalls%20of%20virtual%20machine%20introspection%20on%20modern%20hardware.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Rootkits.md:25`; references: 1.
+  - Source: `Draft/Rootkits.md:29`; references: 1.
   - ID: `6361e043f693d2952ee7`.
 - **A Study of Overflow Vulnerabilities on GPUs**
   - URL: <https://www.aimlab.org/haochen/papers/npc16-overflow.pdf>
@@ -4254,7 +4254,7 @@
 - **Hiding in Plain Sight: Advances in malware covert communication channels - BH2015 Pierre-Marc Bureau, Christian Dietrich**
   - URL: <https://www.blackhat.com/docs/eu-15/materials/eu-15-Bureau-Hiding-In-Plain-Sight-Advances-In-Malware-Covert-Communication-Channels-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:191`; references: 1.
+  - Source: `Draft/Malware.md:186`; references: 1.
   - ID: `602c3a26cdc7b6731394`.
 - **Going AUTH the Rails on a Crazy Train: A Dive into Rails Authentication and Authorization**
   - URL: <https://www.blackhat.com/docs/eu-15/materials/eu-15-Jarmoc-Going-AUTH-The-Rails-On-A-Crazy-Train-wp.pdf>
@@ -4304,7 +4304,7 @@
 - **Slides**
   - URL: <https://www.blackhat.com/docs/us-14/materials/us-14-Kallenberg-Extreme-Privilege-Escalation-On-Windows8-UEFI-Systems.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:123`; references: 2.
+  - Source: `Draft/bios_uefi.md:164`; references: 2.
   - ID: `23f8de259ff86637e710`.
 - **Paper**
   - URL: <https://www.blackhat.com/docs/us-14/materials/us-14-Kazanciyan-Investigating-Powershell-Attacks-WP.pdf>
@@ -4314,12 +4314,12 @@
 - **Paper**
   - URL: <https://www.blackhat.com/docs/us-14/materials/us-14-Mesbahi-One-Packer-To-Rule-Them-All-WP.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:334`; references: 1.
+  - Source: `Draft/Malware.md:357`; references: 1.
   - ID: `112d69267ca58a957641`.
 - **Slides - MoRE Shadow Walker : TLB - splitting on Modern x86**
   - URL: <https://www.blackhat.com/docs/us-14/materials/us-14-Torrey-MoRE-Shadow-Walker-The-Progression-Of-TLB-Splitting-On-x86-WP.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Rootkits.md:60`; references: 1.
+  - Source: `Draft/Rootkits.md:71`; references: 1.
   - ID: `d7bb658856c25007f01b`.
 - **External Enumeration and Exploitation of Email and Web Security Solutions - Ben Williams**
   - URL: <https://www.blackhat.com/docs/us-14/materials/us-14-Williams-I-Know-Your-Filtering-Policy-Better-Than-You-Do.pdf>
@@ -4339,7 +4339,7 @@
 - **Commercial Spyware-Detecting the Undetectable - Fidelis Cybersecurity(BHUSA2015)**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Dalman-Commercial-Spyware-Detecting-The-Undetectable-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:910`; references: 2.
+  - Source: `Draft/AnonOpSecPrivacy.md:1140`; references: 2.
   - ID: `2c161bf8a1de833409f2`.
 - **Abusing Windows Management Instrumentation (WMI) to Build a Persistent, Asyncronous, and Fileless Backdoor - Matt Graeber(BHUSA15)**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Graeber-Abusing-Windows-Management-Instrumentation-WMI-To-Build-A-Persistent%20Asynchronous-And-Fileless-Backdoor-wp.pdf>
@@ -4349,7 +4349,7 @@
 - **Remote Physical Damage 101 - Bread and Butter Attacks**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Larsen-Remote-Physical-Damage-101-Bread-And-Butter-Attacks.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/SCADA.md:57`; references: 1.
+  - Source: `Draft/SCADA.md:66`; references: 1.
   - ID: `e17f82cca4d5e2babea3`.
 - **Attacking Interoperability: An OLE Edition**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Li-Attacking-Interoperability-An-OLE-Edition.pdf>
@@ -4369,7 +4369,7 @@
 - **When IoT Attacks: Hacking A Linux-Powered Rifle **
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Sandvik-When-IoT-Attacks-Hacking-A-Linux-Powered-Rifle.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:214`; references: 1.
+  - Source: `Draft/Embedded.md:352`; references: 1.
   - ID: `29b2c47a6a0acf8eb203`.
 - **WSUSPect - Compromising the Windows Enterprise via Windows Update - Paul Stone, Alex Chapman - BHUS15**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Stone-WSUSpect-Compromising-Windows-Enterprise-Via-Windows-Update.pdf>
@@ -4389,7 +4389,7 @@
 - **Writing Bad @$$ Malware for OS X - Patrick Wardle**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Wardle-Writing-Bad-A-Malware-For-OS-X.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:243`; references: 1.
+  - Source: `Draft/Malware.md:253`; references: 1.
   - ID: `878606fd30e230ab661b`.
 - **Small Tweaks do Not Help: Differential Power Analysis of MILENAGE Implementations in 3G/4G USIM Cards**
   - URL: <https://www.blackhat.com/docs/us-15/materials/us-15-Yu-Cloning-3G-4G-SIM-Cards-With-A-PC-And-An-Oscilloscope-Lessons-Learned-In-Physical-Security-wp.pdf>
@@ -4569,12 +4569,12 @@
 - **Attacking Intel ® Trusted Execution Technology Rafal Wojtczuk and Joanna Rutkowska**
   - URL: <https://www.blackhat.com/presentations/bh-dc-09/Wojtczuk_Rutkowska/BlackHat-DC-09-Rutkowska-Attacking-Intel-TXT-slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:117`; references: 1.
+  - Source: `Draft/bios_uefi.md:158`; references: 1.
   - ID: `74bf4b965d8926190a96`.
 - **Exploiting Lawful Intercept to Wiretap the Internet**
   - URL: <https://www.blackhat.com/presentations/bh-dc-10/Cross_Tom/BlackHat-DC-2010-Cross-Attacking-LawfulI-Intercept-wp.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:337`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:475`; references: 1.
   - ID: `1ad9eb86281b353c9c2f`.
 - **Google Hacking for Penetration Testers**
   - URL: <https://www.blackhat.com/presentations/bh-europe-05/BH_EU_05-Long.pdf>
@@ -4609,7 +4609,7 @@
 - **Shadow Walker - Raising the Bar for Rootkit detection - BH 2005**
   - URL: <https://www.blackhat.com/presentations/bh-jp-05/bh-jp-05-sparks-butler.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Rootkits.md:58`; references: 1.
+  - Source: `Draft/Rootkits.md:69`; references: 1.
   - ID: `09d317efa8e4dd727703`.
 - **BGP Vulnerability Testing: Separating Fact from FUD - Sean Covery, Matthew Franz(BHUSA03)**
   - URL: <https://www.blackhat.com/presentations/bh-usa-03/bh-us-03-convery-franz-v2.pdf>
@@ -4624,12 +4624,12 @@
 - **Statistical Structures: Fingerprinting Malware for Classification and Analysis - Daniel Bilar**
   - URL: <https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Bilar.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:652`; references: 1.
+  - Source: `Draft/Malware.md:709`; references: 1.
   - ID: `7890ea8d98162f2778f2`.
 - **https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Eng.pdf**
   - URL: <https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Eng.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Crypto_Encrypt.md:426`; references: 1.
+  - Source: `Draft/Crypto_Encrypt.md:504`; references: 1.
   - ID: `101ce234f8c9945a5e5a`.
 - **Slides**
   - URL: <https://www.blackhat.com/presentations/bh-usa-06/BH-US-06-Sutton.pdf>
@@ -4664,7 +4664,7 @@
 - **Stoned Bootkit - BH USA09**
   - URL: <https://www.blackhat.com/presentations/bh-usa-09/KLEISSNER/BHUSA09-Kleissner-StonedBootkit-SLIDES.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:118`; references: 1.
+  - Source: `Draft/bios_uefi.md:159`; references: 1.
   - ID: `45e61d657b1c8dbcac7c`.
 - **Fuzzing the Phone in your Phone**
   - URL: <https://www.blackhat.com/presentations/bh-usa-09/MILLER/BHUSA09-Miller-FuzzingPhone-PAPER.pdf>
@@ -4684,7 +4684,7 @@
 - **Attacking Intel BIOS - BHUSA09**
   - URL: <https://www.blackhat.com/presentations/bh-usa-09/WOJTCZUK/BHUSA09-Wojtczuk-AtkIntelBios-SLIDES.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:119`; references: 1.
+  - Source: `Draft/bios_uefi.md:160`; references: 1.
   - ID: `772511f18fb563821fd6`.
 - **Slides**
   - URL: <https://www.blackhillsinfosec.com/wp-content/uploads/2021/11/SLIDES_LookingforNeedlesinNeedlestacks.pdf>
@@ -4734,12 +4734,12 @@
 - **Of Moles and Molehunters: A Review of Counterintelligence Literature, 1977-92**
   - URL: <https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/books-and-monographs/U-Oct%20%201993-%20Of%20Moles%20-%20Molehunters%20-%20A%20Review%20of%20Counterintelligence%20Literature-%201977-92%20-v2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:351`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:489`; references: 1.
   - ID: `163c2f3976cca0d2939c`.
 - **An Alternative Framework for Agent Recruitment: From MICE to RASCLS - Randy Burkett**
   - URL: <https://www.cia.gov/library/center-for-the-study-of-intelligence/csi-publications/csi-studies/studies/vol.-57-no.-1-a/vol.-57-no.-1-a-pdfs/Burkett-MICE%20to%20RASCALS.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:353`; references: 2.
+  - Source: `Draft/AnonOpSecPrivacy.md:491`; references: 2.
   - ID: `09e98fb7341fd03d34e9`.
 - **Home Network Administration Protocol (HNAP) Whitepaper**
   - URL: <https://www.cisco.com/web/partners/downloads/guest/hnap_protocol_whitepaper.pdf>
@@ -4754,7 +4754,7 @@
 - **Introduction to Trusted Execution  Environments - Steven J. Murdoch**
   - URL: <https://www.cl.cam.ac.uk/~sjm217/talks/rhul14tee.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:484`; references: 1.
+  - Source: `Draft/Embedded.md:697`; references: 1.
   - ID: `6bc761ae551c2435fb4f`.
 - **Tamper resistance and  hardware security**
   - URL: <https://www.cl.cam.ac.uk/~sps32/PartII_030214.pdf>
@@ -4824,7 +4824,7 @@
 - **Redaction of PDF Files Using Adobe Acrobat Professional X - NSA**
   - URL: <https://www.cs.columbia.edu/~smb/doc/Redaction-of-PDF-Files-Using-Adobe-Acrobat-Professional-X.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:546`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:707`; references: 1.
   - ID: `e71d6a11fca133eba2e2`.
 - **Opportunities and Limits of Remote Timing Attacks - Scott A. Crosby, Dan S. Wallach, Rudolf H. Riedi(2009)**
   - URL: <https://www.cs.rice.edu/~dwallach/pub/crosby-timing2009.pdf>
@@ -4844,7 +4844,7 @@
 - **An Empirical Study of Cryptographic Misuse in Android Applications**
   - URL: <https://www.cs.ucsb.edu/~chris/research/doc/ccs13_cryptolint.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:197`; references: 2.
+  - Source: `Draft/CandE.md:214`; references: 2.
   - ID: `45f02439bdb18cceac2f`.
 - **EARs in the Wild: Large-Scale Analysis of Execution After Redirect Vulnerabilities**
   - URL: <https://www.cs.ucsb.edu/~vigna/publications/2013_SAC_EARdetect.pdf>
@@ -4879,12 +4879,12 @@
 - **Universal Unhooking - Cylance**
   - URL: <https://www.cylance.com/content/dam/cylance/pdfs/white_papers/Universal_Unhooking.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:372`; references: 1.
+  - Source: `Draft/Malware.md:401`; references: 1.
   - ID: `262152f14b50a4f92b3b`.
 - **SkypeMorph: Protocol Obfuscation for Tor Bridges**
   - URL: <https://www.cypherpunks.ca/~iang/pubs/skypemorph-ccs.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:191`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:304`; references: 1.
   - ID: `ff55bc643b6b77b99aaf`.
 - **VBA Macros Pest Control - Philippe Lagadec**
   - URL: <https://www.decalage.info/files/THC17_Lagadec_Macro_Pest_Control2.pdf>
@@ -4909,7 +4909,7 @@
 - **Docsis hacking**
   - URL: <https://www.defcon.org/images/defcon-16/dc16-presentations/defcon-16-self.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:128`; references: 1.
+  - Source: `Draft/Embedded.md:242`; references: 1.
   - ID: `50e542eaaa71234b41f2`.
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-16/dc16-presentations/defcon-16-valsmith_ames.pdf>
@@ -4939,7 +4939,7 @@
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-17/dc-17-presentations/defcon-17-tk234-pla_information_warfare.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:522`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:676`; references: 1.
   - ID: `846ddb277c1b0697489d`.
 - **Paper**
   - URL: <https://www.defcon.org/images/defcon-18/dc-18-presentations/Amit/DEFCON-18-Amit-Cyber-Crime-WP.pdf>
@@ -4954,7 +4954,7 @@
 - **Hacking Docsis for fun and profit**
   - URL: <https://www.defcon.org/images/defcon-18/dc-18-presentations/Blake-bitemytaco/DEFCON-18-Blake-bitemytaco-Hacking-DOCSIS.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:130`; references: 1.
+  - Source: `Draft/Embedded.md:244`; references: 1.
   - ID: `408f460c0d98480d1a2c`.
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-18/dc-18-presentations/Cerrudo/DEFCON-18-Cerrudo-Token-Kidnapping-Revenge.pdf>
@@ -5029,7 +5029,7 @@
 - **Hacking US Traffic Control Systems - Cesar Cerrudo - Defcon22**
   - URL: <https://www.defcon.org/images/defcon-22/dc-22-presentations/Cerrudo/DEFCON-22-Cesar-Cerrudo-Hacking-Traffic-Control-Systems-UPDATED.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/SCADA.md:35`; references: 1.
+  - Source: `Draft/SCADA.md:38`; references: 1.
   - ID: `95d34f85ed2f56952d71`.
 - **Machine Motivated Practical Page Table Shellcode & Finding Out What's Running on Your System - Slides**
   - URL: <https://www.defcon.org/images/defcon-22/dc-22-presentations/Macaulay/DEFCON-22-Shane-Macaulay-Weird-Machine-Motivated-Practical-Page-Table-Shellcode-UPDATED.pdf>
@@ -5049,7 +5049,7 @@
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-22/dc-22-presentations/Rowley/DEFCON-22-Robert-Rowley-Detecting-Defending-Against-Surveillance-State.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:328`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:464`; references: 1.
   - ID: `f5d523a39dc6a4411352`.
 - **Slides**
   - URL: <https://www.defcon.org/images/defcon-22/dc-22-presentations/Young/DEFCON-22-Philip-Young-From-root-to-SPECIAL-Hacking-IBM-Mainframes-Updated.pdf>
@@ -5104,12 +5104,12 @@
 - **Chameleon: A Versatile Emulator for Contactless Smartcards - Paper**
   - URL: <https://www.ei.rub.de/media/crypto/veroeffentlichungen/2011/11/16/chameleon.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:466`; references: 1.
+  - Source: `Draft/Embedded.md:680`; references: 1.
   - ID: `3e6d0bf00193446cd8e0`.
 - **Fuzzing Online Games**
   - URL: <https://www.elie.net/static/files/fuzzing-online-games/fuzzing-online-games-slides.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Games.md:43`; references: 1.
+  - Source: `Draft/Games.md:70`; references: 1.
   - ID: `d0355886968e1568b8cc`.
 - **The Dog Whisperer's Handbook: A Hacker's Guide to the BloodHound Galaxy - @SadProcessor**
   - URL: <https://www.ernw.de/download/BloodHoundWorkshop/ERNW_DogWhispererHandbook.pdf>
@@ -5124,7 +5124,7 @@
 - **Bootkit Threats: In Depth Reverse Engineering & Defense- Eugene Rodionov&Aleksandr Matrosov**
   - URL: <https://www.eset.com/fileadmin/Images/US/Docs/Business/presentations/conference_papers/REcon2012.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:113`; references: 1.
+  - Source: `Draft/bios_uefi.md:152`; references: 1.
   - ID: `cfa2841862ee6bd1b24b`.
 - **Bypassing All the Things**
   - URL: <https://www.exodusintel.com/files/Aaron_Portnoy-Bypassing_All_Of_The_Things.pdf>
@@ -5209,7 +5209,7 @@
 - **https://www.fiia.fi/wp-content/uploads/2019/06/bp267_geostrategically_motivated_co-option_of_social-media.pdf**
   - URL: <https://www.fiia.fi/wp-content/uploads/2019/06/bp267_geostrategically_motivated_co-option_of_social-media.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:495`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:649`; references: 1.
   - ID: `06697eb1c6c9fab98df5`.
 - **Revoke -­‐ Obfuscation: PowerShell Obfuscation Detection Using Science**
   - URL: <https://www.fireeye.com/content/dam/fireeye-www/blog/pdfs/revoke-obfuscation-report.pdf>
@@ -5279,17 +5279,17 @@
 - **Who is “n3td3v”? - Hacker Factor Solutions(2006)**
   - URL: <https://www.hackerfactor.com/papers/who_is_n3td3v.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:1039`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:1293`; references: 1.
   - ID: `22583dd622a7a7d85dee`.
 - **Implementation and Implications of a Stealth Hard-Drive Backdoor**
   - URL: <https://www.ibr.cs.tu-bs.de/users/kurmus/papers/acsac13.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Rootkits.md:133`; references: 2.
+  - Source: `Draft/Rootkits.md:156`; references: 2.
   - ID: `49c4f27a01655d262748`.
 - **Recommendations on Anonymization Processes for Source IP Addresses Submitted for Future Analysis - ICANN(2018)**
   - URL: <https://www.icann.org/en/system/files/files/rssac-040-07aug18-en.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:977`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:1218`; references: 1.
   - ID: `8709389670905803ec13`.
 - **How They Did It: An Analysis of Emission Defeat Devices in Modern Automobiles**
   - URL: <https://www.ieee-security.org/TC/SP2017/papers/101.pdf>
@@ -5299,12 +5299,12 @@
 - **SENSORID: Sensor Calibration Fingerprinting for Smartphones - Jiexin Zhang, Alastair R. Beresford, Ian Sheret(2019)**
   - URL: <https://www.ieee-security.org/TC/SP2019/papers/405.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:929`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:1166`; references: 1.
   - ID: `efc60987a8f2e97fbb94`.
 - **TLS Renegotiation Vulnerability - IETF Presentation**
   - URL: <https://www.ietf.org/proceedings/76/slides/tls-7.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:267`; references: 2.
+  - Source: `Draft/CandE.md:304`; references: 2.
   - ID: `eac9f114d8b6bc0e7a3a`.
 - **Automation of Mutated Cross Site Scripting - Anchal Tiwari, J. Jeysree**
   - URL: <https://www.ijsr.net/archive/v4i4/SUB152876.pdf>
@@ -5399,7 +5399,7 @@
 - **Security of Things: An Implementers’ Guide to Cyber-Security for Internet of Things Devices and Beyond - NCC Group**
   - URL: <https://www.nccgroup.com/media/481272/2014-04-09_-_security_of_things_-_an_implementers_guide_to_cyber_security_for_internet_of_things_devices_and_beyond-2.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:223`; references: 1.
+  - Source: `Draft/Embedded.md:365`; references: 1.
   - ID: `3ad5ecf10334a7606327`.
 - **white paper**
   - URL: <https://www.nccgroup.com/media/481438/whitepaper-ben-web-filt.pdf>
@@ -5529,7 +5529,7 @@
 - **PCI-DSS V3.2.1**
   - URL: <https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `README.md:102`; references: 3.
+  - Source: `README.md:104`; references: 3.
   - ID: `840280be908de0f73b26`.
 - **PCI SSC Cloud  Computing  Guidelines - 4/2018**
   - URL: <https://www.pcisecuritystandards.org/pdfs/PCI_SSC_Cloud_Guidelines_v3.pdf>
@@ -5539,12 +5539,12 @@
 - **A Glance through the VPN Looking Glass: IPv6 Leakage and DNS Hijacking in Commercial VPN clients - Vasile C. Perta, Marco V. Barbera, Gareth Tyson, Hamed Haddadi, and Alessandro Mei(2/2015)**
   - URL: <https://www.petsymposium.org/2015/papers/02_Perta.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:1004`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:1254`; references: 1.
   - ID: `b19173cfecedd3ad1e2d`.
 - **Slides**
   - URL: <https://www.portalmasq.com/portal-defcon.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:332`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:468`; references: 1.
   - ID: `b0835b1c74cd825bd333`.
 - **SilverFish GroupThreat Actor Report - Prodaft TI(2021)**
   - URL: <https://www.prodaft.com/m/uploads/SilverFish_TLPWHITE.pdf>
@@ -5609,7 +5609,7 @@
 - **Unboxing the White-Box Practical attacks against Obfuscated Ciphers**
   - URL: <https://www.riscure.com/uploads/2017/09/eu-15-sanfelix-mune-dehaas-unboxing-the-white-box-wp_v1.1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:55`; references: 2.
+  - Source: `Draft/CandE.md:463`; references: 2.
   - ID: `b1ad31901187bd376501`.
 - **Slides**
   - URL: <https://www.romhack.io/dl-2020/RH2020-slides-Salvati.pdf>
@@ -5689,7 +5689,7 @@
 - **A Messy State of the Union: Taming the Composite State Machines of TLS**
   - URL: <https://www.smacktls.com/smack.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/CandE.md:237`; references: 2.
+  - Source: `Draft/CandE.md:272`; references: 2.
   - ID: `20410a7500c5ba4f4a58`.
 - **The Art of Powerful Questions: Catalyzing Insight, Innovation, and Action - Eric E. Vogt, Juanita Brown, David Isaacs(2020)**
   - URL: <https://www.sparc.bc.ca/wp-content/uploads/2020/11/the-art-of-powerful-questions.pdf>
@@ -5739,7 +5739,7 @@
 - **Slides**
   - URL: <https://www.synacktiv.com/ressources/zeronights_2018_turning_your_bmc_into_a_revolving_door.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/bios_uefi.md:252`; references: 2.
+  - Source: `Draft/bios_uefi.md:296`; references: 2.
   - ID: `20b757e17fa2c8906bdb`.
 - **The Birth of a Complete IE11 Exploit Under the New Exploit Mitigations**
   - URL: <https://www.syscan.org/index.php/download/get/aef11ba81927bf9aa02530bab85e303a/SyScan15%20Yuki%20Chen%20-%20The%20Birth%20of%20a%20Complete%20IE11%20Exploit%20Under%20the%20New%20Exploit%20Mitigations.pdf>
@@ -5749,7 +5749,7 @@
 - **GPS Spoofing Of UAV - YUAN Jian**
   - URL: <https://www.syscan360.org/slides/2015_EN_GPSSpoofingofUav_YuanJian.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:557`; references: 1.
+  - Source: `Draft/Embedded.md:780`; references: 1.
   - ID: `9f2b761b86869ca42d2d`.
 - **Code Reuse Attacks in PHP: Automated POP Chain Generation**
   - URL: <https://www.syssec.rub.de/media/emma/veroeffentlichungen/2014/09/10/POPChainGeneration-CCS14.pdf>
@@ -5824,12 +5824,12 @@
 - **Chipping Away at Censorship Firewalls with User-Generated Content**
   - URL: <https://www.usenix.org/legacy/event/sec10/tech/full_papers/Burnett.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:345`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:483`; references: 1.
   - ID: `beb4c110ff3afb76ea16`.
 - **Decoy Routing: Toward Unblockable Internet Communication**
   - URL: <https://www.usenix.org/legacy/events/foci11/tech/final_files/Karlin.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:140`; references: 1.
+  - Source: `Draft/AnonOpSecPrivacy.md:243`; references: 1.
   - ID: `3c69deb6aeab58ef45e5`.
 - **https://www.usenix.org/legacy/events/sec11/tech/full_papers/Clark.pdf**
   - URL: <https://www.usenix.org/legacy/events/sec11/tech/full_papers/Clark.pdf>
@@ -5854,7 +5854,7 @@
 - **GSMem: Data Exfiltration from Air-Gapped Computers over GSM Frequencies - usenix conference**
   - URL: <https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-guri-update.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/AnonOpSecPrivacy.md:582`; references: 3.
+  - Source: `Draft/AnonOpSecPrivacy.md:750`; references: 3.
   - ID: `6311ef69640ac0cba730`.
 - **All Your Biases Belong to Us: Breaking RC4 in WPA-TKIP and TLS (USENIX, 2015)**
   - URL: <https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-vanhoef.pdf>
@@ -5869,7 +5869,7 @@
 - **Lowering the USB Fuzzing Barrier by Transparent Two-Way Emulation**
   - URL: <https://www.usenix.org/system/files/conference/woot14/woot14-vantonder.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Embedded.md:393`; references: 1.
+  - Source: `Draft/Embedded.md:590`; references: 1.
   - ID: `5135526d96010ffe315b`.
 - **Scrutinizing WPA2 Password Generating Algorithms in Wireless Routers (WOOT, 2015)**
   - URL: <https://www.usenix.org/system/files/conference/woot15/woot15-paper-lorente.pdf>
@@ -5904,7 +5904,7 @@
 - **Duping the machine: malware strategies, post Sandbox detection**
   - URL: <https://www.virusbtn.com/pdf/conference_slides/2014/Wyke-VB2014.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:332`; references: 2.
+  - Source: `Draft/Malware.md:355`; references: 2.
   - ID: `4a9f9343fbabaa1beca0`.
 - **Dylib Hijacking on OS X**
   - URL: <https://www.virusbtn.com/pdf/magazine/2015/vb201503-dylib-hijacking.pdf>
@@ -5939,7 +5939,7 @@
 - **LOJAX: First UEFI rootkit found in the wild, courtesy of the Sednit group**
   - URL: <https://www.welivesecurity.com/wp-content/uploads/2018/09/ESET-LoJax.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Rootkits.md:72`; references: 1.
+  - Source: `Draft/Rootkits.md:87`; references: 1.
   - ID: `65b2b32ecc66d347da3f`.
 - **https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_InvisiMole.pdf**
   - URL: <https://www.welivesecurity.com/wp-content/uploads/2020/06/ESET_InvisiMole.pdf>
@@ -5969,7 +5969,7 @@
 - **Crafting Mac OS Rootkits**
   - URL: <https://www.zdziarski.com/blog/wp-content/uploads/2017/02/Crafting-macOS-Root-Kits.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Rootkits.md:66`; references: 1.
+  - Source: `Draft/Rootkits.md:79`; references: 1.
   - ID: `3463d3f9f2a1a2952081`.
 - **The Structure and Interpretation of the Computer Science Curriculum - Matthias Felleisen, Robert Bruce Findler, Matthew Flatt, Shriram Krishnamurthi**
   - URL: <https://www2.ccs.neu.edu/racket/pubs/jfp2004-fffk.pdf>
@@ -5994,12 +5994,12 @@
 - **Hacking/Exploiting/Cheating in Online Games (PDF)**
   - URL: <https://zdresearch.com/wp-content/uploads/2013/04/Exploiting-Online-Games.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Games.md:177`; references: 1.
+  - Source: `Draft/Games.md:236`; references: 1.
   - ID: `b538088ab4f234a51de7`.
 - **Tips For Reverse-Engineering Malicious Code - Lenny Zeltser**
   - URL: <https://zeltser.com/media/docs/reverse-engineering-malicious-code-tips.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `Draft/Malware.md:77`; references: 1.
+  - Source: `Draft/Malware.md:56`; references: 1.
   - ID: `6e2c71b136fce2a09424`.
 - **https://zeronights.ru/wp-content/uploads/2021/09/09_agarkov.pdf**
   - URL: <https://zeronights.ru/wp-content/uploads/2021/09/09_agarkov.pdf>

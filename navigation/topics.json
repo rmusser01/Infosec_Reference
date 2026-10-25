@@ -648,8 +648,124 @@
       "title": "Anonymity/OpSec/Privacy",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Android/iOS/Mobile",
+          "fragment": "ref-privacy-5",
+          "aliases": []
+        },
+        {
+          "label": "Communication Security",
+          "fragment": "ref-privacy-6",
+          "aliases": []
+        },
+        {
+          "label": "Data Collection",
+          "fragment": "ref-privacy-7",
+          "aliases": []
+        },
+        {
+          "label": "De-Anonymization",
+          "fragment": "ref-privacy-8",
+          "aliases": []
+        },
+        {
+          "label": "Journalism/Media Publishing",
+          "fragment": "ref-privacy-10",
+          "aliases": []
+        },
+        {
+          "label": "Achieving Anonymity",
+          "fragment": "ref-privacy-22",
+          "aliases": []
+        },
+        {
+          "label": "Cellular-Device Surveillance",
+          "fragment": "ref-privacy-25",
+          "aliases": []
+        },
+        {
+          "label": "Counter Surveillance",
+          "fragment": "ref-privacy-30",
+          "aliases": []
+        },
+        {
+          "label": "Disinformation & Propaganda",
+          "fragment": "ref-privacy-37",
+          "aliases": []
+        },
+        {
+          "label": "Documents (Phyiscal & Digital)",
+          "fragment": "ref-privacy-47",
+          "aliases": []
+        },
+        {
+          "label": "Emissions Security",
+          "fragment": "ref-privacy-50",
+          "aliases": []
+        },
+        {
+          "label": "Facial Identification",
+          "fragment": "ref-privacy-57",
+          "aliases": []
+        },
+        {
+          "label": "Facial Identification Anonymization",
+          "fragment": "ref-privacy-64",
+          "aliases": []
+        },
+        {
+          "label": "Human Intelligence",
+          "fragment": "ref-privacy-66",
+          "aliases": []
+        },
+        {
+          "label": "Modern Surveillance",
+          "fragment": "ref-privacy-68",
+          "aliases": []
+        },
+        {
+          "label": "Non-Modern Surveillance",
+          "fragment": "ref-privacy-83",
+          "aliases": []
+        },
+        {
+          "label": "Commercial Surveillance",
+          "fragment": "ref-privacy-85",
+          "aliases": []
+        },
+        {
+          "label": "Aerial Surveillance",
+          "fragment": "ref-privacy-88",
+          "aliases": []
+        },
+        {
+          "label": "Surveillance-Focused Companies",
+          "fragment": "ref-privacy-89",
+          "aliases": []
+        },
+        {
+          "label": "Mobile Device Surveillance",
+          "fragment": "ref-privacy-93",
+          "aliases": []
+        },
+        {
+          "label": "Network/Web Based Surveillance",
+          "fragment": "ref-privacy-98",
+          "aliases": []
+        },
+        {
+          "label": "OPSEC(Specifically)",
+          "fragment": "ref-privacy-107",
+          "aliases": []
+        },
+        {
+          "label": "Anonymity references",
+          "fragment": "ref-privacy-111",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Basic.md",
@@ -715,8 +831,34 @@
       "title": "BIOS/UEFI/Firmware Attacks/Defense",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Intel Management Engine(IME) / Active Management Technology(AMT)",
+          "fragment": "ref-firmware-2",
+          "aliases": []
+        },
+        {
+          "label": "UEFI",
+          "fragment": "ref-firmware-9",
+          "aliases": []
+        },
+        {
+          "label": "Exploitation",
+          "fragment": "ref-firmware-15",
+          "aliases": []
+        },
+        {
+          "label": "Firmware Analysis",
+          "fragment": "ref-firmware-21",
+          "aliases": []
+        },
+        {
+          "label": "Speculative Execution Bugs(Meltdown & Spectre)",
+          "fragment": "ref-firmware-27",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Building_A_Lab.md",
@@ -1002,8 +1144,154 @@
       "title": "Cryptography & Encryption",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Attacks",
+          "fragment": "ref-crypto-3",
+          "aliases": []
+        },
+        {
+          "label": "Auditing",
+          "fragment": "ref-crypto-4",
+          "aliases": []
+        },
+        {
+          "label": "Cryptograhic Frameworks/Libraries/Protocols",
+          "fragment": "ref-crypto-8",
+          "aliases": []
+        },
+        {
+          "label": "History",
+          "fragment": "ref-crypto-12",
+          "aliases": []
+        },
+        {
+          "label": "PGP",
+          "fragment": "ref-crypto-14",
+          "aliases": []
+        },
+        {
+          "label": "Secrets Management",
+          "fragment": "ref-crypto-15",
+          "aliases": []
+        },
+        {
+          "label": "Side Channel Attacks",
+          "fragment": "ref-crypto-16",
+          "aliases": []
+        },
+        {
+          "label": "Implementation Specific Stuff",
+          "fragment": "ref-crypto-17",
+          "aliases": []
+        },
+        {
+          "label": "Android",
+          "fragment": "ref-crypto-18",
+          "aliases": []
+        },
+        {
+          "label": "iOS",
+          "fragment": "ref-crypto-19",
+          "aliases": []
+        },
+        {
+          "label": "Bitlocker",
+          "fragment": "ref-crypto-20",
+          "aliases": []
+        },
+        {
+          "label": "Key Exchange",
+          "fragment": "ref-crypto-21",
+          "aliases": []
+        },
+        {
+          "label": "MD5",
+          "fragment": "ref-crypto-22",
+          "aliases": []
+        },
+        {
+          "label": "RSA",
+          "fragment": "ref-crypto-23",
+          "aliases": []
+        },
+        {
+          "label": "Signal",
+          "fragment": "ref-crypto-24",
+          "aliases": []
+        },
+        {
+          "label": "SSH",
+          "fragment": "ref-crypto-25",
+          "aliases": []
+        },
+        {
+          "label": "Secure Sockets Layer/Transport Layer Security",
+          "fragment": "ref-crypto-26",
+          "aliases": []
+        },
+        {
+          "label": "Encryption Software",
+          "fragment": "ref-crypto-34",
+          "aliases": []
+        },
+        {
+          "label": "Key Management",
+          "fragment": "ref-crypto-35",
+          "aliases": []
+        },
+        {
+          "label": "Hash Identification",
+          "fragment": "ref-crypto-36",
+          "aliases": []
+        },
+        {
+          "label": "Attack Implementation/Testing",
+          "fragment": "ref-crypto-37",
+          "aliases": []
+        },
+        {
+          "label": "Solver",
+          "fragment": "ref-crypto-38",
+          "aliases": []
+        },
+        {
+          "label": "Toolkits",
+          "fragment": "ref-crypto-39",
+          "aliases": []
+        },
+        {
+          "label": "Cryptocurrencies",
+          "fragment": "ref-crypto-42",
+          "aliases": []
+        },
+        {
+          "label": "Bitcoin",
+          "fragment": "ref-crypto-44",
+          "aliases": []
+        },
+        {
+          "label": "Ethereum",
+          "fragment": "ref-crypto-45",
+          "aliases": []
+        },
+        {
+          "label": "Monero",
+          "fragment": "ref-crypto-46",
+          "aliases": []
+        },
+        {
+          "label": "Zcash",
+          "fragment": "ref-crypto-47",
+          "aliases": []
+        },
+        {
+          "label": "Smart Contract Security",
+          "fragment": "ref-crypto-49",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/CTFs_Wargames.md",
@@ -1237,8 +1525,134 @@
       "title": "Embedded Device Security",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Drone security",
+          "fragment": "ref-embedded-1",
+          "aliases": []
+        },
+        {
+          "label": "Attacking Routers(Firmware)",
+          "fragment": "ref-embedded-10",
+          "aliases": []
+        },
+        {
+          "label": "Cable Modem Hacking",
+          "fragment": "ref-embedded-14",
+          "aliases": []
+        },
+        {
+          "label": "Credit Cards",
+          "fragment": "ref-embedded-19",
+          "aliases": []
+        },
+        {
+          "label": "esp8266 H/W related",
+          "fragment": "ref-embedded-23",
+          "aliases": []
+        },
+        {
+          "label": "Flash Memory",
+          "fragment": "ref-embedded-24",
+          "aliases": []
+        },
+        {
+          "label": "Firmware(Non-Specific)",
+          "fragment": "ref-embedded-30",
+          "aliases": []
+        },
+        {
+          "label": "Internet of Things (IoT)",
+          "fragment": "ref-embedded-36",
+          "aliases": []
+        },
+        {
+          "label": "JTAG",
+          "fragment": "ref-embedded-43",
+          "aliases": []
+        },
+        {
+          "label": "Medical Devices",
+          "fragment": "ref-embedded-48",
+          "aliases": []
+        },
+        {
+          "label": "Miscellaneous Devices",
+          "fragment": "ref-embedded-55",
+          "aliases": []
+        },
+        {
+          "label": "Lightning/Thunderbolt",
+          "fragment": "ref-embedded-56",
+          "aliases": []
+        },
+        {
+          "label": "PCI",
+          "fragment": "ref-embedded-62",
+          "aliases": []
+        },
+        {
+          "label": "Printers",
+          "fragment": "ref-embedded-68",
+          "aliases": []
+        },
+        {
+          "label": "Smart TVs/Monitors",
+          "fragment": "ref-embedded-69",
+          "aliases": []
+        },
+        {
+          "label": "SPI(Serial Peripheral Interface Bus)",
+          "fragment": "ref-embedded-75",
+          "aliases": []
+        },
+        {
+          "label": "SD Cards",
+          "fragment": "ref-embedded-81",
+          "aliases": []
+        },
+        {
+          "label": "PCB Related",
+          "fragment": "ref-embedded-87",
+          "aliases": []
+        },
+        {
+          "label": "Point-of-Sale",
+          "fragment": "ref-embedded-88",
+          "aliases": []
+        },
+        {
+          "label": "Secure Tokens",
+          "fragment": "ref-embedded-95",
+          "aliases": []
+        },
+        {
+          "label": "USB",
+          "fragment": "ref-embedded-101",
+          "aliases": []
+        },
+        {
+          "label": "SIM Cards",
+          "fragment": "ref-embedded-109",
+          "aliases": []
+        },
+        {
+          "label": "Smartcards",
+          "fragment": "ref-embedded-114",
+          "aliases": []
+        },
+        {
+          "label": "Voting Machines",
+          "fragment": "ref-embedded-120",
+          "aliases": []
+        },
+        {
+          "label": "Specific Attacks",
+          "fragment": "ref-embedded-121",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Exfiltration.md",
@@ -1514,8 +1928,114 @@
       "title": "Game Hacking",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Writeups",
+          "fragment": "ref-games-4",
+          "aliases": []
+        },
+        {
+          "label": "Non-Specific Tools",
+          "fragment": "ref-games-5",
+          "aliases": []
+        },
+        {
+          "label": "Nintendo",
+          "fragment": "ref-games-6",
+          "aliases": []
+        },
+        {
+          "label": "Nintendo Gameboy/Pocket/Color/Advance",
+          "fragment": "ref-games-7",
+          "aliases": []
+        },
+        {
+          "label": "Nintendo 3DS",
+          "fragment": "ref-games-8",
+          "aliases": []
+        },
+        {
+          "label": "Nintendo Entertainment System",
+          "fragment": "ref-games-9",
+          "aliases": []
+        },
+        {
+          "label": "Nintendo Super Nintendo",
+          "fragment": "ref-games-10",
+          "aliases": []
+        },
+        {
+          "label": "Nintendo64",
+          "fragment": "ref-games-11",
+          "aliases": []
+        },
+        {
+          "label": "Nintendo Gamecube",
+          "fragment": "ref-games-12",
+          "aliases": []
+        },
+        {
+          "label": "Nintendo Wii",
+          "fragment": "ref-games-13",
+          "aliases": []
+        },
+        {
+          "label": "Nintendo WiiU",
+          "fragment": "ref-games-14",
+          "aliases": []
+        },
+        {
+          "label": "Nintendo Switch",
+          "fragment": "ref-games-16",
+          "aliases": []
+        },
+        {
+          "label": "Sony",
+          "fragment": "ref-games-17",
+          "aliases": []
+        },
+        {
+          "label": "PSP / PS Vita",
+          "fragment": "ref-games-18",
+          "aliases": []
+        },
+        {
+          "label": "Sony PlayStation 1",
+          "fragment": "ref-games-19",
+          "aliases": []
+        },
+        {
+          "label": "Sony PlayStation 2",
+          "fragment": "ref-games-20",
+          "aliases": []
+        },
+        {
+          "label": "Sony PlayStation 3",
+          "fragment": "ref-games-21",
+          "aliases": []
+        },
+        {
+          "label": "Sony PlayStation 4",
+          "fragment": "ref-games-22",
+          "aliases": []
+        },
+        {
+          "label": "PC Games",
+          "fragment": "ref-games-23",
+          "aliases": []
+        },
+        {
+          "label": "BattleEye",
+          "fragment": "ref-games-29",
+          "aliases": []
+        },
+        {
+          "label": "Game Programming Papers",
+          "fragment": "ref-games-30",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/honeypot.md",
@@ -1752,8 +2272,74 @@
       "title": "Malware",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Becoming a Malware Analyst",
+          "fragment": "ref-malware-4",
+          "aliases": []
+        },
+        {
+          "label": "General Analysis",
+          "fragment": "ref-malware-6",
+          "aliases": []
+        },
+        {
+          "label": "Android",
+          "fragment": "ref-malware-7",
+          "aliases": []
+        },
+        {
+          "label": "Botnets",
+          "fragment": "ref-malware-9",
+          "aliases": []
+        },
+        {
+          "label": "Hashing",
+          "fragment": "ref-malware-17",
+          "aliases": []
+        },
+        {
+          "label": "Malware Repos",
+          "fragment": "ref-malware-19",
+          "aliases": []
+        },
+        {
+          "label": "Network Analysis",
+          "fragment": "ref-malware-20",
+          "aliases": []
+        },
+        {
+          "label": "Malware Scanner/Identifier Services(Is it identified/Malicious?)",
+          "fragment": "ref-malware-23",
+          "aliases": []
+        },
+        {
+          "label": "(Un)Packers/Encoders",
+          "fragment": "ref-malware-24",
+          "aliases": []
+        },
+        {
+          "label": "Virtual Machines & Anti-Analysis Tricks",
+          "fragment": "ref-malware-28",
+          "aliases": []
+        },
+        {
+          "label": "Dynamic Analysis",
+          "fragment": "ref-malware-29",
+          "aliases": []
+        },
+        {
+          "label": "Static Analysis",
+          "fragment": "ref-malware-33",
+          "aliases": []
+        },
+        {
+          "label": "Honeypots",
+          "fragment": "ref-malware-34",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Network_Attacks.md",
@@ -3073,8 +3659,34 @@
       "title": "Rootkits",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Rootkits",
+          "fragment": "ref-rootkits-1",
+          "aliases": []
+        },
+        {
+          "label": "Platforms",
+          "fragment": "ref-rootkits-4",
+          "aliases": []
+        },
+        {
+          "label": "Defense Against/Identifying",
+          "fragment": "ref-rootkits-11",
+          "aliases": []
+        },
+        {
+          "label": "Interesting Things",
+          "fragment": "ref-rootkits-12",
+          "aliases": []
+        },
+        {
+          "label": "Samples",
+          "fragment": "ref-rootkits-13",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/SE.md",
@@ -3217,8 +3829,14 @@
       "title": "UI/UX Design",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "General User Interface/User Experience Design",
+          "fragment": "ref-ux-1",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Web.md",
@@ -3492,6 +4110,234 @@
           "aliases": []
         }
       ]
+    },
+    {
+      "path": "Draft/Crypto_Encrypt.md",
+      "title": "Cryptography: Additional References",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Attacks (additional cryptography)",
+          "fragment": "ref-crypto-extra-3",
+          "aliases": []
+        },
+        {
+          "label": "Auditing (additional cryptography)",
+          "fragment": "ref-crypto-extra-4",
+          "aliases": []
+        },
+        {
+          "label": "Cryptograhic Frameworks/Libraries/Protocols (additional cryptography)",
+          "fragment": "ref-crypto-extra-8",
+          "aliases": []
+        },
+        {
+          "label": "History (additional cryptography)",
+          "fragment": "ref-crypto-extra-12",
+          "aliases": []
+        },
+        {
+          "label": "Laws (additional cryptography)",
+          "fragment": "ref-crypto-extra-13",
+          "aliases": []
+        },
+        {
+          "label": "Perfect Forward Secrecy (additional cryptography)",
+          "fragment": "ref-crypto-extra-15",
+          "aliases": []
+        },
+        {
+          "label": "PGP (additional cryptography)",
+          "fragment": "ref-crypto-extra-16",
+          "aliases": []
+        },
+        {
+          "label": "Secrets Management (additional cryptography)",
+          "fragment": "ref-crypto-extra-17",
+          "aliases": []
+        },
+        {
+          "label": "Side Channel Attacks (additional cryptography)",
+          "fragment": "ref-crypto-extra-18",
+          "aliases": []
+        },
+        {
+          "label": "Implementation Specific Stuff (additional cryptography)",
+          "fragment": "ref-crypto-extra-19",
+          "aliases": []
+        },
+        {
+          "label": "Android (additional cryptography)",
+          "fragment": "ref-crypto-extra-20",
+          "aliases": []
+        },
+        {
+          "label": "iOS (additional cryptography)",
+          "fragment": "ref-crypto-extra-21",
+          "aliases": []
+        },
+        {
+          "label": "Bitlocker (additional cryptography)",
+          "fragment": "ref-crypto-extra-22",
+          "aliases": []
+        },
+        {
+          "label": "Key Exchange (additional cryptography)",
+          "fragment": "ref-crypto-extra-23",
+          "aliases": []
+        },
+        {
+          "label": "MD5 (additional cryptography)",
+          "fragment": "ref-crypto-extra-24",
+          "aliases": []
+        },
+        {
+          "label": "RSA (additional cryptography)",
+          "fragment": "ref-crypto-extra-25",
+          "aliases": []
+        },
+        {
+          "label": "Signal (additional cryptography)",
+          "fragment": "ref-crypto-extra-26",
+          "aliases": []
+        },
+        {
+          "label": "SSH (additional cryptography)",
+          "fragment": "ref-crypto-extra-27",
+          "aliases": []
+        },
+        {
+          "label": "Secure Sockets Layer/Transport Layer Security (additional cryptography)",
+          "fragment": "ref-crypto-extra-28",
+          "aliases": []
+        },
+        {
+          "label": "Encryption Software (additional cryptography)",
+          "fragment": "ref-crypto-extra-36",
+          "aliases": []
+        },
+        {
+          "label": "Key Management (additional cryptography)",
+          "fragment": "ref-crypto-extra-37",
+          "aliases": []
+        },
+        {
+          "label": "Hash Identification (additional cryptography)",
+          "fragment": "ref-crypto-extra-38",
+          "aliases": []
+        },
+        {
+          "label": "Attack Implementation/Testing (additional cryptography)",
+          "fragment": "ref-crypto-extra-39",
+          "aliases": []
+        },
+        {
+          "label": "Solver (additional cryptography)",
+          "fragment": "ref-crypto-extra-40",
+          "aliases": []
+        },
+        {
+          "label": "Toolkits (additional cryptography)",
+          "fragment": "ref-crypto-extra-41",
+          "aliases": []
+        },
+        {
+          "label": "Cryptocurrencies (additional cryptography)",
+          "fragment": "ref-crypto-extra-44",
+          "aliases": []
+        },
+        {
+          "label": "Bitcoin (additional cryptography)",
+          "fragment": "ref-crypto-extra-46",
+          "aliases": []
+        },
+        {
+          "label": "Ethereum (additional cryptography)",
+          "fragment": "ref-crypto-extra-47",
+          "aliases": []
+        },
+        {
+          "label": "Monero (additional cryptography)",
+          "fragment": "ref-crypto-extra-48",
+          "aliases": []
+        },
+        {
+          "label": "Zcash (additional cryptography)",
+          "fragment": "ref-crypto-extra-49",
+          "aliases": []
+        },
+        {
+          "label": "Smart Contract Security (additional cryptography)",
+          "fragment": "ref-crypto-extra-51",
+          "aliases": []
+        }
+      ]
+    },
+    {
+      "path": "Draft/SCADA.md",
+      "title": "SCADA/Industrial Control Systems",
+      "category": "Reference topics",
+      "aliases": [],
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "EDIFACT",
+          "fragment": "ref-ics-3",
+          "aliases": []
+        },
+        {
+          "label": "Modbus",
+          "fragment": "ref-ics-4",
+          "aliases": []
+        },
+        {
+          "label": "Wireless",
+          "fragment": "ref-ics-6",
+          "aliases": []
+        },
+        {
+          "label": "General Tools",
+          "fragment": "ref-ics-8",
+          "aliases": []
+        },
+        {
+          "label": "Assessment Tools",
+          "fragment": "ref-ics-9",
+          "aliases": []
+        },
+        {
+          "label": "Honeypots",
+          "fragment": "ref-ics-10",
+          "aliases": []
+        },
+        {
+          "label": "Passwords",
+          "fragment": "ref-ics-11",
+          "aliases": []
+        },
+        {
+          "label": "Simulation Software",
+          "fragment": "ref-ics-12",
+          "aliases": []
+        },
+        {
+          "label": "Testing Tools",
+          "fragment": "ref-ics-13",
+          "aliases": []
+        },
+        {
+          "label": "Assessment Testing(/Methodology)",
+          "fragment": "ref-ics-14",
+          "aliases": []
+        },
+        {
+          "label": "Threat Hunting",
+          "fragment": "ref-ics-15",
+          "aliases": []
+        }
+      ]
     }
   ],
   "tocPages": [
@@ -3523,6 +4369,16 @@
     "Draft/Network_Attacks.md",
     "Draft/Physical_Security.md",
     "Draft/Phishing.md",
-    "Draft/Wireless.md"
+    "Draft/Wireless.md",
+    "Draft/AnonOpSecPrivacy.md",
+    "Draft/CandE.md",
+    "Draft/Crypto_Encrypt.md",
+    "Draft/Embedded.md",
+    "Draft/Games.md",
+    "Draft/Malware.md",
+    "Draft/Rootkits.md",
+    "Draft/SCADA.md",
+    "Draft/UX.md",
+    "Draft/bios_uefi.md"
   ]
 }

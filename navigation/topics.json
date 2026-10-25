@@ -1148,8 +1148,104 @@
       "title": "Exploit Development",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Acquiring Old/Vulnerable Software",
+          "fragment": "ref-exploit-3",
+          "aliases": []
+        },
+        {
+          "label": "Practice Exploit Development / Structured Learning",
+          "fragment": "ref-exploit-4",
+          "aliases": []
+        },
+        {
+          "label": "Buffer overflows:",
+          "fragment": "ref-exploit-5",
+          "aliases": []
+        },
+        {
+          "label": "Return-into-lib / Return oriented programming:",
+          "fragment": "ref-exploit-6",
+          "aliases": []
+        },
+        {
+          "label": "Blind ROP",
+          "fragment": "ref-exploit-7",
+          "aliases": []
+        },
+        {
+          "label": "Signal ROP",
+          "fragment": "ref-exploit-8",
+          "aliases": []
+        },
+        {
+          "label": "Jump Oriented Programming",
+          "fragment": "ref-exploit-9",
+          "aliases": []
+        },
+        {
+          "label": "Heap exploitation:",
+          "fragment": "ref-exploit-10",
+          "aliases": []
+        },
+        {
+          "label": "Format string exploitation:",
+          "fragment": "ref-exploit-11",
+          "aliases": []
+        },
+        {
+          "label": "Integer overflows:",
+          "fragment": "ref-exploit-12",
+          "aliases": []
+        },
+        {
+          "label": "Kernel Exploitation",
+          "fragment": "ref-exploit-16",
+          "aliases": []
+        },
+        {
+          "label": "Addendum: Use-After-Free",
+          "fragment": "ref-exploit-17",
+          "aliases": []
+        },
+        {
+          "label": "Exploit Development Tutorials",
+          "fragment": "ref-exploit-18",
+          "aliases": []
+        },
+        {
+          "label": "Shellcode",
+          "fragment": "ref-exploit-25",
+          "aliases": []
+        },
+        {
+          "label": "Bypassing Exploit Protections/Mitigations & Corresponding literature",
+          "fragment": "ref-exploit-28",
+          "aliases": []
+        },
+        {
+          "label": "ARM Specific Exploit Development",
+          "fragment": "ref-exploit-36",
+          "aliases": []
+        },
+        {
+          "label": "Windows Specific",
+          "fragment": "ref-exploit-51",
+          "aliases": []
+        },
+        {
+          "label": "Windows Heap Exploitation",
+          "fragment": "ref-exploit-52",
+          "aliases": []
+        },
+        {
+          "label": "Exploit Development Practice Lab Setup",
+          "fragment": "ref-exploit-82",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/DFIR.md",
@@ -1243,8 +1339,64 @@
       "title": "Fuzzing & Bug Hunting",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Bug Hunting in Source Code",
+          "fragment": "ref-fuzz-4",
+          "aliases": []
+        },
+        {
+          "label": "Dynamic Fuzzing",
+          "fragment": "ref-fuzz-11",
+          "aliases": []
+        },
+        {
+          "label": "Static Fuzzing",
+          "fragment": "ref-fuzz-12",
+          "aliases": []
+        },
+        {
+          "label": "Android Bug Hunting/Fuzzing",
+          "fragment": "ref-fuzz-13",
+          "aliases": []
+        },
+        {
+          "label": "Browser Bug Hunting/Fuzzing",
+          "fragment": "ref-fuzz-14",
+          "aliases": []
+        },
+        {
+          "label": "C/C++ Fuzzing",
+          "fragment": "ref-fuzz-15",
+          "aliases": []
+        },
+        {
+          "label": "Network Protocols Bug Hunting/Fuzzing",
+          "fragment": "ref-fuzz-21",
+          "aliases": []
+        },
+        {
+          "label": "Source Code Fuzzing/Bug Hunting",
+          "fragment": "ref-fuzz-28",
+          "aliases": []
+        },
+        {
+          "label": "Windows Fuzzing/Bug Hunting",
+          "fragment": "ref-fuzz-32",
+          "aliases": []
+        },
+        {
+          "label": "AFL",
+          "fragment": "ref-fuzz-34",
+          "aliases": []
+        },
+        {
+          "label": "Peach",
+          "fragment": "ref-fuzz-35",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Games.md",
@@ -1591,8 +1743,114 @@
       "title": "AppSec/Programming Stuff",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "Code Review",
+          "fragment": "ref-appsec-9",
+          "aliases": []
+        },
+        {
+          "label": "Secure/Software/Systems Development Life Cycle(SDLC/SDL)",
+          "fragment": "ref-appsec-18",
+          "aliases": []
+        },
+        {
+          "label": "Software Testing",
+          "fragment": "ref-appsec-19",
+          "aliases": []
+        },
+        {
+          "label": "Supply-Chain Management",
+          "fragment": "ref-appsec-20",
+          "aliases": []
+        },
+        {
+          "label": "Threat Modeling",
+          "fragment": "ref-appsec-21",
+          "aliases": []
+        },
+        {
+          "label": "Specific Vulnerabilitiy Mitigation/Prevention",
+          "fragment": "ref-appsec-22",
+          "aliases": []
+        },
+        {
+          "label": "Source Code Analysis",
+          "fragment": "ref-appsec-30",
+          "aliases": []
+        },
+        {
+          "label": "Infrastructure-as-Code Scanners & Linters",
+          "fragment": "ref-appsec-43",
+          "aliases": []
+        },
+        {
+          "label": "Application Security Pipeline",
+          "fragment": "ref-appsec-44",
+          "aliases": []
+        },
+        {
+          "label": "Continous Integration",
+          "fragment": "ref-appsec-45",
+          "aliases": []
+        },
+        {
+          "label": "Continous Deployment",
+          "fragment": "ref-appsec-46",
+          "aliases": []
+        },
+        {
+          "label": "Static Analysis Approaches & Tooling",
+          "fragment": "ref-appsec-49",
+          "aliases": []
+        },
+        {
+          "label": "Dynamic Analysis - Continuous Scanning",
+          "fragment": "ref-appsec-50",
+          "aliases": []
+        },
+        {
+          "label": "Dependency Management",
+          "fragment": "ref-appsec-51",
+          "aliases": []
+        },
+        {
+          "label": "C/C++",
+          "fragment": "ref-appsec-59",
+          "aliases": []
+        },
+        {
+          "label": "C# programming",
+          "fragment": "ref-appsec-60",
+          "aliases": []
+        },
+        {
+          "label": "Go",
+          "fragment": "ref-appsec-61",
+          "aliases": []
+        },
+        {
+          "label": "Java",
+          "fragment": "ref-appsec-62",
+          "aliases": []
+        },
+        {
+          "label": "Javascript",
+          "fragment": "ref-appsec-63",
+          "aliases": []
+        },
+        {
+          "label": "Python",
+          "fragment": "ref-appsec-69",
+          "aliases": []
+        },
+        {
+          "label": "Rust",
+          "fragment": "ref-appsec-71",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Rants&Writeups/README.md",
@@ -1623,8 +1881,64 @@
       "title": "Reverse Engineering",
       "category": "Reference topics",
       "aliases": [],
-      "tocDepth": 3,
-      "subjects": []
+      "tocDepth": 4,
+      "subjects": [
+        {
+          "label": "General Tools",
+          "fragment": "ref-reverse-9",
+          "aliases": []
+        },
+        {
+          "label": "Debuggers",
+          "fragment": "ref-reverse-10",
+          "aliases": []
+        },
+        {
+          "label": "Decompilers & Disassemblers",
+          "fragment": "ref-reverse-11",
+          "aliases": []
+        },
+        {
+          "label": "File Formats",
+          "fragment": "ref-reverse-12",
+          "aliases": []
+        },
+        {
+          "label": "Frameworks",
+          "fragment": "ref-reverse-14",
+          "aliases": []
+        },
+        {
+          "label": "Programming Language Specifics/Libraries",
+          "fragment": "ref-reverse-15",
+          "aliases": []
+        },
+        {
+          "label": "Anti-Reverse Engineering Techniques & Countermeasures",
+          "fragment": "ref-reverse-16",
+          "aliases": []
+        },
+        {
+          "label": "Hardware Reverse Engineering",
+          "fragment": "ref-reverse-17",
+          "aliases": []
+        },
+        {
+          "label": ".NET Related",
+          "fragment": "ref-reverse-18",
+          "aliases": []
+        },
+        {
+          "label": "Writeups",
+          "fragment": "ref-reverse-19",
+          "aliases": []
+        },
+        {
+          "label": "Binary Instrumentation",
+          "fragment": "ref-reverse-22",
+          "aliases": []
+        }
+      ]
     },
     {
       "path": "Draft/Rootkits.md",
@@ -1707,6 +2021,10 @@
     "Draft/Docs_and_Reports.md",
     "Draft/threatmodel.md",
     "Draft/Osint.md",
-    "Draft/Exfiltration.md"
+    "Draft/Exfiltration.md",
+    "Draft/Fuzzing.md",
+    "Draft/Exploit_Dev.md",
+    "Draft/RE.md",
+    "Draft/Programming_Language_Security.md"
   ]
 }

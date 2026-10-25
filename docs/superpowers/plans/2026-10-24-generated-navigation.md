@@ -17,7 +17,7 @@ The unchecked implementation steps below are the original historical plan, not a
 | Task | Current state |
 |---|---|
 | 1–5 | Restored from the patch; parser, generator, pilot, Docsify, and CI/check tooling verified locally. Desktop review found and corrected filename-case and search-cache bugs. |
-| 6 | Partial: external reporting exists; pilot browser review, Cloud/Containers, Basic/Building a Lab/Career/Classes-Training, and Documentation-Reporting/Threat Modeling/OSINT/Exfiltration migrations are complete. 260 legacy error occurrences remain for later reviewable groups. No broad external validation ran. |
+| 6 | Partial: external reporting exists; pilot browser review, Cloud/Containers, Basic/Building a Lab/Career/Classes-Training, Documentation-Reporting/Threat Modeling/OSINT/Exfiltration, and Fuzzing/Exploit Development/Reverse Engineering/Programming Language Security migrations are complete (17 main topics). 200 legacy error occurrences across 23 pages remain for later reviewable groups. No broad external validation ran. |
 | 7 | Partial: inventory, classification, and offline archive planning exist. Browsertrix capture, enforced filtering/network scope, WARC verification, replay, and durable storage remain pending. Docker is available locally. |
 | Later processing | PDF/OCR, captions/transcription, other extraction, and search deployment remain separate future work. |
 

@@ -41,11 +41,16 @@ for (const [path, original] of Object.entries(snapshot))
     const resources = doc.links
       .filter((link) => link.kind === "link" && /^https?:/.test(link.url))
       .map((link) => link.url);
-    for (const url of original.parsedExternal) {
+    for (const originalUrl of original.parsedExternal) {
+      const url =
+        original.urlCorrections?.find((change) => change.from === originalUrl)
+          ?.to ?? originalUrl;
       const index = resources.indexOf(url);
       assert(index >= 0, `Lost rendered resource ${url}`);
       resources.splice(index, 1);
     }
+    for (const block of original.codeBlocks ?? [])
+      assert(source.includes(block), `Code example changed in ${path}`);
     for (const fragment of original.anchors)
       assert(
         doc.anchors.some((a) => a.fragment === fragment),

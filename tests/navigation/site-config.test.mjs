@@ -42,6 +42,10 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
       "threatmodel",
       "Osint",
       "Exfiltration",
+      "Fuzzing",
+      "Exploit_Dev",
+      "RE",
+      "Programming_Language_Security",
     ]) {
       const router = {
         getBasePath: () => "/docs/",
@@ -70,6 +74,18 @@ test("checked-in Docsify renderer preserves pilot ToC targets in rendered DOM", 
         a.getAttribute("href")?.startsWith("#ref-"),
       );
       assert(links.length > 3, `No generated ToC links rendered for ${path}`);
+      if (path === "Exploit_Dev") {
+        for (const [id, title] of [
+          ["ref-exploit-27", "Windows Specific"],
+          ["ref-exploit-shellcode-techniques", "Shellcode techniques"],
+          ["ref-exploit-shellcode-reference", "Shellcode reference/resources"],
+          ["ref-exploit-shellcode-repls", "Shellcode REPLs"],
+          ["ref-exploit-shellcode-tools", "Shellcode tools"],
+        ]) {
+          assert.equal(body.querySelector(`[id="${id}"]`)?.closest("h4")?.textContent, title);
+          assert(links.some((link) => link.getAttribute("href") === "#" + id));
+        }
+      }
       for (const link of links)
         assert(
           body.querySelector(`[id="${link.getAttribute("href").slice(1)}"]`),

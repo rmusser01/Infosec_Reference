@@ -46,3 +46,12 @@ All 22 group errors are retired; 274 error occurrences / 266 legacy keys remain 
 Documentation/Reporting, Threat Modeling, OSINT, and Exfiltration now use generated ToCs and selected subject entries. Unsorted references remain on their respective pages; only maintenance instructions moved to the backlog. Existing URL multisets and legacy destinations are preserved, including Writingrfp and the former Sort/End Sort anchors. Native Chromium verified a search destination in each page and a deep-route reload.
 
 All 14 group errors are retired: 260 error occurrences / 252 legacy keys remain elsewhere. The compiler comparison retained reporting 166, threat modeling 29, OSINT 211, and exfiltration 70 rendered external-link occurrences. Inventories still contain 21,746 unique URLs; no external validation or archive capture ran.
+
+
+## Testing and development references group
+
+Fuzzing, Exploit Development, Reverse Engineering and Programming Language Security now use managed ToCs and 62 selected index subjects. Linked unsorted notes, code examples and legacy destinations are retained. The obsolete exploit-lab GitHub path was intentionally corrected to the existing tracked writeup and recorded in the preservation fixture.
+
+All 60 group errors are retired: 200 occurrences / 192 legacy keys remain across 23 other pages. Seventeen main topics have managed ToCs; 31 remain to review/migrate where useful. Compiler coverage and native Chromium search/deep routes cover all four new pages. Review caught and corrected the Windows shellcode heading depth/scope; its three original references are separate from general techniques, reference material, REPLs and tools. Corrected output retains all 531 rendered external-link occurrences on that page, with the one documented URL correction.
+
+The full 51-test suite passes; navigation check has no new/stale diagnostics, and repeated generation reports no changes. Inventories still contain 21,746 unique URLs. External validation, capture and production deployment remain unverified.

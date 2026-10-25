@@ -195,3 +195,28 @@ Source-list planning note moved from the Sort preamble:
 ```text
 Sort tools into categories of type, i.e. physical network, wireless(types thereof) etc.
 ```
+
+## Draft/Fuzzing.md
+
+```text
+* Add Descriptions/generals to types of fuzzing
+```
+
+## Draft/Exploit_Dev.md
+
+```text
+* Sort tools better, like enviromental tools vs use-specific tools
+* Corelan, swift, primal Exploit Series
+* Add more sites to Acquiring Old/Vulnerable Software
+* More sites to structured learning
+* Add ARM stuff
+* Add more on Borrowed-Instruction-Set Computing
+```
+
+## Draft/RE.md
+
+```text
+* **ToDo**
+	* A proper ToC
+	* Sort bottom section
+```

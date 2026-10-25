@@ -34,7 +34,7 @@
 - **Advanced Buffer Overflow Methods**
   - URL: <http://www.cs.tau.ac.il/tausec/lectures/Advanced_Buffer_Overflow_Methods.ppt>
   - Candidate type: slides; status: unverified / pending.
-  - Source: `Draft/Exploit_Dev.md:320`; references: 1.
+  - Source: `Draft/Exploit_Dev.md:265`; references: 1.
   - ID: `00d0f93c037222eb3446`.
 - **Toolkit**
   - URL: <http://www.exumbraops.com/s/krbtrickstar.gz>

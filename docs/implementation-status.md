@@ -6,7 +6,7 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 
 - Shared Markdown parser and offline navigation audit, including explicit HTML anchors and GitHub heading fragments.
 - One manifest for 48 main topics, generated README/site topic navigation, sidebar, selective alphabetical subject index, and full reference search paths.
-- Generated ToCs and real navigable headings for thirteen pages: AD, DFIR, logging/monitoring/threat hunting, Cloud, Containers, Basic, Building a Lab, Career, Classes/Training, Documentation/Reporting, Threat Modeling, OSINT, and Exfiltration; original external URL tokens and explicit anchor names are regression-checked.
+- Generated ToCs and real navigable headings for seventeen pages: AD, DFIR, logging/monitoring/threat hunting, Cloud, Containers, Basic, Building a Lab, Career, Classes/Training, Documentation/Reporting, Threat Modeling, OSINT, Exfiltration, Fuzzing, Exploit Development, Reverse Engineering, and Programming Language Security; original external URL tokens and explicit anchor names are regression-checked.
 - Docsify configuration repair and narrow search-plugin fixes for empty heading bodies, HTML titles, and explicit-anchor result destinations.
 - Internal navigation checks with individual legacy exemptions and stale-exemption detection; read-only CI workflow.
 - Parser-generated processing lists and a separate progress ledger that survives regeneration.
@@ -14,7 +14,7 @@ Branch: `codex/generated-navigation` (desktop continuation; original export: `im
 
 ## Measured results
 
-Initial internal errors: 334. After pilot: 305 legacy errors remained. After Cloud/Containers: 296 remained. After foundations: 274 remained. After assessment references: 260 legacy error occurrences remain in other pages; managed navigation and all thirteen migrated pages have zero internal errors. The audit intentionally continues to report that debt.
+Initial internal errors: 334. After pilot: 305 legacy errors remained. After Cloud/Containers: 296 remained. After foundations: 274 remained. After assessment references: 260 remained. After testing/development references: 200 legacy error occurrences / 192 distinct keys remain across 23 other pages; managed navigation and all seventeen migrated pages have zero internal errors. The audit intentionally continues to report that debt.
 
 Current provisional resource candidates: 1,199 PDFs, 1,458 videos, 23 other non-text; 19,066 URLs remain unknown until response/content confirmation. These are source-derived inventory counts, not verified content types or download counts.
 
@@ -22,10 +22,11 @@ Automated tests exercise the actual checked-in Docsify compiler and application 
 
 ## Remaining work
 
-- Continue migrating remaining pages and retiring their legacy-error entries in reviewable groups. Pilot browser review, Cloud/Containers, foundations, and the four-page assessment-reference group are complete.
+- Review the remaining 31 of 48 main-topic pages and migrate where useful, retiring their legacy-error entries in reviewable groups. Existing functional directory landings need review rather than forced ToCs. Secondary pages also have legacy debt. The largest remaining error groups are Defense (29), Web (26), RT (23), and Windows privilege escalation/post-exploitation (19).
+- Complete collection-wide GitHub/Docsify navigation and search QA, and resolve inline-anchor duplicate IDs/empty heading permalinks and the missing favicon. The seventeen migrated pages have compiler/browser evidence; production deployment remains unverified.
 - Configure Browsertrix on the available Docker runtime and choose a durable archive destination; implement the enforced capture adapter, article-image filtering, WARC verification, offline replay, and storage/retrieval pilot. The archive policy file describes intent, not implemented enforcement.
 - Run external batches with evidence-aware capture/queue routing. No full external validation or web capture has run.
-- Implement PDF extraction/OCR, video captions/transcription, other extractors, and search indexing in later processing stages.
+- Separately scoped later processing: PDF extraction/OCR, video captions/transcription, other extractors, and extracted-content search indexing. These are not prerequisites for completing navigation.
 
 ## Engineering decisions
 
@@ -100,3 +101,17 @@ Starting checkpoint: `62e676c`; continued on `codex/generated-navigation` in the
 - Independent review found no blockers. Actual Docsify old/new comparisons retain all prior rendered external-link occurrences: reporting 166→166, threat modeling 29→29, OSINT 211→211, exfiltration 70→70. Raw URL hashes and all fixture aliases, including `Writingrfp`, were also checked. Inherited same-heading inline-anchor presentation issues remain deferred.
 
 Verification: `npm test` passed 47/47 on Node.js 24.18.0; `npm run nav:check` passed with 260 baselined errors and zero new/stale diagnostics; repeated `npm run nav:generate` reported no changes. Inventories regenerated successfully. Inherited trailing-space warnings remain; no whitespace-only sweep, external availability request, or archive capture was performed.
+
+
+## Testing and development references group — 2026-10-25
+
+Starting checkpoint: `1f2293c`; continued in the requested checkout on `codex/generated-navigation`.
+
+- Migrated `Draft/Fuzzing.md`, `Draft/Exploit_Dev.md`, `Draft/RE.md`, and `Draft/Programming_Language_Security.md`, using managed ToCs, stable `ref-fuzz-*`, `ref-exploit-*`, `ref-reverse-*`, and `ref-appsec-*` destinations. Added 62 selected alphabetical subjects. Retained existing language hierarchy and qualified repeated labels to avoid legacy-anchor collisions.
+- Kept linked unsorted notes on their source pages; only resource-free maintenance instructions moved to the backlog. Preserved the original fenced/indented code ranges byte-for-byte and all prior external URL occurrences/legacy aliases. Deduplicated `winspec` and `practice` at their first content destinations. The C# heading keeps its `c#` alias while its qualified title avoids the legacy C/C++ `c` fragment.
+- Corrected the obsolete GitHub lab link to the existing tracked `Draft/Rants&Writeups/Writeups/Lab_for_exploit_dev-basic.md`; the preservation fixture records this sole intentional URL correction. Raw URL hashes reverse only recorded corrections, and parsed-occurrence checks map those same corrections before comparison.
+- Retired all 60 group errors, leaving 200 occurrences / 192 keys across 23 other pages. Seventeen of the 48 main-topic pages now have managed ToCs; the remaining 31 require review/migration as appropriate, including existing functional directory landings. Inventories retain 21,746 unique URLs: 1,199 PDF, 1,458 video, 23 other non-text candidates and 19,066 unknown; content types and availability remain provisional.
+- Independent review found an over-deep Windows shellcode heading that also absorbed general shellcode categories. A focused actual-compiler/ToC regression failed first; Windows Specific and the following Techniques, Reference, REPLs and Tools categories now have separate depth-four headings. Correction review confirmed the original three Windows resources remain in their section and all 531 rendered external-link occurrences are retained with the documented destination correction. No remaining review finding.
+- Native Chromium under `/docs/` verified exact search-result hashes and headings for `american fuzzy lop` → AFL, `Rubik` → Corelan, `WinDbg` → Debuggers, and `Code Review` → Code Review. An additional `WinAPI for Hackers` search reaches `ref-exploit-27` at H4; its deep-route reload succeeds. No browser console errors were observed.
+
+Verification: `npm test` passed 51/51 on Node.js 24.18.0; `npm run nav:check` passed with 200 explicitly baselined errors and no new/stale diagnostics; repeated `npm run nav:generate` returned no changed paths. Inventories regenerated successfully. Known inherited inline-anchor/favicon issues and trailing-space warnings remain; no broad whitespace rewrite, external availability batch, capture, push or publication was performed.

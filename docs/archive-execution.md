@@ -195,3 +195,29 @@ The live Sysmon attempt exposed a false article classification: the parked page 
 Verification: **109/109** tests pass, including the regression and wrapped Python policy cases. A focused independent review of the extractor/test diff and callers found no actionable issue; it did not repeat live captures. The actual public recheck verifies the final behavior. All three latest local receipts are deferred with zero objects, temporary payload absence is asserted, and the catalog matches confirmed receipts. Navigation remains 102 pages / 29,165 links / zero errors with unchanged warnings. Formatting and diff checks pass. Synthetic Docker fixtures and the unchanged WARC verifier corruption suite were not repeated. Title matching remains heuristic and may defer legitimate sale-related titles for review.
 
 Current inventory accounting: three complete local captures, seven partial, eleven deferred and 21,717 not attempted; zero durably preserved. Ten valid local payload archives remain. Sixteen HTML observations route to web capture and 19,041 remain type-confirmation jobs, alongside unchanged non-text queues. Fourteen Wayback snapshots are confirmed; four older DNS deferrals and two failed saves remain explicit. No Git push, hosted CI execution, media acquisition, full collection run or durable-backup qualification occurred.
+
+
+## Ten-link local batch — 2026-10-25
+
+Batch `59d85ad7-445b-4b0a-ad08-0fb3fcf77a08` processed the next ten unattempted webpage candidates in inventory order. The operational batch size increases from the initial three-link pilot to ten, retaining single-worker execution, public-only filtering, 120-second page bounds and a shared 1 GiB storage ceiling. No implementation code changed.
+
+| Original reference | Local result | Wayback result |
+|---|---|---|
+| `http://abovethefold.fyi/` | Deferred: layout review | Confirmed `20261026001635` |
+| `http://acez.re/the-weak-bug-exploiting-a-heap-overflow-in-vmware/` | Partial: text and one figure retained; one figure missing | Confirmed `20261026001627` |
+| `http://active-undelete.com/dcom-overview.htm` | Deferred: layout review | Confirmed `20261026001713` |
+| `http://activemq.apache.org/` | Deferred after canonical HTTPS retry: layout review | Confirmed `20261026001738` |
+| `http://activemq.apache.org/getting-started.html` | Deferred after canonical HTTPS retry: layout review | Confirmed `20261026001754` |
+| `http://adamierymenko.com/docker-not-even-a-linker/` | Deferred: no usable article/HTTP response evidence | Failed: gateway timeout (504) |
+| `http://adamsblog.aperturelabs.com/2013/03/you-can-ring-my-bell-adventures-in-sub.html` | Deferred: no identifiable article body | Failed: target not found (404) |
+| `http://adaywithtape.blogspot.com/2011/05/creating-wordlists-with-crunch-v30.html` | Partial: text retained; all 58 selected Photobucket images missing | Confirmed `20261026002031` |
+| `http://adsecurity.org/?p=1487` | Deferred: layout review | Confirmed `20261026002131` |
+| `http://adsecurity.org/?p=15` | Deferred: layout review | Confirmed `20261026002202` |
+
+The two retained articles contain **43,116 text characters**, one captured figure and **273,629 bytes** of hashed primary objects. About **1.25 MB** remains including provenance and summaries. Strict WARC integrity and normalized extracted-text comparisons pass for both. The VMware figure request was blocked by the existing MIME rule for a non-text/unknown redirect body; the Crunch images did not load/capture. Their 59 missing figures remain explicit, content remains needs-review and replay partial, and neither archive is promoted to complete. Eight latest local attempts retain no payload objects. No WACZ duplicates, replay archives, state/profile output or temporary proxy keys remain in this batch.
+
+Each of the ten original URLs was submitted once. Pending jobs resumed by saved ID. Both ActiveMQ local HTTP discovery attempts initially exited unsuccessfully; bounded public HEAD checks independently observed their HTTPS redirect destinations. Those observations establish canonical identity for the confirmed Wayback snapshots. Local capture retried those destinations while preserving original source references, actual requested URLs, redirect evidence and initial failures. Both reached HTML but still require layout review. Canonical seed provenance is retained in the authoritative local manifests and indexed receipts. No local article preservation is claimed for them.
+
+Fresh verification rehashes and rechecks both payload archives using the existing offline WARC verifier, independently checks their extracted text and retained/missing figure counts, asserts eight empty deferred captures, and confirms generated catalog consistency. Navigation remains 102 pages / 29,165 links / zero errors, with unchanged 15 orphan / 21 repeated-destination warnings; diff checks pass. No source implementation changed, so the prior 109-test result remains historical and synthetic Docker fixtures, corruption tests and independent source review were not repeated.
+
+Current inventory accounting: three complete local captures, nine partial, nineteen deferred and 21,707 not attempted; zero durably preserved. Twelve valid payload archives remain. Twenty-four HTML observations route to web capture, with 19,033 type-confirmation / 1,200 PDF / 1,458 video / 23 other non-text jobs. Twenty-two Wayback snapshots are confirmed; four older DNS deferrals and four failed saves remain explicit. No Git push, media acquisition, hosted CI execution, full collection run or durable-backup qualification occurred.

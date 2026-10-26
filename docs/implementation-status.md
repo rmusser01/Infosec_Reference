@@ -1,6 +1,6 @@
 # Implementation status
 
-Branch: `codex/generated-navigation` (desktop continuation; original export: `improve-generated-navigation`). Source base: `af8b68e2194e695c542eb76fba762d2f0a19a0dc`. Repository changes remain local. Fourteen authorized public references have confirmed Internet Archive snapshots; no Git push or site deployment has occurred.
+Branch: `codex/generated-navigation` (desktop continuation; original export: `improve-generated-navigation`). Source base: `af8b68e2194e695c542eb76fba762d2f0a19a0dc`. Repository changes remain local. Twenty-two authorized public references have confirmed Internet Archive snapshots; no Git push or site deployment has occurred.
 
 ## Implemented
 
@@ -26,7 +26,7 @@ Automated tests exercise the actual checked-in Docsify compiler and application 
 
 - Navigation rollout, shared heading rendering, and favicon repair are complete locally. Production deployment/cache behavior remains unverified.
 - Choose durable archive and backup destinations, verify recovery/replay from them, and calibrate the bounded engine against more layouts/figures before scaling. Remote object-store uploading and full-crawl scheduling remain unimplemented. The policy now enforces the local pilot's supported bounds; it does not establish storage durability.
-- Continue bounded new-link batches locally under the clarified retention policy; durable storage is not required to make local progress. Ten public references have compact local archives, and fourteen URLs have confirmed Wayback snapshots. Broad external validation and full collection preservation have not run. Strict content checks leave the Eli reference partial for manual review. Commit CI receipts/catalog to make future snapshots discoverable; the workflow does not write to the repository.
+- Continue bounded new-link batches locally under the clarified retention policy; durable storage is not required to make local progress. Twelve public references have compact local archives, and twenty-two URLs have confirmed Wayback snapshots. Broad external validation and full collection preservation have not run. Strict content checks leave the Eli reference partial for manual review. Commit CI receipts/catalog to make future snapshots discoverable; the workflow does not write to the repository.
 - Separately scoped later processing: PDF extraction/OCR, video captions/transcription, other extractors, and extracted-content search indexing. These are not prerequisites for completing navigation.
 
 ## Engineering decisions
@@ -266,3 +266,14 @@ Batch `d00c1324-1805-428f-9823-809dc1a8f196` processed the next three webpage ca
 A regression reproduced and corrected acceptance of the parked page as an article. Explicit domain-sale titles now require review with empty text/images; the live recheck confirms the corrected result. Wrongly captured sale-page payloads were rehashed and discarded, preserving rejection/hash receipts and the replacement capture ID. Original references remain unchanged. All **109/109** tests pass, focused independent review found no actionable issue, and navigation/format/diff checks pass. Detailed outcomes and verification limits are in `docs/archive-execution.md`.
 
 Latest totals: three complete local captures, seven partial, eleven deferred, 21,717 not attempted; zero durably preserved. Ten valid local archives remain, sixteen URLs have observed HTML responses, and fourteen URLs have confirmed Wayback snapshots. Two saves failed and four older DNS submissions remain deferred. No repository push or full collection run occurred; durable backup remains unconfigured.
+
+
+## Ten-link local batch — 2026-10-25
+
+Batch `59d85ad7-445b-4b0a-ad08-0fb3fcf77a08` expands the operational batch size to ten unattempted webpage candidates in inventory order, retaining the existing single-worker and 1 GiB batch bounds. Three was a cautious pilot choice, not a capture-engine limit; subsequent manual continuation batches should use ten unless directed otherwise.
+
+The VMware heap-overflow article and Crunch wordlist article retain 43,116 text characters and one available figure, with verified primary integrity/text. Both remain partial: one VMware figure and all 58 selected Photobucket images failed capture, and offline replay remains partial. Eight other local captures are deferred for unusable content/layout review. The two initial ActiveMQ discovery failures were retried at independently observed HTTPS destinations; those attempts reached the pages but found no identifiable article body. Original URLs, redirect evidence and failed-attempt history remain intact.
+
+Eight source URLs have new confirmed Wayback snapshots. Internet Archive reported a gateway timeout for the Docker essay and 404 for Adam's RF post. Existing job IDs were resumed without duplicate submissions; both ActiveMQ canonical identities were independently verified before accepting their snapshots. The reader catalog now contains twenty-two confirmed snapshots. About **1.25 MB** is retained, including receipts, with **273,629 bytes** of primary objects and no duplicate WACZ, replay archive or temporary proxy state.
+
+Fresh checks verify both retained articles, strict text preservation and explicit missing-image counts, catalog consistency, cleanup and zero navigation errors. Source code is unchanged, so the prior 109-test suite and synthetic Docker cases were not repeated. Latest totals: three complete local captures, nine partial, nineteen deferred, 21,707 not attempted; zero durably preserved. Twelve valid local payload archives exist, twenty-four URLs have observed HTML responses, and twenty-two Wayback snapshots are confirmed. Four older DNS deferrals and four failed saves remain explicit. No repository push, hosted CI execution or full collection run occurred; durable backup remains unconfigured.

@@ -98,7 +98,7 @@ export function waybackCatalog(rows) {
       .replaceAll("\n", "%0A")
       .replaceAll("\r", "%0D");
     lines.push(
-      `- <${url}> — [Wayback snapshot ${row.timestamp}](<https://web.archive.org/web/${row.timestamp}/${archivedUrl}>)`,
+      `- <${url}> — [Wayback snapshot ${row.timestamp}](<https://web.archive.org/web/${row.timestamp}/${archivedUrl}>)${row.snapshotContentState === "replacement" ? " — Redirected replacement content; original resource not recovered." : ""}`,
     );
   }
   return lines.join("\n") + "\n";

@@ -10,6 +10,23 @@ const response = (body, status = 200, headers = {}) =>
     headers,
   });
 
+test("catalog warns when a confirmed snapshot contains unrelated replacement content", () => {
+  const saved = {
+    originalUrl: "https://example.org/tool",
+    archivedUrl: "https://replacement.example/wallpapers",
+    timestamp: "20261026120000",
+    state: "saved",
+  };
+  assert(!waybackCatalog([saved]).includes("original resource not recovered"));
+  const catalog = waybackCatalog([
+    saved,
+    { ...saved, snapshotContentState: "replacement" },
+  ]);
+  assert(catalog.includes("original resource not recovered"));
+  assert(catalog.includes("https://replacement.example/wallpapers"));
+  assert.equal(catalog.split("Wayback snapshot").length - 1, 1);
+});
+
 test("Wayback canonical snapshot identities require an observed final URL and catalog links use that identity", async () => {
   const originalUrl = "http://example.blogspot.fr/post";
   const finalUrl = "https://example.blogspot.com/post";

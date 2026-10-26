@@ -24,5 +24,13 @@ Only confirmed snapshots appear below; pending/failed jobs remain in `navigation
 - <http://adaywithtape.blogspot.com/2011/05/creating-wordlists-with-crunch-v30.html> — [Wayback snapshot 20261026002031](<https://web.archive.org/web/20261026002031/http://adaywithtape.blogspot.com/2011/05/creating-wordlists-with-crunch-v30.html>)
 - <http://adsecurity.org/?p=1487> — [Wayback snapshot 20261026002131](<https://web.archive.org/web/20261026002131/https://adsecurity.org/?p=1487>)
 - <http://adsecurity.org/?p=15> — [Wayback snapshot 20261026002202](<https://web.archive.org/web/20261026002202/https://adsecurity.org/?p=15>)
+- <http://adsecurity.org/?p=20> — [Wayback snapshot 20261026004352](<https://web.archive.org/web/20261026004352/https://adsecurity.org/?p=20>)
+- <http://aerokid240.blogspot.com/2009/11/msfpayload-goodness-cheatsheet.html> — [Wayback snapshot 20261026004345](<https://web.archive.org/web/20261026004345/http://aerokid240.blogspot.com/2009/11/msfpayload-goodness-cheatsheet.html>)
+- <http://akaptur.github.io/blog/categories/python-internals/> — [Wayback snapshot 20261026004423](<https://web.archive.org/web/20261026004423/http://akaptur.com/blog/categories/python-internals/>)
+- <http://alchemy.cs.washington.edu/> — [Wayback snapshot 20261026004502](<https://web.archive.org/web/20261026004502/http://alchemy.cs.washington.edu/>)
+- <http://alexgorbatchev.com/SyntaxHighlighter/> — [Wayback snapshot 20261026004526](<https://web.archive.org/web/20261026004526/https://wallpapers.com/backgrounds>) — Redirected replacement content; original resource not recovered.
+- <http://alt-ergo.ocamlpro.com/> — [Wayback snapshot 20261026004608](<https://web.archive.org/web/20261026004608/https://alt-ergo.ocamlpro.com/>)
+- <http://anantshri.info/articles/web_app_finger_printing.html> — [Wayback snapshot 20261026004648](<https://web.archive.org/web/20261026004648/https://anantshri.info/articles/web_app_finger_printing.html>)
+- <http://andres.delgado.ec/2016/01/15/el-miedo-de-vigilar-a-los-vigilantes/> — [Wayback snapshot 20261026004705](<https://web.archive.org/web/20261026004705/https://delgado.ec/blog/2016/01/15/el-miedo-de-vigilar-a-los-vigilantes/>)
 - <https://danluu.com/sounds-easy/> — [Wayback snapshot 20261025215216](<https://web.archive.org/web/20261025215216/https://danluu.com/sounds-easy/>)
 - <https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Rants%26Writeups/Writeups/Lab_for_exploit_dev-basic.md> — [Wayback snapshot 20261025220110](<https://web.archive.org/web/20261025220110/https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Rants%26Writeups/Writeups/Lab_for_exploit_dev-basic.md>)

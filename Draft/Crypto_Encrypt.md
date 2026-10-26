@@ -13,7 +13,6 @@
   - [Don't Do](#ref-crypto-extra-9)
   - [Educational/Informative](#ref-crypto-extra-10)
   - [General references](#ref-crypto-extra-11)
-  - [History](#ref-crypto-extra-12)
   - [Laws](#ref-crypto-extra-13)
   - [Miscellaneous](#ref-crypto-extra-14)
   - [Perfect Forward Secrecy](#ref-crypto-extra-15)
@@ -30,7 +29,6 @@
   - [Signal](#ref-crypto-extra-26)
   - [SSH](#ref-crypto-extra-27)
 - [Secure Sockets Layer/Transport Layer Security](#ref-crypto-extra-28)
-  - [101](#ref-crypto-extra-29)
   - [Articles/Talks/Writeups](#ref-crypto-extra-30)
   - [Papers](#ref-crypto-extra-31)
   - [Attacks](#ref-crypto-extra-32)
@@ -49,8 +47,6 @@
   - [General references](#ref-crypto-extra-45)
   - [Bitcoin](#ref-crypto-extra-46)
   - [Ethereum](#ref-crypto-extra-47)
-  - [Monero](#ref-crypto-extra-48)
-  - [Zcash](#ref-crypto-extra-49)
   - [Shady Shit](#ref-crypto-extra-50)
   - [Smart Contract Security](#ref-crypto-extra-51)
   - [Talks/Presentations](#ref-crypto-extra-52)
@@ -145,7 +141,8 @@
     * Best Current Practices regarding secure online communication and configuration of services using cryptography. https://bettercrypto.org
 * [cr.yp.to blog](http://blog.cr.yp.to/index.html)
 
-### <a id="ref-crypto-extra-12"></a><a id="history" name="history"></a>History
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-crypto-extra-12"></a><a id="history"></a>
 
 ### <a id="ref-crypto-extra-13"></a>Laws
 
@@ -272,7 +269,8 @@ From: https://www.reddit.com/r/securityengineering/comments/7o2uzy/a_collection_
 
 ## <a id="ref-crypto-extra-28"></a><a id="ssl" name="ssl"></a>Secure Sockets Layer/Transport Layer Security
 
-### <a id="ref-crypto-extra-29"></a><a id="s101" name="s101"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-crypto-extra-29"></a><a id="101-1"></a><a id="s101"></a>
 
 ### <a id="ref-crypto-extra-30"></a><a id="sart" name="sart"></a>Articles/Talks/Writeups
 
@@ -449,9 +447,11 @@ From: https://www.reddit.com/r/securityengineering/comments/7o2uzy/a_collection_
 * [Outsmarting-Smart-Contracts](https://github.com/sneakerhax/Outsmarting-Smart-Contracts)
     * A repo with information about the security of Ethereum Smart Contracts
 
-### <a id="ref-crypto-extra-48"></a><a id="monero" name="monero"></a>Monero
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-crypto-extra-48"></a><a id="monero"></a>
 
-### <a id="ref-crypto-extra-49"></a><a id="zcash" name="zcash"></a>Zcash
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-crypto-extra-49"></a><a id="zcash"></a>
 
 ### <a id="ref-crypto-extra-50"></a><a id="shady" name="shady"></a>Shady Shit
 

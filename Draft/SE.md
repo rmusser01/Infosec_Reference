@@ -51,13 +51,13 @@
 * [Miss Manners Guide to Excellent Manners](https://www.missmanners.com/in-print/miss-manners-books/)
 * [Propaganda by Edward Bernays](https://en.wikipedia.org/wiki/Propaganda_(book))
 * [Social Engineering: Art of Human Hacking](https://www.social-engineer.org/social-engineering/the-art-of-human-hacking/)
-* [Thank You For Arguing, Revised and Updated Edition: What Aristotle, Lincoln, And Homer Simpson Can Teach Us About the Art of Persuasion]()
+* Thank You For Arguing, Revised and Updated Edition: What Aristotle, Lincoln, And Homer Simpson Can Teach Us About the Art of Persuasion (URL not recorded)
 * [The Amy Vanderbilt Complete Book of Etiquette](https://www.archive.org/stream/amyvanderbiltsco00vandrich/amyvanderbiltsco00vandrich_djvu.txt)
 * [The Definitive Book of Body Language - Barbara Pease](https://www.goodreads.com/book/show/262731.The_Definitive_Book_of_Body_Language)
 * [The Prince by Machiavelli](https://www.gutenberg.org/files/1232/1232-h/1232-h.htm)
 * [Thinking Fast and Slow](https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow)
 * [Toastmaster's guide to body language](http://westsidetoastmasters.com/resources/book_of_body_language/toc.html)
-* [Social Engineering: The Science of Human Hacking - Christopher Hadnagy]()
+* Social Engineering: The Science of Human Hacking - Christopher Hadnagy (URL not recorded)
 * [What Every Body is saying - Joe Navarro, Marvin Karlins](https://www.goodreads.com/book/show/1173576.What_Every_Body_is_Saying)
 
 ### <a id="ref-social-4"></a><a id="talks" name="talks"></a>Talks & Presentations

@@ -4,34 +4,12 @@
 <!-- nav:toc:start -->
 - [101/Basics](#ref-defense-1)
   - [101](#ref-defense-2)
-- [I Want to...(Personal)](#ref-defense-3)
-  - [Create an Asset Inventory](#ref-defense-4)
-  - [Track all my Assets](#ref-defense-5)
-  - [Create a Basic Security Plan](#ref-defense-6)
-  - [Create a Basic Security Strategy](#ref-defense-7)
 - [I Want to...(Enterprise/Organization)](#ref-defense-8)
-  - [Create an Asset Inventory](#ref-defense-9)
-  - [Categorize All Assets/Define Asset Groups](#ref-defense-10)
-  - [Track all my Assets](#ref-defense-11)
-  - [Create an Asset Lifecycle For Each](#ref-defense-12)
-  - [Create a Basic Security Plan](#ref-defense-13)
-  - [Create a Basic Security Strategy](#ref-defense-14)
-  - [Create a Basic Security Policy](#ref-defense-15)
-  - [Create a Security Awareness Program For My Org](#ref-defense-16)
   - [Create a Security Baseline For My Environment](#ref-defense-17)
-  - [Measure an Organization's Baseline Security Posture](#ref-defense-18)
-  - [Create a Running Tracker of My Org's Security](#ref-defense-19)
-  - [Identify Means of Improving My Organization's Baseline Security Posture](#ref-defense-20)
   - [Implement a Vulnerability Management Program Within My Organization](#ref-defense-21)
   - [Control Means of Software Execution on Org Owned Devices](#ref-defense-22)
 - [Specific Technical Defenses](#ref-defense-23)
-  - [101 Level Stuff/Concepts](#ref-defense-24)
-  - [Access Controls](#ref-defense-25)
-  - [Application Execution Control](#ref-defense-26)
-  - [Application Monitoring & Logging](#ref-defense-27)
   - [Firewalls](#ref-defense-28)
-  - [Malicious Devices](#ref-defense-29)
-  - [System Monitoring & Logging](#ref-defense-30)
 - [Blue Team Tactics & Strategies](#ref-defense-31)
   - [General Concepts](#ref-defense-32)
   - [Articles/Blogposts/Writeups](#ref-defense-33)
@@ -39,10 +17,6 @@
   - [Tools](#ref-defense-35)
 - [Attack Surface Analysis & Reduction](#ref-defense-36)
   - [Monitoring](#ref-defense-37)
-- [Linux](#ref-defense-38)
-- [macOS](#ref-defense-39)
-- [Windows](#ref-defense-40)
-  - [Implement Application Execution Control](#ref-defense-41)
 - [Databases(SQL/NoSQL)](#ref-defense-42)
   - [Specific](#ref-defense-43)
 - [Computer Networks](#ref-defense-44)
@@ -58,10 +32,8 @@
   - [Tools](#ref-defense-54)
 - [For Journalists](#ref-defense-55)
 - [For Individuals Leaking Sensitive Information](#ref-defense-56)
-  - [Performing](#ref-defense-57)
   - [Preventing](#ref-defense-58)
 - [General Hardening](#ref-defense-59)
-  - [101](#ref-defense-60)
   - [Hardening Cloud Services/SaaS](#ref-defense-61)
     - [Microsoft Azure](#ref-defense-62)
     - [G-Suite](#ref-defense-63)
@@ -85,35 +57,34 @@
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-## <a id="ref-defense-3"></a><a id="personal" name="personal"></a>I Want to...(Personal)
-
-### <a id="ref-defense-4"></a><a id="assetinventoryp" name="assetinventoryp"></a>Create an Asset Inventory
-
-### <a id="ref-defense-5"></a><a id="assettrackp" name="assettrackp"></a>Track all my Assets
-
-### <a id="ref-defense-6"></a><a id="secplanp" name="secplanp"></a>Create a Basic Security Plan
-
-### <a id="ref-defense-7"></a><a id="secstratp" name="secstratp"></a>Create a Basic Security Strategy
-
-------------------------------------------------------------------------------------------------------------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-3"></a><a id="i-want-topersonal"></a><a id="personal"></a><a id="ref-defense-4"></a><a id="create-an-asset-inventory"></a><a id="assetinventoryp"></a><a id="ref-defense-5"></a><a id="track-all-my-assets"></a><a id="assettrackp"></a><a id="ref-defense-6"></a><a id="create-a-basic-security-plan"></a><a id="secplanp"></a><a id="ref-defense-7"></a><a id="create-a-basic-security-strategy"></a><a id="secstratp"></a>
 
 ## <a id="ref-defense-8"></a><a id="org" name="org"></a>I Want to...(Enterprise/Organization)
 
-### <a id="ref-defense-9"></a><a id="assetinventorye" name="assetinventorye"></a>Create an Asset Inventory
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-9"></a><a id="create-an-asset-inventory-1"></a><a id="assetinventorye"></a>
 
-### <a id="ref-defense-10"></a><a id="assetcategorize" name="assetcategorize"></a>Categorize All Assets/Define Asset Groups
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-10"></a><a id="categorize-all-assetsdefine-asset-groups"></a><a id="assetcategorize"></a>
 
-### <a id="ref-defense-11"></a><a id="assettracke" name="assettracke"></a>Track all my Assets
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-11"></a><a id="track-all-my-assets-1"></a><a id="assettracke"></a>
 
-### <a id="ref-defense-12"></a><a id="assetlifecycle" name="assetlifecycle"></a>Create an Asset Lifecycle For Each
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-12"></a><a id="create-an-asset-lifecycle-for-each"></a><a id="assetlifecycle"></a>
 
-### <a id="ref-defense-13"></a><a id="secplane" name="secplane"></a>Create a Basic Security Plan
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-13"></a><a id="create-a-basic-security-plan-1"></a><a id="secplane"></a>
 
-### <a id="ref-defense-14"></a><a id="secstrate" name="secstrate"></a>Create a Basic Security Strategy
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-14"></a><a id="create-a-basic-security-strategy-1"></a><a id="secstrate"></a>
 
-### <a id="ref-defense-15"></a><a id="secpol" name="secpol"></a>Create a Basic Security Policy
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-15"></a><a id="create-a-basic-security-policy"></a><a id="secpol"></a>
 
-### <a id="ref-defense-16"></a><a id="secaware" name="secaware"></a>Create a Security Awareness Program For My Org
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-16"></a><a id="create-a-security-awareness-program-for-my-org"></a><a id="secaware"></a>
 
 ### <a id="ref-defense-17"></a><a id="secbaseline" name="secbaseline"></a>Create a Security Baseline For My Environment
 
@@ -134,11 +105,14 @@
         * [Inventory-BrowserExts - keyboardcrunch](https://github.com/keyboardcrunch/Inventory-BrowserExts)
             * This script can inventory Firefox and/or Chrome extensions for each user from a list of machines. It returns all the information back in a csv file and prints to console a breakdown of that information.
 
-### <a id="ref-defense-18"></a><a id="secmeasure" name="secmeasure"></a>Measure an Organization's Baseline Security Posture
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-18"></a><a id="measure-an-organizations-baseline-security-posture"></a><a id="secmeasure"></a>
 
-### <a id="ref-defense-19"></a><a id="secbaselinetracker" name="secbaselinetracker"></a>Create a Running Tracker of My Org's Security
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-19"></a><a id="create-a-running-tracker-of-my-orgs-security"></a><a id="secbaselinetracker"></a>
 
-### <a id="ref-defense-20"></a><a id="secbaselineimprove" name="secbaselineimprove"></a>Identify Means of Improving My Organization's Baseline Security Posture
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-20"></a><a id="identify-means-of-improving-my-organizations-baseline-security-posture"></a><a id="secbaselineimprove"></a>
 
 ### <a id="ref-defense-21"></a><a id="vulnmgmt" name="vulnmgmt"></a>Implement a Vulnerability Management Program Within My Organization
 
@@ -222,13 +196,17 @@
 
 ## <a id="ref-defense-23"></a><a id="techdef" name="techdef"></a>Specific Technical Defenses
 
-### <a id="ref-defense-24"></a><a id="101def" name="101def"></a>101 Level Stuff/Concepts
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-24"></a><a id="101-level-stuffconcepts"></a><a id="101def"></a>
 
-### <a id="ref-defense-25"></a><a id="acls" name="acls"></a>Access Controls
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-25"></a><a id="access-controls"></a><a id="acls"></a>
 
-### <a id="ref-defense-26"></a><a id="appexeccontrol" name="appexeccontrol"></a>Application Execution Control
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-26"></a><a id="application-execution-control"></a><a id="appexeccontrol"></a>
 
-### <a id="ref-defense-27"></a><a id="appmonlog" name="appmonlog"></a>Application Monitoring & Logging
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-27"></a><a id="application-monitoring--logging"></a><a id="appmonlog"></a>
 
 ### <a id="ref-defense-28"></a><a id="firewalls" name="firewalls"></a>Firewalls
 
@@ -249,11 +227,11 @@
     * [Assimilator](https://github.com/videlanicolas/assimilator)
         * The first restful API to control all firewall brands. Configure any firewall with restful API calls, no more manual rule configuration. Centralize all your firewalls into one API.
 
-### <a id="ref-defense-29"></a><a id="maldevice" name="maldevice"></a>Malicious Devices
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-29"></a><a id="malicious-devices"></a><a id="maldevice"></a>
 
-### <a id="ref-defense-30"></a><a id="sysmonlog" name="sysmonlog"></a>System Monitoring & Logging
-
-------------------------------------------------------------------------------------------------------------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-30"></a><a id="system-monitoring--logging"></a><a id="sysmonlog"></a>
 
 ## <a id="ref-defense-31"></a><a id="btts" name="btts"></a>Blue Team Tactics & Strategies
 
@@ -315,19 +293,14 @@
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-## <a id="ref-defense-38"></a><a id="linux" name="linux"></a>Linux
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-38"></a><a id="linux"></a>
 
-------------------------------------------------------------------------------------------------------------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-39"></a><a id="macos"></a><a id="macOS"></a>
 
-## <a id="ref-defense-39"></a><a id="macOS" name="macOS"></a>macOS
-
-------------------------------------------------------------------------------------------------------------------------------
-
-## <a id="ref-defense-40"></a><a id="windows" name="windows"></a>Windows
-
-### <a id="ref-defense-41"></a><a id="appexecwin" name="appexecwin"></a>Implement Application Execution Control
-
-------------------------------------------------------------------------------------------------------------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-40"></a><a id="windows"></a><a id="ref-defense-41"></a><a id="implement-application-execution-control"></a><a id="appexecwin"></a>
 
 ## <a id="ref-defense-42"></a><a id="dbsec" name="dbsec"></a>Databases(SQL/NoSQL)
 
@@ -419,9 +392,8 @@
 
 ## <a id="ref-defense-56"></a><a id="leaks" name="leaks"></a>For Individuals Leaking Sensitive Information
 
-### <a id="ref-defense-57"></a>Performing
-
-* **Tools** 
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-57"></a><a id="performing"></a>
 
 ### <a id="ref-defense-58"></a>Preventing
 
@@ -440,7 +412,8 @@
 
 ## <a id="ref-defense-59"></a><a id="harden" name="harden"></a>General Hardening
 
-### <a id="ref-defense-60"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-defense-60"></a><a id="101-2"></a>
 
 ### <a id="ref-defense-61"></a><a id="cloudservices" name="cloudservices"></a>Hardening Cloud Services/SaaS
 

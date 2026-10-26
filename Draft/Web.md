@@ -37,7 +37,6 @@
     - [101](#ref-web-33)
     - [Articles/Blogposts/Writeups](#ref-web-34)
     - [Talks/Presentations/Videos](#ref-web-35)
-    - [Papers](#ref-web-36)
     - [Tools](#ref-web-37)
     - [JWTs](#ref-web-38)
     - [PASETO cookies](#ref-web-39)
@@ -64,7 +63,6 @@
     - [HTTP Headers](#ref-web-60)
     - [HTTP Methods](#ref-web-61)
     - [HTTP Objects](#ref-web-62)
-    - [HTTP Parameters](#ref-web-63)
     - [HTTP Pipelining](#ref-web-64)
     - [HTTP Signatures](#ref-web-65)
     - [HTTP Verbs](#ref-web-66)
@@ -84,12 +82,10 @@
     - [Hibernate](#ref-web-80)
     - [RMI](#ref-web-81)
   - [JavaScript](#ref-web-82)
-  - [JS Frameworks](#ref-web-83)
+  - [Web Frameworks and Applications](#ref-web-83)
     - [General](#ref-web-84)
     - [Angular](#ref-web-85)
-    - [Backbone.js](#ref-web-86)
     - [Django](#ref-web-87)
-    - [Ember.js](#ref-web-88)
     - [Groovy](#ref-web-89)
     - [H2](#ref-web-90)
     - [GWT](#ref-web-91)
@@ -103,7 +99,6 @@
     - [Spring](#ref-web-99)
     - [Springboot](#ref-web-100)
     - [Symfony](#ref-web-101)
-    - [Vue.js](#ref-web-102)
     - [Wordpress](#ref-web-103)
   - [.NET-based Frameworks](#ref-web-104)
   - [Python-based Frameworks](#ref-web-105)
@@ -193,13 +188,11 @@
   - [HTTP Request Smuggling](#ref-web-189)
   - [Image-based Exploitation AKA Exploiting Polyglot features of File standards](#ref-web-190)
   - [Injection Based Attacks](#ref-web-191)
-    - [101](#ref-web-192)
     - [Articles/Blogposts/Writeups](#ref-web-193)
     - [Command Injection](#ref-web-194)
     - [JSON(P) Injection](#ref-web-195)
     - [LDAP Injection](#ref-web-196)
     - [OGNL Injection](#ref-web-197)
-    - [Papers](#ref-web-198)
     - [Presentations/Talks/Videos](#ref-web-199)
     - [Tools](#ref-web-200)
   - [OS Command Injection](#ref-web-201)
@@ -222,7 +215,6 @@
   - [Tabnabbing Attacks](#ref-web-218)
   - [Timing-based Attacks/Data race Attacks](#ref-web-219)
   - [TLS Redirection (and Virtual Host Confusion)](#ref-web-220)
-  - [Typosquatting overview](#ref-web-221)
   - [(Bit)/Typo-squatting](#ref-web-222)
   - [Web Shells](#ref-web-223)
   - [XSS](#ref-web-224)
@@ -234,6 +226,15 @@
     - [Burp Macros](#ref-web-230)
   - [Cloudflare](#ref-web-231)
   - [Bug Bounty Writeups](#ref-web-232)
+- [Pending / Unsorted Resources](#ref-web-233)
+  - [XSS](#ref-web-234)
+    - [XSS Cookie Resources](#ref-web-235)
+    - [XSS DOM Resources](#ref-web-236)
+    - [Talks](#ref-web-237)
+  - [XSSI](#ref-web-238)
+  - [XS-Leaks](#ref-web-239)
+  - [XS-Search](#ref-web-240)
+  - [XXE](#ref-web-241)
 <!-- nav:toc:end -->
 
 ## <a id="ref-web-1"></a><a id="general" name="general"></a>General
@@ -425,7 +426,7 @@ Testing of
 * [REST_Assessment_Cheat_Sheet.md - OWASP](https://github.com/OWASP/CheatSheetSeries/blob/3a8134d792528a775142471b1cb14433b4fda3fb/cheatsheets/REST_Assessment_Cheat_Sheet.md)
 * [RESTful API Best Practices and Common Pitfalls - Spencer Schneidenbach](https://medium.com/@schneidenbach/restful-api-best-practices-and-common-pitfalls-7a83ba3763b5)
 * [REST API Testing Strategy: What Exactly Should You Test? - Roy Mor(2019)](https://www.sisense.com/blog/rest-api-testing-strategy-what-exactly-should-you-test/)
-* [RESTful web services penetation testing - ]()
+* RESTful web services penetation testing -  (URL not recorded)
 * [Penetration Testing RESTful Web Services - Prakash Dhatti(2017)](http://blog.isecurion.com/2017/10/10/penetration-testing-restful-web-services/)
 
 #### <a id="ref-web-14"></a>Tools
@@ -723,7 +724,8 @@ Testing of
 * [Got Cookies? Exploiting Vulnerabilities in Cookie Based Authentication - Harsh Bothra(Mayhem2021 RTV)](https://www.youtube.com/watch?v=CE4w8uUi0Mw&list=PLruly0ngXhPEOYACFCsUfoGehbjNflUfu&index=2)
     * Abstract: Cookies are a widely used way to enable authentication in many of the applications out there. Over time, there has been a lot of security implications in Cookie-Based Authentication and new methods such as token-based authentication has entered the picture. Although many modern applications are adapting Token-Based authentication, Cookie-Based Authentication is still alive and can be observed in the wild.  In this talk, we will look at various attack scenarios that can be exploited in the wild if the application is using cookies for authentication, tracking, personalization, or some value reflections.
 
-#### <a id="ref-web-36"></a>Papers
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-web-36"></a><a id="papers"></a>
 
 #### <a id="ref-web-37"></a>Tools
 
@@ -1190,7 +1192,8 @@ Testing of
 
 * [Object MetaInformation](https://www.w3.org/Protocols/HTTP/Object_Headers.html#public)
 
-#### <a id="ref-web-63"></a>HTTP Parameters
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-web-63"></a><a id="http-parameters"></a>
 
 #### <a id="ref-web-64"></a>HTTP Pipelining
 
@@ -1417,7 +1420,7 @@ Testing of
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-### <a id="ref-web-83"></a><a id="jsframeworks" name="jsframeworks"></a>JS Frameworks
+### <a id="ref-web-83"></a><a id="jsframeworks" name="jsframeworks"></a><a id="js-frameworks"></a>Web Frameworks and Applications
 
 #### <a id="ref-web-84"></a>General
 
@@ -1440,7 +1443,8 @@ Testing of
     * [ngrev](https://github.com/mgechev/ngrev)
         * Graphical tool for reverse engineering of Angular projects. It allows you to navigate in the structure of your application and observe the relationship between the different modules, providers, and directives. The tool performs static code analysis which means that you don't have to run your application in order to use it.
 
-#### <a id="ref-web-86"></a>Backbone.js
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-web-86"></a><a id="backbonejs"></a>
 
 #### <a id="ref-web-87"></a>Django
 
@@ -1449,7 +1453,8 @@ Testing of
 * [Disclosing information with a side-channel in Django - Dennis Brinkrolf(2022)](https://www.sonarsource.com/blog/disclosing-information-with-a-side-channel-in-django/)
 * [The Fall Of Mighty Django, Exploiting Unicode Case Transformations - oxsha(2020)](https://0xsha.io/blog/the-fall-of-mighty-django-exploiting-unicode-case-transformations)
 
-#### <a id="ref-web-88"></a>Ember.js
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-web-88"></a><a id="emberjs"></a>
 
 #### <a id="ref-web-89"></a>Groovy
 
@@ -1564,7 +1569,8 @@ Testing of
 
 * [Secret fragments: Remote code execution on Symfony based websites - Charles Fol(2020)](https://www.ambionics.io/blog/symfony-secret-fragment)
 
-#### <a id="ref-web-102"></a>Vue.js
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-web-102"></a><a id="vuejs"></a>
 
 #### <a id="ref-web-103"></a>Wordpress
 
@@ -2120,7 +2126,7 @@ Testing of
     * [Common Federated Identity Protocols: OpenID Connect vs OAuth vs SAML 2 - Security Journey](https://www.securityjourney.com/post/analysis-of-common-federated-identity-protocols-openid-connect-vs-oauth-2.0-vs-saml-2.0)
     * [Breaking Through Single Sign On (SSO) - Alex Bainbridge](https://www.praetorian.com/blog/breaking-through-okta-single-sign-on-sso-security)
 - **Talks & Presentations**
-    * [SSO Wars: The Token Menace - Alvaro Munoz, Oleksandr Mirosh]()
+    * SSO Wars: The Token Menace - Alvaro Munoz, Oleksandr Mirosh
         * [Slides](https://i.blackhat.com/USA-19/Wednesday/us-19-Munoz-SSO-Wars-The-Token-Menace.pdf)
 - **Dupe Key Confusion**
     * attack to bypass XML signature verification by sending multiple key identifiers in the KeyInfo section. Vulnerable systems will use the first one to verify the XML signature and the second one to verify the trust on the signing party. This plugin applies this technique to SAML tokens by allowing to modify and then resign the SAML assertion with an arbitrary attacker-controlled key which is then send as the first element of the KeyInfo section, while the original key identifier is sent as the second key identifier.
@@ -2684,7 +2690,7 @@ Testing of
         * endpointdiff is a simple wrapper script around LinkFinder (https://github.com/GerbenJavado/LinkFinder) to quickly identify whether endpoints have changed based on diffs of JS files.
     * [gau](https://github.com/lc/gau)
         * Fetch known URLs from AlienVault's Open Threat Exchange, the Wayback Machine, and Common Crawl.
-    * [FFUF Me - Target Practice For FFUF]()https://github.com/adamtlangley/ffufme
+    * [FFUF Me - Target Practice For FFUF](<https://github.com/adamtlangley/ffufme>)
         * This is a simple website to get you used to using ffuf against a live target
     * [httpx](https://github.com/projectdiscovery/httpx)
         * "httpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library. It is designed to maintain result reliability with an increased number of threads."
@@ -3086,7 +3092,7 @@ Testing of
     * [CSV Injection Payload List - Ismail Tasdelen(2020)](https://ismailtasdelen.medium.com/csv-injection-payload-list-e8e1deca6da5)
     * [Everything about the CSV Excel Macro Injection - Ishaq Mohammed(2021)](http://blog.securelayer7.net/how-to-perform-csv-excel-macro-injection/)
 - **Talks & Presentations**
-    * [Tricks to improve web app excel export attacks(Slides) - Jerome Smith - CamSec2016]()
+    * Tricks to improve web app excel export attacks(Slides) - Jerome Smith - CamSec2016
         * [Video](https://www.youtube.com/watch?v=3wNvxRCJLQQ)
         * This presentation is an embellished version of the second half of a talk originally presented at BSides MCR 2016. It covers more general web app export issues as well as revisions on the DDE content following feedback from BSides. This talk also had more demos.
 - **Tools**
@@ -3450,7 +3456,7 @@ Testing of
 * **Papers**
     * [FUSE: Finding File Upload Bugs via Penetration Testing - Taekjin Lee, Seongil Wi, Suyoung Lee, Sooel Son](https://www.ndss-symposium.org/wp-content/uploads/2020/02/23126.pdf)
 * **Presentations/Talks/Videos**
-    * [FUSE: Finding File Upload Bugs via Penetration Testing - Taekjin Lee, Seongil Wi, Suyoung Lee, Sooel Son(NDSS2020)]()
+    * FUSE: Finding File Upload Bugs via Penetration Testing - Taekjin Lee, Seongil Wi, Suyoung Lee, Sooel Son(NDSS2020)
         * An Unrestricted File Upload (UFU) vulnerability is a critical security threat that enables an adversary to upload her choice of a forged file to a target web server. This bug evolves into an Unrestricted Executable File Upload (UEFU) vulnerability when the adversary is able to conduct remote code execution of the uploaded file via triggering its URL. We design and implement FUSE, the first penetration testing tool designed to discover UFU and UEFU vulnerabilities in server-side PHP web applications. The goal of FUSE is to generate upload requests; each request becomes an exploit payload that triggers a UFU or UEFU vulnerability. However, this approach entails two technical challenges: (1) it should generate an upload request that bypasses all content-filtering checks present in a target web application; and (2) it should preserve the execution semantic of the resulting uploaded file. We address these technical challenges by mutating standard upload requests with carefully designed mutation operations that enable the bypassing of content- filtering checks and do not tamper with the execution of uploaded files. FUSE discovered 30 previously unreported UEFU vulnerabilities, including 15 CVEs from 33 real-world web applications, thereby demonstrating its efficacy in finding code execution bugs via file uploads.
         * [Paper](https://www.ndss-symposium.org/wp-content/uploads/2020/02/23126.pdf)
     * [Finding File Upload Bugs via Penetration Testing - Taekjin Lee, Seongil Wi, Suyoung Lee, Sooel Son(2020)](https://www.youtube.com/watch?v=Ot0unJErC-g)
@@ -3558,7 +3564,8 @@ Testing of
 
 ### <a id="ref-web-191"></a><a id="ija" name="ija"></a>Injection Based Attacks
 
-#### <a id="ref-web-192"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-web-192"></a><a id="101-3"></a>
 
 #### <a id="ref-web-193"></a>Articles/Blogposts/Writeups
 
@@ -3603,7 +3610,8 @@ Testing of
 
 * [Exploiting OGNL Injection in Apache Struts  - Ionut Popescu(2022)](https://pentest-tools.com/blog/exploiting-ognl-injection-in-apache-struts)
 
-#### <a id="ref-web-198"></a>Papers
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-web-198"></a><a id="papers-1"></a>
 
 #### <a id="ref-web-199"></a>Presentations/Talks/Videos
 
@@ -4367,11 +4375,8 @@ Testing of
 
 ----------------------------------------------------------------------------------------------------------------
 
-### <a id="ref-web-221"></a><a id="typosquat" name="typosquat"></a>Typosquatting overview
-
-* **101**
-
-----------------------------------------------------------------------------------------------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-web-221"></a><a id="typosquatting-overview"></a><a id="typosquat"></a>
 
 ### <a id="ref-web-222"></a><a id="typosquatting" name="typosquatting"></a>(Bit)/Typo-squatting
 
@@ -4512,8 +4517,8 @@ Testing of
                 * Over the years many techniques have been introduced to prevent or mitigate XSS. Thereby, most of these techniques such as HTML sanitizers or CSP focus on script tags and event handlers. In this talk, we present a novel Web hacking technique that enables an attacker to bypass these mitigations. In order to to so, the attacker abuses so-called script gadgets. A gadget Is a legitimate piece of JS in a page that reads elements via selectors and processes them in a way that results in script execution. To abuse a gadget, the attacker injects benign elements that match the gadget&rsquo;s selector. Subsequently, the gadget selects the elements and executes the attacker's scripts. As the attacker's markup is benign it passes HTML sanitizers and security policies. The XSS only surfaces when the gadget mistakenly elevates the privileges of the element. Based on real-world examples, we will demonstrate that these gadgets are present in almost all modern JavaScript libraries, APIs and applications.
             * [Breaking XSS Mitigations Via Script Gadgets - Sebastian Lekies, Krzysztof Kotowicz & Eduardo Vela(BHUSA2017)](https://www.youtube.com/watch?v=i6Ug8O23DMU)
                 * In this talk, we present a novel Web hacking technique that enables an attacker to circumvent most XSS mitigations. In order to do so, the attacker abuses so-called script gadgets. A script gadget Is a legitimate piece of JavaScript in a page that reads elements from the DOM via selectors and processes them in a way that results in script execution
-            * [Eval Villain: Simplifying DOM XSS and JS Reversing - Dennis Goodlett(BSidesCLE2019)]()
-                * JavaScript cruft is growing faster than my ability to read. Since I can't read every line of code, I need tools to find important lines. Eval Villain is a web extension for Firefox that hooks native JavaScript functions *before* the page loads so that you will be notified every time a function is called. Eval Villain has discovered instances of DOM XSS that only appear in 1 of 100 page loads. It makes the reversing of malicious, second-stage encrypted JavaScript code trivial. I plan on walking through all the features of this tool using examples. To follow along, bring a computer that can run Firefox.https://www.irongeek.com/i.php?page=videos/bsidescleveland2019/bsides-cleveland-c-00-eval-villain-simplifying-dom-xss-and-js-reversing-dennis-goodlett
+            * [Eval Villain: Simplifying DOM XSS and JS Reversing - Dennis Goodlett(BSidesCLE2019)](<https://www.irongeek.com/i.php?page=videos/bsidescleveland2019/bsides-cleveland-c-00-eval-villain-simplifying-dom-xss-and-js-reversing-dennis-goodlett>)
+                * JavaScript cruft is growing faster than my ability to read. Since I can't read every line of code, I need tools to find important lines. Eval Villain is a web extension for Firefox that hooks native JavaScript functions *before* the page loads so that you will be notified every time a function is called. Eval Villain has discovered instances of DOM XSS that only appear in 1 of 100 page loads. It makes the reversing of malicious, second-stage encrypted JavaScript code trivial. I plan on walking through all the features of this tool using examples. To follow along, bring a computer that can run Firefox.
         * **Papers**
             * [DOM Based Cross Site Scripting or XSS of the Third Kind: A look at an overlooked flavor of XSS - Amit Klein(2005)](http://www.webappsec.org/projects/articles/071105.html)
         * **Tools**
@@ -5017,126 +5022,141 @@ Testing of
         * Keyhacks is a repository which shows quick ways in which API keys leaked by a bug bounty program can be checked to see if they're valid.
 ----------------------------------------------------------------------------------------------------------------
 
-    
-	ToDo links
-```
-XSS
-	https://github.com/EgeBalci/xss-flare
-	https://medium.com/@spade.com/a-guide-to-make-your-own-serverless-blind-xss-and-blind-oob-payload-18f8f2b9c507
-	https://ysamm.com/?p=493
-	https://netsec.expert/posts/xss-in-2021/
-	https://0xmkr24.medium.com/cross-site-scripting-contexts-walkthrough-portswigger-labs-part-1-aad6cf65e49b
-	https://securitygoat.medium.com/data-exfiltration-with-some-fun-xss-tricks-49e9251f05fd
-	https://portswigger.net/research/portable-data-exfiltration
-	https://swarm.ptsecurity.com/fuzzing-for-xss-via-nested-parsers-condition/
-	https://www.rcesecurity.com/2020/11/Smuggling-an-un-exploitable-xss/
-	https://github.com/heroanswer/XSS_Cheat_Sheet_2020_Edition
-	https://liveoverflow.com/do-not-use-alert-1-in-xss/
-	https://blog.mozilla.org/attack-and-defense/2021/11/03/finding-and-fixing-dom-based-xss-with-static-analysis/
-	https://hacklido.com/blog/252-xss-filter-evasion-and-waf-bypassing
-	https://whynotsecurity.com/blog/xss-to-rce/
-	https://www.youtube.com/embed/xxKAvx4UeUg
-	https://www.volkis.com.au/blog/bypass-xss-in-wafs/
-	https://www.youtube.com/watch?v=mKAWpFdVcPY
-	https://docs.google.com/presentation/d/130n98LMDyD1xyZp5wzgmjmrZPP-nBcU9tI3NaOVfBs0/preview#slide=id.p
-	https://github.com/redcode-labs/poXSSon
-	https://www.youtube.com/watch?v=HU3np5xvioA
-	https://github.com/kleiton0x00/ppmap
-	https://www.blackhat.com/presentations/bh-europe-07/Dube-Rios/Whitepaper/bh-eu-07-rios-WP.pdf
-	https://pentestit.medium.com/hey-dude-do-you-need-script-on-your-page-d9192df990f4
-	https://twitter.com/orange_8361/status/1333458585980813333
-	https://www.trustedsec.com/events/webinar-popping-shells-instead-of-alert-boxes-weaponizing-xss-for-fun-and-profit/
-	https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot
-	https://web.archive.org/web/20190617111911/https://polyglot.innerht.ml/
-	https://dev.to/caffiendkitten/xss-javascript-polyglots-4i64
-	https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls
-	https://lutfumertceylan.com.tr/posts/acc-takeover-web-cache-xss/
-	https://medium.com/bugbountywriteup/content-security-policy-bypass-to-perform-xss-3c8dd0d40c2e
-	https://knoxss.me/?page_id=766
-	https://www.youtube.com/watch?v=TgilzlNHFz8
-	https://github.com/hakluke/weaponised-XSS-payloads
-	https://twitter.com/intigriti/status/1356245100414840833
-	https://github.com/yavolo/eventlistener-xss-recon
-	https://medium.com/@know.0nix/hunting-good-bugs-with-only-html-d8fd40d17b38	
-	https://leucosite.com/Edge-Chromium-EoP-RCE/
-	https://github.com/hahwul/dalfox
-	https://www.immersivelabs.com/resources/blog/wagtail-xss-localstorage-account-hijack/
-	https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript
-	https://r2c.dev/blog/2021/xss-cheat-sheets/
-	https://thehackerblog.com/video-download-uxss-exploit-detailed/
-	https://medium.com/realmodelabs/kindledrip-from-your-kindles-email-address-to-using-your-credit-card-bb93dbfb2a08
-	https://blog.s1r1us.ninja/bug-bounty/cookie-tossing-to-rce-on-google-cloud-jupyter-notebooks
-	https://medium.com/bugbountywriteup/intigritis-december-xss-challenge-2020-unintended-solution-8205b4a4b95b
-	https://chefsecure.com/courses/xss/recipes/polyglots-the-ultimate-xss-payloads
-	https://medium.com/cyberverse/obfuscated-polyglot-xss-payloads-simplified-with-references-157e95b1d601
-	https://security.szurek.pl/en/xss-polyglot.html
-	https://easterxss.terjanq.me/writeup.html
-	https://www.youtube.com/watch?utm_campaign=bug_bytes_99_bypassing_bots_and_wafs_jq_in_burp_smarter_json_fuzzing_and_subdomain_takeovers
-		* [AwesomeXSS - Somdev Sangwan](https://github.com/s0md3v/AwesomeXSS)
-			* Awesome XSS stuff
-	Cookies
-		https://medium.com/@agrawalsmart7/cookie-based-injection-xss-making-exploitable-with-out-exploiting-other-vulns-81132ca01d67
-		https://security.stackexchange.com/questions/36172/is-cookie-based-xss-exploitable
-		https://wesecureapp.com/2017/07/10/xss-by-tossing-cookies/
-		http://zhchbin.github.io/2017/08/30/Uber-XSS-via-Cookie/
-		https://appsecnotes.blogspot.com/2009/11/xss-via-cookie-how-severe.html
-		http://blog.k3170makan.com/2013/10/aboutme-cookie-based-xss.html
-		https://blog.jeremiahgrossman.com/2010/02/converting-unimplementable-cookie-based.html
-	DOM
-		https://enfinlay.github.io//xss/dom/burp/2021/02/23/dom-xss-is-dead.html
-		https://vovohelo.medium.com/from-svg-and-back-yet-another-mutation-xss-via-namespace-confusion-for-dompurify-2-2-2-bypass-5d9ae8b1878f
-		https://github.com/nccgroup/tracy
-		https://static.sched.com/hosted_files/njsi2019/31/Securing%20the%20DOM%20from%20the%20bottom%20up%20-%20Node%2BJS%20Interactive.pdf
-		https://www.youtube.com/watch?v=QBkLI35sxVsutm_campaign=bug_bytes_103_cookie_tossing_recon_tools_benchmarks_stealing_google_docs_with_screenshots&utm_term=2020-12-30
-		https://research.securitum.com/helping-secure-dompurify-part-1/
-		https://github.com/filedescriptor/untrusted-types
-		https://thexssrat.medium.com/digging-deep-into-dom-xss-9ed172876477
-		* [Restricted-character XSS for fun - physuru.dev(2021)](https://web.archive.org/web/20210414031135/https://physuru.dev/blog/restricted_character_xss/)
-		https://blog.mozilla.org/attack-and-defense/2021/11/03/finding-and-fixing-dom-based-xss-with-static-analysis/
-		https://portswigger.net/web-security/dom-based/cookie-manipulation
-		https://owasp.org/www-community/attacks/DOM_Based_XSS
-		https://portswigger.net/blog/introducing-dom-invader
-		https://medium.com/@shilpybanerjee/dom-based-cookie-manipulation-portswigger-lab-16ae86de26fc
-		https://medium.com/bugbountywriteup/reflected-xss-on-microsoft-com-via-angular-template-injection-2e26d80a7fd8
-		https://medium.com/@lucideus/a-definitive-guide-to-session-hijacking-lucideus-research-71165a672973
-		https://security.stackexchange.com/questions/176897/how-to-exploit-dom-xss-in-cookies-without-having-xss-on-the-page/176938
-		https://github.com/wisec/domxsswiki
-		https://hackerone.com/reports/57356
-		https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting/dom-xss
-		https://github.com/wisec/domxsswiki
-	Talks
-		* [Tracing User Input Through JavaScript is for Tools - Jake Heath, Michael Roberts(2018)](https://www.youtube.com/watch?v=3zowuWLEGsA&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN&index=21)
-			* Being able to comprehend causal relationships between sources of user input and their corresponding output is a distinguishing characteristic that separates the master web hacker from the novice script kiddy. The better a tester can grasp these relationships, the faster they can abuse lapses in input sanitization, identify dangerous programming patterns, and understand the overall attack surface of the application. However, enumerating these relationships is difficult and time intensive to do by hand, especially with JavaScript-heavy apps. Security scanning tools have tried to automate this procedure, but they face several problems in modern web applications: To solve these problems, we need a tool that augments, not automates, a manual penetration tester by helping them understand all of the inputs and outputs of a web application. To this end, we present Tracy, a tool for assisting penetration testers with enumerating every sink of output for all user input sources.
-XSSI
-	https://blog.cm2.pw/exploiting-post-based-xssi/
-	https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-lekies.pdf
-	* [XSSI and JSONP leaks](https://github.com/EdOverflow/bugbountywiki/wiki/XSSI-and-JSONP-leaks)
-	* [The Tale of a Fameless but Widespread Web Vulnerability Class - Veit Hailperin](https://www.youtube.com/watch?v=5qA0CtS6cZ4)
-		* [Blogpost](https://www.scip.ch/en/?labs.20160414)
-		* Two keys components account for finding vulnerabilities of a certain class: awareness of the vulnerability and ease of finding the vulnerability. Cross-Site Script Inclusion (XSSI) vulnerabilities are not mentioned in the de facto standard for public attention - the OWASP Top 10. Additionally there is no public tool available to facilitate finding XSSI. The impact reaches from leaking personal information stored, circumvention of token-based protection to complete compromise of accounts. XSSI vulnerabilities are fairly wide spread and the lack of detection increases the risk of each XSSI. In this talk we are going to demonstrate how to find XSSI, exploit XSSI and also how to protect against XSSI.
-XS-Leaks
-	https://arturjanc.com/visited-delenda-est.pdf
-XS-Search
-	https://www.youtube.com/watch?v=HcrQy0C-hEA
-	https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html
-	https://www.abortz.net/papers/timingweb.pdf
-	https://www.owasp.org/images/a/a7/AppSecIL2015_Cross-Site-Search-Attacks_HemiLeibowitz.pdf
-	https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549
-	https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf
-	https://sites.google.com/site/bughunteruniversity/nonvuln/xsleaks
-	https://terjanq.github.io/Bug-Bounty/Google/cache-attack-06jd2d2mz2r0/index.html
-	https://github.com/xsleaks/xsleaks/wiki/Links
-	http://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html
-XXE
-	https://www.shielder.it/blog/dont-open-that-xml-xxe-to-rce-in-xml-plugins-for-vs-code-eclipse-theia/
-	https://gosecure.github.io/xxe-workshop/#0
-	https://cinzinga.com/XXE-Case-Studies/
-	https://read.martiandefense.llc/hacking-xml-xml-injection-51bea2edd3a2?gi=5fb445391ec6
-	https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/HIP2019-Advanced_XXE_Exploitation.pdf
-		https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_1_simple.pdf
-		https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_2_external_dtd.pdf
-		https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_3_php_encoding.pdf
-		https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_4_jar_proto.pdf
-		https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_5_local_dtd.pdf
-	https://speakerdeck.com/0ang3el/a-hackers-perspective-on-aem-applications-security
-```
+## <a id="ref-web-233"></a>Pending / Unsorted Resources
+
+These existing resource links are pending review and placement in the main sections. Topic labels are provisional; repeated entries are retained.
+
+### <a id="ref-web-234"></a>XSS
+
+* <https://github.com/EgeBalci/xss-flare>
+* <https://medium.com/@spade.com/a-guide-to-make-your-own-serverless-blind-xss-and-blind-oob-payload-18f8f2b9c507>
+* <https://ysamm.com/?p=493>
+* <https://netsec.expert/posts/xss-in-2021/>
+* <https://0xmkr24.medium.com/cross-site-scripting-contexts-walkthrough-portswigger-labs-part-1-aad6cf65e49b>
+* <https://securitygoat.medium.com/data-exfiltration-with-some-fun-xss-tricks-49e9251f05fd>
+* <https://portswigger.net/research/portable-data-exfiltration>
+* <https://swarm.ptsecurity.com/fuzzing-for-xss-via-nested-parsers-condition/>
+* <https://www.rcesecurity.com/2020/11/Smuggling-an-un-exploitable-xss/>
+* <https://github.com/heroanswer/XSS_Cheat_Sheet_2020_Edition>
+* <https://liveoverflow.com/do-not-use-alert-1-in-xss/>
+* <https://blog.mozilla.org/attack-and-defense/2021/11/03/finding-and-fixing-dom-based-xss-with-static-analysis/>
+* <https://hacklido.com/blog/252-xss-filter-evasion-and-waf-bypassing>
+* <https://whynotsecurity.com/blog/xss-to-rce/>
+* <https://www.youtube.com/embed/xxKAvx4UeUg>
+* <https://www.volkis.com.au/blog/bypass-xss-in-wafs/>
+* <https://www.youtube.com/watch?v=mKAWpFdVcPY>
+* <https://docs.google.com/presentation/d/130n98LMDyD1xyZp5wzgmjmrZPP-nBcU9tI3NaOVfBs0/preview#slide=id.p>
+* <https://github.com/redcode-labs/poXSSon>
+* <https://www.youtube.com/watch?v=HU3np5xvioA>
+* <https://github.com/kleiton0x00/ppmap>
+* <https://www.blackhat.com/presentations/bh-europe-07/Dube-Rios/Whitepaper/bh-eu-07-rios-WP.pdf>
+* <https://pentestit.medium.com/hey-dude-do-you-need-script-on-your-page-d9192df990f4>
+* <https://twitter.com/orange_8361/status/1333458585980813333>
+* <https://www.trustedsec.com/events/webinar-popping-shells-instead-of-alert-boxes-weaponizing-xss-for-fun-and-profit/>
+* <https://github.com/0xsobky/HackVault/wiki/Unleashing-an-Ultimate-XSS-Polyglot>
+* <https://web.archive.org/web/20190617111911/https://polyglot.innerht.ml/>
+* <https://dev.to/caffiendkitten/xss-javascript-polyglots-4i64>
+* <https://bishopfox.com/blog/lexss-bypassing-lexical-parsing-security-controls>
+* <https://lutfumertceylan.com.tr/posts/acc-takeover-web-cache-xss/>
+* <https://medium.com/bugbountywriteup/content-security-policy-bypass-to-perform-xss-3c8dd0d40c2e>
+* <https://knoxss.me/?page_id=766>
+* <https://www.youtube.com/watch?v=TgilzlNHFz8>
+* <https://github.com/hakluke/weaponised-XSS-payloads>
+* <https://twitter.com/intigriti/status/1356245100414840833>
+* <https://github.com/yavolo/eventlistener-xss-recon>
+* <https://medium.com/@know.0nix/hunting-good-bugs-with-only-html-d8fd40d17b38>
+* <https://leucosite.com/Edge-Chromium-EoP-RCE/>
+* <https://github.com/hahwul/dalfox>
+* <https://www.immersivelabs.com/resources/blog/wagtail-xss-localstorage-account-hijack/>
+* <https://portswigger.net/research/redefining-impossible-xss-without-arbitrary-javascript>
+* <https://r2c.dev/blog/2021/xss-cheat-sheets/>
+* <https://thehackerblog.com/video-download-uxss-exploit-detailed/>
+* <https://medium.com/realmodelabs/kindledrip-from-your-kindles-email-address-to-using-your-credit-card-bb93dbfb2a08>
+* <https://blog.s1r1us.ninja/bug-bounty/cookie-tossing-to-rce-on-google-cloud-jupyter-notebooks>
+* <https://medium.com/bugbountywriteup/intigritis-december-xss-challenge-2020-unintended-solution-8205b4a4b95b>
+* <https://chefsecure.com/courses/xss/recipes/polyglots-the-ultimate-xss-payloads>
+* <https://medium.com/cyberverse/obfuscated-polyglot-xss-payloads-simplified-with-references-157e95b1d601>
+* <https://security.szurek.pl/en/xss-polyglot.html>
+* <https://easterxss.terjanq.me/writeup.html>
+* <https://www.youtube.com/watch?utm_campaign=bug_bytes_99_bypassing_bots_and_wafs_jq_in_burp_smarter_json_fuzzing_and_subdomain_takeovers>
+* [AwesomeXSS - Somdev Sangwan](https://github.com/s0md3v/AwesomeXSS)
+  * Awesome XSS stuff
+
+#### <a id="ref-web-235"></a>XSS Cookie Resources
+
+* <https://medium.com/@agrawalsmart7/cookie-based-injection-xss-making-exploitable-with-out-exploiting-other-vulns-81132ca01d67>
+* <https://security.stackexchange.com/questions/36172/is-cookie-based-xss-exploitable>
+* <https://wesecureapp.com/2017/07/10/xss-by-tossing-cookies/>
+* <http://zhchbin.github.io/2017/08/30/Uber-XSS-via-Cookie/>
+* <https://appsecnotes.blogspot.com/2009/11/xss-via-cookie-how-severe.html>
+* <http://blog.k3170makan.com/2013/10/aboutme-cookie-based-xss.html>
+* <https://blog.jeremiahgrossman.com/2010/02/converting-unimplementable-cookie-based.html>
+
+#### <a id="ref-web-236"></a>XSS DOM Resources
+
+* <https://enfinlay.github.io//xss/dom/burp/2021/02/23/dom-xss-is-dead.html>
+* <https://vovohelo.medium.com/from-svg-and-back-yet-another-mutation-xss-via-namespace-confusion-for-dompurify-2-2-2-bypass-5d9ae8b1878f>
+* <https://github.com/nccgroup/tracy>
+* <https://static.sched.com/hosted_files/njsi2019/31/Securing%20the%20DOM%20from%20the%20bottom%20up%20-%20Node%2BJS%20Interactive.pdf>
+* <https://www.youtube.com/watch?v=QBkLI35sxVsutm_campaign=bug_bytes_103_cookie_tossing_recon_tools_benchmarks_stealing_google_docs_with_screenshots&utm_term=2020-12-30>
+* <https://research.securitum.com/helping-secure-dompurify-part-1/>
+* <https://github.com/filedescriptor/untrusted-types>
+* <https://thexssrat.medium.com/digging-deep-into-dom-xss-9ed172876477>
+* [Restricted-character XSS for fun - physuru.dev(2021)](https://web.archive.org/web/20210414031135/https://physuru.dev/blog/restricted_character_xss/)
+* <https://blog.mozilla.org/attack-and-defense/2021/11/03/finding-and-fixing-dom-based-xss-with-static-analysis/>
+* <https://portswigger.net/web-security/dom-based/cookie-manipulation>
+* <https://owasp.org/www-community/attacks/DOM_Based_XSS>
+* <https://portswigger.net/blog/introducing-dom-invader>
+* <https://medium.com/@shilpybanerjee/dom-based-cookie-manipulation-portswigger-lab-16ae86de26fc>
+* <https://medium.com/bugbountywriteup/reflected-xss-on-microsoft-com-via-angular-template-injection-2e26d80a7fd8>
+* <https://medium.com/@lucideus/a-definitive-guide-to-session-hijacking-lucideus-research-71165a672973>
+* <https://security.stackexchange.com/questions/176897/how-to-exploit-dom-xss-in-cookies-without-having-xss-on-the-page/176938>
+* <https://github.com/wisec/domxsswiki>
+* <https://hackerone.com/reports/57356>
+* <https://book.hacktricks.xyz/pentesting-web/xss-cross-site-scripting/dom-xss>
+* <https://github.com/wisec/domxsswiki>
+
+#### <a id="ref-web-237"></a>Talks
+
+* [Tracing User Input Through JavaScript is for Tools - Jake Heath, Michael Roberts(2018)](https://www.youtube.com/watch?v=3zowuWLEGsA&list=PL7D3STHEa66TbZwq9w3S2qWzoJeNo3YYN&index=21)
+  * Being able to comprehend causal relationships between sources of user input and their corresponding output is a distinguishing characteristic that separates the master web hacker from the novice script kiddy. The better a tester can grasp these relationships, the faster they can abuse lapses in input sanitization, identify dangerous programming patterns, and understand the overall attack surface of the application. However, enumerating these relationships is difficult and time intensive to do by hand, especially with JavaScript-heavy apps. Security scanning tools have tried to automate this procedure, but they face several problems in modern web applications: To solve these problems, we need a tool that augments, not automates, a manual penetration tester by helping them understand all of the inputs and outputs of a web application. To this end, we present Tracy, a tool for assisting penetration testers with enumerating every sink of output for all user input sources.
+
+### <a id="ref-web-238"></a>XSSI
+
+* <https://blog.cm2.pw/exploiting-post-based-xssi/>
+* <https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-lekies.pdf>
+* [XSSI and JSONP leaks](https://github.com/EdOverflow/bugbountywiki/wiki/XSSI-and-JSONP-leaks)
+* [The Tale of a Fameless but Widespread Web Vulnerability Class - Veit Hailperin](https://www.youtube.com/watch?v=5qA0CtS6cZ4)
+  * [Blogpost](https://www.scip.ch/en/?labs.20160414)
+  * Two keys components account for finding vulnerabilities of a certain class: awareness of the vulnerability and ease of finding the vulnerability. Cross-Site Script Inclusion (XSSI) vulnerabilities are not mentioned in the de facto standard for public attention - the OWASP Top 10. Additionally there is no public tool available to facilitate finding XSSI. The impact reaches from leaking personal information stored, circumvention of token-based protection to complete compromise of accounts. XSSI vulnerabilities are fairly wide spread and the lack of detection increases the risk of each XSSI. In this talk we are going to demonstrate how to find XSSI, exploit XSSI and also how to protect against XSSI.
+
+### <a id="ref-web-239"></a>XS-Leaks
+
+* <https://arturjanc.com/visited-delenda-est.pdf>
+
+### <a id="ref-web-240"></a>XS-Search
+
+* <https://www.youtube.com/watch?v=HcrQy0C-hEA>
+* <https://scarybeastsecurity.blogspot.com/2009/12/cross-domain-search-timing.html>
+* <https://www.abortz.net/papers/timingweb.pdf>
+* <https://www.owasp.org/images/a/a7/AppSecIL2015_Cross-Site-Search-Attacks_HemiLeibowitz.pdf>
+* <https://medium.com/@luanherrera/xs-searching-googles-bug-tracker-to-find-out-vulnerable-source-code-50d8135b7549>
+* <https://www.blackhat.com/docs/us-16/materials/us-16-Gelernter-Timing-Attacks-Have-Never-Been-So-Practical-Advanced-Cross-Site-Search-Attacks.pdf>
+* <https://sites.google.com/site/bughunteruniversity/nonvuln/xsleaks>
+* <https://terjanq.github.io/Bug-Bounty/Google/cache-attack-06jd2d2mz2r0/index.html>
+* <https://github.com/xsleaks/xsleaks/wiki/Links>
+* <http://sirdarckcat.blogspot.com/2019/03/http-cache-cross-site-leaks.html>
+
+### <a id="ref-web-241"></a>XXE
+
+* <https://www.shielder.it/blog/dont-open-that-xml-xxe-to-rce-in-xml-plugins-for-vs-code-eclipse-theia/>
+* <https://gosecure.github.io/xxe-workshop/#0>
+* <https://cinzinga.com/XXE-Case-Studies/>
+* <https://read.martiandefense.llc/hacking-xml-xml-injection-51bea2edd3a2?gi=5fb445391ec6>
+* <https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/HIP2019-Advanced_XXE_Exploitation.pdf>
+  * <https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_1_simple.pdf>
+  * <https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_2_external_dtd.pdf>
+  * <https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_3_php_encoding.pdf>
+  * <https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_4_jar_proto.pdf>
+  * <https://gosecure.github.io/presentations/2019-06-19-hack_in_paris/Exercise_5_local_dtd.pdf>
+* <https://speakerdeck.com/0ang3el/a-hackers-perspective-on-aem-applications-security>

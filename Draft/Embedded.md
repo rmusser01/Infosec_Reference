@@ -18,19 +18,13 @@
 - [Cable Modem Hacking](#ref-embedded-14)
   - [101](#ref-embedded-15)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-16)
-  - [Tools](#ref-embedded-17)
-  - [Miscellaneous](#ref-embedded-18)
 - [Credit Cards](#ref-embedded-19)
-  - [101](#ref-embedded-20)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-21)
   - [Tools](#ref-embedded-22)
 - [esp8266 H/W related](#ref-embedded-23)
 - [Flash Memory](#ref-embedded-24)
   - [101](#ref-embedded-25)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-26)
-  - [General](#ref-embedded-27)
-  - [Tools](#ref-embedded-28)
-  - [Miscellaneous](#ref-embedded-29)
 - [Firmware(Non-Specific)](#ref-embedded-30)
   - [101](#ref-embedded-31)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-32)
@@ -42,66 +36,32 @@
   - [Articles, Blogposts & Writeups](#ref-embedded-38)
   - [Talks & Presentations](#ref-embedded-39)
   - [Educational/Informative](#ref-embedded-40)
-  - [Tools](#ref-embedded-41)
-  - [Papers](#ref-embedded-42)
 - [JTAG](#ref-embedded-43)
   - [101](#ref-embedded-44)
-  - [Articles/Papers/Talks/Writeups](#ref-embedded-45)
   - [Tools](#ref-embedded-46)
-  - [Miscellaneous](#ref-embedded-47)
 - [Medical Devices](#ref-embedded-48)
-  - [101](#ref-embedded-49)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-50)
   - [General](#ref-embedded-51)
   - [Talks & Presentations](#ref-embedded-52)
-  - [Tools](#ref-embedded-53)
-  - [Miscellaneous](#ref-embedded-54)
 - [Miscellaneous Devices](#ref-embedded-55)
 - [Lightning/Thunderbolt](#ref-embedded-56)
-  - [101](#ref-embedded-57)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-58)
-  - [General](#ref-embedded-59)
   - [Tools](#ref-embedded-60)
-  - [Miscellaneous](#ref-embedded-61)
 - [PCI](#ref-embedded-62)
-  - [101](#ref-embedded-63)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-64)
-  - [General](#ref-embedded-65)
   - [Tools](#ref-embedded-66)
-  - [Miscellaneous](#ref-embedded-67)
 - [Printers](#ref-embedded-68)
 - [Smart TVs/Monitors](#ref-embedded-69)
-  - [101](#ref-embedded-70)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-71)
-  - [General](#ref-embedded-72)
-  - [Tools](#ref-embedded-73)
-  - [Miscellaneous](#ref-embedded-74)
 - [SPI(Serial Peripheral Interface Bus)](#ref-embedded-75)
   - [101](#ref-embedded-76)
-  - [Articles/Papers/Talks/Writeups](#ref-embedded-77)
-  - [General](#ref-embedded-78)
-  - [Tools](#ref-embedded-79)
-  - [Miscellaneous](#ref-embedded-80)
 - [SD Cards](#ref-embedded-81)
-  - [101](#ref-embedded-82)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-83)
-  - [General](#ref-embedded-84)
-  - [Tools](#ref-embedded-85)
-  - [Miscellaneous](#ref-embedded-86)
 - [PCB Related](#ref-embedded-87)
 - [Point-of-Sale](#ref-embedded-88)
-  - [101](#ref-embedded-89)
-  - [Articles & Writeups](#ref-embedded-90)
   - [Talks & Presentations](#ref-embedded-91)
-  - [Papers](#ref-embedded-92)
-  - [Tools](#ref-embedded-93)
-  - [Miscellaneous](#ref-embedded-94)
 - [Secure Tokens](#ref-embedded-95)
-  - [101](#ref-embedded-96)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-97)
-  - [General](#ref-embedded-98)
-  - [Tools](#ref-embedded-99)
-  - [Miscellaneous](#ref-embedded-100)
 - [USB](#ref-embedded-101)
   - [101](#ref-embedded-102)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-103)
@@ -111,15 +71,10 @@
   - [BadUSB](#ref-embedded-107)
   - [USB Device/Class Info](#ref-embedded-108)
 - [SIM Cards](#ref-embedded-109)
-  - [101](#ref-embedded-110)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-111)
-  - [Tools](#ref-embedded-112)
-  - [Miscellaneous](#ref-embedded-113)
 - [Smartcards](#ref-embedded-114)
   - [101](#ref-embedded-115)
   - [Articles/Papers/Talks/Writeups](#ref-embedded-116)
-  - [Tools](#ref-embedded-117)
-  - [Miscellaneous](#ref-embedded-118)
   - [Chameleon Mini](#ref-embedded-119)
 - [Voting Machines](#ref-embedded-120)
 - [Specific Attacks](#ref-embedded-121)
@@ -249,18 +204,16 @@
 * [Hacking cable modems the later years - Bernardo Rodrigues - NullByte 2016](https://www.slideshare.net/nullbytecon/nullbyte-2015-hackingcablemodemsthelateryears)
 * [ Beyond your cable modem: How not to do DOCSIS networks - Alexander Graf](https://media.ccc.de/v/32c3-7133-beyond_your_cable_modem#video)
 
-### <a id="ref-embedded-17"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-17"></a>
 
-* [Keykeriki v2.0](http://www.remote-exploit.org/articles/keykeriki_v2_0__8211_2_4ghz/index.html)
-    * Hardware to attack wireless keyboards and other such things
-
-### <a id="ref-embedded-18"></a>Miscellaneous
-
------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-18"></a>
 
 ## <a id="ref-embedded-19"></a><a id="cc" name="cc"></a>Credit Cards
 
-### <a id="ref-embedded-20"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-20"></a>
 
 ### <a id="ref-embedded-21"></a>Articles/Papers/Talks/Writeups
 
@@ -291,20 +244,21 @@
 * [Vulnerabilities in MLC NAND Flash Memory Programming: Experimental Analysis, Exploits, and Mitigation Techniques](https://pdfs.semanticscholar.org/b9bc/a3c9f531002854af48de121cdcc8e0520c7f.pdf)
 * [Reverse Engineering: Reverse Engineering Flash Memory for Fun and Benefit - BlackHat 2014](https://www.youtube.com/watch?v=E8BSnS4-Kpw)
 
-### <a id="ref-embedded-27"></a>General
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-27"></a>
 
-### <a id="ref-embedded-28"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-28"></a>
 
-### <a id="ref-embedded-29"></a>Miscellaneous
-
---------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-29"></a>
 
 ## <a id="ref-embedded-30"></a><a id="firmware" name="firmware"></a>Firmware(Non-Specific)
 
 ### <a id="ref-embedded-31"></a>101
 
-* Check the BIOS/UEFI page as well.
-* Check out the RE page too.
+* Check the [BIOS/UEFI page](bios_uefi.md) as well.
+* Check out the [RE page](RE.md) too.
 * [Reverse Engineering Firmware Primer - SecurityWeekly](https://wiki.securityweekly.com/Reverse_Engineering_Firmware_Primer)
 
 ### <a id="ref-embedded-32"></a>Articles/Papers/Talks/Writeups
@@ -324,7 +278,7 @@
 * [dfu-programmer](https://github.com/dfu-programmer/dfu-programmer)
     * dfu-programmer is an implementation of the Device Firmware Upgrade class USB driver that enables firmware upgrades for various USB enabled (with the correct bootloader) Atmel chips.  This program was created because the Atmel "FLIP" program for flashing devices does not support flashing via USB on Linux, and because standard DFU loaders do not work for Atmel's chips.
 
-### <a id="ref-embedded-35"></a>Miscellaneous
+### <a id="ref-embedded-35"></a><a id="miscellaneous-3"></a>Miscellaneous
 
 * [Firmware Forensics: Diffs, Timelines, ELFs and Backdoors](http://w00tsec.blogspot.com/2015/02/firmware-forensics-diffs-timelines-elfs.html)
 * [Firmwalker](https://github.com/craigz28/firmwalker)
@@ -366,11 +320,11 @@
 * [Ian Douglas - Creating an Internet of Private Things](https://www.youtube.com/watch?v=4W8SkujOXi4&list=PLuUtcRxSUZUpv2An-RNhjuZSJ5fjY7ghe&index=8)
     * The next big market push is to have the cool IoT device that’s connected to the internet. As we’ve seen from the Mirai and Switcher hacks, it’s important to embed the appropriate safeguards so that devices are not open to attack. When selecting device components there are things that should be checked for, and when you’re doing the coding and workflows, there are other things that need to be taken in to account. Although security and privacy are close cousins, they’re also different. This talk will be centered around some best security and privacy practices as well as some common errors that should be avoided.
 
-### <a id="ref-embedded-41"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-41"></a>
 
-### <a id="ref-embedded-42"></a>Papers
-
----------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-42"></a><a id="papers"></a>
 
 ## <a id="ref-embedded-43"></a><a id="jtag" name="jtag"></a>JTAG
 
@@ -380,26 +334,27 @@
 * [What is JTAG and how can I make use of it? - xjtag.com](https://www.xjtag.com/about-jtag/what-is-jtag/)
 * [What is JTAG? - corelis.com](https://www.corelis.com/education/tutorials/jtag-tutorial/what-is-jtag/)
 
-### <a id="ref-embedded-45"></a>Articles/Papers/Talks/Writeups
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-45"></a>
 
 ### <a id="ref-embedded-46"></a>Tools
 
 * [JTAGulator](http://www.grandideastudio.com/portfolio/jtagulator/)
     * JTAGulator is an open source hardware tool that assists in identifying OCD connections from test points, vias, or component pads on a target device.
 
-### <a id="ref-embedded-47"></a>Miscellaneous
-
--------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-47"></a><a id="miscellaneous-4"></a>
 
 ## <a id="ref-embedded-48"></a><a id="medical" name="medical"></a>Medical Devices
 
-### <a id="ref-embedded-49"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-49"></a>
 
 ### <a id="ref-embedded-50"></a>Articles/Papers/Talks/Writeups
 
 * [Insulin Pumps, Decapped chips and Software Defined Radios - Pete Schwamb](https://blog.usejournal.com/insulin-pumps-decapped-chips-and-software-defined-radios-1be50f121d05)
 
-### <a id="ref-embedded-51"></a>General
+### <a id="ref-embedded-51"></a><a id="general-3"></a>General
 
 * [FDA.gov Medical Devices Page](https://www.fda.gov/Medicaldevices/default.htm)
 
@@ -408,11 +363,11 @@
 * [Anatomy of a Medical Device Hack- Doctors vs. Hackers in a Clinical Simulation Cage Match - Joshua Corman & Christian Dameff MD MS & Jeff Tully MD & Beau Woods(Derbycon2017)](https://www.irongeek.com/i.php?page=videos/derbycon7/t316-anatomy-of-a-medical-device-hack-doctors-vs-hackers-in-a-clinical-simulation-cage-match-joshua-corman-christian-dameff-md-ms-jeff-tully-md-beau-woods)
     * In the near future, a crisis unfolds at a hospital: patients on automated drug infusion machines overdose, hacked insulin pumps lead to car crashes, and internal defibrillators flatline weakened hearts. Clinical staff are unprepared and ill equipped to treat these complications, as they are all unaware of the true culprits behind the crisis. A state of emergency is declared, the public demands answers, and policymakers scramble to preserve national trust. This was the scenario that played out in first-of-their-kind clinical simulations carried out in June, and the results were scary yet unsurprising: health care cybersecurity is in critical condition. It’s been a long four years since the guiding ideals and message of The Cavalry was tempered from the forge that was the first Hacker Constitutional Congress (hosted in these very halls at DerbyCon 3). The battle continues to ensure that technologies capable of impacting public safety and human life remain worthy of our trust, and no battlefield looms larger than the healthcare space. Despite important steps toward change- from the Hippocratic Oath for Connected Medical Devices to the just-published Health Care Industry Cybersecurity Task Force Report- recent events remind us that the dual pillars of healthcare technology- patient facing medical devices and the infrastructure that supports clinical practice- remain as vulnerable and exposed as ever. Join Josh Corman and Beau Woods of I am The Cavalry as they team up with Christian Dameff, MD, and Jeff Tully, MD- two “white coat hackers” working to save patient lives at the bedside- to share lessons learned from the world’s first ever clinical simulations of patients threatened by hacked medical devices. By bringing the technical work done by security researchers you know and love to life and demonstrating the profound impact to patient physiology from compromised devices, these life-like simulations provide a powerful avenue to engage with stakeholder groups including clinicians and policymakers, and may represent the new standard for hackers looking to demonstrate the true impact and importance of their biomedical work.
 
-### <a id="ref-embedded-53"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-53"></a><a id="tools-8"></a>
 
-### <a id="ref-embedded-54"></a>Miscellaneous
-
-------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-54"></a><a id="miscellaneous-5"></a>
 
 ## <a id="ref-embedded-55"></a><a id="misc-devices" name="misc-devices"></a>Miscellaneous Devices
 
@@ -427,53 +382,56 @@
 
 ## <a id="ref-embedded-56"></a><a id="lightning" name="lightning"></a>Lightning/Thunderbolt
 
-### <a id="ref-embedded-57"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-57"></a>
 
 ### <a id="ref-embedded-58"></a>Articles/Papers/Talks/Writeups
 
 * [Apple Lightning Reverse Engineered](http://ramtin-amin.fr/#tristar)
 
-### <a id="ref-embedded-59"></a>General
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-59"></a><a id="general-4"></a>
 
-### <a id="ref-embedded-60"></a>Tools
+### <a id="ref-embedded-60"></a><a id="tools-9"></a>Tools
 
 * [ThunderGate](http://thundergate.io/)
     * ThunderGate is a collection of tools for the manipulation of Tigon3 Gigabit Ethernet controllers, with special emphasis on the Broadcom NetLink 57762, such as is found in Apple Thunderbolt Gigabit Ethernet adapters.
 
-### <a id="ref-embedded-61"></a>Miscellaneous
-
----------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-61"></a><a id="miscellaneous-6"></a>
 
 ## <a id="ref-embedded-62"></a><a id="pci" name="pci"></a>PCI
 
-### <a id="ref-embedded-63"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-63"></a><a id="101-10"></a>
 
 ### <a id="ref-embedded-64"></a>Articles/Papers/Talks/Writeups
 
 * [Stupid PCIe Tricks featuring NSA Playset: PCIe](https://www.youtube.com/watch?v=Zwz61uVxiM0)
 
-### <a id="ref-embedded-65"></a>General
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-65"></a><a id="general-5"></a>
 
-### <a id="ref-embedded-66"></a>Tools
+### <a id="ref-embedded-66"></a><a id="tools-10"></a>Tools
 
 * [Inception](https://github.com/carmaa/inception)
     * Inception is a physical memory manipulation and hacking tool exploiting PCI-based DMA. The tool can attack over FireWire, Thunderbolt, ExpressCard, PC Card and any other PCI/PCIe interfaces. Inception aims to provide a relatively quick, stable and easy way of performing intrusive and non-intrusive memory hacks against live computers using DMA.
 * [PCILeech](https://github.com/ufrisk/pcileech)
     * The PCILeech use the USB3380 chip in order to read from and write to the memory of a target system. This is achieved by using DMA over PCI Express. No drivers are needed on the target system. The USB3380 is only able to read 4GB of memory natively, but is able to read all memory if a kernel module (KMD) is first inserted into the target system kernel. Reading 8GB of memory from the target system take around one (1) minute. The PCILeech hardware is connected with USB3 to a controlling computer running the PCILeech program. PCILeech is also capable of inserting a wide range of kernel modules into the targeted kernels - allowing for pulling and pushing files, remove the logon password requirement, loading unsigned drivers, executing code and spawn system shells. The software is written in visual studio and runs on Windows 7/Windows 10. Supported target systems are currently the x64 versions of: Linux, FreeBSD, macOS and Windows.
 
-### <a id="ref-embedded-67"></a>Miscellaneous
-
-----------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-67"></a><a id="miscellaneous-7"></a>
 
 ## <a id="ref-embedded-68"></a><a id="printers" name="printers"></a>Printers
 
-See 'Printers' Section in Network Attacks & Scanning
+See the [Printers section in Network Attacks & Scanning](Network_Attacks.md#printers).
 
 ------------------
 
 ## <a id="ref-embedded-69"></a><a id="smart" name="smart"></a>Smart TVs/Monitors
 
-### <a id="ref-embedded-70"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-70"></a><a id="101-11"></a>
 
 ### <a id="ref-embedded-71"></a>Articles/Papers/Talks/Writeups
 
@@ -482,47 +440,52 @@ See 'Printers' Section in Network Attacks & Scanning
 * [MonitorDarkly](https://github.com/RedBalloonShenanigans/MonitorDarkly)
     * This repo contains the exploit for the Dell 2410U monitor. It contains utilities for communicating with and executing code on the device. The research presented here was done in order to highlight the lack of security in "modern" on-screen-display controllers. Please check out our Recon 0xA presentation (included) for a detailed description of our research findings and process.
 
-### <a id="ref-embedded-72"></a>General
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-72"></a><a id="general-6"></a>
 
-### <a id="ref-embedded-73"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-73"></a><a id="tools-11"></a>
 
-### <a id="ref-embedded-74"></a>Miscellaneous
-
----------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-74"></a><a id="miscellaneous-8"></a>
 
 ## <a id="ref-embedded-75"></a><a id="spi" name="spi"></a>SPI(Serial Peripheral Interface Bus)
 
-### <a id="ref-embedded-76"></a>101
+### <a id="ref-embedded-76"></a><a id="101-12"></a>101
 
 * [Serial Peripheral Interface Bus - Wikipedia](https://en.wikipedia.org/wiki/Serial_Peripheral_Interface_Bus)
 * [SPI](https://trmm.net/SPI_flash)
 
-### <a id="ref-embedded-77"></a>Articles/Papers/Talks/Writeups
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-77"></a>
 
-### <a id="ref-embedded-78"></a>General
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-78"></a><a id="general-7"></a>
 
-### <a id="ref-embedded-79"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-79"></a><a id="tools-12"></a>
 
-### <a id="ref-embedded-80"></a>Miscellaneous
-
----------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-80"></a><a id="miscellaneous-9"></a>
 
 ## <a id="ref-embedded-81"></a><a id="sdcard" name="sdcard"></a>SD Cards
 
-### <a id="ref-embedded-82"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-82"></a><a id="101-13"></a>
 
 ### <a id="ref-embedded-83"></a>Articles/Papers/Talks/Writeups
 
 * [The Exploration and Exploitation of an SD Memory Card](https://www.youtube.com/watch?v=Tj-zI8Tl218)
     * This talk demonstrates a method for reverse engineering and loading code into the microcontroller within a SD memory card.
 
-### <a id="ref-embedded-84"></a>General
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-84"></a><a id="general-8"></a>
 
-### <a id="ref-embedded-85"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-85"></a><a id="tools-13"></a>
 
-### <a id="ref-embedded-86"></a>Miscellaneous
-
--------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-86"></a><a id="miscellaneous-10"></a>
 
 ## <a id="ref-embedded-87"></a><a id="pcb" name="pcb"></a>PCB Related
 
@@ -532,9 +495,11 @@ See 'Printers' Section in Network Attacks & Scanning
 
 ## <a id="ref-embedded-88"></a><a id="pos" name="pos"></a>Point-of-Sale
 
-### <a id="ref-embedded-89"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-89"></a><a id="101-14"></a>
 
-### <a id="ref-embedded-90"></a>Articles & Writeups
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-90"></a><a id="articles--writeups"></a>
 
 ### <a id="ref-embedded-91"></a>Talks & Presentations
 
@@ -546,33 +511,36 @@ See 'Printers' Section in Network Attacks & Scanning
 * [Retail Store/POS Penetration Testing - Daniel Brown - Derbycon2017](https://www.irongeek.com/i.php?page=videos/derbycon7/s10-retail-storepos-penetration-testing-daniel-brown)
     * Penetration Testing a retail/POS environment. The methods companies are using to try and protect them, methods of bypassing security implementations, and how they tie into a companies overall security.
 
-### <a id="ref-embedded-92"></a>Papers
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-92"></a><a id="papers-1"></a>
 
-### <a id="ref-embedded-93"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-93"></a><a id="tools-14"></a>
 
-### <a id="ref-embedded-94"></a>Miscellaneous
-
-------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-94"></a><a id="miscellaneous-11"></a>
 
 ## <a id="ref-embedded-95"></a><a id="tokens" name="tokens"></a>Secure Tokens
 
-### <a id="ref-embedded-96"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-96"></a><a id="101-15"></a>
 
 ### <a id="ref-embedded-97"></a>Articles/Papers/Talks/Writeups
 
 * [Secure Tokin’ & Doobiekeys: How to roll your own counterfeit hardware security devices - @securelyfitz, @r00tkillah](https://media.defcon.org/DEF%20CON%2025/DEF%20CON%2025%20presentations/DEFCON-25-r00killah-and-securelyfitz-Secure-Tokin-and-Doobiekeys.pdf)
 
-### <a id="ref-embedded-98"></a>General
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-98"></a><a id="general-9"></a>
 
-### <a id="ref-embedded-99"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-99"></a><a id="tools-15"></a>
 
-### <a id="ref-embedded-100"></a>Miscellaneous
-
----------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-100"></a><a id="miscellaneous-12"></a>
 
 ## <a id="ref-embedded-101"></a><a id="usb" name="usb"></a>USB
 
-### <a id="ref-embedded-102"></a>101
+### <a id="ref-embedded-102"></a><a id="101-16"></a>101
 
 * [USB in a Nutshell](http://www.beyondlogic.org/usbnutshell/usb1.shtml)
     * Great explanation of the USB standard in depth
@@ -610,7 +578,7 @@ See 'Printers' Section in Network Attacks & Scanning
 * [Defending Against Malicious USB Firmware with GoodUSB - Dave Tian, Adam Bates, Kevin Butler](https://cise.ufl.edu/~butler/pubs/acsac15.pdf)
 * [Defending Against Malicious USB Firmware with GoodUSB - davejintian.org](https://davejingtian.org/2015/12/03/defending-against-malicious-usb-firmware-with-goodusb/)
 
-### <a id="ref-embedded-105"></a>Tools
+### <a id="ref-embedded-105"></a><a id="tools-16"></a>Tools
 
 * [WHID Injector: an USB-Rubberducky/BadUSB on Steroids](https://whid-injector.blogspot.lt/2017/04/whid-injector-how-to-bring-hid-attacks.html)
 * [umap](https://github.com/nccgroup/umap) 
@@ -618,7 +586,7 @@ See 'Printers' Section in Network Attacks & Scanning
 * [NSA USB Playset - ShmooCon201](https://www.youtube.com/watch?v=eTDBFpLYcGA)
 * [Phison PS2303 (PS2251-03) framework](https://bitbucket.org/flowswitch/phison)
 
-### <a id="ref-embedded-106"></a>Miscellaneous
+### <a id="ref-embedded-106"></a><a id="miscellaneous-13"></a>Miscellaneous
 
 * [Vendors, Disclosure, and a bit of WebUSB Madness - Markus Vervier](https://pwnaccelerator.github.io/2018/webusb-yubico-disclosure.html)
 
@@ -640,30 +608,31 @@ See 'Printers' Section in Network Attacks & Scanning
 
 ## <a id="ref-embedded-109"></a><a id="sim" name="sim"></a>SIM Cards
 
-### <a id="ref-embedded-110"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-110"></a><a id="101-17"></a>
 
-### <a id="ref-embedded-111"></a>Articles/Papers/Talks/Writeups
+### <a id="ref-embedded-111"></a><a id="articlespaperstalkswriteups-15"></a>Articles/Papers/Talks/Writeups
 
 * [Rooting SIM cards](https://www.youtube.com/watch?v=BR0yWjQYnhQ)
 * [The Secret Life of SIM Cards - Karl Koscher/Eric Butler](https://www.youtube.com/watch?v=_-nxemBCcmU)
 * [Hacking a USB Modem & SIM](http://blog.ptsecurity.com/2014/12/4g-security-hacking-usb-modem-and-sim.html)
 
-### <a id="ref-embedded-112"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-112"></a><a id="tools-17"></a>
 
-### <a id="ref-embedded-113"></a>Miscellaneous
-
----------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-113"></a><a id="miscellaneous-14"></a>
 
 ## <a id="ref-embedded-114"></a><a id="smartcard" name="smartcard"></a>Smartcards
 
-### <a id="ref-embedded-115"></a>101
+### <a id="ref-embedded-115"></a><a id="101-18"></a>101
 
 * [ISO/IEC 7816](https://en.wikipedia.org/wiki/ISO/IEC_7816)
 * [ISO/IEC 15693](https://en.wikipedia.org/wiki/ISO/IEC_15693)
 * [ISO/IEC 14443](https://en.wikipedia.org/wiki/ISO/IEC_14443)
 * [Introduction to Smart Card Security](http://resources.infosecinstitute.com/introduction-smartcard-security/)
 
-### <a id="ref-embedded-116"></a>Articles/Papers/Talks/Writeups
+### <a id="ref-embedded-116"></a><a id="articlespaperstalkswriteups-16"></a>Articles/Papers/Talks/Writeups
 
 * [How can I do that? Intro to hardware hacking with an RFID badge reader - Kevin Bong](http://www.irongeek.com/i.php?page=videos/derbycon3/3303-how-can-i-do-that-intro-to-hardware-hacking-with-an-rfid-badge-reader-kevin-bong)
 * [An analysis of the vulnerabilities introduced with Java Card 3 Connected Edition](http://www.ma.rhul.ac.uk/static/techrep/2013/MA-2013-04.pdf)
@@ -671,9 +640,11 @@ See 'Printers' Section in Network Attacks & Scanning
 * [Deconstructing a secure processor - Christopher Tarnovsky](https://www.youtube.com/watch?v=w7PT0nrK2BE)
     * From start to finish, we will walk through how a current generation smartcard was successfully compromised. The talk will discuss everything that was required in the order the events took place. We will cram several months into an hour! PS- The talk will be very technical mixed hardware and software (60% hardware, 40% software).
 
-### <a id="ref-embedded-117"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-117"></a><a id="tools-18"></a>
 
-### <a id="ref-embedded-118"></a>Miscellaneous
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-embedded-118"></a><a id="miscellaneous-15"></a>
 
 ### <a id="ref-embedded-119"></a>Chameleon Mini
 
@@ -716,6 +687,9 @@ See 'Printers' Section in Network Attacks & Scanning
 ---------------------------------
 
 ## <a id="ref-embedded-125"></a><a id="sort" name="sort"></a>Unsorted resources
+
+* [Keykeriki v2.0](http://www.remote-exploit.org/articles/keykeriki_v2_0__8211_2_4ghz/index.html)
+    * Hardware to attack wireless keyboards and other such things
 
 * **Fingerprint readers**
     * [Breaking apple touchID cheaply](http://www.ccc.de/en/updates/2013/ccc-breaks-apple-touchid)

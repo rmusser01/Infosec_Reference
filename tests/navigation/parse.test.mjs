@@ -2,6 +2,22 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { parseDocument } from "../../tools/navigation/parse.mjs";
 
+test("active empty-destination links are reported while fenced author templates remain examples", () => {
+  const doc = parseDocument(
+    '# Reader page\n- []()\n- [Pending subject]()\n```md\n- []()\n```\n[Current page](#)\n[Pending][p]\n\n[p]: <>\n\n<a href="">Pending</a>\n<a id="alias"></a>\n',
+    "x.md",
+  );
+  assert.deepEqual(
+    doc.issues.map(({ code, line, severity }) => ({ code, line, severity })),
+    [
+      { code: "empty-link-destination", line: 2, severity: "error" },
+      { code: "empty-link-destination", line: 3, severity: "error" },
+      { code: "empty-link-destination", line: 8, severity: "error" },
+      { code: "empty-link-destination", line: 12, severity: "error" },
+    ],
+  );
+});
+
 test("headings ignore fenced examples, strip HTML, and suffix repeated headings", () => {
   const doc = parseDocument(
     '# Title\n## <a name="old"></a>A & B\n## A & B\n```md\n## Fake\n```\n',

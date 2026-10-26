@@ -17,8 +17,8 @@ The unchecked implementation steps below are the original historical plan, not a
 | Task | Current state |
 |---|---|
 | 1–5 | Restored from the patch; parser, generator, pilot, Docsify, and CI/check tooling verified locally. Desktop review found and corrected filename-case and search-cache bugs. |
-| 6 | Navigation rollout complete: all 53 listed topics reviewed, with 50 managed ToCs and three short directory landings. The 102-page audit has zero internal errors and an empty legacy baseline. Shared heading rendering and favicon are repaired; 86 tests and native desktop/mobile checks pass. External reporting exists but broad validation is pending. |
-| 7 | Bounded local implementation/pilot: pinned Browsertrix plus filtering proxy, compact WARC/text/figure retention with recorded offline QA, append-only provenance, verified copies, Git-added-link detection, and confirmed Wayback catalog exist. Local batches continue; CI receipts need committing and hosted execution is unverified. Durable storage/recovery validation, wider layout calibration, remote uploads and the full capture run remain pending. See `docs/archive-execution.md`. |
+| 6 | Navigation repair pass reconciled against all 102 reader pages and 33 recorded finding groups; 60 managed ToCs, 53 main topics, 77 pages changed from base and 25 reviewed unchanged. Fresh 123 tests and all-page actual Docsify checks pass; zero navigation errors. Full prose/factual review and broad external validation remain unverified. PR #74 stays draft. See `docs/page-improvement-audit.md`. |
+| 7 | Bounded local implementation/pilot: pinned Browsertrix plus filtering proxy, compact WARC/text/figure retention with recorded offline QA, append-only provenance, verified copies, Git-added-link detection, and confirmed Wayback catalog exist. Local batches are paused; hosted archive execution is unverified. Durable storage/recovery validation, wider layout calibration, remote uploads and the full capture run remain pending. See `docs/archive-execution.md`. |
 | Later processing | PDF/OCR, captions/transcription, other extraction, and search deployment remain separate future work. |
 
 ## Global Constraints
@@ -36,9 +36,9 @@ User amendment, 2026-10-25: continue locally; retain article text/images and ori
 
 ## Current handoff — 2026-10-26
 
-The navigation rollout, Docsify compatibility fixes, offline enforcement and resource inventories are implemented; `docs/implementation-status.md` records the completed page groups and verification. The bounded archive adapter and local pilot are implemented, with durability, broader calibration, full collection capture and later non-text extraction still outstanding. Historical checkboxes below describe the original plan rather than current progress.
+Navigation tooling, Docsify compatibility fixes, offline enforcement and resource inventories are implemented; the 102-page navigation/structure audit and its 33 recorded finding groups are reconciled in `docs/page-improvement-audit.md`, with full prose and external accuracy explicitly outside the verified result; `docs/implementation-status.md` records the completed page groups and verification. The bounded archive adapter and local pilot are implemented, with durability, broader calibration, full collection capture and later non-text extraction still outstanding. Historical checkboxes below describe the original plan rather than current progress.
 
-The current priority is a PR against `master` for the completed improvements. Link capture batches and Internet Archive submissions are paused. The added-link workflow is manual-only so PR/push events cannot submit URLs; revisit archiving after PR review. No deployment or merge is authorized by this handoff.
+The current priority is repairing every confirmed page-level scope gap while PR #74 against `master` remains draft. Link capture batches and Internet Archive submissions are paused. The added-link workflow is manual-only so PR/push events cannot submit URLs; revisit archiving after PR review. No deployment or merge is authorized by this handoff.
 
 ## Review Focus
 

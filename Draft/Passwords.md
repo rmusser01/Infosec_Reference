@@ -3,12 +3,10 @@
 ## Table of Contents
 <!-- nav:toc:start -->
 - [General](#ref-passwords-1)
-  - [101](#ref-passwords-2)
   - [Account Validation](#ref-passwords-3)
   - [Articles/Papers/Talks/Writeups](#ref-passwords-4)
   - [Building a Hash Cracking Rig](#ref-passwords-5)
   - [BruteForce](#ref-passwords-6)
-  - [CAPTCHA](#ref-passwords-7)
   - [Default Credentials](#ref-passwords-8)
   - [Password Analysis/Auditing](#ref-passwords-9)
   - [Password Generation](#ref-passwords-10)
@@ -45,7 +43,8 @@
 
 ## <a id="ref-passwords-1"></a><a id="general" name="general"></a>General
 
-### <a id="ref-passwords-2"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-passwords-2"></a>
 
 ### <a id="ref-passwords-3"></a>Account Validation
 
@@ -72,7 +71,6 @@
     * [Crowbar](https://github.com/galkan/crowbar)
         * Crowbar is brute forcing tool that can be used during penetration tests. It is developed to support protocols that are not currently supported by thc-hydra and other popular brute forcing tools.
 
-### <a id="ref-passwords-7"></a><a id="captcha" name="captcha"></a>CAPTCHA
 
 ### <a id="ref-passwords-8"></a><a id="default" name="default"></a>Default Credentials
 
@@ -322,7 +320,7 @@
         * [ntlmv1-multi](https://github.com/evilmog/ntlmv1-multi)
             * This tool modifies NTLMv1/NTLMv1-ESS/MSCHAPv2 hashes so they can be cracked with DES Mode 14000 in hashcat
 
-### <a id="ref-passwords-19"></a>CAPTCHA
+### <a id="ref-passwords-19"></a><a id="ref-passwords-7"></a><a id="captcha" name="captcha"></a><a id="captcha-1"></a>CAPTCHA
 
 * **Talks & Presentations**
     * [Releasing the CAPTCHA Cracken - Sean Brodie, Tinus Green](https://labs.f-secure.com/blog/releasing-the-captcha-cracken/)
@@ -392,7 +390,7 @@
 
 ### <a id="ref-passwords-30"></a><a id="hashcat" name="hashcat"></a>OCL/Hashcat
 
-#### <a id="ref-passwords-31"></a>101
+#### <a id="ref-passwords-31"></a><a id="101-1"></a>101
 
 * [OCL hashcat](http://n0where.net/introduction-break-that-hash/)
     * It’s OCL hashcat

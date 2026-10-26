@@ -19,7 +19,6 @@
   - [Tools](#ref-rt-15)
 - [Advanced Persistent Threat Actors & Campaigns](#ref-rt-16)
   - [101](#ref-rt-17)
-  - [Articles/Blogposts/Writeups](#ref-rt-18)
   - [Talks/Presentations/Videos](#ref-rt-19)
   - [Specific Campaigns/Groups/Operations](#ref-rt-20)
 - [Building a (Red) Team](#ref-rt-21)
@@ -138,7 +137,6 @@
     - [Firefox Send](#ref-rt-134)
     - [Google Translate](#ref-rt-135)
     - [HTTP/S](#ref-rt-136)
-    - [HTTP/2](#ref-rt-137)
     - [HTTP3](#ref-rt-138)
     - [ICMP](#ref-rt-139)
     - [Images/Imgur](#ref-rt-140)
@@ -147,7 +145,6 @@
     - [Office365](#ref-rt-143)
     - [PAC](#ref-rt-144)
     - [Print Jobs](#ref-rt-145)
-    - [QUIC](#ref-rt-146)
     - [Reddit](#ref-rt-147)
     - [SSH](#ref-rt-148)
     - [Social Media-based](#ref-rt-149)
@@ -162,7 +159,6 @@
   - [Publishing](#ref-rt-158)
   - [Language Specific](#ref-rt-159)
     - [AutoIT](#ref-rt-160)
-    - [Basic](#ref-rt-161)
     - [C](#ref-rt-162)
     - [C++ payload development](#ref-rt-163)
     - [C# payload development](#ref-rt-164)
@@ -191,7 +187,6 @@
   - [Talks/Presentations/Videos](#ref-rt-187)
   - [Adversary Simulation Tools](#ref-rt-188)
 - [Tactics/Strategies/Methodologies](#ref-rt-189)
-  - [101](#ref-rt-190)
   - [Lessons Learned](#ref-rt-191)
   - [Tactics](#ref-rt-192)
   - [Strategies](#ref-rt-193)
@@ -461,7 +456,8 @@
     * APTnotes is a repository of publicly-available papers and blogs (sorted by year) related to malicious campaigns/activity/software that have been associated with vendor-defined APT (Advanced Persistent Threat) groups and/or tool-sets.
 * [APT Groups and Operations](https://docs.google.com/spreadsheets/d/1H9_xaxQHpWaa4O_Son4Gx0YOIzlcBWMsdvePFX68EKU/edit?usp=sharing)
 
-### <a id="ref-rt-18"></a>Articles/Blogposts/Writeups
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-rt-18"></a>
 
 ### <a id="ref-rt-19"></a>Talks/Presentations/Videos
 
@@ -1989,7 +1985,7 @@ le) in less than a minute. This paper claims that the diffculty of implementing 
         * [Stealthy and in-depth behavioral malware analysis with Zandbak - Tim van Dijk(2019)](https://www.ru.nl/publish/pages/769526/z6_timvandijk_masterthesis.pdf)
             * "In this thesis, we present Zandbak: a malware analysis sandbox with in-depth analytical capabilities that defends against evasive techniques. Zandbak resides purely in kernel space, making it nearly undetectable to user space malware which does not have the necessary privileges to detect the presence of Zandbak. Furthermore, Zandbak has novel approaches and techniques to performing real-time stack walking, snapshotting and infection scope tracking. We describe the implementation of Zandbak in detail. We perform a series of experiments and a case study where we analyze an implant of the PlugX malware. With this, we demonstrate that Zandbak indeed bypasses anti-analysis techniques used in the wild and has the ability to perform in-depth analysis."
     * **Presentations/Talks/Videos**
-        * [Countering Innovative Sandbox Evasion Techniques Used by Malware - Frederic Besler, Carsten Willems, and Ralf Hund(FIRST2017)]()
+        * Countering Innovative Sandbox Evasion Techniques Used by Malware - Frederic Besler, Carsten Willems, and Ralf Hund(FIRST2017)
             * [Slides](https://www.first.org/resources/papers/conf2017/Countering-Innovative-Sandbox-Evasion-Techniques-Used-by-Malware.pdf)
         * [Operating System Fingerprinting for Virtual Machines - Nguyen Anh Quynh(Defcon18)](https://www.youtube.com/watch?v=wQvyu8oR14c)
             * [Slides](https://www.defcon.org/images/defcon-18/dc-18-presentations/Quynh/DEFCON-18-Quynh-OS-Fingerprinting-VM.pdf)
@@ -2420,11 +2416,8 @@ le) in less than a minute. This paper claims that the diffculty of implementing 
         * [Throwback - beacon](https://github.com/silentbreaksec/Throwback)
         * [Throwback Listener](https://github.com/silentbreaksec/ThrowbackLP)
 
-#### <a id="ref-rt-137"></a>HTTP/2
-
-* **101**
-* **Articles/Blogposts/Writeups**
-* **Tools**
+<!-- Resource-free topic retained in docs/maintenance-backlog.md. -->
+<a id="ref-rt-137"></a><a id="http2"></a>
 
 #### <a id="ref-rt-138"></a>HTTP3
 
@@ -2469,11 +2462,8 @@ le) in less than a minute. This paper claims that the diffculty of implementing 
 * [Using and detecting C2 printer pivoting - Alfie Champion, James Coote(2020)](https://labs.f-secure.com/blog/print-c2/)
     * This post introduces the novel concept of Command & Control (C2) using print jobs, and demonstrates how this can be achieved using C3's Print channel. It also explores the OPSEC considerations behind the use of this technique, and outlines the detection opportunities that it can create.
 
-#### <a id="ref-rt-146"></a>QUIC
-
-* **101**
-* **Articles/Blogposts/Writeups**
-* **Tools**
+<!-- Resource-free topic retained in docs/maintenance-backlog.md. -->
+<a id="ref-rt-146"></a><a id="quic"></a>
 
 #### <a id="ref-rt-147"></a>Reddit
 
@@ -2583,7 +2573,8 @@ le) in less than a minute. This paper claims that the diffculty of implementing 
 - **Collection**
     * [OffensiveAutoIT](https://github.com/V1V1/OffensiveAutoIt)
 
-#### <a id="ref-rt-161"></a><a id="basiclang" name="basiclang"></a>Basic
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-rt-161"></a><a id="basic"></a><a id="basiclang"></a>
 
 #### <a id="ref-rt-162"></a><a id="clang" name="clang"></a>C
 
@@ -4070,7 +4061,7 @@ le) in less than a minute. This paper claims that the diffculty of implementing 
 
 ## <a id="ref-rt-185"></a><a id="simtools" name="simtools"></a>Simulation Tools
 
-### <a id="ref-rt-186"></a><a id="sta" name="sta"></a>Articles/Blogposts/Writeups
+### <a id="ref-rt-186"></a><a id="articlesblogpostswriteups-6"></a><a id="sta" name="sta"></a>Articles/Blogposts/Writeups
 
 * [Invoke-Adversary – Simulating Adversary Operations - Moti Bani](https://blogs.technet.microsoft.com/motiba/2018/04/09/invoke-adversary-simulating-adversary-operations/)
 * [Advanced Threat Analytics Attack Simulation Playbook - Microsoft](https://gallery.technet.microsoft.com/Advanced-Threat-Analytics-8b0a86bc)
@@ -4115,7 +4106,8 @@ le) in less than a minute. This paper claims that the diffculty of implementing 
 
 ## <a id="ref-rt-189"></a><a id="tacticsandstats" name="tacticsandstats"></a>Tactics/Strategies/Methodologies
 
-### <a id="ref-rt-190"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-rt-190"></a><a id="101-6"></a>
 
 ### <a id="ref-rt-191"></a><a id="vll" name="vll"></a>Lessons Learned
 

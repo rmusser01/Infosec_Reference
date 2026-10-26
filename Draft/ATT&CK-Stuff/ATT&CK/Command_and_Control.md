@@ -11,6 +11,8 @@
 * [Commonly Used Port - ATT&CK](https://attack.mitre.org/wiki/Technique/T1043)
 	* Adversaries may communicate over a commonly used port to bypass firewalls or network detection systems and to blend with normal network activity to avoid more detailed inspection.
 * [List of TCP and UDP port numbers - Wikipedia](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
+* [Commonly Used Port - ATT&CK](https://attack.mitre.org/wiki/Technique/T1043)
+* [List of TCP and UDP port numbers - Wikipedia](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
 
 
 

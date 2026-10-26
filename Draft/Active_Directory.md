@@ -19,10 +19,6 @@
   - [Group Policy](#ref-ad-15)
   - [Kerberos](#ref-ad-16)
   - [LDAP](#ref-ad-17)
-  - [101](#ref-ad-18)
-  - [LDAP Recon](#ref-ad-19)
-  - [LDAP Relaying](#ref-ad-20)
-  - [Request Signing](#ref-ad-21)
   - [KMS](#ref-ad-22)
   - [LAPS](#ref-ad-23)
   - [Lync](#ref-ad-24)
@@ -36,8 +32,6 @@
   - [System Center Configuration Manager](#ref-ad-32)
 - [Attack Active Directory/Specific Techniques](#ref-ad-33)
   - [Attack Path Writeups/Samples](#ref-ad-34)
-  - [Abusing ACEs & ACLs](#ref-ad-35)
-  - [Across Trusts and Domains](#ref-ad-36)
   - [Certificate Services (Attacking)](#ref-ad-37)
   - [Coerced Authentication](#ref-ad-38)
   - [Credential Attacks](#ref-ad-39)
@@ -53,7 +47,6 @@
   - [Group Policies](#ref-ad-54)
   - [Internal Monologue](#ref-ad-55)
   - [Kerberos-based Attacks](#ref-ad-56)
-  - [Delegation](#ref-ad-59)
   - [Lateral Movement](#ref-ad-73)
   - [(Attacking the) Machine-Account Quota](#ref-ad-74)
   - [MS-Cache](#ref-ad-75)
@@ -63,7 +56,9 @@
   - [Printers & Faxes (Attacking)](#ref-ad-80)
   - [Privilege Escalation](#ref-ad-81)
   - [Volume Shadow Service (Attacking)](#ref-ad-87)
+  - [SharePoint (Attacking)](#ref-ad-139)
   - [Skeleton Key Attack](#ref-ad-88)
+  - [SQL Server (Attacking)](#ref-ad-140)
   - [Trusts](#ref-ad-89)
   - [WSUS](#ref-ad-90)
 - [Email/Microsoft Exchange](#ref-ad-91)
@@ -481,17 +476,21 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
 ### <a id="ref-ad-17"></a><a id="ldap" name="ldap"></a>LDAP
 
 
-### <a id="ref-ad-18"></a><a id="ldap101" name="ldap101"></a>101
+#### <a id="ref-ad-18"></a><a id="ldap101" name="ldap101"></a>101
 
 * [Everything I wanted to know about #ActiveDirectory LDAP - Podalirius(2022)](https://www.youtube.com/watch?v=gD8IF0qYURI)
   * Most of modern enterprise networks heavily rely on Microsoft Windows Active Directory to create managed domains of machines. These AD domains take advantage of network protocols and services to work properly, such as Kerberos, SMB, DNS, LDAP, etc … In this talk, we will deep dive into Microsoft’s Active Directory LDAP to give you an overview of concepts, exploitation techniques and tools to interact with it.
-  - **General**
+
+#### <a id="ref-ad-141"></a>General
+
 * [LDAP Swiss Army Knife - Moritz Bechler](https://www.exploit-db.com/docs/english/46986-ldap-swiss-army-knife.pdf)
 * [Fun with LDAP and Kerberos: Attacking AD from non-Windows machines - Ronnie Flathers(TR19)](https://www.youtube.com/watch?v=2Xfd962QfPs)
   * [Slides](https://speakerdeck.com/ropnop/fun-with-ldap-and-kerberos-troopers-19)
 * [Faster Domain Escalation using LDAP - Scott Sutherland](https://blog.netspi.com/faster-domain-escalation-using-ldap/)
 * [LDAP Injection Cheat Sheet, Attack Examples & Protection - Checkmarx](https://www.checkmarx.com/knowledge/knowledgebase/LDAP)
-  - **C2**
+
+#### <a id="ref-ad-142"></a>Command and Control (C2)
+
 * [LDAPFragger: Command and Control over LDAP attributes - Rindert Kramer(2020)](https://blog.fox-it.com/2020/03/19/ldapfragger-command-and-control-over-ldap-attributes/)
 * [LDAPFragger](https://github.com/fox-it/LDAPFragger)
   * LDAPFragger is a Command and Control tool that enables attackers to route Cobalt Strike beacon data over LDAP using user attributes.
@@ -499,7 +498,7 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
 * [LDAPShell](https://github.com/XiaoliChan/LDAPShell)
   - **Injection**
 
-### <a id="ref-ad-19"></a><a id="ldaprecon" name="ldaprecon"></a>LDAP Recon
+#### <a id="ref-ad-19"></a><a id="ldaprecon" name="ldaprecon"></a>LDAP Recon
 
 - **101**
   * [An Introduction to Manual Active Directory Querying with Dsquery and Ldapsearch - Hope Walker(2021)](https://posts.specterops.io/an-introduction-to-manual-active-directory-querying-with-dsquery-and-ldapsearch-84943c13d7eb)
@@ -541,7 +540,7 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
   * [go-windapsearch](https://github.com/ropnop/go-windapsearch)
     * windapsearch is a tool to assist in Active Directory Domain enumeration through LDAP queries. It contains several modules to enumerate users, groups, computers, as well as perform searching and unauthenticated information gathering.
 
-### <a id="ref-ad-20"></a><a id="ldaprelay" name="ldaprelay"></a>LDAP Relaying
+#### <a id="ref-ad-20"></a><a id="ldaprelay" name="ldaprelay"></a>LDAP Relaying
 
 - **Articles**
   * [LDAP relays for initial foothold in dire situations - @SAERXCIT(2022)](https://offsec.almond.consulting/ldap-relays-for-initial-foothold-in-dire-situations.html)
@@ -552,12 +551,12 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
   * [I’m bringing relaying back: A comprehensive guide on relaying anno 2022 - Jean-Francois Maes(2022)](https://www.trustedsec.com/blog/a-comprehensive-guide-on-relaying-anno-2022/)
   * [We Love Relaying Credentials: A Technical Guide to Relaying Credentials Everywhere - Leandro Cuozzo(2022)](https://www.secureauth.com/blog/we-love-relaying-credentials-a-technical-guide-to-relaying-credentials-everywhere/)
 - **Tools**
-  * [Impacket]()
-  * [ntlmrelayx]()
+  * Impacket (URL not recorded)
+  * ntlmrelayx (URL not recorded)
   * [LDAP Relay Scan](https://github.com/zyn3rgy/LdapRelayScan)
     * A tool to check Domain Controllers for LDAP server protections regarding the relay of NTLM authentication. If you're interested in the specifics of the error-based enumeration, see below. For details regarding what can be done when you identify a lack of LDAP protections, see the references section.
 
-### <a id="ref-ad-21"></a><a id="ldapsign" name="ldapsign"></a>Request Signing
+#### <a id="ref-ad-21"></a><a id="ldapsign" name="ldapsign"></a>Request Signing
 
 - **Articles/Blogposts/Writeups**
   * [Are you using LDAP over SSL/TLS? - Kurt Roggen(2018)](https://kurtroggen.wordpress.com/2018/08/03/are-you-using-ldap-over-ssl-tls/)
@@ -670,7 +669,7 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
   * [Planting the Red Forest: Improving AD on the Road to ESAE - Katie Knowles](https://www.f-secure.com/us-en/consulting/our-thinking/planting-the-red-forest-improving-ad-on-the-road-to-esae)
   * [What is Microsoft ESAE and Red Forest - David Rowe](https://www.secframe.com/blog/what-is-microsoft-esae-and-red-forest)
 - **Talks/Presentations/Videos**
-  * [From Workstation to Domain Admin: Why Secure Administration Isn't Secure and How to Fix It - Sean Metcalf(BHUSA2018)]()
+  * From Workstation to Domain Admin: Why Secure Administration Isn't Secure and How to Fix It - Sean Metcalf(BHUSA2018)
     * [Slides](https://adsecurity.org/wp-content/uploads/2018/08/us-18-Metcalf-From-Workstation-To-Domain-Admin-Why-Secure-Administration-Isnt-Secure-Final.pdf)
   * [Attack and defend Microsoft Enhanced Security Administrative Environment - Hao Wang, Yothin Rodanant(Troopers2018)](https://www.youtube.com/watch?v=0AUValgPTUs)
     * [Slides](https://download.ernw-insight.de/troopers/tr18/slides/TR18_AD_Attack-and-Defend-Microsoft-Enhanced-Security.pdf)
@@ -744,17 +743,11 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
     * Icebreaker automates 5 different internal network attacks to gain access to plaintext and hashed credentials from Active Directory environments. Whenever hashed credentials are found Icebreaker will automatically attempt to crack them. After successfully performing the network attacks Icebreaker can kick off the tools Empire and DeathStar to automate the process of escalating privileges all the way to domain admin without any user interaction. This talk will discuss how and why all 5 of these network attacks work as well as how DeathStar uses the found credentials to escalate privileges.
   * [[Attack]tive Directory: Compromising a Network in 20 Minutes Through Active Directory - Ryan Hausnecht(2021)](https://www.youtube.com/watch?v=MIt-tIjMr08)
 
-### <a id="ref-ad-35"></a><a id="aces" name="aces"></a>Abusing ACEs & ACLs
+<!-- Resource-free topic retained in docs/maintenance-backlog.md. -->
+<a id="ref-ad-35"></a><a id="abusing-aces--acls"></a><a id="aces"></a>
 
-- **Articles/Blogposts/Writeups**
-- **Talks/Presentations/Videos**
-- **Tools**
-
-### <a id="ref-ad-36"></a><a id="crosspriv" name="crosspriv"></a>Across Trusts and Domains
-
-- **Articles/Blogposts/Writeups**
-- **Talks/Presentations/Videos**
-- **Tools**
+<!-- Resource-free topic retained in docs/maintenance-backlog.md. -->
+<a id="ref-ad-36"></a><a id="across-trusts-and-domains"></a><a id="crosspriv"></a>
 
 ### <a id="ref-ad-37"></a><a id="certattack" name="certattack"></a>Certificate Services (Attacking)
 
@@ -1420,12 +1413,12 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
   * [RITM](https://github.com/Tw1sm/RITM)
     * This is a Python implementation of the man-in-the-middle attack described by Charlie Clark (@exploitph) in his post, `New Attack Paths? AS Requested Service Tickets`, and demonstrated in his proof-of-concept, `Roast in the Middle`.
 
-### <a id="ref-ad-59"></a><a id="kerb-delegate" name="kerb-delegate"></a>Delegation
+#### <a id="ref-ad-59"></a><a id="kerb-delegate" name="kerb-delegate"></a>Delegation
 
 * [You Do (Not) Understand Kerberos Delegation](https://www.youtube.com/watch?v=p9QFdITuvgU&list=PLwb6et4T42wwlxffjq9-F3KVDNDi9gQFs&index=6)
   * Slides - `https://attl4s.github.io/assets/pdf/You_do_(not)_Understand_Kerberos.pdf`
 
-#### <a id="ref-ad-60"></a><a id="constrained" name="constrained"></a>Constrained-Delegation
+##### <a id="ref-ad-60"></a><a id="constrained" name="constrained"></a>Constrained-Delegation
 
 - **101**
   * [Kerberos Constrained Delegation Overview - docs.ms](https://docs.microsoft.com/en-us/windows-server/security/kerberos/kerberos-constrained-delegation-overview)
@@ -1456,7 +1449,7 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
   * [Lab S4U2Self Abuse](https://github.com/OtterHacker/LabS4U2Self)
     * This lab aims to provide a safe environment to test the S4U2Self abuse exploit
 
-#### <a id="ref-ad-61"></a><a id="rbcd" name="rbcd"></a>Resource Based Constrained-Delegation
+##### <a id="ref-ad-61"></a><a id="rbcd" name="rbcd"></a>Resource Based Constrained-Delegation
 
 - **Articles/Blogposts/Writeups**
   * [Wagging the Dog: Abusing Resource-Based Constrained Delegation to Attack Active Directory - Elad Shamir(2019)](https://shenaniganslabs.io/2019/01/28/Wagging-the-Dog.html)
@@ -1485,7 +1478,7 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
     * PowerShell MachineAccountQuota and DNS exploit tools
     * [Blogpost](https://blog.netspi.com/exploiting-adidns/)
 
-#### <a id="ref-ad-62"></a><a id="unconstrained" name="unconstrained"></a>Unconstrained Delegation
+##### <a id="ref-ad-62"></a><a id="unconstrained" name="unconstrained"></a>Unconstrained Delegation
 
 - **101**
   * [Active Directory Security Risk #101: Kerberos Unconstrained Delegation (or How Compromise of a Single Server Can Compromise the Domain) - Sean Metcalf(2015)](https://adsecurity.org/?p=1667)
@@ -1616,7 +1609,8 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
     * Framework for Kerberos relaying
   * [Negoexrelayx](https://github.com/morRubin/NegoExRelay)
     * Toolkit for abusing Kerberos PKU2U and NegoEx. Requires impacket It is recommended to install impacket from git directly to have the latest version available.
-  - **Tickets**
+
+#### <a id="ref-ad-136"></a>Tickets
 
 ##### <a id="ref-ad-69"></a><a id="silver-ticket" name="silver-ticket"></a>Silver Tickets
 
@@ -1660,22 +1654,24 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
 
 * [Saphire Tickets - thehacker.recipes(2022)](https://www.thehacker.recipes/ad/movement/kerberos/forged-tickets/sapphire)
   * Sapphire tickets are similar to Diamond Tickets in the way the ticket is not forged, but instead based on a legitimate one obtained after a request. The difference lays in how the PAC is modified. The Diamond Ticket approach modifies the legitimate PAC to add some privileged groups (or replace it with a fully-forged one). In the Sapphire ticket approach, the PAC of another powerful user is obtained through an S4U2Self+u2u trick. This PAC then replaces the one featured in the legitimate ticket. The resulting ticket is an assembly of legitimate elements, and follows a standard ticket request, which makes it then most difficult silver/golden ticket variant to detect.
-  - **Tools**
-    * [Rubeus](https://github.com/GhostPack/Rubeus)
-    * [Cerbero](https://github.com/zer1t0/cerbero)
-* Kerberos protocol attacker. Tool to perform several tasks related with Kerberos protocol in an Active Directory pentest. (Written in Rust)
-    * [kekeo](https://github.com/gentilkiwi/kekeo)
-* A little toolbox to play with Microsoft Kerberos in C
-    * [PyKEK](https://github.com/bidord/pykek)
-* PyKEK (Python Kerberos Exploitation Kit), a python library to manipulate KRB5-related data. (Still in development)
-    * [Kerberom](https://github.com/Fist0urs/kerberom)
-* Kerberom is a tool aimed to retrieve ARC4-HMAC'ed encrypted Tickets Granting Service (TGS) of accounts having a Service Principal Name (SPN) within an Active Directory
-    * [Kerbrute - ropnop](https://github.com/ropnop/kerbrute)
-* A tool to quickly bruteforce and enumerate valid Active Directory accounts through Kerberos Pre-Authentication
-    * [kerbrute - Tarlogic](https://github.com/TarlogicSecurity/kerbrute)
-* An script to perform kerberos bruteforcing by using the Impacket library.
-    * [ticketConverter.py](https://github.com/SecureAuthCorp/impacket/blob/master/examples/ticketConverter.py)
-* This script will convert kirbi files (commonly used by mimikatz) into ccache files used by impacket, and vice-versa.
+
+#### <a id="ref-ad-143"></a>Kerberos Tools
+
+* [Rubeus](https://github.com/GhostPack/Rubeus)
+* [Cerbero](https://github.com/zer1t0/cerbero)
+  * Kerberos protocol attacker. Tool to perform several tasks related with Kerberos protocol in an Active Directory pentest. (Written in Rust)
+* [kekeo](https://github.com/gentilkiwi/kekeo)
+  * A little toolbox to play with Microsoft Kerberos in C
+* [PyKEK](https://github.com/bidord/pykek)
+  * PyKEK (Python Kerberos Exploitation Kit), a python library to manipulate KRB5-related data. (Still in development)
+* [Kerberom](https://github.com/Fist0urs/kerberom)
+  * Kerberom is a tool aimed to retrieve ARC4-HMAC'ed encrypted Tickets Granting Service (TGS) of accounts having a Service Principal Name (SPN) within an Active Directory
+* [Kerbrute - ropnop](https://github.com/ropnop/kerbrute)
+  * A tool to quickly bruteforce and enumerate valid Active Directory accounts through Kerberos Pre-Authentication
+* [kerbrute - Tarlogic](https://github.com/TarlogicSecurity/kerbrute)
+  * An script to perform kerberos bruteforcing by using the Impacket library.
+* [ticketConverter.py](https://github.com/SecureAuthCorp/impacket/blob/master/examples/ticketConverter.py)
+  * This script will convert kirbi files (commonly used by mimikatz) into ccache files used by impacket, and vice-versa.
 
 ### <a id="ref-ad-73"></a><a id="adlate" name="adlate"></a>Lateral Movement
 
@@ -2045,6 +2041,10 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
     * This lab looks at leveraging machine account NTLM password hashes or more specifically - how they can be used in pass the hash attacks to gain additional privileges, depending on which groups the machine is a member of (ideally administrators/domain administrators).
   * [Domain Escalation – Machine Accounts - NetbiosX(2022)](https://pentestlab.blog/2022/02/01/machine-accounts/)
 
+- **Tools**
+  * [ADAPE-Script](https://github.com/hausec/ADAPE-Script)
+      * Active Directory Assessment and Privilege Escalation Script
+
 #### <a id="ref-ad-82"></a><a id="samaccountname" name="samaccountname"></a>SAMAccountName Spoofing / CVE-2021-42278/2021-42287
 
 * [Active Directory Domain Services Elevation of Privilege Vulnerability - CVE-2021-42278](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-42278)
@@ -2073,7 +2073,9 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
 * [You (dis)liked mimikatz? Wait for kekeo - Benjamin Delpy(BlueHat IL 2019)](https://www.youtube.com/watch?v=sROKCsXdVDg)
   * Slides - https://msrnd-cdn-stor.azureedge.net/bluehat/bluehatil/2019/assets/doc/You%20(dis)iked%20mimikatz%20Wait%20for%20kekeo.pdf
   * For years, you’ve tried to fight mimikatz, first to understand it, and maybe fight it again. This little kiwi fruit shaped program has given you a hard time, extracted your password, stolen your credentials, played with your nerves and certificates... But our friends in New Zealand know it best: there are many different kiwis... and perhaps the fruit is the most lucrative, but it's not the most sadistic. The kiwi animal may not fly, and it remains complex to build it from source, its effects are not less devastating...I will introduce "kekeo", the little animal brother of mimikatz. If you enjoyed playing with Kerberos, ASN1, security providers..., then you'll love adopting this furry, sweet animal. From its birth with MS14-068 to cleartext passwords without local administrator rights, you'll know everything about this animal. This talk will embed CredSSP and TSSP with cleartext credential, explore a little bit about PKINITMustiness and the RSA-on-the-fly for Kerberos with PKI!
-  - **(Priv)Exchange**
+
+#### <a id="ref-ad-137"></a>(Priv)Exchange
+
 * [Issue 2186: Exchange: AD Schema Misconfiguration Elevation of Privilege - James Forshaw](https://bugs.chromium.org/p/project-zero/issues/detail?id=2186)
   * "The msExchStorageGroup schema class added during Exchange installation can be used to create almost any AD object including users, groups or domain trusts leading to elevation of privilege."
 * [PrivExchange : One Hop away from Domain Admin - ](https://www.c0d3xpl0it.com/2019/02/privexchange-one-hop-away-from-domain-admin.html)
@@ -2086,11 +2088,10 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
   * expansion and demo of how to use the PrivExchange exploit
 * [PowerPriv](https://github.com/G0ldenGunSec/PowerPriv)
   * A powershell implementation of PrivExchange by `@_dirkjan` (original code found here: https://github.com/dirkjanm/PrivExchange/blob/master/privexchange.py) Useful for environments on which you cannot run python-based applications, have user credentials, or do not want to drop files to disk. Will cause the target exchange server system account to attempt to authenticate to a system of your choice.
-  - **Shadow Credentials**
+
+#### <a id="ref-ad-138"></a>Shadow Credentials
+
 * [No-Fix Local Privilege Escalation Using KrbRelay With Shadow Credentials - Matthew David(2022)](https://icyguider.github.io/2022/05/19/NoFix-LPE-Using-KrbRelay-With-Shadow-Credentials.html)
-- **Tools**
-  * [ADAPE-Script](https://github.com/hausec/ADAPE-Script)
-      * Active Directory Assessment and Privilege Escalation Script
 
 #### <a id="ref-ad-84"></a><a id="shadowadmin" name="shadowadmin"></a>Shadow Admins(ACLs)
 
@@ -2113,7 +2114,9 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
 ### <a id="ref-ad-87"></a><a id="shadowvuln" name="shadowvuln"></a>Volume Shadow Service (Attacking)
 
 * [Vshadow: Abusing the Volume Shadow Service for Evasion, Persistence, and Active Directory Database Extraction - BOHOPS(2018)](https://bohops.com/2018/02/10/vshadow-abusing-the-volume-shadow-service-for-evasion-persistence-and-active-directory-database-extraction/)
-- **Sharepoint (Attacking**
+
+### <a id="ref-ad-139"></a>SharePoint (Attacking)
+
 - **Articles/Blogposts/Writeups**
   * [The Lone Sharepoint - Acap4z(2021)](https://www.crummie5.club/the-lone-sharepoint/)
   * [CVE-2021-26420: Remote Code Execution in SharePoint via Workflow Compilation - ZDI(2021)](https://www.thezdi.com/blog/2021/10/5/cve-2021-26420-remote-code-execution-in-sharepoint-via-workflow-compilation)
@@ -2128,7 +2131,9 @@ https://medium.com/r3d-buck3t/pwning-printers-with-ldap-pass-back-attack-a0d8fa4
 - **Articles/Blogposts/Writeups**
   * [Unlocking All The Doors To Active Directory With The Skeleton Key Attack](https://blog.stealthbits.com/unlocking-all-the-doors-to-active-directory-with-the-skeleton-key-attack/)
   * [Skeleton Key](https://pentestlab.blog/2018/04/10/skeleton-key/)
-- **SQL Server (Attacking)**
+
+### <a id="ref-ad-140"></a>SQL Server (Attacking)
+
 - **101**
 - **Articles/Blogposts/Writeups**
   * [Pentesting MSSQL - Microsoft SQL Server - HackTricks](https://book.hacktricks.xyz/network-services-pentesting/pentesting-mssql-microsoft-sql-server)

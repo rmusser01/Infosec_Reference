@@ -13,11 +13,8 @@
   - [Lateral Movement](#ref-linpost-9)
   - [Collection](#ref-linpost-10)
 - [Linux Code Injection](#ref-linpost-11)
-  - [101](#ref-linpost-12)
   - [Articles/Blogposts/Writeups](#ref-linpost-13)
-  - [Talks & Presentations](#ref-linpost-14)
   - [Tools](#ref-linpost-15)
-  - [Techniques](#ref-linpost-16)
 <!-- nav:toc:end -->
 
 ## <a id="ref-linpost-1"></a><a id="linpost" name="linpost"></a>Post-Exploitation Linux
@@ -423,13 +420,15 @@
 
 ## <a id="ref-linpost-11"></a><a id="lict" name="lict"></a>Linux Code Injection
 
-### <a id="ref-linpost-12"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-linpost-12"></a><a id="101-1"></a>
 
 ### <a id="ref-linpost-13"></a>Articles/Blogposts/Writeups
 
 * [Pure In-Memory (Shell)Code Injection In Linux Userland - blog.sektor7](https://blog.sektor7.net/#!res/2018/pure-in-memory-linux.md)
 
-### <a id="ref-linpost-14"></a>Talks & Presentations
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-linpost-14"></a><a id="talks--presentations"></a>
 
 ### <a id="ref-linpost-15"></a>Tools
 
@@ -442,6 +441,5 @@
 * [injectso64](https://github.com/ice799/injectso64)
     * This is the x86-64 rewrite of Shaun Clowes' i386/SPARC injectso which he presented at Blackhat Europe 2001.
 
-### <a id="ref-linpost-16"></a>Techniques
-
------------------------------------------------------------------------------------------------------------------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-linpost-16"></a><a id="techniques"></a>

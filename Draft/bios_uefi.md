@@ -6,7 +6,6 @@
 - [Intel Management Engine(IME) / Active Management Technology(AMT)](#ref-firmware-2)
   - [101](#ref-firmware-3)
   - [Articles/Blogposts/Writeups](#ref-firmware-4)
-  - [Papers](#ref-firmware-5)
   - [General](#ref-firmware-6)
   - [Tools](#ref-firmware-7)
   - [Miscellaneous](#ref-firmware-8)
@@ -17,7 +16,6 @@
   - [General](#ref-firmware-13)
   - [Tools](#ref-firmware-14)
 - [Exploitation](#ref-firmware-15)
-  - [101](#ref-firmware-16)
   - [Articles/Blogposts/Writeups](#ref-firmware-17)
   - [Papers](#ref-firmware-18)
   - [Presentations/Slides](#ref-firmware-19)
@@ -25,8 +23,6 @@
 - [Firmware Analysis](#ref-firmware-21)
   - [101](#ref-firmware-22)
   - [Articles/Blogposts/Writeups](#ref-firmware-23)
-  - [Papers](#ref-firmware-24)
-  - [General](#ref-firmware-25)
   - [Tools](#ref-firmware-26)
 - [Speculative Execution Bugs(Meltdown & Spectre)](#ref-firmware-27)
   - [General](#ref-firmware-28)
@@ -64,7 +60,8 @@
 * [Reverse Engineering Intels Management Engine](http://recon.cx/2014/slides/Recon%202014%20Skochinsky.pdf) 
     * On every intel chip core2duo and newer
 
-### <a id="ref-firmware-5"></a>Papers
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-firmware-5"></a>
 
 ### <a id="ref-firmware-6"></a>General
 
@@ -130,7 +127,8 @@
 
 ## <a id="ref-firmware-15"></a><a id="exploit" name="exploit"></a>Exploitation
 
-### <a id="ref-firmware-16"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-firmware-16"></a>
 
 ### <a id="ref-firmware-17"></a>Articles/Blogposts/Writeups
 
@@ -141,7 +139,7 @@
 * [SMM Rootkits:A New Breed of OS Independent Malware](http://www.eecs.ucf.edu/~czou/research/SMM-Rootkits-Securecom08.pdf)
     * In this paper, we draw attention to a different but related threat that exists on many commodity systems in operation today: The System Management Mode based rootkit (SMBR). System Management Mode (SMM) is a relatively obscure mode on Intel processors used for low-level hardware control. It has its own private memory space and execution environment which is generally invisible to code running outside (e.g., the Operating System). Furthermore, SMM code is completely non-preemptible, lacks any concept of privilege level, and is immune to memory protection mechanisms. These features make it a potentially attractive home for stealthy rootkits. In this paper, we present our development of a proof of concept SMM rootkit. In it, we explore the potential of System Management Mode for malicious use by implementing a chipset level keylogger and a network backdoor capable of directly interacting with the network card to send logged keystrokes to a remote machine via UDP. The rootkit hides its memory footprint and requires no changes to the existing Operating System. It is compared and contrasted with VMBRs. Finally, techniques to defend against these threats are explored. By taking an offensive perspective we hope to help security researchers better understand the depth and scope of the problems posed by an emerging class of OS independent malware. 
 
-### <a id="ref-firmware-18"></a>Papers
+### <a id="ref-firmware-18"></a><a id="papers-2"></a>Papers
 
 * [System Management Mode Hack Using SMM for "Other Purposes](http://phrack.org/issues/65/7.html))
     * The research provided in this paper describes in details how to reverse engineer and modify System Management Interrupt (SMI) handlers in the BIOS system firmware and how to implement and detect SMM keystroke logger. This work also presents proof of concept code of SMM keystroke logger that uses I/O Trap based keystroke interception and a code for detection of such keystroke logger.
@@ -187,7 +185,7 @@
 
 ## <a id="ref-firmware-21"></a><a id="firmware" name="firmware"></a>Firmware Analysis
 
-### <a id="ref-firmware-22"></a>101
+### <a id="ref-firmware-22"></a><a id="101-3"></a>101
 
 * [Intel® System Studio – UEFI BIOS Debugging](https://software.intel.com/en-us/articles/intel-system-studio-2014-uefi-bios-debugging)
 * [Debug SPI BIOS after Power Up Sequence](https://software.intel.com/en-us/articles/debug-spi-bios-after-power-up-sequence)
@@ -207,9 +205,11 @@
 * [Firmware Reverse Engineering](https://github.com/frizb/FirmwareReverseEngineering)
     * Notes and tools from my experiences reverse engineering firmware
 
-### <a id="ref-firmware-24"></a>Papers
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-firmware-24"></a><a id="papers-3"></a>
 
-### <a id="ref-firmware-25"></a>General
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-firmware-25"></a>
 
 ### <a id="ref-firmware-26"></a>Tools
 
@@ -226,7 +226,7 @@
 
 ## <a id="ref-firmware-27"></a><a id="melt" name="melt"></a>Speculative Execution Bugs(Meltdown & Spectre)
 
-### <a id="ref-firmware-28"></a>General
+### <a id="ref-firmware-28"></a><a id="general-4"></a>General
 
 * [Meltdown and Spectre - Vulnerabilities in modern computers leak passwords and sensitive data.](https://meltdown.help/)
     * Meltdown and Spectre exploit critical vulnerabilities in modern processors. These hardware vulnerabilities allow programs to steal data which is currently processed on the computer. While programs are typically not permitted to read data from other programs, a malicious program can exploit Meltdown and Spectre to get hold of secrets stored in the memory of other running programs. This might include your passwords stored in a password manager or browser, your personal photos, emails, instant messages and even business-critical documents. Meltdown and Spectre work on personal computers, mobile devices, and in the cloud. Depending on the cloud provider's infrastructure, it might be possible to steal data from other customers.

@@ -6,15 +6,38 @@
 - [Agnostic](#ref-logging-1)
   - [Logging](#ref-logging-2)
   - [Monitoring](#ref-logging-3)
+    - [Breach Detection/Response](#ref-logging-4)
+    - [Infrastructure Monitoring](#ref-logging-5)
   - [Detection Engineering](#ref-logging-6)
   - [Threat Hunting](#ref-logging-7)
+    - [101](#ref-logging-8)
+    - [Building a Program](#ref-logging-9)
+    - [Resources](#ref-logging-10)
+    - [Non-101 General](#ref-logging-11)
+    - [APT Hunts](#ref-logging-12)
+    - [Methodologies](#ref-logging-13)
+    - [Data Analysis](#ref-logging-14)
+    - [Email-Logs](#ref-logging-15)
+    - [Hunt Experiences/Demonstrations of](#ref-logging-16)
+    - [(Malicious) Insider Hunting](#ref-logging-17)
+    - [Metrics](#ref-logging-18)
+    - [Tools](#ref-logging-19)
   - [Other](#ref-logging-20)
+    - [ESXi](#ref-logging-21)
+    - [ICS](#ref-logging-22)
+    - [Slack](#ref-logging-23)
   - [OSQuery](#ref-logging-24)
   - [IoC-Related](#ref-logging-25)
   - [Yara](#ref-logging-26)
 - [Network-based](#ref-logging-27)
   - [Logging](#ref-logging-28)
   - [Monitoring](#ref-logging-29)
+    - [Flow-Data](#ref-logging-30)
+    - [IDS/IPS Tools](#ref-logging-31)
+    - [IDS/IPS Monitoring Tools](#ref-logging-32)
+    - [PCAPs](#ref-logging-33)
+    - [Traffic Analysis](#ref-logging-34)
+    - [General Tools](#ref-logging-35)
   - [Detection Engineering](#ref-logging-36)
   - [Threat Hunting](#ref-logging-37)
 - [Linux-based](#ref-logging-38)
@@ -23,6 +46,7 @@
   - [Detection Engineering](#ref-logging-41)
   - [Threat Hunting](#ref-logging-42)
 - [Cloud-based](#ref-logging-43)
+  - [AWS](#ref-logging-44)
 - [macOS-based](#ref-logging-46)
   - [Logging](#ref-logging-47)
   - [Monitoring](#ref-logging-48)
@@ -30,20 +54,23 @@
   - [Threat Hunting](#ref-logging-50)
 - [Windows-based](#ref-logging-51)
   - [Logging](#ref-logging-52)
+    - [Event Tracing for Windows](#ref-logging-53)
   - [Monitoring](#ref-logging-54)
   - [Windows Detection Engineering](#ref-logging-55)
+    - [Active Directory](#ref-logging-56)
+    - [Processes & Related](#ref-logging-57)
   - [Threat Hunting](#ref-logging-58)
+    - [Active Directory](#ref-logging-59)
   - [Cobalt Strike](#ref-logging-60)
 - [Data Storage & Analysis Stacks](#ref-logging-61)
   - [ELK Stack](#ref-logging-62)
-  - [101](#ref-logging-63)
-  - [ElasticSearch](#ref-logging-64)
-  - [LogStash](#ref-logging-65)
-  - [Kibana](#ref-logging-66)
+    - [101](#ref-logging-63)
+    - [ElasticSearch](#ref-logging-64)
+    - [LogStash](#ref-logging-65)
+    - [Kibana](#ref-logging-66)
   - [Event Query Language](#ref-logging-67)
   - [Tools](#ref-logging-68)
   - [Graylog](#ref-logging-69)
-  - [Splunk](#ref-logging-70)
 <!-- nav:toc:end -->
 
 Related: [Active Directory](Active_Directory.md), [Forensics & Incident Response](DFIR.md), [Logging, Monitoring & Threat Hunting](L-SM-TH.md).
@@ -413,7 +440,7 @@ Related: [Active Directory](Active_Directory.md), [Forensics & Incident Response
   * [Defining ATT&CK Data Sources, Part II: Operationalizing the Methodology - Jose Luis Rodriguez(2020)](https://medium.com/mitre-attack/defining-attack-data-sources-part-ii-1fc98738ba5b)
 - **Analysis of**
   - **Articles/Blogposts/Writeups**
-    * [Analysis of Variance - RPubs]()https://rpubs.com/aaronsc32/anova-compare-more-than-two-groups
+    * [Analysis of Variance - RPubs](<https://rpubs.com/aaronsc32/anova-compare-more-than-two-groups>)
     * [What is the Tukey Test / Honest Significant Difference? - statisticshowto.com](https://www.statisticshowto.com/tukey-test-honest-significant-difference/)
     * [Tukey's Test for Post-Hoc Analysis - Aaron Schlegel(2018)](https://aaronschlegel.me/tukeys-test-post-hoc-analysis.html)
     * [WATSON: Abstracting Behaviors from Audit Logs via Aggregation of Contextual Semantics - Jun Zeng, Zheng Leong Chua, Yinfang Chen, Kaihang Ji, Zhenkai Liang, Jian Mao](https://www.ndss-symposium.org/wp-content/uploads/ndss2021_7A-3_24549_paper.pdf)
@@ -1127,41 +1154,24 @@ Related: [Active Directory](Active_Directory.md), [Forensics & Incident Response
 
 ## <a id="ref-logging-43"></a><a id="cloud" name="cloud"></a><a id="cloud1" name="cloud1"></a>Cloud-based
 
-- **AWS**
-
-#### <a id="ref-logging-44"></a><a id="awslog" name="awslog"></a>Logging
+### <a id="ref-logging-44"></a><a id="awslog" name="awslog"></a>AWS
 
 - **101**
-  - **Monitoring**
-  - **Detection Engineering**
-  - **Threat Hunting**
-* [Quick and Dirty CloudTrail Threat Hunting Log Analysis - George Fekkas(2021)](https://medium.com/@george.fekkas/quick-and-dirty-cloudtrail-threat-hunting-log-analysis-b64af10ef923)
+- **Monitoring**
+- **Detection Engineering**
+- **Threat Hunting**
+  * [Quick and Dirty CloudTrail Threat Hunting Log Analysis - George Fekkas(2021)](https://medium.com/@george.fekkas/quick-and-dirty-cloudtrail-threat-hunting-log-analysis-b64af10ef923)
 - **Talks/Presentations/Videos**
   * [Actionable threat hunting in AWS (SEC339) - Chris Farris, Suman Koduri(AWS re:Invent 2019)](https://www.youtube.com/watch?v=kNtiskRtfeY)
     * Learn how WarnerMedia leveraged Amazon GuardDuty, AWS CloudTrail, and its own serverless inventory tool (Antiope) to root out cloud vulnerabilities, insecure behavior, and potential account compromise activities across a large number of accounts. We cover how WarnerMedia centralizes and automates its security tooling, offer detailed Splunk queries for GuardDuty and CloudTrail, and discuss how Antiope is used for vulnerability hunting. We cover the scaling issues incurred during a large enterprise merger. Leave this session with a strategy and an actionable set of detections for finding potential data breaches and account compromises.
     * [Blogpost](https://www.chrisfarris.com/post/reinvent2019-sec339/)
-- **Azure**
-
-#### <a id="ref-logging-45"></a><a id="azurelog" name="azurelog"></a>Logging
-
-- **101**
-  - **Monitoring**
-  - **Detection Engineering**
-  - **Threat Hunting**
-------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-------------------------------------------------------------------------------------------------------------------------------------------
+<!-- Resource-free topic retained in docs/maintenance-backlog.md. -->
+<a id="ref-logging-45"></a><a id="azurelog"></a>
 
 ## <a id="ref-logging-46"></a><a id="macos" name="macos"></a><a id="macos1" name="macos1"></a>macOS-based
 
 
-### <a id="ref-logging-47"></a><a id="maclog" name="maclog"></a>Logging
+### <a id="ref-logging-47"></a><a id="logging-5"></a><a id="maclog" name="maclog"></a>Logging
 
 - **101**
   * [Logging - developer.apple](https://developer.apple.com/documentation/os/logging?language=occ)
@@ -1236,7 +1246,7 @@ Related: [Active Directory](Active_Directory.md), [Forensics & Incident Response
   - **Articles/Blogposts/Writeups**
     * [Writing a File Monitor with Apple's Endpoint Security Framework - Patrick Wardle](https://objective-see.com/blog/blog_0x48.html)
   - **Tooling**
-    * [filemon - An FSEvents client]()http://newosxbook.com/tools/filemon.html
+    * [filemon - An FSEvents client](<http://newosxbook.com/tools/filemon.html>)
     * [filewatcher(2018)](https://github.com/meliot/filewatcher)
       * Filewatcher is an auditing and monitoring utility for macOS. It can audit all events from the system auditpipe of macOS and filter them by process or by file
     * [FileMonitor](https://github.com/objective-see/FileMonitor)
@@ -1371,7 +1381,7 @@ Related: [Active Directory](Active_Directory.md), [Forensics & Incident Response
 ## <a id="ref-logging-51"></a><a id="Windows" name="Windows"></a><a id="win1" name="win1"></a>Windows-based
 
 
-### <a id="ref-logging-52"></a><a id="winlog" name="winlog"></a>Logging
+### <a id="ref-logging-52"></a><a id="logging-6"></a><a id="winlog" name="winlog"></a>Logging
 
 - **101**
   * [Windows 10, version 1809 basic level Windows diagnostic events and fields](https://docs.microsoft.com/en-gb/windows/privacy/basic-level-windows-diagnostic-events-and-fields-1809#windows-error-reporting-events)
@@ -1720,7 +1730,7 @@ Related: [Active Directory](Active_Directory.md), [Forensics & Incident Response
   * [Engineering Process Injection Detections - Part 1: Research - Jonathan Johnson(2020)](https://posts.specterops.io/engineering-process-injection-detections-part-1-research-951e96ad3c85)
     * [Code](https://github.com/jsecurity101/Detecting-Process-Injection-Techniques)
   * [Execution - Powershell (T1086) - Rafael Bono, José Miguel Colmena]](https://ackcent.com/blog/execution-powershell-t1086/)
-  * [Detection Engineering with Kerberoasting Series]()
+  * Detection Engineering with Kerberoasting Series
     * [Part1 - Capability Abstraction - Jared Atkinson](https://posts.specterops.io/capability-abstraction-fbeaeeb26384)
     * [Part2 - Detection Spectrum - Jared Atkinson](https://posts.specterops.io/detection-spectrum-198a0bfb9302)
   * [Host-based Threat Modeling & Indicator Design - Jared Atkinson(2017)](https://posts.specterops.io/host-based-threat-modeling-indicator-design-a9dbbb53d5ea)
@@ -2610,7 +2620,7 @@ Related: [Active Directory](Active_Directory.md), [Forensics & Incident Response
 ### <a id="ref-logging-62"></a><a id="elk" name="elk"></a>ELK Stack
 
 
-### <a id="ref-logging-63"></a><a id="elk101" name="elk101"></a>101
+#### <a id="ref-logging-63"></a><a id="elk101" name="elk101"></a>101
 
 * [Introduction to ELK Stack: A primer for beginners - Elastic.co](https://www.elastic.co/webinars/introduction-to-elk-stack-a-primer-for-beginners)
 * [Introduction to logging with the ELK Stack - Elastic.co](https://www.elastic.co/webinars/introduction-elk-stack)
@@ -2622,7 +2632,7 @@ Related: [Active Directory](Active_Directory.md), [Forensics & Incident Response
 - **Setting up a lab**
 * See 'Building_a_Lab.md'
 
-### <a id="ref-logging-64"></a><a id="elastics" name="elastics"></a>ElasticSearch
+#### <a id="ref-logging-64"></a><a id="elastics" name="elastics"></a>ElasticSearch
 
 - **101**
   * [Elasticsearch: The Definitive Guide The Definitive Guide](https://www.elastic.co/guide/en/elasticsearch/guide/current/index.html)
@@ -2644,7 +2654,7 @@ Related: [Active Directory](Active_Directory.md), [Forensics & Incident Response
   * [Identifying beaconing malware using Elastic - Apoorva Joshi,Thomas Veasey, Craig Chamberlain(2022)](https://www.elastic.co/blog/identifying-beaconing-malware-using-elastic)
   * [Detecting and responding to Dirty Pipe with Elastic - Elastic Security Team(2022)](https://www.elastic.co/blog/detecting-and-responding-to-dirty-pipe-with-elastic)
 
-### <a id="ref-logging-65"></a><a id="logstash" name="logstash"></a>LogStash
+#### <a id="ref-logging-65"></a><a id="logstash" name="logstash"></a>LogStash
 
 * [LogStash](https://github.com/elasticsearch/logstash)
   * Logstash is a tool for managing events and logs. You can use it to collect logs, parse them, and store them for later use (like, for searching). If you store them in Elasticsearch, you can view and analyze them with Kibana. It is fully free and fully open source. The license is Apache 2.0, meaning you are pretty much free to use it however you want in whatever way.
@@ -2652,7 +2662,7 @@ Related: [Active Directory](Active_Directory.md), [Forensics & Incident Response
 * [Logstash Documentation](http://logstash.net/docs/1.4.2/)
 * [logstash anonymize](http://logstash.net/docs/1.4.2/filters/anonymize) * Anonymize fields using by replacing values with a consistent hash.
 
-### <a id="ref-logging-66"></a><a id="kibana" name="kibana"></a>Kibana
+#### <a id="ref-logging-66"></a><a id="kibana" name="kibana"></a>Kibana
 
 - **101**
   * [Kibana](https://github.com/elasticsearch/kibana)
@@ -2743,7 +2753,7 @@ Related: [Active Directory](Active_Directory.md), [Forensics & Incident Response
 ### <a id="ref-logging-69"></a><a id="gray" name="gray"></a>Graylog
 
 - **Setting up a lab**
-  * [No More Secrets: Logging Made Easy Through Graylog - VDA Labs]()
+  * No More Secrets: Logging Made Easy Through Graylog - VDA Labs
     * [Part 1: Installation, securing, and optimizing the setup part 1](https://vdalabs.com/2020/02/20/no-more-secrets-logging-made-easy-through-graylog-part-1/)
     * [Part 2: Installation, securing, and optimizing the setup part 2](https://vdalabs.com/2020/02/21/no-more-secrets-logging-made-easy-through-graylog-part-2/)
     * [Part 3: Domain Controller/DHCP log collection and alerts](https://vdalabs.com/2020/02/26/no-more-secrets-logging-made-easy-through-graylog-part-3/)
@@ -2753,6 +2763,5 @@ Related: [Active Directory](Active_Directory.md), [Forensics & Incident Response
     * [Part 7: Firewall log collection](https://vdalabs.com/2020/03/25/graylog-firewall-syslog/)
 
 
-### <a id="ref-logging-70"></a><a id="splunk" name="splunk"></a>Splunk
-
--------------------------------------------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-logging-70"></a><a id="splunk"></a>

@@ -6,11 +6,7 @@
   - [Articles/Papers/Writeups](#ref-threat-2)
   - [Talks & Presentations](#ref-threat-3)
   - [Threat Modeling Methodologies](#ref-threat-4)
-    - [OCTAVE](#ref-threat-5)
-    - [PASTA](#ref-threat-6)
     - [STRIDE](#ref-threat-7)
-    - [TRIKE](#ref-threat-8)
-    - [VAST](#ref-threat-9)
   - [Tools](#ref-threat-10)
 - [Unsorted resources](#ref-threat-notes)
 <!-- nav:toc:end -->
@@ -35,9 +31,11 @@
 
 ### <a id="ref-threat-4"></a>Threat Modeling Methodologies
 
-#### <a id="ref-threat-5"></a>OCTAVE
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-threat-5"></a><a id="octave"></a>
 
-#### <a id="ref-threat-6"></a>PASTA
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-threat-6"></a><a id="pasta"></a>
 
 #### <a id="ref-threat-7"></a>STRIDE
 
@@ -45,9 +43,11 @@
     * STRIDE is a model of threats developed by Praerit Garg and Loren Kohnfelder at Microsoft for identifying computer security threats. It provides a mnemonic for security threats in six categories.
 * [Guerrilla Threat Modelling (or 'Threat Modeling' if you're American)](http://blogs.msdn.com/b/ptorr/archive/2005/02/22/guerillathreatmodelling.aspx)
 
-#### <a id="ref-threat-8"></a>TRIKE
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-threat-8"></a><a id="trike"></a>
 
-#### <a id="ref-threat-9"></a>VAST
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-threat-9"></a><a id="vast"></a>
 
 ### <a id="ref-threat-10"></a>Tools
 

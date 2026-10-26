@@ -19,7 +19,6 @@
   - [Tools](#ref-containers-15)
 - [Docker](#ref-containers-16)
   - [101](#ref-containers-17)
-  - [Compose](#ref-containers-18)
   - [Containers & Images](#ref-containers-19)
   - [Deployment](#ref-containers-20)
   - [Dockerfiles](#ref-containers-21)
@@ -43,10 +42,8 @@
   - [Securing](#ref-containers-39)
 - [RunC](#ref-containers-40)
   - [101](#ref-containers-41)
-  - [Securing](#ref-containers-42)
 - [Solaris Zones](#ref-containers-43)
   - [101](#ref-containers-44)
-  - [Securing](#ref-containers-45)
 - [Other Stuff](#ref-containers-46)
 <!-- nav:toc:end -->
 
@@ -203,7 +200,8 @@
 * [Bocker](https://github.com/p8952/bocker)
     * Docker implemented in around 100 lines of bash.
 
-### <a id="ref-containers-18"></a><a id="dcom" name="dcom"></a>Compose
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-containers-18"></a><a id="compose"></a><a id="dcom"></a>
 
 ### <a id="ref-containers-19"></a><a id="dci" name="dci"></a>Containers & Images
 
@@ -532,9 +530,8 @@
 * [One of the original developers of cgroups on why it was created](https://news.ycombinator.com/item?id=20599672)
 * **Articles/Blogposts/Writeups**
 
-### <a id="ref-containers-42"></a>Securing
-
-* **Tools**
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-containers-42"></a><a id="securing-1"></a>
 
 ## <a id="ref-containers-43"></a>Solaris Zones
 
@@ -544,9 +541,8 @@
 * [Solaris Zone of Solaris™ 10 Operating System function - Fujitsu.com](https://www.fujitsu.com/global/products/computing/servers/unix/sparc-enterprise/software/solaris10/container/zone/)
 * **Articles/Blogposts/Writeups**
 
-### <a id="ref-containers-45"></a>Securing
-
-* **Tools**
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-containers-45"></a><a id="securing-2"></a>
 
 ## <a id="ref-containers-46"></a>Other Stuff
 

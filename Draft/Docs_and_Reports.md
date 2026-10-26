@@ -25,7 +25,6 @@
   - [Writing Technical Documentation](#ref-reports-21)
   - [Writing a Playbook](#ref-reports-22)
   - [Meta](#ref-reports-23)
-    - [LaTeX](#ref-reports-24)
     - [Markdown](#ref-reports-25)
     - [Tools](#ref-reports-26)
   - [PoC Documentation](#ref-reports-27)
@@ -250,7 +249,8 @@
 
 ### <a id="ref-reports-23"></a><a id="meta" name="meta"></a>Meta
 
-#### <a id="ref-reports-24"></a>LaTeX
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-reports-24"></a><a id="latex"></a>
 
 #### <a id="ref-reports-25"></a>Markdown
 

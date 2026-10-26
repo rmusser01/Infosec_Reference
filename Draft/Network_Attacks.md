@@ -53,8 +53,6 @@
   - [IP Spoofing](#ref-network-49)
   - [MitM Tools](#ref-network-50)
   - [Network Host Discovery/Service Discovery:](#ref-network-51)
-  - [Pivoting](#ref-network-52)
-  - [Vendor Specific Stuff](#ref-network-53)
 - [Technologies](#ref-network-54)
   - [802.1x & NAC(Netork Access Control)](#ref-network-55)
   - [Captive Portals](#ref-network-56)
@@ -1064,21 +1062,24 @@
 
 ## <a id="ref-network-40"></a><a id="attacks" name="attacks"></a>Attacks & Techniques
 
-### <a id="ref-network-41"></a><a id="pivot" name="pivot"></a>Pivoting
+### <a id="ref-network-41"></a><a id="ref-network-52"></a><a id="pivoting-1"></a><a id="pivot" name="pivot"></a>Pivoting
 
 * Look at the Pivoting section in Post Exploitation/Privilege Escalation
 
 ---------------------------
 
-### <a id="ref-network-42"></a><a id="vendor" name="vendor"></a>Vendor Specific Stuff
+### <a id="ref-network-42"></a><a id="ref-network-53"></a><a id="vendor-specific-stuff-1"></a><a id="vendor" name="vendor"></a>Vendor Specific Stuff
 
 * **Non-Specific**
     * [Vendor/Ethernet/Bluetooth MAC Address Lookup and Search - coffer.com](http://www.coffer.com/mac_find/)
     * [IP Cameras Default Passwords Directory](https://ipvm.com/reports/ip-cameras-default-passwords-directory)
+    * [Vendor/Ethernet/Bluetooth MAC Address Lookup and Search - coffer.com](http://www.coffer.com/mac_find/)
+    * [IP Cameras Default Passwords Directory](https://ipvm.com/reports/ip-cameras-default-passwords-directory)
+
 * **Cisco**
     * **Application Centric Infrastructure**
         * [Through the Looking Glass Own the Data Center - Chris McCoy(Defcon27 - RT Village)](https://www.youtube.com/watch?v=G-heFh4t-Pk&list=PL9fPq3eQfaaChXmQKpp1YO19Gw-6SxBDs&index=4)
-            * [Slides]()
+            * Slides (URL not recorded)
             * The data center embodies the heart of many businesses on the Internet. It contains much of the information in a centralized location which provides a huge incentive for those who would wish harm. The data centers in the realm of Cloud may no longer contain just a single entity, but many individual tenants that attach to a common fabric. The Cisco Application Centric Infrastructure (ACI) aims to meet these needs with a multi-tenant, scalable fabric that interconnects physical hosts, VMs and containers. ACI is Cisco's answer to the centrally-managed Software Defined Network (SDN). The Application Policy Infrastructure Controller (APIC) and Nexus 9000 series switches form the brains and backbone of ACI. A member of Cisco's Advanced Security Initiatives Group (ASIG) will demonstrate their findings during an evaluation of ACI and the APIC, more than three years before the BH2019 talk "APIC's Adventures in Wonderland." Step into the mind of an attacker and scan, probe, and interact with the network fabric to progress from an unauthenticated user to administrator and root of the data center switch fabric. Once inside the system, see how the APIC can be modified in a nearly undetectable manner to provide the attacker unfettered internal access to all the interconnected hosts and VMs in the data center. The target audience for this talk includes those with a technical interest in offensive discovery and secure product development. Participants will receive an overview of how a data center product is viewed in an offensive light.
     * **Smart Install**
         * [Cisco Smart Installs and Why They’re Not “Informational” - Jordan Drysdale](https://www.blackhillsinfosec.com/cisco-smart-installs-and-why-theyre-not-informational/)
@@ -1088,16 +1089,32 @@
         * [CVE-2016-6366](https://github.com/RiskSense-Ops/CVE-2016-6366/blob/master/README.md)
             * Public repository for improvements to the EXTRABACON exploit, a remote code execution for Cisco ASA written by the Equation Group (NSA) and leaked by the Shadow Brokers.
         * [Pentesting Cisco SD-WAN Part 1: Attacking VManage - Julien Legras, Thomas Etrillard(2020)](https://www.synacktiv.com/posts/pentest/pentesting-cisco-sd-wan-part-1-attacking-vmanage.html)
+    * [CVE-2016-6366](https://github.com/RiskSense-Ops/CVE-2016-6366/blob/master/README.md)
+        * Public repository for improvements to the EXTRABACON exploit, a remote code execution for Cisco ASA written by the Equation Group (NSA) and leaked by the Shadow Brokers.
+
 * **F5**
     * [BigIP Security - dnkolegov](https://github.com/dnkolegov/bigipsecurity/blob/master/README.md)
         * This document describes common misconfigurations of F5 Networks BigIP systems.
+    * [BigIP Security - dnkolegov](https://github.com/dnkolegov/bigipsecurity/blob/master/README.md)
+        * This document describes common misconfigurations of F5 Networks BigIP systems.
+
 * **IBM**
+    * [Domi-Owned](https://github.com/coldfusion39/domi-owned)
+        * Domi-Owned is a tool used for compromising IBM/Lotus Domino servers. Tested on IBM/Lotus Domino 8.5.2, 8.5.3, 9.0.0, and 9.0.1 running on Windows and Linux.
+
     * [Domi-Owned](https://github.com/coldfusion39/domi-owned)
         * Domi-Owned is a tool used for compromising IBM/Lotus Domino servers. Tested on IBM/Lotus Domino 8.5.2, 8.5.3, 9.0.0, and 9.0.1 running on Windows and Linux.
 
 * **Distributed Systems**
     * [Garfield](https://github.com/tunnelshade/garfield)
         * Garfield is and open source framework for scanning and exploiting Distributed Systems. The framework currently being in it's alpha stage and is undergoing rapid development.
+    * [Garfield](https://github.com/tunnelshade/garfield)
+        * Garfield is and open source framework for scanning and exploiting Distributed Systems. The framework currently being in it's alpha stage and is undergoing rapid development.
+
+* [IVRE](https://github.com/cea-sec/ivre)
+    * IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
+    http://www.pentest-standard.org/index.php/Intelligence_Gathering
+
 * [IVRE](https://github.com/cea-sec/ivre)
     * IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
     http://www.pentest-standard.org/index.php/Intelligence_Gathering
@@ -1578,38 +1595,6 @@
         * [Slides](https://docs.google.com/presentation/d/1No9K1OsuYy5mDP0FmRzb2fNWeuyyq2R41N0p7qu8r_0/edit#slide=id.g20261039dc_2_48)
 
 ------------
-
-### <a id="ref-network-52"></a>Pivoting
-
-* Look at the Pivoting section in Post Exploitation/Privilege Escalation
-
----------------------------
-
-### <a id="ref-network-53"></a>Vendor Specific Stuff
-
-* **Non-Specific**
-    * [Vendor/Ethernet/Bluetooth MAC Address Lookup and Search - coffer.com](http://www.coffer.com/mac_find/)
-    * [IP Cameras Default Passwords Directory](https://ipvm.com/reports/ip-cameras-default-passwords-directory)
-* **Cisco**
-    * [CVE-2016-6366](https://github.com/RiskSense-Ops/CVE-2016-6366/blob/master/README.md)
-        * Public repository for improvements to the EXTRABACON exploit, a remote code execution for Cisco ASA written by the Equation Group (NSA) and leaked by the Shadow Brokers.
-* **F5**
-    * [BigIP Security - dnkolegov](https://github.com/dnkolegov/bigipsecurity/blob/master/README.md)
-        * This document describes common misconfigurations of F5 Networks BigIP systems.
-* **IBM**
-    * [Domi-Owned](https://github.com/coldfusion39/domi-owned)
-        * Domi-Owned is a tool used for compromising IBM/Lotus Domino servers. Tested on IBM/Lotus Domino 8.5.2, 8.5.3, 9.0.0, and 9.0.1 running on Windows and Linux.
-
-* **Distributed Systems**
-    * [Garfield](https://github.com/tunnelshade/garfield)
-        * Garfield is and open source framework for scanning and exploiting Distributed Systems. The framework currently being in it's alpha stage and is undergoing rapid development.
-* [IVRE](https://github.com/cea-sec/ivre)
-    * IVRE (Instrument de veille sur les réseaux extérieurs) or DRUNK (Dynamic Recon of UNKnown networks) is a network recon framework, including tools for passive recon (flow analytics relying on Bro, Argus, Nfdump, fingerprint analytics based on Bro and p0f and active recon (IVRE uses Nmap to run scans, can use ZMap as a pre-scanner; IVRE can also import XML output from Nmap and Masscan).
-    http://www.pentest-standard.org/index.php/Intelligence_Gathering
-
-------------------------------------------------------------------------------------------------------------------------------------
-
-------------------------------------------------------------------------------------------------------------------------------------
 
 ## <a id="ref-network-54"></a><a id="tech" name="tech"></a>Technologies
 

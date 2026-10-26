@@ -1,10 +1,6 @@
 # Side-Channel Attacks
 
-#### Table of Contents
-
-
-
-
+<a id="table-of-contents"></a>
 
 * [Exploiting CVE-2018-1038 - Total Meltdown - Adam Chester](https://blog.xpnsec.com/total-meltdown-cve-2018-1038/)
 

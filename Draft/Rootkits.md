@@ -3,7 +3,6 @@
 ## Table of Contents
 <!-- nav:toc:start -->
 - [Rootkits](#ref-rootkits-1)
-  - [101](#ref-rootkits-2)
   - [General Information](#ref-rootkits-3)
   - [Platforms](#ref-rootkits-4)
     - [Android](#ref-rootkits-5)
@@ -20,7 +19,8 @@
 
 ## <a id="ref-rootkits-1"></a>Rootkits
 
-### <a id="ref-rootkits-2"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-rootkits-2"></a><a id="101"></a>
 
 ### <a id="ref-rootkits-3"></a>General Information
 
@@ -93,7 +93,7 @@
     * [KernelMode Rootkits: Part 1, SSDT hooks - adlice](https://www.adlice.com/kernelmode-rootkits-part-1-ssdt-hooks/)
     * [KernelMode Rootkits: Part 2, IRP hooks - adlice](https://www.adlice.com/kernelmode-rootkits-part-2-irp-hooks/)
     * [KernelMode Rootkits: Part 3, kernel filters- adlice](https://www.adlice.com/kernelmode-rootkits-part-3-kernel-filters/)
-    * [Program Develop: Windows Rootkits]()
+    * Program Develop: Windows Rootkits
         * [Part 1](http://www.programdevelop.com/5408113/)
         * [Part 2](http://www.programdevelop.com/5409574/)
         * [Part 3](http://www.programdevelop.com/5408212/)

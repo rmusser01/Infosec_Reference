@@ -8,9 +8,7 @@
   - [Utilities](#ref-lab-4)
 - [Virtual Labs/Machines](#ref-lab-5)
   - [VM Hypervisor Software](#ref-lab-6)
-  - [VirtualBox](#ref-lab-7)
   - [VMware(Workstation/vSphere/ESXi)](#ref-lab-8)
-  - [Xen](#ref-lab-9)
   - [Obtaining VMs](#ref-lab-10)
   - [Automated Lab/Machine Creation Tools](#ref-lab-11)
   - [VMs/Apps Designed to be Attacked](#ref-lab-12)
@@ -117,7 +115,8 @@
     * [VMware vSphere - free](https://www.vmware.com/products/vsphere-hypervisor.html)
     * [Xen - free](https://www.xenproject.org/)
 
-### <a id="ref-lab-7"></a>VirtualBox
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-lab-7"></a><a id="virtualbox"></a>
 
 ### <a id="ref-lab-8"></a>VMware(Workstation/vSphere/ESXi)
 
@@ -126,7 +125,8 @@
     * [How to Manage VMware Snapshots - Vladan Seget](https://blog.netwrix.com/2019/12/23/how-to-manage-vmware-snapshots/)
     * [Deep Dive – The Ultimate Guide to Master VMware Snapshot - Mohammed Rafic](http://www.vmwarearena.com/deep-dive-the-ultimate-guide-to-master-vmware-snapshot/)
 
-### <a id="ref-lab-9"></a>Xen
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-lab-9"></a><a id="xen"></a>
 
 ### <a id="ref-lab-10"></a>Obtaining VMs
 

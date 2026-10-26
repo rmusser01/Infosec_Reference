@@ -10,7 +10,6 @@
 - [General](#ref-darknets-6)
 - [Markets](#ref-darknets-7)
 - [Tools](#ref-darknets-8)
-- [Wikis](#ref-darknets-9)
 <!-- nav:toc:end -->
 
 ## <a id="ref-darknets-1"></a>General
@@ -55,5 +54,5 @@
 
 * [Tor Search engine.](https://ahmia.fi/search/)
 
-## <a id="ref-darknets-9"></a>Wikis
-
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-darknets-9"></a><a id="wikis"></a>

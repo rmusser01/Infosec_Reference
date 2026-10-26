@@ -2,15 +2,17 @@
 
 
 ## Table of Contents
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+<!-- nav:toc:start -->
+  - [Analyze application security posture](#analyze-application-security-posture)
+  - [Analyze architecture and configuration posture](#analyze-architecture-and-configuration-posture)
+  - [Analyze data collected](#analyze-data-collected)
+  - [Analyze hardware/software security defensive capabilities](#analyze-hardwaresoftware-security-defensive-capabilities)
+  - [Analyze organizational skillsets and deficiencies](#analyze-organizational-skillsets-and-deficiencies)
+  - [Identify vulnerabilities in third-party software libraries](#identify-vulnerabilities-in-third-party-software-libraries)
+  - [Research visibility gap of security vendors](#research-visibility-gap-of-security-vendors)
+  - [Test signature detection](#test-signature-detection)
+  - [Research relevant vulnerabilities/CVEs](#research-relevant-vulnerabilitiescves)
+<!-- nav:toc:end -->
 
 
 
@@ -90,10 +92,9 @@
 
 
 
----------------------------------------------------------
+<!-- Author scaffold retained for future technique entries. -->
+```markdown
 ### 
 * [- Pre-ATT&CK]()()
 	* 
-
-
-
+```

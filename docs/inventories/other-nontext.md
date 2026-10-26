@@ -9,37 +9,37 @@
 - **http://cansecwest.com/core03/shiva.ppt**
   - URL: <http://cansecwest.com/core03/shiva.ppt>
   - Candidate type: slides; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:283`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:280`; references: 1.
   - ID: `ffd0efca032bff6f00e5`.
 - **JSON Web Token Flowchart**
   - URL: <http://cryto.net/%7Ejoepie91/blog/attachments/jwt-flowchart.png>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/Web.md:1639`; references: 1.
+  - Source: `Draft/Web.md:1645`; references: 1.
   - ID: `7621d51524eb459a10ba`.
 - **Part 1**
   - URL: <http://i.imgur.com/EU6ga.jpg>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:236`; references: 1.
+  - Source: `Draft/sysinternals.md:234`; references: 1.
   - ID: `705fb89819cf96a5c1b1`.
 - **Part 2**
   - URL: <http://i.imgur.com/S5Ds2.jpg>
   - Candidate type: standalone_image; status: unverified / pending.
-  - Source: `Draft/sysinternals.md:237`; references: 1.
+  - Source: `Draft/sysinternals.md:235`; references: 1.
   - ID: `9076f7d4711ddfabb457`.
 - **http://www.cs.sjsu.edu/faculty/stamp/students/cs298report.doc**
   - URL: <http://www.cs.sjsu.edu/faculty/stamp/students/cs298report.doc>
   - Candidate type: document; status: unverified / pending.
-  - Source: `Draft/Reverse Engineering - REMath Literature.md:164`; references: 1.
+  - Source: `Draft/Reverse Engineering - REMath Literature.md:161`; references: 1.
   - ID: `e54f21846bcb5a62b0e0`.
 - **Advanced Buffer Overflow Methods**
   - URL: <http://www.cs.tau.ac.il/tausec/lectures/Advanced_Buffer_Overflow_Methods.ppt>
   - Candidate type: slides; status: unverified / pending.
-  - Source: `Draft/Exploit_Dev.md:265`; references: 1.
+  - Source: `Draft/Exploit_Dev.md:263`; references: 1.
   - ID: `00d0f93c037222eb3446`.
 - **Toolkit**
   - URL: <http://www.exumbraops.com/s/krbtrickstar.gz>
   - Candidate type: archive; status: unverified / pending.
-  - Source: `Draft/Active_Directory.md:1390`; references: 1.
+  - Source: `Draft/Active_Directory.md:1383`; references: 1.
   - ID: `560cc5aafa3fb99fd8d0`.
 - **http://www.leetsys.com/programs/credentialprovider/cp.zip**
   - URL: <http://www.leetsys.com/programs/credentialprovider/cp.zip>
@@ -54,12 +54,12 @@
 - **Slides**
   - URL: <https://bufferoverflows.net/wp-content/uploads/2020/08/BSides-Munich-2020-presentation.pptx>
   - Candidate type: slides; status: unverified / pending.
-  - Source: `Draft/PrivEscPostExWin.md:2448`; references: 1.
+  - Source: `Draft/PrivEscPostExWin.md:2442`; references: 1.
   - ID: `203123532a876378cad3`.
 - **Less is More, Exploring Code/Process-less Techniques and Other Weird Machine Methods to Hide Code (and How to Detect Them)**
   - URL: <https://cansecwest.com/slides/2014/less%20is%20more3.pptx>
   - Candidate type: slides; status: unverified / pending.
-  - Source: `Draft/DFIR.md:299`; references: 3.
+  - Source: `Draft/DFIR.md:449`; references: 3.
   - ID: `f38657c2eb3d6e00af93`.
 - **Slides**
   - URL: <https://embracethered.com/blog/downloads/Shadowbunny_BSides_Singapore_2020.pptx>

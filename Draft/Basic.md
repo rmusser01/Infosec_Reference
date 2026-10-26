@@ -813,7 +813,7 @@
     * [On Doing Research - cryptologie.net](https://www.cryptologie.net/article/469/on-doing-research/)
     * [Follow Your Curiosity. Read Your Ass Off. - Andy Sparks(2020)](https://askjerry.substack.com/p/follow-your-curiosity-read-your-ass)
 * **Legalities**
-    * [A Researcher’s Guide to SomeLegal Risks of Security Research - Sunoo Park, Kendra Albert(2020)]()
+    * A Researcher’s Guide to SomeLegal Risks of Security Research - Sunoo Park, Kendra Albert(2020) (URL not recorded)
         * What does it cover? This guide overviews broad areas of potential legal riskrelated to security research, and the types of security research likely implicated.We hope it will serve as a useful starting point for concerned researchers andothers. While the guide covers what we see as the main areas of legal risk forsecurity researchers, it is not exhaustive. It also doesn’t create a lawyer-clientrelationship between you and the authors. This guide focuses on U.S. law, and mostly federal law.Different U.S. statesand jurisdictions may have different laws, and even different interpretations ofthe same federal law. This guide does not do a state-by-state analysis, butrather focuses on federal law and how it is interpreted by most states. Todetermine which states’ law applies to your specific situation, consult a lawyer.This guide doesnotdiscuss risks associated with security research undernon-U.S. legal systems. Your activity may raise legal risks in legal systemsoutside of the U.S. if it takes place or has impacts outside the U.S., or involvesor impacts people who are governed by non-U.S. legal systems. Similarly, youractivity may be subject to U.S. legal liability (as well as liability under yourlocal law) even if it occurs primarily outside the U.S., if it has impacts in theU.S. or involves or involves U.S. people and/or equipment.2Finally, if your research involves human subjects and is aiming to pro-duce generalizable knowledge,3you should consult an institutional review board(IRB) or ethical review committee to ensure that you are in compliance withhuman testing rules, which are outside the scope of this Guide
 
 ### <a id="ref-basic-52"></a>Request for Service/Product
@@ -1016,7 +1016,7 @@ IPv6 Troubleshooting
 * [Entering the Field of Cybersecurity - SANS(2020)](https://www.sans.org/blog/entering-the-field-of-cybersecurity/)
 	* Advice for Teens Who Are Interested in Entering the Field of Cybersecurity
 
-* [Drunk Hacker History: Hacker Stories Powered by C2H6O for Fun & Profit - Panel Defcon24]()
+* Drunk Hacker History: Hacker Stories Powered by C2H6O for Fun & Profit - Panel Defcon24 (URL not recorded)
 
 * [Workflow Improvements for Pentesters - David Boyd(2020)](https://www.trustedsec.com/blog/workflow-improvements-for-pentesters/)
 

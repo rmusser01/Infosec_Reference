@@ -3,7 +3,6 @@
 ## Table of Contents
 <!-- nav:toc:start -->
 - [General](#ref-honeypot-1)
-- [Miscellaneous](#ref-honeypot-2)
 - [Tools](#ref-honeypot-3)
 - [Integration with Other Tools](#ref-honeypot-4)
 - [Miscellaneous](#ref-honeypot-5)
@@ -29,7 +28,7 @@
     * [Lessons Learn from attacks on Kippo honeypots](https://isc.sans.edu/diary/Lessons+Learn+from+attacks+on+Kippo+honeypots/18935)
     * [An in-depth analysis of SSH attacks on Amazon EC2](https://blog.secdim.com/in-depth-analysis-of-ssh-attacks-on-amazon-ec2/)
         * The research study investigates Secure Shell (SSH) attacks on Amazon EC2 cloud instances across different AWS zones by means of deploying Smart Honeypot (SH). It provides an in-depth analysis of SSH attacks, SSH intruders profile, and attempts to identify their tactics and purposes.
-    * [Analysis of Attacks Using a Honeypot - Verlag Berlin Heidelberg 2011]()
+    * Analysis of Attacks Using a Honeypot - Verlag Berlin Heidelberg 2011 (URL not recorded)
         * Abstract. A Honeypot is a software based security device, deployed to attract hackers by displaying services and open ports which are potentially vulnerable. While the attackers are diverted, t heir activities can then be monitored and an a- lysed to identify current a ttack methods and trends. A low - interaction Honeypot called Dion aea was chosen for this project because it can simulate services while preventing an attacker from gaining full control. Results were collected over the six week period of the experiment. The logged information of the o b- served attacks was analysed and compared with current vulnerabilities, the loc a- tions where the attacks were originating from and the time of day at the orig i- nating site. A profile of individual attackers can then be built to ga in an insight into the current attack trends in order to improve network defences.
     * [POSTER: Dragging Attackers to Honeypots for Effective Analysis of Cyber Threats](http://www.aims-conference.org/2014/POSTER-Dragging_Attackers_to_Honeypots_for_Effective_Analysis_of_Cyber_Threats.pdf)
     * [Setting Honeytraps with Modsecurity - Adding fake hidden form fields](http://blog.spiderlabs.com/2014/06/setting-honeytraps-with-modsecurity-adding-fake-hidden-form-fields.html)
@@ -39,7 +38,8 @@
         * Many of my computer systems are constantly compromised, attacked, hacked, 24/7. How do I know this? I've been allowing it. This presentation will cover over one year of research running several vulnerable systems (or honeypots) in multiple countries including the USA, mainland China, Russia and others. We'll be taking a look at: a brief introduction to honeypots, common attacker trends (both sophisticated and script kiddie), brief malware analysis and the statistical analysis of attackers based on GeoIP. Are there differences in attacks based on where a computer system is located? Let's investigate this together! Beginners to the topic of honeypots fear not, the basics will be covered.
     * [Security Onions and Honey Potz - Ethan Dodge - BSidesSLC2015](https://www.youtube.com/watch?v=1Jbm1zwiGTM)
 
-## <a id="ref-honeypot-2"></a>Miscellaneous
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-honeypot-2"></a>
 
 ## <a id="ref-honeypot-3"></a>Tools
 
@@ -127,7 +127,7 @@
     * [Tango Honeypot Intelligence](https://github.com/aplura/Tango)
         * Honeypot Intelligence with Splunk
 
-## <a id="ref-honeypot-5"></a>Miscellaneous
+## <a id="ref-honeypot-5"></a><a id="miscellaneous-1"></a>Miscellaneous
 
 * [Hflow2](https://projects.honeynet.org/hflow)
     * Data Analysis System

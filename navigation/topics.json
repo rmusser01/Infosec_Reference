@@ -187,16 +187,6 @@
           "aliases": []
         },
         {
-          "label": "Abusing ACEs & ACLs",
-          "fragment": "ref-ad-35",
-          "aliases": []
-        },
-        {
-          "label": "Across Trusts and Domains",
-          "fragment": "ref-ad-36",
-          "aliases": []
-        },
-        {
           "label": "Certificate Services (Attacking)",
           "fragment": "ref-ad-37",
           "aliases": []
@@ -1305,11 +1295,6 @@
           "aliases": []
         },
         {
-          "label": "History",
-          "fragment": "ref-crypto-12",
-          "aliases": []
-        },
-        {
           "label": "PGP",
           "fragment": "ref-crypto-14",
           "aliases": []
@@ -1420,16 +1405,6 @@
           "aliases": []
         },
         {
-          "label": "Monero",
-          "fragment": "ref-crypto-46",
-          "aliases": []
-        },
-        {
-          "label": "Zcash",
-          "fragment": "ref-crypto-47",
-          "aliases": []
-        },
-        {
           "label": "Smart Contract Security",
           "fragment": "ref-crypto-49",
           "aliases": []
@@ -1506,11 +1481,6 @@
           "label": "Markets",
           "fragment": "ref-darknets-7",
           "aliases": []
-        },
-        {
-          "label": "Wikis",
-          "fragment": "ref-darknets-9",
-          "aliases": []
         }
       ]
     },
@@ -1530,23 +1500,8 @@
       "tocDepth": 4,
       "subjects": [
         {
-          "label": "I Want to...(Personal)",
-          "fragment": "ref-defense-3",
-          "aliases": []
-        },
-        {
-          "label": "Asset Inventory (Personal)",
-          "fragment": "ref-defense-4",
-          "aliases": []
-        },
-        {
           "label": "I Want to...(Enterprise/Organization)",
           "fragment": "ref-defense-8",
-          "aliases": []
-        },
-        {
-          "label": "Asset Inventory (Organization)",
-          "fragment": "ref-defense-9",
           "aliases": []
         },
         {
@@ -1557,11 +1512,6 @@
         {
           "label": "Implement a Vulnerability Management Program Within My Organization",
           "fragment": "ref-defense-21",
-          "aliases": []
-        },
-        {
-          "label": "Application Execution Control",
-          "fragment": "ref-defense-26",
           "aliases": []
         },
         {
@@ -1985,7 +1935,7 @@
         "DFIR",
         "Digital forensics and incident response"
       ],
-      "tocDepth": 3,
+      "tocDepth": 4,
       "subjects": [
         {
           "label": "Incident Response",
@@ -2060,6 +2010,41 @@
         {
           "label": "Bootkit Disk Forensics",
           "fragment": "ref-dfir-16",
+          "aliases": []
+        },
+        {
+          "label": "Cloud Forensics",
+          "fragment": "ref-dfir-cloud",
+          "aliases": []
+        },
+        {
+          "label": "Image Forensics",
+          "fragment": "ref-dfir-image",
+          "aliases": []
+        },
+        {
+          "label": "Incident Response Methodologies/Playbooks",
+          "fragment": "ref-dfir-142-methodologies-playbooks",
+          "aliases": []
+        },
+        {
+          "label": "On-Call Incident Response",
+          "fragment": "ref-dfir-161-on-call",
+          "aliases": []
+        },
+        {
+          "label": "Incident Response Platforms",
+          "fragment": "ref-dfir-169-platforms",
+          "aliases": []
+        },
+        {
+          "label": "Response Automation",
+          "fragment": "ref-dfir-184-response-automation",
+          "aliases": []
+        },
+        {
+          "label": "Windows Registry Forensics",
+          "fragment": "ref-dfir-686-registry",
           "aliases": []
         }
       ]
@@ -2161,16 +2146,6 @@
           "aliases": []
         },
         {
-          "label": "Nintendo Entertainment System",
-          "fragment": "ref-games-9",
-          "aliases": []
-        },
-        {
-          "label": "Nintendo Super Nintendo",
-          "fragment": "ref-games-10",
-          "aliases": []
-        },
-        {
           "label": "Nintendo64",
           "fragment": "ref-games-11",
           "aliases": []
@@ -2208,16 +2183,6 @@
         {
           "label": "Sony PlayStation 1",
           "fragment": "ref-games-19",
-          "aliases": []
-        },
-        {
-          "label": "Sony PlayStation 2",
-          "fragment": "ref-games-20",
-          "aliases": []
-        },
-        {
-          "label": "Sony PlayStation 3",
-          "fragment": "ref-games-21",
           "aliases": []
         },
         {
@@ -2305,7 +2270,7 @@
         "Threat hunting",
         "Network Security Monitoring & Logging"
       ],
-      "tocDepth": 3,
+      "tocDepth": 4,
       "subjects": [
         {
           "label": "Breach Detection/Response",
@@ -2500,11 +2465,6 @@
         {
           "label": "Graylog",
           "fragment": "ref-logging-69",
-          "aliases": []
-        },
-        {
-          "label": "Splunk",
-          "fragment": "ref-logging-70",
           "aliases": []
         }
       ]
@@ -2970,7 +2930,7 @@
         },
         {
           "label": "CAPTCHA",
-          "fragment": "ref-passwords-7",
+          "fragment": "ref-passwords-19",
           "aliases": []
         },
         {
@@ -3155,11 +3115,6 @@
         {
           "label": "PDF",
           "fragment": "ref-phish-54",
-          "aliases": []
-        },
-        {
-          "label": "UNC",
-          "fragment": "ref-phish-57",
           "aliases": []
         },
         {
@@ -3354,11 +3309,6 @@
       "tocDepth": 4,
       "subjects": [
         {
-          "label": "AppleScript, Objective-C & Swift",
-          "fragment": "ref-macpost-2",
-          "aliases": []
-        },
-        {
           "label": "Execution (macOS)",
           "fragment": "ref-macpost-5",
           "aliases": []
@@ -3401,16 +3351,6 @@
         {
           "label": "macOS Technologies",
           "fragment": "ref-macpost-23",
-          "aliases": []
-        },
-        {
-          "label": "Transparency, Consent, and Control (macOS)",
-          "fragment": "ref-macpost-29",
-          "aliases": []
-        },
-        {
-          "label": "macOS Code Injection",
-          "fragment": "ref-macpost-31",
           "aliases": []
         }
       ]
@@ -4003,11 +3943,6 @@
           "aliases": []
         },
         {
-          "label": "Videos",
-          "fragment": "ref-remath-21",
-          "aliases": []
-        },
-        {
           "label": "Model Checkers",
           "fragment": "ref-remath-22",
           "aliases": []
@@ -4063,11 +3998,6 @@
           "aliases": []
         },
         {
-          "label": "Unsorted references",
-          "fragment": "ref-remath-33",
-          "aliases": []
-        },
-        {
           "label": "Disassemblers & Debuggers",
           "fragment": "ref-remath-34",
           "aliases": []
@@ -4103,33 +4033,13 @@
           "aliases": []
         },
         {
-          "label": "Binary Manipulation Frameworks",
-          "fragment": "ref-remath-41",
-          "aliases": []
-        },
-        {
           "label": "Deobfuscation/Unpacking",
           "fragment": "ref-remath-42",
           "aliases": []
         },
         {
-          "label": "Cryptography",
-          "fragment": "ref-remath-43",
-          "aliases": []
-        },
-        {
           "label": "Visualization",
           "fragment": "ref-remath-44",
-          "aliases": []
-        },
-        {
-          "label": "Anti-Debugging / Anti-Reversing",
-          "fragment": "ref-remath-45",
-          "aliases": []
-        },
-        {
-          "label": "Acknowledgements",
-          "fragment": "ref-remath-46",
           "aliases": []
         }
       ]
@@ -4264,18 +4174,8 @@
           "aliases": []
         },
         {
-          "label": "File Systems (General OS Agnostic Internals)",
-          "fragment": "ref-internals-4",
-          "aliases": []
-        },
-        {
           "label": "Memory (General OS Agnostic Internals)",
           "fragment": "ref-internals-5",
-          "aliases": []
-        },
-        {
-          "label": "Processes (General OS Agnostic Internals)",
-          "fragment": "ref-internals-6",
           "aliases": []
         },
         {
@@ -4689,11 +4589,6 @@
           "aliases": []
         },
         {
-          "label": "History (additional cryptography)",
-          "fragment": "ref-crypto-extra-12",
-          "aliases": []
-        },
-        {
           "label": "Laws (additional cryptography)",
           "fragment": "ref-crypto-extra-13",
           "aliases": []
@@ -4811,16 +4706,6 @@
         {
           "label": "Ethereum (additional cryptography)",
           "fragment": "ref-crypto-extra-47",
-          "aliases": []
-        },
-        {
-          "label": "Monero (additional cryptography)",
-          "fragment": "ref-crypto-extra-48",
-          "aliases": []
-        },
-        {
-          "label": "Zcash (additional cryptography)",
-          "fragment": "ref-crypto-extra-49",
           "aliases": []
         },
         {
@@ -4945,6 +4830,16 @@
     "Draft/Interesting_Things.md",
     "Draft/Passwords.md",
     "Draft/Reverse Engineering - REMath Literature.md",
-    "Draft/SE.md"
+    "Draft/SE.md",
+    "Draft/ATT&CK-Stuff/Pre-ATT&CK/# Establish & Maintain Infrastructure.md",
+    "Draft/ATT&CK-Stuff/Pre-ATT&CK/Adversary_OPSEC.md",
+    "Draft/ATT&CK-Stuff/Pre-ATT&CK/Build_Capabilities.md",
+    "Draft/ATT&CK-Stuff/Pre-ATT&CK/Organizationa_ Information_Gathering.md",
+    "Draft/ATT&CK-Stuff/Pre-ATT&CK/Organizational_Weakness.md",
+    "Draft/ATT&CK-Stuff/Pre-ATT&CK/People_Information_Gathering.md",
+    "Draft/ATT&CK-Stuff/Pre-ATT&CK/Technical_Information_Gathering.md",
+    "Draft/ATT&CK-Stuff/Pre-ATT&CK/Technical_Weakness_Identification.md",
+    "Draft/Policy_Compliance.md",
+    "Draft/Cheat sheets reference pages Checklists -/metasploit.md"
   ]
 }

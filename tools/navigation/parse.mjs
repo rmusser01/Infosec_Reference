@@ -38,9 +38,17 @@ export function parseDocument(source, path) {
     if (
       ["link", "image", "linkReference", "imageReference"].includes(node.type)
     ) {
-      const ref = node.url
+      const ref = ["link", "image"].includes(node.type)
         ? node
         : definitions.get(node.identifier?.toLowerCase());
+      if (ref?.url === "" && !node.type.startsWith("image"))
+        result.issues.push({
+          code: "empty-link-destination",
+          path,
+          line,
+          target: toString(node, { includeHtml: false }),
+          severity: "error",
+        });
       if (ref)
         result.links.push({
           url: ref.url,
@@ -61,6 +69,14 @@ export function parseDocument(source, path) {
         if (attrs.id) addAnchor(attrs.id, line + offset, true);
         if (n.tagName === "a" && attrs.name && attrs.name !== attrs.id)
           addAnchor(attrs.name, line + offset, true);
+        if (n.tagName === "a" && attrs.href === "")
+          result.issues.push({
+            code: "empty-link-destination",
+            path,
+            line: line + offset,
+            target: node.value.trim(),
+            severity: "error",
+          });
         if (n.tagName === "a" && attrs.href)
           result.links.push({
             url: attrs.href,

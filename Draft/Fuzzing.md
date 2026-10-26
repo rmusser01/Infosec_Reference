@@ -404,7 +404,7 @@ https://github.com/jakobbotsch/Fuzzlyn
 Fuzzing
 https://raw.githubusercontent.com/secfigo/Awesome-Fuzzing/master/README.md
 * [Basic fuzzing framework](https://www.cert.org/vulnerability-analysis/tools/bff-download.cfm)
-* [Fuzzing 101 (Part 1)]()
+* Fuzzing 101 (Part 1) (URL not recorded)
 * [Fuzzing 101 (Part 2)](https://vimeo.com/5237484)
 
 https://github.com/MotherFuzzers/meetups/blob/master/README.md

@@ -27,7 +27,6 @@
     - [Scheduled Task/Job](#ref-winpost-23)
     - [Shared Modules](#ref-winpost-24)
     - [Shellcode Stuff](#ref-winpost-25)
-    - [Software Deployment Tools](#ref-winpost-26)
     - [System Services](#ref-winpost-27)
     - [1st-Party Software](#ref-winpost-28)
     - [Third-Party Software](#ref-winpost-29)
@@ -41,7 +40,6 @@
     - [101](#ref-winpost-37)
     - [Tactics](#ref-winpost-38)
     - [Talks/Presentations/Videos](#ref-winpost-39)
-    - [Tools](#ref-winpost-40)
     - [3rd Party Applications](#ref-winpost-41)
     - [Account Manipulation](#ref-winpost-42)
     - [Accessibility Features](#ref-winpost-43)
@@ -59,11 +57,9 @@
     - [Drivers](#ref-winpost-55)
     - [Event Triggered Execution](#ref-winpost-56)
     - [Extension Handlers](#ref-winpost-57)
-    - [External Remote Services](#ref-winpost-58)
     - [Filesystem](#ref-winpost-59)
     - [Hijack Execution Flow](#ref-winpost-60)
     - [IIS Modules](#ref-winpost-61)
-    - [Implant Container Image](#ref-winpost-62)
     - [LAPS](#ref-winpost-63)
     - [Library Files](#ref-winpost-64)
     - [MS Distributed Transaction Coordinator Service](#ref-winpost-65)
@@ -209,7 +205,6 @@
     - [(Ab)Using 'Legitimate' Applications Already Installed](#ref-winpost-205)
     - [Tools](#ref-winpost-206)
   - [Collection](#ref-winpost-207)
-    - [101](#ref-winpost-208)
     - [Articles/Blogposts/Writeups](#ref-winpost-209)
     - [Generic](#ref-winpost-210)
     - [Browser](#ref-winpost-211)
@@ -229,20 +224,17 @@
     - [VMware](#ref-winpost-225)
   - [Exfiltration](#ref-winpost-226)
 - [Windows Technologies](#ref-winpost-227)
-  - [Alternate Data Streams](#ref-winpost-228)
   - [AppLocker](#ref-winpost-229)
   - [Application Shims](#ref-winpost-230)
   - [AutoDiscover](#ref-winpost-231)
   - [BitLocker](#ref-winpost-232)
   - [ClickOnce Applications](#ref-winpost-233)
   - [Credential Guard/Device Guard/Application Guard](#ref-winpost-234)
-  - [Containers](#ref-winpost-235)
   - [(Distributed) Component-Object-Model(COM)](#ref-winpost-236)
   - [Containers(Windows)](#ref-winpost-237)
   - [(Windows )Cryptography](#ref-winpost-238)
   - [DLLs](#ref-winpost-239)
   - [DPAPI](#ref-winpost-240)
-  - [Device Guard](#ref-winpost-241)
   - [ETW](#ref-winpost-242)
   - [Event Log](#ref-winpost-243)
   - [Faxes & Printers](#ref-winpost-244)
@@ -258,7 +250,6 @@
     - [Talks/Presentations/Videos](#ref-winpost-254)
     - [Papers](#ref-winpost-255)
     - [Tools](#ref-winpost-256)
-  - [Kernel Operations](#ref-winpost-257)
   - [Library Description files](#ref-winpost-258)
   - [LNK Files](#ref-winpost-259)
   - [MS-SQL Server](#ref-winpost-260)
@@ -267,7 +258,6 @@
   - [PowerShell](#ref-winpost-263)
   - [PowerShell Desired State Configuration](#ref-winpost-264)
   - [Privileges](#ref-winpost-265)
-  - [Processes](#ref-winpost-266)
   - [RPC](#ref-winpost-267)
   - [Search Connectors](#ref-winpost-268)
   - [Services](#ref-winpost-269)
@@ -352,7 +342,7 @@
   - [Tooltips/Common Controls](#ref-winpost-348)
   - [Windows Notification Facility](#ref-winpost-349)
   - [WinSock Helper Functions(WSHX)](#ref-winpost-350)
-  - [Zombify - herpaderping?](#ref-winpost-351)
+  - [ZombifyProcess](#ref-winpost-351)
   - [Tradecraft Tips](#ref-winpost-352)
   - [Unsorted](#ref-winpost-353)
 <!-- nav:toc:end -->
@@ -829,7 +819,7 @@
         * A simple dumper as FreshyCalls' PoC. That's what's trendy, isn't it? `¯\_(ツ)_/¯`      
     * [inline_syscall](https://github.com/JustasMasiulis/inline_syscall)
         * Header only library that allows you to generate direct syscall instructions in an optimized, inlineable and easy to use manner.
-    * [Syscall Monitor]()https://github.com/hzqst/Syscall-Monitor)
+    * [Syscall Monitor](https://github.com/hzqst/Syscall-Monitor)
         * This is a process monitoring tool (like Sysinternal's Process Monitor) implemented with Intel VT-X/EPT for Windows 7+.
     * [SyscallDumper](https://github.com/joshfinley/SyscallDumper)
         * Dump system call codes, names, and offsets from Ntdll.dll
@@ -1256,7 +1246,8 @@
             * [DripLoader](https://github.com/xinbailu/DripLoader)
             * [DripLoader-Ops](https://github.com/xinbailu/DripLoader-Ops)
 
-#### <a id="ref-winpost-26"></a><a id="sdtexec" name="sdtexec"></a>Software Deployment Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-winpost-26"></a><a id="software-deployment-tools"></a><a id="sdtexec"></a>
 
 #### <a id="ref-winpost-27"></a><a id="winserviceexec" name="winserviceexec"></a>System Services
 
@@ -1367,7 +1358,8 @@
 * [Killsuit the equation group's swiss army knife for persistence - Francisco J Donoso(BlueHat v18)](https://www.youtube.com/watch?v=R5mgAsd2VBM)
     * This talk expands on my research into the Equation Group's post exploitation tools. My previous research focused on providing a general overview of DanderSpritz, a full-featured post-exploitation toolkit included in the ShadowBroker's "Lost in Translation" leak. This talk provides a deep dive into KillSuit which is the Equation Group's Swiss Army Knife for persistence, information gathering, defense evasion, and data exfiltration in unique and interesting ways.   During the talk, we will dissect the capabilities and functionality of the KillSuit framework, a little-known (and somewhat overlooked) component of the much larger DanderSpritz post-exploitation toolkit, leaked by the Shadow Brokers in April 2017. KillSuit is a full featured and versatile framework used by a variety of the Equation Group's tools and implants. KillSuit provides the ability to quietly establish persistence on machines via bootkits and other persistence methods and then allows operators to install persistent modules such as keyloggers, packet capture tools, tools that perform WiFi MITM, and other more information gathering tools. KillSuit also includes support for many plugins that provide interesting ways to silently exfiltrate data - some specifically designed to make data exfiltration across air gapped networks possible - including custom written IPSEC-like protocols and misuse of "disabled" WIFI cards and nearby open networks.
 
-#### <a id="ref-winpost-40"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-winpost-40"></a>
 
 #### <a id="ref-winpost-41"></a><a id="p3rd" name="p3rd"></a>3rd Party Applications
 
@@ -1608,7 +1600,8 @@
 
 * [Hijacking extensions handlers as a malware persistence method - hasherezade(2017)](https://hshrzd.wordpress.com/2017/05/25/hijacking-extensions-handlers-as-a-malware-persistence-method/)
 
-#### <a id="ref-winpost-58"></a><a id="pers" name="pers"></a>External Remote Services
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-winpost-58"></a><a id="external-remote-services"></a><a id="pers"></a>
 
 #### <a id="ref-winpost-59"></a><a id="pfs" name="pfs"></a>Filesystem
 
@@ -1635,7 +1628,8 @@
 * [IIS Raid – Backdooring IIS Using Native Modules - Rio Sherri(2020)](https://www.mdsec.co.uk/2020/02/iis-raid-backdooring-iis-using-native-modules/)
     * Back in 2018, PaloAlto Unit42 publicly documented RGDoor, an IIS backdoor used by the APT34. The article highlighted some details which sparked my interest and inspired me to write IIS-Raid, an IIS backdoor module that allows red-team operators to keep a stealthy persistence on IIS web-servers. In this blogpost, we will discuss some of the key components of this tool, how it was built and demonstrate its features.
 
-#### <a id="ref-winpost-62"></a>Implant Container Image
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-winpost-62"></a><a id="implant-container-image"></a>
 
 #### <a id="ref-winpost-63"></a><a id="plaps" name="plaps"></a>LAPS
 
@@ -4761,7 +4755,8 @@
 
 ### <a id="ref-winpost-207"></a><a id="wincollect" name="wincollect"></a><a id="1wincollect" name="1wincollect"></a>Collection
 
-#### <a id="ref-winpost-208"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-winpost-208"></a>
 
 #### <a id="ref-winpost-209"></a>Articles/Blogposts/Writeups
 
@@ -4874,10 +4869,8 @@
 
 ## <a id="ref-winpost-227"></a><a id="wintech" name="wintech"></a><a id="1wintech" name="1wintech"></a>Windows Technologies
 
-### <a id="ref-winpost-228"></a><a id="wads" name="wads"></a>Alternate Data Streams
-
-* **101**
-    * 
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-winpost-228"></a><a id="alternate-data-streams-1"></a><a id="wads"></a>
 
 ### <a id="ref-winpost-229"></a><a id="winapplocker" name="winapplocker"></a>AppLocker
 
@@ -4955,9 +4948,8 @@
         * This talk will exhibit rarely discussed and novel techniques to bypass Device Guard, some requiring admin access, some requiring Microsoft Office (but no user interaction), and one available under low privileges and using nothing but native OS executables. All techniques presented will eventually allow an attacker to run arbitrary code without disabling Device Guard. As of now, Microsoft decided not to service most of these techniques with an update (except for one which will be serviced as CVE-2018-8417).
 * **Tools**
 
-### <a id="ref-winpost-235"></a>Containers
-
-* **101**
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-winpost-235"></a><a id="containers"></a>
 
 ### <a id="ref-winpost-236"></a><a id="dcom" name="dcom"></a>(Distributed) Component-Object-Model(COM)
 
@@ -5242,10 +5234,8 @@
         * LaZagne uses an internal Windows function called CryptUnprotectData to decrypt user passwords. This API should be called on the victim user session, otherwise, it does not work. If the computer has not been started (when the analysis is realized on an offline mounted disk), or if we do not want to drop a binary on the remote host, no passwords can be retrieved. LaZagneForensic has been created to avoid this problem. This work has been mainly inspired by the awesome work done by Jean-Michel Picod and Elie Bursztein for DPAPICK and Francesco Picasso for Windows DPAPI laboratory.
     * [DataProtectionDecryptor v1.06 - Nirsoft](https://www.nirsoft.net/utils/dpapi_data_decryptor.html)
 
-### <a id="ref-winpost-241"></a><a id="devguard" name="devguard"></a>Device Guard
-
-* **101**
-    * 
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-winpost-241"></a><a id="device-guard"></a><a id="devguard"></a>
 
 ### <a id="ref-winpost-242"></a><a id="etw" name="etw"></a>ETW
 
@@ -5560,7 +5550,7 @@
     * [Finding hooks with windbg - Oliver Bachtik(2022)](https://blog.nviso.eu/2022/08/05/finding-hooks-with-windbg/)
     * [Hook Integrity Checks - passthehashbrowns(2021)](https://passthehashbrowns.github.io/hook-integrity-checks)
         * [hook-integrity-checks](https://github.com/passthehashbrowns/hook-integrity-checks)
-- **Techniques**(too lazy to actually sort these right now - FIXME)
+- **Techniques**
     * [Defeating Antivirus Real-time Protection From The Inside - Kuba Gretzky(2016)](https://breakdev.org/defeating-antivirus-real-time-protection-from-the-inside/)
     * [Defeating Userland Hooks (ft. Bitdefender) - dtm(2019)](https://0x00sec.org/t/defeating-userland-hooks-ft-bitdefender/12496/1)
     * [User-mode API hooks and bypasses - Magnus Stubman(2021)](https://improsec.com/tech-blog/user-mode-api-hooks-and-bypasses)
@@ -5633,7 +5623,7 @@
 * [HookFinder: Identifying and Understanding Malware Hooking Behaviors - Heng Yin, Zhenkai Lian, Dawn Song(2017)](https://www.ndss-symposium.org/wp-content/uploads/2017/09/yin2.pdf)
 * [PreVice: Static Detection of Hooking Capabilities in Machine Code - Claudiu Teodorescu, Derek Soeder, Andy Wortman(REcon2018)](https://infocondb.org/con/recon/recon-2018/previce-static-detection-of-hooking-capabilities-in-machine-code)
 
-#### <a id="ref-winpost-256"></a>Tools
+#### <a id="ref-winpost-256"></a><a id="tools-4"></a>Tools
 
 - **Unsorted**
     * [HookLib](https://github.com/HoShiMin/HookLib)
@@ -5656,11 +5646,8 @@
     * [UnhookMe](https://github.com/mgeeky/UnhookMe)
         * UnhookMe is an universal Windows API resolver & unhooker addressing problem of invoking unmonitored system calls from within of your Red Teams malware
 
-### <a id="ref-winpost-257"></a><a id="winkernel" name="winkernel"></a>Kernel Operations
-
-* **101**
-* **Articles/Blogposts/Writeups**
-* **Tools** 
+<!-- Resource-free topic retained in docs/maintenance-backlog.md. -->
+<a id="ref-winpost-257"></a><a id="kernel-operations"></a><a id="winkernel"></a>
 
 ### <a id="ref-winpost-258"></a><a id="librarydescript" name="librarydescript"></a>Library Description files
 
@@ -5812,9 +5799,8 @@
     * [Privilege Constants (Authorization) - docs.ms](https://docs.microsoft.com/en-us/windows/win32/secauthz/privilege-constants)
         * Privileges determine the type of system operations that a user account can perform. An administrator assigns privileges to user and group accounts. Each user's privileges include those granted to the user and to the groups to which the user belongs.
 
-### <a id="ref-winpost-266"></a><a id="winprocs" name="winprocs"></a>Processes
-
-* **101**
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-winpost-266"></a><a id="processes-2"></a><a id="winprocs"></a>
 
 ### <a id="ref-winpost-267"></a><a id="winrpc" name="winrpc"></a>RPC
 
@@ -6931,7 +6917,7 @@
         * [Get-PEB – A Tool to Dump the Process Environment Block (PEB) of Any Process - @mattifestation(2013)](http://www.exploit-monday.com/2013/01/Get-PEB.html)
         * [PowerShell and Win32 API Access - harmj0y(2014)](http://www.harmj0y.net/blog/powershell/powershell-and-win32-api-access/)
         * [Use PowerShell to Interact with the Windows API: Part 1 - devblogs.msdn(2014)](https://devblogs.microsoft.com/scripting/use-powershell-to-interact-with-the-windows-api-part-1/)
-            * [Part2]()
+            * Part2 (URL not recorded)
             * [Part3](https://devblogs.microsoft.com/scripting/use-powershell-to-interact-with-the-windows-api-part-3/)
         * [Accessing the Windows API in PowerShell via internal .NET methods and reflection - Matt Graeber(2012)](http://www.exploit-monday.com/2012/05/accessing-native-windows-api-in.html)
             * It is possible to invoke Windows API function calls via internal .NET native method wrappers in PowerShell without requiring P/Invoke or C# compilation. How is this useful for an attacker? You can call any Windows API function (exported or non-exported) entirely in memory. For those familiar with Metasploit internals, think of this as an analogue to railgun.
@@ -7126,7 +7112,7 @@
 
 ## <a id="ref-winpost-306"></a><a id="wcit" name="wcit"></a>Windows Code Injection Techniques
 
-### <a id="ref-winpost-307"></a>101
+### <a id="ref-winpost-307"></a><a id="101-10"></a>101
 
 * [Process Injection Techniques — Gotta Catch Them All - Itzik Kotler, Amit Klein(BHUSA19)](https://www.youtube.com/watch?v=xewv122qxnk)
     * [Paper](https://i.blackhat.com/USA-19/Thursday/us-19-Kotler-Process-Injection-Techniques-Gotta-Catch-Them-All-wp.pdf) 
@@ -7493,7 +7479,7 @@
     * [Process Injection Techniques andDetection using the Volatility Framework - Sotiria Balaoura(2018)](http://dione.lib.unipi.gr/xmlui/bitstream/handle/unipi/11578/Balaoura_MTE1623.pdf?sequence=1&isAllowed=y)
     * [Process Injection - Part III - 3xpl01tc0d3r(2019)](https://3xpl01tc0d3r.blogspot.com/2019/10/process-injection-part-iii.html)
     * [Parent PID Spoofing - Renos Nikolaou(2019)](https://medium.com/@r3n_hat/parent-pid-spoofing-b0b17317168e)
-    * [Process hollowing - unprotect]()
+    * Process hollowing - unprotect (URL not recorded)
 * **PoCs**
     * [EvasiveProcessHollowing](https://github.com/reevesrs24/EvasiveProcessHollowing)
         * Proof of concept code which demonstrate a few of the "evasive process hollowing" techniques analyzed in the white paper "What Malware Authors Don't want you to know - Evasive Hollow Process Injection" written by Monnappa K A. The PoC code can be used as a testbed to replicate the memory forensics findings discussed in the white paper.
@@ -7766,7 +7752,7 @@
 * **PoC**
     * [wsh](https://github.com/odzhan/injection/tree/master/wsh)
 
-### <a id="ref-winpost-351"></a>Zombify - herpaderping?
+### <a id="ref-winpost-351"></a><a id="zombify---herpaderping"></a>ZombifyProcess
 
 * [Zombie Processes as a HIPS Bypass - Malwaretech(2014)](https://www.malwaretech.com/2014/12/zombie-processes-as-hips-bypass.html)
 * [ZombifyProcess](https://github.com/MalwareTech/ZombifyProcess)

@@ -21,7 +21,6 @@
   - [Bluetooth Low Energy](#ref-wireless-17)
   - [Papers](#ref-wireless-18)
 - [Cellular Networks](#ref-wireless-19)
-  - [101](#ref-wireless-20)
   - [Educational](#ref-wireless-21)
   - [Tools](#ref-wireless-22)
   - [SIM Cards](#ref-wireless-23)
@@ -65,7 +64,6 @@
 - [Software Defined Radio](#ref-wireless-61)
   - [101](#ref-wireless-62)
   - [Articles/Presentations/Talks/Writeups](#ref-wireless-63)
-  - [Documentation](#ref-wireless-64)
   - [General](#ref-wireless-65)
   - [Tools](#ref-wireless-66)
   - [Wi-Max](#ref-wireless-67)
@@ -74,9 +72,7 @@
   - [Articles/Presentations/Talks/Writeups](#ref-wireless-70)
   - [Tools](#ref-wireless-71)
 - [Z-Wave](#ref-wireless-72)
-  - [101](#ref-wireless-73)
   - [Articles/Presentations/Talks/Writeups](#ref-wireless-74)
-  - [Tools](#ref-wireless-75)
 - [Miscellaneous](#ref-wireless-76)
 - [Unsorted resources](#ref-wireless-unsorted)
 <!-- nav:toc:end -->
@@ -231,7 +227,8 @@
 
 ## <a id="ref-wireless-19"></a><a id="cn" name="cn"></a>Cellular Networks
 
-### <a id="ref-wireless-20"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-wireless-20"></a>
 
 ### <a id="ref-wireless-21"></a>Educational
 
@@ -633,7 +630,8 @@
 * [Using Software Defined Radio for IoT Analysis](https://www.irongeek.com/i.php?page=videos/bsidesnova2017/102-using-software-defined-radio-for-iot-analysis-samantha-palazzolo)
 * [Decoding the LoRa IoT Protocol with an RTL-SDR](http://www.rtl-sdr.com/decoding-the-iot-lora-protocol-with-an-rtl-sdr/)
 
-### <a id="ref-wireless-64"></a>Documentation
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-wireless-64"></a><a id="documentation-3"></a>
 
 ### <a id="ref-wireless-65"></a>General
 
@@ -681,7 +679,7 @@
 
 ## <a id="ref-wireless-68"></a><a id="zigbee" name="zigbee"></a>Zigbee Wireless Networks
 
-### <a id="ref-wireless-69"></a>101
+### <a id="ref-wireless-69"></a><a id="101-7"></a>101
 
 * [Zigbee - Wikipedia](https://en.wikipedia.org/wiki/Zigbee)
 * [IEEE 802.15.4 - Wikipedia](https://en.wikipedia.org/wiki/IEEE_802.15.4)
@@ -704,7 +702,8 @@
 
 ## <a id="ref-wireless-72"></a><a id="zwave" name="zwave"></a>Z-Wave
 
-### <a id="ref-wireless-73"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-wireless-73"></a><a id="101-8"></a>
 
 ### <a id="ref-wireless-74"></a>Articles/Presentations/Talks/Writeups
 
@@ -713,7 +712,8 @@
 * [Honey, I'm Home!! Hacking Z-Wave Home Automation Systems - video](https://www.youtube.com/watch?v=KYaEQhvodc8)
     * [Slides - PDF](https://cybergibbons.com/wp-content/uploads/2014/11/honeyimhome-131001042426-phpapp01.pdf)
 
-### <a id="ref-wireless-75"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-wireless-75"></a><a id="tools-7"></a>
 
 ## <a id="ref-wireless-76"></a>Miscellaneous
 
@@ -724,9 +724,6 @@
 
 ## <a id="ref-wireless-unsorted"></a><a id="sort" name="sort"></a>Unsorted resources
 
-* Fix ToC
-* Add 101 stuff
-* Add SMS Standards/related
 https://www.usenix.org/legacy/events/sec11/tech/full_papers/Clark.pdf
 
 * [RFC 7710: Captive-Portal Identification Using DHCP or Router Advertisements (RAs)](https://tools.ietf.org/html/rfc7710)

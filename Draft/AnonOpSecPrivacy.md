@@ -21,7 +21,6 @@
   - [Travel](#ref-privacy-17)
   - [Misc/Unsorted](#ref-privacy-18)
   - [Windows](#ref-privacy-19)
-  - [Miscellaneous](#ref-privacy-20)
   - [Miscellaneous Tools](#ref-privacy-21)
 - [Achieving Anonymity](#ref-privacy-22)
   - [Articles](#ref-privacy-23)
@@ -46,24 +45,16 @@
   - [Media Companies](#ref-privacy-42)
   - [Propaganda](#ref-privacy-43)
   - [Presentations/Talks/Videos](#ref-privacy-44)
-  - [Papers](#ref-privacy-45)
   - [Talks](#ref-privacy-46)
 - [Documents (Phyiscal & Digital)](#ref-privacy-47)
   - [General](#ref-privacy-48)
   - [Papers](#ref-privacy-49)
 - [Emissions Security](#ref-privacy-50)
-  - [101](#ref-privacy-51)
-  - [Articles/Blogposts/Writeups](#ref-privacy-52)
-  - [Presentations/Talks/Videos](#ref-privacy-53)
   - [Papers](#ref-privacy-54)
-  - [Tools](#ref-privacy-55)
-  - [Miscellaneous](#ref-privacy-56)
 - [Facial Identification](#ref-privacy-57)
-  - [Articles](#ref-privacy-58)
   - [101](#ref-privacy-59)
   - [General](#ref-privacy-60)
   - [Talks/Presentations/Videos](#ref-privacy-61)
-  - [Papers](#ref-privacy-62)
   - [Building One](#ref-privacy-63)
   - [Facial Identification Anonymization](#ref-privacy-64)
   - [Countering Facial Recognition](#ref-privacy-65)
@@ -76,7 +67,6 @@
     - [China](#ref-privacy-72)
     - [Denmark](#ref-privacy-73)
     - [EU(catchall)](#ref-privacy-74)
-    - [France](#ref-privacy-75)
     - [Germany](#ref-privacy-76)
     - [Japan](#ref-privacy-77)
     - [Russia](#ref-privacy-78)
@@ -87,7 +77,6 @@
   - [Non-Modern Surveillance](#ref-privacy-83)
   - [Things](#ref-privacy-84)
 - [Commercial Surveillance](#ref-privacy-85)
-  - [101](#ref-privacy-86)
   - [Articles/Blogposts/Writeups](#ref-privacy-87)
   - [Aerial Surveillance](#ref-privacy-88)
   - [Surveillance-Focused Companies](#ref-privacy-89)
@@ -95,7 +84,6 @@
   - [Specific Companies](#ref-privacy-91)
   - [Talks/Presentations/Videos](#ref-privacy-92)
 - [Mobile Device Surveillance](#ref-privacy-93)
-  - [101](#ref-privacy-94)
   - [Articles/Blogposts/Writeups](#ref-privacy-95)
   - [Presentations/Talks/Videos](#ref-privacy-96)
   - [Papers](#ref-privacy-97)
@@ -330,7 +318,8 @@
     * List of some data collections in Win10
 * [Manage connections from Windows operating system components to Microsoft services - docs.ms](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
 
-### <a id="ref-privacy-20"></a><a id="misc" name="misc"></a>Miscellaneous
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-privacy-20"></a><a id="miscellaneous"></a><a id="misc"></a>
 
 ### <a id="ref-privacy-21"></a><a id="misc-tools" name="misc-tools"></a>Miscellaneous Tools
 
@@ -684,7 +673,8 @@
 
 * [The Cyberlous Mrs. Maisel: A Comedic (and Slightly Terrifying) Introduction to Information Warfare - Zhanna Malekos Smith](https://cdn.shopify.com/s/files/1/0177/9886/files/phv2019-zmalenkosmith.pdf)
 
-### <a id="ref-privacy-45"></a>Papers
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-privacy-45"></a>
 
 ### <a id="ref-privacy-46"></a>Talks
 
@@ -733,11 +723,14 @@
 
 ## <a id="ref-privacy-50"></a><a id="emissions" name="emissions"></a>Emissions Security
 
-### <a id="ref-privacy-51"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-privacy-51"></a>
 
-### <a id="ref-privacy-52"></a>Articles/Blogposts/Writeups
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-privacy-52"></a>
 
-### <a id="ref-privacy-53"></a>Presentations/Talks/Videos
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-privacy-53"></a>
 
 ### <a id="ref-privacy-54"></a>Papers
 
@@ -749,17 +742,16 @@
     * Reflecting objects such as tea pots and glasses, but also diffusely reflecting objects such as a user’s shirt, can be used to spy on confidential data displayed on a monitor. First, we show how reflections in the user’s eye can be exploited for spying  on  confidential data. Second, we investigate to what extent monitor images can be reconstructed from the diffuse reflections on a wall or the user’s clothes, and provide information- theoretic bounds limiting this type of attack. Third, we evaluate the effectiveness of several countermeasures
 * [GSMem: Data Exfiltration from Air-Gapped Computers over GSM Frequencies - usenix conference](https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-guri-update.pdf)
 
-### <a id="ref-privacy-55"></a>Tools
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-privacy-55"></a>
 
-### <a id="ref-privacy-56"></a>Miscellaneous
-
------------------------------------------------------------------------------------------------------------------------------
-
------------------------------------------------------------------------------------------------------------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-privacy-56"></a><a id="miscellaneous-1"></a>
 
 ## <a id="ref-privacy-57"></a><a id="facial" name="facial"></a>Facial Identification
 
-### <a id="ref-privacy-58"></a>Articles
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-privacy-58"></a>
 
 ### <a id="ref-privacy-59"></a>101
 
@@ -790,7 +782,8 @@
 * [Face/Off: Action Plan for Perils & Privileges of Facial Recognition - Elizabeth Wharton, Suchi Pahi(Shmoocon2020)](https://www.youtube.com/watch?v=L6Hzm2HTWJo&list=PL7-g2-mnZwSFX0qd41qOYHO28tmisjwCJ&index=13&t=1s)
     * Biometric data points, facial recognition, is becoming ubiquitous–unlocking your phone, airline boarding passes, law enforcement, in-store marketing metrics, even ordering fast food. As engineers, managers, or leaders–focus is on revenue, design, and cutting-edge technology. But what about the other effects of facial recognition? Your voice may be your password, but what happens when it’s your face and there’s a data breach or the data is wrong. With studies indicating error ranges in excess of 35%, increasing state biometric related privacy statutes, and biometric data breaches on the rise–what should you be worried about and watching as an architect and designer of such systems?  We’re going to discuss the current facial recognition use cases, growing regulatory concerns, the consequences of facial recognition, and what you can do to make sure that facial recognition technology doesn’t run amok.
 
-### <a id="ref-privacy-62"></a>Papers
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-privacy-62"></a>
 
 ### <a id="ref-privacy-63"></a>Building One
 
@@ -875,7 +868,8 @@
 * [Maximator: European signals intelligence cooperation, from a Dutch perspective - Bart Jacobs(2020)](https://www.tandfonline.com/doi/full/10.1080/02684527.2020.1743538)
     * This article is first to report on the secret European five-partner sigint alliance Maximator that started in the late 1970s. It discloses the name Maximator and provides documentary evidence. The five members of this European alliance are Denmark Sweden, Germany, the Netherlands, and France. The cooperation involves both signals analysis and crypto analysis. The Maximator alliance has remained secret for almost fifty years, in contrast to its Anglo-Saxon Five-Eyes counterpart. The existence of this European sigint alliance gives a novel perspective on western sigint collaborations in the late twentieth century. The article explains and illustrates, with relatively much attention for the cryptographic details, how the five Maximator participants strengthened their effectiveness via the information about rigged cryptographic devices that its German partner provided, via the joint U.S.-German ownership and control of the Swiss producer Crypto AG of cryptographic devices.
 
-#### <a id="ref-privacy-75"></a>France
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-privacy-75"></a><a id="france"></a>
 
 #### <a id="ref-privacy-76"></a>Germany
 
@@ -1029,7 +1023,8 @@
 
 ## <a id="ref-privacy-85"></a><a id="commercial" name="commercial"></a>Commercial Surveillance
 
-### <a id="ref-privacy-86"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-privacy-86"></a><a id="101-4"></a>
 
 ### <a id="ref-privacy-87"></a>Articles/Blogposts/Writeups
 
@@ -1144,7 +1139,8 @@
 
 ## <a id="ref-privacy-93"></a>Mobile Device Surveillance
 
-### <a id="ref-privacy-94"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-privacy-94"></a><a id="101-5"></a>
 
 ### <a id="ref-privacy-95"></a>Articles/Blogposts/Writeups
 
@@ -1161,7 +1157,7 @@
 
 * [Activity Recognition using Cell Phone Accelerometers - Jennifer R. Kwapisz, Gary M. Weiss, Samuel A. Moore](http://www.cis.fordham.edu/wisdm/includes/files/sensorKDD-2010.pdf)
 
-### <a id="ref-privacy-97"></a>Papers
+### <a id="ref-privacy-97"></a><a id="papers-6"></a>Papers
 
 * [SENSORID: Sensor Calibration Fingerprinting for Smartphones - Jiexin Zhang, Alastair R. Beresford, Ian Sheret(2019)](https://www.ieee-security.org/TC/SP2019/papers/405.pdf)
 -----------------------------------------------------------------------------------------------------------------------------
@@ -1170,7 +1166,7 @@
 
 ## <a id="ref-privacy-98"></a><a id="web" name="web"></a>Network/Web Based Surveillance
 
-### <a id="ref-privacy-99"></a>101
+### <a id="ref-privacy-99"></a><a id="101-6"></a>101
 
 * [Panopticlick](https://panopticlick.eff.org/)
     * Panopticlick will analyze how well your browser and add-ons protect you against online tracking techniques. We’ll also see if your system is uniquely configured—and thus identifiable—even if you are using privacy-protective software.
@@ -1220,7 +1216,7 @@
 * **Sales**
     * [Google and Mastercard Cut a Secret Ad Deal to Track Retail Sales - Mark Bergan, Jennifer Surane](https://www.bloomberg.com/news/articles/2018-08-30/google-and-mastercard-cut-a-secret-ad-deal-to-track-retail-sales)
 
-### <a id="ref-privacy-101"></a>Presentations/Talks/Videos
+### <a id="ref-privacy-101"></a><a id="presentationstalksvideos-4"></a>Presentations/Talks/Videos
 
 #### <a id="ref-privacy-102"></a>Pixel Tracking
 
@@ -1235,7 +1231,7 @@
 * [Wifi Tracking: Collecting the (probe) Breadcrumbs - David Switzer](https://www.youtube.com/watch?v=HzQHWUM8cNo)
     * Wifi probes have provided giggles via Karma and Wifi Pineapples for years, but is there more fun to be had? Like going from sitting next to someone on a bus, to knowing where they live and hang out? Why try to MITM someone’s wireless device in an enterprise environment where they may notice — when getting them at their favorite burger joint is much easier. In this talk we will review ways of collecting and analyzing probes. We’ll use the resulting data to figure out where people live, their daily habits, and discuss uses (some nice, some not so nice) for this information. We’ll also dicuss how to make yourself a little less easy to track using these methods. Stingrays are price prohibitive, but for just tracking people’s movements.. this is cheap and easy.
 
-### <a id="ref-privacy-105"></a>Papers
+### <a id="ref-privacy-105"></a><a id="papers-7"></a>Papers
 
 * **Browsers**
     * [Discovering Browser Extensions via Web Accessible Resources - Chalmers security lab](http://www.cse.chalmers.se/research/group/security/publications/2017/extensions/codaspy-17-full.pdf)
@@ -1253,7 +1249,7 @@
 * **VPNs**
     * [A Glance through the VPN Looking Glass: IPv6 Leakage and DNS Hijacking in Commercial VPN clients - Vasile C. Perta, Marco V. Barbera, Gareth Tyson, Hamed Haddadi, and Alessandro Mei(2/2015)](https://www.petsymposium.org/2015/papers/02_Perta.pdf)
 
-### <a id="ref-privacy-106"></a>Tools
+### <a id="ref-privacy-106"></a><a id="tools-3"></a>Tools
 
 * **Browser Fingerprinting**
     * [TorZillaPrint](https://github.com/ghacksuserjs/TorZillaPrint)
@@ -1271,7 +1267,7 @@
 
 ## <a id="ref-privacy-107"></a><a id="opsec" name="opsec"></a>OPSEC(Specifically)
 
-### <a id="ref-privacy-108"></a>Articles/Blogposts/Writeups
+### <a id="ref-privacy-108"></a><a id="articlesblogpostswriteups-4"></a>Articles/Blogposts/Writeups
 
 * [Operational Security and the Real World - The Grugq](https://medium.com/@thegrugq/operational-security-and-the-real-world-3c07e7eeb2e8)
 * [CIA Vault7 Development Tradecraft DOs and DON'Ts](https://wikileaks.org/ciav7p1/cms/page_14587109.html)
@@ -1328,7 +1324,7 @@
 
 ## <a id="ref-privacy-111"></a>Anonymity references
 
-### <a id="ref-privacy-112"></a>Articles
+### <a id="ref-privacy-112"></a><a id="articles-6"></a>Articles
 
 * [Opting Out Like A Boss - The OSINT Way (Part 1) - learnallthethings.net](https://www.learnallthethings.net/blog/2018/1/23/opting-out-like-a-boss-the-osint-way)
 

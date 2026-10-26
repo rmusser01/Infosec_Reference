@@ -438,7 +438,7 @@
 
 ### <a id="ref-reverse-17"></a><a id="hre" name="hre"></a>Hardware Reverse Engineering
 
-* See 'Embedded Devices & Hardware Hacking'
+* See [Embedded Devices & Hardware Hacking](Embedded.md).
 
 ### <a id="ref-reverse-18"></a><a id="net" name="net"></a>.NET Related
 

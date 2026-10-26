@@ -9,10 +9,7 @@
   - [ARM](#ref-training-5)
   - [Basic Security](#ref-training-6)
   - [Cloud](#ref-training-7)
-    - [AWS](#ref-training-8)
     - [Azure](#ref-training-9)
-    - [GCP](#ref-training-10)
-  - [Computer Science](#ref-training-11)
   - [Containers](#ref-training-12)
   - [Cryptography](#ref-training-13)
   - [Data Science](#ref-training-14)
@@ -104,15 +101,18 @@
 
 ### <a id="ref-training-7"></a><a id="cloud" name="cloud"></a>Cloud
 
-#### <a id="ref-training-8"></a><a id="aws" name="aws"></a>AWS
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-training-8"></a><a id="aws"></a>
 
 #### <a id="ref-training-9"></a>Azure
 
 * [So you want to learn Azure Security? - Michael Howard(2020)](https://michaelhowardsecure.blog/2020/02/14/so-you-want-to-learn-azure-security/)
 
-#### <a id="ref-training-10"></a>GCP
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-training-10"></a><a id="gcp"></a>
 
-### <a id="ref-training-11"></a><a id="cs" name="cs"></a>Computer Science
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-training-11"></a><a id="computer-science"></a><a id="cs"></a>
 
 ### <a id="ref-training-12"></a><a id="containers" name="containers"></a>Containers
 

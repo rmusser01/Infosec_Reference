@@ -43,7 +43,6 @@
 - [Phishing Frameworks:](#ref-phish-39)
   - [All-in-Ones](#ref-phish-40)
   - [Built for 2FA](#ref-phish-41)
-  - [One-Off](#ref-phish-42)
   - [Social Media](#ref-phish-43)
   - [Specific Purpose](#ref-phish-44)
   - [Templates](#ref-phish-45)
@@ -58,7 +57,6 @@
   - [PDF](#ref-phish-54)
   - [.SettingContent-ms](#ref-phish-55)
   - [Symbolic Link(Sylk) Files](#ref-phish-56)
-  - [UNC](#ref-phish-57)
 - [Tools](#ref-phish-58)
   - [Cloning](#ref-phish-59)
   - [Defense](#ref-phish-60)
@@ -367,7 +365,7 @@
         * HTML Applications (HTAs) are full-fledged applications. These applications are trusted and display only the menus, icons, toolbars, and title information that the Web developer creates. In short, HTAs pack all the power of Windows Internet Explorerâ€”its object model, performance, rendering power, protocol support, and channelâ€“download technologyâ€”without enforcing the strict security model and user interface of the browser. HTAs can be created using the HTML and Dynamic HTML (DHTML) that you already know.
     * [Learn About Scripting for HTML Applications (HTAs) - technet.ms](https://technet.microsoft.com/en-us/scriptcenter/dd742317.aspx)
 * [Introduction to HTML Applications (HTAs) - docs.ms(2013)](https://web.archive.org/web/20200711161356/https://docs.microsoft.com/en-us/previous-versions//ms536496(v=vs.85))
-* [HTML Applications Reference - docs.ms(2013)]()
+* HTML Applications Reference - docs.ms(2013) (URL not recorded)
 * **Articles/Blogposts/Writeups**
     * [Extreme Makeover: Wrap Your Scripts Up in a GUI Interface - technet.ms](https://technet.microsoft.com/en-us/library/ee692768.aspx)
 
@@ -488,7 +486,8 @@
 * [modlishka](https://github.com/drk1wi/Modlishka)
     * Modlishka is a powerful and flexible HTTP reverse proxy. It implements an entirely new and interesting approach of handling browser-based HTTP traffic flow, which allows to transparently proxy multi-domain destination traffic, both TLS and non-TLS, over a single domain, without a requirement of installing any additional certificate on the client. What does this exactly mean? In short, it simply has a lot of potential, that can be used in many use case scenarios...
 
-### <a id="ref-phish-42"></a>One-Off
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-phish-42"></a><a id="one-off"></a>
 
 ### <a id="ref-phish-43"></a><a id="sm" name="sm"></a>Social Media
 
@@ -672,12 +671,8 @@
 * [Abusing XLM Macros in SYLK Files - Patrick Wardle(2019)](https://objective-see.com/blog/blog_0x50.html)
 * [Phishing: .SLK Excel - @spottheplanet](https://ired.team/offensive-security/initial-access/phishing-with-ms-office/phishing-.slk-excel)
 
-### <a id="ref-phish-57"></a><a id="uncp" name="uncp"></a>UNC
-
-* **Articles/Blogposts/Writeups**
-* **Tools**
-
-------------------
+<!-- Resource-free topic retained in docs/maintenance-backlog.md. -->
+<a id="ref-phish-57"></a><a id="unc"></a><a id="uncp"></a>
 
 ## <a id="ref-phish-58"></a><a id="tools" name="tools"></a>Tools
 

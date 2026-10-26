@@ -7,16 +7,13 @@
   - [Dev Environment](#ref-appsec-3)
   - [Bugs](#ref-appsec-4)
 - [Secure Development Patterns/Practices/Resources](#ref-appsec-5)
-  - [Application Logging & Monitoring](#ref-appsec-6)
   - [AppSec Stuff](#ref-appsec-7)
   - [Code-Repo Related](#ref-appsec-8)
   - [Code Review](#ref-appsec-9)
   - [Cryptography](#ref-appsec-10)
   - [Design Patterns](#ref-appsec-11)
-  - [Documentation](#ref-appsec-12)
   - [Methodology](#ref-appsec-13)
   - [Metrics/Measurements](#ref-appsec-14)
-  - [Password Storage/Hashing](#ref-appsec-15)
   - [Secrets Management](#ref-appsec-16)
   - [Secure Coding Documents](#ref-appsec-17)
   - [Secure/Software/Systems Development Life Cycle(SDLC/SDL)](#ref-appsec-18)
@@ -128,7 +125,8 @@
             * [Part 2](https://medium.com/starting-up-security/who-fixes-that-bug-f17d48443e21)
     * **Talks/Presentations/Videos**
 
-### <a id="ref-appsec-6"></a><a id="logmon" name="logmon"></a>Application Logging & Monitoring
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-appsec-6"></a><a id="application-logging--monitoring"></a><a id="logmon"></a>
 
 ### <a id="ref-appsec-7"></a><a id="appsec" name="appsec"></a>AppSec Stuff
 
@@ -257,7 +255,8 @@
     * [The Death Star Design Pattern](https://kkovacs.eu/the-death-star-design-pattern)
     * [Loop Patterns](https://users.cs.duke.edu/~ola/patterns/plopd/loops.html#loop-and-a-half)
 
-### <a id="ref-appsec-12"></a>Documentation
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-appsec-12"></a><a id="documentation"></a>
 
 ### <a id="ref-appsec-13"></a>Methodology
 
@@ -269,7 +268,8 @@
 * [OWASP Security Assurance Maturity Model (SAMM)](https://owasp.org/www-project-samm/)
     * Our mission is to provide an effective and measurable way for all types of organizations to analyze and improve their software security posture. We want to raise awareness and educate organizations on how to design, develop, and deploy secure software through our self-assessment model. SAMM supports the complete software lifecycle and is technology and process agnostic. We built SAMM to be evolutive and risk-driven in nature, as there is no single recipe that works for all organizations.
 
-### <a id="ref-appsec-15"></a>Password Storage/Hashing
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-appsec-15"></a><a id="password-storagehashing"></a>
 
 ### <a id="ref-appsec-16"></a>Secrets Management
 
@@ -1040,7 +1040,7 @@
 * **Projects**
     * [Build Your Own Text Editor - viewsourcecode.org/snaptoken](https://viewsourcecode.org/snaptoken/kilo/index.html)
 * **Other**
-    * [Stroustrup C++ 'interview']()https://www-users.cs.york.ac.uk/susan/joke/cpp.htm
+    * [Stroustrup C++ 'interview'](<https://www-users.cs.york.ac.uk/susan/joke/cpp.htm>)
     * [Creators admit Unix, C hoax](https://www-users.cs.york.ac.uk/susan/joke/c.htm)
 
 ----------
@@ -1261,7 +1261,7 @@ $err = $ErrorSource + " reports: " + $ErrorMessage
 
 * **101**
     * [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
-    * [Python For Beginners]()
+    * Python For Beginners (URL not recorded)
         * Welcome! Are you completely new to programming? If not then we presume you will be looking for information about why and how to get started with Python. Fortunately an experienced programmer in any programming language (whatever it may be) can pick up Python very quickly. It's also easy for beginners to use and learn, so jump in!
 * **Documentation/Reference**
     * [Python Developer's Guide](http://docs.python.org/devguide/)

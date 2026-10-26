@@ -142,7 +142,7 @@
     * **All-in-One**
         * [Maltego](https://www.paterva.com/web6/products/maltego.php)
             * Description: What you use to tie everything together.
-        * [Oryon C Portable]()
+        * Oryon C Portable (URL not recorded)
             * Oryon C Portable is a web browser designed to assist researchers in conducting Open Source Intelligence investigations. Oryon comes with dozens of pre-installed tools and a select set of links cataloged by category – including those that can be found in the OI Shared Resources.
         * [OSINT Mantra](http://www.getmantra.com/hackery/osint.html)
         * [Recon-ng](https://bitbucket.org/LaNMaSteR53/recon-ng)

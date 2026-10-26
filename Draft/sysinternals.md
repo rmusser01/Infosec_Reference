@@ -4,10 +4,7 @@
 <!-- nav:toc:start -->
 - [General OS Agnostic Internals](#ref-internals-1)
   - [Building an OS](#ref-internals-2)
-  - [Boot Process](#ref-internals-3)
-  - [File Systems](#ref-internals-4)
   - [Memory](#ref-internals-5)
-  - [Processes](#ref-internals-6)
   - [Unsorted Stuff](#ref-internals-7)
 - [Linux Internals](#ref-internals-8)
   - [Linux General](#ref-internals-9)
@@ -47,7 +44,6 @@
   - [AutoStart Locations](#ref-internals-43)
   - [Background Intelligent Transfer Service(BITS)](#ref-internals-44)
   - [Boot Process](#ref-internals-45)
-  - [(User-Mode)Callbacks](#ref-internals-46)
   - [Common Log File System](#ref-internals-47)
   - [(Distributed) Component Object Model](#ref-internals-48)
   - [Credentials](#ref-internals-49)
@@ -115,7 +111,6 @@
   - [Security Descriptor Definition Language](#ref-internals-111)
   - [Security Support Providers](#ref-internals-112)
   - [Services](#ref-internals-113)
-    - [101](#ref-internals-114)
     - [Info](#ref-internals-115)
     - [Service Accounts](#ref-internals-116)
   - [Server Message Block(SMB)](#ref-internals-117)
@@ -149,16 +144,19 @@
 * [The little book about OS development](https://littleosbook.github.io/)
 * [How to Make a Computer Operating System in C++](https://github.com/SamyPesse/How-to-Make-a-Computer-Operating-System)
 
-### <a id="ref-internals-3"></a>Boot Process
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-internals-3"></a>
 
-### <a id="ref-internals-4"></a>File Systems
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-internals-4"></a><a id="file-systems"></a>
 
 ### <a id="ref-internals-5"></a>Memory
 
 * Paging
     * [Introduction to Paging - Philipp Oppermann](https://os.phil-opp.com/paging-introduction/)
 
-### <a id="ref-internals-6"></a>Processes
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-internals-6"></a>
 
 ### <a id="ref-internals-7"></a>Unsorted Stuff
 
@@ -272,7 +270,7 @@
 * [The OOM killer may be called even when there is still plenty of memory available - bl0g.krunch.be](http://bl0rg.krunch.be/oom-frag.html)
 * [How to Configure the Linux Out-of-Memory Killer - Robert Chase](https://www.oracle.com/technical-resources/articles/it-infrastructure/dev-oom-killer.html)
 
-### <a id="ref-internals-21"></a><a id="lproc" name="lproc"></a>Processes
+### <a id="ref-internals-21"></a><a id="processes-1"></a><a id="lproc" name="lproc"></a>Processes
 
 * **101**
 * **Info**
@@ -471,7 +469,7 @@
     * [Best Practices When Using BITS - docs.ms](https://docs.microsoft.com/en-us/windows/win32/bits/best-practices-when-using-bits)
     * [Calling into BITS from .NET and C# using Reference DLLs - docs.ms](https://docs.microsoft.com/en-us/windows/win32/bits/bits-dot-net)
 
-### <a id="ref-internals-45"></a><a id="wboot" name="wboot"></a>Boot Process
+### <a id="ref-internals-45"></a><a id="boot-process-2"></a><a id="wboot" name="wboot"></a>Boot Process
 
 * **101**
     * [BCDEdit /dbgsettings - msdn](https://msdn.microsoft.com/en-us/library/windows/hardware/ff542187(v=vs.85).aspx)
@@ -479,7 +477,8 @@
     * [Technical Overview of Windows UEFI Startup Process](http://news.saferbytes.it/analisi/2013/10/windows-uefi-startup-a-technical-overview/)
     * [In-depth dive into the security features of the Intel/Windows platform secure boot process - Igor Bogdanov(2021)](https://igor-blue.github.io/2021/02/04/secure-boot.html)
 
-### <a id="ref-internals-46"></a><a id="wcall" name="wcall"></a>(User-Mode)Callbacks
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-internals-46"></a><a id="user-modecallbacks"></a><a id="wcall"></a>
 
 ### <a id="ref-internals-47"></a><a id="wclfs" name="wclfs"></a>Common Log File System
 
@@ -831,7 +830,7 @@
 * **101**
     * [NT LAN Manager - Wikipedia](https://en.wikipedia.org/wiki/NT_LAN_Manager)
     * [Microsoft NTLM - docs.ms](https://docs.microsoft.com/en-us/windows/win32/secauthn/microsoft-ntlm)
-    * [Microsoft NTLM - msdn]()
+    * Microsoft NTLM - msdn (URL not recorded)
     * [The NTLM Authentication Protocol and Security Support Provider - davenport.sourceforge.net](http://davenport.sourceforge.net/ntlm.html)
 * **Info**
     * [NTLM Explained - Crowdstrike](https://www.crowdstrike.com/cybersecurity-101/ntlm-windows-new-technology-lan-manager/)
@@ -1085,7 +1084,8 @@
 
 ### <a id="ref-internals-113"></a><a id="wservice" name="wservice"></a>Services
 
-#### <a id="ref-internals-114"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-internals-114"></a>
 
 #### <a id="ref-internals-115"></a>Info
 
@@ -1228,7 +1228,7 @@
 
 ## <a id="ref-internals-131"></a><a id="wkern" name="wkern"></a>Kernel(general)
 
-### <a id="ref-internals-132"></a>101
+### <a id="ref-internals-132"></a><a id="101-5"></a>101
 
 * [Introduction to Windows Kernel Security](http://blog.cmpxchg8b.com/2013/05/introduction-to-windows-kernel-security.html)
 

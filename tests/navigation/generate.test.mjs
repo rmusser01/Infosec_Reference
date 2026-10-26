@@ -63,6 +63,38 @@ test("generated search routes preserve reserved filename characters as path data
     rmSync(root, { recursive: true, force: true });
   }
 });
+test("child pages can have generated ToCs without becoming top-level topics", () => {
+  const root = fixture();
+  try {
+    writeFileSync(
+      join(root, "Draft/child.md"),
+      "# Child\n<!-- nav:toc:start -->\n<!-- nav:toc:end -->\n## Existing subject\nAn existing explanation.\n",
+    );
+    const path = join(root, "navigation/topics.json"),
+      manifest = JSON.parse(readFileSync(path));
+    manifest.tocPages.push("Draft/child.md");
+    writeFileSync(path, JSON.stringify(manifest));
+    assert.deepEqual(generate(root).diagnostics, []);
+    assert(
+      readFileSync(join(root, "Draft/child.md"), "utf8").includes(
+        "[Existing subject](#existing-subject)",
+      ),
+    );
+    assert(
+      !readFileSync(join(root, "Draft/_sidebar.md"), "utf8").includes(
+        "child.md",
+      ),
+    );
+    assert.equal(generate(root, { check: true }).changedPaths.length, 0);
+    manifest.tocPages.push("Draft/missing.md");
+    writeFileSync(path, JSON.stringify(manifest));
+    assert(
+      generate(root).diagnostics.some((d) => d.code === "invalid-toc-page"),
+    );
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
 test("generates document-order ToCs and sorted subjects; repeated runs are identical and preserve surrounding bytes", () => {
   const root = fixture();
   try {

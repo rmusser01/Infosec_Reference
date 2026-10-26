@@ -10,22 +10,17 @@
 - [Nintendo](#ref-games-6)
   - [Nintendo Gameboy/Pocket/Color/Advance](#ref-games-7)
   - [Nintendo 3DS](#ref-games-8)
-  - [Nintendo Entertainment System](#ref-games-9)
-  - [Nintendo Super Nintendo](#ref-games-10)
   - [Nintendo64](#ref-games-11)
   - [Nintendo Gamecube](#ref-games-12)
   - [Nintendo Wii](#ref-games-13)
   - [Nintendo WiiU](#ref-games-14)
-  - [Articles/Writeups](#ref-games-15)
+    - [Articles/Writeups](#ref-games-15)
   - [Nintendo Switch](#ref-games-16)
 - [Sony](#ref-games-17)
   - [PSP / PS Vita](#ref-games-18)
   - [Sony PlayStation 1](#ref-games-19)
-  - [Sony PlayStation 2](#ref-games-20)
-  - [Sony PlayStation 3](#ref-games-21)
   - [Sony PlayStation 4](#ref-games-22)
 - [PC Games](#ref-games-23)
-  - [101](#ref-games-24)
   - [Articles/Blogposts/Writeups](#ref-games-25)
   - [Educational](#ref-games-26)
   - [Writeups](#ref-games-27)
@@ -124,15 +119,11 @@
     * [Luma3DS](https://github.com/AuroraWright/Luma3DS)
         * Luma3DS is a program to patch the system software of (New) Nintendo 3DS handheld consoles "on the fly", adding features (such as per-game language settings and debugging capabilities for developers) and removing restrictions enforced by Nintendo (such as the region lock). It also allows you to run unauthorized ("homebrew") content by removing signature checks.
 
-### <a id="ref-games-9"></a>Nintendo Entertainment System
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-games-9"></a><a id="nintendo-entertainment-system"></a>
 
-* **Articles/Writeups**
-* **Emulators**
-
-### <a id="ref-games-10"></a>Nintendo Super Nintendo
-
-* **Articles/Writeups**
-* **Emulators**
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-games-10"></a><a id="nintendo-super-nintendo"></a>
 
 ### <a id="ref-games-11"></a>Nintendo64
 
@@ -168,7 +159,7 @@
 * **Firmware**
 * **Homebrew**
 
-### <a id="ref-games-15"></a>Articles/Writeups
+#### <a id="ref-games-15"></a>Articles/Writeups
 
  * [Anatomy of a Wii U: The End...?](https://hexkyz.blogspot.com/2018/01/anatomy-of-wii-u-end.html)
 
@@ -213,9 +204,11 @@
 
 * [Nocash PSX Emulator Specifications](http://problemkaputt.de/psx-spx.htm)
 
-### <a id="ref-games-20"></a>Sony PlayStation 2
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-games-20"></a><a id="sony-playstation-2"></a>
 
-### <a id="ref-games-21"></a>Sony PlayStation 3
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-games-21"></a><a id="sony-playstation-3"></a>
 
 ### <a id="ref-games-22"></a>Sony PlayStation 4
 
@@ -229,7 +222,8 @@
 
 ## <a id="ref-games-23"></a>PC Games
 
-### <a id="ref-games-24"></a>101
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-games-24"></a><a id="101-1"></a>
 
 ### <a id="ref-games-25"></a>Articles/Blogposts/Writeups
 

@@ -2,10 +2,6 @@
 
 ## Table of Contents
 <!-- nav:toc:start -->
-- [macOS Post-Exploitation General Notes](#ref-macpost-1)
-- [F](#f)
-- [AppleScript, Objective-C & Swift](#ref-macpost-2)
-- [F](#f-1)
 - [Post-Exploitation OS X](#ref-macpost-3)
   - [Educational](#ref-macpost-4)
   - [Execution](#ref-macpost-5)
@@ -30,33 +26,18 @@
   - [Code Signing](#ref-macpost-24)
   - [Endpoint Security Framework](#ref-macpost-25)
   - [GateKeeper](#ref-macpost-26)
-  - [Mach-O Binaries](#ref-macpost-27)
   - [System Integrity Protection](#ref-macpost-28)
-  - [Transparency, Consent, and Control](#ref-macpost-29)
   - [XProtect](#ref-macpost-30)
-- [macOS Code Injection](#ref-macpost-31)
-  - [101](#ref-macpost-32)
-  - [General Information](#ref-macpost-33)
-  - [Articles/Blogposts/Writeups](#ref-macpost-34)
-  - [Techniques](#ref-macpost-35)
 - [Unsorted resources](#ref-macpost-unsorted)
 <!-- nav:toc:end -->
 
-## <a id="ref-macpost-1"></a><a id="general" name="general"></a>macOS Post-Exploitation General Notes
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-macpost-1"></a><a id="f"></a><a id="macos-post-exploitation-general-notes"></a><a id="general"></a>
 
-- **F**
-    - 
------------------------------------------------------------------------------------------------------------------------------------
 
------------------------------------------------------------------------------------------------------------------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-macpost-2"></a><a id="f-1"></a><a id="applescript-objective-c--swift"></a><a id="maclangs"></a>
 
-## <a id="ref-macpost-2"></a><a id="maclangs" name="maclangs"></a>AppleScript, Objective-C & Swift
-
-- **F**
-    - 
------------------------------------------------------------------------------------------------------------------------------------
-
------------------------------------------------------------------------------------------------------------------------------------
 
 ## <a id="ref-macpost-3"></a><a id="osxpost" name="osxpost"></a>Post-Exploitation OS X
 
@@ -646,9 +627,8 @@ Swift 3, macOS - StackOverflow](https://stackoverflow.com/questions/39691106/pro
     * 'macOS includes a technology called Gatekeeper, that's designed to ensure that only trusted software runs on your Mac.'
 * [Safely open apps on your Mac - support.apple](https://support.apple.com/en-us/HT202491)
 
-### <a id="ref-macpost-27"></a><a id="macho" name="macho"></a>Mach-O Binaries
-
-* **101**
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-macpost-27"></a><a id="mach-o-binaries"></a><a id="macho"></a>
 
 ### <a id="ref-macpost-28"></a><a id="osxsip" name="osxsip"></a>System Integrity Protection
 
@@ -656,9 +636,8 @@ Swift 3, macOS - StackOverflow](https://stackoverflow.com/questions/39691106/pro
 * [About System Integrity Protection on your Mac - support.apple.com](https://support.apple.com/en-us/HT204899)
 * [Configuring System Integrity Protection - developer.apple](https://developer.apple.com/library/archive/documentation/Security/Conceptual/System_Integrity_Protection_Guide/ConfiguringSystemIntegrityProtection/ConfiguringSystemIntegrityProtection.html#//apple_ref/doc/uid/TP40016462-CH5-SW1)
 
-### <a id="ref-macpost-29"></a><a id="osxtcc" name="osxtcc"></a>Transparency, Consent, and Control
-
-* []()
+<!-- Resource-free topic retained in docs/maintenance-backlog.md. -->
+<a id="ref-macpost-29"></a><a id="transparency-consent-and-control"></a><a id="osxtcc"></a>
 
 ### <a id="ref-macpost-30"></a><a id="osxxprotect" name="osxxprotect"></a>XProtect
 
@@ -668,17 +647,8 @@ Swift 3, macOS - StackOverflow](https://stackoverflow.com/questions/39691106/pro
 
 -----------------------------------------------------------------------------------------------------------------------------------
 
-## <a id="ref-macpost-31"></a><a id="mict" name="mict"></a>macOS Code Injection
-
-### <a id="ref-macpost-32"></a>101
-
-### <a id="ref-macpost-33"></a>General Information
-
-### <a id="ref-macpost-34"></a>Articles/Blogposts/Writeups
-
-### <a id="ref-macpost-35"></a>Techniques
-
------------------------------------------------------------------------------------------------------------------------------------
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-macpost-31"></a><a id="macos-code-injection"></a><a id="mict"></a><a id="ref-macpost-32"></a><a id="101-1"></a><a id="ref-macpost-33"></a><a id="general-information"></a><a id="ref-macpost-34"></a><a id="articlesblogpostswriteups-1"></a><a id="ref-macpost-35"></a><a id="techniques"></a>
 
 ## <a id="ref-macpost-unsorted"></a><a id="begin-unsorted-section" name="begin-unsorted-section"></a>Unsorted resources
 
@@ -804,7 +774,6 @@ Talks
 		* **Articles/Blogposts/Writeups**
 		* **Tools**
 	Defense Evasion
-		* []()
 		* [Exploiting XPC in AntiVirus - Csaba Fitz(NullCon2021)](https://www.slideshare.net/CsabaFitzl/exploiting-xpc-in-antivirus)
 			* In this talk we will publish our research we conducted on 28 different AntiVirus products on macOS through 2020. Our focus was to assess the XPC services these products expose and if they presented any security vulnerabilities. We will talk about the typical issues, and demonstrate plenty of vulnerabilities, which typically led to full control of the given product or local privilege escalation on the system. At the end we will give advice to developers how to write secure XPC services.
 		* [Mojave’s security “hardening” 

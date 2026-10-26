@@ -42,11 +42,8 @@
   - [Java](#ref-remath-38)
 - [Type and Data Structure Recovering](#ref-remath-39)
 - [Miscellaneous Tools](#ref-remath-40)
-  - [Binary Manipulation Frameworks](#ref-remath-41)
   - [Deobfuscation/Unpacking](#ref-remath-42)
-  - [Cryptography](#ref-remath-43)
   - [Visualization](#ref-remath-44)
-  - [Anti-Debugging / Anti-Reversing](#ref-remath-45)
 - [Acknowledgements](#ref-remath-46)
 <!-- nav:toc:end -->
 
@@ -534,13 +531,15 @@
 
 ## <a id="ref-remath-40"></a>Miscellaneous Tools
 
-### <a id="ref-remath-41"></a>Binary Manipulation Frameworks
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-remath-41"></a><a id="binary-manipulation-frameworks"></a>
 
 ### <a id="ref-remath-42"></a>Deobfuscation/Unpacking
 
 * PROTECTiON iD: Detects most common application protectors. This tool is closed source. - http://pid.gamecopyworld.com/
 
-### <a id="ref-remath-43"></a>Cryptography
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-remath-43"></a><a id="cryptography"></a>
 
 ### <a id="ref-remath-44"></a>Visualization
 
@@ -550,7 +549,8 @@
 * GraphDice: A System for Exploring Multivariate Social Networks - http://www.aviz.fr/graphdice/
 * Gephi: Open Source Graph Visualization Platform - https://gephi.org/
 
-### <a id="ref-remath-45"></a>Anti-Debugging / Anti-Reversing
+<!-- Legacy destinations for resource-free topics recorded in docs/maintenance-backlog.md. -->
+<a id="ref-remath-45"></a><a id="anti-debugging--anti-reversing"></a>
 
 ## <a id="ref-remath-46"></a>Acknowledgements
 

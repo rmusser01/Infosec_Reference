@@ -174,16 +174,20 @@ export function generate(root, { check = false } = {}) {
   );
   for (const path of manifest.tocPages) {
     const page = manifest.pages.find((p) => p.path === path);
-    if (!page) {
-      fail("unlisted-toc-page", path, "");
+    let source;
+    try {
+      if (typeof path !== "string" || !path.endsWith(".md"))
+        throw Error("ToC pages must be Markdown paths");
+      source = read(path);
+    } catch (error) {
+      fail("invalid-toc-page", path, error.message);
       continue;
     }
-    const source = read(path),
-      doc = docs.get(path) ?? parseDocument(source, path);
+    const doc = docs.get(path) ?? parseDocument(source, path);
     const headings = doc.headings.filter(
       (h) =>
         h.depth > 1 &&
-        h.depth <= (page.tocDepth ?? 3) &&
+        h.depth <= (page?.tocDepth ?? 3) &&
         h.text !== "Table of Contents",
     );
     const body = headings

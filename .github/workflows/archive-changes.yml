@@ -1,11 +1,5 @@
 name: Archive added reference links
 on:
-  pull_request:
-    branches: [main, master]
-    paths: ["README.md", "Draft/**"]
-  push:
-    branches: [main, master]
-    paths: ["README.md", "Draft/**"]
   workflow_dispatch:
     inputs:
       base:
@@ -15,7 +9,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: archive-links-${{ github.event.pull_request.number || github.ref }}
+  group: archive-links-${{ github.ref }}
   cancel-in-progress: false
 jobs:
   wayback:
@@ -33,8 +27,8 @@ jobs:
       - run: npm ci --ignore-scripts
       - name: Submit up to ten added URLs and retain confirmed Wayback receipts
         env:
-          ARCHIVE_BASE: ${{ github.event.pull_request.base.sha || github.event.before || inputs.base }}
-          ARCHIVE_HEAD: ${{ github.event.pull_request.head.sha || github.sha }}
+          ARCHIVE_BASE: ${{ inputs.base }}
+          ARCHIVE_HEAD: ${{ github.sha }}
         run: |
           node --input-type=module - <<'JS'
           import {spawnSync} from 'node:child_process';

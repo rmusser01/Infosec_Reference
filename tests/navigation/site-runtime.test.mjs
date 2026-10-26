@@ -5,6 +5,8 @@ import { readFileSync, existsSync, statSync } from "node:fs";
 import { resolve, extname } from "node:path";
 import { JSDOM, VirtualConsole } from "jsdom";
 const pause = (ms) => new Promise((r) => setTimeout(r, ms));
+const reservedChapter =
+  "/docs/ATT&CK-Stuff/Pre-ATT&CK/# Establish & Maintain Infrastructure.md";
 async function until(check, timeout = 20000) {
   const start = Date.now();
   while (Date.now() - start < timeout) {
@@ -56,6 +58,10 @@ for (const [storageQuota, incompleteCache] of [
             bytes =
               bytes.toString() +
               '\n\n## <a id="OldCase"></a> Case-sensitive Anchor Probe\n\nCaseSensitiveAnchorProbe\n';
+          if (route === reservedChapter)
+            bytes =
+              bytes.toString() +
+              "\n\n## Reserved filename search probe\n\nReservedFilenameSearchProbe\n";
           res.writeHead(200, { "Content-Type": mime });
           res.end(bytes);
         } catch {
@@ -123,6 +129,9 @@ for (const [storageQuota, incompleteCache] of [
           ["Introduction to DFIR", "DFIR"],
           ["Funnel of Fidelity", "L-SM-TH"],
           ["CaseSensitiveAnchorProbe", "DFIR"],
+          ...(storageQuota === 5_000_000
+            ? [["ReservedFilenameSearchProbe", "Establish"]]
+            : []),
         ]) {
           input.value = query;
           input.dispatchEvent(new dom.window.Event("input", { bubbles: true }));
@@ -161,6 +170,18 @@ for (const [storageQuota, incompleteCache] of [
                 ),
             );
           }
+        }
+        if (storageQuota === 5_000_000) {
+          assert(requests.includes(reservedChapter));
+          const reservedResult = [
+            ...dom.window.document.querySelectorAll(".matching-post a"),
+          ].find((a) => a.href.includes("Establish"));
+          dom.window.location.hash = new URL(reservedResult.href).hash;
+          await until(() =>
+            dom.window.document
+              .querySelector(".markdown-section")
+              ?.textContent.includes("ReservedFilenameSearchProbe"),
+          );
         }
         input.value = "CaseSensitiveAnchorProbe";
         input.dispatchEvent(new dom.window.Event("input", { bubbles: true }));

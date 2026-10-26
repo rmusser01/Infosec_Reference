@@ -34,6 +34,12 @@ User amendment, 2026-10-25: continue locally; retain article text/images and ori
 - External availability failures produce a review report, not resource deletion.
 - WARC captures are immutable, indexed, and independently verifiable; a successful HTTP response alone does not establish capture completeness.
 
+## Current handoff — 2026-10-26
+
+The navigation rollout, Docsify compatibility fixes, offline enforcement and resource inventories are implemented; `docs/implementation-status.md` records the completed page groups and verification. The bounded archive adapter and local pilot are implemented, with durability, broader calibration, full collection capture and later non-text extraction still outstanding. Historical checkboxes below describe the original plan rather than current progress.
+
+The current priority is a PR against `master` for the completed improvements. Link capture batches and Internet Archive submissions are paused. The added-link workflow is manual-only so PR/push events cannot submit URLs; revisit archiving after PR review. No deployment or merge is authorized by this handoff.
+
 ## Review Focus
 
 1. Encoded filenames, spaces, ampersands, mixed-case fragments, and same-repository absolute GitHub URLs must resolve accurately (Task 1).

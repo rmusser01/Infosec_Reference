@@ -2,6 +2,8 @@
 
 Preserve web articles and article figures in WARC. Queue PDFs, videos, slides, audio and other non-text resources for later acquisition/extraction. Saving a video landing page does not preserve its media. No bulk media acquisition, OCR, transcription or extracted-content indexing has run.
 
+**Current status — 2026-10-26:** Local capture batches and Internet Archive submissions are paused while the navigation improvements are reviewed. The added-link workflow is manual-only; opening/updating a PR or pushing a resource change does not submit URLs. Existing archives and receipts remain available. The commands below document later resumption, not a PR prerequisite.
+
 ## Commands
 
 - `npm run resources:generate`: regenerate the shared inventory and separate non-text views.
@@ -23,7 +25,7 @@ npm run archive:changes -- --base main --execute --limit 3
 npm run archive:changes -- --resume --execute --wayback-only
 ```
 
-This checkout currently names its base branch `master`, so substitute `--base master` for the `main` examples until renamed. The workflow accepts both branch names.
+This checkout currently names its base branch `master`, so substitute `--base master` for the `main` examples until renamed. Manual dispatch accepts a comparison ref through its `base` input.
 
 Use `--base HEAD` (the default) for uncommitted changes, or `--base BASE_SHA --head HEAD_SHA` for committed changes. Repeat the same comparison to process more links, at most ten per batch. Verified existing local captures are rehashed and reused without claiming durable preservation. Partial/failed attempts remain visible and are not automatically retried; use `archive:pilot -- --url URL` after reviewing the reason. Non-text resources keep their processing queues; they do not become local article captures.
 
@@ -31,7 +33,7 @@ Save Page Now is a separate public submission of the source URL, not an upload o
 
 Commit `navigation/archive-captures.jsonl`, `navigation/wayback-captures.jsonl` and the generated [archive catalog](archives/README.md) with the link changes. Readers can use the catalog from the repository README when an original disappears. Local objects remain in ignored `archive-data/`; the catalog does not expose local filesystem links.
 
-The added-link workflow runs on PRs against `main` or `master`, resource changes pushed to those branches, or manual dispatch. It anonymously submits up to ten new URLs and publishes a job summary plus downloadable receipts. It uses read-only repository permissions, no secrets, and no `pull_request_target` execution. CI does not retain local WARCs or commit results automatically: copy the artifact's metadata/catalog back into the PR, preserving any local records, or run the local command before committing. Artifacts expire after 30 days; commit confirmed references for lasting discovery. More than ten links require further local batches. Pending CI jobs require committing their receipts and resuming locally. Workflow execution on GitHub has not yet been tested from this local branch.
+The added-link workflow is available only through manual dispatch. When explicitly run, it anonymously submits up to ten new URLs and publishes a job summary plus downloadable receipts. It uses read-only repository permissions, no secrets, and no `pull_request_target` execution. CI does not retain local WARCs or commit results automatically: copy the artifact's metadata/catalog back into the PR, preserving any local records, or run the local command before committing. Artifacts expire after 30 days; commit confirmed references for lasting discovery. More than ten links require further local batches. Pending CI jobs require committing their receipts and resuming locally. The archive workflow has not been executed on GitHub; it remains paused for this PR.
 
 ## Capture runtime and bounds
 
@@ -62,7 +64,7 @@ Keep availability, capture, integrity/content, replay, local storage and Wayback
 
 No durable destination is configured. `--primary PATH --backup PATH` verifies exclusive immutable copies and retrieval checksums, producing `copyState: verified` and `storageState: copied`; this does not qualify for preservation skips. Relative object paths preserve the CDXJ/archive layout. Durable eligibility additionally requires operator-configured `durableDestination` with `primary`, `backup` and `confirmedDurable: true`; this filesystem adapter requires distinct mounted filesystems. It verifies retrieved bytes, not physical backup independence or backup operations. Remote object-store uploads are not implemented. Never designate temporary test directories as durable.
 
-Local change batches may continue now. They report `storageState: local`, not durable preservation. Before a full collection run, choose persistent destinations, verify recovery/replay from stored objects, and size storage with a representative sample. Maintain an independent second copy or recoverable backup. Expiring CI artifacts are insufficient. See `docs/archive-execution.md` for results and unresolved review cases.
+Local change batches are paused. When resumed, they report `storageState: local`, not durable preservation. Before a full collection run, choose persistent destinations, verify recovery/replay from stored objects, and size storage with a representative sample. Maintain an independent second copy or recoverable backup. Expiring CI artifacts are insufficient. See `docs/archive-execution.md` for results and unresolved review cases.
 
 ## Tests and references
 

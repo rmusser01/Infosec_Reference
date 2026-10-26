@@ -10,6 +10,7 @@ import {
 } from "node:fs";
 import { join } from "node:path";
 import { generate } from "../../tools/navigation/generate.mjs";
+import { runInNewContext } from "node:vm";
 function fixture() {
   const root = mkdtempSync(join(process.cwd(), ".nav-test-"));
   for (const dir of ["Draft", "navigation"]) mkdirSync(join(root, dir));
@@ -44,6 +45,24 @@ function fixture() {
   );
   return root;
 }
+test("generated search routes preserve reserved filename characters as path data", () => {
+  const root = fixture();
+  try {
+    writeFileSync(join(root, "Draft/# notes & details.md"), "# Notes\n");
+    assert.deepEqual(generate(root).diagnostics, []);
+    const window = { $docsify: { search: {} } };
+    runInNewContext(readFileSync(join(root, "Draft/search-paths.js"), "utf8"), {
+      window,
+    });
+    const path = window.$docsify.search.paths.find((p) => p.includes("notes"));
+    const request = new URL(path + ".md", "http://localhost");
+    assert.equal(request.hash, "");
+    assert.equal(decodeURIComponent(request.pathname), "/# notes & details.md");
+    assert.equal(generate(root, { check: true }).changedPaths.length, 0);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
 test("generates document-order ToCs and sorted subjects; repeated runs are identical and preserve surrounding bytes", () => {
   const root = fixture();
   try {

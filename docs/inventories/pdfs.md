@@ -1424,7 +1424,7 @@
 - **Insurance Data Security Model Law**
   - URL: <http://www.naic.org/documents/committees_ex_cybersecurity_tf_exposure_mod_draft_clean.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `README.md:102`; references: 1.
+  - Source: `README.md:104`; references: 1.
   - ID: `ec6e799d0075b1571f17`.
 - **STP MiTM Attack and L2 Mitigation Techniques on the Cisco Catalyst 6500 **
   - URL: <http://www.ndm.net/ips/pdf/cisco/Catalyst-6500/white_paper_c11_605972.pdf>
@@ -5529,7 +5529,7 @@
 - **PCI-DSS V3.2.1**
   - URL: <https://www.pcisecuritystandards.org/documents/PCI_DSS_v3-2-1.pdf>
   - Candidate type: pdf; status: unverified / pending.
-  - Source: `README.md:104`; references: 3.
+  - Source: `README.md:106`; references: 3.
   - ID: `840280be908de0f73b26`.
 - **PCI SSC Cloud  Computing  Guidelines - 4/2018**
   - URL: <https://www.pcisecuritystandards.org/pdfs/PCI_SSC_Cloud_Guidelines_v3.pdf>

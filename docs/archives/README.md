@@ -15,5 +15,6 @@ Only confirmed snapshots appear below; pending/failed jobs remain in `navigation
 - <http://2014.video.sector.ca/video/110383258> — [Wayback snapshot 20261025234519](<https://web.archive.org/web/20261025234519/http://2014.video.sector.ca/video/110383258>)
 - <http://2014.video.sector.ca/video/110388398> — [Wayback snapshot 20261025234736](<https://web.archive.org/web/20261025234736/http://2014.video.sector.ca/video/110388398>)
 - <http://2015.video.sector.ca/video/144175700> — [Wayback snapshot 20261025234900](<https://web.archive.org/web/20261025234900/http://2015.video.sector.ca/video/144175700>)
+- <http://64drive.retroactive.be/> — [Wayback snapshot 20261026000213](<https://web.archive.org/web/20261026000213/http://64drive.retroactive.be/>)
 - <https://danluu.com/sounds-easy/> — [Wayback snapshot 20261025215216](<https://web.archive.org/web/20261025215216/https://danluu.com/sounds-easy/>)
 - <https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Rants%26Writeups/Writeups/Lab_for_exploit_dev-basic.md> — [Wayback snapshot 20261025220110](<https://web.archive.org/web/20261025220110/https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/Rants%26Writeups/Writeups/Lab_for_exploit_dev-basic.md>)

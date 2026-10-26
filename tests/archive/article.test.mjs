@@ -3,6 +3,31 @@ import assert from "node:assert/strict";
 import { JSDOM } from "jsdom";
 import { readArticle } from "../../tools/archive/article.mjs";
 
+test("domain-sale landings cannot masquerade as the original article", () => {
+  for (const [title, state] of [
+    ["909research.com is for sale | HugeDomains", "needs-review"],
+    ["Example.org - This domain is for sale", "needs-review"],
+    ["Research into domain sale scams", "article"],
+  ]) {
+    const dom = new JSDOM(
+      `<title>${title}</title><main><h1>909research.com</h1><p>${"Buy now. This domain is for sale. ".repeat(12)}</p><img src="/sales.png"></main>`,
+      {
+        url: "https://www.hugedomains.com/domain_profile.cfm?d=909research.com",
+      },
+    );
+    try {
+      const result = readArticle(dom.window.document);
+      assert.equal(result.state, state);
+      if (state === "needs-review") {
+        assert.equal(result.text, "");
+        assert.deepEqual(result.images, []);
+      }
+    } finally {
+      dom.window.close();
+    }
+  }
+});
+
 test("article scope includes inline figures, excludes navigation/ads/media, and retains embed queues", () => {
   const dom = new JSDOM(
     `<title>A useful article</title><nav><img src="/logo.png"></nav>

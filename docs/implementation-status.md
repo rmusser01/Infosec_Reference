@@ -1,6 +1,6 @@
 # Implementation status
 
-Branch: `codex/generated-navigation` (desktop continuation; original export: `improve-generated-navigation`). Source base: `af8b68e2194e695c542eb76fba762d2f0a19a0dc`. Repository changes remain local. Thirteen authorized public references have confirmed Internet Archive snapshots; no Git push or site deployment has occurred.
+Branch: `codex/generated-navigation` (desktop continuation; original export: `improve-generated-navigation`). Source base: `af8b68e2194e695c542eb76fba762d2f0a19a0dc`. Repository changes remain local. Fourteen authorized public references have confirmed Internet Archive snapshots; no Git push or site deployment has occurred.
 
 ## Implemented
 
@@ -26,7 +26,7 @@ Automated tests exercise the actual checked-in Docsify compiler and application 
 
 - Navigation rollout, shared heading rendering, and favicon repair are complete locally. Production deployment/cache behavior remains unverified.
 - Choose durable archive and backup destinations, verify recovery/replay from them, and calibrate the bounded engine against more layouts/figures before scaling. Remote object-store uploading and full-crawl scheduling remain unimplemented. The policy now enforces the local pilot's supported bounds; it does not establish storage durability.
-- Continue bounded new-link batches locally under the clarified retention policy; durable storage is not required to make local progress. Ten public references have compact local archives, and thirteen URLs have confirmed Wayback snapshots. Broad external validation and full collection preservation have not run. Strict content checks leave the Eli reference partial for manual review. Commit CI receipts/catalog to make future snapshots discoverable; the workflow does not write to the repository.
+- Continue bounded new-link batches locally under the clarified retention policy; durable storage is not required to make local progress. Ten public references have compact local archives, and fourteen URLs have confirmed Wayback snapshots. Broad external validation and full collection preservation have not run. Strict content checks leave the Eli reference partial for manual review. Commit CI receipts/catalog to make future snapshots discoverable; the workflow does not write to the repository.
 - Separately scoped later processing: PDF extraction/OCR, video captions/transcription, other extractors, and extracted-content search indexing. These are not prerequisites for completing navigation.
 
 ## Engineering decisions
@@ -257,3 +257,12 @@ Batch `85b00c7e-2a41-4bfa-8df8-ca7ceb7c12b1` processed three conference-video la
 Checks confirm deferred outcomes, no retained payload/temporary bundles/proxy state, catalog consistency, zero navigation errors and a clean diff check. No source code changed, so implementation tests and review were not repeated.
 
 Latest totals: three complete local captures, seven partial, eight deferred, 21,720 not attempted; zero durably preserved. Ten local archives exist, fourteen URLs have observed HTML responses, and thirteen URLs have confirmed Wayback snapshots. No repository push, hosted CI execution or full collection run occurred; durable backup remains unconfigured.
+
+
+## Next local legacy-site batch — 2026-10-25
+
+Batch `d00c1324-1805-428f-9823-809dc1a8f196` processed the next three webpage candidates. The 64bit.ca article yielded no usable local content and its Internet Archive save timed out. 64Drive has a confirmed Wayback snapshot but needs local layout review. The Sysmon URL redirects to a domain-sale page; its Internet Archive job failed during a host-overload pause. All three latest local outcomes remain deferred, with no new article payload archive. About **145 KB** of receipts/provenance remains; the catalog now has fourteen confirmed snapshots.
+
+A regression reproduced and corrected acceptance of the parked page as an article. Explicit domain-sale titles now require review with empty text/images; the live recheck confirms the corrected result. Wrongly captured sale-page payloads were rehashed and discarded, preserving rejection/hash receipts and the replacement capture ID. Original references remain unchanged. All **109/109** tests pass, focused independent review found no actionable issue, and navigation/format/diff checks pass. Detailed outcomes and verification limits are in `docs/archive-execution.md`.
+
+Latest totals: three complete local captures, seven partial, eleven deferred, 21,717 not attempted; zero durably preserved. Ten valid local archives remain, sixteen URLs have observed HTML responses, and fourteen URLs have confirmed Wayback snapshots. Two saves failed and four older DNS submissions remain deferred. No repository push or full collection run occurred; durable backup remains unconfigured.

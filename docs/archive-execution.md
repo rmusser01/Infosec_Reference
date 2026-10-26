@@ -176,3 +176,22 @@ Each URL was submitted once, then confirmed by polling its recorded Internet Arc
 Verification asserts all three local outcomes remain deferred with no payload objects, and confirms temporary bundles/replay/proxy state are absent. The generated catalog matches the latest receipts; navigation remains 102 pages / 29,165 links / zero errors with unchanged warnings, and diff checks pass. Source code is unchanged, so the full test suite, synthetic Docker fixtures and source review were not repeated. No new local article archive is claimed.
 
 Current inventory accounting: three complete local captures, seven partial, eight deferred and 21,720 not attempted; zero durably preserved. Fourteen HTML observations route to web capture and 19,043 remain type-confirmation jobs, alongside unchanged non-text queues. Thirteen Wayback snapshots are confirmed; four older DNS failures remain deferred. No Git push, hosted CI execution, video download, full collection run or durable-backup qualification occurred.
+
+
+## Next local batch — 2026-10-25, legacy sites and parked domain
+
+Batch `d00c1324-1805-428f-9823-809dc1a8f196` processed the next three unattempted webpage candidates in inventory order. No new local article archive is claimed. About **145 KB** of receipts, provenance and summaries remains, with no retained payload objects, WACZ bundles, replay archives or proxy state in this batch.
+
+| Original reference | Local result | Internet Archive result |
+|---|---|---|
+| `http://64bit.ca/code/bash-timestomping-linux-files/` | Deferred: no usable article or HTTP response evidence | Failed: target gateway timeout (504) |
+| `http://64drive.retroactive.be/` | Deferred: available HTML needs article-layout review | Confirmed `20261026000213` |
+| `http://909research.com/sysmon-the-best-free-windows-monitoring-tool-you-arent-using/` | Deferred: redirects to a HugeDomains domain-sale page | Failed: host crawling paused for overload (429) |
+
+Each source URL was submitted once; existing job IDs were polled without duplicate POSTs. Read-only job diagnostics confirmed the two failure reasons. The 64Drive snapshot is in the reader catalog, bringing the total to fourteen. The UTC snapshot date is October 26; this checkpoint uses the local America/Los_Angeles date. No failed job is presented as a saved snapshot.
+
+The live Sysmon attempt exposed a false article classification: the parked page had a normal main element and substantial sales text. A regression reproduced the incorrect article result before the fix. Article extraction now defers titles explicitly stating that a domain is for sale, leaving text/images empty; an ordinary research title about domain-sale scams remains accepted. This shared extractor runs during discovery and capture. A fresh live capture with the corrected extractor returns deferred/needs-review with zero objects. The erroneous sale-page objects were rehashed before removal; their original receipts/hashes and an explicit rejection with the replacement capture ID remain. Append-only history retains the initial incorrect outcome; the latest receipt supersedes it. The original Sysmon article was not recovered.
+
+Verification: **109/109** tests pass, including the regression and wrapped Python policy cases. A focused independent review of the extractor/test diff and callers found no actionable issue; it did not repeat live captures. The actual public recheck verifies the final behavior. All three latest local receipts are deferred with zero objects, temporary payload absence is asserted, and the catalog matches confirmed receipts. Navigation remains 102 pages / 29,165 links / zero errors with unchanged warnings. Formatting and diff checks pass. Synthetic Docker fixtures and the unchanged WARC verifier corruption suite were not repeated. Title matching remains heuristic and may defer legitimate sale-related titles for review.
+
+Current inventory accounting: three complete local captures, seven partial, eleven deferred and 21,717 not attempted; zero durably preserved. Ten valid local payload archives remain. Sixteen HTML observations route to web capture and 19,041 remain type-confirmation jobs, alongside unchanged non-text queues. Fourteen Wayback snapshots are confirmed; four older DNS deferrals and two failed saves remain explicit. No Git push, hosted CI execution, media acquisition, full collection run or durable-backup qualification occurred.

@@ -2,6 +2,19 @@
 export function readArticle(document = globalThis.document) {
   const title = document.title;
   if (
+    /\b(?:[a-z0-9-]+\.)+[a-z]{2,}\s+is for sale\b|\bthis domain is for sale\b/i.test(
+      title,
+    )
+  )
+    return {
+      state: "needs-review",
+      title,
+      images: [],
+      embeds: [],
+      links: [],
+      text: "",
+    };
+  if (
     /just a moment|access denied|verify.{0,20}human|captcha|sign in|log in/i.test(
       title,
     ) ||

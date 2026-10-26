@@ -1,43 +1,45 @@
-### Mitre Pre-ATT&CK Mappings
+# ATT&CK mappings
+
+## Mitre Pre-ATT&CK Mappings
 ---------------------------
 * MITRE Pre-ATT&CK Framework ([MITRE ATT&CK Framework](https://attack.mitre.org/pre-attack/index.php/Main_Page) for attackers.
 * This is a copy of the mappings with links to techniques and background information.
-- [Adversary Opsec]()
-- [Build Capabilities]()
-- [Organization Informational Gathering]()
-- [Organizational Weakness]()
-- [People Information Gathering]()
-- [People Weakness Identification]()
-- [Persona Development]()
-- [Priority Definition Planning]()
-- [Priority Definition Directive]()
-- [Stage Capabilities]()
-- [Target Selection]()
-- [Technical Information Gathering]()
-- [Test Capabilities]()
+- [Adversary Opsec](Pre-ATT%26CK/Adversary_OPSEC.md)
+- [Build Capabilities](Pre-ATT%26CK/Build_Capabilities.md)
+- [Organization Informational Gathering](Pre-ATT%26CK/Organizationa_%20Information_Gathering.md)
+- [Organizational Weakness](Pre-ATT%26CK/Organizational_Weakness.md)
+- [People Information Gathering](Pre-ATT%26CK/People_Information_Gathering.md)
+- [People Weakness Identification](Pre-ATT%26CK/People_Weakness_Identification.md)
+- [Persona Development](Pre-ATT%26CK/Persona_Development.md)
+- [Priority Definition Planning](Pre-ATT%26CK/Priority_Definition%20_lanning.md)
+- [Priority Definition Directive](Pre-ATT%26CK/Priority_Definition_Directive.md)
+- [Stage Capabilities](Pre-ATT%26CK/Stage_Capabilities.md)
+- [Target Selection](Pre-ATT%26CK/Target_Selection.md)
+- [Technical Information Gathering](Pre-ATT%26CK/Technical_Information_Gathering.md)
+- [Test Capabilities](Pre-ATT%26CK/Test_Capabilities.md)
 
 
 
 
 
 
-### MITRE ATT&CK Framework Mappings 
+## MITRE ATT&CK Framework Mappings 
 ---------------------------
 * MITRE ATT&CK Framework ([MITRE ATT&CK Framework](https://attack.mitre.org/wiki/Main_Page)) for attackers.
 * This is a copy of the mappings with links to techniques and background information rather than APT reports.
 	* If you want to test your defenses against a lot of these things:
 		* [Atomic Red Team - Small and highly portable detection tests mapped to the Mitre ATT&CK Framework.](https://github.com/redcanaryco/atomic-red-team)
-* [Collection](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Collection.md)
-* [Command and Control](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Command_and_Control.md)
-* [Credential Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Command_and_Control.md)
-* [Defense Evasion](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Defense_Evasion.md)
-* [Discovery](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Discovery.md)
-* [Execution](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Execution.md)
-* [Exfiltration](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Exfiltration.md)
-* [Initial Access](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Initial_Access.md)
-* [Lateral Movement](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Lateral%20Movement.md)
-* [Persistence](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Persistence.md)
-* [Privilege Escalation](https://github.com/rmusser01/Infosec_Reference/blob/master/Draft/ATT%26CK-Stuff/Privilege_Escalation.md)
+* [Collection](ATT%26CK/Collection.md)
+* [Command and Control](ATT%26CK/Command_and_Control.md)
+* [Credential Access](ATT%26CK/Credential_Access.md)
+* [Defense Evasion](ATT%26CK/Defense_Evasion.md)
+* [Discovery](ATT%26CK/Discovery.md)
+* [Execution](ATT%26CK/Execution.md)
+* [Exfiltration](ATT%26CK/Exfiltration.md)
+* [Initial Access](ATT%26CK/Initial_Access.md)
+* [Lateral Movement](ATT%26CK/Lateral%20Movement.md)
+* [Persistence](ATT%26CK/Persistence.md)
+* [Privilege Escalation](ATT%26CK/Privilege_Escalation.md)
 * If you want to test your defenses against a lot of these things:
 	* [Atomic Red Team - Small and highly portable detection tests mapped to the Mitre ATT&CK Framework.](https://github.com/redcanaryco/atomic-red-team)
 	* [Caldera](https://github.com/mitre/caldera)

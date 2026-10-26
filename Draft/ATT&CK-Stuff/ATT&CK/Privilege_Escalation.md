@@ -336,7 +336,8 @@ Search Order Hijacking
 
 
 ------------------------------- 
-## Plist Modification
+## <a id="plist-modification-1"></a>Plist Modification
+* [Plist Modification - ATT&CK](https://attack.mitre.org/wiki/Technique/T1150)
 * [Plist Modification - ATT&CK](https://attack.mitre.org/wiki/Technique/T1150)
 	* Property list (plist) files contain all of the information that macOS and OS X uses to configure applications and services. These files are UT-8 encoded and formatted like XML documents via a series of keys surrounded by < >. They detail when programs should execute, file paths to the executables, program arguments, required OS permissions, and many others. plists are located in certain locations depending on their purpose such as /Library/Preferences (which execute with elevated privileges) and ~/Library/Preferences (which execute with a user's privileges). Adversaries can modify these plist files to point to their own code, can use them to execute their code in the context of another user, bypass whitelisting procedures, or even use them as a persistence mechanismSofacy Komplex Trojan.
 
@@ -390,7 +391,8 @@ There are multiple approaches to injecting code into a live process. Windows imp
 
 
 -------------------------------
-## SID-History Injection
+## <a id="sid-history-injection-1"></a>SID-History Injection
+* [SID-History Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1178)
 * [SID-History Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1178)
 	* The Windows security identifier (SID) is a unique value that identifies a user or group account. SIDs are used by Windows security in both security descriptors and access tokens. An account can hold additional SIDs in the SID-History Active Directory attribute, allowing inter-operable account migration between domains (e.g., all values in SID-History are included in access tokens).
 	* Adversaries may use this mechanism for privilege escalation. With Domain Administrator (or equivalent) rights, harvested or well-known SID values may be inserted into SID-History to enable impersonation of arbitrary users/groups such as Enterprise Administrators. This manipulation may result in elevated access to local resources and/or access to otherwise inaccessible domains via lateral movement techniques such as Remote Services, Windows Admin Shares, or Windows Remote Management. 
@@ -398,6 +400,12 @@ There are multiple approaches to injecting code into a live process. Windows imp
 
 
 
+
+
+#### <a id="windows-14"></a>Windows SID-History references
+* [Security Identifiers - msdn.ms](https://msdn.microsoft.com/library/windows/desktop/aa379571.aspx)
+* [SID-History attribute - msdn.ms](https://msdn.microsoft.com/library/ms679833.aspx)
+* [Well-known security identifiers in Windows operating systems](https://support.microsoft.com/en-us/help/243330/well-known-security-identifiers-in-windows-operating-systems)
 
 
 -------------------------------
@@ -411,10 +419,7 @@ There are multiple approaches to injecting code into a live process. Windows imp
 	* Enables an administrator to create, delete, query, change, run, and end scheduled tasks on a local or remote computer. Running Schtasks.exe without arguments displays the status and next run time for each registered task.
 * [At - MSDN](https://technet.microsoft.com/en-us/library/bb490866.aspx)
 	* Schedules commands and programs to run on a computer at a specified time and date. You can use at only when the Schedule service is running. Used without parameters, at lists scheduled commands.
-* [How To Use the AT Com------------------------------- 
-## Plist Modification
-[Plist Modification - ATT&CK](https://attack.mitre.org/wiki/Technique/T1150)
-* Property list (plist) files contain all of the information that macOS and OS X uses to configure applications and services. These files are UT-8 encoded and formatted like XML documents via a series of keys surrounded by < >. They detail when programs should execute, file paths to the executables, program arguments, required OS permissions, and many others. plists are located in certain locations depending on their purpose such as /Library/Preferences (which execute with elevated privileges) and ~/Library/Preferences (which execute with a user's privileges). Adversaries can modify these plist files to point to their own code, can use them to execute their code in the context of another user, bypass whitelisting procedures, or even use them as a persistence mechanism.mand to Schedule Tasks - MS](https://support.microsoft.com/en-us/help/313565/how-to-use-the-at-command-to-schedule-tasks)
+* [How To Use the AT Command to Schedule Tasks - MS](https://support.microsoft.com/en-us/help/313565/how-to-use-the-at-command-to-schedule-tasks)
 
 
 
@@ -446,23 +451,6 @@ There are multiple approaches to injecting code into a live process. Windows imp
 * [Exploiting SUID Executables](https://www.pentestpartners.com/security-blog/exploiting-suid-executables/)
 
 #### OS X
-
-
-
-
-## SID-History Injection
-* [SID-History Injection - ATT&CK](https://attack.mitre.org/wiki/Technique/T1178)
-	* The Windows security identifier (SID) is a unique value that identifies a user or group account. SIDs are used by Windows security in both security descriptors and access tokens.1 An account can hold additional SIDs in the SID-History Active Directory attribute2, allowing inter-operable account migration between domains (e.g., all values in SID-History are included in access tokens).
-	* Adversaries may use this mechanism for privilege escalation. With Domain Administrator (or equivalent) rights, harvested or well-known SID values3 may be inserted into SID-History to enable impersonation of arbitrary users/groups such as Enterprise Administrators. This manipulation may result in elevated access to local resources and/or access to otherwise inaccessible domains via lateral movement techniques such as Remote Services, Windows Admin Shares, or Windows Remote Management. 
-
-#### Windows
-* [Security Identifiers - msdn.ms](https://msdn.microsoft.com/library/windows/desktop/aa379571.aspx)
-* [SID-History attribute - msdn.ms](https://msdn.microsoft.com/library/ms679833.aspx)
-* [Well-known security identifiers in Windows operating systems](https://support.microsoft.com/en-us/help/243330/well-known-security-identifiers-in-windows-operating-systems)
-
-
-
-
 
 
 
@@ -520,7 +508,7 @@ also grant an adversary increased privilege to specific systems or access to res
 	* The overlap of credentials and permissions across a network of systems is of concern because the adversary may be able to pivot across accounts and systems to reach a high level of access (i.e., domain or enterprise administrator) to bypass access controls set within the enterprise.
 * `dscl . list /Users`
 
-#### Windows
+#### <a id="windows-15"></a>Windows accounts
 * [Attractive Accounts for Credential Theft - docs ms](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/attractive-accounts-for-credential-theft)
 
 

@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "format": "warc.gz",
+  "imageScope": "article-only",
+  "nonTextHandling": "processing-queues",
+  "publicNetworkOnly": true,
+  "authenticatedCapture": false,
+  "browserWorkers": 1,
+  "perHostConcurrency": 1,
+  "pageBudgetSeconds": 120,
+  "pilotStorageCeilingBytes": 1073741824,
+  "durableDestination": null,
+  "captureRuntime": "browsertrix-1.15.0-filtered-proxy",
+  "publishCaptures": false
+}

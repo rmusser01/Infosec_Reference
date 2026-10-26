@@ -1,0 +1,34 @@
+{
+  "name": "infosec-reference-navigation",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
+  },
+  "scripts": {
+    "test": "node --test tests/navigation/*.test.mjs tests/archive/*.test.mjs",
+    "nav:audit": "node tools/navigation/cli.mjs audit",
+    "nav:generate": "node tools/navigation/cli.mjs generate",
+    "nav:check": "node tools/navigation/cli.mjs check",
+    "resources:generate": "node tools/navigation/resources.mjs",
+    "external:check": "node tools/navigation/external-links.mjs",
+    "archive:plan": "node tools/archive/plan.mjs",
+    "archive:pilot": "node tools/archive/capture.mjs",
+    "archive:verify": "node tools/archive/recheck.mjs",
+    "archive:changes": "node tools/archive/changes.mjs",
+    "archive:test-runtime": "node tests/archive/runtime.mjs"
+  },
+  "dependencies": {
+    "github-slugger": "2.0.0",
+    "ipaddr.js": "2.5.0",
+    "mdast-util-to-string": "4.0.0",
+    "parse5": "8.0.1",
+    "remark-gfm": "4.0.1",
+    "remark-parse": "11.0.0",
+    "unified": "11.0.5"
+  },
+  "devDependencies": {
+    "jsdom": "30.1.3",
+    "prettier": "3.6.2"
+  }
+}

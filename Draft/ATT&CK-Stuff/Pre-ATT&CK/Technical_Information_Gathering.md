@@ -1,16 +1,28 @@
 # Technical Information Gathering
 
 ## Table of Contents
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+<!-- nav:toc:start -->
+  - [Acquire OSINT data sets and information](#acquire-osint-data-sets-and-information)
+  - [Conduct Active Scanning](#conduct-active-scanning)
+  - [Conduct passive scanning](#conduct-passive-scanning)
+  - [Conduct social engineering](#conduct-social-engineering)
+  - [Determine 3rd party infrastructure services](#determine-3rd-party-infrastructure-services)
+  - [Determine domain and IP address space](#determine-domain-and-ip-address-space)
+  - [Determine external network trust dependencies](#determine-external-network-trust-dependencies)
+  - [Determine firmware version](#determine-firmware-version)
+  - [Discover target logon/email address format](#discover-target-logonemail-address-format)
+  - [Enumerate client configurations](#enumerate-client-configurations)
+  - [Enumerate externally facing software applications technologies, languages, and dependencies](#enumerate-externally-facing-software-applications-technologies-languages-and-dependencies)
+  - [Identify job postings and needs/gaps](#identify-job-postings-and-needsgaps)
+  - [Identify security defensive capabilities](#identify-security-defensive-capabilities)
+  - [Identify supply chains](#identify-supply-chains)
+  - [Identify technology usage patterns](#identify-technology-usage-patterns)
+  - [Identify web defensive services](#identify-web-defensive-services)
+  - [Map network topology](#map-network-topology)
+  - [Mine technical blogs/forums](#mine-technical-blogsforums)
+  - [Obtain domain/IP registration information](#obtain-domainip-registration-information)
+  - [Spearphishing for Information](#spearphishing-for-information)
+<!-- nav:toc:end -->
 
 
  [Technical Information Gathering - Pre-ATT&CK](https://attack.mitre.org/pre-attack/index.php/Technical_Information_Gathering)

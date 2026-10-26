@@ -858,7 +858,6 @@ HW Implants
 	https://dev.to/rosesecurity/building-a-budget-red-team-implant-3i27
 	https://github.com/ventoy/Ventoy
 	* [Evil Logitech - erm I ment USB cable - LuemmelSec(2021)](https://luemmelsec.github.io/Building-An-Evil-USB-Cable/)
-	* []()
 
 
 Infra

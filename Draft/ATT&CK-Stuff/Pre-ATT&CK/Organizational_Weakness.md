@@ -2,21 +2,14 @@
 
 
 ## Table of Contents
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+<!-- nav:toc:start -->
+  - [Analyze business processes](#analyze-business-processes)
+  - [Analyze organizational skillsets and deficiencies](#analyze-organizational-skillsets-and-deficiencies)
+  - [Assess opportunities created by business deals](#assess-opportunities-created-by-business-deals)
+  - [Assess security posture of physical locations](#assess-security-posture-of-physical-locations)
+  - [Assess vulnerability of 3rd party vendors](#assess-vulnerability-of-3rd-party-vendors)
+  - [Analyze presence of outsourced capabilities](#analyze-presence-of-outsourced-capabilities)
+<!-- nav:toc:end -->
 
 [Organizational Weakness Identification - Pre-ATT&CK](https://attack.mitre.org/pre-attack/index.php/Organizational_Weakness_Identification)
 * Organizational weakness identification consists of identifying and analyzing weaknesses and vulnerabilities from the intelligence gathering phases which can be leveraged to gain access to target or intermediate target organizations of interest. 

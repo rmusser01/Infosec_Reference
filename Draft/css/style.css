@@ -35,7 +35,7 @@ div#app:empty::before {
   position: fixed;
   right: 0px;
   top: 0px;
-  transition: width 0.2s, opacity 0.4s;
+  transition: opacity 0.4s;
   width: 0%;
   z-index: 999999;
 }
@@ -592,7 +592,7 @@ section.cover .cover-main > p:last-child a {
 
 section.cover .cover-main > p:last-child a:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(66, 185, 131, 0.3);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 section.cover .cover-main > p:last-child a:last-child {
   background-color: var(--theme-color, #42b983);

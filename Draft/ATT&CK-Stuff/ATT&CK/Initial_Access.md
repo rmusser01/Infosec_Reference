@@ -18,7 +18,7 @@
 
 -------------------------------
 ## Hardware Additions
-* [Drive-by-Compromise - ATT&CK](https://attack.mitre.org/wiki/Technique/T1200)
+* [Hardware Additions - ATT&CK](https://attack.mitre.org/wiki/Technique/T1200)
 	* Computer accessories, computers or networking hardware may be introduced into a system as a vector to gain execution. While public references of usage by APT groups are scarce, many penetration testers leverage hardware additions for initial access. Commercial and open source products are leveraged with capabilities such as passive network tapping, man-in-the middle encryption breaking, keystroke injection, kernel memory reading via DMA, adding new wireless access to an existing network, and others. 
 
 
@@ -39,7 +39,7 @@
 
 -------------------------------
 ## Spearphishing via Service
-* [Drive-by-Compromise - ATT&CK](https://attack.mitre.org/wiki/Technique/T1194)
+* [Spearphishing via Service - ATT&CK](https://attack.mitre.org/wiki/Technique/T1194)
 	* Spearphishing via service is a specific variant of spearphishing. It is different from other forms of spearphishing in that it employs the use of third party services rather than directly via enterprise email channels.
 	* All forms of spearphishing are electronically delivered social engineering targeted at a specific individual, company, or industry. In this scenario, adversaries send messages through various social media services, personal webmail, and other non-enterprise controlled services. These services are more likely to have a less-strict security policy than an enterprise. As with most kinds of spearphishing, the goal is to generate rapport with the target or get the target's interest in some way. Adversaries will create fake social media accounts and message employees for potential job opportunities. Doing so allows a plausible reason for asking about services, policies, and software that's running in an environment. The adversary can then send malicious links or attachments through these services.
 	* A common example is to build rapport with a target via social media, then send content to a personal webmail service that the target uses on their work computer. This allows an adversary to bypass some email restrictions on the work account, and the target is more likely to open the file since it's something they were expecting. If the payload doesn't work as expected, the adversary can continue normal communications and troubleshoot with the target on how to get it working. 

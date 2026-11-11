@@ -21,6 +21,7 @@
 * [Archive of security conference videos](http://wipkip.nikhef.nl/events/)
 * [Trooper Conference - 2015](https://www.youtube.com/channel/UCPY5aUREHmbDO4PtR6AYLfQ)
 * [Derbycon 2017 Videos](https://www.irongeek.com/i.php?page=videos/derbycon7/mainlist)
+* [Cyber Talks - Unofficial searchable index of ~52k security conference talks by event, topic and speaker](https://cybertalks.org/)
 
 
 

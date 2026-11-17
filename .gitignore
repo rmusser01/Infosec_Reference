@@ -36,3 +36,13 @@ Icon
 .Trashes
 
 Draft/Draft/To Do/add cull -2.txt
+# Local navigation tooling and capture outputs
+node_modules/
+.superpowers/
+archive-data/
+*.warc
+*.warc.gz
+*.wacz
+.nav-test-*/
+external-report.json
+archive-plan.json

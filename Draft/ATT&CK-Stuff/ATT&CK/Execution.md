@@ -366,7 +366,7 @@
 
 
 -------------------------------
-## Signed Binary Proxy Execution
+## <a id="signed-binary-proxy-execution-1"></a>Signed Script Proxy Execution
 * [Signed Script Proxy Execution - ATT&CK](https://attack.mitre.org/wiki/Technique/T1216)
 	* Scripts signed with trusted certificates can be used to proxy execution of malicious files. This behavior may bypass signature validation restrictions and application whitelisting solutions that do not account for use of these scripts.
 	* PubPrn.vbs is signed by Microsoft and can be used to proxy execution from a remote site.

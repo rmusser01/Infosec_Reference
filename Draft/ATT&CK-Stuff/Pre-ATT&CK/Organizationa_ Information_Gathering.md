@@ -1,20 +1,18 @@
 # Organizational Information Gathering
 
 ## Table of Contents
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+<!-- nav:toc:start -->
+  - [Acquire OSINT data sets and information - Pre-ATT&CK](#acquire-osint-data-sets-and-information---pre-attck)
+  - [Conduct social engineering](#conduct-social-engineering)
+  - [Determine centralization of IT management](#determine-centralization-of-it-management)
+  - [Determine physical locations](#determine-physical-locations)
+  - [Dumpster dive](#dumpster-dive)
+  - [Identify business processes/tempo](#identify-business-processestempo)
+  - [Identify job postings and needs/gaps](#identify-job-postings-and-needsgaps)
+  - [Obtain templates/branding materials](#obtain-templatesbranding-materials)
+  - [Identify supply chains](#identify-supply-chains)
+  - [Determine 3rd party infrastructure services](#determine-3rd-party-infrastructure-services)
+<!-- nav:toc:end -->
 
 
 
@@ -24,7 +22,7 @@
 
 
 ---------------------------------------------------------
-### Acquire OSINT data sets and information - Pre-ATT&CK
+### <a id="acquire-osint-data-sets-and-information---pre-attck"></a>Acquire OSINT data sets and information - Pre-ATT&CK
 * [Acquire OSINT data sets and information - Pre-ATT&CK](https://attack.mitre.org/pre-attack/index.php/Technique/PRE-T1054)
 	* Data sets can be anything from Security Exchange Commission (SEC) filings to public phone numbers. Many datasets are now either publicly available for free or can be purchased from a variety of data vendors. Open source intelligence (OSINT) is intelligence gathered from publicly available sources. This can include both information gathered on-line as well as in the physical world.
 
@@ -51,7 +49,7 @@
 
 ---------------------------------------------------------
 ### Determine physical locations
-* [Determine physical locations - Pre-ATT&CK]()(https://attack.mitre.org/pre-attack/index.php/Technique/PRE-T1059)
+* [Determine physical locations - Pre-ATT&CK](https://attack.mitre.org/pre-attack/index.php/Technique/PRE-T1059)
 	* Physical locality information may be used by an adversary to shape social engineering attempts (language, culture, events, weather, etc.) or to plan for physical actions such as dumpster diving or attempting to access a facility.
 
 

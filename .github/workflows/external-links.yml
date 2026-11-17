@@ -1,0 +1,47 @@
+name: External reference availability sample
+on:
+  workflow_dispatch:
+    inputs:
+      offset:
+        description: First inventory row (zero-based)
+        default: '0'
+      limit:
+        description: Batch size (1 to 1000)
+        default: '100'
+  schedule:
+    - cron: '17 9 * * 0'
+permissions:
+  contents: read
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Validate a bounded batch
+        env:
+          REQUESTED_OFFSET: ${{ inputs.offset }}
+          REQUESTED_LIMIT: ${{ inputs.limit }}
+          EVENT_NAME: ${{ github.event_name }}
+        run: |
+          node --input-type=module - <<'JS'
+          import {spawnSync} from 'node:child_process';
+          import {readFileSync} from 'node:fs';
+          const count=readFileSync('docs/inventories/resource-inventory.jsonl','utf8').trim().split('\n').length;
+          const scheduled=process.env.EVENT_NAME==='schedule';
+          const limit=scheduled?1000:Number(process.env.REQUESTED_LIMIT||100);
+          const offset=scheduled?(Math.floor(Date.now()/604800000)%Math.ceil(count/1000))*1000:Number(process.env.REQUESTED_OFFSET||0);
+          const result=spawnSync(process.execPath,['tools/navigation/external-links.mjs','--offset',String(offset),'--limit',String(limit),'--output','external-report.json'],{stdio:'inherit'});
+          process.exit(result.status??1);
+          JS
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: external-availability-report
+          path: external-report.json
+          retention-days: 30
+          if-no-files-found: error

@@ -2,18 +2,24 @@
 
 
 ## Table of Contents
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+<!-- nav:toc:start -->
+  - [Acquire and/or use 3rd party infrastructure services](#acquire-andor-use-3rd-party-infrastructure-services)
+  - [Acquire and/or use 3rd party software services](#acquire-andor-use-3rd-party-software-services)
+  - [Acquire or compromise 3rd party signing certificates](#acquire-or-compromise-3rd-party-signing-certificates)
+  - [Buy domain name](#buy-domain-name)
+  - [Compromise 3rd party infrastructure to support delivery](#compromise-3rd-party-infrastructure-to-support-delivery)
+  - [Create backup infrastructure](#create-backup-infrastructure)
+  - [Domain registration hijacking](#domain-registration-hijacking)
+  - [Dynamic DNS](#dynamic-dns)
+  - [Install and configure hardware, network, and systems](#install-and-configure-hardware-network-and-systems)
+  - [Obfuscate infrastructure](#obfuscate-infrastructure)
+  - [Obtain booter/stressor subscription](#obtain-booterstressor-subscription)
+  - [Procure required equipment and software](#procure-required-equipment-and-software)
+  - [SSL certificate acquisition for domain](#ssl-certificate-acquisition-for-domain)
+  - [SSL certificate acquisition for trust breaking](#ssl-certificate-acquisition-for-trust-breaking)
+  - [Shadow DNS](#shadow-dns)
+  - [Use multiple DNS infrastructures](#use-multiple-dns-infrastructures)
+<!-- nav:toc:end -->
 
 
 

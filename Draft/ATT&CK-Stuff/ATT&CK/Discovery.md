@@ -9,7 +9,7 @@
 
 
 -------------------------------
-### Account Discovery
+## Account Discovery
 * [Account Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1087)
 	* Adversaries may attempt to get a listing of local system or domain accounts. 
 
@@ -36,7 +36,7 @@
 
 
 -------------------------------
-### Application Window Discovery
+## Application Window Discovery
 * [Application Window Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1010)
 	* Adversaries may attempt to get a listing of open application windows. Window listings could convey information about how the system is used or give context to information collected by a keylogger. In Mac, this can be done natively with a small AppleScript script.
 
@@ -66,7 +66,7 @@
 
 
 -------------------------------
-### File and Directory Discovery
+## File and Directory Discovery
 * [File and Directory Discovery - ATT&CK](https://attack.mitre.org/wiki/Technique/T1083)
 	* Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system. 
 
@@ -96,7 +96,7 @@
 
 
 
-### Network Service Scanning
+## Network Service Scanning
 -------------------------------
 * [Network Service Scanning - ATT&CK](https://attack.mitre.org/wiki/Technique/T1046)
 	* Adversaries may attempt to get a listing of services running on remote hosts, including those that may be vulnerable to remote software exploitation. Methods to acquire this information include port scans and vulnerability scans using tools that are brought onto a system.
@@ -458,7 +458,7 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 * MITRE
  * Examples of tools and commands that acquire this information include `"ping"` or `"net view"` using Net. 
 
-#### Windows
+<a id="windows-10"></a>
 * Check .hosts file for mappings ; C:\Windows\System32\Drivers\etc\hosts
 * [arp](https://technet.microsoft.com/en-us/library/cc940107.aspx)
 * [Port scan subnets with PSnmap for PowerShell](http://www.powershelladmin.com/wiki/Port_scan_subnets_with_PSnmap_for_PowerShell)
@@ -482,7 +482,7 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 * MITRE
 	* It's becoming more common to see macOS malware perform checks for LittleSnitch and KnockKnock software.
 
-#### Windows
+#### <a id="windows-11"></a>Windows: Security Software Discovery
 * MITRE
 	* Example commands that can be used to obtain security software information are netsh, `reg query` with Reg, `dir` with cmd, and Tasklist, but other indicators of discovery behavior may be more specific to the type of software or security system the adversary is looking for. 
 * [Use Powershell to quickly find installed Software](https://blogs.technet.microsoft.com/heyscriptingguy/2011/11/13/use-powershell-to-quickly-find-installed-software/)
@@ -518,7 +518,7 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 	* Live off the land for macOS. This program allows users to do Active Directory enumeration via macOS' JXA (JavaScript for Automation) code. This is the newest version of AppleScript, and thus has very poor documentation on the web.
 
 
-#### Windows
+#### <a id="windows-12"></a>Windows: System Information Discovery
 * MITRE
 	* Example commands and utilities that obtain this information include `ver`, `Systeminfo`, and `dir` within cmd for identifying information based on present files and directories. 
 * [Systeminfo - technet](https://technet.microsoft.com/en-us/library/bb491007.aspx)
@@ -549,7 +549,7 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 #### OS X
 * [systemsetup - SS64](https://ss64.com/osx/systemsetup.html)
 
-#### Windows
+#### <a id="windows-13"></a>Windows: System Network Configuration Discovery
 * [Netstat - technet](https://technet.microsoft.com/en-us/library/bb490947.aspx)
 	* Displays active TCP connections, ports on which the computer is listening, Ethernet statistics, the IP routing table, IPv4 statistics (for the IP, ICMP, TCP, and UDP protocols), and IPv6 statistics (for the IPv6, ICMPv6, TCP over IPv6, and UDP over IPv6 protocols). Used without parameters, netstat displays active TCP connections.
 * [Listing Windows Firewall Rules Using Microsoft PowerShell](http://carlwebster.com/listing-windows-firewall-rules-using-microsoft-powershell/)
@@ -583,7 +583,7 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 * `lsof -i`
 * [How to find the currently connected network service from the command line? - StackOverflow](https://apple.stackexchange.com/questions/191879/how-to-find-the-currently-connected-network-service-from-the-command-line)
 
-#### Windows
+#### <a id="windows-14"></a>Windows: System Network Connections Discovery
 * MITRE
 	* Utilities and commands that acquire this information include netstat, "net use," and "net session" with Net. 
 * [Netstat - technet](https://technet.microsoft.com/en-us/library/bb490947.aspx)
@@ -610,7 +610,7 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 * MITRE
 	* On Mac, the currently logged in user can be identified with ***users***,***w***, and ****who****. 
 
-##### Windows
+##### <a id="windows-15"></a>Windows: System Owner/User Discovery
 * MITRE
 	* Adversaries may attempt to identify the primary user, currently logged in user, set of users that commonly uses a system, or whether a user is actively using the system. They may do this, for example, by retrieving account usernames or by using Credential Dumping. The information may be collected in a number of different ways using other Discovery techniques, because user and username details are prevalent throughout a system and include running process ownership, file/directory ownership, session information, and system logs. 
 * [List All User Accounts on a Windows System via Command Line](https://superuser.com/questions/608931/list-all-user-accounts-on-a-windows-system-via-command-line)
@@ -630,7 +630,7 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 * Ubuntu/Debian-based - `services --status-all`
 
 #### OS X
-#### Windows
+#### <a id="windows-16"></a>Windows: System Service Discovery
 * [Net Commands On Windows Operating Systems - support ms](https://support.microsoft.com/en-us/help/556003)
 * [NET.exe - ss64](https://ss64.com/nt/net-service.html)
 * [SC - technet](https://technet.microsoft.com/en-us/library/bb490995.aspx)
@@ -650,7 +650,7 @@ get-WmiObject -list | where {$_.name -match “Printer”}
 
 #### OS X
 
-#### Windows
+#### <a id="windows-17"></a>Windows: System Time Discovery
 * [W32tm - technet](https://technet.microsoft.com/en-us/library/bb491016.aspx)
 	* A tool used to diagnose problems occurring with Windows Time
 * [W32tm](https://technet.microsoft.com/en-us/library/ff799054(v=ws.11).aspx)

@@ -1,19 +1,31 @@
 # Adversary OPSEC - Pre-ATT&CK
  
 ## Table of Contents
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+<!-- nav:toc:start -->
+  - [Acquire and/or use 3rd party infrastructure services](#acquire-andor-use-3rd-party-infrastructure-services)
+  - [Acquire and/or use 3rd party software services](#acquire-andor-use-3rd-party-software-services)
+  - [Acquire or compromise 3rd party signing certificates](#acquire-or-compromise-3rd-party-signing-certificates)
+  - [Anonymity services](#anonymity-services)
+  - [Common, high volume protocols and software](#common-high-volume-protocols-and-software)
+  - [Compromise 3rd party infrastructure to support delivery](#compromise-3rd-party-infrastructure-to-support-delivery)
+  - [DNSCalc](#dnscalc)
+  - [Data Hiding](#data-hiding)
+  - [Domain Generation Algorithms (DGA)](#domain-generation-algorithms-dga)
+  - [Dynamic DNS](#dynamic-dns)
+  - [Fast Flux DNS](#fast-flux-dns)
+  - [Host-based hiding techniques](#host-based-hiding-techniques)
+  - [Misattributable credentials](#misattributable-credentials)
+  - [Network-based hiding techniques](#network-based-hiding-techniques)
+  - [Non-traditional or less attributable payment options](#non-traditional-or-less-attributable-payment-options)
+  - [OS-vendor provided communication channels](#os-vendor-provided-communication-channels)
+  - [Obfuscate infrastructure](#obfuscate-infrastructure)
+  - [Obfuscate operational infrastructure](#obfuscate-operational-infrastructure)
+  - [Obfuscate or encrypt code](#obfuscate-or-encrypt-code)
+  - [Obfuscation or cryptography](#obfuscation-or-cryptography)
+  - [Private whois services](#private-whois-services)
+  - [Proxy/protocol relays](#proxyprotocol-relays)
+  - [Secure and protect infrastructure](#secure-and-protect-infrastructure)
+<!-- nav:toc:end -->
 
 
 

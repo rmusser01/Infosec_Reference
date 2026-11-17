@@ -1,18 +1,18 @@
 # Build Capabilities
 
 ## Table of Contents
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+<!-- nav:toc:start -->
+  - [Build and configure delivery systems](#build-and-configure-delivery-systems)
+  - [Build or acquire exploits](#build-or-acquire-exploits)
+  - [C2 protocol development](#c2-protocol-development)
+  - [Compromise 3rd party or closed-source vulnerability/exploit information](#compromise-3rd-party-or-closed-source-vulnerabilityexploit-information)
+  - [Create custom payloads](#create-custom-payloads)
+  - [Create infected removable media](#create-infected-removable-media)
+  - [Identify resources required to build capabilities](#identify-resources-required-to-build-capabilities)
+  - [Obtain/re-use payloads](#obtainre-use-payloads)
+  - [Post compromise tool development](#post-compromise-tool-development)
+  - [Remote access tool development](#remote-access-tool-development)
+<!-- nav:toc:end -->
 
 
 

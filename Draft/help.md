@@ -1,3 +1,10 @@
+# Author reference template
+
+This page is an authoring scaffold for new reference sections. Replace `%` with the subject being documented.
+
+Emoji Reference: [Emoji cheat sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
+
+```markdown
 Help/Reference
 
 
@@ -15,7 +22,6 @@ Tutorials involving %
 
 Writeups on %  
 
-Emoji Reference: [Emoji cheat sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet/)
 
 * **General**
 * **101**
@@ -23,3 +29,4 @@ Emoji Reference: [Emoji cheat sheet](https://www.webpagefx.com/tools/emoji-cheat
 * **General**
 * **Tools**
 * **Miscellaneous**
+```

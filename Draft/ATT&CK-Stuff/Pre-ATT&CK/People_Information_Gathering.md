@@ -1,15 +1,19 @@
 # People Information Gathering - Pre-ATT&CK
 
 ## Table of Contents
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+<!-- nav:toc:start -->
+  - [Acquire OSINT data sets and information](#acquire-osint-data-sets-and-information)
+  - [Aggregate individual's digital footprint](#aggregate-individuals-digital-footprint)
+  - [Conduct social engineering](#conduct-social-engineering)
+  - [Identify business relationships](#identify-business-relationships)
+  - [Identify groups/roles](#identify-groupsroles)
+  - [Identify job postings and needs/gaps](#identify-job-postings-and-needsgaps)
+  - [Identify people of interest](#identify-people-of-interest)
+  - [Identify personnel with an authority/privilege](#identify-personnel-with-an-authorityprivilege)
+  - [Identify sensitive personnel information](#identify-sensitive-personnel-information)
+  - [Identify supply chains](#identify-supply-chains)
+  - [Mine social media](#mine-social-media)
+<!-- nav:toc:end -->
 
 
 [People Information Gathering - Pre-ATT&CK](https://attack.mitre.org/pre-attack/index.php/People_Information_Gathering)
@@ -24,7 +28,7 @@
 
 
 ---------------------------------------------------------
-### Aggregate individual's digital footprint
+### <a id="aggregate-individuals-digital-footprint"></a>Aggregate individual's digital footprint
 * [Aggregate individual's digital footprint - Pre-ATT&CK](https://attack.mitre.org/pre-attack/index.php/Technique/PRE-T1052)
 	* In addition to a target's social media presence may exist a larger digital footprint, such as accounts and credentials on e-commerce sites or usernames and logins for email. An adversary familiar with a target's username can mine to determine the target's larger digital footprint via publicly available sources.
 

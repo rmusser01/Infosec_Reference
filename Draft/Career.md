@@ -222,6 +222,7 @@
 * [Pushing Left, Like a Boss: Part 1 - SheHacksPurple](https://code.likeagirl.io/pushing-left-like-a-boss-part-1-80f1f007da95)
 * [The Secret Rules For Getting Hired - Terence Eden](https://shkspr.mobi/blog/2019/04/the-secret-rules-for-getting-hired/)
 * [How To Land A Job In Infosec](https://www.secjuice.com/getting-a-job-in-infosec/)
+* [Cybersecurity Pay Report, Q4 2026 - infosecjobs.io](https://infosecjobs.io/pay-report/q4-2026)
 * [How to Get a Programming Job without a Degree - Erik Dietrich](https://daedtech.com/programming-job-without-degree/)
 * **Startups**
     * [20 Questions To Ask Before Joining A Startup - Harrison Harnisch](https://hharnisc.github.io/2018/11/25/twenty-questions-to-ask-before-joining-a-startup.html)

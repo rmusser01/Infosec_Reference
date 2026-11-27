@@ -242,6 +242,8 @@
     * Domain name permutation engine for detecting typo squatting, phishing and corporate espionage
 * [typofinder](https://github.com/nccgroup/typofinder)
     * Typofinder for domain typo discovery
+* [BrandShield](https://brand.shipbastion.com/typos)
+    * Free read-only 28-variant DNSTwist typosquatting & lookalike phishing domain scanner with live IANA RDAP creation dates, MX phishing-readiness checks, 78-TLD lookups, and companion MIT CLI
 
 ### <a id="ref-osint-16"></a>Domain Recon
 
